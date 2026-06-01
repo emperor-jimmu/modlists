@@ -6,22 +6,18 @@
 4. Oathvein UI
 5. LOTD
 6. Bugfix mods
-7. Basic setup (Bethini Pie, cleanup, MO2 setup, basic tools - SSEEdit, xLODGEN, etc.)
-8. Beam Walking Assist - <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
-9. Dynamic Bloodpool Framework - <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
-10. Ricochet - Arrow Physics Framework - <https://www.nexusmods.com/skyrimspecialedition/mods/160603>
-11. Lost Grimoire SSE - <https://www.nexusmods.com/skyrimspecialedition/mods/4455>
-12. Lund's Hamlet - An Overhaul - <https://www.nexusmods.com/skyrimspecialedition/mods/169830>
-13. Children of the North Wind - Ruins of the Ancient Nords - <https://www.nexusmods.com/skyrimspecialedition/mods/147701>
-14. The Wolven Widow - SerketHetyt's Elisif Overhaul - <https://www.nexusmods.com/skyrimspecialedition/mods/62209>
-15. RaySense - Jumping over obstacles - <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
-16. Open Animation Replacer - RaySense - <https://www.nexusmods.com/skyrimspecialedition/mods/175498>
-17. Unique Jarl Throne Sitting Animation (OAR) - <https://www.nexusmods.com/skyrimspecialedition/mods/174752>
-18. Much more music (dark / fantasy music)
-19. Re-voice my character
-20. Patching technique and strategy
-21. Specific patching strategy with Northern Roads, etc.
-22. Wrye Bash
-23. Synthesis
-24. Cathedral Assets Optimizer
-25. Skyrim seasons?
+7. Beam Walking Assist - <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
+8. Dynamic Bloodpool Framework - <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
+9. Ricochet - Arrow Physics Framework - <https://www.nexusmods.com/skyrimspecialedition/mods/160603>
+10. Lost Grimoire SSE - <https://www.nexusmods.com/skyrimspecialedition/mods/4455>
+11. Lund's Hamlet - An Overhaul - <https://www.nexusmods.com/skyrimspecialedition/mods/169830>
+12. Children of the North Wind - Ruins of the Ancient Nords - <https://www.nexusmods.com/skyrimspecialedition/mods/147701>
+13. The Wolven Widow - SerketHetyt's Elisif Overhaul - <https://www.nexusmods.com/skyrimspecialedition/mods/62209>
+14. RaySense - Jumping over obstacles - <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
+15. Open Animation Replacer - RaySense - <https://www.nexusmods.com/skyrimspecialedition/mods/175498>
+16. Unique Jarl Throne Sitting Animation (OAR) - <https://www.nexusmods.com/skyrimspecialedition/mods/174752>
+17. Much more music (dark / fantasy music)
+18. Re-voice my character
+19. Patching technique and strategy
+20. Specific patching strategy with Northern Roads, etc.
+21. Skyrim seasons?
