@@ -151,7 +151,45 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 ## Expanded Systems
 
-_No specific mods recorded yet in this section._
+- [ ] `Alternate Perspective - Alternate Start` - <https://www.nexusmods.com/skyrimspecialedition/mods/50307>
+- [ ] `Alternate Start - Live Another Life` - <https://www.nexusmods.com/skyrimspecialedition/mods/272>
+- [ ] `Skyrim Unbound Reborn (Alternate Start)` - <https://www.nexusmods.com/skyrimspecialedition/mods/27962>
+- [ ] `Realm of Lorkhan - Freeform Alternate Start` - <https://www.nexusmods.com/skyrimspecialedition/mods/18223>
+- [ ] `Aetherius - A Race Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/26686>
+- [ ] `Morningstar - Minimalistic Races of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/22298>
+- [ ] `Imperious - Races of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/1315>
+- [ ] `Evenstar - Minimalistic Standing Stones of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/41256>
+- [ ] `Andromeda - Unique Standing Stones of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/14910>
+- [ ] `Adamant - A Perk Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/30191>
+- [ ] `Vokrii - Minimalistic Perks of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/26176>
+- [ ] `Ordinator - Perks of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/1137>
+- [ ] `Mysticism - A Magic Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/27839>
+- [ ] `Odin - Skyrim Magic Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/46000>
+- [ ] `Apocalypse - Magic of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/1090>
+- [ ] `Apothecary - An Alchemy Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/52130>
+- [ ] `Complete Alchemy and Cooking Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/19924>
+- [ ] `Alchemy Potions and Food Adjustments` - <https://www.nexusmods.com/skyrimspecialedition/mods/5877>
+- [ ] `Starfrost - A Survival Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/97536>
+- [ ] `SunHelm Survival and needs` - <https://www.nexusmods.com/skyrimspecialedition/mods/39414>
+- [ ] `Last Seed - Survival Needs and Diseases` - <https://www.nexusmods.com/skyrimspecialedition/mods/56393>
+- [ ] `Frostfall - Hypothermia Camping Survival` - <https://www.nexusmods.com/skyrimspecialedition/mods/671>
+- [ ] `Campfire - Complete Camping System (Supports Skyrim VR)` - <https://www.nexusmods.com/skyrimspecialedition/mods/667>
+- [ ] `Gourmet - A Cooking Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/96876>
+- [ ] `Ars Metallica - Smithing Enhancement` - <https://www.nexusmods.com/skyrimspecialedition/mods/321>
+- [ ] `Complete Crafting Overhaul Remastered` - <https://www.nexusmods.com/skyrimspecialedition/mods/28608>
+- [ ] `Honed Metal -NPC Crafting and Enchanting Services` - <https://www.nexusmods.com/skyrimspecialedition/mods/61015>
+- [ ] `Trade and Barter - Skyrim Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/23081>
+- [ ] `Open World Loot - Encounter Zone and Loot Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/49681>
+- [ ] `MorrowLoot Ultimate - Skyrim Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/3058>
+- [ ] `Pilgrim - A Religion Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/54099>
+- [ ] `Trua - Minimalistic Faiths of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/32549>
+- [ ] `Wintersun - Faiths of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/22506>
+- [ ] `Skyrim Reputation` - <https://www.nexusmods.com/skyrimspecialedition/mods/22374>
+- [ ] `Book Of Shadows - Behaviour Based Stealth Additions` - <https://www.nexusmods.com/skyrimspecialedition/mods/76086>
+- [ ] `Suspicious City Guards` - <https://www.nexusmods.com/skyrimspecialedition/mods/38762>
+- [ ] `Nether's Follower Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/55653>
+- [ ] `EFF - Extensible Follower Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/7003>
+- [ ] `Amazing Follower Tweaks SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6656>
 
 ## Modernized UI
 
@@ -189,6 +227,21 @@ _No specific mods recorded yet in this section._
 
 _No specific mods recorded yet in this section._
 
+## Targeted Bugfix Mods
+
+- [ ] `Actor Limit Fix` - <https://www.nexusmods.com/skyrimspecialedition/mods/32349>
+- [ ] `Barter Limit Fix` - <https://www.nexusmods.com/skyrimspecialedition/mods/77173>
+- [ ] `Bard Instrumentals Mostly - Sing Rarely` - <https://www.nexusmods.com/skyrimspecialedition/mods/10927>
+- [ ] `Better Jumping SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/18967>
+- [ ] `Equip Enchantment Fix` - <https://www.nexusmods.com/skyrimspecialedition/mods/42839>
+- [ ] `Fuz Ro D-oh - Silent Voice` - <https://www.nexusmods.com/skyrimspecialedition/mods/15109>
+- [ ] `I'm Walkin' Here NG with Pets` - <https://www.nexusmods.com/skyrimspecialedition/mods/122516>
+- [ ] `LeveledList Crash Fix` - <https://www.nexusmods.com/skyrimspecialedition/mods/129136>
+- [ ] `Mum's the Word NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/77409>
+- [ ] `NPC AI Process Position Fix - NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/69326>
+- [ ] `Regional Save Names` - <https://www.nexusmods.com/skyrimspecialedition/mods/49698>
+- [ ] `Simple Offence Suppression` - <https://www.nexusmods.com/skyrimspecialedition/mods/41764>
+
 ---
 
-Total unique mods listed: 116
+Total unique mods listed: 167

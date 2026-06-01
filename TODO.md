@@ -3,7 +3,7 @@
 1. Add content (new lands, quests, etc.)
 2. An improved, stylistic map
 3. Minor SFW romantic options
-4. Oathvein UI
+4. Oathvein UI / Norden UI
 5. LOTD
 6. Bugfix mods
 7. Beam Walking Assist - <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
@@ -21,3 +21,5 @@
 19. Patching technique and strategy
 20. Specific patching strategy with Northern Roads, etc.
 21. Skyrim seasons?
+22. Weapon Stat Viewer V2 - <https://www.nexusmods.com/skyrimspecialedition/mods/127249>
+23. SkyParkour v3 - Procedural Parkour and Climbing Framework - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>

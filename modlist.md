@@ -65,7 +65,7 @@ Scope notes:
 
 ## Section Index
 
-Each second-level section of the plan now lives in its own numbered file. The companion file [mods-checklist.md](mods-checklist.md) lists every referenced mod with its Nexus URL as a download checklist.
+Each second-level section of the plan now lives in its own numbered file. The companion file [mods-checklist.md](mods-checklist.md) lists every referenced mod with its Nexus URL as a download checklist. The file [separators.md](separators.md) is the canonical ordered reference for `Mod Organizer 2` separators derived from this structure.
 
 - [Foundations and Compatibility](modlist-01.md)
 - [Modern Graphics](modlist-02.md)
@@ -81,3 +81,4 @@ Each second-level section of the plan now lives in its own numbered file. The co
 - [Performance and Technical Workflow](modlist-12.md)
 - [Modlist Curation Rules](modlist-13.md)
 - [Testing Plan](modlist-14.md)
+- [Targeted Bugfix Mods](modlist-15.md)
