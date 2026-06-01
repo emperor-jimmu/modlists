@@ -138,7 +138,16 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 ## Third-Person Gameplay
 
-_No specific mods recorded yet in this section._
+- [ ] `SmoothCam` - <https://www.nexusmods.com/skyrimspecialedition/mods/41252>
+- [ ] `Customizable Camera` - <https://www.nexusmods.com/skyrimspecialedition/mods/12201>
+- [ ] `True Directional Movement - Modernized Third Person Gameplay` - <https://www.nexusmods.com/skyrimspecialedition/mods/51614>
+- [ ] `TrueHUD` - <https://www.nexusmods.com/skyrimspecialedition/mods/62775>
+- [ ] `Better Third Person Selection - BTPS` - <https://www.nexusmods.com/skyrimspecialedition/mods/64339>
+- [ ] `Improved Camera SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/93962>
+- [ ] `TK Dodge RE - Script Free` - <https://www.nexusmods.com/skyrimspecialedition/mods/56956>
+- [ ] `TK Dodge SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/15309>
+- [ ] `Convenient Horses` - <https://www.nexusmods.com/skyrimspecialedition/mods/9519>
+- [ ] `Immersive Horses` - <https://www.nexusmods.com/skyrimspecialedition/mods/13402>
 
 ## Expanded Systems
 
