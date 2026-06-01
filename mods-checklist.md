@@ -114,9 +114,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 - [ ] `Pandora Behaviour Engine Plus` - <https://www.nexusmods.com/skyrimspecialedition/mods/133232>
 - [ ] `XP32 Maximum Skeleton Special Extended - XPMSSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
-- [ ] `CBBE 3BA (3BBB)` - <https://www.nexusmods.com/skyrimspecialedition/mods/30174>
 - [ ] `Open Animation Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
-- [ ] `Improved Camera SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/93962>
 - [ ] `Comprehensive First Person Animation Overhaul - CFPAO` - <https://www.nexusmods.com/skyrimspecialedition/mods/87169>
 - [ ] `ConsoleUtilSSE NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
 - [ ] `Leviathan Animations II - Male Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/81463>
@@ -134,6 +132,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Precision - Accurate Melee Collisions` - <https://www.nexusmods.com/skyrimspecialedition/mods/72347>
 - [ ] `SCAR - Skyrim Combos AI Revolution` - <https://www.nexusmods.com/skyrimspecialedition/mods/72014>
 - [ ] `MCO ADXP - Modern Movement Combat Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/117115>
+- [ ] `Animation Motion Revolution` - <https://www.nexusmods.com/skyrimspecialedition/mods/50258>
+- [ ] `Payload Interpreter` - <https://www.nexusmods.com/skyrimspecialedition/mods/65089>
 - [ ] `Valhalla Combat` - <https://www.nexusmods.com/skyrimspecialedition/mods/64741>
 
 ## Third-Person Gameplay

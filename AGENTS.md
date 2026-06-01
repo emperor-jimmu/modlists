@@ -17,16 +17,24 @@
 
 - `modlist-01.md` through `modlist-16.md` are the active numbered sections.
 - Current section titles are: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Performance and Technical Workflow`, `Modlist Curation Rules`, `Testing Plan`, `Targeted Bugfix Mods`, and `Legacy of the Dragonborn`.
+- `modlist-01.md`, `modlist-02.md`, and `modlist-09.md` have been reviewed and rewritten/trimmed, using a collapsed template approach (fewer redundant headings). The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
 - `modlist-03.md` (`Animations and Movement`) and `modlist-04.md` (`Third-Person Gameplay`) are fully expanded and should be treated as established baselines unless the user asks to revisit them.
 - `modlist-05.md` (`Expanded Systems`) is fully expanded.
-- `modlist-06.md` (`Modernized UI`) is the current active section and should be continued next unless the user redirects.
-- `modlist-07.md` through `modlist-14.md` currently exist as section files but several still have little or no concrete mod-pick content in `mods-checklist.md`; treat them as open research areas.
+- `modlist-06.md` (`Modernized UI`) has moderate content (~430 lines) but is not yet locked; the previous "current active section" status is superseded by the rewrite pass on 09/01/02.
+- `modlist-07.md` and `modlist-08.md` have moderate content (350-430 lines) but are still open research areas with no concrete mod picks locked in `mods-checklist.md`.
+- `modlist-10.md` through `modlist-14.md` are stubs (under 10 lines each) with no content written yet.
 - `modlist-15.md` (`Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes that do not belong in the core foundations layer.
 - `modlist-16.md` (`Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy for content that integrates into the display ecosystem.
 
 ## Content Conventions
 
 - Keep section writing decision-oriented: explain recommendation, alternatives when meaningful, why the baseline is right, risks, research tasks, and acceptance criteria.
+- Default subsection structure for numbered section files is: `Core Idea`, `Options`, `Recommendation`, `Risks & Compatibility`, `Acceptance Criteria`. Only add extra headings when the subsection genuinely needs unique procedural content that would otherwise be lost.
+- Do not use boilerplate headings such as repeated `Why This Is The Right Baseline`, `Working Guidance For Elder Wilds`, or `What Elder Wilds Should Prioritize` blocks when that information can be folded into `Recommendation` or `Risks & Compatibility`.
+- Avoid restating the same mod, rationale, or compatibility warning across multiple headings in the same subsection. Each important point should usually be stated once in its owning subsection.
+- Keep file-wide governance rules in one owning subsection instead of repeating them everywhere. Example: shared animation-stack rules should live in a single conflict-management or prerequisites subsection, not in every animation category.
+- Do not pad sections with generic quality bars or obvious testing language. Acceptance criteria should be specific to the subsection's actual decision, and research tasks should exist only when there is real unresolved research left.
+- When a section includes operational workflow content (tool setup, build order, config tables, patcher steps), preserve that functional content, but still remove duplicated framing text around it.
 - Do not collapse separate concerns together. Example: animation-side camera awareness belongs in `modlist-03.md`; broader third-person camera/gameplay framework decisions belong in `modlist-04.md`.
 - Preserve established ownership decisions unless the user asks to revisit them. Current key animation ownership: `Pandora` for behavior generation, `XPMSSE` for skeleton assumptions, `Open Animation Replacer` for conditional selection.
 
@@ -45,6 +53,7 @@
 - Prefer executable/observable evidence over memory: existing repo content, verified Nexus pages, current file state, and Reddit discussion signal.
 - Check `r/skyrimmods` for each active research area as the default Reddit source, and only fall back to broader Reddit searching when `r/skyrimmods` does not provide enough signal.
 - Use `mods-checklist.md` as the duplicate-check reference before introducing new concrete mod picks into the numbered section files.
+- Before expanding a numbered section, scan for duplicated ownership, repeated rationale, and boilerplate headings so new writing does not reintroduce the same cleanup problems fixed in sections `01`, `03`, `04`, and `09`.
 - When updating repository guidance, align `AGENTS.md` to the actual current `modlist.md` index and numbered section file titles rather than older assumptions about section names or completion state.
 - Keep `separators.md` aligned with the current `modlist-XX.md` section and stub structure when separators are added, renamed, or reorganized.
 - When reorganizing sections, update `modlist.md` index links and keep numbering consistent.
