@@ -6,6 +6,7 @@ Scope notes:
 
 - No paid Anniversary Edition Creation Club content
 - Research categories are organized around five pillars: modern graphics, expanded systems, modernized UI, immersive world scale, and third-person-first gameplay
+- This modlist is also built around `Legacy of the Dragonborn` as a major collection, museum, and patch-ecosystem pillar rather than treating it as an optional side add-on
 
 ## Setup And Installation Guide
 
@@ -82,3 +83,4 @@ Each second-level section of the plan now lives in its own numbered file. The co
 - [Modlist Curation Rules](modlist-13.md)
 - [Testing Plan](modlist-14.md)
 - [Targeted Bugfix Mods](modlist-15.md)
+- [Legacy of the Dragonborn](modlist-16.md)

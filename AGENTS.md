@@ -15,12 +15,14 @@
 
 ## Current Structure
 
-- `modlist-01.md` through `modlist-15.md` are the active numbered sections.
-- Current section titles are: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Performance and Technical Workflow`, `Modlist Curation Rules`, `Testing Plan`, and `Targeted Bugfix Mods`.
+- `modlist-01.md` through `modlist-16.md` are the active numbered sections.
+- Current section titles are: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Performance and Technical Workflow`, `Modlist Curation Rules`, `Testing Plan`, `Targeted Bugfix Mods`, and `Legacy of the Dragonborn`.
 - `modlist-03.md` (`Animations and Movement`) and `modlist-04.md` (`Third-Person Gameplay`) are fully expanded and should be treated as established baselines unless the user asks to revisit them.
-- `modlist-05.md` (`Expanded Systems`) has concrete candidate mod content but is less finalized than the fully expanded gameplay sections; continue there next unless the user redirects.
-- `modlist-06.md` through `modlist-14.md` currently exist as section files but several still have little or no concrete mod-pick content in `mods-checklist.md`; treat them as open research areas.
+- `modlist-05.md` (`Expanded Systems`) is fully expanded.
+- `modlist-06.md` (`Modernized UI`) is the current active section and should be continued next unless the user redirects.
+- `modlist-07.md` through `modlist-14.md` currently exist as section files but several still have little or no concrete mod-pick content in `mods-checklist.md`; treat them as open research areas.
 - `modlist-15.md` (`Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes that do not belong in the core foundations layer.
+- `modlist-16.md` (`Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy for content that integrates into the display ecosystem.
 
 ## Content Conventions
 

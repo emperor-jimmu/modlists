@@ -193,7 +193,35 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 ## Modernized UI
 
-_No specific mods recorded yet in this section._
+- [ ] `SkyUI` - <https://www.nexusmods.com/skyrimspecialedition/mods/12604>
+- [ ] `UIExtensions` - <https://www.nexusmods.com/skyrimspecialedition/mods/17561>
+- [ ] `Oathvein UI` - <https://www.nexusmods.com/skyrimspecialedition/mods/160916>
+- [ ] `Norden UI` - <https://www.nexusmods.com/skyrimspecialedition/mods/166086>
+- [ ] `SkyHUD` - <https://www.nexusmods.com/skyrimspecialedition/mods/463>
+- [ ] `moreHUD SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/12688>
+- [ ] `moreHUD Inventory Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/18619>
+- [ ] `SkyUI Item Card Fixes` - <https://www.nexusmods.com/skyrimspecialedition/mods/29116>
+- [ ] `Aura's Inventory Tweaks (More SkyUI Icons Sorting Options and More)` - <https://www.nexusmods.com/skyrimspecialedition/mods/68557>
+- [ ] `Flat World Map Framework (FWMF)` - <https://www.nexusmods.com/skyrimspecialedition/mods/29932>
+- [ ] `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` - <https://www.nexusmods.com/skyrimspecialedition/mods/53788>
+- [ ] `Immersive Paper Map (3rd Edition)` - <https://www.nexusmods.com/skyrimspecialedition/mods/54710>
+- [ ] `Skyrim Paper Map by FreelanceCartography for FWMF` - <https://www.nexusmods.com/skyrimspecialedition/mods/78995>
+- [ ] `Convenient Reading UI - SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/50202>
+- [ ] `Wider MCM Menu for SkyUI` - <https://www.nexusmods.com/skyrimspecialedition/mods/22825>
+- [ ] `Better Dialogue Controls` - <https://www.nexusmods.com/skyrimspecialedition/mods/1429>
+- [ ] `Better MessageBox Controls` - <https://www.nexusmods.com/skyrimspecialedition/mods/1428>
+- [ ] `Dialogue Interface ReShaped` - <https://www.nexusmods.com/skyrimspecialedition/mods/46546>
+- [ ] `Convenient Dialogue UI - SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/57943>
+- [ ] `Skyrim SE Controller Interface Fix` - <https://www.nexusmods.com/skyrimspecialedition/mods/1147>
+- [ ] `Gamepad Plus Plus` - <https://www.nexusmods.com/skyrimspecialedition/mods/27007>
+- [ ] `Wheeler - Quick Action Wheel Of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/97345>
+- [ ] `Sovngarde - Mist's Font Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/386>
+- [ ] `Complete Widescreen Fix for Vanilla and SkyUI` - <https://www.nexusmods.com/skyrimspecialedition/mods/1778>
+- [ ] `Compass Navigation Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/74484>
+- [ ] `CoMAP - Common Marker Addon Project` - <https://www.nexusmods.com/skyrimspecialedition/mods/56123>
+- [ ] `Immersive HUD - iHUD Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/12440>
+- [ ] `Constructible Object Custom Keyword System` - <https://www.nexusmods.com/skyrimspecialedition/mods/81409>
+- [ ] `SkyUI - Vanilla Crafting menu` - <https://www.nexusmods.com/skyrimspecialedition/mods/18717>
 
 ## Immersive Scale and World Feel
 
@@ -242,6 +270,15 @@ _No specific mods recorded yet in this section._
 - [ ] `Regional Save Names` - <https://www.nexusmods.com/skyrimspecialedition/mods/49698>
 - [ ] `Simple Offence Suppression` - <https://www.nexusmods.com/skyrimspecialedition/mods/41764>
 
+## Legacy of the Dragonborn
+
+- [ ] `Legacy of the Dragonborn` - _verify canonical Nexus URL in a browser session before finalizing this checklist entry_
+- [ ] `The Curators Companion` - _verify canonical Nexus URL in a browser session before finalizing this checklist entry_
+- [ ] `Legacy of the Dragonborn Patches (Official)` - _verify canonical Nexus URL in a browser session before finalizing this checklist entry_
+- [ ] `LoTD-related mod (Nexus ID 13279)` - <https://www.nexusmods.com/skyrimspecialedition/mods/13279>
+- [ ] `LoTD-related mod (Nexus ID 16080)` - <https://www.nexusmods.com/skyrimspecialedition/mods/16080>
+- [ ] `LoTD-related mod (Nexus ID 131107)` - <https://www.nexusmods.com/skyrimspecialedition/mods/131107>
+
 ---
 
-Total unique mods listed: 167
+Total unique mods listed: 202

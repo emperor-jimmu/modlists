@@ -61,17 +61,18 @@
 59. `06.01 UI Framework Prerequisites`
 60. `06.02 HUD Overhaul`
 61. `06.03 Inventory And Item Card Improvements`
-62. `06.04 Magic, Map, And Journal Improvements`
-63. `06.05 Dialogue UI Improvements`
-64. `06.06 Controller-Friendly UI Support`
-65. `06.07 UI Scaling For Ultrawide And High Resolution`
-66. `06.08 Compass, Markers, And Minimal HUD Options`
-67. `06.09 Crafting Menu Improvements`
-68. `06.10 Accessibility And Readability Improvements`
-69. `07 Immersive Scale and World Feel`
-70. `07.01 Timescale And Calendar Adjustments`
-71. `07.02 Travel Pacing And Carriage Fast Travel Rules`
-72. `07.03 Encounter Spacing And Wilderness Feel`
+62. `06.04 Map Improvements`
+63. `06.05 Magic And Journal Improvements`
+64. `06.06 Dialogue UI Improvements`
+65. `06.07 Controller-Friendly UI Support`
+66. `06.08 UI Scaling For Ultrawide And High Resolution`
+67. `06.09 Compass, Markers, And Minimal HUD Options`
+68. `06.10 Crafting Menu Improvements`
+69. `06.11 Accessibility And Readability Improvements`
+70. `07 Immersive Scale and World Feel`
+71. `07.01 Timescale And Calendar Adjustments`
+72. `07.02 Travel Pacing And Carriage Fast Travel Rules`
+73. `07.03 Encounter Spacing And Wilderness Feel`
 73. `07.04 Forest Density And Regional Identity`
 74. `07.05 Soundscape And Ambient Audio`
 75. `07.06 City Size, Outskirts, And Population Feel`
@@ -143,3 +144,11 @@
 141. `15.07 Research Tasks`
 142. `15.08 Risks To Check`
 143. `15.09 Acceptance Criteria`
+144. `16 Legacy of the Dragonborn`
+145. `16.01 Core Mod Baseline`
+146. `16.02 Supported Content Mods And Museum Integration`
+147. `16.03 Patch Strategy For LoTD Support`
+148. `16.04 Submods And Quality-Of-Life Support`
+149. `16.05 What Elder Wilds Should Prioritize`
+150. `16.06 Research Tasks`
+151. `16.07 Acceptance Criteria`
