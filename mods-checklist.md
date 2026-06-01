@@ -114,12 +114,21 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 - [ ] `Pandora Behaviour Engine Plus` - <https://www.nexusmods.com/skyrimspecialedition/mods/133232>
 - [ ] `XP32 Maximum Skeleton Special Extended - XPMSSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
-- [ ] `CBBE 3BA (3BBB)` - <https://www.nexusmods.com/skyrimspecialedition/mods/21224>
+- [ ] `CBBE 3BA (3BBB)` - <https://www.nexusmods.com/skyrimspecialedition/mods/30174>
+- [ ] `Open Animation Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
+- [ ] `Improved Camera SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/93962>
+- [ ] `Comprehensive First Person Animation Overhaul - CFPAO` - <https://www.nexusmods.com/skyrimspecialedition/mods/87169>
 - [ ] `ConsoleUtilSSE NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
 - [ ] `Leviathan Animations II - Male Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/81463>
 - [ ] `Leviathan Animations II - Female Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/80760>
 - [ ] `Conditional Armor Type Animations` - <https://www.nexusmods.com/skyrimspecialedition/mods/51507>
+- [ ] `EVG Conditional Idles` - <https://www.nexusmods.com/skyrimspecialedition/mods/34006>
 - [ ] `EVG Animated Traversal` - <https://www.nexusmods.com/skyrimspecialedition/mods/63232>
+- [ ] `Immersive Interactions - Animated Actions` - <https://www.nexusmods.com/skyrimspecialedition/mods/47670>
+- [ ] `Go to bed` - <https://www.nexusmods.com/skyrimspecialedition/mods/4224>
+- [ ] `New Creature Animation - Giant` - <https://www.nexusmods.com/skyrimspecialedition/mods/83317>
+- [ ] `New Creature Animation - Falmer` - <https://www.nexusmods.com/skyrimspecialedition/mods/83572>
+- [ ] `New Creature Animation - Werewolf` - <https://www.nexusmods.com/skyrimspecialedition/mods/83806>
 - [ ] `Goetia Animations - Conditional Shuffled Idle for Pretty Female idles` - <https://www.nexusmods.com/skyrimspecialedition/mods/68005>
 - [ ] `Goetia Animations - Female Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/68625>
 - [ ] `Precision - Accurate Melee Collisions` - <https://www.nexusmods.com/skyrimspecialedition/mods/72347>
