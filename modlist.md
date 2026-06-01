@@ -377,12 +377,14 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 
 ### Texture Overhauls By Material Type
 
-#### Core Idea
+#### Visual Strategy
+
+##### Core Idea
 
 - Use one broad visual base where helpful, then layer targeted replacements by material family instead of stacking overlapping all-in-one packs blindly
 - For `Elder Wilds`, material clarity matters more than maximum texture count: stone should feel cold and weighty, wood should look worn and natural, metal should read clearly in third person, and clutter should reward close-up exploration
 
-#### Suggested Options
+##### Suggested Options
 
 - Broad-base option:
 - Use a large coherent pack as a foundation, then only patch obvious weak spots
@@ -391,7 +393,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - Hybrid option:
 - Use a stable broad base for coverage, then override with higher-quality packs in the most visible material categories
 
-#### Recommendation
+##### Recommendation
 
 - Use the hybrid option
 - Start with a broad base only if it gives good coverage without fighting the balanced PBR plan
@@ -1078,7 +1080,7 @@ Second priority:
 #### Core Idea
 
 - Treat distant detail as the layer that determines whether `Elder Wilds` feels large and coherent during travel instead of collapsing into obvious pop-in and flat backgrounds
-- This section is about the visual target and support choices for distant terrain, trees, objects, and town silhouettes before the next section documents the exact generation workflow
+- This section covers both the visual target and the practical generation workflow for distant terrain, trees, objects, town silhouettes, grass cache, and occlusion output
 - The goal is not maximum LOD complexity at any cost; the goal is believable far-distance continuity that matches the chosen trees, terrain, snow, lighting, and weather stack
 
 #### Suggested Options
@@ -1094,37 +1096,88 @@ Second priority:
 - Add support mods only where they clearly improve the chosen tree and texture stack instead of collecting every possible LOD add-on
 - Judge distant detail from actual travel routes, mountain overlooks, and city approaches rather than static showcase shots alone
 
-#### Core Support Mods To Research
+##### Working Guidance For Elder Wilds
+
+- Assume `DynDOLOD Resources SE 3` and `DynDOLOD DLL NG` are part of the serious distant-detail evaluation path
+- Use `HD LODs Textures SE` only if the final landscape, architecture, and distant texture presentation still looks too flat or blurry after the main visual stack is chosen
+- Use tree-specific optimization support such as `Happy Little Trees DynDOLOD Optimizations` only when that exact tree route survives testing and the distant result justifies the extra moving parts
+- Keep distant-detail support aligned with the actual winners from trees, terrain, and architecture instead of choosing LOD support in a vacuum
+- Delay final quality tuning until the forest, flora, and snow decisions are stable enough that regenerated distant views are meaningful
+
+##### What Elder Wilds Should Prioritize
+
+- Mountain vistas, forest horizons, and city approaches that feel continuous instead of obviously switching between near and far assets
+- Tree lines and forest silhouettes that still sell scale at long distance
+- Distant terrain and settlement shapes that remain readable under the chosen weather and lighting route
+- Reduced visual pop-in during travel on roads, ridgelines, and open plains
+- A distant-detail stack that looks intentionally curated rather than over-sharpened or mismatched with nearby assets
+
+##### Research Tasks
+
+- Compare baseline `DynDOLOD` output with and without optional support mods such as `HD LODs Textures SE` and any surviving tree-specific optimization pack
+- Evaluate distant views from at least one mountain overlook, one tundra road, one dense forest edge, and one city approach
+- Check whether the chosen tree overhaul produces believable distant canopy shapes or whether it needs dedicated optimization support
+- Record whether distant snow, rock, and terrain colors stay coherent with the near-field texture stack
+- Track whether stronger distant-detail settings materially improve world scale or mostly increase generation time and maintenance cost
+- Delay final LOD quality lock-in until the tree winner and the main terrain/snow stack are no longer moving targets
+- Decide the exact point in the build when grass is stable enough to justify first cache generation
+- Verify whether the final grass setup needs custom worldspace support through `Worldspaces with Grass SSEEdit Script for No Grass In Objects`
+- Test whether `Grass Cache Fixes` is sufficient for the chosen grass route or whether any additional grass-support patches survive later comparison
+- Confirm when terrain LOD generation should happen relative to final snow and mountain decisions
+- Record a fixed rerun checklist in the repo so visual rebuilds follow the same order every time
+- Check one full rebuild cycle after a controlled visual change to prove the workflow is understandable and repeatable
+
+#### Required Tools And Dependencies
+
+##### Core Support Mods To Research
 
 - `DynDOLOD Resources SE 3` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52897>
 - `DynDOLOD DLL NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97720>
 
-#### Optional Distant Detail Support
+##### Optional Distant Detail Support
 
 - `HD LODs Textures SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3333>
 - `Happy Little Trees DynDOLOD Optimizations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/158587>
 
-#### DynDOLOD Setup And Configuration Instructions
+##### Core Workflow Dependencies
+
+- `No Grass In Objects` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/42161>
+- `Worldspaces with Grass SSEEdit Script for No Grass In Objects` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/55152>
+- `Grass Cache Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/60891>
+- `xLODGen Resource - SSE Terrain Tamriel` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54680>
+
+#### Build Order And Configuration
+
+##### DynDOLOD Setup And Configuration Instructions
 
 - Install `DynDOLOD Resources SE 3` as a normal mod in `Mod Organizer 2`
 - Install `DynDOLOD DLL NG` as a normal mod in `Mod Organizer 2`
-- Keep the standalone `TexGen` and `DynDOLOD` tools registered as MO2 executables, not mixed into normal mod folders
+- Install `No Grass In Objects`, `Grass Cache Fixes`, and `xLODGen Resource - SSE Terrain Tamriel` as normal support content where applicable
+- Keep the standalone `TexGen`, `DynDOLOD`, and `xLODGen` tools registered as MO2 executables, not mixed into normal mod folders
+- Treat the Nexus-linked `xLODGen Resource - SSE Terrain Tamriel` as support content, while the actual `xLODGen` tool remains part of the external tools chain
+- Treat occlusion as generated output, not as a separate mod pick
 - Create dedicated MO2 output mods before generation begins:
+- `Grass Cache Output`
+- `Terrain LOD Output`
 - `TexGen Output`
 - `DynDOLOD Output`
 - `Occlusion Output`
 - Keep those generated outputs in the `Output` separator so source mods and generated files stay clearly separated
-- Do not generate final `DynDOLOD` output until the main tree, terrain, snow, and large worldspace visual picks are mostly stable
+- Do not generate final grass, terrain LOD, `DynDOLOD`, and occlusion outputs until the main tree, terrain, snow, flora, and large worldspace visual picks are mostly stable
 - Run order should be:
 - confirm load order and conflict resolution first
+- generate grass cache through the `No Grass In Objects` workflow
+- install or update `Grass Cache Output`
+- run `xLODGen` for terrain LOD once the terrain and snow stack is stable enough to make the output meaningful
+- install or update `Terrain LOD Output`
 - run `TexGen`
 - install or update `TexGen Output`
 - run `DynDOLOD`
 - install or update `DynDOLOD Output`
 - generate occlusion data as part of the final distant-detail pass and keep it in `Occlusion Output`
-- Re-run `TexGen` and `DynDOLOD` whenever a major tree overhaul, large architecture change, landscape shift, or LOD-relevant texture pack is replaced
+- Re-run the relevant generated layers whenever a major tree overhaul, large architecture change, landscape shift, grass change, or LOD-relevant texture pack is replaced
 
-#### Recommended Starting DynDOLOD Configuration
+##### Recommended Starting DynDOLOD Configuration
 
 - First serious pass target: balanced, stability-first output for testing rather than maximum visual range
 - Use `High` as the starting preset if the current setup is already graphics-heavy, and only move above that after checking travel performance and distant coherence
@@ -1159,7 +1212,19 @@ Second priority:
 - Stay conservative if dense forests already stress performance before final grass cache and occlusion work
 - Stay conservative if distant scenes are already coherent and higher settings mostly increase build time rather than visible quality
 
-#### DynDOLOD Validation Checklist
+##### Grass Cache And Occlusion Notes
+
+- Use `No Grass In Objects` only after the main grass and flora direction is narrowed enough that cache generation is not immediately obsolete
+- Keep `Grass Cache Fixes` in mind as part of the serious grass-cache path, not as an optional afterthought
+- Use `Worldspaces with Grass SSEEdit Script for No Grass In Objects` if the final setup needs tailored worldspace grass support instead of assuming every area behaves well by default
+- Treat grass cache as invalid whenever the winning grass combination, landscape coverage, or major worldspace edits change materially
+- Regenerate occlusion near the end of a major graphics pass, after grass, terrain LOD, and `DynDOLOD` inputs are no longer moving targets
+- Keep occlusion output separate from all other generated mods so stale occlusion data is easy to identify and replace
+- If worldspace edits, city outskirts, road overhauls, or heavy tree and world edits change, assume the previous occlusion result may no longer be trustworthy
+
+#### Validation
+
+##### DynDOLOD Validation Checklist
 
 - No missing distant objects, giant billboard errors, or obviously broken tree lines
 - Near and far tree silhouettes transition cleanly enough during normal travel
@@ -1167,40 +1232,20 @@ Second priority:
 - Generated outputs are enabled in MO2 and load after the source mods they depend on
 - Old generated outputs are replaced when the visual stack changes, rather than left active by accident
 
-#### Working Guidance For Elder Wilds
-
-- Assume `DynDOLOD Resources SE 3` and `DynDOLOD DLL NG` are part of the serious distant-detail evaluation path
-- Use `HD LODs Textures SE` only if the final landscape, architecture, and distant texture presentation still looks too flat or blurry after the main visual stack is chosen
-- Use tree-specific optimization support such as `Happy Little Trees DynDOLOD Optimizations` only when that exact tree route survives testing and the distant result justifies the extra moving parts
-- Keep distant-detail support aligned with the actual winners from trees, terrain, and architecture instead of choosing LOD support in a vacuum
-- Delay final quality tuning until the forest, flora, and snow decisions are stable enough that regenerated distant views are meaningful
-
-#### What Elder Wilds Should Prioritize
-
-- Mountain vistas, forest horizons, and city approaches that feel continuous instead of obviously switching between near and far assets
-- Tree lines and forest silhouettes that still sell scale at long distance
-- Distant terrain and settlement shapes that remain readable under the chosen weather and lighting route
-- Reduced visual pop-in during travel on roads, ridgelines, and open plains
-- A distant-detail stack that looks intentionally curated rather than over-sharpened or mismatched with nearby assets
-
-#### Research Tasks
-
-- Compare baseline `DynDOLOD` output with and without optional support mods such as `HD LODs Textures SE` and any surviving tree-specific optimization pack
-- Evaluate distant views from at least one mountain overlook, one tundra road, one dense forest edge, and one city approach
-- Check whether the chosen tree overhaul produces believable distant canopy shapes or whether it needs dedicated optimization support
-- Record whether distant snow, rock, and terrain colors stay coherent with the near-field texture stack
-- Track whether stronger distant-detail settings materially improve world scale or mostly increase generation time and maintenance cost
-- Delay final LOD quality lock-in until the tree winner and the main terrain/snow stack are no longer moving targets
-
-#### Risks To Check
+##### Risks To Check
 
 - Strong near-field visuals can still look broken in motion if distant terrain and tree lines do not match them
 - Optional LOD texture and tree-optimization add-ons can create extra maintenance burden for limited actual payoff
 - Overly aggressive distant sharpness can make the world look noisy or inconsistent with the atmospheric weather direction
 - Rebuilding distant detail too early wastes time and produces misleading comparisons while core graphics choices are still changing
 - A tree overhaul that looks great up close can still fail the modlist if its distant silhouette is weak or unstable
+- Generating too early creates stale outputs that quietly poison later comparisons
+- Mixing generated files into source-mod folders makes the build hard to audit and harder to rebuild safely
+- Grass cache can become invalid quickly if the flora, grass, or worldspace stack is still unstable
+- Partial rebuild habits can leave mismatched terrain, tree, and occlusion outputs active at the same time
+- Heavy worldspace edits can make old occlusion and LOD data misleading even when the game still launches
 
-#### Acceptance Criteria
+##### Acceptance Criteria
 
 - Distant terrain, trees, and major landmarks remain visually coherent with nearby assets
 - Long-travel views strengthen the sense of scale in `Elder Wilds`
@@ -1208,8 +1253,143 @@ Second priority:
 - Optional support mods earn their place with visible improvement instead of checklist value alone
 - The final distant-detail strategy is strong enough to justify the later generation workflow built around it
 
-- DynDOLOD, grass cache, and occlusion workflow
-- Character, skin, and creature visuals
+#### Rebuild Rules
+
+- Rebuild grass cache if the grass baseline changes, if major flora layering changes, or if worldspace edits materially affect grass placement
+- Rebuild terrain LOD if landscape, snow, mountain, or terrain-color direction changes in a way that affects distant ground presentation
+- Rebuild `TexGen` and `DynDOLOD` if tree overhauls, large architecture changes, major LOD-support mods, or visual worldspace edits change
+- Refresh occlusion whenever major worldspace edits or the final distant-detail pass changes enough to affect visibility and culling behavior
+- If multiple major visual categories change together, prefer a clean full rebuild of generated outputs instead of partial guesswork
+
+### Character, Skin, And Creature Visuals
+
+#### Core Idea
+
+- This section covers the baseline visual treatment for player bodies, skin textures, and animals or creatures before any later NPC-specific overhauls are chosen
+- For `Elder Wilds`, the goal is a grounded modern look that holds up in third person without drifting into overly glossy, doll-like, or hyper-stylized character presentation
+- Body, skin, and creature visuals should stay modular so later armor refits, NPC overhauls, and creature behavior changes remain manageable
+
+#### Suggested Options
+
+- Modular modern route: clear female body base, clear male body base, separate high-quality skin textures, and a restrained creature baseline
+- Conservative route: body bases plus lighter skin upgrades, with creature visuals kept closer to vanilla
+- High-maintenance beauty route: aggressive body, skin, and NPC beauty layering, with much higher patch and refit burden
+
+#### Recommendation
+
+- Use the modular modern route
+- `CBBE` should be the female body base for `Elder Wilds`
+- Keep body bases, skin textures, and creature visuals as separate decisions instead of collapsing them into one giant character-overhaul stack
+- Delay heavy NPC beauty decisions until the later `NPCs and Creatures` planning section so this layer stays focused and maintainable
+
+#### Recommended Body And Skin Baselines
+
+- Female body base: `CBBE NSFW - Caliente's Beautiful Bodies Enhancer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/74257>
+- Female body extension and physics-aware baseline for the chosen preset: `CBBE 3BA (3BBB)` - Nexus page to confirm directly during install
+- Male body base: `Highly Improved Male Body Overhaul - HIMBO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/74174>
+- Female skin: `BnP - Female Skin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65274>
+- Male skin: `BnP - Male Skin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65402>
+- Chosen female BodySlide preset: `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/69681>
+
+#### BodySlide And Outfit Studio Install, Setup, And Configuration
+
+- `BodySlide and Outfit Studio` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/201>
+- Install `BodySlide and Outfit Studio` as a normal mod in `Mod Organizer 2`
+- Register `BodySlide x64.exe` in MO2 as an executable so all output is generated through the active profile and virtual file system
+- Keep `CBBE`, `CBBE 3BA (3BBB)`, `HIMBO`, the chosen preset, and any later body-aware armor or outfit mods installed before building meshes so BodySlide sees the correct projects
+- Create a dedicated MO2 output mod such as `BodySlide Output` and direct all generated meshes there instead of letting them overwrite source mods
+- Keep `BodySlide Output` in the `Output` separator so generated body and outfit meshes stay distinct from the source packages
+
+##### Recommended Setup Order For Elder Wilds
+
+- Install `CBBE NSFW - Caliente's Beautiful Bodies Enhancer`
+- Install `CBBE 3BA (3BBB)` after `CBBE`, because the chosen female preset depends on that body system
+- Install `Highly Improved Male Body Overhaul - HIMBO`
+- Install `BodySlide and Outfit Studio`
+- Install `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players`
+- Install selected skin textures after the body bases if the skin package expects a specific body path or texture layout
+- Install any armor or clothing packs that need body refits before running the first serious BodySlide build
+- Add and enable the empty `BodySlide Output` mod before generating anything
+
+##### Recommended BodySlide Configuration
+
+- Run BodySlide through MO2, not from the game folder directly
+- Set the output path to the dedicated `BodySlide Output` mod location
+- For female meshes, select the `FitnessGoal CBBE 3BA 3BBB` preset or the exact preset name it installs, rather than the default `CBBE` shape
+- For male meshes, choose the intended `HIMBO` preset before batch building
+- Use `Batch Build` once the baseline armor and clothing set is stable enough to avoid constant rebuild churn
+- If multiple body variants or conflicting conversions appear, choose the option that matches the active `CBBE 3BA` female baseline and `HIMBO` male baseline instead of mixing ecosystems
+- Rebuild after installing or replacing major armor packs, outfit conversions, or body-shape presets
+
+##### 3BA And Preset-Specific Notes
+
+- The chosen female body path is no longer plain `CBBE` alone; it is `CBBE NSFW` plus `CBBE 3BA (3BBB)` plus the `FitnessGoal` preset
+- Do not batch build female outfits against a plain `CBBE` project if the actual in-list preset requires `3BA/3BBB`
+- When armor mods offer both `CBBE` and `3BA/3BBB` options, choose the `3BA/3BBB` path for female outfits so they match the selected preset ecosystem
+- Keep the female body stack consistent across base body, preset, and outfit conversions, or BodySlide output will become harder to trust
+
+##### Outfit Studio Guidance
+
+- Treat `Outfit Studio` as the exception tool for fixing or converting problem outfits, not as something to use for every armor by default
+- Use it when a chosen armor or clothing mod does not match the active `CBBE` or `HIMBO` setup cleanly
+- Keep any edited or converted outfit output separate from the original source mod when practical so later updates are easier to audit
+- Document any manual outfit fixes in the repo so future rebuilds do not depend on memory
+
+#### Recommended Creature Baseline
+
+- `Bellyaches Animal and Creature Pack SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6839>
+
+#### Working Guidance For Elder Wilds
+
+- Lock `CBBE` early as the female body foundation so later armor and outfit decisions have a clear baseline
+- Treat `CBBE 3BA (3BBB)` as part of the real female setup, because the selected `FitnessGoal` preset is built around that ecosystem instead of plain `CBBE` alone
+- Treat `HIMBO` as the matching modern male-body route unless later compatibility testing gives a concrete reason to back off
+- Keep `BodySlide and Outfit Studio` in the baseline toolchain as soon as the body foundations are chosen, even if final armor choices come later
+- Use `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` as the current female preset target unless later armor testing reveals a concrete mismatch
+- Use `BnP - Female Skin` and `BnP - Male Skin` as the current first-choice skin baseline because they fit the modern visual target without forcing the section into a full NPC makeover project
+- Use `Bellyaches Animal and Creature Pack SSE` as the initial creature baseline so wildlife and common creatures look better without waiting for larger creature-overhaul planning
+- Keep face overhauls, follower beauty mods, and named-NPC redesigns out of this section so the body and skin baseline remains understandable
+
+#### What Elder Wilds Should Prioritize
+
+- Character presentation that looks strong from normal third-person camera distance, not only in close-up screenshots
+- A grounded skin look that fits the colder weather, lighting, and wilderness direction of the list
+- Clean body-base decisions that will not create unnecessary armor-refit chaos later
+- Creature visuals that improve fur, hide, and animal readability without making the world feel inconsistent
+- A baseline that can later support NPC overhauls instead of competing with them
+
+#### Research Tasks
+
+- Confirm `HIMBO` requirements and direct base-page details before the actual install phase, since search results for it were noisier than the other baseline picks
+- Confirm the exact `CBBE 3BA (3BBB)` base page and requirements directly during install, since this is now part of the required female setup
+- Check how `CBBE`, `CBBE 3BA`, and `HIMBO` affect later outfit, armor, and BodySlide decisions so the refit workload is understood early
+- Decide the initial female and male body presets before large armor-batch generation starts, so `BodySlide Output` does not need unnecessary rebuild churn
+- Confirm the exact MO2 executable and output-folder setup for `BodySlide and Outfit Studio` before the actual install phase
+- Check whether the chosen female armor and outfit pool has strong `3BA/3BBB` support before locking too many clothing mods
+- Compare `BnP - Female Skin` and `BnP - Male Skin` under the selected lighting and weather route, not just on mod-page showcase shots
+- Check whether the chosen skin textures stay believable in motion and from normal gameplay distance instead of looking too smooth or glossy
+- Verify that `Bellyaches Animal and Creature Pack SSE` still fits once later creature-specific visual choices are researched
+- Keep a simple separation between body base, skin textures, and NPC-face overhauls so later character sections do not become overlap-heavy
+
+#### Risks To Check
+
+- Body-base decisions can quietly create a large armor-refit and outfit-conversion workload later
+- Choosing a `3BA/3BBB` preset increases female outfit compatibility requirements compared with plain `CBBE`
+- Letting BodySlide output overwrite source mods would make later auditing and rebuilds harder than necessary
+- Skin mods that look strong in screenshots can appear too polished, too soft, or too shiny in actual gameplay lighting
+- Mixing too many character-visual layers too early can make later NPC overhaul choices harder to reason about
+- Creature visuals can drift away from the broader grounded tone if they become too saturated or too fantasy-styled compared with the environment
+- Letting this section expand into full NPC beautification too early would duplicate work that belongs in later planning sections
+
+#### Acceptance Criteria
+
+- `CBBE` is established as the female body base and the male-body path is clear enough to support later outfit planning
+- `CBBE 3BA (3BBB)` and the chosen `FitnessGoal` preset are integrated cleanly enough that female body and outfit generation follow one consistent pipeline
+- `BodySlide and Outfit Studio` is installed, registered in MO2, and configured to generate into a dedicated `BodySlide Output` mod
+- Skin textures look believable under the chosen weather and lighting route during normal play
+- Character presentation improves clearly in third person without becoming distracting or over-stylized
+- Creature visuals improve the world's overall quality without clashing with the environment stack
+- The final body, skin, and creature baseline remains modular enough to support later NPC and armor decisions
 
 ## Animations and Movement
 
