@@ -291,7 +291,35 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 ## NPCs and Creatures
 
-_No specific mods recorded yet in this section._
+- [ ] `Northbourne NPCs of Whiterun Hold` - <https://www.nexusmods.com/skyrimspecialedition/mods/35404>
+- [ ] `Pandorable's NPCs` - <https://www.nexusmods.com/skyrimspecialedition/mods/78524>
+- [ ] `High Poly True to Vanilla NPC Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/74226>
+- [ ] `Lawless - A Bandit Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/88080>
+- [ ] `OBIS SE - Organized Bandits In Skyrim Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/4145>
+- [ ] `Haugbui - A Draugr Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/26188>
+- [ ] `The Restless Dead (A Draugr and Skeleton Overhaul)` - <https://www.nexusmods.com/skyrimspecialedition/mods/94100>
+- [ ] `Fluffworks` - <https://www.nexusmods.com/skyrimspecialedition/mods/56361>
+- [ ] `Bears of the North` - <https://www.nexusmods.com/skyrimspecialedition/mods/47541>
+- [ ] `Iconic's Dragon Retexture` - <https://www.nexusmods.com/skyrimspecialedition/mods/101712>
+- [ ] `Cannibal Draugr on Solstheim` - <https://www.nexusmods.com/skyrimspecialedition/mods/21238>
+- [ ] `Splendor - Dragon Variants` - <https://www.nexusmods.com/skyrimspecialedition/mods/9670>
+- [ ] `Diverse True Wolves and Dogs` - <https://www.nexusmods.com/skyrimspecialedition/mods/38058>
+- [ ] `Real Rabbits HD` - <https://www.nexusmods.com/skyrimspecialedition/mods/29223>
+- [ ] `Rally's Shaggy Cows of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/47742>
+- [ ] `Realistic Horse Breeds by KrittaKitty` - <https://www.nexusmods.com/skyrimspecialedition/mods/7685>
+- [ ] `Fusa Fusa Project - Fluffy Animals` - <https://www.nexusmods.com/skyrimspecialedition/mods/5514>
+- [ ] `Dragons Use Thu'um - Dragon AI Enhancements and New Fully Voiced Shouts` - <https://www.nexusmods.com/skyrimspecialedition/mods/87085>
+- [ ] `Dragon War - A Dragon Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/51310>
+- [ ] `Draugr Upgrades and Improvements (Draugr and Skeleton Overhaul)` - <https://www.nexusmods.com/skyrimspecialedition/mods/21775>
+- [ ] `Animal Tweaks` - <https://www.nexusmods.com/skyrimspecialedition/mods/1532>
+- [ ] `Pelagius's Wildlife AI - Skypatcher` - <https://www.nexusmods.com/skyrimspecialedition/mods/144909>
+- [ ] `Crowded Streets` - <https://www.nexusmods.com/skyrimspecialedition/mods/127723>
+- [ ] `Travellers of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/1973>
+- [ ] `Populated Skyrim Reborn SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/32190>
+- [ ] `MINPCs (More Immersive NPCs)` - <https://www.nexusmods.com/skyrimspecialedition/mods/29483>
+- [ ] `True Hunter - fewer animals per square meter` - <https://www.nexusmods.com/skyrimspecialedition/mods/25628>
+- [ ] `No Predators on roads` - <https://www.nexusmods.com/skyrimspecialedition/mods/11901>
+- [ ] `Real Wildlife Skyrim SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/17466>
 
 ## Audio and Feedback
 
@@ -339,4 +367,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 262
+Total unique mods listed: 291
