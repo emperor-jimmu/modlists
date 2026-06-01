@@ -73,13 +73,12 @@
 71. `07.01 Timescale And Calendar Adjustments`
 72. `07.02 Travel Pacing And Carriage Fast Travel Rules`
 73. `07.03 Encounter Spacing And Wilderness Feel`
-73. `07.04 Forest Density And Regional Identity`
-74. `07.05 Soundscape And Ambient Audio`
-75. `07.06 City Size, Outskirts, And Population Feel`
-76. `07.07 Roadside Clutter, Ruins, And Landmark Density`
-77. `07.08 Wildlife And Creature Ecology`
-78. `07.09 Night Darkness And Visibility Balance`
-79. `07.10 Weather Severity And Seasonal Feel`
+74. `07.04 Soundscape And Ambient Audio`
+75. `07.05 City Size, Outskirts, And Population Feel`
+76. `07.06 Roadside Clutter, Ruins, And Landmark Density`
+77. `07.07 Wildlife And Creature Ecology`
+78. `07.08 Night Darkness And Visibility Balance`
+79. `07.09 Weather Severity And Seasonal Feel`
 80. `08 World Content`
 81. `08.01 Landscape Overhauls`
 82. `08.02 Cities, Towns, And Villages`

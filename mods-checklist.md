@@ -225,7 +225,29 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 ## Immersive Scale and World Feel
 
-_No specific mods recorded yet in this section._
+- [ ] `Time Flies SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/39426>
+- [ ] `Dynamic Timescale - Remade` - <https://www.nexusmods.com/skyrimspecialedition/mods/141531>
+- [ ] `Seasonal Calendar (for seasonal mods)` - <https://www.nexusmods.com/skyrimspecialedition/mods/18164>
+- [ ] `Carriage and Ferry Travel Overhaul (Formerly Complete Fast Travel Overhaul)` - <https://www.nexusmods.com/skyrimspecialedition/mods/8379>
+- [ ] `Carriage Stops of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/10434>
+- [ ] `Fast Travel Cost` - <https://www.nexusmods.com/skyrimspecialedition/mods/20200>
+- [ ] `Extended Encounters` - <https://www.nexusmods.com/skyrimspecialedition/mods/44810>
+- [ ] `Radiance Encounters` - <https://www.nexusmods.com/skyrimspecialedition/mods/19720>
+- [ ] `Immersive Patrols SE AE` - <https://www.nexusmods.com/skyrimspecialedition/mods/718>
+- [ ] `Sounds of Skyrim Complete SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/8286>
+- [ ] `Acoustic Space Improvement Fixes (Corrected Reverb - Ambience - Interiors - SkyPatcher)` - <https://www.nexusmods.com/skyrimspecialedition/mods/78992>
+- [ ] `Spaghetti's Cities - AIO` - <https://www.nexusmods.com/skyrimspecialedition/mods/84735>
+- [ ] `Dawn of Skyrim (Director's Cut) SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/9074>
+- [ ] `JK's Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/6289>
+- [ ] `Ancient Land` - <https://www.nexusmods.com/skyrimspecialedition/mods/22900>
+- [ ] `Interesting Roads` - <https://www.nexusmods.com/skyrimspecialedition/mods/42749>
+- [ ] `Point The Way` - <https://www.nexusmods.com/skyrimspecialedition/mods/352>
+- [ ] `Animallica SE - Skyrim Wildlife Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/20456>
+- [ ] `One With Nature - Dynamic Animals and Creatures SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/13343>
+- [ ] `Savage Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/37768>
+- [ ] `Simply Darker Nights (SSE)` - <https://www.nexusmods.com/skyrimspecialedition/mods/14269>
+- [ ] `Lanterns of Skyrim SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/2429>
+- [ ] `Wearable Lanterns` - <https://www.nexusmods.com/skyrimspecialedition/mods/7560>
 
 ## World Content
 
@@ -281,4 +303,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 202
+Total unique mods listed: 225
