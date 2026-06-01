@@ -19,4 +19,8 @@
 17. Unique Jarl Throne Sitting Animation (OAR) - <https://www.nexusmods.com/skyrimspecialedition/mods/174752>
 18. Much more music (dark / fantasy music)
 19. Re-voice my character
-20. Section about tree and grass generation (DynDOLOD) - add an initial configuration (with no DYNDOLOD) and one with DYNDOLOD - for Bethini Pie
+20. Patching technique and strategy
+21. Specific patching strategy with Northern Roads, etc.
+22. Wrye Bash
+23. Synthesis
+24. Cathedral Assets Optimizer

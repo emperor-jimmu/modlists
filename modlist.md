@@ -997,8 +997,217 @@ Second priority:
 - The final flora stack remains compatible with the chosen terrain, snow, tree, and grass cache workflow
 - Performance and maintenance cost stay reasonable for the visual gain provided
 
-- Tree overhauls for dense forests
-- LOD generation and distant detail
+### Tree Overhauls For Dense Forests
+
+#### Core Idea
+
+- Treat trees as the main large-scale world-shaping layer for wilderness mood, canopy silhouette, and perceived regional scale
+- This section should decide how dense and dramatic `Elder Wilds` forests should become without creating a worldspace patch nightmare or making exploration unreadable
+- The right tree choice has to work with the current flora, terrain, weather, lighting, and later LOD plan instead of looking good only in isolated screenshots
+
+#### Suggested Options
+
+- Lower-maintenance baseline: improved tree models and better overall forest presentation with a lighter ecosystem burden
+- Dense modern forest route: heavier forest transformation with stronger regional identity and larger visual payoff, but more patching and placement risk
+- Extreme wilderness route: highly transformed forests and roadside coverage that push world scale hard, with the highest compatibility and readability cost
+
+#### Recommendation
+
+- Use the dense modern forest route, but keep one lower-maintenance fallback active until LOD and traversal readability are tested
+- Start serious evaluation with `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim` as the main dense-forest candidate
+- Keep `Happy Little Trees` as the main safer fallback baseline
+- Treat `Fabled Forests` and `Nature of the Wild Lands - forest and trees improvement mod` as stronger transformation routes to compare only if `Traverse the Ulvenwald` does not land at the right balance of density, readability, and maintenance
+
+#### Candidate Tree Overhauls To Research
+
+- `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57874>
+- `Happy Little Trees` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50961>
+- `Fabled Forests` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/94462>
+- `Nature of the Wild Lands - forest and trees improvement mod` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63604>
+
+#### Related Support And Comparison Notes
+
+- `Happy Little Trees PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159171>
+- `Fabled Forests - Ulvenwald - Compatibility Patch (BOS)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134501>
+- Treat support patches as a planning signal: the denser and more transformative the tree overhaul, the more likely it will need deliberate compatibility work with roads, outskirts, city edits, and landmarks
+
+#### Working Guidance For Elder Wilds
+
+- Start with `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim` as the first serious test for the intended large-scale wilderness feel
+- Use `Happy Little Trees` as the control baseline for readability, lower maintenance, and performance comparison
+- Test `Fabled Forests` if `Traverse the Ulvenwald` feels too curated or if a more mythic dense-forest look fits better after weather and lighting are locked
+- Test `Nature of the Wild Lands - forest and trees improvement mod` only if the modlist still wants an even stronger worldspace transformation and can tolerate the associated ecosystem complexity
+- Do not finalize trees until flora density and road readability are checked together, because this is where overgrown visuals can start working against actual play
+
+#### What Elder Wilds Should Prioritize
+
+- Forests that feel deeper, larger, and more regionally distinct during normal travel
+- Strong silhouettes and canopy presence that improve long-distance atmosphere
+- Readable roads, ruins, and combat spaces even in the densest forest regions
+- Tree style that matches the colder grounded visual tone instead of becoming too fantastical or too manicured
+- A tree stack that still behaves well once LOD, grass cache, and distant rendering are generated
+
+#### Research Tasks
+
+- Compare `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim` against `Happy Little Trees` in Falkreath, Rift, pine forest, tundra edge, and mountain foothill scenes
+- Compare `Fabled Forests` and `Nature of the Wild Lands - forest and trees improvement mod` only after the first baseline comparison establishes how much density the list actually wants
+- Check road, ruin, and landmark readability from normal third-person camera height in dense forest cells
+- Record which tree overhauls require significant patch support for outskirts, settlements, roads, bridges, and lighting add-ons such as `Lux Via`
+- Track whether branch density, trunk scale, or forest-floor darkness becomes too heavy once the chosen flora stack is enabled
+- Check whether `Happy Little Trees PBR` is worth testing later if `Happy Little Trees` remains a serious contender and the final material strategy benefits from it
+- Delay the final winner until LOD generation is tested, because tree mods often change quality ranking once distant rendering is visible
+
+#### Risks To Check
+
+- Dense tree overhauls can make roads, structures, and combat spaces harder to read in motion than in screenshots
+- Heavier worldspace tree edits can create floating objects, clipping, blocked sightlines, and broad patch debt with settlement or roadside mods
+- A tree overhaul can look excellent up close but break the intended mood at mid-distance or during travel if silhouettes become too busy
+- Forest darkness can compound with weather, grass, and lighting choices and make the world feel muddy instead of immersive
+- Locking a tree overhaul too early can distort later LOD and worldspace decisions
+
+#### Acceptance Criteria
+
+- Forest regions feel denser and more immersive without making travel frustrating
+- Roads, ruins, and normal third-person combat spaces remain readable in wooded areas
+- Tree silhouettes hold up at close, mid, and long distance
+- The chosen tree overhaul stays compatible with flora, terrain, road, and later LOD workflow at a manageable cost
+- The final result strengthens `Elder Wilds` world scale rather than just adding visual clutter
+
+### LOD Generation And Distant Detail
+
+#### Core Idea
+
+- Treat distant detail as the layer that determines whether `Elder Wilds` feels large and coherent during travel instead of collapsing into obvious pop-in and flat backgrounds
+- This section is about the visual target and support choices for distant terrain, trees, objects, and town silhouettes before the next section documents the exact generation workflow
+- The goal is not maximum LOD complexity at any cost; the goal is believable far-distance continuity that matches the chosen trees, terrain, snow, lighting, and weather stack
+
+#### Suggested Options
+
+- Conservative route: clean functional distant detail with limited extra texture or tree-specific optimization layers
+- Balanced route: strong object and tree LOD quality with targeted support mods where they materially improve distant scenes
+- High-end route: aggressive distant-detail polish with tree-specific optimization packs, upgraded LOD textures, and stricter regeneration discipline after visual changes
+
+#### Recommendation
+
+- Use the balanced route
+- Make `DynDOLOD`-based distant detail the assumed standard for `Elder Wilds`
+- Add support mods only where they clearly improve the chosen tree and texture stack instead of collecting every possible LOD add-on
+- Judge distant detail from actual travel routes, mountain overlooks, and city approaches rather than static showcase shots alone
+
+#### Core Support Mods To Research
+
+- `DynDOLOD Resources SE 3` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52897>
+- `DynDOLOD DLL NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97720>
+
+#### Optional Distant Detail Support
+
+- `HD LODs Textures SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3333>
+- `Happy Little Trees DynDOLOD Optimizations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/158587>
+
+#### DynDOLOD Setup And Configuration Instructions
+
+- Install `DynDOLOD Resources SE 3` as a normal mod in `Mod Organizer 2`
+- Install `DynDOLOD DLL NG` as a normal mod in `Mod Organizer 2`
+- Keep the standalone `TexGen` and `DynDOLOD` tools registered as MO2 executables, not mixed into normal mod folders
+- Create dedicated MO2 output mods before generation begins:
+- `TexGen Output`
+- `DynDOLOD Output`
+- `Occlusion Output`
+- Keep those generated outputs in the `Output` separator so source mods and generated files stay clearly separated
+- Do not generate final `DynDOLOD` output until the main tree, terrain, snow, and large worldspace visual picks are mostly stable
+- Run order should be:
+- confirm load order and conflict resolution first
+- run `TexGen`
+- install or update `TexGen Output`
+- run `DynDOLOD`
+- install or update `DynDOLOD Output`
+- generate occlusion data as part of the final distant-detail pass and keep it in `Occlusion Output`
+- Re-run `TexGen` and `DynDOLOD` whenever a major tree overhaul, large architecture change, landscape shift, or LOD-relevant texture pack is replaced
+
+#### Recommended Starting DynDOLOD Configuration
+
+- First serious pass target: balanced, stability-first output for testing rather than maximum visual range
+- Use `High` as the starting preset if the current setup is already graphics-heavy, and only move above that after checking travel performance and distant coherence
+- Generate both object and tree LOD on the first real pass so forest silhouette quality can be judged early
+- Keep large-reference and ultra-aggressive distant-detail options off for the first pass unless a chosen mod explicitly requires them
+- Use the first pass to answer three questions before tuning upward:
+- do distant trees match the chosen overhaul well enough
+- do mountain, road, and city approach views feel coherent
+- is the performance cost acceptable in real travel scenes
+- Keep billboard and tree-related support aligned with the actual winning tree overhaul instead of mixing multiple tree LOD solutions
+- If using `Happy Little Trees`, test baseline output first and only then compare `Happy Little Trees DynDOLOD Optimizations`
+- If using a heavier tree overhaul such as `Traverse the Ulvenwald`, `Fabled Forests`, or `Nature of the Wild Lands`, prioritize clean transitions and stable horizons before trying to increase range further
+- Do not chase maximum rule counts or the farthest possible draw distance until terrain, tree, and weather decisions are mostly locked
+
+##### Baseline Starting Profile For Elder Wilds
+
+- Preset target: `High`
+- Quality target: balanced object and tree LOD with stable travel performance
+- First-pass goal: believable distant forests, readable city approaches, and clean mountain silhouettes
+- Use matching billboards and required tree support for the selected tree overhaul before judging results
+- Keep optional LOD texture upgrades and tree-specific optimization mods disabled at first if the baseline result has not been seen yet
+
+##### When To Tune Up
+
+- Tune up only if the baseline `High` pass already looks coherent and performance headroom is clearly available
+- Increase settings gradually after checking one mountain overlook, one city approach, and one dense forest route
+- Prefer small quality increases tied to visible improvement over jumping straight to the most expensive distant-detail settings
+
+##### When To Stay Conservative
+
+- Stay with the baseline profile if the tree overhaul is still changing
+- Stay conservative if dense forests already stress performance before final grass cache and occlusion work
+- Stay conservative if distant scenes are already coherent and higher settings mostly increase build time rather than visible quality
+
+#### DynDOLOD Validation Checklist
+
+- No missing distant objects, giant billboard errors, or obviously broken tree lines
+- Near and far tree silhouettes transition cleanly enough during normal travel
+- City approaches, mountain overlooks, and forest horizons look coherent under the selected weather and lighting route
+- Generated outputs are enabled in MO2 and load after the source mods they depend on
+- Old generated outputs are replaced when the visual stack changes, rather than left active by accident
+
+#### Working Guidance For Elder Wilds
+
+- Assume `DynDOLOD Resources SE 3` and `DynDOLOD DLL NG` are part of the serious distant-detail evaluation path
+- Use `HD LODs Textures SE` only if the final landscape, architecture, and distant texture presentation still looks too flat or blurry after the main visual stack is chosen
+- Use tree-specific optimization support such as `Happy Little Trees DynDOLOD Optimizations` only when that exact tree route survives testing and the distant result justifies the extra moving parts
+- Keep distant-detail support aligned with the actual winners from trees, terrain, and architecture instead of choosing LOD support in a vacuum
+- Delay final quality tuning until the forest, flora, and snow decisions are stable enough that regenerated distant views are meaningful
+
+#### What Elder Wilds Should Prioritize
+
+- Mountain vistas, forest horizons, and city approaches that feel continuous instead of obviously switching between near and far assets
+- Tree lines and forest silhouettes that still sell scale at long distance
+- Distant terrain and settlement shapes that remain readable under the chosen weather and lighting route
+- Reduced visual pop-in during travel on roads, ridgelines, and open plains
+- A distant-detail stack that looks intentionally curated rather than over-sharpened or mismatched with nearby assets
+
+#### Research Tasks
+
+- Compare baseline `DynDOLOD` output with and without optional support mods such as `HD LODs Textures SE` and any surviving tree-specific optimization pack
+- Evaluate distant views from at least one mountain overlook, one tundra road, one dense forest edge, and one city approach
+- Check whether the chosen tree overhaul produces believable distant canopy shapes or whether it needs dedicated optimization support
+- Record whether distant snow, rock, and terrain colors stay coherent with the near-field texture stack
+- Track whether stronger distant-detail settings materially improve world scale or mostly increase generation time and maintenance cost
+- Delay final LOD quality lock-in until the tree winner and the main terrain/snow stack are no longer moving targets
+
+#### Risks To Check
+
+- Strong near-field visuals can still look broken in motion if distant terrain and tree lines do not match them
+- Optional LOD texture and tree-optimization add-ons can create extra maintenance burden for limited actual payoff
+- Overly aggressive distant sharpness can make the world look noisy or inconsistent with the atmospheric weather direction
+- Rebuilding distant detail too early wastes time and produces misleading comparisons while core graphics choices are still changing
+- A tree overhaul that looks great up close can still fail the modlist if its distant silhouette is weak or unstable
+
+#### Acceptance Criteria
+
+- Distant terrain, trees, and major landmarks remain visually coherent with nearby assets
+- Long-travel views strengthen the sense of scale in `Elder Wilds`
+- Pop-in and distant mismatch are reduced to a level that feels acceptable during normal play
+- Optional support mods earn their place with visible improvement instead of checklist value alone
+- The final distant-detail strategy is strong enough to justify the later generation workflow built around it
+
 - DynDOLOD, grass cache, and occlusion workflow
 - Character, skin, and creature visuals
 
