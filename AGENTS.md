@@ -34,6 +34,7 @@
 
 - Do not invent or guess Nexus links.
 - Use Playwright when necessary to browse and verify pages on NexusMods rather than relying on memory alone.
+- Always use Reddit as part of mod research, with `r/skyrimmods` as the primary subreddit for community-signal checks before locking recommendations.
 - Prefer canonical base mod pages. Avoid using translation, patch, preset, or add-on pages as the main recommendation unless the section explicitly calls for that type of file.
 - `mods-checklist.md` should contain concrete mod downloads with Nexus URLs only after the page has been verified.
 - Before adding a mod recommendation to any `modlist*.md` section, check `mods-checklist.md` so you do not add a mod that is already present in the modlist planning set.
@@ -41,7 +42,8 @@
 ## Research Workflow
 
 - The repo’s planning flow is section-by-section, one category at a time.
-- Prefer executable/observable evidence over memory: existing repo content, verified Nexus pages, and current file state.
+- Prefer executable/observable evidence over memory: existing repo content, verified Nexus pages, current file state, and Reddit discussion signal.
+- Check `r/skyrimmods` for each active research area as the default Reddit source, and only fall back to broader Reddit searching when `r/skyrimmods` does not provide enough signal.
 - Use `mods-checklist.md` as the duplicate-check reference before introducing new concrete mod picks into the numbered section files.
 - When updating repository guidance, align `AGENTS.md` to the actual current `modlist.md` index and numbered section file titles rather than older assumptions about section names or completion state.
 - Keep `separators.md` aligned with the current `modlist-XX.md` section and stub structure when separators are added, renamed, or reorganized.
