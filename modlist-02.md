@@ -51,6 +51,8 @@
 - Balanced stack plus `Subsurface Scattering - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114114> and `Screen Space Global Illumination (SSGI)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130375>
 - Fire-and-particle companion:
 - `Embers XD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37085>
+- Sky-driven lighting companion:
+- `Skylighting - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139352>
 - Support-only branch:
 - `Skyrim Upscaler - DLSS FSR2 XeSS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80343>
 
@@ -61,6 +63,7 @@
 - Treat `SSGI` as an optional luxury feature, not a baseline requirement.
 - Treat `Light Limit Fix` as a legacy or version-check item, not a default inclusion.
 - Treat `Embers XD` as the fire and ember category answer rather than pretending the rest of the CS stack covers that visual gap by itself.
+- Treat `Skylighting - Community Shaders` as the world-space sky shadow layer. It casts believable sky-driven shading across terrain and objects, adds large-scale directional ambient illumination from the sky, and pairs cleanly with the conservative option without requiring the balanced or high-end option. Worth including on the conservative baseline for an authentic 4K grim-dark look.
 - Use `Skyrim Upscaler` only if real performance testing proves it is needed.
 
 ### Graphics Testing Protocol
@@ -230,7 +233,7 @@
 
 #### Rocks And Mountains
 
-- `Enhanced Rocks and Mountains - Complex Material and Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
+- `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
 
 #### City And Settlement Surfaces
 
@@ -311,6 +314,8 @@
 - Heavy bespoke lighting option: strong authored changes with larger patch requirements.
 - Vanilla-plus lighting option: closer to vanilla light placement and lower conflict risk.
 - Hybrid option: stronger lighting where it matters most, with more compatibility-conscious coverage elsewhere.
+- Window-shadow and light-object companion layer: `Window Shadows Ultimate` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150494>, `iLluminous Elementals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138128>.
+- CS-tonemapping alternative: `True Light` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135488> as a documented alternative to `Lux` for projects that want CS-native tonemapping instead of an ENB-bridged lighting overhaul.
 
 ### Recommendation
 
@@ -319,6 +324,9 @@
 - `Relighting Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8586> plus `Luminosity Lighting Overhaul - The Cathedral Concept` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16830>
 - Keep `ELFX Shadows` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63790> as the main alternate route if `Lux` proves too patch-heavy or too moody.
 - Treat `Window Shadows RT - Updated` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111091> and `Ambiance - A Vanilla(plus) Ambient Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46383> as supporting or fallback options, not the primary first pick.
+- Treat `Window Shadows Ultimate` as the modern CS-native window-shadow companion. Unlike the older `Window Shadows RT - Updated`, it is built for Community Shaders and its features, casts real window light into interiors, and works with the chosen `Lux` or `Relighting` route without doubling their coverage. It is the documented next step beyond `Lux Orbis` for interior depth.
+- Treat `iLluminous Elementals` as the elemental-creature and magic-glow companion. It adds light to creatures and spell effects that would otherwise feel flat in dark interiors and shadowed dungeons, which fits the grim-dark tone by making ice atronachs, flame atronachs, and similar creatures read as proper threats under the lighting choice above.
+- Treat `True Light` as the documented CS-tonemapping alternative to `Lux + Lux CS`. If the project decides `Lux` is too patch-heavy or its ENB-bridged style is not the right fit, `True Light` is the canonical CS-native replacement.
 - Treat `NAT.CS III` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139567> as a later weather decision, not the reason to choose an interior-lighting stack.
 
 ### Risks & Compatibility
@@ -434,6 +442,8 @@
 - `Atlantean Landscape - Complete - Complex Terrain Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/89542>
 - `A Cathedralist's PBR Landscape` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/137333>
 - `TomatoRim PBR Landscapes AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177621>
+- `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336> is the modern mountain and rock overhaul (3.5K endorsements, actively updated April 2026, PBR/CS-native). New material blending system, no plugins, ships with Complex Material support. Use it as the primary mountain and rock identity in place of `Majestic Mountains`.
+- `Enhanced Rocks and Mountains - Fix and Addon` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/142493> extends ERM coverage to underground spaces and the Whiterun Skyforge and is the natural companion. Drop the `Majestic Mountains` stack (11052) and `Majestic Mountains Complex Material` (87547) entirely — the author has been inactive since June 2022, the mesh is known to miss snow coverage on rock piles, and the AE compatibility story is worse than ERM's.
 
 #### Roads
 
@@ -446,7 +456,7 @@
 - `Nordic Snow` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/670>
 - `Nordic Snow - Complex Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/133034>
 - `Hyperborean Snow SE - 8K` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29283> remains a comparison snow candidate, not a locked baseline.
-- `Enhanced Rocks and Mountains - Complex Material and Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
+- `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
 
 ### Risks & Compatibility
 

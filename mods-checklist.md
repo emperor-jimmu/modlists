@@ -44,7 +44,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Skurkbro's Retexture Project AIO` - <https://www.nexusmods.com/skyrimspecialedition/mods/63148>
 - [ ] `Skyking Fantasia Landscapes` - <https://www.nexusmods.com/skyrimspecialedition/mods/107256>
 - [ ] `Rally's Solstheim Landscapes` - <https://www.nexusmods.com/skyrimspecialedition/mods/35590>
-- [ ] `Enhanced Rocks and Mountains - Complex Material and Parallax` - <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
+- [ ] `Enhanced Rocks and Mountains - Complex Material and PBR` - <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
+- [ ] `Enhanced Rocks and Mountains - Fix and Addon` - <https://www.nexusmods.com/skyrimspecialedition/mods/142493>
 - [ ] `Riton Whiterun` - <https://www.nexusmods.com/skyrimspecialedition/mods/103408>
 - [ ] `RUSTIC CLUTTER COLLECTION - Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/5795>
 - [ ] `RUSTIC CLOTHING - Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/4703>
@@ -112,6 +113,11 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `KS Hairdos SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
 - [ ] `Eyes Nouveaux` - <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
 - [ ] `AURORA S.E.` - <https://www.nexusmods.com/skyrimspecialedition/mods/6021>
+- [ ] `Skylighting - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/139352>
+- [ ] `True Light` - <https://www.nexusmods.com/skyrimspecialedition/mods/135488>
+- [ ] `Window Shadows Ultimate` - <https://www.nexusmods.com/skyrimspecialedition/mods/150494>
+- [ ] `iLluminous Elementals` - <https://www.nexusmods.com/skyrimspecialedition/mods/138128>
+- [ ] ~~`Majestic Mountains` - <https://www.nexusmods.com/skyrimspecialedition/mods/11052>~~ (removed; replaced by `Enhanced Rocks and Mountains - Complex Material and PBR`)
 - [ ] `Dynamic Bloodpool Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
 - [ ] `Skeleton Replacer HD - SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/52845>
 
@@ -122,6 +128,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Open Animation Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
 - [ ] `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
 - [ ] `Beam Walking Assist` - <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
+- [ ] `RaySense - Jumping over obstacles` - <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
+- [ ] `Open Animation Replacer - RaySense` - <https://www.nexusmods.com/skyrimspecialedition/mods/175498>
 - [ ] `Comprehensive First Person Animation Overhaul - CFPAO` - <https://www.nexusmods.com/skyrimspecialedition/mods/87169>
 - [ ] `ConsoleUtilSSE NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
 - [ ] `Leviathan Animations II - Male Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/81463>
@@ -418,4 +426,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 314
+Total unique mods listed: 321
