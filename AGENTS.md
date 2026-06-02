@@ -1,5 +1,15 @@
 # Repository Guidance
 
+## Mission Statement
+
+Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built around five pillars:
+
+- **Modern UI and graphics** — a clean, grim-dark presentation that still reads clearly at 4K.
+- **Big, dark, awe-inspiring world** — exploration that makes Skyrim feel vast, threatening, and beautiful.
+- **Lots of new content** — quests, dungeons, worldspaces, and encounters that extend the game meaningfully.
+- **Modern mechanics** — combat, stealth, movement, and feedback that feel contemporary rather than 2011.
+- **Living the world** — survival, side activities, and full disregard for the Dragonborn quest if you choose. Legacy of the Dragonborn anchors the museum-and-collection pillar.
+
 ## What This Repo Is
 
 - This repo is a markdown planning workspace, not an application codebase. The source of truth is the `modlist*.md` files plus `mods-checklist.md`.
@@ -21,7 +31,8 @@
 - `modlist-03.md` (`Animations and Movement`) and `modlist-04.md` (`Third-Person Gameplay`) are fully expanded and should be treated as established baselines unless the user asks to revisit them.
 - `modlist-05.md` (`Expanded Systems`) is fully expanded.
 - `modlist-06.md` (`Modernized UI`) is locked. Baseline picks: `SkyUI` + `Oathvein UI` (grim-dark, preferred over `Norden UI` due to tone fit and dependency chain), `SkyHUD` + `TrueHUD` for HUD, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS` for crafting menus, `Sovngarde Font` for 4K readability. All mods verified via Nexus and Reddit community signal.
-- `modlist-07.md` and `modlist-08.md` have moderate content (350-430 lines) but are still open research areas with no concrete mod picks locked in `mods-checklist.md`.
+- `modlist-07.md` and `modlist-08.md` have moderate content (~255 lines each) but are still open research areas with no concrete mod picks locked in `mods-checklist.md`.
+- `modlist-10.md` (`Audio and Feedback`), `modlist-11.md` (`Survival, Difficulty, and Balance`), and `modlist-15.md` (`Performance and Technical Workflow`) each have 190-270 lines of expanded content and are open research areas.
 - `modlist-14.md` (`Modlist Curation Rules and Testing Plan`) is the expanded meta-section that combines the curation guardrails and the testing verification layer.
 - `modlist-12.md` (`Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes that do not belong in the core foundations layer.
 - `modlist-13.md` (`Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy for content that integrates into the display ecosystem.
