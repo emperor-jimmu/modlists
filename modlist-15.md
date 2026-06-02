@@ -253,17 +253,85 @@
 - Treat `TexGen`, `xLODGen`, `DynDOLOD`, grass cache, and occlusion output as late-stage generated layers that must be rebuilt when their inputs materially change.
 - Keep every generated output in its own dedicated `Mod Organizer 2` mod so stale files are easy to replace instead of silently lingering.
 
+### 4K LOD Tool Baseline
+
+- Keep the actual tools (`xLODGen`, `TexGen`, `DynDOLOD`) outside the game folder and outside `Mod Organizer 2` mod folders.
+- Keep the output folders outside `Program Files`, Steam, Documents, Desktop, and the MO2 instance.
+- Install the finished output back into MO2 as separate mods named `Terrain LOD Output`, `TexGen Output`, and `DynDOLOD Output`.
+- Generate in this order: `xLODGen` terrain LOD first, then `TexGen`, then `DynDOLOD`.
+- Use the `x64` versions of the tools.
+
+#### xLODGen 4K STEP Baseline
+
+- Configure the MO2 executable as `xLODGenx64.exe -lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"`.
+- Use `xLODGen` only for terrain LOD in this workflow.
+- Select all worldspaces.
+- Ensure only `Terrain LOD` is ticked in the right pane.
+- Leave `Brightness`, `Contrast`, and `Gamma` at defaults unless the list is intentionally following the STEP / `Cathedral Landscapes` terrain pipeline; outside that narrow case, use `Gamma 1.00`.
+- STEP 2.3 also states that users at `2160p / 4K` should double the diffuse and normal sizes shown in the standard presets for `LOD4`, `LOD8`, `LOD16`, and `LOD32`.
+- For initial `LOD4` terrain generation, keep `Optimize Unseen` off; if map / `LOD32` coastline quality needs a later pass, use a higher `Quality` setting in the documented `0-10` range and raise `Optimize Unseen` to roughly `550` for that pass.
+- After generation, run `ACMOS Road Generator` with `Roads = Path Only`, point `Path to LOD` at the `xLODGen_Output` folder, choose `Yes` when prompted to overwrite LOD textures, and choose `No` when asked to zip.
+- Move the generated files into the dedicated MO2 output mod and disable temporary xLODGen-only terrain resources afterward.
+
+#### TexGen 4K STEP Baseline
+
+- Configure the MO2 executable as `TexGen64.exe -SSE`.
+- Run `TexGen` after `xLODGen` and before `DynDOLOD`.
+- Use the preset matching rendered game resolution: `2160p = 4K`.
+- If grass LOD is not being generated, do not tick the grass billboard options.
+- Tick `Grass` if the `21-Post-Processing` group is not installed and the list is not using complex grass.
+- Tick `HD grass` if the `21-Post-Processing` group is installed and the list is using complex grass / Community Shaders grass features.
+- In `TexGen_SSE.ini`, set `GrassModelHeightMultiplier=1.15`.
+- In `TexGen_SSE.ini`, set `TreeMSAlphaThreshold=144`.
+- In `TexGen_SSE.ini`, set `ObjectMSAlphaThreshold=96`.
+- If the list does not use complex grass textures, set `ForceComplexGrass=0`.
+- If the list is following the STEP 2.3 complex-grass branch, set `ForceComplexGrass=1`.
+- Treat newer `Community Shaders` grass-lighting recommendations as a separate branch to validate deliberately rather than mixing them into this baseline.
+- Move the generated files into the dedicated MO2 `TexGen Output` mod and enable that output mod before running `DynDOLOD`.
+
+#### DynDOLOD 4K STEP Baseline
+
+- Configure the MO2 executable as `DynDOLODx64.exe -SSE`.
+- In `DynDOLOD_SSE.ini`, set `Expert=1` so the GUI opens in expert mode.
+- In `DynDOLOD_SSE.ini`, set `Level32=1 AllHDLOD32=1`.
+- In `DynDOLOD_SSE.ini`, set `GrassBrightnessTopR=0.500`, `GrassBrightnessTopG=0.500`, `GrassBrightnessTopB=0.500`, `GrassBrightnessBottomR=0.500`, `GrassBrightnessBottomG=0.500`, and `GrassBrightnessBottomB=0.500`.
+- In `DynDOLOD_SSE.ini`, set `DoubleSidedTextureMask=mountain,mtn`.
+- In `DynDOLOD_SSE.ini`, set `DoubleSidedMeshMask=mountain,mtn`.
+- If the list is following the STEP 2.3 complex-grass branch, also set `ComplexGrassBillboard=5`.
+- If the list is following the STEP 2.3 complex-grass branch, also set `ComplexGrassBrightnessTopR=0.500`, `ComplexGrassBrightnessTopG=0.500`, `ComplexGrassBrightnessTopB=0.500`, `ComplexGrassBrightnessBottomR=0.500`, `ComplexGrassBrightnessBottomG=0.500`, `ComplexGrassBrightnessBottomB=0.500`, and `ComplexGrassBacklightMask=25`.
+- Do not reuse older complex-grass values like `0.700 / 0.725 / 0.750` brightness or `BacklightMask=10` in this baseline; those are not the current STEP 2.3 values.
+- Select all worldspaces in the GUI.
+- Tick `Candles`.
+- Tick `FXGlow`.
+- Click `High` to pull in the expected STEP / `A Clear Map of Skyrim` mesh rules, then treat the intended end state as the `4K` profile with `Optimal` tree and catch-all rules plus the recommended `LOD32` rules.
+- Use `Medium` or `Low` only as a deliberate performance concession.
+- Generate `Occlusion` only on the first run; leave it unticked on later reruns to save time.
+- Tick `Grass LOD` only if the list is intentionally generating grass LOD.
+- STEP 2.3 describes the target as the `4K` preset with `Optimal` tree and catch-all rules plus the recommended `LOD32` rules for `A Clear Map of Skyrim`, so the preset button is a setup step rather than the whole decision.
+- Move the generated files into the dedicated MO2 `DynDOLOD Output` mod, ensure `DynDOLOD.esm` and `DynDOLOD.esp` are enabled, then sort with `LOOT`.
+
+#### 4K Validation And Failure Rules
+
+- Benchmark before and after LOD generation from a clean Whiterun save, with `A Clear Map of Skyrim and Other Worlds` temporarily disabled during benchmarking as STEP recommends.
+- STEP's benchmark spot is outside Whiterun looking west; also sanity-check the Rift (`cow tamriel 40 -24`) because aspens are one of the heavier scenes.
+- If performance is already below STEP's pre-LOD target band, lower the broader graphics baseline before blaming LOD output alone.
+- If travel performance is still too expensive after LOD generation, step `DynDOLOD` down from `High` to `Medium` or `Low`, and skip `Grass LOD` before cutting the entire visual stack apart.
+- If a tool run required one-off emergency tweaks, document them next to the MO2 executable or output mod so the next rebuild is reproducible instead of remembered from scratch.
+
 ### Risks & Compatibility
 
 - The most common technical mistake in a large list is not "wrong mod" but stale output from a previously correct state.
 - Partial rebuild habits create false negatives during testing because the game is no longer showing the current stack.
 - Delaying all generated work until the very end makes it harder to isolate which category caused later breakage.
+- A `4K` near-field texture stack can tempt the list into overbuilding LOD output. The tools should be tuned for believable travel scenes, not screenshot-maximal atlases that waste VRAM and rebuild time.
+- `DynDOLOD`, `TexGen`, and `xLODGen` settings are sensitive to memory pressure and stale outputs. If one run required lowered atlas size or reduced concurrency, the same constraint should be assumed on the next rebuild unless hardware changes.
 
 ### Acceptance Criteria
 
 - Every generated layer has a clear owner, rebuild trigger, and dedicated output mod.
 - `xEdit`, `Pandora`, `Synthesis`, and LOD tools are used in a repeatable order rather than by guesswork.
 - The list can rebuild a changed category without losing track of which outputs are now stale.
+- The list has one documented `4K` baseline for `xLODGen`, `TexGen`, and `DynDOLOD` that favors stable travel visuals over maximum theoretical quality.
 
 ## Patching Technique And Strategy
 
