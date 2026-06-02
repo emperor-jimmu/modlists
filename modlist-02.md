@@ -753,3 +753,72 @@
 - `BodySlide and Outfit Studio` is installed, registered in MO2, and configured to generate into a dedicated `BodySlide Output` mod.
 - Skin textures look believable under the chosen weather and lighting route during normal play.
 - Creature visuals improve the world's overall quality without clashing with the environment stack.
+
+## Hair, Eyes, And Beards
+
+### Core Idea
+
+- This subsection owns the per-character face assets that affect every NPC the player looks at: hairstyles, eye textures, and beard options.
+- It is the visual counterpart to the body-and-skin subsection above and ensures character close-ups match the grim-dark tone without pulling in full NPC face-gen overhauls that belong in `modlist-09.md`.
+- Hairstyles and eye textures have outsized impact on perceived character quality because Skyrim spends more close-up time on faces than on bodies.
+
+### Options
+
+- High-quality hair baseline: `KS Hairdos SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
+- Eye-texture baseline: `Eyes Nouveaux` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
+- Optional beard companion: keep the vanilla beard set unless a stronger beard pack surfaces that fits the tone and stays compatible with the chosen beard mesh.
+- Discipline-first route: rely on vanilla hair and eye textures and skip the subsection entirely if the project later decides NPC beautification belongs in a single combined `modlist-09.md` pass.
+
+### Recommendation
+
+- Use `KS Hairdos SSE` as the strongest first-pass hair baseline. It is the community-canonical high-quality hair pack (141K endorsements) and covers male and female hairstyles that read cleanly at 4K and under the chosen lighting route.
+- Use `Eyes Nouveaux` as the eye-texture baseline. Its khisartin-style textures and tintable eyelashes fit the grim-dark tone better than brightly colored anime-style alternatives, and it does not require a separate face-mod rewrite to display correctly.
+- Keep the beard decision minimal. The chosen body and face mesh stack usually supports vanilla beards well, and adding a beard pack that disagrees with the beard mesh creates clipping or stretching issues that outweigh the visual gain.
+- Keep the discipline-first route alive long enough to confirm the project does not want to absorb all character-beautification work here, but the hair and eye baselines above are likely the correct answer for the modern-graphics pillar.
+
+### Risks & Compatibility
+
+- High-poly hair can clash with extreme lighting and shadow setups chosen in the lighting subsection; verify KS Hairdos strands behave cleanly with `Lux` and the chosen shadow mod.
+- Eye-texture mods can look out of place if they lean too stylized; pick a khisartin-style or realistic pack that matches the grim-dark tone.
+- Hair assets are common in NPC-overhaul mod conflicts; if `modlist-09.md` later bundles NPC edits, check for hair-distribution patches.
+- Adding a beard pack without testing the beard mesh creates obvious clipping at the neck under most lighting setups.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear hair baseline and one clear eye-texture baseline.
+- Faces at 4K look intentionally designed rather than vanilla, with no obvious clipping from the lighting or shadow stack.
+- The chosen hair and eye assets do not force a full NPC overhaul in `modlist-09.md` but stay compatible with whatever it later selects.
+- Beard visuals remain acceptable without becoming a primary subsection decision.
+
+## Sky, Stars, And Auroras
+
+### Core Idea
+
+- This subsection owns the cosmic visual layer: night-sky stars, aurora rendering, and any sky-dome enhancements that affect how the world reads when the player looks up.
+- It supports the "big, awe-inspiring world" pillar directly because Skyrim's vanilla night sky is one of the most flat-looking areas in the worldspace, and a strong sky layer pays off whenever the player pauses, gazes up, or traverses a wide vista.
+- It is intentionally kept separate from the weather subsection because sky-dome work is mostly about clear-night rendering and long-horizon reads, not precipitation and overcast coverage.
+
+### Options
+
+- Aurora-focused route: `AURORA S.E.` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6021>
+- Discipline-first route: rely on the chosen weather mod's bundled star or sky textures and skip the dedicated sky subsection entirely.
+- Deferred high-commitment branch: do not add a full sky-dome or constellation overhaul unless real playtesting proves the night sky needs more than the weather baseline provides.
+
+### Recommendation
+
+- Use `AURORA S.E.` as the aurora baseline if `Elder Wilds` wants the night sky to be a real visual highlight. It adds aurora rendering with the look of a proper northern-lights storm (6.4K endorsements), and it is one of the few mods that genuinely upgrades the night vista without bloating the weather or lighting layer.
+- Keep the discipline-first route alive if the weather mod's bundled star and sky textures already read as strong as the project's lighting and weather setup can support. A clear night sky with weak lighting and weather still looks flat.
+- Keep the deferred high-commitment branch alive if a full star-field or constellation overhaul is later judged necessary. The current `Elder Wilds` tone does not need that level of sky investment to feel grand.
+- Keep this subsection separate from the weather and lighting subsections. Sky-dome work is not the same as weather coverage, and the same mod rarely solves both well.
+
+### Risks & Compatibility
+
+- Aurora mods can look out of place in non-northern settings; verify behavior in southern holds before locking the baseline.
+- Sky-dome edits can fight with weather mods that also tweak the night sky; resolve overlap by giving the aurora mod load-order priority for night-sky changes and suppressing duplicate edits in the weather mod's MCM if available.
+- Strong auroras at night require a real night-darkness baseline from `modlist-07.md`; if the night is too bright, the aurora will not read.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear aurora baseline or a deliberate discipline-first decision.
+- Night skies feel atmospheric rather than flat without forcing a full sky-dome overhaul.
+- Sky work stays separated from weather and lighting decisions in load order, MCM, and visual identity.

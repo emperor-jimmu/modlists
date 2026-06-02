@@ -400,3 +400,36 @@
 - `Elder Wilds` has one clearly preferred follower-framework baseline, one older established comparison, and one heavier management branch.
 - The chosen baseline complements religion, crime, exploration, and later NPC/world-content direction instead of collapsing several future sections into one companion answer.
 - The framework decision stays disciplined enough that later custom-follower work can build on it cleanly.
+
+## Stealth And Detection
+
+### Core Idea
+
+- This subsection owns the modern-mechanics pillar's stealth side: how Skyrim's famously janky detection system should be recalibrated, and whether the player should gain better stealth tools without those tools replacing the existing perk, magic, and combat layers.
+- It is intentionally kept separate from the crime and reputation subsection above. That subsection is about how the world reacts after the fact; this one is about how the player interacts with detection in the moment.
+- It also stays separate from NPC AI overhauls, which belong in `modlist-09.md` if a separate AI overhaul is later chosen, and from the targeted bugfix bucket in `modlist-12.md`.
+
+### Options
+
+- Detection-recalibration route: `Realistic AI Detection (RAID)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2345>
+- Discipline-first route: rely on the perk overhaul chosen earlier in section 05 and the targeted bugfix mods in `modlist-12.md` to handle detection edge cases.
+- Deferred high-commitment branch: do not add a full stealth-toolkit overhaul until the rest of section 05 has settled, because stacking stealth systems creates more playstyle incoherence than improvement.
+
+### Recommendation
+
+- Use `Realistic AI Detection (RAID)` as the detection-recalibration baseline. It is script-free, has 23.7K endorsements, and recalibrates the detection formula (line of sight, lighting, distance, sneaking skill, race) without rewriting the AI itself. It is the cleanest way to make Skyrim's stealth feel modern without dragging in a stealth overhaul that would fight the perk and combat layers.
+- Keep the discipline-first route alive if the chosen perk overhaul plus the targeted bugfix mods from `modlist-12.md` are judged to handle detection adequately. The cost of RAID is low but the discipline-first route is valid when the project wants a lighter systems footprint.
+- Keep the deferred high-commitment branch alive only if real playtesting proves detection still feels too forgiving or too punishing after the perk and bugfix layers are in place.
+- Keep this subsection separate from the crime and reputation subsection above. Detection is a moment-to-moment mechanical layer; reputation and guard pressure are social and world-reaction layers.
+
+### Risks & Compatibility
+
+- Detection recalibration can make some encounter zones feel too easy or too hard if it interacts badly with encounter-zone or difficulty mods from `modlist-11.md`; verify the chosen balance works across hold capitals, wilderness, and dungeon encounters.
+- A detection overhaul can make stealth-only play too dominant if it stacks with a perk overhaul that already buffs sneak; check the perk mod's sneak tree for conflicts.
+- Detection changes can also affect follower behavior, since followers inherit some detection rules; verify follower behavior under RAID if the chosen follower framework exposes detection settings.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear detection-recalibration baseline or a deliberate discipline-first decision.
+- Sneak gameplay feels more readable and less random under the new detection rules without making stealth-only play dominate.
+- Detection work stays separated from crime, reputation, perk, magic, and combat decisions in load order, MCM, and visual identity.

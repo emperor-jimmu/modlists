@@ -109,6 +109,9 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` - <https://www.nexusmods.com/skyrimspecialedition/mods/69681>
 - [ ] `BodySlide and Outfit Studio` - <https://www.nexusmods.com/skyrimspecialedition/mods/201>
 - [ ] `Bellyaches Animal and Creature Pack SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6839>
+- [ ] `KS Hairdos SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
+- [ ] `Eyes Nouveaux` - <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
+- [ ] `AURORA S.E.` - <https://www.nexusmods.com/skyrimspecialedition/mods/6021>
 
 ## Animations and Movement
 
@@ -190,6 +193,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Nether's Follower Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/55653>
 - [ ] `EFF - Extensible Follower Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/7003>
 - [ ] `Amazing Follower Tweaks SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6656>
+- [ ] `Realistic AI Detection (RAID)` - <https://www.nexusmods.com/skyrimspecialedition/mods/2345>
 
 ## Modernized UI
 
@@ -288,6 +292,9 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `LC_Build Your Noble House` - <https://www.nexusmods.com/skyrimspecialedition/mods/18308>
 - [ ] `Windstad Mine` - <https://www.nexusmods.com/skyrimspecialedition/mods/4160>
 - [ ] `Blackthorn - A Buildable Town in The Rift (SE)` - <https://www.nexusmods.com/skyrimspecialedition/mods/2242>
+- [ ] `Simple Fishing Overhaul - Animations and Improved Quest Dialogue` - <https://www.nexusmods.com/skyrimspecialedition/mods/103440>
+- [ ] `Hunterborn SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/7900>
+- [ ] `Streamlined Fishing` - <https://www.nexusmods.com/skyrimspecialedition/mods/80683>
 
 ## NPCs and Creatures
 
@@ -395,4 +402,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 291
+Total unique mods listed: 298

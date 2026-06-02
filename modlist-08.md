@@ -170,6 +170,42 @@
 - The distinction between practical shelters, guarded crossings, and lightweight discoverable ruins stays explicit.
 - The chosen direction improves ordinary travel and off-road curiosity without duplicating section-07 ownership.
 
+## Side Activities: Fishing, Hunting, And Downtime
+
+### Core Idea
+
+- This subsection owns the non-combat downtime activities that make Skyrim feel like a lived-in world when the player is not dungeon-delving or quest-running: fishing, hunting for food and materials, foraging, and small craft-hobby loops.
+- It closes the pillar-5 gap ("Living the world") by giving the player purposeful things to do during ordinary travel and rest stops that are neither combat nor quest objectives.
+
+### Options
+
+- Fishing-enhancement route: `Simple Fishing Overhaul - Animations and Improved Quest Dialogue` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/103440>
+- Comprehensive hunting route: `Hunterborn SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/7900>
+- Fishing-support companion: `Streamlined Fishing` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80683>
+- Lightweight alternative branch: skip dedicated activity mods and rely on the base AE fishing addon plus `Hunterborn` as an optional add-on rather than a core recommendation.
+
+### Recommendation
+
+- Start with the fishing-enhancement route and the comprehensive hunting route together, because they serve different downtime needs and complement rather than overlap.
+- Use `Simple Fishing Overhaul` as the fishing baseline. It adds third-person and first-person fishing animations, ~200 lines of improved quest dialogue, NPC reactions, an optional bait-cost mechanic, and MCM configuration — all atop the free AE fishing addon. It is ESL-flagged, lightweight, and widely compatible (5.2K endorsements, 660K unique downloads from author JaySerpa).
+- Use `Hunterborn SE` as the hunting baseline. It replaces the one-click animal-loot system with a process: dress, skin, harvest, butcher. It adds hunting knives, new alchemy ingredients, animal meats, recipes, foraging, and a scrimshaw crafting line. It has been the community-standard hunting mod for years (20K endorsements, last updated August 2025) and fits the survival-and-progression tone of `Elder Wilds`.
+- Keep `Streamlined Fishing` as a fishing-support companion rather than a replacement if the QoL gap in the vanilla fishing loop proves too wide even after `Simple Fishing Overhaul`.
+- Keep the lightweight alternative branch alive long enough to judge whether the downtime-activity layer needs dedicated mods at all, but treat the fishing+hunting baseline as the likely correct answer for the modlist's tone.
+
+### Risks & Compatibility
+
+- Adding two activity systems at once can feel like feature creep if the rest of the list does not reinforce the same living-world tone.
+- `Hunterborn` requires creature-type patching for any mod that adds new creatures (use `Hunterborn Extender` via Synthesis to handle this).
+- `Simple Fishing Overhaul` requires the free AE fishing addon (already included in Skyrim AE 1.6.1170) and OAR/DAR (already a baseline dependency from `modlist-03.md`).
+- Both mods should be checked against `modlist-13.md` for Legacy of the Dragonborn display integration if they add unique items.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear fishing baseline and one comprehensive hunting baseline.
+- Fishing feels more animated and rewarding than the vanilla click-wait-click loop.
+- Hunting involves a believable process (dressing, skinning, butchering) rather than a single loot click.
+- Both activities integrate cleanly with the survival systems chosen in `modlist-05.md` and the camping layer noted in `modlist-07.md`.
+
 ## New Quests That Fit The Tone
 
 ### Core Idea

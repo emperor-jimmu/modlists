@@ -44,12 +44,14 @@
 - Carriage-and-ferry baseline: `Carriage and Ferry Travel Overhaul (Formerly Complete Fast Travel Overhaul)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8379>
 - Route-coverage route: `Carriage Stops of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10434>
 - Gold-pressure route: `Fast Travel Cost` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20200>
+- Camping-and-rest route: `Campfire - Complete Camping System (Supports Skyrim VR)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/667>
 
 ### Recommendation
 
 - Start with `Carriage and Ferry Travel Overhaul` as the strongest first-pass answer because it improves the vanilla public-travel layer directly without forcing the list into a harsher fast-travel philosophy by default.
 - Keep `Carriage Stops of Skyrim` as the meaningful comparison if the project wants travel infrastructure itself to feel broader and more present in the world.
 - Keep `Fast Travel Cost` as the deliberate economic-pressure branch if the real question is map fast travel remaining available but no longer consequence-free.
+- Keep `Campfire` as the complementary camping-and-rest branch that affects travel pacing through a different mechanism: the player must plan campsites, manage rest, and cook in the field rather than relying only on carriages or inns. `Campfire` is already in the expanded-systems survival conversation from `modlist-05.md` but matters here as a travel-pacing tool regardless of which survival framework the list selects.
 - Keep this subsection focused on travel structure and carriage or ferry policy rather than survival maintenance from `modlist-05.md` or map ownership from `modlist-06.md`.
 
 ### Risks & Compatibility
