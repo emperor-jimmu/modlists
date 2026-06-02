@@ -206,7 +206,43 @@
 - Hunting involves a believable process (dressing, skinning, butchering) rather than a single loot click.
 - Both activities integrate cleanly with the survival systems chosen in `modlist-05.md` and the camping layer noted in `modlist-07.md`.
 
-## New Quests That Fit The Tone
+## Weapons, Armor, And Equipment Additions
+
+### Core Idea
+
+- This subsection owns the bulk-added weapons, armor sets, shields, and supporting equipment that expand what the player and NPCs can wear, wield, and find.
+- It is the content-side counterpart to the smithing subsection in `modlist-05.md`: smithing is the systems layer, this is the actual item library.
+- The goal is to add meaningful equipment variety without bloating leveled lists, fighting the chosen perk overhaul, or overwhelming the body and outfit pipeline from `modlist-02.md`.
+
+### Options
+
+- Bulk weapons pack: `Immersive Weapons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16788>
+- Bulk armors pack: `Immersive Armors` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3479>
+- Modern texture and mesh upgrade for the armor pack: `Immersive Armors Retexture and Mesh Fixes SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/75891>
+- Discipline-first route: rely on vanilla weapons and armor and let smithing, perk, and quest-reward mods carry the equipment identity, with no bulk item packs added at all.
+
+### Recommendation
+
+- Use `Immersive Weapons` as the weapons baseline. It adds around 230 new weapons spread across 21 weapon archetypes (more than double vanilla's 8), all craftable, upgradeable, enchantable, and integrated through leveled lists, vendors, and dungeon placement. Authored by Hothtrooper44 and collaborators, with 114K endorsements and 2.2M unique downloads.
+- Use `Immersive Armors` as the armor baseline. It adds around 55 armor sets (60+ with variants), 396 new shields, plus eye patches, capes, earrings, and scarves. Like the weapons pack, all items are craftable, upgradeable, enchantable, and integrated through leveled lists, quest rewards, and dungeon placement. The mod has an MCM or spell menu for distribution tuning. Authored by Hothtrooper44, with 206K endorsements and 3.16M unique downloads, making it one of the most-used content mods in the SE ecosystem.
+- Use `Immersive Armors Retexture and Mesh Fixes SE` as the visual upgrade for the armor pack. The base `Immersive Armors` assets look dated next to modern 4K PBR textures from `modlist-02.md`, and this retexture pack brings the armor visuals in line with the rest of the graphics stack (9.8K endorsements, 490K unique downloads).
+- Keep the discipline-first route alive long enough to confirm the project actually wants bulk equipment content. If the chosen quest mods and smithing content already add enough unique gear, the bulk packs can be skipped to reduce leveled-list bloat.
+- Keep this subsection separate from smithing in `modlist-05.md`, perk overhauls in `modlist-05.md`, and the crafting helpers in `modlist-05.md`. This subsection owns the item library, not the systems that consume it.
+
+### Risks & Compatibility
+
+- Bulk item packs can create heavy leveled-list edits that conflict with encounter-zone, loot, and economy mods from `modlist-05.md` and `modlist-11.md`. Resolve overlap by giving the bulk packs load-order priority for new items and tuning distribution through the mod's MCM.
+- New armor sets must be tested against the chosen body base (`CBBE 3BA` / `HIMBO`) and the BodySlide pipeline from `modlist-02.md`. Some vanilla-rigged armor pieces will need outfit conversions.
+- Bulk packs can also affect NPC visual identity if `modlist-09.md` later bundles NPC overhauls; check for distribution or appearance conflicts.
+- The base `Immersive Armors` mesh and texture work looks visibly dated without the retexture pack. Skipping the retexture makes the armor feel out of place in a 4K grim-dark presentation.
+- New weapons and armor can dwarf unique items from `modlist-13.md` (Legacy of the Dragonborn) if display integration is not considered; verify the display ecosystem handles the new items cleanly.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear weapons-content baseline and one clear armor-content baseline, both with modern visual upgrades where applicable.
+- The bulk packs do not create leveled-list or loot conflicts that the economy and difficulty layers cannot resolve.
+- The new armor pieces display correctly on the chosen body base without clipping or stretching under the chosen lighting and weather setup.
+- The chosen direction supports the "lots of new content" pillar without making the equipment pool feel bloated or generic.
 
 ### Core Idea
 

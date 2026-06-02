@@ -295,6 +295,9 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Simple Fishing Overhaul - Animations and Improved Quest Dialogue` - <https://www.nexusmods.com/skyrimspecialedition/mods/103440>
 - [ ] `Hunterborn SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/7900>
 - [ ] `Streamlined Fishing` - <https://www.nexusmods.com/skyrimspecialedition/mods/80683>
+- [ ] `Immersive Weapons` - <https://www.nexusmods.com/skyrimspecialedition/mods/16788>
+- [ ] `Immersive Armors` - <https://www.nexusmods.com/skyrimspecialedition/mods/3479>
+- [ ] `Immersive Armors Retexture and Mesh Fixes SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/75891>
 
 ## NPCs and Creatures
 
@@ -402,4 +405,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 298
+Total unique mods listed: 301
