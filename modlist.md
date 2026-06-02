@@ -29,33 +29,56 @@ Scope notes:
 - `BodySlide and Outfit Studio` for the chosen body pipeline
 - `Pandora Behaviour Engine Plus` for animation behavior generation
 
-### MO2 Setup
+### Mod Organizer 2 Setup
 
-- Create at least one clean working profile for `Elder Wilds` before major category testing
-- Use consistent MO2 separators such as `Core`, `Graphics`, `Animations`, `Gameplay`, `UI`, `World`, `NPCs`, `Patches`, and `Output`
-- Keep generated outputs in their own enabled mods, not mixed into source mods
-- Register external tools through MO2 so every build step runs against the same profile and virtual file system
+- Follow STEP's standalone-folder approach: keep the game under a shallow custom path such as `C:\Games\Steam\steamapps\common\Skyrim Special Edition` and keep modding tools under a separate path such as `C:\Modding\Tools`.
+- Install `Mod Organizer 2` as a standalone application under `C:\Modding\Tools\Mod Organizer` rather than inside the game folder.
+- On first launch, create a `global instance`, select the Steam `Skyrim Special Edition` install, and name the instance something obvious like `Elder Wilds 1.6.1170`.
+- If MO2 prompts for profile settings during instance creation, tick every box so the profile keeps its own `INI` files and game-specific settings.
+- Connect MO2 to Nexus during first launch and let MO2 handle `nxm` links.
+- In `Settings > Workarounds`, tick `Enable archives parsing (experimental)` so MO2 reports asset conflicts more reliably.
+- Create at least one clean working profile before major category testing, and keep separators aligned to this repo's structure in `separators.md`.
+- Keep generated outputs in their own enabled mods, never mixed into source mod folders.
 
-### Baseline Tools To Register In MO2
+### Output Mods To Create In MO2
 
-- `SKSE64`
-- `SSEEdit`
-- `Wrye Bash`
-- `Synthesis`
-- `BethINI Pie`
-- `BodySlide x64.exe`
-- `Pandora`
-- `xLODGen`
-- `TexGen`
-- `DynDOLOD`
+- Create empty mods named `xEdit Output`, `SKSE Output`, `TexGen Output`, `DynDOLOD Output`, and `Terrain LOD Output` before tool registration.
+- Keep these output mods near the top or in a dedicated generated-output block so rebuild products are easy to replace and audit.
+- Add more dedicated output mods only when a tool truly generates persistent files that should not land in `Overwrite`.
 
-### Cleanup And Validation Workflow
+### Register Tools In MO2
 
-- Confirm runtime compatibility before installing any SKSE-dependent plugin
-- Keep a dedicated patch/output section in MO2 for generated files and hand-made compatibility work
-- Use `SSEEdit` after each major category to review conflicts instead of waiting until the whole list is assembled. Detailed patching technique and strategy lives in the `Patching Technique And Strategy` subsection of `modlist-15.md`.
-- Rebuild generated outputs after major changes to bodies, animations, grass, LOD, or other systems that produce artifacts
-- Document manual fixes and tool-specific decisions directly in this repository so the plan stays reproducible
+- Open MO2's executable editor from the gear icon and add each tool with `Add from file...`.
+- Tick `Use application's icon for desktop shortcuts` for each entry so shortcuts remain readable.
+- For tools that generate files, tick `Create files in mod instead of overwrite` and point them at the correct output mod.
+- Arrange the executables in a stable order so the dropdown reflects the real workflow instead of becoming random over time.
+
+### MO2 Executable Reference
+
+| Tool | Executable | Arguments | Output Handling | Notes |
+| --- | --- | --- | --- | --- |
+| `BethINI Pie` | `Bethini.exe` | none | none | Run through MO2 so it edits the active profile INIs instead of global game INIs. |
+| `LOOT` | `LOOT.exe` | `--game="Skyrim Special Edition"` | none | If LOOT fails through MO2, use `--single-process --game="Skyrim Special Edition"`. |
+| `SKSE Skyrim Launcher` | `skse64_loader.exe` | none | `SKSE Output` | Use this to launch the game after vanilla initialization is complete. |
+| `xEdit` | `xEdit.exe` | `-SSE -IKnowWhatImDoing -AllowMasterFilesEdit` | `xEdit Output` | Main conflict review and manual patching entry. |
+| `xEditQuickAutoClean` | `xEditQuickAutoClean.exe` | `-SSE` | `xEdit Output` | Only use for plugins LOOT explicitly flags for cleaning. |
+| `xLODGen` | `xLODGenx64.exe` | `-lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"` | `Terrain LOD Output` | Replace `DriveLetter` with the actual drive letter used for the modding folder. |
+| `TexGen` | `TexGen64.exe` | `-SSE` | `TexGen Output` | Keep output isolated and pack it into the dedicated mod immediately after generation. |
+| `DynDOLOD` | `DynDOLODx64.exe` | `-SSE` | `DynDOLOD Output` | Keep output isolated and enable `DynDOLOD.esm` / `DynDOLOD.esp` after generation. |
+| `Wrye Bash` | `Wrye Bash.exe` | none | dedicated patch/output mod if used | Register only if the list still needs a `Bashed Patch` or leveled-list review pass. |
+| `Synthesis` | `Synthesis.exe` | none | dedicated patch/output mod if used | Give it its own output mod once the final patcher set is known. |
+| `BodySlide` | `BodySlide x64.exe` | none | dedicated body/output mod | Run through MO2 so mesh output respects the active profile and selected body stack. |
+| `Pandora` | `Pandora Behaviour Engine Plus.exe` | none | dedicated behavior/output mod if needed | Run through MO2 so behavior generation sees the real virtualized animation stack. |
+
+### MO2 Operating Rules
+
+- Launch the game through `SKSE`, not through Steam or the stock launcher, after the vanilla initialization step is complete.
+- Run `LOOT` before gameplay tests and before any major cleaning or conflict-review pass.
+- Use `xEditQuickAutoClean` only for plugins LOOT explicitly marks as needing cleaning.
+- Use `xEdit` after each major category to review conflicts instead of waiting until the whole list is assembled. Detailed patching technique and strategy lives in the `Patching Technique And Strategy` subsection of `modlist-15.md`.
+- Treat the `Overwrite` folder as a failure state; if files appear there, either move them into the proper output mod or fix the executable configuration that produced them.
+- Rebuild generated outputs after major changes to bodies, animations, grass, LOD, or other systems that produce artifacts.
+- Document manual fixes, custom arguments, and tool-specific decisions directly in this repository so the plan stays reproducible.
 
 ## Research Workflow
 
