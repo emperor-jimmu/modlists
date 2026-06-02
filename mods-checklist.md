@@ -421,6 +421,14 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `The Great Cities` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/320> |
 | `The Great Cities - Minor Cities and Towns SSE Edition` | `The Great Cities` | <https://www.nexusmods.com/skyrimspecialedition/mods/20272> |
 | `Cities of the North - Dawnstar` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/28952> |
+| `Cities of the North - Morthal` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/34168> |
+| `Cities of the North - Falkreath` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/56731> |
+| `Cities of the North - Winterhold` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/40088> |
+| `Settlements Expanded` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/7777> |
+| `The Great City of Solitude SSE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/22243> |
+| `JK's Whiterun Outskirts` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/78351> |
+| `Capital Whiterun Expansion` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/37982> |
+| `The Great Town of Shor's Stone SSE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/35977> |
 | `The Great Town of Ivarstead SSE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/34505> |
 | `The Great Village of Kynesgrove` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/42639> |
 | `The Great Village of Mixwater Mill SSE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/36350> |
@@ -649,4 +657,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 350
+Total unique mods listed: 355
