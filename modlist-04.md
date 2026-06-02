@@ -236,6 +236,7 @@
 - Disciplined aiming route: keep crosshair behavior restrained and readable.
 - Selection-utility route: `Better Third Person Selection - BTPS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64339>
 - Feedback-supported route: `TrueHUD` as a limited clarity companion where it genuinely helps aiming readability.
+- Arrow-physics route: `Ricochet - Arrow Physics Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160603>
 
 ### Recommendation
 
@@ -243,6 +244,7 @@
 - Treat camera framing as the baseline aiming context, because poor framing can masquerade as poor aiming behavior.
 - Treat `BTPS` as a strong optional companion if real third-person play shows that selection and interaction reliability are part of the usability problem, but do not confuse object-selection fixes with combat-aiming fixes.
 - Keep `TrueHUD` only as an optional clarity aid if testing shows it materially improves third-person targeting and aim readability.
+- Keep `Ricochet - Arrow Physics Framework` as a documented arrow-physics companion rather than a baseline. It adds realistic arrow ricochet, deflection, and stick-physics behavior that makes third-person archery feel more grounded. Lock it in only if archery is a meaningful part of the locked combat style in `modlist-04.md` and `modlist-05.md`; pure-melee or pure-magic builds can skip it without losing value.
 - Defer visual styling and broader HUD philosophy to `modlist-06.md`.
 
 ### Risks & Compatibility

@@ -856,3 +856,38 @@
 - Skulls, bone piles, and skeleton assets in dungeons look intentionally designed rather than vanilla.
 - The visual replacer does not affect the rigged skeleton decisions in `modlist-03.md`.
 - Any required mesh patch companion is documented and installed only if the modlist actually needs it.
+
+## Blood, Decals, And Combat Visual Effects
+
+### Core Idea
+
+- This subsection owns the in-world visual effects that fire when combat happens: blood pools, persistent decals, and other lingering marks that make a fight leave a visible trace on the worldspace.
+- It is intentionally kept separate from the lighting, weather, and texture subsections above because combat effects are event-driven overlays, not ambient worldstate. The baseline works on top of the locked visual stack, not as part of it.
+- It also stays separate from the combat-feedback and hit-reaction layers in `modlist-04.md` and `modlist-11.md`. Those subsections own the moment a hit lands; this one owns what the worldspace looks like after.
+
+### Options
+
+- Blood and decal baseline: `Dynamic Bloodpool Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
+- Discipline-first route: rely on the vanilla blood and decal system and skip the dedicated framework, since the locked combat and graphics stack already produces readable hit feedback.
+- Deferred visual-effects branch: do not add a blood or decal framework until the locked weather, lighting, and texture stacks are stable, because combat visual effects can clash with the chosen weather rendering.
+
+### Recommendation
+
+- Use `Dynamic Bloodpool Framework` as the blood and decal baseline if `Elder Wilds` wants combat to leave more persistent visual traces on the world. It is a framework-level replacement for the vanilla blood system, designed to render dynamic blood pools and decals under the locked lighting and weather stack. Lock it in only after the weather and lighting baselines are stable, because blood decals need to read correctly under both daylight and the chosen night-darkness setup from `modlist-07.md`.
+- Keep the discipline-first route alive if the vanilla blood system already reads as strong enough under the chosen lighting and weather setup. Adding a framework for its own sake adds an extra mod without guaranteeing a visible gain.
+- Keep the deferred visual-effects branch alive if the locked weather, lighting, and texture stacks are still being settled, because adding a blood framework too early risks a re-tune when the weather or lighting baseline changes.
+- Keep this subsection separate from `modlist-04.md` hit-reaction and stagger ownership, and from `modlist-11.md` combat and difficulty ownership. The hit moment is their decision; the visual aftermath is this one's.
+
+### Risks & Compatibility
+
+- Blood and decal frameworks can interact poorly with ENB or Community Shaders weather mods, especially ones that handle screen-space wetness and surface effects. Verify behavior under the locked `Raid Weathers CS` or `Azurite Weathers III CS` baseline.
+- Persistent blood decals can create frame-rate or memory pressure in long combat sessions. Check the framework's MCM for decal lifetime and density settings.
+- Blood pools can look out of place in snowy regions if the framework does not handle surface-specific blending. The chosen survival and weather setup from `modlist-05.md` and `modlist-02.md` should be tested in a snowy exterior.
+- The framework can conflict with other combat-effect mods that also touch blood or decal spawning. Keep ownership here scoped to the persistent-decals-and-pool layer, not the hit-effect layer.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear blood and decal baseline or a deliberate discipline-first decision.
+- Combat leaves a visible, believable trace on the worldspace without overwhelming the locked lighting and weather stack.
+- The chosen framework does not conflict with the locked weather, lighting, or community-shaders baseline.
+- Blood and decal ownership stays separate from hit-reaction, stagger, and combat-balance decisions in `modlist-04.md` and `modlist-11.md`.

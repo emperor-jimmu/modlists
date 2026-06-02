@@ -112,6 +112,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `KS Hairdos SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
 - [ ] `Eyes Nouveaux` - <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
 - [ ] `AURORA S.E.` - <https://www.nexusmods.com/skyrimspecialedition/mods/6021>
+- [ ] `Dynamic Bloodpool Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
 - [ ] `Skeleton Replacer HD - SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/52845>
 
 ## Animations and Movement
@@ -120,6 +121,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `XP32 Maximum Skeleton Special Extended - XPMSSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
 - [ ] `Open Animation Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
 - [ ] `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
+- [ ] `Beam Walking Assist` - <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
 - [ ] `Comprehensive First Person Animation Overhaul - CFPAO` - <https://www.nexusmods.com/skyrimspecialedition/mods/87169>
 - [ ] `ConsoleUtilSSE NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
 - [ ] `Leviathan Animations II - Male Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/81463>
@@ -148,6 +150,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `True Directional Movement - Modernized Third Person Gameplay` - <https://www.nexusmods.com/skyrimspecialedition/mods/51614>
 - [ ] `TrueHUD` - <https://www.nexusmods.com/skyrimspecialedition/mods/62775>
 - [ ] `Better Third Person Selection - BTPS` - <https://www.nexusmods.com/skyrimspecialedition/mods/64339>
+- [ ] `Ricochet - Arrow Physics Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/160603>
 - [ ] `Improved Camera SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/93962>
 - [ ] `TK Dodge RE - Script Free` - <https://www.nexusmods.com/skyrimspecialedition/mods/56956>
 - [ ] `TK Dodge SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/15309>
@@ -415,4 +418,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 311
+Total unique mods listed: 314

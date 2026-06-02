@@ -73,12 +73,14 @@
 ### Options
 
 - Procedural parkour and climbing baseline: `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
+- Balance-assist companion: `Beam Walking Assist` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
 - Discipline-first route: rely on vanilla climbing, `True Directional Movement`, sprint, and jump from this section and `modlist-04.md` only, with no dedicated parkour framework.
 - Deferred high-commitment branch: do not adopt a full parkour framework until later movement and animation work is stable, because the parkour ecosystem has many overlapping derivatives and lock-in decisions are hard to reverse.
 
 ### Recommendation
 
 - Use `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` as the procedural parkour and climbing baseline. It adds a procedural climbing and parkour system that lets the player vault, climb, and traverse environmental geometry (10,112 endorsements, 432K unique downloads, v3.5.4). It is the most-endorsed parkour framework on Nexus and has a meaningful community track record.
+- Keep `Beam Walking Assist` as a documented balance-assist companion rather than a baseline. It helps the player stay on narrow beams and ledges during parkour traversal, which is a usability gap in vanilla and a common frustration once parkour is enabled. Add it only after the parkour baseline is locked in and only if real traversal testing shows beam-walking is annoying.
 - Keep the discipline-first route alive only if the rest of the movement and animation stack is still being settled, because parkour is a major ownership decision that affects jump height, animation behavior, and camera expectations.
 - Keep the deferred high-commitment branch alive if the project wants to see the full movement and animation stack working before adding parkour on top, since parkour layers often need to be tuned in light of the chosen animation and camera baselines.
 - Keep this subsection separate from `modlist-04.md` dodge, sprint, and movement-responsiveness ownership, and from the third-person camera subsection. Parkour is a vertical-and-lateral movement system, not a combat responsiveness or camera framework.
