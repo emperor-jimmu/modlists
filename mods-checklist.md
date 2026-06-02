@@ -79,6 +79,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Nordic Snow - Complex Material`                            | `Complex Parallax Materials`                                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/133034> |
 | `Simplicity of Snow`                                        | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/56235>  |
 | `RUSTIC CLUTTER COLLECTION - Special Edition`               | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/5795>   |
+| `Snazzy Furniture and Clutter Overhaul (SFCO)`              | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/2414>   |
 | `RUSTIC CLOTHING - Special Edition`                         | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/4703>   |
 | `Static Mesh Improvement Mod - SMIM`                        | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/659>    |
 | `High Poly Project`                                         | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/12029>  |
@@ -300,6 +301,24 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Amorous Adventures` (clean variant)                      | `SKSE64`, `SkyUI`                                          | <https://www.nexusmods.com/skyrimspecialedition/mods/7305>  |
 | `Marriage Mod - To Have And To Hold`                      | `SKSE64`                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/8589>  |
 | `Serana Dialogue Add-On`                                  | `SKSE64`, `Address Library for SKSE Plugins`               | <https://www.nexusmods.com/skyrimspecialedition/mods/32161> |
+
+### Lore-Friendly Items, Artifacts, and Wardrobe
+
+| Mod                                                       | Dependencies                                | URL                                                          |
+|-----------------------------------------------------------|---------------------------------------------|--------------------------------------------------------------|
+| `Reliquary of Myth - Artifacts of Skyrim`                 | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/31612>  |
+| `ArteFakes - Unique Artifacts Replacer`                   | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/41254>  |
+| `Konahrik's Accoutrements`                                | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/22206>  |
+| `Unique Items Tweaks - Improved Miscellaneous Artifacts` | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/33723>  |
+| `Armor and Clothing Extension`                            | `RUSTIC CLOTHING - SE`, `SkyUI`             | <https://www.nexusmods.com/skyrimspecialedition/mods/19002>  |
+| `Common Clothes and Armors`                               | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/21305>  |
+| `Cloaks of Skyrim`                                        | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/6369>   |
+| `Colovian Noble Clothes`                                  | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/4464>   |
+| `Knapsack Backpacks SE`                                   | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/3440>   |
+| `NordwarUA Total Armor and Weapon Compilation`           | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/61423>  |
+| `Bandolier - Bags and Pouches Classic`                    | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/2417>   |
+| `LeanWolf's Better-Shaped Weapons SE`                     | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/2017>   |
+| `Legendary Skyrim Crossbows and Bows SSE`                 | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/8273>   |
 
 ### Notes
 
@@ -630,4 +649,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 336
+Total unique mods listed: 350

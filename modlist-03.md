@@ -174,6 +174,7 @@
 - Balanced modern route: `Precision` plus `SCAR - Skyrim Combos AI Revolution` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72014>
 - Full `MCO` route to evaluate later: `MCO ADXP - Modern Movement Combat Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/117115>
 - Verified ambitious-route support to track with `MCO`: `Animation Motion Revolution` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50258> and `Payload Interpreter` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65089>
+- Iframe-utility support: `IFrame Generator RE (AE Support)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82737> is the AE-compatible iframe generator that several advanced attack and combat-animation packs expect. Hard-requires `Address Library for SKSE Plugins` and `SKSE64`. Required as a universal install if the final animation stack includes any pack that depends on it; otherwise install per-package when an animation mod explicitly lists it.
 - Gameplay-side companion to revisit in `modlist-04.md`: `Valhalla Combat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64741>
 
 ### Recommendation

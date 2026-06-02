@@ -472,3 +472,159 @@
 - The locked Amorous Adventures variant is the clean build. The explicit variant is not in the load order.
 - Marriage feels like a meaningful long-term choice rather than a stat boost, with the machinery to support up to 11 simultaneous spouses if the player wants that.
 - Romance dialogue and quest work stays separated from custom-follower content in `modlist-09.md` so the two systems do not double-voice or double-quest the same NPC.
+
+## Artifact And Unique Item Overhauls
+
+### Core Idea
+
+- This subsection owns the unique-item and artifact content packs that add depth to the named items the player finds in the world: Daedric artifacts, dragon priest masks, unique weapons, and miscellaneous quest items that vanilla treats as stat-sticks.
+- `Elder Wilds` treats these mods as a separate ownership layer from crafting (which lives in `Smithing And Crafting Expansion`) because artifact overhauls change what named items are, not how the player makes generic items.
+- The right baseline is balanced-and-lore-friendly. These mods should make the player's first Ahzidal discovery or first encounter with the Warlock's Ring feel meaningful, not give every artifact a +50% damage enchant and break the loot ladder.
+
+### Options
+
+- Comprehensive balanced overhaul: `Reliquary of Myth - Artifacts of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/31612>
+- Model-replacement pass: `ArteFakes - Unique Artifacts Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/41254>
+- Dragon-priest specific: `Konahrik's Accoutrements` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22206>
+- Gap-filler for the unique-items left behind: `Unique Items Tweaks - Improved Miscellaneous Artifacts` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33723>
+- Discipline-first route: rely on vanilla artifact stats and skip the dedicated overhauls, since most of the named items in the base game already have functional effects.
+
+### Recommendation
+
+- Use `Reliquary of Myth` as the artifact-stat and effect baseline. It rebalances nearly all of Skyrim's legendary artifacts with unique enchantments, new stats, and lore-friendly effects, and is tagged Lore-Friendly on Nexus. It is the canonical mid-size artifact overhaul and does not invent a new artifact set the way `Legacy of the Dragonborn`-style mods do; it only improves what is already in the game.
+- Use `ArteFakes` as the model-replacement companion. Where Reliquary of Myth changes the numbers and effects, ArteFakes swaps the actual 3D models of the unique items for higher-detail versions. The two stack cleanly because they touch different record types (stats vs meshes).
+- Use `Konahrik's Accoutrements` as the dragon-priest-specific companion. It upgrades the named Dragon Priest encounters with new gear, masks with their own stat curves, and harder fights. This is the only one of the four that adds new encounters, and it is the only one the Legacy of the Dragonborn museum integration cares about directly (it is the dragon-priest exhibit).
+- Use `Unique Items Tweaks` as the gap-filler. It improves the miscellaneous artifacts Reliquary of Myth does not cover (Warlock's Ring, Muiri's Ring, the various amulets, etc.) so the list does not end up with most named items buffed and a few stragglers still vanilla.
+- Keep the discipline-first route alive only if `Elder Wilds` explicitly decides named-item balance is not in scope. Vanilla artifact stats are functional but very front-loaded toward the late-game Daedric items, which makes the early-game finds feel like stat padding.
+
+### Risks & Compatibility
+
+- Stacking `Reliquary of Myth` with `ArteFakes` and `Unique Items Tweaks` touches every unique-item record in the game. They are designed to stack, but verify the `xEdit` patcher chain in `modlist-15.md` does not re-balance the same records (the Synthesis `Armor Stat Synthesis Patcher` should be configured to skip unique items if these mods are present).
+- `Konahrik's Accoutrements` adds new Dragon Priest encounters that may not be patched into Legacy of the Dragonborn's display system. Check the `LoTD Patches (Official)` hub in `modlist-13.md` for a `Konahrik's Accoutrements` integration patch before locking the mod in.
+- Artifact overhauls that rebalance too aggressively can break encounter expectations (the player expects a particular named weapon to feel a certain way in a particular quest). Reliquary of Myth is the community-canonical balance pass, but verify the top three most-quested artifacts (Wuuthrad, Mehrunes' Razor, the Gauldur weapons) feel right before lock-in.
+- `Unique Items Tweaks` overlaps lightly with `Reliquary of Myth` on a small number of records. The author documents which records are intentionally untouched by Reliquary, so this should not be a hard conflict, but verify with a Bashed Patch run.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear artifact-stat baseline (`Reliquary of Myth`) and one clear artifact-model baseline (`ArteFakes`).
+- Dragon priest encounters and masks feel like a real reward tier (via `Konahrik's Accoutrements`).
+- The miscellaneous artifacts that Reliquary of Myth does not cover have their own balance pass (`Unique Items Tweaks`).
+- The artifact stack does not conflict with the `Synthesis` patcher config in `modlist-15.md`.
+- Legacy of the Dragonborn museum displays for dragon priest masks integrate with the `Konahrik's Accoutrements` content if the patch is available.
+
+## Weapon Pack Additions
+
+### Core Idea
+
+- This subsection owns the weapon content packs that add new named and leveled-list weapons to the world: swords, axes, maces, bows, and specialty weapons that fit vanilla's medieval-Nordic aesthetic.
+- It is intentionally kept separate from `Smithing And Crafting Expansion` (which owns the crafting system) and from the weapon-quality-overhaul layer in `modlist-11.md` (which owns the balance of all weapons). This subsection owns content variety.
+- The right baseline is "more variety without diluting the loot ladder". Weapons should feel like meaningful finds, not like a 30% larger leveled list where every new entry is just a renamed iron sword.
+
+### Options
+
+- Comprehensive weapon content pack: `Immersive Weapons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16788>
+- Mesh-quality pass for vanilla weapons: `LeanWolf's Better-Shaped Weapons SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2017>
+- Specialty weapon route (crossbows and bows): `Legendary Skyrim Crossbows and Bows SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8273>
+- Discipline-first route: rely on vanilla weapons only.
+
+### Recommendation
+
+- Use `Immersive Weapons` as the content-variety baseline. It adds 230+ new weapons (one-handed, two-handed, bows, crossbows) with leveled-list integration, all designed to fit the vanilla art direction. It is the community-canonical weapon content pack (45K+ endorsements) and pairs cleanly with the synthesis patcher chain in `modlist-15.md` (the `OWLLeveledListAddition` and `SpeedandReachFixes` patchers are designed with it in mind).
+- Use `LeanWolf's Better-Shaped Weapons SE` as the mesh-quality companion. Where Immersive Weapons adds new weapons, LeanWolf upgrades the silhouette of the existing vanilla weapons. The two stack cleanly because they touch different records.
+- Use `Legendary Skyrim Crossbows and Bows` as the specialty route. Vanilla crossbows are a single boring model, and this mod adds new crossbow and bow models with named variants and unique variants. Lock it in only if `Elder Wilds` treats the crossbow-and-bow archetype as a real character-build option (the `modlist-11.md` difficulty decisions should support ranged combat as a viable path).
+- Keep the discipline-first route alive if `Elder Wilds` decides weapon variety is not worth the extra mod count, but the `Immersive Weapons` choice is so dominant in the modlist community that locking it in is the default for any "lots of new content" list.
+
+### Risks & Compatibility
+
+- `Immersive Weapons` is a large mod and the synthesis patcher chain in `modlist-15.md` already has explicit `Bash Tags` and patcher entries for it. Do not skip the `OWLLeveledListAddition` and `SpeedandReachFixes` patchers if `Immersive Weapons` is present.
+- `LeanWolf's Better-Shaped Weapons` can conflict with `Unique Items Tweaks` and `Reliquary of Myth` on the unique-weapon records. The two artifacts mods touch only the unique items, but verify the model swap does not affect the visual identity of a unique item the player has a strong memory of (e.g. Wuuthrad should still look like Wuuthrad).
+- `Legendary Skyrim Crossbows and Bows` adds crossbows as a meaningful archetype, which means the `modlist-11.md` difficulty decisions need to account for ranged damage output. If difficulty is set to make ranged useless, this mod is wasted install.
+- All three weapon mods add new models, which means the `Pandora` and `BodySlide` rebuild triggers in `modlist-15.md` fire whenever any of them is updated.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear weapon-content baseline (`Immersive Weapons`) and one clear mesh-quality baseline for vanilla weapons (`LeanWolf's Better-Shaped Weapons`).
+- The chosen weapon stack does not conflict with the synthesis patcher entries in `modlist-15.md`.
+- If crossbows and bows are a real build path, the specialty content mod is locked in; if not, the discipline-first decision is explicit.
+- New weapons feel like meaningful finds in dungeon and bandit loot, not leveled-list padding.
+
+## Armor Pack Additions
+
+### Core Idea
+
+- This subsection owns the armor content packs that add new named and leveled-list armors to the world: light, heavy, and specialty armors that fit the medieval-Nordic aesthetic of vanilla Skyrim.
+- It is intentionally kept separate from `Smithing And Crafting Expansion` (which owns the crafting system) and from the weapon-content subsection above (which uses the same content-pack pattern). This subsection owns armor content variety.
+- The right baseline is the same as the weapons subsection: more variety without diluting the loot ladder. New armors should slot into the tier ladder rather than fragmenting it.
+
+### Options
+
+- Comprehensive armor content pack: `Immersive Armors` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3479>
+- Vanilla-armor model overhaul: `NordwarUA Total Armor and Weapon Compilation` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61423>
+- Light armor diversity: `Common Clothes and Armors` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21305>
+- Carry-capacity utility: `Bandolier - Bags and Pouches Classic` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2417>
+- Discipline-first route: rely on vanilla armor sets only.
+
+### Recommendation
+
+- Use `Immersive Armors` as the content-variety baseline. It adds 200+ new armors (light, heavy, mage, fur, leather) with leveled-list integration, all designed to fit the vanilla art direction. It is the canonical armor content pack (50K+ endorsements) and pairs with `Immersive Weapons` for parallel content addition. The synthesis patcher chain in `modlist-15.md` already has explicit `Bash Tags` and patcher entries for it.
+- Use `NordwarUA Total Armor and Weapon Compilation` as the vanilla-armor model overhaul. It compiles six NordwarUA mods (Realistic Armor, Race Armor Expansion, Guards Armor Replacer, New Legion, Vanilla Armor Replacers, Unplayable Faction Armors) into a single package that standardizes the cubemaps and removes the stat changes that the base NordwarUA mods applied to NPCs. The result is a vanilla-armor visual upgrade without NPC balance changes, which fits the `Elder Wilds` "lore-friendly" tone better than a full stat-replacer mod would.
+- Use `Common Clothes and Armors` as the light-armor-diversity companion. Where `Immersive Armors` adds full armor sets, Common Clothes adds clothing-and-light-armor variants that make bandits, sellswords, and travelers feel more like individuals. This is the clothing-side companion to `NordwarUA`.
+- Use `Bandolier - Bags and Pouches Classic` as the carry-capacity utility layer. It adds bags, pouches, and bandoliers that the player can equip to add inventory slots, with a MCM configuration for slot counts and visual variants. This is the only mod in this subsection that affects inventory mechanics, but the inventory system is shared between weapons and armor, so it belongs here.
+- Keep the discipline-first route alive if `Elder Wilds` decides armor variety is not worth the extra mod count, but the `Immersive Armors` choice is again so dominant in the modlist community that locking it in is the default.
+
+### Risks & Compatibility
+
+- `Immersive Armors` is a large mod and the synthesis patcher chain in `modlist-15.md` already has explicit `Bash Tags` and patcher entries for it. Do not skip the `OWLLeveledListAddition` or `Armor Stat Synthesis Patcher` if `Immersive Armors` is present.
+- `NordwarUA Total Armor` standardizes cubemaps across all six sub-mods. This means the mod visually overrides the cubemap of the original `NordwarUA Race Armor Expansion` etc., and any mod that depended on the original cubemaps will need to be re-tested.
+- `Common Clothes and Armors` adds clothing items to many NPC leveled lists. If `Armor and Clothing Extension` is also in the list, the two should not conflict (they touch different records) but verify the NPCs in the leveled lists look right after both are active.
+- `Bandolier` changes the inventory system. It does not conflict with `modlist-11.md` difficulty decisions, but the carry-weight design needs to account for the additional slots Bandolier provides.
+- All three armor mods add new models, which means the `Pandora` and `BodySlide` rebuild triggers in `modlist-15.md` fire whenever any of them is updated. `Immersive Armors Retexture and Mesh Fixes SE` (already in the checklist) is the retexture companion that should be re-run after every BodySlide rebuild.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear armor-content baseline (`Immersive Armors`) and one clear mesh-quality baseline for vanilla armor (`NordwarUA Total Armor and Weapon Compilation`).
+- Light-armor-diversity and carry-capacity utility layers are explicitly chosen or explicitly declined.
+- The chosen armor stack does not conflict with the synthesis patcher entries in `modlist-15.md`.
+- New armors feel like meaningful finds in dungeon and bandit loot, not leveled-list padding.
+
+## Clothing And Wardrobe Extensions
+
+### Core Idea
+
+- This subsection owns the clothing content packs that add new clothing, cloaks, and wearable non-armor items to the world: common clothes, noble clothes, cloaks, and backpacks.
+- It is intentionally kept separate from the armor packs above because clothing is non-protective and lives in a different inventory slot. The four mods in this subsection are: `Armor and Clothing Extension` (clothing slot diversity), `Cloaks of Skyrim` (cosmetic cloak slot), `Colovian Noble Clothes` (high-status clothing variants), and `Knapsack Backpacks SE` (utility backpack slot).
+- The right baseline is "more wardrobe variety without making every NPC a fashion show". Clothing mods should add visual diversity to towns and cities without overwhelming the identity of the vanilla factions.
+
+### Options
+
+- Comprehensive clothing diversity: `Armor and Clothing Extension` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/19002>
+- Common-cloth variety: `Common Clothes and Armors` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21305> (also listed in armor subsection)
+- Cloak slot: `Cloaks of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6369>
+- High-status clothing: `Colovian Noble Clothes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4464>
+- Carry-and-wearable utility: `Knapsack Backpacks SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3440>
+- Discipline-first route: rely on vanilla clothing only.
+
+### Recommendation
+
+- Use `Armor and Clothing Extension` as the clothing-diversity baseline. It adds lore-friendly clothing options and gives NPCs more appropriate attire (35K+ endorsements, by kryptopyr and Gamwich). It requires `RUSTIC CLOTHING - SE` (already in the list under section 2) and `SkyUI` (also in the list under section 1) as hard dependencies, both of which are already locked in. The mod works by adding new clothing items and redistributing them to NPCs via SPID-style keywords, so it does not break the existing NPC outfits in `modlist-09.md`.
+- Use `Common Clothes and Armors` as the common-cloth variety companion. It is listed in the armor subsection above as well, but the mod primarily adds new clothing items (with armor variants for some), and it pairs naturally with `Armor and Clothing Extension` to give the bandit-and-sellsword archetype a real visual variety.
+- Use `Cloaks of Skyrim` as the cloak-slot addition. Vanilla Skyrim has a cloak slot that is almost never used; this mod adds 100+ new cloaks that the player can equip (and that NPCs can wear via SPID distribution). The cloak slot is the most visually impactful wearable slot because cloaks are visible in third-person, and this is the canonical cloaks mod.
+- Use `Colovian Noble Clothes` as the high-status clothing variety pass. It adds new noble and high-status clothing items that fit the Colovian (Cyrodiilic-imperial) aesthetic. It pairs naturally with `modlist-08.md` world-content mods that add Imperial and noble-themed content (e.g. `Beyond Skyrim - Bruma`).
+- Use `Knapsack Backpacks SE` as the carry-and-wearable utility. It adds backpacks that the player can equip to add inventory slots, with a MCM configuration for slot counts and visual variants. This is the cosmetic companion to the inventory-decision mod `Bandolier` listed in the armor subsection above; the two are complementary, not competing.
+- Keep the discipline-first route alive if `Elder Wilds` decides clothing variety is not worth the extra mod count, but for a list that calls itself "big, dark, awe-inspiring" the visual diversity from these clothing mods is one of the most cost-effective ways to make towns and cities feel populated.
+
+### Risks & Compatibility
+
+- `Armor and Clothing Extension` requires `RUSTIC CLOTHING - SE` and `SkyUI`. Both are already in the list (RUSTIC CLOTHING in section 2, SkyUI in section 1), so the dependency chain is satisfied. Verify the load order keeps `RUSTIC CLOTHING` above `Armor and Clothing Extension` so ACE's clothing items override RUSTIC's retextures where they overlap.
+- `Common Clothes and Armors` is listed in two subsections (clothing here, armor in the subsection above) because it adds both. The checklist in `mods-checklist.md` has it under the armor section for clarity, but it is referenced in both modlist-05.md subsections.
+- `Cloaks of Skyrim` adds 100+ new cloak items, which means it interacts with the cloak-slot system. If `modlist-04.md` adds a custom cloak-slot overhaul, verify the two stack cleanly.
+- `Colovian Noble Clothes` is a single-author mod with a relatively small mod count. The mod is stable but does not have the same community-maintenance footprint as the other mods in this subsection, so verify the mod page for known issues before locking it in.
+- `Knapsack Backpacks SE` is the cosmetic backpack mod, and `Bandolier` (armor subsection) is the inventory-extension mod. The two can stack, but verify the inventory UI does not show duplicate bag icons.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear clothing-diversity baseline (`Armor and Clothing Extension`) and one clear common-cloth variety companion (`Common Clothes and Armors`).
+- The cloak slot is populated with new content (`Cloaks of Skyrim`).
+- High-status clothing variants are present for the Imperial and noble archetypes (`Colovian Noble Clothes`).
+- The chosen backpack mod is the cosmetic and inventory companion (`Knapsack Backpacks SE` + `Bandolier` from the armor subsection).
+- The chosen clothing stack does not conflict with the NPC outfit decisions in `modlist-09.md`.

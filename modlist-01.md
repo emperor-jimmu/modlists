@@ -46,6 +46,11 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - `Spell Perk Item Distributor (SPID)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/36869>
 - `Base Object Swapper (BOS)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/60805>
 - `Crash Logger SSE AE VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/59818>
+- `SkyPatcher` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106659> (SKSE-plugin engine tweak framework; hard requirement of section 09 wildlife/AI mods and broadly useful as a vanilla-record patcher layer)
+- `RaceMenu SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29624> (SKSE-plugin character creation overhaul; also satisfies `SKEE` requirement of `EFF - Extensible Follower Framework` from section 05)
+- `Dual Casting Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/92454> (powerofthree SKSE-plugin bugfix; hard requirement of `Blade and Blunt` from section 11)
+- `Andrealphus' Papyrus Functions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85252> (SKSE-plugin Papyrus utility; hard requirement of `Dragon War` from section 09)
+- `ConsoleUtilSSE NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76649> (SKSE-plugin console utility; shared hard requirement of `Dragon War` from section 09 and several animation behaviour mods from section 03)
 - Animation-related engine fixes required by the final stack - specific mod still to be selected
 
 ## Risks To Check

@@ -247,7 +247,9 @@
 #### Clutter And Small Props
 
 - `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795>
+- `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414>
 - Coordinate with `Faultier's PBR Skyrim` where clutter categories are better served by material-aware upgrades.
+- `SFCO` is the depth companion to `RUSTIC CLUTTER COLLECTION`: where RUSTIC retextures existing clutter meshes with higher-resolution diffuse and normal maps, SFCO adds new clutter objects (pottery, silverware, books, alchemy tools, foodstuffs, and furniture models) that fill the gaps vanilla clutter leaves in interiors and shops.
 
 #### Clothing And Fabric
 
@@ -316,13 +318,16 @@
 - Hybrid option: stronger lighting where it matters most, with more compatibility-conscious coverage elsewhere.
 - Window-shadow and light-object companion layer: `Window Shadows Ultimate` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150494>, `iLluminous Elementals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138128>.
 - CS-tonemapping alternative: `True Light` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135488> as a documented alternative to `Lux` for projects that want CS-native tonemapping instead of an ENB-bridged lighting overhaul.
+- CS-native full lighting alternative: `CS Light` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138443> as a Community Shaders-native lighting replacement for projects that want a single CS-driven stack with no ENB bridge.
+- ELFX baseline prerequisite: `Enhanced Lights and FX` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2424> as the required base for `ELFX Shadows` and the documented ENB-bridged fallback route.
 
 ### Recommendation
 
 - Start with a hybrid evaluation centered on two serious Community Shaders-friendly routes:
 - `Lux` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43158> plus `Lux CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/153919>
 - `Relighting Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8586> plus `Luminosity Lighting Overhaul - The Cathedral Concept` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16830>
-- Keep `ELFX Shadows` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63790> as the main alternate route if `Lux` proves too patch-heavy or too moody.
+- Keep `ELFX Shadows` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63790> as the main alternate route if `Lux` proves too patch-heavy or too moody. Note that `ELFX Shadows` hard-requires the base `Enhanced Lights and FX` mod; both must be installed together.
+- Treat `CS Light` as the Community Shaders-native single-stack lighting alternative. If the project decides `Lux` is too patch-heavy AND `True Light` is too tonemapping-focused, `CS Light` is the canonical CS-driven interior/exterior lighting overhaul.
 - Treat `Window Shadows RT - Updated` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111091> and `Ambiance - A Vanilla(plus) Ambient Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46383> as supporting or fallback options, not the primary first pick.
 - Treat `Window Shadows Ultimate` as the modern CS-native window-shadow companion. Unlike the older `Window Shadows RT - Updated`, it is built for Community Shaders and its features, casts real window light into interiors, and works with the chosen `Lux` or `Relighting` route without doubling their coverage. It is the documented next step beyond `Lux Orbis` for interior depth.
 - Treat `iLluminous Elementals` as the elemental-creature and magic-glow companion. It adds light to creatures and spell effects that would otherwise feel flat in dark interiors and shadowed dungeons, which fits the grim-dark tone by making ice atronachs, flame atronachs, and similar creatures read as proper threats under the lighting choice above.
@@ -354,6 +359,7 @@
 - Native Community Shaders weather option: build around a package made specifically for CS.
 - Legacy weather plus CS adaptation option: use an older established weather family with newer CS support.
 - Vanilla-plus atmosphere option: favor consistency and readability over the most dramatic grading.
+- CS-adaptation prerequisite: `RAID Weathers` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63116> is the base mod that `Raid Weathers CS` adapts to Community Shaders. Both must be installed together; the CS variant only patches the base.
 
 ### Recommendation
 
@@ -396,7 +402,7 @@
 - Use `Water Effects - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112762> as the baseline shader feature layer.
 - Test `A Water Made For CS in mind` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172959> as the primary base-water candidate.
 - Only add `FYX - Water Mesh Optimization` if it clearly improves shorelines, water edges, or performance with the chosen setup.
-- Keep `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/158763> as the main alternate comparison.
+- Keep `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56520> as the main alternate comparison, layered on top of `Simplicity of Sea - Water Color and Transparency Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148761> which is its hard color/transparency dependency.
 - Treat `Realistic Water Two SE (RWT)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2182> and `Water for ENB` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37061> as legacy baselines, not first picks.
 - Evaluate `Natural Waterfalls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87261> and `Rally's Water Foam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28922> only after the main water base is selected.
 
@@ -490,6 +496,7 @@
 - Start with `Skoglendi - A Grass Mod` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93944> as the baseline.
 - Use `Origins Of Forest - 3D Forest Grass` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45719> as the main density enhancer only if forests still feel too sparse after terrain and tree choices are clearer.
 - Use `Mari's flora` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45952> as the supporting plant replacer instead of treating flora as one giant all-in-one decision.
+- Add `Flora Orientalis` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64041> and `Waterplants` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6092> to the grass baseline to satisfy `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and the broader mixed-route coverage targets.
 - Keep `Folkvangr - Grass and Landscape Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/44899> as the main heavier alternate.
 - Keep `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and `QW's Grass Patch 2` in mind only after the final grass combination is narrow enough to justify patch-hub planning.
 
