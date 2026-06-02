@@ -20,3 +20,6 @@
 18. Skyrim seasons?
 19. Weapon Stat Viewer V2 - <https://www.nexusmods.com/skyrimspecialedition/mods/127249>
 20. SkyParkour v3 - Procedural Parkour and Climbing Framework - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
+21. Skeleton Replacer HD
+22. Mandragorasprouts
+23. Mihail's Giant mod

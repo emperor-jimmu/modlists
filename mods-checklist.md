@@ -323,11 +323,37 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 ## Audio and Feedback
 
-_No specific mods recorded yet in this section._
+- [ ] `Chapter II - Jeremy Soule Inspired Music (by Dreyma Music)` - <https://www.nexusmods.com/skyrimspecialedition/mods/37792>
+- [ ] `Yggdrasil Music and SoundFX Overhaul SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/21578>
+- [ ] `Silent Combat Music` - <https://www.nexusmods.com/skyrimspecialedition/mods/5148>
+- [ ] `Audio Overhaul for Skyrim SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/12466>
+- [ ] `Immersive Sounds - Compendium` - <https://www.nexusmods.com/skyrimspecialedition/mods/523>
+- [ ] `Regional Sounds Expansion (SRD - Wilds Dungeons Towns Ambience Birds - Fixes)` - <https://www.nexusmods.com/skyrimspecialedition/mods/77829>
+- [ ] `Airgetlam -Modern Magic Sounds Rework-` - <https://www.nexusmods.com/skyrimspecialedition/mods/51541>
+- [ ] `Airgetlam - Shouts SFX -` - <https://www.nexusmods.com/skyrimspecialedition/mods/90696>
+- [ ] `Phoenix Compendium` - <https://www.nexusmods.com/skyrimspecialedition/mods/55221>
+- [ ] `A Bow's Whisper - Bow sound overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/47437>
+- [ ] `Cataphract - Armored Footsteps Rework -` - <https://www.nexusmods.com/skyrimspecialedition/mods/102213>
+- [ ] `Sanguine Symphony Realistic Heavy Armor Sounds` - <https://www.nexusmods.com/skyrimspecialedition/mods/162883>
+- [ ] `Heart of the Beast - Werewolf Sound - Remastered - SSE PORT` - <https://www.nexusmods.com/skyrimspecialedition/mods/49263>
+- [ ] `BA Bard Songs` - <https://www.nexusmods.com/skyrimspecialedition/mods/47202>
+- [ ] `New UI Sounds Dungeon Music Ambient Sounds` - <https://www.nexusmods.com/skyrimspecialedition/mods/86372>
+- [ ] `NO MORE CLICK SOUND (ui_activatefail.wav Remover) (E Click Sound Remover)` - <https://www.nexusmods.com/skyrimspecialedition/mods/115367>
+- [ ] `quieter levelup and skill increase sound` - <https://www.nexusmods.com/skyrimspecialedition/mods/90278>
+- [ ] `Improved Level Up Sound FX - Sound Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/136290>
+- [ ] `Dragon Soul Acquired Sound` - <https://www.nexusmods.com/skyrimspecialedition/mods/161732>
+- [ ] `Colossus -Giants SFX Voice Rework` - <https://www.nexusmods.com/skyrimspecialedition/mods/52041>
+- [ ] `Phantasmagoria -Ghosts SFX Voice Rework-` - <https://www.nexusmods.com/skyrimspecialedition/mods/50060>
+- [ ] `Daedric Enigma -Daedric Princes Voice Rework- SSE (Old Version)` - <https://www.nexusmods.com/skyrimspecialedition/mods/35529>
 
 ## Survival, Difficulty, and Balance
 
-_No specific mods recorded yet in this section._
+- [ ] `Arena - An Encounter Zone Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/33487>
+- [ ] `Simply Balanced` - <https://www.nexusmods.com/skyrimspecialedition/mods/15541>
+- [ ] `Blade and Blunt - A Combat Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/34549>
+- [ ] `Skyrim Revamped - Complete Enemy Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/14598>
+- [ ] `Stress and Fear - A Dynamic Sanity System` - <https://www.nexusmods.com/skyrimspecialedition/mods/116522>
+- [ ] `Shadow of Skyrim - Nemesis and Alternative Death System` - <https://www.nexusmods.com/skyrimspecialedition/mods/65136>
 
 ## Performance and Technical Workflow
 
