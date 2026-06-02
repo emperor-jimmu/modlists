@@ -433,3 +433,42 @@
 - `Elder Wilds` has one clear detection-recalibration baseline or a deliberate discipline-first decision.
 - Sneak gameplay feels more readable and less random under the new detection rules without making stealth-only play dominate.
 - Detection work stays separated from crime, reputation, perk, magic, and combat decisions in load order, MCM, and visual identity.
+
+## Romance, Marriage, And Companionship
+
+### Core Idea
+
+- This subsection owns the SFW romance and marriage layer: how marriage mechanics should be expanded, how dialogue with spouses and romance interests should feel modern, and which opt-in quest-driven romance arcs the list should support.
+- It is intentionally kept SFW. The chosen baseline is fade-to-black, not explicit content, and the Amorous Adventures variant locked in here is the clean build that omits the explicit scenes.
+- It is a systems-and-dialogue layer, not a follower-content layer. Custom named followers still belong in `modlist-09.md`. Marriage machinery and dialogue expansion for vanilla and recognized spouses belong here.
+
+### Options
+
+- Dialogue-expansion baseline: `Relationship Dialogue Overhaul - RDO SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1187>
+- Opt-in romance-quest route: `Amorous Adventures` (clean variant) - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/7305>
+- Marriage-machinery route: `Marriage Mod - To Have And To Hold` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8589>
+- Best-in-class single-companion route: `Serana Dialogue Add-On` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32161>
+- Discipline-first route: rely on vanilla marriage mechanics and skip dedicated romance and marriage content. Realistic only if `Elder Wilds` treats romance as out of scope.
+
+### Recommendation
+
+- Use `Relationship Dialogue Overhaul - RDO SE` as the dialogue-expansion baseline. It adds 5,000+ fully-voiced new lines for vanilla NPCs, followers, and spouses using their original voices, restores cut dialogue, and fixes dialogue bugs. It is the community-canonical dialogue expansion (137K endorsements) and is fully SFW. It is also the most compatible choice because it does not change mechanics, only dialogue.
+- Use `Amorous Adventures` (clean variant) as the opt-in romance-quest route. The mod ships a clean build that omits the explicit scenes and keeps every quest as fade-to-black, which fits the SFW rule. It adds fully voiced romance arcs for Lydia, Serana, Elisif, and several other marriage-eligible NPCs. Lock only the clean variant into the load order; the explicit version is out of scope for `Elder Wilds`.
+- Use `Marriage Mod - To Have And To Hold` as the marriage-machinery expansion. It supports up to 11 simultaneous spouses, adds divorce and remarriage, enhances the wedding ceremony, and ties dynamic events to player progress. This is the systems-layer change that lets the dialogue and romance content above actually matter mechanically.
+- Use `Serana Dialogue Add-On` as the best-in-class single-companion expansion. It adds 7,000+ new fully-voiced lines for Serana, plus new story arcs, romance progression, and quest commentary. Serana is the most-recruited companion in vanilla Dawnguard content, and 51K endorsements show this is the canonical Serana enhancement. It complements RDO rather than overlapping it because Serana is one of the few NPCs RDO does not deeply cover.
+- Keep the discipline-first route alive only if `Elder Wilds` explicitly decides romance is out of scope. Locking in zero romance content is internally consistent but would leave RDO's most popular use case unsupported.
+
+### Risks & Compatibility
+
+- The wrong Amorous Adventures variant breaks the SFW rule. The download must be the clean build, not the explicit build, and the load order must keep the clean variant active.
+- Marriage-machinery mods can conflict with each other; do not stack `To Have And To Hold` with another multi-spouse mod or with custom marriage overhauls from other sections.
+- Romance dialogue expansion can conflict with custom-voiced follower mods from `modlist-09.md` that replace the same NPC's voice; verify any new custom follower does not double-voice a romance-interest NPC.
+- Romance quest mods add non-trivial content to the world and can affect pacing, which means they should be reviewed against the quest section in `modlist-08.md` to avoid doubling up on a single NPC's quest line.
+- Marriage events triggered by `To Have And To Hold` can fire during unintended moments if not configured; check the MCM for event timing and cooldown settings.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear dialogue-expansion baseline, one opt-in romance-quest route (clean variant), one marriage-machinery expansion, and one best-in-class single-companion expansion.
+- The locked Amorous Adventures variant is the clean build. The explicit variant is not in the load order.
+- Marriage feels like a meaningful long-term choice rather than a stat boost, with the machinery to support up to 11 simultaneous spouses if the player wants that.
+- Romance dialogue and quest work stays separated from custom-follower content in `modlist-09.md` so the two systems do not double-voice or double-quest the same NPC.

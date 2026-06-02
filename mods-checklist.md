@@ -194,6 +194,10 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `EFF - Extensible Follower Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/7003>
 - [ ] `Amazing Follower Tweaks SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6656>
 - [ ] `Realistic AI Detection (RAID)` - <https://www.nexusmods.com/skyrimspecialedition/mods/2345>
+- [ ] `Relationship Dialogue Overhaul - RDO SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/1187>
+- [ ] `Amorous Adventures` (clean variant) - <https://www.nexusmods.com/skyrimspecialedition/mods/7305>
+- [ ] `Marriage Mod - To Have And To Hold` - <https://www.nexusmods.com/skyrimspecialedition/mods/8589>
+- [ ] `Serana Dialogue Add-On` - <https://www.nexusmods.com/skyrimspecialedition/mods/32161>
 
 ## Modernized UI
 
@@ -405,4 +409,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 301
+Total unique mods listed: 305
