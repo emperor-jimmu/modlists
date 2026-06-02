@@ -53,7 +53,7 @@ Scope notes:
 
 - Confirm runtime compatibility before installing any SKSE-dependent plugin
 - Keep a dedicated patch/output section in MO2 for generated files and hand-made compatibility work
-- Use `SSEEdit` after each major category to review conflicts instead of waiting until the whole list is assembled
+- Use `SSEEdit` after each major category to review conflicts instead of waiting until the whole list is assembled. Detailed patching technique and strategy lives in the `Patching Technique And Strategy` subsection of `modlist-15.md`.
 - Rebuild generated outputs after major changes to bodies, animations, grass, LOD, or other systems that produce artifacts
 - Document manual fixes and tool-specific decisions directly in this repository so the plan stays reproducible
 
