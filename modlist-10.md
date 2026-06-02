@@ -231,7 +231,7 @@
 - Ghost and undead-presence route: `Phantasmagoria -Ghosts SFX Voice Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50060>
 - Daedric-entity stylization route: `Daedric Enigma -Daedric Princes Voice Rework- SSE (Old Version)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/35529>
 - Broad stylization route: consider broader voice-side audio reworks such as `Phoenix Compendium` only if the project explicitly wants stronger character-audio stylization.
-- Bugfix-only route: keep subtitle and silent-dialogue support in `modlist-14.md`.
+- Bugfix-only route: keep subtitle and silent-dialogue support in `modlist-12.md`.
 
 ### Recommendation
 
@@ -239,7 +239,7 @@
 - Keep `Colossus` as the first creature-voice specialization comparison because giant encounters are rare enough to feel special but common enough to judge in normal play.
 - Keep `Phantasmagoria` as the main ghost-side comparison if undead ambience and ghost presence still feel weak after the broad framework lands.
 - Keep `Daedric Enigma` as the higher-stylization branch only if the list later decides major Daedric encounters should sound much more authored than vanilla.
-- Keep `Fuz Ro D-oh - Silent Voice` and similar bugfix ownership in `modlist-14.md`.
+- Keep `Fuz Ro D-oh - Silent Voice` and similar bugfix ownership in `modlist-12.md`.
 - Keep dialogue UI ownership in `modlist-06.md`.
 - Only revisit broader voice-side bundles such as `Phoenix Compendium` if later testing shows that the chosen soundtrack and sound framework make vanilla voice presentation feel uniquely out of place.
 

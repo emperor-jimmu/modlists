@@ -105,22 +105,7 @@
 103. `11.04 Injury, Stamina, And Resource Pressure`
 104. `11.05 Survival Systems Compatibility`
 105. `11.06 Death, Defeat, Or Respawn Handling`
-106. `12 Modlist Curation Rules`
-107. `12.01 Visual Style Consistency Rules`
-108. `12.02 Lore Friendliness Rules`
-109. `12.03 Third-Person-First Design Rules`
-110. `12.04 Animation Quality Bar`
-111. `12.05 Performance Target And Hardware Assumptions`
-112. `12.06 Preference For Lightweight Vs Feature-Rich Mods`
-113. `12.07 Rules For Avoiding Overlapping Overhauls`
-114. `13 Testing Plan`
-115. `13.01 Fresh Game Startup Checklist`
-116. `13.02 Character Creation Test`
-117. `13.03 Third-Person Combat Test`
-118. `13.04 City Performance Test`
-119. `13.05 Forest Traversal Test`
-120. `13.06 Dungeon Lighting Test`
-121. `13.07 UI And Controller Test`
-122. `13.08 Long-Session Stability Test`
-123. `14 Targeted Bugfix Mods`
-124. `15 Legacy of the Dragonborn`
+106. `12 Targeted Bugfix Mods`
+107. `13 Legacy of the Dragonborn`
+108. `14 Modlist Curation Rules and Testing Plan`
+109. `15 Performance and Technical Workflow`

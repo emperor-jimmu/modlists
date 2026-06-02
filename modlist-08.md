@@ -202,7 +202,7 @@
 - Keep `Beyond Skyrim - Bruma SE` as the clearest expansion-scale comparison if the list wants a polished lore-friendly new-lands branch.
 - Treat `Falskaar` as a legacy comparison point, not a default recommendation.
 - Treat `Sirenroot - Deluge of Deceit` as AE-gated unless later verification proves otherwise; do not let it quietly become a baseline requirement while the project still targets no paid AE dependency.
-- Review any chosen quest route later against `modlist-15.md` so `Legacy of the Dragonborn` integration value and patch pressure are considered on purpose.
+- Review any chosen quest route later against `modlist-13.md` so `Legacy of the Dragonborn` integration value and patch pressure are considered on purpose.
 
 ### Risks & Compatibility
 
@@ -221,7 +221,7 @@
 ### Core Idea
 
 - This subsection owns where `Elder Wilds` should let the player settle, recover, organize gear, and invest long-term effort.
-- It must stay disciplined enough that display-heavy housing does not quietly duplicate the role already reserved for `Legacy of the Dragonborn` in `modlist-15.md`.
+- It must stay disciplined enough that display-heavy housing does not quietly duplicate the role already reserved for `Legacy of the Dragonborn` in `modlist-13.md`.
 
 ### Options
 
@@ -239,7 +239,7 @@
 - Keep `LC_Build Your Noble House` as the larger buildable-estate branch if the list wants one explicit construction-and-expansion commitment.
 - Keep `Windstad Mine` in mind if the business-property concept is right but the agricultural identity is not.
 - Keep `Blackthorn - A Buildable Town in The Rift (SE)` in the caution bucket unless modern testing proves its terrain and compatibility concerns are manageable.
-- Keep display-heavy mansions separate from the museum or safehouse question reserved for `modlist-15.md`.
+- Keep display-heavy mansions separate from the museum or safehouse question reserved for `modlist-13.md`.
 
 ### Risks & Compatibility
 

@@ -15,16 +15,16 @@
 
 ## Current Structure
 
-- `modlist-01.md` through `modlist-16.md` are the active numbered sections.
-- Current section titles are: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Modlist Curation Rules`, `Testing Plan`, `Targeted Bugfix Mods`, `Legacy of the Dragonborn`, and `Performance and Technical Workflow`.
+- `modlist-01.md` through `modlist-15.md` are the active numbered sections.
+- Current section titles are: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Targeted Bugfix Mods`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, and `Performance and Technical Workflow`.
 - `modlist-01.md`, `modlist-02.md`, and `modlist-09.md` have been reviewed and rewritten/trimmed, using a collapsed template approach (fewer redundant headings). The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
 - `modlist-03.md` (`Animations and Movement`) and `modlist-04.md` (`Third-Person Gameplay`) are fully expanded and should be treated as established baselines unless the user asks to revisit them.
 - `modlist-05.md` (`Expanded Systems`) is fully expanded.
-- `modlist-06.md` (`Modernized UI`) has moderate content (~430 lines) but is not yet locked; the previous "current active section" status is superseded by the rewrite pass on 09/01/02.
+- `modlist-06.md` (`Modernized UI`) is locked. Baseline picks: `SkyUI` + `Oathvein UI` (grim-dark, preferred over `Norden UI` due to tone fit and dependency chain), `SkyHUD` + `TrueHUD` for HUD, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS` for crafting menus, `Sovngarde Font` for 4K readability. All mods verified via Nexus and Reddit community signal.
 - `modlist-07.md` and `modlist-08.md` have moderate content (350-430 lines) but are still open research areas with no concrete mod picks locked in `mods-checklist.md`.
-- `modlist-12.md` and `modlist-13.md` are stubs (under 10 lines each) with no content written yet.
-- `modlist-14.md` (`Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes that do not belong in the core foundations layer.
-- `modlist-15.md` (`Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy for content that integrates into the display ecosystem.
+- `modlist-14.md` (`Modlist Curation Rules and Testing Plan`) is the expanded meta-section that combines the curation guardrails and the testing verification layer.
+- `modlist-12.md` (`Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes that do not belong in the core foundations layer.
+- `modlist-13.md` (`Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy for content that integrates into the display ecosystem.
 
 ## Content Conventions
 

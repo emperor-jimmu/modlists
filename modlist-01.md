@@ -16,7 +16,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - Confirm exact runtime support for every core dependency on Steam `1.6.1170`
 - Choose the mod manager standard and profile layout (current lean: `Mod Organizer 2`)
 - Define ESL and plugin-count rules: keep the hard plugin count visible from day one, prefer ESL-flagged or light plugins where safe, and avoid stacking multiple mods that solve the same low-level problem
-- Decide which bug-fix plugins are mandatory baseline vs optional, and confirm where `Unofficial Skyrim Special Edition Patch - USSEP` ownership lives relative to `modlist-14.md`
+- Decide which bug-fix plugins are mandatory baseline vs optional, and confirm where `Unofficial Skyrim Special Edition Patch - USSEP` ownership lives relative to `modlist-12.md`
 - Define the patching toolchain and conflict-resolution workflow: xEdit review after each major category is added, generated outputs kept separate from source mods, and a dedicated patch section for hand-made compatibility patches (tools: xEdit, Pandora, DynDOLOD, Synthesis, BodySlide, plus any LOD or grass generators adopted)
 - Follow the MO2 separator layout maintained in `separators.md` rather than redefining it here
 
@@ -33,7 +33,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - `SKSE64` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/30379>
 - `Address Library for SKSE Plugins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32444>
 - `Backported Extended ESL Support` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106441>
-- `Unofficial Skyrim Special Edition Patch - USSEP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/266> (foundational record patch; confirm ownership boundary with `modlist-14.md`)
+- `Unofficial Skyrim Special Edition Patch - USSEP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/266> (foundational record patch; confirm ownership boundary with `modlist-12.md`)
 - `SSE Engine Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17230>
 - `SSE Display Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34705>
 - `Scrambled Bugs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43532>

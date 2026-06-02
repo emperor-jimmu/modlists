@@ -23,3 +23,6 @@
 21. Skeleton Replacer HD
 22. Mandragorasprouts
 23. Mihail's Giant mod
+24. Prisma UI , <https://www.nexusmods.com/skyrimspecialedition/mods/148718?tab=description>
+25. Stats Tracker Menu - STM - <https://www.nexusmods.com/skyrimspecialedition/mods/180653>
+26. Dodge for all - <https://www.nexusmods.com/skyrimspecialedition/mods/174544?tab=description>

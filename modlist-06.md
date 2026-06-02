@@ -11,26 +11,27 @@
 
 - Core baseline route: `SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12604>
 - Support-framework route: `UIExtensions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17561>
-- Styling-ready route: `Oathvein UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160916> versus `Norden UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/166086>
+- Grim-dark visual overhaul: `Oathvein UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160916>
+- Modern-rustic visual overhaul: `Norden UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/166086>
 
 ### Recommendation
 
 - Start with `SkyUI` as the non-negotiable baseline.
-- Treat `UIExtensions` as support infrastructure where later chosen mods clearly need it rather than as a competing UI identity.
-- Keep the overall visual direction explicitly between `Oathvein UI` and `Norden UI`, but do not let that styling choice define the entire stack before the later HUD, inventory, map, and journal decisions are tested.
-- Keep `TrueHUD` scoped to the existing gameplay/UI boundary: it may remain useful later, but it is not the core framework answer here.
+- Treat `UIExtensions` as support infrastructure where later chosen mods need it rather than as a competing UI identity.
+- Set `Oathvein UI` as the preferred visual direction. Both `Oathvein UI` and `Norden UI` are by the same author (`Nithog`) and both are actively maintained — `Oathvein` last updated `20 May 2026`, `Norden` last updated `16 May 2026`. `Oathvein`'s description ("sleek, grim-dark interface overhaul") directly matches `Elder Wilds` tone, while `Norden` ("modern design with the rustic feel of the Nords") is the lighter comparison. `Norden` also requires `Extended UI` as a dependency, which has no official SE port and generates community friction; `Oathvein` has a more self-contained dependency chain.
+- Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision.
 
 ### Risks & Compatibility
 
-- Visual-theme choices can easily get mistaken for infrastructure requirements too early.
-- Treating every popular support mod as mandatory adds complexity without improving the actual foundation.
-- A highly stylized framework direction can look distinctive while weakening readability in ordinary play.
+- Visual-theme choices can get mistaken for infrastructure requirements too early.
+- `Norden UI`'s dependency on `Extended UI` adds a fragile third-party link with no official SE port.
+- A highly stylized framework can look distinctive while weakening readability in ordinary play.
 
 ### Acceptance Criteria
 
-- `modlist-06.md` has one clear UI framework baseline.
+- `modlist-06.md` has one clear UI framework baseline (`Oathvein UI` preferred, `Norden UI` as documented lighter comparison).
 - The role of `UIExtensions` is explicit as support infrastructure rather than a competing full UI direction.
-- The visual baseline is still narrowed cleanly to `Oathvein UI` versus `Norden UI`.
+- The visual baseline is narrowed to `Oathvein UI` with a clear rationale for why it fits `Elder Wilds` over `Norden UI`.
 
 ## HUD Overhaul
 
@@ -43,25 +44,25 @@
 
 - Layout-control route: `SkyHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/463>
 - Feedback-companion route: `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775>
-- Framework-led route: let `Oathvein UI` or `Norden UI` carry most of the HUD styling identity.
+- Framework-led route: let `Oathvein UI` carry most of the HUD styling identity, with `Norden UI` as the lighter alternative.
 
 ### Recommendation
 
-- Start with `SkyHUD` as the first-pass HUD baseline.
-- Keep `TrueHUD` as an optional companion only where testing shows it materially improves combat and target readability, and do not let it become the default answer to every HUD problem.
-- Let the final visual tone still come primarily from the chosen `Oathvein UI` versus `Norden UI` direction.
+- Start with `SkyHUD` as the baseline HUD layout framework. It handles widget positioning, visibility control, and style consistency across screen sizes.
+- Add `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> as the dedicated combat-feedback companion. `TrueHUD` is by the same author as `True Directional Movement` (already in `modlist-04.md`), has `58,848` endorsements and over `2 million` unique downloads, and provides actor info bars, boss bars, player widgets, and recent-loot logging. It was last updated `December 2023` (feature-complete). Keep `TrueHUD` scoped to combat-feedback additions only, not as a competing HUD framework.
+- Let the final visual tone come primarily from the chosen `Oathvein UI` direction.
 - Keep compass density, marker philosophy, and minimal-HUD experimentation for the later dedicated subsection.
 
 ### Risks & Compatibility
 
 - Weak combat readability can tempt the section into solving everything with extra HUD noise.
-- Combat-feedback widgets can quietly take over the whole HUD philosophy.
-- The HUD layer can drift into later compass and marker ownership if the scope is not kept disciplined.
+- Combat-feedback widgets can quietly take over the whole HUD philosophy if not kept scoped.
+- The HUD layer can drift into later compass and marker ownership if the boundary is not kept explicit.
 
 ### Acceptance Criteria
 
-- `modlist-06.md` has one clearly preferred HUD-layout baseline.
-- `TrueHUD` is documented as an optional feedback companion rather than the whole HUD answer.
+- `modlist-06.md` has `SkyHUD` as the HUD-layout baseline and `TrueHUD` as the combat-feedback companion, with clear role separation.
+- `TrueHUD` is documented as a combat-feedback layer, not the whole HUD answer.
 - Compass, markers, and minimal-HUD questions remain clearly deferred.
 
 ## Inventory And Item Card Improvements
@@ -181,7 +182,7 @@
 - Start with `Better Dialogue Controls` as the strongest first-pass pick because it addresses the most fundamental dialogue friction without forcing a large stylistic commitment.
 - Treat `Better MessageBox Controls` as the natural companion if the same interaction awkwardness also shows up in message boxes.
 - Keep `Dialogue Interface ReShaped` and `Convenient Dialogue UI - SE` as the more presentation-forward comparison routes only if testing shows the bigger problem is visual dialogue flow rather than basic control reliability.
-- Keep subtitle safety and unvoiced-dialogue handling in `modlist-14.md` with `Fuz Ro D-oh - Silent Voice`; that is a bugfix concern, not the UI framework answer here.
+- Keep subtitle safety and unvoiced-dialogue handling in `modlist-12.md` with `Fuz Ro D-oh - Silent Voice`; that is a bugfix concern, not the UI framework answer here.
 
 ### Risks & Compatibility
 
@@ -238,7 +239,7 @@
 
 - High-resolution readability route: `Sovngarde - Mist's Font Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/386>
 - Ultrawide compatibility route: `Complete Widescreen Fix for Vanilla and SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1778>
-- Discipline-first route: keep the chosen `Oathvein UI` or `Norden UI` direction, `SkyHUD`, inventory improvements, and dialogue/map changes restrained enough that the UI remains readable at `4K` without immediately stacking scaling fixes.
+- Discipline-first route: keep the chosen `Oathvein UI` direction (or `Norden UI` if testing prefers it), `SkyHUD`, inventory improvements, and dialogue/map changes restrained enough that the UI remains readable at `4K` without immediately stacking scaling fixes.
 
 ### Recommendation
 
@@ -251,7 +252,7 @@
 
 - Ultrawide support can be treated as the default problem when the actual baseline display is `16:9` `4K`.
 - High-resolution readability can be over-solved by stacking too many unrelated UI tweaks at once.
-- Font or scaling adjustments can fight the chosen `Oathvein UI` or `Norden UI` tone if they are not judged in context.
+- Font or scaling adjustments can fight the chosen `Oathvein UI` tone if they are not judged in context.
 
 ### Acceptance Criteria
 
@@ -335,15 +336,15 @@
 
 - High-resolution text route: `Sovngarde - Mist's Font Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/386>. Recommended file: `Sovngarde - Mist's Font Replacer Bold V8.9`.
 - Configuration-readability route: `Wider MCM Menu for SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22825>
-- Discipline-first route: keep the current `SkyUI` plus `Oathvein UI` or `Norden UI` stack with the already-chosen inventory, dialogue, map, and crafting improvements if real playtesting shows the UI is already readable enough.
+- Discipline-first route: keep the current `SkyUI` plus `Oathvein UI` stack (with `Norden UI` as the available lighter alternative) with the already-chosen inventory, dialogue, map, and crafting improvements if real playtesting shows the UI is already readable enough.
 
 ### Recommendation
 
 - Start with the discipline-first route, then apply targeted readability support only where the current stack still shows a real weakness.
 - `Sovngarde - Mist's Font Replacer` remains the strongest first-pass accessibility candidate because the repo already identified `16:9` `4K HDR` readability as a practical concern and font presence is one of the clearest ways to improve long-session comfort without redesigning the whole interface.
-- For this display target, prefer `Sovngarde - Mist's Font Replacer Bold V8.9` first, then fall back to the light variant only if the bold face feels too heavy in the chosen `Oathvein UI` or `Norden UI` direction.
+- For this display target, prefer `Sovngarde - Mist's Font Replacer Bold V8.9` first, then fall back to the light variant only if the bold face feels too heavy in the chosen `Oathvein UI` direction.
 - Keep `Wider MCM Menu for SkyUI` as the narrower support answer when the main friction lives in configuration readability rather than in the ordinary in-game interface itself.
-- Leave subtitle safety and unvoiced-dialogue handling in `modlist-14.md` with `Fuz Ro D-oh - Silent Voice`; that remains a bugfix boundary, not the main UI accessibility answer here.
+- Leave subtitle safety and unvoiced-dialogue handling in `modlist-12.md` with `Fuz Ro D-oh - Silent Voice`; that remains a bugfix boundary, not the main UI accessibility answer here.
 
 ### Risks & Compatibility
 
