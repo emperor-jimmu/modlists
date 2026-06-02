@@ -77,6 +77,7 @@
 ### Options
 
 - Small-settlement restoration route: `Granite Hill` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14658>
+- Niche farmstead-overhaul route: `Lund's Hamlet - An Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/169830>. A small targeted overhaul of an otherwise mostly forgotten farmstead (Lund's Hut). Uses retextured Redbag `Shor's Stone` meshes, fully navmeshed, ships a built-in LOTD patch, and has optional compatibility patches for `Lux`, `Lux Orbis`, `Embers XD`, `Nature of the Wild Lands`, and a few settlement mods. 393 endorsements, last updated February 2026.
 - Travel-stop village route: `The Great Village of Old Hroldan SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33189>
 - Inn-focused route: `Candlehearth - An Inn Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97542>
 - Complementary village routes: `The Great Town of Karthwasten SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33032> and `Oakwood` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61007>
@@ -86,6 +87,7 @@
 - Start with the travel-stop village route.
 - Use `The Great Village of Old Hroldan SSE` as the strongest first-pass baseline because it gives the world a more authored roadside stop without turning the subsection into a broad restoration bundle.
 - Keep `Granite Hill` as the meaningful comparison if the world would benefit more from restoring another small settlement along normal routes.
+- Treat `Lund's Hamlet - An Overhaul` as a complementary niche farmstead option rather than a baseline. It is the smallest of the small-settlement picks here (Lund's Hut only) and is best evaluated after the subsection already has a travel-stop and a restoration baseline in place, so it adds rural texture without reshaping subsection priorities.
 - Keep `Candlehearth - An Inn Overhaul` as the narrower inn-focused branch if the real weakness is forgettable rest stops rather than missing rural settlement content.
 - Treat `The Great Town of Karthwasten SSE` and `Oakwood` as complementary additions rather than primary subsection answers.
 
@@ -114,12 +116,14 @@
 - Authored dungeon-pack route: `Hammet's Dungeon Pack 1 SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12186>
 - Deep-underground route: `Skyrim Underground SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131>
 - Vanilla-ruin enhancement route: `Dungeons - Revisited` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51798>
+- Ancient-Nordic ruin diversity route: `Children of the North Wind - Ruins of the Ancient Nords` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/147701>. Reworks the Ancient Nordic crypts and ruins across eleven locations (Bleakwind Bluff, Dragon Bridge, Forelhost, High Gate Ruins, Kilkreath Temple, North Skybound Watch, Ragnvald, and more) with new meshes, clutter, bespoke architecture, and exterior overhauls that aim for the "ancient population center" identity cut from vanilla. 1,106 endorsements, ~135K unique downloads, last updated March 2026.
 
 ### Recommendation
 
 - Start with the broad radiant-dungeon route.
 - Use `Forgotten Dungeons (SSE)` as the first-pass baseline because it adds more places to discover without forcing the entire section to revolve around one giant bespoke underground project.
 - Keep `Hammet's Dungeon Pack 1 SE` as the meaningful comparison if the project wants a stronger hand-authored dungeon-adventure identity.
+- Treat `Children of the North Wind - Ruins of the Ancient Nords` as the high-commitment ancient-Nordic-specific branch. It is heavier and more opinionated than the other ruin picks here because it replaces architecture across a curated location set rather than adding new dungeons, so it is the right comparison when the list wants Nordic ruin identity to feel like a real population-center ruin layer rather than just more generic crypts.
 - Keep `Skyrim Underground SSE` as the high-commitment branch if the list wants a much larger subterranean layer than vanilla suggests.
 - Treat `Dungeons - Revisited` as the strongest complementary branch rather than the main answer, because it improves existing ruins instead of deciding whether section 08 wants more destinations.
 

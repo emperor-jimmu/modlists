@@ -238,12 +238,14 @@
 - Framework-only route: `Open Animation Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
 - Balanced flavor route: `Open Animation Replacer` plus `EVG Conditional Idles` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34006>
 - Targeted follow-up route: `Conditional Armor Type Animations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51507>
+- Targeted OAR-pack route: `Unique Jarl Throne Sitting Animation (OAR)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174752>. Replaces the single generic Jarl-on-throne pose with a unique per-Jarl sitting animation that reflects personality, authority, and throne type. Hard-requires `Open Animation Replacer`, ships standalone patches for `Thrones of Skyrim`, `Thrones Expanded`, and `High Poly Project` (must load after those mods), and is safe to install mid-playthrough. 698 endorsements, ~16K unique downloads, last updated April 2026.
 
 ### Recommendation
 
 - Use `Open Animation Replacer` as the condition framework and ownership layer for this part of the stack.
 - Let `EVG Conditional Idles` prove the value of condition-driven flavor before layering additional situational packs.
 - Keep `Conditional Armor Type Animations` as a narrower follow-up option if armor-state variation is still wanted after the locomotion and idle baseline is already stable.
+- Treat `Unique Jarl Throne Sitting Animation (OAR)` as a small, high-quality situational add-on. It only requires `Open Animation Replacer` (which is already the framework baseline for this section) and only needs extra load-order attention if `Thrones of Skyrim`, `Thrones Expanded`, or `High Poly Project` are also installed — none of which are current section-02 or section-03 baselines — so it is a clean add-on once the OAR baseline is proven.
 - Treat older `Dynamic Animation Replacer` assumptions as legacy compatibility context, not the framework direction for `Elder Wilds`.
 
 ### Risks & Compatibility

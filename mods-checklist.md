@@ -126,6 +126,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Pandora Behaviour Engine Plus` - <https://www.nexusmods.com/skyrimspecialedition/mods/133232>
 - [ ] `XP32 Maximum Skeleton Special Extended - XPMSSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
 - [ ] `Open Animation Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
+- [ ] `Unique Jarl Throne Sitting Animation (OAR)` - <https://www.nexusmods.com/skyrimspecialedition/mods/174752>
 - [ ] `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
 - [ ] `Beam Walking Assist` - <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
 - [ ] `RaySense - Jumping over obstacles` - <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
@@ -286,6 +287,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `The Great Village of Mixwater Mill SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/36350>
 - [ ] `Granite Hill` - <https://www.nexusmods.com/skyrimspecialedition/mods/14658>
 - [ ] `The Great Village of Old Hroldan SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/33189>
+- [ ] `Lund's Hamlet - An Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/169830>
 - [ ] `Candlehearth - An Inn Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/97542>
 - [ ] `The Great Town of Karthwasten SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/33032>
 - [ ] `Oakwood` - <https://www.nexusmods.com/skyrimspecialedition/mods/61007>
@@ -293,6 +295,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Hammet's Dungeon Pack 1 SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/12186>
 - [ ] `Skyrim Underground SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/131>
 - [ ] `Dungeons - Revisited` - <https://www.nexusmods.com/skyrimspecialedition/mods/51798>
+- [ ] `Children of the North Wind - Ruins of the Ancient Nords` - <https://www.nexusmods.com/skyrimspecialedition/mods/147701>
 - [ ] `Hidden Hideouts of Skyrim SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/2625>
 - [ ] `Hold Border Guards - Definitive Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/61170>
 - [ ] `Nordic Ruins of Skyrim SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/20382>
@@ -324,6 +327,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 - [ ] `Northbourne NPCs of Whiterun Hold` - <https://www.nexusmods.com/skyrimspecialedition/mods/35404>
 - [ ] `Pandorable's NPCs` - <https://www.nexusmods.com/skyrimspecialedition/mods/78524>
+- [ ] `The Wolven Widow - SerketHetyt's Elisif Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/62209>
 - [ ] `High Poly True to Vanilla NPC Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/74226>
 - [ ] `Lawless - A Bandit Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/88080>
 - [ ] `OBIS SE - Organized Bandits In Skyrim Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/4145>
@@ -426,4 +430,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 321
+Total unique mods listed: 325
