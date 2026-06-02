@@ -42,6 +42,7 @@
 
 ### Options
 
+- Major-hold-capital overhaul route: `The Great Cities` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/320>. Arthmoor's full overhaul of the major hold capitals (Whiterun, Solitude, Windhelm, Markarth, Riften) and the parent mod that the Minor Cities and Towns extension is built on. Has a long patch ecosystem (notably with `JK's Skyrim`, `Spaghetti's Cities`, `Lux`, the `PBR textures for The Great Cities Collection` texture pack, and the `Legacy of the Dragonborn` Safehouse).
 - Broad minor-settlement route: `The Great Cities - Minor Cities and Towns SSE Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20272>
 - Modular hold-capital identity route: `Cities of the North - Dawnstar` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28952>
 - Focused single-town route: `The Great Town of Ivarstead SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34505>
@@ -51,6 +52,7 @@
 
 - Start with the broad minor-settlement route.
 - Use `The Great Cities - Minor Cities and Towns SSE Edition` as the first-pass baseline because it gives multiple underbuilt settlements stronger structure without immediately committing to a modular city-family patch story.
+- Keep `The Great Cities` base mod as the explicit major-hold-capital follow-on if the project decides the major hold capitals also need authored treatment. The base mod and the Minor Cities extension are designed to stack, but adding the base pulls in a real compatibility discussion with section-07's `Spaghetti's Cities - AIO` and `JK's Skyrim` (overlap city edits, need a compatibility patch or a load-order decision) and with the `PBR textures for The Great Cities Collection` texture pack in section 02. Treat it as a deliberate second-step decision, not a default addition.
 - Keep `Cities of the North - Dawnstar` as the meaningful comparison if the project wants the more bespoke architectural-identity route and is willing to treat that family as a deliberate modular commitment.
 - Keep `The Great Town of Ivarstead SSE` as the focused comparison if the smarter answer is a smaller number of carefully chosen town upgrades.
 - Treat `The Great Village of Kynesgrove` and `The Great Village of Mixwater Mill SSE` as complementary additions rather than primary subsection answers.

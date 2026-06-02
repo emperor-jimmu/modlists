@@ -11,6 +11,8 @@
 
 - Dark melancholy within vanilla boundaries: `Chapter II - Jeremy Soule Inspired Music (by Dreyma Music)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37792>
 - Dark mythic replacement route: `Yggdrasil Music and SoundFX Overhaul SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21578>
+- Dark fantasy expansion route: `Nyghtfall - Dark Fantasy Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/39011>. ~7 hours of 98 original dark-fantasy tracks by `nyghttones`, with location-specific exploration, combat, dungeon, tavern, and town coverage. Pitched as darker and more melancholic than vanilla without straying from the Soule shape, which makes it a clean companion to `Chapter II` rather than a competing replacement.
+- Norse fantasy expansion route: `Nordenhamr - Viking Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/58080>. Norse-themed fantasy music that is widely used alongside `Yggdrasil` in community music stacks (and is the third leg of the long-running `Nyghtfall` + `Nordenhamr` + `Yggdrasil` combination seen in `r/skyrimmods` dark-fantasy mod lists).
 - Combat-restraint support route: `Silent Combat Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5148>
 - Minimalist route: keep the vanilla soundtrack if the world tone is already carrying enough identity through visuals and pacing.
 
@@ -19,6 +21,7 @@
 - Start with `Chapter II` as the main music baseline because it now has enough night and exploration coverage to push `Elder Wilds` toward darker, more emotional melancholy without breaking from the Jeremy Soule shape of Skyrim.
 - Treat `Chapter II` as the default answer when the list wants sadness, isolation, and wilderness weight rather than a total soundtrack identity rewrite.
 - Keep `Yggdrasil` as the high-commitment branch if the project later decides it wants Skyrim to feel stranger, harsher, and more ritualistic instead of merely moodier.
+- Treat `Nyghtfall - Dark Fantasy Music` and `Nordenhamr - Viking Music` as complementary expansion picks rather than subsection baselines. They are best evaluated after `Chapter II` (and possibly `Yggdrasil`) are in place: use `Nyghtfall` if the chosen baseline still feels too restrained or too Soule-shaped and the project wants more authored dark-fantasy exploration, combat, dungeon, and tavern cues; use `Nordenhamr` if the Norse / Viking identity of the world needs stronger musical reinforcement on top of whatever Norse flavor `Yggdrasil` already provides. They are also the long-standing community pair for dark-fantasy stacks together with `Yggdrasil`, so they are safe to layer on top of the existing music direction rather than replacing it.
 - Keep `Silent Combat Music` as a support option only if combat music itself starts feeling too loud, too repetitive, or too intrusive during testing.
 - Treat soundtrack replacement as a tone decision, not as filler content to make the list feel busier.
 
@@ -31,6 +34,7 @@
 
 - A soundtrack that is strong on its own can still feel wrong once paired with the chosen weather, world-feel, and combat tone.
 - `Yggdrasil` is not just darker; it is a major stylistic replacement, so even if playlist conflicts are solved by a merge patch the real question is whether its tone still fits the rest of the list.
+- `Nyghtfall` and `Nordenhamr` are expansion packs rather than full replacements, so they will not conflict with the chosen baseline on a fundamental tone axis, but stacking them on top of `Chapter II` and `Yggdrasil` can produce a music stack that is heavier than the project's exploration pacing actually supports. Treat the final music stack as a curated pair (baseline + at most one expansion) rather than a three- or four-mod pile, and use the Synthesis music-merge plugin described in the installation step to avoid playlist overlap.
 - Large music overhauls can dominate the emotional identity of the list more than intended.
 - Music replacers are easy to like in showcase moments and harder to judge across long ordinary play sessions.
 

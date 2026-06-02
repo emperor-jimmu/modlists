@@ -1,157 +1,227 @@
 # Elder Wilds - Mods Checklist
 
-Download checklist for every mod referenced in the plan, grouped by section. Each entry: `[ ]` name and Nexus URL. Base picks only as written in the section files; verify load order and patches per section.
+Download checklist for every mod referenced in the plan, grouped by section. Each section is a table with columns: `Mod`, `Dependencies` (required mods; modlist entries shown in code, external runtime requirements in italics), and `URL`. Section is implicit from the section header. Base picks only as written in the section files; verify load order and patches per section.
 
 ## Foundations and Compatibility
 
-- [ ] `SKSE64` - <https://www.nexusmods.com/skyrimspecialedition/mods/30379>
-- [ ] `Address Library for SKSE Plugins` - <https://www.nexusmods.com/skyrimspecialedition/mods/32444>
-- [ ] `SSE Engine Fixes` - <https://www.nexusmods.com/skyrimspecialedition/mods/17230>
-- [ ] `Scrambled Bugs` - <https://www.nexusmods.com/skyrimspecialedition/mods/43532>
-- [ ] `powerofthree's Tweaks` - <https://www.nexusmods.com/skyrimspecialedition/mods/51073>
-- [ ] `powerofthree's Papyrus Extender` - <https://www.nexusmods.com/skyrimspecialedition/mods/22854>
-- [ ] `PapyrusUtil` - <https://www.nexusmods.com/skyrimspecialedition/mods/13048>
-- [ ] `MCM Helper` - <https://www.nexusmods.com/skyrimspecialedition/mods/53000>
-- [ ] `JContainers` - <https://www.nexusmods.com/skyrimspecialedition/mods/16495>
-- [ ] `Keyword Item Distributor (KID)` - <https://www.nexusmods.com/skyrimspecialedition/mods/55728>
-- [ ] `Spell Perk Item Distributor (SPID)` - <https://www.nexusmods.com/skyrimspecialedition/mods/36869>
-- [ ] `Base Object Swapper (BOS)` - <https://www.nexusmods.com/skyrimspecialedition/mods/60805>
-- [ ] `Crash Logger SSE AE VR` - <https://www.nexusmods.com/skyrimspecialedition/mods/59818>
+| Mod                                  | Dependencies                                              | URL                                                         |
+|--------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|
+| `SKSE64`                             | _None_                                                    | <https://www.nexusmods.com/skyrimspecialedition/mods/30379> |
+| `Address Library for SKSE Plugins`   | `SKSE64`                                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/32444> |
+| `SSE Engine Fixes`                   | `SKSE64`, `Address Library for SKSE Plugins`              | <https://www.nexusmods.com/skyrimspecialedition/mods/17230> |
+| `Scrambled Bugs`                     | `SKSE64`, `Address Library for SKSE Plugins`              | <https://www.nexusmods.com/skyrimspecialedition/mods/43532> |
+| `powerofthree's Tweaks`              | `SKSE64`, `Address Library for SKSE Plugins`              | <https://www.nexusmods.com/skyrimspecialedition/mods/51073> |
+| `powerofthree's Papyrus Extender`    | `SKSE64`, `Address Library for SKSE Plugins`              | <https://www.nexusmods.com/skyrimspecialedition/mods/22854> |
+| `PapyrusUtil`                        | `SKSE64`                                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/13048> |
+| `MCM Helper`                         | `SKSE64`                                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/53000> |
+| `JContainers`                        | `SKSE64`                                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/16495> |
+| `Keyword Item Distributor (KID)`     | `SKSE64`, `powerofthree's Papyrus Extender`, `MCM Helper` | <https://www.nexusmods.com/skyrimspecialedition/mods/55728> |
+| `Spell Perk Item Distributor (SPID)` | `SKSE64`, `powerofthree's Papyrus Extender`, `MCM Helper` | <https://www.nexusmods.com/skyrimspecialedition/mods/36869> |
+| `Base Object Swapper (BOS)`          | `SKSE64`, `MCM Helper`                                    | <https://www.nexusmods.com/skyrimspecialedition/mods/60805> |
+| `Crash Logger SSE AE VR` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/59818>
 
 ## Modern Graphics
 
-- [ ] `Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/86492>
-- [ ] `Screen Space Shadows - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/93209>
-- [ ] `Grass Lighting - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/86502>
-- [ ] `Water Effects - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/112762>
-- [ ] `Wetness Effects - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/112739>
-- [ ] `Terrain Shadows - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/135817>
-- [ ] `Subsurface Scattering - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/114114>
-- [ ] `Screen Space Global Illumination (SSGI)` - <https://www.nexusmods.com/skyrimspecialedition/mods/130375>
-- [ ] `Skyrim Upscaler - DLSS FSR2 XeSS` - <https://www.nexusmods.com/skyrimspecialedition/mods/80343>
-- [ ] `PBR Hub` - <https://www.nexusmods.com/skyrimspecialedition/mods/139889>
-- [ ] `Faultier's PBR Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/125308>
-- [ ] `Complex Parallax Materials` - <https://www.nexusmods.com/skyrimspecialedition/mods/95134>
-- [ ] `PBR textures for The Great Cities Collection` - <https://www.nexusmods.com/skyrimspecialedition/mods/133493>
-- [ ] `Tomato's PBR Whiterun` - <https://www.nexusmods.com/skyrimspecialedition/mods/135771>
-- [ ] `Tomato's PBR Farmhouses 2.0` - <https://www.nexusmods.com/skyrimspecialedition/mods/135774>
-- [ ] `PBaRkarth - PBR texture mod for Markarth and Dwemer` - <https://www.nexusmods.com/skyrimspecialedition/mods/144535>
-- [ ] `laogu's PBR Solitude` - <https://www.nexusmods.com/skyrimspecialedition/mods/173698>
-- [ ] `Exist's Nordic Ruins PBR and Complex Parallax Material` - <https://www.nexusmods.com/skyrimspecialedition/mods/118014>
-- [ ] `A Cathedralist's PBR Landscape` - <https://www.nexusmods.com/skyrimspecialedition/mods/137333>
-- [ ] `TomatoRim PBR Landscapes AIO` - <https://www.nexusmods.com/skyrimspecialedition/mods/177621>
-- [ ] `Skyland AIO` - <https://www.nexusmods.com/skyrimspecialedition/mods/34179>
-- [ ] `Skurkbro's Retexture Project AIO` - <https://www.nexusmods.com/skyrimspecialedition/mods/63148>
-- [ ] `Skyking Fantasia Landscapes` - <https://www.nexusmods.com/skyrimspecialedition/mods/107256>
-- [ ] `Rally's Solstheim Landscapes` - <https://www.nexusmods.com/skyrimspecialedition/mods/35590>
-- [ ] `Enhanced Rocks and Mountains - Complex Material and PBR` - <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
-- [ ] `Enhanced Rocks and Mountains - Fix and Addon` - <https://www.nexusmods.com/skyrimspecialedition/mods/142493>
-- [ ] `Riton Whiterun` - <https://www.nexusmods.com/skyrimspecialedition/mods/103408>
-- [ ] `RUSTIC CLUTTER COLLECTION - Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/5795>
-- [ ] `RUSTIC CLOTHING - Special Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/4703>
-- [ ] `Static Mesh Improvement Mod - SMIM` - <https://www.nexusmods.com/skyrimspecialedition/mods/659>
-- [ ] `High Poly Project` - <https://www.nexusmods.com/skyrimspecialedition/mods/12029>
-- [ ] `Simplicity of Snow` - <https://www.nexusmods.com/skyrimspecialedition/mods/56235>
-- [ ] `FYX - Water Mesh Optimization` - <https://www.nexusmods.com/skyrimspecialedition/mods/97713>
-- [ ] `Auto Parallax` - <https://www.nexusmods.com/skyrimspecialedition/mods/79473>
-- [ ] `PGPatcher` - <https://www.nexusmods.com/skyrimspecialedition/mods/120946>
-- [ ] `Lux` - <https://www.nexusmods.com/skyrimspecialedition/mods/43158>
-- [ ] `ELFX Shadows` - <https://www.nexusmods.com/skyrimspecialedition/mods/63790>
-- [ ] `Enhanced Lights and FX` - <https://www.nexusmods.com/skyrimspecialedition/mods/2424>
-- [ ] `Relighting Skyrim SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/8586>
-- [ ] `Luminosity Lighting Overhaul - The Cathedral Concept` - <https://www.nexusmods.com/skyrimspecialedition/mods/16830>
-- [ ] `NAT.CS III` - <https://www.nexusmods.com/skyrimspecialedition/mods/139567>
-- [ ] `Lux CS` - <https://www.nexusmods.com/skyrimspecialedition/mods/153919>
-- [ ] `Lux Orbis` - <https://www.nexusmods.com/skyrimspecialedition/mods/56095>
-- [ ] `Lux Via` - <https://www.nexusmods.com/skyrimspecialedition/mods/63588>
-- [ ] `CS Light` - <https://www.nexusmods.com/skyrimspecialedition/mods/138443>
-- [ ] `Azurite III CS` - <https://www.nexusmods.com/skyrimspecialedition/mods/162153>
-- [ ] `Azurite Weathers III - Enhanced` - <https://www.nexusmods.com/skyrimspecialedition/mods/150269>
-- [ ] `RAID Weathers` - <https://www.nexusmods.com/skyrimspecialedition/mods/63116>
-- [ ] `Raid Weathers CS` - <https://www.nexusmods.com/skyrimspecialedition/mods/171041>
-- [ ] `Cathedral Weathers and Seasons` - <https://www.nexusmods.com/skyrimspecialedition/mods/24791>
-- [ ] `Obsidian Weathers and Seasons` - <https://www.nexusmods.com/skyrimspecialedition/mods/12125>
-- [ ] `Obsidian CS` - <https://www.nexusmods.com/skyrimspecialedition/mods/162627>
-- [ ] `Skydreamus Community Shaders Presets for NAT.CS III and Azurite III CS` - <https://www.nexusmods.com/skyrimspecialedition/mods/171145>
-- [ ] `A Water Made For CS in mind` - <https://www.nexusmods.com/skyrimspecialedition/mods/172959>
-- [ ] `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` - <https://www.nexusmods.com/skyrimspecialedition/mods/158763>
-- [ ] `Realistic Water Two SE (RWT)` - <https://www.nexusmods.com/skyrimspecialedition/mods/2182>
-- [ ] `Water for ENB` - <https://www.nexusmods.com/skyrimspecialedition/mods/37061>
-- [ ] `Natural Waterfalls` - <https://www.nexusmods.com/skyrimspecialedition/mods/87261>
-- [ ] `Rally's Water Foam` - <https://www.nexusmods.com/skyrimspecialedition/mods/28922>
-- [ ] `Atlantean Landscape - Majestic Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/102170>
-- [ ] `Atlantean Landscape - Complete - Complex Terrain Parallax` - <https://www.nexusmods.com/skyrimspecialedition/mods/89542>
-- [ ] `Blended Roads - Light Plugin (ESL)` - <https://www.nexusmods.com/skyrimspecialedition/mods/171554>
-- [ ] `Nordic Snow` - <https://www.nexusmods.com/skyrimspecialedition/mods/670>
-- [ ] `Nordic Snow - Complex Material` - <https://www.nexusmods.com/skyrimspecialedition/mods/133034>
-- [ ] `Skoglendi - A Grass Mod` - <https://www.nexusmods.com/skyrimspecialedition/mods/93944>
-- [ ] `Origins Of Forest - 3D Forest Grass` - <https://www.nexusmods.com/skyrimspecialedition/mods/45719>
-- [ ] `Mari's flora` - <https://www.nexusmods.com/skyrimspecialedition/mods/45952>
-- [ ] `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - <https://www.nexusmods.com/skyrimspecialedition/mods/95273>
-- [ ] `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/57874>
-- [ ] `Happy Little Trees` - <https://www.nexusmods.com/skyrimspecialedition/mods/50961>
-- [ ] `Fabled Forests` - <https://www.nexusmods.com/skyrimspecialedition/mods/94462>
-- [ ] `Nature of the Wild Lands - forest and trees improvement mod` - <https://www.nexusmods.com/skyrimspecialedition/mods/63604>
-- [ ] `Happy Little Trees PBR` - <https://www.nexusmods.com/skyrimspecialedition/mods/159171>
-- [ ] `Fabled Forests - Ulvenwald - Compatibility Patch (BOS)` - <https://www.nexusmods.com/skyrimspecialedition/mods/134501>
-- [ ] `DynDOLOD Resources SE 3` - <https://www.nexusmods.com/skyrimspecialedition/mods/52897>
-- [ ] `DynDOLOD DLL NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/97720>
-- [ ] `HD LODs Textures SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/3333>
-- [ ] `Happy Little Trees DynDOLOD Optimizations` - <https://www.nexusmods.com/skyrimspecialedition/mods/158587>
-- [ ] `No Grass In Objects` - <https://www.nexusmods.com/skyrimspecialedition/mods/42161>
-- [ ] `Worldspaces with Grass SSEEdit Script for No Grass In Objects` - <https://www.nexusmods.com/skyrimspecialedition/mods/55152>
-- [ ] `Grass Cache Fixes` - <https://www.nexusmods.com/skyrimspecialedition/mods/60891>
-- [ ] `xLODGen Resource - SSE Terrain Tamriel` - <https://www.nexusmods.com/skyrimspecialedition/mods/54680>
-- [ ] `CBBE NSFW - Caliente's Beautiful Bodies Enhancer` - <https://www.nexusmods.com/skyrimspecialedition/mods/74257>
-- [ ] `CBBE 3BA (3BBB)` - <https://www.nexusmods.com/skyrimspecialedition/mods/30174>
-- [ ] `Highly Improved Male Body Overhaul - HIMBO` - <https://www.nexusmods.com/skyrimspecialedition/mods/74174>
-- [ ] `BnP - Female Skin` - <https://www.nexusmods.com/skyrimspecialedition/mods/65274>
-- [ ] `BnP - Male Skin` - <https://www.nexusmods.com/skyrimspecialedition/mods/65402>
-- [ ] `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` - <https://www.nexusmods.com/skyrimspecialedition/mods/69681>
-- [ ] `BodySlide and Outfit Studio` - <https://www.nexusmods.com/skyrimspecialedition/mods/201>
-- [ ] `Bellyaches Animal and Creature Pack SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6839>
-- [ ] `KS Hairdos SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
-- [ ] `Eyes Nouveaux` - <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
-- [ ] `AURORA S.E.` - <https://www.nexusmods.com/skyrimspecialedition/mods/6021>
-- [ ] `Skylighting - Community Shaders` - <https://www.nexusmods.com/skyrimspecialedition/mods/139352>
-- [ ] `True Light` - <https://www.nexusmods.com/skyrimspecialedition/mods/135488>
-- [ ] `Window Shadows Ultimate` - <https://www.nexusmods.com/skyrimspecialedition/mods/150494>
-- [ ] `iLluminous Elementals` - <https://www.nexusmods.com/skyrimspecialedition/mods/138128>
-- [ ] ~~`Majestic Mountains` - <https://www.nexusmods.com/skyrimspecialedition/mods/11052>~~ (removed; replaced by `Enhanced Rocks and Mountains - Complex Material and PBR`)
-- [ ] `Dynamic Bloodpool Framework` - <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
-- [ ] `Skeleton Replacer HD - SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/52845>
+### Framework and Effect Plugins
+
+| Mod                                         | Dependencies                                 | URL                                                          |
+|---------------------------------------------|----------------------------------------------|--------------------------------------------------------------|
+| `Community Shaders`                         | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/86492>  |
+| `Screen Space Shadows - Community Shaders`  | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/93209>  |
+| `Grass Lighting - Community Shaders`        | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/86502>  |
+| `Water Effects - Community Shaders`         | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/112762> |
+| `Wetness Effects - Community Shaders`       | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/112739> |
+| `Terrain Shadows - Community Shaders`       | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/135817> |
+| `Subsurface Scattering - Community Shaders` | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/114114> |
+| `Skylighting - Community Shaders`           | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/139352> |
+| `Screen Space Global Illumination (SSGI)`   | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/130375> |
+| `Skyrim Upscaler - DLSS FSR2 XeSS`          | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/80343>  |
+| `PBR Hub`                                   | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/139889> |
+| `Complex Parallax Materials`                | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/95134>  |
+| `PGPatcher`                                 | `PBR Hub`, `Complex Parallax Materials`      | <https://www.nexusmods.com/skyrimspecialedition/mods/120946> |
+| `Auto Parallax`                             | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/79473>  |
+
+### PBR Textures (Cities and Landscapes)
+
+| Mod                                                      | Dependencies                                                              | URL                                                          |
+|----------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------------|
+| `Faultier's PBR Skyrim`                                  | `PBR Hub`                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/125308> |
+| `Tomato's PBR Whiterun`                                  | `PBR Hub`                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/135771> |
+| `Tomato's PBR Farmhouses 2.0`                            | `PBR Hub`                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/135774> |
+| `PBaRkarth - PBR texture mod for Markarth and Dwemer`    | `PBR Hub`                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/144535> |
+| `laogu's PBR Solitude`                                   | `PBR Hub`                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/173698> |
+| `Exist's Nordic Ruins PBR and Complex Parallax Material` | `PBR Hub`, `Complex Parallax Materials`                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/118014> |
+| `A Cathedralist's PBR Landscape`                         | `PBR Hub`                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/137333> |
+| `TomatoRim PBR Landscapes AIO`                           | `PBR Hub`                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/177621> |
+| `Happy Little Trees PBR`                                 | `PBR Hub`, `Happy Little Trees`                                           | <https://www.nexusmods.com/skyrimspecialedition/mods/159171> |
+| `PBR textures for The Great Cities Collection`           | `Community Shaders`, _The Great Cities (base) - not currently in modlist_ | <https://www.nexusmods.com/skyrimspecialedition/mods/133493> |
+
+### Landscapes, Clutter, Clothing, and Meshes
+
+| Mod                                                         | Dependencies                                                                       | URL                                                          |
+|-------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| `Skyland AIO`                                               | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/34179>  |
+| `Skurkbro's Retexture Project AIO`                          | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/63148>  |
+| `Skyking Fantasia Landscapes`                               | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/107256> |
+| `Rally's Solstheim Landscapes`                              | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/35590>  |
+| `Enhanced Rocks and Mountains - Complex Material and PBR`   | `PBR Hub`, `Complex Parallax Materials`                                            | <https://www.nexusmods.com/skyrimspecialedition/mods/121336> |
+| `Enhanced Rocks and Mountains - Fix and Addon`              | `Enhanced Rocks and Mountains - Complex Material and PBR`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/142493> |
+| `Riton Whiterun`                                            | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/103408> |
+| `Atlantean Landscape - Majestic Edition`                    | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/102170> |
+| `Atlantean Landscape - Complete - Complex Terrain Parallax` | `Complex Parallax Materials`                                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/89542>  |
+| `Blended Roads - Light Plugin (ESL)`                        | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/171554> |
+| `Nordic Snow`                                               | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/670>    |
+| `Nordic Snow - Complex Material`                            | `Complex Parallax Materials`                                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/133034> |
+| `Simplicity of Snow`                                        | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/56235>  |
+| `RUSTIC CLUTTER COLLECTION - Special Edition`               | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/5795>   |
+| `RUSTIC CLOTHING - Special Edition`                         | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/4703>   |
+| `Static Mesh Improvement Mod - SMIM`                        | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/659>    |
+| `High Poly Project`                                         | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/12029>  |
+| ~~`Majestic Mountains`~~                                    | _(removed; replaced by `Enhanced Rocks and Mountains - Complex Material and PBR`)_ | <https://www.nexusmods.com/skyrimspecialedition/mods/11052>  |
+
+### Lighting Overhauls
+
+| Mod                                                    | Dependencies                                 | URL                                                          |
+|--------------------------------------------------------|----------------------------------------------|--------------------------------------------------------------|
+| `Lux`                                                  | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/43158>  |
+| `Lux CS`                                               | `Lux`, `Community Shaders`                   | <https://www.nexusmods.com/skyrimspecialedition/mods/153919> |
+| `Lux Orbis`                                            | `Lux`                                        | <https://www.nexusmods.com/skyrimspecialedition/mods/56095>  |
+| `Lux Via`                                              | `Lux`                                        | <https://www.nexusmods.com/skyrimspecialedition/mods/63588>  |
+| `Enhanced Lights and FX`                               | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/2424>   |
+| `ELFX Shadows`                                         | `Enhanced Lights and FX`                     | <https://www.nexusmods.com/skyrimspecialedition/mods/63790>  |
+| `Relighting Skyrim SE`                                 | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/8586>   |
+| `Luminosity Lighting Overhaul - The Cathedral Concept` | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/16830>  |
+| `CS Light`                                             | `Community Shaders`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/138443> |
+| `True Light`                                           | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/135488> |
+| `Window Shadows Ultimate`                              | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/150494> |
+| `iLluminous Elementals`                                | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/138128> |
+
+### Weather and Atmosphere
+
+| Mod                                                                      | Dependencies                                           | URL                                                          |
+|--------------------------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|
+| `NAT.CS III`                                                             | `Community Shaders`                                    | <https://www.nexusmods.com/skyrimspecialedition/mods/139567> |
+| `Azurite Weathers III - Enhanced`                                        | _None_                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/150269> |
+| `Azurite III CS`                                                         | `Azurite Weathers III - Enhanced`, `Community Shaders` | <https://www.nexusmods.com/skyrimspecialedition/mods/162153> |
+| `RAID Weathers`                                                          | _None_                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/63116>  |
+| `Raid Weathers CS`                                                       | `RAID Weathers`, `Community Shaders`                   | <https://www.nexusmods.com/skyrimspecialedition/mods/171041> |
+| `Cathedral Weathers and Seasons`                                         | _None_                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/24791>  |
+| `Obsidian Weathers and Seasons`                                          | _None_                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/12125>  |
+| `Obsidian CS`                                                            | `Obsidian Weathers and Seasons`, `Community Shaders`   | <https://www.nexusmods.com/skyrimspecialedition/mods/162627> |
+| `Skydreamus Community Shaders Presets for NAT.CS III and Azurite III CS` | `Community Shaders`, `NAT.CS III` or `Azurite III CS`  | <https://www.nexusmods.com/skyrimspecialedition/mods/171145> |
+
+### Water
+
+| Mod                                                                                  | Dependencies                                                                                        | URL                                                          |
+|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| `FYX - Water Mesh Optimization`                                                      | _None_                                                                                              | <https://www.nexusmods.com/skyrimspecialedition/mods/97713>  |
+| `A Water Made For CS in mind`                                                        | `Community Shaders`                                                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/172959> |
+| `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` | `Simplicity of Sea - Water Color and Transparency Tweaks` | <https://www.nexusmods.com/skyrimspecialedition/mods/56520> |
+| `Simplicity of Sea - Water Color and Transparency Tweaks` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/148761> |
+| `Natural Waterfalls` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/87261> |
+| `Rally's Water Foam` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/28922> |
+
+### Grass and Flora
+
+| Mod                                                              | Dependencies                                                                                             | URL                                                         |
+|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| `Skoglendi - A Grass Mod`                                        | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/93944> |
+| `Flora Orientalis`                                               | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/64041> |
+| `Folkvangr - Grass and Landscape Overhaul`                       | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/44899> |
+| `Waterplants`                                                    | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/6092>  |
+| `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` | `Skoglendi - A Grass Mod`, `Flora Orientalis`, `Folkvangr - Grass and Landscape Overhaul`, `Waterplants` | <https://www.nexusmods.com/skyrimspecialedition/mods/95273> |
+| `Origins Of Forest - 3D Forest Grass`                            | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/45719> |
+| `Mari's flora`                                                   | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/45952> |
+| `No Grass In Objects`                                            | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/42161> |
+| `Worldspaces with Grass SSEEdit Script for No Grass In Objects`  | `No Grass In Objects`                                                                                    | <https://www.nexusmods.com/skyrimspecialedition/mods/55152> |
+| `Grass Cache Fixes`                                              | _None_                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/60891> |
+
+### Trees and Forests
+
+| Mod                                                           | Dependencies                                                                                                | URL                                                          |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim`  | _None_                                                                                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/57874>  |
+| `Happy Little Trees`                                          | _None_                                                                                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/50961>  |
+| `Fabled Forests`                                              | _None_                                                                                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/94462>  |
+| `Nature of the Wild Lands - forest and trees improvement mod` | _None_                                                                                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/63604>  |
+| `Fabled Forests - Ulvenwald - Compatibility Patch (BOS)`      | `Fabled Forests`, `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim`, `Base Object Swapper (BOS)` | <https://www.nexusmods.com/skyrimspecialedition/mods/134501> |
+
+### LOD and Distant Detail
+
+| Mod                                         | Dependencies                                    | URL                                                          |
+|---------------------------------------------|-------------------------------------------------|--------------------------------------------------------------|
+| `DynDOLOD Resources SE 3`                   | _None_                                          | <https://www.nexusmods.com/skyrimspecialedition/mods/52897>  |
+| `DynDOLOD DLL NG`                           | `DynDOLOD Resources SE 3`                       | <https://www.nexusmods.com/skyrimspecialedition/mods/97720>  |
+| `HD LODs Textures SE`                       | _None_                                          | <https://www.nexusmods.com/skyrimspecialedition/mods/3333>   |
+| `Happy Little Trees DynDOLOD Optimizations` | `Happy Little Trees`, `DynDOLOD Resources SE 3` | <https://www.nexusmods.com/skyrimspecialedition/mods/158587> |
+| `xLODGen Resource - SSE Terrain Tamriel`    | _None_                                          | <https://www.nexusmods.com/skyrimspecialedition/mods/54680>  |
+
+### Bodies, Skin, Hair, Eyes, Creatures
+
+| Mod                                                             | Dependencies                                       | URL                                                          |
+|-----------------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------------|
+| `CBBE NSFW - Caliente's Beautiful Bodies Enhancer`              | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/74257>  |
+| `CBBE 3BA (3BBB)`                                               | `CBBE NSFW - Caliente's Beautiful Bodies Enhancer` | <https://www.nexusmods.com/skyrimspecialedition/mods/30174>  |
+| `Highly Improved Male Body Overhaul - HIMBO`                    | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/74174>  |
+| `BnP - Female Skin`                                             | `CBBE NSFW - Caliente's Beautiful Bodies Enhancer` | <https://www.nexusmods.com/skyrimspecialedition/mods/65274>  |
+| `BnP - Male Skin`                                               | `Highly Improved Male Body Overhaul - HIMBO`       | <https://www.nexusmods.com/skyrimspecialedition/mods/65402>  |
+| `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` | `CBBE 3BA (3BBB)`, `BodySlide and Outfit Studio`   | <https://www.nexusmods.com/skyrimspecialedition/mods/69681>  |
+| `BodySlide and Outfit Studio`                                   | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/201>    |
+| `KS Hairdos SSE`                                                | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/6817>   |
+| `Eyes Nouveaux`                                                 | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/131210> |
+| `AURORA S.E.`                                                   | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/6021>   |
+| `Bellyaches Animal and Creature Pack SSE`                       | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/6839>   |
+| `Skeleton Replacer HD - SE`                                     | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/52845>  |
+
+### Misc Visuals and FX
+
+| Mod                           | Dependencies                                 | URL                                                          |
+|-------------------------------|----------------------------------------------|--------------------------------------------------------------|
+| `Dynamic Bloodpool Framework` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/172080> |
+
+### Notes
+
+- Three mods were added to this section to satisfy external dependencies surfaced during conversion: `Flora Orientalis` (64041), `Folkvangr - Grass and Landscape Overhaul` (44899), and `Waterplants` (6092). They are all required by `Vinland Grass Patch`.
 
 ## Animations and Movement
 
-- [ ] `Pandora Behaviour Engine Plus` - <https://www.nexusmods.com/skyrimspecialedition/mods/133232>
-- [ ] `XP32 Maximum Skeleton Special Extended - XPMSSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
-- [ ] `Open Animation Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
-- [ ] `Unique Jarl Throne Sitting Animation (OAR)` - <https://www.nexusmods.com/skyrimspecialedition/mods/174752>
-- [ ] `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
-- [ ] `Beam Walking Assist` - <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
-- [ ] `RaySense - Jumping over obstacles` - <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
-- [ ] `Open Animation Replacer - RaySense` - <https://www.nexusmods.com/skyrimspecialedition/mods/175498>
-- [ ] `Comprehensive First Person Animation Overhaul - CFPAO` - <https://www.nexusmods.com/skyrimspecialedition/mods/87169>
-- [ ] `ConsoleUtilSSE NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
-- [ ] `Leviathan Animations II - Male Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/81463>
-- [ ] `Leviathan Animations II - Female Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/80760>
-- [ ] `Conditional Armor Type Animations` - <https://www.nexusmods.com/skyrimspecialedition/mods/51507>
-- [ ] `EVG Conditional Idles` - <https://www.nexusmods.com/skyrimspecialedition/mods/34006>
-- [ ] `EVG Animated Traversal` - <https://www.nexusmods.com/skyrimspecialedition/mods/63232>
-- [ ] `Immersive Interactions - Animated Actions` - <https://www.nexusmods.com/skyrimspecialedition/mods/47670>
-- [ ] `Go to bed` - <https://www.nexusmods.com/skyrimspecialedition/mods/4224>
-- [ ] `New Creature Animation - Giant` - <https://www.nexusmods.com/skyrimspecialedition/mods/83317>
-- [ ] `New Creature Animation - Falmer` - <https://www.nexusmods.com/skyrimspecialedition/mods/83572>
-- [ ] `New Creature Animation - Werewolf` - <https://www.nexusmods.com/skyrimspecialedition/mods/83806>
-- [ ] `Goetia Animations - Conditional Shuffled Idle for Pretty Female idles` - <https://www.nexusmods.com/skyrimspecialedition/mods/68005>
-- [ ] `Goetia Animations - Female Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/68625>
-- [ ] `Precision - Accurate Melee Collisions` - <https://www.nexusmods.com/skyrimspecialedition/mods/72347>
-- [ ] `SCAR - Skyrim Combos AI Revolution` - <https://www.nexusmods.com/skyrimspecialedition/mods/72014>
-- [ ] `MCO ADXP - Modern Movement Combat Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/117115>
-- [ ] `Animation Motion Revolution` - <https://www.nexusmods.com/skyrimspecialedition/mods/50258>
-- [ ] `Payload Interpreter` - <https://www.nexusmods.com/skyrimspecialedition/mods/65089>
-- [ ] `Valhalla Combat` - <https://www.nexusmods.com/skyrimspecialedition/mods/64741>
+| Mod | Dependencies | URL |
+| --- | --- | --- |
+| [ ] `Pandora Behaviour Engine Plus` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/133232> |
+| [ ] `XP32 Maximum Skeleton Special Extended - XPMSSE` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/44252> |
+| [ ] `CBPC - Physics with Collisions for SSE and VR` | `SKSE64`, `Address Library for SKSE Plugins`, `CBBE 3BA (3BBB)` | <https://www.nexusmods.com/skyrimspecialedition/mods/21224> |
+| [ ] `Open Animation Replacer` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/92109> |
+| [ ] `Unique Jarl Throne Sitting Animation (OAR)` | `Open Animation Replacer` | <https://www.nexusmods.com/skyrimspecialedition/mods/174752> |
+| [ ] `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/132292> |
+| [ ] `Beam Walking Assist` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/175511> |
+| [ ] `RaySense - Jumping over obstacles` | `Open Animation Replacer`, `Open Animation Replacer - RaySense` | <https://www.nexusmods.com/skyrimspecialedition/mods/175506> |
+| [ ] `Open Animation Replacer - RaySense` | `Open Animation Replacer` | <https://www.nexusmods.com/skyrimspecialedition/mods/175498> |
+| [ ] `Comprehensive First Person Animation Overhaul - CFPAO` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/87169> |
+| [ ] `ConsoleUtilSSE NG` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/76649> |
+| [ ] `Leviathan Animations II - Male Idle Walk And Run` | `XPMSSE`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/81463> |
+| [ ] `Leviathan Animations II - Female Idle Walk And Run` | `XPMSSE`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/80760> |
+| [ ] `Conditional Armor Type Animations` | `Open Animation Replacer` | <https://www.nexusmods.com/skyrimspecialedition/mods/51507> |
+| [ ] `EVG Conditional Idles` | `Open Animation Replacer` | <https://www.nexusmods.com/skyrimspecialedition/mods/34006> |
+| [ ] `EVG Animated Traversal` | `Open Animation Replacer` | <https://www.nexusmods.com/skyrimspecialedition/mods/63232> |
+| [ ] `Immersive Interactions - Animated Actions` | `XPMSSE`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/47670> |
+| [ ] `Go to bed` | `XPMSSE` | <https://www.nexusmods.com/skyrimspecialedition/mods/4224> |
+| [ ] `New Creature Animation - Giant` | `XPMSSE`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/83317> |
+| [ ] `New Creature Animation - Falmer` | `XPMSSE`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/83572> |
+| [ ] `New Creature Animation - Werewolf` | `XPMSSE`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/83806> |
+| [ ] `Goetia Animations - Conditional Shuffled Idle for Pretty Female idles` | `Open Animation Replacer` | <https://www.nexusmods.com/skyrimspecialedition/mods/68005> |
+| [ ] `Goetia Animations - Female Idle Walk And Run` | `XPMSSE`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/68625> |
+| [ ] `Precision - Accurate Melee Collisions` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/72347> |
+| [ ] `SCAR - Skyrim Combos AI Revolution` | `SKSE64`, `Address Library for SKSE Plugins`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/72014> |
+| [ ] `IFrame Generator RE (AE Support)` | `Address Library for SKSE Plugins`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/82737> |
+| [ ] `MCO ADXP - Modern Movement Combat Overhaul` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/117115> |
+| [ ] `Animation Motion Revolution` | `SKSE64`, `Address Library for SKSE Plugins`, `MCO ADXP` | <https://www.nexusmods.com/skyrimspecialedition/mods/50258> |
+| [ ] `Payload Interpreter` | `SKSE64`, `Address Library for SKSE Plugins`, `MCO ADXP` | <https://www.nexusmods.com/skyrimspecialedition/mods/65089> |
 
+### Notes
+
+- `CBPC` was added with deps `SKSE64`, `Address Library for SKSE Plugins`, `CBBE 3BA (3BBB)` as the default first-pass physics layer called out in `modlist-03.md` (Skeleton and Behavior Prerequisites).
+- `Valhalla Combat` was removed from this section; it is planned for re-entry under section 11 (Survival, Difficulty, and Balance) when that section is converted, alongside the other combat-system overhauls there.
+- `IFrame Generator RE` was added as `IFrame Generator RE (AE Support)` (mod 82737) so the entry matches the AE 1.6.629+ runtime fork needed for the target build. Deps: `Address Library for SKSE Plugins`, `SKSE64`.
 ## Third-Person Gameplay
 
 - [ ] `SmoothCam` - <https://www.nexusmods.com/skyrimspecialedition/mods/41252>
@@ -280,6 +350,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Whiterun Forest Borealis` - <https://www.nexusmods.com/skyrimspecialedition/mods/11343>
 - [ ] `The Marshlands` - <https://www.nexusmods.com/skyrimspecialedition/mods/23062>
 - [ ] `Aspens Ablaze` - <https://www.nexusmods.com/skyrimspecialedition/mods/39998>
+- [ ] `The Great Cities` - <https://www.nexusmods.com/skyrimspecialedition/mods/320>
 - [ ] `The Great Cities - Minor Cities and Towns SSE Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/20272>
 - [ ] `Cities of the North - Dawnstar` - <https://www.nexusmods.com/skyrimspecialedition/mods/28952>
 - [ ] `The Great Town of Ivarstead SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/34505>
@@ -360,6 +431,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 - [ ] `Chapter II - Jeremy Soule Inspired Music (by Dreyma Music)` - <https://www.nexusmods.com/skyrimspecialedition/mods/37792>
 - [ ] `Yggdrasil Music and SoundFX Overhaul SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/21578>
+- [ ] `Nyghtfall - Dark Fantasy Music` - <https://www.nexusmods.com/skyrimspecialedition/mods/39011>
+- [ ] `Nordenhamr - Viking Music` - <https://www.nexusmods.com/skyrimspecialedition/mods/58080>
 - [ ] `Silent Combat Music` - <https://www.nexusmods.com/skyrimspecialedition/mods/5148>
 - [ ] `Audio Overhaul for Skyrim SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/12466>
 - [ ] `Immersive Sounds - Compendium` - <https://www.nexusmods.com/skyrimspecialedition/mods/523>
@@ -430,4 +503,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 325
+Total unique mods listed: 331
