@@ -13,10 +13,14 @@
 - Classic fallback route: `Alternate Start - Live Another Life` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/272>
 - Configurable middle-ground route: `Skyrim Unbound Reborn (Alternate Start)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/27962>
 - Freeform sandbox route: `Realm of Lorkhan - Freeform Alternate Start` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18223>
+- Origins-and-starting-stats companion: `Dealing with Backstories` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61106>
+- Character-journal companion: `Take Notes - Journal of the Dragonborn SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13570>
 
 ### Recommendation
 
 - Start with `Alternate Perspective - Alternate Start` as the main baseline candidate.
+- Keep `Dealing with Backstories` as the main origins-and-starting-stats companion if the list wants character identity to begin before the player earns the first perk. It is the cleanest answer to the user's request for more stats/sheets/origins because it generates background-driven starting skills, bonuses, drawbacks, and gear instead of just moving the player to a different start cell.
+- Keep `Take Notes` as the low-risk roleplay-sheet companion. It does not rebalance the character the way `Dealing with Backstories` does; it gives the player a persistent in-game journal, which is the lightest way to make origins, beliefs, and personal goals actually visible in play.
 - Keep `Alternate Start - Live Another Life` as the conservative fallback comparison if the more immersive route is harder to justify in the final stack.
 - Keep `Skyrim Unbound Reborn` as the configurable middle-ground comparison if the list wants more setup freedom without moving fully into sandbox-start territory.
 - Treat `Realm of Lorkhan` as the deliberate freeform branch, not the default baseline.
@@ -24,13 +28,15 @@
 ### Risks & Compatibility
 
 - Start frameworks can carry world-state assumptions that ripple into later quest, city, survival, or follower decisions.
+- `Dealing with Backstories` pushes character identity into starting stats, gear, and drawbacks, so it must be judged against the chosen race, standing-stone, perk, and survival stack instead of being treated as a harmless flavor add-on.
+- `Take Notes` is mechanically light, but it only earns a slot if the list expects real roleplay or long-form character journaling rather than a pure action-combat playstyle.
 - A more immersive start loses value quickly if it adds onboarding friction without materially improving the early-game tone.
 - A more abstract start can undermine world coherence if it feels like a detached configuration room instead of a beginning.
 - This subsection gets muddy if race, perk, religion, or survival decisions leak into it too early.
 
 ### Acceptance Criteria
 
-- `Elder Wilds` has one clearly preferred starting framework and one meaningful fallback comparison, not several half-adopted start mods.
+- `Elder Wilds` has one clearly preferred starting framework and explicit decisions on whether `Dealing with Backstories` and `Take Notes` are part of that opening experience.
 - The chosen route improves replayability and roleplay identity without undermining world coherence.
 - The opening hands the player into normal play cleanly and matches the intended tone.
 
@@ -592,13 +598,14 @@
 ### Core Idea
 
 - This subsection owns the clothing content packs that add new clothing, cloaks, and wearable non-armor items to the world: common clothes, noble clothes, cloaks, and backpacks.
-- It is intentionally kept separate from the armor packs above because clothing is non-protective and lives in a different inventory slot. The four mods in this subsection are: `Armor and Clothing Extension` (clothing slot diversity), `Cloaks of Skyrim` (cosmetic cloak slot), `Colovian Noble Clothes` (high-status clothing variants), and `Knapsack Backpacks SE` (utility backpack slot).
+- It is intentionally kept separate from the armor packs above because clothing is non-protective and lives in a different inventory slot. The current tracked clothing set is: `Armor and Clothing Extension` (clothing slot diversity), `Common Clothes and Armors` (shared commoner coverage), `Sforzinda Imitations` (handmade outfit variety), `Cloaks of Skyrim` (cosmetic cloak slot), `Colovian Noble Clothes` (high-status clothing variants), and `Knapsack Backpacks SE` (utility backpack slot).
 - The right baseline is "more wardrobe variety without making every NPC a fashion show". Clothing mods should add visual diversity to towns and cities without overwhelming the identity of the vanilla factions.
 
 ### Options
 
 - Comprehensive clothing diversity: `Armor and Clothing Extension` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/19002>
 - Common-cloth variety: `Common Clothes and Armors` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21305> (also listed in armor subsection)
+- Boutique handcrafted-outfit route: `Sforzinda Imitations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54346>
 - Cloak slot: `Cloaks of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6369>
 - High-status clothing: `Colovian Noble Clothes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4464>
 - Carry-and-wearable utility: `Knapsack Backpacks SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3440>
@@ -608,6 +615,7 @@
 
 - Use `Armor and Clothing Extension` as the clothing-diversity baseline. It adds lore-friendly clothing options and gives NPCs more appropriate attire (35K+ endorsements, by kryptopyr and Gamwich). It requires `RUSTIC CLOTHING - SE` (already in the list under section 2) and `SkyUI` (also in the list under section 1) as hard dependencies, both of which are already locked in. The mod works by adding new clothing items and redistributing them to NPCs via SPID-style keywords, so it does not break the existing NPC outfits in `modlist-09.md`.
 - Use `Common Clothes and Armors` as the common-cloth variety companion. It is listed in the armor subsection above as well, but the mod primarily adds new clothing items (with armor variants for some), and it pairs naturally with `Armor and Clothing Extension` to give the bandit-and-sellsword archetype a real visual variety.
+- Keep `Sforzinda Imitations` as the handmade-outfit branch for the "more clothing" request, especially on the women's side of the wardrobe stack. It is not the subsection baseline because it is a more curated boutique pack than `ACE` or `Common Clothes`, but it is the cleanest verified addition for adding distinct crafted outfits without abandoning the lore-friendly direction entirely.
 - Use `Cloaks of Skyrim` as the cloak-slot addition. Vanilla Skyrim has a cloak slot that is almost never used; this mod adds 100+ new cloaks that the player can equip (and that NPCs can wear via SPID distribution). The cloak slot is the most visually impactful wearable slot because cloaks are visible in third-person, and this is the canonical cloaks mod.
 - Use `Colovian Noble Clothes` as the high-status clothing variety pass. It adds new noble and high-status clothing items that fit the Colovian (Cyrodiilic-imperial) aesthetic. It pairs naturally with `modlist-08.md` world-content mods that add Imperial and noble-themed content (e.g. `Beyond Skyrim - Bruma`).
 - Use `Knapsack Backpacks SE` as the carry-and-wearable utility. It adds backpacks that the player can equip to add inventory slots, with a MCM configuration for slot counts and visual variants. This is the cosmetic companion to the inventory-decision mod `Bandolier` listed in the armor subsection above; the two are complementary, not competing.
@@ -617,6 +625,7 @@
 
 - `Armor and Clothing Extension` requires `RUSTIC CLOTHING - SE` and `SkyUI`. Both are already in the list (RUSTIC CLOTHING in section 2, SkyUI in section 1), so the dependency chain is satisfied. Verify the load order keeps `RUSTIC CLOTHING` above `Armor and Clothing Extension` so ACE's clothing items override RUSTIC's retextures where they overlap.
 - `Common Clothes and Armors` is listed in two subsections (clothing here, armor in the subsection above) because it adds both. The checklist in `mods-checklist.md` has it under the armor section for clarity, but it is referenced in both modlist-05.md subsections.
+- `Sforzinda Imitations` is a more authored outfit pack than the rest of this subsection, so it should be treated as a curated add-on rather than automatic baseline coverage for every NPC. If it starts pulling the list toward a boutique-fantasy wardrobe tone, cut it.
 - `Cloaks of Skyrim` adds 100+ new cloak items, which means it interacts with the cloak-slot system. If `modlist-04.md` adds a custom cloak-slot overhaul, verify the two stack cleanly.
 - `Colovian Noble Clothes` is a single-author mod with a relatively small mod count. The mod is stable but does not have the same community-maintenance footprint as the other mods in this subsection, so verify the mod page for known issues before locking it in.
 - `Knapsack Backpacks SE` is the cosmetic backpack mod, and `Bandolier` (armor subsection) is the inventory-extension mod. The two can stack, but verify the inventory UI does not show duplicate bag icons.
@@ -624,6 +633,7 @@
 ### Acceptance Criteria
 
 - `Elder Wilds` has one clear clothing-diversity baseline (`Armor and Clothing Extension`) and one clear common-cloth variety companion (`Common Clothes and Armors`).
+- Any extra handcrafted outfit layer (`Sforzinda Imitations`) is an explicit add-on branch, not an accidental tone shift.
 - The cloak slot is populated with new content (`Cloaks of Skyrim`).
 - High-status clothing variants are present for the Imperial and noble archetypes (`Colovian Noble Clothes`).
 - The chosen backpack mod is the cosmetic and inventory companion (`Knapsack Backpacks SE` + `Bandolier` from the armor subsection).

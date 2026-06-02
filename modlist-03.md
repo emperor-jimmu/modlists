@@ -108,18 +108,21 @@
 ### Options
 
 - Grounded realistic route: `Leviathan Animations II - Male Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/81463> and `Leviathan Animations II - Female Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80760>
+- Alternate grounded male route: `Vanargand Animations II - Male Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/99999>
 - Conditional follow-up route: `Conditional Armor Type Animations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51507>
 - Traversal companion to evaluate separately: `EVG Animated Traversal` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63232>
 
 ### Recommendation
 
 - Start with the grounded `Leviathan Animations II` male and female pair as the control baseline for normal travel.
+- Keep `Vanargand Animations II - Male Idle Walk And Run` as the main male-side comparison if `Leviathan` reads too heavy or too old-warrior-coded for the final travel tone. `Vanargand II` keeps the same grounded third-person goal but lands a little cleaner and more modern in ordinary exploration footage, so it is the best current "more animations" addition without changing the section's overall direction.
 - Add `Conditional Armor Type Animations` only after the base walk and run feel is accepted on its own.
 - Keep `EVG Animated Traversal` in the later interaction/traversal bucket rather than letting it define the core locomotion baseline.
 
 ### Risks & Compatibility
 
 - A locomotion set can look good in isolation but feel too heavy, too floaty, or too theatrical during long play sessions.
+- Mixing `Leviathan` and `Vanargand II` without a clear owner for the male locomotion slot will make the movement stack feel stitched together; pick one as the winner after real travel testing.
 - Armor-conditional variants can add flavor, but they also make movement identity less consistent if added too early.
 - Choosing locomotion before camera and combat direction are clearer may lead to a later full replacement.
 

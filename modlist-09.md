@@ -15,14 +15,15 @@ The real question is whether `Elder Wilds` should lean toward grounded moderniza
 - Vanilla-faithful route: `High Poly True to Vanilla NPC Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/74226>. Preserves recognizable vanilla identity while smoothing roughness through a high-poly refresh; the restraint-minded comparison.
 - Targeted named-NPC route: `The Wolven Widow - SerketHetyt's Elisif Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62209>. A lore-friendly visual overhaul of a single high-visibility named NPC (Jarl Elisif the Fair of Solitude) rather than a broad cast pass. 1,096 endorsements, ~175K unique downloads, last updated July 2024. Useful as a complementary add-on on top of whichever broad route is chosen, because the Solitude Jarl's court is one of the social scenes where the player spends the most time looking at one character.
 - Male coverage: `The Men of Winter SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10902>. The three routes above skew female-weighted, so a dedicated high-poly male overhaul is needed to keep the cast consistent. `Males Of Skyrim by zzjay` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37485> is the secondary alternative.
+- Female-focused modular route: `DIbella's Blessing` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82606>. Covers 233 female characters with a more curated, hand-authored appearance pass than the broad baseline routes above. Best treated as the targeted modular branch rather than the subsection-wide default.
 - Behavior/schedule layer: `AI Overhaul SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21654>. The section repeatedly leans on "AI overhaul" compatibility pressure, so the actual mod is named here. It changes NPC schedules and behavior, not faces, and pairs with any of the appearance routes (mind its known overlap with `Immersive Citizens`, tracked under Population).
-- Later/modular: targeted stacks like `Dibella's Blessing` or `Pride of Skyrim` can be revisited if the project chooses a mixed modular route instead of one subsection-wide direction.
+- Later/modular: targeted stacks like `Pride of Skyrim` can still be revisited if the project chooses a deeper mixed modular route instead of one subsection-wide direction.
 
 ### Recommendation
 
-Start with the grounded route: `Northbourne NPCs` as the baseline, paired with `The Men of Winter SSE` for male coverage. It fits the broader `Elder Wilds` tone better than a fully glamour-driven stack while still clearly modernizing faces.
+Start with the grounded route: `Northbourne NPCs` as the baseline, paired with `The Men of Winter SSE` for male coverage and `AI Overhaul SSE` as the behavior layer. It fits the broader `Elder Wilds` tone better than a fully glamour-driven stack while still clearly modernizing faces.
 
-Keep `High Poly True to Vanilla NPC Overhaul` as the vanilla-faithful fallback if even `Northbourne` drifts too far from familiar identity, and `Pandorable's NPCs` as the beauty-forward branch if the project later accepts the stronger aesthetic shift and patch burden. Judge the result through ordinary social play — walking cities and inns, talking to quest NPCs — checking whether faces still suit class, region, age, and role rather than collapsing into one samey beauty standard. Treat `The Wolven Widow - SerketHetyt's Elisif Overhaul` as a targeted named-NPC companion, not a subsection baseline: it only affects one character but that character sits in one of the most-seen social scenes, so layering it on top of whichever broad route is chosen is reasonable as long as its facegen, skin, and hair mesh with the broader cast direction.
+Keep `High Poly True to Vanilla NPC Overhaul` as the vanilla-faithful fallback if even `Northbourne` drifts too far from familiar identity, and `Pandorable's NPCs` as the beauty-forward branch if the project later accepts the stronger aesthetic shift and patch burden. Keep `DIbella's Blessing` as the modular female-side branch if the list wants more authored women without fully replacing the broader grounded baseline. Judge the result through ordinary social play — walking cities and inns, talking to quest NPCs — checking whether faces still suit class, region, age, and role rather than collapsing into one samey beauty standard. Treat `The Wolven Widow - SerketHetyt's Elisif Overhaul` as a targeted named-NPC companion, not a subsection baseline: it only affects one character but that character sits in one of the most-seen social scenes, so layering it on top of whichever broad route is chosen is reasonable as long as its facegen, skin, and hair mesh with the broader cast direction.
 
 ### Risks & Compatibility
 
@@ -30,12 +31,13 @@ Keep `High Poly True to Vanilla NPC Overhaul` as the vanilla-faithful fallback i
 - Letting glamour-forward design overpower the grounded tone established elsewhere, or letting female-weighted packs leave male NPCs visibly mismatched.
 - Treating hold-coverage gaps or mixed-replacer stacking as a small detail when they become ongoing maintenance debt.
 - Confirm `Northbourne`, `The Men of Winter`, `Pandorable's`, and `High Poly True to Vanilla` behave cleanly on Steam `1.6.1170`, and check blackface/facegen, dependency, and `AI Overhaul SSE` load-order pressure before locking a route.
+- `DIbella's Blessing` is easiest to overuse in a way that pulls the whole cast toward a softer beauty pass than the rest of the list wants. Keep it modular and verify it complements rather than overrides the grounded baseline.
 - Confirm `The Wolven Widow` behaves cleanly on Steam `1.6.1170` alongside whichever broad NPC route is chosen; record facegen, skin, and hair overlap with that broader route, and verify it does not silently desync from `Northbourne`/`Pandorable's`/`High Poly True to Vanilla` coverage of Elisif (or from a `Legacy of the Dragonborn` Safehouse display if relevant).
 - Do not duplicate the body/skin baseline already owned by `modlist-02.md`.
 
 ### Acceptance Criteria
 
-- One preferred grounded baseline (plus male coverage), one beauty-forward comparison, and one vanilla-faithful comparison, with the distinction between the three explicit.
+- One preferred grounded baseline (plus male coverage and the `AI Overhaul SSE` behavior layer), one beauty-forward comparison, one vanilla-faithful comparison, and one modular female-side branch (`DIbella's Blessing`), with the distinction between them explicit.
 - Any tracked alternative documented with a verified canonical Nexus page and a clear reason it differs from the baseline.
 - The chosen direction improves NPC presence without a confusing aesthetic split from the rest of the list.
 

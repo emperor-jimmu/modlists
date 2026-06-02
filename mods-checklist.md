@@ -206,6 +206,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | [ ] `ConsoleUtilSSE NG`                                                     | `SKSE64`, `Address Library for SKSE Plugins`                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/76649>  |
 | [ ] `Leviathan Animations II - Male Idle Walk And Run`                      | `XPMSSE`, `Pandora Behaviour Engine Plus`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/81463>  |
 | [ ] `Leviathan Animations II - Female Idle Walk And Run`                    | `XPMSSE`, `Pandora Behaviour Engine Plus`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/80760>  |
+| [ ] `Vanargand Animations II - Male Idle Walk And Run`                      | `XPMSSE`, `Pandora Behaviour Engine Plus`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/99999>  |
 | [ ] `Conditional Armor Type Animations`                                     | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/51507>  |
 | [ ] `EVG Conditional Idles`                                                 | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/34006>  |
 | [ ] `EVG Animated Traversal`                                                | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/63232>  |
@@ -261,6 +262,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Alternate Start - Live Another Life`                     | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/272>   |
 | `Skyrim Unbound Reborn (Alternate Start)`                 | `SKSE64`, `PapyrusUtil`, `SkyUI`                           | <https://www.nexusmods.com/skyrimspecialedition/mods/27962> |
 | `Realm of Lorkhan - Freeform Alternate Start`             | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/18223> |
+| `Dealing with Backstories`                                | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/61106> |
+| `Take Notes - Journal of the Dragonborn SSE`              | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/13570> |
 | `Aetherius - A Race Overhaul`                             | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/26686> |
 | `Morningstar - Minimalistic Races of Skyrim`              | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/22298> |
 | `Imperious - Races of Skyrim`                             | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/1315>  |
@@ -312,6 +315,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Unique Items Tweaks - Improved Miscellaneous Artifacts` | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/33723>  |
 | `Armor and Clothing Extension`                            | `RUSTIC CLOTHING - SE`, `SkyUI`             | <https://www.nexusmods.com/skyrimspecialedition/mods/19002>  |
 | `Common Clothes and Armors`                               | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/21305>  |
+| `Sforzinda Imitations`                                    | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/54346>  |
 | `Cloaks of Skyrim`                                        | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/6369>   |
 | `Colovian Noble Clothes`                                  | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/4464>   |
 | `Knapsack Backpacks SE`                                   | _None_                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/3440>   |
@@ -487,6 +491,9 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Pandorable's NPCs` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/78524> |
 | `The Wolven Widow - SerketHetyt's Elisif Overhaul` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/62209> |
 | `High Poly True to Vanilla NPC Overhaul` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/74226> |
+| `The Men of Winter SSE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/10902> |
+| `DIbella's Blessing` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/82606> |
+| `AI Overhaul SSE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/21654> |
 | `Lawless - A Bandit Overhaul` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/88080> |
 | `OBIS SE - Organized Bandits In Skyrim Special Edition` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/4145> |
 | `Haugbui - A Draugr Overhaul` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/26188> |
@@ -527,6 +534,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - `Dragons Use Thu'um` lists `Open Animation Replacer`, `Spell Perk Item Distributor (SPID)`, and the `Backported Extended ESL Support` as optional/conditional requirements. Only the two hard requirements (`MCM Helper`, `JContainers`) are listed as deps; OAR and SPID are already in modlist for section 03 work.
 - `Diverse True Wolves and Dogs`, `Rally's Shaggy Cows`, `Realistic Horse Breeds`, `Real Rabbits HD`, `Fusa Fusa Project`, `Bears of the North`, `Fluffworks` are all ESP-only mesh/texture/visual mods; `_None_` is correct.
 - `Real Wildlife Skyrim SE` and the various Mihail-style wildlife spawn mods overlap in creature-spawn scope. Modlist-09.md `Wildlife Variety` subsection should resolve which spawn expansion to use.
+- `AI Overhaul SSE` is the behavior-and-schedule layer already referenced in `modlist-09.md`; verify facegen load order and patches when combining it with `Northbourne`, `The Men of Winter`, `DIbella's Blessing`, or other NPC appearance overhauls.
 
 ## Audio and Feedback
 
@@ -657,4 +665,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 355
+Total unique mods listed: 362
