@@ -86,50 +86,41 @@
 84. `08.06 New Quests That Fit The Tone`
 85. `08.07 Player Homes And Base-Building Considerations`
 86. `09 NPCs and Creatures`
-88. `09.01 NPC Appearance Overhauls`
-89. `09.02 Enemy Variety`
-90. `09.03 Creature Visual Overhauls`
-91. `09.04 Creature Behavior Improvements`
-92. `09.05 Civilian And Traveler Population Additions`
-93. `09.06 Wildlife Density And Rarity Balance`
-94. `10 Audio and Feedback`
-95. `10.01 Music Overhaul Strategy`
-96. `10.02 Ambient Audio Improvements`
-97. `10.03 Combat Sound Effects`
-98. `10.04 UI Sound Redesign`
-99. `10.05 Footsteps, Foley, And Environmental Reverb`
-100. `11 Survival, Difficulty, and Balance`
-101. `11.01 Difficulty Framework`
-102. `11.02 Combat Lethality And Pacing`
-103. `11.03 Enemy AI Improvements`
-104. `11.04 Injury, Stamina, And Resource Pressure`
-105. `11.05 Survival Systems Compatibility`
-106. `11.06 Death, Defeat, Or Respawn Handling`
-107. `12 Performance and Technical Workflow`
-108. `12.01 Performance Budgeting By System`
-109. `12.02 VRAM-Heavy Mod Review`
-110. `12.03 CPU-Heavy Script Review`
-111. `12.04 Shader Performance Impact`
-112. `12.05 Grass, Tree, And Draw-Call Optimization`
-113. `12.06 INI Tuning And Display Settings`
-114. `12.07 Save Safety Considerations`
-115. `12.08 xEdit, Nemesis/Pandora, DynDOLOD, And Synthesis Workflow`
-116. `13 Modlist Curation Rules`
-117. `13.01 Visual Style Consistency Rules`
-118. `13.02 Lore Friendliness Rules`
-119. `13.03 Third-Person-First Design Rules`
-120. `13.04 Animation Quality Bar`
-121. `13.05 Performance Target And Hardware Assumptions`
-122. `13.06 Preference For Lightweight Vs Feature-Rich Mods`
-123. `13.07 Rules For Avoiding Overlapping Overhauls`
-124. `14 Testing Plan`
-125. `14.01 Fresh Game Startup Checklist`
-126. `14.02 Character Creation Test`
-127. `14.03 Third-Person Combat Test`
-128. `14.04 City Performance Test`
-129. `14.05 Forest Traversal Test`
-130. `14.06 Dungeon Lighting Test`
-131. `14.07 UI And Controller Test`
-132. `14.08 Long-Session Stability Test`
-133. `15 Targeted Bugfix Mods`
-134. `16 Legacy of the Dragonborn`
+87. `09.01 NPC Appearance Overhauls`
+88. `09.02 Enemy Variety`
+89. `09.03 Creature Visual Overhauls`
+90. `09.04 Creature Behavior Improvements`
+91. `09.05 Civilian And Traveler Population Additions`
+92. `09.06 Wildlife Density And Rarity Balance`
+93. `10 Audio and Feedback`
+94. `10.01 Music Overhaul Strategy`
+95. `10.02 Ambient Audio Improvements`
+96. `10.03 Combat Sound Effects`
+97. `10.04 UI Sound Redesign`
+98. `10.05 Footsteps, Foley, And Environmental Reverb`
+99. `11 Survival, Difficulty, and Balance`
+100. `11.01 Difficulty Framework`
+101. `11.02 Combat Lethality And Pacing`
+102. `11.03 Enemy AI Improvements`
+103. `11.04 Injury, Stamina, And Resource Pressure`
+104. `11.05 Survival Systems Compatibility`
+105. `11.06 Death, Defeat, Or Respawn Handling`
+106. `12 Modlist Curation Rules`
+107. `12.01 Visual Style Consistency Rules`
+108. `12.02 Lore Friendliness Rules`
+109. `12.03 Third-Person-First Design Rules`
+110. `12.04 Animation Quality Bar`
+111. `12.05 Performance Target And Hardware Assumptions`
+112. `12.06 Preference For Lightweight Vs Feature-Rich Mods`
+113. `12.07 Rules For Avoiding Overlapping Overhauls`
+114. `13 Testing Plan`
+115. `13.01 Fresh Game Startup Checklist`
+116. `13.02 Character Creation Test`
+117. `13.03 Third-Person Combat Test`
+118. `13.04 City Performance Test`
+119. `13.05 Forest Traversal Test`
+120. `13.06 Dungeon Lighting Test`
+121. `13.07 UI And Controller Test`
+122. `13.08 Long-Session Stability Test`
+123. `14 Targeted Bugfix Mods`
+124. `15 Legacy of the Dragonborn`

@@ -279,7 +279,7 @@
 - Merchant-pricing route: `Trade and Barter - Skyrim Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/23081>
 - Loot-distribution route: `Open World Loot - Encounter Zone and Loot Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49681>
 - Heavy scarcity route: `MorrowLoot Ultimate - Skyrim Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3058>
-- Ownership note: keep `Barter Limit Fix` in `modlist-15.md` as a targeted fix if merchant-gold caps become relevant; it is not the economy-framework answer by itself.
+- Ownership note: keep `Barter Limit Fix` in `modlist-14.md` as a targeted fix if merchant-gold caps become relevant; it is not the economy-framework answer by itself.
 
 ### Recommendation
 
@@ -346,7 +346,7 @@
 - Reputation-first route: `Skyrim Reputation` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22374>
 - Crime-expression route: `Book Of Shadows - Behaviour Based Stealth Additions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76086>
 - Guard-pressure route: `Suspicious City Guards` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/38762>
-- Ownership note: keep targeted fixes such as `Simple Offence Suppression` in `modlist-15.md`; they are support fixes, not the social-system answer.
+- Ownership note: keep targeted fixes such as `Simple Offence Suppression` in `modlist-14.md`; they are support fixes, not the social-system answer.
 
 ### Recommendation
 

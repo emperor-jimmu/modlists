@@ -181,7 +181,7 @@
 - Start with `Better Dialogue Controls` as the strongest first-pass pick because it addresses the most fundamental dialogue friction without forcing a large stylistic commitment.
 - Treat `Better MessageBox Controls` as the natural companion if the same interaction awkwardness also shows up in message boxes.
 - Keep `Dialogue Interface ReShaped` and `Convenient Dialogue UI - SE` as the more presentation-forward comparison routes only if testing shows the bigger problem is visual dialogue flow rather than basic control reliability.
-- Keep subtitle safety and unvoiced-dialogue handling in `modlist-15.md` with `Fuz Ro D-oh - Silent Voice`; that is a bugfix concern, not the UI framework answer here.
+- Keep subtitle safety and unvoiced-dialogue handling in `modlist-14.md` with `Fuz Ro D-oh - Silent Voice`; that is a bugfix concern, not the UI framework answer here.
 
 ### Risks & Compatibility
 
@@ -343,7 +343,7 @@
 - `Sovngarde - Mist's Font Replacer` remains the strongest first-pass accessibility candidate because the repo already identified `16:9` `4K HDR` readability as a practical concern and font presence is one of the clearest ways to improve long-session comfort without redesigning the whole interface.
 - For this display target, prefer `Sovngarde - Mist's Font Replacer Bold V8.9` first, then fall back to the light variant only if the bold face feels too heavy in the chosen `Oathvein UI` or `Norden UI` direction.
 - Keep `Wider MCM Menu for SkyUI` as the narrower support answer when the main friction lives in configuration readability rather than in the ordinary in-game interface itself.
-- Leave subtitle safety and unvoiced-dialogue handling in `modlist-15.md` with `Fuz Ro D-oh - Silent Voice`; that remains a bugfix boundary, not the main UI accessibility answer here.
+- Leave subtitle safety and unvoiced-dialogue handling in `modlist-14.md` with `Fuz Ro D-oh - Silent Voice`; that remains a bugfix boundary, not the main UI accessibility answer here.
 
 ### Risks & Compatibility
 

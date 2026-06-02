@@ -355,10 +355,6 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Stress and Fear - A Dynamic Sanity System` - <https://www.nexusmods.com/skyrimspecialedition/mods/116522>
 - [ ] `Shadow of Skyrim - Nemesis and Alternative Death System` - <https://www.nexusmods.com/skyrimspecialedition/mods/65136>
 
-## Performance and Technical Workflow
-
-_No specific mods recorded yet in this section._
-
 ## Modlist Curation Rules
 
 _No specific mods recorded yet in this section._
@@ -390,6 +386,12 @@ _No specific mods recorded yet in this section._
 - [ ] `LoTD-related mod (Nexus ID 13279)` - <https://www.nexusmods.com/skyrimspecialedition/mods/13279>
 - [ ] `LoTD-related mod (Nexus ID 16080)` - <https://www.nexusmods.com/skyrimspecialedition/mods/16080>
 - [ ] `LoTD-related mod (Nexus ID 131107)` - <https://www.nexusmods.com/skyrimspecialedition/mods/131107>
+
+## Performance and Technical Workflow
+
+- [ ] `BethINI Pie (Performance INI Editor)` - <https://www.nexusmods.com/site/mods/631>
+- [ ] `Lightened Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/50755>
+- [ ] `eFPS - Exterior FPS boost` - <https://www.nexusmods.com/skyrimspecialedition/mods/54907>
 
 ---
 

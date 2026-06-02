@@ -1,9 +1,10 @@
-# Modlist Curation Rules
+# Testing Plan
 
-- Visual style consistency rules
-- Lore friendliness rules
-- Third-person-first design rules
-- Animation quality bar
-- Performance target and hardware assumptions
-- Preference for lightweight vs feature-rich mods
-- Rules for avoiding overlapping overhauls
+- Fresh game startup checklist
+- Character creation test
+- Third-person combat test
+- City performance test
+- Forest traversal test
+- Dungeon lighting test
+- UI and controller test
+- Long-session stability test
