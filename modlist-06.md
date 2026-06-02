@@ -13,12 +13,14 @@
 - Support-framework route: `UIExtensions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17561>
 - Grim-dark visual overhaul: `Oathvein UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160916>
 - Modern-rustic visual overhaul: `Norden UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/166086>
+- Next-gen web-UI framework branch: `Prisma UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148718>
 
 ### Recommendation
 
 - Start with `SkyUI` as the non-negotiable baseline.
 - Treat `UIExtensions` as support infrastructure where later chosen mods need it rather than as a competing UI identity.
 - Set `Oathvein UI` as the preferred visual direction. Both `Oathvein UI` and `Norden UI` are by the same author (`Nithog`) and both are actively maintained — `Oathvein` last updated `20 May 2026`, `Norden` last updated `16 May 2026`. `Oathvein`'s description ("sleek, grim-dark interface overhaul") directly matches `Elder Wilds` tone, while `Norden` ("modern design with the rustic feel of the Nords") is the lighter comparison. `Norden` also requires `Extended UI` as a dependency, which has no official SE port and generates community friction; `Oathvein` has a more self-contained dependency chain.
+- Keep `Prisma UI` as a documented next-gen framework comparison rather than the default choice. It is a web-UI framework that replaces `SkyUI` rather than extending it, which makes it incompatible with the `Oathvein UI` visual direction and with most UIExtensions-based mods from later subsections. Locked baseline stays `SkyUI` + `Oathvein UI`; `Prisma UI` is documented for projects that want to pursue the framework-replacement path instead of the visual-overhaul path.
 - Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision.
 
 ### Risks & Compatibility
@@ -45,11 +47,13 @@
 - Layout-control route: `SkyHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/463>
 - Feedback-companion route: `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775>
 - Framework-led route: let `Oathvein UI` carry most of the HUD styling identity, with `Norden UI` as the lighter alternative.
+- Stats-overlay route: `Stats Tracker Menu - STM` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/180653>
 
 ### Recommendation
 
 - Start with `SkyHUD` as the baseline HUD layout framework. It handles widget positioning, visibility control, and style consistency across screen sizes.
 - Add `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> as the dedicated combat-feedback companion. `TrueHUD` is by the same author as `True Directional Movement` (already in `modlist-04.md`), has `58,848` endorsements and over `2 million` unique downloads, and provides actor info bars, boss bars, player widgets, and recent-loot logging. It was last updated `December 2023` (feature-complete). Keep `TrueHUD` scoped to combat-feedback additions only, not as a competing HUD framework.
+- Keep `Stats Tracker Menu - STM` as a documented stats-overlay companion rather than a baseline. It is brand new (v1.0.1, May 2026) with very low community signal, so lock it in only after playtesting confirms it does not fight `SkyHUD` widget positioning or `TrueHUD` combat feedback. If accepted, it lives next to those two as a third scoped addition (stats display), not a replacement for either.
 - Let the final visual tone come primarily from the chosen `Oathvein UI` direction.
 - Keep compass density, marker philosophy, and minimal-HUD experimentation for the later dedicated subsection.
 
@@ -57,12 +61,14 @@
 
 - Weak combat readability can tempt the section into solving everything with extra HUD noise.
 - Combat-feedback widgets can quietly take over the whole HUD philosophy if not kept scoped.
+- `Stats Tracker Menu` is brand new with no community validation; if it breaks, the player loses a non-essential overlay. Keep it scoped to stats display only and verify it does not move `SkyHUD` widgets.
 - The HUD layer can drift into later compass and marker ownership if the boundary is not kept explicit.
 
 ### Acceptance Criteria
 
 - `modlist-06.md` has `SkyHUD` as the HUD-layout baseline and `TrueHUD` as the combat-feedback companion, with clear role separation.
 - `TrueHUD` is documented as a combat-feedback layer, not the whole HUD answer.
+- `Stats Tracker Menu` (if accepted) is documented as a stats-overlay companion, not a HUD-framework replacement.
 - Compass, markers, and minimal-HUD questions remain clearly deferred.
 
 ## Inventory And Item Card Improvements
@@ -78,6 +84,7 @@
 - Information-density route: `moreHUD Inventory Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18619>
 - Clean-card route: `SkyUI Item Card Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29116>
 - Sorting-and-icon route: `Aura's Inventory Tweaks (More SkyUI Icons Sorting Options and More)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68557>
+- Weapon-stat overlay route: `Weapon Stat Viewer V2` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/127249>
 
 ### Recommendation
 
@@ -85,6 +92,7 @@
 - Keep `moreHUD SE` as the adjacent broader companion if the project wants that same readability philosophy outside inventory lists too.
 - Keep `SkyUI Item Card Fixes` as the cleaner, narrower comparison if the main pain point is item-card presentation discipline rather than more information.
 - Keep `Aura's Inventory Tweaks` as the more organizational comparison if the final UI direction proves to need stronger sorting and icon structure rather than just clearer cards and details.
+- Keep `Weapon Stat Viewer V2` as a documented weapon-stat overlay companion rather than a baseline. It surfaces weapon damage numbers in real time (so the player can compare weapons without opening menus), and it is more useful than the other options here for the combat-experience pillar. Lock it in only if the chosen UI framework (`SkyUI` + `Oathvein UI`) renders it cleanly; verify it before treating it as part of the locked inventory stack.
 - Keep map, journal, magic-menu, crafting-menu, and dialogue decisions out of this subsection so inventory ownership stays clear.
 
 ### Risks & Compatibility
@@ -92,6 +100,7 @@
 - Inventory readability can be over-solved by stacking too many overlapping micro-fixes.
 - A more information-heavy route can slow scanning instead of speeding it up.
 - Icon and sorting customization can become a substitute for clear baseline menu readability.
+- `Weapon Stat Viewer V2` is a relatively new mod with low endorsement count (432). Verify it does not conflict with the chosen UI framework, and treat it as opt-in until the project has tested it.
 
 ### Acceptance Criteria
 

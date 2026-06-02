@@ -62,7 +62,38 @@
 - `CBPC` and the chosen `CBBE 3BA (3BBB)` setup coexist cleanly on the active Steam `1.6.1170` profile.
 - `Pandora` still generates behaviors cleanly after the skeleton and baseline body-physics layer are in place.
 
-## Third-Person Locomotion Animation Sets
+## Parkour, Climbing, And Free-Form Movement
+
+### Core Idea
+
+- This subsection owns whether `Elder Wilds` adds a true parkour and climbing layer on top of vanilla movement, or stays with the locked vanilla / `True Directional Movement` / sprint-and-jump stack.
+- The goal is to expand how the player traverses the world vertically and laterally without breaking the third-person camera work in `modlist-04.md`, the animation ownership in this section, or the survival pacing from `modlist-05.md`.
+- Parkour is a major movement-framework decision, so it stays in its own subsection rather than being absorbed by the dodge or sprint layers.
+
+### Options
+
+- Procedural parkour and climbing baseline: `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
+- Discipline-first route: rely on vanilla climbing, `True Directional Movement`, sprint, and jump from this section and `modlist-04.md` only, with no dedicated parkour framework.
+- Deferred high-commitment branch: do not adopt a full parkour framework until later movement and animation work is stable, because the parkour ecosystem has many overlapping derivatives and lock-in decisions are hard to reverse.
+
+### Recommendation
+
+- Use `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` as the procedural parkour and climbing baseline. It adds a procedural climbing and parkour system that lets the player vault, climb, and traverse environmental geometry (10,112 endorsements, 432K unique downloads, v3.5.4). It is the most-endorsed parkour framework on Nexus and has a meaningful community track record.
+- Keep the discipline-first route alive only if the rest of the movement and animation stack is still being settled, because parkour is a major ownership decision that affects jump height, animation behavior, and camera expectations.
+- Keep the deferred high-commitment branch alive if the project wants to see the full movement and animation stack working before adding parkour on top, since parkour layers often need to be tuned in light of the chosen animation and camera baselines.
+- Keep this subsection separate from `modlist-04.md` dodge, sprint, and movement-responsiveness ownership, and from the third-person camera subsection. Parkour is a vertical-and-lateral movement system, not a combat responsiveness or camera framework.
+
+### Risks & Compatibility
+
+- A parkour framework can change jump height, ledge detection, and climb animation, which can interact with `XPMSSE` and `True Directional Movement`. Verify the parkour framework plays nicely with the chosen skeleton and movement baselines.
+- Procedural parkour can expose navmesh gaps in older worldspace content mods. Test on the locked `modlist-08.md` worldspace picks before treating parkour as a stable part of the baseline.
+- Parkour is fun but can trivialize early-game exploration if the player is too mobile too soon. Tune the framework's MCM to match the survival and travel pacing in `modlist-05.md` and `modlist-07.md`.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear parkour framework baseline or a deliberate discipline-first decision.
+- Parkour movement feels like a natural extension of vanilla traversal rather than a separate game mode.
+- The chosen framework does not fight the locked `XPMSSE`, `True Directional Movement`, or third-person camera baselines.
 
 ### Core Idea
 

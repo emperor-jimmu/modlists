@@ -16,11 +16,5 @@
 14. Patching technique and strategy
 15. Specific patching strategy with Northern Roads, etc.
 16. Skyrim seasons?
-17. Weapon Stat Viewer V2 - <https://www.nexusmods.com/skyrimspecialedition/mods/127249>
-18. SkyParkour v3 - Procedural Parkour and Climbing Framework - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
-19. Skeleton Replacer HD
-20. Mandragorasprouts
-21. Mihail's Giant mod
-22. Prisma UI , <https://www.nexusmods.com/skyrimspecialedition/mods/148718?tab=description>
-23. Stats Tracker Menu - STM - <https://www.nexusmods.com/skyrimspecialedition/mods/180653>
-24. Dodge for all - <https://www.nexusmods.com/skyrimspecialedition/mods/174544?tab=description>
+17. Mandragorasprouts
+18. Mihail's Giant mod

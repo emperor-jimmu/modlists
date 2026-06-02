@@ -112,12 +112,14 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `KS Hairdos SSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
 - [ ] `Eyes Nouveaux` - <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
 - [ ] `AURORA S.E.` - <https://www.nexusmods.com/skyrimspecialedition/mods/6021>
+- [ ] `Skeleton Replacer HD - SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/52845>
 
 ## Animations and Movement
 
 - [ ] `Pandora Behaviour Engine Plus` - <https://www.nexusmods.com/skyrimspecialedition/mods/133232>
 - [ ] `XP32 Maximum Skeleton Special Extended - XPMSSE` - <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
 - [ ] `Open Animation Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/92109>
+- [ ] `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
 - [ ] `Comprehensive First Person Animation Overhaul - CFPAO` - <https://www.nexusmods.com/skyrimspecialedition/mods/87169>
 - [ ] `ConsoleUtilSSE NG` - <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
 - [ ] `Leviathan Animations II - Male Idle Walk And Run` - <https://www.nexusmods.com/skyrimspecialedition/mods/81463>
@@ -151,6 +153,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `TK Dodge SE` - <https://www.nexusmods.com/skyrimspecialedition/mods/15309>
 - [ ] `Convenient Horses` - <https://www.nexusmods.com/skyrimspecialedition/mods/9519>
 - [ ] `Immersive Horses` - <https://www.nexusmods.com/skyrimspecialedition/mods/13402>
+- [ ] `Dodge for all` - <https://www.nexusmods.com/skyrimspecialedition/mods/174544>
 
 ## Expanded Systems
 
@@ -210,6 +213,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `moreHUD Inventory Edition` - <https://www.nexusmods.com/skyrimspecialedition/mods/18619>
 - [ ] `SkyUI Item Card Fixes` - <https://www.nexusmods.com/skyrimspecialedition/mods/29116>
 - [ ] `Aura's Inventory Tweaks (More SkyUI Icons Sorting Options and More)` - <https://www.nexusmods.com/skyrimspecialedition/mods/68557>
+- [ ] `Weapon Stat Viewer V2` - <https://www.nexusmods.com/skyrimspecialedition/mods/127249>
 - [ ] `Flat World Map Framework (FWMF)` - <https://www.nexusmods.com/skyrimspecialedition/mods/29932>
 - [ ] `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` - <https://www.nexusmods.com/skyrimspecialedition/mods/53788>
 - [ ] `Immersive Paper Map (3rd Edition)` - <https://www.nexusmods.com/skyrimspecialedition/mods/54710>
@@ -224,6 +228,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - [ ] `Gamepad Plus Plus` - <https://www.nexusmods.com/skyrimspecialedition/mods/27007>
 - [ ] `Wheeler - Quick Action Wheel Of Skyrim` - <https://www.nexusmods.com/skyrimspecialedition/mods/97345>
 - [ ] `Sovngarde - Mist's Font Replacer` - <https://www.nexusmods.com/skyrimspecialedition/mods/386>
+- [ ] `Prisma UI` - <https://www.nexusmods.com/skyrimspecialedition/mods/148718>
+- [ ] `Stats Tracker Menu - STM` - <https://www.nexusmods.com/skyrimspecialedition/mods/180653>
 - [ ] `Complete Widescreen Fix for Vanilla and SkyUI` - <https://www.nexusmods.com/skyrimspecialedition/mods/1778>
 - [ ] `Compass Navigation Overhaul` - <https://www.nexusmods.com/skyrimspecialedition/mods/74484>
 - [ ] `CoMAP - Common Marker Addon Project` - <https://www.nexusmods.com/skyrimspecialedition/mods/56123>
@@ -409,4 +415,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 305
+Total unique mods listed: 311

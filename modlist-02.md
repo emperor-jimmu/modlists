@@ -822,3 +822,37 @@
 - `Elder Wilds` has one clear aurora baseline or a deliberate discipline-first decision.
 - Night skies feel atmospheric rather than flat without forcing a full sky-dome overhaul.
 - Sky work stays separated from weather and lighting decisions in load order, MCM, and visual identity.
+
+## Skeleton And Bone Replacers
+
+### Core Idea
+
+- This subsection owns visual upgrades to the in-world skeleton and bone assets: the skulls, bone piles, and skeleton models the player encounters in dungeons, nordic ruins, draugr crypts, and dragon priest rooms.
+- It is intentionally kept separate from the rigged skeleton baseline in `modlist-03.md`. `modlist-03.md` decides which skeleton file the game uses for animation rigging; this subsection decides how the in-world bones and skulls look once the player is looking at them.
+- A high-quality skeleton replacer pays off in dungeon-dense playthroughs because the player is constantly looking at bones, piles, and skulls.
+
+### Options
+
+- High-quality skeleton and bone baseline: `Skeleton Replacer HD - SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52845>
+- Discipline-first route: rely on the vanilla skeleton assets and skip the dedicated replacer mod, since the rigged skeleton baseline from `modlist-03.md` already replaces what the player sees most often.
+- Patch-layer companion: `Skeleton Replacer HD - Mesh Patches for Various Mods` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177253> (only if the base mod is installed and the modlist includes a creature or content mod that needs a mesh patch for compatibility).
+
+### Recommendation
+
+- Use `Skeleton Replacer HD - SE` as the visual skeleton and bone baseline. It replaces all the skeleton and human-bone models and textures in the game (including beast skeletons, dragon priest remains, and bone piles) with high-resolution versions (9,894 endorsements, 808K unique downloads, by PraedythXVI). It is the community-canonical skeleton replacer for the SE era and works under the PBR and lighting stack from the rest of this section.
+- Keep the discipline-first route alive if the project decides the visual improvement is not worth the added mod count, since most skeleton models are seen only briefly during dungeon traversal.
+- Keep the patch-layer companion conditional. It only matters if the modlist includes a creature or worldspace mod that explicitly needs a mesh patch for compatibility with the base replacer.
+- Keep this subsection separate from the rigged skeleton ownership in `modlist-03.md`. Replacer does not equal rigged skeleton.
+
+### Risks & Compatibility
+
+- `Skeleton Replacer HD` can conflict with creature mods that ship their own skeleton and bone assets. Check the patch companion only if real conflicts appear.
+- Some vanilla draugr and dragon priest models have unique skull or bone assets that the mod can override; verify unique visual elements are preserved.
+- High-resolution bones can look out of place in a dungeon that has not received matching texture work. The mod is generally compatible with the locked PBR and texture stack, but verify on first dungeon encounter.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear visual skeleton and bone baseline or a deliberate discipline-first decision.
+- Skulls, bone piles, and skeleton assets in dungeons look intentionally designed rather than vanilla.
+- The visual replacer does not affect the rigged skeleton decisions in `modlist-03.md`.
+- Any required mesh patch companion is documented and installed only if the modlist actually needs it.

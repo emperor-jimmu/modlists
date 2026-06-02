@@ -137,24 +137,28 @@
 - Restrained modern dodge route: `TK Dodge RE - Script Free` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56956>
 - Legacy fallback route: `TK Dodge SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/15309>
 - No-baseline-dodge route: rely on movement, camera, animation, and later combat-rule layers unless testing proves a dedicated dodge is necessary.
+- Newer multi-author branch: `Dodge for all` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174544>
 
 ### Recommendation
 
 - Use `TK Dodge RE - Script Free` as the first serious dodge candidate.
 - Treat dodge as a tactical repositioning tool, not the constant center of combat pacing.
 - Keep `TK Dodge SE` only as a fallback reference point, not the preferred baseline direction.
+- Keep `Dodge for all` as a documented newer multi-author comparison rather than a baseline. It is brand new (v1.1.2, May 2026) with very low community signal, so it cannot be locked in as the main baseline yet. Watch for endorsement growth and bug reports; revisit this subsection once the mod has a real community track record.
 
 ### Risks & Compatibility
 
 - A dodge system can make combat feel twitchier and less grounded than the rest of the list intends.
 - If dodge is too strong or too convenient, it can trivialize spacing and undermine other readability goals.
 - The dodge ecosystem has several overlapping variants and derivatives, so ownership gets messy quickly if multiple paths stay alive too long.
+- `Dodge for all` is brand new with no community validation. Locking it in early risks a mod that breaks under updates or a behavior profile that does not match the rest of the combat stack.
 
 ### Acceptance Criteria
 
 - Repositioning feels more responsive and usable than vanilla without forcing a roll-centric combat identity.
 - Dodge, sprint, and movement transitions stay readable with the existing camera, movement baseline, and animation choices.
 - The chosen dodge layer remains understandable as one tool in the combat stack rather than the answer to every responsiveness problem.
+- If `Dodge for all` is added later, it replaces `TK Dodge RE` cleanly rather than being stacked on top.
 
 ## Hit Reactions, Stagger, And Impact Feedback
 
