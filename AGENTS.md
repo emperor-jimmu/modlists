@@ -13,6 +13,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 ## What This Repo Is
 
 - This repo is a markdown planning workspace, not an application codebase. The source of truth is the `modlist*.md` files plus `mods-checklist.md`.
+- The end deliverable of this planning workspace is `guide.md` — the practical, step-by-step installation guide for the Elder Wilds modlist. Every planning file, mod pick, and decision flows toward making `guide.md` an actionable document that a user can follow in Mod Organizer 2.
 - There is no build, test, lint, CI, or package-manager workflow to run here.
 
 ## File Roles
