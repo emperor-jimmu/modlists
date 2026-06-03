@@ -79,6 +79,7 @@ Use the subsection names from `separators.md` as visual sub-blocks inside these 
 Create these empty mods in MO2 before registering tools:
 
 - `xEdit Output`
+- `SKSE Scripts`
 - `SKSE Output`
 - `BodySlide Output`
 - `Pandora Output`
@@ -212,11 +213,44 @@ For each file:
 
 Create or use separator `01 Foundations and Compatibility`.
 
+### Install SKSE64 First
+
+Before the rest of the foundation stack, install `SKSE64` the modern MO2 way.
+
+1. Download the current `SKSE64` archive for Steam AE runtime `1.6.1170` from <https://www.nexusmods.com/skyrimspecialedition/mods/30379>.
+2. Open the archive and copy these two files into the Skyrim root folder next to `SkyrimSE.exe`:
+   - `skse64_loader.exe`
+   - `skse64_1_6_1170.dll`
+3. In MO2, create an empty mod named `SKSE Scripts` if you did not already create it in Step 4.
+4. Open that mod's folder in Explorer.
+5. Copy the archive's `Data\Scripts` folder into the `SKSE Scripts` mod so the final structure is `SKSE Scripts\Scripts\...`.
+6. Enable `SKSE Scripts` in MO2.
+7. In MO2's executable editor, add `skse64_loader.exe` as `SKSE Skyrim Launcher` if MO2 did not detect it automatically.
+8. Keep all future `SKSE` configuration files inside the MO2-managed mod, for example `SKSE Scripts\SKSE\skse.ini`.
+9. Create `SKSE Scripts\SKSE\skse.ini` with this minimal baseline:
+
+```ini
+[General]
+ClearInvalidRegistrations=1
+
+[Display]
+iTintTextureResolution=2048
+```
+
+Notes:
+
+- Do not install the `Data` portion of `SKSE64` directly into the game folder when you are using MO2.
+- Do not use an older tutorial's file names or version numbers; the AE `1.6.1170` runtime needs the matching current AE build.
+- In a modern setup, keep `skse.ini` minimal. `ClearInvalidRegistrations=1` is still a standard hygiene setting, and `iTintTextureResolution=2048` is the safe modern facegen/overlay baseline used by current guides. Do not cargo-cult older forum lists of extra `SKSE` memory or threading tweaks.
+- Recent `r/skyrimmods` troubleshooting threads still mostly boil down to four mistakes: wrong SKSE version, root files placed in the wrong directory, missing `Scripts`, or launching outside MO2.
+
 Install these baseline mods first:
 
 - `SKSE64` (<https://www.nexusmods.com/skyrimspecialedition/mods/30379>)
 - `Address Library for SKSE Plugins` (<https://www.nexusmods.com/skyrimspecialedition/mods/32444>)
+- `Unofficial Skyrim Special Edition Patch - USSEP` (<https://www.nexusmods.com/skyrimspecialedition/mods/266>)
 - `SSE Engine Fixes` (<https://www.nexusmods.com/skyrimspecialedition/mods/17230>)
+- `SSE Display Tweaks` (<https://www.nexusmods.com/skyrimspecialedition/mods/34705>)
 - `Scrambled Bugs` (<https://www.nexusmods.com/skyrimspecialedition/mods/43532>)
 - `powerofthree's Tweaks` (<https://www.nexusmods.com/skyrimspecialedition/mods/51073>)
 - `powerofthree's Papyrus Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/22854>)
@@ -236,19 +270,6 @@ Install these baseline mods first:
 - `Assorted Mesh Fixes` (<https://www.nexusmods.com/skyrimspecialedition/mods/32117>)
 - `Unofficial Material Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/21027>)
 - `Flickering Meshes Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/53957>)
-
-### Choice Required
-
-- `Unofficial Skyrim Special Edition Patch - USSEP` (<https://www.nexusmods.com/skyrimspecialedition/mods/266>)
-    - Ownership is still unresolved between section `01` and section `12`.
-    - If you want the traditional modern baseline, install it here and treat it as part of the foundation.
-    - If you do not want it, commit to a non-USSEP build now and expect more manual patching later.
-- `Backported Extended ESL Support` (<https://www.nexusmods.com/skyrimspecialedition/mods/106441>)
-    - Research exists, but it is not a locked baseline pick yet.
-    - Install only if a later chosen mod explicitly needs it.
-- `SSE Display Tweaks` (<https://www.nexusmods.com/skyrimspecialedition/mods/34705>)
-    - Mentioned in planning, but not yet locked in the checklist.
-    - Treat it as optional unless the display stack later clearly wants it.
 
 ### Smoke Test — Foundation Layer
 

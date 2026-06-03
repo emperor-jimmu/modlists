@@ -42,9 +42,27 @@ Scope notes:
 
 ### Output Mods To Create In MO2
 
-- Create empty mods named `xEdit Output`, `SKSE Output`, `TexGen Output`, `DynDOLOD Output`, and `Terrain LOD Output` before tool registration.
+- Create empty mods named `xEdit Output`, `SKSE Scripts`, `SKSE Output`, `TexGen Output`, `DynDOLOD Output`, and `Terrain LOD Output` before tool registration.
 - Keep these output mods near the top or in a dedicated generated-output block so rebuild products are easy to replace and audit.
 - Add more dedicated output mods only when a tool truly generates persistent files that should not land in `Overwrite`.
+
+### SKSE64 Installation
+
+- Follow STEP's split install pattern for `SKSE64` on Steam runtime `1.6.1170`: install the two root files into the Skyrim game folder, but manage the `Data` portion through MO2 as its own mod.
+- Use the current AE `1.6.1170` build of `SKSE64`, not an older AE build and not a GOG/VR variant.
+- Copy `skse64_loader.exe` and the matching `skse64_1_6_1170.dll` from the archive into the Skyrim root folder next to `SkyrimSE.exe`.
+- In MO2, create an empty mod named `SKSE Scripts`, then copy the archive's `Data\Scripts` folder into that mod so the script portion stays visible and manageable in the left pane.
+- If an `SKSE\skse.ini` is needed later, place it inside the `SKSE Scripts` mod rather than writing directly into the game folder. Minimal modern baseline:
+
+```ini
+[General]
+ClearInvalidRegistrations=1
+
+[Display]
+iTintTextureResolution=2048
+```
+- Register `skse64_loader.exe` in MO2 as the `SKSE Skyrim Launcher` executable and launch the game through that entry after the vanilla initialization step.
+- Community troubleshooting on `r/skyrimmods` still clusters around the same mistakes: wrong runtime build, root files copied into the wrong folder, scripts not installed as a mod, or launching outside MO2. The guide should guard against those explicitly.
 
 ### Register Tools In MO2
 
@@ -59,7 +77,7 @@ Scope notes:
 | --- | --- | --- | --- | --- |
 | `BethINI Pie` | `Bethini.exe` | none | none | Run through MO2 so it edits the active profile INIs instead of global game INIs. |
 | `LOOT` | `LOOT.exe` | `--game="Skyrim Special Edition"` | none | If LOOT fails through MO2, use `--single-process --game="Skyrim Special Edition"`. |
-| `SKSE Skyrim Launcher` | `skse64_loader.exe` | none | `SKSE Output` | Use this to launch the game after vanilla initialization is complete. |
+| `SKSE Skyrim Launcher` | `skse64_loader.exe` | none | `SKSE Output` | Use this to launch the game after the root files are in the game folder and the `SKSE Scripts` mod is enabled. |
 | `xEdit` | `xEdit.exe` | `-SSE -IKnowWhatImDoing -AllowMasterFilesEdit` | `xEdit Output` | Main conflict review and manual patching entry. |
 | `xEditQuickAutoClean` | `xEditQuickAutoClean.exe` | `-SSE` | `xEdit Output` | Only use for plugins LOOT explicitly flags for cleaning. |
 | `xLODGen` | `xLODGenx64.exe` | `-lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"` | `Terrain LOD Output` | Replace `DriveLetter` with the actual drive letter used for the modding folder. |

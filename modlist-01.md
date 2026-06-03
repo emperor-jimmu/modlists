@@ -16,14 +16,14 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - Confirm exact runtime support for every core dependency on Steam `1.6.1170`
 - Choose the mod manager standard and profile layout (current lean: `Mod Organizer 2`)
 - Define ESL and plugin-count rules: keep the hard plugin count visible from day one, prefer ESL-flagged or light plugins where safe, and avoid stacking multiple mods that solve the same low-level problem
-- Decide which bug-fix plugins are mandatory baseline vs optional, and confirm where `Unofficial Skyrim Special Edition Patch - USSEP` ownership lives relative to `modlist-12.md`
+- Decide which bug-fix plugins are mandatory baseline vs optional, with `Unofficial Skyrim Special Edition Patch - USSEP` owned here in section `01` as part of the foundational record-fix layer
 - Define the patching toolchain and conflict-resolution workflow: xEdit review after each major category is added, generated outputs kept separate from source mods, and a dedicated patch section for hand-made compatibility patches (tools: xEdit, Pandora, DynDOLOD, Synthesis, BodySlide, plus any LOD or grass generators adopted)
 - Follow the MO2 separator layout maintained in `separators.md` rather than redefining it here
 
 ## Research Tasks
 
 - Verify the correct `SKSE64` build for Steam runtime `1.6.1170`
-- Verify `Address Library for SKSE Plugins` and `Backported Extended ESL Support` support for `1.6.1170`
+- Verify `Address Library for SKSE Plugins` support for `1.6.1170`
 - Build a shortlist of engine and bug-fix essentials compatible with this runtime
 - Identify required shared frameworks likely needed later by UI, animation, and gameplay mods
 - Select the animation-related engine fixes the final stack needs, coordinated with `modlist-03.md`
@@ -32,10 +32,9 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 
 - `SKSE64` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/30379>
 - `Address Library for SKSE Plugins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32444>
-- `Backported Extended ESL Support` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106441>
-- `Unofficial Skyrim Special Edition Patch - USSEP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/266> (foundational record patch; confirm ownership boundary with `modlist-12.md`)
+- `Unofficial Skyrim Special Edition Patch - USSEP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/266> (foundational record patch owned by section `01`)
 - `SSE Engine Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17230>
-- `SSE Display Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34705>
+- `SSE Display Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34705> (mandatory baseline for display behavior, frame pacing, and frame-cap control)
 - `Scrambled Bugs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43532>
 - `powerofthree's Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51073>
 - `powerofthree's Papyrus Extender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22854>
@@ -76,3 +75,4 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 ## Working Notes
 
 - Treat this section as the non-negotiable base layer for the rest of the list
+- `SSE Display Tweaks` is part of that mandatory base layer, not an optional later tuning mod
