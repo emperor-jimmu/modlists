@@ -207,6 +207,69 @@
 - The chosen baseline complements the current progression stack instead of forcing the whole systems layer into hardcore survival.
 - Later religion, economy, follower, and roleplay decisions still have visible room to matter.
 
+## Roleplay Upkeep And Hygiene
+
+### Core Idea
+
+- This subsection owns the lighter day-to-day body-maintenance layer that sits between full survival needs and pure visual flavor.
+- The goal is to add believable downtime rituals and world-living texture without turning hygiene into a second dominant survival framework.
+
+### Options
+
+- Modern hygiene route: `Bathing in Skyrim - Renewed` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135288>
+- Minimalist route: leave hygiene implied through inns, rivers, and roleplay without a dedicated system.
+
+### Recommendation
+
+- Add `Bathing in Skyrim - Renewed` as the leading hygiene-and-downtime route.
+- It fits the list's living-the-world pillar better than older bathing mods because it is actively maintained, heavily customizable, and technically modernized around SKSE plus Papyrus-extender dependencies instead of feeling like a brittle relic from an older scripting era.
+- Treat it as a roleplay-support system, not as the main survival baseline. The point is to make inns, camp stops, rivers, and home downtime feel more embodied, not to bury the list under another mandatory needs meter.
+- Keep the optional basin, description, and merchant integrations secondary; the baseline value is the bathing loop itself.
+
+### Risks & Compatibility
+
+- Hygiene can become fussy busywork if the mod is configured too aggressively.
+- `Bathing in Skyrim - Renewed` touches equipment handling, overlays, follower participation, and optional integrations, so it needs stricter discipline than a simple immersion add-on.
+- The mod page lists several addon dependencies and integrations, but only the hard runtime requirements should be treated as mandatory for the baseline install.
+- For the target Steam runtime `1.6.1170`, its listed `Backported Extended ESL Support` requirement does not apply and should not be installed.
+
+### Acceptance Criteria
+
+- The modlist has one explicit answer for hygiene and downtime instead of leaving the living-the-world pillar vague.
+- The chosen hygiene layer supports inns, rivers, camp routines, and follower travel texture without becoming a second full survival overhaul.
+- Hard dependencies are recorded clearly and optional addon integrations stay optional.
+
+## Character Traits And Identity Hooks
+
+### Core Idea
+
+- This subsection owns opt-in character-defining quirks that shape a run from the start without replacing the broader race, perk, and standing-stone progression stack.
+- The goal is stronger roleplay identity and replayability, not a giant second character-build framework.
+
+### Options
+
+- Trait-package route: `Biggie Traits` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/136384>
+- Minimalist route: leave identity mostly to race, standing stones, perks, and self-imposed roleplay.
+
+### Recommendation
+
+- Add `Biggie Traits` as the main traits-layer comparison for this section.
+- It is a cleaner fit for `Elder Wilds` than heavier custom-class frameworks because it adds immediate run-defining tradeoffs in a compact form, closer to Fallout-style traits than to a total rules rewrite.
+- Keep it clearly subordinate to the main progression baseline. Traits should sharpen character identity and replayability, not replace the race-and-perk decisions already owned above.
+- Judge it on whether the picked traits create distinct runs and memorable constraints without forcing gimmick play.
+
+### Risks & Compatibility
+
+- Trait systems can quietly duplicate what race, perk, religion, or survival choices are already trying to do.
+- If the best traits are too obviously optimal, the whole idea collapses into routine min-maxing instead of character identity.
+- `Biggie Traits` has no listed hard dependencies, so its value has to come entirely from design fit and clean behavior, not from framework complexity.
+
+### Acceptance Criteria
+
+- The modlist has one explicit traits-layer option for stronger character identity.
+- Traits add meaningful replayability and roleplay hooks without crowding out the main progression stack.
+- The section keeps a clear boundary between traits, race identity, perk design, and survival pressure.
+
 ## Cooking Systems
 
 ### Core Idea

@@ -128,6 +128,38 @@
 - Inns, meals, sleep, and breaks matter more after hard encounters than they do in vanilla.
 - The chosen attrition layer adds tension and rhythm rather than constant annoyance.
 
+## Enemy Resistances And Knowledge Checks
+
+### Core Idea
+
+- This subsection owns whether enemies should ask the player to identify weaknesses and vary damage types, rather than only hitting harder or soaking more damage.
+- The goal is more tactical combat texture and creature differentiation without accidentally committing the whole list to a giant enemy-overhaul stack.
+
+### Options
+
+- Knowledge-and-resistance route: `Know Your Enemy 2` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93258>
+- Minimalist route: leave resistances close to vanilla and get encounter variety from roster changes, pacing, and player-side restraint.
+
+### Recommendation
+
+- Add `Know Your Enemy 2` as the leading resistance-and-knowledge route for this section.
+- It is a better fit than a generic enemy-stat inflation layer because it changes how the player reads enemies: different creatures call for different tools, and the inspect system makes that knowledge legible instead of purely hidden trivia.
+- Keep it scoped to tactical differentiation, not to full enemy-ecosystem ownership. `modlist-09.md` still owns creature rosters and faction variety; this subsection is about how fights are solved once those enemies exist.
+- If adopted, judge it on whether it rewards preparation and damage-type diversity without turning ordinary combat into checklist homework.
+
+### Risks & Compatibility
+
+- Resistance systems can feel punishing if the player does not have enough practical ways to adapt mid-run.
+- `Know Your Enemy 2` overlaps with large alchemy, poison, and combat-balance overhauls more than a casual install suggests; patch expectations must stay visible.
+- The mod page still mentions `Backported Extended ESL Support` for older runtimes, but for the target Steam runtime `1.6.1170` it should not be installed.
+- If the inspect flow, MCM tuning, or resistance spread feels too noisy in ordinary play, the concept may be better than the lived experience.
+
+### Acceptance Criteria
+
+- Enemy differentiation comes from readable strengths and weaknesses, not just broader stat pressure.
+- The player can learn or inspect enemy traits without needing outside notes.
+- The system adds tactical variety while remaining compatible with the rest of the chosen combat and progression stack.
+
 ## Survival Systems Compatibility
 
 ### Core Idea

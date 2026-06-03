@@ -19,7 +19,7 @@
 
 - Start with `SkyUI` as the non-negotiable baseline.
 - Treat `UIExtensions` as support infrastructure where later chosen mods need it rather than as a competing UI identity.
-- Set `Oathvein UI` as the preferred visual direction. Both `Oathvein UI` and `Norden UI` are by the same author (`Nithog`) and both are actively maintained — `Oathvein` last updated `20 May 2026`, `Norden` last updated `16 May 2026`. `Oathvein`'s description ("sleek, grim-dark interface overhaul") directly matches `Elder Wilds` tone, while `Norden` ("modern design with the rustic feel of the Nords") is the lighter comparison. `Norden` also requires `Extended UI` as a dependency, which has no official SE port and generates community friction; `Oathvein` has a more self-contained dependency chain.
+- Set `Oathvein UI` as the locked visual direction. Both `Oathvein UI` and `Norden UI` are by the same author (`Nithog`) and both are actively maintained, but `Oathvein` is the chosen path for `Elder Wilds`: its grim-dark presentation matches the project tone better, and its dependency chain is cleaner than `Norden UI`'s `Extended UI` requirement.
 - Keep `Prisma UI` as a documented next-gen framework comparison rather than the default choice. It is a web-UI framework that replaces `SkyUI` rather than extending it, which makes it incompatible with the `Oathvein UI` visual direction and with most UIExtensions-based mods from later subsections. Locked baseline stays `SkyUI` + `Oathvein UI`; `Prisma UI` is documented for projects that want to pursue the framework-replacement path instead of the visual-overhaul path.
 - Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision.
 
@@ -31,7 +31,7 @@
 
 ### Acceptance Criteria
 
-- `modlist-06.md` has one clear UI framework baseline (`Oathvein UI` preferred, `Norden UI` as documented lighter comparison).
+- `modlist-06.md` has one clear UI framework baseline: `SkyUI` + `Oathvein UI`.
 - The role of `UIExtensions` is explicit as support infrastructure rather than a competing full UI direction.
 - The visual baseline is narrowed to `Oathvein UI` with a clear rationale for why it fits `Elder Wilds` over `Norden UI`.
 
@@ -46,13 +46,14 @@
 
 - Layout-control route: `SkyHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/463>
 - Feedback-companion route: `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775>
-- Framework-led route: let `Oathvein UI` carry most of the HUD styling identity, with `Norden UI` as the lighter alternative.
+- Framework-led route: let `Oathvein UI` carry most of the HUD styling identity.
 - Stats-overlay route: `Stats Tracker Menu - STM` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/180653>
 
 ### Recommendation
 
 - Start with `SkyHUD` as the baseline HUD layout framework. It handles widget positioning, visibility control, and style consistency across screen sizes.
 - Add `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> as the dedicated combat-feedback companion. `TrueHUD` is by the same author as `True Directional Movement` (already in `modlist-04.md`), has `58,848` endorsements and over `2 million` unique downloads, and provides actor info bars, boss bars, player widgets, and recent-loot logging. It was last updated `December 2023` (feature-complete). Keep `TrueHUD` scoped to combat-feedback additions only, not as a competing HUD framework.
+- Add `Casting Bar` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80455> as a small, focused cast-and-draw timing companion. It solves a real readability gap for spells, shouts, and bow draw without trying to become another full HUD framework, so it fits naturally next to `SkyHUD` and `TrueHUD` rather than competing with them.
 - Keep `Stats Tracker Menu - STM` as a documented stats-overlay companion rather than a baseline. It is brand new (v1.0.1, May 2026) with very low community signal, so lock it in only after playtesting confirms it does not fight `SkyHUD` widget positioning or `TrueHUD` combat feedback. If accepted, it lives next to those two as a third scoped addition (stats display), not a replacement for either.
 - Let the final visual tone come primarily from the chosen `Oathvein UI` direction.
 - Keep compass density, marker philosophy, and minimal-HUD experimentation for the later dedicated subsection.
@@ -61,12 +62,14 @@
 
 - Weak combat readability can tempt the section into solving everything with extra HUD noise.
 - Combat-feedback widgets can quietly take over the whole HUD philosophy if not kept scoped.
+- Smaller feedback widgets like `Casting Bar` are useful precisely because they are narrow; avoid stacking too many narrow overlays until the screen starts feeling busier instead of clearer.
 - `Stats Tracker Menu` is brand new with no community validation; if it breaks, the player loses a non-essential overlay. Keep it scoped to stats display only and verify it does not move `SkyHUD` widgets.
 - The HUD layer can drift into later compass and marker ownership if the boundary is not kept explicit.
 
 ### Acceptance Criteria
 
 - `modlist-06.md` has `SkyHUD` as the HUD-layout baseline and `TrueHUD` as the combat-feedback companion, with clear role separation.
+- `Casting Bar` is documented as a narrow casting-and-draw readability companion, not as a second HUD framework.
 - `TrueHUD` is documented as a combat-feedback layer, not the whole HUD answer.
 - `Stats Tracker Menu` (if accepted) is documented as a stats-overlay companion, not a HUD-framework replacement.
 - Compass, markers, and minimal-HUD questions remain clearly deferred.
@@ -248,7 +251,7 @@
 
 - High-resolution readability route: `Sovngarde - Mist's Font Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/386>
 - Ultrawide compatibility route: `Complete Widescreen Fix for Vanilla and SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1778>
-- Discipline-first route: keep the chosen `Oathvein UI` direction (or `Norden UI` if testing prefers it), `SkyHUD`, inventory improvements, and dialogue/map changes restrained enough that the UI remains readable at `4K` without immediately stacking scaling fixes.
+- Discipline-first route: keep the chosen `Oathvein UI` direction, `SkyHUD`, inventory improvements, and dialogue/map changes restrained enough that the UI remains readable at `4K` without immediately stacking scaling fixes.
 
 ### Recommendation
 
@@ -345,7 +348,7 @@
 
 - High-resolution text route: `Sovngarde - Mist's Font Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/386>. Recommended file: `Sovngarde - Mist's Font Replacer Bold V8.9`.
 - Configuration-readability route: `Wider MCM Menu for SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22825>
-- Discipline-first route: keep the current `SkyUI` plus `Oathvein UI` stack (with `Norden UI` as the available lighter alternative) with the already-chosen inventory, dialogue, map, and crafting improvements if real playtesting shows the UI is already readable enough.
+- Discipline-first route: keep the current `SkyUI` plus `Oathvein UI` stack with the already-chosen inventory, dialogue, map, and crafting improvements if real playtesting shows the UI is already readable enough.
 
 ### Recommendation
 

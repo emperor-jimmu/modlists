@@ -265,6 +265,7 @@ Install these baseline mods first:
 - `Dual Casting Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/92454>)
 - `Andrealphus' Papyrus Functions` (<https://www.nexusmods.com/skyrimspecialedition/mods/85252>)
 - `ConsoleUtilSSE NG` (<https://www.nexusmods.com/skyrimspecialedition/mods/76649>)
+- `Kris's Papyrus Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/115164>)
 - `SkyPatcher` (<https://www.nexusmods.com/skyrimspecialedition/mods/106659>)
 - `Particle Patch` (<https://www.nexusmods.com/skyrimspecialedition/mods/65720>)
 - `Assorted Mesh Fixes` (<https://www.nexusmods.com/skyrimspecialedition/mods/32117>)
@@ -291,6 +292,7 @@ Install these locked or strongly preferred baseline picks early because later sy
 - `Oathvein UI` (<https://www.nexusmods.com/skyrimspecialedition/mods/160916>)
 - `SkyHUD` (<https://www.nexusmods.com/skyrimspecialedition/mods/463>)
 - `TrueHUD` (<https://www.nexusmods.com/skyrimspecialedition/mods/62775>)
+- `Casting Bar` (<https://www.nexusmods.com/skyrimspecialedition/mods/80455>)
 - `Flat World Map Framework (FWMF)` (<https://www.nexusmods.com/skyrimspecialedition/mods/29932>)
 - `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` (<https://www.nexusmods.com/skyrimspecialedition/mods/53788>)
 - `Compass Navigation Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/74484>)
@@ -308,10 +310,6 @@ Install these locked or strongly preferred baseline picks early because later sy
 
 ### Choice Required
 
-- UI visual branch:
-    - Locked preference: `Oathvein UI`
-    - Alternative: `Norden UI` (<https://www.nexusmods.com/skyrimspecialedition/mods/166086>)
-    - Do not install both.
 - Inventory helper path:
     - locked baseline: `moreHUD SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/12688>) and `moreHUD Inventory Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/18619>)
     - organizational alternative: `Aura's Inventory Tweaks` (<https://www.nexusmods.com/skyrimspecialedition/mods/68557>)
@@ -331,7 +329,7 @@ Install `UIExtensions` now even if it feels auxiliary, because later follower an
 
 1. Launch via `SKSE` and load a save or start a new game.
 2. Open the MCM and verify `SkyUI` registers all expected pages.
-3. Confirm the HUD theme (`Oathvein UI` or chosen alternative) renders correctly.
+3. Confirm the `Oathvein UI` theme renders correctly.
 4. Verify `TrueHUD`, compass (`Compass Navigation Overhaul`), and SkyHUD elements display.
 5. Exit the game.
 
@@ -528,6 +526,8 @@ Create or use separator `05 Expanded Systems`.
 - `Mysticism - A Magic Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/27839>)
 - `Apothecary - An Alchemy Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/52130>)
 - `Starfrost - A Survival Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/97536>)
+- `Biggie Traits` (<https://www.nexusmods.com/skyrimspecialedition/mods/136384>)
+- `Bathing in Skyrim - Renewed` (<https://www.nexusmods.com/skyrimspecialedition/mods/135288>)
 - `Gourmet - A Cooking Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/96876>)
 - `Ars Metallica - Smithing Enhancement` (<https://www.nexusmods.com/skyrimspecialedition/mods/321>)
 - `Trade and Barter - Skyrim Special Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/23081>)
@@ -594,6 +594,7 @@ Under `11 Survival, Difficulty, and Balance`:
 - `Arena - An Encounter Zone Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/33487>)
 - `Simply Balanced` (<https://www.nexusmods.com/skyrimspecialedition/mods/15541>)
 - `Stress and Fear - A Dynamic Sanity System` (<https://www.nexusmods.com/skyrimspecialedition/mods/116522>)
+- `Know Your Enemy 2` (<https://www.nexusmods.com/skyrimspecialedition/mods/93258>)
 
 Under `12 Targeted Bugfix Mods`, install the strongest current baseline bugfixes:
 
@@ -613,6 +614,9 @@ Under `12 Targeted Bugfix Mods`, install the strongest current baseline bugfixes
 - Enemy overhaul branch:
     - current restrained default: no full enemy-overhaul lock yet
     - heavier option: `Skyrim Revamped - Complete Enemy Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/14598>)
+- Enemy resistance branch:
+    - preferred tactical route: `Know Your Enemy 2` (<https://www.nexusmods.com/skyrimspecialedition/mods/93258>)
+    - lighter route: leave enemy resistances close to vanilla and get difficulty from pacing, roster, and progression structure
 - Death / defeat branch:
     - `Shadow of Skyrim - Nemesis and Alternative Death System` (<https://www.nexusmods.com/skyrimspecialedition/mods/65136>)
     - or skip defeat mechanics for the first stable pass

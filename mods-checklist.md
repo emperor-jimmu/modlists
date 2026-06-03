@@ -24,6 +24,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Dual Casting Fix` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/92454> |
 | `Andrealphus' Papyrus Functions` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/85252> |
 | `ConsoleUtilSSE NG` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/76649> |
+| `Kris's Papyrus Extender` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/115164> |
 | `SkyPatcher` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/106659> |
 | `Particle Patch` | _None_ (supports vanilla and `Community Shaders`) | <https://www.nexusmods.com/skyrimspecialedition/mods/65720> |
 | `Assorted Mesh Fixes` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/32117> |
@@ -310,6 +311,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Amorous Adventures` (clean variant)                      | `SKSE64`, `SkyUI`                                          | <https://www.nexusmods.com/skyrimspecialedition/mods/7305>  |
 | `Marriage Mod - To Have And To Hold`                      | `SKSE64`                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/8589>  |
 | `Serana Dialogue Add-On`                                  | `SKSE64`, `Address Library for SKSE Plugins`               | <https://www.nexusmods.com/skyrimspecialedition/mods/32161> |
+| `Biggie Traits`                                           | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/136384> |
+| `Bathing in Skyrim - Renewed`                             | `Kris's Papyrus Extender`, `PapyrusUtil`, `powerofthree's Papyrus Extender`, `RaceMenu SE` | <https://www.nexusmods.com/skyrimspecialedition/mods/135288> |
 
 ### Lore-Friendly Items, Artifacts, and Wardrobe
 
@@ -339,6 +342,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - `Ordinator` is the only EnaiRim perk overhaul in the list that uses `SkyUI` for its MCM (not `MCM Helper`) - the others use `MCM Helper`.
 - `Alternate Start - Live Another Life` and `Relationship Dialogue Overhaul` have no Nexus-listed hard requirements (RDO's hard requirements are the stock DLC ESMs that come with the game).
 - `Imperious` MCM is optional per the description ("if SkyUI is installed (SkyUI not required to use Imperious)") - kept as `_None_` per the published requirements.
+- `Bathing in Skyrim - Renewed` lists `Fuz Ro D'oh`, behaviour engines (`Pandora`, `Nemesis`, or `FNIS`), `Base Object Swapper`, `Description Framework`, and `SkyPatcher` as soft, addon, or situational integrations. Only the hard dependencies from the mod page are listed in the table. For Steam runtime `1.6.1170`, its `Backported Extended ESL Support` note does not apply.
 
 ## Modernized UI
 
@@ -347,8 +351,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `SkyUI` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/12604> |
 | `UIExtensions` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/17561> |
 | `Oathvein UI` | `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/160916> |
-| `Norden UI` | `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/166086> |
 | `SkyHUD` | `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/463> |
+| `Casting Bar` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/80455> |
 | `moreHUD SE` | `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/12688> |
 | `moreHUD Inventory Edition` | `moreHUD SE`, `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/18619> |
 | `SkyUI Item Card Fixes` | `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/29116> |
@@ -383,11 +387,12 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 
 ### Notes
 
-- Per AGENTS.md, the locked baseline is `SkyUI` + `Oathvein UI` (grim-dark, preferred over `Norden UI` due to tone fit and dependency chain). Both are kept here so `Norden UI` is available as a documented alternative; verify which one is installed in MO2.
+- Per AGENTS.md and the current user decision, the locked baseline is `SkyUI` + `Oathvein UI`; `Norden UI` is not part of the active install path.
 - Three paper-map mods are listed: `FWMF` (the framework, locked), `Mirhayasu` (locked), and two non-locked extras (`Immersive Paper Map (3rd Edition)` is standalone; `FreelanceCartography` is a FWMF alternative). The Mirhayasu map is the locked pick per AGENTS.md. The other two are candidates to drop in a future pass unless intentional; flagging for review.
 - `iHUD`, `Wheeler`, `Prisma UI`, and `Stats Tracker Menu` are SKSE plugins and were given `SKSE64`. `Wheeler` and `Stats Tracker Menu` also need `SkyUI` for the MCM/faction-config integration.
+- `Casting Bar` is treated as a SKSE-based UI plugin because the mod page and tags identify it as an SKSE mod, but the public page text does not surface a longer hard-requirements list. No `SkyUI` or `Address Library` requirement was added without page evidence.
 - `UIExtensions` was already implicitly required by `EFF - Extensible Follower Framework` in section 05; placing it here as a UI utility is the more natural home and the dep is now explicit.
-- `Oathvein UI` / `Norden UI` ship SKSE plugins that hook into SkyUI's `UIExtensions` framework; both are shown as needing `SkyUI` + `SKSE64`.
+- `Oathvein UI` is the active UI-overhaul pick and is shown with `SkyUI` + `SKSE64` as its install requirements.
 - Four new interface entries (`More Informative Console`, `Quest Journal Fix for SkyUI`, `SkyUI Ghost Item Bug Fix`, `Yes Im Sure NG`) were added from the STEP 2.3 16-Interface section (verified June 2026). They are complementary QoL/fix mods that do not overlap with the existing UI picks. `More Informative Console` requires `SKSE64` (41k endorsements); the other three are SkyUI-specific UI fixes.
 
 ## Immersive Scale and World Feel
@@ -593,6 +598,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Blade and Blunt - A Combat Overhaul` | `SKSE64`, `Address Library for SKSE Plugins`, `Dual Casting Fix`, `Scrambled Bugs`, `Spell Perk Item Distributor (SPID)` | <https://www.nexusmods.com/skyrimspecialedition/mods/34549> |
 | `Skyrim Revamped - Complete Enemy Overhaul` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/14598> |
 | `Stress and Fear - A Dynamic Sanity System` | `Keyword Item Distributor (KID)`, `powerofthree's Papyrus Extender`, `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/116522> |
+| `Know Your Enemy 2` | `SKSE64`, `SkyUI`, `Spell Perk Item Distributor (SPID)`, `Keyword Item Distributor (KID)` | <https://www.nexusmods.com/skyrimspecialedition/mods/93258> |
 | `Shadow of Skyrim - Nemesis and Alternative Death System` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/65136> |
 
 ### Notes
@@ -600,6 +606,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - Added `Dual Casting Fix` (92454) to section 01 (Foundations and Compatibility) to satisfy `Blade and Blunt - A Combat Overhaul`'s hard requirement. `Dual Casting Fix` is a powerofthree SKSE plugin; same author/loader pattern as `powerofthree's Tweaks` and `powerofthree's Papyrus Extender`, and is widely recommended for modern load orders.
 - `Blade and Blunt` is part of the Simonrim family (Simon Magus + Colinswrath). Its Nexus-listed requirements are `Address Library for SKSE Plugins`, `Dual Casting Fix`, `Scrambled Bugs`, and `Spell Perk Item Distributor (SPID)` - all four are now in the modlist.
 - `Stress and Fear` is non-SKSE (Papyrus scripts + SKSE-independent KID integration). It does ship an MCM and has native SKYUI alias per the changelog (1.01), so `SkyUI` is listed as a dep; `KID` and `powerofthree's Papyrus Extender` are the actual hard Nexus requirements.
+- `Know Your Enemy 2` lists `SKSE` and `SkyUI` for the MCM and inspect spell, plus `SPID` and `KID` for resistance distribution. Its page also says `Address Library` is needed for `SPID` and `KID`, but those two dependency rows in section 01 already carry that requirement, so the checklist keeps the direct mod dependencies on the `Know Your Enemy 2` row rather than redundantly repeating transitive requirements.
 - `Arena - An Encounter Zone Overhaul` and `Skyrim Revamped - Complete Enemy Overhaul` are ESP-only zone/enemy edits; `_None_` is correct.
 - `Simply Balanced` ships an MCM via SkyUI; no `MCM Helper` requirement per its description, so `SKSE64` + `SkyUI` is the correct dep set.
 - `Shadow of Skyrim - Nemesis and Alternative Death System` is a script-driven ESP/ESL; it is not the popular "Shadow of Skyrim" worldspace overhaul (which is a different mod) - the modlist entry matches the encounter/death system variant.
