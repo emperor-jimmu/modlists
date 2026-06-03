@@ -251,6 +251,11 @@
 - Coordinate with `Faultier's PBR Skyrim` where clutter categories are better served by material-aware upgrades.
 - `SFCO` is the depth companion to `RUSTIC CLUTTER COLLECTION`: where RUSTIC retextures existing clutter meshes with higher-resolution diffuse and normal maps, SFCO adds new clutter objects (pottery, silverware, books, alchemy tools, foodstuffs, and furniture models) that fill the gaps vanilla clutter leaves in interiors and shops.
 
+#### Metal And Equipment
+
+- `Dwemer Armors and Weapons Retexture SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93088>
+- Treat it as the gear-side companion to `PBaRkarth` and `CC's HD Dwemer Automatons - Remastered`, so Dwemer ruins, machines, and wearable loot do not land in three visibly different texture languages.
+
 #### Clothing And Fabric
 
 - `RUSTIC CLOTHING - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4703>
@@ -260,6 +265,7 @@
 - A hybrid stack becomes hard to maintain if override relationships are not tracked clearly.
 - City textures that ignore the winning PBR direction can make regions feel stitched together.
 - Landscape, rock, and ruin winners can still clash once weather and lighting are finalized.
+- Dwemer gear textures need to stay visually aligned with the chosen Dwemer ruin and automaton look or the same dungeon can feel pieced together asset-by-asset.
 
 ### Acceptance Criteria
 
@@ -267,6 +273,7 @@
 - No major region looks visually stitched together from conflicting texture styles.
 - Clutter and architecture remain readable from third-person distance and still hold up close.
 - The final texture stack is understandable enough to maintain without guesswork.
+- Dwemer ruins, automatons, and vanilla Dwemer gear read as one coherent visual family.
 
 ## Mesh Improvements And Parallax Support
 

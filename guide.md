@@ -358,6 +358,7 @@ Under `02.04 Texture Overhauls By Material Type` and `02.05 Mesh Improvements An
 - `Skyland AIO` (<https://www.nexusmods.com/skyrimspecialedition/mods/34179>)
 - `RUSTIC CLUTTER COLLECTION - Special Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/5795>)
 - `RUSTIC CLOTHING - Special Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/4703>)
+- `Dwemer Armors and Weapons Retexture SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/93088>)
 - `Static Mesh Improvement Mod - SMIM` (<https://www.nexusmods.com/skyrimspecialedition/mods/659>)
 - `Enhanced Rocks and Mountains - Complex Material and PBR` (<https://www.nexusmods.com/skyrimspecialedition/mods/121336>)
 - `Enhanced Rocks and Mountains - Fix and Addon` (<https://www.nexusmods.com/skyrimspecialedition/mods/142493>)

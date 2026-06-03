@@ -76,6 +76,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Skurkbro's Retexture Project AIO`                          | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/63148>  |
 | `Skyking Fantasia Landscapes`                               | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/107256> |
 | `Rally's Solstheim Landscapes`                              | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/35590>  |
+| `Dwemer Armors and Weapons Retexture SE`                    | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/93088>  |
 | `Enhanced Rocks and Mountains - Complex Material and PBR`   | `PBR Hub`, `Complex Parallax Materials`                                            | <https://www.nexusmods.com/skyrimspecialedition/mods/121336> |
 | `Enhanced Rocks and Mountains - Fix and Addon`              | `Enhanced Rocks and Mountains - Complex Material and PBR`                          | <https://www.nexusmods.com/skyrimspecialedition/mods/142493> |
 | `Riton Whiterun`                                            | _None_                                                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/103408> |
