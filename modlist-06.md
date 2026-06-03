@@ -88,8 +88,8 @@
 
 ### Recommendation
 
-- Start with `moreHUD Inventory Edition` as the strongest first-pass baseline because it improves day-to-day inventory readability in a way that is immediately visible during normal play.
-- Keep `moreHUD SE` as the adjacent broader companion if the project wants that same readability philosophy outside inventory lists too.
+- Make both `moreHUD SE` and `moreHUD Inventory Edition` mandatory baseline picks for the UI stack.
+- `moreHUD SE` handles the broader item-information layer outside pure inventory lists, while `moreHUD Inventory Edition` extends that same readability philosophy into the inventory views used constantly during normal play.
 - Keep `SkyUI Item Card Fixes` as the cleaner, narrower comparison if the main pain point is item-card presentation discipline rather than more information.
 - Keep `Aura's Inventory Tweaks` as the more organizational comparison if the final UI direction proves to need stronger sorting and icon structure rather than just clearer cards and details.
 - Keep `Weapon Stat Viewer V2` as a documented weapon-stat overlay companion rather than a baseline. It surfaces weapon damage numbers in real time (so the player can compare weapons without opening menus), and it is more useful than the other options here for the combat-experience pillar. Lock it in only if the chosen UI framework (`SkyUI` + `Oathvein UI`) renders it cleanly; verify it before treating it as part of the locked inventory stack.
@@ -104,7 +104,7 @@
 
 ### Acceptance Criteria
 
-- `modlist-06.md` has one clearly preferred inventory-readability baseline.
+- `modlist-06.md` treats `moreHUD SE` plus `moreHUD Inventory Edition` as the mandatory inventory-readability baseline.
 - The difference between broader item information, inventory-list information density, cleaner item cards, and stronger inventory organization is explicit.
 - The subsection still leaves room for later crafting, controller, and accessibility decisions.
 

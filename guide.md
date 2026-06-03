@@ -294,6 +294,8 @@ Install these locked or strongly preferred baseline picks early because later sy
 - `Flat World Map Framework (FWMF)` (<https://www.nexusmods.com/skyrimspecialedition/mods/29932>)
 - `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` (<https://www.nexusmods.com/skyrimspecialedition/mods/53788>)
 - `Compass Navigation Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/74484>)
+- `moreHUD SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/12688>)
+- `moreHUD Inventory Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/18619>)
 - `Constructible Object Custom Keyword System` (<https://www.nexusmods.com/skyrimspecialedition/mods/81409>)
 - `Sovngarde - Mist's Font Replacer` (<https://www.nexusmods.com/skyrimspecialedition/mods/386>)
 - `Better Dialogue Controls` (<https://www.nexusmods.com/skyrimspecialedition/mods/1429>)
@@ -311,9 +313,7 @@ Install these locked or strongly preferred baseline picks early because later sy
     - Alternative: `Norden UI` (<https://www.nexusmods.com/skyrimspecialedition/mods/166086>)
     - Do not install both.
 - Inventory helper path:
-    - preferred first-pass: `moreHUD Inventory Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/18619>)
-    - optional companion: `moreHUD SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/12688>)
-    - narrower alternative: `SkyUI Item Card Fixes` (<https://www.nexusmods.com/skyrimspecialedition/mods/29116>)
+    - locked baseline: `moreHUD SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/12688>) and `moreHUD Inventory Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/18619>)
     - organizational alternative: `Aura's Inventory Tweaks` (<https://www.nexusmods.com/skyrimspecialedition/mods/68557>)
 - Dialogue presentation path:
     - baseline control fix: `Better Dialogue Controls`
@@ -374,6 +374,8 @@ Under `02.13 Character, Skin, And Creature Visuals` install the current stronges
 - `Highly Improved Male Body Overhaul - HIMBO` (<https://www.nexusmods.com/skyrimspecialedition/mods/74174>)
 - `BnP - Female Skin` (<https://www.nexusmods.com/skyrimspecialedition/mods/65274>)
 - `BnP - Male Skin` (<https://www.nexusmods.com/skyrimspecialedition/mods/65402>)
+- `Expressive Facial Animation -Female Edition-` (<https://www.nexusmods.com/skyrimspecialedition/mods/19181>)
+- `Expressive Facial Animation -Male Edition-` (<https://www.nexusmods.com/skyrimspecialedition/mods/19532>)
 - `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` (<https://www.nexusmods.com/skyrimspecialedition/mods/69681>)
 - `BodySlide and Outfit Studio`
 - `KS Hairdos SSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/6817>)
