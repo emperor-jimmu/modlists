@@ -231,6 +231,10 @@ Install these baseline mods first:
 - `Andrealphus' Papyrus Functions`
 - `ConsoleUtilSSE NG`
 - `SkyPatcher`
+- `Particle Patch`
+- `Assorted Mesh Fixes`
+- `Unofficial Material Fix`
+- `Flickering Meshes Fix`
 
 ### Choice Required
 
@@ -273,6 +277,10 @@ Install these locked or strongly preferred baseline picks early because later sy
 - `Better Dialogue Controls`
 - `Better MessageBox Controls`
 - `Convenient Reading UI - SE`
+- `More Informative Console`
+- `Quest Journal Fix for SkyUI`
+- `SkyUI Ghost Item Bug Fix`
+- `Yes Im Sure NG`
 
 ### Choice Required
 
@@ -570,6 +578,8 @@ Under `12 Targeted Bugfix Mods`, install the strongest current baseline bugfixes
 - `NPC AI Process Position Fix - NG`
 - `Simple Offence Suppression`
 - `Fuz Ro D-oh - Silent Voice`
+- `Bug Fixes SSE`
+- `Navigator - Navmesh Fixes`
 
 ### Choice Required
 
@@ -1015,6 +1025,10 @@ This appendix covers every named tool and mod referenced in this guide. Repeated
 | `SkyPatcher`                                            | <https://www.nexusmods.com/skyrimspecialedition/mods/106659> |
 | `Unofficial Skyrim Special Edition Patch - USSEP`       | <https://www.nexusmods.com/skyrimspecialedition/mods/266>    |
 | `Backported Extended ESL Support`                       | <https://www.nexusmods.com/skyrimspecialedition/mods/106441> |
+| `Particle Patch`                                         | <https://www.nexusmods.com/skyrimspecialedition/mods/65720>  |
+| `Assorted Mesh Fixes`                                    | <https://www.nexusmods.com/skyrimspecialedition/mods/32117>  |
+| `Unofficial Material Fix`                                | <https://www.nexusmods.com/skyrimspecialedition/mods/21027>  |
+| `Flickering Meshes Fix`                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/53957>  |
 | `SSE Display Tweaks`                                    | <https://www.nexusmods.com/skyrimspecialedition/mods/34705>  |
 | `SkyUI`                                                 | <https://www.nexusmods.com/skyrimspecialedition/mods/12604>  |
 | `UIExtensions`                                          | <https://www.nexusmods.com/skyrimspecialedition/mods/17561>  |
@@ -1040,6 +1054,10 @@ This appendix covers every named tool and mod referenced in this guide. Repeated
 | `Gamepad Plus Plus`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/27007>  |
 | `Wheeler - Quick Action Wheel Of Skyrim`                | <https://www.nexusmods.com/skyrimspecialedition/mods/97345>  |
 | `Complete Widescreen Fix for Vanilla and SkyUI`         | <https://www.nexusmods.com/skyrimspecialedition/mods/1778>   |
+| `More Informative Console`                               | <https://www.nexusmods.com/skyrimspecialedition/mods/19250>  |
+| `Quest Journal Fix for SkyUI`                            | <https://www.nexusmods.com/skyrimspecialedition/mods/108618> |
+| `SkyUI Ghost Item Bug Fix`                               | <https://www.nexusmods.com/skyrimspecialedition/mods/49106>  |
+| `Yes Im Sure NG`                                         | <https://www.nexusmods.com/skyrimspecialedition/mods/76892>  |
 
 ### A.3 Graphics, Bodies, And LOD Resources
 
@@ -1231,6 +1249,8 @@ This appendix covers every named tool and mod referenced in this guide. Repeated
 | `Mum's the Word NG`                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/77409>  |
 | `Regional Save Names`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/49698>  |
 | `Bard Instrumentals Mostly - Sing Rarely`                 | <https://www.nexusmods.com/skyrimspecialedition/mods/10927>  |
+| `Bug Fixes SSE`                                           | <https://www.nexusmods.com/skyrimspecialedition/mods/33261>  |
+| `Navigator - Navmesh Fixes`                               | <https://www.nexusmods.com/skyrimspecialedition/mods/52641>  |
 
 ### A.6 World Content, NPCs, And Audio
 

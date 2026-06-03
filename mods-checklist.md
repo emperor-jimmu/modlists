@@ -24,6 +24,11 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Andrealphus' Papyrus Functions` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/85252> |
 | `ConsoleUtilSSE NG` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/76649> |
 | `SkyPatcher` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/106659> |
+| `Particle Patch` | _None_ (supports vanilla and `Community Shaders`) | <https://www.nexusmods.com/skyrimspecialedition/mods/65720> |
+| `Assorted Mesh Fixes` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/32117> |
+| `Unofficial Material Fix` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/21027> |
+| `Flickering Meshes Fix` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/53957> |
+
 
 ## Modern Graphics
 
@@ -370,6 +375,10 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Immersive HUD - iHUD Special Edition` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/12440> |
 | `Constructible Object Custom Keyword System` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/81409> |
 | `SkyUI - Vanilla Crafting menu` | `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/18717> |
+| `More Informative Console` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/19250> |
+| `Quest Journal Fix for SkyUI` | `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/108618> |
+| `SkyUI Ghost Item Bug Fix` | `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/49106> |
+| `Yes Im Sure NG` | `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/76892> |
 
 ### Notes
 
@@ -378,6 +387,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - `iHUD`, `Wheeler`, `Prisma UI`, and `Stats Tracker Menu` are SKSE plugins and were given `SKSE64`. `Wheeler` and `Stats Tracker Menu` also need `SkyUI` for the MCM/faction-config integration.
 - `UIExtensions` was already implicitly required by `EFF - Extensible Follower Framework` in section 05; placing it here as a UI utility is the more natural home and the dep is now explicit.
 - `Oathvein UI` / `Norden UI` ship SKSE plugins that hook into SkyUI's `UIExtensions` framework; both are shown as needing `SkyUI` + `SKSE64`.
+- Four new interface entries (`More Informative Console`, `Quest Journal Fix for SkyUI`, `SkyUI Ghost Item Bug Fix`, `Yes Im Sure NG`) were added from the STEP 2.3 16-Interface section (verified June 2026). They are complementary QoL/fix mods that do not overlap with the existing UI picks. `More Informative Console` requires `SKSE64` (41k endorsements); the other three are SkyUI-specific UI fixes.
 
 ## Immersive Scale and World Feel
 
@@ -617,6 +627,8 @@ _No specific mods recorded yet in this section._
 | `NPC AI Process Position Fix - NG` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/69326> |
 | `Regional Save Names` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/49698> |
 | `Simple Offence Suppression` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/41764> |
+| `Bug Fixes SSE` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/33261> |
+| `Navigator - Navmesh Fixes` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/52641> |
 
 ### Notes
 
@@ -624,6 +636,7 @@ _No specific mods recorded yet in this section._
 - `Bard Instrumentals Mostly - Sing Rarely` is a script/ESP-only mod (Papyrus attached to the Bard NPCs); no SKSE plugin involved.
 - `Fuz Ro D-oh - Silent Voice` is script-only; it hooks into dialogue subtitles and has no SKSE plugin. Already used as a dep for `Alternate Perspective` in section 05.
 - `Regional Save Names` is an ESP-only utility; no SKSE or framework deps.
+- `Bug Fixes SSE` (33261, meh321 SKSE plugin, 56k endorsements) and `Navigator - Navmesh Fixes` (52641, ESP-only navmesh fix, 9k endorsements) were added from the STEP 2.3 09-Fixes review (verified June 2026). Bug Fixes SSE addresses low-level engine bugs (crafting, perk, water) not covered by `SSE Engine Fixes`; Navigator is a heavier navmesh fix that should be validated per the testing plan before committing to the final build.
 
 ## Legacy of the Dragonborn
 
@@ -665,4 +678,4 @@ _No specific mods recorded yet in this section._
 
 ---
 
-Total unique mods listed: 362
+Total unique mods listed: 371

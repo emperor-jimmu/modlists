@@ -18,6 +18,8 @@ Use this section for focused fixes that solve specific vanilla annoyances, edge-
 - Movement behavior cleanup route: use `Better Jumping SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18967> if the project wants more consistent jumping control without turning movement into a separate overhaul decision.
 - Ambient sanity-fix route: use `Bard Instrumentals Mostly - Sing Rarely` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10927> if repetitive tavern singing becomes a noticeable immersion problem during normal play.
 - Targeted stability route: use `LeveledList Crash Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129136> if the final plugin/content mix makes leveled-list crash protection worth a dedicated fix beyond the broader foundation layer.
+- Low-level engine bugfix route: use `Bug Fixes SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33261> (meh321 SKSE plugin; fixes crafting-menu, perk-application, and water-behavior engine bugs not covered by `SSE Engine Fixes`. 56k endorsements, broad community validation.)
+- Navmesh-reliability route: use `Navigator - Navmesh Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52641> if follower pathing, animal AI, or NPC navigation in complex worldspaces shows observable failure (stuck NPCs, looping behavior) that simple navmesh fixes cannot resolve. 9k endorsements; heavier integration test recommended before committing.)
 
 ## Recommendation
 
