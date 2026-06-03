@@ -415,6 +415,8 @@
 - Reputation-first route: `Skyrim Reputation` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22374>
 - Crime-expression route: `Book Of Shadows - Behaviour Based Stealth Additions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76086>
 - Guard-pressure route: `Suspicious City Guards` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/38762>
+- Quest-pacing companion route: `The Choice is Yours` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3850>
+- Greeting-discipline companion route: `To Your Face SE - AE - VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/24720>
 - Ownership note: keep targeted fixes such as `Simple Offence Suppression` in `modlist-12.md`; they are support fixes, not the social-system answer.
 
 ### Recommendation
@@ -422,6 +424,8 @@
 - Start with `Skyrim Reputation` as the main baseline.
 - Keep `Suspicious City Guards` as the more focused comparison if the main goal is grounded urban tension around suspicious behavior.
 - Keep `Book Of Shadows` as the deliberate high-expression branch if the project wants crime and stealth to become a much larger playstyle pillar rather than a world-reaction layer.
+- Add `The Choice is Yours` as the clearest roleplay-facing companion when the list wants stricter control over quest auto-start pressure in a content-heavy run.
+- Add `To Your Face SE - AE - VR` as the low-drama social-polish companion if normal city and tavern play still feels too noisy from vanilla greeting behavior.
 - Keep stealth-expression tooling separate from broader world-reaction goals so this subsection does not become a stealth overhaul by accident.
 
 ### Risks & Compatibility
@@ -429,11 +433,14 @@
 - A very light social-response layer can undershoot the subsection and leave crime and reputation too close to vanilla.
 - A stealth-heavy crime toolkit can make one playstyle dominate a subsection that should still support broader roleplay.
 - City suspicion systems can become annoying if they create constant friction without enough payoff.
+- `The Choice is Yours` improves pacing and roleplay control, but it matters only if the list actually wants tighter discipline over when quests enter the journal.
+- `To Your Face` is a narrow polish win, but it is still a preference-shaped social-cleanup mod rather than a core world-reaction framework.
 - Mixing multiple social philosophies too casually can make guard behavior, stealth expectations, and world reaction feel incoherent.
 
 ### Acceptance Criteria
 
 - `Elder Wilds` has one clearly preferred crime-and-social baseline, one narrower guard-pressure comparison, and one more expressive stealth-and-crime branch.
+- Companion picks such as `The Choice is Yours` and `To Your Face` stay documented as focused complements rather than replacements for the main social-system baseline.
 - The chosen baseline complements religion, economy, survival, and follower direction instead of collapsing several later sections into one crime answer.
 - Later follower and world-content decisions still have visible room to matter.
 

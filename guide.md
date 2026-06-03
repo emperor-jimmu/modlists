@@ -267,6 +267,7 @@ Install these baseline mods first:
 - `ConsoleUtilSSE NG` (<https://www.nexusmods.com/skyrimspecialedition/mods/76649>)
 - `Kris's Papyrus Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/115164>)
 - `SkyPatcher` (<https://www.nexusmods.com/skyrimspecialedition/mods/106659>)
+- `Animation Queue Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/82395>)
 - `Particle Patch` (<https://www.nexusmods.com/skyrimspecialedition/mods/65720>)
 - `Assorted Mesh Fixes` (<https://www.nexusmods.com/skyrimspecialedition/mods/32117>)
 - `Unofficial Material Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/21027>)
@@ -466,6 +467,8 @@ Create or use separator `03 Animations and Movement`.
     - `Goetia Animations - Female Idle Walk And Run` (<https://www.nexusmods.com/skyrimspecialedition/mods/68625>)
     - `Goetia Animations - Conditional Shuffled Idle for Pretty Female idles` (<https://www.nexusmods.com/skyrimspecialedition/mods/68005>)
 - Optional traversal / flavor add-ons:
+    - `Animated Interactions SKSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/143798>) as a higher-fidelity interaction companion or alternative; if used with `Immersive Interactions`, disable overlapping actions instead of letting both own the same prompts
+    - `SkyClimb` (<https://www.nexusmods.com/skyrimspecialedition/mods/97253>) as the climbing-first alternative to `SkyParkour v3`; do not install both as if they were complementary baselines
     - `RaySense - Jumping over obstacles` (<https://www.nexusmods.com/skyrimspecialedition/mods/175506>) + `Open Animation Replacer - RaySense` (<https://www.nexusmods.com/skyrimspecialedition/mods/175498>)
     - `Go to bed` (<https://www.nexusmods.com/skyrimspecialedition/mods/4224>)
 - Creature animation add-ons:
@@ -567,6 +570,8 @@ For the item / artifact / wardrobe side, install the current preferred baseline:
 - Roleplay extras:
     - `Dealing with Backstories` (<https://www.nexusmods.com/skyrimspecialedition/mods/61106>)
     - `Take Notes - Journal of the Dragonborn SSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/13570>)
+    - `The Choice is Yours` (<https://www.nexusmods.com/skyrimspecialedition/mods/3850>) if you want tighter control over quest auto-starts in a content-heavy run
+    - `To Your Face SE - AE - VR` (<https://www.nexusmods.com/skyrimspecialedition/mods/24720>) if you want to reduce ambient NPC greeting spam without changing the broader social-system baseline
 - Race / standing stone alternatives:
     - `Aetherius` vs `Morningstar` vs `Imperious`
     - `Evenstar` vs `Andromeda`

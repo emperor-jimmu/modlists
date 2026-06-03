@@ -26,6 +26,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `ConsoleUtilSSE NG` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/76649> |
 | `Kris's Papyrus Extender` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/115164> |
 | `SkyPatcher` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/106659> |
+| `Animation Queue Fix` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/82395> |
 | `Particle Patch` | _None_ (supports vanilla and `Community Shaders`) | <https://www.nexusmods.com/skyrimspecialedition/mods/65720> |
 | `Assorted Mesh Fixes` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/32117> |
 | `Unofficial Material Fix` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/21027> |
@@ -207,6 +208,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | [ ] `Open Animation Replacer`                                               | `SKSE64`, `Address Library for SKSE Plugins`                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/92109>  |
 | [ ] `Unique Jarl Throne Sitting Animation (OAR)`                            | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/174752> |
 | [ ] `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)`      | `SKSE64`, `Address Library for SKSE Plugins`                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/132292> |
+| [ ] `SkyClimb`                                                              | `SKSE64`, `EVG Animated Traversal`, `powerofthree's Papyrus Extender`         | <https://www.nexusmods.com/skyrimspecialedition/mods/97253>  |
 | [ ] `Beam Walking Assist`                                                   | `SKSE64`, `Address Library for SKSE Plugins`                                  | <https://www.nexusmods.com/skyrimspecialedition/mods/175511> |
 | [ ] `RaySense - Jumping over obstacles`                                     | `Open Animation Replacer`, `Open Animation Replacer - RaySense`               | <https://www.nexusmods.com/skyrimspecialedition/mods/175506> |
 | [ ] `Open Animation Replacer - RaySense`                                    | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/175498> |
@@ -218,7 +220,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | [ ] `Conditional Armor Type Animations`                                     | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/51507>  |
 | [ ] `EVG Conditional Idles`                                                 | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/34006>  |
 | [ ] `EVG Animated Traversal`                                                | `Open Animation Replacer`                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/63232>  |
-| [ ] `Immersive Interactions - Animated Actions`                             | `XPMSSE`, `Pandora Behaviour Engine Plus`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/47670>  |
+| [ ] `Immersive Interactions - Animated Actions`                             | `Dynamic Activation Key`, `Open Animation Replacer`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/47670>  |
+| [ ] `Animated Interactions SKSE`                                            | `SKSE64`, `Address Library for SKSE Plugins`, `Pandora Behaviour Engine Plus` | <https://www.nexusmods.com/skyrimspecialedition/mods/143798> |
 | [ ] `Go to bed`                                                             | `XPMSSE`                                                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/4224>   |
 | [ ] `New Creature Animation - Giant`                                        | `XPMSSE`, `Pandora Behaviour Engine Plus`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/83317>  |
 | [ ] `New Creature Animation - Falmer`                                       | `XPMSSE`, `Pandora Behaviour Engine Plus`                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/83572>  |
@@ -237,6 +240,9 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - `CBPC` was added with deps `SKSE64`, `Address Library for SKSE Plugins`, `CBBE 3BA (3BBB)` as the default first-pass physics layer called out in `modlist-03.md` (Skeleton and Behavior Prerequisites).
 - `Valhalla Combat` was removed from this section; it is planned for re-entry under section 11 (Survival, Difficulty, and Balance) when that section is converted, alongside the other combat-system overhauls there.
 - `IFrame Generator RE` was added as `IFrame Generator RE (AE Support)` (mod 82737) so the entry matches the AE 1.6.629+ runtime fork needed for the target build. Deps: `Address Library for SKSE Plugins`, `SKSE64`.
+- `Immersive Interactions - Animated Actions` was corrected to match the current public requirements page more closely: behavior engine plus `Dynamic Activation Key`, with `Open Animation Replacer` standing in for the repo's modern replacement of older `Dynamic Animation Replacer` assumptions. `XPMSSE` remains useful in this section but is no longer presented as this mod's direct hard requirement.
+- `Animated Interactions SKSE` can coexist with `Immersive Interactions`, but the mod page explicitly says overlapping actions should be disabled in MCM when both are installed.
+- `SkyClimb` is an alternative climbing route, not a second parkour baseline; it depends on `EVG Animated Traversal` plus `powerofthree's Papyrus Extender`.
 
 ## Third-Person Gameplay
 
@@ -314,6 +320,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Serana Dialogue Add-On`                                  | `SKSE64`, `Address Library for SKSE Plugins`               | <https://www.nexusmods.com/skyrimspecialedition/mods/32161> |
 | `Biggie Traits`                                           | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/136384> |
 | `Bathing in Skyrim - Renewed`                             | `Kris's Papyrus Extender`, `PapyrusUtil`, `powerofthree's Papyrus Extender`, `RaceMenu SE` | <https://www.nexusmods.com/skyrimspecialedition/mods/135288> |
+| `The Choice is Yours`                                     | _None_                                                     | <https://www.nexusmods.com/skyrimspecialedition/mods/3850> |
+| `To Your Face SE - AE - VR`                               | `SKSE64`                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/24720> |
 
 ### Lore-Friendly Items, Artifacts, and Wardrobe
 
@@ -344,6 +352,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - `Alternate Start - Live Another Life` and `Relationship Dialogue Overhaul` have no Nexus-listed hard requirements (RDO's hard requirements are the stock DLC ESMs that come with the game).
 - `Imperious` MCM is optional per the description ("if SkyUI is installed (SkyUI not required to use Imperious)") - kept as `_None_` per the published requirements.
 - `Bathing in Skyrim - Renewed` lists `Fuz Ro D'oh`, behaviour engines (`Pandora`, `Nemesis`, or `FNIS`), `Base Object Swapper`, `Description Framework`, and `SkyPatcher` as soft, addon, or situational integrations. Only the hard dependencies from the mod page are listed in the table. For Steam runtime `1.6.1170`, its `Backported Extended ESL Support` note does not apply.
+- `The Choice is Yours` is listed with `_None_` because the public requirements text does not surface a hard dependency block; its value is pacing and roleplay control, not framework integration.
+- `To Your Face SE - AE - VR` is a narrow SKSE-based social-polish mod, not a replacement for broader reputation or crime systems.
 
 ## Modernized UI
 

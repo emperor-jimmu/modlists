@@ -73,6 +73,7 @@
 ### Options
 
 - Procedural parkour and climbing baseline: `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/132292>
+- Climbing-first alternative route: `SkyClimb` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97253>
 - Balance-assist companion: `Beam Walking Assist` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
 - Structured jump-over-obstacles route: `RaySense - Jumping over obstacles` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
 - Animation-selection patch for the above: `Open Animation Replacer - RaySense` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175498>
@@ -82,6 +83,7 @@
 ### Recommendation
 
 - Use `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` as the procedural parkour and climbing baseline. It adds a procedural climbing and parkour system that lets the player vault, climb, and traverse environmental geometry (10,112 endorsements, 432K unique downloads, v3.5.4). It is the most-endorsed parkour framework on Nexus and has a meaningful community track record.
+- Keep `SkyClimb` as the deliberate alternative if the list wants procedural ledge climbing built around `EVG Animated Traversal` more than it wants the broader `SkyParkour` movement identity. It solves a narrower problem more directly, but that also means it overlaps with the baseline enough that both should not be treated as cumulative core picks.
 - Keep `Beam Walking Assist` as a documented balance-assist companion rather than a baseline. It helps the player stay on narrow beams and ledges during parkour traversal, which is a usability gap in vanilla and a common frustration once parkour is enabled. Add it only after the parkour baseline is locked in and only if real traversal testing shows beam-walking is annoying.
 - Keep `RaySense - Jumping over obstacles` and its dependency `Open Animation Replacer - RaySense` as a documented structured-jump companion pair rather than a baseline. `RaySense` is a different movement philosophy from `SkyParkour`: instead of procedural climbing and vaulting, it detects obstacles the player is about to run into and triggers a context-appropriate jump-over animation selected by obstacle height via the OAR behavior patch. The two are complementary rather than competing, but `RaySense` is brand new (901 endorsements on the main mod, 1,453 on the OAR patch) with limited community track record, so lock it in only if real playtesting shows the procedural parkour baseline leaves common obstacles feeling awkward to clear. Load `Open Animation Replacer - RaySense` only as a dependency of `RaySense`; it does not belong in the load order without the parent mod.
 - Keep the discipline-first route alive only if the rest of the movement and animation stack is still being settled, because parkour is a major ownership decision that affects jump height, animation behavior, and camera expectations.
@@ -91,6 +93,7 @@
 ### Risks & Compatibility
 
 - A parkour framework can change jump height, ledge detection, and climb animation, which can interact with `XPMSSE` and `True Directional Movement`. Verify the parkour framework plays nicely with the chosen skeleton and movement baselines.
+- `SkyClimb` and `SkyParkour v3` should be treated as competing traversal owners rather than harmless companions. Installing both would make climbing behavior harder to reason about instead of cleaner.
 - Procedural parkour can expose navmesh gaps in older worldspace content mods. Test on the locked `modlist-08.md` worldspace picks before treating parkour as a stable part of the baseline.
 - Parkour is fun but can trivialize early-game exploration if the player is too mobile too soon. Tune the framework's MCM to match the survival and travel pacing in `modlist-05.md` and `modlist-07.md`.
 
@@ -99,6 +102,7 @@
 - `Elder Wilds` has one clear parkour framework baseline or a deliberate discipline-first decision.
 - Parkour movement feels like a natural extension of vanilla traversal rather than a separate game mode.
 - The chosen framework does not fight the locked `XPMSSE`, `True Directional Movement`, or third-person camera baselines.
+- `SkyClimb` is documented as the main alternative climbing route with explicit pros and cons instead of being implied as a second baseline.
 
 ### Core Idea
 
@@ -209,18 +213,21 @@
 ### Options
 
 - Grounded baseline: `Immersive Interactions - Animated Actions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47670>
+- Higher-fidelity interaction companion or alternative: `Animated Interactions SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/143798>
 - Sleep-focused companion: `Go to bed` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4224>
 - Traversal-heavy route to evaluate carefully: `EVG Animated Traversal` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63232>
 
 ### Recommendation
 
 - Start with `Immersive Interactions` as the main baseline for everyday contextual actions.
+- Treat `Animated Interactions SKSE` as the stronger pickup, looting, and door-animation route when the list wants extra physicality from common interactions. It can coexist with `Immersive Interactions`, but only if overlapping actions are deliberately disabled so both mods are not trying to own the same prompts.
 - Add `Go to bed` only if camp, inn, and home-rest loops become an actual tone pillar for the list.
 - Treat `EVG Animated Traversal` as a curated expansion that must justify its marker coverage and added complexity.
 
 ### Risks & Compatibility
 
 - Contextual interaction mods can feel immersive at first but become repetitive if the triggered actions are too slow or too frequent.
+- `Animated Interactions SKSE` overlaps enough with `Immersive Interactions` that it should be framed as a pros-and-cons choice or tightly managed companion, not as an automatic stack-on upgrade.
 - `EVG Animated Traversal` can raise expectations for world coverage that the actual mod stack may not consistently deliver without extra marker and add-on work.
 - Sleeping and interaction animations may feel out of place if the final list does not meaningfully emphasize downtime, camping, taverns, or roleplay pacing.
 
@@ -228,6 +235,7 @@
 
 - Everyday third-person interactions feel more physical without becoming tedious.
 - The chosen baseline works cleanly with the locomotion and idle stack.
+- If `Animated Interactions SKSE` is used, its overlap with `Immersive Interactions` is documented as a conscious tradeoff rather than a silent duplicate install.
 - Optional additions such as `Go to bed` or `EVG Animated Traversal` are only kept if they improve normal play rhythm rather than just adding spectacle.
 
 ## Conditional Animation Systems
