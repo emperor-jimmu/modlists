@@ -18,12 +18,13 @@ This is not a "install every mod in `mods-checklist.md`" dump. Several sections 
 ## Step 1. Prepare Skyrim And Tool Folders
 
 1. Install Steam and Skyrim SE/AE outside `Program Files`, ideally under a shallow path such as `C:\Games\Steam\steamapps\common\Skyrim Special Edition`.
-2. Confirm the game is on runtime `1.6.1170`.
-3. Launch the vanilla launcher once so Skyrim creates its registry entries and INI files.
-4. Create a separate modding path such as:
+2. Confirm the game is on runtime `1.6.1170`. The **Anniversary Upgrade** is required — this build uses all Creation Club content included with AE.
+3. Ensure your Steam, drivers, and tool installations follow a clean baseline — install outside `Program Files`, verify file integrity, and set proper permissions.
+4. Launch the vanilla launcher once so Skyrim creates its registry entries and INI files.
+5. Create a separate modding path such as:
    - `C:\Modding`
    - `C:\Modding\Tools`
-5. Install the core tooling into `C:\Modding\Tools`:
+6. Install the core tooling into `C:\Modding\Tools`:
    - `Mod Organizer 2`
    - `BethINI Pie`
    - `LOOT`
@@ -134,7 +135,79 @@ Rules:
 - `Synthesis` owns broad rule-based patching, not record-by-record judgment calls.
 - Per-pair `xEdit` patches own the actual conflict resolution work.
 
-## Step 7. Install The Core Runtime And Foundation Layer
+## Step 7. Configure BethINI Pie
+
+BethINI Pie must be run from Mod Organizer 2 as an executable so it targets the correct profile INIs.
+
+1. In MO2, select `BethINI Pie` from the executable dropdown and run it.
+2. Go to the **Basic** tab:
+   - Click **Reset to Defaults**.
+   - Select the **High** preset.
+   - Click **Apply Recommended Tweaks**.
+   - Set **Window Mode** to **Borderless Windowed**.
+3. Go to the **Environment** tab:
+   - Set **Grass Density** to `60`.
+   - Untick **Reflect Sky**.
+4. Go to the **View Distance** tab:
+   - Leave **Tree LOD Distance** at the High preset default for now. (You will set it to `0` before DynDOLOD generation later.)
+5. Go to the **Visuals** tab:
+   - Set **Max Particle Render Count (Direct)** to `2000`.
+   - Set **Max Particle Render Count (GPU)** to `7500`.
+   - Untick **Lens Flare** (Community Shaders handles its own post-processing).
+6. Click **Save and Exit**.
+7. Open `MO2 → Tools → INI Editor` and confirm the values took effect in `Skyrim.ini` and `SkyrimPrefs.ini`.
+
+## Step 8. LOOT Sort & Clean Vanilla Masters
+
+### Run LOOT
+
+1. In MO2, select `LOOT` from the executable dropdown and run it.
+2. Click **Sort Plugins**.
+3. Click **Apply**.
+4. Close LOOT.
+
+### Create The Cleaned Vanilla Masters Mod
+
+1. In MO2, create a new empty mod named `Cleaned Vanilla Masters`.
+2. Place it under the `Output` separator.
+3. Leave it disabled for now.
+
+### Clean The Vanilla Masters
+
+`xEditQuickAutoClean` removes identical-to-master (ITM) records and undeletes deleted references from vanilla plugin files. Clean each of the following masters one at a time:
+
+- `Skyrim.esm`
+- `Update.esm`
+- `Dawnguard.esm`
+- `HearthFires.esm`
+- `Dragonborn.esm`
+- The Creation Club `.esm` files that ship with the Anniversary Edition (approximately 5 files)
+
+For each file:
+1. Select `xEditQuickAutoClean` from the MO2 executable dropdown.
+2. In the plugin selection window, check ONLY the master you are cleaning.
+3. Click **OK** and wait for the process to finish.
+4. Close xEdit when prompted.
+
+### Move Cleaned Masters Into The Mod
+
+1. Open your `Skyrim Special Edition\Data` folder.
+2. Locate each cleaned master (check the file modification date — they were just written).
+3. Move them into `Mod Organizer 2\mods\Cleaned Vanilla Masters\`.
+4. Keep only the cleaned `.esm` files. Delete any `.backup` or `.bak` files from the mod folder.
+
+### Restore Originals
+
+1. Open the `xEdit Backups` folder inside `Skyrim Special Edition\Data`.
+2. Copy the original `.esm` files from the backups back into `Data\`.
+3. The originals must be restored before proceeding — the mod provides the cleaned versions via MO2's virtual filesystem.
+
+### Enable And Verify
+
+1. In MO2, enable `Cleaned Vanilla Masters`.
+2. Run `LOOT` again and confirm no plugins are flagged as needing cleaning.
+
+## Step 9. Install The Core Runtime And Foundation Layer
 
 Create or use separator `01 Foundations and Compatibility`.
 
@@ -172,9 +245,16 @@ Install these baseline mods first:
     - Mentioned in planning, but not yet locked in the checklist.
     - Treat it as optional unless the display stack later clearly wants it.
 
-Stop here and do a clean boot test before moving on.
+### Smoke Test — Foundation Layer
 
-## Step 8. Install The UI Foundation Early
+Stop here and do a clean boot test before moving on:
+
+1. Launch Skyrim via `SKSE` from MO2.
+2. Verify the game reaches the main menu without crashing.
+3. Start a new game and confirm no immediate CTD on cell load.
+4. Exit the game.
+
+## Step 10. Install The UI Foundation Early
 
 Create or use separator `06 Modernized UI`.
 
@@ -217,7 +297,15 @@ Install these locked or strongly preferred baseline picks early because later sy
 
 Install `UIExtensions` now even if it feels auxiliary, because later follower and utility mods depend on it.
 
-## Step 9. Install The Graphics Framework And Visual Baseline
+### Smoke Test — UI Foundation
+
+1. Launch via `SKSE` and load a save or start a new game.
+2. Open the MCM and verify `SkyUI` registers all expected pages.
+3. Confirm the HUD theme (`Oathvein UI` or chosen alternative) renders correctly.
+4. Verify `TrueHUD`, compass (`Compass Navigation Overhaul`), and SkyHUD elements display.
+5. Exit the game.
+
+## Step 11. Install The Graphics Framework And Visual Baseline
 
 Create or use separator `02 Modern Graphics`.
 
@@ -305,7 +393,7 @@ Under `02.12 LOD Generation And Distant Detail`, install the LOD resources now s
 
 Do not finalize LOD generation yet. Only install the resources and frameworks here.
 
-## Step 10. Build Bodies Before Armor Proliferates
+## Step 12. Build Bodies Before Armor Proliferates
 
 Run `BodySlide` after the body stack is installed and before broad armor expansion.
 
@@ -314,7 +402,7 @@ Run `BodySlide` after the body stack is installed and before broad armor expansi
 3. Enable `BodySlide Output`.
 4. Rebuild later any time the body, skin, or outfit stack changes.
 
-## Step 11. Install Animations And Movement
+## Step 13. Install Animations And Movement
 
 Create or use separator `03 Animations and Movement`.
 
@@ -359,7 +447,7 @@ Create or use separator `03 Animations and Movement`.
 
 After any real animation stack change, run `Pandora` and send the output to `Pandora Output`.
 
-## Step 12. Install Third-Person Gameplay And Camera
+## Step 14. Install Third-Person Gameplay And Camera
 
 Create or use separator `04 Third-Person Gameplay`.
 
@@ -386,7 +474,17 @@ Create or use separator `04 Third-Person Gameplay`.
     - `Dodge for all`
     - treat both as deliberate extras, not assumed baseline locks
 
-## Step 13. Install Expanded Systems And Item Ecosystem
+### Smoke Test — Third-Person Gameplay
+
+1. Launch via `SKSE` and load a save.
+2. Toggle to third-person view.
+3. Test camera movement with `SmoothCam` — camera should track smoothly, not stutter.
+4. Test `True Directional Movement` — character faces mouse/controller direction.
+5. Test `Better Third-Person Selection` — targeting interactable objects works.
+6. Test `Improved Camera SE` (if installed) — first-person transitions are seamless.
+7. Exit the game.
+
+## Step 15. Install Expanded Systems And Item Ecosystem
 
 Create or use separator `05 Expanded Systems`.
 
@@ -453,7 +551,7 @@ For the item / artifact / wardrobe side, install the current preferred baseline:
     - current preference: `Nether's Follower Framework`
     - alternatives: `EFF - Extensible Follower Framework` or `Amazing Follower Tweaks SE`
 
-## Step 14. Install Survival, Combat Balance, And Targeted Bugfixes
+## Step 16. Install Survival, Combat Balance, And Targeted Bugfixes
 
 Create or use separators `11 Survival, Difficulty, and Balance` and `12 Targeted Bugfix Mods`.
 
@@ -493,11 +591,11 @@ Under `12 Targeted Bugfix Mods`, install the strongest current baseline bugfixes
     - `Regional Save Names`
     - `Bard Instrumentals Mostly - Sing Rarely`
 
-## Step 15. Install World Feel, Cities, Content, NPCs, And Audio
+## Step 17. Install World Feel, Cities, Content, NPCs, And Audio
 
 This is the least locked part of the current plan. Use separators `07`, `08`, `09`, and `10`, but do not treat every listed candidate as cumulative.
 
-### 15.1 Separator `07 Immersive Scale and World Feel`
+### 17.1 Separator `07 Immersive Scale and World Feel`
 
 Current strongest first-pass picks:
 
@@ -529,7 +627,7 @@ Current strongest first-pass picks:
     - `Savage Skyrim`
     - choose deliberately and patch overlaps
 
-### 15.2 Separator `08 World Content`
+### 17.2 Separator `08 World Content`
 
 Current strongest first-pass candidates:
 
@@ -574,7 +672,7 @@ Optional `Missives` support if that route wins over `Sidequests of Skyrim` or si
     - `Simple Fishing Overhaul` + `Hunterborn SE`
     - or lighter `Streamlined Fishing`
 
-### 15.3 Separator `09 NPCs and Creatures`
+### 17.3 Separator `09 NPCs and Creatures`
 
 Current strongest first-pass baseline:
 
@@ -615,7 +713,7 @@ Current strongest first-pass baseline:
     - `MINPCs (More Immersive NPCs)`
     - select cautiously for performance and city patching reasons
 
-### 15.4 Separator `10 Audio and Feedback`
+### 17.4 Separator `10 Audio and Feedback`
 
 Current strongest baseline direction:
 
@@ -640,7 +738,7 @@ Current strongest baseline direction:
     - `Sanguine Symphony Realistic Heavy Armor Sounds`
     - keep these curated, not maximalist
 
-## Step 16. Install Legacy Of The Dragonborn Late
+## Step 18. Install Legacy Of The Dragonborn Late
 
 Create or use separator `13 Legacy of the Dragonborn`.
 
@@ -661,7 +759,18 @@ Rule:
 - Only enable the official LoTD patches for mods you actually installed.
 - Do not pre-enable the entire patch hub.
 
-## Step 17. Install Performance And Technical Helpers
+## Step 19. Generate FaceGen Data
+
+After all NPC overhauls are installed and the load order is finalised for the NPC section, prevent the dark face bug by running Synthesis's face-discoloration patcher.
+
+1. In MO2, select `Synthesis` from the executable dropdown and run it.
+2. Add the **Face Discoloration Fix** patcher (or the NPC face patcher of your choice).
+3. Run Synthesis and send the output to `Synthesis Output`.
+4. Enable the generated patch.
+
+If Synthesis's patcher does not resolve all dark-face cases, use zEdit's FaceGen patcher as a fallback.
+
+## Step 20. Install Performance And Technical Helpers
 
 Create or use separator `15 Performance and Technical Workflow`.
 
@@ -677,7 +786,14 @@ Install:
     - treat it as a new-game decision
     - defer to the official patch hub where needed
 
-## Step 18. Generate Patches While Installing, Not Only At The End
+### Smoke Test — Performance
+
+1. Launch via `SKSE` and load a save in an exterior cell (e.g., Whiterun outskirts).
+2. Verify FPS is stable and no new stutter appeared after `Lightened Skyrim` / `eFPS`.
+3. Check that `eFPS` (if installed) does not cause missing objects, flickering, or culled cities.
+4. Exit the game.
+
+## Step 21. Generate Patches While Installing, Not Only At The End
 
 As the load order grows:
 
@@ -692,7 +808,7 @@ As the load order grows:
    - leveled-list heavy content mods
    - LoTD integration choices
 
-## Step 19. Run The Secondary Generators In The Correct Order
+## Step 22. Run The Secondary Generators In The Correct Order
 
 Do this only after the load order, patches, and chosen branches are stable enough to justify generated output.
 
@@ -706,13 +822,13 @@ Do this only after the load order, patches, and chosen branches are stable enoug
 
 1. `Pandora` after the animation stack stabilizes.
 2. `BodySlide` after body and armor changes stabilize.
-3. grass cache generation after final grass/tree/worldspace choices stabilize.
-4. `xLODGen`.
-5. `TexGen`.
-6. `DynDOLOD`.
-7. `Occlusion` if needed on the first real DynDOLOD run.
-8. `Synthesis` patchers that the final stack actually uses.
-9. `Wrye Bash` only if a `Bashed Patch` is still warranted for the chosen leveled-list strategy.
+3. `Synthesis` patchers that the final stack actually uses.
+4. `Wrye Bash` only if a `Bashed Patch` is still warranted for the chosen leveled-list strategy.
+5. grass cache generation after final grass/tree/worldspace choices stabilize.
+6. `xLODGen`.
+7. `TexGen`.
+8. `DynDOLOD`.
+9. `Occlusion` if needed on the first real DynDOLOD run.
 
 ### Phase 3. Verify Final Plugin Placement
 
@@ -722,19 +838,28 @@ Do this only after the load order, patches, and chosen branches are stable enoug
    - `Occlusion.esp`, if generated, should load after `DynDOLOD.esp`.
    - `Synthesis.esp` and any `Bashed Patch` should remain where their own tool guidance and conflict review say they belong, not wherever a vague rule of thumb would put them.
 
-## Step 20. Grass Cache Workflow
+## Step 23. Final Patchers
 
-If the final list keeps grass LOD ambitions:
+Run these before the LOD pipeline so generated textures and LOD output see the patched load order.
 
-1. Install `No Grass In Objects`.
-2. Install `Worldspaces with Grass SSEEdit Script for No Grass In Objects`.
-3. Install `Grass Cache Fixes`.
-4. Generate the grass cache only after grass, tree, landscape, and worldspace edits are mostly settled.
-5. Send the result to `Grass Cache Output`.
+Use these only where they genuinely help:
 
-If the grass stack changes later, rebuild the cache instead of trying to salvage the old one.
+- `Synthesis`
+    - use for whole-load-order rules such as leveled-list cleanup, AI forwarding, music merge, item-stat normalization, sound patching, or `Apothecary` / `CACO` support
+    - do not use it as a substitute for deliberate conflict resolution
+- `Wrye Bash`
+    - use for leveled-list merging and Bash-tag-driven imports if the chosen mod stack still benefits from it
+    - do not treat it as a junk drawer for unrelated overrides
 
-## Step 21. xLODGen 4K STEP Baseline
+### Prepare For LOD Generation
+
+Before generating LODs, set the tree LOD distance to zero so DynDOLOD fully controls tree LOD placement:
+
+1. Open `MO2 → Tools → INI Editor`.
+2. Under `[Display]`, set `fTreeLoadDistance=0`.
+3. Save and close.
+
+## Step 24. xLODGen 4K Baseline
 
 Use separator `Output` for the generated mod and keep the exact tool outside the game folder.
 
@@ -744,16 +869,16 @@ Use this baseline:
 
 - select all worldspaces
 - tick only `Terrain LOD`
-- leave `Brightness`, `Contrast`, and `Gamma` at defaults unless you are deliberately following the STEP / `Cathedral Landscapes` terrain pipeline; otherwise use `Gamma 1.00`
+- leave `Brightness`, `Contrast`, and `Gamma` at defaults; use `Gamma 1.00` for a neutral baseline
 - for true `2160p / 4K`, double the diffuse and normal sizes from the standard presets for `LOD4`, `LOD8`, `LOD16`, and `LOD32`
 - for initial `LOD4` terrain generation, keep `Optimize Unseen` off
 - if map / `LOD32` coastline quality needs a later pass, use a higher `Quality` setting in the documented `0-10` range and raise `Optimize Unseen` to roughly `550`
 - after generation, run `ACMOS Road Generator` with `Roads = Path Only`, point `Path to LOD` at the `xLODGen_Output` folder, choose `Yes` to overwrite LOD textures, and choose `No` when asked to zip
 - move the output into `Terrain LOD Output`
 
-## Step 22. TexGen 4K STEP Baseline
+## Step 25. TexGen 4K Baseline
 
-Run `TexGen` after `xLODGen` and before `DynDOLOD`.
+Run `TexGen` before grass cache generation and before `DynDOLOD`.
 
 Use this baseline:
 
@@ -765,10 +890,22 @@ Use this baseline:
 - set `TreeMSAlphaThreshold=144` in `TexGen_SSE.ini`
 - set `ObjectMSAlphaThreshold=96` in `TexGen_SSE.ini`
 - set `ForceComplexGrass=0` for the non-complex-grass branch
-- set `ForceComplexGrass=1` only for the STEP 2.3 complex-grass branch
+- set `ForceComplexGrass=1` only for the complex-grass branch
 - move the output into `TexGen Output`
 
-## Step 23. DynDOLOD 4K STEP Baseline
+## Step 26. Grass Cache Workflow
+
+If the final list keeps grass LOD ambitions:
+
+1. Install `No Grass In Objects`.
+2. Install `Worldspaces with Grass SSEEdit Script for No Grass In Objects`.
+3. Install `Grass Cache Fixes`.
+4. Generate the grass cache only after grass, tree, landscape, and worldspace edits are mostly settled.
+5. Send the result to `Grass Cache Output`.
+
+If the grass stack changes later, rebuild the cache instead of trying to salvage the old one.
+
+## Step 27. DynDOLOD 4K Baseline
 
 Run `DynDOLOD` only after the load order and patches are stable.
 
@@ -779,14 +916,14 @@ Use this baseline:
 - set grass brightness top and bottom RGB values to `0.500`
 - set `DoubleSidedTextureMask=mountain,mtn`
 - set `DoubleSidedMeshMask=mountain,mtn`
-- if the list follows the STEP 2.3 complex-grass branch, also set:
+- if the list follows the complex-grass branch, also set:
     - `ComplexGrassBillboard=5`
     - all complex-grass brightness top and bottom RGB values to `0.500`
     - `ComplexGrassBacklightMask=25`
 - select all worldspaces
 - tick `Candles`
 - tick `FXGlow`
-- click `High` to load the expected STEP / `A Clear Map of Skyrim` mesh rules
+- click `High` to load the expected `A Clear Map of Skyrim` mesh rules
 - treat the intended end state as the `4K` profile with `Optimal` tree and catch-all rules plus the recommended `LOD32` rules
 - generate `Occlusion` only on the first real run
 - tick `Grass LOD` only if the list is intentionally generating grass LOD
@@ -794,18 +931,7 @@ Use this baseline:
 - enable `DynDOLOD.esm` and `DynDOLOD.esp`
 - sort with `LOOT`
 
-## Step 24. Final Patchers
-
-Use these only where they genuinely help:
-
-- `Synthesis`
-    - use for whole-load-order rules such as leveled-list cleanup, AI forwarding, music merge, item-stat normalization, sound patching, or `Apothecary` / `CACO` support
-    - do not use it as a substitute for deliberate conflict resolution
-- `Wrye Bash`
-    - use for leveled-list merging and Bash-tag-driven imports if the chosen mod stack still benefits from it
-    - do not treat it as a junk drawer for unrelated overrides
-
-## Step 25. Final Verification And Test Pass
+## Step 28. Final Verification And Test Pass
 
 Before calling the build stable, complete these tests from `modlist-14.md`:
 
@@ -822,8 +948,17 @@ Specific performance checks to keep:
 
 - benchmark before and after LOD generation from a clean Whiterun save
 - temporarily disable `A Clear Map of Skyrim and Other Worlds` during benchmarking
-- check the STEP benchmark view outside Whiterun looking west
+- check the benchmark view outside Whiterun looking west
 - sanity-check the Rift with `cow tamriel 40 -24`
+
+### Smoke Test — Full Build
+
+1. Start a fresh game with your chosen alternate-start mod.
+2. Complete character creation — verify facegen, body, and UI all render.
+3. Exit the starting area and enter the open world.
+4. Test a cell transition (enter/exit a building).
+5. Fast-travel between two discovered locations.
+6. Verify no missing meshes (purple exclamation marks), no infinite loading screens, and no CTD within the first 30 minutes of play.
 
 ## Final Notes
 
