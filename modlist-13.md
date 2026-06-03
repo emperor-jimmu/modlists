@@ -71,6 +71,8 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 ### Suggested Options
 
 - Tracking support: `The Curator's Companion` as the leading companion mod for collection-state visibility.
+- Achievement framework route: `Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/126220>
+- Museum-achievement package route: `Legacy of the Dragonborn - Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130114>
 - Patch support: `Legacy of the Dragonborn Patches (Official)` as the expected main patch package.
 - Additional included ecosystem entries: keep the user-provided Nexus pages `13279`, `16080`, and `131107` in the LoTD support bucket for this modlist.
 - Additional submods: only add museum-side submods or display extensions if they solve a real usability or integration problem in the finalized stack.
@@ -81,6 +83,7 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - It increases patching pressure across quests, artifacts, and world-content mods, so late list churn becomes more expensive.
 - Museum-first progression can change the perceived value of loot and unique-item mods in ways that affect later curation decisions.
 - Utility add-ons can accumulate quickly if every museum friction point gets its own extra plugin.
+- Achievement-side add-ons should stay scoped: `Achievement Injector` is the framework, while `Legacy of the Dragonborn - Achievement Injector` is only one content package that uses it.
 
 ## What Elder Wilds Should Prioritize
 
@@ -96,6 +99,8 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - Verify the canonical Nexus page for `Legacy of the Dragonborn` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/11802>**
 - Verify the canonical Nexus page for `The Curator's Companion` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/38529>**
 - Verify the canonical Nexus page for `Legacy of the Dragonborn Patches (Official)` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/30980>**
+- Verify the canonical Nexus page for `Achievement Injector` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/126220>**
+- Verify the canonical Nexus page for `Legacy of the Dragonborn - Achievement Injector` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/130114>**
 - Re-open the user-provided Nexus pages `13279`, `16080`, and `131107` in an interactive browser session later to record their exact canonical mod titles alongside the already-supplied URLs.
 - As `modlist-08.md` and later content sections expand, record which chosen mods have official `Legacy of the Dragonborn` support and which require third-party patches.
 - Decide whether any museum-side submods beyond `The Curators Companion` are justified by actual play friction rather than by ecosystem sprawl.
@@ -105,5 +110,6 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 
 - `Elder Wilds` explicitly treats `Legacy of the Dragonborn` as a supported core content pillar.
 - The master mod, key companion utility, and official patch collection are identified in one dedicated section file.
+- The museum-achievement route is documented with the framework mod and the LoTD-specific achievement package kept distinct.
 - Later quest and content decisions can refer back to a clear `Legacy of the Dragonborn` integration policy.
 - Only verified Nexus URLs should be added to `mods-checklist.md` once link verification is complete.

@@ -355,6 +355,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Casting Bar` | `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/80455> |
 | `moreHUD SE` | `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/12688> |
 | `moreHUD Inventory Edition` | `moreHUD SE`, `SkyUI`, `SKSE64` | <https://www.nexusmods.com/skyrimspecialedition/mods/18619> |
+| `Infinity UI` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/74483> |
+| `Local Map Upgrade` | `SKSE64`, `Address Library for SKSE Plugins`, `Infinity UI` | <https://www.nexusmods.com/skyrimspecialedition/mods/129756> |
 | `SkyUI Item Card Fixes` | `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/29116> |
 | `Aura's Inventory Tweaks (More SkyUI Icons Sorting Options and More)` | `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/68557> |
 | `Weapon Stat Viewer V2` | `SkyUI` | <https://www.nexusmods.com/skyrimspecialedition/mods/127249> |
@@ -391,6 +393,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - Three paper-map mods are listed: `FWMF` (the framework, locked), `Mirhayasu` (locked), and two non-locked extras (`Immersive Paper Map (3rd Edition)` is standalone; `FreelanceCartography` is a FWMF alternative). The Mirhayasu map is the locked pick per AGENTS.md. The other two are candidates to drop in a future pass unless intentional; flagging for review.
 - `iHUD`, `Wheeler`, `Prisma UI`, and `Stats Tracker Menu` are SKSE plugins and were given `SKSE64`. `Wheeler` and `Stats Tracker Menu` also need `SkyUI` for the MCM/faction-config integration.
 - `Casting Bar` is treated as a SKSE-based UI plugin because the mod page and tags identify it as an SKSE mod, but the public page text does not surface a longer hard-requirements list. No `SkyUI` or `Address Library` requirement was added without page evidence.
+- `Infinity UI` is added here as a UI-side SKSE framework because `Local Map Upgrade` surfaces it in the Nexus dependency links alongside `SKSE64` and `Address Library for SKSE Plugins`.
+- `Local Map Upgrade` is a local-map SKSE plugin, not a replacement for the `FWMF` world-map framework. Its public page text points users to the Nexus dependencies dropdown and explicitly warns that ignoring those dependencies can cause CTDs; the surfaced dependency links were `SKSE64`, `Address Library for SKSE Plugins`, and `Infinity UI`. `SkyUI` is mentioned only for compatibility, not as a hard requirement.
 - `UIExtensions` was already implicitly required by `EFF - Extensible Follower Framework` in section 05; placing it here as a UI utility is the more natural home and the dep is now explicit.
 - `Oathvein UI` is the active UI-overhaul pick and is shown with `SkyUI` + `SKSE64` as its install requirements.
 - Four new interface entries (`More Informative Console`, `Quest Journal Fix for SkyUI`, `SkyUI Ghost Item Bug Fix`, `Yes Im Sure NG`) were added from the STEP 2.3 16-Interface section (verified June 2026). They are complementary QoL/fix mods that do not overlap with the existing UI picks. `More Informative Console` requires `SKSE64` (41k endorsements); the other three are SkyUI-specific UI fixes.
@@ -651,6 +655,8 @@ _No specific mods recorded yet in this section._
 | Mod | Dependencies | URL |
 | --- | --- | --- |
 | `Legacy of the Dragonborn SSE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/11802> |
+| `Achievement Injector` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/126220> |
+| `Legacy of the Dragonborn - Achievement Injector` | `Achievement Injector`, `Legacy of the Dragonborn SSE` | <https://www.nexusmods.com/skyrimspecialedition/mods/130114> |
 | `Legacy of the Dragonborn - The Curator's Companion` | `Legacy of the Dragonborn SSE` | <https://www.nexusmods.com/skyrimspecialedition/mods/38529> |
 | `Legacy of the Dragonborn Patches (Official)` | `Legacy of the Dragonborn SSE` | <https://www.nexusmods.com/skyrimspecialedition/mods/30980> |
 | `Paintings Replacer for Legacy of the Dragonborn SSE` | `Legacy of the Dragonborn SSE` | <https://www.nexusmods.com/skyrimspecialedition/mods/13279> |
@@ -660,6 +666,8 @@ _No specific mods recorded yet in this section._
 ### Notes
 
 - Verified canonical URL for `Legacy of the Dragonborn SSE` is `mods/11802` (author `icecreamassassin`, current version 6.10.1 as of 2026-05-22). The page lists `LoTD Patches (Official)`, `SKSE64`, and `SkyUI` as **OPTIONAL** requirements (notes say "Required for SKSE enabled functions v3.0+" and "Required for MCM Menus v3.0+") so they are not listed as hard deps in the table. In practice, `SKSE64` and `SkyUI` are installed as part of the elder-wilds foundations stack and `LoTD Patches (Official)` is installed in the same section.
+- `Achievement Injector` explicitly lists only `SKSE64` and `Address Library for SKSE Plugins` under its requirements. The page has a `SkyUI` tag and documents menu/MCM behavior, but its own requirements text says those two are the required baseline, so the row keeps only those hard deps.
+- `Legacy of the Dragonborn - Achievement Injector` explicitly requires `Achievement Injector` and `Legacy of the Dragonborn SSE`. Its description also states `No TCC required!`, so `The Curator's Companion` is intentionally not listed as a dependency.
 - `Legacy of the Dragonborn - The Curator's Companion` is a HUD/tracker add-on for the museum; originally by `Ic0nIc0de`, now maintained by `icecreamassassin` (per the 2021-11-12 sticky on the mod page). The page does not list `Legacy of the Dragonborn SSE` as a Nexus requirement, but it is functionally a hard dep; included in the table.
 - `Legacy of the Dragonborn Patches (Official)` is the curated patch hub for LoTD integration with other popular mods. Authored by the LoTD team.
 - The three "LoTD-related mod (Nexus ID …)" placeholders in the original checklist have been resolved: `13279` = `Paintings Replacer for Legacy of the Dragonborn SSE` (by `b7ll`), `16080` = `Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art` (by `jpvilela32`), `131107` = `Placeable Display Cases` (by `icecreamassassin`).

@@ -121,6 +121,7 @@
 ### Options
 
 - Framework route: `Flat World Map Framework (FWMF)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29932>
+- Local-map companion route: `Local Map Upgrade` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129756>
 - Balanced paper route: `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53788>
 - Richly styled route: `Immersive Paper Map (3rd Edition)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54710>
 - Cartography-focused route: `Skyrim Paper Map by FreelanceCartography for FWMF` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78995>
@@ -128,21 +129,24 @@
 ### Recommendation
 
 - Treat `Flat World Map Framework (FWMF)` as the non-negotiable foundation for this direction.
+- Add `Local Map Upgrade` as the local-map-side companion. It improves the interior and close-range navigation layer without replacing the world-map framework, so it fits under the same map-ownership decision rather than competing with the paper-map art choice.
 - Start with `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` as the strongest first-pass companion because it looks purposeful without making the map harder to read.
 - Keep `Immersive Paper Map (3rd Edition)` as the moodier, more stylized comparison and `FreelanceCartography` as the more explicitly cartographic comparison.
-- Keep the key question focused on which map art belongs on top of `FWMF`, not whether the project still needs to re-decide the framework.
+- Keep the key question focused on which world-map art belongs on top of `FWMF`, not whether the project still needs to re-decide the framework.
 
 ### Risks & Compatibility
 
 - It is easy to choose map art for style while losing navigational readability.
 - `FWMF` can be treated as if it already answers the map-art decision when it does not.
+- Local-map improvements can get conflated with the world-map overhaul choice even though they solve different problems.
 - Keeping several paper-map directions alive too long creates avoidable ambiguity.
 
 ### Acceptance Criteria
 
 - `Flat World Map Framework (FWMF)` is established as the map foundation.
+- `Local Map Upgrade` is documented as the local-map companion rather than as a replacement for `FWMF` or the paper-map art choice.
 - One clearly preferred FWMF-based map direction exists, with at least two meaningful comparison routes documented.
-- The framework-versus-map-art distinction stays explicit.
+- The distinction between world-map framework, local-map improvements, and map-art selection stays explicit.
 
 ## Magic And Journal Improvements
 

@@ -294,6 +294,8 @@ Install these locked or strongly preferred baseline picks early because later sy
 - `TrueHUD` (<https://www.nexusmods.com/skyrimspecialedition/mods/62775>)
 - `Casting Bar` (<https://www.nexusmods.com/skyrimspecialedition/mods/80455>)
 - `Flat World Map Framework (FWMF)` (<https://www.nexusmods.com/skyrimspecialedition/mods/29932>)
+- `Infinity UI` (<https://www.nexusmods.com/skyrimspecialedition/mods/74483>)
+- `Local Map Upgrade` (<https://www.nexusmods.com/skyrimspecialedition/mods/129756>)
 - `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` (<https://www.nexusmods.com/skyrimspecialedition/mods/53788>)
 - `Compass Navigation Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/74484>)
 - `moreHUD SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/12688>)
@@ -782,7 +784,9 @@ Create or use separator `13 Legacy of the Dragonborn`.
 
 Install:
 
+- `Achievement Injector` (<https://www.nexusmods.com/skyrimspecialedition/mods/126220>)
 - `Legacy of the Dragonborn SSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/11802>)
+- `Legacy of the Dragonborn - Achievement Injector` (<https://www.nexusmods.com/skyrimspecialedition/mods/130114>)
 - `Legacy of the Dragonborn - The Curator's Companion` (<https://www.nexusmods.com/skyrimspecialedition/mods/38529>)
 - `Legacy of the Dragonborn Patches (Official)` (<https://www.nexusmods.com/skyrimspecialedition/mods/30980>)
 
