@@ -110,6 +110,7 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `True Light`                                           | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/135488> |
 | `Window Shadows Ultimate`                              | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/150494> |
 | `iLluminous Elementals`                                | _None_                                       | <https://www.nexusmods.com/skyrimspecialedition/mods/138128> |
+| `Embers XD`                                            | _None_ (compatible with `Community Shaders`; `CS Light` has a dedicated FOMOD option for it) | <https://www.nexusmods.com/skyrimspecialedition/mods/37085>  |
 
 ### Weather and Atmosphere
 
@@ -421,6 +422,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Time Flies SE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/39426> |
 | `Dynamic Timescale - Remade` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/141531> |
 | `Seasonal Calendar (for seasonal mods)` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/18164> |
+| `Seasons of Skyrim SKSE` | `SKSE64`, `Address Library for SKSE Plugins` | <https://www.nexusmods.com/skyrimspecialedition/mods/62861> |
+| `Turn of the Seasons` | `Seasons of Skyrim SKSE` | <https://www.nexusmods.com/skyrimspecialedition/mods/63623> |
 | `Carriage and Ferry Travel Overhaul (Formerly Complete Fast Travel Overhaul)` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/8379> |
 | `Carriage Stops of Skyrim` | `Carriage and Ferry Travel Overhaul (Formerly Complete Fast Travel Overhaul)` | <https://www.nexusmods.com/skyrimspecialedition/mods/10434> |
 | `Fast Travel Cost` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/20200> |
@@ -432,6 +435,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Spaghetti's Cities - AIO` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/84735> |
 | `Dawn of Skyrim (Director's Cut) SE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/9074> |
 | `JK's Skyrim` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/6289> |
+| `Northern Roads` | _None_ (requires patch collection for Lux Via, JK's Skyrim, NGIO, Alternate Perspective, Seasonal Landscapes) | <https://www.nexusmods.com/skyrimspecialedition/mods/77530> |
+| `Northern Roads Patch Collection` | `Northern Roads` | <https://www.nexusmods.com/skyrimspecialedition/mods/77386> |
 | `Ancient Land` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/22900> |
 | `Interesting Roads` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/42749> |
 | `Point The Way` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/352> |
@@ -449,6 +454,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - `Spaghetti's Cities - AIO`, `Dawn of Skyrim (Director's Cut) SE`, and `JK's Skyrim` are city overhauls that overlap in scope and may conflict. The lock is to choose one (typically `JK's Skyrim` or `Dawn of Skyrim`) and run a patch, or use `Spaghetti's Cities AIO` as the consolidated option. Flagging for user confirmation; current checklist has all three.
 - `Time Flies SE` and `Dynamic Timescale - Remade` both scale time and are mutually exclusive; only one should be installed.
 - `Extended Encounters`, `Radiance Encounters`, and `Immersive Patrols SE AE` are encounter/population mods that may overlap. Run only one of the encounter mods (`Extended Encounters` or `Radiance Encounters`) plus `Immersive Patrols` to avoid NPC/event overlap.
+- `Seasons of Skyrim SKSE` (62861) is the main SKSE-based seasonal framework. `Turn of the Seasons` (63623) adds distinct visual assets for Spring, Summer, and Autumn on top of it; install as a companion only if the framework is adopted. Both require a DynDOLOD rebuild per season (4× LOD passes) and NGIO grass caches per season — see the `Road Network` subsection in modlist-07.md for the NGIO patch requirement.
+- `Northern Roads` (77530) is a full road-geometry overhaul. The `Northern Roads Patch Collection` (77386) is mandatory alongside it and includes patches for `Lux Via`, `JK's Skyrim`, `Alternate Perspective`, `Seasonal Landscapes`, and `NGIO`. Load `Northern Roads` after city-overhaul plugins and before most grass/lighting plugins, with the patch collection above it.
 
 ## World Content
 

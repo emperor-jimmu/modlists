@@ -50,7 +50,7 @@
 - High-end option:
 - Balanced stack plus `Subsurface Scattering - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114114> and `Screen Space Global Illumination (SSGI)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130375>
 - Fire-and-particle companion:
-- `Embers XD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37085>
+- `Embers XD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37085> (works with `Community Shaders`; `CS Light` ships a dedicated `Embers XD` FOMOD config that routes particle lights through `Light Limit Fix` cleanly)
 - Sky-driven lighting companion:
 - `Skylighting - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139352>
 - Support-only branch:
@@ -62,7 +62,7 @@
 - Promote to the balanced option only after trees, grass, weather, water, and LOD choices are stable enough that the extra depth is worth measuring.
 - Treat `SSGI` as an optional luxury feature, not a baseline requirement.
 - Treat `Light Limit Fix` as a legacy or version-check item, not a default inclusion.
-- Treat `Embers XD` as the fire and ember category answer rather than pretending the rest of the CS stack covers that visual gap by itself.
+- Treat `Embers XD` as the fire and ember category answer rather than pretending the rest of the CS stack covers that visual gap by itself. It is the standard Community Shaders fire-and-particle pick: 140K+ endorsements, actively maintained, and `CS Light` has a dedicated FOMOD option for it. Install it after the main lighting overhauls (Lux, ELFX) so it can inherit their campfire and hearth placements.
 - Treat `Skylighting - Community Shaders` as the world-space sky shadow layer. It casts believable sky-driven shading across terrain and objects, adds large-scale directional ambient illumination from the sky, and pairs cleanly with the conservative option without requiring the balanced or high-end option. Worth including on the conservative baseline for an authentic 4K grim-dark look.
 - Use `Skyrim Upscaler` only if real performance testing proves it is needed.
 

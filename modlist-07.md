@@ -12,12 +12,15 @@
 - Action-time route: `Time Flies SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/39426>
 - Dynamic-timescale route: `Dynamic Timescale - Remade` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/141531>
 - Seasonal-calendar route: `Seasonal Calendar (for seasonal mods)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18164>
+- Seasonal-world-change route: `Seasons of Skyrim SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62861>. A SKSE-based seasonal framework that dynamically swaps terrain textures, tree models, grass, LOD, and snow coverage across four calendar seasons. Uses model and terrain swap support rather than a script loop, so performance cost is low once LOD is pre-generated per season. Requires a DynDOLOD rebuild per season — meaning 4× LOD generation — and needs `No Grass In Objects` grass caches per season. A separate companion, `Turn of the Seasons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63623>, adds distinct visual assets for Spring, Summer, and Autumn on top of the core framework. A `Northern Roads - Seasonal Landscapes Patch` exists (in the Northern Roads Patch Collection at <https://www.nexusmods.com/skyrimspecialedition/mods/77386>) for the full seasonal road texture swap.
 
 ### Recommendation
 
 - Start with `Time Flies SE` as the strongest first-pass baseline because it makes ordinary play loops feel more grounded without turning the whole subsection into abstract clock tuning.
 - Keep `Dynamic Timescale - Remade` as the meaningful comparison if the project wants softer pacing control through environment-aware time shifts instead of direct action-time costs.
 - Keep `Seasonal Calendar` as the narrower companion if the final weather-and-season direction makes explicit calendar readability worthwhile.
+- Treat `Seasons of Skyrim SKSE` as the high-commitment seasonal-world branch. It is a mature, well-supported framework (actively maintained as of mid-2025) and delivers genuinely dramatic seasonal world changes. The cost is real: four separate DynDOLOD generation passes, four grass caches, and a meaningful patch footprint (Lux, the grass stack, tree mods, Northern Roads if present). Only adopt it if the project is prepared to own that LOD-generation workflow — but if the list is already running DynDOLOD for a 4K setup, the additional passes are the main extra cost and the payoff is substantial.
+- Add `Turn of the Seasons` as a companion to the framework only if `Seasons of Skyrim SKSE` is adopted; it adds visual assets for the three non-winter seasons and is worth having if seasons are a real part of the list identity.
 - Preserve boundaries with later travel rules, survival pacing, night visibility, and graphics-side weather decisions.
 
 ### Risks & Compatibility
@@ -25,12 +28,14 @@
 - Slowing time can make ordinary play feel dutiful instead of immersive.
 - Using multiple pacing systems at once makes it harder to understand why time feels right or wrong.
 - Calendar visibility can be treated as inherently valuable when the list may not need more on-screen date awareness.
+- `Seasons of Skyrim SKSE` multiplies LOD generation work and interacts with tree overhauls, grass mods, and road mods. Do not treat it as a casual add-on; it is a workflow commitment.
 
 ### Acceptance Criteria
 
 - `Elder Wilds` has one clearly preferred timescale baseline, one meaningful alternate pacing route, and one narrower calendar companion.
-- The distinction between action-time costs, dynamic timescale control, and calendar visibility is explicit.
+- The distinction between action-time costs, dynamic timescale control, calendar visibility, and full seasonal world-change is explicit.
 - The chosen direction strengthens world scale and day rhythm without turning ordinary play into constant bookkeeping.
+- If `Seasons of Skyrim SKSE` is adopted, the LOD-rebuild workflow per season is documented before it is locked in.
 
 ## Travel Pacing And Carriage Fast Travel Rules
 
@@ -225,6 +230,44 @@
 - `Elder Wilds` has one clearly preferred wildlife-variety baseline, one ecology-tuning comparison, and one heavier danger-oriented creature branch.
 - The distinction between wildlife variety, ecology tuning, and heavier creature-pressure philosophy is explicit.
 - The wilderness feels more biologically alive without turning every journey into constant creature interruption.
+
+## Road Network And Surface Overhaul
+
+### Core Idea
+
+- This subsection owns the physical road network: whether the roads themselves — their shape, surface, borders, and relation to surrounding terrain — feel like built infrastructure or just a painted texture on the ground.
+- It is separate from roadside landmark density (above) and from road-texture ownership in `modlist-02.md`. This section is about authored road geometry and placement, not surface materials.
+
+### Options
+
+- Full road-network overhaul: `Northern Roads` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77530>. A complete authored rework of every road in Skyrim: new meshes, curbs, road edges, surfaces, bridges, and border geometry. Includes a script-free fast-travel disabler as an optional feature. Actively maintained, with dedicated patch collections for the major mods in this stack.
+- Discipline-first route: keep vanilla road geometry and let `modlist-02.md` texture replacers carry all the road visual improvement, with no new geometry added.
+
+### Recommendation
+
+- Use `Northern Roads` as the baseline if the project wants roads to feel built rather than cosmetically improved. It is the only authored road-network overhaul at this scale and it directly serves the "big, awe-inspiring world" pillar by making roads read as deliberate features of the landscape rather than navigation guides stamped onto terrain.
+- The patch burden is real and must be managed explicitly. The official `Northern Roads Patch Collection` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77386> covers the major intersections needed for this stack:
+  - `Lux Via` patch (needed since `Lux Via` edits road lantern and light placement)
+  - `JK's Skyrim` patch (city-road edge compatibility)
+  - `Seasonal Landscapes` patch (if `Seasons of Skyrim SKSE` is adopted)
+  - `Alternate Perspective` patch (start-location compatibility)
+  - `No Grass In Objects` / `NGIO` patch (NGIO does not recognize Northern Roads roads by default without the patch)
+  - `Complex Parallax Texture for Northern Roads` companion for the PBR pipeline
+- Keep the discipline-first route alive if real testing shows that the patch footprint is too unstable at this stack's complexity level.
+
+### Risks & Compatibility
+
+- `Northern Roads` is a serious worldspace edit. Every mod that touches roads, outskirts, settlement edges, or landscape near a road is a potential patch need. The patch collection is mature, but new content mods added after the road network is locked may not have patches yet.
+- The `NGIO` grass cache must be regenerated for `Northern Roads` to prevent grass bleeding onto road surfaces.
+- `Northern Roads` ships a fast-travel disabler. This overlaps with the travel-pacing philosophy in the subsection above; decide explicitly whether to keep or disable that feature rather than leaving it at the default.
+- Load order placement matters: `Northern Roads` should load after city-overhaul plugins (`Spaghetti's Cities`, `JK's Skyrim`) but before most lighting and grass plugins, with the patch collection above it.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one explicit road-network decision: `Northern Roads` or disciplined vanilla geometry.
+- If `Northern Roads` is adopted, the required patch set (Lux Via, JK's Skyrim, NGIO, Alternate Perspective, Seasonal Landscapes if seasons are active) is recorded before the mod is locked in.
+- The fast-travel-disabler feature decision is documented alongside the adoption decision, not deferred.
+- Road surfaces feel like constructed features of the world rather than textured stripes on flat terrain.
 
 ## Night Darkness And Visibility Balance
 
