@@ -279,6 +279,9 @@
 - Weird Dwemer-side branch: `The Wheels of Lull - Unwound Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/748>
 - Legacy comparison point: `Falskaar` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2057>
 - AE-gated caution branch: `Sirenroot - Deluge of Deceit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/70917>
+- Creation-overhaul route: `Saints and Seducers Extended Cut` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72772>. A fully-voiced overhaul of the Saints and Seducers Creation that expands it into a proper return-to-the-Shivering-Isles questline with new scenes, locations, and voiced NPCs. Transforms the thin vanilla Creation into a real quest mod.
+- Vanilla-quest-enhancement route: JaySerpa's Quest Expansions — a suite of individual mods that each expand one vanilla quest with new dialogue, scenes, and alternate paths. Key entries: `House of Horrors - Quest Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57285>, `Paarthurnax - Quest Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51711>, `The Only Cure - Quest Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57683>. All fully voiced by JaySerpa, one of the most prolific and well-regarded quest-expansion authors in the SE ecosystem. A central patches hub exists at Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113083>.
+- Custom-follower-with-quest route: `Val Serano - Pirate Custom Voiced Follower and Quest Adventure` - by Axarien. A fully custom-voiced male pirate follower with ~2000 lines of dialogue and a multi-stage quest adventure. Has LoTD museum integration via the Followers Patch at Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/40816>. _(Nexus URL pending verification — unable to confirm base mod page ID via search.)_
 
 ### Recommendation
 
@@ -291,6 +294,9 @@
 - Keep `Beyond Skyrim - Bruma SE` as the clearest expansion-scale comparison if the list wants a polished lore-friendly new-lands branch.
 - Treat `Falskaar` as a legacy comparison point, not a default recommendation.
 - Treat `Sirenroot - Deluge of Deceit` as AE-gated unless later verification proves otherwise; do not let it quietly become a baseline requirement while the project still targets no paid AE dependency.
+- Use `Saints and Seducers Extended Cut` as the default Creation-overhaul pick. Saints and Seducers is already bundled with AE 1.6.1170, but the vanilla Creation quest is thin and undercooked; this overhaul transforms it into a proper Shivering Isles return questline. Essentially free content upgrade that gives the existing Creation real value.
+- Use JaySerpa's Quest Expansions as the default vanilla-quest-enhancement layer. The suite is modular (each mod is standalone), so `Elder Wilds` can pick individual expansions that match the quests the player is most likely to encounter. Start with the three flagship entries (`House of Horrors`, `Paarthurnax`, `The Only Cure`) and expand from there. The mods add meaningful decision branches and alternate paths to vanilla Daedric and story quests without adding new worldspaces or overwhelming the load order.
+- Use `Val Serano - Pirate Custom Voiced Follower and Quest Adventure` as the custom-follower-with-quest baseline. It fills a different niche from the large worldspace mods: a character-driven pirate story with ~2000 voiced lines that integrates into the existing Skyrim world rather than adding a new landmass. Has LoTD museum integration, which matters for `modlist-13.md`. Verify the Nexus URL before final lock-in.
 - Review any chosen quest route later against `modlist-13.md` so `Legacy of the Dragonborn` integration value and patch pressure are considered on purpose.
 
 ### Risks & Compatibility

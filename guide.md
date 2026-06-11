@@ -152,7 +152,6 @@ BethINI Pie must be run from Mod Organizer 2 as an executable so it targets the 
 4. Go to the **View Distance** tab:
    - Leave **Tree LOD Distance** at the High preset default for now. (You will set it to `0` before DynDOLOD generation later.)
 5. Go to the **Visuals** tab:
-   - Set **Max Particle Render Count (Direct)** to `2000`.
    - Set **Max Particle Render Count (GPU)** to `7500`.
    - Untick **Lens Flare** (Community Shaders handles its own post-processing).
 6. Click **Save and Exit**.
@@ -378,6 +377,8 @@ Under `02.13 Character, Skin, And Creature Visuals` install the current stronges
 - `BnP - Male Skin` (<https://www.nexusmods.com/skyrimspecialedition/mods/65402>)
 - `Expressive Facial Animation -Female Edition-` (<https://www.nexusmods.com/skyrimspecialedition/mods/19181>)
 - `Expressive Facial Animation -Male Edition-` (<https://www.nexusmods.com/skyrimspecialedition/mods/19532>)
+- `Expressive Facegen Morphs SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/35785>) if you want the `High Poly Head 1.4` face-mesh branch
+- `High Poly Head 1.4 SE` (official Google Drive mirror: <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi>) if you want the supported high-resolution face-mesh branch
 - `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` (<https://www.nexusmods.com/skyrimspecialedition/mods/69681>)
 - `BodySlide and Outfit Studio`
 - `KS Hairdos SSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/6817>)
@@ -411,6 +412,10 @@ Under `02.12 LOD Generation And Distant Detail`, install the LOD resources now s
 - Roads branch:
     - safer baseline: `Blended Roads - Light Plugin (ESL)` (<https://www.nexusmods.com/skyrimspecialedition/mods/171554>)
     - unresolved heavier branch: `Northern Roads` (<https://www.nexusmods.com/skyrimspecialedition/mods/77530>) if chosen later with dedicated patch planning
+- Face mesh branch:
+    - baseline route stays on the current `RaceMenu SE` + `Expressive Facial Animation` stack without `High Poly Head`
+    - supported higher-resolution route adds `Expressive Facegen Morphs SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/35785>) + `High Poly Head 1.4 SE` (official Google Drive mirror: <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi>)
+    - only take the `High Poly Head` branch if you are willing to absorb extra NPC facegen and headpart patching later
 - Tree branch:
     - `Happy Little Trees` (<https://www.nexusmods.com/skyrimspecialedition/mods/50961>)
     - or `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim` (<https://www.nexusmods.com/skyrimspecialedition/mods/57874>)

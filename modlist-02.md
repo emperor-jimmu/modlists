@@ -702,6 +702,7 @@
 - Use the modular modern route.
 - `CBBE` should be the female body base for `Elder Wilds`.
 - Keep body bases, skin textures, and creature visuals as separate decisions instead of collapsing them into one giant character-overhaul stack.
+- Treat `High Poly Head 1.4` as a supported face-mesh branch rather than a mandatory baseline. Modern curated lists still use it, but it adds enough headpart and NPC-face complexity that it should be an intentional choice instead of an automatic requirement.
 - Delay heavy NPC beauty decisions until the later `NPCs and Creatures` section so this layer stays focused and maintainable.
 - Prioritize presentation that reads well at normal third-person distance, a grounded skin look fitting the colder visual direction, and clean body-base choices that do not create unnecessary armor-refit chaos later.
 
@@ -712,7 +713,16 @@
 - Male body base: `Highly Improved Male Body Overhaul - HIMBO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/74174>
 - Female skin: `BnP - Female Skin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65274>
 - Male skin: `BnP - Male Skin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65402>
+- Supported high-resolution face branch: `High Poly Head 1.4 SE` - official Google Drive mirror: <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi>
+- If `High Poly Head 1.4` is used, pair it with `RaceMenu SE`, `Expressive Facegen Morphs SE`, `Expressive Facial Animation -Female Edition-`, and `Expressive Facial Animation -Male Edition-` so the face-mesh branch stays aligned with the current modern face stack.
 - Chosen female preset: `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/69681>
+
+### Face Mesh Branch Notes
+
+- `High Poly Head 1.4` still has current ecosystem support: it is explicitly used in at least one current `Wabbajack` compilation with a whitelisted Google Drive source, and current `r/skyrimmods` usage shows it remains relevant even if it is no longer a frictionless default.
+- Treat it as a player-face and selective NPC-support branch, not as proof that the whole modlist should pivot into a full beauty-overhaul stack.
+- The strongest modern alternative signal found was `Alternate High Poly Head`, but that mod still depends on the original `High Poly Head 1.4` package rather than replacing it outright.
+- Because headpart mismatches, facegen conflicts, and vampire edge cases are still common, keep downstream patching expectations documented in `modlist-15.md` instead of pretending the face-mesh choice is free.
 
 ### BodySlide And Outfit Studio Install, Setup, And Configuration
 
@@ -768,6 +778,7 @@
 - Choosing a `3BA/3BBB` preset increases female outfit compatibility requirements compared with plain `CBBE`.
 - Letting BodySlide output overwrite source mods would make later auditing and rebuilds much harder.
 - Skin mods that look strong in screenshots can still appear too polished or glossy in actual gameplay lighting.
+- `High Poly Head 1.4` adds headpart and facegen complexity, especially once vampire fixes, NPC overhauls, wig-to-headpart patching, and custom presets enter the stack.
 - Letting this section expand into full NPC beautification would duplicate later planning work.
 
 ### Acceptance Criteria
@@ -775,6 +786,7 @@
 - `CBBE` is established as the female body base and the male-body path is clear enough to support later outfit planning.
 - `CBBE 3BA (3BBB)` and the chosen `FitnessGoal` preset are integrated cleanly enough that female body and outfit generation follow one consistent pipeline.
 - `BodySlide and Outfit Studio` is installed, registered in MO2, and configured to generate into a dedicated `BodySlide Output` mod.
+- `High Poly Head 1.4` is documented as a supported optional branch with its dependency chain and maintenance cost spelled out clearly.
 - Skin textures look believable under the chosen weather and lighting route during normal play.
 - Creature visuals improve the world's overall quality without clashing with the environment stack.
 

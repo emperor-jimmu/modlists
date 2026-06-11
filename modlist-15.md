@@ -689,7 +689,7 @@ The `Synthesis` patcher pipeline runs as a single batch via the `Run Mutagen` to
 #### Stage 1 — NPC, AI, And Facegen
 
 - `KS Hairs Bald Helmets Fixer` — because `Elder Wilds` ships `KS Hairdos SSE` and the bald-head-under-helmet bug is universal.
-- `High Poly Head Vampire Fix` — if `High Poly Head` is added later. (Currently a research item; keep the patcher available.)
+- `High Poly Head Vampire Fix` — keep this in the patcher shortlist whenever the `High Poly Head 1.4` branch is active, because vampire headpart edge cases are still one of the known maintenance costs of that route.
 - `HP_NPC_WIGS_TO_HEADPART` — converts any wig distribution to headparts so `Elder Wilds` headpart inventory stays consistent.
 - `FacegenBaseline` — applies the canonical facegen override from `High Poly True to Vanilla NPC Overhaul` to every named NPC, so facegen does not silently break when the NPC overhaul is updated.
 - `NPCStatRescaler` — rescales NPC stats to keep `Elder Wilds` combat pacing after `MCO ADXP` and `Valhalla Combat` install.

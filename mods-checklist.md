@@ -180,6 +180,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Highly Improved Male Body Overhaul - HIMBO`                    | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/74174>  |
 | `BnP - Female Skin`                                             | `CBBE NSFW - Caliente's Beautiful Bodies Enhancer` | <https://www.nexusmods.com/skyrimspecialedition/mods/65274>  |
 | `BnP - Male Skin`                                               | `Highly Improved Male Body Overhaul - HIMBO`       | <https://www.nexusmods.com/skyrimspecialedition/mods/65402>  |
+| `Expressive Facegen Morphs SE`                                  | `RaceMenu SE`                                      | <https://www.nexusmods.com/skyrimspecialedition/mods/35785>  |
+| `High Poly Head 1.4 SE`                                         | `RaceMenu SE`, `Expressive Facegen Morphs SE`, `Expressive Facial Animation -Female Edition-`, `Expressive Facial Animation -Male Edition-` | <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi> |
 | `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` | `CBBE 3BA (3BBB)`, `BodySlide and Outfit Studio`   | <https://www.nexusmods.com/skyrimspecialedition/mods/69681>  |
 | `BodySlide and Outfit Studio`                                   | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/201>    |
 | `KS Hairdos SSE`                                                | _None_                                             | <https://www.nexusmods.com/skyrimspecialedition/mods/6817>   |
@@ -197,6 +199,8 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 ### Notes
 
 - Three mods were added to this section to satisfy external dependencies surfaced during conversion: `Flora Orientalis` (64041), `Folkvangr - Grass and Landscape Overhaul` (44899), and `Waterplants` (6092). They are all required by `Vinland Grass Patch`.
+- `High Poly Head 1.4 SE` is tracked with the official Google Drive mirror because that is the current surviving distribution path surfaced by modern list usage; treat it as a supported branch, not as a mandatory baseline.
+- `Expressive Facegen Morphs SE` is included because current `Wabbajack`-side `High Poly Head 1.4` guidance pairs it with `RaceMenu` and the two `Expressive Facial Animation` mods.
 
 ## Animations and Movement
 
@@ -493,6 +497,11 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 | `Beyond Skyrim - Bruma SE` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/10917> |
 | `Beyond Reach` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/3008> |
 | `The Wheels of Lull - Unwound Edition` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/748> |
+| `Saints and Seducers Extended Cut` | _Saints and Seducers Creation (included in AE 1.6.1170)_ | <https://www.nexusmods.com/skyrimspecialedition/mods/72772> |
+| `House of Horrors - Quest Expansion` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/57285> |
+| `Paarthurnax - Quest Expansion` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/51711> |
+| `The Only Cure - Quest Expansion` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/57683> |
+| `Val Serano - Pirate Custom Voiced Follower and Quest Adventure` | _None_ | _(URL pending verification)_ |
 | `Leaf Rest` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/15191> |
 | `Heljarchen Farm` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/4108> |
 | `LC_Build Your Noble House` | _None_ | <https://www.nexusmods.com/skyrimspecialedition/mods/18308> |
@@ -510,6 +519,9 @@ Download checklist for every mod referenced in the plan, grouped by section. Eac
 - `The Great Cities` is a deliberate second-step decision per AGENTS.md (tone-fit tradeoff flagged earlier in section 02 Notes). Listed here as a candidate; final pick happens in MO2 install.
 - `The Great Cities - Minor Cities and Towns SSE Edition` is an add-on for `The Great Cities`; hard-requires the parent mod.
 - The standalone worldspace quest mods (`VIGILANT SE`, `Wyrmstooth`, `Falskaar`, `Moon and Star`, `Beyond Skyrim - Bruma`, `Beyond Reach`, `The Wheels of Lull`, `Sirenroot`, `The Forgotten City`) are all heavy new-worldspace content. Most modlists do not install all of these; they overlap in scope and the list should be trimmed per the elder-wilds content strategy. Flagging for review in modlist-08.md `Expanded Worldspaces` subsection.
+- `Saints and Seducers Extended Cut` requires only the free Creation already bundled with AE 1.6.1170; no paid content dependency.
+- JaySerpa's Quest Expansions (`House of Horrors`, `Paarthurnax`, `The Only Cure`) are modular and lightweight — each one is an independent ESL-flagged plugin. Additional JaySerpa expansions exist and can be added individually later (e.g. `Caught Red Handed`, `Destroy the Dark Brotherhood`, `Dragonslayer`).
+- `Val Serano` Nexus URL needs verification via Playwright or direct browsing before final lock. The mod is by Axarien, has LoTD museum integration via the Followers Patch (mod 40816), and multiple replacer/patch mods confirm its existence and active maintenance.
 - `Heljarchen Farm`, `Windstad Mine`, `Leaf Rest`, `Blackthorn`, and `LC_Build Your Noble House` are all player-built settlements; overlapping scope. A 1-2 pick is usually enough. Flagging.
 - `Simple Fishing Overhaul` and `Hunterborn SE` are mid-weight gameplay loops; `Streamlined Fishing` is a lighter alternative. Pick one of the fishing overhauls.
 - `Immersive Weapons` and `Immersive Armors` are large content-add packs with potential lore/leveled-list overlap. Often load near the bottom of the load order; verify with section 14 testing plan.
