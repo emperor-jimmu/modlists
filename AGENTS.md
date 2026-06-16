@@ -12,7 +12,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 ## What This Repo Is
 
-- This repo is a markdown planning workspace, not an application codebase. The source of truth is the `modlist*.md` files plus `mods-checklist.md`.
+- This repo is a markdown planning workspace, not an application codebase. The source of truth is the `modlist*.md` files.
 - The end deliverable of this planning workspace is `guide.md` — the practical, step-by-step installation guide for the Elder Wilds modlist. Every planning file, mod pick, and decision flows toward making `guide.md` an actionable document that a user can follow in Mod Organizer 2.
 - There is no build, test, lint, CI, or package-manager workflow to run here.
 
@@ -20,7 +20,6 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 - `modlist.md` is the hub file only: project scope, setup/install/tooling guidance, research workflow, and the index to numbered section files.
 - Each numbered `modlist-XX.md` file owns one second-level planning section. Keep the numbering aligned with the index in `modlist.md`.
-- `mods-checklist.md` is the download checklist for concrete mod picks. When a section adds, removes, or changes a recommended mod, sync the checklist in the same pass.
 - `separators.md` is the canonical ordered reference for `Mod Organizer 2` separators derived from the current modlist structure.
 - `TODO.md` is a scratch backlog of ideas and possible future research, not an authoritative recommendation list.
 
@@ -56,15 +55,12 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - Use Playwright when necessary to browse and verify pages on NexusMods rather than relying on memory alone.
 - Always use Reddit as part of mod research, with `r/skyrimmods` as the primary subreddit for community-signal checks before locking recommendations.
 - Prefer canonical base mod pages. Avoid using translation, patch, preset, or add-on pages as the main recommendation unless the section explicitly calls for that type of file.
-- `mods-checklist.md` should contain concrete mod downloads with Nexus URLs only after the page has been verified.
-- Before adding a mod recommendation to any `modlist*.md` section, check `mods-checklist.md` so you do not add a mod that is already present in the modlist planning set.
 
 ## Research Workflow
 
 - The repo’s planning flow is section-by-section, one category at a time.
 - Prefer executable/observable evidence over memory: existing repo content, verified Nexus pages, current file state, and Reddit discussion signal.
 - Check `r/skyrimmods` for each active research area as the default Reddit source, and only fall back to broader Reddit searching when `r/skyrimmods` does not provide enough signal.
-- Use `mods-checklist.md` as the duplicate-check reference before introducing new concrete mod picks into the numbered section files.
 - Before expanding a numbered section, scan for duplicated ownership, repeated rationale, and boilerplate headings so new writing does not reintroduce the same cleanup problems fixed in sections `01`, `03`, `04`, and `09`.
 - When updating repository guidance, align `AGENTS.md` to the actual current `modlist.md` index and numbered section file titles rather than older assumptions about section names or completion state.
 - Keep `separators.md` aligned with the current `modlist-XX.md` section and stub structure when separators are added, renamed, or reorganized.

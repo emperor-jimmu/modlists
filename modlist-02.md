@@ -461,7 +461,6 @@
 #### Roads
 
 - `Blended Roads - Light Plugin (ESL)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171554>
-- `Northern Roads` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77530> remains the main high-maintenance comparison route and the patch-heavy benchmark.
 
 #### Snow And Support
 
@@ -473,7 +472,6 @@
 
 ### Risks & Compatibility
 
-- `Northern Roads` can become a patch sink once outskirts, bridges, Lux Via, settlements, and worldspace edits start stacking.
 - Snow can look good in isolation and fail once mixed with mountains, roads, and weather-heavy scenes.
 - Heavy terrain parallax can look impressive up close while adding artifact risk or visual noise in motion.
 

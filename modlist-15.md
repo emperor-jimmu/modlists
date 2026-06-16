@@ -476,7 +476,6 @@
   - `Spells-Scrolls-Staves` — generic spell/scroll/staff patcher
 - **Region, world, water, snow, weather**:
   - `Unique Region Names` / `Unique Region Names Patcher` — replace `Open Skyrim` / door text with real region names
-  - `NorthernRoadsPatcher` — patcher for `Northern Roads`
   - `LandscapePatcher` — generic landscape patcher
   - `DestructibleSkyrimPatcher` — apply `Destructible Skyrim` to mod-placed objects
   - `RealisticWaterTwoPatcher` — forward `Realistic Water Two` edits
@@ -763,7 +762,6 @@ The `Synthesis` patcher pipeline runs as a single batch via the `Run Mutagen` to
 - `Nights Adjuster` and `Darker Weather Nights` — pick one (not both) and configure to match the night darkness target in `modlist-02.md`.
 - `SkyVRaan Weather Patcher` — only if `SkyVRaan` is added.
 - `Unique Region Names` and `Unique Region Names Patcher` — pick one and use it to relabel exterior region names from `Skyrim` to the actual region (`Whiterun`, `The Rift`, etc.). Required because `Bruma`, `Falskaar`, and `Wyrmstooth` all need consistent region naming.
-- `NorthernRoadsPatcher` — only if `Northern Roads` is ever added; the current baseline is `Blended Roads - Light Plugin`.
 - `RealisticWaterTwoPatcher` — forwards `Realistic Water Two` records so they do not get overwritten by other worldspace mods.
 - `Synthesis-BlendedShorelinesUniversal` — adjusts water values to blend with shores; required because `Spaghetti's Cities`, `Bruma`, and `JK's Skyrim` change shoreline geometry.
 - `LandscapePatcher` — only enable if the existing landscape texture stack is replaced; current stack (`Skyland AIO` + `Skurkbro's` + `Skyking Fantasia` + `Rally's Solstheim` + `Enhanced Rocks and Mountains`) is the lock-in.

@@ -341,6 +341,37 @@
 - The difference between a more extensible category system and a vanilla-style category fallback is explicit.
 - The ownership boundary with gameplay-side crafting decisions in `modlist-05.md` remains clear.
 
+## Loading Screens
+
+### Core Idea
+
+- This subsection owns the loading screen layer: what players see during area transitions, how the visual presentation connects to the game's tone, and whether loading feels like part of the game world or a dead pause.
+- It is purely cosmetic — no scripts, no worldspace edits, no gameplay hooks.
+
+### Options
+
+- Art-replacer route: `The Elder Scrolls Legends - Loading Screens` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37929>. Adds 110 high-quality lore-friendly artworks from The Elder Scrolls: Legends card game as loading screens. Works as a vanilla replacer and alongside vanilla loading screens. Supports 16:9, 16:10, 21:9, and 4:3 aspect ratios. Version 2.1.1, last updated June 2023. 10,632 endorsements, 725k unique downloads.
+- Vanilla discipline route: keep default Skyrim loading screens and let the rest of the UI stack define the visual identity.
+
+### Recommendation
+
+- Set `The Elder Scrolls Legends - Loading Screens` as the locked baseline. The artwork matches the grim-dark fantasy tone of `Elder Wilds` and the mod is purely asset-based with zero compatibility concerns — no vanilla records are touched.
+- Install at 100% frequency to fully replace vanilla loading screens. This eliminates the jarring shift from a modernized UI stack to dated vanilla loading art.
+- Select the 16:9 aspect ratio variant to match the `4K` display target, and use the `Fixed Height` border setting to avoid black bars on the 16:9 display.
+- The optional text-free variant removes the Legends card-game UI text for players who want only the artwork. The default text variant includes lore-friendly messages alongside the art.
+
+### Risks & Compatibility
+
+- Compatible with all mods — no vanilla records changed.
+- At 100% frequency, vanilla lore loading tips (some of which provide useful gameplay hints) are suppressed. Players new to Skyrim may miss these tips. Mitigation: the text variant includes lore-friendly descriptions alongside the art.
+- Some Legends artworks are wider than 16:9 (designed for 21:9). The `Fixed Height` border setting crops the sides on ultra-wide images, which may cut off edges. The mod author selected images so no critical content is lost in the crop.
+
+### Acceptance Criteria
+
+- `modlist-06.md` has one locked loading screen baseline: `The Elder Scrolls Legends - Loading Screens`.
+- The choice of 100% frequency and 16:9 aspect ratio is documented.
+- The decision between text and text-free variant is left to install-time preference.
+
 ## Accessibility And Readability Improvements
 
 ### Core Idea

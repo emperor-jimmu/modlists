@@ -4,15 +4,12 @@ Target build: Skyrim Special Edition / Anniversary Edition runtime `1.6.1170` vi
 
 This guide turns the planning files into an install order that can actually be followed in `Mod Organizer 2` (<https://github.com/ModOrganizer2/modorganizer/releases>).
 
-This is not a "install every mod in `mods-checklist.md`" dump. Several sections are still active research areas, so this guide marks those branch points explicitly as `Choice Required` instead of pretending they are already locked.
-
 ## How To Use This Guide
 
 - Follow the steps in order.
 - Create the exact separators named in this guide.
 - Install one mod at a time inside each separator unless a subsection is clearly a tight dependency cluster.
 - When this guide says `Choice Required`, pick one path before continuing.
-- Do not install every candidate from open sections just because it appears in `mods-checklist.md`.
 - Keep generated files in dedicated output mods. Do not let them pile up in `Overwrite`.
 
 ## Step 1. Prepare Skyrim And Tool Folders
@@ -410,8 +407,7 @@ Under `02.12 LOD Generation And Distant Detail`, install the LOD resources now s
     - preferred current comparison: `A Water Made For CS in mind` (<https://www.nexusmods.com/skyrimspecialedition/mods/172959>)
     - alternative branch: `Simplicity of Sea - Water Color and Transparency Tweaks` (<https://www.nexusmods.com/skyrimspecialedition/mods/148761>) + `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` (<https://www.nexusmods.com/skyrimspecialedition/mods/56520>)
 - Roads branch:
-    - safer baseline: `Blended Roads - Light Plugin (ESL)` (<https://www.nexusmods.com/skyrimspecialedition/mods/171554>)
-    - unresolved heavier branch: `Northern Roads` (<https://www.nexusmods.com/skyrimspecialedition/mods/77530>) if chosen later with dedicated patch planning
+    - baseline: `Blended Roads - Light Plugin (ESL)` (<https://www.nexusmods.com/skyrimspecialedition/mods/171554>)
 - Face mesh branch:
     - baseline route stays on the current `RaceMenu SE` + `Expressive Facial Animation` stack without `High Poly Head`
     - supported higher-resolution route adds `Expressive Facegen Morphs SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/35785>) + `High Poly Head 1.4 SE` (official Google Drive mirror: <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi>)
