@@ -462,6 +462,7 @@
 #### Roads
 
 - `Blended Roads - Light Plugin (ESL)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171554>
+- `HD Remastered Blended Roads - 8k 4k 2k 1k` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63674> — HD hand-made rework of Blended Roads surface textures, designed to pair with the landscape stack. Requires Blended Roads as a base. Choose 2K for performance, 4K for the visual sweet spot; 8K is overkill at this modlist's resolution targets.
 
 #### Snow And Support
 
@@ -795,6 +796,7 @@ Male variety on `HIMBO`:
 
 - `HIMBO SliderPresets Pack 02` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176023> — 10 HIMBO presets for male body diversity.
 - `The Common Guy - SerketHetyt's HIMBO Preset` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111807> — a grounded, realistic male preset.
+- `Greek God -- HIMBO Bodyslide Preset` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54349> — muscular/athletic physique for male variety. Adult-content page; review before adding if modlist aims for a clean showcase.
 
 #### Recommendation
 

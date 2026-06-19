@@ -139,6 +139,7 @@
 - Treat `Children of the North Wind - Ruins of the Ancient Nords` as the high-commitment ancient-Nordic-specific branch. It is heavier and more opinionated than the other ruin picks here because it replaces architecture across a curated location set rather than adding new dungeons, so it is the right comparison when the list wants Nordic ruin identity to feel like a real population-center ruin layer rather than just more generic crypts.
 - Keep `Skyrim Underground SSE` as the high-commitment branch if the list wants a much larger subterranean layer than vanilla suggests.
 - Treat `Dungeons - Revisited` as the strongest complementary branch rather than the main answer, because it improves existing ruins instead of deciding whether section 08 wants more destinations.
+- `Iconic's Crown of Barenziah` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/137469> upgrades the Crown of Barenziah, its gem boxes, and display stand with high-quality meshes, parallax gems, and environment mapping. 4K/2K options, compatible with everything except other crown retextures. Adds quest-reward visual payoff without gameplay changes. (Note: correct mod ID is 137469, not the 115249 originally cited.)
 
 ### Risks & Compatibility
 
@@ -173,6 +174,7 @@
 - Use `Hidden Hideouts of Skyrim SE` as the first-pass baseline because it adds practical refuges and quiet off-road discoveries that fit the list's travel-and-exploration tone especially well.
 - Keep `Hold Border Guards - Definitive Edition` as the meaningful comparison if the project wants roadside content to feel more geopolitical and structured.
 - Keep `Nordic Ruins of Skyrim SSE` as the lightest branch if the right answer is more discoverable landmarks rather than more useful stops.
+- Consider `7000 Steps of Sanctum` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/128478> as a targeted pilgrimage enhancement. Removes hostile encounters (except the troll), swaps vegetation for climate-appropriate growth at altitude, adds a map marker for the troll encounter area, and realigns the High Hrothgar map marker. Soft-requirements `Cathedral - 3D Pine Shrubs` and `Happy Little Trees` for full aesthetic effect. Highly compatible (no navmesh edits, no cell-record conflicts), fits the tone of a more atmospheric journey. 243 endorsements.
 - Only revisit `Hidden Hideouts of Skyrim City Edition SE` if the countryside hideout concept lands well and the project later wants city-adjacent hideaways to follow the same philosophy.
 
 ### Risks & Compatibility

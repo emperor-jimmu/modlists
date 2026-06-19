@@ -222,7 +222,7 @@
 
 - Start with `Immersive Interactions` as the main baseline for everyday contextual actions.
 - Treat `Animated Interactions SKSE` as the stronger pickup, looting, and door-animation route when the list wants extra physicality from common interactions. It can coexist with `Immersive Interactions`, but only if overlapping actions are deliberately disabled so both mods are not trying to own the same prompts.
-- Add `Go to bed` only if camp, inn, and home-rest loops become an actual tone pillar for the list.
+- Add `Go to bed` as a companion. With survival, camping, and roleplay bed-use, it reinforces the embodied third-person tone rather than just adding spectacle. Keep it if nightly rest or inn stays are part of normal play rhythm.
 - Treat `EVG Animated Traversal` as a curated expansion that must justify its marker coverage and added complexity.
 
 ### Risks & Compatibility

@@ -185,6 +185,7 @@
 - Start with `Ancient Land` as the strongest first-pass baseline because it adds visible static worldspace flavor and distant landmark presence without turning this subsection into a heavy settlement-overhaul or content-expansion project.
 - Keep `Interesting Roads` as the meaningful comparison if the world mainly needs lighter roadside variety rather than more overt ancient-landmark identity.
 - Keep `Point The Way` as the narrower route-guidance branch if the real missing piece is clearer travel legibility and signposting rather than broader worldspace flavor.
+- Consider `Giant Crab Shells - Mihail's Shards of Immersion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124681> as a roadside-beauty addition. Adds ancient giant crab shells along the northern coast and Solstheim with loot/enemy encounters inside some. Fits the "big, awe-inspiring world" pillar — 789 endorsements, ESL-flagged, compatible with most landscape stacks.
 - Keep broader new-settlement, quest-location, or population additions for later world-content ownership.
 
 ### Risks & Compatibility
@@ -217,6 +218,7 @@
 - Start with `Animallica SE - Skyrim Wildlife Overhaul` as the strongest first-pass baseline because it makes Skyrim feel more biologically varied and alive during ordinary travel without assuming the subsection should become primarily about harsher combat behavior.
 - Keep `One With Nature` as the meaningful comparison if the bigger weakness is creature relationship tuning and ecological feel rather than raw wildlife variety.
 - Keep `Savage Skyrim` as the deliberate heavier branch only if the list truly wants wilderness creatures to become much more threatening and physically intense as part of the world-feel identity.
+- Consider `Frogs - Mihail Monsters and Animals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120998> as a lightweight creature ambient addition. Adds harmless frogs (4 variants) in lakes and puddles with new food items (frog legs). ESL-flagged, 2,982 endorsements, lore-friendly, negligible performance impact.
 - Keep creature-animation ownership in `modlist-03.md`, encounter-density ownership earlier in section 07, and broader world-content additions in later sections.
 
 ### Risks & Compatibility

@@ -303,6 +303,10 @@
 - The chosen baseline complements the survival and alchemy direction instead of collapsing them into one oversized consumables bucket.
 - Later economy, roleplay, and religion decisions still have visible room to matter.
 
+#### Visual Companions
+
+- `Hyper Realistic Cooked Beef` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173752> and `Hyper Realistic Bread` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173283> replace the vanilla cooked-beef and bread models with photorealistic versions. Both are mesh/texture-only replacers with zero plugin overhead. Add at the end of the food-texture layer to make cooking output feel more appetizing in survival contexts.
+
 ## Smithing And Crafting Expansion
 
 ### Core Idea
