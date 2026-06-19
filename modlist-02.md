@@ -412,7 +412,8 @@
 - Keep `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56520> as the main alternate comparison, layered on top of `Simplicity of Sea - Water Color and Transparency Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148761> which is its hard color/transparency dependency.
 - Treat `Realistic Water Two SE (RWT)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2182> and `Water for ENB` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37061> as legacy baselines, not first picks.
 - Evaluate `Natural Waterfalls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87261> and `Rally's Water Foam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28922> only after the main water base is selected.
-
+- Add `Splashes Of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47710> as the projectile-based water splash and ripple layer. It is a powerofthree SKSE plugin that extends water impact effects (arrows, spells, shouts) to all water surfaces and adds dynamic displacement ripples. Works independently of the chosen water base and has Community Shaders compatibility (v1.4.1+ includes CS-specific FPS optimizations). Treat it as a baseline inclusion rather than an optional evaluation.
+ 
 ### Risks & Compatibility
 
 - Water can look strong in still shots and distracting in motion if foam, reflections, or wave response are overdone.
@@ -738,6 +739,7 @@
 - Install `Highly Improved Male Body Overhaul - HIMBO`.
 - Install `BodySlide and Outfit Studio`.
 - Install `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players`.
+- Install `OBody NG` and all chosen body-variety preset packs after the body bases and before the first BodySlide build.
 - Install selected skin textures after the body bases if the skin package expects a specific layout.
 - Install any armor or clothing packs that need body refits before the first serious BodySlide build.
 - Add and enable the empty `BodySlide Output` mod before generating anything.
@@ -769,6 +771,53 @@
 ### Recommended Creature Baseline
 
 - `Bellyaches Animal and Creature Pack SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6839>
+
+### Body Variety And Distribution
+
+#### Core Idea
+
+- This subsection owns NPC body diversity — distributing different BodySlide presets across NPCs so the world does not look like every female and male share the same body shape.
+- It is a distribution layer on top of the body and BodySlide pipeline already established above, not a replacement for the chosen `CBBE 3BA` and `HIMBO` baselines.
+
+#### Options
+
+- **OBody NG** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77016>. The maintained OBody version that works with both OStim and standalone. Reads all installed BodySlide presets and assigns them to NPCs randomly or by configuration. This is the core distribution mod — without it, every NPC uses the same single BodySlide preset.
+- **Real Body - 3BA (3BBB) CBBE Bodyslide Presets** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/83299>. A curated set of semi-realistic 3BA presets designed for OBody distribution. Covers a range from slim to curvy without exaggerated proportions. The recommended preset pack for female body variety.
+- **Realistic Racial Body Diversity - OBody NG Config** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87239>. An OBody configuration that distributes presets per race — Nords are broader, Elves leaner, Orcs more heavily built. Covers both `CBBE 3BA` and `HIMBO`. Adds lore-friendly variety on top of whatever preset pack is installed.
+
+Additional individual presets for a realistic range (optional, to broaden variety):
+
+- `Rugged Body - 3BA` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86339> — muscular/fit body shape.
+- `Skinny Berry - 3BA BodySlide preset` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80714> — slim body shape.
+- `Realistic chubby and curvy body - 3BA Bodyslide Preset` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/70624> — heavier body shape.
+
+Male variety on `HIMBO`:
+
+- `HIMBO SliderPresets Pack 02` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176023> — 10 HIMBO presets for male body diversity.
+- `The Common Guy - SerketHetyt's HIMBO Preset` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111807> — a grounded, realistic male preset.
+
+#### Recommendation
+
+- Install **OBody NG** as the core distribution layer.
+- Install **Real Body - 3BA** as the baseline preset pack for female variety — it is curated, semi-realistic, and designed for OBody.
+- Install **Realistic Racial Body Diversity** for per-race body distribution on top of the preset pack — this makes orcs, nords, elves, and beast races feel physically distinct beyond their textures.
+- Add the individual presets (`Rugged Body`, `Skinny Berry`, `Realistic chubby and curvy`) to increase the variety range beyond what Real Body covers.
+- For male NPCs, install **HIMBO SliderPresets Pack 02** to give OBody NG material for male distribution alongside the `Realistic Racial Body Diversity` config.
+
+#### Risks & Compatibility
+
+- OBody NG requires building all included presets in BodySlide with the `Create Morphs` option ticked. This means a larger BodySlide batch build and more generated meshes.
+- Every additional preset pack increases BodySlide build time and the number of generated morph files. Keep the pack size intentional rather than maximal.
+- OBody NG works with `CBBE 3BA` and `HIMBO` but may need a config adjustment if other body mods (e.g. custom follower bodies) are added later.
+- The `FitnessGoal` preset remains the player-character and default body shape; OBody distributes the additional presets only to NPCs.
+
+#### Acceptance Criteria
+
+- Female NPCs display visibly different body shapes (slim, athletic, curvy, heavy) across the world.
+- Male NPCs display visible variety.
+- Per-race body differences are noticeable — Nords look broader than Altmer.
+- OBody NG is configurable via MCM and does not affect the player character unless configured to.
+- BodySlide builds complete without errors.
 
 ### Risks & Compatibility
 

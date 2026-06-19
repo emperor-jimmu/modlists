@@ -41,13 +41,14 @@
 
 - `XP32 Maximum Skeleton Special Extended - XPMSSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
 - `CBPC - Physics with Collisions for SSE and VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21224>
+- `Faster HDT-SMP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57339>
 - `ConsoleUtilSSE NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
 
 ### Recommendation
 
 - Use `XPMSSE` as the single skeleton baseline.
 - Use `CBPC` as the default first-pass physics layer for the chosen `CBBE 3BA (3BBB)` setup.
-- Keep SMP-side support under review for outfits or features that specifically need it, but do not make the entire animation stack depend on a full SMP-first route before the baseline is proven.
+- Use `Faster HDT-SMP` alongside CBPC for SMP physics coverage. The adult animation framework (OStim Standalone, `modlist-16.md`) benefits from SMP body physics during scenes, and SMP is also needed by some outfits and creature features later in the stack. Running both physics layers is standard for current 3BA setups — CBPC handles broad collision and SMP handles finer mesh deformation.
 - Keep `ConsoleUtilSSE NG` available for script-dependent ecosystem pieces that still expect it on current runtime versions.
 
 ### Risks & Compatibility
