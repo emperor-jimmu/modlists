@@ -88,6 +88,7 @@
 - Clean-card route: `SkyUI Item Card Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29116>
 - Sorting-and-icon route: `Aura's Inventory Tweaks (More SkyUI Icons Sorting Options and More)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68557>
 - Weapon-stat overlay route: `Weapon Stat Viewer V2` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/127249>
+- Item-info injection route: `Inventory Interface Information Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85702> — a lightweight SKSE plugin by M8r98a4f2 (same author as moreHUD) that injects extra item information (value, weight, damage, armor rating, value-per-weight) directly into the inventory interface without altering the SkyUI layout or requiring a core UI framework change. Does not make any inventory list invalidation calls.
 
 ### Recommendation
 
@@ -96,6 +97,7 @@
 - Keep `SkyUI Item Card Fixes` as the cleaner, narrower comparison if the main pain point is item-card presentation discipline rather than more information.
 - Keep `Aura's Inventory Tweaks` as the more organizational comparison if the final UI direction proves to need stronger sorting and icon structure rather than just clearer cards and details.
 - Keep `Weapon Stat Viewer V2` as a documented weapon-stat overlay companion rather than a baseline. It surfaces weapon damage numbers in real time (so the player can compare weapons without opening menus), and it is more useful than the other options here for the combat-experience pillar. Lock it in only if the chosen UI framework (`SkyUI` + `Oathvein UI`) renders it cleanly; verify it before treating it as part of the locked inventory stack.
+- Add `Inventory Interface Information Injector` as a lightweight data-fill companion alongside the moreHUD baseline. By the same author (M8r98a4f2), it adds value, weight, and stat-per-weight columns to inventory views without touching SkyUI layout records or making invalidation calls — zero compatibility risk with `moreHUD`, `Weapon Stat Viewer V2`, or the `Oathvein UI` visual direction.
 - Keep map, journal, magic-menu, crafting-menu, and dialogue decisions out of this subsection so inventory ownership stays clear.
 
 ### Risks & Compatibility

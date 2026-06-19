@@ -319,6 +319,7 @@
 - Balanced practical route: `Ars Metallica - Smithing Enhancement` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/321>
 - Large integrated route: `Complete Crafting Overhaul Remastered` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28608>
 - Roleplay-service route: `Honed Metal -NPC Crafting and Enchanting Services` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61015>
+- Enchanting overhaul companion: `Thaumaturgy - An Enchanting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57138> — a Simonrim-aligned enchanting overhaul by SimonMagus that rebalances enchantment effects, costs, and progression. Designed to pair with the already-locked `Mysticism` (magic) and `Adamant` (perks) baselines, keeping the Simonrim progression family coherent.
 
 ### Recommendation
 
@@ -326,6 +327,7 @@
 - Keep `Complete Crafting Overhaul Remastered` as the deliberate high-complexity comparison if `Elder Wilds` decides material logic and crafting rules should become a major progression pillar.
 - Keep `Honed Metal` as the distinct roleplay-facing comparison if the list wants to reduce player-made item churn and make towns, smiths, and specialists matter more.
 - Treat NPC-service crafting as a different philosophy from player-centric crafting expansion, not as a small add-on to the same route.
+- Add `Thaumaturgy` as the enchanting overhaul companion. It closes the Simonrim crafting loop (enchanting alongside `Mysticism` magic and `Adamant` perks) without requiring a heavy all-in-one crafting framework. It also serves as a prerequisite for artifact-overhaul content in the `Artifact And Unique Item Overhauls` subsection.
 
 ### Risks & Compatibility
 
@@ -352,6 +354,8 @@
 - Merchant-pricing route: `Trade and Barter - Skyrim Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/23081>
 - Loot-distribution route: `Open World Loot - Encounter Zone and Loot Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49681>
 - Heavy scarcity route: `MorrowLoot Ultimate - Skyrim Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3058>
+- Regional currency route: `C.O.I.N. - Coins of Interesting Nature` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51439> — adds regional coinage (hold-specific coin types and weights) that gives immersive economic texture: coins from different holds look distinct, encouraging the player to notice where money comes from. Lightweight, no scripts.
+- Currency exchange companion: `C.O.I.N. - Treasury Exchange` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131682> — adds currency exchange mechanics at merchants, letting the player convert regional coin types. Adds gameplay purpose to the C.O.I.N. system beyond visual variety.
 - Ownership note: keep `Barter Limit Fix` in `modlist-12.md` as a targeted fix if merchant-gold caps become relevant; it is not the economy-framework answer by itself.
 
 ### Recommendation
@@ -359,6 +363,7 @@
 - Start with `Trade and Barter` as the main baseline.
 - Keep `Open World Loot` as the deliberate structure-focused comparison if the project wants loot progression and encounter rewards to feel more curated.
 - Keep `MorrowLoot Ultimate` as the intentional heavy-scarcity comparison only if the list truly wants rare-item access and deleveled loot to become a defining identity pillar.
+- Add `C.O.I.N. - Coins of Interesting Nature` as a lightweight economic texture layer. It adds regional coin variety without touching prices or loot distribution — purely immersive world-building through currency. The companion `C.O.I.N. - Treasury Exchange` adds mechanical purpose by letting merchants convert coin types.
 - Treat pricing changes and loot-distribution changes as related but distinct philosophies rather than interchangeable answers to the same problem.
 
 ### Risks & Compatibility
@@ -567,11 +572,13 @@
 - Model-replacement pass: `ArteFakes - Unique Artifacts Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/41254>
 - Dragon-priest specific: `Konahrik's Accoutrements` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22206>
 - Gap-filler for the unique-items left behind: `Unique Items Tweaks - Improved Miscellaneous Artifacts` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33723>
+- Simonrim-aligned artifact overhaul: `Artificer - An Artifact Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/99619> — an artifact overhaul that rebalances and re-enchants Daedric artifacts and unique items using the Simonrim design philosophy. **Requires** `Thaumaturgy - An Enchanting Overhaul` and `Mysticism - A Magic Overhaul` as hard prerequisites, both of which are already locked in the list. Treat as an alternative to `Reliquary of Myth` rather than a stackable companion — the two overhaul the same artifact records and should be evaluated as competing directions, not additive layers.
 - Discipline-first route: rely on vanilla artifact stats and skip the dedicated overhauls, since most of the named items in the base game already have functional effects.
 
 ### Recommendation
 
 - Use `Reliquary of Myth` as the artifact-stat and effect baseline. It rebalances nearly all of Skyrim's legendary artifacts with unique enchantments, new stats, and lore-friendly effects, and is tagged Lore-Friendly on Nexus. It is the canonical mid-size artifact overhaul and does not invent a new artifact set the way `Legacy of the Dragonborn`-style mods do; it only improves what is already in the game.
+- Keep `Artificer - An Artifact Overhaul` as the Simonrim-aligned alternative to `Reliquary of Myth`. It rebalances the same artifact records using the Simonrim design philosophy and requires `Thaumaturgy` and `Mysticism` as prerequisites (both locked in above). Treat the two as competing directions — choose one artifact overhaul baseline, not both. Prefer `Artificer` if the list wants full Simonrim ecosystem coherence; prefer `Reliquary of Myth` if broader community support and patch coverage matter more.
 - Use `ArteFakes` as the model-replacement companion. Where Reliquary of Myth changes the numbers and effects, ArteFakes swaps the actual 3D models of the unique items for higher-detail versions. The two stack cleanly because they touch different record types (stats vs meshes).
 - Use `Konahrik's Accoutrements` as the dragon-priest-specific companion. It upgrades the named Dragon Priest encounters with new gear, masks with their own stat curves, and harder fights. This is the only one of the four that adds new encounters, and it is the only one the Legacy of the Dragonborn museum integration cares about directly (it is the dragon-priest exhibit).
 - Use `Unique Items Tweaks` as the gap-filler. It improves the miscellaneous artifacts Reliquary of Myth does not cover (Warlock's Ring, Muiri's Ring, the various amulets, etc.) so the list does not end up with most named items buffed and a few stragglers still vanilla.

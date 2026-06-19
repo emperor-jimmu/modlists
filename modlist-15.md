@@ -757,7 +757,7 @@ The `Synthesis` patcher pipeline runs as a single batch via the `Run Mutagen` to
 
 #### Stage 6 — Snow, Weather, And Region
 
-- `BDSPatcher` — only enable if `Better Dynamic Snow` replaces `Simplicity of Snow` later. With the current `Simplicity of Snow` + `Nordic Snow` baseline, skip.
+- `BDSPatcher` — **required**. `Better Dynamic Snow SE` and `Better Dynamic Ash SE` are both locked in `modlist-02.md`. This patcher forwards BDS multistage snow and ash accumulation records to all mod-added objects (worldspace edits from `JK's Skyrim`, `Spaghetti's Cities`, `Cities of the North`, quest mods, and dungeon packs). Without it, mod-placed objects lack snow/ash coverage. Use the `BDSPatcher` entry (not `Northpoint BDSPatcher`). Configure to run with both `BetterDynamicSnow` and `BetterDynamicAsh` keywords active.
 - `SSBGPatcher` — `Stretched Snow Begone` synthesis patch; enable if the snow mesh ever stretches under doors or walls.
 - `Nights Adjuster` and `Darker Weather Nights` — pick one (not both) and configure to match the night darkness target in `modlist-02.md`.
 - `SkyVRaan Weather Patcher` — only if `SkyVRaan` is added.

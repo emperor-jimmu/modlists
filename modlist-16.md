@@ -16,6 +16,7 @@ This subsection owns the animation framework that supports the romance, dialogue
 - **Female Moan Voicesets For Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121383> — 38 female moan/climax voicesets keyed to voice types, giving different NPCs distinct moans.
 - **Ostim SA-Sound Replacer-Blowjob** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131890> — sound replacement for blowjob scenes.
 - **Male Orgasm Sounds For Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/132396> — adds male climax moan and cum sound effects.
+- **OCum Ascended - Cum and Orgasm Mechanics for OStim** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77506> — adds cum and orgasm mechanics to OStim scenes, including visual cum layers, orgasm-tracking, and scene progression based on arousal. Expands OStim's physiological feedback layer beyond sounds and exhaustion into visible consequence.
 - **Clean Navigation Icons for OStim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/181886> — 62 navigation icons for OStim Standalone menus. UI polish, zero gameplay impact.
 - **Animation Pack Icons for OStim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/181880> — 18 icons for animation packs in the OStim scene menu. Complements Clean Navigation Icons.
 - **OTooTiredToMove - Experience true exhaustion after climax in OStim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/154112> — optional gameplay addon. Temporarily immobilises the character after scene climax to simulate exhaustion. Adds a recovery-moment consequence to OStim scenes without script overhead.
@@ -25,6 +26,8 @@ This subsection owns the animation framework that supports the romance, dialogue
 Use **OStim Standalone** as the framework baseline, paired with **OStim Community Resource** as a required dependency. Both have active maintenance, clear 1.6.1170 support, and a growing patch ecosystem. The Amorous Adventures OStim Standalone patch (Nexus 150577) and OStim Romance (Nexus 107671) both depend on OStim Standalone, making it the lock-in pick before any romance content.
 
 Bundle the recommended animation packs (OARE, Additional Leito's Animations, or equivalent) at the same time so the framework has animations to play.
+
+Add **OCum Ascended** as the orgasm-mechanics layer on top of the framework. It gives OStim scenes visible progression and consequence, pairing naturally with the existing sound replacers and the OTooTiredToMove exhaustion mechanic.
 
 ### Risks & Compatibility
 

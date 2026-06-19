@@ -413,7 +413,7 @@
 - Treat `Realistic Water Two SE (RWT)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2182> and `Water for ENB` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37061> as legacy baselines, not first picks.
 - Evaluate `Natural Waterfalls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87261> and `Rally's Water Foam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28922> only after the main water base is selected.
 - Add `Splashes Of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47710> as the projectile-based water splash and ripple layer. It is a powerofthree SKSE plugin that extends water impact effects (arrows, spells, shouts) to all water surfaces and adds dynamic displacement ripples. Works independently of the chosen water base and has Community Shaders compatibility (v1.4.1+ includes CS-specific FPS optimizations). Treat it as a baseline inclusion rather than an optional evaluation.
- 
+
 ### Risks & Compatibility
 
 - Water can look strong in still shots and distracting in motion if foam, reflections, or wave response are overdone.
@@ -446,6 +446,7 @@
 - Keep landscape and mountain materials as the visual anchor.
 - Prefer a lower-maintenance road solution unless the final worldspace and outskirts plan can clearly absorb a heavier patching route.
 - Lock snow only after confirming how it looks with the chosen landscape, rock, weather, and lighting winners.
+- Add `Better Dynamic Snow SE` and `Better Dynamic Ash SE` as the snow-and-ash multistage accumulation layer. Both work with `Simplicity of Snow` and the chosen snow texture baseline; the `BDSPatcher` Synthesis patcher handles mod-added objects automatically.
 
 ### Candidate Stack
 
@@ -470,6 +471,8 @@
 - `Nordic Snow` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/670>
 - `Nordic Snow - Complex Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/133034>
 - `Hyperborean Snow SE - 8K` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29283> remains a comparison snow candidate, not a locked baseline.
+- `Better Dynamic Snow SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9121> — adds multistage snow accumulation and directional snow on objects, with terrain-blended snow coverage. Works alongside `Simplicity of Snow` and the chosen snow texture baseline; the `BDSPatcher` Synthesis patcher handles mod-added objects.
+- `Better Dynamic Ash SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54754> — applies the same multistage accumulation logic to Solstheim's ash coverage, giving the island a distinct visual identity matching the snow system. Companion to `Better Dynamic Snow SE`; the Synthesis `BDSPatcher` handles both.
 - `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336>
 
 ### Risks & Compatibility
@@ -907,6 +910,32 @@ Male variety on `HIMBO`:
 - `Elder Wilds` has one clear aurora baseline or a deliberate discipline-first decision.
 - Night skies feel atmospheric rather than flat without forcing a full sky-dome overhaul.
 - Sky work stays separated from weather and lighting decisions in load order, MCM, and visual identity.
+
+## Unique Entity Replacers
+
+### Core Idea
+
+- This subsection owns model and texture upgrades for unique named entities or one-of-a-kind objects that exist in specific world locations — characters, corpses, and set-piece models that are not covered by broad creature, skeleton, or texture overhauls above.
+- The goal is to close visual gaps that generic replacer packs leave open, without swelling into a full NPC-beautification project.
+
+### Options
+
+- Unique corpse baseline: `Night Mother` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/83527> — a high-quality model and texture replacer for the Night Mother's preserved corpse in the Dark Brotherhood sanctuary. The vanilla model is visibly low-poly and low-resolution; this mod modernises it to match the 4K visual direction.
+
+### Recommendation
+
+- Use `Night Mother` as the targeted unique-entity upgrade. The Dark Brotherhood sanctuary is a heavily scripted quest location the player visits multiple times, and the Night Mother's corpse is the visual centerpiece of that space. The upgrade cost is one ESL-flagged mod with zero script or record conflicts.
+- Keep this subsection narrow — it exists only to catch one-off models that would otherwise fall between creature, skeleton, and texture ownership.
+
+### Risks & Compatibility
+
+- Unique entity replacers are generally safe to add because they touch only a small number of assets. Verify `Night Mother` does not conflict with any lighting or interior overhaul that modifies the sanctuary cell.
+- Do not let this subsection grow into a general NPC or creature overhaul; those tracks are already owned by `modlist-09.md`.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear targeted unique-entity baseline or a deliberate discipline-first decision.
+- The Night Mother's model reads at the same visual quality level as the locked 4K texture and lighting stack.
 
 ## Skeleton And Bone Replacers
 

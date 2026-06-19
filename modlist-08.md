@@ -101,7 +101,7 @@
 - Use `The Great Village of Old Hroldan SSE` as the strongest first-pass baseline because it gives the world a more authored roadside stop without turning the subsection into a broad restoration bundle.
 - Keep `Granite Hill` as the meaningful comparison if the world would benefit more from restoring another small settlement along normal routes.
 - Treat `Lund's Hamlet - An Overhaul` as a complementary niche farmstead option rather than a baseline. It is the smallest of the small-settlement picks here (Lund's Hut only) and is best evaluated after the subsection already has a travel-stop and a restoration baseline in place, so it adds rural texture without reshaping subsection priorities.
-- Keep `Candlehearth - An Inn Overhaul` as the narrower inn-focused branch if the real weakness is forgettable rest stops rather than missing rural settlement content.
+- Add `Candlehearth - An Inn Overhaul` as the locked inn-overhaul baseline. It overhauls every inn in Skyrim with new interiors, layouts, and atmosphere, making rest stops feel like memorable destinations rather than forgettable waypoints. Lock it alongside the travel-stop village route rather than treating it as a secondary branch.
 - Treat `The Great Town of Karthwasten SSE` and `Oakwood` as complementary additions rather than primary subsection answers.
 
 ### Risks & Compatibility
@@ -167,6 +167,8 @@
 - Hidden-shelter route: `Hidden Hideouts of Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2625>
 - Narrower companion route: `Hidden Hideouts of Skyrim City Edition SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2626>
 - Rejected caution branch: `Master The Summit` stays out because current community signal points too strongly toward support and navmesh-risk concerns.
+- Daedric shrine locations route: `Daedric Shrines - All in One` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78772> — adds physical shrines to each Daedric Prince at lore-appropriate locations across Skyrim. Each shrine is a discoverable point of interest with unique architecture matching the Prince's domain. Complements the Pilgrim/Pilgrim religion system from `modlist-05.md` without requiring it.
+- Daedric Shrines patch collection: `Daedric Shrines - All in One by Xtudo - Wintersun Lakeview Teldryn Cure Wyrmstooth Antennaria Evil Aemer Thieves Helgen Death Cut Content Moon Leaf Rest Talos` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78809> — a compatibility patch bundle for Daedric Shrines covering Wintersun, Wyrmstooth, Legacy of the Dragonborn, Lakeview, and other mods in the list. Required companion if Daedric Shrines is locked.
 
 ### Recommendation
 
@@ -176,6 +178,10 @@
 - Keep `Nordic Ruins of Skyrim SSE` as the lightest branch if the right answer is more discoverable landmarks rather than more useful stops.
 - Consider `7000 Steps of Sanctum` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/128478> as a targeted pilgrimage enhancement. Removes hostile encounters (except the troll), swaps vegetation for climate-appropriate growth at altitude, adds a map marker for the troll encounter area, and realigns the High Hrothgar map marker. Soft-requirements `Cathedral - 3D Pine Shrubs` and `Happy Little Trees` for full aesthetic effect. Highly compatible (no navmesh edits, no cell-record conflicts), fits the tone of a more atmospheric journey. 243 endorsements.
 - Only revisit `Hidden Hideouts of Skyrim City Edition SE` if the countryside hideout concept lands well and the project later wants city-adjacent hideaways to follow the same philosophy.
+
+Add `Daedric Shrines - All in One` as a Daedric-shrine discovery layer. Each shrine is a bespoke point of interest with unique architecture matching the Prince's domain, rewarding exploration with visual payoff rather than loot. Complements the religion layer from `modlist-05.md` without requiring it.
+
+Add `Daedric Shrines - All in One by Xtudo` as the required patch companion. Its patch collection covers Wintersun, Wyrmstooth, LotD, Lakeview, and other mods in `Elder Wilds` that add or modify shrine-related locations.
 
 ### Risks & Compatibility
 
@@ -238,6 +244,7 @@
 - Bulk weapons pack: `Immersive Weapons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16788>
 - Bulk armors pack: `Immersive Armors` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3479>
 - Modern texture and mesh upgrade for the armor pack: `Immersive Armors Retexture and Mesh Fixes SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/75891>
+- Dawnguard equipment expansion: `Dawnguard Arsenal SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/25094> — adds new Dawnguard weapons, armors, shields, and ammunition to the Dawnguard questline. The `Dawnguard Arsenal SSE - SkyPatched` variant (Nexus 113677) converts the mod to use `SkyPatcher` (already a core dependency in `modlist-01.md`) for record patching instead of a full plugin, reducing load-order impact.
 - Discipline-first route: rely on vanilla weapons and armor and let smithing, perk, and quest-reward mods carry the equipment identity, with no bulk item packs added at all.
 
 ### Recommendation
@@ -245,6 +252,7 @@
 - Use `Immersive Weapons` as the weapons baseline. It adds around 230 new weapons spread across 21 weapon archetypes (more than double vanilla's 8), all craftable, upgradeable, enchantable, and integrated through leveled lists, vendors, and dungeon placement. Authored by Hothtrooper44 and collaborators, with 114K endorsements and 2.2M unique downloads.
 - Use `Immersive Armors` as the armor baseline. It adds around 55 armor sets (60+ with variants), 396 new shields, plus eye patches, capes, earrings, and scarves. Like the weapons pack, all items are craftable, upgradeable, enchantable, and integrated through leveled lists, quest rewards, and dungeon placement. The mod has an MCM or spell menu for distribution tuning. Authored by Hothtrooper44, with 206K endorsements and 3.16M unique downloads, making it one of the most-used content mods in the SE ecosystem.
 - Use `Immersive Armors Retexture and Mesh Fixes SE` as the visual upgrade for the armor pack. The base `Immersive Armors` assets look dated next to modern 4K PBR textures from `modlist-02.md`, and this retexture pack brings the armor visuals in line with the rest of the graphics stack (9.8K endorsements, 490K unique downloads).
+- Use `Dawnguard Arsenal SSE - SkyPatched` as the Dawnguard-themed equipment expansion. Use the SkyPatched variant (113677) because `SkyPatcher` is already a core dependency — the SkyPatched version avoids adding a full plugin, reducing load-order pressure. It adds Dawnguard weapons, armors, and ammunition that slot naturally into the Dawnguard questline content.
 - Keep the discipline-first route alive long enough to confirm the project actually wants bulk equipment content. If the chosen quest mods and smithing content already add enough unique gear, the bulk packs can be skipped to reduce leveled-list bloat.
 - Keep this subsection separate from smithing in `modlist-05.md`, perk overhauls in `modlist-05.md`, and the crafting helpers in `modlist-05.md`. This subsection owns the item library, not the systems that consume it.
 
@@ -283,6 +291,7 @@
 - AE-gated caution branch: `Sirenroot - Deluge of Deceit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/70917>
 - Creation-overhaul route: `Saints and Seducers Extended Cut` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72772>. A fully-voiced overhaul of the Saints and Seducers Creation that expands it into a proper return-to-the-Shivering-Isles questline with new scenes, locations, and voiced NPCs. Transforms the thin vanilla Creation into a real quest mod.
 - Vanilla-quest-enhancement route: JaySerpa's Quest Expansions — a suite of individual mods that each expand one vanilla quest with new dialogue, scenes, and alternate paths. Key entries: `House of Horrors - Quest Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57285>, `Paarthurnax - Quest Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51711>, `The Only Cure - Quest Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57683>. All fully voiced by JaySerpa, one of the most prolific and well-regarded quest-expansion authors in the SE ecosystem. A central patches hub exists at Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113083>.
+- Thieves Guild quest overhaul route: `A Chance Arrangement Plus Plus - A Quest Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175885> — a comprehensive overhaul of the "A Chance Arrangement" quest (the Thieves Guild initiation). Rewrites the quest with new scenes, dialogue, alternate routes, and expanded consequences. Fits the vanilla-quest-enhancement pattern alongside JaySerpa's suite but is specific to the TG start.
 - Custom-follower-with-quest route: `Val Serano - Pirate Custom Voiced Follower and Quest Adventure` - by Axarien. A fully custom-voiced male pirate follower with ~2000 lines of dialogue and a multi-stage quest adventure. Has LoTD museum integration via the Followers Patch at Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/40816>. _(Nexus URL pending verification — unable to confirm base mod page ID via search.)_
 
 ### Recommendation
@@ -298,6 +307,7 @@
 - Treat `Sirenroot - Deluge of Deceit` as AE-gated unless later verification proves otherwise; do not let it quietly become a baseline requirement while the project still targets no paid AE dependency.
 - Use `Saints and Seducers Extended Cut` as the default Creation-overhaul pick. Saints and Seducers is already bundled with AE 1.6.1170, but the vanilla Creation quest is thin and undercooked; this overhaul transforms it into a proper Shivering Isles return questline. Essentially free content upgrade that gives the existing Creation real value.
 - Use JaySerpa's Quest Expansions as the default vanilla-quest-enhancement layer. The suite is modular (each mod is standalone), so `Elder Wilds` can pick individual expansions that match the quests the player is most likely to encounter. Start with the three flagship entries (`House of Horrors`, `Paarthurnax`, `The Only Cure`) and expand from there. The mods add meaningful decision branches and alternate paths to vanilla Daedric and story quests without adding new worldspaces or overwhelming the load order.
+- Add `A Chance Arrangement Plus Plus` as a targeted Thieves Guild quest overhaul. It follows the same vanilla-quest-enhancement philosophy as JaySerpa's suite but focuses on a single TG quest with deeper rewrite (new scenes, alternate routes, expanded consequences). Lock it in if the Thieves Guild is a likely early-game path; skip it if the run intends to avoid TG content.
 - Use `Val Serano - Pirate Custom Voiced Follower and Quest Adventure` as the custom-follower-with-quest baseline. It fills a different niche from the large worldspace mods: a character-driven pirate story with ~2000 voiced lines that integrates into the existing Skyrim world rather than adding a new landmass. Has LoTD museum integration, which matters for `modlist-13.md`. Verify the Nexus URL before final lock-in.
 - Review any chosen quest route later against `modlist-13.md` so `Legacy of the Dragonborn` integration value and patch pressure are considered on purpose.
 

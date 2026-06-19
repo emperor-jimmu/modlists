@@ -50,6 +50,8 @@
 - Route-coverage route: `Carriage Stops of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10434>
 - Gold-pressure route: `Fast Travel Cost` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20200>
 - Camping-and-rest route: `Campfire - Complete Camping System (Supports Skyrim VR)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/667>
+- Carriage-driver dialogue route: `Carriage Drivers Are Alive` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51260> — gives carriage drivers names, schedules, and dialogue, making them feel like real people rather than silent services. Complements the carriage-overhaul baseline without conflicting with it.
+- Carriage-and-stable dialogue bundle route: `Carriages and Stables Dialogue Bundle` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79297> — adds dialogue and interactions for carriage drivers and stable owners, including bribes, rumors, and destination chat. Complements `Carriage Drivers Are Alive` and the carriage-overhaul baseline.
 
 ### Recommendation
 
@@ -57,6 +59,8 @@
 - Keep `Carriage Stops of Skyrim` as the meaningful comparison if the project wants travel infrastructure itself to feel broader and more present in the world.
 - Keep `Fast Travel Cost` as the deliberate economic-pressure branch if the real question is map fast travel remaining available but no longer consequence-free.
 - Keep `Campfire` as the complementary camping-and-rest branch that affects travel pacing through a different mechanism: the player must plan campsites, manage rest, and cook in the field rather than relying only on carriages or inns. `Campfire` is already in the expanded-systems survival conversation from `modlist-05.md` but matters here as a travel-pacing tool regardless of which survival framework the list selects.
+- Add `Carriage Drivers Are Alive` as the carriage-driver character layer — names, schedules, and dialogue make the carriage loop feel inhabited rather than mechanical.
+- Add `Carriages and Stables Dialogue Bundle` as the dialogue companion — bribes, rumors, and destination chat complement the driver-personality layer from `Carriage Drivers Are Alive`. The two stack cleanly because one adds character records and the other adds dialogue.
 - Keep this subsection focused on travel structure and carriage or ferry policy rather than survival maintenance from `modlist-05.md` or map ownership from `modlist-06.md`.
 
 ### Risks & Compatibility
@@ -212,11 +216,13 @@
 - Wildlife-variety route: `Animallica SE - Skyrim Wildlife Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20456>
 - Ecology-tuning route: `One With Nature - Dynamic Animals and Creatures SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13343>
 - Heavier danger-and-behavior route: `Savage Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37768>
+- Insect-behavior route: `Butterflies Land True` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29434> — makes butterflies land on surfaces and flowers instead of hovering endlessly, adding a small but noticeable wildlife-behavior improvement. ESL-flagged, zero script overhead.
 
 ### Recommendation
 
 - Start with `Animallica SE - Skyrim Wildlife Overhaul` as the strongest first-pass baseline because it makes Skyrim feel more biologically varied and alive during ordinary travel without assuming the subsection should become primarily about harsher combat behavior.
 - Keep `One With Nature` as the meaningful comparison if the bigger weakness is creature relationship tuning and ecological feel rather than raw wildlife variety.
+- Add `Butterflies Land True` as a lightweight insect-behavior layer. It makes butterflies land on surfaces rather than hovering indefinitely — a small visual and behavioral upgrade that makes the wilderness feel more biologically grounded without affecting gameplay or adding scripts.
 - Keep `Savage Skyrim` as the deliberate heavier branch only if the list truly wants wilderness creatures to become much more threatening and physically intense as part of the world-feel identity.
 - Consider `Frogs - Mihail Monsters and Animals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120998> as a lightweight creature ambient addition. Adds harmless frogs (4 variants) in lakes and puddles with new food items (frog legs). ESL-flagged, 2,982 endorsements, lore-friendly, negligible performance impact.
 - Keep creature-animation ownership in `modlist-03.md`, encounter-density ownership earlier in section 07, and broader world-content additions in later sections.
