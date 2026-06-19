@@ -948,14 +948,14 @@ Use these only where they genuinely help:
             1. Open `Synthesis`, click `Add` or `+`.
             2. Search the registry for `Weapon Stat Synthesis Patcher`.
             3. Select it and add it to the active patcher list.
-            4. Click the gear icon to configure parameters:
-                - `Damage Floor` — minimum base damage for any weapon (default: 4)
-                - `Damage Ceiling` — maximum base damage ceiling (default: 30)
-                - `Weight Scale` — multiplier for weapon weight (default: 1.0)
-                - `Value Scale` — multiplier for weapon gold value (default: 1.0)
-                - `Speed Normalization` — tick to normalise speed values across material tiers
-                - `Reach Normalization` — tick to normalise reach values
-                - `Ignore List` — add specific mod plugin names if they should be excluded from rebalancing
+            4. Click the gear icon to configure parameters with these Elder Wilds–suitable values:
+                - `Damage Floor` — 4 (default; keeps iron/early weapons viable)
+                - `Damage Ceiling` — 22 (tighter than the default 30 — Adamant's perk curve does not need the wide default spread, and a tighter ceiling keeps mid-tier loot relevant longer, supporting the survival/scarcity tone)
+                - `Weight Scale` — 1.0 (default)
+                - `Value Scale` — 1.0 (default; economy is handled by `Trade and Barter`, not the stat patcher)
+                - `Speed Normalization` — tick ON (weapon speed consistency matters more with Animated Armoury's varied movesets)
+                - `Reach Normalization` — tick ON (prevents spear/halberd from having wildly different reach than intended)
+                - `Ignore List` — add these plugins so hand-authored artifact and unique-item stats are preserved: `Reliquary of Myth.esp`, `ArteFakes.esp`, `Unique Items Tweaks.esp`, `Konahrik's Accoutrements.esp`
             5. Close config and save the patcher list.
         - order in the patcher pipeline: run after `OWLLeveledListAddition`, `SpeedandReachFixes`, and `AmmoTweaks` (weapon stat patchers that resolve structural data before this patcher applies its formulas). See the full pipeline order in `modlist-15.md`.
         - output: generates `zWeaponStatSynthesis.esp` when run (or merges into the main Synthesis output if configured as a group patcher). Ensure it loads after all weapon mods.
