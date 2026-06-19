@@ -125,3 +125,4 @@ Each second-level section of the plan now lives in its own numbered file. The co
 - [Modlist Curation Rules and Testing Plan](modlist-14.md)
 - [Performance and Technical Workflow](modlist-15.md)
 - [Adult Content](modlist-16.md)
+- [Main Character Voicing](modlist-17.md)
