@@ -14,8 +14,8 @@ This guide turns the planning files into an install order that can actually be f
 
 ## Step 1. Prepare Skyrim And Tool Folders
 
-1. Install Steam and Skyrim SE/AE outside `Program Files`, ideally under a shallow path such as `C:\Games\Steam\steamapps\common\Skyrim Special Edition`.
-2. Confirm the game is on runtime `1.6.1170`. The **Anniversary Upgrade** is required — this build uses all Creation Club content included with AE.
+1. Install Steam and Skyrim SE/AE outside `Program Files`, ideally under a shallow path such as `C:\Games\Skyrim Special Edition`.
+2. Confirm the game is on runtime `1.6.1170`. The **Anniversary Upgrade** is not used!
 3. Ensure your Steam, drivers, and tool installations follow a clean baseline — install outside `Program Files`, verify file integrity, and set proper permissions.
 4. Launch the vanilla launcher once so Skyrim creates its registry entries and INI files.
 5. Create a separate modding path such as:
