@@ -295,6 +295,10 @@
 - Treat `High Poly Project` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12029> as optional and only keep it if the extra geometry earns its conflict cost.
 - Use `Simplicity of Snow` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56235> early if the final texture and mountain stack needs snow-consistency support.
 - Use `FYX - Water Mesh Optimization` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97713> only if the chosen water setup benefits from it.
+- Add `FYX - Eastern Empire Company Building` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86526> as a mesh fix for the Eastern Empire Company building in Solitude — a targeted stopgap before larger city overhauls are settled.
+- Add `FYX - Nordic Doors and Traps Collisions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/100295> as a collision geometry fix for Nordic doors and traps that stops the player's camera clipping through doorways and trap hitboxes.
+- Add `Explosion Collision Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/154076> as a physics fix that prevents explosion-force spells from launching large objects into the player's camera, resolving a longstanding destructible-physics annoyance.
+- Add `Flame VFX Edit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/109414> as a mesh-only fire spell effect improvement that is compatible with Community Shaders.
 - Add `Auto Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79473> or `Complex Parallax Materials` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95134> only after the texture stack is mostly chosen.
 - Use the PBR section's `PGPatcher Workflow With PBR Mods` for late-stage parallax generation rules.
 

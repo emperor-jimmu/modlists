@@ -364,6 +364,9 @@ Under `02.04 Texture Overhauls By Material Type` and `02.05 Mesh Improvements An
 - `Nordic Snow` (<https://www.nexusmods.com/skyrimspecialedition/mods/670>)
 - `Simplicity of Snow` (<https://www.nexusmods.com/skyrimspecialedition/mods/56235>)
 - `FYX - Water Mesh Optimization` (<https://www.nexusmods.com/skyrimspecialedition/mods/97713>)
+- `FYX - Eastern Empire Company Building` (<https://www.nexusmods.com/skyrimspecialedition/mods/86526>)
+- `FYX - Nordic Doors and Traps Collisions` (<https://www.nexusmods.com/skyrimspecialedition/mods/100295>)
+- `Explosion Collision Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/154076>)
 - `Natural Waterfalls` (<https://www.nexusmods.com/skyrimspecialedition/mods/87261>)
 - `Rally's Water Foam` (<https://www.nexusmods.com/skyrimspecialedition/mods/28922>)
 - `Cathedral - 3D Stonecrop` (<https://www.nexusmods.com/skyrimspecialedition/mods/110726>)
@@ -375,6 +378,7 @@ Under `02.04 Texture Overhauls By Material Type` and `02.05 Mesh Improvements An
 - `Cathedral - 3D Thistle` (<https://www.nexusmods.com/skyrimspecialedition/mods/67619>)
 - `Cathedral - 3D Snow Berries` (<https://www.nexusmods.com/skyrimspecialedition/mods/69415>)
 - `Dragon Breath VFX Edit` (<https://www.nexusmods.com/skyrimspecialedition/mods/118431>)
+- `Flame VFX Edit` (<https://www.nexusmods.com/skyrimspecialedition/mods/109414>) — improves fire spell effects (mesh replacer, no ESP, compatible with Community Shaders)
 
 Under `02.13 Character, Skin, And Creature Visuals` install the current strongest baseline:
 
@@ -704,6 +708,12 @@ Current strongest first-pass candidates:
 - `Leaf Rest` (<https://www.nexusmods.com/skyrimspecialedition/mods/15191>)
 - `Simple Fishing Overhaul - Animations and Improved Quest Dialogue` (<https://www.nexusmods.com/skyrimspecialedition/mods/103440>)
 - `Environs - Abandoned Abodes` (<https://www.nexusmods.com/skyrimspecialedition/mods/82410>)
+- `Evolving Locations - Riverside Shack` (<https://www.nexusmods.com/skyrimspecialedition/mods/124268>) — dynamic overhauls that change over playtime
+- `Evolving Locations - Lucky Shack` (<https://www.nexusmods.com/skyrimspecialedition/mods/123700>)
+- `Evolving Locations - Cliffside Retreat` (<https://www.nexusmods.com/skyrimspecialedition/mods/124524>)
+- `Immersive Fishing` (<https://www.nexusmods.com/skyrimspecialedition/mods/115249>) — adds fishing spots, craftable rods, new fish types, and radiant fishing quests
+- `Fishing Extension Framework` (<https://www.nexusmods.com/skyrimspecialedition/mods/139626>) — framework for adding fishing biomes to new worldspaces
+- `Fishing Voiced Narrative - Simple Fishing Overhaul Voice Patch` (<https://www.nexusmods.com/skyrimspecialedition/mods/113771>) — compatibility patch between Voiced Narrative - Fishing and Simple Fishing Overhaul
 - `Hunterborn SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/7900>)
 
 Optional `Missives` support if that route wins over `Sidequests of Skyrim` or sits alongside it cleanly:
@@ -725,13 +735,14 @@ Optional `Missives` support if that route wins over `Sidequests of Skyrim` or si
 - Quest/worldspace content depth:
     - pick only the new-content mods that fit the final tone and maintenance budget
     - do not install every large quest/worldspace mod by default
-    - candidates include `Moon and Star` (<https://www.nexusmods.com/skyrimspecialedition/mods/4301>), `Wyrmstooth` (<https://www.nexusmods.com/skyrimspecialedition/mods/45565>), `The Forgotten City` (<https://www.nexusmods.com/skyrimspecialedition/mods/1179>), `Sirenroot`, `VIGILANT SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/11849>), `Beyond Skyrim - Bruma SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/10917>), `Beyond Reach` (<https://www.nexusmods.com/skyrimspecialedition/mods/3008>), `The Wheels of Lull - Unwound Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/748>), `Falskaar` (<https://www.nexusmods.com/skyrimspecialedition/mods/2057>)
+    - candidates include `Moon and Star` (<https://www.nexusmods.com/skyrimspecialedition/mods/4301>), `Wyrmstooth` (<https://www.nexusmods.com/skyrimspecialedition/mods/45565>), `The Forgotten City` (<https://www.nexusmods.com/skyrimspecialedition/mods/1179>), `Sirenroot`, `VIGILANT SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/11849>), `Beyond Skyrim - Bruma SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/10917>), `Fishing Extension for Beyond Skyrim - Bruma` (<https://www.nexusmods.com/skyrimspecialedition/mods/152152>), `Beyond Reach` (<https://www.nexusmods.com/skyrimspecialedition/mods/3008>), `The Wheels of Lull - Unwound Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/748>), `Falskaar` (<https://www.nexusmods.com/skyrimspecialedition/mods/2057>)
 - Player-home/buildable settlement policy:
     - keep this narrow; 1 to 2 picks is enough
     - candidates include `Leaf Rest`, `Heljarchen Farm` (<https://www.nexusmods.com/skyrimspecialedition/mods/4108>), `LC_Build Your Noble House` (<https://www.nexusmods.com/skyrimspecialedition/mods/18308>), `Windstad Mine` (<https://www.nexusmods.com/skyrimspecialedition/mods/4160>), `Blackthorn`
 - Fishing / hunting path:
-    - `Simple Fishing Overhaul` + `Hunterborn SE`
+    - `Simple Fishing Overhaul` + `Immersive Fishing` + `Hunterborn SE`
     - or lighter `Streamlined Fishing` (<https://www.nexusmods.com/skyrimspecialedition/mods/80683>)
+    - if you adopt new-lands mods, add `Fishing Extension Framework` + the relevant worldspace extension (e.g. `Fishing Extension for Beyond Skyrim - Bruma`)
 
 ### 17.3 Separator `09 NPCs and Creatures`
 

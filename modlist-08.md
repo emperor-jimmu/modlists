@@ -186,6 +186,11 @@ Add `Daedric Shrines - All in One by Xtudo` as the required patch companion. Its
 
 Add `Environs - Abandoned Abodes` as an abandoned-building restoration layer. It targets specific abandoned locations (Hoddminir, Tumbledown Shack, Hellfire Chasm, and others) that vanilla leaves as empty shells and gives them new clutter, loot, and environmental storytelling. ESL-flagged, zero script overhead, compatible with most landscape and city overhauls. It fits the "lots of new content" pillar by converting forgettable empty buildings into discoverable locations without adding new cell records.
 
+Add the `Evolving Locations` series as a dynamic overhauls layer: three shack locations that evolve and expand over playtime based on the player's actions and visit frequency. The series fits the "lots of new content" pillar by making previously static locations respond to the player's presence and grow more rewarding with repeated visits. All three are authored by Suinier (5-9K unique downloads each, ESL-flagged), and each changes interior and exterior over time rather than being a one-time set-dressing swap:
+- `Evolving Locations - Riverside Shack` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124268>
+- `Evolving Locations - Lucky Shack` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/123700>
+- `Evolving Locations - Cliffside Retreat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124524>
+
 ### Risks & Compatibility
 
 - This subsection can easily duplicate section-07 roadside-atmosphere logic instead of choosing real micro-destinations.
@@ -225,6 +230,10 @@ Add `Environs - Abandoned Abodes` as an abandoned-building restoration layer. It
 - Adding two activity systems at once can feel like feature creep if the rest of the list does not reinforce the same living-world tone.
 - `Hunterborn` requires creature-type patching for any mod that adds new creatures (use `Hunterborn Extender` via Synthesis to handle this).
 - `Simple Fishing Overhaul` requires the free AE fishing addon (already included in Skyrim AE 1.6.1170) and OAR/DAR (already a baseline dependency from `modlist-03.md`).
+- Add `Immersive Fishing` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115249> as a fishing-content expansion that adds new fishing spots, craftable rods, new fish types, and radiant fishing quests. It is a content-first companion to `Simple Fishing Overhaul` (which provides the animation and dialogue improvements) rather than a replacement. The two mods are designed to stack: SFO fixes fishing feel, Immersive Fishing fixes fishing scope.
+- Add `Fishing Extension Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139626> as the encounter-zone and biome registration framework for adding fishing to new worldspaces. Required if the list includes new-lands mods where fishing should be available (e.g., Beyond Skyrim - Bruma).
+- Add `Fishing Voiced Narrative - Simple Fishing Overhaul Voice Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113771> as a compatibility patch between Voiced Narrative - Fishing and Simple Fishing Overhaul. Required if both Voiced Narrative - Fishing and SFO are installed; routes the voiced narrative through SFO's quest dialogue hooks.
+- Add `Fishing Extension for Beyond Skyrim - Bruma` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/152152> as a worldspace-specific fishing extension if Beyond Skyrim - Bruma is adopted. Adds fishing biomes, new fish species, and quest integration for Bruma's rivers and Lake Rumare. Requires the `Fishing Extension Framework` as a dependency.
 - Both mods should be checked against `modlist-13.md` for Legacy of the Dragonborn display integration if they add unique items.
 
 ### Acceptance Criteria
@@ -287,6 +296,7 @@ Add `Environs - Abandoned Abodes` as an abandoned-building restoration layer. It
 - Large quest-expansion route: `Wyrmstooth` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45565>
 - Prestige specialty branch: `The Forgotten City` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1179>
 - Additional expansion-scale branch: `Beyond Skyrim - Bruma SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10917>
+- Bruma fishing companion: `Fishing Extension for Beyond Skyrim - Bruma` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/152152> — adds fishing biomes, new fish species, and quest integration for Bruma's rivers and Lake Rumare. Requires the `Fishing Extension Framework` (listed in the Side Activities subsection above).
 - Darker specialty branch: `Beyond Reach` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3008>
 - High-commitment specialty branch: `VIGILANT SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/11849>
 - Weird Dwemer-side branch: `The Wheels of Lull - Unwound Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/748>
