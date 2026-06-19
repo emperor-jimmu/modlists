@@ -433,7 +433,9 @@
   - `QuestsAreInSkyrimPatcher` — forward `Quests Are In Skyrim` changes
   - `SynBanditWarForwarder` — forward `Lawless` and its patch records
 - **Item stats, weapons, armor, smithing**:
-  - `Armor Stat Synthesis Patcher`, `Weapon Stat Synthesis Patcher` — analyze and rebalance armor/weapon stats
+- `Armor Stat Synthesis Patcher`, `Weapon Stat Synthesis Patcher` — analyze and rebalance armor/weapon stats using configurable formulas. See `guide.md` Step 23 for detailed usage and configuration instructions (Synthesis registry search name: `Weapon Stat Synthesis Patcher`). The patcher normalises weapon damage, reach, speed, weight, and value tiers across all mod-added weapons including `Immersive Weapons`, `Animated Armoury`, and CC content.
+
+
   - `ArmoryRebalance` — widen the gap between material tiers
   - `Yahis-Weapon-Overhaul` — rebalance axe/mace damage to surpass swords
   - `Arrow Damage Scaling` — make perks/enchantments/potions/archery level apply to arrow damage
@@ -732,7 +734,7 @@ The `Synthesis` patcher pipeline runs as a single batch via the `Run Mutagen` to
 - `HonedMetalAdditionalIngredients` — adds additional ingredients to `Honed Metal` from `Apothecary`/`CACO`.
 - `Heim Recipe Patcher` — updates weapon/armor recipes with the correct `Heim` book conditions (only enable if `Heim` is added).
 - `ReProccer Evolved` — keeps mod-added items compatible with `Skyrim Redone`-style systems; not currently in the stack but the patcher is cheap insurance.
-- `Armor Stat Synthesis Patcher` and `Weapon Stat Synthesis Patcher` — analyze and rebalance armor/weapon stats to keep the tier ladder meaningful across `Immersive Armors`, `Immersive Weapons`, `Spaghetti's Cities`, and `Bruma` armors.
+- `Armor Stat Synthesis Patcher` and `Weapon Stat Synthesis Patcher` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149027>) — analyze and rebalance armor/weapon stats to keep the tier ladder meaningful across `Immersive Armors`, `Immersive Weapons`, `Animated Armoury`, `Spaghetti's Cities`, and `Bruma` armors. See `guide.md` Step 23 for detailed configuration instructions.
 - `SpeedandReachFixes` — applies `Speed and Reach Fixes` corrections to all mod-added weapons.
 - `WeaponSpeedEffectsFix` — applies `Weapon Speed Effects Fix` / `Attack Speed Framework Plus` corrections to all mod-added weapons.
 - `SynFixShieldData` and `SynFixWeaponAttackSpeed` — repair shield material/impact sets and attack-speed bugs on mod-added items.

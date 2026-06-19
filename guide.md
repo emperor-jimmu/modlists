@@ -472,6 +472,8 @@ Create or use separator `03 Animations and Movement`.
 - `Precision - Accurate Melee Collisions` (<https://www.nexusmods.com/skyrimspecialedition/mods/72347>)
 - `SCAR - Skyrim Combos AI Revolution` (<https://www.nexusmods.com/skyrimspecialedition/mods/72014>)
 - `IFrame Generator RE (AE Support)` (<https://www.nexusmods.com/skyrimspecialedition/mods/82737>)
+- `Animated Armoury - DAR Version` (<https://www.nexusmods.com/skyrimspecialedition/mods/35978>) — provides weapon meshes, collision, and leveled-list for 12 new weapon types; required by the OAR version
+- `Animated Armoury - OAR` (<https://www.nexusmods.com/skyrimspecialedition/mods/103577>) — adds first/third-person animations for 12 new weapon types (rapier, spear, halberd, katana, etc.) via Open Animation Replacer; requires the DAR version above
 
 ### Choice Required
 
@@ -491,6 +493,10 @@ Create or use separator `03 Animations and Movement`.
     - `New Creature Animation - Giant` (<https://www.nexusmods.com/skyrimspecialedition/mods/83317>)
     - `New Creature Animation - Falmer` (<https://www.nexusmods.com/skyrimspecialedition/mods/83572>)
     - `New Creature Animation - Werewolf` (<https://www.nexusmods.com/skyrimspecialedition/mods/83806>)
+- Weapon-type variety (adds 12 new weapon types with custom animations):
+    - `Animated Armoury - DAR Version` (<https://www.nexusmods.com/skyrimspecialedition/mods/35978>) + `Animated Armoury - OAR` (<https://www.nexusmods.com/skyrimspecialedition/mods/103577>)
+    - install DAR version first (provides meshes and leveled lists), then OAR version (provides animations)
+    - run `Pandora` after installing this pair
 - Off-baseline combat branch:
     - `MCO ADXP - Modern Movement Combat Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/117115>)
     - `Animation Motion Revolution` (<https://www.nexusmods.com/skyrimspecialedition/mods/50258>)
@@ -935,6 +941,24 @@ Use these only where they genuinely help:
 - `Synthesis`
     - use for whole-load-order rules such as leveled-list cleanup, AI forwarding, music merge, item-stat normalization, sound patching, or `Apothecary` / `CACO` support
     - do not use it as a substitute for deliberate conflict resolution
+    - specific patcher — `Weapon Stat Synthesis Patcher` (Nexus 149027):
+        - what it does: analyzes all weapons in the load order and rebalances their stats (damage, reach, speed, weight, value) using configurable formulas. Produces a single output patch that normalises the tier ladder across mod-added weapons from `Immersive Weapons`, `Animated Armoury`, `Creation Club` content, or any other weapon mod.
+        - when to run: once after the full weapon stack is installed and stable — any time weapons are added, removed, or reordered in the load order. Do not run before the weapon mods are finalised.
+        - how to add in Synthesis:
+            1. Open `Synthesis`, click `Add` or `+`.
+            2. Search the registry for `Weapon Stat Synthesis Patcher`.
+            3. Select it and add it to the active patcher list.
+            4. Click the gear icon to configure parameters:
+                - `Damage Floor` — minimum base damage for any weapon (default: 4)
+                - `Damage Ceiling` — maximum base damage ceiling (default: 30)
+                - `Weight Scale` — multiplier for weapon weight (default: 1.0)
+                - `Value Scale` — multiplier for weapon gold value (default: 1.0)
+                - `Speed Normalization` — tick to normalise speed values across material tiers
+                - `Reach Normalization` — tick to normalise reach values
+                - `Ignore List` — add specific mod plugin names if they should be excluded from rebalancing
+            5. Close config and save the patcher list.
+        - order in the patcher pipeline: run after `OWLLeveledListAddition`, `SpeedandReachFixes`, and `AmmoTweaks` (weapon stat patchers that resolve structural data before this patcher applies its formulas). See the full pipeline order in `modlist-15.md`.
+        - output: generates `zWeaponStatSynthesis.esp` when run (or merges into the main Synthesis output if configured as a group patcher). Ensure it loads after all weapon mods.
 - `Wrye Bash`
     - use for leveled-list merging and Bash-tag-driven imports if the chosen mod stack still benefits from it
     - do not treat it as a junk drawer for unrelated overrides

@@ -184,6 +184,7 @@
 - Verified ambitious-route support to track with `MCO`: `Animation Motion Revolution` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50258> and `Payload Interpreter` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65089>
 - Iframe-utility support: `IFrame Generator RE (AE Support)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82737> is the AE-compatible iframe generator that several advanced attack and combat-animation packs expect. Hard-requires `Address Library for SKSE Plugins` and `SKSE64`. Required as a universal install if the final animation stack includes any pack that depends on it; otherwise install per-package when an animation mod explicitly lists it.
 - Gameplay-side companion to revisit in `modlist-04.md`: `Valhalla Combat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64741>
+- New-weapon-type animations: `Animated Armoury - OAR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/103577> — adds 12 new weapon types (rapier, cutlass, scimitar, spear, halberd, quarterstaff, pike, javelin, katana, wakizashi, claw, whip) each with first-person and third-person attack animations. The OAR version requires `Open Animation Replacer` (already the baseline). The OAR version also requires the `Animated Armoury - DAR Version` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/35978> as a hard dependency — the DAR version provides the weapon meshes, collision data, and leveled-list distribution; the OAR version provides the animation files and OAR-specific configuration. Install both.
 
 ### Recommendation
 
@@ -191,6 +192,7 @@
 - Keep `MCO ADXP` as the main high-commitment route to compare later, not as the automatic baseline.
 - If the list moves to `MCO`, treat `Animation Motion Revolution` and `Payload Interpreter` as part of the same route review instead of pretending `MCO` is a standalone decision.
 - Keep `Valhalla Combat` adjacent but separate so animation presentation does not get collapsed into gameplay-rule design.
+- Add `Animated Armoury` as a combat-variety upgrade: the 12 new weapon types add real gameplay depth without changing the combat-system framework. The OAR version pairs cleanly with the existing OAR baseline. Install DAR version first (provides meshes and leveled-list integration), then overlay the OAR version (provides animations). Run `Pandora` after installation.
 
 ### Risks & Compatibility
 
