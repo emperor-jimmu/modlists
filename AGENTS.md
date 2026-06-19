@@ -20,22 +20,26 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 - `modlist.md` is the hub file only: project scope, setup/install/tooling guidance, research workflow, and the index to numbered section files.
 - Each numbered `modlist-XX.md` file owns one second-level planning section. Keep the numbering aligned with the index in `modlist.md`.
-- `separators.md` is the canonical ordered reference for `Mod Organizer 2` separators derived from the current modlist structure.
+- `separators.md` is the canonical ordered reference (111 entries) for `Mod Organizer 2` separators derived from the current modlist structure.
 - `TODO.md` is a scratch backlog of ideas and possible future research, not an authoritative recommendation list.
 
 ## Current Structure
 
-- `modlist-01.md` through `modlist-15.md` are the active numbered sections.
-- Current section titles are: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Targeted Bugfix Mods`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, and `Performance and Technical Workflow`.
-- `modlist-01.md`, `modlist-02.md`, and `modlist-09.md` have been reviewed and rewritten/trimmed, using a collapsed template approach (fewer redundant headings). The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
-- `modlist-03.md` (`Animations and Movement`) and `modlist-04.md` (`Third-Person Gameplay`) are fully expanded and should be treated as established baselines unless the user asks to revisit them.
-- `modlist-05.md` (`Expanded Systems`) is fully expanded.
-- `modlist-06.md` (`Modernized UI`) is locked. Baseline picks: `SkyUI` + `Oathvein UI` (grim-dark, preferred over `Norden UI` due to tone fit and dependency chain), `SkyHUD` + `TrueHUD` for HUD, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS` for crafting menus, `Sovngarde Font` for 4K readability. All mods verified via Nexus and Reddit community signal.
-- `modlist-07.md` and `modlist-08.md` have moderate content (~255 lines each) but are still open research areas with no concrete mod picks locked in `mods-checklist.md`.
-- `modlist-10.md` (`Audio and Feedback`), `modlist-11.md` (`Survival, Difficulty, and Balance`), and `modlist-15.md` (`Performance and Technical Workflow`) each have 190-270 lines of expanded content and are open research areas.
-- `modlist-14.md` (`Modlist Curation Rules and Testing Plan`) is the expanded meta-section that combines the curation guardrails and the testing verification layer.
-- `modlist-12.md` (`Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes that do not belong in the core foundations layer.
-- `modlist-13.md` (`Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy for content that integrates into the display ecosystem.
+- `modlist-01.md` through `modlist-17.md` are the active numbered sections.
+- Current section titles: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Targeted Bugfix Mods`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow`, `Adult Content`, `Main Character Voicing`.
+- `modlist-01.md` (80 lines), `modlist-02.md` (1016 lines), and `modlist-09.md` (257 lines) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
+- `modlist-03.md` (373 lines, `Animations and Movement`) and `modlist-04.md` (293 lines, `Third-Person Gameplay`) are fully expanded and treated as established baselines.
+- `modlist-05.md` (722 lines, `Expanded Systems`) is fully expanded and locked.
+- `modlist-06.md` (413 lines, `Modernized UI`) is locked. Baseline picks: `SkyUI` + `Oathvein UI`, `SkyHUD` + `TrueHUD`, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS`, `Sovngarde Font`.
+- `modlist-07.md` (336 lines, `Immersive Scale and World Feel`) is moderately expanded but still an open research area.
+- `modlist-08.md` (378 lines, `World Content`) has moderate content and is an active development area with recent mod pick additions (Fishing, Evolving Locations, quest content).
+- `modlist-10.md` (262 lines, `Audio and Feedback`), `modlist-11.md` (226 lines, `Survival, Difficulty, and Balance`), and `modlist-15.md` (849 lines, `Performance and Technical Workflow`) each have expanded content and are open research areas.
+- `modlist-14.md` (165 lines, `Modlist Curation Rules and Testing Plan`) is the expanded meta-section combining curation guardrails and testing verification.
+- `modlist-12.md` (78 lines, `Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes.
+- `modlist-13.md` (116 lines, `Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy.
+- `modlist-16.md` (194 lines, `Adult Content`) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
+- `modlist-17.md` (168 lines, `Main Character Voicing`) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
+- `guide.md` (1056 lines) is the installation guide — the primary deliverable.
 
 ## Content Conventions
 
@@ -58,7 +62,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 ## Research Workflow
 
-- The repo’s planning flow is section-by-section, one category at a time.
+- The repo's planning flow is section-by-section, one category at a time.
 - Prefer executable/observable evidence over memory: existing repo content, verified Nexus pages, current file state, and Reddit discussion signal.
 - Check `r/skyrimmods` for each active research area as the default Reddit source, and only fall back to broader Reddit searching when `r/skyrimmods` does not provide enough signal.
 - Before expanding a numbered section, scan for duplicated ownership, repeated rationale, and boilerplate headings so new writing does not reintroduce the same cleanup problems fixed in sections `01`, `03`, `04`, and `09`.
