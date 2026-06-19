@@ -187,23 +187,41 @@ This subsection owns targeted dialogue additions for existing NPCs — expanding
 
 - Vanilla-plus Windhelm route: `Dialogue Expansion - Windhelm` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112415>. Adds 180+ new lines to Windhelm's citizens, guards, and jarl court, written to match vanilla character voice profiles. No new voice files — uses existing vanilla voice assets.
 - Faction dialogue route: `Dialogue Expansion - Imperial Soldiers` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113208>. Adds dialogue to Imperial soldiers across camps, forts, and cities, using existing vanilla voice assets.
+- AI-voiced follower-dialogue series: `Follower Dialogue Expansion (FDE)` by Anbeegod — a series of mods that each expand a vanilla follower or follower-eligible NPC with hundreds of AI-voiced lines, quest awareness, location reactions, and story-driven interactions. The series covers multiple followers across Skyrim (details in Recommendation).
 - Broader alternative (out of scope): `More Dialogue Overhauls` or authored-NPC bundles that require new voice recording are outside this subsection's scope.
 
 ### Recommendation
 
-Add both `Dialogue Expansion - Windhelm` and `Dialogue Expansion - Imperial Soldiers` as baseline vanilla-plus additions. They are lightweight (ESP-only, no new assets), use existing voice files, and improve the most-repeated conversational contexts in the game.
+- Add both `Dialogue Expansion - Windhelm` and `Dialogue Expansion - Imperial Soldiers` as baseline vanilla-plus additions. They are lightweight (ESP-only, no new assets), use existing voice files, and improve the most-repeated conversational contexts in the game.
+- Add the `Follower Dialogue Expansion (FDE)` series by Anbeegod as the AI-voiced companion to the vanilla-plus dialogue mods. Start with the full publicly available set of 9 follower expansions — they are modular, independent, and can be selectively installed based on which followers the player is likely to recruit:
+  - `FDE - Aela the Huntress` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114801> — the flagship FDE mod with 2700+ lines, full quest commentary for all guilds, approval system, romance arc, and werewolf mechanics. Largest and most feature-rich entry in the series.
+  - `FDE - Brelyna Maryon` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113359> — expands the shy College apprentice with 400+ voiced lines focused on her research, insecurity, and personal growth.
+  - `FDE - Lydia` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/119226> — expands the iconic Housecarl with 400+ voiced lines exploring her duty, loyalty, and frustration.
+  - `FDE - Roggi Knot-Beard` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134694> — expands the Kynesgrove miner into a fully fledged follower with quest awareness and personal story.
+  - `FDE - Aranea Ienith` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/141907> — expands the Priestess of Azura with 495 voiced lines, quest awareness, and religious commentary.
+  - `FDE - Borgakh the Steel Heart` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120255> — expands the Orc stronghold warrior with 478 voiced lines, a personal quest, banter with Illia, and Orc-culture commentary.
+  - `FDE - Uthgerd the Unbroken` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/122487> — expands the Unbroken with 233 voiced lines, banter with Aela, and Companions reconciliation arc.
+  - `FDE - Ysolda` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124787> — transforms the Whiterun merchant into a fully functional follower with 180 voiced lines and a darker backstory.
+  - `FDE - Olfina Gray-Mane` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172562> — expands the Gray-Mane daughter into a fully fledged follower with 578 voiced lines, Civil War commentary, and an approval system.
+- The FDE series uses AI voice acting rather than spliced vanilla lines. This is a known community point of discussion — some players prefer the purity of vanilla-voice additions. Judge by actual in-game feel: the voice quality is consistently high for AI-generated audio, and the writing expands each character's personality rather than replacing it.
+- Author's official FDE collection: <https://next.nexusmods.com/skyrimspecialedition/collections/uu3kpb>
 
 ### Risks & Compatibility
 
 - Dialogue additions can conflict with mods that replace the same NPC records or quest aliases.
 - Confirm compatibility with `AI Overhaul SSE`, `Crowded Streets`, and any city overhaul that touches Windhelm NPCs or Imperial soldier faction assignments.
-- Both mods are zero-asset (dialogue scripts only), so load-order placement matters more than asset conflicts.
+- Both `Dialogue Expansion - Windhelm` and `Dialogue Expansion - Imperial Soldiers` are zero-asset (dialogue scripts only), so load-order placement matters more than asset conflicts.
+- The FDE series uses AI voice acting, which may feel tonally different from vanilla-voiced content in the same playthrough. Each FDE mod is ESL-flagged and claims 100% compatibility with any mod — verify against the specific NPC appearance overhaul chosen in the NPC Appearance Overhauls section to avoid facegen or blackface issues.
+- FDE mods each add an ESP(-flagged) plugin. With 9 mods, this adds 9 lightweight plugins — well within the 254/4096 limit but worth tracking in the final plugin count.
+- `FDE - Olfina Gray-Mane` explicitly conflicts with `IDE Whiterun` (duplicated content). Since IDE Whiterun is not in the current modlist, this is a non-issue — but flag it if Whiterun dialogue add-ons are added later.
+- The FDE series by Anbeegod (aka Negatrm) is separate from JaySerpa's quest/house-expansion mods. Both authors produce dialogue content, but they operate independently and do not conflict.
 
 ### Acceptance Criteria
 
 - Windhelm citizens and soldiers have noticeably more responsive dialogue during ordinary play.
 - No missing-voice or subtitled-only lines appear.
 - No record conflicts with the chosen NPC appearance, AI, or population stack.
+- FDE followers deliver quest-aware lines and location reactions during ordinary gameplay without feeling like they are overriding the vanilla character identity. Test with 2-3 FDE followers active across different questlines.
 
 ## Wildlife Density And Rarity Balance
 

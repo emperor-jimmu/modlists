@@ -715,6 +715,8 @@ Current strongest first-pass candidates:
 - `Fishing Extension Framework` (<https://www.nexusmods.com/skyrimspecialedition/mods/139626>) — framework for adding fishing biomes to new worldspaces
 - `Fishing Voiced Narrative - Simple Fishing Overhaul Voice Patch` (<https://www.nexusmods.com/skyrimspecialedition/mods/113771>) — compatibility patch between Voiced Narrative - Fishing and Simple Fishing Overhaul
 - `Hunterborn SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/7900>)
+- `Fishermen Fish - Brings the Fish to You` (<https://www.nexusmods.com/skyrimspecialedition/mods/134408>) — overlays fish meshes on NPCs for immersive fishing scenes
+- `Garbage Loot - Barrels and Sacks` (<https://www.nexusmods.com/skyrimspecialedition/mods/18047>) — adds lootable trash containers throughout the world for scavenging
 
 Optional `Missives` support if that route wins over `Sidequests of Skyrim` or sits alongside it cleanly:
 
@@ -735,7 +737,7 @@ Optional `Missives` support if that route wins over `Sidequests of Skyrim` or si
 - Quest/worldspace content depth:
     - pick only the new-content mods that fit the final tone and maintenance budget
     - do not install every large quest/worldspace mod by default
-    - candidates include `Moon and Star` (<https://www.nexusmods.com/skyrimspecialedition/mods/4301>), `Wyrmstooth` (<https://www.nexusmods.com/skyrimspecialedition/mods/45565>), `The Forgotten City` (<https://www.nexusmods.com/skyrimspecialedition/mods/1179>), `Sirenroot`, `VIGILANT SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/11849>), `Beyond Skyrim - Bruma SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/10917>), `Fishing Extension for Beyond Skyrim - Bruma` (<https://www.nexusmods.com/skyrimspecialedition/mods/152152>), `Beyond Reach` (<https://www.nexusmods.com/skyrimspecialedition/mods/3008>), `The Wheels of Lull - Unwound Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/748>), `Falskaar` (<https://www.nexusmods.com/skyrimspecialedition/mods/2057>)
+    - candidates include `Moon and Star` (<https://www.nexusmods.com/skyrimspecialedition/mods/4301>), `Wyrmstooth` (<https://www.nexusmods.com/skyrimspecialedition/mods/45565>), `The Forgotten City` (<https://www.nexusmods.com/skyrimspecialedition/mods/1179>), `Sirenroot`, `Whispers of the Depths - A Sea Monster Quest` (<https://www.nexusmods.com/skyrimspecialedition/mods/127087>), `VIGILANT SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/11849>), `Beyond Skyrim - Bruma SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/10917>), `Fishing Extension for Beyond Skyrim - Bruma` (<https://www.nexusmods.com/skyrimspecialedition/mods/152152>), `Beyond Reach` (<https://www.nexusmods.com/skyrimspecialedition/mods/3008>), `The Wheels of Lull - Unwound Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/748>), `Falskaar` (<https://www.nexusmods.com/skyrimspecialedition/mods/2057>)
 - Player-home/buildable settlement policy:
     - keep this narrow; 1 to 2 picks is enough
     - candidates include `Leaf Rest`, `Heljarchen Farm` (<https://www.nexusmods.com/skyrimspecialedition/mods/4108>), `LC_Build Your Noble House` (<https://www.nexusmods.com/skyrimspecialedition/mods/18308>), `Windstad Mine` (<https://www.nexusmods.com/skyrimspecialedition/mods/4160>), `Blackthorn`
@@ -758,6 +760,15 @@ Current strongest first-pass baseline:
 - `True Hunter - fewer animals per square meter` (<https://www.nexusmods.com/skyrimspecialedition/mods/25628>)
 - `Dialogue Expansion - Windhelm` (<https://www.nexusmods.com/skyrimspecialedition/mods/112415>)
 - `Dialogue Expansion - Imperial Soldiers` (<https://www.nexusmods.com/skyrimspecialedition/mods/113208>)
+- `Follower Dialogue Expansion - Aela the Huntress` (<https://www.nexusmods.com/skyrimspecialedition/mods/114801>) — adds 2700+ voiced lines, quest commentary, approval system, and romance for the Companions huntress
+- `Follower Dialogue Expansion - Brelyna Maryon` (<https://www.nexusmods.com/skyrimspecialedition/mods/113359>) — expands the College of Winterhold apprentice with 400+ voiced lines
+- `Follower Dialogue Expansion - Lydia` (<https://www.nexusmods.com/skyrimspecialedition/mods/119226>) — expands the Housecarl of Whiterun with 400+ voiced lines
+- `Follower Dialogue Expansion - Roggi Knot-Beard` (<https://www.nexusmods.com/skyrimspecialedition/mods/134694>) — expands the Kynesgrove miner into a fully fledged follower
+- `Follower Dialogue Expansion - Aranea Ienith` (<https://www.nexusmods.com/skyrimspecialedition/mods/141907>) — expands the Priestess of Azura with 495 voiced lines
+- `Follower Dialogue Expansion - Borgakh the Steel Heart` (<https://www.nexusmods.com/skyrimspecialedition/mods/120255>) — expands the Orc stronghold warrior with 478 voiced lines and a personal quest
+- `Follower Dialogue Expansion - Uthgerd the Unbroken` (<https://www.nexusmods.com/skyrimspecialedition/mods/122487>) — expands the Unbroken with 233 voiced lines and banter with Aela
+- `Follower Dialogue Expansion - Ysolda` (<https://www.nexusmods.com/skyrimspecialedition/mods/124787>) — expands the Whiterun merchant into a fully functional follower with 180 voiced lines
+- `Follower Dialogue Expansion - Olfina Gray-Mane` (<https://www.nexusmods.com/skyrimspecialedition/mods/172562>) — expands Olfina into a fully fledged follower with 578 voiced lines and Civil War commentary
 
 ### Choice Required
 
