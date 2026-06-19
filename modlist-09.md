@@ -177,6 +177,34 @@ Keep `Travellers of Skyrim` as the road-travel comparison if the real weakness i
 - Any broader world-alive or out-of-scope alternative documented with a clear reason it is not the baseline.
 - The chosen direction improves civilian presence without duplicating section-07 ownership or overwhelming the rest of section 09.
 
+## NPC Dialogue Expansions
+
+### Core Idea
+
+This subsection owns targeted dialogue additions for existing NPCs — expanding what vanilla characters say without rewriting their identity or adding new voice actors. The goal is more responsive, less repetitive NPC conversations in key social and faction contexts.
+
+### Options
+
+- Vanilla-plus Windhelm route: `Dialogue Expansion - Windhelm` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112415>. Adds 180+ new lines to Windhelm's citizens, guards, and jarl court, written to match vanilla character voice profiles. No new voice files — uses existing vanilla voice assets.
+- Faction dialogue route: `Dialogue Expansion - Imperial Soldiers` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113208>. Adds dialogue to Imperial soldiers across camps, forts, and cities, using existing vanilla voice assets.
+- Broader alternative (out of scope): `More Dialogue Overhauls` or authored-NPC bundles that require new voice recording are outside this subsection's scope.
+
+### Recommendation
+
+Add both `Dialogue Expansion - Windhelm` and `Dialogue Expansion - Imperial Soldiers` as baseline vanilla-plus additions. They are lightweight (ESP-only, no new assets), use existing voice files, and improve the most-repeated conversational contexts in the game.
+
+### Risks & Compatibility
+
+- Dialogue additions can conflict with mods that replace the same NPC records or quest aliases.
+- Confirm compatibility with `AI Overhaul SSE`, `Crowded Streets`, and any city overhaul that touches Windhelm NPCs or Imperial soldier faction assignments.
+- Both mods are zero-asset (dialogue scripts only), so load-order placement matters more than asset conflicts.
+
+### Acceptance Criteria
+
+- Windhelm citizens and soldiers have noticeably more responsive dialogue during ordinary play.
+- No missing-voice or subtitled-only lines appear.
+- No record conflicts with the chosen NPC appearance, AI, or population stack.
+
 ## Wildlife Density And Rarity Balance
 
 ### Core Idea

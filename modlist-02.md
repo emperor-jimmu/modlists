@@ -509,6 +509,8 @@
 - Add `Flora Orientalis` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64041> and `Waterplants` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6092> to the grass baseline to satisfy `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and the broader mixed-route coverage targets.
 - Keep `Folkvangr - Grass and Landscape Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/44899> as the main heavier alternate.
 - Keep `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and `QW's Grass Patch 2` in mind only after the final grass combination is narrow enough to justify patch-hub planning.
+- Add `Cathedral - 3D Stonecrop` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/110726> and `DrJacopo - 3D Tundra Shrubs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/108747> as 3D plant mesh replacers that swap 2D billboard plants for photorealistic models with proper depth. These are mesh-only (no ESP) and layer cleanly on the grass baseline.
+- Expand the 3D plant replacer layer with the full Cathedral 3D series: `Cathedral - 3D Clover Plant` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68793>, `Cathedral - 3D Deathbell` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76460>, `Cathedral - 3D Dragons Tongue` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85694>, `Cathedral - 3D Lavender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68310>, `Cathedral - 3D Thistle` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/67619>, and `Cathedral - 3D Snow Berries` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/69415>. These are authored by DrJacopo (same creator as Stonecrop and Tundra Shrubs) and use the same mesh-only approach — no ESPs, no patch requirements, complete visual consistency with the existing 3D plant baseline.
 
 ### Risks & Compatibility
 
@@ -982,12 +984,14 @@ Male variety on `HIMBO`:
 ### Options
 
 - Blood and decal baseline: `Dynamic Bloodpool Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
+- Dragon breath VFX route: `Dragon Breath VFX Edit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/118431> — replaces the vanilla dragon breath projectile and impact effects with higher-fidelity, more dramatic VFX (fire, frost, and shock breath variants). Authored by Kittytail, mesh replacer only, no ESP.
 - Discipline-first route: rely on the vanilla blood and decal system and skip the dedicated framework, since the locked combat and graphics stack already produces readable hit feedback.
 - Deferred visual-effects branch: do not add a blood or decal framework until the locked weather, lighting, and texture stacks are stable, because combat visual effects can clash with the chosen weather rendering.
 
 ### Recommendation
 
 - Use `Dynamic Bloodpool Framework` as the blood and decal baseline if `Elder Wilds` wants combat to leave more persistent visual traces on the world. It is a framework-level replacement for the vanilla blood system, designed to render dynamic blood pools and decals under the locked lighting and weather stack. Lock it in only after the weather and lighting baselines are stable, because blood decals need to read correctly under both daylight and the chosen night-darkness setup from `modlist-07.md`.
+- Add `Dragon Breath VFX Edit` as the dragon-combat VFX companion. It replaces vanilla dragon breath effects with higher-fidelity, more dramatic visuals (fire, frost, shock). Mesh replacer only, no ESP, no script overhead, compatible with all weather and lighting stacks. Fits the "big, dark, awe-inspiring world" pillar by making dragon encounters visually more impactful.
 - Keep the discipline-first route alive if the vanilla blood system already reads as strong enough under the chosen lighting and weather setup. Adding a framework for its own sake adds an extra mod without guaranteeing a visible gain.
 - Keep the deferred visual-effects branch alive if the locked weather, lighting, and texture stacks are still being settled, because adding a blood framework too early risks a re-tune when the weather or lighting baseline changes.
 - Keep this subsection separate from `modlist-04.md` hit-reaction and stagger ownership, and from `modlist-11.md` combat and difficulty ownership. The hit moment is their decision; the visual aftermath is this one's.

@@ -168,6 +168,7 @@
 - Narrower companion route: `Hidden Hideouts of Skyrim City Edition SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2626>
 - Rejected caution branch: `Master The Summit` stays out because current community signal points too strongly toward support and navmesh-risk concerns.
 - Daedric shrine locations route: `Daedric Shrines - All in One` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78772> — adds physical shrines to each Daedric Prince at lore-appropriate locations across Skyrim. Each shrine is a discoverable point of interest with unique architecture matching the Prince's domain. Complements the Pilgrim/Pilgrim religion system from `modlist-05.md` without requiring it.
+- Abandoned-building restoration route: `Environs - Abandoned Abodes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82410> — restores and refurbishes several abandoned buildings across Skyrim (Hoddminir, Tumbledown Shack, Hellfire Chasm, and others) into inhabited, lootable locations with new clutter and environmental storytelling. ESL-flagged, authored by Tx12001, widely compatible with landscape and city overhauls.
 - Daedric Shrines patch collection: `Daedric Shrines - All in One by Xtudo - Wintersun Lakeview Teldryn Cure Wyrmstooth Antennaria Evil Aemer Thieves Helgen Death Cut Content Moon Leaf Rest Talos` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78809> — a compatibility patch bundle for Daedric Shrines covering Wintersun, Wyrmstooth, Legacy of the Dragonborn, Lakeview, and other mods in the list. Required companion if Daedric Shrines is locked.
 
 ### Recommendation
@@ -182,6 +183,8 @@
 Add `Daedric Shrines - All in One` as a Daedric-shrine discovery layer. Each shrine is a bespoke point of interest with unique architecture matching the Prince's domain, rewarding exploration with visual payoff rather than loot. Complements the religion layer from `modlist-05.md` without requiring it.
 
 Add `Daedric Shrines - All in One by Xtudo` as the required patch companion. Its patch collection covers Wintersun, Wyrmstooth, LotD, Lakeview, and other mods in `Elder Wilds` that add or modify shrine-related locations.
+
+Add `Environs - Abandoned Abodes` as an abandoned-building restoration layer. It targets specific abandoned locations (Hoddminir, Tumbledown Shack, Hellfire Chasm, and others) that vanilla leaves as empty shells and gives them new clutter, loot, and environmental storytelling. ESL-flagged, zero script overhead, compatible with most landscape and city overhauls. It fits the "lots of new content" pillar by converting forgettable empty buildings into discoverable locations without adding new cell records.
 
 ### Risks & Compatibility
 

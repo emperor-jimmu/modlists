@@ -89,6 +89,8 @@
 - Sorting-and-icon route: `Aura's Inventory Tweaks (More SkyUI Icons Sorting Options and More)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68557>
 - Weapon-stat overlay route: `Weapon Stat Viewer V2` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/127249>
 - Item-info injection route: `Inventory Interface Information Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85702> — a lightweight SKSE plugin by M8r98a4f2 (same author as moreHUD) that injects extra item information (value, weight, damage, armor rating, value-per-weight) directly into the inventory interface without altering the SkyUI layout or requiring a core UI framework change. Does not make any inventory list invalidation calls.
+- Enchantment-icon route: `Dynamic Inventory Icon Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174136> — a utility mod that dynamically loads custom icon textures for enchantment icons, acting as the dependency layer for `Enchanted Icon Overhaul`.
+- Optional enchantment-icon route: `Enchanted Icon Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174246> — adds distinct icons for learned, artifact, and learnable enchantments so the player can visually distinguish them at a glance without opening the item card. Depends on `Dynamic Inventory Icon Injector`.
 
 ### Recommendation
 
@@ -98,6 +100,8 @@
 - Keep `Aura's Inventory Tweaks` as the more organizational comparison if the final UI direction proves to need stronger sorting and icon structure rather than just clearer cards and details.
 - Keep `Weapon Stat Viewer V2` as a documented weapon-stat overlay companion rather than a baseline. It surfaces weapon damage numbers in real time (so the player can compare weapons without opening menus), and it is more useful than the other options here for the combat-experience pillar. Lock it in only if the chosen UI framework (`SkyUI` + `Oathvein UI`) renders it cleanly; verify it before treating it as part of the locked inventory stack.
 - Add `Inventory Interface Information Injector` as a lightweight data-fill companion alongside the moreHUD baseline. By the same author (M8r98a4f2), it adds value, weight, and stat-per-weight columns to inventory views without touching SkyUI layout records or making invalidation calls — zero compatibility risk with `moreHUD`, `Weapon Stat Viewer V2`, or the `Oathvein UI` visual direction.
+- Keep `Dynamic Inventory Icon Injector` as the mandatory utility dependency if `Enchanted Icon Overhaul` is selected. It provides the icon-injection infrastructure and has been stable as of mid-2025.
+- Add `Enchanted Icon Overhaul` as the optional icon-enhancement branch. It is not part of the mandatory inventory-readability baseline, but it adds genuine scannability value for enchantment-heavy play styles by making the enchantment type visible at a glance. Evaluate after the core inventory stack is stable.
 - Keep map, journal, magic-menu, crafting-menu, and dialogue decisions out of this subsection so inventory ownership stays clear.
 
 ### Risks & Compatibility

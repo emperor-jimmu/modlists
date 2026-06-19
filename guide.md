@@ -306,6 +306,8 @@ Install these locked or strongly preferred baseline picks early because later sy
 - `Quest Journal Fix for SkyUI` (<https://www.nexusmods.com/skyrimspecialedition/mods/108618>)
 - `SkyUI Ghost Item Bug Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/49106>)
 - `Yes Im Sure NG` (<https://www.nexusmods.com/skyrimspecialedition/mods/76892>)
+- `Dynamic Inventory Icon Injector` (<https://www.nexusmods.com/skyrimspecialedition/mods/174136>)
+- `Enchanted Icon Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/174246>) — optional; adds distinct icons for learned, artifact, and learnable enchantments
 
 ### Choice Required
 
@@ -364,6 +366,15 @@ Under `02.04 Texture Overhauls By Material Type` and `02.05 Mesh Improvements An
 - `FYX - Water Mesh Optimization` (<https://www.nexusmods.com/skyrimspecialedition/mods/97713>)
 - `Natural Waterfalls` (<https://www.nexusmods.com/skyrimspecialedition/mods/87261>)
 - `Rally's Water Foam` (<https://www.nexusmods.com/skyrimspecialedition/mods/28922>)
+- `Cathedral - 3D Stonecrop` (<https://www.nexusmods.com/skyrimspecialedition/mods/110726>)
+- `DrJacopo - 3D Tundra Shrubs` (<https://www.nexusmods.com/skyrimspecialedition/mods/108747>)
+- `Cathedral - 3D Clover Plant` (<https://www.nexusmods.com/skyrimspecialedition/mods/68793>)
+- `Cathedral - 3D Deathbell` (<https://www.nexusmods.com/skyrimspecialedition/mods/76460>)
+- `Cathedral - 3D Dragons Tongue` (<https://www.nexusmods.com/skyrimspecialedition/mods/85694>)
+- `Cathedral - 3D Lavender` (<https://www.nexusmods.com/skyrimspecialedition/mods/68310>)
+- `Cathedral - 3D Thistle` (<https://www.nexusmods.com/skyrimspecialedition/mods/67619>)
+- `Cathedral - 3D Snow Berries` (<https://www.nexusmods.com/skyrimspecialedition/mods/69415>)
+- `Dragon Breath VFX Edit` (<https://www.nexusmods.com/skyrimspecialedition/mods/118431>)
 
 Under `02.13 Character, Skin, And Creature Visuals` install the current strongest baseline:
 
@@ -653,6 +664,8 @@ Current strongest first-pass picks:
 - `Ancient Land` (<https://www.nexusmods.com/skyrimspecialedition/mods/22900>)
 - `Animallica SE - Skyrim Wildlife Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/20456>)
 - `Simply Darker Nights (SSE)` (<https://www.nexusmods.com/skyrimspecialedition/mods/14269>)
+- `Dynamic Wind Framework - SKSE Plugin` (<https://www.nexusmods.com/skyrimspecialedition/mods/177023>)
+- `Dynamic Wind - Skyrim` (<https://www.nexusmods.com/skyrimspecialedition/mods/177024>) — config/data mod for the framework
 
 ### Choice Required
 
@@ -690,6 +703,7 @@ Current strongest first-pass candidates:
 - `Missives` (<https://www.nexusmods.com/skyrimspecialedition/mods/17576>)
 - `Leaf Rest` (<https://www.nexusmods.com/skyrimspecialedition/mods/15191>)
 - `Simple Fishing Overhaul - Animations and Improved Quest Dialogue` (<https://www.nexusmods.com/skyrimspecialedition/mods/103440>)
+- `Environs - Abandoned Abodes` (<https://www.nexusmods.com/skyrimspecialedition/mods/82410>)
 - `Hunterborn SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/7900>)
 
 Optional `Missives` support if that route wins over `Sidequests of Skyrim` or sits alongside it cleanly:
@@ -731,6 +745,8 @@ Current strongest first-pass baseline:
 - `Dragons Use Thu'um - Dragon AI Enhancements and New Fully Voiced Shouts` (<https://www.nexusmods.com/skyrimspecialedition/mods/87085>)
 - `Crowded Streets` (<https://www.nexusmods.com/skyrimspecialedition/mods/127723>)
 - `True Hunter - fewer animals per square meter` (<https://www.nexusmods.com/skyrimspecialedition/mods/25628>)
+- `Dialogue Expansion - Windhelm` (<https://www.nexusmods.com/skyrimspecialedition/mods/112415>)
+- `Dialogue Expansion - Imperial Soldiers` (<https://www.nexusmods.com/skyrimspecialedition/mods/113208>)
 
 ### Choice Required
 

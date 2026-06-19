@@ -273,6 +273,35 @@
 - Road surfaces feel cohesive with the surrounding terrain through texture blending rather than authored geometry.
 - The decision to reject `Northern Roads` is documented alongside the rationale (patch burden at current complexity level), so future contributors do not reopen the question without understanding why it was set aside.
 
+## Environmental Atmosphere: Wind And Dynamic Effects
+
+### Core Idea
+
+- This subsection owns how wind, atmospheric movement, and dynamic environmental effects make the world feel physically alive during ordinary exploration.
+- It should add perceptible world-layer motion — wind through trees and grass, dynamic cloth physics, and airborne particle behavior — without collapsing into weather-system ownership or graphics-side shader territory.
+
+### Options
+
+- Wind-physics framework route: `Dynamic Wind Framework - SKSE Plugin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177023> — a SKSE plugin that enables dynamic wind behavior (tree sway, grass movement, cloth physics) tied to weather and location conditions. Provides the infrastructure for wind-aware environmental effects.
+- Wind-content companion route: `Dynamic Wind - Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177024> — config/data mod that applies the Dynamic Wind Framework to Skyrim's weather and locations. Depends on the framework plugin.
+
+### Recommendation
+
+- Add `Dynamic Wind Framework - SKSE Plugin` as the infrastructure baseline. It enables weather-aware wind physics that make trees, grass, and environmental elements respond to weather conditions dynamically rather than using canned animations. Requires Address Library for SKSE Plugins (already in the foundation layer).
+- Add `Dynamic Wind - Skyrim` as the required data companion. The framework plugin provides the engine; this mod provides Skyrim-specific wind profiles tied to weather and location cells.
+- Keep this subsection separate from the broader weather-system ownership (which belongs in `modlist-02.md`'s Weather and Lighting subsection) and from graphics-side cloth physics (which belongs in `modlist-02.md`'s physics decisions).
+
+### Risks & Compatibility
+
+- Dynamic wind is a visual-enhancement layer, not a gameplay system. If performance is a concern, it is the easiest subsection to skip without breaking anything else.
+- The framework is maintained by RavenKZP and has been stable since its mid-2025 release, but it is a relatively new mod (post-June 2025). Verify it works cleanly with the chosen tree mod, grass stack, and ENB/community shader before treating it as locked.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one clear dynamic-wind baseline (`Dynamic Wind Framework` + `Dynamic Wind - Skyrim`).
+- Trees, grass, and cloth respond to weather conditions with visible dynamic movement rather than canned animation loops.
+- The mods integrate cleanly with the tree mod, grass stack, and ENB/community shader without visual artifacts or performance degradation.
+
 ## Night Darkness And Visibility Balance
 
 ### Core Idea
