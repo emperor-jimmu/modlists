@@ -598,6 +598,7 @@ For the item / artifact / wardrobe side, install the current preferred baseline:
     - `Apothecary` vs `Complete Alchemy and Cooking Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/19924>)
     - `Ars Metallica` vs `Complete Crafting Overhaul Remastered` (<https://www.nexusmods.com/skyrimspecialedition/mods/28608>)
     - `Honed Metal` (<https://www.nexusmods.com/skyrimspecialedition/mods/61015>) as optional service layer
+    - `Summermyst - Enchantments of Skyrim` (<https://www.nexusmods.com/skyrimspecialedition/mods/6285>) as optional enchanting-variety companion (needs research — verify compatibility with the chosen perk/magic/artifact stack)
 - Economy path:
     - current lean: `Trade and Barter`
     - alternative progression route: `Open World Loot` (<https://www.nexusmods.com/skyrimspecialedition/mods/49681>) or `MorrowLoot Ultimate` (<https://www.nexusmods.com/skyrimspecialedition/mods/3058>)

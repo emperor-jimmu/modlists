@@ -320,6 +320,7 @@
 - Large integrated route: `Complete Crafting Overhaul Remastered` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28608>
 - Roleplay-service route: `Honed Metal -NPC Crafting and Enchanting Services` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61015>
 - Enchanting overhaul companion: `Thaumaturgy - An Enchanting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57138> — a Simonrim-aligned enchanting overhaul by SimonMagus that rebalances enchantment effects, costs, and progression. Designed to pair with the already-locked `Mysticism` (magic) and `Adamant` (perks) baselines, keeping the Simonrim progression family coherent.
+- Enchantment variety companion (optional, needs research): `Summermyst - Enchantments of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6285> — adds ~140 new enchantment effects to weapons, armor, and jewelry. By EnaiSiaion. Sits alongside a system overhaul like `Thaumaturgy` rather than replacing it: Summermyst adds variety (new effects to find on loot), Thaumaturgy defines progression (how enchanting works). Needs compatibility verification against `Thaumaturgy`, `Adamant`, `Mysticism`, and the chosen artifact overhaul before locking.
 
 ### Recommendation
 
