@@ -19,7 +19,7 @@ Reviewing against: the updated directives in `modlist.md:8` and `modlist-14.md:1
 - **Evidence**: `modlist-16.md:53`: "The writing tone is uneven — some quests land well, some lean into cringe."
 - **Recommendation**: Keep the Dialogue Rewritten patch as mandatory, but document that AA's tone is a known weak point that players should evaluate for themselves before including the full stack.
 
-### 4. Know Your Enemy 2 — `modlist-11.md:141-162`
+### 3. Know Your Enemy 2 — `modlist-11.md:141-162`
 
 - **Risk**: The inspect flow and resistance homework could turn combat into a checklist. The modlist notes: "judge it on whether it rewards preparation and damage-type diversity without turning ordinary combat into checklist homework."
 - **Evidence**: `modlist-11.md:149`
@@ -118,7 +118,6 @@ Per-mod plugins that auto-save/load MCM settings via MCM Helper. Zero user inter
 | **Know Your Enemy 2**         | ❌ No settings loader found                                          | —        |
 | **Bathing in Skyrim**         | ❌ No settings loader found                                          | —        |
 | **Immersive Armors**          | ❌ No settings loader found                                          | —        |
-
 
 ### Approach B: MCM Recorder (Universal — Recommended)
 
