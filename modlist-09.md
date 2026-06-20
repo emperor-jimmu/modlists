@@ -91,24 +91,25 @@ This subsection owns creature-specific visual direction layered on top of the br
 - Spider visual overhaul: `Spider SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182638> — replaces spider models and textures with higher-quality versions. Spiders are common dungeon enemies that vanilla treats with noticeably dated models, making this a high-visibility upgrade.
 - Targeted species follow-ups: `Diverse True Wolves and Dogs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/38058>, `Real Rabbits HD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29223>, `Rally's Shaggy Cows of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47742>, and `Realistic Horse Breeds by KrittaKitty` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/7685> if familiar domestic/wilderness animals still feel generic after the baseline lands.
 - Deer visual overhaul: `Deer Reworked - Ultimate` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/155433> — replaces deer models and textures with high-detail versions across all deer variants. Deer are one of the most common wilderness wildlife sightings, making this a high-visibility targeted species upgrade.
+- Hagraven visual overhaul: `Hagraven - New models and Textures` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160407> — replaces hagraven models and textures with high-detail versions inspired by Adam Adamowicz concept art. No ESP, pure mesh/texture replacer. 874 endorsements, by Mandragoraspout. Add as an optional creature visual upgrade alongside Draugrs and Spider — hagravens are common mid-to-late-game enemies across Forsworn camps, dungeons, and quest encounters. Not compatible with other mods that replace hagraven meshes.
 - Out of scope: dragon-variety systems like `Diverse Dragons Collection` and `Infinite Dragon Variants` are encounter/gameplay decisions, not visual ones.
 
 ### Recommendation
 
 Start with `Fluffworks`. It improves the visible creature experience across ordinary play, layers naturally on `Bellyaches`, and stays a presentation decision rather than a creature-system overhaul.
 
-Keep `Bears of the North` as the species-specific branch, `Iconic's Dragon Retexture` (with `Splendor - Dragon Variants` as the variety comparison) for dragons, `Cannibal Draugr on Solstheim` as the regional specialty done correctly, `Draugrs - New models and textures` as the mainland draugr visual upgrade, `Spider SE` as the spider visual upgrade, and `Deer Reworked - Ultimate` as the deer visual upgrade. Judge through ordinary visibility — roadside wildlife, common predator fights, dragon attacks, Solstheim exploration, dungeon draugr and spider encounters — checking that creatures look more memorable without the subsection spilling into behavior or ecology.
+Keep `Bears of the North` as the species-specific branch, `Iconic's Dragon Retexture` (with `Splendor - Dragon Variants` as the variety comparison) for dragons, `Cannibal Draugr on Solstheim` as the regional specialty done correctly, `Draugrs - New models and textures` as the mainland draugr visual upgrade, `Spider SE` as the spider visual upgrade, `Deer Reworked - Ultimate` as the deer visual upgrade, and `Hagraven - New models and Textures` as the hagraven visual upgrade. Judge through ordinary visibility — roadside wildlife, common predator fights, dragon attacks, Solstheim exploration, dungeon draugr and spider encounters — checking that creatures look more memorable without the subsection spilling into behavior or ecology.
 
 ### Risks & Compatibility
 
 - Re-solving the section-02 creature baseline instead of building on it, or using narrow specialty mods as if they were broad baselines.
 - Stacking `Fluffworks`, `Fusa Fusa`, and multiple targeted replacers without a clear layering plan, or letting dragon-identity mods accumulate into encounter-design decisions by default.
 - Underestimating fur-shell, shader/ENB, and targeted-replacer conflicts.
-- Confirm all named picks (broad, species, dragon, regional, and the targeted follow-ups) behave cleanly on Steam `1.6.1170` with the current creature baseline; record pressure around creature meshes, fur shells, horse patches, and overlap with later creature-behavior or enemy-variety picks.
+- Confirm all named picks (broad, species, dragon, regional, hagraven, and the targeted follow-ups) behave cleanly on Steam `1.6.1170` with the current creature baseline; record pressure around creature meshes, fur shells, horse patches, and overlap with later creature-behavior or enemy-variety picks.
 
 ### Acceptance Criteria
 
-- One preferred broad-presentation baseline plus distinct species-specific, dragon-visual, and regional-specialty branches, with the broad-vs-targeted distinction explicit.
+- One preferred broad-presentation baseline plus distinct species-specific, dragon-visual, regional-specialty, and hagraven branches, with the broad-vs-targeted distinction explicit.
 - Any tracked alternative documented with a verified canonical Nexus page and a clear reason it differs from the baseline.
 - The chosen direction improves creature presentation without duplicating section-02 visual baseline or section-07 ecology ownership.
 

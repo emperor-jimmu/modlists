@@ -522,6 +522,14 @@
 - Layering multiple grass and plant mods creates real patch and cache maintenance cost.
 - Forest-floor enhancers can become too dense once weather fog and heavy tree coverage are added.
 
+### Environment-Plant Optional Additions
+
+- `Grumbledook Ivy` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/151415> — an extensive ivy overhaul using Base Object Swapper to add common ivy (hedera helix) variants to walls, ruins, and structures across Skyrim. Hand-sculpted meshes and textures with wind animations, 1K/2K/4K options, and patches for Nordic Stonewalls and tree stumps/logs. Hard-requires `Base Object Swapper` (already a core dependency). Requires Community Shaders compatibility consideration if using the PBR variant.
+- `Grumbledook Ivy - Additions (Seasons - Optimization - Patches - Fixes)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/165945> — a companion optimization and patch collection for Grumbledook Ivy that removes unused/duplicated vertices (halving mesh count), fixes collisions, and adds seasonal support.
+- `Grumbledook Swordferns - Optional PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/163949> — entirely new meshes and textures for Skyrim's swordferns with optional PBR, snowy variants, and extra variation via Base Object Swapper. Hand-sculpted from scratch, 2K/4K options. Hard-requires `Base Object Swapper`; PBR variant requires `Community Shaders`.
+
+Treat these as an optional environment-plant detail layer rather than a baseline requirement. The Grumbledook series uses `Base Object Swapper` to place new plant/environment meshes without cell-record edits, so they layer cleanly on the existing flora stack. Evaluate after the main grass, 3D plant replacer, and tree choices are locked, since the ivy and swordfern additions are visual polish that should not drive earlier decisions.
+
 ### Acceptance Criteria
 
 - Flora improves wilderness density without obscuring normal travel routes.
