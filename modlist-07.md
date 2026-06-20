@@ -340,6 +340,32 @@
 - The distinction between darker-night mood, world-lighting support, and carried visibility is explicit.
 - Nighttime travel becomes more atmospheric without making navigation unreasonably frustrating.
 
+## Activation Text And Interaction Immersion
+
+### Core Idea
+
+- This subsection owns whether the activation prompt text and NPC identification feel immersive and descriptive rather than generic.
+- It should make ordinary interactions read as specific actions instead of a blanket "Activate" label, without introducing gameplay systems or survival mechanics.
+
+### Options
+
+- Activation-text route: `Roleplaying In Skyrim - Immersive Activators` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149908> — replaces generic activation prompts with descriptive text (e.g., "Read Book" instead of "Activate") and hides NPC names until interaction, showing only gender and race. ESL-flagged, one-time perk script, MCM-toggleable. 163 endorsements.
+
+### Recommendation
+
+- Add `Roleplaying In Skyrim - Immersive Activators` as an optional interaction-immersion layer. It is extremely lightweight (8KB, no ongoing scripts, no SKSE requirement) and makes activation prompts read as specific actions rather than a generic verb. The NPC-name-hiding feature is toggleable via MCM for players who prefer vanilla identification. Compatible with any mod that does not also change activation text.
+
+### Risks & Compatibility
+
+- Hiding NPC names until interaction may frustrate players who rely on visible names for quest targets or dialogue choices. The MCM toggle mitigates this.
+- Any other mod that changes activation text will conflict. Verify no other list entry duplicates this function.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one optional activation-text immersion mod documented with clear scope.
+- The mod is marked optional and its MCM-toggleable NPC-name feature is called out.
+- No other mod in the list changes activation text.
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

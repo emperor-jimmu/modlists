@@ -265,6 +265,9 @@ Install these baseline mods first:
 - `SkyPatcher` (<https://www.nexusmods.com/skyrimspecialedition/mods/106659>)
 - `Animation Queue Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/82395>)
 - `Actor Value Generator` (<https://www.nexusmods.com/skyrimspecialedition/mods/84743>) — SKSE framework for creating custom actor values; required by `Classic Attributes` and other mods that add new stats/traits
+- `Papyrus Ini Manipulator` (<https://www.nexusmods.com/skyrimspecialedition/mods/65634>) — INI file settings framework; required by several `Roleplaying in Skyrim` mods (Origins, Lineages, Birthsigns, Skill Based Stat Growth, Evolving Economy, Loot Overhaul)
+- `aTweaks and Utilities` (<https://www.nexusmods.com/skyrimspecialedition/mods/107741>) — SKSE plugin for expanded gameplay systems; required by `Roleplaying in Skyrim - Standing Stones`
+- `Perk Entry Point Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/91192>) — SKSE plugin extending perk entry points; required by `aTweaks and Utilities`
 - `Particle Patch` (<https://www.nexusmods.com/skyrimspecialedition/mods/65720>)
 - `Assorted Mesh Fixes` (<https://www.nexusmods.com/skyrimspecialedition/mods/32117>)
 - `Unofficial Material Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/21027>)
@@ -606,11 +609,18 @@ For the item / artifact / wardrobe side, install the current preferred baseline:
     - `Dealing with Backstories` (<https://www.nexusmods.com/skyrimspecialedition/mods/61106>)
     - `Take Notes - Journal of the Dragonborn SSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/13570>)
     - `Roleplaying in Skyrim - Classic Attributes` (<https://www.nexusmods.com/skyrimspecialedition/mods/151476>) — adds 10 classic RPG attributes (Strength, Fortitude, Endurance, Intelligence, Wisdom, Perception, Agility, Dexterity, Charisma, Luck) that govern various traits and mechanics. Requires `Actor Value Generator` from Step 9. Integrates with other RoleRim mods. (Optional)
+    - `Roleplaying In Skyrim - Origins` (<https://www.nexusmods.com/skyrimspecialedition/mods/150186>) — background narrative with optional bonuses based on character history. Requires SKSE and `Papyrus Ini Manipulator` from Step 9. (Optional)
+    - `Roleplaying in Skyrim - Useful MiscStats` (<https://www.nexusmods.com/skyrimspecialedition/mods/149142>) — makes miscellaneous stats useful for character building, reduces crafting grinding. Requires `Actor Value Generator` from Step 9. (Optional)
+    - `Roleplaying in Skyrim - Skill Based Stat Growth` (<https://www.nexusmods.com/skyrimspecialedition/mods/147455>) — primary stats (Health, Magicka, Stamina) grow as skills develop. Requires SKSE and `Papyrus Ini Manipulator` from Step 9. (Optional)
     - `The Choice is Yours` (<https://www.nexusmods.com/skyrimspecialedition/mods/3850>) if you want tighter control over quest auto-starts in a content-heavy run
     - `To Your Face SE - AE - VR` (<https://www.nexusmods.com/skyrimspecialedition/mods/24720>) if you want to reduce ambient NPC greeting spam without changing the broader social-system baseline
 - Race / standing stone alternatives:
     - `Aetherius` vs `Morningstar` vs `Imperious`
     - `Evenstar` vs `Andromeda`
+    - `Roleplaying in Skyrim - Races` (<https://www.nexusmods.com/skyrimspecialedition/mods/149544>) — biological/physiological race overhaul. Requires SKSE, `KID`, `SPID` from Step 9. (Optional)
+    - `Roleplaying in Skyrim - Lineages` (<https://www.nexusmods.com/skyrimspecialedition/mods/174443>) — subraces (4 per vanilla race) with unique abilities. Supplements `Races`. Requires SKSE, `KID`, `SPID`, `Papyrus Ini Manipulator` from Step 9. (Optional)
+    - `Roleplaying in Skyrim - Standing Stones` (<https://www.nexusmods.com/skyrimspecialedition/mods/157053>) — overhaul of the 13 standing stones. Requires SKSE, `aTweaks and Utilities`, `KID`, `Perk Entry Point Extender` (installed via aTweaks) from Step 9. (Optional)
+    - `Roleplaying in Skyrim - Birthsigns` (<https://www.nexusmods.com/skyrimspecialedition/mods/154610>) — lore-inspired 13 birthsigns with monthly waxing/waning effects. Requires SKSE, `KID`, `Papyrus Ini Manipulator` from Step 9. (Optional)
 - Perk / magic alternatives:
     - `Adamant` vs `Vokrii` vs `Ordinator`
     - `Mysticism` vs `Odin` vs `Apocalypse`
@@ -622,6 +632,8 @@ For the item / artifact / wardrobe side, install the current preferred baseline:
 - Economy path:
     - current lean: `Trade and Barter`
     - alternative progression route: `Open World Loot` (<https://www.nexusmods.com/skyrimspecialedition/mods/49681>) or `MorrowLoot Ultimate` (<https://www.nexusmods.com/skyrimspecialedition/mods/3058>)
+    - `Roleplaying in Skyrim - Evolving Economy` (<https://www.nexusmods.com/skyrimspecialedition/mods/149830>) — dynamic pricing based on area resources, season, Civil War, reputation, and distance from cities. Requires SKSE, `Papyrus Ini Manipulator`, `powerofthree's Papyrus Extender` from Step 9. (Optional)
+    - `Roleplaying in Skyrim - Loot Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/157259>) — rarity-driven contextually-aware loot overhaul with equipment breakage and deleveled artifacts. Requires SKSE, `Papyrus Ini Manipulator` from Step 9. (Optional)
 - Religion path:
     - `Pilgrim` vs `Trua` (<https://www.nexusmods.com/skyrimspecialedition/mods/32549>) vs `Wintersun` (<https://www.nexusmods.com/skyrimspecialedition/mods/22506>)
 - Follower framework path:
@@ -637,6 +649,7 @@ Create or use separators `11 Survival, Difficulty, and Balance` and `12 Targeted
 Under `11 Survival, Difficulty, and Balance`:
 
 - `Arena - An Encounter Zone Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/33487>)
+- `Roleplaying in Skyrim - Encounter Zones` (<https://www.nexusmods.com/skyrimspecialedition/mods/149899>) — comprehensive encounter zone overhaul reworked for realism and variety based on NPC type, location, and quest significance. ESL flagged, no hard requirements. (Optional Arena alternative)
 - `Simply Balanced` (<https://www.nexusmods.com/skyrimspecialedition/mods/15541>)
 - `Stress and Fear - A Dynamic Sanity System` (<https://www.nexusmods.com/skyrimspecialedition/mods/116522>)
 - `Know Your Enemy 2` (<https://www.nexusmods.com/skyrimspecialedition/mods/93258>)
@@ -690,6 +703,7 @@ Current strongest first-pass picks:
 - `Dynamic Wind - Skyrim` (<https://www.nexusmods.com/skyrimspecialedition/mods/177024>) — config/data mod for the framework
 - `Realistic Boat Bobbing SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/26080>) — Makes boats bob realistically on water. (Optional)
 - `Particle Wind - SKSE Plugin` (<https://www.nexusmods.com/skyrimspecialedition/mods/174812>) — Dust/leaves/snow particles react to wind direction. Requires SKSE, Address Library. (Optional)
+- `Roleplaying In Skyrim - Immersive Activators` (<https://www.nexusmods.com/skyrimspecialedition/mods/149908>) — replaces generic activation prompts with descriptive action text (e.g., "Read Book" instead of "Activate"); hides NPC names until interaction. ESL-flagged, 8KB, toggleable via MCM. (Optional)
 
 ### Choice Required
 

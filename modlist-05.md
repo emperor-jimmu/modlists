@@ -15,6 +15,7 @@
 - Freeform sandbox route: `Realm of Lorkhan - Freeform Alternate Start` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18223>
 - Origins-and-starting-stats companion: `Dealing with Backstories` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61106>
 - Character-journal companion: `Take Notes - Journal of the Dragonborn SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13570>
+- Character-background flavor: `Roleplaying In Skyrim - Origins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150186> — adds background narrative with optional bonuses based on character history. Requires SKSE and `Papyrus Ini Manipulator`. Soft-requires `Actor Value Generator` (from section 01) for learning-rate modifiers and `SkyUI` for MCM. 198 endorsements, 10k downloads, by DrPharmDawg. (Optional)
 
 ### Recommendation
 
@@ -24,6 +25,7 @@
 - Keep `Alternate Start - Live Another Life` as the conservative fallback comparison if the more immersive route is harder to justify in the final stack.
 - Keep `Skyrim Unbound Reborn` as the configurable middle-ground comparison if the list wants more setup freedom without moving fully into sandbox-start territory.
 - Treat `Realm of Lorkhan` as the deliberate freeform branch, not the default baseline.
+- Add `Roleplaying In Skyrim - Origins` as an optional character-background companion if the list wants origin-driven flavor and optional bonuses at character creation. It integrates with the RoleRim ecosystem (Classic Attributes, MiscStats) for learning-rate modifiers. Requires SKSE and `Papyrus Ini Manipulator`.
 
 ### Risks & Compatibility
 
@@ -53,6 +55,12 @@
 - Restrained route: `Morningstar - Minimalistic Races of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22298> with `Evenstar`
 - High-expression route: `Imperious - Races of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1315> with `Andromeda - Unique Standing Stones of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14910>
 - Classic attributes companion: `Roleplaying in Skyrim - Classic Attributes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/151476> — adds 10 classic RPG attributes (Strength, Fortitude, Endurance, Intelligence, Wisdom, Perception, Agility, Dexterity, Charisma, Luck) that govern various traits and mechanics. Requires `Actor Value Generator` (from section 01). Integrates with other RoleRim mods for attribute bonuses based on race, origin, and misc stats. 204 endorsements, 10.5k downloads, by DrPharmDawg. (Optional)
+- Biological race overhaul: `Roleplaying in Skyrim - Races` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149544> — race overhaul based on biological and physiological differences between races. Requires SKSE, `Keyword Item Distributor (KID)`, and `Spell Perk Item Distributor (SPID)`. Soft-requires `SkyUI` for MCM. 186 endorsements, 9.3k downloads, by DrPharmDawg. (Optional)
+- Subrace expansion: `Roleplaying in Skyrim - Lineages` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174443> — adds subraces (4 per vanilla race) with unique abilities and roleplay-encouraging rewards. Supplements `Races`. Requires SKSE, `KID`, `SPID`, and `Papyrus Ini Manipulator`. Soft-requires `SkyUI` for MCM and `Extended Vanilla Menus` for custom race support. 90 endorsements, 3.1k downloads, by DrPharmDawg. (Optional)
+- Standing stone overhaul: `Roleplaying in Skyrim - Standing Stones` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157053> — overhaul of the 13 standing stone effects to be worthy of the Dragonborn. Requires SKSE, `aTweaks and Utilities`, `KID`, `Perk Entry Point Extender` (via aTweaks), and `SkyUI` for MCM. 83 endorsements, 2.1k downloads, by DrPharmDawg. (Optional)
+- Birthsign reintroduction: `Roleplaying in Skyrim - Birthsigns` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/154610> — lore-inspired reintroduction of 13 birthsigns with monthly waxing/waning effects. Requires SKSE, `KID`, and `Papyrus Ini Manipulator`. Soft-requires `SPID` for NPC integration and `SkyUI` for MCM. 146 endorsements, 12.6k downloads, by DrPharmDawg. (Optional)
+- Misc stats progression: `Roleplaying in Skyrim - Useful MiscStats` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149142> — makes miscellaneous stats useful and reduces crafting grinding by using them for character building. Requires `Actor Value Generator` (from section 01). Soft-requires SKSE and `SkyUI` for MCM. 177 endorsements, 8.9k downloads, by DrPharmDawg. (Optional)
+- Skill-based stat growth: `Roleplaying in Skyrim - Skill Based Stat Growth` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/147455> — primary stats (Health, Magicka, Stamina) grow as skills develop. Requires SKSE and `Papyrus Ini Manipulator`. Soft-requires `SkyUI` for MCM. 247 endorsements, 12k downloads, by DrPharmDawg. (Optional)
 
 ### Recommendation
 
@@ -60,6 +68,12 @@
 - Keep `Morningstar` plus `Evenstar` as the restrained fallback if the final list wants less systemic pressure.
 - Treat `Imperious` plus `Andromeda` as the intentional high-expression comparison route, not the default baseline.
 - Add `Roleplaying in Skyrim - Classic Attributes` as an optional attribute-depth companion if the list wants classic RPG-style stat progression on top of the chosen race overhaul. It integrates with the RoleRim ecosystem (Races, Origins, MiscStats) and adds meaningful character variation without dominating the perk/magic layers. Requires `Actor Value Generator` from section 01.
+- Add `Roleplaying in Skyrim - Races` as an optional biological race overhaul if the list wants race identity grounded in physiological differences rather than cultural flavor alone. Requires SKSE, `KID`, and `SPID`.
+- Add `Roleplaying in Skyrim - Lineages` as an optional subrace expansion that supplements `Races` with 4 subraces per vanilla race, each with unique abilities. Requires SKSE, `KID`, `SPID`, and `Papyrus Ini Manipulator`.
+- Add `Roleplaying in Skyrim - Standing Stones` as an optional standing stone overhaul if the list wants the 13 stones to feel more impactful for the Dragonborn. Requires SKSE, `aTweaks and Utilities`, `KID`, `Perk Entry Point Extender`, and `SkyUI`.
+- Add `Roleplaying in Skyrim - Birthsigns` as an optional birthsign reintroduction with monthly waxing/waning effects, as an alternative or supplement to the standing stone choice. Requires SKSE, `KID`, and `Papyrus Ini Manipulator`.
+- Add `Roleplaying in Skyrim - Useful MiscStats` as an optional misc-stat progression layer that makes miscellaneous stats meaningful for character building. Requires `Actor Value Generator` from section 01.
+- Add `Roleplaying in Skyrim - Skill Based Stat Growth` as an optional stat-progression companion where Health, Magicka, and Stamina grow as skills develop. Requires SKSE and `Papyrus Ini Manipulator`.
 - Judge race and stone picks as a pair so the progression baseline stays easy to explain.
 
 ### Risks & Compatibility
@@ -362,6 +376,9 @@
 - Regional currency route: `C.O.I.N. - Coins of Interesting Nature` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51439> — adds regional coinage (hold-specific coin types and weights) that gives immersive economic texture: coins from different holds look distinct, encouraging the player to notice where money comes from. Lightweight, no scripts.
 - Currency exchange companion: `C.O.I.N. - Treasury Exchange` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131682> — adds currency exchange mechanics at merchants, letting the player convert regional coin types. Adds gameplay purpose to the C.O.I.N. system beyond visual variety.
 - Ownership note: keep `Barter Limit Fix` in `modlist-12.md` as a targeted fix if merchant-gold caps become relevant; it is not the economy-framework answer by itself.
+- Encounter zone overhaul: `Roleplaying in Skyrim - Encounter Zones` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149899> — comprehensive overhaul of all encounter zones reworked for realism and variety based on NPC type, location, and quest significance, with a randomizer for unpredictability. No hard requirements. ESL flagged. 272 endorsements, 15.4k downloads, by DrPharmDawg. (Optional)
+- Dynamic economy: `Roleplaying in Skyrim - Evolving Economy` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149830> — dynamic pricing based on area resources, season, distance from cities, Civil War progress, reputation, and land hostility. Requires SKSE, `Papyrus Ini Manipulator`, and `powerofthree's Papyrus Extender`. Soft-requires `SkyUI` for MCM. 1,400 endorsements, 481.3k downloads, by DrPharmDawg. (Optional)
+- Rarity-driven loot: `Roleplaying in Skyrim - Loot Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157259> — rarity-driven, contextually-aware loot overhaul with combat equipment breakage and deleveled artifacts. Requires SKSE, `Papyrus Ini Manipulator`, and `SkyUI`. Soft-requires `powerofthree's Papyrus Extender` for breakage system. 189 endorsements, 6.1k downloads, by DrPharmDawg. (Optional)
 
 ### Recommendation
 
@@ -370,6 +387,9 @@
 - Keep `MorrowLoot Ultimate` as the intentional heavy-scarcity comparison only if the list truly wants rare-item access and deleveled loot to become a defining identity pillar.
 - Add `C.O.I.N. - Coins of Interesting Nature` as a lightweight economic texture layer. It adds regional coin variety without touching prices or loot distribution — purely immersive world-building through currency. The companion `C.O.I.N. - Treasury Exchange` adds mechanical purpose by letting merchants convert coin types.
 - Treat pricing changes and loot-distribution changes as related but distinct philosophies rather than interchangeable answers to the same problem.
+- Add `Roleplaying in Skyrim - Encounter Zones` as an optional encounter zone overhaul if the list wants enemy levels to feel more realistic and varied based on location type, NPC category, and quest significance. No hard requirements; ESL flagged.
+- Add `Roleplaying in Skyrim - Evolving Economy` as an optional dynamic pricing layer if the list wants barter costs to fluctuate based on resources, season, Civil War, reputation, and distance from cities. Requires SKSE, `Papyrus Ini Manipulator`, and `powerofthree's Papyrus Extender`. The most popular mod in the RoleRim series (1,400 endorsements, 481.3k downloads).
+- Add `Roleplaying in Skyrim - Loot Overhaul` as an optional rarity-driven loot overhaul if the list wants loot to feel contextual and rarity-based rather than purely level-scaled. Includes equipment breakage and deleveled artifacts. Requires SKSE, `Papyrus Ini Manipulator`, and `SkyUI`. Extensively reworks leveled lists; other loot overhauls will conflict.
 
 ### Risks & Compatibility
 
