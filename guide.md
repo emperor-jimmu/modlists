@@ -264,6 +264,7 @@ Install these baseline mods first:
 - `Kris's Papyrus Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/115164>)
 - `SkyPatcher` (<https://www.nexusmods.com/skyrimspecialedition/mods/106659>)
 - `Animation Queue Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/82395>)
+- `Actor Value Generator` (<https://www.nexusmods.com/skyrimspecialedition/mods/84743>) — SKSE framework for creating custom actor values; required by `Classic Attributes` and other mods that add new stats/traits
 - `Particle Patch` (<https://www.nexusmods.com/skyrimspecialedition/mods/65720>)
 - `Assorted Mesh Fixes` (<https://www.nexusmods.com/skyrimspecialedition/mods/32117>)
 - `Unofficial Material Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/21027>)
@@ -604,6 +605,7 @@ For the item / artifact / wardrobe side, install the current preferred baseline:
 - Roleplay extras:
     - `Dealing with Backstories` (<https://www.nexusmods.com/skyrimspecialedition/mods/61106>)
     - `Take Notes - Journal of the Dragonborn SSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/13570>)
+    - `Roleplaying in Skyrim - Classic Attributes` (<https://www.nexusmods.com/skyrimspecialedition/mods/151476>) — adds 10 classic RPG attributes (Strength, Fortitude, Endurance, Intelligence, Wisdom, Perception, Agility, Dexterity, Charisma, Luck) that govern various traits and mechanics. Requires `Actor Value Generator` from Step 9. Integrates with other RoleRim mods. (Optional)
     - `The Choice is Yours` (<https://www.nexusmods.com/skyrimspecialedition/mods/3850>) if you want tighter control over quest auto-starts in a content-heavy run
     - `To Your Face SE - AE - VR` (<https://www.nexusmods.com/skyrimspecialedition/mods/24720>) if you want to reduce ambient NPC greeting spam without changing the broader social-system baseline
 - Race / standing stone alternatives:

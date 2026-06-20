@@ -52,12 +52,14 @@
 - Balanced modern route: `Aetherius - A Race Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/26686> with `Evenstar - Minimalistic Standing Stones of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/41256>
 - Restrained route: `Morningstar - Minimalistic Races of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22298> with `Evenstar`
 - High-expression route: `Imperious - Races of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1315> with `Andromeda - Unique Standing Stones of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14910>
+- Classic attributes companion: `Roleplaying in Skyrim - Classic Attributes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/151476> — adds 10 classic RPG attributes (Strength, Fortitude, Endurance, Intelligence, Wisdom, Perception, Agility, Dexterity, Charisma, Luck) that govern various traits and mechanics. Requires `Actor Value Generator` (from section 01). Integrates with other RoleRim mods for attribute bonuses based on race, origin, and misc stats. 204 endorsements, 10.5k downloads, by DrPharmDawg. (Optional)
 
 ### Recommendation
 
 - Start with `Aetherius` plus `Evenstar` as the main baseline.
 - Keep `Morningstar` plus `Evenstar` as the restrained fallback if the final list wants less systemic pressure.
 - Treat `Imperious` plus `Andromeda` as the intentional high-expression comparison route, not the default baseline.
+- Add `Roleplaying in Skyrim - Classic Attributes` as an optional attribute-depth companion if the list wants classic RPG-style stat progression on top of the chosen race overhaul. It integrates with the RoleRim ecosystem (Races, Origins, MiscStats) and adds meaningful character variation without dominating the perk/magic layers. Requires `Actor Value Generator` from section 01.
 - Judge race and stone picks as a pair so the progression baseline stays easy to explain.
 
 ### Risks & Compatibility
