@@ -417,6 +417,7 @@
 - Treat `Realistic Water Two SE (RWT)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2182> and `Water for ENB` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37061> as legacy baselines, not first picks.
 - Evaluate `Natural Waterfalls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87261> and `Rally's Water Foam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28922> only after the main water base is selected.
 - Add `Splashes Of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47710> as the projectile-based water splash and ripple layer. It is a powerofthree SKSE plugin that extends water impact effects (arrows, spells, shouts) to all water surfaces and adds dynamic displacement ripples. Works independently of the chosen water base and has Community Shaders compatibility (v1.4.1+ includes CS-specific FPS optimizations). Treat it as a baseline inclusion rather than an optional evaluation.
+- Add `Loki's Wade In Water` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/42854> as the water-interaction layer for wading. Adds dynamic water ripple effects and footstep audio when the player or NPCs walk through shallow water. Mesh and animation replacer, no ESP, compatible with all water bases and Community Shaders. Complements the projectile-based splash layer by adding the body-in-water interaction side.
 
 ### Risks & Compatibility
 
@@ -838,6 +839,11 @@ Male variety on `HIMBO`:
 - OBody NG is configurable via MCM and does not affect the player character unless configured to.
 - BodySlide builds complete without errors.
 
+### Clothing And Armor Texture Upgrades
+
+- `Immersive Fur Garments` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77073> — adds new fur garments (shawls, ponchos, coats) to leveled lists using meshes from the FurArmorSetsSE resource. Adds clothing variety without changing the body or skin stack.
+- `Immersive Fur Garments - SPID` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82177> — the SPID-based distribution addon that replaces the original plugin's NPC and leveled-list edits with SPID distribution. ESL-flagged, removes the original .esp requirement, distributes fur garments to bandits, guards, hunters, jarls, orc tribes, and townfolk. Install both the base mod (meshes and textures only, delete the .esp) and the SPID addon for the modern distribution approach.
+
 ### Risks & Compatibility
 
 - Body-base decisions can quietly create a large armor-refit and outfit-conversion workload later.
@@ -868,6 +874,7 @@ Male variety on `HIMBO`:
 
 - High-quality hair baseline: `KS Hairdos SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
 - Eye-texture baseline: `Eyes Nouveaux` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
+- Eye-cubemap upgrade: `LDD Clean Cubemap for Eyes 4K` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168060> — replaces the vanilla eye cubemap textures with cleaner, higher-resolution 4K reflections, removing the muddy/low-res specular that vanilla eyes exhibit under the chosen lighting stack. Stacks on top of the eye-texture baseline.
 - Optional beard companion: keep the vanilla beard set unless a stronger beard pack surfaces that fits the tone and stays compatible with the chosen beard mesh.
 - Discipline-first route: rely on vanilla hair and eye textures and skip the subsection entirely if the project later decides NPC beautification belongs in a single combined `modlist-09.md` pass.
 
@@ -997,6 +1004,8 @@ Male variety on `HIMBO`:
 
 - Blood and decal baseline: `Dynamic Bloodpool Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172080>
 - Dragon breath VFX route: `Dragon Breath VFX Edit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/118431> — replaces the vanilla dragon breath projectile and impact effects with higher-fidelity, more dramatic VFX (fire, frost, and shock breath variants). Authored by Kittytail, mesh replacer only, no ESP.
+- Combat VFX route: `Improved Sparks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/19831> — replaces the vanilla orange ice-shard spark effects on metal impacts and grindstones with realistic sparks. By powerofthree, mesh replacer only, no ESP. FOMOD installer with spark-density options (1X-20X).
+- Lightning VFX route: `Lightning VFX Edit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124520> — replaces the vanilla lightning bolt projectile and impact effects with higher-fidelity VFX. Mesh replacer only, no ESP.
 - Discipline-first route: rely on the vanilla blood and decal system and skip the dedicated framework, since the locked combat and graphics stack already produces readable hit feedback.
 - Deferred visual-effects branch: do not add a blood or decal framework until the locked weather, lighting, and texture stacks are stable, because combat visual effects can clash with the chosen weather rendering.
 

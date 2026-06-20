@@ -76,6 +76,7 @@
 - Restrained route: rely on `Arena`, the section-04 combat stack, and targeted creature or faction additions elsewhere instead of adopting one giant enemy overhaul.
 - Heavy authored route: `Skyrim Revamped - Complete Enemy Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14598>
 - Future targeted route: prefer smaller faction-specific overhauls later if broad enemy redesign proves too blunt for the final list tone.
+- Ranged-accuracy tuning: `Less Sniperlike NPCs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34199> — reduces NPC projectile accuracy for bows and crossbows by adjusting the `fCombatAimProjectileRandomOffset` game setting. Prefer applying this tweak via Wrye Bash (set `fCombatAimProjectileRandomOffset` to ~70.0) to avoid adding an extra plugin; document the mod as the alternative if the Wrye Bash approach is impractical.
 
 ### Recommendation
 

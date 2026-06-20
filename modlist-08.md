@@ -196,6 +196,8 @@ Add the `Evolving Locations` series as a dynamic overhauls layer: three shack lo
 - `Evolving Locations - Lucky Shack` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/123700>
 - `Evolving Locations - Cliffside Retreat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124524>
 
+Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130581> as a roadside-points-of-interest layer. Adds small, lore-friendly ruined structures along Skyrim's roadsides. Each ruin is a discoverable point of interest with loot and environmental storytelling, filling empty roadside stretches without adding new cell records or large landscape edits. Complements the existing hidden-shelter and abandoned-building restoration layers.
+
 ### Risks & Compatibility
 
 - This subsection can easily duplicate section-07 roadside-atmosphere logic instead of choosing real micro-destinations.
@@ -298,7 +300,10 @@ Add the `Evolving Locations` series as a dynamic overhauls layer: three shack lo
 ### Options
 
 - Everyday emergent-quest route: `Sidequests of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54245>
-- Radiant-board alternative: `Missives` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17576>
+- Radiant-board baseline: `Missives` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17576> — adds missive boards in each hold capital with 264 localized radiant quest variants (courier, deliver, fetch, hunt, bounty, and thief quests). Covers the everyday-content pillar more directly than Sidequests of Skyrim by providing structured, board-based radiant quests the player can browse and pick from at any hold.
+- Missives notes retexture: `Missives - Notes Retexture` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46201> — replaces the blank notes on missive boards with textured, readable notes by JaySerpa. Cosmetic only, no gameplay change.
+- Missives voice and quest expansion: `Missives - Voice and Quest Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/166094> — adds 20 new missive quest types and more voiced NPC dialogue variety via audio splicing. By JaySerpa and GiraPomba. Adds meaningful quest variety to the missive board system.
+- Missives worldspace support: `Missives - Worldspace Additions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/26788> — compatibility patches that add missive boards to new-land mods (Beyond Skyrim - Bruma, Falskaar, Beyond Reach, Wyrmstooth, and others). Required companion if any new-land mod is adopted.
 - Compact authored-quest route: `Moon and Star` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4301>
 - Large quest-expansion route: `Wyrmstooth` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45565>
 - Prestige specialty branch: `The Forgotten City` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1179>
@@ -318,8 +323,10 @@ Add the `Evolving Locations` series as a dynamic overhauls layer: three shack lo
 ### Recommendation
 
 - Start with the everyday emergent-quest route.
-- Use `Sidequests of Skyrim` as the strongest first-pass baseline because it improves day-to-day quest texture without demanding that section 08 revolve around one giant quest production.
-- Keep `Missives` as the strongest alternative expression of the same everyday-content need rather than as an automatic companion.
+- Use `Sidequests of Skyrim` and `Missives` together as the dual everyday-quest baseline. Sidequests of Skyrim improves quest texture and world reactivity; Missives provides the structured board-based radiant quest layer. They serve the same pillar in complementary ways — Sidequests makes the world feel more alive, Missives gives the player a reliable source of localized content they can browse and pick from.
+- Add `Missives - Voice and Quest Expansion` as the quest-variety upgrade for the Missives layer. The 20 new quest types and voiced dialogue expansion make the missive board system feel less repetitive during extended play.
+- Add `Missives - Notes Retexture` as the cosmetic companion for the missive board visuals.
+- Add `Missives - Worldspace Additions` only if the chosen new-land mods are confirmed to include Bruma, Falskaar, Beyond Reach, or Wyrmstooth — these patches add missive boards to those worldspaces.
 - Keep `Moon and Star` as the meaningful compact-authored comparison if the project wants one smaller handcrafted quest experience that still feels restrained.
 - Keep `Wyrmstooth` as the high-commitment branch if the list eventually wants one major lore-friendly quest-expansion pillar.
 - Treat `The Forgotten City`, `Beyond Reach`, `VIGILANT SE`, and `The Wheels of Lull - Unwound Edition` as specialty branches rather than tonal baselines.
