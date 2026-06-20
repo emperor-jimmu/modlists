@@ -70,4 +70,7 @@
 15 Performance
 16 Adult Content
 17 Voicing
+
+Patches
+Output
 ```
