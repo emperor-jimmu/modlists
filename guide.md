@@ -49,27 +49,82 @@ Every named tool and mod in this guide includes a download URL at its first ment
 
 ## Step 3. Create The Separator Layout
 
-Create these separators in MO2 in this order.
+Create these separators in MO2 in this order. The `xx` and `xxa` prefixes preserve sort order; create them as flat MO2 separators (the `xxa` groups nest visually under their parent by position).
 
-1. `01 Foundations and Compatibility`
-2. `02 Modern Graphics`
-3. `03 Animations and Movement`
-4. `04 Third-Person Gameplay`
-5. `05 Expanded Systems`
-6. `06 Modernized UI`
-7. `07 Immersive Scale and World Feel`
-8. `08 World Content`
-9. `09 NPCs and Creatures`
-10. `10 Audio and Feedback`
-11. `11 Survival, Difficulty, and Balance`
-12. `12 Targeted Bugfix Mods`
-13. `13 Legacy of the Dragonborn`
-14. `14 Modlist Curation Rules and Testing Plan`
-15. `15 Performance and Technical Workflow`
-16. `Patches`
-17. `Output`
+```
+01 Foundations
+01a SKSE & Scripts
+01b Core Libraries
+01c Mesh & Texture Fixes
 
-Use the subsection names from `separators.md` as visual sub-blocks inside these main separators when the section grows large enough to need them.
+02 Graphics
+02a Community Shaders
+02b Textures & Meshes
+02c Lighting
+02d Weather & Water
+02e Terrain & Flora
+02f Characters & Creatures
+02g LOD & Distant Detail
+
+03 Animations
+03a Framework
+03b Movement & Idles
+03c Combat
+03d Interactions & Traversal
+03e Creatures
+
+04 Third Person
+04a Camera & Movement
+04b Combat & Targeting
+04c Mounted
+
+05 Expanded Systems
+05a Character & Progression
+05b Magic & Perks
+05c Survival & Needs
+05d Crafting & Economy
+05e Followers & Reputation
+
+06 UI
+06a Framework & HUD
+06b Inventory & Items
+06c Map, Dialogue, Menus
+
+07 World Feel
+07a Timescale & Travel
+07b Soundscapes
+07c Nights & Wildlife
+07d Cities & Landmarks
+
+08 World Content
+08a Overhauls
+08b Quests
+08c Homes & Bases
+
+09 NPCs
+09a Appearance
+09b Enemies & Creatures
+09c Population
+
+10 Audio
+10a Music
+10b SFX & Ambience
+
+11 Survival & Combat
+11a Difficulty & Lethality
+11b Enemy AI
+11c Resources & Injuries
+
+12 Bugfixes
+13 Legacy of the Dragonborn
+14 Testing & Curation
+15 Performance
+16 Adult Content
+17 Voicing
+
+Patches
+Output
+```
 
 ## Step 4. Create Output Mods
 
