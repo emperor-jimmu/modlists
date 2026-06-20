@@ -1142,6 +1142,51 @@ Tune in this order. Stop tuning once the worst-case scenario is playable.
 - Combat in tight spaces with 6+ actors + magic VFX will always be heavier than open-world traversal — if average FPS stays above 40 in those moments with no hitch above 100ms, call it stable.
 - If a specific mod (city overhaul, tree replacement, ENB/CS preset) cuts FPS by 30%+ compared to its alternative in the same branch, consider swapping rather than tuning around it.
 
+### Benchmark Reports
+
+Turn your raw logs into a visual comparison report so you can see at a glance whether a change helped or hurt.
+
+#### CSV Export (Any Logging Tool)
+
+1. Export your benchmark session to CSV. Both **NVIDIA FrameView** (`Save CSV` button in the overlay) and **MSI Afterburner** (`History > Log to file`) produce CSV with consistent column headers.
+2. Name each CSV by the scenario and run number, for example `whiterun_grass50_run1.csv`.
+3. Keep a `baseline/` subfolder with the very first run's CSVs so you always have a reference point.
+
+#### Spreadsheet Dashboard (Google Sheets / Excel)
+
+1. Import each scenario's CSV into a separate sheet tab. Most loggers emit columns for `Frametime (ms)`, `FPS`, `GPU Usage (%)`, `VRAM (MB)`, `CPU Usage (%)`.
+2. Compute these summary cells per tab:
+   - `=AVERAGE(FPS_column)` — average FPS
+   - `=PERCENTILE(FPS_column, 0.01)` — 1% low FPS (the real playability floor; lower than the 99th percentile frametime in raw frametime terms)
+   - `=MAX(Frametime_column)` — worst single hitch
+   - `=AVERAGE(GPU_column)` — average GPU load (under 80% = CPU bottleneck)
+3. Build a **summary sheet** with one row per scenario and columns for each metric. Side-by-side paste the `Baseline` and `Current` values so changes are obvious at column-comparison distance.
+4. Insert a **sparkline** (`=SPARKLINE(current_range, baseline_range)` or simple mini-bar) next to each metric so the eye catches the direction of change before reading numbers.
+
+#### Comparison Table (Markdown, For Git Tracking)
+
+Keep a `benchmark-sheet.md` in the `Output` separator that records each tuning pass as a markdown table:
+
+```
+| Pass | Scenario | Avg FPS | 1% Low | GPU% | VRAM | Hitch Max | Delta vs Prev |
+|------|----------|---------|--------|------|------|-----------|---------------|
+| 1    | Whiterun | 58      | 42     | 92%  | 6.1G | 48ms      | —             |
+| 2    | Whiterun | 55      | 38     | 88%  | 6.0G | 62ms      | -3 / -4       |
+```
+
+Now every tuning attempt is recorded in git alongside the modlist changes. You can `git diff` the benchmark sheet to see whether a grass-density or shadow-resolution change actually moved the needle.
+
+#### Infographic Snapshot (For Presentation)
+
+When you want a one-page visual summary:
+
+1. Use **Google Sheets > Insert > Chart** to build a grouped bar chart — scenarios on the x-axis, two bars per scenario (Baseline vs Current) for Avg FPS.
+2. Overlay a secondary axis with a line series for VRAM usage so the GPU-memory trend is visible in the same chart.
+3. Add a **conditional-formatting heatmap** to the summary table: green cells for "improved by >=5%", yellow for "within 5%", red for "regressed by >=5%". This colour-coding gives the infographic feel without any manual charting.
+4. Export the sheet as a PDF or PNG (`File > Share > Publish to web` for a live link, or `File > Download > PDF` for a static snapshot). Drop the PNG into the build notes folder.
+
+On your next tuning round, duplicate the sheet, re-import baseline CSVs into a new tab, and the comparison table updates automatically.
+
 ## Step 30. Epilogue — Ongoing Maintenance And Patcher Revisits
 
 The load order is not static. Mods update, new mods replace old recommendations, and patchers must be re-run when the input state changes.
