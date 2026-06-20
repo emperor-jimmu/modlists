@@ -8,6 +8,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - **Big, dark, awe-inspiring world** — exploration that makes Skyrim feel vast, threatening, and beautiful.
 - **Lots of new content** — quests, dungeons, worldspaces, and encounters that extend the game meaningfully.
 - **Modern mechanics** — combat, stealth, movement, and feedback that feel contemporary rather than 2011.
+- **Full third-person gamepad parity** — every interaction (lockpicking, reading, menus, crafting, dialogue, looting, favouriting) must work in third-person with a gamepad. No first-person or keyboard/mouse requirement is acceptable.
 - **Living the world** — survival, side activities, and full disregard for the Dragonborn quest if you choose. Legacy of the Dragonborn anchors the museum-and-collection pillar.
 
 ## What This Repo Is
@@ -40,6 +41,13 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `modlist-16.md` (194 lines, `Adult Content`) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
 - `modlist-17.md` (168 lines, `Main Character Voicing`) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
 - `guide.md` (1056 lines) is the installation guide — the primary deliverable.
+
+## Third-Person / Gamepad Design Directive
+
+- `Elder Wilds` is built to be completely playable in third-person with a gamepad. Every mod — gameplay, animation, UI, camera, interaction — must be evaluated for third-person usability and gamepad compatibility first.
+- No interaction may require switching to first-person or keyboard/mouse: lockpicking, reading, menus, crafting, dialogue, container looting, and favouriting all have third-person gamepad solutions.
+- A mod that works well in first-person or with keyboard/mouse but breaks the third-person gamepad experience (broken camera transitions, missing third-person animations, UI elements only in first person, aiming that assumes a centred crosshair, menus requiring mouse input, prompts assuming keyboard keys) is a poor fit regardless of individual quality.
+- First-person parity and keyboard/mouse support are bonuses, not substitutes.
 
 ## Content Conventions
 
