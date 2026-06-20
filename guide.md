@@ -1080,9 +1080,12 @@ Performance tuning is an iterative process, not a one-time setup. The goal is co
 
 | Tool | Purpose | Download |
 |------|---------|----------|
-| **MSI Afterburner + RivaTuner Statistics Server** | On-screen overlay for real-time FPS, frametime, GPU usage, CPU usage, VRAM, draw calls, temps | <https://www.msi.com/Landing/afterburner/graphics-cards> |
+| **NVIDIA FrameView** | Lightweight overlay and logging for FPS, frametime, GPU power, thermals. No CPU per-core stats, but lower overhead than Afterburner | <https://www.nvidia.com/en-us/geforce/frameview/> |
+| **MSI Afterburner + RivaTuner Statistics Server** | Full overlay and logging: FPS, frametime, GPU usage %, CPU per-core, VRAM, draw calls, temps | <https://www.msi.com/Landing/afterburner/graphics-cards> |
 | **GPU-Z** | Sensor logging for GPU clock, voltage, thermals, power limits | <https://www.techpowerup.com/gpuz/> |
+| **Community Shaders debug overlay** | Built-in performance stats — press `F11` (default) in-game to toggle render-time breakdown, draw-call count, and VRAM usage from the CS pipeline | already installed with Community Shaders |
 | **SSE Display Tweaks OSD** | Built-in overlay — set `ShowOSD=true` in `SSEDisplayTweaks.ini` for basic FPS/frametime without RTSS | |
+| **Skyrim console tools** | `showstats` toggles a real-time stat overlay (FPS, triangle count, batch count). `sgtm 0.3` slows the game to 30% speed for inspecting stutter frames. `tfc 1` freezes the camera for reproducible screenshots | built-in |
 | **BethINI Pie** | INI tuning — grass density, shadow resolution, particle limits, view distances | already installed |
 | **Cathedral Assets Optimizer** | Downscale uncompressed or oversized textures for VRAM relief | <https://www.nexusmods.com/skyrimspecialedition/mods/23316> |
 
@@ -1090,7 +1093,7 @@ Performance tuning is an iterative process, not a one-time setup. The goal is co
 
 1. **Create a stable reference save** — start a clean save with a fixed weather (`fw 10a240` for clear skies), a fixed time (`set gamehour to 12`), and `tfc 1` for reproducible screenshots. Save it as `benchmark_ref.ess`.
 2. **Use fixed routes** — do not free-roam during benchmarks. Load the same save, follow the same path for 60 seconds, record the results.
-3. **Log everything** — use MSI Afterburner's hardware logging to capture GPU usage %, VRAM, CPU per-core usage, frametime 99th percentile, and power draw.
+3. **Log everything** — use MSI Afterburner's hardware logging (or NVIDIA FrameView's CSV logging, or Community Shaders' on-screen debug overlay with `showstats`) to capture GPU usage %, VRAM, CPU per-core usage, frametime 99th percentile, and power draw.
 4. **Test one change at a time** — change one setting, reload the same save, re-run the same route. No multi-variable tests.
 
 ### Benchmark Scenarios
@@ -1101,11 +1104,16 @@ Use these console commands to reach each scenario from a clean save, then run th
 |----------|----------|----------|---------------|
 | **Open world (general)** | Whiterun plains west | `cow WhiterunWorld -10 0` | General GPU/CPU balance, grass density, LOD load |
 | **Dense forest** | Falkreath woods | `cow FalkreathWorld -30 -20` | Tree rendering, shadow complexity, grass LOD |
-| **City centre** | Riften marketplace | `cow RiftenWorld 0 0` | NPC count, script load, interior/exterior transitions |
+| **Pine-and-marsh transition** | Morthal swamp edge | `cow HjaalmarchWorld -15 -10` | Wetland shaders, mist particles, mixed tree/flora density |
+| **City centre (canals)** | Riften marketplace | `cow RiftenWorld 0 0` | NPC count, script load, water reflections, interior/exterior transitions |
+| **City centre (castles)** | Solitude exterior | `cow SolitudeWorld 0 0` | Large static-mesh draw calls, castle shadow cascades, skybox occlusion |
+| **Snowy tundra** | Dawnstar coast | `cow WinterholdWorld 10 5` | Snow shader coverage, volumetric fog, low-visibility weather transition |
+| **Waterfall-heavy coast** | Coast near Solitude | `cow Tamriel -22 -4` | Water displacement, foam particles, Natural Waterfalls, coastal LOD |
 | **Large interior** | Blackreach | `cow Blackreach 0 0` | Particle lights, mesh density, alpha sorting |
 | **Large combat** | Fort Neugrad assault | `cow WhiterunWorld 15 -5` then run toward the fort | AI packages, magic FX, simultaneous actor rendering |
 | **Dragon encounter** | Set dragon encounter | `player.placeatme 000FEA9F` on an open-world save | Large-creature skeleton, shout/breath VFX, cell transition |
-| **Heavy weather** | Solstime ash storm | `cow SolstheimWorld 0 0` with `fw 10A1E8` | Particle effects, alpha-heavy weather, volumetric fog |
+| **Magic VFX stress** | Dense combat + spells | `cow WhiterunWorld 0 0` then `player.placeatme 000FEA9F` + `player.placeatme 0001F1A` (fire mage) x3 | Simultaneous particle systems, glow shaders, screen-space shadows |
+| **Heavy weather** | Solstheim ash storm | `cow SolstheimWorld 0 0` with `fw 10A1E8` | Particle effects, alpha-heavy weather, volumetric fog |
 
 Record these metrics per scenario:
 
@@ -1163,6 +1171,16 @@ Keep a `changelog.txt` or `build-notes.md` inside the `Output` separator that re
 - The reference-save used for post-change verification.
 
 This saves hours of guesswork when returning to a build months later.
+
+### MCM Settings Recording
+
+MCM configuration is the most tedious part to reproduce on a rebuild. Record every meaningful MCM page once you have the build dialled in:
+
+1. **Screenshot each MCM page** — open each mod's MCM, page through every tab, and screenshot (`Print Screen` or Steam `F12`). Store the screenshots in a folder named `MCM-Reference` under the `Output` separator.
+2. **Use MCM Recorder** — Nexus mod <https://www.nexusmods.com/skyrimspecialedition/mods/24113> (MCM Recorder) lets you record and replay MCM settings via JSON profiles. Install it as a utility mod, open each MCM once with recording enabled, and save the profiles alongside the screenshots.
+3. **Cross-check on rebuild** — when rebuilding from scratch, replay each MCM profile after the mods are installed but before generating final patches. Tick off the recorded profiles against the screenshot folder to catch any mods that added or lost settings pages since the last build.
+
+Without this, a full rebuild of `Elder Wilds` means re-configuring 20–30 MCM pages from memory, which guarantees missed settings.
 
 ### Mod Update Workflow
 
