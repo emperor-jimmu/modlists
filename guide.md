@@ -649,8 +649,7 @@ Under `12 Targeted Bugfix Mods`, install the strongest current baseline bugfixes
     - preferred tactical route: `Know Your Enemy 2` (<https://www.nexusmods.com/skyrimspecialedition/mods/93258>)
     - lighter route: leave enemy resistances close to vanilla and get difficulty from pacing, roster, and progression structure
 - Death / defeat branch:
-    - `Shadow of Skyrim - Nemesis and Alternative Death System` (<https://www.nexusmods.com/skyrimspecialedition/mods/65136>)
-    - or skip defeat mechanics for the first stable pass
+    - skip defeat mechanics for the first stable pass
 - Additional bugfixes to evaluate case by case:
     - `Barter Limit Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/77173>)
     - `Better Jumping SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/18967>)

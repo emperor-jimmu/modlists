@@ -19,12 +19,6 @@ Reviewing against: the updated directives in `modlist.md:8` and `modlist-14.md:1
 - **Evidence**: `modlist-16.md:53`: "The writing tone is uneven — some quests land well, some lean into cringe."
 - **Recommendation**: Keep the Dialogue Rewritten patch as mandatory, but document that AA's tone is a known weak point that players should evaluate for themselves before including the full stack.
 
-### 3. Shadow of Skyrim — `modlist-11.md:205-225`
-
-- **Risk**: The nemesis-and-alternate-death system adds Assassin's Creed-style named enemies tracking the player. The modlist itself flags: "If the extra scripting, debuffs, or nemesis theatrics feel too gamey for the final list, default death-and-reload is still the safer baseline."
-- **Evidence**: `modlist-11.md:213-214`
-- **Recommendation**: Already flagged as a branch, not a baseline. Keep the caution. No change needed.
-
 ### 4. Know Your Enemy 2 — `modlist-11.md:141-162`
 
 - **Risk**: The inspect flow and resistance homework could turn combat into a checklist. The modlist notes: "judge it on whether it rewards preparation and damage-type diversity without turning ordinary combat into checklist homework."
@@ -56,7 +50,7 @@ Reviewing against: the updated directives in `modlist.md:8` and `modlist-14.md:1
 
 ### 1. MCM-Heavy Configuration Stack
 
-Affects mods across: `SmoothCam`, `TrueHUD`, `True Directional Movement`, `Starfrost`/`SunHelm`, `Stress and Fear`, `Bathing in Skyrim`, `Know Your Enemy 2`, `Immersive Armors`, `Hunterborn`, `Missives` (via voice/quest expansion), `Simple Fishing Overhaul`, and `Shadow of Skyrim`.
+Affects mods across: `SmoothCam`, `TrueHUD`, `True Directional Movement`, `Starfrost`/`SunHelm`, `Stress and Fear`, `Bathing in Skyrim`, `Know Your Enemy 2`, `Immersive Armors`, `Hunterborn`, `Missives` (via voice/quest expansion), and `Simple Fishing Overhaul`.
 
 - **Risk**: Every one of these requires initial MCM setup. SkyUI MCM navigation works with gamepad (d-pad + A), but it is significantly slower than mouse navigation. A fifty-mod MCM setup session can take 30-45 minutes on a gamepad.
 - **Recommendation**: Add a documented MCM preset strategy to `modlist-15.md` (Performance and Technical Workflow) or `guide.md`: ship a pre-configured `skse/plugins/SkyUI/config` folder with .json preset files for every MCM-heavy mod. This eliminates the per-gamepad-session setup burden and makes the list more reproducible.
@@ -124,7 +118,7 @@ Per-mod plugins that auto-save/load MCM settings via MCM Helper. Zero user inter
 | **Know Your Enemy 2**         | ❌ No settings loader found                                          | —        |
 | **Bathing in Skyrim**         | ❌ No settings loader found                                          | —        |
 | **Immersive Armors**          | ❌ No settings loader found                                          | —        |
-| **Shadow of Skyrim**          | ❌ No settings loader found                                          | —        |
+
 
 ### Approach B: MCM Recorder (Universal — Recommended)
 
@@ -144,7 +138,7 @@ Recording files are simple `.json` and can be edited by hand or packaged as a mo
 
 1. **MCM Helper** (already a dependency for TDM) — keeps settings for TDM, TrueHUD, and any MCM Helper-aware mods.
 2. **Missives - Settings Loader** — dedicated auto-loader for Missives.
-3. **MCM Recorder** — a single pre-recorded `Elder Wilds.json` that covers everything else (SmoothCam preset + MCM, Starfrost, Hunterborn, Stress and Fear, Know Your Enemy 2, Bathing in Skyrim, Immersive Armors, Shadow of Skyrim, and any others).
+3. **MCM Recorder** — a single pre-recorded `Elder Wilds.json` that covers everything else (SmoothCam preset + MCM, Starfrost, Hunterborn, Stress and Fear, Know Your Enemy 2, Bathing in Skyrim, Immersive Armors, and any others).
 
 This combo means: the mods that support auto-loading do it silently, and the rest are handled in one 2-click playback session. The user only configures key bindings (which must be personal).
 
