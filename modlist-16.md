@@ -137,6 +137,7 @@ This subsection owns ambient adult NPCs added to taverns and inns — not follow
 
 - **Immersive Wenches** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/595> — adds wenches (serving wenches, barmaids, maid wenches) to every inn in Skyrim with custom scenes, dialogue, barmaid services, and quests. Visible community signal includes troubleshooting reports; evaluate stability before locking into the load order. Previously flagged as rejected in `modlist-09.md` due to support concerns; added here per explicit user request.
 - **Immersive Wenches SE 2 - Ostim Patch** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/152991> — bridges Immersive Wenches scenes to play through OStim Standalone instead of fade-to-black. Requires both Immersive Wenches and OStim Standalone.
+- **Immersive Wenches Dialogue Boost** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120307> — adds 1,000+ custom voice lines for the ten most-used voice types in Immersive Wenches, tweaks player dialogue, and expands written content (buff/description/quest text). Plug-and-play add-on with no conflicts with the OStim patch or Buxom Wench Yuriana.
 
 ### Recommendation
 

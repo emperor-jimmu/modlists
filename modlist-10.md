@@ -56,6 +56,7 @@
 - Compatibility-first route: `Audio Overhaul for Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12466>
 - Dramatic modular route: `Immersive Sounds - Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/523>
 - Heavy overlap route: `Regional Sounds Expansion (SRD - Wilds Dungeons Towns Ambience Birds - Fixes)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77829>
+- Ambient wind specialty route: `Nordic Winds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112370> — replaces regional wind loops with unique varieties per exterior region using Sound Record Distributor. No record conflicts. Optional additive layer; stacks cleanly on any framework since SRD injects sounds dynamically.
 - Layered route: one broad framework plus a small number of narrowly scoped specialty audio mods.
 
 ### Recommendation

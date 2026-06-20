@@ -5,7 +5,7 @@ Target build: Skyrim Special Edition / Anniversary Edition runtime `1.6.1170` vi
 Scope notes:
 
 - No paid Anniversary Edition Creation Club content
-- Research categories are organized around five pillars: modern graphics, expanded systems, modernized UI, immersive world scale, and third-person-first gameplay
+- Research categories are organized around five pillars: modern graphics, expanded systems, modernized UI, immersive world scale, and third-person-first gameplay. The entire modlist is designed to be completely played in third-person with a gamepad — no interaction should require first-person or keyboard/mouse alone.
 - This modlist is also built around `Legacy of the Dragonborn` as a major collection, museum, and patch-ecosystem pillar rather than treating it as an optional side add-on
 
 ## Setup And Installation Guide

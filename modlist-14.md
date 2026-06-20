@@ -14,9 +14,9 @@ Every texture, mesh, and lighting mod must be evaluated for visual coherence wit
 
 Mods that add new content must not contradict established `Elder Scrolls` lore unless the contradiction is the deliberate point of a well-regarded quest or world-space mod with its own narrative justification. Cosmetic overhauls should respect the setting's visual identity: steel should look like steel, fur and leather should dominate cold-region gear, and architecture should match the regional style of its hold. Lore-friendly does not mean lore-restricted: new content is welcome as long as it plausibly extends the existing world rather than replacing it.
 
-### Third-Person-First Design
+### Third-Person-First Design With Full Gamepad Support
 
-`Elder Wilds` is built for third-person play. Every gameplay, animation, UI, and camera mod must be evaluated for third-person usability first. A mod that works well in first-person but breaks the third-person experience (broken camera transitions, missing third-person animations, UI elements that only display in first person, aiming mechanics that assume a centred crosshair) is a poor fit regardless of its individual quality. First-person parity is a bonus, not a substitute.
+`Elder Wilds` is built to be completely played in third-person with a gamepad. Every gameplay, animation, UI, camera, and interaction mod must be evaluated for third-person usability and gamepad compatibility first. The list must never force the player to switch to first-person or keyboard/mouse for any interaction — including lockpicking, reading, menu navigation, crafting, dialogue, container looting, and favouriting. A mod that works well in first-person or with keyboard/mouse but breaks the third-person gamepad experience (broken camera transitions, missing third-person animations, UI elements only displayed in first person, aiming mechanics that assume a centred crosshair, menus that require mouse input, interaction prompts that assume keyboard keys) is a poor fit regardless of its individual quality. First-person parity and keyboard/mouse support are bonuses, not substitutes.
 
 ### Animation Quality Bar
 
