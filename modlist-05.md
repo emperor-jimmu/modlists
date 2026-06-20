@@ -249,6 +249,7 @@
 ### Options
 
 - Trait-package route: `Biggie Traits` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/136384>
+- Cosmetic-progression route: `Pumping Iron - Dynamic Muscle Growth` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13434> — character muscles visually grow based on combat skill increases and sleep. Purely cosmetic; does not affect stats or gameplay. Requires SKSE.
 - Minimalist route: leave identity mostly to race, standing stones, perks, and self-imposed roleplay.
 
 ### Recommendation
@@ -257,6 +258,7 @@
 - It is a cleaner fit for `Elder Wilds` than heavier custom-class frameworks because it adds immediate run-defining tradeoffs in a compact form, closer to Fallout-style traits than to a total rules rewrite.
 - Keep it clearly subordinate to the main progression baseline. Traits should sharpen character identity and replayability, not replace the race-and-perk decisions already owned above.
 - Judge it on whether the picked traits create distinct runs and memorable constraints without forcing gimmick play.
+- Keep `Pumping Iron - Dynamic Muscle Growth` as an optional cosmetic-progression companion, not part of the core traits layer. It adds visual character progression tied to combat activity without affecting stats, perks, or gameplay — a flavour win for players who want their character model to reflect adventuring lifestyle, but zero system weight if skipped.
 
 ### Risks & Compatibility
 

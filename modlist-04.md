@@ -202,6 +202,7 @@
 
 - Vanilla-plus route: keep camera, movement, dodge, and impact layers relatively restrained.
 - Balanced modern route: `Valhalla Combat` as the main gameplay-rules candidate while evaluating `MCO ADXP - Modern Movement Combat Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/117115> as the main ambitious combat direction.
+- Stealth-animation route: `RaySense - Cover Animation` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175504> — triggers a flatten-against-wall animation when the player sneaks near a wall. Requires `Open Animation Replacer` (already the baseline in `modlist-03.md`). OAR-based, companion to the `RaySense` parkour pair.
 - Full action route: commit strongly to the `MCO ADXP` ecosystem, `Valhalla Combat`, `SCAR`, dodge, lock-on, and related responsiveness layers together.
 
 ### Recommendation
@@ -210,6 +211,7 @@
 - Treat `Valhalla Combat` as the main gameplay-rule framework to judge here.
 - Treat `MCO ADXP` as the main ambitious combat-style route to compare against a lighter baseline, not as an automatic lock.
 - Keep `SCAR` as the already-tracked NPC-side support layer from `modlist-03.md` once the list is ready to judge richer enemy attack behavior in real encounters.
+- Keep `RaySense - Cover Animation` as a documented stealth-animation companion rather than a baseline. It adds a wall-flatten animation during third-person sneaking that reinforces the embodied stealth feel without adding gameplay rules. Add it only if sneaking and stealth are a meaningful part of the intended playstyle.
 - If the list moves to `MCO`, carry forward the prerequisite/support context already recorded in `modlist-03.md` rather than treating `MCO` as a standalone toggle.
 
 ### Risks & Compatibility

@@ -308,6 +308,7 @@ Install these locked or strongly preferred baseline picks early because later sy
 - `Yes Im Sure NG` (<https://www.nexusmods.com/skyrimspecialedition/mods/76892>)
 - `Dynamic Inventory Icon Injector` (<https://www.nexusmods.com/skyrimspecialedition/mods/174136>)
 - `Enchanted Icon Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/174246>) — optional; adds distinct icons for learned, artifact, and learnable enchantments
+- `The Handy Icon Collection Collective (THICC)` (<https://www.nexusmods.com/skyrimspecialedition/mods/90508>) — Comprehensive inventory icon replacer. (Optional)
 
 ### Choice Required
 
@@ -407,6 +408,13 @@ Under `02.12 LOD Generation And Distant Detail`, install the LOD resources now s
 - `HD LODs Textures SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/3333>)
 - `xLODGen Resource - SSE Terrain Tamriel` (<https://www.nexusmods.com/skyrimspecialedition/mods/54680>)
 
+Optional texture / mesh add-ons:
+
+- `Skyking Signs` (<https://www.nexusmods.com/skyrimspecialedition/mods/112902>) — Sign texture and mesh replacer. (Optional)
+- `Skyking Unique Signs` (<https://www.nexusmods.com/skyrimspecialedition/mods/114940>) — Unique per-shop sign variants. Requires Skyking Signs. (Optional)
+- `Skyland Imperial and Nordic Tents` (<https://www.nexusmods.com/skyrimspecialedition/mods/57002>) — 4K tent texture replacer. (Optional)
+- `Steel Armor Redone - PBR and Complex Material` (<https://www.nexusmods.com/skyrimspecialedition/mods/177513>) — PBR retexture of CC Steel Soldier armor. Requires CC Alternative Armors - Steel Soldier, Community Shaders or ENB, PG Patcher. (Optional)
+
 ### Choice Required
 
 - Lighting branch:
@@ -488,6 +496,8 @@ Create or use separator `03 Animations and Movement`.
     - `Animated Interactions SKSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/143798>) as a higher-fidelity interaction companion or alternative; if used with `Immersive Interactions`, disable overlapping actions instead of letting both own the same prompts
     - `SkyClimb` (<https://www.nexusmods.com/skyrimspecialedition/mods/97253>) as the climbing-first alternative to `SkyParkour v3`; do not install both as if they were complementary baselines
     - `RaySense - Jumping over obstacles` (<https://www.nexusmods.com/skyrimspecialedition/mods/175506>) + `Open Animation Replacer - RaySense` (<https://www.nexusmods.com/skyrimspecialedition/mods/175498>)
+    - `RaySense - Edge Lookdown` (<https://www.nexusmods.com/skyrimspecialedition/mods/175514>) — Look-down animation near cliff edges. Requires Open Animation Replacer. (Optional)
+    - `Take a Seat - New Sitting Animations for OAR or DAR` (<https://www.nexusmods.com/skyrimspecialedition/mods/54193>) — Adds new sitting/idle animations for chairs and benches. Requires Open Animation Replacer. (Optional)
     - `Go to bed` (<https://www.nexusmods.com/skyrimspecialedition/mods/4224>)
 - Creature animation add-ons:
     - `New Creature Animation - Giant` (<https://www.nexusmods.com/skyrimspecialedition/mods/83317>)
@@ -530,6 +540,7 @@ Create or use separator `04 Third-Person Gameplay`.
 - Ranged physics / newer experiments:
     - `Ricochet - Arrow Physics Framework` (<https://www.nexusmods.com/skyrimspecialedition/mods/160603>)
     - `Dodge for all` (<https://www.nexusmods.com/skyrimspecialedition/mods/174544>)
+    - `RaySense - Cover Animation` (<https://www.nexusmods.com/skyrimspecialedition/mods/175504>) — Flatten-against-wall animation when sneaking. Requires Open Animation Replacer. (Optional)
     - treat both as deliberate extras, not assumed baseline locks
 
 ### Smoke Test — Third-Person Gameplay
@@ -581,6 +592,7 @@ For the item / artifact / wardrobe side, install the current preferred baseline:
 - `NordwarUA Total Armor and Weapon Compilation` (<https://www.nexusmods.com/skyrimspecialedition/mods/61423>)
 - `Immersive Weapons` (<https://www.nexusmods.com/skyrimspecialedition/mods/16788>)
 - `Immersive Armors` (<https://www.nexusmods.com/skyrimspecialedition/mods/3479>)
+- `Pumping Iron - Dynamic Muscle Growth` (<https://www.nexusmods.com/skyrimspecialedition/mods/13434>) — Muscle visual progression from combat/fitness. Requires SKSE, Address Library. (Optional)
 
 ### Choice Required
 
@@ -674,6 +686,8 @@ Current strongest first-pass picks:
 - `Simply Darker Nights (SSE)` (<https://www.nexusmods.com/skyrimspecialedition/mods/14269>)
 - `Dynamic Wind Framework - SKSE Plugin` (<https://www.nexusmods.com/skyrimspecialedition/mods/177023>)
 - `Dynamic Wind - Skyrim` (<https://www.nexusmods.com/skyrimspecialedition/mods/177024>) — config/data mod for the framework
+- `Realistic Boat Bobbing SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/26080>) — Makes boats bob realistically on water. (Optional)
+- `Particle Wind - SKSE Plugin` (<https://www.nexusmods.com/skyrimspecialedition/mods/174812>) — Dust/leaves/snow particles react to wind direction. Requires SKSE, Address Library. (Optional)
 
 ### Choice Required
 
@@ -726,6 +740,17 @@ Optional `Missives` support if that route wins over `Sidequests of Skyrim` or si
 
 - `Missives - Worldspace Additions` (<https://www.nexusmods.com/skyrimspecialedition/mods/26788>) if the final list includes supported new lands / worldspaces and you want boards to respect that wider footprint
 - `Missives - Notes Retexture` (<https://www.nexusmods.com/skyrimspecialedition/mods/46201>) if you want the note-handout visuals cleaned up
+
+Optional quest / worldspace content add-ons:
+
+- `Penitus Oculatus` (<https://www.nexusmods.com/skyrimspecialedition/mods/21061>) — Joinable faction mod replacing the Dark Brotherhood. (Optional)
+- `Quests Are In Skyrim` (<https://www.nexusmods.com/skyrimspecialedition/mods/18416>) — Synthesis patcher that distributes quest markers. (Optional)
+- `The Forgotten City - Delayed Start` (<https://www.nexusmods.com/skyrimspecialedition/mods/56958>) — Delays Forgotten City start to level 25. Requires The Forgotten City. (Optional)
+- `The Gray Cowl of Nocturnal - 10th Anniversary Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/141327>) — Large quest mod in Hammerfell. (Optional)
+- `The Gray Cowl of Nocturnal - Addons Repository` (<https://www.nexusmods.com/skyrimspecialedition/mods/126661>) — Patches and addons collection for Gray Cowl. (Optional)
+- `The Gray Cowl of Nocturnal - Bounty Fix and Leveled List Integration` (<https://www.nexusmods.com/skyrimspecialedition/mods/94939>) — Bugfix and leveled list patch. (Optional)
+- `The Gray Cowl of Nocturnal - We Don't Need Two Boards` (<https://www.nexusmods.com/skyrimspecialedition/mods/107288>) — Fixes duplicate quest boards. Requires Gray Cowl + Missives. (Optional)
+- `The Isle Of Valefrost SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/103215>) — New lands quest mod. (Optional)
 
 ### Choice Required
 
@@ -876,6 +901,8 @@ Install:
     - install only if the chosen city/worldspace stack supports it cleanly
     - treat it as a new-game decision
     - defer to the official patch hub where needed
+- `Recursion Monitor (Updated Fork)` (<https://www.nexusmods.com/skyrimspecialedition/mods/179627>) — Detects broken Papyrus script recursion without blocking. Original: <https://www.nexusmods.com/skyrimspecialedition/mods/76867>. Requires SKSE, Address Library. (Optional)
+- `Save and Load Accelerator (S.L.A.C.K.)` (<https://www.nexusmods.com/skyrimspecialedition/mods/163969>) — Speeds up save/load operations. Requires SKSE, Address Library, SSE Engine Fixes. (Optional)
 
 ### Smoke Test — Performance
 

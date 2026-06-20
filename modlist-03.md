@@ -78,6 +78,7 @@
 - Balance-assist companion: `Beam Walking Assist` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175511>
 - Structured jump-over-obstacles route: `RaySense - Jumping over obstacles` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
 - Animation-selection patch for the above: `Open Animation Replacer - RaySense` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175498>
+- Edge-lookdown animation route: `RaySense - Edge Lookdown` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175514> — triggers a look-down animation when the player approaches a cliff edge. Requires `Open Animation Replacer` (already the baseline). OAR-based, companion to the `RaySense` jumping pair.
 - Discipline-first route: rely on vanilla climbing, `True Directional Movement`, sprint, and jump from this section and `modlist-04.md` only, with no dedicated parkour framework.
 - Deferred high-commitment branch: do not adopt a full parkour framework until later movement and animation work is stable, because the parkour ecosystem has many overlapping derivatives and lock-in decisions are hard to reverse.
 
@@ -87,6 +88,7 @@
 - Keep `SkyClimb` as the deliberate alternative if the list wants procedural ledge climbing built around `EVG Animated Traversal` more than it wants the broader `SkyParkour` movement identity. It solves a narrower problem more directly, but that also means it overlaps with the baseline enough that both should not be treated as cumulative core picks.
 - Keep `Beam Walking Assist` as a documented balance-assist companion rather than a baseline. It helps the player stay on narrow beams and ledges during parkour traversal, which is a usability gap in vanilla and a common frustration once parkour is enabled. Add it only after the parkour baseline is locked in and only if real traversal testing shows beam-walking is annoying.
 - Keep `RaySense - Jumping over obstacles` and its dependency `Open Animation Replacer - RaySense` as a documented structured-jump companion pair rather than a baseline. `RaySense` is a different movement philosophy from `SkyParkour`: instead of procedural climbing and vaulting, it detects obstacles the player is about to run into and triggers a context-appropriate jump-over animation selected by obstacle height via the OAR behavior patch. The two are complementary rather than competing, but `RaySense` is brand new (901 endorsements on the main mod, 1,453 on the OAR patch) with limited community track record, so lock it in only if real playtesting shows the procedural parkour baseline leaves common obstacles feeling awkward to clear. Load `Open Animation Replacer - RaySense` only as a dependency of `RaySense`; it does not belong in the load order without the parent mod.
+- Keep `RaySense - Edge Lookdown` as a documented edge-awareness animation companion rather than a baseline. It adds a subtle look-down animation when the player nears cliff edges, reinforcing grounded third-person traversal without adding gameplay systems. Add it only after the parkour baseline is proven and only if edge-drop moments are a noticeable part of the travel experience.
 - Keep the discipline-first route alive only if the rest of the movement and animation stack is still being settled, because parkour is a major ownership decision that affects jump height, animation behavior, and camera expectations.
 - Keep the deferred high-commitment branch alive if the project wants to see the full movement and animation stack working before adding parkour on top, since parkour layers often need to be tuned in light of the chosen animation and camera baselines.
 - Keep this subsection separate from `modlist-04.md` dodge, sprint, and movement-responsiveness ownership, and from the third-person camera subsection. Parkour is a vertical-and-lateral movement system, not a combat responsiveness or camera framework.
@@ -219,6 +221,7 @@
 - Grounded baseline: `Immersive Interactions - Animated Actions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47670>
 - Higher-fidelity interaction companion or alternative: `Animated Interactions SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/143798>
 - Sleep-focused companion: `Go to bed` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4224>
+- Sitting-animation route: `Take a Seat - New Sitting Animations for OAR or DAR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54193> — adds new sitting and idle animations for chairs, benches, beds, and ground-sitting via OAR. Hard-requires `Open Animation Replacer` (already the baseline). By Niroku, OAR-based, no scripts, safe to add mid-playthrough.
 - Traversal-heavy route to evaluate carefully: `EVG Animated Traversal` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63232>
 
 ### Recommendation
@@ -226,6 +229,7 @@
 - Start with `Immersive Interactions` as the main baseline for everyday contextual actions.
 - Treat `Animated Interactions SKSE` as the stronger pickup, looting, and door-animation route when the list wants extra physicality from common interactions. It can coexist with `Immersive Interactions`, but only if overlapping actions are deliberately disabled so both mods are not trying to own the same prompts.
 - Add `Go to bed` as a companion. With survival, camping, and roleplay bed-use, it reinforces the embodied third-person tone rather than just adding spectacle. Keep it if nightly rest or inn stays are part of normal play rhythm.
+- Add `Take a Seat - New Sitting Animations for OAR or DAR` as an optional sitting-depth companion. It makes tavern chairs, benches, and resting spots feel more alive with OAR-selected sitting animations. Useful if inn-stays and downtime are a meaningful part of survival play rhythm. Keep it after `Go to bed` is proven, because sitting variety amplifies survival-downtime value but is not a prerequisite for it.
 - Treat `EVG Animated Traversal` as a curated expansion that must justify its marker coverage and added complexity.
 
 ### Risks & Compatibility

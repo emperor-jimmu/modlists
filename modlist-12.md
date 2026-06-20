@@ -20,6 +20,7 @@ Use this section for focused fixes that solve specific vanilla annoyances, edge-
 - Targeted stability route: use `LeveledList Crash Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129136> if the final plugin/content mix makes leveled-list crash protection worth a dedicated fix beyond the broader foundation layer.
 - Low-level engine bugfix route: use `Bug Fixes SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33261> (meh321 SKSE plugin; fixes crafting-menu, perk-application, and water-behavior engine bugs not covered by `SSE Engine Fixes`. 56k endorsements, broad community validation.)
 - Navmesh-reliability route: use `Navigator - Navmesh Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52641> if follower pathing, animal AI, or NPC navigation in complex worldspaces shows observable failure (stuck NPCs, looping behavior) that simple navmesh fixes cannot resolve. 9k endorsements; heavier integration test recommended before committing.)
+- Dark Brotherhood faction-patching route: `Penitus Oculatus` patches — if the Dark Brotherhood alternative faction mod `Penitus Oculatus` (Nexus 21061) is installed, use its optional patch files for compatibility with other quest mods and to clean deleted scripts with FallrimTools after upgrades. The base mod is listed in the Quest and Expansion Content section of `modlist-08.md` as an optional faction route; this entry is only about its bugfix and upgrade-cleanup needs.
 
 ## Recommendation
 

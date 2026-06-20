@@ -218,6 +218,8 @@
 - Use the hybrid option.
 - Start with a broad base only if it gives good gap coverage without fighting the balanced PBR plan.
 - Override aggressively in the most visible categories: landscapes, rocks, city architecture, ruins, clutter, and clothing.
+- Treat `Skyking Signs` and `Skyking Unique Signs` as an optional-sign visual upgrade branch. Signs are a medium-visibility surface in normal exploration, and the recommendation is to include them only if the final texture stack does not already cover sign textures adequately.
+- Treat `Skyland Imperial and Nordic Tents` as an optional tent-texture upgrade. Tents are visible in camps and caravans but are not high-priority enough to block the rest of the texture stack. Include it as a low-effort visual improvement with no ESP or conflict cost.
 
 ### Material Priorities
 
@@ -259,6 +261,14 @@
 #### Clothing And Fabric
 
 - `RUSTIC CLOTHING - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4703>
+
+#### Signs
+
+- `Skyking Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112902> — high-quality sign texture and mesh replacer by Skyking. Replaces all shop and inn signs with new meshes that sway in the wind and use wood materials. No ESP. Optional companion: `Skyking Unique Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114940> — gives each shop a unique sign design paired with the base `Skyking Signs` mod. Offers BOS and plugin-based install options.
+
+#### Tents
+
+- `Skyland Imperial and Nordic Tents` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57002> — 4K tent texture replacer by Skyking for Imperial and Nordic tents. Includes a new mesh for the large Nordic fur tent with an awning for Khajiit caravan camps. No ESP.
 
 ### Risks & Compatibility
 
@@ -723,6 +733,7 @@ Treat these as an optional environment-plant detail layer rather than a baseline
 - Treat `High Poly Head 1.4` as a supported face-mesh branch rather than a mandatory baseline. Modern curated lists still use it, but it adds enough headpart and NPC-face complexity that it should be an intentional choice instead of an automatic requirement.
 - Delay heavy NPC beauty decisions until the later `NPCs and Creatures` section so this layer stays focused and maintainable.
 - Prioritize presentation that reads well at normal third-person distance, a grounded skin look fitting the colder visual direction, and clean body-base choices that do not create unnecessary armor-refit chaos later.
+- Treat `Steel Armor Redone - PBR and Complex Material` as an optional PBR armor upgrade branch for the CC Steel Soldier set. It requires CC Alternative Armors - Steel Soldier and PG Patcher; include it only after the PBR pipeline and parallax workflow are settled.
 
 ### Recommended Body And Skin Baselines
 
@@ -843,6 +854,7 @@ Male variety on `HIMBO`:
 
 - `Immersive Fur Garments` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77073> — adds new fur garments (shawls, ponchos, coats) to leveled lists using meshes from the FurArmorSetsSE resource. Adds clothing variety without changing the body or skin stack.
 - `Immersive Fur Garments - SPID` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82177> — the SPID-based distribution addon that replaces the original plugin's NPC and leveled-list edits with SPID distribution. ESL-flagged, removes the original .esp requirement, distributes fur garments to bandits, guards, hunters, jarls, orc tribes, and townfolk. Install both the base mod (meshes and textures only, delete the .esp) and the SPID addon for the modern distribution approach.
+- `Steel Armor Redone - PBR and Complex Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177513> — PBR and Complex Material retexture of the Creation Club Steel Armor set. Requires CC Alternative Armors - Steel Soldier, Community Shaders (for PBR) or ENB (for Complex Materials), and PG Patcher. Optional PBR armor upgrade.
 
 ### Risks & Compatibility
 

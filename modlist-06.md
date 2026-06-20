@@ -94,6 +94,7 @@
 - Icon-quality route: `I4 Armor Icons Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/119824> — replaces all armor icons in SkyUI with higher-fidelity, hand-crafted icons by komegaki. Covers light armor, heavy armor, clothing, shields, and jewelry categories.
 - Shout-icon route: `I4 Shout Icons Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/107334> — replaces all shout and dragon language icon textures with higher-fidelity versions by komegaki. Complements the I4 armor and weapon icon family.
 - Weapon-icon route: `I4 Weapon Icons Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106432> — replaces all weapon category icons in SkyUI with hand-crafted icons by komegaki. Covers 30+ weapon categories including mod-added types (katana, gun, scythe, crossbow, etc.). Depends on `Inventory Interface Information Injector` for icon injection.
+- Comprehensive icon-collection route: `The Handy Icon Collection Collective (THICC)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90508> — a large-scale icon resource providing thousands of high-fidelity icons for weapons, armor, potions, scrolls, ingredients, and misc items. Serves as an icon source for I4-based distribution; zero plugin overhead. Requires `Inventory Interface Information Injector` for standalone I4-based distribution.
 
 ### Recommendation
 
@@ -106,6 +107,7 @@
 - Keep `Dynamic Inventory Icon Injector` as the mandatory utility dependency if `Enchanted Icon Overhaul` is selected. It provides the icon-injection infrastructure and has been stable as of mid-2025.
 - Add `Enchanted Icon Overhaul` as the optional icon-enhancement branch. It is not part of the mandatory inventory-readability baseline, but it adds genuine scannability value for enchantment-heavy play styles by making the enchantment type visible at a glance. Evaluate after the core inventory stack is stable.
 - Add the `I4` icon family (`I4 Armor Icons Overhaul`, `I4 Shout Icons Overhaul`, `I4 Weapon Icons Overhaul`) as the visual icon-quality upgrade. The I4 family replaces the stock SkyUI icons with higher-fidelity hand-crafted assets across armor, shout, and weapon categories. `I4 Weapon Icons Overhaul` depends on `Inventory Interface Information Injector` (already a baseline pick). Add them as the icon-pipeline counterpart to the information-density layer, not as a substitute for readability mods.
+- Add `The Handy Icon Collection Collective (THICC)` as an optional icon-depth layer. It provides thousands of icons for weapons, armor, potions, ingredients, scrolls, and misc items as a resource the I4 ecosystem can distribute. Treat it as optional icon variety on top of the I4 family — zero plugin overhead, zero compatibility risk, purely additive visual variety.
 - Keep map, journal, magic-menu, crafting-menu, and dialogue decisions out of this subsection so inventory ownership stays clear.
 
 ### Risks & Compatibility

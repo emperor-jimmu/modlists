@@ -333,6 +333,42 @@
 - The list can rebuild a changed category without losing track of which outputs are now stale.
 - The list has one documented `4K` baseline for `xLODGen`, `TexGen`, and `DynDOLOD` that favors stable travel visuals over maximum theoretical quality.
 
+## Optional Diagnostics And Performance Tools
+
+### Core Idea
+
+- The tools below are not required for the list to function, but they solve real problems during load-order building and heavy play.
+- Install them early for diagnostics value and keep them active for runtime protection; neither has ongoing configuration or conflict maintenance once installed.
+
+### Recursion Monitor
+
+- **Nexus**: [Recursion Monitor](https://www.nexusmods.com/skyrimspecialedition/mods/76867) (v1.2, original by Nightfallstorm)
+- **Purpose**: Detects broken Papyrus scripts stuck in recursive loops and prevents the resulting framerate collapse. Skyrim's engine does not throw a stack-overflow error, so a buggy function that calls itself hundreds of thousands of times silently destroys frame timing. This plugin hooks the stack check and breaks the recursion after 1000 calls, writing a `StackFrameOverFlow` warning to the log instead of tanking performance.
+- **Requirements**: SKSE, Address Library for SKSE Plugins
+- **Status**: Optional diagnostics utility. Silent at runtime unless it fires. Worth installing early for debugging and keeping active on a production list.
+- **Updated fork**: [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (v1.0.2) removes the in-game debug popup that could freeze gameplay during a recursion event. All warnings are written to the SKSE log instead. Prefer this version for a production list.
+
+### Save And Load Accelerator For SKSE Cosaves (S.L.A.C.K.)
+
+- **Nexus**: [S.L.A.C.K.](https://www.nexusmods.com/skyrimspecialedition/mods/163969) (by just-harry)
+- **Purpose**: Rewrites SKSE's cosave serialisation path so cosaves save up to 150× faster and load up to 15× faster. SKSE cosaves grow with every plugin that registers a serialisation handler; this mod parallelises and buffers the write path so save/load hitching drops regardless of how many cosave-aware plugins are installed. Includes an error-friendly mode that catches and logs exceptions thrown by other SKSE plugins' cosave handlers.
+- **Requirements**: SKSE for Skyrim AE 1.6.1170, Address Library for SKSE Plugins, SSE Engine Fixes (SKSE64 Preloader file — the DLL Plugin Loader variant may be used instead)
+- **Status**: Optional performance utility. Safe to install or uninstall at any time — saves made with it active can be loaded without it. Recommended once the modlist is heavy enough that save pauses become noticeable.
+- **Note**: Complements [Seamless Saving - Skyrim Save Accelerator](https://www.nexusmods.com/skyrimspecialedition/mods/173161), which targets the main save serialisation (Script VM bottleneck) rather than SKSE cosaves. Running both is safe and addresses different bottlenecks.
+
+### Risks & Compatibility
+
+- Neither mod touches worldspace records, leveled lists, or any asset that would require a rebuild of generated output.
+- Recursion Monitor is read-only in normal operation and only activates when a runaway script is detected. Its updated fork removes the blocking popup, which is the only known compatibility concern.
+- S.L.A.C.K. hooks SKSE's internal save/load API. In rare cases where another SKSE plugin's cosave handler throws an uncaught exception, S.L.A.C.K.'s error-friendly mode (enabled by default) catches and logs it instead of crashing. If crash-on-cosave behaviour is preferred for debugging, this mode can be disabled in the config.
+- Both mods are safe to remove from an existing save.
+
+### Acceptance Criteria
+
+- Recursion Monitor fires on a deliberately broken Papyrus call and writes the `StackFrameOverFlow` message to the log without freezing the game.
+- S.L.A.C.K. measurably reduces save/LD time in a heavy load order. Compare save duration with and without the plugin using a stopwatch or `PresentMon` capture.
+- S.L.A.C.K. error-friendly mode catches a simulated cosave exception (via a test plugin) and logs the error without crashing.
+
 ## Patching Technique And Strategy
 
 ### Core Idea

@@ -284,11 +284,17 @@
 
 - Wind-physics framework route: `Dynamic Wind Framework - SKSE Plugin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177023> — a SKSE plugin that enables dynamic wind behavior (tree sway, grass movement, cloth physics) tied to weather and location conditions. Provides the infrastructure for wind-aware environmental effects.
 - Wind-content companion route: `Dynamic Wind - Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177024> — config/data mod that applies the Dynamic Wind Framework to Skyrim's weather and locations. Depends on the framework plugin.
+- Particle-wind companion route: `Particle Wind - SKSE Plugin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174812> — makes dust, leaves, snow, and other airborne particles react to wind direction dynamically. By RavenKZP (same author as Dynamic Wind Framework). Requires SKSE and Address Library.
+- Water-surface companion route: `Realistic Boat Bobbing SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/26080> — adds realistic idle-bobbing animations to boats in harbors and coastal areas. Requires SKSE.
+- Water-surface BOS variant route: `Realistic Boat Bobbing SE - BOS Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/88885> — uses Base Object Swapper to distribute boat-bobbing behavior to mod-added boats. Requires `Base Object Swapper` and the base `Realistic Boat Bobbing SE` mod.
 
 ### Recommendation
 
 - Add `Dynamic Wind Framework - SKSE Plugin` as the infrastructure baseline. It enables weather-aware wind physics that make trees, grass, and environmental elements respond to weather conditions dynamically rather than using canned animations. Requires Address Library for SKSE Plugins (already in the foundation layer).
 - Add `Dynamic Wind - Skyrim` as the required data companion. The framework plugin provides the engine; this mod provides Skyrim-specific wind profiles tied to weather and location cells.
+- Add `Particle Wind - SKSE Plugin` as the particle-level companion to the Dynamic Wind Framework. It makes dust, leaves, snow, and ash particles respond to wind direction in real time, adding perceptible air movement to the visual environment. By the same author as the framework, so integration is expected to be clean. Requires SKSE and Address Library.
+- Add `Realistic Boat Bobbing SE` as an optional water-surface companion for harbor and coastal immersion. Boats bob with idle animations that were shipped but never enabled in vanilla. Keep it optional — it is purely cosmetic and adds no gameplay depth, but makes docked boats feel physically alive rather than frozen.
+- Add `Realistic Boat Bobbing SE - BOS Edition` as the companion for mod-added boat support. If the base mod is used, the BOS variant extends boat-bobbing to boats added by city, worldspace, or dock mods without requiring bespoke patches for each. Requires `Base Object Swapper` and the base mod.
 - Keep this subsection separate from the broader weather-system ownership (which belongs in `modlist-02.md`'s Weather and Lighting subsection) and from graphics-side cloth physics (which belongs in `modlist-02.md`'s physics decisions).
 
 ### Risks & Compatibility
