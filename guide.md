@@ -648,8 +648,6 @@ Under `12 Targeted Bugfix Mods`, install the strongest current baseline bugfixes
 - Enemy resistance branch:
     - preferred tactical route: `Know Your Enemy 2` (<https://www.nexusmods.com/skyrimspecialedition/mods/93258>)
     - lighter route: leave enemy resistances close to vanilla and get difficulty from pacing, roster, and progression structure
-- Death / defeat branch:
-    - skip defeat mechanics for the first stable pass
 - Additional bugfixes to evaluate case by case:
     - `Barter Limit Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/77173>)
     - `Better Jumping SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/18967>)
@@ -1077,16 +1075,16 @@ Performance tuning is an iterative process, not a one-time setup. The goal is co
 
 ### Tools
 
-| Tool | Purpose | Download |
-|------|---------|----------|
-| **NVIDIA FrameView** | Lightweight overlay and logging for FPS, frametime, GPU power, thermals. No CPU per-core stats, but lower overhead than Afterburner | <https://www.nvidia.com/en-us/geforce/frameview/> |
-| **MSI Afterburner + RivaTuner Statistics Server** | Full overlay and logging: FPS, frametime, GPU usage %, CPU per-core, VRAM, draw calls, temps | <https://www.msi.com/Landing/afterburner/graphics-cards> |
-| **GPU-Z** | Sensor logging for GPU clock, voltage, thermals, power limits | <https://www.techpowerup.com/gpuz/> |
-| **Community Shaders debug overlay** | Built-in performance stats — press `F11` (default) in-game to toggle render-time breakdown, draw-call count, and VRAM usage from the CS pipeline | already installed with Community Shaders |
-| **SSE Display Tweaks OSD** | Built-in overlay — set `ShowOSD=true` in `SSEDisplayTweaks.ini` for basic FPS/frametime without RTSS | |
-| **Skyrim console tools** | `showstats` toggles a real-time stat overlay (FPS, triangle count, batch count). `sgtm 0.3` slows the game to 30% speed for inspecting stutter frames. `tfc 1` freezes the camera for reproducible screenshots | built-in |
-| **BethINI Pie** | INI tuning — grass density, shadow resolution, particle limits, view distances | already installed |
-| **Cathedral Assets Optimizer** | Downscale uncompressed or oversized textures for VRAM relief | <https://www.nexusmods.com/skyrimspecialedition/mods/23316> |
+| Tool                                              | Purpose                                                                                                                                                                                                        | Download                                                    |
+|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| **NVIDIA FrameView**                              | Lightweight overlay and logging for FPS, frametime, GPU power, thermals. No CPU per-core stats, but lower overhead than Afterburner                                                                            | <https://www.nvidia.com/en-us/geforce/frameview/>           |
+| **MSI Afterburner + RivaTuner Statistics Server** | Full overlay and logging: FPS, frametime, GPU usage %, CPU per-core, VRAM, draw calls, temps                                                                                                                   | <https://www.msi.com/Landing/afterburner/graphics-cards>    |
+| **GPU-Z**                                         | Sensor logging for GPU clock, voltage, thermals, power limits                                                                                                                                                  | <https://www.techpowerup.com/gpuz/>                         |
+| **Community Shaders debug overlay**               | Built-in performance stats — press `F11` (default) in-game to toggle render-time breakdown, draw-call count, and VRAM usage from the CS pipeline                                                               | already installed with Community Shaders                    |
+| **SSE Display Tweaks OSD**                        | Built-in overlay — set `ShowOSD=true` in `SSEDisplayTweaks.ini` for basic FPS/frametime without RTSS                                                                                                           |                                                             |
+| **Skyrim console tools**                          | `showstats` toggles a real-time stat overlay (FPS, triangle count, batch count). `sgtm 0.3` slows the game to 30% speed for inspecting stutter frames. `tfc 1` freezes the camera for reproducible screenshots | built-in                                                    |
+| **BethINI Pie**                                   | INI tuning — grass density, shadow resolution, particle limits, view distances                                                                                                                                 | already installed                                           |
+| **Cathedral Assets Optimizer**                    | Downscale uncompressed or oversized textures for VRAM relief                                                                                                                                                   | <https://www.nexusmods.com/skyrimspecialedition/mods/23316> |
 
 ### Benchmark Methodology
 
@@ -1099,20 +1097,20 @@ Performance tuning is an iterative process, not a one-time setup. The goal is co
 
 Use these console commands to reach each scenario from a clean save, then run the 60-second route:
 
-| Scenario | Location | Teleport | What It Tests |
-|----------|----------|----------|---------------|
-| **Open world (general)** | Whiterun plains west | `cow WhiterunWorld -10 0` | General GPU/CPU balance, grass density, LOD load |
-| **Dense forest** | Falkreath woods | `cow FalkreathWorld -30 -20` | Tree rendering, shadow complexity, grass LOD |
-| **Pine-and-marsh transition** | Morthal swamp edge | `cow HjaalmarchWorld -15 -10` | Wetland shaders, mist particles, mixed tree/flora density |
-| **City centre (canals)** | Riften marketplace | `cow RiftenWorld 0 0` | NPC count, script load, water reflections, interior/exterior transitions |
-| **City centre (castles)** | Solitude exterior | `cow SolitudeWorld 0 0` | Large static-mesh draw calls, castle shadow cascades, skybox occlusion |
-| **Snowy tundra** | Dawnstar coast | `cow WinterholdWorld 10 5` | Snow shader coverage, volumetric fog, low-visibility weather transition |
-| **Waterfall-heavy coast** | Coast near Solitude | `cow Tamriel -22 -4` | Water displacement, foam particles, Natural Waterfalls, coastal LOD |
-| **Large interior** | Blackreach | `cow Blackreach 0 0` | Particle lights, mesh density, alpha sorting |
-| **Large combat** | Fort Neugrad assault | `cow WhiterunWorld 15 -5` then run toward the fort | AI packages, magic FX, simultaneous actor rendering |
-| **Dragon encounter** | Set dragon encounter | `player.placeatme 000FEA9F` on an open-world save | Large-creature skeleton, shout/breath VFX, cell transition |
-| **Magic VFX stress** | Dense combat + spells | `cow WhiterunWorld 0 0` then `player.placeatme 000FEA9F` + `player.placeatme 0001F1A` (fire mage) x3 | Simultaneous particle systems, glow shaders, screen-space shadows |
-| **Heavy weather** | Solstheim ash storm | `cow SolstheimWorld 0 0` with `fw 10A1E8` | Particle effects, alpha-heavy weather, volumetric fog |
+| Scenario                      | Location              | Teleport                                                                                             | What It Tests                                                            |
+|-------------------------------|-----------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Open world (general)**      | Whiterun plains west  | `cow WhiterunWorld -10 0`                                                                            | General GPU/CPU balance, grass density, LOD load                         |
+| **Dense forest**              | Falkreath woods       | `cow FalkreathWorld -30 -20`                                                                         | Tree rendering, shadow complexity, grass LOD                             |
+| **Pine-and-marsh transition** | Morthal swamp edge    | `cow HjaalmarchWorld -15 -10`                                                                        | Wetland shaders, mist particles, mixed tree/flora density                |
+| **City centre (canals)**      | Riften marketplace    | `cow RiftenWorld 0 0`                                                                                | NPC count, script load, water reflections, interior/exterior transitions |
+| **City centre (castles)**     | Solitude exterior     | `cow SolitudeWorld 0 0`                                                                              | Large static-mesh draw calls, castle shadow cascades, skybox occlusion   |
+| **Snowy tundra**              | Dawnstar coast        | `cow WinterholdWorld 10 5`                                                                           | Snow shader coverage, volumetric fog, low-visibility weather transition  |
+| **Waterfall-heavy coast**     | Coast near Solitude   | `cow Tamriel -22 -4`                                                                                 | Water displacement, foam particles, Natural Waterfalls, coastal LOD      |
+| **Large interior**            | Blackreach            | `cow Blackreach 0 0`                                                                                 | Particle lights, mesh density, alpha sorting                             |
+| **Large combat**              | Fort Neugrad assault  | `cow WhiterunWorld 15 -5` then run toward the fort                                                   | AI packages, magic FX, simultaneous actor rendering                      |
+| **Dragon encounter**          | Set dragon encounter  | `player.placeatme 000FEA9F` on an open-world save                                                    | Large-creature skeleton, shout/breath VFX, cell transition               |
+| **Magic VFX stress**          | Dense combat + spells | `cow WhiterunWorld 0 0` then `player.placeatme 000FEA9F` + `player.placeatme 0001F1A` (fire mage) x3 | Simultaneous particle systems, glow shaders, screen-space shadows        |
+| **Heavy weather**             | Solstheim ash storm   | `cow SolstheimWorld 0 0` with `fw 10A1E8`                                                            | Particle effects, alpha-heavy weather, volumetric fog                    |
 
 Record these metrics per scenario:
 
@@ -1192,17 +1190,17 @@ The load order is not static. Mods update, new mods replace old recommendations,
 
 ### When To Revisit Each Patcher
 
-| Patcher | Trigger To Re-run | Settings Worth Tweaking |
-|---------|-------------------|------------------------|
-| **LOOT** | Every meaningful load-order change | No custom tweaks — keep LOOT as the sort authority |
-| **Synthesis** | When any mod it patches is added, removed, or updated. Always re-run after: new weapon/armor packs, leveled-list changes, NPC overhauls, music stack changes | `Weapon Stat Synthesis Patcher` — raise/lower `Damage Ceiling` if combat pacing feels too fast or too slow during survival-difficulty playthroughs. Add new plugins to `Ignore List` when hand-authored artifacts from a new quest mod should not be normalized. Revisit the patcher pipeline order if new patchers are added. |
-| **Wrye Bash** | When a leveled-list-heavy mod is added or removed. Only if a `Bashed Patch` is still part of the strategy. | No settings worth changing per-run. If the Bashed Patch starts pulling in unintended imports, switch to manually merged leveled lists instead. |
-| **Pandora** | After any animation mod is added, removed, or reordered. After any skeleton or behavior-file change. | No end-user settings. Keep the output directed to `Pandora Output`. |
-| **BodySlide** | After body preset, skin texture, armor mod, or outfit changes. | No per-run settings beyond the chosen preset. |
-| **Grass Cache** | After grass mod, tree mod, landscape texture, or worldspace changes. Any grass-density INI tweak invalidates the cache. | Rebuild from scratch rather than patching. |
-| **xLODGen** | After landscape texture, heightmap, or worldspace changes. After terrain LOD mod changes. | `Quality` slider can be raised per-run if coastline/water-edge artefacts appear. |
-| **TexGen** | After any texture change to objects, trees, or buildings that produces LOD billboards. After tree-mod swaps. | Revisit `GrassModelHeightMultiplier` and `TreeMSAlphaThreshold` if tree or grass billboards look wrong. |
-| **DynDOLOD** | After any worldspace mod, tree mod, large-reference mod, or LOD resource change. After TexGen output changes. | `Brightness` and `Contrast` for LOD32 can be dialled per-run if the distant world looks washed out or too dark. `DoubleSidedTextureMask` needs updating if new mountain/mesh types are added. |
+| Patcher         | Trigger To Re-run                                                                                                                                            | Settings Worth Tweaking                                                                                                                                                                                                                                                                                                        |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **LOOT**        | Every meaningful load-order change                                                                                                                           | No custom tweaks — keep LOOT as the sort authority                                                                                                                                                                                                                                                                             |
+| **Synthesis**   | When any mod it patches is added, removed, or updated. Always re-run after: new weapon/armor packs, leveled-list changes, NPC overhauls, music stack changes | `Weapon Stat Synthesis Patcher` — raise/lower `Damage Ceiling` if combat pacing feels too fast or too slow during survival-difficulty playthroughs. Add new plugins to `Ignore List` when hand-authored artifacts from a new quest mod should not be normalized. Revisit the patcher pipeline order if new patchers are added. |
+| **Wrye Bash**   | When a leveled-list-heavy mod is added or removed. Only if a `Bashed Patch` is still part of the strategy.                                                   | No settings worth changing per-run. If the Bashed Patch starts pulling in unintended imports, switch to manually merged leveled lists instead.                                                                                                                                                                                 |
+| **Pandora**     | After any animation mod is added, removed, or reordered. After any skeleton or behavior-file change.                                                         | No end-user settings. Keep the output directed to `Pandora Output`.                                                                                                                                                                                                                                                            |
+| **BodySlide**   | After body preset, skin texture, armor mod, or outfit changes.                                                                                               | No per-run settings beyond the chosen preset.                                                                                                                                                                                                                                                                                  |
+| **Grass Cache** | After grass mod, tree mod, landscape texture, or worldspace changes. Any grass-density INI tweak invalidates the cache.                                      | Rebuild from scratch rather than patching.                                                                                                                                                                                                                                                                                     |
+| **xLODGen**     | After landscape texture, heightmap, or worldspace changes. After terrain LOD mod changes.                                                                    | `Quality` slider can be raised per-run if coastline/water-edge artefacts appear.                                                                                                                                                                                                                                               |
+| **TexGen**      | After any texture change to objects, trees, or buildings that produces LOD billboards. After tree-mod swaps.                                                 | Revisit `GrassModelHeightMultiplier` and `TreeMSAlphaThreshold` if tree or grass billboards look wrong.                                                                                                                                                                                                                        |
+| **DynDOLOD**    | After any worldspace mod, tree mod, large-reference mod, or LOD resource change. After TexGen output changes.                                                | `Brightness` and `Contrast` for LOD32 can be dialled per-run if the distant world looks washed out or too dark. `DoubleSidedTextureMask` needs updating if new mountain/mesh types are added.                                                                                                                                  |
 
 ### Change Tracking
 
