@@ -848,3 +848,21 @@ Rebuilding one stage does not replace the stages after it. A `Bashed Patch` rebu
 - A deliberate test that disables `RAID` causes `AI Stealth Overhaul` to log a warning and `Followers-are-Sneaky` to be the only detection-related patcher running. No silent failure.
 - A deliberate test that reorders `SynESLify` out of the last position causes the `Synthesis` patch to take a hard load-order slot and `LOOT` to flag the new entry. Reordering back to last resolves the flag.
 - Every `Tweak Settings` entry enabled in the `Bashed Patch` is verified by a deliberate save-load test: change a tweak value, reload, observe the gameplay effect, and revert. Settings that cannot be verified are not enabled.
+
+## Post-Install Smoke Test
+
+After completing this section, verify stability with the coc console command at these 6 locations:
+
+| # | Command | Location | Stress Profile |
+|---|---------|----------|----------------|
+| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
+| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
+| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
+| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
+| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
+| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
+| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
+
+**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
+
+If any location fails, the most recently installed mod or generation step is the first suspect.

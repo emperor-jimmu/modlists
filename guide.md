@@ -1060,6 +1060,22 @@ Specific performance checks to keep:
 - check the benchmark view outside Whiterun looking west
 - sanity-check the Rift with `cow tamriel 40 -24`
 
+### Quick Teleport Smoke Test (`coc`)
+
+From the main menu, open the console (`~`) and teleport to each location. Verify no crashes, no missing textures, and ≥60 FPS (uncap framerate, use `tgm` for god mode if needed).
+
+| # | Command | Location | Stress Profile |
+|---|---------|----------|----------------|
+| 1 | `coc Whiterun` | Whiteron | Major city — NPCs, shadows, architecture density |
+| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
+| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
+| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
+| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
+| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
+| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
+
+If any location fails, the most recently installed mod or generator step is the first suspect.
+
 ### Smoke Test — Full Build
 
 1. Start a fresh game with your chosen alternate-start mod.

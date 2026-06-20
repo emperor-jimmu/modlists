@@ -333,3 +333,21 @@
 - One clearly preferred darkness-first baseline, one meaningful fixed-world-lighting comparison, and one distinct carried-visibility branch are documented.
 - The distinction between darker-night mood, world-lighting support, and carried visibility is explicit.
 - Nighttime travel becomes more atmospheric without making navigation unreasonably frustrating.
+
+## Post-Install Smoke Test
+
+After completing this section, verify stability with the coc console command at these 6 locations:
+
+| # | Command | Location | Stress Profile |
+|---|---------|----------|----------------|
+| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
+| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
+| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
+| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
+| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
+| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
+| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
+
+**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
+
+If any location fails, the most recently installed mod or generation step is the first suspect.

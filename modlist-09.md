@@ -255,3 +255,21 @@ Keep `No Predators on roads` as the comparison if the frustration is specificall
 - One preferred wildlife-density baseline, one route-distribution comparison, and one clearly caveated broader-overhaul branch, with the density-vs-placement-vs-overhaul distinction explicit.
 - Any broader wildlife mod documented with a clear reason it is not the clean baseline.
 - The chosen direction improves scale and rarity without duplicating section-07 ecology or making the landscape feel dead.
+
+## Post-Install Smoke Test
+
+After completing this section, verify stability with the coc console command at these 6 locations:
+
+| # | Command | Location | Stress Profile |
+|---|---------|----------|----------------|
+| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
+| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
+| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
+| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
+| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
+| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
+| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
+
+**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
+
+If any location fails, the most recently installed mod or generation step is the first suspect.
