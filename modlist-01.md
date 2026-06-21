@@ -26,6 +26,41 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 
 - Select the animation-related engine fixes the final stack needs, coordinated with `modlist-03.md`
 
+## Official Masters Cleanup
+
+### Core Idea
+
+The vanilla master files (`Skyrim.esm`, `Update.esm`, the three DLCs, and the AE Creation Club `.esm` files) ship with Identical-To-Master (ITM) records and undeleted deleted references left over from development. Cleaning them with `xEditQuickAutoClean` removes these artifacts, which prevents later mod conflicts, eliminates spurious LOOT warnings, and avoids rare but reproducible CTDs from undeleted references. This must happen before any mods are installed — cleaned masters are loaded via an MO2 mod so the game folder stays untouched.
+
+### Recommendation
+
+Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAutoClean` (registered as an MO2 executable) on each file individually, collect the cleaned `.esm` files into a dedicated `Cleaned Vanilla Masters` mod under the `Output` separator, and restore the originals from the `xEdit Backups` folder into `Data\` so MO2's virtual filesystem provides the cleaned copies. The detailed procedure is documented in `guide.md` under "Clean The Vanilla Masters".
+
+### Which Masters To Clean
+
+- `Skyrim.esm`
+- `Update.esm`
+- `Dawnguard.esm`
+- `HearthFires.esm`
+- `Dragonborn.esm`
+- All Creation Club `.esm` files shipped with the 1.6.1170 runtime (approximately 5 files — `ccbgssse001-fish.esm`, `ccqdrsse001-survivalmode.esl`, `ccbgssse037-curios.esl`, `ccbgssse025-advdsgs.esm`, and any additional `.esm` files present in the game folder)
+
+Do not clean `_ResourcePack.esl` — it contains no ITM or UDR records and does not need cleaning.
+
+### Risks & Compatibility
+
+- Cleaning is generally safe on vanilla masters and recommended by the modding community, but some mod authors (including the Unofficial Patch team) advise against cleaning `Update.esm` because USSEP intentionally forward-fixes records that QAC would remove. The current consensus on `r/skyrimmods` is that QAC-clean `Update.esm` + USSEP is the standard and safe combination, as USSEP's records win over the cleaned originals in the load order.
+- Never clean a mod author's plugin unless LOOT explicitly flags it. Third-party mods often ship ITM records intentionally for compatibility, and removing them breaks the mod. Vanilla masters are the exception.
+- The `Cleaned Vanilla Masters` mod must remain enabled for the entire playthrough. Disabling it mid-game restores the uncleaned masters and can break references that moved during cleaning.
+- If `LOOT` still flags a master as needing cleaning after this step, the `Cleaned Vanilla Masters` mod may not be overriding the file correctly — verify the mod is active and placed below the game's `Data` folder in MO2's left pane.
+
+### Acceptance Criteria
+
+- All six-plus vanilla masters are processed through `xEditQuickAutoClean` and collected into a single `Cleaned Vanilla Masters` mod.
+- The originals are restored to `Data\` and LOOT confirms no masters are flagged for cleaning.
+- `Cleaned Vanilla Masters` is enabled in MO2 and sits below the game files but above any source mods.
+- A clean boot to the main menu succeeds before any foundation mods are installed.
+
 ## Candidate Baseline To Research → `01b`
 
 - `SKSE64` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/30379> → `01a`
