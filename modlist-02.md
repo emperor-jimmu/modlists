@@ -1,6 +1,8 @@
 # Modern Graphics
 
-## Community Shaders Core Setup
+**MO2 Separator:** `02 Graphics` → `02a Community Shaders`, `02b Textures & Meshes`, `02c Lighting`, `02d Weather & Water`, `02e Terrain & Flora`, `02f Characters & Creatures`, `02g LOD & Distant Detail`
+
+## Community Shaders Core Setup → `02a Community Shaders`
 
 ### Core Idea
 
@@ -31,7 +33,7 @@
 - Visual output is stable in both indoor and outdoor test scenes.
 - Baseline FPS is recorded before any add-on modules are layered in.
 
-## Community Shaders Add-Ons And Required Features
+## Community Shaders Add-Ons And Required Features → `02a Community Shaders`
 
 ### Core Idea
 
@@ -109,7 +111,7 @@
 - Water, wetness, and terrain depth improve without obvious artifacting.
 - The final module set has a measured performance cost the list is willing to carry.
 
-## Physically Based Rendering (PBR) Support
+## Physically Based Rendering (PBR) Support → `02a Community Shaders`
 
 ### Core Idea
 
@@ -200,7 +202,7 @@
 - No obvious mismatch appears between PBR and non-PBR assets in the same scene.
 - Performance cost stays acceptable relative to the baseline CS stack.
 
-## Texture Overhauls By Material Type
+## Texture Overhauls By Material Type → `02b Textures & Meshes`
 
 ### Core Idea
 
@@ -285,7 +287,7 @@
 - The final texture stack is understandable enough to maintain without guesswork.
 - Dwemer ruins, automatons, and vanilla Dwemer gear read as one coherent visual family.
 
-## Mesh Improvements And Parallax Support
+## Mesh Improvements And Parallax Support → `02b Textures & Meshes`
 
 ### Core Idea
 
@@ -327,7 +329,7 @@
 - Snow, rock, and architecture transitions remain coherent under the chosen texture stack.
 - Mesh conflicts remain understandable and patchable.
 
-## Lighting Overhaul Strategy
+## Lighting Overhaul Strategy → `02c Lighting`
 
 ### Core Idea
 
@@ -370,7 +372,7 @@
 - Patch burden remains reasonable for the chosen city, dungeon, and player-home stack.
 - Lighting mood stays coherent with the final shader, texture, and weather direction.
 
-## Weather And Atmosphere
+## Weather And Atmosphere → `02d Weather & Water`
 
 ### Core Idea
 
@@ -406,7 +408,7 @@
 - Rain, fog, and storms improve mood without obscuring travel too heavily.
 - The chosen weather route complements the selected lighting strategy and CS modules.
 
-## Water Visuals
+## Water Visuals → `02d Weather & Water`
 
 ### Core Idea
 
@@ -446,7 +448,7 @@
 - Foam, reflections, and shoreline behavior improve immersion instead of drawing attention to artifacts.
 - The final water route fits the CS stack and broader `Elder Wilds` atmosphere.
 
-## Terrain, Roads, And Snow
+## Terrain, Roads, And Snow → `02e Terrain & Flora`
 
 ### Core Idea
 
@@ -506,7 +508,7 @@
 - Snow blends naturally with nearby rocks, roads, and terrain materials under the selected weather route.
 - The final terrain, road, and snow stack supports later grass, tree, and LOD work.
 
-## Flora Visuals
+## Flora Visuals → `02e Terrain & Flora`
 
 ### Core Idea
 
@@ -552,7 +554,7 @@ Treat these as an optional environment-plant detail layer rather than a baseline
 - Plant quality holds up both at travel distance and during close inspection.
 - The final flora stack remains compatible with the chosen terrain, snow, tree, and grass-cache workflow.
 
-## Tree Overhauls For Dense Forests
+## Tree Overhauls For Dense Forests → `02e Terrain & Flora`
 
 ### Core Idea
 
@@ -586,7 +588,7 @@ Treat these as an optional environment-plant detail layer rather than a baseline
 - Tree silhouettes hold up at close, mid, and long distance.
 - The chosen tree overhaul stays compatible with flora, terrain, roads, and later LOD workflow at a manageable cost.
 
-## LOD Generation And Distant Detail
+## LOD Generation And Distant Detail → `02g LOD & Distant Detail`
 
 ### Core Idea
 
@@ -716,7 +718,7 @@ Treat these as an optional environment-plant detail layer rather than a baseline
 - Refresh occlusion whenever major worldspace edits or the final distant-detail pass changes enough to affect visibility and culling behavior.
 - If multiple major visual categories change together, prefer a clean full rebuild of generated outputs instead of partial guesswork.
 
-## Character, Skin, And Creature Visuals
+## Character, Skin, And Creature Visuals → `02f Characters & Creatures`
 
 ### Core Idea
 
@@ -878,7 +880,7 @@ Male variety on `HIMBO`:
 - Skin textures look believable under the chosen weather and lighting route during normal play.
 - Creature visuals improve the world's overall quality without clashing with the environment stack.
 
-## Hair, Eyes, And Beards
+## Hair, Eyes, And Beards → `02f Characters & Creatures`
 
 ### Core Idea
 
@@ -916,7 +918,7 @@ Male variety on `HIMBO`:
 - The chosen hair and eye assets do not force a full NPC overhaul in `modlist-09.md` but stay compatible with whatever it later selects.
 - Beard visuals remain acceptable without becoming a primary subsection decision.
 
-## Sky, Stars, And Auroras
+## Sky, Stars, And Auroras → `02d Weather & Water`
 
 ### Core Idea
 
@@ -953,7 +955,7 @@ Male variety on `HIMBO`:
 - Night skies feel atmospheric rather than flat without forcing a full sky-dome overhaul.
 - Sky work stays separated from weather and lighting decisions in load order, MCM, and visual identity.
 
-## Unique Entity Replacers
+## Unique Entity Replacers → `02b Textures & Meshes`
 
 ### Core Idea
 
@@ -979,7 +981,7 @@ Male variety on `HIMBO`:
 - `Elder Wilds` has one clear targeted unique-entity baseline or a deliberate discipline-first decision.
 - The Night Mother's model reads at the same visual quality level as the locked 4K texture and lighting stack.
 
-## Skeleton And Bone Replacers
+## Skeleton And Bone Replacers → `02f Characters & Creatures`
 
 ### Core Idea
 
@@ -1013,7 +1015,7 @@ Male variety on `HIMBO`:
 - The visual replacer does not affect the rigged skeleton decisions in `modlist-03.md`.
 - Any required mesh patch companion is documented and installed only if the modlist actually needs it.
 
-## Blood, Decals, And Combat Visual Effects
+## Blood, Decals, And Combat Visual Effects → `02b Textures & Meshes`
 
 ### Core Idea
 

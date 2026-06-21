@@ -1,6 +1,8 @@
 # Animations and Movement
 
-## Pandora Framework And Prerequisites
+**MO2 Separator:** `03 Animations` → `03a Framework`, `03b Movement & Idles`, `03c Combat`, `03d Interactions & Traversal`, `03e Creatures`
+
+## Pandora Framework And Prerequisites → `03a Framework`
 
 ### Core Idea
 
@@ -30,7 +32,7 @@
 - A baseline patch pass completes without framework-level errors.
 - Generated behavior output is isolated in a dedicated MO2 output mod.
 
-## Skeleton And Behavior Prerequisites
+## Skeleton And Behavior Prerequisites → `03a Framework`
 
 ### Core Idea
 
@@ -64,7 +66,7 @@
 - `CBPC` and the chosen `CBBE 3BA (3BBB)` setup coexist cleanly on the active Steam `1.6.1170` profile.
 - `Pandora` still generates behaviors cleanly after the skeleton and baseline body-physics layer are in place.
 
-## Parkour, Climbing, And Free-Form Movement
+## Parkour, Climbing, And Free-Form Movement → `03d Interactions & Traversal`
 
 ### Core Idea
 
@@ -141,7 +143,7 @@
 - The chosen baseline works cleanly with `Pandora`, `XPMSSE`, and the body setup already chosen in section 02.
 - Male and female locomotion both feel intentional rather than stitched together from conflicting styles.
 
-## Idle Animations
+## Idle Animations → `03b Movement & Idles`
 
 ### Core Idea
 
@@ -173,7 +175,7 @@
 - The chosen idle baseline works cleanly with the locomotion setup and the existing `Pandora` / `XPMSSE` foundation.
 - Male and female presentation both feel intentional without obvious style clash.
 
-## Combat Animation Packs
+## Combat Animation Packs → `03c Combat`
 
 ### Core Idea
 
@@ -211,7 +213,7 @@
 - Player and NPC attack presentation both improve without forcing premature lock-in on the final combat-system direction.
 - The section clearly distinguishes baseline combat support from the later full `MCO`-style route.
 
-## Non-Combat Interaction Animations
+## Non-Combat Interaction Animations → `03d Interactions & Traversal`
 
 ### Core Idea
 
@@ -248,7 +250,7 @@
 - If `Animated Interactions SKSE` is used, its overlap with `Immersive Interactions` is documented as a conscious tradeoff rather than a silent duplicate install.
 - Optional additions such as `Go to bed` or `EVG Animated Traversal` are only kept if they improve normal play rhythm rather than just adding spectacle.
 
-## Conditional Animation Systems
+## Conditional Animation Systems → `03a Framework`
 
 ### Core Idea
 
@@ -282,7 +284,7 @@
 - Any chosen conditional packs improve noticeable third-person readability or immersion during normal play.
 - The conditional layer remains understandable enough that later camera-aware or gameplay-driven work can build on it without turning debugging into guesswork.
 
-## Camera-Aware Animation Support
+## Camera-Aware Animation Support → `03a Framework`
 
 ### Core Idea
 
@@ -313,7 +315,7 @@
 - `Improved Camera SE`, if chosen, works cleanly with the current animation stack.
 - The camera-aware layer remains clearly separate from later third-person camera and gameplay framework decisions.
 
-## Creature Animations
+## Creature Animations → `03e Creatures`
 
 ### Core Idea
 
@@ -346,7 +348,7 @@
 - `Pandora` continues to generate cleanly with the curated creature additions.
 - The creature-animation layer stays small and intentional enough that later debugging remains manageable.
 
-## Animation Conflict Management
+## Animation Conflict Management → `03a Framework`
 
 ### Core Idea
 

@@ -1,6 +1,8 @@
 # Third-Person Gameplay
 
-## Third-Person Camera Framework
+**MO2 Separator:** `04 Third Person` → `04a Camera & Movement`, `04b Combat & Targeting`, `04c Mounted`
+
+## Third-Person Camera Framework → `04a Camera & Movement`
 
 ### Core Idea
 
@@ -32,7 +34,7 @@
 - The camera baseline remains comfortable in longer normal play.
 - Later layers can build on the framework without redefining it.
 
-## Camera Presets And Shoulder Switching
+## Camera Presets And Shoulder Switching → `04a Camera & Movement`
 
 ### Core Idea
 
@@ -63,7 +65,7 @@
 - Shoulder switching feels like a practical tool rather than a chore.
 - Any preset influence remains understandable enough to tune manually later.
 
-## True Directional Movement
+## True Directional Movement → `04a Camera & Movement`
 
 ### Core Idea
 
@@ -94,7 +96,7 @@
 - Character facing and traversal stay coherent with the animation stack from `modlist-03.md`.
 - `TDM` remains understandable as one layer in the third-person stack rather than a catch-all answer.
 
-## Target Lock And Targeting Behavior
+## Target Lock And Targeting Behavior → `04b Combat & Targeting`
 
 ### Core Idea
 
@@ -125,7 +127,7 @@
 - Lock-on helps when it should and stays easy to ignore when freer movement is better.
 - `TDM` remains the clear targeting owner without overlapping systems muddying responsibility.
 
-## Dodge, Sprint, And Movement Responsiveness
+## Dodge, Sprint, And Movement Responsiveness → `04a Camera & Movement`
 
 ### Core Idea
 
@@ -160,7 +162,7 @@
 - The chosen dodge layer remains understandable as one tool in the combat stack rather than the answer to every responsiveness problem.
 - If `Dodge for all` is added later, it replaces `TK Dodge RE` cleanly rather than being stacked on top.
 
-## Hit Reactions, Stagger, And Impact Feedback
+## Hit Reactions, Stagger, And Impact Feedback → `04b Combat & Targeting`
 
 ### Core Idea
 
@@ -191,7 +193,7 @@
 - Stagger and reaction feedback improve combat understanding without dominating every encounter.
 - The subsection remains clearly scoped to impact feel, leaving deeper combat-rule decisions for the next section.
 
-## Third-Person Combat Systems
+## Third-Person Combat Systems → `04b Combat & Targeting`
 
 ### Core Idea
 
@@ -226,7 +228,7 @@
 - The final system works coherently with the camera, targeting, dodge, impact, and animation decisions already recorded in the plan.
 - Enemy behavior and player-side combat rules feel intentional rather than like a pile of overlapping modern-combat mods.
 
-## Crosshair And Aiming Behavior
+## Crosshair And Aiming Behavior → `04b Combat & Targeting`
 
 ### Core Idea
 
@@ -261,7 +263,7 @@
 - Third-person object interaction feels reliable enough that normal looting and activation do not constantly fight the camera perspective.
 - Camera, targeting, and aiming each remain understandable as separate layers in the stack.
 
-## Horse Camera And Mounted Controls
+## Horse Camera And Mounted Controls → `04c Mounted`
 
 ### Core Idea
 

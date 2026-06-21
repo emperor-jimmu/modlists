@@ -1,5 +1,7 @@
 # Legacy of the Dragonborn
 
+**MO2 Separator:** `12 Legacy of the Dragonborn`
+
 ## Core Mod Baseline
 
 ### Core Idea

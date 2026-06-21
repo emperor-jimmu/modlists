@@ -1,5 +1,7 @@
 # Adult Content
 
+**MO2 Separator:** `15 Adult Content`
+
 ## Framework Prerequisites
 
 ### Core Idea

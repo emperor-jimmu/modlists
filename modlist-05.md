@@ -1,6 +1,8 @@
 # Expanded Systems
 
-## Character Creation And Starting Choices
+**MO2 Separator:** `05 Expanded Systems` → `05a Character & Progression`, `05b Magic & Perks`, `05c Survival & Needs`, `05d Crafting & Economy`, `05e Followers & Reputation`
+
+## Character Creation And Starting Choices → `05a Character & Progression`
 
 ### Core Idea
 
@@ -42,7 +44,7 @@
 - The chosen route improves replayability and roleplay identity without undermining world coherence.
 - The opening hands the player into normal play cleanly and matches the intended tone.
 
-## Race, Standing Stone, And Progression Overhauls
+## Race, Standing Stone, And Progression Overhauls → `05a Character & Progression`
 
 ### Core Idea
 
@@ -89,7 +91,7 @@
 - The chosen baseline supports replayability and character identity without dominating the rest of the progression stack.
 - Later perk, magic, and religion decisions still have visible room to matter.
 
-## Perk Overhaul Compatibility
+## Perk Overhaul Compatibility → `05b Magic & Perks`
 
 ### Core Idea
 
@@ -122,7 +124,7 @@
 - The chosen baseline leaves visible room for later magic, crafting, religion, and economy decisions to matter.
 - Race, standing stones, and perks read as one coherent progression stack.
 
-## Magic System Expansion
+## Magic System Expansion → `05b Magic & Perks`
 
 ### Core Idea
 
@@ -157,7 +159,7 @@
 - The chosen baseline complements the current race, standing-stone, and perk direction instead of pulling against it.
 - Later alchemy, religion, economy, and crafting decisions still have visible room to matter.
 
-## Alchemy Overhaul
+## Alchemy Overhaul → `05d Crafting & Economy`
 
 ### Core Idea
 
@@ -190,7 +192,7 @@
 - The chosen baseline complements the current race, standing-stone, perk, and magic direction instead of pulling the progression stack sideways.
 - Later cooking, economy, crafting, and religion decisions still have visible room to matter.
 
-## Survival Systems
+## Survival Systems → `05c Survival & Needs`
 
 ### Core Idea
 
@@ -224,7 +226,7 @@
 - The chosen baseline complements the current progression stack instead of forcing the whole systems layer into hardcore survival.
 - Later religion, economy, follower, and roleplay decisions still have visible room to matter.
 
-## Roleplay Upkeep And Hygiene
+## Roleplay Upkeep And Hygiene → `05c Survival & Needs`
 
 ### Core Idea
 
@@ -256,7 +258,7 @@
 - The chosen hygiene layer supports inns, rivers, camp routines, and follower travel texture without becoming a second full survival overhaul.
 - Hard dependencies are recorded clearly and optional addon integrations stay optional.
 
-## Character Traits And Identity Hooks
+## Character Traits And Identity Hooks → `05a Character & Progression`
 
 ### Core Idea
 
@@ -289,7 +291,7 @@
 - Traits add meaningful replayability and roleplay hooks without crowding out the main progression stack.
 - The section keeps a clear boundary between traits, race identity, perk design, and survival pressure.
 
-## Cooking Systems
+## Cooking Systems → `05d Crafting & Economy`
 
 ### Core Idea
 
@@ -330,7 +332,7 @@
 - `Skyrim 3D Cooking` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/23007> — replaces cooking pot, oven, and food-prep meshes with higher-detail 3D versions. Mesh-only, zero plugin overhead. Pairs with the food-texture layer to make cooking stations and food items look more credible.
 - `Realistic HD Food Remastered` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22087> — replaces vanilla food textures with higher-resolution, photorealistic versions covering bread, meat, fruits, vegetables, and prepared dishes. Complements the 3D mesh replacers for a full food-visual upgrade.
 
-## Smithing And Crafting Expansion
+## Smithing And Crafting Expansion → `05d Crafting & Economy`
 
 ### Core Idea
 
@@ -366,7 +368,7 @@
 - The chosen baseline complements the perk, magic, alchemy, survival, and cooking direction instead of collapsing multiple later sections into one crafting answer.
 - Later economy, roleplay, and religion decisions still have visible room to matter.
 
-## Economy And Loot Balance
+## Economy And Loot Balance → `05d Crafting & Economy`
 
 ### Core Idea
 
@@ -411,7 +413,7 @@
 - The chosen baseline complements the perk, magic, alchemy, survival, cooking, and crafting direction instead of collapsing multiple later sections into one economy answer.
 - Later religion, crime, roleplay, and follower decisions still have visible room to matter.
 
-## Religion Or Roleplay Systems
+## Religion Or Roleplay Systems → `05a Character & Progression`
 
 ### Core Idea
 
@@ -444,7 +446,7 @@
 - The chosen baseline complements the perk, magic, alchemy, survival, cooking, crafting, and economy direction instead of collapsing multiple later sections into one religion answer.
 - Later crime, roleplay, and follower decisions still have visible room to matter.
 
-## Crime, Reputation, And Social Systems
+## Crime, Reputation, And Social Systems → `05e Followers & Reputation`
 
 ### Core Idea
 
@@ -486,7 +488,7 @@
 - The chosen baseline complements religion, economy, survival, and follower direction instead of collapsing several later sections into one crime answer.
 - Later follower and world-content decisions still have visible room to matter.
 
-## Followers And Companion Systems
+## Followers And Companion Systems → `05e Followers & Reputation`
 
 ### Core Idea
 
@@ -519,7 +521,7 @@
 - The chosen baseline complements religion, crime, exploration, and later NPC/world-content direction instead of collapsing several future sections into one companion answer.
 - The framework decision stays disciplined enough that later custom-follower work can build on it cleanly.
 
-## Stealth And Detection
+## Stealth And Detection → `05b Magic & Perks`
 
 ### Core Idea
 
@@ -552,7 +554,7 @@
 - Sneak gameplay feels more readable and less random under the new detection rules without making stealth-only play dominate.
 - Detection work stays separated from crime, reputation, perk, magic, and combat decisions in load order, MCM, and visual identity.
 
-## Romance, Marriage, And Companionship
+## Romance, Marriage, And Companionship → `05e Followers & Reputation`
 
 ### Core Idea
 
@@ -591,7 +593,7 @@
 - Marriage feels like a meaningful long-term choice rather than a stat boost, with the machinery to support up to 11 simultaneous spouses if the player wants that.
 - Romance dialogue and quest work stays separated from custom-follower content in `modlist-09.md` so the two systems do not double-voice or double-quest the same NPC.
 
-## Artifact And Unique Item Overhauls
+## Artifact And Unique Item Overhauls → `05d Crafting & Economy`
 
 ### Core Idea
 
@@ -632,7 +634,7 @@
 - The artifact stack does not conflict with the `Synthesis` patcher config in `modlist-15.md`.
 - Legacy of the Dragonborn museum displays for dragon priest masks integrate with the `Konahrik's Accoutrements` content if the patch is available.
 
-## Weapon Pack Additions
+## Weapon Pack Additions → `05d Crafting & Economy`
 
 ### Core Idea
 
@@ -670,7 +672,7 @@
 - If crossbows and bows are a real build path, the specialty content mod is locked in; if not, the discipline-first decision is explicit.
 - New weapons feel like meaningful finds in dungeon and bandit loot, not leveled-list padding.
 
-## Armor Pack Additions
+## Armor Pack Additions → `05d Crafting & Economy`
 
 ### Core Idea
 
@@ -720,7 +722,7 @@
 - The chosen armor stack does not conflict with the synthesis patcher entries in `modlist-15.md`.
 - New armors feel like meaningful finds in dungeon and bandit loot, not leveled-list padding.
 
-## Clothing And Wardrobe Extensions
+## Clothing And Wardrobe Extensions → `05d Crafting & Economy`
 
 ### Core Idea
 

@@ -1,5 +1,7 @@
 # Modlist Curation Rules and Testing Plan
 
+**MO2 Separator:** `13 Testing & Curation`
+
 ## Modlist Curation Rules
 
 ### Core Idea

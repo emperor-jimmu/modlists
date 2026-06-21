@@ -1,5 +1,7 @@
 # Main Character Voicing
 
+**MO2 Separator:** `16 Voicing`
+
 ## Core Idea
 
 Skyrim's player character has never had a voice. Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Generator) together solve this: DBVO is the runtime framework that plays audio for the player's dialogue lines, and MCVO Generator scans the full load order and produces the data files that drive voice generation. Combined with AI voice synthesis (xVASynth or ElevenLabs), the player character speaks every dialogue line across the entire modlist.

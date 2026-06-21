@@ -62,6 +62,7 @@ ClearInvalidRegistrations=1
 [Display]
 iTintTextureResolution=2048
 ```
+
 - Register `skse64_loader.exe` in MO2 as the `SKSE Skyrim Launcher` executable and launch the game through that entry after the vanilla initialization step.
 - Community troubleshooting on `r/skyrimmods` still clusters around the same mistakes: wrong runtime build, root files copied into the wrong folder, scripts not installed as a mod, or launching outside MO2. The guide should guard against those explicitly.
 
@@ -74,20 +75,20 @@ iTintTextureResolution=2048
 
 ### MO2 Executable Reference
 
-| Tool | Executable | Arguments | Output Handling | Notes |
-| --- | --- | --- | --- | --- |
-| `BethINI Pie` | `Bethini.exe` | none | none | Run through MO2 so it edits the active profile INIs instead of global game INIs. |
-| `LOOT` | `LOOT.exe` | `--game="Skyrim Special Edition"` | none | If LOOT fails through MO2, use `--single-process --game="Skyrim Special Edition"`. |
-| `SKSE Skyrim Launcher` | `skse64_loader.exe` | none | `SKSE Output` | Use this to launch the game after the root files are in the game folder and the `SKSE Scripts` mod is enabled. |
-| `xEdit` | `xEdit.exe` | `-SSE -IKnowWhatImDoing -AllowMasterFilesEdit` | `xEdit Output` | Main conflict review and manual patching entry. |
-| `xEditQuickAutoClean` | `xEditQuickAutoClean.exe` | `-SSE` | `xEdit Output` | Only use for plugins LOOT explicitly flags for cleaning. |
-| `xLODGen` | `xLODGenx64.exe` | `-lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"` | `Terrain LOD Output` | Replace `DriveLetter` with the actual drive letter used for the modding folder. |
-| `TexGen` | `TexGen64.exe` | `-SSE` | `TexGen Output` | Keep output isolated and pack it into the dedicated mod immediately after generation. |
-| `DynDOLOD` | `DynDOLODx64.exe` | `-SSE` | `DynDOLOD Output` | Keep output isolated and enable `DynDOLOD.esm` / `DynDOLOD.esp` after generation. |
-| `Wrye Bash` | `Wrye Bash.exe` | none | dedicated patch/output mod if used | Register only if the list still needs a `Bashed Patch` or leveled-list review pass. |
-| `Synthesis` | `Synthesis.exe` | none | dedicated patch/output mod if used | Give it its own output mod once the final patcher set is known. |
-| `BodySlide` | `BodySlide x64.exe` | none | dedicated body/output mod | Run through MO2 so mesh output respects the active profile and selected body stack. |
-| `Pandora` | `Pandora Behaviour Engine Plus.exe` | none | dedicated behavior/output mod if needed | Run through MO2 so behavior generation sees the real virtualized animation stack. |
+| Tool                   | Executable                          | Arguments                                                             | Output Handling                         | Notes                                                                                                          |
+|------------------------|-------------------------------------|-----------------------------------------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| `BethINI Pie`          | `Bethini.exe`                       | none                                                                  | none                                    | Run through MO2 so it edits the active profile INIs instead of global game INIs.                               |
+| `LOOT`                 | `LOOT.exe`                          | `--game="Skyrim Special Edition"`                                     | none                                    | If LOOT fails through MO2, use `--single-process --game="Skyrim Special Edition"`.                             |
+| `SKSE Skyrim Launcher` | `skse64_loader.exe`                 | none                                                                  | `SKSE Output`                           | Use this to launch the game after the root files are in the game folder and the `SKSE Scripts` mod is enabled. |
+| `xEdit`                | `xEdit.exe`                         | `-SSE -IKnowWhatImDoing -AllowMasterFilesEdit`                        | `xEdit Output`                          | Main conflict review and manual patching entry.                                                                |
+| `xEditQuickAutoClean`  | `xEditQuickAutoClean.exe`           | `-SSE`                                                                | `xEdit Output`                          | Only use for plugins LOOT explicitly flags for cleaning.                                                       |
+| `xLODGen`              | `xLODGenx64.exe`                    | `-lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"` | `Terrain LOD Output`                    | Replace `DriveLetter` with the actual drive letter used for the modding folder.                                |
+| `TexGen`               | `TexGen64.exe`                      | `-SSE`                                                                | `TexGen Output`                         | Keep output isolated and pack it into the dedicated mod immediately after generation.                          |
+| `DynDOLOD`             | `DynDOLODx64.exe`                   | `-SSE`                                                                | `DynDOLOD Output`                       | Keep output isolated and enable `DynDOLOD.esm` / `DynDOLOD.esp` after generation.                              |
+| `Wrye Bash`            | `Wrye Bash.exe`                     | none                                                                  | dedicated patch/output mod if used      | Register only if the list still needs a `Bashed Patch` or leveled-list review pass.                            |
+| `Synthesis`            | `Synthesis.exe`                     | none                                                                  | dedicated patch/output mod if used      | Give it its own output mod once the final patcher set is known.                                                |
+| `BodySlide`            | `BodySlide x64.exe`                 | none                                                                  | dedicated body/output mod               | Run through MO2 so mesh output respects the active profile and selected body stack.                            |
+| `Pandora`              | `Pandora Behaviour Engine Plus.exe` | none                                                                  | dedicated behavior/output mod if needed | Run through MO2 so behavior generation sees the real virtualized animation stack.                              |
 
 ### MO2 Operating Rules
 
@@ -110,19 +111,19 @@ iTintTextureResolution=2048
 
 Each second-level section of the plan now lives in its own numbered file. The companion file [mods-checklist.md](mods-checklist.md) lists every referenced mod with its Nexus URL as a download checklist. The file [separators.md](separators.md) is the canonical ordered reference for `Mod Organizer 2` separators derived from this structure.
 
-- [Foundations and Compatibility](modlist-01.md)
-- [Modern Graphics](modlist-02.md)
-- [Animations and Movement](modlist-03.md)
-- [Third-Person Gameplay](modlist-04.md)
-- [Expanded Systems](modlist-05.md)
-- [Modernized UI](modlist-06.md)
-- [Immersive Scale and World Feel](modlist-07.md)
-- [World Content](modlist-08.md)
-- [NPCs and Creatures](modlist-09.md)
-- [Audio and Feedback](modlist-10.md)
-- [Survival, Difficulty, and Balance](modlist-11.md)
-- [Legacy of the Dragonborn](modlist-13.md)
-- [Modlist Curation Rules and Testing Plan](modlist-14.md)
-- [Performance and Technical Workflow](modlist-15.md)
-- [Adult Content](modlist-16.md)
-- [Main Character Voicing](modlist-17.md)
+- `01` → [Foundations and Compatibility](modlist-01.md)
+- `02` → [Modern Graphics](modlist-02.md)
+- `03` → [Animations and Movement](modlist-03.md)
+- `04` → [Third-Person Gameplay](modlist-04.md)
+- `05` → [Expanded Systems](modlist-05.md)
+- `06` → [Modernized UI](modlist-06.md)
+- `07` → [Immersive Scale and World Feel](modlist-07.md)
+- `08` → [World Content](modlist-08.md)
+- `09` → [NPCs and Creatures](modlist-09.md)
+- `10` → [Audio and Feedback](modlist-10.md)
+- `11` → [Survival, Difficulty, and Balance](modlist-11.md)
+- `12` → [Legacy of the Dragonborn](modlist-13.md)
+- `13` → [Modlist Curation Rules and Testing Plan](modlist-14.md)
+- `14` → [Performance and Technical Workflow](modlist-15.md)
+- `15` → [Adult Content](modlist-16.md)
+- `16` → [Main Character Voicing](modlist-17.md)

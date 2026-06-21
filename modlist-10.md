@@ -1,6 +1,8 @@
 # Audio and Feedback
 
-## Music Overhaul Strategy
+**MO2 Separator:** `10 Audio` → `10a Music`, `10b SFX & Ambience`
+
+## Music Overhaul Strategy → `10a Music`
 
 ### Core Idea
 
@@ -44,7 +46,7 @@
 - Exploration, town, dungeon, and combat music feel intentionally related rather than like separate playlists.
 - The final music layer improves identity without crowding out quieter exploration.
 
-## Broad Sound Overhaul Framework
+## Broad Sound Overhaul Framework → `10b SFX & Ambience`
 
 ### Core Idea
 
@@ -78,7 +80,7 @@
 - Section-10 ownership is clear: broad sound design here, ambient world texture in `modlist-07.md`.
 - Any additional specialty audio mods are layered on top of one clear framework rather than several competing baselines.
 
-## Combat, Magic, And Shout Feedback
+## Combat, Magic, And Shout Feedback → `10b SFX & Ambience`
 
 ### Core Idea
 
@@ -111,7 +113,7 @@
 - Audio feedback feels stronger without becoming cartoonish or fatiguing.
 - Specialty combat-sfx mods remain clearly subordinate to the chosen broad framework.
 
-## Weapons, Bows, Creatures, And Transformation Foley
+## Weapons, Bows, Creatures, And Transformation Foley → `10b SFX & Ambience`
 
 ### Core Idea
 
@@ -150,7 +152,7 @@
 - Bow, creature, and transformation sounds remain coherent with the broader audio framework.
 - No single specialty mod hijacks the overall sonic identity.
 
-## Taverns, Bards, And Social Audio Texture
+## Taverns, Bards, And Social Audio Texture → `10b SFX & Ambience`
 
 ### Core Idea
 
@@ -181,7 +183,7 @@
 - Social-audio upgrades remain a supporting layer rather than a competing soundtrack system.
 - The subsection stays clearly scoped away from broader town ambience ownership.
 
-## UI Sound Redesign And Feedback Tones
+## UI Sound Redesign And Feedback Tones → `10b SFX & Ambience`
 
 ### Core Idea
 
@@ -222,7 +224,7 @@
 - Section-10 ownership remains limited to sound and feedback tone, not UI structure.
 - The final UI-sound layer remains subtle enough to coexist with the chosen HUD and music direction.
 
-## Voice, Creature Calls, And Entity Reworks
+## Voice, Creature Calls, And Entity Reworks → `10b SFX & Ambience`
 
 ### Core Idea
 

@@ -1,6 +1,8 @@
 # Modernized UI
 
-## UI Framework Prerequisites
+**MO2 Separator:** `06 UI` → `06a Framework & HUD`, `06b Inventory & Items`, `06c Map, Dialogue, Menus`
+
+## UI Framework Prerequisites → `06a Framework & HUD`
 
 ### Core Idea
 
@@ -37,7 +39,7 @@
 - The visual baseline is narrowed to `Oathvein UI` with a clear rationale for why it fits `Elder Wilds` over `Norden UI`.
 - `COCKS` is locked as the crafting-menu category infrastructure baseline alongside the other framework picks.
 
-## HUD Overhaul
+## HUD Overhaul → `06a Framework & HUD`
 
 ### Core Idea
 
@@ -77,7 +79,7 @@
 - `Stats Tracker Menu` (if accepted) is documented as a stats-overlay companion, not a HUD-framework replacement.
 - Compass, markers, and minimal-HUD questions remain clearly deferred.
 
-## Inventory And Item Card Improvements
+## Inventory And Item Card Improvements → `06b Inventory & Items`
 
 ### Core Idea
 
@@ -126,7 +128,7 @@
 - The difference between broader item information, inventory-list information density, cleaner item cards, and stronger inventory organization is explicit.
 - The subsection still leaves room for later crafting, controller, and accessibility decisions.
 
-## Map Improvements
+## Map Improvements → `06c Map, Dialogue, Menus`
 
 ### Core Idea
 
@@ -163,7 +165,7 @@
 - One clearly preferred FWMF-based map direction exists, with at least two meaningful comparison routes documented.
 - The distinction between world-map framework, local-map improvements, and map-art selection stays explicit.
 
-## Magic And Journal Improvements
+## Magic And Journal Improvements → `06c Map, Dialogue, Menus`
 
 ### Core Idea
 
@@ -194,7 +196,7 @@
 - The difference between reading comfort and MCM support is explicit.
 - Any magic-menu follow-up remains intentionally scoped rather than guessed.
 
-## Dialogue UI Improvements
+## Dialogue UI Improvements → `06c Map, Dialogue, Menus`
 
 ### Core Idea
 
@@ -227,7 +229,7 @@
 - The distinction between dialogue-option control fixes, message-box fixes, and presentation-layer redesign is explicit.
 - Subtitle and silent-voice safety remains explicitly outside this subsection.
 
-## Controller-Friendly UI Support
+## Controller-Friendly UI Support → `06a Framework & HUD`
 
 ### Core Idea
 
@@ -259,7 +261,7 @@
 - The distinction between light controller cleanup, broader remapping, and radial quick-access support is explicit.
 - Controller support improves the existing UI layers instead of replacing their ownership boundaries.
 
-## UI Scaling For Ultrawide And High Resolution
+## UI Scaling For Ultrawide And High Resolution → `06a Framework & HUD`
 
 ### Core Idea
 
@@ -291,7 +293,7 @@
 - The distinction between `4K` readability work and ultrawide compatibility support is explicit.
 - UI scaling guidance improves readability without collapsing into a generic display-settings subsection.
 
-## Compass, Markers, And Minimal HUD Options
+## Compass, Markers, And Minimal HUD Options → `06a Framework & HUD`
 
 ### Core Idea
 
@@ -327,7 +329,7 @@
 - The distinction between compass behavior, FWMF-friendly marker support, minimap addition, and minimal-HUD philosophy is explicit.
 - Existing ownership boundaries with `SkyHUD`, `FWMF`, and gameplay-side `TrueHUD` remain intact.
 
-## Crafting Menu Improvements
+## Crafting Menu Improvements → `06b Inventory & Items`
 
 ### Core Idea
 
@@ -359,7 +361,7 @@
 - The difference between a more extensible category system and a vanilla-style category fallback is explicit.
 - The ownership boundary with gameplay-side crafting decisions in `modlist-05.md` remains clear.
 
-## Loading Screens
+## Loading Screens → `06c Map, Dialogue, Menus`
 
 ### Core Idea
 
@@ -390,7 +392,7 @@
 - The choice of 100% frequency and 16:9 aspect ratio is documented.
 - The decision between text and text-free variant is left to install-time preference.
 
-## Accessibility And Readability Improvements
+## Accessibility And Readability Improvements → `06a Framework & HUD`
 
 ### Core Idea
 
@@ -423,7 +425,7 @@
 - The distinction between general `4K` readability and MCM readability is explicit.
 - Earlier ownership boundaries for dialogue, map, crafting, controller support, and subtitle bugfixes remain preserved.
 
-## Optional HUD Additions
+## Optional HUD Additions ← → `06a Framework & HUD`
 
 ### Core Idea
 

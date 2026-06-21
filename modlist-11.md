@@ -1,6 +1,8 @@
 # Survival, Difficulty, and Balance
 
-## Difficulty Framework
+**MO2 Separator:** `11 Survival & Combat` → `11a Difficulty & Lethality`, `11b Enemy AI`, `11c Resources & Injuries`
+
+## Difficulty Framework → `11a Difficulty & Lethality`
 
 ### Core Idea
 
@@ -32,7 +34,7 @@
 - Dungeon choice feels more deliberate, but wandering still feels like Skyrim rather than a hard-locked progression ladder.
 - Difficulty comes more from readable world structure than from enemies becoming damage sponges.
 
-## Combat Lethality And Pacing
+## Combat Lethality And Pacing → `11a Difficulty & Lethality`
 
 ### Core Idea
 
@@ -64,7 +66,7 @@
 - The chosen pacing layer complements the section-04 combat framework instead of replacing it by stealth.
 - Basic encounter tuning remains understandable and adjustable after the rest of the gameplay stack is installed.
 
-## Enemy AI Improvements
+## Enemy AI Improvements → `11b Enemy AI`
 
 ### Core Idea
 
@@ -97,7 +99,7 @@
 - Broad enemy-overhaul adoption only happens if lighter structure-and-pacing changes clearly fail.
 - If `SRCEO` is used, the result still feels like `Elder Wilds` rather than a separate combat rebalance project.
 
-## Injury, Stamina, And Resource Pressure
+## Injury, Stamina, And Resource Pressure → `11c Resources & Injuries`
 
 ### Core Idea
 
@@ -129,7 +131,7 @@
 - Inns, meals, sleep, and breaks matter more after hard encounters than they do in vanilla.
 - The chosen attrition layer adds tension and rhythm rather than constant annoyance.
 
-## Enemy Resistances And Knowledge Checks
+## Enemy Resistances And Knowledge Checks → `11b Enemy AI`
 
 ### Core Idea
 
@@ -161,7 +163,7 @@
 - The player can learn or inspect enemy traits without needing outside notes.
 - The system adds tactical variety while remaining compatible with the rest of the chosen combat and progression stack.
 
-## Survival Systems Compatibility
+## Survival Systems Compatibility → `11c Resources & Injuries`
 
 ### Core Idea
 

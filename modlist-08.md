@@ -1,6 +1,8 @@
 # World Content
 
-## Landscape Overhauls
+**MO2 Separator:** `08 World Content` → `08a Overhauls`, `08b Quests`, `08c Homes & Bases`, `08d Underwater`
+
+## Landscape Overhauls → `08a Overhauls`
 
 ### Core Idea
 
@@ -33,7 +35,7 @@
 - The distinction between landscape content and landscape graphics treatment stays explicit.
 - The chosen direction preserves room for later settlement, dungeon, quest, and home decisions.
 
-## Cities, Towns, And Villages
+## Cities, Towns, And Villages → `08a Overhauls`
 
 ### Core Idea
 
@@ -80,7 +82,7 @@
 - The distinction between broader settlement expansion, modular architectural identity, and focused single-place enhancement stays explicit.
 - Later inns, small settlements, dungeons, POIs, quests, and homes still have room to matter on their own.
 
-## Inns, Farms, And Small Settlements
+## Inns, Farms, And Small Settlements → `08a Overhauls`
 
 ### Core Idea
 
@@ -116,7 +118,7 @@
 - The distinction between roadside village identity, restored settlement presence, and inn-focused stopover improvement stays explicit.
 - Later dungeons, POIs, quests, and homes remain distinct decisions rather than overflow from this subsection.
 
-## Dungeons And Ruins
+## Dungeons And Ruins → `08a Overhauls`
 
 ### Core Idea
 
@@ -153,7 +155,7 @@
 - The distinction between new delves, a major underground layer, and deeper treatment of existing ruins stays explicit.
 - Later POI, quest, and home decisions still have room to matter.
 
-## Points Of Interest And Roadside Content
+## Points Of Interest And Roadside Content → `08a Overhauls`
 
 ### Core Idea
 
@@ -210,7 +212,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - The distinction between practical shelters, guarded crossings, and lightweight discoverable ruins stays explicit.
 - The chosen direction improves ordinary travel and off-road curiosity without duplicating section-07 ownership.
 
-## Underwater Content
+## Underwater Content ← → `08d Underwater`
 
 ### Core Idea
 
@@ -242,7 +244,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - No underwater-cell conflicts between Depths of Skyrim, More Underwater Treasures, and the chosen water mod.
 - `SSE-Terrain-Tamriel-Extend.esm` is loaded during xLODGen terrain LOD generation and provides LOD coverage for the extended northern cells.
 
-## Side Activities: Fishing, Hunting, And Downtime
+## Side Activities: Fishing, Hunting, And Downtime → `08b Quests`
 
 ### Core Idea
 
@@ -284,7 +286,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - Hunting involves a believable process (dressing, skinning, butchering) rather than a single loot click.
 - Both activities integrate cleanly with the survival systems chosen in `modlist-05.md` and the camping layer noted in `modlist-07.md`.
 
-## Weapons, Armor, And Equipment Additions
+## Weapons, Armor, And Equipment Additions → `08b Quests`
 
 ### Core Idea
 
@@ -397,7 +399,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - The distinction between emergent local questing, smaller handcrafted questing, and large expansion-style content stays explicit.
 - Specialty or caution branches are documented without overtaking the main direction.
 
-## Player Homes And Base-Building Considerations
+## Player Homes And Base-Building Considerations → `08c Homes & Bases`
 
 ### Core Idea
 

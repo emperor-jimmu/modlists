@@ -1,6 +1,8 @@
 # NPCs and Creatures
 
-## NPC Appearance Overhauls
+**MO2 Separator:** `09 NPCs` → `09a Appearance`, `09b Enemies & Creatures`, `09c Population`, `09d Followers`
+
+## NPC Appearance Overhauls → `09a Appearance`
 
 ### Core Idea
 
@@ -41,7 +43,7 @@ Keep `High Poly True to Vanilla NPC Overhaul` as the vanilla-faithful fallback i
 - Any tracked alternative documented with a verified canonical Nexus page and a clear reason it differs from the baseline.
 - The chosen direction improves NPC presence without a confusing aesthetic split from the rest of the list.
 
-## Enemy Variety
+## Enemy Variety → `09b Enemies & Creatures`
 
 ### Core Idea
 
@@ -75,7 +77,7 @@ Keep `Haugbui` as the undead comparison if ancient Nordic ruins need as much att
 - Any tracked alternative documented with a verified canonical Nexus page and a clear reason it differs from the baseline.
 - The chosen direction improves encounter freshness without duplicating section-07 ecology or pre-empting later creature subsections.
 
-## Creature Visual Overhauls
+## Creature Visual Overhauls → `09b Enemies & Creatures`
 
 ### Core Idea
 
@@ -114,7 +116,7 @@ Keep `Bears of the North` as the species-specific branch, `Iconic's Dragon Retex
 - Any tracked alternative documented with a verified canonical Nexus page and a clear reason it differs from the baseline.
 - The chosen direction improves creature presentation (including ambient insects) without duplicating section-02 visual baseline or section-07 ecology ownership.
 
-## Creature Behavior Improvements
+## Creature Behavior Improvements → `09b Enemies & Creatures`
 
 ### Core Idea
 
@@ -146,7 +148,7 @@ Keep `Dragon War` as the heavier branch if the problem is the structure and temp
 - Any context-only or cautionary mod documented with a clear reason it is not the baseline.
 - The chosen direction improves encounters without duplicating section-07 ecology or collapsing back into the enemy-variety decision.
 
-## Civilian And Traveler Population Additions
+## Civilian And Traveler Population Additions → `09c Population`
 
 ### Core Idea
 
@@ -179,7 +181,7 @@ Keep `Travellers of Skyrim` as the road-travel comparison if the real weakness i
 - Any broader world-alive or out-of-scope alternative documented with a clear reason it is not the baseline.
 - The chosen direction improves civilian presence without duplicating section-07 ownership or overwhelming the rest of section 09.
 
-## NPC Dialogue Expansions
+## NPC Dialogue Expansions → `09a Appearance`
 
 ### Core Idea
 
@@ -228,7 +230,7 @@ This subsection owns targeted dialogue additions for existing NPCs — expanding
 - No record conflicts with the chosen NPC appearance, AI, or population stack.
 - FDE followers deliver quest-aware lines and location reactions during ordinary gameplay without feeling like they are overriding the vanilla character identity. Test with 2-3 FDE followers active across different questlines.
 
-## Wildlife Density And Rarity Balance
+## Wildlife Density And Rarity Balance → `09b Enemies & Creatures`
 
 ### Core Idea
 
@@ -260,7 +262,7 @@ Keep `No Predators on roads` as the comparison if the frustration is specificall
 - Any broader wildlife mod documented with a clear reason it is not the clean baseline.
 - The chosen direction improves scale and rarity without duplicating section-07 ecology or making the landscape feel dead.
 
-## Custom Followers
+## Custom Followers ← → `09d Followers`
 
 ### Core Idea
 

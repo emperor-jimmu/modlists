@@ -1,6 +1,8 @@
 # Immersive Scale and World Feel
 
-## Timescale And Calendar Adjustments
+**MO2 Separator:** `07 World Feel` → `07a Timescale & Travel`, `07b Soundscapes`, `07c Nights & Wildlife`, `07d Cities & Landmarks`
+
+## Timescale And Calendar Adjustments → `07a Timescale & Travel`
 
 ### Core Idea
 
@@ -37,7 +39,7 @@
 - The chosen direction strengthens world scale and day rhythm without turning ordinary play into constant bookkeeping.
 - If `Seasons of Skyrim SKSE` is adopted, the LOD-rebuild workflow per season is documented before it is locked in.
 
-## Travel Pacing And Carriage Fast Travel Rules
+## Travel Pacing And Carriage Fast Travel Rules → `07a Timescale & Travel`
 
 ### Core Idea
 
@@ -75,7 +77,7 @@
 - The distinction between public-travel improvement, stop-network expansion, and map-fast-travel cost is explicit.
 - Movement across Skyrim feels more deliberate without collapsing into survival upkeep or map-UI philosophy.
 
-## Encounter Spacing And Wilderness Feel
+## Encounter Spacing And Wilderness Feel → `07c Nights & Wildlife`
 
 ### Core Idea
 
@@ -107,7 +109,7 @@
 - The distinction between ambient encounter texture, reactive world events, and visible patrol presence is explicit.
 - Travel feels more inhabited without overwhelming the wilderness with constant activity.
 
-## Soundscape And Ambient Audio
+## Soundscape And Ambient Audio → `07b Soundscapes`
 
 ### Core Idea
 
@@ -139,7 +141,7 @@
 - The distinction between worldspace ambience and interior acoustic cleanup is explicit.
 - Exploration atmosphere improves without overwhelming ordinary travel with constant audio clutter.
 
-## City Size, Outskirts, And Population Feel
+## City Size, Outskirts, And Population Feel → `07d Cities & Landmarks`
 
 ### Core Idea
 
@@ -171,7 +173,7 @@
 - The distinction between light density, stronger city-core expansion, and full settlement transformation is explicit.
 - City arrival, outskirts feel, and settlement presence improve without pretending section 07 owns every city and worldspace decision in the modlist.
 
-## Roadside Clutter, Ruins, And Landmark Density
+## Roadside Clutter, Ruins, And Landmark Density → `07d Cities & Landmarks`
 
 ### Core Idea
 
@@ -204,7 +206,7 @@
 - The distinction between landmark flavor, roadside variety, and road-guidance support is explicit.
 - Roads and in-between spaces feel richer without overwhelming travel routes with clutter.
 
-## Wildlife And Creature Ecology
+## Wildlife And Creature Ecology → `07c Nights & Wildlife`
 
 ### Core Idea
 
@@ -239,7 +241,7 @@
 - The distinction between wildlife variety, ecology tuning, and heavier creature-pressure philosophy is explicit.
 - The wilderness feels more biologically alive without turning every journey into constant creature interruption.
 
-## Road Network And Surface Overhaul
+## Road Network And Surface Overhaul → `07d Cities & Landmarks`
 
 ### Core Idea
 
@@ -273,7 +275,7 @@
 - Road surfaces feel cohesive with the surrounding terrain through texture blending rather than authored geometry.
 - The decision to reject `Northern Roads` is documented alongside the rationale (patch burden at current complexity level), so future contributors do not reopen the question without understanding why it was set aside.
 
-## Environmental Atmosphere: Wind And Dynamic Effects
+## Environmental Atmosphere: Wind And Dynamic Effects → `07b Soundscapes`
 
 ### Core Idea
 
@@ -308,7 +310,7 @@
 - Trees, grass, and cloth respond to weather conditions with visible dynamic movement rather than canned animation loops.
 - The mods integrate cleanly with the tree mod, grass stack, and ENB/community shader without visual artifacts or performance degradation.
 
-## Night Darkness And Visibility Balance
+## Night Darkness And Visibility Balance → `07c Nights & Wildlife`
 
 ### Core Idea
 
@@ -344,7 +346,7 @@
 - The distinction between darkness-source, world-lighting support, and carried visibility is explicit.
 - Nighttime travel becomes more atmospheric without making navigation unreasonably frustrating.
 
-## Activation Text And Interaction Immersion
+## Activation Text And Interaction Immersion ← → `07a Timescale & Travel`
 
 ### Core Idea
 

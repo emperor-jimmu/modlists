@@ -1,5 +1,7 @@
 # Foundations and Compatibility
 
+**MO2 Separator:** `01 Foundations` → `01a SKSE & Scripts`, `01b Core Libraries`, `01c Mesh & Texture Fixes`, `01d Targeted Bugfixes`
+
 ## Goal
 
 Build a stable technical base for `Elder Wilds` before choosing large visual or gameplay overhauls.
@@ -76,7 +78,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - Treat this section as the non-negotiable base layer for the rest of the list
 - `SSE Display Tweaks` is part of that mandatory base layer, not an optional later tuning mod
 
-## Patching Technique And Strategy
+## Patching Technique And Strategy ← → `01b Core Libraries`
 
 ### Core Idea
 
@@ -139,7 +141,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - Patches are rebuilt after every source-mod update that touches a record the patch owns, and stale patches are caught by `SSEEdit` review rather than by in-game symptoms.
 - The list survives a deliberate test in which one upstream source mod is disabled: its `ModGroup` and dependent patches should cleanly stop being useful instead of producing new conflicts.
 
-## ESP To ESL Conversion
+## ESP To ESL Conversion ← → `01b Core Libraries`
 
 ### Core Idea
 
@@ -221,7 +223,7 @@ For a plugin that passes all the checks above but interacts with other mods:
 - Overhauls that add new dialogue branches or follower frameworks with quest aliases.
 - Any plugin that `LOOT` or `SSEEdit` explicitly flags as not ESL-safe.
 
-## Targeted Bugfix Mods
+## Targeted Bugfix Mods ← → `01d Targeted Bugfixes`
 
 ### Core Idea
 
