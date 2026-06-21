@@ -5,6 +5,7 @@
 -#5A7C9E 01a SKSE & Scripts-
 -#5A7C9E 01b Core Libraries-
 -#5A7C9E 01c Mesh & Texture Fixes-
+-#7C7C7C 01d Targeted Bugfixes-
 
 -#5B8C5B 02 Graphics-
 -#5B8C5B 02a Community Shaders-
@@ -64,12 +65,11 @@
 -#9E4B4B 11b Enemy AI-
 -#9E4B4B 11c Resources & Injuries-
 
--#7C7C7C 12 Bugfixes-
--#B8943B 13 Legacy of the Dragonborn-
--#8C8C8C 14 Testing & Curation-
--#4B6B7C 15 Performance-
--#8C4B5C 16 Adult Content-
--#8C7C9E 17 Voicing-
+-#B8943B 12 Legacy of the Dragonborn-
+-#8C8C8C 13 Testing & Curation-
+-#4B6B7C 14 Performance-
+-#8C4B5C 15 Adult Content-
+-#8C7C9E 16 Voicing-
 
 -#5C5C5C Patches-
 -#3C3C3C Output-

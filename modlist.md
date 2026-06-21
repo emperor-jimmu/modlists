@@ -93,7 +93,7 @@ iTintTextureResolution=2048
 - Launch the game through `SKSE`, not through Steam or the stock launcher, after the vanilla initialization step is complete.
 - Run `LOOT` before gameplay tests and before any major cleaning or conflict-review pass.
 - Use `xEditQuickAutoClean` only for plugins LOOT explicitly marks as needing cleaning.
-- Use `xEdit` after each major category to review conflicts instead of waiting until the whole list is assembled. Detailed patching technique and strategy lives in the `Patching Technique And Strategy` subsection of `modlist-15.md`.
+- Use `xEdit` after each major category to review conflicts instead of waiting until the whole list is assembled. The `Patching Technique And Strategy` section in [`modlist-01.md`](modlist-01.md) defines the workflow to follow from the first mod.
 - Treat the `Overwrite` folder as a failure state; if files appear there, either move them into the proper output mod or fix the executable configuration that produced them.
 - Rebuild generated outputs after major changes to bodies, animations, grass, LOD, or other systems that produce artifacts.
 - Document manual fixes, custom arguments, and tool-specific decisions directly in this repository so the plan stays reproducible.
@@ -120,7 +120,6 @@ Each second-level section of the plan now lives in its own numbered file. The co
 - [NPCs and Creatures](modlist-09.md)
 - [Audio and Feedback](modlist-10.md)
 - [Survival, Difficulty, and Balance](modlist-11.md)
-- [Targeted Bugfix Mods](modlist-12.md)
 - [Legacy of the Dragonborn](modlist-13.md)
 - [Modlist Curation Rules and Testing Plan](modlist-14.md)
 - [Performance and Technical Workflow](modlist-15.md)

@@ -375,7 +375,7 @@
 - Heavy scarcity route: `MorrowLoot Ultimate - Skyrim Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3058>
 - Regional currency route: `C.O.I.N. - Coins of Interesting Nature` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51439> — adds regional coinage (hold-specific coin types and weights) that gives immersive economic texture: coins from different holds look distinct, encouraging the player to notice where money comes from. Lightweight, no scripts.
 - Currency exchange companion: `C.O.I.N. - Treasury Exchange` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131682> — adds currency exchange mechanics at merchants, letting the player convert regional coin types. Adds gameplay purpose to the C.O.I.N. system beyond visual variety.
-- Ownership note: keep `Barter Limit Fix` in `modlist-12.md` as a targeted fix if merchant-gold caps become relevant; it is not the economy-framework answer by itself.
+- Ownership note: keep `Barter Limit Fix` in `modlist-01.md` (Targeted Bugfix Mods) as a targeted fix if merchant-gold caps become relevant; it is not the economy-framework answer by itself.
 - Encounter zone overhaul: `Roleplaying in Skyrim - Encounter Zones` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149899> — comprehensive overhaul of all encounter zones reworked for realism and variety based on NPC type, location, and quest significance, with a randomizer for unpredictability. No hard requirements. ESL flagged. 272 endorsements, 15.4k downloads, by DrPharmDawg. (Optional)
 - Dynamic economy: `Roleplaying in Skyrim - Evolving Economy` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149830> — dynamic pricing based on area resources, season, distance from cities, Civil War progress, reputation, and land hostility. Requires SKSE, `Papyrus Ini Manipulator`, and `powerofthree's Papyrus Extender`. Soft-requires `SkyUI` for MCM. 1,400 endorsements, 481.3k downloads, by DrPharmDawg. (Optional)
 - Rarity-driven loot: `Roleplaying in Skyrim - Loot Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157259> — rarity-driven, contextually-aware loot overhaul with combat equipment breakage and deleveled artifacts. Requires SKSE, `Papyrus Ini Manipulator`, and `SkyUI`. Soft-requires `powerofthree's Papyrus Extender` for breakage system. 189 endorsements, 6.1k downloads, by DrPharmDawg. (Optional)
@@ -451,7 +451,7 @@
 - Guard-pressure route: `Suspicious City Guards` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/38762>
 - Quest-pacing companion route: `The Choice is Yours` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3850>
 - Greeting-discipline companion route: `To Your Face SE - AE - VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/24720>
-- Ownership note: keep targeted fixes such as `Simple Offence Suppression` in `modlist-12.md`; they are support fixes, not the social-system answer.
+- Ownership note: keep targeted fixes such as `Simple Offence Suppression` in `modlist-01.md` (Targeted Bugfix Mods); they are support fixes, not the social-system answer.
 
 ### Recommendation
 
@@ -517,18 +517,18 @@
 
 - This subsection owns the modern-mechanics pillar's stealth side: how Skyrim's famously janky detection system should be recalibrated, and whether the player should gain better stealth tools without those tools replacing the existing perk, magic, and combat layers.
 - It is intentionally kept separate from the crime and reputation subsection above. That subsection is about how the world reacts after the fact; this one is about how the player interacts with detection in the moment.
-- It also stays separate from NPC AI overhauls, which belong in `modlist-09.md` if a separate AI overhaul is later chosen, and from the targeted bugfix bucket in `modlist-12.md`.
+- It also stays separate from NPC AI overhauls, which belong in `modlist-09.md` if a separate AI overhaul is later chosen, and from the targeted bugfix bucket in `modlist-01.md` (Targeted Bugfix Mods).
 
 ### Options
 
 - Detection-recalibration route: `Realistic AI Detection (RAID)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2345>
-- Discipline-first route: rely on the perk overhaul chosen earlier in section 05 and the targeted bugfix mods in `modlist-12.md` to handle detection edge cases.
+- Discipline-first route: rely on the perk overhaul chosen earlier in section 05 and the targeted bugfix mods in `modlist-01.md` (Targeted Bugfix Mods) to handle detection edge cases.
 - Deferred high-commitment branch: do not add a full stealth-toolkit overhaul until the rest of section 05 has settled, because stacking stealth systems creates more playstyle incoherence than improvement.
 
 ### Recommendation
 
 - Use `Realistic AI Detection (RAID)` as the detection-recalibration baseline. It is script-free, has 23.7K endorsements, and recalibrates the detection formula (line of sight, lighting, distance, sneaking skill, race) without rewriting the AI itself. It is the cleanest way to make Skyrim's stealth feel modern without dragging in a stealth overhaul that would fight the perk and combat layers.
-- Keep the discipline-first route alive if the chosen perk overhaul plus the targeted bugfix mods from `modlist-12.md` are judged to handle detection adequately. The cost of RAID is low but the discipline-first route is valid when the project wants a lighter systems footprint.
+- Keep the discipline-first route alive if the chosen perk overhaul plus the targeted bugfix mods from `modlist-01.md` (Targeted Bugfix Mods) are judged to handle detection adequately. The cost of RAID is low but the discipline-first route is valid when the project wants a lighter systems footprint.
 - Keep the deferred high-commitment branch alive only if real playtesting proves detection still feels too forgiving or too punishing after the perk and bugfix layers are in place.
 - Keep this subsection separate from the crime and reputation subsection above. Detection is a moment-to-moment mechanical layer; reputation and guard pressure are social and world-reaction layers.
 
