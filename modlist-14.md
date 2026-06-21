@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `13 Testing & Curation`
 
-## Modlist Curation Rules
+## Modlist Curation → `13` Rules
 
 ### Core Idea
 
@@ -45,7 +45,7 @@ No two mods in the final load order should attempt to overhaul the same gameplay
 - Animation quality never drops below the established bar.
 - Third-person usability is verified before any gameplay, animation, camera, or UI mod is locked.
 
-## Testing Plan
+## Testing Plan → `13`
 
 ### Core Idea
 
@@ -55,7 +55,7 @@ This testing plan is the verification layer for `Elder Wilds`. Each test stage t
 
 Before any gameplay testing begins, verify the following in order:
 
-- Skyrim launches from `Mod Organizer 2` without a crash or infinite load screen.
+- Skyrim launches from `Mod Organizer 2` without a crash or infinite load screen. → `13`
 - The main menu displays correctly with all UI mods active.
 - A new game reaches the chosen alternate-start character-generation flow without freezing.
 - The character-generation menu (races, presets, body, sliders) works with all body and appearance mods loaded.

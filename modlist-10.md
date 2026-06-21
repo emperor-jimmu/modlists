@@ -7,42 +7,42 @@
 ### Core Idea
 
 - This subsection owns the soundtrack direction: how much the list should expand or replace Skyrim's music, how close it should stay to the Jeremy Soule baseline, and whether the music layer should mainly support exploration tone or aggressively redefine it.
-- It should stay separate from ambient-world soundscape ownership in `modlist-07.md`.
+- It should stay separate from ambient-world soundscape ownership in `modlist-07.md`. → `10a`
 
 ### Options
 
-- Dark melancholy within vanilla boundaries: `Chapter II - Jeremy Soule Inspired Music (by Dreyma Music)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37792>
-- Dark mythic replacement route: `Yggdrasil Music and SoundFX Overhaul SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21578> (last updated April 2021; audio content, functionally stable but unmaintained)
-- Dark fantasy expansion route: `Nyghtfall - Dark Fantasy Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/39011>. ~7 hours of 98 original dark-fantasy tracks by `nyghttones`, with location-specific exploration, combat, dungeon, tavern, and town coverage. Pitched as darker and more melancholic than vanilla without straying from the Soule shape, which makes it a clean companion to `Chapter II` rather than a competing replacement.
-- Norse fantasy expansion route: `Nordenhamr - Viking Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/58080>. Norse-themed fantasy music that is widely used alongside `Yggdrasil` in community music stacks (and is the third leg of the long-running `Nyghtfall` + `Nordenhamr` + `Yggdrasil` combination seen in `r/skyrimmods` dark-fantasy mod lists).
-- Combat-restraint support route: `Silent Combat Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5148> (last updated November 2019; simple mute, functionally stable)
+- Dark melancholy within vanilla boundaries: `Chapter II - Jeremy Soule Inspired Music (by Dreyma Music)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37792> → `10a`
+- Dark mythic replacement route: `Yggdrasil Music and SoundFX Overhaul SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21578> (last updated April 2021; audio content, functionally stable but unmaintained) → `10a`
+- Dark fantasy expansion route: `Nyghtfall - Dark Fantasy Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/39011>. ~7 hours of 98 original dark-fantasy tracks by `nyghttones`, with location-specific exploration, combat, dungeon, tavern, and town coverage. Pitched as darker and more melancholic than vanilla without straying from the Soule shape, which makes it a clean companion to `Chapter II` rather than a competing replacement. → `10a`
+- Norse fantasy expansion route: `Nordenhamr - Viking Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/58080>. Norse-themed fantasy music that is widely used alongside `Yggdrasil` in community music stacks (and is the third leg of the long-running `Nyghtfall` + `Nordenhamr` + `Yggdrasil` combination seen in `r/skyrimmods` dark-fantasy mod lists). → `10a`
+- Combat-restraint support route: `Silent Combat Music` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5148> (last updated November 2019; simple mute, functionally stable) → `10a`
 - Minimalist route: keep the vanilla soundtrack if the world tone is already carrying enough identity through visuals and pacing.
 
 ### Recommendation
 
-- Start with `Chapter II` as the main music baseline because it now has enough night and exploration coverage to push `Elder Wilds` toward darker, more emotional melancholy without breaking from the Jeremy Soule shape of Skyrim.
-- Treat `Chapter II` as the default answer when the list wants sadness, isolation, and wilderness weight rather than a total soundtrack identity rewrite.
-- Keep `Yggdrasil` as the high-commitment branch if the project later decides it wants Skyrim to feel stranger, harsher, and more ritualistic instead of merely moodier. Note that Yggdrasil has not been updated since April 2021; as a pure music replacer this does not affect functionality, but community support and compatibility patches may be frozen.
-- Treat `Nyghtfall - Dark Fantasy Music` and `Nordenhamr - Viking Music` as complementary expansion picks rather than subsection baselines. They are best evaluated after `Chapter II` (and possibly `Yggdrasil`) are in place: use `Nyghtfall` if the chosen baseline still feels too restrained or too Soule-shaped and the project wants more authored dark-fantasy exploration, combat, dungeon, and tavern cues; use `Nordenhamr` if the Norse / Viking identity of the world needs stronger musical reinforcement on top of whatever Norse flavor `Yggdrasil` already provides. They are also the long-standing community pair for dark-fantasy stacks together with `Yggdrasil`, so they are safe to layer on top of the existing music direction rather than replacing it.
-- Keep `Silent Combat Music` as a support option only if combat music itself starts feeling too loud, too repetitive, or too intrusive during testing.
+- Start with `Chapter II` as the main music baseline because it now has enough night and exploration coverage to push `Elder Wilds` toward darker, more emotional melancholy without breaking from the Jeremy Soule shape of Skyrim. → `10a`
+- Treat `Chapter II` as the default answer when the list wants sadness, isolation, and wilderness weight rather than a total soundtrack identity rewrite. → `10a`
+- Keep `Yggdrasil` as the high-commitment branch if the project later decides it wants Skyrim to feel stranger, harsher, and more ritualistic instead of merely moodier. Note that Yggdrasil has not been updated since April 2021; as a pure music replacer this does not affect functionality, but community support and compatibility patches may be frozen. → `10a`
+- Treat `Nyghtfall - Dark Fantasy Music` and `Nordenhamr - Viking Music` as complementary expansion picks rather than subsection baselines. They are best evaluated after `Chapter II` (and possibly `Yggdrasil`) are in place: use `Nyghtfall` if the chosen baseline still feels too restrained or too Soule-shaped and the project wants more authored dark-fantasy exploration, combat, dungeon, and tavern cues; use `Nordenhamr` if the Norse / Viking identity of the world needs stronger musical reinforcement on top of whatever Norse flavor `Yggdrasil` already provides. They are also the long-standing community pair for dark-fantasy stacks together with `Yggdrasil`, so they are safe to layer on top of the existing music direction rather than replacing it. → `10a`
+- Keep `Silent Combat Music` as a support option only if combat music itself starts feeling too loud, too repetitive, or too intrusive during testing. → `10a`
 - Treat soundtrack replacement as a tone decision, not as filler content to make the list feel busier.
 
 ### Installation
 
 - If the final music stack combines multiple music mods, use the Synthesis music-merge plugin during install so playlists are merged deliberately instead of depending on load order.
-- Keep the generated music-merge output in its own dedicated mod in `Mod Organizer 2`, and rebuild it whenever the active music stack changes.
+- Keep the generated music-merge output in its own dedicated mod in `Mod Organizer 2`, and rebuild it whenever the active music stack changes. → `10a`
 
 ### Risks & Compatibility
 
 - A soundtrack that is strong on its own can still feel wrong once paired with the chosen weather, world-feel, and combat tone.
-- `Yggdrasil` is not just darker; it is a major stylistic replacement, so even if playlist conflicts are solved by a merge patch the real question is whether its tone still fits the rest of the list.
-- `Nyghtfall` and `Nordenhamr` are expansion packs rather than full replacements, so they will not conflict with the chosen baseline on a fundamental tone axis, but stacking them on top of `Chapter II` and `Yggdrasil` can produce a music stack that is heavier than the project's exploration pacing actually supports. Treat the final music stack as a curated pair (baseline + at most one expansion) rather than a three- or four-mod pile, and use the Synthesis music-merge plugin described in the installation step to avoid playlist overlap.
+- `Yggdrasil` is not just darker; it is a major stylistic replacement, so even if playlist conflicts are solved by a merge patch the real question is whether its tone still fits the rest of the list. → `10a`
+- `Nyghtfall` and `Nordenhamr` are expansion packs rather than full replacements, so they will not conflict with the chosen baseline on a fundamental tone axis, but stacking them on top of `Chapter II` and `Yggdrasil` can produce a music stack that is heavier than the project's exploration pacing actually supports. Treat the final music stack as a curated pair (baseline + at most one expansion) rather than a three- or four-mod pile, and use the Synthesis music-merge plugin described in the installation step to avoid playlist overlap. → `10a`
 - Large music overhauls can dominate the emotional identity of the list more than intended.
 - Music replacers are easy to like in showcase moments and harder to judge across long ordinary play sessions.
 
 ### Acceptance Criteria
 
-- The chosen soundtrack direction fits the wilderness-first tone of `Elder Wilds` and supports a darker, emotional atmosphere without constantly calling attention to itself.
+- The chosen soundtrack direction fits the wilderness-first tone of `Elder Wilds` and supports a darker, emotional atmosphere without constantly calling attention to itself. → `10a`
 - Exploration, town, dungeon, and combat music feel intentionally related rather than like separate playlists.
 - The final music layer improves identity without crowding out quieter exploration.
 
@@ -51,21 +51,21 @@
 ### Core Idea
 
 - This subsection owns the broad gameplay-side sound framework: weapon impacts, Foley, magic routing, interior/exterior balance, and general responsiveness across the game.
-- It does not re-own the exploration ambience layer already scoped in `modlist-07.md`.
+- It does not re-own the exploration ambience layer already scoped in `modlist-07.md`. → `10b`
 
 ### Options
 
-- Compatibility-first route: `Audio Overhaul for Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12466>
-- Dramatic modular route: `Immersive Sounds - Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/523> (last updated August 2021; audio content, functionally stable but unmaintained)
-- Heavy overlap route: `Regional Sounds Expansion (SRD - Wilds Dungeons Towns Ambience Birds - Fixes)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77829>
-- Ambient wind specialty route: `Nordic Winds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112370> — replaces regional wind loops with unique varieties per exterior region using Sound Record Distributor. No record conflicts. Optional additive layer; stacks cleanly on any framework since SRD injects sounds dynamically.
+- Compatibility-first route: `Audio Overhaul for Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12466> → `10b`
+- Dramatic modular route: `Immersive Sounds - Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/523> (last updated August 2021; audio content, functionally stable but unmaintained) → `10b`
+- Heavy overlap route: `Regional Sounds Expansion (SRD - Wilds Dungeons Towns Ambience Birds - Fixes)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77829> → `10b`
+- Ambient wind specialty route: `Nordic Winds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112370> — replaces regional wind loops with unique varieties per exterior region using Sound Record Distributor. No record conflicts. Optional additive layer; stacks cleanly on any framework since SRD injects sounds dynamically. → `10b`
 - Layered route: one broad framework plus a small number of narrowly scoped specialty audio mods.
 
 ### Recommendation
 
-- Start with `Audio Overhaul for Skyrim SE` as the main broad audio-framework baseline.
-- Keep `Immersive Sounds - Compendium` as the main alternate if the list wants a more dramatic and more configurable total sound redesign and is willing to carry more patch-management overhead. Note that ISC has not been updated since August 2021, making `Audio Overhaul for Skyrim SE` (last updated May 2023) the more current broad-framework choice.
-- Treat `Regional Sounds Expansion` as an overlap-heavy alternate that should only be revisited if the repo later wants to rethink the section-07 ambient-world boundary.
+- Start with `Audio Overhaul for Skyrim SE` as the main broad audio-framework baseline. → `10b`
+- Keep `Immersive Sounds - Compendium` as the main alternate if the list wants a more dramatic and more configurable total sound redesign and is willing to carry more patch-management overhead. Note that ISC has not been updated since August 2021, making `Audio Overhaul for Skyrim SE` (last updated May 2023) the more current broad-framework choice. → `10b`
+- Treat `Regional Sounds Expansion` as an overlap-heavy alternate that should only be revisited if the repo later wants to rethink the section-07 ambient-world boundary. → `10b`
 - Add narrower specialty sound mods only after the broad framework is chosen, so the project does not stack several partial audio answers without a clear owner.
 
 ### Risks & Compatibility
@@ -77,7 +77,7 @@
 ### Acceptance Criteria
 
 - The chosen framework makes Skyrim sound more responsive and coherent than vanilla in normal play.
-- Section-10 ownership is clear: broad sound design here, ambient world texture in `modlist-07.md`.
+- Section-10 ownership is clear: broad sound design here, ambient world texture in `modlist-07.md`. → `10b`
 - Any additional specialty audio mods are layered on top of one clear framework rather than several competing baselines.
 
 ## Combat, Magic, And Shout Feedback → `10b SFX & Ambience`
@@ -90,21 +90,21 @@
 ### Options
 
 - Broad-framework-only route: let the main audio overhaul handle most of the combat and spell sound improvement.
-- Magic-specialization route: `Airgetlam -Modern Magic Sounds Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51541>
-- Shout-specialization route: `Airgetlam - Shouts SFX -` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90696>
-- Voice-and-sfx bundle route: `Phoenix Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/55221>
+- Magic-specialization route: `Airgetlam -Modern Magic Sounds Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51541> → `10b`
+- Shout-specialization route: `Airgetlam - Shouts SFX -` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90696> → `10b`
+- Voice-and-sfx bundle route: `Phoenix Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/55221> → `10b`
 
 ### Recommendation
 
 - Let the broad framework do most of the work first.
-- Keep `Airgetlam -Modern Magic Sounds Rework-` as the main targeted upgrade if spells still feel weak, flat, or overly vanilla after the baseline audio framework lands.
-- Keep `Airgetlam - Shouts SFX -` as the first focused shout upgrade if dragon-language power use still lacks weight.
-- Keep `Phoenix Compendium` as a more aggressive all-in-one comparison only if the project later wants stronger voice and special-effect stylization rather than a restrained upgrade path.
+- Keep `Airgetlam -Modern Magic Sounds Rework-` as the main targeted upgrade if spells still feel weak, flat, or overly vanilla after the baseline audio framework lands. → `10b`
+- Keep `Airgetlam - Shouts SFX -` as the first focused shout upgrade if dragon-language power use still lacks weight. → `10b`
+- Keep `Phoenix Compendium` as a more aggressive all-in-one comparison only if the project later wants stronger voice and special-effect stylization rather than a restrained upgrade path. → `10b`
 
 ### Risks & Compatibility
 
 - Stacking several combat-sfx mods can make the soundscape harsher and less readable rather than more satisfying.
-- Magic-audio changes can collide conceptually with later magic-overhaul choices from `modlist-05.md`.
+- Magic-audio changes can collide conceptually with later magic-overhaul choices from `modlist-05.md`. → `10b`
 - Voice-heavy reworks are easy to overdo and can shift the game's tone faster than intended.
 
 ### Acceptance Criteria
@@ -122,21 +122,21 @@
 
 ### Options
 
-- Bow specialization route: `A Bow's Whisper - Bow sound overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47437>
-- Footstep specialization route: `Cataphract - Armored Footsteps Rework -` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/102213>
-- Heavy-armor presence route: `Sanguine Symphony Realistic Heavy Armor Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162883>
-- Transformation specialization route: `Heart of the Beast - Werewolf Sound - Remastered - SSE PORT` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49263> (last updated April 2021; LE port, functionally stable)
-- Broad dramatic route: `Immersive Sounds - Compendium`
+- Bow specialization route: `A Bow's Whisper - Bow sound overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47437> → `10b`
+- Footstep specialization route: `Cataphract - Armored Footsteps Rework -` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/102213> → `10b`
+- Heavy-armor presence route: `Sanguine Symphony Realistic Heavy Armor Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162883> → `10b`
+- Transformation specialization route: `Heart of the Beast - Werewolf Sound - Remastered - SSE PORT` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49263> (last updated April 2021; LE port, functionally stable) → `10b`
+- Broad dramatic route: `Immersive Sounds - Compendium` → `10b`
 - Discipline-first route: keep creature and weapon Foley mostly inside the broad framework unless a specific category still feels weak.
 
 ### Recommendation
 
 - Stay disciplined by default.
-- Keep `A Bow's Whisper` as the first narrow specialty comparison because bows are common enough in Skyrim that weak archery audio is noticeable quickly.
-- Keep `Cataphract - Armored Footsteps Rework -` as the main footstep and movement-presence comparison if player movement still sounds too soft or too generic after the broad framework lands.
-- Keep `Sanguine Symphony Realistic Heavy Armor Sounds` as the heavier armor-presence branch if heavy gear still lacks weight once footsteps and combat audio are in place.
-- Keep `Heart of the Beast` as the werewolf/transformation branch if the list later invests enough in beast-form play to justify dedicated sound treatment.
-- Let `ISC` or the chosen broad framework carry most armor, movement, and weapon Foley unless testing shows a specific category is clearly lagging behind.
+- Keep `A Bow's Whisper` as the first narrow specialty comparison because bows are common enough in Skyrim that weak archery audio is noticeable quickly. → `10b`
+- Keep `Cataphract - Armored Footsteps Rework -` as the main footstep and movement-presence comparison if player movement still sounds too soft or too generic after the broad framework lands. → `10b`
+- Keep `Sanguine Symphony Realistic Heavy Armor Sounds` as the heavier armor-presence branch if heavy gear still lacks weight once footsteps and combat audio are in place. → `10b`
+- Keep `Heart of the Beast` as the werewolf/transformation branch if the list later invests enough in beast-form play to justify dedicated sound treatment. → `10b`
+- Let `ISC` or the chosen broad framework carry most armor, movement, and weapon Foley unless testing shows a specific category is clearly lagging behind. → `10b`
 
 ### Risks & Compatibility
 
@@ -161,13 +161,13 @@
 
 ### Options
 
-- Bard refresh route: `BA Bard Songs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47202> (last updated July 2021; audio replacer, functionally stable)
+- Bard refresh route: `BA Bard Songs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47202> (last updated July 2021; audio replacer, functionally stable) → `10b`
 - Vanilla-plus route: keep bard performance close to vanilla and rely on the main music direction to carry tone.
 - Broader fantasy route: adopt stronger tavern or performance replacements if the list later wants social spaces to feel much more authored.
 
 ### Recommendation
 
-- Keep `BA Bard Songs` as the main tavern and bard comparison.
+- Keep `BA Bard Songs` as the main tavern and bard comparison. → `10b`
 - Favor a vanilla-plus social-music direction unless real testing shows inns and bard spaces feel too repetitive after the main music strategy is chosen.
 - Keep tavern-performance upgrades clearly narrower than the world-music and ambient-sound decisions.
 
@@ -188,26 +188,26 @@
 ### Core Idea
 
 - This subsection covers menu clicks, activation feedback, and other interface-adjacent sounds that shape moment-to-moment feel.
-- It does not own the UI framework, HUD layout, or controller-navigation choices already tracked in `modlist-06.md`.
+- It does not own the UI framework, HUD layout, or controller-navigation choices already tracked in `modlist-06.md`. → `10b`
 
 ### Options
 
 - Conservative route: keep vanilla UI sounds unless they become a noticeable weak point.
-- Ambient menu refresh route: `New UI Sounds Dungeon Music Ambient Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86372>
-- Click-reduction route: `NO MORE CLICK SOUND (ui_activatefail.wav Remover) (E Click Sound Remover)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115367>
-- Level-feedback restraint route: `quieter levelup and skill increase sound` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90278>
-- Level-feedback replacement route: `Improved Level Up Sound FX - Sound Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/136290>
-- Soul-feedback route: `Dragon Soul Acquired Sound` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/161732>
-- Broad stylization route: use a larger sound bundle such as `Phoenix Compendium` if the list later wants more dramatic interface-adjacent feedback.
+- Ambient menu refresh route: `New UI Sounds Dungeon Music Ambient Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86372> → `10b`
+- Click-reduction route: `NO MORE CLICK SOUND (ui_activatefail.wav Remover) (E Click Sound Remover)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115367> → `10b`
+- Level-feedback restraint route: `quieter levelup and skill increase sound` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90278> → `10b`
+- Level-feedback replacement route: `Improved Level Up Sound FX - Sound Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/136290> → `10b`
+- Soul-feedback route: `Dragon Soul Acquired Sound` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/161732> → `10b`
+- Broad stylization route: use a larger sound bundle such as `Phoenix Compendium` if the list later wants more dramatic interface-adjacent feedback. → `10b`
 
 ### Recommendation
 
 - Stay conservative by default.
 - Let the main sound framework and music choices land before deciding whether UI-sound redesign is even needed.
-- Keep `NO MORE CLICK SOUND` as the first micro-tuning branch if the real issue is simply an irritating repeated interaction sound rather than a full UI-audio problem.
-- Compare `quieter levelup and skill increase sound` against `Improved Level Up Sound FX - Sound Replacer` if progression feedback needs tuning, because one solves loudness and the other changes character.
-- Keep `Dragon Soul Acquired Sound` and `New UI Sounds Dungeon Music Ambient Sounds` as narrower flavor branches only if specific moments still feel weak after the main framework lands.
-- Revisit `Phoenix Compendium` only if the project later decides it wants stronger overall sound stylization, including interface-adjacent feedback.
+- Keep `NO MORE CLICK SOUND` as the first micro-tuning branch if the real issue is simply an irritating repeated interaction sound rather than a full UI-audio problem. → `10b`
+- Compare `quieter levelup and skill increase sound` against `Improved Level Up Sound FX - Sound Replacer` if progression feedback needs tuning, because one solves loudness and the other changes character. → `10b`
+- Keep `Dragon Soul Acquired Sound` and `New UI Sounds Dungeon Music Ambient Sounds` as narrower flavor branches only if specific moments still feel weak after the main framework lands. → `10b`
+- Revisit `Phoenix Compendium` only if the project later decides it wants stronger overall sound stylization, including interface-adjacent feedback. → `10b`
 - Keep interface-sound changes subordinate to readability and tone rather than novelty.
 
 ### Risks & Compatibility
@@ -234,29 +234,29 @@
 ### Options
 
 - Restrained route: keep voices mostly vanilla and focus on music and sound-effects improvements.
-- NPC voice-diversity route: `Skyrim Revoiced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/163710> — introduces new voice types for NPCs using professional voice actors, reducing the number of NPCs sharing the same voice. Covers 81 NPCs with 14 voice types and 7500+ lines (v2.0). Requires FormList Manipulator. Skypatcher version available for maximum compatibility with NPC overhauls.
-- Giant and large-creature route: `Colossus -Giants SFX Voice Rework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52041> (last updated July 2021; audio replacer, functionally stable)
-- Ghost and undead-presence route: `Phantasmagoria -Ghosts SFX Voice Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50060> (last updated May 2021; audio replacer, functionally stable)
-- Daedric-entity stylization route: `Daedric Enigma - Dusk` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157380>
-- Broad stylization route: consider broader voice-side audio reworks such as `Phoenix Compendium` only if the project explicitly wants stronger character-audio stylization.
-- Bugfix-only route: keep subtitle and silent-dialogue support in `modlist-01.md` (Targeted Bugfix Mods).
+- NPC voice-diversity route: `Skyrim Revoiced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/163710> — introduces new voice types for NPCs using professional voice actors, reducing the number of NPCs sharing the same voice. Covers 81 NPCs with 14 voice types and 7500+ lines (v2.0). Requires FormList Manipulator. Skypatcher version available for maximum compatibility with NPC overhauls. → `10b`
+- Giant and large-creature route: `Colossus -Giants SFX Voice Rework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52041> (last updated July 2021; audio replacer, functionally stable) → `10b`
+- Ghost and undead-presence route: `Phantasmagoria -Ghosts SFX Voice Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50060> (last updated May 2021; audio replacer, functionally stable) → `10b`
+- Daedric-entity stylization route: `Daedric Enigma - Dusk` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157380> → `10b`
+- Broad stylization route: consider broader voice-side audio reworks such as `Phoenix Compendium` only if the project explicitly wants stronger character-audio stylization. → `10b`
+- Bugfix-only route: keep subtitle and silent-dialogue support in `modlist-01.md` (Targeted Bugfix Mods). → `10b`
 
 ### Recommendation
 
 - Stay restrained for ordinary NPC dialogue — the vanilla voice pool, though repetitive, is consistently produced and avoids the tonal mismatch risk of introducing new actors into existing roles.
-- Keep `Skyrim Revoiced` as the primary NPC voice-diversity comparison if the repetition of shared vanilla voice types becomes a noticeable immersion issue in testing. Its professional actor recordings and Skypatcher-based distribution (no direct NPC record edits) make it lower-risk than AI-voiced alternatives. Treat it as a targeted NPC voice upgrade, not a full voice overhaul — it only touches 81 NPCs with 14 new voice types.
-- Keep `Colossus` as the first creature-voice specialization comparison because giant encounters are rare enough to feel special but common enough to judge in normal play.
-- Keep `Phantasmagoria` as the main ghost-side comparison if undead ambience and ghost presence still feel weak after the broad framework lands.
-- Keep `Daedric Enigma - Dusk` as the higher-stylization branch only if the list later decides major Daedric encounters should sound much more authored than vanilla. The current `Dusk` version (September 2025) supersedes the original 2020–2021 release and is maintained.
-- Keep `Fuz Ro D-oh - Silent Voice` and similar bugfix ownership in `modlist-01.md` (Targeted Bugfix Mods).
-- Keep dialogue UI ownership in `modlist-06.md`.
-- Only revisit broader voice-side bundles such as `Phoenix Compendium` if later testing shows that the chosen soundtrack and sound framework make vanilla voice presentation feel uniquely out of place.
+- Keep `Skyrim Revoiced` as the primary NPC voice-diversity comparison if the repetition of shared vanilla voice types becomes a noticeable immersion issue in testing. Its professional actor recordings and Skypatcher-based distribution (no direct NPC record edits) make it lower-risk than AI-voiced alternatives. Treat it as a targeted NPC voice upgrade, not a full voice overhaul — it only touches 81 NPCs with 14 new voice types. → `10b`
+- Keep `Colossus` as the first creature-voice specialization comparison because giant encounters are rare enough to feel special but common enough to judge in normal play. → `10b`
+- Keep `Phantasmagoria` as the main ghost-side comparison if undead ambience and ghost presence still feel weak after the broad framework lands. → `10b`
+- Keep `Daedric Enigma - Dusk` as the higher-stylization branch only if the list later decides major Daedric encounters should sound much more authored than vanilla. The current `Dusk` version (September 2025) supersedes the original 2020–2021 release and is maintained. → `10b`
+- Keep `Fuz Ro D-oh - Silent Voice` and similar bugfix ownership in `modlist-01.md` (Targeted Bugfix Mods). → `10b`
+- Keep dialogue UI ownership in `modlist-06.md`. → `10b`
+- Only revisit broader voice-side bundles such as `Phoenix Compendium` if later testing shows that the chosen soundtrack and sound framework make vanilla voice presentation feel uniquely out of place. → `10b`
 
 ### Risks & Compatibility
 
 - Voice-side audio redesign can alter Skyrim's identity more abruptly than almost any other audio category.
-- `Skyrim Revoiced` requires `FormList Manipulator` and optionally `Skypatcher` — add these to the dependency tracking in `modlist-01.md` if locked.
-- NPC voice replacers can clash with custom followers or mod-added dialogue; confirm compatibility with any locked custom followers from `modlist-09.md`.
+- `Skyrim Revoiced` requires `FormList Manipulator` and optionally `Skypatcher` — add these to the dependency tracking in `modlist-01.md` if locked. → `10b`
+- NPC voice replacers can clash with custom followers or mod-added dialogue; confirm compatibility with any locked custom followers from `modlist-09.md`. → `10b`
 - Creature-call and entity-voice reworks can become theatrical very quickly if several stylized branches are stacked together.
 - It is easy to mix up missing subtitle or silent-voice support with a true need for voice redesign.
 - Audio bundles that touch voices, UI, combat, and ambience all at once can create messy ownership boundaries across sections.
@@ -265,7 +265,7 @@
 
 - Section boundaries remain clear between audio tone, UI structure, and bugfix support.
 - Any creature-call or entity-voice additions are intentional specialization branches rather than accidental bundle spillover.
-- `modlist-10.md` stays focused on audio identity and feedback quality instead of absorbing unrelated support systems.
+- `modlist-10.md` stays focused on audio identity and feedback quality instead of absorbing unrelated support systems. → `10b`
 
 ## Post-Install Smoke Test
 

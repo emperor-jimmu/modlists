@@ -2,12 +2,12 @@
 
 **MO2 Separator:** `14 Performance`
 
-## Performance Budgeting By System
+## Performance Budgeting → `14` By System
 
 ### Core Idea
 
-- This section does not replace the engine baseline from `modlist-01.md` or the graphics decisions from `modlist-02.md`.
-- Its job is to decide how `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy.
+- This section does not replace the engine baseline from `modlist-01.md` or the graphics decisions from `modlist-02.md`. → `14`
+- Its job is to decide how `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy. → `14`
 
 ### Options
 
@@ -20,7 +20,7 @@
 - Use the budgeted route.
 - Treat performance as four different problems that can look similar in play: shader cost, VRAM pressure, CPU/script load, and exterior draw-call pressure.
 - Keep one repeatable forest scene, one city scene, and one dungeon/interior scene for comparisons rather than testing in random places.
-- Record baseline and post-change captures with `PresentMon` and review them in `CapFrameX` or an equivalent frame-time tool instead of trusting impressions.
+- Record baseline and post-change captures with `PresentMon` and review them in `CapFrameX` or an equivalent frame-time tool instead of trusting impressions. → `14`
 - Prefer a stable frame-time target over chasing the highest uncapped number.
 
 ### Risks & Compatibility
@@ -31,11 +31,11 @@
 
 ### Acceptance Criteria
 
-- `Elder Wilds` has at least three repeatable test scenes with notes on why each one matters.
+- `Elder Wilds` has at least three repeatable test scenes with notes on why each one matters. → `14`
 - The list can identify whether a bad result is mainly shader cost, VRAM pressure, script load, or draw-call pressure.
 - Performance changes are recorded in a way that can be repeated after later rebuilds.
 
-## VRAM-Heavy Mod Review
+## VRAM → `14`-Heavy Mod Review
 
 ### Core Idea
 
@@ -44,9 +44,9 @@
 
 ### Options
 
-- Max-detail route: broad `4K` coverage, frequent material upgrades, and little restraint on texture size.
+- Max-detail route: broad `4K` coverage, frequent material upgrades, and little restraint on texture size. → `14`
 - Selective route: high resolution only for hero assets, creatures, architecture, or landscape layers that actually dominate the screen.
-- Restraint-first route: mostly `2K` and below with only a few intentional exceptions.
+- Restraint-first route: mostly `2K` and below with only a few intentional exceptions. → `14`
 
 ### Recommendation
 
@@ -68,7 +68,7 @@
 - Heavy assets are concentrated in places where they matter visually.
 - Texture downsizing decisions are documented when they materially improve stability.
 
-## CPU-Heavy Script Review
+## CPU → `14`-Heavy Script Review
 
 ### Core Idea
 
@@ -101,16 +101,16 @@
 - No category depends on several overlapping background systems without a clear reason.
 - Long-session behavior remains stable enough that later testing is trustworthy.
 
-## Shader Performance Impact
+## Shader Performance → `14` Impact
 
 ### Core Idea
 
-- Section `02` already owns the visual framework. This subsection owns the performance envelope that framework is allowed to occupy.
+- Section `02` already owns the visual framework. This subsection owns the performance envelope that framework is allowed to occupy. → `14`
 - The practical question is not whether shader features look good; it is which ones are worth their measurable cost in real travel scenes.
 
 ### Options
 
-- Conservative route: keep the `Community Shaders` stack close to the section-02 baseline.
+- Conservative route: keep the `Community Shaders` stack close to the section-02 baseline. → `14`
 - Balanced route: accept a few heavier depth or lighting features once the rest of the visual stack is stable.
 - Luxury route: keep piling on expensive modules, then try to recover the cost elsewhere.
 
@@ -118,8 +118,8 @@
 
 - Stay between the conservative and balanced routes.
 - Remove or downgrade luxury modules before tearing apart the rest of the graphics stack.
-- Keep `Skyrim Upscaler` as a fallback tool from section `02`, not the first answer to poor optimization discipline.
-- Use the existing `SSE Display Tweaks` baseline from section `01` to enforce a stable frame cap once the real sustained performance target is known.
+- Keep `Skyrim Upscaler` as a fallback tool from section `02`, not the first answer to poor optimization discipline. → `14`
+- Use the existing `SSE Display Tweaks` baseline from section `01` to enforce a stable frame cap once the real sustained performance target is known. → `14`
 - Judge shader cost in motion, weather transitions, and dense foliage scenes instead of still screenshots.
 
 ### Risks & Compatibility
@@ -134,12 +134,12 @@
 - The sustained frame target feels stable in forest and city traversal, not just indoors.
 - Optional luxury features are disabled unless they visibly justify their cost.
 
-## Grass, Tree, And Draw-Call Optimization
+## Grass → `14`, Tree, And Draw-Call Optimization
 
 ### Core Idea
 
 - Exterior performance in a wilderness-heavy list is often limited by draw calls, clutter density, and visibility complexity, not only raw GPU power.
-- This subsection decides how aggressive `Elder Wilds` should be about invisible optimization helpers once the visual direction is already known.
+- This subsection decides how aggressive `Elder Wilds` should be about invisible optimization helpers once the visual direction is already known. → `14`
 
 ### Options
 
@@ -150,29 +150,29 @@
 ### Recommendation
 
 - Use content restraint first, then the low-maintenance optimization route.
-- Treat `Lightened Skyrim` as the leading optimization branch because its page and community use both support it as an almost invisible cleanup layer with relatively low drama.
-- Treat `eFPS - Exterior FPS boost` as an optional branch only if real testing shows that exterior draw-call pressure still needs more help after the main world stack is stable.
-- If `eFPS` is used, plan for patch coverage as part of the worldspace stack rather than pretending it is a free install.
+- Treat `Lightened Skyrim` as the leading optimization branch because its page and community use both support it as an almost invisible cleanup layer with relatively low drama. → `14`
+- Treat `eFPS - Exterior FPS boost` as an optional branch only if real testing shows that exterior draw-call pressure still needs more help after the main world stack is stable. → `14`
+- If `eFPS` is used, plan for patch coverage as part of the worldspace stack rather than pretending it is a free install. → `14`
 - Re-evaluate exterior optimization after major city, roadside, tree, or world-content choices, because those categories move the bottleneck more than INI tweaks do.
 
 ### Risks & Compatibility
 
-- `eFPS` has strong upside, but both its own page and current Reddit signal point to real compatibility and patch-maintenance overhead for lists with heavy exterior edits.
+- `eFPS` has strong upside, but both its own page and current Reddit signal point to real compatibility and patch-maintenance overhead for lists with heavy exterior edits. → `14`
 - Optimization layers can create missing-geometry or bad-occlusion symptoms if installed casually into a moving worldspace stack.
 - Heavy cities, outskirts, roads, trees, and landmark mods can erase optimization gains faster than tweak mods can recover them.
 
 ### Acceptance Criteria
 
 - Exterior travel remains stable in forests, town approaches, and heavy roadside scenes without obvious culling errors.
-- `Lightened Skyrim` or `eFPS` is kept only if it materially improves difficult scenes.
+- `Lightened Skyrim` or `eFPS` is kept only if it materially improves difficult scenes. → `14`
 - Any chosen optimization layer has known patch coverage and rebuild implications documented.
 
-## INI Tuning And Display Settings
+## INI Tuning → `14` And Display Settings
 
 ### Core Idea
 
 - INI tuning should normalize and document the setup, not become a pile of mystery fixes no one remembers later.
-- The best INI workflow is the one that can be reproduced cleanly in `Mod Organizer 2` without guesswork.
+- The best INI workflow is the one that can be reproduced cleanly in `Mod Organizer 2` without guesswork. → `14`
 
 ### Options
 
@@ -183,10 +183,10 @@
 ### Recommendation
 
 - Use the tool-first route.
-- Use `BethINI Pie` as the baseline editor because it gives `Elder Wilds` a reproducible preset-and-recommended-tweaks starting point instead of scattered manual edits.
-- For `MO2`, keep the INI path behavior simple and documented rather than forcing unusual file redirection unless a guide specifically requires it.
+- Use `BethINI Pie` as the baseline editor because it gives `Elder Wilds` a reproducible preset-and-recommended-tweaks starting point instead of scattered manual edits. → `14`
+- For `MO2`, keep the INI path behavior simple and documented rather than forcing unusual file redirection unless a guide specifically requires it. → `14`
 - After the baseline is set, keep only a short list of manual overrides that are actually justified by the final display, shadow, or frame-cap target.
-- Let `SSE Display Tweaks` handle display behavior and frame pacing choices that belong there instead of fighting them through unrelated INI changes.
+- Let `SSE Display Tweaks` handle display behavior and frame pacing choices that belong there instead of fighting them through unrelated INI changes. → `14`
 
 ### Risks & Compatibility
 
@@ -200,7 +200,7 @@
 - Manual overrides are short, documented, and intentional.
 - Display behavior, shadow settings, and frame-cap logic stay consistent across rebuilds.
 
-## Save Safety Considerations
+## Save Safety → `14` Considerations
 
 ### Core Idea
 
@@ -217,7 +217,7 @@
 
 - Use the disposable-test route.
 - Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability testing.
-- Start a new game when adding major worldspace optimization layers such as `eFPS` if that branch is adopted, because the mod page itself recommends fresh-start caution.
+- Start a new game when adding major worldspace optimization layers such as `eFPS` if that branch is adopted, because the mod page itself recommends fresh-start caution. → `14`
 - Do not treat old generated outputs, removed scripted mods, or stale occlusion data as safe enough just because the game still loads.
 - Preserve one or two mature long-session saves only for validation, not for endless experimental churn.
 
@@ -233,7 +233,7 @@
 - Major worldspace or generated-output changes do not rely on a single heavily mutated test save.
 - Long-session validation saves remain useful enough to catch real degradation.
 
-## xEdit, Nemesis/Pandora, DynDOLOD, And Synthesis Workflow
+## xEdit → `14`, Nemesis/Pandora, DynDOLOD, And Synthesis Workflow
 
 ### Core Idea
 
@@ -249,77 +249,77 @@
 ### Recommendation
 
 - Use the disciplined route.
-- Run `xEdit` conflict review after each major category change instead of saving all conflict discovery for the end.
-- Re-run `Pandora` when behavior, animation, or skeleton-relevant content changes.
-- Re-run `Synthesis` whenever a chosen patcher-based system changes, including the music-merge workflow already noted in section `10`.
-- Treat `TexGen`, `xLODGen`, `DynDOLOD`, grass cache, and occlusion output as late-stage generated layers that must be rebuilt when their inputs materially change.
-- Keep every generated output in its own dedicated `Mod Organizer 2` mod so stale files are easy to replace instead of silently lingering.
+- Run `xEdit` conflict review after each major category change instead of saving all conflict discovery for the end. → `14`
+- Re-run `Pandora` when behavior, animation, or skeleton-relevant content changes. → `14`
+- Re-run `Synthesis` whenever a chosen patcher-based system changes, including the music-merge workflow already noted in section `10`. → `14`
+- Treat `TexGen`, `xLODGen`, `DynDOLOD`, grass cache, and occlusion output as late-stage generated layers that must be rebuilt when their inputs materially change. → `14`
+- Keep every generated output in its own dedicated `Mod Organizer 2` mod so stale files are easy to replace instead of silently lingering. → `14`
 
 ### 4K LOD Tool Baseline
 
-- Keep the actual tools (`xLODGen`, `TexGen`, `DynDOLOD`) outside the game folder and outside `Mod Organizer 2` mod folders.
-- Keep the output folders outside `Program Files`, Steam, Documents, Desktop, and the MO2 instance.
-- Install the finished output back into MO2 as separate mods named `Terrain LOD Output`, `TexGen Output`, and `DynDOLOD Output`.
-- Generate in this order: `xLODGen` terrain LOD first, then `TexGen`, then `DynDOLOD`.
-- Use the `x64` versions of the tools.
+- Keep the actual tools (`xLODGen`, `TexGen`, `DynDOLOD`) outside the game folder and outside `Mod Organizer 2` mod folders. → `14`
+- Keep the output folders outside `Program Files`, Steam, Documents, Desktop, and the MO2 instance. → `14`
+- Install the finished output back into MO2 as separate mods named `Terrain LOD Output`, `TexGen Output`, and `DynDOLOD Output`. → `14`
+- Generate in this order: `xLODGen` terrain LOD first, then `TexGen`, then `DynDOLOD`. → `14`
+- Use the `x64` versions of the tools. → `14`
 
 #### xLODGen 4K STEP Baseline
 
-- Configure the MO2 executable as `xLODGenx64.exe -lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"`.
+- Configure the MO2 executable as `xLODGenx64.exe -lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"`. → `14`
 - Use `xLODGen` only for terrain LOD in this workflow.
-- Use **SSE-Terrain-Tamriel-Extend.esm** as the terrain-boundary resource for LOD generation. It restores terrain data for cells further north into the Sea of Ghosts, providing complete LOD coverage for mods that add content in the northern ocean (notably `Depths of Skyrim` from `modlist-08.md`). Only one terrain-boundary ESM should be active at a time; the base `SSE-Terrain-Tamriel.esm` (no northern extension) is the fallback if no mod uses Sea of Ghosts cells. Load the chosen ESM as early as possible in the load order (lowest priority) so other plugins overwriting or adding land records take precedence. Only required during LOD generation — no harm leaving it active in-game, but it has no gameplay effect outside the far cells.
-- Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/???> — `SSE-Terrain-Tamriel-Extend.esm` is distributed via the xLODGen forum post on STEP; the Mega mirror is: <https://mega.nz/file/FAwmiAzS#pNDTBiaytL8e9uLhZXD-GmfB4TYD__3v3QJdX-lc72c> (base) and <https://mega.nz/file/hUpwDKwQ#gleApgKP1Jwka7Jm9M4oVQSk-bM0RWcOu8dFSc3m2_A> (Extend).
+- Use **SSE-Terrain-Tamriel-Extend.esm** as the terrain-boundary resource for LOD generation. It restores terrain data for cells further north into the Sea of Ghosts, providing complete LOD coverage for mods that add content in the northern ocean (notably `Depths of Skyrim` from `modlist-08.md`). Only one terrain-boundary ESM should be active at a time; the base `SSE-Terrain-Tamriel.esm` (no northern extension) is the fallback if no mod uses Sea of Ghosts cells. Load the chosen ESM as early as possible in the load order (lowest priority) so other plugins overwriting or adding land records take precedence. Only required during LOD generation — no harm leaving it active in-game, but it has no gameplay effect outside the far cells. → `14`
+- Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/???> — `SSE-Terrain-Tamriel-Extend.esm` is distributed via the xLODGen forum post on STEP; the Mega mirror is: <https://mega.nz/file/FAwmiAzS#pNDTBiaytL8e9uLhZXD-GmfB4TYD__3v3QJdX-lc72c> (base) and <https://mega.nz/file/hUpwDKwQ#gleApgKP1Jwka7Jm9M4oVQSk-bM0RWcOu8dFSc3m2_A> (Extend). → `14`
 - Select all worldspaces.
-- Ensure only `Terrain LOD` is ticked in the right pane.
-- Leave `Brightness`, `Contrast`, and `Gamma` at defaults unless the list is intentionally following the STEP / `Cathedral Landscapes` terrain pipeline; outside that narrow case, use `Gamma 1.00`.
-- STEP 2.3 also states that users at `2160p / 4K` should double the diffuse and normal sizes shown in the standard presets for `LOD4`, `LOD8`, `LOD16`, and `LOD32`.
-- For initial `LOD4` terrain generation, keep `Optimize Unseen` off; if map / `LOD32` coastline quality needs a later pass, use a higher `Quality` setting in the documented `0-10` range and raise `Optimize Unseen` to roughly `550` for that pass.
-- After generation, run `ACMOS Road Generator` with `Roads = Path Only`, point `Path to LOD` at the `xLODGen_Output` folder, choose `Yes` when prompted to overwrite LOD textures, and choose `No` when asked to zip.
+- Ensure only `Terrain LOD` is ticked in the right pane. → `14`
+- Leave `Brightness`, `Contrast`, and `Gamma` at defaults unless the list is intentionally following the STEP / `Cathedral Landscapes` terrain pipeline; outside that narrow case, use `Gamma 1.00`. → `14`
+- STEP 2.3 also states that users at `2160p / 4K` should double the diffuse and normal sizes shown in the standard presets for `LOD4`, `LOD8`, `LOD16`, and `LOD32`. → `14`
+- For initial `LOD4` terrain generation, keep `Optimize Unseen` off; if map / `LOD32` coastline quality needs a later pass, use a higher `Quality` setting in the documented `0-10` range and raise `Optimize Unseen` to roughly `550` for that pass. → `14`
+- After generation, run `ACMOS Road Generator` with `Roads = Path Only`, point `Path to LOD` at the `xLODGen_Output` folder, choose `Yes` when prompted to overwrite LOD textures, and choose `No` when asked to zip. → `14`
 - Move the generated files into the dedicated MO2 output mod and disable temporary xLODGen-only terrain resources afterward.
 
 #### TexGen 4K STEP Baseline
 
-- Configure the MO2 executable as `TexGen64.exe -SSE`.
-- Run `TexGen` after `xLODGen` and before `DynDOLOD`.
-- Use the preset matching rendered game resolution: `2160p = 4K`.
+- Configure the MO2 executable as `TexGen64.exe -SSE`. → `14`
+- Run `TexGen` after `xLODGen` and before `DynDOLOD`. → `14`
+- Use the preset matching rendered game resolution: `2160p = 4K`. → `14`
 - If grass LOD is not being generated, do not tick the grass billboard options.
-- Tick `Grass` if the `21-Post-Processing` group is not installed and the list is not using complex grass.
-- Tick `HD grass` if the `21-Post-Processing` group is installed and the list is using complex grass / Community Shaders grass features.
-- In `TexGen_SSE.ini`, set `GrassModelHeightMultiplier=1.15`.
-- In `TexGen_SSE.ini`, set `TreeMSAlphaThreshold=144`.
+- Tick `Grass` if the `21-Post-Processing` group is not installed and the list is not using complex grass. → `14`
+- Tick `HD grass` if the `21-Post-Processing` group is installed and the list is using complex grass / Community Shaders grass features. → `14`
+- In `TexGen_SSE.ini`, set `GrassModelHeightMultiplier=1.15`. → `14`
+- In `TexGen_SSE.ini`, set `TreeMSAlphaThreshold=144`. → `14`
 - In `TexGen_SSE.ini`, set `ObjectMSAlphaThreshold=96`.
-- If the list does not use complex grass textures, set `ForceComplexGrass=0`.
-- If the list is following the STEP 2.3 complex-grass branch, set `ForceComplexGrass=1`.
-- Treat newer `Community Shaders` grass-lighting recommendations as a separate branch to validate deliberately rather than mixing them into this baseline.
-- Move the generated files into the dedicated MO2 `TexGen Output` mod and enable that output mod before running `DynDOLOD`.
+- If the list does not use complex grass textures, set `ForceComplexGrass=0`. → `14`
+- If the list is following the STEP 2.3 complex-grass branch, set `ForceComplexGrass=1`. → `14`
+- Treat newer `Community Shaders` grass-lighting recommendations as a separate branch to validate deliberately rather than mixing them into this baseline. → `14`
+- Move the generated files into the dedicated MO2 `TexGen Output` mod and enable that output mod before running `DynDOLOD`. → `14`
 
 #### DynDOLOD 4K STEP Baseline
 
-- Configure the MO2 executable as `DynDOLODx64.exe -SSE`.
-- In `DynDOLOD_SSE.ini`, set `Expert=1` so the GUI opens in expert mode.
-- In `DynDOLOD_SSE.ini`, set `Level32=1 AllHDLOD32=1`.
+- Configure the MO2 executable as `DynDOLODx64.exe -SSE`. → `14`
+- In `DynDOLOD_SSE.ini`, set `Expert=1` so the GUI opens in expert mode. → `14`
+- In `DynDOLOD_SSE.ini`, set `Level32=1 AllHDLOD32=1`. → `14`
 - In `DynDOLOD_SSE.ini`, set `GrassBrightnessTopR=0.500`, `GrassBrightnessTopG=0.500`, `GrassBrightnessTopB=0.500`, `GrassBrightnessBottomR=0.500`, `GrassBrightnessBottomG=0.500`, and `GrassBrightnessBottomB=0.500`.
 - In `DynDOLOD_SSE.ini`, set `DoubleSidedTextureMask=mountain,mtn`.
 - In `DynDOLOD_SSE.ini`, set `DoubleSidedMeshMask=mountain,mtn`.
-- If the list is following the STEP 2.3 complex-grass branch, also set `ComplexGrassBillboard=5`.
-- If the list is following the STEP 2.3 complex-grass branch, also set `ComplexGrassBrightnessTopR=0.500`, `ComplexGrassBrightnessTopG=0.500`, `ComplexGrassBrightnessTopB=0.500`, `ComplexGrassBrightnessBottomR=0.500`, `ComplexGrassBrightnessBottomG=0.500`, `ComplexGrassBrightnessBottomB=0.500`, and `ComplexGrassBacklightMask=25`.
-- Do not reuse older complex-grass values like `0.700 / 0.725 / 0.750` brightness or `BacklightMask=10` in this baseline; those are not the current STEP 2.3 values.
+- If the list is following the STEP 2.3 complex-grass branch, also set `ComplexGrassBillboard=5`. → `14`
+- If the list is following the STEP 2.3 complex-grass branch, also set `ComplexGrassBrightnessTopR=0.500`, `ComplexGrassBrightnessTopG=0.500`, `ComplexGrassBrightnessTopB=0.500`, `ComplexGrassBrightnessBottomR=0.500`, `ComplexGrassBrightnessBottomG=0.500`, `ComplexGrassBrightnessBottomB=0.500`, and `ComplexGrassBacklightMask=25`. → `14`
+- Do not reuse older complex-grass values like `0.700 / 0.725 / 0.750` brightness or `BacklightMask=10` in this baseline; those are not the current STEP 2.3 values. → `14`
 - Select all worldspaces in the GUI.
-- Tick `Candles`.
-- Tick `FXGlow`.
-- Click `High` to pull in the expected STEP / `A Clear Map of Skyrim` mesh rules, then treat the intended end state as the `4K` profile with `Optimal` tree and catch-all rules plus the recommended `LOD32` rules.
-- Use `Medium` or `Low` only as a deliberate performance concession.
-- Generate `Occlusion` only on the first run; leave it unticked on later reruns to save time.
-- Tick `Grass LOD` only if the list is intentionally generating grass LOD.
-- STEP 2.3 describes the target as the `4K` preset with `Optimal` tree and catch-all rules plus the recommended `LOD32` rules for `A Clear Map of Skyrim`, so the preset button is a setup step rather than the whole decision.
-- Move the generated files into the dedicated MO2 `DynDOLOD Output` mod, ensure `DynDOLOD.esm` and `DynDOLOD.esp` are enabled, then sort with `LOOT`.
+- Tick `Candles`. → `14`
+- Tick `FXGlow`. → `14`
+- Click `High` to pull in the expected STEP / `A Clear Map of Skyrim` mesh rules, then treat the intended end state as the `4K` profile with `Optimal` tree and catch-all rules plus the recommended `LOD32` rules. → `14`
+- Use `Medium` or `Low` only as a deliberate performance concession. → `14`
+- Generate `Occlusion` only on the first run; leave it unticked on later reruns to save time. → `14`
+- Tick `Grass LOD` only if the list is intentionally generating grass LOD. → `14`
+- STEP 2.3 describes the target as the `4K` preset with `Optimal` tree and catch-all rules plus the recommended `LOD32` rules for `A Clear Map of Skyrim`, so the preset button is a setup step rather than the whole decision. → `14`
+- Move the generated files into the dedicated MO2 `DynDOLOD Output` mod, ensure `DynDOLOD.esm` and `DynDOLOD.esp` are enabled, then sort with `LOOT`. → `14`
 
 #### 4K Validation And Failure Rules
 
-- Benchmark before and after LOD generation from a clean Whiterun save, with `A Clear Map of Skyrim and Other Worlds` temporarily disabled during benchmarking as STEP recommends.
-- STEP's benchmark spot is outside Whiterun looking west; also sanity-check the Rift (`cow tamriel 40 -24`) because aspens are one of the heavier scenes.
+- Benchmark before and after LOD generation from a clean Whiterun save, with `A Clear Map of Skyrim and Other Worlds` temporarily disabled during benchmarking as STEP recommends. → `14`
+- STEP's benchmark spot is outside Whiterun looking west; also sanity-check the Rift (`cow tamriel 40 -24`) because aspens are one of the heavier scenes. → `14`
 - If performance is already below STEP's pre-LOD target band, lower the broader graphics baseline before blaming LOD output alone.
-- If travel performance is still too expensive after LOD generation, step `DynDOLOD` down from `High` to `Medium` or `Low`, and skip `Grass LOD` before cutting the entire visual stack apart.
+- If travel performance is still too expensive after LOD generation, step `DynDOLOD` down from `High` to `Medium` or `Low`, and skip `Grass LOD` before cutting the entire visual stack apart. → `14`
 - If a tool run required one-off emergency tweaks, document them next to the MO2 executable or output mod so the next rebuild is reproducible instead of remembered from scratch.
 
 ### Risks & Compatibility
@@ -327,17 +327,17 @@
 - The most common technical mistake in a large list is not "wrong mod" but stale output from a previously correct state.
 - Partial rebuild habits create false negatives during testing because the game is no longer showing the current stack.
 - Delaying all generated work until the very end makes it harder to isolate which category caused later breakage.
-- A `4K` near-field texture stack can tempt the list into overbuilding LOD output. The tools should be tuned for believable travel scenes, not screenshot-maximal atlases that waste VRAM and rebuild time.
-- `DynDOLOD`, `TexGen`, and `xLODGen` settings are sensitive to memory pressure and stale outputs. If one run required lowered atlas size or reduced concurrency, the same constraint should be assumed on the next rebuild unless hardware changes.
+- A `4K` near-field texture stack can tempt the list into overbuilding LOD output. The tools should be tuned for believable travel scenes, not screenshot-maximal atlases that waste VRAM and rebuild time. → `14`
+- `DynDOLOD`, `TexGen`, and `xLODGen` settings are sensitive to memory pressure and stale outputs. If one run required lowered atlas size or reduced concurrency, the same constraint should be assumed on the next rebuild unless hardware changes. → `14`
 
 ### Acceptance Criteria
 
 - Every generated layer has a clear owner, rebuild trigger, and dedicated output mod.
-- `xEdit`, `Pandora`, `Synthesis`, and LOD tools are used in a repeatable order rather than by guesswork.
+- `xEdit`, `Pandora`, `Synthesis`, and LOD tools are used in a repeatable order rather than by guesswork. → `14`
 - The list can rebuild a changed category without losing track of which outputs are now stale.
 - The list has one documented `4K` baseline for `xLODGen`, `TexGen`, and `DynDOLOD` that favors stable travel visuals over maximum theoretical quality.
 
-## Optional Diagnostics And Performance Tools
+## Optional Diagnostics → `14` And Performance Tools
 
 ### Core Idea
 
@@ -347,7 +347,7 @@
 ### Recursion Monitor
 
 - **Nexus**: [Recursion Monitor](https://www.nexusmods.com/skyrimspecialedition/mods/76867) (v1.2, original by Nightfallstorm)
-- **Purpose**: Detects broken Papyrus scripts stuck in recursive loops and prevents the resulting framerate collapse. Skyrim's engine does not throw a stack-overflow error, so a buggy function that calls itself hundreds of thousands of times silently destroys frame timing. This plugin hooks the stack check and breaks the recursion after 1000 calls, writing a `StackFrameOverFlow` warning to the log instead of tanking performance.
+- **Purpose**: Detects broken Papyrus scripts stuck in recursive loops and prevents the resulting framerate collapse. Skyrim's engine does not throw a stack-overflow error, so a buggy function that calls itself hundreds of thousands of times silently destroys frame timing. This plugin hooks the stack check and breaks the recursion after 1000 calls, writing a `StackFrameOverFlow` warning to the log instead of tanking performance. → `14`
 - **Requirements**: SKSE, Address Library for SKSE Plugins
 - **Status**: Optional diagnostics utility. Silent at runtime unless it fires. Worth installing early for debugging and keeping active on a production list.
 - **Updated fork**: [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (v1.0, updated May 2026) removes the in-game debug popup that could freeze gameplay during a recursion event. All warnings are written to the SKSE log instead. Prefer this version for a production list.
@@ -370,10 +370,10 @@
 ### Acceptance Criteria
 
 - Recursion Monitor fires on a deliberately broken Papyrus call and writes the `StackFrameOverFlow` message to the log without freezing the game.
-- S.L.A.C.K. measurably reduces save/LD time in a heavy load order. Compare save duration with and without the plugin using a stopwatch or `PresentMon` capture.
+- S.L.A.C.K. measurably reduces save/LD time in a heavy load order. Compare save duration with and without the plugin using a stopwatch or `PresentMon` capture. → `14`
 - S.L.A.C.K. error-friendly mode catches a simulated cosave exception (via a test plugin) and logs the error without crashing.
 
-## Patching Technique And Strategy
+## Patching → `14` Technique And Strategy
 
 > **Moved**: This section now lives in [`modlist-01.md`](modlist-01.md) — the patching workflow should be followed from the very first mod installed, not treated as a late-stage concern.
 
@@ -381,8 +381,8 @@
 
 ### Core Idea
 
-- The generic category maps above only become useful when they are tied to the actual mods `Elder Wilds` ships with. This subsection is that binding: the exact `Wrye Bash` tweaks enabled, the `Bash Tags` set on the plugins that need them, and the `Synthesis` patcher pipeline run in this exact order.
-- Anything not in the tables below is intentionally left to per-mod `xEdit` patches or to the generation stage. The default is "do not touch" — adding a `Synthesis` patcher or a `Bash Tag` only when a specific mod in the list makes it necessary.
+- The generic category maps above only become useful when they are tied to the actual mods `Elder Wilds` ships with. This subsection is that binding: the exact `Wrye Bash` tweaks enabled, the `Bash Tags` set on the plugins that need them, and the `Synthesis` patcher pipeline run in this exact order. → `14`
+- Anything not in the tables below is intentionally left to per-mod `xEdit` patches or to the generation stage. The default is "do not touch" — adding a `Synthesis` patcher or a `Bash Tag` only when a specific mod in the list makes it necessary. → `14`
 
 ### Wrye Bash (Bashed Patch) Configuration
 
@@ -390,7 +390,7 @@
 
 Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below. Everything else stays at the default and is patched by hand if needed.
 
-- **Tweak Actors**: `Opposite Gender Anims: Female` and `Opposite Gender Anims: Male` — needed because `Elder Wilds` runs `CBBE 3BA`, `HIMBO`, and `KS Hairdos` which already change the per-gender behavior set, and the global flip keeps NPCs consistent across `EVG Conditional Idles`, `Goetia`, and `Leviathan II` packs.
+- **Tweak Actors**: `Opposite Gender Anims: Female` and `Opposite Gender Anims: Male` — needed because `Elder Wilds` runs `CBBE 3BA`, `HIMBO`, and `KS Hairdos` which already change the per-gender behavior set, and the global flip keeps NPCs consistent across `EVG Conditional Idles`, `Goetia`, and `Leviathan II` packs. → `14`
 - **Tweak Assorted**:
   - `All Armor Playable` — required by `Immersive Armors` (60+ sets, several ship with the non-playable flag in the base plugin).
   - `No Light Fade Value Fix` — required because `Lux`, `Lux CS`, `Lux Orbis`, `Lux Via`, `ELFX`, `Relighting Skyrim`, and `Luminosity` all interact with fade values and the bare-`1.0` value is the stable starting point.
@@ -431,58 +431,58 @@ Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below. Ev
 
 Set the following `Bash Tags` (one file per plugin under `Data\Bash Patches\`) on the listed plugins. Tags not listed here are deliberately absent.
 
-- `Immersive Weapons.esp` — `Relev` (entries from this mod should be re-leveled into the winning list).
-- `Immersive Armors.esp` — `Relev`.
-- `Immersive Armors Retexture.esp` — `Graphics` (do not let the Bashed Patch treat texture records as records to merge; it is a retexture, not a content add).
-- `Hunterborn.esp` — `Invent.Add`, `Delev`, `Relev` (the mod adds pelts, reagents, and harvested items to containers, removes several generic drops, and re-levels spawns).
-- `Simple Fishing Overhaul.esp` — `Invent.Add`, `C.MiscFlags`.
-- `Streamlined Fishing.esp` — `Invent.Add` only.
-- `Open World Loot.esp` — `Delev`, `Relev`, `C.Encounter` (the mod's whole job is encounter zone and leveled list rewriting).
-- `MorrowLoot Ultimate.esp` — `Delev`, `Relev`.
-- `Trade and Barter.esp` — `Stats`, `Invent.Change` (changes item values and merchant inventories).
-- `Aetherius.esp` / `Morningstar.esp` / `Imperious.esp` — `R.AddSpells` (one of these three is the race overhaul; whichever wins gets the tag, not all three).
-- `Adamant.esp` / `Vokrii.esp` / `Ordinator.esp` — `NPC.Perks.Change` and `NPC.Perks.Add`.
-- `Mysticism.esp` / `Odin.esp` / `Apocalypse.esp` — `SpellStats`, `EffectStats`.
-- `Lux.esp` / `Lux - Lux CS.esp` / `Lux - Orbis.esp` / `Lux - Via.esp` — `C.Light`, `C.Fog`, `C.ImageSpace` (light and atmosphere overrides are what these mods do).
-- `ELFX.esp` and `ELFX - Shadows.esp` — `C.Light`, `C.Fog` (no fog conflict, but light is the same set of records).
-- `Relighting Skyrim.esp` and `Luminosity.esp` — `C.Light` only.
-- `RAID Weathers.esp` and `Raid Weathers CS.esp` — `C.Climate`, `C.Music` only if the weather pack changes music.
-- `Cathedral Weathers.esp` and `Obsidian Weathers.esp` and `Obsidian - CS.esp` — `C.Climate`.
-- `Realistic Water Two.esp` — `C.Water`.
-- `A Water Made For CS in mind.esp` — `C.Water`.
-- `Simplicity of Sea.esp` — `C.Water`.
-- `Enhanced Rocks and Mountains.esp` and `Enhanced Rocks and Mountains - Fix and Addon.esp` — `Graphics`, `ObjectBounds` (mesh changes; no content records).
-- `Beyond Skyrim - Bruma SE.esp` — `C.Climate`, `C.Music`, `C.Light`, `C.Water`, `C.ImageSpace`, `C.Location`, `C.Regions` (Bruma touches almost every cell record type, this is the safe merge set).
-- `Spaghetti's Cities - AIO.esp` — `C.Light`, `C.MiscFlags` (light changes plus cell flag edits).
-- `The Great Cities - Minor Cities and Towns SSE.esp`, `Dawn of Skyrim (Director's Cut) SE.esp`, `JK's Skyrim.esp` — `C.Light`, `C.MiscFlags`.
-- `RUSTIC CLUTTER COLLECTION.esp` and `RUSTIC CLOTHING.esp` — `Names`, `Stats` (only merge the names/stats, not the meshes).
-- `High Poly Project.esp` — `Graphics`, `ObjectBounds` (mesh upgrade, not content).
-- `KS Hairdos SSE.esp` — `Graphics`, `Names` (hair mesh and record rename; do not merge headpart bodies).
-- `High Poly True to Vanilla NPC Overhaul.esp` — `Graphics`, `Names`, `Actors.Stats` (it modifies NPC textures and stat snippets).
-- `RDO.esp` — `Actors.AIPackages`, `Actors.Spells`.
-- `Amorous Adventures.esp` (clean variant) — `Actors.AIPackagesForceAdd`, `Actors.SpellsForceAdd`, `Invent.Add`.
-- `Marriage Mod - To Have And To Hold.esp` — `Actors.AIPackagesForceAdd`, `Actors.Factions`.
-- `Serana Dialogue Add-On.esp` — `Actors.AIPackages`, `Actors.Spells`.
-- `Pilgrim.esp` / `Trua.esp` / `Wintersun.esp` — `Actors.Spells` (one of the three wins; tag the chosen one only).
-- `Book of Shadows.esp` — `Actors.Spells`.
-- `Skyrim Reputation.esp` — `Actors.Factions`, `Relations.Add`.
-- `Suspicious City Guards.esp` — `Actors.AIPackages`.
-- `Audio Overhaul for Skyrim SE.esp` — `Sound`.
-- `Immersive Sounds - Compendium.esp` — `Sound`.
-- `Sounds of Skyrim Complete SE.esp` — `Sound`, `C.Acoustic`.
-- `Campfire.esp` — `C.MiscFlags`, `Invent.Add` (it adds firewood and food to cell inventories).
-- `Ars Metallica.esp` — `Stats`, `Invent.Change`.
-- `Complete Crafting Overhaul Remastered.esp` — `Stats`, `Invent.Change`.
-- `Honed Metal.esp` — `Invent.Change` (it modifies merchant inventories for crafting services).
-- `Apothecary.esp` — `Invent.Add`, `Stats`, `Keywords`.
-- `Complete Alchemy and Cooking Overhaul.esp` — `Invent.Add`, `Stats`, `Keywords`.
-- `Alchemy Potions and Food Adjustments.esp` — `Stats`, `Keywords`.
-- `Frostfall.esp` — `C.Climate`, `C.ImageSpace` (it edits worldspace exposure for cold regions).
-- `Starfrost.esp` / `SunHelm.esp` / `Last Seed.esp` — `Stats`, `Keywords`, `Invent.Add` (one of the three wins).
-- `AOS - Couriers and Imperial Census.esp` and other `AOS` add-ons — `Sound`.
-- `Nether's Follower Framework.esp` / `EFF.esp` / `Amazing Follower Tweaks SE.esp` — `Actors.Factions`, `Invent.Add` (they add items to follower inventories).
-- `TrueHUD.esp` — no tags (do not merge HUD records, leave them as overrides).
-- `Sovngarde - Mist's Font Replacer.esp` — no tags (font plugin, do not merge).
+- `Immersive Weapons.esp` — `Relev` (entries from this mod should be re-leveled into the winning list). → `14`
+- `Immersive Armors.esp` — `Relev`. → `14`
+- `Immersive Armors Retexture.esp` — `Graphics` (do not let the Bashed Patch treat texture records as records to merge; it is a retexture, not a content add). → `14`
+- `Hunterborn.esp` — `Invent.Add`, `Delev`, `Relev` (the mod adds pelts, reagents, and harvested items to containers, removes several generic drops, and re-levels spawns). → `14`
+- `Simple Fishing Overhaul.esp` — `Invent.Add`, `C.MiscFlags`. → `14`
+- `Streamlined Fishing.esp` — `Invent.Add` only. → `14`
+- `Open World Loot.esp` — `Delev`, `Relev`, `C.Encounter` (the mod's whole job is encounter zone and leveled list rewriting). → `14`
+- `MorrowLoot Ultimate.esp` — `Delev`, `Relev`. → `14`
+- `Trade and Barter.esp` — `Stats`, `Invent.Change` (changes item values and merchant inventories). → `14`
+- `Aetherius.esp` / `Morningstar.esp` / `Imperious.esp` — `R.AddSpells` (one of these three is the race overhaul; whichever wins gets the tag, not all three). → `14`
+- `Adamant.esp` / `Vokrii.esp` / `Ordinator.esp` — `NPC.Perks.Change` and `NPC.Perks.Add`. → `14`
+- `Mysticism.esp` / `Odin.esp` / `Apocalypse.esp` — `SpellStats`, `EffectStats`. → `14`
+- `Lux.esp` / `Lux - Lux CS.esp` / `Lux - Orbis.esp` / `Lux - Via.esp` — `C.Light`, `C.Fog`, `C.ImageSpace` (light and atmosphere overrides are what these mods do). → `14`
+- `ELFX.esp` and `ELFX - Shadows.esp` — `C.Light`, `C.Fog` (no fog conflict, but light is the same set of records). → `14`
+- `Relighting Skyrim.esp` and `Luminosity.esp` — `C.Light` only. → `14`
+- `RAID Weathers.esp` and `Raid Weathers CS.esp` — `C.Climate`, `C.Music` only if the weather pack changes music. → `14`
+- `Cathedral Weathers.esp` and `Obsidian Weathers.esp` and `Obsidian - CS.esp` — `C.Climate`. → `14`
+- `Realistic Water Two.esp` — `C.Water`. → `14`
+- `A Water Made For CS in mind.esp` — `C.Water`. → `14`
+- `Simplicity of Sea.esp` — `C.Water`. → `14`
+- `Enhanced Rocks and Mountains.esp` and `Enhanced Rocks and Mountains - Fix and Addon.esp` — `Graphics`, `ObjectBounds` (mesh changes; no content records). → `14`
+- `Beyond Skyrim - Bruma SE.esp` — `C.Climate`, `C.Music`, `C.Light`, `C.Water`, `C.ImageSpace`, `C.Location`, `C.Regions` (Bruma touches almost every cell record type, this is the safe merge set). → `14`
+- `Spaghetti's Cities - AIO.esp` — `C.Light`, `C.MiscFlags` (light changes plus cell flag edits). → `14`
+- `The Great Cities - Minor Cities and Towns SSE.esp`, `Dawn of Skyrim (Director's Cut) SE.esp`, `JK's Skyrim.esp` — `C.Light`, `C.MiscFlags`. → `14`
+- `RUSTIC CLUTTER COLLECTION.esp` and `RUSTIC CLOTHING.esp` — `Names`, `Stats` (only merge the names/stats, not the meshes). → `14`
+- `High Poly Project.esp` — `Graphics`, `ObjectBounds` (mesh upgrade, not content). → `14`
+- `KS Hairdos SSE.esp` — `Graphics`, `Names` (hair mesh and record rename; do not merge headpart bodies). → `14`
+- `High Poly True to Vanilla NPC Overhaul.esp` — `Graphics`, `Names`, `Actors.Stats` (it modifies NPC textures and stat snippets). → `14`
+- `RDO.esp` — `Actors.AIPackages`, `Actors.Spells`. → `14`
+- `Amorous Adventures.esp` (clean variant) — `Actors.AIPackagesForceAdd`, `Actors.SpellsForceAdd`, `Invent.Add`. → `14`
+- `Marriage Mod - To Have And To Hold.esp` — `Actors.AIPackagesForceAdd`, `Actors.Factions`. → `14`
+- `Serana Dialogue Add-On.esp` — `Actors.AIPackages`, `Actors.Spells`. → `14`
+- `Pilgrim.esp` / `Trua.esp` / `Wintersun.esp` — `Actors.Spells` (one of the three wins; tag the chosen one only). → `14`
+- `Book of Shadows.esp` — `Actors.Spells`. → `14`
+- `Skyrim Reputation.esp` — `Actors.Factions`, `Relations.Add`. → `14`
+- `Suspicious City Guards.esp` — `Actors.AIPackages`. → `14`
+- `Audio Overhaul for Skyrim SE.esp` — `Sound`. → `14`
+- `Immersive Sounds - Compendium.esp` — `Sound`. → `14`
+- `Sounds of Skyrim Complete SE.esp` — `Sound`, `C.Acoustic`. → `14`
+- `Campfire.esp` — `C.MiscFlags`, `Invent.Add` (it adds firewood and food to cell inventories). → `14`
+- `Ars Metallica.esp` — `Stats`, `Invent.Change`. → `14`
+- `Complete Crafting Overhaul Remastered.esp` — `Stats`, `Invent.Change`. → `14`
+- `Honed Metal.esp` — `Invent.Change` (it modifies merchant inventories for crafting services). → `14`
+- `Apothecary.esp` — `Invent.Add`, `Stats`, `Keywords`. → `14`
+- `Complete Alchemy and Cooking Overhaul.esp` — `Invent.Add`, `Stats`, `Keywords`. → `14`
+- `Alchemy Potions and Food Adjustments.esp` — `Stats`, `Keywords`. → `14`
+- `Frostfall.esp` — `C.Climate`, `C.ImageSpace` (it edits worldspace exposure for cold regions). → `14`
+- `Starfrost.esp` / `SunHelm.esp` / `Last Seed.esp` — `Stats`, `Keywords`, `Invent.Add` (one of the three wins). → `14`
+- `AOS - Couriers and Imperial Census.esp` and other `AOS` add-ons — `Sound`. → `14`
+- `Nether's Follower Framework.esp` / `EFF.esp` / `Amazing Follower Tweaks SE.esp` — `Actors.Factions`, `Invent.Add` (they add items to follower inventories). → `14`
+- `TrueHUD.esp` — no tags (do not merge HUD records, leave them as overrides). → `14`
+- `Sovngarde - Mist's Font Replacer.esp` — no tags (font plugin, do not merge). → `14`
 
 Plugins that should be tagged `Deactivate` because they only exist to feed the Bashed Patch (none expected in `Elder Wilds`; if a mod is later added purely for its `Bash Tags` source, tag it `Deactivate`).
 
@@ -494,127 +494,127 @@ The `Synthesis` patcher pipeline runs as a single batch via the `Run Mutagen` to
 
 #### Stage 1 — NPC, AI, And Facegen
 
-- `KS Hairs Bald Helmets Fixer` — because `Elder Wilds` ships `KS Hairdos SSE` and the bald-head-under-helmet bug is universal.
-- `High Poly Head Vampire Fix` — keep this in the patcher shortlist whenever the `High Poly Head 1.4` branch is active, because vampire headpart edge cases are still one of the known maintenance costs of that route.
-- `HP_NPC_WIGS_TO_HEADPART` — converts any wig distribution to headparts so `Elder Wilds` headpart inventory stays consistent.
-- `FacegenBaseline` — applies the canonical facegen override from `High Poly True to Vanilla NPC Overhaul` to every named NPC, so facegen does not silently break when the NPC overhaul is updated.
-- `NPCStatRescaler` — rescales NPC stats to keep `Elder Wilds` combat pacing after `MCO ADXP` and `Valhalla Combat` install.
-- `AIOverhaulPatcher` (or `ICAIO AI for Mods` if `ICAIO` is in the stack) — forwards the AI package list from the chosen AI overhaul so it wins over the default package set.
-- `AI Stealth Overhaul` — used in combination with `Realistic AI Detection (RAID)`. The patcher customizes the difficulty curve and `RAID` provides the underlying detection.
-- `Followers-are-Sneaky` — adds the "Doesn't Affect Stealth" flag to all followers from `Nether's Follower Framework`, `EFF`, and `Amazing Follower Tweaks SE`.
-- `FollowerFavorCarryLimitPatcher` — applies follower carry limits from `Nether's Follower Framework` to mod-added followers.
-- `NpcProtector` — flags essential NPCs from quest mods (`Wyrmstooth`, `Falskaar`, `The Forgotten City`, `VIGILANT`, `Sirenroot`, `Moon and Star`, `Beyond Reach`, `Bruma`, `The Wheels of Lull`) as protected.
-- `RaceCompatibilityDialogue` — adds dialog conditions so the chosen race overhaul (`Aetherius` / `Morningstar` / `Imperious`) plays correctly with all custom races.
-- `RacialHeights` and `HarmonizedRaceHeights-Patcher` — applies the chosen height scaling across all races including `Bruma` and `Beyond Reach` races.
-- `SynBanditWarForwarder` — forwards `Lawless` bandit-war changes (keep enabled; lightweight and prevents NPC record regressions).
-- `SynOppositeGenderAnimsTweak` — already handled by the Bashed Patch; do not enable here to avoid double-application.
+- `KS Hairs Bald Helmets Fixer` — because `Elder Wilds` ships `KS Hairdos SSE` and the bald-head-under-helmet bug is universal. → `14`
+- `High Poly Head Vampire Fix` — keep this in the patcher shortlist whenever the `High Poly Head 1.4` branch is active, because vampire headpart edge cases are still one of the known maintenance costs of that route. → `14`
+- `HP_NPC_WIGS_TO_HEADPART` — converts any wig distribution to headparts so `Elder Wilds` headpart inventory stays consistent. → `14`
+- `FacegenBaseline` — applies the canonical facegen override from `High Poly True to Vanilla NPC Overhaul` to every named NPC, so facegen does not silently break when the NPC overhaul is updated. → `14`
+- `NPCStatRescaler` — rescales NPC stats to keep `Elder Wilds` combat pacing after `MCO ADXP` and `Valhalla Combat` install. → `14`
+- `AIOverhaulPatcher` (or `ICAIO AI for Mods` if `ICAIO` is in the stack) — forwards the AI package list from the chosen AI overhaul so it wins over the default package set. → `14`
+- `AI Stealth Overhaul` — used in combination with `Realistic AI Detection (RAID)`. The patcher customizes the difficulty curve and `RAID` provides the underlying detection. → `14`
+- `Followers-are-Sneaky` — adds the "Doesn't Affect Stealth" flag to all followers from `Nether's Follower Framework`, `EFF`, and `Amazing Follower Tweaks SE`. → `14`
+- `FollowerFavorCarryLimitPatcher` — applies follower carry limits from `Nether's Follower Framework` to mod-added followers. → `14`
+- `NpcProtector` — flags essential NPCs from quest mods (`Wyrmstooth`, `Falskaar`, `The Forgotten City`, `VIGILANT`, `Sirenroot`, `Moon and Star`, `Beyond Reach`, `Bruma`, `The Wheels of Lull`) as protected. → `14`
+- `RaceCompatibilityDialogue` — adds dialog conditions so the chosen race overhaul (`Aetherius` / `Morningstar` / `Imperious`) plays correctly with all custom races. → `14`
+- `RacialHeights` and `HarmonizedRaceHeights-Patcher` — applies the chosen height scaling across all races including `Bruma` and `Beyond Reach` races. → `14`
+- `SynBanditWarForwarder` — forwards `Lawless` bandit-war changes (keep enabled; lightweight and prevents NPC record regressions). → `14`
+- `SynOppositeGenderAnimsTweak` — already handled by the Bashed Patch; do not enable here to avoid double-application. → `14`
 
 #### Stage 2 — Encounter Zones And Encounter Logic
 
-- `EZLeveler` — scales encounter zones; configure to the unleveled-band target that `Open World Loot` and `MorrowLoot Ultimate` assume.
-- `EnemyReleveler` — delevels NPCs by type; configure to keep `Bruma`, `Falskaar`, and `Wyrmstooth` enemies within the new band.
-- `No More Easy Enemies` — fixes low-level enemy spawns in high-level dungeons; required because of the `Extended Encounters` and `Radiance Encounters` ambient spawn load.
-- `EncounterZoneNames` and `CellEncounterLevelsInName` — appends encounter zone level to the cell name; helps debug which zone the player is in.
-- `MissingEncounterZonesPatcher` — forwards changes from `Missing Encounter Zones Fixed` (if added) so they do not get overwritten by `Bruma`/`JK's Skyrim`/`Spaghetti's Cities`.
-- `TrueUnleveledSkyrim` — only enable if `Elder Wilds` ever drops `Open World Loot` and `MorrowLoot Ultimate`; the patcher is comprehensive but it overlaps badly with `OWL` so do not run both.
+- `EZLeveler` — scales encounter zones; configure to the unleveled-band target that `Open World Loot` and `MorrowLoot Ultimate` assume. → `14`
+- `EnemyReleveler` — delevels NPCs by type; configure to keep `Bruma`, `Falskaar`, and `Wyrmstooth` enemies within the new band. → `14`
+- `No More Easy Enemies` — fixes low-level enemy spawns in high-level dungeons; required because of the `Extended Encounters` and `Radiance Encounters` ambient spawn load. → `14`
+- `EncounterZoneNames` and `CellEncounterLevelsInName` — appends encounter zone level to the cell name; helps debug which zone the player is in. → `14`
+- `MissingEncounterZonesPatcher` — forwards changes from `Missing Encounter Zones Fixed` (if added) so they do not get overwritten by `Bruma`/`JK's Skyrim`/`Spaghetti's Cities`. → `14`
+- `TrueUnleveledSkyrim` — only enable if `Elder Wilds` ever drops `Open World Loot` and `MorrowLoot Ultimate`; the patcher is comprehensive but it overlaps badly with `OWL` so do not run both. → `14`
 
 #### Stage 3 — Leveled Lists And Loot
 
-- `OWLLeveledListAddition` — adds `Immersive Weapons` and `Immersive Armors` to the `Open World Loot` leveled lists by keyword.
-- `OWLPatcher` — keeps `OWL` leveled lists consistent across the rest of the stack.
-- `Skyrim-LeveledLoot` — adjusts the loot system with progression focus; configure to match the chosen difficulty in `modlist-11.md`.
-- `HalgarisConsistentRPGLoot` — distributes enchantments from `Mysticism`/`Odin`/`Apocalypse` to all mod-added weapons/armors.
-- `Container and Loot Patcher` — base loot table tuning; configure to match the `MorrowLoot Ultimate` values.
-- `LootableCrates`, `MakeFirewoodPilesIntoContainers`, `Lootable Things & Training Dummies Patcher` — these three enable the immersive-clutter loot chain that `RUSTIC CLUTTER COLLECTION` benefits from.
-- `GeneralStoresIngredientsPatcher` — pushes the alchemy ingredient stock from `Apothecary` into general stores.
-- `ImmersiveMusicPatcher` and `MusicTypePatcher-Revised-2024` — merge additions to `MUSTT` records so `AOS` ambient music does not double up. Required: `AOS` and `Sounds of Skyrim Complete` both add music to the same cells.
-- `leveledlistresolver` — clean up remaining leveled list conflicts that did not get a `Bash Tag` for resolution. Run after `OWL` and `MorrowLoot` so the resolver sees the merged view.
-- `Feminized Leveled Lists` and `Masculinized Leveled Lists` — keep enabled with default settings to fix gendered leveled list entries from mod-added NPCs.
+- `OWLLeveledListAddition` — adds `Immersive Weapons` and `Immersive Armors` to the `Open World Loot` leveled lists by keyword. → `14`
+- `OWLPatcher` — keeps `OWL` leveled lists consistent across the rest of the stack. → `14`
+- `Skyrim-LeveledLoot` — adjusts the loot system with progression focus; configure to match the chosen difficulty in `modlist-11.md`. → `14`
+- `HalgarisConsistentRPGLoot` — distributes enchantments from `Mysticism`/`Odin`/`Apocalypse` to all mod-added weapons/armors. → `14`
+- `Container and Loot Patcher` — base loot table tuning; configure to match the `MorrowLoot Ultimate` values. → `14`
+- `LootableCrates`, `MakeFirewoodPilesIntoContainers`, `Lootable Things & Training Dummies Patcher` — these three enable the immersive-clutter loot chain that `RUSTIC CLUTTER COLLECTION` benefits from. → `14`
+- `GeneralStoresIngredientsPatcher` — pushes the alchemy ingredient stock from `Apothecary` into general stores. → `14`
+- `ImmersiveMusicPatcher` and `MusicTypePatcher-Revised-2024` — merge additions to `MUSTT` records so `AOS` ambient music does not double up. Required: `AOS` and `Sounds of Skyrim Complete` both add music to the same cells. → `14`
+- `leveledlistresolver` — clean up remaining leveled list conflicts that did not get a `Bash Tag` for resolution. Run after `OWL` and `MorrowLoot` so the resolver sees the merged view. → `14`
+- `Feminized Leveled Lists` and `Masculinized Leveled Lists` — keep enabled with default settings to fix gendered leveled list entries from mod-added NPCs. → `14`
 
 #### Stage 4 — Items, Crafting, Smithing, Alchemy, Cooking
 
-- `ApothecaryAutoPatcher` — required: the mod adds ingredients that need to inherit `Apothecary`'s values. Pair with `Complete Alchemy and Cooking Overhaul Patcher` if `CACO` is in the stack.
-- `BreakdownRecipeGenerator` — generates breakdown recipes for every craftable from `Immersive Weapons` and `Immersive Armors`, so `Ars Metallica` and `Complete Crafting Overhaul Remastered` get full coverage.
-- `CreateTemper` — generates tempering recipes for the same weapon pool.
-- `HonedMetalAdditionalIngredients` — adds additional ingredients to `Honed Metal` from `Apothecary`/`CACO`.
-- `Heim Recipe Patcher` — updates weapon/armor recipes with the correct `Heim` book conditions (only enable if `Heim` is added).
-- `ReProccer Evolved` — keeps mod-added items compatible with `Skyrim Redone`-style systems; not currently in the stack but the patcher is cheap insurance.
-- `Weapon Stat Synthesis Patcher` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149027>) — analyzes and rebalances weapon stats to keep the tier ladder meaningful across `Immersive Weapons`, `Animated Armoury`, and other mod-added weapons. See `guide.md` Step 23 for detailed configuration instructions.
-- `SpeedandReachFixes` — applies `Speed and Reach Fixes` corrections to all mod-added weapons.
-- `WeaponSpeedEffectsFix` — applies `Weapon Speed Effects Fix` / `Attack Speed Framework Plus` corrections to all mod-added weapons.
-- `SynFixShieldData` and `SynFixWeaponAttackSpeed` — repair shield material/impact sets and attack-speed bugs on mod-added items.
-- `SynGlovesAddFirstsPerk` — adds the missing fists perk to gloves by material so unarmed combat in `Valhalla Combat` works.
-- `ItemWeightCustomizer` and `SynPotionWeight` — reweights potions and items to match the carry-weight design.
-- `SlotsSlotsSlots` — converts weight into equipment slots (armor layering) so `CBBE 3BA` and `Immersive Armors` coexist.
-- `AmmoTweaks` — `WACCF`-friendly alternative to `ABT` for ammunition tuning.
-- `SynCGOStaves` — only if `Complete Graphics Overhaul` staves are in the stack; otherwise skip.
+- `ApothecaryAutoPatcher` — required: the mod adds ingredients that need to inherit `Apothecary`'s values. Pair with `Complete Alchemy and Cooking Overhaul Patcher` if `CACO` is in the stack. → `14`
+- `BreakdownRecipeGenerator` — generates breakdown recipes for every craftable from `Immersive Weapons` and `Immersive Armors`, so `Ars Metallica` and `Complete Crafting Overhaul Remastered` get full coverage. → `14`
+- `CreateTemper` — generates tempering recipes for the same weapon pool. → `14`
+- `HonedMetalAdditionalIngredients` — adds additional ingredients to `Honed Metal` from `Apothecary`/`CACO`. → `14`
+- `Heim Recipe Patcher` — updates weapon/armor recipes with the correct `Heim` book conditions (only enable if `Heim` is added). → `14`
+- `ReProccer Evolved` — keeps mod-added items compatible with `Skyrim Redone`-style systems; not currently in the stack but the patcher is cheap insurance. → `14`
+- `Weapon Stat Synthesis Patcher` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149027>) — analyzes and rebalances weapon stats to keep the tier ladder meaningful across `Immersive Weapons`, `Animated Armoury`, and other mod-added weapons. See `guide.md` Step 23 for detailed configuration instructions. → `14`
+- `SpeedandReachFixes` — applies `Speed and Reach Fixes` corrections to all mod-added weapons. → `14`
+- `WeaponSpeedEffectsFix` — applies `Weapon Speed Effects Fix` / `Attack Speed Framework Plus` corrections to all mod-added weapons. → `14`
+- `SynFixShieldData` and `SynFixWeaponAttackSpeed` — repair shield material/impact sets and attack-speed bugs on mod-added items. → `14`
+- `SynGlovesAddFirstsPerk` — adds the missing fists perk to gloves by material so unarmed combat in `Valhalla Combat` works. → `14`
+- `ItemWeightCustomizer` and `SynPotionWeight` — reweights potions and items to match the carry-weight design. → `14`
+- `SlotsSlotsSlots` — converts weight into equipment slots (armor layering) so `CBBE 3BA` and `Immersive Armors` coexist. → `14`
+- `AmmoTweaks` — `WACCF`-friendly alternative to `ABT` for ammunition tuning. → `14`
+- `SynCGOStaves` — only if `Complete Graphics Overhaul` staves are in the stack; otherwise skip. → `14`
 
 #### Stage 5 — Magic, Spells, Enchanting
 
-- `Engarde_Synthesis` — applies `Engarde` combat fixes to all spell tomes.
-- `DisenchantEverything` (or `SmartDisenchantEverything`) — drops the disenchant restriction so `Mysticism`/`Odin`/`Apocalypse` enchantments can be learned from any item that carries them.
-- `Passive Enchanting Experience` — adds XP to enchantments worn in combat.
-- `Spell Research Synthesizer` — only if `Spell Research` is added.
-- `StaffGenerator`, `StaffDuplicator` — only if `Mysticism`/`Odin`/`Apocalypse` is the chosen magic overhaul; otherwise skip.
-- `SorcererPatcher` — only if `Sorcerer - A Staff and Scroll Overhaul` is added.
-- `ReadingIsGoodLegacy` — enables skill XP from book reading.
-- `AllBooksHavePerks` — random perk per book; configure per `modlist-08.md` world-content decision.
-- `SpellTomePriceFixPatcher`, `SynSpellTomeNameExtender`, `DisplaySpellTomeLevelPatcher-local`, `spelltome_yeeter` — spell-tome presentation; pick the one whose price/format matches the rest of the list.
-- `SynESLify` — **must** be the last patcher in the chain; ESLifies the output so the Synthesis output does not eat a hard load-order slot.
+- `Engarde_Synthesis` — applies `Engarde` combat fixes to all spell tomes. → `14`
+- `DisenchantEverything` (or `SmartDisenchantEverything`) — drops the disenchant restriction so `Mysticism`/`Odin`/`Apocalypse` enchantments can be learned from any item that carries them. → `14`
+- `Passive Enchanting Experience` — adds XP to enchantments worn in combat. → `14`
+- `Spell Research Synthesizer` — only if `Spell Research` is added. → `14`
+- `StaffGenerator`, `StaffDuplicator` — only if `Mysticism`/`Odin`/`Apocalypse` is the chosen magic overhaul; otherwise skip. → `14`
+- `SorcererPatcher` — only if `Sorcerer - A Staff and Scroll Overhaul` is added. → `14`
+- `ReadingIsGoodLegacy` — enables skill XP from book reading. → `14`
+- `AllBooksHavePerks` — random perk per book; configure per `modlist-08.md` world-content decision. → `14`
+- `SpellTomePriceFixPatcher`, `SynSpellTomeNameExtender`, `DisplaySpellTomeLevelPatcher-local`, `spelltome_yeeter` — spell-tome presentation; pick the one whose price/format matches the rest of the list. → `14`
+- `SynESLify` — **must** be the last patcher in the chain; ESLifies the output so the Synthesis output does not eat a hard load-order slot. → `14`
 
 #### Stage 6 — Snow, Weather, And Region
 
-- `BDSPatcher` — **required**. `Better Dynamic Snow SE` and `Better Dynamic Ash SE` are both locked in `modlist-02.md`. This patcher forwards BDS multistage snow and ash accumulation records to all mod-added objects (worldspace edits from `JK's Skyrim`, `Spaghetti's Cities`, `Cities of the North`, quest mods, and dungeon packs). Without it, mod-placed objects lack snow/ash coverage. Use the `BDSPatcher` entry (not `Northpoint BDSPatcher`). Configure to run with both `BetterDynamicSnow` and `BetterDynamicAsh` keywords active.
-- `SSBGPatcher` — `Stretched Snow Begone` synthesis patch; enable if the snow mesh ever stretches under doors or walls.
-- `Nights Adjuster` and `Darker Weather Nights` — pick one (not both) and configure to match the night darkness target in `modlist-02.md`.
-- `SkyVRaan Weather Patcher` — only if `SkyVRaan` is added.
-- `Unique Region Names` and `Unique Region Names Patcher` — pick one and use it to relabel exterior region names from `Skyrim` to the actual region (`Whiterun`, `The Rift`, etc.). Required because `Bruma`, `Falskaar`, and `Wyrmstooth` all need consistent region naming.
-- `RealisticWaterTwoPatcher` — forwards `Realistic Water Two` records so they do not get overwritten by other worldspace mods.
-- `Synthesis-BlendedShorelinesUniversal` — adjusts water values to blend with shores; required because `Spaghetti's Cities`, `Bruma`, and `JK's Skyrim` change shoreline geometry.
-- `LandscapePatcher` — only enable if the existing landscape texture stack is replaced; current stack (`Skyland AIO` + `Skurkbro's` + `Skyking Fantasia` + `Rally's Solstheim` + `Enhanced Rocks and Mountains`) is the lock-in.
-- `DestructibleSkyrimPatcher` — only enable if `Destructible Skyrim` is added; not in the current list.
+- `BDSPatcher` — **required**. `Better Dynamic Snow SE` and `Better Dynamic Ash SE` are both locked in `modlist-02.md`. This patcher forwards BDS multistage snow and ash accumulation records to all mod-added objects (worldspace edits from `JK's Skyrim`, `Spaghetti's Cities`, `Cities of the North`, quest mods, and dungeon packs). Without it, mod-placed objects lack snow/ash coverage. Use the `BDSPatcher` entry (not `Northpoint BDSPatcher`). Configure to run with both `BetterDynamicSnow` and `BetterDynamicAsh` keywords active. → `14`
+- `SSBGPatcher` — `Stretched Snow Begone` synthesis patch; enable if the snow mesh ever stretches under doors or walls. → `14`
+- `Nights Adjuster` and `Darker Weather Nights` — pick one (not both) and configure to match the night darkness target in `modlist-02.md`. → `14`
+- `SkyVRaan Weather Patcher` — only if `SkyVRaan` is added. → `14`
+- `Unique Region Names` and `Unique Region Names Patcher` — pick one and use it to relabel exterior region names from `Skyrim` to the actual region (`Whiterun`, `The Rift`, etc.). Required because `Bruma`, `Falskaar`, and `Wyrmstooth` all need consistent region naming. → `14`
+- `RealisticWaterTwoPatcher` — forwards `Realistic Water Two` records so they do not get overwritten by other worldspace mods. → `14`
+- `Synthesis-BlendedShorelinesUniversal` — adjusts water values to blend with shores; required because `Spaghetti's Cities`, `Bruma`, and `JK's Skyrim` change shoreline geometry. → `14`
+- `LandscapePatcher` — only enable if the existing landscape texture stack is replaced; current stack (`Skyland AIO` + `Skurkbro's` + `Skyking Fantasia` + `Rally's Solstheim` + `Enhanced Rocks and Mountains`) is the lock-in. → `14`
+- `DestructibleSkyrimPatcher` — only enable if `Destructible Skyrim` is added; not in the current list. → `14`
 
 #### Stage 7 — Trees, Flora, And Mesh Generators
 
-- `Pine Tree Rescaler` — rescales `Traverse the Ulvenwald` and `Happy Little Trees` pines to consistent scale.
-- `Tree Scaler`, `Tree 3D Editor`, `TreeWindEditor` — keep all three; configure each to its own subtree (a single rescaling pass hides per-tree problems).
-- `FloraFixer` — fixes flora respawning for the chosen grass stack (`Skoglendi`, `Origins of Forest`, `Mari's flora`).
-- `ImmersiveEquipmentMeshGen` and `AllGUDMeshGen` — only if the corresponding mods are added.
-- `Harvest Those Mammoth Tusks` — only if `Harvest Those Mammoth Tusks` is added.
-- `Meridiano/Synthesis-BlendedShorelinesUniversal` — already in Stage 6.
+- `Pine Tree Rescaler` — rescales `Traverse the Ulvenwald` and `Happy Little Trees` pines to consistent scale. → `14`
+- `Tree Scaler`, `Tree 3D Editor`, `TreeWindEditor` — keep all three; configure each to its own subtree (a single rescaling pass hides per-tree problems). → `14`
+- `FloraFixer` — fixes flora respawning for the chosen grass stack (`Skoglendi`, `Origins of Forest`, `Mari's flora`). → `14`
+- `ImmersiveEquipmentMeshGen` and `AllGUDMeshGen` — only if the corresponding mods are added. → `14`
+- `Harvest Those Mammoth Tusks` — only if `Harvest Those Mammoth Tusks` is added. → `14`
+- `Meridiano/Synthesis-BlendedShorelinesUniversal` — already in Stage 6. → `14`
 
 #### Stage 8 — Visuals And Lighting
 
-- `ELE Patcher` — `Enhanced Lighting for ENB`; the current stack uses `Community Shaders`, so skip.
-- `ENB Light Patcher` — only if an `ENB` preset is layered on top of `Community Shaders`; current list is CS-only.
-- `NoShadowsPatch` — only if a specific mod has a known shadow regression.
-- `Radial Blur Remover` — removes radial blur effects; enable because the current list has no `ENB` to give it character.
-- `Remove Edge Glow` — removes the active-effect edge glow from actors; pair with the `Apocalypse`/`Odin`/etc. decision in `modlist-05.md`.
-- `RemoveInteriorFogPatcher` — removes near/far fog from interior cells; conflicts with `AOS` and `Sounds of Skyrim Complete` reverb, so disable if those mods are present.
-- `RemoveLandscapeVertexColor` — removes vertex coloring from landscapes; enable only if the chosen landscape texture stack has been replaced.
+- `ELE Patcher` — `Enhanced Lighting for ENB`; the current stack uses `Community Shaders`, so skip. → `14`
+- `ENB Light Patcher` — only if an `ENB` preset is layered on top of `Community Shaders`; current list is CS-only. → `14`
+- `NoShadowsPatch` — only if a specific mod has a known shadow regression. → `14`
+- `Radial Blur Remover` — removes radial blur effects; enable because the current list has no `ENB` to give it character. → `14`
+- `Remove Edge Glow` — removes the active-effect edge glow from actors; pair with the `Apocalypse`/`Odin`/etc. decision in `modlist-05.md`. → `14`
+- `RemoveInteriorFogPatcher` — removes near/far fog from interior cells; conflicts with `AOS` and `Sounds of Skyrim Complete` reverb, so disable if those mods are present. → `14`
+- `RemoveLandscapeVertexColor` — removes vertex coloring from landscapes; enable only if the chosen landscape texture stack has been replaced. → `14`
 
 #### Stage 9 — Audio
 
-- `AOSISCSoundPatcher` — required: applies the changes from `AOS` and `Immersive Sounds - Compendium` to every mod in the list, so weapon/armor/object sound swaps propagate.
-- `TUDMFootstepPatcher` — only if `True Unleveled Dark Maul` or `Ultimate Dungeon Masters` is added; skip otherwise.
-- `Sounds of Seasons` — mutes crickets in winter; enable because the `Cathedral Weathers`/`Obsidian Weathers` chain already drives seasonal ambience.
-- `SFCOPaintingRemover` — only if `Snazzy's Furniture and Clutter Overhaul` is added; skip otherwise.
+- `AOSISCSoundPatcher` — required: applies the changes from `AOS` and `Immersive Sounds - Compendium` to every mod in the list, so weapon/armor/object sound swaps propagate. → `14`
+- `TUDMFootstepPatcher` — only if `True Unleveled Dark Maul` or `Ultimate Dungeon Masters` is added; skip otherwise. → `14`
+- `Sounds of Seasons` — mutes crickets in winter; enable because the `Cathedral Weathers`/`Obsidian Weathers` chain already drives seasonal ambience. → `14`
+- `SFCOPaintingRemover` — only if `Snazzy's Furniture and Clutter Overhaul` is added; skip otherwise. → `14`
 
 #### Stage 10 — Performance And Cleanup
 
-- `Grass FPS` — keep enabled; it patches grass records directly to the more efficient form.
-- `Configurable Grass Remover` — enable if `Elder Wilds` adopts the dense forest-floor route later.
-- `NavmeshCollector-Updated` — collects the winning navmesh records into one ESP; do **not** enable if `Bruma` or `Falskaar` is in the stack, because the navmeshes from those worldspace mods need to remain on their own plugins.
-- `Generic Synthesis Patcher` — rule-based forwarding patcher; configure with rules for the specific mods in the list that the other patchers do not cover.
+- `Grass FPS` — keep enabled; it patches grass records directly to the more efficient form. → `14`
+- `Configurable Grass Remover` — enable if `Elder Wilds` adopts the dense forest-floor route later. → `14`
+- `NavmeshCollector-Updated` — collects the winning navmesh records into one ESP; do **not** enable if `Bruma` or `Falskaar` is in the stack, because the navmeshes from those worldspace mods need to remain on their own plugins. → `14`
+- `Generic Synthesis Patcher` — rule-based forwarding patcher; configure with rules for the specific mods in the list that the other patchers do not cover. → `14`
 
 #### Stage 11 — Utility, Compatibility, And ESLification
 
-- `Patchifier` — generates `Skypatcher`/`INI` patches for SKSE-flag-driven tweaks.
-- `SynEDIDFixer` — fixes `SPID`-type mods that distribute objects by `EditorID`.
-- `SynStringMerger` — merges translation strings; do not enable unless the list is going to ship a translation layer.
-- `CellEditorIDFixer` — removes underscores from cell `EditorID`s; required because `Bruma`, `Falskaar`, `Wyrmstooth`, and `Beyond Reach` all introduce new cell names.
-- `SynPEXPatcher` — patches Papyrus scripts in mods based on configured files; enable per specific mod in the stack.
-- `SynPerkCOBJPatcher` (which is the actual `SynESLify`) — keep **at the end** of the chain, ESLify the output.
+- `Patchifier` — generates `Skypatcher`/`INI` patches for SKSE-flag-driven tweaks. → `14`
+- `SynEDIDFixer` — fixes `SPID`-type mods that distribute objects by `EditorID`. → `14`
+- `SynStringMerger` — merges translation strings; do not enable unless the list is going to ship a translation layer. → `14`
+- `CellEditorIDFixer` — removes underscores from cell `EditorID`s; required because `Bruma`, `Falskaar`, `Wyrmstooth`, and `Beyond Reach` all introduce new cell names. → `14`
+- `SynPEXPatcher` — patches Papyrus scripts in mods based on configured files; enable per specific mod in the stack. → `14`
+- `SynPerkCOBJPatcher` (which is the actual `SynESLify`) — keep **at the end** of the chain, ESLify the output. → `14`
 
 ### Build Order And Rebuild Triggers
 
@@ -634,25 +634,25 @@ Rebuilding one stage does not replace the stages after it. A `Bashed Patch` rebu
 
 ### Risks & Compatibility
 
-- `Bashed Patch` and `Synthesis` both write into the same load-order range. Place the `Bashed Patch` above the `Synthesis` patch only if a known conflict needs the Bashed Patch to win; otherwise the `Synthesis` patch should be the last patch in the load order to let its overrides stand.
-- `SynESLify` (Stage 5 / Stage 11) **must** be last. If it is not, the patchers after it will re-materialize a hard slot and the merge order breaks.
-- The `Tweak Settings` list in the `Bashed Patch` is sensitive to load order: if a mod that already provides a setting (for example `RAID` setting `AI: Conversation Chance` to zero) is loaded **above** the `Bashed Patch`, the `Bashed Patch` tweak will silently lose. Check the load order with `LOOT` and re-run `xEdit` to verify which record is winning for each tweaked setting.
-- `Tweak Settings: World: Timescale = 20` bakes into saves. Do not change this setting on a long-running test save.
-- `Skyrim-LeveledLoot` and `OWL` overlap on leveled list contents. Run `OWLLeveledListAddition` first (Stage 3) so `Skyrim-LeveledLoot` reads the merged view; running in the wrong order produces a list that does not include `Immersive Weapons`/`Immersive Armors` entries.
-- `AOSISCSoundPatcher` requires that `AOS` and `ISC` are both active when the patcher runs. If only one is active, the patcher will write half the rules and the other mod's effects will not propagate.
-- `HP_NPC_WIGS_TO_HEADPART` and `KS Hairs Bald Helmets Fixer` both touch headpart records. Run `HP_NPC_WIGS_TO_HEADPART` first; otherwise the bald-helmet fix may not find the converted headparts to attach to.
-- `Generic Synthesis Patcher` is a footgun in this list because the rule engine will apply to records already covered by the named patchers. Keep its ruleset empty until a specific conflict is identified.
-- `SynStringMerger` will produce a translation patch that other patchers do not see. Disable it unless the list ships a translation layer.
-- `NavmeshCollector-Updated` is dangerous with `Bruma` and `Falskaar`. Do not enable it while those worldspace mods are active.
+- `Bashed Patch` and `Synthesis` both write into the same load-order range. Place the `Bashed Patch` above the `Synthesis` patch only if a known conflict needs the Bashed Patch to win; otherwise the `Synthesis` patch should be the last patch in the load order to let its overrides stand. → `14`
+- `SynESLify` (Stage 5 / Stage 11) **must** be last. If it is not, the patchers after it will re-materialize a hard slot and the merge order breaks. → `14`
+- The `Tweak Settings` list in the `Bashed Patch` is sensitive to load order: if a mod that already provides a setting (for example `RAID` setting `AI: Conversation Chance` to zero) is loaded **above** the `Bashed Patch`, the `Bashed Patch` tweak will silently lose. Check the load order with `LOOT` and re-run `xEdit` to verify which record is winning for each tweaked setting. → `14`
+- `Tweak Settings: World: Timescale = 20` bakes into saves. Do not change this setting on a long-running test save. → `14`
+- `Skyrim-LeveledLoot` and `OWL` overlap on leveled list contents. Run `OWLLeveledListAddition` first (Stage 3) so `Skyrim-LeveledLoot` reads the merged view; running in the wrong order produces a list that does not include `Immersive Weapons`/`Immersive Armors` entries. → `14`
+- `AOSISCSoundPatcher` requires that `AOS` and `ISC` are both active when the patcher runs. If only one is active, the patcher will write half the rules and the other mod's effects will not propagate. → `14`
+- `HP_NPC_WIGS_TO_HEADPART` and `KS Hairs Bald Helmets Fixer` both touch headpart records. Run `HP_NPC_WIGS_TO_HEADPART` first; otherwise the bald-helmet fix may not find the converted headparts to attach to. → `14`
+- `Generic Synthesis Patcher` is a footgun in this list because the rule engine will apply to records already covered by the named patchers. Keep its ruleset empty until a specific conflict is identified. → `14`
+- `SynStringMerger` will produce a translation patch that other patchers do not see. Disable it unless the list ships a translation layer. → `14`
+- `NavmeshCollector-Updated` is dangerous with `Bruma` and `Falskaar`. Do not enable it while those worldspace mods are active. → `14`
 
 ### Acceptance Criteria
 
-- The `Bashed Patch` is built with the exact `Tweak Settings` and `Bash Tags` listed above. The patch CRC is recorded in the build log and re-checked after every rebuild.
-- The `Synthesis` patcher list matches the stage ordering in this section, with patchers from stages that are not currently applicable explicitly disabled (and not removed) so they can be re-enabled without re-reading the config.
-- A deliberate test that disables `Immersive Weapons`, `Immersive Armors`, `Hunterborn`, or `Open World Loot` causes the corresponding `Bash Tag` to lose its source plugin and the merged leveled list to shrink predictably. The Bashed Patch still builds, just smaller.
-- A deliberate test that disables `RAID` causes `AI Stealth Overhaul` to log a warning and `Followers-are-Sneaky` to be the only detection-related patcher running. No silent failure.
+- The `Bashed Patch` is built with the exact `Tweak Settings` and `Bash Tags` listed above. The patch CRC is recorded in the build log and re-checked after every rebuild. → `14`
+- The `Synthesis` patcher list matches the stage ordering in this section, with patchers from stages that are not currently applicable explicitly disabled (and not removed) so they can be re-enabled without re-reading the config. → `14`
+- A deliberate test that disables `Immersive Weapons`, `Immersive Armors`, `Hunterborn`, or `Open World Loot` causes the corresponding `Bash Tag` to lose its source plugin and the merged leveled list to shrink predictably. The Bashed Patch still builds, just smaller. → `14`
+- A deliberate test that disables `RAID` causes `AI Stealth Overhaul` to log a warning and `Followers-are-Sneaky` to be the only detection-related patcher running. No silent failure. → `14`
 - A deliberate test that reorders `SynESLify` out of the last position causes the `Synthesis` patch to take a hard load-order slot and `LOOT` to flag the new entry. Reordering back to last resolves the flag.
-- Every `Tweak Settings` entry enabled in the `Bashed Patch` is verified by a deliberate save-load test: change a tweak value, reload, observe the gameplay effect, and revert. Settings that cannot be verified are not enabled.
+- Every `Tweak Settings` entry enabled in the `Bashed Patch` is verified by a deliberate save-load test: change a tweak value, reload, observe the gameplay effect, and revert. Settings that cannot be verified are not enabled. → `14`
 
 ## Post-Install Smoke Test
 

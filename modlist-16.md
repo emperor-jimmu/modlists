@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `15 Adult Content`
 
-## Framework Prerequisites
+## Framework → `15` Prerequisites
 
 ### Core Idea
 
@@ -12,7 +12,7 @@ This subsection owns the animation framework that supports the romance, dialogue
 
 - **OStim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/98163> (v7.4 Apr 2026) — the modern adult animation framework for Skyrim SE/AE. Standalone means it does not require OSA or any legacy dependency. It provides the animation system that OStim Romance and the Amorous Adventures OStim patch build on. The maintained branch after OStim NG.
 - **OStim Community Resource** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106519> — a shared framework and dependency required by various OStim add-on mods. Install alongside OStim Standalone as a prerequisite for the broader OStim ecosystem.
-- **Animation packs for OStim Standalone**: the recommended baseline is `Open Animations Romance and Erotica (OARE)`. Additional coverage from **Additional Leito's Animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/104995> (Leito's set, ~150 animations) and **Anub's animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/101918> (~685 animations). Both expand scene variety substantially beyond the baseline OARE pack.
+- **Animation packs for OStim Standalone**: the recommended baseline is `Open Animations Romance and Erotica (OARE)`. Additional coverage from **Additional Leito's Animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/104995> (Leito's set, ~150 animations) and **Anub's animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/101918> (~685 animations). Both expand scene variety substantially beyond the baseline OARE pack. → `15`
 - **PPA - Procedural Penis Animations** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172002> — procedural physics addon that animates and aligns the penis with visual collision. Designed to work with CBPC. Adds physical believability to OStim scenes without replacing the animation framework.
 - **OSmp - Automatic SMP physics toggle for OStim** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72547> — automatically toggles SMP physics on/off for player and NPCs during OStim scenes. ESL-flagged, supports CBBE 3BA and HIMBO. Keeps physics active without manual management.
 - **Female Moan Voicesets For Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121383> — 38 female moan/climax voicesets keyed to voice types, giving different NPCs distinct moans.
@@ -43,7 +43,7 @@ Add **OCum Ascended** as the orgasm-mechanics layer on top of the framework. It 
 - OStim Romance and the AA OStim patch load without missing master errors.
 - The stack does not require or load OSA or SexLab.
 
-## Romance Quests
+## Romance Quests → `15`
 
 ### Core Idea
 
@@ -95,7 +95,7 @@ Do not treat OStim Romance as a replacement for AA. Their tone and coverage diff
 - No missing master errors or script conflicts at load.
 - OStim Romance interactions do not break AA quest scenes on the same NPCs.
 
-## Transactional/Prostitution Content
+## Transactional → `15`/Prostitution Content
 
 ### Core Idea
 
@@ -129,7 +129,7 @@ Keep **OStim Profession** as a tracked alternative for future evaluation, but do
 - The mod works with OStim Standalone without requiring SexLab.
 - The system integrates naturally into taverns and temples rather than feeling like a standalone activity hub.
 
-## Ambient Adult NPCs And Tavern Content
+## Ambient Adult → `15` NPCs And Tavern Content
 
 ### Core Idea
 
@@ -137,7 +137,7 @@ This subsection owns ambient adult NPCs added to taverns and inns — not follow
 
 ### Options
 
-- **Immersive Wenches** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/595> — adds wenches (serving wenches, barmaids, maid wenches) to every inn in Skyrim with custom scenes, dialogue, barmaid services, and quests. Visible community signal includes troubleshooting reports; evaluate stability before locking into the load order. Previously flagged as rejected in `modlist-09.md` due to support concerns; added here per explicit user request.
+- **Immersive Wenches** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/595> — adds wenches (serving wenches, barmaids, maid wenches) to every inn in Skyrim with custom scenes, dialogue, barmaid services, and quests. Visible community signal includes troubleshooting reports; evaluate stability before locking into the load order. Previously flagged as rejected in `modlist-09.md` due to support concerns; added here per explicit user request. → `15`
 - **Immersive Wenches SE 2 - Ostim Patch** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/152991> — bridges Immersive Wenches scenes to play through OStim Standalone instead of fade-to-black. Requires both Immersive Wenches and OStim Standalone.
 - **Immersive Wenches Dialogue Boost** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120307> — adds 1,000+ custom voice lines for the ten most-used voice types in Immersive Wenches, tweaks player dialogue, and expands written content (buff/description/quest text). Plug-and-play add-on with no conflicts with the OStim patch or Buxom Wench Yuriana.
 
@@ -159,7 +159,7 @@ Add **Immersive Wenches** as an ambient tavern layer. It populates inns with NPC
 - No crashes or script lag in populated inns after multiple visits.
 - The OStim patch loads without missing master errors.
 
-## Dialogue Expansions With Adult Content
+## Dialogue Expansions → `15` With Adult Content
 
 ### Core Idea
 
