@@ -210,6 +210,38 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - The distinction between practical shelters, guarded crossings, and lightweight discoverable ruins stays explicit.
 - The chosen direction improves ordinary travel and off-road curiosity without duplicating section-07 ownership.
 
+## Underwater Content
+
+### Core Idea
+
+- This subsection owns underwater world enhancement and discoverable underwater content: visual overhauls to the seafloor, underwater flora and fauna, and lootable treasure locations beneath the surface.
+- Depths of Skyrim provides the visual and environmental overhaul of the Sea of Ghosts; More Underwater Treasures adds discoverable loot locations throughout Skyrim and Solstheim.
+
+### Options
+
+- Underwater visual overhaul route: `Depths of Skyrim - An Underwater Overhaul SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/26913>
+- Underwater mesh fixes companion: `Depths of Skyrim - Mesh fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174995>
+- Underwater treasure content route: `More Underwater Treasures - AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/128247>
+
+### Recommendation
+
+- Use all three together. Depths of Skyrim overhauls the underwater environment (new grass, coral, giant kelp, 1000+ fish, unmarked treasures, horker groups, exposed-rock fixes, ocean-floor seam fixes) and specifically targets the Sea of Ghosts. The mesh fixes companion resolves known visual issues in the base mod. More Underwater Treasures adds 56 underwater treasures across Skyrim and 35 across Solstheim with clean landscape edits, vanilla chest replacements, and is explicitly marked **Compatible** with Depths of Skyrim.
+- Use **SSE-Terrain-Tamriel-Extend.esm** (documented in `modlist-15.md`) as the terrain-boundary ESM for LOD generation, because Depths of Skyrim adds content in the Sea of Ghosts north of the standard terrain-data boundary.
+
+### Risks & Compatibility
+
+- Depths of Skyrim requires `iMaxGrassTypesPerTexure=7` or above in `Skyrim.ini` — document this in `guide.md`.
+- Depths of Skyrim is script-free but adds 1000+ fish references; verify this does not create unexpected Papyrus load or navmesh pressure alongside other world-content mods.
+- More Underwater Treasures has replaced landscape edits with vanilla chests; confirm this still works with any mod that overhauls the same underwater cells.
+- Underwater visual changes may interact with the chosen water mod (Water for ENB / Realistic Water Two / A Water Made For CS in mind) — test underwater visibility and seafloor blending.
+
+### Acceptance Criteria
+
+- The Sea of Ghosts has visible kelp forests, coral, and fish populations when explored underwater.
+- Underwater treasures are discoverable at the listed locations and contain appropriate leveled loot.
+- No underwater-cell conflicts between Depths of Skyrim, More Underwater Treasures, and the chosen water mod.
+- `SSE-Terrain-Tamriel-Extend.esm` is loaded during xLODGen terrain LOD generation and provides LOD coverage for the extended northern cells.
+
 ## Side Activities: Fishing, Hunting, And Downtime
 
 ### Core Idea

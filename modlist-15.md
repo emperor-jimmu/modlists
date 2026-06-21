@@ -265,6 +265,8 @@
 
 - Configure the MO2 executable as `xLODGenx64.exe -lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"`.
 - Use `xLODGen` only for terrain LOD in this workflow.
+- Use **SSE-Terrain-Tamriel-Extend.esm** as the terrain-boundary resource for LOD generation. It restores terrain data for cells further north into the Sea of Ghosts, providing complete LOD coverage for mods that add content in the northern ocean (notably `Depths of Skyrim` from `modlist-08.md`). Only one terrain-boundary ESM should be active at a time; the base `SSE-Terrain-Tamriel.esm` (no northern extension) is the fallback if no mod uses Sea of Ghosts cells. Load the chosen ESM as early as possible in the load order (lowest priority) so other plugins overwriting or adding land records take precedence. Only required during LOD generation — no harm leaving it active in-game, but it has no gameplay effect outside the far cells.
+- Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/???> — `SSE-Terrain-Tamriel-Extend.esm` is distributed via the xLODGen forum post on STEP; the Mega mirror is: <https://mega.nz/file/FAwmiAzS#pNDTBiaytL8e9uLhZXD-GmfB4TYD__3v3QJdX-lc72c> (base) and <https://mega.nz/file/hUpwDKwQ#gleApgKP1Jwka7Jm9M4oVQSk-bM0RWcOu8dFSc3m2_A> (Extend).
 - Select all worldspaces.
 - Ensure only `Terrain LOD` is ticked in the right pane.
 - Leave `Brightness`, `Contrast`, and `Gamma` at defaults unless the list is intentionally following the STEP / `Cathedral Landscapes` terrain pipeline; outside that narrow case, use `Gamma 1.00`.

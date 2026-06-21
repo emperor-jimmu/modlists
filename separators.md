@@ -50,6 +50,7 @@
 -#4B7C4B 08a Overhauls-
 -#4B7C4B 08b Quests-
 -#4B7C4B 08c Homes & Bases-
+-#4B7C4B 08d Underwater-
 
 -#9E5C7C 09 NPCs-
 -#9E5C7C 09a Appearance-
