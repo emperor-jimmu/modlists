@@ -232,6 +232,7 @@
 ### Options
 
 - Restrained route: keep voices mostly vanilla and focus on music and sound-effects improvements.
+- NPC voice-diversity route: `Skyrim Revoiced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/163710> — introduces new voice types for NPCs using professional voice actors, reducing the number of NPCs sharing the same voice. Covers 81 NPCs with 14 voice types and 7500+ lines (v2.0). Requires FormList Manipulator. Skypatcher version available for maximum compatibility with NPC overhauls.
 - Giant and large-creature route: `Colossus -Giants SFX Voice Rework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52041>
 - Ghost and undead-presence route: `Phantasmagoria -Ghosts SFX Voice Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50060>
 - Daedric-entity stylization route: `Daedric Enigma -Daedric Princes Voice Rework- SSE (Old Version)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/35529>
@@ -240,7 +241,8 @@
 
 ### Recommendation
 
-- Stay restrained for ordinary NPC dialogue.
+- Stay restrained for ordinary NPC dialogue — the vanilla voice pool, though repetitive, is consistently produced and avoids the tonal mismatch risk of introducing new actors into existing roles.
+- Keep `Skyrim Revoiced` as the primary NPC voice-diversity comparison if the repetition of shared vanilla voice types becomes a noticeable immersion issue in testing. Its professional actor recordings and Skypatcher-based distribution (no direct NPC record edits) make it lower-risk than AI-voiced alternatives. Treat it as a targeted NPC voice upgrade, not a full voice overhaul — it only touches 81 NPCs with 14 new voice types.
 - Keep `Colossus` as the first creature-voice specialization comparison because giant encounters are rare enough to feel special but common enough to judge in normal play.
 - Keep `Phantasmagoria` as the main ghost-side comparison if undead ambience and ghost presence still feel weak after the broad framework lands.
 - Keep `Daedric Enigma` as the higher-stylization branch only if the list later decides major Daedric encounters should sound much more authored than vanilla.
@@ -251,6 +253,8 @@
 ### Risks & Compatibility
 
 - Voice-side audio redesign can alter Skyrim's identity more abruptly than almost any other audio category.
+- `Skyrim Revoiced` requires `FormList Manipulator` and optionally `Skypatcher` — add these to the dependency tracking in `modlist-01.md` if locked.
+- NPC voice replacers can clash with custom followers or mod-added dialogue; confirm compatibility with any locked custom followers from `modlist-09.md`.
 - Creature-call and entity-voice reworks can become theatrical very quickly if several stylized branches are stacked together.
 - It is easy to mix up missing subtitle or silent-voice support with a true need for voice redesign.
 - Audio bundles that touch voices, UI, combat, and ambience all at once can create messy ownership boundaries across sections.

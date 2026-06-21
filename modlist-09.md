@@ -256,6 +256,35 @@ Keep `No Predators on roads` as the comparison if the frustration is specificall
 - Any broader wildlife mod documented with a clear reason it is not the clean baseline.
 - The chosen direction improves scale and rarity without duplicating section-07 ecology or making the landscape feel dead.
 
+## Custom Followers
+
+### Core Idea
+
+This subsection owns custom fully-voiced follower additions — new NPCs with authored dialogue, quest commentary, and personal content that expand the companion layer beyond vanilla followers.
+
+### Options
+
+- Scholar-follower baseline: `Lucien - Immersive Fully Voiced Male Follower` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20035> — a fully voiced Imperial scholar with 5000+ lines, personal quest, and commentary on vanilla quests, Creation Club content, and modded locations. Grows from a cowardly scholar into a capable hero. Anniversary Edition All-In-One Creation Club patch available. LoTD-aware.
+
+### Recommendation
+
+- Start with `Lucien` as the custom-follower baseline. He fits the "lots of new content" pillar with extensive quest commentary across vanilla and AE content, and his scholar-to-hero arc avoids power-fantasy follower tropes. Has strong community reputation (12K+ endorsements) and extensive cross-mod integration (Inigo banter, LoTD patches, FDE-style expansion mods).
+
+### Risks & Compatibility
+
+- Custom followers add plugin count (Lucien and his AE patch are ESL-flagged, no impact on 254 limit).
+- Lucien's Creation Club patch is required for AE content awareness; without it he only comments on vanilla quests.
+- Confirm compatibility with the chosen NPC appearance overhaul to avoid facegen issues.
+- Coordinate with modlist-08 if other custom followers (Val Serano) are locked — follower-banter patches may be needed.
+
+### Acceptance Criteria
+
+- Lucien delivers quest-aware commentary during normal gameplay without overriding vanilla dialogue.
+- His personal quest triggers correctly and progresses through all stages.
+- Facegen matches the chosen NPC appearance baseline (no blackface).
+- AE patch functions correctly with the full Creation Club content set.
+- Cross-follower banter (if Inigo or other custom followers are added) plays without missing audio.
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

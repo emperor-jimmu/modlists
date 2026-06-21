@@ -55,6 +55,7 @@
 -#9E5C7C 09a Appearance-
 -#9E5C7C 09b Enemies & Creatures-
 -#9E5C7C 09c Population-
+-#9E5C7C 09d Followers-
 
 -#5B7C9E 10 Audio-
 -#5B7C9E 10a Music-

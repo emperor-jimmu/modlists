@@ -134,6 +134,7 @@
 - Balanced modern route: `Mysticism - A Magic Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/27839>
 - Moderate expansion route: `Odin - Skyrim Magic Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46000>
 - High-expression route: `Apocalypse - Magic of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1090>
+- Standalone spell-pack route: `Lost Grimoire SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4455> — adds 115+ lore-friendly spells across all schools with matching scrolls and staves. Standalone design compatible with any primary overhaul. No continuously running scripts. 6.9K endorsements.
 - Compatibility note: `Mysticism` and `Odin` should be treated as competing primary overhauls, not a default combined baseline; if the list later explores combined setups, that should be a deliberate compatibility project.
 
 ### Recommendation

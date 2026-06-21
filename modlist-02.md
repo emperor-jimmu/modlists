@@ -142,6 +142,7 @@
 #### Priority 1 Candidate Mods
 
 - Broad starter coverage: `Faultier's PBR Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/125308>
+- Full-vanilla PBR conversion: `Vanilla PBR AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174091> — converts all vanilla textures to PBR materials. Broadest coverage option but higher VRAM cost than targeted city packs. Evaluate as an alternative direction to the targeted per-city approach.
 - Whiterun: `Tomato's PBR Whiterun` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135771>
 - Farmhouses: `Tomato's PBR Farmhouses 2.0` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135774>
 - Markarth and Dwemer: `PBaRkarth - PBR texture mod for Markarth and Dwemer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/144535>
@@ -922,6 +923,10 @@ Male variety on `HIMBO`:
 ### Options
 
 - Aurora-focused route: `AURORA S.E.` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6021>
+- Galaxy texture route: `Realistic Galaxy` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111458>
+- Complete night-sky overhaul route: `Rally's Celestial Canvas` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/110869> — replaces auroras, galaxy, stars, and constellations with higher-fidelity hand-drawn textures. 8K galaxy, 4K stars, 1K constellations.
+- Star-field texture route: `Ultra Hi-Res Nightsky` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6096> — high-resolution galaxy texture replacer using Hubble imagery, up to 16K.
+- Telescopic night-sky route: `Worlds Behind Glass - Telescopic Night Sky Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/158077> — high-res night sky designed for use with telescope mods (KettleWitch's Telescope, Clear Skies Telescope). Rewards exploration with detailed celestial views.
 - Discipline-first route: rely on the chosen weather mod's bundled star or sky textures and skip the dedicated sky subsection entirely.
 - Deferred high-commitment branch: do not add a full sky-dome or constellation overhaul unless real playtesting proves the night sky needs more than the weather baseline provides.
 
