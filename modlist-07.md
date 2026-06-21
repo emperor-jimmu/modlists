@@ -19,7 +19,7 @@
 - Start with `Time Flies SE` as the strongest first-pass baseline because it makes ordinary play loops feel more grounded without turning the whole subsection into abstract clock tuning.
 - Keep `Dynamic Timescale - Remade` as the meaningful comparison if the project wants softer pacing control through environment-aware time shifts instead of direct action-time costs.
 - Keep `Seasonal Calendar` as the narrower companion if the final weather-and-season direction makes explicit calendar readability worthwhile.
-- Treat `Seasons of Skyrim SKSE` as the high-commitment seasonal-world branch. It is a mature, well-supported framework (actively maintained as of mid-2025) and delivers genuinely dramatic seasonal world changes. The cost is real: four separate DynDOLOD generation passes, four grass caches, and a meaningful patch footprint (Lux, the grass stack, tree mods). Only adopt it if the project is prepared to own that LOD-generation workflow — but if the list is already running DynDOLOD for a 4K setup, the additional passes are the main extra cost and the payoff is substantial.
+- Treat `Seasons of Skyrim SKSE` as the high-commitment seasonal-world branch. It is a mature, well-supported framework (v1.8.6, last updated June 2025, AE 1.6.1130+ compatible) and delivers genuinely dramatic seasonal world changes. The cost is real: four separate DynDOLOD generation passes, four grass caches, and a meaningful patch footprint (Lux, the grass stack, tree mods). Only adopt it if the project is prepared to own that LOD-generation workflow — but if the list is already running DynDOLOD for a 4K setup, the additional passes are the main extra cost and the payoff is substantial.
 - Add `Turn of the Seasons` as a companion to the framework only if `Seasons of Skyrim SKSE` is adopted; it adds visual assets for the three non-winter seasons and is worth having if seasons are a real part of the list identity.
 - Preserve boundaries with later travel rules, survival pacing, night visibility, and graphics-side weather decisions.
 
@@ -46,9 +46,9 @@
 
 ### Options
 
-- Carriage-and-ferry baseline: `Carriage and Ferry Travel Overhaul (Formerly Complete Fast Travel Overhaul)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8379>
+- Carriage-and-ferry baseline: `Carriage and Ferry Travel Overhaul (Formerly Complete Fast Travel Overhaul)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8379> (last updated November 2020; stable and widely used, but verify AE 1.6.1170 compatibility as the mod predates the Anniversary Edition)
 - Route-coverage route: `Carriage Stops of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10434>
-- Gold-pressure route: `Fast Travel Cost` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20200>
+- Gold-pressure route: `Fast Travel Cost` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20200> (last updated September 2018; simple script mod that still functions, but check for AE compatibility)
 - Camping-and-rest route: `Campfire - Complete Camping System (Supports Skyrim VR)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/667>
 - Carriage-driver dialogue route: `Carriage Drivers Are Alive` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51260> — gives carriage drivers names, schedules, and dialogue, making them feel like real people rather than silent services. Complements the carriage-overhaul baseline without conflicting with it.
 - Carriage-and-stable dialogue bundle route: `Carriages and Stables Dialogue Bundle` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79297> — adds dialogue and interactions for carriage drivers and stable owners, including bribes, rumors, and destination chat. Complements `Carriage Drivers Are Alive` and the carriage-overhaul baseline.
@@ -149,7 +149,7 @@
 ### Options
 
 - Light urban-density route: `Spaghetti's Cities - AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/84735>
-- Stronger city-core expansion route: `Dawn of Skyrim (Director's Cut) SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9074>
+- Stronger city-core expansion route: `Dawn of Skyrim (Director's Cut) SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9074> (last updated June 2020; a complete overhaul that remains functional, but its age means narrower compatibility with newer city and worldspace mods)
 - Heavier all-in-one transformation route: `JK's Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6289>
 
 ### Recommendation
@@ -180,8 +180,8 @@
 
 ### Options
 
-- Broad landmark route: `Ancient Land` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22900>
-- Light roadside-texture route: `Interesting Roads` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/42749>
+- Broad landmark route: `Ancient Land` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22900> (last updated November 2020; static worldspace edits that still function, but verify compatibility with the chosen road, tree, and snow stacks)
+- Light roadside-texture route: `Interesting Roads` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/42749> (last updated November 2020; asset-only additions, low compatibility risk but check for clipping with city or road overhauls)
 - Road-guidance route: `Point The Way` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/352>
 
 ### Recommendation
@@ -213,10 +213,10 @@
 
 ### Options
 
-- Wildlife-variety route: `Animallica SE - Skyrim Wildlife Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20456>
-- Ecology-tuning route: `One With Nature - Dynamic Animals and Creatures SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13343>
+- Wildlife-variety route: `Animallica SE - Skyrim Wildlife Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20456> (last updated October 2018; consider `Bears of the North` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/40688>, `Wolves of the North` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/40689>, or `Diverse Dragons Collection SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/695> as more modern creature additions)
+- Ecology-tuning route: `One With Nature - Dynamic Animals and Creatures SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13343> (last updated September 2019; script-heavy mod — verify AE compatibility and confirm no save-bloat risk before adopting)
 - Heavier danger-and-behavior route: `Savage Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37768>
-- Insect-behavior route: `Butterflies Land True` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29434> — makes butterflies land on surfaces and flowers instead of hovering endlessly, adding a small but noticeable wildlife-behavior improvement. ESL-flagged, zero script overhead.
+- Insect-behavior route: `Butterflies Land True` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29434> (last updated October 2019; a simple mesh replacer with zero scripts — ESL-flagged, unlikely to break, and still functional) — makes butterflies land on surfaces and flowers instead of hovering endlessly, adding a small but noticeable wildlife-behavior improvement.
 
 ### Recommendation
 
@@ -224,7 +224,7 @@
 - Keep `One With Nature` as the meaningful comparison if the bigger weakness is creature relationship tuning and ecological feel rather than raw wildlife variety.
 - Add `Butterflies Land True` as a lightweight insect-behavior layer. It makes butterflies land on surfaces rather than hovering indefinitely — a small visual and behavioral upgrade that makes the wilderness feel more biologically grounded without affecting gameplay or adding scripts.
 - Keep `Savage Skyrim` as the deliberate heavier branch only if the list truly wants wilderness creatures to become much more threatening and physically intense as part of the world-feel identity.
-- Consider `Frogs - Mihail Monsters and Animals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120998> as a lightweight creature ambient addition. Adds harmless frogs (4 variants) in lakes and puddles with new food items (frog legs). ESL-flagged, 2,982 endorsements, lore-friendly, negligible performance impact.
+- Consider `Frogs - Mihail Monsters and Animals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120998> as a lightweight creature ambient addition. Adds harmless frogs (4 variants) in lakes and puddles with new food items (frog legs). ESL-flagged, 2,986 endorsements, lore-friendly, negligible performance impact.
 - Keep creature-animation ownership in `modlist-03.md`, encounter-density ownership earlier in section 07, and broader world-content additions in later sections.
 
 ### Risks & Compatibility
@@ -300,7 +300,7 @@
 ### Risks & Compatibility
 
 - Dynamic wind is a visual-enhancement layer, not a gameplay system. If performance is a concern, it is the easiest subsection to skip without breaking anything else.
-- The framework is maintained by RavenKZP and has been stable since its mid-2025 release, but it is a relatively new mod (post-June 2025). Verify it works cleanly with the chosen tree mod, grass stack, and ENB/community shader before treating it as locked.
+- The framework is maintained by RavenKZP and has been stable since its mid-2025 release (last updated May 2026). Verify it works cleanly with the chosen tree mod, grass stack, and ENB/community shader before locking it in.
 
 ### Acceptance Criteria
 
@@ -317,15 +317,17 @@
 
 ### Options
 
-- Darkness-first route: `Simply Darker Nights (SSE)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14269>
-- World-lighting support route: `Lanterns of Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2429>
-- Carried-visibility route: `Wearable Lanterns` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/7560>
+- Darkness-first route: if the list already runs a weather mod and ENB/Community Shaders, nighttime darkness is set at the weather or image-space level. A standalone darkness tweak may be redundant. For a dedicated darkness pass where weather alone does not go far enough, `Simply Darker Nights (SSE)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14269> (last updated April 2018) still works as a simple image-space edit, but its age means it may not be needed — test with the chosen weather and shader stack first.
+- World-lighting support route (modern baseline): the Lux ecosystem is the current gold standard. `Lux Via` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63588> adds road lanterns, braziers, and ambient world lighting with a comprehensive FOMOD and patch collection (v2.2, last updated February 2025, 28K endorsements). Part of the broader Lux (interior) and Lux Orbis (exterior city) suite. `Lanterns of Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2429> (last updated November 2016) and `CLARALUX SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2371> (last updated July 2017) are both too old to recommend as baselines for a 2026 modlist.
+- Carried-visibility route (modern baseline): `Simple Wearable Lanterns - Remastered` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/132196> (v1, last updated October 2024, 3,246 endorsements) — 4 craftable lantern variants (Iron/Magic/Alchemist/Dwemer), no fuel system, no SKSE requirement, clean integration with leveled lists. A lightweight vanilla+ replacement for `Wearable Lanterns` (last updated January 2017).
+- Carried-visibility route (full-featured alternative): `Torches Candlelight and Lanterns` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162694> (v1.12+, last updated February 2026, 600 endorsements) — 26 unique lanterns with HDT-SMP physics, dynamic hand/hip switching in combat, SPID-based NPC distribution, and optional fuel system. Requires Base Object Swapper and MCM Helper. The most modern and feature-rich option if the list already runs BOS.
+- Carried-visibility route (survival-oriented alternative): `Realistic Usable Lanterns` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/110563> (v1.3, last updated June 2026, 116 endorsements) — 9 handheld candle-lantern variants, craft/buy/find, optional finite candles. Lightweight, no SKSE dependency. Fits a survival-oriented list with Campfire or SunHelm.
 
 ### Recommendation
 
-- Start with `Simply Darker Nights (SSE)` as the strongest first-pass baseline because it directly answers whether nighttime in `Elder Wilds` should actually feel darker and more atmospheric during travel.
-- Keep `Lanterns of Skyrim SE` as the meaningful comparison if the real weakness is not darkness itself, but how poorly roads and travel paths read once night falls.
-- Keep `Wearable Lanterns` as the deliberate carried-visibility branch if the project wants nights to remain dark overall but still wants player-controlled visibility support instead of more fixed world lighting.
+- The darkness baseline should come from the weather mod and ENB/Community Shaders pair selected in `modlist-02.md` first. If nights still need more punch after that stack is locked, add `Simply Darker Nights (SSE)` as a simple image-space overlay, but verify it is not redundant.
+- Set `Lux Via` as the modern world-lighting baseline if the list needs roads and travel paths to read clearly at night. It is actively maintained (v2.2, February 2025), has a large patch ecosystem, and integrates with the broader Lux family if the list also adopts Lux for interiors. The 2016-era `Lanterns of Skyrim SE` and 2017-era `CLARALUX SSE` are not recommended as baselines — both are functionally superseded.
+- Add `Simple Wearable Lanterns - Remastered` as the preferred carried-visibility branch. It is modern, lightweight, requires no SKSE, and covers the basic use case (player-controlled portable light) without feature creep. The `Torches Candlelight and Lanterns` path is the better choice if the list wants physics-equipped lanterns, NPC distribution, and hotkey-driven hand/hip switching, but the BOS and MCM Helper requirements mean it is a heavier dependency. `Realistic Usable Lanterns` is the right fit for a survival-oriented list that wants finite candles as a consumable resource rather than unlimited magic light.
 - Keep this subsection about nighttime feel and travel readability rather than generic display calibration, graphics-lighting philosophy, or survival maintenance.
 
 ### Risks & Compatibility
@@ -333,11 +335,13 @@
 - Weak night mood can trigger stacking several visibility systems at once and losing control of the overall night identity.
 - Nights can be made darker in theory but then undermined with so much added light support that the mood barely changes.
 - A carried-light solution can become a constant crutch instead of a deliberate travel tool.
+- `Lux Via` is a worldspace-editing mod that requires patches for city overhauls, road mods, and new-worldspace content. The patch collection is extensive but must be maintained as the modlist grows. This is a known cost, not a surprise — factor it into the patch-maintenance budget.
+- `Torches Candlelight and Lanterns` with HDT-SMP physics requires FSMP (Faster HDT-SMP) and may have a performance cost on lower-end systems. The non-SMP option mitigates this.
 
 ### Acceptance Criteria
 
-- One clearly preferred darkness-first baseline, one meaningful fixed-world-lighting comparison, and one distinct carried-visibility branch are documented.
-- The distinction between darker-night mood, world-lighting support, and carried visibility is explicit.
+- One clearly preferred darkness source (weather/shader stack, with optional `Simply Darker Nights` overlay), one modern world-lighting baseline (`Lux Via`), and one carried-visibility baseline (`Simple Wearable Lanterns - Remastered` or `Torches Candlelight and Lanterns`) are documented.
+- The distinction between darkness-source, world-lighting support, and carried visibility is explicit.
 - Nighttime travel becomes more atmospheric without making navigation unreasonably frustrating.
 
 ## Activation Text And Interaction Immersion
