@@ -25,6 +25,7 @@
 - Keep `Prisma UI` as a documented next-gen framework comparison rather than the default choice. It is a web-UI framework that replaces `SkyUI` rather than extending it, which makes it incompatible with the `Oathvein UI` visual direction and with most UIExtensions-based mods from later subsections. Locked baseline stays `SkyUI` + `Oathvein UI`; `Prisma UI` is documented for projects that want to pursue the framework-replacement path instead of the visual-overhaul path. → `06a`
 - Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision. → `06a`
 - Add `Constructible Object Custom Keyword System (COCKS)` as the crafting-menu category infrastructure baseline. It owns the keyword-based category structure that underpins the crafting-menu readability improvements in the Crafting Menu Improvements subsection. Locked alongside the other framework picks here rather than buried in the crafting subsection alone. → `06a`
+- Add `MCM Helper` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53000> as a UI framework prerequisite. It persists MCM settings across saves and new games, and is a hard dependency of `True Directional Movement`, `Compass Navigation Overhaul`, and several other mods already in the stack. → `06a`
 
 ### Risks & Compatibility
 

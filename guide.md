@@ -160,16 +160,30 @@ BethINI Pie must be run from Mod Organizer 2 as an executable so it targets the 
    - Select the **High** preset.
    - Click **Apply Recommended Tweaks**.
    - Set **Window Mode** to **Borderless Windowed**.
-3. Go to the **Environment** tab:
+   - Set **Field of View** — **First Person** to `75` and **Third Person** to `85` (wider third-person FOV improves gamepad camera comfort).
+3. Go to the **General** tab:
+   - Under **Saved Games**, untick **Autosaves** (survival mods handle save restrictions; manual saves are safer with a heavily-modded load order). Then untick **Save on Travel**, **Save on Rest**, and **Save on Wait** individually for explicit coverage.
+4. Go to the **Gameplay** tab:
+   - **Difficulty**: Leave at **Adept** (modded difficulty frameworks override this).
+   - **Disable Kill Cam**: Leave **Unticked** (third-person kill moves are part of the gamepad experience).
+   - **Remove Borders**: Tick (removes invisible wall borders at the edge of the world for exploration).
+   - **Tutorials**: Untick (suppresses vanilla tutorial pop-ups; you know how to play).
+5. Go to the **Interface** tab:
+   - Tick **Dialogue Subtitles** and **General Subtitles** (accessibility; audio mods add ambient dialogue that benefits from subtitle support).
+   - **Compass**: Leave **Ticked** (Compass Navigation Overhaul manages compass behaviour; BethINI should not disable it).
+   - **Crosshair**: Leave **Ticked** (needed for gamepad aiming feedback; TrueHUD can refine the visual).
+   - **Floating Quest Markers**: Untick (reduces HUD clutter; quest tracking is available via the compass and journal).
+   - **Controller Vibration**: Leave **Ticked** (gamepad immersion).
+6. Go to the **Environment** tab:
    - Set **Grass Density** to `60`.
    - Untick **Reflect Sky**.
-4. Go to the **View Distance** tab:
+7. Go to the **View Distance** tab:
    - Leave **Tree LOD Distance** at the High preset default for now. (You will set it to `0` before DynDOLOD generation later.)
-5. Go to the **Visuals** tab:
+8. Go to the **Visuals** tab:
    - Set **Max Particle Render Count (GPU)** to `7500`.
    - Untick **Lens Flare** (Community Shaders handles its own post-processing).
-6. Click **Save and Exit**.
-7. Open `MO2 → Tools → INI Editor` and confirm the values took effect in `Skyrim.ini` and `SkyrimPrefs.ini`.
+9. Click **Save and Exit**.
+10. Open `MO2 → Tools → INI Editor` and confirm the values took effect in `Skyrim.ini` and `SkyrimPrefs.ini`.
 
 ## Step 8. LOOT Sort & Clean Vanilla Masters
 
@@ -268,7 +282,6 @@ Install these baseline mods first:
 - `powerofthree's Tweaks` (<https://www.nexusmods.com/skyrimspecialedition/mods/51073>)
 - `powerofthree's Papyrus Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/22854>)
 - `PapyrusUtil` (<https://www.nexusmods.com/skyrimspecialedition/mods/13048>)
-- `MCM Helper` (<https://www.nexusmods.com/skyrimspecialedition/mods/53000>)
 - `JContainers` (<https://www.nexusmods.com/skyrimspecialedition/mods/16495>)
 - `Keyword Item Distributor (KID)` (<https://www.nexusmods.com/skyrimspecialedition/mods/55728>)
 - `Spell Perk Item Distributor (SPID)` (<https://www.nexusmods.com/skyrimspecialedition/mods/36869>)
@@ -307,6 +320,7 @@ Install these locked or strongly preferred baseline picks early because later sy
 
 - `SkyUI` (<https://www.nexusmods.com/skyrimspecialedition/mods/12604>)
 - `UIExtensions` (<https://www.nexusmods.com/skyrimspecialedition/mods/17561>)
+- `MCM Helper` (<https://www.nexusmods.com/skyrimspecialedition/mods/53000>) — SKSE plugin that persists MCM settings across saves and new games; hard dependency of multiple mods in the UI and gameplay stack
 - `Oathvein UI` (<https://www.nexusmods.com/skyrimspecialedition/mods/160916>)
 - `SkyHUD` (<https://www.nexusmods.com/skyrimspecialedition/mods/463>)
 - `TrueHUD` (<https://www.nexusmods.com/skyrimspecialedition/mods/62775>)

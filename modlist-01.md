@@ -72,7 +72,6 @@ Do not clean `_ResourcePack.esl` — it contains no ITM or UDR records and does 
 - `powerofthree's Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51073> → `01b`
 - `powerofthree's Papyrus Extender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22854> → `01b`
 - `PapyrusUtil` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13048> → `01b`
-- `MCM Helper` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53000> → `01b`
 - `JContainers` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16495> → `01b`
 - `Keyword Item Distributor (KID)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/55728> → `01b`
 - `Spell Perk Item Distributor (SPID)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/36869> → `01b`
@@ -112,7 +111,8 @@ Do not clean `_ResourcePack.esl` — it contains no ITM or UDR records and does 
 - Treat this section as the non-negotiable base layer for the rest of the list
 - `SSE Display Tweaks` is part of that mandatory base layer, not an optional later tuning mod
 
-## Patching Technique And Strategy → `01b`
+## Patching Technique And Strategy
+
 ### Core Idea
 
 - Patching is the part of modlist work where load-order theory meets record-level reality, and where sloppy habits create the most misleading test results.
@@ -173,6 +173,7 @@ Do not clean `_ResourcePack.esl` — it contains no ITM or UDR records and does 
 - The list survives a deliberate test in which one upstream source mod is disabled: its `ModGroup` and dependent patches should cleanly stop being useful instead of producing new conflicts. → `01b`
 
 ## ESP To ESL Conversion → `01b`
+
 ### Core Idea
 
 Converting a plugin from `ESP` to `ESL` (or more precisely, to `ESL`-flagged `ESP`) frees up a slot in the `254` regular plugin limit by moving the plugin into the `4096` light-plugin address space. This is essential once the load order passes ~150 regular plugins and critical past ~200. However, not every plugin can be safely converted, and doing it wrong silently corrupts form references across your save.
@@ -254,6 +255,7 @@ For a plugin that passes all the checks above but interacts with other mods:
 - Any plugin that `LOOT` or `SSEEdit` explicitly flags as not ESL-safe. → `01b`
 
 ## Targeted Bugfix Mods → `01d`
+
 ### Core Idea
 
 A disciplined bucket for concrete fixes that solve specific vanilla annoyances, edge-case crashes, or presentation problems, as distinct from the mandatory runtime frameworks already covered above.
