@@ -287,8 +287,6 @@ Install these locked or strongly preferred baseline picks early because later sy
 - `Better MessageBox Controls` (<https://www.nexusmods.com/skyrimspecialedition/mods/1428>)
 - `Convenient Reading UI - SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/50202>)
 - `More Informative Console` (<https://www.nexusmods.com/skyrimspecialedition/mods/19250>)
-- `Quest Journal Fix for SkyUI` (<https://www.nexusmods.com/skyrimspecialedition/mods/108618>)
-- `SkyUI Ghost Item Bug Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/49106>)
 - `Yes Im Sure NG` (<https://www.nexusmods.com/skyrimspecialedition/mods/76892>)
 - `Dynamic Inventory Icon Injector` (<https://www.nexusmods.com/skyrimspecialedition/mods/174136>)
 - `Enchanted Icon Overhaul` (<https://www.nexusmods.com/skyrimspecialedition/mods/174246>) — optional; adds distinct icons for learned, artifact, and learnable enchantments
