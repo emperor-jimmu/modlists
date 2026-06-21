@@ -41,7 +41,7 @@ This subsection tracks the kinds of mods that should be evaluated partly through
 - Official master content: `Legacy of the Dragonborn` — <https://www.nexusmods.com/skyrimspecialedition/mods/11802>.
 - Museum tracking support: `The Curator's Companion` — <https://www.nexusmods.com/skyrimspecialedition/mods/38529>.
 - Official patch hub: `Legacy of the Dragonborn Patches (Official)` — <https://www.nexusmods.com/skyrimspecialedition/mods/30980>.
-- User-provided verified Nexus entries to retain in this LoTD planning set: <https://www.nexusmods.com/skyrimspecialedition/mods/13279>, <https://www.nexusmods.com/skyrimspecialedition/mods/16080>, and <https://www.nexusmods.com/skyrimspecialedition/mods/131107>.
+- User-provided verified Nexus entries to retain in this LoTD planning set: **13279** — *Paintings Replacer for Legacy of the Dragonborn SSE* (v1.1, last updated Nov 2017 — ⚠️ texture replacer, low risk of breakage but unmaintained); **16080** — *Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art* (v01, last updated Mar 2018 — ⚠️ same caveat); **131107** — *Placeable Display Cases* (v3.1, last updated Jan 2025).
 - Content with common `Legacy of the Dragonborn` integration pressure: major quest mods, artifact packs, unique-item expansions, new lands, treasure-hunt content, and player-home mods that may overlap with relic storage or collection routing.
 
 ## Patch Strategy For LoTD Support
@@ -74,7 +74,7 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - Achievement framework route: `Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/126220>
 - Museum-achievement package route: `Legacy of the Dragonborn - Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130114>
 - Patch support: `Legacy of the Dragonborn Patches (Official)` as the expected main patch package.
-- Additional included ecosystem entries: keep the user-provided Nexus pages `13279`, `16080`, and `131107` in the LoTD support bucket for this modlist.
+- Additional included ecosystem entries: keep `13279` (Paintings Replacer for Legacy of the Dragonborn SSE), `16080` (Fate Cards Re-texture), and `131107` (Placeable Display Cases) in the LoTD support bucket for this modlist.
 - Additional submods: only add museum-side submods or display extensions if they solve a real usability or integration problem in the finalized stack.
 
 ### Risks To Check
@@ -96,12 +96,12 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 
 ## Research Tasks
 
-- Verify the canonical Nexus page for `Legacy of the Dragonborn` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/11802>**
-- Verify the canonical Nexus page for `The Curator's Companion` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/38529>**
-- Verify the canonical Nexus page for `Legacy of the Dragonborn Patches (Official)` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/30980>**
-- Verify the canonical Nexus page for `Achievement Injector` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/126220>**
-- Verify the canonical Nexus page for `Legacy of the Dragonborn - Achievement Injector` before adding it to `mods-checklist.md`. **Verified: <https://www.nexusmods.com/skyrimspecialedition/mods/130114>**
-- Re-open the user-provided Nexus pages `13279`, `16080`, and `131107` in an interactive browser session later to record their exact canonical mod titles alongside the already-supplied URLs.
+- Verify the canonical Nexus page for `Legacy of the Dragonborn` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v6.10.1, updated 22 May 2026, author icecreamassassin — <https://www.nexusmods.com/skyrimspecialedition/mods/11802>
+- Verify the canonical Nexus page for `The Curator's Companion` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v7.0.8, updated 30 Oct 2025 — <https://www.nexusmods.com/skyrimspecialedition/mods/38529>
+- Verify the canonical Nexus page for `Legacy of the Dragonborn Patches (Official)` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v6.10.7, updated 04 Jun 2026 — <https://www.nexusmods.com/skyrimspecialedition/mods/30980>
+- Verify the canonical Nexus page for `Achievement Injector` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v1.2.3, updated 03 Jan 2025 — <https://www.nexusmods.com/skyrimspecialedition/mods/126220>
+- Verify the canonical Nexus page for `Legacy of the Dragonborn - Achievement Injector` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v1.0, updated 02 Oct 2024 — <https://www.nexusmods.com/skyrimspecialedition/mods/130114>
+- Re-open the user-provided Nexus pages `13279`, `16080`, and `131107` in an interactive browser session later to record their exact canonical mod titles alongside the already-supplied URLs. **Resolved (Jun 2026):** `13279` — *Paintings Replacer for Legacy of the Dragonborn SSE* (v1.1, Nov 2017, texture replacer); `16080` — *Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art* (v01, Mar 2018, texture replacer); `131107` — *Placeable Display Cases* (v3.1, Jan 2025). Note: the two 2017-2018 texture mods are ancient but functional (textures do not break with engine updates); they contribute to the staleness threshold but are low-risk.
 - As `modlist-08.md` and later content sections expand, record which chosen mods have official `Legacy of the Dragonborn` support and which require third-party patches.
 - Decide whether any museum-side submods beyond `The Curators Companion` are justified by actual play friction rather than by ecosystem sprawl.
 - Check whether storage, display activation, and museum progression create any conflicts with the intended roleplay and pacing tone of `Elder Wilds`.
