@@ -287,7 +287,6 @@ Install these baseline mods first:
 - `Spell Perk Item Distributor (SPID)` (<https://www.nexusmods.com/skyrimspecialedition/mods/36869>)
 - `Base Object Swapper (BOS)` (<https://www.nexusmods.com/skyrimspecialedition/mods/60805>)
 - `Crash Logger SSE AE VR` (<https://www.nexusmods.com/skyrimspecialedition/mods/59818>)
-- `RaceMenu SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/29624>)
 - `Dual Casting Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/92454>)
 - `Andrealphus' Papyrus Functions` (<https://www.nexusmods.com/skyrimspecialedition/mods/85252>)
 - `ConsoleUtilSSE NG` (<https://www.nexusmods.com/skyrimspecialedition/mods/76649>)

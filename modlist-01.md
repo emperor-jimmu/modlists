@@ -78,7 +78,6 @@ Do not clean `_ResourcePack.esl` — it contains no ITM or UDR records and does 
 - `Base Object Swapper (BOS)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/60805> → `01b`
 - `Crash Logger SSE AE VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/59818> → `01b`
 - `SkyPatcher` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106659> (SKSE-plugin engine tweak framework; hard requirement of section 09 wildlife/AI mods and broadly useful as a vanilla-record patcher layer) → `01b`
-- `RaceMenu SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29624> (SKSE-plugin character creation overhaul; also satisfies `SKEE` requirement of `EFF - Extensible Follower Framework` from section 05) → `01b`
 - `Dual Casting Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/92454> (powerofthree SKSE-plugin bugfix; hard requirement of `Blade and Blunt` from section 11) → `01b`
 - `Andrealphus' Papyrus Functions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85252> (SKSE-plugin Papyrus utility; hard requirement of `Dragon War` from section 09) → `01b`
 - `ConsoleUtilSSE NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76649> (SKSE-plugin console utility; shared hard requirement of `Dragon War` from section 09 and several animation behaviour mods from section 03) → `01b`

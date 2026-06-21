@@ -748,8 +748,9 @@ Treat these as an optional environment-plant detail layer rather than a baseline
 - Male body base: `Highly Improved Male Body Overhaul - HIMBO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/74174> → `02f`
 - Female skin: `BnP - Female Skin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65274> → `02f`
 - Male skin: `BnP - Male Skin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65402> → `02f`
+- Character creation framework: `RaceMenu SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29624> (SKSE-plugin character creation overhaul with sculpt mode, overlay system, and NiNode access via SKEE; satisfies the `SKEE` dependency of `EFF - Extensible Follower Framework` from section 05 and is a prerequisite for `High Poly Head`) → `02f`
 - Supported high-resolution face branch: `High Poly Head 1.4 SE` - official Google Drive mirror: <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi> → `02f`
-- If `High Poly Head 1.4` is used, pair it with `RaceMenu SE`, `Expressive Facegen Morphs SE`, `Expressive Facial Animation -Female Edition-`, and `Expressive Facial Animation -Male Edition-` so the face-mesh branch stays aligned with the current modern face stack. → `02f`
+- If `High Poly Head 1.4` is used, pair it with `Expressive Facegen Morphs SE`, `Expressive Facial Animation -Female Edition-`, and `Expressive Facial Animation -Male Edition-` so the face-mesh branch stays aligned with the current modern face stack. → `02f`
 - Chosen female preset: `FitnessGoal CBBE 3BA 3BBB Bodyslide Preset for Modest Players` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/69681> → `02f`
 
 ### Face Mesh Branch Notes
