@@ -55,6 +55,7 @@
 - Add `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> as the dedicated combat-feedback companion. `TrueHUD` is by the same author as `True Directional Movement` (already in `modlist-04.md`), has `58,848` endorsements and over `2 million` unique downloads, and provides actor info bars, boss bars, player widgets, and recent-loot logging. It was last updated `December 2023` (feature-complete). Keep `TrueHUD` scoped to combat-feedback additions only, not as a competing HUD framework.
 - Add `Casting Bar` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80455> as a small, focused cast-and-draw timing companion. It solves a real readability gap for spells, shouts, and bow draw without trying to become another full HUD framework, so it fits naturally next to `SkyHUD` and `TrueHUD` rather than competing with them.
 - Keep `Stats Tracker Menu - STM` as a documented stats-overlay companion rather than a baseline. It is brand new (v1.0.1, May 2026) with very low community signal, so lock it in only after playtesting confirms it does not fight `SkyHUD` widget positioning or `TrueHUD` combat feedback. If accepted, it lives next to those two as a third scoped addition (stats display), not a replacement for either.
+- Add `Floating Damage` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14332> as an optional combat-feedback overlay. Displays floating damage numbers above hit targets with configurable color, size, duration, and position via `FloatingDamage.ini`. Useful for build-testing and damage-visibility feedback but potentially at odds with the minimal-HUD presentation pillar. Keep optional — install only after playtesting confirms the visual noise level is acceptable alongside the chosen HUD stack.
 - Let the final visual tone come primarily from the chosen `Oathvein UI` direction.
 - Keep compass density, marker philosophy, and minimal-HUD experimentation for the later dedicated subsection.
 
@@ -300,6 +301,7 @@
 - Navigation-first compass route: `Compass Navigation Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/74484>
 - Map-aware marker route: `CoMAP - Common Marker Addon Project` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56123>
 - Dynamic minimal-HUD route: `Immersive HUD - iHUD Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12440>
+- Optional minimap route: `MiniMap` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49490> — adds a fully configurable corner minimap to the screen with zoom levels, toggle support, and map-style customization. Useful for players who prefer persistent local navigation context, but potentially redundant with `Compass Navigation Overhaul` and visually distracting with the minimal-HUD philosophy.
 
 ### Recommendation
 
@@ -307,6 +309,7 @@
 - Treat `Compass Navigation Overhaul` as the strongest first-pass baseline because it answers the actual navigational layer directly instead of jumping immediately to a hide-the-HUD philosophy.
 - Treat `CoMAP` as the natural marker-side companion when the project wants cleaner marker consistency across the chosen `FWMF` paper-map ecosystem.
 - Keep `Immersive HUD - iHUD Special Edition` as the deliberate minimal-HUD branch only if testing shows that reduced on-screen persistence materially improves exploration tone rather than making the paper-map-and-compass loop less readable.
+- Keep `MiniMap` as a very optional side addition. Minimaps are not aligned with the grim-dark exploration pillar (they reduce the need to read the environment), and the mod's low endorsement count (715, last updated 2022) and occasional crash reports on 1.6.1170 make it a high-risk low-return addition. Document it as "very optional — test before locking."
 - Keep `SkyHUD` as the broader HUD-layout owner, `FWMF` plus map-art choices as the map owner, and gameplay-side `TrueHUD` as a separate feedback layer.
 
 ### Risks & Compatibility
@@ -314,11 +317,12 @@
 - Minimalism itself can be mistaken for better usability.
 - Uneven marker language can trigger too many overlapping compass and HUD layers at once.
 - A dynamic-HUD route can look immersive while slowing ordinary navigation.
+- `MiniMap` on Steam runtime `1.6.1170` has occasional crash reports; verify stability before treating it as part of the locked stack. Stacking a minimap alongside `Compass Navigation Overhaul` creates redundant navigation information on screen.
 
 ### Acceptance Criteria
 
 - `modlist-06.md` has one clearly preferred compass and navigation baseline.
-- The distinction between compass behavior, FWMF-friendly marker support, and minimal-HUD philosophy is explicit.
+- The distinction between compass behavior, FWMF-friendly marker support, minimap addition, and minimal-HUD philosophy is explicit.
 - Existing ownership boundaries with `SkyHUD`, `FWMF`, and gameplay-side `TrueHUD` remain intact.
 
 ## Crafting Menu Improvements
@@ -416,6 +420,34 @@
 - `modlist-06.md` finishes with one clear readability-first fallback and one clear configuration-readability support route.
 - The distinction between general `4K` readability and MCM readability is explicit.
 - Earlier ownership boundaries for dialogue, map, crafting, controller support, and subtitle bugfixes remain preserved.
+
+## Optional HUD Additions
+
+### Core Idea
+
+- This subsection holds experimental or unproven UI mods that are not part of the locked UI stack but are tracked for potential inclusion if playtesting validates them.
+- The goal is to keep these picks visible and documented without letting them drift into the mandatory baseline by default.
+
+### Options
+
+- Follower-and-player stats overlay: `Skyrim Party Sheet - Follower and Player HUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/167538> — adds a persistent HUD overlay showing player attributes (Health, Magicka, Stamina) alongside active follower information in a party-sheet format. Potentially useful for third-person gameplay where the player wants quick follower-status visibility without opening menus. Very new mod (2025) with low community signal — compatibility with `TrueHUD`, `Oathvein UI`, `moreHUD`, and `Nether's Follower Framework` is unverified. Keep as "very optional — research before installing."
+
+### Recommendation
+
+- Keep `Skyrim Party Sheet` in this optional tracking section only. Do not include it in the locked modlist until playtesting confirms it does not fight `TrueHUD` widget positioning, `Oathvein UI` visual styling, or `Nether's Follower Framework` follower management. Its low community signal and unknown 1.6.1170 stability make it a potential troubleshooting sink rather than a proven addition.
+- If accepted later, place it in the HUD Overhaul subsection as a companion to `TrueHUD` for follower-status visibility.
+
+### Risks & Compatibility
+
+- Overlapping HUD widgets can create visual conflicts with `TrueHUD`, `SkyHUD`, and `Floating Damage`.
+- Unknown compatibility with `Nether's Follower Framework` — if Party Sheet tries to manage followers that NFF controls, there may be state conflicts.
+- Unknown performance overhead from a persistent follower-status polling loop.
+- Not suitable for modlist inclusion until tested on Steam `1.6.1170` with the full UI stack.
+
+### Acceptance Criteria
+
+- `Skyrim Party Sheet` stays in the optional tracking section until playtesting confirms stability and compatibility.
+- The UI stack does not adopt experimental mods as baselines by default.
 
 ## Post-Install Smoke Test
 

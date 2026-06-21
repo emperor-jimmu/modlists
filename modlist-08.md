@@ -379,6 +379,8 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - Buildable estate route: `LC_Build Your Noble House` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18308>
 - Business-property comparison: `Windstad Mine` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4160>
 - Ambitious caution branch: `Blackthorn - A Buildable Town in The Rift (SE)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2242>
+- Purchasable castle route: `Stormwatch Castle` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65088> — a smaller castle east of Whiterun, purchasable for 35,000 gold. Includes main hall (dining, bar, kitchen, pool, master bedroom), undercroft (crafting, 24 planters), library, armory, and loft with 6 kids beds. Auto-undressing for NPCs at pools, teleport spell, and toggle for converting kids rooms to follower rooms. Requires `Hearthfire multiple adoptions` for family move-in.
+- Family-housing companion: `Hearthfire multiple adoptions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3862> — allows adoption of up to 6 children and provides family-housing support for homes like `Stormwatch Castle` that depend on it. Adds "Bless Home" spell for family move-in.
 
 ### Recommendation
 
@@ -388,6 +390,8 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - Keep `LC_Build Your Noble House` as the larger buildable-estate branch if the list wants one explicit construction-and-expansion commitment.
 - Keep `Windstad Mine` in mind if the business-property concept is right but the agricultural identity is not.
 - Keep `Blackthorn - A Buildable Town in The Rift (SE)` in the caution bucket unless modern testing proves its terrain and compatibility concerns are manageable.
+- Add `Stormwatch Castle` as the purchasable-castle comparison — a mid-budget castle home (35K gold) that fills the gap between small inn room and full estate. Its `Hearthfire multiple adoptions` dependency means it works best as a family home for players who want the adoption layer.
+- Add `Hearthfire multiple adoptions` as the required family-housing companion if `Stormwatch Castle` (or any other family-compatible home) is selected. It is a foundational mod for any home that supports child adoption beyond the vanilla 2-child limit, not a standalone home pick.
 - Keep display-heavy mansions separate from the museum or safehouse question reserved for `modlist-13.md`.
 
 ### Risks & Compatibility
@@ -395,11 +399,14 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - It is easy to choose a home because it looks impressive in screenshots rather than because it improves actual play rhythm.
 - The home layer can drift into an oversized trophy-display answer that should really belong to the `Legacy of the Dragonborn` track.
 - Terrain, navmesh, family-support, autosort, and settlement-overhaul conflicts matter here, especially for the larger property mods.
+- `Stormwatch Castle` is a single-file light mod with no hard dependencies beyond `Hearthfire multiple adoptions` for family support. Its main risk is its small size and static nature — it does not grow or evolve, so it works best as a mid-tier purchase rather than the endgame home.
+- `Hearthfire multiple adoptions` touches vanilla adoption and housing records; verify compatibility with any mod touching Hearthfire player homes, child AI, or family dialogue before locking it as a dependency.
 
 ### Acceptance Criteria
 
-- Section 08 has one clear grounded-home baseline, one economic-property comparison, and one larger buildable-estate branch.
-- The distinction between a lived-in home, a business property, and a bigger construction project stays explicit.
+- Section 08 has one clear grounded-home baseline, one economic-property comparison, one larger buildable-estate branch, and one purchasable-castle comparison.
+- The distinction between a lived-in home, a business property, a construction project, and a purchasable castle stays explicit.
+- `Hearthfire multiple adoptions` is documented as a family-housing dependency, not a standalone home pick.
 - The chosen direction supports long-term play without duplicating the museum-safehouse role reserved for `Legacy of the Dragonborn`.
 
 ## Post-Install Smoke Test

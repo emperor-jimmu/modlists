@@ -308,6 +308,8 @@
 - Use `FYX - Water Mesh Optimization` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97713> only if the chosen water setup benefits from it.
 - Add `FYX - Eastern Empire Company Building` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86526> as a mesh fix for the Eastern Empire Company building in Solitude — a targeted stopgap before larger city overhauls are settled.
 - Add `FYX - Nordic Doors and Traps Collisions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/100295> as a collision geometry fix for Nordic doors and traps that stops the player's camera clipping through doorways and trap hitboxes.
+- Add `FYX - Riften - Window Consistency` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182707> as a mesh consistency fix for Riften's windows, aligning their appearance across the city's buildings. A targeted visual stopgap before larger city overhauls are settled.
+- Add `FYX - 3D Stockades` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65104> as a mesh replacement for stockade walls and barricades, adding 3D geometry where vanilla uses flat 2D textures. Improves readability and visual depth at typical third-person distance.
 - Add `Explosion Collision Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/154076> as a physics fix that prevents explosion-force spells from launching large objects into the player's camera, resolving a longstanding destructible-physics annoyance.
 - Add `Flame VFX Edit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/109414> as a mesh-only fire spell effect improvement that is compatible with Community Shaders.
 - Add `Auto Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79473> or `Complex Parallax Materials` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95134> only after the texture stack is mostly chosen.
@@ -887,6 +889,7 @@ Male variety on `HIMBO`:
 
 - High-quality hair baseline: `KS Hairdos SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6817>
 - Eye-texture baseline: `Eyes Nouveaux` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131210>
+- Classic eye-texture comparison: `The Eyes Of Beauty SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16185> — the long-standing community-standard eye texture replacer with lore-friendly heterochromia options, separate player/NPC packs, and vampire eye support. Available as an alternative to `Eyes Nouveaux` if the final visual direction prefers its established look over the newer khisartin-style textures.
 - Eye-cubemap upgrade: `LDD Clean Cubemap for Eyes 4K` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168060> — replaces the vanilla eye cubemap textures with cleaner, higher-resolution 4K reflections, removing the muddy/low-res specular that vanilla eyes exhibit under the chosen lighting stack. Stacks on top of the eye-texture baseline.
 - Optional beard companion: keep the vanilla beard set unless a stronger beard pack surfaces that fits the tone and stays compatible with the chosen beard mesh.
 - Discipline-first route: rely on vanilla hair and eye textures and skip the subsection entirely if the project later decides NPC beautification belongs in a single combined `modlist-09.md` pass.

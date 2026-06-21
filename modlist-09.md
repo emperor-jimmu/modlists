@@ -92,26 +92,27 @@ This subsection owns creature-specific visual direction layered on top of the br
 - Targeted species follow-ups: `Diverse True Wolves and Dogs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/38058>, `Real Rabbits HD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29223>, `Rally's Shaggy Cows of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47742>, and `Realistic Horse Breeds by KrittaKitty` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/7685> if familiar domestic/wilderness animals still feel generic after the baseline lands.
 - Deer visual overhaul: `Deer Reworked - Ultimate` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/155433> — replaces deer models and textures with high-detail versions across all deer variants. Deer are one of the most common wilderness wildlife sightings, making this a high-visibility targeted species upgrade.
 - Hagraven visual overhaul: `Hagraven - New models and Textures` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160407> — replaces hagraven models and textures with high-detail versions inspired by Adam Adamowicz concept art. No ESP, pure mesh/texture replacer. 874 endorsements, by Mandragoraspout. Add as an optional creature visual upgrade alongside Draugrs and Spider — hagravens are common mid-to-late-game enemies across Forsworn camps, dungeons, and quest encounters. Not compatible with other mods that replace hagraven meshes.
+- Insect visual upgrade: `Butterfly Improved by zzjay - SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37302> — replaces butterfly and moth textures with higher-resolution, more detailed versions. A lightweight targeted species upgrade for ambient insects that are common across the entire worldspace. 3K+ endorsements.
 - Out of scope: dragon-variety systems like `Diverse Dragons Collection` and `Infinite Dragon Variants` are encounter/gameplay decisions, not visual ones.
 
 ### Recommendation
 
 Start with `Fluffworks`. It improves the visible creature experience across ordinary play, layers naturally on `Bellyaches`, and stays a presentation decision rather than a creature-system overhaul.
 
-Keep `Bears of the North` as the species-specific branch, `Iconic's Dragon Retexture` (with `Splendor - Dragon Variants` as the variety comparison) for dragons, `Cannibal Draugr on Solstheim` as the regional specialty done correctly, `Draugrs - New models and textures` as the mainland draugr visual upgrade, `Spider SE` as the spider visual upgrade, `Deer Reworked - Ultimate` as the deer visual upgrade, and `Hagraven - New models and Textures` as the hagraven visual upgrade. Judge through ordinary visibility — roadside wildlife, common predator fights, dragon attacks, Solstheim exploration, dungeon draugr and spider encounters — checking that creatures look more memorable without the subsection spilling into behavior or ecology.
+Keep `Bears of the North` as the species-specific branch, `Iconic's Dragon Retexture` (with `Splendor - Dragon Variants` as the variety comparison) for dragons, `Cannibal Draugr on Solstheim` as the regional specialty done correctly, `Draugrs - New models and textures` as the mainland draugr visual upgrade, `Spider SE` as the spider visual upgrade, `Deer Reworked - Ultimate` as the deer visual upgrade, `Hagraven - New models and Textures` as the hagraven visual upgrade, and `Butterfly Improved by zzjay - SE` as a lightweight ambient-insect upgrade. Judge through ordinary visibility — roadside wildlife, common predator fights, dragon attacks, Solstheim exploration, dungeon draugr and spider encounters — checking that creatures look more memorable without the subsection spilling into behavior or ecology.
 
 ### Risks & Compatibility
 
 - Re-solving the section-02 creature baseline instead of building on it, or using narrow specialty mods as if they were broad baselines.
 - Stacking `Fluffworks`, `Fusa Fusa`, and multiple targeted replacers without a clear layering plan, or letting dragon-identity mods accumulate into encounter-design decisions by default.
-- Underestimating fur-shell, shader/ENB, and targeted-replacer conflicts.
+- Underestimating fur-shell, shader/ENB, and targeted-replacer conflicts, including insect mesh/texture overwrites. `Butterfly Improved` is a lightweight texture replacer with minimal conflict surface but verify it does not fight other mods that touch butterfly assets.
 - Confirm all named picks (broad, species, dragon, regional, hagraven, and the targeted follow-ups) behave cleanly on Steam `1.6.1170` with the current creature baseline; record pressure around creature meshes, fur shells, horse patches, and overlap with later creature-behavior or enemy-variety picks.
 
 ### Acceptance Criteria
 
 - One preferred broad-presentation baseline plus distinct species-specific, dragon-visual, regional-specialty, and hagraven branches, with the broad-vs-targeted distinction explicit.
 - Any tracked alternative documented with a verified canonical Nexus page and a clear reason it differs from the baseline.
-- The chosen direction improves creature presentation without duplicating section-02 visual baseline or section-07 ecology ownership.
+- The chosen direction improves creature presentation (including ambient insects) without duplicating section-02 visual baseline or section-07 ecology ownership.
 
 ## Creature Behavior Improvements
 
@@ -265,25 +266,53 @@ This subsection owns custom fully-voiced follower additions — new NPCs with au
 ### Options
 
 - Scholar-follower baseline: `Lucien - Immersive Fully Voiced Male Follower` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20035> — a fully voiced Imperial scholar with 5000+ lines, personal quest, and commentary on vanilla quests, Creation Club content, and modded locations. Grows from a cowardly scholar into a capable hero. Anniversary Edition All-In-One Creation Club patch available. LoTD-aware.
+- Dwemer-specialist follower: `Remiel - Custom Voiced Dwemer Specialist and Companion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51874> — a Breton engineer with ~5000 lines of dialogue, commentary on dwemer ruins, cities, weather, and time of day. Found in Markarth's Silverblood Inn. Custom follower framework — do not use with NFF/AFT or she breaks. Companion dwemer spider. 8K+ endorsements.
+- Humorous follower: `Sofia - The Funny Fully Voiced Follower` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2180> — Skyrim's most-endorsed follower. Professional voice acting by Christine Slagman. Full location and quest awareness (main quest, bounty quests). Custom dialogue system, drunk mechanic, horse summoning, MCM. 2.51 current version.
+- Bosmer archer follower: `Song of the Green (Auri Follower)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/11278> — a fully voiced Wood Elf archer with 1000+ lines, Bosmer culture commentary, approval system, mini-quest, romance option, and banter with other custom followers (Inigo support available). 17K+ endorsements.
+- Visual replacer for Auri: `Majestic Auri - a visual replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72361> — high-poly visual replacer for Auri with 3 hair options, 2 eye options, and 2 teeth options. Depends on `Song of the Green (Auri Follower)`. 224K+ unique downloads.
+- Romantic follower: `Kaidan 2` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/19075> — a fully voiced romantic-interest follower with 1200+ lines, custom home, and mini-quests. Relationship progression based on interaction rather than location triggers. Custom AI system (does not add to follower count). Found in the Abandoned Prison. 2.1.1 current version.
+- Follower dialogue expansion: `Kaidan 2 Extended Edition - New dialogue - quest commentary and features` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63348> — adds new dialogue, quest commentary, and expanded features to Kaidan 2. Requires `Kaidan 2` as the base. Can be installed standalone from Nexus or via the Immersive Features all-in-one installer from kaidanmod.com.
+- Visual replacer for Kaidan: `A Makeover for Kaidan` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/100586> — a visual replacer for Kaidan 2 using COtR-inspired assets with a Jon Snow-inspired aesthetic. Standalone (does not require COtR). Optional patch for `Kaidan 2 Extended Edition`. 165 endorsements.
+- Alternate start for Kaidan: `Immersive Kaidan Start` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64064> — provides an alternate starting scenario for Kaidan, integrating him into the world more naturally. Requires `Kaidan 2`.
 
 ### Recommendation
 
-- Start with `Lucien` as the custom-follower baseline. He fits the "lots of new content" pillar with extensive quest commentary across vanilla and AE content, and his scholar-to-hero arc avoids power-fantasy follower tropes. Has strong community reputation (12K+ endorsements) and extensive cross-mod integration (Inigo banter, LoTD patches, FDE-style expansion mods).
+- Start with `Lucien` as the primary custom-follower baseline. He fits the "lots of new content" pillar with extensive quest commentary across vanilla and AE content, and his scholar-to-hero arc avoids power-fantasy follower tropes. Has strong community reputation (12K+ endorsements) and extensive cross-mod integration (Inigo banter, LoTD patches, FDE-style expansion mods).
+- Add `Remiel` as the second custom-follower pick. She complements Lucien well (scholar + engineer pair), has deep dwemer-content commentary that connects to the world-content pillar, and her custom-framework approach (no NFF/AFT) keeps her working reliably alongside other custom followers.
+- Add `Song of the Green (Auri)` as the third custom-follower pick. Her Bosmer culture focus, approval system, and romance option add roleplay texture. Pair with `Majestic Auri` as the visual replacer.
+- Add `Sofia` as the comic-relief follower option. Her tone is intentionally less serious, and her alcohol/drunk mechanics and horse summoning add unique gameplay texture. She is the oldest and most controversial of the four picks — some players find her dialogue grating rather than funny. Keep her listed but flag that she may be cut if playtesting shows tonal mismatch with the broader list.
+- Add `Kaidan 2` as the dedicated romance-arc follower option. He is one of the most popular romantic-interest custom followers, with a relationship system based on interaction frequency rather than location triggers. Pair with `Kaidan 2 Extended Edition` for expanded quest commentary and dialogue, `A Makeover for Kaidan` for the visual replacer, and `Immersive Kaidan Start` for a more natural introduction.
+- For the follower framework, note that Remiel and Auri work best outside NFF (they use their own custom systems), while Sofia can work under NFF or standalone. Lucien is tested with NFF but also works standalone. Kaidan 2 has a custom AI system that avoids adding to the follower count, which can cause conflicts with NFF/AFT — use the in-game track-summon powers instead of NFF management. This means NFF is still the recommended general framework for vanilla followers, but these custom followers should be left alone by NFF's management systems.
 
 ### Risks & Compatibility
 
-- Custom followers add plugin count (Lucien and his AE patch are ESL-flagged, no impact on 254 limit).
+- Custom followers add plugin count (Lucien + AE patch, Remiel, Sofia, Auri, Majestic Auri, Kaidan 2, Kaidan 2 Extended Edition, A Makeover for Kaidan, Immersive Kaidan Start = ~10 ESL-flagged plugins, minimal impact on 254 limit).
 - Lucien's Creation Club patch is required for AE content awareness; without it he only comments on vanilla quests.
-- Confirm compatibility with the chosen NPC appearance overhaul to avoid facegen issues.
+- Remiel uses a custom follower framework and WILL BREAK under NFF/AFT. Do not let NFF manage her. Same caution applies to Auri 2.0+ — use the `Auri 2.0 - Vanilla Following and Save Game Bridge Fixes` patch if NFF management is desired.
+- Kaidan 2 uses a custom AI system and does not add to the follower count, which can cause conflicts with NFF/AFT. Use his built-in summon power and map-tracking dialogue instead of NFF's follower management. Create a save before attempting any NFF functions on him.
+- `Kaidan 2 Extended Edition` has two distribution paths: the Nexus version and the all-in-one installer from kaidanmod.com. The AIO includes Extended Edition plus Immersive Features and is NOT compatible with the Nexus version. Pick one path and document it in the install guide.
+- Confirm all custom followers are compatible with the chosen NPC appearance overhaul to avoid facegen issues.
 - Coordinate with modlist-08 if other custom followers (Val Serano) are locked — follower-banter patches may be needed.
+- Sofia's tone is intentionally comedic and may clash with the grim-dark presentation pillar. Evaluate during playtesting and be prepared to cut if tonal mismatch is severe.
+- Remiel and Auri have Inigo banter patches available. Kaidan 2 has extended banter with Remiel. Verify cross-follower banter doesn't produce missing audio.
+- `Backported Extended ESL Support` is listed as a requirement for `Majestic Auri` but does not apply to the target Steam runtime `1.6.1170` and should not be installed.
 
 ### Acceptance Criteria
 
 - Lucien delivers quest-aware commentary during normal gameplay without overriding vanilla dialogue.
 - His personal quest triggers correctly and progresses through all stages.
-- Facegen matches the chosen NPC appearance baseline (no blackface).
+- Remiel's dwemer-ruin quest triggers in Markarth and progresses through The Lost Expedition.
+- Remiel's dialogue covers cities, weather, and dwemer content without repeating or overriding.
+- Auri's approval system, mini-quest, and romance option function correctly.
+- Sofia's drunk mechanic, horse summoning, and MCM options work as documented.
+- Majestic Auri facegen renders correctly with no blackface or missing assets.
+- Kaidan 2's relationship progression advances through interaction (not location triggers) and his romantic questline triggers with an Amulet of Mara.
+- Kaidan 2 Extended Edition dialogue and quest commentary plays correctly alongside the base Kaidan 2 setup.
+- A Makeover for Kaidan facegen renders correctly with no neck seams or blackface — if using RSV, exclude Kaidan from the SPID file or use the RSV Patch Collection.
+- Immersive Kaidan Start provides a natural alternative to the Abandoned Prison start without breaking Kaidan's quest progression.
+- Facegen for all followers matches the chosen NPC appearance baseline.
 - AE patch functions correctly with the full Creation Club content set.
-- Cross-follower banter (if Inigo or other custom followers are added) plays without missing audio.
+- Cross-follower banter (Inigo, Lucien, Remiel, Auri, Kaidan) plays without missing audio.
 
 ## Post-Install Smoke Test
 

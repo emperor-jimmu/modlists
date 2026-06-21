@@ -301,12 +301,14 @@
 - Balanced modern route: `Gourmet - A Cooking Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/96876>
 - Large integrated route: `Complete Alchemy and Cooking Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/19924>
 - Lightweight cleanup route: `Alchemy Potions and Food Adjustments` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5877>
+- Recipe-expansion route: `Mealtime - A Food and Recipe Mod` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22496> — adds new foods and recipes to cooking menus while sticking close to vanilla ingredient logic. Lighter than a full CACO-style overhaul but denser than the cleanup-only route.
 
 ### Recommendation
 
 - Start with `Gourmet` as the main baseline.
 - Keep `Complete Alchemy and Cooking Overhaul` as the deliberate integrated comparison only if the list later decides alchemy and cooking should be tightly fused.
 - Keep `Alchemy Potions and Food Adjustments` as the lighter fallback if the modern cooking route turns out to be more system weight than the list actually needs.
+- Keep `Mealtime` as a recipe-density companion if `Gourmet`'s recipe scope feels too narrow after playtesting. It layers on top of the chosen baseline rather than replacing it.
 - Judge cooking on inns, camps, home bases, travel prep, and downtime rhythm rather than on recipe volume alone.
 
 ### Risks & Compatibility
@@ -325,6 +327,8 @@
 #### Visual Companions
 
 - `Hyper Realistic Cooked Beef` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173752> and `Hyper Realistic Bread` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173283> replace the vanilla cooked-beef and bread models with photorealistic versions. Both are mesh/texture-only replacers with zero plugin overhead. Add at the end of the food-texture layer to make cooking output feel more appetizing in survival contexts.
+- `Skyrim 3D Cooking` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/23007> — replaces cooking pot, oven, and food-prep meshes with higher-detail 3D versions. Mesh-only, zero plugin overhead. Pairs with the food-texture layer to make cooking stations and food items look more credible.
+- `Realistic HD Food Remastered` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22087> — replaces vanilla food textures with higher-resolution, photorealistic versions covering bread, meat, fruits, vegetables, and prepared dishes. Complements the 3D mesh replacers for a full food-visual upgrade.
 
 ## Smithing And Crafting Expansion
 
@@ -380,6 +384,7 @@
 - Encounter zone overhaul: `Roleplaying in Skyrim - Encounter Zones` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149899> — comprehensive overhaul of all encounter zones reworked for realism and variety based on NPC type, location, and quest significance, with a randomizer for unpredictability. No hard requirements. ESL flagged. 272 endorsements, 15.4k downloads, by DrPharmDawg. (Optional)
 - Dynamic economy: `Roleplaying in Skyrim - Evolving Economy` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149830> — dynamic pricing based on area resources, season, distance from cities, Civil War progress, reputation, and land hostility. Requires SKSE, `Papyrus Ini Manipulator`, and `powerofthree's Papyrus Extender`. Soft-requires `SkyUI` for MCM. 1,400 endorsements, 481.3k downloads, by DrPharmDawg. (Optional)
 - Rarity-driven loot: `Roleplaying in Skyrim - Loot Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157259> — rarity-driven, contextually-aware loot overhaul with combat equipment breakage and deleveled artifacts. Requires SKSE, `Papyrus Ini Manipulator`, and `SkyUI`. Soft-requires `powerofthree's Papyrus Extender` for breakage system. 189 endorsements, 6.1k downloads, by DrPharmDawg. (Optional)
+- Environmental-loot route: `Narrative Loot` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12812> — adds 1,629 lore-friendly miscellaneous items (paintings, dinnerware, decorative books, bones, missives, pottery) to chests, pockets, and vendor lists. Emphasizes environmental storytelling through loot rather than combat-centric gear progression. Includes a unique Windhelm shop with rotating inventory. Does not rebalance prices or weapon/armor distribution — stacks cleanly on top of the chosen economy baseline.
 
 ### Recommendation
 
@@ -391,6 +396,7 @@
 - Add `Roleplaying in Skyrim - Encounter Zones` as an optional encounter zone overhaul if the list wants enemy levels to feel more realistic and varied based on location type, NPC category, and quest significance. No hard requirements; ESL flagged.
 - Add `Roleplaying in Skyrim - Evolving Economy` as an optional dynamic pricing layer if the list wants barter costs to fluctuate based on resources, season, Civil War, reputation, and distance from cities. Requires SKSE, `Papyrus Ini Manipulator`, and `powerofthree's Papyrus Extender`. The most popular mod in the RoleRim series (1,400 endorsements, 481.3k downloads).
 - Add `Roleplaying in Skyrim - Loot Overhaul` as an optional rarity-driven loot overhaul if the list wants loot to feel contextual and rarity-based rather than purely level-scaled. Includes equipment breakage and deleveled artifacts. Requires SKSE, `Papyrus Ini Manipulator`, and `SkyUI`. Extensively reworks leveled lists; other loot overhauls will conflict.
+- Add `Narrative Loot` as an optional environmental-storytelling layer. It does not change economy balance, prices, or weapon/armor distribution — it adds lore-friendly miscellaneous items to loot lists for world-building texture. Stacks cleanly with `Trade and Barter`, `C.O.I.N.`, or any other economy baseline without leveled-list conflicts. Treat as a world-content companion rather than an economy-system pick.
 
 ### Risks & Compatibility
 
