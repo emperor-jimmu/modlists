@@ -12,16 +12,39 @@ This guide turns the planning files into an install order that can actually be f
 - When this guide says `Choice Required`, pick one path before continuing.
 - Keep generated files in dedicated output mods. Do not let them pile up in `Overwrite`.
 
-## Step 1. Prepare Skyrim And Tool Folders
+## Step 1. Prepare Steam, Skyrim, Creation Kit, And Tool Folders
 
 1. Install Steam and Skyrim SE/AE outside `Program Files`, ideally under a shallow path such as `C:\Games\Skyrim Special Edition`.
 2. Confirm the game is on runtime `1.6.1170`. The **Anniversary Upgrade** is not used!
-3. Ensure your Steam, drivers, and tool installations follow a clean baseline — install outside `Program Files`, verify file integrity, and set proper permissions.
-4. Launch the vanilla launcher once so Skyrim creates its registry entries and INI files.
-5. Create a separate modding path such as:
+3. Verify file integrity and install the latest graphics drivers.
+
+### Configure Steam
+
+4. **Disable the Steam Overlay** — it is known to cause issues with Skyrim SE:
+   - In Steam, go to **Steam > Settings > In-Game** and uncheck "Enable the Steam overlay while in-game."
+   - *Or disable it per-game:* right-click **The Elder Scrolls V: Skyrim Special Edition** in your library, select **Properties**, and uncheck "Enable the Steam Overlay while in-game."
+5. **Update-proof your Skyrim install** — Bethesda pushes Creation Club updates roughly every three months that break SKSE and SKSE-dependent mods:
+   - In Steam, right-click **The Elder Scrolls V: Skyrim Special Edition > Properties > Updates** tab.
+   - Set **Automatic Updates** to **"Wait until I launch the game."**
+   - Updates will NOT trigger when launching through MO2 via SKSE. If an update does slip through, use the [Skyrim downgrade patcher](https://www.nexusmods.com/skyrimspecialedition/mods/32698/) to roll back.
+
+### Configure Skyrim (Vanilla Launch)
+
+6. Launch **The Elder Scrolls V: Skyrim Special Edition** through Steam to open the default launcher:
+   - Click **Options**.
+   - Click the **Ultra** preset.
+   - Set **Aspect Ratio** and **Resolution** to your monitor's optimal values.
+   - Set **Antialiasing** to **Off** (prepares for ENB / Community Shaders).
+   - Ensure **Windowed Mode** is unchecked.
+   - Click **OK** to save and close.
+   - Exit the launcher.
+
+### Create Modding Folders And Install Core Tools
+
+7. Create a separate modding path such as:
    - `C:\Modding`
    - `C:\Modding\Tools`
-6. Install the core tooling into `C:\Modding\Tools`:
+8. Install the core tooling into `C:\Modding\Tools`:
    - `Mod Organizer 2`
    - `BethINI Pie` (<https://www.nexusmods.com/site/mods/631>)
    - `LOOT` (<https://github.com/loot/loot/releases>)
@@ -33,6 +56,19 @@ This guide turns the planning files into an install order that can actually be f
    - `BodySlide and Outfit Studio` (<https://www.nexusmods.com/skyrimspecialedition/mods/201>)
    - `Pandora Behaviour Engine Plus` (<https://www.nexusmods.com/skyrimspecialedition/mods/133232>)
    - `Cathedral Assets Optimizer` (<https://www.nexusmods.com/skyrimspecialedition/mods/23316>) only if a specific mod later needs it
+
+### Install The Creation Kit
+
+9. **Skyrim Special Edition: Creation Kit** (<https://store.steampowered.com/app/1946180/Skyrim_Special_Edition_Creation_Kit/>):
+   - Download and install the Creation Kit via Steam.
+   - Launch the Creation Kit through Steam.
+   - Allow the **Scripts** folder to extract (this happens automatically on first launch).
+   - Once the CK has fully loaded, exit the program.
+   - Download the pre-made [`CreationKitCustom.ini`](https://lexyslotd.com/guide/common-tasks/#creation-kit-ini) and extract it to `Steam\steamapps\common\Skyrim Special Edition\`. This configures the CK to allow multiple masters and load DLC content properly.
+   - If the CK crashes on first launch, add an [outbound firewall rule](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-port-rule) for `CreationKit.exe`.
+10. **Creation Kit Platform Extended** (<https://www.nexusmods.com/skyrimspecialedition/mods/71371>):
+    - Download the main file **CK Platform Extended 0.6-b550**.
+    - Extract the contents of the archive directly into your main **Skyrim Special Edition** folder — NOT into a sub-folder.
 
 Every named tool and mod in this guide includes a download URL at its first mention.
 

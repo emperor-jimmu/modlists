@@ -25,6 +25,7 @@ Scope notes:
 - `Synthesis` for selective patcher-based automation once the stack is stable enough to justify it
 - `Cathedral Assets Optimizer` for asset cleanup and conversion tasks when a mod actually needs it
 - `BethINI Pie` for baseline INI management and graphics/settings normalization
+- `Skyrim Special Edition: Creation Kit` for resaving LE plugins to SE format; used alongside `Creation Kit Platform Extended` for stability
 - `xLODGen`, `TexGen`, and `DynDOLOD` for terrain/object/tree distant detail workflow
 - `BodySlide and Outfit Studio` for the chosen body pipeline
 - `Pandora Behaviour Engine Plus` for animation behavior generation
