@@ -22,6 +22,7 @@
 - Set `Oathvein UI` as the locked visual direction. Both `Oathvein UI` and `Norden UI` are by the same author (`Nithog`) and both are actively maintained, but `Oathvein` is the chosen path for `Elder Wilds`: its grim-dark presentation matches the project tone better, and its dependency chain is cleaner than `Norden UI`'s `Extended UI` requirement.
 - Keep `Prisma UI` as a documented next-gen framework comparison rather than the default choice. It is a web-UI framework that replaces `SkyUI` rather than extending it, which makes it incompatible with the `Oathvein UI` visual direction and with most UIExtensions-based mods from later subsections. Locked baseline stays `SkyUI` + `Oathvein UI`; `Prisma UI` is documented for projects that want to pursue the framework-replacement path instead of the visual-overhaul path.
 - Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision.
+- Add `Constructible Object Custom Keyword System (COCKS)` as the crafting-menu category infrastructure baseline. It owns the keyword-based category structure that underpins the crafting-menu readability improvements in the Crafting Menu Improvements subsection. Locked alongside the other framework picks here rather than buried in the crafting subsection alone.
 
 ### Risks & Compatibility
 
@@ -34,6 +35,7 @@
 - `modlist-06.md` has one clear UI framework baseline: `SkyUI` + `Oathvein UI`.
 - The role of `UIExtensions` is explicit as support infrastructure rather than a competing full UI direction.
 - The visual baseline is narrowed to `Oathvein UI` with a clear rationale for why it fits `Elder Wilds` over `Norden UI`.
+- `COCKS` is locked as the crafting-menu category infrastructure baseline alongside the other framework picks.
 
 ## HUD Overhaul
 
@@ -52,7 +54,7 @@
 ### Recommendation
 
 - Start with `SkyHUD` as the baseline HUD layout framework. It handles widget positioning, visibility control, and style consistency across screen sizes.
-- Add `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> as the dedicated combat-feedback companion. `TrueHUD` is by the same author as `True Directional Movement` (already in `modlist-04.md`), has `58,848` endorsements and over `2 million` unique downloads, and provides actor info bars, boss bars, player widgets, and recent-loot logging. It was last updated `December 2023` (feature-complete). Keep `TrueHUD` scoped to combat-feedback additions only, not as a competing HUD framework.
+- Add `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> as the dedicated combat-feedback companion. `TrueHUD` is by the same author as `True Directional Movement` (already in `modlist-04.md`), has `59,281` endorsements and over `2 million` unique downloads, and provides actor info bars, boss bars, player widgets, and recent-loot logging. It was last updated `December 2023` (feature-complete). Keep `TrueHUD` scoped to combat-feedback additions only, not as a competing HUD framework.
 - Add `Casting Bar` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80455> as a small, focused cast-and-draw timing companion. It solves a real readability gap for spells, shouts, and bow draw without trying to become another full HUD framework, so it fits naturally next to `SkyHUD` and `TrueHUD` rather than competing with them.
 - Keep `Stats Tracker Menu - STM` as a documented stats-overlay companion rather than a baseline. It is brand new (v1.0.1, May 2026) with very low community signal, so lock it in only after playtesting confirms it does not fight `SkyHUD` widget positioning or `TrueHUD` combat feedback. If accepted, it lives next to those two as a third scoped addition (stats display), not a replacement for either.
 - Add `Floating Damage` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14332> as an optional combat-feedback overlay. Displays floating damage numbers above hit targets with configurable color, size, duration, and position via `FloatingDamage.ini`. Useful for build-testing and damage-visibility feedback but potentially at odds with the minimal-HUD presentation pillar. Keep optional — install only after playtesting confirms the visual noise level is acceptable alongside the chosen HUD stack.
@@ -116,7 +118,7 @@
 - Inventory readability can be over-solved by stacking too many overlapping micro-fixes.
 - A more information-heavy route can slow scanning instead of speeding it up.
 - Icon and sorting customization can become a substitute for clear baseline menu readability.
-- `Weapon Stat Viewer V2` is a relatively new mod with low endorsement count (432). Verify it does not conflict with the chosen UI framework, and treat it as opt-in until the project has tested it.
+- `Weapon Stat Viewer V2` is a relatively new mod with low endorsement count (447). Verify it does not conflict with the chosen UI framework, and treat it as opt-in until the project has tested it.
 
 ### Acceptance Criteria
 
@@ -309,7 +311,7 @@
 - Treat `Compass Navigation Overhaul` as the strongest first-pass baseline because it answers the actual navigational layer directly instead of jumping immediately to a hide-the-HUD philosophy.
 - Treat `CoMAP` as the natural marker-side companion when the project wants cleaner marker consistency across the chosen `FWMF` paper-map ecosystem.
 - Keep `Immersive HUD - iHUD Special Edition` as the deliberate minimal-HUD branch only if testing shows that reduced on-screen persistence materially improves exploration tone rather than making the paper-map-and-compass loop less readable.
-- Keep `MiniMap` as a very optional side addition. Minimaps are not aligned with the grim-dark exploration pillar (they reduce the need to read the environment), and the mod's low endorsement count (715, last updated 2022) and occasional crash reports on 1.6.1170 make it a high-risk low-return addition. Document it as "very optional — test before locking."
+- Keep `MiniMap` as a very optional side addition. Minimaps are not aligned with the grim-dark exploration pillar (they reduce the need to read the environment), and the mod's low endorsement count (7,761, last updated May 2021 — stale by current standards) and occasional crash reports on 1.6.1170 make it a high-risk low-return addition. Document it as "very optional — test before locking."
 - Keep `SkyHUD` as the broader HUD-layout owner, `FWMF` plus map-art choices as the map owner, and gameplay-side `TrueHUD` as a separate feedback layer.
 
 ### Risks & Compatibility
@@ -430,11 +432,11 @@
 
 ### Options
 
-- Follower-and-player stats overlay: `Skyrim Party Sheet - Follower and Player HUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/167538> — adds a persistent HUD overlay showing player attributes (Health, Magicka, Stamina) alongside active follower information in a party-sheet format. Potentially useful for third-person gameplay where the player wants quick follower-status visibility without opening menus. Very new mod (2025) with low community signal — compatibility with `TrueHUD`, `Oathvein UI`, `moreHUD`, and `Nether's Follower Framework` is unverified. Keep as "very optional — research before installing."
+- Follower-and-player stats overlay: `Skyrim Party Sheet - Follower and Player HUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/167538> — adds a persistent HUD overlay showing player attributes (Health, Magicka, Stamina) alongside active follower information in a party-sheet format. Potentially useful for third-person gameplay where the player wants quick follower-status visibility without opening menus. Still fairly new (first released 2025) but has seen active development — now at v2.7 (updated June 2026) with 1,084 endorsements and growing community adoption. Compatibility with `TrueHUD`, `Oathvein UI`, `moreHUD`, and `Nether's Follower Framework` remains unverified. Keep as "very optional — research before installing."
 
 ### Recommendation
 
-- Keep `Skyrim Party Sheet` in this optional tracking section only. Do not include it in the locked modlist until playtesting confirms it does not fight `TrueHUD` widget positioning, `Oathvein UI` visual styling, or `Nether's Follower Framework` follower management. Its low community signal and unknown 1.6.1170 stability make it a potential troubleshooting sink rather than a proven addition.
+- Keep `Skyrim Party Sheet` in this optional tracking section only. Do not include it in the locked modlist until playtesting confirms it does not fight `TrueHUD` widget positioning, `Oathvein UI` visual styling, or `Nether's Follower Framework` follower management. Its compatibility on 1.6.1170 with the full UI stack is still unproven, and its active development pace means the mod may change meaningfully between planning and installation.
 - If accepted later, place it in the HUD Overhaul subsection as a companion to `TrueHUD` for follower-status visibility.
 
 ### Risks & Compatibility
