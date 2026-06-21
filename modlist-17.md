@@ -96,7 +96,7 @@ This is the standard workflow for generating a voice pack from the full load ord
 
 - Install DBVO and its dependencies (ConsoleUtilSSE NG, JContainers SE, SkyUI, SKSE64) as part of the foundations stack. DBVO must be enabled and its .esp must be in the load order before running MCVO Generator.
 - Build the full modlist in MO2 with the desired load order finalized (or as final as possible — rerunning later is possible but time-consuming).
-- Install xVASynth 2 and the desired voice models. For the default male voice, download the Geralt of Rivia voice pack (Witcher 3 Nexus 5676) and place it in xVASynth's voice model directory.
+- Install xVASynth and the desired voice models. For the default male voice, download the Geralt of Rivia voice pack (Witcher 3 Nexus 5676) and place it in xVASynth's voice model directory.
 - Download MCVO Generator from Nexus and extract it to a convenient location (e.g., `C:\Modding\Tools\MCVO Generator`).
 
 ### Generating the Voice Pack
@@ -105,7 +105,7 @@ This is the standard workflow for generating a voice pack from the full load ord
    - `DBVO-All.esp` in the Skyrim `Data` folder — add this to MO2 as a new mod (create a mod named `DBVO-All Output`, copy the .esp in, enable it).
    - `DBVO-All.csv` in the same directory as the .exe — this is the batch input file for xVASynth.
 
-2. Open xVASynth 2, switch to **Batch Mode**, and load `DBVO-All.csv`. Select the voice model (default: `witcher,w_geralt` for male, or choose a female model like `skyrim,sk_femaleelfhaughty`). Click **Generate**.
+2. Open xVASynth, switch to **Batch Mode**, and load `DBVO-All.csv`. Select the voice model (default: `witcher,w_geralt` for male, or choose a female model like `skyrim,sk_femaleelfhaughty`). Click **Generate**.
 
 3. xVASynth processes every line. Output .wav files are written to the paths specified in the CSV (typically under `Data\Sound\Voice\Dragonborn Voice Over\`). This can take hours for large load orders.
 

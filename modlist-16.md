@@ -8,7 +8,7 @@ This subsection owns the animation framework that supports the romance, dialogue
 
 ### Options
 
-- **OStim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/98163> (v7.5 Apr 2026) — the modern adult animation framework for Skyrim SE/AE. Standalone means it does not require OSA or any legacy dependency. It provides the animation system that OStim Romance and the Amorous Adventures OStim patch build on. The maintained branch after OStim NG.
+- **OStim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/98163> (v7.4 Apr 2026) — the modern adult animation framework for Skyrim SE/AE. Standalone means it does not require OSA or any legacy dependency. It provides the animation system that OStim Romance and the Amorous Adventures OStim patch build on. The maintained branch after OStim NG.
 - **OStim Community Resource** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106519> — a shared framework and dependency required by various OStim add-on mods. Install alongside OStim Standalone as a prerequisite for the broader OStim ecosystem.
 - **Animation packs for OStim Standalone**: the recommended baseline is `Open Animations Romance and Erotica (OARE)`. Additional coverage from **Additional Leito's Animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/104995> (Leito's set, ~150 animations) and **Anub's animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/101918> (~685 animations). Both expand scene variety substantially beyond the baseline OARE pack.
 - **PPA - Procedural Penis Animations** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172002> — procedural physics addon that animates and aligns the penis with visual collision. Designed to work with CBPC. Adds physical believability to OStim scenes without replacing the animation framework.
@@ -148,7 +148,7 @@ Add **Immersive Wenches** as an ambient tavern layer. It populates inns with NPC
 - Immersive Wenches has documented compatibility notes with inn-overhaul mods, AI packages, and city overhauls. Check against the locked city and interior list.
 - The mod adds NPCs and AI packages that increase script load in populated cells. Test in riften and solitude inns specifically.
 - The OStim patch must match both the Immersive Wenches version and the OStim Standalone version.
-- 2-year age rule: Immersive Wenches (original 2017, but still maintained — latest files as of 2024) is within the active-modernisation window because the OStim patch (2024) keeps the ecosystem current.
+- 2-year age rule: Immersive Wenches (original 2017, but still maintained — latest files as of Nov 2025) is within the active-modernisation window because the OStim patch (2025) and ongoing updates keep the ecosystem current.
 
 ### Acceptance Criteria
 
