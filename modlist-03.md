@@ -39,16 +39,17 @@
 
 ### Options
 
-- `XP32 Maximum Skeleton Special Extended - XPMSSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/44252>
+- `XP32 Maximum Skeleton Special Extended - XPMSSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1988>
+- `XP32 Maximum Skeleton Special Extended - Fixed Scripts` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/44252> — companion script fix applied over the main skeleton; requires XPMSSE (1988) as a hard dependency
 - `CBPC - Physics with Collisions for SSE and VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21224>
-- `Faster HDT-SMP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57339>
+- `FSMP - Faster HDT-SMP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57339>
 - `ConsoleUtilSSE NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76649>
 
 ### Recommendation
 
 - Use `XPMSSE` as the single skeleton baseline.
 - Use `CBPC` as the default first-pass physics layer for the chosen `CBBE 3BA (3BBB)` setup.
-- Use `Faster HDT-SMP` alongside CBPC for SMP physics coverage. The adult animation framework (OStim Standalone, `modlist-16.md`) benefits from SMP body physics during scenes, and SMP is also needed by some outfits and creature features later in the stack. Running both physics layers is standard for current 3BA setups — CBPC handles broad collision and SMP handles finer mesh deformation.
+- Use `FSMP - Faster HDT-SMP` alongside CBPC for SMP physics coverage. The adult animation framework (OStim Standalone, `modlist-16.md`) benefits from SMP body physics during scenes, and SMP is also needed by some outfits and creature features later in the stack. Running both physics layers is standard for current 3BA setups — CBPC handles broad collision and SMP handles finer mesh deformation.
 - Keep `ConsoleUtilSSE NG` available for script-dependent ecosystem pieces that still expect it on current runtime versions.
 
 ### Risks & Compatibility
@@ -149,15 +150,15 @@
 ### Options
 
 - Conservative route: keep idle changes very light and let locomotion carry most of the movement identity.
-- Female-idle comparison route: `Goetia Animations - Conditional Shuffled Idle for Pretty Female idles` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68005>
+- Female-idle comparison route: `Goetia Animations - Female Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68005>
 - Equipment-conditional follow-up route: `Conditional Armor Type Animations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51507>
-- Locomotion alternate to evaluate back in the previous section, not here: `Goetia Animations - Female Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68625>
+- Locomotion alternate to evaluate back in the previous section, not here: `Goetia Animations - Male Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68625>
 
 ### Recommendation
 
 - Keep the baseline idle posture aligned with the existing `Leviathan` locomotion choice rather than introducing a separate overlapping male movement package.
-- Compare `Goetia Animations - Conditional Shuffled Idle for Pretty Female idles` first if the list wants a lighter female-only idle layer.
-- Reassess `Goetia Animations - Female Idle Walk And Run` only as a broader locomotion alternate, not as an idle-only pick.
+- Compare `Goetia Animations - Female Idle Walk And Run` first if the list wants a lighter female locomotion alternative.
+- Reassess `Goetia Animations - Male Idle Walk And Run` only as a broader locomotion alternate, not as an idle-only pick.
 
 ### Risks & Compatibility
 
@@ -184,10 +185,10 @@
 - Balanced modern route: `Precision` plus `SCAR - Skyrim Combos AI Revolution` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72014>
 - Full `MCO` route to evaluate later: `MCO ADXP - Modern Movement Combat Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/117115>
 - Verified ambitious-route support to track with `MCO`: `Animation Motion Revolution` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50258> and `Payload Interpreter` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65089>
-- Iframe-utility support: `IFrame Generator RE (AE Support)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82737> is the AE-compatible iframe generator that several advanced attack and combat-animation packs expect. Hard-requires `Address Library for SKSE Plugins` and `SKSE64`. Required as a universal install if the final animation stack includes any pack that depends on it; otherwise install per-package when an animation mod explicitly lists it.
+- Iframe-utility support: `IFrame Generator RE AE Support` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82737> is the AE-compatible iframe generator that several advanced attack and combat-animation packs expect. Hard-requires `Address Library for SKSE Plugins` and `SKSE64`. Required as a universal install if the final animation stack includes any pack that depends on it; otherwise install per-package when an animation mod explicitly lists it.
 - Gameplay-side companion to revisit in `modlist-04.md`: `Valhalla Combat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64741>
 - New-weapon-type animations: `Animated Armoury - OAR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/103577> — adds 12 new weapon types (rapier, cutlass, scimitar, spear, halberd, quarterstaff, pike, javelin, katana, wakizashi, claw, whip) each with first-person and third-person attack animations. The OAR version requires `Open Animation Replacer` (already the baseline). The OAR version also requires the `Animated Armoury - DAR Version` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/35978> as a hard dependency — the DAR version provides the weapon meshes, collision data, and leveled-list distribution; the OAR version provides the animation files and OAR-specific configuration. Install both.
-- Death-animation fix: `No Spinning Death Animation LITE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33597> — removes the vanilla spinning death animation and replaces it with a simple ragdoll death. By Chesko, lightweight, no script overhead, compatible with all combat animation packs.
+- Death-animation fix: `No Spinning Death Animation LITE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33597> — removes the vanilla spinning death animation and replaces it with a simple ragdoll death. By Chesko, lightweight, no script overhead, compatible with all combat animation packs. Last updated March 2020 (stale per project cutoff) but confirmed working on AE 1.6.1170 by the community; no SKSE/dll dependency.
 
 ### Recommendation
 
