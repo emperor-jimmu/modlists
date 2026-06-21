@@ -618,7 +618,7 @@
 
 ### Risks & Compatibility
 
-- Stacking `Reliquary of Myth` with `ArteFakes` and `Unique Items Tweaks` touches every unique-item record in the game. They are designed to stack, but verify the `xEdit` patcher chain in `modlist-15.md` does not re-balance the same records (the Synthesis `Armor Stat Synthesis Patcher` should be configured to skip unique items if these mods are present).
+- Stacking `Reliquary of Myth` with `ArteFakes` and `Unique Items Tweaks` touches every unique-item record in the game. They are designed to stack, but verify the `xEdit` patcher chain in `modlist-15.md` does not re-balance the same records (the Synthesis `Weapon Stat Synthesis Patcher` should be configured to skip unique items if these mods are present).
 - `Konahrik's Accoutrements` adds new Dragon Priest encounters that may not be patched into Legacy of the Dragonborn's display system. Check the `LoTD Patches (Official)` hub in `modlist-13.md` for a `Konahrik's Accoutrements` integration patch before locking the mod in.
 - Artifact overhauls that rebalance too aggressively can break encounter expectations (the player expects a particular named weapon to feel a certain way in a particular quest). Reliquary of Myth is the community-canonical balance pass, but verify the top three most-quested artifacts (Wuuthrad, Mehrunes' Razor, the Gauldur weapons) feel right before lock-in.
 - `Unique Items Tweaks` overlaps lightly with `Reliquary of Myth` on a small number of records. The author documents which records are intentionally untouched by Reliquary, so this should not be a hard conflict, but verify with a Bashed Patch run.
@@ -704,7 +704,7 @@
 
 ### Risks & Compatibility
 
-- `Immersive Armors` is a large mod and the synthesis patcher chain in `modlist-15.md` already has explicit `Bash Tags` and patcher entries for it. Do not skip the `OWLLeveledListAddition` or `Armor Stat Synthesis Patcher` if `Immersive Armors` is present.
+- `Immersive Armors` is a large mod and the synthesis patcher chain in `modlist-15.md` already has explicit `Bash Tags` and patcher entries for it. Do not skip the `OWLLeveledListAddition` or `Weapon Stat Synthesis Patcher` if `Immersive Armors` is present.
 - `NordwarUA Total Armor` standardizes cubemaps across all six sub-mods. This means the mod visually overrides the cubemap of the original `NordwarUA Race Armor Expansion` etc., and any mod that depended on the original cubemaps will need to be re-tested.
 - `Common Clothes and Armors` adds clothing items to many NPC leveled lists. If `Armor and Clothing Extension` is also in the list, the two should not conflict (they touch different records) but verify the NPCs in the leveled lists look right after both are active.
 - `Bandolier` changes the inventory system. It does not conflict with `modlist-11.md` difficulty decisions, but the carry-weight design needs to account for the additional slots Bandolier provides.

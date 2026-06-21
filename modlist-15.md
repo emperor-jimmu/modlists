@@ -346,7 +346,7 @@
 - **Purpose**: Detects broken Papyrus scripts stuck in recursive loops and prevents the resulting framerate collapse. Skyrim's engine does not throw a stack-overflow error, so a buggy function that calls itself hundreds of thousands of times silently destroys frame timing. This plugin hooks the stack check and breaks the recursion after 1000 calls, writing a `StackFrameOverFlow` warning to the log instead of tanking performance.
 - **Requirements**: SKSE, Address Library for SKSE Plugins
 - **Status**: Optional diagnostics utility. Silent at runtime unless it fires. Worth installing early for debugging and keeping active on a production list.
-- **Updated fork**: [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (v1.0.2) removes the in-game debug popup that could freeze gameplay during a recursion event. All warnings are written to the SKSE log instead. Prefer this version for a production list.
+- **Updated fork**: [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (v1.0, updated May 2026) removes the in-game debug popup that could freeze gameplay during a recursion event. All warnings are written to the SKSE log instead. Prefer this version for a production list.
 
 ### Save And Load Accelerator For SKSE Cosaves (S.L.A.C.K.)
 
@@ -535,7 +535,7 @@ The `Synthesis` patcher pipeline runs as a single batch via the `Run Mutagen` to
 - `HonedMetalAdditionalIngredients` — adds additional ingredients to `Honed Metal` from `Apothecary`/`CACO`.
 - `Heim Recipe Patcher` — updates weapon/armor recipes with the correct `Heim` book conditions (only enable if `Heim` is added).
 - `ReProccer Evolved` — keeps mod-added items compatible with `Skyrim Redone`-style systems; not currently in the stack but the patcher is cheap insurance.
-- `Armor Stat Synthesis Patcher` and `Weapon Stat Synthesis Patcher` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149027>) — analyze and rebalance armor/weapon stats to keep the tier ladder meaningful across `Immersive Armors`, `Immersive Weapons`, `Animated Armoury`, `Spaghetti's Cities`, and `Bruma` armors. See `guide.md` Step 23 for detailed configuration instructions.
+- `Weapon Stat Synthesis Patcher` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149027>) — analyzes and rebalances weapon stats to keep the tier ladder meaningful across `Immersive Weapons`, `Animated Armoury`, and other mod-added weapons. See `guide.md` Step 23 for detailed configuration instructions.
 - `SpeedandReachFixes` — applies `Speed and Reach Fixes` corrections to all mod-added weapons.
 - `WeaponSpeedEffectsFix` — applies `Weapon Speed Effects Fix` / `Attack Speed Framework Plus` corrections to all mod-added weapons.
 - `SynFixShieldData` and `SynFixWeaponAttackSpeed` — repair shield material/impact sets and attack-speed bugs on mod-added items.
@@ -626,7 +626,7 @@ The full rebuild order in `Mod Organizer 2` is:
 8. `Grass Cache` rebuild — triggers: any grass mod or `Worldspaces with Grass SSEEdit Script` change.
 9. `SSE Display Tweaks` and `BethINI Pie` settings review — triggers: any lighting, weather, or graphics stack change.
 
-Rebuilding one stage does not replace the stages after it. A `Bashed Patch` rebuild after adding a single weapon must still be followed by a `Synthesis` run if the new weapon needs an `Armor Stat Synthesis Patcher` or `WeaponSpeedEffectsFix` pass, and a `DynDOLOD` run if the weapon has worldspace placement.
+Rebuilding one stage does not replace the stages after it. A `Bashed Patch` rebuild after adding a single weapon must still be followed by a `Synthesis` run if the new weapon needs the `Weapon Stat Synthesis Patcher` or `WeaponSpeedEffectsFix` pass, and a `DynDOLOD` run if the weapon has worldspace placement.
 
 ### Risks & Compatibility
 

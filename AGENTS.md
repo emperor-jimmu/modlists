@@ -35,7 +35,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `modlist-07.md` (336 lines, `Immersive Scale and World Feel`) is moderately expanded but still an open research area.
 - `modlist-08.md` (378 lines, `World Content`) has moderate content and is an active development area with recent mod pick additions (Fishing, Evolving Locations, quest content).
 - `modlist-10.md` (262 lines, `Audio and Feedback`), `modlist-11.md` (226 lines, `Survival, Difficulty, and Balance`), and `modlist-15.md` (849 lines, `Performance and Technical Workflow`) each have expanded content and are open research areas.
-- `modlist-14.md` (165 lines, `Modlist Curation Rules and Testing Plan`) is the expanded meta-section combining curation guardrails and testing verification.
+- `modlist-14.md` (182 lines, `Modlist Curation Rules and Testing Plan`) is the expanded meta-section combining curation guardrails and testing verification.
 - `modlist-01.md` (Targeted Bugfix Mods) (78 lines, `Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes.
 - `modlist-13.md` (116 lines, `Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy.
 - `modlist-16.md` (194 lines, `Adult Content`) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
