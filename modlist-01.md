@@ -246,7 +246,8 @@ Add these if the specific problem they solve shows up in play:
 - `Mum's the Word NG` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77409>) — worthless stolen-item tagging
 - `Regional Save Names` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49698>) — save labeling for testing hygiene
 - `Better Jumping SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18967>) — consistent jumping control
-- `Bard Instrumentals Mostly - Sing Rarely` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10927>) — repetitive tavern singing
+- `Bard Instrumentals Mostly - Sing Rarely` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10927>) — repetitive tavern singing (last updated 2017; still functional as a simple condition edit, but consider `BA Bard Songs` at <https://www.nexusmods.com/skyrimspecialedition/mods/47202> for expanded instrumental repertory)
+- `Beginner Bard Animations - For Skyrim's Got Talent` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130776>) — skill-based playing animations for lute/flute/drum that match your bard talent level (requires `Skyrim's Got Talent` + `Open Animation Replacer`)
 - `LeveledList Crash Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129136>) — leveled-list crash protection for heavy content stacks
 
 ### Working Guidance
