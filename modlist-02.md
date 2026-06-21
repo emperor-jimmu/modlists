@@ -40,30 +40,28 @@
 
 ### Options
 
-- Conservative option:
-- `Screen Space Shadows - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93209>
-- `Grass Lighting - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86502>
-- `Water Effects - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112762>
-- `Wetness Effects - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112739>
-- Balanced option:
-- Conservative stack plus `Terrain Shadows - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135817>
-- High-end option:
-- Balanced stack plus `Subsurface Scattering - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114114> and `Screen Space Global Illumination (SSGI)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130375>
+- All feature modules are bundled into the latest Community Shaders single AIO download (v1.7+, ~70 MB on the `Community Shaders` main page). Enable/disable modules in the CS FOMOD at install time. The tiered approach below remains valid for selective evaluation; the AIO replaces all per-module Nexus pages.
+- Conservative tier:
+    - Screen Space Shadows, Grass Lighting, Water Effects, Wetness Effects
+- Balanced tier:
+    - Conservative set plus Terrain Shadows
+- High-end tier:
+    - Balanced set plus Subsurface Scattering, Screen Space Global Illumination (SSGI)
 - Fire-and-particle companion:
 - `Embers XD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37085> (works with `Community Shaders`; `CS Light` ships a dedicated `Embers XD` FOMOD config that routes particle lights through `Light Limit Fix` cleanly)
 - Sky-driven lighting companion:
-- `Skylighting - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139352>
+- `Skylighting - Community Shaders` (bundled in the CS AIO FOMOD, enable as needed)
 - Support-only branch:
 - `Skyrim Upscaler - DLSS FSR2 XeSS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80343>
 
 ### Recommendation
 
-- Start with the conservative option.
-- Promote to the balanced option only after trees, grass, weather, water, and LOD choices are stable enough that the extra depth is worth measuring.
-- Treat `SSGI` as an optional luxury feature, not a baseline requirement.
-- Treat `Light Limit Fix` as a legacy or version-check item, not a default inclusion.
+- Use the CS 1.7+ AIO download (single file from the main CS page) and enable modules via FOMOD at install time. No per-module downloads needed.
+- Start with the conservative tier (Screen Space Shadows, Grass Lighting, Water Effects, Wetness Effects).
+- Promote to the balanced tier (add Terrain Shadows) only after trees, grass, weather, water, and LOD choices are stable enough that the extra depth is worth measuring.
+- Treat SSGI and Subsurface Scattering (high-end tier) as optional luxury features, not a baseline requirement.
 - Treat `Embers XD` as the fire and ember category answer rather than pretending the rest of the CS stack covers that visual gap by itself. It is the standard Community Shaders fire-and-particle pick: 140K+ endorsements, actively maintained, and `CS Light` has a dedicated FOMOD option for it. Install it after the main lighting overhauls (Lux, ELFX) so it can inherit their campfire and hearth placements.
-- Treat `Skylighting - Community Shaders` as the world-space sky shadow layer. It casts believable sky-driven shading across terrain and objects, adds large-scale directional ambient illumination from the sky, and pairs cleanly with the conservative option without requiring the balanced or high-end option. Worth including on the conservative baseline for an authentic 4K grim-dark look.
+- Enable `Skylighting` in the CS FOMOD from the start. It casts believable sky-driven shading across terrain and objects, adds large-scale directional ambient illumination from the sky, and pairs cleanly with the conservative tier without requiring the balanced or high-end tier. Worth including on the conservative baseline for an authentic 4K grim-dark look.
 - Use `Skyrim Upscaler` only if real performance testing proves it is needed.
 
 ### Graphics Testing Protocol
@@ -129,6 +127,7 @@
 - Use the balanced PBR option.
 - Prioritize surfaces where material response is most visible in normal play: stone, metal, wood, wet surfaces, ruins, and high-detail clutter.
 - Do not commit to a full-world PBR conversion until visual consistency, performance cost, and maintenance burden are proven acceptable.
+- Community Shaders now ships `Dynamic Cubemaps` (real-time environment capture for specular reflections) and `Image-Based Lighting (IBL)` as standard features. These improve PBR material response (especially on metal, water, and wet surfaces) without additional mods. Verify that the chosen PBR texture set takes advantage of both before adding extra reflection or cubemap mods.
 
 ### Priority Coverage
 
@@ -389,7 +388,7 @@
 
 - Start with two primary Community Shaders-native candidates:
 - `NAT.CS III` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139567>
-- `Azurite III CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162153>
+- `Azurite III CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162153> — note that this requires the balanced CS add-on tier or higher (enables SSGI, Screen Space Shadows, Grass Lighting, Wetness Effects in the CS FOMOD), unlike NAT.CS III which works on the conservative stack.
 - Keep `Raid Weathers CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171041> as the gameplay-clarity alternate route.
 - Treat older families such as `Obsidian Weathers and Seasons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12125>, `Obsidian CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162627>, and `Cathedral Weathers and Seasons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/24791> as fallback benchmarks rather than main recommendations.
 - Treat `Azurite Weathers III - Enhanced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150269> and `Skydreamus Community Shaders Presets for NAT.CS III and Azurite III CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171145> as later tuning layers, not the first decision.
@@ -423,7 +422,7 @@
 ### Recommendation
 
 - Start with the Community Shaders-native water route.
-- Use `Water Effects - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112762> as the baseline shader feature layer.
+- Use `Water Effects - Community Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112762> as the baseline shader feature layer. Community Shaders 1.5.2+ also ships a `Unified Water` module that standardises water rendering across the CS stack — evaluate whether it replaces the need for a standalone water base before committing to external water mods.
 - Test `A Water Made For CS in mind` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172959> as the primary base-water candidate.
 - Only add `FYX - Water Mesh Optimization` if it clearly improves shorelines, water edges, or performance with the chosen setup.
 - Keep `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56520> as the main alternate comparison, layered on top of `Simplicity of Sea - Water Color and Transparency Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148761> which is its hard color/transparency dependency.
@@ -475,7 +474,7 @@
 - `Atlantean Landscape - Complete - Complex Terrain Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/89542>
 - `A Cathedralist's PBR Landscape` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/137333>
 - `TomatoRim PBR Landscapes AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177621>
-- `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336> is the modern mountain and rock overhaul (3.5K endorsements, actively updated April 2026, PBR/CS-native). New material blending system, no plugins, ships with Complex Material support. Use it as the primary mountain and rock identity in place of `Majestic Mountains`.
+- `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336> is the modern mountain and rock overhaul (3.5K endorsements, last updated April 2025, PBR/CS-native). New material blending system, no plugins, ships with Complex Material support. Use it as the primary mountain and rock identity in place of `Majestic Mountains`.
 - `Enhanced Rocks and Mountains - Fix and Addon` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/142493> extends ERM coverage to underground spaces and the Whiterun Skyforge and is the natural companion. Drop the `Majestic Mountains` stack (11052) and `Majestic Mountains Complex Material` (87547) entirely — the author has been inactive since June 2022, the mesh is known to miss snow coverage on rock piles, and the AE compatibility story is worse than ERM's.
 
 #### Roads
