@@ -28,7 +28,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 
 - `SKSE64` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/30379>
 - `Address Library for SKSE Plugins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32444>
-- `Unofficial Skyrim Special Edition Patch - USSEP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/266> (foundational record patch owned by section `01`)
+- `Unofficial Skyrim Special Edition Patch - USSEP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/266> (foundational record patch owned by section `01`. Requires the four free Creation Club masters (`ccbgssse001-fish.esm`, `ccqdrsse001-survivalmode.esl`, `ccbgssse037-curios.esl`, `ccbgssse025-advdsgs.esm`) and `_ResourcePack.esl` that ship with the 1.6.1170 runtime — no paid AE Upgrade needed.)
 - `SSE Engine Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17230>
 - `SSE Display Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34705> (mandatory baseline for display behavior, frame pacing, and frame-cap control)
 - `Scrambled Bugs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43532>
@@ -48,6 +48,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - `ConsoleUtilSSE NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76649> (SKSE-plugin console utility; shared hard requirement of `Dragon War` from section 09 and several animation behaviour mods from section 03)
 - `Kris's Papyrus Extender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115164> (SKSE-plugin Papyrus utility; hard requirement of `Bathing in Skyrim - Renewed` from section 05)
 - `Animation Queue Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82395> (animation-stack stability fix for heavy `Open Animation Replacer` / behavior loads; strongest current answer to the section's animation-engine placeholder)
+- `Papyrus Tweaks NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77779> (SKSE-plugin script-engine performance fixes and tweaks; configurable Papyrus operations-per-frame limit, native-call speedup, and stack-dump timeout. 22k endorsements, updated Oct 2025. Widely adopted by Step, Lexy's, and modern modding guides as a baseline script-performance layer.)
 - `Actor Value Generator` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/84743> (SKSE modder's resource for creating custom actor values; hard requirement of `Classic Attributes` and other mods that add new stats/traits. 2,932 endorsements, 269k downloads, by NoahBoddie)
 - `Particle Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65720> (particle shader/LOD corrections; originally ENB-focused but compatible with `Community Shaders` and vanilla game. 26k endorsements, updated Mar 2026)
 - `Assorted Mesh Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32117> (mesh correction collection for common visual errors; lightweight, no dependencies)
@@ -164,11 +165,11 @@ Manually checking each plugin is tedious. These scripts automate the discovery o
 
 1. **Built-in script (recommended first pass):** `SSEEdit` ships with `Find ESP plugins which could be turned into ESL.pas`. Load your full load order, right-click any plugin → `Apply Script...` → find the script in the dropdown. It outputs a report in the Messages tab listing every plugin that passes the `<2048` new-records test and has no cell/worldspace/quest dealbreaker records.
 
-2. **Updated script — Fractal's `ESP-ESL Finder v1.1` (<https://www.nexusmods.com/skyrimspecialedition/mods/117978>):** An improved version of the built-in script with better output formatting, `BEES` (Backported Extended ESL Support) awareness, and a `NOCELLS` variant that excludes plugins with `CELL` records. This gives a more conservative, play-safe list. Use this if the built-in script recommends plugins that later cause problems.
+2. **Updated script — Fractal's `ESP-ESL Finder v1.1` (<https://www.nexusmods.com/skyrimspecialedition/mods/117978>):** An improved version of the built-in script with better output formatting and a `NOCELLS` variant that excludes plugins with `CELL` records. This gives a more conservative, play-safe list. Use this if the built-in script recommends plugins that later cause problems.
 
 3. **`ESLify` (<https://www.nexusmods.com/skyrimspecialedition/mods/42211>):** A more automated tool — a `.bat` wrapper that launches `SSEEdit` with a script that presents a selection dialog of safe candidates, then applies the `ESL` flag to your selection in one pass. Useful when you already trust the candidate list and want to batch-convert, but still verify each candidate manually before running it.
 
-**Workflow:** Start with the built-in script to get a broad list. Cross-check against the rules above (CELL/WRLD/QUST/DIAL exceptions). Narrow the list with Fractal's `NOCELLS` variant. Convert manually (not with `ESLify`) until you are confident in your understanding of your load order's inter-plugin dependencies.
+**Workflow:** Start with the built-in script to get a broad list. Cross-check against the rules above (CELL/WRLD/QUST/DIAL exceptions). Narrow the list with Fractal's `NOCELLS` variant to exclude plugins with cell records. Convert manually (not with `ESLify`) until you are confident in your understanding of your load order's inter-plugin dependencies.
 
 ### Safe Conversion (Low Risk)
 
@@ -276,6 +277,6 @@ After completing this section, verify stability with the coc console command at 
 | 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
 | 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
 
-**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
+**Pass criteria:** No crash on load. No missing textures. ≥40 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
 
 If any location fails, the most recently installed mod or generation step is the first suspect.
