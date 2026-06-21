@@ -430,6 +430,8 @@
 - Evaluate `Natural Waterfalls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87261> and `Rally's Water Foam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28922> only after the main water base is selected.
 - Add `Splashes Of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47710> as the projectile-based water splash and ripple layer. It is a powerofthree SKSE plugin that extends water impact effects (arrows, spells, shouts) to all water surfaces and adds dynamic displacement ripples. Works independently of the chosen water base and has Community Shaders compatibility (v1.4.1+ includes CS-specific FPS optimizations). Treat it as a baseline inclusion rather than an optional evaluation.
 - Add `Loki's Wade In Water` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/42854> as the water-interaction layer for wading. Adds dynamic water ripple effects and footstep audio when the player or NPCs walk through shallow water. Mesh and animation replacer, no ESP, compatible with all water bases and Community Shaders. Complements the projectile-based splash layer by adding the body-in-water interaction side.
+- Optional water-surface VFX: `Water Debris` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171371> (v1.0.2, Apr 2026) — adds floating debris (twigs, leaves, particles) to water surfaces, making still and moving water feel more organic. SKSE plugin, no ESP, compatible with all water bases and Community Shaders. Evaluate after the main water base is stable.
+- Optional underwater VFX: `Underwater Bubbles - SKSE Plugin` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175559> (v1, Mar 2026) — adds bubble particle effects when the player or NPCs are submerged, improving underwater spatial awareness and visual feedback. SKSE plugin, no ESP. Complements the water-surface stack without touching water records.
 
 ### Risks & Compatibility
 
@@ -1035,6 +1037,7 @@ Male variety on `HIMBO`:
 - Keep the discipline-first route alive if the vanilla blood system already reads as strong enough under the chosen lighting and weather setup. Adding a framework for its own sake adds an extra mod without guaranteeing a visible gain.
 - Keep the deferred visual-effects branch alive if the locked weather, lighting, and texture stacks are still being settled, because adding a blood framework too early risks a re-tune when the weather or lighting baseline changes.
 - Keep this subsection separate from `modlist-04.md` hit-reaction and stagger ownership, and from `modlist-11.md` combat and difficulty ownership. The hit moment is their decision; the visual aftermath is this one's.
+- Optional footprint decals: `Dynamic Footprints SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175254> (v3.0, Jun 2026, 1,144 endorsements) — adds persistent footprint decals to snow, mud, sand, and other ground surfaces as the player and NPCs walk. SKSE plugin, no ESP, lightweight — complements the blood-and-decal stack by extending worldspace trace to movement rather than only combat. Add after the blood/decals baseline is stable.
 
 ### Risks & Compatibility
 

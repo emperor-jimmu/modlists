@@ -468,6 +468,7 @@
 - Add `The Choice is Yours` as the clearest roleplay-facing companion when the list wants stricter control over quest auto-start pressure in a content-heavy run.
 - Add `To Your Face SE - AE - VR` as the low-drama social-polish companion if normal city and tavern play still feels too noisy from vanilla greeting behavior.
 - Keep stealth-expression tooling separate from broader world-reaction goals so this subsection does not become a stealth overhaul by accident.
+- Optional pickpocketing-fidelity mod: `Steal off Scoundrels - Pickpocketing Criminals is Not Stealing` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171870> (v0.1.2, Feb 2026, by wSkeever, 778 endorsements) — prevents pickpocketing from being flagged as stealing when the target is a criminal (bandits, forsworn, etc.). Lightweight SKSE plugin, no ESP, no conflicts with crime or reputation systems. Adds roleplay consistency to the crime layer without expanding the social-response footprint.
 
 ### Risks & Compatibility
 

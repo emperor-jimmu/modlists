@@ -179,6 +179,7 @@
 - Use the additive route.
 - This is another reason `Stress and Fear` currently looks stronger here than a heavier injury system: it naturally plugs into meals, inns, sleep, and calmer downtime instead of trying to become a second survival overhaul.
 - If `Starfrost` remains the baseline from `modlist-05.md`, section 11 should amplify the need to recover without forcing constant menu babysitting or a pile of overlapping bodily debuffs.
+- Optional cold-weather visual companion: `Cold Breath NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174838> (v1.8, May 2026) — replaces the vanilla breath-vapor effect with higher-fidelity, more visible fogged breath in cold environments. Mesh and particle replacer, no ESP, compatible with all weather and survival frameworks. Adds atmosphere to cold-region and survival travel without script overhead.
 - Judge compatibility on travel loops: long wilderness walks, one ruin dive, return to settlement, prepare again. If those loops feel richer, this subsection is doing its job.
 
 ### Risks & Compatibility

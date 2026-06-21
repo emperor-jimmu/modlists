@@ -80,6 +80,7 @@
 - Structured jump-over-obstacles route: `RaySense - Jumping over obstacles` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175506>
 - Animation-selection patch for the above: `Open Animation Replacer - RaySense` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175498>
 - Edge-lookdown animation route: `RaySense - Edge Lookdown` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175514> — triggers a look-down animation when the player approaches a cliff edge. Requires `Open Animation Replacer` (already the baseline). OAR-based, companion to the `RaySense` jumping pair.
+- Movement-physics optional: `Inertia - Physical Movement Response System - SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172783> (v1.2.0, Feb 2026) — adds body lean, momentum, and weight to the player character's third-person movement. SKSE plugin that modifies how the character's upper body responds to directional changes, stops, and turns. Compatible with all animation packs and the chosen parkour framework. Evaluate after the core movement and parkour baselines are locked.
 - Discipline-first route: rely on vanilla climbing, `True Directional Movement`, sprint, and jump from this section and `modlist-04.md` only, with no dedicated parkour framework.
 - Deferred high-commitment branch: do not adopt a full parkour framework until later movement and animation work is stable, because the parkour ecosystem has many overlapping derivatives and lock-in decisions are hard to reverse.
 

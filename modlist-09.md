@@ -191,6 +191,8 @@ This subsection owns targeted dialogue additions for existing NPCs — expanding
 - Faction dialogue route: `Dialogue Expansion - Imperial Soldiers` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113208>. Adds dialogue to Imperial soldiers across camps, forts, and cities, using existing vanilla voice assets. Also discontinued for the same reason.
 - AI-voiced follower-dialogue series: `Follower Dialogue Expansion (FDE)` by Anbeegod — a series of mods that each expand a vanilla follower or follower-eligible NPC with hundreds of AI-voiced lines, quest awareness, location reactions, and story-driven interactions. The series covers multiple followers across Skyrim (details in Recommendation).
 - Broader alternative (out of scope): `More Dialogue Overhauls` or authored-NPC bundles that require new voice recording are outside this subsection's scope.
+- Optional dialogue-hub expansion: `Extended NPC Dialogue Hub` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179341> (v1.0, May 2026, 171 endorsements) — adds a central dialogue hub with expanded conversation options for generic NPCs, giving more responses and branching to ambient interactions. Lightweight ESP, compatible with existing FDE and dialogue expansion mods. Evaluate after the core dialogue stack is locked.
+- Optional ambient-banter expansion: `Small Talk` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168228> (v1.13.13.8, updated Jun 2026) — adds contextual NPC-to-NPC ambient dialogue lines in towns and cities, making social spaces feel more alive. SKSE plugin, no ESP. Complements the dialogue-expansion stack without touching individual NPC records.
 
 ### Recommendation
 
