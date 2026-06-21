@@ -56,6 +56,7 @@ This guide turns the planning files into an install order that can actually be f
    - `BodySlide and Outfit Studio` (<https://www.nexusmods.com/skyrimspecialedition/mods/201>)
    - `Pandora Behaviour Engine Plus` (<https://www.nexusmods.com/skyrimspecialedition/mods/133232>)
    - `Cathedral Assets Optimizer` (<https://www.nexusmods.com/skyrimspecialedition/mods/23316>) only if a specific mod later needs it
+   - `SKSE64` (<https://www.nexusmods.com/skyrimspecialedition/mods/30379>) — download the archive now; detailed install instructions are in Step 9
 
 ### Install The Creation Kit
 
