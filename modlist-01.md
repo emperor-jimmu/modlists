@@ -105,7 +105,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
   - **Step 6 — Build small focused `ModGroups` for the remaining intentional conflicts.** A `ModGroup` is an `xEdit` artifact (a `*.ModGroup` file) that hides a specific set of intentional conflict losers from the navigation tree, so the next mod's `-veryquickshowconflicts` run only surfaces real new conflicts. Build **one `ModGroup` per conflicting pair**, not one mega-group, because disabling or updating one source mod should not invalidate the entire conflict-hiding setup. The canonical workflow is to build a `ModGroup` for each upstream plugin the new mod conflicts with, so the new mod becomes the conflict winner within that group. After `xEdit` closes, move each `*.ModGroup` file out of the `MO2 overwrite` folder and into the source mod's folder inside `MO2` (for example the `USSEP` mod folder), so deactivating the source mod deactivates its `ModGroup` automatically.
   - **Step 7 — Re-open `xEdit` and confirm zero conflicts visible in the left pane, then start over with the next mod.** Zero visible conflicts in the navigation tree is the working state. A non-empty left pane means a `ModGroup` or a patch is missing for some new disagreement.
 - The starting state is also important. Begin from a clean vanilla load order (`Skyrim.esm`, `Update.esm`, the three DLCs) plus `Unofficial Skyrim Special Edition Patch` (`USSEP`), then build a `ModGroup` that hides the conflicts `USSEP` is supposed to resolve against vanilla. `USSEP` ships with a premade `ModGroup` since `xEdit 4.1.7`, so that step is usually a matter of keeping it rather than rebuilding it. `Elder Wilds` inherits that as the working baseline and the first `ModGroup` in the list.
-- Cleaning discipline is part of the cycle, not a separate phase. After installing a new mod and before running `-veryquickshowconflicts`, run **`Quick Auto Clean`** on that mod (also registered as a `MO2` tool) and run **`Check For Errors`**. A mod that is full of red errors is a signal to reconsider using it, not a signal to clean harder. `QAC` only removes `Identical To Master (ITM)` and `Undeleted Reference (UDR)` records and does not fix deeper problems; a `QAC`-clean mod that still misbehaves needs manual `xEdit` review.
+- Cleaning discipline is part of the cycle, not a separate phase. After installing a new mod and before running `-veryquickshowconflicts`, run **`LOOT`** and check whether it flags the mod for cleaning. If it does, run **`Quick Auto Clean`** on that mod (also registered as a `MO2` tool) and then run **`Check For Errors`**. A mod that is full of red errors is a signal to reconsider using it, not a signal to clean harder. `QAC` only removes `Identical To Master (ITM)` and `Undeleted Reference (UDR)` records and does not fix deeper problems; a `QAC`-clean mod that still misbehaves needs manual `xEdit` review. Clean every mod LOOT tells you to — do not skip this step even for mods you expect to be clean, because LOOT's cleaning warnings are based on real records, not reputation.
 - Use `xEdit` warnings as a triage list, not as errors. A yellow warning on a known cosmetic record is not the same priority as a red error on a missing master. Triage in this order: red errors first, yellow warnings grouped by record type, blue informational notes last.
 - ESL-flagged patches are the default. When creating a patch via `<new file>.esp [Template] ESL`, the patch lives in the `4096` ESL slot and does not consume a regular plugin slot, which matters once the list is in the high hundreds. Manually re-flagging an existing `ESP` to `ESL` (or back) is one of the fastest ways to silently break load-order resolution and should only be done when the mod author or `xEdit` itself explicitly says to.
 - In-game clipping and overlay problems are also a patching concern. After resolving a new mod's conflicts in `xEdit`, walk the cells the mod touches with `More Informative Console` (or the equivalent) to find clipping references, look up the `RefID`, copy it as override into a new patch, and set its record flag to `Initially Disabled` so the offending object stops appearing.
@@ -137,6 +137,88 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 - `xEdit` warnings are triaged in a known order after every mod installation, with red errors always resolved before the next mod is added.
 - Patches are rebuilt after every source-mod update that touches a record the patch owns, and stale patches are caught by `SSEEdit` review rather than by in-game symptoms.
 - The list survives a deliberate test in which one upstream source mod is disabled: its `ModGroup` and dependent patches should cleanly stop being useful instead of producing new conflicts.
+
+## ESP To ESL Conversion
+
+### Core Idea
+
+Converting a plugin from `ESP` to `ESL` (or more precisely, to `ESL`-flagged `ESP`) frees up a slot in the `254` regular plugin limit by moving the plugin into the `4096` light-plugin address space. This is essential once the load order passes ~150 regular plugins and critical past ~200. However, not every plugin can be safely converted, and doing it wrong silently corrupts form references across your save.
+
+### What Makes A Plugin Convertible
+
+- **Form count:** A plugin can only be flagged `ESL` if it contains fewer than `2048` new record forms (not including forms inherited from its masters). `SSEEdit` shows the form count in the header. If the form count exceeds `2048`, the plugin cannot be ESL-flagged without compacting its form IDs first (a more involved process documented below).
+- **No new cell or worldspace records:** Plugins that add new `CELL`, `WRLD`, `NAVM`, or `NAVI` records generally cannot be ESL-flagged without breaking references. `SSEEdit` will show these record types in the file's tree.
+- **No dialogue or quest alias changes:** Some `QUST` and `DIAL` records have hard-coded form ID expectations and break when re-indexed. Check for quest and dialogue overrides before converting.
+- **Known exceptions:** Certain mod types (header-meshes, body-slide outputs, SKSE plugins, texture replacers with dummy ESPs) are trivially convertible because they have zero or near-zero new records — these are safe to flag `ESL` immediately.
+
+### How To Check A Plugin's Suitability
+
+1. Open the plugin in `SSEEdit` (run `xEdit` with `-veryquickshowconflicts` or load it directly).
+2. Look at the plugin's header: `File Header` → `Record Header` → `HEDR` → `Number of Records` shows the total record count. If it is below `2048`, the plugin passes the form-count test.
+3. Look at the plugin's record tree in the left pane. If you see `CELL`, `WRLD`, `NAVM`, or `NAVI` as top-level record groups, the plugin has worldspace geometry and is risky to convert without verifying that no other mod references those worldspace records by their full form ID.
+4. Check for `QUST` and `DIAL` records. If present, read each one's `VMAD` (Papyrus script) sections for hard-coded form ID references. This check is time-consuming; when in doubt, do not convert.
+
+### xEdit Scripts For ESL Discovery
+
+Manually checking each plugin is tedious. These scripts automate the discovery of convertible plugins:
+
+1. **Built-in script (recommended first pass):** `SSEEdit` ships with `Find ESP plugins which could be turned into ESL.pas`. Load your full load order, right-click any plugin → `Apply Script...` → find the script in the dropdown. It outputs a report in the Messages tab listing every plugin that passes the `<2048` new-records test and has no cell/worldspace/quest dealbreaker records.
+
+2. **Updated script — Fractal's `ESP-ESL Finder v1.1` (<https://www.nexusmods.com/skyrimspecialedition/mods/117978>):** An improved version of the built-in script with better output formatting, `BEES` (Backported Extended ESL Support) awareness, and a `NOCELLS` variant that excludes plugins with `CELL` records. This gives a more conservative, play-safe list. Use this if the built-in script recommends plugins that later cause problems.
+
+3. **`ESLify` (<https://www.nexusmods.com/skyrimspecialedition/mods/42211>):** A more automated tool — a `.bat` wrapper that launches `SSEEdit` with a script that presents a selection dialog of safe candidates, then applies the `ESL` flag to your selection in one pass. Useful when you already trust the candidate list and want to batch-convert, but still verify each candidate manually before running it.
+
+**Workflow:** Start with the built-in script to get a broad list. Cross-check against the rules above (CELL/WRLD/QUST/DIAL exceptions). Narrow the list with Fractal's `NOCELLS` variant. Convert manually (not with `ESLify`) until you are confident in your understanding of your load order's inter-plugin dependencies.
+
+### Safe Conversion (Low Risk)
+
+Use this method for plugins known to be trivially convertible (body/Bodyslide outputs, SKSE plugin dummy ESPs, texture-standalone ESPs, mesh-replacer ESPs):
+
+1. Right-click the plugin in `SSEEdit`'s left pane.
+2. Select `Compact Form IDs for ESL`. This reassigns all new form IDs into the ESL-compatible range.
+3. Right-click again and select `Set Is-Esl Flag`. Only the `ESL` flag is needed — the `ESM` flag is not part of the ESP-to-ESL conversion process and would misidentify the plugin as a master file.
+4. Save the plugin.
+5. In `MO2`, re-sort with `LOOT` so the `ESL`-flagged plugin's position in the load order is recalculated — light plugins sort differently from regular plugins.
+
+### Full Conversion (SSEEdit Workflow)
+
+For a plugin that passes all the checks above but interacts with other mods:
+
+1. Load the plugin and its dependencies in `SSEEdit`. Apply the `Hide no conflict and empty rows` filter.
+2. Right-click the plugin and choose `Compact Form IDs for ESL`. A dialog shows how many form IDs will be compacted. If the count is zero, the plugin is already ESL-safe (skip to step 4).
+3. **Critical — check for broken references after compacting.** The compacting step re-indexes the plugin's form IDs; any external plugin that references the old IDs will now point to nothing. `SSEEdit` does not flag these automatically. Here is the manual check:
+
+   - **Before compacting** (or from a backup), note a few representative original form IDs from the plugin (e.g., `XX001234`, `XX004567`).
+   - **After compacting**, run `Check for Errors` on the plugin (right-click → `Check for Errors`). This catches broken internal references.
+   - **For external references**, load all plugins that list this plugin as a master (or your full load order). Select the converted plugin, right-click → `Referenced By` → `Apply as filter`. If any plugins show records referencing this plugin, examine whether those references point to form IDs that were just compacted. Expand the records and check the `REF` field values — if they use the original (pre-compact) form ID, the reference is broken.
+   - **Script-based approach (faster):** Apply the `List records referencing specific plugins.pas` script (ships with `SSEEdit` using the `[Template] ESL` naming). It reports every cross-reference to the plugin's records so you can verify none match the old form-ID range.
+4. Right-click the plugin → `Set Is-Esl Flag`. Only the `ESL` flag is required — do not set the `ESM` flag.
+5. Save. The plugin now occupies a light slot.
+6. In `MO2`, re-sort with `LOOT` and test the game.
+
+### Risks And Red Lines
+
+- **Never convert plugins that add `CELL`, `WRLD`, `NAVM`, or `NAVI` records unless you have verified every cross-reference manually.** These record types use their form ID as their persistent worldspace identifier, and compacting them orphans any mod or save that references the original location.
+- **Never convert a plugin mid-playthrough.** Changing a plugin's ESL flag invalidates existing saved references to that plugin's forms. The change only works on a new game or a save made before the plugin was first loaded.
+- **Never convert a plugin that another mod lists as a master** without checking whether the dependent mod hard-codes any of the to-be-compacted form IDs. If `Mod B` (ESP) lists `Mod A` (to be ESL) as a master, converting `Mod A` can break `Mod B`'s references.
+- **`ESL`-flagged plugins still count in the `4096` light-plugin limit.** `4096` is a large but finite cap, and some engine operations (faction membership, equipped items, placed references) degrade when too many light plugins contribute records to the same scene. Do not flag every small ESP just because you can.
+- **`xEdit` will warn you** when compacting would break something, but the warning only catches direct form-ID mismatches within the loaded plugin set, not indirect breaks through Papyrus scripts or through unloaded plugins. Read the warning carefully and abort if it reports potential issues.
+
+### Recommended Candidates
+
+- Bodyslide output ESPs (zero new records, trivially ESL-safe).
+- Texture-replacer ESPs that provide model/texture paths without adding new references.
+- SKSE plugin dummy ESPs (`SKSE\Plugins` mods that ship a stub ESP for load-order sorting).
+- Single-weapon, single-armor, or single-spell mods with no scripts, no quests, and fewer than `50` new records.
+- Crafting recipe-only ESPs (recipes reference existing items, they do not create new world records).
+- Patches you create yourself during the mod-by-mod patching workflow (always use `[Template] ESL` when creating the patch file).
+
+### Plugins To Never Convert
+
+- Major quest mods (`Legacy of the Dragonborn`, `Interesting NPCs`, `Vigilant`) that add thousands of records across quests, dialogues, worldspaces, and scripts. These almost always exceed the form-count limit or have cell/worldspace edits.
+- City and settlement overhauls that add new `CELL` or `WRLD` records.
+- Overhauls that add new dialogue branches or follower frameworks with quest aliases.
+- Any plugin that `LOOT` or `SSEEdit` explicitly flags as not ESL-safe.
 
 ## Targeted Bugfix Mods
 
