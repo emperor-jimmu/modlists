@@ -270,15 +270,18 @@
 
 ### Options
 
-- Broad mounted usability route: `Convenient Horses` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9519>
-- Restrained immersion route: `Immersive Horses` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13402>
+- Broad overhaul route: `Convenient Horses` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9519> — heavy scripting, all-in-one mounted usability, but last updated Jan 2022 (3.5yr stale)
+- Actively maintained overhaul route: `Press H to Horse` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/81195> — reworks AE/CC horse mechanics, MCM, horse calling/naming/inventory/follower riding, updated May 2026
+- Lightweight route: `Simplest Horses (and other mounts)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54225> — single hotkey does everything (inventory, follow/wait, teleport, rename), SPID+MCM, very compatible, last updated Dec 2022
+- Handling fix (complementary, works with any of the above): `Horses Simply Turn Better` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57790> — sharpens turning radius, designed for TDM
 - Minimalist route: keep horse behavior close to vanilla and solve only obvious mounted usability pain points.
 
 ### Recommendation
 
-- Start with a restrained mounted-support route rather than assuming horseback play needs a giant overhaul.
-- Treat `Convenient Horses` as the main broad candidate to evaluate because it is the clearest all-in-one mounted usability reference point.
-- Keep `Immersive Horses` as the grounded comparison if `Convenient Horses` feels too system-heavy or too opinionated for the final tone.
+- `Convenient Horses` (last updated Jan 2022) is no longer actively maintained. Prefer one of the newer alternatives.
+- `Press H to Horse` is the strongest candidate for an actively maintained, modern horse overhaul — by TateTaylorOH (Keizaal author), updated May 2026, edits few vanilla records, designed for compatibility.
+- `Simplest Horses` is the drop-in lightweight choice if the full overhaul feels like scope creep.
+- `Horses Simply Turn Better` should be considered a free add-on regardless of which overhaul is chosen — it only touches turning variables and makes mounted combat in TDM feel dramatically better.
 - Judge mounted play primarily on travel readability, steering confidence, and coherence with the chosen third-person camera philosophy rather than feature count alone.
 
 ### Risks & Compatibility

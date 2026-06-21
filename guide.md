@@ -516,9 +516,12 @@ Create or use separator `04 Third-Person Gameplay`.
 - Dodge path:
     - preferred current route: `TK Dodge RE - Script Free` (<https://www.nexusmods.com/skyrimspecialedition/mods/56956>) plus `TK Dodge SE` (<https://www.nexusmods.com/skyrimspecialedition/mods/15309>) meshes
     - alternative: no dedicated dodge mod yet
-- Horse path:
-    - `Convenient Horses` (<https://www.nexusmods.com/skyrimspecialedition/mods/9519>)
-    - or `Immersive Horses` (<https://www.nexusmods.com/skyrimspecialedition/mods/13402>)
+- Horse path (pick one):
+    - `Convenient Horses` (<https://www.nexusmods.com/skyrimspecialedition/mods/9519>) — broad all-in-one overhaul, heavy scripting, last updated Jan 2022
+    - `Press H to Horse` (<https://www.nexusmods.com/skyrimspecialedition/mods/81195>) — reworks AE horse mechanics, actively maintained (May 2026), MCM, horse calling/naming/inventory/follower riding
+    - `Simplest Horses (and other mounts)` (<https://www.nexusmods.com/skyrimspecialedition/mods/54225>) — lightweight single-hotkey management, SPID-based, last updated Dec 2022
+- Horse handling improvement (complementary, works with any of the above):
+    - `Horses Simply Turn Better` (<https://www.nexusmods.com/skyrimspecialedition/mods/57790>) — just fixes horse turning radius, designed for TDM
 - Ranged physics / newer experiments:
     - `Ricochet - Arrow Physics Framework` (<https://www.nexusmods.com/skyrimspecialedition/mods/160603>)
     - `Dodge for all` (<https://www.nexusmods.com/skyrimspecialedition/mods/174544>)
