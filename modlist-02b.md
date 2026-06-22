@@ -143,7 +143,11 @@
 
 #### Priority 1 Candidate Mods
 
-- Broad starter coverage: `Faultier's PBR Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/125308> → `02b`
+- Broad starter coverage: `Faultier's PBR Skyrim` (v3.0) - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/125308> → `02b`
+    - **Faultier's Skyrim AIO 2k** (9.2 GB) — covers clutter, furniture, creatures, Nordic ruins, Dwemer ruins & Markarth, Solitude, Windhelm, and all other non-landscape categories. 2k textures read cleanly at 4K with PBR material definition doing the heavy lifting; the 4k AIO (19.7 GB) adds marginal raster gain for a steep size cost.
+    - **Faultier's PBR Landscapes 4k** (3.0 GB) — separate from the AIO; terrain at 4k, mountains at 8k. Landscapes benefit from full-res height maps and mountain silhouettes are visible at great distance.
+    - **Faultier's PBR Road Signs - English** (42.7 MB, Update Files section) — not included in the AIO. Supports Cutting Room Floor. Install after the AIO.
+    - PG Patcher (ParallaxGen) must be run after installation or most PBR textures won't render in-game.
 - Full-vanilla PBR conversion: `Vanilla PBR AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174091> — converts all vanilla textures to PBR materials. Broadest coverage option but higher VRAM cost than targeted city packs. Evaluate as an alternative direction to the targeted per-city approach. → `02b`
 - Whiterun: `Tomato's PBR Whiterun` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135771> → `02b`
 - Farmhouses: `Tomato's PBR Farmhouses 2.0` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135774> → `02b`
@@ -172,12 +176,13 @@
 
 #### Working Rollout Order
 
-- Start with `Faultier's PBR Skyrim`. → `02b`
+- Install `Faultier's Skyrim AIO 2k` + `Faultier's PBR Landscapes 4k` as the paired PBR base. Landscapes are a separate Nexus file and must be downloaded and installed independently; they are not a deferred branch. → `02b`
+- Install `Faultier's PBR Road Signs - English` from the Update Files section after the AIO. → `02b`
 - Add one city test set such as `Tomato's PBR Whiterun`. → `02b`
 - Add rural support with `Tomato's PBR Farmhouses 2.0`. → `02b`
-- Add one dungeon or ruin test set such as `Exist's Nordic Ruins PBR and Complex Parallax Material`. → `02b`
+- Add one dungeon or ruin test set such as `Exist's Nordic Ruins PBR and Complex Material`. → `02b`
 - Add one stone-heavy city test set such as `PBaRkarth`. → `02b`
-- Only after those pass visual and performance review, test a landscape branch such as `A Cathedralist's PBR Landscape` or `TomatoRim PBR Landscapes AIO`. → `02b`
+- Only after those pass visual and performance review, test an additional landscape branch such as `A Cathedralist's PBR Landscape` or `TomatoRim PBR Landscapes AIO` (Faultier's Landscapes already covers the terrain baseline). → `02b`
 
 ### Risks & Compatibility
 
