@@ -381,17 +381,21 @@ Create or use separator `02 Modern Graphics`.
 
 ### Install Now
 
-Under `02.01 Community Shaders Core Setup` and `02.02 Community Shaders Add-Ons And Required Features`:
+#### Core Features (bundled in the `Community Shaders` FOMOD)
 
-- `Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/86492>)
-- `Screen Space Shadows - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/93209>)
-- `Grass Lighting - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/86502>)
-- `Water Effects - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/112762>)
-- `Wetness Effects - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/112739>)
-- `Terrain Shadows - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/135817>)
-- `Subsurface Scattering - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/114114>)
+- `Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/86492>) — enable Screen Space Shadows, Grass Lighting, Water Effects, Terrain Shadows, Subsurface Scattering, and Wetness Effects via FOMOD
+
+#### Optional Plugins (separate downloads)
+
+- `Cloud Shadows - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/139185>)
+- `Hair Specular - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/149011>)
+- `HDR - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/179371>)
 - `Skylighting - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/139352>)
 - `Screen Space Global Illumination (SSGI)` (<https://www.nexusmods.com/skyrimspecialedition/mods/130375>)
+- `Terrain Helper - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/143149>)
+- `Terrain Blending - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/157076>)
+- `Terrain Variation - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/148123>)
+- `Upscaling - Community Shaders` (<https://www.nexusmods.com/skyrimspecialedition/mods/156952>)
 
 Under `02.04 Texture Overhauls By Material Type` and `02.05 Mesh Improvements And Parallax Support` install the strongest non-controversial baseline pieces:
 

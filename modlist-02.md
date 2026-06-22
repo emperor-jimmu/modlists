@@ -42,7 +42,8 @@
 
 ### Options
 
-- All feature modules are bundled into the latest Community Shaders single AIO download (v1.7+, ~70 MB on the `Community Shaders` main page). Enable/disable modules in the CS FOMOD at install time. The tiered approach below remains valid for selective evaluation; the AIO replaces all per-module Nexus pages. → `02a`
+- Core features are bundled in the `Community Shaders` main download (v1.7+, ~70 MB). Enable/disable modules in the CS FOMOD at install time. The tiered approach below remains valid for selective evaluation. → `02a`
+- Several optional plugins remain separate Nexus downloads (not in the AIO) and must be installed individually: `Cloud Shadows`, `Hair Specular`, `HDR`, `SSGI`, `Skylighting`, `Terrain Helper`, `Terrain Blending`, `Terrain Variation`, `Upscaling`, `Wetness Effects`. → `02a`
 - Conservative tier:
     - Screen Space Shadows, Grass Lighting, Water Effects, Wetness Effects
 - Balanced tier:
@@ -52,18 +53,18 @@
 - Fire-and-particle companion:
 - `Embers XD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37085> (works with `Community Shaders`; `CS Light` ships a dedicated `Embers XD` FOMOD config that routes particle lights through `Light Limit Fix` cleanly) → `02b`
 - Sky-driven lighting companion:
-- `Skylighting - Community Shaders` (bundled in the CS AIO FOMOD, enable as needed) → `02a`
+- `Skylighting - Community Shaders` (separate Nexus download; enables soft ambient sky occlusion) → `02a`
 - Support-only branch:
 - `Skyrim Upscaler - DLSS FSR2 XeSS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80343> → `14`
 
 ### Recommendation
 
-- Use the CS 1.7+ AIO download (single file from the main CS page) and enable modules via FOMOD at install time. No per-module downloads needed.
+- Use the CS 1.7+ main download (single file from the main CS page) and enable core modules via FOMOD at install time. Install optional plugins separately — see list above.
 - Start with the conservative tier (Screen Space Shadows, Grass Lighting, Water Effects, Wetness Effects).
 - Promote to the balanced tier (add Terrain Shadows) only after trees, grass, weather, water, and LOD choices are stable enough that the extra depth is worth measuring.
 - Treat SSGI and Subsurface Scattering (high-end tier) as optional luxury features, not a baseline requirement.
 - Treat `Embers XD` as the fire and ember category answer rather than pretending the rest of the CS stack covers that visual gap by itself. It is the standard Community Shaders fire-and-particle pick: 140K+ endorsements, actively maintained, and `CS Light` has a dedicated FOMOD option for it. Install it after the main lighting overhauls (Lux, ELFX) so it can inherit their campfire and hearth placements. → `02b`
-- Enable `Skylighting` in the CS FOMOD from the start. It casts believable sky-driven shading across terrain and objects, adds large-scale directional ambient illumination from the sky, and pairs cleanly with the conservative tier without requiring the balanced or high-end tier. Worth including on the conservative baseline for an authentic 4K grim-dark look. → `02a`
+- Install `Skylighting` as a separate download. It casts believable sky-driven shading across terrain and objects, adds large-scale directional ambient illumination from the sky, and pairs cleanly with the conservative tier without requiring the balanced or high-end tier. Worth including on the conservative baseline for an authentic 4K grim-dark look. → `02a`
 - Use `Skyrim Upscaler` only if real performance testing proves it is needed. → `02a`
 
 ### Graphics Testing Protocol
