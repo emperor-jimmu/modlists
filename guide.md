@@ -84,6 +84,13 @@ Every named tool and mod in this guide includes a download URL at its first ment
 7. In `Settings > Workarounds`, tick `Enable archives parsing (experimental)`.
 8. Create a clean working profile before installing mods.
 
+### Step 2a. Install FOMOD Plus
+
+1. Download **FOMOD Plus - A Mod Installation Overhaul for Mod Organizer 2** from <https://www.nexusmods.com/skyrimspecialedition/mods/141001>.
+2. Extract the contents of the archive directly into your `Mod Organizer 2` installation folder (e.g. `C:\Modding\MO2\`). The `plugins` folder inside the archive merges with MO2's existing `plugins` folder.
+3. Restart `Mod Organizer 2` if it is already open. FOMOD Plus activates automatically — you will see an extra `FOMOD` column in MO2's left pane and a `FOMOD` tab on the right pane.
+4. Optional: right-click the left-pane column header row, enable the **FOMOD** column to mark which mods were installed via FOMOD, and use the **FOMOD** tab to filter mods by installation choice.
+
 ## Step 3. Create The Separator Layout
 
 Create separators in MO2 using the names from [`separators.md`](separators.md) — each entry includes the `-#RRGGBB` color prefix that MO2 reads. Create them in list order; the `xx` and `xxa` prefixes preserve sort order (the `xxa` groups nest visually under their parent by position).
