@@ -201,6 +201,8 @@ Manually checking each plugin is tedious. These scripts automate the discovery o
 
 3. **`ESLify` (<https://www.nexusmods.com/skyrimspecialedition/mods/42211>):** A more automated tool — a `.bat` wrapper that launches `SSEEdit` with a script that presents a selection dialog of safe candidates, then applies the `ESL` flag to your selection in one pass. Useful when you already trust the candidate list and want to batch-convert, but still verify each candidate manually before running it.
 
+4. **`SSEEdit Script - Header Change to Version 1.71` (<https://www.nexusmods.com/skyrimspecialedition/mods/115056>):** The Skyrim 1.6.1130+ update doubled the number of addresses in ESL-flagged plugins by fixing an engine bug that had reserved the `001-7FF` address range. This fix unlocks that range for all plugin types, allowing ESL-flagged plugins up to `4095` records instead of half that. Plugins using the unlocked range carry a `Header Version` of `1.71`; older plugins use `1.70`. This script automatically detects any plugin still on the old header and updates it to `1.71`, ensuring the entire load order shares a consistent header. Run this after adding new plugins to keep the list homogeneous and avoid potential conflict-resolution issues between old and new headers.
+
 **Workflow:** Start with the built-in script to get a broad list. Cross-check against the rules above (CELL/WRLD/QUST/DIAL exceptions). Narrow the list with Fractal's `NOCELLS` variant to exclude plugins with cell records. Convert manually (not with `ESLify`) until you are confident in your understanding of your load order's inter-plugin dependencies.
 
 ### Safe Conversion (Low Risk)
