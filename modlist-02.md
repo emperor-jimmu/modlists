@@ -304,6 +304,7 @@
 
 - Use the hybrid option.
 - Keep `Static Mesh Improvement Mod - SMIM` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/659> as the baseline. → `02b`
+- Add `Unofficial Material Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21027> after SMIM (hard-requires SMIM; corrects material records used by `Community Shaders` PBR pipeline, 21k endorsements). → `02b`
 - Treat `High Poly Project` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12029> as optional and only keep it if the extra geometry earns its conflict cost. → `02b`
 - Use `Simplicity of Snow` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56235> early if the final texture and mountain stack needs snow-consistency support. → `02b`
 - Use `FYX - Water Mesh Optimization` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97713> only if the chosen water setup benefits from it. → `02b`

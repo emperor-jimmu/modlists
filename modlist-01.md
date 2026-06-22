@@ -88,7 +88,6 @@ Do not clean `_ResourcePack.esl` — it contains no ITM or UDR records and does 
 - `Actor Value Generator` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/84743> (SKSE modder's resource for creating custom actor values; hard requirement of `Classic Attributes` and other mods that add new stats/traits. Requires `Lexicon SKSE`. 2,932 endorsements, 269k downloads, by NoahBoddie) → `01b`
 - `Particle Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65720> (particle shader/LOD corrections; originally ENB-focused but compatible with `Community Shaders` and vanilla game. 26k endorsements, updated Mar 2026) → `01c`
 - `Assorted Mesh Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32117> (mesh correction collection for common visual errors; lightweight, no dependencies) → `01c`
-- `Unofficial Material Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21027> (corrects material records used by `Community Shaders` PBR pipeline, 21k endorsements) → `01c`
 - `Flickering Meshes Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53957> (resolves distant-object mesh flicker in landscape transitions) → `01c`
 
 ## Risks To Check
