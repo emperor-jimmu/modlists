@@ -6,7 +6,7 @@
 
 ### Core Idea
 
-This subsection owns the face, hair, and presentation direction for Skyrim's named NPCs and broader social cast. It does not re-decide the body, skin, and baseline character-visual stack already owned by `modlist-02.md`; it decides how far the list pushes NPC-specific styling on top of that baseline.
+This subsection owns the face, hair, and presentation direction for Skyrim's named NPCs and broader social cast. It does not re-decide the body, skin, and baseline character-visual stack already owned by [`modlist-02b.md`](modlist-02b.md); it decides how far the list pushes NPC-specific styling on top of that baseline.
 
 The real question is whether `Elder Wilds` should lean toward grounded modernization, clearly stylized beauty, or a vanilla-faithful refresh that keeps the familiar identity of the game's people intact.
 
@@ -35,7 +35,7 @@ Keep `High Poly True to Vanilla NPC Overhaul` as the vanilla-faithful fallback i
 - Confirm `Northbourne`, `The Men of Winter`, `Pandorable's`, and `High Poly True to Vanilla` behave cleanly on Steam `1.6.1170`, and check blackface/facegen, dependency, and `AI Overhaul SSE` load-order pressure before locking a route. → `09a`
 - `DIbella's Blessing` is easiest to overuse in a way that pulls the whole cast toward a softer beauty pass than the rest of the list wants. Keep it modular and verify it complements rather than overrides the grounded baseline. → `09a`
 - Confirm `The Wolven Widow` behaves cleanly on Steam `1.6.1170` alongside whichever broad NPC route is chosen; record facegen, skin, and hair overlap with that broader route, and verify it does not silently desync from `Northbourne`/`Pandorable's`/`High Poly True to Vanilla` coverage of Elisif (or from a `Legacy of the Dragonborn` Safehouse display if relevant). → `09a`
-- Do not duplicate the body/skin baseline already owned by `modlist-02.md`. → `09a`
+- Do not duplicate the body/skin baseline already owned by [`modlist-02b.md`](modlist-02b.md). → `09a`
 
 ### Acceptance Criteria
 
@@ -81,7 +81,7 @@ Keep `Haugbui` as the undead comparison if ancient Nordic ruins need as much att
 
 ### Core Idea
 
-This subsection owns creature-specific visual direction layered on top of the broad baseline in `modlist-02.md`. `Bellyaches Animal and Creature Pack SSE` remains the texture foundation — that is settled. The question is which additional presentation layers make animals, dragons, and region-specific undead more striking without turning this into a giant all-in-one creature package.
+This subsection owns creature-specific visual direction layered on top of the broad baseline in [`modlist-02b.md`](modlist-02b.md). `Bellyaches Animal and Creature Pack SSE` remains the texture foundation — that is settled. The question is which additional presentation layers make animals, dragons, and region-specific undead more striking without turning this into a giant all-in-one creature package.
 
 ### Options
 

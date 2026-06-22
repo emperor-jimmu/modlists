@@ -146,7 +146,7 @@
 ### Core Idea
 
 - This subsection owns how large, inhabited, and spatially convincing cities feel during ordinary play: arriving at gates, moving through main streets, and judging whether settlements feel too small, too empty, or too overbuilt.
-- It should stay separate from roadside clutter, later world-content population additions, and the graphics-side city or road compatibility burden already tracked in `modlist-02.md`. → `07d`
+- It should stay separate from roadside clutter, later world-content population additions, and the graphics-side city or road compatibility burden already tracked in [`modlist-02b.md`](modlist-02b.md). → `07d`
 
 ### Options
 
@@ -246,21 +246,21 @@
 ### Core Idea
 
 - This subsection owns the physical road network: whether the roads themselves feel like built infrastructure or just a painted texture on the ground.
-- It is separate from roadside landmark density (above) and from road-texture ownership in `modlist-02.md`. This section is about road presentation at the mesh and geometry level, not surface materials. → `07d`
+- It is separate from roadside landmark density (above) and from road-texture ownership in [`modlist-02b.md`](modlist-02b.md). This section is about road presentation at the mesh and geometry level, not surface materials. → `07d`
 
 ### Options
 
 - Texture-blending route: `Blended Roads - Light Plugin (ESL)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171554>. Seamless road-to-terrain texture blending without new meshes or authored geometry. Lightweight, ESL-flagged, zero patch burden. → `07d`
 - Roadside detail route: `Interesting Roads` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/42749>. Adds roadside objects (barrels, carts, signs) to make traveled roads feel more lived-in, without touching road geometry. → `07d`
 - Signage route: `Point The Way` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/352>. Adds road signposts at junctions for navigational clarity. → `07d`
-- Discipline-first route: let `modlist-02.md` texture replacers carry all road visual improvement with no extra geometry or object additions. → `07d`
+- Discipline-first route: let [`modlist-02b.md`](modlist-02b.md) texture replacers carry all road visual improvement with no extra geometry or object additions. → `07d`
 
 ### Recommendation
 
 - Set `Blended Roads - Light Plugin (ESL)` as the locked baseline. It provides the best visual improvement-to-complexity ratio for this stack: seamless road blending with no worldspace edits, no patch requirements, and no grass-cache regeneration. → `07d`
 - Add `Interesting Roads` and `Point The Way` as lightweight companions for roadside character and navigational signposting. Both are asset-only additions that do not require patching. → `07d`
 - The heavier `Northern Roads` (authored road meshes, full network overhaul) was evaluated and rejected due to the patch burden it imposes at this modlist's complexity level — the official patch collection alone covers six major mods, and every new content mod that touches roads creates another unresolved conflict. → `07d`
-- Road surface texture quality is still owned by `modlist-02.md` (`Blended Roads` handles blending, not surface material). → `07d`
+- Road surface texture quality is still owned by [`modlist-02b.md`](modlist-02b.md) (`Blended Roads` handles blending, not surface material). → `07d`
 
 ### Risks & Compatibility
 
@@ -297,7 +297,7 @@
 - Add `Particle Wind - SKSE Plugin` as the particle-level companion to the Dynamic Wind Framework. It makes dust, leaves, snow, and ash particles respond to wind direction in real time, adding perceptible air movement to the visual environment. By the same author as the framework, so integration is expected to be clean. Requires SKSE and Address Library. → `07b`
 - Add `Realistic Boat Bobbing SE` as an optional water-surface companion for harbor and coastal immersion. Boats bob with idle animations that were shipped but never enabled in vanilla. Keep it optional — it is purely cosmetic and adds no gameplay depth, but makes docked boats feel physically alive rather than frozen. → `07b`
 - Add `Realistic Boat Bobbing SE - BOS Edition` as the companion for mod-added boat support. If the base mod is used, the BOS variant extends boat-bobbing to boats added by city, worldspace, or dock mods without requiring bespoke patches for each. Requires `Base Object Swapper` and the base mod. → `07b`
-- Keep this subsection separate from the broader weather-system ownership (which belongs in `modlist-02.md`'s Weather and Lighting subsection) and from graphics-side cloth physics (which belongs in `modlist-02.md`'s physics decisions). → `07b`
+- Keep this subsection separate from the broader weather-system ownership (which belongs in [`modlist-02b.md`](modlist-02b.md)'s Weather and Lighting subsection) and from graphics-side cloth physics (which belongs in [`modlist-02b.md`](modlist-02b.md)'s physics decisions). → `07b`
 
 ### Risks & Compatibility
 
@@ -327,7 +327,7 @@
 
 ### Recommendation
 
-- The darkness baseline should come from the weather mod and ENB/Community Shaders pair selected in `modlist-02.md` first. If nights still need more punch after that stack is locked, add `Simply Darker Nights (SSE)` as a simple image-space overlay, but verify it is not redundant. → `07c`
+- The darkness baseline should come from the weather mod and ENB/Community Shaders pair selected in [`modlist-02b.md`](modlist-02b.md) first. If nights still need more punch after that stack is locked, add `Simply Darker Nights (SSE)` as a simple image-space overlay, but verify it is not redundant. → `07c`
 - Set `Lux Via` as the modern world-lighting baseline if the list needs roads and travel paths to read clearly at night. It is actively maintained (v2.2, February 2025), has a large patch ecosystem, and integrates with the broader Lux family if the list also adopts Lux for interiors. The 2016-era `Lanterns of Skyrim SE` and 2017-era `CLARALUX SSE` are not recommended as baselines — both are functionally superseded. → `07c`
 - Add `Simple Wearable Lanterns - Remastered` as the preferred carried-visibility branch. It is modern, lightweight, requires no SKSE, and covers the basic use case (player-controlled portable light) without feature creep. The `Torches Candlelight and Lanterns` path is the better choice if the list wants physics-equipped lanterns, NPC distribution, and hotkey-driven hand/hip switching, but the BOS and MCM Helper requirements mean it is a heavier dependency. `Realistic Usable Lanterns` is the right fit for a survival-oriented list that wants finite candles as a consumable resource rather than unlimited magic light. → `07c`
 - Keep this subsection about nighttime feel and travel readability rather than generic display calibration, graphics-lighting philosophy, or survival maintenance.

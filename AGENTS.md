@@ -28,7 +28,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 - `modlist-01.md` through `modlist-17.md` are the active numbered sections.
 - Current section titles: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Targeted Bugfix Mods`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow`, `Adult Content`, `Main Character Voicing`.
-- `modlist-01.md` (80 lines), `modlist-02.md` (1016 lines), and `modlist-09.md` (257 lines) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
+- `modlist-01.md` (80 lines), `modlist-02b.md` (1066 lines), and `modlist-09.md` (257 lines) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
 - `modlist-03.md` (373 lines, `Animations and Movement`) and `modlist-04.md` (293 lines, `Third-Person Gameplay`) are fully expanded and treated as established baselines.
 - `modlist-05.md` (722 lines, `Expanded Systems`) is fully expanded and locked.
 - `modlist-06.md` (413 lines, `Modernized UI`) is locked. Baseline picks: `SkyUI` + `Oathvein UI`, `SkyHUD` + `TrueHUD`, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS`, `Sovngarde Font`.

@@ -112,7 +112,8 @@ iTintTextureResolution=2048
 Each second-level section of the plan now lives in its own numbered file. The companion file [mods-checklist.md](mods-checklist.md) lists every referenced mod with its Nexus URL as a download checklist. The file [separators.md](separators.md) is the canonical ordered reference for `Mod Organizer 2` separators derived from this structure.
 
 - `01` → [Foundations and Compatibility](modlist-01.md)
-- `02` → [Modern Graphics](modlist-02.md)
+- `02a` → [PGPatcher](modlist-02a.md)
+- `02b` → [Modern Graphics](modlist-02b.md)
 - `03` → [Animations and Movement](modlist-03.md)
 - `04` → [Third-Person Gameplay](modlist-04.md)
 - `05` → [Expanded Systems](modlist-05.md)

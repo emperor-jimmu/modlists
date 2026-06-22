@@ -6,7 +6,7 @@
 
 ### Core Idea
 
-- This section does not replace the engine baseline from `modlist-01.md` or the graphics decisions from `modlist-02.md`. → `14`
+- This section does not replace the engine baseline from `modlist-01.md` or the graphics decisions from [`modlist-02b.md`](modlist-02b.md). → `14`
 - Its job is to decide how `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy. → `14`
 
 ### Options
@@ -564,9 +564,9 @@ The `Synthesis` patcher pipeline runs as a single batch via the `Run Mutagen` to
 
 #### Stage 6 — Snow, Weather, And Region
 
-- `BDSPatcher` — **required**. `Better Dynamic Snow SE` and `Better Dynamic Ash SE` are both locked in `modlist-02.md`. This patcher forwards BDS multistage snow and ash accumulation records to all mod-added objects (worldspace edits from `JK's Skyrim`, `Spaghetti's Cities`, `Cities of the North`, quest mods, and dungeon packs). Without it, mod-placed objects lack snow/ash coverage. Use the `BDSPatcher` entry (not `Northpoint BDSPatcher`). Configure to run with both `BetterDynamicSnow` and `BetterDynamicAsh` keywords active. → `14`
+- `BDSPatcher` — **required**. `Better Dynamic Snow SE` and `Better Dynamic Ash SE` are both locked in [`modlist-02b.md`](modlist-02b.md). This patcher forwards BDS multistage snow and ash accumulation records to all mod-added objects (worldspace edits from `JK's Skyrim`, `Spaghetti's Cities`, `Cities of the North`, quest mods, and dungeon packs). Without it, mod-placed objects lack snow/ash coverage. Use the `BDSPatcher` entry (not `Northpoint BDSPatcher`). Configure to run with both `BetterDynamicSnow` and `BetterDynamicAsh` keywords active. → `14`
 - `SSBGPatcher` — `Stretched Snow Begone` synthesis patch; enable if the snow mesh ever stretches under doors or walls. → `14`
-- `Nights Adjuster` and `Darker Weather Nights` — pick one (not both) and configure to match the night darkness target in `modlist-02.md`. → `14`
+- `Nights Adjuster` and `Darker Weather Nights` — pick one (not both) and configure to match the night darkness target in [`modlist-02b.md`](modlist-02b.md). → `14`
 - `SkyVRaan Weather Patcher` — only if `SkyVRaan` is added. → `14`
 - `Unique Region Names` and `Unique Region Names Patcher` — pick one and use it to relabel exterior region names from `Skyrim` to the actual region (`Whiterun`, `The Rift`, etc.). Required because `Bruma`, `Falskaar`, and `Wyrmstooth` all need consistent region naming. → `14`
 - `RealisticWaterTwoPatcher` — forwards `Realistic Water Two` records so they do not get overwritten by other worldspace mods. → `14`
