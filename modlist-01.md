@@ -273,16 +273,13 @@ Start with the high-value, clearly explainable route. Treat these as the stronge
 - `Simple Offence Suppression` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/41764>) — accidental hostility from stray hits → `01d`
 - `Bug Fixes SSE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33261>) — meh321 SKSE plugin; fixes crafting-menu, perk-application, and water-behavior engine bugs not covered by `SSE Engine Fixes` → `01d`
 - `Navigator - Navmesh Fixes` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52641>) — follower pathing / NPC navigation in complex worldspaces → `01d`
-
-Add these if the specific problem they solve shows up in play:
-
 - `Barter Limit Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77173>) — merchant gold cap overflow → `01d`
-- `I'm Walkin' Here NG with Pets` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/122516>) — ally/pet body-blocking → `01d`
+NOT INSTALLED - `I'm Walkin' Here NG with Pets` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/122516>) — ally/pet body-blocking → `01d`
 - `Mum's the Word NG` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77409>) — worthless stolen-item tagging → `01d`
 - `Regional Save Names` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49698>) — save labeling for testing hygiene → `01d`
 - `Better Jumping SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18967>) — consistent jumping control → `01d`
-- `Bard Instrumentals Mostly - Sing Rarely` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10927>) — repetitive tavern singing (last updated 2017; still functional as a simple condition edit, but consider `BA Bard Songs` at <https://www.nexusmods.com/skyrimspecialedition/mods/47202> for expanded instrumental repertory) → `01d`
-- `Beginner Bard Animations - For Skyrim's Got Talent` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130776>) — skill-based playing animations for lute/flute/drum that match your bard talent level (requires `Skyrim's Got Talent` + `Open Animation Replacer`) → `01d`
+- `Bard Instrumentals Mostly - Sing Rarely` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10927>) — repetitive tavern singing (last updated 2017; still functional as a simple condition edit, but consider `BA Bard Songs` at <https://www.nexusmods.com/skyrimspecialedition/mods/47202> for expanded instrumental repertory) → `10b`
+- `Beginner Bard Animations - For Skyrim's Got Talent` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130776>) — skill-based playing animations for lute/flute/drum that match your bard talent level (requires `Skyrim's Got Talent` + `Open Animation Replacer`) → `03d`
 - `LeveledList Crash Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129136>) — leveled-list crash protection for heavy content stacks → `01d`
 
 ### Working Guidance
