@@ -227,6 +227,7 @@
 - Sleep-focused companion: `Go to bed` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4224> → `03d`
 - Sitting-animation route: `Take a Seat - New Sitting Animations for OAR or DAR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54193> — adds new sitting and idle animations for chairs, benches, beds, and ground-sitting via OAR. Hard-requires `Open Animation Replacer` (already the baseline). By Niroku, OAR-based, no scripts, safe to add mid-playthrough. → `03d`
 - Traversal-heavy route to evaluate carefully: `EVG Animated Traversal` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63232> → `03d`
+- Bard instrument animations: `Beginner Bard Animations - For Skyrim's Got Talent` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130776> — skill-based playing animations for lute/flute/drum that match your bard talent level. Hard-requires `Skyrim's Got Talent` + `Open Animation Replacer`. → `03d`
 
 ### Recommendation
 
