@@ -830,6 +830,8 @@ Optional quest / worldspace content add-ons:
     - or lighter `Streamlined Fishing` (<https://www.nexusmods.com/skyrimspecialedition/mods/80683>)
     - if you adopt new-lands mods, add `Fishing Extension Framework` + the relevant worldspace extension (e.g. `Fishing Extension for Beyond Skyrim - Bruma`)
 
+Supplemental navmesh patch: If using `Navigator - Navmesh Fixes` (from Step 12) and any of the content mods listed in this step (Dungeons Revisited, Legacy of the Dragonborn, Helgen Reborn, JK's interiors, Skyrim Sewers), install `Navigator - Navmesh Fixes - Patch Collection` (<https://www.nexusmods.com/skyrimspecialedition/mods/111379>) after both Navigator and the content mods are in place.
+
 ### 17.3 Separator `09 NPCs and Creatures`
 
 Current strongest first-pass baseline:
