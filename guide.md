@@ -300,7 +300,8 @@ Install these baseline mods first:
 - `Kris's Papyrus Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/115164>)
 - `SkyPatcher` (<https://www.nexusmods.com/skyrimspecialedition/mods/106659>)
 - `Animation Queue Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/82395>)
-- `Actor Value Generator` (<https://www.nexusmods.com/skyrimspecialedition/mods/84743>) — SKSE framework for creating custom actor values; required by `Classic Attributes` and other mods that add new stats/traits
+- `Lexicon SKSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/153176>) — SKSE scripting engine for creating custom scripted functions and types; required by `Actor Value Generator`
+- `Actor Value Generator` (<https://www.nexusmods.com/skyrimspecialedition/mods/84743>) — SKSE framework for creating custom actor values; requires `Lexicon SKSE`. Required by `Classic Attributes` and other mods that add new stats/traits
 - `Papyrus Ini Manipulator` (<https://www.nexusmods.com/skyrimspecialedition/mods/65634>) — INI file settings framework; required by several `Roleplaying in Skyrim` mods (Origins, Lineages, Birthsigns, Skill Based Stat Growth, Evolving Economy, Loot Overhaul)
 - `aTweaks and Utilities` (<https://www.nexusmods.com/skyrimspecialedition/mods/107741>) — SKSE plugin for expanded gameplay systems; required by `Roleplaying in Skyrim - Standing Stones`
 - `Perk Entry Point Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/91192>) — SKSE plugin extending perk entry points; required by `aTweaks and Utilities`
