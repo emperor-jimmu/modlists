@@ -196,61 +196,14 @@
 
 ## Texture Overhauls By Material Type → `02c Textures & Meshes`
 
-### Core Idea
+All material-category decisions are owned by [`02b`](#community-shaders-core-setup-02b-community-shaders-02b), which chose `Vanilla PBR AIO` as the broad base with confirmed overrides for landscapes (Faultier's), rocks (ERM), Whiterun (Tomato's), and farmhouses (Tomato's). The categories below are the few remaining open slots — material families where a non-PBR specialist mod can still add value beyond what VPBR provides, or categories VPBR doesn't cover.
 
-- Use one broad visual base where helpful, then layer targeted replacements by material family instead of blindly stacking overlapping AIO packs.
-- Material clarity matters more than raw texture count: stone should feel cold and weighty, wood should look worn and natural, metal should read clearly in third person, and clutter should reward close inspection.
-
-### Options
-
-- Broad-base option: use a large coherent pack and patch obvious weak spots.
-- Material-first option: pick best-in-class textures for each asset family separately.
-- Hybrid option: use a broad base for coverage, then override it in the categories that matter most.
-
-### Recommendation
-
-- The PBR base (`Vanilla PBR AIO`) already covers architecture, clutter, actors, dungeons, and food — that is the broad base.
-- Override on top of VPBR in the categories where specialist treatment improves on the base: landscapes (Faultier's), rocks (ERM), Whiterun and farmhouses (Tomato's).
-- Treat the remaining open categories below (signs, tents, clutter geometry, Dwemer gear) as lower-priority additions — no ESP cost or minimal conflict risk.
-- Treat `Skyking Signs` and `Skyking Unique Signs` as an optional-sign visual upgrade branch. Signs are a medium-visibility surface in normal exploration, and the recommendation is to include them only if the final texture stack does not already cover sign textures adequately. → `02c`
-- Treat `Skyland Imperial and Nordic Tents` as an optional tent-texture upgrade. Tents are visible in camps and caravans but are not high-priority enough to block the rest of the texture stack. Include it as a low-effort visual improvement with no ESP or conflict cost. → `02c`
-
-### Material Priorities
-
-All material categories below are written to stack on top of the PBR base already chosen in [`02b`](#community-shaders-core-setup-02b-community-shaders-02b):
-
-- **PBR base:** `Vanilla PBR AIO` — architecture, clutter, actors, dungeons, food
-- **Landscapes:** `Faultier's PBR Landscapes 4k`
-- **Rocks/mountains:** `Enhanced Rocks and Mountains - Complex Material and PBR`
-- **Cities (Whiterun):** `Tomato's PBR Whiterun 2k`
-- **Farmhouses:** `Tomato's PBR Farmhouses - Grey - 2K`
-
-The categories below are the **remaining open override slots** — material families where a non-PBR specialist mod can still add value beyond what VPBR provides, or categories VPBR doesn't cover at all.
-
-#### Ruins And Dungeon Stone
-
-- Nordic ruins are covered by VPBR with a vanilla-faithful art direction. No override needed — VPBR's coverage is adequate and its style is consistent with the rest of the texture stack.
-
-#### Clutter And Small Props
-
-- VPBR covers all vanilla clutter textures. Specialist upgrades that add new geometry or fill gaps: `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> — adds new clutter objects (pottery, silverware, books, alchemy tools, furniture) that vanilla clutter leaves out. → `02c`
+- `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> — adds new clutter objects (pottery, silverware, books, alchemy tools, furniture) that vanilla clutter leaves out. VPBR covers the base clutter textures; SFCO adds geometry and variety. → `02c`
 - `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795> — higher-resolution diffuse/normal replacer for existing clutter. May be redundant with VPBR's own clutter coverage; evaluate side-by-side before including. → `02c`
-
-#### Metal And Equipment
-
-- `Dwemer Armors and Weapons Retexture SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93088> — gear-side companion to VPBR's Dwemer ruin textures and `CC's HD Dwemer Automatons - Remastered`, so Dwemer machines and wearable loot share a consistent visual language. → `02c`
-
-#### Clothing And Fabric
-
-- `RUSTIC CLOTHING - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4703> — higher-res clothing textures. VPBR covers clothing materials; test for style consistency before including. → `02c`
-
-#### Signs
-
-- `Skyking Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112902> — sign texture and mesh replacer with wind-sway, wood materials, no ESP. Optional companion: `Skyking Unique Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114940> — unique design per shop, BOS or plugin install. → `02c`
-
-#### Tents
-
-- `Skyland Imperial and Nordic Tents` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57002> — 4K tent texture replacer with new mesh for the large Nordic fur tent (awning for Khajiit caravans). No ESP. → `02c`
+- `Dwemer Armors and Weapons Retexture SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93088> — gear-side companion to VPBR's Dwemer ruin textures. → `02g`
+- `RUSTIC CLOTHING - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4703> — higher-res clothing textures. VPBR covers clothing materials; test for style consistency. → `02c`
+- `Skyking Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112902> — sign textures with wind-sway, no ESP. Optional companion: `Skyking Unique Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114940>. → `02c`
+- `Skyland Imperial and Nordic Tents` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57002> — 4K tent texture replacer, no ESP. → `02c`
 
 ### Risks & Compatibility
 
