@@ -51,7 +51,7 @@
 - High-end tier:
     - Balanced set plus Subsurface Scattering, Screen Space Global Illumination (SSGI)
 - Fire-and-particle companion:
-- `Embers XD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37085> (works with `Community Shaders`; `CS Light` (<https://www.nexusmods.com/skyrimspecialedition/mods/138443>) → `02c`
+- `Embers XD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37085> (works with `Community Shaders`; `CS Light` (<https://www.nexusmods.com/skyrimspecialedition/mods/138443>) → `02d`
 - Sky-driven lighting companion:
 - `Skylighting - Community Shaders` (separate Nexus download; enables soft ambient sky occlusion) → `02b`
 - Support-only branch:
@@ -63,7 +63,7 @@
 - Start with the conservative tier (Screen Space Shadows, Grass Lighting, Water Effects, Wetness Effects).
 - Promote to the balanced tier (add Terrain Shadows) only after trees, grass, weather, water, and LOD choices are stable enough that the extra depth is worth measuring.
 - Treat SSGI and Subsurface Scattering (high-end tier) as optional luxury features, not a baseline requirement.
-- Treat `Embers XD` as the fire and ember category answer rather than pretending the rest of the CS stack covers that visual gap by itself. It is the standard Community Shaders fire-and-particle pick: 140K+ endorsements, actively maintained. CS Light v1.x included an Embers XD FOMOD option, but v2.0.0 removed common lighting — Embers XD handles its own fire/ember particle lights natively with CS. Install after the main lighting overhauls (Lux, ELFX) so it can inherit their campfire and hearth placements. → `02c`
+- Treat `Embers XD` as the fire and ember category answer rather than pretending the rest of the CS stack covers that visual gap by itself. It is the standard Community Shaders fire-and-particle pick: 140K+ endorsements, actively maintained. CS Light v1.x included an Embers XD FOMOD option, but v2.0.0 removed common lighting — Embers XD handles its own fire/ember particle lights natively with CS. Install after the main lighting overhauls (Lux, ELFX) so it can inherit their campfire and hearth placements. → `02d`
 - Install `Skylighting` as a separate download. It casts believable sky-driven shading across terrain and objects, adds large-scale directional ambient illumination from the sky, and pairs cleanly with the conservative tier without requiring the balanced or high-end tier. Worth including on the conservative baseline for an authentic 4K grim-dark look. → `02b`
 - Use `Skyrim Upscaler` only if real performance testing proves it is needed. → `02b`
 
@@ -194,32 +194,6 @@
 - No obvious mismatch appears between PBR and non-PBR assets in the same scene.
 - Performance cost stays acceptable relative to the baseline CS stack.
 
-## Texture Overhauls By Material Type → `02c Textures & Meshes`
-
-All material-category decisions are owned by [`02b`](#community-shaders-core-setup-02b-community-shaders-02b), which chose `Vanilla PBR AIO` as the broad base with confirmed overrides for landscapes (Faultier's), rocks (ERM), Whiterun (Tomato's), and farmhouses (Tomato's). The categories below are the few remaining open slots — material families where a non-PBR specialist mod can still add value beyond what VPBR provides, or categories VPBR doesn't cover.
-
-- `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> — adds new clutter objects (pottery, silverware, books, alchemy tools, furniture) that vanilla clutter leaves out. VPBR covers the base clutter textures; SFCO adds geometry and variety. → `02c`
-- `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795> — higher-resolution diffuse/normal replacer for existing clutter. May be redundant with VPBR's own clutter coverage; evaluate side-by-side before including. → `02c`
-- `Dwemer Armors and Weapons Retexture SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93088> — gear-side companion to VPBR's Dwemer ruin textures. → `02g`
-- `RUSTIC CLOTHING - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4703> — higher-res clothing textures. VPBR covers clothing materials; test for style consistency. → `02c`
-- `Skyking Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112902> — sign textures with wind-sway, no ESP. Optional companion: `Skyking Unique Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114940>. → `02c`
-- `Skyland Imperial and Nordic Tents` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57002> — 4K tent texture replacer, no ESP. → `02c`
-
-### Risks & Compatibility
-
-- A hybrid stack becomes hard to maintain if override relationships are not tracked clearly.
-- City textures that ignore the winning PBR direction can make regions feel stitched together.
-- Landscape, rock, and ruin winners can still clash once weather and lighting are finalized.
-- Dwemer gear textures need to stay visually aligned with the chosen Dwemer ruin and automaton look or the same dungeon can feel pieced together asset-by-asset.
-
-### Acceptance Criteria
-
-- Every major material family has a clearly chosen source mod or fallback.
-- No major region looks visually stitched together from conflicting texture styles.
-- Clutter and architecture remain readable from third-person distance and still hold up close.
-- The final texture stack is understandable enough to maintain without guesswork.
-- Dwemer ruins, automatons, and vanilla Dwemer gear read as one coherent visual family.
-
 ## Mesh Improvements And Parallax Support → `02c Textures & Meshes`
 
 ### Core Idea
@@ -239,7 +213,7 @@ All material-category decisions are owned by [`02b`](#community-shaders-core-set
 - Keep `Static Mesh Improvement Mod - SMIM` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/659> as the baseline. → `02c`
 - Add `Unofficial Material Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21027> after SMIM (hard-requires SMIM; corrects material records used by `Community Shaders` PBR pipeline, 21k endorsements). → `02c`
 - Treat `High Poly Project` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12029> as optional and only keep it if the extra geometry earns its conflict cost. → `02c`
-- Use `Simplicity of Snow` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56235> early if the final texture and mountain stack needs snow-consistency support. → `02c`
+- Use `Simplicity of Snow` v0.26 - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56235> — main file only (32.8 MB). Skip the optional `Parallax Meshes` (author disclaims responsibility and PGPatcher handles parallax properly). Skip `Northpoint patch` and `Epic Windhelm Expansion Fix` (mods not in the list). Place early if the final texture and mountain stack needs snow-consistency support. → `02c`
 - Use `FYX - Water Mesh Optimization` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97713> only if the chosen water setup benefits from it. → `02c`
 - Add `FYX - Eastern Empire Company Building` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86526> as a mesh fix for the Eastern Empire Company building in Solitude — a targeted stopgap before larger city overhauls are settled. → `02c`
 - Add `FYX - Nordic Doors and Traps Collisions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/100295> as a collision geometry fix for Nordic doors and traps that stops the player's camera clipping through doorways and trap hitboxes. → `02c`
@@ -249,6 +223,8 @@ All material-category decisions are owned by [`02b`](#community-shaders-core-set
 - Add `Flame VFX Edit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/109414> as a mesh-only fire spell effect improvement that is compatible with Community Shaders. → `02c`
 - Add `Auto Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79473> or `Complex Parallax Materials` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95134> only after the texture stack is mostly chosen. → `02c`
 - Use the PGPatcher workflow in [`modlist-02a.md`](modlist-02a.md) for late-stage parallax generation rules. → `02c`
+- `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> — adds new clutter objects (pottery, silverware, books, alchemy tools, furniture) that vanilla clutter leaves out. VPBR covers the base clutter textures; SFCO adds geometry and variety. → `02c`
+- `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795> — higher-resolution diffuse/normal replacer for existing clutter. May be redundant with VPBR's own clutter coverage; evaluate side-by-side before including. → `02c`
 
 ### Risks & Compatibility
 
@@ -803,6 +779,8 @@ Male variety on `HIMBO`:
 - `Immersive Fur Garments` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77073> — adds new fur garments (shawls, ponchos, coats) to leveled lists using meshes from the FurArmorSetsSE resource. Adds clothing variety without changing the body or skin stack. → `02g`
 - `Immersive Fur Garments - SPID` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82177> — the SPID-based distribution addon that replaces the original plugin's NPC and leveled-list edits with SPID distribution. ESL-flagged, removes the original .esp requirement, distributes fur garments to bandits, guards, hunters, jarls, orc tribes, and townfolk. Install both the base mod (meshes and textures only, delete the .esp) and the SPID addon for the modern distribution approach. → `02g`
 - `Faultier's PBR Armors and Clothes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175319> (2.9 GB) — complete PBR retexture of all vanilla armors, weapons, and clothes. Requires Community Shaders and PGPatcher. Complements VPBR by filling the gear PBR gap. → `02g`
+- `RUSTIC CLOTHING - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4703> — higher-res clothing texture replacer. VPBR covers clothing materials via PBR; RUSTIC CLOTHING provides higher-resolution diffuse/normal maps. Test for style consistency before including. → `02g`
+- `Dwemer Armors and Weapons Retexture SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93088> — gear-side companion to VPBR's Dwemer ruin textures and `CC's HD Dwemer Automatons - Remastered`, so Dwemer machines and wearable loot share a consistent visual language. → `02g`
 - `Steel Armor Redone - PBR and Complex Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177513> — PBR and Complex Material retexture of the Creation Club Steel Armor set. Requires CC Alternative Armors - Steel Soldier, Community Shaders (for PBR) or ENB (for Complex Materials), and PG Patcher (see [`modlist-02a.md`](modlist-02a.md)). Optional PBR armor upgrade. → `02g`
 
 ### Risks & Compatibility
@@ -913,6 +891,8 @@ Male variety on `HIMBO`:
 
 - Use `Night Mother` as the targeted unique-entity upgrade. The Dark Brotherhood sanctuary is a heavily scripted quest location the player visits multiple times, and the Night Mother's corpse is the visual centerpiece of that space. The upgrade cost is one ESL-flagged mod with zero script or record conflicts. → `02c`
 - Keep this subsection narrow — it exists only to catch one-off models that would otherwise fall between creature, skeleton, and texture ownership.
+- `Skyking Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112902> — sign texture and mesh replacer with wind-sway, wood materials, no ESP. Optional companion: `Skyking Unique Signs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/114940> — unique design per shop, BOS or plugin install. → `02c`
+- `Skyland Imperial and Nordic Tents` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57002> — 4K tent texture replacer with new mesh for the large Nordic fur tent (awning for Khajiit caravans). No ESP. → `02c`
 
 ### Risks & Compatibility
 

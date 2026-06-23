@@ -26,6 +26,7 @@
 - Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision. → `06a`
 - Add `Constructible Object Custom Keyword System (COCKS)` as the crafting-menu category infrastructure baseline. It owns the keyword-based category structure that underpins the crafting-menu readability improvements in the Crafting Menu Improvements subsection. Locked alongside the other framework picks here rather than buried in the crafting subsection alone. → `06a`
 - Add `MCM Helper` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53000> as a UI framework prerequisite. It persists MCM settings across saves and new games, and is a hard dependency of `True Directional Movement`, `Compass Navigation Overhaul`, and several other mods already in the stack. → `06a`
+- Add `Stay At The System Page NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76927> as a menu-behaviour QoL mod. Keeps the System page open after loading a save so the player can continue navigating (Settings, Save, Quit) without reopening the menu. Most noticeable on gamepad where reopening the menu is slower. → `06a`
 
 ### Risks & Compatibility
 
