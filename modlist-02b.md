@@ -229,7 +229,7 @@ The categories below are the **remaining open override slots** — material fami
 
 #### Ruins And Dungeon Stone
 
-- Nordic ruins are covered by VPBR. If specialist treatment is wanted as an override, `Exist's Nordic Ruins PBR and Complex Parallax Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/118014> can be loaded after VPBR. → `02c`
+- Nordic ruins are covered by VPBR with a vanilla-faithful art direction. No override needed — VPBR's coverage is adequate and its style is consistent with the rest of the texture stack.
 
 #### Clutter And Small Props
 
