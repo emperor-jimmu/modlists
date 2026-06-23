@@ -14,12 +14,12 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 ## What This Repo Is
 
 - This repo is a markdown planning workspace, not an application codebase. The source of truth is the `modlist*.md` files.
-- The end deliverable of this planning workspace is `guide.md` — the practical, step-by-step installation guide for the Elder Wilds modlist. Every planning file, mod pick, and decision flows toward making `guide.md` an actionable document that a user can follow in Mod Organizer 2.
+- `modlist.md` is the hub file that combines project scope, toolchain setup, installation guidance, and the section index into one document.
 - There is no build, test, lint, CI, or package-manager workflow to run here.
 
 ## File Roles
 
-- `modlist.md` is the hub file only: project scope, setup/install/tooling guidance, research workflow, and the index to numbered section files.
+- `modlist.md` is the hub file: project scope, setup/install/tooling guidance, installation instructions, research workflow, and the index to numbered section files.
 - Each numbered `modlist-XX.md` file owns one second-level planning section. Keep the numbering aligned with the index in `modlist.md`.
 - `separators.md` is the canonical ordered reference (111 entries) for `Mod Organizer 2` separators derived from the current modlist structure.
 - `TODO.md` is a scratch backlog of ideas and possible future research, not an authoritative recommendation list.
@@ -40,7 +40,6 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `modlist-13.md` (116 lines, `Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy.
 - `modlist-16.md` (194 lines, `Adult Content`) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
 - `modlist-17.md` (168 lines, `Main Character Voicing`) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
-- `guide.md` (1056 lines) is the installation guide — the primary deliverable.
 
 ## Third-Person / Gamepad Design Directive
 

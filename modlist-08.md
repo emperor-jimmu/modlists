@@ -234,7 +234,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 
 ### Risks & Compatibility
 
-- Depths of Skyrim requires `iMaxGrassTypesPerTexure=7` or above in `Skyrim.ini` — document this in `guide.md`. → `08d`
+- Depths of Skyrim requires `iMaxGrassTypesPerTexure=7` or above in `Skyrim.ini`. Set this via `MO2 → Tools → INI Editor` under `[Grass]` (`iMaxGrassTypesPerTexure=7` is the BethINI Pie default at grass density 60). → `08d`
 - Depths of Skyrim is script-free but adds 1000+ fish references; verify this does not create unexpected Papyrus load or navmesh pressure alongside other world-content mods.
 - More Underwater Treasures has replaced landscape edits with vanilla chests; confirm this still works with any mod that overhauls the same underwater cells.
 - Underwater visual changes may interact with the chosen water mod (Water for ENB / Realistic Water Two / A Water Made For CS in mind) — test underwater visibility and seafloor blending.

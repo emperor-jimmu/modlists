@@ -10,6 +10,34 @@ Scope notes:
 
 ## Setup And Installation Guide
 
+### Pre-Installation: Steam, Skyrim, And Creation Kit
+
+1. Install Steam and Skyrim SE/AE outside `Program Files`, ideally under a shallow path such as `C:\Games\Skyrim Special Edition`.
+2. Confirm the game is on runtime `1.6.1170`. The **Anniversary Upgrade** is not used.
+
+#### Configure Steam
+
+- **Disable the Steam Overlay**: In Steam, go to **Steam > Settings > In-Game** and uncheck "Enable the Steam overlay while in-game." Alternatively, disable it per-game: right-click **The Elder Scrolls V: Skyrim Special Edition** in your library, select **Properties**, and uncheck "Enable the Steam Overlay while in-game."
+- **Update-proof Skyrim**: In Steam, right-click **The Elder Scrolls V: Skyrim Special Edition > Properties > Updates**, set **Automatic Updates** to **"Wait until I launch the game."** Updates will not trigger when launching through MO2 via SKSE. If an update slips through, use the [Skyrim downgrade patcher](https://www.nexusmods.com/skyrimspecialedition/mods/32698/) to roll back.
+
+#### Vanilla Skyrim First Launch
+
+Launch Skyrim Special Edition through Steam to open the default launcher: click **Options**, select the **Ultra** preset, set **Aspect Ratio** and **Resolution** to your monitor's optimal values, set **Antialiasing** to **Off** (prepares for Community Shaders), ensure **Windowed Mode** is unchecked, click **OK** to save, and exit the launcher.
+
+#### Install The Creation Kit
+
+- **Skyrim Special Edition: Creation Kit** (<https://store.steampowered.com/app/1946180/Skyrim_Special_Edition_Creation_Kit/>): Download and install via Steam. Launch the Creation Kit through Steam to allow the **Scripts** folder to extract (automatic on first launch). Exit once loaded. Download the pre-made [`CreationKitCustom.ini`](https://lexyslotd.com/guide/common-tasks/#creation-kit-ini) and extract it to the Skyrim root folder. This configures the CK to allow multiple masters and load DLC content. If the CK crashes on first launch, add an [outbound firewall rule](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-port-rule) for `CreationKit.exe`.
+
+- **Creation Kit Platform Extended** (<https://www.nexusmods.com/skyrimspecialedition/mods/71371>): Download **CK Platform Extended 0.6-b550** and extract directly into the main Skyrim Special Edition folder — NOT into a sub-folder.
+
+#### Create Modding Folders And Install Core Tools
+
+Create a separate modding path with sub-folders (e.g., `C:\Modding` and `C:\Modding\Tools`) and install the tools from the toolchain list below into `C:\Modding\Tools`.
+
+### FOMOD Plus Installation
+
+Install **FOMOD Plus - A Mod Installation Overhaul for Mod Organizer 2** (<https://www.nexusmods.com/skyrimspecialedition/mods/141001>) after MO2 setup: extract the archive contents directly into your MO2 installation folder, merging the `plugins` folder. Restart MO2 — FOMOD Plus activates automatically, adding a `FOMOD` column in the left pane and a `FOMOD` tab on the right pane.
+
 ### Core Setup Goals
 
 - Build and maintain `Elder Wilds` through `Mod Organizer 2` with clean separators and reproducible generated output
@@ -43,9 +71,20 @@ Scope notes:
 
 ### Output Mods To Create In MO2
 
-- Create empty mods named `xEdit Output`, `SKSE Scripts`, `SKSE Output`, `TexGen Output`, `DynDOLOD Output`, and `Terrain LOD Output` before tool registration.
-- Keep these output mods near the top or in a dedicated generated-output block so rebuild products are easy to replace and audit.
-- Add more dedicated output mods only when a tool truly generates persistent files that should not land in `Overwrite`.
+Before registering tools, create these empty mods in MO2 under the `Output` separator:
+
+- `xEdit Output`
+- `SKSE Scripts`
+- `SKSE Output`
+- `BodySlide Output`
+- `Pandora Output`
+- `Grass Cache Output`
+- `Terrain LOD Output`
+- `TexGen Output`
+- `DynDOLOD Output`
+- `Occlusion Output`
+- `Synthesis Output`
+- `Bashed Patch Output`
 
 ### SKSE64 Installation
 

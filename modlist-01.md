@@ -34,7 +34,25 @@ The vanilla master files (`Skyrim.esm`, `Update.esm`, the three DLCs, and the AE
 
 ### Recommendation
 
-Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAutoClean` (registered as an MO2 executable) on each file individually, collect the cleaned `.esm` files into a dedicated `Cleaned Vanilla Masters` mod under the `Output` separator, and restore the originals from the `xEdit Backups` folder into `Data\` so MO2's virtual filesystem provides the cleaned copies. The detailed procedure is documented in `guide.md` under "Clean The Vanilla Masters".
+Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAutoClean` (registered as an MO2 executable) on each file individually, collect the cleaned `.esm` files into a dedicated `Cleaned Vanilla Masters` mod under the `Output` separator, and restore the originals from the `xEdit Backups` folder into `Data\` so MO2's virtual filesystem provides the cleaned copies.
+
+#### Procedure
+
+1. **Create the output mod**: In MO2, create a new empty mod named `Cleaned Vanilla Masters`. Place it under the `Output` separator. Leave it disabled for now.
+
+2. **Run LOOT first**: Select `LOOT` from the MO2 executable dropdown, click **Sort Plugins**, click **Apply**, and close LOOT.
+
+3. **Clean each master individually**: For each file (`Skyrim.esm`, `Update.esm`, `Dawnguard.esm`, `HearthFires.esm`, `Dragonborn.esm`, and each Creation Club `.esm`):
+   - Select `xEditQuickAutoClean` from the MO2 executable dropdown.
+   - In the plugin selection window, check ONLY the master you are cleaning.
+   - Click **OK** and wait for the process to finish (the message log will say when done).
+   - Close xEdit when prompted.
+
+4. **Move cleaned masters into the mod**: Open `Skyrim Special Edition\Data`. Locate each cleaned master (check the file modification date — they were just written). Move them into `Mod Organizer 2\mods\Cleaned Vanilla Masters\`. Keep only the cleaned `.esm` files. Delete any `.backup` or `.bak` files from the mod folder.
+
+5. **Restore originals**: Open the `xEdit Backups` folder inside `Skyrim Special Edition\Data`. Copy the original `.esm` files from the backups back into `Data\`. The originals must be restored so MO2's virtual filesystem can provide the cleaned copies via the mod.
+
+6. **Enable and verify**: Enable `Cleaned Vanilla Masters` in MO2. Run `LOOT` again and confirm no plugins are flagged as needing cleaning.
 
 ### Which Masters To Clean
 

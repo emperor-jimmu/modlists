@@ -4,14 +4,13 @@ An opinionated modlist for Skyrim AE 1.6.1170 (Steam) built around five pillars:
 
 ## What This Is
 
-This repo is a markdown planning workspace for the Elder Wilds modlist. The numbered planning files (`modlist-01.md` through `modlist-17.md`) each own one category of mod research and decision-making. The end deliverable is `guide.md` — a practical step-by-step installation guide that a user can follow in Mod Organizer 2.
+This repo is a markdown planning workspace for the Elder Wilds modlist. The numbered planning files (`modlist-01.md` through `modlist-17.md`) each own one category of mod research and decision-making. The hub file `modlist.md` contains project scope, toolchain setup, and installation guidance.
 
 ## Quick Links
 
 | File | Purpose |
 |------|---------|
-| `guide.md` | Installation guide — primary deliverable |
-| `modlist.md` | Project scope, toolchain setup, section index |
+| `modlist.md` | Project scope, toolchain setup, installation guide, section index |
 | `separators.md` | Canonical MO2 separator layout (111 entries) |
 | `TODO.md` | Scratch backlog and future research ideas |
 
