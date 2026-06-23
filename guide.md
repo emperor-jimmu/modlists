@@ -302,6 +302,7 @@ Install these baseline mods first:
 - `Animation Queue Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/82395>)
 - `Lexicon SKSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/153176>) — SKSE scripting engine for creating custom scripted functions and types; required by `Actor Value Generator`
 - `Actor Value Generator` (<https://www.nexusmods.com/skyrimspecialedition/mods/84743>) — SKSE framework for creating custom actor values; requires `Lexicon SKSE`. Required by `Classic Attributes` and other mods that add new stats/traits
+- `XEMI Utility` (<https://www.nexusmods.com/skyrimspecialedition/mods/159084>) — SKSE utility for custom collision primitives on activators/furniture; prerequisite for `FYX - Nordic Doors and Traps Collisions` in Step 8
 - `Papyrus Ini Manipulator` (<https://www.nexusmods.com/skyrimspecialedition/mods/65634>) — INI file settings framework; required by several `Roleplaying in Skyrim` mods (Origins, Lineages, Birthsigns, Skill Based Stat Growth, Evolving Economy, Loot Overhaul)
 - `aTweaks and Utilities` (<https://www.nexusmods.com/skyrimspecialedition/mods/107741>) — SKSE plugin for expanded gameplay systems; required by `Roleplaying in Skyrim - Standing Stones`
 - `Perk Entry Point Extender` (<https://www.nexusmods.com/skyrimspecialedition/mods/91192>) — SKSE plugin extending perk entry points; required by `aTweaks and Utilities`
@@ -410,7 +411,10 @@ Under `02.04 Texture Overhauls By Material Type` and `02.05 Mesh Improvements An
 - `Simplicity of Snow` (<https://www.nexusmods.com/skyrimspecialedition/mods/56235>)
 - `FYX - Water Mesh Optimization` (<https://www.nexusmods.com/skyrimspecialedition/mods/97713>)
 - `FYX - Eastern Empire Company Building` (<https://www.nexusmods.com/skyrimspecialedition/mods/86526>)
+- `XEMI Utility` (<https://www.nexusmods.com/skyrimspecialedition/mods/159084>) — prerequisite for FYX - Nordic Doors and Traps Collisions
 - `FYX - Nordic Doors and Traps Collisions` (<https://www.nexusmods.com/skyrimspecialedition/mods/100295>)
+- `Stockades of Skyrim 3D` (<https://www.nexusmods.com/skyrimspecialedition/mods/43227>) — 3D stockade mesh and texture replacer; soft prerequisite for FYX - 3D Stockades (install first)
+- `FYX - 3D Stockades` (<https://www.nexusmods.com/skyrimspecialedition/mods/65104>)
 - `Explosion Collision Fix` (<https://www.nexusmods.com/skyrimspecialedition/mods/154076>)
 - `Natural Waterfalls` (<https://www.nexusmods.com/skyrimspecialedition/mods/87261>)
 - `Rally's Water Foam` (<https://www.nexusmods.com/skyrimspecialedition/mods/28922>)
@@ -774,6 +778,7 @@ Current strongest first-pass candidates:
 
 - `The Great Cities - Minor Cities and Towns SSE Edition` (<https://www.nexusmods.com/skyrimspecialedition/mods/20272>)
 - full `Cities of the North` series
+- `FYX - Riften - Window Consistency` (<https://www.nexusmods.com/skyrimspecialedition/mods/182707>) — mesh consistency fix for Riften's windows; install after the general mesh section in Step 11
 - `Settlements Expanded` (<https://www.nexusmods.com/skyrimspecialedition/mods/7777>)
 - `JK's Whiterun Outskirts` (<https://www.nexusmods.com/skyrimspecialedition/mods/78351>)
 - `The Great City of Solitude SSE` (<https://www.nexusmods.com/skyrimspecialedition/mods/22243>)
