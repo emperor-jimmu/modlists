@@ -127,9 +127,11 @@
 
 ### Recommendation
 
-- Use the balanced PBR option.
-- Prioritize surfaces where material response is most visible in normal play: stone, metal, wood, wet surfaces, ruins, and high-detail clutter.
-- Do not commit to a full-world PBR conversion until visual consistency, performance cost, and maintenance burden are proven acceptable.
+- Use the balanced PBR option with a broad AIO base plus targeted terrain and rock overrides.
+- Use `Vanilla PBR AIO` as the primary base — single 11.5 GB download covering all architecture, clutter, actors, and dungeons with a consistent vanilla-faithful art direction.
+- Fill the landscape gap with `Faultier's PBR Landscapes 4k` (terrain textures only, not the Faultier's AIO).
+- Override mountains and rocks with `Enhanced Rocks and Mountains - Complex Material and PBR` (load after VPBR).
+- Layer `Tomato's PBR Whiterun` and `Tomato's PBR Farmhouses 2.0` as optional specialist overrides on top of VPBR.
 - Community Shaders now ships `Dynamic Cubemaps` (real-time environment capture for specular reflections) and `Image-Based Lighting (IBL)` as standard features. These improve PBR material response (especially on metal, water, and wet surfaces) without additional mods. Verify that the chosen PBR texture set takes advantage of both before adding extra reflection or cubemap mods. → `02b`
 
 ### Priority Coverage
@@ -143,17 +145,11 @@
 
 #### Priority 1 Candidate Mods
 
-- Broad starter coverage: `Faultier's PBR Skyrim` (v3.0) - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/125308> → `02b`
-    - **Faultier's Skyrim AIO 2k** (9.2 GB) — covers clutter, furniture, creatures, Nordic ruins, Dwemer ruins & Markarth, Solitude, Windhelm, and all other non-landscape categories. 2k textures read cleanly at 4K with PBR material definition doing the heavy lifting; the 4k AIO (19.7 GB) adds marginal raster gain for a steep size cost.
-    - **Faultier's PBR Landscapes 4k** (3.0 GB) — separate from the AIO; terrain at 4k, mountains at 8k. Landscapes benefit from full-res height maps and mountain silhouettes are visible at great distance.
-    - **Faultier's PBR Road Signs - English** (42.7 MB, Update Files section) — not included in the AIO. Supports Cutting Room Floor. Install after the AIO.
-    - PG Patcher (ParallaxGen) must be run after installation or most PBR textures won't render in-game.
-- Full-vanilla PBR conversion: `Vanilla PBR AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174091> — converts all vanilla textures to PBR materials. Broadest coverage option but higher VRAM cost than targeted city packs. Evaluate as an alternative direction to the targeted per-city approach. → `02b`
-- Whiterun: `Tomato's PBR Whiterun` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135771> → `02b`
-- Farmhouses: `Tomato's PBR Farmhouses 2.0` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135774> → `02b`
-- Markarth and Dwemer: `PBaRkarth - PBR texture mod for Markarth and Dwemer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/144535> → `02b`
-- Solitude: `laogu's PBR Solitude` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173698> → `02b`
-- Nordic ruins: `Exist's Nordic Ruins PBR and Complex Parallax Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/118014> → `02b`
+- Broad coverage base: `Vanilla PBR AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174091> (11.5 GB) — converts all vanilla architecture, clutter, actors, statues, dungeons, and food to PBR materials. True to the vanilla aesthetic with improved normals, parallax, and material response. Based on `Vanilla Remastered` and `The New Normals`. Does not cover landscapes or gear (filled by mods below). Requires Community Shaders, SMIM, and PGPatcher. → `02b`
+- Landscape terrain: `Faultier's PBR Landscapes 4k` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/125308> (3.0 GB, separate file from the Faultier's AIO) — terrain at 4k, mountains at 8k. Covers the landscape gap that VPBR leaves. Do NOT install `Faultier's Skyrim AIO` — VPBR replaces that non-landscape coverage and the two would conflict. → `02b`
+- Mountain and rock meshes: `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336> — modern rock and mountain overhaul shipping PBR/CS-native textures. Replaces VPBR's included mountain textures in the load order (load VPBR first, then ERM over it). → `02b`
+- Optional Whiterun override: `Tomato's PBR Whiterun` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135771> — layered on top of VPBR where Tomato's specialist treatment improves on the base. → `02b`
+- Optional farmhouse override: `Tomato's PBR Farmhouses 2.0` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135774> — same principle, layer after VPBR. → `02b`
 
 #### Priority 2 Areas
 
@@ -176,18 +172,19 @@
 
 #### Working Rollout Order
 
-- Install `Faultier's Skyrim AIO 2k` + `Faultier's PBR Landscapes 4k` as the paired PBR base. Landscapes are a separate Nexus file and must be downloaded and installed independently; they are not a deferred branch. → `02b`
-- Install `Faultier's PBR Road Signs - English` from the Update Files section after the AIO. → `02b`
-- Add one city test set such as `Tomato's PBR Whiterun`. → `02b`
-- Add rural support with `Tomato's PBR Farmhouses 2.0`. → `02b`
-- Add one dungeon or ruin test set such as `Exist's Nordic Ruins PBR and Complex Material`. → `02b`
-- Add one stone-heavy city test set such as `PBaRkarth`. → `02b`
-- Only after those pass visual and performance review, test an additional landscape branch such as `A Cathedralist's PBR Landscape` or `TomatoRim PBR Landscapes AIO` (Faultier's Landscapes already covers the terrain baseline). → `02b`
+- Install `Vanilla PBR AIO` as the broad PBR base covering architecture, clutter, actors, and dungeons. → `02b`
+- Install `Faultier's PBR Landscapes 4k` to fill the terrain gap that VPBR leaves. → `02b`
+- Install `Enhanced Rocks and Mountains - Complex Material and PBR` after VPBR so its rock and mountain textures override VPBR's included mountain textures. → `02b`
+- Optionally install `Tomato's PBR Whiterun` and `Tomato's PBR Farmhouses 2.0` after VPBR where Tomato's specialist treatment improves on the base. → `02b`
+- Run PGPatcher last — all PBR texture mods above require it to render correctly in-game. → `02b`
+- Only after the core stack passes visual and performance review, test optional landscape additions such as `A Cathedralist's PBR Landscape` or `TomatoRim PBR Landscapes AIO` (Faultier's Landscapes already covers the terrain baseline). → `02b`
 
 ### Risks & Compatibility
 
-- Mixed asset coverage can make regions look inconsistent if only some adjacent surfaces receive convincing PBR treatment.
-- Some conversions look excellent in screenshots but clash with the broader art direction in motion.
+- VPBR is newer (March 2026) than Faultier's PBR Skyrim (established v3.0) — single-point-of-failure risk for the broadest coverage layer if abandoned. Active development so far (v1.0 → v1.32 in ~2 months).
+- Faultier's PBR Landscapes 4k + ERM cover VPBR's landscape gap, and `Faultier's PBR Armors and Clothes` covers the gear gap — the full VPBR ecosystem is now addressed.
+- VPBR includes mountain textures that must be overridden by ERM in the load order. Load ERM after VPBR.
+- Do NOT install `Faultier's Skyrim AIO` alongside VPBR — they conflict on the same texture paths.
 - PBR ambition can outrun the rest of the stack if weather, trees, water, and lighting are not held to a similar quality bar.
 
 ### Acceptance Criteria
@@ -237,23 +234,23 @@
 #### City And Settlement Surfaces
 
 - `Riton Whiterun` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/103408> → `02c`
-- Keep city textures aligned with whichever PBR city sets survive testing so cities do not split visually between PBR and non-PBR districts.
+- City textures are now covered by Vanilla PBR AIO across all holds. Targeted non-PBR city retextures (e.g. `Riton Whiterun`) should be loaded after VPBR only where they improve on the PBR base without creating style mismatches.
 
 #### Ruins And Dungeon Stone
 
-- `Exist's Nordic Ruins PBR and Complex Parallax Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/118014> → `02c`
+- Nordic ruins are covered by Vanilla PBR AIO. If specialist treatment is wanted as an override, `Exist's Nordic Ruins PBR and Complex Parallax Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/118014> can be loaded after VPBR. → `02c`
 
 #### Clutter And Small Props
 
 - `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795> → `02c`
 - `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> → `02c`
-- Coordinate with `Faultier's PBR Skyrim` where clutter categories are better served by material-aware upgrades. → `02c`
+- Coordinate with `Vanilla PBR AIO` where clutter categories are better served by material-aware upgrades. → `02c`
 - `SFCO` is the depth companion to `RUSTIC CLUTTER COLLECTION`: where RUSTIC retextures existing clutter meshes with higher-resolution diffuse and normal maps, SFCO adds new clutter objects (pottery, silverware, books, alchemy tools, foodstuffs, and furniture models) that fill the gaps vanilla clutter leaves in interiors and shops. → `02c`
 
 #### Metal And Equipment
 
 - `Dwemer Armors and Weapons Retexture SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93088> → `02c`
-- Treat it as the gear-side companion to `PBaRkarth` and `CC's HD Dwemer Automatons - Remastered`, so Dwemer ruins, machines, and wearable loot do not land in three visibly different texture languages. → `02c`
+- Treat it as the gear-side companion to `Vanilla PBR AIO`'s Dwemer ruin textures and `CC's HD Dwemer Automatons - Remastered`, so Dwemer machines and wearable loot share a consistent visual language. → `02c`
 
 #### Clothing And Fabric
 
@@ -350,6 +347,7 @@
 - Keep `ELFX Shadows` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63790> as the main alternate route if `Lux` proves too patch-heavy or too moody. Note that `ELFX Shadows` hard-requires the base `Enhanced Lights and FX` mod; both must be installed together. → `02d`
 - Treat `CS Light` as the Community Shaders-native single-stack lighting alternative. If the project decides `Lux` is too patch-heavy AND `True Light` is too tonemapping-focused, `CS Light` is the canonical CS-driven interior/exterior lighting overhaul. → `02d`
 - Treat `Window Shadows RT - Updated` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111091> and `Ambiance - A Vanilla(plus) Ambient Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46383> as supporting or fallback options, not the primary first pick. → `02d`
+- Keep `Simple Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124634> as a minimalist vanilla-plus lighting alternative — adjusts ambient light and image spaces without the full patch footprint of Lux or ELFX. → `02d`
 - Treat `Window Shadows Ultimate` as the modern CS-native window-shadow companion. Unlike the older `Window Shadows RT - Updated`, it is built for Community Shaders and its features, casts real window light into interiors, and works with the chosen `Lux` or `Relighting` route without doubling their coverage. It is the documented next step beyond `Lux Orbis` for interior depth. → `02d`
 - Treat `iLluminous Elementals` as the elemental-creature and magic-glow companion. It adds light to creatures and spell effects that would otherwise feel flat in dark interiors and shadowed dungeons, which fits the grim-dark tone by making ice atronachs, flame atronachs, and similar creatures read as proper threats under the lighting choice above. → `02d`
 - Treat `True Light` as the documented CS-tonemapping alternative to `Lux + Lux CS`. If the project decides `Lux` is too patch-heavy or its ENB-bridged style is not the right fit, `True Light` is the canonical CS-native replacement. → `02d`
@@ -388,6 +386,7 @@
 - `NAT.CS III` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139567> → `02e`
 - `Azurite III CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162153> — note that this requires the balanced CS add-on tier or higher (enables SSGI, Screen Space Shadows, Grass Lighting, Wetness Effects in the CS FOMOD), unlike NAT.CS III which works on the conservative stack. → `02e`
 - Keep `Raid Weathers CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171041> as the gameplay-clarity alternate route. → `02e`
+- Keep `Vanilla Weathers for CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/165393> as a vanilla-plus CS-native weather option — adjusts vanilla weathers for Community Shaders' tone mapping and volumetric lighting without adding new weather records. Has a True Storms patch. → `02e`
 - Treat older families such as `Obsidian Weathers and Seasons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12125>, `Obsidian CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162627>, and `Cathedral Weathers and Seasons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/24791> as fallback benchmarks rather than main recommendations. → `02e`
 - Treat `Azurite Weathers III - Enhanced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150269> and `Skydreamus Community Shaders Presets for NAT.CS III and Azurite III CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171145> as later tuning layers, not the first decision. → `02e`
 
@@ -424,6 +423,7 @@
 - Test `A Water Made For CS in mind` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172959> as the primary base-water candidate. → `02e`
 - Only add `FYX - Water Mesh Optimization` if it clearly improves shorelines, water edges, or performance with the chosen setup. → `02e`
 - Keep `Simplicity of Sea - Water Mod with ENB and Community Shaders Displacement Textures` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56520> as the main alternate comparison, layered on top of `Simplicity of Sea - Water Color and Transparency Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148761> which is its hard color/transparency dependency. → `02e`
+- `Simplicity of Sea - Water Color and Transparency Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148761> can also be used standalone as a lightweight color and transparency-only water adjustment, without the displacement textures from the main Simplicity of Sea mod. → `02e`
 - Treat `Realistic Water Two SE (RWT)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2182> and `Water for ENB` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37061> as legacy baselines, not first picks. → `02e`
 - Evaluate `Natural Waterfalls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87261> and `Rally's Water Foam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/28922> only after the main water base is selected. → `02e`
 - Add `Splashes Of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47710> as the projectile-based water splash and ripple layer. It is a powerofthree SKSE plugin that extends water impact effects (arrows, spells, shouts) to all water surfaces and adds dynamic displacement ripples. Works independently of the chosen water base and has Community Shaders compatibility (v1.4.1+ includes CS-specific FPS optimizations). Treat it as a baseline inclusion rather than an optional evaluation. → `02e`
@@ -521,6 +521,7 @@
 
 - Use the mixed route.
 - Start with `Skoglendi - A Grass Mod` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93944> as the baseline. → `02f`
+- Add `Merethic Grasslands` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/164058> as a supporting grass variety enhancer — pairs with Skoglendi to add northern grassland texture without replacing the baseline. → `02f`
 - Use `Origins Of Forest - 3D Forest Grass` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45719> as the main density enhancer only if forests still feel too sparse after terrain and tree choices are clearer. → `02f`
 - Use `Mari's flora` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45952> as the supporting plant replacer instead of treating flora as one giant all-in-one decision. → `02f`
 - Add `Flora Orientalis` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64041> and `Waterplants` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6092> to the grass baseline to satisfy `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and the broader mixed-route coverage targets. → `02f`
@@ -528,6 +529,7 @@
 - Keep `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and `QW's Grass Patch 2` in mind only after the final grass combination is narrow enough to justify patch-hub planning. → `02f`
 - Add `Cathedral - 3D Stonecrop` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/110726> and `DrJacopo - 3D Tundra Shrubs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/108747> as 3D plant mesh replacers that swap 2D billboard plants for photorealistic models with proper depth. These are mesh-only (no ESP) and layer cleanly on the grass baseline. → `02f`
 - Expand the 3D plant replacer layer with the full Cathedral 3D series: `Cathedral - 3D Clover Plant` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68793>, `Cathedral - 3D Deathbell` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76460>, `Cathedral - 3D Dragons Tongue` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85694>, `Cathedral - 3D Lavender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68310>, `Cathedral - 3D Thistle` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/67619>, and `Cathedral - 3D Snow Berries` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/69415>. These are authored by DrJacopo (same creator as Stonecrop and Tundra Shrubs) and use the same mesh-only approach — no ESPs, no patch requirements, complete visual consistency with the existing 3D plant baseline. → `02f`
+- Add `Cathedral PBR Plants` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135836> as the PBR texture layer for the Cathedral 3D plant series — replaces textures with PBR materials (2k BC7). Requires the original Cathedral plants mods installed and PGPatcher to be run. → `02f`
 
 ### Risks & Compatibility
 
@@ -570,6 +572,7 @@ Treat these as an optional environment-plant detail layer rather than a baseline
 - Keep `Happy Little Trees` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50961> as the safer fallback baseline. → `02f`
 - Treat `Fabled Forests` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/94462> and `Nature of the Wild Lands - forest and trees improvement mod` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63604> as stronger transformation routes to compare only if `Ulvenwald` misses the right balance. → `02f`
 - Keep `Happy Little Trees PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159171> and `Fabled Forests - Ulvenwald - Compatibility Patch (BOS)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134501> as support-path signals, not baseline decisions. → `02f`
+- Add `Tomato's PBR Vanilla Trees` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139375> as a PBR tree texture option for the vanilla tree models — can be layered under whichever tree overhaul wins testing to add PBR material response to the trunk and branch textures. → `02f`
 
 ### Risks & Compatibility
 
@@ -735,6 +738,7 @@ Treat these as an optional environment-plant detail layer rather than a baseline
 - Treat `High Poly Head 1.4` as a supported face-mesh branch rather than a mandatory baseline. Modern curated lists still use it, but it adds enough headpart and NPC-face complexity that it should be an intentional choice instead of an automatic requirement. → `02g`
 - Delay heavy NPC beauty decisions until the later `NPCs and Creatures` section so this layer stays focused and maintainable. → `02g`
 - Prioritize presentation that reads well at normal third-person distance, a grounded skin look fitting the colder visual direction, and clean body-base choices that do not create unnecessary armor-refit chaos later.
+- Use `Faultier's PBR Armors and Clothes` as the primary gear PBR layer — it covers all vanilla armors, weapons, and clothes with the same PBR material workflow as the rest of the stack. → `02g`
 - Treat `Steel Armor Redone - PBR and Complex Material` as an optional PBR armor upgrade branch for the CC Steel Soldier set. It requires CC Alternative Armors - Steel Soldier and PG Patcher; include it only after the PBR pipeline and parallax workflow are settled. → `02g`
 
 ### Recommended Body And Skin Baselines
@@ -857,6 +861,7 @@ Male variety on `HIMBO`:
 
 - `Immersive Fur Garments` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77073> — adds new fur garments (shawls, ponchos, coats) to leveled lists using meshes from the FurArmorSetsSE resource. Adds clothing variety without changing the body or skin stack. → `02g`
 - `Immersive Fur Garments - SPID` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82177> — the SPID-based distribution addon that replaces the original plugin's NPC and leveled-list edits with SPID distribution. ESL-flagged, removes the original .esp requirement, distributes fur garments to bandits, guards, hunters, jarls, orc tribes, and townfolk. Install both the base mod (meshes and textures only, delete the .esp) and the SPID addon for the modern distribution approach. → `02g`
+- `Faultier's PBR Armors and Clothes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175319> (2.9 GB) — complete PBR retexture of all vanilla armors, weapons, and clothes. Requires Community Shaders and PGPatcher. Complements VPBR by filling the gear PBR gap. → `02g`
 - `Steel Armor Redone - PBR and Complex Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177513> — PBR and Complex Material retexture of the Creation Club Steel Armor set. Requires CC Alternative Armors - Steel Soldier, Community Shaders (for PBR) or ENB (for Complex Materials), and PG Patcher (see [`modlist-02a.md`](modlist-02a.md)). Optional PBR armor upgrade. → `02g`
 
 ### Risks & Compatibility
