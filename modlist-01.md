@@ -279,6 +279,7 @@ NOT INSTALLED - `I'm Walkin' Here NG with Pets` (Nexus: <https://www.nexusmods.c
 - `Better Jumping SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18967>) — consistent jumping control → `01d`
 **NOTE -> Other bard mods make this unnecessary** - `Bard Instrumentals Mostly - Sing Rarely` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/10927>) — repetitive tavern singing (last updated 2017; still functional as a simple condition edit) → `10b`
 - `LeveledList Crash Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129136>) — leveled-list crash protection for heavy content stacks → `01d`
+- `Explosion Collision Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/154076>) — prevents explosion-force spells from launching large objects into the player's camera, fixing a longstanding destructible-physics annoyance → `01d`
 
 ### Working Guidance
 
