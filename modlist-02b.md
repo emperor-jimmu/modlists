@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `02 Graphics` → `02b Community Shaders`, `02c Textures & Meshes`, `02d Lighting`, `02e Weather & Water`, `02f Terrain & Flora`, `02g Characters & Creatures`, `02h LOD & Distant Detail`
 
-## Community Shaders Core Setup → `02b Community Shaders` → `02b`
+## Community Shaders Core Setup → `02b Community Shaders`
 
 ### Core Idea
 
@@ -214,7 +214,6 @@
 - Add `Unofficial Material Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21027> after SMIM (hard-requires SMIM; corrects material records used by `Community Shaders` PBR pipeline, 21k endorsements). → `02c`
 - Treat `High Poly Project` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12029> as optional and only keep it if the extra geometry earns its conflict cost. → `02c`
 - Use `Simplicity of Snow` v0.26 - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56235> — main file only (32.8 MB). Skip the optional `Parallax Meshes` (author disclaims responsibility and PGPatcher handles parallax properly). Skip `Northpoint patch` and `Epic Windhelm Expansion Fix` (mods not in the list). Place early if the final texture and mountain stack needs snow-consistency support. → `02c`
-- Add `FYX - Eastern Empire Company Building` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86526> as a mesh fix for the Eastern Empire Company building in Solitude — a targeted stopgap before larger city overhauls are settled. → `02c`
 - Add `FYX - Nordic Doors and Traps Collisions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/100295> as a collision geometry fix for Nordic doors and traps that stops the player's camera clipping through doorways and trap hitboxes. → `02c`
 - Add `FYX - Riften - Window Consistency` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182707> as a mesh consistency fix for Riften's windows, aligning their appearance across the city's buildings. A targeted visual stopgap before larger city overhauls are settled. → `02c`
 - Add `FYX - 3D Stockades` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65104> as a mesh replacement for stockade walls and barricades, adding 3D geometry where vanilla uses flat 2D textures. Improves readability and visual depth at typical third-person distance. → `02c`
@@ -281,7 +280,7 @@
 - Patch burden remains reasonable for the chosen city, dungeon, and player-home stack.
 - Lighting mood stays coherent with the final shader, texture, and weather direction.
 
-## Weather And Atmosphere → `02e Weather & Water` → `02e`
+## Weather And Atmosphere → `02e Weather & Water`
 
 ### Core Idea
 
@@ -318,7 +317,7 @@
 - Rain, fog, and storms improve mood without obscuring travel too heavily.
 - The chosen weather route complements the selected lighting strategy and CS modules.
 
-## Water Visuals → `02e Weather & Water` → `02e`
+## Water Visuals → `02e Weather & Water`
 
 ### Core Idea
 
@@ -359,7 +358,7 @@
 - Foam, reflections, and shoreline behavior improve immersion instead of drawing attention to artifacts.
 - The final water route fits the CS stack and broader `Elder Wilds` atmosphere. → `02e`
 
-## Terrain, Roads, And Snow → `02f Terrain & Flora` → `02f`
+## Terrain, Roads, And Snow → `02f Terrain & Flora`
 
 ### Core Idea
 
@@ -419,7 +418,7 @@
 - Snow blends naturally with nearby rocks, roads, and terrain materials under the selected weather route.
 - The final terrain, road, and snow stack supports later grass, tree, and LOD work.
 
-## Flora Visuals → `02f Terrain & Flora` → `02f`
+## Flora Visuals → `02f Terrain & Flora`
 
 ### Core Idea
 
@@ -799,7 +798,7 @@ Male variety on `HIMBO`:
 - Skin textures look believable under the chosen weather and lighting route during normal play.
 - Creature visuals improve the world's overall quality without clashing with the environment stack.
 
-## Hair, Eyes, And Beards → `02g Characters & Creatures` → `02g`
+## Hair, Eyes, And Beards → `02g Characters & Creatures`
 
 ### Core Idea
 
@@ -837,7 +836,7 @@ Male variety on `HIMBO`:
 - The chosen hair and eye assets do not force a full NPC overhaul in `modlist-09.md` but stay compatible with whatever it later selects.
 - Beard visuals remain acceptable without becoming a primary subsection decision.
 
-## Sky, Stars, And Auroras → `02e Weather & Water` → `02e`
+## Sky, Stars, And Auroras → `02e Weather & Water`
 
 ### Core Idea
 
@@ -874,7 +873,7 @@ Male variety on `HIMBO`:
 - Night skies feel atmospheric rather than flat without forcing a full sky-dome overhaul.
 - Sky work stays separated from weather and lighting decisions in load order, MCM, and visual identity.
 
-## Unique Entity Replacers → `02c Textures & Meshes` → `02c`
+## Unique Entity Replacers → `02c Textures & Meshes`
 
 ### Core Idea
 
@@ -902,7 +901,7 @@ Male variety on `HIMBO`:
 - `Elder Wilds` has one clear targeted unique-entity baseline or a deliberate discipline-first decision. → `02c`
 - The Night Mother's model reads at the same visual quality level as the locked 4K texture and lighting stack.
 
-## Skeleton And Bone Replacers → `02g Characters & Creatures` → `02g`
+## Skeleton And Bone Replacers → `02g Characters & Creatures`
 
 ### Core Idea
 
