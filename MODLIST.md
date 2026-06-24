@@ -109,14 +109,14 @@ MineColonies distributes on CurseForge with required dependencies. CurseForge do
 
 > As of Jun 24 2026, the latest 1.20.1 Forge release is `minecolonies-1.20.1-1.1.1249-snapshot.jar`. MineColonies may bundle some of its dependencies — try launching with just MineColonies first, and add only what Forge complains is missing.
 
-### Recommended QoL
+### QoL
 
-| Mod        | Version | File                                 | Direct Download                                                                                         |
-|------------|---------|--------------------------------------|---------------------------------------------------------------------------------------------------------|
-| JEI        | 15.20.0 | `jei-1.20.1-forge-15.20.0.132.jar`   | [Download](https://cdn.modrinth.com/data/u6dRKJwZ/versions/p5mYHvjx/jei-1.20.1-forge-15.20.0.132.jar)   |
-| Jade       | 11.13.2 | `Jade-1.20.1-Forge-11.13.2.jar`      | [Download](https://cdn.modrinth.com/data/nvQzSEkH/versions/LecuGude/Jade-1.20.1-Forge-11.13.2.jar)      |
-| JourneyMap | 5.10.3  | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
-| AppleSkin  | 2.5.1   | `appleskin-forge-mc1.20.1-2.5.1.jar` | [Download](https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar) |
+| Mod        | Version | What it does                                                   | File                                 | Direct Download                                                                                         |
+|------------|---------|----------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------|
+| JEI        | 15.20.0 | Recipe browser — press R on any item to see how to craft it, U to see its uses | `jei-1.20.1-forge-15.20.0.132.jar`   | [Download](https://cdn.modrinth.com/data/u6dRKJwZ/versions/p5mYHvjx/jei-1.20.1-forge-15.20.0.132.jar)   |
+| Jade       | 11.13.2 | Crosshair info — look at any block/mob to see its name, health, harvest tool, and mod | `Jade-1.20.1-Forge-11.13.2.jar`      | [Download](https://cdn.modrinth.com/data/nvQzSEkH/versions/LecuGude/Jade-1.20.1-Forge-11.13.2.jar)      |
+| JourneyMap | 5.10.3  | Minimap + full-screen map — auto-maps every chunk you visit, waypoints, death markers | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
+| AppleSkin  | 2.5.1   | Food info overlay — shows exact hunger and saturation restored by each food item on hover | `appleskin-forge-mc1.20.1-2.5.1.jar` | [Download](https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar) |
 
 ### Shaderpacks
 
