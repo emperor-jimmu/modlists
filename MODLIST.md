@@ -152,6 +152,18 @@ Shaderpacks are `.zip` files — place them in `%APPDATA%\.minecraft\shaderpacks
 
 ---
 
+### Data Packs
+
+Data packs are `.zip` files. Place them in `%APPDATA%\.minecraft\datapacks\` for global effect across all worlds, or in `saves/<world>/datapacks/` per-world. No modloader needed.
+
+| Data Pack         | Version | What it does                                                     | File                                                               | Direct Download                                                                                                                                     |
+|-------------------|---------|------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| No Creeper Grief  | V.2.0.3 | Creepers still damage entities but won't break blocks anymore | `PK_No_Creeper_Grief_V.2.0.3_MC_1.20_to_1.20.1.zip`              | [Download](https://cdn.modrinth.com/data/WCR1qfos/versions/iJh3cNqS/PK_No_Creeper_Grief_V.2.0.3_MC_1.20_to_1.20.1.zip) |
+
+> Unlike `gamerule mobGriefing false`, this only prevents creeper block destruction — villagers can still farm, sheep can still eat grass, and endermen can still pick up blocks. The most chill-compatible solution.
+
+---
+
 ## Step 4 — Install Order
 
 Add `.jar` files to `mods/` in batches, test-launching after each batch:
