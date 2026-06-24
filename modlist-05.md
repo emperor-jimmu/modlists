@@ -801,6 +801,49 @@
 - The nemesis system does not interfere with scripted quest deaths or main-quest progression.
 - Combat mods and death-alternative system coexist without edge-case crashes or save bloat.
 
+## Race-Specific Overhauls (Vampire, Werewolf, Shouts) → `05a Character & Progression`
+
+### Core Idea
+
+- This subsection owns the dedicated overhaul mods for vampire, werewolf, and shout gameplay — three character-identity systems that vanilla Skyrim leaves shallow or repetitive, and that the broader progression stack in section 05 does not fully cover.
+- These picks complete the EnaiRim suite begun with `Andromeda` (standing stones, locked in `05a`). `Sacrosanct`, `Growl`, and `Thunderchild` are all by EnaiSiaion, share the same design philosophy, and pair with `Andromeda` to form the character-systems half of the EnaiRim ecosystem alongside the Ordinator-based perk baseline. → `05a`
+- The goal is to give vampire, werewolf, and Thu'um gameplay meaningful depth without letting any single transformation system dominate — `Elder Wilds` should support all three paths, not force one.
+
+### Options
+
+- Vampire overhaul: `Sacrosanct - Vampires of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3928> → `05a`
+- Werewolf overhaul: `Growl - Werebeasts of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14645> → `05a`
+- Shout overhaul: `Thunderchild - Epic Shouts and Immersion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1460> → `05a`
+- Discipline-first route: rely on the vanilla vampire, werewolf, and shout systems without dedicated overhaul mods.
+
+### Recommendation
+
+- Lock `Sacrosanct` as the vampire overhaul baseline. It overhauls vampirism progression, feeding, powers, and NPC vampire behaviour with 4 feeding tiers and unique blood-power effects keyed to vampiric age. The community-canonical vampire overhaul (133K endorsements) and the EnaiRim-aligned choice — vanilla's vampire system is shallow and repetitive, and no other locked mod covers it. → `05a`
+- Lock `Growl` as the werewolf overhaul baseline. It overhauls beast-form progression, perks, feeding mechanics, and totems with 5 werebear varieties and a dedicated perk tree. Same total-category gap — vanilla werewolf gameplay is nearly non-existent outside the Companions questline. → `05a`
+- Lock `Thunderchild` as the shout overhaul baseline. It adds 19 new shouts (57 new words), meditation mechanics, shout-aware equipment, a recognition system, and boss encounters tied to the Thu'um. Completes the EnaiRim character-systems suite alongside `Andromeda`, `Sacrosanct`, and `Growl`, and adds meaningful content to a system that vanilla leaves bare after word-wall collection. → `05a`
+- All three mods are by EnaiSiaion, share the same design language, and are guaranteed compatible with each other and with the locked `Ordinator`, `Andromeda`, `Apocalypse`, and `Triumvirate` baselines — no cross-patching required. → `05a`
+- Keep the discipline-first route alive only if `Elder Wilds` decides vampirism, lycanthropy, and shout gameplay do not need dedicated attention. The total-category-gap argument is hard to justify for a list built on "modern mechanics" and "lots of new content". → `05a`
+
+### Risks & Compatibility
+
+- All three are by EnaiSiaion, designed to work together, and require no cross-patching. Compatibility with `Ordinator`, `Andromeda`, `Apocalypse`, and the broader EnaiRim ecosystem is guaranteed by design.
+- `Sacrosanct` and `Growl` interact with `Heart of the Beast` (werewolf transformation audio) in section 10. Place transformation-sound replacers after the transformation-system mods in load order.
+- `Thunderchild` adds 19 new shouts that interact with shout-audio mods (`Airgetlam - Shouts SFX`) from section 10. Verify shout-sfx replacements apply to Thunderchild's new shouts, not just vanilla ones.
+- All three add spells, powers, and mechanics that `Ordinator`'s perk trees must coexist with. Verify Ordinator's enchantment-tree and speech-tree adjustments do not conflict with Sacrosanct's blood powers or Thunderchild's shout meditation. → `05a`
+- Vampire feeding interacts with the crime-and-reputation baseline (`Skyrim Reputation` from `05e`). Test feeding in cities to confirm guard behaviour and bounty tracking remain coherent.
+- `Thunderchild`'s boss encounters may overlap with encounter-zone or world-content mods from `modlist-08.md`. Verify new word-wall guardians do not duplicate vanilla boss spawns. → `05a`
+
+### Acceptance Criteria
+
+- `Elder Wilds` has dedicated vampire, werewolf, and shout overhaul baselines. → `05a`
+- Vampire gameplay offers meaningful progression depth beyond vanilla's blood-potion-and-stage loop.
+- Werewolf gameplay includes a real perk tree and feeding progression.
+- Shout gameplay adds new words, meditation mechanics, and world content, making the Thu'um feel like a real character investment path.
+- All three EnaiRim mods coexist with the locked `Ordinator`, `Andromeda`, `Apocalypse`, and `Triumvirate` baselines without conflict.
+- Transformation-audio mods from section 10 apply correctly to Sacrosanct's and Growl's new forms.
+- Shout-audio mods from section 10 apply to Thunderchild's new shouts.
+- No guard-behaviour or bounty incoherence from vampire feeding under the locked crime baseline.
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

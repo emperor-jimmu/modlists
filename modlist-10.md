@@ -70,7 +70,7 @@
 ### Recommendation
 
 - Start with `Audio Overhaul for Skyrim SE` as the main broad audio-framework baseline. → `10b`
-- Keep `Immersive Sounds - Compendium` as the main alternate if the list wants a more dramatic and more configurable total sound redesign and is willing to carry more patch-management overhead. Note that ISC has not been updated since August 2021, making `Audio Overhaul for Skyrim SE` (last updated May 2023) the more current broad-framework choice. → `10b`
+- Lock `Immersive Sounds - Compendium` as a targeted companion alongside `Audio Overhaul for Skyrim SE`, not a competing replacement. AOS carries the broad framework; ISC fills specific categories (magic sounds, weapon impacts, creature roars, UI sounds) that AOS leaves close to vanilla. The two are designed to coexist via `AOS_ISC_Integration` (bundled with AOS's FOMOD installer) which ensures ISC sounds are properly volume-balanced within AOS's mixing framework. Note that ISC has not been updated since August 2021 — its audio content is functionally stable but the `AOS_ISC_Integration` patch needs an up-to-date AOS to work. → `10b`
 - Treat `Regional Sounds Expansion` as an overlap-heavy alternate that should only be revisited if the repo later wants to rethink the section-07 ambient-world boundary. → `10b`
 - Add narrower specialty sound mods only after the broad framework is chosen, so the project does not stack several partial audio answers without a clear owner.
 
@@ -85,6 +85,34 @@
 - The chosen framework makes Skyrim sound more responsive and coherent than vanilla in normal play.
 - Section-10 ownership is clear: broad sound design here, ambient world texture in `modlist-07.md`. → `10b`
 - Any additional specialty audio mods are layered on top of one clear framework rather than several competing baselines.
+
+## Interior Atmosphere Tuning → `10b SFX & Ambience`
+
+### Core Idea
+
+- This subsection covers the annoyance of interior ambient loops — the loud, repetitive, and often immersion-breaking sound beds that play on loop in dungeons, caves, and ruins.
+- The goal is to reduce ambient noise fatigue in interiors without removing or replacing the good ambience work that the broad framework and section-07 environment picks have already done.
+
+### Options
+
+- Noise-reduction route: `Quieter Dungeons and Caves` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18710> — dramatically reduces the volume of the worst interior ambient loops without removing any sounds entirely. By AndrealphusVIII. Simply lowers the volume of the ambient tracks that play on loop in most dungeon interiors, making them feel less like a constant wall of noise.
+- Discipline-first route: skip interior ambience tuning and rely on the broad audio framework's defaults.
+
+### Recommendation
+
+- Lock `Quieter Dungeons and Caves` as the interior-noise baseline. It is a single-target fix that addresses a specific pain point — interior ambient loops that are loud, repetitive, and fatigue the ear during extended dungeon crawls — without touching the broader sound design or ambience work from other sections. The mod simply adjusts the volume of the ambient tracks rather than removing or replacing them, so it applies regardless of which broad framework or ambience mods are active. → `10b`
+
+### Risks & Compatibility
+
+- The mod adjusts ambient loop volumes via a simple sound-levels patch. It does not change audio files, records, or scripts, so it has near-zero compatibility risk with any broad framework or ambience mod.
+- If a specific dungeon's ambience is already well-handled by the broad framework (e.g., AOS's interior mixing), Quieter Dungeons may reduce volume below the intended level. Test in a representative dungeon crawl (Bleak Falls Barrow, a Dwemer ruin, a Nordic tomb) to confirm interiors feel spacious rather than muted.
+- The mod has no dependencies and no plugin conflicts. It is safe to install at any point in the load order.
+
+### Acceptance Criteria
+
+- Interior dungeon ambience is noticeably less fatiguing during extended crawls.
+- No interior feels empty or muted — the ambience should still be present, just not dominating.
+- Tested across Nordic tombs, Dwemer ruins, and caves.
 
 ## Combat, Magic, And Shout Feedback → `10b SFX & Ambience`
 
