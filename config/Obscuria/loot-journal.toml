@@ -1,0 +1,19 @@
+[General]
+	#Master on/off switch for the entire mod
+	enabled = true
+	#Ticks after breaking a block to attribute its drops (~3 seconds at 20 TPS)
+	attributionWindowTicks = 60
+	#Block randomizer mode — randomizes block drops for minigames
+	blockRandomizerMode = false
+	#Per-break chat feedback in Block Randomizer mode
+	brFeedbackInChat = false
+
+[Output]
+	#Save per-session item gain/loss data as JSON
+	writeSessionJson = true
+	#Update cumulative drop statistics across all sessions
+	writeStatisticsJson = true
+	#Include per-break event data in session JSON (very verbose)
+	writeBreakEvents = false
+	#Print a session summary to chat when disconnecting
+	showSummaryOnDisconnect = true

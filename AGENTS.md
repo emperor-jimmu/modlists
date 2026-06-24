@@ -101,12 +101,13 @@ Data Packs           Stored in datapacks/, each with a README explaining purpose
 
 Resource Packs       Stored in resourcepacks/, optional, documented
 
-File Layout          config/         — mod config overrides, tracked in version control
-                     datapacks/      — world data packs
-                     resourcepacks/  — optional resource packs
-                     MODLIST.md      — live mod list with versions and install instructions
-                     STATUS.md       — what's configured, what's pending
-                     AGENTS.md       — this file
+File Layout          config/              — mod config overrides, tracked in version control
+                     datapacks/           — world data packs
+                     resourcepacks/       — optional resource packs
+                     GETTING-STARTED.md   — learning resources, in-game tutorial references
+                     MODLIST.md           — live mod list with versions and install instructions
+                     STATUS.md            — what's configured, what's pending
+                     AGENTS.md            — this file
 
 Note: This is a guide repository. Config overrides, data packs, and resource
 packs are tracked here for version control. The actual mod .jar files live in
