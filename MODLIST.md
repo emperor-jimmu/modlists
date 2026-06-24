@@ -58,6 +58,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Curios API (required by Cataclysm & Aether) | 5.14.1 | `curios-forge-5.14.1+1.20.1.jar` |
 | Fragmentum (required by Loot Journal)      | 1.3.0  | `fragmentum-forge-1.20.1-1.3.0.jar`           | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar)         |
 | Moonlight Library (required by Supplementaries) | 2.16.34 | `moonlight-1.20-2.16.34-forge.jar`             | [Download](https://cdn.modrinth.com/data/twkfQtEc/versions/43kjMXMx/moonlight-1.20-2.16.34-forge.jar)        |
+| Iceberg (required by Item Highlighter)          | 1.1.25  | `Iceberg-1.20.1-forge-1.1.25.jar`             | [Download](https://cdn.modrinth.com/data/5faXoLqX/versions/BQ8rJPXV/Iceberg-1.20.1-forge-1.1.25.jar)        |
 
 ### Core Modpack
 
@@ -113,6 +114,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 > **Artifacts** uses **Curios API** (already in the pack). No additional dependencies.
 >
 > **Aquamirae** is standalone. No additional dependencies.
+>
+> **Item Highlighter** requires **Iceberg** (listed in Dependency Layer) — a client-side library providing GUI utilities. **Jade Addons** extends **Jade** (already in the pack) — no additional dependencies.
 
 ### Graphics
 
@@ -148,6 +151,8 @@ MineColonies distributes on CurseForge with required dependencies. CurseForge do
 | Fancy Toasts | 1.4.7 | Fancy advancement toast popups — customizable animations, sounds, and textures (8 theme types) | `fancytoasts-forge-1.20.1-1.4.7.jar` | [Download](https://cdn.modrinth.com/data/eUziWqPC/versions/ZZLFzqe2/fancytoasts-forge-1.20.1-1.4.7.jar) |
 | Jade       | 11.13.2 | Block/entity info HUD — shows what you're looking at, harvest tool, mod origin, storage contents | `Jade-1.20.1-Forge-11.13.2.jar`      | [Download](https://cdn.modrinth.com/data/nvQzSEkH/versions/LecuGude/Jade-1.20.1-Forge-11.13.2.jar)      |
 | Loot Journal: Pickup Notifier | 6.2.1 | Customizable item pickup notifications — animations, themes, filtering, and layout options | `loot_journal-forge-1.20.1-6.2.1.jar` | [Download](https://cdn.modrinth.com/data/OJ6ZYz5L/versions/tkx0bPOi/loot_journal-forge-1.20.1-6.2.1.jar) |
+| Item Highlighter | 1.1.9 | Highlights newly picked-up items in your inventory with a gold border — clears on hover or inventory close | `Highlighter-1.20.1-forge-1.1.9.jar` | [Download](https://cdn.modrinth.com/data/cVNW5lr6/versions/rcQOLnyI/Highlighter-1.20.1-forge-1.1.9.jar) |
+| Jade Addons | 5.5.0 | Extended block info for Jade — adds Create stress/speed, Mekanism gas/progress, Ars source/mana, FD cooking progress, and more | `JadeAddons-1.20.1-Forge-5.5.0.jar` | [Download](https://cdn.modrinth.com/data/xuDOzCLy/versions/AvIT9ADi/JadeAddons-1.20.1-Forge-5.5.0.jar) |
 
 ### Shaderpacks
 
@@ -180,7 +185,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
 | Batch | Mods                                                                                                                                  | Check                                              |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, Moonlight Library, JEI, Jade, Loot Journal: Pickup Notifier, Fancy Toasts, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
+| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, Moonlight Library, Iceberg, JEI, Jade, Jade Addons, Loot Journal: Pickup Notifier, Item Highlighter, Fancy Toasts, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
 | 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                                                       | Items appear in creative inventory                 |
 | 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                  | "Ponder" key (W) works on Create items             |
 | 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                                                     | Mekanism items/blocks visible                      |
