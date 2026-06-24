@@ -222,6 +222,9 @@
 - Use the PGPatcher workflow in [`modlist-02a.md`](modlist-02a.md) for late-stage parallax generation rules. → `02c`
 - `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> — adds new clutter objects (pottery, silverware, books, alchemy tools, furniture) that vanilla clutter leaves out. VPBR covers the base clutter textures; SFCO adds geometry and variety. → `02c`
 - `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795> — higher-resolution diffuse/normal replacer for existing clutter. May be redundant with VPBR's own clutter coverage; evaluate side-by-side before including. → `02c`
+- `Security Overhaul SKSE - Lock Variations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/58224> — replaces vanilla lock models with region-appropriate, higher-detail variants (Dwemer locks in Dwemer ruins, Nordic locks in tombs, etc.). By powerofthree. SKSE plugin — no ESP, zero compatibility impact. One of the most immediately noticeable mesh upgrades because the lockpicking minigame puts locks directly in the player's face. → `02c`
+- `Security Overhaul SKSE - Regional Locks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/70216> — companion to Lock Variations that assigns region-appropriate lock levels and types (e.g., Dwemer locks are harder to pick, bandit locks are simpler). By Kreiste. Adds gameplay-immersion depth to the visual lock overhaul without heavy scripting. → `02c`
+- `Glorious Doors of Skyrim (GDOS) SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/66642> — replaces vanilla door meshes with higher-detail versions across all architecture types. By hype1. Doors are one of the most-seen architectural elements in the game, and vanilla door meshes are notably low-poly. Mesh-only — compatible with any door texture replacer. → `02c`
 
 ### Risks & Compatibility
 

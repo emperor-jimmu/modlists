@@ -249,6 +249,7 @@
 - Start with `Skyrim SE Controller Interface Fix` as the strongest first-pass baseline because it improves controller friendliness without forcing the whole stack to reorganize itself around one larger system. → `06a`
 - Keep `Gamepad Plus Plus` as the broader comparison if testing shows the list needs a more assertive controller-input answer. → `06a`
 - Keep `Wheeler` as the deliberate quick-access branch if controller play clearly benefits from a radial interaction layer rather than only better menu navigation. → `06a`
+- Add `Show Player In Menus` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/122648> as a locked third-person-UI companion. It renders the player character in inventory, magic, and crafting menus, making gear changes and outfit previews visible in real time. Essential for the "full third-person gamepad parity" pillar — without it, inventory management forces a disconnect between the player's third-person view and the menu screen. By myztikrice. → `06a`
 - Keep dialogue readability, inventory clarity, and map/journal ownership in their already-written subsections; this section should answer controller comfort across those layers, not replace their underlying decisions.
 
 ### Risks & Compatibility

@@ -137,6 +137,8 @@
 - Moderate expansion route: `Odin - Skyrim Magic Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46000> → `05b`
 - High-expression route: `Apocalypse - Magic of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1090> → `05b`
 - Standalone spell-pack route: `Lost Grimoire SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4455> — adds 115+ lore-friendly spells across all schools with matching scrolls and staves. Standalone design compatible with any primary overhaul. No continuously running scripts. 6.9K endorsements. → `05b`
+- Mage-archetype expansion route: `Triumvirate - Mage Archetypes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/39170> — adds 75 spells across 5 themed mage archetypes (Cleric, Druid, Shadow Mage, Shaman, Warlock) by EnaiSiaion. Designed to complement rather than compete with the primary spell overhaul — each archetype is a self-contained spell package that adds identity-driven magic without diluting the chosen baseline's core schools. 42K endorsements, actively maintained. → `05b`
+- Magic-visual route: `Strange Runes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/19438> — adds floating Nordic runes that appear around the player's hands during spell charging, with configurable appearance and density. By powerofthree. Purely visual — no spell changes, no balance impact. 22K endorsements. Adds modern magic-casting visual feedback that reads clearly in third-person. → `05b`
 - Compatibility note: `Mysticism` and `Odin` should be treated as competing primary overhauls, not a default combined baseline; if the list later explores combined setups, that should be a deliberate compatibility project. → `05b`
 
 ### Recommendation
@@ -144,6 +146,8 @@
 - Start with `Mysticism` as the main baseline. → `05b`
 - Keep `Odin` as the comparison route if `Mysticism` ends up feeling too restrained for the final identity. → `05b`
 - Keep `Apocalypse` as the deliberate high-expression route, and the most plausible later additive layer, only if the list wants spell variety and magical experimentation to become a dominant system pillar. → `05b`
+- Add `Triumvirate - Mage Archetypes` as a locked companion spell pack. It adds identity-driven archetype spells (Cleric, Druid, Shadow Mage, Shaman, Warlock) that complement whichever primary overhaul is chosen without overriding its core spell list. Each archetype is self-contained and can be engaged with or ignored — a Cleric playthrough uses Cleric spells, a pure mage uses the primary overhaul's spells, and the two coexist in the same load order without record conflicts. → `05b`
+- Add `Strange Runes` as a locked magic-visual companion. It adds floating Nordic runes during spell charging with zero gameplay or balance impact — purely a visual feedback upgrade that makes spellcasting feel more modern and reads clearly in third-person. Compatible with all primary spell overhauls; no record conflicts. → `05b`
 - Choose one primary magic overhaul first and only then decide whether extra spell volume is actually needed.
 
 ### Risks & Compatibility
@@ -349,10 +353,9 @@
 
 ### Recommendation
 
-- Start with `Ars Metallica` as the main baseline. → `05d`
+- Use `Ars Metallica` as the player-crafting baseline. It handles smithing XP, tanning, mining, and basic crafting-loop improvements without heavy rules restructuring. → `05d`
+- Add `Honed Metal - NPC Crafting and Enchanting Services` as the locked NPC-service companion. It lets the player pay smiths and enchanters to craft, temper, enchant, and recharge items, which makes town services and gold economy matter without replacing the player crafting loop. The two mods serve different purposes: `Ars Metallica` improves the player-side smithing experience, `Honed Metal` makes NPC crafters useful. Lock both together as complementary rather than competing. → `05d`
 - Keep `Complete Crafting Overhaul Remastered` as the deliberate high-complexity comparison if `Elder Wilds` decides material logic and crafting rules should become a major progression pillar. → `05d`
-- Keep `Honed Metal` as the distinct roleplay-facing comparison if the list wants to reduce player-made item churn and make towns, smiths, and specialists matter more. → `05d`
-- Treat NPC-service crafting as a different philosophy from player-centric crafting expansion, not as a small add-on to the same route.
 - Add `Thaumaturgy` as the enchanting overhaul companion. It closes the Simonrim crafting loop (enchanting alongside `Mysticism` magic and `Adamant` perks) without requiring a heavy all-in-one crafting framework. It also serves as a prerequisite for artifact-overhaul content in the `Artifact And Unique Item Overhauls` subsection. → `05d`
 
 ### Risks & Compatibility
@@ -767,6 +770,36 @@
 - High-status clothing variants are present for the Imperial and noble archetypes (`Colovian Noble Clothes`).
 - The chosen backpack mod is the cosmetic and inventory companion (`Knapsack Backpacks SE` + `Bandolier` from the armor subsection).
 - The chosen clothing stack does not conflict with the NPC outfit decisions in `modlist-09.md`. → `05d`
+
+## Death Alternative System → `05c Survival & Needs`
+
+### Core Idea
+
+- This subsection owns what happens when the player falls in combat: whether death is the only outcome, or whether a modern death-alternative system can create memorable setbacks and emergent storytelling instead of a reload screen.
+- The goal is to add consequence and narrative texture to defeat without making every lost fight a permanent character-ending event.
+
+### Options
+
+- Nemesis-style death route: `Shadow of Skyrim - Nemesis and Alternative Death System` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72924> — upon defeat, the player respawns at the nearest safe location with debuffs and the enemy who defeated them gains a name, buffs, and persistent presence in the world. Defeating that nemesis later restores lost progress and removes the debuff. Creates personal antagonists from organic gameplay. By SoloManGames. 8K+ endorsements. → `05c`
+- Discipline-first route: rely on the vanilla death-and-reload loop.
+
+### Recommendation
+
+- Add `Shadow of Skyrim` as a locked death-alternative baseline. It turns defeat from a reload-screen punishment into an emergent storytelling mechanic — the enemy who killed you becomes a named nemesis with persistent world presence and buffs, creating organic revenge arcs. Fits the "modern mechanics" and "living the world" pillars by making failure interesting rather than only frustrating. → `05c`
+
+### Risks & Compatibility
+
+- Death-alternative systems interact with every combat mod in the list. Verify `Shadow of Skyrim` does not conflict with `Valhalla Combat`, `Precision`, `TK Dodge`, or any combat-animation mod from `modlist-03.md`. → `05c`
+- The nemesis system adds persistent NPCs and effects to the world; verify save file size remains reasonable over long playthroughs with multiple nemeses active. → `05c`
+- Death-alternative mods can create edge cases with scripted-death sequences in quests. Check compatibility with `Alternate Perspective`, `Wyrmstooth`, `The Forgotten City`, and major quest mods from `modlist-08.md`. → `05c`
+- Confirm the mod is compatible with Steam `1.6.1170` and the SKSE plugin stack from `modlist-01.md`. → `05c`
+
+### Acceptance Criteria
+
+- `Elder Wilds` has one locked death-alternative baseline. → `05c`
+- Defeat creates a named nemesis with persistent world presence rather than just a reload screen.
+- The nemesis system does not interfere with scripted quest deaths or main-quest progression.
+- Combat mods and death-alternative system coexist without edge-case crashes or save bloat.
 
 ## Post-Install Smoke Test
 

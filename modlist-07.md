@@ -185,6 +185,7 @@
 - Broad landmark route: `Ancient Land` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22900> (last updated November 2020; static worldspace edits that still function, but verify compatibility with the chosen road, tree, and snow stacks) → `07d`
 - Light roadside-texture route: `Interesting Roads` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/42749> (last updated November 2020; asset-only additions, low compatibility risk but check for clipping with city or road overhauls) → `07d`
 - Road-guidance route: `Point The Way` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/352> → `07d`
+- Standing-stone overhaul route: `Ryn's Standing Stones` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64256> — overhauls each of Skyrim's 13 standing stones with unique meshes, landscape edits, and environmental storytelling, making each stone feel like a distinct ancient monument rather than a copy-pasted rock. By Ryn2g. Complements any standing-stone perk overhaul without conflicting with their gameplay effects. → `07d`
 
 ### Recommendation
 
@@ -192,6 +193,7 @@
 - Keep `Interesting Roads` as the meaningful comparison if the world mainly needs lighter roadside variety rather than more overt ancient-landmark identity. → `07d`
 - Keep `Point The Way` as the narrower route-guidance branch if the real missing piece is clearer travel legibility and signposting rather than broader worldspace flavor. → `07d`
 - Consider `Giant Crab Shells - Mihail's Shards of Immersion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124681> as a roadside-beauty addition. Adds ancient giant crab shells along the northern coast and Solstheim with loot/enemy encounters inside some. Fits the "big, awe-inspiring world" pillar — 789 endorsements, ESL-flagged, compatible with most landscape stacks. → `07d`
+- Add `Ryn's Standing Stones` as a locked standing-stone landmark baseline. Each of the 13 stones becomes a unique environmental setpiece with custom meshes, landscape work, and environmental storytelling — compatible with any standing-stone perk overhaul (the mod only changes world geometry, not gameplay effects). Makes one of Skyrim's most repeated environmental assets feel intentional rather than copy-pasted. → `07d`
 - Keep broader new-settlement, quest-location, or population additions for later world-content ownership.
 
 ### Risks & Compatibility
@@ -297,6 +299,8 @@
 - Add `Particle Wind - SKSE Plugin` as the particle-level companion to the Dynamic Wind Framework. It makes dust, leaves, snow, and ash particles respond to wind direction in real time, adding perceptible air movement to the visual environment. By the same author as the framework, so integration is expected to be clean. Requires SKSE and Address Library. → `07b`
 - Add `Realistic Boat Bobbing SE` as an optional water-surface companion for harbor and coastal immersion. Boats bob with idle animations that were shipped but never enabled in vanilla. Keep it optional — it is purely cosmetic and adds no gameplay depth, but makes docked boats feel physically alive rather than frozen. → `07b`
 - Add `Realistic Boat Bobbing SE - BOS Edition` as the companion for mod-added boat support. If the base mod is used, the BOS variant extends boat-bobbing to boats added by city, worldspace, or dock mods without requiring bespoke patches for each. Requires `Base Object Swapper` and the base mod. → `07b`
+- Add `R.A.S.S. - Rain Ash And Snow Shaders` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22745> as an optional environmental-visual companion. It applies visible rain droplets, snow accumulation, ash particles, and frost shaders to the player and NPCs during appropriate weather conditions. By lKocMoHaBTl. 33K+ endorsements. Visual-only, no gameplay changes. → `07b`
+- **R.A.S.S. Compatibility Note:** `Community Shaders` includes its own `Wetness Effects` module that applies rain-wetness shaders. R.A.S.S.'s rain-droplet effect and CS Wetness Effects target different visual layers (R.A.S.S. applies droplets to actor surfaces; CS Wetness applies environmental wetness to terrain and objects), so they should coexist without visual conflicts. However, verify in testing that the combined visual output does not create double-wetness artifacts or performance issues. If visual conflicts arise, disable CS Wetness Effects and rely on R.A.S.S. for actor-side wetness, or vice versa. → `07b`
 - Keep this subsection separate from the broader weather-system ownership (which belongs in [`modlist-02b.md`](modlist-02b.md)'s Weather and Lighting subsection) and from graphics-side cloth physics (which belongs in [`modlist-02b.md`](modlist-02b.md)'s physics decisions). → `07b`
 
 ### Risks & Compatibility
