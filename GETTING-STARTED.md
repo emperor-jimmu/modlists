@@ -83,9 +83,16 @@ The pack doesn't have a single win condition. If you want direction beyond "do w
 |------|-----|
 | **A mansion with Ars Nouveau blocks** | Source gems, enchanted wood, and scribing tables make gorgeous builds. Learn the decorative blocks — you'll want more than a cobble box. |
 | **A Create-powered factory building** | Build a dedicated structure around your first Create assembly line. A factory that looks like it belongs in the world is more satisfying than a machine in a field. |
+| **An ME room with full AE2 visualisation** | Use AE2's cable facades, covered cables, and Illuminated panels to build a clean, visible storage hub. No floating connectors — every cable runs behind a decorated wall. |
 | **MineColonies city across a river** | Expand your colony across a natural border. Bridge building, road networks, and district planning turn the colony into a real settlement. |
 | **Underwater base with Aquamirae blocks** | Explore the deep ocean, collect Aquamirae materials, and build a submerged base. The mod adds unique marine-themed decorative blocks. |
 | **A base for every phase** | A wooden shack for Phase 1, a stone factory for Phase 2, a sprawling compound for Phase 3. Let your base evolve with your power. |
+| **Monolithic reactor building** | Build a dedicated structure around your Mekanism fission or fusion reactor — reinforced walls, coolant pipe galleries, a control room with levers and gauges. Make power generation feel like a real facility. |
+| **Harbour with Create docks** | Build a port along a shoreline: Create contraptions unload boats, mechanical arms move cargo onto steam trains, and Andesite tunnels carry it uphill to your base. A logistics showcase. |
+| **Silo complex with Sophisticated Storage** | Build a multi-tower silo where each barrel tower feeds into the next — ore tower → ingot tower → block tower. Label every barrel, stack them 10 high, and glass the walls for a Factorio-style view. |
+| **Skybridge between mountain peaks** | String a walkable bridge across a valley between two tall mountains. Use Create girders, wooden supports, and guard rails. Add train tracks on top for a scenic rail line. |
+| **Supplementaries globe room** | Supplementaries adds a decorative globe. Build a dedicated cartography room or library around it. Add bookcases, maps on the walls, and a lectern. |
+| **Underground Ars Nouveau mage tower** | Dig down instead of building up. A spiral stairwell descending deep underground, with source gem windows, weeping vault rooms, and a ritual chamber at the bottom. |
 
 ### Exploration Goals
 
@@ -103,9 +110,18 @@ The pack doesn't have a single win condition. If you want direction beyond "do w
 |------|-----|
 | **Ore quintupling** | Mekanism's 5x ore processing is a classic mid-game milestone. Build the full chain from crusher to chemical dissolver. |
 | **AE2 autocrafting** | Get your ME system to autocraft complex items from raw materials. The moment your system builds something while you're off exploring is a great feeling. |
+| **Mekanism + AE2 seamless integration** | Pipe every Mekanism machine into your ME system. Ores go in from the digital miner, processed ingots come out into storage, crafting CPUs pull from the full material library. One warehouse, no manual ferrying. |
 | **Fusion reactor** | Mekanism's fusion reactor is the endgame power source. Fuel it, stabilize it, and power your entire base from it. |
+| **Supercritical phase shifter** | The step beyond fusion. Build the full Mekanism endgame chain — supercritical phase shifter, antimatter pellet production, and the MekaSuit charging setup. |
+| **Induction matrix** | Build Mekanism's massive energy storage cell. Fill it with max-tier cells and providers. The number should make you laugh — we're talking billions of RF. |
+| **Factory-wide Ponder contraption** | Build a single Create contraption that runs a multi-step production line: raw input at one end → sequenced crafting in the middle → packaged output at the other. Bonus points if it fits in one building. |
 | **Automatic colony supply** | Link your AE2 system to MineColonies so the colony automatically pulls materials from your storage. The colony builds itself from your surplus. |
-| **A Create train line** | Build a train connecting your base to a distant village or outpost. Steam 'n' Rails adds signals, stations, and cargo management. |
+| **Cross-dimension chunk loader network** | Place Chunk Loaders in the Overworld, Aether, Twilight Forest, and mining dimension. Keep factories, reactors, and colonies running in all dimensions simultaneously. |
+| **A Create train network** | Build a train connecting your base to a distant village or outpost. Add stations, signals, cargo offloaders. Expand to a 3-stop network with branching lines. |
+| **Create: Big Cannons automated ammo line** | Build a fully automated cannonball and propellant factory. Obsidian-andesite alloy → cannonball casting → gunpowder assembly. Your wall defense should never run out of shells. |
+| **Boiler-powered steam plant** | Build a max-size Create steam boiler (18 liquid tanks, 36 heat sources). Run it on a fuel loop — tree farm → charcoal → boiler → steam engine → mechanical power → tree farm. Self-sustaining and genuinely impressive. |
+| **ME spatial storage** | AE2's spatial storage lets you capture and store entire rooms. Build a spatial IO chamber and experiment with moving structures. Great for swapping out factory modules. |
+| **MineColonies builder automation** | Set up dedicated Create contraptions or Mekanism factories that feed the specific materials each MineColonies building style needs (wooden logs for Forester's Hut, cobble for Builder's Hut). The colony grows faster when its supply chain is dedicated. |
 
 ### Power Goals
 
