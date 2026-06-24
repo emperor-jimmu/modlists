@@ -1,0 +1,7 @@
+# Keep XP on death — aligns with chill living pillar
+# Default: false
+grave.keepExperience = true
+
+# 24h grave protection from opening — gives the player time to return
+# without anxiety. Default: 0 (no protection)
+grave.protectionDuration = 86400

@@ -49,10 +49,13 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 
 ### Dependency Layer
 
-| Mod                                | Version | File                                       | Direct Download                                                                                               |
-|------------------------------------|---------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Sophisticated Core                 | 1.3.56  | `sophisticatedcore-1.20.1-1.3.56.2042.jar` | [Download](https://cdn.modrinth.com/data/nmoqTijg/versions/XlE1jclJ/sophisticatedcore-1.20.1-1.3.56.2042.jar) |
-| YUNG's API (required by YUNG mods) | 4.0.6   | `YungsApi-1.20-Forge-4.0.6.jar`            | [Download](https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar)            |
+| Mod                                         | Version | File                                       | Direct Download                                                                                               |
+|---------------------------------------------|---------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Sophisticated Core                          | 1.3.56  | `sophisticatedcore-1.20.1-1.3.56.2042.jar` | [Download](https://cdn.modrinth.com/data/nmoqTijg/versions/XlE1jclJ/sophisticatedcore-1.20.1-1.3.56.2042.jar) |
+| YUNG's API (required by YUNG mods)          | 4.0.6   | `YungsApi-1.20-Forge-4.0.6.jar`            | [Download](https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar)            |
+| Balm (required by Waystones)                | 7.3.38  | `balm-forge-1.20.1-7.3.38-all.jar`         | [Download](https://cdn.modrinth.com/data/MBAkmtvl/versions/8rz04Kha/balm-forge-1.20.1-7.3.38-all.jar)         |
+| Lionfish API (required by Cataclysm)        | 3.0     | `lionfishapi-3.0.jar`                      | [Download](https://cdn.modrinth.com/data/FoVacERa/versions/mWkKVbyd/lionfishapi-3.0.jar)                      |
+| Curios API (required by Cataclysm & Aether) | 5.14.1  | `curios-forge-5.14.1+1.20.1.jar`           | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar)         |
 
 ### Core Modpack
 
@@ -73,6 +76,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Apotheosis Ascended     | 1.4.0   | `apotheosis-ascended-1.4.0.jar`                  | [Download](https://cdn.modrinth.com/data/uwCpk80h/versions/BudEWzNX/apotheosis-ascended-1.4.0.jar)                  |
 | Farmer's Delight        | 1.3.2   | `FarmersDelight-1.20.1-1.3.2.jar`                | [Download](https://cdn.modrinth.com/data/R2OftAxM/versions/CsjS7EkP/FarmersDelight-1.20.1-1.3.2.jar)                |
 | Chunk Loaders           | 1.2.9   | `chunkloaders-1.2.9-forge-mc1.20.1.jar`          | [Download](https://cdn.modrinth.com/data/t1VgucWo/versions/hfQ3VSpz/chunkloaders-1.2.9-forge-mc1.20.1.jar)          |
+| Waystones               | 14.1.20 | `waystones-forge-1.20.1-14.1.20.jar`             | [Download](https://cdn.modrinth.com/data/LOpKHB2A/versions/sKoHLGbK/waystones-forge-1.20.1-14.1.20.jar)             |
+| Corail Tombstone        | 9.1.0   | `tombstone-1.20.1-9.1.0.jar`                     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/8257477)                           |
 
 ### World & Exploration
 
@@ -82,8 +87,14 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | YUNG's Better Mineshafts      | 4.0.4    | `YungsBetterMineshafts-1.20-Forge-4.0.4.jar`     | [Download](https://cdn.modrinth.com/data/HjmxVlSr/versions/kVO57zxB/YungsBetterMineshafts-1.20-Forge-4.0.4.jar)         |
 | YUNG's Better Ocean Monuments | 3.0.4    | `YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar` | [Download](https://cdn.modrinth.com/data/3dT9sgt4/versions/SN4iZ7wf/YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar)     |
 | The Twilight Forest           | 4.3.2508 | `Twilight Forest - MC 1.20.1 - 4.3.2508.jar`     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?version=1.20.1&gameVersionTypeId=1) |
+| The Aether                    | 1.5.2    | `aether-1.20.1-1.5.2-neoforge.jar`               | [Download](https://cdn.modrinth.com/data/YhmgMVyu/versions/2411kUqF/aether-1.20.1-1.5.2-neoforge.jar)                   |
+| L_Ender's Cataclysm           | 3.31     | `L_Enders_Cataclysm-3.31.jar`                    | [Download](https://cdn.modrinth.com/data/46KJle7n/versions/C3H0azzB/L_Enders_Cataclysm-3.31.jar)                        |
 
 > YUNG mods all require **YUNG's API** (listed in Dependency Layer). Install that first. The Twilight Forest is on CurseForge only — download the 1.20.1 Forge file.
+>
+> **Waystones** requires **Balm** (listed in Dependency Layer). **L_Ender's Cataclysm** requires **Lionfish API** and **Curios API**. **The Aether** embeds Curios API — no separate download needed, but Curios must be installed separately for Cataclysm to use it.
+>
+> **The Aether** files are tagged "neoforge" on Modrinth but are fully Forge-compatible (marked for both loader types).
 
 ### Graphics
 
@@ -111,18 +122,19 @@ MineColonies distributes on CurseForge with required dependencies. CurseForge do
 
 ### QoL
 
-| Mod        | Version | What it does                                                                              | File                                 | Direct Download                                                                                         |
-|------------|---------|-------------------------------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------|
-| JEI        | 15.20.0 | Recipe browser — press R on any item to see how to craft it, U to see its uses            | `jei-1.20.1-forge-15.20.0.132.jar`   | [Download](https://cdn.modrinth.com/data/u6dRKJwZ/versions/p5mYHvjx/jei-1.20.1-forge-15.20.0.132.jar)   |
-| JourneyMap | 5.10.3  | Minimap + full-screen map — auto-maps every chunk you visit, waypoints, death markers     | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
-| AppleSkin  | 2.5.1   | Food info overlay — shows exact hunger and saturation restored by each food item on hover | `appleskin-forge-mc1.20.1-2.5.1.jar` | [Download](https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar) |
+| Mod        | Version | What it does                                                                                     | File                                 | Direct Download                                                                                         |
+|------------|---------|--------------------------------------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------|
+| JEI        | 15.20.0 | Recipe browser — press R on any item to see how to craft it, U to see its uses                   | `jei-1.20.1-forge-15.20.0.132.jar`   | [Download](https://cdn.modrinth.com/data/u6dRKJwZ/versions/p5mYHvjx/jei-1.20.1-forge-15.20.0.132.jar)   |
+| JourneyMap | 5.10.3  | Minimap + full-screen map — auto-maps every chunk you visit, waypoints, death markers            | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
+| AppleSkin  | 2.5.1   | Food info overlay — shows exact hunger and saturation restored by each food item on hover        | `appleskin-forge-mc1.20.1-2.5.1.jar` | [Download](https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar) |
+| Jade       | 11.13.2 | Block/entity info HUD — shows what you're looking at, harvest tool, mod origin, storage contents | `Jade-1.20.1-Forge-11.13.2.jar`      | [Download](https://cdn.modrinth.com/data/nvQzSEkH/versions/LecuGude/Jade-1.20.1-Forge-11.13.2.jar)      |
 
 ### Shaderpacks
 
 Shaderpacks are `.zip` files — place them in `%APPDATA%\.minecraft\shaderpacks\`, not in `mods/`. Activate in-game via **Options → Video Settings → Shader Packs**.
 
-| Shaderpack                          | Version    | File                               | Direct Download                                                                                       |
-|-------------------------------------|------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| Shaderpack | Version | File | Direct Download |
+|------------|---------|------|-----------------|
 | **Rethinking Voxels** | r0.1-beta9 | Volumetric lighting, coloured block light, sharp shadows — closest thing to ray tracing without RT hardware. **Install this one.** | `rethinking-voxels_r0.1-beta9.zip` | [Download](https://cdn.modrinth.com/data/kmwfVOoi/versions/cpD4esk9/rethinking-voxels_r0.1-beta9.zip) |
 | Complementary Reimagined | — | (Fallback option if Rethinking Voxels doesn't perform well on your hardware) | (latest `.zip`) | [Modrinth](https://modrinth.com/shader/complementary-reimagined) |
 
@@ -134,18 +146,20 @@ Shaderpacks are `.zip` files — place them in `%APPDATA%\.minecraft\shaderpacks
 
 Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
-| Batch | Mods                                                                                                  | Check                                              |
-|-------|-------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| 1     | Sophisticated Core, YUNG's API, JEI, Jade, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
-| 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                       | Items appear in creative inventory                 |
-| 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                  | "Ponder" key (W) works on Create items             |
-| 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                     | Mekanism items/blocks visible                      |
-| 5     | Applied Energistics 2                                                                                 | AE2 items visible, no dependency errors            |
-| 6     | Ars Nouveau, Apotheosis Ascended                                                                      | Spellbook items + enchanting/gear items visible    |
-| 7     | Farmer's Delight                                                                                      | Cooking items and crops visible                    |
-| 8     | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments                                     | World gen runs, no errors                          |
-| 9     | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize                                | Colony items visible, no crash                     |
-| 10    | Chunk Loaders                                                                                         | Chunks stay loaded when you go exploring, no crash |
+| Batch | Mods                                                                                                                                  | Check                                              |
+|-------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, JEI, Jade, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
+| 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                                                       | Items appear in creative inventory                 |
+| 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                  | "Ponder" key (W) works on Create items             |
+| 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                                                     | Mekanism items/blocks visible                      |
+| 5     | Applied Energistics 2                                                                                                                 | AE2 items visible, no dependency errors            |
+| 6     | Ars Nouveau, Apotheosis Ascended                                                                                                      | Spellbook items + enchanting/gear items visible    |
+| 7     | Farmer's Delight                                                                                                                      | Cooking items and crops visible                    |
+| 8     | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments                                                                     | World gen runs, no errors                          |
+| 9     | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize                                                                | Colony items visible, no crash                     |
+| 10    | Chunk Loaders                                                                                                                         | Chunks stay loaded when you go exploring, no crash |
+| 11    | Waystones, Corail Tombstone                                                                                                           | Waystones craftable, graves appear on death        |
+| 12    | The Aether, L_Ender's Cataclysm                                                                                                       | Both dimensions accessible, no crash               |
 
 After each batch: (a) no crash on startup, (b) no missing-dependency errors in Forge mods screen, (c) creative inventory shows new items.
 
@@ -244,6 +258,31 @@ Other YUNG mods don't need changes — their default spawn rates are well-balanc
 | Setting                 | Default | Recommended | Why                                                                    |
 |-------------------------|---------|-------------|------------------------------------------------------------------------|
 | `guardDamageMultiplier` | 1.0     | `1.25`      | Guards are stronger — colony defense works well, supports chill living |
+
+### Corail Tombstone — `config/tombstone-common.toml`
+
+| Setting                    | Default | Recommended | Why                                                            |
+|----------------------------|---------|-------------|----------------------------------------------------------------|
+| `grave.keepExperience`     | false   | `true`      | Keep XP on death — aligns with chill living, no grind recovery |
+| `grave.protectionDuration` | 0       | `86400`     | 24h grave protection — gives time to return without panic      |
+
+### Waystones — `config/waystones-common.toml`
+
+| Setting           | Default     | Recommended | Why                                                          |
+|-------------------|-------------|-------------|--------------------------------------------------------------|
+| `inventoryButton` | `""` (none) | `"ANY"`     | Opens waystone selection menu from inventory — smooth travel |
+| `enableCosts`     | true        | `false`     | No XP or item costs for teleporting — frictionless QoL       |
+| `enableCooldowns` | true        | `false`     | No cooldowns between warps — fast colony travel              |
+| `spawnInVillages` | `"REGULAR"` | `"REGULAR"` | Keep default — village waystones reward exploration          |
+
+### The Aether — `config/aether-common.toml`
+
+| Setting                                   | Default | Recommended | Why                                                        |
+|-------------------------------------------|---------|-------------|------------------------------------------------------------|
+| `"Use default Curios' menu"`              | true    | `true`      | Keep — we have Curios API, use its menu for accessories    |
+| `"Gives starting loot on entry"`          | true    | `true`      | Keep — Book of Lore + Golden Parachutes help new players   |
+| `"Gives player Aether Portal Frame item"` | false   | `false`     | Keep default — player builds the glowstone portal normally |
+| `"Show Patreon message"`                  | true    | `false`     | Hide Patreon nag — cleaner experience for modpack users    |
 
 > **How to apply these configs**: After first launch (which generates all config files), edit each file listed above. The file paths are relative to `config/`. Most settings are clearly labeled with comments in the TOML format. If a setting doesn't exist, ensure the game has been launched at least once to generate the file.
 
