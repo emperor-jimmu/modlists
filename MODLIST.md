@@ -155,3 +155,95 @@ After all mods are installed, add `rethinking-voxels_r0.1-beta9.zip` to `shaderp
 ## Step 5 — Launch
 
 Launch the `forge-1.20.1` profile from the Minecraft Launcher. First startup with all mods may take 2-5 minutes while Forge processes everything. Subsequent launches will be faster.
+
+---
+
+## Step 6 — Recommended Config Changes
+
+Mod config files are auto-generated in `%APPDATA%\.minecraft\config\` on first launch. Open them in any text editor. The changes below tune the pack toward the four pillars (power fantasy, smooth curve, 200h+ content, chill living).
+
+### Mekanism — `config/mekanism/config.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `fission_recipe` | default | `"standard"` | Keep default — fission is a Phase 3 fuel checkpoint |
+| `mekaDosimeterDamage` | true | `false` | Less punishing — removes radiation hearing damage for chill living |
+| `cardboardBoxBlacklist` | \[] | `["minecraft:spawner"]` | Keep spawner blacklist — prevents cheesing Apotheosis spawners |
+
+**Ore generation** — `config/mekanism/ore-generation.toml`
+
+Leave at default. Mekanism's ore gen is balanced for the digital miner phase.
+
+### MineColonies — `config/minecolonies-server.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `citizenDamageMultiplier` | 1.0 | `0.75` | Slightly easier citizen survival — keeps colony alive for chill play |
+| `builderSpeed` | 1.0 | `1.25` | Buildings complete a bit faster — less waiting, more doing |
+| `workerSpeed` | 1.0 | `1.2` | Workers produce slightly faster — reduces grind in Phase 2 |
+
+**Raid difficulty** — `config/minecolonies-raid.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `raidDifficulty` | `"MEDIUM"` | `"NORMAL"` | Keeps raids interesting but not punishing — aligned with "easy-to-standard" curve |
+| `raidFrequency` | 7 | `12` | More time between raids — supports chill living, less base disruption |
+
+### Ars Nouveau — `config/ars_nouveau-common.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `mana_boost_per_level` | 0.1 | `0.15` | Slightly faster mana scaling — smoother power fantasy curve |
+| `glyph_recharge_speed` | 1.0 | `1.25` | Spellbooks recharge faster — less downtime, more fun |
+
+### Apotheosis — `config/apotheosis/affix.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `maxUniqueGems` | 3 | `5` | More gem slots — feeds power fantasy, gives more gear customization |
+| `bossItemChance` | 0.5 | `0.6` | Slightly better boss loot — incentivizes boss hunting without trivializing it |
+
+### Create — `config/create-common.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `maxStress` | 256 | `512` | Doubled stress capacity — allows bigger Contraption builds in Phase 3 |
+| `waterWheelFlow` | 1.0 | `1.5` | A bit more early power — smoothes the Phase 1→Phase 2 transition |
+
+### YUNG's Better Dungeons — `config/yungsbetterdungeons-forge-1_20-common.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `dungeonCountPerChunk` | 0 | `1` | Generate one dungeon per chunk in eligible areas — increases exploration density |
+
+Other YUNG mods don't need changes — their default spawn rates are well-balanced.
+
+### Twilight Forest — `config/twilightforest-common.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `disableTFPortal` | false | `false` | Keep portal enabled (default) — player enters TF whenever ready |
+| `bossDamageMultiplier` | 1.0 | `1.0` | Keep default — boss difficulty is part of the progression curve |
+
+### Farmer's Delight — `config/farmersdelight-common.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `enableRichSoil` | true | `true` | Keep — rich soil accelerates crops, very chill |
+| `enableCookingPot` | true | `true` | Keep — cooking pot is the core mechanic |
+
+### Distant Horizons — `config/distant_horizons.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `maxLodRenderDistance` | 512 | `1024` | Extreme view distance — pairs with shaders for beautiful vistas |
+
+### Guard Villagers — `config/guardvillagers-common.toml`
+
+| Setting | Default | Recommended | Why |
+|---------|---------|-------------|-----|
+| `guardDamageMultiplier` | 1.0 | `1.25` | Guards are stronger — colony defense works well, supports chill living |
+
+> **How to apply these configs**: After first launch (which generates all config files), edit each file listed above. The file paths are relative to `config/`. Most settings are clearly labeled with comments in the TOML format. If a setting doesn't exist, ensure the game has been launched at least once to generate the file.
+
+> **The `config/` folder in this project**: Future overrides will be tracked here. You can copy your modified config files into this project's `config/` directory to version-control your changes.
