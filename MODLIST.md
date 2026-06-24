@@ -55,7 +55,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | YUNG's API (required by YUNG mods)          | 4.0.6   | `YungsApi-1.20-Forge-4.0.6.jar`            | [Download](https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar)            |
 | Balm (required by Waystones)                | 7.3.38  | `balm-forge-1.20.1-7.3.38-all.jar`         | [Download](https://cdn.modrinth.com/data/MBAkmtvl/versions/8rz04Kha/balm-forge-1.20.1-7.3.38-all.jar)         |
 | Lionfish API (required by Cataclysm)        | 3.0     | `lionfishapi-3.0.jar`                      | [Download](https://cdn.modrinth.com/data/FoVacERa/versions/mWkKVbyd/lionfishapi-3.0.jar)                      |
-| Curios API (required by Cataclysm & Aether) | 5.14.1  | `curios-forge-5.14.1+1.20.1.jar`           | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar)         |
+| Curios API (required by Cataclysm & Aether) | 5.14.1 | `curios-forge-5.14.1+1.20.1.jar` |
+| Fragmentum (required by Loot Journal)      | 1.3.0  | `fragmentum-forge-1.20.1-1.3.0.jar`           | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar)         |
 
 ### Core Modpack
 
@@ -95,6 +96,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 > **Waystones** requires **Balm** (listed in Dependency Layer). **L_Ender's Cataclysm** requires **Lionfish API** and **Curios API**. **The Aether** embeds Curios API — no separate download needed, but Curios must be installed separately for Cataclysm to use it.
 >
 > **The Aether** files are tagged "neoforge" on Modrinth but are fully Forge-compatible (marked for both loader types).
+>
+> **Loot Journal: Pickup Notifier** requires **Fragmentum** (listed in Dependency Layer) — a lightweight framework mod from the Obscuria Collection.
 
 ### Graphics
 
@@ -128,6 +131,7 @@ MineColonies distributes on CurseForge with required dependencies. CurseForge do
 | JourneyMap | 5.10.3  | Minimap + full-screen map — auto-maps every chunk you visit, waypoints, death markers            | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
 | AppleSkin  | 2.5.1   | Food info overlay — shows exact hunger and saturation restored by each food item on hover        | `appleskin-forge-mc1.20.1-2.5.1.jar` | [Download](https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar) |
 | Jade       | 11.13.2 | Block/entity info HUD — shows what you're looking at, harvest tool, mod origin, storage contents | `Jade-1.20.1-Forge-11.13.2.jar`      | [Download](https://cdn.modrinth.com/data/nvQzSEkH/versions/LecuGude/Jade-1.20.1-Forge-11.13.2.jar)      |
+| Loot Journal: Pickup Notifier | 6.2.1 | Customizable item pickup notifications — animations, themes, filtering, and layout options | `loot_journal-forge-1.20.1-6.2.1.jar` | [Download](https://cdn.modrinth.com/data/OJ6ZYz5L/versions/tkx0bPOi/loot_journal-forge-1.20.1-6.2.1.jar) |
 
 ### Shaderpacks
 
@@ -148,7 +152,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
 | Batch | Mods                                                                                                                                  | Check                                              |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, JEI, Jade, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
+| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, JEI, Jade, Loot Journal: Pickup Notifier, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
 | 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                                                       | Items appear in creative inventory                 |
 | 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                  | "Ponder" key (W) works on Create items             |
 | 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                                                     | Mekanism items/blocks visible                      |
@@ -272,7 +276,6 @@ Other YUNG mods don't need changes — their default spawn rates are well-balanc
 |-------------------|-------------|-------------|--------------------------------------------------------------|
 | `inventoryButton` | `""` (none) | `"ANY"`     | Opens waystone selection menu from inventory — smooth travel |
 | `enableCosts`     | true        | `false`     | No XP or item costs for teleporting — frictionless QoL       |
-| `enableCooldowns` | true        | `false`     | No cooldowns between warps — fast colony travel              |
 | `spawnInVillages` | `"REGULAR"` | `"REGULAR"` | Keep default — village waystones reward exploration          |
 
 ### The Aether — `config/aether-common.toml`
