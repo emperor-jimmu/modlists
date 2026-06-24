@@ -22,7 +22,7 @@ This modpack is built around four pillars that must coexist in every design deci
 
 ### Phase 1 — Cozy Roots (hours 0-40)
 
-The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Mekanism basic machines (metallurgic infuser, enrichment chamber). First Ars Nouveau apprentice-tier spells for utility (break, place block, self-heal).
+The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Mekanism basic machines (metallurgic infuser, enrichment chamber). First Ars Nouveau apprentice-tier spells for utility (break, place block, self-heal). Farmer's Delight + Delightful provide hearty meals. Waystones unlock fast travel between villages. Corail Tombstone makes death forgiving — keep XP, 24h grave protection.
 
 - Difficulty: forgiving
 - Focus: shelter, food, basic automation
@@ -31,7 +31,7 @@ The player eases into the world. Punch trees, build a starter home with Sophisti
 
 ### Phase 2 — Industrial Ascent (hours 40-200)
 
-This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. Ars Nouveau matures into a genuine combat spellbook — the player can handle raids and bosses without hiding behind walls. Create: Big Cannons enters the picture for colony defense and siege spectacle.
+This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. Ars Nouveau matures into a genuine combat spellbook — the player can handle raids and bosses without hiding behind walls. Create: Big Cannons enters the picture for colony defense and siege spectacle. Chunk Loaders keep factories running across dimensions. Apotheosis Ascended gems and affixes supplement Mekanism and Ars gear. The Farmer's Delight ecosystem expands with Brewin' And Chewin' (fermentation, drinks) and Delightful (new meals). YUNG's dungeon mods enrich exploration loot. Storage Delight adds kitchen furniture for base decoration.
 
 - Difficulty: standard, gradual ramp
 - Focus: deep automation scaling, logistics puzzles, resource multiplication
@@ -40,7 +40,7 @@ This is the core of the modpack. Mekanism expands into mid-tier and late-tier: d
 
 ### Phase 3 — Perpetual Ascent (hours 200+)
 
-No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shifter, antimatter, full Mekasuit. Applied Energistics 2 grows into quantum networks and spatial storage. Create reaches absurd speeds and scale — mega-factories, infinite resource loops. Top-tier Ars Nouveau spells delete bosses and provide godlike mobility. MineColonies is a self-sufficient empire across multiple biomes. The player flies freely, oneshots anything, and builds at creative-scale using survival-automated resources.
+No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shifter, antimatter, full Mekasuit. Applied Energistics 2 grows into quantum networks and spatial storage. Create reaches absurd speeds and scale — mega-factories, infinite resource loops. Top-tier Ars Nouveau spells delete bosses and provide godlike mobility. MineColonies is a self-sufficient empire across multiple biomes. The Aether, Twilight Forest, and L_Ender's Cataclysm provide combat endgame for those who want it. The player flies freely, oneshots anything, and builds at creative-scale using survival-automated resources.
 
 - Difficulty: the player is the difficulty
 - Focus: endless optimization, personal power ceiling, megabuilds, "just one more thing"
@@ -61,6 +61,13 @@ The complete mod list with versions, roles, and download links is maintained in 
 - Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other.
 - Guard Villagers scale their presence with MineColonies size. A larger colony should have proportionally more guards.
 - Sophisticated Storage is intentionally outclassed by AE2 in Phase 2 but remains useful for localized micro-storage near Create contraptions.
+- Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), Delightful (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.
+- YUNG's dungeon mods add exploration targets and loot injection points — they feed items into Apotheosis affix/gem system and reward dungeon diving in any phase.
+- The Aether, Twilight Forest, and L_Ender's Cataclysm are optional endgame combat dimensions. They don't gate or block any tech/magic progression — the player engages when they choose.
+- Waystones (fast travel) and Corail Tombstone (forgiving death) are chill-living enablers. Their configs should always be set to reduce friction, never to add it.
+- Apotheosis Ascended gems and affixes work on Mekanism armor/tools and Ars spellbooks — gear customization feeds power fantasy across both tracks.
+- Chunk Loaders are essential for Phase 2+ automation across dimensions. They keep Mekanism factories and MineColonies running when the player explores.
+- No data pack should duplicate a mod's functionality. Data packs handle targeted QoL only (e.g., anti-creeper grief, armor stand posing).
 - No mod should duplicate another mod's core purpose. If two mods provide the same capability, one must be configured lower or gated later.
 
 ---
@@ -77,7 +84,7 @@ Configuration        All non-default config overrides live in config/
 
 Mod Management       Add mods one at a time, test launch after each addition
                      Never add a mod that duplicates an existing mod's role
-                      QoL and performance mods are encouraged:
+                       QoL and performance mods are encouraged:
                         - JEI / REI (recipe viewer)
                         - Jade / WAILA (block info)
                         - Embeddium / Rubidium (performance)
@@ -85,9 +92,11 @@ Mod Management       Add mods one at a time, test launch after each addition
                         - Distant Horizons (LOD — extreme render distance)
                         - JourneyMap / Xaero's (minimap)
                         - AppleSkin (food info)
+                        - Loot Journal: Pickup Notifier (pickup notifications)
+                        - Fancy Toasts (advancement toasts)
 
 Data Packs           Stored in datapacks/, each with a README explaining purpose
-                     Worldgen tweaks and loot table modifications only
+                     Worldgen tweaks, QoL changes, and loot table modifications
                      No recipe overrides unless intentionally designed
 
 Resource Packs       Stored in resourcepacks/, optional, documented
