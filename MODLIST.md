@@ -111,11 +111,10 @@ MineColonies distributes on CurseForge with required dependencies. CurseForge do
 
 ### QoL
 
-| Mod        | Version | What it does                                                   | File                                 | Direct Download                                                                                         |
-|------------|---------|----------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------|
-| JEI        | 15.20.0 | Recipe browser — press R on any item to see how to craft it, U to see its uses | `jei-1.20.1-forge-15.20.0.132.jar`   | [Download](https://cdn.modrinth.com/data/u6dRKJwZ/versions/p5mYHvjx/jei-1.20.1-forge-15.20.0.132.jar)   |
-| Jade       | 11.13.2 | Crosshair info — look at any block/mob to see its name, health, harvest tool, and mod | `Jade-1.20.1-Forge-11.13.2.jar`      | [Download](https://cdn.modrinth.com/data/nvQzSEkH/versions/LecuGude/Jade-1.20.1-Forge-11.13.2.jar)      |
-| JourneyMap | 5.10.3  | Minimap + full-screen map — auto-maps every chunk you visit, waypoints, death markers | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
+| Mod        | Version | What it does                                                                              | File                                 | Direct Download                                                                                         |
+|------------|---------|-------------------------------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------|
+| JEI        | 15.20.0 | Recipe browser — press R on any item to see how to craft it, U to see its uses            | `jei-1.20.1-forge-15.20.0.132.jar`   | [Download](https://cdn.modrinth.com/data/u6dRKJwZ/versions/p5mYHvjx/jei-1.20.1-forge-15.20.0.132.jar)   |
+| JourneyMap | 5.10.3  | Minimap + full-screen map — auto-maps every chunk you visit, waypoints, death markers     | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
 | AppleSkin  | 2.5.1   | Food info overlay — shows exact hunger and saturation restored by each food item on hover | `appleskin-forge-mc1.20.1-2.5.1.jar` | [Download](https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar) |
 
 ### Shaderpacks
@@ -124,8 +123,8 @@ Shaderpacks are `.zip` files — place them in `%APPDATA%\.minecraft\shaderpacks
 
 | Shaderpack                          | Version    | File                               | Direct Download                                                                                       |
 |-------------------------------------|------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **Rethinking Voxels** (Recommended) | r0.1-beta9 | `rethinking-voxels_r0.1-beta9.zip` | [Download](https://cdn.modrinth.com/data/kmwfVOoi/versions/cpD4esk9/rethinking-voxels_r0.1-beta9.zip) |
-| Complementary Reimagined            | —          | (latest `.zip`)                    | [Modrinth](https://modrinth.com/shader/complementary-reimagined)                                      |
+| **Rethinking Voxels** | r0.1-beta9 | Volumetric lighting, coloured block light, sharp shadows — closest thing to ray tracing without RT hardware. **Install this one.** | `rethinking-voxels_r0.1-beta9.zip` | [Download](https://cdn.modrinth.com/data/kmwfVOoi/versions/cpD4esk9/rethinking-voxels_r0.1-beta9.zip) |
+| Complementary Reimagined | — | (Fallback option if Rethinking Voxels doesn't perform well on your hardware) | (latest `.zip`) | [Modrinth](https://modrinth.com/shader/complementary-reimagined) |
 
 > Shaderpacks are **platform-agnostic** — they work on Forge via Oculus just like they work on Fabric via Iris.
 
@@ -135,18 +134,18 @@ Shaderpacks are `.zip` files — place them in `%APPDATA%\.minecraft\shaderpacks
 
 Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
-| Batch | Mods                                                                                                  | Check                                             |
-|-------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| 1     | Sophisticated Core, YUNG's API, JEI, Jade, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears          |
-| 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                       | Items appear in creative inventory                |
-| 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                  | "Ponder" key (W) works on Create items            |
-| 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                     | Mekanism items/blocks visible                     |
-| 5     | Applied Energistics 2                                                                                 | AE2 items visible, no dependency errors           |
-| 6     | Ars Nouveau, Apotheosis Ascended                                                                      | Spellbook items + enchanting/gear items visible   |
-| 7     | Farmer's Delight                                                                                      | Cooking items and crops visible                   |
-| 8     | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments                                     | World gen runs, no errors                         |
-| 9     | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize                                | Colony items visible, no crash                    |
-| 10 | Chunk Loaders | Chunks stay loaded when you go exploring, no crash |
+| Batch | Mods                                                                                                  | Check                                              |
+|-------|-------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| 1     | Sophisticated Core, YUNG's API, JEI, Jade, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
+| 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                       | Items appear in creative inventory                 |
+| 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                  | "Ponder" key (W) works on Create items             |
+| 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                     | Mekanism items/blocks visible                      |
+| 5     | Applied Energistics 2                                                                                 | AE2 items visible, no dependency errors            |
+| 6     | Ars Nouveau, Apotheosis Ascended                                                                      | Spellbook items + enchanting/gear items visible    |
+| 7     | Farmer's Delight                                                                                      | Cooking items and crops visible                    |
+| 8     | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments                                     | World gen runs, no errors                          |
+| 9     | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize                                | Colony items visible, no crash                     |
+| 10    | Chunk Loaders                                                                                         | Chunks stay loaded when you go exploring, no crash |
 
 After each batch: (a) no crash on startup, (b) no missing-dependency errors in Forge mods screen, (c) creative inventory shows new items.
 
