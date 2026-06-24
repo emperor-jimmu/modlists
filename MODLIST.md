@@ -76,6 +76,9 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Ars Nouveau             | 4.12.7  | `ars_nouveau-1.20.1-4.12.7-all.jar`              | [Download](https://cdn.modrinth.com/data/TKB6INcv/versions/Hw2aD01e/ars_nouveau-1.20.1-4.12.7-all.jar)              |
 | Apotheosis Ascended     | 1.4.0   | `apotheosis-ascended-1.4.0.jar`                  | [Download](https://cdn.modrinth.com/data/uwCpk80h/versions/BudEWzNX/apotheosis-ascended-1.4.0.jar)                  |
 | Farmer's Delight        | 1.3.2   | `FarmersDelight-1.20.1-1.3.2.jar`                | [Download](https://cdn.modrinth.com/data/R2OftAxM/versions/CsjS7EkP/FarmersDelight-1.20.1-1.3.2.jar)                |
+| Brewin' And Chewin'     | 3.2.1   | `BrewinAndChewin-1.20.1-3.2.1.jar`               | [Download](https://cdn.modrinth.com/data/hIu9KJTT/versions/9myDFPCD/BrewinAndChewin-1.20.1-3.2.1.jar)               |
+| Delightful              | 3.8.1   | `Delightful-1.20.1-3.8.1.jar`                    | [Download](https://cdn.modrinth.com/data/JtSnhtNJ/versions/HbEQIqIu/Delightful-1.20.1-3.8.1.jar)                    |
+| Storage Delight         | 26.04.18 | `storagedelight-26.04.18+1.20-forge.jar`        | [Download](https://cdn.modrinth.com/data/LTTvOp5L/versions/qap5u6BM/storagedelight-26.04.18%2B1.20-forge.jar)       |
 | Chunk Loaders           | 1.2.9   | `chunkloaders-1.2.9-forge-mc1.20.1.jar`          | [Download](https://cdn.modrinth.com/data/t1VgucWo/versions/hfQ3VSpz/chunkloaders-1.2.9-forge-mc1.20.1.jar)          |
 | Waystones               | 14.1.20 | `waystones-forge-1.20.1-14.1.20.jar`             | [Download](https://cdn.modrinth.com/data/LOpKHB2A/versions/sKoHLGbK/waystones-forge-1.20.1-14.1.20.jar)             |
 | Corail Tombstone        | 9.1.0   | `tombstone-1.20.1-9.1.0.jar`                     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/8257477)                           |
@@ -98,6 +101,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 > **The Aether** files are tagged "neoforge" on Modrinth but are fully Forge-compatible (marked for both loader types).
 >
 > **Loot Journal: Pickup Notifier** requires **Fragmentum** (listed in Dependency Layer) — a lightweight framework mod from the Obscuria Collection.
+>
+> **Brewin' And Chewin'** requires **Farmer's Delight**. **Delightful** and **Storage Delight** have no required dependencies but are designed as Farmer's Delight companions. All three work together and with each other — Brewin' adds fermentation and drinks, Delightful adds new meals, Storage Delight adds kitchen furniture.
 
 ### Graphics
 
@@ -158,7 +163,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 | 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                                                     | Mekanism items/blocks visible                      |
 | 5     | Applied Energistics 2                                                                                                                 | AE2 items visible, no dependency errors            |
 | 6     | Ars Nouveau, Apotheosis Ascended                                                                                                      | Spellbook items + enchanting/gear items visible    |
-| 7     | Farmer's Delight                                                                                                                      | Cooking items and crops visible                    |
+| 7     | Farmer's Delight, Brewin' And Chewin', Delightful, Storage Delight                                                                     | Cooking items, keg, glass jars visible             |
 | 8     | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments                                                                     | World gen runs, no errors                          |
 | 9     | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize                                                                | Colony items visible, no crash                     |
 | 10    | Chunk Loaders                                                                                                                         | Chunks stay loaded when you go exploring, no crash |
