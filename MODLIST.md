@@ -135,6 +135,7 @@ MineColonies distributes on CurseForge with required dependencies. CurseForge do
 | JEI        | 15.20.0 | Recipe browser — press R on any item to see how to craft it, U to see its uses                   | `jei-1.20.1-forge-15.20.0.132.jar`   | [Download](https://cdn.modrinth.com/data/u6dRKJwZ/versions/p5mYHvjx/jei-1.20.1-forge-15.20.0.132.jar)   |
 | JourneyMap | 5.10.3  | Minimap + full-screen map — auto-maps every chunk you visit, waypoints, death markers            | `journeymap-1.20.1-5.10.3-forge.jar` | [Download](https://cdn.modrinth.com/data/lfHFW1mp/versions/r7FWVNCs/journeymap-1.20.1-5.10.3-forge.jar) |
 | AppleSkin  | 2.5.1   | Food info overlay — shows exact hunger and saturation restored by each food item on hover        | `appleskin-forge-mc1.20.1-2.5.1.jar` | [Download](https://cdn.modrinth.com/data/EsAfCjCV/versions/XdXDExVF/appleskin-forge-mc1.20.1-2.5.1.jar) |
+| Fancy Toasts | 1.4.7 | Fancy advancement toast popups — customizable animations, sounds, and textures (8 theme types) | `fancytoasts-forge-1.20.1-1.4.7.jar` | [Download](https://cdn.modrinth.com/data/eUziWqPC/versions/ZZLFzqe2/fancytoasts-forge-1.20.1-1.4.7.jar) |
 | Jade       | 11.13.2 | Block/entity info HUD — shows what you're looking at, harvest tool, mod origin, storage contents | `Jade-1.20.1-Forge-11.13.2.jar`      | [Download](https://cdn.modrinth.com/data/nvQzSEkH/versions/LecuGude/Jade-1.20.1-Forge-11.13.2.jar)      |
 | Loot Journal: Pickup Notifier | 6.2.1 | Customizable item pickup notifications — animations, themes, filtering, and layout options | `loot_journal-forge-1.20.1-6.2.1.jar` | [Download](https://cdn.modrinth.com/data/OJ6ZYz5L/versions/tkx0bPOi/loot_journal-forge-1.20.1-6.2.1.jar) |
 
@@ -157,7 +158,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
 | Batch | Mods                                                                                                                                  | Check                                              |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, JEI, Jade, Loot Journal: Pickup Notifier, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
+| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, JEI, Jade, Loot Journal: Pickup Notifier, Fancy Toasts, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
 | 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                                                       | Items appear in creative inventory                 |
 | 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                  | "Ponder" key (W) works on Create items             |
 | 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                                                     | Mekanism items/blocks visible                      |
