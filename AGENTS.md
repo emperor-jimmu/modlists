@@ -50,22 +50,9 @@ No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shi
 
 ## Mod Roles & Integration
 
-### Current Mod List
+### Mod List
 
-| Mod | Role | Phase Entry | Key Integrations |
-|-----|------|-------------|------------------|
-| **Create** | Core automation engine: rotational power, conveyor belts, sequenced crafting, trains | Phase 1 (basic) | Powers all mechanized crafting. Feeds AE2 with processed materials. |
-| **Create: Big Cannons** | Defense/offense set piece: siege cannons for colony defense and spectacle | Phase 2 | Gated behind Create steel + brass. Serves MineColonies defense. |
-| **MineColonies** | Living-world anchor: autonomous NPC colony that gives the world permanence | Phase 1 (hut placement) | Supplies rare resources, consumes automation excess. Guard Villagers patrol it. |
-| **Mekanism** | Personal power arc: ore multiplication, digital miner, jetpack, Mekasuit, fusion | Phase 1 (basic machines) | Primary path to flight and invincibility. Fed by Create and AE2. |
-| **Applied Energistics 2** | Storage and automation brain: ME system, autocrafting, quantum networks | Phase 2 | Connects to everything — pulls from Create outputs, feeds Mekanism inputs, stores colony resources. |
-| **Ars Nouveau** | Combat spellbook and utility magic | Phase 1 (apprentice) | Complements Mekanism gear, never replaces it. Provides early game QoL and late game combat. |
-| **Guard Villagers** | Town defense: guards patrol MineColonies perimeter | Phase 1 | Scales with colony size. Makes nights and raids manageable. |
-| **Sophisticated Storage** | Early-to-mid storage: barrels, limited networked storage | Phase 1 | Bridges punch-trees to AE2. Replaced but not invalidated by ME system. |
-| **Sophisticated Backpacks** | Mobile inventory: auto-pickup, auto-feed, feeding upgrade | Phase 1 | Scales with the player across all phases. |
-| **Oculus** | Shader loader: runs OptiFine-format shaderpacks on Forge via Iris API | Phase 1 (instant) | Requires Embeddium. Enables Rethinking Voxels, Complementary, BSL, and any Iris-compatible shaderpack. |
-| **Distant Horizons** | LOD renderer: renders terrain at extreme distances (hundreds of chunks) | Phase 1 (instant) | Pairs with Oculus shaders. Transforms the visual scale of the world. |
-| **Embeddium** | Sodium rendering engine for Forge: massive FPS boost, required by Oculus | Phase 1 (instant) | Underpins the entire graphics stack. Non-negotiable for shader performance. |
+The complete mod list with versions, roles, and download links is maintained in **[MODLIST.md](./MODLIST.md)**. That is the single source of truth for what mods are in the pack.
 
 ### Integration Rules
 

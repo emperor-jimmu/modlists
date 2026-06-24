@@ -51,6 +51,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Mod | Version | File | Direct Download |
 |-----|---------|------|-----------------|
 | Sophisticated Core | 1.3.56 | `sophisticatedcore-1.20.1-1.3.56.2042.jar` | [Download](https://cdn.modrinth.com/data/nmoqTijg/versions/XlE1jclJ/sophisticatedcore-1.20.1-1.3.56.2042.jar) |
+| YUNG's API (required by YUNG mods) | 4.0.6 | `YungsApi-1.20-Forge-4.0.6.jar` | [Download](https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar) |
 
 ### Core Modpack
 
@@ -61,12 +62,26 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Guard Villagers | 1.6.18 | `guardvillagers-1.20.1-1.6.18.jar` | [Download](https://cdn.modrinth.com/data/H1sntfo8/versions/jhuh3S9g/guardvillagers-1.20.1-1.6.18.jar) |
 | Create | 6.0.8 | `create-1.20.1-6.0.8.jar` | [Download](https://cdn.modrinth.com/data/LNytGWDc/versions/8amzvn9x/create-1.20.1-6.0.8.jar) |
 | Create: Big Cannons | 5.11.4 | `createbigcannons-5.11.4-mc.1.20.1-forge.jar` | [Download](https://cdn.modrinth.com/data/GWp4jCJj/versions/ZRgu5o3x/createbigcannons-5.11.4-mc.1.20.1-forge.jar) |
+| Create: Steam 'n' Rails | 1.7.2 | `Steam_Rails-1.7.2+forge-mc1.20.1.jar` | [Download](https://cdn.modrinth.com/data/ZzjhlDgM/versions/I6GhUCyk/Steam_Rails-1.7.2%2Bforge-mc1.20.1.jar) |
 | Mekanism | 10.4.16 | `Mekanism-1.20.1-10.4.16.80.jar` | [Download](https://cdn.modrinth.com/data/Ce6I4WUE/versions/uxe1WQp4/Mekanism-1.20.1-10.4.16.80.jar) |
 | Mekanism Generators | 10.4.16 | `MekanismGenerators-1.20.1-10.4.16.80.jar` | [Download](https://cdn.modrinth.com/data/OFVYKsAk/versions/Th4Czz4N/MekanismGenerators-1.20.1-10.4.16.80.jar) |
 | Mekanism Tools | 10.4.16 | `MekanismTools-1.20.1-10.4.16.80.jar` | [Download](https://cdn.modrinth.com/data/tqQpq1lt/versions/VzpFbUpF/MekanismTools-1.20.1-10.4.16.80.jar) |
 | Mekanism Additions | 10.4.16 | `MekanismAdditions-1.20.1-10.4.16.80.jar` | [Download](https://cdn.modrinth.com/data/a6F3uASn/versions/RFiZ24he/MekanismAdditions-1.20.1-10.4.16.80.jar) |
 | Applied Energistics 2 | 15.4.10 | `appliedenergistics2-forge-15.4.10.jar` | [Download](https://cdn.modrinth.com/data/XxWD5pD3/versions/7KVs6HMQ/appliedenergistics2-forge-15.4.10.jar) |
 | Ars Nouveau | 4.12.7 | `ars_nouveau-1.20.1-4.12.7-all.jar` | [Download](https://cdn.modrinth.com/data/TKB6INcv/versions/Hw2aD01e/ars_nouveau-1.20.1-4.12.7-all.jar) |
+| Apotheosis Ascended | 1.4.0 | `apotheosis-ascended-1.4.0.jar` | [Download](https://cdn.modrinth.com/data/uwCpk80h/versions/BudEWzNX/apotheosis-ascended-1.4.0.jar) |
+| Farmer's Delight | 1.3.2 | `FarmersDelight-1.20.1-1.3.2.jar` | [Download](https://cdn.modrinth.com/data/R2OftAxM/versions/CsjS7EkP/FarmersDelight-1.20.1-1.3.2.jar) |
+
+### World & Exploration
+
+| Mod | Version | File | Direct Download |
+|-----|---------|------|-----------------|
+| YUNG's Better Dungeons | 4.0.4 | `YungsBetterDungeons-1.20-Forge-4.0.4.jar` | [Download](https://cdn.modrinth.com/data/o1C1Dkj5/versions/kPiQ6v4q/YungsBetterDungeons-1.20-Forge-4.0.4.jar) |
+| YUNG's Better Mineshafts | 4.0.4 | `YungsBetterMineshafts-1.20-Forge-4.0.4.jar` | [Download](https://cdn.modrinth.com/data/HjmxVlSr/versions/kVO57zxB/YungsBetterMineshafts-1.20-Forge-4.0.4.jar) |
+| YUNG's Better Ocean Monuments | 3.0.4 | `YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar` | [Download](https://cdn.modrinth.com/data/3dT9sgt4/versions/SN4iZ7wf/YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar) |
+| The Twilight Forest | 4.3.2508 | `Twilight Forest - MC 1.20.1 - 4.3.2508.jar` | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?version=1.20.1&gameVersionTypeId=1) |
+
+> YUNG mods all require **YUNG's API** (listed in Dependency Layer). Install that first. The Twilight Forest is on CurseForge only — download the 1.20.1 Forge file.
 
 ### Graphics
 
@@ -120,13 +135,16 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
 | Batch | Mods | Check |
 |-------|------|-------|
-| 1 | Sophisticated Core, JEI, Jade, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears |
+| 1 | Sophisticated Core, YUNG's API, JEI, Jade, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears |
 | 2 | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers | Items appear in creative inventory |
-| 3 | Create, Create: Big Cannons | "Ponder" key (W) works on Create items |
+| 3 | Create, Create: Big Cannons, Create: Steam 'n' Rails | "Ponder" key (W) works on Create items |
 | 4 | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions | Mekanism items/blocks visible |
 | 5 | Applied Energistics 2 | AE2 items visible, no dependency errors |
-| 6 | Ars Nouveau | Spellbook items visible |
-| 7 | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize | Colony items visible, no crash |
+| 6 | Ars Nouveau, Apotheosis Ascended | Spellbook items + enchanting/gear items visible |
+| 7 | Farmer's Delight | Cooking items and crops visible |
+| 8 | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments | World gen runs, no errors |
+| 9 | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize | Colony items visible, no crash |
+| 10 | The Twilight Forest | New dimension available, portal frame opens world |
 
 After each batch: (a) no crash on startup, (b) no missing-dependency errors in Forge mods screen, (c) creative inventory shows new items.
 
