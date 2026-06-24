@@ -57,6 +57,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Lionfish API (required by Cataclysm)        | 3.0     | `lionfishapi-3.0.jar`                      | [Download](https://cdn.modrinth.com/data/FoVacERa/versions/mWkKVbyd/lionfishapi-3.0.jar)                      |
 | Curios API (required by Cataclysm & Aether) | 5.14.1 | `curios-forge-5.14.1+1.20.1.jar` |
 | Fragmentum (required by Loot Journal)      | 1.3.0  | `fragmentum-forge-1.20.1-1.3.0.jar`           | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar)         |
+| Moonlight Library (required by Supplementaries) | 2.16.34 | `moonlight-1.20-2.16.34-forge.jar`             | [Download](https://cdn.modrinth.com/data/twkfQtEc/versions/43kjMXMx/moonlight-1.20-2.16.34-forge.jar)        |
 
 ### Core Modpack
 
@@ -82,6 +83,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Chunk Loaders           | 1.2.9   | `chunkloaders-1.2.9-forge-mc1.20.1.jar`          | [Download](https://cdn.modrinth.com/data/t1VgucWo/versions/hfQ3VSpz/chunkloaders-1.2.9-forge-mc1.20.1.jar)          |
 | Waystones               | 14.1.20 | `waystones-forge-1.20.1-14.1.20.jar`             | [Download](https://cdn.modrinth.com/data/LOpKHB2A/versions/sKoHLGbK/waystones-forge-1.20.1-14.1.20.jar)             |
 | Corail Tombstone        | 9.1.0   | `tombstone-1.20.1-9.1.0.jar`                     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/8257477)                           |
+| Artifacts               | 9.5.19  | `artifacts-forge-9.5.19.jar`                    | [Download](https://cdn.modrinth.com/data/P0Mu4wcQ/versions/lrLPBSzq/artifacts-forge-9.5.19.jar)                   |
+| Supplementaries         | 3.1.43  | `supplementaries-1.20-3.1.43-forge.jar`         | [Download](https://cdn.modrinth.com/data/fFEIiSDQ/versions/S0TIJ1hU/supplementaries-1.20-3.1.43-forge.jar)        |
 
 ### World & Exploration
 
@@ -93,6 +96,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | The Twilight Forest           | 4.3.2508 | `Twilight Forest - MC 1.20.1 - 4.3.2508.jar`     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files?version=1.20.1&gameVersionTypeId=1) |
 | The Aether                    | 1.5.2    | `aether-1.20.1-1.5.2-neoforge.jar`               | [Download](https://cdn.modrinth.com/data/YhmgMVyu/versions/2411kUqF/aether-1.20.1-1.5.2-neoforge.jar)                   |
 | L_Ender's Cataclysm           | 3.31     | `L_Enders_Cataclysm-3.31.jar`                    | [Download](https://cdn.modrinth.com/data/46KJle7n/versions/C3H0azzB/L_Enders_Cataclysm-3.31.jar)                        |
+| Aquamirae                    | 6.4.0    | `aquamirae-forge-1.20.1-6.4.0.jar`              | [Download](https://cdn.modrinth.com/data/k23mNPhZ/versions/A6aIqoJZ/aquamirae-forge-1.20.1-6.4.0.jar)               |
 
 > YUNG mods all require **YUNG's API** (listed in Dependency Layer). Install that first. The Twilight Forest is on CurseForge only — download the 1.20.1 Forge file.
 >
@@ -103,6 +107,12 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 > **Loot Journal: Pickup Notifier** requires **Fragmentum** (listed in Dependency Layer) — a lightweight framework mod from the Obscuria Collection.
 >
 > **Brewin' And Chewin'** requires **Farmer's Delight**. **Delightful** and **Storage Delight** have no required dependencies but are designed as Farmer's Delight companions. All three work together and with each other — Brewin' adds fermentation and drinks, Delightful adds new meals, Storage Delight adds kitchen furniture.
+>
+> **Supplementaries** requires **Moonlight Library** (listed in Dependency Layer) — install Moonlight first. Supplementaries is highly configurable; the faucet and crank add minor automation that complements Create without overlapping.
+>
+> **Artifacts** uses **Curios API** (already in the pack). No additional dependencies.
+>
+> **Aquamirae** is standalone. No additional dependencies.
 
 ### Graphics
 
@@ -170,7 +180,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
 | Batch | Mods                                                                                                                                  | Check                                              |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, JEI, Jade, Loot Journal: Pickup Notifier, Fancy Toasts, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
+| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, Moonlight Library, JEI, Jade, Loot Journal: Pickup Notifier, Fancy Toasts, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
 | 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                                                       | Items appear in creative inventory                 |
 | 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                  | "Ponder" key (W) works on Create items             |
 | 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                                                     | Mekanism items/blocks visible                      |
@@ -182,6 +192,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 | 10    | Chunk Loaders                                                                                                                         | Chunks stay loaded when you go exploring, no crash |
 | 11    | Waystones, Corail Tombstone                                                                                                           | Waystones craftable, graves appear on death        |
 | 12    | The Aether, L_Ender's Cataclysm                                                                                                       | Both dimensions accessible, no crash               |
+| 13    | Artifacts, Aquamirae, Supplementaries                                                                                               | Artifacts in chests, Aquamirae biome generates, jars/globes craftable |
 
 After each batch: (a) no crash on startup, (b) no missing-dependency errors in Forge mods screen, (c) creative inventory shows new items.
 
