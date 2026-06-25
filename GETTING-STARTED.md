@@ -142,6 +142,7 @@ The pack doesn't have a single win condition. If you want direction beyond "do w
 | **Create**       | Press `W` on any Create block or item to open the **Ponder** system — an interactive, animated tutorial that explains each component step by step. |
 | **Ars Nouveau**  | Craft the **Worn Notebook** — it's the complete in-game guide covering all spells, glyphs, and mechanics. Also: [Ars Nouveau Guide](https://www.minecraft-guides.com/mod/ars-nouveau/) and [Ars.Guide](https://ars.guide/).                                          |
 | **Mekanism**     | Craft the **Tablet** — the in-game guide for all machines, tiers, and progression. Also: [Official Mekanism Wiki](https://wiki.aidancbrady.com/wiki/Main_Page). |
+| **Apotheosis**   | The in-game guide covers gems, affixes, enchanting, and spawners. Also: [Apotheosis Guide](https://www.minecraft-guides.com/mod/apotheosis/). |
 | **MineColonies** | The **Build Tool** includes a handbook. Also open the in-game **Help** menu for colony management guides.                                          |
 
 ## Video Tutorials
