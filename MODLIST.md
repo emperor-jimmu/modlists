@@ -100,6 +100,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Corail Tombstone        | 9.1.0    | `tombstone-1.20.1-9.1.0.jar`                     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/8257477)                           |
 | Artifacts               | 9.5.19   | `artifacts-forge-9.5.19.jar`                     | [Download](https://cdn.modrinth.com/data/P0Mu4wcQ/versions/lrLPBSzq/artifacts-forge-9.5.19.jar)                     |
 | Supplementaries         | 3.1.43   | `supplementaries-1.20-3.1.43-forge.jar`          | [Download](https://cdn.modrinth.com/data/fFEIiSDQ/versions/S0TIJ1hU/supplementaries-1.20-3.1.43-forge.jar)          |
+| Amendments              | 2.2.5    | `amendments-1.20-2.2.5.jar`                     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/amendments/files?version=1.20.1)                          |
 | Dark Paintings          | 17.0.6   | `DarkPaintings-Forge-1.20.1-17.0.6.jar`          | [Download](https://cdn.modrinth.com/data/lFGQ4Hnk/versions/IGIHVEc9/DarkPaintings-Forge-1.20.1-17.0.6.jar)          |
 | RPG Attribute System    | 3.4.1    | `rpg_attribute_system-forge-1.20.1-3.4.1.jar`    | [Download](https://cdn.modrinth.com/data/d85UTOuq/versions/w1mWQ3FK/rpg_attribute_system-forge-1.20.1-3.4.1.jar)   |
 
@@ -132,7 +133,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 >
 > **Brewin' And Chewin'** requires **Farmer's Delight**. **Delightful** and **Storage Delight** have no required dependencies but are designed as Farmer's Delight companions. All three work together and with each other — Brewin' adds fermentation and drinks, Delightful adds new meals, Storage Delight adds kitchen furniture.
 >
-> **Supplementaries** requires **Moonlight Library** (listed in Dependency Layer) — install Moonlight first. Supplementaries is highly configurable; the faucet and crank add minor automation that complements Create without overlapping.
+> **Supplementaries** requires **Moonlight Library** (listed in Dependency Layer) — install Moonlight first. Some features (cauldron mixing, wall lanterns, carpeted stairs, candle skulls, double cakes) have been moved to **Amendments** (listed in Core Modpack). The two mods complement each other; install both.
 >
 > **Artifacts** requires **Curios API**, **Architectury API**, and **Cloth Config API** (all listed in Dependency Layer).
 >
@@ -239,7 +240,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 | 10    | Chunk Loaders                                                                                                                                                                                                                                                                                                                                                                    | Chunks stay loaded when you go exploring, no crash                            |
 | 11    | Waystones, Corail Tombstone                                                                                                                                                                                                                                                                                                                                                      | Waystones craftable, graves appear on death                                   |
 | 12    | The Aether, Deep Aether, L_Ender's Cataclysm                                                                                                                                                                                                                                                                    | Aether dimension + Deep Aether biomes accessible, no crash                    |
-| 13    | Artifacts, Aquamirae, Supplementaries, Dark Paintings                                                                                                                                                                                                                                                                                                                            | Artifacts in chests, Aquamirae biome generates, new paintings in creative tab |
+| 13    | Artifacts, Aquamirae, Supplementaries, Amendments, Dark Paintings                                                                                                                                                                                                                                                                                                                | Artifacts in chests, Aquamirae biome generates, new paintings in creative tab |
 
 After each batch: (a) no crash on startup, (b) no missing-dependency errors in Forge mods screen, (c) creative inventory shows new items.
 
