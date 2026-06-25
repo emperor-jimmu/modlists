@@ -17,7 +17,7 @@
 ### Recommendation
 
 - Use `Community Shaders` as the core framework. → `02b`
-- Validate `SKSE64` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/30379>, `Address Library for SKSE Plugins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32444>, and any current page-listed prerequisites before judging later graphics layers. → `02b`
+- Validate `SKSE64` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/30379>, `Address Library for SKSE Plugins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32444>, `Luma Utility` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177961>, and any current page-listed prerequisites before judging later graphics layers. → `02b`
 - Record baseline performance before installing add-ons so later module decisions are measured against a real control point.
 
 ### Risks & Compatibility
@@ -240,9 +240,14 @@
 - Use the PGPatcher workflow in [`modlist-02a.md`](modlist-02a.md) for late-stage parallax generation rules. → `02c`
 - `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> — adds new clutter objects (pottery, silverware, books, alchemy tools, furniture) that vanilla clutter leaves out. VPBR covers the base clutter textures; SFCO adds geometry and variety. → `02c`
 - `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795> — higher-resolution diffuse/normal replacer for existing clutter. May be redundant with VPBR's own clutter coverage; evaluate side-by-side before including. → `02c`
+- **Security Overhaul note:** choose 2K texture options for all Security Overhaul SKSE mods where offered (Lock Variations, Extra Locks, PBR). Locks are examined up close during lockpicking and 2K resolves fully at that distance; 4K is wasted VRAM on such small surface areas. → `02c`
 - `Security Overhaul SKSE - Lock Variations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/58224> — replaces vanilla lock models with region-appropriate, higher-detail variants (Dwemer locks in Dwemer ruins, Nordic locks in tombs, etc.). By powerofthree. SKSE plugin — no ESP, zero compatibility impact. One of the most immediately noticeable mesh upgrades because the lockpicking minigame puts locks directly in the player's face. → `02c`
-- `Security Overhaul SKSE - Regional Locks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/70216> — companion to Lock Variations that assigns region-appropriate lock levels and types (e.g., Dwemer locks are harder to pick, bandit locks are simpler). By Kreiste. Adds gameplay-immersion depth to the visual lock overhaul without heavy scripting. → `02c`
-- `Glorious Doors of Skyrim (GDOS) SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/66642> — replaces vanilla door meshes with higher-detail versions across all architecture types. By hype1. Doors are one of the most-seen architectural elements in the game, and vanilla door meshes are notably low-poly. Mesh-only — compatible with any door texture replacer. → `02c`
+- `Security Overhaul SKSE - Regional Locks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62781> — companion to Lock Variations that assigns region-appropriate lock levels and types (e.g., Dwemer locks are harder to pick, bandit locks are simpler). By Kreiste. Adds gameplay-immersion depth to the visual lock overhaul without heavy scripting. → `02c`
+- `Security Overhaul SKSE - Lock Add-ons` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/59529> — additional lock variants covering more object types. → `02c`
+- `Security Overhaul SKSE - Some More Locks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/59961> — extends lock placement to additional containers and doors. → `02c`
+- `Security Overhaul SKSE - Extra Locks - 11 New Locks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/126119> — adds 11 new lock models for Lock Variations. By powerofthree. → `02c`
+- `Security Overhaul SKSE PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/152269> — PBR material update for Security Overhaul SKSE locks, requires Community Shaders PBR pipeline. → `02c`
+- `Glorious Doors of Skyrim (GDOS) SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32376> — replaces vanilla door meshes with higher-detail versions across all architecture types. By hype1. Doors are one of the most-seen architectural elements in the game, and vanilla door meshes are notably low-poly. Mesh-only — compatible with any door texture replacer. FOMOD: choose **2K textures** (4K is wasted VRAM on door surfaces at third-person distance); install **all door categories**; include the **Splendid Mechanized Dwemer Door** (ESL-flagged, zero plugin cost). → `02c`
 
 ### Risks & Compatibility
 
@@ -264,35 +269,54 @@
 - Build lighting as a coherent layer that supports the shader-first visual direction, stronger world scale, and third-person readability.
 - Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route.
 
-### Options
+### Decision
 
-- Heavy bespoke lighting option: strong authored changes with larger patch requirements.
-- Vanilla-plus lighting option: closer to vanilla light placement and lower conflict risk.
-- Hybrid option: stronger lighting where it matters most, with more compatibility-conscious coverage elsewhere.
-- Window-shadow and light-object companion layer: `Window Shadows Ultimate` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150494>, `iLluminous Elementals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138128>. → `02d`
-- CS-tonemapping alternative: `True Light` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135488> as a documented alternative to `Lux` for projects that want CS-native tonemapping instead of an ENB-bridged lighting overhaul. → `02d`
-- CS-native full lighting alternative: `CS Light` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138443> as a Community Shaders-native lighting replacement for projects that want a single CS-driven stack with no ENB bridge. → `02d`
-- ELFX baseline prerequisite: `Enhanced Lights and FX` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2424> as the required base for `ELFX Shadows` and the documented ENB-bridged fallback route. → `02d`
+The approach is **hybrid**: stronger authored lighting where it matters most (interiors, cities, dungeons) with compatibility-conscious coverage elsewhere. Three viable CS-friendly routes exist; the project should evaluate the first two in testing and keep the third as a fallback.
 
-### Recommendation
+#### Primary Route: Lux + Lux CS
 
-- Start with a hybrid evaluation centered on two serious Community Shaders-friendly routes:
-- `Lux` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43158> plus `Lux CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/153919> → `02d`
-- `Relighting Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8586> plus `Luminosity Lighting Overhaul - The Cathedral Concept` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16830> → `02d`
-- Keep `ELFX Shadows` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63790> as the main alternate route if `Lux` proves too patch-heavy or too moody. Note that `ELFX Shadows` hard-requires the base `Enhanced Lights and FX` mod; both must be installed together. → `02d`
-- Treat `CS Light` as the Community Shaders-native single-stack lighting alternative. If the project decides `Lux` is too patch-heavy AND `True Light` is too tonemapping-focused, `CS Light` is the canonical CS-driven interior/exterior lighting overhaul. → `02d`
-- Treat `Window Shadows RT - Updated` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111091> and `Ambiance - A Vanilla(plus) Ambient Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46383> as supporting or fallback options, not the primary first pick. → `02d`
-- Keep `Simple Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124634> as a minimalist vanilla-plus lighting alternative — adjusts ambient light and image spaces without the full patch footprint of Lux or ELFX. → `02d`
-- Treat `Window Shadows Ultimate` as the modern CS-native window-shadow companion. Unlike the older `Window Shadows RT - Updated`, it is built for Community Shaders and its features, casts real window light into interiors, and works with the chosen `Lux` or `Relighting` route without doubling their coverage. It is the documented next step beyond `Lux Orbis` for interior depth. → `02d`
-- Treat `iLluminous Elementals` as the elemental-creature and magic-glow companion. It adds light to creatures and spell effects that would otherwise feel flat in dark interiors and shadowed dungeons, which fits the grim-dark tone by making ice atronachs, flame atronachs, and similar creatures read as proper threats under the lighting choice above. → `02d`
-- Treat `True Light` as the documented CS-tonemapping alternative to `Lux + Lux CS`. If the project decides `Lux` is too patch-heavy or its ENB-bridged style is not the right fit, `True Light` is the canonical CS-native replacement. → `02d`
-- Treat `NAT.CS III` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139567> as a later weather decision, not the reason to choose an interior-lighting stack. → `02d`
+`Lux` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43158> plus `Lux CS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/153919> — the most atmospheric and best-supported lighting overhaul. Maximum compatibility patches available for almost every location mod. Trade-off: patch maintenance grows significantly as the interior and worldspace stack expands. → `02d`
+
+**Lux FOMOD:**
+
+- **Patches page**: check only the mods already in your load order (SMIM, Rugnarok, etc.). Do NOT check mods you don't have — this causes missing masters.
+- **Brightness**: keep **Standard** (default). Darker is atmospheric but can hurt readability in third-person; brighter washes out the mood.
+- **Lux Optional effects (Beams, Mists and Fogs)**: each has two options — **Effect lighting** and **Effect lighting with Particle**. Choose **Effect lighting** (no particle) for all three. The "with Particle" variants add ENB-specific particle lights that are redundant and wasteful under Community Shaders.
+- **Candle meshes**: keep **2K** (4K is wasted on candle-scale surfaces).
+- **Lux Resources plugin**: include if prompted (required by some patches).
+
+**Lux CS FOMOD:** single option — install the main plugin (ESL-flagged). No additional choices needed.
+
+**Also install** (separate downloads): `Lux Orbis` (exterior lights), `Lux Via` (road/rope lights), and the `Lux Patch Hub`. Run the Patch Hub FOMOD after your full interior/worldspace mod list is settled to generate all needed compatibility patches.
+
+#### Alternative Route: CS Light + True Light + Window Shadows Ultimate
+
+A CS-native stack with no ENB bridge, lower patch burden, and full Community Shaders integration. The three mods occupy different layers and are designed to work together:
+
+- **`CS Light`** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138443> — light-bulb placement overhaul via Light Placer. Adds non-shadow-casting bulbs to interiors. Known issue: non-shadow-casting lights can leak through walls (not occluded by geometry). → `02d`
+- **`True Light`** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135488> — CS-tonemapping overhaul. Has a built-in auto-detect patch for Window Shadows Ultimate. Known issue: inverse-square bulbs can leak through walls; author is doing a major rework. → `02d`
+- **`Window Shadows Ultimate`** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150494> — CS-native window-shadow companion (window shadow textures/effects, not light placement). Hard-requires `Ambient Templates for Lighting Mods` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/153425>. Known issue: windows can hit shadow-caster limits and flicker in certain interiors (author acknowledged, fix in progress). → `02d`
+
+**Recommended load order** (community consensus): Light Placer → Ambient Templates → CS Light → True Light → Window Shadows Ultimate → WSU Patch Hub. → `02d`
+
+#### Fallback: Relighting Skyrim + Luminosity
+
+`Relighting Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8586> plus `Luminosity Lighting Overhaul - The Cathedral Concept` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16830> — lightweight vanilla-plus approach. Lowest patch footprint. Falls back to this if both primary routes prove too costly or conflict-heavy. → `02d`
+
+#### Other Options (not primary picks)
+
+- `ELFX Shadows` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63790> — strong alternate route if Lux proves too moody or patch-heavy. Hard-requires base `Enhanced Lights and FX` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2424>. → `02d`
+- `Simple Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124634> — minimalist vanilla-plus ambient light and image-space adjuster. → `02d`
+- `Window Shadows RT - Updated` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111091> and `Ambiance - A Vanilla(plus) Ambient Lighting Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46383> — supporting/fallback, not primary picks. → `02d`
+- `iLluminous Elementals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138128> — elemental-creature and magic-glow companion, adds light to creatures and spell effects. Layer on top of the chosen lighting route. → `02d`
+- `NAT.CS III` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139567> is a weather decision, not a reason to choose an interior-lighting stack. → `02d`
 
 ### Risks & Compatibility
 
-- `Lux` can create substantial patch maintenance once the interior and worldspace stack grows. → `02d`
-- Very dark interiors can look impressive in screenshots and still feel worse in long play sessions.
+- `Lux` patch maintenance grows significantly as the interior and worldspace stack expands. → `02d`
+- Very dark interiors can look impressive in screenshots and feel worse in long play sessions.
 - Choosing lighting before weather is settled can produce a mismatched overall visual tone.
+- The CS-native stack (CS Light + True Light + WSU) relies on Light Placer non-shadow-casting bulbs — test together before locking to verify light leaks and shadow-caster limits are acceptable. → `02d`
 
 ### Acceptance Criteria
 
