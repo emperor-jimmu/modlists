@@ -1,6 +1,6 @@
 # Mod List V2 — Minecraft 1.21.1 Fabric
 
-**Status: Wave 0 (Foundation) settled — Wave 1 (Oritech tech) drafted — Waves 2+ open**
+**Status: Waves 0–3 (Foundation, Tech, Exploration, Equipment Magic & Loot) drafted — Wave 4 open**
 
 This document defines the mod set for the V2 version of this modpack, targeting **Minecraft 1.21.1** on the **Fabric** modloader. The four pillars (power fantasy, easy-to-standard difficulty, 200h+ content, chill living) remain unchanged — see [AGENTS.md](./AGENTS.md) for the full vision.
 
@@ -116,33 +116,42 @@ Adds exploration content across the Overworld, new dimensions, and overhauled st
 
 ### Dependencies
 
-| Mod           | Role                                             |
-|---------------|--------------------------------------------------|
-| YUNG's API    | Required by YUNG's Better Dungeons (Fabric)      |
-| TerraBlender  | Required by some worldgen mods (check Fabric)    |
-| Geckolib      | Required by animating mobs in dimension mods     |
+| Mod               | Version                   | Download | Role |
+|-------------------|---------------------------|----------|------|
+| Lithostitched     | 1.7.11-fabric-21.1        | [Modrinth](https://modrinth.com/mod/lithostitched) | Required by Terralith v2.6.2+ and Tectonic v3+ |
+| YUNG's API        | 1.21.1-Fabric-5.1.6       | [Modrinth](https://modrinth.com/mod/yungs-api) | Required by YUNG's Better Dungeons |
+
+TerraBlender is no longer required — Terralith v2.6.2 and Tectonic v3+ use **Lithostitched** instead.
 
 ### Overworld Worldgen
 
-| Mod       | Role                                                             |
-|-----------|------------------------------------------------------------------|
-| Terralith | Overhauled Overworld biomes — dramatically more variety           |
-| Tectonic  | Better terrain shape — deeper valleys, taller mountains, cliffs  |
+| Mod       | Version                   | Download | Role |
+|-----------|---------------------------|----------|------|
+| Terralith | 2.6.2                     | [Modrinth](https://modrinth.com/mod/terralith) | Overhauled Overworld biomes — dramatically more variety |
+| Tectonic  | 3.0.22-fabric-21.1        | [Modrinth](https://modrinth.com/mod/tectonic) | Better terrain shape — deeper valleys, taller mountains, cliffs |
 
 ### Structures & Navigation
 
-| Mod                | Role                                                  |
-|--------------------|-------------------------------------------------------|
-| YUNG's Better Dungeons | Overhauled dungeons with better loot and architecture |
-| Explorer's Compass | Craftable compass that finds any structure or biome   |
+| Mod                 | Version                   | Download | Role |
+|---------------------|---------------------------|----------|------|
+| YUNG's Better Dungeons | 1.21.1-Fabric-5.1.4    | [Modrinth](https://modrinth.com/mod/yungs-better-dungeons) | Overhauled dungeons with better loot and architecture |
+| Explorer's Compass  | 1.21.1-2.6.0-fabric       | [Modrinth](https://modrinth.com/mod/explorers-compass) | Craftable compass that finds any structure or biome |
 
 ### Dimensions
 
-| Mod                 | Role                                                                                       |
-|---------------------|--------------------------------------------------------------------------------------------|
-| The Aether          | Sky dimension — safe islands, gear progression, silver/gold dungeons with bosses           |
-| Deeper and Darker   | The "Otherside" dimension — deep dark themed, 8 new mobs, miniboss, warden gear            |
-| BetterEnd: Remastered | Complete End overhaul — 24+ biomes, new mobs, gear. Unlocked after Ender Dragon falls    |
+| Mod                 | Version                   | Download | Role |
+|---------------------|---------------------------|----------|------|
+| The Aether          | 1.21.1-1.5.11-fabric      | [Modrinth](https://modrinth.com/mod/aether) | Sky dimension — safe islands, gear progression, silver/gold dungeons with bosses |
+| Deeper and Darker   | 1.3.3-plus-b-fabric+1.21  | [Modrinth](https://modrinth.com/mod/deeperdarker) | The "Otherside" dimension — deep dark themed, 8 new mobs, miniboss, warden gear |
+| BetterEnd: Remastered | 21.0.11                 | [Modrinth](https://modrinth.com/mod/betterend) | Complete End overhaul — 24+ biomes, new mobs, gear. Unlocked after Ender Dragon falls |
+
+### Additional Libraries
+
+| Mod    | Version | Download | Required By |
+|--------|---------|----------|-------------|
+| BCLib  | 21.0.13 | [Modrinth](https://modrinth.com/mod/bclib) | BetterEnd: Remastered — core library for End dimension mods |
+
+Note: oωo lib (Wave 1) is also required by The Aether and Deeper and Darker.
 
 ### Keybindings
 
@@ -153,9 +162,61 @@ Adds exploration content across the Overworld, new dimensions, and overhauled st
 
 ---
 
-## Wave 3 (TBD — Magic Pillar)
+## Wave 3 — Equipment Magic & Loot
 
-*Ars Nouveau Fabric? Hex Casting? To be determined.*
+The magic pillar manifests through **gear**, not spellbooks. Every weapon drop can roll with random affixes, every accessory provides a unique legendary-style ability, and runes socket into gear for customization. Three layers build on each other: Simply Swords (weapons that feel special), Savaru's Affixology (Diablo-style loot), and Relics RPG (accessories that change how you play).
+
+### Core Mods
+
+| Mod                    | Version                    | Download | Role |
+|------------------------|----------------------------|----------|------|
+| Simply Swords          | 1.63.0-1.21.1              | [Modrinth](https://modrinth.com/mod/simply-swords) | 60+ unique weapons, each with a passive/activated ability |
+| Savaru's Affixology    | 2.1.6                      | [Modrinth](https://modrinth.com/mod/savaru-affixes) | Diablo-style loot: rarity tiers, random affixes, gem socketing, unidentified gear, inscriptions |
+| Relics RPG             | 1.3.0+1.21.1-fabric        | [Modrinth](https://modrinth.com/mod/relics-rpg) | Legendary-style accessories with unique passive/active abilities |
+| Runes                  | 1.2.1+1.21.1-fabric        | [Modrinth](https://modrinth.com/mod/runes) | Socketable runes for weapons/tools — swappable tactical effects |
+
+### Magic Framework (Library Layer)
+
+| Mod              | Version                    | Download | Role |
+|------------------|----------------------------|----------|------|
+| Spell Engine     | 1.9.9+1.21.1-fabric        | [Modrinth](https://modrinth.com/mod/spell-engine) | Casting framework and magic attribute API |
+| Spell Power      | 1.4.6+1.21.1-fabric        | [Modrinth](https://modrinth.com/mod/spell-power) | Magic attribute system: spell damage, crit, haste, resistance |
+| Trinkets         | 3.10.0                     | [Modrinth](https://modrinth.com/mod/trinkets) | Accessory slot API — rings, amulets, belts, gloves |
+
+### New Dependencies
+
+| Mod               | Version | Download | Required By |
+|-------------------|---------|----------|-------------|
+| Simply Tooltips   | latest  | [Modrinth](https://modrinth.com/mod/simply-tooltips) | Simply Swords — dynamic tooltips with ability descriptions |
+| Fzzy Config       | latest  | [Modrinth](https://modrinth.com/mod/fzzy-config) | Simply Swords — config library |
+| More RPG Library  | latest  | [Modrinth](https://modrinth.com/mod/more-rpg-library) | Savaru's Affixology — library mod |
+| Patchouli         | latest  | [Modrinth](https://modrinth.com/mod/patchouli) | Savaru's Affixology — in-game guidebook |
+| Bundle API        | latest  | [Modrinth](https://modrinth.com/mod/bundle-api) | Runes — rune pouch implementation |
+
+> **Note**: Architectury API (Wave 0), Fabric API (Wave 0), Cloth Config (Wave 0), oωo lib (Wave 1), and Geckolib (Wave 1) are already present and used by Wave 3 mods.
+
+### How the Layers Stack
+
+| Layer | What it adds | Progression Gate |
+|-------|-------------|------------------|
+| **Simply Swords** | 60+ unique weapons dropping from mobs and chests | Phase 1 — starts at common mob kills (~2% drop rate) |
+| **Savaru's Affixology** | Rarity tiers on all gear, random affixes, gems, unidentified gear | Phase 1 — identification accessible early (paper + feather) |
+| **Relics RPG** | Legendary accessories with unique abilities | Phase 2 — mid-tier relics from dungeon loot, epic from endgame |
+| **Runes** | Socketable runes for weapons/tools | Phase 2 — rune pouch craftable, runes found in loot |
+
+### Keybindings
+
+| Keybind                 | Default | Mod             | Notes |
+|-------------------------|---------|-----------------|-------|
+| View Unique Weapon Abilities | `Ctrl` (hold) | Simply Swords | Shows tooltip info about equipped weapon |
+| Open Rune Pouch         | TBD     | Runes           | Opens the rune pouch inventory |
+
+### Config Changes
+
+*To be populated after test launch.* Key areas to check:
+- Savaru's Affixology: verify identification recipe, XP cost for ash repair
+- Simply Swords: verify unique weapon drop rates
+- Relics RPG: verify loot injection into YUNG's and Terralith structures
 
 ---
 
@@ -189,13 +250,14 @@ Shaderpacks are `.zip` files in `shaderpacks/`, not `mods/`. Platform-agnostic (
 | Java            | 17                     | 21                               |
 | Colonies pillar | MineColonies           | Dropped (Forge-only)             |
 | Tech pillar     | Create + Mekanism      | Oritech (Fabric-native)          |
+| Magic pillar    | Ars Nouveau, Apotheosis, Iron's Spells | Equipment magic: Simply Swords + Savaru's Affixology + Relics RPG + Runes |
 | Terrain mod     | Lithosphere considered | Skipped — keep worldgen flexible |
 
 ---
 
 ## Next Up
 
-Wave 1 (Oritech tech pillar) drafted. Next decisions:
-- Wave 2 — Magic pillar (Ars Nouveau Fabric? Hex Casting?)
-- Wave 3 — Exploration pillar (The Aether? YUNG's dungeons?)
-- Data packs and config tuning
+Waves 0–3 drafted, version pins populated. Next:
+- Wave 4 — Food, Farming & Comfort (Farmer's Delight Fabric, Delightful, Brewin' And Chewin')
+- Data packs and config tuning for all waves
+- Cross-wave loot integration testing

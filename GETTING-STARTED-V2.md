@@ -446,9 +446,152 @@ Perfect for finding Aether portal ruins, new Terralith biomes, villages, or any 
 
 ---
 
-## Wave 3 (TBD — Magic Pillar)
+## Wave 3 — Equipment Magic & Loot
 
-*To be determined after Wave 2.*
+This wave is the magic pillar — but it manifests **through gear**, not spellbooks. You won't be casting fireballs or teleporting. Instead, every weapon that drops can have random affixes, every accessory provides a unique legendary-style ability, and runes socket into gear for tactical customization.
+
+The three layers:
+1. **Simply Swords** — 60+ unique weapons, each with its own passive or activated ability
+2. **Savaru's Affixology** — Diablo-style rarity tiers, random affixes, gem socketing, unidentified gear
+3. **Relics RPG** — Legendary accessories that change how you play
+
+### Install
+
+See [MODLIST-V2.md](./MODLIST-V2.md#wave-3--equipment-magic-loot) for the full mod list with download links.
+
+> **Wave 3 mods are content mods, not library mods.** They change what you find in chests and on mobs, not how the game runs. Install all of them at once.
+
+### How to Use
+
+#### Simply Swords
+
+The simplest mod in the wave — **go fight things**. Simply Swords weapons drop from mobs (hostile and passive, ~2% drop rate) and appear in loot chests. When you find one:
+
+1. Pick it up — it's likely better than your current weapon
+2. Hover over it and hold `Ctrl` to see the weapon's ability description (if Simply Tooltips is installed)
+3. Use it — each weapon has a unique feel
+
+There are 6 weapon categories and 60+ unique weapons:
+
+| Category | Example Weapons | Playstyle |
+|----------|----------------|-----------|
+| Heavy weapons | Greathammer, Greatsword, Claymore | Slow, high damage, knockback |
+| Medium weapons | Longsword, Katana, Twinblade | Balanced speed and damage |
+| Light weapons | Rapier, Dagger, Sai, Glaive | Fast attacks with debuffs |
+| Polearms | Spear, Halberd, Pike | Reach advantage, throwable |
+| Ranged | Chakram, Boomerang | Enchantable throwables |
+| Special | Scythe, Soulrender, Lichblade | Unique mechanics (healing, lifesteal, summons) |
+
+Some weapons are "unique" (fixed name, fixed ability) — these are the special ones to hunt for. Others are "runic" (procedurally generated with random abilities).
+
+> **Tip**: Make a weapon rack or item frame display for your collection of unique weapons. They're worth showing off.
+
+#### Savaru's Affixology
+
+This is the core loot chase. Every piece of equipment (weapons, tools, armor) can roll with:
+
+**Rarity tiers**: Common → Uncommon → Rare → Epic → Legendary
+
+Each tier adds more affix slots:
+
+| Rarity | Affixes | What to expect |
+|--------|---------|----------------|
+| Common | 0 | Base stats only |
+| Uncommon | 1 | One small bonus (+1 attack speed, +2% damage) |
+| Rare | 2 | Two bonuses, higher values |
+| Epic | 3 | Three strong bonuses |
+| Legendary | 4 | Maximum bonuses — very rare |
+
+**Affixes** are random stat bonuses that roll when gear drops or is crafted. Examples: bonus damage, attack speed, movement speed, crit chance, spell power, resistance, magic find.
+
+**Gems** are items you can socket into gear for extra effects:
+- Find gem items in loot
+- Socket into equipment at an **Engraving Anvil** (crafted from blaze rod + echo shard or ender eye)
+- Gems have quality tiers: Normal → Flawless → Unprecedented
+- Unprecedented quality adds a new random affix!
+- Flawless adds an extra base gem effect
+
+**Unidentified gear**:
+- Some items drop as "Unidentified" — you can't use them until you identify them
+- Craft an **Identification Ticket** (paper + feather) and use it at an anvil to reveal the item
+- This adds excitement to every drop — you never know if it'll roll Epic
+
+**Mastery system**:
+- Use gear → gain mastery in that equipment type
+- Higher mastery → unlocked bonuses and better potential affixes
+- Check mastery progress via the Affixology Guidebook
+
+**Deconstruction Stone**:
+- Salvage gear you don't want to extract its affixes
+- Learn which affixes exist and expand your knowledge
+- Craft at a crafting table (check the guidebook for recipe)
+
+**Ash repair**:
+- Heavily damaged gear can be repaired with Ash — costs 50 levels for +10% durability
+- Alternative to anvil repair when you need to keep a good item alive
+
+**Reference**: Press `R` (EMI) on any Affixology item, or read the **Patchouli guidebook** that comes with the mod.
+
+#### Relics RPG
+
+Relics are **legendary accessories** that go in your Trinkets slots (ring, amulet, belt, gloves, and more). Each relic has a unique ability:
+
+| Relic | Ability | Rarity |
+|-------|---------|--------|
+| Monkey Talisman | Double jump | Common |
+| Holy Water | Cleanses negative effects | Common |
+| Lucky Coin | Increases luck/loot quality | Uncommon |
+| Captain's Hook | Pulls entities toward you | Uncommon |
+| Etienne's Enigma | Creates a decoy | Uncommon |
+| Sacred Wardstone | Damage absorption shield | Rare |
+| Ankh | Cursed gear immunity | Rare |
+| and more... | (check EMI or Relics guide) | Various |
+
+**Where to find relics**:
+- **Common relics**: drop from common mobs and basic chests
+- **Uncommon relics**: dungeon chests, better loot tables
+- **Rare relics**: YUNG's dungeons, Aether gold dungeons
+- **Epic relics**: endgame content (Deeper and Darker, Aether silver dungeons, BetterEnd)
+
+Each relic you find is a permanent power upgrade — they stack with weapon affixes and gems.
+
+#### Runes
+
+Runes are **socketable items** that you slot into weapons and tools to add enchantment-like effects:
+
+| Rune | Effect | 
+|------|--------|
+| Fire Rune | Sets targets on fire |
+| Ice Rune | Slows targets |
+| Lightning Rune | Chain lightning damage |
+| Poison Rune | Poisons targets |
+| Life Rune | Lifesteal on hit |
+| and more... | Check EMI for full list |
+
+**How to use runes**:
+1. Find runes in loot or craft them at a **Rune Altar**
+2. Use a **Rune Pouch** (craftable, holds all your runes) — enabled by Bundle API
+3. Apply runes to weapons at the Rune Altar
+4. Runes are swappable — you can change them between fights
+
+### Keybindings
+
+| Keybind | Default | Mod | Notes |
+|---------|---------|-----|-------|
+| View Weapon Abilities | `Ctrl` (hold) | Simply Swords / Simply Tooltips | Hold while hovering over a weapon |
+| Open Rune Pouch | TBD | Runes | Check Controls after installing |
+
+### Progression Through Wave 3
+
+| Phase | What you'll be doing |
+|-------|---------------------|
+| **Phase 1** (first few hours after install) | Kill mobs and open chests → find your first Simply Swords unique weapon and first Relic. Identify an Uncommon Affixology item. Socket a basic gem. |
+| **Phase 2** (mid-game) | Hunt for Rare and Epic gear. Build a collection of relics. Experiment with rune combos on your favorite weapons. Use the Deconstruction Stone to learn affixes. |
+| **Phase 3** (endgame) | Chase Legendary-tier affixes. Socket Unprecedented gems. Complete your relic collection. Max out mastery on your primary weapon type. |
+
+### Chill Note
+
+Wave 3 adds **chase content** — there's always a better weapon to find, a better relic to discover, a better affix to roll. But nothing in this wave makes the game harder or more punishing. The same gear you use for fighting works for exploring. The same graves protect your items. You can ignore the whole loot system and just build — none of this content comes to you uninvited.
 
 ---
 
