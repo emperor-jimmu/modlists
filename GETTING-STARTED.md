@@ -140,7 +140,7 @@ The pack doesn't have a single win condition. If you want direction beyond "do w
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | **JEI**          | Press `R` on any item to see recipes, `U` to see uses. The recipe browser is your primary tool for learning every mod in the pack.                 |
 | **Create**       | Press `W` on any Create block or item to open the **Ponder** system — an interactive, animated tutorial that explains each component step by step. |
-| **Ars Nouveau**  | Craft the **Worn Notebook** — it's the complete in-game guide covering all spells, glyphs, and mechanics.                                          |
+| **Ars Nouveau**  | Craft the **Worn Notebook** — it's the complete in-game guide covering all spells, glyphs, and mechanics. Also: [Ars Nouveau Guide](https://www.minecraft-guides.com/mod/ars-nouveau/) and [Ars.Guide](https://ars.guide/).                                          |
 | **Mekanism**     | Craft the **Tablet** — the in-game guide for all machines, tiers, and progression. Also: [Official Mekanism Wiki](https://wiki.aidancbrady.com/wiki/Main_Page). |
 | **MineColonies** | The **Build Tool** includes a handbook. Also open the in-game **Help** menu for colony management guides.                                          |
 

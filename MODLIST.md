@@ -245,27 +245,31 @@ All MineColonies settings live in `minecolonies-server.toml` under two categorie
 
 **Category: gameplay**
 
-| Setting                | Default | Recommended | Why                                                                  |
-|------------------------|---------|-------------|----------------------------------------------------------------------|
-| `initialcitizenamount` | 4       | `6`         | Start with 6 citizens instead of 4 — gentler colony setup            |
-| `foodmodifier`         | 1.0     | `0.75`      | Citizens eat 25% less — reduces food grind, supports chill play      |
-| `diseasemodifier`      | 5       | `10`        | Diseases half as common — less colony micromanagement                 |
+| Setting                | Default | Recommended | Why                                                             |
+|------------------------|---------|-------------|-----------------------------------------------------------------|
+| `initialcitizenamount` | 4       | `5`         | Start with 5 citizens instead of 4 — gentler colony setup       |
+| `foodmodifier`         | 1.0     | `0.8`       | Citizens eat 25% less — reduces food grind, supports chill play |
+| `diseasemodifier`      | 5       | `10`        | Diseases half as common — less colony micromanagement           |
 
 **Category: combat**
 
-| Setting                             | Default | Recommended | Why                                                                               |
-|-------------------------------------|---------|-------------|-----------------------------------------------------------------------------------|
-| `guardDamageMultiplier`             | 1.0     | `1.25`      | Guards deal more damage — colony defense is stronger, supports power fantasy      |
-| `guardhealthmult`                   | 1.0     | `1.25`      | Guards are tougher — less replacement grind, better colony survival               |
-| `barbarianhordedifficulty`          | 5       | `3`         | Easier raids (lower = easier) — aligns with easy-to-standard difficulty curve     |
-| `averagenumberofnightsbetweenraids` | 14      | `21`        | More time between raids — supports chill living, less base disruption             |
+| Setting                             | Default | Recommended | Why                                                                           |
+|-------------------------------------|---------|-------------|-------------------------------------------------------------------------------|
+| `guardDamageMultiplier`             | 1.0     | `1.25`      | Guards deal more damage — colony defense is stronger, supports power fantasy  |
+| `guardhealthmult`                   | 1.0     | `1.25`      | Guards are tougher — less replacement grind, better colony survival           |
+| `barbarianhordedifficulty`          | 5       | `3`         | Easier raids (lower = easier) — aligns with easy-to-standard difficulty curve |
+| `averagenumberofnightsbetweenraids` | 14      | `28`        | More time between raids — supports chill living, less base disruption         |
 
-### Ars Nouveau — `config/ars_nouveau-common.toml`
+### Ars Nouveau — `config/ars_nouveau-server.toml`
 
-| Setting                | Default | Recommended | Why                                                         |
-|------------------------|---------|-------------|-------------------------------------------------------------|
-| `mana_boost_per_level` | 0.1     | `0.15`      | Slightly faster mana scaling — smoother power fantasy curve |
-| `glyph_recharge_speed` | 1.0     | `1.25`      | Spellbooks recharge faster — less downtime, more fun        |
+Ars Nouveau server settings live in `ars_nouveau-server.toml` under the `mana` category.
+
+| Setting      | Default | Recommended | Why                                                                    |
+|--------------|---------|-------------|------------------------------------------------------------------------|
+| `baseMax`    | 100     | `150`       | More starting max mana — smoother early-game spellcasting              |
+| `baseRegen`  | 5       | `3`         | Faster base mana regen (seconds) — less downtime, more casting         |
+| `manaBoost`  | 25      | `35`        | More mana per Mana Boost level — supports power fantasy scaling        |
+| `glyphRegen` | 0.33    | `0.5`       | Faster regen bonus per glyph — rewards learning more spells            |
 
 ### Apotheosis — `config/apotheosis/affix.toml`
 
