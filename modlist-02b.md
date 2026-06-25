@@ -112,6 +112,26 @@
 - Water, wetness, and terrain depth improve without obvious artifacting.
 - The final module set has a measured performance cost the list is willing to carry.
 
+## Parallax Framework Dependencies → `02b Community Shaders`
+
+### Core Idea
+
+- Auto Parallax and Complex Parallax Materials form the parallax rendering layer that bridges Community Shaders' parallax support with mesh and texture mods downstream.
+
+### Recommendation
+
+- Install `Auto Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79473> and `Complex Parallax Materials` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95134> as infrastructure before adding parallax-enabled textures or meshes. CPM hard-depends on Auto Parallax. Install only after the texture stack is mostly chosen but before PGPatcher runs. → `02b`
+
+### Risks & Compatibility
+
+- Without Auto Parallax, Complex Parallax Materials will not function — they are not alternatives. Both must be present.
+- Installing too early means regenerating parallax data after texture changes; install after the main texture stack is locked.
+
+### Acceptance Criteria
+
+- Auto Parallax applies parallax offsets consistently across all installed parallax-enabled meshes without visual artifacts.
+- Complex Parallax Materials database loads correctly and supplies material parameters to supported meshes.
+
 ## Physically Based Rendering (PBR) Support → `02b Community Shaders`
 
 ### Core Idea
@@ -209,8 +229,7 @@
 
 ### Recommendation
 
-- Use the hybrid option.
-- Keep `Static Mesh Improvement Mod - SMIM` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/659> as the baseline. → `02c`
+- Add `Static Mesh Improvement Mod - SMIM` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/659> as the baseline. → `02b`
 - Add `Unofficial Material Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21027> after SMIM (hard-requires SMIM; corrects material records used by `Community Shaders` PBR pipeline, 21k endorsements). → `02c`
 - Treat `High Poly Project` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12029> as optional and only keep it if the extra geometry earns its conflict cost. → `02c`
 - Use `Simplicity of Snow` v0.26 - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56235> — main file only (32.8 MB). Skip the optional `Parallax Meshes` (author disclaims responsibility and PGPatcher handles parallax properly). Skip `Northpoint patch` and `Epic Windhelm Expansion Fix` (mods not in the list). Place early if the final texture and mountain stack needs snow-consistency support. → `02c`
@@ -218,7 +237,6 @@
 - Add `Stockades of Skyrim 3D` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43227> as a 3D stockade mesh and texture replacer. Soft prerequisite for `FYX - 3D Stockades` — install first and let FYX overwrite. → `02c`
 - Add `FYX - 3D Stockades` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65104> as a mesh replacement for stockade walls and barricades, adding 3D geometry where vanilla uses flat 2D textures. Improves readability and visual depth at typical third-person distance. Soft-requires `Stockades of Skyrim 3D` above as the base mesh layer. → `02c`
 - Add `Flame VFX Edit` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/109414> as a mesh-only fire spell effect improvement that is compatible with Community Shaders. → `02c`
-- Add `Auto Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79473> or `Complex Parallax Materials` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95134> only after the texture stack is mostly chosen. → `02c`
 - Use the PGPatcher workflow in [`modlist-02a.md`](modlist-02a.md) for late-stage parallax generation rules. → `02c`
 - `Snazzy Furniture and Clutter Overhaul (SFCO)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2414> — adds new clutter objects (pottery, silverware, books, alchemy tools, furniture) that vanilla clutter leaves out. VPBR covers the base clutter textures; SFCO adds geometry and variety. → `02c`
 - `RUSTIC CLUTTER COLLECTION - Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/5795> — higher-resolution diffuse/normal replacer for existing clutter. May be redundant with VPBR's own clutter coverage; evaluate side-by-side before including. → `02c`
