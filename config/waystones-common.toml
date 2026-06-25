@@ -2,7 +2,7 @@
 	#Enable the inventory warp button - opens the waystone selection menu so you
 	#can warp to any activated waystone from anywhere. Smooths exploration in
 	#all phases and colony travel is much more convenient.
-	inventoryButton = "ANY"
+	inventoryButton = "any"
 
 [teleports]
 	#Disable all XP costs and cooldowns for teleport convenience.

@@ -82,7 +82,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Mekanism Additions      | 10.4.16  | `MekanismAdditions-1.20.1-10.4.16.80.jar`        | [Download](https://cdn.modrinth.com/data/a6F3uASn/versions/RFiZ24he/MekanismAdditions-1.20.1-10.4.16.80.jar)        |
 | Applied Energistics 2   | 15.4.10  | `appliedenergistics2-forge-15.4.10.jar`          | [Download](https://cdn.modrinth.com/data/XxWD5pD3/versions/7KVs6HMQ/appliedenergistics2-forge-15.4.10.jar)          |
 | Ars Nouveau             | 4.12.7   | `ars_nouveau-1.20.1-4.12.7-all.jar`              | [Download](https://cdn.modrinth.com/data/TKB6INcv/versions/Hw2aD01e/ars_nouveau-1.20.1-4.12.7-all.jar)              |
-| Ars Elemental           | 0.6.7.9  | `Ars_Elemental 1.20.1-0.6.7.9.jar`               | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ars-elemental/files?version=1.20.1)                        |
+| Ars Elemental           | 0.6.7.9  | `Ars_Elemental 1.20.1-0.6.7.9.jar`               | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ars-elemental/files?version=1.20.1)                       |
 | Apotheosis              | 7.4.8    | `Apotheosis-1.20.1-7.4.8.jar`                    | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/apotheosis/files?version=1.20.1)                          |
 | Apotheotic Additions    | 2.2.2    | `ApotheoticAdditions-1.20.1-V2.2.2.jar`          | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/apotheotic-additions/files?version=1.20.1)                |
 | Farmer's Delight        | 1.3.2    | `FarmersDelight-1.20.1-1.3.2.jar`                | [Download](https://cdn.modrinth.com/data/R2OftAxM/versions/CsjS7EkP/FarmersDelight-1.20.1-1.3.2.jar)                |
@@ -209,7 +209,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 | 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                                                                                                                                                                                                                                                             | "Ponder" key (W) works on Create items                                        |
 | 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions, Just Enough Mekanism Multiblocks                                                                                                                                                                                                                                                                              | Mekanism items/blocks visible, multiblock JEI pages work                      |
 | 5     | Applied Energistics 2                                                                                                                                                                                                                                                                                                                                                            | AE2 items visible, no dependency errors                                       |
-| 6     | Ars Nouveau, Ars Elemental, Apotheosis, Apotheotic Additions                                                                                                                                                                                                                                                                                                                       | Spellbook items + elemental glyphs, Apotheosis gems and affixes visible       |
+| 6     | Ars Nouveau, Ars Elemental, Apotheosis, Apotheotic Additions                                                                                                                                                                                                                                                                                                                     | Spellbook items + elemental glyphs, Apotheosis gems and affixes visible       |
 | 7     | Farmer's Delight, Brewin' And Chewin', Delightful, Storage Delight                                                                                                                                                                                                                                                                                                               | Cooking items, keg, glass jars visible                                        |
 | 8     | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments                                                                                                                                                                                                                                                                                                                | World gen runs, no errors                                                     |
 | 9     | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize                                                                                                                                                                                                                                                                                                           | Colony items visible, no crash                                                |
@@ -289,46 +289,34 @@ Apotheosis generates its config files on first launch in `config/apotheosis/`. D
 | `maxStress`      | 256     | `512`       | Doubled stress capacity — allows bigger Contraption builds in Phase 3 |
 | `waterWheelFlow` | 1.0     | `1.5`       | A bit more early power — smoothes the Phase 1→Phase 2 transition      |
 
-### YUNG's Better Dungeons — `config/yungsbetterdungeons-forge-1_20-common.toml`
-
-| Setting                | Default | Recommended | Why                                                                              |
-|------------------------|---------|-------------|----------------------------------------------------------------------------------|
-| `dungeonCountPerChunk` | 0       | `1`         | Generate one dungeon per chunk in eligible areas — increases exploration density |
-
-Other YUNG mods don't need changes — their default spawn rates are well-balanced.
-
-### Twilight Forest — `config/twilightforest-common.toml`
-
-| Setting                | Default | Recommended | Why                                                             |
-|------------------------|---------|-------------|-----------------------------------------------------------------|
-| `disableTFPortal`      | false   | `false`     | Keep portal enabled (default) — player enters TF whenever ready |
-| `bossDamageMultiplier` | 1.0     | `1.0`       | Keep default — boss difficulty is part of the progression curve |
-
-### Farmer's Delight — `config/farmersdelight-common.toml`
-
-| Setting            | Default | Recommended | Why                                            |
-|--------------------|---------|-------------|------------------------------------------------|
-| `enableRichSoil`   | true    | `true`      | Keep — rich soil accelerates crops, very chill |
-| `enableCookingPot` | true    | `true`      | Keep — cooking pot is the core mechanic        |
-
 ### Distant Horizons — `config/distant_horizons.toml`
 
-| Setting                | Default | Recommended | Why                                                             |
-|------------------------|---------|-------------|-----------------------------------------------------------------|
-| `maxLodRenderDistance` | 512     | `1024`      | Extreme view distance — pairs with shaders for beautiful vistas |
+> ⚠️ This mod uses a **custom runtime-generated config format** (not standard Forge TOML). No default config file exists in the source repo (GitLab: `distant-horizons-team/distant-horizons`). The config is automatically created on first launch. The setting below is commonly recommended but its exact key name cannot be verified from source — adjust in-game via the mod's GUI.
+
+| Setting             | In-Game Default | Recommended | Why                                                             |
+|---------------------|-----------------|-------------|-----------------------------------------------------------------|
+| LOD Render Distance | 512             | `1024`      | Extreme view distance — pairs with shaders for beautiful vistas |
+
+Prefer configuring Distant Horizons via its in-game settings GUI (accessible from the mod list or keybind) rather than editing the TOML file directly.
 
 ### Guard Villagers — `config/guardvillagers-common.toml`
 
-| Setting                 | Default | Recommended | Why                                                                    |
-|-------------------------|---------|-------------|------------------------------------------------------------------------|
-| `guardDamageMultiplier` | 1.0     | `1.25`      | Guards are stronger — colony defense works well, supports chill living |
+Verified from mod source (branch `1.20.1`, `GuardConfig.java`). Uses human-readable quoted config keys.
+
+| Setting          | Default | Recommended | Why                                                                |
+|------------------|---------|-------------|--------------------------------------------------------------------|
+| `"Guard health"` | 20.0    | `25.0`      | Slightly tougher guards — colony defense is stronger, chill living |
 
 ### Corail Tombstone — `config/tombstone-common.toml`
+
+Verified — the existing config in this project matches documented mod behavior.
 
 | Setting                    | Default | Recommended | Why                                                            |
 |----------------------------|---------|-------------|----------------------------------------------------------------|
 | `grave.keepExperience`     | false   | `true`      | Keep XP on death — aligns with chill living, no grind recovery |
 | `grave.protectionDuration` | 0       | `86400`     | 24h grave protection — gives time to return without panic      |
+
+> Existing config was verified against the mod's CurseForge documentation. Both keys are correct. No changes needed.
 
 ### Waystones — `config/waystones-common.toml`
 
@@ -347,6 +335,6 @@ Other YUNG mods don't need changes — their default spawn rates are well-balanc
 | `"Gives player Aether Portal Frame item"` | false   | `false`     | Keep default — player builds the glowstone portal normally |
 | `"Show Patreon message"`                  | true    | `false`     | Hide Patreon nag — cleaner experience for modpack users    |
 
-> **How to apply these configs**: After first launch (which generates all config files), edit each file listed above. The file paths are relative to `config/`. Most settings are clearly labeled with comments in the TOML format. If a setting doesn't exist, ensure the game has been launched at least once to generate the file.
+> **How to apply these configs**: Config files with correct keys and modpack-aligned values are now tracked in `config/` in this project. For mods not yet tracked, launch the game once to generate the file, then edit accordingly. Most settings are clearly labeled with comments in the TOML format. If a setting doesn't exist, ensure the game has been launched at least once to generate the file.
 
 > **The `config/` folder in this project**: Future overrides will be tracked here. You can copy your modified config files into this project's `config/` directory to version-control your changes.

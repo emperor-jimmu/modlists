@@ -1,0 +1,111 @@
+[raids and illagers]
+	#Illagers In Raids Attack Animals?
+	"Illagers in raids attack animals?" = true
+	#Witches Attack Villagers?
+	"Witches attack villagers?" = true
+	#This will make Illusioners get involved in raids
+	"Have Illusioners in raids?" = false
+	#This makes Illagers run from polar bears
+	"Have Illagers have some common sense?" = true
+
+[mob ai in general]
+	#Guards will attack all hostiles with this option, when set to false guards will only attack zombies and illagers.
+	"Guards attack all mobs?" = true
+	#Hostiles attack guards, by default only illagers and zombies will attack guards
+	"All mobs attack guards" = false
+	#Guards won't attack mobs in this list at all
+	"Mob Blacklist" = ["minecraft:villager", "minecraft:iron_golem", "minecraft:wandering_trader", "guardvillagers:guard", "minecraft:creeper", "alexsmobs:komodo_dragon", "minecraft:enderman"]
+	#Guards will additionally attack mobs ids put in this list
+	"Mob Whitelist" = []
+
+[villager stuff]
+	#Profession Whitelist for healing ai for clerics
+	"Profession Whitelist for healing ai for clerics" = ["cleric"]
+	#Profession Whitelist for golem repair ai
+	"Profession Whitelist for golem repair ai" = ["armorer", "weaponsmith"]
+	#Profession Whitelist for guard weaponry repair ai
+	"Profession Whitelist for guard weaponry repair ai" = ["weaponsmith", "armorer"]
+	#How many times a cleric can heal a guard in one day
+	"How many times a cleric can heal a guard in one day" = 3
+	#How many times a smith villager can heal a golem in one day
+	"How many times a smith villager can heal a golem in one day" = 3
+	#How many times a villager can heal a guard's equipment in one day
+	"How many times a villager can heal a guard's equipment in one day" = 3
+	#Allow armorers and weaponsmiths repair guard items when down below half durability?
+	"Allow armorers and weaponsmiths repair guard items when down below half durability?" = true
+	#This will make it so villagers will only be converted into guards if the player has hero of the village
+	"Make it so players have to have hero of the village to convert villagers into guards?" = false
+	#Have it so blacksmiths heal golems under 60 health?
+	"Have it so blacksmiths heal golems under 60 health?" = true
+	#Have it so clerics heal guards and players with hero of the village?
+	"Have it so clerics heal guards and players with hero of the village?" = true
+	#This makes villagers run from polar bears
+	"Have Villagers have some common sense?" = true
+	#Professions that can be converted into guards
+	"Profession Whitelist for guard conversion" = ["nitwit", "none"]
+
+[golem stuff]
+	#Allow Iron Golems to float on water?
+	"Allow Iron Golems to float on water?" = false
+
+[guard stuff]
+	#How many guards should spawn in a village?
+	"How many guards should spawn in a village?" = 6
+	#Allow guards to sink temporarily to fight mobs that are under water?
+	"Allow guards to sink temporarily to fight mobs that are under water?" = true
+	#Depth value for guards fighting underwater mobs
+	"Depth value for guards fighting underwater mobs" = 5
+	#Mobs that guards actively protect when they get targeted
+	"Mobs that guards actively protect when they get targeted" = ["minecraft:villager", "guardvillagers:guard", "minecraft:iron_golem"]
+	#Mobs in this list also won't get hurt by a guard's arrow if the config option to disable guard arrows hurting villagers is enabled.
+	"Mobs that guards actively protect when they get hurt" = ["minecraft:villager", "guardvillagers:guard", "minecraft:iron_golem"]
+	#Structure pieces that spawn guards
+	"Structure pieces that spawn guards" = ["minecraft:village/common/iron_golem"]
+	#Guard crossbow attack radius
+	"Guard crossbow attack radius" = 8.0
+	#Allow guards to convert to zombie villagers upon being killed by zombies?
+	"Allow guards to convert to zombie villagers upon being killed by zombies?" = true
+	#Allow the player to right click on bells to mass order guards to follow them?
+	"Allow the player to right click on bells to mass order guards to follow them?" = true
+	#Have guards patrol the village regularly?
+	"Have guards patrol the village regularly?" = false
+	#Chance to drop equipment
+	"Chance to drop equipment" = 100.0
+	#This makes Guards run from polar bears
+	"Have Guards have some common sense?" = false
+	#This lets Guards open doors.
+	"Have Guards open doors?" = true
+	#This will make guards raise their shields all the time
+	"Have Guards raise their shield all the time?" = false
+	#Chance for guards to lose durability
+	"Chance for guards to lose durability" = 1.0
+	#Allow guards to teleport if following the player
+	"Allow guards to teleport if following the player" = true
+	#This makes guards form a phalanx
+	"Have guards form a phalanx?" = true
+	#Have guards attempt to avoid firing into other friendlies?
+	"Have guards attempt to avoid firing into other friendlies?" = true
+	#Angle of how ranged guards determine if a friendly mob is in front of them before firing
+	"Angle of how ranged guards determine if a friendly mob is in front of them before firing" = -0.9
+	#This is the range in which the guards will be aggroed to mobs that are attacking villagers.
+	"Range" = 50.0
+	#How much health a guard regenerates.
+	"Guard health regeneration amount" = 1.0
+	#Allow guard arrows to damage villagers, iron golems, or other guards?
+	"Allow guard arrows to damage villagers, iron golems, or other guards?" = true
+	#Allow players to give guards stuff only if they have the hero of the village effect?
+	"Allow players to give guards stuff only if they have the hero of the village effect?" = false
+	#Allow players to set guard patrol points only if they have hero of the village
+	"Allow players to set guard patrol points only if they have hero of the village" = false
+	#Minimum reputation requirement for guards to give you access to their inventories
+	"Minimum reputation requirement for guards to give you access to their inventories" = 15
+	#Guard health
+	"Guard health" = 20.0
+	#Guard speed
+	"Guard speed" = 0.5
+	#Guard follow range
+	"Guard follow range" = 20.0
+	#Have guards only follow the player if they have hero of the village?
+	"Have guards only follow the player if they have hero of the village?" = true
+	#How low of a reputation of a player should have to be instantly aggroed upon by guards and golems?
+	"How low of a reputation of a player should have to be instantly aggroed upon by guards and golems?" = -100
