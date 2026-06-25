@@ -12,25 +12,31 @@
 ### Options
 
 - `Pandora Behaviour Engine Plus` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/133232> → `03a`
+- `Universal Behaviour Runtime - Auto Skeleton Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176724> — SKSE plugin by Monitor221hz that patches humanoid and creature skeleton behaviour at runtime, removing the need for behaviour-engine-level skeleton patching. Hard-requires `Address Library for SKSE Plugins` (already in the foundation layer) and `XPMSSE` (or any skeleton mod). Pandora lists this as required when using XPMSSE or other skeleton mods. 2,320 endorsements, v1.0.4. → `03a`
+- `A-Pose Bug Fix - Universal Behavior Runtime` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168903> — SKSE plugin by Monitor221hz that intercepts A-pose-causing errors at runtime and adds out-of-the-box LE animation/behavior backward compatibility via just-in-time HKX conversion. Required by Pandora only if you need LE mod backward compatibility, but also provides general A-pose protection that is valuable in any modlist. Hard-requires `Address Library for SKSE Plugins` (already in the foundation layer). 5,094 endorsements, v1.1.0-a. → `03a`
 - Legacy context only: `FNIS` and `Nemesis` format support matters because later animation packs may still ship with those assumptions, but they are not the preferred generator choice for `Elder Wilds`. → `03a`
 
 ### Recommendation
 
 - Use `Pandora Behaviour Engine Plus` as the single behavior-generation owner for the list. → `03a`
-- Register it as a dedicated MO2 executable and keep generated files in a separate output mod such as `Pandora Output`. → `03a`
+- Install `Universal Behaviour Runtime - Auto Skeleton Patch` as a hard companion to Pandora — it is explicitly required when using `XPMSSE`, which is the locked skeleton baseline. Do NOT tick the Pandora XPMSSE patch checkbox; the runtime patch handles skeleton behaviour more stably. → `03a`
+- Install `A-Pose Bug Fix - Universal Behavior Runtime` as a strongly recommended companion. Even if the list avoids LE-native animation mods, the runtime A-pose interception protects against animation-loading edge cases that can otherwise cause character freezes. → `03a`
+- Register Pandora as a dedicated MO2 executable and keep generated files in a separate output mod such as `Pandora Output`. → `03a`
 - Validate the current install guide and requirements tab during install instead of carrying forward older setup advice.
 
 ### Risks & Compatibility
 
 - Leaving old generated output active or mixing generator workflows makes later debugging much harder.
+- Skipping `Auto Skeleton Patch` while using `XPMSSE` causes skeleton blending issues: hand-not-moving-while-casting-in-motion, broken block animation while strafing, wonky bow animations, character freezing, and CTDs. → `03a`
 - `Pandora` supporting older mod formats does not guarantee every legacy setup will be conflict-free without testing. → `03a`
 - Installing major locomotion, combat, or creature packs before the generator baseline is proven blurs whether the framework or the content is actually failing.
 
 ### Acceptance Criteria
 
-- `Pandora Behaviour Engine Plus` is installed and registered cleanly in `Mod Organizer 2`. → `03a`
+- `Pandora Behaviour Engine Plus`, `Universal Behaviour Runtime - Auto Skeleton Patch`, and `A-Pose Bug Fix - Universal Behavior Runtime` are all installed cleanly in `Mod Organizer 2`. → `03a`
 - A baseline patch pass completes without framework-level errors.
 - Generated behavior output is isolated in a dedicated MO2 output mod.
+- The Pandora XPMSSE patch checkbox is deliberately left unticked because `Auto Skeleton Patch` handles skeleton behaviour at runtime. → `03a`
 
 ## Skeleton And Behavior Prerequisites → `03a Framework`
 
