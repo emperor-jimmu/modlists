@@ -40,10 +40,21 @@
 - [x] Determined complete Wave 0 mod set
 - [x] Documented in MODLIST-V2.md
 
-### Wave 1 — Tech (Oritech)
-- [x] Selected Oritech as tech pillar (Fabric-native 1.21.1)
-- [x] Added Mythic Metals, Clutter, Alloy Forgery as cross-processing compat
-- [x] Version pins: Oritech 1.2.8
+### Wave 1 — Tech (Tech Reborn)
+- [x] Replaced Oritech with Tech Reborn 5.11.19
+- [x] Added Reborn Core as new dependency
+- [x] Kept Mythic Metals, Clutter, Alloy Forgery as cross-processing compat
+- [x] Removed owo lib, Athena, Geckolib from Wave 1 deps (moved to Wave 2 where needed)
+- [x] Updated all integration references across design docs
+
+### Wave 5 — Tech Expansion
+- [x] Design doc written: `docs/superpowers/specs/wave-5-tech-expansion.md`
+- [x] Version pins confirmed via Modrinth API
+  - Logistics: Automation 0.7.4+mc1.21.1.fabric
+  - Powah ReFabric 5.1.0
+- [x] Updated MODLIST-V2.md with full Wave 5 section
+- [x] Updated GETTING-STARTED-V2.md with Wave 5 tutorial
+- [x] Updated all Oritech references to Tech Reborn across all docs
 
 ### AGENTS.md
 - [x] Updated vision pillars to include RPG-style levels/skills
@@ -52,17 +63,17 @@
 
 ## Pending
 
-### Wave 5 — TBD
-- Combat & Mob Variety? Performance polish? QoL pass?
+### QoL / Performance Polish (merge into Wave 0)
+- ModernFix, FerriteCore, ImmediatelyFast, Mouse Tweaks, etc.
 
 ### Config Overrides
 - All waves: identify mods needing config changes
 - Document each override in config/ directory
 
 ### Testing
-- Test launch with Waves 0–4
+- Test launch with Waves 0–5
 - Verify no mod conflicts
-- Cross-wave integration testing (Oritech + Let's Do automated farming, loot in Terralith biomes, crop spawn rates)
+- Cross-wave integration testing (Tech Reborn + Logistics + Powah, Let's Do automated farming, loot in Terralith biomes)
 - Config tuning per mod
 
 ### Data Packs

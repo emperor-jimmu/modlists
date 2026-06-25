@@ -263,105 +263,91 @@ No interaction needed. It makes glass, sandstone, and bookshelves render with co
 
 ---
 
-## Wave 1 — Tech (Oritech)
+## Wave 1 — Tech (Tech Reborn)
 
-This wave adds Oritech — a Fabric-native tech mod with animated multiblock machines, ore processing, pipes, drones, lasers, and cybernetic augmentation. Also adds Mythic Metals (~20 new ores), Clutter (biomes + ores), and Alloy Forgery.
+This wave adds **Tech Reborn** — a Fabric-native tech mod with comprehensive ore processing, power generation, machines, tools, armor, and late-game quantum technology. Also adds Mythic Metals (~20 new ores), Clutter (biomes + ores), and Alloy Forgery.
 
 ### Install
 
-See [MODLIST-V2.md](./MODLIST-V2.md#wave-1--tech-oritech) for the mod list. Install all Wave 1 mods at once — they're designed to work together.
+See [MODLIST-V2.md](./MODLIST-V2.md#wave-1--tech-tech-reborn) for the mod list. Install all Wave 1 mods at once — they're designed to work together.
 
 ### Keybindings
 
-Oritech uses default keybinds that you can check in Options → Controls → Key Binds. Oritech entries appear under the `Oritech` category after installation.
+Tech Reborn uses default keybinds that you can check in Options → Controls → Key Binds. Tech Reborn entries appear under the `TechReborn` category after installation.
 
-### How to Use — Oritech
+### How to Use — Tech Reborn
 
-Oritech uses an **energy (RF) system**. Machines need power to run. You build generators, connect machines with pipes, and automate processing chains.
+Tech Reborn uses an **energy (RF/EU) system**. Machines need power to run. You build generators, connect machines with cables, and automate processing chains.
 
 #### Step 1: Start with basic machines
 
 Craft your first machines using the **EMI recipe browser** (`R` key). The early progression is:
 
-1. **Manual generation** — Craft a **basic generator** (burns coal/charcoal) and a **basic furnace** to start processing
-2. **Powered Furnace** — Animated multiblock furnace, your first real machine
-3. **Pulverizer / Crusher** — Doubles ore output (1 ore → 2 dust, smelt dust → 2 ingots)
-4. **Energy pipes** — Connect generators to machines
+1. **Manual generation** — Craft a **coal generator** (burns coal/charcoal) and a **basic furnace** to start
+2. **Extractor** — Get rubber from sticky resin (needed for cables). Find sticky resin on trees
+3. **Compressor** — Compresses materials into plates, circuits, and machine components
+4. **Cables** — Connect generators to machines (tin cable starts, copper for mid-game)
+5. **Macerator / Pulverizer** — Doubles ore output (1 ore → 2 dust, smelt dust → 2 ingots)
 
 #### Step 2: Build a processing chain
 
-Oritech has **multiple ore processing chains**. The simplest:
+Tech Reborn has **multiple ore processing chains**. The simplest:
 
-- Mine ore → Pulverizer → dust → Furnace → 2 ingots
+- Mine ore → Macerator → 2 dust → Electric Furnace → 2 ingots
 
-Later chains add chemical processing, alloys, and higher yield multipliers.
+Later chains add chemical processing, industrial grinders, electrolyzers, and higher yield multipliers (up to 5x with full chemical processing).
 
 #### Step 3: Expand power generation
 
-| Generator           | Fuel                            | Notes                                  |
-|---------------------|---------------------------------|----------------------------------------|
-| Basic Generator     | Coal, charcoal, flammable items | Starting generator                     |
-| Biofuel Generator   | Farmed biofuel                  | Renewable — pair with farming machines |
-| Oil-based generator | Oil (find oil wells in-world)   | Higher output, requires exploration    |
-| Solar Panel         | Sunlight                        | Passive, works best in deserts         |
-| Big Solar Panel     | Sunlight                        | Late-game passive power                |
+| Generator | Fuel | Notes |
+|-----------|------|-------|
+| Coal Generator | Coal, charcoal | Starting generator |
+| Solar Panel | Sunlight | Passive — works best in deserts, day only |
+| Thermal Generator | Lava | Mid-game — reliable, requires lava transport |
+| Gas Generator | Hydrogen | Mid-game — produced from electrolysis |
+| Fusion Reactor | Deuterium + Tritium | Endgame — massive output, endgame material |
 
-Find **oil wells** generating in the world — they're surface-visible. Build a pump over them for automated oil collection.
+#### Step 4: Automate with cables
 
-#### Step 4: Automate with pipes
+Tech Reborn cables have tiered power capacity:
 
-Oritech has **1 tier of each pipe type** — no confusing tier upgrades:
+| Cable | Max Transfer | Notes |
+|-------|-------------|-------|
+| Tin Cable | Low (32 EU/t) | Get rubber from sticky resin first |
+| Copper Cable | Medium (128 EU/t) | Standard mid-game cable |
+| Gold Cable | High (512 EU/t) | Late-game power transport |
+| Superconductor | Unlimited | Endgame — very expensive |
 
-| Pipe Type   | Color  | Transports                    |
-|-------------|--------|-------------------------------|
-| Item pipe   | Orange | Items between inventories     |
-| Fluid pipe  | Blue   | Fluids between tanks/machines |
-| Energy pipe | Yellow | RF power between machines     |
+Use a **wrench** to configure connections (shift-right-click to disconnect a face).
 
-Pipes auto-connect to adjacent machines. Use a **wrench** to configure connections (shift-right-click to disconnect a face).
+#### Step 5: Industrial machines
 
-#### Step 5: Advanced machines
+As you progress, unlock larger, faster versions:
 
-As you progress, unlock:
-
-- **Automated farm machines** — plant, grow, and harvest crops automatically
-- **Laser arm** — mines blocks in a radius (Oritech's version of a digital miner/quarry)
-- **Drone** — fly items between distant bases
-- **Machine addon blocks** — upgrades that attach to machines (speed, efficiency, yield)
+- **Industrial machines** (Industrial Grinder, Industrial Electrolyzer, Industrial Sawmill) — process faster and unlock new recipes
+- **Chemical Reactor** — advanced material synthesis
+- **Implosion Compressor** — creates high-tier materials (needed for quantum armor)
+- **Matter Fabricator** — generates UU-Matter for material replication
+- **Quantum Armor / Quantum Suit** — endgame personal protection with flight, fire resistance, full invulnerability
 
 #### Step 6: Late game
 
-- **Bedrock Extractor** — produces renewable ores from resource nodes found in the world
-- **Cybernetic augments** — permanent player upgrades (faster mining, more health, jump boost, etc.)
-- **Particle Accelerator** — endgame processing, highest-tier materials
+- **Fusion Reactor** — self-sustaining power (requires deuterium/tritium)
+- **Quantum Suit** — creative-flight, extreme damage resistance, environmental protection
+- **Ultimate machines** — max-speed processing (industrial blast furnace, industrial centrifuge)
+- **Quantum Chest / Quantum Tank** — near-infinite single-item storage and fluid storage
 
-#### Key Design Philosophy
+#### Key Tips
 
-- **No roadblocks**: Multiple ways to get most materials (e.g., plastic from farming OR oil)
-- **Multiple processing chains**: Experiment with different machine combinations
-- **Colorable machines**: Right-click with a dye to change machine colour
-- **Use EMI**: Press `R` on any Oritech item to see its recipe and what it produces
+- **Sticky Resin**: Find on tree trunks in worldgen — necessary for rubber. Extract in an Extractor
+- **Circuits**: Start with basic circuits → advance to electronic circuits → advanced circuits
+- **Rubber**: Smelt resin into rubber. Used in all cable crafting
+- **Use EMI**: Press `R` on any Tech Reborn item to see its recipe
+- **Guide Book**: Craft the Tech Reborn guide book for in-game documentation
 
-### How to Use — Supporting Mods
+#### Alloy Forgery#### Alloy Forgery
 
-#### Mythic Metals
-
-Adds ~20 new ores (adamantite, mythril, palladium, stormyx, etc.) spawning in the Overworld, Nether, and End. Mine them, process through Oritech machines, and craft into tools/armor. Check EMI (`R`) for recipes. Each metal has unique properties — some auto-repair, some mine faster, some have special abilities.
-
-**Where ores spawn**:
-
-- Most ores: Overworld at various Y-levels
-- Some: Nether (e.g., banglum, mythril)
-- Starrite: The End
-- Some are biome-specific (aquarium in oceans, prometheum in warm biomes)
-
-#### Clutter
-
-Adds two new biomes (**Redwood Forest**, **Lupine Fields**), new mobs (capybaras, seahorses, manta rays), and ores (silver, sulphur, onyx). Silver and sulphur ores can be processed through Oritech machines.
-
-#### Alloy Forgery
-
-Adds a multiblock **Alloy Forge** for combining two metals into alloys. Build the structure, place the controller block, and use it to create alloys that Oritech and Mythic Metals need. Check EMI for alloy recipes.
+Adds a multiblock **Alloy Forge** for combining two metals into alloys. Build the structure, place the controller block, and use it to create alloys that Tech Reborn and Mythic Metals need. Check EMI for alloy recipes.
 
 ---
 
@@ -426,7 +412,7 @@ Adds a new dimension called the **Otherside**, related to the Deep Dark. Unlike 
 - **Sculk transmitter** — an Elytra upgrade
 - New warden-themed armor and tools (very powerful — Phase 3 gear)
 
-> This is naturally gated behind killing the Warden, which requires full Netherite or Oritech endgame gear. By the time you get here, you'll be strong enough.
+> This is naturally gated behind killing the Warden, which requires full Netherite or Tech Reborn endgame gear. By the time you get here, you'll be strong enough.
 
 #### BetterEnd: Remastered
 
@@ -490,7 +476,7 @@ Open the skill tree GUI (check Controls → Skill Tree for the keybind). You'll 
 | Magic | Spell power, mana regen (synergy with Wave 3 gear) |
 | Defense | Armor toughness, damage resistance |
 
-Each point you spend gives a tangible stat increase. The skill tree works alongside every other wave — Oritech crafting earns XP, exploration rewards XP, cooking gives XP. It's the universal progression layer.
+Each point you spend gives a tangible stat increase. The skill tree works alongside every other wave — Tech Reborn crafting earns XP, exploration rewards XP, cooking gives XP. It's the universal progression layer.
 
 > **Pro tip**: The skill tree is fully configurable. If a skill branch doesn't fit your playstyle, you can respec (check the config). Every action feeds progression, so there's no wrong way to play.
 
@@ -752,12 +738,85 @@ Candlelight is about **presentation**. It adds:
 | Phase                     | What you'll be doing                                                                                                                             |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Phase 1** (first hours) | Find wild crops, craft cutting board + cooking pot, make first meals. Discover goats in mountains                                                |
-| **Phase 2** (mid-game)    | Build an oven (Bakery), brewing station + barrels (Brewery), tea kettle (HerbalBrews). Start aging drinks. Automate crop harvesting with Oritech |
+| **Phase 2** (mid-game)    | Build an oven (Bakery), brewing station + barrels (Brewery), tea kettle (HerbalBrews). Start aging drinks. Automate crop harvesting with Tech Reborn |
 | **Phase 3** (endgame)     | Full kitchen with all stations. Stocked pantry, wine cellar, tea garden. Cook feasts for the spectacle. Buff yourself before major content       |
 
 ### Chill Note
 
 Wave 4 is **entirely optional**. You never need to cook a single meal. But if you do, the food is better than vanilla, the farming is satisfying, and the decoration makes your base feel lived-in. No mechanics remove your ability to just eat steak — this is all upside, no pressure.
+
+---
+
+## Wave 5 — Tech Expansion
+
+This wave builds on Tech Reborn (Wave 1) with two complementary mods: **Logistics: Automation** for smart item routing and autocrafting, and **Powah ReFabric** for additional power generation.
+
+### Install
+
+See [MODLIST-V2.md](./MODLIST-V2.md#wave-5--tech-expansion) for the full mod list.
+
+### How to Use
+
+#### Logistics: Automation — Smart Pipes & Autocrafting
+
+Logistics adds a BuildCraft-inspired pipe system with three tiers:
+
+**Tier 1 — Mechanical Pipes (early game):**
+- **Stone Transport Pipe**: Slow, basic item transport
+- **Copper Transport Pipe**: Faster backbone for item movement
+- **Item Extractor Pipe**: Pulls items from adjacent inventories (requires power)
+- **Item Merger Pipe**: Combines multiple inputs into one output
+- **Golden Transport Pipe**: Speeds up when powered by redstone
+- **Item Void Pipe**: Deletes unwanted items (overflow disposal)
+
+Craft these pipes, connect them between chests and machines, and items flow through with **visible in-pipe animation** — you can see each item moving.
+
+**Tier 2 — Smart Pipes (mid-game):**
+- **Item Filter Pipe**: Route specific items to specific destinations
+- **Item Insertion Pipe**: Prefer inventories with available space
+
+**Tier 3 — Network Logistics (late-game):**
+- **Basic Logistics Pipe**: Network backbone — accepts and delivers addressed items
+- **Provider Logistics Pipe**: Advertises adjacent inventory contents to the network
+- **Requester Logistics Pipe**: Requests specific items from the network
+- **Supplier Logistics Pipe**: Keeps a target inventory stocked
+- **Crafting Logistics Pipe**: Automates crafting — requests ingredients from the network, delivers the crafted result
+- **Satellite Logistics Pipe**: Remote output point for items across long distances
+- **Chassis Pipes (MkI-V)**: Modular pipes with swappable function modules
+
+**Modules** slot into Chassis Pipes — provider, extractor, supplier, crafter, quicksort, and more.
+
+**Power**: Logistics adds three engines (Redstone Engine, Stirling Engine, Creative Engine) that use RF (compatible with Tech Reborn's energy system).
+
+**Machines:**
+- **Macerator**: Grinds ores into dust (alternative to Tech Reborn's macerator)
+- **Kiln**: RF-powered electric furnace
+- **Laser Quarry**: Automated 16x16 mining with energy-scaled speed
+
+#### Powah ReFabric — Power Generation
+
+Powah adds additional power generation options to supplement Tech Reborn's energy grid:
+
+| Generator | Fuel | Power Output | Notes |
+|-----------|------|-------------|-------|
+| Solar Panel (6 tiers) | Sunlight | Increases per tier | Best in deserts, day only |
+| Thermoelectric | Heat differential | Medium | Place between hot/cold blocks |
+| Lightning Generator | Lightning strikes | Burst | Build high for more strikes |
+| Player Activator | Player movement | Low | Passive — free energy while you're near |
+
+**Storage & Transport:**
+- **Batteries** (8 tiers) — portable energy storage
+- **Battery Box** — stationary energy storage for your base
+- **Energy Cables** (6 tiers: Tin, Copper, Gold, Energized Copper, Energized Gold, Energized Crystal Matrix) — compatible with Tech Reborn's RF system
+- **Minecart with Battery Box** — mobile energy transport
+
+### Progression Through Wave 5
+
+| Phase | What you'll be doing |
+|-------|---------------------|
+| **Phase 1** | Early Tech Reborn (coal gen, macerator, cables). First mechanical pipes from Logistics. Small Powah solar panel supplements power |
+| **Phase 2** | Smart pipes and network logistics — provider/requester/crafting pipes automate your base. Mid-tier Powah generators. Tech Reborn industrial machines |
+| **Phase 3** | Full autocrafting network — Logistics crafting pipes + satellite pipes across multiple bases. Powah max-tier solar + lightning generators. Tech Reborn fusion reactor + quantum armor |
 
 ---
 

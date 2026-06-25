@@ -64,10 +64,10 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 
 ## Integration Points
 
-### With Oritech (Wave 1)
+### With Tech Reborn (Wave 1)
 
-- Oritech machines can process materials used in Simply Swords and Savaru's Affixology recipes
-- Oritech's digital miner (laser arm) accelerates gem/ore collection for Affixology
+- Tech Reborn machines can process materials used in Simply Swords and Savaru's Affixology recipes
+- Tech Reborn's digital miner (laser arm) accelerates gem/ore collection for Affixology
 - No direct machine<->magic crossover — they coexist as parallel advancement tracks
 
 ### With Exploration (Wave 2)

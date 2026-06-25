@@ -16,7 +16,7 @@ The player finds new crops growing wild (tomatoes, cucumbers, corn, lettuce, tea
 
 ### Mid-game (Phase 2, hours 40–80)
 
-The player has a full kitchen: Farm & Charm stove, Bakery oven, Brewery barrels aging wine, HerbalBrews tea kettle. Oritech automated farming keeps crops flowing. Cooked meals give significant buffs — resistance, speed, jump boost — that make exploration safer. The dining table has place settings from Candlelight.
+The player has a full kitchen: Farm & Charm stove, Bakery oven, Brewery barrels aging wine, HerbalBrews tea kettle. Tech Reborn automated farming keeps crops flowing. Cooked meals give significant buffs — resistance, speed, jump boost — that make exploration safer. The dining table has place settings from Candlelight.
 
 ### Late-game (Phase 3, hours 150+)
 
@@ -38,14 +38,14 @@ The player throws feasts: group meals from Candlelight that feed multiple player
 |-----|---------------|---------------------|
 | Cloth Config | Wave 0 | Required by Farm & Charm |
 | Architectury API | Wave 0 | Required by all Let's Do mods |
-| Oritech | Wave 1 | Automated farming for Let's Do crops — planters, harvesters, water |
+| Tech Reborn | Wave 1 | Automated farming for Let's Do crops — planters, harvesters, water |
 
 ## Integration Points
 
-### With Oritech (Wave 1)
+### With Tech Reborn (Wave 1)
 
-- Oritech automated farm machines can grow and harvest Let's Do crops
-- Let's Do cooking machines (stove, oven, brewing station) can be fed ingredients via Oritech item pipes
+- Tech Reborn automated farm machines can grow and harvest Let's Do crops
+- Let's Do cooking machines (stove, oven, brewing station) can be fed ingredients via Tech Reborn item pipes
 - Farm output stored in Sophisticated Storage barrels → feeds AE2-like storage if added later
 
 ### With Equipment Magic (Wave 3)
@@ -70,7 +70,7 @@ The player throws feasts: group meals from Candlelight that feed multiple player
 ### Phase 2 (hours 40–150) — Full Kitchen
 
 - Build a stove, oven, brewing station, tea kettle
-- Automate crop farming with Oritech machines
+- Automate crop farming with Tech Reborn machines
 - Unlock drink recipes with buffs — use them before boss fights or long expeditions
 - Decorate with plates, glasses, tablecloths from Candlelight
 

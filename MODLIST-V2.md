@@ -1,6 +1,6 @@
 # Mod List V2 — Minecraft 1.21.1 Fabric
 
-**Status: Waves 0–4 (Foundation, Tech, Exploration, Equipment Magic, Food & Farming) drafted — Wave 5 open**
+**Status: Waves 0–5 (Foundation, Tech, Exploration, Equipment Magic & RPG, Food, Tech Expansion) drafted**
 
 This document defines the mod set for the V2 version of this modpack, targeting **Minecraft 1.21.1** on the **Fabric** modloader. The four pillars (power fantasy, easy-to-standard difficulty, 200h+ content, chill living) remain unchanged — see [AGENTS.md](./AGENTS.md) for the full vision.
 
@@ -66,33 +66,29 @@ This wave makes the game run well, look nice, and feel forgiving. No major gamep
 
 ---
 
-## Wave 1 — Tech (Oritech)
+## Wave 1 — Tech (Tech Reborn)
 
-**Version**: Oritech 1.2.8 (rearth, Jun 21, 2026)
-
-The first major gameplay pillar. Oritech is a Fabric-native tech mod with animated multiblock machines, ore processing chains, electric tools/armor, pipes, drones, laser mining, and cybernetic augmentation.
+The first major gameplay pillar. Tech Reborn is a Fabric-native tech mod with comprehensive ore processing, power generation, machines, tools, armor, and late-game quantum technology. Originally a classic tech mod for Fabric, actively maintained with 37M+ total downloads.
 
 ### Dependencies
 
-| Mod                          | Role                                   |
-|------------------------------|----------------------------------------|
-| oωo lib                      | GUI library required by Oritech        |
-| Athena                       | Connected textures library             |
-| Geckolib                     | Animation library for models           |
+| Mod          | Role                                           |
+|--------------|------------------------------------------------|
+| Reborn Core  | Core library required by Tech Reborn           |
 
 ### Core Mod
 
-| Mod     | Role                                                                                                                              |
-|---------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Oritech | Tech pillar — ore processing chains, automated farming, pipes, electric tools/armor, drones, lasers, cybernetics, particle accelerators |
+| Mod         | Role                                                                                              |
+|-------------|---------------------------------------------------------------------------------------------------|
+| Tech Reborn | Tech pillar — ore processing (pulverizer, industrial grinder, chemical reactor), power gen, machines, tools, armor, quantum armor/suit, implosion compressor, fusion reactor |
 
 ### Supporting Mods (Cross-Processing Compat)
 
-These mods add ores and materials that Oritech machines can process. No machine overlap — they just expand the content pool.
+These mods add ores and materials that Tech Reborn machines can process. No machine overlap — they just expand the content pool.
 
 | Mod           | Role                                                                      |
 |---------------|---------------------------------------------------------------------------|
-| Mythic Metals | ~20 new ores/metal types with tools & armor — feeds Oritech processing     |
+| Mythic Metals | ~20 new ores/metal types with tools & armor — feeds Tech Reborn processing |
 | Clutter       | Biomes (Redwood Forest, Lupine Fields), mobs, silver/sulphur ores, decor   |
 | Alloy Forgery | Multiblock alloy furnace — complementary processing method                 |
 
@@ -100,13 +96,15 @@ These mods add ores and materials that Oritech machines can process. No machine 
 
 | Keybind | Default | Mod       | Notes                            |
 |---------|---------|-----------|----------------------------------|
-| Open Oritech Guide | TBD | Oritech | Opens in-game documentation     |
-| Toggle Drone View | TBD | Oritech | View from drone perspective     |
+| Open Tech Reborn Guide | TBD | Tech Reborn | Opens in-game documentation     |
 | Open Backpack | `B`     | Sophisticated Backpacks | Already set in Wave 0 |
 
 ### Config Changes
 
-*To be populated after test launch.* Oritech has Mod Menu integration for in-game config.
+*To be populated after test launch.* Tech Reborn has extensive config via Mod Menu. Key areas:
+- Verify ore generation doesn't clash with Terralith/Tectonic/Mythic Metals
+- Adjust Tech Reborn power values to match progression curve
+- Consider disabling Logistics: Automation's macerator if Tech Reborn's is preferred
 
 ---
 
@@ -150,8 +148,8 @@ TerraBlender is no longer required — Terralith v2.6.2 and Tectonic v3+ use **L
 | Mod    | Version | Download | Required By |
 |--------|---------|----------|-------------|
 | BCLib  | 21.0.13 | [Modrinth](https://modrinth.com/mod/bclib) | BetterEnd: Remastered — core library for End dimension mods |
-
-Note: oωo lib (Wave 1) is also required by The Aether and Deeper and Darker.
+| owo lib | latest | [Modrinth](https://modrinth.com/mod/owo-lib) | The Aether, Deeper and Darker — GUI library |
+| Geckolib | latest | [Modrinth](https://modrinth.com/mod/geckolib) | The Aether — animation library for models |
 
 ### Keybindings
 
@@ -197,7 +195,7 @@ Above all of it: a **Skill Tree** that gives every action meaning. Earn XP from 
 | Patchouli         | latest  | [Modrinth](https://modrinth.com/mod/patchouli) | Savaru's Affixology — in-game guidebook |
 | Bundle API        | latest  | [Modrinth](https://modrinth.com/mod/bundle-api) | Runes — rune pouch implementation |
 
-> **Note**: Architectury API (Wave 0), Fabric API (Wave 0), Cloth Config (Wave 0), owo lib (Wave 1), and Geckolib (Wave 1) are already present and used by Wave 3 mods.
+> **Note**: Architectury API (Wave 0), Fabric API (Wave 0), Cloth Config (Wave 0) are already present and used by Wave 3 mods. owo lib and Geckolib (added in Wave 2) are also used.
 
 ### How the Layers Stack
 
@@ -254,7 +252,7 @@ All required libraries already present from earlier waves:
 
 | Wave | Integration |
 |------|-------------|
-| Wave 1 (Oritech) | Automated farm machines can grow/harvest Let's Do crops. Item pipes feed ingredients into cooking machines |
+| Wave 1 (Tech Reborn) | Tech Reborn machines can process Let's Do crops. Logistics pipes feed ingredients into cooking machines |
 | Wave 2 (Exploration) | New crops spawn naturally in Terralith/Tectonic biomes. Saturation meals make exploration safer |
 | Wave 3 (Equipment Magic) | Food buffs stack with gear affixes — fully fed + Epic-geared player is significantly stronger |
 
@@ -270,6 +268,51 @@ All required libraries already present from earlier waves:
 - Farm & Charm: verify crop spawn rates in Terralith biomes
 - Brewery: ensure drink buffs are balanced for the power curve
 - All mods: verify no hunger drain or decay mechanics are enabled by default
+
+---
+
+## Wave 5 — Tech Expansion
+
+Builds on Wave 1's Tech Reborn foundation with two complementary mods: Logistics: Automation (smart pipes, provider/requester network, autocrafting) and Powah ReFabric (additional high-tier power generation).
+
+Together they form a complete tech ecosystem: Tech Reborn handles machine progression and processing, Logistics handles smart item routing with autocrafting, and Powah provides endgame power.
+
+### Core Mods
+
+| Mod                    | Version | Download | Role |
+|------------------------|---------|----------|------|
+| Logistics: Automation  | 0.7.4+mc1.21.1.fabric | [Modrinth](https://modrinth.com/mod/logistics) | BuildCraft-inspired pipes — mechanical → smart → network logistics. Visible in-pipe item movement, provider/requester/crafting pipes, laser quarry |
+| Powah ReFabric         | 5.1.0   | [Modrinth](https://modrinth.com/mod/powah-refabric) | Additional power generation — 6-tier solar panels, thermoelectric, lightning, batteries, energy cables |
+
+### Dependencies
+
+All required libraries already present from earlier waves:
+
+| Library | Present Since | Required By |
+|---------|---------------|-------------|
+| Fabric API  | Wave 0 | Both mods |
+| Cloth Config | Wave 0 | Powah ReFabric |
+
+### Integration
+
+| Wave | Integration |
+|------|-------------|
+| Wave 1 (Tech Reborn) | Logistics provider pipes connect to Tech Reborn machines for network inventory. Logistics crafting pipes autocraft from Tech Reborn outputs. Powah generators power Tech Reborn machines |
+| Wave 3 (Equipment Magic) | Powah batteries store power for charging Tech Reborn quantum armor (which stacks with Affixology affixes) |
+| Wave 4 (Food & Farming) | Tech Reborn + Logistics automation processes Let's Do crops industrially |
+
+### Keybindings
+
+| Keybind | Default | Mod | Notes |
+|---------|---------|-----|-------|
+| Wrench configure | Right-click with wrench | Logistics | Configure pipe connections and machine facing |
+
+### Config Changes
+
+- Tech Reborn: verify ore gen doesn't clash with Mythic Metals, Terralith, or Tectonic
+- Logistics: ensure pipe power consumption is compatible with Tech Reborn's RF
+- Powah: balance solar panel output to match Tech Reborn's power curve
+- Consider disabling one macerator if both Tech Reborn and Logistics provide one
 
 ---
 
@@ -302,7 +345,7 @@ Shaderpacks are `.zip` files in `shaderpacks/`, not `mods/`. Platform-agnostic (
 | Recipe Viewer   | JEI                    | EMI                              |
 | Java            | 17                     | 21                               |
 | Colonies pillar | MineColonies           | Dropped (Forge-only)             |
-| Tech pillar     | Create + Mekanism      | Oritech (Fabric-native)          |
+| Tech pillar     | Create + Mekanism      | Tech Reborn + Logistics: Automation + Powah ReFabric |
 | Magic pillar    | Ars Nouveau, Apotheosis, Iron's Spells | Equipment magic: Simply Swords + Savaru's Affixology + Relics RPG + Runes |
 | Food pillar     | Farmer's Delight + Brewin' And Chewin' | Let's Do ecosystem (Farm & Charm + Bakery + Brewery + HerbalBrews + Candlelight) |
 | Terrain mod     | Lithosphere considered | Skipped — keep worldgen flexible |
@@ -311,8 +354,8 @@ Shaderpacks are `.zip` files in `shaderpacks/`, not `mods/`. Platform-agnostic (
 
 ## Next Up
 
-Waves 0–4 drafted, version pins populated. Next:
-- Wave 5 — TBD (Combat & Mob Variety? Performance polish? QoL pass?)
+All waves 0–5 drafted, version pins populated. Next:
+- First test launch with Waves 0–5
+- QoL/Performance polish merged into Wave 0 (ModernFix, FerriteCore, ImmediatelyFast, etc.)
 - Data packs and config tuning for all waves
-- Cross-wave loot integration testing
-- First test launch with Waves 0–4
+- Cross-wave integration testing
