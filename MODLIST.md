@@ -204,7 +204,7 @@ Shaderpacks are `.zip` files — place them in `%APPDATA%\.minecraft\shaderpacks
 | Shaderpack | Version | File | Direct Download |
 |------------|---------|------|-----------------|
 | **Rethinking Voxels** | r0.1-beta9 | Volumetric lighting, coloured block light, sharp shadows — closest thing to ray tracing without RT hardware. **Install this one.** | `rethinking-voxels_r0.1-beta9.zip` | [Download](https://cdn.modrinth.com/data/kmwfVOoi/versions/cpD4esk9/rethinking-voxels_r0.1-beta9.zip) |
-| Complementary Reimagined | — | (Fallback option if Rethinking Voxels doesn't perform well on your hardware) | (latest `.zip`) | [Modrinth](https://modrinth.com/shader/complementary-reimagined) |
+| Complementary Reimagined | r5.8.1 | (Fallback option if Rethinking Voxels doesn't perform well on your hardware) | `ComplementaryReimagined_r5.8.1.zip` | [Download](https://cdn.modrinth.com/data/HVnmMxH1/versions/yCCduG44/ComplementaryReimagined_r5.8.1.zip) |
 
 > Shaderpacks are **platform-agnostic** — they work on Forge via Oculus just like they work on Fabric via Iris.
 
