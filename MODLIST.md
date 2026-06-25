@@ -55,8 +55,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | YUNG's API (required by YUNG mods)   | 4.0.6   | `YungsApi-1.20-Forge-4.0.6.jar`            | [Download](https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar)            |
 | Balm (required by Waystones)         | 7.3.38  | `balm-forge-1.20.1-7.3.38-all.jar`         | [Download](https://cdn.modrinth.com/data/MBAkmtvl/versions/8rz04Kha/balm-forge-1.20.1-7.3.38-all.jar)         |
 | Lionfish API (required by Cataclysm) | 3.0     | `lionfishapi-3.0.jar`                      | [Download](https://cdn.modrinth.com/data/FoVacERa/versions/mWkKVbyd/lionfishapi-3.0.jar)                      |
-| Curios API (required by Cataclysm & Aether) | 5.14.1 | `curios-forge-5.14.1+1.20.1.jar` |
-| Fragmentum (required by Loot Journal)      | 1.3.0  | `fragmentum-forge-1.20.1-1.3.0.jar`           | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar)         |
+| Curios API (required by Cataclysm & Aether) | 5.14.1 | `curios-forge-5.14.1+1.20.1.jar` | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar) |
+| Fragmentum (required by Loot Journal)      | 1.3.0  | `fragmentum-forge-1.20.1-1.3.0.jar`           | [Download](https://cdn.modrinth.com/data/49C5QgTK/versions/5KD02RU4/fragmentum-forge-1.20.1-1.3.0.jar)       |
 | Moonlight Library (required by Supplementaries) | 2.16.34 | `moonlight-1.20-2.16.34-forge.jar`             | [Download](https://cdn.modrinth.com/data/twkfQtEc/versions/43kjMXMx/moonlight-1.20-2.16.34-forge.jar)        |
 | Iceberg (required by Item Highlighter)          | 1.1.25  | `Iceberg-1.20.1-forge-1.1.25.jar`             | [Download](https://cdn.modrinth.com/data/5faXoLqX/versions/BQ8rJPXV/Iceberg-1.20.1-forge-1.1.25.jar)        |
 | Bookshelf (required by Dark Paintings)          | 20.2.15 | `Bookshelf-Forge-1.20.1-20.2.15.jar`          | [Download](https://cdn.modrinth.com/data/uy4Cnpcm/versions/7eS5OIHj/Bookshelf-Forge-1.20.1-20.2.15.jar)      |
