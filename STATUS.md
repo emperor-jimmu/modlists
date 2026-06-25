@@ -2,9 +2,11 @@
 
 ## Completed
 
-### Wave 3 — Equipment Magic & Loot
+### Wave 3 — Equipment Magic, Loot & RPG Progression
 - [x] Design doc written: `docs/superpowers/specs/wave-3-equipment-magic.md`
 - [x] Version pins confirmed via Modrinth API
+  - Skill Tree (RPG Series) 1.4.4+1.21.1-fabric
+  - Pufferfish's Skills 0.18.0
   - Simply Swords 1.63.0-1.21.1
   - Savaru's Affixology 2.1.6
   - Relics RPG 1.3.0+1.21.1-fabric
@@ -14,7 +16,8 @@
   - Trinkets 3.10.0
 - [x] Updated MODLIST-V2.md with full Wave 3 section
 - [x] Updated GETTING-STARTED-V2.md with Wave 3 tutorial
-- [x] Updated STATUS.md
+- [x] Updated design doc with Skill Tree integration
+- [x] Added Complementary Unbound as recommended shaderpack in MODLIST-V2.md
 
 ### Wave 2 — Exploration (World, Dimensions & Dungeons)
 - [x] Added: Lithostitched 1.7.11, YUNG's API 5.1.6, Terralith 2.6.2, Tectonic 3.0.22
@@ -66,7 +69,7 @@
 - No Creeper Grief data pack
 
 ### Shaderpacks
-- List recommended shaderpacks in MODLIST-V2.md
+- [x] Complementary Unbound selected and documented in MODLIST-V2.md
 
 ### Additional Mod Candidates
 - Better Combat (optional, enhances Simply Swords gameplay feel)

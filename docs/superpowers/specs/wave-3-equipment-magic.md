@@ -1,10 +1,10 @@
 # Wave 3 — Equipment Magic & Loot
 
-**Fabric 1.21.1** | **Phase 1–2** | Designed alongside Waves 0–2.
+**Fabric 1.21.1** | **Phase 1–2** | Designed alongside Waves 0–2. | **Also includes RPG leveling** via Skill Tree (RPG Series) + Pufferfish's Skills.
 
 ## Design Goal
 
-Wave 3 equips the player with a full RPG equipment system. Every weapon drop can roll with random affixes, every accessory provides a unique legendary-style ability, and runes socket into gear for further customization. This is the pack's primary "magic" pillar — but it manifests **through gear**, not spellbooks.
+Wave 3 equips the player with a full RPG equipment system and a universal leveling layer. Every action earns XP, every level-up unlocks a tangible improvement, and every weapon drop can roll with random affixes. This is the pack's primary "magic" pillar — but it manifests **through gear and stats**, not spellbooks.
 
 Three layers build on each other:
 1. **Weapons that feel special** — Simply Swords provides 60+ unique weapons, each with its own passive/activated ability
@@ -31,6 +31,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 
 | Mod | Role |
 |-----|------|
+| **Skill Tree (RPG Series)** 1.4.4 | RPG leveling system — earn XP from any action, level up, spend points on attributes (strength, vitality, agility, magic, defense) and passive abilities. Built on Pufferfish's Skills |
 | **Simply Swords** 1.63.0 | 60+ unique weapons, each with a distinct passive/active ability. Loot-table injected so they drop from mobs and chests |
 | **Savaru's Affixology** 2.1.6 | Diablo-style loot: rarity tiers (Common→Uncommon→Rare→Epic), random affix rolls, gem socketing with quality system, unidentified gear, inscription system. The primary chase mechanic |
 | **Relics RPG** 1.3.0 | Legendary-style accessories with unique passive/active abilities. ~30+ relics across Common→Epic tiers. The "oh wow" drop |
@@ -38,17 +39,19 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 | **Spell Engine** 1.9.9 | Casting framework and magic attribute API. Library mod — enables Spell Power attributes and Relics abilities |
 | **Spell Power** 1.4.6 | Magic attribute system: spell damage, critical strike chance, critical strike damage, haste, resistance, armor penetration. Library mod — makes magic damage scale like physical damage |
 | **Trinkets** 3.10.0 | Accessory slot API. Required by Runes and Relics RPG for ring/amulet/glove/belt slots |
+| **Pufferfish's Skills** 0.18.0 | Underlying skill system framework. Required by Skill Tree (RPG Series). Fully configurable — defines XP sources, level curves, and skill definitions |
 | **Simply Tooltips** | Required by Simply Swords 1.63.0 — enables dynamic tooltips with ability descriptions and stat previews |
 
 ### New Dependencies
 
 | Mod | Required By | Notes |
 |-----|-------------|-------|
+| Pufferfish's Skills | Skill Tree (RPG Series) | Underlying skill system — defines XP, levels, and attribute spending |
 | More RPG Library | Savaru's Affixology | Library for the "More RPG" ecosystem |
 | Patchouli | Savaru's Affixology | In-game guidebook for Affixology systems |
 | Fzzy Config | Simply Swords | Config library for Simply Swords settings |
 | Bundle API | Runes | Enables the Rune Pouch (portable rune storage) |
-| Architectury API | Simply Swords, Relics RPG | Cross-loader compat — already present from Wave 0 |
+| Architectury API | Simply Swords, Relics RPG, Skill Tree | Cross-loader compat — already present from Wave 0 |
 
 ### Already Present from Earlier Waves
 
@@ -84,6 +87,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 
 ### Phase 1 (hours 0–40) — Discovering Equipment
 
+- Skill Tree is active from the first action — mine a block, get XP, level up, spend first points
 - Simply Swords unique weapons start dropping from common mobs at a low rate (~2%)
 - Affixology adds Common→Uncommon affixes to gear
 - First Relics drop from dungeon chests — Common tier only
@@ -91,6 +95,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 
 ### Phase 2 (hours 40–150) — Building a Loadout
 
+- Skill tree branches unlock mid-tier passives — spend points into preferred attribute trees
 - Simply Swords weapons gain Rare→Epic affix rolls via Affixology
 - Relics RPG mid-tier accessories (Uncommon→Rare) become available
 - Runes become accessible — player builds a rune pouch with tactical options
@@ -98,6 +103,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 
 ### Phase 3 (hours 150+) — Legendary Loadout
 
+- Max-level skill tree with full passive loadout — all attributes significantly boosted
 - Epic-tier affixes and Unprecedented/Flawless gem sockets
 - Relics RPG Epic-tier accessories from dragon loot and endgame content
 - Complete rune set for every situation

@@ -162,14 +162,17 @@ Note: oωo lib (Wave 1) is also required by The Aether and Deeper and Darker.
 
 ---
 
-## Wave 3 — Equipment Magic & Loot
+## Wave 3 — Equipment Magic, Loot & RPG Progression
 
 The magic pillar manifests through **gear**, not spellbooks. Every weapon drop can roll with random affixes, every accessory provides a unique legendary-style ability, and runes socket into gear for customization. Three layers build on each other: Simply Swords (weapons that feel special), Savaru's Affixology (Diablo-style loot), and Relics RPG (accessories that change how you play).
+
+Above all of it: a **Skill Tree** that gives every action meaning. Earn XP from mining, fighting, crafting, and exploring → level up → spend points on attributes (strength, health, speed, spell power) and unlock passive abilities. The same XP system works alongside every other wave.
 
 ### Core Mods
 
 | Mod                    | Version                    | Download | Role |
 |------------------------|----------------------------|----------|------|
+| Skill Tree (RPG Series) | 1.4.4+1.21.1-fabric       | [Modrinth](https://modrinth.com/mod/skill-tree) | RPG leveling and skill tree — earn XP, spend points on attributes and passives |
 | Simply Swords          | 1.63.0-1.21.1              | [Modrinth](https://modrinth.com/mod/simply-swords) | 60+ unique weapons, each with a passive/activated ability |
 | Savaru's Affixology    | 2.1.6                      | [Modrinth](https://modrinth.com/mod/savaru-affixes) | Diablo-style loot: rarity tiers, random affixes, gem socketing, unidentified gear, inscriptions |
 | Relics RPG             | 1.3.0+1.21.1-fabric        | [Modrinth](https://modrinth.com/mod/relics-rpg) | Legendary-style accessories with unique passive/active abilities |
@@ -187,18 +190,20 @@ The magic pillar manifests through **gear**, not spellbooks. Every weapon drop c
 
 | Mod               | Version | Download | Required By |
 |-------------------|---------|----------|-------------|
+| Pufferfish's Skills | 0.18.0  | [Modrinth](https://modrinth.com/mod/skills) | Skill Tree (RPG Series) — underlying skill system framework |
 | Simply Tooltips   | latest  | [Modrinth](https://modrinth.com/mod/simply-tooltips) | Simply Swords — dynamic tooltips with ability descriptions |
 | Fzzy Config       | latest  | [Modrinth](https://modrinth.com/mod/fzzy-config) | Simply Swords — config library |
 | More RPG Library  | latest  | [Modrinth](https://modrinth.com/mod/more-rpg-library) | Savaru's Affixology — library mod |
 | Patchouli         | latest  | [Modrinth](https://modrinth.com/mod/patchouli) | Savaru's Affixology — in-game guidebook |
 | Bundle API        | latest  | [Modrinth](https://modrinth.com/mod/bundle-api) | Runes — rune pouch implementation |
 
-> **Note**: Architectury API (Wave 0), Fabric API (Wave 0), Cloth Config (Wave 0), oωo lib (Wave 1), and Geckolib (Wave 1) are already present and used by Wave 3 mods.
+> **Note**: Architectury API (Wave 0), Fabric API (Wave 0), Cloth Config (Wave 0), owo lib (Wave 1), and Geckolib (Wave 1) are already present and used by Wave 3 mods.
 
 ### How the Layers Stack
 
 | Layer | What it adds | Progression Gate |
 |-------|-------------|------------------|
+| **Skill Tree** | RPG leveling — earn XP from any action, spend points on attributes and passives | Phase 1 — starts immediately, every action earns XP |
 | **Simply Swords** | 60+ unique weapons dropping from mobs and chests | Phase 1 — starts at common mob kills (~2% drop rate) |
 | **Savaru's Affixology** | Rarity tiers on all gear, random affixes, gems, unidentified gear | Phase 1 — identification accessible early (paper + feather) |
 | **Relics RPG** | Legendary accessories with unique abilities | Phase 2 — mid-tier relics from dungeon loot, epic from endgame |
@@ -282,8 +287,8 @@ Shaderpacks are `.zip` files in `shaderpacks/`, not `mods/`. Platform-agnostic (
 
 | Shaderpack               | Description                                              |
 |--------------------------|----------------------------------------------------------|
-| Rethinking Voxels        | Volumetric lighting, coloured block light, sharp shadows |
-| Complementary Reimagined | Fallback if RV doesn't perform well                      |
+| Complementary Unbound    | Two visual styles (realistic + vanilla+), Potato→Ultra profiles, custom effects for almost every block, 34.5M downloads |
+| Complementary Reimagined | The vanilla+ style preset of Complementary — fallback if you prefer the look |
 
 ---
 

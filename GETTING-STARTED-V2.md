@@ -16,17 +16,17 @@ There isn't one. Minecraft is a sandbox. You punch trees, build things, explore,
 
 ### Controls (Default)
 
-| Action | Key |
-|--------|-----|
-| Move | `W A S D` |
-| Jump | `Space` |
-| Sneak | `Shift` (hold to walk off edges without falling) |
-| Sprint | `Ctrl` (hold while moving) |
-| Attack / Break blocks | **Left-click** (hold to keep breaking) |
-| Use item / Place block | **Right-click** |
-| Open inventory | `E` |
-| Drop item | `Q` (while hovering over item in inventory) |
-| Select hotbar slot | `1` through `9` |
+| Action                       | Key                                                  |
+|------------------------------|------------------------------------------------------|
+| Move                         | `W A S D`                                            |
+| Jump                         | `Space`                                              |
+| Sneak                        | `Shift` (hold to walk off edges without falling)     |
+| Sprint                       | `Ctrl` (hold while moving)                           |
+| Attack / Break blocks        | **Left-click** (hold to keep breaking)               |
+| Use item / Place block       | **Right-click**                                      |
+| Open inventory               | `E`                                                  |
+| Drop item                    | `Q` (while hovering over item in inventory)          |
+| Select hotbar slot           | `1` through `9`                                      |
 | Sneak + right-click on chest | Opens chest without placing the block you're holding |
 
 > **Customize these**: Options → Controls → Key Binds. Set what feels natural. The most common change is swapping sprint to a toggle.
@@ -49,12 +49,12 @@ Walk to where you want your base. Right-click the ground with the crafting table
 
 Now craft tools:
 
-| Tool | What it does | Crafting (3×3 grid) |
-|------|-------------|---------------------|
-| **Wooden Pickaxe** | Breaks stone | 3 planks across top row, 2 sticks down the middle column |
-| **Wooden Axe** | Faster tree chopping | 3 planks in top-left corner, 2 sticks down |
-| **Wooden Shovel** | Digs dirt/sand faster | 1 plank top-center, 2 sticks below |
-| **Wooden Sword** | Fights mobs | 2 planks in middle column, 1 stick below |
+| Tool               | What it does          | Crafting (3×3 grid)                                      |
+|--------------------|-----------------------|----------------------------------------------------------|
+| **Wooden Pickaxe** | Breaks stone          | 3 planks across top row, 2 sticks down the middle column |
+| **Wooden Axe**     | Faster tree chopping  | 3 planks in top-left corner, 2 sticks down               |
+| **Wooden Shovel**  | Digs dirt/sand faster | 1 plank top-center, 2 sticks below                       |
+| **Wooden Sword**   | Fights mobs           | 2 planks in middle column, 1 stick below                 |
 
 #### 4. Gather stone
 
@@ -63,6 +63,7 @@ Find some grey stone on the ground (or cliffs). Use your **wooden pickaxe** to m
 #### 5. Build a shelter
 
 Before night falls (about 10 minutes into the first day), build a small box:
+
 - Walls: dirt, wood planks, or cobblestone — whatever you have
 - Roof: same material
 - Door: craft from 6 planks (2 columns of 3 in the crafting grid)
@@ -72,8 +73,8 @@ Before night falls (about 10 minutes into the first day), build a small box:
 
 #### 6. Craft a furnace
 
-| Material | Pattern |
-|----------|---------|
+| Material      | Pattern                                   |
+|---------------|-------------------------------------------|
 | 8 cobblestone | All slots except the center one → furnace |
 
 Place the furnace. Right-click it. Put wood logs in the top slot, planks/sticks in the bottom slot (fuel). Smelt logs into charcoal, cook raw meat, smelt iron ore.
@@ -81,6 +82,7 @@ Place the furnace. Right-click it. Put wood logs in the top slot, planks/sticks 
 #### 7. Survive the first night
 
 Monsters spawn in darkness. Your shelter keeps them out. Stay inside. You can:
+
 - Dig a small mine under your shelter
 - Expand your crafting table base
 - Smelt materials
@@ -90,24 +92,24 @@ Monsters spawn in darkness. Your shelter keeps them out. Stay inside. You can:
 
 #### 8. Day 2 and beyond
 
-| Priority | What to do |
-|----------|------------|
-| Find food | Kill animals (cows, pigs, chickens). Cook the meat in your furnace. Plant wheat seeds (break grass) near water. |
-| Get iron | Dig down (not straight down — staircase pattern) until you see brownish blocks with specks. Mine with stone pickaxe. Smelt in furnace → iron ingots. |
-| Make iron tools | Iron pickaxe, iron sword, iron armour. This is the "I'm established" checkpoint. |
-| Find a village | Walk around until you see buildings with paths. Villages have beds, food crops, and later — Waystones. |
-| Make a bed | 3 wool + 3 planks. Sleep through the night. Respawn at bed if you die. |
+| Priority        | What to do                                                                                                                                           |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Find food       | Kill animals (cows, pigs, chickens). Cook the meat in your furnace. Plant wheat seeds (break grass) near water.                                      |
+| Get iron        | Dig down (not straight down — staircase pattern) until you see brownish blocks with specks. Mine with stone pickaxe. Smelt in furnace → iron ingots. |
+| Make iron tools | Iron pickaxe, iron sword, iron armour. This is the "I'm established" checkpoint.                                                                     |
+| Find a village  | Walk around until you see buildings with paths. Villages have beds, food crops, and later — Waystones.                                               |
+| Make a bed      | 3 wool + 3 planks. Sleep through the night. Respawn at bed if you die.                                                                               |
 
 #### Navigating with F3
 
 Press `F3` opens the debug screen. The useful parts:
 
-| Value | What it shows |
-|-------|---------------|
-| `xyz` | Your coordinates — write these down so you can find your base |
-| `Biome` | What biome you're in |
-| `Direction` | Which way you're facing (N/S/E/W) |
-| `Light` | Light level — mobs spawn at light level 0 |
+| Value       | What it shows                                                 |
+|-------------|---------------------------------------------------------------|
+| `xyz`       | Your coordinates — write these down so you can find your base |
+| `Biome`     | What biome you're in                                          |
+| `Direction` | Which way you're facing (N/S/E/W)                             |
+| `Light`     | Light level — mobs spawn at light level 0                     |
 
 **Quick tip**: Write down your base coordinates before exploring. Or just place a Waystone (Wave 0) at your base.
 
@@ -143,26 +145,26 @@ After installing Wave 0 mods, launch Minecraft once to generate config files, th
 
 #### Video Settings (in-game: Options → Video Settings)
 
-| Setting | Recommended | Notes |
-|---------|-------------|-------|
-| Graphics | Fabulous | Sodium makes this performant now |
-| Render Distance | 16–32 chunks | Tune to your hardware; Distant Horizons handles far LOD |
-| Brightness | Moody → Bright | Personal preference — Bright makes caves easier to see |
+| Setting         | Recommended    | Notes                                                   |
+|-----------------|----------------|---------------------------------------------------------|
+| Graphics        | Fabulous       | Sodium makes this performant now                        |
+| Render Distance | 16–32 chunks   | Tune to your hardware; Distant Horizons handles far LOD |
+| Brightness      | Moody → Bright | Personal preference — Bright makes caves easier to see  |
 
 #### Keybindings (in-game: Options → Controls → Key Binds)
 
 After Wave 0, set these up immediately:
 
-| Keybind | Default | Mod | Notes |
-|---------|---------|-----|-------|
-| View Recipes | `R` | EMI | Hover over any item and press R |
-| View Uses | `U` | EMI | Hover over any item and press U |
-| Open Mod Menu | **Not set** | Mod Menu | **Set this to `Ctrl+M`** — opens the mod list/config screen |
-| Open Fullscreen Map | `J` | Xaero's World Map | Opens the big map |
-| Toggle Minimap | `H` (default) | Xaero's Minimap | Shows/hides the corner minimap |
-| Open Waystone Menu | **Not set** | Waystones | **Set this to `Ctrl+Shift+W`** — opens teleport list |
-| Open Backpack | `B` | Sophisticated Backpacks | Opens equipped backpack |
-| Zoom | `C` (Sodium) | Sodium | Hold to zoom in — very useful for scouting |
+| Keybind             | Default       | Mod                     | Notes                                                       |
+|---------------------|---------------|-------------------------|-------------------------------------------------------------|
+| View Recipes        | `R`           | EMI                     | Hover over any item and press R                             |
+| View Uses           | `U`           | EMI                     | Hover over any item and press U                             |
+| Open Mod Menu       | **Not set**   | Mod Menu                | **Set this to `Ctrl+M`** — opens the mod list/config screen |
+| Open Fullscreen Map | `J`           | Xaero's World Map       | Opens the big map                                           |
+| Toggle Minimap      | `H` (default) | Xaero's Minimap         | Shows/hides the corner minimap                              |
+| Open Waystone Menu  | **Not set**   | Waystones               | **Set this to `Ctrl+Shift+W`** — opens teleport list        |
+| Open Backpack       | `B`           | Sophisticated Backpacks | Opens equipped backpack                                     |
+| Zoom                | `C` (Sodium)  | Sodium                  | Hold to zoom in — very useful for scouting                  |
 
 > **Pro tip**: Set Waystones, Mod Menu, and Zoom first — you'll use them constantly.
 
@@ -183,13 +185,13 @@ Use EM! constantly. Every mod in future waves is learned through EM! first.
 
 Your early-game storage solution. Better than vanilla chests in every way.
 
-| Action | How |
-|--------|-----|
-| Place a barrel | Craft 1 chest + 8 planks → right-click to place |
-| Rename a barrel | **Shift + right-click** with the barrel → type a name (e.g., "Ores", "Wood") |
-| Upgrade a barrel | Craft an iron barrel upgrade → shift-right-click the barrel to apply |
-| Lock a barrel | Shift-right-click with a stack of the item you want to lock → only that item goes in |
-| Open a backpack | Press `B` (keybind) or right-click in hand |
+| Action           | How                                                                                  |
+|------------------|--------------------------------------------------------------------------------------|
+| Place a barrel   | Craft 1 chest + 8 planks → right-click to place                                      |
+| Rename a barrel  | **Shift + right-click** with the barrel → type a name (e.g., "Ores", "Wood")         |
+| Upgrade a barrel | Craft an iron barrel upgrade → shift-right-click the barrel to apply                 |
+| Lock a barrel    | Shift-right-click with a stack of the item you want to lock → only that item goes in |
+| Open a backpack  | Press `B` (keybind) or right-click in hand                                           |
 
 Barrels hold more than chests, keep their named labels visible, and stack with hoppers/pipes from future waves. Use them now — they'll feed into automation later.
 
@@ -199,22 +201,22 @@ Barrels hold more than chests, keep their named labels visible, and stack with h
 
 Craft a backpack early. It's your portable inventory that you can upgrade.
 
-| Action | How |
-|--------|-----|
-| Equip | Place in chest armor slot (or hotbar) |
-| Open | Press `B` or right-click in hand |
-| Upgrade | Same system as barrels — iron, gold, diamond, netherite |
+| Action       | How                                                        |
+|--------------|------------------------------------------------------------|
+| Equip        | Place in chest armor slot (or hotbar)                      |
+| Open         | Press `B` or right-click in hand                           |
+| Upgrade      | Same system as barrels — iron, gold, diamond, netherite    |
 | Tool upgrade | Adds smelting, magnet, feeding, and other utility upgrades |
 
 **Recommended first upgrade**: Iron tier → then a **Tool Swapper** upgrade (auto-swaps tools when breaking blocks).
 
 #### Xaero's Minimap & World Map
 
-| Action | How |
-|--------|-----|
-| Toggle minimap | `H` |
-| Open world map | `J` |
-| Add waypoint | Open world map (`J`) → left-click a location → name it |
+| Action               | How                                                    |
+|----------------------|--------------------------------------------------------|
+| Toggle minimap       | `H`                                                    |
+| Open world map       | `J`                                                    |
+| Add waypoint         | Open world map (`J`) → left-click a location → name it |
 | Teleport to waypoint | Only works with Waystones mod installed (next section) |
 
 The minimap shows mobs around you (green dots = passive, red = hostile). The world map auto-saves every chunk you visit — great for exploration.
@@ -223,12 +225,12 @@ The minimap shows mobs around you (green dots = passive, red = hostile). The wor
 
 Waystones spawn in villages. You can also craft them.
 
-| Action | How |
-|--------|-----|
-| Craft a Waystone | 3 stone + 1 ender pearl (in a T-shape) |
-| Claim a waystone | Right-click it → it's added to your teleport list |
-| Open teleport menu | `Ctrl+Shift+W` (if you set the keybind) or shift-right-click in hand with the Warp Stone |
-| Warp Stone | Craft 1 ender pearl + 2 amethyst shards → keeps teleports on you without returning to a waystone |
+| Action             | How                                                                                              |
+|--------------------|--------------------------------------------------------------------------------------------------|
+| Craft a Waystone   | 3 stone + 1 ender pearl (in a T-shape)                                                           |
+| Claim a waystone   | Right-click it → it's added to your teleport list                                                |
+| Open teleport menu | `Ctrl+Shift+W` (if you set the keybind) or shift-right-click in hand with the Warp Stone         |
+| Warp Stone         | Craft 1 ender pearl + 2 amethyst shards → keeps teleports on you without returning to a waystone |
 
 **Config note**: Teleport costs are disabled (no XP drain). Waystones spawn regularly in villages. The **Warp Stone** is a portable item that opens the teleport menu from anywhere.
 
@@ -236,11 +238,11 @@ Waystones spawn in villages. You can also craft them.
 
 When you die, a grave spawns containing your items. No item despawning, no losing everything.
 
-| Action | How |
-|--------|-----|
-| Retrieve items | Interact with the grave (right-click) |
+| Action           | How                                                |
+|------------------|----------------------------------------------------|
+| Retrieve items   | Interact with the grave (right-click)              |
 | Grave protection | 24 real-time hours before the grave becomes public |
-| Keep XP | XP is preserved on death (configurable) |
+| Keep XP          | XP is preserved on death (configurable)            |
 
 > **Wave 0 chill rule**: If you die, just walk back to your grave. No panic, no loss. This remains true across all future waves.
 
@@ -248,10 +250,10 @@ When you die, a grave spawns containing your items. No item despawning, no losin
 
 This mod renders LODs (Level of Detail) far beyond vanilla render distance.
 
-| Setting | Recommended | Notes |
-|---------|-------------|-------|
+| Setting             | Recommended | Notes                                                  |
+|---------------------|-------------|--------------------------------------------------------|
 | LOD Render Distance | 1024 blocks | Configurable in-game via Distant Horizons settings GUI |
-| Quality preset | High | Tune down if performance dips |
+| Quality preset      | High        | Tune down if performance dips                          |
 
 Open **Mod Menu** (`Ctrl+M`) → Distant Horizons → Config to adjust. The mod generates LOD data as you explore — first visit to an area will have temporary pop-in.
 
@@ -289,19 +291,20 @@ Craft your first machines using the **EMI recipe browser** (`R` key). The early 
 #### Step 2: Build a processing chain
 
 Oritech has **multiple ore processing chains**. The simplest:
+
 - Mine ore → Pulverizer → dust → Furnace → 2 ingots
 
 Later chains add chemical processing, alloys, and higher yield multipliers.
 
 #### Step 3: Expand power generation
 
-| Generator | Fuel | Notes |
-|-----------|------|-------|
-| Basic Generator | Coal, charcoal, flammable items | Starting generator |
-| Biofuel Generator | Farmed biofuel | Renewable — pair with farming machines |
-| Oil-based generator | Oil (find oil wells in-world) | Higher output, requires exploration |
-| Solar Panel | Sunlight | Passive, works best in deserts |
-| Big Solar Panel | Sunlight | Late-game passive power |
+| Generator           | Fuel                            | Notes                                  |
+|---------------------|---------------------------------|----------------------------------------|
+| Basic Generator     | Coal, charcoal, flammable items | Starting generator                     |
+| Biofuel Generator   | Farmed biofuel                  | Renewable — pair with farming machines |
+| Oil-based generator | Oil (find oil wells in-world)   | Higher output, requires exploration    |
+| Solar Panel         | Sunlight                        | Passive, works best in deserts         |
+| Big Solar Panel     | Sunlight                        | Late-game passive power                |
 
 Find **oil wells** generating in the world — they're surface-visible. Build a pump over them for automated oil collection.
 
@@ -309,17 +312,18 @@ Find **oil wells** generating in the world — they're surface-visible. Build a 
 
 Oritech has **1 tier of each pipe type** — no confusing tier upgrades:
 
-| Pipe Type | Color | Transports |
-|-----------|-------|------------|
-| Item pipe | Orange | Items between inventories |
-| Fluid pipe | Blue | Fluids between tanks/machines |
-| Energy pipe | Yellow | RF power between machines |
+| Pipe Type   | Color  | Transports                    |
+|-------------|--------|-------------------------------|
+| Item pipe   | Orange | Items between inventories     |
+| Fluid pipe  | Blue   | Fluids between tanks/machines |
+| Energy pipe | Yellow | RF power between machines     |
 
 Pipes auto-connect to adjacent machines. Use a **wrench** to configure connections (shift-right-click to disconnect a face).
 
 #### Step 5: Advanced machines
 
 As you progress, unlock:
+
 - **Automated farm machines** — plant, grow, and harvest crops automatically
 - **Laser arm** — mines blocks in a radius (Oritech's version of a digital miner/quarry)
 - **Drone** — fly items between distant bases
@@ -345,6 +349,7 @@ As you progress, unlock:
 Adds ~20 new ores (adamantite, mythril, palladium, stormyx, etc.) spawning in the Overworld, Nether, and End. Mine them, process through Oritech machines, and craft into tools/armor. Check EMI (`R`) for recipes. Each metal has unique properties — some auto-repair, some mine faster, some have special abilities.
 
 **Where ores spawn**:
+
 - Most ores: Overworld at various Y-levels
 - Some: Nether (e.g., banglum, mythril)
 - Starrite: The End
@@ -374,10 +379,10 @@ See [MODLIST-V2.md](./MODLIST-V2.md#wave-2--exploration-world-dimensions--dungeo
 
 These work **automatically** — install and a new world will have vastly more interesting biomes and terrain. Apply to existing worlds? They only affect *newly generated chunks*, so explore fresh territory to see the new content.
 
-| Mod | What it changes |
-|-----|-----------------|
+| Mod           | What it changes                                                                                                                                                               |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Terralith** | Hundreds of new biome variants — painted mountains, shattered savannahs, volcanic peaks, lush valleys, floating islands, and more. Vanilla-style but drastically more varied. |
-| **Tectonic** | Deeper oceans, taller mountains, steeper cliffs, wider caves. Terrain feels more dramatic without being unplayable. |
+| **Tectonic**  | Deeper oceans, taller mountains, steeper cliffs, wider caves. Terrain feels more dramatic without being unplayable.                                                           |
 
 > **Tip**: Start a new world for Wave 2 to get the full worldgen experience. Or travel 1000+ blocks from your existing spawn to hit fresh chunks.
 
@@ -389,14 +394,16 @@ Vanilla dungeons (the small cobblestone rooms with spawners) are replaced with m
 
 #### The Aether
 
-A sky dimension accessible via a **glowstone portal** (similar to a Nether portal, but with glowstone instead of obsidian). 
+A sky dimension accessible via a **glowstone portal** (similar to a Nether portal, but with glowstone instead of obsidian).
 
 **Getting there:**
+
 1. Build a 4×5 frame of glowstone (like a Nether portal frame)
 2. Fill a bucket with water and right-click the frame
 3. Step through
 
 **The Aether progression:**
+
 - Start on safe sky islands with unique vegetation and passive mobs (aerwhales, moas)
 - Collect **ambrosium** and **zanite** from the islands — these are your early-game Aether materials
 - Find **gravitite ore** (floats upward when mined — catch it!)
@@ -412,6 +419,7 @@ Adds a new dimension called the **Otherside**, related to the Deep Dark. Unlike 
 **To enter:** Obtain a **Warden Heart** (drop from the Warden). Use it to craft a portal.
 
 **Content in the Otherside:**
+
 - 4 new biomes (Deeplands, Echoing Forest, Overcast Columns, Blooming Caverns)
 - 8 new mobs + a miniboss (the Shattered)
 - Ancient temple structures with loot
@@ -425,6 +433,7 @@ Adds a new dimension called the **Otherside**, related to the Deep Dark. Unlike 
 A complete overhaul of the End dimension.
 
 **Content:**
+
 - 24+ new biomes (glowing neon oasis, crystal mountains, shadow forests, etc.)
 - New mobs — some passive, some hostile
 - New trees, building blocks, and gear
@@ -434,26 +443,30 @@ Unlocked after defeating the Ender Dragon. Safe to ignore until you're ready.
 
 #### Explorer's Compass
 
-Craft an **Explorer's Compass** (check EMI for recipe). 
+Craft an **Explorer's Compass** (check EMI for recipe).
 
-| Action | How |
-|--------|-----|
-| Open GUI | Right-click the compass |
+| Action           | How                                             |
+|------------------|-------------------------------------------------|
+| Open GUI         | Right-click the compass                         |
 | Select structure | Browse the list of all structures in your world |
-| Navigate | The compass points to the nearest one |
+| Navigate         | The compass points to the nearest one           |
 
 Perfect for finding Aether portal ruins, new Terralith biomes, villages, or any structure. Works without a map.
 
 ---
 
-## Wave 3 — Equipment Magic & Loot
+## Wave 3 — Equipment Magic, Loot & RPG Progression
 
 This wave is the magic pillar — but it manifests **through gear**, not spellbooks. You won't be casting fireballs or teleporting. Instead, every weapon that drops can have random affixes, every accessory provides a unique legendary-style ability, and runes socket into gear for tactical customization.
 
-The three layers:
-1. **Simply Swords** — 60+ unique weapons, each with its own passive or activated ability
-2. **Savaru's Affixology** — Diablo-style rarity tiers, random affixes, gem socketing, unidentified gear
-3. **Relics RPG** — Legendary accessories that change how you play
+On top of all that, a **Skill Tree** gives every action meaning — earn XP from mining, fighting, crafting, and exploring, then spend points on attributes and passives.
+
+The layers:
+
+1. **Skill Tree** — RPG leveling, always active
+2. **Simply Swords** — 60+ unique weapons, each with its own passive or activated ability
+3. **Savaru's Affixology** — Diablo-style rarity tiers, random affixes, gem socketing, unidentified gear
+4. **Relics RPG** — Legendary accessories that change how you play
 
 ### Install
 
@@ -462,6 +475,24 @@ See [MODLIST-V2.md](./MODLIST-V2.md#wave-3--equipment-magic-loot) for the full m
 > **Wave 3 mods are content mods, not library mods.** They change what you find in chests and on mobs, not how the game runs. Install all of them at once.
 
 ### How to Use
+
+#### Skill Tree (RPG Series) + Pufferfish's Skills
+
+This is the RPG leveling system. Every action you take — mining ores, killing mobs, crafting items, exploring new biomes — earns **experience points**. When you accumulate enough XP, you **level up** and gain **skill points** to spend.
+
+Open the skill tree GUI (check Controls → Skill Tree for the keybind). You'll see branches for different attributes:
+
+| Skill Branch | What it improves |
+|-------------|------------------|
+| Strength | Melee damage, mining speed |
+| Vitality | Max health, natural regeneration |
+| Agility | Movement speed, jump height, fall damage reduction |
+| Magic | Spell power, mana regen (synergy with Wave 3 gear) |
+| Defense | Armor toughness, damage resistance |
+
+Each point you spend gives a tangible stat increase. The skill tree works alongside every other wave — Oritech crafting earns XP, exploration rewards XP, cooking gives XP. It's the universal progression layer.
+
+> **Pro tip**: The skill tree is fully configurable. If a skill branch doesn't fit your playstyle, you can respec (check the config). Every action feeds progression, so there's no wrong way to play.
 
 #### Simply Swords
 
@@ -473,14 +504,14 @@ The simplest mod in the wave — **go fight things**. Simply Swords weapons drop
 
 There are 6 weapon categories and 60+ unique weapons:
 
-| Category | Example Weapons | Playstyle |
-|----------|----------------|-----------|
-| Heavy weapons | Greathammer, Greatsword, Claymore | Slow, high damage, knockback |
-| Medium weapons | Longsword, Katana, Twinblade | Balanced speed and damage |
-| Light weapons | Rapier, Dagger, Sai, Glaive | Fast attacks with debuffs |
-| Polearms | Spear, Halberd, Pike | Reach advantage, throwable |
-| Ranged | Chakram, Boomerang | Enchantable throwables |
-| Special | Scythe, Soulrender, Lichblade | Unique mechanics (healing, lifesteal, summons) |
+| Category       | Example Weapons                   | Playstyle                                      |
+|----------------|-----------------------------------|------------------------------------------------|
+| Heavy weapons  | Greathammer, Greatsword, Claymore | Slow, high damage, knockback                   |
+| Medium weapons | Longsword, Katana, Twinblade      | Balanced speed and damage                      |
+| Light weapons  | Rapier, Dagger, Sai, Glaive       | Fast attacks with debuffs                      |
+| Polearms       | Spear, Halberd, Pike              | Reach advantage, throwable                     |
+| Ranged         | Chakram, Boomerang                | Enchantable throwables                         |
+| Special        | Scythe, Soulrender, Lichblade     | Unique mechanics (healing, lifesteal, summons) |
 
 Some weapons are "unique" (fixed name, fixed ability) — these are the special ones to hunt for. Others are "runic" (procedurally generated with random abilities).
 
@@ -494,17 +525,18 @@ This is the core loot chase. Every piece of equipment (weapons, tools, armor) ca
 
 Each tier adds more affix slots:
 
-| Rarity | Affixes | What to expect |
-|--------|---------|----------------|
-| Common | 0 | Base stats only |
-| Uncommon | 1 | One small bonus (+1 attack speed, +2% damage) |
-| Rare | 2 | Two bonuses, higher values |
-| Epic | 3 | Three strong bonuses |
-| Legendary | 4 | Maximum bonuses — very rare |
+| Rarity    | Affixes | What to expect                                |
+|-----------|---------|-----------------------------------------------|
+| Common    | 0       | Base stats only                               |
+| Uncommon  | 1       | One small bonus (+1 attack speed, +2% damage) |
+| Rare      | 2       | Two bonuses, higher values                    |
+| Epic      | 3       | Three strong bonuses                          |
+| Legendary | 4       | Maximum bonuses — very rare                   |
 
 **Affixes** are random stat bonuses that roll when gear drops or is crafted. Examples: bonus damage, attack speed, movement speed, crit chance, spell power, resistance, magic find.
 
 **Gems** are items you can socket into gear for extra effects:
+
 - Find gem items in loot
 - Socket into equipment at an **Engraving Anvil** (crafted from blaze rod + echo shard or ender eye)
 - Gems have quality tiers: Normal → Flawless → Unprecedented
@@ -512,21 +544,25 @@ Each tier adds more affix slots:
 - Flawless adds an extra base gem effect
 
 **Unidentified gear**:
+
 - Some items drop as "Unidentified" — you can't use them until you identify them
 - Craft an **Identification Ticket** (paper + feather) and use it at an anvil to reveal the item
 - This adds excitement to every drop — you never know if it'll roll Epic
 
 **Mastery system**:
+
 - Use gear → gain mastery in that equipment type
 - Higher mastery → unlocked bonuses and better potential affixes
 - Check mastery progress via the Affixology Guidebook
 
 **Deconstruction Stone**:
+
 - Salvage gear you don't want to extract its affixes
 - Learn which affixes exist and expand your knowledge
 - Craft at a crafting table (check the guidebook for recipe)
 
 **Ash repair**:
+
 - Heavily damaged gear can be repaired with Ash — costs 50 levels for +10% durability
 - Alternative to anvil repair when you need to keep a good item alive
 
@@ -536,18 +572,19 @@ Each tier adds more affix slots:
 
 Relics are **legendary accessories** that go in your Trinkets slots (ring, amulet, belt, gloves, and more). Each relic has a unique ability:
 
-| Relic | Ability | Rarity |
-|-------|---------|--------|
-| Monkey Talisman | Double jump | Common |
-| Holy Water | Cleanses negative effects | Common |
-| Lucky Coin | Increases luck/loot quality | Uncommon |
-| Captain's Hook | Pulls entities toward you | Uncommon |
-| Etienne's Enigma | Creates a decoy | Uncommon |
-| Sacred Wardstone | Damage absorption shield | Rare |
-| Ankh | Cursed gear immunity | Rare |
-| and more... | (check EMI or Relics guide) | Various |
+| Relic            | Ability                     | Rarity   |
+|------------------|-----------------------------|----------|
+| Monkey Talisman  | Double jump                 | Common   |
+| Holy Water       | Cleanses negative effects   | Common   |
+| Lucky Coin       | Increases luck/loot quality | Uncommon |
+| Captain's Hook   | Pulls entities toward you   | Uncommon |
+| Etienne's Enigma | Creates a decoy             | Uncommon |
+| Sacred Wardstone | Damage absorption shield    | Rare     |
+| Ankh             | Cursed gear immunity        | Rare     |
+| and more...      | (check EMI or Relics guide) | Various  |
 
 **Where to find relics**:
+
 - **Common relics**: drop from common mobs and basic chests
 - **Uncommon relics**: dungeon chests, better loot tables
 - **Rare relics**: YUNG's dungeons, Aether gold dungeons
@@ -559,16 +596,17 @@ Each relic you find is a permanent power upgrade — they stack with weapon affi
 
 Runes are **socketable items** that you slot into weapons and tools to add enchantment-like effects:
 
-| Rune | Effect | 
-|------|--------|
-| Fire Rune | Sets targets on fire |
-| Ice Rune | Slows targets |
-| Lightning Rune | Chain lightning damage |
-| Poison Rune | Poisons targets |
-| Life Rune | Lifesteal on hit |
-| and more... | Check EMI for full list |
+| Rune           | Effect                  |
+|----------------|-------------------------|
+| Fire Rune      | Sets targets on fire    |
+| Ice Rune       | Slows targets           |
+| Lightning Rune | Chain lightning damage  |
+| Poison Rune    | Poisons targets         |
+| Life Rune      | Lifesteal on hit        |
+| and more...    | Check EMI for full list |
 
 **How to use runes**:
+
 1. Find runes in loot or craft them at a **Rune Altar**
 2. Use a **Rune Pouch** (craftable, holds all your runes) — enabled by Bundle API
 3. Apply runes to weapons at the Rune Altar
@@ -576,18 +614,18 @@ Runes are **socketable items** that you slot into weapons and tools to add encha
 
 ### Keybindings
 
-| Keybind | Default | Mod | Notes |
-|---------|---------|-----|-------|
+| Keybind               | Default       | Mod                             | Notes                             |
+|-----------------------|---------------|---------------------------------|-----------------------------------|
 | View Weapon Abilities | `Ctrl` (hold) | Simply Swords / Simply Tooltips | Hold while hovering over a weapon |
-| Open Rune Pouch | TBD | Runes | Check Controls after installing |
+| Open Rune Pouch       | TBD           | Runes                           | Check Controls after installing   |
 
 ### Progression Through Wave 3
 
-| Phase | What you'll be doing |
-|-------|---------------------|
-| **Phase 1** (first few hours after install) | Kill mobs and open chests → find your first Simply Swords unique weapon and first Relic. Identify an Uncommon Affixology item. Socket a basic gem. |
-| **Phase 2** (mid-game) | Hunt for Rare and Epic gear. Build a collection of relics. Experiment with rune combos on your favorite weapons. Use the Deconstruction Stone to learn affixes. |
-| **Phase 3** (endgame) | Chase Legendary-tier affixes. Socket Unprecedented gems. Complete your relic collection. Max out mastery on your primary weapon type. |
+| Phase                                       | What you'll be doing                                                                                                                                            |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Phase 1** (first few hours after install) | Kill mobs and open chests → find your first Simply Swords unique weapon and first Relic. Identify an Uncommon Affixology item. Socket a basic gem.              |
+| **Phase 2** (mid-game)                      | Hunt for Rare and Epic gear. Build a collection of relics. Experiment with rune combos on your favorite weapons. Use the Deconstruction Stone to learn affixes. |
+| **Phase 3** (endgame)                       | Chase Legendary-tier affixes. Socket Unprecedented gems. Complete your relic collection. Max out mastery on your primary weapon type.                           |
 
 ### Chill Note
 
@@ -611,19 +649,20 @@ See [MODLIST-V2.md](./MODLIST-V2.md#wave-4--food-farming--comfort) for the full 
 
 This is your cooking hub. Start by finding new crops in the wild:
 
-| Crop | Where to find | What it makes |
-|------|---------------|---------------|
-| Tomato | Warm biomes | Tomato soup, sauces |
-| Cucumber | Plains, forests | Salads, pickles |
-| Corn | Plains | Cornbread, popcorn |
-| Lettuce | Forests, plains | Salads, sandwiches |
-| Rice | Swamps, riversides | Rice dishes |
+| Crop     | Where to find      | What it makes       |
+|----------|--------------------|---------------------|
+| Tomato   | Warm biomes        | Tomato soup, sauces |
+| Cucumber | Plains, forests    | Salads, pickles     |
+| Corn     | Plains             | Cornbread, popcorn  |
+| Lettuce  | Forests, plains    | Salads, sandwiches  |
+| Rice     | Swamps, riversides | Rice dishes         |
 
 Craft a **cutting board** (knife + planks) — your primary food prep tool. Use it to chop ingredients.
 
 Build a **cooking pot** (check EMI for recipe) — place it over a heat source (campfire, stove). Right-click to open the cooking GUI. Add ingredients, wait for the progress bar, collect your meal.
 
 Farm & Charm adds new **soil types**:
+
 - **Loam**: Balanced, good for most crops
 - **Silty soil**: Retains water longer
 - **Sandy soil**: Drains faster, good for desert crops
@@ -640,12 +679,12 @@ Build an **oven** (multi-block structure). Let's Do Bakery uses a brick oven for
 2. Place dough in the oven
 3. Wait for it to bake → bread, rolls, pastries
 
-| Item | Ingredients | Effect |
-|------|-------------|--------|
-| Bread | Wheat flour + water | Basic saturation |
-| Cake | Flour + eggs + sugar + milk | High saturation, decorative |
-| Pie | Flour + fruit filling | Buff: regeneration |
-| Cookies | Flour + chocolate | Quick eat, small saturation |
+| Item    | Ingredients                 | Effect                      |
+|---------|-----------------------------|-----------------------------|
+| Bread   | Wheat flour + water         | Basic saturation            |
+| Cake    | Flour + eggs + sugar + milk | High saturation, decorative |
+| Pie     | Flour + fruit filling       | Buff: regeneration          |
+| Cookies | Flour + chocolate           | Quick eat, small saturation |
 
 Cakes and pies are **decorative** too — place them on a counter or table. Right-click to eat a slice.
 
@@ -653,14 +692,15 @@ Cakes and pies are **decorative** too — place them on a counter or table. Righ
 
 Brewery adds fermentation-based drinks with real buffs:
 
-| Drink | Ingredients | Effect |
-|-------|-------------|--------|
-| Beer | Barley + water | Resistance |
-| Wine | Grapes + water | Haste |
-| Mead | Honey + water | Speed |
-| Whiskey | Wheat + water | Strength (short duration) |
+| Drink   | Ingredients    | Effect                    |
+|---------|----------------|---------------------------|
+| Beer    | Barley + water | Resistance                |
+| Wine    | Grapes + water | Haste                     |
+| Mead    | Honey + water  | Speed                     |
+| Whiskey | Wheat + water  | Strength (short duration) |
 
 **Process:**
+
 1. Grow the base crop (barley, grapes, hops)
 2. Craft at a **brewing station**
 3. Transfer to an **aging barrel** — the longer it ages, the stronger the effect
@@ -672,14 +712,15 @@ Aging takes real in-game time. Check your barrels periodically — fully aged dr
 
 The chill option. HerbalBrews adds restorative drinks without alcohol mechanics:
 
-| Tea | Ingredients | Effect |
-|-----|-------------|--------|
-| Green tea | Tea leaves | Health regen |
-| Chamomile | Chamomile flowers | Calming — reduces mob aggro range |
-| Lavender | Lavender | Saturation + minor health |
-| Mixed herbs | Various herbs | Multiple small buffs |
+| Tea         | Ingredients       | Effect                            |
+|-------------|-------------------|-----------------------------------|
+| Green tea   | Tea leaves        | Health regen                      |
+| Chamomile   | Chamomile flowers | Calming — reduces mob aggro range |
+| Lavender    | Lavender          | Saturation + minor health         |
+| Mixed herbs | Various herbs     | Multiple small buffs              |
 
 **Process:**
+
 1. Grow tea leaves, chamomile, lavender
 2. Dry them in a **drying rack**
 3. Brew in a **tea kettle** over a heat source
@@ -692,11 +733,13 @@ Teas are excellent for exploration — the calming effect from chamomile makes c
 Candlelight is about **presentation**. It adds:
 
 **Cooking tools:**
+
 - **Frying pan**: Cook meat and vegetables
 - **Cooking pot**: Larger batch meals
 - **Saucepan**: Soups and sauces
 
 **Dining decoration:**
+
 - **Plates and bowls**: Place them on tables, put food on them
 - **Glasses and mugs**: Drink from them (works with Brewery drinks)
 - **Tablecloths**: Decorative, multiple colours
@@ -706,11 +749,11 @@ Candlelight is about **presentation**. It adds:
 
 ### Progression Through Wave 4
 
-| Phase | What you'll be doing |
-|-------|---------------------|
-| **Phase 1** (first hours) | Find wild crops, craft cutting board + cooking pot, make first meals. Discover goats in mountains |
-| **Phase 2** (mid-game) | Build an oven (Bakery), brewing station + barrels (Brewery), tea kettle (HerbalBrews). Start aging drinks. Automate crop harvesting with Oritech |
-| **Phase 3** (endgame) | Full kitchen with all stations. Stocked pantry, wine cellar, tea garden. Cook feasts for the spectacle. Buff yourself before major content |
+| Phase                     | What you'll be doing                                                                                                                             |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Phase 1** (first hours) | Find wild crops, craft cutting board + cooking pot, make first meals. Discover goats in mountains                                                |
+| **Phase 2** (mid-game)    | Build an oven (Bakery), brewing station + barrels (Brewery), tea kettle (HerbalBrews). Start aging drinks. Automate crop harvesting with Oritech |
+| **Phase 3** (endgame)     | Full kitchen with all stations. Stocked pantry, wine cellar, tea garden. Cook feasts for the spectacle. Buff yourself before major content       |
 
 ### Chill Note
 
@@ -742,6 +785,6 @@ Recommended JVM arguments (for Minecraft Launcher → Installation → Edit → 
 
 | System RAM | Recommended allocation |
 |------------|------------------------|
-| 16 GB | `-Xms10g -Xmx10g` |
-| 32 GB | `-Xms22g -Xmx22g` |
-| 64 GB | `-Xms48g -Xmx48g` |
+| 16 GB      | `-Xms10g -Xmx10g`      |
+| 32 GB      | `-Xms22g -Xmx22g`      |
+| 64 GB      | `-Xms48g -Xmx48g`      |
