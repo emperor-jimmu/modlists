@@ -94,6 +94,10 @@ Mod Management       Add mods one at a time, test launch after each addition
                         - AppleSkin (food info)
                         - Loot Journal: Pickup Notifier (pickup notifications)
                         - Fancy Toasts (advancement toasts)
+                        - Obscure Tooltips (animated tooltip visuals)
+                        - Immersive UI (animated UI, smooth hotbar, item particles)
+                        - Traveler's Titles (biome/dimension entry titles)
+                        - JourneyMap Integration (Waystone markers on map)
 
 Data Packs           Stored in datapacks/, each with a README explaining purpose
                      Worldgen tweaks, QoL changes, and loot table modifications
