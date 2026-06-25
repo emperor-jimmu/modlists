@@ -595,6 +595,129 @@ Wave 3 adds **chase content** — there's always a better weapon to find, a bett
 
 ---
 
+## Wave 4 — Food, Farming & Comfort
+
+This wave makes food meaningful, farming satisfying, and your home cozy. The **Let's Do** ecosystem replaces Farmer's Delight as the Fabric-native cooking hub — all Fabric-native, no porting layer.
+
+Farm & Charm is the core; Bakery, Brewery, HerbalBrews, and Candlelight extend it. No hunger/thirst overhauls, no decay mechanics — just better food that's fun to grow, cook, and share.
+
+### Install
+
+See [MODLIST-V2.md](./MODLIST-V2.md#wave-4--food-farming--comfort) for the full mod list.
+
+### How to Use
+
+#### Farm & Charm — The Core
+
+This is your cooking hub. Start by finding new crops in the wild:
+
+| Crop | Where to find | What it makes |
+|------|---------------|---------------|
+| Tomato | Warm biomes | Tomato soup, sauces |
+| Cucumber | Plains, forests | Salads, pickles |
+| Corn | Plains | Cornbread, popcorn |
+| Lettuce | Forests, plains | Salads, sandwiches |
+| Rice | Swamps, riversides | Rice dishes |
+
+Craft a **cutting board** (knife + planks) — your primary food prep tool. Use it to chop ingredients.
+
+Build a **cooking pot** (check EMI for recipe) — place it over a heat source (campfire, stove). Right-click to open the cooking GUI. Add ingredients, wait for the progress bar, collect your meal.
+
+Farm & Charm adds new **soil types**:
+- **Loam**: Balanced, good for most crops
+- **Silty soil**: Retains water longer
+- **Sandy soil**: Drains faster, good for desert crops
+
+Use a **hoe** on dirt blocks to create these soil types. They behave like farmland but offer different bonuses.
+
+**Animals**: Goats spawn in mountain biomes — can be bred and milked. Bees (already in vanilla) interact with new flowers.
+
+#### Bakery — Breads & Pastries
+
+Build an **oven** (multi-block structure). Let's Do Bakery uses a brick oven for baking:
+
+1. Craft dough from flour + water
+2. Place dough in the oven
+3. Wait for it to bake → bread, rolls, pastries
+
+| Item | Ingredients | Effect |
+|------|-------------|--------|
+| Bread | Wheat flour + water | Basic saturation |
+| Cake | Flour + eggs + sugar + milk | High saturation, decorative |
+| Pie | Flour + fruit filling | Buff: regeneration |
+| Cookies | Flour + chocolate | Quick eat, small saturation |
+
+Cakes and pies are **decorative** too — place them on a counter or table. Right-click to eat a slice.
+
+#### Brewery — Drinks & Fermentation
+
+Brewery adds fermentation-based drinks with real buffs:
+
+| Drink | Ingredients | Effect |
+|-------|-------------|--------|
+| Beer | Barley + water | Resistance |
+| Wine | Grapes + water | Haste |
+| Mead | Honey + water | Speed |
+| Whiskey | Wheat + water | Strength (short duration) |
+
+**Process:**
+1. Grow the base crop (barley, grapes, hops)
+2. Craft at a **brewing station**
+3. Transfer to an **aging barrel** — the longer it ages, the stronger the effect
+4. Drink from a **glass/mug** (craft from glass)
+
+Aging takes real in-game time. Check your barrels periodically — fully aged drinks give the best buffs.
+
+#### HerbalBrews — Teas & Herbal Drinks
+
+The chill option. HerbalBrews adds restorative drinks without alcohol mechanics:
+
+| Tea | Ingredients | Effect |
+|-----|-------------|--------|
+| Green tea | Tea leaves | Health regen |
+| Chamomile | Chamomile flowers | Calming — reduces mob aggro range |
+| Lavender | Lavender | Saturation + minor health |
+| Mixed herbs | Various herbs | Multiple small buffs |
+
+**Process:**
+1. Grow tea leaves, chamomile, lavender
+2. Dry them in a **drying rack**
+3. Brew in a **tea kettle** over a heat source
+4. Drink from a **teacup**
+
+Teas are excellent for exploration — the calming effect from chamomile makes caving safer.
+
+#### Candlelight — Dining & Decoration
+
+Candlelight is about **presentation**. It adds:
+
+**Cooking tools:**
+- **Frying pan**: Cook meat and vegetables
+- **Cooking pot**: Larger batch meals
+- **Saucepan**: Soups and sauces
+
+**Dining decoration:**
+- **Plates and bowls**: Place them on tables, put food on them
+- **Glasses and mugs**: Drink from them (works with Brewery drinks)
+- **Tablecloths**: Decorative, multiple colours
+- **Candelabras**: Light sources with ambiance
+
+**Feasts**: Cook a large meal in a pot, place it on a table, and it serves multiple portions. In multiplayer, everyone can eat from the same dish. In singleplayer, it's a satisfying presentation — you made a whole feast for yourself.
+
+### Progression Through Wave 4
+
+| Phase | What you'll be doing |
+|-------|---------------------|
+| **Phase 1** (first hours) | Find wild crops, craft cutting board + cooking pot, make first meals. Discover goats in mountains |
+| **Phase 2** (mid-game) | Build an oven (Bakery), brewing station + barrels (Brewery), tea kettle (HerbalBrews). Start aging drinks. Automate crop harvesting with Oritech |
+| **Phase 3** (endgame) | Full kitchen with all stations. Stocked pantry, wine cellar, tea garden. Cook feasts for the spectacle. Buff yourself before major content |
+
+### Chill Note
+
+Wave 4 is **entirely optional**. You never need to cook a single meal. But if you do, the food is better than vanilla, the farming is satisfying, and the decoration makes your base feel lived-in. No mechanics remove your ability to just eat steak — this is all upside, no pressure.
+
+---
+
 ## General Tips
 
 ### Finding Help

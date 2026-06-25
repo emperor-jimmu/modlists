@@ -1,6 +1,6 @@
 # Mod List V2 — Minecraft 1.21.1 Fabric
 
-**Status: Waves 0–3 (Foundation, Tech, Exploration, Equipment Magic & Loot) drafted — Wave 4 open**
+**Status: Waves 0–4 (Foundation, Tech, Exploration, Equipment Magic, Food & Farming) drafted — Wave 5 open**
 
 This document defines the mod set for the V2 version of this modpack, targeting **Minecraft 1.21.1** on the **Fabric** modloader. The four pillars (power fantasy, easy-to-standard difficulty, 200h+ content, chill living) remain unchanged — see [AGENTS.md](./AGENTS.md) for the full vision.
 
@@ -220,6 +220,54 @@ The magic pillar manifests through **gear**, not spellbooks. Every weapon drop c
 
 ---
 
+## Wave 4 — Food, Farming & Comfort
+
+The Let's Do ecosystem replaces Farmer's Delight as the Fabric-native cooking hub. No hunger/thirst overhauls, no decay mechanics — just better food that's fun to grow, cook, and share.
+
+Farm & Charm is the core; Bakery, Brewery, HerbalBrews, and Candlelight extend it without overlapping. All dependencies (Cloth Config, Architectury API) already present from earlier waves.
+
+### Core Mods
+
+| Mod                | Version | Download | Role |
+|--------------------|---------|----------|------|
+| Farm & Charm       | 1.1.22  | [Modrinth](https://modrinth.com/mod/lets-do-farm-charm) | Core cooking/farming hub — new crops, soil types, cutting board, cooking pot, stove, animals |
+| Bakery             | 2.1.6   | [Modrinth](https://modrinth.com/mod/lets-do-bakery) | Breads, cakes, pies, pastries — multi-block oven, dough crafting, decorative cakes |
+| Brewery            | 2.1.9   | [Modrinth](https://modrinth.com/mod/lets-do-brewery) | Fermentation, alcoholic drinks — brewing station, aging barrels, drink effects (haste, resistance) |
+| HerbalBrews        | 1.1.3   | [Modrinth](https://modrinth.com/mod/lets-do-herbalbrews) | Teas and herbal drinks — tea leaves, chamomile, lavender, restorative effects |
+| Candlelight        | 2.1.12  | [Modrinth](https://modrinth.com/mod/lets-do-candlelight) | Dining decoration and feasts — cooking pots, pans, plates, glasses, tablecloths, candelabras |
+
+### Dependencies
+
+All required libraries already present from earlier waves:
+
+| Library | Present Since | Required By |
+|---------|---------------|-------------|
+| Cloth Config API  | Wave 0 | Farm & Charm, Bakery, Brewery, Candlelight |
+| Architectury API  | Wave 0 | All Let's Do mods |
+
+### Integration with Other Waves
+
+| Wave | Integration |
+|------|-------------|
+| Wave 1 (Oritech) | Automated farm machines can grow/harvest Let's Do crops. Item pipes feed ingredients into cooking machines |
+| Wave 2 (Exploration) | New crops spawn naturally in Terralith/Tectonic biomes. Saturation meals make exploration safer |
+| Wave 3 (Equipment Magic) | Food buffs stack with gear affixes — fully fed + Epic-geared player is significantly stronger |
+
+### Keybindings
+
+| Keybind | Default | Mod | Notes |
+|---------|---------|-----|-------|
+| Open Cooking Pot | Right-click | Farm & Charm | Opens the cooking GUI |
+| Open Oven | Right-click | Bakery | Multi-block oven interface |
+
+### Config Changes
+
+- Farm & Charm: verify crop spawn rates in Terralith biomes
+- Brewery: ensure drink buffs are balanced for the power curve
+- All mods: verify no hunger drain or decay mechanics are enabled by default
+
+---
+
 ## Data Packs
 
 | Data Pack        | Purpose                                                       | Status |
@@ -251,13 +299,15 @@ Shaderpacks are `.zip` files in `shaderpacks/`, not `mods/`. Platform-agnostic (
 | Colonies pillar | MineColonies           | Dropped (Forge-only)             |
 | Tech pillar     | Create + Mekanism      | Oritech (Fabric-native)          |
 | Magic pillar    | Ars Nouveau, Apotheosis, Iron's Spells | Equipment magic: Simply Swords + Savaru's Affixology + Relics RPG + Runes |
+| Food pillar     | Farmer's Delight + Brewin' And Chewin' | Let's Do ecosystem (Farm & Charm + Bakery + Brewery + HerbalBrews + Candlelight) |
 | Terrain mod     | Lithosphere considered | Skipped — keep worldgen flexible |
 
 ---
 
 ## Next Up
 
-Waves 0–3 drafted, version pins populated. Next:
-- Wave 4 — Food, Farming & Comfort (Farmer's Delight Fabric, Delightful, Brewin' And Chewin')
+Waves 0–4 drafted, version pins populated. Next:
+- Wave 5 — TBD (Combat & Mob Variety? Performance polish? QoL pass?)
 - Data packs and config tuning for all waves
 - Cross-wave loot integration testing
+- First test launch with Waves 0–4

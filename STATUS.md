@@ -22,6 +22,17 @@
 - [x] Added: The Aether 1.5.11, Deeper and Darker 1.3.3-plus-b, BetterEnd 21.0.11, BCLib 21.0.13
 - [x] Updated AGENTS.md with Lithostitched requirement
 
+### Wave 4 — Food, Farming & Comfort
+- [x] Design doc written: `docs/superpowers/specs/wave-4-food-farming-comfort.md`
+- [x] Version pins confirmed via Modrinth API
+  - Farm & Charm 1.1.22
+  - Bakery 2.1.6
+  - Brewery 2.1.9
+  - HerbalBrews 1.1.3
+  - Candlelight 2.1.12
+- [x] Updated MODLIST-V2.md with full Wave 4 section
+- [x] Updated GETTING-STARTED-V2.md with Wave 4 tutorial
+
 ### Wave 0 — Foundation (QoL, Performance, Storage, Comfort)
 - [x] Determined complete Wave 0 mod set
 - [x] Documented in MODLIST-V2.md
@@ -38,19 +49,17 @@
 
 ## Pending
 
-### Wave 4 — Food, Farming & Comfort
-- Farmer's Delight Fabric?
-- Delightful, Brewin' And Chewin'?
-- To be evaluated
+### Wave 5 — TBD
+- Combat & Mob Variety? Performance polish? QoL pass?
 
 ### Config Overrides
 - All waves: identify mods needing config changes
 - Document each override in config/ directory
 
 ### Testing
-- Test launch with Waves 0–3
+- Test launch with Waves 0–4
 - Verify no mod conflicts
-- Cross-wave loot integration testing
+- Cross-wave integration testing (Oritech + Let's Do automated farming, loot in Terralith biomes, crop spawn rates)
 - Config tuning per mod
 
 ### Data Packs
