@@ -266,7 +266,17 @@ To enable it, add these JVM arguments in your launcher's Java settings (e.g., Mi
 -Xms8g -Xmx8g -XX:+UseShenandoahGC -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch -XX:+UseStringDeduplication -XX:-OmitStackTraceInFastThrow -XX:+OptimizeStringConcat
 ```
 
-Adjust `-Xms` and `-Xmx` to match your system (use equal values for best performance — e.g., `-Xms12g -Xmx12g` for 16 GB systems). The Adoptium Temurin JDK 17 (recommended above) includes Shenandoah — no special Java build needed for 1.20.1.
+Adjust `-Xms` and `-Xmx` to match your system (use equal values for best performance):
+
+| System RAM | Recommended allocation | JVM args                              |
+|------------|------------------------|---------------------------------------|
+| 16 GB      | `-Xms10g -Xmx10g`     | Leave 6 GB for OS + background apps   |
+| 32 GB      | `-Xms22g -Xmx22g`     | Leave 10 GB for OS + background apps  |
+| 64 GB      | `-Xms48g -Xmx48g`     | Leave 16 GB for OS + background apps  |
+
+On 32 GB / 64 GB systems with 6+ cores, you can also add `-XX:+UseLargePages` for additional gains if your OS is configured for huge pages (advanced — requires OS-level setup; search for "enable large pages Windows/Linux" for your OS).
+
+The Adoptium Temurin JDK 17 (recommended above) includes Shenandoah — no special Java build needed for 1.20.1.
 
 > **Note**: Shenandoah is CPU-intensive. On low-core-count systems (2-4 cores), the default G1GC may perform better. Test both to see what works on your hardware.
 
