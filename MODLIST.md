@@ -59,6 +59,9 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Fragmentum (required by Loot Journal)      | 1.3.0  | `fragmentum-forge-1.20.1-1.3.0.jar`           | [Download](https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar)         |
 | Moonlight Library (required by Supplementaries) | 2.16.34 | `moonlight-1.20-2.16.34-forge.jar`             | [Download](https://cdn.modrinth.com/data/twkfQtEc/versions/43kjMXMx/moonlight-1.20-2.16.34-forge.jar)        |
 | Iceberg (required by Item Highlighter)          | 1.1.25  | `Iceberg-1.20.1-forge-1.1.25.jar`             | [Download](https://cdn.modrinth.com/data/5faXoLqX/versions/BQ8rJPXV/Iceberg-1.20.1-forge-1.1.25.jar)        |
+| Bookshelf (required by Dark Paintings)          | 20.2.15 | `Bookshelf-Forge-1.20.1-20.2.15.jar`          | [Download](https://cdn.modrinth.com/data/uy4Cnpcm/versions/7eS5OIHj/Bookshelf-Forge-1.20.1-20.2.15.jar)      |
+| OctoLib (required by Immersive UI)              | 0.5.0.1 | `OctoLib-FORGE-0.5.0.1+1.20.1.jar`            | [Download](https://cdn.modrinth.com/data/RH2KUdKJ/versions/HZ7KmyXp/OctoLib-FORGE-0.5.0.1%2B1.20.1.jar)     |
+| Architectury API (required by OctoLib)          | 9.2.14  | `architectury-9.2.14-forge.jar`                | [Download](https://cdn.modrinth.com/data/lhGA9TYQ/versions/1MKTLiiG/architectury-9.2.14-forge.jar)           |
 
 ### Core Modpack
 
@@ -86,6 +89,7 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Corail Tombstone        | 9.1.0   | `tombstone-1.20.1-9.1.0.jar`                     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/corail-tombstone/files/8257477)                           |
 | Artifacts               | 9.5.19  | `artifacts-forge-9.5.19.jar`                    | [Download](https://cdn.modrinth.com/data/P0Mu4wcQ/versions/lrLPBSzq/artifacts-forge-9.5.19.jar)                   |
 | Supplementaries         | 3.1.43  | `supplementaries-1.20-3.1.43-forge.jar`         | [Download](https://cdn.modrinth.com/data/fFEIiSDQ/versions/S0TIJ1hU/supplementaries-1.20-3.1.43-forge.jar)        |
+| Dark Paintings          | 17.0.6  | `DarkPaintings-Forge-1.20.1-17.0.6.jar`         | [Download](https://cdn.modrinth.com/data/lFGQ4Hnk/versions/IGIHVEc9/DarkPaintings-Forge-1.20.1-17.0.6.jar)      |
 
 ### World & Exploration
 
@@ -116,6 +120,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 > **Aquamirae** is standalone. No additional dependencies.
 >
 > **Item Highlighter** requires **Iceberg** (listed in Dependency Layer) — a client-side library providing GUI utilities. **Jade Addons** extends **Jade** (already in the pack) — no additional dependencies.
+>
+> **Obscure Tooltips** requires **Fragmentum** (already in the pack for Loot Journal). **Dark Paintings** requires **Bookshelf** (listed in Dependency Layer). **Immersive UI** requires **OctoLib** which requires **Architectury API** (both listed in Dependency Layer). **Traveler's Titles** requires **YUNG's API** (already in the pack). **JourneyMap Integration** requires **JourneyMap** and optionally integrates with **Waystones** (both already in the pack). **JEED** is standalone — it optionally integrates with JEI (already in the pack). **Just Enough Mekanism Multiblocks** requires **JEI** and **Mekanism** (both already in the pack).
 
 ### Graphics
 
@@ -153,6 +159,12 @@ MineColonies distributes on CurseForge with required dependencies. CurseForge do
 | Loot Journal: Pickup Notifier | 6.2.1 | Customizable item pickup notifications — animations, themes, filtering, and layout options | `loot_journal-forge-1.20.1-6.2.1.jar` | [Download](https://cdn.modrinth.com/data/OJ6ZYz5L/versions/tkx0bPOi/loot_journal-forge-1.20.1-6.2.1.jar) |
 | Item Highlighter | 1.1.9 | Highlights newly picked-up items in your inventory with a gold border — clears on hover or inventory close | `Highlighter-1.20.1-forge-1.1.9.jar` | [Download](https://cdn.modrinth.com/data/cVNW5lr6/versions/rcQOLnyI/Highlighter-1.20.1-forge-1.1.9.jar) |
 | Jade Addons | 5.5.0 | Extended block info for Jade — adds Create stress/speed, Mekanism gas/progress, Ars source/mana, FD cooking progress, and more | `JadeAddons-1.20.1-Forge-5.5.0.jar` | [Download](https://cdn.modrinth.com/data/xuDOzCLy/versions/AvIT9ADi/JadeAddons-1.20.1-Forge-5.5.0.jar) |
+| Obscure Tooltips | 3.10.0 | Stylized tooltips with beautiful animations, particle effects, and ornamental accent frames | `obscure_tooltips-forge-1.20.1-3.10.0.jar` | [Download](https://cdn.modrinth.com/data/5vetjDBY/versions/sFFZXXl8/obscure_tooltips-forge-1.20.1-3.10.0.jar) |
+| JourneyMap Integration | 0.14-48 | Shows Waystones as JourneyMap markers, FTBChunks support, and more JourneyMap/QoL integrations | `jmi-forge-1.20.1-0.14-48.jar` | [Download](https://cdn.modrinth.com/data/M1ZKbfkJ/versions/BBbIV2h1/jmi-forge-1.20.1-0.14-48.jar) |
+| JEED | 2.2.5 | Adds detailed status effect descriptions to JEI — shows what each potion effect does | `jeed-1.20-2.2.5.jar` | [Download](https://cdn.modrinth.com/data/EO27GKs1/versions/jHYonbva/jeed-1.20-2.2.5.jar) |
+| Just Enough Mekanism Multiblocks | 4.10 | JEI page showing Mekanism multiblock structure costs and capabilities (tank capacity, turbine efficiency, reactor heat) | `JustEnoughMekanismMultiblocks-1.20.1-4.10.jar` | [Download](https://cdn.modrinth.com/data/kRaE85yQ/versions/3BODBkqD/JustEnoughMekanismMultiblocks-1.20.1-4.10.jar) |
+| Immersive UI | 0.3.0 | Animated UI components — smooth hotbar selector, item particles, screen shake, floating container matches | `ImmersiveUI-FORGE-0.3.0.jar` | [Download](https://cdn.modrinth.com/data/9wv7LuMc/versions/YbO8SNFq/ImmersiveUI-FORGE-0.3.0.jar) |
+| Traveler's Titles | 4.0.2 | RPG-like titles when entering biomes and dimensions — customizable, built-in support for modded dimensions and Waystones | `TravelersTitles-1.20-Forge-4.0.2.jar` | [Download](https://cdn.modrinth.com/data/JtifUr64/versions/oUSK4sOQ/TravelersTitles-1.20-Forge-4.0.2.jar) |
 
 ### Shaderpacks
 
@@ -185,10 +197,10 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 
 | Batch | Mods                                                                                                                                  | Check                                              |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, Moonlight Library, Iceberg, JEI, Jade, Jade Addons, Loot Journal: Pickup Notifier, Item Highlighter, Fancy Toasts, Embeddium, Oculus, Distant Horizons, JourneyMap, AppleSkin | Game starts, shader packs screen appears           |
+| 1     | Sophisticated Core, YUNG's API, Balm, Lionfish API, Curios API, Fragmentum, Moonlight Library, Iceberg, Bookshelf, OctoLib, Architectury API, JEI, Jade, Jade Addons, Loot Journal: Pickup Notifier, Item Highlighter, Fancy Toasts, Embeddium, Oculus, Distant Horizons, JourneyMap, JourneyMap Integration, AppleSkin, Obscure Tooltips, JEED, Immersive UI, Traveler's Titles | Game starts, shader packs screen appears           |
 | 2     | Sophisticated Backpacks, Sophisticated Storage, Guard Villagers                                                                       | Items appear in creative inventory                 |
 | 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                  | "Ponder" key (W) works on Create items             |
-| 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions                                                                     | Mekanism items/blocks visible                      |
+| 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions, Just Enough Mekanism Multiblocks                                   | Mekanism items/blocks visible, multiblock JEI pages work |
 | 5     | Applied Energistics 2                                                                                                                 | AE2 items visible, no dependency errors            |
 | 6     | Ars Nouveau, Apotheosis Ascended                                                                                                      | Spellbook items + enchanting/gear items visible    |
 | 7     | Farmer's Delight, Brewin' And Chewin', Delightful, Storage Delight                                                                     | Cooking items, keg, glass jars visible             |
@@ -197,7 +209,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 | 10    | Chunk Loaders                                                                                                                         | Chunks stay loaded when you go exploring, no crash |
 | 11    | Waystones, Corail Tombstone                                                                                                           | Waystones craftable, graves appear on death        |
 | 12    | The Aether, L_Ender's Cataclysm                                                                                                       | Both dimensions accessible, no crash               |
-| 13    | Artifacts, Aquamirae, Supplementaries                                                                                               | Artifacts in chests, Aquamirae biome generates, jars/globes craftable |
+| 13    | Artifacts, Aquamirae, Supplementaries, Dark Paintings                                                                                 | Artifacts in chests, Aquamirae biome generates, new paintings in creative tab |
 
 After each batch: (a) no crash on startup, (b) no missing-dependency errors in Forge mods screen, (c) creative inventory shows new items.
 
