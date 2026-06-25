@@ -79,7 +79,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 | Mekanism Additions      | 10.4.16  | `MekanismAdditions-1.20.1-10.4.16.80.jar`        | [Download](https://cdn.modrinth.com/data/a6F3uASn/versions/RFiZ24he/MekanismAdditions-1.20.1-10.4.16.80.jar)        |
 | Applied Energistics 2   | 15.4.10  | `appliedenergistics2-forge-15.4.10.jar`          | [Download](https://cdn.modrinth.com/data/XxWD5pD3/versions/7KVs6HMQ/appliedenergistics2-forge-15.4.10.jar)          |
 | Ars Nouveau             | 4.12.7   | `ars_nouveau-1.20.1-4.12.7-all.jar`              | [Download](https://cdn.modrinth.com/data/TKB6INcv/versions/Hw2aD01e/ars_nouveau-1.20.1-4.12.7-all.jar)              |
-| Apotheosis Ascended     | 1.4.0    | `apotheosis-ascended-1.4.0.jar`                  | [Download](https://cdn.modrinth.com/data/uwCpk80h/versions/BudEWzNX/apotheosis-ascended-1.4.0.jar)                  |
+| Apotheosis              | 7.4.8   | `Apotheosis-1.20.1-7.4.8.jar`                     | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/apotheosis/files?version=1.20.1)                           |
+| Apotheotic Additions    | 2.2.2   | `ApotheoticAdditions-1.20.1-V2.2.2.jar`           | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/apotheotic-additions/files?version=1.20.1)                 |
 | Farmer's Delight        | 1.3.2    | `FarmersDelight-1.20.1-1.3.2.jar`                | [Download](https://cdn.modrinth.com/data/R2OftAxM/versions/CsjS7EkP/FarmersDelight-1.20.1-1.3.2.jar)                |
 | Brewin' And Chewin'     | 3.2.1    | `BrewinAndChewin-1.20.1-3.2.1.jar`               | [Download](https://cdn.modrinth.com/data/hIu9KJTT/versions/9myDFPCD/BrewinAndChewin-1.20.1-3.2.1.jar)               |
 | Delightful              | 3.8.1    | `Delightful-1.20.1-3.8.1.jar`                    | [Download](https://cdn.modrinth.com/data/JtSnhtNJ/versions/HbEQIqIu/Delightful-1.20.1-3.8.1.jar)                    |
@@ -118,6 +119,8 @@ Place all `.jar` files directly into `mods/`. **Do not unzip them.**
 > **Artifacts** uses **Curios API** (already in the pack). No additional dependencies.
 >
 > **Aquamirae** is standalone. No additional dependencies.
+>
+> **Apotheosis** (by Shadows_of_Fire) is the core gear-customization mod — gems, affixes, enchanting overhaul, spawner modification, and boss mobs. It is actively maintained and available on **CurseForge only** (not on Modrinth). Download the **1.20.1 Forge** file. **Apotheotic Additions** extends Apotheosis with additional gems, items, and bosses — install it after Apotheosis.
 >
 > **Item Highlighter** requires **Iceberg** (listed in Dependency Layer) — a client-side library providing GUI utilities. **Jade Addons** extends **Jade** (already in the pack) — no additional dependencies.
 >
@@ -202,7 +205,7 @@ Add `.jar` files to `mods/` in batches, test-launching after each batch:
 | 3     | Create, Create: Big Cannons, Create: Steam 'n' Rails                                                                                                                                                                                                                                                                                                                             | "Ponder" key (W) works on Create items                                        |
 | 4     | Mekanism, Mekanism Generators, Mekanism Tools, Mekanism Additions, Just Enough Mekanism Multiblocks                                                                                                                                                                                                                                                                              | Mekanism items/blocks visible, multiblock JEI pages work                      |
 | 5     | Applied Energistics 2                                                                                                                                                                                                                                                                                                                                                            | AE2 items visible, no dependency errors                                       |
-| 6     | Ars Nouveau, Apotheosis Ascended                                                                                                                                                                                                                                                                                                                                                 | Spellbook items + enchanting/gear items visible                               |
+| 6     | Ars Nouveau, Apotheosis, Apotheotic Additions                                                                                                                                                                                                                                                                                                                                     | Spellbook items + enchanting/gear items, Apotheosis gems and affixes visible  |
 | 7     | Farmer's Delight, Brewin' And Chewin', Delightful, Storage Delight                                                                                                                                                                                                                                                                                                               | Cooking items, keg, glass jars visible                                        |
 | 8     | YUNG's Better Dungeons, Better Mineshafts, Better Ocean Monuments                                                                                                                                                                                                                                                                                                                | World gen runs, no errors                                                     |
 | 9     | MineColonies + BlockUI + Domum Ornamentum + Multi-Piston + Structurize                                                                                                                                                                                                                                                                                                           | Colony items visible, no crash                                                |
@@ -264,19 +267,16 @@ All MineColonies settings live in `minecolonies-server.toml` under two categorie
 
 Ars Nouveau server settings live in `ars_nouveau-server.toml` under the `mana` category.
 
-| Setting      | Default | Recommended | Why                                                                    |
-|--------------|---------|-------------|------------------------------------------------------------------------|
-| `baseMax`    | 100     | `150`       | More starting max mana — smoother early-game spellcasting              |
-| `baseRegen`  | 5       | `3`         | Faster base mana regen (seconds) — less downtime, more casting         |
-| `manaBoost`  | 25      | `35`        | More mana per Mana Boost level — supports power fantasy scaling        |
-| `glyphRegen` | 0.33    | `0.5`       | Faster regen bonus per glyph — rewards learning more spells            |
+| Setting      | Default | Recommended | Why                                                             |
+|--------------|---------|-------------|-----------------------------------------------------------------|
+| `baseMax`    | 100     | `125`       | More starting max mana — smoother early-game spellcasting       |
+| `baseRegen`  | 5       | `3`         | Faster base mana regen (seconds) — less downtime, more casting  |
+| `manaBoost`  | 25      | `30`        | More mana per Mana Boost level — supports power fantasy scaling |
+| `glyphRegen` | 0.33    | `0.5`       | Faster regen bonus per glyph — rewards learning more spells     |
 
-### Apotheosis — `config/apotheosis/affix.toml`
+### Apotheosis — `config/apotheosis/`
 
-| Setting          | Default | Recommended | Why                                                                           |
-|------------------|---------|-------------|-------------------------------------------------------------------------------|
-| `maxUniqueGems`  | 3       | `5`         | More gem slots — feeds power fantasy, gives more gear customization           |
-| `bossItemChance` | 0.5     | `0.6`       | Slightly better boss loot — incentivizes boss hunting without trivializing it |
+Apotheosis generates its config files on first launch in `config/apotheosis/`. Default settings are well-balanced for this modpack. Key modules: **affix** (gems & affixes on gear), **enchantment** (enchanting overhaul), **spawner** (spawner modification), **potion** (potion effects), **village** (village trades), and **deadly** (boss mobs). The affix module is what provides the gear-customization pipeline that feeds the power fantasy — no config changes needed.
 
 ### Create — `config/create-common.toml`
 

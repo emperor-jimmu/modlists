@@ -31,7 +31,7 @@ The player eases into the world. Punch trees, build a starter home with Sophisti
 
 ### Phase 2 — Industrial Ascent (hours 40-200)
 
-This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. Ars Nouveau matures into a genuine combat spellbook — the player can handle raids and bosses without hiding behind walls. Create: Big Cannons enters the picture for colony defense and siege spectacle. Chunk Loaders keep factories running across dimensions. Apotheosis Ascended gems and affixes supplement Mekanism and Ars gear. The Farmer's Delight ecosystem expands with Brewin' And Chewin' (fermentation, drinks) and Delightful (new meals). YUNG's dungeon mods enrich exploration loot. Storage Delight adds kitchen furniture for base decoration.
+This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. Ars Nouveau matures into a genuine combat spellbook — the player can handle raids and bosses without hiding behind walls. Create: Big Cannons enters the picture for colony defense and siege spectacle. Chunk Loaders keep factories running across dimensions. Apotheosis gems and affixes supplement Mekanism and Ars gear. The Farmer's Delight ecosystem expands with Brewin' And Chewin' (fermentation, drinks) and Delightful (new meals). YUNG's dungeon mods enrich exploration loot. Storage Delight adds kitchen furniture for base decoration.
 
 - Difficulty: standard, gradual ramp
 - Focus: deep automation scaling, logistics puzzles, resource multiplication
@@ -65,7 +65,7 @@ The complete mod list with versions, roles, and download links is maintained in 
 - YUNG's dungeon mods add exploration targets and loot injection points — they feed items into Apotheosis affix/gem system and reward dungeon diving in any phase.
 - The Aether, Twilight Forest, and L_Ender's Cataclysm are optional endgame combat dimensions. They don't gate or block any tech/magic progression — the player engages when they choose.
 - Waystones (fast travel) and Corail Tombstone (forgiving death) are chill-living enablers. Their configs should always be set to reduce friction, never to add it.
-- Apotheosis Ascended gems and affixes work on Mekanism armor/tools and Ars spellbooks — gear customization feeds power fantasy across both tracks.
+- Apotheosis gems and affixes work on Mekanism armor/tools and Ars spellbooks — gear customization feeds power fantasy across both tracks.
 - Chunk Loaders are essential for Phase 2+ automation across dimensions. They keep Mekanism factories and MineColonies running when the player explores.
 - No data pack should duplicate a mod's functionality. Data packs handle targeted QoL only (e.g., anti-creeper grief, armor stand posing).
 - No mod should duplicate another mod's core purpose. If two mods provide the same capability, one must be configured lower or gated later.

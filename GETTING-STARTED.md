@@ -129,7 +129,7 @@ The pack doesn't have a single win condition. If you want direction beyond "do w
 |------|-----|
 | **Full Mekasuit** | The endgame armor from Mekanism. Flight, extreme damage reduction, built-in jetpack, night vision, and more. The ultimate power fantasy. |
 | **Master all Ars Nouveau glyphs** | Collect every glyph and build a spellbook with 6+ effects per cast. Teleport, heal, explode, summon — all in one spell. |
-| **Max out an Apotheosis Ascended gem build** | Collect unique gems, socket them into your gear, and stack affixes. The difference between unmodified gear and a fully gemmed set is enormous. |
+| **Max out an Apotheosis gem build** | Collect unique gems, socket them into your gear, and stack affixes. The difference between unmodified gear and a fully gemmed set is enormous. |
 | **Oneshot a Twilight Forest boss** | With maxed Mekasuit + Ars spells + Apotheosis gems, return to the Twilight Forest and see how fast the naga falls. |
 
 > These aren't quests — there's no reward screen, no completion popup. They're self-directed milestones. If none of them appeal, ignore them. Building a pretty garden for 10 hours is equally valid.
