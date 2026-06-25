@@ -8,7 +8,7 @@ This document defines the vision, constraints, and working conventions for this 
 
 This modpack is built around four pillars that must coexist in every design decision:
 
-1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper.
+1. **Serious power fantasy** — the player should eventually become godlike. Flight, oneshotting bosses, extreme mobility, personal invincibility. Power is personal — world-altering magic is kept minimal or absent. The player becomes a demigod, not a world-shaper. **RPG-style levels and skills** reinforce this — every action earns XP, every level-up unlocks or improves a tangible ability, and the player always feels like they're growing stronger even between gear upgrades.
 
 2. **Easy-to-standard difficulty curve** — the early game is accessible and forgiving. The ramp is smooth, never a wall. No single biome, mob, or mechanic gatekeeps progress. Difficulty escalates at the player's pace through voluntary engagement with harder content.
 
@@ -28,6 +28,7 @@ The player eases into the world. Punch trees, build a starter home with Sophisti
 - Focus: shelter, food, basic automation
 - New mechanics are introduced slowly
 - The world feels safe enough to build something pretty
+- **RPG levels 1–25**: early skill unlocks (mining speed, jump height, fall damage reduction)
 
 ### Phase 2 — Industrial Ascent (hours 40-200)
 
@@ -37,6 +38,7 @@ This is the core of the modpack. Mekanism expands into mid-tier and late-tier: d
 - Focus: deep automation scaling, logistics puzzles, resource multiplication
 - This phase alone should provide 100-150 hours of content
 - Every session unlocks a new capability, nothing comes fast
+- **RPG levels 25–60**: passive skill trees (damage boosts, resource efficiency, movement upgrades)
 
 ### Phase 3 — Perpetual Ascent (hours 200+)
 
@@ -52,14 +54,13 @@ No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shi
 
 ### Mod List
 
-The complete mod list with versions, roles, and download links is maintained in **[MODLIST.md](./MODLIST.md)**. That is the single source of truth for what mods are in the pack.
+The complete mod list with versions, roles, and download links is maintained in **[MODLIST.md](./MODLIST.md)** (V1 — Forge 1.20.1) and **[MODLIST-V2.md](./MODLIST-V2.md)** (V2 — Fabric 1.21.1). The V2 list is the active development target.
 
 ### Integration Rules
 
 - Create outputs (cobblestone, alloys, processed ingots) feed into AE2 storage. AE2 autocrafting queues feed back into Mekanism.
-- MineColonies resource production plugs into AE2 storage. Colony building requests consume excess from automation surplus.
 - Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other.
-- Guard Villagers scale their presence with MineColonies size. A larger colony should have proportionally more guards.
+- Guard Villagers scale their presence with colony size. A larger base should have proportionally more guards.
 - Sophisticated Storage is intentionally outclassed by AE2 in Phase 2 but remains useful for localized micro-storage near Create contraptions.
 - Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), Delightful (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.
 - YUNG's dungeon mods add exploration targets and loot injection points — they feed items into Apotheosis affix/gem system and reward dungeon diving in any phase.
@@ -75,29 +76,30 @@ The complete mod list with versions, roles, and download links is maintained in 
 ## Technical Standards
 
 ```
-Minecraft Version    1.20.1
-Modloader            Forge (locked — MineColonies is Forge-exclusive)
-Java Version         17
+Minecraft Version    1.21.1
+Modloader            Fabric
+Java Version         21
 
 Configuration        All non-default config overrides live in config/
                      Each override must be documented: what was changed and why
 
-Mod Management       Add mods one at a time, test launch after each addition
+Mod Management       Add mods one wave at a time, test launch after each wave
                      Never add a mod that duplicates an existing mod's role
                        QoL and performance mods are encouraged:
-                        - JEI / REI (recipe viewer)
+                        - EM! / REI (recipe viewer)
                         - Jade / WAILA (block info)
-                        - Embeddium / Rubidium (performance)
-                        - Oculus (shader loader — enables Iris shaderpacks)
+                        - Sodium (performance)
+                        - Iris (shader loader — enables shaderpacks)
                         - Distant Horizons (LOD — extreme render distance)
-                        - JourneyMap / Xaero's (minimap)
+                        - Xaero's Minimap / JourneyMap (minimap)
                         - AppleSkin (food info)
                         - Loot Journal: Pickup Notifier (pickup notifications)
                         - Fancy Toasts (advancement toasts)
                         - Obscure Tooltips (animated tooltip visuals)
                         - Immersive UI (animated UI, smooth hotbar, item particles)
                         - Traveler's Titles (biome/dimension entry titles)
-                        - JourneyMap Integration (Waystone markers on map)
+                        - Mod Menu (mod list and config GUI)
+                        - Continuity (connected textures)
 
 Data Packs           Stored in datapacks/, each with a README explaining purpose
                      Worldgen tweaks, QoL changes, and loot table modifications
@@ -108,8 +110,10 @@ Resource Packs       Stored in resourcepacks/, optional, documented
 File Layout          config/              — mod config overrides, tracked in version control
                      datapacks/           — world data packs
                      resourcepacks/       — optional resource packs
-                     GETTING-STARTED.md   — learning resources, in-game tutorial references
-                     MODLIST.md           — live mod list with versions and install instructions
+                     GETTING-STARTED.md   — learning resources, in-game tutorial references (V1)
+                     GETTING-STARTED-V2.md — per-wave tutorials, keybinds, configs (V2)
+                     MODLIST.md           — V1 mod list (Forge 1.20.1)
+                     MODLIST-V2.md        — V2 mod list with wave install order (Fabric 1.21.1)
                      STATUS.md            — what's configured, what's pending
                      AGENTS.md            — this file
 
