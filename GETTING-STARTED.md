@@ -139,13 +139,14 @@ The pack doesn't have a single win condition. If you want direction beyond "do w
 | Mod              | How to Learn                                                                                                                                       |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | **JEI**          | Press `R` on any item to see recipes, `U` to see uses. The recipe browser is your primary tool for learning every mod in the pack.                 |
-| **Create**       | Press `W` on any Create block or item to open the **Ponder** system — an interactive, animated tutorial that explains each component step by step. Also: [Create: Steam 'n' Rails Guide](https://www.minecraft-guides.com/mod/create-steam-n-rails/). |
+| **Create**       | Press `W` on any Create block or item to open the **Ponder** system — an interactive, animated tutorial that explains each component step by step. Also: [Create: Steam 'n' Rails Guide](https://www.minecraft-guides.com/mod/create-steam-n-rails/), [Create Mod Wiki](https://createmodminecraft.miraheze.org/wiki/Main_Page), and [Create YouTube playlists](https://www.youtube.com/channel/UCrKV2QTuyGcv4E3eSJpBiYA/playlists). |
 | **Ars Nouveau**  | Craft the **Worn Notebook** — it's the complete in-game guide covering all spells, glyphs, and mechanics. Also: [Ars Nouveau Guide](https://www.minecraft-guides.com/mod/ars-nouveau/) and [Ars.Guide](https://ars.guide/). |
 | **Mekanism**     | Craft the **Tablet** — the in-game guide for all machines, tiers, and progression. Also: [Mekanism Guide](https://www.minecraft-guides.com/mod/mekanism/), [Mekanism Tools Guide](https://www.minecraft-guides.com/mod/mekanism-tools/), and [Official Mekanism Wiki](https://wiki.aidancbrady.com/wiki/Main_Page). |
 | **Apotheosis**   | The in-game guide covers gems, affixes, enchanting, and spawners. Also: [Apotheosis Guide](https://www.minecraft-guides.com/mod/apotheosis/). |
 | **MineColonies** | The **Build Tool** includes a handbook. Also open the in-game **Help** menu for colony management guides.                                          |
 | **Sophisticated Storage / Backpacks** | Shift-right-click a barrel to rename it. Backpacks open with `B`. Both can be upgraded through iron, gold, diamond tiers. Also: [Sophisticated Storage Guide](https://www.minecraft-guides.com/mod/sophisticated-storage/) and [Sophisticated Backpacks Guide](https://www.minecraft-guides.com/mod/sophisticated-backpacks/). |
 | **Farmer's Delight** | Craft a cooking pot and cutting board to start making hearty meals. Explore the world for new crops and recipes. Also: [Farmer's Delight Guide](https://www.minecraft-guides.com/mod/farmers-delight/). |
+| **L_Ender's Cataclysm** | The Ignis, Ancient Remnant, and Leviathan bosses are the pack's toughest combat encounters. Also: [Cataclysm Wiki](https://www.minecraft-guides.com/wiki/cataclysm/). |
 
 ## Video Tutorials
 
