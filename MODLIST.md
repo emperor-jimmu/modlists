@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - **Minecraft: Java Edition** (not Bedrock, not Preview) — purchased and installed via the [official Minecraft Launcher](https://www.minecraft.net/download)
-- **Java 17** (required by Minecraft 1.20.1 + Forge) — download from [Adoptium](https://adoptium.net/download/) (Temurin JDK 17)
+- **Java 17** (required by Minecraft 1.20.1 + Forge) — download from [Adoptium](https://adoptium.net/download/) (Temurin JDK 17). Temurin includes the **Shenandoah GC** — see [Step 5a](#step-5a--java-performance-tuning) for recommended JVM arguments.
 
 > **Can mods be installed via the Forge installer?** No. The Forge installer only installs the modloader itself. Mod `.jar` files must be downloaded manually and placed in the `mods/` folder. Third-party launchers (Prism Launcher, Modrinth App, CurseForge App) can automate this, but vanilla Forge cannot.
 
@@ -253,6 +253,22 @@ After all mods are installed, add `rethinking-voxels_r0.1-beta9.zip` to `shaderp
 ## Step 5 — Launch
 
 Launch the `forge-1.20.1` profile from the Minecraft Launcher. First startup with all mods may take 2-5 minutes while Forge processes everything. Subsequent launches will be faster.
+
+---
+
+## Step 5a — Java Performance Tuning
+
+The **Shenandoah garbage collector** can significantly reduce lag spikes from Java GC pauses — many players report 50-200+ FPS gains with enough RAM and CPU cores allocated. It works best with 8-16 GB allocated to Minecraft and 4+ free CPU cores.
+
+To enable it, add these JVM arguments in your launcher's Java settings (e.g., Minecraft Launcher → Installation → Edit → More Options → JVM Arguments):
+
+```
+-Xms8g -Xmx8g -XX:+UseShenandoahGC -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch -XX:+UseStringDeduplication -XX:-OmitStackTraceInFastThrow -XX:+OptimizeStringConcat
+```
+
+Adjust `-Xms` and `-Xmx` to match your system (use equal values for best performance — e.g., `-Xms12g -Xmx12g` for 16 GB systems). The Adoptium Temurin JDK 17 (recommended above) includes Shenandoah — no special Java build needed for 1.20.1.
+
+> **Note**: Shenandoah is CPU-intensive. On low-core-count systems (2-4 cores), the default G1GC may perform better. Test both to see what works on your hardware.
 
 ---
 
