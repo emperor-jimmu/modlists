@@ -162,7 +162,7 @@ These mods work automatically with no configuration. Install them and they optim
 | **ImmediatelyFast** | Speeds up block and item rendering by using immediate-mode rendering where possible |
 | **Entity Culling**  | Stops rendering entities that are behind walls or off-screen. Free FPS              |
 | **Dynamic FPS**     | Reduces frame rate when Minecraft is in the background — saves GPU power            |
-| **Noisium**         | Accelerates world generation — faster chunk creation when exploring                 |
+| **NoisiumForked**   | Accelerates world generation — faster chunk creation when exploring                 |
 
 **No config needed** for any of these. Install, launch, forget.
 
