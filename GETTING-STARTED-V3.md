@@ -143,7 +143,7 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list wi
 
 | Setting         | Recommended    | Notes                                                   |
 |-----------------|----------------|---------------------------------------------------------|
-| Graphics        | Fabulous       | Embeddium makes this performant now                     |
+| Graphics        | Fabulous       | Sodium makes this performant now                       |
 | Render Distance | 16-32 chunks   | Tune to your hardware; Distant Horizons handles far LOD |
 | Brightness      | Moody → Bright | Personal preference — Bright makes caves easier to see  |
 
@@ -165,7 +165,7 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 | Toggle Minimap      | `H` (default) | Xaero's Minimap         | Shows/hides the corner minimap  |
 | Open Waystone Menu  | **Not set**   | Waystones               | Set to `Ctrl+Shift+W`           |
 | Open Backpack       | `B`           | Sophisticated Backpacks | Opens equipped backpack         |
-| Zoom                | **Not set**   | Embeddium               | Set to `C` — hold to zoom in    |
+| Zoom                | **Not set**   | Sodium                  | Set to `C` — hold to zoom in    |
 
 ### Session Plan — Wave 0
 
@@ -384,7 +384,7 @@ Once you have brass (from zinc + copper in a heated mixer), you unlock:
 
 ### Mekanism — Industrial Processing
 
-Mekanism is about **processing materials at industrial scale**. Its power system (Joules) is separate from Create's rotational power, but you can connect them with **Create's alternator** (converts rotational power to Joules).
+Mekanism is about **processing materials at industrial scale**. Its power system (Joules) is separate from Create's rotational power, but you can bridge them — **Create Crafts & Additions** provides electric motors and alternators (convert between kinetic SU and Forge Energy FE), and Create's built-in alternator also works.
 
 #### Finding Osmium
 
@@ -595,6 +595,8 @@ By mid-game, you should have all three mods working together:
 | **Component crafting** | Create        | Mechanical press + deployers automate component crafting            |
 | **Storage**            | AE2           | Import buses on all machines pull items into the ME network         |
 | **Autocrafting**       | AE2           | Pattern providers + molecular assemblers craft on demand            |
+| **Power bridge**       | Crafts & Additions | Electric motors/alternators convert kinetic SU ↔ FE (Mek/Stellaris) |
+| **Rail transport**     | Steam 'n' Rails | Expanded train system — new tracks, semaphores, coupling blocks     |
 | **Transport**          | Create        | Conveyor belts move items between processing lines                  |
 | **Ore finding**        | Skniro's Ores | New ore types generate in the Nether and End for mid-game expansion |
 
@@ -757,7 +759,6 @@ Every vanilla structure type is expanded:
 | **Better Ocean Monuments**   | Redesigned with new rooms and challenges. More elder guardians                              | Better sponge room loot, treasure blocks                                   |
 | **Better Witch Huts**        | Expanded hut on stilts with potion lab underneath                                           | Brewing supplies, potions, redstone                                        |
 | **Better Nether Fortresses** | Larger, with distinct districts (blaze, wither skeleton, strider). Bridges connect sections | Nether wart, blaze rods, wither skeleton skulls                            |
-| **Better End Island**        | Void terrain is more interesting. Small structures around the main island                   | End city loot, chorus plants                                               |
 
 #### Structory + Towns & Towers
 
@@ -777,6 +778,42 @@ The Explorer's Compass is essential for finding specific biomes and structures:
 6. **Waypoint sync**: When you find the target, add a waypoint in Xaero's map (fullscreen map → Ctrl+Left Click)
 
 **Keybinding note**: The compass does not have its own keybind by default. Craft it, hold it, right-click. If right-click does nothing, check Controls → Explorer's Compass for a conflicting keybind.
+
+---
+
+### Immersive Aircraft — Flyable Vehicles
+
+Immersive Aircraft adds vanilla-style aircraft that let you fly across the Overworld and between dimensions. Available in mid-game (requires iron and basic Create/Mek materials).
+
+#### Aircraft Types
+
+| Vehicle | Fuel | Seats | Cargo | Best for |
+|---------|------|-------|-------|----------|
+| **Biplane** | Coal/charcoal | 1 | None | Fast personal flight, combat strafing |
+| **Airship** | Coal/charcoal | 3 | 9 slots | Exploration with friends, cargo runs |
+| **Cargo Airship** | Coal/charcoal | 1 | 27 slots | Transporting materials between bases |
+| **Warship** | Coal/charcoal | 3 | 9 slots | Armed combat, colony defense support |
+| **Gyrocopter** | Coal/charcoal | 1 | None | Agile short-range flight, tight spaces |
+
+#### How to Use
+
+1. **Craft** an aircraft at a crafting table (check JEI — each requires iron, wool/leather, and basic components)
+2. **Place** it on the ground — aircraft are placed blocks, not items
+3. **Right-click** to enter. `W` to ascend, `S` to descend, `A/D` to rotate
+4. **Fuel**: Any furnace fuel (coal, charcoal, lava buckets) goes in the aircraft's fuel slot
+5. **Repair**: Craft with iron ingots to repair damage. Mobs can damage parked aircraft
+
+**Keybinding**: Aircraft controls are bound to movement keys by default. Check Controls → Immersive Aircraft for custom bindings.
+
+#### Progression Notes
+
+- Aircraft are **mid-game** (Phase 2) — recipes require iron and basic Mekanism/Create components. They're not available on day one.
+- An **airship** makes exploring Terralith's vast biomes, spotting YUNG'd structures, and reaching dimension portals dramatically faster.
+- Aircraft work in the **Aether** — fly between sky islands without building bridges.
+- Aircraft can be damaged by mobs and environmental hazards. Park them inside or on a high platform.
+- **No config changes needed** — default fuel consumption and durability are balanced for the pack.
+
+---
 
 ### The Aether — Sky Dimension
 
@@ -1817,7 +1854,7 @@ Space is a Phase 2+ activity. Don't start until you have Mekanism basic processi
 | Toggle Minimap        | `H`                       | Xaero's Minimap         | 0    |
 | Open Waystone Menu    | **Set to `Ctrl+Shift+W`** | Waystones               | 0    |
 | Open Backpack         | `B`                       | Sophisticated Backpacks | 0    |
-| Zoom                  | **Set to `C`**            | Embeddium               | 0    |
+| Zoom                  | **Set to `C`**            | Sodium                  | 0    |
 | Toggle Dynamic Lights | **Set to `Ctrl+L`**       | LambDynamicLights       | 0    |
 | Open Curios Inventory | **Set to `Y`**            | Curios API              | 0    |
 | Open Skill Tree       | **Set to `P`**            | Skill Tree              | 3    |

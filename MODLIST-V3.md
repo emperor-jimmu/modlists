@@ -6,8 +6,8 @@
 
 | Mod                                                                               | Role                                        |
 |-----------------------------------------------------------------------------------|---------------------------------------------|
-| [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)               | Rendering engine (Sodium port)              |
-| [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, has NeoForge build) |
+| [Sodium](https://modrinth.com/mod/sodium)                                         | Rendering engine                             |
+| [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, NeoForge native)    |
 | [Radium](https://www.curseforge.com/minecraft/mc-mods/radium)                     | Server-side optimization (Lithium port)     |
 | [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) | LOD rendering                               |
 | [Continuity](https://www.curseforge.com/minecraft/mc-mods/continuity)             | Connected textures                          |
@@ -107,14 +107,6 @@
 - `"Add Temporary Freezing automatically"` = `false` — Disables Aether's temporary freezing datapack. Avoids annoying mechanics in the sky dimension.
 - `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
 
-**Guard Villagers** (`config/guardvillagers-common.toml`):
-
-- `"How many guards should spawn in a village?"` = `6` — Enough guards for basic village defense without trivializing combat.
-- `"Allow guards to teleport if following the player"` = `true` — Guards keep up with player movement across terrain.
-- `"Mob Blacklist"` includes `"minecraft:creeper"` and `"minecraft:enderman"` — Prevent unnecessary guard aggro on creepers (explosion risk) and endermen (can't fight them safely).
-- `"Guards attack all mobs?"` = `true` — Guards protect against all hostiles, not just zombies/illagers.
-- `"Profession Whitelist for guard conversion"` = `["nitwit", "none"]` — Only nitwits and unemployed villagers can be converted to guards. Protects profession-locked villagers.
-
 **Loot Journal** (`config/Obscuria/loot-journal.toml`):
 
 - `writeSessionJson` = `true` — Saves per-session gain/loss data for player reference.
@@ -123,7 +115,7 @@
 
 **Chunk Loaders**: No config changes needed. Default chunk loader range (1 chunk per loader) and recipe costs are appropriate. Players can craft multiple loaders for larger bases. The loader GUI is intuitive — place, toggle on, done.
 
-**No config changes needed for**: Embeddium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium, LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, Constant Music, Immersive UI, Traveler's Titles, Better Modlist, JEI, Jade, Jade Addons, Xaero's Minimap & World Map, AppleSkin, Mouse Tweaks, Chat Heads, Right Click Harvest, Fancy Toasts, Obscure Tooltips, Loot Journal, Better Advancements, Polymorph, Sophisticated Storage, Sophisticated Backpacks, Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib, Cloth Config, YACL, Curios API, CreativeCore, OctoLib, Obscure API, Fragmentum, Complementary Unbound.
+**No config changes needed for**: Sodium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium, LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, Constant Music, Immersive UI, Traveler's Titles, Better Modlist, JEI, Jade, Jade Addons, Xaero's Minimap & World Map, AppleSkin, Mouse Tweaks, Chat Heads, Right Click Harvest, Fancy Toasts, Obscure Tooltips, Loot Journal, Better Advancements, Polymorph, Sophisticated Storage, Sophisticated Backpacks, Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib, Cloth Config, YACL, Curios API, CreativeCore, OctoLib, Obscure API, Fragmentum, Complementary Unbound.
 
 All of these work well out of the box. Their defaults align with the pack's vision. Any customization is cosmetic (shader quality, UI animation speed, map colors) and left to player preference.
 
@@ -150,6 +142,13 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [**Create**](https://www.curseforge.com/minecraft/mc-mods/create) 6.0.10              | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains            |
 | [**Mekanism**](https://www.curseforge.com/minecraft/mc-mods/mekanism) 10.7.19.85      | Industrial processing — ore multiplication (2x→5x), digital miner, fusion reactor, superdense energy storage, MekaSuit (flight, invulnerability) |
 | [**AE2**](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 19.2.17 | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                                    |
+
+### Create Addons
+
+| Mod                                                                                                                   | Role                                                                                                                                      |
+|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| [Create Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) 1.6.0                       | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                        |
+| [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge) 0.2.1              | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                              |
 
 ### How They Work Together
 
@@ -195,7 +194,8 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 **Interdependency notes for Wave 1:**
 
 - Mekanism's universal cables can power AE2 controllers via the Energy Acceptor. No adapter mod needed.
-- Create's Alternator converts rotational power (SU) to Joules, creating a power bridge between Create and Mekanism.
+- **Create Crafts & Additions** electric motors and alternators create a direct kinetic↔FE bridge, replacing the Create Alternator workaround. Silver and electrum add new material tiers that integrate with Mekanism's ore processing line.
+- **Steam 'n' Rails** expands Create's train system with new tracks, semaphores, conductor mobs, and coupling blocks. Essential for moving resources between MineColonies, Mekanism factories, and AE2 storage across a sprawling base.
 - Mekanism's 5x ore processing (Chemical Dissolution Chamber → Washer → Crystallizer) outclasses Create's Crushing Wheels (1.5x) and Millstone (1x) for ore multiplication. This is intentional — Create handles mechanical automation and component crafting, Mekanism handles industrial processing. Neither obsoletes the other.
 - AE2's Storage Bus on a Sophisticated Storage barrel makes early-mid game storage migration seamless. Place a Storage Bus on your barrel wall, configure it to show contents in the ME terminal, and transition gradually to full digital storage.
 
@@ -248,7 +248,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [YUNG\'s Better Ocean Monuments](https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments)     | Redesigned ocean monuments       |
 | [YUNG\'s Better Witch Huts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts)               | Expanded witch huts              |
 | [YUNG\'s Better Nether Fortresses](https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses) | Improved nether fortresses       |
-| [YUNG\'s Better End Island](https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island)               | Better End island terrain        |
 | [YUNG\'s Better Caves](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves)                         | Larger, more varied caves        |
 | [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)                                             | New hand-crafted structures      |
 | [Towns & Towers](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)                                 | Better village generation        |
@@ -284,6 +283,12 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |---------------------------------------------------------------------------------------|----------------------------------|
 | [Explorer\'s Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass) | Craftable structure/biome finder |
 
+### Mobility
+
+| Mod                                                                                                   | Role                                                                                         |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) 1.1.5          | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable |
+
 ### Configuration — Wave 2
 
 **Twilight Forest** (`config/twilightforest-common.toml`):
@@ -302,6 +307,10 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 **Deeper and Darker, BetterEnd, Moog's End Structures, Ender's Delight**: No config changes. Defaults are appropriate for the pack's difficulty curve.
 
 **Explorer's Compass**: No config changes needed.
+
+**Immersive Aircraft** (`config/immersive_aircraft-common.toml`): No config changes needed from defaults. Default fuel consumption, durability, and damage values are balanced for mid-game (Phase 2). Speed and handling feel responsive without being overpowered. Aircraft can be damaged by hostile mobs and environmental hazards — keep them repaired.
+
+**Interdependency note — Immersive Aircraft + Aether**: Aircraft can fly in the Aether dimension. An airship is a natural way to navigate Aether islands — it pairs well with the dimension's sky-island geography.
 
 **Interdependency note — Twilight Forest + Apotheosis**: Apotheosis boss affixes (Wave 3) apply to Twilight Forest bosses. A Naga with the "Tough" affix is significantly harder. This is intended — it keeps dimension bosses relevant even with late-game gear. If a boss feels too strong, the player can return after better equipment or use Apotheosis gems/runes for the edge.
 
@@ -365,9 +374,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 - Wandering trader improvements enabled. Traders can sell Apotheosis items (gems, affix gear, enchanted books) at elevated prices. Adds a secondary acquisition path for players who prefer trading over combat.
 
-**Deadly module**: **Disabled.** Apotheosis's Deadly module adds randomly generated death-traps to the world (sudden spikes, poison darts, instakill rooms, lava traps). These violate the chill rule — the player should never be punished for exploring without preparation. All other modules are active.
-
-**Why the Deadly module is off**: The pack's combat challenge comes from opt-in content — Cataclysm bosses, Mutant Monsters, Twilight Forest progression, When Dungeons Arise structures. Random trap-generated deaths undermine the chill living pillar and frustrate exploration.
+**Deadly module**: **Enabled.** Apotheosis's Deadly module adds randomly generated death-traps to the world (sudden spikes, poison darts, instakill rooms, lava traps). This adds risk-reward tension to structure exploration — the deadliest rooms hold the best loot. The Deadly module's traps are telegraphed and avoidable with caution, and GraveStone Mod keeps your items safe if you do trigger one, so the chill rule is preserved.
 
 **Reforging costs** — Apotheosis's reforging mechanic (reroll affixes with gem dust) uses default material costs. As the player progresses, reforging costs scale:
 - Common→Uncommon: cheap (a few gem dust)
@@ -566,16 +573,16 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave                       | Count      | Notes                                                          |
 |----------------------------|------------|----------------------------------------------------------------|
 | Wave 0 — Foundation        | ~41        | Performance, QoL, storage, travel, graves, UI, chunk loading    |
-| Wave 1 — Tech              | 3 (+2 ore) | Create, Mekanism, AE2                                          |
+| Wave 1 — Tech              | 5 (+2 ore) | Create + 2 addons, Mekanism, AE2                               |
 | Wave 1.5 — Colony          | 5          | MineColonies (4 deps)                                          |
-| Wave 2 — Exploration       | ~23        | YUNG's collection, Terralith/Tectonic, dimensions, End         |
+| Wave 2 — Exploration       | ~25        | YUNG's collection, Terralith/Tectonic, dimensions, End, aircraft |
 | Wave 3 — Equipment Magic   | ~7         | Simply Swords, Apotheosis, Relics, Runes, Skill Tree           |
 | Wave 4 — Food & Farming    | ~6         | Farmer's Delight, Brewin' And Chewin', 4 FD addon mods         |
 | Wave 4.5 — Quests          | 1          | Bountiful (procedural bounty boards in villages)               |
 | Wave 5 — Combat            | 7          | Better Combat, Mutant Monsters, Cataclysm, Cannons, Dungeons   |
 | Wave 6 — Building          | 8          | Chipped, Supplementaries, Macaw's, Handcrafted, Building Wands |
 | Wave 7 — Space Exploration | ~1         | Stellaris (core)                                               |
-| **Total**                | **~104**   | All confirmed NeoForge 1.21.1                                  |                                                              |
+| **Total**                | **~107**   | All confirmed NeoForge 1.21.1                                  |                                                              |
 
 ### What's New in V3
 
@@ -591,3 +598,6 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 - Chipped + Supplementaries + Macaw's + Handcrafted (building blocks)
 - Stellaris (space exploration — rockets, planets, oxygen mechanics)
 - Create Big Cannons (artillery engineering for colony defense)
+- Create Crafts & Additions (kinetic↔FE bridge, electric motors, rolling mill)
+- Steam 'n' Rails NeoForge (expanded train system, new tracks, semaphores)
+- Immersive Aircraft (flyable airships and aircraft for dimension exploration)
