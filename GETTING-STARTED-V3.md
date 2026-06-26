@@ -167,6 +167,17 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 | Open Backpack       | `B`           | Sophisticated Backpacks | Opens equipped backpack         |
 | Zoom                | **Not set**   | Embeddium               | Set to `C` — hold to zoom in    |
 
+### Session Plan — Wave 0
+
+Your first session is about getting comfortable. Don't rush — this wave has zero progression pressure.
+
+| Session | Goal |
+|---------|------|
+| **Session 1 — Setup** | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data |
+| **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey |
+| **Session 3 — Comfort** | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter |
+| **Ongoing** | Right Click Harvest works as you farm. LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
+
 ### Using Wave 0 Mods
 
 #### JEI (Recipe Viewer)
@@ -221,15 +232,51 @@ Better Advancements overhauls the vanilla advancements GUI — cleaner layout, n
 
 No configuration needed. Install and forget.
 
+#### BlazeandCave's Advancements Pack (Data Pack)
+
+This data pack adds **1000+ new advancements** across 16 tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks milestones like mining every ore type, collecting every wood variant, killing every mob, and discovering every biome.
+
+**Where to install**: Drop the `.zip` into the `datapacks/` folder of your world save (`.minecraft/saves/<world>/datapacks/`). Enable it with `/datapack enable "blazeandcave/advancements"`. It works alongside Better Advancements (UI) and Fancy Toasts (popups) without conflict.
+
+**What it adds**: Thousands of hours of optional side goals. Everything is tracked through the vanilla advancement system — open with `L` to browse the 16 tabs and see what's available.
+
 #### Right Click Harvest
 
 Right-click a fully grown crop → it breaks and drops, then auto-replants. Works on vanilla crops and most modded ones.
+
+#### Chunk Loaders — Infrastructure
+
+Chunk Loaders keep specific chunks loaded even when you're far away or in another dimension. Essential for keeping factories, farms, and your colony running.
+
+**Types of Loaders:**
+
+- **Single Chunk Loader** — keeps 1 chunk loaded forever. No fuel needed. Use to keep one machine or farm running
+- **Spotloader** — handheld, temporarily loads an area while you explore nearby
+- **Multi Chunk Loader** — loads a 3×3 chunk area. Use for your entire base or factory complex
+
+**How to use:**
+
+1. **Craft a Single Chunk Loader** (check JEI — requires iron, redstone, and ender pearl)
+2. **Place it** at the center of the area you want to keep loaded
+3. **Right-click** to toggle it on — a colored border shows the loaded chunk
+4. **Done.** The chunk stays loaded across all dimensions
+
+**Best practices:**
+
+- Place a loader at your **main base** first — keeps all Create/Mek/AE2 systems running
+- Place a loader at your **colony** (Wave 1.5) — keeps MineColonies workers active
+- Place a loader at each **mining outpost** — keeps the Mekanism digital miner running
+- Loaders work in any dimension. The Nether, The End, other planets — a loader keeps that chunk ticking
+
+**Tip**: You can have as many loaders as you want. No performance penalty as long as your PC handles the loaded chunks. Start with 2-3 and add as needed.
+
+**Config**: No changes needed. Default range (1 chunk per loader) and recipe costs are appropriate.
 
 ---
 
 ## Wave 1 — Tech (Create + Mekanism + AE2)
 
-The biggest wave. Three industry-standard mods that together form a complete tech ecosystem.
+The biggest wave. Three industry-standard mods that together form a complete tech ecosystem. Wave 1.5 (Colony Management) runs alongside this — start your colony after you have basic Create power.
 
 ### Install
 
@@ -574,11 +621,107 @@ Skniro's Nether and End Ores adds new ore types to both dimensions. These ores a
 - **AE2 autocrafting CPU**: Complex multi-step autocrafting chains. Request advanced alloys and Mekanism components — AE2 crafts them from raw materials
 - **Create mega-factory**: Massive conveyor networks, train stations at every mining outpost, automated farms for Mekanism biofuel. Build the factory you've always wanted
 
+### Session Plan — Wave 1
+
+Wave 1 is the largest and takes the most sessions. Pace yourself — each session adds one new capability.
+
+| Session | Focus | What to Build |
+|---------|-------|---------------|
+| **Session 1 — Create basics** | Mine andesite. Craft hand crank + millstone. Build a water wheel. Connect millstone → grind wheat and ore | Power generation (256 SU), basic ore doubling |
+| **Session 2 — Mekanism start** | Find osmium. Build Heat Generator + Enrichment Chamber + Metallurgic Infuser. 2x ore processing. Make steel | Basic Mekanism line, steel for future projects |
+| **Session 3 — AE2 discovery** | Find a certus quartz meteorite. Mine it. Craft certus dust → smelt → charge. Build AE2 Charger | First certus quartz, charge infrastructure |
+| **Session 4 — AE2 network** | Build ME Controller + ME Drive + 1k storage cells + ME Crafting Terminal. Place a Storage Bus on your Sophisticated Storage barrel | Your first digital storage network |
+| **Session 5 — Mid-game Create** | Find zinc. Make brass. Build Deployer + Sequenced Crafter + Mechanical Arm. Automate a simple recipe | Component automation, brass-tier machines |
+| **Session 6 — Mekanism expansion** | Add Crusher for 3x ore. Build Electrolytic Separator for gas processing. Upgrade machines to Advanced tier | 3x ore multiplication, gas infrastructure |
+| **Session 7 — Integration** | Place Import Bus on Enrichment Chamber → items flow into AE2. Place Export Bus to supply Create machines. Connect Create alternator to Mekanism power | Cross-mod automation bridge |
+| **Session 8+ — Scaling up** | Build Digital Miner. Expand AE2 drives. Add Create train between base and outpost. Work toward 5x ore processing | Automated mining, bulk transport |
+
+**Pacing tip**: You don't need to finish Wave 1 before starting Wave 1.5 (colony) or Wave 2 (exploration). Dip into exploration between factory sessions. The colony takes real-world days to grow, so start it early.
+
+---
+
+## Wave 1.5 — Colony Management
+
+Your colony grows alongside your factory. MineColonies provides autonomous NPC workers that mine, farm, craft, and guard your base. Chunk Loaders (Wave 0) keep the colony running across dimensions.
+
+### Install
+
+See [MODLIST-V3.md](./MODLIST-V3.md#wave-1--tech-create--mekanism--ae2). These mods are listed in Wave 1's Colony Automation and Chunk Loading sections.
+
+### MineColonies — Autonomous NPC Colony
+
+MineColonies lets you build a functioning town of NPC workers. Each worker has a dedicated hut that you place, and they perform jobs autonomously — mining, farming, crafting, building, guarding.
+
+#### Getting Started
+
+1. **Craft the Town Hall** (check JEI) and place it on flat ground
+2. **Right-click the Town Hall** — it opens the colony GUI
+3. **Hire a Builder** — the Town Hall UI has a "Citizens" tab. Recruit a builder
+4. **Place a Builder's Hut** near the Town Hall. The builder walks to it and claims it
+5. **Supply materials** — put wood, cobblestone, and tools in the builder's chest (inside the hut)
+6. The builder starts constructing buildings from blueprints
+
+#### Core Worker Huts (build in this order)
+
+| Hut | Resource | What it does |
+|-----|----------|--------------|
+| **Mine** | Coal, iron, stone | Digs a shaft mine. Supplies your base with basic ores |
+| **Lumberjack** | Wood | Chops trees and replants saplings. Infinite wood |
+| **Farmer** | Wheat, carrots, potatoes | Plants, grows, harvests. Feeds your colony |
+| **Guard Tower** | Defense | Guards patrol your base perimeter. Add more towers for larger bases |
+| **Crafter** | Recipes | Crafts items from materials in storage. Set recipes in the crafter GUI |
+
+#### Research Tree
+
+Open the Town Hall → Research tab. Research points accumulate from worker activities. Key gates:
+
+| Research | Colony Level | Points | Unlocks |
+|----------|-------------|--------|---------|
+| Basic Industry | 2 | 2000 | Better mine shafts, furnace automation |
+| Advanced Smithing | 3 | 4000 | Better tools for workers |
+| Industrial Revolution | 3 | 5000 | Mekanism Atomic Alloy recipe |
+| Logistics | 4 | 8000 | Warehouse, courier delivery routes |
+
+**Tech gating**: The Atomic Alloy required for Mekanism's ultimate-tier machines can be set to require "Industrial Revolution" research. This ensures the player can't skip from Phase 1 straight to Phase 3 tech — the colony must grow alongside the factory.
+
+#### Guard Scaling
+
+The colony's defense scales with size:
+- 1 Guard Tower → covers a 20-block radius
+- Each additional tower adds coverage
+- Guard equipment upgrades with your colony level (leather → iron → diamond)
+- Guards from multiple towers patrol overlapping areas, creating a secure perimeter
+
+#### Integrating With Your Tech
+
+- **AE2 storage bus** on the colony warehouse chest → all colony resources accessible from your ME terminal
+- **Create conveyor belts** can feed materials into the builder's chest for automated restocking
+- **Farmer's Delight meals** can be supplied to the colony kitchen for worker happiness bonuses
+- **Chunk Loaders** keep the colony running when you're exploring other dimensions
+
+### Configuration — Wave 1.5
+
+**MineColonies** — no config changes needed initially. Default colony settings (3-block worker range, normal build speed, 1-day child growth) are balanced. The mod's internal progression (builder→miner→farmer→crafter→guard, then research tree) naturally gates itself — you can't build a level 3 mine until you've leveled the builder and accumulated resources.
+
+### Session Plan — Wave 1.5
+
+The colony takes real-world time to grow. Sessions here are check-ins between other activities.
+
+| Session | Focus | What to Do |
+|---------|-------|------------|
+| **Session 1 — Foundation** | Craft Town Hall, place it, hire Builder. Place Builder's Hut, supply materials (wood, cobble, tools). Start the first build | Colony established, first building under construction |
+| **Session 2 — First workers** | Place Mine hut + Lumberjack hut. Supply tools and materials. Let them work while you explore or build factory | Passive resource income (wood, coal, iron) |
+| **Session 3 — Farm + Guard** | Place Farmer hut for food. Place Guard Tower for perimeter defense. Upgrade buildings to level 2 | Colony self-sufficient, base defended |
+| **Session 4 — Research** | Check Town Hall → Research tab. Spend accumulated research points on Basic Industry. Place Crafter hut | First research unlocked, autocrafting in colony |
+| **Ongoing** | Check in every few sessions. Upgrade buildings, unlock more research, expand guard coverage. By Phase 2 your colony should be level 3 with Industrial Revolution research | Tech gate unlocked (Atomic Alloy), automated resource supply |
+
+**Tip**: The colony is a long-term investment. Start it early (Session 1 of Wave 1.5), check on it periodically, and let it grow in the background. By the time you need Atomic Alloy for Mekanium, it'll be ready.
+
 ---
 
 ## Wave 2 — Exploration (World & Dimensions)
 
-The world is larger, richer, and full of things to discover. Tectonic makes the terrain dramatic, Terralith and Regions Unexplored add hundreds of biomes, YUNG's structures overhaul every vanilla structure, and three new dimensions open up at your own pace.
+The world is larger, richer, and full of things to discover. Tectonic makes the terrain dramatic, Terralith adds overhauled biomes, YUNG's structures overhaul every vanilla structure, and three new dimensions open up at your own pace.
 
 ### Install
 
@@ -588,13 +731,13 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-2--exploration-world--dimensions). Inst
 
 The Overworld is dramatically transformed. Every biome, structure, and cave system is overhauled.
 
-#### Terrain Overhaul — Terralith + Tectonic + Regions Unexplored
+#### Terrain Overhaul — Terralith + Tectonic
 
 | Aspect               | What changed                                                                                                                                 | What to look for                                                           |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | **Mountains**        | Tectonic makes them taller and steeper. Terralith adds painted mountains (orange/white layers) and volcanic peaks                            | Build a base in a mountain valley with dramatic views                      |
-| **Oceans**           | Deeper and more varied — trench-like drops offshore                                                                                          | Use ships/boats (or Create airships) to cross, lookout for ocean monuments |
-| **Forests**          | Regions Unexplored adds 65+ new biomes — redwood forests (200+ block trees), autumn forests, willow swamps, cherry groves, steppes, and more | Cherry groves for vibes. Redwood forests for massive wood supply           |
+| **Oceans**           | Deeper and more varied — trench-like drops offshore                                                                                          | Use ships/boats to cross, lookout for ocean monuments                      |
+| **Biomes**           | Terralith adds 80+ overhauled biomes — redwood forests (200+ block trees), cherry groves, floating islands, painted mountains, and more      | Cherry groves for vibes. Redwood forests for massive wood supply           |
 | **Caves**            | YUNG's Better Caves expands cave systems — wider tunnels, deeper chasms, more open spaces                                                    | Caves are easier to navigate and more impressive. Bring torches            |
 | **Rivers & Valleys** | Tectonic carves deeper river valleys. Terralith adds shattered savannahs (mesa-like)                                                         | Follow rivers for scenic travel. Build bridges with Create                 |
 
@@ -616,9 +759,9 @@ Every vanilla structure type is expanded:
 | **Better Nether Fortresses** | Larger, with distinct districts (blaze, wither skeleton, strider). Bridges connect sections | Nether wart, blaze rods, wither skeleton skulls                            |
 | **Better End Island**        | Void terrain is more interesting. Small structures around the main island                   | End city loot, chorus plants                                               |
 
-#### Structory + Towns & Towers + Additional Structures
+#### Structory + Towns & Towers
 
-Hundreds of hand-crafted structures spawn across the Overworld. Some are small (camps, shrines), others are large (castles, towers, walled towns). Villages generate with unique architecture from Towns & Towers — each biome style gets its own building designs.
+Dozens of hand-crafted structures spawn across the Overworld. Some are small (camps, shrines), others are large (castles, towers, walled towns). Villages generate with unique architecture from Towns & Towers — each biome style gets its own building designs.
 
 **What to do**: Explore! Mark interesting structures on your map (Xaero's: add waypoints with `Ctrl+Left Click` on the fullscreen map). Return to promising ones with an Explorer's Compass.
 
@@ -757,8 +900,6 @@ After you defeat the Ender Dragon, the End becomes a full dimension worth explor
 | **Ice biomes**       | Frozen wastelands on the edge of the End                  | —                                |
 | **Chorus forests**   | Dense chorus plant forests                                | Chorus flowers, new food         |
 
-**Nullscape** overlays alien/void landscapes — purple skies, void fog, floating blackstone islands. It transforms the empty void between main islands into something that looks like space.
-
 **Moog's End Structures** adds towers, ruins, and dungeons across the End — many with loot better than vanilla End cities.
 
 **Ender's Delight** adds food that can be cooked from End ingredients — gives useful status effects for End exploration.
@@ -772,6 +913,19 @@ After you defeat the Ender Dragon, the End becomes a full dimension worth explor
 | **Endgame End** | Find the rarest biomes and build an End base               | All materials needed for top-tier End gear |
 
 **Tip**: Set up a Waystone in the End as soon as you arrive. Build a small AE2 subnet with a wireless terminal to access your main base storage while exploring.
+
+### Session Plan — Wave 2
+
+Exploration is something you dip into between factory sessions. No need to binge it.
+
+| Session | Focus | What to Do |
+|---------|-------|------------|
+| **Session 1 — Scout** | Craft Explorer's Compass. Search for a cherry grove or redwood forest biome. Mark waypoints on your map. Find a YUNG's dungeon and loot it | First taste of the transformed world, early loot |
+| **Session 2 — Aether visit** | Gather glowstone (from the Nether or wandering traders). Build the Aether portal. Explore the first sky island, collect ambrosium and zanite | A new dimension, safe change of pace |
+| **Session 3 — Twilight Forest entry** | Find a 2×2 water pool, surround with flowers, throw in a diamond. Enter the Twilight Forest. Place a Waystone immediately. Defeat the Naga | First Twilight Forest boss, door to progression |
+| **Session 4+ — Deep exploration** | Work through Twilight Forest bosses at your own pace. Visit Deeper and Darker (requires finding an Ancient City). Explore the End after killing the dragon | Boss loot, dimension-specific resources |
+
+**Pacing tip**: Explore between factory builds. When you're waiting for Mekanism to process or Create to assemble, grab your compass and walk in a random direction. Every direction has something new.
 
 ---
 
@@ -800,7 +954,7 @@ Every action in the game earns XP. As you level up, you earn skill points to spe
 | **Strength** | +melee damage, +mining speed        | Everyone — more damage and faster mining |
 | **Vitality** | +max HP, +natural regen             | All players — survival is always useful  |
 | **Agility**  | +movement speed, +attack speed      | Combat-focused players, kiting bosses    |
-| **Magic**    | +spell damage, +mana regen          | If you use Ars Nouveau or spell mods     |
+| **Magic**    | +spell damage, +mana regen          | Less useful without a dedicated spell mod, but affects Ars Nouveau if installed |
 | **Defense**  | +armor toughness, +damage reduction | Tank playstyle                           |
 
 **How XP works**: Every ore you mine, every mob you kill, every item you craft, every crop you harvest generates XP. The amount scales with the action's complexity. Smelting 100 iron ingots gives more XP than smelting 1.
@@ -964,6 +1118,21 @@ Runes are socketable modifications for weapons and tools. Unlike Apotheosis gems
 
 **Tip**: Keep 2-3 different rune loadouts in your Rune Pouch. Switch between Fire (general combat), Lifesteal (boss fights), and Ice (kiting tough mobs).
 
+### Session Plan — Wave 3
+
+Gear upgrades happen naturally as you play. These sessions show you what to look for.
+
+| Session | Focus | What to Do |
+|---------|-------|------------|
+| **Session 1 — Skill tree** | Set skill tree keybind (`P` recommended). Open it and spend your first points on Strength (mining speed/melee damage). This is passive — XP earns automatically from everything you do | Permanent character progression started |
+| **Session 2 — First affix loot** | Check every gear drop. Look for Rare+ items with useful affixes (Ruthless for melee, Sturdy for armor). Don't salvage anything until you understand what's good | First taste of the loot system |
+| **Session 3 — Weapon hunt** | Use Explorer's Compass to find a YUNG's dungeon. Loot it for Simply Swords weapons. Try out a Rapier (fast, shield-piercing) or Greathammer (AoE, knockback) | Your first unique weapon, learn its ability |
+| **Session 4 — Gem cutting** | Collect rough gems from chests and mobs. Build a Gem Cutting Station. Cut your first Rough → Cut gem. Socket it into a weapon or armor piece | Permanent gear upgrade, gem system understood |
+| **Session 5 — Relic hunting** | Explore different structure types for Relics RPG items. Monkey Talisman (double jump from vanilla dungeons) and Lucky Coin (better loot from mineshafts) are early priorities | Accessory slots filled, unique abilities |
+| **Session 6+ — Boss affix hunting** | Search for affixed boss mobs (they have a colored name above their health bar). These are your best source of Mythic gear. Bring good weapons and food | Endgame gear progression |
+
+**Tip**: Wave 3 gear changes how every other wave feels. A Rare+ weapon with the right affix makes combat in Twilight Forest and Cataclysm dramatically easier. Invest in your gear before tackling tough bosses.
+
 ---
 
 ## Wave 4 — Food, Farming & Comfort
@@ -1098,6 +1267,69 @@ Craft: Check JEI (wooden barrel)
 
 After drinking, you get an **empty bottle** back. Reuse it at the brewing station — no glass waste.
 
+### Storage Delight — Kitchen Furniture
+
+Storage Delight adds decorative kitchen storage blocks that work as functional inventories:
+
+| Block | Slots | Use |
+|-------|-------|-----|
+| Cabinet | 27 | Counter-height storage, matches kitchen aesthetic |
+| Drawer | 18 | Slimmer, fits under counters |
+| Shelf | 9 | Wall-mounted spice/ingredient display |
+
+**Tip**: Use cabinets and drawers in your kitchen for early-game ingredient storage before AE2 comes online. Later, place an ME Storage Bus on a cabinet to bridge it into your digital network.
+
+### More Delight — Extra Meals & Knives
+
+More Delight adds new recipes and tools that extend Farmer's Delight:
+
+- **Extra meals**: Sandwiches (combine bread + any filling), toasts (bread + toppings), stuffed mushrooms, and more
+- **Knife variants**: Diamond and netherite knives that last much longer than iron
+- **New cooking pot recipes**: Stews, soups, and pasta dishes using new ingredient combinations
+
+All recipes are visible in JEI. No special blocks needed — everything uses the existing cutting board and cooking pot.
+
+### My Nether's Delight — Nether Food
+
+Adds Nether-themed ingredients and recipes. Turns Nether exploration into a food-gathering expedition:
+
+- **Nether crops**: Grow in soul sand or warped/crimson nylium
+- **New ingredients**: Glowstone berries, soul berries, nether-root vegetables
+- **Recipes**: Spicy stews that give Fire Resistance, soul-force snacks that give Night Vision
+
+**Tip**: Set up a Nether farm for ingredients that give combat-relevant status effects. Glow berry pie gives Haste II — useful before a mining expedition.
+
+### Ocean's Delight — Seafood
+
+Adds seafood dishes using ocean mob drops and kelp:
+
+- **Ocean ingredients**: Squid tentacles (squid drops), fish fillets, seaweed, turtle eggs
+- **Recipes**: Seafood stew, grilled fish, kelp salads, sushi rolls
+- **Status effects**: Seafood gives Water Breathing and Dolphin's Grace — perfect for ocean monument raids
+
+**Tip**: Build a fish farm (breed fish near a fishing spot) or farm kelp for a steady supply of ocean ingredients. Combined with My Nether's Delight, you can prepare meals for any environment.
+
+### Session Plan — Wave 4
+
+Cooking is a side activity you build up gradually. Start small and expand as you find ingredients.
+
+| Session | Focus | What to Build |
+|---------|-------|---------------|
+| **Session 1 — Kitchen tools** | Craft a cutting board (knife + planks) and cooking pot (iron + planks). Build a stove (bricks + iron nuggets) as heat source. Find wild tomato, cabbage, onion, rice seeds | Functional kitchen, first ingredients |
+| **Session 2 — Farm** | Plant tomato, cabbage, onion, rice near water. Use Right Click Harvest for easy harvesting. Cook your first meal (tomato soup is the easiest) | Sustainable ingredient supply |
+| **Session 3 — Brewing** | Find barley, grapes, honey. Build a brewing station. Start your first batch of beer/wine/mead. Place an aging barrel | First drink fermenting, waiting for it to age |
+| **Session 4 — Kitchen expansion** | Craft Storage Delight cabinets and drawers for decorative ingredient storage. Try More Delight recipes (sandwiches, toasts). Collect Nether ingredients for My Nether's Delight | Full kitchen, all FD addons in use |
+| **Ongoing** | Age drinks to Matured/Aged for boss-fight buffs. Explore oceans for Ocean's Delight ingredients. Stock your AE2 system with ingredients for autocrafting meals on demand | Buff food always available for combat |
+
+### Session Plan — Wave 4.5
+
+Bounties are passive — check boards whenever you visit a village.
+
+| Session | Focus | What to Do |
+|---------|-------|------------|
+| **Any session** | Visit any village. Find the bounty board (a lectern-like block). Check available quests. Complete gathering quests (deliver items from your AE2 system) for free rewards | Passive XP and loot |
+| **Ongoing** | Boards regenerate quests periodically. Check back after a few play sessions. Hunting and exploration quests are good reasons to visit new biomes or fight new mobs | Continuous passive progression |
+
 ---
 
 ## Wave 4.5 — Quests
@@ -1197,7 +1429,7 @@ Epic, hand-animated boss fights with unique mechanics and powerful loot. Each bo
 1. **Scout the arena first** — know where the edges, pits, and hazards are
 2. **Bring food buffs** — Farmer's Delight meals + Brewin' And Chewin' drinks stack
 3. **Rune up** — apply Lifesteal or Ice runes for the fight
-4. **Set a Waystone nearby** — if you die, your grave holds items (Corail/Gravestone). Re-equip and re-engage
+4. **Set a Waystone nearby** — if you die, your grave holds items (GraveStone Mod). Re-equip and re-engage
 5. **AE2 wireless terminal** — call in materials mid-fight if you need blocks, potions, or replacement gear
 
 #### Leviathan — Deep Ocean Boss
@@ -1253,6 +1485,49 @@ Large, multi-floor combat structures scattered across the Overworld. Each is a h
 **Strategy**: Each floor has a mob spawner or boss spawn point. Clear floors systematically. Loot scales with floor depth — deeper floors in large castles have the best loot. Bring blocks to pillar up, torches to light hallways, and decent gear for the deeper floors.
 
 **Tip**: Structures are finite per world — once looted, they don't respawn unless you're far enough away for chunks to reset. Use the compass to find unvisited structures. Mark looted ones on your map.
+
+### Create Big Cannons — Artillery Engineering
+
+Create Big Cannons adds functional cannons built from Create materials, using rotational power for assembly and gunpowder for ammunition.
+
+#### Getting Started
+
+1. **Craft cannon components**: Cannon barrel (bronze/steel), cannon mount (Create materials), cannon charger
+2. **Build the cannon**: Place the mount, attach the barrel, connect the charger
+3. **Arm it**: Insert powder charges and cannonballs into the cannon's GUI
+4. **Fire**: Right-click the cannon or send a redstone signal
+
+#### Ammunition Types
+
+| Ammo | Effect | Use case |
+|------|--------|----------|
+| Solid cannonball | High damage, block-breaking explosive | Siege, defense |
+| Canister shot | Spread of small projectiles | Anti-personnel, mob clearing |
+| Grape shot | Medium spread | Crowd control |
+| Incendiary | Fire on impact + lingering fire | Area denial |
+| Smoke shell | Smoke screen | Signalling, concealment |
+
+#### Integration
+
+- Cannons are gated behind bronze/steel (Create's progression) and gunpowder (early game)
+- Mount cannons on your colony's walls for defense — they fire at enemies within range
+- Use cannonballs for large-scale terraforming (clearing areas for expansion)
+- Redstone-controlled: hook up a pulse extender for automatic salvo fire
+
+### Session Plan — Wave 5
+
+Combat content is opt-in. Engage when you want a challenge, not before.
+
+| Session | Focus | What to Do |
+|---------|-------|------------|
+| **Session 1 — Combat feel** | Better Combat works automatically. Craft a Simply Swords weapon if you haven't already (or find one from dungeon loot). Test the attack patterns — daggers stab fast, greatswords sweep wide. Equip a Lifesteal or Fire rune | Learn your weapon, feel the combat change |
+| **Session 2 — First mutant** | Find a Mutant Zombie at night (listen for its distinctive roar). Kite it, learn its attack patterns. Collect its unique drop | First mini-boss beaten, unique loot |
+| **Session 3 — First dungeon** | Find a When Dungeons Arise small castle or abandoned temple. Clear floors systematically. Collect loot from each floor | Rougelike dungeon completed, rare loot |
+| **Session 4 — First Cataclysm boss** | Choose the easiest boss (Leviathan — deep ocean) or the most accessible (Netherite Monstrosity — Nether fortress). Prepare: bring good weapons, fire resistance, healing food. Summon and fight | Epic boss beaten, endgame gear start |
+| **Session 5 — Cannons** | Craft bronze (Create: zinc + copper in heated mixer). Build a Small Cannon. Test fire it at a target. Mount it near your base entrance | Artillery online, colony defense |
+| **Session 6+ — Boss gauntlet** | Work through remaining Cataclysm bosses. Each drops unique materials for endgame gear. Twilight Forest bosses (Wave 2) also benefit from Wave 5 gear — revisit them now | Full endgame gear progression |
+
+**Tip**: Better Combat changes how melee works fundamentally. Don't skip Session 1 even if you're a ranged player — the weapon swing changes affect all melee combat, including tools.
 
 ---
 
@@ -1515,6 +1790,20 @@ Space exploration belongs in Phase 2 (Industrial Ascent, hours 40–200). You sh
 
 Start with moon missions, establish a Tier 1 base, then work toward Mercury and Venus. Mars and Glacio are solidly in late Phase 2 territory.
 
+### Session Plan — Wave 7
+
+Space is a Phase 2+ activity. Don't start until you have Mekanism basic processing, an AE2 network, and decent power infrastructure.
+
+| Session | Focus | What to Build |
+|---------|-------|---------------|
+| **Session 1 — Ground prep** | Find oil (surface pools in deserts/plains). Build Fuel Refinery + Rocket Station. Craft Tier 1 rocket components (engine, fuel tank, capsule, fins). Assemble the rocket | Launch infrastructure complete |
+| **Session 2 — Moon landing** | Craft a Space Suit. Fill it with oxygen at the Oxygen Distributor. Stock supplies (food, blocks, torches, weapons). Enter the rocket and launch | First off-world base, desh collected |
+| **Session 3 — Moon base** | Set up a solar panel + oxygen distributor on the Moon. Place a Waystone. Mine desh for Tier 2 rocket components. Place a Chunk Loader to keep it running | Sustainable Moon operation |
+| **Session 4 — Next planets** | Upgrade to Tier 2 rocket. Fly to Mercury or Venus. Each has unique hazards (heat, acid rain) and resources (ostranium, tharsite). Set up a temporary base | New planet resources, expanded capabilities |
+| **Session 5+ — Deep space** | Tier 3 rocket → Mars (permanent off-world base). Tier 4 rocket → Glacio (endgame crystals). Bring Mekanism digital miner for automated resource extraction | Full interplanetary logistics |
+
+**Tip**: Space is the most resource-intensive activity in the pack. Don't rush it. Each planet should feel like a meaningful expansion of your industrial empire, not a checklist item. The MekaSuit trivializes spacewalks — jetpack flight + environmental protection = no oxygen worries.
+
 ---
 
 ## Keybindings Reference
@@ -1535,14 +1824,15 @@ Start with moon missions, establish a Tier 1 base, then work toward Mercury and 
 | View Weapon Ability   | `Ctrl` (hold)             | Simply Swords           | 3    |
 | Open Rune Pouch       | **Set to `R`**            | Runes                   | 3    |
 | Open Create Ponder    | `W` (hold over block)     | Create                  | 1    |
+| Open Town Hall GUI    | Right-click Town Hall     | MineColonies            | 1.5  |
 
 ## Progression Through All Waves
 
 | Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                    |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Phase 1** (hours 0-40)   | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith/Regions biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals. Grab bounties from village boards              |
+| **Phase 1** (hours 0-40)   | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals. Start MineColonies colony (builder hut, basic mines). Grab bounties from village boards |
 | **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Chipped and Macaw's. Complete bounties for passive rewards as you explore |
-| **Phase 3** (hours 150+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd/Nullscape End dimension. Monumental building projects with all decoration tools                                                       |
+| **Phase 3** (hours 150+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd End dimension. Monumental building projects with all decoration tools |
 
 ## General Tips
 

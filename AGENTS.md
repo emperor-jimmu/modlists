@@ -22,7 +22,7 @@ This modpack is built around four pillars that must coexist in every design deci
 
 ### Phase 1 — Cozy Roots (hours 0-40)
 
-The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Mekanism basic machines (metallurgic infuser, enrichment chamber). First Ars Nouveau apprentice-tier spells for utility (break, place block, self-heal). Farmer's Delight + Delightful provide hearty meals. Waystones unlock fast travel between villages. Corail Tombstone makes death forgiving — keep XP, 24h grave protection.
+The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Mekanism basic machines (metallurgic infuser, enrichment chamber). First Ars Nouveau apprentice-tier spells for utility (break, place block, self-heal). Farmer's Delight + Delightful provide hearty meals. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
 
 - Difficulty: forgiving
 - Focus: shelter, food, basic automation
@@ -65,7 +65,7 @@ The complete mod list with versions, roles, and download links is maintained in 
 - Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), Delightful (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.
 - YUNG's dungeon mods add exploration targets and loot injection points — they feed items into Apotheosis affix/gem system and reward dungeon diving in any phase.
 - The Aether, Twilight Forest, and L_Ender's Cataclysm are optional endgame combat dimensions. They don't gate or block any tech/magic progression — the player engages when they choose.
-- Waystones (fast travel) and Corail Tombstone (forgiving death) are chill-living enablers. Their configs should always be set to reduce friction, never to add it.
+- Waystones (fast travel) and GraveStone Mod (forgiving death) are chill-living enablers. Their configs should always be set to reduce friction, never to add it.
 - Apotheosis gems and affixes work on Mekanism armor/tools and Ars spellbooks — gear customization feeds power fantasy across both tracks.
 - Chunk Loaders are essential for Phase 2+ automation across dimensions. They keep Mekanism factories and MineColonies running when the player explores.
 - No data pack should duplicate a mod's functionality. Data packs handle targeted QoL only (e.g., anti-creeper grief, armor stand posing).
