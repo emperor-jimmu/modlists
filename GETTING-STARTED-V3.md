@@ -242,86 +242,317 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-1--tech-create--mekanism--ae2). Install
 | Endgame armor | Mekanism: MekaSuit (flight, invulnerability, fire resistance) |
 | Long-distance transport | Create: trains |
 
-#### Step 1: Start with Create
+---
 
-Create is about **rotational power**. Build a **water wheel** or **windmill** to generate rotational force (SU — stress units). Use **shafts**, **gear boxes**, and **belts** to transfer power to machines.
+### Create — Mechanical Automation
 
-**First Create machines:**
-1. **Crafting table** + **andesite** → **andesite casing** (basic component)
-2. **Cranks** — hand-crank for manual power (before you build a wheel)
-3. **Water wheel** — place over flowing water for passive power
-4. **Mechanical press** — presses ingots into plates
-5. **Millstone** — grinds wheat into flour, ores into dust
+Create is about **rotational power**. Every Create machine needs rotational force to work. You generate this force, transfer it through shafts and belts, and use it to power machines.
 
-**Tip**: Press `W` while holding a wrench to see Create's tooltips. JEI (`R`) shows all Create recipes.
+#### The Three Core Concepts
 
-**Create's Ponder system**: Hold `W` while hovering over any Create block or item in JEI or your inventory. This opens an interactive animation explaining how the block works. Use this constantly — it's Create's built-in tutorial and better than any written guide.
+| Concept | What it means | Why it matters |
+|---------|--------------|----------------|
+| **Rotational Power (SU)** | Every Create source generates Stress Units (SU). Machines consume SU to run | If total SU consumption exceeds generation, machines stop. Add more sources or reduce load |
+| **Stress Capacity** | Shafts and gearboxes can only handle so much SU before breaking | Use reinforced shafts for high-stress networks. Spread load across multiple lines |
+| **Speed vs Force** | Speed (RPM) determines how fast a machine processes. Force determines how much load it can handle | Gear ratios matter: small gear on large gear = slow + strong. Large on small = fast + weak |
 
-#### Step 2: Add Mekanism
+#### Learning with Ponder
 
-Mekanism is about **industrial processing**. It uses its own power system (Joules) which is compatible with Create's rotational power through **Create's alternator**.
+Create has a built-in interactive tutorial called the **Ponder system**. Hold `W` while hovering over any Create block or item in JEI or your inventory. An animated scene plays showing exactly how the block works, what it connects to, and what it does.
 
-**Osmium**: Mekanism's primary ore. Find it underground (similar rarity to iron). Mine it with a stone pickaxe or better.
+**Use Ponder constantly.** It is better than any written guide. Every Create player learns through Ponder first.
 
-**Mekanism machines tier system**: Machines come in 4 tiers — Basic, Advanced, Elite, Ultimate. Higher tiers process faster and can handle more simultaneous operations.
+#### First Create Machines
 
-**First Mekanism machines:**
-1. **Metallurgic Infuser** — combine osmium with coal/infusion materials to create steel components
-2. **Enrichment Chamber** — 2x ore processing (1 ore → 2 dust). Your first and most important machine
-3. **Crusher** — alternative processing path, also 2x
-4. **Rotary Condensentrator** — converts between gases and liquids. Needed for chemical processing
-5. **Chemical Injection Chamber** + **Chemical Washer** + **Chemical Dissolution Chamber** — unlocks 3x, 4x, and 5x ore multiplication
+Your goal: build a simple processing line for early materials.
 
-**The Mekanism pipeline**: Osmium → osmium ingots → Basic machines → Steel → Advanced machines → Atomic Alloy → Elite machines → Ultimate machines → MekaSuit.
+**Step 1 — Gather basic components:**
+- Mine **andesite** — the most important early resource. You need lots of it
+- Craft **andesite casing** (andesite + wood nugget in JEI) — the basic building block of all Create machines
+- Craft **cogwheel** and **large cogwheel** — transfer rotational power
 
-**Energy**: Mekanism machines need power. Early game: heat generator (lava) or wind generator. Mid-game: gas-burning generator. Late-game: fusion reactor.
+**Step 2 — Build a hand-cranked system:**
+1. Craft a **hand crank** — place it on the ground
+2. Attach a **cogwheel** next to it — right-click the crank to spin it manually
+3. Attach a **millstone** to the cogwheel — right-click the millstone, put wheat or ore in
 
-#### Step 3: Build AE2 Storage
+This is your first Create setup. It's slow but it works without any power source.
 
-AE2 is about **digital storage** and **autocrafting**. Once you have basic Create or Mekanism processing, build an ME system:
+**Step 3 — Build a water wheel:**
+1. Place **water source blocks** flowing downhill (2-3 blocks drop)
+2. Place a **water wheel** in the flowing water — it starts spinning
+3. Attach a **shaft** to the wheel — rotational power flows through it
+4. Use **gear boxes** to change direction or split power
 
-**Finding Certus Quartz**: Certus quartz grows in meteorites. Look for circular depressions on the surface — dig down to find a meteorite with certus quartz blocks. You can also find certus quartz ore underground. Process certus quartz in a stonecutter to get **certus quartz dust**, then smelt into **certus quartz crystals**.
+A water wheel generates 256 SU when placed in flowing water. This is enough to power 2-3 basic machines.
 
-**First AE2 setup:**
-1. **Charger** — place certus quartz on top to charge it (power required)
-2. **ME Controller** — the brain of your network. Connect power to it
-3. **ME Drive** — holds storage cells. Connect to controller with **ME cable**
-4. **Storage Cell** — crafted from charged certus quartz + redstone. Put in the ME Drive
-5. **ME Terminal** — connect to the network. Right-click to open — all stored items in one screen
+**Step 4 — Automate processing:**
+1. **Mechanical press** — press ingots into plates, press plates into mechanisms
+2. **Millstone** — grind ores into dust (doubles output for smelting)
+3. **Mechanical mixer** — mix ingredients into alloys and compounds
 
-**Channels**: AE2 has a channel system. Each cable can carry 8 channels. A controller gives you 32 channels per face. Plan your network — use **ME smart cables** (show channel usage with colored lines) to see your channel count.
+Connect each machine to your power line with cogwheels. Right-click with a **wrench** to adjust direction.
 
-**Import & Export**:
-- **ME Import Bus** — place on a chest/machine, pulls items into your ME network
-- **ME Export Bus** — places items from your network into a machine
-- **Storage Bus** — treats an attached inventory as part of your ME network
+#### Mid-Game Create
 
-**Basic AE2 setup:** ME Controller + ME Drive (with cells) + Terminal + Import/Export buses on your machines → everything accessible from one terminal.
+Once you have brass (from zinc + copper in a heated mixer), you unlock:
 
-**Progression tip**: Start with 1k or 4k storage cells. Upgrade to 16k, 64k, and 256k as you accumulate more items.
+| Machine | What it does |
+|---------|-------------|
+| **Deployer** | Places blocks or uses items from its inventory. Automates crafting |
+| **Sequenced crafter** | Runs a multi-step crafting sequence automatically. Your first autocrafter |
+| **Mechanical arm** | Moves items between inventories. Replaces conveyor belts |
+| **Chute & Funnel** | Vertical item transport with filtering |
+| **Train station** | Build tracks, assemble trains, transport bulk items between bases |
 
-#### Step 4: Mid-Game Integration
+**Brass progression**: Find zinc ore (generates in the world alongside copper) → Mix zinc + copper in a heated mixer → Brass ingots → Brass casing → Advanced machines.
 
-| Task | Which mod | How |
-|------|-----------|-----|
-| Power your base | Create + Mekanism | Create wheels power Mekanism machines via alternator |
-| Process ores | Mekanism | 3x processing chain (Enrichment Chamber + Crusher + etc.) |
-| Craft components | Create | Mechanical press, mixer, deployer |
-| Store everything | AE2 | ME system with import busses on your machines |
-| Move items | Create | Conveyor belts between machine groups |
+**Blueprint system**: Craft a **blueprint and quill**. Select an area, save it as a blueprint. Place a **deployer** with the blueprint to automatically build it. This is how you replicate factory sections.
 
-#### Step 5: Late Game
+#### Create Keybindings
 
-- **AE2 autocrafting**: Set up pattern providers + molecular assemblers. Request an item, AE2 crafts it automatically
-- **Mekanism digital miner**: Automated mining — place it, configure filters, it mines everything in range
-- **Create trains**: Build tracks between bases for bulk item transport
-- **Mekanism fusion reactor**: Endgame power — requires deuterium + tritium (produced from water via electrolysis)
+| Keybind | Default | What it does |
+|---------|---------|-------------|
+| Open Ponder | `W` (hold over block) | Shows interactive animation for Create blocks |
+| Open Toolbox | `T` (hold) | Quick-access tool menu |
+| Wrench functionality | Right-click | Configure machine direction, dismantle |
+| Goggles functionality | `G` (hold over machine) | Shows SU consumption, RPM, and stress info |
+| Open Blueprint | **Not set** | Opens the blueprint editor |
 
-#### Step 6: Endgame
+**Goggles** are essential. Craft a pair of engineers goggles early (check JEI). Hold `G` while looking at any Create machine to see its SU consumption, current RPM, and whether it's overstressed.
 
-- **MekaSuit**: Mekanism's endgame armor. Flight, extreme damage resistance, fire/lava immunity, underwater breathing. Powered by your base's energy grid
-- **AE2 autocrafting CPU**: Complex autocrafting chains that craft anything from raw materials
-- **Create mega-factory**: Massive conveyor networks, train stations, automated farms
+---
+
+### Mekanism — Industrial Processing
+
+Mekanism is about **processing materials at industrial scale**. Its power system (Joules) is separate from Create's rotational power, but you can connect them with **Create's alternator** (converts rotational power to Joules).
+
+#### Finding Osmium
+
+Osmium is Mekanism's primary ore. It generates underground at all levels, similar rarity to iron. Mine it with a stone pickaxe or better. Smelt raw osmium into osmium ingots.
+
+#### The Tier System
+
+Every Mekanism machine comes in 4 tiers:
+
+| Tier | Color | Processing Speed | Upgrade Recipe |
+|------|-------|-----------------|----------------|
+| Basic | Orange | 1x | Starting tier — crafted directly |
+| Advanced | Red | 2x | Basic + osmium + redstone |
+| Elite | Dark Red | 4x | Advanced + diamond + obsidian |
+| Ultimate | Purple | 8x | Elite + refined obsidian + alloy |
+
+Upgrade by shift-right-clicking a machine with the next tier's upgrade item.
+
+#### Step 1: 2x Ore Processing
+
+Your first Mekanism setup:
+
+1. **Heat Generator** — place lava source below it for early power
+2. **Metallurgic Infuser** — combine osmium with carbon (coal/charcoal) to make **steel ingots**
+3. **Enrichment Chamber** — 1 ore → 2 dust. Smelt dust → 2 ingots. This is 2x processing
+
+Chain: `Mine ore → Enrichment Chamber → 2 dust → Furnace → 2 ingots`
+
+**Osmium processing**: Mine raw osmium → Enrichment Chamber → osmium dust → Furnace → osmium ingots. Then combine osmium ingots + carbon in the Metallurgic Infuser to make steel.
+
+#### Advanced Processing Chains
+
+Mekanism offers multiple ore processing multipliers:
+
+| Multiplier | Machines needed | Process |
+|------------|----------------|---------|
+| 2x | Enrichment Chamber | Ore → 2 dust → smelt → 2 ingots |
+| 3x | Enrichment Chamber + Crusher | Ore → dust → dirty dust → 2x Enrichment → 3 dust → smelt → 3 ingots |
+| 5x | Full chemical line (requires gas infrastructure) | Chemical Dissolution Chamber (sulfuric acid) → Washer (water) → Crystallizer → 5 dust → smelt → 5 ingots |
+
+**Practical early setup**: Start with 2x using just an Enrichment Chamber. This is good enough for early game. Move to 5x processing when you have power to spare — the chemical line needs significant Joules to run.
+
+**The 3x chain step by step:**
+1. Enrichment Chamber: ore → dust
+2. Crusher: dust → dirty dust  
+3. Enrichment Chamber: dirty dust → dust (second pass = 3x total)
+4. Furnace: dust → ingots
+
+#### Gas Infrastructure
+
+Mekanism adds gases as a resource type. You need them for high-tier processing:
+
+| Gas | Produced by | Used for |
+|-----|------------|----------|
+| Hydrogen | Electrolytic Separator (split water) | Power generation, processing |
+| Oxygen | Electrolytic Separator (split water) | Chemical processing |
+| Sulfuric Acid | Chemical Infuser (sulfur + oxygen) | 5x ore processing |
+| Deuterium | Electrolytic Separator (heavy water) | Fusion reactor fuel |
+| Tritium | Chemical Infuser (lithium + deuterium) | Fusion reactor fuel |
+
+**Gases move through pressurized tubes.** Craft **mechanical pipes** (basic) or **pressurized tubes** (for gas). Connect a **Rotary Condensentrator** to convert gas ↔ liquid for storage in standard tanks.
+
+#### Digital Miner
+
+The digital miner is Mekanism's automated mining machine. It's a mid-game goal.
+
+**How to use:**
+1. Craft the **Digital Miner** and place it
+2. Right-click to open its GUI
+3. Set a **radius** (default 32 blocks, increase up to 64)
+4. Set a **filter** — by default it mines everything. Add whitelist/blacklist filters for specific ores
+5. Supply power — the miner needs significant energy (4x the normal rate)
+6. Press "Start" — it scans the area and begins mining
+
+**Tip**: Set the miner to only mine ores (add an ore dictionary filter). This prevents it from filling with stone.
+
+#### Fusion Reactor (Endgame)
+
+The fusion reactor is Mekanism's endgame power source. It produces millions of Joules per tick — enough to power your entire base, charge a MekaSuit, and run every machine simultaneously.
+
+**Fuel production chain:**
+1. Pump water into an **Electrolytic Separator** → produces hydrogen + oxygen
+2. Process hydrogen through a series of machines to produce **deuterium** (check JEI for the exact chain — involves Chemical Infuser with specific catalysts)
+3. Combine deuterium + lithium in a **Chemical Infuser** → **tritium**  
+4. Feed both deuterium and tritium into the **Fusion Reactor** using pressurized tubes
+5. The reactor generates power once it reaches ignition temperature (right-click to start)
+
+**Note**: The fusion reactor is expensive to build and requires significant infrastructure. It's a Phase 3 project. Work up through Mekanism's generator tiers (heat → gas-burning → bio-generator) first.
+
+---
+
+### AE2 — Applied Energistics 2
+
+AE2 is about **digital item storage** and **autocrafting**. Instead of chests full of items, everything lives in an electronic network that you access from a single terminal.
+
+#### Finding Certus Quartz
+
+Certus quartz generates in two ways:
+- **Meteorites** — Look for circular depressions on the surface. Dig down to find a meteorite containing certus quartz blocks and a **sky stone chest** with free AE2 components
+- **Ore veins** — Certus quartz ore generates underground. Mine it with a pickaxe
+
+**Processing certus quartz:**
+1. Certus quartz block → mine → certus quartz item
+2. Craft into **certus quartz dust** (use a crafting table or macerator)
+3. Smelt dust → **certus quartz crystal**
+4. Charge crystals in an **AE2 Charger** (requires power) → **charged certus quartz**
+
+#### The Channel System
+
+AE2 has a **channel system** that limits how many devices can connect through a single cable. This is the hardest concept for new players.
+
+| Cable type | Channels carried | Visual indicator |
+|-----------|-----------------|-----------------|
+| ME Glass Cable | 8 | No indicator |
+| ME Smart Cable | 8 | Colored lines show channel usage (1-8) |
+| ME Dense Smart Cable | 32 | Thicker cable, colored lines |
+| ME Cover Cable | 8 | Can be hidden in walls |
+
+**Channel rules:**
+- Each cable can carry 8 channels (32 for dense)
+- Each ME Controller face provides 32 channels
+- Each device (drive, terminal, bus) consumes 1 channel
+- If you exceed channels, devices show "no power" (colorless cables)
+
+**Managing channels:** Use **ME Smart Cable** everywhere — the colored lines instantly show you how many channels you're using (yellow = 1, green = 2, blue = 4, etc.).
+
+#### Your First Network
+
+**Step 1 — Set up power:**
+AE2 devices need power (not Create or Mek power — AE2's own power system). Build a **vibration chamber** or **AE2 energy acceptor** and connect any power source (Create alternator or Mekanism generator).
+
+**Step 2 — Build the controller:**
+Craft an **ME Controller**. Place it. Connect power. Each face provides 32 channels — for your first network, one controller is enough.
+
+**Step 3 — Add storage:**
+1. Craft an **ME Drive** (holds up to 10 storage cells)
+2. Craft **1k storage cells** (charged certus quartz + redstone + glass)
+3. Place the drive next to the controller or connect via cable
+4. Put cells in the drive
+
+**Step 4 — Add a terminal:**
+Craft an **ME Terminal** (or **ME Crafting Terminal** — essential, lets you craft from stored items). Place it anywhere on the network. Right-click to open — all your digital items in one screen.
+
+#### Connecting to the World
+
+| Device | What it does | Channel use |
+|--------|-------------|-------------|
+| **ME Import Bus** | Pulls items from adjacent inventory into the ME network | 1 |
+| **ME Export Bus** | Pushes items from the network into adjacent inventory | 1 |
+| **Storage Bus** | Treats an adjacent inventory as part of the ME network (no import/export needed) | 1 |
+| **ME Interface** | Exports items to the network AND accepts items for autocrafting | 1 |
+
+**Practical setup:**
+- Place an **Import Bus** on your furnace → smelted items go directly into ME storage
+- Place a **Storage Bus** on a Sophisticated Storage barrel → the barrel's contents appear in your ME terminal
+- Place an **Export Bus** on your Mekanism crusher → items flow from ME storage into the machine
+
+#### Autocrafting
+
+Once your network is running, set up autocrafting:
+
+1. Craft **Patterns** (blank pattern + items in a crafting grid)
+2. Put patterns in an **ME Pattern Provider**
+3. Place the provider next to an **ME Molecular Assembler** (or use cables to connect them)
+4. Request the crafted item from your terminal — AE2 pulls ingredients from storage, sends them to the assembler, and returns the result
+
+**For Mekanism/Create machines:**
+Use an **ME Interface** instead of pattern provider. Put the pattern in the interface, and the interface exports ingredients to the adjacent machine and accepts the result back.
+
+#### Subnetworks (Advanced)
+
+When your network grows beyond 32 channels, build a **subnetwork**:
+
+1. Place a second **ME Controller** somewhere
+2. Connect it to the main network via **ME P2P Tunnel** (or use **ME Quantum Link** for wireless)
+3. The second controller provides 32 more channels
+4. Run **ME Dense Smart Cable** between controllers
+
+**Alternative**: Use **P2P tunnels** to compress 32 channels through a single cable.
+
+#### AE2 Keybindings
+
+| Keybind | Default | What it does |
+|---------|---------|-------------|
+| Open terminal | Right-click on terminal | Access all stored items |
+| Open crafting terminal | Right-click on crafting terminal | Access + craft from storage |
+| View network status | N/A | Right-click controller with a network tool |
+
+---
+
+### Mid-Game Integration
+
+By mid-game, you should have all three mods working together:
+
+| Layer | Mod | What's happening |
+|-------|-----|-----------------|
+| **Power** | Create | Water wheels → windmills → steam engines power the base |
+| **Power supplement** | Mekanism | Heat generators → gas generators supplement Create power |
+| **Ore processing** | Mekanism | 3x processing chain (Enrichment Chamber + Crusher) |
+| **Component crafting** | Create | Mechanical press + deployers automate component crafting |
+| **Storage** | AE2 | Import buses on all machines pull items into the ME network |
+| **Autocrafting** | AE2 | Pattern providers + molecular assemblers craft on demand |
+| **Transport** | Create | Conveyor belts move items between processing lines |
+| **Ore finding** | Skniro's Ores | New ore types generate in the Nether and End for mid-game expansion |
+
+### Nether & End Ores (Skniro's)
+
+Skniro's Nether and End Ores adds new ore types to both dimensions. These ores are processed through Mekanism machines and feed into Create/Mek material chains.
+
+**Nether ores**: Generate in the Nether at various Y-levels. Check JEI (`R`) to see exactly which ores are added and their required mining levels. Most can be processed through Mekanism's Enrichment Chamber for 2x output.
+
+**End ores**: Generate on the End islands after defeating the Ender Dragon. These are higher-tier materials used in advanced Mekanism machines and Create components.
+
+**Tip**: Use the Explorer's Compass (Wave 2) to find specific biomes where certain ores generate. Some ores are biome-specific.
+
+### Late Game
+
+- **AE2 autocrafting**: Set up pattern providers + molecular assemblers. Request any item, AE2 crafts it automatically from raw materials stored in the ME network
+- **Mekanism digital miner**: Automated mining — place it, set radius and filters, it mines everything. Feed output directly into AE2 via import bus
+- **Create trains**: Build tracks between bases. Assemble a train (engine + carriages). The train follows tracks automatically — use train stations to load/unload at each stop
+- **Mekanism fusion reactor**: Endgame power. Requires deuterium + tritium from processed water
+
+### Endgame
+
+- **MekaSuit**: Mekanism's endgame armor. Full flight, extreme damage resistance, fire/lava immunity, underwater breathing, auto-feed. Powered wirelessly by your base's energy grid. This is the power fantasy goal
+- **AE2 autocrafting CPU**: Complex multi-step autocrafting chains. Request advanced alloys and Mekanism components — AE2 crafts them from raw materials
+- **Create mega-factory**: Massive conveyor networks, train stations at every mining outpost, automated farms for Mekanism biofuel. Build the factory you've always wanted
 
 ---
 
