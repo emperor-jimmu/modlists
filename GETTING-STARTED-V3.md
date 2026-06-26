@@ -6,9 +6,124 @@ This guide walks you through the modpack **one Wave at a time**. Each wave intro
 
 ## Wave -1 — How to Play Minecraft
 
-*(Same as V2 — see GETTING-STARTED-V2.md for the full tutorial)*
+This section assumes you know nothing. If you've played Minecraft before, skip to Wave 0.
 
-Basic controls: WASD to move, left-click to attack/break, right-click to use/place, E for inventory. Punch trees, make a crafting table, build a shelter before night.
+### The Goal
+
+There isn't one. Minecraft is a sandbox. You punch trees, build things, explore, fight monsters, and eventually become very powerful. You make your own goals. This modpack adds even more things to do on top of the base game.
+
+### Controls (Default)
+
+| Action | Key |
+|--------|-----|
+| Move | `W A S D` |
+| Jump | `Space` |
+| Sneak | `Shift` (hold to walk off edges without falling) |
+| Sprint | `Ctrl` (hold while moving) |
+| Attack / Break blocks | **Left-click** (hold to keep breaking) |
+| Use item / Place block | **Right-click** |
+| Open inventory | `E` |
+| Drop item | `Q` (while hovering over item in inventory) |
+| Select hotbar slot | `1` through `9` |
+| Sneak + right-click on chest | Opens chest without placing the block you're holding |
+
+> **Customize these**: Options → Controls → Key Binds. Set what feels natural. The most common change is swapping sprint to a toggle.
+
+### Your First 10 Minutes
+
+#### 1. Punch a tree
+
+Look at a tree trunk. **Hold left-click** until the wood block breaks and drops. Pick it up by walking over it. Get at least 8 wood logs.
+
+#### 2. Make a crafting table
+
+Open your inventory (`E`). You'll see a 2x2 crafting grid in the top-right. Place 1 wood log in any slot → 4 wood planks appear on the right. Take them. Then fill all 4 crafting slots with planks (put 1 plank in each) → 1 crafting table appears. Take it.
+
+**Quick tip**: In your inventory grid, you can also turn 2 planks into 4 sticks (plank on top, plank on bottom). Sticks are used for tool handles.
+
+#### 3. Place your crafting table
+
+Walk to where you want your base. Right-click the ground with the crafting table in your hand → it appears. **Right-click the table** to open its 3x3 crafting grid (the big one).
+
+Now craft tools:
+
+| Tool | What it does | Crafting (3x3 grid) |
+|------|-------------|---------------------|
+| **Wooden Pickaxe** | Breaks stone | 3 planks across top row, 2 sticks down the middle column |
+| **Wooden Axe** | Faster tree chopping | 3 planks in top-left corner, 2 sticks down |
+| **Wooden Shovel** | Digs dirt/sand faster | 1 plank top-center, 2 sticks below |
+| **Wooden Sword** | Fights mobs | 2 planks in middle column, 1 stick below |
+
+#### 4. Gather stone
+
+Find some grey stone on the ground (or cliffs). Use your **wooden pickaxe** to mine 8-12 stone blocks. Then craft **stone tools** — same patterns as wooden but replace planks with cobblestone. Stone tools last longer and mine faster.
+
+#### 5. Build a shelter
+
+Before night falls (about 10 minutes into the first day), build a small box:
+- Walls: dirt, wood planks, or cobblestone — whatever you have
+- Roof: same material
+- Door: craft from 6 planks (2 columns of 3 in the crafting grid)
+- Torches: 1 stick + 1 coal (or charcoal) = 4 torches. Place them inside so you can see.
+
+> **No coal?** You can make **charcoal** by smelting wood logs in a furnace (see below). Same as coal but from wood.
+
+#### 6. Craft a furnace
+
+| Material | Pattern |
+|----------|---------|
+| 8 cobblestone | All slots except the center one → furnace |
+
+Place the furnace. Right-click it. Put wood logs in the top slot, planks/sticks in the bottom slot (fuel). Smelt logs into charcoal, cook raw meat, smelt iron ore.
+
+#### 7. Survive the first night
+
+Monsters spawn in darkness. Your shelter keeps them out. Stay inside. You can:
+- Dig a small mine under your shelter
+- Expand your crafting table base
+- Smelt materials
+- Sleep if you have a bed (3 wool + 3 planks)
+
+> **If there's no bed**: Wool comes from killing sheep (don't kill all the sheep — breed them with wheat later). Different coloured sheep drop different wool. 3 of any colour + 3 planks in a row = bed.
+
+#### 8. Day 2 and beyond
+
+| Priority | What to do |
+|----------|------------|
+| Find food | Kill animals (cows, pigs, chickens). Cook the meat in your furnace. Plant wheat seeds (break grass) near water. |
+| Get iron | Dig down (not straight down — staircase pattern) until you see brownish blocks with specks. Mine with stone pickaxe. Smelt in furnace → iron ingots. |
+| Make iron tools | Iron pickaxe, iron sword, iron armour. This is the "I'm established" checkpoint. |
+| Find a village | Walk around until you see buildings with paths. Villages have beds, food crops, and later — Waystones. |
+| Make a bed | 3 wool + 3 planks. Sleep through the night. Respawn at bed if you die. |
+
+#### Navigating with F3
+
+Press `F3` opens the debug screen. The useful parts:
+
+| Value | What it shows |
+|-------|---------------|
+| `xyz` | Your coordinates — write these down so you can find your base |
+| `Biome` | What biome you're in |
+| `Direction` | Which way you're facing (N/S/E/W) |
+| `Light` | Light level — mobs spawn at light level 0 |
+
+**Quick tip**: Write down your base coordinates before exploring. Or just place a Waystone (Wave 0) at your base.
+
+### Dying
+
+You lose some or all of your items (depends on difficulty settings) and respawn at your bed (or world spawn if no bed). With Wave 0's **grave mod**, your items stay in a grave you can retrieve.
+
+### Key Minecraft Concepts
+
+**Health & food**: You have 10 hearts (20 HP). Food restores hunger. When hunger is full, you slowly regenerate health. Don't let hunger drop to 0 — you'll start taking damage.
+
+**Day/night cycle**: 20 minutes total. 10 minutes day, 1.5 minutes sunset, 7 minutes night, 1.5 minutes sunrise. Monsters spawn in darkness.
+
+**Ore tiers**: Wood → Stone → Iron → Diamond → Netherite. Each tier mines faster and can mine the next tier's ores.
+
+**The Nether**: A dangerous alternate dimension. Build a Nether Portal (10 obsidian blocks in a 4x5 rectangle, light with flint and steel). The Nether has unique resources (blaze rods, netherite) and is optional for most of this modpack.
+
+**The End**: The dimension with the Ender Dragon. Beating the dragon is the "credits roll" of vanilla Minecraft. This modpack has many more things to do after that.
 
 ---
 
@@ -456,7 +571,14 @@ You won't. Graves preserve your items. No creeper craters. The pack is designed 
 ### Java & Performance
 Minecraft 1.21.1 requires **Java 21**. Use Temurin JDK 21 from Adoptium.
 
-Recommended JVM arguments:
+Recommended JVM arguments (for Minecraft Launcher → Installation → Edit → More Options → JVM Arguments):
+
 ```
--Xms8g -Xmx8g -XX:+UseShenandoahGC -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch
+-Xms8g -Xmx8g -XX:+UseShenandoahGC -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch -XX:+UseStringDeduplication -XX:-OmitStackTraceInFastThrow -XX:+OptimizeStringConcat
 ```
+
+| System RAM | Recommended allocation |
+|------------|------------------------|
+| 16 GB | `-Xms10g -Xmx10g` |
+| 32 GB | `-Xms22g -Xmx22g` |
+| 64 GB | `-Xms48g -Xmx48g` |
