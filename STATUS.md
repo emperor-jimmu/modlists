@@ -40,6 +40,7 @@
 - [x] Determined complete Wave 0 mod set
 - [x] Documented in MODLIST-V2.md
 - [x] Added QoL/Performance polish pass: ModernFix, ImmediatelyFast, C2ME, Krypton, Entity Culling, Dynamic FPS, Noisium, Reese's Sodium Options, LambDynamicLights, BetterF3, Sound Physics Remastered, Ambient Leaves, Mouse Tweaks, Chat Heads, Simple Harvest, Jade Addons
+- [x] Added chill music: AmbientSounds + Constant Music
 - [x] Updated GETTING-STARTED-V2.md with Wave 0 QoL tutorial sections
 
 ### Wave 1 — Tech (Tech Reborn)

@@ -293,6 +293,16 @@ No interaction needed. Makes sound behave more realistically — muffled through
 
 No interaction needed. Trees drop falling leaves — purely cosmetic. Configurable particle density in Mod Menu.
 
+#### AmbientSounds
+
+Adds dynamic nature ambiance — birds chirping in forests, wind through leaves, water flowing near rivers, crickets at night. The sounds change based on your biome and time of day. Configurable volume and sound sets in Mod Menu -> AmbientSounds.
+
+**Chill note**: This may be the single most impactful mod for the cozy/chill vibe. The world feels alive without being intrusive.
+
+#### Constant Music
+
+Removes the silence gaps between Minecraft music tracks. Instead of 30-60 seconds of silence between songs, the next track starts playing as the previous one fades. Configurable fade time in Mod Menu -> Constant Music. Also works with any music resource pack.
+
 #### Mouse Tweaks
 
 Inventory management shortcuts:

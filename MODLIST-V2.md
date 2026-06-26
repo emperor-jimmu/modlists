@@ -63,6 +63,8 @@ This wave makes the game run well, look nice, and feel forgiving. No major gamep
 | BetterF3               | Replaces the debug HUD with a customizable, human-readable layout |
 | Sound Physics Remastered | Realistic sound attenuation, reverberation, and absorption through blocks |
 | Ambient Leaves         | Falling leaf particles beneath trees — cosmetic, configurable density |
+| AmbientSounds          | Dynamic nature ambiance — birds, wind, water, crickets based on biome and time of day. 30M downloads |
+| Constant Music         | Removes silence gaps between music tracks — music plays continuously without dead air |
 
 ### Travel & Death
 
