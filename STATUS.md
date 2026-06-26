@@ -58,6 +58,18 @@
 - [x] Updated GETTING-STARTED-V2.md with Wave 5 tutorial
 - [x] Updated all Oritech references to Tech Reborn across all docs
 
+### Wave 6 — Combat & Mobs
+- [x] Design doc written: `docs/superpowers/specs/wave-6-combat-mobs.md`
+- [x] Version pins confirmed via Modrinth API
+  - Better Combat 2.3.2+1.21.1-fabric
+  - Mutant Monsters 21.1.1-1.21.1-Fabric
+  - AdventureZ 1.5.0+1.21.1
+  - Champions 1.0.6v-1.21.1
+  - Enchantment Descriptions 21.1.10
+- [x] Updated MODLIST-V2.md with full Wave 6 section
+- [x] Updated GETTING-STARTED-V2.md with Wave 6 tutorial
+- [x] Removed Better Combat from Pending (now included)
+
 ### AGENTS.md
 - [x] Updated vision pillars to include RPG-style levels/skills
 - [x] Updated technical standards to Fabric 1.21.1, Java 21
@@ -70,7 +82,7 @@
 - Document each override in config/ directory
 
 ### Testing
-- Test launch with Waves 0–5
+- Test launch with Waves 0–6
 - Verify no mod conflicts
 - Cross-wave integration testing (Tech Reborn + Logistics + Powah, Let's Do automated farming, loot in Terralith biomes)
 - Config tuning per mod
@@ -82,6 +94,5 @@
 - [x] Complementary Unbound selected and documented in MODLIST-V2.md
 
 ### Additional Mod Candidates
-- Better Combat (optional, enhances Simply Swords gameplay feel)
 - Additional RPG classes (Wizards, Archers, Paladins — Spell Engine ecosystem)
 - Jewelry (RPG Series) — optional for Savaru's Affixology

@@ -1,6 +1,6 @@
 # Mod List V2 — Minecraft 1.21.1 Fabric
 
-**Status: Waves 0–5 (Foundation, Tech, Exploration, Equipment Magic & RPG, Food, Tech Expansion) drafted**
+**Status: Waves 0–6 (Foundation, Tech, Exploration, Equipment Magic & RPG, Food, Tech Expansion, Combat & Mobs) drafted**
 
 This document defines the mod set for the V2 version of this modpack, targeting **Minecraft 1.21.1** on the **Fabric** modloader. The four pillars (power fantasy, easy-to-standard difficulty, 200h+ content, chill living) remain unchanged — see [AGENTS.md](./AGENTS.md) for the full vision.
 
@@ -339,6 +339,54 @@ All required libraries already present from earlier waves:
 - Logistics: ensure pipe power consumption is compatible with Tech Reborn's RF
 - Powah: balance solar panel output to match Tech Reborn's power curve
 - Consider disabling one macerator if both Tech Reborn and Logistics provide one
+
+---
+
+## Wave 6 — Combat & Mobs
+
+Gives the player's powerful gear something to fight. Better Combat makes every weapon feel distinct. Mutant Monsters and AdventureZ add genuinely threatening enemies. Champions adds elite mob affixes for loot chases. Everything is configurable or opt-in.
+
+### Core Mods
+
+| Mod                    | Version | Download | Role |
+|------------------------|---------|----------|------|
+| Better Combat          | 2.3.2+1.21.1-fabric | [Modrinth](https://modrinth.com/mod/better-combat) | Melee combat animations — weapon reach, sweeping, attack speed visuals. Makes Simply Swords weapons shine |
+| Mutant Monsters        | 21.1.1-1.21.1-Fabric | [Modrinth](https://modrinth.com/mod/mutant-monsters) | Mutant zombie, skeleton, creeper, enderman — each drops unique gear (Hulk Hammer, Mutant Skeleton Armor). Configurable spawn rate |
+| AdventureZ             | 1.5.0+1.21.1 | [Modrinth](https://modrinth.com/mod/adventurez) | New endboss (Blackstone Golem, ritual-summoned), dragon boss (The Eye, altar-summoned), overworld/nether mobs. Opt-in content |
+| Champions              | 1.0.6v-1.21.1 | [Modrinth](https://modrinth.com/mod/champions-fabric) | Elite mob affixes — rare/epic mobs with special abilities (hasty, molten, reflective, etc.). Better loot at higher ranks |
+| Enchantment Descriptions | 21.1.10 | [Modrinth](https://modrinth.com/mod/enchantment-descriptions) | Shows what enchantments do in tooltips — essential QoL, 30M downloads |
+
+### New Dependencies
+
+| Mod                | Required By | Notes |
+|--------------------|-------------|-------|
+| PlayerAnimator     | Better Combat | Animation library — 22M downloads |
+| Puzzles Lib        | Mutant Monsters | Library by same author (Fuzs) |
+| Forge Config API Port | Mutant Monsters | Fabric port of Forge config API |
+| Bookshelf Lib      | Enchantment Descriptions | Library by Darkhax |
+| Prickle            | Enchantment Descriptions | Config library |
+
+All other dependencies (Fabric API, Cloth Config, Mod Menu) already present from earlier waves.
+
+### Integration
+
+| Wave | Integration |
+|------|-------------|
+| Wave 3 (Equipment Magic) | Better Combat animations enhance Simply Swords unique weapons. Champions drop higher-rarity gear. Mutant gear socketable with Affixology gems |
+| Wave 1 (Tech Reborn) | Mutant drops processed through Tech Reborn machines. Quantum armor + Better Combat = satisfying combat |
+| Wave 2 (Exploration) | Mutants spawn in Terralith/Tectonic biomes. AdventureZ bosses are optional endgame targets |
+
+### Keybindings
+
+| Keybind | Default | Mod | Notes |
+|---------|---------|-----|-------|
+| Better Combat config | TBD | Better Combat | Access via Mod Menu → Better Combat |
+
+### Config Changes
+
+- Mutant Monsters: reduce spawn rate to ~50% of default for chill-friendly pacing
+- Champions: adjust rank distribution to favor common over elite spawns
+- AdventureZ: no changes needed — bosses are already opt-in (ritual/altar-summoned)
 
 ---
 

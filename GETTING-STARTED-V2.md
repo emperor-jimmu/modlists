@@ -874,6 +874,78 @@ Powah adds additional power generation options to supplement Tech Reborn's energ
 
 ---
 
+## Wave 6 — Combat & Mobs
+
+This wave gives your powerful gear something worth fighting. Better Combat makes every weapon feel unique, Mutant Monsters adds tough mob variants with unique drops, AdventureZ adds opt-in bosses, and Champions adds elite mobs with rare affixes.
+
+### Install
+
+See [MODLIST-V2.md](./MODLIST-V2.md#wave-6--combat-mobs) for the full mod list.
+
+### Better Combat
+
+Better Combat changes how melee combat feels — not how it works mechanically, just how it looks and sounds:
+
+- **Weapon reach**: Different weapons have different ranges (daggers are short, spears are long)
+- **Sweeping visuals**: Swords show an arc, axes show a heavy slash, spears show a thrust
+- **Attack speed animation**: Faster weapons (daggers) swing quickly, slower ones (greatswords) have weight
+
+It enhances **Simply Swords** perfectly — each of the 60+ unique weapons gets its own feel and animation. Install and forget; it just makes combat look and feel better.
+
+**Config**: Mod Menu -> Better Combat. You can tweak reach, sweeping, and visual effects.
+
+### Mutant Monsters
+
+Mutant Monsters adds tougher variants of vanilla mobs that spawn in the Overworld:
+
+| Mutant | What it does | Key drop |
+|--------|-------------|----------|
+| Mutant Zombie | Hulking brute with smash attacks | Hulk Hammer — ground-pound weapon |
+| Mutant Skeleton | Deadly marksman with rapid fire | Mutant Skeleton Armor |
+| Mutant Creeper | Chain explosions | Creeper Minion Egg — tameable exploding minion |
+| Mutant Enderman | Teleporting terror | Endersoul Hand — teleportation power |
+
+Mutants drop unique gear worth hunting. **Spawn rate is configurable** — open Mod Menu -> Mutant Monsters to reduce it.
+
+### AdventureZ
+
+Adds bosses and mobs across the Overworld and Nether — most are **opt-in** (you summon them):
+
+| Mob | How to encounter |
+|-----|-----------------|
+| Blackstone Golem | **Ritual-summoned** — build a blackstone altar with Gilded Blackstone Shards |
+| The Eye (dragon boss) | **Altar-summoned** — build the altar and wait |
+| Summoner | Appears during thunderstorms — weather-specific, avoidable |
+| Piglin Beast | Spawns when attacking piglins |
+| Soul Reaper | Nether soul sand valley — area-specific, avoidable |
+| Necromancer | Nether fortresses — area-specific |
+
+You choose when to fight the bosses. Build the altar when ready.
+
+### Champions
+
+Every hostile mob has a small chance to spawn as a **champion** with special affixes:
+
+| Affix | Effect |
+|-------|--------|
+| Hasty | Very fast movement |
+| Molten | Fires fire projectiles |
+| Lively | Regenerates health |
+| Reflective | Reflects damage |
+| Shielding | Periodic invulnerability |
+
+Higher rank champions drop better loot. Fully configurable via Mod Menu -> Champions.
+
+### Enchantment Descriptions
+
+Hover over an enchanted item and it says what the enchantment actually does. No config needed, install and forget.
+
+### Chill Note
+
+Everything in this wave is **configurable or opt-in**. Mutant spawn rates can be reduced. Champions can be tuned down. AdventureZ bosses don't exist until you build their altars. The gear you already have is strong enough — this wave just gives it something worthy to test against.
+
+---
+
 ## General Tips
 
 ### Finding Help
