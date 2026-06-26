@@ -140,9 +140,8 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [YACL](https://modrinth.com/mod/yacl)                                             | Config library                           |
 | [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                 | Accessory slots (replaces Trinkets)      |
 | [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)         | Library (AmbientSounds)                  |
-| [OctoLib](https://modrinth.com/mod/octo-lib)                                      | Library (Immersive UI)                   |
-| [Obscure API](https://modrinth.com/mod/obscure-api)                               | Library (Obscure Tooltips, Loot Journal) |
-| [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Loot Journal)                   |
+| [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                   |
+| [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal) |
 
 ### Shaderpack
 
