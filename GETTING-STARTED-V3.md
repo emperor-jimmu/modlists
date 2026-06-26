@@ -14,17 +14,17 @@ There isn't one. Minecraft is a sandbox. You punch trees, build things, explore,
 
 ### Controls (Default)
 
-| Action | Key |
-|--------|-----|
-| Move | `W A S D` |
-| Jump | `Space` |
-| Sneak | `Shift` (hold to walk off edges without falling) |
-| Sprint | `Ctrl` (hold while moving) |
-| Attack / Break blocks | **Left-click** (hold to keep breaking) |
-| Use item / Place block | **Right-click** |
-| Open inventory | `E` |
-| Drop item | `Q` (while hovering over item in inventory) |
-| Select hotbar slot | `1` through `9` |
+| Action                       | Key                                                  |
+|------------------------------|------------------------------------------------------|
+| Move                         | `W A S D`                                            |
+| Jump                         | `Space`                                              |
+| Sneak                        | `Shift` (hold to walk off edges without falling)     |
+| Sprint                       | `Ctrl` (hold while moving)                           |
+| Attack / Break blocks        | **Left-click** (hold to keep breaking)               |
+| Use item / Place block       | **Right-click**                                      |
+| Open inventory               | `E`                                                  |
+| Drop item                    | `Q` (while hovering over item in inventory)          |
+| Select hotbar slot           | `1` through `9`                                      |
 | Sneak + right-click on chest | Opens chest without placing the block you're holding |
 
 > **Customize these**: Options → Controls → Key Binds. Set what feels natural. The most common change is swapping sprint to a toggle.
@@ -47,12 +47,12 @@ Walk to where you want your base. Right-click the ground with the crafting table
 
 Now craft tools:
 
-| Tool | What it does | Crafting (3x3 grid) |
-|------|-------------|---------------------|
-| **Wooden Pickaxe** | Breaks stone | 3 planks across top row, 2 sticks down the middle column |
-| **Wooden Axe** | Faster tree chopping | 3 planks in top-left corner, 2 sticks down |
-| **Wooden Shovel** | Digs dirt/sand faster | 1 plank top-center, 2 sticks below |
-| **Wooden Sword** | Fights mobs | 2 planks in middle column, 1 stick below |
+| Tool               | What it does          | Crafting (3x3 grid)                                      |
+|--------------------|-----------------------|----------------------------------------------------------|
+| **Wooden Pickaxe** | Breaks stone          | 3 planks across top row, 2 sticks down the middle column |
+| **Wooden Axe**     | Faster tree chopping  | 3 planks in top-left corner, 2 sticks down               |
+| **Wooden Shovel**  | Digs dirt/sand faster | 1 plank top-center, 2 sticks below                       |
+| **Wooden Sword**   | Fights mobs           | 2 planks in middle column, 1 stick below                 |
 
 #### 4. Gather stone
 
@@ -61,6 +61,7 @@ Find some grey stone on the ground (or cliffs). Use your **wooden pickaxe** to m
 #### 5. Build a shelter
 
 Before night falls (about 10 minutes into the first day), build a small box:
+
 - Walls: dirt, wood planks, or cobblestone — whatever you have
 - Roof: same material
 - Door: craft from 6 planks (2 columns of 3 in the crafting grid)
@@ -70,8 +71,8 @@ Before night falls (about 10 minutes into the first day), build a small box:
 
 #### 6. Craft a furnace
 
-| Material | Pattern |
-|----------|---------|
+| Material      | Pattern                                   |
+|---------------|-------------------------------------------|
 | 8 cobblestone | All slots except the center one → furnace |
 
 Place the furnace. Right-click it. Put wood logs in the top slot, planks/sticks in the bottom slot (fuel). Smelt logs into charcoal, cook raw meat, smelt iron ore.
@@ -79,6 +80,7 @@ Place the furnace. Right-click it. Put wood logs in the top slot, planks/sticks 
 #### 7. Survive the first night
 
 Monsters spawn in darkness. Your shelter keeps them out. Stay inside. You can:
+
 - Dig a small mine under your shelter
 - Expand your crafting table base
 - Smelt materials
@@ -88,24 +90,24 @@ Monsters spawn in darkness. Your shelter keeps them out. Stay inside. You can:
 
 #### 8. Day 2 and beyond
 
-| Priority | What to do |
-|----------|------------|
-| Find food | Kill animals (cows, pigs, chickens). Cook the meat in your furnace. Plant wheat seeds (break grass) near water. |
-| Get iron | Dig down (not straight down — staircase pattern) until you see brownish blocks with specks. Mine with stone pickaxe. Smelt in furnace → iron ingots. |
-| Make iron tools | Iron pickaxe, iron sword, iron armour. This is the "I'm established" checkpoint. |
-| Find a village | Walk around until you see buildings with paths. Villages have beds, food crops, and later — Waystones. |
-| Make a bed | 3 wool + 3 planks. Sleep through the night. Respawn at bed if you die. |
+| Priority        | What to do                                                                                                                                           |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Find food       | Kill animals (cows, pigs, chickens). Cook the meat in your furnace. Plant wheat seeds (break grass) near water.                                      |
+| Get iron        | Dig down (not straight down — staircase pattern) until you see brownish blocks with specks. Mine with stone pickaxe. Smelt in furnace → iron ingots. |
+| Make iron tools | Iron pickaxe, iron sword, iron armour. This is the "I'm established" checkpoint.                                                                     |
+| Find a village  | Walk around until you see buildings with paths. Villages have beds, food crops, and later — Waystones.                                               |
+| Make a bed      | 3 wool + 3 planks. Sleep through the night. Respawn at bed if you die.                                                                               |
 
 #### Navigating with F3
 
 Press `F3` opens the debug screen. The useful parts:
 
-| Value | What it shows |
-|-------|---------------|
-| `xyz` | Your coordinates — write these down so you can find your base |
-| `Biome` | What biome you're in |
-| `Direction` | Which way you're facing (N/S/E/W) |
-| `Light` | Light level — mobs spawn at light level 0 |
+| Value       | What it shows                                                 |
+|-------------|---------------------------------------------------------------|
+| `xyz`       | Your coordinates — write these down so you can find your base |
+| `Biome`     | What biome you're in                                          |
+| `Direction` | Which way you're facing (N/S/E/W)                             |
+| `Light`     | Light level — mobs spawn at light level 0                     |
 
 **Quick tip**: Write down your base coordinates before exploring. Or just place a Waystone (Wave 0) at your base.
 
@@ -139,11 +141,11 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list wi
 
 #### Video Settings
 
-| Setting | Recommended | Notes |
-|---------|-------------|-------|
-| Graphics | Fabulous | Embeddium makes this performant now |
-| Render Distance | 16-32 chunks | Tune to your hardware; Distant Horizons handles far LOD |
-| Brightness | Moody → Bright | Personal preference — Bright makes caves easier to see |
+| Setting         | Recommended    | Notes                                                   |
+|-----------------|----------------|---------------------------------------------------------|
+| Graphics        | Fabulous       | Embeddium makes this performant now                     |
+| Render Distance | 16-32 chunks   | Tune to your hardware; Distant Horizons handles far LOD |
+| Brightness      | Moody → Bright | Personal preference — Bright makes caves easier to see  |
 
 #### Distant Horizons Settings
 
@@ -155,15 +157,15 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 
 #### Keybindings (Set These Up First)
 
-| Keybind | Default | Mod | Notes |
-|---------|---------|-----|-------|
-| View Recipes | `R` | JEI | Hover over any item and press R |
-| View Uses | `U` | JEI | Hover over any item and press U |
-| Open Fullscreen Map | `J` | Xaero's World Map | Opens the big map |
-| Toggle Minimap | `H` (default) | Xaero's Minimap | Shows/hides the corner minimap |
-| Open Waystone Menu | **Not set** | Waystones | Set to `Ctrl+Shift+W` |
-| Open Backpack | `B` | Sophisticated Backpacks | Opens equipped backpack |
-| Zoom | **Not set** | Embeddium | Set to `C` — hold to zoom in |
+| Keybind             | Default       | Mod                     | Notes                           |
+|---------------------|---------------|-------------------------|---------------------------------|
+| View Recipes        | `R`           | JEI                     | Hover over any item and press R |
+| View Uses           | `U`           | JEI                     | Hover over any item and press U |
+| Open Fullscreen Map | `J`           | Xaero's World Map       | Opens the big map               |
+| Toggle Minimap      | `H` (default) | Xaero's Minimap         | Shows/hides the corner minimap  |
+| Open Waystone Menu  | **Not set**   | Waystones               | Set to `Ctrl+Shift+W`           |
+| Open Backpack       | `B`           | Sophisticated Backpacks | Opens equipped backpack         |
+| Zoom                | **Not set**   | Embeddium               | Set to `C` — hold to zoom in    |
 
 ### Using Wave 0 Mods
 
@@ -213,6 +215,12 @@ Shows the sender's head next to their chat message. Works automatically.
 
 Opens extra equipment slots on your character: ring, amulet, belt, gloves, charm, back, and more. Press the Curios keybind (check Controls) to open the Curios inventory. This replaces Trinkets from V2 — Relics RPG accessories and other Curios-compatible items go in these slots.
 
+#### Better Advancements
+
+Better Advancements overhauls the vanilla advancements GUI — cleaner layout, nicer colors, smoother animations. Open it from the usual advancements key (`L` by default). It pairs well with Fancy Toasts (the animated popups you see when earning an advancement).
+
+No configuration needed. Install and forget.
+
 #### Right Click Harvest
 
 Right-click a fully grown crop → it breaks and drops, then auto-replants. Works on vanilla crops and most modded ones.
@@ -229,18 +237,18 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-1--tech-create--mekanism--ae2). Install
 
 ### How They Fit Together
 
-| Problem | Solution |
-|---------|----------|
-| Early power | Create: water wheels, windmills |
-| Ore processing | Mekanism: from 2x to 5x ore multiplication |
-| Item transport | Create: conveyor belts, chutes, funnels |
-| Factory automation | Create: deployers, sequenced crafters, mechanical arms |
-| Digital storage | AE2: ME drives store thousands of items in one block |
-| Autocrafting | AE2: pattern-provider autocrafting |
-| Mid-game power | Mekanism: gas-burning generators, solar, wind |
-| Endgame power | Mekanism: fusion reactor |
-| Endgame armor | Mekanism: MekaSuit (flight, invulnerability, fire resistance) |
-| Long-distance transport | Create: trains |
+| Problem                 | Solution                                                      |
+|-------------------------|---------------------------------------------------------------|
+| Early power             | Create: water wheels, windmills                               |
+| Ore processing          | Mekanism: from 2x to 5x ore multiplication                    |
+| Item transport          | Create: conveyor belts, chutes, funnels                       |
+| Factory automation      | Create: deployers, sequenced crafters, mechanical arms        |
+| Digital storage         | AE2: ME drives store thousands of items in one block          |
+| Autocrafting            | AE2: pattern-provider autocrafting                            |
+| Mid-game power          | Mekanism: gas-burning generators, solar, wind                 |
+| Endgame power           | Mekanism: fusion reactor                                      |
+| Endgame armor           | Mekanism: MekaSuit (flight, invulnerability, fire resistance) |
+| Long-distance transport | Create: trains                                                |
 
 ---
 
@@ -250,11 +258,11 @@ Create is about **rotational power**. Every Create machine needs rotational forc
 
 #### The Three Core Concepts
 
-| Concept | What it means | Why it matters |
-|---------|--------------|----------------|
-| **Rotational Power (SU)** | Every Create source generates Stress Units (SU). Machines consume SU to run | If total SU consumption exceeds generation, machines stop. Add more sources or reduce load |
-| **Stress Capacity** | Shafts and gearboxes can only handle so much SU before breaking | Use reinforced shafts for high-stress networks. Spread load across multiple lines |
-| **Speed vs Force** | Speed (RPM) determines how fast a machine processes. Force determines how much load it can handle | Gear ratios matter: small gear on large gear = slow + strong. Large on small = fast + weak |
+| Concept                   | What it means                                                                                     | Why it matters                                                                             |
+|---------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| **Rotational Power (SU)** | Every Create source generates Stress Units (SU). Machines consume SU to run                       | If total SU consumption exceeds generation, machines stop. Add more sources or reduce load |
+| **Stress Capacity**       | Shafts and gearboxes can only handle so much SU before breaking                                   | Use reinforced shafts for high-stress networks. Spread load across multiple lines          |
+| **Speed vs Force**        | Speed (RPM) determines how fast a machine processes. Force determines how much load it can handle | Gear ratios matter: small gear on large gear = slow + strong. Large on small = fast + weak |
 
 #### Learning with Ponder
 
@@ -267,11 +275,13 @@ Create has a built-in interactive tutorial called the **Ponder system**. Hold `W
 Your goal: build a simple processing line for early materials.
 
 **Step 1 — Gather basic components:**
+
 - Mine **andesite** — the most important early resource. You need lots of it
 - Craft **andesite casing** (andesite + wood nugget in JEI) — the basic building block of all Create machines
 - Craft **cogwheel** and **large cogwheel** — transfer rotational power
 
 **Step 2 — Build a hand-cranked system:**
+
 1. Craft a **hand crank** — place it on the ground
 2. Attach a **cogwheel** next to it — right-click the crank to spin it manually
 3. Attach a **millstone** to the cogwheel — right-click the millstone, put wheat or ore in
@@ -279,6 +289,7 @@ Your goal: build a simple processing line for early materials.
 This is your first Create setup. It's slow but it works without any power source.
 
 **Step 3 — Build a water wheel:**
+
 1. Place **water source blocks** flowing downhill (2-3 blocks drop)
 2. Place a **water wheel** in the flowing water — it starts spinning
 3. Attach a **shaft** to the wheel — rotational power flows through it
@@ -287,6 +298,7 @@ This is your first Create setup. It's slow but it works without any power source
 A water wheel generates 256 SU when placed in flowing water. This is enough to power 2-3 basic machines.
 
 **Step 4 — Automate processing:**
+
 1. **Mechanical press** — press ingots into plates, press plates into mechanisms
 2. **Millstone** — grind ores into dust (doubles output for smelting)
 3. **Mechanical mixer** — mix ingredients into alloys and compounds
@@ -297,13 +309,13 @@ Connect each machine to your power line with cogwheels. Right-click with a **wre
 
 Once you have brass (from zinc + copper in a heated mixer), you unlock:
 
-| Machine | What it does |
-|---------|-------------|
-| **Deployer** | Places blocks or uses items from its inventory. Automates crafting |
+| Machine               | What it does                                                              |
+|-----------------------|---------------------------------------------------------------------------|
+| **Deployer**          | Places blocks or uses items from its inventory. Automates crafting        |
 | **Sequenced crafter** | Runs a multi-step crafting sequence automatically. Your first autocrafter |
-| **Mechanical arm** | Moves items between inventories. Replaces conveyor belts |
-| **Chute & Funnel** | Vertical item transport with filtering |
-| **Train station** | Build tracks, assemble trains, transport bulk items between bases |
+| **Mechanical arm**    | Moves items between inventories. Replaces conveyor belts                  |
+| **Chute & Funnel**    | Vertical item transport with filtering                                    |
+| **Train station**     | Build tracks, assemble trains, transport bulk items between bases         |
 
 **Brass progression**: Find zinc ore (generates in the world alongside copper) → Mix zinc + copper in a heated mixer → Brass ingots → Brass casing → Advanced machines.
 
@@ -311,13 +323,13 @@ Once you have brass (from zinc + copper in a heated mixer), you unlock:
 
 #### Create Keybindings
 
-| Keybind | Default | What it does |
-|---------|---------|-------------|
-| Open Ponder | `W` (hold over block) | Shows interactive animation for Create blocks |
-| Open Toolbox | `T` (hold) | Quick-access tool menu |
-| Wrench functionality | Right-click | Configure machine direction, dismantle |
-| Goggles functionality | `G` (hold over machine) | Shows SU consumption, RPM, and stress info |
-| Open Blueprint | **Not set** | Opens the blueprint editor |
+| Keybind               | Default                 | What it does                                  |
+|-----------------------|-------------------------|-----------------------------------------------|
+| Open Ponder           | `W` (hold over block)   | Shows interactive animation for Create blocks |
+| Open Toolbox          | `T` (hold)              | Quick-access tool menu                        |
+| Wrench functionality  | Right-click             | Configure machine direction, dismantle        |
+| Goggles functionality | `G` (hold over machine) | Shows SU consumption, RPM, and stress info    |
+| Open Blueprint        | **Not set**             | Opens the blueprint editor                    |
 
 **Goggles** are essential. Craft a pair of engineers goggles early (check JEI). Hold `G` while looking at any Create machine to see its SU consumption, current RPM, and whether it's overstressed.
 
@@ -335,12 +347,12 @@ Osmium is Mekanism's primary ore. It generates underground at all levels, simila
 
 Every Mekanism machine comes in 4 tiers:
 
-| Tier | Color | Processing Speed | Upgrade Recipe |
-|------|-------|-----------------|----------------|
-| Basic | Orange | 1x | Starting tier — crafted directly |
-| Advanced | Red | 2x | Basic + osmium + redstone |
-| Elite | Dark Red | 4x | Advanced + diamond + obsidian |
-| Ultimate | Purple | 8x | Elite + refined obsidian + alloy |
+| Tier     | Color    | Processing Speed | Upgrade Recipe                   |
+|----------|----------|------------------|----------------------------------|
+| Basic    | Orange   | 1x               | Starting tier — crafted directly |
+| Advanced | Red      | 2x               | Basic + osmium + redstone        |
+| Elite    | Dark Red | 4x               | Advanced + diamond + obsidian    |
+| Ultimate | Purple   | 8x               | Elite + refined obsidian + alloy |
 
 Upgrade by shift-right-clicking a machine with the next tier's upgrade item.
 
@@ -360,15 +372,16 @@ Chain: `Mine ore → Enrichment Chamber → 2 dust → Furnace → 2 ingots`
 
 Mekanism offers multiple ore processing multipliers:
 
-| Multiplier | Machines needed | Process |
-|------------|----------------|---------|
-| 2x | Enrichment Chamber | Ore → 2 dust → smelt → 2 ingots |
-| 3x | Enrichment Chamber + Crusher | Ore → dust → dirty dust → 2x Enrichment → 3 dust → smelt → 3 ingots |
-| 5x | Full chemical line (requires gas infrastructure) | Chemical Dissolution Chamber (sulfuric acid) → Washer (water) → Crystallizer → 5 dust → smelt → 5 ingots |
+| Multiplier | Machines needed                                  | Process                                                                                                  |
+|------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| 2x         | Enrichment Chamber                               | Ore → 2 dust → smelt → 2 ingots                                                                          |
+| 3x         | Enrichment Chamber + Crusher                     | Ore → dust → dirty dust → 2x Enrichment → 3 dust → smelt → 3 ingots                                      |
+| 5x         | Full chemical line (requires gas infrastructure) | Chemical Dissolution Chamber (sulfuric acid) → Washer (water) → Crystallizer → 5 dust → smelt → 5 ingots |
 
 **Practical early setup**: Start with 2x using just an Enrichment Chamber. This is good enough for early game. Move to 5x processing when you have power to spare — the chemical line needs significant Joules to run.
 
 **The 3x chain step by step:**
+
 1. Enrichment Chamber: ore → dust
 2. Crusher: dust → dirty dust  
 3. Enrichment Chamber: dirty dust → dust (second pass = 3x total)
@@ -378,13 +391,13 @@ Mekanism offers multiple ore processing multipliers:
 
 Mekanism adds gases as a resource type. You need them for high-tier processing:
 
-| Gas | Produced by | Used for |
-|-----|------------|----------|
-| Hydrogen | Electrolytic Separator (split water) | Power generation, processing |
-| Oxygen | Electrolytic Separator (split water) | Chemical processing |
-| Sulfuric Acid | Chemical Infuser (sulfur + oxygen) | 5x ore processing |
-| Deuterium | Electrolytic Separator (heavy water) | Fusion reactor fuel |
-| Tritium | Chemical Infuser (lithium + deuterium) | Fusion reactor fuel |
+| Gas           | Produced by                            | Used for                     |
+|---------------|----------------------------------------|------------------------------|
+| Hydrogen      | Electrolytic Separator (split water)   | Power generation, processing |
+| Oxygen        | Electrolytic Separator (split water)   | Chemical processing          |
+| Sulfuric Acid | Chemical Infuser (sulfur + oxygen)     | 5x ore processing            |
+| Deuterium     | Electrolytic Separator (heavy water)   | Fusion reactor fuel          |
+| Tritium       | Chemical Infuser (lithium + deuterium) | Fusion reactor fuel          |
 
 **Gases move through pressurized tubes.** Craft **mechanical pipes** (basic) or **pressurized tubes** (for gas). Connect a **Rotary Condensentrator** to convert gas ↔ liquid for storage in standard tanks.
 
@@ -393,6 +406,7 @@ Mekanism adds gases as a resource type. You need them for high-tier processing:
 The digital miner is Mekanism's automated mining machine. It's a mid-game goal.
 
 **How to use:**
+
 1. Craft the **Digital Miner** and place it
 2. Right-click to open its GUI
 3. Set a **radius** (default 32 blocks, increase up to 64)
@@ -407,6 +421,7 @@ The digital miner is Mekanism's automated mining machine. It's a mid-game goal.
 The fusion reactor is Mekanism's endgame power source. It produces millions of Joules per tick — enough to power your entire base, charge a MekaSuit, and run every machine simultaneously.
 
 **Fuel production chain:**
+
 1. Pump water into an **Electrolytic Separator** → produces hydrogen + oxygen
 2. Process hydrogen through a series of machines to produce **deuterium** (check JEI for the exact chain — involves Chemical Infuser with specific catalysts)
 3. Combine deuterium + lithium in a **Chemical Infuser** → **tritium**  
@@ -424,10 +439,12 @@ AE2 is about **digital item storage** and **autocrafting**. Instead of chests fu
 #### Finding Certus Quartz
 
 Certus quartz generates in two ways:
+
 - **Meteorites** — Look for circular depressions on the surface. Dig down to find a meteorite containing certus quartz blocks and a **sky stone chest** with free AE2 components
 - **Ore veins** — Certus quartz ore generates underground. Mine it with a pickaxe
 
 **Processing certus quartz:**
+
 1. Certus quartz block → mine → certus quartz item
 2. Craft into **certus quartz dust** (use a crafting table or macerator)
 3. Smelt dust → **certus quartz crystal**
@@ -437,14 +454,15 @@ Certus quartz generates in two ways:
 
 AE2 has a **channel system** that limits how many devices can connect through a single cable. This is the hardest concept for new players.
 
-| Cable type | Channels carried | Visual indicator |
-|-----------|-----------------|-----------------|
-| ME Glass Cable | 8 | No indicator |
-| ME Smart Cable | 8 | Colored lines show channel usage (1-8) |
-| ME Dense Smart Cable | 32 | Thicker cable, colored lines |
-| ME Cover Cable | 8 | Can be hidden in walls |
+| Cable type           | Channels carried | Visual indicator                       |
+|----------------------|------------------|----------------------------------------|
+| ME Glass Cable       | 8                | No indicator                           |
+| ME Smart Cable       | 8                | Colored lines show channel usage (1-8) |
+| ME Dense Smart Cable | 32               | Thicker cable, colored lines           |
+| ME Cover Cable       | 8                | Can be hidden in walls                 |
 
 **Channel rules:**
+
 - Each cable can carry 8 channels (32 for dense)
 - Each ME Controller face provides 32 channels
 - Each device (drive, terminal, bus) consumes 1 channel
@@ -461,6 +479,7 @@ AE2 devices need power (not Create or Mek power — AE2's own power system). Bui
 Craft an **ME Controller**. Place it. Connect power. Each face provides 32 channels — for your first network, one controller is enough.
 
 **Step 3 — Add storage:**
+
 1. Craft an **ME Drive** (holds up to 10 storage cells)
 2. Craft **1k storage cells** (charged certus quartz + redstone + glass)
 3. Place the drive next to the controller or connect via cable
@@ -471,14 +490,15 @@ Craft an **ME Terminal** (or **ME Crafting Terminal** — essential, lets you cr
 
 #### Connecting to the World
 
-| Device | What it does | Channel use |
-|--------|-------------|-------------|
-| **ME Import Bus** | Pulls items from adjacent inventory into the ME network | 1 |
-| **ME Export Bus** | Pushes items from the network into adjacent inventory | 1 |
-| **Storage Bus** | Treats an adjacent inventory as part of the ME network (no import/export needed) | 1 |
-| **ME Interface** | Exports items to the network AND accepts items for autocrafting | 1 |
+| Device            | What it does                                                                     | Channel use |
+|-------------------|----------------------------------------------------------------------------------|-------------|
+| **ME Import Bus** | Pulls items from adjacent inventory into the ME network                          | 1           |
+| **ME Export Bus** | Pushes items from the network into adjacent inventory                            | 1           |
+| **Storage Bus**   | Treats an adjacent inventory as part of the ME network (no import/export needed) | 1           |
+| **ME Interface**  | Exports items to the network AND accepts items for autocrafting                  | 1           |
 
 **Practical setup:**
+
 - Place an **Import Bus** on your furnace → smelted items go directly into ME storage
 - Place a **Storage Bus** on a Sophisticated Storage barrel → the barrel's contents appear in your ME terminal
 - Place an **Export Bus** on your Mekanism crusher → items flow from ME storage into the machine
@@ -508,11 +528,11 @@ When your network grows beyond 32 channels, build a **subnetwork**:
 
 #### AE2 Keybindings
 
-| Keybind | Default | What it does |
-|---------|---------|-------------|
-| Open terminal | Right-click on terminal | Access all stored items |
-| Open crafting terminal | Right-click on crafting terminal | Access + craft from storage |
-| View network status | N/A | Right-click controller with a network tool |
+| Keybind                | Default                          | What it does                               |
+|------------------------|----------------------------------|--------------------------------------------|
+| Open terminal          | Right-click on terminal          | Access all stored items                    |
+| Open crafting terminal | Right-click on crafting terminal | Access + craft from storage                |
+| View network status    | N/A                              | Right-click controller with a network tool |
 
 ---
 
@@ -520,16 +540,16 @@ When your network grows beyond 32 channels, build a **subnetwork**:
 
 By mid-game, you should have all three mods working together:
 
-| Layer | Mod | What's happening |
-|-------|-----|-----------------|
-| **Power** | Create | Water wheels → windmills → steam engines power the base |
-| **Power supplement** | Mekanism | Heat generators → gas generators supplement Create power |
-| **Ore processing** | Mekanism | 3x processing chain (Enrichment Chamber + Crusher) |
-| **Component crafting** | Create | Mechanical press + deployers automate component crafting |
-| **Storage** | AE2 | Import buses on all machines pull items into the ME network |
-| **Autocrafting** | AE2 | Pattern providers + molecular assemblers craft on demand |
-| **Transport** | Create | Conveyor belts move items between processing lines |
-| **Ore finding** | Skniro's Ores | New ore types generate in the Nether and End for mid-game expansion |
+| Layer                  | Mod           | What's happening                                                    |
+|------------------------|---------------|---------------------------------------------------------------------|
+| **Power**              | Create        | Water wheels → windmills → steam engines power the base             |
+| **Power supplement**   | Mekanism      | Heat generators → gas generators supplement Create power            |
+| **Ore processing**     | Mekanism      | 3x processing chain (Enrichment Chamber + Crusher)                  |
+| **Component crafting** | Create        | Mechanical press + deployers automate component crafting            |
+| **Storage**            | AE2           | Import buses on all machines pull items into the ME network         |
+| **Autocrafting**       | AE2           | Pattern providers + molecular assemblers craft on demand            |
+| **Transport**          | Create        | Conveyor belts move items between processing lines                  |
+| **Ore finding**        | Skniro's Ores | New ore types generate in the Nether and End for mid-game expansion |
 
 ### Nether & End Ores (Skniro's)
 
@@ -570,13 +590,13 @@ The Overworld is dramatically transformed. Every biome, structure, and cave syst
 
 #### Terrain Overhaul — Terralith + Tectonic + Regions Unexplored
 
-| Aspect | What changed | What to look for |
-|--------|-------------|------------------|
-| **Mountains** | Tectonic makes them taller and steeper. Terralith adds painted mountains (orange/white layers) and volcanic peaks | Build a base in a mountain valley with dramatic views |
-| **Oceans** | Deeper and more varied — trench-like drops offshore | Use ships/boats (or Create airships) to cross, lookout for ocean monuments |
-| **Forests** | Regions Unexplored adds 65+ new biomes — redwood forests (200+ block trees), autumn forests, willow swamps, cherry groves, steppes, and more | Cherry groves for vibes. Redwood forests for massive wood supply |
-| **Caves** | YUNG's Better Caves expands cave systems — wider tunnels, deeper chasms, more open spaces | Caves are easier to navigate and more impressive. Bring torches |
-| **Rivers & Valleys** | Tectonic carves deeper river valleys. Terralith adds shattered savannahs (mesa-like) | Follow rivers for scenic travel. Build bridges with Create |
+| Aspect               | What changed                                                                                                                                 | What to look for                                                           |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **Mountains**        | Tectonic makes them taller and steeper. Terralith adds painted mountains (orange/white layers) and volcanic peaks                            | Build a base in a mountain valley with dramatic views                      |
+| **Oceans**           | Deeper and more varied — trench-like drops offshore                                                                                          | Use ships/boats (or Create airships) to cross, lookout for ocean monuments |
+| **Forests**          | Regions Unexplored adds 65+ new biomes — redwood forests (200+ block trees), autumn forests, willow swamps, cherry groves, steppes, and more | Cherry groves for vibes. Redwood forests for massive wood supply           |
+| **Caves**            | YUNG's Better Caves expands cave systems — wider tunnels, deeper chasms, more open spaces                                                    | Caves are easier to navigate and more impressive. Bring torches            |
+| **Rivers & Valleys** | Tectonic carves deeper river valleys. Terralith adds shattered savannahs (mesa-like)                                                         | Follow rivers for scenic travel. Build bridges with Create                 |
 
 **Pro tip**: Each of these worldgen mods works best in **newly generated chunks**. Load up a world and explore in any direction. The terrain variety means every direction has something different.
 
@@ -584,17 +604,17 @@ The Overworld is dramatically transformed. Every biome, structure, and cave syst
 
 Every vanilla structure type is expanded:
 
-| Structure | What's new | Loot expectation |
-|-----------|-----------|------------------|
-| **Better Dungeons** | Multi-room dungeons with spawners, traps, and treasure rooms | Good early loot — iron, gold, enchanted books |
-| **Better Mineshafts** | Larger, multi-level mineshafts with support beams and loot caches | Rail, minecarts, ore samples |
-| **Better Strongholds** | End portal room is deeper. More libraries, prisons, and corridors | Enchanted books from libraries. Good mid-game exploration |
-| **Better Desert Temples** | Multi-room underground temple. Traps, puzzles, treasure vault | High-value loot in the vault room. Watch for pressure plates |
-| **Better Jungle Temples** | Vertical temple with multiple challenge rooms. Redstone puzzles | Unique loot from solving puzzles. Opening the vault disarms the final trap |
-| **Better Ocean Monuments** | Redesigned with new rooms and challenges. More elder guardians | Better sponge room loot, treasure blocks |
-| **Better Witch Huts** | Expanded hut on stilts with potion lab underneath | Brewing supplies, potions, redstone |
-| **Better Nether Fortresses** | Larger, with distinct districts (blaze, wither skeleton, strider). Bridges connect sections | Nether wart, blaze rods, wither skeleton skulls |
-| **Better End Island** | Void terrain is more interesting. Small structures around the main island | End city loot, chorus plants |
+| Structure                    | What's new                                                                                  | Loot expectation                                                           |
+|------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **Better Dungeons**          | Multi-room dungeons with spawners, traps, and treasure rooms                                | Good early loot — iron, gold, enchanted books                              |
+| **Better Mineshafts**        | Larger, multi-level mineshafts with support beams and loot caches                           | Rail, minecarts, ore samples                                               |
+| **Better Strongholds**       | End portal room is deeper. More libraries, prisons, and corridors                           | Enchanted books from libraries. Good mid-game exploration                  |
+| **Better Desert Temples**    | Multi-room underground temple. Traps, puzzles, treasure vault                               | High-value loot in the vault room. Watch for pressure plates               |
+| **Better Jungle Temples**    | Vertical temple with multiple challenge rooms. Redstone puzzles                             | Unique loot from solving puzzles. Opening the vault disarms the final trap |
+| **Better Ocean Monuments**   | Redesigned with new rooms and challenges. More elder guardians                              | Better sponge room loot, treasure blocks                                   |
+| **Better Witch Huts**        | Expanded hut on stilts with potion lab underneath                                           | Brewing supplies, potions, redstone                                        |
+| **Better Nether Fortresses** | Larger, with distinct districts (blaze, wither skeleton, strider). Bridges connect sections | Nether wart, blaze rods, wither skeleton skulls                            |
+| **Better End Island**        | Void terrain is more interesting. Small structures around the main island                   | End city loot, chorus plants                                               |
 
 #### Structory + Towns & Towers + Additional Structures
 
@@ -627,6 +647,7 @@ A sky dimension floating above the clouds. It's safe, beautiful, and offers a ge
 4. Step through. You'll ascend into the Aether
 
 **Troubleshooting**: If the portal doesn't activate, check:
+
 - The frame must be at least 4 blocks wide × 5 blocks tall (interior)
 - Glowstone blocks only (not glowstone lamps or other light blocks)
 - You must fill the frame with a water source block, not flowing water
@@ -634,6 +655,7 @@ A sky dimension floating above the clouds. It's safe, beautiful, and offers a ge
 #### What to Do
 
 **Phase 1 — Arrival**: You spawn on a sky island. Your tools and weapons work fine — bring them from the Overworld. Explore surrounding islands. Key early resources:
+
 - **Ambrosium** — Aether's coal equivalent. Shoots light, powers items
 - **Zanite** — Aether's iron equivalent. Mining level increases with durability loss (weaker zanite tools mine higher tiers)
 - **Aerwhales** — Passive floating whales. Fleece drops for decorative blocks
@@ -641,6 +663,7 @@ A sky dimension floating above the clouds. It's safe, beautiful, and offers a ge
 **Phase 2 — Gold Dungeon**: Find a bronze dungeon (tower with bronze block roof). Defeat the **Slider** (a moving block boss — hit it when it's blue, avoid when red). Loot the bronze treasure chest for **Golden Amber** and access to the next tier.
 
 **Phase 3 — Silver Dungeon**: Deeper in the Aether. More dangerous mobs. Defeat the **Valkyrie Queen** for the **Valkyrie tools** — flight-enabled melee weapons. Key loot:
+
 - **Gravitite** — floats upward when right-clicked, falls when sneak-right-clicked. Used for the best Aether gear
 - **Valkyrie Lance** — long-reach throwing weapon
 - **Aechor Petal** — poison source for arrows
@@ -666,15 +689,15 @@ A twilight-dimension with a strict boss progression system. Each boss kill unloc
 
 The dimension locks areas behind boss kills. A status screen (accessible from your inventory) shows which bosses you've defeated and which areas are unlocked:
 
-| Order | Boss | Location | Strategy | Key item unlock |
-|-------|------|----------|----------|-----------------|
-| 1 | **Naga** | Naga Courtyard (stone arena in the forest) | Melee boss — strafe its charges, hit the tail segment | Access to Lich Tower |
-| 2 | **Lich** | Lich Tower (tall stone tower) | Ranged fight — dodge projectiles, hit during cooldown. His shield reflects projectiles | Naga/Lich loot opens Twilight Swamp |
-| 3 | **Minoshroom** | Labyrinth (underground mushroom maze) | Mob in a maze — find the minotaur room, kill it, grab the Meef Stroganoff | Meef Stroganoff is a food item. Opens Firefly Forest |
-| 4 | **Hydra** | Hydra Lair (swamp arena, three heads) | Three-headed fire-breathing dragon. Dodge fireballs, melee the heads. Hydra drops **Fiery Tears** | Fiery Tears enable Ur-Ghast fight |
-| 5 | **Ur-Ghast** | Dark Tower (tall dark brick tower in Dark Forest) | Flying ghost boss in a dark tower. Shoot its tentacles, then the main body. Dark Forest has a blindness effect — bring milk | Opens Snowy Forest + Highlands |
-| 6 | **Snow Queen** | Aurora Palace (ice castle in the Snowy Forest) | Ice-themed arena with pillars. Push her into pillars to break her shield. Avoid ice arrows | Opens Final Castle |
-| 7 | **Final Castle** | Castle (Highlands) | Multi-boss fight in the final castle. Requires weapons from all prior bosses | Endgame Twilight loot, includes the **Giant's Pick** (diamond-tier, 5×3 mining area) |
+| Order | Boss             | Location                                          | Strategy                                                                                                                    | Key item unlock                                                                      |
+|-------|------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| 1     | **Naga**         | Naga Courtyard (stone arena in the forest)        | Melee boss — strafe its charges, hit the tail segment                                                                       | Access to Lich Tower                                                                 |
+| 2     | **Lich**         | Lich Tower (tall stone tower)                     | Ranged fight — dodge projectiles, hit during cooldown. His shield reflects projectiles                                      | Naga/Lich loot opens Twilight Swamp                                                  |
+| 3     | **Minoshroom**   | Labyrinth (underground mushroom maze)             | Mob in a maze — find the minotaur room, kill it, grab the Meef Stroganoff                                                   | Meef Stroganoff is a food item. Opens Firefly Forest                                 |
+| 4     | **Hydra**        | Hydra Lair (swamp arena, three heads)             | Three-headed fire-breathing dragon. Dodge fireballs, melee the heads. Hydra drops **Fiery Tears**                           | Fiery Tears enable Ur-Ghast fight                                                    |
+| 5     | **Ur-Ghast**     | Dark Tower (tall dark brick tower in Dark Forest) | Flying ghost boss in a dark tower. Shoot its tentacles, then the main body. Dark Forest has a blindness effect — bring milk | Opens Snowy Forest + Highlands                                                       |
+| 6     | **Snow Queen**   | Aurora Palace (ice castle in the Snowy Forest)    | Ice-themed arena with pillars. Push her into pillars to break her shield. Avoid ice arrows                                  | Opens Final Castle                                                                   |
+| 7     | **Final Castle** | Castle (Highlands)                                | Multi-boss fight in the final castle. Requires weapons from all prior bosses                                                | Endgame Twilight loot, includes the **Giant's Pick** (diamond-tier, 5×3 mining area) |
 
 #### Key Items to Craft/Find
 
@@ -726,13 +749,13 @@ After you defeat the Ender Dragon, the End becomes a full dimension worth explor
 
 **BetterEnd NeoForge** adds 24+ new biomes to the End, transforming it from a barren void into a diverse alien landscape:
 
-| Biome type | Description | Notable resources |
-|-----------|-------------|-------------------|
-| **Floating islands** | Large islands with unique vegetation. End lakes, end moss | New wood types, building blocks |
-| **Crystal caves** | Underground caverns with glowing crystals | Crystal materials for tools/gear |
-| **Mushroom fields** | Giant end-themed mushrooms | Magic-related crafting materials |
-| **Ice biomes** | Frozen wastelands on the edge of the End | — |
-| **Chorus forests** | Dense chorus plant forests | Chorus flowers, new food |
+| Biome type           | Description                                               | Notable resources                |
+|----------------------|-----------------------------------------------------------|----------------------------------|
+| **Floating islands** | Large islands with unique vegetation. End lakes, end moss | New wood types, building blocks  |
+| **Crystal caves**    | Underground caverns with glowing crystals                 | Crystal materials for tools/gear |
+| **Mushroom fields**  | Giant end-themed mushrooms                                | Magic-related crafting materials |
+| **Ice biomes**       | Frozen wastelands on the edge of the End                  | —                                |
+| **Chorus forests**   | Dense chorus plant forests                                | Chorus flowers, new food         |
 
 **Nullscape** overlays alien/void landscapes — purple skies, void fog, floating blackstone islands. It transforms the empty void between main islands into something that looks like space.
 
@@ -742,11 +765,11 @@ After you defeat the Ender Dragon, the End becomes a full dimension worth explor
 
 #### Progression
 
-| Phase | Activity | Reward |
-|-------|----------|--------|
-| **Post-Dragon** | Explore the outer End islands. BetterEnd biomes spawn here | New materials, tier-appropriate gear |
-| **Mid-End** | Tackle Moog's structures. Find hidden rooms and bosses | Unique weapons and loot |
-| **Endgame End** | Find the rarest biomes and build an End base | All materials needed for top-tier End gear |
+| Phase           | Activity                                                   | Reward                                     |
+|-----------------|------------------------------------------------------------|--------------------------------------------|
+| **Post-Dragon** | Explore the outer End islands. BetterEnd biomes spawn here | New materials, tier-appropriate gear       |
+| **Mid-End**     | Tackle Moog's structures. Find hidden rooms and bosses     | Unique weapons and loot                    |
+| **Endgame End** | Find the rarest biomes and build an End base               | All materials needed for top-tier End gear |
 
 **Tip**: Set up a Waystone in the End as soon as you arrive. Build a small AE2 subnet with a wireless terminal to access your main base storage while exploring.
 
@@ -772,13 +795,13 @@ Every action in the game earns XP. As you level up, you earn skill points to spe
 
 #### Attribute Categories
 
-| Attribute | Effect | Who benefits |
-|-----------|--------|-------------|
-| **Strength** | +melee damage, +mining speed | Everyone — more damage and faster mining |
-| **Vitality** | +max HP, +natural regen | All players — survival is always useful |
-| **Agility** | +movement speed, +attack speed | Combat-focused players, kiting bosses |
-| **Magic** | +spell damage, +mana regen | If you use Ars Nouveau or spell mods |
-| **Defense** | +armor toughness, +damage reduction | Tank playstyle |
+| Attribute    | Effect                              | Who benefits                             |
+|--------------|-------------------------------------|------------------------------------------|
+| **Strength** | +melee damage, +mining speed        | Everyone — more damage and faster mining |
+| **Vitality** | +max HP, +natural regen             | All players — survival is always useful  |
+| **Agility**  | +movement speed, +attack speed      | Combat-focused players, kiting bosses    |
+| **Magic**    | +spell damage, +mana regen          | If you use Ars Nouveau or spell mods     |
+| **Defense**  | +armor toughness, +damage reduction | Tank playstyle                           |
 
 **How XP works**: Every ore you mine, every mob you kill, every item you craft, every crop you harvest generates XP. The amount scales with the action's complexity. Smelting 100 iron ingots gives more XP than smelting 1.
 
@@ -790,13 +813,13 @@ Every action in the game earns XP. As you level up, you earn skill points to spe
 
 #### Weapon Categories
 
-| Category | Examples | Playstyle |
-|----------|---------|-----------|
-| **Heavy** | Greathammer, Greatsword, Glaive | Slow, high damage, knockback. Two-handed. Best for tanky builds |
-| **Medium** | Longsword, Katana, Claymore | Balanced speed and damage. One-handed or two-handed. Versatile |
-| **Light** | Rapier, Dagger, Sai, Cutlass | Fast attack speed, low damage per hit. Armor penetration on rapiers. Stacking debuffs on daggers |
-| **Polearms** | Spear, Halberd, Pike | Extended reach. Can hit from 2-3 blocks away. Throwable (spears) |
-| **Special** | Scythe (AoE sweep), Soul Harvester (soul-steal) | Unique mechanics — scythes hit all mobs in an arc |
+| Category     | Examples                                        | Playstyle                                                                                        |
+|--------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Heavy**    | Greathammer, Greatsword, Glaive                 | Slow, high damage, knockback. Two-handed. Best for tanky builds                                  |
+| **Medium**   | Longsword, Katana, Claymore                     | Balanced speed and damage. One-handed or two-handed. Versatile                                   |
+| **Light**    | Rapier, Dagger, Sai, Cutlass                    | Fast attack speed, low damage per hit. Armor penetration on rapiers. Stacking debuffs on daggers |
+| **Polearms** | Spear, Halberd, Pike                            | Extended reach. Can hit from 2-3 blocks away. Throwable (spears)                                 |
+| **Special**  | Scythe (AoE sweep), Soul Harvester (soul-steal) | Unique mechanics — scythes hit all mobs in an arc                                                |
 
 #### How to Find Weapons
 
@@ -809,14 +832,14 @@ Every action in the game earns XP. As you level up, you earn skill points to spe
 
 Hold `Ctrl` while hovering over a weapon in your inventory to see its ability description. Abilities include:
 
-| Ability | Effect | Found on |
-|---------|--------|----------|
-| Whirlwind | Spin attack hitting all nearby enemies | Greathammer, Greatsword |
-| Impale | Hold to charge, release for a piercing thrust | Spear, Pike |
-| Backstab | +300% damage when attacking from behind | Dagger, Sai |
-| Lifesteal | Heal for 10% of damage dealt | Soul Harvester, Scythe |
-| Execute | +50% damage to targets below 30% HP | Axe variants |
-| Slowness | On-hit slow effect for 3 seconds | Ice-themed weapons |
+| Ability   | Effect                                        | Found on                |
+|-----------|-----------------------------------------------|-------------------------|
+| Whirlwind | Spin attack hitting all nearby enemies        | Greathammer, Greatsword |
+| Impale    | Hold to charge, release for a piercing thrust | Spear, Pike             |
+| Backstab  | +300% damage when attacking from behind       | Dagger, Sai             |
+| Lifesteal | Heal for 10% of damage dealt                  | Soul Harvester, Scythe  |
+| Execute   | +50% damage to targets below 30% HP           | Axe variants            |
+| Slowness  | On-hit slow effect for 3 seconds              | Ice-themed weapons      |
 
 **Tip**: The **Explorer's Compass** can find structures with higher weapon chest rates. Set up a weapon hunt route: find a YUNG's dungeon → loot it → compass to the next one.
 
@@ -828,13 +851,13 @@ Apotheosis transforms every gear drop and enchantment in the game. This is the s
 
 Every item that drops can roll with a rarity:
 
-| Rarity | Affix slots | Identifying color | Drop source |
-|--------|-------------|-------------------|-------------|
-| Common | 0 | White | Basic mobs, mining |
-| Uncommon | 1 | Yellow | Hostile mobs, basic chests |
-| Rare | 2 | Cyan | Dungeon chests, mini-bosses |
-| Epic | 3 | Purple | Bosses, late-game chests |
-| Mythic | 4 | Gold/Magical | Endgame bosses, Cataclysm bosses |
+| Rarity   | Affix slots | Identifying color | Drop source                      |
+|----------|-------------|-------------------|----------------------------------|
+| Common   | 0           | White             | Basic mobs, mining               |
+| Uncommon | 1           | Yellow            | Hostile mobs, basic chests       |
+| Rare     | 2           | Cyan              | Dungeon chests, mini-bosses      |
+| Epic     | 3           | Purple            | Bosses, late-game chests         |
+| Mythic   | 4           | Gold/Magical      | Endgame bosses, Cataclysm bosses |
 
 Higher rarities have more **gem sockets** and roll better **affixes** (bonus stats).
 
@@ -842,14 +865,14 @@ Higher rarities have more **gem sockets** and roll better **affixes** (bonus sta
 
 Every armor piece, weapon, and tool can roll with bonus stats. Examples:
 
-| Affix | Effect | Gear type |
-|-------|--------|-----------|
-| Ruthless | +crit damage, +crit chance | Melee weapons |
-| Arcane | +spell damage, +mana | All weapons |
-| Sturdy | +armor, +knockback resistance | Armor |
-| Nimble | +movement speed, +attack speed | Boots, leggings |
-| Plentiful | +mining speed, +fortune | Tools |
-| Titanic | +max HP, +natural regen | Chestplate |
+| Affix     | Effect                         | Gear type       |
+|-----------|--------------------------------|-----------------|
+| Ruthless  | +crit damage, +crit chance     | Melee weapons   |
+| Arcane    | +spell damage, +mana           | All weapons     |
+| Sturdy    | +armor, +knockback resistance  | Armor           |
+| Nimble    | +movement speed, +attack speed | Boots, leggings |
+| Plentiful | +mining speed, +fortune        | Tools           |
+| Titanic   | +max HP, +natural regen        | Chestplate      |
 
 **Tip**: Check every gear drop. A Common helmet with a good affix might be better than an Epic one with useless stats. Disenchant unwanted gear at a salvaging table for gem dust.
 
@@ -857,10 +880,10 @@ Every armor piece, weapon, and tool can roll with bonus stats. Examples:
 
 Gems are socketable items that add permanent stats to your gear:
 
-| Gem tier | How to get | Effect |
-|----------|-----------|--------|
-| **Rough** | Drops from mobs and chests | Basic stat boost |
-| **Cut** | Rough gem + gem cutting station | +50% stat value. Requires gem dust |
+| Gem tier     | How to get                                    | Effect                               |
+|--------------|-----------------------------------------------|--------------------------------------|
+| **Rough**    | Drops from mobs and chests                    | Basic stat boost                     |
+| **Cut**      | Rough gem + gem cutting station               | +50% stat value. Requires gem dust   |
 | **Flawless** | 2 cut gems of same type + gem cutting station | +100% stat value. Requires more dust |
 
 **Gem cutting station**: Craft a gem cutting station (check JEI). Place a rough gem in the left slot, gem dust in the center, collect a cut gem from the right. Gem dust comes from breaking unwanted cut gems in a crafting grid.
@@ -880,14 +903,14 @@ The vanilla enchanting table is replaced. New features:
 
 Boss mobs can spawn with random modifiers displayed under their health bar:
 
-| Modifier | Effect | Strategy |
-|----------|--------|----------|
-| Tough | +50% HP, damage reduction | Bring high-damage weapons and Lifesteal |
-| Blinding | Blinds hit players | Wear blindness-resistant gear or bring milk |
-| Clumsy | Disarms players on hit | Use speed — don't get hit |
-| Plagued | Inflicts poison/wither on hit | Bring antidotes and regeneration |
-| Huge | 2× size, more knockback | Stay mobile. Don't get cornered |
-| Chaotic | Random effects per hit | Unpredictable — bring all potions |
+| Modifier | Effect                        | Strategy                                    |
+|----------|-------------------------------|---------------------------------------------|
+| Tough    | +50% HP, damage reduction     | Bring high-damage weapons and Lifesteal     |
+| Blinding | Blinds hit players            | Wear blindness-resistant gear or bring milk |
+| Clumsy   | Disarms players on hit        | Use speed — don't get hit                   |
+| Plagued  | Inflicts poison/wither on hit | Bring antidotes and regeneration            |
+| Huge     | 2× size, more knockback       | Stay mobile. Don't get cornered             |
+| Chaotic  | Random effects per hit        | Unpredictable — bring all potions           |
 
 **Tip**: Boss affixes are the main source of Mythic gear. Hunt for affixed bosses when you need endgame upgrades.
 
@@ -895,17 +918,17 @@ Boss mobs can spawn with random modifiers displayed under their health bar:
 
 Relics are unique accessories that go in your **Curios slots**. You have 6 Curios slots by default: Ring (2), Amulet (1), Belt (1), Gloves (1), Back (1), Charm (1). Right-click to open your Curios inventory — default keybind set it to `Y`.
 
-| Relic | Slot | Ability | Where to find |
-|-------|------|---------|---------------|
-| **Monkey Talisman** | Charm | Double jump (press jump again mid-air) | Vanilla dungeon chests |
-| **Holy Water** | Charm | Right-click to cleanse all negative effects | Desert temples, churches |
-| **Lucky Coin** | Charm | +luck for better loot drops | Mineshaft chests, pillager outposts |
-| **Captain's Hook** | Gloves | Right-click to pull entities toward you | Shipwrecks, ocean ruins |
-| **Sacred Wardstone** | Amulet | Absorbs damage, breaks after absorbing X damage | Stronghold chests |
-| **Magic Mirror** | Back | Right-click to teleport to spawn/home point | End cities, libraries |
-| **Heart of the Void** | Ring | +max HP, slow regen | Nether fortresses, bastions |
-| **Blazing Feather** | Back | +15% movement speed | Jungle temples, pagodas |
-| **Drowned Belt** | Belt | Underwater speed boost, +swim speed | Ocean monuments, shipwrecks |
+| Relic                 | Slot   | Ability                                         | Where to find                       |
+|-----------------------|--------|-------------------------------------------------|-------------------------------------|
+| **Monkey Talisman**   | Charm  | Double jump (press jump again mid-air)          | Vanilla dungeon chests              |
+| **Holy Water**        | Charm  | Right-click to cleanse all negative effects     | Desert temples, churches            |
+| **Lucky Coin**        | Charm  | +luck for better loot drops                     | Mineshaft chests, pillager outposts |
+| **Captain's Hook**    | Gloves | Right-click to pull entities toward you         | Shipwrecks, ocean ruins             |
+| **Sacred Wardstone**  | Amulet | Absorbs damage, breaks after absorbing X damage | Stronghold chests                   |
+| **Magic Mirror**      | Back   | Right-click to teleport to spawn/home point     | End cities, libraries               |
+| **Heart of the Void** | Ring   | +max HP, slow regen                             | Nether fortresses, bastions         |
+| **Blazing Feather**   | Back   | +15% movement speed                             | Jungle temples, pagodas             |
+| **Drowned Belt**      | Belt   | Underwater speed boost, +swim speed             | Ocean monuments, shipwrecks         |
 
 **Stacking**: You can wear multiple relics of different types. Two rings = two ring relics. Find duplicates to trade or salvage.
 
@@ -923,14 +946,14 @@ Runes are socketable modifications for weapons and tools. Unlike Apotheosis gems
 
 #### Rune Types
 
-| Rune | Effect | Best on |
-|------|--------|---------|
-| Fire Rune | On-hit fire damage (3 seconds) | Fast weapons (daggers, rapiers) for stacking burn |
-| Ice Rune | On-hit slow (2 seconds) | Kiting weapons (spears, scythes) |
-| Lightning Rune | Chance on-hit to strike lightning | Heavy weapons (single big hits) |
-| Poison Rune | On-hit poison (5 seconds) | Dot builds, boss kiting |
-| Lifesteal Rune | Heal 5% of damage dealt | Tank builds, slow weapons |
-| Critical Rune | +10% crit chance | Medium weapons (balanced speed/crit synergy) |
+| Rune           | Effect                            | Best on                                           |
+|----------------|-----------------------------------|---------------------------------------------------|
+| Fire Rune      | On-hit fire damage (3 seconds)    | Fast weapons (daggers, rapiers) for stacking burn |
+| Ice Rune       | On-hit slow (2 seconds)           | Kiting weapons (spears, scythes)                  |
+| Lightning Rune | Chance on-hit to strike lightning | Heavy weapons (single big hits)                   |
+| Poison Rune    | On-hit poison (5 seconds)         | Dot builds, boss kiting                           |
+| Lifesteal Rune | Heal 5% of damage dealt           | Tank builds, slow weapons                         |
+| Critical Rune  | +10% crit chance                  | Medium weapons (balanced speed/crit synergy)      |
 
 #### Using Runes
 
@@ -957,12 +980,12 @@ Farmer's Delight adds new crops, a cutting board for ingredient prep, a cooking 
 
 #### New Crops & Farming
 
-| Crop | Grows on | What it's for |
-|------|----------|--------------|
-| **Tomato** | Farmland. Bush grows, pick when red | Soups, sandwiches, salads |
-| **Cabbage** | Farmland. Full head when ready | Coleslaw, cabbage wraps, ferments |
-| **Onion** | Farmland. Pick when shoots show | Savory dishes, soups |
-| **Rice** | Grows in shallow water (1 block deep on dirt/mud) | Hearty meals, sushi (in addons) |
+| Crop        | Grows on                                          | What it's for                     |
+|-------------|---------------------------------------------------|-----------------------------------|
+| **Tomato**  | Farmland. Bush grows, pick when red               | Soups, sandwiches, salads         |
+| **Cabbage** | Farmland. Full head when ready                    | Coleslaw, cabbage wraps, ferments |
+| **Onion**   | Farmland. Pick when shoots show                   | Savory dishes, soups              |
+| **Rice**    | Grows in shallow water (1 block deep on dirt/mud) | Hearty meals, sushi (in addons)   |
 
 **Right Click Harvest** (from Wave 0) works on all these crops — right-click to harvest, the plant stays for regrowth.
 
@@ -975,20 +998,21 @@ Craft: 1 knife + 2 planks (horizontal row)
 Place the cutting board on the ground. Right-click with the cutting board in hand after placing it to open the UI, or just right-click the placed cutting board.
 
 **How it works**:
+
 1. Place an ingredient in the left slot
 2. The cutting board processes it (chops, slices, peels)
 3. Collect the output from the right slot
 
 **Essential recipes** (always check JEI — many ingredients have cutting board recipes):
 
-| Input | Output | Use |
-|-------|--------|-----|
-| Any cooked meat | Meat strips | Sandwiches, salads |
-| Cabbage | Cabbage leaves | Wraps, coleslaw |
-| Bread | Bread slices | Toast, sandwiches |
-| Carrot | Carrot slices | Salads, soups |
-| Apple | Apple slices | Desserts, snacks |
-| Cheese (if available) | Cheese wedge | Hearty meals |
+| Input                 | Output         | Use                |
+|-----------------------|----------------|--------------------|
+| Any cooked meat       | Meat strips    | Sandwiches, salads |
+| Cabbage               | Cabbage leaves | Wraps, coleslaw    |
+| Bread                 | Bread slices   | Toast, sandwiches  |
+| Carrot                | Carrot slices  | Salads, soups      |
+| Apple                 | Apple slices   | Desserts, snacks   |
+| Cheese (if available) | Cheese wedge   | Hearty meals       |
 
 **Tip**: A knife in your off-hand while chopping lasts longer (the cutting board uses the knife's durability). An iron knife lasts for dozens of chops.
 
@@ -997,12 +1021,14 @@ Place the cutting board on the ground. Right-click with the cutting board in han
 Craft: 2 iron ingots + 2 planks + 1 bowl (check JEI for exact shape)
 
 Place the cooking pot over a **heat source**. Valid heat sources (from best to worst):
+
 - **Stove** — fastest cooking. Craft: 4 bricks + 4 iron nuggets
 - **Campfire** — medium speed. Craft: 3 logs + 3 sticks + 1 coal
 - **Lava** — slowest. The pot must sit directly above the lava source block
 - **Torch/Campfire block below** — does not work. Needs a proper heat block
 
 **Cooking process**:
+
 1. Right-click the pot to open the GUI
 2. Fill the **water slot** (bucket or bottle on the left side)
 3. Add ingredients (up to 6) in any order
@@ -1011,13 +1037,13 @@ Place the cooking pot over a **heat source**. Valid heat sources (from best to w
 
 **Meal categories** (check JEI for full list):
 
-| Category | Example | Effect |
-|----------|---------|--------|
-| **Soups** | Tomato soup, vegetable soup, beef stew | Good saturation, easy ingredients |
-| **Sandwiches** | Chicken sandwich, egg sandwich, BLT | On-the-go eating, high saturation |
-| **Salads** | Mixed salad, coleslaw, fruit salad | Refreshing, good for hot biomes |
-| **Pasta** | Pasta with meat sauce, pasta with veggies | Filling, complex ingredients |
-| **Rice meals** | Rice pudding, fried rice | Requires rice farming |
+| Category       | Example                                   | Effect                            |
+|----------------|-------------------------------------------|-----------------------------------|
+| **Soups**      | Tomato soup, vegetable soup, beef stew    | Good saturation, easy ingredients |
+| **Sandwiches** | Chicken sandwich, egg sandwich, BLT       | On-the-go eating, high saturation |
+| **Salads**     | Mixed salad, coleslaw, fruit salad        | Refreshing, good for hot biomes   |
+| **Pasta**      | Pasta with meat sauce, pasta with veggies | Filling, complex ingredients      |
+| **Rice meals** | Rice pudding, fried rice                  | Requires rice farming             |
 
 #### Kitchen Storage
 
@@ -1058,19 +1084,54 @@ Craft: Check JEI (wooden barrel)
 
 #### Drink Effects
 
-| Drink | Effect at Matured | Effect at Vintage |
-|-------|-------------------|-------------------|
-| **Beer** | Resistance I (2 min) | Resistance II (5 min) |
-| **Wine** | Haste I (2 min) | Haste II (4 min) |
-| **Mead** | Speed I (2 min) | Speed II (4 min) |
-| **Whiskey** | Strength I (30 sec) | Strength II (1 min). Short but strong |
-| **Vodka** | Night Vision (3 min) | Night Vision + Fire Resistance (5 min) |
+| Drink       | Effect at Matured    | Effect at Vintage                      |
+|-------------|----------------------|----------------------------------------|
+| **Beer**    | Resistance I (2 min) | Resistance II (5 min)                  |
+| **Wine**    | Haste I (2 min)      | Haste II (4 min)                       |
+| **Mead**    | Speed I (2 min)      | Speed II (4 min)                       |
+| **Whiskey** | Strength I (30 sec)  | Strength II (1 min). Short but strong  |
+| **Vodka**   | Night Vision (3 min) | Night Vision + Fire Resistance (5 min) |
 
 **Practical use**: Brew a batch of each, age them all to Matured/Aged, and keep them in your Curios backpack or kitchen storage. Pop a drink before boss fights for free status effects. Mead stacks with Swiftness potions for even more speed.
 
 #### Bottle Return
 
 After drinking, you get an **empty bottle** back. Reuse it at the brewing station — no glass waste.
+
+---
+
+## Wave 4.5 — Quests
+
+Procedural bounty boards give you optional goals as you explore. No quest book, no authoring, no pressure.
+
+### Install
+
+See [MODLIST-V3.md](./MODLIST-V3.md#wave-45--quests).
+
+### Bountiful — Bounty Boards in Villages
+
+Bountiful places **bounty boards** in every village. Right-click a board to see available quests. Each quest asks for something:
+
+| Quest Type      | Example                              | Reward                     |
+|-----------------|--------------------------------------|----------------------------|
+| **Gathering**   | Deliver 16 iron ingots               | Emeralds, XP, rare items   |
+| **Hunting**     | Kill 8 creepers                      | Combat loot, XP            |
+| **Exploration** | Find a specific biome/biome type     | Map items, navigation gear |
+| **Crafting**    | Deliver crafted items (tools, armor) | Ingots, gems               |
+
+Quests are **procedurally generated** — they pull from items and mobs that actually exist in your world. No manual quest creation needed. Bountiful also has a **Decree** system that lets you blacklist certain quest types if you don't enjoy them.
+
+**How to use:**
+
+1. Find any village
+2. Locate the bounty board (a lectern-like block near the center)
+3. Right-click to open the quest list
+4. Select a quest you can complete
+5. The required items appear in the board's slots — drop them in
+6. Collect your reward
+7. New quests regenerate periodically
+
+**Tip**: The board shows multiple quests at once. Take gathering quests for materials you already have in your AE2 system — free rewards for zero extra work.
 
 ---
 
@@ -1086,18 +1147,19 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-5--combat--mobs).
 
 Better Combat changes how every weapon **feels** in your hands. It replaces Minecraft's single-swing animation with weapon-specific movesets:
 
-| Weapon type | Speed | Reach | Animation | Best for |
-|-------------|-------|-------|-----------|----------|
-| Daggers | Very fast | 2 blocks | Quick stab | Debuff stacking, fast crit builds |
-| Swords | Fast | 3 blocks | Horizontal arc | General combat, crowd control |
-| Rapiers | Fast | 3.5 blocks | Thrust (ignore shields) | Shield-breaking, precision |
-| Greatswords | Slow | 4 blocks | Wide sweep | Group clearing, knockback |
-| Axes | Medium | 3 blocks | Overhead chop | Armor penetration, single target |
-| Spears | Medium | 4.5 blocks | Forward thrust | Kiting, reach advantage |
-| Hammers | Slow | 3.5 blocks | Overhead slam | Knockback, stun |
-| Greathammers | Very slow | 4 blocks | Ground pound | AoE knockback, crowd control |
+| Weapon type  | Speed     | Reach      | Animation               | Best for                          |
+|--------------|-----------|------------|-------------------------|-----------------------------------|
+| Daggers      | Very fast | 2 blocks   | Quick stab              | Debuff stacking, fast crit builds |
+| Swords       | Fast      | 3 blocks   | Horizontal arc          | General combat, crowd control     |
+| Rapiers      | Fast      | 3.5 blocks | Thrust (ignore shields) | Shield-breaking, precision        |
+| Greatswords  | Slow      | 4 blocks   | Wide sweep              | Group clearing, knockback         |
+| Axes         | Medium    | 3 blocks   | Overhead chop           | Armor penetration, single target  |
+| Spears       | Medium    | 4.5 blocks | Forward thrust          | Kiting, reach advantage           |
+| Hammers      | Slow      | 3.5 blocks | Overhead slam           | Knockback, stun                   |
+| Greathammers | Very slow | 4 blocks   | Ground pound            | AoE knockback, crowd control      |
 
 **Config**: Mod Menu → Better Combat. You can tweak:
+
 - **Reach distance** per weapon type (longer = hit farther, easier to hit)
 - **Sweep radius** (wider = hits more mobs)
 - **Attack speed** scaling
@@ -1107,12 +1169,12 @@ Better Combat changes how every weapon **feels** in your hands. It replaces Mine
 
 Mutant versions of vanilla mobs. Each is tougher than the original but drops unique gear. With your Epic+ Apotheosis gear, these are satisfying challenges rather than roadblocks.
 
-| Mutant | Where it spawns | What to expect | Drops |
-|--------|----------------|----------------|-------|
-| **Mutant Zombie** | Overworld, night | Slower but tankier. Ground-pound AoE attack. Summons regular zombies | Hulk Hammer (AoE knockback weapon) |
-| **Mutant Skeleton** | Overworld, night | Rapid-fire arrows that inflict weakness. Teleports to escape melee | Mutant Skeleton Armor (projectile resistance) |
-| **Mutant Creeper** | Overworld, night | Explosion radius 2× larger. Drops mini-creepers on death that also explode | Creeper Minion (craft a creeper that follows and explodes on command) |
-| **Mutant Enderman** | The End | Teleports more aggressively. Throws blocks. Takes reduced damage from projectiles | Enderman gear (teleportation-related items) |
+| Mutant              | Where it spawns  | What to expect                                                                    | Drops                                                                 |
+|---------------------|------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **Mutant Zombie**   | Overworld, night | Slower but tankier. Ground-pound AoE attack. Summons regular zombies              | Hulk Hammer (AoE knockback weapon)                                    |
+| **Mutant Skeleton** | Overworld, night | Rapid-fire arrows that inflict weakness. Teleports to escape melee                | Mutant Skeleton Armor (projectile resistance)                         |
+| **Mutant Creeper**  | Overworld, night | Explosion radius 2× larger. Drops mini-creepers on death that also explode        | Creeper Minion (craft a creeper that follows and explodes on command) |
+| **Mutant Enderman** | The End          | Teleports more aggressively. Throws blocks. Takes reduced damage from projectiles | Enderman gear (teleportation-related items)                           |
 
 **Spawn rate config**: If mutants are too frequent (or too rare), adjust in Mod Menu → Mutant Monsters → spawn weight.
 
@@ -1122,15 +1184,16 @@ Mutant versions of vanilla mobs. Each is tougher than the original but drops uni
 
 Epic, hand-animated boss fights with unique mechanics and powerful loot. Each boss is **opt-in** — you must build a summoning structure or find a specific location.
 
-| Boss | Location | How to Summon | HP | Recommended Gear |
-|------|----------|---------------|-----|-----------------|
-| **Leviathan** | Deep ocean (Y < 40) | Build a summoning altar from prismarine + sea lanterns in a deep ocean biome. Right-click with a **Prismarine Shard** | ~200 HP | Diamond tier, Depth Strider boots, door trick (block line-of-sight projectiles) |
-| **Netherite Monstrosity** | Nether wastes | Find the lair structure (large nether brick building). Enter the central arena | ~300 HP | Full diamond/netherite, fire resistance potion |
-| **Ender Guardian** | End (outer islands) | Defeat the Ender Dragon first. Find the summoning platform on an outer island. Place an **Eye of Ender** in the pedestal | ~400 HP | End-game gear. Elytra + Slow Falling for arena edge |
-| **Ancient Remnant** | Desert | Find the Remnant structure (large desert pyramid variant). Enter the summoning room. Insert a **Nether Star** | ~350 HP | Blast protection enchantments. Bring blocks to pillar |
-| **Ignite** | Nether (basalt deltas) | Build a hollow obsidian sphere (5×5 interior). Place a **Blaze Rod** in the center. Wait 10 seconds | ~250 HP | Fire resistance required. Bring water buckets for arena |
+| Boss                      | Location               | How to Summon                                                                                                            | HP      | Recommended Gear                                                                |
+|---------------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------|---------|---------------------------------------------------------------------------------|
+| **Leviathan**             | Deep ocean (Y < 40)    | Build a summoning altar from prismarine + sea lanterns in a deep ocean biome. Right-click with a **Prismarine Shard**    | ~200 HP | Diamond tier, Depth Strider boots, door trick (block line-of-sight projectiles) |
+| **Netherite Monstrosity** | Nether wastes          | Find the lair structure (large nether brick building). Enter the central arena                                           | ~300 HP | Full diamond/netherite, fire resistance potion                                  |
+| **Ender Guardian**        | End (outer islands)    | Defeat the Ender Dragon first. Find the summoning platform on an outer island. Place an **Eye of Ender** in the pedestal | ~400 HP | End-game gear. Elytra + Slow Falling for arena edge                             |
+| **Ancient Remnant**       | Desert                 | Find the Remnant structure (large desert pyramid variant). Enter the summoning room. Insert a **Nether Star**            | ~350 HP | Blast protection enchantments. Bring blocks to pillar                           |
+| **Ignite**                | Nether (basalt deltas) | Build a hollow obsidian sphere (5×5 interior). Place a **Blaze Rod** in the center. Wait 10 seconds                      | ~250 HP | Fire resistance required. Bring water buckets for arena                         |
 
 **General boss strategy tips:**
+
 1. **Scout the arena first** — know where the edges, pits, and hazards are
 2. **Bring food buffs** — Farmer's Delight meals + Brewin' And Chewin' drinks stack
 3. **Rune up** — apply Lifesteal or Ice runes for the fight
@@ -1174,16 +1237,16 @@ Large, multi-floor combat structures scattered across the Overworld. Each is a h
 
 #### Structure Types
 
-| Structure | Floors | Difficulty | Biome | Loot |
-|-----------|--------|-----------|-------|------|
-| **Abandoned Temple** | 3 | Easy | Plains, forests | Iron gear, early rare items |
-| **Small Castle** | 4 | Medium | Plains, hills | Rare weapons, gold |
-| **Large Castle** | 6 | Hard | Mountains, extreme hills | Epic gear, diamonds |
-| **Barracks** | 2 | Easy | Any | Armor, shields |
-| **Scorched Fort** | 4 | Medium | Desert, badlands | Fire-related items |
-| **Warped Fortress** | 5 | Hard | Any (rare) | End-game gear, unique loot |
-| **Foundry** | 3 | Medium | Any underground | Ores, mining gear |
-| **Bandit Camp** | 1 | Easy | Forest, taiga | Early weapons, food |
+| Structure            | Floors | Difficulty | Biome                    | Loot                        |
+|----------------------|--------|------------|--------------------------|-----------------------------|
+| **Abandoned Temple** | 3      | Easy       | Plains, forests          | Iron gear, early rare items |
+| **Small Castle**     | 4      | Medium     | Plains, hills            | Rare weapons, gold          |
+| **Large Castle**     | 6      | Hard       | Mountains, extreme hills | Epic gear, diamonds         |
+| **Barracks**         | 2      | Easy       | Any                      | Armor, shields              |
+| **Scorched Fort**    | 4      | Medium     | Desert, badlands         | Fire-related items          |
+| **Warped Fortress**  | 5      | Hard       | Any (rare)               | End-game gear, unique loot  |
+| **Foundry**          | 3      | Medium     | Any underground          | Ores, mining gear           |
+| **Bandit Camp**      | 1      | Easy       | Forest, taiga            | Early weapons, food         |
 
 **Finding structures**: Craft an Explorer's Compass → select "When Dungeons Arise" in the structure type filter → select the specific structure.
 
@@ -1215,6 +1278,7 @@ Chipped adds hundreds of decorative block variants for every material type. Ever
 6. Click one to craft it. It consumes the input block and produces the variant
 
 **Block types with many variants**:
+
 - **Stone**: Bricks, tiles, carved, pillars, panels, runed, chiseled, mosaic — 30+ total
 - **Glass**: All colors + clear, leaded, bordered, checkered, raised — perfect for windows
 - **Wood**: Bark, planks with grain variants, wooden panels, ornate carvings
@@ -1228,17 +1292,18 @@ Chipped adds hundreds of decorative block variants for every material type. Ever
 
 Supplementaries adds decoration blocks that serve a purpose:
 
-| Block | Function | How to use |
-|-------|----------|------------|
-| **Jar** | Stores 1 item visually (display) | Right-click with an item to put it inside. Right-click empty to take it out. Shows the item floating inside |
-| **Signpost** | Directional sign pointing to a named location | Right-click with a tag item to set the destination name. The signpost arm points toward that named Waystone or location |
-| **Faucet** | Fluid flow decoration. Connects to fluid tanks | Place above a fluid container. Right-click to toggle flow. Decorative but functional with a fluid mod |
-| **Weather Vane** | Shows wind direction and speed | Place outside. The vane rotates in real-time based on weather. Purely decorative |
-| **Item Shelf** | Wall-mounted shelf for displaying up to 3 items | Right-click with an item to place it on the shelf. Sneak-right-click to remove. Items sit visibly on the shelf |
-| **Rope** | Climbable rope, can be placed in mid-air | Right-click to place a rope knot. Add rope below by right-clicking with more rope. Climb like a ladder. Breaks when the top knot is broken |
-| **Flute** | Craftable instrument | Right-click to play a note. Decorative, but villagers react to it |
+| Block            | Function                                        | How to use                                                                                                                                 |
+|------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| **Jar**          | Stores 1 item visually (display)                | Right-click with an item to put it inside. Right-click empty to take it out. Shows the item floating inside                                |
+| **Signpost**     | Directional sign pointing to a named location   | Right-click with a tag item to set the destination name. The signpost arm points toward that named Waystone or location                    |
+| **Faucet**       | Fluid flow decoration. Connects to fluid tanks  | Place above a fluid container. Right-click to toggle flow. Decorative but functional with a fluid mod                                      |
+| **Weather Vane** | Shows wind direction and speed                  | Place outside. The vane rotates in real-time based on weather. Purely decorative                                                           |
+| **Item Shelf**   | Wall-mounted shelf for displaying up to 3 items | Right-click with an item to place it on the shelf. Sneak-right-click to remove. Items sit visibly on the shelf                             |
+| **Rope**         | Climbable rope, can be placed in mid-air        | Right-click to place a rope knot. Add rope below by right-clicking with more rope. Climb like a ladder. Breaks when the top knot is broken |
+| **Flute**        | Craftable instrument                            | Right-click to play a note. Decorative, but villagers react to it                                                                          |
 
 **Practical builds**:
+
 - Kitchen: Item shelves for ingredient display, jars for flour/sugar, faucet over sink
 - Entrance: Signposts directing to "Mine", "Nether Portal", "Village"
 - Garden: Weather vane for realism, rope swing from a tree branch
@@ -1249,26 +1314,31 @@ Supplementaries adds decoration blocks that serve a purpose:
 Macaw's adds structural building elements in every wood type. Five modules:
 
 **Macaw's Bridges**:
+
 - Craft: 6 slabs of the wood type + 1 stick in a bridge pattern
 - Place: Right-click to extend. Shift-right-click to shorten. Supports railings, torches on the side
 - Types: Straight bridge, rope bridge (no railings, more rustic)
 - All wood types: oak, spruce, birch, jungle, acacia, dark oak, mangrove, cherry, crimson, warped
 
 **Macaw's Doors**:
+
 - Adds **special doors** per wood type: glass door, slatted door, stable door (top half opens independently), cottage door, shop door, paper door
 - All crafted with matching wood + relevant materials (glass for glass doors, paper for paper doors)
 
 **Macaw's Roofs**:
+
 - Adds **roofing blocks** for every wood: roof slopes, ridge blocks, gutter blocks
 - Craft: 3 slabs in a triangle pattern for a slope piece
 - Place roofs by laying slope pieces side-by-side. The game auto-connects corners
 
 **Macaw's Windows**:
+
 - Window types: diamond pane, framed, barred, tropical, stained glass window
 - All crafted with glass + wood type. Place like normal panes
 - Can be combined with decorative glass from Chipped
 
 **Macaw's Fences**:
+
 - Variations beyond vanilla fences: picket fence, stockade fence, horse fence, wired fence, highley gate
 - Each with a distinct look — picket for suburban, stockade for medieval, wired for industrial
 
@@ -1281,23 +1351,25 @@ Building Wands lets you place many blocks at once. It's the closest thing to Wor
 **Crafting**: Stick + 2 blocks of the same type in a + pattern (check JEI — the blocks determine the wand tier; stone = basic, iron = better, diamond = best)
 
 **How to use**:
+
 1. **Right-click** the wand in your hand to open the **mode GUI**
 2. Select a mode from the menu:
 
-| Mode | What it does | When to use |
-|------|-------------|-------------|
-| **Build Wall** | Creates a wall between 2 clicked points | Enclosing a room, building a perimeter |
-| **Build Line** | Creates a 1-block-wide line between 2 points | Railings, borders, pathways |
-| **Fill Area** | Fills a 3D cuboid between 2 corners | Filling in a foundation, clearing a room |
-| **Build Circle** | Creates a ring of blocks | Towers, wells, circular rooms |
-| **Build Cylinder** | Fills a cylinder | Silos, water tanks, pillar bases |
-| **Build Sphere** | Creates a hollow or filled sphere | Domes, decorative globes |
+| Mode               | What it does                                 | When to use                              |
+|--------------------|----------------------------------------------|------------------------------------------|
+| **Build Wall**     | Creates a wall between 2 clicked points      | Enclosing a room, building a perimeter   |
+| **Build Line**     | Creates a 1-block-wide line between 2 points | Railings, borders, pathways              |
+| **Fill Area**      | Fills a 3D cuboid between 2 corners          | Filling in a foundation, clearing a room |
+| **Build Circle**   | Creates a ring of blocks                     | Towers, wells, circular rooms            |
+| **Build Cylinder** | Fills a cylinder                             | Silos, water tanks, pillar bases         |
+| **Build Sphere**   | Creates a hollow or filled sphere            | Domes, decorative globes                 |
 
-3. **Left-click** to set the first corner/point (a green sparkle appears)
-4. **Right-click** to set the second corner/point (the structure is built)
-5. **The wand uses blocks from your inventory** — it only places blocks you're carrying
+1. **Left-click** to set the first corner/point (a green sparkle appears)
+2. **Right-click** to set the second corner/point (the structure is built)
+3. **The wand uses blocks from your inventory** — it only places blocks you're carrying
 
 **Pro tips**:
+
 - Shift+Right-click to undo the last placement
 - The wand works with Create schematic cannon blueprints for precision
 - Use the **Undo wand** (craft: stick + slimeball) to reverse recent wand actions without losing materials
@@ -1307,16 +1379,16 @@ Building Wands lets you place many blocks at once. It's the closest thing to Wor
 
 Furniture blocks for building cozy interiors:
 
-| Furniture | What it does |
-|-----------|-------------|
-| **Chairs** | Right-click to sit. Looks different per wood type. Craft with slabs and planks |
-| **Tables** | Decorative surface. Right-click to place items on top for display. Dinner tables, coffee tables, nightstands |
-| **Shelves** | Wall-mounted. Right-click to place items. Books, potions, trophies |
-| **Curtains** | Hanging window decoration. Right-click to open/close |
-| **Desks** | Table + shelf combo. Right-click drawer for item storage |
-| **Cupboards** | Small cabinet for aesthetic item storage. Must be placed against a wall |
-| **Sofa** | Multi-block seating. Right-click to sit. Craft with wool + wood |
-| **Dresser** | Tall storage furniture. Right-click drawers for storage |
+| Furniture     | What it does                                                                                                 |
+|---------------|--------------------------------------------------------------------------------------------------------------|
+| **Chairs**    | Right-click to sit. Looks different per wood type. Craft with slabs and planks                               |
+| **Tables**    | Decorative surface. Right-click to place items on top for display. Dinner tables, coffee tables, nightstands |
+| **Shelves**   | Wall-mounted. Right-click to place items. Books, potions, trophies                                           |
+| **Curtains**  | Hanging window decoration. Right-click to open/close                                                         |
+| **Desks**     | Table + shelf combo. Right-click drawer for item storage                                                     |
+| **Cupboards** | Small cabinet for aesthetic item storage. Must be placed against a wall                                      |
+| **Sofa**      | Multi-block seating. Right-click to sit. Craft with wool + wood                                              |
+| **Dresser**   | Tall storage furniture. Right-click drawers for storage                                                      |
 
 **How to craft**: Check JEI. Most furniture is crafted from wood + relevant material (wool for sofas, glass for cabinets). Different wood types give different styles.
 
@@ -1324,44 +1396,168 @@ Furniture blocks for building cozy interiors:
 
 ---
 
+## Wave 7 — Space Exploration
+
+Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, and bring back exotic resources to fuel your industrial empire.
+
+### Install
+
+See [MODLIST-V3.md](./MODLIST-V3.md#wave-7--space-exploration).
+
+### Stellaris — Interplanetary Travel
+
+Stellaris (by ExodusTeam) is a complete space exploration mod. Build rockets piece by piece, manage oxygen and fuel, and travel to 5 planets across 2 solar systems.
+
+#### Core Concepts
+
+| Concept               | What it means                                                                                                                            |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| **Rocket Components** | Rockets aren't crafted in one slot. Build engines, fuel tanks, capsules, and fins separately, then assemble them at a **Rocket Station** |
+| **Oxygen**            | Most planets have no atmosphere. You need a space suit with oxygen to survive. Oxygen runs out — refill at home before traveling         |
+| **Fuel**              | Rockets need fuel (crafted from oil). Refine oil into fuel using Stellaris machines. Higher-tier rockets need more fuel                  |
+| **Planet Tiers**      | Planets have tier requirements — a basic rocket can only reach the Moon. Upgraded rockets can reach Mercury, Venus, Mars, and Glacio     |
+| **Gravity**           | Each planet has different gravity. Lower gravity = higher jumps, slower falls. Higher gravity = weighted movement                        |
+
+#### Phase 1: Getting to Space
+
+**Step 1 — Gather early Stellaris resources:**
+
+- Find **oil** in the Overworld (generates as pools similar to water, often in deserts and plains)
+- Mine **steel** — you already have this from Mekanism (Metallurgic Infuser)
+- Collect **iron**, **copper**, **redstone**, and **glass** (all vanilla materials)
+
+**Step 2 — Build basic machines:**
+
+| Machine                | What it does                                                             | Priority |
+|------------------------|--------------------------------------------------------------------------|----------|
+| **Rocket Station**     | The assembly block. Place it, open the GUI, build rocket components here | First    |
+| **Fuel Refinery**      | Converts oil into rocket fuel. Place near the Rocket Station             | Second   |
+| **Oxygen Distributor** | Fills space suits with oxygen. Requires power                            | Third    |
+| **Water Separator**    | Produces oxygen from water (for the Oxygen Distributor)                  | Fourth   |
+| **Solar Panel**        | Generates power on planets with sun exposure                             | Fifth    |
+
+**Step 3 — Build your first rocket:**
+
+1. Open the **Rocket Station** GUI
+2. Craft a **Tier 1 Rocket Engine**, **Tier 1 Fuel Tank**, **Rocket Capsule**, and **Rocket Fins** using the station's internal crafting
+3. Each component uses materials you've gathered: steel, iron, copper, redstone
+4. Once all components are built, the Rocket Station assembles them into a **Tier 1 Rocket**
+5. Right-click the assembled rocket with the **Rocket Station** to create the launch pad
+
+**Step 4 — Prepare for launch:**
+
+1. Fill the fuel tank — pump fuel from the Refinery into the rocket (fluid pipes from a pipe mod, or use buckets)
+2. Equip a **Space Suit** (craft: check JEI — requires steel, glass, and rubber/leather)
+3. Fill the space suit with oxygen at the **Oxygen Distributor**
+4. Stock supplies — food (Farmer's Delight meals work with oxygen present), building blocks, torches, weapons
+
+**Step 5 — Launch:**
+
+1. Enter the rocket (right-click the door)
+2. Press the launch button inside the rocket GUI
+3. Watch the ascent animation — you're going to space
+
+#### The Moon — Your First Destination
+
+The Moon is the safest first destination. Gravity is low (≈17% of Overworld), no atmosphere (needs oxygen), and has basic resources.
+
+**What to do on the Moon:**
+
+- **Mine moon stone** and **cheese ore** (yes, the moon is made of cheese — it smelts into cheese ingots)
+- **Collect desh** — the Moon's primary rare resource. Desh is used for Tier 2 rocket components
+- **Explore structures** — crashed spaceships, moon bases, landing pads (Stellaris generates these automatically)
+- **Set up a base** — place a Waystone immediately. A solar panel + oxygen distributor + chest is enough for early visits
+- **Look for rich ore veins** — the Moon has higher concentrations of certain Overworld ores
+
+**Returning to Earth:** Enter the rocket on the Moon and launch. You'll fly back to your original launch pad.
+
+#### Other Planets
+
+| Planet      | Tier Required | Gravity | Hazards                           | Key Resource      | Notes                                                      |
+|-------------|---------------|---------|-----------------------------------|-------------------|------------------------------------------------------------|
+| **Moon**    | 1             | Low     | None (oxygen required)            | Desh              | First destination. Safe. Practice here                     |
+| **Mercury** | 2             | Low     | Extreme heat, fire damage outside | Ostranium         | Closest to the sun. Bring fire resistance                  |
+| **Venus**   | 2             | High    | Thick atmosphere, acid rain       | Tharsite          | Dense, heavy movement. Bring acid protection               |
+| **Mars**    | 3             | Medium  | Cold, dust storms                 | Desh (rich veins) | Alien flora and fauna. Best for a permanent off-world base |
+| **Glacio**  | 4             | Low     | Extreme cold, freezing damage     | Glacio crystals   | Ice planet. High-end resources. Endgame destination        |
+
+#### Machines to Build Off-World
+
+Once you have a foothold on another planet, set up automated resource extraction:
+
+| Machine                | What it does                          | Why you need it                                                  |
+|------------------------|---------------------------------------|------------------------------------------------------------------|
+| **Solar Panel**        | Generates power from sunlight         | Most planets have more sun than Earth. Free energy               |
+| **Oxygen Distributor** | Fills space suits with breathable air | Required for survival on every planet                            |
+| **Water Separator**    | Produces oxygen from water            | Feed oxygen into the Distributor. Water pumps on some planets    |
+| **Fuel Refinery**      | Processes oil into rocket fuel        | Fuel is heavy — refine on the destination planet if you find oil |
+| **Pump Jack**          | Extracts oil from the ground          | Find oil pools on other planets for local fuel production        |
+
+### Integration With Your Tech Base
+
+| System                      | How it connects                                                                                                                                                                                         |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Mekanism power**          | Run Mekanism generators at your Moon base. Use universal cables to power Stellaris machines. The MekaSuit's flight and environmental protection make spacewalks trivial                                 |
+| **Mekanism ore processing** | Bring planet ores (desh, ostranium, tharsite) back to your main Mekanism processing line. 5x multiplication works on Stellaris ores                                                                     |
+| **AE2 storage**             | Store Stellaris materials in your ME drive. Set up autocrafting for rocket components. Place an ME interface + storage bus at your off-world base with a quantum link or P2P tunnel to the main network |
+| **Create transport**        | Use Create trains to move rocket materials from the launch pad area to your main base. Conveyor belts move components from storage to the Rocket Station                                                |
+| **Sophisticated Backpacks** | Backpacks with netherite upgrades carry enough oxygen tanks and supplies for extended planetary expeditions                                                                                             |
+| **Farmer's Delight**        | Cooked meals are eatable in space (with oxygen present) — bring hearty stews and sandwiches instead of raw ingredients                                                                                  |
+
+### Progression Placement
+
+Space exploration belongs in Phase 2 (Industrial Ascent, hours 40–200). You should have:
+
+- Mekanism basic processing (Enrichment Chamber — Tier 1)
+- A small AE2 network for storage
+- Create power infrastructure
+- Good weapons and armor (Wave 3/5 gear helps with planet mobs)
+
+Start with moon missions, establish a Tier 1 base, then work toward Mercury and Venus. Mars and Glacio are solidly in late Phase 2 territory.
+
+---
+
 ## Keybindings Reference
 
-| Keybind | Default | Mod | Wave |
-|---------|---------|-----|------|
-| View Recipes | `R` | JEI | 0 |
-| View Uses | `U` | JEI | 0 |
-| Open Mod Menu | **Set to `Ctrl+M`** | Mod Menu | 0 |
-| Open Fullscreen Map | `J` | Xaero's World Map | 0 |
-| Toggle Minimap | `H` | Xaero's Minimap | 0 |
-| Open Waystone Menu | **Set to `Ctrl+Shift+W`** | Waystones | 0 |
-| Open Backpack | `B` | Sophisticated Backpacks | 0 |
-| Zoom | **Set to `C`** | Embeddium | 0 |
-| Toggle Dynamic Lights | **Set to `Ctrl+L`** | LambDynamicLights | 0 |
-| Open Curios Inventory | **Set to `Y`** | Curios API | 0 |
-| Open Skill Tree | **Set to `P`** | Skill Tree | 3 |
-| View Weapon Ability | `Ctrl` (hold) | Simply Swords | 3 |
-| Open Rune Pouch | **Set to `R`** | Runes | 3 |
-| Open Create Ponder | `W` (hold over block) | Create | 1 |
+| Keybind               | Default                   | Mod                     | Wave |
+|-----------------------|---------------------------|-------------------------|------|
+| View Recipes          | `R`                       | JEI                     | 0    |
+| View Uses             | `U`                       | JEI                     | 0    |
+| Open Mod Menu         | **Set to `Ctrl+M`**       | Mod Menu                | 0    |
+| Open Fullscreen Map   | `J`                       | Xaero's World Map       | 0    |
+| Toggle Minimap        | `H`                       | Xaero's Minimap         | 0    |
+| Open Waystone Menu    | **Set to `Ctrl+Shift+W`** | Waystones               | 0    |
+| Open Backpack         | `B`                       | Sophisticated Backpacks | 0    |
+| Zoom                  | **Set to `C`**            | Embeddium               | 0    |
+| Toggle Dynamic Lights | **Set to `Ctrl+L`**       | LambDynamicLights       | 0    |
+| Open Curios Inventory | **Set to `Y`**            | Curios API              | 0    |
+| Open Skill Tree       | **Set to `P`**            | Skill Tree              | 3    |
+| View Weapon Ability   | `Ctrl` (hold)             | Simply Swords           | 3    |
+| Open Rune Pouch       | **Set to `R`**            | Runes                   | 3    |
+| Open Create Ponder    | `W` (hold over block)     | Create                  | 1    |
 
 ## Progression Through All Waves
 
-| Phase | What you'll be doing |
-|-------|---------------------|
-| **Phase 1** (hours 0-40) | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith/Regions biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals |
-| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Chipped and Macaw's |
-| **Phase 3** (hours 150+) | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd/Nullscape End dimension. Monumental building projects with all decoration tools |
+| Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                    |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Phase 1** (hours 0-40)   | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith/Regions biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals. Grab bounties from village boards              |
+| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Chipped and Macaw's. Complete bounties for passive rewards as you explore |
+| **Phase 3** (hours 150+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd/Nullscape End dimension. Monumental building projects with all decoration tools                                                       |
 
 ## General Tips
 
 ### Finding Help
+
 - **JEI (`R`)** is always your first stop — hover an item and press R to see how it's made
 - **Mod Menu / Configured** shows every installed mod's config
 - Most mods link to their wiki or Discord from their Mod Menu entry
 
 ### Losing Progress
+
 You won't. Graves preserve your items. No creeper craters. The pack is designed so you can walk away for a month and come back to exactly the world you left.
 
 ### Java & Performance
+
 Minecraft 1.21.1 requires **Java 21**. Use Temurin JDK 21 from Adoptium.
 
 Recommended JVM arguments (for Minecraft Launcher → Installation → Edit → More Options → JVM Arguments):
@@ -1372,6 +1568,6 @@ Recommended JVM arguments (for Minecraft Launcher → Installation → Edit → 
 
 | System RAM | Recommended allocation |
 |------------|------------------------|
-| 16 GB | `-Xms10g -Xmx10g` |
-| 32 GB | `-Xms22g -Xmx22g` |
-| 64 GB | `-Xms48g -Xmx48g` |
+| 16 GB      | `-Xms10g -Xmx10g`      |
+| 32 GB      | `-Xms22g -Xmx22g`      |
+| 64 GB      | `-Xms48g -Xmx48g`      |

@@ -82,16 +82,33 @@
 - [x] Updated MODLIST-V2.md with full Wave 7 section
 - [x] Updated GETTING-STARTED-V2.md with Wave 7 tutorial
 
+### Wave 4.5 — Quests
+- [x] Researched quest mods for NeoForge 1.21.1 (Bountiful, DarkQuesting, Questlog, Better Advancements)
+- [x] Selected Bountiful 8.0.0-beta.2 — procedural bounty boards, zero quest authoring needed
+- [x] Updated MODLIST-V3.md with Wave 4.5 section
+- [x] Updated mod count summary
+
 ### AGENTS.md
 - [x] Updated vision pillars to include RPG-style levels/skills
 - [x] Updated technical standards to Fabric 1.21.1, Java 21
 - [x] Added V2 file references (MODLIST-V2.md, GETTING-STARTED-V2.md)
 
-## Pending
+### V3 NeoForge Conversion (MODLIST-V3.md)
+- [x] Created MODLIST-V3.md with full mod list (V1 → V3 migration)
+- [x] Wave 7 renamed to "Space Exploration" with Stellaris as core mod
+- [x] Added GETTING-STARTED-V3.md with Wave 7 tutorial
+- [x] Completed V3 modlist gap audit — achievements/questing, progression tracking, extended item info, UI improvements
+- [x] Added missing QoL/UI mods to Wave 0: Immersive UI, Traveler's Titles, Better Modlist, Fancy Toasts, Better Advancements, Obscure Tooltips, Loot Journal, Polymorph
+- [x] Added new dependencies: OctoLib, Obscure API, Fragmentum
+- [x] Decided: vanilla advancements + Fancy Toasts for progression guidance (no FTB Quests)
 
-### Config Overrides
-- All waves: identify mods needing config changes
-- Document each override in config/ directory
+## Pending (all config details documented in MODLIST-V3.md)
+
+### Testing
+- Test launch with Waves 0–7
+- Verify no mod conflicts
+- Cross-wave integration testing (Tech Reborn + Logistics + Powah, Let's Do automated farming, loot in Terralith biomes)
+- Config tuning per mod
 
 ### Testing
 - Test launch with Waves 0–7
