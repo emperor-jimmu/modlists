@@ -133,7 +133,42 @@ Install NeoForge for **1.21.1** (latest recommended release):
 
 | Shaderpack                                                                                        | Description                                                      |
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-shaders) | Two visual styles, Potato→Ultra profiles, block-specific effects |
+| [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-shaders) | Realistic visual style, Potato→Ultra profiles, block-specific effects |
+
+**Optimal settings for NVIDIA RTX 4080 SUPER (16GB VRAM, 4K target)**:
+
+| Setting | Value |
+|---|---|
+| Visual Style | Unbound |
+| Profile | Ultra |
+| RP Support | Integrated PBR+ |
+| Real-Time Shadows | Very High |
+| Shadow Distance | 20 chunks |
+| Light Shaft Quality | High |
+| Entity Shadows | OFF |
+| Detail Quality | High |
+| Cloud Quality | High |
+| Water Reflection Quality | Medium (max) |
+| Block Reflection Quality | High |
+| Anti-Aliasing (FXAA) | ON |
+| Edge Shadow (SSAO) Quality | High (max) |
+| Advanced Colored Lighting | 16 chunks |
+| Texture Filtering | 16x |
+
+**General MC settings**: Render Distance 20–24 chunks, Fullscreen ON, VSync OFF, Max Framerate uncapped. Expected ~100+ FPS at 4K with Faithful 64 texture pack. With 128x+ texture packs, monitor VRAM usage (peaks at ~14GB). Drop to High profile if targeting 144Hz+.
+
+### Texture Packs
+
+| Pack | Role |
+|------|------|
+| [Faithful 64x](https://www.curseforge.com/minecraft/texture-packs/faithful-64x) | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
+| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) | Living entity animation overhaul — mobs blink, look around, show emotion |
+
+**Faithful 64x** upscales vanilla blocks to 64x resolution while preserving the original look. Works with Complementary Unbound's Integrated PBR+ for realistic material response (metal shines, wool is soft, stone is rough). Modded blocks (Create, Mekanism, AE2) use their default textures, which are already well-designed and blend naturally at 64x. The RTX 4080 SUPER handles this with zero FPS impact at 4K.
+
+**Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it **above** Faithful 64x in the pack order. Works on any version with no mod dependencies.
+
+**Installation**: Download the `.zip` files, place them in `.minecraft/resourcepacks/`, enable both in Options → Resource Packs (Fresh Animations above Faithful 64x).
 
 ### Configuration — Wave 0
 
