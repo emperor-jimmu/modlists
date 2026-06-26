@@ -343,17 +343,17 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                                        | Role                                                         |
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend) v21.0.25                      | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
-| [**Moog\'s End Structures**](https://modrinth.com/mod/moogs-end-structures) v2.0.3         | New structures to fill the End dimension                     |
+| [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend-neoforge) v21.0.25            | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
+| [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                     |
 | [**Ender\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0 | End-themed food for Farmer's Delight                         |
 
 ### New Dependencies (End Overhaul)
 
 | Mod                                                                   | Role                                        |
 |-----------------------------------------------------------------------|---------------------------------------------|
-| [BCLib NeoForge](https://modrinth.com/mod/bclib)                      | Core library — required by BetterEnd        |
-| [WorldWeaver NeoForge](https://modrinth.com/mod/worldweaver)          | Worldgen library — required by BetterEnd    |
-| [WunderLib NeoForge](https://modrinth.com/mod/wunderlib)              | Utility library — required by BetterEnd     |
+| [BCLib NeoForge](https://modrinth.com/mod/bclib-neoforge)            | Core library — required by BetterEnd        |
+| [WorldWeaver NeoForge](https://modrinth.com/mod/worldweaver-neoforge) | Worldgen library — required by BetterEnd    |
+| [WunderLib NeoForge](https://modrinth.com/mod/wunderlib-neoforge)     | Utility library — required by BetterEnd     |
 | [Moog\'s Structure Lib](https://modrinth.com/mod/moogs-structure-lib) | Library — required by Moog's End Structures |
 
 ### Navigation
@@ -383,7 +383,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | Mod                                                                 | Role                                                  |
 |---------------------------------------------------------------------|-------------------------------------------------------|
 | [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree)      | XP leveling — spend points on attributes and passives |
-| [Pufferfish\'s Skills](https://modrinth.com/mod/pufferfishs-skills) | Underlying skill system framework                     |
+| [Pufferfish\'s Skills](https://modrinth.com/mod/skills)            | Underlying skill system framework                     |
 
 ### Equipment
 
@@ -452,9 +452,9 @@ This cost curve encourages the player to settle for "good enough" gear until the
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | [**Farmer\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) 1.3.2       | Cooking hub — cutting board, cooking pot, stove, new crops            |
 | [**Brewin\' And Chewin\'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0 | Drinks and fermentation — beer, wine, mead, whiskey                   |
-| [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight) 1.3.0         | Kitchen furniture — drawers, cabinets, shelves for ingredient storage |
+| [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight-forge) 1.3.0  | Kitchen furniture — drawers, cabinets, shelves for ingredient storage |
 | [**More Delight**](https://modrinth.com/mod/more-delight) 3.5.0                                   | Extra meals, sandwiches, toasts, and knife variants                   |
-| [**My Nether\'s Delight**](https://modrinth.com/mod/my-nether-s-delight) 2.1.1                    | Nether-themed food ingredients and recipes                            |
+| [**My Nether\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 2.1.1 | Nether-themed food ingredients and recipes                            |
 | [**Ocean\'s Delight**](https://modrinth.com/mod/oceans-delight) 2.1.0                             | Ocean-themed seafood dishes                                           |
 
 **Interdependency notes for Wave 4:**
@@ -474,7 +474,7 @@ Procedural bounty system that gives purpose to exploration and material collecti
 
 | Mod                                                                                  | Role                                                                                          |
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**Bountiful**](https://www.curseforge.com/minecraft/mc-mods/bountiful) 8.0.0-beta.2 | Bounty boards in villages — procedurally generated fetch/kill/exploration quests with rewards |
+| [**Bountiful**](https://modrinth.com/mod/bountiful) 8.0.0-beta.2                      | Bounty boards in villages — procedurally generated fetch/kill/exploration quests with rewards |
 
 Bountiful generates quests automatically — find a bounty board in any village, accept tasks, earn rewards. Fully optional. Items from installed mods automatically appear in its reward pools.
 
@@ -486,7 +486,7 @@ Bountiful generates quests automatically — find a bounty board in any village,
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [Better Combat](https://modrinth.com/mod/better-combat)                                           | Melee combat animations — weapon reach, sweeping, attack speed                                    |
 | [Mutant Monsters](https://www.curseforge.com/minecraft/mc-mods/mutant-monsters)                   | Mutant zombie, skeleton, creeper, enderman — unique drops                                         |
-| [L_Ender\'s Cataclysm](https://www.curseforge.com/minecraft/mc-mods/l-enders-cataclysm)           | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (CurseForge, NeoForge 1.21.1) |
+| [L_Ender\'s Cataclysm](https://modrinth.com/mod/l_enders-cataclysm)                               | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (Modrinth, NeoForge 1.21.1)  |
 | [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)           | Roguelike combat structures with loot                                                             |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                             |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons)                                 | Artillery engineering — siege cannons for colony defense and spectacle                            |
@@ -497,7 +497,7 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 
 | Mod                                                                                  | Role                                                               |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [Ritchie's Projectile Library](https://modrinth.com/mod/ritchies-projectile-library) | Library — custom projectiles and trajectories (Create Big Cannons) |
+| [Ritchie's Projectile Library](https://modrinth.com/mod/rpl)                         | Library — custom projectiles and trajectories (Create Big Cannons) |
 
 **Better Combat + Simply Swords**: Simply Swords weapons have built-in Better Combat data files — each weapon category uses the correct attack animation, reach, and speed automatically.
 
@@ -541,7 +541,7 @@ Sky Aesthetics is embedded in Stellaris — no separate install needed.
 
 | Mod                                                                                   | Role                                                                               |
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Create: TFMG — Stellaris Compat](https://metamods.net/en/mods/tfmg-stellaris-compat) | Bridges TFMG diesel/gasoline into Stellaris rocket fuel (listed in Wave 1 as well) |
+| [Create: TFMG — Stellaris Compat](https://modrinth.com/mod/tfmg-stellaris-compat) | Bridges TFMG diesel/gasoline into Stellaris rocket fuel (listed in Wave 1 as well) |
 
 ### Integration with Tech Mods
 
