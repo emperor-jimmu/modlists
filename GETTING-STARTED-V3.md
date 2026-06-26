@@ -285,9 +285,9 @@ Inventory management shortcuts: left-click drag across slots → distributes eve
 
 Opens extra equipment slots on your character: ring, amulet, belt, gloves, charm, back, and more. Press the Curios keybind (check Controls) to open the Curios inventory. This replaces Trinkets from V2 — Relics RPG accessories and other Curios-compatible items go in these slots.
 
-#### Better Advancements
+#### Reliable Advancements
 
-Better Advancements overhauls the vanilla advancements GUI — cleaner layout, nicer colors, smoother animations. Open it from the usual advancements key (`L` by default). It pairs well with Fancy Toasts (the animated popups you see when earning an advancement).
+Reliable Advancements overhauls the vanilla advancements screen — larger UI, pan/zoom controls, tab sorting, and a built-in advancement editor. Open it from the usual advancements key (`L` by default). Pairs well with Fancy Toasts (the animated popups you see when earning an advancement).
 
 No configuration needed. Install and forget.
 
@@ -295,7 +295,7 @@ No configuration needed. Install and forget.
 
 This data pack adds **1000+ new advancements** across 16 tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks milestones like mining every ore type, collecting every wood variant, killing every mob, and discovering every biome.
 
-**Where to install**: Drop the `.zip` into the `datapacks/` folder of your world save (`.minecraft/saves/<world>/datapacks/`). Enable it with `/datapack enable "blazeandcave/advancements"`. It works alongside Better Advancements (UI) and Fancy Toasts (popups) without conflict.
+**Where to install**: Drop the `.zip` into the `datapacks/` folder of your world save (`.minecraft/saves/<world>/datapacks/`). Enable it with `/datapack enable "blazeandcave/advancements"`. It works alongside Reliable Advancements (UI) and Fancy Toasts (popups) without conflict.
 
 **What it adds**: Thousands of hours of optional side goals. Everything is tracked through the vanilla advancement system — open with `L` to browse the 16 tabs and see what's available.
 

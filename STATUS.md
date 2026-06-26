@@ -10,7 +10,7 @@
 ### Wave 0 — Foundation (~38 mods)
 - [x] Performance: Sodium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist
-- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Harvest With Ease, Fancy Toasts, Obscure Tooltips, Loot Journal, Better Advancements, Polymorph
+- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Harvest With Ease, Fancy Toasts, Obscure Tooltips, Loot Journal, Reliable Advancements, Polymorph
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib, Obscure API, Fragmentum
 
@@ -73,7 +73,7 @@
 - [x] AE2 channels kept on (logistics puzzle)
 - [x] Mekanism chunk loading disabled (delegated to Chunk Loaders mod)
 - [x] vanilla advancements + Fancy Toasts for progression guidance (no FTB Quests)
-- [x] Added BlazeandCave's Advancements Pack data pack for 1000+ tracked milestones across 16 tabs — pairs with Better Advancements (UI) for a complete advancement experience
+- [x] Added BlazeandCave's Advancements Pack data pack for 1000+ tracked milestones across 16 tabs — pairs with Reliable Advancements (UI) for a complete advancement experience
 
 ## Pending
 

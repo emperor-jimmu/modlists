@@ -110,7 +110,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups          |
 | [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)          | Animated item pickup notifications             |
-| [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)     | Prettified advancements screen UI              |
+| [Reliable Advancements](https://modrinth.com/mod/reliable-advancements)                   | Overhauled advancements UI with editor/pan/zoom |
 | [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict   |
 | [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)           | Shows which mod an item comes from in tooltip  |
 
@@ -219,7 +219,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | [BlazeandCave's Advancements Pack](https://modrinth.com/datapack/blazeandcaves-advancements-pack) (v2.3.0 for 1.21.x) | 1000+ new advancements across 16 tabs |
 
-**BlazeandCave's Advancements Pack** adds 1000+ milestones across 16 themed tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks collecting every wood variant, killing every mob type, discovering every biome, and reaching tier milestones. Runs alongside Better Advancements (GUI overhaul) and Fancy Toasts (animated popups) without conflict.
+**BlazeandCave's Advancements Pack** adds 1000+ milestones across 16 themed tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks collecting every wood variant, killing every mob type, discovering every biome, and reaching tier milestones. Runs alongside Reliable Advancements (GUI overhaul) and Fancy Toasts (animated popups) without conflict.
 
 **Installation**: Drop the `.zip` into your world's `datapacks/` folder (`saves/<world>/datapacks/`), then run `/datapack enable "blazeandcave/advancements"`. The pack is per-world — enable it in each new world.
 
