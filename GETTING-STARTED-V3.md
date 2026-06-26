@@ -143,7 +143,7 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list wi
 
 | Setting         | Recommended    | Notes                                                   |
 |-----------------|----------------|---------------------------------------------------------|
-| Graphics        | Fabulous       | Sodium makes this performant now                       |
+| Graphics        | Fabulous       | Sodium makes this performant now                        |
 | Render Distance | 16-32 chunks   | Tune to your hardware; Distant Horizons handles far LOD |
 | Brightness      | Moody → Bright | Personal preference — Bright makes caves easier to see  |
 
@@ -151,9 +151,35 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list wi
 
 Open **Mod Menu → Distant Horizons → Config** after first launch. Set LOD Render Distance to 1024 blocks. The mod generates LOD data as you explore — first visit to an area will have temporary pop-in.
 
+#### Performance — Install and Forget
+
+These mods work automatically with no configuration. Install them and they optimize rendering, chunk generation, and entity processing in the background:
+
+| Mod                 | What it does                                                                        |
+|---------------------|-------------------------------------------------------------------------------------|
+| **Radium**          | Server-side optimization — faster entity AI, block updates, and chunk physics       |
+| **ModernFix**       | Fixes performance bugs and memory leaks from other mods. All-in-one optimization    |
+| **ImmediatelyFast** | Speeds up block and item rendering by using immediate-mode rendering where possible |
+| **Entity Culling**  | Stops rendering entities that are behind walls or off-screen. Free FPS              |
+| **Dynamic FPS**     | Reduces frame rate when Minecraft is in the background — saves GPU power            |
+| **Noisium**         | Accelerates world generation — faster chunk creation when exploring                 |
+
+**No config needed** for any of these. Install, launch, forget.
+
 #### Shader Setup
 
 Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Minecraft, go to Options → Video Settings → Shaderpacks, select Complementary Unbound. It works with Iris on NeoForge.
+
+#### Texture Packs
+
+Two optional resource packs enhance vanilla visuals without changing the game feel:
+
+| Pack                                                                            | Role                                                                                    |
+|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| [Faithful 64x](https://www.curseforge.com/minecraft/texture-packs/faithful-64x) | 64x upscaled vanilla textures — clean, sharp, PBR-compatible with Complementary Unbound |
+| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)          | Living entity animation overhaul — mobs blink, look around, show emotion                |
+
+**Installation**: Download the `.zip` files, place them in `.minecraft/resourcepacks/`, enable both in Options → Resource Packs (Fresh Animations above Faithful 64x). Faithful 64x works with Complementary Unbound's Integrated PBR+ for realistic material response. Modded blocks (Create, Mekanism, AE2) use their default textures which blend naturally at 64x.
 
 #### Keybindings (Set These Up First)
 
@@ -171,18 +197,55 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 
 Your first session is about getting comfortable. Don't rush — this wave has zero progression pressure.
 
-| Session | Goal |
-|---------|------|
-| **Session 1 — Setup** | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data |
-| **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey |
-| **Session 3 — Comfort** | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter |
-| **Ongoing** | Right Click Harvest works as you farm. LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
+| Session                         | Goal                                                                                                                                                                                                                                         |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data                                             |
+| **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey                                          |
+| **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                                                                 |
+| **Ongoing**                     | Right Click Harvest works as you farm. LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
 
 ### Using Wave 0 Mods
 
 #### JEI (Recipe Viewer)
 
 Your primary learning tool. Hover any item and press `R` to see how to craft it, `U` to see what it's used in. Every mod in future waves is learned through JEI first.
+
+#### Jade + Jade Addons (Block Info)
+
+Jade shows what block you're looking at and extra information about it — modded machine status, crop growth stage, chest contents, and more.
+
+**How to use**:
+
+- Look at any block. A HUD panel shows the block name, mod source, and relevant data
+- Press the keybind (Controls → Jade → Open Config, or hold the key while looking at a block) to adjust what information is shown
+- **Jade Addons** extends Jade with panels for Create (SU/RPM), Mekanism (energy/gas), AE2 (channel info), and other modded machines
+
+**Pro tip**: Keep Jade enabled. It's the fastest way to check if a machine is running, a crop is ready, or a chest contains specific items.
+
+#### AppleSkin (Food Info)
+
+AppleSkin adds a visual overlay to your hunger bar showing exactly how much hunger and saturation food will restore before you eat it.
+
+**What it shows**:
+
+- **Hover over food** in your inventory or JEI — see exact hunger and saturation values
+- **Pre-eat preview** — your hunger bar shows dashed outlines for what the food will fill
+- **Saturation overlay** — a second layer on the hunger bar shows your hidden saturation stat
+
+**No config needed** — install and forget.
+
+#### Polymorph (Recipe Conflicts)
+
+When two mods have different recipes for the same item (common in a 112-mod pack), Polymorph lets you choose which recipe to use at the crafting table.
+
+**How it works**:
+
+1. Place ingredients in the crafting grid as usual
+2. If multiple recipes match, a small selection button appears next to the output slot
+3. Click it to cycle through available recipes and pick the result you want
+4. The selection persists for that ingredient combination until you change it
+
+**No config needed** — works automatically. Most relevant when crafting basic materials like planks, ingots, or components that multiple mods define.
 
 #### Sophisticated Storage & Backpacks
 
@@ -240,15 +303,72 @@ This data pack adds **1000+ new advancements** across 16 tabs — mining, buildi
 
 **What it adds**: Thousands of hours of optional side goals. Everything is tracked through the vanilla advancement system — open with `L` to browse the 16 tabs and see what's available.
 
+#### Loot Journal: Pickup Notifier
+
+Shows animated pickup notifications when items enter your inventory and tracks session statistics.
+
+**What it does**:
+
+- **Pickup popups** — items you pick up appear as animated icons near your hotbar with quantity counters
+- **Session summary** — when you disconnect, a summary shows what you gained and lost during the session
+- **Statistics** — cumulative drop tracking across all sessions
+
+**Config** (via Mod Menu → Loot Journal):
+
+- `writeSessionJson` = `true` — Saves per-session gain/loss data (default)
+- `writeStatisticsJson` = `true` — Builds cumulative drop statistics (default)
+- `showSummaryOnDisconnect` = `true` — Shows session summary on disconnect (default)
+
+Default settings work well — no changes needed.
+
 #### Right Click Harvest
 
 Right-click a fully grown crop → it breaks and drops, then auto-replants. Works on vanilla crops and most modded ones.
+
+#### Immersive UI
+
+Immersive UI adds subtle animation and polish to the game interface — the hotbar slides smoothly, items have gentle particle effects, and menus feel responsive rather than instant-teleport.
+
+**What it changes**:
+
+- Smooth hotbar selection sliding
+- Item pickup particles in the UI
+- Animated tooltips and menu transitions
+- Crafting grid visual feedback
+
+**No config needed** — install and forget.
+
+#### Traveler's Titles
+
+Displays an RPG-style title card when you enter a new biome or dimension — large text with a subtitle fades in, lingers, and fades out.
+
+**What it shows**:
+
+- **Biome entry** — name of the biome with a thematic subtitle
+- **Dimension entry** — dimension name with an atmospheric description (e.g., "The Nether — A Hellish Landscape")
+- **Height change** — entering deep caves or high mountains triggers a title
+
+**No config needed**. If titles feel too frequent, adjust display time in Mod Menu → Traveler's Titles → Config.
+
+#### Better Modlist
+
+Overhauls the Mod Menu list screen with badges, categories, and search — makes finding and configuring mods much faster.
+
+**What it adds**:
+
+- **Badges** — visual tags showing mod type (library, core, addon, utility)
+- **Categories** — mods grouped by role
+- **Search** — type to filter the mod list
+- **Improved layout** — more mods visible per page, cleaner scrolling
+
+**No config needed** — install and forget.
 
 #### Better Third Person
 
 Better Third Person decouples your camera from your character in third-person view. You can look around independently while your character walks in any direction — essential for combat awareness and scenic building.
 
 **How to use**:
+
 - Press the toggle keybind (default: not set — bind it in Controls → Better Third Person)
 - Once active, your character model moves independently of the camera
 - Great for combat: look behind you while running away
@@ -422,6 +542,7 @@ TFMG extends Create into the oil age. Drill for crude oil, refine it into fuels,
 Oil is the central resource of TFMG. You find it in the world, extract it, refine it, and use the byproducts.
 
 **Finding oil**:
+
 - Oil generates as underground pools (similar to Mekanism's oil, but separate)
 - Find surface seepage in desert and plains biomes — dark patches on the ground
 - Dig down to find oil-bearing sand/stone
@@ -429,11 +550,11 @@ Oil is the central resource of TFMG. You find it in the world, extract it, refin
 
 **Refining crude oil**:
 
-| Step | Machine | Input | Output |
-|------|---------|-------|--------|
-| 1 | **Distillation Tower** | Crude oil | Diesel, gasoline, LPG, lubricant, asphalt |
-| 2 | **Cracker** | Heavy fractions | Lighter fuels |
-| 3 | **Desulfurizer** | Diesel/gasoline | Clean fuel (more efficient) |
+| Step | Machine                | Input           | Output                                    |
+|------|------------------------|-----------------|-------------------------------------------|
+| 1    | **Distillation Tower** | Crude oil       | Diesel, gasoline, LPG, lubricant, asphalt |
+| 2    | **Cracker**            | Heavy fractions | Lighter fuels                             |
+| 3    | **Desulfurizer**       | Diesel/gasoline | Clean fuel (more efficient)               |
 
 Build a **Distillation Tower** (multi-block structure — minimum 4 blocks tall). Feed crude oil into the bottom. Products come out at different heights — lighter products (LPG, gasoline) exit higher, heavier products (diesel, lubricant) exit lower.
 
@@ -441,21 +562,21 @@ Build a **Distillation Tower** (multi-block structure — minimum 4 blocks tall)
 
 Diesel engines burn TFMG fuels to generate rotational power. A single diesel engine running on diesel fuel produces significantly more SU than any Create water wheel or windmill — enough to power an entire factory complex.
 
-| Engine | Fuel | SU Output | Best for |
-|--------|------|-----------|----------|
-| **Small Diesel Engine** | Diesel, gasoline | ~2,000 SU | Early oil — single machine power |
-| **Large Diesel Engine** | Diesel, gasoline | ~8,000 SU | Factory-scale power |
-| **Gas Turbine** | LPG | ~16,000 SU | Endgame power generation |
+| Engine                  | Fuel             | SU Output  | Best for                         |
+|-------------------------|------------------|------------|----------------------------------|
+| **Small Diesel Engine** | Diesel, gasoline | ~2,000 SU  | Early oil — single machine power |
+| **Large Diesel Engine** | Diesel, gasoline | ~8,000 SU  | Factory-scale power              |
+| **Gas Turbine**         | LPG              | ~16,000 SU | Endgame power generation         |
 
 **Fuel comparison**:
 
-| Fuel | Efficiency | Engine type | Byproduct use |
-|------|-----------|-------------|--------------|
-| Diesel | High | Diesel engine | Most efficient general fuel |
-| Gasoline | Medium | Diesel engine | Good backup fuel, less efficient |
-| LPG | Very High | Gas turbine | Best power density, limited quantity |
-| Lubricant | — | Not a fuel | Used in steelmaking and machines |
-| Asphalt | — | Not a fuel | Decorative building blocks |
+| Fuel      | Efficiency | Engine type   | Byproduct use                        |
+|-----------|------------|---------------|--------------------------------------|
+| Diesel    | High       | Diesel engine | Most efficient general fuel          |
+| Gasoline  | Medium     | Diesel engine | Good backup fuel, less efficient     |
+| LPG       | Very High  | Gas turbine   | Best power density, limited quantity |
+| Lubricant | —          | Not a fuel    | Used in steelmaking and machines     |
+| Asphalt   | —          | Not a fuel    | Decorative building blocks           |
 
 **Note**: TFMG diesel engines are separate from Create's own steam engines. They provide more power per block but require the oil processing chain to run. Plan your progression: water wheel → steam engine → diesel engine.
 
@@ -464,6 +585,7 @@ Diesel engines burn TFMG fuels to generate rotational power. A single diesel eng
 TFMG adds a multi-block **Steel Blast Furnace** for industrial-scale steel production. Unlike Mekanism's Metallurgic Infuser (which produces steel slowly), the Blast Furnace produces steel in bulk.
 
 **Setup**:
+
 1. Build the multi-block structure (check JEI/Ponder for the exact pattern)
 2. Feed iron ingots and coal/coke into the top
 3. Power with a diesel engine or Create rotational power
@@ -476,6 +598,7 @@ TFMG adds a multi-block **Steel Blast Furnace** for industrial-scale steel produ
 TFMG adds aluminum as a new metal. **Bauxite ore** generates in the Overworld (typically at mid-to-high Y-levels). Process it through a multi-block smelter to produce aluminum ingots.
 
 **Uses**:
+
 - Aluminum is used in advanced TFMG machines
 - Feeds into Mekanism's advanced alloy processing
 - Used in some Stellaris rocket components (via TFMG-Stellaris Compatibility)
@@ -694,21 +817,21 @@ When your network grows beyond 32 channels, build a **subnetwork**:
 
 By mid-game, you should have all three mods working together:
 
-| Layer                  | Mod           | What's happening                                                    |
-|------------------------|---------------|---------------------------------------------------------------------|
-| **Power**              | Create        | Water wheels → windmills → steam engines power the base             |
-| **Power supplement**   | Mekanism      | Heat generators → gas generators supplement Create power            |
-| **Ore processing**     | Mekanism      | 3x processing chain (Enrichment Chamber + Crusher)                  |
-| **Component crafting** | Create        | Mechanical press + deployers automate component crafting            |
-| **Storage**            | AE2           | Import buses on all machines pull items into the ME network         |
-| **Autocrafting**       | AE2           | Pattern providers + molecular assemblers craft on demand            |
+| Layer                  | Mod                | What's happening                                                    |
+|------------------------|--------------------|---------------------------------------------------------------------|
+| **Power**              | Create             | Water wheels → windmills → steam engines power the base             |
+| **Power supplement**   | Mekanism           | Heat generators → gas generators supplement Create power            |
+| **Ore processing**     | Mekanism           | 3x processing chain (Enrichment Chamber + Crusher)                  |
+| **Component crafting** | Create             | Mechanical press + deployers automate component crafting            |
+| **Storage**            | AE2                | Import buses on all machines pull items into the ME network         |
+| **Autocrafting**       | AE2                | Pattern providers + molecular assemblers craft on demand            |
 | **Power bridge**       | Crafts & Additions | Electric motors/alternators convert kinetic SU ↔ FE (Mek/Stellaris) |
-| **Rail transport**     | Steam 'n' Rails | Expanded train system — new tracks, semaphores, coupling blocks     |
-| **Transport**          | Create        | Conveyor belts move items between processing lines                  |
-| **Oil processing**     | TFMG          | Distillation Tower → diesel, gasoline, LPG. Crack heavy fractions  |
-| **Diesel power**       | TFMG          | Diesel engines produce 2,000–16,000 SU from refined oil            |
-| **Steel production**   | TFMG          | Multi-block Blast Furnace produces steel in bulk                   |
-| **Ore finding**        | Skniro's Ores | New ore types generate in the Nether and End for mid-game expansion |
+| **Rail transport**     | Steam 'n' Rails    | Expanded train system — new tracks, semaphores, coupling blocks     |
+| **Transport**          | Create             | Conveyor belts move items between processing lines                  |
+| **Oil processing**     | TFMG               | Distillation Tower → diesel, gasoline, LPG. Crack heavy fractions   |
+| **Diesel power**       | TFMG               | Diesel engines produce 2,000–16,000 SU from refined oil             |
+| **Steel production**   | TFMG               | Multi-block Blast Furnace produces steel in bulk                    |
+| **Ore finding**        | Skniro's Ores      | New ore types generate in the Nether and End for mid-game expansion |
 
 ### Nether & End Ores (Skniro's)
 
@@ -726,12 +849,12 @@ The **Mekanism TFMG Compatibility** mod resolves overlapping recipes between Mek
 
 **What changes**:
 
-| Feature | Resolution |
-|---------|-----------|
+| Feature              | Resolution                                                                                                                                 |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | **Steel production** | Mekanism's steel recipe (Metallurgic Infuser) is disabled. Use TFMG's Blast Furnace instead — it's the intended steel source for this pack |
-| **Oil processing** | Both mods' oil types are unified. TFMG's Distillation Tower is the primary oil processor; Mekanism's oil chain feeds into it |
-| **Plastic / Rubber** | TFMG's plastic/rubber recipes take priority. Mekanism's polyethylene chain is disabled to avoid duplicate materials |
-| **Circuitry** | Mekanism's basic control circuit recipe uses TFMG's aluminum where applicable |
+| **Oil processing**   | Both mods' oil types are unified. TFMG's Distillation Tower is the primary oil processor; Mekanism's oil chain feeds into it               |
+| **Plastic / Rubber** | TFMG's plastic/rubber recipes take priority. Mekanism's polyethylene chain is disabled to avoid duplicate materials                        |
+| **Circuitry**        | Mekanism's basic control circuit recipe uses TFMG's aluminum where applicable                                                              |
 
 **Config**: All toggles are in `config/mekanismtfgmcompat-common.toml`. Default settings are correct for this pack — no changes needed unless you want to re-enable a specific Mekanism recipe.
 
@@ -752,19 +875,19 @@ The **Mekanism TFMG Compatibility** mod resolves overlapping recipes between Mek
 
 Wave 1 is the largest and takes the most sessions. Pace yourself — each session adds one new capability.
 
-| Session | Focus | What to Build |
-|---------|-------|---------------|
-| **Session 1 — Create basics** | Mine andesite. Craft hand crank + millstone. Build a water wheel. Connect millstone → grind wheat and ore | Power generation (256 SU), basic ore doubling |
-| **Session 2 — Mekanism start** | Find osmium. Build Heat Generator + Enrichment Chamber + Metallurgic Infuser. 2x ore processing. Make steel | Basic Mekanism line, steel for future projects |
-| **Session 3 — AE2 discovery** | Find a certus quartz meteorite. Mine it. Craft certus dust → smelt → charge. Build AE2 Charger | First certus quartz, charge infrastructure |
-| **Session 4 — AE2 network** | Build ME Controller + ME Drive + 1k storage cells + ME Crafting Terminal. Place a Storage Bus on your Sophisticated Storage barrel | Your first digital storage network |
-| **Session 5 — Mid-game Create** | Find zinc. Make brass. Build Deployer + Sequenced Crafter + Mechanical Arm. Automate a simple recipe | Component automation, brass-tier machines |
-| **Session 6 — Mekanism expansion** | Add Crusher for 3x ore. Build Electrolytic Separator for gas processing. Upgrade machines to Advanced tier | 3x ore multiplication, gas infrastructure |
-| **Session 7 — Integration** | Place Import Bus on Enrichment Chamber → items flow into AE2. Place Export Bus to supply Create machines. Connect Create alternator to Mekanism power | Cross-mod automation bridge |
-| **Session 8+ — Scaling up** | Build Digital Miner. Expand AE2 drives. Add Create train between base and outpost. Work toward 5x ore processing | Automated mining, bulk transport |
-| **Session 9 — TFMG start** | Find oil (desert/plains surface pools). Craft Pumpjack + Distillation Tower. Build Small Diesel Engine. Process oil into diesel fuel | Oil refining online, massive SU upgrade |
-| **Session 10 — TFMG expansion** | Build the multi-block Steel Blast Furnace. Mass-produce steel. Find bauxite for aluminum. Upgrade to Large Diesel Engine | Industrial steel, aluminum processing |
-| **Session 11+ — TFMG + Mek integration** | Wire diesel engines to power Mekanism processing. Use TFMG steel for Mekanism machines. Connect Mekanism TFMG Compatibility configs | Cross-mod fuel-to-processing pipeline |
+| Session                                  | Focus                                                                                                                                                 | What to Build                                  |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| **Session 1 — Create basics**            | Mine andesite. Craft hand crank + millstone. Build a water wheel. Connect millstone → grind wheat and ore                                             | Power generation (256 SU), basic ore doubling  |
+| **Session 2 — Mekanism start**           | Find osmium. Build Heat Generator + Enrichment Chamber + Metallurgic Infuser. 2x ore processing. Make steel                                           | Basic Mekanism line, steel for future projects |
+| **Session 3 — AE2 discovery**            | Find a certus quartz meteorite. Mine it. Craft certus dust → smelt → charge. Build AE2 Charger                                                        | First certus quartz, charge infrastructure     |
+| **Session 4 — AE2 network**              | Build ME Controller + ME Drive + 1k storage cells + ME Crafting Terminal. Place a Storage Bus on your Sophisticated Storage barrel                    | Your first digital storage network             |
+| **Session 5 — Mid-game Create**          | Find zinc. Make brass. Build Deployer + Sequenced Crafter + Mechanical Arm. Automate a simple recipe                                                  | Component automation, brass-tier machines      |
+| **Session 6 — Mekanism expansion**       | Add Crusher for 3x ore. Build Electrolytic Separator for gas processing. Upgrade machines to Advanced tier                                            | 3x ore multiplication, gas infrastructure      |
+| **Session 7 — Integration**              | Place Import Bus on Enrichment Chamber → items flow into AE2. Place Export Bus to supply Create machines. Connect Create alternator to Mekanism power | Cross-mod automation bridge                    |
+| **Session 8+ — Scaling up**              | Build Digital Miner. Expand AE2 drives. Add Create train between base and outpost. Work toward 5x ore processing                                      | Automated mining, bulk transport               |
+| **Session 9 — TFMG start**               | Find oil (desert/plains surface pools). Craft Pumpjack + Distillation Tower. Build Small Diesel Engine. Process oil into diesel fuel                  | Oil refining online, massive SU upgrade        |
+| **Session 10 — TFMG expansion**          | Build the multi-block Steel Blast Furnace. Mass-produce steel. Find bauxite for aluminum. Upgrade to Large Diesel Engine                              | Industrial steel, aluminum processing          |
+| **Session 11+ — TFMG + Mek integration** | Wire diesel engines to power Mekanism processing. Use TFMG steel for Mekanism machines. Connect Mekanism TFMG Compatibility configs                   | Cross-mod fuel-to-processing pipeline          |
 
 **Pacing tip**: You don't need to finish Wave 1 before starting Wave 1.5 (colony) or Wave 2 (exploration). Dip into exploration between factory sessions. The colony takes real-world days to grow, so start it early. TFMG oil is a mid-game addition — start it after you have brass Create components and basic Mekanism processing.
 
@@ -793,30 +916,31 @@ MineColonies lets you build a functioning town of NPC workers. Each worker has a
 
 #### Core Worker Huts (build in this order)
 
-| Hut | Resource | What it does |
-|-----|----------|--------------|
-| **Mine** | Coal, iron, stone | Digs a shaft mine. Supplies your base with basic ores |
-| **Lumberjack** | Wood | Chops trees and replants saplings. Infinite wood |
-| **Farmer** | Wheat, carrots, potatoes | Plants, grows, harvests. Feeds your colony |
-| **Guard Tower** | Defense | Guards patrol your base perimeter. Add more towers for larger bases |
-| **Crafter** | Recipes | Crafts items from materials in storage. Set recipes in the crafter GUI |
+| Hut             | Resource                 | What it does                                                           |
+|-----------------|--------------------------|------------------------------------------------------------------------|
+| **Mine**        | Coal, iron, stone        | Digs a shaft mine. Supplies your base with basic ores                  |
+| **Lumberjack**  | Wood                     | Chops trees and replants saplings. Infinite wood                       |
+| **Farmer**      | Wheat, carrots, potatoes | Plants, grows, harvests. Feeds your colony                             |
+| **Guard Tower** | Defense                  | Guards patrol your base perimeter. Add more towers for larger bases    |
+| **Crafter**     | Recipes                  | Crafts items from materials in storage. Set recipes in the crafter GUI |
 
 #### Research Tree
 
 Open the Town Hall → Research tab. Research points accumulate from worker activities. Key gates:
 
-| Research | Colony Level | Points | Unlocks |
-|----------|-------------|--------|---------|
-| Basic Industry | 2 | 2000 | Better mine shafts, furnace automation |
-| Advanced Smithing | 3 | 4000 | Better tools for workers |
-| Industrial Revolution | 3 | 5000 | Mekanism Atomic Alloy recipe |
-| Logistics | 4 | 8000 | Warehouse, courier delivery routes |
+| Research              | Colony Level | Points | Unlocks                                |
+|-----------------------|--------------|--------|----------------------------------------|
+| Basic Industry        | 2            | 2000   | Better mine shafts, furnace automation |
+| Advanced Smithing     | 3            | 4000   | Better tools for workers               |
+| Industrial Revolution | 3            | 5000   | Mekanism Atomic Alloy recipe           |
+| Logistics             | 4            | 8000   | Warehouse, courier delivery routes     |
 
 **Tech gating**: The Atomic Alloy required for Mekanism's ultimate-tier machines can be set to require "Industrial Revolution" research. This ensures the player can't skip from Phase 1 straight to Phase 3 tech — the colony must grow alongside the factory.
 
 #### Guard Scaling
 
 The colony's defense scales with size:
+
 - 1 Guard Tower → covers a 20-block radius
 - Each additional tower adds coverage
 - Guard equipment upgrades with your colony level (leather → iron → diamond)
@@ -837,13 +961,13 @@ The colony's defense scales with size:
 
 The colony takes real-world time to grow. Sessions here are check-ins between other activities.
 
-| Session | Focus | What to Do |
-|---------|-------|------------|
-| **Session 1 — Foundation** | Craft Town Hall, place it, hire Builder. Place Builder's Hut, supply materials (wood, cobble, tools). Start the first build | Colony established, first building under construction |
-| **Session 2 — First workers** | Place Mine hut + Lumberjack hut. Supply tools and materials. Let them work while you explore or build factory | Passive resource income (wood, coal, iron) |
-| **Session 3 — Farm + Guard** | Place Farmer hut for food. Place Guard Tower for perimeter defense. Upgrade buildings to level 2 | Colony self-sufficient, base defended |
-| **Session 4 — Research** | Check Town Hall → Research tab. Spend accumulated research points on Basic Industry. Place Crafter hut | First research unlocked, autocrafting in colony |
-| **Ongoing** | Check in every few sessions. Upgrade buildings, unlock more research, expand guard coverage. By Phase 2 your colony should be level 3 with Industrial Revolution research | Tech gate unlocked (Atomic Alloy), automated resource supply |
+| Session                       | Focus                                                                                                                                                                     | What to Do                                                   |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| **Session 1 — Foundation**    | Craft Town Hall, place it, hire Builder. Place Builder's Hut, supply materials (wood, cobble, tools). Start the first build                                               | Colony established, first building under construction        |
+| **Session 2 — First workers** | Place Mine hut + Lumberjack hut. Supply tools and materials. Let them work while you explore or build factory                                                             | Passive resource income (wood, coal, iron)                   |
+| **Session 3 — Farm + Guard**  | Place Farmer hut for food. Place Guard Tower for perimeter defense. Upgrade buildings to level 2                                                                          | Colony self-sufficient, base defended                        |
+| **Session 4 — Research**      | Check Town Hall → Research tab. Spend accumulated research points on Basic Industry. Place Crafter hut                                                                    | First research unlocked, autocrafting in colony              |
+| **Ongoing**                   | Check in every few sessions. Upgrade buildings, unlock more research, expand guard coverage. By Phase 2 your colony should be level 3 with Industrial Revolution research | Tech gate unlocked (Atomic Alloy), automated resource supply |
 
 **Tip**: The colony is a long-term investment. Start it early (Session 1 of Wave 1.5), check on it periodically, and let it grow in the background. By the time you need Atomic Alloy for Mekanium, it'll be ready.
 
@@ -863,13 +987,13 @@ The Overworld is dramatically transformed. Every biome, structure, and cave syst
 
 #### Terrain Overhaul — Terralith + Tectonic
 
-| Aspect               | What changed                                                                                                                                 | What to look for                                                           |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| **Mountains**        | Tectonic makes them taller and steeper. Terralith adds painted mountains (orange/white layers) and volcanic peaks                            | Build a base in a mountain valley with dramatic views                      |
-| **Oceans**           | Deeper and more varied — trench-like drops offshore                                                                                          | Use ships/boats to cross, lookout for ocean monuments                      |
-| **Biomes**           | Terralith adds 80+ overhauled biomes — redwood forests (200+ block trees), cherry groves, floating islands, painted mountains, and more      | Cherry groves for vibes. Redwood forests for massive wood supply           |
-| **Caves**            | YUNG's Better Caves expands cave systems — wider tunnels, deeper chasms, more open spaces                                                    | Caves are easier to navigate and more impressive. Bring torches            |
-| **Rivers & Valleys** | Tectonic carves deeper river valleys. Terralith adds shattered savannahs (mesa-like)                                                         | Follow rivers for scenic travel. Build bridges with Create                 |
+| Aspect               | What changed                                                                                                                            | What to look for                                                 |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| **Mountains**        | Tectonic makes them taller and steeper. Terralith adds painted mountains (orange/white layers) and volcanic peaks                       | Build a base in a mountain valley with dramatic views            |
+| **Oceans**           | Deeper and more varied — trench-like drops offshore                                                                                     | Use ships/boats to cross, lookout for ocean monuments            |
+| **Biomes**           | Terralith adds 80+ overhauled biomes — redwood forests (200+ block trees), cherry groves, floating islands, painted mountains, and more | Cherry groves for vibes. Redwood forests for massive wood supply |
+| **Caves**            | YUNG's Better Caves expands cave systems — wider tunnels, deeper chasms, more open spaces                                               | Caves are easier to navigate and more impressive. Bring torches  |
+| **Rivers & Valleys** | Tectonic carves deeper river valleys. Terralith adds shattered savannahs (mesa-like)                                                    | Follow rivers for scenic travel. Build bridges with Create       |
 
 **Pro tip**: Each of these worldgen mods works best in **newly generated chunks**. Load up a world and explore in any direction. The terrain variety means every direction has something different.
 
@@ -915,13 +1039,13 @@ Immersive Aircraft adds vanilla-style aircraft that let you fly across the Overw
 
 #### Aircraft Types
 
-| Vehicle | Fuel | Seats | Cargo | Best for |
-|---------|------|-------|-------|----------|
-| **Biplane** | Coal/charcoal | 1 | None | Fast personal flight, combat strafing |
-| **Airship** | Coal/charcoal | 3 | 9 slots | Exploration with friends, cargo runs |
-| **Cargo Airship** | Coal/charcoal | 1 | 27 slots | Transporting materials between bases |
-| **Warship** | Coal/charcoal | 3 | 9 slots | Armed combat, colony defense support |
-| **Gyrocopter** | Coal/charcoal | 1 | None | Agile short-range flight, tight spaces |
+| Vehicle           | Fuel          | Seats | Cargo    | Best for                               |
+|-------------------|---------------|-------|----------|----------------------------------------|
+| **Biplane**       | Coal/charcoal | 1     | None     | Fast personal flight, combat strafing  |
+| **Airship**       | Coal/charcoal | 3     | 9 slots  | Exploration with friends, cargo runs   |
+| **Cargo Airship** | Coal/charcoal | 1     | 27 slots | Transporting materials between bases   |
+| **Warship**       | Coal/charcoal | 3     | 9 slots  | Armed combat, colony defense support   |
+| **Gyrocopter**    | Coal/charcoal | 1     | None     | Agile short-range flight, tight spaces |
 
 #### How to Use
 
@@ -1083,12 +1207,12 @@ After you defeat the Ender Dragon, the End becomes a full dimension worth explor
 
 Exploration is something you dip into between factory sessions. No need to binge it.
 
-| Session | Focus | What to Do |
-|---------|-------|------------|
-| **Session 1 — Scout** | Craft Explorer's Compass. Search for a cherry grove or redwood forest biome. Mark waypoints on your map. Find a YUNG's dungeon and loot it | First taste of the transformed world, early loot |
-| **Session 2 — Aether visit** | Gather glowstone (from the Nether or wandering traders). Build the Aether portal. Explore the first sky island, collect ambrosium and zanite | A new dimension, safe change of pace |
-| **Session 3 — Twilight Forest entry** | Find a 2×2 water pool, surround with flowers, throw in a diamond. Enter the Twilight Forest. Place a Waystone immediately. Defeat the Naga | First Twilight Forest boss, door to progression |
-| **Session 4+ — Deep exploration** | Work through Twilight Forest bosses at your own pace. Visit Deeper and Darker (requires finding an Ancient City). Explore the End after killing the dragon | Boss loot, dimension-specific resources |
+| Session                               | Focus                                                                                                                                                      | What to Do                                       |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| **Session 1 — Scout**                 | Craft Explorer's Compass. Search for a cherry grove or redwood forest biome. Mark waypoints on your map. Find a YUNG's dungeon and loot it                 | First taste of the transformed world, early loot |
+| **Session 2 — Aether visit**          | Gather glowstone (from the Nether or wandering traders). Build the Aether portal. Explore the first sky island, collect ambrosium and zanite               | A new dimension, safe change of pace             |
+| **Session 3 — Twilight Forest entry** | Find a 2×2 water pool, surround with flowers, throw in a diamond. Enter the Twilight Forest. Place a Waystone immediately. Defeat the Naga                 | First Twilight Forest boss, door to progression  |
+| **Session 4+ — Deep exploration**     | Work through Twilight Forest bosses at your own pace. Visit Deeper and Darker (requires finding an Ancient City). Explore the End after killing the dragon | Boss loot, dimension-specific resources          |
 
 **Pacing tip**: Explore between factory builds. When you're waiting for Mekanism to process or Create to assemble, grab your compass and walk in a random direction. Every direction has something new.
 
@@ -1114,15 +1238,17 @@ Every action in the game earns XP. As you level up, you earn skill points to spe
 
 #### Attribute Categories
 
-| Attribute    | Effect                              | Who benefits                             |
-|--------------|-------------------------------------|------------------------------------------|
-| **Strength** | +melee damage, +mining speed        | Everyone — more damage and faster mining |
-| **Vitality** | +max HP, +natural regen             | All players — survival is always useful  |
-| **Agility**  | +movement speed, +attack speed      | Combat-focused players, kiting bosses    |
+| Attribute    | Effect                              | Who benefits                                                                    |
+|--------------|-------------------------------------|---------------------------------------------------------------------------------|
+| **Strength** | +melee damage, +mining speed        | Everyone — more damage and faster mining                                        |
+| **Vitality** | +max HP, +natural regen             | All players — survival is always useful                                         |
+| **Agility**  | +movement speed, +attack speed      | Combat-focused players, kiting bosses                                           |
 | **Magic**    | +spell damage, +mana regen          | Less useful without a dedicated spell mod, but affects Ars Nouveau if installed |
-| **Defense**  | +armor toughness, +damage reduction | Tank playstyle                           |
+| **Defense**  | +armor toughness, +damage reduction | Tank playstyle                                                                  |
 
 **How XP works**: Every ore you mine, every mob you kill, every item you craft, every crop you harvest generates XP. The amount scales with the action's complexity. Smelting 100 iron ingots gives more XP than smelting 1.
+
+**Dependency note**: **Pufferfish's Skills** is the underlying framework that powers the Skill Tree. It handles XP tracking, attribute modification, and skill point allocation behind the scenes. Install it alongside the Skill Tree mod — no separate configuration or interaction needed.
 
 **Tip**: The skill tree is lowest-investment, highest-return mod in this wave. Set the keybind and start earning XP from minute 1.
 
@@ -1287,14 +1413,14 @@ Runes are socketable modifications for weapons and tools. Unlike Apotheosis gems
 
 Gear upgrades happen naturally as you play. These sessions show you what to look for.
 
-| Session | Focus | What to Do |
-|---------|-------|------------|
-| **Session 1 — Skill tree** | Set skill tree keybind (`P` recommended). Open it and spend your first points on Strength (mining speed/melee damage). This is passive — XP earns automatically from everything you do | Permanent character progression started |
-| **Session 2 — First affix loot** | Check every gear drop. Look for Rare+ items with useful affixes (Ruthless for melee, Sturdy for armor). Don't salvage anything until you understand what's good | First taste of the loot system |
-| **Session 3 — Weapon hunt** | Use Explorer's Compass to find a YUNG's dungeon. Loot it for Simply Swords weapons. Try out a Rapier (fast, shield-piercing) or Greathammer (AoE, knockback) | Your first unique weapon, learn its ability |
-| **Session 4 — Gem cutting** | Collect rough gems from chests and mobs. Build a Gem Cutting Station. Cut your first Rough → Cut gem. Socket it into a weapon or armor piece | Permanent gear upgrade, gem system understood |
-| **Session 5 — Relic hunting** | Explore different structure types for Relics RPG items. Monkey Talisman (double jump from vanilla dungeons) and Lucky Coin (better loot from mineshafts) are early priorities | Accessory slots filled, unique abilities |
-| **Session 6+ — Boss affix hunting** | Search for affixed boss mobs (they have a colored name above their health bar). These are your best source of Mythic gear. Bring good weapons and food | Endgame gear progression |
+| Session                             | Focus                                                                                                                                                                                  | What to Do                                    |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| **Session 1 — Skill tree**          | Set skill tree keybind (`P` recommended). Open it and spend your first points on Strength (mining speed/melee damage). This is passive — XP earns automatically from everything you do | Permanent character progression started       |
+| **Session 2 — First affix loot**    | Check every gear drop. Look for Rare+ items with useful affixes (Ruthless for melee, Sturdy for armor). Don't salvage anything until you understand what's good                        | First taste of the loot system                |
+| **Session 3 — Weapon hunt**         | Use Explorer's Compass to find a YUNG's dungeon. Loot it for Simply Swords weapons. Try out a Rapier (fast, shield-piercing) or Greathammer (AoE, knockback)                           | Your first unique weapon, learn its ability   |
+| **Session 4 — Gem cutting**         | Collect rough gems from chests and mobs. Build a Gem Cutting Station. Cut your first Rough → Cut gem. Socket it into a weapon or armor piece                                           | Permanent gear upgrade, gem system understood |
+| **Session 5 — Relic hunting**       | Explore different structure types for Relics RPG items. Monkey Talisman (double jump from vanilla dungeons) and Lucky Coin (better loot from mineshafts) are early priorities          | Accessory slots filled, unique abilities      |
+| **Session 6+ — Boss affix hunting** | Search for affixed boss mobs (they have a colored name above their health bar). These are your best source of Mythic gear. Bring good weapons and food                                 | Endgame gear progression                      |
 
 **Tip**: Wave 3 gear changes how every other wave feels. A Rare+ weapon with the right affix makes combat in Twilight Forest and Cataclysm dramatically easier. Invest in your gear before tackling tough bosses.
 
@@ -1436,11 +1562,11 @@ After drinking, you get an **empty bottle** back. Reuse it at the brewing statio
 
 Storage Delight adds decorative kitchen storage blocks that work as functional inventories:
 
-| Block | Slots | Use |
-|-------|-------|-----|
-| Cabinet | 27 | Counter-height storage, matches kitchen aesthetic |
-| Drawer | 18 | Slimmer, fits under counters |
-| Shelf | 9 | Wall-mounted spice/ingredient display |
+| Block   | Slots | Use                                               |
+|---------|-------|---------------------------------------------------|
+| Cabinet | 27    | Counter-height storage, matches kitchen aesthetic |
+| Drawer  | 18    | Slimmer, fits under counters                      |
+| Shelf   | 9     | Wall-mounted spice/ingredient display             |
 
 **Tip**: Use cabinets and drawers in your kitchen for early-game ingredient storage before AE2 comes online. Later, place an ME Storage Bus on a cabinet to bridge it into your digital network.
 
@@ -1478,22 +1604,22 @@ Adds seafood dishes using ocean mob drops and kelp:
 
 Cooking is a side activity you build up gradually. Start small and expand as you find ingredients.
 
-| Session | Focus | What to Build |
-|---------|-------|---------------|
-| **Session 1 — Kitchen tools** | Craft a cutting board (knife + planks) and cooking pot (iron + planks). Build a stove (bricks + iron nuggets) as heat source. Find wild tomato, cabbage, onion, rice seeds | Functional kitchen, first ingredients |
-| **Session 2 — Farm** | Plant tomato, cabbage, onion, rice near water. Use Right Click Harvest for easy harvesting. Cook your first meal (tomato soup is the easiest) | Sustainable ingredient supply |
-| **Session 3 — Brewing** | Find barley, grapes, honey. Build a brewing station. Start your first batch of beer/wine/mead. Place an aging barrel | First drink fermenting, waiting for it to age |
-| **Session 4 — Kitchen expansion** | Craft Storage Delight cabinets and drawers for decorative ingredient storage. Try More Delight recipes (sandwiches, toasts). Collect Nether ingredients for My Nether's Delight | Full kitchen, all FD addons in use |
-| **Ongoing** | Age drinks to Matured/Aged for boss-fight buffs. Explore oceans for Ocean's Delight ingredients. Stock your AE2 system with ingredients for autocrafting meals on demand | Buff food always available for combat |
+| Session                           | Focus                                                                                                                                                                           | What to Build                                 |
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| **Session 1 — Kitchen tools**     | Craft a cutting board (knife + planks) and cooking pot (iron + planks). Build a stove (bricks + iron nuggets) as heat source. Find wild tomato, cabbage, onion, rice seeds      | Functional kitchen, first ingredients         |
+| **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice near water. Use Right Click Harvest for easy harvesting. Cook your first meal (tomato soup is the easiest)                                   | Sustainable ingredient supply                 |
+| **Session 3 — Brewing**           | Find barley, grapes, honey. Build a brewing station. Start your first batch of beer/wine/mead. Place an aging barrel                                                            | First drink fermenting, waiting for it to age |
+| **Session 4 — Kitchen expansion** | Craft Storage Delight cabinets and drawers for decorative ingredient storage. Try More Delight recipes (sandwiches, toasts). Collect Nether ingredients for My Nether's Delight | Full kitchen, all FD addons in use            |
+| **Ongoing**                       | Age drinks to Matured/Aged for boss-fight buffs. Explore oceans for Ocean's Delight ingredients. Stock your AE2 system with ingredients for autocrafting meals on demand        | Buff food always available for combat         |
 
 ### Session Plan — Wave 4.5
 
 Bounties are passive — check boards whenever you visit a village.
 
-| Session | Focus | What to Do |
-|---------|-------|------------|
-| **Any session** | Visit any village. Find the bounty board (a lectern-like block). Check available quests. Complete gathering quests (deliver items from your AE2 system) for free rewards | Passive XP and loot |
-| **Ongoing** | Boards regenerate quests periodically. Check back after a few play sessions. Hunting and exploration quests are good reasons to visit new biomes or fight new mobs | Continuous passive progression |
+| Session         | Focus                                                                                                                                                                    | What to Do                     |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| **Any session** | Visit any village. Find the bounty board (a lectern-like block). Check available quests. Complete gathering quests (deliver items from your AE2 system) for free rewards | Passive XP and loot            |
+| **Ongoing**     | Boards regenerate quests periodically. Check back after a few play sessions. Hunting and exploration quests are good reasons to visit new biomes or fight new mobs       | Continuous passive progression |
 
 ---
 
@@ -1561,6 +1687,14 @@ Better Combat changes how every weapon **feels** in your hands. It replaces Mine
 - **Sweep radius** (wider = hits more mobs)
 - **Attack speed** scaling
 - **Visual effects** (particles, trail colors)
+
+#### Enchantment Descriptions
+
+Hover over any enchantment in a tooltip (on an item, in a book, or in the enchanting table GUI) — a detailed description of what the enchantment does appears.
+
+**No config needed** — install and forget.
+
+**Dependency note**: **Ritchie's Projectile Library** is a library mod required by Create Big Cannons. It provides custom projectile trajectories and hit detection. Install it alongside Create Big Cannons — no separate configuration needed.
 
 ### Mutant Monsters — Boss Variants
 
@@ -1664,13 +1798,13 @@ Create Big Cannons adds functional cannons built from Create materials, using ro
 
 #### Ammunition Types
 
-| Ammo | Effect | Use case |
-|------|--------|----------|
-| Solid cannonball | High damage, block-breaking explosive | Siege, defense |
-| Canister shot | Spread of small projectiles | Anti-personnel, mob clearing |
-| Grape shot | Medium spread | Crowd control |
-| Incendiary | Fire on impact + lingering fire | Area denial |
-| Smoke shell | Smoke screen | Signalling, concealment |
+| Ammo             | Effect                                | Use case                     |
+|------------------|---------------------------------------|------------------------------|
+| Solid cannonball | High damage, block-breaking explosive | Siege, defense               |
+| Canister shot    | Spread of small projectiles           | Anti-personnel, mob clearing |
+| Grape shot       | Medium spread                         | Crowd control                |
+| Incendiary       | Fire on impact + lingering fire       | Area denial                  |
+| Smoke shell      | Smoke screen                          | Signalling, concealment      |
 
 #### Integration
 
@@ -1683,14 +1817,14 @@ Create Big Cannons adds functional cannons built from Create materials, using ro
 
 Combat content is opt-in. Engage when you want a challenge, not before.
 
-| Session | Focus | What to Do |
-|---------|-------|------------|
-| **Session 1 — Combat feel** | Better Combat works automatically. Craft a Simply Swords weapon if you haven't already (or find one from dungeon loot). Test the attack patterns — daggers stab fast, greatswords sweep wide. Equip a Lifesteal or Fire rune | Learn your weapon, feel the combat change |
-| **Session 2 — First mutant** | Find a Mutant Zombie at night (listen for its distinctive roar). Kite it, learn its attack patterns. Collect its unique drop | First mini-boss beaten, unique loot |
-| **Session 3 — First dungeon** | Find a When Dungeons Arise small castle or abandoned temple. Clear floors systematically. Collect loot from each floor | Rougelike dungeon completed, rare loot |
-| **Session 4 — First Cataclysm boss** | Choose the easiest boss (Leviathan — deep ocean) or the most accessible (Netherite Monstrosity — Nether fortress). Prepare: bring good weapons, fire resistance, healing food. Summon and fight | Epic boss beaten, endgame gear start |
-| **Session 5 — Cannons** | Craft bronze (Create: zinc + copper in heated mixer). Build a Small Cannon. Test fire it at a target. Mount it near your base entrance | Artillery online, colony defense |
-| **Session 6+ — Boss gauntlet** | Work through remaining Cataclysm bosses. Each drops unique materials for endgame gear. Twilight Forest bosses (Wave 2) also benefit from Wave 5 gear — revisit them now | Full endgame gear progression |
+| Session                              | Focus                                                                                                                                                                                                                        | What to Do                                |
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| **Session 1 — Combat feel**          | Better Combat works automatically. Craft a Simply Swords weapon if you haven't already (or find one from dungeon loot). Test the attack patterns — daggers stab fast, greatswords sweep wide. Equip a Lifesteal or Fire rune | Learn your weapon, feel the combat change |
+| **Session 2 — First mutant**         | Find a Mutant Zombie at night (listen for its distinctive roar). Kite it, learn its attack patterns. Collect its unique drop                                                                                                 | First mini-boss beaten, unique loot       |
+| **Session 3 — First dungeon**        | Find a When Dungeons Arise small castle or abandoned temple. Clear floors systematically. Collect loot from each floor                                                                                                       | Rougelike dungeon completed, rare loot    |
+| **Session 4 — First Cataclysm boss** | Choose the easiest boss (Leviathan — deep ocean) or the most accessible (Netherite Monstrosity — Nether fortress). Prepare: bring good weapons, fire resistance, healing food. Summon and fight                              | Epic boss beaten, endgame gear start      |
+| **Session 5 — Cannons**              | Craft bronze (Create: zinc + copper in heated mixer). Build a Small Cannon. Test fire it at a target. Mount it near your base entrance                                                                                       | Artillery online, colony defense          |
+| **Session 6+ — Boss gauntlet**       | Work through remaining Cataclysm bosses. Each drops unique materials for endgame gear. Twilight Forest bosses (Wave 2) also benefit from Wave 5 gear — revisit them now                                                      | Full endgame gear progression             |
 
 **Tip**: Better Combat changes how melee works fundamentally. Don't skip Session 1 even if you're a ranged player — the weapon swing changes affect all melee combat, including tools.
 
@@ -1983,13 +2117,13 @@ Start with moon missions, establish a Tier 1 base, then work toward Mercury and 
 
 Space is a Phase 2+ activity. Don't start until you have Mekanism basic processing, an AE2 network, and decent power infrastructure.
 
-| Session | Focus | What to Build |
-|---------|-------|---------------|
-| **Session 1 — Ground prep** | Find oil (surface pools in deserts/plains). Build Fuel Refinery + Rocket Station. Craft Tier 1 rocket components (engine, fuel tank, capsule, fins). Assemble the rocket | Launch infrastructure complete |
-| **Session 2 — Moon landing** | Craft a Space Suit. Fill it with oxygen at the Oxygen Distributor. Stock supplies (food, blocks, torches, weapons). Enter the rocket and launch | First off-world base, desh collected |
-| **Session 3 — Moon base** | Set up a solar panel + oxygen distributor on the Moon. Place a Waystone. Mine desh for Tier 2 rocket components. Place a Chunk Loader to keep it running | Sustainable Moon operation |
-| **Session 4 — Next planets** | Upgrade to Tier 2 rocket. Fly to Mercury or Venus. Each has unique hazards (heat, acid rain) and resources (ostranium, tharsite). Set up a temporary base | New planet resources, expanded capabilities |
-| **Session 5+ — Deep space** | Tier 3 rocket → Mars (permanent off-world base). Tier 4 rocket → Glacio (endgame crystals). Bring Mekanism digital miner for automated resource extraction | Full interplanetary logistics |
+| Session                      | Focus                                                                                                                                                                    | What to Build                               |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| **Session 1 — Ground prep**  | Find oil (surface pools in deserts/plains). Build Fuel Refinery + Rocket Station. Craft Tier 1 rocket components (engine, fuel tank, capsule, fins). Assemble the rocket | Launch infrastructure complete              |
+| **Session 2 — Moon landing** | Craft a Space Suit. Fill it with oxygen at the Oxygen Distributor. Stock supplies (food, blocks, torches, weapons). Enter the rocket and launch                          | First off-world base, desh collected        |
+| **Session 3 — Moon base**    | Set up a solar panel + oxygen distributor on the Moon. Place a Waystone. Mine desh for Tier 2 rocket components. Place a Chunk Loader to keep it running                 | Sustainable Moon operation                  |
+| **Session 4 — Next planets** | Upgrade to Tier 2 rocket. Fly to Mercury or Venus. Each has unique hazards (heat, acid rain) and resources (ostranium, tharsite). Set up a temporary base                | New planet resources, expanded capabilities |
+| **Session 5+ — Deep space**  | Tier 3 rocket → Mars (permanent off-world base). Tier 4 rocket → Glacio (endgame crystals). Bring Mekanism digital miner for automated resource extraction               | Full interplanetary logistics               |
 
 **Tip**: Space is the most resource-intensive activity in the pack. Don't rush it. Each planet should feel like a meaningful expansion of your industrial empire, not a checklist item. The MekaSuit trivializes spacewalks — jetpack flight + environmental protection = no oxygen worries.
 
@@ -2017,11 +2151,11 @@ Space is a Phase 2+ activity. Don't start until you have Mekanism basic processi
 
 ## Progression Through All Waves
 
-| Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                    |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                                                     |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Phase 1** (hours 0-40)   | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals. Start MineColonies colony (builder hut, basic mines). Grab bounties from village boards |
-| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Chipped and Macaw's. Complete bounties for passive rewards as you explore |
-| **Phase 3** (hours 150+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd End dimension. Monumental building projects with all decoration tools |
+| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Chipped and Macaw's. Complete bounties for passive rewards as you explore                                  |
+| **Phase 3** (hours 150+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd End dimension. Monumental building projects with all decoration tools                                                                                                  |
 
 ## General Tips
 
