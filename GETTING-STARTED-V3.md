@@ -566,199 +566,761 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-2--exploration-world--dimensions). Inst
 
 ### Overworld
 
-- **Terralith**: Hundreds of new biome variants — painted mountains, shattered savannahs, volcanic peaks
-- **Tectonic**: Deeper oceans, taller mountains, steeper cliffs
-- **Regions Unexplored**: 65+ new biomes (redwood forests, steppes, willow forests, cherry groves)
-- **YUNG's structures**: Every vanilla structure type gets an overhaul — dungeons, mineshafts, strongholds, temples, monuments, witch huts, nether fortresses
-- **Structory + Towns & Towers + Additional Structures**: Hundreds more new structures to discover
+The Overworld is dramatically transformed. Every biome, structure, and cave system is overhauled.
 
-**Finding biomes**: Craft an Explorer's Compass and right-click to open its GUI. Browse the biome list and select one — the compass points to the nearest instance. Use this to find specific Regions Unexplored or Terralith biomes.
+#### Terrain Overhaul — Terralith + Tectonic + Regions Unexplored
 
-**New world recommendation**: Terralith, Tectonic, and Regions Unexplored generate best in a new world. If joining an existing world, explore chunks you haven't visited yet (1000+ blocks from spawn).
+| Aspect | What changed | What to look for |
+|--------|-------------|------------------|
+| **Mountains** | Tectonic makes them taller and steeper. Terralith adds painted mountains (orange/white layers) and volcanic peaks | Build a base in a mountain valley with dramatic views |
+| **Oceans** | Deeper and more varied — trench-like drops offshore | Use ships/boats (or Create airships) to cross, lookout for ocean monuments |
+| **Forests** | Regions Unexplored adds 65+ new biomes — redwood forests (200+ block trees), autumn forests, willow swamps, cherry groves, steppes, and more | Cherry groves for vibes. Redwood forests for massive wood supply |
+| **Caves** | YUNG's Better Caves expands cave systems — wider tunnels, deeper chasms, more open spaces | Caves are easier to navigate and more impressive. Bring torches |
+| **Rivers & Valleys** | Tectonic carves deeper river valleys. Terralith adds shattered savannahs (mesa-like) | Follow rivers for scenic travel. Build bridges with Create |
 
-### The Aether
+**Pro tip**: Each of these worldgen mods works best in **newly generated chunks**. Load up a world and explore in any direction. The terrain variety means every direction has something different.
 
-A sky dimension. Build a glowstone portal (like a Nether portal with glowstone), fill with water, step through.
+#### YUNG's Overhauled Structures
 
-- **Early**: Safe sky islands, ambrosium, zanite, aerwhales
-- **Mid**: Gold dungeons for better gear
-- **Late**: Silver dungeons for endgame loot
+Every vanilla structure type is expanded:
 
-### Twilight Forest
+| Structure | What's new | Loot expectation |
+|-----------|-----------|------------------|
+| **Better Dungeons** | Multi-room dungeons with spawners, traps, and treasure rooms | Good early loot — iron, gold, enchanted books |
+| **Better Mineshafts** | Larger, multi-level mineshafts with support beams and loot caches | Rail, minecarts, ore samples |
+| **Better Strongholds** | End portal room is deeper. More libraries, prisons, and corridors | Enchanted books from libraries. Good mid-game exploration |
+| **Better Desert Temples** | Multi-room underground temple. Traps, puzzles, treasure vault | High-value loot in the vault room. Watch for pressure plates |
+| **Better Jungle Temples** | Vertical temple with multiple challenge rooms. Redstone puzzles | Unique loot from solving puzzles. Opening the vault disarms the final trap |
+| **Better Ocean Monuments** | Redesigned with new rooms and challenges. More elder guardians | Better sponge room loot, treasure blocks |
+| **Better Witch Huts** | Expanded hut on stilts with potion lab underneath | Brewing supplies, potions, redstone |
+| **Better Nether Fortresses** | Larger, with distinct districts (blaze, wither skeleton, strider). Bridges connect sections | Nether wart, blaze rods, wither skeleton skulls |
+| **Better End Island** | Void terrain is more interesting. Small structures around the main island | End city loot, chorus plants |
 
-A twilight dimension. Build a portal in a 2x2 pool of water surrounded by flowers and throw a diamond in.
+#### Structory + Towns & Towers + Additional Structures
 
-- **Progression**: Each boss unlocks the next area — Naga → Lich → Minoshroom → Hydra → Ur-Ghast → Snow Queen → Final Castle
-- **Loot**: Unique weapons, tools, and armor from each boss
-- **Biomes**: Enchanted forest, firefly forest, twilight swamp, dark forest, snowy forest, highlands
+Hundreds of hand-crafted structures spawn across the Overworld. Some are small (camps, shrines), others are large (castles, towers, walled towns). Villages generate with unique architecture from Towns & Towers — each biome style gets its own building designs.
 
-### Deeper and Darker
+**What to do**: Explore! Mark interesting structures on your map (Xaero's: add waypoints with `Ctrl+Left Click` on the fullscreen map). Return to promising ones with an Explorer's Compass.
 
-The "Otherside" dimension. Requires a Warden Heart (Warden drop) to enter:
-- 4 new biomes, 8 new mobs, miniboss
-- Sculk transmitter (Elytra upgrade)
-- Warden-themed armor and tools
+#### Explorer's Compass — Navigation Tool
+
+The Explorer's Compass is essential for finding specific biomes and structures:
+
+1. **Craft**: 1 compass + 4 iron ingots in a + pattern
+2. **Right-click** to open the GUI
+3. **Search tab**: Type a biome or structure name to filter. Supports partial matching — "cherry" finds all biomes with "cherry" in the name
+4. **Select an entry**: The compass immediately points toward the nearest instance of that biome/structure. Distance in blocks is shown
+5. **Follow the arrow**: Hold the compass in your main hand and walk. The arrow updates in real-time
+6. **Waypoint sync**: When you find the target, add a waypoint in Xaero's map (fullscreen map → Ctrl+Left Click)
+
+**Keybinding note**: The compass does not have its own keybind by default. Craft it, hold it, right-click. If right-click does nothing, check Controls → Explorer's Compass for a conflicting keybind.
+
+### The Aether — Sky Dimension
+
+A sky dimension floating above the clouds. It's safe, beautiful, and offers a gentle adventure curve.
+
+#### Portal Building
+
+1. Gather **10-14 glowstone blocks** (found in the Nether, or from wandering traders)
+2. Build a rectangular frame (4×5 minimum, like a Nether portal) using glowstone
+3. Fill the inside with a **water bucket** (right-click with water inside the frame — one bucket is enough; unlike the Nether, it doesn't consume the source)
+4. Step through. You'll ascend into the Aether
+
+**Troubleshooting**: If the portal doesn't activate, check:
+- The frame must be at least 4 blocks wide × 5 blocks tall (interior)
+- Glowstone blocks only (not glowstone lamps or other light blocks)
+- You must fill the frame with a water source block, not flowing water
+
+#### What to Do
+
+**Phase 1 — Arrival**: You spawn on a sky island. Your tools and weapons work fine — bring them from the Overworld. Explore surrounding islands. Key early resources:
+- **Ambrosium** — Aether's coal equivalent. Shoots light, powers items
+- **Zanite** — Aether's iron equivalent. Mining level increases with durability loss (weaker zanite tools mine higher tiers)
+- **Aerwhales** — Passive floating whales. Fleece drops for decorative blocks
+
+**Phase 2 — Gold Dungeon**: Find a bronze dungeon (tower with bronze block roof). Defeat the **Slider** (a moving block boss — hit it when it's blue, avoid when red). Loot the bronze treasure chest for **Golden Amber** and access to the next tier.
+
+**Phase 3 — Silver Dungeon**: Deeper in the Aether. More dangerous mobs. Defeat the **Valkyrie Queen** for the **Valkyrie tools** — flight-enabled melee weapons. Key loot:
+- **Gravitite** — floats upward when right-clicked, falls when sneak-right-clicked. Used for the best Aether gear
+- **Valkyrie Lance** — long-reach throwing weapon
+- **Aechor Petal** — poison source for arrows
+
+**Phase 4 — Endgame**: The final Aether boss requires exploring the highest crystal islands. The **Sun Spirit** is the ultimate challenge — bring fire resistance.
+
+**Tip**: The Aether isn't required for any other dimension or tech progression. Visit when you want a change of pace. Your Mekanism gear works fine here — with the MekaSuit, you can trivialize all Aether combat.
+
+### Twilight Forest — Progression Dimension
+
+A twilight-dimension with a strict boss progression system. Each boss kill unlocks the next area. The dimension is dark, enchanted, and full of maze-like structures.
+
+#### Portal Building
+
+1. Find a 2×2 pool of water (any depth, natural or player-dug)
+2. Surround it with flowers (12 total — one per block on the perimeter of the 2×2. Any flowers work: dandelions, poppies, tulips, etc.)
+3. Throw a **diamond** into the water pool
+4. Lightning strikes the pool. Step into the water to descend into the Twilight Forest
+
+**Note**: The portal is one-way down. To return, craft a **Twilight Portal** block or use a Waystone (place one in the Twilight Forest as soon as you arrive).
+
+#### Boss Progression
+
+The dimension locks areas behind boss kills. A status screen (accessible from your inventory) shows which bosses you've defeated and which areas are unlocked:
+
+| Order | Boss | Location | Strategy | Key item unlock |
+|-------|------|----------|----------|-----------------|
+| 1 | **Naga** | Naga Courtyard (stone arena in the forest) | Melee boss — strafe its charges, hit the tail segment | Access to Lich Tower |
+| 2 | **Lich** | Lich Tower (tall stone tower) | Ranged fight — dodge projectiles, hit during cooldown. His shield reflects projectiles | Naga/Lich loot opens Twilight Swamp |
+| 3 | **Minoshroom** | Labyrinth (underground mushroom maze) | Mob in a maze — find the minotaur room, kill it, grab the Meef Stroganoff | Meef Stroganoff is a food item. Opens Firefly Forest |
+| 4 | **Hydra** | Hydra Lair (swamp arena, three heads) | Three-headed fire-breathing dragon. Dodge fireballs, melee the heads. Hydra drops **Fiery Tears** | Fiery Tears enable Ur-Ghast fight |
+| 5 | **Ur-Ghast** | Dark Tower (tall dark brick tower in Dark Forest) | Flying ghost boss in a dark tower. Shoot its tentacles, then the main body. Dark Forest has a blindness effect — bring milk | Opens Snowy Forest + Highlands |
+| 6 | **Snow Queen** | Aurora Palace (ice castle in the Snowy Forest) | Ice-themed arena with pillars. Push her into pillars to break her shield. Avoid ice arrows | Opens Final Castle |
+| 7 | **Final Castle** | Castle (Highlands) | Multi-boss fight in the final castle. Requires weapons from all prior bosses | Endgame Twilight loot, includes the **Giant's Pick** (diamond-tier, 5×3 mining area) |
+
+#### Key Items to Craft/Find
+
+- **Ironwood** gear — smelt ironwood ingots from iron + magic beans. Good starter armor
+- **Fiery** gear — craft with fiery ingots (iron + blaze powder). Good mid-tier weapons
+- **Knightmetal** — from the Lich Tower. Decent armor
+- **Phantom** armor — allows creative flight for short bursts. Crafted from phantom membranes dropped by Ur-Ghast's tentacles
+- **Giant's Pick** — mines a 5×3×5 area. From the Final Castle
+
+#### Navigation Tips
+
+- The Twilight Forest is **always twilight** — no sunlight, no day/night cycle. Mobs can spawn any time
+- Place **Waystones** frequently — the dimension is large and you'll revisit areas
+- The **Twilight Forest Maze Map** (crafted from paper + torch) reveals the layout of mazes and castles
+- Bring **milk buckets** for the Dark Forest blindness effect
+- Your AE2 wireless terminal, Mekanism gear, and Create tools all work in the dimension
+
+### Deeper and Darker — The Otherside
+
+A deep-dark-themed dimension accessed through the Deep Dark. It's ominous, quiet, and filled with sculk.
+
+#### How to Enter
+
+1. Find a **Deep Dark** biome in the Overworld (deep underground, usually at Y=-40 or below)
+2. Locate an **Ancient City** (use the Explorer's Compass — search "ancient city" structure)
+3. Find and kill the **Warden** (the blind, sound-seeking boss of the Deep Dark). It drops a **Warden Heart**
+4. Craft: Warden Heart + 8 sculk blocks → **Otherside Portal Catalyst** (check JEI for exact recipe)
+5. Build a frame of **reinforced deepslate** (at least 4×5 interior). Activate it by right-clicking the portal catalyst on the frame
+6. Step through
+
+**Warden strategy**: The Warden detects by sound. Use wool blocks to silence your footsteps. Sneak near sculk shriekers (don't trigger them). Throw snowballs or projectiles to distract it. Hit and run — it has 500 HP but slow attacks.
+
+#### What to Expect
+
+- **4 new biomes** — sculk forests, frozen deep, ancient cities expanded, new cave types
+- **8 new mobs** — sculk-infected variants, stalker (ranged attacker), shriek worm (ambush), and the **Sculk Leech** (heals when dealing damage)
+- **Miniboss**: The **Shattered Warden** — stronger Warden variant in the deepest areas. Drops **Sculk Transmitter** components
+- **Key loot**: **Sculk Transmitter** — an Elytra upgrade that allows teleportation mid-flight. Combine with an Elytra at a smithing table
+
+**Gear**: Warden-themed armor and tools are available. They're roughly equal to diamond but with unique abilities (sound-based attacks, silence fields). A viable alternative tech path if you're tired of strip-mining for diamonds.
+
+**Difficulty**: Harder than the Aether, easier than Twilight Forest's Dark Forest. Come with at least iron-tier armor and a decent weapon. Bring blocks to pillar up and escape corners.
 
 ### End Overhaul
 
-After defeating the Ender Dragon, the End becomes a full dimension:
+After you defeat the Ender Dragon, the End becomes a full dimension worth exploring.
 
-- **BetterEnd NeoForge**: 24+ new biomes, new mobs, gear, tools, building blocks
-- **Nullscape**: Alien/void landscapes — floating islands, purple skies, void fog
-- **Moog's End Structures**: Towers, ruins, dungeons throughout the End
-- **Ender's Delight**: New food from End ingredients
+#### What Changes
+
+**BetterEnd NeoForge** adds 24+ new biomes to the End, transforming it from a barren void into a diverse alien landscape:
+
+| Biome type | Description | Notable resources |
+|-----------|-------------|-------------------|
+| **Floating islands** | Large islands with unique vegetation. End lakes, end moss | New wood types, building blocks |
+| **Crystal caves** | Underground caverns with glowing crystals | Crystal materials for tools/gear |
+| **Mushroom fields** | Giant end-themed mushrooms | Magic-related crafting materials |
+| **Ice biomes** | Frozen wastelands on the edge of the End | — |
+| **Chorus forests** | Dense chorus plant forests | Chorus flowers, new food |
+
+**Nullscape** overlays alien/void landscapes — purple skies, void fog, floating blackstone islands. It transforms the empty void between main islands into something that looks like space.
+
+**Moog's End Structures** adds towers, ruins, and dungeons across the End — many with loot better than vanilla End cities.
+
+**Ender's Delight** adds food that can be cooked from End ingredients — gives useful status effects for End exploration.
+
+#### Progression
+
+| Phase | Activity | Reward |
+|-------|----------|--------|
+| **Post-Dragon** | Explore the outer End islands. BetterEnd biomes spawn here | New materials, tier-appropriate gear |
+| **Mid-End** | Tackle Moog's structures. Find hidden rooms and bosses | Unique weapons and loot |
+| **Endgame End** | Find the rarest biomes and build an End base | All materials needed for top-tier End gear |
+
+**Tip**: Set up a Waystone in the End as soon as you arrive. Build a small AE2 subnet with a wireless terminal to access your main base storage while exploring.
 
 ---
 
 ## Wave 3 — Equipment Magic & RPG
 
-Every weapon can roll with random affixes, every accessory provides a unique ability, and a skill tree gives every action meaning.
+Every weapon can roll with random affixes, every accessory provides a unique ability, and a skill tree gives every action meaning. This wave makes you **feel** your character grow alongside your tech progression.
 
 ### Install
 
 See [MODLIST-V3.md](./MODLIST-V3.md#wave-3--equipment-magic--rpg). Install all at once.
 
-### Skill Tree
+### Skill Tree (RPG Series) — Persistent Character Growth
 
-Every action earns XP. Level up, spend points on attributes (strength, vitality, agility, magic, defense). Works alongside every other wave.
+Every action in the game earns XP. As you level up, you earn skill points to spend on permanent stat bonuses. This works alongside everything else — mining ore, killing mobs, crafting items, cooking food, exploring new biomes.
 
-**Keybind**: Check Controls → Skill Tree for the skill tree GUI keybind. Set it to something convenient (e.g., `P`).
+#### Getting Started
 
-### Simply Swords
+1. **Set the keybind**: Controls → Skill Tree → set a key you'll remember (e.g., `P` for "powers")
+2. Press the key to open the skill tree GUI
+3. You'll see attributes organized in a tree layout
 
-60+ unique weapons with passive/activated abilities. Drop from mobs (~2% rate) and chests. Each one feels different — scythes heal on kill, rapiers shred armor, hammers knock back entire groups, spears reach further.
+#### Attribute Categories
 
-**Weapon categories**: Heavy weapons (greathammer, greatsword) → slow, high damage. Medium weapons (longsword, katana) → balanced. Light weapons (rapier, dagger) → fast with debuffs. Polearms (spear, halberd) → reach advantage, throwable.
+| Attribute | Effect | Who benefits |
+|-----------|--------|-------------|
+| **Strength** | +melee damage, +mining speed | Everyone — more damage and faster mining |
+| **Vitality** | +max HP, +natural regen | All players — survival is always useful |
+| **Agility** | +movement speed, +attack speed | Combat-focused players, kiting bosses |
+| **Magic** | +spell damage, +mana regen | If you use Ars Nouveau or spell mods |
+| **Defense** | +armor toughness, +damage reduction | Tank playstyle |
 
-**Pro tip**: Hold `Ctrl` while hovering over a weapon to see its ability description.
+**How XP works**: Every ore you mine, every mob you kill, every item you craft, every crop you harvest generates XP. The amount scales with the action's complexity. Smelting 100 iron ingots gives more XP than smelting 1.
 
-### Apotheosis
+**Tip**: The skill tree is lowest-investment, highest-return mod in this wave. Set the keybind and start earning XP from minute 1.
 
-Adds Diablo-style loot to all gear:
+### Simply Swords — Unique Weapons
 
-- **Rarity tiers**: Common → Uncommon → Rare → Epic → Mythic. Higher rarities have more affix slots
-- **Random affixes**: Every gear piece can roll with bonus stats — damage, attack speed, movement speed, crit chance, resistance, spell power
-- **Gem socketing**: Find rough gems as drops. Use a **gem cutting station** to cut them into socketable gems. Apply to gear at a **gem socketing table**
-- **Enchanting overhaul**: The vanilla enchanting table is replaced with a more powerful version. Higher levels, new enchantments, better books from the library
-- **Boss modifiers**: Boss mobs can spawn with random modifiers, making them harder but dropping better loot
+60+ unique weapons with passive and activated abilities. Each weapon drops from mobs (~2% drop rate) and appears in chests. No two feel the same.
 
-**What to do early**: Check every gear drop for rarity. Socket rough gems into your tools. Explore the new enchanting system.
+#### Weapon Categories
 
-**What to do late**: Hunt for Mythic rarity items. Socket flawless gems. Apply end-game affixes.
+| Category | Examples | Playstyle |
+|----------|---------|-----------|
+| **Heavy** | Greathammer, Greatsword, Glaive | Slow, high damage, knockback. Two-handed. Best for tanky builds |
+| **Medium** | Longsword, Katana, Claymore | Balanced speed and damage. One-handed or two-handed. Versatile |
+| **Light** | Rapier, Dagger, Sai, Cutlass | Fast attack speed, low damage per hit. Armor penetration on rapiers. Stacking debuffs on daggers |
+| **Polearms** | Spear, Halberd, Pike | Extended reach. Can hit from 2-3 blocks away. Throwable (spears) |
+| **Special** | Scythe (AoE sweep), Soul Harvester (soul-steal) | Unique mechanics — scythes hit all mobs in an arc |
 
-### Relics RPG
+#### How to Find Weapons
 
-Legendary accessories that go in your Curios slots (ring, amulet, belt, gloves, back, charm). Each has a unique ability:
+- **Mob drops**: Every hostile mob has ~2% chance to drop a Simply Swords weapon. Zombies drop common, skeletons drop ranged-adjacent, creepers drop explosives-adjacent
+- **Chests**: Dungeon chests, mineshaft chests, YUNG's structure chests all have higher roll chances
+- **Trading**: Some weapons can be traded from weaponsmith villagers
+- **Bosses**: Higher guaranteed drop chance from Twilight Forest bosses and Cataclysm bosses
 
-| Relic | Ability |
-|-------|---------|
-| Monkey Talisman | Double jump |
-| Holy Water | Cleanses negative effects |
-| Lucky Coin | Increases luck/loot quality |
-| Captain's Hook | Pulls entities toward you |
-| Sacred Wardstone | Damage absorption shield |
+#### Using Weapon Abilities
 
-**Where to find**: Common relics from mobs and basic chests. Uncommon from dungeon chests. Rare from YUNG's structures. Epic from endgame content.
+Hold `Ctrl` while hovering over a weapon in your inventory to see its ability description. Abilities include:
 
-### Runes
+| Ability | Effect | Found on |
+|---------|--------|----------|
+| Whirlwind | Spin attack hitting all nearby enemies | Greathammer, Greatsword |
+| Impale | Hold to charge, release for a piercing thrust | Spear, Pike |
+| Backstab | +300% damage when attacking from behind | Dagger, Sai |
+| Lifesteal | Heal for 10% of damage dealt | Soul Harvester, Scythe |
+| Execute | +50% damage to targets below 30% HP | Axe variants |
+| Slowness | On-hit slow effect for 3 seconds | Ice-themed weapons |
 
-Socketable runes for weapons/tools. Each rune adds an effect — fire, ice, lightning, poison, lifesteal. Swappable between fights.
+**Tip**: The **Explorer's Compass** can find structures with higher weapon chest rates. Set up a weapon hunt route: find a YUNG's dungeon → loot it → compass to the next one.
 
-**How to use**: Find runes in loot or craft at a **Rune Altar**. Use a **Rune Pouch** (craftable) to store them all. Apply runes to weapons at the Rune Altar.
+### Apotheosis — Loot & Enchanting Overhaul
 
-**Keybind**: Check Controls for Open Rune Pouch.
+Apotheosis transforms every gear drop and enchantment in the game. This is the single largest change to how gear feels.
+
+#### Rarity System
+
+Every item that drops can roll with a rarity:
+
+| Rarity | Affix slots | Identifying color | Drop source |
+|--------|-------------|-------------------|-------------|
+| Common | 0 | White | Basic mobs, mining |
+| Uncommon | 1 | Yellow | Hostile mobs, basic chests |
+| Rare | 2 | Cyan | Dungeon chests, mini-bosses |
+| Epic | 3 | Purple | Bosses, late-game chests |
+| Mythic | 4 | Gold/Magical | Endgame bosses, Cataclysm bosses |
+
+Higher rarities have more **gem sockets** and roll better **affixes** (bonus stats).
+
+#### Affixes — Random Stats on Gear
+
+Every armor piece, weapon, and tool can roll with bonus stats. Examples:
+
+| Affix | Effect | Gear type |
+|-------|--------|-----------|
+| Ruthless | +crit damage, +crit chance | Melee weapons |
+| Arcane | +spell damage, +mana | All weapons |
+| Sturdy | +armor, +knockback resistance | Armor |
+| Nimble | +movement speed, +attack speed | Boots, leggings |
+| Plentiful | +mining speed, +fortune | Tools |
+| Titanic | +max HP, +natural regen | Chestplate |
+
+**Tip**: Check every gear drop. A Common helmet with a good affix might be better than an Epic one with useless stats. Disenchant unwanted gear at a salvaging table for gem dust.
+
+#### Gem System
+
+Gems are socketable items that add permanent stats to your gear:
+
+| Gem tier | How to get | Effect |
+|----------|-----------|--------|
+| **Rough** | Drops from mobs and chests | Basic stat boost |
+| **Cut** | Rough gem + gem cutting station | +50% stat value. Requires gem dust |
+| **Flawless** | 2 cut gems of same type + gem cutting station | +100% stat value. Requires more dust |
+
+**Gem cutting station**: Craft a gem cutting station (check JEI). Place a rough gem in the left slot, gem dust in the center, collect a cut gem from the right. Gem dust comes from breaking unwanted cut gems in a crafting grid.
+
+**Gem socketing table**: Craft a gem socketing table (check JEI). Place your item in the center, a gem in the socket slot. Each gear piece has limited sockets — expand with socketing tools.
+
+#### Enchanting Overhaul
+
+The vanilla enchanting table is replaced. New features:
+
+- **Higher level cap**: Enchantments can go past vanilla limits. Sharpness VIII is possible
+- **Better bookshelf scaling**: Bookshelves now have tiers. Higher-tier bookshelves enable higher enchantment levels
+- **Library of Alexandria**: Craft one (expensive — requires diamonds, obsidian, and enchanted books). Stores all your enchanted books in one block-size inventory
+- **New enchantments**: Apotheosis adds 30+ new enchantments. Check JEI for full list
+
+#### Boss Affixes
+
+Boss mobs can spawn with random modifiers displayed under their health bar:
+
+| Modifier | Effect | Strategy |
+|----------|--------|----------|
+| Tough | +50% HP, damage reduction | Bring high-damage weapons and Lifesteal |
+| Blinding | Blinds hit players | Wear blindness-resistant gear or bring milk |
+| Clumsy | Disarms players on hit | Use speed — don't get hit |
+| Plagued | Inflicts poison/wither on hit | Bring antidotes and regeneration |
+| Huge | 2× size, more knockback | Stay mobile. Don't get cornered |
+| Chaotic | Random effects per hit | Unpredictable — bring all potions |
+
+**Tip**: Boss affixes are the main source of Mythic gear. Hunt for affixed bosses when you need endgame upgrades.
+
+### Relics RPG — Legendary Accessories
+
+Relics are unique accessories that go in your **Curios slots**. You have 6 Curios slots by default: Ring (2), Amulet (1), Belt (1), Gloves (1), Back (1), Charm (1). Right-click to open your Curios inventory — default keybind set it to `Y`.
+
+| Relic | Slot | Ability | Where to find |
+|-------|------|---------|---------------|
+| **Monkey Talisman** | Charm | Double jump (press jump again mid-air) | Vanilla dungeon chests |
+| **Holy Water** | Charm | Right-click to cleanse all negative effects | Desert temples, churches |
+| **Lucky Coin** | Charm | +luck for better loot drops | Mineshaft chests, pillager outposts |
+| **Captain's Hook** | Gloves | Right-click to pull entities toward you | Shipwrecks, ocean ruins |
+| **Sacred Wardstone** | Amulet | Absorbs damage, breaks after absorbing X damage | Stronghold chests |
+| **Magic Mirror** | Back | Right-click to teleport to spawn/home point | End cities, libraries |
+| **Heart of the Void** | Ring | +max HP, slow regen | Nether fortresses, bastions |
+| **Blazing Feather** | Back | +15% movement speed | Jungle temples, pagodas |
+| **Drowned Belt** | Belt | Underwater speed boost, +swim speed | Ocean monuments, shipwrecks |
+
+**Stacking**: You can wear multiple relics of different types. Two rings = two ring relics. Find duplicates to trade or salvage.
+
+**Finding relics by structure**: Use the Explorer's Compass → select a YUNG's structure → loot it → compass to the next. Relics have higher drop rates in YUNG's overhauled structures than vanilla ones.
+
+### Runes — Socketable Weapon Modifiers
+
+Runes are socketable modifications for weapons and tools. Unlike Apotheosis gems (permanent), runes are **swapable** — you can change them between fights.
+
+#### How to Get Runes
+
+- **Loot chests** in any structure
+- **Craft at a Rune Altar** — place 4 cobblestone in a 2×2, top with a lapis block, right-click with a rune fragment. Check JEI for exact recipes
+- **Mob drops**: Runes have a low chance to drop from any hostile mob
+
+#### Rune Types
+
+| Rune | Effect | Best on |
+|------|--------|---------|
+| Fire Rune | On-hit fire damage (3 seconds) | Fast weapons (daggers, rapiers) for stacking burn |
+| Ice Rune | On-hit slow (2 seconds) | Kiting weapons (spears, scythes) |
+| Lightning Rune | Chance on-hit to strike lightning | Heavy weapons (single big hits) |
+| Poison Rune | On-hit poison (5 seconds) | Dot builds, boss kiting |
+| Lifesteal Rune | Heal 5% of damage dealt | Tank builds, slow weapons |
+| Critical Rune | +10% crit chance | Medium weapons (balanced speed/crit synergy) |
+
+#### Using Runes
+
+1. Craft a **Rune Pouch** (leather + string + lapis) — stores all your runes. Set a keybind for it (Controls → Rune Pouch)
+2. Place your weapon and a rune at a **Rune Altar** (craft: 4 stone + 1 lapis block)
+3. The rune is applied. The weapon gains the rune's effect
+4. To swap: place the weapon back at the Rune Altar with a different rune
+
+**Tip**: Keep 2-3 different rune loadouts in your Rune Pouch. Switch between Fire (general combat), Lifesteal (boss fights), and Ice (kiting tough mobs).
 
 ---
 
 ## Wave 4 — Food, Farming & Comfort
 
-Farmer's Delight brings the cooking system you know from V1, now on NeoForge.
+Farmer's Delight brings a full cooking system. This wave is entirely optional — you can survive on baked potatoes forever — but cooking gives powerful status effects, better healing, and a cozy kitchen to build around.
 
 ### Install
 
 See [MODLIST-V3.md](./MODLIST-V3.md#wave-4--food-farming--comfort).
 
-### Farmer's Delight
+### Farmer's Delight — Cooking Hub
 
-Craft a **cutting board** (knife + planks) — your primary food prep tool. Use it to chop ingredients. Craft a **cooking pot** — place over a heat source (campfire, stove). Right-click to open the GUI, add ingredients, wait for the progress bar, collect your meal.
+Farmer's Delight adds new crops, a cutting board for ingredient prep, a cooking pot for multi-ingredient meals, and kitchen storage.
 
-**Early meals**: Tomato soup (tomato + bowl), chicken sandwich (cooked chicken + bread), mixed salad (lettuce + tomato + cucumber).
+#### New Crops & Farming
 
-**Stove**: Craft a stove (bricks + iron). Place the cooking pot on top — it cooks faster than over a campfire.
+| Crop | Grows on | What it's for |
+|------|----------|--------------|
+| **Tomato** | Farmland. Bush grows, pick when red | Soups, sandwiches, salads |
+| **Cabbage** | Farmland. Full head when ready | Coleslaw, cabbage wraps, ferments |
+| **Onion** | Farmland. Pick when shoots show | Savory dishes, soups |
+| **Rice** | Grows in shallow water (1 block deep on dirt/mud) | Hearty meals, sushi (in addons) |
 
-**Kitchen storage**: Craft cabinets and drawers (check JEI for recipes) to organize your ingredients.
+**Right Click Harvest** (from Wave 0) works on all these crops — right-click to harvest, the plant stays for regrowth.
 
-**Progression**: Cutting board → Cooking pot → Stove → All recipes visible in JEI.
+**Wild crops**: Found in the wild — look for **wild tomatoes** (plains/forests), **wild cabbage** (beaches), **wild onions** (taiga), and **wild rice** (swamps). Breaking them gives the seed item.
 
-### Brewin' And Chewin'
+#### Cutting Board — Ingredient Prep
 
-Fermentation and drinks. Grow hops, barley, grapes.
+Craft: 1 knife + 2 planks (horizontal row)
 
-**Brewing process:**
-1. Craft a **brewing station** — place it, add water and ingredients
-2. Create your base mixture (wort, must, mash)
-3. Transfer to an **aging barrel** — the longer it ages, the stronger the effect
-4. Bottle the finished drink
+Place the cutting board on the ground. Right-click with the cutting board in hand after placing it to open the UI, or just right-click the placed cutting board.
 
-**Drink effects**: Beer (resistance), wine (haste), mead (speed), whiskey (short strength boost).
+**How it works**:
+1. Place an ingredient in the left slot
+2. The cutting board processes it (chops, slices, peels)
+3. Collect the output from the right slot
 
-**Aging tip**: Check your barrels every few in-game days. Fully aged drinks give the best buffs.
+**Essential recipes** (always check JEI — many ingredients have cutting board recipes):
+
+| Input | Output | Use |
+|-------|--------|-----|
+| Any cooked meat | Meat strips | Sandwiches, salads |
+| Cabbage | Cabbage leaves | Wraps, coleslaw |
+| Bread | Bread slices | Toast, sandwiches |
+| Carrot | Carrot slices | Salads, soups |
+| Apple | Apple slices | Desserts, snacks |
+| Cheese (if available) | Cheese wedge | Hearty meals |
+
+**Tip**: A knife in your off-hand while chopping lasts longer (the cutting board uses the knife's durability). An iron knife lasts for dozens of chops.
+
+#### Cooking Pot — Meal Preparation
+
+Craft: 2 iron ingots + 2 planks + 1 bowl (check JEI for exact shape)
+
+Place the cooking pot over a **heat source**. Valid heat sources (from best to worst):
+- **Stove** — fastest cooking. Craft: 4 bricks + 4 iron nuggets
+- **Campfire** — medium speed. Craft: 3 logs + 3 sticks + 1 coal
+- **Lava** — slowest. The pot must sit directly above the lava source block
+- **Torch/Campfire block below** — does not work. Needs a proper heat block
+
+**Cooking process**:
+1. Right-click the pot to open the GUI
+2. Fill the **water slot** (bucket or bottle on the left side)
+3. Add ingredients (up to 6) in any order
+4. Wait for the progress bar to fill
+5. Collect your meal — most meals give **6 servings** with bowl stacking
+
+**Meal categories** (check JEI for full list):
+
+| Category | Example | Effect |
+|----------|---------|--------|
+| **Soups** | Tomato soup, vegetable soup, beef stew | Good saturation, easy ingredients |
+| **Sandwiches** | Chicken sandwich, egg sandwich, BLT | On-the-go eating, high saturation |
+| **Salads** | Mixed salad, coleslaw, fruit salad | Refreshing, good for hot biomes |
+| **Pasta** | Pasta with meat sauce, pasta with veggies | Filling, complex ingredients |
+| **Rice meals** | Rice pudding, fried rice | Requires rice farming |
+
+#### Kitchen Storage
+
+Craft **oak/pantry cabinets** (check JEI for recipe — varies by wood type). These function like chests but match your kitchen aesthetic. They hold as much as a chest.
+
+**Tip**: Set up your kitchen near your AE2 network. On the one hand, you can cook manually. On the other, your ME drive can stock ingredients and meals.
+
+### Brewin' And Chewin' — Drinks & Fermentation
+
+Adds alcohol brewing with aging mechanics. Grow hops, barley, and grapes on standard farmland.
+
+#### Brewing Station — Fermenting Base
+
+Craft: Check JEI (uses a barrel-like recipe)
+
+1. Place the **brewing station** (function block, not decoration)
+2. Right-click to open the GUI
+3. Add **water** + your main ingredient:
+   - **Barley** → beer base (wort)
+   - **Grapes** → wine base (must)
+   - **Honey** → mead base
+   - **Potatoes** → spirits base (mash)
+4. Wait for fermentation to complete (the station processes the mixture)
+5. Collect the **fermented mixture** — it's now ready for aging
+
+#### Aging Barrel — Flavor Development
+
+Craft: Check JEI (wooden barrel)
+
+1. Place the aged mixture in the **aging barrel**
+2. Right-click to seal it
+3. Every in-game day, the drink ages one stage:
+   - **Young** → **Matured** → **Aged** → **Vintage** (4 stages)
+4. Each stage increases the drink's **status effect potency and duration**
+5. Break the barrel to collect the finished drink
+
+**Optimal aging**: Let everything reach **Aged** (stage 3). Only push to Vintage (stage 4) for special occasions — the improvement is minor but the waiting is long.
+
+#### Drink Effects
+
+| Drink | Effect at Matured | Effect at Vintage |
+|-------|-------------------|-------------------|
+| **Beer** | Resistance I (2 min) | Resistance II (5 min) |
+| **Wine** | Haste I (2 min) | Haste II (4 min) |
+| **Mead** | Speed I (2 min) | Speed II (4 min) |
+| **Whiskey** | Strength I (30 sec) | Strength II (1 min). Short but strong |
+| **Vodka** | Night Vision (3 min) | Night Vision + Fire Resistance (5 min) |
+
+**Practical use**: Brew a batch of each, age them all to Matured/Aged, and keep them in your Curios backpack or kitchen storage. Pop a drink before boss fights for free status effects. Mead stacks with Swiftness potions for even more speed.
+
+#### Bottle Return
+
+After drinking, you get an **empty bottle** back. Reuse it at the brewing station — no glass waste.
 
 ---
 
 ## Wave 5 — Combat & Mobs
 
-Your powerful gear finally has something worthy to fight.
+Your powerful gear finally has something worthy to fight. This wave adds better combat mechanics, tougher mob variants, epic boss fights, and roguelike dungeon structures.
 
 ### Install
 
 See [MODLIST-V3.md](./MODLIST-V3.md#wave-5--combat--mobs).
 
-### Better Combat
+### Better Combat — Weapon Feel
 
-Makes every weapon feel unique — different weapons have different reach (daggers short, spears long), sweeping animations (swords arc, axes slash, spears thrust), and attack speed (daggers fast, greatswords slow). Enhances Simply Swords weapons perfectly.
+Better Combat changes how every weapon **feels** in your hands. It replaces Minecraft's single-swing animation with weapon-specific movesets:
 
-**Config**: Mod Menu → Better Combat. Tweak reach, sweeping, and visual effects.
+| Weapon type | Speed | Reach | Animation | Best for |
+|-------------|-------|-------|-----------|----------|
+| Daggers | Very fast | 2 blocks | Quick stab | Debuff stacking, fast crit builds |
+| Swords | Fast | 3 blocks | Horizontal arc | General combat, crowd control |
+| Rapiers | Fast | 3.5 blocks | Thrust (ignore shields) | Shield-breaking, precision |
+| Greatswords | Slow | 4 blocks | Wide sweep | Group clearing, knockback |
+| Axes | Medium | 3 blocks | Overhead chop | Armor penetration, single target |
+| Spears | Medium | 4.5 blocks | Forward thrust | Kiting, reach advantage |
+| Hammers | Slow | 3.5 blocks | Overhead slam | Knockback, stun |
+| Greathammers | Very slow | 4 blocks | Ground pound | AoE knockback, crowd control |
 
-### Mutant Monsters
+**Config**: Mod Menu → Better Combat. You can tweak:
+- **Reach distance** per weapon type (longer = hit farther, easier to hit)
+- **Sweep radius** (wider = hits more mobs)
+- **Attack speed** scaling
+- **Visual effects** (particles, trail colors)
 
-Mutant versions of vanilla mobs — Mutant Zombie, Skeleton, Creeper, Enderman. Each drops unique gear (Hulk Hammer, Mutant Skeleton Armor, Creeper Minion). Slightly tougher than vanilla but beatable with iron-tier gear. With your Epic Apotheosis gear, they're a satisfying challenge.
+### Mutant Monsters — Boss Variants
 
-**Config**: Mod Menu → Mutant Monsters → reduce spawn rate if they're too frequent.
+Mutant versions of vanilla mobs. Each is tougher than the original but drops unique gear. With your Epic+ Apotheosis gear, these are satisfying challenges rather than roadblocks.
 
-### L_Ender's Cataclysm
+| Mutant | Where it spawns | What to expect | Drops |
+|--------|----------------|----------------|-------|
+| **Mutant Zombie** | Overworld, night | Slower but tankier. Ground-pound AoE attack. Summons regular zombies | Hulk Hammer (AoE knockback weapon) |
+| **Mutant Skeleton** | Overworld, night | Rapid-fire arrows that inflict weakness. Teleports to escape melee | Mutant Skeleton Armor (projectile resistance) |
+| **Mutant Creeper** | Overworld, night | Explosion radius 2× larger. Drops mini-creepers on death that also explode | Creeper Minion (craft a creeper that follows and explodes on command) |
+| **Mutant Enderman** | The End | Teleports more aggressively. Throws blocks. Takes reduced damage from projectiles | Enderman gear (teleportation-related items) |
 
-Epic boss fights. Each boss has unique mechanics and drops powerful gear. Bosses are **opt-in** — you summon them:
+**Spawn rate config**: If mutants are too frequent (or too rare), adjust in Mod Menu → Mutant Monsters → spawn weight.
 
-| Boss | Location | How to summon | Drops |
-|------|----------|---------------|-------|
-| Leviathan | Deep ocean | Build a summoning altar in deep ocean biomes | Leviathan blade, sea-themed gear |
-| Netherite Monstrosity | Nether | Find its lair in the Nether wastes | Monstrosity tools, netherite gear |
-| Ender Guardian | End | Summon after defeating the Ender Dragon | Guardian weapons, ender armor |
-| Ignite | Nether fire area | Build a summoning structure | Fire-themed weapons |
-| Ancient Remnant | Desert pyramids | Find the summoning room | Ancient tools and relics |
+**Strategy**: Mutants are vulnerable to the same tactics as their vanilla versions. Mutant Zombie → kite. Mutant Skeleton → close distance fast. Mutant Creeper → ranged attacks. Mutant Enderman → water buckets and fire resistance.
 
-Each boss has custom animations and attack phases. Bring your best gear, food buffs, and potions.
+### L_Ender's Cataclysm — Epic Boss Fights
 
-### When Dungeons Arise
+Epic, hand-animated boss fights with unique mechanics and powerful loot. Each boss is **opt-in** — you must build a summoning structure or find a specific location.
 
-Roguelike combat structures scattered across the world — towers, castles, barracks, temples. Each has multiple floors with increasing difficulty. Loot scales with floor depth. Use the Explorer's Compass to find specific structures (select "Dungeons Arise" in the structure list).
+| Boss | Location | How to Summon | HP | Recommended Gear |
+|------|----------|---------------|-----|-----------------|
+| **Leviathan** | Deep ocean (Y < 40) | Build a summoning altar from prismarine + sea lanterns in a deep ocean biome. Right-click with a **Prismarine Shard** | ~200 HP | Diamond tier, Depth Strider boots, door trick (block line-of-sight projectiles) |
+| **Netherite Monstrosity** | Nether wastes | Find the lair structure (large nether brick building). Enter the central arena | ~300 HP | Full diamond/netherite, fire resistance potion |
+| **Ender Guardian** | End (outer islands) | Defeat the Ender Dragon first. Find the summoning platform on an outer island. Place an **Eye of Ender** in the pedestal | ~400 HP | End-game gear. Elytra + Slow Falling for arena edge |
+| **Ancient Remnant** | Desert | Find the Remnant structure (large desert pyramid variant). Enter the summoning room. Insert a **Nether Star** | ~350 HP | Blast protection enchantments. Bring blocks to pillar |
+| **Ignite** | Nether (basalt deltas) | Build a hollow obsidian sphere (5×5 interior). Place a **Blaze Rod** in the center. Wait 10 seconds | ~250 HP | Fire resistance required. Bring water buckets for arena |
+
+**General boss strategy tips:**
+1. **Scout the arena first** — know where the edges, pits, and hazards are
+2. **Bring food buffs** — Farmer's Delight meals + Brewin' And Chewin' drinks stack
+3. **Rune up** — apply Lifesteal or Ice runes for the fight
+4. **Set a Waystone nearby** — if you die, your grave holds items (Corail/Gravestone). Re-equip and re-engage
+5. **AE2 wireless terminal** — call in materials mid-fight if you need blocks, potions, or replacement gear
+
+#### Leviathan — Deep Ocean Boss
+
+- **Phase 1**: Charges at you. Dodge sideways, attack the body. It thrashes — jump over the shockwave
+- **Phase 2** (50% HP): Summons whirlpools. Stay out of them — they pull you under. Attack the head between whirlpool spawns
+- **Drops**: Leviathan Blade (trident-like weapon with water affinity), Sea-themed gear materials
+
+#### Netherite Monstrosity — Nether Boss
+
+- **Phase 1**: Slow melee swings. Attack the legs to slow it down
+- **Phase 2** (60% HP): Enrages — faster attacks, fire breath. Minecart rails on the floor? Not here. Sprint behind pillars to block line of sight
+- **Drops**: Monstrosity tools (efficient mining on netherite-level), Netherite gear upgrades
+
+#### Ender Guardian — End Boss
+
+- **Phase 1**: Ranged energy bolts. Dodge them — they track slightly. Hit the crystals on the arena walls to stun it
+- **Phase 2** (50% HP): Teleports around. Summons endermites. Break all crystals to lower its shield
+- **Phase 3** (20% HP): Enraged — faster teleports, energy nova. Pillar up to avoid the ground AOEs
+- **Drops**: Ender Guardian weapons (high damage), Teleportation gear
+
+#### Ancient Remnant — Desert Boss
+
+- **Phase 1**: Sandstorm attack — blinds you. Wear goggles or turn away. Attack during cooldown
+- **Phase 2** (40% HP): Sinks into sand, pops up elsewhere. Shoot the exposed weak point
+- **Drops**: Ancient tools with unique enchantability, Desert-themed gear
+
+#### Ignite — Fire Boss
+
+- **Phase 1**: Fireball barrage. Block with a shield or dodge behind pillars. Attack after each barrage
+- **Phase 2** (40% HP): Absorbs lava from the arena — stay on high ground. Attack when it emerges
+- **Drops**: Fire weapons (permanent fire aspect without enchantment), Blaze-themed gear
+
+### When Dungeons Arise — Roguelike Structures
+
+Large, multi-floor combat structures scattered across the Overworld. Each is a hand-built dungeon with increasing difficulty per floor.
+
+#### Structure Types
+
+| Structure | Floors | Difficulty | Biome | Loot |
+|-----------|--------|-----------|-------|------|
+| **Abandoned Temple** | 3 | Easy | Plains, forests | Iron gear, early rare items |
+| **Small Castle** | 4 | Medium | Plains, hills | Rare weapons, gold |
+| **Large Castle** | 6 | Hard | Mountains, extreme hills | Epic gear, diamonds |
+| **Barracks** | 2 | Easy | Any | Armor, shields |
+| **Scorched Fort** | 4 | Medium | Desert, badlands | Fire-related items |
+| **Warped Fortress** | 5 | Hard | Any (rare) | End-game gear, unique loot |
+| **Foundry** | 3 | Medium | Any underground | Ores, mining gear |
+| **Bandit Camp** | 1 | Easy | Forest, taiga | Early weapons, food |
+
+**Finding structures**: Craft an Explorer's Compass → select "When Dungeons Arise" in the structure type filter → select the specific structure.
+
+**Strategy**: Each floor has a mob spawner or boss spawn point. Clear floors systematically. Loot scales with floor depth — deeper floors in large castles have the best loot. Bring blocks to pillar up, torches to light hallways, and decent gear for the deeper floors.
+
+**Tip**: Structures are finite per world — once looted, they don't respawn unless you're far enough away for chunks to reset. Use the compass to find unvisited structures. Mark looted ones on your map.
 
 ---
 
 ## Wave 6 — Building & Decoration
 
-Tools and blocks to build the base you deserve.
+Tools and blocks to build the base you deserve. Every base deserves to look good — these mods give you the materials and tools to build without creative mode.
 
 ### Install
 
 See [MODLIST-V3.md](./MODLIST-V3.md#wave-6--building--decoration).
 
-- **Chipped**: Hundreds of block variants for every material. Use a **sawmill** (craft from any wood + iron) to create decorative variants. Different blocks have different sawmill recipes — experiment with JEI
-- **Supplementaries**: Vanilla+ decoration — jars for item storage display, signposts for directional signs, faucets for fluid flow, weather vanes for wind direction, item shelves for shelf display
-- **Macaw's**: Bridges, doors, roofs, windows, fences in every wood type. Each is crafted like the vanilla version but with the specific wood type
-- **Building Wands**: Right-click to open the wand GUI. Select a mode — **build wall** (creates a wall between two points), **build line** (creates a line), **fill area** (fills a 3D area). Left-click the first corner, right-click the second corner. Works with any block in your inventory
-- **Handcrafted**: Furniture — chairs, tables, shelves, desks, curtains, and more. Right-click to sit in chairs. Place items on tables and shelves for display
+### Chipped — Infinite Block Variants
+
+Chipped adds hundreds of decorative block variants for every material type. Every common block (stone, wood, glass, wool, terracotta, concrete, etc.) gets 8-50+ variants each.
+
+#### How to Use — The Sawmill
+
+1. **Craft a sawmill**: Any wood planks + iron ingot (check JEI for exact shape). It's a functional block, not decorative
+2. **Place the sawmill** on the ground
+3. **Right-click to open the GUI**
+4. Place a base block in the **left slot** (e.g., stone)
+5. The sawmill shows all available variants for that block type in the output panel
+6. Click one to craft it. It consumes the input block and produces the variant
+
+**Block types with many variants**:
+- **Stone**: Bricks, tiles, carved, pillars, panels, runed, chiseled, mosaic — 30+ total
+- **Glass**: All colors + clear, leaded, bordered, checkered, raised — perfect for windows
+- **Wood**: Bark, planks with grain variants, wooden panels, ornate carvings
+- **Wool & Carpet**: Woven, knitted, cross-stitched, patterned — for cozy floors
+- **Concrete**: Smooth, paneled, tiles, with borders
+- **Nether materials**: Glowstone, nether bricks, blackstone get many variants
+
+**Pro tip**: The sawmill preserves block IDs for AE2 compatibility. You can store Chipped variants in your ME drive like any other block. Use AE2's pattern provider to autocraft specific variants on demand.
+
+### Supplementaries — Vanilla+ Functional Decoration
+
+Supplementaries adds decoration blocks that serve a purpose:
+
+| Block | Function | How to use |
+|-------|----------|------------|
+| **Jar** | Stores 1 item visually (display) | Right-click with an item to put it inside. Right-click empty to take it out. Shows the item floating inside |
+| **Signpost** | Directional sign pointing to a named location | Right-click with a tag item to set the destination name. The signpost arm points toward that named Waystone or location |
+| **Faucet** | Fluid flow decoration. Connects to fluid tanks | Place above a fluid container. Right-click to toggle flow. Decorative but functional with a fluid mod |
+| **Weather Vane** | Shows wind direction and speed | Place outside. The vane rotates in real-time based on weather. Purely decorative |
+| **Item Shelf** | Wall-mounted shelf for displaying up to 3 items | Right-click with an item to place it on the shelf. Sneak-right-click to remove. Items sit visibly on the shelf |
+| **Rope** | Climbable rope, can be placed in mid-air | Right-click to place a rope knot. Add rope below by right-clicking with more rope. Climb like a ladder. Breaks when the top knot is broken |
+| **Flute** | Craftable instrument | Right-click to play a note. Decorative, but villagers react to it |
+
+**Practical builds**:
+- Kitchen: Item shelves for ingredient display, jars for flour/sugar, faucet over sink
+- Entrance: Signposts directing to "Mine", "Nether Portal", "Village"
+- Garden: Weather vane for realism, rope swing from a tree branch
+- Study: Jars with glowing items as lamps
+
+### Macaw's — Complete Building Set
+
+Macaw's adds structural building elements in every wood type. Five modules:
+
+**Macaw's Bridges**:
+- Craft: 6 slabs of the wood type + 1 stick in a bridge pattern
+- Place: Right-click to extend. Shift-right-click to shorten. Supports railings, torches on the side
+- Types: Straight bridge, rope bridge (no railings, more rustic)
+- All wood types: oak, spruce, birch, jungle, acacia, dark oak, mangrove, cherry, crimson, warped
+
+**Macaw's Doors**:
+- Adds **special doors** per wood type: glass door, slatted door, stable door (top half opens independently), cottage door, shop door, paper door
+- All crafted with matching wood + relevant materials (glass for glass doors, paper for paper doors)
+
+**Macaw's Roofs**:
+- Adds **roofing blocks** for every wood: roof slopes, ridge blocks, gutter blocks
+- Craft: 3 slabs in a triangle pattern for a slope piece
+- Place roofs by laying slope pieces side-by-side. The game auto-connects corners
+
+**Macaw's Windows**:
+- Window types: diamond pane, framed, barred, tropical, stained glass window
+- All crafted with glass + wood type. Place like normal panes
+- Can be combined with decorative glass from Chipped
+
+**Macaw's Fences**:
+- Variations beyond vanilla fences: picket fence, stockade fence, horse fence, wired fence, highley gate
+- Each with a distinct look — picket for suburban, stockade for medieval, wired for industrial
+
+**Building tip**: Use Macaw's roofs + Chipped stone variants + Macaw's windows for a cohesive base aesthetic. Create uses Macaw's trapdoors and fence gates for its kinetic builds, too.
+
+### Building Wands — Large-Scale Construction
+
+Building Wands lets you place many blocks at once. It's the closest thing to WorldEdit without a server plugin.
+
+**Crafting**: Stick + 2 blocks of the same type in a + pattern (check JEI — the blocks determine the wand tier; stone = basic, iron = better, diamond = best)
+
+**How to use**:
+1. **Right-click** the wand in your hand to open the **mode GUI**
+2. Select a mode from the menu:
+
+| Mode | What it does | When to use |
+|------|-------------|-------------|
+| **Build Wall** | Creates a wall between 2 clicked points | Enclosing a room, building a perimeter |
+| **Build Line** | Creates a 1-block-wide line between 2 points | Railings, borders, pathways |
+| **Fill Area** | Fills a 3D cuboid between 2 corners | Filling in a foundation, clearing a room |
+| **Build Circle** | Creates a ring of blocks | Towers, wells, circular rooms |
+| **Build Cylinder** | Fills a cylinder | Silos, water tanks, pillar bases |
+| **Build Sphere** | Creates a hollow or filled sphere | Domes, decorative globes |
+
+3. **Left-click** to set the first corner/point (a green sparkle appears)
+4. **Right-click** to set the second corner/point (the structure is built)
+5. **The wand uses blocks from your inventory** — it only places blocks you're carrying
+
+**Pro tips**:
+- Shift+Right-click to undo the last placement
+- The wand works with Create schematic cannon blueprints for precision
+- Use the **Undo wand** (craft: stick + slimeball) to reverse recent wand actions without losing materials
+- Combined with AE2's ME terminal, you can access your entire storage while building — set a wireless terminal hotkey
+
+### Handcrafted — Furniture
+
+Furniture blocks for building cozy interiors:
+
+| Furniture | What it does |
+|-----------|-------------|
+| **Chairs** | Right-click to sit. Looks different per wood type. Craft with slabs and planks |
+| **Tables** | Decorative surface. Right-click to place items on top for display. Dinner tables, coffee tables, nightstands |
+| **Shelves** | Wall-mounted. Right-click to place items. Books, potions, trophies |
+| **Curtains** | Hanging window decoration. Right-click to open/close |
+| **Desks** | Table + shelf combo. Right-click drawer for item storage |
+| **Cupboards** | Small cabinet for aesthetic item storage. Must be placed against a wall |
+| **Sofa** | Multi-block seating. Right-click to sit. Craft with wool + wood |
+| **Dresser** | Tall storage furniture. Right-click drawers for storage |
+
+**How to craft**: Check JEI. Most furniture is crafted from wood + relevant material (wool for sofas, glass for cabinets). Different wood types give different styles.
+
+**Tip**: Place Handcrafted furniture in the rooms you use most — kitchen, dining room, bedroom. Use Item Shelves for decorative displays of your favorite loot (Twilight Forest boss trophies, Apotheosis mythic gear, rare Simply Swords weapons).
 
 ---
 
