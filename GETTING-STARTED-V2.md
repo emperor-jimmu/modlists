@@ -165,6 +165,8 @@ After Wave 0, set these up immediately:
 | Open Waystone Menu  | **Not set**   | Waystones               | **Set this to `Ctrl+Shift+W`** — opens teleport list        |
 | Open Backpack       | `B`           | Sophisticated Backpacks | Opens equipped backpack                                     |
 | Zoom                | `C` (Sodium)  | Sodium                  | Hold to zoom in — very useful for scouting                  |
+| Toggle BetterF3     | **Not set**   | BetterF3                | **Set this to `F3`** — replaces default debug screen        |
+| Toggle LambDynamicLights | **Not set** | LambDynamicLights    | **Set this to `Ctrl+L`** — toggle dynamic lighting on/off   |
 
 > **Pro tip**: Set Waystones, Mod Menu, and Zoom first — you'll use them constantly.
 
@@ -260,6 +262,58 @@ Open **Mod Menu** (`Ctrl+M`) → Distant Horizons → Config to adjust. The mod 
 #### Continuity
 
 No interaction needed. It makes glass, sandstone, and bookshelves render with connected textures (no visible seams). It works automatically with any resource pack that supports OptiFine connected textures format.
+
+#### ModernFix
+
+Installed automatically — no config needed. It fixes dozens of Minecraft bugs, reduces memory usage by up to 30%, and speeds up game startup. If you see a strange crash, check ModernFix first — it logs detailed diagnostics to the latest.log.
+
+#### ImmediatelyFast
+
+No interaction needed. Improves immediate-mode rendering performance — noticeable when flying through dense areas (forests, caves, mob farms) where entity/block rendering lagged before.
+
+#### C2ME (Concurrent Chunk Management)
+
+No interaction needed. Speeds up world generation and chunk loading by running chunk tasks in parallel. Most noticeable when exploring new terrain or teleporting long distances.
+
+#### LambDynamicLights
+
+Equip a torch or glowstone block → it emits light around you. Works in the off-hand too. Configurable brightness in Mod Menu → LambDynamicLights. Toggle off if it affects FPS.
+
+**Pro tip**: Hold a torch in your off-hand while mining — no more placing torches every 5 blocks. The light follows you.
+
+#### BetterF3
+
+Press `F3` to see the cleaner debug HUD. Customize what's shown in Mod Menu → BetterF3 → Config. You can toggle individual modules (FPS, coordinates, biome, light level, etc.) without the clutter.
+
+#### Sound Physics Remastered
+
+No interaction needed. Makes sound behave more realistically — muffled through walls, echo in caves, directional audio. Works with any sound pack.
+
+#### Ambient Leaves
+
+No interaction needed. Trees drop falling leaves — purely cosmetic. Configurable particle density in Mod Menu.
+
+#### Mouse Tweaks
+
+Inventory management shortcuts:
+- **Left-click drag** across multiple slots → distributes items evenly
+- **Right-click drag** → places one item per slot
+- **Scroll wheel** on a stack → moves one item to another inventory
+- **Left-click + shake** → tosses all items of that type
+
+These work in every inventory screen (chests, machines, backpacks). Start using them immediately — they're faster than vanilla drag-and-drop.
+
+#### Chat Heads
+
+In multiplayer, shows the sender's head next to their chat message. In singleplayer, it shows your own skin. No config needed — works automatically with any chat mod.
+
+#### Simple Harvest
+
+Right-click a fully grown crop → it breaks and drops, then auto-replants. Works on vanilla crops and most modded ones. No keybind needed — just right-click.
+
+#### Jade Addons
+
+Extends Jade's block info panels. When looking at Tech Reborn machines, you'll see energy levels and processing progress. When looking at animals, you'll see breeding cooldown and health. Install and forget — it just adds more useful info to your HUD.
 
 ---
 

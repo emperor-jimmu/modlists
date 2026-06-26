@@ -46,6 +46,23 @@ This wave makes the game run well, look nice, and feel forgiving. No major gamep
 | Lithium          | Server-side physics/AI/tick optimization                           |
 | Distant Horizons | LOD rendering — extreme render distance                            |
 | Continuity       | Connected textures for glass, sandstone, bookshelves (client-side) |
+| ModernFix        | All-in-one performance + bug fixes — reduces memory, faster startup, replaces LazyDFU |
+| ImmediatelyFast  | Speeds up immediate-mode rendering — reduces lag with many entities |
+| C2ME Fabric      | Concurrent chunk management — major worldgen and chunk loading performance boost |
+| Krypton         | Networking optimization — reduces server-to-client packet overhead |
+| Entity Culling   | Hides off-screen block/entity rendering — free FPS in dense areas |
+| Dynamic FPS      | Reduces resource usage while Minecraft is in the background, on battery, or idle |
+| Noisium          | Optimises worldgen noise generation — faster terrain generation |
+
+### Visual & Client QoL
+
+| Mod                    | Role                                               |
+|------------------------|----------------------------------------------------|
+| Reese's Sodium Options | Improved Sodium settings UI — searchable, categorized, more intuitive |
+| LambDynamicLights      | Dynamic lighting from held items (torches, glowstone, etc.) — client-side, no entity lag |
+| BetterF3               | Replaces the debug HUD with a customizable, human-readable layout |
+| Sound Physics Remastered | Realistic sound attenuation, reverberation, and absorption through blocks |
+| Ambient Leaves         | Falling leaf particles beneath trees — cosmetic, configurable density |
 
 ### Travel & Death
 
@@ -54,7 +71,7 @@ This wave makes the game run well, look nice, and feel forgiving. No major gamep
 | Waystones (Fabric)                  | Fast travel between discovered waystones  |
 | Universal Graves / Corail Tombstone | Keep inventory on death, grave protection |
 
-### QoL
+### Core QoL
 
 | Mod                                 | Role                                     |
 |-------------------------------------|------------------------------------------|
@@ -63,6 +80,15 @@ This wave makes the game run well, look nice, and feel forgiving. No major gamep
 | Xaero's Minimap + Xaero's World Map | Mapping and waypoints                    |
 | AppleSkin                           | Food hunger/saturation overlay           |
 | Mod Menu                            | Mod list and config GUI                  |
+
+### Inventory & UI QoL
+
+| Mod                    | Role                                               |
+|------------------------|----------------------------------------------------|
+| Mouse Tweaks           | Inventory management shortcuts — drag to split, scroll to move, LMB+shake to toss |
+| Chat Heads             | Shows player heads next to chat messages — useful in multiplayer, unobtrusive in singleplayer |
+| Simple Harvest         | Right-click to harvest crops and replant automatically — configurable |
+| Jade Addons (Fabric)   | Extra block info panels for Jade — shows more data about machines, animals, crops |
 
 ---
 

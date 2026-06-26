@@ -39,6 +39,8 @@
 ### Wave 0 — Foundation (QoL, Performance, Storage, Comfort)
 - [x] Determined complete Wave 0 mod set
 - [x] Documented in MODLIST-V2.md
+- [x] Added QoL/Performance polish pass: ModernFix, ImmediatelyFast, C2ME, Krypton, Entity Culling, Dynamic FPS, Noisium, Reese's Sodium Options, LambDynamicLights, BetterF3, Sound Physics Remastered, Ambient Leaves, Mouse Tweaks, Chat Heads, Simple Harvest, Jade Addons
+- [x] Updated GETTING-STARTED-V2.md with Wave 0 QoL tutorial sections
 
 ### Wave 1 — Tech (Tech Reborn)
 - [x] Replaced Oritech with Tech Reborn 5.11.19
@@ -62,9 +64,6 @@
 - [x] Added V2 file references (MODLIST-V2.md, GETTING-STARTED-V2.md)
 
 ## Pending
-
-### QoL / Performance Polish (merge into Wave 0)
-- ModernFix, FerriteCore, ImmediatelyFast, Mouse Tweaks, etc.
 
 ### Config Overrides
 - All waves: identify mods needing config changes
