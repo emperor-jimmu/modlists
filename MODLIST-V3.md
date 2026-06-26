@@ -90,8 +90,8 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                       | Nature ambiance (birds, wind, water)                               |
 | [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved |
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                         | Animated UI, smooth hotbar, item particles                         |
-| [Traveler\'s Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles)               | RPG-style titles entering biomes/dimensions                        |
-| [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist)                     | Enhanced mod list screen with badges/categories                    |
+| [Traveler\'s Titles](https://modrinth.com/mod/travelers-titles)                                      | RPG-style titles entering biomes/dimensions                        |
+| [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                     | Enhanced mod list screen with badges/categories                    |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)           | Independent 360° camera rotation in third-person view              |
 | [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare             |
 | [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)           | First-person food/drink shrinking animation, visible in 3rd person |
@@ -107,7 +107,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                 |
 | [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                 |
 | [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads)                       | Chat avatars                                   |
-| [Right Click Harvest](https://www.curseforge.com/minecraft/mc-mods/right-click-harvest)     | Right-click crop harvest                       |
+| [Harvest With Ease](https://www.curseforge.com/minecraft/mc-mods/harvest-with-ease)           | Right-click crop harvest & replant              |
 | [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups          |
 | [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)          | Animated item pickup notifications             |
@@ -462,7 +462,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 **Interdependency notes for Wave 4:**
 
 - Farmer's Delight meals provide status effects that stack with Brewin' And Chewin' drinks. Combined, a full meal + a vintage drink gives significant combat buffs — useful before boss fights (Wave 5).
-- Right Click Harvest (Wave 0) works on all Farmer's Delight crops. Right-click to harvest, the plant stays for regrowth.
+- Harvest With Ease (Wave 0) works on all Farmer's Delight crops. Right-click to harvest, the plant stays for regrowth.
 - AE2's ME System can store Farmer's Delight ingredients and cooked meals. Set up an Export Bus on a cooking pot for automated ingredient delivery.
 - Bountiful (Wave 4.5) can generate bounties that request Farmer's Delight meals as objectives, and reward cooking ingredients.
 - My Nether's Delight and Ocean's Delight unlock food sources from cross-dimensional ingredients, giving reasons to explore the Nether and oceans beyond combat. End's Delight (Wave 2) completes the set — journeying to the End yields unique recipes.

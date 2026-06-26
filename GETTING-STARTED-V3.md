@@ -202,7 +202,7 @@ Your first session is about getting comfortable. Don't rush — this wave has ze
 | **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data                                             |
 | **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey                                          |
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                                                                 |
-| **Ongoing**                     | Right Click Harvest works as you farm. LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
+| **Ongoing**                     | Harvest With Ease works as you farm. LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
 
 ### Using Wave 0 Mods
 
@@ -321,9 +321,9 @@ Shows animated pickup notifications when items enter your inventory and tracks s
 
 Default settings work well — no changes needed.
 
-#### Right Click Harvest
+#### Harvest With Ease
 
-Right-click a fully grown crop → it breaks and drops, then auto-replants. Works on vanilla crops and most modded ones.
+Right-click a fully grown crop → it harvests and auto-replants. Works on vanilla crops and most modded ones.
 
 #### Immersive UI
 
@@ -1447,7 +1447,7 @@ Farmer's Delight adds new crops, a cutting board for ingredient prep, a cooking 
 | **Onion**   | Farmland. Pick when shoots show                   | Savory dishes, soups              |
 | **Rice**    | Grows in shallow water (1 block deep on dirt/mud) | Hearty meals, sushi (in addons)   |
 
-**Right Click Harvest** (from Wave 0) works on all these crops — right-click to harvest, the plant stays for regrowth.
+**Harvest With Ease** (from Wave 0) works on all these crops — right-click to harvest, the plant stays for regrowth.
 
 **Wild crops**: Found in the wild — look for **wild tomatoes** (plains/forests), **wild cabbage** (beaches), **wild onions** (taiga), and **wild rice** (swamps). Breaking them gives the seed item.
 
@@ -1607,7 +1607,7 @@ Cooking is a side activity you build up gradually. Start small and expand as you
 | Session                           | Focus                                                                                                                                                                           | What to Build                                 |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | **Session 1 — Kitchen tools**     | Craft a cutting board (knife + planks) and cooking pot (iron + planks). Build a stove (bricks + iron nuggets) as heat source. Find wild tomato, cabbage, onion, rice seeds      | Functional kitchen, first ingredients         |
-| **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice near water. Use Right Click Harvest for easy harvesting. Cook your first meal (tomato soup is the easiest)                                   | Sustainable ingredient supply                 |
+| **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice near water. Use Harvest With Ease for easy harvesting. Cook your first meal (tomato soup is the easiest)                                   | Sustainable ingredient supply                 |
 | **Session 3 — Brewing**           | Find barley, grapes, honey. Build a brewing station. Start your first batch of beer/wine/mead. Place an aging barrel                                                            | First drink fermenting, waiting for it to age |
 | **Session 4 — Kitchen expansion** | Craft Storage Delight cabinets and drawers for decorative ingredient storage. Try More Delight recipes (sandwiches, toasts). Collect Nether ingredients for My Nether's Delight | Full kitchen, all FD addons in use            |
 | **Ongoing**                       | Age drinks to Matured/Aged for boss-fight buffs. Explore oceans for Ocean's Delight ingredients. Stock your AE2 system with ingredients for autocrafting meals on demand        | Buff food always available for combat         |
