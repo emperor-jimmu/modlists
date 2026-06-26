@@ -946,6 +946,102 @@ Everything in this wave is **configurable or opt-in**. Mutant spawn rates can be
 
 ---
 
+## Wave 7 — World Expansion & Exploration
+
+Wave 2 made the world larger (Terralith + Tectonic). Wave 7 fills it with more to find: every vanilla structure gets YUNG's overhaul, new biomes add variety, and hundreds of new structures populate the landscape. The Bumblezone adds a bee-themed dimension.
+
+### Install
+
+See [MODLIST-V2.md](./MODLIST-V2.md#wave-7--world-expansion--exploration) for the full mod list.
+
+### YUNG's Structure Overhauls
+
+These mods replace vanilla structures with improved versions. They install and work automatically — no interaction needed, just explore and find better versions of everything:
+
+| Mod | What improves | What's better |
+|-----|--------------|---------------|
+| Better Nether Fortresses | Nether fortresses | More rooms, better layouts, improved loot |
+| Better Ocean Monuments | Ocean monuments | Redesigned interiors, more interesting loot |
+| Better Jungle Temples | Jungle temples | Traps, puzzles, rewarding treasure rooms |
+| Better Mineshafts | Mineshafts | Varied designs, minecart chests with better loot |
+| Better End Island | The End island | More interesting terrain and small structures |
+| Better Strongholds | Strongholds | Larger, more complex, better End portal room |
+| Better Witch Huts | Witch huts | Expanded interiors with brewing-themed loot |
+| Better Desert Temples | Desert temples | Multi-room with new traps and loot |
+| Better Caves | Cave generation | Larger caverns, more varied shapes |
+
+These all use YUNG's API (already installed in Wave 2). Nothing to configure — they just make exploration more rewarding.
+
+### Regions Unexplored
+
+Adds 65+ new Overworld biomes alongside Terralith's existing biomes:
+
+| Biome examples | Where | What's special |
+|----------------|-------|----------------|
+| Redwood Forest | Temperate | Giant redwood trees, new wood type |
+| Steppe | Arid | Flat grasslands with scattered oaks |
+| Willow Forest | Swampy | Willow trees over water |
+| Boreal Forest | Cold | Pine and spruce with ferns |
+| Ancient Plains | Warm | Giant boulders, unique grasses |
+| Cherry Grove | Temperate | Already in vanilla, expanded with new variants |
+
+Regions Unexplored biomes generate in new chunks alongside Terralith biomes. Use Explorer's Compass (Wave 2) to find specific biomes.
+
+**Tip**: Start a new world or travel 2000+ blocks from spawn to see the new biomes.
+
+### Repurposed Structures
+
+Takes every vanilla structure and creates biome-variant versions:
+
+| Vanilla structure | Variants |
+|-------------------|----------|
+| Villages | Desert, jungle, swamp, birch, taiga, snowy, dark forest |
+| Fortresses | Nether, End |
+| Temples | Desert, jungle, icy |
+| Outposts | Overworld variants for each biome |
+| Ships | End ships, nether ships |
+
+Instead of just desert villages and plains villages, you'll find villages in every biome with appropriate building styles and loot.
+
+### Additional Structures
+
+200+ new hand-crafted structures scattered across the world:
+
+- **Watchtowers** — stone towers with archer positions and loot at the top
+- **Camps** — abandoned campsites with supplies
+- **Ruins** — collapsed buildings with hidden basements
+- **Shrines** — small temples themed to biomes
+- **Monuments** — larger structures with boss-level loot
+- **Graveyards** — small cemeteries with buried treasure
+
+These structures fit the vanilla aesthetic — they look like they belong. No keybind or config needed.
+
+### The Bumblezone
+
+A dimension made entirely of bee content:
+
+- **How to enter**: Right-click a bee nest or hive with certain items (check EMI for entry recipes)
+- **Biomes**: Sugar Water Fields, Crystal Canyon, Hive Pillar, Sticky Honey Redstone, Floating Islands
+- **Content**: Giant bees (some hostile, some neutral), honey blocks that slow you, wax blocks that melt near fire, honey-filled caverns with loot
+- **Resources**: Honey, wax, honeycomb — useful for crafting and Tech Reborn processing
+- **Exit**: Find a portal crystal or use a teleportation item
+
+The Bumblezone is mid-game content. The bees are challenging but not punishing, and the honey/wax resources are worth the trip. It's entirely optional — explore when you want.
+
+### Progression Through Wave 7
+
+| Phase | What you'll be doing |
+|-------|---------------------|
+| **Phase 1** | Better Caves, Mineshafts, Strongholds improve early caving. Additional Structures ruins/camps provide early loot. Regions Unexplored biomes visible from spawn |
+| **Phase 2** | Explore YUNG's Desert/Jungle Temples and Ocean Monuments. Repurposed Structures biome variants enrich mid-game exploration. Nether fortresses and witch huts are relevant targets |
+| **Phase 3** | The Bumblezone is accessible. Better End Island improves the End dimension. All structures fully explored with max gear |
+
+### Chill Note
+
+Every mod in this wave is **additive** — they add things to find without making the world more dangerous. YUNG's structures have better loot but aren't harder to traverse. Regions Unexplored biomes are peaceful. The Bumblezone waits until you choose to enter. If you just want to keep building, none of this content comes to you — you go to it.
+
+---
+
 ## General Tips
 
 ### Finding Help

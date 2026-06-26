@@ -70,6 +70,17 @@
 - [x] Updated GETTING-STARTED-V2.md with Wave 6 tutorial
 - [x] Removed Better Combat from Pending (now included)
 
+### Wave 7 — World Expansion & Exploration
+- [x] Design doc written: `docs/superpowers/specs/wave-7-world-expansion.md`
+- [x] Version pins confirmed via Modrinth API
+  - YUNG's Better Nether Fortresses 3.1.5, Ocean Monuments 4.1.2, Jungle Temples 3.1.2, Mineshafts 5.1.1, End Island 3.1.2, Strongholds 5.1.3, Witch Huts 4.1.1, Desert Temples 4.1.5, Better Caves 3.1.4
+  - Regions Unexplored 0.6.1
+  - Repurposed Structures 7.5.21
+  - Additional Structures 5.1.0
+  - The Bumblezone 7.15.0
+- [x] Updated MODLIST-V2.md with full Wave 7 section
+- [x] Updated GETTING-STARTED-V2.md with Wave 7 tutorial
+
 ### AGENTS.md
 - [x] Updated vision pillars to include RPG-style levels/skills
 - [x] Updated technical standards to Fabric 1.21.1, Java 21
@@ -82,7 +93,7 @@
 - Document each override in config/ directory
 
 ### Testing
-- Test launch with Waves 0–6
+- Test launch with Waves 0–7
 - Verify no mod conflicts
 - Cross-wave integration testing (Tech Reborn + Logistics + Powah, Let's Do automated farming, loot in Terralith biomes)
 - Config tuning per mod

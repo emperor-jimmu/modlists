@@ -1,6 +1,6 @@
 # Mod List V2 — Minecraft 1.21.1 Fabric
 
-**Status: Waves 0–6 (Foundation, Tech, Exploration, Equipment Magic & RPG, Food, Tech Expansion, Combat & Mobs) drafted**
+**Status: Waves 0–7 (Foundation, Tech, Exploration, Equipment Magic & RPG, Food, Tech Expansion, Combat & Mobs, World Expansion) drafted**
 
 This document defines the mod set for the V2 version of this modpack, targeting **Minecraft 1.21.1** on the **Fabric** modloader. The four pillars (power fantasy, easy-to-standard difficulty, 200h+ content, chill living) remain unchanged — see [AGENTS.md](./AGENTS.md) for the full vision.
 
@@ -390,6 +390,52 @@ All other dependencies (Fabric API, Cloth Config, Mod Menu) already present from
 
 ---
 
+## Wave 7 — World Expansion & Exploration
+
+Wave 2 made the world larger (Terralith + Tectonic + YUNG's Better Dungeons). Wave 7 fills that world with more to find: all remaining vanilla structures get YUNG's overhaul, new biome variants add discovery, and hundreds of new structures populate the landscape. The Bumblezone adds a bee-themed dimension.
+
+### YUNG's Structure Overhauls
+
+All use YUNG's API (already in Wave 2). Zero new library deps.
+
+| Mod                         | Version                    | Download | Role |
+|-----------------------------|----------------------------|----------|------|
+| YUNG's Better Nether Fortresses | 1.21.1-Fabric-3.1.5    | [Modrinth](https://modrinth.com/mod/yungs-better-nether-fortresses) | Overhauled nether fortresses — better layouts, new rooms, improved loot |
+| YUNG's Better Ocean Monuments  | 1.21.1-Fabric-4.1.2    | [Modrinth](https://modrinth.com/mod/yungs-better-ocean-monuments) | Redesigned ocean monument interiors with better loot |
+| YUNG's Better Jungle Temples   | 1.21.1-Fabric-3.1.2    | [Modrinth](https://modrinth.com/mod/yungs-better-jungle-temples) | Jungle temples with traps, puzzles, and rewarding loot |
+| YUNG's Better Mineshafts       | 1.21.1-Fabric-5.1.1    | [Modrinth](https://modrinth.com/mod/yungs-better-mineshafts) | Mineshafts with varied designs and new minecart chests |
+| YUNG's Better End Island       | 1.21.1-Fabric-3.1.2    | [Modrinth](https://modrinth.com/mod/yungs-better-end-island) | Improved End island terrain and structures |
+| YUNG's Better Strongholds      | 1.21.1-Fabric-5.1.3    | [Modrinth](https://modrinth.com/mod/yungs-better-strongholds) | Larger, more complex strongholds with better End portal rooms |
+| YUNG's Better Witch Huts       | 1.21.1-Fabric-4.1.1    | [Modrinth](https://modrinth.com/mod/yungs-better-witch-huts) | Expanded witch huts with brewing-themed loot |
+| YUNG's Better Desert Temples   | 1.21.1-Fabric-4.1.5    | [Modrinth](https://modrinth.com/mod/yungs-better-desert-temples) | Multi-room desert temples with new traps and loot |
+| YUNG's Better Caves            | 1.21.1-Fabric-3.1.4    | [Modrinth](https://modrinth.com/mod/yungs-better-caves) | Larger, more varied cave generation |
+
+### New Biomes, Structures & Dimension
+
+| Mod                    | Version | Download | Role | New Deps |
+|------------------------|---------|----------|------|----------|
+| Regions Unexplored     | 0.6.1-fabric-21.1 | [Modrinth](https://modrinth.com/mod/regions-unexplored) | 65+ new Overworld biomes with unique trees, plants, and terrain | Lithostitched (present) |
+| Repurposed Structures  | 7.5.21+1.21.1-fabric | [Modrinth](https://modrinth.com/mod/repurposed-structures) | Biome-variant versions of every vanilla structure — desert villages, nether outposts, end fortresses, and more | MidnightLib (new) |
+| Additional Structures  | 5.1.0 | [Modrinth](https://modrinth.com/mod/additional-structures) | 200+ new structures: watchtowers, camps, ruins, shrines, monuments | none |
+| The Bumblezone         | 7.15.0+1.21.1-fabric | [Modrinth](https://modrinth.com/mod/the-bumblezone-fabric) | A bee-themed dimension — giant bees, honey/wax blocks, bee puzzles, new resources. Enter via bee nest/hive | Resourceful Lib (new), MidnightLib (new) |
+
+### New Dependencies
+
+| Mod             | Required By | Notes |
+|-----------------|-------------|-------|
+| MidnightLib     | Repurposed Structures, The Bumblezone | Lightweight config library — only depends on Fabric API |
+| Resourceful Lib | The Bumblezone | Library used by many mods — only depends on Fabric API |
+
+### Integration
+
+| Wave | Integration |
+|------|-------------|
+| Wave 2 (Terralith) | Regions Unexplored biomes generate alongside Terralith. Tectonic terrain shapes new biomes. YUNG's structures spawn in Terralith biomes |
+| Wave 3 (Equipment Magic) | New structure loot feeds into Affixology. Simply Swords weapons found in new chests |
+| Wave 6 (Combat) | Mutants and Champions can spawn in new structures. AdventureZ nether mobs in Better Nether Fortresses |
+
+---
+
 ## Data Packs
 
 | Data Pack        | Purpose                                                       | Status |
@@ -428,8 +474,7 @@ Shaderpacks are `.zip` files in `shaderpacks/`, not `mods/`. Platform-agnostic (
 
 ## Next Up
 
-All waves 0–5 drafted, version pins populated. Next:
-- First test launch with Waves 0–5
-- QoL/Performance polish merged into Wave 0 (ModernFix, FerriteCore, ImmediatelyFast, etc.)
+All waves 0–7 drafted, version pins populated. Next:
+- First test launch with Waves 0–7
 - Data packs and config tuning for all waves
 - Cross-wave integration testing
