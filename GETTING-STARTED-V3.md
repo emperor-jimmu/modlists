@@ -2171,16 +2171,4 @@ You won't. Graves preserve your items. No creeper craters. The pack is designed 
 
 ### Java & Performance
 
-Minecraft 1.21.1 requires **Java 21**. Use Temurin JDK 21 from Adoptium.
-
-Recommended JVM arguments (for Minecraft Launcher → Installation → Edit → More Options → JVM Arguments):
-
-```
--Xms8g -Xmx8g -XX:+UseShenandoahGC -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch -XX:+UseStringDeduplication -XX:-OmitStackTraceInFastThrow -XX:+OptimizeStringConcat
-```
-
-| System RAM | Recommended allocation |
-|------------|------------------------|
-| 16 GB      | `-Xms10g -Xmx10g`      |
-| 32 GB      | `-Xms22g -Xmx22g`      |
-| 64 GB      | `-Xms48g -Xmx48g`      |
+Minecraft 1.21.1 requires **Java 21**. See [MODLIST-V3.md](./MODLIST-V3.md#wave--1--prerequisites) for JDK installation instructions and recommended JVM arguments.

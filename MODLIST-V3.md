@@ -17,6 +17,22 @@ java -version
 # Expected: openjdk version "21.0.x" ...
 ```
 
+#### Performance Tuning
+
+Recommended JVM arguments (for Minecraft Launcher → Installation → Edit → More Options → JVM Arguments):
+
+```
+-Xms8g -Xmx8g -XX:+UseShenandoahGC -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch -XX:+UseStringDeduplication -XX:-OmitStackTraceInFastThrow
+```
+
+| System RAM | Recommended allocation |
+|------------|------------------------|
+| 16 GB      | `-Xms10g -Xmx10g`      |
+| 32 GB      | `-Xms22g -Xmx22g`      |
+| 64 GB      | `-Xms48g -Xmx48g`      |
+
+> **Note**: `-XX:+OptimizeStringConcat` was removed in JDK 20 (JEP 427) — do not use it with Java 21. String optimization is enabled by default in JDK 21 via `invokedynamic`. The Adoptium Temurin JDK 21 includes Shenandoah GC — no special Java build needed.
+
 ### Minecraft 1.21.1
 
 Install the **Minecraft 1.21.1** vanilla client from the official launcher:
