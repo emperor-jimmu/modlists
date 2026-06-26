@@ -281,10 +281,6 @@ Makes sound behave more realistically — muffled through walls, echo in caves, 
 
 Inventory management shortcuts: left-click drag across slots → distributes evenly. Right-click drag → places one per slot. Scroll wheel on a stack → moves one to another inventory.
 
-#### Chat Heads
-
-Shows the sender's head next to their chat message. Works automatically.
-
 #### Curios API (Accessory Slots)
 
 Opens extra equipment slots on your character: ring, amulet, belt, gloves, charm, back, and more. Press the Curios keybind (check Controls) to open the Curios inventory. This replaces Trinkets from V2 — Relics RPG accessories and other Curios-compatible items go in these slots.

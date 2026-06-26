@@ -10,7 +10,7 @@
 ### Wave 0 — Foundation (~38 mods)
 - [x] Performance: Sodium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist
-- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Chat Heads, Harvest With Ease, Fancy Toasts, Obscure Tooltips, Loot Journal, Better Advancements, Polymorph
+- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Harvest With Ease, Fancy Toasts, Obscure Tooltips, Loot Journal, Better Advancements, Polymorph
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib, Obscure API, Fragmentum
 

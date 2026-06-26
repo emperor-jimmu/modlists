@@ -106,7 +106,6 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [Xaero\'s Minimap + World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) | Mapping and waypoints                          |
 | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                 |
 | [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                 |
-| [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads)                       | Chat avatars                                   |
 | [Harvest With Ease](https://www.curseforge.com/minecraft/mc-mods/harvest-with-ease)           | Right-click crop harvest & replant              |
 | [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups          |
 | [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles |
