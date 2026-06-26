@@ -28,6 +28,15 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list wi
 |---------|-------------|-------|
 | Graphics | Fabulous | Embeddium makes this performant now |
 | Render Distance | 16-32 chunks | Tune to your hardware; Distant Horizons handles far LOD |
+| Brightness | Moody → Bright | Personal preference — Bright makes caves easier to see |
+
+#### Distant Horizons Settings
+
+Open **Mod Menu → Distant Horizons → Config** after first launch. Set LOD Render Distance to 1024 blocks. The mod generates LOD data as you explore — first visit to an area will have temporary pop-in.
+
+#### Shader Setup
+
+Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Minecraft, go to Options → Video Settings → Shaderpacks, select Complementary Unbound. It works with Iris on NeoForge.
 
 #### Keybindings (Set These Up First)
 
@@ -62,6 +71,36 @@ When you die, a grave spawns with your items. No item loss, no despawning. Just 
 #### AmbientSounds + Constant Music
 
 AmbientSounds adds nature sounds (birds, wind, water) based on your biome and time of day. Constant Music removes the silence gaps between music tracks. Both work automatically — no config needed.
+
+#### BetterF3
+
+Press `F3` to see the cleaner debug HUD. Customize what's shown in Mod Menu → BetterF3 → Config. Toggle individual modules (FPS, coordinates, biome, light level) without the clutter.
+
+#### LambDynamicLights
+
+Equip a torch or glowstone block → it emits light around you. Works in the off-hand too. Toggle via keybind `Ctrl+L`.
+
+**Pro tip**: Hold a torch in your off-hand while mining — no more placing torches every 5 blocks.
+
+#### Sound Physics Remastered
+
+Makes sound behave more realistically — muffled through walls, echo in caves, directional audio. Works automatically with any sound pack.
+
+#### Mouse Tweaks
+
+Inventory management shortcuts: left-click drag across slots → distributes evenly. Right-click drag → places one per slot. Scroll wheel on a stack → moves one to another inventory.
+
+#### Chat Heads
+
+Shows the sender's head next to their chat message. Works automatically.
+
+#### Curios API (Accessory Slots)
+
+Opens extra equipment slots on your character: ring, amulet, belt, gloves, charm, back, and more. Press the Curios keybind (check Controls) to open the Curios inventory. This replaces Trinkets from V2 — Relics RPG accessories and other Curios-compatible items go in these slots.
+
+#### Right Click Harvest
+
+Right-click a fully grown crop → it breaks and drops, then auto-replants. Works on vanilla crops and most modded ones.
 
 ---
 
@@ -101,30 +140,50 @@ Create is about **rotational power**. Build a **water wheel** or **windmill** to
 
 **Tip**: Press `W` while holding a wrench to see Create's tooltips. JEI (`R`) shows all Create recipes.
 
+**Create's Ponder system**: Hold `W` while hovering over any Create block or item in JEI or your inventory. This opens an interactive animation explaining how the block works. Use this constantly — it's Create's built-in tutorial and better than any written guide.
+
 #### Step 2: Add Mekanism
 
 Mekanism is about **industrial processing**. It uses its own power system (Joules) which is compatible with Create's rotational power through **Create's alternator**.
 
-**First Mekanism machines:**
-1. **Metallurgic Infuser** — combine osmium with coal/infusion materials
-2. **Enrichment Chamber** — 2x ore processing (1 ore → 2 dust)
-3. **Crusher** — alternative processing
-4. **Rotary Condensentrator** — converts between gases and liquids
-5. **Chemical machines** — unlocks 3x, 4x, and 5x ore processing
+**Osmium**: Mekanism's primary ore. Find it underground (similar rarity to iron). Mine it with a stone pickaxe or better.
 
-**The Mekanism pipeline**: Osmium → osmium ingots → basic machines → steel → advanced machines → atomic alloy → ultimate machines.
+**Mekanism machines tier system**: Machines come in 4 tiers — Basic, Advanced, Elite, Ultimate. Higher tiers process faster and can handle more simultaneous operations.
+
+**First Mekanism machines:**
+1. **Metallurgic Infuser** — combine osmium with coal/infusion materials to create steel components
+2. **Enrichment Chamber** — 2x ore processing (1 ore → 2 dust). Your first and most important machine
+3. **Crusher** — alternative processing path, also 2x
+4. **Rotary Condensentrator** — converts between gases and liquids. Needed for chemical processing
+5. **Chemical Injection Chamber** + **Chemical Washer** + **Chemical Dissolution Chamber** — unlocks 3x, 4x, and 5x ore multiplication
+
+**The Mekanism pipeline**: Osmium → osmium ingots → Basic machines → Steel → Advanced machines → Atomic Alloy → Elite machines → Ultimate machines → MekaSuit.
+
+**Energy**: Mekanism machines need power. Early game: heat generator (lava) or wind generator. Mid-game: gas-burning generator. Late-game: fusion reactor.
 
 #### Step 3: Build AE2 Storage
 
-AE2 is about **digital storage**. Once you have basic processing, build an ME system:
+AE2 is about **digital storage** and **autocrafting**. Once you have basic Create or Mekanism processing, build an ME system:
 
-1. **Certus quartz** — find in worldgen. Process into **Certus quartz crystals**
-2. **Charger** — charge Certus quartz (place on top of a Charger)
-3. **ME drive** — stores digital items using **storage cells**
-4. **Terminal** — access all stored items from one screen
-5. **Cable** — connect everything together
+**Finding Certus Quartz**: Certus quartz grows in meteorites. Look for circular depressions on the surface — dig down to find a meteorite with certus quartz blocks. You can also find certus quartz ore underground. Process certus quartz in a stonecutter to get **certus quartz dust**, then smelt into **certus quartz crystals**.
 
-**Basic AE2 setup:** ME Controller + ME Drive (with storage cells) + Terminal + Cables to your machines = everything in one inventory.
+**First AE2 setup:**
+1. **Charger** — place certus quartz on top to charge it (power required)
+2. **ME Controller** — the brain of your network. Connect power to it
+3. **ME Drive** — holds storage cells. Connect to controller with **ME cable**
+4. **Storage Cell** — crafted from charged certus quartz + redstone. Put in the ME Drive
+5. **ME Terminal** — connect to the network. Right-click to open — all stored items in one screen
+
+**Channels**: AE2 has a channel system. Each cable can carry 8 channels. A controller gives you 32 channels per face. Plan your network — use **ME smart cables** (show channel usage with colored lines) to see your channel count.
+
+**Import & Export**:
+- **ME Import Bus** — place on a chest/machine, pulls items into your ME network
+- **ME Export Bus** — places items from your network into a machine
+- **Storage Bus** — treats an attached inventory as part of your ME network
+
+**Basic AE2 setup:** ME Controller + ME Drive (with cells) + Terminal + Import/Export buses on your machines → everything accessible from one terminal.
+
+**Progression tip**: Start with 1k or 4k storage cells. Upgrade to 16k, 64k, and 256k as you accumulate more items.
 
 #### Step 4: Mid-Game Integration
 
@@ -166,6 +225,10 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-2--exploration-world--dimensions). Inst
 - **Regions Unexplored**: 65+ new biomes (redwood forests, steppes, willow forests, cherry groves)
 - **YUNG's structures**: Every vanilla structure type gets an overhaul — dungeons, mineshafts, strongholds, temples, monuments, witch huts, nether fortresses
 - **Structory + Towns & Towers + Additional Structures**: Hundreds more new structures to discover
+
+**Finding biomes**: Craft an Explorer's Compass and right-click to open its GUI. Browse the biome list and select one — the compass points to the nearest instance. Use this to find specific Regions Unexplored or Terralith biomes.
+
+**New world recommendation**: Terralith, Tectonic, and Regions Unexplored generate best in a new world. If joining an existing world, explore chunks you haven't visited yet (1000+ blocks from spawn).
 
 ### The Aether
 
@@ -213,28 +276,49 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-3--equipment-magic--rpg). Install all a
 
 Every action earns XP. Level up, spend points on attributes (strength, vitality, agility, magic, defense). Works alongside every other wave.
 
+**Keybind**: Check Controls → Skill Tree for the skill tree GUI keybind. Set it to something convenient (e.g., `P`).
+
 ### Simply Swords
 
-60+ unique weapons with passive/activated abilities. Drop from mobs (~2% rate) and chests. Each one feels different — scythes heal, rapiers shred armor, hammers knock back.
+60+ unique weapons with passive/activated abilities. Drop from mobs (~2% rate) and chests. Each one feels different — scythes heal on kill, rapiers shred armor, hammers knock back entire groups, spears reach further.
 
-### Apotheosis (Replaces Savaru's Affixology)
+**Weapon categories**: Heavy weapons (greathammer, greatsword) → slow, high damage. Medium weapons (longsword, katana) → balanced. Light weapons (rapier, dagger) → fast with debuffs. Polearms (spear, halberd) → reach advantage, throwable.
+
+**Pro tip**: Hold `Ctrl` while hovering over a weapon to see its ability description.
+
+### Apotheosis
 
 Adds Diablo-style loot to all gear:
 
-- **Rarity tiers**: Common → Uncommon → Rare → Epic → Mythic
-- **Random affixes**: Every gear piece can roll with bonus stats (damage, speed, crit, resistances)
-- **Gem socketing**: Find gems, socket into gear for extra effects
-- **Enchanting overhaul**: Higher enchanting levels, new enchantments, better books
+- **Rarity tiers**: Common → Uncommon → Rare → Epic → Mythic. Higher rarities have more affix slots
+- **Random affixes**: Every gear piece can roll with bonus stats — damage, attack speed, movement speed, crit chance, resistance, spell power
+- **Gem socketing**: Find rough gems as drops. Use a **gem cutting station** to cut them into socketable gems. Apply to gear at a **gem socketing table**
+- **Enchanting overhaul**: The vanilla enchanting table is replaced with a more powerful version. Higher levels, new enchantments, better books from the library
+- **Boss modifiers**: Boss mobs can spawn with random modifiers, making them harder but dropping better loot
 
-**What to do**: Identify every piece of gear you find. Socket gems into your favorites. Use the enchanting system to max out your gear.
+**What to do early**: Check every gear drop for rarity. Socket rough gems into your tools. Explore the new enchanting system.
+
+**What to do late**: Hunt for Mythic rarity items. Socket flawless gems. Apply end-game affixes.
 
 ### Relics RPG
 
-Legendary accessories that go in your Curios slots (ring, amulet, belt, gloves). Each has a unique ability — double jump, damage shield, luck boost, entity pull.
+Legendary accessories that go in your Curios slots (ring, amulet, belt, gloves, back, charm). Each has a unique ability:
+
+| Relic | Ability |
+|-------|---------|
+| Monkey Talisman | Double jump |
+| Holy Water | Cleanses negative effects |
+| Lucky Coin | Increases luck/loot quality |
+| Captain's Hook | Pulls entities toward you |
+| Sacred Wardstone | Damage absorption shield |
+
+**Where to find**: Common relics from mobs and basic chests. Uncommon from dungeon chests. Rare from YUNG's structures. Epic from endgame content.
 
 ### Runes
 
 Socketable runes for weapons/tools. Each rune adds an effect — fire, ice, lightning, poison, lifesteal. Swappable between fights.
+
+**How to use**: Find runes in loot or craft at a **Rune Altar**. Use a **Rune Pouch** (craftable) to store them all. Apply runes to weapons at the Rune Altar.
 
 **Keybind**: Check Controls for Open Rune Pouch.
 
@@ -250,13 +334,29 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-4--food-farming--comfort).
 
 ### Farmer's Delight
 
-Craft a cutting board and cooking pot. Find new crops (tomatoes, rice, cabbage, onions). Cook meals with better saturation than vanilla steak.
+Craft a **cutting board** (knife + planks) — your primary food prep tool. Use it to chop ingredients. Craft a **cooking pot** — place over a heat source (campfire, stove). Right-click to open the GUI, add ingredients, wait for the progress bar, collect your meal.
 
-**Progression**: Cutting board → Cooking pot → Stove → All cooking recipes visible in JEI.
+**Early meals**: Tomato soup (tomato + bowl), chicken sandwich (cooked chicken + bread), mixed salad (lettuce + tomato + cucumber).
+
+**Stove**: Craft a stove (bricks + iron). Place the cooking pot on top — it cooks faster than over a campfire.
+
+**Kitchen storage**: Craft cabinets and drawers (check JEI for recipes) to organize your ingredients.
+
+**Progression**: Cutting board → Cooking pot → Stove → All recipes visible in JEI.
 
 ### Brewin' And Chewin'
 
-Fermentation and drinks. Grow hops, barley, grapes. Brew beer, wine, mead. Age in barrels for stronger effects.
+Fermentation and drinks. Grow hops, barley, grapes.
+
+**Brewing process:**
+1. Craft a **brewing station** — place it, add water and ingredients
+2. Create your base mixture (wort, must, mash)
+3. Transfer to an **aging barrel** — the longer it ages, the stronger the effect
+4. Bottle the finished drink
+
+**Drink effects**: Beer (resistance), wine (haste), mead (speed), whiskey (short strength boost).
+
+**Aging tip**: Check your barrels every few in-game days. Fully aged drinks give the best buffs.
 
 ---
 
@@ -270,23 +370,33 @@ See [MODLIST-V3.md](./MODLIST-V3.md#wave-5--combat--mobs).
 
 ### Better Combat
 
-Makes every weapon feel unique — reach, sweeping, attack speed animations. Enhances Simply Swords weapons. Install and forget.
+Makes every weapon feel unique — different weapons have different reach (daggers short, spears long), sweeping animations (swords arc, axes slash, spears thrust), and attack speed (daggers fast, greatswords slow). Enhances Simply Swords weapons perfectly.
+
+**Config**: Mod Menu → Better Combat. Tweak reach, sweeping, and visual effects.
 
 ### Mutant Monsters
 
-Mutant versions of vanilla mobs — Mutant Zombie, Skeleton, Creeper, Enderman. Each drops unique gear (Hulk Hammer, Mutant Skeleton Armor, Creeper Minion). Configurable spawn rate via Mod Menu.
+Mutant versions of vanilla mobs — Mutant Zombie, Skeleton, Creeper, Enderman. Each drops unique gear (Hulk Hammer, Mutant Skeleton Armor, Creeper Minion). Slightly tougher than vanilla but beatable with iron-tier gear. With your Epic Apotheosis gear, they're a satisfying challenge.
+
+**Config**: Mod Menu → Mutant Monsters → reduce spawn rate if they're too frequent.
 
 ### L_Ender's Cataclysm
 
-Epic boss fights. Each boss has unique mechanics and drops powerful gear:
-- **Leviathan**: Deep ocean boss
-- **Netherite Monstrosity**: Nether boss
-- **Ender Guardian**: End boss
-- And more — each with custom animations and attack patterns
+Epic boss fights. Each boss has unique mechanics and drops powerful gear. Bosses are **opt-in** — you summon them:
+
+| Boss | Location | How to summon | Drops |
+|------|----------|---------------|-------|
+| Leviathan | Deep ocean | Build a summoning altar in deep ocean biomes | Leviathan blade, sea-themed gear |
+| Netherite Monstrosity | Nether | Find its lair in the Nether wastes | Monstrosity tools, netherite gear |
+| Ender Guardian | End | Summon after defeating the Ender Dragon | Guardian weapons, ender armor |
+| Ignite | Nether fire area | Build a summoning structure | Fire-themed weapons |
+| Ancient Remnant | Desert pyramids | Find the summoning room | Ancient tools and relics |
+
+Each boss has custom animations and attack phases. Bring your best gear, food buffs, and potions.
 
 ### When Dungeons Arise
 
-Roguelike combat structures scattered across the world. Multi-room dungeons with increasing difficulty and loot.
+Roguelike combat structures scattered across the world — towers, castles, barracks, temples. Each has multiple floors with increasing difficulty. Loot scales with floor depth. Use the Explorer's Compass to find specific structures (select "Dungeons Arise" in the structure list).
 
 ---
 
@@ -298,13 +408,40 @@ Tools and blocks to build the base you deserve.
 
 See [MODLIST-V3.md](./MODLIST-V3.md#wave-6--building--decoration).
 
-- **Chipped**: Hundreds of block variants for every material (stone, wood, glass, etc.)
-- **Supplementaries**: Vanilla+ decoration — jars, signposts, faucets, weather vanes, item shelves
-- **Macaw's**: Bridges, doors, roofs, windows in every wood type
-- **Building Wands**: Faster large-scale construction — place blocks in lines, walls, or fill areas
-- **Handcrafted**: Furniture — chairs, tables, shelves, curtains, desks
+- **Chipped**: Hundreds of block variants for every material. Use a **sawmill** (craft from any wood + iron) to create decorative variants. Different blocks have different sawmill recipes — experiment with JEI
+- **Supplementaries**: Vanilla+ decoration — jars for item storage display, signposts for directional signs, faucets for fluid flow, weather vanes for wind direction, item shelves for shelf display
+- **Macaw's**: Bridges, doors, roofs, windows, fences in every wood type. Each is crafted like the vanilla version but with the specific wood type
+- **Building Wands**: Right-click to open the wand GUI. Select a mode — **build wall** (creates a wall between two points), **build line** (creates a line), **fill area** (fills a 3D area). Left-click the first corner, right-click the second corner. Works with any block in your inventory
+- **Handcrafted**: Furniture — chairs, tables, shelves, desks, curtains, and more. Right-click to sit in chairs. Place items on tables and shelves for display
 
 ---
+
+## Keybindings Reference
+
+| Keybind | Default | Mod | Wave |
+|---------|---------|-----|------|
+| View Recipes | `R` | JEI | 0 |
+| View Uses | `U` | JEI | 0 |
+| Open Mod Menu | **Set to `Ctrl+M`** | Mod Menu | 0 |
+| Open Fullscreen Map | `J` | Xaero's World Map | 0 |
+| Toggle Minimap | `H` | Xaero's Minimap | 0 |
+| Open Waystone Menu | **Set to `Ctrl+Shift+W`** | Waystones | 0 |
+| Open Backpack | `B` | Sophisticated Backpacks | 0 |
+| Zoom | **Set to `C`** | Embeddium | 0 |
+| Toggle Dynamic Lights | **Set to `Ctrl+L`** | LambDynamicLights | 0 |
+| Open Curios Inventory | **Set to `Y`** | Curios API | 0 |
+| Open Skill Tree | **Set to `P`** | Skill Tree | 3 |
+| View Weapon Ability | `Ctrl` (hold) | Simply Swords | 3 |
+| Open Rune Pouch | **Set to `R`** | Runes | 3 |
+| Open Create Ponder | `W` (hold over block) | Create | 1 |
+
+## Progression Through All Waves
+
+| Phase | What you'll be doing |
+|-------|---------------------|
+| **Phase 1** (hours 0-40) | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith/Regions biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals |
+| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Chipped and Macaw's |
+| **Phase 3** (hours 150+) | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd/Nullscape End dimension. Monumental building projects with all decoration tools |
 
 ## General Tips
 
