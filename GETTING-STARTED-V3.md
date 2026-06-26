@@ -259,9 +259,9 @@ Craft a waystone and right-click to claim it. Use the Warp Stone (ender pearl + 
 
 When you die, a grave spawns with your items. No item loss, no despawning. Just walk back and right-click the grave.
 
-#### AmbientSounds + Constant Music
+#### AmbientSounds + The Immersive Music Mod
 
-AmbientSounds adds nature sounds (birds, wind, water) based on your biome and time of day. Constant Music removes the silence gaps between music tracks. Both work automatically — no config needed.
+AmbientSounds adds nature sounds (birds, wind, water) based on your biome and time of day. [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod) adds 147 new songs selected by biome and structure — plays like vanilla with natural silence gaps, no config needed.
 
 #### BetterF3
 

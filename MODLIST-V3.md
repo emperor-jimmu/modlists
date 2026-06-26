@@ -88,7 +88,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)                                 | Customizable debug HUD                                             |
 | [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered) | Realistic sound                                                    |
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                       | Nature ambiance (birds, wind, water)                               |
-| [Constant Music](https://www.curseforge.com/minecraft/mc-mods/constant-music)                     | Continuous music (no silence gaps)                                 |
+| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved |
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                         | Animated UI, smooth hotbar, item particles                         |
 | [Traveler\'s Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles)               | RPG-style titles entering biomes/dimensions                        |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist)                     | Enhanced mod list screen with badges/categories                    |
