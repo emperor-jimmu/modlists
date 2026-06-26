@@ -82,37 +82,37 @@ Install NeoForge for **1.21.1** (latest recommended release):
 
 ### Visual & Client QoL
 
-| Mod                                                                                               | Role                                                               |
-|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [LambDynamicLights](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights)               | Dynamic lighting                                                   |
-| [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)                                 | Customizable debug HUD                                             |
-| [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered) | Realistic sound                                                    |
-| [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                       | Nature ambiance (birds, wind, water)                               |
-| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved |
-| [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                         | Animated UI, smooth hotbar, item particles                         |
-| [Traveler\'s Titles](https://modrinth.com/mod/travelers-titles)                                      | RPG-style titles entering biomes/dimensions                        |
-| [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                     | Enhanced mod list screen with badges/categories                    |
-| [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)           | Independent 360° camera rotation in third-person view              |
-| [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare             |
-| [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)           | First-person food/drink shrinking animation, visible in 3rd person |
+| Mod                                                                                               | Role                                                                |
+|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| [LambDynamicLights](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights)               | Dynamic lighting                                                    |
+| [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)                                 | Customizable debug HUD                                              |
+| [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered) | Realistic sound                                                     |
+| [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                       | Nature ambiance (birds, wind, water)                                |
+| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)                             | 147 new biome/structure-based songs, vanilla silence gaps preserved |
+| [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                         | Animated UI, smooth hotbar, item particles                          |
+| [Traveler\'s Titles](https://modrinth.com/mod/travelers-titles)                                   | RPG-style titles entering biomes/dimensions                         |
+| [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)            | Enhanced mod list screen with badges/categories                     |
+| [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)           | Independent 360° camera rotation in third-person view               |
+| [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare              |
+| [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)           | First-person food/drink shrinking animation, visible in 3rd person  |
 
 ### Inventory & UI
 
-| Mod                                                                                         | Role                                           |
-|---------------------------------------------------------------------------------------------|------------------------------------------------|
-| [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)                                     | Recipe viewer                                  |
-| [Jade](https://www.curseforge.com/minecraft/mc-mods/jade)                                   | Block info HUD                                 |
-| [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons)                     | Extra Jade info panels                         |
-| [Xaero\'s Minimap + World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) | Mapping and waypoints                          |
-| [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                 |
-| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                 |
-| [Harvest With Ease](https://www.curseforge.com/minecraft/mc-mods/harvest-with-ease)           | Right-click crop harvest & replant              |
-| [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups          |
-| [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles |
-| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)          | Animated item pickup notifications             |
-| [Reliable Advancements](https://modrinth.com/mod/reliable-advancements)                   | Overhauled advancements UI with editor/pan/zoom |
-| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict   |
-| [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)           | Shows which mod an item comes from in tooltip  |
+| Mod                                                                                         | Role                                            |
+|---------------------------------------------------------------------------------------------|-------------------------------------------------|
+| [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)                                     | Recipe viewer                                   |
+| [Jade](https://www.curseforge.com/minecraft/mc-mods/jade)                                   | Block info HUD                                  |
+| [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons)                     | Extra Jade info panels                          |
+| [Xaero\'s Minimap + World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) | Mapping and waypoints                           |
+| [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                  |
+| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                  |
+| [Harvest With Ease](https://www.curseforge.com/minecraft/mc-mods/harvest-with-ease)         | Right-click crop harvest & replant              |
+| [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups           |
+| [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles  |
+| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)          | Animated item pickup notifications              |
+| [Reliable Advancements](https://modrinth.com/mod/reliable-advancements)                     | Overhauled advancements UI with editor/pan/zoom |
+| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict    |
+| [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)           | Shows which mod an item comes from in tooltip   |
 
 ### Storage & Travel
 
@@ -125,11 +125,11 @@ Install NeoForge for **1.21.1** (latest recommended release):
 
 ### Infrastructure
 
-| Mod                                                                                                          | Role                                                                     |
-|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                                  | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
-| [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-library) | Config library (Chunk Loaders dependency)                                |
-| [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)         | Core library (Chunk Loaders dependency)                                  |
+| Mod                                                                                                      | Role                                                                     |
+|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
+| [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
+| [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
 
 ### New Dependencies
 
@@ -244,7 +244,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge) 0.2.1                  | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
 | [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
 | [Mekanism TFMG Compatibility](https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
-| [Create: TFMG - Stellaris Compat](https://metamods.net/en/mods/tfmg-stellaris-compat)                                    | Bridges TFMG fuel chain (diesel/gasoline) into Stellaris rocket fuel system                                                        |
+| [Create: TFMG - Stellaris Compat](https://modrinth.com/mod/tfmg-stellaris-compat)                                        | Bridges TFMG fuel chain (diesel/gasoline) into Stellaris rocket fuel system                                                        |
 
 ### How They Work Together
 
@@ -319,15 +319,15 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                                                             | Role                             |
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [YUNG\'s Better Dungeons](https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons)                   | Overhauled dungeons              |
-| [YUNG\'s Better Mineshafts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts)               | Improved mineshafts              |
-| [YUNG\'s Better Strongholds](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)             | Larger, more complex strongholds |
-| [YUNG\'s Better Desert Temples](https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples)       | Multi-room desert temples        |
-| [YUNG\'s Better Jungle Temples](https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples)       | Jungle temples with traps        |
-| [YUNG\'s Better Ocean Monuments](https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments)     | Redesigned ocean monuments       |
-| [YUNG\'s Better Witch Huts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts)               | Expanded witch huts              |
-| [YUNG\'s Better Nether Fortresses](https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses) | Improved nether fortresses       |
-| [YUNG\'s Better Caves](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves)                         | Larger, more varied caves        |
+| [YUNG\'s Better Dungeons](https://modrinth.com/mod/yungs-better-dungeons)                   | Overhauled dungeons              |
+| [YUNG\'s Better Mineshafts](https://modrinth.com/mod/yungs-better-mineshafts)               | Improved mineshafts              |
+| [YUNG\'s Better Strongholds](https://modrinth.com/mod/yungs-better-strongholds)             | Larger, more complex strongholds |
+| [YUNG\'s Better Desert Temples](https://modrinth.com/mod/yungs-better-desert-temples)       | Multi-room desert temples        |
+| [YUNG\'s Better Jungle Temples](https://modrinth.com/mod/yungs-better-jungle-temples)       | Jungle temples with traps        |
+| [YUNG\'s Better Ocean Monuments](https://modrinth.com/mod/yungs-better-ocean-monuments)     | Redesigned ocean monuments       |
+| [YUNG\'s Better Witch Huts](https://modrinth.com/mod/yungs-better-witch-huts)               | Expanded witch huts              |
+| [YUNG\'s Better Nether Fortresses](https://modrinth.com/mod/yungs-better-nether-fortresses) | Improved nether fortresses       |
+| [YUNG\'s Better Caves](https://modrinth.com/mod/yungs-better-caves)                         | Larger, more varied caves        |
 | [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)                                             | New hand-crafted structures      |
 | [Towns & Towers](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)                                 | Better village generation        |
 
