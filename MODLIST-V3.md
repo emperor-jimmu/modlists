@@ -317,8 +317,8 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Structures
 
-| Mod                                                                                                             | Role                             |
-|-----------------------------------------------------------------------------------------------------------------|----------------------------------|
+| Mod                                                                                         | Role                             |
+|---------------------------------------------------------------------------------------------|----------------------------------|
 | [YUNG\'s Better Dungeons](https://modrinth.com/mod/yungs-better-dungeons)                   | Overhauled dungeons              |
 | [YUNG\'s Better Mineshafts](https://modrinth.com/mod/yungs-better-mineshafts)               | Improved mineshafts              |
 | [YUNG\'s Better Strongholds](https://modrinth.com/mod/yungs-better-strongholds)             | Larger, more complex strongholds |
@@ -328,16 +328,16 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [YUNG\'s Better Witch Huts](https://modrinth.com/mod/yungs-better-witch-huts)               | Expanded witch huts              |
 | [YUNG\'s Better Nether Fortresses](https://modrinth.com/mod/yungs-better-nether-fortresses) | Improved nether fortresses       |
 | [YUNG\'s Better Caves](https://modrinth.com/mod/yungs-better-caves)                         | Larger, more varied caves        |
-| [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)                                             | New hand-crafted structures      |
-| [Towns & Towers](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)                                 | Better village generation        |
+| [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)                         | New hand-crafted structures      |
+| [Towns & Towers](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)             | Better village generation        |
 
 ### Dimensions
 
 | Mod                                                                             | Role                                                                                       |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)               | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
-| [Deeper and Darker](https://modrinth.com/mod/deeper-and-darker)                 | The "Otherside" dimension — deep dark themed, warden gear                                  |
-| [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/twilight-forest) | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
+| [Deeper and Darker](https://modrinth.com/mod/deeperdarker)                 | The "Otherside" dimension — deep dark themed, warden gear                                  |
+| [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
 
 ### End Overhaul
 
