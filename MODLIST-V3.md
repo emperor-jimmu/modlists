@@ -140,6 +140,24 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | Deeper and Darker | The "Otherside" dimension — deep dark themed, warden gear |
 | Twilight Forest | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
 
+### End Overhaul
+
+| Mod | Role |
+|-----|------|
+| **BetterEnd NeoForge** v21.0.25 | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
+| **Nullscape** v1.2.14 | End biome transformation — alien/void landscapes, floating islands |
+| **Moog's End Structures** v2.0.3 | New structures to fill the End dimension |
+| **Ender's Delight** v1.3.0 | End-themed food for Farmer's Delight |
+
+### New Dependencies (End Overhaul)
+
+| Mod | Role |
+|-----|------|
+| BCLib NeoForge | Core library — required by BetterEnd |
+| WorldWeaver NeoForge | Worldgen library — required by BetterEnd |
+| WunderLib NeoForge | Utility library — required by BetterEnd |
+| Moog's Structure Lib | Library — required by Moog's End Structures |
+
 ### Navigation
 
 | Mod | Role |
@@ -228,12 +246,12 @@ Already included in Wave 0: AmbientSounds + Constant Music.
 |------|-------|-------|
 | Wave 0 — Foundation | ~30 | Performance, QoL, storage, travel, graves |
 | Wave 1 — Tech | 3 (+2 ore) | Create, Mekanism, AE2 |
-| Wave 2 — Exploration | ~20 | YUNG's collection, regions, dimensions |
+| Wave 2 — Exploration | ~26 | YUNG's collection, regions, dimensions, End overhaul |
 | Wave 3 — Equipment Magic | ~9 | Simply Swords, Apotheosis, Relics, Runes, Skill Tree |
 | Wave 4 — Food | 2 | Farmer's Delight, Brewin' And Chewin' |
 | Wave 5 — Combat | 5 | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise |
 | Wave 6 — Building | 8 | Chipped, Supplementaries, Macaw's, Handcrafted, Building Wands |
-| **Total** | **~77** | All confirmed NeoForge 1.21.1 |
+| **Total** | **~82** | All confirmed NeoForge 1.21.1 |
 
 ---
 
@@ -250,7 +268,7 @@ Already included in Wave 0: AmbientSounds + Constant Music.
 | Let's Do ecosystem | Farmer's Delight + Brewin' And Chewin' |
 | AdventureZ | L_Ender's Cataclysm |
 | Champions | Apotheosis (partial coverage) |
-| BetterEnd (End overhaul) | Vanilla End (gap) |
+| BetterEnd (End overhaul) | BetterEnd NeoForge + Nullscape + Moog's End Structures + Ender's Delight |
 | Ambient Leaves (cosmetic) | Skipped |
 
 ### What's New in V3
