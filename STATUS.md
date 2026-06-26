@@ -8,7 +8,7 @@
 - [x] Interdependency notes for every wave noting cross-mod interactions
 
 ### Wave 0 — Foundation (~38 mods)
-- [x] Performance: Embeddium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium
+- [x] Performance: Sodium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, Constant Music, Immersive UI, Traveler's Titles, Better Modlist
 - [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Chat Heads, Right Click Harvest, Fancy Toasts, Obscure Tooltips, Loot Journal, Better Advancements, Polymorph
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
@@ -22,15 +22,14 @@
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 
 ### Wave 2 — Exploration (~23 mods)
-- [x] Worldgen: Terralith, Tectonic, Amplified Nether, BetterEnd NeoForge, Moog's End Structures
+- [x] Worldgen: Terralith, Tectonic, BetterEnd NeoForge, Moog's End Structures
 - [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
 - [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
-- [x] Navigation: Explorer's Compass, Nature's Compass
+- [x] Navigation: Explorer's Compass
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib
-- [x] Guard Villagers configured for peaceful base defense
 
 ### Wave 3 — Equipment Magic & RPG (~7 mods)
-- [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module disabled)
+- [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
 - [x] Simply Swords, Relics RPG, Runes
 - [x] Skill Tree (RPG Series), Pufferfish's Skills
 - [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons and Twilight Forest bosses
@@ -70,7 +69,7 @@
 - [x] Added Create Big Cannons + Ritchie's Projectile Library (artillery engineering for colony defense)
 - [x] Expanded FD addons: Storage Delight, More Delight, My Nether's Delight, Ocean's Delight
 - [x] Expanded Apotheosis config with socket count, gem types, reforging costs, spawner details, enchanting details
-- [x] Deadly module disabled (chill rule)
+- [x] Deadly module enabled (traps are telegraphed, GraveStone protects items)
 - [x] AE2 channels kept on (logistics puzzle)
 - [x] Mekanism chunk loading disabled (delegated to Chunk Loaders mod)
 - [x] vanilla advancements + Fancy Toasts for progression guidance (no FTB Quests)

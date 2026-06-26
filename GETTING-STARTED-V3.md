@@ -244,6 +244,37 @@ This data pack adds **1000+ new advancements** across 16 tabs — mining, buildi
 
 Right-click a fully grown crop → it breaks and drops, then auto-replants. Works on vanilla crops and most modded ones.
 
+#### Better Third Person
+
+Better Third Person decouples your camera from your character in third-person view. You can look around independently while your character walks in any direction — essential for combat awareness and scenic building.
+
+**How to use**:
+- Press the toggle keybind (default: not set — bind it in Controls → Better Third Person)
+- Once active, your character model moves independently of the camera
+- Great for combat: look behind you while running away
+- Great for building: orbit the camera around your build while placing blocks
+- Works with Eating Animation — you see your character eat in 3rd person
+
+**No config changes needed** — default settings work well.
+
+#### Tooltip Overhaul
+
+Tooltip Overhaul redesigns the tooltip appearance — rounded corners, smoother background, and better text contrast. It works alongside Obscure Tooltips (animated visual effects) without conflict — Tooltip Overhaul handles the background/layout layer, Obscure Tooltips adds the animated frame/glow layer.
+
+**No config needed** — install and forget.
+
+#### Eating Animation
+
+Adds a visible eating animation in both first-person and third-person view. Food visibly shrinks as you eat. Works with Farmer's Delight foods out of the box — no extra config needed.
+
+**No config needed**.
+
+#### Mod Name Tooltip
+
+Hover over any item in your inventory or JEI — the tooltip shows which mod added the item in small text. Helps you learn what belongs to which mod as you explore.
+
+**No config needed**.
+
 #### Chunk Loaders — Infrastructure
 
 Chunk Loaders keep specific chunks loaded even when you're far away or in another dimension. Essential for keeping factories, farms, and your colony running.
@@ -379,6 +410,82 @@ Once you have brass (from zinc + copper in a heated mixer), you unlock:
 | Open Blueprint        | **Not set**             | Opens the blueprint editor                    |
 
 **Goggles** are essential. Craft a pair of engineers goggles early (check JEI). Hold `G` while looking at any Create machine to see its SU consumption, current RPM, and whether it's overstressed.
+
+---
+
+### Create: The Factory Must Grow (TFMG) — Industrial Oil & Steel
+
+TFMG extends Create into the oil age. Drill for crude oil, refine it into fuels, and burn them in diesel engines for massive rotational power. Produce steel at industrial scale and generate electricity with voltage management.
+
+#### Core Concept — Oil Processing
+
+Oil is the central resource of TFMG. You find it in the world, extract it, refine it, and use the byproducts.
+
+**Finding oil**:
+- Oil generates as underground pools (similar to Mekanism's oil, but separate)
+- Find surface seepage in desert and plains biomes — dark patches on the ground
+- Dig down to find oil-bearing sand/stone
+- Use a **Pumpjack** (crafted from Create brass and steel) to extract oil automatically
+
+**Refining crude oil**:
+
+| Step | Machine | Input | Output |
+|------|---------|-------|--------|
+| 1 | **Distillation Tower** | Crude oil | Diesel, gasoline, LPG, lubricant, asphalt |
+| 2 | **Cracker** | Heavy fractions | Lighter fuels |
+| 3 | **Desulfurizer** | Diesel/gasoline | Clean fuel (more efficient) |
+
+Build a **Distillation Tower** (multi-block structure — minimum 4 blocks tall). Feed crude oil into the bottom. Products come out at different heights — lighter products (LPG, gasoline) exit higher, heavier products (diesel, lubricant) exit lower.
+
+#### Diesel Engines — Massive Rotational Power
+
+Diesel engines burn TFMG fuels to generate rotational power. A single diesel engine running on diesel fuel produces significantly more SU than any Create water wheel or windmill — enough to power an entire factory complex.
+
+| Engine | Fuel | SU Output | Best for |
+|--------|------|-----------|----------|
+| **Small Diesel Engine** | Diesel, gasoline | ~2,000 SU | Early oil — single machine power |
+| **Large Diesel Engine** | Diesel, gasoline | ~8,000 SU | Factory-scale power |
+| **Gas Turbine** | LPG | ~16,000 SU | Endgame power generation |
+
+**Fuel comparison**:
+
+| Fuel | Efficiency | Engine type | Byproduct use |
+|------|-----------|-------------|--------------|
+| Diesel | High | Diesel engine | Most efficient general fuel |
+| Gasoline | Medium | Diesel engine | Good backup fuel, less efficient |
+| LPG | Very High | Gas turbine | Best power density, limited quantity |
+| Lubricant | — | Not a fuel | Used in steelmaking and machines |
+| Asphalt | — | Not a fuel | Decorative building blocks |
+
+**Note**: TFMG diesel engines are separate from Create's own steam engines. They provide more power per block but require the oil processing chain to run. Plan your progression: water wheel → steam engine → diesel engine.
+
+#### Steel Blast Furnace
+
+TFMG adds a multi-block **Steel Blast Furnace** for industrial-scale steel production. Unlike Mekanism's Metallurgic Infuser (which produces steel slowly), the Blast Furnace produces steel in bulk.
+
+**Setup**:
+1. Build the multi-block structure (check JEI/Ponder for the exact pattern)
+2. Feed iron ingots and coal/coke into the top
+3. Power with a diesel engine or Create rotational power
+4. Liquid steel pours out the bottom — cast it into steel ingots or blocks
+
+**Why use it**: Once you're producing oil and running diesel engines, the Blast Furnace produces steel faster than the Metallurgic Infuser. Use it to mass-produce steel for Mekanism machines, Create trains, and Stellaris rocket components.
+
+#### Aluminum
+
+TFMG adds aluminum as a new metal. **Bauxite ore** generates in the Overworld (typically at mid-to-high Y-levels). Process it through a multi-block smelter to produce aluminum ingots.
+
+**Uses**:
+- Aluminum is used in advanced TFMG machines
+- Feeds into Mekanism's advanced alloy processing
+- Used in some Stellaris rocket components (via TFMG-Stellaris Compatibility)
+
+#### Progression Notes
+
+- TFMG is a **Wave 1 addition** — start exploring oil after you have basic Create (water wheel + hand crank) and basic Mekanism (Enrichment Chamber)
+- The Distillation Tower requires brass-tier Create components (brass casing, brass funnels)
+- Diesel engines are a mid-to-late game power upgrade — they replace/supplement water wheels and windmills
+- Mekanism TFMG Compatibility (installed alongside TFMG) resolves overlapping recipes between TFMG and Mekanism — see the config section below for details
 
 ---
 
@@ -598,6 +705,9 @@ By mid-game, you should have all three mods working together:
 | **Power bridge**       | Crafts & Additions | Electric motors/alternators convert kinetic SU ↔ FE (Mek/Stellaris) |
 | **Rail transport**     | Steam 'n' Rails | Expanded train system — new tracks, semaphores, coupling blocks     |
 | **Transport**          | Create        | Conveyor belts move items between processing lines                  |
+| **Oil processing**     | TFMG          | Distillation Tower → diesel, gasoline, LPG. Crack heavy fractions  |
+| **Diesel power**       | TFMG          | Diesel engines produce 2,000–16,000 SU from refined oil            |
+| **Steel production**   | TFMG          | Multi-block Blast Furnace produces steel in bulk                   |
 | **Ore finding**        | Skniro's Ores | New ore types generate in the Nether and End for mid-game expansion |
 
 ### Nether & End Ores (Skniro's)
@@ -609,6 +719,21 @@ Skniro's Nether and End Ores adds new ore types to both dimensions. These ores a
 **End ores**: Generate on the End islands after defeating the Ender Dragon. These are higher-tier materials used in advanced Mekanism machines and Create components.
 
 **Tip**: Use the Explorer's Compass (Wave 2) to find specific biomes where certain ores generate. Some ores are biome-specific.
+
+### Mekanism TFMG Compatibility — Recipe Resolution
+
+The **Mekanism TFMG Compatibility** mod resolves overlapping recipes between Mekanism and TFMG. Both mods add similar processes (steel production, oil processing, plastic/rubber), and this compatibility layer ensures they work together rather than redundantly.
+
+**What changes**:
+
+| Feature | Resolution |
+|---------|-----------|
+| **Steel production** | Mekanism's steel recipe (Metallurgic Infuser) is disabled. Use TFMG's Blast Furnace instead — it's the intended steel source for this pack |
+| **Oil processing** | Both mods' oil types are unified. TFMG's Distillation Tower is the primary oil processor; Mekanism's oil chain feeds into it |
+| **Plastic / Rubber** | TFMG's plastic/rubber recipes take priority. Mekanism's polyethylene chain is disabled to avoid duplicate materials |
+| **Circuitry** | Mekanism's basic control circuit recipe uses TFMG's aluminum where applicable |
+
+**Config**: All toggles are in `config/mekanismtfgmcompat-common.toml`. Default settings are correct for this pack — no changes needed unless you want to re-enable a specific Mekanism recipe.
 
 ### Late Game
 
@@ -637,8 +762,11 @@ Wave 1 is the largest and takes the most sessions. Pace yourself — each sessio
 | **Session 6 — Mekanism expansion** | Add Crusher for 3x ore. Build Electrolytic Separator for gas processing. Upgrade machines to Advanced tier | 3x ore multiplication, gas infrastructure |
 | **Session 7 — Integration** | Place Import Bus on Enrichment Chamber → items flow into AE2. Place Export Bus to supply Create machines. Connect Create alternator to Mekanism power | Cross-mod automation bridge |
 | **Session 8+ — Scaling up** | Build Digital Miner. Expand AE2 drives. Add Create train between base and outpost. Work toward 5x ore processing | Automated mining, bulk transport |
+| **Session 9 — TFMG start** | Find oil (desert/plains surface pools). Craft Pumpjack + Distillation Tower. Build Small Diesel Engine. Process oil into diesel fuel | Oil refining online, massive SU upgrade |
+| **Session 10 — TFMG expansion** | Build the multi-block Steel Blast Furnace. Mass-produce steel. Find bauxite for aluminum. Upgrade to Large Diesel Engine | Industrial steel, aluminum processing |
+| **Session 11+ — TFMG + Mek integration** | Wire diesel engines to power Mekanism processing. Use TFMG steel for Mekanism machines. Connect Mekanism TFMG Compatibility configs | Cross-mod fuel-to-processing pipeline |
 
-**Pacing tip**: You don't need to finish Wave 1 before starting Wave 1.5 (colony) or Wave 2 (exploration). Dip into exploration between factory sessions. The colony takes real-world days to grow, so start it early.
+**Pacing tip**: You don't need to finish Wave 1 before starting Wave 1.5 (colony) or Wave 2 (exploration). Dip into exploration between factory sessions. The colony takes real-world days to grow, so start it early. TFMG oil is a mid-game addition — start it after you have brass Create components and basic Mekanism processing.
 
 ---
 
@@ -1813,8 +1941,32 @@ Once you have a foothold on another planet, set up automated resource extraction
 | **Mekanism ore processing** | Bring planet ores (desh, ostranium, tharsite) back to your main Mekanism processing line. 5x multiplication works on Stellaris ores                                                                     |
 | **AE2 storage**             | Store Stellaris materials in your ME drive. Set up autocrafting for rocket components. Place an ME interface + storage bus at your off-world base with a quantum link or P2P tunnel to the main network |
 | **Create transport**        | Use Create trains to move rocket materials from the launch pad area to your main base. Conveyor belts move components from storage to the Rocket Station                                                |
+| **TFMG fuel**               | Refine diesel/gasoline in TFMG's Distillation Tower → use it as rocket fuel for Stellaris (requires TFMG-Stellaris Compatibility). Single fuel chain from oil well to launch pad                        |
 | **Sophisticated Backpacks** | Backpacks with netherite upgrades carry enough oxygen tanks and supplies for extended planetary expeditions                                                                                             |
 | **Farmer's Delight**        | Cooked meals are eatable in space (with oxygen present) — bring hearty stews and sandwiches instead of raw ingredients                                                                                  |
+
+### Wave 7 Addons
+
+Three additions extend Stellaris beyond its core experience:
+
+#### Potentials API — Required Library
+
+Potentials API is a mandatory dependency for Stellaris. Install it without reservation — it provides networking and capability code that Stellaris's rocket systems, oxygen management, and planetary mechanics rely on. No user-facing features, no config, no gameplay changes.
+
+**No config needed** — library mod, install and forget.
+
+#### TFMG-Stellaris Compatibility — Fuel Bridge
+
+The **Create: TFMG - Stellaris Compatibility** mod bridges TFMG's oil refining with Stellaris's rocket fuel system. Without this mod, Stellaris has its own fuel crafting recipe (oil → fuel refinery). With it, you can use TFMG's diesel and gasoline as rocket fuel directly.
+
+**What it changes**:
+
+- TFMG diesel can fuel Stellaris rockets (no need for Stellaris's separate fuel refinery if you have TFMG's Distillation Tower)
+- TFMG gasoline also works as rocket fuel (lower efficiency than diesel)
+- Stellaris's own fuel recipe remains available as a fallback
+- Single fuel chain: find oil → TFMG Distillation Tower → diesel → rocket fuel
+
+**Config**: No changes needed. Compatibility works automatically once both TFMG and Stellaris are installed.
 
 ### Progression Placement
 

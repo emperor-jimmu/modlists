@@ -29,6 +29,9 @@
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                         | Animated UI, smooth hotbar, item particles      |
 | [Traveler\'s Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles)               | RPG-style titles entering biomes/dimensions     |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist)                     | Enhanced mod list screen with badges/categories |
+| [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)           | Independent 360° camera rotation in third-person view |
+| [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare |
+| [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)           | First-person food/drink shrinking animation, visible in 3rd person |
 
 ### Inventory & UI
 
@@ -47,6 +50,7 @@
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)          | Animated item pickup notifications             |
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)     | Prettified advancements screen UI              |
 | [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict   |
+| [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)           | Shows which mod an item comes from in tooltip  |
 
 ### Storage & Travel
 
@@ -113,9 +117,32 @@
 - `writeStatisticsJson` = `true` — Builds cumulative drop statistics over time.
 - `showSummaryOnDisconnect` = `true` — Shows session summary on disconnect. Satisfying to see what you accomplished.
 
+**Sophisticated Storage / Sophisticated Backpacks** (`config/sophisticatedstorage-common.toml`, `config/sophisticatedbackpacks-common.toml`):
+
+- **Stack size multiplier**: `1.0` (default). Vanilla stack sizes are preserved. This maintains the storage pressure that motivates AE2 migration in Phase 2 — if storage were too generous in Phase 1, the transition to digital storage would feel less impactful.
+- **Upgrade tiers**: all enabled (copper → iron → gold → diamond → netherite). Each tier provides a meaningful but incremental capacity upgrade. The full tier chain gives a clear upgrade path through Phase 1 before AE2 comes online.
+- **Backpack size**: default (27 base slots, upgradable to 54+ with tier upgrades). Sufficient for early-game inventory management without trivializing organized base storage.
+- **Backpack crafting costs**: default. Basic backpack requires leather, wool, string, and iron; higher tiers require the corresponding material upgrade smithing templates.
+- All other settings at default. The mods' built-in slot locking, toolbelt, and magnet functions work as designed. No balance tuning needed — AE2 naturally replaces Sophisticated Storage as the primary storage system in Phase 2, while backpacks remain useful for portable inventory throughout the game.
+
+**JEI** (`config/jei/` or Mod Menu → JEI → Config):
+
+- **Search mode**: `index` — Uses JEI's indexed search mode. With 112+ mods in the pack, indexed search is significantly faster and more reliable than realtime scanning. Index rebuilds automatically when mods are added or removed.
+- **Cheat mode**: `disabled` — Survival-only pack. Cheat mode (giving items from JEI) is disabled server-side. Single-player players can toggle it via `Ctrl+O` for creative testing if desired.
+- **Item hiding**: none pre-configured by the pack. JEI's built-in hiding GUI (`Ctrl+H` over an item) lets players hide individual items per-session. All mod items are visible in JEI by default to support discovery and progression planning.
+- **Keybinds**: default — `R` for recipe, `U` for usage/top, `Ctrl+H` to hide/show items, `Ctrl+O` to toggle cheat mode (single-player only).
+
+**Jade** (`config/jade/` or Mod Menu → Jade → Config):
+
+- **HUD position**: bottom-center (default). Displays block name, mod source, and extended info (FE, fluid, inventory contents) when looking at any block or entity.
+- **Block info detail**: full — Shows all available info for modded blocks: Mekanism machine progress, AE2 channel status, Create stress capacity, Farmer's Delight cooking progress, Apotheosis gem/socket data. Players can customize per-mod verbosity via Jade's config GUI.
+- **Entity info**: enabled — Shows mob name, health, and status effects. Essential for identifying Apotheosis elite affixes and L_Ender's Cataclysm boss phases.
+- **"Require sneak"**: `false` — Info appears on any looking-at-target, not just while sneaking. Reduces UI friction during exploration and combat.
+- All other settings at default. Players can customize per-mod info panels, HUD position, and callout style through Mod Menu → Jade at any time.
+
 **Chunk Loaders**: No config changes needed. Default chunk loader range (1 chunk per loader) and recipe costs are appropriate. Players can craft multiple loaders for larger bases. The loader GUI is intuitive — place, toggle on, done.
 
-**No config changes needed for**: Sodium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium, LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, Constant Music, Immersive UI, Traveler's Titles, Better Modlist, JEI, Jade, Jade Addons, Xaero's Minimap & World Map, AppleSkin, Mouse Tweaks, Chat Heads, Right Click Harvest, Fancy Toasts, Obscure Tooltips, Loot Journal, Better Advancements, Polymorph, Sophisticated Storage, Sophisticated Backpacks, Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib, Cloth Config, YACL, Curios API, CreativeCore, OctoLib, Obscure API, Fragmentum, Complementary Unbound.
+**No config changes needed for**: Sodium, Iris, Radium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, Noisium, LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, Constant Music, Immersive UI, Traveler's Titles, Better Modlist, Better Third Person, Tooltip Overhaul, Eating Animation, Xaero's Minimap & World Map, AppleSkin, Mouse Tweaks, Chat Heads, Right Click Harvest, Fancy Toasts, Obscure Tooltips, Better Advancements, Polymorph, Mod Name Tooltip, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib, Cloth Config, YACL, Curios API, CreativeCore, OctoLib, Obscure API, Fragmentum, Complementary Unbound.
 
 All of these work well out of the box. Their defaults align with the pack's vision. Any customization is cosmetic (shader quality, UI animation speed, map colors) and left to player preference.
 
@@ -149,6 +176,9 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [Create Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) 1.6.0                       | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                        |
 | [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge) 0.2.1              | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                              |
+| [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) (TFMG)               | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage       |
+| [Mekanism TFMG Compatibility](https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                                       |
+| [Create: TFMG - Stellaris Compat](https://metamods.net/en/mods/tfmg-stellaris-compat)                              | Bridges TFMG fuel chain (diesel/gasoline) into Stellaris rocket fuel system                                                               |
 
 ### How They Work Together
 
@@ -189,7 +219,28 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 **Create**: No configuration changes needed. Create's default config is well-balanced. Ponder system, stress units, speed/force ratios, and recipe defaults all align with the intended progression. Block configs (like fan range or water wheel output) are at standard values.
 
+**Create Crafts & Additions** (`config/createaddition-common.toml`):
+
+- **Electric motor**: default FE generation rate (256 FE/t at maximum speed). The motor converts rotational kinetic energy into Forge Energy at a rate that supports early AE2 controllers and Mekanism basic machines without trivializing power infrastructure.
+- **Alternator**: default efficiency (80%). Converts FE back into rotational force. Lossy conversion ensures that creating FE from kinetic power and converting back is less efficient than direct mechanical power — this preserves Create's mechanical design as the primary automation paradigm.
+- **Rolling mill**: default recipe outputs. Rolling mill recipes for rods, wires, and plates match Mekanism's processing outputs without duplication. Silver and electrum recipes feed into Mekanism's ore processing chain.
+- All other settings at default. The mod's wire/rod system, connector rendering, and charging station balance are appropriate for Phase 2 integration.
+
+**Steam 'n' Rails** (`config/steam_n_rails-common.toml`):
+
+- **Track recipe costs**: default. Custom tracks (spruce, monorail, etc.) require standard Create track materials plus their respective wood types. Costs are proportional to their decorative value — no balance concerns.
+- **Semaphore range**: default (8 blocks for standard, 16 blocks for distant). The two-tier semaphore system provides adequate signalling granularity for complex rail networks in Phase 2 and Phase 3 megabases.
+- **Conductor mob**: enabled at default spawn rates. The conductor acts as a mobile coupling/decoupling tool, adding a gameplay layer to train logistics without being essential for basic operations.
+- **Train speed**: default. No modifications to Create's base train speed limits. Rail networks expand naturally with colony growth.
+- All other settings at default. Steam n' Rails adds content (tracks, semaphores, conductor) without altering Create's core balance.
+
 **Skniro's Nether & End Ores**: No configuration changes. Default ore distribution in Nether and End dimensions is balanced for mid-game expansion. Tune spawn rates in `orespawn_config.json` if playtesting shows ores too sparse or too dense.
+
+**Create: The Factory Must Grow (TFMG)** (`config/tfmg-common.toml`): No config changes needed from defaults. Default oil vein size, diesel engine efficiency, and blast furnace temperatures are balanced for mid-game Create infrastructure.
+
+**Mekanism TFMG Compatibility** (`config/mekanism_tfmg_compat/`): Compat mod handles recipe deduplication automatically. If specific Mekanism recipes should not be overwritten, disable them via the per-recipe toggles in the config file.
+
+**Create: TFMG — Stellaris Compat**: No config file. It overrides Stellaris fuel recipes to accept TFMG diesel/gasoline. Works automatically when both TFMG and Stellaris are installed.
 
 **Interdependency notes for Wave 1:**
 
@@ -198,6 +249,9 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 - **Steam 'n' Rails** expands Create's train system with new tracks, semaphores, conductor mobs, and coupling blocks. Essential for moving resources between MineColonies, Mekanism factories, and AE2 storage across a sprawling base.
 - Mekanism's 5x ore processing (Chemical Dissolution Chamber → Washer → Crystallizer) outclasses Create's Crushing Wheels (1.5x) and Millstone (1x) for ore multiplication. This is intentional — Create handles mechanical automation and component crafting, Mekanism handles industrial processing. Neither obsoletes the other.
 - AE2's Storage Bus on a Sophisticated Storage barrel makes early-mid game storage migration seamless. Place a Storage Bus on your barrel wall, configure it to show contents in the ME terminal, and transition gradually to full digital storage.
+- **Create: The Factory Must Grow** adds oil drilling, distillation towers, blast furnaces, and diesel engines — expanding Create's mechanical toolkit into heavy industry. Its steel replaces Mekanism's steel (TFMG's blast furnace is the intended steel source; Mekanism's steel recipe is disabled by the Mekanism TFMG Compat mod). TFMG aluminum and plastic feed into Mekanism's advanced processing chains.
+- **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both JEI item blacklist config and per-recipe toggles are available for pack tuning.
+- **Create: TFMG - Stellaris Compat** allows TFMG diesel and gasoline to fuel Stellaris rockets, creating a direct fuel-production pipeline from TFMG refineries to space launch. This bridges Wave 1 heavy industry with Wave 7 space exploration.
 
 ---
 
@@ -219,10 +273,12 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 **MineColonies** — no config changes needed initially. Default colony settings (3-block worker range, normal build speed, 1-day child growth) are balanced. The mod's internal progression (builder→miner→farmer→crafter→guard, then research tree) naturally gates itself — you can't build a level 3 mine until you've leveled the builder and accumulated resources.
 
+**Research tree gating (design intent, not implemented via config)**: MineColonies' research system unlocks colony-wide capabilities (e.g., "Industrial Revolution" at Colony level 3, 5000 research points). In this pack, these research nodes serve as **milestone gates** that signal Phase 2 readiness rather than hard-recipe locks — for example, a "Mekanism Metallurgy" research node at Colony level 2 provides a clear goal (reach Colony level 2 to justify building Mekanism machines). Actual recipe gating (e.g., Mekanism Atomic Alloy requiring a research node) would require either KubeJS/CraftTweaker scripting or a MineColonies research data pack. Neither is included in this pack. Players self-regulate: if your colony is still level 1, you aren't ready for Mekanism. The progression pillars (AGENTS.md) define the intent — playtesting determines if soft gating is sufficient or if hard gating via a data pack becomes necessary.
+
 **Interdependency notes for Wave 1.5:**
 
 - MineColonies guards (deployed via the Town Hall's "Guard Tower" building) patrol your base perimeter, reducing the need to secure every wall gap manually. Their effectiveness scales with the Guard Tower level and the colony's skill research. This creates a natural progression — automated base defense grows as your colony does.
-- MineColonies Colony Research unlocks custom recipes that gate endgame tech. For example, Mekanism's Atomic Alloy can require "Industrial Revolution" research (Colony level 3, 5000 research points). This enforces the Phase 1→2 progression curve without artificial item bans.
+- MineColonies Colony Research milestones signal Phase 2 progression readiness. For example, the "Industrial Revolution" research (Colony level 3, 5000 research points) serves as a soft gate — by the time you reach it, you have the colony infrastructure to support Mekanism and AE2. Hard recipe gating (e.g., Atomic Alloy locked behind research) requires a data pack or scripting mod and is not implemented in this pack — the progression pillars in AGENTS.md define the intent, and playtesting determines if soft gating is sufficient.
 - Chunk Loaders (Wave 0) are essential for MineColonies — they keep workers active while you explore other dimensions. Place at least one at your colony after setting up your base.
 
 ---
@@ -296,7 +352,18 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 - `PortalCreation` = `flower_pool` (default) — Classic portal recipe: flowers surrounding a 2×2 water pool, throw in a diamond. Keeps the dimension entry ritual intact.
 - `DisableProgression` = `false` (default) — Boss progression gates remain active. They structure the dimension's content and give clear progression goals.
 
-**YUNG's Better Caves**: No config changes. Default cave generation parameters work well with Tectonic's deeper terrain and Terralith's biome variety.
+**YUNG's Better series** — all 10 modules use default configs. Default structure frequency, loot tables, and mob spawning parameters are balanced for the pack's difficulty curve and exploration density. Per-mod details:
+
+- **Better Caves**: Default generation parameters work well with Tectonic's deeper terrain and Terralith's biome variety. Caves are larger and more varied without overcrowding.
+- **Better Dungeons**: Default spawn rate (~1 per 300 blocks). Increased dungeon complexity provides loot density appropriate for Phase 2 Apotheosis gem acquisition.
+- **Better Mineshafts**: Default generation. Mineshafts are roomier with better loot distribution — reduces tedium while preserving the exploration feel.
+- **Better Strongholds**: Default size and loot. Strongholds remain the gateway to the End. Apotheosis gems may appear in stronghold chests.
+- **Better Desert Temples**: Default frequency. Multi-room temples offer mid-tier loot for Phase 1-2 exploration.
+- **Better Jungle Temples**: Default. Trap mechanics add risk-reward — GraveStone protects items if a trap triggers.
+- **Better Ocean Monuments**: Default. Guardian density and loot at standard values. Monument exploration is a mid-game challenge with reliable loot rewards.
+- **Better Witch Huts**: Default. Cat spawns and potion ingredient loot at standard rates. Minor exploration target.
+- **Better Nether Fortresses**: Default. Blaze spawner density and fortress chest loot at standard values. Nether access is expected by mid-Phase 2.
+- **Structure frequency tuning**: If playtesting shows structure density too high or too low, each YUNG module has a separate config file at `config/yungsbetter<module>/` with `structureSeparation` and `structureSpacing` values. Adjust per-mod without affecting other modules.
 
 **Terralith, Tectonic**: No config changes. Data-driven worldgen — no config files to override. Default generation is the intended experience.
 
@@ -531,10 +598,15 @@ Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space
 | Mod                                                                               | Role                                     |
 |-----------------------------------------------------------------------------------|------------------------------------------|
 | [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader library (already in Wave 0) |
+| [Potentials API](https://www.curseforge.com/minecraft/mc-mods/potentials)         | Required library (Stellaris dependency)   |
 
 Sky Aesthetics is embedded in Stellaris — no separate install needed.
 
-Stellaris includes its own structures across all planets (ruins, temples, mines, crash sites, outposts) — no addon needed for content.
+### Addons
+
+| Mod                                                                                                                       | Role                                              |
+|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| [Create: TFMG — Stellaris Compat](https://metamods.net/en/mods/tfmg-stellaris-compat)                                     | Bridges TFMG diesel/gasoline into Stellaris rocket fuel (listed in Wave 1 as well) |
 
 ### Integration with Tech Mods
 
@@ -572,8 +644,8 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Count      | Notes                                                          |
 |----------------------------|------------|----------------------------------------------------------------|
-| Wave 0 — Foundation        | ~41        | Performance, QoL, storage, travel, graves, UI, chunk loading    |
-| Wave 1 — Tech              | 5 (+2 ore) | Create + 2 addons, Mekanism, AE2                               |
+| Wave 0 — Foundation        | ~44        | Performance, QoL, storage, travel, graves, UI (+Better Third Person, Tooltip Overhaul, Eating Animation, Mod Name Tooltip), chunk loading |
+| Wave 1 — Tech              | 7 (+2 ore) | Create + 5 addons (C&A, Steam 'n' Rails, TFMG, Mekanism TFMG Compat, TFMG-Stellaris Compat), Mekanism, AE2 |
 | Wave 1.5 — Colony          | 5          | MineColonies (4 deps)                                          |
 | Wave 2 — Exploration       | ~25        | YUNG's collection, Terralith/Tectonic, dimensions, End, aircraft |
 | Wave 3 — Equipment Magic   | ~7         | Simply Swords, Apotheosis, Relics, Runes, Skill Tree           |
@@ -581,8 +653,8 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 4.5 — Quests          | 1          | Bountiful (procedural bounty boards in villages)               |
 | Wave 5 — Combat            | 7          | Better Combat, Mutant Monsters, Cataclysm, Cannons, Dungeons   |
 | Wave 6 — Building          | 8          | Chipped, Supplementaries, Macaw's, Handcrafted, Building Wands |
-| Wave 7 — Space Exploration | ~1         | Stellaris (core)                                               |
-| **Total**                | **~107**   | All confirmed NeoForge 1.21.1                                  |                                                              |
+| Wave 7 — Space Exploration | ~2         | Stellaris (core) + Potentials API                              |
+| **Total**                | **~112**   | All confirmed NeoForge 1.21.1                                  |                                                              |
 
 ### What's New in V3
 
@@ -601,3 +673,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 - Create Crafts & Additions (kinetic↔FE bridge, electric motors, rolling mill)
 - Steam 'n' Rails NeoForge (expanded train system, new tracks, semaphores)
 - Immersive Aircraft (flyable airships and aircraft for dimension exploration)
+- Better Third Person + Tooltip Overhaul + Eating Animation + Mod Name Tooltip (UI refinement set)
+- Create: The Factory Must Grow (oil refining, diesel engines, steel, aluminum)
+- Mekanism TFMG Compatibility (recipe bridges between Mekanism and TFMG)
+- Potentials API (missing Stellaris dependency)
