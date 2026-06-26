@@ -6,89 +6,92 @@
 
 | Mod              | Role                                        |
 |------------------|---------------------------------------------|
-| Embeddium        | Rendering engine (Sodium port)              |
-| Iris             | Shader loader (v1.8.14, has NeoForge build) |
-| Radium           | Server-side optimization (Lithium port)     |
-| Distant Horizons | LOD rendering                               |
-| Continuity       | Connected textures                          |
-| ModernFix        | All-in-one perf + bug fixes                 |
-| ImmediatelyFast  | Immediate-mode rendering                    |
-| Entity Culling   | Hide off-screen entities                    |
-| Dynamic FPS      | Background FPS reduction                    |
-| Noisium          | Worldgen optimization                       |
+| [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)        | Rendering engine (Sodium port)              |
+| [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)             | Shader loader (v1.8.14, has NeoForge build) |
+| [Radium](https://www.curseforge.com/minecraft/mc-mods/radium)           | Server-side optimization (Lithium port)     |
+| [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) | LOD rendering                               |
+| [Continuity](https://www.curseforge.com/minecraft/mc-mods/continuity)       | Connected textures                          |
+| [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix)        | All-in-one perf + bug fixes                 |
+| [ImmediatelyFast](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast)  | Immediate-mode rendering                    |
+| [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)   | Hide off-screen entities                    |
+| [Dynamic FPS](https://www.curseforge.com/minecraft/mc-mods/dynamic-fps)      | Background FPS reduction                    |
+| [Noisium](https://www.curseforge.com/minecraft/mc-mods/noisium)          | Worldgen optimization                       |
 
 ### Visual & Client QoL
 
 | Mod                      | Role                                            |
 |--------------------------|-------------------------------------------------|
-| LambDynamicLights        | Dynamic lighting                                |
-| BetterF3                 | Customizable debug HUD                          |
-| Sound Physics Remastered | Realistic sound                                 |
-| AmbientSounds            | Nature ambiance (birds, wind, water)            |
-| Constant Music           | Continuous music (no silence gaps)              |
-| Immersive UI             | Animated UI, smooth hotbar, item particles      |
-| Traveler's Titles        | RPG-style titles entering biomes/dimensions     |
-| Better Modlist           | Enhanced mod list screen with badges/categories |
+| [LambDynamicLights](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights)        | Dynamic lighting                                |
+| [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)                 | Customizable debug HUD                          |
+| [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered) | Realistic sound                                 |
+| [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)            | Nature ambiance (birds, wind, water)            |
+| [Constant Music](https://www.curseforge.com/minecraft/mc-mods/constant-music)           | Continuous music (no silence gaps)              |
+| [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)             | Animated UI, smooth hotbar, item particles      |
+| [Traveler\'s Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles)        | RPG-style titles entering biomes/dimensions     |
+| [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist)           | Enhanced mod list screen with badges/categories |
 
 ### Inventory & UI
 
 | Mod                         | Role                                           |
 |-----------------------------|------------------------------------------------|
-| JEI                         | Recipe viewer                                  |
-| Jade                        | Block info HUD                                 |
-| Jade Addons                 | Extra Jade info panels                         |
-| Xaero's Minimap + World Map | Mapping and waypoints                          |
-| AppleSkin                   | Food hunger/saturation overlay                 |
-| Mouse Tweaks                | Inventory management shortcuts                 |
-| Chat Heads                  | Chat avatars                                   |
-| Right Click Harvest         | Right-click crop harvest                       |
-| Fancy Toasts                | Beautiful animated advancement popups          |
-| Obscure Tooltips            | Animated tooltips with 3D models and particles |
-| Loot Journal                | Animated item pickup notifications             |
-| Better Advancements         | Prettified advancements screen UI              |
-| Polymorph                   | Choose crafting result when recipes conflict   |
+| [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)                         | Recipe viewer                                  |
+| [Jade](https://www.curseforge.com/minecraft/mc-mods/jade)                        | Block info HUD                                 |
+| [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons)                 | Extra Jade info panels                         |
+| [Xaero\'s Minimap + World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) | Mapping and waypoints                          |
+| [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                   | Food hunger/saturation overlay                 |
+| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                | Inventory management shortcuts                 |
+| [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads)                  | Chat avatars                                   |
+| [Right Click Harvest](https://www.curseforge.com/minecraft/mc-mods/right-click-harvest)         | Right-click crop harvest                       |
+| [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                | Beautiful animated advancement popups          |
+| [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)            | Animated tooltips with 3D models and particles |
+| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)                | Animated item pickup notifications             |
+| [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)         | Prettified advancements screen UI              |
+| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                   | Choose crafting result when recipes conflict   |
 
 ### Storage & Travel
 
 | Mod                     | Role                          |
 |-------------------------|-------------------------------|
-| Sophisticated Storage   | Upgradable barrels/chests     |
-| Sophisticated Backpacks | Portable inventory            |
-| Waystones               | Fast travel between waypoints |
-| GraveStone Mod          | Keep inventory on death       |
+| [Sophisticated Storage](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage)   | Upgradable barrels/chests     |
+| [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) | Portable inventory            |
+| [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)               | Fast travel between waypoints |
+| [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)          | Keep inventory on death       |
 
 ### New Dependencies
 
 | Mod              | Role                                     |
 |------------------|------------------------------------------|
-| Cloth Config     | Config screen library                    |
-| Architectury API | Cross-loader compatibility               |
-| YACL             | Config library                           |
-| Curios API       | Accessory slots (replaces Trinkets)      |
-| CreativeCore     | Library (AmbientSounds)                  |
-| OctoLib          | Library (Immersive UI)                   |
-| Obscure API      | Library (Obscure Tooltips, Loot Journal) |
-| Fragmentum       | Library (Loot Journal)                   |
+| [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config)     | Config screen library                    |
+| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility               |
+| [YACL](https://modrinth.com/mod/yacl)             | Config library                           |
+| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)       | Accessory slots (replaces Trinkets)      |
+| [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)     | Library (AmbientSounds)                  |
+| [OctoLib](https://modrinth.com/mod/octo-lib)          | Library (Immersive UI)                   |
+| [Obscure API](https://modrinth.com/mod/obscure-api)      | Library (Obscure Tooltips, Loot Journal) |
+| [Fragmentum](https://modrinth.com/mod/fragmentum)       | Library (Loot Journal)                   |
 
 ### Shaderpack
 
 | Shaderpack            | Description                                                      |
 |-----------------------|------------------------------------------------------------------|
-| Complementary Unbound | Two visual styles, Potato→Ultra profiles, block-specific effects |
+| [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-shaders) | Two visual styles, Potato→Ultra profiles, block-specific effects |
 
 ### Configuration — Wave 0
 
 **Waystones** (`config/waystones-common.toml`):
+
 - `inventoryButton` = `"any"` — Opens waystone menu from inventory without a keybind. Smooths exploration in all phases.
 - `enableCosts` = `false` — Free teleportation. Supports chill rule.
 - `enableCooldowns` = `false` — No cooldown. Teleport as often as needed.
 - `spawnInVillages` = `"REGULAR"` — Default village waystone frequency. Rewards exploration.
 
 **Tombstone (GraveStone Mod)** (`config/tombstone-common.toml`):
+
 - `grave.keepExperience` = `true` — Keep all XP on death. Complements the Skill Tree (Wave 3) — losing XP would undermine RPG progression.
 - `grave.protectionDuration` = `86400` — 24 hours of grave protection. Gives the player time to return without anxiety.
 
 **Aether** (`config/aether-common.toml`):
+
 - `"Use default Curios' menu"` = `true` — Uses the Curios API menu instead of Aether's separate accessories screen. Reduces UI fragmentation.
 - `"Gives player Aether Portal Frame item"` = `false` — Player must build the portal manually (classic experience).
 - `"Gives starting loot on entry"` = `true` — Grants a Book of Lore and Golden Parachutes on first entry. Gentle onboarding.
@@ -97,6 +100,7 @@
 - `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
 
 **Guard Villagers** (`config/guardvillagers-common.toml`):
+
 - `"How many guards should spawn in a village?"` = `6` — Enough guards for basic village defense without trivializing combat.
 - `"Allow guards to teleport if following the player"` = `true` — Guards keep up with player movement across terrain.
 - `"Mob Blacklist"` includes `"minecraft:creeper"` and `"minecraft:enderman"` — Prevent unnecessary guard aggro on creepers (explosion risk) and endermen (can't fight them safely).
@@ -104,6 +108,7 @@
 - `"Profession Whitelist for guard conversion"` = `["nitwit", "none"]` — Only nitwits and unemployed villagers can be converted to guards. Protects profession-locked villagers.
 
 **Loot Journal** (`config/Obscuria/loot-journal.toml`):
+
 - `writeSessionJson` = `true` — Saves per-session gain/loss data for player reference.
 - `writeStatisticsJson` = `true` — Builds cumulative drop statistics over time.
 - `showSummaryOnDisconnect` = `true` — Shows session summary on disconnect. Satisfying to see what you accomplished.
@@ -124,9 +129,9 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 | Mod                     | Role                                                                                                                                             |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Create** 6.0.10       | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains            |
-| **Mekanism** 10.7.19.85 | Industrial processing — ore multiplication (2x→5x), digital miner, fusion reactor, superdense energy storage, MekaSuit (flight, invulnerability) |
-| **AE2** 19.2.17         | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                                    |
+| [**Create**](https://www.curseforge.com/minecraft/mc-mods/create) 6.0.10       | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains            |
+| [**Mekanism**](https://www.curseforge.com/minecraft/mc-mods/mekanism) 10.7.19.85 | Industrial processing — ore multiplication (2x→5x), digital miner, fusion reactor, superdense energy storage, MekaSuit (flight, invulnerability) |
+| [**AE2**](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 19.2.17         | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                                    |
 
 ### How They Work Together
 
@@ -143,17 +148,19 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 |----------------------------|----------------------------------------------|
 | Create (built-in)          | Zinc, brass, copper                          |
 | Mekanism (built-in)        | Osmium, tin, lead, uranium, fluorite         |
-| Skniro's Nether & End Ores | Additional ores in Nether and End dimensions |
+| [Skniro\'s Nether & End Ores](https://modrinth.com/mod/skniros-nether-end-ores) | Additional ores in Nether and End dimensions |
 
 ### Configuration — Wave 1
 
 **AE2** (`config/ae2-common.toml` or `/ae2 channelmode` command):
+
 - `channels` = `default` — Keep the channel system enabled. It adds interesting logistics puzzles in Phase 2. The challenge is part of the progression curve. Players who find it overwhelming can change to `x2` or `infinite` via the `/ae2 channelmode` command without a world restart.
 - All other AE2 features remain default: meteorite generation, spatial storage, crystal growth, inscriber recipes, tools, and security systems.
 
 **Why channels are kept on**: The AE2 channel system is a core design pillar. It forces thoughtful network layout, rewards planning, and gives meaning to dense cables and P2P tunnels. Turning it off removes a significant layer of the mod's depth. The command `/ae2 channelmode infinite` exists for players who disagree and want a simpler experience.
 
 **Mekanism** (`config/Mekanism/general.toml`):
+
 - `allowChunkloading` = `false` — Disable Mekanism's built-in chunk loading. If a dedicated chunk loader mod is added later, this prevents conflict. For now, players manage loaded chunks via other means.
 - `easyMinerFilters` = `false` — Keep Digital Miner filter setup manual (drag items from JEI is disabled). Intentional friction — setting up the miner should feel like an accomplishment.
 - `transmitterAlloyUpgrade` = `true` — Allow upgrading pipes/cables by right-clicking with alloys. Streamlines infrastructure upgrades.
@@ -168,6 +175,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 **Skniro's Nether & End Ores**: No configuration changes. Default ore distribution in Nether and End dimensions is balanced for mid-game expansion. Tune spawn rates in `orespawn_config.json` if playtesting shows ores too sparse or too dense.
 
 **Interdependency notes for Wave 1:**
+
 - Mekanism's universal cables can power AE2 controllers via the Energy Acceptor. No adapter mod needed.
 - Create's Alternator converts rotational power (SU) to Joules, creating a power bridge between Create and Mekanism.
 - Mekanism's 5x ore processing (Chemical Dissolution Chamber → Washer → Crystallizer) outclasses Create's Crushing Wheels (1.5x) and Millstone (1x) for ore multiplication. This is intentional — Create handles mechanical automation and component crafting, Mekanism handles industrial processing. Neither obsoletes the other.
@@ -183,63 +191,64 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 | Mod                | Role                                                            |
 |--------------------|-----------------------------------------------------------------|
-| Terralith          | Overhauled Overworld biomes                                     |
-| Tectonic           | Better terrain shape — deeper valleys, taller mountains, cliffs |
-| Regions Unexplored | 65+ new Overworld biomes with unique trees and plants           |
+| [Terralith](https://www.curseforge.com/minecraft/mc-mods/terralith)          | Overhauled Overworld biomes                                     |
+| [Tectonic](https://www.curseforge.com/minecraft/mc-mods/tectonic)           | Better terrain shape — deeper valleys, taller mountains, cliffs |
+| [Regions Unexplored](https://modrinth.com/mod/regions-unexplored) | 65+ new Overworld biomes with unique trees and plants           |
 
 ### Structures
 
 | Mod                             | Role                             |
 |---------------------------------|----------------------------------|
-| YUNG's Better Dungeons          | Overhauled dungeons              |
-| YUNG's Better Mineshafts        | Improved mineshafts              |
-| YUNG's Better Strongholds       | Larger, more complex strongholds |
-| YUNG's Better Desert Temples    | Multi-room desert temples        |
-| YUNG's Better Jungle Temples    | Jungle temples with traps        |
-| YUNG's Better Ocean Monuments   | Redesigned ocean monuments       |
-| YUNG's Better Witch Huts        | Expanded witch huts              |
-| YUNG's Better Nether Fortresses | Improved nether fortresses       |
-| YUNG's Better End Island        | Better End island terrain        |
-| YUNG's Better Caves             | Larger, more varied caves        |
-| Structory                       | New hand-crafted structures      |
-| Towns & Towers                  | Better village generation        |
-| Additional Structures           | 200+ new structures              |
+| [YUNG\'s Better Dungeons](https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons)          | Overhauled dungeons              |
+| [YUNG\'s Better Mineshafts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts)        | Improved mineshafts              |
+| [YUNG\'s Better Strongholds](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)       | Larger, more complex strongholds |
+| [YUNG\'s Better Desert Temples](https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples)    | Multi-room desert temples        |
+| [YUNG\'s Better Jungle Temples](https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples)    | Jungle temples with traps        |
+| [YUNG\'s Better Ocean Monuments](https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments)   | Redesigned ocean monuments       |
+| [YUNG\'s Better Witch Huts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts)        | Expanded witch huts              |
+| [YUNG\'s Better Nether Fortresses](https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses) | Improved nether fortresses       |
+| [YUNG\'s Better End Island](https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island)        | Better End island terrain        |
+| [YUNG\'s Better Caves](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves)             | Larger, more varied caves        |
+| [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)                       | New hand-crafted structures      |
+| [Towns & Towers](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)                  | Better village generation        |
+| [Additional Structures](https://www.curseforge.com/minecraft/mc-mods/additional-structures)           | 200+ new structures              |
 
 ### Dimensions
 
 | Mod               | Role                                                                                       |
 |-------------------|--------------------------------------------------------------------------------------------|
-| The Aether        | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
-| Deeper and Darker | The "Otherside" dimension — deep dark themed, warden gear                                  |
-| Twilight Forest   | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
+| [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)        | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
+| [Deeper and Darker](https://modrinth.com/mod/deeper-and-darker) | The "Otherside" dimension — deep dark themed, warden gear                                  |
+| [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/twilight-forest)   | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
 
 ### End Overhaul
 
 | Mod                              | Role                                                               |
 |----------------------------------|--------------------------------------------------------------------|
-| **BetterEnd NeoForge** v21.0.25  | Full End overhaul — 24+ biomes, new mobs, gear, custom music       |
-| **Nullscape** v1.2.14            | End biome transformation — alien/void landscapes, floating islands |
-| **Moog's End Structures** v2.0.3 | New structures to fill the End dimension                           |
-| **Ender's Delight** v1.3.0       | End-themed food for Farmer's Delight                               |
+| [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend) v21.0.25  | Full End overhaul — 24+ biomes, new mobs, gear, custom music       |
+| [**Nullscape**](https://modrinth.com/mod/nullscape) v1.2.14            | End biome transformation — alien/void landscapes, floating islands |
+| [**Moog\'s End Structures**](https://modrinth.com/mod/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                           |
+| [**Ender\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0       | End-themed food for Farmer's Delight                               |
 
 ### New Dependencies (End Overhaul)
 
 | Mod                  | Role                                        |
 |----------------------|---------------------------------------------|
-| BCLib NeoForge       | Core library — required by BetterEnd        |
-| WorldWeaver NeoForge | Worldgen library — required by BetterEnd    |
-| WunderLib NeoForge   | Utility library — required by BetterEnd     |
-| Moog's Structure Lib | Library — required by Moog's End Structures |
+| [BCLib NeoForge](https://modrinth.com/mod/bclib)       | Core library — required by BetterEnd        |
+| [WorldWeaver NeoForge](https://modrinth.com/mod/worldweaver) | Worldgen library — required by BetterEnd    |
+| [WunderLib NeoForge](https://modrinth.com/mod/wunderlib)   | Utility library — required by BetterEnd     |
+| [Moog\'s Structure Lib](https://modrinth.com/mod/moogs-structure-lib) | Library — required by Moog's End Structures |
 
 ### Navigation
 
 | Mod                | Role                             |
 |--------------------|----------------------------------|
-| Explorer's Compass | Craftable structure/biome finder |
+| [Explorer\'s Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass) | Craftable structure/biome finder |
 
 ### Configuration — Wave 2
 
 **Twilight Forest** (`config/twilightforest-common.toml`):
+
 - `PortalCreation` = `flower_pool` (default) — Classic portal recipe: flowers surrounding a 2×2 water pool, throw in a diamond. Keeps the dimension entry ritual intact.
 - `DisableProgression` = `false` (default) — Boss progression gates remain active. They structure the dimension's content and give clear progression goals.
 
@@ -267,47 +276,52 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 | Mod                     | Role                                                  |
 |-------------------------|-------------------------------------------------------|
-| Skill Tree (RPG Series) | XP leveling — spend points on attributes and passives |
-| Pufferfish's Skills     | Underlying skill system framework                     |
-| Spell Engine            | Magic casting framework                               |
-| Spell Power             | Magic attribute system (spell damage, crit, haste)    |
+| [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree) | XP leveling — spend points on attributes and passives |
+| [Pufferfish\'s Skills](https://modrinth.com/mod/pufferfishs-skills)     | Underlying skill system framework                     |
+| [Spell Engine](https://modrinth.com/mod/spell-engine)            | Magic casting framework                               |
+| [Spell Power](https://modrinth.com/mod/spell-power)             | Magic attribute system (spell damage, crit, haste)    |
 
 ### Equipment
 
 | Mod           | Role                                                |
 |---------------|-----------------------------------------------------|
-| Simply Swords | 60+ unique weapons with passive/activated abilities |
-| Relics RPG    | Legendary accessories with unique abilities         |
-| Runes         | Socketable runes for weapons/tools                  |
-| Curios API    | Accessory slots (rings, amulets, belts, gloves)     |
+| [Simply Swords](https://www.curseforge.com/minecraft/mc-mods/simply-swords) | 60+ unique weapons with passive/activated abilities |
+| [Relics RPG](https://modrinth.com/mod/relics-rpg)    | Legendary accessories with unique abilities         |
+| [Runes](https://modrinth.com/mod/runes)         | Socketable runes for weapons/tools                  |
+| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)    | Accessory slots (rings, amulets, belts, gloves)     |
 
 ### Loot & Affixes
 
 | Mod            | Role                                                                                                           |
 |----------------|----------------------------------------------------------------------------------------------------------------|
-| **Apotheosis** | Rarity tiers, random affixes, gem socketing, enchanting overhaul. Replaces Savaru's Affixology with more depth |
+| [**Apotheosis**](https://www.curseforge.com/minecraft/mc-mods/apotheosis) | Rarity tiers, random affixes, gem socketing, enchanting overhaul. Replaces Savaru's Affixology with more depth |
 
 ### Configuration — Wave 3
 
 **Apotheosis** — the most config-heavy major mod. Apotheosis is split into modules, each with its own config:
 
 **Adventure module** — affixes, gems, boss modifiers, rogue spawners:
+
 - Keep all affix types enabled: Ruthless (crit), Arcane (spell), Sturdy (armor), Nimble (speed), Plentiful (mining), Titanic (HP). Each supports a different playstyle.
 - Gem tiers enabled: Rough, Cut, Flawless. The gem progression (Rough → Cut → Flawless) provides a satisfying vertical upgrade path.
 - Boss modifiers: all active. Apothic Invaders and Elites spawn naturally with random affixes. They always drop affix items — this is the primary source of mythic gear.
 - Rogue Spawners: enabled. Underground spawner+chest combos. Risk vs reward.
 
 **Enchanting module** — `config/apotheosis/enchanting.cfg`:
+
 - Keep all enchantment overhauls enabled: higher level cap, tiered bookshelves, Library of Alexandria, new enchantments.
 - The Library of Alexandria stores all enchanted books in one block — essential for enchanting organization at scale.
 
 **Potion module**:
+
 - Potion Charms enabled: craft a charm from blaze powder + potions, equip in offhand for passive effect. Reduces inventory clutter from potion bottles.
 
 **Spawner module**:
+
 - Spawner capture and modification enabled. Silk-touch a spawner with a pickaxe, then modify it (entity type, spawn delay, player range, min/max entities). Key for XP farms and mob-based automation.
 
 **Village module**:
+
 - Wandering trader improvements enabled.
 
 **Deadly module**: **Disabled.** Apotheosis's Deadly module adds randomly generated death-traps to the world (sudden spikes, poison darts, instakill rooms, lava traps). These violate the chill rule — the player should never be punished for exploring without preparation. All other modules are active.
@@ -332,8 +346,8 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 | Mod                           | Role                                                       |
 |-------------------------------|------------------------------------------------------------|
-| **Farmer's Delight** 1.3.2    | Cooking hub — cutting board, cooking pot, stove, new crops |
-| **Brewin' And Chewin'** 4.5.0 | Drinks and fermentation — beer, wine, mead, whiskey        |
+| [**Farmer\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) 1.3.2    | Cooking hub — cutting board, cooking pot, stove, new crops |
+| [**Brewin\' And Chewin\'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0 | Drinks and fermentation — beer, wine, mead, whiskey        |
 
 Further FD addons (Delightful, Storage Delight, Nether's Delight, End's Delight) — TBD, available on NeoForge.
 
@@ -344,6 +358,7 @@ Further FD addons (Delightful, Storage Delight, Nether's Delight, End's Delight)
 **Brewin' And Chewin'** — no config changes needed. Default fermentation and aging times (1 in-game day per stage) are appropriate. Drinks and their effects (Resistance from beer, Haste from wine, Speed from mead, Strength from whiskey) are balanced as-is.
 
 **Interdependency notes for Wave 4:**
+
 - Farmer's Delight meals provide status effects that stack with Brewin' And Chewin' drinks. Combined, a full meal + a vintage drink gives significant combat buffs — useful before boss fights (Wave 5).
 - Right Click Harvest (Wave 0) works on all Farmer's Delight crops. Right-click to harvest, the plant stays for regrowth.
 - AE2's ME System can store Farmer's Delight ingredients and cooked meals. Set up an Export Bus on a cooking pot for automated ingredient delivery.
@@ -355,15 +370,16 @@ Further FD addons (Delightful, Storage Delight, Nether's Delight, End's Delight)
 
 Procedural bounty system that gives purpose to exploration and material collection without manual quest authoring.
 
-| Mod                | Role                                                      |
-|--------------------|-----------------------------------------------------------|
-| **Bountiful** 8.0.0-beta.2 | Bounty boards in villages — procedurally generated fetch/kill/exploration quests with rewards |
+| Mod                        | Role                                                                                          |
+|----------------------------|-----------------------------------------------------------------------------------------------|
+| [**Bountiful**](https://www.curseforge.com/minecraft/mc-mods/bountiful) 8.0.0-beta.2 | Bounty boards in villages — procedurally generated fetch/kill/exploration quests with rewards |
 
 Bountiful generates quests automatically based on items and mobs available in the world. No quest authoring needed — find a bounty board in any village, accept tasks, earn rewards. Fully optional — respects chill pacing.
 
 ### Configuration — Wave 4.5
 
 **Bountiful** (data-driven via `config/bountiful/` config packs, no traditional config file):
+
 - Decrees: All decree types are enabled by default (mining, smithing, farming, combat, exploration, armorsmithing, etc.). Players craft or find Decrees to control which quest types appear on their bounty boards. Up to 3 Decrees can be active per board.
 - Decree mixing: Enabled by default. A board with a Farming Decree and an Armorsmithing Decree can generate quests like "deliver wheat for iron boots." Adds variety.
 - Bounty tiers: Common → Uncommon → Rare → Epic. Higher reputation with a board unlocks rarer bounties with better rewards.
@@ -378,17 +394,18 @@ Bountiful generates quests automatically based on items and mobs available in th
 
 | Mod                      | Role                                                                                              |
 |--------------------------|---------------------------------------------------------------------------------------------------|
-| Better Combat            | Melee combat animations — weapon reach, sweeping, attack speed                                    |
-| Mutant Monsters          | Mutant zombie, skeleton, creeper, enderman — unique drops                                         |
-| L_Ender's Cataclysm      | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (CurseForge, NeoForge 1.21.1) |
-| When Dungeons Arise      | Roguelike combat structures with loot                                                             |
-| Enchantment Descriptions | Shows enchantment effects in tooltips                                                             |
+| [Better Combat](https://modrinth.com/mod/better-combat)            | Melee combat animations — weapon reach, sweeping, attack speed                                    |
+| [Mutant Monsters](https://www.curseforge.com/minecraft/mc-mods/mutant-monsters)          | Mutant zombie, skeleton, creeper, enderman — unique drops                                         |
+| [L_Ender\'s Cataclysm](https://www.curseforge.com/minecraft/mc-mods/l-enders-cataclysm)      | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (CurseForge, NeoForge 1.21.1) |
+| [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)      | Roguelike combat structures with loot                                                             |
+| [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                             |
 
 Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
 
 ### Configuration — Wave 5
 
 **Better Combat** (`config/bettercombat/`):
+
 - Server config: All weapon attributes at default. Reach, speed, and sweep radius per weapon type are balanced by the mod's built-in weapon presets.
 - Fallback compatibility: If a mod adds a weapon that Better Combat doesn't recognize, it falls back to the default sword preset. All weapons in this pack are either vanilla, Simply Swords (which has native Better Combat support), or from mods with common naming conventions — no fallback issues expected.
 - Client config (per-player preference): Attack indicator, hold-to-attack toggle, auto-attack mode, and sound settings are player-customizable via Mod Menu. No server-side override needed.
@@ -410,14 +427,14 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 
 | Mod             | Role                                                          |
 |-----------------|---------------------------------------------------------------|
-| Chipped         | Hundreds of decorative block variants for every material      |
-| Supplementaries | Vanilla+ decoration — jars, signposts, faucets, weather vanes |
-| Macaw's Bridges | Bridges in all wood types                                     |
-| Macaw's Doors   | Vanilla-style doors for every wood                            |
-| Macaw's Roofs   | Roofing blocks                                                |
-| Macaw's Windows | Window variants                                               |
-| Building Wands  | Faster large-scale construction                               |
-| Handcrafted     | Furniture — chairs, tables, shelves, curtains                 |
+| [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped)         | Hundreds of decorative block variants for every material      |
+| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) | Vanilla+ decoration — jars, signposts, faucets, weather vanes |
+| [Macaw\'s Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges) | Bridges in all wood types                                     |
+| [Macaw\'s Doors](https://www.curseforge.com/minecraft/mc-mods/macaws-doors)   | Vanilla-style doors for every wood                            |
+| [Macaw\'s Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)   | Roofing blocks                                                |
+| [Macaw\'s Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows) | Window variants                                               |
+| [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands)  | Faster large-scale construction                               |
+| [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)     | Furniture — chairs, tables, shelves, curtains                 |
 
 ### Configuration — Wave 6
 
@@ -435,7 +452,7 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 
 | Mod                  | Role                                                                                         |
 |----------------------|----------------------------------------------------------------------------------------------|
-| **Stellaris** 1.4.23 | Space exploration — rockets, Moon/Mars/Venus/Mercury/Glacio, oxygen system, machines, energy |
+| [**Stellaris**](https://www.curseforge.com/minecraft/mc-mods/stellaris) 1.4.23 | Space exploration — rockets, Moon/Mars/Venus/Mercury/Glacio, oxygen system, machines, energy |
 
 Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space mod for NeoForge 1.21.1. It features 4 rocket tiers, a rover, oxygen management, custom gravity per planet, oil/water/fuel processing, radioactives, and alien mobs. Machines include the Oxygen Distributor, Water Separator, Solar Panel, Fuel Refinery, and Pump Jack. 250+ building blocks across planet-specific sets.
 
@@ -443,7 +460,7 @@ Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space
 
 | Mod              | Role                                     |
 |------------------|------------------------------------------|
-| Architectury API | Cross-loader library (already in Wave 0) |
+| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader library (already in Wave 0) |
 
 Sky Aesthetics is embedded in Stellaris — no separate install needed.
 
@@ -464,6 +481,7 @@ Stellaris includes its own structures across all planets (ruins, temples, mines,
 ### Configuration — Wave 7
 
 **Stellaris** (`config/stellaris/`):
+
 - `oxygen_system` = `true` (default) — Oxygen management is a core mechanic. Players must craft space suits, fill them at the Oxygen Distributor, and manage oxygen on planets. Disabling it removes a key gameplay loop.
 - `oxygen_consumption_rate` = `1.0` (default) — Default consumption gives enough exploration time (several minutes) per oxygen tank fill. Feels fair, not rushed.
 - `fuel_consumption_rate` = `1.0` (default) — Default fuel burn rate for rockets. A full tank provides enough fuel for multiple trips to the Moon and back.
