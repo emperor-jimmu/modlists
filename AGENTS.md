@@ -22,7 +22,7 @@ This modpack is built around four pillars that must coexist in every design deci
 
 ### Phase 1 — Cozy Roots (hours 0-40)
 
-The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Mekanism basic machines (metallurgic infuser, enrichment chamber). First Ars Nouveau apprentice-tier spells for utility (break, place block, self-heal). Farmer's Delight + Delightful provide hearty meals. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
+The player eases into the world. Punch trees, build a starter home with Sophisticated Storage barrels. Recruit a few Guard Villagers for safety. Place the first MineColonies builder hut. Early Create mechanical power (water wheel, windmill) and early Mekanism basic machines (metallurgic infuser, enrichment chamber). First Apotheosis gear drops with affixes start appearing. Farmer's Delight + Brewin' And Chewin' provide hearty meals and drinks. Waystones unlock fast travel between villages. GraveStone Mod makes death forgiving — keep XP, 24h grave protection.
 
 - Difficulty: forgiving
 - Focus: shelter, food, basic automation
@@ -32,7 +32,7 @@ The player eases into the world. Punch trees, build a starter home with Sophisti
 
 ### Phase 2 — Industrial Ascent (hours 40-200)
 
-This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. Ars Nouveau matures into a genuine combat spellbook — the player can handle raids and bosses without hiding behind walls. Create: Big Cannons enters the picture for colony defense and siege spectacle. Chunk Loaders keep factories running across dimensions. Apotheosis gems and affixes supplement Mekanism and Ars gear. The Farmer's Delight ecosystem expands with Brewin' And Chewin' (fermentation, drinks) and Delightful (new meals). YUNG's dungeon mods enrich exploration loot. Storage Delight adds kitchen furniture for base decoration.
+This is the core of the modpack. Mekanism expands into mid-tier and late-tier: digital miner, ore quintupling, induction matrix, fission reactor. Applied Energistics 2 ME system goes online and becomes the storage backbone. Create rotational power drives factories, sequenced crafters, and contraptions of increasing scale — including The Factory Must Grow for oil processing, diesel engines, and aluminum/steel production. MineColonies grows from a village into a functioning city, consuming excess resources and supplying rare materials. Apotheosis gear customization (gems, affixes, enchanting overhaul) matures into the primary loot chase — the player hunts for mythic rolls and perfect gem sockets. Create: Big Cannons enters the picture for colony defense and siege spectacle. Chunk Loaders keep factories running across dimensions. The Farmer's Delight ecosystem expands with More Delight, My Nether's Delight, and Ocean's Delight. YUNG's dungeon mods enrich exploration loot. Storage Delight adds kitchen furniture for base decoration. Stellaris adds space exploration with rocket tiers, oxygen systems, and off-world colonies.
 
 - Difficulty: standard, gradual ramp
 - Focus: deep automation scaling, logistics puzzles, resource multiplication
@@ -42,7 +42,7 @@ This is the core of the modpack. Mekanism expands into mid-tier and late-tier: d
 
 ### Phase 3 — Perpetual Ascent (hours 200+)
 
-No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shifter, antimatter, full Mekasuit. Applied Energistics 2 grows into quantum networks and spatial storage. Create reaches absurd speeds and scale — mega-factories, infinite resource loops. Top-tier Ars Nouveau spells delete bosses and provide godlike mobility. MineColonies is a self-sufficient empire across multiple biomes. The Aether, Twilight Forest, and L_Ender's Cataclysm provide combat endgame for those who want it. The player flies freely, oneshots anything, and builds at creative-scale using survival-automated resources.
+No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shifter, antimatter, full Mekasuit. Applied Energistics 2 grows into quantum networks and spatial storage. Create reaches absurd speeds and scale — mega-factories, infinite resource loops. Apotheosis mythic gear with perfectly socketed gems, max-level enchantments, and ideal affix rolls turns the player into an unstoppable force. MineColonies is a self-sufficient empire across multiple biomes. The Aether, Twilight Forest, and L_Ender's Cataclysm provide combat endgame for those who want it. The player flies freely, oneshots anything, and builds at creative-scale using survival-automated resources.
 
 - Difficulty: the player is the difficulty
 - Focus: endless optimization, personal power ceiling, megabuilds, "just one more thing"
@@ -54,19 +54,19 @@ No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shi
 
 ### Mod List
 
-The complete mod list with versions, roles, and download links is maintained in **[MODLIST.md](./MODLIST.md)** (V1 — Forge 1.20.1) and **[MODLIST-V2.md](./MODLIST-V2.md)** (V2 — Fabric 1.21.1). The V2 list is the active development target.
+The complete mod list with versions, roles, and download links is maintained in **[MODLIST-V3.md](./MODLIST-V3.md)** (V3 — NeoForge 1.21.1). V3 is the only version that matters — V1 (Forge 1.20.1) and V2 (Fabric 1.21.1) are archived and no longer maintained.
 
 ### Integration Rules
 
 - Create outputs (cobblestone, alloys, processed ingots) feed into AE2 storage. AE2 autocrafting queues feed back into Mekanism.
-- Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other.
+- Ars Nouveau spellbooks complement Mekanism gear — magic enhances tech, tech enhances magic. Neither should obsolete the other. *(Only if Ars Nouveau is added — currently not in V3; Apotheosis + Relics + Simply Swords fill the equipment-magic role.)*
 - Guard Villagers scale their presence with colony size. A larger base should have proportionally more guards.
 - Sophisticated Storage is intentionally outclassed by AE2 in Phase 2 but remains useful for localized micro-storage near Create contraptions.
 - Farmer's Delight is the hub for all food mods. Brewin' And Chewin' (drinks/fermentation), Delightful (new meals), and Storage Delight (kitchen furniture) extend it without overlapping.
 - YUNG's dungeon mods add exploration targets and loot injection points — they feed items into Apotheosis affix/gem system and reward dungeon diving in any phase.
 - The Aether, Twilight Forest, and L_Ender's Cataclysm are optional endgame combat dimensions. They don't gate or block any tech/magic progression — the player engages when they choose.
 - Waystones (fast travel) and GraveStone Mod (forgiving death) are chill-living enablers. Their configs should always be set to reduce friction, never to add it.
-- Apotheosis gems and affixes work on Mekanism armor/tools and Ars spellbooks — gear customization feeds power fantasy across both tracks.
+- Apotheosis gems and affixes work on Mekanism armor/tools — gear customization feeds power fantasy across both tracks.
 - Chunk Loaders are essential for Phase 2+ automation across dimensions. They keep Mekanism factories and MineColonies running when the player explores.
 - No data pack should duplicate a mod's functionality. Data packs handle targeted QoL only (e.g., anti-creeper grief, armor stand posing).
 - No mod should duplicate another mod's core purpose. If two mods provide the same capability, one must be configured lower or gated later.
@@ -77,7 +77,7 @@ The complete mod list with versions, roles, and download links is maintained in 
 
 ```
 Minecraft Version    1.21.1
-Modloader            Fabric
+Modloader            NeoForge
 Java Version         21
 
 Configuration        All non-default config overrides live in config/
@@ -85,21 +85,23 @@ Configuration        All non-default config overrides live in config/
 
 Mod Management       Add mods one wave at a time, test launch after each wave
                      Never add a mod that duplicates an existing mod's role
-                       QoL and performance mods are encouraged:
-                        - EM! / REI (recipe viewer)
-                        - Jade / WAILA (block info)
-                        - Sodium (performance)
-                        - Iris (shader loader — enables shaderpacks)
-                        - Distant Horizons (LOD — extreme render distance)
-                        - Xaero's Minimap / JourneyMap (minimap)
-                        - AppleSkin (food info)
-                        - Loot Journal: Pickup Notifier (pickup notifications)
-                        - Fancy Toasts (advancement toasts)
-                        - Obscure Tooltips (animated tooltip visuals)
-                        - Immersive UI (animated UI, smooth hotbar, item particles)
-                        - Traveler's Titles (biome/dimension entry titles)
-                        - Mod Menu (mod list and config GUI)
-                        - Continuity (connected textures)
+                        QoL and performance mods are encouraged:
+                         - JEI / Jade (recipe and block info)
+                         - Sodium (performance)
+                         - Iris (shader loader — enables shaderpacks)
+                         - Distant Horizons (LOD — extreme render distance)
+                         - Xaero's Minimap / JourneyMap (minimap)
+                         - AppleSkin (food info)
+                         - Loot Journal (pickup notifications)
+                         - Fancy Toasts (advancement toasts)
+                         - Obscure Tooltips (animated tooltip visuals)
+                         - Immersive UI (animated UI, smooth hotbar, item particles)
+                         - Traveler's Titles (biome/dimension entry titles)
+                         - Continuity (connected textures)
+                         - Tooltip Overhaul (modern tooltip rendering)
+                         - Durability Tooltip (durability info on tooltips)
+                         - Sound (UI/action sound effects)
+                         - Tiny Item Animations (inventory item float/pulse)
 
 Data Packs           Stored in datapacks/, each with a README explaining purpose
                      Worldgen tweaks, QoL changes, and loot table modifications
@@ -110,12 +112,11 @@ Resource Packs       Stored in resourcepacks/, optional, documented
 File Layout          config/              — mod config overrides, tracked in version control
                      datapacks/           — world data packs
                      resourcepacks/       — optional resource packs
-                     GETTING-STARTED.md   — learning resources, in-game tutorial references (V1)
-                     GETTING-STARTED-V2.md — per-wave tutorials, keybinds, configs (V2)
-                     MODLIST.md           — V1 mod list (Forge 1.20.1)
-                     MODLIST-V2.md        — V2 mod list with wave install order (Fabric 1.21.1)
-                     STATUS.md            — what's configured, what's pending
+                     shaderpacks/         — shader .zip files
+                     MODLIST-V3.md        — V3 mod list (NeoForge 1.21.1) — the only active version
                      AGENTS.md            — this file
+                     STATUS.md            — what's configured, what's pending
+                     GETTING-STARTED-V3.md — per-wave tutorials, keybinds, configs (planned)
 
 Note: This is a guide repository. Config overrides, data packs, and resource
 packs are tracked here for version control. The actual mod .jar files live in
@@ -129,7 +130,7 @@ the user's Minecraft instance at %APPDATA%\.minecraft\mods\.
 When starting a session on this project, follow this order:
 
 1. **Read STATUS.md** — understand what was in progress, what's blocked, what's done.
-2. **Read MODLIST.md** — know the current mod set and version pins.
+2. **Read MODLIST-V3.md** — know the current mod set and version pins.
 3. **Pick one chunk** — each session should produce one completed unit of work (a mod configured, an integration wired, a data pack written, a bug fixed).
 4. **Update STATUS.md** — mark what was completed, note blockers, set the next chunk.
 

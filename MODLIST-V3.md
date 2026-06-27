@@ -95,6 +95,9 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)           | Independent 360° camera rotation in third-person view               |
 | [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare              |
 | [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)           | First-person food/drink shrinking animation, visible in 3rd person  |
+| [Durability Tooltip](https://modrinth.com/mod/durability-tooltip)                                 | Durability info on tooltips — configurable bar/text/both style      |
+| [Sounds](https://modrinth.com/mod/sound)                                                          | 170+ new sound effects for UIs, items, blocks, actions              |
+| [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)                             | Subtle float/pulse animations on inventory items                    |
 
 ### Inventory & UI
 
@@ -142,6 +145,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)         | Library (AmbientSounds)                  |
 | [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                   |
 | [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal) |
+| [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                         |
 
 ### Shaderpack
 
@@ -177,12 +181,27 @@ Install NeoForge for **1.21.1** (latest recommended release):
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | [Faithful 64x](https://www.curseforge.com/minecraft/texture-packs/faithful-64x) | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)          | Living entity animation overhaul — mobs blink, look around, show emotion             |
+| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)               | 3D block & item textures for all rail types                                          |
+| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                      | 3D model replacement for ladders                                                     |
+| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)            | Enhanced 3D look for lanterns and chains                                             |
 
 **Faithful 64x** upscales vanilla blocks to 64x resolution while preserving the original look. Works with Complementary Unbound's Integrated PBR+ for realistic material response (metal shines, wool is soft, stone is rough). Modded blocks (Create, Mekanism, AE2) use their default textures, which are already well-designed and blend naturally at 64x. The RTX 4080 SUPER handles this with zero FPS impact at 4K.
 
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it **above** Faithful 64x in the pack order. Works on any version with no mod dependencies.
 
-**Installation**: Download the `.zip` files, place them in `.minecraft/resourcepacks/`, enable both in Options → Resource Packs (Fresh Animations above Faithful 64x).
+**RAY's 3D Rails** replaces rail block and item textures with 3D models. Supports shaders since v3.0. Compatible with all rail types from Steam 'n' Rails and Create.
+
+**3D Ladders** replaces the vanilla ladder model with a 3D version. Simple, lightweight, no conflicts.
+
+**Better Lanterns** gives lanterns and chains an enhanced 3D look with connected chain models. Compatible with Arcane Lanterns and Thin Air mods.
+
+**Installation**: Download each `.zip` above, place in `.minecraft/resourcepacks/`, then enable them in Options → Resource Packs. Suggested load order (top = highest priority):
+
+1. Faithful 64x
+2. Fresh Animations
+3. RAY's 3D Rails
+4. 3D Ladders
+5. Better Lanterns
 
 ### Configuration — Wave 0
 
@@ -211,6 +230,12 @@ Install NeoForge for **1.21.1** (latest recommended release):
 - `writeSessionJson` = `true` — Saves per-session gain/loss data.
 - `writeStatisticsJson` = `true` — Builds cumulative drop statistics.
 - `showSummaryOnDisconnect` = `true` — Shows session summary on disconnect.
+
+**Durability Tooltip**:
+
+- Config file `config/durabilitytooltip.json`:
+    - `"style"`: `"BAR"` — Shows durability as a visual bar instead of text.
+    - Set to `"TEXT"` or `"BOTH"` for alternative display styles.
 
 ### Data Packs (Wave 0)
 
@@ -244,7 +269,6 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge) 0.2.1                  | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
 | [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
 | [Mekanism TFMG Compatibility](https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
-| [Create: TFMG - Stellaris Compat](https://modrinth.com/mod/tfmg-stellaris-compat)                                        | Bridges TFMG fuel chain (diesel/gasoline) into Stellaris rocket fuel system                                                        |
 
 ### How They Work Together
 
@@ -280,7 +304,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 - AE2's Storage Bus on a Sophisticated Storage barrel makes early-mid game storage migration seamless. Place a Storage Bus on your barrel wall, configure it to show contents in the ME terminal, and transition gradually to full digital storage.
 - **Create: The Factory Must Grow** adds oil drilling, distillation towers, blast furnaces, and diesel engines — expanding Create's mechanical toolkit into heavy industry. Its steel replaces Mekanism's steel (TFMG's blast furnace is the intended steel source; Mekanism's steel recipe is disabled by the Mekanism TFMG Compat mod). TFMG aluminum and plastic feed into Mekanism's advanced processing chains.
 - **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both JEI item blacklist config and per-recipe toggles are available for pack tuning.
-- **Create: TFMG - Stellaris Compat** allows TFMG diesel and gasoline to fuel Stellaris rockets, creating a direct fuel-production pipeline from TFMG refineries to space launch. This bridges Wave 1 heavy industry with Wave 7 space exploration.
+- **Create: TFMG — Stellaris Compat** (listed in Wave 7) allows TFMG diesel and gasoline to fuel Stellaris rockets, creating a direct fuel-production pipeline from TFMG refineries to space launch. This bridges Wave 1 heavy industry with Wave 7 space exploration.
 
 ---
 
@@ -333,25 +357,25 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Dimensions
 
-| Mod                                                                             | Role                                                                                       |
-|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)               | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
-| [Deeper and Darker](https://modrinth.com/mod/deeperdarker)                 | The "Otherside" dimension — deep dark themed, warden gear                                  |
+| Mod                                                                                 | Role                                                                                       |
+|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)                   | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
+| [Deeper and Darker](https://modrinth.com/mod/deeperdarker)                          | The "Otherside" dimension — deep dark themed, warden gear                                  |
 | [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
 
 ### End Overhaul
 
-| Mod                                                                                        | Role                                                         |
-|--------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend-neoforge) v21.0.25            | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
+| Mod                                                                                                    | Role                                                         |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend-neoforge) v21.0.25                         | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
 | [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                     |
-| [**Ender\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0 | End-themed food for Farmer's Delight                         |
+| [**Ender\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0             | End-themed food for Farmer's Delight                         |
 
 ### New Dependencies (End Overhaul)
 
 | Mod                                                                   | Role                                        |
 |-----------------------------------------------------------------------|---------------------------------------------|
-| [BCLib NeoForge](https://modrinth.com/mod/bclib-neoforge)            | Core library — required by BetterEnd        |
+| [BCLib NeoForge](https://modrinth.com/mod/bclib-neoforge)             | Core library — required by BetterEnd        |
 | [WorldWeaver NeoForge](https://modrinth.com/mod/worldweaver-neoforge) | Worldgen library — required by BetterEnd    |
 | [WunderLib NeoForge](https://modrinth.com/mod/wunderlib-neoforge)     | Utility library — required by BetterEnd     |
 | [Moog\'s Structure Lib](https://modrinth.com/mod/moogs-structure-lib) | Library — required by Moog's End Structures |
@@ -380,10 +404,10 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### RPG Progression
 
-| Mod                                                                 | Role                                                  |
-|---------------------------------------------------------------------|-------------------------------------------------------|
-| [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree)      | XP leveling — spend points on attributes and passives |
-| [Pufferfish\'s Skills](https://modrinth.com/mod/skills)            | Underlying skill system framework                     |
+| Mod                                                            | Role                                                  |
+|----------------------------------------------------------------|-------------------------------------------------------|
+| [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree) | XP leveling — spend points on attributes and passives |
+| [Pufferfish\'s Skills](https://modrinth.com/mod/skills)        | Underlying skill system framework                     |
 
 ### Equipment
 
@@ -452,7 +476,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | [**Farmer\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) 1.3.2       | Cooking hub — cutting board, cooking pot, stove, new crops            |
 | [**Brewin\' And Chewin\'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0 | Drinks and fermentation — beer, wine, mead, whiskey                   |
-| [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight-forge) 1.3.0  | Kitchen furniture — drawers, cabinets, shelves for ingredient storage |
+| [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight-forge) 1.3.0   | Kitchen furniture — drawers, cabinets, shelves for ingredient storage |
 | [**More Delight**](https://modrinth.com/mod/more-delight) 3.5.0                                   | Extra meals, sandwiches, toasts, and knife variants                   |
 | [**My Nether\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 2.1.1 | Nether-themed food ingredients and recipes                            |
 | [**Ocean\'s Delight**](https://modrinth.com/mod/oceans-delight) 2.1.0                             | Ocean-themed seafood dishes                                           |
@@ -472,9 +496,9 @@ This cost curve encourages the player to settle for "good enough" gear until the
 
 Procedural bounty system that gives purpose to exploration and material collection without manual quest authoring.
 
-| Mod                                                                                  | Role                                                                                          |
-|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**Bountiful**](https://modrinth.com/mod/bountiful) 8.0.0-beta.2                      | Bounty boards in villages — procedurally generated fetch/kill/exploration quests with rewards |
+| Mod                                                              | Role                                                                                          |
+|------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| [**Bountiful**](https://modrinth.com/mod/bountiful) 8.0.0-beta.2 | Bounty boards in villages — procedurally generated fetch/kill/exploration quests with rewards |
 
 Bountiful generates quests automatically — find a bounty board in any village, accept tasks, earn rewards. Fully optional. Items from installed mods automatically appear in its reward pools.
 
@@ -482,22 +506,22 @@ Bountiful generates quests automatically — find a bounty board in any village,
 
 ## Wave 5 — Combat & Mobs
 
-| Mod                                                                                               | Role                                                                                              |
-|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Better Combat](https://modrinth.com/mod/better-combat)                                           | Melee combat animations — weapon reach, sweeping, attack speed                                    |
-| [Mutant Monsters](https://www.curseforge.com/minecraft/mc-mods/mutant-monsters)                   | Mutant zombie, skeleton, creeper, enderman — unique drops                                         |
-| [L_Ender\'s Cataclysm](https://modrinth.com/mod/l_enders-cataclysm)                               | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (Modrinth, NeoForge 1.21.1)  |
-| [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)           | Roguelike combat structures with loot                                                             |
-| [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                             |
-| [Create Big Cannons](https://modrinth.com/mod/create-big-cannons)                                 | Artillery engineering — siege cannons for colony defense and spectacle                            |
+| Mod                                                                                               | Role                                                                                            |
+|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| [Better Combat](https://modrinth.com/mod/better-combat)                                           | Melee combat animations — weapon reach, sweeping, attack speed                                  |
+| [Mutant Monsters](https://www.curseforge.com/minecraft/mc-mods/mutant-monsters)                   | Mutant zombie, skeleton, creeper, enderman — unique drops                                       |
+| [L_Ender\'s Cataclysm](https://modrinth.com/mod/l_enders-cataclysm)                               | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (Modrinth, NeoForge 1.21.1) |
+| [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)           | Roguelike combat structures with loot                                                           |
+| [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                           |
+| [Create Big Cannons](https://modrinth.com/mod/create-big-cannons)                                 | Artillery engineering — siege cannons for colony defense and spectacle                          |
 
 Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
 
 ### New Dependencies (Combat)
 
-| Mod                                                                                  | Role                                                               |
-|--------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [Ritchie's Projectile Library](https://modrinth.com/mod/rpl)                         | Library — custom projectiles and trajectories (Create Big Cannons) |
+| Mod                                                          | Role                                                               |
+|--------------------------------------------------------------|--------------------------------------------------------------------|
+| [Ritchie's Projectile Library](https://modrinth.com/mod/rpl) | Library — custom projectiles and trajectories (Create Big Cannons) |
 
 **Better Combat + Simply Swords**: Simply Swords weapons have built-in Better Combat data files — each weapon category uses the correct attack animation, reach, and speed automatically.
 
@@ -539,8 +563,8 @@ Sky Aesthetics is embedded in Stellaris — no separate install needed.
 
 ### Addons
 
-| Mod                                                                                   | Role                                                                               |
-|---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Mod                                                                               | Role                                                                               |
+|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [Create: TFMG — Stellaris Compat](https://modrinth.com/mod/tfmg-stellaris-compat) | Bridges TFMG diesel/gasoline into Stellaris rocket fuel (listed in Wave 1 as well) |
 
 ### Integration with Tech Mods
@@ -563,38 +587,16 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 ## Mod Count Summary
 
-| Wave                       | Count      | Notes                                                                                                                                     |
-|----------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | ~44        | Performance, QoL, storage, travel, graves, UI (+Better Third Person, Tooltip Overhaul, Eating Animation, Mod Name Tooltip), chunk loading |
-| Wave 1 — Tech              | 7 (+2 ore) | Create + 5 addons (C&A, Steam 'n' Rails, TFMG, Mekanism TFMG Compat, TFMG-Stellaris Compat), Mekanism, AE2                                |
-| Wave 1.5 — Colony          | 5          | MineColonies (4 deps)                                                                                                                     |
-| Wave 2 — Exploration       | ~25        | YUNG's collection, Terralith/Tectonic, dimensions, End, aircraft                                                                          |
-| Wave 3 — Equipment Magic   | ~7         | Simply Swords, Apotheosis, Relics, Runes, Skill Tree                                                                                      |
-| Wave 4 — Food & Farming    | ~6         | Farmer's Delight, Brewin' And Chewin', 4 FD addon mods                                                                                    |
-| Wave 4.5 — Quests          | 1          | Bountiful (procedural bounty boards in villages)                                                                                          |
-| Wave 5 — Combat            | 7          | Better Combat, Mutant Monsters, Cataclysm, Cannons, Dungeons                                                                              |
-| Wave 6 — Building          | 8          | Chipped, Supplementaries, Macaw's, Handcrafted, Building Wands                                                                            |
-| Wave 7 — Space Exploration | ~2         | Stellaris (core) + Potentials API                                                                                                         |
-| **Total**                | **~112**   | All confirmed NeoForge 1.21.1                                  |                                                              |
-
-### What's New in V3
-
-- Create (mechanical automation, trains)
-- Mekanism (fusion reactor, MekaSuit, 5x ore)
-- AE2 (digital storage, autocrafting)
-- MineColonies (autonomous NPC colony with 4 library deps)
-- Chunk Loaders (cross-dimension chunk loading)
-- Apotheosis (affixes, gems, enchanting)
-- Farmer's Delight + Brewin' And Chewin' + Storage Delight + More Delight + My Nether's Delight + Ocean's Delight (full food ecosystem)
-- Twilight Forest (dimension with bosses)
-- L_Ender's Cataclysm (epic boss fights)
-- Chipped + Supplementaries + Macaw's + Handcrafted (building blocks)
-- Stellaris (space exploration — rockets, planets, oxygen mechanics)
-- Create Big Cannons (artillery engineering for colony defense)
-- Create Crafts & Additions (kinetic↔FE bridge, electric motors, rolling mill)
-- Steam 'n' Rails NeoForge (expanded train system, new tracks, semaphores)
-- Immersive Aircraft (flyable airships and aircraft for dimension exploration)
-- Better Third Person + Tooltip Overhaul + Eating Animation + Mod Name Tooltip (UI refinement set)
-- Create: The Factory Must Grow (oil refining, diesel engines, steel, aluminum)
-- Mekanism TFMG Compatibility (recipe bridges between Mekanism and TFMG)
-- Potentials API (missing Stellaris dependency)
+| Wave                       | Mods    | Deps   | Total   | Notes                                                                                                       |
+|----------------------------|---------|--------|---------|-------------------------------------------------------------------------------------------------------------|
+| Wave 0 — Foundation        | 49      | 10     | 59      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack) |
+| Wave 1 — Tech              | 8    | —    | 8     | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                          |
+| Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                |
+| Wave 2 — Exploration       | 21      | 4      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (3 + 4 deps), navigation, aircraft             |
+| Wave 3 — Equipment Magic   | 7       | —      | 7       | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis                                                |
+| Wave 4 — Food & Farming    | 6       | —      | 6       | Farmer's Delight + 5 addon mods                                                                             |
+| Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                   |
+| Wave 5 — Combat            | 6       | 1      | 7       | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib  |
+| Wave 6 — Building          | 8       | —      | 8       | Chipped, Supplementaries, Macaw's (4), Building Wands, Handcrafted                                          |
+| Wave 7 — Space Exploration | 2    | 1    | 3     | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                               |
+| **Total**                  | **112** | **17** | **129** | All confirmed NeoForge 1.21.1                                                                                          |

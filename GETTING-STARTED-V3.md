@@ -178,8 +178,19 @@ Two optional resource packs enhance vanilla visuals without changing the game fe
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | [Faithful 64x](https://www.curseforge.com/minecraft/texture-packs/faithful-64x) | 64x upscaled vanilla textures — clean, sharp, PBR-compatible with Complementary Unbound |
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)          | Living entity animation overhaul — mobs blink, look around, show emotion                |
+| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)               | 3D block & item textures for all rail types                                             |
+| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                      | 3D model replacement for ladders                                                        |
+| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)            | Enhanced 3D look for lanterns and chains                                                |
 
-**Installation**: Download the `.zip` files, place them in `.minecraft/resourcepacks/`, enable both in Options → Resource Packs (Fresh Animations above Faithful 64x). Faithful 64x works with Complementary Unbound's Integrated PBR+ for realistic material response. Modded blocks (Create, Mekanism, AE2) use their default textures which blend naturally at 64x.
+**Installation**: Download each `.zip`, place in `.minecraft/resourcepacks/`, enable them in Options → Resource Packs. Suggested load order (top = highest priority):
+
+1. Faithful 64x
+2. Fresh Animations
+3. RAY's 3D Rails
+4. 3D Ladders
+5. Better Lanterns
+
+Faithful 64x works with Complementary Unbound's Integrated PBR+ for realistic material response. Fresh Animations adds living entity animations — place it above Faithful 64x. The 3D model packs (Rails, Ladders, Lanterns) are pure model overrides with no resolution conflict — they work at any texture scale.
 
 #### Keybindings (Set These Up First)
 
@@ -236,7 +247,7 @@ AppleSkin adds a visual overlay to your hunger bar showing exactly how much hung
 
 #### Polymorph (Recipe Conflicts)
 
-When two mods have different recipes for the same item (common in a 112-mod pack), Polymorph lets you choose which recipe to use at the crafting table.
+When two mods have different recipes for the same item (common in a 129-mod pack), Polymorph lets you choose which recipe to use at the crafting table.
 
 **How it works**:
 
@@ -299,7 +310,7 @@ This data pack adds **1000+ new advancements** across 16 tabs — mining, buildi
 
 **What it adds**: Thousands of hours of optional side goals. Everything is tracked through the vanilla advancement system — open with `L` to browse the 16 tabs and see what's available.
 
-#### Loot Journal: Pickup Notifier
+#### Loot Journal
 
 Shows animated pickup notifications when items enter your inventory and tracks session statistics.
 
@@ -390,6 +401,31 @@ Adds a visible eating animation in both first-person and third-person view. Food
 Hover over any item in your inventory or JEI — the tooltip shows which mod added the item in small text. Helps you learn what belongs to which mod as you explore.
 
 **No config needed**.
+
+#### Durability Tooltip
+
+Shows the remaining durability of items as a visual bar on tooltips. No more guessing how much your pickaxe has left.
+
+**Config** (edit `config/durabilitytooltip.json`):
+
+- `"style"`: `"BAR"` — Shows durability as a colored bar instead of text.
+- Alternative values: `"TEXT"` (numeric), `"BOTH"` (bar + text).
+
+Default is `"BAR"` for this pack — set and forget.
+
+#### Sounds
+
+Adds 170+ new sound effects for UI interactions, menu clicks, item drops, eating, drinking, achievements, and block actions. Every vanilla action feels more tactile.
+
+**Dependency**: Requires [M.R.U](https://modrinth.com/mod/mru) library (installed automatically as part of Wave 0).
+
+**No config needed** — install and forget. If any sound feels off, customize individual sound events in `config/sounds/`.
+
+#### Tiny Item Animations
+
+Adds subtle float and pulse animations to items in your inventory and when you pick up items. Items gently bob when inserted into slots or dropped. Purely cosmetic.
+
+**No config needed** — install and forget.
 
 #### Chunk Loaders — Infrastructure
 
