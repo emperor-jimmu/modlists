@@ -73,7 +73,6 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, NeoForge native) |
 | [Lithium](https://modrinth.com/mod/lithium)                                       | Server-side game logic optimization      |
 | [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) | LOD rendering                            |
-| [Continuity](https://www.curseforge.com/minecraft/mc-mods/continuity)             | Connected textures                       |
 | [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix)               | All-in-one perf + bug fixes              |
 | [ImmediatelyFast](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast)   | Immediate-mode rendering                 |
 | [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)      | Hide off-screen entities                 |
@@ -147,8 +146,6 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal)        |
 | [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                                |
 | [Cobweb](https://modrinth.com/mod/cobweb)                                         | Library (Harvest With Ease)                     |
-| [Sinytra Connector](https://modrinth.com/mod/connector)                           | Fabric→NeoForge compatibility (Continuity)      |
-| [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API bridge (Continuity)                  |
 | [YUNG's API](https://modrinth.com/mod/yungs-api)                                  | Library (Traveler's Titles, YUNG's Better mods) |
 
 ### Shaderpack
@@ -645,7 +642,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 49      | 10     | 59      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                             |
+| Wave 0 — Foundation        | 48      | 8      | 56      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                             |
 | Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                                                                                       |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                                                                                            |
 | Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                                         |
@@ -655,4 +652,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 6       | 6      | 12      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf               |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
-| **Total**                  | **114** | **36** | **150** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
+| **Total**                  | **113** | **34** | **147** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
