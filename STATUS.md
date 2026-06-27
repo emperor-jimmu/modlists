@@ -7,7 +7,7 @@
 - [x] Waves 0-7 fully documented with mod tables, dependency tables, and config sections
 - [x] Interdependency notes for every wave noting cross-mod interactions
 
-### Wave 0 — Foundation (~42 mods)
+### Wave 0 — Foundation (~59 mods incl. deps)
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist
 - [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Harvest With Ease, Fancy Toasts, Obscure Tooltips, Loot Journal, Reliable Advancements, Polymorph
@@ -29,15 +29,22 @@
 - [x] Navigation: Explorer's Compass
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
 
-### Wave 3 — Equipment Magic & RPG (~7 mods)
+### Wave 3 — Equipment Magic & RPG (~17 mods incl. 10 deps)
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
+- [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
 - [x] Simply Swords, Relics RPG, Runes
+- [x] Simply Swords deps: Simply Tooltips, Fzzy Config
+- [x] Relics RPG / Skill Tree deps: Ranged Weapon API, Spell Engine
+- [x] Runes dep: Bundle API
 - [x] Skill Tree (RPG Series), Pufferfish's Skills
 - [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons and Twilight Forest bosses
 
-### Wave 4 — Food, Farming & Comfort (~7 mods)
+### Wave 4 — Food, Farming & Comfort (~8 mods)
 - [x] Farmer's Delight, Brewin' And Chewin'
-- [x] Storage Delight, More Delight, My Nether's Delight, Ocean's Delight, Ender's Delight (moved from Wave 2)
+- [x] Storage Delight, My Nether's Delight, Ocean's Delight, Ender's Delight (moved from Wave 2)
+- [x] More Delight updated to 26.05.20a-1.21-neoforge (was stale pin 3.5.0)
+- [x] Delight Lib 26.05.18-1.21-neoforge added as required dep for More Delight
+- [x] All mod URLs switched to Modrinth
 - [x] All interdependency notes written (crop harvest with Harvest With Ease, food storage with AE2)
 
 ### Wave 4.5 — Quests (1 mod)
@@ -63,7 +70,7 @@
 - [x] Removed Regions Unexplored (FPS concerns with Terralith/Tectonic overlap, no global-tag structure compat)
 - [x] Removed Additional Structures (Towns & Towers + Structory cover structures adequately)
 - [x] Removed Nullscape (BetterEnd's biome overhaul replaces Nullscape's End transformation)
-- [x] Removed Spell Engine, Spell Power (Pufferfish's Skills + Skill Tree cover RPG without a separate magic casting framework)
+- [x] Removed Spell Power (Pufferfish's Skills + Skill Tree cover RPG); Spell Engine retained as mandatory dependency of Relics RPG and Skill Tree
 - [x] Replaced Corail Tombstone with GraveStone Mod (NeoForge native, active development)
 - [x] Added MineColonies + 4 deps to Wave 1 (colony automation gates Phase 2 tech progression)
 - [x] Added Chunk Loaders + 2 deps to Wave 1 (cross-dimension chunk loading for Phase 2+ automation)
@@ -84,6 +91,9 @@
 - [x] Removed Obscure API from V3 mod list (not available on NeoForge — Obscure Tooltips and Loot Journal depend on Fragmentum instead)
 - [x] Fixed OctoLib URL: modrinth.com/mod/octo-lib → modrinth.com/mod/shatterbyte-lib (slug is shatterbyte-lib, not octo-lib)
 - [x] Moved all 9 YUNG's mod URLs from CurseForge to Modrinth (CurseForge lacks NeoForge 1.21.1 builds; Modrinth has them for all YUNG's mods)
+- [x] More Delight version pin fixed: 3.5.0 → 26.05.20a-1.21-neoforge (3.5.0 doesn't exist; mod uses date-based versioning)
+- [x] Added Delight Lib as Wave 4 dependency (required by More Delight v26.04.30+)
+- [x] Switched all Wave 4 mod URLs to Modrinth
 
 ## Pending
 

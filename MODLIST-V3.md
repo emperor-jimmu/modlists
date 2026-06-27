@@ -71,7 +71,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 |-----------------------------------------------------------------------------------|------------------------------------------|
 | [Sodium](https://modrinth.com/mod/sodium)                                         | Rendering engine                         |
 | [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, NeoForge native) |
-| [Lithium](https://modrinth.com/mod/lithium)                                         | Server-side game logic optimization      |
+| [Lithium](https://modrinth.com/mod/lithium)                                       | Server-side game logic optimization      |
 | [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) | LOD rendering                            |
 | [Continuity](https://www.curseforge.com/minecraft/mc-mods/continuity)             | Connected textures                       |
 | [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix)               | All-in-one perf + bug fixes              |
@@ -136,19 +136,19 @@ Install NeoForge for **1.21.1** (latest recommended release):
 
 ### New Dependencies
 
-| Mod                                                                               | Role                                     |
-|-----------------------------------------------------------------------------------|------------------------------------------|
-| [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config)         | Config screen library                    |
-| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility               |
-| [YACL](https://modrinth.com/mod/yacl)                                             | Config library                           |
-| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                 | Accessory slots (replaces Trinkets)      |
-| [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)         | Library (AmbientSounds)                  |
-| [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                   |
-| [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal) |
-| [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                         |
-| [Cobweb](https://modrinth.com/mod/cobweb)                                         | Library (Harvest With Ease)              |
-| [Sinytra Connector](https://modrinth.com/mod/connector)                           | Fabric→NeoForge compatibility (Continuity) |
-| [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API bridge (Continuity)           |
+| Mod                                                                               | Role                                            |
+|-----------------------------------------------------------------------------------|-------------------------------------------------|
+| [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config)         | Config screen library                           |
+| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility                      |
+| [YACL](https://modrinth.com/mod/yacl)                                             | Config library                                  |
+| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                 | Accessory slots (replaces Trinkets)             |
+| [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)         | Library (AmbientSounds)                         |
+| [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                          |
+| [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal)        |
+| [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                                |
+| [Cobweb](https://modrinth.com/mod/cobweb)                                         | Library (Harvest With Ease)                     |
+| [Sinytra Connector](https://modrinth.com/mod/connector)                           | Fabric→NeoForge compatibility (Continuity)      |
+| [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API bridge (Continuity)                  |
 | [YUNG's API](https://modrinth.com/mod/yungs-api)                                  | Library (Traveler's Titles, YUNG's Better mods) |
 
 ### Shaderpack
@@ -376,13 +376,13 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### New Dependencies (End Overhaul)
 
-| Mod                                                                   | Role                                        |
-|-----------------------------------------------------------------------|---------------------------------------------|
-| [BCLib NeoForge](https://modrinth.com/mod/bclib-neoforge)             | Core library — required by BetterEnd        |
-| [WorldWeaver NeoForge](https://modrinth.com/mod/worldweaver-neoforge) | Worldgen library — required by BetterEnd    |
-| [WunderLib NeoForge](https://modrinth.com/mod/wunderlib-neoforge)     | Utility library — required by BetterEnd     |
-| [Moog\'s Structure Lib](https://modrinth.com/mod/moogs-structure-lib) | Library — required by Moog's End Structures |
-| [Cristel Lib](https://www.curseforge.com/minecraft/mc-mods/cristel-lib) | Library — required by Towns & Towers    |
+| Mod                                                                     | Role                                        |
+|-------------------------------------------------------------------------|---------------------------------------------|
+| [BCLib NeoForge](https://modrinth.com/mod/bclib-neoforge)               | Core library — required by BetterEnd        |
+| [WorldWeaver NeoForge](https://modrinth.com/mod/worldweaver-neoforge)   | Worldgen library — required by BetterEnd    |
+| [WunderLib NeoForge](https://modrinth.com/mod/wunderlib-neoforge)       | Utility library — required by BetterEnd     |
+| [Moog\'s Structure Lib](https://modrinth.com/mod/moogs-structure-lib)   | Library — required by Moog's End Structures |
+| [Cristel Lib](https://www.curseforge.com/minecraft/mc-mods/cristel-lib) | Library — required by Towns & Towers        |
 
 ### Navigation
 
@@ -474,19 +474,45 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 This cost curve encourages the player to settle for "good enough" gear until they're ready to invest in perfect rolls.
 
+### New Dependencies (Wave 3)
+
+| Mod                                                                 | Role                                                      |
+|---------------------------------------------------------------------|-----------------------------------------------------------|
+| [Placebo](https://www.curseforge.com/minecraft/mc-mods/placebo)     | Core library — required by Apotheosis                     |
+| [Apothic Attributes](https://modrinth.com/mod/apothic-attributes)   | Attribute system module — required by Apotheosis          |
+| [Apothic-Enchanting](https://modrinth.com/mod/apothic-enchanting)   | Enchanting module — required by Apotheosis                |
+| [Apothic-Spawners](https://modrinth.com/mod/apothic-spawners)       | Spawner module — required by Apotheosis                   |
+| [Patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli) | Guidebook library — required by Apotheosis                |
+| [Simply Tooltips](https://modrinth.com/mod/simply-tooltips)         | Tooltip framework — required by Simply Swords             |
+| [Fzzy Config](https://modrinth.com/mod/fzzy-config)                 | Config library — required by Simply Swords                |
+| [Ranged Weapon API](https://modrinth.com/mod/ranged-weapon-api)     | Ranged combat API — required by Relics RPG and Skill Tree |
+| [Spell Engine](https://modrinth.com/mod/spell-engine)               | Magic framework — required by Relics RPG and Skill Tree   |
+| [Bundle API](https://modrinth.com/mod/bundle-api)                   | Bundle/container API — required by Runes                  |
+
+### Interdependency notes for Wave 3
+
+- **Spell Engine** is required by both Relics RPG and Skill Tree (RPG Series) — it was previously considered for removal but must be retained as a mandatory dependency of these core RPG mods.
+- **Ranged Weapon API** is shared between Relics RPG and Skill Tree — install once, used by both.
+
 ---
 
 ## Wave 4 — Food, Farming & Comfort
 
-| Mod                                                                                               | Role                                                                  |
-|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**Farmer\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) 1.3.2       | Cooking hub — cutting board, cooking pot, stove, new crops            |
-| [**Brewin\' And Chewin\'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0 | Drinks and fermentation — beer, wine, mead, whiskey                   |
-| [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight-forge) 1.3.0   | Kitchen furniture — drawers, cabinets, shelves for ingredient storage |
-| [**More Delight**](https://modrinth.com/mod/more-delight) 3.5.0                                   | Extra meals, sandwiches, toasts, and knife variants                   |
-| [**My Nether\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 2.1.1 | Nether-themed food ingredients and recipes                            |
-| [**Ocean\'s Delight**](https://modrinth.com/mod/oceans-delight) 2.1.0                             | Ocean-themed seafood dishes                                           |
-| [**Ender\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0         | End-themed food for Farmer's Delight (moved from Wave 2)              |
+| Mod                                                                               | Role                                                                  |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| [**Farmer's Delight**](https://modrinth.com/mod/farmers-delight) 1.3.2            | Cooking hub — cutting board, cooking pot, stove, new crops            |
+| [**Brewin' And Chewin'**](https://modrinth.com/mod/brewin-and-chewin) 4.5.0       | Drinks and fermentation — beer, wine, mead, whiskey                   |
+| [**Storage Delight**](https://modrinth.com/mod/storage-delight) 1.3.0             | Kitchen furniture — drawers, cabinets, shelves for ingredient storage |
+| [**More Delight**](https://modrinth.com/mod/more-delight) 26.04.18a+1.21-neoforge | Extra meals, sandwiches, toasts, and knife variants                   |
+| [**My Nether's Delight**](https://modrinth.com/mod/my-nethers-delight) 1.10.2     | Nether-themed food ingredients and recipes                            |
+| [**Ocean's Delight**](https://modrinth.com/mod/oceans-delight) 1.0.4              | Ocean-themed seafood dishes                                           |
+| [**Ender's Delight**](https://modrinth.com/mod/enders-delight) v1.3.0             | End-themed food for Farmer's Delight (moved from Wave 2)              |
+
+### New Dependencies (Wave 4)
+
+| Mod                                                                        | Role                                                                     |
+|----------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [Delight Lib](https://modrinth.com/mod/delight-lib) 26.05.18-1.21-neoforge | Library — required by More Delight v26.04.30+ for cross-loader addon dev |
 
 **Interdependency notes for Wave 4:**
 
@@ -496,6 +522,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - Bountiful (Wave 4.5) can generate bounties that request Farmer's Delight meals as objectives, and reward cooking ingredients.
 - My Nether's Delight, Ocean's Delight, and Ender's Delight unlock food sources from cross-dimensional ingredients (Nether, Overworld oceans, and End), giving reasons to explore every dimension beyond just combat.
 - Storage Delight cabinets and drawers provide early-game kitchen storage that feeds into AE2 in Phase 2. They're designed as stepping stones, not replacements.
+- More Delight v26.04.30+ requires **Delight Lib** as a hard dependency — install both or neither.
 
 ---
 
@@ -594,16 +621,16 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 ## Mod Count Summary
 
-| Wave                       | Mods    | Deps   | Total   | Notes                                                                                                       |
-|----------------------------|---------|--------|---------|-------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 49      | 10     | 59      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack) |
-| Wave 1 — Tech              | 8    | —    | 8     | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                          |
-| Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                |
-| Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft             |
-| Wave 3 — Equipment Magic   | 7       | —      | 7       | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis                                                |
-| Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                               |
-| Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                   |
-| Wave 5 — Combat            | 6       | 1      | 7       | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib  |
-| Wave 6 — Building          | 8       | —      | 8       | Chipped, Supplementaries, Macaw's (4), Building Wands, Handcrafted                                          |
-| Wave 7 — Space Exploration | 2    | 1    | 3     | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                               |
-| **Total**                  | **112** | **18** | **130** | All confirmed NeoForge 1.21.1                                                                                          |
+| Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
+|----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wave 0 — Foundation        | 49      | 10     | 59      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                             |
+| Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                                                                                       |
+| Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                                                                                            |
+| Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                                         |
+| Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
+| Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                                                                                                           |
+| Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                               |
+| Wave 5 — Combat            | 6       | 1      | 7       | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib                                                                              |
+| Wave 6 — Building          | 8       | —      | 8       | Chipped, Supplementaries, Macaw's (4), Building Wands, Handcrafted                                                                                                                      |
+| Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
+| **Total**                  | **112** | **28** | **140** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
