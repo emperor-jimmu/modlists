@@ -543,9 +543,9 @@ Bountiful generates quests automatically — find a bounty board in any village,
 | Mod                                                                                               | Role                                                                                            |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | [Better Combat](https://modrinth.com/mod/better-combat)                                           | Melee combat animations — weapon reach, sweeping, attack speed                                  |
-| [Mutant Monsters](https://www.curseforge.com/minecraft/mc-mods/mutant-monsters)                   | Mutant zombie, skeleton, creeper, enderman — unique drops                                       |
+| [Mutant Monsters](https://modrinth.com/mod/mutant-monsters)                                       | Mutant zombie, skeleton, creeper, enderman — unique drops                                       |
 | [L_Ender\'s Cataclysm](https://modrinth.com/mod/l_enders-cataclysm)                               | Epic boss fights — Leviathan, Netherite Monstrosity, Ender Guardian (Modrinth, NeoForge 1.21.1) |
-| [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)           | Roguelike combat structures with loot                                                           |
+| [When Dungeons Arise](https://modrinth.com/mod/when-dungeons-arise)                               | Roguelike combat structures with loot                                                           |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                           |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons)                                 | Artillery engineering — siege cannons for colony defense and spectacle                          |
 
@@ -556,6 +556,11 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 | Mod                                                          | Role                                                               |
 |--------------------------------------------------------------|--------------------------------------------------------------------|
 | [Ritchie's Projectile Library](https://modrinth.com/mod/rpl) | Library — custom projectiles and trajectories (Create Big Cannons) |
+| [playerAnimator](https://modrinth.com/mod/playeranimator)    | Animation library — required by Better Combat                      |
+| [Puzzles Lib](https://modrinth.com/mod/puzzles-lib)          | Library — required by Mutant Monsters                              |
+| [Citadel](https://modrinth.com/mod/citadel)                  | Library — required by L_Ender's Cataclysm                          |
+| [Lionfish-API](https://modrinth.com/mod/lionfish-api)        | Library — required by L_Ender's Cataclysm                          |
+| [Bookshelf](https://modrinth.com/mod/bookshelf-lib)          | Library — required by Enchantment Descriptions                     |
 
 **Better Combat + Simply Swords**: Simply Swords weapons have built-in Better Combat data files — each weapon category uses the correct attack animation, reach, and speed automatically.
 
@@ -563,16 +568,33 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 
 ## Wave 6 — Building & Decoration
 
-| Mod                                                                             | Role                                                          |
-|---------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped)                 | Hundreds of decorative block variants for every material      |
-| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) | Vanilla+ decoration — jars, signposts, faucets, weather vanes |
-| [Macaw\'s Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges) | Bridges in all wood types                                     |
-| [Macaw\'s Doors](https://www.curseforge.com/minecraft/mc-mods/macaws-doors)     | Vanilla-style doors for every wood                            |
-| [Macaw\'s Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)     | Roofing blocks                                                |
-| [Macaw\'s Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows) | Window variants                                               |
-| [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands)   | Faster large-scale construction                               |
-| [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)         | Furniture — chairs, tables, shelves, curtains                 |
+### Core Decoration
+
+| Mod                                                         | Role                                                          |
+|-------------------------------------------------------------|---------------------------------------------------------------|
+| [Rechiseled](https://modrinth.com/mod/rechiseled)           | 600+ decorative block variants with connected textures        |
+| [Supplementaries](https://modrinth.com/mod/supplementaries) | Vanilla+ decoration — jars, signposts, faucets, weather vanes |
+| [Macaw\'s Bridges](https://modrinth.com/mod/macaws-bridges) | Bridges in all wood types                                     |
+| [Macaw\'s Doors](https://modrinth.com/mod/macaws-doors)     | Vanilla-style doors for every wood                            |
+| [Macaw\'s Roofs](https://modrinth.com/mod/macaws-roofs)     | Roofing blocks                                                |
+| [Macaw\'s Windows](https://modrinth.com/mod/macaws-windows) | Window variants                                               |
+| [Building Wands](https://modrinth.com/mod/building-wands)   | Faster large-scale construction                               |
+| [Handcrafted](https://modrinth.com/mod/handcrafted)         | Furniture — chairs, tables, shelves, curtains                 |
+
+### Rechiseled Addons
+
+| Mod                                                                                            | Role                                                                 |
+|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [Rechiseled: Create](https://modrinth.com/mod/rechiseled-create)                               | 100+ decorative variants of Create blocks + mechanical chisel        |
+| [Rechiseled: Applied Energistics 2](https://modrinth.com/mod/rechiseled-applied-energistics-2) | AE2 autocrafting for Rechiseled blocks via Chiseling Pattern Encoder |
+
+### New Dependencies (Wave 6)
+
+| Mod                                                                               | Role                                        |
+|-----------------------------------------------------------------------------------|---------------------------------------------|
+| [Moonlight Library](https://modrinth.com/mod/moonlight)                           | Core library — required by Supplementaries  |
+| [Resourceful Lib](https://modrinth.com/mod/resourceful-lib)                       | Core library — required by Handcrafted      |
+| [Fusion (Connected Textures)](https://modrinth.com/mod/fusion-connected-textures) | Connected textures — required by Rechiseled |
 
 ---
 
@@ -630,7 +652,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
 | Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                                                                                                           |
 | Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                               |
-| Wave 5 — Combat            | 6       | 1      | 7       | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib                                                                              |
-| Wave 6 — Building          | 8       | —      | 8       | Chipped, Supplementaries, Macaw's (4), Building Wands, Handcrafted                                                                                                                      |
+| Wave 5 — Combat            | 6       | 6      | 12      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf               |
+| Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
-| **Total**                  | **112** | **28** | **140** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
+| **Total**                  | **114** | **36** | **150** | All confirmed NeoForge 1.21.1                                                                                                                                                           |

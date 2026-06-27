@@ -1870,29 +1870,36 @@ Tools and blocks to build the base you deserve. Every base deserves to look good
 
 See [MODLIST-V3.md](./MODLIST-V3.md#wave-6--building--decoration).
 
-### Chipped — Infinite Block Variants
+### Rechiseled — Decorative Block Variants
 
-Chipped adds hundreds of decorative block variants for every material type. Every common block (stone, wood, glass, wool, terracotta, concrete, etc.) gets 8-50+ variants each.
+Rechiseled adds 600+ decorative block variants with connected textures. Craft a **chisel** (iron ingot + 2 sticks) and right-click to open the chiseling screen — browse all variants of any block, toggle connected textures, and switch between full blocks, stairs, and slabs.
 
-#### How to Use — The Sawmill
+#### How to Use — The Chisel
 
-1. **Craft a sawmill**: Any wood planks + iron ingot (check JEI for exact shape). It's a functional block, not decorative
-2. **Place the sawmill** on the ground
-3. **Right-click to open the GUI**
-4. Place a base block in the **left slot** (e.g., stone)
-5. The sawmill shows all available variants for that block type in the output panel
-6. Click one to craft it. It consumes the input block and produces the variant
+1. **Craft a chisel**: Check JEI for the recipe (iron + sticks in a tool-like pattern)
+2. **Right-click with the chisel** to open the chiseling screen
+3. Place a base block in the **input slot** — the screen shows all available decorative variants
+4. Click a variant to preview it. The preview cycles between a single block, a row, and a 3×3 grid
+5. Take the result from the output slot — the chisel consumes the input block and produces the variant
+6. **Left-click** placed blocks with the chisel to cycle them through random variants in-world
+
+**Key features**:
+
+- **Connected textures** — most variants have a connected version (blocks of the same type visually merge). Toggle with the button in the bottom-right of the chiseling screen
+- **Stairs & slabs** — every decorative variant also has stair and slab forms, available from the same chiseling screen
+- **600+ variants** across stone, wood, glass, concrete, terracotta, wool, nether materials, and more
+- **No durability** — the chisel never breaks
 
 **Block types with many variants**:
 
 - **Stone**: Bricks, tiles, carved, pillars, panels, runed, chiseled, mosaic — 30+ total
-- **Glass**: All colors + clear, leaded, bordered, checkered, raised — perfect for windows
-- **Wood**: Bark, planks with grain variants, wooden panels, ornate carvings
+- **Glass**: All colors + connected clear glass, borders, panels — perfect for windows
+- **Wood**: Planks with grain variants, carved panels, ornate borders
 - **Wool & Carpet**: Woven, knitted, cross-stitched, patterned — for cozy floors
 - **Concrete**: Smooth, paneled, tiles, with borders
 - **Nether materials**: Glowstone, nether bricks, blackstone get many variants
 
-**Pro tip**: The sawmill preserves block IDs for AE2 compatibility. You can store Chipped variants in your ME drive like any other block. Use AE2's pattern provider to autocraft specific variants on demand.
+**Pro tip**: Rechiseled blocks can be stored in your AE2 ME drive like any other block. Use the **Rechiseled: Applied Energistics 2** addon to autocraft specific variants on demand — build a Chiseling Pattern Encoder and encode chiseling patterns into AE2's molecular assemblers.
 
 ### Supplementaries — Vanilla+ Functional Decoration
 
@@ -1941,14 +1948,14 @@ Macaw's adds structural building elements in every wood type. Five modules:
 
 - Window types: diamond pane, framed, barred, tropical, stained glass window
 - All crafted with glass + wood type. Place like normal panes
-- Can be combined with decorative glass from Chipped
+- Can be combined with decorative glass from Rechiseled
 
 **Macaw's Fences**:
 
 - Variations beyond vanilla fences: picket fence, stockade fence, horse fence, wired fence, highley gate
 - Each with a distinct look — picket for suburban, stockade for medieval, wired for industrial
 
-**Building tip**: Use Macaw's roofs + Chipped stone variants + Macaw's windows for a cohesive base aesthetic. Create uses Macaw's trapdoors and fence gates for its kinetic builds, too.
+**Building tip**: Use Macaw's roofs + Rechiseled stone variants + Macaw's windows for a cohesive base aesthetic. Create uses Macaw's trapdoors and fence gates for its kinetic builds, too.
 
 ### Building Wands — Large-Scale Construction
 
@@ -2186,7 +2193,7 @@ Space is a Phase 2+ activity. Don't start until you have Mekanism basic processi
 | Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                                                     |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Phase 1** (hours 0-40)   | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals. Start MineColonies colony (builder hut, basic mines). Grab bounties from village boards |
-| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Chipped and Macaw's. Complete bounties for passive rewards as you explore                                  |
+| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Rechiseled, Supplementaries, and Macaw's. Complete bounties for passive rewards as you explore                     |
 | **Phase 3** (hours 150+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd End dimension. Monumental building projects with all decoration tools                                                                                                  |
 
 ## General Tips

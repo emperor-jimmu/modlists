@@ -57,8 +57,10 @@
 - [x] Create Big Cannons + Ritchie's Projectile Library
 - [x] All mods configured at defaults
 
-### Wave 6 — Building & Decoration (8 mods)
-- [x] Chipped, Supplementaries, Macaw's Bridges/Doors/Roofs/Windows, Building Wands, Handcrafted
+### Wave 6 — Building & Decoration (10 mods + 3 deps)
+- [x] Rechiseled (replaces Chipped), Supplementaries (Modrinth), Macaw's Bridges/Doors/Roofs/Windows, Building Wands, Handcrafted
+- [x] Rechiseled addons: Rechiseled: Create, Rechiseled: Applied Energistics 2
+- [x] Dependencies: Moonlight Library (Supplementaries), Resourceful Lib (Handcrafted), Fusion (Rechiseled)
 
 ### Wave 7 — Space Exploration (~1 mod)
 - [x] Stellaris 1.4.23 as core space mod
