@@ -157,7 +157,7 @@ These mods work automatically with no configuration. Install them and they optim
 
 | Mod                 | What it does                                                                        |
 |---------------------|-------------------------------------------------------------------------------------|
-| **Radium**          | Server-side optimization — faster entity AI, block updates, and chunk physics       |
+| **Lithium**         | Server-side game logic optimization — faster entity AI, block updates, and chunk physics |
 | **ModernFix**       | Fixes performance bugs and memory leaks from other mods. All-in-one optimization    |
 | **ImmediatelyFast** | Speeds up block and item rendering by using immediate-mode rendering where possible |
 | **Entity Culling**  | Stops rendering entities that are behind walls or off-screen. Free FPS              |

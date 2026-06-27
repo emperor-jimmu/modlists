@@ -7,12 +7,13 @@
 - [x] Waves 0-7 fully documented with mod tables, dependency tables, and config sections
 - [x] Interdependency notes for every wave noting cross-mod interactions
 
-### Wave 0 — Foundation (~38 mods)
-- [x] Performance: Sodium, Iris, Radium (Radium Reforged), Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
+### Wave 0 — Foundation (~42 mods)
+- [x] Performance: Sodium, Iris, Lithium, Distant Horizons, Continuity, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist
 - [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Harvest With Ease, Fancy Toasts, Obscure Tooltips, Loot Journal, Reliable Advancements, Polymorph
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
-- [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum
+- [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U
+- [x] Added Cobweb, Sinytra Connector, Forgified Fabric API, YUNG's API to New Dependencies
 
 ### Wave 1 — Tech, Colony & Chunk Loading (~13 mods)
 - [x] Core Tech: Create, Mekanism, AE2

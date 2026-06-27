@@ -71,7 +71,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 |-----------------------------------------------------------------------------------|------------------------------------------|
 | [Sodium](https://modrinth.com/mod/sodium)                                         | Rendering engine                         |
 | [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, NeoForge native) |
-| [Radium Reforged](https://www.curseforge.com/minecraft/mc-mods/radium-reforged)   | Server-side optimization (Lithium port)  |
+| [Lithium](https://modrinth.com/mod/lithium)                                         | Server-side game logic optimization      |
 | [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) | LOD rendering                            |
 | [Continuity](https://www.curseforge.com/minecraft/mc-mods/continuity)             | Connected textures                       |
 | [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix)               | All-in-one perf + bug fixes              |
@@ -146,6 +146,10 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                   |
 | [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal) |
 | [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                         |
+| [Cobweb](https://modrinth.com/mod/cobweb)                                         | Library (Harvest With Ease)              |
+| [Sinytra Connector](https://modrinth.com/mod/connector)                           | Fabric→NeoForge compatibility (Continuity) |
+| [Forgified Fabric API](https://modrinth.com/mod/forgified-fabric-api)             | Fabric API bridge (Continuity)           |
+| [YUNG's API](https://modrinth.com/mod/yungs-api)                                  | Library (Traveler's Titles, YUNG's Better mods) |
 
 ### Shaderpack
 

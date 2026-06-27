@@ -10,7 +10,7 @@ This document outlines what a NeoForge version of this modpack would look like. 
 
 | Aspect | Fabric (Current) | NeoForge (Proposed) |
 |--------|-----------------|---------------------|
-| Performance | Sodium + Iris + Lithium | Embeddium + Iris + Radium |
+| Performance | Sodium + Iris + Lithium | Sodium + Iris + Lithium |
 | Recipe Viewer | EMI | JEI |
 | Tech pillar | Tech Reborn + Logistics + Powah | **Create + Mekanism + AE2** |
 | Magic pillar | Gear-based (Simply Swords + Affixology) | **Ars Nouveau + Apotheosis + Iron's Spells** |
@@ -28,7 +28,7 @@ This document outlines what a NeoForge version of this modpack would look like. 
 |-----|-----------------|----------|-------|
 | Rendering | Sodium | **Embeddium** | Direct port of Sodium to NeoForge |
 | Shaders | Iris | Iris | Iris v1.8.14 has NeoForge build for 1.21.1 |
-| Server perf | Lithium | **Radium** | Port of Lithium to NeoForge |
+| Server perf | Lithium | **Lithium** | Native NeoForge support (CaffeineMC) |
 | LOD | Distant Horizons | Distant Horizons | Same mod, has NeoForge |
 | Connected textures | Continuity | Continuity | Same mod, has NeoForge |
 | All-in-one perf | ModernFix | ModernFix | Same mod, has NeoForge |
