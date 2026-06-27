@@ -373,7 +373,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend-neoforge) v21.0.25                         | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
 | [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                     |
-| [**Ender\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0             | End-themed food for Farmer's Delight                         |
 
 ### New Dependencies (End Overhaul)
 
@@ -383,6 +382,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [WorldWeaver NeoForge](https://modrinth.com/mod/worldweaver-neoforge) | Worldgen library — required by BetterEnd    |
 | [WunderLib NeoForge](https://modrinth.com/mod/wunderlib-neoforge)     | Utility library — required by BetterEnd     |
 | [Moog\'s Structure Lib](https://modrinth.com/mod/moogs-structure-lib) | Library — required by Moog's End Structures |
+| [Cristel Lib](https://www.curseforge.com/minecraft/mc-mods/cristel-lib) | Library — required by Towns & Towers    |
 
 ### Navigation
 
@@ -401,6 +401,8 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 **Interdependency note — Immersive Aircraft + Aether**: Aircraft can fly in the Aether dimension. An airship is a natural way to navigate Aether islands — it pairs well with the dimension's sky-island geography.
 
 **Interdependency note — Twilight Forest + Apotheosis**: Apotheosis boss affixes (Wave 3) apply to Twilight Forest bosses. A Naga with the "Tough" affix is significantly harder. This is intended — it keeps dimension bosses relevant even with late-game gear. If a boss feels too strong, the player can return after better equipment or use Apotheosis gems/runes for the edge.
+
+**Interdependency note — Towns & Towers + Cristel Lib**: Towns & Towers requires **Cristel Lib** (included in Wave 2 Dependencies above). Without it the game will crash at startup. Cristel Lib provides structure config and runtime datapack support that Towns & Towers relies on for its biome-specific village variants.
 
 ---
 
@@ -484,6 +486,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 | [**More Delight**](https://modrinth.com/mod/more-delight) 3.5.0                                   | Extra meals, sandwiches, toasts, and knife variants                   |
 | [**My Nether\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 2.1.1 | Nether-themed food ingredients and recipes                            |
 | [**Ocean\'s Delight**](https://modrinth.com/mod/oceans-delight) 2.1.0                             | Ocean-themed seafood dishes                                           |
+| [**Ender\'s Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0         | End-themed food for Farmer's Delight (moved from Wave 2)              |
 
 **Interdependency notes for Wave 4:**
 
@@ -491,7 +494,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - Harvest With Ease (Wave 0) works on all Farmer's Delight crops. Right-click to harvest, the plant stays for regrowth.
 - AE2's ME System can store Farmer's Delight ingredients and cooked meals. Set up an Export Bus on a cooking pot for automated ingredient delivery.
 - Bountiful (Wave 4.5) can generate bounties that request Farmer's Delight meals as objectives, and reward cooking ingredients.
-- My Nether's Delight and Ocean's Delight unlock food sources from cross-dimensional ingredients, giving reasons to explore the Nether and oceans beyond combat. End's Delight (Wave 2) completes the set — journeying to the End yields unique recipes.
+- My Nether's Delight, Ocean's Delight, and Ender's Delight unlock food sources from cross-dimensional ingredients (Nether, Overworld oceans, and End), giving reasons to explore every dimension beyond just combat.
 - Storage Delight cabinets and drawers provide early-game kitchen storage that feeds into AE2 in Phase 2. They're designed as stepping stones, not replacements.
 
 ---
@@ -596,11 +599,11 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 0 — Foundation        | 49      | 10     | 59      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack) |
 | Wave 1 — Tech              | 8    | —    | 8     | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                          |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                |
-| Wave 2 — Exploration       | 21      | 4      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (3 + 4 deps), navigation, aircraft             |
+| Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft             |
 | Wave 3 — Equipment Magic   | 7       | —      | 7       | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis                                                |
-| Wave 4 — Food & Farming    | 6       | —      | 6       | Farmer's Delight + 5 addon mods                                                                             |
+| Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                               |
 | Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                   |
 | Wave 5 — Combat            | 6       | 1      | 7       | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib  |
 | Wave 6 — Building          | 8       | —      | 8       | Chipped, Supplementaries, Macaw's (4), Building Wands, Handcrafted                                          |
 | Wave 7 — Space Exploration | 2    | 1    | 3     | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                               |
-| **Total**                  | **112** | **17** | **129** | All confirmed NeoForge 1.21.1                                                                                          |
+| **Total**                  | **112** | **18** | **130** | All confirmed NeoForge 1.21.1                                                                                          |

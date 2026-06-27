@@ -27,7 +27,7 @@
 - [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
 - [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
 - [x] Navigation: Explorer's Compass
-- [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib
+- [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
 
 ### Wave 3 — Equipment Magic & RPG (~7 mods)
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
@@ -35,9 +35,9 @@
 - [x] Skill Tree (RPG Series), Pufferfish's Skills
 - [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons and Twilight Forest bosses
 
-### Wave 4 — Food, Farming & Comfort (~6 mods)
+### Wave 4 — Food, Farming & Comfort (~7 mods)
 - [x] Farmer's Delight, Brewin' And Chewin'
-- [x] Storage Delight, More Delight, My Nether's Delight, Ocean's Delight
+- [x] Storage Delight, More Delight, My Nether's Delight, Ocean's Delight, Ender's Delight (moved from Wave 2)
 - [x] All interdependency notes written (crop harvest with Harvest With Ease, food storage with AE2)
 
 ### Wave 4.5 — Quests (1 mod)
