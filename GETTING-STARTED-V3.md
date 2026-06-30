@@ -135,7 +135,9 @@ This wave makes Minecraft run well, look great, and feel comfortable. No major g
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list with download links. This is a **NeoForge** loader pack — install NeoForge, not Fabric.
+This pack uses the **Modrinth App** as the mod manager and launcher. See [MODLIST-V3.md](./MODLIST-V3.md#modrinth-app) for setup instructions — create a 1.21.1 NeoForge instance and install all Wave 0 mods from their Modrinth pages. All mods in this pack are available on Modrinth (every link in MODLIST-V3.md now points to Modrinth).
+
+See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list.
 
 ### First Launch Settings
 
@@ -163,6 +165,7 @@ These mods work automatically with no configuration. Install them and they optim
 | **Entity Culling**  | Stops rendering entities that are behind walls or off-screen. Free FPS              |
 | **Dynamic FPS**     | Reduces frame rate when Minecraft is in the background — saves GPU power            |
 | **NoisiumForked**   | Accelerates world generation — faster chunk creation when exploring                 |
+| **FerriteCore**     | Reduces memory usage — fewer out-of-memory crashes in long sessions                |
 
 **No config needed** for any of these. Install, launch, forget.
 
@@ -176,7 +179,7 @@ Two optional resource packs enhance vanilla visuals without changing the game fe
 
 | Pack                                                                            | Role                                                                                    |
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Faithful 64x](https://www.curseforge.com/minecraft/texture-packs/faithful-64x) | 64x upscaled vanilla textures — clean, sharp, PBR-compatible with Complementary Unbound |
+| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x) | 64x upscaled vanilla textures — clean, sharp, PBR-compatible with Complementary Unbound |
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)          | Living entity animation overhaul — mobs blink, look around, show emotion                |
 | [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)               | 3D block & item textures for all rail types                                             |
 | [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                      | 3D model replacement for ladders                                                        |

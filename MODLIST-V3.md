@@ -19,19 +19,38 @@ java -version
 
 #### Performance Tuning
 
-Recommended JVM arguments (for Minecraft Launcher → Installation → Edit → More Options → JVM Arguments):
+Recommended JVM arguments (for Modrinth App → instance → Settings → Java & Memory → JVM Arguments, or Minecraft Launcher → Installation → Edit → More Options → JVM Arguments):
 
 ```
--Xms8g -Xmx8g -XX:+UseShenandoahGC -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch -XX:+UseStringDeduplication -XX:-OmitStackTraceInFastThrow
+-XX:+UseZGC -XX:+ZGenerational -Xms8G -Xmx8G
 ```
 
 | System RAM | Recommended allocation |
 |------------|------------------------|
-| 16 GB      | `-Xms10g -Xmx10g`      |
-| 32 GB      | `-Xms22g -Xmx22g`      |
-| 64 GB      | `-Xms48g -Xmx48g`      |
+| 16 GB      | `-Xms10G -Xmx10G`     |
+| 32 GB      | `-Xms22G -Xmx22G`     |
+| 64 GB      | `-Xms48G -Xmx48G`     |
 
-> **Note**: `-XX:+OptimizeStringConcat` was removed in JDK 20 (JEP 427) — do not use it with Java 21. String optimization is enabled by default in JDK 21 via `invokedynamic`. The Adoptium Temurin JDK 21 includes Shenandoah GC — no special Java build needed.
+> **Note**: ZGC (Z Garbage Collector) with generational mode is the recommended GC for Java 21 with NeoForge. It provides consistently low latency (sub-millisecond pause times) and handles the large heap sizes common with modded Minecraft better than Shenandoah or G1GC. The Adoptium Temurin JDK 21 includes ZGC — no special Java build needed. If you encounter issues, you may also add `-XX:+AlwaysPreTouch` for pre-initialized memory pages.
+
+### Modrinth App
+
+| Tool                                                                          | Role                                         |
+|-------------------------------------------------------------------------------|----------------------------------------------|
+| [Modrinth App](https://modrinth.com/app)                                      | Mod manager and launcher for the modpack      |
+
+The **Modrinth App** manages mod installation, updates, and launching for this modpack. It creates a separate instance per modpack, handles NeoForge installation automatically, and lets you install mods in one click from Modrinth's database. All Wave 0+ mods in this pack are available on Modrinth.
+
+**Setup**:
+
+1. Download and install the [Modrinth App](https://modrinth.com/app) for your OS.
+2. Create a new **instance** (type: "Vanilla" → select version **1.21.1**).
+3. Open the instance's settings → **Modloader** → select **NeoForge** (latest recommended for 1.21.1).
+4. Click **Install** — the app downloads NeoForge automatically.
+5. Launch the instance once to generate the `mods/` directory and configs.
+6. Verify the main menu shows "NeoForge X.X.X" in the bottom-left corner.
+
+From there, add mods through the app's **Browse** tab or by dropping `.jar` files into the instance's `mods/` folder. All mod links in this document link to their Modrinth pages — click to install directly.
 
 ### Minecraft 1.21.1
 
@@ -51,7 +70,9 @@ Install the **Minecraft 1.21.1** vanilla client from the official launcher:
 |------------------------------------|---------------------------------|
 | [NeoForge](https://neoforged.net/) | Mod loader for Minecraft 1.21.1 |
 
-Install NeoForge for **1.21.1** (latest recommended release):
+NeoForge is the mod loader powering this modpack. If you're using the **Modrinth App**, it installs NeoForge automatically when you set the modloader in the instance settings (see [Modrinth App](#modrinth-app) above) — skip to step 5 to verify.
+
+If installing manually:
 
 1. Download the **NeoForge installer** for Minecraft 1.21.1 from [neoforged.net](https://neoforged.net/).
 2. Run the installer: `java -jar neoforge-1.21.1-<version>-installer.jar`.
@@ -70,78 +91,79 @@ Install NeoForge for **1.21.1** (latest recommended release):
 | Mod                                                                               | Role                                     |
 |-----------------------------------------------------------------------------------|------------------------------------------|
 | [Sodium](https://modrinth.com/mod/sodium)                                         | Rendering engine                         |
-| [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, NeoForge native) |
+| [Iris](https://modrinth.com/mod/iris)                                             | Shader loader (v1.8.14, NeoForge native) |
 | [Lithium](https://modrinth.com/mod/lithium)                                       | Server-side game logic optimization      |
-| [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) | LOD rendering                            |
-| [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix)               | All-in-one perf + bug fixes              |
-| [ImmediatelyFast](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast)   | Immediate-mode rendering                 |
-| [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)      | Hide off-screen entities                 |
-| [Dynamic FPS](https://www.curseforge.com/minecraft/mc-mods/dynamic-fps)           | Background FPS reduction                 |
+| [Distant Horizons](https://modrinth.com/mod/distanthorizons)                      | LOD rendering                            |
+| [ModernFix](https://modrinth.com/mod/modernfix)                                   | All-in-one perf + bug fixes              |
+| [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast)                       | Immediate-mode rendering                 |
+| [Entity Culling](https://modrinth.com/mod/entityculling)                          | Hide off-screen entities                 |
+| [Dynamic FPS](https://modrinth.com/mod/dynamicfps)                                | Background FPS reduction                 |
 | [NoisiumForked](https://modrinth.com/mod/noisiumforked) (v2.7.0)                  | Worldgen optimization (active fork)      |
+| [FerriteCore](https://modrinth.com/mod/ferrite-core)                             | Memory usage reduction                   |
 
 ### Visual & Client QoL
 
 | Mod                                                                                               | Role                                                                |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [LambDynamicLights](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights)               | Dynamic lighting                                                    |
-| [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)                                 | Customizable debug HUD                                              |
-| [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered) | Realistic sound                                                     |
-| [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                       | Nature ambiance (birds, wind, water)                                |
-| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)                             | 147 new biome/structure-based songs, vanilla silence gaps preserved |
-| [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                         | Animated UI, smooth hotbar, item particles                          |
-| [Traveler\'s Titles](https://modrinth.com/mod/travelers-titles)                                   | RPG-style titles entering biomes/dimensions                         |
-| [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)            | Enhanced mod list screen with badges/categories                     |
-| [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)           | Independent 360° camera rotation in third-person view               |
-| [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare              |
-| [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)           | First-person food/drink shrinking animation, visible in 3rd person  |
-| [Durability Tooltip](https://modrinth.com/mod/durability-tooltip)                                 | Durability info on tooltips — configurable bar/text/both style      |
-| [Sounds](https://modrinth.com/mod/sound)                                                          | 170+ new sound effects for UIs, items, blocks, actions              |
-| [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)                             | Subtle float/pulse animations on inventory items                    |
+| [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)                 | Dynamic lighting                                                    |
+| [BetterF3](https://modrinth.com/mod/betterf3)                                   | Customizable debug HUD                                              |
+| [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered)   | Realistic sound                                                     |
+| [AmbientSounds](https://modrinth.com/mod/ambientsounds)                         | Nature ambiance (birds, wind, water)                                |
+| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)           | 147 new biome/structure-based songs, vanilla silence gaps preserved |
+| [Immersive UI](https://modrinth.com/mod/immersive-ui)                           | Animated UI, smooth hotbar, item particles                          |
+| [Traveler's Titles](https://modrinth.com/mod/travelers-titles)                  | RPG-style titles entering biomes/dimensions                         |
+| [Better Modlist](https://modrinth.com/mod/better-modlist-neoforge)              | Enhanced mod list screen with badges/categories                     |
+| [Better Third Person](https://modrinth.com/mod/better-third-person)             | Independent 360° camera rotation in third-person view               |
+| [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                   | Modern, sharp tooltip rendering with equipment compare              |
+| [Eating Animation](https://modrinth.com/mod/eating-animation)                   | First-person food/drink shrinking animation, visible in 3rd person  |
+| [Durability Tooltip](https://modrinth.com/mod/durability-tooltip)               | Durability info on tooltips — configurable bar/text/both style      |
+| [Sounds](https://modrinth.com/mod/sound)                                        | 170+ new sound effects for UIs, items, blocks, actions              |
+| [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)           | Subtle float/pulse animations on inventory items                    |
 
 ### Inventory & UI
 
 | Mod                                                                                         | Role                                            |
 |---------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)                                     | Recipe viewer                                   |
-| [Jade](https://www.curseforge.com/minecraft/mc-mods/jade)                                   | Block info HUD                                  |
-| [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons)                     | Extra Jade info panels                          |
-| [Xaero\'s Minimap + World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) | Mapping and waypoints                           |
-| [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                  |
-| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                  |
-| [Harvest With Ease](https://www.curseforge.com/minecraft/mc-mods/harvest-with-ease)         | Right-click crop harvest & replant              |
-| [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups           |
-| [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles  |
-| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)          | Animated item pickup notifications              |
-| [Reliable Advancements](https://modrinth.com/mod/reliable-advancements)                     | Overhauled advancements UI with editor/pan/zoom |
-| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict    |
-| [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip)           | Shows which mod an item comes from in tooltip   |
+| [JEI](https://modrinth.com/mod/jei)                                     | Recipe viewer                                   |
+| [Jade](https://modrinth.com/mod/jade)                                   | Block info HUD                                  |
+| [Jade Addons](https://modrinth.com/mod/jade-addons)                     | Extra Jade info panels                          |
+| [Xaero's Minimap + World Map](https://modrinth.com/mod/xaeros-minimap) | Mapping and waypoints                           |
+| [AppleSkin](https://modrinth.com/mod/appleskin)                         | Food hunger/saturation overlay                  |
+| [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)                   | Inventory management shortcuts                  |
+| [Harvest With Ease](https://modrinth.com/mod/harvest-with-ease)         | Right-click crop harvest & replant              |
+| [Fancy Toasts](https://modrinth.com/mod/fancy-toasts)                   | Beautiful animated advancement popups           |
+| [Obscure Tooltips](https://modrinth.com/mod/obscure-tooltips)           | Animated tooltips with 3D models and particles  |
+| [Loot Journal](https://modrinth.com/mod/loot-journal)                   | Animated item pickup notifications              |
+| [Reliable Advancements](https://modrinth.com/mod/reliable-advancements) | Overhauled advancements UI with editor/pan/zoom |
+| [Polymorph](https://modrinth.com/mod/polymorph)                         | Choose crafting result when recipes conflict    |
+| [Mod Name Tooltip](https://modrinth.com/mod/mod-name-tooltip)           | Shows which mod an item comes from in tooltip   |
 
 ### Storage & Travel
 
 | Mod                                                                                             | Role                          |
 |-------------------------------------------------------------------------------------------------|-------------------------------|
-| [Sophisticated Storage](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage)     | Upgradable barrels/chests     |
-| [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) | Portable inventory            |
-| [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)                             | Fast travel between waypoints |
-| [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)                   | Keep inventory on death       |
+| [Sophisticated Storage](https://modrinth.com/mod/sophisticated-storage)       | Upgradable barrels/chests     |
+| [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks)   | Portable inventory            |
+| [Waystones](https://modrinth.com/mod/waystones)                               | Fast travel between waypoints |
+| [GraveStone Mod](https://modrinth.com/mod/gravestone-mod)                     | Keep inventory on death       |
 
 ### Infrastructure
 
-| Mod                                                                                                      | Role                                                                     |
-|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
-| [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
-| [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
+| Mod                                                                                          | Role                                                                     |
+|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [Chunk Loaders](https://modrinth.com/mod/chunk-loaders)                                      | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
+| [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib)         | Config library (Chunk Loaders dependency)                                |
+| [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib)             | Core library (Chunk Loaders dependency)                                  |
 
 ### New Dependencies
 
 | Mod                                                                               | Role                                            |
 |-----------------------------------------------------------------------------------|-------------------------------------------------|
-| [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config)         | Config screen library                           |
-| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility                      |
-| [YACL](https://modrinth.com/mod/yacl)                                             | Config library                                  |
-| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                 | Accessory slots (replaces Trinkets)             |
-| [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)         | Library (AmbientSounds)                         |
+| [Cloth Config](https://modrinth.com/mod/cloth-config)         | Config screen library                           |
+| [Architectury API](https://modrinth.com/mod/architectury-api) | Cross-loader compatibility                      |
+| [YACL](https://modrinth.com/mod/yacl)                           | Config library                                  |
+| [Curios API](https://modrinth.com/mod/curios)                 | Accessory slots (replaces Trinkets)             |
+| [CreativeCore](https://modrinth.com/mod/creativecore)         | Library (AmbientSounds)                         |
 | [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                          |
 | [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal)        |
 | [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                                |
@@ -152,7 +174,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 
 | Shaderpack                                                                                        | Description                                                           |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-shaders) | Realistic visual style, Potato→Ultra profiles, block-specific effects |
+| [Complementary Unbound](https://modrinth.com/shader/complementary-unbound) | Realistic visual style, Potato→Ultra profiles, block-specific effects |
 
 **Optimal settings for NVIDIA RTX 4080 SUPER (16GB VRAM, 4K target)**:
 
@@ -180,7 +202,7 @@ Install NeoForge for **1.21.1** (latest recommended release):
 
 | Pack                                                                            | Role                                                                                 |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Faithful 64x](https://www.curseforge.com/minecraft/texture-packs/faithful-64x) | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
+| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x) | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)          | Living entity animation overhaul — mobs blink, look around, show emotion             |
 | [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)               | 3D block & item textures for all rail types                                          |
 | [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                      | 3D model replacement for ladders                                                     |
@@ -642,7 +664,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 48      | 8      | 56      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                             |
+| Wave 0 — Foundation        | 49      | 8      | 57      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)             |
 | Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                                                                                       |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                                                                                            |
 | Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                                         |
@@ -652,4 +674,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 6       | 6      | 12      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf               |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
-| **Total**                  | **113** | **34** | **147** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
+| **Total**                  | **114** | **34** | **148** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
