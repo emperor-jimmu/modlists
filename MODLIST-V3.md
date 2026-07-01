@@ -115,7 +115,7 @@ If installing manually:
 | [Better Modlist](https://modrinth.com/mod/better-modlist-neoforge)              | Enhanced mod list screen with badges/categories                     |
 | [Better Third Person](https://modrinth.com/mod/better-third-person)             | Independent 360° camera rotation in third-person view               |
 | [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                   | Modern, sharp tooltip rendering with equipment compare              |
-| [Eating Animation](https://modrinth.com/mod/eating-animation)                   | First-person food/drink shrinking animation, visible in 3rd person  |
+| [Eating Animations](https://modrinth.com/mod/eating-animations)                 | First-person food/drink shrinking animation (Forge/NeoForge port)   |
 | [Durability Tooltip](https://modrinth.com/mod/durability-tooltip)               | Durability info on tooltips — configurable bar/text/both style      |
 | [Sounds](https://modrinth.com/mod/sound)                                        | 170+ new sound effects for UIs, items, blocks, actions              |
 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)           | Subtle float/pulse animations on inventory items                    |
@@ -126,7 +126,7 @@ If installing manually:
 |---------------------------------------------------------------------------------------------|-------------------------------------------------|
 | [JEI](https://modrinth.com/mod/jei)                                     | Recipe viewer                                   |
 | [Jade](https://modrinth.com/mod/jade)                                   | Block info HUD                                  |
-| [Jade Addons](https://modrinth.com/mod/jade-addons)                     | Extra Jade info panels                          |
+| [Jade Addons (Neo/Forge)](https://modrinth.com/mod/jade-addons-forge)           | Extra Jade info panels                          |
 | [Xaero's Minimap + World Map](https://modrinth.com/mod/xaeros-minimap) | Mapping and waypoints                           |
 | [AppleSkin](https://modrinth.com/mod/appleskin)                         | Food hunger/saturation overlay                  |
 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)                   | Inventory management shortcuts                  |
