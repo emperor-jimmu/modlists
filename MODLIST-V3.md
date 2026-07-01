@@ -127,7 +127,8 @@ If installing manually:
 | [JEI](https://modrinth.com/mod/jei)                                     | Recipe viewer                                   |
 | [Jade](https://modrinth.com/mod/jade)                                   | Block info HUD                                  |
 | [Jade Addons (Neo/Forge)](https://modrinth.com/mod/jade-addons-forge)           | Extra Jade info panels                          |
-| [Xaero's Minimap + World Map](https://modrinth.com/mod/xaeros-minimap) | Mapping and waypoints                           |
+| [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap)              | Minimal map, entity radar, waypoints             |
+| [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map)          | Full-screen world map with explored area overlay |
 | [AppleSkin](https://modrinth.com/mod/appleskin)                         | Food hunger/saturation overlay                  |
 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)                   | Inventory management shortcuts                  |
 | [Harvest With Ease](https://modrinth.com/mod/harvest-with-ease)         | Right-click crop harvest & replant              |
