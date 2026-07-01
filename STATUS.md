@@ -10,10 +10,10 @@
 ### Wave 0 — Foundation (~59 mods incl. deps)
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist
-- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Harvest With Ease, Fancy Toasts, Obscure Tooltips, Loot Journal, Reliable Advancements, Polymorph
+- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Fancy Toasts, Obscure Tooltips, Loot Journal, Reliable Advancements, Polymorph
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U
-- [x] Added Cobweb, YUNG's API to New Dependencies
+- [x] Added YUNG's API to New Dependencies
 
 ### Wave 1 — Tech, Colony & Chunk Loading (~13 mods)
 - [x] Core Tech: Create, Mekanism, AE2
@@ -45,7 +45,7 @@
 - [x] More Delight updated to 26.05.20a-1.21-neoforge (was stale pin 3.5.0)
 - [x] Delight Lib 26.05.18-1.21-neoforge added as required dep for More Delight
 - [x] All mod URLs switched to Modrinth
-- [x] All interdependency notes written (crop harvest with Harvest With Ease, food storage with AE2)
+- [x] All interdependency notes written (food storage with AE2)
 
 ### Wave 4.5 — Quests (1 mod)
 - [x] Bountiful 8.0.0-beta.2 selected
@@ -86,7 +86,6 @@
 - [x] Added BlazeandCave's Advancements Pack data pack for 1000+ tracked milestones across 16 tabs — pairs with Reliable Advancements (UI) for a complete advancement experience
 - [x] Noisium → NoisiumForked (Noisium archived on 1.21.1; NoisiumForked is active fork, same functionality)
 - [x] Constant Music → The Immersive Music Mod (Constant Music forced 2min fade limit with 5 songs; Immersive Music Mod has 147 songs, biome/structure-aware, no dead air gap override)
-- [x] Right Click Harvest → Harvest With Ease (RCH archived, Fabric-only; HWE is active, NeoForge native, supports all tools)
 - [x] Chat Heads → removed (multiplayer-only feature, unnecessary for singleplayer pack)
 - [x] Better Advancements → Reliable Advancements (BA stale on 1.21.1 since Oct 2024; RA is active fork with scrollable tabs, search, auto-refresh, updated Apr 2026)
 - [x] V3 docs rendered to PDF: MODLIST-V3.pdf and GETTING-STARTED-V3.pdf in rendered/

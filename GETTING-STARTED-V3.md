@@ -216,7 +216,7 @@ Your first session is about getting comfortable. Don't rush — this wave has ze
 | **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data                                             |
 | **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey                                          |
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                                                                 |
-| **Ongoing**                     | Harvest With Ease works as you farm. LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
+| **Ongoing**                     | LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
 
 ### Using Wave 0 Mods
 
@@ -331,10 +331,6 @@ Shows animated pickup notifications when items enter your inventory and tracks s
 
 Default settings work well — no changes needed.
 
-#### Harvest With Ease
-
-Right-click a fully grown crop → it harvests and auto-replants. Works on vanilla crops and most modded ones.
-
 #### Immersive UI
 
 Immersive UI adds subtle animation and polish to the game interface — the hotbar slides smoothly, items have gentle particle effects, and menus feel responsive rather than instant-teleport.
@@ -383,7 +379,7 @@ Better Third Person decouples your camera from your character in third-person vi
 - Once active, your character model moves independently of the camera
 - Great for combat: look behind you while running away
 - Great for building: orbit the camera around your build while placing blocks
-- Works with Eating Animation — you see your character eat in 3rd person
+- Your character model moves independently — useful for combat and building
 
 **No config changes needed** — default settings work well.
 
@@ -393,28 +389,15 @@ Tooltip Overhaul redesigns the tooltip appearance — rounded corners, smoother 
 
 **No config needed** — install and forget.
 
-#### Eating Animation
+#### Eating Animations (N/A — not updated for 1.21.1 NeoForge)
 
-Adds a visible eating animation in both first-person and third-person view. Food visibly shrinks as you eat. Works with Farmer's Delight foods out of the box — no extra config needed.
-
-**No config needed**.
+Eating Animation and its ports are not available for NeoForge 1.21.1. The original mod (Fabric) and the Forge port both have no 1.21.1 release. No replacement exists on Modrinth for this version. Remove from install list if present.
 
 #### Mod Name Tooltip
 
 Hover over any item in your inventory or JEI — the tooltip shows which mod added the item in small text. Helps you learn what belongs to which mod as you explore.
 
 **No config needed**.
-
-#### Durability Tooltip
-
-Shows the remaining durability of items as a visual bar on tooltips. No more guessing how much your pickaxe has left.
-
-**Config** (edit `config/durabilitytooltip.json`):
-
-- `"style"`: `"BAR"` — Shows durability as a colored bar instead of text.
-- Alternative values: `"TEXT"` (numeric), `"BOTH"` (bar + text).
-
-Default is `"BAR"` for this pack — set and forget.
 
 #### Sounds
 
@@ -1482,8 +1465,6 @@ Farmer's Delight adds new crops, a cutting board for ingredient prep, a cooking 
 | **Onion**   | Farmland. Pick when shoots show                   | Savory dishes, soups              |
 | **Rice**    | Grows in shallow water (1 block deep on dirt/mud) | Hearty meals, sushi (in addons)   |
 
-**Harvest With Ease** (from Wave 0) works on all these crops — right-click to harvest, the plant stays for regrowth.
-
 **Wild crops**: Found in the wild — look for **wild tomatoes** (plains/forests), **wild cabbage** (beaches), **wild onions** (taiga), and **wild rice** (swamps). Breaking them gives the seed item.
 
 #### Cutting Board — Ingredient Prep
@@ -1642,7 +1623,7 @@ Cooking is a side activity you build up gradually. Start small and expand as you
 | Session                           | Focus                                                                                                                                                                           | What to Build                                 |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | **Session 1 — Kitchen tools**     | Craft a cutting board (knife + planks) and cooking pot (iron + planks). Build a stove (bricks + iron nuggets) as heat source. Find wild tomato, cabbage, onion, rice seeds      | Functional kitchen, first ingredients         |
-| **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice near water. Use Harvest With Ease for easy harvesting. Cook your first meal (tomato soup is the easiest)                                   | Sustainable ingredient supply                 |
+| **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice near water. Harvest manually or with vanilla mechanics. Cook your first meal (tomato soup is the easiest)                                   | Sustainable ingredient supply                 |
 | **Session 3 — Brewing**           | Find barley, grapes, honey. Build a brewing station. Start your first batch of beer/wine/mead. Place an aging barrel                                                            | First drink fermenting, waiting for it to age |
 | **Session 4 — Kitchen expansion** | Craft Storage Delight cabinets and drawers for decorative ingredient storage. Try More Delight recipes (sandwiches, toasts). Collect Nether ingredients for My Nether's Delight | Full kitchen, all FD addons in use            |
 | **Ongoing**                       | Age drinks to Matured/Aged for boss-fight buffs. Explore oceans for Ocean's Delight ingredients. Stock your AE2 system with ingredients for autocrafting meals on demand        | Buff food always available for combat         |

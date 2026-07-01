@@ -115,8 +115,6 @@ If installing manually:
 | [Better Modlist](https://modrinth.com/mod/better-modlist-neoforge)              | Enhanced mod list screen with badges/categories                     |
 | [Better Third Person](https://modrinth.com/mod/better-third-person)             | Independent 360° camera rotation in third-person view               |
 | [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                   | Modern, sharp tooltip rendering with equipment compare              |
-| [Eating Animations](https://modrinth.com/mod/eating-animations)                 | First-person food/drink shrinking animation (Forge/NeoForge port)   |
-| [Durability Tooltip](https://modrinth.com/mod/durability-tooltip)               | Durability info on tooltips — configurable bar/text/both style      |
 | [Sounds](https://modrinth.com/mod/sound)                                        | 170+ new sound effects for UIs, items, blocks, actions              |
 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)           | Subtle float/pulse animations on inventory items                    |
 
@@ -131,7 +129,6 @@ If installing manually:
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map)          | Full-screen world map with explored area overlay |
 | [AppleSkin](https://modrinth.com/mod/appleskin)                         | Food hunger/saturation overlay                  |
 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)                   | Inventory management shortcuts                  |
-| [Harvest With Ease](https://modrinth.com/mod/harvest-with-ease)         | Right-click crop harvest & replant              |
 | [Fancy Toasts](https://modrinth.com/mod/fancy-toasts)                   | Beautiful animated advancement popups           |
 | [Obscure Tooltips](https://modrinth.com/mod/obscure-tooltips)           | Animated tooltips with 3D models and particles  |
 | [Loot Journal](https://modrinth.com/mod/loot-journal)                   | Animated item pickup notifications              |
@@ -168,7 +165,6 @@ If installing manually:
 | [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                          |
 | [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal)        |
 | [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                                |
-| [Cobweb](https://modrinth.com/mod/cobweb)                                         | Library (Harvest With Ease)                     |
 | [YUNG's API](https://modrinth.com/mod/yungs-api)                                  | Library (Traveler's Titles, YUNG's Better mods) |
 
 ### Shaderpack
@@ -254,12 +250,6 @@ If installing manually:
 - `writeSessionJson` = `true` — Saves per-session gain/loss data.
 - `writeStatisticsJson` = `true` — Builds cumulative drop statistics.
 - `showSummaryOnDisconnect` = `true` — Shows session summary on disconnect.
-
-**Durability Tooltip**:
-
-- Config file `config/durabilitytooltip.json`:
-    - `"style"`: `"BAR"` — Shows durability as a visual bar instead of text.
-    - Set to `"TEXT"` or `"BOTH"` for alternative display styles.
 
 ### Data Packs (Wave 0)
 
@@ -537,7 +527,6 @@ This cost curve encourages the player to settle for "good enough" gear until the
 **Interdependency notes for Wave 4:**
 
 - Farmer's Delight meals provide status effects that stack with Brewin' And Chewin' drinks. Combined, a full meal + a vintage drink gives significant combat buffs — useful before boss fights (Wave 5).
-- Harvest With Ease (Wave 0) works on all Farmer's Delight crops. Right-click to harvest, the plant stays for regrowth.
 - AE2's ME System can store Farmer's Delight ingredients and cooked meals. Set up an Export Bus on a cooking pot for automated ingredient delivery.
 - Bountiful (Wave 4.5) can generate bounties that request Farmer's Delight meals as objectives, and reward cooking ingredients.
 - My Nether's Delight, Ocean's Delight, and Ender's Delight unlock food sources from cross-dimensional ingredients (Nether, Overworld oceans, and End), giving reasons to explore every dimension beyond just combat.

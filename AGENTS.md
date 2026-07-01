@@ -97,9 +97,8 @@ Mod Management       Add mods one wave at a time, test launch after each wave
                          - Obscure Tooltips (animated tooltip visuals)
                          - Immersive UI (animated UI, smooth hotbar, item particles)
                          - Traveler's Titles (biome/dimension entry titles)
-                         - Tooltip Overhaul (modern tooltip rendering)
-                         - Durability Tooltip (durability info on tooltips)
-                         - Sound (UI/action sound effects)
+                          - Tooltip Overhaul (modern tooltip rendering)
+                          - Sound (UI/action sound effects)
                          - Tiny Item Animations (inventory item float/pulse)
 
 Data Packs           Stored in datapacks/, each with a README explaining purpose
