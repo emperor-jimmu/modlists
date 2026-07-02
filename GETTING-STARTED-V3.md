@@ -393,12 +393,6 @@ Tooltip Overhaul redesigns the tooltip appearance — rounded corners, smoother 
 
 Eating Animation and its ports are not available for NeoForge 1.21.1. The original mod (Fabric) and the Forge port both have no 1.21.1 release. No replacement exists on Modrinth for this version. Remove from install list if present.
 
-#### Mod Name Tooltip
-
-Hover over any item in your inventory or JEI — the tooltip shows which mod added the item in small text. Helps you learn what belongs to which mod as you explore.
-
-**No config needed**.
-
 #### Sounds
 
 Adds 170+ new sound effects for UI interactions, menu clicks, item drops, eating, drinking, achievements, and block actions. Every vanilla action feels more tactile.

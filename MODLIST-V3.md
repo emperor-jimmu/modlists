@@ -27,17 +27,17 @@ Recommended JVM arguments (for Modrinth App → instance → Settings → Java &
 
 | System RAM | Recommended allocation |
 |------------|------------------------|
-| 16 GB      | `-Xms10G -Xmx10G`     |
-| 32 GB      | `-Xms22G -Xmx22G`     |
-| 64 GB      | `-Xms48G -Xmx48G`     |
+| 16 GB      | `-Xms10G -Xmx10G`      |
+| 32 GB      | `-Xms22G -Xmx22G`      |
+| 64 GB      | `-Xms48G -Xmx48G`      |
 
 > **Note**: ZGC (Z Garbage Collector) with generational mode is the recommended GC for Java 21 with NeoForge. It provides consistently low latency (sub-millisecond pause times) and handles the large heap sizes common with modded Minecraft better than Shenandoah or G1GC. The Adoptium Temurin JDK 21 includes ZGC — no special Java build needed. If you encounter issues, you may also add `-XX:+AlwaysPreTouch` for pre-initialized memory pages.
 
 ### Modrinth App
 
-| Tool                                                                          | Role                                         |
-|-------------------------------------------------------------------------------|----------------------------------------------|
-| [Modrinth App](https://modrinth.com/app)                                      | Mod manager and launcher for the modpack      |
+| Tool                                     | Role                                     |
+|------------------------------------------|------------------------------------------|
+| [Modrinth App](https://modrinth.com/app) | Mod manager and launcher for the modpack |
 
 The **Modrinth App** manages mod installation, updates, and launching for this modpack. It creates a separate instance per modpack, handles NeoForge installation automatically, and lets you install mods in one click from Modrinth's database. All Wave 0+ mods in this pack are available on Modrinth.
 
@@ -88,89 +88,88 @@ If installing manually:
 
 ### Performance & Rendering
 
-| Mod                                                                               | Role                                     |
-|-----------------------------------------------------------------------------------|------------------------------------------|
-| [Sodium](https://modrinth.com/mod/sodium)                                         | Rendering engine                         |
-| [Iris](https://modrinth.com/mod/iris)                                             | Shader loader (v1.8.14, NeoForge native) |
-| [Lithium](https://modrinth.com/mod/lithium)                                       | Server-side game logic optimization      |
-| [Distant Horizons](https://modrinth.com/mod/distanthorizons)                      | LOD rendering                            |
-| [ModernFix](https://modrinth.com/mod/modernfix)                                   | All-in-one perf + bug fixes              |
-| [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast)                       | Immediate-mode rendering                 |
-| [Entity Culling](https://modrinth.com/mod/entityculling)                          | Hide off-screen entities                 |
-| [Dynamic FPS](https://modrinth.com/mod/dynamicfps)                                | Background FPS reduction                 |
-| [NoisiumForked](https://modrinth.com/mod/noisiumforked) (v2.7.0)                  | Worldgen optimization (active fork)      |
-| [FerriteCore](https://modrinth.com/mod/ferrite-core)                             | Memory usage reduction                   |
+| Mod                                                              | Role                                     |
+|------------------------------------------------------------------|------------------------------------------|
+| [Sodium](https://modrinth.com/mod/sodium)                        | Rendering engine                         |
+| [Iris](https://modrinth.com/mod/iris)                            | Shader loader (v1.8.14, NeoForge native) |
+| [Lithium](https://modrinth.com/mod/lithium)                      | Server-side game logic optimization      |
+| [Distant Horizons](https://modrinth.com/mod/distanthorizons)     | LOD rendering                            |
+| [ModernFix](https://modrinth.com/mod/modernfix)                  | All-in-one perf + bug fixes              |
+| [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast)      | Immediate-mode rendering                 |
+| [Entity Culling](https://modrinth.com/mod/entityculling)         | Hide off-screen entities                 |
+| [Dynamic FPS](https://modrinth.com/mod/dynamicfps)               | Background FPS reduction                 |
+| [NoisiumForked](https://modrinth.com/mod/noisiumforked) (v2.7.0) | Worldgen optimization (active fork)      |
+| [FerriteCore](https://modrinth.com/mod/ferrite-core)             | Memory usage reduction                   |
 
 ### Visual & Client QoL
 
-| Mod                                                                                               | Role                                                                |
-|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)                 | Dynamic lighting                                                    |
-| [BetterF3](https://modrinth.com/mod/betterf3)                                   | Customizable debug HUD                                              |
-| [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered)   | Realistic sound                                                     |
-| [AmbientSounds](https://modrinth.com/mod/ambientsounds)                         | Nature ambiance (birds, wind, water)                                |
-| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)           | 147 new biome/structure-based songs, vanilla silence gaps preserved |
-| [Immersive UI](https://modrinth.com/mod/immersive-ui)                           | Animated UI, smooth hotbar, item particles                          |
-| [Traveler's Titles](https://modrinth.com/mod/travelers-titles)                  | RPG-style titles entering biomes/dimensions                         |
-| [Better Modlist](https://modrinth.com/mod/better-modlist-neoforge)              | Enhanced mod list screen with badges/categories                     |
-| [Better Third Person](https://modrinth.com/mod/better-third-person)             | Independent 360° camera rotation in third-person view               |
-| [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                   | Modern, sharp tooltip rendering with equipment compare              |
-| [Sounds](https://modrinth.com/mod/sound)                                        | 170+ new sound effects for UIs, items, blocks, actions              |
-| [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)           | Subtle float/pulse animations on inventory items                    |
+| Mod                                                                           | Role                                                                |
+|-------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)               | Dynamic lighting                                                    |
+| [BetterF3](https://modrinth.com/mod/betterf3)                                 | Customizable debug HUD                                              |
+| [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | Realistic sound                                                     |
+| [AmbientSounds](https://modrinth.com/mod/ambientsounds)                       | Nature ambiance (birds, wind, water)                                |
+| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)         | 147 new biome/structure-based songs, vanilla silence gaps preserved |
+| [Immersive UI](https://modrinth.com/mod/immersive-ui)                         | Animated UI, smooth hotbar, item particles                          |
+| [Traveler's Titles](https://modrinth.com/mod/travelers-titles)                | RPG-style titles entering biomes/dimensions                         |
+| [Better Modlist](https://modrinth.com/mod/better-modlist-neoforge)            | Enhanced mod list screen with badges/categories                     |
+| [Better Third Person](https://modrinth.com/mod/better-third-person)           | Independent 360° camera rotation in third-person view               |
+| [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare              |
+| [Sounds](https://modrinth.com/mod/sound)                                      | 170+ new sound effects for UIs, items, blocks, actions              |
+| [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)         | Subtle float/pulse animations on inventory items                    |
 
 ### Inventory & UI
 
-| Mod                                                                                         | Role                                            |
-|---------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [JEI](https://modrinth.com/mod/jei)                                     | Recipe viewer                                   |
-| [Jade](https://modrinth.com/mod/jade)                                   | Block info HUD                                  |
-| [Jade Addons (Neo/Forge)](https://modrinth.com/mod/jade-addons-forge)           | Extra Jade info panels                          |
+| Mod                                                                     | Role                                             |
+|-------------------------------------------------------------------------|--------------------------------------------------|
+| [JEI](https://modrinth.com/mod/jei)                                     | Recipe viewer                                    |
+| [Jade](https://modrinth.com/mod/jade)                                   | Block info HUD                                   |
+| [Jade Addons (Neo/Forge)](https://modrinth.com/mod/jade-addons-forge)   | Extra Jade info panels                           |
 | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap)              | Minimal map, entity radar, waypoints             |
 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map)          | Full-screen world map with explored area overlay |
-| [AppleSkin](https://modrinth.com/mod/appleskin)                         | Food hunger/saturation overlay                  |
-| [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)                   | Inventory management shortcuts                  |
-| [Fancy Toasts](https://modrinth.com/mod/fancy-toasts)                   | Beautiful animated advancement popups           |
-| [Obscure Tooltips](https://modrinth.com/mod/obscure-tooltips)           | Animated tooltips with 3D models and particles  |
-| [Loot Journal](https://modrinth.com/mod/loot-journal)                   | Animated item pickup notifications              |
-| [Reliable Advancements](https://modrinth.com/mod/reliable-advancements) | Overhauled advancements UI with editor/pan/zoom |
-| [Polymorph](https://modrinth.com/mod/polymorph)                         | Choose crafting result when recipes conflict    |
-| [Mod Name Tooltip](https://modrinth.com/mod/mod-name-tooltip)           | Shows which mod an item comes from in tooltip   |
+| [AppleSkin](https://modrinth.com/mod/appleskin)                         | Food hunger/saturation overlay                   |
+| [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)                   | Inventory management shortcuts                   |
+| [Fancy Toasts](https://modrinth.com/mod/fancy-toasts)                   | Beautiful animated advancement popups            |
+| [Obscure Tooltips](https://modrinth.com/mod/obscure-tooltips)           | Animated tooltips with 3D models and particles   |
+| [Loot Journal](https://modrinth.com/mod/loot-journal)                   | Animated item pickup notifications               |
+| [Reliable Advancements](https://modrinth.com/mod/reliable-advancements) | Overhauled advancements UI with editor/pan/zoom  |
+| [Polymorph](https://modrinth.com/mod/polymorph)                         | Choose crafting result when recipes conflict     |
 
 ### Storage & Travel
 
-| Mod                                                                                             | Role                          |
-|-------------------------------------------------------------------------------------------------|-------------------------------|
-| [Sophisticated Storage](https://modrinth.com/mod/sophisticated-storage)       | Upgradable barrels/chests     |
-| [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks)   | Portable inventory            |
-| [Waystones](https://modrinth.com/mod/waystones)                               | Fast travel between waypoints |
-| [GraveStone Mod](https://modrinth.com/mod/gravestone-mod)                     | Keep inventory on death       |
+| Mod                                                                         | Role                          |
+|-----------------------------------------------------------------------------|-------------------------------|
+| [Sophisticated Storage](https://modrinth.com/mod/sophisticated-storage)     | Upgradable barrels/chests     |
+| [Sophisticated Backpacks](https://modrinth.com/mod/sophisticated-backpacks) | Portable inventory            |
+| [Waystones](https://modrinth.com/mod/waystones)                             | Fast travel between waypoints |
+| [GraveStone Mod](https://modrinth.com/mod/gravestone-mod)                   | Keep inventory on death       |
 
 ### Infrastructure
 
-| Mod                                                                                          | Role                                                                     |
-|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [Chunk Loaders](https://modrinth.com/mod/chunk-loaders)                                      | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
-| [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib)         | Config library (Chunk Loaders dependency)                                |
-| [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib)             | Core library (Chunk Loaders dependency)                                  |
+| Mod                                                                                  | Role                                                                     |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [Chunk Loaders](https://modrinth.com/mod/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
+| [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
+| [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
 
 ### New Dependencies
 
-| Mod                                                                               | Role                                            |
-|-----------------------------------------------------------------------------------|-------------------------------------------------|
+| Mod                                                           | Role                                            |
+|---------------------------------------------------------------|-------------------------------------------------|
 | [Cloth Config](https://modrinth.com/mod/cloth-config)         | Config screen library                           |
 | [Architectury API](https://modrinth.com/mod/architectury-api) | Cross-loader compatibility                      |
-| [YACL](https://modrinth.com/mod/yacl)                           | Config library                                  |
+| [YACL](https://modrinth.com/mod/yacl)                         | Config library                                  |
 | [Curios API](https://modrinth.com/mod/curios)                 | Accessory slots (replaces Trinkets)             |
 | [CreativeCore](https://modrinth.com/mod/creativecore)         | Library (AmbientSounds)                         |
-| [OctoLib](https://modrinth.com/mod/shatterbyte-lib)                               | Library (Immersive UI)                          |
-| [Fragmentum](https://modrinth.com/mod/fragmentum)                                 | Library (Obscure Tooltips, Loot Journal)        |
-| [M.R.U](https://modrinth.com/mod/mru)                                             | Library (Sounds)                                |
-| [YUNG's API](https://modrinth.com/mod/yungs-api)                                  | Library (Traveler's Titles, YUNG's Better mods) |
+| [OctoLib](https://modrinth.com/mod/shatterbyte-lib)           | Library (Immersive UI)                          |
+| [Fragmentum](https://modrinth.com/mod/fragmentum)             | Library (Obscure Tooltips, Loot Journal)        |
+| [M.R.U](https://modrinth.com/mod/mru)                         | Library (Sounds)                                |
+| [YUNG's API](https://modrinth.com/mod/yungs-api)              | Library (Traveler's Titles, YUNG's Better mods) |
 
 ### Shaderpack
 
-| Shaderpack                                                                                        | Description                                                           |
-|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Shaderpack                                                                 | Description                                                           |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | [Complementary Unbound](https://modrinth.com/shader/complementary-unbound) | Realistic visual style, Potato→Ultra profiles, block-specific effects |
 
 **Optimal settings for NVIDIA RTX 4080 SUPER (16GB VRAM, 4K target)**:
@@ -197,13 +196,13 @@ If installing manually:
 
 ### Texture Packs
 
-| Pack                                                                            | Role                                                                                 |
-|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x) | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
-| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)          | Living entity animation overhaul — mobs blink, look around, show emotion             |
-| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)               | 3D block & item textures for all rail types                                          |
-| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                      | 3D model replacement for ladders                                                     |
-| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)            | Enhanced 3D look for lanterns and chains                                             |
+| Pack                                                                   | Role                                                                                 |
+|------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x)         | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
+| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) | Living entity animation overhaul — mobs blink, look around, show emotion             |
+| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)      | 3D block & item textures for all rail types                                          |
+| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)             | 3D model replacement for ladders                                                     |
+| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)   | Enhanced 3D look for lanterns and chains                                             |
 
 **Faithful 64x** upscales vanilla blocks to 64x resolution while preserving the original look. Works with Complementary Unbound's Integrated PBR+ for realistic material response (metal shines, wool is soft, stone is rough). Modded blocks (Create, Mekanism, AE2) use their default textures, which are already well-designed and blend naturally at 64x. The RTX 4080 SUPER handles this with zero FPS impact at 4K.
 
@@ -654,7 +653,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 49      | 8      | 57      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)             |
+| Wave 0 — Foundation        | 49      | 8      | 57      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                             |
 | Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                                                                                       |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                                                                                            |
 | Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                                         |
