@@ -15,13 +15,14 @@
 - Support-framework route: `UIExtensions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17561> → `06a`
 - Grim-dark visual overhaul: `Oathvein UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160916> → `06a`
 - Modern-rustic visual overhaul: `Norden UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/166086> → `06a`
+- Morrowind-inspired dark-elven UI: `Vel'dun UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176230> → `06a`
 - Next-gen web-UI framework branch: `Prisma UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148718> → `06a`
 
 ### Recommendation
 
 - Start with `SkyUI` as the non-negotiable baseline. → `06a`
 - Treat `UIExtensions` as support infrastructure where later chosen mods need it rather than as a competing UI identity. → `06a`
-- Set `Oathvein UI` as the locked visual direction. Both `Oathvein UI` and `Norden UI` are by the same author (`Nithog`) and both are actively maintained, but `Oathvein` is the chosen path for `Elder Wilds`: its grim-dark presentation matches the project tone better, and its dependency chain is cleaner than `Norden UI`'s `Extended UI` requirement. → `06a`
+- Set `Oathvein UI` as the locked visual direction. `Oathvein UI`, `Norden UI`, and `Vel'dun UI` are all by the same author (`Nithog`) and all actively maintained, but `Oathvein` is the chosen path for `Elder Wilds`: its grim-dark presentation matches the project tone better, its dependency chain is cleaner than `Norden UI`'s `Extended UI` requirement, and its general-purpose dark fantasy aesthetic is a better fit for Skyrim's identity than `Vel'dun UI`'s focused Morrowind-inspired Dunmer theming. → `06a`
 - Keep `Prisma UI` as a documented next-gen framework comparison rather than the default choice. It is a web-UI framework that replaces `SkyUI` rather than extending it, which makes it incompatible with the `Oathvein UI` visual direction and with most UIExtensions-based mods from later subsections. Locked baseline stays `SkyUI` + `Oathvein UI`; `Prisma UI` is documented for projects that want to pursue the framework-replacement path instead of the visual-overhaul path. → `06a`
 - Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision. → `06a`
 - Add `Constructible Object Custom Keyword System (COCKS)` as the crafting-menu category infrastructure baseline. It owns the keyword-based category structure that underpins the crafting-menu readability improvements in the Crafting Menu Improvements subsection. Locked alongside the other framework picks here rather than buried in the crafting subsection alone. → `06a`
@@ -38,7 +39,7 @@
 
 - `modlist-06.md` has one clear UI framework baseline: `SkyUI` + `Oathvein UI`. → `06a`
 - The role of `UIExtensions` is explicit as support infrastructure rather than a competing full UI direction. → `06a`
-- The visual baseline is narrowed to `Oathvein UI` with a clear rationale for why it fits `Elder Wilds` over `Norden UI`. → `06a`
+- The visual baseline is narrowed to `Oathvein UI` with a clear rationale for why it fits `Elder Wilds` over `Norden UI` and `Vel'dun UI`. → `06a`
 - `COCKS` is locked as the crafting-menu category infrastructure baseline alongside the other framework picks. → `06a`
 
 ## HUD Overhaul → `06a Framework & HUD` → `06a`
