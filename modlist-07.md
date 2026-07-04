@@ -375,6 +375,25 @@
 - The mod is marked optional and its MCM-toggleable NPC-name feature is called out.
 - No other mod in the list changes activation text.
 
+## Candidate TODO Additions
+
+### Timescale & Travel → `07a`
+
+- `Extended Stay - Longer inn` — inn stay duration extension → `07a`
+
+### Nights & Wildlife → `07c`
+
+- `Wearable Lanterns` — carried lantern (compare to `Simple Wearable Lanterns - Remastered` already listed below) → `07c`
+
+### Cities & Landmarks → `07d`
+
+- `Nordic Runestones (?)` — runestone world objects → `07d`
+- `Place of Power (?)` — standing stone visual overhaul → `07d`
+- `Whiterun Horse Statues` — Whiterun landmark horse statues → `07d`
+- `Solitude Statuary` — Solitude statue/decoration objects → `07d`
+- `s6o6t LORE - Mundus Stones` — standing stone 3D replacer → `07d`
+- `Northern Roads - Clutters Only My Version` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/126175>) — Northern Roads clutter-only variant → `07d`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

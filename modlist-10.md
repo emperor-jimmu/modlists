@@ -301,6 +301,13 @@
 - Any creature-call or entity-voice additions are intentional specialization branches rather than accidental bundle spillover.
 - `modlist-10.md` stays focused on audio identity and feedback quality instead of absorbing unrelated support systems. → `10b`
 
+## Candidate TODO Additions
+
+### SFX & Ambience → `10b`
+
+- `Sonorum Arcana - The Magic sound compendium` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/119738>) — magic sound overhaul → `10b`
+- `The Standing Sound stones` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/119471>) — standing stone ambient sound → `10b`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

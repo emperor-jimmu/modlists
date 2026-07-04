@@ -300,6 +300,10 @@ NOT INSTALLED - `I'm Walkin' Here NG with Pets` (Nexus: <https://www.nexusmods.c
 - `LeveledList Crash Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129136>) — leveled-list crash protection for heavy content stacks → `01d`
 - `Explosion Collision Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/154076>) — prevents explosion-force spells from launching large objects into the player's camera, fixing a longstanding destructible-physics annoyance → `01d`
 
+### Candidate TODO Additions → `01d`
+
+- `Alt-Tab Stuck Key Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148466>) — keyboard input bugfix for stuck modifier keys after alt-tab → `01d`
+
 ### Working Guidance
 
 - Keep this list disciplined and selective. Do not dump every small fix mod here just because it sounds reasonable.

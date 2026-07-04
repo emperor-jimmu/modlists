@@ -1020,6 +1020,63 @@ Male variety on `HIMBO`:
 - The chosen framework does not conflict with the locked weather, lighting, or community-shaders baseline.
 - Blood and decal ownership stays separate from hit-reaction, stagger, and combat-balance decisions in `modlist-04.md` and `modlist-11.md`.
 
+## Candidate TODO Additions → `02b`, `02d`, `02e`, `02f`
+
+### Textures, Clutter & Meshes → `02b`
+
+- `Racemenu Enhancer` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182536>) — character creation RaceMenu enhancer → `02b`
+- `Visual Animated Enchants` — weapon enchantment VFX replacer → `02b`
+- `Apophysis Dragon Priests Masks` — dragon priest mask retexture → `02b`
+- `Runed Nordic Weapons` — Nordic weapon mesh/texture replacer → `02b`
+- `Elven Armor replacer glow` — Elven armor retexture with glow maps → `02b`
+- `Elsopa Iron weapons redone` — iron weapon retexture → `02b`
+- `Ennead Banners and Shields` — banner/shield retexture → `02b`
+- `Elsopa Quivers Redone` — quiver retexture → `02b`
+- `Believable greatswords sheathed` — greatsword sheath mesh fix → `02b`
+- `ElSopa - HD Medieval anvil` — anvil retexture → `02b`
+- `Elsopa Grindstones` — grindstone retexture → `02b`
+- `Renthal Workbench` — workbench retexture → `02b`
+- `VFX Edit AIO - Spells Retexture` — spell visual effect retexture → `02b`
+- `JFresh's Mead Stein` — mead stein retexture → `02b`
+- `SD's Horn Candles` — candle retexture → `02b`
+- `JS Dragon Claws` — dragon claw retexture → `02b`
+- `Skyrim remastered soul gems` — soul gem retexture → `02b`
+- `Rally's Market Stalls` — market stall retexture → `02b`
+- `KanJS Spell Tomes Animated` — animated spell tome mesh replacer → `02b`
+- `Alt Markarth Forge` — Markarth forge retexture → `02b`
+- `HD Unique Handmade signs` — inn/shop sign retexture → `02b`
+- `Stay Arrows Stay` — keeps arrows lodged in bodies and world → `02b`
+- `One Quiver to rule them all` — quiver attachment positioning fix → `02b`
+- `Nordic Windhelm` / `Tomato's Windhelm` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174492>) — Windhelm city retexture with PBR/Complex Material → `02b`
+- `Distinguished Drapery` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173894>) — curtain/hanging fabric retexture → `02b`
+- `The Mists of Blackreach` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179487>) — Blackreach mist/fog VFX → `02b`
+- `Better Wine Labels - Vanilla and LotD` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34698>, PBR Patch: <https://www.nexusmods.com/skyrimspecialedition/mods/175588>) — wine bottle label retexture with LoTD support → `02b`
+- `Diverse Windmill Sails - BOS` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121759>) — windmill sail variety via Base Object Swapper → `02b`
+- `Diverse Foods - BOS` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/91599>) — food variety via Base Object Swapper → `02b`
+- `Diverse Candles - BOS` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/94369>) — candle variety via Base Object Swapper → `02b`
+- `Better Pelts and Hides` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87277>) — pelt/hide retexture → `02b`
+- `Fluffy Hanging rabbits` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/89148>) — hanging rabbit mesh retexture → `02b`
+- `FrankBlack's Honey in a Jar` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/104496>) — honey jar retexture → `02b`
+- `slightly Better Nordic Henges - BOS` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97162>) — Nordic henge visual upgrade via BOS → `02b`
+
+### Lighting → `02d`
+
+- `KD Realistic Fireplaces` — fireplace visual upgrade → `02d`
+- `EmbersXD Torch Edit` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134219>) — torch visual edit for Embers XD → `02d`
+
+### Weather & Sky → `02e`
+
+- `Draco's fantasy auroras` — aurora/sky visual replacer → `02e`
+- `Draco's moons` — moon visual replacer → `02e`
+
+### Flora & Landscape → `02f`
+
+- `Flora Additions - Water Plants` — water plant flora additions → `02f`
+- `Bigger trees` — tree size multiplier → `02f`
+- `Grassreach - Blackreach Grass` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179420>) — Blackreach grass mod → `02f`
+- `Freak's Floral Solstheim` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138161>) — Solstheim flora replacer → `02f`
+- Road texture options: `Simplest Roads` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/111255>), `Simple Complex Parallax Roads` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173826>), `Blended Roads` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/8834>) — road texture alternatives; Blended Roads already baseline candidate → `02f`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

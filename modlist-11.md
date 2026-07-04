@@ -196,6 +196,12 @@
 - The section-05 survival baseline still feels like the primary survival system rather than one participant in a pileup.
 - Town visits, camps, inns, and meal prep matter more because of actual play rhythm, not because the list added arbitrary chores.
 
+## Candidate TODO Additions
+
+### Survival & Needs → `11c`
+
+- `Dirt and Blood` — visual dirt/blood accumulation on character (also cross-referenced in `05c`; primary ownership should be in whichever section the hygiene/survival system lands) → `11c`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

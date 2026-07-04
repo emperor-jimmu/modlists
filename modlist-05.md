@@ -844,6 +844,32 @@
 - Shout-audio mods from section 10 apply to Thunderchild's new shouts.
 - No guard-behaviour or bounty incoherence from vampire feeding under the locked crime baseline.
 
+## Candidate TODO Additions
+
+### Character Systems → `05a`
+
+- `Lore and Gender Heights` — race/gender height differences → `05a`
+- `Faction Ranks` — visible faction rank titles → `05a`
+- `Gods and Worship` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45011>) — religion/worship system → `05a`
+
+### Magic & Items → `05b`
+
+- `Better Alchemy and Enchanting` (⚠️ needs research — unsure what specific mod this refers to) → `05b`
+- `Skytone runes` — sky rune visual companion to Strange Runes → `05b`
+- `Strange Wards` — ward spell visual upgrade → `05b`
+- `My Precious...es - Multiple Rings SKSE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/180015>) — multi-ring equip support → `05b`
+- `Enhanced invisibility` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61950>) — invisibility spell VFX upgrade → `05b`
+- `Spell cast time progression` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/163122>) — spell cast time scaling → `05b`
+
+### Survival & Needs → `05c`
+
+- `Dirt and Blood` — visual dirt/blood accumulation on character → `05c`
+
+### Crafting & Economy → `05d`
+
+- `Better Smelting` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/40965>) — smelting recipe expansion → `05d`
+- `Fish anywhere with water` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/60915>) — fishing outside designated spots → `05d`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

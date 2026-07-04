@@ -456,6 +456,27 @@
 - `Skyrim Party Sheet` stays in the optional tracking section until playtesting confirms stability and compatibility. → `06a`
 - The UI stack does not adopt experimental mods as baselines by default.
 
+## Candidate TODO Additions
+
+### Framework & System UI → `06a`
+
+- `Character Menu SE` — character appearance menu enhancer → `06a`
+- `Kill feed` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179053>) — enemy kill notification feed → `06a`
+- `SKSE Menu Framework` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120352>) — menu framework SKSE plugin → `06a`
+- `Auto Input Switch` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54309>) — auto-detect controller vs KB+M input → `06a`
+
+### Inventory → `06b`
+
+- `Unread books glow redone` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138451>) — unread book visual highlight → `06b`
+- `Show Player In Inventory` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/178689>) — player model in inventory menu → `06b`
+
+### HUD, Map & Dialogue → `06c`
+
+- `Pastel Map Markers (?)` — optional map marker recolor → `06c`
+- `Smart Talk (Dialogue Menu Enhancer)` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171449>) — dialogue menu categorization → `06c`
+- `Quest Journal Overhaul` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172488>) — quest journal visual overhaul → `06c`
+- `Even Better Quest Objectives SE - EBQO SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159>) — quest objective clarity → `06c`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

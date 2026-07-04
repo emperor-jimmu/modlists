@@ -324,6 +324,36 @@ This subsection owns custom fully-voiced follower additions — new NPCs with au
 - AE patch functions correctly with the full Creation Club content set.
 - Cross-follower banter (Inigo, Lucien, Remiel, Auri, Kaidan) plays without missing audio.
 
+## Candidate TODO Additions
+
+### NPC Dialogue → `09a`
+
+- `Naked Comments Overhaul` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/142249>) — NPC dialogue about nudity → `09a`
+- `Collision Dialogue Overhaul` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115079>) — NPC collision dialogue expansion → `09a`
+- `Extended NPC Dialogue` — series of generic NPC dialogue expansions → `09a`
+- `Chattier Hunters and Fishermen` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179154>) — NPC dialogue expansion → `09a`
+
+### Enemies & Creatures → `09b`
+
+- `Next Gen Dragon VFX` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176433>) — dragon VFX upgrade → `09b`
+- `Diverse 4thUnknown Dragons` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162886>) — dragon model diversity → `09b`
+- `Dragons actually fall down` — dragon kill animation fix → `09b`
+- `Epic Dwarven Centurion Combat - Diverse Centurions` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/181405>) — Dwarven centurion enemy overhaul → `09b`
+- `Skyrim Bandit Expansion` — bandit variety/roster expansion → `09b`
+- `Sleep of the Dead - A Draugr Leather and Shroud Replacer` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/178057>) — draugr visual replacer → `09b`
+- `Frozen Electrocuted Combustion` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3532>) — enemy death VFX (frozen/shock/burn) → `09b`
+- `Better Butterflies` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/79332>; based on `Butterfly Improved by zzjay` Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37302>) — butterfly visual upgrade → `09b`
+
+### NPC AI → `09c`
+
+- `Immersive Citizens - AI` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/173>) — NPC AI overhaul (known conflict with AI Overhaul SSE) → `09c`
+
+### NPC Framework → `09d`
+
+- `Keep Up - Follower Locomotion Fix` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/169808>) — follower movement speed fix → `09d`
+
+Note: `Lawless` (#124) already in `09b` as baseline pick. `Steal off scoundrels` (#74) already in `05e`. `Streamlined Fishing` (#103) already mentioned in `08b`.
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

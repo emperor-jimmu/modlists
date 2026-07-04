@@ -389,6 +389,32 @@
 - New animation issues can be narrowed down to one layer or one recent change without excessive guesswork.
 - The section is stable enough that `Animations and Movement` can be considered complete and future work can move into `Third-Person Gameplay`. → `03a`
 
+## Candidate TODO Additions
+
+### Idles & Expressions → `03b`
+
+- `Poses, Actions and Musical` — idle/pose animation pack → `03b`
+- `More Tavern Idls - Immersive` — tavern idle animation additions → `03b`
+- `Headtracking and Emotions` — NPC headtracking and facial expression improvements → `03b`
+
+### Combat Animation → `03c`
+
+- `Smooth block animation` — block animation replacer → `03c`
+- `Weapon Trails` — weapon trail VFX → `03c`
+- `Killmove fixes` — killmove camera/animation fix → `03c`
+- `Goetia Animations - Magic Spell Casting` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/70204>) — magic cast animation pack → `03c`
+
+### Movement & Parkour → `03d`
+
+- `Smooth Jump animation` — jump animation replacer → `03d`
+- `Just Shields on your back / Weapons on Back AiO` — shield/weapon placement (choose one) → `03d`
+- `Walk Speed Tuner` — movement speed adjustment → `03d`
+- `Dova Jump` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/125550>) — jump height/behavior tweak → `03d`
+
+### Creature Animation → `03e`
+
+- `Troll - MCO` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175250>) — troll MCO animation → `03e`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

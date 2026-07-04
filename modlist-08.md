@@ -454,6 +454,28 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - `Hearthfire multiple adoptions` is documented as a family-housing dependency, not a standalone home pick.
 - The chosen direction supports long-term play without duplicating the museum-safehouse role reserved for `Legacy of the Dragonborn`.
 
+## Candidate TODO Additions
+
+### Overhauls → `08a`
+
+- `Winterhold docks` — Winterhold dock structure addition → `08a`
+- `Merchant Chests on display` — merchant chest visual display → `08a`
+- `Dynamic boats at docks` — boat movement at docks → `08a`
+- `Imperial Towers Overhaul - Exterior` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179653>) — Imperial tower world edits → `08a`
+- `JK's Thieves Guild HQ` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/133787>), `GG's Thieves Guild Headquarters` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64018>) — Thieves Guild HQ overhaul (choose one; GG's has Patch Collection: <https://www.nexusmods.com/skyrimspecialedition/mods/63967>) → `08a`
+- `BIOMES I` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138300>) — landscape overhaul (need to review) → `08a`
+- `Imperial Castles of Skyrim - Fort Battlements v2` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129327>) — Imperial fort architecture overhaul → `08a`
+
+### Quests & Content → `08b`
+
+- `Apocryphal Archives` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174267>) — Apocrypha quest expansion → `08b`
+- `Dwemer Tech, Weapons and Armor` — Dwemer item/equipment content pack → `08b`
+- `The Skyrim Bestiary` — animal lore book item → `08b`
+- `Moonpath to Elsweyr` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4341>) — new lands quest mod → `08b`
+- `Ballad of the Bards Vol.1 - College Bard Outfit` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/180492>) — bard outfit item → `08b`
+- `Fish Anywhere - Streamlined Fishing (Patch)` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85070>) — combo patch for Streamlined Fishing + Fish Anywhere → `08b`
+- `Thieves Guild Requirements SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33256>) — Thieves Guild progression requirement → `08b`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:

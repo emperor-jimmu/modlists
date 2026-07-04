@@ -298,6 +298,19 @@
 - Mounted controls and camera behavior remain coherent with the chosen on-foot third-person direction.
 - The final horse solution improves usability without introducing a sprawling side system that clashes with the rest of the list.
 
+## Candidate TODO Additions
+
+### Combat Gameplay → `04b`
+
+- `Eviscerate` — combat gore/dismemberment gameplay → `04b`
+- `Cinema - Dynamic Combat Letterbox` — dynamic letterbox during combat → `04b`
+- `Parry for All` — universal parry/block mechanic → `04b`
+- `Deadly spell impact` — spell impact visual/audio feedback → `04b`
+
+### Mounted → `04c`
+
+- `HorsePower - Modernized horse riding` — modern horse riding overhaul → `04c`
+
 ## Post-Install Smoke Test
 
 After completing this section, verify stability with the coc console command at these 6 locations:
