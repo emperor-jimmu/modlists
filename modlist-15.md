@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `15 Adult Content`
 
-## Framework → `15` Prerequisites
+## Framework Prerequisites → `15`
 
 ### Core Idea
 
@@ -39,159 +39,125 @@ Add **OCum Ascended** as the orgasm-mechanics layer on top of the framework. It 
 
 ### Acceptance Criteria
 
-- OStim Standalone runs on Steam 1.6.1170 without crashes at initialisation.
-- OStim Romance and the AA OStim patch load without missing master errors.
-- The stack does not require or load OSA or SexLab.
+- OStim Standalone loads cleanly on 1.6.1170 without missing-dependency errors.
+- OStim Romance and the AA OStim patch (if used) find the correct framework version.
+- Animation packs populate the scene list.
+- Sound replacers, physics toggles, and orgasm mechanics layer correctly.
+- Script load from the framework stays low enough that normal combat and travel are unaffected.
 
-## Romance Quests → `15`
-
-### Core Idea
-
-This subsection owns structured romance content — quests with dialogue, relationship progression, and adult scenes built on the OStim framework. The Amorous Adventures ecosystem is the anchor: a fully voiced, multi-quest romance expansion for vanilla NPCs, modernised through a dialogue rewrite, an AI revoice, and an OStim bridge patch. OStim Romance adds broader romance mechanics for any eligible NPC.
-
-### Options
-
-- **Amorous Adventures** (Nexus 7305) — the base mod. Fully voiced romance quests for a wide cast of vanilla NPCs, written as romantic comedy. The writing tone is uneven — some quests land well, some lean into cringe — which the Dialogue Rewritten patch addresses.
-- **Amorous Adventures - Player Dialogue Rewritten** (Nexus 38989, updated Sep 2024) — a full rewrite of all player dialogue lines, item descriptions, and quest messages in AA. Fixes the cringe problem while preserving the quest structure. Required companion to the base AA.
-- **Amorous Adventures Revoiced Complete** (Nexus 127289) — AI-revoice of all AA dialogues using ElevenLabs for consistent quality. Optional on top of Dialogue Rewritten; replaces original audio with higher-quality AI-generated VO.
-- **Amorous Adventures OStim Standalone - Rewrite and MCM Patch with Fixes** (Nexus 150577, May 2025) — bridges AA into OStim Standalone. Works with Dialogue Rewritten. This is the key compatibility piece: without it, AA uses its own scene system instead of OStim.
-- **OStim Romance** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/107671> — adds romance dialogue and interactions for any eligible NPC using the OStim system. Separate from AA — provides sandbox romance mechanics.
-- **OStim Romance - No Time Skip** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/108419> (updated Dec 2024) — simple edit that stops OStim Romance from skipping in-game time after interactions.
-- **A Warm Embrace** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182072> — adds kiss and hug interactions for NPCs the player has a strong relationship with. A lightweight affection layer that pairs with OStim Romance and AA without requiring its own quest framework.
-- **Amorous Adventures for OStim Standalone - Patch and Fixes** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/69248> — an earlier OStim Standalone patch for AA. The newer rewrite (Nexus 150577) is preferred, but this is listed as an alternative or supplementary option if the newer patch has version gaps with specific AA versions.
-- **Amorous Adventures - Curse of the Dead Bride - Bug Fix** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/155972> — fixes an uncommon bug where Elisif's AA quest "Curse of the Dead Bride" fails to start. Install alongside the AA stack if that quest is important to the playthrough.
-
-- **Amorous Adventures OStim Standalone - OStim Sequences** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106773> — adds hand-picked OStim sequences to AA unique romance encounters with furniture awareness (beds, tables, chairs). Companion to the AA OStim patch that upgrades scene choreography.
-- **Amorous Adventures for Ostim - Script Fix** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90570> — adds a vampire-status check to Sybille Stentor's AA quest scene, preventing a vanilla bug where vampire players contract Sanguinare Vampiris. 1,888 endorsements. Install as an overwrite after the AA OStim patch.
-- **More Adventures For OStim** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/66313> — 7 mini-quests/dialogues to befriend female NPCs with kissing and sexual scenes. Port of the Flower Girls version to OStim. Adds short-form romance content for NPCs not covered by AA.
-- **Smooches of Skyrim** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/81304> — adds kissing dialogue and scenes for followers and spouses. A lightweight affection layer that pairs with A Warm Embrace and OStim Romance.
-- **Ostim Resolutions (Solutions 2.0) Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157328> — expands on OStim Solutions with fully voiced lines and new interactions. Adds OStim-based resolutions to various quests and situations.
-
-### Recommendation
-
-Start with the full **Amorous Adventures stack**: base AA + Player Dialogue Rewritten + AA OStim Standalone patch. The OStim patch is the lock-in dependency since it makes AA use the chosen framework rather than its own legacy scene system. Add Revoiced Complete as a quality-of-life layer on top rather than a core requirement.
-
-Add **OStim Romance** separately as the sandbox romance layer — it covers NPCs that AA does not have quests for, and gives the player a general romance system. The No Time Skip tweak is recommended for immersion, since skipping hours after each scene conflicts with the survival pacing established elsewhere in the list.
-
-Add **A Warm Embrace** as a lightweight affection layer on top of both AA and OStim Romance — kiss/hug interactions are a low-cost way to make relationships feel physical without full scenes.
-
-Add **Amorous Adventures - Curse of the Dead Bride - Bug Fix** as a precautionary install alongside the AA stack to prevent a known Elisif quest blocker.
-
-Do not treat OStim Romance as a replacement for AA. Their tone and coverage differ: AA is authored questlines with specific NPCs; OStim Romance is a generic system for any NPC.
-
-### Risks & Compatibility
-
-- The AA OStim Standalone patch requires OStim Standalone as a master. Install in the right order (OStim Standalone first, AA patch second).
-- Confirm AA OStim Standalone patch sequences match the current Dialogue Rewritten version — the patch description explicitly targets that combination.
-- OStim Romance and AA may overlap on the same NPCs. Decide which system takes priority per NPC, or accept that both dialogue trees appear.
-- Revoiced Complete replaces AA audio files; ensure it is compatible with the Dialogue Rewritten and OStim patch versions.
-- Confirm all mods work on Steam 1.6.1170 before locking the stack.
-- 2-year age rule: Amorous Adventures (2017) is older than 2 years, but its continued maintenance, the Dialogue Rewritten update (Sep 2024), the AA OStim Standalone patch (May 2025), and the Revoiced Complete update all keep the ecosystem within the active-modernisation window.
-
-### Acceptance Criteria
-
-- AA quests run through OStim rather than the legacy scene system.
-- Player dialogue from Dialogue Rewritten displays correctly alongside AA quests.
-- No missing master errors or script conflicts at load.
-- OStim Romance interactions do not break AA quest scenes on the same NPCs.
-
-## Transactional → `15`/Prostitution Content
+## Romance Content → `15`
 
 ### Core Idea
 
-This subsection owns the "choosing to be a whore, being with a whore" pillar — dialogue-driven transactional sex work that fits the tone of a grim-dark world where survival sometimes means selling your body. The content should be dialogue-first, playable through speechcraft and choice, and compatible with OStim Standalone. Explicit animation is not required; fade-to-black is acceptable. No exploitative, BDSM, or punitive mechanics.
+This subsection owns the romance-quest and companion-romance content that runs on top of the OStim framework. The picks here are opt-in quest-driven content rather than ambient framework behaviour.
 
 ### Options
 
-- **Simple Player Prostitution** (LoversLab, updated May 2025) — the primary candidate. Dialogue-based prostitution with tavern and Dibella temple mechanics. Speechcraft-based payments, NPC approach system, configurable fade-to-black. Built for OStim Standalone compatibility. No SexLab dependency. The mod's tone is transactional rather than exploitative: the player chooses to engage, negotiates a price, and the act fades to black or plays through OStim.
-- **OStim Profession** (Patreon, May 2025 by VersuchDrei) — a newer profession system from the broader OStim ecosystem. May become a future alternative if it matures, but currently less proven than Simple Player Prostitution. Worth tracking as a potential upgrade path.
-- **OStim - OCrime** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64150> — adds crime consequences for public sex acts. Guards intervene, fines apply. Adds a risk-reward layer to transactional and romance content in public spaces.
+- **OStim Romance** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/107671> — adds fully-voiced romance content using the OStim framework. Designed as the OStim-native romance addon. → `15`
+- **Amorous Adventures OStim Standalone Patch** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150577> — ports the classic Amorous Adventures content to OStim Standalone. Adds voiced romance quests for vanilla marriage-eligible NPCs. → `15`
+- **Romance Suite** — additional romance framework addons from the OStim ecosystem.
 
 ### Recommendation
 
-Use **Simple Player Prostitution** as the baseline. It fits the design constraints: OStim Standalone compatible, dialogue-driven, no exploitation mechanics, configurable fade-to-black. The tavern and Dibella temple integration gives the player natural in-world places to engage with the system rather than a generic menu.
+Use **OStim Romance** as the primary romance-content baseline. It is the OStim-native romance addon with active maintenance and the clearest integration path.
 
-Keep **OStim Profession** as a tracked alternative for future evaluation, but do not include it in the current list until it has broader community signal and stability reports.
+Add **Amorous Adventures OStim Standalone Patch** as the classic-quests companion if the list wants coverage for vanilla NPC romance arcs that OStim Romance does not own.
 
 ### Risks & Compatibility
 
-- LoversLab mods require manual download — they are not on Nexus. Document the install steps clearly in the guide.
-- Simple Player Prostitution may have name or file changes over time. Verify the current LoversLab page before locking the version.
-- The mod's OStim Standalone compatibility should be confirmed against the specific OStim Standalone version in the list.
-- Ensure the mod does not trigger scenes in inappropriate contexts (e.g., public areas, children present). The mod's configuration should allow fine-grained location and NPC filtering.
-- The "no exploitation" rule means verifying the mod does not include non-consensual scenarios, even as optional content.
+- Romance content addons must match the installed OStim Standalone version. Lock the framework version first, then verify romance mod compatibility.
+- Romance quests add dialogue and quest records that may conflict with content from `modlist-08.md` or NPC overhauls from `modlist-09.md`. Check for overlapping NPC coverage.
+- Amorous Adventures adds dialogue to specific vanilla NPCs. If `Relationship Dialogue Overhaul` or `Serana Dialogue Add-On` (from `modlist-06.md`) also add dialogue for the same NPCs, verify the load order resolves correctly.
 
 ### Acceptance Criteria
 
-- Transactions are initiated through dialogue, not through a menu or hotkey.
-- The player can set prices, refuse clients, and control when scenes trigger.
-- The mod does not add non-consensual or punitive mechanics.
-- The mod works with OStim Standalone without requiring SexLab.
-- The system integrates naturally into taverns and temples rather than feeling like a standalone activity hub.
+- Romance quests start and progress correctly on 1.6.1170.
+- Dialogue and scene transitions work in third-person with gamepad.
+- No quest-breaking conflicts with dialogue or NPC overhauls from other sections.
 
-## Ambient Adult → `15` NPCs And Tavern Content
+## NPCs And Dialogue → `15`
 
 ### Core Idea
 
-This subsection owns ambient adult NPCs added to taverns and inns — not followers, not quest-specific romance targets, but background characters with adult dialogue and services.
+This subsection owns NPC overhauls and dialogue expansions that include adult content — companion mods with romantic or sexual dialogue, and character face/body overhauls designed for the adult content audience.
 
 ### Options
 
-- **Immersive Wenches** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/595> — adds wenches (serving wenches, barmaids, maid wenches) to every inn in Skyrim with custom scenes, dialogue, barmaid services, and quests. Visible community signal includes troubleshooting reports; evaluate stability before locking into the load order. Previously flagged as rejected in `modlist-09.md` due to support concerns; added here per explicit user request. → `15`
-- **Immersive Wenches SE 2 - Ostim Patch** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/152991> — bridges Immersive Wenches scenes to play through OStim Standalone instead of fade-to-black. Requires both Immersive Wenches and OStim Standalone.
-- **Immersive Wenches Dialogue Boost** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120307> — adds 1,000+ custom voice lines for the ten most-used voice types in Immersive Wenches, tweaks player dialogue, and expands written content (buff/description/quest text). Plug-and-play add-on with no conflicts with the OStim patch or Buxom Wench Yuriana.
+- **Rigma - A male NPC overhaul** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168535> — a male NPC overhaul with a focus on attractiveness while maintaining lore-friendly aesthetics. Designed to pair with the CBBE-based female overhauls already in the list and the HIMCO male body. Includes SOS support and vanilla-facegen compatibility. → `15`
+- **Rigma - KS Hairdos patch** — adds KS Hairdos hairstyles to the Rigma NPC records. → `15`
+- **Shrooms of Solstheim - A Mushroom Overhaul** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120050> — visual upgrade for Solstheim's flora. Adjacent to adult content primarily because the niche overlaps with the user's visual style preferences for the adult-content layer. → `15`
 
 ### Recommendation
 
-Add **Immersive Wenches** as an ambient tavern layer. It populates inns with NPCs that have more to do than sit at tables, and the OStim patch ensures scenes use the chosen framework. Treat stability as the gate: test in a fresh save through multiple inn visits before locking into the load order.
+Use **Rigma** as the male NPC overhaul for the adult-content section. It provides the visual baseline for male NPCs in romantic contexts, complementing the female NPC baseline from `modlist-09.md`. Add the KS Hairdos patch for hairstyle variety.
 
 ### Risks & Compatibility
 
-- Immersive Wenches has documented compatibility notes with inn-overhaul mods, AI packages, and city overhauls. Check against the locked city and interior list.
-- The mod adds NPCs and AI packages that increase script load in populated cells. Test in riften and solitude inns specifically.
-- The OStim patch must match both the Immersive Wenches version and the OStim Standalone version.
-- 2-year age rule: Immersive Wenches (original 2017, but still maintained — latest files as of Nov 2025) is within the active-modernisation window because the OStim patch (2025) and ongoing updates keep the ecosystem current.
+- Rigma conflicts with other male NPC overhauls. If `modlist-09.md` locks a broad male overhaul such as `The Men of Winter`, Rigma must override it on a per-NPC basis, or the two must be reconciled via load order and facegen regeneration.
+- Rigma relies on SOS body paths; verify the installed SOS and HIMCO versions are compatible with the Rigma body records.
+- Rigma's facegen should not produce dark-face bugs when layered on top of the chosen `modlist-09.md` NPC baseline.
 
 ### Acceptance Criteria
 
-- Inn wenches appear and function without breaking vanilla inn AI.
-- OStim patch triggers scenes through OStim rather than fade-to-black.
-- No crashes or script lag in populated inns after multiple visits.
-- The OStim patch loads without missing master errors.
+- Rigma NPCs display correctly without dark-face bugs.
+- The male NPC visual baseline supports romantic and social scenes without aesthetic mismatch with the female NPC baseline.
+- SOS compatibility is verified for the installed body framework.
 
-## Dialogue Expansions → `15` With Adult Content
+## Dialogue Expansions → `15`
 
 ### Core Idea
 
-This subsection owns follower dialogue expansions that include romance content, marriage options, or adult-adjacent dialogue — separate from but complementary to the Amorous Adventures quest layer. These mods expand specific NPCs with deeper, more reactive dialogue that acknowledges the player relationship and can include romantic or sexual content.
+This subsection owns dialogue-expansion mods that include adult-themed or romantic dialogue content as a core feature.
 
 ### Options
 
-- **Follower Dialogue Expansion - Jenassa** (Nexus 120255, by anbeegod, updated Mar 2026, v7.0) — adds 1,785 lines to Jenassa with quest awareness, location awareness, an approval system, and a **romance quest** (added in v5.0). The romance content includes family life and banter with the player's children. The mod frames Jenassa as a hardened mercenary whose trust the player can earn — consistent with the grim-dark tone.
-- **Serana Dialogue Expansion** (Nexus 121920, by Garmagic, updated Jan 2026, v1.2) — adds 3,409 voice files for Serana across all three main questlines. The **Romance addon** (separate file, 1,272 voice files) adds a full romance quest chain with scenes, a circlet, and a ring. The mod keeps Serana's personality close to vanilla and does not allow marriage — the romance arc is about healing and trust, not a wedding.
-- **Follower Dialogue Expansion series (other NPCs)** — anbeegod's broader series covers other followers (e.g., FDE - Aela, FDE - Mjoll, FDE - Uthgerd, etc.) with varying levels of romance content. Evaluate per-NPC rather than blanket inclusion.
+- **The Billy The Goat Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131174> — a novelty companion mod with adult-themed dialogue. Adds a fully-voiced goat companion with a distinct personality and commentary on events. → `15`
+- **Haelga Reimagined** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134046> — a dialogue overhaul for Haelga from Riften's Haelga's Bunkhouse that expands her character and gives her a more modern, romance-suitable dialogue tree. Fits the adult-content layer's goal of making NPC interactions in inns and social spaces less shallow. → `15`
+- **Soul-Crushing Romance - A Molag Bal Dialogue Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/161686> — a fully-voiced romance dialogue expansion for the House of Horrors quest, adding a romance arc with Molag Bal's priest. → `15`
+- **Blood and Bismuth - A Farkas Dialogue Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171089> — a fully-voiced Farkas dialogue expansion with romance content for the Companions follower. → `15`
 
 ### Recommendation
 
-Include **Serana Dialogue Expansion + Romance addon** as the baseline for Serana content. It has strong community signal (3,056 endorsements, 3,387 posts), active maintenance, and a clear romance arc that does not force marriage. It is also a natural pair with the Dawnguard content in the list.
+Lock **Haelga Reimagined** as the innkeeper-dialogue expansion. Lock **Soul-Crushing Romance** and **Blood and Bismuth** as quest-linked romance dialogue expansions. These three add dialogue depth to existing NPCs and quests that the adult-content side of the list builds on.
 
-Include **Follower Dialogue Expansion - Jenassa** as a complementary dialogue expansion for a hireable follower with a romance quest. Jenassa's tone as a cynical mercenary fits the grim-dark world feel.
-
-For the broader anbeegod FDE series, add per-NPC on a case-by-case basis rather than bulk-including the entire series. Evaluate based on whether the NPC is already in the modlist, whether the romance content adds meaningful depth, and whether AA already covers that NPC.
+Treat **The Billy The Goat Mod** as an optional novelty companion rather than part of the core adult-content stack.
 
 ### Risks & Compatibility
 
-- Serana Dialogue Expansion has documented incompatibilities with **Immersive Citizens** (can prevent scenes), **Palaces and Castles Enhanced** (breaks romance quest), and **EEKs Whiterun Interiors** (clipping with alchemy table). Verify which of these are in the list and create load-order guidance or patches.
-- FDE Jenassa is 100% compatible with any other mod including other dialogue expansions. No known conflicts.
-- Both mods use AI-generated voice. Disclose this in the guide for players who may object.
-- Serana Dialogue Expansion should be installed **before** meeting Serana in Dimhollow Crypt — document this install timing in the guide.
-- FDE Jenassa is safe to add mid-save (per author).
-- If AA covers the same NPC as a FDE mod, check for narrative duplication rather than technical conflict — the mods do not conflict technically but may tell contradictory stories.
-- The 2-year age window: Serana Dialogue Expansion (Jul 2024) and FDE Jenassa (May 2024) are both within or near the window, and both are actively maintained.
+- Dialogue expansions modify the same NPC voice types and dialogue records that `Relationship Dialogue Overhaul` (from `modlist-06.md`) and quest mods from `modlist-08.md` touch. Verify load order resolves all dialogue conflicts.
+- Haelga Reimagined, Soul-Crushing Romance, and Blood and Bismuth all add dialogue to specific NPCs. If another mod in the list also overhaul the same NPC's dialogue, test for broken dialogue trees.
 
 ### Acceptance Criteria
 
-- Serana Dialogue Expansion romance quest completes without scene-breaking bugs on 1.6.1170.
-- FDE Jenassa romance quest triggers and completes alongside Jenassa's hireling dialogue.
-- No voice overlap or dialogue desync between AA, FDE, and SDE on shared NPCs.
-- Install timing requirements documented in the guide.
+- Dialogue expansions for Haelga, Molag Bal's priest, and Farkas play correct audio and advance quest stages correctly.
+- No broken dialogue trees from dialogue-record conflicts.
+- All content is accessible in third-person with gamepad.
+
+## Additional Content → `15`
+
+### Core Idea
+
+This subsection owns standalone adult-content mods that do not fit neatly into the framework, romance, or NPC categories above.
+
+### Options
+
+- **Simple Bathing** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159442> — adds player-initiated bathing animations in any water source. Thematically adjacent to adult content (nudity context) but functionally a downtime-roleplay mod. → `15`
+- **Simple Bathing Soap Addon** — adds soap items to make bathing feel more intentional.
+- **BeeHH - Hentai Henchman** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182069> — adds follower slots (up to 9) and features inspired by adult-content follower frameworks. (Optional, research if this adds stable utility beyond the NFF baseline from `modlist-06.md`.) → `15`
+
+### Recommendation
+
+Add **Simple Bathing** as a downtime-roleplay companion. It gives the player a reason to use water sources and inn bath areas in a way that connects with the adult-content layer's visual and roleplay themes. Keep the Soap Addon as an optional extra.
+
+Keep **BeeHH** as a research item only; do not lock until it proves useful beyond the `Nether's Follower Framework` baseline.
+
+### Risks & Compatibility
+
+- Simple Bathing may overlap with `Bathing in Skyrim - Renewed` (from `modlist-06.md`). If both are active, configure them so they do not double-trigger bathing mechanics.
+- BeeHH adds follower slot changes that conflict with NFF. If both are active, the follower framework must win for stability; BeeHH should only be used for features NFF does not provide.
+
+### Acceptance Criteria
+
+- Simple Bathing animations play in third-person with gamepad.
+- No conflict with the survival-layer bathing mod from `modlist-06.md`.
+- BeeHH (if adopted) does not break NFF follower management.

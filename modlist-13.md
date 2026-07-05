@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `13 Testing & Curation`
 
-## Modlist Curation → `13` Rules
+## Curation Rules → `13`
 
 ### Core Idea
 
@@ -165,7 +165,7 @@ The long-session test passes if the game does not crash, the save remains loadab
 - Long-session stability tests must be repeated after any SKSE plugin, script-heavy mod, or worldspace edit is added to the final load order.
 - Testing results should be noted in the repo so that troubleshooting later does not start from zero knowledge.
 
-## Post-Install Smoke Test (Canonical)
+## Post-Install Smoke Test → `13`
 
 This is the standard post-section smoke test used across all section files. Run after completing any numbered section.
 

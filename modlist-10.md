@@ -33,281 +33,117 @@
 - Keep `Silent Combat Music` as a support option only if combat music itself starts feeling too loud, too repetitive, or too intrusive during testing. → `10a`
 - Treat soundtrack replacement as a tone decision, not as filler content to make the list feel busier.
 
-### Installation
+### Installation Notes
 
 - If the final music stack combines multiple music mods, use the Synthesis music-merge plugin during install so playlists are merged deliberately instead of depending on load order.
 - Keep the generated music-merge output in its own dedicated mod in `Mod Organizer 2`, and rebuild it whenever the active music stack changes. → `10a`
+- For detailed Synthesis pipeline configuration, see `modlist-14d.md` (Synthesis pipeline). → `10a`
 
 ### Risks & Compatibility
 
-- A soundtrack that is strong on its own can still feel wrong once paired with the chosen weather, world-feel, and combat tone.
-- `Yggdrasil` is not just darker; it is a major stylistic replacement, so even if playlist conflicts are solved by a merge patch the real question is whether its tone still fits the rest of the list. → `10a`
-- `Nyghtfall` and `Nordenhamr` are expansion packs rather than full replacements, so they will not conflict with the chosen baseline on a fundamental tone axis, but stacking them on top of `Chapter II` and `Yggdrasil` can produce a music stack that is heavier than the project's exploration pacing actually supports. Treat the final music stack as a curated pair (baseline + at most one expansion) rather than a three- or four-mod pile, and use the Synthesis music-merge plugin described in the installation step to avoid playlist overlap. → `10a`
-- Large music overhauls can dominate the emotional identity of the list more than intended.
-- Music replacers are easy to like in showcase moments and harder to judge across long ordinary play sessions.
+- A very large combined soundtrack can make the music layer feel incoherent if the tracks do not share a common tonal identity.
+- Multiple music mods must be merged via Synthesis to avoid overlapping `MUSTT` records. The Synthesis music-merge plugin handles this.
+- Any music mod older than 2020 may lack native AE support; verify before locking.
+- Layering similar-sounding music expansions can accidentally dilute the tone with too much variety.
 
 ### Acceptance Criteria
 
-- The chosen soundtrack direction fits the wilderness-first tone of `Elder Wilds` and supports a darker, emotional atmosphere without constantly calling attention to itself. → `10a`
-- Exploration, town, dungeon, and combat music feel intentionally related rather than like separate playlists.
-- The final music layer improves identity without crowding out quieter exploration.
+- `Elder Wilds` has one clear music baseline, one high-commitment comparison, and complementary expansion picks rather than a growing pile of soundtrack mods. → `10a`
+- The chosen direction makes travel and exploration feel tonally richer without turning the soundtrack into a constant mix-tape.
+- Later combat, survival, and ambient world-sound decisions still have room to be heard.
 
-## Broad Sound Overhaul Framework → `10b SFX & Ambience`
+## Weapon, Magic, And Impact SFX → `10b SFX & Ambience`
 
 ### Core Idea
 
-- This subsection owns the broad gameplay-side sound framework: weapon impacts, Foley, magic routing, interior/exterior balance, and general responsiveness across the game.
-- It does not re-own the exploration ambience layer already scoped in `modlist-07.md`. → `10b`
+- This subsection owns the sound-effects layer for combat, magic, items, UI, and impact — what the player hears when swinging a sword, casting a spell, drinking a potion, or opening a menu.
+- It should stay separate from ambient-world and creature soundscape ownership in `modlist-07.md` and `modlist-09.md`. → `10b`
+- The bar is a modern, weighty, and clear audio experience that reads well across all categories: weapons have heft, magic has presence, and UI feedback is crisp enough to be usable in third-person without visual confirmation.
 
 ### Options
 
-- Compatibility-first route: `Audio Overhaul for Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12466> → `10b`
-- Dramatic modular route: `Immersive Sounds - Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/523> (last updated August 2021; audio content, functionally stable but unmaintained) → `10b`
-- Heavy overlap route: `Regional Sounds Expansion (SRD - Wilds Dungeons Towns Ambience Birds - Fixes)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77829> → `10b`
-- Ambient wind specialty route: `Nordic Winds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/112370> — replaces regional wind loops with unique varieties per exterior region using Sound Record Distributor. No record conflicts. Optional additive layer; stacks cleanly on any framework since SRD injects sounds dynamically. → `10b`
-- Layered route: one broad framework plus a small number of narrowly scoped specialty audio mods.
+- Weapon-and-armor SFX baseline: `Immersive Sounds - Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/523> → `10b`
+- Full-audio overhaul route: `Audio Overhaul for Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12341> → `10b`
+- magic VFX + audio visual upgrade: `Strange Runes` (also listed in `modlist-06.md`; the mod includes audio as well as the visual runes, and the two sections should cross-reference each other for the locked `Strange Runes` visual baseline). → `10b`
+- Shout SFX route: `Airgetlam - Shouts SFX` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33993> → `10b`
+- Bow-and-crossbow SFX route: more modern bow sounds (`Bowgasm` or similar advanced sound replacers, but verify they are AE-compatible). → `10b`
+- Creature SFX routes: creature sound replacers that improve animal, monster, and dragon audio — not required if the sound baseline is already strong enough.
+- UI SFX route: `Immersive Sounds - Compendium` already covers UI sounds, but a dedicated UI click replacer (`Dear Diary Dark Mode` UI sounds or `Paper UI Sounds`) is an optional polish layer.
 
 ### Recommendation
 
-- Start with `Audio Overhaul for Skyrim SE` as the main broad audio-framework baseline. → `10b`
-- Lock `Immersive Sounds - Compendium` as a targeted companion alongside `Audio Overhaul for Skyrim SE`, not a competing replacement. AOS carries the broad framework; ISC fills specific categories (magic sounds, weapon impacts, creature roars, UI sounds) that AOS leaves close to vanilla. The two are designed to coexist via `AOS_ISC_Integration` (bundled with AOS's FOMOD installer) which ensures ISC sounds are properly volume-balanced within AOS's mixing framework. Note that ISC has not been updated since August 2021 — its audio content is functionally stable but the `AOS_ISC_Integration` patch needs an up-to-date AOS to work. → `10b`
-- Treat `Regional Sounds Expansion` as an overlap-heavy alternate that should only be revisited if the repo later wants to rethink the section-07 ambient-world boundary. → `10b`
-- Add narrower specialty sound mods only after the broad framework is chosen, so the project does not stack several partial audio answers without a clear owner.
+- Lock `Immersive Sounds - Compendium` as the weapon-and-armor SFX baseline. It adds thousands of new sound effects for weapons, magic, armor, items, and UI, and has the broadest patch ecosystem of any audio mod in the category. It works cleanly with `Audio Overhaul for Skyrim SE` when loaded in the correct order. → `10b`
+- Lock `Audio Overhaul for Skyrim SE` (AOS) as the full-audio overhaul baseline. It overhauls the entire ambient, weather, acoustic, and reverb system and serves as the master reverb-and-attenuation layer that the rest of SFX builds on. It has the strongest community maintenance story of any full-audio mod (27K endorsements, actively maintained, version 4.1.4 in April 2026). ↔ `10b`
+- Lock `Airgetlam - Shouts SFX` as the shout-audio companion. It overhauls shout sounds with higher-fidelity recordings and does not conflict with `ISC` or `AOS` (it replaces the raw shout `.wav` files, not the audio records). → `10b`
+- Keep the `Strange Runes` audio layer as part of the locked magic-VFX baseline — the mod includes both visual and audio changes for spellcasting. → `10b`
+- Judge weapon and magic SFX first; creature and UI SFX can come later as polish layers rather than baseline requirements.
 
 ### Risks & Compatibility
 
-- Mixing multiple broad audio frameworks can create a patch burden that is harder to reason about than the benefit is worth.
-- It is easy to mistake louder or harsher sounds for better responsiveness.
-- Broad audio changes can overlap with creature mods, weapon packs, magic overhauls, and animation-driven combat changes in ways that are annoying to debug later.
+- `ISC` and `AOS` both edit large numbers of sound records. They are designed to be used together with a specific load order: `AOS` should load after `ISC` so AOS's reverb and attenuation win over ISC's raw effect swaps. Verify this load order works with `LOOT` and xEdit. → `10b`
+- `ISC` is one of the oldest actively used mods on Nexus (first uploaded 2013). While its continued maintenance is exceptional, it touches so many records that any update can create unexpected conflict pressure. Verify its load order after any major content mod update. → `10b`
+- `Airgetlam` replaces raw audio files and should be loaded after any mod that touches shout records. Ensure it is below `ISC` and `AOS` in load order. → `10b`
 
 ### Acceptance Criteria
 
-- The chosen framework makes Skyrim sound more responsive and coherent than vanilla in normal play.
-- Section-10 ownership is clear: broad sound design here, ambient world texture in `modlist-07.md`. → `10b`
-- Any additional specialty audio mods are layered on top of one clear framework rather than several competing baselines.
+- Weapons have audible weight — a greatsword swing sounds different from a dagger slash.
+- Magic spells have clear audio identity — fire, frost, and shock are immediately distinguishable.
+- UI sounds are crisp enough to navigate menus in third-person without looking at the screen.
+- ISC, AOS, and Airgetlam coexist without audio gaps or overlapping sound conflicts.
 
-## Interior Atmosphere Tuning → `10b SFX & Ambience`
+## Creature And NPC SFX → `10b SFX & Ambience`
 
 ### Core Idea
 
-- This subsection covers the annoyance of interior ambient loops — the loud, repetitive, and often immersion-breaking sound beds that play on loop in dungeons, caves, and ruins.
-- The goal is to reduce ambient noise fatigue in interiors without removing or replacing the good ambience work that the broad framework and section-07 environment picks have already done.
+- This subsection owns creature, animal, and NPC sound effects that are not already covered by `AOS` or `ISC` — monster vocalisations, dragon roars, horse whinnies, and ambient creature sounds.
+- It should stay separate from the ambience-and-soundscape ownership in `modlist-07.md`. → `10b`
 
 ### Options
 
-- Noise-reduction route: `Quieter Dungeons and Caves` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18710> — dramatically reduces the volume of the worst interior ambient loops without removing any sounds entirely. By AndrealphusVIII. Simply lowers the volume of the ambient tracks that play on loop in most dungeon interiors, making them feel less like a constant wall of noise.
-- Discipline-first route: skip interior ambience tuning and rely on the broad audio framework's defaults.
+- Creature SFX expansion: `Creatures of Skyrim` sound replacers or specific mods that replace creature vocalisations with higher-fidelity recordings.
+- Dragon SFX upgrade: specific dragon-roar and wing-flap sound replacers.
+- Minimalist route: rely on the `ISC` + `AOS` baseline for creature sounds.
 
 ### Recommendation
 
-- Lock `Quieter Dungeons and Caves` as the interior-noise baseline. It is a single-target fix that addresses a specific pain point — interior ambient loops that are loud, repetitive, and fatigue the ear during extended dungeon crawls — without touching the broader sound design or ambience work from other sections. The mod simply adjusts the volume of the ambient tracks rather than removing or replacing them, so it applies regardless of which broad framework or ambience mods are active. → `10b`
+Start with the minimalist route. The `ISC` + `AOS` baseline already covers most creature audio. If testing reveals weak creature vocalisations, add dedicated replacers as controlled additions rather than as a blanket creature-audio mod.
 
 ### Risks & Compatibility
 
-- The mod adjusts ambient loop volumes via a simple sound-levels patch. It does not change audio files, records, or scripts, so it has near-zero compatibility risk with any broad framework or ambience mod.
-- If a specific dungeon's ambience is already well-handled by the broad framework (e.g., AOS's interior mixing), Quieter Dungeons may reduce volume below the intended level. Test in a representative dungeon crawl (Bleak Falls Barrow, a Dwemer ruin, a Nordic tomb) to confirm interiors feel spacious rather than muted.
-- The mod has no dependencies and no plugin conflicts. It is safe to install at any point in the load order.
+- Creature sound mods that replace `.wav` files are generally safe — no record conflicts — but any mod that edits creature sound descriptors must be loaded after `ISC` and `AOS`.
 
 ### Acceptance Criteria
 
-- Interior dungeon ambience is noticeably less fatiguing during extended crawls.
-- No interior feels empty or muted — the ambience should still be present, just not dominating.
-- Tested across Nordic tombs, Dwemer ruins, and caves.
+- Creature and NPC sounds feel modern and weighty under the `ISC` + `AOS` baseline.
+- Dragons, horses, and common creatures have distinct and recognisable audio.
 
-## Combat, Magic, And Shout Feedback → `10b SFX & Ambience`
+## Combat And Immersion Audio → `10b SFX & Ambience`
 
 ### Core Idea
 
-- This subsection covers the most gameplay-critical feedback sounds: spells, impacts, power use, and shouts.
-- The goal is cleaner combat readability and stronger feedback without turning every action into exaggerated audio spectacle.
+- This subsection owns combat-specific and immersion-audio mods — hit sounds, pain grunts, block impacts, slow-time audio, and heartbeat effects — that layer on top of the weapon and magic SFX baseline.
+- These are polish mods that improve the combat feedback loop for third-person gamepad play.
 
 ### Options
 
-- Broad-framework-only route: let the main audio overhaul handle most of the combat and spell sound improvement.
-- Magic-specialization route: `Airgetlam -Modern Magic Sounds Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51541> → `10b`
-- Shout-specialization route: `Airgetlam - Shouts SFX -` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90696> → `10b`
-- Voice-and-sfx bundle route: `Phoenix Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/55221> → `10b`
-- Word-wall audio route: `Dragon-Voiced Word Walls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/144947> — adds dragon-voice audio effects when the player reads word walls, making shout discovery feel more dramatic and connected to dragon lore. Audio-only, no ESP. → `10b`
-- Potion-sound route: `Magical Potion Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138932> — replaces vanilla potion-drinking sound effects with more satisfying, arcane-flavored audio. Lightweight, no script overhead. → `10b`
-- Underwater-audio route: `Underwater Loop and Swimming Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/143141> — improves underwater audio with better swimming sounds, ambient water loops, and more immersive drowning/breathing feedback. No ESP, SKSE plugin. → `10b`
+- **Precision** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72347> — adds accurate hit detection and impact sounds based on weapon trajectory rather than the vanilla dice-roll system. Listed as a core combat mod in `modlist-05.md`; its audio impact is relevant here. → `10b`
+- **Valhalla Combat** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64741> — adds parry, stagger, and timed-block mechanics with associated audio feedback. Also locked in `modlist-05.md`. → `10b`
+- **Heart of the Beast - Werewolf Sound and Camera Overhaul** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13776> — replaces werewolf howl, growl, and transformation sounds with higher-fidelity recordings. Pairs with the `Growl` werewolf overhaul from `modlist-06.md`. → `10b`
+- **Heart of the Beast - Feral - A Werewolf Sound Replacer** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/165648> — an alternative werewolf sound replacer with more savage vocalisations. Choose one of the two Heart of the Beast variants, not both. → `10b`
 
 ### Recommendation
 
-- Let the broad framework do most of the work first.
-- Keep `Airgetlam -Modern Magic Sounds Rework-` as the main targeted upgrade if spells still feel weak, flat, or overly vanilla after the baseline audio framework lands. → `10b`
-- Keep `Airgetlam - Shouts SFX -` as the first focused shout upgrade if dragon-language power use still lacks weight. → `10b`
-- Keep `Phoenix Compendium` as a more aggressive all-in-one comparison only if the project later wants stronger voice and special-effect stylization rather than a restrained upgrade path. → `10b`
+- Lock **Precision** and **Valhalla Combat** as core combat-audio layers — they are already in the list for gameplay reasons and their audio feedback is part of the third-person experience.
+- Lock **Heart of the Beast - Werewolf Sound and Camera Overhaul** as the werewolf audio baseline if `Growl` is adopted from `modlist-06.md`. If the project prefers more savage vocalisations, use `Heart of the Beast - Feral` instead. Choose one variant, not both. → `10b`
 
 ### Risks & Compatibility
 
-- Stacking several combat-sfx mods can make the soundscape harsher and less readable rather than more satisfying.
-- Magic-audio changes can collide conceptually with later magic-overhaul choices from `modlist-06.md`. → `10b`
-- Voice-heavy reworks are easy to overdo and can shift the game's tone faster than intended.
+- Precision and Valhalla Combat are gameplay mods first; their audio is secondary. Do not change the gameplay mod's version or config for audio reasons.
+- Heart of the Beast replaces `.wav` files for werewolf sounds. If `Growl` adds new werewolf forms that the sound replacer does not cover, those forms will fall back to Growl's default sounds. → `10b`
+- Only one Heart of the Beast variant should be active. Installing both will cause file conflicts.
 
 ### Acceptance Criteria
 
-- Magic, shouts, and combat actions are easier to read by ear in real encounters.
-- Audio feedback feels stronger without becoming cartoonish or fatiguing.
-- Specialty combat-sfx mods remain clearly subordinate to the chosen broad framework.
-
-## Weapons, Bows, Creatures, And Transformation Foley → `10b SFX & Ambience`
-
-### Core Idea
-
-- This subsection covers narrower sound-design upgrades for gear handling, creature presence, and transformation states.
-- These mods should add texture where the baseline framework still feels thin, not become a pile of disconnected novelty replacements.
-
-### Options
-
-- Bow specialization route: `A Bow's Whisper - Bow sound overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47437> → `10b`
-- Footstep specialization route: `Cataphract - Armored Footsteps Rework -` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/102213> → `10b`
-- Heavy-armor presence route: `Sanguine Symphony Realistic Heavy Armor Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162883> → `10b`
-- Transformation specialization route: `Heart of the Beast - Werewolf Sound - Remastered - SSE PORT` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49263> (last updated April 2021; LE port, functionally stable) → `10b`
-- Broad dramatic route: `Immersive Sounds - Compendium` → `10b`
-- Discipline-first route: keep creature and weapon Foley mostly inside the broad framework unless a specific category still feels weak.
-
-### Recommendation
-
-- Stay disciplined by default.
-- Keep `A Bow's Whisper` as the first narrow specialty comparison because bows are common enough in Skyrim that weak archery audio is noticeable quickly. → `10b`
-- Keep `Cataphract - Armored Footsteps Rework -` as the main footstep and movement-presence comparison if player movement still sounds too soft or too generic after the broad framework lands. → `10b`
-- Keep `Sanguine Symphony Realistic Heavy Armor Sounds` as the heavier armor-presence branch if heavy gear still lacks weight once footsteps and combat audio are in place. → `10b`
-- Keep `Heart of the Beast` as the werewolf/transformation branch if the list later invests enough in beast-form play to justify dedicated sound treatment. → `10b`
-- Let `ISC` or the chosen broad framework carry most armor, movement, and weapon Foley unless testing shows a specific category is clearly lagging behind. → `10b`
-
-### Risks & Compatibility
-
-- Narrow Foley mods can add flavor in one category while making the total soundscape feel less unified.
-- Footstep and armor-sound replacers can overemphasize player movement and make every surface or equipment choice sound too loud.
-- Creature and transformation sounds can quickly cross from immersive to theatrical.
-- Specialty archery or creature audio is easy to overvalue if tested in isolation instead of across long normal play.
-
-### Acceptance Criteria
-
-- Narrow Foley additions solve real weak spots rather than just adding extra sound variety.
-- Movement, armor, bow, and transformation sounds each improve categories that the baseline framework still leaves weak.
-- Bow, creature, and transformation sounds remain coherent with the broader audio framework.
-- No single specialty mod hijacks the overall sonic identity.
-
-## Taverns, Bards, And Social Audio Texture → `10b SFX & Ambience`
-
-### Core Idea
-
-- This subsection handles music and performance in social spaces rather than the broader settlement ambience that belongs in section 07.
-- The target is better inn and bard identity without making social spaces sound overproduced or tonally disconnected.
-
-### Options
-
-- Bard refresh route: `BA Bard Songs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47202> (last updated July 2021; audio replacer, functionally stable) → `10b`
-- Vanilla-plus route: keep bard performance close to vanilla and rely on the main music direction to carry tone.
-- Broader fantasy route: adopt stronger tavern or performance replacements if the list later wants social spaces to feel much more authored.
-
-### Recommendation
-
-- Keep `BA Bard Songs` as the main tavern and bard comparison. → `10b`
-- Favor a vanilla-plus social-music direction unless real testing shows inns and bard spaces feel too repetitive after the main music strategy is chosen.
-- Keep tavern-performance upgrades clearly narrower than the world-music and ambient-sound decisions.
-
-### Risks & Compatibility
-
-- Bard-song replacement can feel charming at first and repetitive later if the style is too conspicuous.
-- Strong tavern-music identity can clash with a restrained wilderness-first tone.
-- Social audio can start solving a content-density problem it was never meant to answer.
-
-### Acceptance Criteria
-
-- Inns and bard performances feel fresher without breaking the overall tone.
-- Social-audio upgrades remain a supporting layer rather than a competing soundtrack system.
-- The subsection stays clearly scoped away from broader town ambience ownership.
-
-## UI Sound Redesign And Feedback Tones → `10b SFX & Ambience`
-
-### Core Idea
-
-- This subsection covers menu clicks, activation feedback, and other interface-adjacent sounds that shape moment-to-moment feel.
-- It does not own the UI framework, HUD layout, or controller-navigation choices already tracked in `modlist-03.md`. → `10b`
-
-### Options
-
-- Conservative route: keep vanilla UI sounds unless they become a noticeable weak point.
-- Ambient menu refresh route: `New UI Sounds Dungeon Music Ambient Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/86372> → `10b`
-- Click-reduction route: `NO MORE CLICK SOUND (ui_activatefail.wav Remover) (E Click Sound Remover)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115367> → `10b`
-- Level-feedback restraint route: `quieter levelup and skill increase sound` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90278> → `10b`
-- Level-feedback replacement route: `Improved Level Up Sound FX - Sound Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/136290> → `10b`
-- Soul-feedback route: `Dragon Soul Acquired Sound` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/161732> → `10b`
-- Broad stylization route: use a larger sound bundle such as `Phoenix Compendium` if the list later wants more dramatic interface-adjacent feedback. → `10b`
-
-### Recommendation
-
-- Stay conservative by default.
-- Let the main sound framework and music choices land before deciding whether UI-sound redesign is even needed.
-- Keep `NO MORE CLICK SOUND` as the first micro-tuning branch if the real issue is simply an irritating repeated interaction sound rather than a full UI-audio problem. → `10b`
-- Compare `quieter levelup and skill increase sound` against `Improved Level Up Sound FX - Sound Replacer` if progression feedback needs tuning, because one solves loudness and the other changes character. → `10b`
-- Keep `Dragon Soul Acquired Sound` and `New UI Sounds Dungeon Music Ambient Sounds` as narrower flavor branches only if specific moments still feel weak after the main framework lands. → `10b`
-- Revisit `Phoenix Compendium` only if the project later decides it wants stronger overall sound stylization, including interface-adjacent feedback. → `10b`
-- Keep interface-sound changes subordinate to readability and tone rather than novelty.
-
-### Risks & Compatibility
-
-- UI-sound redesign can become gimmicky faster than visual UI changes.
-- Tiny UI-sound replacers are easy to stack until the menu layer becomes inconsistent and overly curated.
-- Heavier feedback bundles can blur the line between useful confirmation and constant noise.
-- Interface-audio changes are easy to evaluate in menus and harder to judge in the flow of real play.
-
-### Acceptance Criteria
-
-- Interface-adjacent sounds support usability without turning menus and activations into a constant performance.
-- Any UI-sound changes solve specific irritants or weak spots instead of existing only because replacement mods were available.
-- Section-10 ownership remains limited to sound and feedback tone, not UI structure.
-- The final UI-sound layer remains subtle enough to coexist with the chosen HUD and music direction.
-
-## Voice, Creature Calls, And Entity Reworks → `10b SFX & Ambience`
-
-### Core Idea
-
-- This subsection covers optional voice-side and creature-call reworks that can make specific enemy or entity categories feel more memorable.
-- It still needs firm boundaries, because broad dialogue UI work and silent-voice bugfixing belong elsewhere.
-
-### Options
-
-- Restrained route: keep voices mostly vanilla and focus on music and sound-effects improvements.
-- NPC voice-diversity route: `Skyrim Revoiced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/163710> — introduces new voice types for NPCs using professional voice actors, reducing the number of NPCs sharing the same voice. Covers 81 NPCs with 14 voice types and 7500+ lines (v2.0). Requires FormList Manipulator. Skypatcher version available for maximum compatibility with NPC overhauls. → `10b`
-- Giant and large-creature route: `Colossus -Giants SFX Voice Rework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52041> (last updated July 2021; audio replacer, functionally stable) → `10b`
-- Ghost and undead-presence route: `Phantasmagoria -Ghosts SFX Voice Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50060> (last updated May 2021; audio replacer, functionally stable) → `10b`
-- Daedric-entity stylization route: `Daedric Enigma - Dusk` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157380> → `10b`
-- Boss-voice rework route: `Arch-Curate Vyrthur Revoiced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/145795> — replaces Vyrthur's generic Falmer voice with a unique voiced performance for the Dawnguard boss encounter. Adds weight to a major quest-boss confrontation. Audio-only, no gameplay changes. → `10b`
-- Broad stylization route: consider broader voice-side audio reworks such as `Phoenix Compendium` only if the project explicitly wants stronger character-audio stylization. → `10b`
-- Bugfix-only route: keep subtitle and silent-dialogue support in `modlist-01.md` (Targeted Bugfix Mods). → `10b`
-
-### Recommendation
-
-- Stay restrained for ordinary NPC dialogue — the vanilla voice pool, though repetitive, is consistently produced and avoids the tonal mismatch risk of introducing new actors into existing roles.
-- Keep `Skyrim Revoiced` as the primary NPC voice-diversity comparison if the repetition of shared vanilla voice types becomes a noticeable immersion issue in testing. Its professional actor recordings and Skypatcher-based distribution (no direct NPC record edits) make it lower-risk than AI-voiced alternatives. Treat it as a targeted NPC voice upgrade, not a full voice overhaul — it only touches 81 NPCs with 14 new voice types. → `10b`
-- Keep `Colossus` as the first creature-voice specialization comparison because giant encounters are rare enough to feel special but common enough to judge in normal play. → `10b`
-- Keep `Phantasmagoria` as the main ghost-side comparison if undead ambience and ghost presence still feel weak after the broad framework lands. → `10b`
-- Keep `Daedric Enigma - Dusk` as the higher-stylization branch only if the list later decides major Daedric encounters should sound much more authored than vanilla. The current `Dusk` version (September 2025) supersedes the original 2020–2021 release and is maintained. → `10b`
-- Keep `Fuz Ro D-oh - Silent Voice` and similar bugfix ownership in `modlist-01.md` (Targeted Bugfix Mods). → `10b`
-- Keep dialogue UI ownership in `modlist-03.md`. → `10b`
-- Only revisit broader voice-side bundles such as `Phoenix Compendium` if later testing shows that the chosen soundtrack and sound framework make vanilla voice presentation feel uniquely out of place. → `10b`
-
-### Risks & Compatibility
-
-- Voice-side audio redesign can alter Skyrim's identity more abruptly than almost any other audio category.
-- `Skyrim Revoiced` requires `FormList Manipulator` and optionally `Skypatcher` — add these to the dependency tracking in `modlist-01.md` if locked. → `10b`
-- NPC voice replacers can clash with custom followers or mod-added dialogue; confirm compatibility with any locked custom followers from `modlist-09.md`. → `10b`
-- Creature-call and entity-voice reworks can become theatrical very quickly if several stylized branches are stacked together.
-- It is easy to mix up missing subtitle or silent-voice support with a true need for voice redesign.
-- Audio bundles that touch voices, UI, combat, and ambience all at once can create messy ownership boundaries across sections.
-
-### Acceptance Criteria
-
-- Section boundaries remain clear between audio tone, UI structure, and bugfix support.
-- Any creature-call or entity-voice additions are intentional specialization branches rather than accidental bundle spillover.
-- `modlist-10.md` stays focused on audio identity and feedback quality instead of absorbing unrelated support systems. → `10b`
-
-## Candidate TODO Additions
-
-### SFX & Ambience → `10b`
-
-- `Sonorum Arcana - The Magic sound compendium` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/119738>) — magic sound overhaul → `10b`
-- `The Standing Sound stones` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/119471>) — standing stone ambient sound → `10b`
+- Precision hit detection produces audible impact feedback on weapon contact.
+- Valhalla Combat parry and stagger sounds provide clear combat feedback in third-person.
+- Werewolf sounds (if Growl is adopted) match the chosen Heart of the Beast variant.

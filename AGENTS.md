@@ -29,19 +29,20 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 ## Current Structure
 
-- `modlist-01.md` through `modlist-16.md` are the active numbered sections.
-- Current section titles: `Foundations and Compatibility`, `PGPatcher`, `Community Shaders`, `Textures & Meshes`, `Lighting`, `Weather & Water`, `Terrain & Flora`, `Characters & Creatures`, `LOD & Distant Detail`, `Modernized UI`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow`, `Adult Content`, `Main Character Voicing`.
-- `modlist-02a.md` through `modlist-02h.md` (Graphics umbrella) cover the full graphics pipeline: PGPatcher, Community Shaders, Textures & Meshes, Lighting, Weather & Water, Terrain & Flora, Characters & Creatures, and LOD & Distant Detail.
+- Active numbered sections span `modlist-01.md` through `modlist-16.md`, with sub-file suffixes (02a–h, 06a–e, 14a–e) for sections split across multiple files. Parent overview files (`modlist-02.md`, `modlist-06.md`, `modlist-14.md`) index their sub-files and own section-level principles.
+- Current section titles: `Foundations and Compatibility`, `Graphics Pipeline` (parent, 02), `PGPatcher` (02a), `Community Shaders` (02b), `Textures & Meshes` (02c), `Lighting` (02d), `Weather & Water` (02e), `Terrain & Flora` (02f), `Characters & Creatures` (02g), `LOD & Distant Detail` (02h), `Modernized UI`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems` (parent, 06), `Character & Progression` (06a), `Magic & Perks` (06b), `Survival & Needs` (06c), `Crafting & Economy` (06d), `Followers & Reputation` (06e), `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow` (parent, 14), `Performance Strategy` (14a), `Optimization & Configuration` (14b), `Tool Pipeline` (14c), `Bashed Patch & Synthesis Configuration` (14d), `Testing & Maintenance` (14e), `Adult Content`, `Main Character Voicing`.
+- `modlist-02.md` is the Graphics Pipeline parent overview; it indexes sub-files `02a` through `02h` covering PGPatcher, Community Shaders, Textures & Meshes, Lighting, Weather & Water, Terrain & Flora, Characters & Creatures, and LOD & Distant Detail.
 - `modlist-02b.md` (Community Shaders) and `modlist-09.md` (NPCs) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
 - `modlist-04.md` (Animations and Movement) and `modlist-05.md` (Third-Person Gameplay) are fully expanded and treated as established baselines.
-- `modlist-06.md` (Expanded Systems) is fully expanded and locked.
+- `modlist-06.md` (Expanded Systems) is a parent overview; the locked original content lives in five sub-files: `06a` (Character & Progression), `06b` (Magic & Perks), `06c` (Survival & Needs), `06d` (Crafting & Economy), `06e` (Followers & Reputation).
 - `modlist-03.md` (Modernized UI) is locked. Baseline picks: `SkyUI` + `Oathvein UI`, `SkyHUD` + `TrueHUD`, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS`, `Sovngarde Font`.
 - `modlist-07.md` (Immersive Scale and World Feel) is moderately expanded but still an open research area.
 - `modlist-08.md` (World Content) has moderate content and is an active development area with recent mod pick additions (Fishing, Evolving Locations, quest content).
-- `modlist-10.md` (Audio and Feedback), `modlist-11.md` (Survival, Difficulty, and Balance), and `modlist-14.md` (Performance and Technical Workflow) each have expanded content and are open research areas.
+- `modlist-10.md` (Audio and Feedback) and `modlist-11.md` (Survival, Difficulty, and Balance) each have expanded content and are open research areas.
 - `modlist-13.md` (Modlist Curation Rules and Testing Plan) is the expanded meta-section combining curation guardrails and testing verification.
 - `modlist-01.md` (Foundations and Compatibility) covers the toolchain setup, conflict-resolution strategy, core libraries, SKSE, mesh/texture fixes, and targeted bugfixes.
-- `modlist-12.md` (Legacy of the Dragonborn) owns the museum baseline, key companion utilities, and LoTD patch strategy.
+- `modlist-12.md` (Legacy of the Dragonborn) owns the museum baseline, key companion utilities, expanded quest/artifact integration list, and LoTD patch strategy.
+- `modlist-14.md` (Performance and Technical Workflow) is a parent overview; the full content lives in five sub-files: `14a` (Performance Strategy), `14b` (Optimization & Configuration), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis Configuration), `14e` (Testing & Maintenance).
 - `modlist-15.md` (Adult Content) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
 - `modlist-16.md` (Main Character Voicing) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
 

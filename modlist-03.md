@@ -1,5 +1,7 @@
 # Modernized UI
 
+> **Numbering note:** This file is `modlist-03.md` but corresponds to MO2 separator `06 UI`. See the separator mapping table in [`modlist.md`](modlist.md#separator-numbering-note) for the full offset reference. Animations (file `04`) maps to separator `03`, Third-Person Gameplay (file `05`) maps to separator `04`, and Expanded Systems (file `06`) maps to separator `05`.
+
 **MO2 Separator:** `06 UI` → `06a Framework & HUD`, `06b Inventory & Items`, `06c Map, Dialogue, Menus`
 
 ## UI Framework Prerequisites → `06a Framework & HUD`

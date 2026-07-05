@@ -1,0 +1,104 @@
+# Performance Strategy
+
+**MO2 Separator:** `14 Performance`
+
+Part of the [`Performance and Technical Workflow`](modlist-14.md) section. See also: `14b` (Optimization & Configuration), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis), `14e` (Testing & Maintenance).
+
+## Performance Budgeting → `14`
+
+### Core Idea
+
+- This section does not replace the engine baseline from `modlist-01.md` or the graphics decisions from [`modlist-02b.md`](modlist-02b.md). → `14`
+- Its job is to decide how `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy. → `14`
+
+### Options
+
+- Intuition-first route: change settings and mods by feel until the game seems stable enough.
+- Average-FPS route: judge the list mostly by headline FPS even if frame pacing and bottleneck type stay unclear.
+- Budgeted route: separate GPU, VRAM, CPU/script, and draw-call problems so fixes target the real cause.
+
+### Recommendation
+
+- Use the budgeted route.
+- Treat performance as four different problems that can look similar in play: shader cost, VRAM pressure, CPU/script load, and exterior draw-call pressure.
+- Keep one repeatable forest scene, one city scene, and one dungeon/interior scene for comparisons rather than testing in random places.
+- Record baseline and post-change captures with `PresentMon` and review them in `CapFrameX` or an equivalent frame-time tool instead of trusting impressions. → `14`
+- Prefer a stable frame-time target over chasing the highest uncapped number.
+
+### Risks & Compatibility
+
+- A single bad scene can be CPU-bound, GPU-bound, or content-bound in different directions, so one "performance fix" can solve the wrong problem.
+- Average FPS can improve while hitching and traversal smoothness still get worse.
+- Measuring several categories at once makes later decisions impossible to trust.
+
+### Acceptance Criteria
+
+- `Elder Wilds` has at least three repeatable test scenes with notes on why each one matters. → `14`
+- The list can identify whether a bad result is mainly shader cost, VRAM pressure, script load, or draw-call pressure.
+- Performance changes are recorded in a way that can be repeated after later rebuilds.
+
+## VRAM-Heavy Mod Review → `14`
+
+### Core Idea
+
+- VRAM pressure in this list will come mostly from texture resolution, PBR/parallax adoption, heavy shader features, and world coverage, not from one magic setting.
+- The goal is to spend texture budget where it is visible in normal play instead of paying premium cost everywhere.
+
+### Options
+
+- Max-detail route: broad `4K` coverage, frequent material upgrades, and little restraint on texture size. → `14`
+- Selective route: high resolution only for hero assets, creatures, architecture, or landscape layers that actually dominate the screen.
+- Restraint-first route: mostly `2K` and below with only a few intentional exceptions. → `14`
+
+### Recommendation
+
+- Use the selective route.
+- Keep broad world textures disciplined and reserve heavier resolutions for assets the player repeatedly sees up close.
+- When a visual pack offers multiple sizes, start below the maximum and only scale upward if testing proves the asset really earns it.
+- Treat PBR/parallax conversions as a VRAM and maintenance choice, not just a screenshot upgrade.
+- If a scene stutters, verify whether it is actual memory pressure before blaming scripts or AI.
+
+### Risks & Compatibility
+
+- High VRAM usage can look like generic stutter, but lowering unrelated gameplay mods will not fix it.
+- Mixed-resolution stacks can still overload memory if too many wide-coverage packs are combined.
+- Some landscape, architecture, and material upgrades cost more in aggregate than character textures ever will.
+
+### Acceptance Criteria
+
+- The chosen texture and material stack fits the target hardware without obvious streaming or traversal hitching.
+- Heavy assets are concentrated in places where they matter visually.
+- Texture downsizing decisions are documented when they materially improve stability.
+
+## CPU-Heavy Script Review → `14`
+
+### Core Idea
+
+- CPU and Papyrus pressure usually comes from layered systems, NPC density, polling scripts, and constant background updates rather than one dramatic offender.
+- This section should keep the list from mistaking script delay for graphics trouble.
+
+### Options
+
+- Permissive route: allow multiple overlapping always-on systems and troubleshoot only after instability appears.
+- Moderated route: keep strong feature mods, but avoid stacking several background-heavy systems that solve similar jobs.
+- Strict route: aggressively cut scripted features even when they materially help the list identity.
+
+### Recommendation
+
+- Use the moderated route.
+- Treat NPC expansion, survival layers, follower frameworks, reputation systems, defeat systems, and ambient event mods as cumulative load, not isolated decisions.
+- Prefer one good system per gameplay problem instead of three lighter systems that all tick in the background.
+- Keep diagnostic logging and troubleshooting-only settings off during normal play unless a bug actually needs them.
+- Judge script health through sleeping, waiting, cell changes, combat cleanup, and long travel rather than standing still in one test spot.
+
+### Risks & Compatibility
+
+- Script delay often gets misdiagnosed as low FPS or "Skyrim being Skyrim."
+- Mid-save uninstall habits can create save instability that looks like performance decay.
+- A list can feel fine in short tests and still degrade badly over longer sessions.
+
+### Acceptance Criteria
+
+- Waiting, sleeping, travel transitions, and combat aftermath remain responsive on a mature test profile.
+- No category depends on several overlapping background systems without a clear reason.
+- Long-session behavior remains stable enough that later testing is trustworthy.

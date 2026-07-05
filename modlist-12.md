@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `12 Legacy of the Dragonborn`
 
-## Core Mod → `12` Baseline
+## Core Mod Baseline → `12`
 
 ### Core Idea
 
@@ -37,6 +37,43 @@ This subsection tracks the kinds of mods that should be evaluated partly through
 - User-provided verified Nexus entries to retain in this LoTD planning set: **13279** — *Paintings Replacer for Legacy of the Dragonborn SSE* (v1.1, last updated Nov 2017 — ⚠️ texture replacer, low risk of breakage but unmaintained); **16080** — *Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art* (v01, last updated Mar 2018 — ⚠️ same caveat); **131107** — *Placeable Display Cases* (v3.1, last updated Jan 2025).
 - Content with common `Legacy of the Dragonborn` integration pressure: major quest mods, artifact packs, unique-item expansions, new lands, treasure-hunt content, and player-home mods that may overlap with relic storage or collection routing.
 
+### Quest Mods With Strong LoTD Integration
+
+The following quest and new-lands mods have established LoTD patch support (official or high-quality third-party) and are strong candidates for inclusion based on museum display value:
+
+- **VIGILANT** — LoTD displays for artifacts, daedric items, and unique rewards. Multiple display cases in the museum's Hall of Oddities. → `12`
+- **Unslaad** — LoTD patch available via the official patch hub; displays for the unique item set from this mod. → `12`
+- **Glenmoril** — patch pipeline still maturing; check before locking. → `12`
+- **Project AHO** — full display room in the museum (the AHO Display Room in the Hall of Secrets). → `12`
+- **Carved Brink** — museum displays for artifacts from the Faceted Stones and the unique weapons/armor added by this mod. → `12`
+- **The Forgotten City** — displays for the unique items and the player's choice reward. → `12`
+- **Beyond Skyrim - Bruma** — count-flation and display-base integration; some unique Bruma items have LoTD display slots. → `12`
+- **Beyond Reach** — third-party LoTD patch adds display support for unique items. → `12`
+- **The Wheels of Lull** — display slots for the unique items from this mod in the Hall of Secrets. → `12`
+- **Moon and Star** — display support for the unique armor and weapon reward. → `12`
+- **Wyrmstooth** — LoTD displays for several unique items and the Wyrmstooth itself. → `12`
+- **Falskaar** — base museum count supports Falskaar's unique items. → `12`
+- **Sirenroot - A Verdant Tale** — newer mod; check patch status before locking display integration. → `12`
+- **Midwood Isle** — official LoTD patch support; displays for unique items from this worldspace. → `12`
+- **The Gray Cowl of Nocturnal** — displays for the unique items and the legendary mask. → `12`
+- **The Breton Paladin** — official patch support; displays for the quest rewards. → `12`
+- **Clockwork** — display slots for the unique items from this quest mod. → `12`
+- **Konahrik's Accoutrements** — deep LoTD integration with dedicated display room for the full dragon priest regalia. → `12`
+- **Artifacts - The Ice Blade of the Monarch** — standalone artifact with dedicated LoTD display. → `12`
+- **Artifacts - The Tournament of the Ten Bloods** — new artifact quest with LoTD displays. → `12`
+
+### Display Expansions And Room Mods
+
+- **LOTD Display Patch Repos** — collection of third-party display patches for mods not covered by the official hub. → `12`
+- **Museum Display Room Expansion** — if the base museum feels cramped after adding supported content, evaluate display-room expansion mods such as the *LOTD SSE - Museum Exterior Fixes* or *LOTD Display Room Overhaul* family. → `12`
+- **Hall of Forgotten Guild** — feature of the Curator's Companion that adds more shelf and case space for common collectibles. → `12`
+
+### Collectible Additions With LoTD Integration
+
+- **Stones of Barenziah Quest Markers** — if the Stones of Barenziah quest is active, LoTD has a dedicated display for the completed crown. → `12`
+- **Jewels of the Reach** — additional gemstone collectible with possible LoTD support.
+- **Dawnguard Treasure Map** — does not add direct LoTD displays but feeds the collection-driven exploration loop. → `12`
+
 ## Patch Strategy → `12` For LoTD Support
 
 ### Core Idea
@@ -53,6 +90,15 @@ Use the official `Legacy of the Dragonborn` patch collection as the default patc
 - Re-check load order, museum sorting behavior, and display activation after each major content addition.
 - Keep patch ownership readable so `Legacy of the Dragonborn` compatibility does not disappear into an opaque misc-patches bucket. → `12`
 
+### Mod Selection Considerations
+
+When evaluating whether to include a quest, new-lands, or artifact mod in `Elder Wilds`, the following LoTD-aware questions should be asked:
+
+1. **Does this mod have official or high-quality third-party LoTD patch support?** If yes, integration cost is low. If no, the value of the mod's content must be high enough to justify either writing a custom patch or accepting that its items will not appear in the museum.
+2. **Does the mod add unique items that would feel like they *should* be displayed?** A mod with several named artifacts that have no display slot creates a persistent sense of incompleteness.
+3. **Does the mod conflict with LoTD worldspace edits?** Some older mods edit the same cells as LoTD's museum exterior. Check for navmesh, landscape, or object conflicts before treating a mod as patch-compatible.
+4. **Does the mod's intended play order (canonical level range, gating) fit the museum's unlock progression?** A mod that drops a high-value museum item too early can disrupt the pacing of the collection loop.
+
 ## Submods → `12` And Quality-Of-Life Support
 
 ### Core Idea
@@ -68,6 +114,32 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - Additional included ecosystem entries: keep `13279` (Paintings Replacer for Legacy of the Dragonborn SSE), `16080` (Fate Cards Re-texture), and `131107` (Placeable Display Cases) in the LoTD support bucket for this modlist. → `12`
 - Additional submods: only add museum-side submods or display extensions if they solve a real usability or integration problem in the finalized stack.
 
+### Sorting And Inventory Integration
+
+- **Legacy Safehouse Plus** — expands the museum safehouse with additional crafting stations, display cases, and quality-of-life features. Check compatibility with the latest LoTD version before locking. → `12`
+- **LOTD - Explorer's Room** — adds an explorer-themed room to the safehouse with additional storage and display functionality. → `12`
+- **Quick Light** — not LoTD-specific, but essential for navigating the museum interior (press Light for a portable magelight). → `12`
+- **Map Markers for LotD** — adds a fast-travel map marker at the museum exterior after a quest condition is met. Reduces friction for returning to the museum to deposit finds. → `12`
+
+### Museum-Specific UI Enhancements
+
+- **LOTD Museum Exterior Fixes** — addresses navmesh and door-activation issues around the museum exterior. → `12`
+- **LOTD Hall of Secrets Door Fix** — fixes the door activator in the Hall of Secrets if it does not open correctly after certain quest completions. → `12`
+- **Object Manipulation Overhaul** — not LoTD-specific, but useful for rearranging displays and cases in the museum without console commands. → `12`
+
+### Additional QoL And Immersion Mods
+
+- **LOTD - Museum Exterior Music** — adds area-appropriate music when entering the museum exterior cell. Low priority; evaluate after the audio section (`modlist-10.md`) is locked. → `12`
+- **Dynamic Activation Key** — reduces E key scroll-conflict when interacting with museum displays, bookshelves, and crowded surface tables. → `12`
+
+### Relic System And Archaeological Content
+
+Legacy of the Dragonborn v6 includes a built-in relic system and dig-site exploration mechanics. The following mods extend or complement that content:
+
+- **Relic Hunter** — adds additional relic-themed quests and exploration content that feeds into the museum collection loop. Evaluate for compatibility with LoTD v6's own relic system. → `12`
+- **LOTD - Explorer's League** — framework extension that adds guild-like progression for relic hunters. Check patch status and overlap with Curator's Companion features. → `12`
+- **Shovels - Dig Up Treasure** — adds digging mechanics that complement LoTD's dig-site expeditions. Both mods use similar interaction patterns; check for conflict or double-coverage. → `12`
+
 ### Risks To Check
 
 - `Legacy of the Dragonborn` can quietly drag the whole load order toward completionist design even when another section wants a lighter exploration tone. → `12`
@@ -75,6 +147,8 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - Museum-first progression can change the perceived value of loot and unique-item mods in ways that affect later curation decisions.
 - Utility add-ons can accumulate quickly if every museum friction point gets its own extra plugin.
 - Achievement-side add-ons should stay scoped: `Achievement Injector` is the framework, while `Legacy of the Dragonborn - Achievement Injector` is only one content package that uses it. → `12`
+- Quest mods with strong LoTD integration may co-determine the quest mod stack. If VIGILANT, Project AHO, or Carved Brink are excluded for other reasons, those decisions should be reflected in the LoTD section's supported-content list.
+- Third-party display patches for older quest mods (pre-2023) may not be maintained against LoTD v6. Verify patch currency before treating third-party support as a factor in the mod's evaluation.
 
 ## Research Tasks → `12`
 
@@ -87,6 +161,10 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - As `modlist-08.md` and later content sections expand, record which chosen mods have official `Legacy of the Dragonborn` support and which require third-party patches. → `12`
 - Decide whether any museum-side submods beyond `The Curators Companion` are justified by actual play friction rather than by ecosystem sprawl. → `12`
 - Check whether storage, display activation, and museum progression create any conflicts with the intended roleplay and pacing tone of `Elder Wilds`. → `12`
+- Research third-party LoTD patch status for VIGILANT, Unslaad, Glenmoril, Carved Brink, and Project AHO under LoTD v6 — these quest mods add heavy artifact content and patch staleness would be a significant gap. → `12`
+- Evaluate the overlap between LoTD v6's built-in relic system and external relic/adventure mods to determine whether `Relic Hunter`, `LOTD - Explorer's League`, or `Shovels - Dig Up Treasure` add meaningful new content or just duplicate existing systems. → `12`
+- Verify whether `Legacy Safehouse Plus` and `LOTD - Explorer's Room` are compatible with LoTD v6.10+ without requiring patches for the patch. → `12`
+- For each quest mod in the candidate list (VIGILANT, Project AHO, Carved Brink, etc.), confirm the exact display room or case in the museum and whether the display is automatic or requires the Curator's Companion to activate. → `12`
 
 ## Acceptance Criteria → `12`
 
@@ -98,3 +176,4 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - Clean museum integration is verified for any finalized supported quest or artifact mods.
 - Patch selection is tied to actual chosen mods, not speculative future content.
 - The museum loop complements exploration and world-content goals instead of overwhelming them.
+- Quest and artifact mods in the final stack have a documented LoTD integration status (official patch, third-party patch, or unsupported) before they are locked into the load order.

@@ -1,5 +1,7 @@
 # Animations and Movement
 
+> **Numbering note:** This file is `modlist-04.md` but corresponds to MO2 separator `03 Animations`. See the separator mapping table in [`modlist.md`](modlist.md#separator-numbering-note) for the full offset reference.
+
 **MO2 Separator:** `03 Animations` → `03a Framework`, `03b Movement & Idles`, `03c Combat`, `03d Interactions & Traversal`, `03e Creatures`
 
 ## Pandora Framework And Prerequisites → `03a Framework`

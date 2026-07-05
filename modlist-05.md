@@ -1,5 +1,7 @@
 # Third-Person Gameplay
 
+> **Numbering note:** This file is `modlist-05.md` but corresponds to MO2 separator `04 Third Person`. See the separator mapping table in [`modlist.md`](modlist.md#separator-numbering-note) for the full offset reference.
+
 **MO2 Separator:** `04 Third Person` → `04a Camera & Movement`, `04b Combat & Targeting`, `04c Mounted`
 
 ## Third-Person Camera Framework → `04a Camera & Movement`
