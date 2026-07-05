@@ -88,6 +88,9 @@ Keep idle posture aligned with the Leviathan locomotion choice. Conservative rou
 ### Alternatives
 
 - **Goetia Animations - Female Idle Walk And Run** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68005)) — Lighter female locomotion alternative if Leviathan reads too heavy. → `Animations - Movement & Idles`
+- **Dynamic Female Weather Idles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/98493)) — OAR-based idle replacer for female characters. Adds weather-aware idle animations: shivering in cold rain/snow, shielding eyes from bright sun, wiping sweat in heat. Pure visual flavor, no gameplay impact. Complements the survival/weather stack by making the player character react believably to the environment. → `Animations - Movement & Idles`
+    - **Main file:** `Dynamic Female Weather Idles` (OAR condition-based). Download the main file; supports all weather mods.
+
 - **Goetia Animations - Male Idle Walk And Run** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68625)) — Broader locomotion alternate, not an idle-only pick. → `Animations - Movement & Idles`
 - **Conditional Armor Type Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51507)) — Equipment-conditional variation; add only after base stance is accepted. → `Animations - Movement & Idles`
 

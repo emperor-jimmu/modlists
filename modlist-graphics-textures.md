@@ -69,3 +69,21 @@ This subsection owns the in-world visual effects that fire when combat happens: 
 - Persistent blood decals can create frame-rate or memory pressure in long combat sessions. Check MCM for decal lifetime and density settings.
 - Blood pools can look out of place in snowy regions if the framework does not handle surface-specific blending.
 - Keep ownership scoped to the persistent-decals-and-pool layer, not the hit-effect layer.
+
+## Book and Paper Visual Overhauls → `Graphics - Textures & Meshes`
+
+This subsection owns visual upgrades for books, notes, and paper items — the most-read world objects in the game. Texture and mesh improvements here make reading feel more tactile and library exploration more rewarding without changing any gameplay records.
+
+### Baseline
+
+- **Book Covers Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/901)) — Core book-cover texture replacer. Gives every book in Skyrim a unique hand-crafted cover texture instead of the vanilla cover-swapping system. 200K+ endorsements; the definitive book-visual mod. → `Graphics - Textures & Meshes`
+    - **Main file:** `Book Covers Skyrim` (the base mod). Choose the **Main Files** download (not the USSEP Update variant).
+    - **Book Covers Skyrim Enhanced Textures** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178820)) — Higher-resolution texture upgrade for the book covers. 2K/4K options. Install after the base mod and overwrite. → `Graphics - Textures & Meshes`
+    - **Book Covers Skyrim - SkyPatched** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/109254)) — SkyPatcher-based forward-port that resolves conflicts with other mods editing the same book records without needing a traditional patch. Choose **Recommended Main File**. → `Graphics - Textures & Meshes`
+
+### Notes
+
+- Book Covers Skyrim has a USSEP Update variant (mod 50615) that forwards USSEP changes. If USSEP is in the load order (it is, via `modlist-foundations.md`), use the SkyPatched variant instead — it handles USSEP forwarding + broader compatibility.
+- The Enhanced Textures pack is optional but recommended for 4K displays. At 2K the base BC7 textures from the main mod are adequate.
+- Verify compatibility with any mod that touches book inventory records (e.g., Unread Books Glow). The SkyPatched variant resolves most record-level conflicts.
+- The base mod is large (~600 MB for 2K). Evaluate whether unique book covers earn their visual weight versus the 600 MB of VRAM and disk space.

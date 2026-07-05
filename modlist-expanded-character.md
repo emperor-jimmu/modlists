@@ -122,3 +122,34 @@ This subsection owns dedicated overhaul mods for vampire, werewolf, and shout ga
 - All three add spells, powers, and mechanics that `Ordinator`'s perk trees must coexist with. Verify Ordinator's enchantment-tree and speech-tree adjustments do not conflict with Sacrosanct's blood powers or Thunderchild's shout meditation. → `Expanded Systems - Character & Progression`
 - Vampire feeding interacts with the crime-and-reputation baseline (`Skyrim Reputation` from `Expanded Systems - Followers & Reputation`). Test feeding in cities to confirm guard behaviour and bounty tracking remain coherent.
 - `Thunderchild`'s boss encounters may overlap with encounter-zone or world-content mods from `modlist-world-content.md`. Verify new word-wall guardians do not duplicate vanilla boss spawns. → `Expanded Systems - Character & Progression`
+
+## Experience and Leveling → `Expanded Systems - Character & Progression`
+
+This subsection owns how the player gains levels and skill points. Instead of the vanilla sleep-to-level model, `Elder Wilds` uses Experience (discovery-based leveling) paired with Static Skill Leveling Rewritten (cooldown-gated skill advancement) to make progression feel earned through exploration and deliberate practice rather than grinding.
+
+### Baseline
+
+- **Experience** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17751)) — Core leveling framework. Character levels are gained through exploration, quest completion, combat, and discovery rather than skill increases. This decouples character level from skill grinding. → `Expanded Systems - Character & Progression`
+    - **Main file:** `Experience` (the base .esp). Install the main file only.
+    - **Experience - Synthesis Patcher** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41937)) — Required Synthesis patcher that generates experience-point values for all mod-added quests, locations, and enemies in the load order. Run during the patcher chain in → `14d`. → `Expanded Systems - Character & Progression`
+- **Experience - MCM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65880)) — MCM configuration menu for Experience. Allows tuning XP rates, per-activity values, and toggle per-source. → `Expanded Systems - Character & Progression`
+- **Static Skill Leveling Rewritten** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89940)) — Skill-leveling companion. Adds a cooldown-based system where skill increases are gated by real time or in-game actions, encouraging organic skill use over grind-spamming. → `Expanded Systems - Character & Progression`
+    - **Main file:** `Static Skill Leveling - ESL`, the ESL-flagged plugin.
+    - **Static Skill Leveling Rewritten - Simple Preset** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139055)) — Recommended preset with tuned cooldown values. Install after the base mod. → `Expanded Systems - Character & Progression`
+- **No Startup Quest XP - Patch for Sunhelm and more** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55682)) — Prevents XP from startup quests (Unbound, etc.) when using Experience + an alternate start mod. Complements Alternate Perspective from the Character Creation subsection. → `Expanded Systems - Character & Progression`
+- **Skyshards** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60748)) — Discovery-layer addition. Scatter 60+ glowing shards across Skyrim that grant experience when collected. Gives exploration a tangible, repeatable reward for straying off the main path. → `Expanded Systems - Character & Progression`
+    - **Main file:** `Skyshards` (the base mod). Recommend the ESL-flagged version.
+    - **Skyshards - CS Light Addon** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150715)) — Community Shaders light addon. Adds a subtle emission glow to skyshards, making them visible in dark interiors without being garish. Requires Community Shaders (→ `02b`). → `Expanded Systems - Character & Progression`
+    - **Skyshards - Keep it Moving** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127652)) — Prevents the skyshard-collection notification from stopping player movement. QoL patch for third-person gamepad play. → `Expanded Systems - Character & Progression`
+
+### Alternatives
+
+- **Discipline-first route** — Rely on vanilla sleep-to-level progression. Avoids the patcher requirement but discards the exploration-focused progression model that anchors the "big, dark, awe-inspiring world" pillar.
+- **Static Skill Leveling - Custom Preset** — Use the base mod without the Simple Preset if tuning the cooldowns manually is preferred. → `Expanded Systems - Character & Progression`
+
+### Notes
+
+- Experience's Synthesis Patcher must be re-run whenever the load order changes (new quest, location, or creature mods added).
+- Static Skill Leveling Rewritten's cooldown system may feel restrictive during heavy gameplay sessions; the Simple Preset mitigates this. Tune via the preset's .ini if needed.
+- Skyshards placement may clip with city overhauls, new-lands mods, or landscape edits. Verify in-game after the world-content stack is locked.
+- All four mods are ESL-flagged or lightweight, adding minimal plugin pressure.

@@ -65,7 +65,7 @@ World Content (olive green)
 NPCs (rose)
 -#7a1a3a NPCs-                           <!-- → modlist-npcs.md -->
 -#98284e NPCs – Appearance-              <!-- → modlist-npcs.md -->
--#b83864 NPCs – Enemies & Creatures-     <!-- → modlist-npcs.md -->
+-#b83864 NPCs – Enemies & Creatures-     <!-- → modlist-creatures.md -->
 -#d05280 NPCs – Population-              <!-- → modlist-npcs.md -->
 -#e2759c NPCs – Followers-               <!-- → modlist-npcs.md -->
 

@@ -10,6 +10,8 @@ Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Gener
 
 - **Dragonborn Voice Over** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84329)) — The SKSE-based framework. Intercepts player dialogue responses and plays .wav files from an installed voice pack. MCM allows switching between voice packs per character. Required by MCVO Generator as a master. → `Voicing`
 - **Pre-made voice packs (drop-in, no generation)** — Download a completed voice pack and install it as a mod in MO2. **Bella Voice DBVO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89810)) is the most popular female pack with the broadest mod coverage. **DBVO - Allison Voice Pack** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126843)) is a British female alternative. Pre-made male packs are less common. → `Voicing`
+- **Recommended actress voices (female PC):** **Jennifer Hale** (Bella Voice DBVO uses spliced voice lines from Jennifer Hale's extensive VO catalog as its source material). Her range across Mass Effect (female Shepard), Metroid (Samus), and Baldur's Gate fits the grounded-but-authoritative tone the modlist targets. → `Voicing`
+- **Recommended actor voices (male PC):** **Travis Willingham** (MCVO Generator + xVASynth pipeline can use voice models based on his performance as Thor / Guile / Roy Mustang). His commanding baritone works well for a male Dragonborn with an authoritative presence. → `Voicing`
 
 ### Alternatives
 

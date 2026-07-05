@@ -38,6 +38,8 @@ This subsection owns how much friction, structure, and world texture sits betwee
 - **Carriage Stops of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10434)) — Route-coverage expansion if travel infrastructure itself should feel broader. More infrastructure but less direct improvement to the existing layer. → `World Feel - Timescale & Travel`
 - **Fast Travel Cost** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20200)) — Economic-pressure branch if map fast travel should remain available but no longer consequence-free. Solves a cost problem rather than a travel-structure problem. → `World Feel - Timescale & Travel`
 - **Campfire** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/667)) — Complementary camping-and-rest branch affecting travel pacing through campsite planning and field cooking. Already in the expanded-systems survival conversation; relevant here as a travel-pacing tool regardless of which survival framework is selected. → `World Feel - Timescale & Travel`
+- **Journeyman - A Fast Travel Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92220)) — Fast-travel friction layer by Simon Magus. Restricts fast travel unless the player has crafted or purchased a Travel Pack (leather + leather strips + firewood + torch). A compromise between full fast-travel removal (survival-mode approach) and unrestricted map-clicking — travel remains possible but requires preparation. Built-in support for COCKS and I4; optional Survival Mode-only mode. Fits the "living the world" pillar without forcing a no-fast-travel commitment. → `World Feel - Timescale & Travel`
+    - **Main file:** `Journeyman` (the SKSE plugin + ESP). One main file; no optional variants needed.
 
 ### Notes
 
@@ -205,6 +207,8 @@ This subsection owns how dark Skyrim nights should feel during ordinary travel a
 
 - **Torches Candlelight and Lanterns** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/162694)) — Full-featured alternative if the list wants physics-equipped lanterns, NPC distribution, and hotkey-driven hand/hip switching. Requires BOS and MCM Helper — heavier dependency. HDT-SMP variants require FSMP and may have performance cost on lower-end systems. → `World Feel - Nights & Wildlife`
 - **Realistic Usable Lanterns** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110563)) — Survival-oriented alternative if finite candles as a consumable resource is preferred over unlimited magic light. Lightweight, no SKSE. → `World Feel - Nights & Wildlife`
+- **Handheld Lanterns - HDT-SMP** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135973)) — Physics-equipped hand lantern with HDT-SMP chain/cloth physics. Equippable lantern that sways naturally with player movement, casts real-time shadows, and supports multiple lantern styles. Requires FSMP (already in the animation stack). Adds a visually striking carried-light option that feels more physical than static lantern models. → `World Feel - Nights & Wildlife`
+    - **Main file:** `Handheld Lanterns - HDT-SMP` (FOMOD installer). Choose your preferred lantern style and physics intensity during installation.
 
 ### Notes
 
