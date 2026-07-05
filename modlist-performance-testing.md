@@ -1,8 +1,8 @@
 # Testing & Maintenance
 
-**MO2 Separator:** `14 Performance`
+**MO2 Separator:** `Performance`
 
-Part of the [`Performance and Technical Workflow`](modlist-14.md) section. See also: `14a` (Performance Strategy), `14b` (Optimization & Configuration), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis).
+Part of the [`Performance and Technical Workflow`](modlist-performance.md) section. See also: `14a` (Performance Strategy), `14b` (Optimization & Configuration), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis).
 
 ## Performance Testing And Tuning
 

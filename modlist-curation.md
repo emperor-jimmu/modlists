@@ -1,8 +1,8 @@
 # Modlist Curation Rules and Testing Plan
 
-**MO2 Separator:** `13 Testing & Curation`
+**MO2 Separator:** `Testing & Curation`
 
-## Curation Rules → `13`
+## Curation Rules → `Testing & Curation`
 
 ### Core Idea
 
@@ -22,7 +22,7 @@ Mods that add new content must not contradict established `Elder Scrolls` lore u
 
 ### Animation Quality Bar
 
-All animation mods must meet the baseline established in `modlist-04.md` and `modlist-05.md` for blend smoothness, motion-capture fidelity, and weapon-type awareness. Animations that clip, snap, float, or lack proper foot-planting are not acceptable even if they cover a category the current list lacks. The bar is: the animation must look natural at standard gameplay speed in third-person view, not only in slow-motion showcase clips.
+All animation mods must meet the baseline established in `modlist-animations.md` and `modlist-third-person.md` for blend smoothness, motion-capture fidelity, and weapon-type awareness. Animations that clip, snap, float, or lack proper foot-planting are not acceptable even if they cover a category the current list lacks. The bar is: the animation must look natural at standard gameplay speed in third-person view, not only in slow-motion showcase clips.
 
 ### Performance Target And Hardware Assumptions
 
@@ -45,7 +45,7 @@ No two mods in the final load order should attempt to overhaul the same gameplay
 - Animation quality never drops below the established bar.
 - Third-person usability is verified before any gameplay, animation, camera, or UI mod is locked.
 
-## Testing Plan → `13`
+## Testing Plan → `Testing & Curation`
 
 ### Core Idea
 
@@ -55,7 +55,7 @@ This testing plan is the verification layer for `Elder Wilds`. Each test stage t
 
 Before any gameplay testing begins, verify the following in order:
 
-- Skyrim launches from `Mod Organizer 2` without a crash or infinite load screen. → `13`
+- Skyrim launches from `Mod Organizer 2` without a crash or infinite load screen. → `Testing & Curation`
 - The main menu displays correctly with all UI mods active.
 - A new game reaches the chosen alternate-start character-generation flow without freezing.
 - The character-generation menu (races, presets, body, sliders) works with all body and appearance mods loaded.
@@ -165,7 +165,7 @@ The long-session test passes if the game does not crash, the save remains loadab
 - Long-session stability tests must be repeated after any SKSE plugin, script-heavy mod, or worldspace edit is added to the final load order.
 - Testing results should be noted in the repo so that troubleshooting later does not start from zero knowledge.
 
-## Post-Install Smoke Test → `13`
+## Post-Install Smoke Test → `Testing & Curation`
 
 This is the standard post-section smoke test used across all section files. Run after completing any numbered section.
 

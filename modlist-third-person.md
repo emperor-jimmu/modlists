@@ -1,10 +1,8 @@
 # Third-Person Gameplay
 
-> **Numbering note:** This file is `modlist-05.md` but corresponds to MO2 separator `04 Third Person`. See the separator mapping table in [`modlist.md`](modlist.md#separator-numbering-note) for the full offset reference.
+**MO2 Separator:** `Third-Person` → `Third-Person - Camera & Movement`, `Third-Person - Combat & Targeting`, `Third-Person - Mounted`
 
-**MO2 Separator:** `04 Third Person` → `04a Camera & Movement`, `04b Combat & Targeting`, `04c Mounted`
-
-## Third-Person Camera Framework → `04a Camera & Movement`
+## Third-Person Camera Framework → `Third-Person - Camera & Movement`
 
 ### Core Idea
 
@@ -13,16 +11,16 @@
 
 ### Options
 
-- Modern modular route: `SmoothCam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/41252> → `04a`
-- Leaner fallback route: `Customizable Camera` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12201> → `04a`
-- Adjacent but separate systems: `True Directional Movement - Modernized Third Person Gameplay` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51614> and `Improved Camera SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93962> → `04a`
+- Modern modular route: `SmoothCam` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/41252> → `Third-Person - Camera & Movement`
+- Leaner fallback route: `Customizable Camera` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12201> → `Third-Person - Camera & Movement`
+- Adjacent but separate systems: `True Directional Movement - Modernized Third Person Gameplay` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51614> and `Improved Camera SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93962> → `Third-Person - Camera & Movement`
 
 ### Recommendation
 
-- Use `SmoothCam` as the baseline third-person camera framework. → `04a`
-- Keep `Customizable Camera` as the leaner fallback comparison if `SmoothCam` feels too elaborate for the final tone. → `04a`
-- Keep `TDM` for later movement and targeting decisions instead of letting it answer the framework question. → `04a`
-- Keep `Improved Camera SE` scoped to perspective support rather than treating it as the main third-person framework answer. → `04a`
+- Use `SmoothCam` as the baseline third-person camera framework. → `Third-Person - Camera & Movement`
+- Keep `Customizable Camera` as the leaner fallback comparison if `SmoothCam` feels too elaborate for the final tone. → `Third-Person - Camera & Movement`
+- Keep `TDM` for later movement and targeting decisions instead of letting it answer the framework question. → `Third-Person - Camera & Movement`
+- Keep `Improved Camera SE` scoped to perspective support rather than treating it as the main third-person framework answer. → `Third-Person - Camera & Movement`
 
 ### Risks & Compatibility
 
@@ -36,7 +34,7 @@
 - The camera baseline remains comfortable in longer normal play.
 - Later layers can build on the framework without redefining it.
 
-## Camera Presets And Shoulder Switching → `04a Camera & Movement`
+## Camera Presets And Shoulder Switching → `Third-Person - Camera & Movement`
 
 ### Core Idea
 
@@ -47,7 +45,7 @@
 
 - Stable centered-to-light-offset route.
 - Strong over-the-shoulder route.
-- Preset-heavy route that adopts a community `SmoothCam` preset early. → `04a`
+- Preset-heavy route that adopts a community `SmoothCam` preset early. → `Third-Person - Camera & Movement`
 
 ### Recommendation
 
@@ -67,7 +65,7 @@
 - Shoulder switching feels like a practical tool rather than a chore.
 - Any preset influence remains understandable enough to tune manually later.
 
-## True Directional Movement → `04a Camera & Movement` → `04a`
+## True Directional Movement → `Third-Person - Camera & Movement` → `Third-Person - Camera & Movement`
 
 ### Core Idea
 
@@ -76,29 +74,29 @@
 
 ### Options
 
-- Modern directional route: `True Directional Movement - Modernized Third Person Gameplay` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51614> → `04a`
+- Modern directional route: `True Directional Movement - Modernized Third Person Gameplay` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51614> → `Third-Person - Camera & Movement`
 - Minimalist route: keep movement closer to the camera framework plus animation stack.
-- Partial-adoption route: use `TDM` for movement modernization while staying disciplined about which adjacent features are enabled later. → `04a`
+- Partial-adoption route: use `TDM` for movement modernization while staying disciplined about which adjacent features are enabled later. → `Third-Person - Camera & Movement`
 
 ### Recommendation
 
-- Use `True Directional Movement` as the baseline directional movement layer. → `04a`
+- Use `True Directional Movement` as the baseline directional movement layer. → `Third-Person - Camera & Movement`
 - Treat freer facing, cleaner traversal, and better alignment with the animation stack as the core value here.
 - Do not let target lock, boss framing, or crosshair behavior define this decision yet.
 
 ### Risks & Compatibility
 
-- `TDM` is easy to treat as an all-in-one third-person answer too early. → `04a`
+- `TDM` is easy to treat as an all-in-one third-person answer too early. → `Third-Person - Camera & Movement`
 - A movement layer that feels great in open traversal may still feel awkward in tight interiors, on stairs, or during precision positioning.
 - The project can accidentally absorb targeting assumptions before those systems are judged separately.
 
 ### Acceptance Criteria
 
 - Third-person movement feels clearly more natural and modern than vanilla in ordinary play.
-- Character facing and traversal stay coherent with the animation stack from `modlist-04.md`. → `04a`
-- `TDM` remains understandable as one layer in the third-person stack rather than a catch-all answer. → `04a`
+- Character facing and traversal stay coherent with the animation stack from `modlist-animations.md`. → `Third-Person - Camera & Movement`
+- `TDM` remains understandable as one layer in the third-person stack rather than a catch-all answer. → `Third-Person - Camera & Movement`
 
-## Target Lock And Targeting Behavior → `04b Combat & Targeting`
+## Target Lock And Targeting Behavior → `Third-Person - Combat & Targeting`
 
 ### Core Idea
 
@@ -107,29 +105,29 @@
 
 ### Options
 
-- Modern lock-on route: `True Directional Movement - Modernized Third Person Gameplay` as the targeting owner. → `04b`
+- Modern lock-on route: `True Directional Movement - Modernized Third Person Gameplay` as the targeting owner. → `Third-Person - Combat & Targeting`
 - Light-touch route: freer movement plus camera framing with only situational lock-on use.
-- Feedback-enhanced route: pair the targeting baseline with `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> for clearer target-state feedback. → `04b`
+- Feedback-enhanced route: pair the targeting baseline with `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> for clearer target-state feedback. → `Third-Person - Combat & Targeting`
 
 ### Recommendation
 
-- Use `TDM` as the main targeting-behavior owner, but keep lock-on restrained. → `04b`
+- Use `TDM` as the main targeting-behavior owner, but keep lock-on restrained. → `Third-Person - Combat & Targeting`
 - Treat lock-on as an optional combat-readability tool, not the permanent default way every fight must be played.
-- Keep `TrueHUD` as an optional feedback companion only if testing shows target-state clarity materially helps. → `04b`
+- Keep `TrueHUD` as an optional feedback companion only if testing shows target-state clarity materially helps. → `Third-Person - Combat & Targeting`
 
 ### Risks & Compatibility
 
 - Overusing lock-on can make combat feel narrower and more repetitive than the rest of the stack intends.
 - Weak target selection or target switching can make even a good movement and camera baseline feel unreliable.
-- `TrueHUD` can create the illusion of a solved targeting system when the underlying behavior is still awkward. → `04b`
+- `TrueHUD` can create the illusion of a solved targeting system when the underlying behavior is still awkward. → `Third-Person - Combat & Targeting`
 
 ### Acceptance Criteria
 
 - Targeting is noticeably clearer and more usable than vanilla in normal third-person combat.
 - Lock-on helps when it should and stays easy to ignore when freer movement is better.
-- `TDM` remains the clear targeting owner without overlapping systems muddying responsibility. → `04b`
+- `TDM` remains the clear targeting owner without overlapping systems muddying responsibility. → `Third-Person - Combat & Targeting`
 
-## Dodge, Sprint, And Movement Responsiveness → `04a Camera & Movement`
+## Dodge, Sprint, And Movement Responsiveness → `Third-Person - Camera & Movement`
 
 ### Core Idea
 
@@ -138,24 +136,24 @@
 
 ### Options
 
-- Restrained modern dodge route: `TK Dodge RE - Script Free` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56956> → `04a`
-- Legacy fallback route: `TK Dodge SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/15309> → `04a`
+- Restrained modern dodge route: `TK Dodge RE - Script Free` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56956> → `Third-Person - Camera & Movement`
+- Legacy fallback route: `TK Dodge SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/15309> → `Third-Person - Camera & Movement`
 - No-baseline-dodge route: rely on movement, camera, animation, and later combat-rule layers unless testing proves a dedicated dodge is necessary.
-- Newer multi-author branch: `Dodge for all` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174544> → `04a`
+- Newer multi-author branch: `Dodge for all` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174544> → `Third-Person - Camera & Movement`
 
 ### Recommendation
 
-- Use `TK Dodge RE - Script Free` as the first serious dodge candidate. → `04a`
+- Use `TK Dodge RE - Script Free` as the first serious dodge candidate. → `Third-Person - Camera & Movement`
 - Treat dodge as a tactical repositioning tool, not the constant center of combat pacing.
-- Keep `TK Dodge SE` only as a fallback reference point, not the preferred baseline direction. → `04a`
-- Keep `Dodge for all` as a documented newer multi-author comparison rather than a baseline. It is brand new (v1.1.2, May 2026) with very low community signal, so it cannot be locked in as the main baseline yet. Watch for endorsement growth and bug reports; revisit this subsection once the mod has a real community track record. → `04a`
+- Keep `TK Dodge SE` only as a fallback reference point, not the preferred baseline direction. → `Third-Person - Camera & Movement`
+- Keep `Dodge for all` as a documented newer multi-author comparison rather than a baseline. It is brand new (v1.1.2, May 2026) with very low community signal, so it cannot be locked in as the main baseline yet. Watch for endorsement growth and bug reports; revisit this subsection once the mod has a real community track record. → `Third-Person - Camera & Movement`
 
 ### Risks & Compatibility
 
 - A dodge system can make combat feel twitchier and less grounded than the rest of the list intends.
 - If dodge is too strong or too convenient, it can trivialize spacing and undermine other readability goals.
 - The dodge ecosystem has several overlapping variants and derivatives, so ownership gets messy quickly if multiple paths stay alive too long.
-- `Dodge for all` is brand new with no community validation. Locking it in early risks a mod that breaks under updates or a behavior profile that does not match the rest of the combat stack. → `04a`
+- `Dodge for all` is brand new with no community validation. Locking it in early risks a mod that breaks under updates or a behavior profile that does not match the rest of the combat stack. → `Third-Person - Camera & Movement`
 
 ### Acceptance Criteria
 
@@ -164,7 +162,7 @@
 - The chosen dodge layer remains understandable as one tool in the combat stack rather than the answer to every responsiveness problem.
 - If `Dodge for all` is added later, it replaces `TK Dodge RE` cleanly rather than being stacked on top.
 
-## Hit Reactions, Stagger, And Impact Feedback → `04b Combat & Targeting`
+## Hit Reactions, Stagger, And Impact Feedback → `Third-Person - Combat & Targeting`
 
 ### Core Idea
 
@@ -173,14 +171,14 @@
 
 ### Options
 
-- Balanced impact route: `Valhalla Combat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64741> → `04b`
-- Lighter feedback route: lean more on `Precision`, animation readability, and restrained combat rules. → `04b`
+- Balanced impact route: `Valhalla Combat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64741> → `Third-Person - Combat & Targeting`
+- Lighter feedback route: lean more on `Precision`, animation readability, and restrained combat rules. → `Third-Person - Combat & Targeting`
 - High-drama route: push harder on stagger and reaction systems, accepting a higher risk of overcorrection.
 
 ### Recommendation
 
-- Use `Valhalla Combat` as the main gameplay-side comparison point for hit feedback and stagger behavior. → `04b`
-- Treat `Precision` from `modlist-04.md` as an adjacent support layer for contact feel, but not a full answer to impact readability. → `04b`
+- Use `Valhalla Combat` as the main gameplay-side comparison point for hit feedback and stagger behavior. → `Third-Person - Combat & Targeting`
+- Treat `Precision` from `modlist-animations.md` as an adjacent support layer for contact feel, but not a full answer to impact readability. → `Third-Person - Combat & Targeting`
 - Aim for reactions and stagger that clarify combat outcomes rather than constantly interrupting movement flow.
 
 ### Risks & Compatibility
@@ -195,29 +193,29 @@
 - Stagger and reaction feedback improve combat understanding without dominating every encounter.
 - The subsection remains clearly scoped to impact feel, leaving deeper combat-rule decisions for the next section.
 
-## Third-Person Combat Systems → `04b Combat & Targeting`
+## Third-Person Combat Systems → `Third-Person - Combat & Targeting`
 
 ### Core Idea
 
-- This subsection decides how far `Elder Wilds` should push Skyrim toward a modern third-person combat framework instead of only improving presentation around mostly vanilla combat rules. → `04b`
+- This subsection decides how far `Elder Wilds` should push Skyrim toward a modern third-person combat framework instead of only improving presentation around mostly vanilla combat rules. → `Third-Person - Combat & Targeting`
 - It owns the gameplay-framework decision, not animation generation, skeleton ownership, or conditional logic.
 
 ### Options
 
 - Vanilla-plus route: keep camera, movement, dodge, and impact layers relatively restrained.
-- Balanced modern route: `Valhalla Combat` as the main gameplay-rules candidate while evaluating `MCO ADXP - Modern Movement Combat Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/117115> as the main ambitious combat direction. → `04b`
-- Stealth-animation route: `RaySense - Cover Animation` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175504> — triggers a flatten-against-wall animation when the player sneaks near a wall. Requires `Open Animation Replacer` (already the baseline in `modlist-04.md`). OAR-based, companion to the `RaySense` parkour pair. → `04b`
-- Full action route: commit strongly to the `MCO ADXP` ecosystem, `Valhalla Combat`, `SCAR`, dodge, lock-on, and related responsiveness layers together. → `04b`
-- Impact-companion for MCO route: `Knockback SKSE (For BFCO and MCO Users)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171277> — adds physics-based knockback on power attacks and heavy hits, creating satisfying impact feedback that works with MCO/BFCO animation-driven combat. Only relevant if the MCO route is chosen. → `04b`
+- Balanced modern route: `Valhalla Combat` as the main gameplay-rules candidate while evaluating `MCO ADXP - Modern Movement Combat Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/117115> as the main ambitious combat direction. → `Third-Person - Combat & Targeting`
+- Stealth-animation route: `RaySense - Cover Animation` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175504> — triggers a flatten-against-wall animation when the player sneaks near a wall. Requires `Open Animation Replacer` (already the baseline in `modlist-animations.md`). OAR-based, companion to the `RaySense` parkour pair. → `Third-Person - Combat & Targeting`
+- Full action route: commit strongly to the `MCO ADXP` ecosystem, `Valhalla Combat`, `SCAR`, dodge, lock-on, and related responsiveness layers together. → `Third-Person - Combat & Targeting`
+- Impact-companion for MCO route: `Knockback SKSE (For BFCO and MCO Users)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171277> — adds physics-based knockback on power attacks and heavy hits, creating satisfying impact feedback that works with MCO/BFCO animation-driven combat. Only relevant if the MCO route is chosen. → `Third-Person - Combat & Targeting`
 
 ### Recommendation
 
 - Start with the balanced modern route.
-- Treat `Valhalla Combat` as the main gameplay-rule framework to judge here. → `04b`
-- Treat `MCO ADXP` as the main ambitious combat-style route to compare against a lighter baseline, not as an automatic lock. → `04b`
-- Keep `SCAR` as the already-tracked NPC-side support layer from `modlist-04.md` once the list is ready to judge richer enemy attack behavior in real encounters. → `04b`
-- Keep `RaySense - Cover Animation` as a documented stealth-animation companion rather than a baseline. It adds a wall-flatten animation during third-person sneaking that reinforces the embodied stealth feel without adding gameplay rules. Add it only if sneaking and stealth are a meaningful part of the intended playstyle. → `04b`
-- If the list moves to `MCO`, carry forward the prerequisite/support context already recorded in `modlist-04.md` rather than treating `MCO` as a standalone toggle. → `04b`
+- Treat `Valhalla Combat` as the main gameplay-rule framework to judge here. → `Third-Person - Combat & Targeting`
+- Treat `MCO ADXP` as the main ambitious combat-style route to compare against a lighter baseline, not as an automatic lock. → `Third-Person - Combat & Targeting`
+- Keep `SCAR` as the already-tracked NPC-side support layer from `modlist-animations.md` once the list is ready to judge richer enemy attack behavior in real encounters. → `Third-Person - Combat & Targeting`
+- Keep `RaySense - Cover Animation` as a documented stealth-animation companion rather than a baseline. It adds a wall-flatten animation during third-person sneaking that reinforces the embodied stealth feel without adding gameplay rules. Add it only if sneaking and stealth are a meaningful part of the intended playstyle. → `Third-Person - Combat & Targeting`
+- If the list moves to `MCO`, carry forward the prerequisite/support context already recorded in `modlist-animations.md` rather than treating `MCO` as a standalone toggle. → `Third-Person - Combat & Targeting`
 
 ### Risks & Compatibility
 
@@ -231,7 +229,7 @@
 - The final system works coherently with the camera, targeting, dodge, impact, and animation decisions already recorded in the plan.
 - Enemy behavior and player-side combat rules feel intentional rather than like a pile of overlapping modern-combat mods.
 
-## Crosshair And Aiming Behavior → `04b Combat & Targeting`
+## Crosshair And Aiming Behavior → `Third-Person - Combat & Targeting`
 
 ### Core Idea
 
@@ -241,23 +239,23 @@
 ### Options
 
 - Disciplined aiming route: keep crosshair behavior restrained and readable.
-- Selection-utility route: `Better Third Person Selection - BTPS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64339> → `04b`
-- Feedback-supported route: `TrueHUD` as a limited clarity companion where it genuinely helps aiming readability. → `04b`
-- Arrow-physics route: `Ricochet - Arrow Physics Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160603> → `04b`
+- Selection-utility route: `Better Third Person Selection - BTPS` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64339> → `Third-Person - Combat & Targeting`
+- Feedback-supported route: `TrueHUD` as a limited clarity companion where it genuinely helps aiming readability. → `Third-Person - Combat & Targeting`
+- Arrow-physics route: `Ricochet - Arrow Physics Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160603> → `Third-Person - Combat & Targeting`
 
 ### Recommendation
 
 - Start with the disciplined aiming route.
 - Treat camera framing as the baseline aiming context, because poor framing can masquerade as poor aiming behavior.
-- Treat `BTPS` as a strong optional companion if real third-person play shows that selection and interaction reliability are part of the usability problem, but do not confuse object-selection fixes with combat-aiming fixes. → `04b`
-- Keep `TrueHUD` only as an optional clarity aid if testing shows it materially improves third-person targeting and aim readability. → `04b`
-- Keep `Ricochet - Arrow Physics Framework` as a documented arrow-physics companion rather than a baseline. It adds realistic arrow ricochet, deflection, and stick-physics behavior that makes third-person archery feel more grounded. Lock it in only if archery is a meaningful part of the locked combat style in `modlist-05.md` and `modlist-06.md`; pure-melee or pure-magic builds can skip it without losing value. → `04b`
-- Defer visual styling and broader HUD philosophy to `modlist-03.md`. → `04b`
+- Treat `BTPS` as a strong optional companion if real third-person play shows that selection and interaction reliability are part of the usability problem, but do not confuse object-selection fixes with combat-aiming fixes. → `Third-Person - Combat & Targeting`
+- Keep `TrueHUD` only as an optional clarity aid if testing shows it materially improves third-person targeting and aim readability. → `Third-Person - Combat & Targeting`
+- Keep `Ricochet - Arrow Physics Framework` as a documented arrow-physics companion rather than a baseline. It adds realistic arrow ricochet, deflection, and stick-physics behavior that makes third-person archery feel more grounded. Lock it in only if archery is a meaningful part of the locked combat style in `modlist-third-person.md` and `modlist-expanded-systems.md`; pure-melee or pure-magic builds can skip it without losing value. → `Third-Person - Combat & Targeting`
+- Defer visual styling and broader HUD philosophy to `modlist-ui.md`. → `Third-Person - Combat & Targeting`
 
 ### Risks & Compatibility
 
 - It is easy to overcorrect weak third-person aiming with too much HUD noise instead of fixing camera and targeting behavior first.
-- `BTPS` can help object interaction without answering combat-aiming problems. → `04b`
+- `BTPS` can help object interaction without answering combat-aiming problems. → `Third-Person - Combat & Targeting`
 - Crosshair tuning can quietly inherit assumptions from the heavier combat route and feel wrong if the project later chooses a more grounded direction.
 
 ### Acceptance Criteria
@@ -266,7 +264,7 @@
 - Third-person object interaction feels reliable enough that normal looting and activation do not constantly fight the camera perspective.
 - Camera, targeting, and aiming each remain understandable as separate layers in the stack.
 
-## Horse Camera And Mounted Controls → `04c Mounted`
+## Horse Camera And Mounted Controls → `Third-Person - Mounted`
 
 ### Core Idea
 
@@ -275,18 +273,18 @@
 
 ### Options
 
-- Broad overhaul route: `Convenient Horses` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9519> — heavy scripting, all-in-one mounted usability, but last updated Jan 2022 (3.5yr stale) → `04c`
-- Actively maintained overhaul route: `Press H to Horse` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/81195> — reworks AE/CC horse mechanics, MCM, horse calling/naming/inventory/follower riding, updated May 2026 → `04c`
-- Lightweight route: `Simplest Horses (and other mounts)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54225> — single hotkey does everything (inventory, follow/wait, teleport, rename), SPID+MCM, very compatible, last updated Dec 2022 → `04c`
-- Handling fix (complementary, works with any of the above): `Horses Simply Turn Better` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57790> — sharpens turning radius, designed for TDM → `04c`
+- Broad overhaul route: `Convenient Horses` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9519> — heavy scripting, all-in-one mounted usability, but last updated Jan 2022 (3.5yr stale) → `Third-Person - Mounted`
+- Actively maintained overhaul route: `Press H to Horse` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/81195> — reworks AE/CC horse mechanics, MCM, horse calling/naming/inventory/follower riding, updated May 2026 → `Third-Person - Mounted`
+- Lightweight route: `Simplest Horses (and other mounts)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54225> — single hotkey does everything (inventory, follow/wait, teleport, rename), SPID+MCM, very compatible, last updated Dec 2022 → `Third-Person - Mounted`
+- Handling fix (complementary, works with any of the above): `Horses Simply Turn Better` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57790> — sharpens turning radius, designed for TDM → `Third-Person - Mounted`
 - Minimalist route: keep horse behavior close to vanilla and solve only obvious mounted usability pain points.
 
 ### Recommendation
 
-- `Convenient Horses` (last updated Jan 2022) is no longer actively maintained. Prefer one of the newer alternatives. → `04c`
-- `Press H to Horse` is the strongest candidate for an actively maintained, modern horse overhaul — by TateTaylorOH (Keizaal author), updated May 2026, edits few vanilla records, designed for compatibility. → `04c`
-- `Simplest Horses` is the drop-in lightweight choice if the full overhaul feels like scope creep. → `04c`
-- `Horses Simply Turn Better` should be considered a free add-on regardless of which overhaul is chosen — it only touches turning variables and makes mounted combat in TDM feel dramatically better. → `04c`
+- `Convenient Horses` (last updated Jan 2022) is no longer actively maintained. Prefer one of the newer alternatives. → `Third-Person - Mounted`
+- `Press H to Horse` is the strongest candidate for an actively maintained, modern horse overhaul — by TateTaylorOH (Keizaal author), updated May 2026, edits few vanilla records, designed for compatibility. → `Third-Person - Mounted`
+- `Simplest Horses` is the drop-in lightweight choice if the full overhaul feels like scope creep. → `Third-Person - Mounted`
+- `Horses Simply Turn Better` should be considered a free add-on regardless of which overhaul is chosen — it only touches turning variables and makes mounted combat in TDM feel dramatically better. → `Third-Person - Mounted`
 - Judge mounted play primarily on travel readability, steering confidence, and coherence with the chosen third-person camera philosophy rather than feature count alone.
 
 ### Risks & Compatibility
@@ -303,13 +301,13 @@
 
 ## Candidate TODO Additions
 
-### Combat Gameplay → `04b`
+### Combat Gameplay → `Third-Person - Combat & Targeting`
 
-- `Eviscerate` — combat gore/dismemberment gameplay → `04b`
-- `Cinema - Dynamic Combat Letterbox` — dynamic letterbox during combat → `04b`
-- `Parry for All` — universal parry/block mechanic → `04b`
-- `Deadly spell impact` — spell impact visual/audio feedback → `04b`
+- `Eviscerate` — combat gore/dismemberment gameplay → `Third-Person - Combat & Targeting`
+- `Cinema - Dynamic Combat Letterbox` — dynamic letterbox during combat → `Third-Person - Combat & Targeting`
+- `Parry for All` — universal parry/block mechanic → `Third-Person - Combat & Targeting`
+- `Deadly spell impact` — spell impact visual/audio feedback → `Third-Person - Combat & Targeting`
 
-### Mounted → `04c`
+### Mounted → `Third-Person - Mounted`
 
-- `HorsePower - Modernized horse riding` — modern horse riding overhaul → `04c`
+- `HorsePower - Modernized horse riding` — modern horse riding overhaul → `Third-Person - Mounted`

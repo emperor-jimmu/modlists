@@ -1,15 +1,15 @@
 # Performance Strategy
 
-**MO2 Separator:** `14 Performance`
+**MO2 Separator:** `Performance`
 
-Part of the [`Performance and Technical Workflow`](modlist-14.md) section. See also: `14b` (Optimization & Configuration), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis), `14e` (Testing & Maintenance).
+Part of the [`Performance and Technical Workflow`](modlist-performance.md) section. See also: `14b` (Optimization & Configuration), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis), `14e` (Testing & Maintenance).
 
-## Performance Budgeting → `14`
+## Performance Budgeting → `Performance`
 
 ### Core Idea
 
-- This section does not replace the engine baseline from `modlist-01.md` or the graphics decisions from [`modlist-02b.md`](modlist-02b.md). → `14`
-- Its job is to decide how `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy. → `14`
+- This section does not replace the engine baseline from `modlist-foundations.md` or the graphics decisions from [`modlist-graphics-shaders.md`](modlist-graphics-shaders.md). → `Performance`
+- Its job is to decide how `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy. → `Performance`
 
 ### Options
 
@@ -22,7 +22,7 @@ Part of the [`Performance and Technical Workflow`](modlist-14.md) section. See a
 - Use the budgeted route.
 - Treat performance as four different problems that can look similar in play: shader cost, VRAM pressure, CPU/script load, and exterior draw-call pressure.
 - Keep one repeatable forest scene, one city scene, and one dungeon/interior scene for comparisons rather than testing in random places.
-- Record baseline and post-change captures with `PresentMon` and review them in `CapFrameX` or an equivalent frame-time tool instead of trusting impressions. → `14`
+- Record baseline and post-change captures with `PresentMon` and review them in `CapFrameX` or an equivalent frame-time tool instead of trusting impressions. → `Performance`
 - Prefer a stable frame-time target over chasing the highest uncapped number.
 
 ### Risks & Compatibility
@@ -33,11 +33,11 @@ Part of the [`Performance and Technical Workflow`](modlist-14.md) section. See a
 
 ### Acceptance Criteria
 
-- `Elder Wilds` has at least three repeatable test scenes with notes on why each one matters. → `14`
+- `Elder Wilds` has at least three repeatable test scenes with notes on why each one matters. → `Performance`
 - The list can identify whether a bad result is mainly shader cost, VRAM pressure, script load, or draw-call pressure.
 - Performance changes are recorded in a way that can be repeated after later rebuilds.
 
-## VRAM-Heavy Mod Review → `14`
+## VRAM-Heavy Mod Review → `Performance`
 
 ### Core Idea
 
@@ -46,9 +46,9 @@ Part of the [`Performance and Technical Workflow`](modlist-14.md) section. See a
 
 ### Options
 
-- Max-detail route: broad `4K` coverage, frequent material upgrades, and little restraint on texture size. → `14`
+- Max-detail route: broad `4K` coverage, frequent material upgrades, and little restraint on texture size. → `Performance`
 - Selective route: high resolution only for hero assets, creatures, architecture, or landscape layers that actually dominate the screen.
-- Restraint-first route: mostly `2K` and below with only a few intentional exceptions. → `14`
+- Restraint-first route: mostly `2K` and below with only a few intentional exceptions. → `Performance`
 
 ### Recommendation
 
@@ -70,7 +70,7 @@ Part of the [`Performance and Technical Workflow`](modlist-14.md) section. See a
 - Heavy assets are concentrated in places where they matter visually.
 - Texture downsizing decisions are documented when they materially improve stability.
 
-## CPU-Heavy Script Review → `14`
+## CPU-Heavy Script Review → `Performance`
 
 ### Core Idea
 

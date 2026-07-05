@@ -1,8 +1,8 @@
 # Adult Content
 
-**MO2 Separator:** `15 Adult Content`
+**MO2 Separator:** `Adult Content`
 
-## Framework Prerequisites → `15`
+## Framework Prerequisites → `Adult Content`
 
 ### Core Idea
 
@@ -12,7 +12,7 @@ This subsection owns the animation framework that supports the romance, dialogue
 
 - **OStim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/98163> (v7.4 Apr 2026) — the modern adult animation framework for Skyrim SE/AE. Standalone means it does not require OSA or any legacy dependency. It provides the animation system that OStim Romance and the Amorous Adventures OStim patch build on. The maintained branch after OStim NG.
 - **OStim Community Resource** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106519> — a shared framework and dependency required by various OStim add-on mods. Install alongside OStim Standalone as a prerequisite for the broader OStim ecosystem.
-- **Animation packs for OStim Standalone**: the recommended baseline is `Open Animations Romance and Erotica (OARE)`. Additional coverage from **Additional Leito's Animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/104995> (Leito's set, ~150 animations) and **Anub's animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/101918> (~685 animations). Both expand scene variety substantially beyond the baseline OARE pack. → `15`
+- **Animation packs for OStim Standalone**: the recommended baseline is `Open Animations Romance and Erotica (OARE)`. Additional coverage from **Additional Leito's Animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/104995> (Leito's set, ~150 animations) and **Anub's animations for Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/101918> (~685 animations). Both expand scene variety substantially beyond the baseline OARE pack. → `Adult Content`
 - **PPA - Procedural Penis Animations** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172002> — procedural physics addon that animates and aligns the penis with visual collision. Designed to work with CBPC. Adds physical believability to OStim scenes without replacing the animation framework.
 - **OSmp - Automatic SMP physics toggle for OStim** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72547> — automatically toggles SMP physics on/off for player and NPCs during OStim scenes. ESL-flagged, supports CBBE 3BA and HIMBO. Keeps physics active without manual management.
 - **Female Moan Voicesets For Ostim Standalone** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121383> — 38 female moan/climax voicesets keyed to voice types, giving different NPCs distinct moans.
@@ -45,7 +45,7 @@ Add **OCum Ascended** as the orgasm-mechanics layer on top of the framework. It 
 - Sound replacers, physics toggles, and orgasm mechanics layer correctly.
 - Script load from the framework stays low enough that normal combat and travel are unaffected.
 
-## Romance Content → `15`
+## Romance Content → `Adult Content`
 
 ### Core Idea
 
@@ -53,8 +53,8 @@ This subsection owns the romance-quest and companion-romance content that runs o
 
 ### Options
 
-- **OStim Romance** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/107671> — adds fully-voiced romance content using the OStim framework. Designed as the OStim-native romance addon. → `15`
-- **Amorous Adventures OStim Standalone Patch** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150577> — ports the classic Amorous Adventures content to OStim Standalone. Adds voiced romance quests for vanilla marriage-eligible NPCs. → `15`
+- **OStim Romance** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/107671> — adds fully-voiced romance content using the OStim framework. Designed as the OStim-native romance addon. → `Adult Content`
+- **Amorous Adventures OStim Standalone Patch** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150577> — ports the classic Amorous Adventures content to OStim Standalone. Adds voiced romance quests for vanilla marriage-eligible NPCs. → `Adult Content`
 - **Romance Suite** — additional romance framework addons from the OStim ecosystem.
 
 ### Recommendation
@@ -66,8 +66,8 @@ Add **Amorous Adventures OStim Standalone Patch** as the classic-quests companio
 ### Risks & Compatibility
 
 - Romance content addons must match the installed OStim Standalone version. Lock the framework version first, then verify romance mod compatibility.
-- Romance quests add dialogue and quest records that may conflict with content from `modlist-08.md` or NPC overhauls from `modlist-09.md`. Check for overlapping NPC coverage.
-- Amorous Adventures adds dialogue to specific vanilla NPCs. If `Relationship Dialogue Overhaul` or `Serana Dialogue Add-On` (from `modlist-06.md`) also add dialogue for the same NPCs, verify the load order resolves correctly.
+- Romance quests add dialogue and quest records that may conflict with content from `modlist-world-content.md` or NPC overhauls from `modlist-npcs.md`. Check for overlapping NPC coverage.
+- Amorous Adventures adds dialogue to specific vanilla NPCs. If `Relationship Dialogue Overhaul` or `Serana Dialogue Add-On` (from `modlist-expanded-systems.md`) also add dialogue for the same NPCs, verify the load order resolves correctly.
 
 ### Acceptance Criteria
 
@@ -75,7 +75,7 @@ Add **Amorous Adventures OStim Standalone Patch** as the classic-quests companio
 - Dialogue and scene transitions work in third-person with gamepad.
 - No quest-breaking conflicts with dialogue or NPC overhauls from other sections.
 
-## NPCs And Dialogue → `15`
+## NPCs And Dialogue → `Adult Content`
 
 ### Core Idea
 
@@ -83,19 +83,19 @@ This subsection owns NPC overhauls and dialogue expansions that include adult co
 
 ### Options
 
-- **Rigma - A male NPC overhaul** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168535> — a male NPC overhaul with a focus on attractiveness while maintaining lore-friendly aesthetics. Designed to pair with the CBBE-based female overhauls already in the list and the HIMCO male body. Includes SOS support and vanilla-facegen compatibility. → `15`
-- **Rigma - KS Hairdos patch** — adds KS Hairdos hairstyles to the Rigma NPC records. → `15`
-- **Shrooms of Solstheim - A Mushroom Overhaul** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120050> — visual upgrade for Solstheim's flora. Adjacent to adult content primarily because the niche overlaps with the user's visual style preferences for the adult-content layer. → `15`
+- **Rigma - A male NPC overhaul** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168535> — a male NPC overhaul with a focus on attractiveness while maintaining lore-friendly aesthetics. Designed to pair with the CBBE-based female overhauls already in the list and the HIMCO male body. Includes SOS support and vanilla-facegen compatibility. → `Adult Content`
+- **Rigma - KS Hairdos patch** — adds KS Hairdos hairstyles to the Rigma NPC records. → `Adult Content`
+- **Shrooms of Solstheim - A Mushroom Overhaul** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120050> — visual upgrade for Solstheim's flora. Adjacent to adult content primarily because the niche overlaps with the user's visual style preferences for the adult-content layer. → `Adult Content`
 
 ### Recommendation
 
-Use **Rigma** as the male NPC overhaul for the adult-content section. It provides the visual baseline for male NPCs in romantic contexts, complementing the female NPC baseline from `modlist-09.md`. Add the KS Hairdos patch for hairstyle variety.
+Use **Rigma** as the male NPC overhaul for the adult-content section. It provides the visual baseline for male NPCs in romantic contexts, complementing the female NPC baseline from `modlist-npcs.md`. Add the KS Hairdos patch for hairstyle variety.
 
 ### Risks & Compatibility
 
-- Rigma conflicts with other male NPC overhauls. If `modlist-09.md` locks a broad male overhaul such as `The Men of Winter`, Rigma must override it on a per-NPC basis, or the two must be reconciled via load order and facegen regeneration.
+- Rigma conflicts with other male NPC overhauls. If `modlist-npcs.md` locks a broad male overhaul such as `The Men of Winter`, Rigma must override it on a per-NPC basis, or the two must be reconciled via load order and facegen regeneration.
 - Rigma relies on SOS body paths; verify the installed SOS and HIMCO versions are compatible with the Rigma body records.
-- Rigma's facegen should not produce dark-face bugs when layered on top of the chosen `modlist-09.md` NPC baseline.
+- Rigma's facegen should not produce dark-face bugs when layered on top of the chosen `modlist-npcs.md` NPC baseline.
 
 ### Acceptance Criteria
 
@@ -103,7 +103,7 @@ Use **Rigma** as the male NPC overhaul for the adult-content section. It provide
 - The male NPC visual baseline supports romantic and social scenes without aesthetic mismatch with the female NPC baseline.
 - SOS compatibility is verified for the installed body framework.
 
-## Dialogue Expansions → `15`
+## Dialogue Expansions → `Adult Content`
 
 ### Core Idea
 
@@ -111,10 +111,10 @@ This subsection owns dialogue-expansion mods that include adult-themed or romant
 
 ### Options
 
-- **The Billy The Goat Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131174> — a novelty companion mod with adult-themed dialogue. Adds a fully-voiced goat companion with a distinct personality and commentary on events. → `15`
-- **Haelga Reimagined** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134046> — a dialogue overhaul for Haelga from Riften's Haelga's Bunkhouse that expands her character and gives her a more modern, romance-suitable dialogue tree. Fits the adult-content layer's goal of making NPC interactions in inns and social spaces less shallow. → `15`
-- **Soul-Crushing Romance - A Molag Bal Dialogue Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/161686> — a fully-voiced romance dialogue expansion for the House of Horrors quest, adding a romance arc with Molag Bal's priest. → `15`
-- **Blood and Bismuth - A Farkas Dialogue Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171089> — a fully-voiced Farkas dialogue expansion with romance content for the Companions follower. → `15`
+- **The Billy The Goat Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/131174> — a novelty companion mod with adult-themed dialogue. Adds a fully-voiced goat companion with a distinct personality and commentary on events. → `Adult Content`
+- **Haelga Reimagined** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134046> — a dialogue overhaul for Haelga from Riften's Haelga's Bunkhouse that expands her character and gives her a more modern, romance-suitable dialogue tree. Fits the adult-content layer's goal of making NPC interactions in inns and social spaces less shallow. → `Adult Content`
+- **Soul-Crushing Romance - A Molag Bal Dialogue Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/161686> — a fully-voiced romance dialogue expansion for the House of Horrors quest, adding a romance arc with Molag Bal's priest. → `Adult Content`
+- **Blood and Bismuth - A Farkas Dialogue Mod** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171089> — a fully-voiced Farkas dialogue expansion with romance content for the Companions follower. → `Adult Content`
 
 ### Recommendation
 
@@ -124,7 +124,7 @@ Treat **The Billy The Goat Mod** as an optional novelty companion rather than pa
 
 ### Risks & Compatibility
 
-- Dialogue expansions modify the same NPC voice types and dialogue records that `Relationship Dialogue Overhaul` (from `modlist-06.md`) and quest mods from `modlist-08.md` touch. Verify load order resolves all dialogue conflicts.
+- Dialogue expansions modify the same NPC voice types and dialogue records that `Relationship Dialogue Overhaul` (from `modlist-expanded-systems.md`) and quest mods from `modlist-world-content.md` touch. Verify load order resolves all dialogue conflicts.
 - Haelga Reimagined, Soul-Crushing Romance, and Blood and Bismuth all add dialogue to specific NPCs. If another mod in the list also overhaul the same NPC's dialogue, test for broken dialogue trees.
 
 ### Acceptance Criteria
@@ -133,7 +133,7 @@ Treat **The Billy The Goat Mod** as an optional novelty companion rather than pa
 - No broken dialogue trees from dialogue-record conflicts.
 - All content is accessible in third-person with gamepad.
 
-## Additional Content → `15`
+## Additional Content → `Adult Content`
 
 ### Core Idea
 
@@ -141,9 +141,9 @@ This subsection owns standalone adult-content mods that do not fit neatly into t
 
 ### Options
 
-- **Simple Bathing** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159442> — adds player-initiated bathing animations in any water source. Thematically adjacent to adult content (nudity context) but functionally a downtime-roleplay mod. → `15`
+- **Simple Bathing** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159442> — adds player-initiated bathing animations in any water source. Thematically adjacent to adult content (nudity context) but functionally a downtime-roleplay mod. → `Adult Content`
 - **Simple Bathing Soap Addon** — adds soap items to make bathing feel more intentional.
-- **BeeHH - Hentai Henchman** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182069> — adds follower slots (up to 9) and features inspired by adult-content follower frameworks. (Optional, research if this adds stable utility beyond the NFF baseline from `modlist-06.md`.) → `15`
+- **BeeHH - Hentai Henchman** - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/182069> — adds follower slots (up to 9) and features inspired by adult-content follower frameworks. (Optional, research if this adds stable utility beyond the NFF baseline from `modlist-expanded-systems.md`.) → `Adult Content`
 
 ### Recommendation
 
@@ -153,11 +153,11 @@ Keep **BeeHH** as a research item only; do not lock until it proves useful beyon
 
 ### Risks & Compatibility
 
-- Simple Bathing may overlap with `Bathing in Skyrim - Renewed` (from `modlist-06.md`). If both are active, configure them so they do not double-trigger bathing mechanics.
+- Simple Bathing may overlap with `Bathing in Skyrim - Renewed` (from `modlist-expanded-systems.md`). If both are active, configure them so they do not double-trigger bathing mechanics.
 - BeeHH adds follower slot changes that conflict with NFF. If both are active, the follower framework must win for stability; BeeHH should only be used for features NFF does not provide.
 
 ### Acceptance Criteria
 
 - Simple Bathing animations play in third-person with gamepad.
-- No conflict with the survival-layer bathing mod from `modlist-06.md`.
+- No conflict with the survival-layer bathing mod from `modlist-expanded-systems.md`.
 - BeeHH (if adopted) does not break NFF follower management.

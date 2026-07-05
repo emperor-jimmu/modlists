@@ -22,40 +22,40 @@ Run a script that renames each file per the mapping below. Use git mv so history
 
 Mapping:
 ```
-modlist-01.md → modlist-foundations.md
-modlist-02.md → modlist-graphics.md
-modlist-02a.md → modlist-graphics-pgpatcher.md
-modlist-02b.md → modlist-graphics-shaders.md
-modlist-02c.md → modlist-graphics-textures.md
-modlist-02d.md → modlist-graphics-lighting.md
-modlist-02e.md → modlist-graphics-weather.md
-modlist-02f.md → modlist-graphics-terrain.md
-modlist-02g.md → modlist-graphics-characters.md
-modlist-02h.md → modlist-graphics-lod.md
-modlist-03.md → modlist-ui.md
-modlist-04.md → modlist-animations.md
-modlist-05.md → modlist-third-person.md
-modlist-06.md → modlist-expanded-systems.md
-modlist-06a.md → modlist-expanded-character.md
-modlist-06b.md → modlist-expanded-magic.md
-modlist-06c.md → modlist-expanded-survival.md
-modlist-06d.md → modlist-expanded-crafting.md
-modlist-06e.md → modlist-expanded-followers.md
-modlist-07.md → modlist-world-feel.md
-modlist-08.md → modlist-world-content.md
-modlist-09.md → modlist-npcs.md
-modlist-10.md → modlist-audio.md
-modlist-11.md → modlist-survival-combat.md
-modlist-12.md → modlist-lotd.md
-modlist-13.md → modlist-curation.md
-modlist-14.md → modlist-performance.md
-modlist-14a.md → modlist-performance-strategy.md
-modlist-14b.md → modlist-performance-optimization.md
-modlist-14c.md → modlist-performance-tools.md
-modlist-14d.md → modlist-performance-patches.md
-modlist-14e.md → modlist-performance-testing.md
-modlist-15.md → modlist-adult.md
-modlist-16.md → modlist-voicing.md
+modlist-foundations.md → modlist-foundations.md
+modlist-graphics.md → modlist-graphics.md
+modlist-graphics-pgpatcher.md → modlist-graphics-pgpatcher.md
+modlist-graphics-shaders.md → modlist-graphics-shaders.md
+modlist-graphics-textures.md → modlist-graphics-textures.md
+modlist-graphics-lighting.md → modlist-graphics-lighting.md
+modlist-graphics-weather.md → modlist-graphics-weather.md
+modlist-graphics-terrain.md → modlist-graphics-terrain.md
+modlist-graphics-characters.md → modlist-graphics-characters.md
+modlist-graphics-lod.md → modlist-graphics-lod.md
+modlist-ui.md → modlist-ui.md
+modlist-animations.md → modlist-animations.md
+modlist-third-person.md → modlist-third-person.md
+modlist-expanded-systems.md → modlist-expanded-systems.md
+modlist-expanded-character.md → modlist-expanded-character.md
+modlist-expanded-magic.md → modlist-expanded-magic.md
+modlist-expanded-survival.md → modlist-expanded-survival.md
+modlist-expanded-crafting.md → modlist-expanded-crafting.md
+modlist-expanded-followers.md → modlist-expanded-followers.md
+modlist-world-feel.md → modlist-world-feel.md
+modlist-world-content.md → modlist-world-content.md
+modlist-npcs.md → modlist-npcs.md
+modlist-audio.md → modlist-audio.md
+modlist-survival-combat.md → modlist-survival-combat.md
+modlist-lotd.md → modlist-lotd.md
+modlist-curation.md → modlist-curation.md
+modlist-performance.md → modlist-performance.md
+modlist-performance-strategy.md → modlist-performance-strategy.md
+modlist-performance-optimization.md → modlist-performance-optimization.md
+modlist-performance-tools.md → modlist-performance-tools.md
+modlist-performance-patches.md → modlist-performance-patches.md
+modlist-performance-testing.md → modlist-performance-testing.md
+modlist-adult.md → modlist-adult.md
+modlist-voicing.md → modlist-voicing.md
 ```
 
 - [ ] **Step 2: Commit**
@@ -86,7 +86,7 @@ Build a PowerShell script that performs the following replacements in every cont
 3. **Section index links in modlist.md:**
    Pattern: `- ``NN`` → [Name](modlist-NN.md)`
    Replace with: `- ``Flat Name`` → [Name](modlist-flat-name.md)`
-   Also update sub-indent entries (e.g., `  - ``02a`` → [PGPatcher](modlist-02a.md)` → `  - ``PGPatcher`` → [PGPatcher](modlist-graphics-pgpatcher.md)`)
+   Also update sub-indent entries (e.g., `  - ``Graphics - PGPatcher`` → [PGPatcher](modlist-graphics-pgpatcher.md)` → `  - ``PGPatcher`` → [PGPatcher](modlist-graphics-pgpatcher.md)`)
 
 4. **File reference links:**
    Pattern: `(modlist-NN.md)` or `](modlist-NN.md)`
@@ -240,39 +240,39 @@ Each file gets its own task. The rewrite pattern for each subsection is:
    - `### Alternatives` — list serious alternatives not chosen
    - `### Notes` — specific/actionable compatibility and testing notes
 
-Files that have already been rewritten (modlist-09.md, modlist-02b.md) only need separator reference updates — they already use the new Baseline/Alternatives/Notes structure based on the AGENTS.md guidance.
+Files that have already been rewritten (modlist-npcs.md, modlist-graphics-shaders.md) only need separator reference updates — they already use the new Baseline/Alternatives/Notes structure based on the AGENTS.md guidance.
 
 Parent overview files (modlist-graphics.md, modlist-expanded-systems.md, modlist-performance.md) keep their current format.
 
 **File priority order (highest impact first):**
-1. modlist-foundations.md (modlist-01.md) — 336 lines, foundational
-2. modlist-animations.md (modlist-04.md) — 420 lines, major section
-3. modlist-third-person.md (modlist-05.md) — 316 lines, major section
-4. modlist-ui.md (modlist-03.md) — 481 lines, locked baseline
-5. modlist-world-content.md (modlist-08.md) — 496 lines, active dev
-6. modlist-world-feel.md (modlist-07.md) — 398 lines, open research
-7. modlist-npcs.md (modlist-09.md) — 362 lines, already restyled, just refs
-8. modlist-expanded-character.md (modlist-06a.md) — 204 lines
-9. modlist-expanded-magic.md (modlist-06b.md) — 115 lines
-10. modlist-expanded-survival.md (modlist-06c.md) — 102 lines
-11. modlist-expanded-crafting.md (modlist-06d.md) — 335 lines
-12. modlist-expanded-followers.md (modlist-06e.md) — 120 lines
-13. modlist-graphics-shaders.md (modlist-02b.md) — 273 lines, already restyled
-14. modlist-graphics-textures.md (modlist-02c.md) — 146 lines
-15. modlist-graphics-characters.md (modlist-02g.md) — 243 lines
-16. modlist-graphics-terrain.md (modlist-02f.md) — 150 lines
-17. modlist-graphics-lighting.md (modlist-02d.md) — 72 lines
-18. modlist-graphics-weather.md (modlist-02e.md) — 119 lines
-19. modlist-graphics-lod.md (modlist-02h.md) — 134 lines
-20. modlist-graphics-pgpatcher.md (modlist-02a.md) — 39 lines
-21. modlist-audio.md (modlist-10.md) — 150 lines
-22. modlist-survival-combat.md (modlist-11.md) — 204 lines
-23. modlist-lotd.md (modlist-12.md) — 180 lines
-24. modlist-performance-strategy.md (modlist-14a.md) — 105 lines
-25. modlist-performance-optimization.md (modlist-14b.md) — 176 lines
-26. modlist-performance-tools.md (modlist-14c.md) — 146 lines
-27. modlist-adult.md (modlist-15.md) — 164 lines
-28. modlist-voicing.md (modlist-16.md) — 124 lines
+1. modlist-foundations.md (modlist-foundations.md) — 336 lines, foundational
+2. modlist-animations.md (modlist-animations.md) — 420 lines, major section
+3. modlist-third-person.md (modlist-third-person.md) — 316 lines, major section
+4. modlist-ui.md (modlist-ui.md) — 481 lines, locked baseline
+5. modlist-world-content.md (modlist-world-content.md) — 496 lines, active dev
+6. modlist-world-feel.md (modlist-world-feel.md) — 398 lines, open research
+7. modlist-npcs.md (modlist-npcs.md) — 362 lines, already restyled, just refs
+8. modlist-expanded-character.md (modlist-expanded-character.md) — 204 lines
+9. modlist-expanded-magic.md (modlist-expanded-magic.md) — 115 lines
+10. modlist-expanded-survival.md (modlist-expanded-survival.md) — 102 lines
+11. modlist-expanded-crafting.md (modlist-expanded-crafting.md) — 335 lines
+12. modlist-expanded-followers.md (modlist-expanded-followers.md) — 120 lines
+13. modlist-graphics-shaders.md (modlist-graphics-shaders.md) — 273 lines, already restyled
+14. modlist-graphics-textures.md (modlist-graphics-textures.md) — 146 lines
+15. modlist-graphics-characters.md (modlist-graphics-characters.md) — 243 lines
+16. modlist-graphics-terrain.md (modlist-graphics-terrain.md) — 150 lines
+17. modlist-graphics-lighting.md (modlist-graphics-lighting.md) — 72 lines
+18. modlist-graphics-weather.md (modlist-graphics-weather.md) — 119 lines
+19. modlist-graphics-lod.md (modlist-graphics-lod.md) — 134 lines
+20. modlist-graphics-pgpatcher.md (modlist-graphics-pgpatcher.md) — 39 lines
+21. modlist-audio.md (modlist-audio.md) — 150 lines
+22. modlist-survival-combat.md (modlist-survival-combat.md) — 204 lines
+23. modlist-lotd.md (modlist-lotd.md) — 180 lines
+24. modlist-performance-strategy.md (modlist-performance-strategy.md) — 105 lines
+25. modlist-performance-optimization.md (modlist-performance-optimization.md) — 176 lines
+26. modlist-performance-tools.md (modlist-performance-tools.md) — 146 lines
+27. modlist-adult.md (modlist-adult.md) — 164 lines
+28. modlist-voicing.md (modlist-voicing.md) — 124 lines
 
 For each task:
 - [ ] Read current file content
