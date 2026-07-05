@@ -24,7 +24,7 @@ Build a stable technical base for `Elder Wilds` before choosing large visual or 
 
 ## Research Tasks
 
-- Select the animation-related engine fixes the final stack needs, coordinated with `modlist-03.md`
+- Select the animation-related engine fixes the final stack needs, coordinated with `modlist-04.md`
 
 ## Official Masters Cleanup
 

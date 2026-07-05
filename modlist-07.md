@@ -60,10 +60,10 @@
 - Start with `Carriage and Ferry Travel Overhaul` as the strongest first-pass answer because it improves the vanilla public-travel layer directly without forcing the list into a harsher fast-travel philosophy by default. → `07a`
 - Keep `Carriage Stops of Skyrim` as the meaningful comparison if the project wants travel infrastructure itself to feel broader and more present in the world. → `07a`
 - Keep `Fast Travel Cost` as the deliberate economic-pressure branch if the real question is map fast travel remaining available but no longer consequence-free. → `07a`
-- Keep `Campfire` as the complementary camping-and-rest branch that affects travel pacing through a different mechanism: the player must plan campsites, manage rest, and cook in the field rather than relying only on carriages or inns. `Campfire` is already in the expanded-systems survival conversation from `modlist-05.md` but matters here as a travel-pacing tool regardless of which survival framework the list selects. → `07a`
+- Keep `Campfire` as the complementary camping-and-rest branch that affects travel pacing through a different mechanism: the player must plan campsites, manage rest, and cook in the field rather than relying only on carriages or inns. `Campfire` is already in the expanded-systems survival conversation from `modlist-06.md` but matters here as a travel-pacing tool regardless of which survival framework the list selects. → `07a`
 - Add `Carriage Drivers Are Alive` as the carriage-driver character layer — names, schedules, and dialogue make the carriage loop feel inhabited rather than mechanical. → `07a`
 - Add `Carriages and Stables Dialogue Bundle` as the dialogue companion — bribes, rumors, and destination chat complement the driver-personality layer from `Carriage Drivers Are Alive`. The two stack cleanly because one adds character records and the other adds dialogue. → `07a`
-- Keep this subsection focused on travel structure and carriage or ferry policy rather than survival maintenance from `modlist-05.md` or map ownership from `modlist-06.md`. → `07a`
+- Keep this subsection focused on travel structure and carriage or ferry policy rather than survival maintenance from `modlist-06.md` or map ownership from `modlist-03.md`. → `07a`
 
 ### Risks & Compatibility
 
@@ -229,7 +229,7 @@
 - Add `Butterflies Land True` as a lightweight insect-behavior layer. It makes butterflies land on surfaces rather than hovering indefinitely — a small visual and behavioral upgrade that makes the wilderness feel more biologically grounded without affecting gameplay or adding scripts. → `07c`
 - Keep `Savage Skyrim` as the deliberate heavier branch only if the list truly wants wilderness creatures to become much more threatening and physically intense as part of the world-feel identity. → `07c`
 - Consider `Frogs - Mihail Monsters and Animals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120998> as a lightweight creature ambient addition. Adds harmless frogs (4 variants) in lakes and puddles with new food items (frog legs). ESL-flagged, 2,986 endorsements, lore-friendly, negligible performance impact. → `07c`
-- Keep creature-animation ownership in `modlist-03.md`, encounter-density ownership earlier in section 07, and broader world-content additions in later sections. → `07c`
+- Keep creature-animation ownership in `modlist-04.md`, encounter-density ownership earlier in section 07, and broader world-content additions in later sections. → `07c`
 
 ### Risks & Compatibility
 
@@ -380,6 +380,8 @@
 ### Timescale & Travel → `07a`
 
 - `Extended Stay - Longer inn` — inn stay duration extension → `07a`
+- `Sleep Tight SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/20680>) — NPCs follow sleep schedules and wear sleepwear at night, reinforcing believable daily routines → `07a`
+- `Sleep Tight - NPCs wear underwear or lingerie` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87132>) — NPCs wear underwear beneath their clothes, adding immersion when clothes are removed or in sleep situations. CBBE 3BA and HIMBO. → `07a`
 
 ### Nights & Wildlife → `07c`
 

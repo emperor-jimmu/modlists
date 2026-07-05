@@ -14,30 +14,30 @@
 
 ### Graphics section (02a–02h) — split from current 02b
 
-| File | Title | Source | Est. size |
-|------|-------|--------|-----------|
-| `modlist-02a.md` | PGPatcher | Current 02a, intro from 02b | ~40 lines |
-| `modlist-02b.md` | Community Shaders | 02b sections: CS Core + Add-ons + Parallax + PBR | ~250 lines |
-| `modlist-02c.md` | Textures & Meshes | 02c sections: mesh improvements, entity replacers, blood | ~120 lines |
-| `modlist-02d.md` | Lighting | 02d section: Lighting Overhaul Strategy | ~50 lines |
-| `modlist-02e.md` | Weather & Water | 02e sections: weather, sky, stars, water | ~140 lines |
-| `modlist-02f.md` | Terrain & Flora | 02f sections: terrain, roads, snow, flora, trees | ~200 lines |
-| `modlist-02g.md` | Characters & Creatures | 02g sections: body, skin, creatures, hair, skeleton | ~280 lines |
-| `modlist-02h.md` | LOD & Distant Detail | 02h section: LOD generation workflow | ~100 lines |
+| File             | Title                  | Source                                                   | Est. size  |
+|------------------|------------------------|----------------------------------------------------------|------------|
+| `modlist-02a.md` | PGPatcher              | Current 02a, intro from 02b                              | ~40 lines  |
+| `modlist-02b.md` | Community Shaders      | 02b sections: CS Core + Add-ons + Parallax + PBR         | ~250 lines |
+| `modlist-02c.md` | Textures & Meshes      | 02c sections: mesh improvements, entity replacers, blood | ~120 lines |
+| `modlist-02d.md` | Lighting               | 02d section: Lighting Overhaul Strategy                  | ~50 lines  |
+| `modlist-02e.md` | Weather & Water        | 02e sections: weather, sky, stars, water                 | ~140 lines |
+| `modlist-02f.md` | Terrain & Flora        | 02f sections: terrain, roads, snow, flora, trees         | ~200 lines |
+| `modlist-02g.md` | Characters & Creatures | 02g sections: body, skin, creatures, hair, skeleton      | ~280 lines |
+| `modlist-02h.md` | LOD & Distant Detail   | 02h section: LOD generation workflow                     | ~100 lines |
 
 ### Renumbered sections (moved slots)
 
-| New slot | File | Content | Moved from |
-|----------|------|---------|------------|
-| 03 | `modlist-03.md` | Modernized UI | current 06 |
-| 04 | `modlist-04.md` | Animations & Movement | current 03 |
-| 05 | `modlist-05.md` | Third-Person Gameplay | current 04 |
-| 06 | `modlist-06.md` | Expanded Systems | current 05 |
-| 12 | `modlist-12.md` | Legacy of the Dragonborn | current 13 |
-| 13 | `modlist-13.md` | Modlist Curation & Testing | current 14 |
-| 14 | `modlist-14.md` | Performance & Technical Workflow | current 15 |
-| 15 | `modlist-15.md` | Adult Content | current 16 |
-| 16 | `modlist-16.md` | Main Character Voicing | current 17 |
+| New slot | File            | Content                          | Moved from |
+|----------|-----------------|----------------------------------|------------|
+| 03       | `modlist-03.md` | Modernized UI                    | current 06 |
+| 04       | `modlist-04.md` | Animations & Movement            | current 03 |
+| 05       | `modlist-05.md` | Third-Person Gameplay            | current 04 |
+| 06       | `modlist-06.md` | Expanded Systems                 | current 05 |
+| 12       | `modlist-12.md` | Legacy of the Dragonborn         | current 13 |
+| 13       | `modlist-13.md` | Modlist Curation & Testing       | current 14 |
+| 14       | `modlist-14.md` | Performance & Technical Workflow | current 15 |
+| 15       | `modlist-15.md` | Adult Content                    | current 16 |
+| 16       | `modlist-16.md` | Main Character Voicing           | current 17 |
 
 ### Unchanged (no renumbering needed)
 
@@ -55,6 +55,7 @@
 ### Phase 2: Renumber content files
 
 For the shift 06→03, 03→04, 04→05, 05→06:
+
 1. Save content from current 05 (Expanded Systems) → staging
 2. Save content from current 04 (Third-Person) → staging
 3. Save content from current 03 (Animations) → staging
@@ -64,6 +65,7 @@ For the shift 06→03, 03→04, 04→05, 05→06:
 7. Write staged 05 (Expanded Systems) content to `modlist-06.md`
 
 For the shift 13→12, 14→13, 15→14, 16→15, 17→16:
+
 1. Read current 17 (Voicing) → write to `modlist-16.md`
 2. Read current 16 (Adult Content) → write to `modlist-15.md`
 3. Read current 15 (Performance) → write to `modlist-14.md`
@@ -73,6 +75,7 @@ For the shift 13→12, 14→13, 15→14, 16→15, 17→16:
 ### Phase 3: Delete old files
 
 Remove the old-numbered files that are now superseded:
+
 - Delete `modlist-06.md` (old UI — content moved to new 03)
 - Actually, the old 03–06 and 13–17 files still exist at their old paths — we need to delete the old-named ones
 
@@ -86,6 +89,7 @@ Wait, I need to think about this more carefully. The content moves between files
 So actually all file paths already exist — we just overwrite them with shifted content. No delete needed for 03-06.
 
 For 13-17:
+
 - `modlist-12.md` exists (stub saying "moved to 01") → gets new content (Legacy from old 13)
 - `modlist-13.md` → gets Curation content (from old 14)
 - `modlist-14.md` → gets Performance content (from old 15)

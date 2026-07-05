@@ -1,419 +1,481 @@
-# Animations and Movement
+# Modernized UI
 
-**MO2 Separator:** `03 Animations` → `03a Framework`, `03b Movement & Idles`, `03c Combat`, `03d Interactions & Traversal`, `03e Creatures`
+**MO2 Separator:** `06 UI` → `06a Framework & HUD`, `06b Inventory & Items`, `06c Map, Dialogue, Menus`
 
-## Pandora Framework And Prerequisites → `03a Framework`
-
-### Core Idea
-
-- `Pandora` is the behavior-engine foundation for the animation stack. → `03a`
-- This subsection locks the generator, MO2 output handling, and the rule that animation generation is validated before large content packs are layered on top.
-
-### Options
-
-- `Pandora Behaviour Engine Plus` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/133232> → `03a`
-- `Universal Behaviour Runtime - Auto Skeleton Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176724> — SKSE plugin by Monitor221hz that patches humanoid and creature skeleton behaviour at runtime, removing the need for behaviour-engine-level skeleton patching. Hard-requires `Address Library for SKSE Plugins` (already in the foundation layer) and `XPMSSE` (or any skeleton mod). Pandora lists this as required when using XPMSSE or other skeleton mods. 2,320 endorsements, v1.0.4. → `03a`
-- `A-Pose Bug Fix - Universal Behavior Runtime` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/168903> — SKSE plugin by Monitor221hz that intercepts A-pose-causing errors at runtime and adds out-of-the-box LE animation/behavior backward compatibility via just-in-time HKX conversion. Required by Pandora only if you need LE mod backward compatibility, but also provides general A-pose protection that is valuable in any modlist. Hard-requires `Address Library for SKSE Plugins` (already in the foundation layer). 5,094 endorsements, v1.1.0-a. → `03a`
-- Legacy context only: `FNIS` and `Nemesis` format support matters because later animation packs may still ship with those assumptions, but they are not the preferred generator choice for `Elder Wilds`. → `03a`
-
-### Recommendation
-
-- Use `Pandora Behaviour Engine Plus` as the single behavior-generation owner for the list. → `03a`
-- Install `Universal Behaviour Runtime - Auto Skeleton Patch` as a hard companion to Pandora — it is explicitly required when using `XPMSSE`, which is the locked skeleton baseline. Do NOT tick the Pandora XPMSSE patch checkbox; the runtime patch handles skeleton behaviour more stably. → `03a`
-- Install `A-Pose Bug Fix - Universal Behavior Runtime` as a strongly recommended companion. Even if the list avoids LE-native animation mods, the runtime A-pose interception protects against animation-loading edge cases that can otherwise cause character freezes. → `03a`
-- Register Pandora as a dedicated MO2 executable and keep generated files in a separate output mod such as `Pandora Output`. → `03a`
-- Validate the current install guide and requirements tab during install instead of carrying forward older setup advice.
-
-### Risks & Compatibility
-
-- Leaving old generated output active or mixing generator workflows makes later debugging much harder.
-- Skipping `Auto Skeleton Patch` while using `XPMSSE` causes skeleton blending issues: hand-not-moving-while-casting-in-motion, broken block animation while strafing, wonky bow animations, character freezing, and CTDs. → `03a`
-- `Pandora` supporting older mod formats does not guarantee every legacy setup will be conflict-free without testing. → `03a`
-- Installing major locomotion, combat, or creature packs before the generator baseline is proven blurs whether the framework or the content is actually failing.
-
-### Acceptance Criteria
-
-- `Pandora Behaviour Engine Plus`, `Universal Behaviour Runtime - Auto Skeleton Patch`, and `A-Pose Bug Fix - Universal Behavior Runtime` are all installed cleanly in `Mod Organizer 2`. → `03a`
-- A baseline patch pass completes without framework-level errors.
-- Generated behavior output is isolated in a dedicated MO2 output mod.
-- The Pandora XPMSSE patch checkbox is deliberately left unticked because `Auto Skeleton Patch` handles skeleton behaviour at runtime. → `03a`
-
-## Skeleton And Behavior Prerequisites → `03a Framework`
+## UI Framework Prerequisites → `06a Framework & HUD`
 
 ### Core Idea
 
-- This subsection locks the low-level skeleton and physics assumptions that later locomotion, combat, and body-aware animation mods depend on.
-- The baseline must support `Pandora`, the chosen `CBBE 3BA (3BBB)` route, and later third-person animation work without forcing an SMP-heavy stack too early. → `03a`
+- This subsection owns the base menu and interface framework that the rest of the UI stack builds on.
+- It should decide infrastructure first without collapsing HUD styling, inventory redesign, map replacements, or controller support into one giant UI choice.
 
 ### Options
 
-- `XP32 Maximum Skeleton Special Extended - XPMSSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1988> → `03a`
-- `XP32 Maximum Skeleton Special Extended - Fixed Scripts` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/44252> — companion script fix applied over the main skeleton; requires XPMSSE (1988) as a hard dependency → `03a`
-- `CBPC - Physics with Collisions for SSE and VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/21224> → `03a`
-- `FSMP - Faster HDT-SMP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57339> → `03a`
-- `ConsoleUtilSSE NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76649> → `03a`
+- Core baseline route: `SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12604> → `06a`
+- Support-framework route: `UIExtensions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17561> → `06a`
+- Grim-dark visual overhaul: `Oathvein UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/160916> → `06a`
+- Modern-rustic visual overhaul: `Norden UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/166086> → `06a`
+- Morrowind-inspired dark-elven UI: `Vel'dun UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176230> → `06a`
+- Next-gen web-UI framework branch: `Prisma UI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148718> → `06a`
 
 ### Recommendation
 
-- Use `XPMSSE` as the single skeleton baseline. → `03a`
-- Use `CBPC` as the default first-pass physics layer for the chosen `CBBE 3BA (3BBB)` setup. → `03a`
-- Use `FSMP - Faster HDT-SMP` alongside CBPC for SMP physics coverage. The adult animation framework (OStim Standalone, `modlist-16.md`) benefits from SMP body physics during scenes, and SMP is also needed by some outfits and creature features later in the stack. Running both physics layers is standard for current 3BA setups — CBPC handles broad collision and SMP handles finer mesh deformation. → `03a`
-- Keep `ConsoleUtilSSE NG` available for script-dependent ecosystem pieces that still expect it on current runtime versions. → `03a`
+- Start with `SkyUI` as the non-negotiable baseline. → `06a`
+- Treat `UIExtensions` as support infrastructure where later chosen mods need it rather than as a competing UI identity. → `06a`
+- Set `Oathvein UI` as the locked visual direction. `Oathvein UI`, `Norden UI`, and `Vel'dun UI` are all by the same author (`Nithog`) and all actively maintained, but `Oathvein` is the chosen path for `Elder Wilds`: its grim-dark presentation matches the project tone better, its dependency chain is cleaner than `Norden UI`'s `Extended UI` requirement, and its general-purpose dark fantasy aesthetic is a better fit for Skyrim's identity than `Vel'dun UI`'s focused Morrowind-inspired Dunmer theming. → `06a`
+- Keep `Prisma UI` as a documented next-gen framework comparison rather than the default choice. It is a web-UI framework that replaces `SkyUI` rather than extending it, which makes it incompatible with the `Oathvein UI` visual direction and with most UIExtensions-based mods from later subsections. Locked baseline stays `SkyUI` + `Oathvein UI`; `Prisma UI` is documented for projects that want to pursue the framework-replacement path instead of the visual-overhaul path. → `06a`
+- Keep `TrueHUD` scoped to gameplay/UI boundary as a combat-feedback companion, not a framework decision. → `06a`
+- Add `Constructible Object Custom Keyword System (COCKS)` as the crafting-menu category infrastructure baseline. It owns the keyword-based category structure that underpins the crafting-menu readability improvements in the Crafting Menu Improvements subsection. Locked alongside the other framework picks here rather than buried in the crafting subsection alone. → `06a`
+- Add `MCM Helper` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53000> as a UI framework prerequisite. It persists MCM settings across saves and new games, and is a hard dependency of `True Directional Movement`, `Compass Navigation Overhaul`, and several other mods already in the stack. → `06a`
+- Add `Stay At The System Page NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76927> as a menu-behaviour QoL mod. Keeps the System page open after loading a save so the player can continue navigating (Settings, Save, Quit) without reopening the menu. Most noticeable on gamepad where reopening the menu is slower. → `06a`
 
 ### Risks & Compatibility
 
-- Mixing skeleton solutions or old script loaders can break both animation and body systems in ways that are hard to trace.
-- Body, outfit, and animation mods can all appear to install cleanly while still disagreeing on skeleton assumptions underneath.
-- Locking into a heavier SMP-first stack too early adds maintenance and performance cost before the payoff is proven.
+- Visual-theme choices can get mistaken for infrastructure requirements too early.
+- `Norden UI`'s dependency on `Extended UI` adds a fragile third-party link with no official SE port. → `06a`
+- A highly stylized framework can look distinctive while weakening readability in ordinary play.
 
 ### Acceptance Criteria
 
-- `XPMSSE` is the clear single skeleton baseline. → `03a`
-- `CBPC` and the chosen `CBBE 3BA (3BBB)` setup coexist cleanly on the active Steam `1.6.1170` profile. → `03a`
-- `Pandora` still generates behaviors cleanly after the skeleton and baseline body-physics layer are in place. → `03a`
+- `modlist-03.md` has one clear UI framework baseline: `SkyUI` + `Oathvein UI`. → `06a`
+- The role of `UIExtensions` is explicit as support infrastructure rather than a competing full UI direction. → `06a`
+- The visual baseline is narrowed to `Oathvein UI` with a clear rationale for why it fits `Elder Wilds` over `Norden UI` and `Vel'dun UI`. → `06a`
+- `COCKS` is locked as the crafting-menu category infrastructure baseline alongside the other framework picks. → `06a`
 
-## Parkour, Climbing, And Free-Form Movement → `03d Interactions & Traversal`
+## HUD Overhaul → `06a Framework & HUD` → `06a`
 
 ### Core Idea
 
-- This subsection owns whether `Elder Wilds` adds a true parkour and climbing layer on top of vanilla movement, or stays with the locked vanilla / `True Directional Movement` / sprint-and-jump stack. → `03d`
-- The goal is to expand how the player traverses the world vertically and laterally without breaking the third-person camera work in `modlist-04.md`, the animation ownership in this section, or the survival pacing from `modlist-05.md`. → `03d`
-- Parkour is a major movement-framework decision, so it stays in its own subsection rather than being absorbed by the dodge or sprint layers.
+- This subsection owns the main on-screen HUD layer: health, stamina, magicka, target readability, and how much permanent interface structure should remain visible during ordinary play.
+- It should improve readability and tone without absorbing the later compass, marker, or minimal-HUD question.
 
 ### Options
 
-- Procedural parkour and climbing baseline: `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/132292> → `03d`
-- Climbing-first alternative route: `SkyClimb` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97253> → `03d`
-- Balance-assist companion: `Beam Walking Assist` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175511> → `03d`
-- Structured jump-over-obstacles route: `RaySense - Jumping over obstacles` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175506> → `03d`
-- Animation-selection patch for the above: `Open Animation Replacer - RaySense` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175498> → `03d`
-- Edge-lookdown animation route: `RaySense - Edge Lookdown` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175514> — triggers a look-down animation when the player approaches a cliff edge. Requires `Open Animation Replacer` (already the baseline). OAR-based, companion to the `RaySense` jumping pair. → `03d`
-- Movement-physics optional: `Inertia - Physical Movement Response System - SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172783> (v1.2.0, Feb 2026) — adds body lean, momentum, and weight to the player character's third-person movement. SKSE plugin that modifies how the character's upper body responds to directional changes, stops, and turns. Compatible with all animation packs and the chosen parkour framework. Evaluate after the core movement and parkour baselines are locked. → `03d`
-- Discipline-first route: rely on vanilla climbing, `True Directional Movement`, sprint, and jump from this section and `modlist-04.md` only, with no dedicated parkour framework. → `03d`
-- Deferred high-commitment branch: do not adopt a full parkour framework until later movement and animation work is stable, because the parkour ecosystem has many overlapping derivatives and lock-in decisions are hard to reverse.
+- Layout-control route: `SkyHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/463> → `06a`
+- Feedback-companion route: `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> → `06a`
+- Framework-led route: let `Oathvein UI` carry most of the HUD styling identity. → `06a`
+- Stats-overlay route: `Stats Tracker Menu - STM` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/180653> → `06a`
 
 ### Recommendation
 
-- Use `SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)` as the procedural parkour and climbing baseline. It adds a procedural climbing and parkour system that lets the player vault, climb, and traverse environmental geometry (10,112 endorsements, 432K unique downloads, v3.5.4). It is the most-endorsed parkour framework on Nexus and has a meaningful community track record. → `03d`
-- Keep `SkyClimb` as the deliberate alternative if the list wants procedural ledge climbing built around `EVG Animated Traversal` more than it wants the broader `SkyParkour` movement identity. It solves a narrower problem more directly, but that also means it overlaps with the baseline enough that both should not be treated as cumulative core picks. → `03d`
-- Keep `Beam Walking Assist` as a documented balance-assist companion rather than a baseline. It helps the player stay on narrow beams and ledges during parkour traversal, which is a usability gap in vanilla and a common frustration once parkour is enabled. Add it only after the parkour baseline is locked in and only if real traversal testing shows beam-walking is annoying. → `03d`
-- Keep `RaySense - Jumping over obstacles` and its dependency `Open Animation Replacer - RaySense` as a documented structured-jump companion pair rather than a baseline. `RaySense` is a different movement philosophy from `SkyParkour`: instead of procedural climbing and vaulting, it detects obstacles the player is about to run into and triggers a context-appropriate jump-over animation selected by obstacle height via the OAR behavior patch. The two are complementary rather than competing, but `RaySense` is brand new (901 endorsements on the main mod, 1,453 on the OAR patch) with limited community track record, so lock it in only if real playtesting shows the procedural parkour baseline leaves common obstacles feeling awkward to clear. Load `Open Animation Replacer - RaySense` only as a dependency of `RaySense`; it does not belong in the load order without the parent mod. → `03d`
-- Keep `RaySense - Edge Lookdown` as a documented edge-awareness animation companion rather than a baseline. It adds a subtle look-down animation when the player nears cliff edges, reinforcing grounded third-person traversal without adding gameplay systems. Add it only after the parkour baseline is proven and only if edge-drop moments are a noticeable part of the travel experience. → `03d`
-- Keep the discipline-first route alive only if the rest of the movement and animation stack is still being settled, because parkour is a major ownership decision that affects jump height, animation behavior, and camera expectations.
-- Keep the deferred high-commitment branch alive if the project wants to see the full movement and animation stack working before adding parkour on top, since parkour layers often need to be tuned in light of the chosen animation and camera baselines.
-- Keep this subsection separate from `modlist-04.md` dodge, sprint, and movement-responsiveness ownership, and from the third-person camera subsection. Parkour is a vertical-and-lateral movement system, not a combat responsiveness or camera framework. → `03d`
+- Start with `SkyHUD` as the baseline HUD layout framework. It handles widget positioning, visibility control, and style consistency across screen sizes. → `06a`
+- Add `TrueHUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/62775> as the dedicated combat-feedback companion. `TrueHUD` is by the same author as `True Directional Movement` (already in `modlist-05.md`), has `59,281` endorsements and over `2 million` unique downloads, and provides actor info bars, boss bars, player widgets, and recent-loot logging. It was last updated `December 2023` (feature-complete). Keep `TrueHUD` scoped to combat-feedback additions only, not as a competing HUD framework. → `06a`
+- Add `Casting Bar` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80455> as a small, focused cast-and-draw timing companion. It solves a real readability gap for spells, shouts, and bow draw without trying to become another full HUD framework, so it fits naturally next to `SkyHUD` and `TrueHUD` rather than competing with them. → `06a`
+- Keep `Stats Tracker Menu - STM` as a documented stats-overlay companion rather than a baseline. It is brand new (v1.0.1, May 2026) with very low community signal, so lock it in only after playtesting confirms it does not fight `SkyHUD` widget positioning or `TrueHUD` combat feedback. If accepted, it lives next to those two as a third scoped addition (stats display), not a replacement for either. → `06a`
+- Add `Floating Damage` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14332> as an optional combat-feedback overlay. Displays floating damage numbers above hit targets with configurable color, size, duration, and position via `FloatingDamage.ini`. Useful for build-testing and damage-visibility feedback but potentially at odds with the minimal-HUD presentation pillar. Keep optional — install only after playtesting confirms the visual noise level is acceptable alongside the chosen HUD stack. → `06a`
+- Let the final visual tone come primarily from the chosen `Oathvein UI` direction. → `06a`
+- Keep compass density, marker philosophy, and minimal-HUD experimentation for the later dedicated subsection.
 
 ### Risks & Compatibility
 
-- A parkour framework can change jump height, ledge detection, and climb animation, which can interact with `XPMSSE` and `True Directional Movement`. Verify the parkour framework plays nicely with the chosen skeleton and movement baselines. → `03d`
-- `SkyClimb` and `SkyParkour v3` should be treated as competing traversal owners rather than harmless companions. Installing both would make climbing behavior harder to reason about instead of cleaner. → `03d`
-- Procedural parkour can expose navmesh gaps in older worldspace content mods. Test on the locked `modlist-08.md` worldspace picks before treating parkour as a stable part of the baseline. → `03d`
-- Parkour is fun but can trivialize early-game exploration if the player is too mobile too soon. Tune the framework's MCM to match the survival and travel pacing in `modlist-05.md` and `modlist-07.md`. → `03d`
+- Weak combat readability can tempt the section into solving everything with extra HUD noise.
+- Combat-feedback widgets can quietly take over the whole HUD philosophy if not kept scoped.
+- Smaller feedback widgets like `Casting Bar` are useful precisely because they are narrow; avoid stacking too many narrow overlays until the screen starts feeling busier instead of clearer. → `06a`
+- `Stats Tracker Menu` is brand new with no community validation; if it breaks, the player loses a non-essential overlay. Keep it scoped to stats display only and verify it does not move `SkyHUD` widgets. → `06a`
+- The HUD layer can drift into later compass and marker ownership if the boundary is not kept explicit.
 
 ### Acceptance Criteria
 
-- `Elder Wilds` has one clear parkour framework baseline or a deliberate discipline-first decision. → `03d`
-- Parkour movement feels like a natural extension of vanilla traversal rather than a separate game mode.
-- The chosen framework does not fight the locked `XPMSSE`, `True Directional Movement`, or third-person camera baselines. → `03d`
-- `SkyClimb` is documented as the main alternative climbing route with explicit pros and cons instead of being implied as a second baseline.
+- `modlist-03.md` has `SkyHUD` as the HUD-layout baseline and `TrueHUD` as the combat-feedback companion, with clear role separation. → `06a`
+- `Casting Bar` is documented as a narrow casting-and-draw readability companion, not as a second HUD framework. → `06a`
+- `TrueHUD` is documented as a combat-feedback layer, not the whole HUD answer. → `06a`
+- `Stats Tracker Menu` (if accepted) is documented as a stats-overlay companion, not a HUD-framework replacement. → `06a`
+- Compass, markers, and minimal-HUD questions remain clearly deferred.
+
+## Inventory And Item Card Improvements → `06b Inventory & Items`
 
 ### Core Idea
 
-- This subsection chooses the baseline travel feel before combat-specific animation layers are added.
-- The target is grounded, readable third-person movement that fits the wilderness tone instead of flashy showcase locomotion.
+- This subsection owns how item lists, sorting, weight/value scanning, and item-card readability feel during ordinary looting and inventory management.
+- It should make menu-heavy play cleaner and more informative without turning the whole stack into an endless pile of micro-fixes.
 
 ### Options
 
-- Grounded realistic route: `Leviathan Animations II - Male Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/81463> and `Leviathan Animations II - Female Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/80760> → `03d`
-- Alternate grounded male route: `Vanargand Animations II - Male Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/99999> → `03d`
-- Conditional follow-up route: `Conditional Armor Type Animations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51507> → `03d`
-- Traversal companion to evaluate separately: `EVG Animated Traversal` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63232> → `03d`
+- General item-info route: `moreHUD SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12688> → `06b`
+- Information-density route: `moreHUD Inventory Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18619> → `06b`
+- Clean-card route: `SkyUI Item Card Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29116> → `06b`
+- Sorting-and-icon route: `Aura's Inventory Tweaks (More SkyUI Icons Sorting Options and More)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68557> → `06b`
+- Weapon-stat overlay route: `Weapon Stat Viewer V2` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/127249> → `06b`
+- Item-info injection route: `Inventory Interface Information Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85702> — a lightweight SKSE plugin by M8r98a4f2 (same author as moreHUD) that injects extra item information (value, weight, damage, armor rating, value-per-weight) directly into the inventory interface without altering the SkyUI layout or requiring a core UI framework change. Does not make any inventory list invalidation calls. → `06b`
+- Enchantment-icon route: `Dynamic Inventory Icon Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174136> — a utility mod that dynamically loads custom icon textures for enchantment icons, acting as the dependency layer for `Enchanted Icon Overhaul`. → `06b`
+- Optional enchantment-icon route: `Enchanted Icon Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174246> — adds distinct icons for learned, artifact, and learnable enchantments so the player can visually distinguish them at a glance without opening the item card. Depends on `Dynamic Inventory Icon Injector`. → `06b`
+- Icon-quality route: `I4 Armor Icons Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/119824> — replaces all armor icons in SkyUI with higher-fidelity, hand-crafted icons by komegaki. Covers light armor, heavy armor, clothing, shields, and jewelry categories. → `06b`
+- Shout-icon route: `I4 Shout Icons Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/107334> — replaces all shout and dragon language icon textures with higher-fidelity versions by komegaki. Complements the I4 armor and weapon icon family. → `06b`
+- Weapon-icon route: `I4 Weapon Icons Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106432> — replaces all weapon category icons in SkyUI with hand-crafted icons by komegaki. Covers 30+ weapon categories including mod-added types (katana, gun, scythe, crossbow, etc.). Depends on `Inventory Interface Information Injector` for icon injection. → `06b`
+- Comprehensive icon-collection route: `The Handy Icon Collection Collective (THICC)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90508> — a large-scale icon resource providing thousands of high-fidelity icons for weapons, armor, potions, scrolls, ingredients, and misc items. Serves as an icon source for I4-based distribution; zero plugin overhead. Requires `Inventory Interface Information Injector` for standalone I4-based distribution. → `06b`
 
 ### Recommendation
 
-- Start with the grounded `Leviathan Animations II` male and female pair as the control baseline for normal travel. → `03d`
-- Keep `Vanargand Animations II - Male Idle Walk And Run` as the main male-side comparison if `Leviathan` reads too heavy or too old-warrior-coded for the final travel tone. `Vanargand II` keeps the same grounded third-person goal but lands a little cleaner and more modern in ordinary exploration footage, so it is the best current "more animations" addition without changing the section's overall direction. → `03d`
-- Add `Conditional Armor Type Animations` only after the base walk and run feel is accepted on its own. → `03d`
-- Keep `EVG Animated Traversal` in the later interaction/traversal bucket rather than letting it define the core locomotion baseline. → `03d`
+- Make both `moreHUD SE` and `moreHUD Inventory Edition` mandatory baseline picks for the UI stack. → `06b`
+- `moreHUD SE` handles the broader item-information layer outside pure inventory lists, while `moreHUD Inventory Edition` extends that same readability philosophy into the inventory views used constantly during normal play. → `06b`
+- Keep `SkyUI Item Card Fixes` as the cleaner, narrower comparison if the main pain point is item-card presentation discipline rather than more information. → `06b`
+- Keep `Aura's Inventory Tweaks` as the more organizational comparison if the final UI direction proves to need stronger sorting and icon structure rather than just clearer cards and details. → `06b`
+- Keep `Weapon Stat Viewer V2` as a documented weapon-stat overlay companion rather than a baseline. It surfaces weapon damage numbers in real time (so the player can compare weapons without opening menus), and it is more useful than the other options here for the combat-experience pillar. Lock it in only if the chosen UI framework (`SkyUI` + `Oathvein UI`) renders it cleanly; verify it before treating it as part of the locked inventory stack. → `06b`
+- Add `Inventory Interface Information Injector` as a lightweight data-fill companion alongside the moreHUD baseline. By the same author (M8r98a4f2), it adds value, weight, and stat-per-weight columns to inventory views without touching SkyUI layout records or making invalidation calls — zero compatibility risk with `moreHUD`, `Weapon Stat Viewer V2`, or the `Oathvein UI` visual direction. → `06b`
+- Keep `Dynamic Inventory Icon Injector` as the mandatory utility dependency if `Enchanted Icon Overhaul` is selected. It provides the icon-injection infrastructure and has been stable as of mid-2025. → `06b`
+- Add `Enchanted Icon Overhaul` as the optional icon-enhancement branch. It is not part of the mandatory inventory-readability baseline, but it adds genuine scannability value for enchantment-heavy play styles by making the enchantment type visible at a glance. Evaluate after the core inventory stack is stable. → `06b`
+- Add the `I4` icon family (`I4 Armor Icons Overhaul`, `I4 Shout Icons Overhaul`, `I4 Weapon Icons Overhaul`) as the visual icon-quality upgrade. The I4 family replaces the stock SkyUI icons with higher-fidelity hand-crafted assets across armor, shout, and weapon categories. `I4 Weapon Icons Overhaul` depends on `Inventory Interface Information Injector` (already a baseline pick). Add them as the icon-pipeline counterpart to the information-density layer, not as a substitute for readability mods. → `06b`
+- Add `The Handy Icon Collection Collective (THICC)` as an optional icon-depth layer. It provides thousands of icons for weapons, armor, potions, ingredients, scrolls, and misc items as a resource the I4 ecosystem can distribute. Treat it as optional icon variety on top of the I4 family — zero plugin overhead, zero compatibility risk, purely additive visual variety. → `06b`
+- Keep map, journal, magic-menu, crafting-menu, and dialogue decisions out of this subsection so inventory ownership stays clear.
 
 ### Risks & Compatibility
 
-- A locomotion set can look good in isolation but feel too heavy, too floaty, or too theatrical during long play sessions.
-- Mixing `Leviathan` and `Vanargand II` without a clear owner for the male locomotion slot will make the movement stack feel stitched together; pick one as the winner after real travel testing. → `03d`
-- Armor-conditional variants can add flavor, but they also make movement identity less consistent if added too early.
-- Choosing locomotion before camera and combat direction are clearer may lead to a later full replacement.
+- Inventory readability can be over-solved by stacking too many overlapping micro-fixes.
+- A more information-heavy route can slow scanning instead of speeding it up.
+- Icon and sorting customization can become a substitute for clear baseline menu readability.
+- `Weapon Stat Viewer V2` is a relatively new mod with low endorsement count (447). Verify it does not conflict with the chosen UI framework, and treat it as opt-in until the project has tested it. → `06b`
 
 ### Acceptance Criteria
 
-- Normal third-person walking and running feel grounded and readable during real exploration.
-- The chosen baseline works cleanly with `Pandora`, `XPMSSE`, and the body setup already chosen in section 02. → `03d`
-- Male and female locomotion both feel intentional rather than stitched together from conflicting styles.
+- `modlist-03.md` treats `moreHUD SE` plus `moreHUD Inventory Edition` as the mandatory inventory-readability baseline. → `06b`
+- The difference between broader item information, inventory-list information density, cleaner item cards, and stronger inventory organization is explicit.
+- The subsection still leaves room for later crafting, controller, and accessibility decisions.
 
-## Idle Animations → `03b Movement & Idles` → `03b`
+## Map Improvements → `06c Map, Dialogue, Menus` → `06c`
 
 ### Core Idea
 
-- Idle animations should add character presence without turning downtime into constant posing or theatrical fidgeting.
-- The idle layer should stay aligned with the locomotion tone instead of becoming a second competing movement identity.
+- This subsection owns the world-map framework and the actual map art layered on top of it.
+- The goal is deliberate travel planning and geographic readability without collapsing the answer into journal, dialogue, or controller support.
 
 ### Options
 
-- Conservative route: keep idle changes very light and let locomotion carry most of the movement identity.
-- Female-idle comparison route: `Goetia Animations - Female Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68005> → `03b`
-- Equipment-conditional follow-up route: `Conditional Armor Type Animations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51507> → `03b`
-- Locomotion alternate to evaluate back in the previous section, not here: `Goetia Animations - Male Idle Walk And Run` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68625> → `03b`
+- Framework route: `Flat World Map Framework (FWMF)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29932> → `06c`
+- Local-map companion route: `Local Map Upgrade` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/129756> → `06c`
+- Balanced paper route: `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53788> → `06c`
+- Richly styled route: `Immersive Paper Map (3rd Edition)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54710> → `06c`
+- Cartography-focused route: `Skyrim Paper Map by FreelanceCartography for FWMF` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78995> → `06c`
 
 ### Recommendation
 
-- Keep the baseline idle posture aligned with the existing `Leviathan` locomotion choice rather than introducing a separate overlapping male movement package. → `03b`
-- Compare `Goetia Animations - Female Idle Walk And Run` first if the list wants a lighter female locomotion alternative. → `03b`
-- Reassess `Goetia Animations - Male Idle Walk And Run` only as a broader locomotion alternate, not as an idle-only pick. → `03b`
+- Treat `Flat World Map Framework (FWMF)` as the non-negotiable foundation for this direction. → `06c`
+- Add `Local Map Upgrade` as the local-map-side companion. It improves the interior and close-range navigation layer without replacing the world-map framework, so it fits under the same map-ownership decision rather than competing with the paper-map art choice. → `06c`
+- Start with `Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF` as the strongest first-pass companion because it looks purposeful without making the map harder to read. → `06c`
+- Keep `Immersive Paper Map (3rd Edition)` as the moodier, more stylized comparison and `FreelanceCartography` as the more explicitly cartographic comparison. → `06c`
+- Keep the key question focused on which world-map art belongs on top of `FWMF`, not whether the project still needs to re-decide the framework. → `06c`
 
 ### Risks & Compatibility
 
-- Separate idle packs can drift away from the locomotion tone and make the movement stack feel stitched together.
-- Female-focused idle mods are easy to overcorrect into overly posed behavior that fights the grounded direction.
-- Conditional idle variation can add flavor, but it also adds overlap if introduced before the base stance is accepted.
+- It is easy to choose map art for style while losing navigational readability.
+- `FWMF` can be treated as if it already answers the map-art decision when it does not. → `06c`
+- Local-map improvements can get conflated with the world-map overhaul choice even though they solve different problems.
+- Keeping several paper-map directions alive too long creates avoidable ambiguity.
 
 ### Acceptance Criteria
 
-- Idle posture feels natural and readable during normal third-person downtime.
-- The chosen idle baseline works cleanly with the locomotion setup and the existing `Pandora` / `XPMSSE` foundation. → `03b`
-- Male and female presentation both feel intentional without obvious style clash.
+- `Flat World Map Framework (FWMF)` is established as the map foundation. → `06c`
+- `Local Map Upgrade` is documented as the local-map companion rather than as a replacement for `FWMF` or the paper-map art choice. → `06c`
+- One clearly preferred FWMF-based map direction exists, with at least two meaningful comparison routes documented.
+- The distinction between world-map framework, local-map improvements, and map-art selection stays explicit.
 
-## Combat Animation Packs → `03c Combat` → `03c`
+## Magic And Journal Improvements → `06c Map, Dialogue, Menus`
 
 ### Core Idea
 
-- This subsection covers attack-animation presentation and its closest support mods, not the full combat-system stack that belongs in `modlist-04.md`. → `03c`
-- The goal is a sane baseline for player and NPC attack readability, while keeping the more ambitious `MCO` route explicit instead of half-implied. → `03c`
+- This subsection owns reading comfort, text-heavy menu flow, and spell-adjacent menu usability outside the world map.
+- The goal is calmer, cleaner reading and configuration flow without pretending every menu issue is really a map problem.
 
 ### Options
 
-- Conservative support route: `Precision - Accurate Melee Collisions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72347> → `03c`
-- Balanced modern route: `Precision` plus `SCAR - Skyrim Combos AI Revolution` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/72014> → `03c`
-- Full `MCO` route to evaluate later: `MCO ADXP - Modern Movement Combat Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/117115> → `03c`
-- Verified ambitious-route support to track with `MCO`: `Animation Motion Revolution` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50258> and `Payload Interpreter` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65089> → `03c`
-- Iframe-utility support: `IFrame Generator RE AE Support` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82737> is the AE-compatible iframe generator that several advanced attack and combat-animation packs expect. Hard-requires `Address Library for SKSE Plugins` and `SKSE64`. Required as a universal install if the final animation stack includes any pack that depends on it; otherwise install per-package when an animation mod explicitly lists it. → `03c`
-- Gameplay-side companion to revisit in `modlist-04.md`: `Valhalla Combat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64741> → `03c`
-- New-weapon-type animations: `Animated Armoury - OAR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/103577> — adds 12 new weapon types (rapier, cutlass, scimitar, spear, halberd, quarterstaff, pike, javelin, katana, wakizashi, claw, whip) each with first-person and third-person attack animations. The OAR version requires `Open Animation Replacer` (already the baseline). The OAR version also requires the `Animated Armoury - DAR Version` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/35978> as a hard dependency — the DAR version provides the weapon meshes, collision data, and leveled-list distribution; the OAR version provides the animation files and OAR-specific configuration. Install both. → `03c`
-- Death-animation fix: `No Spinning Death Animation LITE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33597> — removes the vanilla spinning death animation and replaces it with a simple ragdoll death. By Chesko, lightweight, no script overhead, compatible with all combat animation packs. Last updated March 2020 (stale per project cutoff) but confirmed working on AE 1.6.1170 by the community; no SKSE/dll dependency. → `03c`
+- Reading comfort route: `Convenient Reading UI - SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50202> → `06c`
+- Menu-width support route: `Wider MCM Menu for SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22825> → `06c`
 
 ### Recommendation
 
-- Start with the balanced modern route: `Precision` first, then `SCAR` when the list is ready to judge NPC-side attack variety in real fights. → `03c`
-- Keep `MCO ADXP` as the main high-commitment route to compare later, not as the automatic baseline. → `03c`
-- If the list moves to `MCO`, treat `Animation Motion Revolution` and `Payload Interpreter` as part of the same route review instead of pretending `MCO` is a standalone decision.
-- Keep `Valhalla Combat` adjacent but separate so animation presentation does not get collapsed into gameplay-rule design. → `03c`
-- Add `Animated Armoury` as a combat-variety upgrade: the 12 new weapon types add real gameplay depth without changing the combat-system framework. The OAR version pairs cleanly with the existing OAR baseline. Install DAR version first (provides meshes and leveled-list integration), then overlay the OAR version (provides animations). Run `Pandora` after installation. → `03c`
+- Start with the reading-comfort route.
+- Treat `Convenient Reading UI - SE` as the strongest first-pass baseline because it improves the part of this subsection most likely to be felt in normal play without overcommitting to speculative spell-menu surgery. → `06c`
+- Keep `Wider MCM Menu for SkyUI` as the practical support fix if the expanding UI and gameplay stack makes configuration menus feel cramped, but do not mistake that narrower MCM answer for the whole journal and reading direction. → `06c`
+- Revisit spell-menu-specific improvements later only if playtesting reveals a clear unresolved pain point that the base UI stack still does not cover.
 
 ### Risks & Compatibility
 
-- A full `MCO` route can pull the whole list toward a more system-heavy action-combat identity before the rest of the gameplay plan is settled.
-- `SCAR` and attack-framework layering complicate debugging if the baseline animation stack is still unstable. → `03c`
-- Individual advanced animation packs may also expect extras such as `IFrame Generator RE`, but those should be validated per-package in the later dodge/combat pass instead of being treated as universal section-03 requirements. → `03c`
+- MCM support fixes can be mistaken for broader journal or spell-menu design answers.
+- The subsection can overlap too much with later dialogue, controller, or accessibility work.
+- Weak spell-menu candidates can get added just to make the category look more complete.
 
 ### Acceptance Criteria
 
-- Combat animations feel readable and intentional from normal third-person play distance.
-- Player and NPC attack presentation both improve without forcing premature lock-in on the final combat-system direction.
-- The section clearly distinguishes baseline combat support from the later full `MCO`-style route.
+- `modlist-03.md` has one clearly preferred reading and journal usability baseline. → `06c`
+- The difference between reading comfort and MCM support is explicit.
+- Any magic-menu follow-up remains intentionally scoped rather than guessed.
 
-## Non-Combat Interaction Animations → `03d Interactions & Traversal`
+## Dialogue UI Improvements → `06c Map, Dialogue, Menus`
 
 ### Core Idea
 
-- This subsection covers contextual world interactions such as greeting, looting, harvesting, sleeping, and traversal-style set pieces that make third-person play feel embodied outside combat.
-- The goal is to improve common actions without turning ordinary interaction into slow scripted friction.
+- This subsection owns conversation readability, response selection clarity, and the overall feel of moment-to-moment dialogue interaction.
+- The goal is cleaner dialogue flow without collapsing the answer into controller handling, subtitle bugfixes, or broader journal/menu ownership.
 
 ### Options
 
-- Grounded baseline: `Immersive Interactions - Animated Actions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/47670> → `03d`
-- Higher-fidelity interaction companion or alternative: `Animated Interactions SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/143798> → `03d`
-- Sleep-focused companion: `Go to bed` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/4224> → `03d`
-- Sitting-animation route: `Take a Seat - New Sitting Animations for OAR or DAR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54193> — adds new sitting and idle animations for chairs, benches, beds, and ground-sitting via OAR. Hard-requires `Open Animation Replacer` (already the baseline). By Niroku, OAR-based, no scripts, safe to add mid-playthrough. → `03d`
-- Traversal-heavy route to evaluate carefully: `EVG Animated Traversal` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63232> → `03d`
-- Bard instrument animations: `Beginner Bard Animations - For Skyrim's Got Talent` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130776> — skill-based playing animations for lute/flute/drum that match your bard talent level. Hard-requires `Skyrim's Got Talent` + `Open Animation Replacer`. → `03d`
+- Control-sanity baseline: `Better Dialogue Controls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1429> → `06c`
+- Message-box support route: `Better MessageBox Controls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1428> → `06c`
+- Visual dialogue refresh route: `Dialogue Interface ReShaped` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/46546> → `06c`
+- Cleaner dialogue presentation route: `Convenient Dialogue UI - SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57943> → `06c`
 
 ### Recommendation
 
-- Start with `Immersive Interactions` as the main baseline for everyday contextual actions. → `03d`
-- Treat `Animated Interactions SKSE` as the stronger pickup, looting, and door-animation route when the list wants extra physicality from common interactions. It can coexist with `Immersive Interactions`, but only if overlapping actions are deliberately disabled so both mods are not trying to own the same prompts. → `03d`
-- Add `Go to bed` as a companion. With survival, camping, and roleplay bed-use, it reinforces the embodied third-person tone rather than just adding spectacle. Keep it if nightly rest or inn stays are part of normal play rhythm. → `03d`
-- Add `Take a Seat - New Sitting Animations for OAR or DAR` as an optional sitting-depth companion. It makes tavern chairs, benches, and resting spots feel more alive with OAR-selected sitting animations. Useful if inn-stays and downtime are a meaningful part of survival play rhythm. Keep it after `Go to bed` is proven, because sitting variety amplifies survival-downtime value but is not a prerequisite for it. → `03d`
-- Treat `EVG Animated Traversal` as a curated expansion that must justify its marker coverage and added complexity. → `03d`
+- Start with `Better Dialogue Controls` as the strongest first-pass pick because it addresses the most fundamental dialogue friction without forcing a large stylistic commitment. → `06c`
+- Treat `Better MessageBox Controls` as the natural companion if the same interaction awkwardness also shows up in message boxes. → `06c`
+- Keep `Dialogue Interface ReShaped` and `Convenient Dialogue UI - SE` as the more presentation-forward comparison routes only if testing shows the bigger problem is visual dialogue flow rather than basic control reliability. → `06c`
+- Keep subtitle safety and unvoiced-dialogue handling in `modlist-01.md` (Targeted Bugfix Mods) with `Fuz Ro D-oh - Silent Voice`; that is a bugfix concern, not the UI framework answer here. → `06c`
 
 ### Risks & Compatibility
 
-- Contextual interaction mods can feel immersive at first but become repetitive if the triggered actions are too slow or too frequent.
-- `Animated Interactions SKSE` overlaps enough with `Immersive Interactions` that it should be framed as a pros-and-cons choice or tightly managed companion, not as an automatic stack-on upgrade. → `03d`
-- `EVG Animated Traversal` can raise expectations for world coverage that the actual mod stack may not consistently deliver without extra marker and add-on work. → `03d`
-- Sleeping and interaction animations may feel out of place if the final list does not meaningfully emphasize downtime, camping, taverns, or roleplay pacing.
+- Visual novelty can be mistaken for actual dialogue usability.
+- A larger redesign can be chosen when simple control fixes would have solved the problem.
+- Dialogue ownership can drift into controller or subtitle-bugfix territory if the boundary is not kept explicit.
 
 ### Acceptance Criteria
 
-- Everyday third-person interactions feel more physical without becoming tedious.
-- The chosen baseline works cleanly with the locomotion and idle stack.
-- If `Animated Interactions SKSE` is used, its overlap with `Immersive Interactions` is documented as a conscious tradeoff rather than a silent duplicate install.
-- Optional additions such as `Go to bed` or `EVG Animated Traversal` are only kept if they improve normal play rhythm rather than just adding spectacle. → `03d`
+- `modlist-03.md` has one clearly preferred dialogue-usability baseline. → `06c`
+- The distinction between dialogue-option control fixes, message-box fixes, and presentation-layer redesign is explicit.
+- Subtitle and silent-voice safety remains explicitly outside this subsection.
 
-## Conditional Animation Systems → `03a Framework`
+## Controller-Friendly UI Support → `06a Framework & HUD`
 
 ### Core Idea
 
-- This subsection defines the rule-based layer that decides when different animations should play based on state, equipment, or context.
-- The goal is to lock one clear owner for conditional logic, then add only a small number of high-value packs on top of it.
+- This subsection owns how comfortable the UI stack feels on a gamepad once the base framework, HUD, inventory, map, journal, and dialogue layers are in place.
+- The goal is to reduce controller friction without pretending every controller problem requires a total menu redesign.
 
 ### Options
 
-- Framework-only route: `Open Animation Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/92109> → `03a`
-- Balanced flavor route: `Open Animation Replacer` plus `EVG Conditional Idles` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34006> → `03a`
-- Targeted follow-up route: `Conditional Armor Type Animations` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51507> → `03a`
-- Targeted OAR-pack route: `Unique Jarl Throne Sitting Animation (OAR)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174752>. Replaces the single generic Jarl-on-throne pose with a unique per-Jarl sitting animation that reflects personality, authority, and throne type. Hard-requires `Open Animation Replacer`, ships standalone patches for `Thrones of Skyrim`, `Thrones Expanded`, and `High Poly Project` (must load after those mods), and is safe to install mid-playthrough. 698 endorsements, ~16K unique downloads, last updated April 2026. → `03a`
+- Base controller-fix route: `Skyrim SE Controller Interface Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1147> → `06a`
+- Expanded gamepad-mapping route: `Gamepad Plus Plus` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/27007> → `06a`
+- Quick-access wheel route: `Wheeler - Quick Action Wheel Of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/97345> → `06a`
 
 ### Recommendation
 
-- Use `Open Animation Replacer` as the condition framework and ownership layer for this part of the stack. → `03a`
-- Let `EVG Conditional Idles` prove the value of condition-driven flavor before layering additional situational packs. → `03a`
-- Keep `Conditional Armor Type Animations` as a narrower follow-up option if armor-state variation is still wanted after the locomotion and idle baseline is already stable. → `03a`
-- Treat `Unique Jarl Throne Sitting Animation (OAR)` as a small, high-quality situational add-on. It only requires `Open Animation Replacer` (which is already the framework baseline for this section) and only needs extra load-order attention if `Thrones of Skyrim`, `Thrones Expanded`, or `High Poly Project` are also installed — none of which are current section-02 or section-03 baselines — so it is a clean add-on once the OAR baseline is proven. → `03a`
-- Treat older `Dynamic Animation Replacer` assumptions as legacy compatibility context, not the framework direction for `Elder Wilds`. → `03a`
+- Start with `Skyrim SE Controller Interface Fix` as the strongest first-pass baseline because it improves controller friendliness without forcing the whole stack to reorganize itself around one larger system. → `06a`
+- Keep `Gamepad Plus Plus` as the broader comparison if testing shows the list needs a more assertive controller-input answer. → `06a`
+- Keep `Wheeler` as the deliberate quick-access branch if controller play clearly benefits from a radial interaction layer rather than only better menu navigation. → `06a`
+- Add `Show Player In Menus` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/122648> as a locked third-person-UI companion. It renders the player character in inventory, magic, and crafting menus, making gear changes and outfit previews visible in real time. Essential for the "full third-person gamepad parity" pillar — without it, inventory management forces a disconnect between the player's third-person view and the menu screen. By myztikrice. → `06a`
+- Keep dialogue readability, inventory clarity, and map/journal ownership in their already-written subsections; this section should answer controller comfort across those layers, not replace their underlying decisions.
 
 ### Risks & Compatibility
 
-- Conditional systems become hard to reason about if multiple packs try to own similar states such as injured, relaxed, weapon-drawn, or armor-specific behavior.
-- Great-looking context clips can add little value if the trigger conditions are too rare or too subtle during ordinary play.
-- The more conditional logic this section adds, the more important it becomes to keep ownership disciplined across later sections.
+- Controller awkwardness can be over-solved by stacking too many overlapping input layers.
+- A heavier controller route can fight the rest of the UI stack.
+- Radial quick-access design can become a substitute for fixing ordinary menu friction.
 
 ### Acceptance Criteria
 
-- `Open Animation Replacer` is the clear condition owner for the animation stack.
-- Any chosen conditional packs improve noticeable third-person readability or immersion during normal play.
-- The conditional layer remains understandable enough that later camera-aware or gameplay-driven work can build on it without turning debugging into guesswork.
+- `modlist-03.md` has one clearly preferred controller-support baseline. → `06a`
+- The distinction between light controller cleanup, broader remapping, and radial quick-access support is explicit.
+- Controller support improves the existing UI layers instead of replacing their ownership boundaries.
 
-## Camera-Aware Animation Support → `03a Framework`
+## UI Scaling For Ultrawide And High Resolution → `06a Framework & HUD`
 
 ### Core Idea
 
-- This subsection covers animation behavior that benefits from perspective-aware presentation, not the broader third-person camera framework itself.
-- Its job is to keep occasional first-person or immersive-camera use from feeling neglected while leaving shoulder switching, lock-on, and camera tuning to `modlist-04.md`. → `03a`
+- This subsection owns how well the chosen UI stack holds up on large modern displays, with `16:9` `4K HDR` as the actual baseline target and ultrawide support treated as a secondary compatibility branch. → `06a`
+- The goal is readability and clarity, not a drift into generic display-calibration advice.
 
 ### Options
 
-- Perspective foundation route: `Improved Camera SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93962> → `03a`
-- Optional first-person polish route: `Comprehensive First Person Animation Overhaul - CFPAO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/87169> → `03a`
-- Conservative route: keep perspective support minimal unless the list actually expects meaningful hybrid-perspective play.
+- High-resolution readability route: `Sovngarde - Mist's Font Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/386> → `06a`
+- Ultrawide compatibility route: `Complete Widescreen Fix for Vanilla and SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1778> → `06a`
+- Discipline-first route: keep the chosen `Oathvein UI` direction, `SkyHUD`, inventory improvements, and dialogue/map changes restrained enough that the UI remains readable at `4K` without immediately stacking scaling fixes. → `06a`
 
 ### Recommendation
 
-- Use `Improved Camera SE` as the animation-side perspective foundation only if hybrid perspective is a real part of the intended playstyle. → `03a`
-- Treat `CFPAO` as an optional follow-up layer only if testing shows the project will spend meaningful time in first person. → `03a`
-- Keep broader camera framework decisions in `modlist-04.md` so this subsection stays scoped to animation coherence. → `03a`
+- Start with the readability-first route, because `16:9` `4K HDR` is the real target for this project. → `06a`
+- Treat `Sovngarde - Mist's Font Replacer` as the stronger first-pass candidate because it directly addresses large-display text readability without pretending the main problem is ultrawide support. → `06a`
+- Keep `Complete Widescreen Fix for Vanilla and SkyUI` as the secondary compatibility branch if the list later needs to support ultrawide layouts too, but do not let that branch define the subsection. → `06a`
+- Keep HDR concerns practical: this subsection should stay about readability, clarity, and screen-space behavior.
 
 ### Risks & Compatibility
 
-- First-person polish can become wasted complexity if the list rarely leaves third person.
-- Perspective-related mods can expose clipping, weapon-position issues, and camera-body mismatches that are not obvious in third person.
-- This subsection drifts into duplicate decision-making quickly if it starts trying to own general camera framework questions.
+- Ultrawide support can be treated as the default problem when the actual baseline display is `16:9` `4K`.
+- High-resolution readability can be over-solved by stacking too many unrelated UI tweaks at once.
+- Font or scaling adjustments can fight the chosen `Oathvein UI` tone if they are not judged in context. → `06a`
 
 ### Acceptance Criteria
 
-- Perspective changes feel coherent enough that occasional first-person use does not break the animation quality bar.
-- `Improved Camera SE`, if chosen, works cleanly with the current animation stack. → `03a`
-- The camera-aware layer remains clearly separate from later third-person camera and gameplay framework decisions.
+- `modlist-03.md` has one clearly preferred high-resolution readability baseline for the actual `16:9` `4K` target. → `06a`
+- The distinction between `4K` readability work and ultrawide compatibility support is explicit. → `06a`
+- UI scaling guidance improves readability without collapsing into a generic display-settings subsection.
 
-## Creature Animations → `03e Creatures` → `03e`
+## Compass, Markers, And Minimal HUD Options → `06a Framework & HUD`
 
 ### Core Idea
 
-- This subsection covers the non-humanoid side of the animation stack.
-- The right approach is curated creature improvement, not a completionist attempt to patch every creature type before the rest of the stack is stable.
+- This subsection owns how much navigational information stays on screen during ordinary play: compass behavior, marker density, and whether the HUD should fade away unless it is actually needed.
+- The goal is cleaner exploration without undoing the broader HUD, map, or controller decisions already in place.
 
 ### Options
 
-- Curated high-impact route:
-- `New Creature Animation - Giant` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/83317> → `03e`
-- `New Creature Animation - Falmer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/83572> → `03e`
-- `New Creature Animation - Werewolf` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/83806> → `03e`
-- Broad-coverage route: expand later into more creature-specific packs only after the main humanoid stack and testing workflow are already stable.
+- Navigation-first compass route: `Compass Navigation Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/74484> → `06a`
+- Map-aware marker route: `CoMAP - Common Marker Addon Project` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56123> → `06a`
+- Dynamic minimal-HUD route: `Immersive HUD - iHUD Special Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/12440> → `06a`
+- Optional minimap route: `MiniMap` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/49490> — adds a fully configurable corner minimap to the screen with zoom levels, toggle support, and map-style customization. Useful for players who prefer persistent local navigation context, but potentially redundant with `Compass Navigation Overhaul` and visually distracting with the minimal-HUD philosophy. → `06a`
 
 ### Recommendation
 
-- Start with a curated wilderness-threat route instead of chasing one fictional universal creature-animation answer.
-- Prioritize `New Creature Animation - Giant` and `New Creature Animation - Werewolf` first because they affect memorable encounters and strongly shape third-person combat readability. → `03e`
-- Keep `New Creature Animation - Falmer` as the strong dungeon-focused follow-up once the baseline creature direction is proven. → `03e`
+- Start with the navigation-first route plus explicit marker discipline.
+- Treat `Compass Navigation Overhaul` as the strongest first-pass baseline because it answers the actual navigational layer directly instead of jumping immediately to a hide-the-HUD philosophy. → `06a`
+- Treat `CoMAP` as the natural marker-side companion when the project wants cleaner marker consistency across the chosen `FWMF` paper-map ecosystem. → `06a`
+- Keep `Immersive HUD - iHUD Special Edition` as the deliberate minimal-HUD branch only if testing shows that reduced on-screen persistence materially improves exploration tone rather than making the paper-map-and-compass loop less readable. → `06a`
+- Keep `MiniMap` as a very optional side addition. Minimaps are not aligned with the grim-dark exploration pillar (they reduce the need to read the environment), and the mod's low endorsement count (7,761, last updated May 2021 — stale by current standards) and occasional crash reports on 1.6.1170 make it a high-risk low-return addition. Document it as "very optional — test before locking." → `06a`
+- Keep `SkyHUD` as the broader HUD-layout owner, `FWMF` plus map-art choices as the map owner, and gameplay-side `TrueHUD` as a separate feedback layer. → `06a`
 
 ### Risks & Compatibility
 
-- Creature animation packs can create more debugging overhead than humanoid packs because encounter timing, collision readability, and behavior generation all matter at once.
-- It is easy to over-invest in rare or novelty creature types that add little value to ordinary play.
-- Individual creature packs may also depend on advanced combat-animation support mods; validate those per pack instead of treating every route as baseline-safe.
+- Minimalism itself can be mistaken for better usability.
+- Uneven marker language can trigger too many overlapping compass and HUD layers at once.
+- A dynamic-HUD route can look immersive while slowing ordinary navigation.
+- `MiniMap` on Steam runtime `1.6.1170` has occasional crash reports; verify stability before treating it as part of the locked stack. Stacking a minimap alongside `Compass Navigation Overhaul` creates redundant navigation information on screen. → `06a`
 
 ### Acceptance Criteria
 
-- Chosen creature animation packs noticeably improve important encounters in normal play.
-- `Pandora` continues to generate cleanly with the curated creature additions. → `03e`
-- The creature-animation layer stays small and intentional enough that later debugging remains manageable.
+- `modlist-03.md` has one clearly preferred compass and navigation baseline. → `06a`
+- The distinction between compass behavior, FWMF-friendly marker support, minimap addition, and minimal-HUD philosophy is explicit.
+- Existing ownership boundaries with `SkyHUD`, `FWMF`, and gameplay-side `TrueHUD` remain intact. → `06a`
 
-## Animation Conflict Management → `03a Framework`
+## Crafting Menu Improvements → `06b Inventory & Items`
 
 ### Core Idea
 
-- This subsection owns the file-wide animation-governance rules so the other sections do not need to repeat them.
-- The goal is explicit ownership, isolated generated output, and small testing loops that make problems diagnosable.
+- This subsection owns the UI side of crafting: category clarity, menu scan speed, recipe browsing, and whether crafting stations feel readable and organized during normal use.
+- It should improve crafting-menu navigation without re-deciding the broader crafting-system philosophy that belongs to `modlist-06.md`. → `06b`
 
 ### Options
 
-- Strict ownership route: one clear owner per layer and reject overlapping packs unless they add obvious value.
-- Broad experimentation route: test many packs together early and sort out conflicts later.
-- Minimalist route: stop with the high-value baseline and add very few situational packs beyond it.
+- Keyword-category route: `Constructible Object Custom Keyword System` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/81409> → `06b`
+- Vanilla-category fallback: `SkyUI - Vanilla Crafting menu` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18717> → `06b`
+- Discipline-first route: keep the current `SkyUI` crafting presentation if real playtesting shows the menu is already readable enough. → `06b`
 
 ### Recommendation
 
-- Use the strict ownership route.
-- Keep `Pandora` as the only behavior-generation owner, `XPMSSE` as the only skeleton owner, and `Open Animation Replacer` as the only conditional-selection owner. → `03a`
-- Change one category at a time, regenerate, test, and document the result before stacking another pack on top.
-- Keep `Pandora` output isolated in a dedicated MO2 output mod and record which selected mods rely on generation, which rely on `OAR`, and which are pure presentation-side companions. → `03a`
-- Test changes in repeatable scenarios: town walking, idle downtime, dungeon corridors, uneven outdoor combat, interaction-heavy interiors, and at least one creature encounter whenever the stack changes meaningfully.
+- Start with the keyword-category route.
+- Treat `Constructible Object Custom Keyword System` as the strongest first-pass baseline because it directly improves the usability of the Constructible Object Menu and is built to support a broader, modded crafting ecosystem. → `06b`
+- Keep `SkyUI - Vanilla Crafting menu` as the meaningful fallback only if the project still prefers vanilla-style split categories and is not relying on a heavier `CACO`-style recipe footprint that benefits from stronger category handling. → `06b`
+- Keep this subsection focused on menu structure and readability; do not let it absorb smithing progression, crafting balance, enchanting rules, or NPC-crafting philosophy from `modlist-06.md`. → `06b`
 
 ### Risks & Compatibility
 
-- Animation conflicts often look like camera bugs, combat bugs, or skeleton bugs until ownership is checked carefully.
-- Generated output left mixed with source mods hides whether a problem comes from the current load order or stale behavior files.
-- The more systems added later in `Third-Person Gameplay`, the more expensive it becomes to clean up unresolved ownership mistakes from this section. → `03a`
+- Crafting frustration can be blamed on the menu layer when the real issue lives in gameplay-side crafting rules.
+- A familiar vanilla-style fallback can be chosen just because it feels familiar rather than because it is more readable in real play.
+- A vanilla-style fallback can pair poorly with a large `CACO` recipe footprint and create avoidable friction. → `06b`
 
 ### Acceptance Criteria
 
-- Every major part of the animation stack has a clear owner.
-- `Pandora` regeneration and MO2 output handling remain reproducible and easy to audit. → `03a`
-- New animation issues can be narrowed down to one layer or one recent change without excessive guesswork.
-- The section is stable enough that `Animations and Movement` can be considered complete and future work can move into `Third-Person Gameplay`. → `03a`
+- `modlist-03.md` has one clearly preferred crafting-menu usability baseline. → `06b`
+- The difference between a more extensible category system and a vanilla-style category fallback is explicit.
+- The ownership boundary with gameplay-side crafting decisions in `modlist-06.md` remains clear.
+
+## Loading Screens → `06c Map, Dialogue, Menus` → `06c`
+
+### Core Idea
+
+- This subsection owns the loading screen layer: what players see during area transitions, how the visual presentation connects to the game's tone, and whether loading feels like part of the game world or a dead pause.
+- It is purely cosmetic — no scripts, no worldspace edits, no gameplay hooks.
+
+### Options
+
+- Art-replacer route: `The Elder Scrolls Legends - Loading Screens` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37929>. Adds 110 high-quality lore-friendly artworks from The Elder Scrolls: Legends card game as loading screens. Works as a vanilla replacer and alongside vanilla loading screens. Supports 16:9, 16:10, 21:9, and 4:3 aspect ratios. Version 2.1.1, last updated June 2023. 10,632 endorsements, 725k unique downloads. → `06c`
+- Vanilla discipline route: keep default Skyrim loading screens and let the rest of the UI stack define the visual identity.
+
+### Recommendation
+
+- Set `The Elder Scrolls Legends - Loading Screens` as the locked baseline. The artwork matches the grim-dark fantasy tone of `Elder Wilds` and the mod is purely asset-based with zero compatibility concerns — no vanilla records are touched. → `06c`
+- Install at 100% frequency to fully replace vanilla loading screens. This eliminates the jarring shift from a modernized UI stack to dated vanilla loading art.
+- Select the 16:9 aspect ratio variant to match the `4K` display target, and use the `Fixed Height` border setting to avoid black bars on the 16:9 display. → `06c`
+- The optional text-free variant removes the Legends card-game UI text for players who want only the artwork. The default text variant includes lore-friendly messages alongside the art.
+
+### Risks & Compatibility
+
+- Compatible with all mods — no vanilla records changed.
+- At 100% frequency, vanilla lore loading tips (some of which provide useful gameplay hints) are suppressed. Players new to Skyrim may miss these tips. Mitigation: the text variant includes lore-friendly descriptions alongside the art.
+- Some Legends artworks are wider than 16:9 (designed for 21:9). The `Fixed Height` border setting crops the sides on ultra-wide images, which may cut off edges. The mod author selected images so no critical content is lost in the crop. → `06c`
+
+### Acceptance Criteria
+
+- `modlist-03.md` has one locked loading screen baseline: `The Elder Scrolls Legends - Loading Screens`. → `06c`
+- The choice of 100% frequency and 16:9 aspect ratio is documented.
+- The decision between text and text-free variant is left to install-time preference.
+
+## Accessibility And Readability Improvements → `06a Framework & HUD`
+
+### Core Idea
+
+- This subsection owns the final pass on general UI legibility and comfort: readable text, sane menu density, configuration clarity, and whether the full UI stack remains easy to live with over long sessions.
+- It should improve everyday usability without re-deciding dialogue, map, controller, crafting, or HUD philosophy that earlier subsections already own.
+
+### Options
+
+- High-resolution text route: `Sovngarde - Mist's Font Replacer` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/386>. Recommended file: `Sovngarde - Mist's Font Replacer Bold V8.9`. → `06a`
+- Configuration-readability route: `Wider MCM Menu for SkyUI` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22825> → `06a`
+- Discipline-first route: keep the current `SkyUI` plus `Oathvein UI` stack with the already-chosen inventory, dialogue, map, and crafting improvements if real playtesting shows the UI is already readable enough. → `06a`
+
+### Recommendation
+
+- Start with the discipline-first route, then apply targeted readability support only where the current stack still shows a real weakness.
+- `Sovngarde - Mist's Font Replacer` remains the strongest first-pass accessibility candidate because the repo already identified `16:9` `4K HDR` readability as a practical concern and font presence is one of the clearest ways to improve long-session comfort without redesigning the whole interface. → `06a`
+- For this display target, prefer `Sovngarde - Mist's Font Replacer Bold V8.9` first, then fall back to the light variant only if the bold face feels too heavy in the chosen `Oathvein UI` direction. → `06a`
+- Keep `Wider MCM Menu for SkyUI` as the narrower support answer when the main friction lives in configuration readability rather than in the ordinary in-game interface itself. → `06a`
+- Leave subtitle safety and unvoiced-dialogue handling in `modlist-01.md` (Targeted Bugfix Mods) with `Fuz Ro D-oh - Silent Voice`; that remains a bugfix boundary, not the main UI accessibility answer here. → `06a`
+
+### Risks & Compatibility
+
+- A final accessibility pass can turn into relitigating decisions that earlier UI subsections already settled.
+- Stacking too many small readability tweaks can create an incoherent visual hierarchy.
+- MCM comfort can be mistaken for a full ordinary-play readability solution.
+
+### Acceptance Criteria
+
+- `modlist-03.md` finishes with one clear readability-first fallback and one clear configuration-readability support route. → `06a`
+- The distinction between general `4K` readability and MCM readability is explicit. → `06a`
+- Earlier ownership boundaries for dialogue, map, crafting, controller support, and subtitle bugfixes remain preserved.
+
+## Optional HUD → `06a` Additions
+### Core Idea
+
+- This subsection holds experimental or unproven UI mods that are not part of the locked UI stack but are tracked for potential inclusion if playtesting validates them.
+- The goal is to keep these picks visible and documented without letting them drift into the mandatory baseline by default.
+
+### Options
+
+- Follower-and-player stats overlay: `Skyrim Party Sheet - Follower and Player HUD` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/167538> — adds a persistent HUD overlay showing player attributes (Health, Magicka, Stamina) alongside active follower information in a party-sheet format. Potentially useful for third-person gameplay where the player wants quick follower-status visibility without opening menus. Still fairly new (first released 2025) but has seen active development — now at v2.7 (updated June 2026) with 1,084 endorsements and growing community adoption. Compatibility with `TrueHUD`, `Oathvein UI`, `moreHUD`, and `Nether's Follower Framework` remains unverified. Keep as "very optional — research before installing." → `06a`
+
+### Recommendation
+
+- Keep `Skyrim Party Sheet` in this optional tracking section only. Do not include it in the locked modlist until playtesting confirms it does not fight `TrueHUD` widget positioning, `Oathvein UI` visual styling, or `Nether's Follower Framework` follower management. Its compatibility on 1.6.1170 with the full UI stack is still unproven, and its active development pace means the mod may change meaningfully between planning and installation. → `06a`
+- If accepted later, place it in the HUD Overhaul subsection as a companion to `TrueHUD` for follower-status visibility. → `06a`
+
+### Risks & Compatibility
+
+- Overlapping HUD widgets can create visual conflicts with `TrueHUD`, `SkyHUD`, and `Floating Damage`. → `06a`
+- Unknown compatibility with `Nether's Follower Framework` — if Party Sheet tries to manage followers that NFF controls, there may be state conflicts. → `06a`
+- Unknown performance overhead from a persistent follower-status polling loop.
+- Not suitable for modlist inclusion until tested on Steam `1.6.1170` with the full UI stack. → `06a`
+
+### Acceptance Criteria
+
+- `Skyrim Party Sheet` stays in the optional tracking section until playtesting confirms stability and compatibility. → `06a`
+- The UI stack does not adopt experimental mods as baselines by default.
 
 ## Candidate TODO Additions
 
-### Idles & Expressions → `03b`
+### Framework & System UI → `06a`
 
-- `Poses, Actions and Musical` — idle/pose animation pack → `03b`
-- `More Tavern Idls - Immersive` — tavern idle animation additions → `03b`
-- `Headtracking and Emotions` — NPC headtracking and facial expression improvements → `03b`
+- `Character Menu SE` — character appearance menu enhancer → `06a`
+- `Kill feed` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179053>) — enemy kill notification feed → `06a`
+- `SKSE Menu Framework` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/120352>) — menu framework SKSE plugin → `06a`
+- `Auto Input Switch` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54309>) — auto-detect controller vs KB+M input → `06a`
 
-### Combat Animation → `03c`
+### Inventory → `06b`
 
-- `Smooth block animation` — block animation replacer → `03c`
-- `Weapon Trails` — weapon trail VFX → `03c`
-- `Killmove fixes` — killmove camera/animation fix → `03c`
-- `Goetia Animations - Magic Spell Casting` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/70204>) — magic cast animation pack → `03c`
+- `Unread books glow redone` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138451>) — unread book visual highlight → `06b`
+- `Show Player In Inventory` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/178689>) — player model in inventory menu → `06b`
 
-### Movement & Parkour → `03d`
+### HUD, Map & Dialogue → `06c`
 
-- `Smooth Jump animation` — jump animation replacer → `03d`
-- `Just Shields on your back / Weapons on Back AiO` — shield/weapon placement (choose one) → `03d`
-- `Walk Speed Tuner` — movement speed adjustment → `03d`
-- `Dova Jump` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/125550>) — jump height/behavior tweak → `03d`
-
-### Creature Animation → `03e`
-
-- `Troll - MCO` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/175250>) — troll MCO animation → `03e`
+- `Pastel Map Markers (?)` — optional map marker recolor → `06c`
+- `Smart Talk (Dialogue Menu Enhancer)` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171449>) — dialogue menu categorization → `06c`
+- `Quest Journal Overhaul` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/172488>) — quest journal visual overhaul → `06c`
+- `Even Better Quest Objectives SE - EBQO SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159>) — quest objective clarity → `06c`
 
 ## Post-Install Smoke Test
 

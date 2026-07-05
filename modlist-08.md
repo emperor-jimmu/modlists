@@ -54,6 +54,8 @@
 - Whiterun outskirts expansion route: `JK's Whiterun Outskirts` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78351>. A lore-friendly overhaul of Whiterun's outskirts: new buildings (including a new inn), new NPCs, overhauled farms with new crops (Pelagia Farm, Chillburrow, and Battle Born), Honningbrew Meadery exterior expansion, and the Whitewatch tower to the northeast. A standalone JK's mod that is independent of the `JK's Skyrim` AIO (which is also locked in), so it stacks cleanly with the AIO's city-interior work. → `08a`
 - Whiterun districts-and-quests expansion route: `Capital Whiterun Expansion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/37982>. A major Whiterun expansion that adds two new districts to the city (new buildings, decorations, shops, merchants, and NPCs), plus a new player home and new quests. Larger in scope than `JK's Whiterun Outskirts` and complementary rather than overlapping: the JK's mod works the area between Whiterun's walls and the hold, while this mod adds new districts inside the city's footprint. → `08a`
 - Shor's Stone standalone route: `The Great Town of Shor's Stone SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/35977>. Another Arthmoor-family standalone town overhaul (alongside the Great Town of Ivarstead, Karthwasten, etc. that are already in the subsection). Expands Shor's Stone (a small mining town in the Rift) with new buildings, NPCs, and structures to make it feel like a real town. Stacks with `The Great Cities - Minor Cities and Towns` family because each Arthmoor town mod is designed to be independent. → `08a`
+- Solstheim settlement overhaul route: `JK's Raven Rock` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/141070> — overhauls Raven Rock, Skyrim's only populated Dunmer settlement on Solstheim, with new clutter, architecture detail, and environmental storytelling. By JPSteel2 (also of Cities of the North and Snazzy series). ESL-flagged. Complements the existing JK's Skyrim AIO for mainland cities while adding Solstheim coverage. → `08a`
+- Solstheim Telvanni-tower overhaul route: `JK's Tel Mithryn` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/151512> — overhauls Neloth's Telvanni tower exterior and interior with more detailed clutter, better lighting, and lived-in environmental storytelling. By JPSteel2. ESL-flagged. Pairs with JK's Raven Rock for comprehensive JK's-style Solstheim coverage. → `08a`
 
 ### Recommendation
 
@@ -172,7 +174,7 @@
 - Hidden-shelter route: `Hidden Hideouts of Skyrim SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2625> → `08a`
 - Narrower companion route: `Hidden Hideouts of Skyrim City Edition SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/2626> → `08a`
 - Rejected caution branch: `Master The Summit` stays out because current community signal points too strongly toward support and navmesh-risk concerns. → `08a`
-- Daedric shrine locations route: `Daedric Shrines - All in One` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78772> — adds physical shrines to each Daedric Prince at lore-appropriate locations across Skyrim. Each shrine is a discoverable point of interest with unique architecture matching the Prince's domain. Complements the Pilgrim/Pilgrim religion system from `modlist-05.md` without requiring it. → `08a`
+- Daedric shrine locations route: `Daedric Shrines - All in One` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78772> — adds physical shrines to each Daedric Prince at lore-appropriate locations across Skyrim. Each shrine is a discoverable point of interest with unique architecture matching the Prince's domain. Complements the Pilgrim/Pilgrim religion system from `modlist-06.md` without requiring it. → `08a`
 - Abandoned-building restoration route: `Environs - Abandoned Abodes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82410> — restores and refurbishes several abandoned buildings across Skyrim (Hoddminir, Tumbledown Shack, Hellfire Chasm, and others) into inhabited, lootable locations with new clutter and environmental storytelling. ESL-flagged, authored by Tx12001, widely compatible with landscape and city overhauls. → `08a`
 - Daedric Shrines patch collection: `Daedric Shrines - All in One by Xtudo - Wintersun Lakeview Teldryn Cure Wyrmstooth Antennaria Evil Aemer Thieves Helgen Death Cut Content Moon Leaf Rest Talos` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/78809> — a compatibility patch bundle for Daedric Shrines covering Wintersun, Wyrmstooth, Legacy of the Dragonborn, Lakeview, and other mods in the list. Required companion if Daedric Shrines is locked. → `08a`
 
@@ -185,7 +187,7 @@
 - Consider `7000 Steps of Sanctum` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/128478> as a targeted pilgrimage enhancement. Removes hostile encounters (except the troll), swaps vegetation for climate-appropriate growth at altitude, adds a map marker for the troll encounter area, and realigns the High Hrothgar map marker. Soft-requirements `Cathedral - 3D Pine Shrubs` and `Happy Little Trees` for full aesthetic effect. Highly compatible (no navmesh edits, no cell-record conflicts), fits the tone of a more atmospheric journey. 243 endorsements. → `08a`
 - Only revisit `Hidden Hideouts of Skyrim City Edition SE` if the countryside hideout concept lands well and the project later wants city-adjacent hideaways to follow the same philosophy. → `08a`
 
-Add `Daedric Shrines - All in One` as a Daedric-shrine discovery layer. Each shrine is a bespoke point of interest with unique architecture matching the Prince's domain, rewarding exploration with visual payoff rather than loot. Complements the religion layer from `modlist-05.md` without requiring it.
+Add `Daedric Shrines - All in One` as a Daedric-shrine discovery layer. Each shrine is a bespoke point of interest with unique architecture matching the Prince's domain, rewarding exploration with visual payoff rather than loot. Complements the religion layer from `modlist-06.md` without requiring it.
 
 Add `Daedric Shrines - All in One by Xtudo` as the required patch companion. Its patch collection covers Wintersun, Wyrmstooth, LotD, Lakeview, and other mods in `Elder Wilds` that add or modify shrine-related locations.
 
@@ -197,11 +199,16 @@ Add `Environs - Abandoned Abodes` as an abandoned-building restoration layer. It
 - `Hagraven Houses Animated` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/101952> — a Base Object Swapper mesh replacer that adds wind animation to hagraven houses and fences. 1,354 endorsements, by StoneSpiralGaming. Hard-requires `Base Object Swapper`. Does not change cell records or placement — purely a visual upgrade that makes hagraven structures feel alive. Add as an optional world-object animation layer for hagraven encounter spaces. → `08a`
 
 Add the `Evolving Locations` series as a dynamic overhauls layer: three shack locations that evolve and expand over playtime based on the player's actions and visit frequency. The series fits the "lots of new content" pillar by making previously static locations respond to the player's presence and grow more rewarding with repeated visits. All three are authored by Suinier (5-9K unique downloads each, ESL-flagged), and each changes interior and exterior over time rather than being a one-time set-dressing swap:
+
 - `Evolving Locations - Riverside Shack` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124268> → `08a`
 - `Evolving Locations - Lucky Shack` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/123700> → `08a`
 - `Evolving Locations - Cliffside Retreat` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/124524> → `08a`
 
 Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130581> as a roadside-points-of-interest layer. Adds small, lore-friendly ruined structures along Skyrim's roadsides. Each ruin is a discoverable point of interest with loot and environmental storytelling, filling empty roadside stretches without adding new cell records or large landscape edits. Complements the existing hidden-shelter and abandoned-building restoration layers.
+
+Add `Reinforced Civil War Camps` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/153645> as a Civil War camp overhaul that adds fortifications, tents, supplies, and more lived-in camp details to both Imperial and Stormcloak military camps. Improves an often-overlooked worldspace element that players encounter frequently during travel and Civil War quests. → `08a`
+
+Add `HAG Occult Orphan Rock` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/137996> as a location overhaul of Orphan Rock (the Forsworn/hagravens location near Falkreath) with occult-themed environmental storytelling, new clutter, and improved atmosphere. Part of the HAG series by Maggie. Complements the hagraven-animation and witch-themed content in the list. → `08a`
 
 ### Risks & Compatibility
 
@@ -216,6 +223,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - The chosen direction improves ordinary travel and off-road curiosity without duplicating section-07 ownership.
 
 ## Underwater → `08d` Content
+
 ### Core Idea
 
 - This subsection owns underwater world enhancement and discoverable underwater content: visual overhauls to the seafloor, underwater flora and fauna, and lootable treasure locations beneath the surface.
@@ -230,7 +238,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 ### Recommendation
 
 - Use all three together. Depths of Skyrim overhauls the underwater environment (new grass, coral, giant kelp, 1000+ fish, unmarked treasures, horker groups, exposed-rock fixes, ocean-floor seam fixes) and specifically targets the Sea of Ghosts. The mesh fixes companion resolves known visual issues in the base mod. More Underwater Treasures adds 56 underwater treasures across Skyrim and 35 across Solstheim with clean landscape edits, vanilla chest replacements, and is explicitly marked **Compatible** with Depths of Skyrim.
-- Use **SSE-Terrain-Tamriel-Extend.esm** (documented in `modlist-15.md`) as the terrain-boundary ESM for LOD generation, because Depths of Skyrim adds content in the Sea of Ghosts north of the standard terrain-data boundary. → `08d`
+- Use **SSE-Terrain-Tamriel-Extend.esm** (documented in `modlist-14.md`) as the terrain-boundary ESM for LOD generation, because Depths of Skyrim adds content in the Sea of Ghosts north of the standard terrain-data boundary. → `08d`
 
 ### Risks & Compatibility
 
@@ -276,28 +284,28 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 
 - Adding two activity systems at once can feel like feature creep if the rest of the list does not reinforce the same living-world tone.
 - `Hunterborn` requires creature-type patching for any mod that adds new creatures (use `Hunterborn Extender` via Synthesis to handle this). → `08b`
-- `Simple Fishing Overhaul` requires the free AE fishing addon (already included in Skyrim AE 1.6.1170) and OAR/DAR (already a baseline dependency from `modlist-03.md`). → `08b`
+- `Simple Fishing Overhaul` requires the free AE fishing addon (already included in Skyrim AE 1.6.1170) and OAR/DAR (already a baseline dependency from `modlist-04.md`). → `08b`
 - Add `Immersive Fishing` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115249> as a fishing-content expansion that adds new fishing spots, craftable rods, new fish types, and radiant fishing quests. It is a content-first companion to `Simple Fishing Overhaul` (which provides the animation and dialogue improvements) rather than a replacement. The two mods are designed to stack: SFO fixes fishing feel, Immersive Fishing fixes fishing scope. → `08b`
 - Add `Fishing Extension Framework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139626> as the encounter-zone and biome registration framework for adding fishing to new worldspaces. Required if the list includes new-lands mods where fishing should be available (e.g., Beyond Skyrim - Bruma). → `08b`
 - Add `Fishing Voiced Narrative - Simple Fishing Overhaul Voice Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/113771> as a compatibility patch between Voiced Narrative - Fishing and Simple Fishing Overhaul. Required if both Voiced Narrative - Fishing and SFO are installed; routes the voiced narrative through SFO's quest dialogue hooks. → `08b`
 - Add `Fishing Extension for Beyond Skyrim - Bruma` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/152152> as a worldspace-specific fishing extension if Beyond Skyrim - Bruma is adopted. Adds fishing biomes, new fish species, and quest integration for Bruma's rivers and Lake Rumare. Requires the `Fishing Extension Framework` as a dependency. → `08b`
 - Add `Fishermen Fish - Brings the Fish to You` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134408> as a lightweight immersion add-on that overlays fish meshes on NPCs who are fishing, carrying fish, or selling fish in markets. No ESP, purely a mesh replacer — safe to add or remove at any time. → `08b`
 - Add `Garbage Loot - Barrels and Sacks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18047> as a scavenging-content add-on that adds lootable trash containers (barrels, sacks, crates, garbage piles) throughout the world. Each container provides believable low-value loot (rotten food, rags, bones, empty bottles) — reinforcing the survival and scavenging tone of the living-world pillar. ESL-flagged, lightweight, no conflicts with location or container overhauls. → `08b`
-- Both mods should be checked against `modlist-13.md` for Legacy of the Dragonborn display integration if they add unique items. → `08b`
+- Both mods should be checked against `modlist-12.md` for Legacy of the Dragonborn display integration if they add unique items. → `08b`
 
 ### Acceptance Criteria
 
 - `Elder Wilds` has one clear fishing baseline and one comprehensive hunting baseline. → `08b`
 - Fishing feels more animated and rewarding than the vanilla click-wait-click loop.
 - Hunting involves a believable process (dressing, skinning, butchering) rather than a single loot click.
-- Both activities integrate cleanly with the survival systems chosen in `modlist-05.md` and the camping layer noted in `modlist-07.md`. → `08b`
+- Both activities integrate cleanly with the survival systems chosen in `modlist-06.md` and the camping layer noted in `modlist-07.md`. → `08b`
 
 ## Weapons, Armor, And Equipment Additions → `08b Quests`
 
 ### Core Idea
 
 - This subsection owns the bulk-added weapons, armor sets, shields, and supporting equipment that expand what the player and NPCs can wear, wield, and find.
-- It is the content-side counterpart to the smithing subsection in `modlist-05.md`: smithing is the systems layer, this is the actual item library. → `08b`
+- It is the content-side counterpart to the smithing subsection in `modlist-06.md`: smithing is the systems layer, this is the actual item library. → `08b`
 - The goal is to add meaningful equipment variety without bloating leveled lists, fighting the chosen perk overhaul, or overwhelming the body and outfit pipeline from [`modlist-02b.md`](modlist-02b.md). → `08b`
 
 ### Options
@@ -315,15 +323,15 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - Use `Immersive Armors Retexture and Mesh Fixes SE` as the visual upgrade for the armor pack. The base `Immersive Armors` assets look dated next to modern 4K PBR textures from [`modlist-02b.md`](modlist-02b.md), and this retexture pack brings the armor visuals in line with the rest of the graphics stack (9.8K endorsements, 490K unique downloads). → `08b`
 - Use `Dawnguard Arsenal SSE - SkyPatched` as the Dawnguard-themed equipment expansion. Use the SkyPatched variant (113677) because `SkyPatcher` is already a core dependency — the SkyPatched version avoids adding a full plugin, reducing load-order pressure. It adds Dawnguard weapons, armors, and ammunition that slot naturally into the Dawnguard questline content. → `08b`
 - Keep the discipline-first route alive long enough to confirm the project actually wants bulk equipment content. If the chosen quest mods and smithing content already add enough unique gear, the bulk packs can be skipped to reduce leveled-list bloat.
-- Keep this subsection separate from smithing in `modlist-05.md`, perk overhauls in `modlist-05.md`, and the crafting helpers in `modlist-05.md`. This subsection owns the item library, not the systems that consume it. → `08b`
+- Keep this subsection separate from smithing in `modlist-06.md`, perk overhauls in `modlist-06.md`, and the crafting helpers in `modlist-06.md`. This subsection owns the item library, not the systems that consume it. → `08b`
 
 ### Risks & Compatibility
 
-- Bulk item packs can create heavy leveled-list edits that conflict with encounter-zone, loot, and economy mods from `modlist-05.md` and `modlist-11.md`. Resolve overlap by giving the bulk packs load-order priority for new items and tuning distribution through the mod's MCM.
+- Bulk item packs can create heavy leveled-list edits that conflict with encounter-zone, loot, and economy mods from `modlist-06.md` and `modlist-11.md`. Resolve overlap by giving the bulk packs load-order priority for new items and tuning distribution through the mod's MCM.
 - New armor sets must be tested against the chosen body base (`CBBE 3BA` / `HIMBO`) and the BodySlide pipeline from [`modlist-02b.md`](modlist-02b.md). Some vanilla-rigged armor pieces will need outfit conversions. → `08b`
 - Bulk packs can also affect NPC visual identity if `modlist-09.md` later bundles NPC overhauls; check for distribution or appearance conflicts. → `08b`
 - The base `Immersive Armors` mesh and texture work looks visibly dated without the retexture pack. Skipping the retexture makes the armor feel out of place in a 4K grim-dark presentation. → `08b`
-- New weapons and armor can dwarf unique items from `modlist-13.md` (Legacy of the Dragonborn) if display integration is not considered; verify the display ecosystem handles the new items cleanly. → `08b`
+- New weapons and armor can dwarf unique items from `modlist-12.md` (Legacy of the Dragonborn) if display integration is not considered; verify the display ecosystem handles the new items cleanly. → `08b`
 
 ### Acceptance Criteria
 
@@ -395,10 +403,10 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - Add `A Chance Arrangement Plus Plus` as a targeted Thieves Guild quest overhaul. It follows the same vanilla-quest-enhancement philosophy as JaySerpa's suite but focuses on a single TG quest with deeper rewrite (new scenes, alternate routes, expanded consequences). Lock it in if the Thieves Guild is a likely early-game path; skip it if the run intends to avoid TG content. → `08b`
 - Add `Opulent Thieves Guild` as a locked Thieves Guild visual-progression companion. It visually upgrades the Ragged Flagon and Guild headquarters as the player progresses through the TG questline, making guild advancement feel tangible rather than purely numerical. Pairs naturally with `A Chance Arrangement Plus Plus`. → `08b`
 - Add `Improved Companions - Questline Tweaks` as a locked Companions faction-fix companion. It removes the forced radiant-quest spam between Companions story missions, making the faction questline feel like a natural story progression rather than a grind. By Parapets, whose other mods (`Barter Limit Fix`, `MCM Helper`) are already core to the stack. → `08b`
-- Use `Val Serano - Pirate Custom Voiced Follower and Quest Adventure` as the custom-follower-with-quest baseline. It fills a different niche from the large worldspace mods: a character-driven pirate story with ~2000 voiced lines that integrates into the existing Skyrim world rather than adding a new landmass. Has LoTD museum integration, which matters for `modlist-13.md`. Verify the Nexus URL before final lock-in. → `08b`
-- Review any chosen quest route later against `modlist-13.md` so `Legacy of the Dragonborn` integration value and patch pressure are considered on purpose. → `08b`
+- Use `Val Serano - Pirate Custom Voiced Follower and Quest Adventure` as the custom-follower-with-quest baseline. It fills a different niche from the large worldspace mods: a character-driven pirate story with ~2000 voiced lines that integrates into the existing Skyrim world rather than adding a new landmass. Has LoTD museum integration, which matters for `modlist-12.md`. Verify the Nexus URL before final lock-in. → `08b`
+- Review any chosen quest route later against `modlist-12.md` so `Legacy of the Dragonborn` integration value and patch pressure are considered on purpose. → `08b`
 - Add `Penitus Oculatus` as a locked alternative-faction route. It gives players who choose the "Destroy the Dark Brotherhood!" path a meaningful replacement faction with radiant quests and a final elimination mission. The mod ensures the anti-DB choice has real gameplay payoff rather than being a dead-end quest branch. Lock it as a core recommendation — it does not replace the DB for players who join them, only activates for the destroy path. → `08b`
-- Add `Quests Are In Skyrim` as an optional map-navigation helper. Its Synthesis patcher (`QuestsAreInSkyrimPatcher`, listed in `modlist-15.md`) is needed to forward its changes alongside other quest-modifying mods. Keep it optional because it changes how the player discovers quests (map markers rather than natural exploration) and should be a player-preference toggle. → `08b`
+- Add `Quests Are In Skyrim` as an optional map-navigation helper. Its Synthesis patcher (`QuestsAreInSkyrimPatcher`, listed in `modlist-14.md`) is needed to forward its changes alongside other quest-modifying mods. Keep it optional because it changes how the player discovers quests (map markers rather than natural exploration) and should be a player-preference toggle. → `08b`
 - Add `The Forgotten City - Delayed Start` as an optional companion for `The Forgotten City`. The base mod's default level-5 trigger is too early for the story's weight; this delays it to level 25. Lock it only if The Forgotten City is locked in the core list. → `08b`
 - Add `The Gray Cowl of Nocturnal - 10th Anniversary` as an optional large quest addition in the thief-themed new-lands category. It is a substantial DLC-sized mod that overlaps tonally with stealth/rogue playthroughs. Keep it optional because its trigger condition (stealing/pickpocketing at level 10+) assumes a thief character, and its new lands add content pressure (Missives support, LoTD patch, landscape compatibility). If locked, add the companion patches (`Addons Repository` for optional addons, `Bounty Fix` for the bounty bug, `We Don't Need Two Boards` for Missives users) as optional stacked fixes. → `08b`
 - Add `The Isle Of Valefrost SE` as an optional new-lands addition in the frozen-island category. It is a fully voiced new-lands mod with 50+ quests and dynamic village progression, distinct from the other new-lands entries in the section (Bruma, Wyrmstooth, Beyond Reach). Keep it optional because its v2.x save-incompatibility note (requires new game for v1.x upgraders) and its restrictive mod policy (no patches/translations without author permission) make it a commit decision rather than a casual add-on. → `08b`
@@ -423,7 +431,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 ### Core Idea
 
 - This subsection owns where `Elder Wilds` should let the player settle, recover, organize gear, and invest long-term effort. → `08c`
-- It must stay disciplined enough that display-heavy housing does not quietly duplicate the role already reserved for `Legacy of the Dragonborn` in `modlist-13.md`. → `08c`
+- It must stay disciplined enough that display-heavy housing does not quietly duplicate the role already reserved for `Legacy of the Dragonborn` in `modlist-12.md`. → `08c`
 
 ### Options
 
@@ -445,7 +453,7 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 - Keep `Blackthorn - A Buildable Town in The Rift (SE)` in the caution bucket unless modern testing proves its terrain and compatibility concerns are manageable. → `08c`
 - Add `Stormwatch Castle` as the purchasable-castle comparison — a mid-budget castle home (35K gold) that fills the gap between small inn room and full estate. Its `Hearthfire multiple adoptions` dependency means it works best as a family home for players who want the adoption layer. → `08c`
 - Add `Hearthfire multiple adoptions` as the required family-housing companion if `Stormwatch Castle` (or any other family-compatible home) is selected. It is a foundational mod for any home that supports child adoption beyond the vanilla 2-child limit, not a standalone home pick. → `08c`
-- Keep display-heavy mansions separate from the museum or safehouse question reserved for `modlist-13.md`. → `08c`
+- Keep display-heavy mansions separate from the museum or safehouse question reserved for `modlist-12.md`. → `08c`
 
 ### Risks & Compatibility
 
@@ -488,14 +496,14 @@ Add `Lore Friendly Roadside Ruins` - Nexus: <https://www.nexusmods.com/skyrimspe
 
 After completing this section, verify stability with the coc console command at these 6 locations:
 
-| # | Command | Location | Stress Profile |
-|---|---------|----------|----------------|
-| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
-| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
-| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
-| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
-| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
-| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
+| # | Command                    | Location                 | Stress Profile                                               |
+|---|----------------------------|--------------------------|--------------------------------------------------------------|
+| 1 | `coc Whiterun`             | Whiterun                 | Major city — NPCs, shadows, architecture density             |
+| 2 | `coc Solitude`             | Solitude                 | Large city — water reflections, long draw distances          |
+| 3 | `coc RiftenOrigin`         | Riften                   | Canopy lighting, heavy NPC AI packages                       |
+| 4 | `coc MarkarthOrigin`       | Markarth                 | Dwemer stone, waterfalls, extreme verticality                |
+| 5 | `coc Riverwood`            | Riverwood                | Forest exterior — grass, trees, landscape LOD                |
+| 6 | `coc BleakFallsBarrow01`   | Bleak Falls Barrow       | Interior dungeon — close-quarters lighting                   |
 | 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
 
 **Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).

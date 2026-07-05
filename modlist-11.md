@@ -6,14 +6,14 @@
 
 ### Core Idea
 
-- This section is not where `Elder Wilds` decides its core combat system or baseline survival framework. `modlist-04.md` already owns combat direction, and `modlist-05.md` already owns survival baseline. → `11a`
+- This section is not where `Elder Wilds` decides its core combat system or baseline survival framework. `modlist-05.md` already owns combat direction, and `modlist-06.md` already owns survival baseline. → `11a`
 - What this section does own is cross-load-order pressure: how quickly the world starts pushing back, how clearly dungeon progression reads, and whether difficulty comes from better structure instead of blunt stat inflation.
 
 ### Options
 
 - Structured progression route: `Arena - An Encounter Zone Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33487> → `11a`
 - Minimal intervention route: leave encounter zones close to vanilla and let later tuning come from enemy behavior, attrition, and player-side restraint.
-- Heavy world-structure route: if the project later wants deleveled loot and stronger world gating, let that decision stay in `modlist-05.md`'s economy-and-loot ownership instead of duplicating it here. → `11a`
+- Heavy world-structure route: if the project later wants deleveled loot and stronger world gating, let that decision stay in `modlist-06.md`'s economy-and-loot ownership instead of duplicating it here. → `11a`
 
 ### Recommendation
 
@@ -38,7 +38,7 @@
 
 ### Core Idea
 
-- This subsection is about tuning encounter harshness and time-to-kill on top of the combat framework chosen in `modlist-04.md`, not replacing that framework with a second major combat overhaul. → `11a`
+- This subsection is about tuning encounter harshness and time-to-kill on top of the combat framework chosen in `modlist-05.md`, not replacing that framework with a second major combat overhaul. → `11a`
 - The goal is shorter, tenser fights and less stat-bloat without stepping on the `Valhalla Combat` and broader third-person ownership already recorded earlier in the plan. → `11a`
 
 ### Options
@@ -104,7 +104,7 @@
 ### Core Idea
 
 - This subsection is about attrition that lingers beyond a single swing: drained stamina, shaken nerves, enforced downtime, and the feeling that repeated bad fights accumulate a cost.
-- It should reinforce travel rhythm and danger, not duplicate the entire survival framework from `modlist-05.md` or replace the combat rules from `modlist-04.md`. → `11c`
+- It should reinforce travel rhythm and danger, not duplicate the entire survival framework from `modlist-06.md` or replace the combat rules from `modlist-05.md`. → `11c`
 
 ### Options
 
@@ -167,7 +167,7 @@
 
 ### Core Idea
 
-- `modlist-05.md` already owns which survival framework wins. This subsection owns how later difficulty and pressure choices interact with that framework once the rest of the load order is in place. → `11c`
+- `modlist-06.md` already owns which survival framework wins. This subsection owns how later difficulty and pressure choices interact with that framework once the rest of the load order is in place. → `11c`
 - The goal is to make survival, combat pressure, and downtime feel mutually reinforcing rather than like separate punishment meters.
 
 ### Options
@@ -180,7 +180,7 @@
 
 - Use the additive route.
 - This is another reason `Stress and Fear` currently looks stronger here than a heavier injury system: it naturally plugs into meals, inns, sleep, and calmer downtime instead of trying to become a second survival overhaul. → `11c`
-- If `Starfrost` remains the baseline from `modlist-05.md`, section 11 should amplify the need to recover without forcing constant menu babysitting or a pile of overlapping bodily debuffs. → `11c`
+- If `Starfrost` remains the baseline from `modlist-06.md`, section 11 should amplify the need to recover without forcing constant menu babysitting or a pile of overlapping bodily debuffs. → `11c`
 - Optional cold-weather visual companion: `Cold Breath NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174838> (v1.8, May 2026) — replaces the vanilla breath-vapor effect with higher-fidelity, more visible fogged breath in cold environments. Mesh and particle replacer, no ESP, compatible with all weather and survival frameworks. Adds atmosphere to cold-region and survival travel without script overhead. → `11c`
 - Judge compatibility on travel loops: long wilderness walks, one ruin dive, return to settlement, prepare again. If those loops feel richer, this subsection is doing its job.
 

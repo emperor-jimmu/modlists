@@ -26,20 +26,21 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 ## Current Structure
 
-- `modlist-01.md` through `modlist-17.md` are the active numbered sections.
-- Current section titles: `Foundations and Compatibility`, `Modern Graphics`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Modernized UI`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Targeted Bugfix Mods`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow`, `Adult Content`, `Main Character Voicing`.
-- `modlist-01.md` (80 lines), `modlist-02b.md` (1066 lines), and `modlist-09.md` (257 lines) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
-- `modlist-03.md` (373 lines, `Animations and Movement`) and `modlist-04.md` (293 lines, `Third-Person Gameplay`) are fully expanded and treated as established baselines.
-- `modlist-05.md` (722 lines, `Expanded Systems`) is fully expanded and locked.
-- `modlist-06.md` (413 lines, `Modernized UI`) is locked. Baseline picks: `SkyUI` + `Oathvein UI`, `SkyHUD` + `TrueHUD`, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS`, `Sovngarde Font`.
-- `modlist-07.md` (336 lines, `Immersive Scale and World Feel`) is moderately expanded but still an open research area.
-- `modlist-08.md` (378 lines, `World Content`) has moderate content and is an active development area with recent mod pick additions (Fishing, Evolving Locations, quest content).
-- `modlist-10.md` (262 lines, `Audio and Feedback`), `modlist-11.md` (226 lines, `Survival, Difficulty, and Balance`), and `modlist-15.md` (849 lines, `Performance and Technical Workflow`) each have expanded content and are open research areas.
-- `modlist-14.md` (182 lines, `Modlist Curation Rules and Testing Plan`) is the expanded meta-section combining curation guardrails and testing verification.
-- `modlist-01.md` (Targeted Bugfix Mods) (78 lines, `Targeted Bugfix Mods`) is the separate bucket for concrete vanilla-problem fixes.
-- `modlist-13.md` (116 lines, `Legacy of the Dragonborn`) owns the museum baseline, key companion utilities, and LoTD patch strategy.
-- `modlist-16.md` (194 lines, `Adult Content`) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
-- `modlist-17.md` (168 lines, `Main Character Voicing`) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
+- `modlist-01.md` through `modlist-16.md` are the active numbered sections.
+- `modlist-01.md` through `modlist-16.md` are the active numbered sections.
+- Current section titles: `Foundations and Compatibility`, `PGPatcher`, `Community Shaders`, `Textures & Meshes`, `Lighting`, `Weather & Water`, `Terrain & Flora`, `Characters & Creatures`, `LOD & Distant Detail`, `Modernized UI`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow`, `Adult Content`, `Main Character Voicing`.
+- `modlist-02b.md` (Community Shaders) and `modlist-09.md` (NPCs) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
+- `modlist-04.md` (Animations and Movement) and `modlist-05.md` (Third-Person Gameplay) are fully expanded and treated as established baselines.
+- `modlist-06.md` (Expanded Systems) is fully expanded and locked.
+- `modlist-03.md` (Modernized UI) is locked. Baseline picks: `SkyUI` + `Oathvein UI`, `SkyHUD` + `TrueHUD`, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS`, `Sovngarde Font`.
+- `modlist-07.md` (Immersive Scale and World Feel) is moderately expanded but still an open research area.
+- `modlist-08.md` (World Content) has moderate content and is an active development area with recent mod pick additions (Fishing, Evolving Locations, quest content).
+- `modlist-10.md` (Audio and Feedback), `modlist-11.md` (Survival, Difficulty, and Balance), and `modlist-14.md` (Performance and Technical Workflow) each have expanded content and are open research areas.
+- `modlist-13.md` (Modlist Curation Rules and Testing Plan) is the expanded meta-section combining curation guardrails and testing verification.
+- `modlist-01.md` (Targeted Bugfix Mods) is the separate bucket for concrete vanilla-problem fixes.
+- `modlist-12.md` (Legacy of the Dragonborn) owns the museum baseline, key companion utilities, and LoTD patch strategy.
+- `modlist-15.md` (Adult Content) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
+- `modlist-16.md` (Main Character Voicing) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
 
 ## Third-Person / Gamepad Design Directive
 
@@ -57,7 +58,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - Keep file-wide governance rules in one owning subsection instead of repeating them everywhere. Example: shared animation-stack rules should live in a single conflict-management or prerequisites subsection, not in every animation category.
 - Do not pad sections with generic quality bars or obvious testing language. Acceptance criteria should be specific to the subsection's actual decision, and research tasks should exist only when there is real unresolved research left.
 - When a section includes operational workflow content (tool setup, build order, config tables, patcher steps), preserve that functional content, but still remove duplicated framing text around it.
-- Do not collapse separate concerns together. Example: animation-side camera awareness belongs in `modlist-03.md`; broader third-person camera/gameplay framework decisions belong in `modlist-04.md`.
+- Do not collapse separate concerns together. Example: animation-side camera awareness belongs in `modlist-04.md` (Animations); broader third-person camera/gameplay framework decisions belong in `modlist-05.md` (Third-Person Gameplay).
 - Preserve established ownership decisions unless the user asks to revisit them. Current key animation ownership: `Pandora` for behavior generation, `XPMSSE` for skeleton assumptions, `Open Animation Replacer` for conditional selection.
 
 ## Mod Link Verification Rules

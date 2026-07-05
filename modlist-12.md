@@ -1,3 +1,135 @@
-# Targeted Bugfix Mods
+# Legacy of the Dragonborn
 
-> **Moved**: This content has been consolidated into [`modlist-01.md`](modlist-01.md) under the `## Targeted Bugfix Mods` section. Targeted bugfixes should be applied from the very first mods — they are part of the foundation, not a late-stage category.
+**MO2 Separator:** `12 Legacy of the Dragonborn`
+
+## Core Mod → `12` Baseline
+
+### Core Idea
+
+This section owns the `Legacy of the Dragonborn` baseline for `Elder Wilds`: the museum itself, the collection-driven play loop it introduces, and the immediate support mods needed to make that framework practical inside a larger curated load order.
+
+The goal is to treat `Legacy of the Dragonborn` as a foundational content pillar for the final list, not as a late optional extra bolted onto an already-finished setup.
+
+### Suggested Options
+
+- Master mod route: use `Legacy of the Dragonborn` as the non-negotiable centerpiece if `Elder Wilds` is committing to museum progression, artifact collection, and the supported patch ecosystem that follows from that decision. → `12`
+- Companion utility route: add `The Curator's Companion` if the list wants cleaner in-game tracking for what the museum can display and what the player has already found. → `12`
+- Integration baseline route: plan around the official `Legacy of the Dragonborn` patch collection once the supporting quest, item, and world-content stack is firm enough to justify concrete patch picks. → `12`
+- User-specified LoTD support route: include the additional Nexus entries `13279`, `16080`, and `131107` as part of the LoTD ecosystem under active curation for this list. → `12`
+
+### Recommendation
+
+Treat `Legacy of the Dragonborn` as a deliberate list pillar. Start from the museum-first assumption, keep `The Curator's Companion` as the most likely quality-of-life companion, and treat the official patch collection as required integration infrastructure once the related content mods are locked.
+
+### Why This Is The Right Baseline
+
+If `Elder Wilds` is going to incorporate `Legacy of the Dragonborn`, the list should acknowledge the real design consequence: artifact discovery, unique-item routing, and compatibility planning all change. That makes `Legacy of the Dragonborn` closer to a structural content framework than to an ordinary quest mod. Planning around it early is cleaner than trying to retrofit it after world content, quest expansions, and item mods are already scattered across the repo.
+
+## Supported Content → `12` Mods And Museum Integration
+
+### Core Idea
+
+This subsection tracks the kinds of mods that should be evaluated partly through the `Legacy of the Dragonborn` lens: quest mods, new lands, artifact packs, item expansions, player homes, and other content that may gain museum displays, sorting support, relic integration, or official patch coverage.
+
+### Working Guidance For Elder Wilds
+
+- Use `Legacy of the Dragonborn` support as an explicit evaluation criterion for later quest and content picks, not as an afterthought. → `12`
+- Prefer content mods with mature `Legacy of the Dragonborn` integration when two otherwise similar candidates solve the same design goal. → `12`
+- Keep museum-supported content distinct from content that merely coexists with `Legacy of the Dragonborn` but adds no meaningful display, relic, or progression value.
+- Do not let museum support override core fit, tone, performance, or maintenance quality if a supported mod is otherwise a weak match for `Elder Wilds`. → `12`
+
+### Candidate Mod Buckets To Track
+
+- Official master content: `Legacy of the Dragonborn` — <https://www.nexusmods.com/skyrimspecialedition/mods/11802>.
+- Museum tracking support: `The Curator's Companion` — <https://www.nexusmods.com/skyrimspecialedition/mods/38529>. → `12`
+- Official patch hub: `Legacy of the Dragonborn Patches (Official)` — <https://www.nexusmods.com/skyrimspecialedition/mods/30980>. → `12`
+- User-provided verified Nexus entries to retain in this LoTD planning set: **13279** — *Paintings Replacer for Legacy of the Dragonborn SSE* (v1.1, last updated Nov 2017 — ⚠️ texture replacer, low risk of breakage but unmaintained); **16080** — *Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art* (v01, last updated Mar 2018 — ⚠️ same caveat); **131107** — *Placeable Display Cases* (v3.1, last updated Jan 2025).
+- Content with common `Legacy of the Dragonborn` integration pressure: major quest mods, artifact packs, unique-item expansions, new lands, treasure-hunt content, and player-home mods that may overlap with relic storage or collection routing.
+
+## Patch Strategy → `12` For LoTD Support
+
+### Core Idea
+
+This subsection owns the patch philosophy for a `Legacy of the Dragonborn` build. The main decision is not whether patches exist, but how disciplined the list will be about only enabling the specific museum patches that correspond to finalized content picks.
+
+### Recommendation
+
+Use the official `Legacy of the Dragonborn` patch collection as the default patch source wherever it cleanly covers a chosen mod. Add third-party `Legacy of the Dragonborn` patches only when the official collection does not cover a finalized mod and the patch has a clear maintenance story.
+
+### Working Guidance For Elder Wilds
+
+- Treat `Legacy of the Dragonborn Patches (Official)` as the primary integration layer. → `12`
+- Do not pre-install broad patch bundles for mods that are still only hypothetical.
+- Only keep patches for mods that survive into the actual final stack.
+- Re-check load order, museum sorting behavior, and display activation after each major content addition.
+- Keep patch ownership readable so `Legacy of the Dragonborn` compatibility does not disappear into an opaque misc-patches bucket. → `12`
+
+## Submods → `12` And Quality-Of-Life Support
+
+### Core Idea
+
+This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around the master mod: collection tracking, museum usability, and any later chosen add-ons that materially improve the museum loop without redefining the rest of the modlist.
+
+### Suggested Options
+
+- Tracking support: `The Curator's Companion` as the leading companion mod for collection-state visibility. → `12`
+- Achievement framework route: `Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/126220> → `12`
+- Museum-achievement package route: `Legacy of the Dragonborn - Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130114> → `12`
+- Patch support: `Legacy of the Dragonborn Patches (Official)` as the expected main patch package. → `12`
+- Additional included ecosystem entries: keep `13279` (Paintings Replacer for Legacy of the Dragonborn SSE), `16080` (Fate Cards Re-texture), and `131107` (Placeable Display Cases) in the LoTD support bucket for this modlist. → `12`
+- Additional submods: only add museum-side submods or display extensions if they solve a real usability or integration problem in the finalized stack.
+
+### Risks To Check
+
+- `Legacy of the Dragonborn` can quietly drag the whole load order toward completionist design even when another section wants a lighter exploration tone. → `12`
+- It increases patching pressure across quests, artifacts, and world-content mods, so late list churn becomes more expensive.
+- Museum-first progression can change the perceived value of loot and unique-item mods in ways that affect later curation decisions.
+- Utility add-ons can accumulate quickly if every museum friction point gets its own extra plugin.
+- Achievement-side add-ons should stay scoped: `Achievement Injector` is the framework, while `Legacy of the Dragonborn - Achievement Injector` is only one content package that uses it. → `12`
+
+## What Elder Wilds Should Prioritize
+
+- A clear decision that `Legacy of the Dragonborn` is part of the list's identity, not a maybe-later branch.
+- Clean museum integration for any finalized supported quest or artifact mods.
+- Preservation of explicitly requested LoTD-related additions even where exact mod titles still need to be re-read from Nexus in a browser session.
+- Disciplined patch selection tied to real chosen mods rather than speculative future content.
+- A museum loop that complements exploration and world-content goals instead of overwhelming them.
+- Clear documentation of which later sections are expected to account for `Legacy of the Dragonborn` support.
+
+## Research Tasks → `12`
+
+- Verify the canonical Nexus page for `Legacy of the Dragonborn` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v6.10.1, updated 22 May 2026, author icecreamassassin — <https://www.nexusmods.com/skyrimspecialedition/mods/11802> → `12`
+- Verify the canonical Nexus page for `The Curator's Companion` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v7.0.8, updated 30 Oct 2025 — <https://www.nexusmods.com/skyrimspecialedition/mods/38529> → `12`
+- Verify the canonical Nexus page for `Legacy of the Dragonborn Patches (Official)` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v6.10.7, updated 04 Jun 2026 — <https://www.nexusmods.com/skyrimspecialedition/mods/30980> → `12`
+- Verify the canonical Nexus page for `Achievement Injector` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v1.2.3, updated 03 Jan 2025 — <https://www.nexusmods.com/skyrimspecialedition/mods/126220> → `12`
+- Verify the canonical Nexus page for `Legacy of the Dragonborn - Achievement Injector` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v1.0, updated 02 Oct 2024 — <https://www.nexusmods.com/skyrimspecialedition/mods/130114> → `12`
+- Re-open the user-provided Nexus pages `13279`, `16080`, and `131107` in an interactive browser session later to record their exact canonical mod titles alongside the already-supplied URLs. **Resolved (Jun 2026):** `13279` — *Paintings Replacer for Legacy of the Dragonborn SSE* (v1.1, Nov 2017, texture replacer); `16080` — *Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art* (v01, Mar 2018, texture replacer); `131107` — *Placeable Display Cases* (v3.1, Jan 2025). Note: the two 2017-2018 texture mods are ancient but functional (textures do not break with engine updates); they contribute to the staleness threshold but are low-risk. → `12`
+- As `modlist-08.md` and later content sections expand, record which chosen mods have official `Legacy of the Dragonborn` support and which require third-party patches. → `12`
+- Decide whether any museum-side submods beyond `The Curators Companion` are justified by actual play friction rather than by ecosystem sprawl. → `12`
+- Check whether storage, display activation, and museum progression create any conflicts with the intended roleplay and pacing tone of `Elder Wilds`. → `12`
+
+## Acceptance Criteria → `12`
+
+- `Elder Wilds` explicitly treats `Legacy of the Dragonborn` as a supported core content pillar. → `12`
+- The master mod, key companion utility, and official patch collection are identified in one dedicated section file.
+- The museum-achievement route is documented with the framework mod and the LoTD-specific achievement package kept distinct.
+- Later quest and content decisions can refer back to a clear `Legacy of the Dragonborn` integration policy. → `12`
+- Only verified Nexus URLs should be added to `mods-checklist.md` once link verification is complete. → `12`
+
+## Post-Install Smoke Test
+
+After completing this section, verify stability with the coc console command at these 6 locations:
+
+| # | Command | Location | Stress Profile |
+|---|---------|----------|----------------|
+| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
+| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
+| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
+| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
+| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
+| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
+| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
+
+**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
+
+If any location fails, the most recently installed mod or generation step is the first suspect.

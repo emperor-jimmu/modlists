@@ -127,6 +127,9 @@
 - Magic-specialization route: `Airgetlam -Modern Magic Sounds Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51541> → `10b`
 - Shout-specialization route: `Airgetlam - Shouts SFX -` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/90696> → `10b`
 - Voice-and-sfx bundle route: `Phoenix Compendium` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/55221> → `10b`
+- Word-wall audio route: `Dragon-Voiced Word Walls` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/144947> — adds dragon-voice audio effects when the player reads word walls, making shout discovery feel more dramatic and connected to dragon lore. Audio-only, no ESP. → `10b`
+- Potion-sound route: `Magical Potion Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138932> — replaces vanilla potion-drinking sound effects with more satisfying, arcane-flavored audio. Lightweight, no script overhead. → `10b`
+- Underwater-audio route: `Underwater Loop and Swimming Sounds` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/143141> — improves underwater audio with better swimming sounds, ambient water loops, and more immersive drowning/breathing feedback. No ESP, SKSE plugin. → `10b`
 
 ### Recommendation
 
@@ -138,7 +141,7 @@
 ### Risks & Compatibility
 
 - Stacking several combat-sfx mods can make the soundscape harsher and less readable rather than more satisfying.
-- Magic-audio changes can collide conceptually with later magic-overhaul choices from `modlist-05.md`. → `10b`
+- Magic-audio changes can collide conceptually with later magic-overhaul choices from `modlist-06.md`. → `10b`
 - Voice-heavy reworks are easy to overdo and can shift the game's tone faster than intended.
 
 ### Acceptance Criteria
@@ -222,7 +225,7 @@
 ### Core Idea
 
 - This subsection covers menu clicks, activation feedback, and other interface-adjacent sounds that shape moment-to-moment feel.
-- It does not own the UI framework, HUD layout, or controller-navigation choices already tracked in `modlist-06.md`. → `10b`
+- It does not own the UI framework, HUD layout, or controller-navigation choices already tracked in `modlist-03.md`. → `10b`
 
 ### Options
 
@@ -272,6 +275,7 @@
 - Giant and large-creature route: `Colossus -Giants SFX Voice Rework` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/52041> (last updated July 2021; audio replacer, functionally stable) → `10b`
 - Ghost and undead-presence route: `Phantasmagoria -Ghosts SFX Voice Rework-` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50060> (last updated May 2021; audio replacer, functionally stable) → `10b`
 - Daedric-entity stylization route: `Daedric Enigma - Dusk` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157380> → `10b`
+- Boss-voice rework route: `Arch-Curate Vyrthur Revoiced` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/145795> — replaces Vyrthur's generic Falmer voice with a unique voiced performance for the Dawnguard boss encounter. Adds weight to a major quest-boss confrontation. Audio-only, no gameplay changes. → `10b`
 - Broad stylization route: consider broader voice-side audio reworks such as `Phoenix Compendium` only if the project explicitly wants stronger character-audio stylization. → `10b`
 - Bugfix-only route: keep subtitle and silent-dialogue support in `modlist-01.md` (Targeted Bugfix Mods). → `10b`
 
@@ -283,7 +287,7 @@
 - Keep `Phantasmagoria` as the main ghost-side comparison if undead ambience and ghost presence still feel weak after the broad framework lands. → `10b`
 - Keep `Daedric Enigma - Dusk` as the higher-stylization branch only if the list later decides major Daedric encounters should sound much more authored than vanilla. The current `Dusk` version (September 2025) supersedes the original 2020–2021 release and is maintained. → `10b`
 - Keep `Fuz Ro D-oh - Silent Voice` and similar bugfix ownership in `modlist-01.md` (Targeted Bugfix Mods). → `10b`
-- Keep dialogue UI ownership in `modlist-06.md`. → `10b`
+- Keep dialogue UI ownership in `modlist-03.md`. → `10b`
 - Only revisit broader voice-side bundles such as `Phoenix Compendium` if later testing shows that the chosen soundtrack and sound framework make vanilla voice presentation feel uniquely out of place. → `10b`
 
 ### Risks & Compatibility
@@ -312,14 +316,14 @@
 
 After completing this section, verify stability with the coc console command at these 6 locations:
 
-| # | Command | Location | Stress Profile |
-|---|---------|----------|----------------|
-| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
-| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
-| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
-| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
-| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
-| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
+| # | Command                    | Location                 | Stress Profile                                               |
+|---|----------------------------|--------------------------|--------------------------------------------------------------|
+| 1 | `coc Whiterun`             | Whiterun                 | Major city — NPCs, shadows, architecture density             |
+| 2 | `coc Solitude`             | Solitude                 | Large city — water reflections, long draw distances          |
+| 3 | `coc RiftenOrigin`         | Riften                   | Canopy lighting, heavy NPC AI packages                       |
+| 4 | `coc MarkarthOrigin`       | Markarth                 | Dwemer stone, waterfalls, extreme verticality                |
+| 5 | `coc Riverwood`            | Riverwood                | Forest exterior — grass, trees, landscape LOD                |
+| 6 | `coc BleakFallsBarrow01`   | Bleak Falls Barrow       | Interior dungeon — close-quarters lighting                   |
 | 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
 
 **Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
