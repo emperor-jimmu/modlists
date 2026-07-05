@@ -6,102 +6,70 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ## Shader Performance Impact → `Performance`
 
-### Core Idea
+Section `Graphics` already owns the visual framework. This subsection owns the performance envelope that framework is allowed to occupy. The practical question is not whether shader features look good; it is which ones are worth their measurable cost in real travel scenes.
 
-- Section `Graphics` already owns the visual framework. This subsection owns the performance envelope that framework is allowed to occupy. → `Performance`
-- The practical question is not whether shader features look good; it is which ones are worth their measurable cost in real travel scenes.
+### Baseline
 
-### Options
-
-- Conservative route: keep the `Community Shaders` stack close to the section-02 baseline. → `Performance`
-- Balanced route: accept a few heavier depth or lighting features once the rest of the visual stack is stable.
-- Luxury route: keep piling on expensive modules, then try to recover the cost elsewhere.
-
-### Recommendation
-
-- Stay between the conservative and balanced routes.
+- **Conservative to balanced route** — Accept a few heavier depth or lighting features once the rest of the visual stack is stable.
 - Remove or downgrade luxury modules before tearing apart the rest of the graphics stack.
 - Keep `Skyrim Upscaler` as a fallback tool from section `Graphics`, not the first answer to poor optimization discipline. → `Performance`
 - Use the existing `SSE Display Tweaks` baseline from section `Foundations` to enforce a stable frame cap once the real sustained performance target is known. → `Performance`
 - Judge shader cost in motion, weather transitions, and dense foliage scenes instead of still screenshots.
 
-### Risks & Compatibility
+### Alternatives
+
+- **Conservative route** — Keep the `Community Shaders` stack close to the section-02 baseline. → `Performance`
+- **Luxury route** — Keep piling on expensive modules, then try to recover the cost elsewhere.
+
+### Notes
 
 - Heavier shader modules can shift the bottleneck hard toward GPU cost while the list still looks only marginally better in play.
 - Frame generation, upscaling, or frame-cap tuning can hide weak baseline decisions instead of fixing them.
 - A beautiful static scene can still fail if traversal frame pacing is poor.
 
-### Acceptance Criteria
-
-- The chosen shader stack has a measured cost the list is willing to keep.
-- The sustained frame target feels stable in forest and city traversal, not just indoors.
-- Optional luxury features are disabled unless they visibly justify their cost.
-
 ## Grass, Tree, And Draw-Call Optimization → `Performance`
 
-### Core Idea
+Exterior performance in a wilderness-heavy list is often limited by draw calls, clutter density, and visibility complexity, not only raw GPU power. This subsection decides how aggressive `Elder Wilds` should be about invisible optimization helpers once the visual direction is already known.
 
-- Exterior performance in a wilderness-heavy list is often limited by draw calls, clutter density, and visibility complexity, not only raw GPU power.
-- This subsection decides how aggressive `Elder Wilds` should be about invisible optimization helpers once the visual direction is already known. → `Performance`
+### Baseline
 
-### Options
-
-- Content-restraint route: solve most exterior cost by choosing lighter trees, lighter grass, and fewer stacked clutter edits.
-- Low-maintenance optimization route: add invisible cleanup layers that reduce wasted references with modest compatibility cost.
-- High-maintenance optimization route: add occlusion-heavy optimization mods that can improve bad scenes more dramatically but create broad patch debt.
-
-### Recommendation
-
-- Use content restraint first, then the low-maintenance optimization route.
-- Treat `Lightened Skyrim` as the leading optimization branch because its page and community use both support it as an almost invisible cleanup layer with relatively low drama. → `Performance`
-- Treat `eFPS - Exterior FPS boost` as an optional branch only if real testing shows that exterior draw-call pressure still needs more help after the main world stack is stable. → `Performance`
-- If `eFPS` is used, plan for patch coverage as part of the worldspace stack rather than pretending it is a free install. → `Performance`
+- **Content restraint first, then low-maintenance optimization route**.
+- **Lightened Skyrim** — Leading optimization branch. Community support and mod page both describe it as an almost invisible cleanup layer with relatively low drama. → `Performance`
+- **eFPS - Exterior FPS boost** — Optional branch only if real testing shows exterior draw-call pressure still needs more help after the main world stack is stable. If used, plan for patch coverage as part of the worldspace stack. → `Performance`
 - Re-evaluate exterior optimization after major city, roadside, tree, or world-content choices, because those categories move the bottleneck more than INI tweaks do.
 
-### Risks & Compatibility
+### Alternatives
+
+- **Content-restraint route** — Solve most exterior cost by choosing lighter trees, lighter grass, and fewer stacked clutter edits.
+- **High-maintenance optimization route** — Add occlusion-heavy optimization mods that can improve bad scenes more dramatically but create broad patch debt.
+
+### Notes
 
 - `eFPS` has strong upside, but both its own page and current Reddit signal point to real compatibility and patch-maintenance overhead for lists with heavy exterior edits. → `Performance`
 - Optimization layers can create missing-geometry or bad-occlusion symptoms if installed casually into a moving worldspace stack.
 - Heavy cities, outskirts, roads, trees, and landmark mods can erase optimization gains faster than tweak mods can recover them.
 
-### Acceptance Criteria
-
-- Exterior travel remains stable in forests, town approaches, and heavy roadside scenes without obvious culling errors.
-- `Lightened Skyrim` or `eFPS` is kept only if it materially improves difficult scenes. → `Performance`
-- Any chosen optimization layer has known patch coverage and rebuild implications documented.
-
 ## INI Tuning And Display Settings → `Performance`
 
-### Core Idea
+INI tuning should normalize and document the setup, not become a pile of mystery fixes no one remembers later. The best INI workflow is the one that can be reproduced cleanly in `Mod Organizer 2` without guesswork.
 
-- INI tuning should normalize and document the setup, not become a pile of mystery fixes no one remembers later.
-- The best INI workflow is the one that can be reproduced cleanly in `Mod Organizer 2` without guesswork. → `Performance`
+### Baseline
 
-### Options
-
-- Manual-edit route: hand-edit multiple INIs and hope the final state stays understandable.
-- Tool-first route: use one reliable editor for the baseline, then keep only a few deliberate manual overrides.
-- Constant-tweaking route: keep changing presets and overrides every time performance changes.
-
-### Recommendation
-
-- Use the tool-first route.
-- Use `BethINI Pie` as the baseline editor because it gives `Elder Wilds` a reproducible preset-and-recommended-tweaks starting point instead of scattered manual edits. → `Performance`
+- **Tool-first route** — Use `BethINI Pie` as the baseline editor. It gives `Elder Wilds` a reproducible preset-and-recommended-tweaks starting point instead of scattered manual edits. → `Performance`
 - For `MO2`, keep the INI path behavior simple and documented rather than forcing unusual file redirection unless a guide specifically requires it. → `Performance`
 - After the baseline is set, keep only a short list of manual overrides that are actually justified by the final display, shadow, or frame-cap target.
 - Let `SSE Display Tweaks` handle display behavior and frame pacing choices that belong there instead of fighting them through unrelated INI changes. → `Performance`
 
-### Risks & Compatibility
+### Alternatives
+
+- **Manual-edit route** — Hand-edit multiple INIs and hope the final state stays understandable.
+- **Constant-tweaking route** — Keep changing presets and overrides every time performance changes.
+
+### Notes
 
 - Aggressive or undocumented INI changes can make later troubleshooting impossible.
 - BethINI-related confusion usually comes from path handling and profile expectations, not from the tool magically fixing every performance issue.
 - Repeated preset flipping can hide which change actually helped.
-
-### Acceptance Criteria
-
-- A clean profile can reproduce the same baseline INI state without guesswork.
-- Manual overrides are short, documented, and intentional.
-- Display behavior, shadow settings, and frame-cap logic stay consistent across rebuilds.
 
 ### BethINI Pie Configuration Baseline
 
@@ -143,33 +111,22 @@ Run BethINI Pie through MO2 so it targets the active profile INIs. The configura
 
 ## Save Safety Considerations → `Performance`
 
-### Core Idea
+Performance work can destabilize saves when it involves worldspace edits, generated outputs, or scripted systems that are added and removed carelessly. Save safety here means protecting the testing process as much as protecting a future long playthrough.
 
-- Performance work can destabilize saves when it involves worldspace edits, generated outputs, or scripted systems that are added and removed carelessly.
-- Save safety here means protecting the testing process as much as protecting a future long playthrough.
+### Baseline
 
-### Options
-
-- One-save route: keep testing everything on the same long-running save.
-- Disposable-test route: use category-specific test saves and replace them freely when the stack changes materially.
-- Overcautious route: restart for every small change even when it adds no safety value.
-
-### Recommendation
-
-- Use the disposable-test route.
-- Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability testing.
-- Start a new game when adding major worldspace optimization layers such as `eFPS` if that branch is adopted, because the mod page itself recommends fresh-start caution. → `Performance`
+- **Disposable-test route** — Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability testing.
+- Start a new game when adding major worldspace optimization layers such as `eFPS` if that branch is adopted (the mod page recommends fresh-start caution). → `Performance`
 - Do not treat old generated outputs, removed scripted mods, or stale occlusion data as safe enough just because the game still loads.
 - Preserve one or two mature long-session saves only for validation, not for endless experimental churn.
 
-### Risks & Compatibility
+### Alternatives
+
+- **One-save route** — Keep testing everything on the same long-running save.
+- **Overcautious route** — Restart for every small change even when it adds no safety value.
+
+### Notes
 
 - Save corruption or instability can present as performance degradation long before it looks like a hard failure.
 - Reusing one heavily mutated test save makes conclusions about optimization quality far less trustworthy.
 - Generated-output mismatches can poison a save comparison without being obvious at first glance.
-
-### Acceptance Criteria
-
-- The section has a small repeatable save set with clear roles.
-- Major worldspace or generated-output changes do not rely on a single heavily mutated test save.
-- Long-session validation saves remain useful enough to catch real degradation.

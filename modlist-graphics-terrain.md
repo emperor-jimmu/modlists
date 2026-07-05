@@ -4,146 +4,110 @@
 
 ## Terrain, Roads, And Snow → `Graphics - Terrain & Flora`
 
-### Core Idea
+Treat terrain, roads, and snow as one connected presentation layer instead of three isolated texture choices. This layer has to stay coherent with Community Shaders, PBR support, rock meshes, weather, and later LOD generation.
 
-- Treat terrain, roads, and snow as one connected presentation layer instead of three isolated texture choices.
-- This layer has to stay coherent with Community Shaders, PBR support, rock meshes, weather, and later LOD generation.
+### Baseline
 
-### Options
+- Use the balanced route: strong landscape and mountain materials, restrained roads, and snow chosen for coherence under CS.
+- **Better Dynamic Snow SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9121)) and **Better Dynamic Ash SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54754)) — Snow-and-ash multistage accumulation layer. Both work with `Simplicity of Snow` and the chosen snow texture baseline; the `BDSPatcher` Synthesis patcher handles mod-added objects automatically. → `Graphics - Terrain & Flora`
 
-- Conservative route: stable landscape base, simpler road setup, reliable snow consistency support.
+### Alternatives
+
+- Conservative route: stable landscape base, simpler road setup, reliable snow consistency.
 - Feature-rich route: more dramatic road and worldspace edits with higher patch cost.
-- Balanced route: strong landscape and mountain materials, restrained roads, and snow chosen for coherence under CS.
-
-### Recommendation
-
-- Use the balanced route.
-- Keep landscape and mountain materials as the visual anchor.
-- Prefer a lower-maintenance road solution unless the final worldspace and outskirts plan can clearly absorb a heavier patching route.
-- Lock snow only after confirming how it looks with the chosen landscape, rock, weather, and lighting winners.
-- Add `Better Dynamic Snow SE` and `Better Dynamic Ash SE` as the snow-and-ash multistage accumulation layer. Both work with `Simplicity of Snow` and the chosen snow texture baseline; the `BDSPatcher` Synthesis patcher handles mod-added objects automatically. → `Graphics - Terrain & Flora`
 
 ### Candidate Stack
 
 #### Landscape And Terrain
 
-- `Skyking Fantasia Landscapes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/107256> → `Graphics - Terrain & Flora`
-- `Atlantean Landscape - Majestic Edition` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/102170> → `Graphics - Terrain & Flora`
-- `Atlantean Landscape - Complete - Complex Terrain Parallax` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/89542> → `Graphics - Terrain & Flora`
-- `A Cathedralist's PBR Landscape` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/137333> → `Graphics - Terrain & Flora`
-- `TomatoRim PBR Landscapes AIO` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/177621> → `Graphics - Terrain & Flora`
-- `Vanaheimr - Landscapes - AIO - Complex Material - PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/145439> — comprehensive landscape retexture with Complex Material and PBR pipeline support. Covers multiple landscape types with consistent quality. Evaluate alongside the Cathedralist and TomatoRim candidates for final landscape identity. → `Graphics - Terrain & Flora`
-- `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336> is the modern mountain and rock overhaul (3.5K endorsements, last updated April 2025, PBR/CS-native). New material blending system, no plugins, ships with Complex Material support. Use it as the primary mountain and rock identity in place of `Majestic Mountains`. → `Graphics - Terrain & Flora`
-- `Enhanced Rocks and Mountains - Fix and Addon` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/142493> extends ERM coverage to underground spaces and the Whiterun Skyforge and is the natural companion. Drop the `Majestic Mountains` stack (11052) and `Majestic Mountains Complex Material` (87547) entirely — the author has been inactive since June 2022, the mesh is known to miss snow coverage on rock piles, and the AE compatibility story is worse than ERM's. → `Graphics - Terrain & Flora`
+- `Skyking Fantasia Landscapes` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107256)) → `Graphics - Terrain & Flora`
+- `Atlantean Landscape - Majestic Edition` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/102170)) → `Graphics - Terrain & Flora`
+- `Atlantean Landscape - Complete - Complex Terrain Parallax` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89542)) → `Graphics - Terrain & Flora`
+- `A Cathedralist's PBR Landscape` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137333)) → `Graphics - Terrain & Flora`
+- `TomatoRim PBR Landscapes AIO` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177621)) → `Graphics - Terrain & Flora`
+- `Vanaheimr - Landscapes - AIO - Complex Material - PBR` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145439)) — Comprehensive landscape retexture with Complex Material and PBR pipeline support. Evaluate alongside Cathedralist and TomatoRim candidates. → `Graphics - Terrain & Flora`
+- `Enhanced Rocks and Mountains - Complex Material and PBR` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336)) — Primary mountain and rock identity in place of Majestic Mountains. 3.5K endorsements, PBR/CS-native. No plugins, ships with Complex Material support. → `Graphics - Terrain & Flora`
+- `Enhanced Rocks and Mountains - Fix and Addon` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142493)) — Extends ERM coverage to underground spaces and Whiterun Skyforge. Drop the Majestic Mountains stack entirely (author inactive since June 2022, mesh misses snow coverage on rock piles). → `Graphics - Terrain & Flora`
 
 #### Roads
 
-- `Blended Roads - Light Plugin (ESL)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/171554> → `Graphics - Terrain & Flora`
-- `HD Remastered Blended Roads - 8k 4k 2k 1k` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63674> — HD hand-made rework of Blended Roads surface textures, designed to pair with the landscape stack. Requires Blended Roads as a base. Choose 2K for performance, 4K for the visual sweet spot; 8K is overkill at this modlist's resolution targets. → `Graphics - Terrain & Flora`
+- `Blended Roads - Light Plugin (ESL)` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171554)) → `Graphics - Terrain & Flora`
+- `HD Remastered Blended Roads - 8k 4k 2k 1k` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63674)) — HD hand-made rework of Blended Roads surface textures. Choose 2K for performance, 4K for the visual sweet spot. Requires Blended Roads as base. → `Graphics - Terrain & Flora`
 
 #### Snow And Support
 
-- `Simplicity of Snow` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/56235> → `Graphics - Terrain & Flora`
-- `Nordic Snow` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/670> → `Graphics - Terrain & Flora`
-- `Nordic Snow - Complex Material` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/133034> → `Graphics - Terrain & Flora`
-- `Hyperborean Snow SE - 8K` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/29283> remains a comparison snow candidate, not a locked baseline. → `Graphics - Terrain & Flora`
-- `Better Dynamic Snow SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/9121> — adds multistage snow accumulation and directional snow on objects, with terrain-blended snow coverage. Works alongside `Simplicity of Snow` and the chosen snow texture baseline; the `BDSPatcher` Synthesis patcher handles mod-added objects. → `Graphics - Terrain & Flora`
-- `Better Dynamic Ash SE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54754> — applies the same multistage accumulation logic to Solstheim's ash coverage, giving the island a distinct visual identity matching the snow system. Companion to `Better Dynamic Snow SE`; the Synthesis `BDSPatcher` handles both. → `Graphics - Terrain & Flora`
-- `Enhanced Rocks and Mountains - Complex Material and PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/121336> → `Graphics - Terrain & Flora`
+- `Simplicity of Snow` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56235)) → `Graphics - Terrain & Flora`
+- `Nordic Snow` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/670)) → `Graphics - Terrain & Flora`
+- `Nordic Snow - Complex Material` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133034)) → `Graphics - Terrain & Flora`
+- `Hyperborean Snow SE - 8K` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29283)) — Comparison snow candidate, not a locked baseline. → `Graphics - Terrain & Flora`
+- `Better Dynamic Snow SE` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9121)) — Multistage snow accumulation with terrain-blended coverage. Works alongside Simplicity of Snow. → `Graphics - Terrain & Flora`
+- `Better Dynamic Ash SE` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54754)) — Same multistage logic for Solstheim's ash. Companion to Better Dynamic Snow SE. → `Graphics - Terrain & Flora`
+- `Enhanced Rocks and Mountains - Complex Material and PBR` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336)) → `Graphics - Terrain & Flora`
 
-### Risks & Compatibility
+### Notes
 
 - Snow can look good in isolation and fail once mixed with mountains, roads, and weather-heavy scenes.
 - Heavy terrain parallax can look impressive up close while adding artifact risk or visual noise in motion.
 
-### Acceptance Criteria
-
-- Terrain remains readable and coherent across tundra, forest, mountain, and snowy regions.
-- Roads fit the wilderness tone without creating unreasonable compatibility debt.
-- Snow blends naturally with nearby rocks, roads, and terrain materials under the selected weather route.
-- The final terrain, road, and snow stack supports later grass, tree, and LOD work.
-
 ## Flora Visuals → `Graphics - Terrain & Flora`
 
-### Core Idea
+Flora is the ground-level readability layer between terrain materials and later tree coverage. It should improve grass density, wildland texture, and plant variety without making traversal unreadable or turning grass support into constant patch work.
 
-- Flora is the ground-level readability layer between terrain materials and later tree coverage.
-- It should improve grass density, wildland texture, and plant variety without making traversal unreadable or turning grass support into constant patch work.
+### Baseline
 
-### Options
+- Use the mixed route: readable general grass coverage with selective density boosts and better close-range plants.
+- **Skoglendi - A Grass Mod** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93944)) — Baseline grass. → `Graphics - Terrain & Flora`
+- **Merethic Grasslands** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/164058)) — Supporting grass variety enhancer; pairs with Skoglendi for northern grassland texture. → `Graphics - Terrain & Flora`
+- **Origins Of Forest - 3D Forest Grass** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/45719)) — Main density enhancer, only if forests still feel too sparse after terrain and tree choices are clearer. → `Graphics - Terrain & Flora`
+- **Mari's flora** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/45952)) — Supporting plant replacer. → `Graphics - Terrain & Flora`
+- **Freak's Floral Meadows** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148525)) — Comprehensive meadow flower replacer. No ESP. Evaluate as density upgrade. → `Graphics - Terrain & Flora`
+- **Freak's Floral Solstheim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138161)) — Solstheim ash-covered grass/flora replacer with Cathedral-inspired density. → `Graphics - Terrain & Flora`
+- **Flora Orientalis** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64041)) and **Waterplants** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6092)) — To satisfy Vinland Grass Patch dependencies and mixed-route coverage targets. → `Graphics - Terrain & Flora`
+- **Cathedral - 3D Stonecrop** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110726)) and **DrJacopo - 3D Tundra Shrubs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/108747)) — 3D plant mesh replacers (no ESP). → `Graphics - Terrain & Flora`
+- Full Cathedral 3D series: `Cathedral - 3D Clover Plant`, `Cathedral - 3D Deathbell`, `Cathedral - 3D Dragons Tongue`, `Cathedral - 3D Lavender`, `Cathedral - 3D Thistle`, `Cathedral - 3D Snow Berries` — Mesh-only (no ESP, no patch requirements). → `Graphics - Terrain & Flora`
+- **Cathedral PBR Plants** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135836)) — PBR texture layer for the Cathedral 3D plant series. Requires original Cathedral plants and PGPatcher. → `Graphics - Terrain & Flora`
+
+### Alternatives
 
 - Controlled baseline: one strong grass mod plus selective plant replacers and minimal support patches.
 - Dense forest-floor route: baseline grass plus extra undergrowth and forest clutter for maximum wilderness feel.
-- Mixed route: readable general grass coverage with selective density boosts and better close-range plants.
+- **Folkvangr - Grass and Landscape Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44899)) — Main heavier alternate. → `Graphics - Terrain & Flora`
+- **Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95273)) and **QW's Grass Patch 2** — Only after the final grass combination is narrow enough to justify patch-hub planning. → `Graphics - Terrain & Flora`
 
-### Recommendation
+### Environment-Plant Optional Additions
 
-- Use the mixed route.
-- Start with `Skoglendi - A Grass Mod` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/93944> as the baseline. → `Graphics - Terrain & Flora`
-- Add `Merethic Grasslands` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/164058> as a supporting grass variety enhancer — pairs with Skoglendi to add northern grassland texture without replacing the baseline. → `Graphics - Terrain & Flora`
-- Use `Origins Of Forest - 3D Forest Grass` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45719> as the main density enhancer only if forests still feel too sparse after terrain and tree choices are clearer. → `Graphics - Terrain & Flora`
-- Use `Mari's flora` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/45952> as the supporting plant replacer instead of treating flora as one giant all-in-one decision. → `Graphics - Terrain & Flora`
-- `Freak's Floral Meadows` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/148525> — comprehensive meadow flower replacer with high-density, varied wildflower coverage. No ESP. Evaluate as a grass-and-flora density upgrade over the baseline Skoglendi/Merethic meadow coverage. → `Graphics - Terrain & Flora`
-- `Freak's Floral Solstheim - A Cathedral Grass Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138161> — replacer for Solstheim's ash-covered grass and flora with Cathedral-inspired density and variety. Gives Solstheim a distinct floral identity. → `Graphics - Terrain & Flora`
-- Add `Flora Orientalis` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/64041> and `Waterplants` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/6092> to the grass baseline to satisfy `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and the broader mixed-route coverage targets. → `Graphics - Terrain & Flora`
-- Keep `Folkvangr - Grass and Landscape Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/44899> as the main heavier alternate. → `Graphics - Terrain & Flora`
-- Keep `Vinland Grass Patch - Skoglendi - Flora Orientalis - Folkvangr` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/95273> and `QW's Grass Patch 2` in mind only after the final grass combination is narrow enough to justify patch-hub planning. → `Graphics - Terrain & Flora`
-- Add `Cathedral - 3D Stonecrop` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/110726> and `DrJacopo - 3D Tundra Shrubs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/108747> as 3D plant mesh replacers that swap 2D billboard plants for photorealistic models with proper depth. These are mesh-only (no ESP) and layer cleanly on the grass baseline. → `Graphics - Terrain & Flora`
-- Expand the 3D plant replacer layer with the full Cathedral 3D series: `Cathedral - 3D Clover Plant` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68793>, `Cathedral - 3D Deathbell` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76460>, `Cathedral - 3D Dragons Tongue` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85694>, `Cathedral - 3D Lavender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/68310>, `Cathedral - 3D Thistle` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/67619>, and `Cathedral - 3D Snow Berries` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/69415>. These are authored by DrJacopo (same creator as Stonecrop and Tundra Shrubs) and use the same mesh-only approach — no ESPs, no patch requirements, complete visual consistency with the existing 3D plant baseline. → `Graphics - Terrain & Flora`
-- Add `Cathedral PBR Plants` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/135836> as the PBR texture layer for the Cathedral 3D plant series — replaces textures with PBR materials (2k BC7). Requires the original Cathedral plants mods installed and PGPatcher to be run. → `Graphics - Terrain & Flora`
+- **Grumbledook Ivy** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151415)) — Extensive ivy overhaul via Base Object Swapper. Hand-sculpted meshes/textures with wind animations, 1K/2K/4K. Hard-requires BOS. Requires CS compatibility consideration if using PBR variant. → `Graphics - Terrain & Flora`
+- **Grumbledook Ivy - Additions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165945)) — Companion optimization/patch collection: removes unused vertices (halving mesh count), fixes collisions, adds seasonal support. → `Graphics - Terrain & Flora`
+- **Grumbledook Swordferns - Optional PBR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163949)) — New meshes and textures for swordferns with optional PBR, snowy variants, extra variation via BOS. Hard-requires BOS; PBR variant requires CS. → `Graphics - Terrain & Flora`
 
-### Risks & Compatibility
+Treat the Grumbledook series as visual polish, not a baseline requirement. They layer cleanly on the existing flora stack via BOS (no cell-record edits). Evaluate after main grass, 3D plant replacer, and tree choices are locked.
+
+### Notes
 
 - Grass that looks strong in screenshots can make traversal and combat readability worse in practice.
 - Layering multiple grass and plant mods creates real patch and cache maintenance cost.
 - Forest-floor enhancers can become too dense once weather fog and heavy tree coverage are added.
 
-### Environment-Plant Optional Additions
-
-- `Grumbledook Ivy` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/151415> — an extensive ivy overhaul using Base Object Swapper to add common ivy (hedera helix) variants to walls, ruins, and structures across Skyrim. Hand-sculpted meshes and textures with wind animations, 1K/2K/4K options, and patches for Nordic Stonewalls and tree stumps/logs. Hard-requires `Base Object Swapper` (already a core dependency). Requires Community Shaders compatibility consideration if using the PBR variant. → `Graphics - Terrain & Flora`
-- `Grumbledook Ivy - Additions (Seasons - Optimization - Patches - Fixes)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/165945> — a companion optimization and patch collection for Grumbledook Ivy that removes unused/duplicated vertices (halving mesh count), fixes collisions, and adds seasonal support. → `Graphics - Terrain & Flora`
-- `Grumbledook Swordferns - Optional PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/163949> — entirely new meshes and textures for Skyrim's swordferns with optional PBR, snowy variants, and extra variation via Base Object Swapper. Hand-sculpted from scratch, 2K/4K options. Hard-requires `Base Object Swapper`; PBR variant requires `Community Shaders`. → `Graphics - Terrain & Flora`
-
-Treat these as an optional environment-plant detail layer rather than a baseline requirement. The Grumbledook series uses `Base Object Swapper` to place new plant/environment meshes without cell-record edits, so they layer cleanly on the existing flora stack. Evaluate after the main grass, 3D plant replacer, and tree choices are locked, since the ivy and swordfern additions are visual polish that should not drive earlier decisions.
-
-### Acceptance Criteria
-
-- Flora improves wilderness density without obscuring normal travel routes.
-- Forest, marsh, tundra, and roadside scenes stay readable in third person.
-- Plant quality holds up both at travel distance and during close inspection.
-- The final flora stack remains compatible with the chosen terrain, snow, tree, and grass-cache workflow.
-
 ## Tree Overhauls For Dense Forests → `Graphics - Terrain & Flora`
 
-### Core Idea
+Trees are the main large-scale world-shaping layer for wilderness mood, canopy silhouette, and perceived regional scale. This subsection decides how dense and dramatic forests should become without creating a worldspace patch nightmare or making exploration unreadable.
 
-- Trees are the main large-scale world-shaping layer for wilderness mood, canopy silhouette, and perceived regional scale.
-- This subsection decides how dense and dramatic forests should become without creating a worldspace patch nightmare or making exploration unreadable.
-
-### Options
-
-- Lower-maintenance baseline: improved tree models with lighter ecosystem burden.
-- Dense modern forest route: stronger transformation and larger payoff, but more patching and placement risk.
-- Extreme wilderness route: highly transformed forests and roadside coverage with the highest compatibility cost.
-
-### Recommendation
+### Baseline
 
 - Use the dense modern forest route, but keep one lower-maintenance fallback alive until LOD and traversal readability are tested.
-- Start serious evaluation with `Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/57874> as the main dense-forest candidate. → `Graphics - Terrain & Flora`
-- Keep `Happy Little Trees` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50961> as the safer fallback baseline. → `Graphics - Terrain & Flora`
-- Treat `Fabled Forests` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/94462> and `Nature of the Wild Lands - forest and trees improvement mod` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/63604> as stronger transformation routes to compare only if `Ulvenwald` misses the right balance. → `Graphics - Terrain & Flora`
-- Keep `Happy Little Trees PBR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159171> and `Fabled Forests - Ulvenwald - Compatibility Patch (BOS)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/134501> as support-path signals, not baseline decisions. → `Graphics - Terrain & Flora`
-- Add `Tomato's PBR Vanilla Trees` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139375> as a PBR tree texture option for the vanilla tree models — can be layered under whichever tree overhaul wins testing to add PBR material response to the trunk and branch textures. → `Graphics - Terrain & Flora`
+- **Traverse the Ulvenwald - 3.3 - Trees and Forests of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57874)) — Main dense-forest candidate. → `Graphics - Terrain & Flora`
+- **Tomato's PBR Vanilla Trees** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139375)) — PBR tree texture option for vanilla tree models; can be layered under whichever tree overhaul wins testing. → `Graphics - Terrain & Flora`
 
-### Risks & Compatibility
+### Alternatives
+
+- **Happy Little Trees** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50961)) — Safer fallback baseline. → `Graphics - Terrain & Flora`
+- **Fabled Forests** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94462)) and **Nature of the Wild Lands** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63604)) — Stronger transformation routes to compare only if Ulvenwald misses the right balance. → `Graphics - Terrain & Flora`
+- Lower-maintenance baseline: improved tree models with lighter ecosystem burden.
+- Extreme wilderness route: highly transformed forests with the highest compatibility cost.
+- Support signals: `Happy Little Trees PBR` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159171)), `Fabled Forests - Ulvenwald - Compatibility Patch (BOS)` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134501)). → `Graphics - Terrain & Flora`
+
+### Notes
 
 - Dense tree overhauls can make roads, structures, and combat spaces harder to read in motion than they appear in screenshots.
 - Heavier worldspace tree edits create clipping, blocked sightlines, floating objects, and broad patch debt with settlement or roadside mods.
-- A tree overhaul that looks excellent nearby can still fail the list if its distant silhouette is weak.
-
-### Acceptance Criteria
-
-- Forest regions feel denser and more immersive without making travel frustrating.
-- Roads, ruins, and normal third-person combat spaces remain readable in wooded areas.
-- Tree silhouettes hold up at close, mid, and long distance.
-- The chosen tree overhaul stays compatible with flora, terrain, roads, and later LOD workflow at a manageable cost.
+- A tree overhaul that looks excellent nearby can still fail if its distant silhouette is weak.

@@ -272,7 +272,7 @@ The full rebuild order in `Mod Organizer 2` is:
 
 Rebuilding one stage does not replace the stages after it. A `Bashed Patch` rebuild after adding a single weapon must still be followed by a `Synthesis` run if the new weapon needs the `Weapon Stat Synthesis Patcher` or `WeaponSpeedEffectsFix` pass, and a `DynDOLOD` run if the weapon has worldspace placement.
 
-### Risks & Compatibility
+### Notes
 
 - `Bashed Patch` and `Synthesis` both write into the same load-order range. Place the `Bashed Patch` above the `Synthesis` patch only if a known conflict needs the Bashed Patch to win; otherwise the `Synthesis` patch should be the last patch in the load order to let its overrides stand. → `Performance`
 - `SynESLify` (Stage 5 / Stage 11) **must** be last. If it is not, the patchers after it will re-materialize a hard slot and the merge order breaks. → `Performance`
@@ -284,15 +284,10 @@ Rebuilding one stage does not replace the stages after it. A `Bashed Patch` rebu
 - `Generic Synthesis Patcher` is a footgun in this list because the rule engine will apply to records already covered by the named patchers. Keep its ruleset empty until a specific conflict is identified. → `Performance`
 - `SynStringMerger` will produce a translation patch that other patchers do not see. Disable it unless the list ships a translation layer. → `Performance`
 - `NavmeshCollector-Updated` is dangerous with `Bruma` and `Falskaar`. Do not enable it while those worldspace mods are active. → `Performance`
-
-### Acceptance Criteria
-
-- The `Bashed Patch` is built with the exact `Tweak Settings` and `Bash Tags` listed above. The patch CRC is recorded in the build log and re-checked after every rebuild. → `Performance`
-- The `Synthesis` patcher list matches the stage ordering in this section, with patchers from stages that are not currently applicable explicitly disabled (and not removed) so they can be re-enabled without re-reading the config. → `Performance`
-- A deliberate test that disables `Immersive Weapons`, `Immersive Armors`, `Hunterborn`, or `Open World Loot` causes the corresponding `Bash Tag` to lose its source plugin and the merged leveled list to shrink predictably. The Bashed Patch still builds, just smaller. → `Performance`
-- A deliberate test that disables `RAID` causes `AI Stealth Overhaul` to log a warning and `Followers-are-Sneaky` to be the only detection-related patcher running. No silent failure. → `Performance`
-- A deliberate test that reorders `SynESLify` out of the last position causes the `Synthesis` patch to take a hard load-order slot and `LOOT` to flag the new entry. Reordering back to last resolves the flag.
-- Every `Tweak Settings` entry enabled in the `Bashed Patch` is verified by a deliberate save-load test: change a tweak value, reload, observe the gameplay effect, and revert. Settings that cannot be verified are not enabled. → `Performance`
+- The `Bashed Patch` CRC should be recorded in the build log and re-checked after every rebuild. → `Performance`
+- The `Synthesis` patcher list must match the stage ordering, with patchers from unused stages explicitly disabled (not removed) so they can be re-enabled without re-reading config. → `Performance`
+- Verify `Bashed Patch` behavior by deliberately disabling source mods and confirming the patch shrinks predictably. → `Performance`
+- Every `Tweak Settings` entry should be verified with a save-load test before being considered stable. → `Performance`
 
 ## Key Principles
 

@@ -6,25 +6,28 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ## Tool Workflow → `Performance`
 
-### Core Idea
+A heavy Skyrim list usually becomes unstable through stale output and sloppy rebuild habits before it fails through any one mod choice. This subsection defines the rebuild discipline that keeps the rest of the plan usable.
 
-- A heavy Skyrim list usually becomes unstable through stale output and sloppy rebuild habits before it fails through any one mod choice.
-- This subsection defines the rebuild discipline that keeps the rest of the plan usable.
+### Baseline
 
-### Options
-
-- Ad hoc route: rebuild tools whenever something looks broken.
-- Disciplined route: rebuild only when the owning category changes, and keep each generated layer isolated in MO2.
-- Late-everything route: postpone most generated work until the end and hope the backlog stays manageable.
-
-### Recommendation
-
-- Use the disciplined route.
-- Run `xEdit` conflict review after each major category change instead of saving all conflict discovery for the end. → `Performance`
+- **Disciplined route** — Run `xEdit` conflict review after each major category change instead of saving all conflict discovery for the end. → `Performance`
 - Re-run `Pandora` when behavior, animation, or skeleton-relevant content changes. → `Performance`
 - Re-run `Synthesis` whenever a chosen patcher-based system changes, including the music-merge workflow already noted in section `Audio`. → `Performance`
 - Treat `TexGen`, `xLODGen`, `DynDOLOD`, grass cache, and occlusion output as late-stage generated layers that must be rebuilt when their inputs materially change. → `Performance`
 - Keep every generated output in its own dedicated `Mod Organizer 2` mod so stale files are easy to replace instead of silently lingering. → `Performance`
+
+### Alternatives
+
+- **Ad hoc route** — Rebuild tools whenever something looks broken.
+- **Late-everything route** — Postpone most generated work until the end and hope the backlog stays manageable.
+
+### Notes
+
+- The most common technical mistake in a large list is not "wrong mod" but stale output from a previously correct state.
+- Partial rebuild habits create false negatives during testing because the game is no longer showing the current stack.
+- Delaying all generated work until the very end makes it harder to isolate which category caused later breakage.
+- A `4K` near-field texture stack can tempt the list into overbuilding LOD output. Tune for believable travel scenes, not screenshot-maximal atlases that waste VRAM and rebuild time. → `Performance`
+- `DynDOLOD`, `TexGen`, and `xLODGen` settings are sensitive to memory pressure and stale outputs. If one run required lowered atlas size or reduced concurrency, the same constraint should be assumed on the next rebuild unless hardware changes. → `Performance`
 
 ### 4K LOD Tool Baseline
 
@@ -93,53 +96,29 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 - If travel performance is still too expensive after LOD generation, step `DynDOLOD` down from `High` to `Medium` or `Low`, and skip `Grass LOD` before cutting the entire visual stack apart. → `Performance`
 - If a tool run required one-off emergency tweaks, document them next to the MO2 executable or output mod so the next rebuild is reproducible instead of remembered from scratch.
 
-### Risks & Compatibility
-
-- The most common technical mistake in a large list is not "wrong mod" but stale output from a previously correct state.
-- Partial rebuild habits create false negatives during testing because the game is no longer showing the current stack.
-- Delaying all generated work until the very end makes it harder to isolate which category caused later breakage.
-- A `4K` near-field texture stack can tempt the list into overbuilding LOD output. The tools should be tuned for believable travel scenes, not screenshot-maximal atlases that waste VRAM and rebuild time. → `Performance`
-- `DynDOLOD`, `TexGen`, and `xLODGen` settings are sensitive to memory pressure and stale outputs. If one run required lowered atlas size or reduced concurrency, the same constraint should be assumed on the next rebuild unless hardware changes. → `Performance`
-
-### Acceptance Criteria
-
-- Every generated layer has a clear owner, rebuild trigger, and dedicated output mod.
-- `xEdit`, `Pandora`, `Synthesis`, and LOD tools are used in a repeatable order rather than by guesswork. → `Performance`
-- The list can rebuild a changed category without losing track of which outputs are now stale.
-- The list has one documented `4K` baseline for `xLODGen`, `TexGen`, and `DynDOLOD` that favors stable travel visuals over maximum theoretical quality.
-
 ## Optional Diagnostics And Performance Tools → `Performance`
 
-### Core Idea
-
-- The tools below are not required for the list to function, but they solve real problems during load-order building and heavy play.
-- Install them early for diagnostics value and keep them active for runtime protection; neither has ongoing configuration or conflict maintenance once installed.
+The tools below are not required for the list to function, but they solve real problems during load-order building and heavy play. Install them early for diagnostics value and keep them active for runtime protection; neither has ongoing configuration or conflict maintenance once installed.
 
 ### Recursion Monitor
 
 - **Nexus**: [Recursion Monitor](https://www.nexusmods.com/skyrimspecialedition/mods/76867) (v1.2, original by Nightfallstorm)
-- **Purpose**: Detects broken Papyrus scripts stuck in recursive loops and prevents the resulting framerate collapse. Skyrim's engine does not throw a stack-overflow error, so a buggy function that calls itself hundreds of thousands of times silently destroys frame timing. This plugin hooks the stack check and breaks the recursion after 1000 calls, writing a `StackFrameOverFlow` warning to the log instead of tanking performance. → `Performance`
+- **Purpose**: Detects broken Papyrus scripts stuck in recursive loops and prevents the resulting framerate collapse. Hooks the stack check and breaks the recursion after 1000 calls, writing a `StackFrameOverFlow` warning to the log instead of tanking performance. → `Performance`
 - **Requirements**: SKSE, Address Library for SKSE Plugins
 - **Status**: Optional diagnostics utility. Silent at runtime unless it fires. Worth installing early for debugging and keeping active on a production list.
-- **Updated fork**: [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (v1.0, updated May 2026) removes the in-game debug popup that could freeze gameplay during a recursion event. All warnings are written to the SKSE log instead. Prefer this version for a production list.
+- **Updated fork**: [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (v1.0, updated May 2026) removes the in-game debug popup that could freeze gameplay during a recursion event. All warnings written to the SKSE log instead. Prefer for a production list.
 
 ### Save And Load Accelerator For SKSE Cosaves (S.L.A.C.K.)
 
 - **Nexus**: [S.L.A.C.K.](https://www.nexusmods.com/skyrimspecialedition/mods/163969) (by just-harry)
-- **Purpose**: Rewrites SKSE's cosave serialisation path so cosaves save up to 150× faster and load up to 15× faster. SKSE cosaves grow with every plugin that registers a serialisation handler; this mod parallelises and buffers the write path so save/load hitching drops regardless of how many cosave-aware plugins are installed. Includes an error-friendly mode that catches and logs exceptions thrown by other SKSE plugins' cosave handlers.
+- **Purpose**: Rewrites SKSE's cosave serialisation path so cosaves save up to 150× faster and load up to 15× faster. Parallelises and buffers the write path so save/load hitching drops regardless of how many cosave-aware plugins are installed. Includes error-friendly mode that catches and logs exceptions thrown by other SKSE plugins' cosave handlers.
 - **Requirements**: SKSE for Skyrim AE 1.6.1170, Address Library for SKSE Plugins, SSE Engine Fixes (SKSE64 Preloader file — the DLL Plugin Loader variant may be used instead)
 - **Status**: Optional performance utility. Safe to install or uninstall at any time — saves made with it active can be loaded without it. Recommended once the modlist is heavy enough that save pauses become noticeable.
 - **Note**: Complements [Seamless Saving - Skyrim Save Accelerator](https://www.nexusmods.com/skyrimspecialedition/mods/173161), which targets the main save serialisation (Script VM bottleneck) rather than SKSE cosaves. Running both is safe and addresses different bottlenecks.
 
-### Risks & Compatibility
+### Notes
 
 - Neither mod touches worldspace records, leveled lists, or any asset that would require a rebuild of generated output.
 - Recursion Monitor is read-only in normal operation and only activates when a runaway script is detected. Its updated fork removes the blocking popup, which is the only known compatibility concern.
 - S.L.A.C.K. hooks SKSE's internal save/load API. In rare cases where another SKSE plugin's cosave handler throws an uncaught exception, S.L.A.C.K.'s error-friendly mode (enabled by default) catches and logs it instead of crashing. If crash-on-cosave behaviour is preferred for debugging, this mode can be disabled in the config.
 - Both mods are safe to remove from an existing save.
-
-### Acceptance Criteria
-
-- Recursion Monitor fires on a deliberately broken Papyrus call and writes the `StackFrameOverFlow` message to the log without freezing the game.
-- S.L.A.C.K. measurably reduces save/LD time in a heavy load order. Compare save duration with and without the plugin using a stopwatch or `PresentMon` capture. → `Performance`
-- S.L.A.C.K. error-friendly mode catches a simulated cosave exception (via a test plugin) and logs the error without crashing.

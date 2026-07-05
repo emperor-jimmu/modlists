@@ -6,183 +6,115 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also:
 
 ## Character Creation And Starting Choices → `Expanded Systems - Character & Progression`
 
-### Core Idea
+This subsection decides how `Elder Wilds` begins: a grounded alternate start, a classic utility-first start, a more configurable route, or a more abstract sandbox opening. The decision should improve replayability and roleplay expression without pre-answering later race, progression, religion, survival, or follower choices.
 
-- This subsection decides how `Elder Wilds` begins: a grounded alternate start, a classic utility-first start, a more configurable route, or a more abstract sandbox opening. → `Expanded Systems - Character & Progression`
-- The decision should improve replayability and roleplay expression without pre-answering later race, progression, religion, survival, or follower choices.
+### Baseline
 
-### Options
+- **Alternate Perspective - Alternate Start** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50307)) — Main baseline candidate. → `Expanded Systems - Character & Progression`
+- **Dealing with Backstories** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61106)) — Origins-and-starting-stats companion that generates background-driven starting skills, bonuses, drawbacks, and gear instead of just moving the player to a different start cell. → `Expanded Systems - Character & Progression`
+- **Take Notes - Journal of the Dragonborn SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/13570)) — Low-risk roleplay-sheet companion. Gives the player a persistent in-game journal without rebalancing the character. → `Expanded Systems - Character & Progression`
+- **Roleplaying In Skyrim - Origins** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150186)) — Optional character-background companion for origin-driven flavor and optional bonuses based on character history. Requires SKSE and `Papyrus Ini Manipulator`. Soft-requires `Actor Value Generator` and `SkyUI`. → `Expanded Systems - Character & Progression`
 
-- Grounded modern route: `Alternate Perspective - Alternate Start` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/50307> → `Expanded Systems - Character & Progression`
-- Classic fallback route: `Alternate Start - Live Another Life` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/272> → `Expanded Systems - Character & Progression`
-- Configurable middle-ground route: `Skyrim Unbound Reborn (Alternate Start)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/27962> → `Expanded Systems - Character & Progression`
-- Freeform sandbox route: `Realm of Lorkhan - Freeform Alternate Start` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/18223> → `Expanded Systems - Character & Progression`
-- Origins-and-starting-stats companion: `Dealing with Backstories` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/61106> → `Expanded Systems - Character & Progression`
-- Character-journal companion: `Take Notes - Journal of the Dragonborn SSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13570> → `Expanded Systems - Character & Progression`
-- Character-background flavor: `Roleplaying In Skyrim - Origins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/150186> — adds background narrative with optional bonuses based on character history. Requires SKSE and `Papyrus Ini Manipulator`. Soft-requires `Actor Value Generator` (from section 01) for learning-rate modifiers and `SkyUI` for MCM. 198 endorsements, 10k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
+### Alternatives
 
-### Recommendation
+- **Alternate Start - Live Another Life** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/272)) — Conservative fallback comparison if the more immersive route is harder to justify in the final stack. → `Expanded Systems - Character & Progression`
+- **Skyrim Unbound Reborn (Alternate Start)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27962)) — Configurable middle-ground route if the list wants more setup freedom without moving fully into sandbox-start territory. → `Expanded Systems - Character & Progression`
+- **Realm of Lorkhan - Freeform Alternate Start** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18223)) — Deliberate freeform branch. Not the default baseline. → `Expanded Systems - Character & Progression`
 
-- Start with `Alternate Perspective - Alternate Start` as the main baseline candidate. → `Expanded Systems - Character & Progression`
-- Keep `Dealing with Backstories` as the main origins-and-starting-stats companion if the list wants character identity to begin before the player earns the first perk. It is the cleanest answer to the user's request for more stats/sheets/origins because it generates background-driven starting skills, bonuses, drawbacks, and gear instead of just moving the player to a different start cell. → `Expanded Systems - Character & Progression`
-- Keep `Take Notes` as the low-risk roleplay-sheet companion. It does not rebalance the character the way `Dealing with Backstories` does; it gives the player a persistent in-game journal, which is the lightest way to make origins, beliefs, and personal goals actually visible in play. → `Expanded Systems - Character & Progression`
-- Keep `Alternate Start - Live Another Life` as the conservative fallback comparison if the more immersive route is harder to justify in the final stack. → `Expanded Systems - Character & Progression`
-- Keep `Skyrim Unbound Reborn` as the configurable middle-ground comparison if the list wants more setup freedom without moving fully into sandbox-start territory. → `Expanded Systems - Character & Progression`
-- Treat `Realm of Lorkhan` as the deliberate freeform branch, not the default baseline. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying In Skyrim - Origins` as an optional character-background companion if the list wants origin-driven flavor and optional bonuses at character creation. It integrates with the RoleRim ecosystem (Classic Attributes, MiscStats) for learning-rate modifiers. Requires SKSE and `Papyrus Ini Manipulator`. → `Expanded Systems - Character & Progression`
-
-### Risks & Compatibility
+### Notes
 
 - Start frameworks can carry world-state assumptions that ripple into later quest, city, survival, or follower decisions.
-- `Dealing with Backstories` pushes character identity into starting stats, gear, and drawbacks, so it must be judged against the chosen race, standing-stone, perk, and survival stack instead of being treated as a harmless flavor add-on. → `Expanded Systems - Character & Progression`
-- `Take Notes` is mechanically light, but it only earns a slot if the list expects real roleplay or long-form character journaling rather than a pure action-combat playstyle. → `Expanded Systems - Character & Progression`
+- `Dealing with Backstories` must be judged against the chosen race, standing-stone, perk, and survival stack instead of being treated as a harmless flavor add-on. → `Expanded Systems - Character & Progression`
+- `Take Notes` only earns a slot if the list expects real roleplay or long-form character journaling rather than a pure action-combat playstyle. → `Expanded Systems - Character & Progression`
 - A more immersive start loses value quickly if it adds onboarding friction without materially improving the early-game tone.
-- A more abstract start can undermine world coherence if it feels like a detached configuration room instead of a beginning.
+- A more abstract start can undermine world coherence if it feels like a detached configuration room.
 - This subsection gets muddy if race, perk, religion, or survival decisions leak into it too early.
-
-### Acceptance Criteria
-
-- `Elder Wilds` has one clearly preferred starting framework and explicit decisions on whether `Dealing with Backstories` and `Take Notes` are part of that opening experience. → `Expanded Systems - Character & Progression`
-- The chosen route improves replayability and roleplay identity without undermining world coherence.
-- The opening hands the player into normal play cleanly and matches the intended tone.
 
 ## Race, Standing Stone, And Progression Overhauls → `Expanded Systems - Character & Progression`
 
-### Core Idea
+This subsection decides how strongly race traits and standing stones should shape long-term character identity. The goal is to choose one clear progression philosophy before perks, magic, alchemy, and religion build on top of it.
 
-- This subsection decides how strongly race traits and standing stones should shape long-term character identity.
-- The goal is to choose one clear progression philosophy before perks, magic, alchemy, and religion build on top of it.
+### Baseline
 
-### Options
+- **Aetherius - A Race Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26686)) + **Evenstar - Minimalistic Standing Stones of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41256)) — Main baseline. Balanced modern route. → `Expanded Systems - Character & Progression`
+- **Roleplaying in Skyrim - Classic Attributes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151476)) — Optional attribute-depth companion adding 10 classic RPG attributes that govern various traits and mechanics. Requires `Actor Value Generator` from section 01. → `Expanded Systems - Character & Progression`
+- **Roleplaying in Skyrim - Races** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149544)) — Optional biological race overhaul based on physiological differences. Requires SKSE, `KID`, and `SPID`. → `Expanded Systems - Character & Progression`
+- **Roleplaying in Skyrim - Lineages** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174443)) — Optional subrace expansion adding 4 subraces per vanilla race with unique abilities and roleplay-encouraging rewards. Supplements `Races`. Requires SKSE, `KID`, `SPID`, and `Papyrus Ini Manipulator`. → `Expanded Systems - Character & Progression`
+- **Roleplaying in Skyrim - Standing Stones** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157053)) — Optional standing stone overhaul making the 13 stones feel more impactful for the Dragonborn. Requires SKSE, `aTweaks and Utilities`, `KID`, `Perk Entry Point Extender`, and `SkyUI`. → `Expanded Systems - Character & Progression`
+- **Roleplaying in Skyrim - Birthsigns** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/154610)) — Optional birthsign reintroduction with monthly waxing/waning effects, as an alternative or supplement to the standing stone choice. Requires SKSE, `KID`, and `Papyrus Ini Manipulator`. → `Expanded Systems - Character & Progression`
+- **Roleplaying in Skyrim - Useful MiscStats** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149142)) — Optional misc-stat progression layer making miscellaneous stats meaningful for character building. Requires `Actor Value Generator` from section 01. → `Expanded Systems - Character & Progression`
+- **Roleplaying in Skyrim - Skill Based Stat Growth** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147455)) — Optional stat-progression where Health, Magicka, and Stamina grow as skills develop. Requires SKSE and `Papyrus Ini Manipulator`. → `Expanded Systems - Character & Progression`
 
-- Balanced modern route: `Aetherius - A Race Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/26686> with `Evenstar - Minimalistic Standing Stones of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/41256> → `Expanded Systems - Character & Progression`
-- Restrained route: `Morningstar - Minimalistic Races of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22298> with `Evenstar` → `Expanded Systems - Character & Progression`
-- High-expression route: `Imperious - Races of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1315> with `Andromeda - Unique Standing Stones of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14910> → `Expanded Systems - Character & Progression`
-- Classic attributes companion: `Roleplaying in Skyrim - Classic Attributes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/151476> — adds 10 classic RPG attributes (Strength, Fortitude, Endurance, Intelligence, Wisdom, Perception, Agility, Dexterity, Charisma, Luck) that govern various traits and mechanics. Requires `Actor Value Generator` (from section 01). Integrates with other RoleRim mods for attribute bonuses based on race, origin, and misc stats. 204 endorsements, 10.5k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
-- Biological race overhaul: `Roleplaying in Skyrim - Races` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149544> — race overhaul based on biological and physiological differences between races. Requires SKSE, `Keyword Item Distributor (KID)`, and `Spell Perk Item Distributor (SPID)`. Soft-requires `SkyUI` for MCM. 186 endorsements, 9.3k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
-- Subrace expansion: `Roleplaying in Skyrim - Lineages` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/174443> — adds subraces (4 per vanilla race) with unique abilities and roleplay-encouraging rewards. Supplements `Races`. Requires SKSE, `KID`, `SPID`, and `Papyrus Ini Manipulator`. Soft-requires `SkyUI` for MCM and `Extended Vanilla Menus` for custom race support. 91 endorsements, 3.1k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
-- Standing stone overhaul: `Roleplaying in Skyrim - Standing Stones` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/157053> — overhaul of the 13 standing stone effects to be worthy of the Dragonborn. Requires SKSE, `aTweaks and Utilities`, `KID`, `Perk Entry Point Extender` (via aTweaks), and `SkyUI` for MCM. 83 endorsements, 2.1k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
-- Birthsign reintroduction: `Roleplaying in Skyrim - Birthsigns` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/154610> — lore-inspired reintroduction of 13 birthsigns with monthly waxing/waning effects. Requires SKSE, `KID`, and `Papyrus Ini Manipulator`. Soft-requires `SPID` for NPC integration and `SkyUI` for MCM. 146 endorsements, 12.6k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
-- Misc stats progression: `Roleplaying in Skyrim - Useful MiscStats` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149142> — makes miscellaneous stats useful and reduces crafting grinding by using them for character building. Requires `Actor Value Generator` (from section 01). Soft-requires SKSE and `SkyUI` for MCM. 177 endorsements, 8.9k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
-- Skill-based stat growth: `Roleplaying in Skyrim - Skill Based Stat Growth` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/147455> — primary stats (Health, Magicka, Stamina) grow as skills develop. Requires SKSE and `Papyrus Ini Manipulator`. Soft-requires `SkyUI` for MCM. 247 endorsements, 12k downloads, by DrPharmDawg. (Optional) → `Expanded Systems - Character & Progression`
+### Alternatives
 
-### Recommendation
+- **Morningstar - Minimalistic Races of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22298)) + **Evenstar** — Restrained fallback if the final list wants less systemic pressure. → `Expanded Systems - Character & Progression`
+- **Imperious - Races of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1315)) + **Andromeda - Unique Standing Stones of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14910)) — High-expression comparison route. Not the default baseline. → `Expanded Systems - Character & Progression`
 
-- Start with `Aetherius` plus `Evenstar` as the main baseline. → `Expanded Systems - Character & Progression`
-- Keep `Morningstar` plus `Evenstar` as the restrained fallback if the final list wants less systemic pressure. → `Expanded Systems - Character & Progression`
-- Treat `Imperious` plus `Andromeda` as the intentional high-expression comparison route, not the default baseline. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying in Skyrim - Classic Attributes` as an optional attribute-depth companion if the list wants classic RPG-style stat progression on top of the chosen race overhaul. It integrates with the RoleRim ecosystem (Races, Origins, MiscStats) and adds meaningful character variation without dominating the perk/magic layers. Requires `Actor Value Generator` from section 01. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying in Skyrim - Races` as an optional biological race overhaul if the list wants race identity grounded in physiological differences rather than cultural flavor alone. Requires SKSE, `KID`, and `SPID`. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying in Skyrim - Lineages` as an optional subrace expansion that supplements `Races` with 4 subraces per vanilla race, each with unique abilities. Requires SKSE, `KID`, `SPID`, and `Papyrus Ini Manipulator`. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying in Skyrim - Standing Stones` as an optional standing stone overhaul if the list wants the 13 stones to feel more impactful for the Dragonborn. Requires SKSE, `aTweaks and Utilities`, `KID`, `Perk Entry Point Extender`, and `SkyUI`. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying in Skyrim - Birthsigns` as an optional birthsign reintroduction with monthly waxing/waning effects, as an alternative or supplement to the standing stone choice. Requires SKSE, `KID`, and `Papyrus Ini Manipulator`. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying in Skyrim - Useful MiscStats` as an optional misc-stat progression layer that makes miscellaneous stats meaningful for character building. Requires `Actor Value Generator` from section 01. → `Expanded Systems - Character & Progression`
-- Add `Roleplaying in Skyrim - Skill Based Stat Growth` as an optional stat-progression companion where Health, Magicka, and Stamina grow as skills develop. Requires SKSE and `Papyrus Ini Manipulator`. → `Expanded Systems - Character & Progression`
-- Judge race and stone picks as a pair so the progression baseline stays easy to explain.
-
-### Risks & Compatibility
+### Notes
 
 - Race and stone overhauls can quietly pre-decide too much of the character-building experience before perk and magic systems are chosen.
 - A very expressive route can push the list toward optimization-heavy play even if the broader project wants a more immersive tone.
 - A very light route can undershoot if later systems assume stronger identity hooks.
 - Mixing progression philosophies later can create a stack that is individually interesting but mechanically incoherent.
-
-### Acceptance Criteria
-
-- `Elder Wilds` has one clearly preferred race-and-stone philosophy, one restrained fallback, and one more dramatic comparison route. → `Expanded Systems - Character & Progression`
-- The chosen baseline supports replayability and character identity without dominating the rest of the progression stack.
-- Later perk, magic, and religion decisions still have visible room to matter.
+- Judge race and stone picks as a pair so the progression baseline stays easy to explain.
 
 ## Character Traits And Identity Hooks → `Expanded Systems - Character & Progression`
 
-### Core Idea
+This subsection owns opt-in character-defining quirks that shape a run from the start without replacing the broader race, perk, and standing-stone progression stack. The goal is stronger roleplay identity and replayability, not a giant second character-build framework.
 
-- This subsection owns opt-in character-defining quirks that shape a run from the start without replacing the broader race, perk, and standing-stone progression stack.
-- The goal is stronger roleplay identity and replayability, not a giant second character-build framework.
+### Baseline
 
-### Options
+- **Biggie Traits** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136384)) — Main traits-layer option. Adds immediate run-defining tradeoffs in a compact form, closer to Fallout-style traits than to a total rules rewrite. Cleaner fit than heavier custom-class frameworks. → `Expanded Systems - Character & Progression`
+- **Pumping Iron - Dynamic Muscle Growth** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/13434)) — Optional cosmetic-progression companion. Character muscles visually grow based on combat skill increases and sleep. Purely cosmetic; no gameplay impact. → `Expanded Systems - Character & Progression`
 
-- Trait-package route: `Biggie Traits` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/136384> → `Expanded Systems - Character & Progression`
-- Cosmetic-progression route: `Pumping Iron - Dynamic Muscle Growth` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13434> — character muscles visually grow based on combat skill increases and sleep. Purely cosmetic; does not affect stats or gameplay. Requires SKSE. → `Expanded Systems - Character & Progression`
-- Minimalist route: leave identity mostly to race, standing stones, perks, and self-imposed roleplay.
+### Alternatives
 
-### Recommendation
+- **Minimalist route** — Leave identity mostly to race, standing stones, perks, and self-imposed roleplay.
 
-- Add `Biggie Traits` as the main traits-layer comparison for this section. → `Expanded Systems - Character & Progression`
-- It is a cleaner fit for `Elder Wilds` than heavier custom-class frameworks because it adds immediate run-defining tradeoffs in a compact form, closer to Fallout-style traits than to a total rules rewrite. → `Expanded Systems - Character & Progression`
-- Keep it clearly subordinate to the main progression baseline. Traits should sharpen character identity and replayability, not replace the race-and-perk decisions already owned above.
-- Judge it on whether the picked traits create distinct runs and memorable constraints without forcing gimmick play.
-- Keep `Pumping Iron - Dynamic Muscle Growth` as an optional cosmetic-progression companion, not part of the core traits layer. It adds visual character progression tied to combat activity without affecting stats, perks, or gameplay — a flavour win for players who want their character model to reflect adventuring lifestyle, but zero system weight if skipped. → `Expanded Systems - Character & Progression`
-
-### Risks & Compatibility
+### Notes
 
 - Trait systems can quietly duplicate what race, perk, religion, or survival choices are already trying to do.
 - If the best traits are too obviously optimal, the whole idea collapses into routine min-maxing instead of character identity.
-- `Biggie Traits` has no listed hard dependencies, so its value has to come entirely from design fit and clean behavior, not from framework complexity. → `Expanded Systems - Character & Progression`
-
-### Acceptance Criteria
-
-- The modlist has one explicit traits-layer option for stronger character identity.
-- Traits add meaningful replayability and roleplay hooks without crowding out the main progression stack.
-- The section keeps a clear boundary between traits, race identity, perk design, and survival pressure.
+- `Biggie Traits` has no listed hard dependencies, so its value comes entirely from design fit and clean behavior. → `Expanded Systems - Character & Progression`
+- Traits should sharpen character identity and replayability, not replace the race-and-perk decisions owned above.
+- Judge traits on whether they create distinct runs and memorable constraints without forcing gimmick play.
 
 ## Religion Or Roleplay Systems → `Expanded Systems - Character & Progression`
 
-### Core Idea
+This subsection decides how much explicit spiritual identity and day-to-day roleplay texture `Elder Wilds` wants: a light faith layer, a modern religion framework aligned with the current progression stack, or a heavier deity-centered system that becomes a defining part of character identity.
 
-- This subsection decides how much explicit spiritual identity and day-to-day roleplay texture `Elder Wilds` wants: a light faith layer, a modern religion framework aligned with the current progression stack, or a heavier deity-centered system that becomes a defining part of character identity. → `Expanded Systems - Character & Progression`
-- The goal is to choose one clear religion or roleplay direction without letting it absorb survival, economy, crime, or follower ownership.
+### Baseline
 
-### Options
+- **Pilgrim - A Religion Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54099)) — Main baseline. Fits the current Simonrim-leaning progression family without making religion the dominant system. → `Expanded Systems - Character & Progression`
 
-- Balanced religion route: `Pilgrim - A Religion Overhaul` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/54099> → `Expanded Systems - Character & Progression`
-- Minimal faith route: `Trua - Minimalistic Faiths of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32549> → `Expanded Systems - Character & Progression`
-- High-expression deity route: `Wintersun - Faiths of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22506> → `Expanded Systems - Character & Progression`
+### Alternatives
 
-### Recommendation
+- **Trua - Minimalistic Faiths of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/32549)) — Restrained fallback if the list wants faith flavor without much system weight. → `Expanded Systems - Character & Progression`
+- **Wintersun - Faiths of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22506)) — High-expression route if `Elder Wilds` decides religion should become a much stronger roleplay and progression pillar. → `Expanded Systems - Character & Progression`
 
-- Start with `Pilgrim` as the main baseline because it fits the current Simonrim-leaning progression family without making religion the dominant system in the file. → `Expanded Systems - Character & Progression`
-- Keep `Trua` as the restrained fallback if the list wants faith flavor without much system weight. → `Expanded Systems - Character & Progression`
-- Keep `Wintersun` as the deliberate high-expression comparison only if `Elder Wilds` decides religion should become a much stronger roleplay and progression pillar. → `Expanded Systems - Character & Progression`
-- Judge the candidates by ordinary play rhythm: prayer habits, shrine relevance, exploration texture, and whether faith makes the world feel richer during normal travel and downtime.
+### Notes
 
-### Risks & Compatibility
-
-- A very light religion route can undershoot the subsection and leave roleplay identity too close to vanilla.
+- A very light religion route can undershoot and leave roleplay identity too close to vanilla.
 - A heavy deity-centered framework can make religion dominate character identity so strongly that other systems feel secondary.
 - Survival, economy, and follower expectations can drift into this section if faith routines are not scoped carefully.
 - Mixing multiple faith philosophies too casually can make the overall roleplay layer incoherent.
-
-### Acceptance Criteria
-
-- `Elder Wilds` has one clearly preferred religion baseline, one restrained fallback, and one heavier roleplay-focused alternative. → `Expanded Systems - Character & Progression`
-- The chosen baseline complements the perk, magic, alchemy, survival, cooking, crafting, and economy direction instead of collapsing multiple later sections into one religion answer.
-- Later crime, roleplay, and follower decisions still have visible room to matter.
+- Judge candidates by ordinary play rhythm: prayer habits, shrine relevance, exploration texture, and whether faith makes the world feel richer during normal travel and downtime.
 
 ## Race-Specific Overhauls → `Expanded Systems - Character & Progression`
 
-### Core Idea
+This subsection owns dedicated overhaul mods for vampire, werewolf, and shout gameplay — three character-identity systems that vanilla Skyrim leaves shallow or repetitive, and that the broader progression stack does not fully cover. These picks complete the EnaiRim suite begun with `Andromeda` (standing stones, locked above). `Sacrosanct`, `Growl`, and `Thunderchild` are all by EnaiSiaion, share the same design philosophy, and pair with `Andromeda` to form the character-systems half of the EnaiRim ecosystem alongside the Ordinator-based perk baseline.
 
-- This subsection owns the dedicated overhaul mods for vampire, werewolf, and shout gameplay — three character-identity systems that vanilla Skyrim leaves shallow or repetitive, and that the broader progression stack in section 05 does not fully cover.
-- These picks complete the EnaiRim suite begun with `Andromeda` (standing stones, locked in `Expanded Systems - Character & Progression`). `Sacrosanct`, `Growl`, and `Thunderchild` are all by EnaiSiaion, share the same design philosophy, and pair with `Andromeda` to form the character-systems half of the EnaiRim ecosystem alongside the Ordinator-based perk baseline. → `Expanded Systems - Character & Progression`
-- The goal is to give vampire, werewolf, and Thu'um gameplay meaningful depth without letting any single transformation system dominate — `Elder Wilds` should support all three paths, not force one.
+### Baseline
 
-### Options
+- **Sacrosanct - Vampires of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3928)) — Vampire overhaul. Overhauls vampirism progression, feeding, powers, and NPC vampire behaviour with 4 feeding tiers and unique blood-power effects keyed to vampiric age. Community-canonical (133K endorsements). → `Expanded Systems - Character & Progression`
+- **Growl - Werebeasts of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14645)) — Werewolf overhaul. Overhauls beast-form progression, perks, feeding mechanics, and totems with 5 werebear varieties and a dedicated perk tree. → `Expanded Systems - Character & Progression`
+- **Thunderchild - Epic Shouts and Immersion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1460)) — Shout overhaul. Adds 19 new shouts (57 new words), meditation mechanics, shout-aware equipment, a recognition system, and boss encounters tied to the Thu'um. Completes the EnaiRim character-systems suite alongside `Andromeda`, `Sacrosanct`, and `Growl`. → `Expanded Systems - Character & Progression`
 
-- Vampire overhaul: `Sacrosanct - Vampires of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/3928> → `Expanded Systems - Character & Progression`
-- Werewolf overhaul: `Growl - Werebeasts of Skyrim` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/14645> → `Expanded Systems - Character & Progression`
-- Shout overhaul: `Thunderchild - Epic Shouts and Immersion` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/1460> → `Expanded Systems - Character & Progression`
-- Discipline-first route: rely on the vanilla vampire, werewolf, and shout systems without dedicated overhaul mods.
+### Alternatives
 
-### Recommendation
+- **Discipline-first route** — Rely on vanilla vampire, werewolf, and shout systems without dedicated overhaul mods. Only viable if `Elder Wilds` decides these systems do not need dedicated attention, though the total-category-gap argument is hard to justify for a list built on "modern mechanics" and "lots of new content".
 
-- Lock `Sacrosanct` as the vampire overhaul baseline. It overhauls vampirism progression, feeding, powers, and NPC vampire behaviour with 4 feeding tiers and unique blood-power effects keyed to vampiric age. The community-canonical vampire overhaul (133K endorsements) and the EnaiRim-aligned choice — vanilla's vampire system is shallow and repetitive, and no other locked mod covers it. → `Expanded Systems - Character & Progression`
-- Lock `Growl` as the werewolf overhaul baseline. It overhauls beast-form progression, perks, feeding mechanics, and totems with 5 werebear varieties and a dedicated perk tree. Same total-category gap — vanilla werewolf gameplay is nearly non-existent outside the Companions questline. → `Expanded Systems - Character & Progression`
-- Lock `Thunderchild` as the shout overhaul baseline. It adds 19 new shouts (57 new words), meditation mechanics, shout-aware equipment, a recognition system, and boss encounters tied to the Thu'um. Completes the EnaiRim character-systems suite alongside `Andromeda`, `Sacrosanct`, and `Growl`, and adds meaningful content to a system that vanilla leaves bare after word-wall collection. → `Expanded Systems - Character & Progression`
-- All three mods are by EnaiSiaion, share the same design language, and are guaranteed compatible with each other and with the locked `Ordinator`, `Andromeda`, `Apocalypse`, and `Triumvirate` baselines — no cross-patching required. → `Expanded Systems - Character & Progression`
-- Keep the discipline-first route alive only if `Elder Wilds` decides vampirism, lycanthropy, and shout gameplay do not need dedicated attention. The total-category-gap argument is hard to justify for a list built on "modern mechanics" and "lots of new content". → `Expanded Systems - Character & Progression`
-
-### Risks & Compatibility
+### Notes
 
 - All three are by EnaiSiaion, designed to work together, and require no cross-patching. Compatibility with `Ordinator`, `Andromeda`, `Apocalypse`, and the broader EnaiRim ecosystem is guaranteed by design.
 - `Sacrosanct` and `Growl` interact with `Heart of the Beast` (werewolf transformation audio) in section 10. Place transformation-sound replacers after the transformation-system mods in load order.
@@ -190,14 +122,3 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also:
 - All three add spells, powers, and mechanics that `Ordinator`'s perk trees must coexist with. Verify Ordinator's enchantment-tree and speech-tree adjustments do not conflict with Sacrosanct's blood powers or Thunderchild's shout meditation. → `Expanded Systems - Character & Progression`
 - Vampire feeding interacts with the crime-and-reputation baseline (`Skyrim Reputation` from `Expanded Systems - Followers & Reputation`). Test feeding in cities to confirm guard behaviour and bounty tracking remain coherent.
 - `Thunderchild`'s boss encounters may overlap with encounter-zone or world-content mods from `modlist-world-content.md`. Verify new word-wall guardians do not duplicate vanilla boss spawns. → `Expanded Systems - Character & Progression`
-
-### Acceptance Criteria
-
-- `Elder Wilds` has dedicated vampire, werewolf, and shout overhaul baselines. → `Expanded Systems - Character & Progression`
-- Vampire gameplay offers meaningful progression depth beyond vanilla's blood-potion-and-stage loop.
-- Werewolf gameplay includes a real perk tree and feeding progression.
-- Shout gameplay adds new words, meditation mechanics, and world content, making the Thu'um feel like a real character investment path.
-- All three EnaiRim mods coexist with the locked `Ordinator`, `Andromeda`, `Apocalypse`, and `Triumvirate` baselines without conflict.
-- Transformation-audio mods from section 10 apply correctly to Sacrosanct's and Growl's new forms.
-- Shout-audio mods from section 10 apply to Thunderchild's new shouts.
-- No guard-behaviour or bounty incoherence from vampire feeding under the locked crime baseline.

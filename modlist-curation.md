@@ -4,8 +4,6 @@
 
 ## Curation Rules → `Testing & Curation`
 
-### Core Idea
-
 These rules govern how `Elder Wilds` selects, evaluates, and curates mods across every section. They are not a substitute for section-level research, but a shared set of guardrails that keeps individual picks consistent with the list's overall identity.
 
 ### Visual Style Consistency
@@ -36,18 +34,7 @@ When two mods solve the same design goal, prefer the lighter option unless the f
 
 No two mods in the final load order should attempt to overhaul the same gameplay system unless one is explicitly a compatibility layer or patch that reconciles them. Examples of forbidden overlaps: two perk overhauls, two magic system overhauls, two encounter-zone overhauls, two survival frameworks running simultaneously, or two independently authored combat animation packs that both replace the same attack animation sets. When a section file discusses alternatives, it must clearly state whether the alternatives are compatible add-ons or exclusive branches.
 
-### Acceptance Criteria
-
-- Every section file references these curation rules when evaluating mods, either explicitly or by following their logic.
-- No two mods in the final list overlap on the same core system.
-- Visual mods are chosen to form a coherent look rather than a collection of individually excellent but visually incompatible picks.
-- Performance stays within the target envelope except in known stress areas.
-- Animation quality never drops below the established bar.
-- Third-person usability is verified before any gameplay, animation, camera, or UI mod is locked.
-
 ## Testing Plan → `Testing & Curation`
-
-### Core Idea
 
 This testing plan is the verification layer for `Elder Wilds`. Each test stage targets a specific category of load-order risk: startup crashes, character-flow regressions, combat feel, performance in heavy scenes, visual consistency, and long-session stability. Tests are ordered so that earlier stages catch the most common failure modes before later stages invest time in detailed playthrough evaluation.
 
@@ -156,14 +143,6 @@ Play continuously for at least two hours using a character that has completed th
 - After two hours, check the save file size and Papyrus log for accumulating errors, stack dumps, or script-instance leaks.
 
 The long-session test passes if the game does not crash, the save remains loadable, and the Papyrus log does not show escalating error spam. A single crash is a warning. Two crashes in separate two-hour sessions is a failure that must be investigated before the modlist is considered stable.
-
-### Acceptance Criteria
-
-- All test stages must pass before a category is considered locked for the final build.
-- Regression testing is required after any change to a foundational, gameplay, or world-content mod.
-- City and forest performance benchmarks must be recorded per hardware target so future mod additions can be evaluated against known baselines.
-- Long-session stability tests must be repeated after any SKSE plugin, script-heavy mod, or worldspace edit is added to the final load order.
-- Testing results should be noted in the repo so that troubleshooting later does not start from zero knowledge.
 
 ## Post-Install Smoke Test → `Testing & Curation`
 

@@ -4,30 +4,27 @@
 
 ## Core Mod Baseline → `Legacy of the Dragonborn`
 
-### Core Idea
+This section owns the Legacy of the Dragonborn baseline for Elder Wilds: the museum itself, the collection-driven play loop it introduces, and the immediate support mods needed to make that framework practical inside a larger curated load order. The goal is to treat Legacy of the Dragonborn as a foundational content pillar for the final list, not as a late optional extra bolted onto an already-finished setup.
 
-This section owns the `Legacy of the Dragonborn` baseline for `Elder Wilds`: the museum itself, the collection-driven play loop it introduces, and the immediate support mods needed to make that framework practical inside a larger curated load order.
+### Baseline
 
-The goal is to treat `Legacy of the Dragonborn` as a foundational content pillar for the final list, not as a late optional extra bolted onto an already-finished setup.
+- **Legacy of the Dragonborn** — Non-negotiable centerpiece. Museum progression, artifact collection, and the supported patch ecosystem follow from this decision. → `Legacy of the Dragonborn`
+- **The Curator's Companion** — Cleaner in-game tracking for what the museum can display and what the player has already found. → `Legacy of the Dragonborn`
+- **Legacy of the Dragonborn Patches (Official)** — Required integration infrastructure once the supporting quest, item, and world-content stack is firm enough to justify concrete patch picks. → `Legacy of the Dragonborn`
+- Nexus 13279 (Paintings Replacer for Legacy of the Dragonborn SSE), 16080 (Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art), and 131107 (Placeable Display Cases) — Part of the LoTD ecosystem under active curation for this list. → `Legacy of the Dragonborn`
 
-### Options
+### Alternatives
 
-- Master mod route: use `Legacy of the Dragonborn` as the non-negotiable centerpiece if `Elder Wilds` is committing to museum progression, artifact collection, and the supported patch ecosystem that follows from that decision. → `Legacy of the Dragonborn`
-- Companion utility route: add `The Curator's Companion` if the list wants cleaner in-game tracking for what the museum can display and what the player has already found. → `Legacy of the Dragonborn`
-- Integration baseline route: plan around the official `Legacy of the Dragonborn` patch collection once the supporting quest, item, and world-content stack is firm enough to justify concrete patch picks. → `Legacy of the Dragonborn`
-- User-specified LoTD support route: include the additional Nexus entries `13279`, `16080`, and `131107` as part of the LoTD ecosystem under active curation for this list. → `Legacy of the Dragonborn`
+- **No LoTD / late addition** — Treating LoTD as a maybe-later branch. Retrofitting LoTD after world content, quest expansions, and item mods are scattered is significantly harder than planning around it early. Not recommended for Elder Wilds.
 
-### Recommendation
+### Notes
 
-Treat `Legacy of the Dragonborn` as a deliberate list pillar. Start from the museum-first assumption, keep `The Curator's Companion` as the most likely quality-of-life companion, and treat the official patch collection as required integration infrastructure once the related content mods are locked.
-
-If `Elder Wilds` is going to incorporate `Legacy of the Dragonborn`, the list should acknowledge the real design consequence: artifact discovery, unique-item routing, and compatibility planning all change. That makes `Legacy of the Dragonborn` closer to a structural content framework than to an ordinary quest mod. Planning around it early is cleaner than trying to retrofit it after world content, quest expansions, and item mods are already scattered across the repo.
+- Legacy of the Dragonborn is closer to a structural content framework than an ordinary quest mod. Artifact discovery, unique-item routing, and compatibility planning all change when LoTD is in the list.
+- If Elder Wilds incorporates LoTD, the list should acknowledge the real design consequence: planning around it early is cleaner than trying to retrofit it after world content, quest expansions, and item mods are already scattered across the repo.
 
 ## Supported Content → `Legacy of the Dragonborn` Mods And Museum Integration
 
-### Core Idea
-
-This subsection tracks the kinds of mods that should be evaluated partly through the `Legacy of the Dragonborn` lens: quest mods, new lands, artifact packs, item expansions, player homes, and other content that may gain museum displays, sorting support, relic integration, or official patch coverage.
+This subsection tracks the kinds of mods that should be evaluated partly through the Legacy of the Dragonborn lens: quest mods, new lands, artifact packs, item expansions, player homes, and other content that may gain museum displays, sorting support, relic integration, or official patch coverage.
 
 ### Candidate Mod Buckets To Track
 
@@ -35,120 +32,118 @@ This subsection tracks the kinds of mods that should be evaluated partly through
 - Museum tracking support: `The Curator's Companion` — <https://www.nexusmods.com/skyrimspecialedition/mods/38529>. → `Legacy of the Dragonborn`
 - Official patch hub: `Legacy of the Dragonborn Patches (Official)` — <https://www.nexusmods.com/skyrimspecialedition/mods/30980>. → `Legacy of the Dragonborn`
 - User-provided verified Nexus entries to retain in this LoTD planning set: **13279** — *Paintings Replacer for Legacy of the Dragonborn SSE* (v1.1, last updated Nov 2017 — ⚠️ texture replacer, low risk of breakage but unmaintained); **16080** — *Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art* (v01, last updated Mar 2018 — ⚠️ same caveat); **131107** — *Placeable Display Cases* (v3.1, last updated Jan 2025).
-- Content with common `Legacy of the Dragonborn` integration pressure: major quest mods, artifact packs, unique-item expansions, new lands, treasure-hunt content, and player-home mods that may overlap with relic storage or collection routing.
+- Content with common LoTD integration pressure: major quest mods, artifact packs, unique-item expansions, new lands, treasure-hunt content, and player-home mods that may overlap with relic storage or collection routing.
 
 ### Quest Mods With Strong LoTD Integration
 
 The following quest and new-lands mods have established LoTD patch support (official or high-quality third-party) and are strong candidates for inclusion based on museum display value:
 
 - **VIGILANT** — LoTD displays for artifacts, daedric items, and unique rewards. Multiple display cases in the museum's Hall of Oddities. → `Legacy of the Dragonborn`
-- **Unslaad** — LoTD patch available via the official patch hub; displays for the unique item set from this mod. → `Legacy of the Dragonborn`
-- **Glenmoril** — patch pipeline still maturing; check before locking. → `Legacy of the Dragonborn`
-- **Project AHO** — full display room in the museum (the AHO Display Room in the Hall of Secrets). → `Legacy of the Dragonborn`
-- **Carved Brink** — museum displays for artifacts from the Faceted Stones and the unique weapons/armor added by this mod. → `Legacy of the Dragonborn`
-- **The Forgotten City** — displays for the unique items and the player's choice reward. → `Legacy of the Dragonborn`
-- **Beyond Skyrim - Bruma** — count-flation and display-base integration; some unique Bruma items have LoTD display slots. → `Legacy of the Dragonborn`
-- **Beyond Reach** — third-party LoTD patch adds display support for unique items. → `Legacy of the Dragonborn`
-- **The Wheels of Lull** — display slots for the unique items from this mod in the Hall of Secrets. → `Legacy of the Dragonborn`
-- **Moon and Star** — display support for the unique armor and weapon reward. → `Legacy of the Dragonborn`
+- **Unslaad** — LoTD patch available via the official patch hub; displays for the unique item set. → `Legacy of the Dragonborn`
+- **Glenmoril** — Patch pipeline still maturing; check before locking. → `Legacy of the Dragonborn`
+- **Project AHO** — Full display room in the museum (the AHO Display Room in the Hall of Secrets). → `Legacy of the Dragonborn`
+- **Carved Brink** — Museum displays for artifacts from the Faceted Stones and unique weapons/armor. → `Legacy of the Dragonborn`
+- **The Forgotten City** — Displays for the unique items and the player's choice reward. → `Legacy of the Dragonborn`
+- **Beyond Skyrim - Bruma** — Count-flation and display-base integration; some unique Bruma items have display slots. → `Legacy of the Dragonborn`
+- **Beyond Reach** — Third-party LoTD patch adds display support for unique items. → `Legacy of the Dragonborn`
+- **The Wheels of Lull** — Display slots for unique items in the Hall of Secrets. → `Legacy of the Dragonborn`
+- **Moon and Star** — Display support for the unique armor and weapon reward. → `Legacy of the Dragonborn`
 - **Wyrmstooth** — LoTD displays for several unique items and the Wyrmstooth itself. → `Legacy of the Dragonborn`
-- **Falskaar** — base museum count supports Falskaar's unique items. → `Legacy of the Dragonborn`
-- **Sirenroot - A Verdant Tale** — newer mod; check patch status before locking display integration. → `Legacy of the Dragonborn`
-- **Midwood Isle** — official LoTD patch support; displays for unique items from this worldspace. → `Legacy of the Dragonborn`
-- **The Gray Cowl of Nocturnal** — displays for the unique items and the legendary mask. → `Legacy of the Dragonborn`
-- **The Breton Paladin** — official patch support; displays for the quest rewards. → `Legacy of the Dragonborn`
-- **Clockwork** — display slots for the unique items from this quest mod. → `Legacy of the Dragonborn`
-- **Konahrik's Accoutrements** — deep LoTD integration with dedicated display room for the full dragon priest regalia. → `Legacy of the Dragonborn`
-- **Artifacts - The Ice Blade of the Monarch** — standalone artifact with dedicated LoTD display. → `Legacy of the Dragonborn`
-- **Artifacts - The Tournament of the Ten Bloods** — new artifact quest with LoTD displays. → `Legacy of the Dragonborn`
+- **Falskaar** — Base museum count supports Falskaar's unique items. → `Legacy of the Dragonborn`
+- **Sirenroot - A Verdant Tale** — Newer mod; check patch status before locking display integration. → `Legacy of the Dragonborn`
+- **Midwood Isle** — Official LoTD patch support; displays for unique items from this worldspace. → `Legacy of the Dragonborn`
+- **The Gray Cowl of Nocturnal** — Displays for the unique items and the legendary mask. → `Legacy of the Dragonborn`
+- **The Breton Paladin** — Official patch support; displays for quest rewards. → `Legacy of the Dragonborn`
+- **Clockwork** — Display slots for unique items from this quest mod. → `Legacy of the Dragonborn`
+- **Konahrik's Accoutrements** — Deep LoTD integration with dedicated display room for full dragon priest regalia. → `Legacy of the Dragonborn`
+- **Artifacts - The Ice Blade of the Monarch** — Standalone artifact with dedicated LoTD display. → `Legacy of the Dragonborn`
+- **Artifacts - The Tournament of the Ten Bloods** — New artifact quest with LoTD displays. → `Legacy of the Dragonborn`
 
 ### Display Expansions And Room Mods
 
-- **LOTD Display Patch Repos** — collection of third-party display patches for mods not covered by the official hub. → `Legacy of the Dragonborn`
-- **Museum Display Room Expansion** — if the base museum feels cramped after adding supported content, evaluate display-room expansion mods such as the *LOTD SSE - Museum Exterior Fixes* or *LOTD Display Room Overhaul* family. → `Legacy of the Dragonborn`
-- **Hall of Forgotten Guild** — feature of the Curator's Companion that adds more shelf and case space for common collectibles. → `Legacy of the Dragonborn`
+- **LOTD Display Patch Repos** — Collection of third-party display patches for mods not covered by the official hub. → `Legacy of the Dragonborn`
+- **Museum Display Room Expansion** — If the base museum feels cramped after adding supported content, evaluate display-room expansion mods such as the *LOTD SSE - Museum Exterior Fixes* or *LOTD Display Room Overhaul* family. → `Legacy of the Dragonborn`
+- **Hall of Forgotten Guild** — Feature of the Curator's Companion that adds more shelf and case space for common collectibles. → `Legacy of the Dragonborn`
 
 ### Collectible Additions With LoTD Integration
 
-- **Stones of Barenziah Quest Markers** — if the Stones of Barenziah quest is active, LoTD has a dedicated display for the completed crown. → `Legacy of the Dragonborn`
-- **Jewels of the Reach** — additional gemstone collectible with possible LoTD support.
-- **Dawnguard Treasure Map** — does not add direct LoTD displays but feeds the collection-driven exploration loop. → `Legacy of the Dragonborn`
+- **Stones of Barenziah Quest Markers** — If the Stones of Barenziah quest is active, LoTD has a dedicated display for the completed crown. → `Legacy of the Dragonborn`
+- **Jewels of the Reach** — Additional gemstone collectible with possible LoTD support.
+- **Dawnguard Treasure Map** — Does not add direct LoTD displays but feeds the collection-driven exploration loop. → `Legacy of the Dragonborn`
 
 ## Patch Strategy → `Legacy of the Dragonborn` For LoTD Support
 
-### Core Idea
+This subsection owns the patch philosophy for a Legacy of the Dragonborn build. The main decision is not whether patches exist, but how disciplined the list will be about only enabling the specific museum patches that correspond to finalized content picks.
 
-This subsection owns the patch philosophy for a `Legacy of the Dragonborn` build. The main decision is not whether patches exist, but how disciplined the list will be about only enabling the specific museum patches that correspond to finalized content picks.
+### Baseline
 
-### Recommendation
-
-Use the official `Legacy of the Dragonborn` patch collection as the default patch source wherever it cleanly covers a chosen mod. Add third-party `Legacy of the Dragonborn` patches only when the official collection does not cover a finalized mod and the patch has a clear maintenance story.
-
-- Treat `Legacy of the Dragonborn Patches (Official)` as the primary integration layer. → `Legacy of the Dragonborn`
+- Use the official **Legacy of the Dragonborn Patches (Official)** as the default patch source wherever it cleanly covers a chosen mod. → `Legacy of the Dragonborn`
+- Add third-party LoTD patches only when the official collection does not cover a finalized mod and the patch has a clear maintenance story.
 - Do not pre-install broad patch bundles for mods that are still only hypothetical.
 - Only keep patches for mods that survive into the actual final stack.
 - Re-check load order, museum sorting behavior, and display activation after each major content addition.
-- Keep patch ownership readable so `Legacy of the Dragonborn` compatibility does not disappear into an opaque misc-patches bucket. → `Legacy of the Dragonborn`
+- Keep patch ownership readable so LoTD compatibility does not disappear into an opaque misc-patches bucket. → `Legacy of the Dragonborn`
 
 ### Mod Selection Considerations
 
-When evaluating whether to include a quest, new-lands, or artifact mod in `Elder Wilds`, the following LoTD-aware questions should be asked:
+When evaluating whether to include a quest, new-lands, or artifact mod in Elder Wilds, ask:
 
-1. **Does this mod have official or high-quality third-party LoTD patch support?** If yes, integration cost is low. If no, the value of the mod's content must be high enough to justify either writing a custom patch or accepting that its items will not appear in the museum.
+1. **Does this mod have official or high-quality third-party LoTD patch support?** If yes, integration cost is low. If no, the value must be high enough to justify writing a custom patch or accepting that its items will not appear in the museum.
 2. **Does the mod add unique items that would feel like they *should* be displayed?** A mod with several named artifacts that have no display slot creates a persistent sense of incompleteness.
-3. **Does the mod conflict with LoTD worldspace edits?** Some older mods edit the same cells as LoTD's museum exterior. Check for navmesh, landscape, or object conflicts before treating a mod as patch-compatible.
-4. **Does the mod's intended play order (canonical level range, gating) fit the museum's unlock progression?** A mod that drops a high-value museum item too early can disrupt the pacing of the collection loop.
+3. **Does the mod conflict with LoTD worldspace edits?** Check for navmesh, landscape, or object conflicts before treating a mod as patch-compatible.
+4. **Does the mod's intended play order fit the museum's unlock progression?** A mod that drops a high-value museum item too early can disrupt the pacing of the collection loop.
 
 ## Submods → `Legacy of the Dragonborn` And Quality-Of-Life Support
 
-### Core Idea
+This subsection tracks the immediate Legacy of the Dragonborn ecosystem around the master mod: collection tracking, museum usability, and any later chosen add-ons that materially improve the museum loop without redefining the rest of the modlist.
 
-This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around the master mod: collection tracking, museum usability, and any later chosen add-ons that materially improve the museum loop without redefining the rest of the modlist.
+### Baseline
 
-### Options
+- **The Curator's Companion** — Leading companion mod for collection-state visibility. → `Legacy of the Dragonborn`
+- **Achievement Injector** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126220)) — Achievement framework. → `Legacy of the Dragonborn`
+- **Legacy of the Dragonborn - Achievement Injector** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130114)) — Museum-achievement content package. → `Legacy of the Dragonborn`
+- **Legacy of the Dragonborn Patches (Official)** — Expected main patch package. → `Legacy of the Dragonborn`
+- Additional ecosystem entries: 13279 (Paintings Replacer), 16080 (Fate Cards Re-texture), 131107 (Placeable Display Cases). → `Legacy of the Dragonborn`
 
-- Tracking support: `The Curator's Companion` as the leading companion mod for collection-state visibility. → `Legacy of the Dragonborn`
-- Achievement framework route: `Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/126220> → `Legacy of the Dragonborn`
-- Museum-achievement package route: `Legacy of the Dragonborn - Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/130114> → `Legacy of the Dragonborn`
-- Patch support: `Legacy of the Dragonborn Patches (Official)` as the expected main patch package. → `Legacy of the Dragonborn`
-- Additional included ecosystem entries: keep `13279` (Paintings Replacer for Legacy of the Dragonborn SSE), `16080` (Fate Cards Re-texture), and `131107` (Placeable Display Cases) in the LoTD support bucket for this modlist. → `Legacy of the Dragonborn`
-- Additional submods: only add museum-side submods or display extensions if they solve a real usability or integration problem in the finalized stack.
+### Alternatives
+
+- Additional museum-side submods — Only add if they solve a real usability or integration problem in the finalized stack. Do not accumulate submods for every museum friction point.
 
 ### Sorting And Inventory Integration
 
-- **Legacy Safehouse Plus** — expands the museum safehouse with additional crafting stations, display cases, and quality-of-life features. Check compatibility with the latest LoTD version before locking. → `Legacy of the Dragonborn`
-- **LOTD - Explorer's Room** — adds an explorer-themed room to the safehouse with additional storage and display functionality. → `Legacy of the Dragonborn`
-- **Quick Light** — not LoTD-specific, but essential for navigating the museum interior (press Light for a portable magelight). → `Legacy of the Dragonborn`
-- **Map Markers for LotD** — adds a fast-travel map marker at the museum exterior after a quest condition is met. Reduces friction for returning to the museum to deposit finds. → `Legacy of the Dragonborn`
+- **Legacy Safehouse Plus** — Expands the museum safehouse with additional crafting stations, display cases, and quality-of-life features. Check compatibility with the latest LoTD version before locking. → `Legacy of the Dragonborn`
+- **LOTD - Explorer's Room** — Adds an explorer-themed room to the safehouse with additional storage and display functionality. → `Legacy of the Dragonborn`
+- **Quick Light** — Not LoTD-specific, but essential for navigating the museum interior (press Light for a portable magelight). → `Legacy of the Dragonborn`
+- **Map Markers for LotD** — Adds a fast-travel map marker at the museum exterior after a quest condition is met. Reduces friction for returning to the museum to deposit finds. → `Legacy of the Dragonborn`
 
 ### Museum-Specific UI Enhancements
 
-- **LOTD Museum Exterior Fixes** — addresses navmesh and door-activation issues around the museum exterior. → `Legacy of the Dragonborn`
-- **LOTD Hall of Secrets Door Fix** — fixes the door activator in the Hall of Secrets if it does not open correctly after certain quest completions. → `Legacy of the Dragonborn`
-- **Object Manipulation Overhaul** — not LoTD-specific, but useful for rearranging displays and cases in the museum without console commands. → `Legacy of the Dragonborn`
+- **LOTD Museum Exterior Fixes** — Addresses navmesh and door-activation issues around the museum exterior. → `Legacy of the Dragonborn`
+- **LOTD Hall of Secrets Door Fix** — Fixes the door activator in the Hall of Secrets if it does not open correctly after certain quest completions. → `Legacy of the Dragonborn`
+- **Object Manipulation Overhaul** — Not LoTD-specific, but useful for rearranging displays and cases without console commands. → `Legacy of the Dragonborn`
 
 ### Additional QoL And Immersion Mods
 
-- **LOTD - Museum Exterior Music** — adds area-appropriate music when entering the museum exterior cell. Low priority; evaluate after the audio section (`modlist-audio.md`) is locked. → `Legacy of the Dragonborn`
-- **Dynamic Activation Key** — reduces E key scroll-conflict when interacting with museum displays, bookshelves, and crowded surface tables. → `Legacy of the Dragonborn`
+- **LOTD - Museum Exterior Music** — Adds area-appropriate music when entering the museum exterior cell. Low priority; evaluate after the audio section (`modlist-audio.md`) is locked. → `Legacy of the Dragonborn`
+- **Dynamic Activation Key** — Reduces E key scroll-conflict when interacting with museum displays, bookshelves, and crowded surface tables. → `Legacy of the Dragonborn`
 
 ### Relic System And Archaeological Content
 
 Legacy of the Dragonborn v6 includes a built-in relic system and dig-site exploration mechanics. The following mods extend or complement that content:
 
-- **Relic Hunter** — adds additional relic-themed quests and exploration content that feeds into the museum collection loop. Evaluate for compatibility with LoTD v6's own relic system. → `Legacy of the Dragonborn`
-- **LOTD - Explorer's League** — framework extension that adds guild-like progression for relic hunters. Check patch status and overlap with Curator's Companion features. → `Legacy of the Dragonborn`
-- **Shovels - Dig Up Treasure** — adds digging mechanics that complement LoTD's dig-site expeditions. Both mods use similar interaction patterns; check for conflict or double-coverage. → `Legacy of the Dragonborn`
+- **Relic Hunter** — Additional relic-themed quests and exploration content that feeds into the museum collection loop. Evaluate for compatibility with LoTD v6's own relic system. → `Legacy of the Dragonborn`
+- **LOTD - Explorer's League** — Framework extension that adds guild-like progression for relic hunters. Check patch status and overlap with Curator's Companion features. → `Legacy of the Dragonborn`
+- **Shovels - Dig Up Treasure** — Adds digging mechanics that complement LoTD's dig-site expeditions. Check for conflict or double-coverage. → `Legacy of the Dragonborn`
 
-### Risks To Check
+### Notes
 
-- `Legacy of the Dragonborn` can quietly drag the whole load order toward completionist design even when another section wants a lighter exploration tone. → `Legacy of the Dragonborn`
+- Legacy of the Dragonborn can quietly drag the whole load order toward completionist design even when another section wants a lighter exploration tone. → `Legacy of the Dragonborn`
 - It increases patching pressure across quests, artifacts, and world-content mods, so late list churn becomes more expensive.
 - Museum-first progression can change the perceived value of loot and unique-item mods in ways that affect later curation decisions.
 - Utility add-ons can accumulate quickly if every museum friction point gets its own extra plugin.
-- Achievement-side add-ons should stay scoped: `Achievement Injector` is the framework, while `Legacy of the Dragonborn - Achievement Injector` is only one content package that uses it. → `Legacy of the Dragonborn`
-- Quest mods with strong LoTD integration may co-determine the quest mod stack. If VIGILANT, Project AHO, or Carved Brink are excluded for other reasons, those decisions should be reflected in the LoTD section's supported-content list.
-- Third-party display patches for older quest mods (pre-2023) may not be maintained against LoTD v6. Verify patch currency before treating third-party support as a factor in the mod's evaluation.
+- Achievement-side add-ons should stay scoped: `Achievement Injector` is the framework, `Legacy of the Dragonborn - Achievement Injector` is only one content package that uses it. → `Legacy of the Dragonborn`
+- Quest mods with strong LoTD integration may co-determine the quest mod stack. If VIGILANT, Project AHO, or Carved Brink are excluded for other reasons, reflect those decisions in the LoTD section's supported-content list.
+- Third-party display patches for older quest mods (pre-2023) may not be maintained against LoTD v6. Verify patch currency before treating third-party support as a factor.
 
 ## Research Tasks → `Legacy of the Dragonborn`
 
@@ -158,22 +153,10 @@ Legacy of the Dragonborn v6 includes a built-in relic system and dig-site explor
 - Verify the canonical Nexus page for `Achievement Injector` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v1.2.3, updated 03 Jan 2025 — <https://www.nexusmods.com/skyrimspecialedition/mods/126220> → `Legacy of the Dragonborn`
 - Verify the canonical Nexus page for `Legacy of the Dragonborn - Achievement Injector` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v1.0, updated 02 Oct 2024 — <https://www.nexusmods.com/skyrimspecialedition/mods/130114> → `Legacy of the Dragonborn`
 - Re-open the user-provided Nexus pages `13279`, `16080`, and `131107` in an interactive browser session later to record their exact canonical mod titles alongside the already-supplied URLs. **Resolved (Jun 2026):** `13279` — *Paintings Replacer for Legacy of the Dragonborn SSE* (v1.1, Nov 2017, texture replacer); `16080` — *Legacy of the Dragonborn - Fate Cards Re-texture - Skyrim Concept Art* (v01, Mar 2018, texture replacer); `131107` — *Placeable Display Cases* (v3.1, Jan 2025). Note: the two 2017-2018 texture mods are ancient but functional (textures do not break with engine updates); they contribute to the staleness threshold but are low-risk. → `Legacy of the Dragonborn`
-- As `modlist-world-content.md` and later content sections expand, record which chosen mods have official `Legacy of the Dragonborn` support and which require third-party patches. → `Legacy of the Dragonborn`
-- Decide whether any museum-side submods beyond `The Curators Companion` are justified by actual play friction rather than by ecosystem sprawl. → `Legacy of the Dragonborn`
-- Check whether storage, display activation, and museum progression create any conflicts with the intended roleplay and pacing tone of `Elder Wilds`. → `Legacy of the Dragonborn`
+- As `modlist-world-content.md` and later content sections expand, record which chosen mods have official LoTD support and which require third-party patches. → `Legacy of the Dragonborn`
+- Decide whether any museum-side submods beyond `The Curator's Companion` are justified by actual play friction rather than by ecosystem sprawl. → `Legacy of the Dragonborn`
+- Check whether storage, display activation, and museum progression create any conflicts with the intended roleplay and pacing tone of Elder Wilds. → `Legacy of the Dragonborn`
 - Research third-party LoTD patch status for VIGILANT, Unslaad, Glenmoril, Carved Brink, and Project AHO under LoTD v6 — these quest mods add heavy artifact content and patch staleness would be a significant gap. → `Legacy of the Dragonborn`
 - Evaluate the overlap between LoTD v6's built-in relic system and external relic/adventure mods to determine whether `Relic Hunter`, `LOTD - Explorer's League`, or `Shovels - Dig Up Treasure` add meaningful new content or just duplicate existing systems. → `Legacy of the Dragonborn`
 - Verify whether `Legacy Safehouse Plus` and `LOTD - Explorer's Room` are compatible with LoTD v6.10+ without requiring patches for the patch. → `Legacy of the Dragonborn`
 - For each quest mod in the candidate list (VIGILANT, Project AHO, Carved Brink, etc.), confirm the exact display room or case in the museum and whether the display is automatic or requires the Curator's Companion to activate. → `Legacy of the Dragonborn`
-
-## Acceptance Criteria → `Legacy of the Dragonborn`
-
-- `Elder Wilds` explicitly treats `Legacy of the Dragonborn` as a supported core content pillar, not a maybe-later branch. → `Legacy of the Dragonborn`
-- The master mod, key companion utility, and official patch collection are identified in one dedicated section file.
-- The museum-achievement route is documented with the framework mod and the LoTD-specific achievement package kept distinct.
-- Later quest and content decisions can refer back to a clear `Legacy of the Dragonborn` integration policy. → `Legacy of the Dragonborn`
-- Only verified Nexus URLs should be added to `mods-checklist.md` once link verification is complete. → `Legacy of the Dragonborn`
-- Clean museum integration is verified for any finalized supported quest or artifact mods.
-- Patch selection is tied to actual chosen mods, not speculative future content.
-- The museum loop complements exploration and world-content goals instead of overwhelming them.
-- Quest and artifact mods in the final stack have a documented LoTD integration status (official patch, third-party patch, or unsupported) before they are locked into the load order.

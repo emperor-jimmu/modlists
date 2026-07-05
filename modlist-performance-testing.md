@@ -155,10 +155,4 @@ MCM configuration is tedious to reproduce on a rebuild. Record every meaningful 
 
 The modlist's branch-and-choice structure means two installations of `Elder Wilds` can look quite different while following the same guide. The rule: **whatever you changed, note it, and re-run only the patchers whose upstream input changed.** You do not need to re-run all generators every time you tweak a setting.
 
-### Acceptance Criteria
 
-- Every patcher has a documented rebuild trigger.
-- The generator output order is reproducible across rebuilds.
-- MCM settings are archived (screenshots or MCM Recorder profiles) for every mod with configurable pages.
-- The benchmark methodology and tuning-knob order are documented so performance work is repeatable.
-- The modlist tracks its rebuild history in a changelog that lives alongside generated output.
