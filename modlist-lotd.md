@@ -71,6 +71,10 @@ The following quest and new-lands mods have established LoTD patch support (offi
 - **Jewels of the Reach** — Additional gemstone collectible with possible LoTD support.
 - **Dawnguard Treasure Map** — Does not add direct LoTD displays but feeds the collection-driven exploration loop. → `Legacy of the Dragonborn`
 
+### Artifact Enhancement Mods
+
+- **Zim's Immersive Artifacts** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9138)) — Artifact overhaul that rebalances 50+ vanilla artifacts with lore-friendly stat changes, new enchantments, and optional visual upgrades. v1.7, FOMOD with modular install (pick individual artifacts or complete pack). ⚠️ **LoTD compatibility note:** ZIA modifies the same artifacts that LoTD displays. Verify patch status or load order: ZIA's changes may need LoTD to win on display records while ZIA wins on stats. If no official patch exists, load LoTD after ZIA so museum display conditions use LoTD's artifact records, and accept that ZIA's stat changes apply to collectible items. → `Legacy of the Dragonborn`
+
 ## Patch Strategy → `Legacy of the Dragonborn` For LoTD Support
 
 This subsection owns the patch philosophy for a Legacy of the Dragonborn build. The main decision is not whether patches exist, but how disciplined the list will be about only enabling the specific museum patches that correspond to finalized content picks.

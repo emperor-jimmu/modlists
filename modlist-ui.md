@@ -51,6 +51,8 @@ The main on-screen HUD layer: health, stamina, magicka, target readability, and 
 - **Tween Menu Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143275)) — Main-menu and tween-menu (loading screen) visual overhaul. Replaces the static main menu with dynamic backgrounds, improved tween-menu transitions, and cleaner layout. Complements the Oathvein UI direction. → `UI - Framework & HUD`
     - **Main file:** `Tween Menu Overhaul` (SWF replacer).
     - **Tween Menu Overhaul Improved** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155036)) — Updated version with additional tween-menu scenes and improved transitions. Install instead of the original. → `UI - Framework & HUD`
+- **RUMINATE - Frost and Snow - Main Menu Video Pack** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160831)) — Main menu video replacer with frost-and-snow themed cinematic. Fits the grim-dark Nordic exploration tone. Chosen over Fantasy Main Menu Video Replacer (169600) for tonal consistency. → `UI - Framework & HUD`
+- **Dynamic Location Pop-ups** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153122)) — Location discovery notification. Displays a modern pop-up banner when discovering new locations, showing the location name on-screen. Complements the exploration and discovery pillars. → `UI - Framework & HUD`
 - **Complete Controller Setup** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99978)) — SKSE-based controller configuration tool. Provides button-remapping, radial-menu tuning, and third-person camera preset profiles specifically designed for gamepad play. Supports per-profile saves. Completes the third-person gamepad parity pillar by closing controller-configuration gaps the vanilla game cannot address. → `UI - Framework & HUD`
 
 ### Alternatives
@@ -154,10 +156,16 @@ Conversation readability, response selection clarity, and the overall feel of mo
 - **Smart Talk (Dialogue Menu Enhancer)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/161500)) — Dialogue UI enhancer. Highlights quest-related options, reorders dialogue choices, adds natural pauses, and supports gamepad-friendly skip. SKSE plugin, no ESP. Complements Better Dialogue Controls by improving the content and flow of dialogue rather than just its input handling. 5.5K endorsements. → `UI - Map, Dialogue, Menus`
     - **Main file:** `Smart Talk` (SKSE plugin + optional MCM plugin). One main file.
 
+### Baseline Additions (From TODO)
+
+- **Improved Alternate Conversation Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68210)) — Dialogue camera baseline. Improves the third-person conversation camera with better framing, zoom, and letterbox support. v1.2.0, SKSE plugin, 12 files available. Test for Community Shaders letterbox conflict — the mod's own letterbox settings require a game restart on change and may overlap with Community Shaders cinematic effects. → `UI - Map, Dialogue, Menus`
+- **Dialogue History** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114238)) — Dialogue readability companion. Adds a scrollable history log of past dialogue lines, accessible via configurable keybind. Essential for gamepad play where dialogue can advance faster than comfortable reading. → `UI - Map, Dialogue, Menus`
+
 ### Notes
 
 - Subtitle safety and unvoiced-dialogue handling belong in `modlist-foundations.md` (Targeted Bugfix Mods) with `Fuz Ro D-oh - Silent Voice`.
 - Visual novelty can be mistaken for actual dialogue usability.
+- IACC's letterbox feature and Community Shaders potential overlap should be verified during playtesting before locking. If conflict emerges, run IACC without the letterbox setting or disable Community Shaders' cinematic letterbox.
 
 ## Controller-Friendly UI Support → `UI - Framework & HUD`
 
@@ -283,6 +291,7 @@ Experimental or unproven UI mods tracked for potential inclusion if playtesting 
 
 - `Character Menu SE` — character appearance menu enhancer → `UI - Framework & HUD`
 - `Kill feed` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179053)) — enemy kill notification feed → `UI - Framework & HUD`
+- `ImGui Icons` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114790)) — Icon font resource for Dear ImGui-based mods. Required dependency if any ImGui mods (e.g. Dialogue History) depend on it for icon rendering. → `UI - Framework & HUD`
 - `SKSE Menu Framework` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120352)) — menu framework SKSE plugin → `UI - Framework & HUD`
 - `Auto Input Switch` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54309)) — auto-detect controller vs KB+M input → `UI - Framework & HUD`
 

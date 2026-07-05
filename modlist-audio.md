@@ -62,10 +62,12 @@ This subsection owns creature, animal, and NPC sound effects not already covered
 ### Baseline
 
 - Minimalist route — rely on the `ISC` + `AOS` baseline for creature sounds. If testing reveals weak creature vocalisations, add dedicated replacers as controlled additions rather than as a blanket creature-audio mod.
+- **Talkative Dragons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26955)) — Dragon dialogue baseline. Reuses vanilla voice lines to make dragons speak during combat, reinforcing their identity as sentient beings rather than mere beasts. ESL-flagged, 15,478 endorsements, v1.1. Only overwrites one record (`CreatureDialogueDragon`), minimal compatibility pressure. → `Audio - SFX & Ambience`
 
 ### Notes
 
 - Creature sound mods that replace `.wav` files are generally safe (no record conflicts), but any mod that edits creature sound descriptors must be loaded after `ISC` and `AOS`.
+- Talkative Dragons edits a dialogue record, not raw audio files. Verify load order with any mod touching dragon dialogue records. Dragon dialogue from Epic Dragon Combat REDONE may overlap — test both together.
 
 ## Combat And Immersion Audio → `Audio - SFX & Ambience`
 

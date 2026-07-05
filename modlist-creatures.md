@@ -34,6 +34,7 @@ This subsection owns creature-specific visual direction layered on top of the br
 - **Fluffworks** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56361)) — Broad presentation layer for furred animals. One of the most noticeable broad creature upgrades. → `NPCs - Enemies & Creatures`
 - **Bears of the North** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47541)) — Species standout for one of Skyrim's most common large wildlife threats. → `NPCs - Enemies & Creatures`
 - **Iconic's Dragon Retexture** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/101712)) — Clean dragon presentation upgrade. → `NPCs - Enemies & Creatures`
+- **Dragons SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132218)) — Full dragon model replacer with higher-fidelity meshes and textures. 4,485 endorsements, v2. Not compatible with Iconic's Dragon Retexture — choose one dragon visual direction. → `NPCs - Enemies & Creatures`
 - **Draugrs - New models and textures** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123170)) — Mainland draugr visual upgrade, improving the most-seen undead enemy. → `NPCs - Enemies & Creatures`
 - **Spider SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/182638)) — Spider visual upgrade. Common dungeon enemies with notably dated vanilla models. → `NPCs - Enemies & Creatures`
 - **Deer Reworked - Ultimate** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155433)) — Deer visual upgrade. One of the most common wilderness wildlife sightings. → `NPCs - Enemies & Creatures`
@@ -97,8 +98,8 @@ This subsection owns encounter-side creature behavior: how creatures attack, rea
 
 ### Alternatives
 
+- **Epic Dragon Combat REDONE - And Many New Dragons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126680)) — Full dragon-combat overhaul route. Adds 20+ new dragon types with unique abilities, elemental breaths, AI improvements, custom VFX, and included dragon model replacers. Self-contained — includes its own models/textures so it replaces the baseline dragon visual direction. v4.40, actively maintained, 802 endorsements. Patches available for Diverse 4thUnknown Dragons. → `NPCs - Enemies & Creatures`
 - **Dragon War - A Dragon Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51310)) — Heavier dragon route if the problem is the structure and tempo of dragon fights rather than merely under-AI'd behavior. → `NPCs - Enemies & Creatures`
-- **Draugr Upgrades and Improvements** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21775)) — **Abandoned** (last updated August 2021). Do not use — author recommends The Restless Dead instead. Mentioned only for reference. → `NPCs - Enemies & Creatures`
 - **SkyTEST Lite ESL** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84539)) / **Animal Tweaks** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1532)) / **Pelagius's Wildlife AI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144909)) — Context-only animal-side mods that drift into section-07 ecology territory. Keep out of baseline unless section-07 overlap is made explicit. → `NPCs - Enemies & Creatures`
 
 ### Notes
@@ -132,7 +133,7 @@ This subsection owns how common wildlife should feel on the landscape once ecolo
 ### Enemies & Creatures
 
 - `Next Gen Dragon VFX` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/176433>) → `NPCs - Enemies & Creatures`
-- `Diverse 4thUnknown Dragons` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/162886>) → `NPCs - Enemies & Creatures`
+- `Diverse 4thUnknown Dragons` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/146462>) → `NPCs - Enemies & Creatures` — **Resolved (Jul 2026):** v1.17. Requires `Dragons SE` + `SkyPatcher`. Install one main file + one texture file. Has built-in SkyPatcher support for Epic Dragon Combat REDONE, KS Dragon Overhaul 2, Elemental Dragons. Fixes the earlier incorrect URL (was 162886 which is Phantom Thief Armor - SPID). Add to Creature Visual Overhauls as the dragon-diversity layer on top of Dragons SE.
 - `Dragons actually fall down` → `NPCs - Enemies & Creatures`
 - `Epic Dwarven Centurion Combat - Diverse Centurions` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/181405>) → `NPCs - Enemies & Creatures`
 - `Skyrim Bandit Expansion` → `NPCs - Enemies & Creatures`

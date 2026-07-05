@@ -62,6 +62,7 @@ This subsection owns the smaller stopover places that make travel routes and rur
 
 - **The Great Village of Old Hroldan SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33189)) — First-pass baseline. Gives the world a more authored roadside stop without turning the subsection into a broad restoration bundle. → `World Content - Overhauls`
 - **Candlehearth - An Inn Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97542)) — Locked inn-overhaul baseline. Overhauls every inn in Skyrim with new interiors, layouts, and atmosphere, making rest stops feel like memorable destinations. → `World Content - Overhauls`
+- **Ask Innkeepers To Show Room SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5990)) — Inn interaction QoL companion. Adds a dialogue option to ask innkeepers to preview the room before renting, showing the room's location and layout on-screen. 5,351 endorsements, v1.0. Complements Candlehearth by improving the rental interaction flow. → `World Content - Overhauls`
 
 ### Alternatives
 
@@ -111,6 +112,7 @@ This subsection owns the smaller discoverable places between headline destinatio
 - **Evolving Locations** series (Riverside Shack [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124268) + Lucky Shack [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123700) + Cliffside Retreat [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124524)) — Dynamic overhauls layer. Three shack locations that evolve and expand over playtime based on player actions and visit frequency. By Suinier, ESL-flagged. → `World Content - Overhauls`
 - **Reinforced Civil War Camps** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153645)) — Civil War camp overhaul adding fortifications, tents, supplies, and more lived-in camp details to Imperial and Stormcloak camps. → `World Content - Overhauls`
 - **Hagraven Houses Animated** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/101952)) — Optional world-object animation layer. BOS mesh replacer adding wind animation to hagraven houses and fences. 1,354 endorsements, requires `Base Object Swapper`. → `World Content - Overhauls`
+- **Unmarked Locations Pack - All In One** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113660)) — Unmarked POI discovery layer. Adds dozens of hand-placed unmarked locations across Skyrim (camps, shrines, lookout points, hidden caches) with environmental storytelling. AIO consolidates all previous packs with fixes and new additions. 6 files available; AIO is the main file. Addon packs available for Bruma ([174471](https://www.nexusmods.com/skyrimspecialedition/mods/174471)), Wyrmstooth ([169188](https://www.nexusmods.com/skyrimspecialedition/mods/169188)), and The Gray Cowl of Nocturnal ([159443](https://www.nexusmods.com/skyrimspecialedition/mods/159443)) — install only if those worldspaces are adopted. → `World Content - Overhauls`
 
 ### Alternatives
 
