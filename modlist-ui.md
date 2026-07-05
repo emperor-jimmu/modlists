@@ -14,6 +14,7 @@ The base menu and interface framework that the rest of the UI stack builds on �
 - **Constructible Object Custom Keyword System (COCKS)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81409)) — Keyword-based category infrastructure for crafting-menu readability. Locked alongside framework picks. → `UI - Framework & HUD`
 - **MCM Helper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53000)) — Persists MCM settings across saves and new games. Hard dependency of True Directional Movement, Compass Navigation Overhaul, and others. → `UI - Framework & HUD`
 - **Stay At The System Page NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76927)) — Keeps the System page open after loading a save so the player can continue navigating without reopening the menu. Most noticeable on gamepad. → `UI - Framework & HUD`
+- **ImGui Icons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114790)) — Icon font resource for Dear ImGui-based mods. Required dependency for Dialogue History and any other ImGui-based UI mods. → `UI - Framework & HUD`
 
 ### Alternatives
 
@@ -148,6 +149,7 @@ Conversation readability, response selection clarity, and the overall feel of mo
 
 - **Better Dialogue Controls** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1429)) — Strongest first-pass pick. Addresses the most fundamental dialogue friction without forcing a large stylistic commitment. → `UI - Map, Dialogue, Menus`
 - **Better MessageBox Controls** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1428)) — Natural companion if the same interaction awkwardness shows up in message boxes. → `UI - Map, Dialogue, Menus`
+- **Dialogue History** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114238)) — Dialogue readability companion. Adds a scrollable history log of past dialogue lines, accessible via configurable keybind. Essential for gamepad play where dialogue can advance faster than comfortable reading. → `UI - Map, Dialogue, Menus`
 
 ### Alternatives
 
@@ -159,7 +161,6 @@ Conversation readability, response selection clarity, and the overall feel of mo
 ### Baseline Additions (From TODO)
 
 - **Improved Alternate Conversation Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68210)) — Dialogue camera baseline. Improves the third-person conversation camera with better framing, zoom, and letterbox support. v1.2.0, SKSE plugin, 12 files available. Test for Community Shaders letterbox conflict — the mod's own letterbox settings require a game restart on change and may overlap with Community Shaders cinematic effects. → `UI - Map, Dialogue, Menus`
-- **Dialogue History** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114238)) — Dialogue readability companion. Adds a scrollable history log of past dialogue lines, accessible via configurable keybind. Essential for gamepad play where dialogue can advance faster than comfortable reading. → `UI - Map, Dialogue, Menus`
 
 ### Notes
 
@@ -291,7 +292,6 @@ Experimental or unproven UI mods tracked for potential inclusion if playtesting 
 
 - `Character Menu SE` — character appearance menu enhancer → `UI - Framework & HUD`
 - `Kill feed` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179053)) — enemy kill notification feed → `UI - Framework & HUD`
-- `ImGui Icons` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114790)) — Icon font resource for Dear ImGui-based mods. Required dependency if any ImGui mods (e.g. Dialogue History) depend on it for icon rendering. → `UI - Framework & HUD`
 - `SKSE Menu Framework` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120352)) — menu framework SKSE plugin → `UI - Framework & HUD`
 - `Auto Input Switch` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54309)) — auto-detect controller vs KB+M input → `UI - Framework & HUD`
 
