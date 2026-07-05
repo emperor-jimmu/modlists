@@ -1,5 +1,7 @@
 # Modlist Separators
 
+Separator numbers reflect MO2 left-pane load order, not section file numbering. Numbers 03-06 are offset from file numbering because Animations (file 04) and Third-Person (file 05) load earlier than UI (file 03) in MO2's priority stack.
+
 -#18488B 01 Foundations-           <!-- → modlist-01.md -->
 -#245DAE 01a SKSE & Scripts-       <!-- → modlist-01.md -->
 -#2F72D0 01b Core Libraries-       <!-- → modlist-01.md -->

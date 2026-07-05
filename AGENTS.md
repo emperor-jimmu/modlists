@@ -27,8 +27,8 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 ## Current Structure
 
 - `modlist-01.md` through `modlist-16.md` are the active numbered sections.
-- `modlist-01.md` through `modlist-16.md` are the active numbered sections.
 - Current section titles: `Foundations and Compatibility`, `PGPatcher`, `Community Shaders`, `Textures & Meshes`, `Lighting`, `Weather & Water`, `Terrain & Flora`, `Characters & Creatures`, `LOD & Distant Detail`, `Modernized UI`, `Animations and Movement`, `Third-Person Gameplay`, `Expanded Systems`, `Immersive Scale and World Feel`, `World Content`, `NPCs and Creatures`, `Audio and Feedback`, `Survival, Difficulty, and Balance`, `Legacy of the Dragonborn`, `Modlist Curation Rules and Testing Plan`, `Performance and Technical Workflow`, `Adult Content`, `Main Character Voicing`.
+- `modlist-02a.md` through `modlist-02h.md` (Graphics umbrella) cover the full graphics pipeline: PGPatcher, Community Shaders, Textures & Meshes, Lighting, Weather & Water, Terrain & Flora, Characters & Creatures, and LOD & Distant Detail.
 - `modlist-02b.md` (Community Shaders) and `modlist-09.md` (NPCs) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-09.md` established the repeatable rewrite pattern used across sections.
 - `modlist-04.md` (Animations and Movement) and `modlist-05.md` (Third-Person Gameplay) are fully expanded and treated as established baselines.
 - `modlist-06.md` (Expanded Systems) is fully expanded and locked.
@@ -37,7 +37,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `modlist-08.md` (World Content) has moderate content and is an active development area with recent mod pick additions (Fishing, Evolving Locations, quest content).
 - `modlist-10.md` (Audio and Feedback), `modlist-11.md` (Survival, Difficulty, and Balance), and `modlist-14.md` (Performance and Technical Workflow) each have expanded content and are open research areas.
 - `modlist-13.md` (Modlist Curation Rules and Testing Plan) is the expanded meta-section combining curation guardrails and testing verification.
-- `modlist-01.md` (Targeted Bugfix Mods) is the separate bucket for concrete vanilla-problem fixes.
+- `modlist-01.md` (Foundations and Compatibility) covers the toolchain setup, conflict-resolution strategy, core libraries, SKSE, mesh/texture fixes, and targeted bugfixes.
 - `modlist-12.md` (Legacy of the Dragonborn) owns the museum baseline, key companion utilities, and LoTD patch strategy.
 - `modlist-15.md` (Adult Content) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
 - `modlist-16.md` (Main Character Voicing) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
