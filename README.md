@@ -8,39 +8,39 @@ This repo is a markdown planning workspace for the Elder Wilds modlist. The numb
 
 ## Quick Links
 
-| File | Purpose |
-|------|---------|
-| `modlist.md` | Project scope, toolchain setup, installation guide, section index |
-| `separators.md` | Canonical MO2 separator layout (111 entries) |
-| `TODO.md` | Scratch backlog and future research ideas |
+| File            | Purpose                                                           |
+|-----------------|-------------------------------------------------------------------|
+| `modlist.md`    | Project scope, toolchain setup, installation guide, section index |
+| `separators.md` | Canonical MO2 separator layout (111 entries)                      |
+| `TODO.md`       | Scratch backlog and future research ideas                         |
 
 ## Planning Sections
 
-| # | Section | Status |
-|---|---------|--------|
-| 01 | [Foundations and Compatibility](modlist-01.md) | Reviewed & trimmed |
-| 02a | [PGPatcher](modlist-02a.md) | Defined |
-| 02b | [Community Shaders](modlist-02b.md) | Reviewed & trimmed |
-| 02c | [Textures & Meshes](modlist-02c.md) | Split from 02b |
-| 02d | [Lighting](modlist-02d.md) | Split from 02b |
-| 02e | [Weather & Water](modlist-02e.md) | Split from 02b |
-| 02f | [Terrain & Flora](modlist-02f.md) | Split from 02b |
-| 02g | [Characters & Creatures](modlist-02g.md) | Split from 02b |
-| 02h | [LOD & Distant Detail](modlist-02h.md) | Split from 02b |
-| 03 | [Modernized UI](modlist-03.md) | Locked |
-| 04 | [Animations and Movement](modlist-04.md) | Established baseline |
-| 05 | [Third-Person Gameplay](modlist-05.md) | Established baseline |
-| 06 | [Expanded Systems](modlist-06.md) | Locked |
-| 07 | [Immersive Scale and World Feel](modlist-07.md) | Open research |
-| 08 | [World Content](modlist-08.md) | Active development |
-| 09 | [NPCs and Creatures](modlist-09.md) | Reviewed & trimmed |
-| 10 | [Audio and Feedback](modlist-10.md) | Open research |
-| 11 | [Survival, Difficulty, and Balance](modlist-11.md) | Open research |
-| 12 | [Legacy of the Dragonborn](modlist-12.md) | Defined |
-| 13 | [Modlist Curation Rules and Testing Plan](modlist-13.md) | Expanded |
-| 14 | [Performance and Technical Workflow](modlist-14.md) | Open research |
-| 15 | [Adult Content](modlist-15.md) | Defined |
-| 16 | [Main Character Voicing](modlist-16.md) | Defined |
+| #   | Section                                                  | Status               |
+|-----|----------------------------------------------------------|----------------------|
+| 01  | [Foundations and Compatibility](modlist-01.md)           | Reviewed & trimmed   |
+| 02a | [PGPatcher](modlist-02a.md)                              | Defined              |
+| 02b | [Community Shaders](modlist-02b.md)                      | Reviewed & trimmed   |
+| 02c | [Textures & Meshes](modlist-02c.md)                      | Split from 02b       |
+| 02d | [Lighting](modlist-02d.md)                               | Split from 02b       |
+| 02e | [Weather & Water](modlist-02e.md)                        | Split from 02b       |
+| 02f | [Terrain & Flora](modlist-02f.md)                        | Split from 02b       |
+| 02g | [Characters & Creatures](modlist-02g.md)                 | Split from 02b       |
+| 02h | [LOD & Distant Detail](modlist-02h.md)                   | Split from 02b       |
+| 03  | [Modernized UI](modlist-03.md)                           | Locked               |
+| 04  | [Animations and Movement](modlist-04.md)                 | Established baseline |
+| 05  | [Third-Person Gameplay](modlist-05.md)                   | Established baseline |
+| 06  | [Expanded Systems](modlist-06.md)                        | Locked               |
+| 07  | [Immersive Scale and World Feel](modlist-07.md)          | Open research        |
+| 08  | [World Content](modlist-08.md)                           | Active development   |
+| 09  | [NPCs and Creatures](modlist-09.md)                      | Reviewed & trimmed   |
+| 10  | [Audio and Feedback](modlist-10.md)                      | Open research        |
+| 11  | [Survival, Difficulty, and Balance](modlist-11.md)       | Open research        |
+| 12  | [Legacy of the Dragonborn](modlist-12.md)                | Defined              |
+| 13  | [Modlist Curation Rules and Testing Plan](modlist-13.md) | Expanded             |
+| 14  | [Performance and Technical Workflow](modlist-14.md)      | Open research        |
+| 15  | [Adult Content](modlist-15.md)                           | Defined              |
+| 16  | [Main Character Voicing](modlist-16.md)                  | Defined              |
 
 ## Structure
 

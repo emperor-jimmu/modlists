@@ -10,7 +10,7 @@ This section owns the `Legacy of the Dragonborn` baseline for `Elder Wilds`: the
 
 The goal is to treat `Legacy of the Dragonborn` as a foundational content pillar for the final list, not as a late optional extra bolted onto an already-finished setup.
 
-### Suggested Options
+### Options
 
 - Master mod route: use `Legacy of the Dragonborn` as the non-negotiable centerpiece if `Elder Wilds` is committing to museum progression, artifact collection, and the supported patch ecosystem that follows from that decision. → `12`
 - Companion utility route: add `The Curator's Companion` if the list wants cleaner in-game tracking for what the museum can display and what the player has already found. → `12`
@@ -21,8 +21,6 @@ The goal is to treat `Legacy of the Dragonborn` as a foundational content pillar
 
 Treat `Legacy of the Dragonborn` as a deliberate list pillar. Start from the museum-first assumption, keep `The Curator's Companion` as the most likely quality-of-life companion, and treat the official patch collection as required integration infrastructure once the related content mods are locked.
 
-### Why This Is The Right Baseline
-
 If `Elder Wilds` is going to incorporate `Legacy of the Dragonborn`, the list should acknowledge the real design consequence: artifact discovery, unique-item routing, and compatibility planning all change. That makes `Legacy of the Dragonborn` closer to a structural content framework than to an ordinary quest mod. Planning around it early is cleaner than trying to retrofit it after world content, quest expansions, and item mods are already scattered across the repo.
 
 ## Supported Content → `12` Mods And Museum Integration
@@ -30,13 +28,6 @@ If `Elder Wilds` is going to incorporate `Legacy of the Dragonborn`, the list sh
 ### Core Idea
 
 This subsection tracks the kinds of mods that should be evaluated partly through the `Legacy of the Dragonborn` lens: quest mods, new lands, artifact packs, item expansions, player homes, and other content that may gain museum displays, sorting support, relic integration, or official patch coverage.
-
-### Working Guidance For Elder Wilds
-
-- Use `Legacy of the Dragonborn` support as an explicit evaluation criterion for later quest and content picks, not as an afterthought. → `12`
-- Prefer content mods with mature `Legacy of the Dragonborn` integration when two otherwise similar candidates solve the same design goal. → `12`
-- Keep museum-supported content distinct from content that merely coexists with `Legacy of the Dragonborn` but adds no meaningful display, relic, or progression value.
-- Do not let museum support override core fit, tone, performance, or maintenance quality if a supported mod is otherwise a weak match for `Elder Wilds`. → `12`
 
 ### Candidate Mod Buckets To Track
 
@@ -56,8 +47,6 @@ This subsection owns the patch philosophy for a `Legacy of the Dragonborn` build
 
 Use the official `Legacy of the Dragonborn` patch collection as the default patch source wherever it cleanly covers a chosen mod. Add third-party `Legacy of the Dragonborn` patches only when the official collection does not cover a finalized mod and the patch has a clear maintenance story.
 
-### Working Guidance For Elder Wilds
-
 - Treat `Legacy of the Dragonborn Patches (Official)` as the primary integration layer. → `12`
 - Do not pre-install broad patch bundles for mods that are still only hypothetical.
 - Only keep patches for mods that survive into the actual final stack.
@@ -70,7 +59,7 @@ Use the official `Legacy of the Dragonborn` patch collection as the default patc
 
 This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around the master mod: collection tracking, museum usability, and any later chosen add-ons that materially improve the museum loop without redefining the rest of the modlist.
 
-### Suggested Options
+### Options
 
 - Tracking support: `The Curator's Companion` as the leading companion mod for collection-state visibility. → `12`
 - Achievement framework route: `Achievement Injector` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/126220> → `12`
@@ -87,15 +76,6 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 - Utility add-ons can accumulate quickly if every museum friction point gets its own extra plugin.
 - Achievement-side add-ons should stay scoped: `Achievement Injector` is the framework, while `Legacy of the Dragonborn - Achievement Injector` is only one content package that uses it. → `12`
 
-## What Elder Wilds Should Prioritize
-
-- A clear decision that `Legacy of the Dragonborn` is part of the list's identity, not a maybe-later branch.
-- Clean museum integration for any finalized supported quest or artifact mods.
-- Preservation of explicitly requested LoTD-related additions even where exact mod titles still need to be re-read from Nexus in a browser session.
-- Disciplined patch selection tied to real chosen mods rather than speculative future content.
-- A museum loop that complements exploration and world-content goals instead of overwhelming them.
-- Clear documentation of which later sections are expected to account for `Legacy of the Dragonborn` support.
-
 ## Research Tasks → `12`
 
 - Verify the canonical Nexus page for `Legacy of the Dragonborn` before adding it to `mods-checklist.md`. **Verified (Jun 2026):** v6.10.1, updated 22 May 2026, author icecreamassassin — <https://www.nexusmods.com/skyrimspecialedition/mods/11802> → `12`
@@ -110,26 +90,11 @@ This subsection tracks the immediate `Legacy of the Dragonborn` ecosystem around
 
 ## Acceptance Criteria → `12`
 
-- `Elder Wilds` explicitly treats `Legacy of the Dragonborn` as a supported core content pillar. → `12`
+- `Elder Wilds` explicitly treats `Legacy of the Dragonborn` as a supported core content pillar, not a maybe-later branch. → `12`
 - The master mod, key companion utility, and official patch collection are identified in one dedicated section file.
 - The museum-achievement route is documented with the framework mod and the LoTD-specific achievement package kept distinct.
 - Later quest and content decisions can refer back to a clear `Legacy of the Dragonborn` integration policy. → `12`
 - Only verified Nexus URLs should be added to `mods-checklist.md` once link verification is complete. → `12`
-
-## Post-Install Smoke Test
-
-After completing this section, verify stability with the coc console command at these 6 locations:
-
-| # | Command | Location | Stress Profile |
-|---|---------|----------|----------------|
-| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
-| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
-| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
-| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
-| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
-| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
-| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
-
-**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
-
-If any location fails, the most recently installed mod or generation step is the first suspect.
+- Clean museum integration is verified for any finalized supported quest or artifact mods.
+- Patch selection is tied to actual chosen mods, not speculative future content.
+- The museum loop complements exploration and world-content goals instead of overwhelming them.

@@ -411,10 +411,6 @@ Run BethINI Pie through MO2 so it targets the active profile INIs. The configura
 - S.L.A.C.K. measurably reduces save/LD time in a heavy load order. Compare save duration with and without the plugin using a stopwatch or `PresentMon` capture. → `14`
 - S.L.A.C.K. error-friendly mode catches a simulated cosave exception (via a test plugin) and logs the error without crashing.
 
-## Patching → `14` Technique And Strategy
-
-> **Moved**: This section now lives in [`modlist-01.md`](modlist-01.md) — the patching workflow should be followed from the very first mod installed, not treated as a late-stage concern.
-
 ## Elder Wilds Bashed Patch And Synthesis Configuration
 
 ### Core Idea
@@ -707,23 +703,6 @@ Rebuilding one stage does not replace the stages after it. A `Bashed Patch` rebu
 - A deliberate test that reorders `SynESLify` out of the last position causes the `Synthesis` patch to take a hard load-order slot and `LOOT` to flag the new entry. Reordering back to last resolves the flag.
 - Every `Tweak Settings` entry enabled in the `Bashed Patch` is verified by a deliberate save-load test: change a tweak value, reload, observe the gameplay effect, and revert. Settings that cannot be verified are not enabled. → `14`
 
-## Post-Install Smoke Test
-
-After completing this section, verify stability with the coc console command at these 6 locations:
-
-| # | Command | Location | Stress Profile |
-|---|---------|----------|----------------|
-| 1 | `coc Whiterun` | Whiterun | Major city — NPCs, shadows, architecture density |
-| 2 | `coc Solitude` | Solitude | Large city — water reflections, long draw distances |
-| 3 | `coc RiftenOrigin` | Riften | Canopy lighting, heavy NPC AI packages |
-| 4 | `coc MarkarthOrigin` | Markarth | Dwemer stone, waterfalls, extreme verticality |
-| 5 | `coc Riverwood` | Riverwood | Forest exterior — grass, trees, landscape LOD |
-| 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
-| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
-
-**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
-
-If any location fails, the most recently installed mod or generation step is the first suspect.
 
 ## Performance Testing And Tuning
 

@@ -340,6 +340,8 @@ Add `HAG Occult Orphan Rock` - Nexus: <https://www.nexusmods.com/skyrimspecialed
 - The new armor pieces display correctly on the chosen body base without clipping or stretching under the chosen lighting and weather setup.
 - The chosen direction supports the "lots of new content" pillar without making the equipment pool feel bloated or generic.
 
+## Quest Additions → `08b Quests`
+
 ### Core Idea
 
 - This subsection owns additional quest content that makes Skyrim feel more alive or more worth revisiting without breaking the grounded exploration tone.
@@ -491,21 +493,3 @@ Add `HAG Occult Orphan Rock` - Nexus: <https://www.nexusmods.com/skyrimspecialed
 - `Ballad of the Bards Vol.1 - College Bard Outfit` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/180492>) — bard outfit item → `08b`
 - `Fish Anywhere - Streamlined Fishing (Patch)` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85070>) — combo patch for Streamlined Fishing + Fish Anywhere → `08b`
 - `Thieves Guild Requirements SE` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/33256>) — Thieves Guild progression requirement → `08b`
-
-## Post-Install Smoke Test
-
-After completing this section, verify stability with the coc console command at these 6 locations:
-
-| # | Command                    | Location                 | Stress Profile                                               |
-|---|----------------------------|--------------------------|--------------------------------------------------------------|
-| 1 | `coc Whiterun`             | Whiterun                 | Major city — NPCs, shadows, architecture density             |
-| 2 | `coc Solitude`             | Solitude                 | Large city — water reflections, long draw distances          |
-| 3 | `coc RiftenOrigin`         | Riften                   | Canopy lighting, heavy NPC AI packages                       |
-| 4 | `coc MarkarthOrigin`       | Markarth                 | Dwemer stone, waterfalls, extreme verticality                |
-| 5 | `coc Riverwood`            | Riverwood                | Forest exterior — grass, trees, landscape LOD                |
-| 6 | `coc BleakFallsBarrow01`   | Bleak Falls Barrow       | Interior dungeon — close-quarters lighting                   |
-| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
-
-**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
-
-If any location fails, the most recently installed mod or generation step is the first suspect.

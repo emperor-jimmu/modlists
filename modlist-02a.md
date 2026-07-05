@@ -10,6 +10,11 @@
 - PGPatcher is a post-installation patcher that generates parallax and PBR-compatible meshes from the installed texture and mesh stack. It is not a texture or mesh mod itself — it analyses the installed assets and produces a generated patch.
 - The patcher must run after the main texture, mesh, parallax, and PBR candidate set is mostly chosen, so it works against a stable asset baseline.
 
+### Options
+
+- Use route: install PGPatcher and run it after the texture and mesh stack is stable to generate parallax/PBR meshes.
+- Skip route: rely on hand-authored parallax meshes included in individual texture packs and skip the post-processing patcher entirely.
+
 ### Recommendation
 
 - Keep `PGPatcher` output in its own generated mod folder in `Mod Organizer 2`, separate from source mods. → `02a`

@@ -14,13 +14,16 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 ## What This Repo Is
 
 - This repo is a markdown planning workspace, not an application codebase. The source of truth is the `modlist*.md` files.
-- `modlist.md` is the hub file that combines project scope, toolchain setup, installation guidance, and the section index into one document.
+- `modlist.md` is the hub file: project scope, modlist identity pillars, separator mapping table, and the index to numbered section files. The installation guide was split into `install.md` to keep `modlist.md` lean.
+- `install.md` contains the full setup guide (pre-installation, toolchain, download instructions, load order build steps, post-install testing).
 - There is no build, test, lint, CI, or package-manager workflow to run here.
 
 ## File Roles
 
-- `modlist.md` is the hub file: project scope, setup/install/tooling guidance, installation instructions, research workflow, and the index to numbered section files.
+- `modlist.md` is the hub file: project scope, modlist identity pillars, separator mapping table, and the index to numbered section files.
+- `install.md` is the installation guide: pre-installation requirements, toolchain setup, download workflow, load order build sequence, and post-install testing.
 - Each numbered `modlist-XX.md` file owns one second-level planning section. Keep the numbering aligned with the index in `modlist.md`.
+- Cross-reference convention: use `→`XX`` (arrow, space, backtick section number) as the standard inline cross-reference format across all section files.
 - `separators.md` is the canonical ordered reference (111 entries) for `Mod Organizer 2` separators derived from the current modlist structure.
 - `TODO.md` is a scratch backlog of ideas and possible future research, not an authoritative recommendation list.
 

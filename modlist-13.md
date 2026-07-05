@@ -165,9 +165,9 @@ The long-session test passes if the game does not crash, the save remains loadab
 - Long-session stability tests must be repeated after any SKSE plugin, script-heavy mod, or worldspace edit is added to the final load order.
 - Testing results should be noted in the repo so that troubleshooting later does not start from zero knowledge.
 
-## Post-Install Smoke Test
+## Post-Install Smoke Test (Canonical)
 
-After completing this section, verify stability with the coc console command at these 6 locations:
+This is the standard post-section smoke test used across all section files. Run after completing any numbered section.
 
 | # | Command | Location | Stress Profile |
 |---|---------|----------|----------------|
@@ -179,6 +179,6 @@ After completing this section, verify stability with the coc console command at 
 | 6 | `coc BleakFallsBarrow01` | Bleak Falls Barrow | Interior dungeon — close-quarters lighting |
 | 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
 
-**Pass criteria:** No crash on load. No missing textures. ≥60 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
+**Pass criteria:** No crash on load. No missing textures. FPS target: ≥60 FPS during graphics-heavy stages (sections 02-16); ≥40 FPS acceptable during section 01 (foundations only, no visual mods yet). Uncap framerate, use `tgm` for god mode if needed.
 
 If any location fails, the most recently installed mod or generation step is the first suspect.

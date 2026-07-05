@@ -9,9 +9,9 @@
 - Build lighting as a coherent layer that supports the shader-first visual direction, stronger world scale, and third-person readability.
 - Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route.
 
-### Decision
+### Options
 
-The approach is **hybrid**: stronger authored lighting where it matters most (interiors, cities, dungeons) with compatibility-conscious coverage elsewhere. Three viable CS-friendly routes exist; the project should evaluate the first two in testing and keep the third as a fallback.
+Three viable CS-friendly lighting routes exist; evaluate the first two in testing and keep the third as a fallback.
 
 #### Primary Route: Lux + Lux CS
 
@@ -51,6 +51,10 @@ A CS-native stack with no ENB bridge, lower patch burden, and full Community Sha
 - `iLluminous Elementals` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/138128> — elemental-creature and magic-glow companion, adds light to creatures and spell effects. Layer on top of the chosen lighting route. → `02d`
 - `NAT.CS III` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/139567> is a weather decision, not a reason to choose an interior-lighting stack. → `02d`
 - `Dynamic Interior Ambient Lighting (DIAL)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/149920> — dynamically adjusts interior ambient lighting based on time of day, light source presence, and location type. CS-native, no ENB dependency. Plays well with any lighting overhaul since it operates on ambient templates rather than individual light placements. → `02d`
+
+### Recommendation
+
+Use the hybrid approach with Lux + Lux CS as the primary route. It offers the most atmospheric interior lighting and broadest patch ecosystem, which matters for a content-heavy list. Start with Lux + Lux CS, Lux Orbis (exterior lights), and Lux Via (road lights). Install the Lux Patch Hub after the full worldspace stack is settled to generate compatibility patches in one pass. Keep the CS-native route (CS Light + True Light + Window Shadows Ultimate) as the fallback if Lux's patch burden proves too high. Reserve Relighting Skyrim + Luminosity as the lightweight vanilla-plus fallback only if both primary routes fail compatibility testing.
 
 ### Risks & Compatibility
 

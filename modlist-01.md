@@ -2,29 +2,65 @@
 
 **MO2 Separator:** `01 Foundations` → `01a SKSE & Scripts`, `01b Core Libraries`, `01c Mesh & Texture Fixes`, `01d Targeted Bugfixes`
 
-## Goal
+## Foundations Baseline → `01b`
 
-Build a stable technical base for `Elder Wilds` before choosing large visual or gameplay overhauls.
+### Core Idea
 
-## Constraints
+Build a stable technical base for `Elder Wilds` before choosing large visual or gameplay overhauls. Must support runtime `1.6.1170` on Steam without paid AE Creation Club content, and must leave room for heavy graphics, Pandora-based animations, and a third-person-first combat stack. The entire setup must be maintainable in MO2 with clear separators and reproducible tool output.
 
-- Must support Skyrim SE/AE runtime `1.6.1170` on Steam
-- Must not require paid AE Creation Club content
-- Must leave room for heavy graphics, Pandora-based animations, and a third-person-first combat stack
-- Must be maintainable in MO2 with clear separators and reproducible tool output
+### Options
 
-## Decisions To Make
+- Bulk-install route: add all known core libraries, SKSE, engine fixes, and patching tools at once from the candidate list below.
+- Staged route: install SKSE and one or two core libraries first, confirm stability, then add the remaining frameworks category by category.
+- Minimal-first route: install only the absolute minimum (SKSE + Address Library + USSEP + Engine Fixes) and add frameworks only when a later section requires them.
 
-- Confirm exact runtime support for every core dependency on Steam `1.6.1170`
-- Choose the mod manager standard and profile layout (current lean: `Mod Organizer 2`)
-- Define ESL and plugin-count rules: keep the hard plugin count visible from day one, prefer ESL-flagged or light plugins where safe, and avoid stacking multiple mods that solve the same low-level problem
-- Decide which bug-fix plugins are mandatory baseline vs optional, with `Unofficial Skyrim Special Edition Patch - USSEP` owned here in section `01` as part of the foundational record-fix layer
-- Define the patching toolchain and conflict-resolution workflow: xEdit review after each major category is added, generated outputs kept separate from source mods, and a dedicated patch section for hand-made compatibility patches (tools: xEdit, Pandora, DynDOLOD, Synthesis, BodySlide, plus any LOD or grass generators adopted)
-- Follow the MO2 separator layout maintained in `separators.md` rather than redefining it here
+### Recommendation
 
-## Research Tasks
+Use the bulk-install route. The core libraries below are non-negotiable dependencies for virtually every mod in the list. Installing them upfront prevents missing-master errors and lets each subsequent section work against the real framework stack. The candidate baseline includes SKSE64, USSEP, SSE Engine Fixes, SSE Display Tweaks, and the supporting SKSE plugin ecosystem:
 
-- Select the animation-related engine fixes the final stack needs, coordinated with `modlist-04.md`
+- `SKSE64` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/30379> → `01a`
+- `Address Library for SKSE Plugins` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32444> → `01b`
+- `Unofficial Skyrim Special Edition Patch - USSEP` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/266> (foundational record patch. Requires the four free Creation Club masters (`ccbgssse001-fish.esm`, `ccqdrsse001-survivalmode.esl`, `ccbgssse037-curios.esl`, `ccbgssse025-advdsgs.esm`) and `_ResourcePack.esl` that ship with the 1.6.1170 runtime — no paid AE Upgrade needed.) → `01b`
+- `SSE Engine Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/17230> → `01b`
+- `SSE Display Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/34705> (mandatory baseline for display behavior, frame pacing, and frame-cap control) → `01b`
+- `Scrambled Bugs` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/43532> → `01b`
+- `powerofthree's Tweaks` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/51073> → `01b`
+- `powerofthree's Papyrus Extender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/22854> → `01b`
+- `PapyrusUtil` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/13048> → `01b`
+- `JContainers` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/16495> → `01b`
+- `Keyword Item Distributor (KID)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/55728> → `01b`
+- `Spell Perk Item Distributor (SPID)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/36869> → `01b`
+- `Base Object Swapper (BOS)` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/60805> → `01b`
+- `Crash Logger SSE AE VR` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/59818> → `01b`
+- `SkyPatcher` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/106659> → `01b`
+- `Dual Casting Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/92454> → `01b`
+- `Andrealphus' Papyrus Functions` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/85252> → `01b`
+- `ConsoleUtilSSE NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/76649> → `01b`
+- `Kris's Papyrus Extender` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/115164> → `01b`
+- `Animation Queue Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/82395> → `01b`
+- `Papyrus Tweaks NG` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/77779> → `01b`
+- `Lexicon SKSE` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/153176> → `01b`
+- `Actor Value Generator` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/84743> → `01b`
+- `XEMI Utility` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/159084> → `01b`
+- `Particle Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65720> → `01c`
+- `Assorted Mesh Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32117> → `01c`
+- `Flickering Meshes Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53957> → `01c`
+
+### Risks & Compatibility
+
+- Some popular framework mods may list AE support broadly while others require explicit confirmation for Steam `1.6.1170`
+- Graphics, animation, and UI frameworks often pull in overlapping requirements that can become messy if chosen out of order
+- Bug-fix plugins can overlap in subtle ways; avoid redundant low-level tweaks without a reason
+- No paid AE content means some mods with soft AE assumptions may need patches or must be excluded
+
+### Acceptance Criteria
+
+- Clean boot to main menu with the baseline framework installed
+- New game starts without missing masters or runtime errors
+- MCM-related frameworks load correctly where applicable
+- Crash logger is installed before heavier categories are tested
+- MO2 structure, plugin rules, and patch workflow are documented before moving into graphics
+- `SSE Display Tweaks` is treated as mandatory base layer, not optional later tuning
 
 ## Official Masters Cleanup
 
@@ -108,26 +144,6 @@ Do not clean `_ResourcePack.esl` — it contains no ITM or UDR records and does 
 - `Particle Patch` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/65720> (particle shader/LOD corrections; originally ENB-focused but compatible with `Community Shaders` and vanilla game. 26k endorsements, updated Mar 2026) → `01c`
 - `Assorted Mesh Fixes` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/32117> (mesh correction collection for common visual errors; lightweight, no dependencies) → `01c`
 - `Flickering Meshes Fix` - Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/53957> (resolves distant-object mesh flicker in landscape transitions) → `01c`
-
-## Risks To Check
-
-- Some popular framework mods may list AE support broadly while others require explicit confirmation for Steam `1.6.1170`
-- Graphics, animation, and UI frameworks often pull in overlapping requirements that can become messy if chosen out of order
-- Bug-fix plugins can overlap in subtle ways; avoid redundant low-level tweaks without a reason
-- No paid AE content means some mods with soft AE assumptions may need patches or must be excluded
-
-## Acceptance Criteria
-
-- Clean boot to main menu with the baseline framework installed
-- New game starts without missing masters or runtime errors
-- MCM-related frameworks load correctly where applicable
-- Crash logger is installed before heavier categories are tested
-- MO2 structure, plugin rules, and patch workflow are documented before moving into graphics
-
-## Working Notes
-
-- Treat this section as the non-negotiable base layer for the rest of the list
-- `SSE Display Tweaks` is part of that mandatory base layer, not an optional later tuning mod
 
 ## Patching Technique And Strategy
 
@@ -317,21 +333,3 @@ NOT INSTALLED - `I'm Walkin' Here NG with Pets` (Nexus: <https://www.nexusmods.c
 - This section stays focused on concrete, explainable fixes rather than becoming a catch-all miscellaneous bucket.
 - Every recommended mod here solves a specific player-facing problem or believable stability risk.
 - Core runtime foundations remain owned by the foundations baseline and are not duplicated here.
-
-## Post-Install Smoke Test
-
-After completing this section, verify stability with the coc console command at these 6 locations:
-
-| # | Command                    | Location                 | Stress Profile                                               |
-|---|----------------------------|--------------------------|--------------------------------------------------------------|
-| 1 | `coc Whiterun`             | Whiterun                 | Major city — NPCs, shadows, architecture density             |
-| 2 | `coc Solitude`             | Solitude                 | Large city — water reflections, long draw distances          |
-| 3 | `coc RiftenOrigin`         | Riften                   | Canopy lighting, heavy NPC AI packages                       |
-| 4 | `coc MarkarthOrigin`       | Markarth                 | Dwemer stone, waterfalls, extreme verticality                |
-| 5 | `coc Riverwood`            | Riverwood                | Forest exterior — grass, trees, landscape LOD                |
-| 6 | `coc BleakFallsBarrow01`   | Bleak Falls Barrow       | Interior dungeon — close-quarters lighting                   |
-| 7 | `coc WhiterunBanneredMare` | Bannered Mare (Whiterun) | Tavern interior — fire lighting, patron NPCs, confined space |
-
-**Pass criteria:** No crash on load. No missing textures. ≥40 FPS maintained (uncap framerate, use `tgm` for god mode if needed).
-
-If any location fails, the most recently installed mod or generation step is the first suspect.
