@@ -1,79 +1,91 @@
 # Modlist Separators
 
-Separator numbers reflect MO2 left-pane load order, not section file numbering. Numbers 03-06 are offset from file numbering because Animations (file 04) and Third-Person (file 05) load earlier than UI (file 03) in MO2's priority stack.
+Flat separator names sorted by MO2 left-pane load order. Parent categories anchor the hue; sub-separators step up in lightness for visible differentiation.
 
--#18488B 01 Foundations-           <!-- → modlist-01.md -->
--#245DAE 01a SKSE & Scripts-       <!-- → modlist-01.md -->
--#2F72D0 01b Core Libraries-       <!-- → modlist-01.md -->
--#598CD4 01c Mesh & Texture Fixes- <!-- → modlist-01.md -->
--#81A6DA 01d Targeted Bugfixes-    <!-- → modlist-01.md -->
+Foundations (blue)
+-#1a3a6b Foundations-                     <!-- → modlist-foundations.md -->
+-#255792 Foundations – SKSE & Scripts-    <!-- → modlist-foundations.md -->
+-#3173b8 Foundations – Core Libraries-    <!-- → modlist-foundations.md -->
+-#4a8fd4 Foundations – Mesh & Texture Fixes- <!-- → modlist-foundations.md -->
+-#6aaae8 Foundations – Targeted Bugfixes- <!-- → modlist-foundations.md -->
 
--#1B7E1B 02 Graphics-                      <!-- → modlist-02b.md -->
--#208D20 02a PGPatcher-                    <!-- → modlist-02a.md -->
--#27A027 02b Community Shaders-            <!-- → modlist-02b.md -->
--#2DAE2D 02c Textures & Meshes-            <!-- → modlist-02c.md -->
--#33C133 02d Lighting-                     <!-- → modlist-02d.md -->
--#40C940 02e Weather & Water-              <!-- → modlist-02e.md -->
--#52CB52 02f Terrain & Flora-              <!-- → modlist-02f.md -->
--#68CF68 02g Characters & Creatures-       <!-- → modlist-02g.md -->
--#79D279 02h LOD & Distant Detail-         <!-- → modlist-02h.md -->
+Graphics (green)
+-#0d4a0d Graphics-                       <!-- → modlist-graphics.md -->
+-#196a19 Graphics – PGPatcher-           <!-- → modlist-graphics-pgpatcher.md -->
+-#268a26 Graphics – Community Shaders-   <!-- → modlist-graphics-shaders.md -->
+-#35a835 Graphics – Textures & Meshes-   <!-- → modlist-graphics-textures.md -->
+-#46c446 Graphics – Lighting-            <!-- → modlist-graphics-lighting.md -->
+-#59d859 Graphics – Weather & Water-     <!-- → modlist-graphics-weather.md -->
+-#70e870 Graphics – Terrain & Flora-     <!-- → modlist-graphics-terrain.md -->
+-#88f088 Graphics – Characters & Creatures- <!-- → modlist-graphics-characters.md -->
+-#a2f5a2 Graphics – LOD & Distant Detail-  <!-- → modlist-graphics-lod.md -->
 
--#9A3319 03 Animations-                    <!-- → modlist-04.md -->
--#B53F21 03a Framework-                    <!-- → modlist-04.md -->
--#CE4C2C 03b Movement & Idles-             <!-- → modlist-04.md -->
--#D46549 03c Combat-                       <!-- → modlist-04.md -->
--#D7806A 03d Interactions & Traversal-     <!-- → modlist-04.md -->
--#DD9988 03e Creatures-                    <!-- → modlist-04.md -->
+UI (cyan/teal)
+-#1b5a68 UI-                             <!-- → modlist-ui.md -->
+-#2a7c8c UI – Framework & HUD-          <!-- → modlist-ui.md -->
+-#3e9eb0 UI – Inventory & Items-        <!-- → modlist-ui.md -->
+-#5cbcc9 UI – Map, Dialogue, Menus-     <!-- → modlist-ui.md -->
 
--#916D12 04 Third Person-                  <!-- → modlist-05.md -->
--#BF9222 04a Camera & Movement-            <!-- → modlist-05.md -->
--#D5AD48 04b Combat & Targeting-           <!-- → modlist-05.md -->
--#DAC181 04c Mounted-                      <!-- → modlist-05.md -->
+Animations (red-orange)
+-#7a1a0a Animations-                     <!-- → modlist-animations.md -->
+-#962d18 Animations – Framework-         <!-- → modlist-animations.md -->
+-#b44328 Animations – Movement & Idles-  <!-- → modlist-animations.md -->
+-#d05c3a Animations – Combat-            <!-- → modlist-animations.md -->
+-#e47850 Animations – Interactions & Traversal- <!-- → modlist-animations.md -->
+-#ea9870 Animations – Creatures-         <!-- → modlist-animations.md -->
 
--#5D1B98 05 Expanded Systems-              <!-- → modlist-06.md -->
--#7024B2 05a Character & Progression-      <!-- → modlist-06.md -->
--#7F2FC6 05b Magic & Perks-                <!-- → modlist-06.md -->
--#914ACF 05c Survival & Needs-             <!-- → modlist-06.md -->
--#9F66D1 05d Crafting & Economy-           <!-- → modlist-06.md -->
--#B085D6 05e Followers & Reputation-       <!-- → modlist-06.md -->
+Third-Person (amber/gold)
+-#7a5010 Third-Person-                   <!-- → modlist-third-person.md -->
+-#926a20 Third-Person – Camera & Movement- <!-- → modlist-third-person.md -->
+-#aa8430 Third-Person – Combat & Targeting- <!-- → modlist-third-person.md -->
+-#c4a044 Third-Person – Mounted-         <!-- → modlist-third-person.md -->
 
--#186781 06 UI-                            <!-- → modlist-03.md -->
--#2A8CAC 06a Framework & HUD-              <!-- → modlist-03.md -->
--#49AACA 06b Inventory & Items-            <!-- → modlist-03.md -->
--#7FBDD2 06c Map, Dialogue, Menus-         <!-- → modlist-03.md -->
+Expanded Systems (purple)
+-#3a1070 Expanded Systems-               <!-- → modlist-expanded-systems.md -->
+-#52258a Expanded Systems – Character & Progression- <!-- → modlist-expanded-character.md -->
+-#6c3aa6 Expanded Systems – Magic & Perks- <!-- → modlist-expanded-magic.md -->
+-#8759bf Expanded Systems – Survival & Needs- <!-- → modlist-expanded-survival.md -->
+-#a27cd4 Expanded Systems – Crafting & Economy- <!-- → modlist-expanded-crafting.md -->
+-#bba0e6 Expanded Systems – Followers & Reputation- <!-- → modlist-expanded-followers.md -->
 
--#8C4E17 07 World Feel-                    <!-- → modlist-07.md -->
--#B06421 07a Timescale & Travel-           <!-- → modlist-07.md -->
--#D17A2E 07b Soundscapes-                  <!-- → modlist-07.md -->
--#D49259 07c Nights & Wildlife-            <!-- → modlist-07.md -->
--#DAAA81 07d Cities & Landmarks-           <!-- → modlist-07.md -->
+World Feel (brown/amber)
+-#6b3a10 World Feel-                     <!-- → modlist-world-feel.md -->
+-#875020 World Feel – Timescale & Travel- <!-- → modlist-world-feel.md -->
+-#a56830 World Feel – Soundscapes-       <!-- → modlist-world-feel.md -->
+-#c08448 World Feel – Nights & Wildlife- <!-- → modlist-world-feel.md -->
+-#d4a264 World Feel – Cities & Landmarks- <!-- → modlist-world-feel.md -->
 
--#5A8118 08 World Content-                 <!-- → modlist-08.md -->
--#74A225 08a Overhauls-                    <!-- → modlist-08.md -->
--#8DC133 08b Quests-                       <!-- → modlist-08.md -->
--#9FCA53 08c Homes & Bases-                <!-- → modlist-08.md -->
--#B1D17B 08d Underwater-                   <!-- → modlist-08.md -->
+World Content (olive green)
+-#4a6b18 World Content-                  <!-- → modlist-world-content.md -->
+-#608722 World Content – Overhauls-      <!-- → modlist-world-content.md -->
+-#78a530 World Content – Quests-         <!-- → modlist-world-content.md -->
+-#90ba48 World Content – Homes & Bases-  <!-- → modlist-world-content.md -->
+-#aacf6a World Content – Underwater-     <!-- → modlist-world-content.md -->
 
--#981B49 09 NPCs-                          <!-- → modlist-09.md -->
--#B6255A 09a Appearance-                   <!-- → modlist-09.md -->
--#CF3A71 09b Enemies & Creatures-          <!-- → modlist-09.md -->
--#D35F89 09c Population-                   <!-- → modlist-09.md -->
--#D883A2 09d Followers-                    <!-- → modlist-09.md -->
+NPCs (rose)
+-#7a1a3a NPCs-                           <!-- → modlist-npcs.md -->
+-#98284e NPCs – Appearance-              <!-- → modlist-npcs.md -->
+-#b83864 NPCs – Enemies & Creatures-     <!-- → modlist-npcs.md -->
+-#d05280 NPCs – Population-              <!-- → modlist-npcs.md -->
+-#e2759c NPCs – Followers-               <!-- → modlist-npcs.md -->
 
--#1D2487 10 Audio-                         <!-- → modlist-10.md -->
--#343EC5 10a Music-                        <!-- → modlist-10.md -->
--#7D83D4 10b SFX & Ambience-               <!-- → modlist-10.md -->
+Audio (royal blue)
+-#1e2a8a Audio-                          <!-- → modlist-audio.md -->
+-#3a4abc Audio – Music-                 <!-- → modlist-audio.md -->
+-#5a70d4 Audio – SFX & Ambience-        <!-- → modlist-audio.md -->
 
--#8C1717 11 Survival & Combat-             <!-- → modlist-11.md -->
--#B62525 11a Difficulty & Lethality-       <!-- → modlist-11.md -->
--#D24646 11b Enemy AI-                     <!-- → modlist-11.md -->
--#D87979 11c Resources & Injuries-         <!-- → modlist-11.md -->
+Survival & Combat (red)
+-#6b1010 Survival & Combat-              <!-- → modlist-survival-combat.md -->
+-#8a1e1e Survival & Combat – Difficulty & Lethality- <!-- → modlist-survival-combat.md -->
+-#a82e2e Survival & Combat – Enemy AI-   <!-- → modlist-survival-combat.md -->
+-#c25050 Survival & Combat – Resources & Injuries- <!-- → modlist-survival-combat.md -->
 
--#C49A31 12 Legacy of the Dragonborn-      <!-- → modlist-12.md -->
--#808080 13 Testing & Curation-            <!-- → modlist-13.md -->
--#2F937A 14 Performance-                   <!-- → modlist-14.md -->
--#A52786 15 Adult Content-                 <!-- → modlist-15.md -->
--#49389F 16 Voicing-                       <!-- → modlist-16.md -->
+Standalone separators
+-#C49A31 Legacy of the Dragonborn-       <!-- → modlist-lotd.md -->
+-#808080 Testing & Curation-             <!-- → modlist-curation.md -->
+-#2F937A Performance-                    <!-- → modlist-performance.md -->
+-#A52786 Adult Content-                  <!-- → modlist-adult.md -->
+-#49389F Voicing-                        <!-- → modlist-voicing.md -->
 
 -#6B6B6B Patches-
 -#474747 Output-
