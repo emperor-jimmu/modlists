@@ -54,6 +54,32 @@ This subsection owns actual settlement-content additions and stronger settlement
 - Settlement edits create pressure around roads, outskirts, snow, lighting, and landscape compatibility.
 - Later inns, small settlements, dungeons, POIs, quests, and homes still need room to matter on their own.
 
+## College of Winterhold → `World Content - Overhauls` / `World Content - Quests`
+
+This subsection owns the full College of Winterhold faction-location improvement: architecture and interiors, student-and-faculty population, and the questline/skill-gate layer that turns the College into an earned progression rather than a speedrun. It is a coordinated three-mod sub-stack designed to work together without inter-mod patches.
+
+### Baseline
+
+- **Obscure's College of Winterhold** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20514)) — Architecture baseline. Rebuilds the Hall of the Elements as a lecture hall with practice stations and a spectral sparring partner. Adds a multi-story Arcanaeum with a rank-locked private collection. Configurable Arch-Mage quarters (laboratory, office, council chamber, archive, spa). Student rank progression tied to personal quests. FOMOD installer with ~50 built-in patches. Requires USSEP. → `World Content - Overhauls`
+- **Immersive College NPCs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9252)) — Population companion. Adds students, guards, and Saarthal excavation workers with schedules, patrols, and idle markers. ESL-flagged, vanilla assets only, no cell edits. Co-authored by SomethingObscure (same author as Obscure's College). Integration patch included in Obscure's FOMOD. → `World Content - Overhauls`
+- **College of Winterhold - Quest Expansion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66666)) — Questline baseline. Adds skill-gated entry (Faralda tests magic ability), 7 starter lessons/quests before Saarthal unlocks, branching dialogue with College NPCs, and an alternate main-quest route (access Saarthal without joining). ESL-flagged, by jayserpa. Explicitly compatible with Obscure's College and Immersive College NPCs — no patches needed. → `World Content - Quests`
+
+### Alternatives
+
+- **Magical College of Winterhold** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1539)) — Cleaner fantasy aesthetic alternative. Lighter patch surface but less Nordic in tone — weaker fit for the grim-dark presentation pillar. → `World Content - Overhauls`
+- **Immersive College of Winterhold** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17004)) — Comprehensive alternative (architecture + NPCs + crafting + underground). Last updated December 2020 — unmaintained for 4+ years. Heavier patch debt with COTN and LOTD. → `World Content - Overhauls`
+- Questline-only: skip architecture mods, use **College of Winterhold - Quest Expansion** alone. Lowest patch overhead, College interior stays vanilla. Valid fallback if patch unknowns become blockers. → `World Content - Quests`
+
+### Risks & Compatibility
+
+- **Obscure's College ↔ COTN Winterhold:** Obscure's FOMOD patches The Great City of Winterhold (17127), not COTN (40088). [PATCH STATUS TBD from Task 1]. If cells overlap at the bridge/cliff and no patch exists, manual navmesh reconciliation is needed.
+- **Obscure's College ↔ Lux:** Obscure's compat guide predates Lux. ELFX patch exists in FOMOD. [PATCH STATUS TBD from Task 1]. If no third-party Lux patch exists, Obscure's CellSettings.esp light records will need manual forwarding.
+- **Obscure's College ↔ LOTD:** [PATCH STATUS TBD from Task 1]. Obscure's unique items (private collection key, room plaque system) may lack museum display integration without a patch.
+- **Immersive College NPCs ↔ NPC appearance overhaul:** ICN adds new NPCs with their own facegen. Load ICN after any broad NPC appearance mod (Northbourne, etc.) to avoid facegen/blackface issues on vanilla College NPCs.
+- **Quest Expansion ↔ FDE Brelyna Maryon:** Both touch Brelyna's dialogue tree. Test for overlap during playtesting.
+- Obscure's College last updated April 2020 — architecture mods age better than script-heavy ones (no SKSE dependency, USSEP only), but 1.6.1170 behavior should be verified during playtesting. Community testing is deep (102+ mods reference it).
+- Obscure's CellSettings.esp must load late in the load order per author recommendation (before Realistic Water 2 / DynDOLOD).
+
 ## Inns, Farms, And Small Settlements → `World Content - Overhauls`
 
 This subsection owns the smaller stopover places that make travel routes and rural Skyrim feel lived-in. It should answer a different question from the larger city and village subsection above: travel-stop identity, small community presence, and memorable rural pauses.
@@ -288,7 +314,7 @@ This subsection owns where `Elder Wilds` should let the player settle, recover, 
 
 ### Overhauls → `World Content - Overhauls`
 
-- `Winterhold docks` — Winterhold dock structure addition → `World Content - Overhauls`
+
 - `Merchant Chests on display` — merchant chest visual display → `World Content - Overhauls`
 - `Dynamic boats at docks` — boat movement at docks → `World Content - Overhauls`
 - `Imperial Towers Overhaul - Exterior` (Nexus: <https://www.nexusmods.com/skyrimspecialedition/mods/179653>) — Imperial tower world edits → `World Content - Overhauls`
