@@ -58,12 +58,14 @@ The following quest and new-lands mods have established LoTD patch support (offi
 - **Konahrik's Accoutrements** — Deep LoTD integration with dedicated display room for full dragon priest regalia. → `Legacy of the Dragonborn`
 - **Artifacts - The Ice Blade of the Monarch** — Standalone artifact with dedicated LoTD display. → `Legacy of the Dragonborn`
 - **Artifacts - The Tournament of the Ten Bloods** — New artifact quest with LoTD displays. → `Legacy of the Dragonborn`
+- **Obscure's College of Winterhold** — LoTD patch included in Obscure's own FOMOD installer (20514). Covers display integration for the private collection and unique College items. Does not require the LOTD Official Patch Hub (30980). → `Legacy of the Dragonborn`
 
 ### Display Expansions And Room Mods
 
 - **LOTD Display Patch Repos** — Collection of third-party display patches for mods not covered by the official hub. → `Legacy of the Dragonborn`
 - **Museum Display Room Expansion** — If the base museum feels cramped after adding supported content, evaluate display-room expansion mods such as the *LOTD SSE - Museum Exterior Fixes* or *LOTD Display Room Overhaul* family. → `Legacy of the Dragonborn`
 - **Hall of Forgotten Guild** — Feature of the Curator's Companion that adds more shelf and case space for common collectibles. → `Legacy of the Dragonborn`
+- **Obscure's College of Winterhold** — Architecture overhaul with built-in LoTD display patch in its FOMOD. The patch resolves display records for the private collection, room plaque system, and unique College items. ESP-FE format. → `Legacy of the Dragonborn`
 
 ### Collectible Additions With LoTD Integration
 
