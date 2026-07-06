@@ -17,6 +17,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `modlist.md` is the hub file: project scope, modlist identity pillars, separator mapping table, and the index to numbered section files. The installation guide was split into `install.md` to keep `modlist.md` lean.
 - `install.md` contains the full setup guide (pre-installation, toolchain, download instructions, load order build steps, post-install testing).
 - There is no build, test, lint, CI, or package-manager workflow to run here.
+- `tools/merge-modlist.ps1` concatenates all `modlist*.md` section files into `rendered/elder-wilds.md` for a single-page view. Run from the repo root or the `tools/` directory.
 
 ## File Roles
 
@@ -26,6 +27,12 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - Cross-reference convention: use `→`XX`` (arrow, space, backtick section number) as the standard inline cross-reference format across all section files.
 - `separators.md` is the canonical ordered reference (111 entries) for `Mod Organizer 2` separators derived from the current modlist structure.
 - `TODO.md` is a scratch backlog of ideas and possible future research, not an authoritative recommendation list.
+
+## Lighting & Graphics Direction
+
+- **Community Shaders** is the exclusive graphics framework. No ENB, no LUX family (Lux, Lux CS, Lux Orbis, Lux Via). The lighting baseline is the CS-native stack: CS Light + True Light + Window Shadows Ultimate + Ambient Templates, paired with Based Lighting Configs and Standard Lighting Templates (SLT).
+- Road and exterior lighting uses Lanterns of Skyrim II + CS Lantern Lights instead of Lux Via.
+- All new mod additions must be CS-compatible. A mod that assumes ENB or requires LUX patches is a poor fit.
 
 ## Current Structure
 

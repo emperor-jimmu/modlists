@@ -2,7 +2,8 @@ param(
   [string]$OutputFile = "elder-wilds.md"
 )
 
-$root = Split-Path -Parent $PSCommandPath
+$scriptDir = Split-Path -Parent $PSCommandPath
+$root = Split-Path -Parent $scriptDir
 $files = @(
   "install.md"
   "modlist.md"
@@ -44,7 +45,9 @@ $files = @(
   "separators.md"
 )
 
-$outputPath = Join-Path $root $OutputFile
+$outputDir = Join-Path $root "rendered"
+$null = New-Item -ItemType Directory -Path $outputDir -Force
+$outputPath = Join-Path $outputDir $OutputFile
 $lines = @()
 
 foreach ($file in $files) {
