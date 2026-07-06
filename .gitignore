@@ -1,3 +1,6 @@
 .playwright-mcp/
 
+# Inermediate file, not neccessary to be tracked
+rendered/elder-wilds.md
+
 *.log
