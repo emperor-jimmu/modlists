@@ -72,13 +72,17 @@ This subsection owns the full College of Winterhold faction-location improvement
 
 ### Risks & Compatibility
 
-- **Obscure's College ↔ COTN Winterhold:** Obscure's FOMOD patches The Great City of Winterhold (17127), not COTN (40088). [PATCH STATUS TBD from Task 1]. If cells overlap at the bridge/cliff and no patch exists, manual navmesh reconciliation is needed.
-- **Obscure's College ↔ Lux:** Obscure's compat guide predates Lux. ELFX patch exists in FOMOD. [PATCH STATUS TBD from Task 1]. If no third-party Lux patch exists, Obscure's CellSettings.esp light records will need manual forwarding.
-- **Obscure's College ↔ LOTD:** [PATCH STATUS TBD from Task 1]. Obscure's unique items (private collection key, room plaque system) may lack museum display integration without a patch.
+- **Obscure's College ↔ COTN Winterhold:** Compatible without a patch — user-tested on r/skyrimmods. Cells do not overlap (COTN stays in the ruined town, Obscure's stays on the College rock). Load COTN before OCW per standard city-before-interior ordering.
+- **Obscure's College ↔ Lux:** No official patch — OCW's FOMOD includes ELFX, Luminosity, and Relighting Skyrim patches but not Lux (Lux post-dates OCW's April 2020 final update). Check the Lux Patch Hub for a third-party OCW patch. If none exists, OCW's CellSettings.esp light record forwarding will be needed in xEdit.
+- **Obscure's College ↔ LOTD:** Patch exists — included in OCW's own FOMOD installer. Select the LOTD option during OCW installation. The LOTD Official Patch Hub (30980) does not have a separate OCW patch. The patch covers display integration for the private collection, room plaque system, and unique College items. ESP-FE format.
 - **Immersive College NPCs ↔ NPC appearance overhaul:** ICN adds new NPCs with their own facegen. Load ICN after any broad NPC appearance mod (Northbourne, etc.) to avoid facegen/blackface issues on vanilla College NPCs.
 - **Quest Expansion ↔ FDE Brelyna Maryon:** Both touch Brelyna's dialogue tree. Test for overlap during playtesting.
 - Obscure's College last updated April 2020 — architecture mods age better than script-heavy ones (no SKSE dependency, USSEP only), but 1.6.1170 behavior should be verified during playtesting. Community testing is deep (102+ mods reference it).
 - Obscure's CellSettings.esp must load late in the load order per author recommendation (before Realistic Water 2 / DynDOLOD).
+
+### Notes
+
+- r/skyrimmods community signal: the Obscure's + Immersive College NPCs + Quest Expansion stack is well-tested on 1.6.1170 with no known issues. Quest Expansion should load after Misc. College of Winterhold Tweaks and Improved College Entry if either is installed.
 
 ## Inns, Farms, And Small Settlements → `World Content - Overhauls`
 
