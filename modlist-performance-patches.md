@@ -18,11 +18,11 @@ Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below. Ev
 - **Tweak Actors**: `Opposite Gender Anims: Female` and `Opposite Gender Anims: Male` — needed because `Elder Wilds` runs `CBBE 3BA`, `HIMBO`, and `KS Hairdos` which already change the per-gender behavior set, and the global flip keeps NPCs consistent across `EVG Conditional Idles`, `Goetia`, and `Leviathan II` packs. → `Performance`
 - **Tweak Assorted**:
   - `All Armor Playable` — required by `Immersive Armors` (60+ sets, several ship with the non-playable flag in the base plugin).
-  - `No Light Fade Value Fix` — required because `Lux`, `Lux CS`, `Lux Orbis`, `Lux Via`, `ELFX`, `Relighting Skyrim`, and `Luminosity` all interact with fade values and the bare-`1.0` value is the stable starting point.
+  - `No Light Fade Value Fix` — required because `CS Light`, `True Light`, `ELFX`, `Relighting Skyrim`, and `Luminosity` all interact with fade values and the bare-`1.0` value is the stable starting point.
   - `No Light Flicker` — required because `RAID Weathers`, `Cathedral Weathers`, `Obsidian Weathers`, and `Azurite III CS` weather variants ship flickering templates that look bad in third-person exploration.
   - `Remove Load Screen Models` — required because `SkyParkour v3`, `RaySense`, and `Ricochet` add 3D geometry that can leak into load screens.
   - `Save Sorting Fix` — required: the SSE save-sorting bug is a real issue with this much plugin weight.
-  - `Set Light Radii` — use a `100%` multiplier to leave `Lux` radii alone; do not raise above 100 without re-doing lighting scenes.
+  - `Set Light Radii` — use a `100%` multiplier to leave lighting mod radii alone; do not raise above 100 without re-doing lighting scenes.
   - `Set Sound Attenuation Levels: Nirnroots Only` — leave default. `Sounds of Skyrim Complete` and `AOS` need their own attenuation and a global multiplier fights them.
   - `Uniform Groundcover` — enable, because `Skoglendi`, `Origins of Forest`, and `Mari's flora` are the grass stack and matching density variance is what makes the world feel coherent.
 - **Tweak Names**:
@@ -68,7 +68,7 @@ Set the following `Bash Tags` (one file per plugin under `Data\Bash Patches\`) o
 - `Aetherius.esp` / `Morningstar.esp` / `Imperious.esp` — `R.AddSpells` (one of these three is the race overhaul; whichever wins gets the tag, not all three). → `Performance`
 - `Adamant.esp` / `Vokrii.esp` / `Ordinator.esp` — `NPC.Perks.Change` and `NPC.Perks.Add`. → `Performance`
 - `Mysticism.esp` / `Odin.esp` / `Apocalypse.esp` — `SpellStats`, `EffectStats`. → `Performance`
-- `Lux.esp` / `Lux - Lux CS.esp` / `Lux - Orbis.esp` / `Lux - Via.esp` — `C.Light`, `C.Fog`, `C.ImageSpace` (light and atmosphere overrides are what these mods do). → `Performance`
+- `CS Light.esp` / `True Light.esp` — `C.Light`, `C.ImageSpace` (light and atmosphere overrides are what these mods do). → `Performance`
 - `ELFX.esp` and `ELFX - Shadows.esp` — `C.Light`, `C.Fog` (no fog conflict, but light is the same set of records). → `Performance`
 - `Relighting Skyrim.esp` and `Luminosity.esp` — `C.Light` only. → `Performance`
 - `RAID Weathers.esp` and `Raid Weathers CS.esp` — `C.Climate`, `C.Music` only if the weather pack changes music. → `Performance`

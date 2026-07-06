@@ -10,7 +10,7 @@ This subsection owns how quickly days pass, whether routine actions consume beli
 
 - **Time Flies SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39426)) — Makes ordinary play loops feel more grounded without turning the subsection into abstract clock tuning. → `World Feel - Timescale & Travel`
 - **Seasonal Calendar** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18164)) — Narrow companion if the final weather-and-season direction makes explicit calendar readability worthwhile. → `World Feel - Timescale & Travel`
-- **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — High-commitment seasonal-world branch. Mature framework (v1.8.6, last updated June 2025, AE 1.6.1130+ compatible) with dramatic seasonal world changes. Cost: 4× DynDOLOD generation passes, 4× grass caches, and a meaningful patch footprint (Lux, grass stack, tree mods). Only adopt if the project owns that LOD-generation workflow — if the list already runs DynDOLOD for 4K, the additional passes are the main extra cost. → `World Feel - Timescale & Travel`
+- **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — High-commitment seasonal-world branch. Mature framework (v1.8.6, last updated June 2025, AE 1.6.1130+ compatible) with dramatic seasonal world changes. Cost: 4× DynDOLOD generation passes, 4× grass caches, and a meaningful patch footprint (exterior lighting, grass stack, tree mods). Only adopt if the project owns that LOD-generation workflow — if the list already runs DynDOLOD for 4K, the additional passes are the main extra cost. → `World Feel - Timescale & Travel`
 
 ### Alternatives
 
@@ -200,7 +200,8 @@ This subsection owns how dark Skyrim nights should feel during ordinary travel a
 ### Baseline
 
 - **Weather/shader darkness** — Darkness baseline comes from the weather mod and ENB/Community Shaders pair selected in [`modlist-graphics-shaders.md`](modlist-graphics-shaders.md) first. If nights still need more punch after that stack is locked, add **Simply Darker Nights (SSE)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14269)) as a simple image-space overlay, but verify it is not redundant. → `World Feel - Nights & Wildlife`
-- **Lux Via** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63588)) — Modern world-lighting baseline for road and travel path readability at night. Actively maintained (v2.2, February 2025), large patch ecosystem, integrates with the broader Lux family. The 2016-era `Lanterns of Skyrim SE` and 2017-era `CLARALUX SSE` are functionally superseded. → `World Feel - Nights & Wildlife`
+- **Lanterns of Skyrim II** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30817)) — Road and settlement exterior lighting placement layer. v4.3 (November 2025), merged Tamriel Master Lights for full road + settlement coverage. Lighting-framework-agnostic — places lantern meshes and light records, with the CS-native True Light + CS Light handling actual bulb illumination on top. FOMOD patch hub covers ~30-50 patches (JK's Skyrim, 3DNPC, Campfire, and more) vs Lux Via's ~80-120. Regional lantern variants, wind-animated, shadow-casting, MCM toggles. → `World Feel - Nights & Wildlife`
+- **CS Lantern Lights - Lanterns of Skyrim II** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179964)) — CS particle lights for LoS II lanterns. Adds Community Shaders-native particle illumination to every LoS II lamp post. Install after LoS II. → `World Feel - Nights & Wildlife`
 - **Simple Wearable Lanterns - Remastered** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132196)) — Preferred carried-visibility branch. Modern, lightweight, no SKSE requirement, covers the basic use case without feature creep. → `World Feel - Nights & Wildlife`
 
 ### Alternatives
@@ -215,7 +216,7 @@ This subsection owns how dark Skyrim nights should feel during ordinary travel a
 - Weak night mood can trigger stacking several visibility systems at once and losing control of the overall night identity.
 - Nights can be made darker in theory but then undermined with so much added light support that the mood barely changes.
 - A carried-light solution can become a constant crutch instead of a deliberate travel tool.
-- `Lux Via` is a worldspace-editing mod requiring patches for city overhauls, road mods, and new-worldspace content. Factor the patch-maintenance cost into the budget. → `World Feel - Nights & Wildlife`
+- `Lanterns of Skyrim II` is a worldspace-editing mod requiring patches for city overhauls, road mods, and new-worldspace content. The FOMOD patch hub is self-contained — run it after the full worldspace stack is settled. Patch burden is roughly half of Lux Via's.
 - Keep this subsection about nighttime feel and travel readability rather than generic display calibration, graphics-lighting philosophy, or survival maintenance.
 
 ## Activation Text → `World Feel - Timescale & Travel` And Interaction Immersion

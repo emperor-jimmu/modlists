@@ -149,7 +149,7 @@ This subsection owns the per-character face assets: hairstyles, eye textures, an
 
 ### Notes
 
-- High-poly hair can clash with extreme lighting and shadow setups; verify KS Hairdos works cleanly with Lux and the chosen shadow mod. → `Graphics - Characters & Creatures`
+- High-poly hair can clash with extreme lighting and shadow setups; verify KS Hairdos works cleanly with the CS-native lighting stack and the chosen shadow mod. → `Graphics - Characters & Creatures`
 - Eye textures that lean too stylized look out of place; pick a realistic pack matching the grim-dark tone.
 - Hair assets are common in NPC-overhaul conflicts; check for hair-distribution patches when `modlist-npcs.md` is active.
 - Adding a beard pack without testing the beard mesh creates obvious neck clipping under most lighting.
@@ -160,7 +160,7 @@ This subsection owns visual upgrades to in-world skeleton and bone assets: skull
 
 ### Baseline
 
-- **Skeleton Replacer HD - SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52845)) — Replaces all skeleton and human-bone models/textures with high-resolution versions (9,894 endorsements, PraedythXVI). → `Graphics - Characters & Creatures`
+- **Skeleton Replacer HD - SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52845)) — Replaces all skeleton and human-bone models/textures with high-resolution versions (9,894 endorsements, PraedythXVI). Choose the **2K** main file — skeletons are medium-scale clutter, not hero assets, and 4K is wasted VRAM. → `Graphics - Characters & Creatures`
 - **Skeleton Replacer HD - Mesh Patches for Various Mods** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177253)) — Only if the modlist includes a creature or content mod that needs a mesh patch. → `Graphics - Characters & Creatures`
 
 ### Alternatives
