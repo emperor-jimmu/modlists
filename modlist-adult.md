@@ -10,6 +10,7 @@ This subsection owns the animation framework that supports the romance, dialogue
 
 - **OStim Standalone** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/98163)) — The modern adult animation framework for Skyrim SE/AE. Standalone means it does not require OSA or any legacy dependency. Provides the animation system that OStim Romance and the Amorous Adventures OStim patch build on. The maintained branch after OStim NG. → `Adult Content`
 - **OStim Community Resource** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/106519)) — A shared framework and dependency required by various OStim add-on mods. Install alongside OStim Standalone as a prerequisite for the broader OStim ecosystem. → `Adult Content`
+- **Night-blooming Violets for OStim Standalone** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/98276)) — An OStim Standalone addon adding a new scene framework. → `Adult Content`
 - **OARE - Open Animations Romance and Erotica** — Recommended animation pack baseline. → `Adult Content`
 - **Additional Leito's Animations for Ostim Standalone** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104995)) — Leito's set, ~150 animations. → `Adult Content`
 - **Anub's animations for Ostim Standalone** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/101918)) — ~685 animations. → `Adult Content`
