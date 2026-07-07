@@ -6,7 +6,7 @@
 
 ## NPC Appearance Overhauls → `NPCs - Appearance`
 
-This subsection owns the face, hair, and presentation direction for Skyrim's named NPCs. It does not re-decide the body, skin, and baseline character-visual stack already owned by → `02g`; it decides how far the list pushes NPC-specific styling on top of that baseline. The real question is whether Elder Wilds should lean toward grounded modernization, clearly stylized beauty, or a vanilla-faithful refresh.
+This subsection owns the face, hair, and presentation direction for Skyrim's named NPCs. It does not re-decide the body, skin, and baseline character-visual stack already owned by → `Graphics - Characters & Creatures`; it decides how far the list pushes NPC-specific styling on top of that baseline. The real question is whether Elder Wilds should lean toward grounded modernization, clearly stylized beauty, or a vanilla-faithful refresh.
 
 ### Baseline
 
@@ -31,11 +31,11 @@ This subsection owns the face, hair, and presentation direction for Skyrim's nam
 - Letting glamour-forward design overpower the grounded tone, or letting female-weighted packs leave male NPCs visibly mismatched.
 - Confirm Northbourne, The Men of Winter, Pandorable's, and High Poly True to Vanilla behave cleanly on Steam 1.6.1170. Check blackface/facegen, dependency, and AI Overhaul SSE load-order pressure before locking.
 - Children of the First / Ash are race-specific overhauls — test for facegen/blackface conflicts with whichever broad route is chosen, especially if that route already covers Altmer or Dunmer NPCs.
-- Do not duplicate the body/skin baseline already owned by → `02g`.
+- Do not duplicate the body/skin baseline already owned by → `Graphics - Characters & Creatures`.
 
 ## Civilian And Traveler Population Additions → `NPCs - Population`
 
-This subsection owns the extra background people who make towns, inns, and roads feel used — without re-deciding the city feel, outskirts texture, and roadside atmosphere already handled in section → `07`. The goal is believable incidental presence, not more clutter or bigger settlements.
+This subsection owns the extra background people who make towns, inns, and roads feel used — without re-deciding the city feel, outskirts texture, and roadside atmosphere already handled in section → `World Feel`. The goal is believable incidental presence, not more clutter or bigger settlements.
 
 ### Baseline
 
@@ -132,7 +132,7 @@ This subsection owns custom fully-voiced follower additions — new NPCs with au
 - Remiel WILL BREAK under NFF/AFT. Same caution for Auri 2.0+.
 - Kaidan 2 Extended Edition has two distribution paths: Nexus (deprecated) and kaidanmod.com AIO (supersedes). Use the AIO path.
 - Confirm all custom followers are compatible with the chosen NPC appearance overhaul to avoid facegen issues.
-- Coordinate with → `08` if other custom followers (Val Serano) are locked — follower-banter patches may be needed.
+- Coordinate with → `World Content` if other custom followers (Val Serano) are locked — follower-banter patches may be needed.
 - Sofia's comedic tone may clash with the grim-dark presentation pillar.
 - Remiel and Auri have Inigo banter patches. Kaidan 2 has extended banter with Remiel. Verify cross-follower banter works.
 - Backported Extended ESL Support is listed as a requirement for Majestic Auri but does not apply to Steam 1.6.1170 — do not install.

@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `Expanded Systems` → `Expanded Systems - Character & Progression`
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `UI - Inventory & Items` (Magic & Perks), `UI - Map, Dialogue, Menus` (Survival & Needs), `06d` (Crafting & Economy), `06e` (Followers & Reputation).
+Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `Expanded Systems - Magic & Perks`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`.
 
 ## Character Creation And Starting Choices → `Expanded Systems - Character & Progression`
 
@@ -131,7 +131,7 @@ This subsection owns how the player gains levels and skill points. Instead of th
 
 - **Experience** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17751)) — Core leveling framework. Character levels are gained through exploration, quest completion, combat, and discovery rather than skill increases. This decouples character level from skill grinding. → `Expanded Systems - Character & Progression`
     - **Main file:** `Experience` (the base .esp). Install the main file only.
-    - **Experience - Synthesis Patcher** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41937)) — Required Synthesis patcher that generates experience-point values for all mod-added quests, locations, and enemies in the load order. Run during the patcher chain in → `14d`. → `Expanded Systems - Character & Progression`
+    - **Experience - Synthesis Patcher** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41937)) — Required Synthesis patcher that generates experience-point values for all mod-added quests, locations, and enemies in the load order. Run during the patcher chain in → `Performance`. → `Expanded Systems - Character & Progression`
 - **Experience - MCM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65880)) — MCM configuration menu for Experience. Allows tuning XP rates, per-activity values, and toggle per-source. → `Expanded Systems - Character & Progression`
 - **Static Skill Leveling Rewritten** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89940)) — Skill-leveling companion. Adds a cooldown-based system where skill increases are gated by real time or in-game actions, encouraging organic skill use over grind-spamming. → `Expanded Systems - Character & Progression`
     - **Main file:** `Static Skill Leveling - ESL`, the ESL-flagged plugin.
@@ -139,7 +139,7 @@ This subsection owns how the player gains levels and skill points. Instead of th
 - **No Startup Quest XP - Patch for Sunhelm and more** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55682)) — Prevents XP from startup quests (Unbound, etc.) when using Experience + an alternate start mod. Complements Alternate Perspective from the Character Creation subsection. → `Expanded Systems - Character & Progression`
 - **Skyshards** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60748)) — Discovery-layer addition. Scatter 60+ glowing shards across Skyrim that grant experience when collected. Gives exploration a tangible, repeatable reward for straying off the main path. → `Expanded Systems - Character & Progression`
     - **Main file:** `Skyshards` (the base mod). Recommend the ESL-flagged version.
-    - **Skyshards - CS Light Addon** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150715)) — Community Shaders light addon. Adds a subtle emission glow to skyshards, making them visible in dark interiors without being garish. Requires Community Shaders (→ `02b`). → `Expanded Systems - Character & Progression`
+    - **Skyshards - CS Light Addon** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150715)) — Community Shaders light addon. Adds a subtle emission glow to skyshards, making them visible in dark interiors without being garish. Requires Community Shaders (→ `Graphics - Community Shaders`). → `Expanded Systems - Character & Progression`
     - **Skyshards - Keep it Moving** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127652)) — Prevents the skyshard-collection notification from stopping player movement. QoL patch for third-person gamepad play. → `Expanded Systems - Character & Progression`
 
 ### Alternatives

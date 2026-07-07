@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `Expanded Systems` → `Expanded Systems - Survival & Needs`
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `UI - Framework & HUD` (Character & Progression), `UI - Inventory & Items` (Magic & Perks), `06d` (Crafting & Economy), `06e` (Followers & Reputation).
+Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`.
 
 ## Survival Systems → `Expanded Systems - Survival & Needs`
 

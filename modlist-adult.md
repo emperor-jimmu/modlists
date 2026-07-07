@@ -97,8 +97,7 @@ This subsection owns standalone adult-content mods that do not fit neatly into t
 
 ### Baseline
 
-- **Simple Bathing** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159442)) — Adds player-initiated bathing animations in any water source. Thematically adjacent to adult content (nudity context) but functionally a downtime-roleplay mod. → `Adult Content`
-- **Simple Bathing Soap Addon** — Adds soap items to make bathing feel more intentional.
+- Hygiene and bathing are owned by `Bathing in Skyrim - Renewed` in → `Expanded Systems - Survival & Needs`. It provides dirt accumulation, washable blood decals, soap items, and animated bathing — no separate bathing addon is needed here.
 
 ### Alternatives
 
@@ -106,5 +105,5 @@ This subsection owns standalone adult-content mods that do not fit neatly into t
 
 ### Notes
 
-- Simple Bathing may overlap with `Bathing in Skyrim - Renewed` (from `modlist-expanded-systems.md`). If both are active, configure them so they do not double-trigger bathing mechanics.
+- `Bathing in Skyrim - Renewed` (from → `Expanded Systems - Survival & Needs`) is the sole hygiene baseline. No duplicate bathing mod should be active.
 - BeeHH adds follower slot changes that conflict with NFF. If both are active, the follower framework must win for stability; BeeHH should only be used for features NFF does not provide.

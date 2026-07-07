@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `Expanded Systems` → `Expanded Systems - Followers & Reputation`
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `UI - Framework & HUD` (Character & Progression), `UI - Inventory & Items` (Magic & Perks), `UI - Map, Dialogue, Menus` (Survival & Needs), `06d` (Crafting & Economy).
+Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Crafting & Economy`.
 
 ## Crime, Reputation, And Social Systems → `Expanded Systems - Followers & Reputation`
 

@@ -76,4 +76,4 @@ Keep the discipline-first route alive if the weather mod's bundled star/sky text
 
 - Aurora mods can look out of place in non-northern settings; verify behavior in southern holds before locking.
 - Sky-dome edits can fight with weather mods that also tweak the night sky. Resolve by giving the aurora mod load-order priority for night-sky changes.
-- Strong auroras require a real night-darkness baseline from → `14`; if the night is too bright, the aurora will not read.
+- Strong auroras require a real night-darkness baseline from → `Performance`; if the night is too bright, the aurora will not read.

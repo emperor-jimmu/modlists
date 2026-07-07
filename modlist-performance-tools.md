@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `Performance`
 
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section. See also: `14a` (Performance Strategy), `14b` (Optimization & Configuration), `14d` (Bashed Patch & Synthesis), `14e` (Testing & Maintenance).
+Part of the [`Performance and Technical Workflow`](modlist-performance.md) section. See also: `Performance Strategy`, `Optimization & Configuration`, `Bashed Patch & Synthesis`, `Testing & Maintenance`.
 
 ## Tool Workflow → `Performance`
 

@@ -27,7 +27,7 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 - **Dual Casting Fix** — Fixes dual-casting perk application; required by Blade and Blunt. → `Foundations - Core Libraries`
 - **Andrealphus' Papyrus Functions** — Extended Papyrus function library; required by Dragon War. → `Foundations - Core Libraries`
 - **ConsoleUtilSSE NG** — Console command access from Papyrus; required by Dragon War and several animation behavior mods. → `Foundations - Core Libraries`
-- **Kris's Papyrus Extender** — Additional Papyrus functions; required by Bathing in Skyrim. → `Foundations - Core Libraries`
+- **Kris's Papyrus Extender** — Additional Papyrus functions; required by Bathing in Skyrim - Renewed. → `Foundations - Core Libraries`
 - **Animation Queue Fix** — Animation-stack stability for heavy OAR/behavior loads. → `Foundations - Core Libraries`
 - **Papyrus Tweaks NG** — Script-engine performance optimization; widely adopted baseline. → `Foundations - Core Libraries`
 - **Lexicon SKSE** — Custom scripted function engine; required by Actor Value Generator. → `Foundations - Core Libraries`

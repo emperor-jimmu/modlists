@@ -41,7 +41,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `modlist-graphics.md` is the Graphics Pipeline parent overview; it indexes sub-files `Graphics - PGPatcher` through `Graphics - LOD & Distant Detail` covering PGPatcher, Community Shaders, Textures & Meshes, Lighting, Weather & Water, Terrain & Flora, Characters & Creatures, and LOD & Distant Detail.
 - `modlist-graphics-shaders.md` (Community Shaders) and `modlist-npcs.md` (NPCs) have been reviewed and rewritten/trimmed. The numbered-section template work in `modlist-npcs.md` established the repeatable rewrite pattern used across sections.
 - `modlist-animations.md` (Animations and Movement) and `modlist-third-person.md` (Third-Person Gameplay) are fully expanded and treated as established baselines.
-- `modlist-expanded-systems.md` (Expanded Systems) is a parent overview; the locked original content lives in five sub-files: `UI - Framework & HUD` (Character & Progression), `UI - Inventory & Items` (Magic & Perks), `UI - Map, Dialogue, Menus` (Survival & Needs), `06d` (Crafting & Economy), `06e` (Followers & Reputation).
+- `modlist-expanded-systems.md` (Expanded Systems) is a parent overview; the locked original content lives in five sub-files: `modlist-expanded-character.md` (Character & Progression), `modlist-expanded-magic.md` (Magic & Perks), `modlist-expanded-survival.md` (Survival & Needs), `modlist-expanded-crafting.md` (Crafting & Economy), `modlist-expanded-followers.md` (Followers & Reputation).
 - `modlist-ui.md` (Modernized UI) is locked. Baseline picks: `SkyUI` + `Oathvein UI`, `SkyHUD` + `TrueHUD`, `FWMF` + Mirhayasu paper maps, `Compass Navigation Overhaul`, `COCKS`, `Sovngarde Font`.
 - `modlist-world-feel.md` (Immersive Scale and World Feel) is moderately expanded but still an open research area.
 - `modlist-world-content.md` (World Content) has moderate content and is an active development area with recent mod pick additions (Fishing, Evolving Locations, quest content).
@@ -49,7 +49,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `modlist-curation.md` (Modlist Curation Rules and Testing Plan) is the expanded meta-section combining curation guardrails and testing verification.
 - `modlist-foundations.md` (Foundations and Compatibility) covers the toolchain setup, conflict-resolution strategy, core libraries, SKSE, mesh/texture fixes, and targeted bugfixes.
 - `modlist-lotd.md` (Legacy of the Dragonborn) owns the museum baseline, key companion utilities, expanded quest/artifact integration list, and LoTD patch strategy.
-- `modlist-performance.md` (Performance and Technical Workflow) is a parent overview; the full content lives in five sub-files: `14a` (Performance Strategy), `14b` (Optimization & Configuration), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis Configuration), `14e` (Testing & Maintenance).
+- `modlist-performance.md` (Performance and Technical Workflow) is a parent overview; the full content lives in five sub-files: Performance Strategy, Optimization & Configuration, Tool Pipeline, Bashed Patch & Synthesis Configuration, Testing & Maintenance.
 - `modlist-adult.md` (Adult Content) covers OStim framework, romance quests, adult NPCs, and dialogue expansions with adult content.
 - `modlist-voicing.md` (Main Character Voicing) covers Dragonborn Voice Over framework, voice packs, and MCVO Generator pipeline.
 

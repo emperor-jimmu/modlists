@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `Performance`
 
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section. See also: `14a` (Performance Strategy), `14c` (Tool Pipeline), `14d` (Bashed Patch & Synthesis), `14e` (Testing & Maintenance).
+Part of the [`Performance and Technical Workflow`](modlist-performance.md) section. See also: `Performance Strategy`, `Tool Pipeline`, `Bashed Patch & Synthesis`, `Testing & Maintenance`.
 
 ## Shader Performance Impact → `Performance`
 

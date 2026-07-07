@@ -50,7 +50,7 @@ Reviewing against: the updated directives in `modlist.md:8` and `modlist-14.md:1
 
 ### 1. MCM-Heavy Configuration Stack
 
-Affects mods across: `SmoothCam`, `TrueHUD`, `True Directional Movement`, `Starfrost`/`SunHelm`, `Stress and Fear`, `Bathing in Skyrim`, `Know Your Enemy 2`, `Immersive Armors`, `Hunterborn`, `Missives` (via voice/quest expansion), and `Simple Fishing Overhaul`.
+Affects mods across: `SmoothCam`, `TrueHUD`, `True Directional Movement`, `Starfrost`/`SunHelm`, `Stress and Fear`, `Bathing in Skyrim - Renewed`, `Know Your Enemy 2`, `Immersive Armors`, `Hunterborn`, `Missives` (via voice/quest expansion), and `Simple Fishing Overhaul`.
 
 - **Risk**: Every one of these requires initial MCM setup. SkyUI MCM navigation works with gamepad (d-pad + A), but it is significantly slower than mouse navigation. A fifty-mod MCM setup session can take 30-45 minutes on a gamepad.
 - **Recommendation**: Add a documented MCM preset strategy to `modlist-15.md` (Performance and Technical Workflow) or `guide.md`: ship a pre-configured `skse/plugins/SkyUI/config` folder with .json preset files for every MCM-heavy mod. This eliminates the per-gamepad-session setup burden and makes the list more reproducible.
@@ -116,7 +116,7 @@ Per-mod plugins that auto-save/load MCM settings via MCM Helper. Zero user inter
 | **Hunterborn**                | ❌ No settings loader found                                          | —        |
 | **Stress and Fear**           | ❌ No settings loader found                                          | —        |
 | **Know Your Enemy 2**         | ❌ No settings loader found                                          | —        |
-| **Bathing in Skyrim**         | ❌ No settings loader found                                          | —        |
+| **Bathing in Skyrim - Renewed** | ❌ No settings loader found                                        | —        |
 | **Immersive Armors**          | ❌ No settings loader found                                          | —        |
 
 ### Approach B: MCM Recorder (Universal — Recommended)
@@ -137,7 +137,7 @@ Recording files are simple `.json` and can be edited by hand or packaged as a mo
 
 1. **MCM Helper** (already a dependency for TDM) — keeps settings for TDM, TrueHUD, and any MCM Helper-aware mods.
 2. **Missives - Settings Loader** — dedicated auto-loader for Missives.
-3. **MCM Recorder** — a single pre-recorded `Elder Wilds.json` that covers everything else (SmoothCam preset + MCM, Starfrost, Hunterborn, Stress and Fear, Know Your Enemy 2, Bathing in Skyrim, Immersive Armors, and any others).
+3. **MCM Recorder** — a single pre-recorded `Elder Wilds.json` that covers everything else (SmoothCam preset + MCM, Starfrost, Hunterborn, Stress and Fear, Know Your Enemy 2, Bathing in Skyrim - Renewed, Immersive Armors, and any others).
 
 This combo means: the mods that support auto-loading do it silently, and the rest are handled in one 2-click playback session. The user only configures key bindings (which must be personal).
 

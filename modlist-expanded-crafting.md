@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `Expanded Systems` → `Expanded Systems - Crafting & Economy`
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `UI - Framework & HUD` (Character & Progression), `UI - Inventory & Items` (Magic & Perks), `UI - Map, Dialogue, Menus` (Survival & Needs), `06e` (Followers & Reputation).
+Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Followers & Reputation`.
 
 ## Alchemy Overhaul → `Expanded Systems - Crafting & Economy`
 
@@ -118,7 +118,7 @@ This subsection owns the unique-item and artifact content packs that add depth t
 
 ### Notes
 
-- Stacking `Reliquary of Myth` with `ArteFakes` and `Unique Items Tweaks` touches every unique-item record in the game. They are designed to stack, but verify the Synthesis patcher chain in `14d` does not re-balance the same records. → `Expanded Systems - Crafting & Economy`
+- Stacking `Reliquary of Myth` with `ArteFakes` and `Unique Items Tweaks` touches every unique-item record in the game. They are designed to stack, but verify the Synthesis patcher chain in `Performance` does not re-balance the same records. → `Expanded Systems - Crafting & Economy`
 - `Konahrik's Accoutrements` adds new Dragon Priest encounters that may not be patched into Legacy of the Dragonborn's display system. Check the `LoTD Patches (Official)` hub in `modlist-lotd.md` for an integration patch. → `Expanded Systems - Crafting & Economy`
 - Artifact overhauls that rebalance too aggressively can break encounter expectations. Verify Wuuthrad, Mehrunes' Razor, and the Gauldur weapons feel right before lock-in.
 - `Unique Items Tweaks` overlaps lightly with `Reliquary of Myth` on a small number of records. Verify with a Bashed Patch run. → `Expanded Systems - Crafting & Economy`
@@ -135,7 +135,7 @@ This subsection owns the weapon content packs that add new named and leveled-lis
 
 ### Alternatives
 
-- **Immersive Weapons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/16788)) — Legacy comparison for maximum raw weapon count (230+). Unmaintained since April 2018. Synthesis patcher chain in `14d` has explicit `Bash Tags` for it. → `Expanded Systems - Crafting & Economy`
+- **Immersive Weapons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/16788)) — Legacy comparison for maximum raw weapon count (230+). Unmaintained since April 2018. Synthesis patcher chain in `Performance` has explicit `Bash Tags` for it. → `Expanded Systems - Crafting & Economy`
 - **Discipline-first route** — Rely on vanilla weapons only.
 
 ### Notes
@@ -143,7 +143,7 @@ This subsection owns the weapon content packs that add new named and leveled-lis
 - `Heavy Armory` uses standard leveled-list integration and does not require synthesis patcher intervention the way `Immersive Weapons` does. A dedicated `Heavy Armory - Adamant Addon` (mod 144316) provides Simonrim-aligned perk integration. → `Expanded Systems - Crafting & Economy`
 - `LeanWolf's Better-Shaped Weapons` can conflict with `Unique Items Tweaks` and `Reliquary of Myth` on unique-weapon records. Verify model swaps do not affect the visual identity of iconic unique items. → `Expanded Systems - Crafting & Economy`
 - `Legendary Skyrim Crossbows and Bows` makes crossbows a meaningful archetype — `modlist-survival-combat.md` difficulty decisions need to account for ranged damage output. → `Expanded Systems - Crafting & Economy`
-- All three weapon mods add new models — `Pandora` and `BodySlide` rebuild triggers in `14d` fire whenever any of them is updated. → `Expanded Systems - Crafting & Economy`
+- All three weapon mods add new models — `Pandora` and `BodySlide` rebuild triggers in `Performance` fire whenever any of them is updated. → `Expanded Systems - Crafting & Economy`
 
 ## Armor Pack Additions → `Expanded Systems - Crafting & Economy`
 
@@ -151,7 +151,7 @@ This subsection owns the armor content packs that add new named and leveled-list
 
 ### Baseline
 
-- **Immersive Armors** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3479)) — Content-variety baseline. Adds 200+ new armors (light, heavy, mage, fur, leather) with leveled-list integration. Canonical armor content pack (206K endorsements). Synthesis patcher chain in `14d` has explicit `Bash Tags` for it. → `Expanded Systems - Crafting & Economy`
+- **Immersive Armors** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3479)) — Content-variety baseline. Adds 200+ new armors (light, heavy, mage, fur, leather) with leveled-list integration. Canonical armor content pack (206K endorsements). Synthesis patcher chain in `Performance` has explicit `Bash Tags` for it. → `Expanded Systems - Crafting & Economy`
 - **NordwarUA Total Armor and Weapon Compilation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61423)) — Vanilla-armor model overhaul compiling six NordwarUA mods. Standardizes cubemaps and removes stat changes, providing a visual upgrade without NPC balance changes. → `Expanded Systems - Crafting & Economy`
 - **Common Clothes and Armors** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21305)) — Light-armor-diversity companion adding clothing-and-light-armor variants for bandits, sellswords, and travelers. The clothing-side companion to `NordwarUA`. → `Expanded Systems - Crafting & Economy`
 - **Bandolier - Bags and Pouches Classic** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2417)) — Carry-capacity utility layer. Adds bags, pouches, and bandoliers with MCM configuration. → `Expanded Systems - Crafting & Economy`
@@ -174,7 +174,7 @@ This subsection owns the armor content packs that add new named and leveled-list
 - `Bandolier` changes the inventory system — carry-weight design needs to account for additional slots. → `Expanded Systems - Crafting & Economy`
 - The Retexture and Mesh Fixes mod and the CBBE 3BA BodySlide conversion are **not** stackable for female meshes. The Retexture and Mesh Fixes author explicitly warns against mixing. The HIMBO Conversion V2 avoids this conflict because it is designed to stack on top of the Retexture and Mesh Fixes mod.
 - The Realistic Armors replace mod requires `Realistic Armor` (36151) as a hard dependency alongside `Immersive Armors`. → `Expanded Systems - Crafting & Economy`
-- All IA companion mods add new models — `Pandora` and `BodySlide` rebuild triggers in `14d` fire whenever any of them is updated. → `Expanded Systems - Crafting & Economy`
+- All IA companion mods add new models — `Pandora` and `BodySlide` rebuild triggers in `Performance` fire whenever any of them is updated. → `Expanded Systems - Crafting & Economy`
 
 ## Clothing And Wardrobe Extensions → `Expanded Systems - Crafting & Economy`
 

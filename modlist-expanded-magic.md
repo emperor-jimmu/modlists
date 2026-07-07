@@ -2,7 +2,7 @@
 
 **MO2 Separator:** `Expanded Systems` → `Expanded Systems - Magic & Perks`
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `UI - Framework & HUD` (Character & Progression), `UI - Map, Dialogue, Menus` (Survival & Needs), `06d` (Crafting & Economy), `06e` (Followers & Reputation).
+Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `Expanded Systems - Character & Progression`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`.
 
 ## Perk Overhaul Compatibility → `Expanded Systems - Magic & Perks`
 

@@ -6,7 +6,7 @@
 
 ## Enemy Variety
 
-This subsection owns how hostile enemy groups feel less repetitive across ordinary play — cleaner bandit variety, better undead variety, or a heavier enemy-overhaul route — without collapsing into an all-purpose creature package. Stays separate from wildlife ecology (→ `07`), combat-system ownership, and later creature-visual/behavior subsections.
+This subsection owns how hostile enemy groups feel less repetitive across ordinary play — cleaner bandit variety, better undead variety, or a heavier enemy-overhaul route — without collapsing into an all-purpose creature package. Stays separate from wildlife ecology (→ `World Feel`), combat-system ownership, and later creature-visual/behavior subsections.
 
 ### Baseline
 
@@ -27,7 +27,7 @@ This subsection owns how hostile enemy groups feel less repetitive across ordina
 
 ## Creature Visual Overhauls
 
-This subsection owns creature-specific visual direction layered on top of the broad baseline in → `02g`. Bellyaches Animal and Creature Pack SSE remains the texture foundation. The question is which additional presentation layers make animals, dragons, and region-specific undead more striking.
+This subsection owns creature-specific visual direction layered on top of the broad baseline in → `Graphics - Characters & Creatures`. Bellyaches Animal and Creature Pack SSE remains the texture foundation. The question is which additional presentation layers make animals, dragons, and region-specific undead more striking.
 
 ### Baseline
 
@@ -83,13 +83,13 @@ This subsection owns new creature types that add to the world's bestiary — Mih
 
 ### Notes
 
-- Re-solving the creature baseline (→ `02g`) instead of building on it is counterproductive.
+- Re-solving the creature baseline (→ `Graphics - Characters & Creatures`) instead of building on it is counterproductive.
 - Stacking Fluffworks, Fusa Fusa, and multiple targeted replacers without a clear layering plan will cause fur-shell and shader conflicts.
 - Confirm all picks behave cleanly on Steam 1.6.1170 with the current creature baseline. Record pressure around creature meshes, fur shells, horse patches, and overlap with later creature-behavior or enemy-variety picks.
 
 ## Creature Behavior Improvements
 
-This subsection owns encounter-side creature behavior: how creatures attack, react, and express identity once combat starts. Section → `07` owns ecology, distribution, and wilderness-danger tone; this subsection only decides which behavior-side upgrades make encounters smarter and more distinct.
+This subsection owns encounter-side creature behavior: how creatures attack, react, and express identity once combat starts. Section → `World Feel` owns ecology, distribution, and wilderness-danger tone; this subsection only decides which behavior-side upgrades make encounters smarter and more distinct.
 
 ### Baseline
 
@@ -111,7 +111,7 @@ This subsection owns encounter-side creature behavior: how creatures attack, rea
 
 ## Wildlife Density And Rarity Balance
 
-This subsection owns how common wildlife should feel on the landscape once ecology, danger, and creature-identity decisions are handled elsewhere. Section → `07` already answered the ecology side; the question here is whether the province feels too crowded with animals to preserve scale and rarity.
+This subsection owns how common wildlife should feel on the landscape once ecology, danger, and creature-identity decisions are handled elsewhere. Section → `World Feel` already answered the ecology side; the question here is whether the province feels too crowded with animals to preserve scale and rarity.
 
 ### Baseline
 

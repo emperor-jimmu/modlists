@@ -120,8 +120,4 @@ This subsection owns whether enemies should ask the player to identify weaknesse
 - A system that feels immersive in isolation can become oppressive once cold, sleep, food, combat recovery, and defeat penalties all stack together.
 - If this subsection is too light, the chosen survival framework may feel disconnected from the actual danger layer.
 
-## Candidate TODO Additions
 
-### Survival & Needs → `Survival & Combat - Resources & Injuries`
-
-- `Dirt and Blood` — visual dirt/blood accumulation on character (also cross-referenced in `Expanded Systems - Survival & Needs`; primary ownership should be in whichever section the hygiene/survival system lands) → `Survival & Combat - Resources & Injuries`
