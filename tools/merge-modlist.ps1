@@ -48,7 +48,14 @@ $files = @(
 $outputDir = Join-Path $root "rendered"
 $null = New-Item -ItemType Directory -Path $outputDir -Force
 $outputPath = Join-Path $outputDir $OutputFile
-$lines = @()
+
+$versionPath = Join-Path $root "VERSION"
+$version = if (Test-Path $versionPath) { (Get-Content $versionPath -Raw).Trim() } else { "0.0.1-dev" }
+$date = Get-Date -Format "yyyy-MM-dd"
+
+$mergedLines = @()
+$headings = @()
+$anchorCount = @{}
 
 foreach ($file in $files) {
   $path = Join-Path $root $file
@@ -56,13 +63,52 @@ foreach ($file in $files) {
     Write-Warning "Skipping $file — not found"
     continue
   }
-  $lines += "---"
-  $lines += "# FILE: $file"
-  $lines += "---"
-  $lines += ""
-  $lines += (Get-Content $path -Raw).Trim()
-  $lines += ""
+
+  $content = (Get-Content $path -Raw).Trim()
+
+  # Extract h1 headings for the table of contents
+  foreach ($line in $content -split "`r`n|`n") {
+    if ($line -match '^#\s+(.+)$') {
+      $text = $matches[1].Trim()
+      $base = ($text -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-+', '-' -replace '^-|-$', '').ToLower()
+      if ($anchorCount.ContainsKey($base)) {
+        $anchorCount[$base]++
+        $anchor = "$base-$($anchorCount[$base])"
+      } else {
+        $anchorCount[$base] = 1
+        $anchor = $base
+      }
+      $headings += @{Text = $text; Anchor = $anchor}
+    }
+  }
+
+  $mergedLines += ""
+  $mergedLines += $content
+  $mergedLines += ""
 }
 
-$lines -join "`r`n" | Set-Content $outputPath -Encoding UTF8
+# Build front matter + title + TOC
+$allLines = @()
+$allLines += "---"
+$allLines += "title: Elder Wilds"
+$allLines += "version: $version"
+$allLines += "date: $date"
+$allLines += "generated-by: merge-modlist.ps1"
+$allLines += "---"
+$allLines += ""
+$allLines += "# Elder Wilds"
+$allLines += ""
+$allLines += "> Version **$version** — $date"
+$allLines += ""
+$allLines += "## Table of Contents"
+$allLines += ""
+
+foreach ($h in $headings) {
+  $allLines += "- [$($h.Text)](#$($h.Anchor))"
+}
+
+$allLines += ""
+$allLines += $mergedLines
+
+$allLines -join "`r`n" | Set-Content $outputPath -Encoding UTF8
 Write-Host "Merged $($files.Count) files → $outputPath ($((Get-Item $outputPath).Length / 1KB -as [int]) KB)"
