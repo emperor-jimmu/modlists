@@ -28,6 +28,7 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 #### Optional Distant Detail Support
 
 - **HD LODs Textures SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3333)) → `Graphics - LOD & Distant Detail`
+- **Skyfall's Sleeping Hist Tree Overhaul - DynDOLOD Add-On** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169984)) — DynDOLOD billboard generation support for Skyfall's Sleeping Hist Tree. Required for correct distant-LOD display of the replaced tree when using DynDOLOD. → `Graphics - LOD & Distant Detail`
 - **Happy Little Trees DynDOLOD Optimizations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158587)) → `Graphics - LOD & Distant Detail`
 
 #### Core Workflow Dependencies

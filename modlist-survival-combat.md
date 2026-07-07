@@ -67,6 +67,8 @@ This subsection covers attrition that lingers beyond a single swing: drained sta
 ### Baseline
 
 - **Stress and Fear - A Dynamic Sanity System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116522)) — Main comparison for this subsection. Fits the section's actual job better than a second combat framework: getting battered in a ruin or barely surviving a predator attack should have emotional and pacing consequences that encourage rest, food, inns, and quieter recovery loops. Reddit signal is strong, and its design is intentionally light enough to create stories and pauses without constantly shouting over the rest of the list. → `Survival & Combat - Resources & Injuries`
+- **Light the Way - A Stress and Fear Add-On** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171532)) — Optional companion. Adds a light-flicker effect during high-stress moments, reinforcing the sanity system's feedback through environmental visuals. → `Survival & Combat - Resources & Injuries`
+- **Bathing in Skyrim - Renewed - Stress and Fear patch** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141564)) — Integration patch between Bathing in Skyrim - Renewed and Stress and Fear. Allows cleanliness to affect sanity (clean reduces stress, dirty increases it). Required if both mods are installed. → `Survival & Combat - Resources & Injuries`
 
 ### Alternatives
 

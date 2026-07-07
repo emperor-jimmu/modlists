@@ -185,6 +185,8 @@ This subsection owns how wind, atmospheric movement, and dynamic environmental e
 - **Realistic Boat Bobbing SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26080)) — Optional water-surface companion. Boats bob with idle animations that were shipped but never enabled in vanilla. Purely cosmetic. → `World Feel - Soundscapes`
 - **Realistic Boat Bobbing SE - BOS Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/88885)) — Extends boat-bobbing to mod-added boats. Requires `Base Object Swapper` and the base mod. → `World Feel - Soundscapes`
 - **R.A.S.S. - Rain Ash And Snow Shaders** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22745)) — Optional environmental-visual companion. Applies visible rain droplets, snow accumulation, ash particles, and frost shaders to player and NPCs during appropriate weather. Visual-only, no gameplay changes. 33K+ endorsements. → `World Feel - Soundscapes`
+- **Animated Icebergs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121420)) — Adds idle-bobbing and drifting animation to icebergs in the Sea of Ghosts. Visual-only, complements the animated-ship ecosystem. → `World Feel - Soundscapes`
+- **Animated Ice Floes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90634)) — Adds drifting ice-floe animations to frozen waterways and northern coasts. Visual-only, pairs with Animated Icebergs for a cohesive arctic water presentation. → `World Feel - Soundscapes`
 
 ### Notes
 

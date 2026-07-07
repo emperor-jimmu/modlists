@@ -18,6 +18,11 @@ This subsection decides how much day-to-day bodily upkeep `Elder Wilds` actually
 - **Last Seed - Survival Needs and Diseases** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56393)) — Heavier classic route if the list decides survival should become one of its dominant identities. → `Expanded Systems - Survival & Needs`
 - **Frostfall - Hypothermia Camping Survival** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/671)) with **Campfire - Complete Camping System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/667)) — Harsh wilderness route for maximum survival weight. → `Expanded Systems - Survival & Needs`
 
+### Campfire Companion (Optional Layer)
+
+- **Skills of the Wild - New Campfire Survival Skill Trees** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37693)) — Optional Campfire skill-tree expansion. Adds four new skill trees (Hunting, Foraging, Tracking, Camping) with progression tied to survival activities. v2.0 removed vanilla record edits for universal compatibility. Choose if the survival layer needs progression depth beyond needs maintenance. Requires Campfire. → `Expanded Systems - Survival & Needs`
+    - **Main file:** `Skills of the Wild` (the base mod). v2.0+ features full compatibility with any survival baseline. Use the main file.
+
 ### Notes
 
 - A heavy survival system can dominate pacing and crowd out other expanded systems.

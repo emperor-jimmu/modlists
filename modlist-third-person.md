@@ -104,6 +104,13 @@ Balanced modern route: Valhalla Combat as the gameplay-rules framework. Keep MCO
 ### Alternatives
 
 - **RaySense - Cover Animation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175504)) — Wall-flatten animation during third-person sneaking. Add only if stealth is a meaningful playstyle. → `Third-Person - Combat & Targeting`
+- **Fire Ignites Arrows (and Bolts)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118544)) — Adds arrow ignition logic. Arrows fired near fire sources (torches, campfires, fire spells) ignite and deal fire damage. Works with crossbows. Third-person visible feedback. → `Third-Person - Combat & Targeting`
+- **Poisoned Arrows and Bolts** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123585)) — Adds poison application logic for arrows and bolts. Player can dip ammunition into poison sources for temporary poison effects. Third-person visible feedback. Complements Fire Ignites Arrows. → `Third-Person - Combat & Targeting`
+
+### Advanced Collision Framework (Optional)
+
+- **Variadic Collision Dynamics** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/183892)) — SKSE plugin for runtime collision-capsule adjustments. Defines different collision presets per actor state (player, NPC, guard, camera, transformations). Affects third-person gameplay feel — tighter collisions for interiors, broader for combat, camera-aware radius. → `Third-Person - Camera & Movement`
+    - **Variadic Collision Dynamics - Resources** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/184110)) — Official preset pack with ready-to-use JSON configs for player, NPC, guard, camera, and creature presets. Extremely recommended alongside the base plugin. JSON-only, no ESP. → `Third-Person - Camera & Movement`
 
 ### Notes
 

@@ -134,6 +134,10 @@ Keep idle posture aligned with the Leviathan locomotion choice. Conservative rou
 
 - **Animated Interactions SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143798)) — Higher-fidelity pickups, looting, doors. Can coexist with Immersive Interactions only if overlapping actions are deliberately disabled. → `Animations - Interactions & Traversal`
 - **Take a Seat - New Sitting Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54193)) — OAR-based sitting variety for chairs/benches/beds. Add after Go to bed is proven. → `Animations - Interactions & Traversal`
+- **Immersive Hunting Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/96961)) — OAR-based hunting animations: skinning, carcass pickup, butchering, archery. Pairs with Simple Hunting Overhaul or Hunterborn. → `Animations - Interactions & Traversal`
+- **Immersive Carcass Carrying** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99867)) — OAR-based visible carcass-carrying on the player's back in third-person. Requires IED for positioning. SHO version available. → `Animations - Interactions & Traversal`
+- **Flute Animation Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69609)) — Fixes the broken vanilla flute-playing animation. Required for any bard gameplay mod. → `Animations - Interactions & Traversal`
+- **Witcher Flute** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144660)) — Mesh replacer for the in-game flute with a Witcher-style model. Cosmetic, no gameplay changes. Replaces the flute mesh. → `Animations - Interactions & Traversal`
 - **EVG Animated Traversal** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63232)) — Curated expansion; must justify marker coverage and complexity. → `Animations - Interactions & Traversal`
 - **Beginner Bard Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130776)) — Skill-based playing animations for Skyrim's Got Talent. Requires OAR. → `Animations - Interactions & Traversal`
 

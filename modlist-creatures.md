@@ -67,6 +67,7 @@ This subsection owns new creature types that add to the world's bestiary — Mih
 - **Edmond's Nature Series - BIRDS - My optimized textures SE by Xtudo** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123210)) — Optimized textures for the above. Pick **2K** main file. → `NPCs - Enemies & Creatures`
 - **Morrowind Creatures SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50435)) — Morrowind-flavored creatures in lore-appropriate biomes (Solstheim, ash areas, Dunmer regions). → `NPCs - Enemies & Creatures`
 - **Ogres SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/59363)) — High-damage melee threat in wilderness camps and remote mountain passes. → `NPCs - Enemies & Creatures`
+- **Sea Turtles - Mihail Monsters and Animals (SE-AE version)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122141)) — Ambient sea turtle additions along Skyrim's coasts and Solstheim. Non-hostile, adds wildlife texture to coastal travel. ESL-flagged, script-free. → `NPCs - Enemies & Creatures`
 
 #### Additional Species Follow-Ups
 

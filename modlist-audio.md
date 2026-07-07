@@ -14,6 +14,7 @@ This subsection owns the soundtrack direction: how much the list should expand o
 - **Melodies of Civilization - Skyrim Fan-Made Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37533)) — Locked civilization-music expansion. 20+ town, tavern, and settlement tracks making social spaces feel musically distinct from wilderness exploration. → `Audio - Music`
 - **Nyghtfall - Dark Fantasy Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39011)) — Complementary expansion. ~7 hours of 98 original dark-fantasy tracks with location-specific exploration, combat, dungeon, tavern, and town coverage. Best evaluated after baseline is in place. → `Audio - Music`
 - **Nordenhamr - Viking Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58080)) — Complementary expansion for Norse / Viking identity reinforcement on top of whatever Norse flavor `Yggdrasil` provides. → `Audio - Music`
+- **BA Bard Songs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47202)) — Bard song replacer with higher-quality recordings and additional bard songs. Replaces the vanilla bard song audio files. Compatible with Skyrim's Got Talent and other bard mods. → `Audio - Music`
 
 ### Alternatives
 
