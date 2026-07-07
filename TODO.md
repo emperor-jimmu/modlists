@@ -42,6 +42,7 @@
 39. Dynamic Crafting Animations - <https://www.nexusmods.com/skyrimspecialedition/mods/116422>
 40. Immersive Interactions - Eating ingredients and apply poison animations - <https://www.nexusmods.com/skyrimspecialedition/mods/117983>
 41. Animated Ingredients - <https://www.nexusmods.com/skyrimspecialedition/mods/72852>
+42.
 
 ## Review next
 
