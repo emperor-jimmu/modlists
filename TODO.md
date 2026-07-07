@@ -23,7 +23,25 @@
 21. Arcs Kitchen Redux 2k - 4k - <https://www.nexusmods.com/skyrimspecialedition/mods/111694>
 22. ElSopa - HD Iron Tools Redone SE - <https://www.nexusmods.com/skyrimspecialedition/mods/60495>
 23. Diverse BOS Kitchenware - <https://www.nexusmods.com/skyrimspecialedition/mods/112361>
-24.
+24. Arc's MeadBarrel Redux 2k-4k - <https://www.nexusmods.com/skyrimspecialedition/mods/111195>, Arc's Bloody MeadBarrel Redux - <https://www.nexusmods.com/skyrimspecialedition/mods/116447>, Distributed Arc's Mead Barrels - <https://www.nexusmods.com/skyrimspecialedition/mods/119006>
+25. Dynamic Things Alternative - Base Object Swapper - <https://www.nexusmods.com/skyrimspecialedition/mods/60741>
+26. Arcs Tankard Redux - <https://www.nexusmods.com/skyrimspecialedition/mods/112567>
+27. Divine Crusader Retexture SE - <https://www.nexusmods.com/skyrimspecialedition/mods/123738>
+28. Nordic Stonewalls - <https://www.nexusmods.com/skyrimspecialedition/mods/57686>
+28. Nordic Stonewall Terraces - <https://www.nexusmods.com/skyrimspecialedition/mods/115210>
+29. Nordic Stonewalls Complex Material and PBR - <https://www.nexusmods.com/skyrimspecialedition/mods/127188>
+30. Snazzy Wall Mounted Trophies - Base Object Swapper - <https://www.nexusmods.com/skyrimspecialedition/mods/115054>
+31. Fluffy Wall Mounted Dead Animals - <https://www.nexusmods.com/skyrimspecialedition/mods/90369>
+32. Wall mounted dead animals fixes - <https://www.nexusmods.com/skyrimspecialedition/mods/58511>
+33. Snazzy Diverse Carriages - Base Object Swapper - <https://www.nexusmods.com/skyrimspecialedition/mods/112041>
+34. Snazzy Diverse Carriages - Seasonal Patch - <https://www.nexusmods.com/skyrimspecialedition/mods/112210>
+35. Animated Filled Soul Gems - <https://www.nexusmods.com/skyrimspecialedition/mods/110638>
+36. NPCs Take Cover - Smarter Anti-Cheese AI - <https://www.nexusmods.com/skyrimspecialedition/mods/111890>
+37. EVG CLAMBER - Slope Animations - <https://www.nexusmods.com/skyrimspecialedition/mods/114753>
+38. Feminine EVG Clamber Stair Animations - <https://www.nexusmods.com/skyrimspecialedition/mods/148067>
+39. Dynamic Crafting Animations - <https://www.nexusmods.com/skyrimspecialedition/mods/116422>
+40. Immersive Interactions - Eating ingredients and apply poison animations - <https://www.nexusmods.com/skyrimspecialedition/mods/117983>
+41. Animated Ingredients - <https://www.nexusmods.com/skyrimspecialedition/mods/72852>
 
 ## Review next
 

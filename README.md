@@ -4,20 +4,20 @@ An opinionated modlist for Skyrim AE 1.6.1170 (Steam) built around five pillars:
 
 ## What This Is
 
-This repo is a markdown planning workspace for the Elder Wilds modlist. The numbered planning files each own one category of mod research and decision-making.
+This repo is a markdown planning workspace for the Elder Wilds modlist. All planning files live in the `guide/` directory, with each numbered file owning one category of mod research and decision-making.
 
 ## Quick Links
 
-| File                      | Purpose                                         |
-|---------------------------|-------------------------------------------------|
-| `modlist.md`              | **Canonical hub**: scope, section index, pillars|
-| `separators.md`           | MO2 separator layout reference                  |
-| `install.md`              | Setup and installation guide                    |
-| `TODO.md`                 | Scratch backlog and future research ideas       |
-| `tools/merge-modlist.ps1` | Merges section files into `rendered/elder-wilds.md` |
-| `rendered/elder-wilds.md` | Single-page rendered view of all section files  |
+| File                               | Purpose                                         |
+|-----------------------------------|-------------------------------------------------|
+| `guide/modlist.md`                | **Canonical hub**: scope, section index, pillars|
+| `guide/separators.md`             | MO2 separator layout reference                  |
+| `guide/install.md`                | Setup and installation guide                    |
+| `TODO.md`                         | Scratch backlog and future research ideas       |
+| `tools/merge-modlist.ps1`         | Merges section files into `rendered/elder-wilds.md` |
+| `rendered/elder-wilds.md`         | Single-page rendered view of all section files  |
 
-See [`modlist.md`](modlist.md) for the full planning section index and project scope.
+See [`guide/modlist.md`](guide/modlist.md) for the full planning section index and project scope.
 
 ## Target Build
 
