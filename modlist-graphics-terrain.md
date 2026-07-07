@@ -76,11 +76,10 @@ Flora is the ground-level readability layer between terrain materials and later 
 
 ### Environment-Plant Optional Additions
 
-- **Grumbledook Ivy** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151415)) — Extensive ivy overhaul via Base Object Swapper. Hand-sculpted meshes/textures with wind animations, 1K/2K/4K. Hard-requires BOS. Requires CS compatibility consideration if using PBR variant. → `Graphics - Terrain & Flora`
-- **Grumbledook Ivy - Additions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165945)) — Companion optimization/patch collection: removes unused vertices (halving mesh count), fixes collisions, adds seasonal support. → `Graphics - Terrain & Flora`
+- **High Quality Ivy Replacer - Base Object Swapper - Seasons of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113578)) — Replaces ivy meshes and textures with hand-sculpted low-poly (1000 tris max) versions. Supports BOS for additional variety, Seasons of Skyrim, and includes patches for Nordic Stonewalls, High Poly Project, Lux Via, and JK's Fort Dawnguard. Animated and static versions available via FOMOD. Also replaces Reach Fern. No performance cost.
 - **Grumbledook Swordferns - Optional PBR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163949)) — New meshes and textures for swordferns with optional PBR, snowy variants, extra variation via BOS. Hard-requires BOS; PBR variant requires CS. → `Graphics - Terrain & Flora`
 
-Treat the Grumbledook series as visual polish, not a baseline requirement. They layer cleanly on the existing flora stack via BOS (no cell-record edits). Evaluate after main grass, 3D plant replacer, and tree choices are locked.
+Treat the Grumbledook Swordferns and High Quality Ivy Replacer as visual polish, not a baseline requirement. They layer cleanly on the existing flora stack via BOS (no cell-record edits). Evaluate after main grass, 3D plant replacer, and tree choices are locked.
 
 ### Notes
 
