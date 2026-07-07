@@ -2,69 +2,76 @@
 
 **MO2 Separator:** `Expanded Systems` → `Expanded Systems - Survival & Needs`
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section. See also: `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`.
+All mods in this section belong to the `Expanded Systems - Survival & Needs` MO2 separator unless noted.
 
-## Survival Systems → `Expanded Systems - Survival & Needs`
+Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
-This subsection decides how much day-to-day bodily upkeep `Elder Wilds` actually wants: enough hunger, fatigue, cold, weather, disease, and wilderness friction to support roleplay and travel texture, or a heavier survival framework that becomes one of the list's central systems. This section owns the baseline survival direction; `modlist-survival-combat.md` still owns later survival-compatibility, difficulty-pressure, and balance interactions.
+---
+
+## Survival Systems
+
+How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, weather, disease, and wilderness friction for roleplay and travel texture, or a heavier survival framework as a central system. This section owns the baseline survival direction; → `Survival & Combat` owns later balance and difficulty interactions.
 
 ### Baseline
 
-- **Starfrost - A Survival Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97536)) — Main baseline. Fits the Simonrim-aligned progression family that the rest of `modlist-expanded-systems.md` already leans toward. → `Expanded Systems - Survival & Needs`
+- **Starfrost - A Survival Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97536)) — Main baseline. Fits the Simonrim-aligned progression family.
 
 ### Alternatives
 
-- **SunHelm Survival and needs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39414)) — Practical comparison route if `Starfrost` proves too tightly tuned or too dependent on the Simonrim ecosystem. → `Expanded Systems - Survival & Needs`
-- **Last Seed - Survival Needs and Diseases** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56393)) — Heavier classic route if the list decides survival should become one of its dominant identities. → `Expanded Systems - Survival & Needs`
-- **Frostfall - Hypothermia Camping Survival** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/671)) with **Campfire - Complete Camping System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/667)) — Harsh wilderness route for maximum survival weight. → `Expanded Systems - Survival & Needs`
+- **SunHelm Survival and needs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39414)) — Practical comparison if `Starfrost` proves too tightly tuned.
+- **Last Seed - Survival Needs and Diseases** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56393)) — Heavier classic route if survival should become a dominant identity.
+- **Frostfall - Hypothermia Camping Survival** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/671)) + **Campfire - Complete Camping System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/667)) — Harsh wilderness route.
 
 ### Campfire Companion (Optional Layer)
 
-- **Skills of the Wild - New Campfire Survival Skill Trees** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37693)) — Optional Campfire skill-tree expansion. Adds four new skill trees (Hunting, Foraging, Tracking, Camping) with progression tied to survival activities. v2.0 removed vanilla record edits for universal compatibility. Choose if the survival layer needs progression depth beyond needs maintenance. Requires Campfire. → `Expanded Systems - Survival & Needs`
-    - **Main file:** `Skills of the Wild` (the base mod). v2.0+ features full compatibility with any survival baseline. Use the main file.
+- **Skills of the Wild - New Campfire Survival Skill Trees** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37693)) — Four new skill trees (Hunting, Foraging, Tracking, Camping) with progression tied to survival activities. v2.0 removed vanilla record edits for universal compatibility. Requires **Campfire**.
+    - **Main file:** `Skills of the Wild`. v2.0+ features full compatibility with any survival baseline.
 
 ### Notes
 
 - A heavy survival system can dominate pacing and crowd out other expanded systems.
-- A very light survival setup can undershoot the immersive-travel pillar if later world-scale and downtime decisions expect more texture.
-- Cold, disease, food, sleep, and camping systems can blur together and make ownership between survival, cooking, roleplay, and religion harder to read.
-- If the survival baseline fights the intended third-person travel rhythm, the result may feel dutiful rather than immersive.
-- Judge survival primarily on travel texture, downtime rhythm, and world feel rather than on maximum hardship alone.
+- A very light setup can undershoot the immersive-travel pillar if later downtime decisions expect more texture.
+- Cold, disease, food, sleep, and camping can blur together between survival, cooking, roleplay, and religion ownership.
+- Judge survival primarily on travel texture, downtime rhythm, and world feel rather than maximum hardship.
 
-## Roleplay Upkeep And Hygiene → `Expanded Systems - Survival & Needs`
+---
 
-This subsection owns the lighter day-to-day body-maintenance layer that sits between full survival needs and pure visual flavor. The goal is to add believable downtime rituals and world-living texture without turning hygiene into a second dominant survival framework.
+## Roleplay Upkeep And Hygiene
+
+Lighter day-to-day body-maintenance layer between full survival needs and pure visual flavor. Adds believable downtime rituals without turning hygiene into a second dominant survival framework.
 
 ### Baseline
 
-- **Bathing in Skyrim - Renewed** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135288)) — Leading hygiene-and-downtime route. Fits the living-the-world pillar better than older bathing mods because it is actively maintained, heavily customizable, and technically modernized around SKSE plus Papyrus-extender dependencies. Treat as a roleplay-support system, not as the main survival baseline. → `Expanded Systems - Survival & Needs`
+- **Bathing in Skyrim - Renewed** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135288)) — Leading hygiene-and-downtime route. Actively maintained, heavily customizable, modernized around SKSE + Papyrus-extender. Treat as roleplay-support, not main survival baseline.
 
 ### Alternatives
 
-- **Minimalist route** — Leave hygiene implied through inns, rivers, and roleplay without a dedicated system.
+- **Minimalist route** — Leave hygiene implied through inns, rivers, and roleplay.
 
 ### Notes
 
 - Hygiene can become fussy busywork if configured too aggressively.
-- `Bathing in Skyrim - Renewed` touches equipment handling, overlays, follower participation, and optional integrations — needs stricter discipline than a simple immersion add-on. → `Expanded Systems - Survival & Needs`
-- Only hard runtime requirements should be treated as mandatory for the baseline install.
-- For target Steam runtime `1.6.1170`, the listed `Backported Extended ESL Support` requirement does not apply and should not be installed. → `Expanded Systems - Survival & Needs`
+- `Bathing in Skyrim - Renewed` touches equipment handling, overlays, follower participation, and optional integrations — needs stricter discipline than a simple immersion add-on.
+- Only hard runtime requirements should be treated as mandatory.
+- For Steam runtime `1.6.1170`, the `Backported Extended ESL Support` requirement does not apply and should not be installed.
 
-## Death Alternative System → `Expanded Systems - Survival & Needs`
+---
 
-This subsection owns what happens when the player falls in combat: whether death is the only outcome, or whether a modern death-alternative system can create memorable setbacks and emergent storytelling instead of a reload screen. The goal is to add consequence and narrative texture to defeat without making every lost fight a permanent character-ending event.
+## Death Alternative System
+
+What happens when the player falls in combat. Goal: add consequence and narrative texture to defeat without making every lost fight permanent.
 
 ### Baseline
 
-- **Shadow of Skyrim - Nemesis and Alternative Death System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72924)) — Locked death-alternative baseline. Upon defeat, the player respawns at the nearest safe location with debuffs and the enemy who defeated them gains a name, buffs, and persistent world presence. Defeating that nemesis later restores lost progress. Creates personal antagonists from organic gameplay. Fits the "modern mechanics" and "living the world" pillars. → `Expanded Systems - Survival & Needs`
+- **Shadow of Skyrim - Nemesis and Alternative Death System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72924)) — Locked baseline. Upon defeat, respawn at the nearest safe location with debuffs; the defeating enemy gains a name, buffs, and persistent world presence. Defeating that nemesis later restores lost progress. Creates personal antagonists from organic gameplay.
 
 ### Alternatives
 
-- **Discipline-first route** — Rely on the vanilla death-and-reload loop.
+- **Discipline-first route** — Vanilla death-and-reload loop.
 
 ### Notes
 
-- Death-alternative systems interact with every combat mod in the list. Verify `Shadow of Skyrim` does not conflict with `Valhalla Combat`, `Precision`, `TK Dodge`, or any combat-animation mod from `modlist-animations.md`. → `Expanded Systems - Survival & Needs`
-- The nemesis system adds persistent NPCs and effects; verify save file size remains reasonable over long playthroughs with multiple nemeses active. → `Expanded Systems - Survival & Needs`
-- Death-alternative mods can create edge cases with scripted-death sequences in quests. Check compatibility with `Alternate Perspective`, `Wyrmstooth`, `The Forgotten City`, and major quest mods from `modlist-world-content.md`. → `Expanded Systems - Survival & Needs`
-- Confirm compatibility with Steam `1.6.1170` and the SKSE plugin stack from `modlist-foundations.md`. → `Expanded Systems - Survival & Needs`
+- Death-alternative systems interact with every combat mod. Verify compatibility with `Valhalla Combat`, `Precision`, `TK Dodge`, and combat-animation mods from → `Animations`.
+- The nemesis system adds persistent NPCs and effects; verify save file size remains reasonable over long playthroughs.
+- Death-alternative mods can create edge cases with scripted-death sequences in quests. Check compatibility with `Alternate Perspective`, `Wyrmstooth`, `The Forgotten City`, and major quest mods from → `World Content`.
+- Confirm compatibility with Steam `1.6.1170` and the SKSE plugin stack from → `Foundations`.

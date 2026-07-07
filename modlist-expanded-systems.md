@@ -10,13 +10,13 @@ The system is designed to be evaluated in order — progression choices (races, 
 
 ## Sub-Files
 
-| Area | File | Separator | Topics |
-|------|------|-----------|--------|
-| Character & Progression | [`Character & Progression`](modlist-expanded-character.md) | `Expanded Systems - Character & Progression` | Alternate starts, races, standing stones, traits, religion, vampire/werewolf/shouts |
-| Magic & Perks | [`Magic & Perks`](modlist-expanded-magic.md) | `Expanded Systems - Magic & Perks` | Perk overhauls, magic expansion, stealth/detection |
-| Survival & Needs | [`Survival & Needs`](modlist-expanded-survival.md) | `Expanded Systems - Survival & Needs` | Survival frameworks, hygiene, death alternative |
-| Crafting & Economy | [`Crafting & Economy`](modlist-expanded-crafting.md) | `Expanded Systems - Crafting & Economy` | Alchemy, cooking, smithing, enchanting, economy, artifacts, weapons, armor, clothing |
-| Followers & Reputation | [`Followers & Reputation`](modlist-expanded-followers.md) | `Expanded Systems - Followers & Reputation` | Crime/reputation, follower frameworks, romance/marriage |
+| Area                    | File                                                       | Separator                                    | Topics                                                                               |
+|-------------------------|------------------------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------------|
+| Character & Progression | [`Character & Progression`](modlist-expanded-character.md) | `Expanded Systems - Character & Progression` | Alternate starts, races, standing stones, traits, religion, vampire/werewolf/shouts  |
+| Magic & Perks           | [`Magic & Perks`](modlist-expanded-magic.md)               | `Expanded Systems - Magic & Perks`           | Perk overhauls, magic expansion, stealth/detection                                   |
+| Survival & Needs        | [`Survival & Needs`](modlist-expanded-survival.md)         | `Expanded Systems - Survival & Needs`        | Survival frameworks, hygiene, death alternative                                      |
+| Crafting & Economy      | [`Crafting & Economy`](modlist-expanded-crafting.md)       | `Expanded Systems - Crafting & Economy`      | Alchemy, cooking, smithing, enchanting, economy, artifacts, weapons, armor, clothing |
+| Followers & Reputation  | [`Followers & Reputation`](modlist-expanded-followers.md)  | `Expanded Systems - Followers & Reputation`  | Crime/reputation, follower frameworks, romance/marriage                              |
 
 ## Key Principles
 

@@ -2,96 +2,80 @@
 
 **MO2 Separator:** `Voicing`
 
-## Framework Overview → `Voicing`
+All mods in this section belong to the `Voicing` MO2 separator.
 
-Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Generator) together give Skyrim's player character a voice: DBVO is the runtime framework that plays audio for the player's dialogue lines, and MCVO Generator scans the full load order and produces the data files that drive voice generation. Combined with AI voice synthesis (xVASynth or ElevenLabs), the player character speaks every dialogue line across the entire modlist. This section covers both variants: using pre-made voice packs for a drop-in solution, and generating custom voice packs for those who want a specific voice for their character.
+---
+
+## Framework Overview
+
+Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Generator) together give Skyrim's player character a voice. DBVO is the runtime framework; MCVO Generator scans the full load order and produces the data files for voice generation. Combined with AI voice synthesis (xVASynth or ElevenLabs), the player character speaks every dialogue line.
 
 ### Baseline
-
-- **Dragonborn Voice Over** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84329)) — The SKSE-based framework. Intercepts player dialogue responses and plays .wav files from an installed voice pack. MCM allows switching between voice packs per character. Required by MCVO Generator as a master. → `Voicing`
-- **Pre-made voice packs (drop-in, no generation)** — Download a completed voice pack and install it as a mod in MO2. **Bella Voice DBVO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89810)) is the most popular female pack with the broadest mod coverage. **DBVO - Allison Voice Pack** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126843)) is a British female alternative. Pre-made male packs are less common. → `Voicing`
-- **Recommended actress voices (female PC):** **Jennifer Hale** (Bella Voice DBVO uses spliced voice lines from Jennifer Hale's extensive VO catalog as its source material). Her range across Mass Effect (female Shepard), Metroid (Samus), and Baldur's Gate fits the grounded-but-authoritative tone the modlist targets. → `Voicing`
-- **Recommended actor voices (male PC):** **Travis Willingham** (MCVO Generator + xVASynth pipeline can use voice models based on his performance as Thor / Guile / Roy Mustang). His commanding baritone works well for a male Dragonborn with an authoritative presence. → `Voicing`
+- **Dragonborn Voice Over** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84329)) — SKSE-based framework. Intercepts player dialogue and plays `.wav` files from installed voice pack. MCM allows switching packs per character. Required by MCVO Generator as a master.
+- **Pre-made voice packs (drop-in):**
+    - **Bella Voice DBVO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89810)) — Most popular female pack, broadest mod coverage.
+    - **DBVO - Allison Voice Pack** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126843)) — British female alternative.
+    - Pre-made male packs are less common.
+- **Recommended actress:** Jennifer Hale (Bella Voice DBVO uses spliced Hale VO catalog).
+- **Recommended actor:** Travis Willingham (MCVO Generator + xVASynth pipeline).
 
 ### Alternatives
-
-- **MCVO Generator + xVASynth** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86737) / [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44184)) — Free custom-generation path. MCVO Generator scans the full load order and produces `DBVO-All.esp` and `DBVO-All.csv`. xVASynth batch-generates .wav files using PyTorch-based voice models (default: Geralt of Rivia). Quality is noticeably synthetic. The simplest custom path for male voices or when pre-made packs don't match the desired voice. Must be re-run whenever the load order changes. → `Voicing`
-- **ElevenLabs + DBVO Voice Pack Creator** — Premium custom-generation path. Higher quality, more natural-sounding output. Requires an ElevenLabs paid account and the DBVO Voice Pack Creator tool (Discord-only, not on Nexus). Recommended for players who want a specific voice identity not available in pre-made packs. → `Voicing`
+- **MCVO Generator + xVASynth** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86737) / [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44184)) — Free custom-generation path. Quality is noticeably synthetic. Must re-run when load order changes.
+- **ElevenLabs + DBVO Voice Pack Creator** — Premium path. Higher quality, more natural output. Requires paid account and Discord-only tool.
 
 ### Notes
-
-- DBVO requires ConsoleUtilSSE NG, JContainers SE, SkyUI, and SKSE64 (all already in the foundations stack).
-- DBVO must load after any mod that edits `dialoguemenu.swf`. Place it after the UI stack in the left pane. → `Voicing`
-- Long file paths can crash the game on startup (Windows 255-char limit). Keep the install path short. → `Voicing`
-- Pre-made voice packs may not cover every mod. Uncovered lines fall back to subtitles.
-- ElevenLabs packs must comply with the service's terms of service.
-- MCVO Generator last updated March 2023; still works on 1.6.1170 but has no active development. → `Voicing`
+- DBVO requires ConsoleUtilSSE NG, JContainers SE, SkyUI, and SKSE64 (all in foundations stack).
+- DBVO must load after any mod editing `dialoguemenu.swf`. Place after the UI stack in the left pane.
+- Windows 255-char path limit can crash on startup — keep install path short.
+- Pre-made packs may not cover every mod. Uncovered lines fall back to subtitles.
+- MCVO Generator last updated March 2023; still works on 1.6.1170 but no active development.
 - xVASynth batch processing can take 2-3 hours for 50,000+ lines.
-- DBVO respects Skyrim's race/gender voice types. Primary targets are `MaleEvenToned` and `FemaleEvenToned`.
 
-## Dual Voice Pack Strategy → `Voicing`
+---
 
-Since Elder Wilds supports both male and female player characters, two complete voice packs (one male, one female) must be generated or sourced. They are installed as separate MO2 mods and swapped either via MO2 profile or DBVO MCM.
+## Dual Voice Pack Strategy
 
-### Baseline
+Two complete voice packs (one male, one female) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO MCM.
 
-- **Option A: Pre-Made Packs (Recommended)** — Install a female pack (Bella or Allison) and generate a male pack via MCVO Generator + xVASynth (Geralt default).
+- **Option A: Pre-Made Packs (Recommended)** — Female pack (Bella/Allison) + generate male via MCVO Generator + xVASynth (Geralt default).
+- **Option B: ElevenLabs Both** — Run tool twice with two voice IDs. Package as separate mods.
+- **Option C: MCVO + xVASynth Both** — Run once with male model, once with female model.
 
-### Alternatives
+---
 
-- **Option B: ElevenLabs Both** — Run the DBVO Voice Pack Creator tool twice with two different voice IDs. Package as separate MO2 mods.
-- **Option C: MCVO + xVASynth Both** — Run the MCVO pipeline once with a male model and once with a female xVASynth model. Keep output mods separate.
-
-### Notes
-
-- Reserve Options B and C for players who want a specific voice identity not available in pre-made packs.
-
-## MCVO Generator + xVASynth Pipeline → `Voicing`
-
-The standard workflow for generating a voice pack from the full load order using free tools.
+## MCVO Generator + xVASynth Pipeline
 
 ### Before Starting
-
-- Install DBVO and its dependencies. DBVO must be enabled and its .esp in the load order before running MCVO Generator.
-- Build the full modlist in MO2 with the final load order.
-- Install xVASynth and the desired voice models. For the default male voice, download the Geralt of Rivia voice pack (Witcher 3 Nexus 5676).
-- Download MCVO Generator from Nexus and extract it to a convenient location (e.g., `C:\Modding\Tools\MCVO Generator`). → `Voicing`
+- Install DBVO and dependencies. DBVO must be enabled and in the load order before running MCVO Generator.
+- Build the full modlist in MO2 with final load order.
+- Install xVASynth and desired voice models (default male: Geralt of Rivia pack from Witcher 3 Nexus 5676).
+- Download MCVO Generator from Nexus, extract to convenient location.
 
 ### Generating the Voice Pack
-
-1. Run MCVO Generator (`DBVO-All.exe`). It produces `DBVO-All.esp` in `Data\` and `DBVO-All.csv` next to the .exe. Add the .esp to MO2 as a new mod.
-2. Open xVASynth in Batch Mode, load `DBVO-All.csv`, select the voice model, click **Generate**.
-3. xVASynth outputs .wav files under `Data\Sound\Voice\Dragonborn Voice Over\`. Create an MO2 mod from this folder structure.
-4. Launch the game through SKSE, open the DBVO MCM, select the generated voice pack, and test a few dialogue lines.
+1. Run MCVO Generator (`DBVO-All.exe`). Produces `DBVO-All.esp` in `Data\` and `DBVO-All.csv`. Add the .esp to MO2 as new mod.
+2. Open xVASynth in Batch Mode, load `DBVO-All.csv`, select voice model, click **Generate**.
+3. xVASynth outputs `.wav` files under `Data\Sound\Voice\Dragonborn Voice Over\`. Create MO2 mod from this folder structure.
+4. Launch game through SKSE, open DBVO MCM, select voice pack, test dialogue lines.
 
 ### Generating The Second Set (Male/Female)
+Repeat steps 2-4 with different voice model. Create separate MO2 mod. Enable one at a time.
 
-Repeat steps 2-4 with a different voice model. Create a separate MO2 mod. Enable one at a time.
+---
 
-## ElevenLabs Custom Voice Pack → `Voicing`
-
-Generate higher-quality audio via ElevenLabs as an alternative to xVASynth.
+## ElevenLabs Custom Voice Pack
 
 ### Prerequisites
-
-- ElevenLabs account with a paid plan (Creator $22/mo. recommended for full load order).
-- Access to the DBVO Voice Pack Creator tool (DBVO author's Discord server, `#tool-download` channel). → `Voicing`
-- An ElevenLabs API key.
+- ElevenLabs paid account (Creator $22/mo. recommended for full load order).
+- DBVO Voice Pack Creator tool (DBVO author's Discord, `#tool-download` channel).
+- ElevenLabs API key.
 
 ### Voice Selection
+Browse ElevenLabs Voice Library or use Voice Design. Get voice ID via `GET https://api.elevenlabs.io/v1/voices`.
 
-Browse the ElevenLabs Voice Library for a pre-made voice, or use Voice Design to create one. Get the voice ID via `GET https://api.elevenlabs.io/v1/voices` with your API key.
-
-### Generating The Voice Pack
-
+### Generating
 1. Run MCVO Generator to produce `DBVO-All.csv`.
-2. Use the DBVO Voice Pack Creator tool: point it at the CSV, enter your API key and target voice ID, run the tool.
-3. Package the output folder structure as an MO2 mod and enable it.
-
-### Generating Male + Female Sets
-
-Pick two voice IDs, run the tool twice, create two MO2 mods. Enable only the one matching the current character.
+2. Use DBVO Voice Pack Creator: point at CSV, enter API key and voice ID, run.
+3. Package output as MO2 mod.
 
 ### Character Quota Planning
-
-The Creator plan (100,000 characters/month) covers ~15,000-20,000 dialogue lines. A full 50,000+ line load order may need the Pro plan ($99/month, 500,000 characters) or multiple months. Use the free tier (10,000 characters/month) for testing only.
+Creator plan (100,000 chars/month) covers ~15,000-20,000 lines. Full 50,000+ line load order may need Pro plan ($99/month, 500,000 chars) or multiple months. Use free tier (10,000 chars/month) for testing only.

@@ -1,309 +1,191 @@
 # Modernized UI
 
-**MO2 Separator:** `UI` → `UI - Framework & HUD`, `UI - Inventory & Items`, `UI - Map, Dialogue, Menus`
+**MO2 Separators:** `UI - Framework & HUD`, `UI - Inventory & Items`, `UI - Map, Dialogue, Menus`
 
-## UI Framework Prerequisites → `UI - Framework & HUD`
+All mods in this section belong to one of the three UI separators as noted per subsection.
 
-The base menu and interface framework that the rest of the UI stack builds on — infrastructure decisions are made here without collapsing HUD styling, inventory redesign, map replacements, or controller support into one giant UI choice.
+---
+
+## UI Framework Prerequisites → separator: `UI - Framework & HUD`
+
+The base menu and interface framework the rest of the UI stack builds on.
 
 ### Baseline
-
-- **SkyUI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12604)) — Non-negotiable baseline for the entire UI stack. → `UI - Framework & HUD`
-- **Oathvein UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160916)) — Locked visual direction. Grim-dark presentation matches the project tone; cleaner dependency chain than Norden UI (no Extended UI requirement); general-purpose dark fantasy fits Skyrim's identity better than Vel'dun UI's focused Morrowind-inspired Dunmer theming. → `UI - Framework & HUD`
-- **UIExtensions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17561)) — Support infrastructure for later mods, not a competing UI identity. → `UI - Framework & HUD`
-- **Constructible Object Custom Keyword System (COCKS)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81409)) — Keyword-based category infrastructure for crafting-menu readability. Locked alongside framework picks. → `UI - Framework & HUD`
-- **MCM Helper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53000)) — Persists MCM settings across saves and new games. Hard dependency of True Directional Movement, Compass Navigation Overhaul, and others. → `UI - Framework & HUD`
-- **Stay At The System Page NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76927)) — Keeps the System page open after loading a save so the player can continue navigating without reopening the menu. Most noticeable on gamepad. → `UI - Framework & HUD`
-- **ImGui Icons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114790)) — Icon font resource for Dear ImGui-based mods. Required dependency for Dialogue History and any other ImGui-based UI mods. → `UI - Framework & HUD`
+- **SkyUI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12604)) — Non-negotiable baseline.
+- **Oathvein UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160916)) — Locked visual direction. Grim-dark presentation matches the project tone; cleaner dependency chain than Norden UI.
+- **UIExtensions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17561)) — Support infrastructure, not competing UI identity.
+- **Constructible Object Custom Keyword System (COCKS)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81409)) — Crafting-menu category infrastructure.
+- **MCM Helper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53000)) — Persists MCM settings across saves. Hard dependency of TDM, CNO, and others.
+- **Stay At The System Page NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76927)) — Keeps System page open after loading a save. Most noticeable on gamepad.
+- **ImGui Icons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114790)) — Icon font resource for ImGui-based mods (Dialogue History, etc.).
 
 ### Alternatives
+- **Norden UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/166086)) — Modern-rustic by Nithog, but depends on Extended UI (no official SE port).
+- **Vel'dun UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176230)) — Dunmer-themed by Nithog; too narrow a fit for Elder Wilds.
+- **Prisma UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148718)) — Web-UI framework replacing SkyUI. Incompatible with Oathvein UI and UIExtensions mods.
 
-- **Norden UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/166086)) — Modern-rustic visual overhaul by the same author (Nithog), but depends on Extended UI which has no official SE port. → `UI - Framework & HUD`
-- **Vel'dun UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176230)) — Morrowind-inspired dark-elven UI by Nithog; too narrow a thematic fit for Elder Wilds. → `UI - Framework & HUD`
-- **Prisma UI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148718)) — Next-gen web-UI framework that replaces SkyUI rather than extending it. Incompatible with Oathvein UI and most UIExtensions-based mods. Documented for projects pursuing the framework-replacement path. → `UI - Framework & HUD`
+---
 
-### Notes
+## HUD Overhaul → separator: `UI - Framework & HUD`
 
-- Visual-theme choices get mistaken for infrastructure requirements too early.
-- A highly stylized framework can look distinctive while weakening readability in ordinary play.
-- TrueHUD is scoped to combat-feedback gameplay/UI boundary, not a framework decision.
-
-## HUD Overhaul → `UI - Framework & HUD`
-
-The main on-screen HUD layer: health, stamina, magicka, target readability, and permanent interface structure during ordinary play.
+Health, stamina, magicka, target readability, and permanent interface structure during ordinary play.
 
 ### Baseline
-
-- **SkyHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/463)) — Baseline HUD layout framework. Handles widget positioning, visibility control, and style consistency across screen sizes. → `UI - Framework & HUD`
-- **TrueHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62775)) — Dedicated combat-feedback companion by the same author as True Directional Movement. Provides actor info bars, boss bars, player widgets, and recent-loot logging. Feature-complete (last updated December 2023). → `UI - Framework & HUD`
-- **Casting Bar** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80455)) — Focused cast-and-draw timing companion for spells, shouts, and bow draw. Solves a real readability gap without becoming another full HUD framework. → `UI - Framework & HUD`
-- **Floating Damage** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14332)) — Optional combat-feedback overlay for damage numbers above hit targets. Useful for build-testing but potentially at odds with minimal-HUD presentation. Install only after playtesting confirms acceptable visual noise. → `UI - Framework & HUD`
-- **QuickLoot IE - A QuickLoot EE Fork** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120075)) — Container and corpse loot window that opens on interact rather than requiring the full inventory menu. Fork of QuickLoot EE with improved controller support, configurable placement, and better third-person readability. Essential for third-person gamepad parity — no more menu navigation for routine loot. → `UI - Framework & HUD`
-    - **Main file:** `QuickLoot IE` (SKSE plugin). One main file; FOMOD with placement presets.
-- **Oxygen Meter 2** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64532)) — Swimming HUD widget that displays a breath meter when underwater. SKSE plugin, configurable position and opacity. Essential for underwater exploration (Depths of Skyrim, More Underwater Treasures) where drowning awareness matters. → `UI - Framework & HUD`
-    - **Main file:** `Oxygen Meter 2` (the base plugin).
-    - **Oxygen Meter 2 - Lung Shaped** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171910)) — Cosmetic replacer changing the breath meter to a lung-shaped icon. → `UI - Framework & HUD`
-    - **Oxygen Meter 2 - Fixes and Additions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171916)) — Bugfixes and feature tweaks for the base mod. → `UI - Framework & HUD`
-- **Detection Meter** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63057)) — Stealth HUD widget. Displays a visible detection meter when sneaking, showing how close the player is to being detected. Configurable position. Pairs with Realistic AI Detection (RAID) for full stealth feedback. → `UI - Framework & HUD`
-    - **Main file:** `Detection Meter` (the base plugin).
-    - **Detection Meter - AE Support** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77350)) — AE compatibility update for the base mod. Required for 1.6.1170. → `UI - Framework & HUD`
-- **STB Widgets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136148)) — Lightweight modular widget pack for Skyrim SE/AE. Provides configurable on-screen widgets (clock, time, compass-free direction indicator, stat bars). SKSE plugin with MCM. Complements the SkyHUD + TrueHUD baseline without replacing it. → `UI - Framework & HUD`
-- **Follower Stats** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159406)) — MCM-based follower stat tracking. Displays combat stats, skill levels, kill counts, and attribute readouts for active followers. Pairs with Nether's Follower Framework. → `UI - Framework & HUD`
-- **Tween Menu Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143275)) — Main-menu and tween-menu (loading screen) visual overhaul. Replaces the static main menu with dynamic backgrounds, improved tween-menu transitions, and cleaner layout. Complements the Oathvein UI direction. → `UI - Framework & HUD`
-    - **Main file:** `Tween Menu Overhaul` (SWF replacer).
-    - **Tween Menu Overhaul Improved** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155036)) — Updated version with additional tween-menu scenes and improved transitions. Install instead of the original. → `UI - Framework & HUD`
-- **RUMINATE - Frost and Snow - Main Menu Video Pack** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160831)) — Main menu video replacer with frost-and-snow themed cinematic. Fits the grim-dark Nordic exploration tone. Chosen over Fantasy Main Menu Video Replacer (169600) for tonal consistency. → `UI - Framework & HUD`
-- **Skeuomorphism of Skyrim - Immersive Plaque Reading Interface** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119849)) — Optional plaque-reading UI overhaul. Replaces the dialogue-box plaque interface with a 3D in-world plaque model that the player reads directly. Supports Dark Brotherhood Tenets, High Hrothgar Way Shrines, Labyrinthian plaques, Vahlok's Tomb tablets, and built-in patches for Wyrmstooth, Midwood Isle, Bruma, Vigilant, and Sirenroot. Requires Base Object Swapper. ESL-flagged. → `UI - Framework & HUD`
-- **Dynamic Location Pop-ups** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153122)) — Location discovery notification. Displays a modern pop-up banner when discovering new locations, showing the location name on-screen. Complements the exploration and discovery pillars. → `UI - Framework & HUD`
-- **Complete Controller Setup** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99978)) — SKSE-based controller configuration tool. Provides button-remapping, radial-menu tuning, and third-person camera preset profiles specifically designed for gamepad play. Supports per-profile saves. Completes the third-person gamepad parity pillar by closing controller-configuration gaps the vanilla game cannot address. → `UI - Framework & HUD`
+- **SkyHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/463)) — Baseline layout framework: widget positioning, visibility, style consistency.
+- **TrueHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62775)) — Combat-feedback: actor info bars, boss bars, player widgets, recent-loot logging. Same author as TDM.
+- **Casting Bar** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80455)) — Cast/draw timing for spells, shouts, and bow draw.
+- **Floating Damage** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14332)) — Optional combat-feedback overlay. Install only after confirming acceptable visual noise.
+- **QuickLoot IE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120075)) — Container/corpse loot window on interact. Improved controller support, third-person readability. FOMOD with placement presets.
+- **Oxygen Meter 2** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64532)) — Breath meter when underwater. Configurable position/opacity.
+    - **Oxygen Meter 2 - Lung Shaped** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171910)) — Cosmetic lung-shaped icon.
+    - **Oxygen Meter 2 - Fixes and Additions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171916)) — Bugfixes and feature tweaks.
+- **Detection Meter** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63057)) — Stealth detection meter. Pairs with RAID.
+    - **Detection Meter - AE Support** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77350)) — Required for 1.6.1170.
+- **STB Widgets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136148)) — Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.
+- **Follower Stats** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159406)) — MCM-based follower stat tracking. Pairs with Nether's.
+- **Tween Menu Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143275)) — Main-menu and loading-screen visual overhaul.
+    - **Tween Menu Overhaul Improved** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155036)) — Updated version with additional scenes. Install instead of original.
+- **RUMINATE - Frost and Snow - Main Menu Video Pack** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160831)) — Frost-and-snow themed main menu cinematic.
+- **Skeuomorphism of Skyrim - Immersive Plaque Reading Interface** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119849)) — 3D in-world plaque model. Requires BOS. ESL-flagged.
+- **Dynamic Location Pop-ups** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153122)) — Location discovery notification banner.
+- **Complete Controller Setup** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99978)) — SKSE-based controller config: remapping, radial-menus, camera profiles for gamepad.
 
 ### Alternatives
+- **Stats Tracker Menu - STM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/180653)) — Brand new (May 2026), very low community signal. Test before locking.
 
-- **Stats Tracker Menu - STM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/180653)) — Stats-overlay companion. Brand new (v1.0.1, May 2026) with very low community signal. Lock only after playtesting confirms no conflict with SkyHUD widget positioning or TrueHUD combat feedback. → `UI - Framework & HUD`
+---
 
-### Notes
-
-- Combat-feedback widgets can take over the whole HUD philosophy if not kept scoped.
-- Avoid stacking too many narrow overlays until the screen feels busier instead of clearer.
-- Compass density, marker philosophy, and minimal-HUD experimentation are deferred to the dedicated subsection.
-
-## Inventory And Item Card Improvements → `UI - Inventory & Items`
-
-Item lists, sorting, weight/value scanning, and item-card readability during ordinary looting and inventory management.
+## Inventory And Item Card Improvements → separator: `UI - Inventory & Items`
 
 ### Baseline
-
-- **moreHUD SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12688)) — Mandatory baseline. Broader item-information layer outside pure inventory lists. → `UI - Inventory & Items`
-- **moreHUD Inventory Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18619)) — Mandatory baseline alongside moreHUD SE. Extends readability into inventory views used constantly during normal play. → `UI - Inventory & Items`
-- **Inventory Interface Information Injector** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85702)) — Lightweight SKSE plugin by M8r98a4f2 (same author as moreHUD). Adds value, weight, and stat-per-weight columns to inventory views without touching SkyUI layout or making invalidation calls. → `UI - Inventory & Items`
-- **I4 Weapon Icons Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/106432)) — Replaces all weapon category icons with hand-crafted icons by komegaki. Covers 30+ categories including mod-added types. Depends on Inventory Interface Information Injector. → `UI - Inventory & Items`
-- **I4 Armor Icons Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119824)) — Replaces armor icons with higher-fidelity hand-crafted icons by komegaki. Covers light armor, heavy armor, clothing, shields, and jewelry. → `UI - Inventory & Items`
-- **I4 Shout Icons Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107334)) — Replaces shout and dragon language icon textures with higher-fidelity versions by komegaki. → `UI - Inventory & Items`
-- **The Handy Icon Collection Collective (THICC)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90508)) — Large-scale icon resource with thousands of high-fidelity icons. Optional icon variety on top of the I4 family — zero plugin overhead, purely additive. → `UI - Inventory & Items`
-- **Favorites Menu Effects Description** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143532)) — Adds effect descriptions to items in the favorites/quick-access menu. Shows potion effects, enchantment summaries, and spell descriptions without opening the full inventory. SKSE plugin, no ESP. Essential for gamepad play where tooltip inspection is slower. → `UI - Inventory & Items`
-- **B.O.O.B.I.E.S (aka Immersive Icons)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89241)) — Icon overhaul for SkyUI. Replaces vanilla item icons with higher-quality, more distinctive icons for weapons, armor, potions, ingredients, scrolls, and miscellaneous items. 28K+ endorsements, actively maintained. → `UI - Inventory & Items`
-    - **Main file:** `B.O.O.B.I.E.S` (the base mod). Use the FOMOD installer to select resolution (2K recommended) and coverage.
-    - **B.O.O.B.I.E.S (aka Immersive Icons) - POTIONS** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163838)) — Dedicated potion bottle icon add-on with distinctive shapes and colors matching the potion effect. Install after the base mod. → `UI - Inventory & Items`
-- **Phenomenally Enriched and Nuanced Ingredients for SkyUI (P.E.N.I.S. for B.O.O.B.I.E.S.)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90526)) — Ingredient icon pack for B.O.O.B.I.E.S. Replaces all ingredient icons with hand-crafted variants matching the B.O.O.B.I.E.S style. → `UI - Inventory & Items`
-- **Aura's Scrumptious Supplement (A.S.S. for B.O.O.B.I.E.S.)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89823)) — Food and drink icon add-on for B.O.O.B.I.E.S. Replaces food, drink, and cooking-ingredient icons to match the B.O.O.B.I.E.S style. → `UI - Inventory & Items`
-- **Rotols More Icons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113657)) — Additional icon coverage for items B.O.O.B.I.E.S does not cover: quest items, DLC-specific gear, and mod-added equipment. Designed as a companion to B.O.O.B.I.E.S. → `UI - Inventory & Items`
+- **moreHUD SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12688)) — Mandatory. Broader item-information layer.
+- **moreHUD Inventory Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18619)) — Mandatory. Extends readability into inventory views.
+- **Inventory Interface Information Injector** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85702)) — Value/weight/stat-per-weight columns. Same author as moreHUD.
+- **I4 Weapon Icons Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/106432)) — 30+ weapon category icons. Depends on III.
+- **I4 Armor Icons Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119824))
+- **I4 Shout Icons Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107334))
+- **The Handy Icon Collection Collective (THICC)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90508)) — Thousands of high-fidelity icons. Additive to I4 family.
+- **Favorites Menu Effects Description** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143532)) — Effect descriptions in favorites menu. SKSE plugin, no ESP. Essential for gamepad.
+- **B.O.O.B.I.E.S (aka Immersive Icons)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89241)) — Icon overhaul for SkyUI. 28K+ endorsements. FOMOD: 2K recommended.
+    - **B.O.O.B.I.E.S - POTIONS** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163838)) — Dedicated potion bottle icons.
+- **P.E.N.I.S. for B.O.O.B.I.E.S.** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90526)) — Ingredient icon pack.
+- **A.S.S. for B.O.O.B.I.E.S.** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89823)) — Food & drink icon pack.
+- **Rotols More Icons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113657)) — Additional coverage for items B.O.O.B.I.E.S doesn't cover.
 
 ### Alternatives
+- **SkyUI Item Card Fixes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29116)) — Cleaner item-card presentation.
+- **Aura's Inventory Tweaks** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68557)) — Stronger sorting and icon structure.
+- **Weapon Stat Viewer V2** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127249)) — Weapon-stat overlay. Lock only if rendered cleanly.
+- **Enchanted Icon Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174246)) — Depends on Dynamic Inventory Icon Injector ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174136)).
 
-- **SkyUI Item Card Fixes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29116)) — Cleaner, narrower comparison if the main pain point is item-card presentation rather than more information. → `UI - Inventory & Items`
-- **Aura's Inventory Tweaks** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68557)) — Organizational comparison if the final UI direction needs stronger sorting and icon structure. → `UI - Inventory & Items`
-- **Weapon Stat Viewer V2** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127249)) — Weapon-stat overlay companion. Surfaces weapon damage numbers in real time for comparing without opening menus. Lock only if SkyUI + Oathvein UI renders it cleanly. → `UI - Inventory & Items`
-- **Enchanted Icon Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174246)) — Adds distinct icons for learned, artifact, and learnable enchantments. Depends on Dynamic Inventory Icon Injector. Evaluate after core inventory stack is stable. → `UI - Inventory & Items`
+---
 
-### Notes
-
-- Inventory readability can be over-solved by stacking too many overlapping micro-fixes; more information can slow scanning instead of speeding it up.
-- Weapon Stat Viewer V2 (447 endorsements) is relatively new — verify it does not conflict with the chosen UI framework before treating it as locked.
-- Dynamic Inventory Icon Injector ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174136)) is the mandatory utility dependency if Enchanted Icon Overhaul is selected.
-
-## Map Improvements → `UI - Map, Dialogue, Menus`
-
-World-map framework and the map art layered on top of it — deliberate travel planning and geographic readability.
+## Map Improvements → separator: `UI - Map, Dialogue, Menus`
 
 ### Baseline
-
-- **Flat World Map Framework (FWMF)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29932)) — Non-negotiable foundation for the map direction. → `UI - Map, Dialogue, Menus`
-- **Local Map Upgrade** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129756)) — Local-map companion for interior and close-range navigation. → `UI - Map, Dialogue, Menus`
-- **Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53788)) — Strongest first-pass paper-map art. Looks purposeful without making the map harder to read. → `UI - Map, Dialogue, Menus`
+- **Flat World Map Framework (FWMF)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29932)) — Non-negotiable map foundation.
+- **Local Map Upgrade** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129756)) — Local-map for interior/close-range navigation.
+- **Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53788)) — Strongest first-pass paper-map art.
 
 ### Alternatives
+- **Immersive Paper Map (3rd Edition)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54710))
+- **Skyrim Paper Map by FreelanceCartography for FWMF** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78995))
+- **Legendary Map** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157397)) — Hand-painted world-map replacer.
+- **HD Local Map** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74722)) — Higher-res local map textures.
 
-- **Immersive Paper Map (3rd Edition)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54710)) — Moodier, more stylized paper-map comparison. → `UI - Map, Dialogue, Menus`
-- **Skyrim Paper Map by FreelanceCartography for FWMF** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78995)) — More explicitly cartographic comparison. → `UI - Map, Dialogue, Menus`
-- **Legendary Map** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157397)) — High-fidelity hand-painted world-map replacer. Replaces the vanilla world-map texture with a richly detailed painted map. Compatible with FWMF. → `UI - Map, Dialogue, Menus`
-- **HD Local Map** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74722)) — Higher-resolution local map textures for interior and exterior cells. Improves local-map readability over vanilla at 4K. Complements Local Map Upgrade. → `UI - Map, Dialogue, Menus`
+---
 
-### Notes
-
-- Easy to choose map art for style while losing navigational readability.
-- FWMF is the framework; the key question is which world-map art sits on top of it.
-- Local-map improvements and world-map overhaul solve different problems — keep them distinct.
-
-## Magic And Journal Improvements → `UI - Map, Dialogue, Menus`
-
-Reading comfort, text-heavy menu flow, and spell-adjacent menu usability outside the world map.
+## Magic And Journal Improvements → separator: `UI - Map, Dialogue, Menus`
 
 ### Baseline
+- **Convenient Reading UI - SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50202)) — Reading comfort for normal play.
+- **Wider MCM Menu for SkyUI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22825)) — Support fix for cramped config menus.
+- **Modern Wait Menu** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117661)) — Clock-face interface showing time, weather preview. Gamepad-friendly. SKSE plugin, no ESP.
+- **Completionist - Skyrim Completion Tracker (NG)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46358)) — MCM-based quest/item/location/book/shout completion tracker. Run the Automated GUI Patcher.
+    - **Completionist Addons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112406)) — Mod-added content tracking.
 
-- **Convenient Reading UI - SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50202)) — Start here. Improves the reading-comfort part most likely to be felt in normal play without overcommitting to speculative spell-menu surgery. → `UI - Map, Dialogue, Menus`
-- **Wider MCM Menu for SkyUI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22825)) — Practical support fix if the expanding UI and gameplay stack makes configuration menus feel cramped. → `UI - Map, Dialogue, Menus`
-- **Modern Wait Menu** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117661)) — Replaces the vanilla wait-menu slider with a modern clock-face interface showing time-of-day, hour selection, and weather preview. SKSE plugin, no ESP. Gamepad-friendly radial selection makes it a strong fit for the third-person parity pillar. → `UI - Map, Dialogue, Menus`
-- **Completionist - Skyrim Completion Tracker (NG)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46358)) — MCM-based quest, item, location, book, and shout completion tracker. Automatically tracks discovered vs. undiscovered content across Skyrim, DLC, and mod-added content via its patcher framework. 6K+ endorsements, actively maintained (v5.0.0.3, April 2026). → `UI - Map, Dialogue, Menus`
-    - **Main file:** `Completionist` (the base mod). Install the main file and run the Automated GUI Patcher.
-    - **Completionist Addons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112406)) — Adds tracking support for popular mod-added content. Install after the base mod. → `UI - Map, Dialogue, Menus`
+---
 
-### Notes
-
-- MCM support fixes can be mistaken for broader journal or spell-menu design answers.
-- Revisit spell-menu-specific improvements only if playtesting reveals a clear unresolved pain point.
-
-## Dialogue UI Improvements → `UI - Map, Dialogue, Menus`
-
-Conversation readability, response selection clarity, and the overall feel of moment-to-moment dialogue interaction.
+## Dialogue UI Improvements → separator: `UI - Map, Dialogue, Menus`
 
 ### Baseline
-
-- **Better Dialogue Controls** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1429)) — Strongest first-pass pick. Addresses the most fundamental dialogue friction without forcing a large stylistic commitment. → `UI - Map, Dialogue, Menus`
-- **Better MessageBox Controls** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1428)) — Natural companion if the same interaction awkwardness shows up in message boxes. → `UI - Map, Dialogue, Menus`
-- **Dialogue History** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114238)) — Dialogue readability companion. Adds a scrollable history log of past dialogue lines, accessible via configurable keybind. Essential for gamepad play where dialogue can advance faster than comfortable reading. → `UI - Map, Dialogue, Menus`
+- **Better Dialogue Controls** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1429)) — First-pass dialogue friction fix.
+- **Better MessageBox Controls** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1428)) — Same for message boxes.
+- **Dialogue History** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114238)) — Scrollable dialogue log. Essential for gamepad.
+- **Improved Alternate Conversation Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68210)) — Dialogue camera baseline. Test for CS letterbox conflict.
 
 ### Alternatives
+- **Dialogue Interface ReShaped** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46546)) — Visual dialogue flow.
+- **Convenient Dialogue UI - SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57943))
+- **Smart Talk (Dialogue Menu Enhancer)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/161500)) — Highlights quest options, reorders choices, gamepad-friendly skip. 5.5K endorsements.
 
-- **Dialogue Interface ReShaped** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46546)) — Presentation-forward route if testing shows visual dialogue flow is the bigger problem. → `UI - Map, Dialogue, Menus`
-- **Convenient Dialogue UI - SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57943)) — Cleaner dialogue presentation route, same conditions as above. → `UI - Map, Dialogue, Menus`
-- **Smart Talk (Dialogue Menu Enhancer)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/161500)) — Dialogue UI enhancer. Highlights quest-related options, reorders dialogue choices, adds natural pauses, and supports gamepad-friendly skip. SKSE plugin, no ESP. Complements Better Dialogue Controls by improving the content and flow of dialogue rather than just its input handling. 5.5K endorsements. → `UI - Map, Dialogue, Menus`
-    - **Main file:** `Smart Talk` (SKSE plugin + optional MCM plugin). One main file.
+---
 
-### Baseline Additions (From TODO)
-
-- **Improved Alternate Conversation Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68210)) — Dialogue camera baseline. Improves the third-person conversation camera with better framing, zoom, and letterbox support. v1.2.0, SKSE plugin, 12 files available. Test for Community Shaders letterbox conflict — the mod's own letterbox settings require a game restart on change and may overlap with Community Shaders cinematic effects. → `UI - Map, Dialogue, Menus`
-
-### Notes
-
-- Subtitle safety and unvoiced-dialogue handling belong in `modlist-foundations.md` (Targeted Bugfix Mods) with `Fuz Ro D-oh - Silent Voice`.
-- Visual novelty can be mistaken for actual dialogue usability.
-- IACC's letterbox feature and Community Shaders potential overlap should be verified during playtesting before locking. If conflict emerges, run IACC without the letterbox setting or disable Community Shaders' cinematic letterbox.
-
-## Controller-Friendly UI Support → `UI - Framework & HUD`
-
-How comfortable the UI stack feels on a gamepad once the base framework, HUD, inventory, map, journal, and dialogue layers are in place.
+## Controller-Friendly UI Support → separator: `UI - Framework & HUD`
 
 ### Baseline
-
-- **Skyrim SE Controller Interface Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1147)) — Strongest first-pass baseline. Improves controller friendliness without forcing the stack to reorganize around a larger system. → `UI - Framework & HUD`
-- **Show Player In Menus** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122648)) — Locked third-person-UI companion. Renders the player character in inventory, magic, and crafting menus for real-time gear change previews. Essential for the full third-person gamepad parity pillar. → `UI - Framework & HUD`
+- **Skyrim SE Controller Interface Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1147))
+- **Show Player In Menus** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122648)) — Renders player character in menus for gear previews. Essential for third-person parity.
 
 ### Alternatives
+- **Gamepad Plus Plus** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27007)) — Broader controller-input answer.
+- **Wheeler - Quick Action Wheel** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97345)) — Radial interaction layer.
+    - **WHEELER - Refined** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167380)) — Updated visuals, better controller support.
 
-- **Gamepad Plus Plus** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27007)) — Broader comparison if testing shows the list needs a more assertive controller-input answer. → `UI - Framework & HUD`
-- **Wheeler - Quick Action Wheel Of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97345)) — Deliberate quick-access branch if controller play benefits from a radial interaction layer. → `UI - Framework & HUD`
-    - **WHEELER - Refined** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167380)) — UI polish and preset pack for Wheeler. Updated visuals, better controller support, and optimized preset layouts. Install on top of the base mod. → `UI - Framework & HUD`
+---
 
-### Notes
+## UI Scaling For Ultrawide And High Resolution → separator: `UI - Framework & HUD`
 
-- Dialogue readability, inventory clarity, and map/journal ownership are owned by their own subsections; this section answers controller comfort across those layers, not replacing their decisions.
-- Controller awkwardness can be over-solved by stacking too many overlapping input layers.
+- **Sovngarde - Mist's Font Replacer** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/386)) — Text readability for 16:9 4K HDR. Prefer Bold V8.9 first.
+- **Complete Widescreen Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1778)) — Secondary for ultrawide layouts.
 
-## UI Scaling For Ultrawide And High Resolution → `UI - Framework & HUD`
+---
 
-How well the chosen UI stack holds up on large modern displays — 16:9 4K HDR is the actual baseline target, with ultrawide as secondary.
+## Compass, Markers, And Minimal HUD → separator: `UI - Framework & HUD`
 
 ### Baseline
-
-- **Sovngarde - Mist's Font Replacer** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/386)) — Stronger first-pass candidate. Directly addresses large-display text readability without pretending the main problem is ultrawide support. → `UI - Framework & HUD`
+- **Compass Navigation Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74484)) — First-pass navigational layer.
+- **CoMAP - Common Marker Addon Project** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56123)) — Marker consistency across the FWMF ecosystem.
 
 ### Alternatives
+- **Immersive HUD - iHUD SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12440)) — Minimal-HUD branch.
+- **MiniMap** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/49490)) — Very optional. Last updated May 2021; occasional crash reports on 1.6.1170.
 
-- **Complete Widescreen Fix for Vanilla and SkyUI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1778)) — Secondary compatibility branch if the list later needs ultrawide layouts. → `UI - Framework & HUD`
+---
 
-### Notes
+## Crafting Menu Improvements → separator: `UI - Inventory & Items`
 
-- Ultrawide support can be treated as the default problem when the actual baseline display is 16:9 4K.
-- Font or scaling adjustments can fight the chosen Oathvein UI tone if not judged in context.
-- Keep the chosen Oathvein UI direction, SkyHUD, inventory improvements, and dialogue/map changes restrained enough that the UI remains readable at 4K without immediately stacking scaling fixes.
+- **COCKS** — See Framework Prerequisites above. Directly improves the Constructible Object Menu.
+- **SkyUI - Vanilla Crafting menu** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18717)) — Fallback for vanilla-style split categories.
 
-## Compass, Markers, And Minimal HUD Options → `UI - Framework & HUD`
+---
 
-How much navigational information stays on screen during ordinary play: compass behavior, marker density, and whether the HUD fades away unless needed.
+## Loading Screens → separator: `UI - Map, Dialogue, Menus`
 
-### Baseline
+- **The Elder Scrolls Legends - Loading Screens** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37929)) — Locked baseline. 110 lore-friendly Legends artworks. Install at 100% frequency in 16:9 with Fixed Height border. At 100% frequency, vanilla lore tips are suppressed.
 
-- **Compass Navigation Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74484)) — Strongest first-pass baseline. Answers the actual navigational layer directly instead of jumping to a hide-the-HUD philosophy. → `UI - Framework & HUD`
-- **CoMAP - Common Marker Addon Project** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56123)) — Natural marker-side companion for cleaner marker consistency across the FWMF paper-map ecosystem. → `UI - Framework & HUD`
+---
 
-### Alternatives
+## Optional HUD → separator: `UI - Framework & HUD`
 
-- **Immersive HUD - iHUD Special Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12440)) — Deliberate minimal-HUD branch. Only add if testing shows reduced on-screen persistence materially improves exploration tone. → `UI - Framework & HUD`
-- **MiniMap** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/49490)) — Very optional. Minimaps reduce the need to read the environment (at odds with the grim-dark exploration pillar); low endorsement count (7,761), last updated May 2021, with occasional crash reports on 1.6.1170. Test before locking. → `UI - Framework & HUD`
+- **Skyrim Party Sheet - Follower and Player HUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167538)) — Persistent overlay for player attributes and follower info. v2.7 (June 2026). Research before installing — verify no conflicts with TrueHUD, Oathvein, or Nether's.
 
-### Notes
-
-- Minimalism itself can be mistaken for better usability.
-- Stacking a minimap alongside Compass Navigation Overhaul creates redundant navigation information on screen.
-- Existing ownership boundaries with SkyHUD (HUD layout), FWMF (map), and TrueHUD (gameplay feedback layer) remain intact.
-
-## Crafting Menu Improvements → `UI - Inventory & Items`
-
-The UI side of crafting: category clarity, menu scan speed, recipe browsing, and whether crafting stations feel readable and organized during normal use.
-
-### Baseline
-
-- **Constructible Object Custom Keyword System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81409)) — Strongest first-pass baseline. Directly improves the Constructible Object Menu and is built to support a broader modded crafting ecosystem. → `UI - Inventory & Items`
-
-### Alternatives
-
-- **SkyUI - Vanilla Crafting menu** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18717)) — Meaningful fallback only if the project prefers vanilla-style split categories and is not using a heavier recipe footprint that benefits from stronger category handling. → `UI - Inventory & Items`
-
-### Notes
-
-- Keep this subsection focused on menu structure and readability; crafting balance, enchanting rules, and NPC-crafting philosophy belong in `modlist-expanded-systems.md`.
-- A vanilla-style fallback can pair poorly with a large recipe footprint.
-
-## Loading Screens → `UI - Map, Dialogue, Menus`
-
-What players see during area transitions — purely cosmetic, no scripts or worldspace edits.
-
-### Baseline
-
-- **The Elder Scrolls Legends - Loading Screens** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37929)) — Locked baseline. 110 high-quality lore-friendly artworks from TES: Legends. Purely asset-based with zero compatibility concerns — no vanilla records touched. Install at 100% frequency in 16:9 with Fixed Height border setting. → `UI - Map, Dialogue, Menus`
-
-### Notes
-
-- At 100% frequency, vanilla lore loading tips are suppressed. The text variant includes lore-friendly descriptions alongside the art.
-- Some Legends artworks are wider than 16:9; the Fixed Height border setting crops sides but no critical content is lost.
-- The text-free variant removes Legends card-game UI text for players who want only the artwork.
-
-## Accessibility And Readability Improvements → `UI - Framework & HUD`
-
-Final pass on general UI legibility and comfort: readable text, sane menu density, configuration clarity, and ease of use over long sessions.
-
-### Baseline
-
-- **Sovngarde - Mist's Font Replacer** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/386)) — Strongest first-pass accessibility candidate for the 16:9 4K HDR target. Prefer Bold V8.9 first, fall back to the light variant only if bold feels too heavy in the Oathvein UI direction. → `UI - Framework & HUD`
-- **Wider MCM Menu for SkyUI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22825)) — Narrower support answer when the main friction lives in configuration readability rather than ordinary in-game interface. → `UI - Framework & HUD`
-
-### Notes
-
-- Start with the discipline-first route (current SkyUI + Oathvein UI stack) and apply targeted readability support only where playtesting shows a real weakness.
-- A final accessibility pass should not relitigate decisions earlier UI subsections already settled.
-- Subtitle safety and unvoiced-dialogue handling stay in `modlist-foundations.md` (Targeted Bugfix Mods) with Fuz Ro D-oh - Silent Voice.
-
-## Optional HUD → `UI - Framework & HUD`
-
-Experimental or unproven UI mods tracked for potential inclusion if playtesting validates them.
-
-### Baseline
-
-- **Skyrim Party Sheet - Follower and Player HUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167538)) — Persistent HUD overlay for player attributes and active follower info. Active development (v2.7, updated June 2026) with 1,084 endorsements. Keep as "very optional — research before installing." → `UI - Framework & HUD`
-
-### Notes
-
-- Do not include in the locked modlist until playtesting confirms no conflict with TrueHUD widget positioning, Oathvein UI visual styling, or Nether's Follower Framework.
-- Overlapping HUD widgets can create visual conflicts with TrueHUD, SkyHUD, and Floating Damage.
-- If accepted later, place in HUD Overhaul subsection as a companion to TrueHUD for follower-status visibility.
+---
 
 ## Candidate TODO Additions
 
-### Framework & System UI → `UI - Framework & HUD`
+### Framework & System UI → separator: `UI - Framework & HUD`
+- `Character Menu SE` — character appearance menu enhancer
+- `Kill feed` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179053))
+- `SKSE Menu Framework` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120352))
+- `Auto Input Switch` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54309))
 
-- `Character Menu SE` — character appearance menu enhancer → `UI - Framework & HUD`
-- `Kill feed` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179053)) — enemy kill notification feed → `UI - Framework & HUD`
-- `SKSE Menu Framework` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120352)) — menu framework SKSE plugin → `UI - Framework & HUD`
-- `Auto Input Switch` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54309)) — auto-detect controller vs KB+M input → `UI - Framework & HUD`
+### Inventory → separator: `UI - Inventory & Items`
+- `Unread books glow redone` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138451))
+- `Show Player In Inventory` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178689))
 
-### Inventory → `UI - Inventory & Items`
-
-- NOTE: MoreHUD covers this? `Unread books glow redone` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138451)) — unread book visual highlight → `UI - Inventory & Items`
-- `Show Player In Inventory` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178689)) — player model in inventory menu → `UI - Inventory & Items`
-
-### HUD, Map & Dialogue → `UI - Map, Dialogue, Menus`
-
-- `Pastel Map Markers (?)` — optional map marker recolor → `UI - Map, Dialogue, Menus`
-- `Smart Talk (Dialogue Menu Enhancer)` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171449)) — dialogue menu categorization → `UI - Map, Dialogue, Menus`
-- `Quest Journal Overhaul` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172488)) — quest journal visual overhaul → `UI - Map, Dialogue, Menus`
-- `Even Better Quest Objectives SE - EBQO SE` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159)) — quest objective clarity → `UI - Map, Dialogue, Menus`
+### HUD, Map & Dialogue → separator: `UI - Map, Dialogue, Menus`
+- `Pastel Map Markers`
+- `Smart Talk (Dialogue Menu Enhancer)` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171449))
+- `Quest Journal Overhaul` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172488))
+- `Even Better Quest Objectives SE` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159))
