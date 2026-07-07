@@ -53,7 +53,6 @@ This subsection owns new creature types that add to the world's bestiary — Mih
 
 #### Baseline (Mihail Creature Additions)
 
-- **Seagulls - Mihail Monsters and Animals (SE-AE version)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148472)) — Ambient coastal birds. ESL-flagged, no combat involvement. → `NPCs - Enemies & Creatures`
 - **Farm Geese - Mihail Monsters and Animals (SE-AE)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/156242)) — Ambient farm birds. ESL-flagged. → `NPCs - Enemies & Creatures`
 - **Sewer Rats - Mihail Monsters and Animals (SE-AE version)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137591)) — Disease-carrying giant rats in sewers, caves, and ruins. ESL-flagged. → `NPCs - Enemies & Creatures`
 - **Giant Bats and Rats - Mihail Monsters and Animals (SE-AE version)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/140134)) — Larger bat and rat variants for dungeons and caves. ESL-flagged. → `NPCs - Enemies & Creatures`
@@ -64,6 +63,8 @@ This subsection owns new creature types that add to the world's bestiary — Mih
 
 #### Baseline (Non-Mihail Creature Additions)
 
+- **Edmond's Nature Series - BIRDS** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123068)) — Comprehensive bird overhaul: ravens, pheasants, seagulls (405 placements, day/night cycle), enhanced bone hawks, ghost ravens, bird/bat flock encounters, hawk nests. All birds killable/lootable. ESL-flagged. Replaces Seagulls - Mihail (do not stack). → `NPCs - Enemies & Creatures`
+- **Edmond's Nature Series - BIRDS - My optimized textures SE by Xtudo** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123210)) — Optimized textures for the above. Pick **2K** main file. → `NPCs - Enemies & Creatures`
 - **Morrowind Creatures SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50435)) — Morrowind-flavored creatures in lore-appropriate biomes (Solstheim, ash areas, Dunmer regions). → `NPCs - Enemies & Creatures`
 - **Ogres SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/59363)) — High-damage melee threat in wilderness camps and remote mountain passes. → `NPCs - Enemies & Creatures`
 
