@@ -10,7 +10,7 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 
 ### Body Bases And Skins
 
-**⏱ Install order:** CBBE → CBBE 3BA → HIMBO → RaceMenu → BnP skins → preset.
+**⏱ Install order:** CBBE → CBBE 3BA → HIMBO → RaceMenu → BnP skins → female preset → male preset → overlay/freckle packs.
 
 #### Female Body
 
@@ -28,7 +28,11 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 - **RaceMenu SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29624)) — Character creation framework.
 - **High Poly Head 1.4 SE** — Official Google Drive mirror: <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi>
     - If using, pair with `Expressive Facegen Morphs SE`, `Expressive Facial Animation -Female Edition-`, and `Expressive Facial Animation -Male Edition-`.
-- **FitnessGoal CBBE 3BA Preset** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69681)) — Chosen female preset.
+- **SlimFantasy - 3BAv2 Body Preset** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119145)) — Chosen female Bodyslide preset. Slim/lean silhouette matching a natural dancer physique — small bust, narrow hips, straight figure.
+- **HIMBO Preset - Chadborn** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155757)) — Chosen male Bodyslide preset. Heavily-muscular build for the player character (Arnold/Viper-type physique at weight 100, leaner at lower weights).
+- **Lovely Makeup - Racemenu Overlays** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94271)) — Makeup overlay collection for RaceMenu.
+- **Lovely Makeup 2 - Racemenu Overlays** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/102335)) — Additional makeup overlay collection.
+- **Koralina's Freckles and Moles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62508)) — Freckle and mole overlays for RaceMenu.
 
 ### Face Mesh Branch Notes
 
@@ -54,7 +58,7 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 2. Install CBBE 3BA (3BBB)
 3. Install HIMBO
 4. Install BodySlide and Outfit Studio
-5. Install FitnessGoal preset
+5. Install SlimFantasy preset
 6. Install OBody NG and all body-variety preset packs (before first BodySlide build)
 7. Install selected skin textures (if the skin package expects a specific layout)
 8. Install armor/clothing packs needing body refits (before first BodySlide build)
@@ -64,15 +68,15 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 
 - Run BodySlide through MO2, not from the game folder.
 - Set output path to the dedicated `BodySlide Output` mod location.
-- **Female meshes:** Select the `FitnessGoal CBBE 3BA 3BBB` preset (not plain CBBE).
-- **Male meshes:** Choose the intended HIMBO preset before batch building.
+- **Female meshes:** Select the `SlimFantasy` preset (not plain CBBE).
+- **Male meshes:** Select the `Chadborn` preset before batch building.
 - Use **Batch Build** once the baseline armor/clothing set is stable enough to avoid constant rebuilds.
 - If multiple body variants appear, choose the option matching active CBBE 3BA and HIMBO ecosystems.
 - Rebuild after installing or replacing major armor packs, outfit conversions, or body-shape presets.
 
 #### 3BA And Preset-Specific Notes
 
-- The chosen female body path is CBBE NSFW + CBBE 3BA + FitnessGoal preset.
+- The chosen female body path is CBBE NSFW + CBBE 3BA + SlimFantasy preset.
 - Do not batch build female outfits against plain CBBE if the actual in-list preset requires 3BA/3BBB.
 - When armor mods offer both CBBE and 3BA/3BBB options, choose 3BA/3BBB.
 - Keep the female body stack consistent across base, preset, and outfit conversions.
@@ -108,7 +112,7 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 - OBody NG requires building all included presets in BodySlide with `Create Morphs` ticked — larger batch build.
 - Every additional preset pack increases BodySlide build time. Keep pack size intentional.
 - OBody NG works with CBBE 3BA and HIMBO but may need config adjustment for other body mods.
-- FitnessGoal preset remains the player-character default; OBody distributes additional presets to NPCs only.
+- SlimFantasy preset remains the player-character default; OBody distributes additional presets to NPCs only.
 
 ---
 
