@@ -32,36 +32,70 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 
 ---
 
-## Race, Standing Stone, And Progression Overhauls
+## Race Overhauls
 
-How strongly race traits and standing stones shape long-term character identity. Choose one clear progression philosophy before perks, magic, alchemy, and religion build on top of it.
+How race traits shape long-term character identity. Choose before perks, magic, and religion build on top of it.
 
 | Mod | Type | Notes |
 | --- | --- | --- |
-| [Aetherius — Race Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26686) + [Evenstar — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/41256) | Baseline | Balanced modern route. |
-| [Morningstar — Minimalistic Races](https://www.nexusmods.com/skyrimspecialedition/mods/22298) + Evenstar | Alternative | Restrained fallback. |
-| [Imperious — Races of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1315) + [Andromeda — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/14910) | Alternative | High-expression comparison. |
+| [Aetherius — Race Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26686) | Baseline | Balanced modern route; pairs with Evenstar. |
+| [Morningstar — Minimalistic Races](https://www.nexusmods.com/skyrimspecialedition/mods/22298) | Alternative | Restrained fallback. |
+| [Imperious — Races of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1315) | Alternative | High-expression comparison; pairs with Andromeda. |
 
-### Roleplaying in Skyrim Companion Series
+### Roleplaying in Skyrim Companion Series: Race
+
+> All RiS mods require SKSE. Check individual mod pages for specific dependencies.
+
+| Mod | Purpose | Requirements |
+| --- | --- | --- |
+| [RiS — Races](https://www.nexusmods.com/skyrimspecialedition/mods/149544) | Biological race overhaul | KID, SPID |
+| [RiS — Lineages](https://www.nexusmods.com/skyrimspecialedition/mods/174443) | 4 subraces per vanilla race | KID, SPID, Papyrus Ini Manipulator |
+
+### Notes
+
+- Race overhauls can quietly pre-decide too much of the character-building experience.
+- A very expressive route can push optimization-heavy play even if the project wants immersive tone.
+- A very light route can undershoot if later systems assume stronger identity hooks.
+
+---
+
+## Standing Stones
+
+How standing stones and birthsigns provide ongoing passive identity. Judge together with race pick so the progression baseline stays coherent.
+
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Evenstar — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/41256) | Baseline | Balanced modern route; pairs with Aetherius. |
+| [Mundus — A Standing Stone Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/33411) | Alternative | Simonrim route; pairs with Aetherius. |
+| [Andromeda — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/14910) | Alternative | High-expression comparison; pairs with Imperious. |
+
+### Roleplaying in Skyrim Companion Series: Standing Stones
+
+> All RiS mods require SKSE. Check individual mod pages for specific dependencies.
+
+| Mod | Purpose | Requirements |
+| --- | --- | --- |
+| [RiS — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/157053) | 13 stones overhaul | aTweaks and Utilities, KID, Perk Entry Point Extender, SkyUI |
+| [RiS — Birthsigns](https://www.nexusmods.com/skyrimspecialedition/mods/154610) | Monthly waxing/waning birthsign effects | KID, Papyrus Ini Manipulator |
+
+### Notes
+
+- Stone and birthsign overhauls can quietly pre-decide too much of the character-building experience.
+- Judge race and stone picks as a pair so the progression baseline stays coherent.
+
+---
+
+## Character Progression Mechanics
+
+Supporting progression layers that govern how stats and skills grow over time.
 
 > All RiS mods require SKSE. Check individual mod pages for specific dependencies.
 
 | Mod | Purpose | Requirements |
 | --- | --- | --- |
 | [RiS — Classic Attributes](https://www.nexusmods.com/skyrimspecialedition/mods/151476) | 10 classic RPG attributes | Actor Value Generator |
-| [RiS — Races](https://www.nexusmods.com/skyrimspecialedition/mods/149544) | Biological race overhaul | KID, SPID |
-| [RiS — Lineages](https://www.nexusmods.com/skyrimspecialedition/mods/174443) | 4 subraces per vanilla race | KID, SPID, Papyrus Ini Manipulator |
-| [RiS — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/157053) | 13 stones overhaul | aTweaks and Utilities, KID, Perk Entry Point Extender, SkyUI |
-| [RiS — Birthsigns](https://www.nexusmods.com/skyrimspecialedition/mods/154610) | Monthly waxing/waning birthsign effects | KID, Papyrus Ini Manipulator |
 | [RiS — Useful MiscStats](https://www.nexusmods.com/skyrimspecialedition/mods/149142) | Misc stat progression layer | Actor Value Generator |
 | [RiS — Skill Based Stat Growth](https://www.nexusmods.com/skyrimspecialedition/mods/147455) | Health/Magicka/Stamina grow with skills | Papyrus Ini Manipulator |
-
-### Notes
-
-- Race and stone overhauls can quietly pre-decide too much of the character-building experience.
-- A very expressive route can push optimization-heavy play even if the project wants immersive tone.
-- A very light route can undershoot if later systems assume stronger identity hooks.
-- Judge race and stone picks as a pair so the progression baseline stays coherent.
 
 ---
 
