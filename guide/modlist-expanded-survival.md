@@ -35,15 +35,39 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
 
 | Mod | Type | Notes |
 | --- | --- | --- |
-| [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline | Hygiene-and-downtime. SKSE + Papyrus-extender. Roleplay support, not main survival baseline. |
+| [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline | SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution. |
 | Minimalist route | Alternative | Leave hygiene implied through inns, rivers, roleplay. |
 
-### Notes
+### Key Features
 
-- Hygiene can become fussy busywork if configured too aggressively.
-- `Bathing in Skyrim - Renewed` touches equipment handling, overlays, follower participation, and optional integrations — needs stricter discipline than a simple immersion add-on.
+- **Washable Blood** — Uses a KPE function (not Dirt & Blood's overlay-based system) to remove blood decals directly. Compatible with Enhanced Blood Textures, Just Blood, Sanguine Symphony.
+- **Dirtiful Dirt** — Bundles Zaki's 2K dirt overlays. Optional: Zaki's higher-res variants or MoonMods alternative textures.
+- **Custom Animations** — Packaged male animations (Tweens) and female animations (BakaFactory, Krzp). Auto-detects JVraven's Malignis Bathing animations. Falls back to vanilla bathing idles — no FNIS/Pandora requirement for basic use.
+- **Unique Soap** — Craftable at cooking pots from vanilla materials, or buy from general merchants (SkyPatcher). Multiple soap types with different benefits. Linen wash rag as a soap-free fallback.
+- **Automatic Freecam** — Switches to third-person freecam during bathing, matching the pattern of other animation frameworks.
+- **Follower Support** — Tracks and manages follower hygiene alongside the player.
+
+### Hard Dependencies
+
+Already in the → `Foundations` baseline: Kris's Papyrus Extender, PapyrusUtil, PO3's Papyrus Extender, RaceMenu. No additional dependency installs needed.
+
+### JSON Configuration
+
+BiSR supports auto-start via JSON in `ModOrganizer.ini`:
+
+```
+[CustomConverter]
+$path/data/mods/Bathing in Skyrim Renewed/SKSE/plugins/BathingInSkyrimRenewed.json
+```
+
+Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new games.
+
+### Configuration Discipline
+
+- Hygiene busywork risk. Configure overlay intervals and NPC tracking counts to taste.
+- Equipment handling, overlays, and optional integrations need stricter discipline than a simple immersion add-on.
 - Only hard runtime requirements should be treated as mandatory.
-- For Steam runtime `1.6.1170`, the `Backported Extended ESL Support` requirement does not apply and should not be installed.
+- For Steam runtime `1.6.1170`, Backported Extended ESL Support requirement does not apply.
 
 ---
 

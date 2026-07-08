@@ -61,7 +61,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 | Mod | Notes |
 | --- | --- |
-| [Edmond's Nature Series — BIRDS](https://www.nexusmods.com/skyrimspecialedition/mods/123068) | Comprehensive bird overhaul. ESL-flagged. Replaces Seagulls — Mihail (don't stack). Pair with [Optimized textures by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/123210) — pick **2K** main file. |
+| [Edmond's Nature Series — BIRDS](https://www.nexusmods.com/skyrimspecialedition/mods/123068) | Species: Ravens, Pheasants, Seagulls, flocking birds and bats, Bone Hawks (unique audio), Ghost Ravens (Soul Cairn), plus additional placed hawks and hawk nests. ESL-flagged. Raven tris from Mihail (with permission), Seagulls from Mr. Siika community resource. Do not stack with Seagulls — Mihail. Pair with [Xtudo optimized textures](https://www.nexusmods.com/skyrimspecialedition/mods/123210) — pick **2K** main file. |
 | [Morrowind Creatures SE](https://www.nexusmods.com/skyrimspecialedition/mods/50435) | |
 | [Ogres SE](https://www.nexusmods.com/skyrimspecialedition/mods/59363) | |
 | [Sea Turtles — Mihail](https://www.nexusmods.com/skyrimspecialedition/mods/122141) | |
