@@ -12,26 +12,29 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 
 ### Core CS-Native Stack
 
-- **Standard Lighting Templates - SLT** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66943)) — Standardized light template records. Replaces the per-cell template work that Lux/ELFX normally do. Foundation layer.
-- **CS Light** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138443)) — CS-native interior and exterior lighting.
-- **True Light** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135488)) — Exterior bulb placement via Light Placer.
+| Mod | Role | Notes |
+| --- | --- | --- |
+| [Standard Lighting Templates (SLT)](https://www.nexusmods.com/skyrimspecialedition/mods/66943) | Foundation | Standardized light template records. Replaces per-cell template work. |
+| [CS Light](https://www.nexusmods.com/skyrimspecialedition/mods/138443) | Core | CS-native interior/exterior lighting. |
+| [True Light](https://www.nexusmods.com/skyrimspecialedition/mods/135488) | Exterior bulbs | Exterior bulb placement via Light Placer. **Pin v3.4.1** — v3.5.x breaks LoS II lamppost ground illumination. |
+| [Window Shadows Ultimate (WSU)](https://www.nexusmods.com/skyrimspecialedition/mods/150494) | Interior | Interior shadowed windows. |
+| [Ambient Templates for Lighting Mods](https://www.nexusmods.com/skyrimspecialedition/mods/153425) | Required | Required by the CS-native stack. |
 
-  > **Version pin: v3.4.1.** v3.5.x has a known bug where ground illumination breaks on Lanterns of Skyrim II lampposts (lamps light up, ground stays dark). Do not upgrade until the fix is confirmed.
-  >
-  > **FOMOD:** Select **Exterior mode** — attaches bulbs to exterior meshes (braziers, campfires, torches, lanterns) via Light Placer. This replaces Lux Orbis's exterior lighting role.
-
-- **Window Shadows Ultimate (WSU)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150494)) — Interior shadowed windows.
-- **Ambient Templates for Lighting Mods** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153425)) — Required by the CS-native stack.
+> **True Light FOMOD:** Select **Exterior mode** — attaches bulbs to exterior meshes (braziers, campfires, torches, lanterns) via Light Placer. This replaces Lux Orbis's exterior lighting role.
 
 ### Configuration & Ambient
 
-- **Based Lighting Configs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136870)) — CS lighting configuration presets. Standardizes tone/behavior across interiors and exteriors.
-- **Dynamic Interior Ambient Lighting (DIAL)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149920)) — CS-native ambient template adjuster based on time of day and location.
+| Mod | Role | Notes |
+| --- | --- | --- |
+| [Based Lighting Configs](https://www.nexusmods.com/skyrimspecialedition/mods/136870) | Presets | Standardizes tone/behavior across interiors/exteriors. |
+| [Dynamic Interior Ambient Lighting (DIAL)](https://www.nexusmods.com/skyrimspecialedition/mods/149920) | Ambient | Time-of-day and location-based ambient adjustment. |
 
 ### Fire & Effects
 
-- **Embers XD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37085)) — Fire-and-ember category answer (140K+ endorsements). Install after main lighting overhauls so it inherits campfire and hearth placements. → separator: `Graphics - Lighting`
-- **Luminous Atronachs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27732)) — Self-illuminating flame/frost/storm atronachs via particle lights.
+| Mod | Role | Notes |
+| --- | --- | --- |
+| [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) | Fire | 140K+ endorsements. Install after main lighting overhauls. → `Graphics - Lighting` |
+| [Luminous Atronachs](https://www.nexusmods.com/skyrimspecialedition/mods/27732) | Effects | Self-illuminating atronachs via particle lights. |
 
 ### Alternatives
 

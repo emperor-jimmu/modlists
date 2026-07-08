@@ -8,11 +8,11 @@ All mods in this section belong to one of the five animation separators as noted
 
 ## Pandora Framework And Prerequisites → separator: `Animations - Framework`
 
-### Baseline
-
-- **Pandora Behaviour Engine Plus** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133232)) — Single behavior-generation owner. Register as MO2 executable; output to dedicated `Pandora Output` mod.
-- **Universal Behaviour Runtime - Auto Skeleton Patch** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176724)) — Runtime skeleton patching for XPMSSE. Do NOT tick Pandora XPMSSE patch checkbox.
-- **A-Pose Bug Fix - Universal Behavior Runtime** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168903)) — Runtime A-pose interception and LE animation backward compatibility.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Pandora Behaviour Engine Plus](https://www.nexusmods.com/skyrimspecialedition/mods/133232) | Baseline | Single behavior-generation owner. Register as MO2 executable; output to dedicated `Pandora Output` mod. |
+| [Universal Behaviour Runtime — Auto Skeleton Patch](https://www.nexusmods.com/skyrimspecialedition/mods/176724) | Baseline | Runtime skeleton patching for XPMSSE. Do NOT tick Pandora XPMSSE patch checkbox. |
+| [A-Pose Bug Fix — Universal Behavior Runtime](https://www.nexusmods.com/skyrimspecialedition/mods/168903) | Baseline | Runtime A-pose interception and LE animation backward compatibility. |
 
 ### Notes
 
@@ -23,34 +23,25 @@ All mods in this section belong to one of the five animation separators as noted
 
 ## Skeleton And Behavior Prerequisites → separator: `Animations - Framework`
 
-### Baseline
-
-- **XP32 Maximum Skeleton Special Extended - XPMSSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1988)) — Single skeleton baseline.
-- **CBPC - Physics with Collisions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21224)) — Default first-pass physics for CBBE 3BA.
-- **FSMP - Faster HDT-SMP** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57339)) — SMP coverage alongside CBPC. Required by OStim and some outfits.
-
-### Alternatives
-
-- **XPMSSE Fixed Scripts** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44252)) — Companion script fix over XPMSSE.
-- **ConsoleUtilSSE NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76649)) — Keep available for script-dependent pieces.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [XP32 Maximum Skeleton Special Extended — XPMSSE](https://www.nexusmods.com/skyrimspecialedition/mods/1988) | Baseline | Single skeleton baseline. |
+| [CBPC — Physics with Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/21224) | Baseline | Default first-pass physics for CBBE 3BA. |
+| [FSMP — Faster HDT-SMP](https://www.nexusmods.com/skyrimspecialedition/mods/57339) | Baseline | SMP coverage alongside CBPC. Required by OStim and some outfits. |
+| [XPMSSE Fixed Scripts](https://www.nexusmods.com/skyrimspecialedition/mods/44252) | Alternative | Companion script fix over XPMSSE. |
+| [ConsoleUtilSSE NG](https://www.nexusmods.com/skyrimspecialedition/mods/76649) | Alternative | Keep available for script-dependent pieces. |
 
 ---
 
 ## Parkour, Climbing, And Free-Form Movement → separator: `Animations - Interactions & Traversal`
 
-### Baseline
-
-- **SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132292)) — Vault, climb, traverse environmental geometry. 10,112 endorsements.
-
-### Slope And Terrain Animation
-
-- **EVG CLAMBER - Slope Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114753)) — Character posture adjusts dynamically on slopes and stairs. Complements SkyParkour for terrain-aware traversal.
-- **Feminine EVG Clamber Stair Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148067)) — Female-specific stair animations for EVG CLAMBER.
-
-### Alternatives
-
-- **SkyClimb** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97253)) — Climbing-first alternative built around EVGAT. Pick one (not cumulative with SkyParkour).
-- **Discipline-first route** — Vanilla climbing + TDM + sprint/jump only.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)](https://www.nexusmods.com/skyrimspecialedition/mods/132292) | Baseline | Vault, climb, traverse environmental geometry. 10,112 endorsements. |
+| [EVG CLAMBER - Slope Animations](https://www.nexusmods.com/skyrimspecialedition/mods/114753) | Baseline | Character posture adjusts dynamically on slopes and stairs. Complements SkyParkour. |
+| [Feminine EVG Clamber Stair Animations](https://www.nexusmods.com/skyrimspecialedition/mods/148067) | Baseline | Female-specific stair animations for EVG CLAMBER. |
+| [SkyClimb](https://www.nexusmods.com/skyrimspecialedition/mods/97253) | Alternative | Climbing-first alternative built around EVGAT. Pick one (not cumulative with SkyParkour). |
+| Discipline-first route | Alternative | Vanilla climbing + TDM + sprint/jump only. |
 
 ### Companion Candidates (evaluate after baseline is locked)
 
@@ -69,86 +60,70 @@ All mods in this section belong to one of the five animation separators as noted
 
 ## Locomotion → separator: `Animations - Movement & Idles`
 
-### Baseline
-
-- **Leviathan Animations II - Male Idle Walk And Run** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81463))
-- **Leviathan Animations II - Female Idle Walk And Run** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80760))
-
-### Alternatives
-
-- **Vanargand Animations II - Male Idle Walk And Run** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99999)) — Main male alternative.
-- **Conditional Armor Type Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51507)) — Add after base locomotion is accepted.
-- **Dynamic Female Weather Idles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/98493)) — OAR-based weather-aware idles. Complements survival/weather stack.
-- **EVG Animated Traversal** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63232)) — Belongs in interaction/traversal bucket.
-- **Goetia Animations** — Female ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68005)) / Male ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68625))
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Leviathan Animations II - Male Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/81463) | Baseline | Male locomotion. |
+| [Leviathan Animations II - Female Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/80760) | Baseline | Female locomotion. |
+| [Vanargand Animations II - Male Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/99999) | Alternative | Main male alternative. |
+| [Conditional Armor Type Animations](https://www.nexusmods.com/skyrimspecialedition/mods/51507) | Alternative | Add after base locomotion is accepted. |
+| [Dynamic Female Weather Idles](https://www.nexusmods.com/skyrimspecialedition/mods/98493) | Alternative | OAR-based weather-aware idles. Complements survival/weather stack. |
+| [EVG Animated Traversal](https://www.nexusmods.com/skyrimspecialedition/mods/63232) | Alternative | Belongs in interaction/traversal bucket. |
+| [Goetia Animations](https://www.nexusmods.com/skyrimspecialedition/mods/68005) — Female / [Male](https://www.nexusmods.com/skyrimspecialedition/mods/68625) | Alternative | Animation pack for both genders. |
 
 ---
 
 ## Combat Animation Packs → separator: `Animations - Combat`
 
-### Baseline
-
-- **Precision - Accurate Melee Collisions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72347))
-- **SCAR - Skyrim Combos AI Revolution** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72014)) — Add after Precision is proven.
-- **Animated Armoury - OAR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/103577)) — 12 new weapon types. Requires **Animated Armoury - DAR Version** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/35978)) for meshes/collision/leveled lists. Install DAR first, then OAR overlay. Run Pandora after.
-- **No Spinning Death Animation LITE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33597))
-
-### High-Commitment Route (evaluate later)
-
-- **MCO ADXP - Modern Movement Combat Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117115)) — System-level decision.
-- **Animation Motion Revolution** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50258)) and **Payload Interpreter** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65089)) — Required MCO support.
-
-### Support
-
-- **IFrame Generator RE AE Support** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/82737)) — Install only when a pack explicitly lists it.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Precision - Accurate Melee Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/72347) | Baseline | Accurate melee collision detection. |
+| [SCAR - Skyrim Combos AI Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/72014) | Baseline | Add after Precision is proven. |
+| [Animated Armoury - OAR](https://www.nexusmods.com/skyrimspecialedition/mods/103577) | Baseline | 12 new weapon types. Requires [DAR Version](https://www.nexusmods.com/skyrimspecialedition/mods/35978) for meshes/collision/leveled lists. |
+| [No Spinning Death Animation LITE](https://www.nexusmods.com/skyrimspecialedition/mods/33597) | Baseline | Prevents spinning death animations. |
+| [MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115) | High-Commitment | System-level decision. Evaluate later. |
+| [Animation Motion Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/50258) + [Payload Interpreter](https://www.nexusmods.com/skyrimspecialedition/mods/65089) | High-Commitment | Required MCO support. |
+| [IFrame Generator RE AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/82737) | Support | Install only when a pack explicitly lists it. |
 
 ---
 
 ## Non-Combat Interaction Animations → separator: `Animations - Interactions & Traversal`
 
-### Baseline
-
-- **Immersive Interactions - Animated Actions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47670))
-- **Go to bed** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/4224))
-
-### Alternatives
-
-- **Animated Interactions SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143798)) — Can coexist only if overlapping actions are deliberately disabled.
-- **Take a Seat** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54193))
-- **Immersive Hunting Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/96961))
-- **Immersive Carcass Carrying** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99867))
-- **Flute Animation Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69609))
-- **Witcher Flute** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144660))
-- **EVG Animated Traversal** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63232))
-- **Beginner Bard Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130776)) — For Skyrim's Got Talent.
-
-### Interaction Animation Additions (II companions)
-
-- **Immersive Interactions - Eating ingredients and apply poison animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117983)) — Add-on for the Immersive Interactions baseline. Adds eating and poison-apply animations.
-- **Dynamic Crafting Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116422)) — Crafting-station interaction animations.
-- **Dynamic Looting and Harvesting Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114547)) — Looting and harvesting interaction animations.
-- **Dynamic Horse Petting Animations for Immersive Interactions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111767)) — Horse interaction animations for II.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Immersive Interactions - Animated Actions](https://www.nexusmods.com/skyrimspecialedition/mods/47670) | Baseline | Core interaction animation framework. |
+| [Go to bed](https://www.nexusmods.com/skyrimspecialedition/mods/4224) | Baseline | Bed interaction animations. |
+| [Animated Interactions SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/143798) | Alternative | Can coexist only if overlapping actions are deliberately disabled. |
+| [Take a Seat](https://www.nexusmods.com/skyrimspecialedition/mods/54193) | Alternative | Sitting interaction animations. |
+| [Immersive Hunting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/96961) | Alternative | Hunting-related animations. |
+| [Immersive Carcass Carrying](https://www.nexusmods.com/skyrimspecialedition/mods/99867) | Alternative | Carcass carrying animations. |
+| [Flute Animation Fix](https://www.nexusmods.com/skyrimspecialedition/mods/69609) | Alternative | Flute playing animation fix. |
+| [Witcher Flute](https://www.nexusmods.com/skyrimspecialedition/mods/144660) | Alternative | Witcher-style flute animation. |
+| [EVG Animated Traversal](https://www.nexusmods.com/skyrimspecialedition/mods/63232) | Alternative | Environment traversal animations. |
+| [Beginner Bard Animations](https://www.nexusmods.com/skyrimspecialedition/mods/130776) | Alternative | For Skyrim's Got Talent. |
+| [Immersive Interactions - Eating ingredients and apply poison animations](https://www.nexusmods.com/skyrimspecialedition/mods/117983) | Add-on | Eating and poison-apply animations for II. |
+| [Dynamic Crafting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/116422) | Add-on | Crafting-station interaction animations. |
+| [Dynamic Looting and Harvesting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/114547) | Add-on | Looting and harvesting interaction animations. |
+| [Dynamic Horse Petting Animations for Immersive Interactions](https://www.nexusmods.com/skyrimspecialedition/mods/111767) | Add-on | Horse interaction animations for II. |
 
 ---
 
 ## Conditional Animation Systems → separator: `Animations - Framework`
 
-### Baseline
-
-- **Open Animation Replacer** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92109)) — Single condition framework owner.
-
-### Alternatives
-
-- **EVG Conditional Idles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34006))
-- **Conditional Armor Type Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51507))
-- **Unique Jarl Throne Sitting Animation (OAR)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174752))
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Open Animation Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/92109) | Baseline | Single condition framework owner. |
+| [EVG Conditional Idles](https://www.nexusmods.com/skyrimspecialedition/mods/34006) | Alternative | Idle animation conditional framework. |
+| [Conditional Armor Type Animations](https://www.nexusmods.com/skyrimspecialedition/mods/51507) | Alternative | Armor-type-based animation switching. |
+| [Unique Jarl Throne Sitting Animation (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/174752) | Alternative | Throne sitting animation for Jarls. |
 
 ---
 
 ## Camera-Aware Animation Support → separator: `Animations - Framework`
 
-- **Improved Camera SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93962)) — Only if hybrid perspective is a real playstyle.
-- **Comprehensive First Person Animation Overhaul - CFPAO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87169)) — Optional first-person polish.
+| Mod | Notes |
+| --- | --- |
+| [Improved Camera SE](https://www.nexusmods.com/skyrimspecialedition/mods/93962) | Only if hybrid perspective is a real playstyle. |
+| [Comprehensive First Person Animation Overhaul - CFPAO](https://www.nexusmods.com/skyrimspecialedition/mods/87169) | Optional first-person polish. |
 
 ---
 
@@ -156,31 +131,25 @@ All mods in this section belong to one of the five animation separators as noted
 
 Equipment visibility, sheathing positions, and draw-sheathe animations. Builds on XPMSSE for third-person gamepad parity.
 
-### Baseline
-
-- **Immersive Equipment Displays (IED)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62001)) — Equipment visibility and positioning framework. Required by display addons below.
-- **Simple Dual Sheath** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50049)) — Dual-sheathed weapon support. Requires IED.
-
-### Addons
-
-- **Weapon Styles - Draw-Sheathe animations for IED** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85085)) — Conditional draw/sheathe animations per weapon type. Requires IED.
-- **Walking Stick - Walk with staves or polearms - IED-OAR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120966)) — Staff/polearm walking animation support. Requires IED.
-
-### Alternatives
-
-- **Ready to Play IED** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158531)) — Pre-configured IED preset. Evaluate only if manual IED configuration proves too time-consuming.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Immersive Equipment Displays (IED)](https://www.nexusmods.com/skyrimspecialedition/mods/62001) | Baseline | Equipment visibility and positioning framework. |
+| [Simple Dual Sheath](https://www.nexusmods.com/skyrimspecialedition/mods/50049) | Baseline | Dual-sheathed weapon support. Requires IED. |
+| [Weapon Styles - Draw-Sheathe animations for IED](https://www.nexusmods.com/skyrimspecialedition/mods/85085) | Addon | Conditional draw/sheathe animations per weapon type. Requires IED. |
+| [Walking Stick - Walk with staves or polearms - IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/120966) | Addon | Staff/polearm walking animation support. Requires IED. |
+| [Ready to Play IED](https://www.nexusmods.com/skyrimspecialedition/mods/158531) | Alternative | Pre-configured IED preset. Evaluate only if manual IED configuration proves too time-consuming. |
 
 ---
 
 ## Creature Animations → separator: `Animations - Creatures`
 
-### Baseline
-
-- **New Creature Animation - Giant** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83317))
-- **New Creature Animation - Werewolf** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83806))
-- **New Creature Animation - Falmer** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83572))
-- **DCA - Dragon Combat Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123113)) — Dragon combat animation replacer.
-- **Draugr Greatsword Animation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114721)) — Greatsword-wielding draugr animation replacer.
+| Mod | Notes |
+| --- | --- |
+| [New Creature Animation - Giant](https://www.nexusmods.com/skyrimspecialedition/mods/83317) | Giant animation replacer. |
+| [New Creature Animation - Werewolf](https://www.nexusmods.com/skyrimspecialedition/mods/83806) | Werewolf animation replacer. |
+| [New Creature Animation - Falmer](https://www.nexusmods.com/skyrimspecialedition/mods/83572) | Falmer animation replacer. |
+| [DCA - Dragon Combat Animations](https://www.nexusmods.com/skyrimspecialedition/mods/123113) | Dragon combat animation replacer. |
+| [Draugr Greatsword Animation](https://www.nexusmods.com/skyrimspecialedition/mods/114721) | Greatsword-wielding draugr animation replacer. |
 
 ### Notes
 

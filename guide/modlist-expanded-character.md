@@ -12,18 +12,15 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or a configurable route. The decision should improve replayability and roleplay expression without pre-answering later race, progression, religion, survival, or follower choices.
 
-### Baseline
-
-- **Alternate Perspective - Alternate Start** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50307)) — Main baseline candidate.
-- **Dealing with Backstories** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61106)) — Origins companion generating background-driven starting skills, bonuses, drawbacks, and gear.
-- **Take Notes - Journal of the Dragonborn SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/13570)) — Persistent in-game journal without rebalancing the character. Low-risk roleplay companion.
-- **Roleplaying In Skyrim - Origins** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150186)) — Optional origin-driven flavor and bonuses. Requires SKSE and `Papyrus Ini Manipulator`; soft-requires `Actor Value Generator` and `SkyUI`.
-
-### Alternatives
-
-- **Alternate Start - Live Another Life** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/272)) — Conservative fallback.
-- **Skyrim Unbound Reborn** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27962)) — Configurable middle ground with more setup freedom.
-- **Realm of Lorkhan - Freeform Alternate Start** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18223)) — Freeform branch. Not the default baseline.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Alternate Perspective — Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/50307) | Baseline | Main baseline candidate. |
+| [Dealing with Backstories](https://www.nexusmods.com/skyrimspecialedition/mods/61106) | Baseline | Origins companion — background-driven starting skills, bonuses, drawbacks, gear. |
+| [Take Notes — Journal of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/13570) | Baseline | Persistent in-game journal. Low-risk roleplay companion. |
+| [Roleplaying In Skyrim — Origins](https://www.nexusmods.com/skyrimspecialedition/mods/150186) | Baseline | Origin-driven flavor and bonuses. Requires SKSE + Papyrus Ini Manipulator; soft-requires Actor Value Generator + SkyUI. |
+| [Alternate Start — Live Another Life](https://www.nexusmods.com/skyrimspecialedition/mods/272) | Alternative | Conservative fallback. |
+| [Skyrim Unbound Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/27962) | Alternative | Configurable middle ground with more setup freedom. |
+| [Realm of Lorkhan — Freeform Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/18223) | Alternative | Freeform branch. Not the default baseline. |
 
 ### Notes
 
@@ -39,26 +36,25 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 
 How strongly race traits and standing stones shape long-term character identity. Choose one clear progression philosophy before perks, magic, alchemy, and religion build on top of it.
 
-### Baseline
-
-- **Aetherius - A Race Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26686)) + **Evenstar - Minimalistic Standing Stones of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41256)) — Main baseline. Balanced modern route.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Aetherius — Race Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26686) + [Evenstar — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/41256) | Baseline | Balanced modern route. |
+| [Morningstar — Minimalistic Races](https://www.nexusmods.com/skyrimspecialedition/mods/22298) + Evenstar | Alternative | Restrained fallback. |
+| [Imperious — Races of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1315) + [Andromeda — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/14910) | Alternative | High-expression comparison. |
 
 ### Roleplaying in Skyrim Companion Series
->
+
 > All RiS mods require SKSE. Check individual mod pages for specific dependencies.
 
-- **RiS - Classic Attributes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151476)) — 10 classic RPG attributes. Requires `Actor Value Generator`.
-- **RiS - Races** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149544)) — Biological race overhaul. Requires `KID` and `SPID`.
-- **RiS - Lineages** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174443)) — 4 subraces per vanilla race with unique abilities. Requires `KID`, `SPID`, and `Papyrus Ini Manipulator`.
-- **RiS - Standing Stones** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157053)) — 13 stones overhaul. Requires `aTweaks and Utilities`, `KID`, `Perk Entry Point Extender`, and `SkyUI`.
-- **RiS - Birthsigns** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/154610)) — Monthly waxing/waning birthsign effects. Requires `KID` and `Papyrus Ini Manipulator`.
-- **RiS - Useful MiscStats** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149142)) — Misc stat progression layer. Requires `Actor Value Generator`.
-- **RiS - Skill Based Stat Growth** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147455)) — Health/Magicka/Stamina grow as skills develop. Requires `Papyrus Ini Manipulator`.
-
-### Alternatives
-
-- **Morningstar - Minimalistic Races of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22298)) + **Evenstar** — Restrained fallback.
-- **Imperious - Races of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1315)) + **Andromeda - Unique Standing Stones** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14910)) — High-expression comparison.
+| Mod | Purpose | Requirements |
+| --- | --- | --- |
+| [RiS — Classic Attributes](https://www.nexusmods.com/skyrimspecialedition/mods/151476) | 10 classic RPG attributes | Actor Value Generator |
+| [RiS — Races](https://www.nexusmods.com/skyrimspecialedition/mods/149544) | Biological race overhaul | KID, SPID |
+| [RiS — Lineages](https://www.nexusmods.com/skyrimspecialedition/mods/174443) | 4 subraces per vanilla race | KID, SPID, Papyrus Ini Manipulator |
+| [RiS — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/157053) | 13 stones overhaul | aTweaks and Utilities, KID, Perk Entry Point Extender, SkyUI |
+| [RiS — Birthsigns](https://www.nexusmods.com/skyrimspecialedition/mods/154610) | Monthly waxing/waning birthsign effects | KID, Papyrus Ini Manipulator |
+| [RiS — Useful MiscStats](https://www.nexusmods.com/skyrimspecialedition/mods/149142) | Misc stat progression layer | Actor Value Generator |
+| [RiS — Skill Based Stat Growth](https://www.nexusmods.com/skyrimspecialedition/mods/147455) | Health/Magicka/Stamina grow with skills | Papyrus Ini Manipulator |
 
 ### Notes
 
@@ -73,14 +69,11 @@ How strongly race traits and standing stones shape long-term character identity.
 
 Opt-in character-defining quirks shaping a run from the start without replacing the broader progression stack. Goal: stronger roleplay identity and replayability, not a giant second character-build framework.
 
-### Baseline
-
-- **Biggie Traits** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136384)) — Immediate run-defining tradeoffs in compact form. Closer to Fallout-style traits than a total rules rewrite. No hard dependencies.
-- **Pumping Iron - Dynamic Muscle Growth** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/13434)) — Cosmetic muscle growth based on combat skill increases and sleep. No gameplay impact.
-
-### Alternatives
-
-- **Minimalist route** — Leave identity to race, standing stones, perks, and self-imposed roleplay.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384) | Baseline | Run-defining tradeoffs. Fallout-style traits. No hard dependencies. |
+| [Pumping Iron — Dynamic Muscle Growth](https://www.nexusmods.com/skyrimspecialedition/mods/13434) | Baseline | Cosmetic muscle growth from combat + sleep. No gameplay impact. |
+| Minimalist route | Alternative | Leave identity to race, standing stones, perks, and self-imposed roleplay. |
 
 ### Notes
 
@@ -94,14 +87,11 @@ Opt-in character-defining quirks shaping a run from the start without replacing 
 
 How much explicit spiritual identity and day-to-day roleplay texture `Elder Wilds` wants.
 
-### Baseline
-
-- **Pilgrim - A Religion Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54099)) — Main baseline. Fits the Simonrim-leaning progression family without making religion dominant.
-
-### Alternatives
-
-- **Trua - Minimalistic Faiths of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/32549)) — Restrained fallback.
-- **Wintersun - Faiths of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22506)) — High-expression route for stronger roleplay and progression pillar.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Pilgrim — A Religion Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/54099) | Baseline | Fits Simonrim-leaning progression family. |
+| [Trua — Minimalistic Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/32549) | Alternative | Restrained fallback. |
+| [Wintersun — Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/22506) | Alternative | High-expression route for stronger roleplay pillar. |
 
 ### Notes
 
@@ -116,15 +106,12 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 
 Dedicated overhauls for vampire, werewolf, and shout gameplay — three character-identity systems vanilla leaves shallow. These complete the EnaiRim suite begun with `Andromeda` (standing stones). All three are by EnaiSiaion, designed to work together, and require no cross-patching.
 
-### Baseline
-
-- **Sacrosanct - Vampires of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3928)) — Vampirism progression, feeding, powers, 4 feeding tiers, blood-power effects keyed to vampiric age. 133K endorsements.
-- **Growl - Werebeasts of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14645)) — Beast-form progression, perks, feeding, 5 werebear varieties, dedicated perk tree.
-- **Thunderchild - Epic Shouts and Immersion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1460)) — 19 new shouts (57 words), meditation mechanics, shout-aware equipment, boss encounters. Completes the EnaiRim character-systems suite.
-
-### Alternatives
-
-- **Discipline-first route** — Vanilla vampire/werewolf/shout systems. Hard to justify for a list built on "modern mechanics."
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Sacrosanct — Vampires of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/3928) | Baseline | Vampirism progression, 4 feeding tiers, blood-power by age. 133K endorsements. |
+| [Growl — Werebeasts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/14645) | Baseline | Beast-form progression, perks, 5 werebear varieties. |
+| [Thunderchild — Epic Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/1460) | Baseline | 19 new shouts (57 words), meditation mechanics, boss encounters. |
+| Discipline-first route | Alternative | Vanilla vampire/werewolf/shout systems. |
 
 ### Notes
 
@@ -140,24 +127,15 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 
 How the player gains levels and skill points. Instead of vanilla sleep-to-level, use Experience (discovery-based leveling) paired with Static Skill Leveling Rewritten (cooldown-gated skill advancement) for progression earned through exploration and deliberate practice.
 
-### Baseline
-
-- **Experience** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17751)) — Core leveling framework. Levels from exploration, quest completion, combat, discovery — not skill grinding.
-    - **Experience - Synthesis Patcher** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41937)) — Required patcher generating XP values for mod-added quests, locations, and enemies. Run during the patcher chain in → `Performance`.
-- **Experience - MCM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65880)) — MCM configuration for tuning XP rates, per-activity values, and per-source toggles.
-- **Static Skill Leveling Rewritten** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89940)) — Cooldown-based skill advancement. Encourages organic skill use over grind-spamming.
-    - **Main file:** `Static Skill Leveling - ESL`, ESL-flagged.
-    - **Simpler Preset** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139055)) — Recommended preset with tuned cooldown values.
-- **No Startup Quest XP - Patch for Sunhelm and more** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55682)) — Prevents XP from startup quests when using Experience + alternate start.
-- **Skyshards** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60748)) — 60+ glowing shards granting experience on collection. Tangible exploration reward for straying off the main path.
-    - **Main file:** `Skyshards` (ESL-flagged version recommended).
-    - **Skyshards - CS Light Addon** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150715)) — Subtle emission glow for Community Shaders. → separator: `Graphics - Community Shaders`
-    - **Skyshards - Keep it Moving** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127652)) — Prevents collection notification from stopping movement. QoL for gamepad play.
-
-### Alternatives
-
-- **Discipline-first route** — Vanilla sleep-to-level. Avoids the patcher requirement but discards exploration-focused progression.
-- **Static Skill Leveling - Custom Preset** — Use base mod without Simple Preset if manual tuning is preferred.
+| Mod | Type | Notes | Sub-items |
+| --- | --- | --- | --- |
+| [Experience](https://www.nexusmods.com/skyrimspecialedition/mods/17751) | Baseline | Core leveling — exploration, quests, combat, discovery. Not skill grinding. | [Synthesis Patcher](https://www.nexusmods.com/skyrimspecialedition/mods/41937) (required, run in patcher chain) |
+| [Experience — MCM](https://www.nexusmods.com/skyrimspecialedition/mods/65880) | Baseline | MCM config for XP rates and per-source toggles. | |
+| [Static Skill Leveling Rewritten](https://www.nexusmods.com/skyrimspecialedition/mods/89940) | Baseline | Cooldown-based skill advancement. ESL-flagged. | [Simpler Preset](https://www.nexusmods.com/skyrimspecialedition/mods/139055) (recommended tuned values) |
+| [No Startup Quest XP](https://www.nexusmods.com/skyrimspecialedition/mods/55682) | Baseline | Prevents XP from startup quests with alternate start. | |
+| [Skyshards](https://www.nexusmods.com/skyrimspecialedition/mods/60748) | Baseline | 60+ glowing shards granting XP on collection. ESL-flagged. | [CS Light Addon](https://www.nexusmods.com/skyrimspecialedition/mods/150715), [Keep it Moving](https://www.nexusmods.com/skyrimspecialedition/mods/127652) |
+| Discipline-first route | Alternative | Vanilla sleep-to-level. Avoids patcher requirement. | |
+| Static Skill Leveling — Custom Preset | Alternative | Manual tuning instead of Simpler Preset. | |
 
 ### Notes
 

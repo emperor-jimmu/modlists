@@ -11,15 +11,19 @@ All mods in this section belong to one of the two audio separators as noted per 
 The soundtrack direction: how much to expand Skyrim's music while staying close to the Jeremy Soule baseline.
 
 ### Baseline
-- **Chapter II - Jeremy Soule Inspired Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37792)) — Darker, more emotional melancholy without breaking from Soule's shape.
-- **The Northerner Diaries - Immersive Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33903)) — Authentic Jeremy Soule compositions: 19 exploration tracks.
-- **The Southerner Diaries** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/32593)) — 22 Soule-inspired exploration and town tracks.
-- **Melodies of Civilization** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37533)) — 20+ town, tavern, and settlement tracks.
-- **Nyghtfall - Dark Fantasy Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39011)) — ~7 hours, 98 dark-fantasy tracks. Evaluate after baseline is in place.
-- **Nordenhamr - Viking Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58080)) — Viking identity reinforcement.
-- **BA Bard Songs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47202)) — Bard song replacer. Compatible with Skyrim's Got Talent.
+
+| Mod | Notes |
+| --- | --- |
+| [Chapter II - Jeremy Soule Inspired Music](https://www.nexusmods.com/skyrimspecialedition/mods/37792) | Darker, more emotional melancholy without breaking from Soule's shape. |
+| [The Northerner Diaries - Immersive Edition](https://www.nexusmods.com/skyrimspecialedition/mods/33903) | Authentic Jeremy Soule compositions: 19 exploration tracks. |
+| [The Southerner Diaries](https://www.nexusmods.com/skyrimspecialedition/mods/32593) | 22 Soule-inspired exploration and town tracks. |
+| [Melodies of Civilization](https://www.nexusmods.com/skyrimspecialedition/mods/37533) | 20+ town, tavern, and settlement tracks. |
+| [Nyghtfall - Dark Fantasy Music](https://www.nexusmods.com/skyrimspecialedition/mods/39011) | ~7 hours, 98 dark-fantasy tracks. Evaluate after baseline is in place. |
+| [Nordenhamr - Viking Music](https://www.nexusmods.com/skyrimspecialedition/mods/58080) | Viking identity reinforcement. |
+| [BA Bard Songs](https://www.nexusmods.com/skyrimspecialedition/mods/47202) | Bard song replacer. Compatible with Skyrim's Got Talent. |
 
 ### Alternatives
+
 - **Yggdrasil Music and SoundFX Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21578)) — Harsher, more ritualistic direction. Last updated April 2021.
 - **Silent Combat Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5148)) — Support option if combat music becomes intrusive.
 - **Minimalist route** — Keep vanilla soundtrack.
@@ -40,11 +44,12 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 
 The sound-effects layer for combat, magic, items, UI, and impact. The bar: modern, weighty, clear audio readable in third-person without visual confirmation.
 
-### Baseline
-- **Immersive Sounds - Compendium** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/523)) — Weapon-and-armor SFX baseline. Broadest patch ecosystem.
-- **Audio Overhaul for Skyrim SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12341)) — Master reverb-and-attenuation layer. 27K endorsements, actively maintained (v4.1.4, April 2026).
-- **Airgetlam - Shouts SFX** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33993)) — Shout-audio companion. Replaces raw `.wav` files, no record conflicts.
-- **Strange Runes** — Magic audio layer (cross-referenced from → `Magic & Perks`).
+| Mod | Notes |
+| --- | --- |
+| [Immersive Sounds - Compendium](https://www.nexusmods.com/skyrimspecialedition/mods/523) | Weapon-and-armor SFX baseline. Broadest patch ecosystem. |
+| [Audio Overhaul for Skyrim SE](https://www.nexusmods.com/skyrimspecialedition/mods/12341) | Master reverb-and-attenuation layer. 27K endorsements, actively maintained (v4.1.4, April 2026). |
+| [Airgetlam - Shouts SFX](https://www.nexusmods.com/skyrimspecialedition/mods/33993) | Shout-audio companion. Replaces raw `.wav` files, no record conflicts. |
+| Strange Runes | Magic audio layer (cross-referenced from → `Magic & Perks`). |
 
 ### Load Order
 `ISC` and `AOS` both edit large numbers of sound records. Load `AOS` after `ISC` so AOS's reverb/attenuation wins over ISC's raw effect swaps. `Airgetlam` loads after both.
@@ -71,10 +76,12 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 
 Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX baseline.
 
-- **Precision** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72347)) — Already locked in → `Third-Person`; audio impact is secondary.
-- **Valhalla Combat** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64741)) — Already locked; parry/stagger/timed-block audio feedback.
-- **Heart of the Beast - Werewolf Sound and Camera Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/13776)) — Werewolf audio baseline if `Growl` is adopted.
-- **Heart of the Beast - Feral** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165648)) — Alternative werewolf sounds. Choose one variant, not both.
+| Mod | Notes |
+| --- | --- |
+| [Precision](https://www.nexusmods.com/skyrimspecialedition/mods/72347) | Already locked in → `Third-Person`; audio impact is secondary. |
+| [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Already locked; parry/stagger/timed-block audio feedback. |
+| [Heart of the Beast - Werewolf Sound and Camera Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/13776) | Werewolf audio baseline if `Growl` is adopted. |
+| [Heart of the Beast - Feral](https://www.nexusmods.com/skyrimspecialedition/mods/165648) | Alternative werewolf sounds. Choose one variant, not both. |
 
 ### Notes
 - Only one Heart of the Beast variant active at a time. Both installed = file conflicts.
@@ -86,15 +93,15 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 
 Environmental soundscapes, creature ambient sounds, and weather audio to reinforce world immersion outside of combat.
 
-### Baseline
-
-- **Wildwood Echoes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112008)) — Forest and woodland soundscape expansion.
-- **Blackreach Eerie Ambience** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112114)) — Blackreach-specific ambient atmosphere.
-- **Murder of Songbirds** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111766)) — Ambient bird audio in wilderness areas.
-- **Nordic Winds** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112370)) — Weather-specific wind sound effects for colder regions.
-- **Whispering Tomes of Apocrypha** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113423)) — Apocrypha ambient soundscape.
-- **Falmer 'Dialogue' Overhaul - Echolocation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114625)) — Falmer echolocation vocalisation replacer. Creature-audio companion layer.
-- **Potema Revoiced** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123877)) — Revoiced Potema dialogue. Overwrites vanilla voice files rather than dialogue records.
+| Mod | Notes |
+| --- | --- |
+| [Wildwood Echoes](https://www.nexusmods.com/skyrimspecialedition/mods/112008) | Forest and woodland soundscape expansion. |
+| [Blackreach Eerie Ambience](https://www.nexusmods.com/skyrimspecialedition/mods/112114) | Blackreach-specific ambient atmosphere. |
+| [Murder of Songbirds](https://www.nexusmods.com/skyrimspecialedition/mods/111766) | Ambient bird audio in wilderness areas. |
+| [Nordic Winds](https://www.nexusmods.com/skyrimspecialedition/mods/112370) | Weather-specific wind sound effects for colder regions. |
+| [Whispering Tomes of Apocrypha](https://www.nexusmods.com/skyrimspecialedition/mods/113423) | Apocrypha ambient soundscape. |
+| [Falmer 'Dialogue' Overhaul - Echolocation](https://www.nexusmods.com/skyrimspecialedition/mods/114625) | Falmer echolocation vocalisation replacer. Creature-audio companion layer. |
+| [Potema Revoiced](https://www.nexusmods.com/skyrimspecialedition/mods/123877) | Revoiced Potema dialogue. Overwrites vanilla voice files rather than dialogue records. |
 
 ### Notes
 

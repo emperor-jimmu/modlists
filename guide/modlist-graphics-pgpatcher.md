@@ -8,15 +8,17 @@ All items in this section belong to the `Graphics - PGPatcher` MO2 separator unl
 
 PGPatcher is a post-installation patcher that generates parallax and PBR-compatible meshes from the installed texture and mesh stack. It must run after the main texture, mesh, parallax, and PBR candidate set is mostly chosen so it works against a stable asset baseline.
 
-### Baseline
-- **PGPatcher** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120946)) — Post-installation parallax/PBR mesh generator. Keep output in its own generated MO2 folder, separate from source mods.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [PGPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/120946) | Baseline | Post-installation parallax/PBR mesh generator. Keep output in own MO2 folder. |
 
 ### Workflow Rules
-- Run after installing or changing PBR texture packs, parallax-enabled textures, or major mesh/parallax support mods.
-- Let the generated patch load after the source texture and mesh mods it supports.
-- Re-run whenever a major landscape, architecture, ruins, or clutter texture pack is replaced.
-- Only keep the generated output if it produces a visible improvement without new artifacts.
-- Hard requirement for mods such as **Steel Armor Redone - PBR and Complex Material**.
+
+1. Run after installing/changing PBR texture packs, parallax-enabled textures, or major mesh/parallax support mods.
+2. Let the generated patch load after the source texture/mesh mods it supports.
+3. Re-run whenever a major landscape, architecture, ruins, or clutter texture pack is replaced.
+4. Only keep generated output if it produces visible improvement without new artifacts.
+5. Hard requirement for mods such as **Steel Armor Redone - PBR and Complex Material**.
 
 ### Alternatives
 - Skip route: rely on hand-authored parallax meshes from individual texture packs and skip post-processing entirely.

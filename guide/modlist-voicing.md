@@ -11,17 +11,22 @@ All mods in this section belong to the `Voicing` MO2 separator.
 Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Generator) together give Skyrim's player character a voice. DBVO is the runtime framework; MCVO Generator scans the full load order and produces the data files for voice generation. Combined with AI voice synthesis (xVASynth or ElevenLabs), the player character speaks every dialogue line.
 
 ### Baseline
-- **Dragonborn Voice Over** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84329)) — SKSE-based framework. Intercepts player dialogue and plays `.wav` files from installed voice pack. MCM allows switching packs per character. Required by MCVO Generator as a master.
-- **Pre-made voice packs (drop-in):**
-    - **Bella Voice DBVO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89810)) — Most popular female pack, broadest mod coverage.
-    - **DBVO - Allison Voice Pack** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126843)) — British female alternative.
-    - Pre-made male packs are less common.
-- **Recommended actress:** Jennifer Hale (Bella Voice DBVO uses spliced Hale VO catalog).
-- **Recommended actor:** Travis Willingham (MCVO Generator + xVASynth pipeline).
+
+| Mod / Resource | Type | Notes |
+| --- | --- | --- |
+| [Dragonborn Voice Over](https://www.nexusmods.com/skyrimspecialedition/mods/84329) | Framework | SKSE-based. Intercepts player dialogue and plays `.wav` files. MCM allows per-character pack switching. Required by MCVO Generator as a master. |
+| [Bella Voice DBVO](https://www.nexusmods.com/skyrimspecialedition/mods/89810) | Voice Pack | Most popular female pack, broadest mod coverage. |
+| [DBVO - Allison Voice Pack](https://www.nexusmods.com/skyrimspecialedition/mods/126843) | Voice Pack | British female alternative. |
+| Pre-made male packs | Voice Pack | Less common pre-made options available. |
+| Jennifer Hale (Bella Voice) | Recommended Actress | Bella Voice DBVO uses spliced Hale VO catalog. |
+| Travis Willingham (Geralt) | Recommended Actor | MCVO Generator + xVASynth pipeline. |
 
 ### Alternatives
-- **MCVO Generator + xVASynth** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86737) / [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44184)) — Free custom-generation path. Quality is noticeably synthetic. Must re-run when load order changes.
-- **ElevenLabs + DBVO Voice Pack Creator** — Premium path. Higher quality, more natural output. Requires paid account and Discord-only tool.
+
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [MCVO Generator](https://www.nexusmods.com/skyrimspecialedition/mods/86737) + [xVASynth](https://www.nexusmods.com/skyrimspecialedition/mods/44184) | Alternative | Free custom-generation path. Quality is noticeably synthetic. Must re-run when load order changes. |
+| ElevenLabs + DBVO Voice Pack Creator | Alternative | Premium path. Higher quality, more natural output. Requires paid account and Discord-only tool. |
 
 ### Notes
 - DBVO requires ConsoleUtilSSE NG, JContainers SE, SkyUI, and SKSE64 (all in foundations stack).

@@ -10,14 +10,15 @@ All items in this section belong to the `Legacy of the Dragonborn` MO2 separator
 
 Treated as a foundational content pillar for the final list, not a late optional extra.
 
-### Baseline
-- **Legacy of the Dragonborn** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/11802)) v6.10.1 (May 2026) — Non-negotiable centerpiece.
-- **The Curator's Companion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/38529)) v7.0.8 — In-game tracking for museum displays and collection progress.
-- **Legacy of the Dragonborn Patches (Official)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30980)) v6.10.7 (June 2026) — Required integration infrastructure.
-- **Paintings Replacer for Legacy of the Dragonborn SSE** (Nexus 13279, v1.1, Nov 2017) — Texture replacer, low risk.
-- **Fate Cards Re-texture - Skyrim Concept Art** (Nexus 16080, v01, Mar 2018) — Texture replacer.
-- **Placeable Display Cases** (Nexus 131107, v3.1, Jan 2025).
-- **Achievement Injector** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126220)) + **Legacy of the Dragonborn - Achievement Injector** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130114)) — Museum achievement content.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Legacy of the Dragonborn](https://www.nexusmods.com/skyrimspecialedition/mods/11802) v6.10.1 (May 2026) | Baseline | Non-negotiable centerpiece. |
+| [The Curator's Companion](https://www.nexusmods.com/skyrimspecialedition/mods/38529) v7.0.8 | Baseline | In-game tracking for museum displays and collection progress. |
+| [Legacy of the Dragonborn Patches (Official)](https://www.nexusmods.com/skyrimspecialedition/mods/30980) v6.10.7 (June 2026) | Baseline | Required integration infrastructure. |
+| Paintings Replacer for Legacy of the Dragonborn SSE (Nexus 13279, v1.1, Nov 2017) | Baseline | Texture replacer, low risk. |
+| Fate Cards Re-texture - Skyrim Concept Art (Nexus 16080, v01, Mar 2018) | Baseline | Texture replacer. |
+| Placeable Display Cases (Nexus 131107, v3.1, Jan 2025) | Baseline | Placeable museum display cases. |
+| [Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/126220) + [LoTD Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/130114) | Baseline | Museum achievement content. |
 
 ---
 

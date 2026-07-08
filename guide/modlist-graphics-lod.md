@@ -17,19 +17,28 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 ### Required Tools And Dependencies
 
 #### Core Support Mods
-- **DynDOLOD Resources SE 3** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52897))
-- **DynDOLOD DLL NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97720))
+
+| Mod | Nexus |
+| --- | --- |
+| DynDOLOD Resources SE 3 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52897) |
+| DynDOLOD DLL NG | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97720) |
 
 #### Optional Distant Detail Support
-- **HD LODs Textures SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3333))
-- **Skyfall's Sleeping Hist Tree Overhaul - DynDOLOD Add-On** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169984)) — Billboard generation for the replaced tree. Required for correct distant-LOD display.
-- **Happy Little Trees DynDOLOD Optimizations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158587))
+
+| Mod | Notes | Nexus |
+| --- | --- | --- |
+| HD LODs Textures SE | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3333) |
+| Skyfall's Sleeping Hist Tree Overhaul — DynDOLOD Add-On | Billboard generation for replaced tree. Required for correct distant-LOD display. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169984) |
+| Happy Little Trees DynDOLOD Optimizations | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158587) |
 
 #### Core Workflow Dependencies
-- **No Grass In Objects** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42161))
-- **Worldspaces with Grass SSEEdit Script** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55152))
-- **Grass Cache Fixes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60891))
-- **xLODGen Resource - SSE Terrain Tamriel** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54680))
+
+| Mod | Nexus |
+| --- | --- |
+| No Grass In Objects | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42161) |
+| Worldspaces with Grass SSEEdit Script | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55152) |
+| Grass Cache Fixes | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60891) |
+| xLODGen Resource — SSE Terrain Tamriel | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54680) |
 
 ---
 

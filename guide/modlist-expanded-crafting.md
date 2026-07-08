@@ -12,14 +12,11 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 Whether alchemy is a disciplined support system for potions/poisons/ingredients or a larger rework reshaping cooking and survival-adjacent loops.
 
-### Baseline
-
-- **Apothecary - An Alchemy Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52130)) — Main baseline. Balanced modern route.
-
-### Alternatives
-
-- **Complete Alchemy and Cooking Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19924)) — Large integrated comparison if alchemy and cooking should become a major combined pillar.
-- **Alchemy Potions and Food Adjustments** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5877)) — Lighter fallback.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Apothecary — An Alchemy Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/52130) | Baseline | Balanced modern route. |
+| [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924) | Alternative | Large integrated alchemy + cooking pillar. |
+| [Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877) | Alternative | Lighter fallback. |
 
 ### Notes
 
@@ -33,21 +30,20 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 
 Whether food and cooking are mostly ambient support for travel and downtime or a deliberate progression-and-preparation layer.
 
-### Baseline
-
-- **Gourmet - A Cooking Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/96876)) — Main baseline. Balanced modern route.
-
-### Alternatives
-
-- **Complete Alchemy and Cooking Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19924)) — Integrated comparison if alchemy and cooking should be tightly fused.
-- **Alchemy Potions and Food Adjustments** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5877)) — Lighter fallback.
-- **Mealtime - A Food and Recipe Mod** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22496)) — Recipe-density companion if `Gourmet`'s scope feels too narrow.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Gourmet — A Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/96876) | Baseline | Balanced modern route. |
+| [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924) | Alternative | Integrated alchemy + cooking. |
+| [Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877) | Alternative | Lighter fallback. |
+| [Mealtime](https://www.nexusmods.com/skyrimspecialedition/mods/22496) | Alternative | Recipe-density companion if Gourmet's scope feels too narrow. |
 
 ### Visual Companions
 
-- **Hyper Realistic Cooked Beef** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/173752)) and **Hyper Realistic Bread** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/173283)) — Mesh/texture-only replacers. Zero plugin overhead.
-- **Skyrim 3D Cooking** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/23007)) — Higher-detail cooking pot, oven, and food-prep meshes. Mesh-only, zero plugin overhead.
-- **Realistic HD Food Remastered** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22087)) — Photorealistic food textures (bread, meat, fruits, vegetables, prepared dishes).
+| Mod | Notes |
+| --- | --- |
+| [Hyper Realistic Cooked Beef](https://www.nexusmods.com/skyrimspecialedition/mods/173752) + [Hyper Realistic Bread](https://www.nexusmods.com/skyrimspecialedition/mods/173283) | Mesh/texture-only replacers. Zero plugin overhead. |
+| [Skyrim 3D Cooking](https://www.nexusmods.com/skyrimspecialedition/mods/23007) | Higher-detail cooking pot, oven, food-prep meshes. Mesh-only, no plugin. |
+| [Realistic HD Food Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/22087) | Photorealistic food textures. |
 
 ### Notes
 
@@ -61,16 +57,13 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 
 What crafting is supposed to do: lightly improve vanilla smithing, become a broader rules-and-materials framework, or shift responsibility toward NPC services and roleplay texture.
 
-### Baseline
-
-- **Ars Metallica - Smithing Enhancement** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/321)) — Smithing XP, tanning, mining, basic crafting-loop improvements without heavy rules restructuring.
-- **Honed Metal - NPC Crafting and Enchanting Services** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61015)) — Locked NPC-service companion. Pay smiths/enchanters to craft, temper, enchant, and recharge items. Makes town services and gold economy matter.
-- **Thaumaturgy - An Enchanting Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57138)) — Simonrim-aligned enchanting overhaul. Designed to pair with `Mysticism` and `Adamant`. Prerequisite for artifact-overhaul content.
-
-### Alternatives
-
-- **Complete Crafting Overhaul Remastered** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28608)) — High-complexity comparison if material logic and crafting rules should become a major progression pillar.
-- **Summermyst - Enchantments of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6285)) — ~140 new enchantment effects to loot. Sits alongside `Thaumaturgy`. Needs compatibility verification before locking.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Ars Metallica](https://www.nexusmods.com/skyrimspecialedition/mods/321) | Baseline | Smithing XP, tanning, mining improvements. No heavy rules restructuring. |
+| [Honed Metal](https://www.nexusmods.com/skyrimspecialedition/mods/61015) | Baseline | NPC crafting/enchanting services. Makes gold economy matter. |
+| [Thaumaturgy — Enchanting Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/57138) | Baseline | Simonrim-aligned. Pairs with Mysticism + Adamant. Prerequisite for artifact overhauls. |
+| [Complete Crafting Overhaul Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/28608) | Alternative | High-complexity material logic and crafting rules. |
+| [Summermyst — Enchantments](https://www.nexusmods.com/skyrimspecialedition/mods/6285) | Alternative | ~140 new enchantment effects. Verify compatibility with Thaumaturgy. |
 
 ### Notes
 
@@ -84,27 +77,28 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 
 What economy and loot should feel like: lightly rebalanced merchant-and-pricing, deliberate loot distribution, or harsher scarcity-driven progression.
 
-### Baseline
-
-- **Trade and Barter** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/23081)) — Main merchant-pricing route.
-- **C.O.I.N. - Coins of Interesting Nature** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51439)) — Regional coin variety without touching prices or loot distribution.
-- **C.O.I.N. - Treasury Exchange** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131682)) — Currency exchange companion letting merchants convert coin types.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Trade and Barter](https://www.nexusmods.com/skyrimspecialedition/mods/23081) | Baseline | Merchant-pricing route. |
+| [C.O.I.N. — Coins of Interesting Nature](https://www.nexusmods.com/skyrimspecialedition/mods/51439) | Baseline | Regional coin variety. No price/loot changes. |
+| [C.O.I.N. — Treasury Exchange](https://www.nexusmods.com/skyrimspecialedition/mods/131682) | Baseline | Currency exchange for coin type conversion. |
+| [Open World Loot](https://www.nexusmods.com/skyrimspecialedition/mods/49681) | Alternative | Curated loot progression and encounter rewards. |
+| [MorrowLoot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058) | Alternative | Heavy scarcity. Only if deleveled loot is a defining pillar. |
 
 ### RiS Economy Series (optional)
 
-- **RiS - Encounter Zones** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149899)) — Reworks encounter zones for realism and variety with a randomizer. ESL flagged. No hard requirements.
-- **RiS - Evolving Economy** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149830)) — Dynamic pricing based on resources, season, Civil War, reputation, distance. Requires `Papyrus Ini Manipulator` and `powerofthree's Papyrus Extender`.
-- **RiS - Loot Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157259)) — Rarity-driven, contextually-aware loot with equipment breakage and deleveled artifacts. Requires `Papyrus Ini Manipulator` and `SkyUI`.
+| Mod | Purpose | Requirements |
+| --- | --- | --- |
+| [RiS — Encounter Zones](https://www.nexusmods.com/skyrimspecialedition/mods/149899) | Reworks encounter zones with randomizer. ESL-flagged. | None |
+| [RiS — Evolving Economy](https://www.nexusmods.com/skyrimspecialedition/mods/149830) | Dynamic pricing by resources, season, Civil War, reputation, distance. | Papyrus Ini Manipulator, Po3 Papyrus Extender |
+| [RiS — Loot Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/157259) | Rarity-driven loot, equipment breakage, deleveled artifacts. | Papyrus Ini Manipulator, SkyUI |
 
 ### Flavor & Content
 
-- **Narrative Loot** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12812)) — 1,629 lore-friendly miscellaneous items for world-building texture. No economy balance changes. Stacks cleanly with any economy baseline.
-- **SUDs - Skyrim's Unique Drinks** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85824)) — 50+ unique drink items with custom meshes, textures, and effects. Distributed through leveled lists and world placement.
-
-### Alternatives
-
-- **Open World Loot** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/49681)) — Curated loot progression and encounter rewards.
-- **MorrowLoot Ultimate** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3058)) — Heavy scarcity. Only if rare-item access and deleveled loot should become a defining identity pillar.
+| Mod | Notes |
+| --- | --- |
+| [Narrative Loot](https://www.nexusmods.com/skyrimspecialedition/mods/12812) | 1,629 lore-friendly misc items. No economy changes. Stacks cleanly. |
+| [SUDs — Skyrim's Unique Drinks](https://www.nexusmods.com/skyrimspecialedition/mods/85824) | 50+ unique drink items with custom meshes, textures, effects. |
 
 ### Notes
 
@@ -118,17 +112,14 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 
 Unique-item content packs that add depth to Daedric artifacts, dragon priest masks, unique weapons, and quest items. Treats artifact overhauls as a separate layer from crafting — they change what named items are, not how the player makes generic items.
 
-### Baseline
-
-- **Reliquary of Myth - Artifacts of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/31612)) — Artifact-stat and effect baseline. Rebalances legendary artifacts with unique enchantments and lore-friendly effects. 12K endorsements.
-- **ArteFakes - Unique Artifacts Replacer** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41254)) — Model-replacement companion. Higher-detail 3D models for unique items. Stacks cleanly with `Reliquary of Myth` (stats vs meshes).
-- **Konahrik's Accoutrements** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22206)) — Dragon-priest-specific companion. Upgrades named encounters with new gear, masks, harder fights. The only one that Legacy of the Dragonborn museum integration cares about directly.
-- **Unique Items Tweaks - Improved Miscellaneous Artifacts** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33723)) — Gap-filler for artifacts `Reliquary of Myth` doesn't cover.
-- **Artificer - An Artifact Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99619)) — Simonrim-aligned alternative to `Reliquary of Myth`. Requires `Thaumaturgy` and `Mysticism` (both locked). **Choose one artifact overhaul baseline — not both.** Prefer if full Simonrim ecosystem coherence matters more.
-
-### Alternatives
-
-- **Discipline-first route** — Vanilla artifact stats. Functional but front-loaded toward late-game Daedric items.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Reliquary of Myth](https://www.nexusmods.com/skyrimspecialedition/mods/31612) | Baseline | Artifact stats and effects. 12K endorsements. |
+| [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254) | Baseline | Higher-detail 3D models for unique items. Stacks with Reliquary of Myth. |
+| [Konahrik's Accoutrements](https://www.nexusmods.com/skyrimspecialedition/mods/22206) | Baseline | Dragon-priest gear, masks, harder fights. LoTD museum integration. |
+| [Unique Items Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/33723) | Baseline | Gap-filler for artifacts Reliquary of Myth doesn't cover. |
+| [Artificer](https://www.nexusmods.com/skyrimspecialedition/mods/99619) | Baseline (*choose one*) | Simonrim-aligned alternative to Reliquary of Myth. Requires Thaumaturgy + Mysticism. |
+| Discipline-first route | Alternative | Vanilla artifact stats. |
 
 ### Notes
 
@@ -143,16 +134,13 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 Weapon content packs adding new named and leveled-list weapons fitting vanilla's medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
-### Baseline
-
-- **Heavy Armory - New Weapons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6308)) — 150+ lore-friendly weapons across 11 new types (halberds, spears, glaives, shortswords, quarterstaves, mauls, hatchets, clubs, long maces, shortspears, tridents). OAR-compatible animations for polearms, leveled-list integration.
-- **LeanWolf's Better-Shaped Weapons SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2017)) — Mesh-quality companion upgrading vanilla weapon silhouettes. Stacks cleanly with `Heavy Armory` (different records).
-- **Legendary Skyrim Crossbows and Bows SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/8273)) — Specialty crossbow-and-bow route with named and unique variants. Lock only if ranged combat is a viable build path.
-
-### Alternatives
-
-- **Immersive Weapons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/16788)) — Legacy comparison (230+ weapons). Unmaintained since April 2018. Synthesis patcher has explicit `Bash Tags` for it.
-- **Discipline-first route** — Vanilla weapons only.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Heavy Armory](https://www.nexusmods.com/skyrimspecialedition/mods/6308) | Baseline | 150+ lore-friendly weapons, 11 new types. OAR-compatible polearm animations. |
+| [LeanWolf's Better-Shaped Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/2017) | Baseline | Upgraded vanilla weapon silhouettes. Stacks with Heavy Armory. |
+| [Legendary Skyrim Crossbows and Bows](https://www.nexusmods.com/skyrimspecialedition/mods/8273) | Baseline | Specialty named/unique crossbows and bows. Lock if ranged is a viable build path. |
+| [Immersive Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/16788) | Alternative | 230+ weapons. Unmaintained since Apr 2018. |
+| Discipline-first route | Alternative | Vanilla weapons only. |
 
 ### Notes
 
@@ -167,27 +155,24 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 
 Armor content packs adding new named and leveled-list armors fitting the medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
-### Baseline
-
-- **Immersive Armors** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3479)) — 200+ new armors with leveled-list integration. 206K endorsements. Synthesis patcher has explicit `Bash Tags`.
-- **NordwarUA Total Armor and Weapon Compilation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61423)) — Visual model overhaul compiling six NordwarUA mods. Standardizes cubemaps, no stat changes.
-- **Common Clothes and Armors** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21305)) — Clothing-and-light-armor variants for bandits, sellswords, travelers. Clothing-side companion to `NordwarUA`.
-- **Bandolier - Bags and Pouches Classic** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2417)) — Carry-capacity utility. Bags, pouches, bandoliers with MCM configuration.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Immersive Armors](https://www.nexusmods.com/skyrimspecialedition/mods/3479) | Baseline | 200+ new armors, leveled-list integration. 206K endorsements. |
+| [NordwarUA Total Armor Compilation](https://www.nexusmods.com/skyrimspecialedition/mods/61423) | Baseline | Visual model overhaul — 6 NordwarUA mods. Cubemap standardization, no stat changes. |
+| [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305) | Baseline | Clothing/light-armor variants for bandits, sellswords, travelers. |
+| [Bandolier — Bags and Pouches](https://www.nexusmods.com/skyrimspecialedition/mods/2417) | Baseline | Carry-capacity utility with MCM config. |
+| Discipline-first route | Alternative | Vanilla armor sets only. |
 
 ### Immersive Armors Visual Pipeline
->
-> **Stack order:** `Immersive Armors` → `Immersive Armors Retexture and Mesh Fixes SE` → (optional) `IA - Realistic Armors replace by Xtudo` → (choose one female path) `IA CBBE 3BA BodySlide` OR the CBBE patch bundled with `IA HIMBO Conversion V2` → (if male body) `IA HIMBO Conversion V2`.
 
-- **Immersive Armors Retexture and Mesh Fixes SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75891)) — **Required** visual companion. Fixes broken meshes, outdated textures, UV maps. Foundation all other IA mesh mods build on.
-- **Immersive Armours - SSE CBBE 3BA BodySlide** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22382)) — BodySlide files for all female IA outfits. Choose one female conversion path — **do not stack** with Retexture/Mesh Fixes' bundled CBBE meshes.
-- **Immersive Armor HIMBO Conversion V2** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76552)) — BodySlide conversion for all IA armors for HIMBO. Designed to stack on top of Retexture/Mesh Fixes. Includes CBBE compatibility patch.
-- **Immersive Armors - Realistic Armors replace SE by Xtudo** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36746)) — Optional art-direction patch swapping 10 IA sets for NordWarUA's Realistic Armors. Requires `Realistic Armor` (36151) as hard dependency.
+> **Stack order:** `Immersive Armors` → `Retexture and Mesh Fixes` → (optional) `Realistic Armors replace by Xtudo` → (choose one female path) `CBBE 3BA BodySlide` OR HIMBO's CBBE patch → (if male) `HIMBO Conversion V2`.
 
-> Run BodySlide after all IA mods are installed, then rebuild all IA batches.
-
-### Alternatives
-
-- **Discipline-first route** — Vanilla armor sets only.
+| Mod | Role | Notes |
+| --- | --- | --- |
+| [Immersive Armors Retexture and Mesh Fixes SE](https://www.nexusmods.com/skyrimspecialedition/mods/75891) | Required | Fixes broken meshes, outdated textures, UV maps. Foundation for all IA mesh mods. |
+| [IA — SSE CBBE 3BA BodySlide](https://www.nexusmods.com/skyrimspecialedition/mods/22382) | Female path | BodySlide for all female IA outfits. Do not stack with Retexture/Mesh Fixes' bundled CBBE meshes. |
+| [IA HIMBO Conversion V2](https://www.nexusmods.com/skyrimspecialedition/mods/76552) | Male path | BodySlide for all IA armors for HIMBO. Stacks on Retexture/Mesh Fixes. Includes CBBE patch. |
+| [IA — Realistic Armors replace by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/36746) | Optional | Swaps 10 IA sets for NordWarUA Realistic Armors. Requires Realistic Armor (36151). |
 
 ### Notes
 
@@ -204,18 +189,15 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 Clothing content packs adding new clothing, cloaks, and wearable non-armor items. More wardrobe variety without making every NPC a fashion show.
 
-### Baseline
-
-- **Armor and Clothing Extension** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19002)) — Clothing-diversity baseline with lore-friendly options and NPC-appropriate attire (35K+ endorsements). Requires `RUSTIC CLOTHING - SE` (→ `Graphics`) and `SkyUI` (→ `Foundations`).
-- **Common Clothes and Armors** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21305)) — Common-cloth variety companion pairing with ACE for bandit/sellsword archetypes.
-- **Sforzinda Imitations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54346)) — Handmade curated boutique clothing. Not automatic baseline — treat as an explicit add-on. Cut if it pulls the list toward boutique-fantasy wardrobe.
-- **Cloaks of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6369)) — 100+ new cloaks for player and NPCs via SPID distribution. Most visually impactful wearable slot in third-person.
-- **Colovian Noble Clothes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/4464)) — Imperial-themed high-status clothing pass. Pairs with Beyond Skyrim content.
-- **Knapsack Backpacks SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3440)) — Carry-and-wearable utility with MCM configuration. Cosmetic companion to `Bandolier` (armor subsection).
-
-### Alternatives
-
-- **Discipline-first route** — Vanilla clothing only.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Armor and Clothing Extension](https://www.nexusmods.com/skyrimspecialedition/mods/19002) | Baseline | Clothing diversity. 35K+ endorsements. Requires RUSTIC CLOTHING + SkyUI. |
+| [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305) | Baseline | Common-cloth variety for bandit/sellsword archetypes. |
+| [Sforzinda Imitations](https://www.nexusmods.com/skyrimspecialedition/mods/54346) | Baseline | Curated boutique clothing. Cut if it pulls toward boutique-fantasy wardrobe. |
+| [Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/6369) | Baseline | 100+ cloaks via SPID. Highest third-person visual impact. |
+| [Colovian Noble Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/4464) | Baseline | Imperial-themed high-status clothing. Pairs with Beyond Skyrim. |
+| [Knapsack Backpacks SE](https://www.nexusmods.com/skyrimspecialedition/mods/3440) | Baseline | Carry-and-wearable utility with MCM. Cosmetic companion to Bandolier. |
+| Discipline-first route | Alternative | Vanilla clothing only. |
 
 ### Notes
 

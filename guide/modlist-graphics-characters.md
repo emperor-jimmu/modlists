@@ -14,25 +14,30 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 
 #### Female Body
 
-- **CBBE NSFW** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74257)) — Female body base.
-- **CBBE 3BA (3BBB)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30174)) — Extension and preset ecosystem.
-- **BnP - Female Skin** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65274)) — Female skin textures.
+| Mod | Notes |
+| --- | --- |
+| [CBBE NSFW](https://www.nexusmods.com/skyrimspecialedition/mods/74257) | Female body base. |
+| [CBBE 3BA (3BBB)](https://www.nexusmods.com/skyrimspecialedition/mods/30174) | Extension and preset ecosystem. |
+| [BnP — Female Skin](https://www.nexusmods.com/skyrimspecialedition/mods/65274) | Female skin textures. |
 
 #### Male Body
 
-- **HIMBO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74174)) — Male body base.
-- **BnP - Male Skin** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65402)) — Male skin textures.
+| Mod | Notes |
+| --- | --- |
+| [HIMBO](https://www.nexusmods.com/skyrimspecialedition/mods/74174) | Male body base. |
+| [BnP — Male Skin](https://www.nexusmods.com/skyrimspecialedition/mods/65402) | Male skin textures. |
 
 #### Character Creation
 
-- **RaceMenu SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29624)) — Character creation framework.
-- **High Poly Head 1.4 SE** — Official Google Drive mirror: <https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi>
-    - If using, pair with `Expressive Facegen Morphs SE`, `Expressive Facial Animation -Female Edition-`, and `Expressive Facial Animation -Male Edition-`.
-- **SlimFantasy - 3BAv2 Body Preset** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119145)) — Chosen female Bodyslide preset. Slim/lean silhouette matching a natural dancer physique — small bust, narrow hips, straight figure.
-- **HIMBO Preset - Chadborn** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155757)) — Chosen male Bodyslide preset. Heavily-muscular build for the player character (Arnold/Viper-type physique at weight 100, leaner at lower weights).
-- **Lovely Makeup - Racemenu Overlays** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94271)) — Makeup overlay collection for RaceMenu.
-- **Lovely Makeup 2 - Racemenu Overlays** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/102335)) — Additional makeup overlay collection.
-- **Koralina's Freckles and Moles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62508)) — Freckle and mole overlays for RaceMenu.
+| Mod | Notes |
+| --- | --- |
+| [RaceMenu SE](https://www.nexusmods.com/skyrimspecialedition/mods/29624) | Character creation framework. |
+| High Poly Head 1.4 SE | [Google Drive mirror](https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi). Pair with Expressive Facegen Morphs + Expressive Facial Animation (Female + Male). |
+| [SlimFantasy — 3BAv2 Body Preset](https://www.nexusmods.com/skyrimspecialedition/mods/119145) | Female Bodyslide preset. Slim/lean dancer physique. |
+| [HIMBO Preset — Chadborn](https://www.nexusmods.com/skyrimspecialedition/mods/155757) | Male Bodyslide preset. Muscular build. |
+| [Lovely Makeup — Racemenu Overlays](https://www.nexusmods.com/skyrimspecialedition/mods/94271) | Makeup overlay collection. |
+| [Lovely Makeup 2](https://www.nexusmods.com/skyrimspecialedition/mods/102335) | Additional makeup overlays. |
+| [Koralina's Freckles and Moles](https://www.nexusmods.com/skyrimspecialedition/mods/62508) | Freckle and mole overlays. |
 
 ### Face Mesh Branch Notes
 
@@ -118,21 +123,25 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 ### Clothing And Armor Texture Upgrades
 
-- **Immersive Fur Garments** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77073)) — New fur garments to leveled lists.
-- **Immersive Fur Garments - SPID** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/82177)) — SPID distribution addon (ESL-flagged). Install base mod (meshes/textures only, delete .esp) + SPID addon.
-- **Faultier's PBR Armors and Clothes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175319), 2.9 GB) — Complete PBR retexture of all vanilla armors, weapons, clothes. Requires Community Shaders and PGPatcher.
-- **RUSTIC CLOTHING - Special Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/4703)) — Higher-res clothing textures. Test for style consistency.
-- **Dwemer Armors and Weapons Retexture SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93088)) — Gear-side companion to VPBR's Dwemer ruin textures.
-- **Steel Armor Redone - PBR and Complex Material** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177513)) — PBR retexture of CC Steel Armor. Requires CC Alternative Armors - Steel Soldier, Community Shaders, PGPatcher. Optional.
-- **Robes Retexture SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110655)) — Higher-quality robe textures for all vanilla robes.
-- **Divine Crusader Retexture SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123738)) — Retexture of the Divine Crusader armor set.
-- **Nirn Necessities - SMP Accessories** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112481)) — SMP-physics clothing accessories. Install base mod; add the PBR patch ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135807)) if using CS PBR.
+| Mod | Notes |
+| --- | --- |
+| [Immersive Fur Garments](https://www.nexusmods.com/skyrimspecialedition/mods/77073) | New fur garments to leveled lists. |
+| [Immersive Fur Garments — SPID](https://www.nexusmods.com/skyrimspecialedition/mods/82177) | SPID distribution addon (ESL-flagged). Install base mod (delete .esp) + SPID addon. |
+| [Faultier's PBR Armors and Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/175319) (2.9 GB) | Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher. |
+| [RUSTIC CLOTHING — SE](https://www.nexusmods.com/skyrimspecialedition/mods/4703) | Higher-res clothing textures. Test for style consistency. |
+| [Dwemer Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/93088) | Gear-side companion to VPBR's Dwemer ruin textures. |
+| [Steel Armor Redone — PBR](https://www.nexusmods.com/skyrimspecialedition/mods/177513) | PBR retexture of CC Steel Armor. Requires CC Alternative Armors — Steel Soldier, CS, PGPatcher. Optional. |
+| [Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655) | Higher-quality robe textures for all vanilla robes. |
+| [Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738) | Retexture of Divine Crusader armor set. |
+| [Nirn Necessities — SMP Accessories](https://www.nexusmods.com/skyrimspecialedition/mods/112481) | SMP-physics clothing accessories. Add [PBR patch](https://www.nexusmods.com/skyrimspecialedition/mods/135807) if using CS PBR. |
 
 ---
 
 ### Recommended Creature Baseline
 
-- **Bellyaches Animal and Creature Pack SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6839))
+| Mod | Notes |
+| --- | --- |
+| [Bellyaches Animal and Creature Pack SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6839) | Creature texture foundation. |
 
 ---
 
@@ -151,17 +160,15 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 Per-character face assets: hairstyles, eye textures, and beard options. Ensures character close-ups match the grim-dark tone without pulling in full NPC face-gen overhauls.
 
-### Baseline
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817) | Baseline | Community-canonical hair pack. 141K endorsements. |
+| [Eyes Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/131210) | Baseline | Khisartin-style eye textures, grim-dark tone. |
+| [LDD Clean Cubemap for Eyes 4K](https://www.nexusmods.com/skyrimspecialedition/mods/168060) | Baseline | Cleaner eye cubemaps. Stacks on eye-texture baseline. |
+| [The Eyes Of Beauty SSE](https://www.nexusmods.com/skyrimspecialedition/mods/16185) | Alternative | Community-standard alternative to Eyes Nouveaux. |
+| Discipline-first route | Alternative | Rely on vanilla hair and eye textures entirely. |
 
-- **KS Hairdos SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6817)) — Community-canonical hair pack (141K endorsements).
-- **Eyes Nouveaux** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131210)) — Khisartin-style eye textures fitting grim-dark tone.
-- **LDD Clean Cubemap for Eyes 4K** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168060)) — Cleaner eye cubemap textures. Stacks on top of eye-texture baseline.
-- Keep the beard decision minimal; vanilla beards work well with the chosen body and face mesh stack.
-
-### Alternatives
-
-- **The Eyes Of Beauty SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/16185)) — Long-standing community-standard alternative to Eyes Nouveaux.
-- Discipline-first route: rely on vanilla hair and eye textures entirely.
+Keep the beard decision minimal; vanilla beards work well with the chosen body and face mesh stack.
 
 ### Notes
 
@@ -176,14 +183,11 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 
 Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skeleton models in dungeons, Nordic ruins, draugr crypts, dragon priest rooms. Kept separate from the rigged skeleton baseline in → `Animations`.
 
-### Baseline
-
-- **Skeleton Replacer HD - SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52845)) — High-resolution skeleton/bone models and textures. Choose the **2K** main file — skeletons are medium-scale clutter, not hero assets; 4K is wasted VRAM.
-- **Skeleton Replacer HD - Mesh Patches for Various Mods** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177253)) — Add only if the modlist includes a creature/content mod needing a mesh patch.
-
-### Alternatives
-
-- Discipline-first: rely on vanilla skeleton assets and skip the replacer entirely (most skeleton models are seen briefly during dungeon traversal).
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Skeleton Replacer HD — SE](https://www.nexusmods.com/skyrimspecialedition/mods/52845) | Baseline | High-res skeleton/bone models. Choose **2K** main file. |
+| [Skeleton Replacer HD — Mesh Patches](https://www.nexusmods.com/skyrimspecialedition/mods/177253) | Baseline | Add only if modlist includes a creature/content mod needing a mesh patch. |
+| Discipline-first route | Alternative | Rely on vanilla skeleton assets. |
 
 ### Notes
 

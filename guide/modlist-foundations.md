@@ -12,29 +12,31 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 
 ### Core Libraries → separator: `Foundations - Core Libraries`
 
-- **Address Library for SKSE Plugins** — Universal SKSE plugin compatibility layer for 1.6.1170.
-- **USSEP** — Foundational record patch. Requires the four free CC masters — no paid AE Upgrade needed.
-- **SSE Engine Fixes** — Critical engine-level stability and bug fixes.
-- **SSE Display Tweaks** — Mandatory display and frame-pacing control.
-- **Scrambled Bugs** — Collection of low-level engine tweaks.
-- **powerofthree's Tweaks** — SKSE plugin tweak framework; hard dependency for many modern mods.
-- **powerofthree's Papyrus Extender** — Extended Papyrus scripting functions.
-- **PapyrusUtil** — Papyrus array/map utilities.
-- **JContainers** — JSON data storage for Papyrus.
-- **Keyword Item Distributor (KID)** — Distributes keywords to items without patching.
-- **Spell Perk Item Distributor (SPID)** — Distributes spells/perks to NPCs dynamically.
-- **Base Object Swapper (BOS)** — Swaps base objects via rules without direct overrides.
-- **Crash Logger SSE AE VR** — Crash dump logging for diagnosing CTDs.
-- **SkyPatcher** — SKSE-based vanilla record patcher; hard requirement for several NPC/AI mods.
-- **Dual Casting Fix** — Required by Blade and Blunt.
-- **Andrealphus' Papyrus Functions** — Required by Dragon War.
-- **ConsoleUtilSSE NG** — Required by Dragon War and several animation behavior mods.
-- **Kris's Papyrus Extender** — Required by Bathing in Skyrim - Renewed.
-- **Animation Queue Fix** — Animation-stack stability for heavy OAR/behavior loads.
-- **Papyrus Tweaks NG** — Script-engine performance optimization; widely adopted baseline.
-- **Lexicon SKSE** — Required by Actor Value Generator.
-- **Actor Value Generator** — Required by Classic Attributes.
-- **XEMI Utility** — Required by FYX - Nordic Doors and Traps Collisions.
+| Mod | Purpose |
+| --- | --- |
+| Address Library for SKSE Plugins | Universal SKSE plugin compatibility layer for 1.6.1170. |
+| USSEP | Foundational record patch. Requires the four free CC masters — no paid AE Upgrade needed. |
+| SSE Engine Fixes | Critical engine-level stability and bug fixes. |
+| SSE Display Tweaks | Mandatory display and frame-pacing control. |
+| Scrambled Bugs | Collection of low-level engine tweaks. |
+| powerofthree's Tweaks | SKSE plugin tweak framework; hard dependency for many modern mods. |
+| powerofthree's Papyrus Extender | Extended Papyrus scripting functions. |
+| PapyrusUtil | Papyrus array/map utilities. |
+| JContainers | JSON data storage for Papyrus. |
+| Keyword Item Distributor (KID) | Distributes keywords to items without patching. |
+| Spell Perk Item Distributor (SPID) | Distributes spells/perks to NPCs dynamically. |
+| Base Object Swapper (BOS) | Swaps base objects via rules without direct overrides. |
+| Crash Logger SSE AE VR | Crash dump logging for diagnosing CTDs. |
+| SkyPatcher | SKSE-based vanilla record patcher; hard requirement for several NPC/AI mods. |
+| Dual Casting Fix | Required by Blade and Blunt. |
+| Andrealphus' Papyrus Functions | Required by Dragon War. |
+| ConsoleUtilSSE NG | Required by Dragon War and several animation behavior mods. |
+| Kris's Papyrus Extender | Required by Bathing in Skyrim - Renewed. |
+| Animation Queue Fix | Animation-stack stability for heavy OAR/behavior loads. |
+| Papyrus Tweaks NG | Script-engine performance optimization; widely adopted baseline. |
+| Lexicon SKSE | Required by Actor Value Generator. |
+| Actor Value Generator | Required by Classic Attributes. |
+| XEMI Utility | Required by FYX - Nordic Doors and Traps Collisions. |
 
 ### SkyPatcher And SkyPatched Mods → separator: `Foundations - Core Libraries`
 
@@ -61,9 +63,11 @@ A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of
 
 ### Mesh & Texture Fixes → separator: `Foundations - Mesh & Texture Fixes`
 
-- **Particle Patch** — Particle shader/LOD corrections, CS-compatible.
-- **Assorted Mesh Fixes** — Corrections for common visual mesh errors.
-- **Flickering Meshes Fix** — Resolves distant-object mesh flicker in landscape transitions.
+| Mod | Purpose |
+| --- | --- |
+| Particle Patch | Particle shader/LOD corrections, CS-compatible. |
+| Assorted Mesh Fixes | Corrections for common visual mesh errors. |
+| Flickering Meshes Fix | Resolves distant-object mesh flicker in landscape transitions. |
 
 ---
 
@@ -192,20 +196,21 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 ## Targeted Bugfix Mods → separator: `Foundations - Targeted Bugfixes`
 
-### Baseline
-- **Fuz Ro D-oh - Silent Voice** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15109)) — Subtitle safety for unvoiced dialogue.
-- **Actor Limit Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/32349)) — Crowded scene / facial animation reliability.
-- **Equip Enchantment Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42839)) — Enchantments dropping off while equipped.
-- **NPC AI Process Position Fix - NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69326)) — NPC processing after waiting/fast travel.
-- **Simple Offence Suppression** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41764)) — Accidental hostility from stray hits.
-- **Bug Fixes SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33261)) — Crafting-menu, perk-application, and water-behavior fixes.
-- **Navigator - Navmesh Fixes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52641)) — Follower pathing in complex worldspaces.
-- **Barter Limit Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77173)) — Merchant gold cap overflow.
-- **Mum's the Word NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77409)) — Worthless stolen-item tagging.
-- **Regional Save Names** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/49698)) — Save labeling for testing hygiene.
-- **Better Jumping SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18967)) — Consistent jumping control.
-- **LeveledList Crash Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129136)) — Leveled-list crash protection.
-- **Explosion Collision Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/154076)) — Prevents explosion-force spells from launching objects into camera.
+| Mod | Purpose |
+| --- | --- |
+| [Fuz Ro D-oh - Silent Voice](https://www.nexusmods.com/skyrimspecialedition/mods/15109) | Subtitle safety for unvoiced dialogue. |
+| [Actor Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/32349) | Crowded scene / facial animation reliability. |
+| [Equip Enchantment Fix](https://www.nexusmods.com/skyrimspecialedition/mods/42839) | Enchantments dropping off while equipped. |
+| [NPC AI Process Position Fix - NG](https://www.nexusmods.com/skyrimspecialedition/mods/69326) | NPC processing after waiting/fast travel. |
+| [Simple Offence Suppression](https://www.nexusmods.com/skyrimspecialedition/mods/41764) | Accidental hostility from stray hits. |
+| [Bug Fixes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/33261) | Crafting-menu, perk-application, and water-behavior fixes. |
+| [Navigator - Navmesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/52641) | Follower pathing in complex worldspaces. |
+| [Barter Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/77173) | Merchant gold cap overflow. |
+| [Mum's the Word NG](https://www.nexusmods.com/skyrimspecialedition/mods/77409) | Worthless stolen-item tagging. |
+| [Regional Save Names](https://www.nexusmods.com/skyrimspecialedition/mods/49698) | Save labeling for testing hygiene. |
+| [Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967) | Consistent jumping control. |
+| [LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136) | Leveled-list crash protection. |
+| [Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076) | Prevents explosion-force spells from launching objects into camera. |
 
 ### Not Installed
 - **I'm Walkin' Here NG with Pets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122516)) — Ally/pet body-blocking fix.

@@ -64,8 +64,10 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ## Hit Reactions, Stagger, And Impact Feedback → separator: `Third-Person - Combat & Targeting`
 
-- **Valhalla Combat** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64741)) — Main gameplay-side comparison for hit feedback and stagger.
-- **Precision** (from → `Animations`) — Adjacent support for contact feel.
+| Mod | Notes |
+| --- | --- |
+| [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Main gameplay-side comparison for hit feedback and stagger. |
+| Precision (from → `Animations`) | Adjacent support for contact feel. |
 
 ### Notes
 - Too much stagger flattens combat; too little leaves animations unsatisfying.
@@ -75,43 +77,38 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ## Third-Person Combat Systems → separator: `Third-Person - Combat & Targeting`
 
-Balanced modern route: Valhalla Combat as the gameplay-rules framework. MCO ADXP as the ambitious alternative to compare against.
-
-- **Valhalla Combat** — Gameplay-rule framework.
-- **MCO ADXP - Modern Movement Combat Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117115)) — Ambitious alternative. Re-evaluate deliberately.
-- **SCAR** (from → `Animations`) — NPC-side attack variety.
-
-### MCO Route Support (only if MCO is chosen)
-- **Knockback SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171277))
-
-### Optional Additions
-- **RaySense - Cover Animation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175504))
-- **Fire Ignites Arrows** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118544))
-- **Poisoned Arrows and Bolts** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123585))
-- **Variadic Collision Dynamics** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/183892)) — Runtime collision-capsule adjustments.
-    - **Variadic Collision Dynamics - Resources** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/184110)) — Ready-to-use JSON presets.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Baseline | Gameplay-rule framework. |
+| [MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115) | Alternative | Ambitious alternative. Re-evaluate deliberately. |
+| SCAR (from → `Animations`) | Baseline | NPC-side attack variety. |
+| [Knockback SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/171277) | Support | Required only if MCO is chosen. |
+| [RaySense - Cover Animation](https://www.nexusmods.com/skyrimspecialedition/mods/175504) | Optional | Cover animation system. |
+| [Fire Ignites Arrows](https://www.nexusmods.com/skyrimspecialedition/mods/118544) | Optional | Arrow ignition from fire sources. |
+| [Poisoned Arrows and Bolts](https://www.nexusmods.com/skyrimspecialedition/mods/123585) | Optional | Poison crafting for ranged ammo. |
+| [Variadic Collision Dynamics](https://www.nexusmods.com/skyrimspecialedition/mods/183892) | Optional | Runtime collision-capsule adjustments. |
+| [Variadic Collision Dynamics - Resources](https://www.nexusmods.com/skyrimspecialedition/mods/184110) | Optional | Ready-to-use JSON presets for VCD. |
 
 ---
 
 ## Crosshair And Aiming Behavior → separator: `Third-Person - Combat & Targeting`
 
-Disciplined aiming route: camera framing is the baseline aiming context.
-
-- **Better Third Person Selection - BTPS** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64339)) — Object-selection reliability.
-- **TrueHUD** — Optional aiming readability aid.
-- **Ricochet - Arrow Physics Framework** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160603)) — Lock only if archery is a meaningful combat style.
+| Mod | Notes |
+| --- | --- |
+| [Better Third Person Selection - BTPS](https://www.nexusmods.com/skyrimspecialedition/mods/64339) | Object-selection reliability. |
+| TrueHUD | Optional aiming readability aid. |
+| [Ricochet - Arrow Physics Framework](https://www.nexusmods.com/skyrimspecialedition/mods/160603) | Lock only if archery is a meaningful combat style. |
 
 ---
 
 ## Horse Camera And Mounted Controls → separator: `Third-Person - Mounted`
 
-### Baseline
-- **Press H to Horse** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81195)) — Actively maintained (May 2026). Few vanilla record edits.
-- **Horses Simply Turn Better** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57790)) — Free add-on. Sharpens turning radius for TDM.
-
-### Alternatives
-- **Convenient Horses** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9519)) — Last updated Jan 2022 (stale).
-- **Simplest Horses** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54225)) — Lightweight SPID+MCM drop-in.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Press H to Horse](https://www.nexusmods.com/skyrimspecialedition/mods/81195) | Baseline | Actively maintained (May 2026). Few vanilla record edits. |
+| [Horses Simply Turn Better](https://www.nexusmods.com/skyrimspecialedition/mods/57790) | Baseline | Free add-on. Sharpens turning radius for TDM. |
+| [Convenient Horses](https://www.nexusmods.com/skyrimspecialedition/mods/9519) | Alternative | Last updated Jan 2022 (stale). |
+| [Simplest Horses](https://www.nexusmods.com/skyrimspecialedition/mods/54225) | Alternative | Lightweight SPID+MCM drop-in. |
 
 ---
 

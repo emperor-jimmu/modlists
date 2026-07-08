@@ -124,14 +124,15 @@ Roads as built infrastructure at mesh/geometry level (separate from surface text
 
 Weather-aware wind physics, dynamic cloth, and airborne particles for physical world-layer motion.
 
-### Baseline
-- **Dynamic Wind Framework - SKSE Plugin** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177023)) — Infrastructure baseline.
-- **Dynamic Wind - Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177024)) — Required data companion with weather/location profiles.
-- **Particle Wind - SKSE Plugin** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174812)) — Dust, leaves, snow, ash respond to wind direction.
-- **Realistic Boat Bobbing SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26080)) + **BOS Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/88885))
-- **R.A.S.S. - Rain Ash And Snow Shaders** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22745)) — Visible rain droplets, snow accumulation, ash/frost shaders on player/NPCs. 33K+ endorsements.
-- **Animated Icebergs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121420))
-- **Animated Ice Floes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90634))
+| Mod | Notes |
+| --- | --- |
+| [Dynamic Wind Framework - SKSE Plugin](https://www.nexusmods.com/skyrimspecialedition/mods/177023) | Infrastructure baseline. |
+| [Dynamic Wind - Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/177024) | Required data companion with weather/location profiles. |
+| [Particle Wind - SKSE Plugin](https://www.nexusmods.com/skyrimspecialedition/mods/174812) | Dust, leaves, snow, ash respond to wind direction. |
+| [Realistic Boat Bobbing SE](https://www.nexusmods.com/skyrimspecialedition/mods/26080) + [BOS Edition](https://www.nexusmods.com/skyrimspecialedition/mods/88885) | Boat bobbing with BOS mesh swap support. |
+| [R.A.S.S. - Rain Ash And Snow Shaders](https://www.nexusmods.com/skyrimspecialedition/mods/22745) | Visible rain droplets, snow accumulation, ash/frost shaders on player/NPCs. 33K+ endorsements. |
+| [Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420) | Drifting iceberg meshes in northern waters. |
+| [Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634) | Animated ice floe meshes in cold regions. |
 
 ### Notes
 - **R.A.S.S. + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. handles actor surfaces. Should coexist without conflicts — verify in testing.
@@ -140,17 +141,19 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ## Night Darkness And Visibility Balance → separator: `World Feel - Nights & Wildlife`
 
-### Baseline
-- Darkness baseline from the weather mod and CS pair selected in → `Graphics` first.
-- **Simply Darker Nights** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14269)) — Simple image-space overlay. Verify it's not redundant before adding.
-- **Lanterns of Skyrim II** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30817)) — Road and settlement exterior lantern placement. Lighting-framework-agnostic. FOMOD patch hub covers ~30-50 patches vs Lux Via's ~80-120.
-- **CS Lantern Lights - Lanterns of Skyrim II** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179964)) — CS particle lights for LoS II. Install after LoS II.
-- **Simple Wearable Lanterns - Remastered** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132196)) — Preferred carried-visibility branch. Modern, lightweight, no SKSE.
+| Mod | Notes |
+| --- | --- |
+| Darkness baseline from the weather mod and CS pair selected in → `Graphics` | Base darkness level. |
+| [Simply Darker Nights](https://www.nexusmods.com/skyrimspecialedition/mods/14269) | Simple image-space overlay. Verify it's not redundant before adding. |
+| [Lanterns of Skyrim II](https://www.nexusmods.com/skyrimspecialedition/mods/30817) | Road and settlement exterior lantern placement. FOMOD patch hub covers ~30-50 patches. |
+| [CS Lantern Lights - Lanterns of Skyrim II](https://www.nexusmods.com/skyrimspecialedition/mods/179964) | CS particle lights for LoS II. Install after LoS II. |
+| [Simple Wearable Lanterns - Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/132196) | Preferred carried-visibility branch. Modern, lightweight, no SKSE. |
 
-### Alternatives
-- **Torches Candlelight and Lanterns** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/162694)) — Physics-equipped lanterns, NPC distribution. Requires BOS, MCM Helper.
-- **Realistic Usable Lanterns** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110563)) — Finite candles as consumable resource.
-- **Handheld Lanterns - HDT-SMP** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135973)) — Physics-equipped with sway. Requires FSMP.
+| Mod | Notes |
+| --- | --- |
+| [Torches Candlelight and Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/162694) | Physics-equipped lanterns, NPC distribution. Requires BOS, MCM Helper. |
+| [Realistic Usable Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/110563) | Finite candles as consumable resource. |
+| [Handheld Lanterns - HDT-SMP](https://www.nexusmods.com/skyrimspecialedition/mods/135973) | Physics-equipped with sway. Requires FSMP. |
 
 ---
 

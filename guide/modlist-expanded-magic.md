@@ -12,14 +12,11 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 How much rules density and specialization pressure the list actually wants once race and standing-stone choices are in place.
 
-### Baseline
-
-- **Adamant - A Perk Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30191)) — Main baseline. Balanced modern route.
-
-### Alternatives
-
-- **Vokrii - Minimalistic Perks of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26176)) — Restrained comparison if `Adamant` feels too system-forward.
-- **Ordinator - Perks of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1137)) — High-complexity branch if perks should become a dominant source of build identity.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Adamant — A Perk Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/30191) | Baseline | Balanced modern route. |
+| [Vokrii — Minimalistic Perks](https://www.nexusmods.com/skyrimspecialedition/mods/26176) | Alternative | Restrained if Adamant feels too system-forward. |
+| [Ordinator — Perks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1137) | Alternative | High-complexity branch. |
 
 ### Notes
 
@@ -33,25 +30,19 @@ How much rules density and specialization pressure the list actually wants once 
 
 How broad, readable, and build-defining magic should feel once race, standing-stone, and perk baseline are in place.
 
-### Baseline
-
-- **Mysticism - A Magic Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27839)) — Main baseline. Balanced modern route.
-- **Triumvirate - Mage Archetypes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39170)) — Locked companion spell pack. Adds identity-driven archetype spells (Cleric, Druid, Shadow Mage, Shaman, Warlock) by EnaiSiaion. Each archetype is self-contained.
-- **Strange Runes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19438)) — Locked magic-visual companion. Floating Nordic runes during spell charging. Zero gameplay impact, reads clearly in third-person. No record conflicts.
-
-### Alternatives
-
-- **Odin - Skyrim Magic Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46000)) — Moderate expansion. Compare if `Mysticism` feels too restrained.
-- **Apocalypse - Magic of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1090)) — Maximum spell variety and magical experimentation.
-- **Lost Grimoire SSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/4455)) — 115+ lore-friendly spells with matching scrolls and staves. Compatible with any primary overhaul.
-- **Elemental Mastery Magic** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139953)) — Elemental specialization and tiered mastery bonuses for Destruction/Alteration.
-- **Immersive Illusion Spells** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142357)) — New illusion types beyond fear/calm/frenzy.
-- **360 Ward** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/156225)) — Wards block from any direction. Significant third-person gameplay improvement.
-- **Sanguine Symphony** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148388)) — Blood-magic spells costing Health instead of Magicka. Compatible with all primary overhauls.
-
-### Candidates
-
-- **Revealing Rune** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120935)) — Makes rune traps visible without a spell or perk. Gameplay quality-of-life. Evaluate after the primary magic overhaul is locked.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Mysticism — A Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/27839) | Baseline | Balanced modern route. |
+| [Triumvirate — Mage Archetypes](https://www.nexusmods.com/skyrimspecialedition/mods/39170) | Baseline | Identity-driven archetype spells (Cleric, Druid, Shadow Mage, Shaman, Warlock). |
+| [Strange Runes](https://www.nexusmods.com/skyrimspecialedition/mods/19438) | Baseline | Floating Nordic runes during spell charging. Visual only, no records. |
+| [Odin — Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000) | Alternative | Moderate expansion. |
+| [Apocalypse — Magic of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1090) | Alternative | Maximum spell variety. |
+| [Lost Grimoire SSE](https://www.nexusmods.com/skyrimspecialedition/mods/4455) | Alternative | 115+ lore-friendly spells. Compatible with any primary overhaul. |
+| [Elemental Mastery Magic](https://www.nexusmods.com/skyrimspecialedition/mods/139953) | Alternative | Elemental specialization and tiered mastery bonuses. |
+| [Immersive Illusion Spells](https://www.nexusmods.com/skyrimspecialedition/mods/142357) | Alternative | New illusion types beyond fear/calm/frenzy. |
+| [360 Ward](https://www.nexusmods.com/skyrimspecialedition/mods/156225) | Alternative | Wards block from any direction. Third-person improvement. |
+| [Sanguine Symphony](https://www.nexusmods.com/skyrimspecialedition/mods/148388) | Alternative | Blood-magic spells costing Health. Compatible with all overhauls. |
+| [Revealing Rune](https://www.nexusmods.com/skyrimspecialedition/mods/120935) | Candidate | Makes rune traps visible. Evaluate after primary overhaul locked. |
 
 ### Notes
 
@@ -66,14 +57,11 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 How Skyrim's detection system should be recalibrated for modern stealth mechanics without replacing the existing perk, magic, and combat layers.
 
-### Baseline
-
-- **Realistic AI Detection (RAID)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2345)) — Detection-recalibration baseline. Script-free (23.8K endorsements). Recalibrates line of sight, lighting, distance, sneaking skill, and race detection without rewriting the AI itself.
-
-### Alternatives
-
-- **Discipline-first route** — Rely on the perk overhaul and targeted bugfix mods from → `Foundations` for detection.
-- **Deferred high-commitment branch** — Add a full stealth toolkit only if playtesting proves detection still feels too forgiving or punishing.
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Realistic AI Detection (RAID)](https://www.nexusmods.com/skyrimspecialedition/mods/2345) | Baseline | Script-free detection recalibration. 23.8K endorsements. |
+| Discipline-first route | Alternative | Rely on perk overhaul + Foundations bugfix mods. |
+| Deferred high-commitment branch | Alternative | Add stealth toolkit only if playtesting requires it. |
 
 ### Notes
 
