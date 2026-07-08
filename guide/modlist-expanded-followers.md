@@ -8,7 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Crime, Reputation, And Social Systems
+## Crime, Reputation, And Social Systems → separator: `Expanded Systems - Followers & Reputation`
 
 How much the world should notice what the player does socially — reputation, crime tools, city suspicion, and guard behavior.
 
@@ -21,7 +21,7 @@ How much the world should notice what the player does socially — reputation, c
 | [Suspicious City Guards](https://www.nexusmods.com/skyrimspecialedition/mods/38762) | Alternative | Urban tension around suspicious behavior. |
 | [Book Of Shadows](https://www.nexusmods.com/skyrimspecialedition/mods/76086) | Alternative | High-expression crime and stealth pillar. |
 
-### Notes
+### Risks & Compatibility
 
 - A very light social-response layer can leave crime and reputation too close to vanilla.
 - A stealth-heavy crime toolkit can make one playstyle dominate a subsection meant for broader roleplay.
@@ -31,7 +31,7 @@ How much the world should notice what the player does socially — reputation, c
 
 ---
 
-## Followers And Companion Systems
+## Followers And Companion Systems → separator: `Expanded Systems - Followers & Reputation`
 
 How companion management should function at the systems level.
 
@@ -41,7 +41,7 @@ How companion management should function at the systems level.
 | [EFF — Extensible Follower Framework](https://www.nexusmods.com/skyrimspecialedition/mods/7003) | Alternative | Simpler established management. |
 | [Amazing Follower Tweaks SE](https://www.nexusmods.com/skyrimspecialedition/mods/6656) | Alternative | Heavy-management branch. |
 
-### Notes
+### Risks & Compatibility
 
 - A very light or dated framework can leave companions awkward to manage once the modlist grows.
 - A heavy follower-control framework can make party management dominate ordinary play.
@@ -50,7 +50,7 @@ How companion management should function at the systems level.
 
 ---
 
-## Romance, Marriage, And Companionship
+## Romance, Marriage, And Companionship → separator: `Expanded Systems - Followers & Reputation`
 
 The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue with spouses and romance interests, and opt-in quest-driven romance arcs. Baseline is fade-to-black, not explicit content. Custom named followers belong in → `NPCs`.
 
@@ -62,7 +62,7 @@ The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue
 | [Serana Dialogue Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/32161) | Baseline | 7,000+ voiced lines, new story arcs, romance. 51K endorsements. |
 | Discipline-first route | Alternative | Vanilla marriage mechanics. |
 
-### Notes
+### Risks & Compatibility
 
 - The wrong Amorous Adventures variant breaks the SFW rule. Download must be the clean build.
 - Do not stack `To Have And To Hold` with another multi-spouse mod.

@@ -6,7 +6,7 @@ All items in this section belong to the `Legacy of the Dragonborn` MO2 separator
 
 ---
 
-## Core Mod Baseline
+## Core Mod Baseline → separator: `Legacy of the Dragonborn`
 
 Treated as a foundational content pillar for the final list, not a late optional extra.
 
@@ -22,7 +22,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-## Supported Content
+## Supported Content → separator: `Legacy of the Dragonborn`
 
 ### Quest Mods With Strong LoTD Integration
 - **VIGILANT** — Multiple display cases in Hall of Oddities.
@@ -62,7 +62,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-## Patch Strategy
+## Patch Strategy → separator: `Legacy of the Dragonborn`
 
 - Use **LoTD Patches (Official)** as default patch source.
 - Add third-party patches only when official collection doesn't cover a finalized mod.
@@ -77,7 +77,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-## Submods And Quality-Of-Life
+## Submods And Quality-Of-Life → separator: `Legacy of the Dragonborn`
 
 ### Sorting And Inventory
 - **Legacy Safehouse Plus** — Expanded safehouse with additional crafting stations. Check v6.10+ compatibility.
@@ -99,7 +99,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 - **LOTD - Explorer's League** — Guild-like progression. Check overlap with Curator's Companion.
 - **Shovels - Dig Up Treasure** — Check for conflict with LoTD dig-site expeditions.
 
-### Notes
+### Risks & Compatibility
 - Legacy of the Dragonborn can drag the whole load order toward completionist design.
 - Museum-first progression changes perceived value of loot and unique-item mods.
 - Quest mods with strong LoTD integration may co-determine the quest mod stack.

@@ -1,6 +1,6 @@
 # Audio and Feedback
 
-**MO2 Separator:** `Audio` → `Audio - Music`, `Audio - SFX & Ambience`
+**MO2 Separators:** `Audio` → `Audio - Music`, `Audio - SFX & Ambience`
 
 All mods in this section belong to one of the two audio separators as noted per subsection.
 
@@ -33,7 +33,7 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 - Keep generated music-merge output in its own dedicated MO2 mod. Rebuild when the music stack changes.
 - See → `Performance` for Synthesis pipeline configuration.
 
-### Notes
+### Risks & Compatibility
 - A very large combined soundtrack can feel incoherent if tracks don't share tonal identity.
 - Multiple music mods must be merged via Synthesis to avoid overlapping `MUSTT` records.
 - Any pre-2020 music mod may lack native AE support — verify before locking.
@@ -54,7 +54,7 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 ### Load Order
 `ISC` and `AOS` both edit large numbers of sound records. Load `AOS` after `ISC` so AOS's reverb/attenuation wins over ISC's raw effect swaps. `Airgetlam` loads after both.
 
-### Notes
+### Risks & Compatibility
 - ISC is one of the oldest actively used Nexus mods (first uploaded 2013). Touches so many records that any update creates unexpected conflict pressure.
 - Airgetlam replaces raw audio files — should be loaded after any mod touching shout records.
 
@@ -66,7 +66,7 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 - Minimalist route — rely on ISC + AOS for creature sounds. Add dedicated replacers only if testing reveals weak vocalisations.
 - **Talkative Dragons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26955)) — Dragons speak during combat via reused vanilla voice lines. ESL-flagged, only overwrites one record (`CreatureDialogueDragon`). 15,478 endorsements.
 
-### Notes
+### Risks & Compatibility
 - Creature sound `.wav` replacers are generally safe (no record conflicts). Sound descriptor editors must load after ISC and AOS.
 - Talkative Dragons edits a dialogue record, not raw audio. Verify with dragon dialogue from Epic Dragon Combat REDONE.
 
@@ -83,7 +83,7 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 | [Heart of the Beast - Werewolf Sound and Camera Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/13776) | Werewolf audio baseline if `Growl` is adopted. |
 | [Heart of the Beast - Feral](https://www.nexusmods.com/skyrimspecialedition/mods/165648) | Alternative werewolf sounds. Choose one variant, not both. |
 
-### Notes
+### Risks & Compatibility
 - Only one Heart of the Beast variant active at a time. Both installed = file conflicts.
 - If `Growl` adds new werewolf forms not covered by the sound replacer, forms fall back to Growl defaults.
 
@@ -103,8 +103,8 @@ Environmental soundscapes, creature ambient sounds, and weather audio to reinfor
 | [Falmer 'Dialogue' Overhaul - Echolocation](https://www.nexusmods.com/skyrimspecialedition/mods/114625) | Falmer echolocation vocalisation replacer. Creature-audio companion layer. |
 | [Potema Revoiced](https://www.nexusmods.com/skyrimspecialedition/mods/123877) | Revoiced Potema dialogue. Overwrites vanilla voice files rather than dialogue records. |
 
-### Notes
+### Risks & Compatibility
 
-- All entries above are raw `.wav`/`.xwm` replacers or sound-descriptor mods — no record-level conflicts with ISC or AOS.
+- All entries above are raw `.wav`/`.xwm` replacers or sound-descriptor mods - no record-level conflicts with ISC or AOS.
 - Load sound-descriptor edits after ISC and AOS in left pane.
 - Potema Revoiced replaces voice files only; verify compatibility with quest-expansion mods touching the Potema quest.

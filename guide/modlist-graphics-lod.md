@@ -4,7 +4,7 @@
 
 All items in this section belong to the `Graphics - LOD & Distant Detail` MO2 separator unless noted.
 
-## LOD Generation And Distant Detail
+## LOD Generation And Distant Detail → separator: `Graphics - LOD & Distant Detail`
 
 Distant detail determines whether `Elder Wilds` feels large and coherent during travel instead of collapsing into obvious pop-in and flat backgrounds.
 
@@ -106,7 +106,7 @@ Re-run relevant generated layers when a major tree overhaul, architecture change
 - Generated outputs are enabled in MO2 and load after source mods
 - Old generated outputs are replaced when the visual stack changes, not left active by accident
 
-### Notes
+### Risks & Compatibility
 - Strong near-field visuals can still look broken in motion if distant terrain and tree lines don't match.
 - Optional LOD texture and tree-optimization add-ons create extra maintenance for limited payoff.
 - Generating too early produces stale outputs that quietly poison later comparisons.

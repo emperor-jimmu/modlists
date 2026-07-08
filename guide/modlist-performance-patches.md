@@ -1,6 +1,6 @@
 # Bashed Patch & Synthesis Configuration
 
-**MO2 Separator:** `Performance`
+**MO2 Separators:** `Performance` → `Performance - Bashed Patch & Synthesis`
 
 All items in this section belong to the `Performance` MO2 separator.
 
@@ -8,13 +8,13 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Core Idea
-- The generic category maps only become useful when tied to the actual mods `Elder Wilds` ships with. This section is that binding: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and `Synthesis` patcher pipeline in exact order.
-- Default is "do not touch" — add a `Synthesis` patcher or `Bash Tag` only when a specific mod in the list makes it necessary.
+## Patcher Discipline → separator: `Performance - Bashed Patch & Synthesis`
+
+The generic category maps only become useful when tied to the actual mods `Elder Wilds` ships with. This section is that binding: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and `Synthesis` patcher pipeline in exact order. Default is "do not touch" — add a `Synthesis` patcher or `Bash Tag` only when a specific mod in the list makes it necessary.
 
 ---
 
-## Wrye Bash (Bashed Patch) Configuration
+## Wrye Bash (Bashed Patch) Configuration → separator: `Performance - Bashed Patch & Synthesis`
 
 ### Tweak Settings
 Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below.
@@ -129,7 +129,7 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 
 ---
 
-## Synthesis Configuration
+## Synthesis Configuration → separator: `Performance - Bashed Patch & Synthesis`
 
 The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
 
@@ -260,7 +260,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 
 Rebuilding one stage does not replace stages after it.
 
-### Notes
+### Patcher Load Order
 - `Bashed Patch` and `Synthesis` both write into same load-order range. Place Synthesis patch last unless a known conflict needs Bashed Patch to win.
 - `SynESLify` **must** be last in its stage.
 - `World: Timescale = 20` bakes into saves — never change on a long-running test save.

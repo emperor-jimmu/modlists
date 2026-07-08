@@ -1,6 +1,6 @@
 # Immersive Scale and World Feel
 
-**MO2 Separator:** `World Feel` → `World Feel - Timescale & Travel`, `World Feel - Soundscapes`, `World Feel - Nights & Wildlife`, `World Feel - Cities & Landmarks`
+**MO2 Separators:** `World Feel` → `World Feel - Timescale & Travel`, `World Feel - Soundscapes`, `World Feel - Nights & Wildlife`, `World Feel - Cities & Landmarks`
 
 All mods in this section belong to one of the four world-feel separators as noted per subsection.
 
@@ -17,6 +17,9 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 ### Alternatives
 - **Dynamic Timescale - Remade** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141531)) — Environment-aware time shifts.
+- **[Extended Stay - Longer inn](https://www.nexusmods.com/skyrimspecialedition/mods/156)** — Optional longer-stay inn mechanic. Adopt only if the project leans into "living the world."
+- **[Sleep Tight SE](https://www.nexusmods.com/skyrimspecialedition/mods/20680)** — NPC sleep schedule enforcement and sleepwear.
+- **[Sleep Tight - NPCs wear underwear](https://www.nexusmods.com/skyrimspecialedition/mods/87132)** — NPC sleepwear variant without sleep schedule changes.
 
 ---
 
@@ -88,6 +91,11 @@ Small-to-mid-scale worldspace texture between major destinations.
 ### Alternatives
 - **Interesting Roads** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42749)) — Lighter roadside variety. Asset-only, low compatibility risk.
 - **Giant Crab Shells - Mihail's Shards of Immersion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124681)) — Coastal scenery. ESL-flagged.
+- **[Nordic Runestones](https://www.nexusmods.com/skyrimspecialedition/mods/32019)** — Optional Nordic runestone world-object additions.
+- **[Place of Power](https://www.nexusmods.com/skyrimspecialedition/mods/6109)** — Optional standing-stone mesh/texture enhancement.
+- **[Whiterun Horse Statues](https://www.nexusmods.com/skyrimspecialedition/mods/51417)** — Cosmetic Whiterun landmark additions.
+- **[Solitude Statuary](https://www.nexusmods.com/skyrimspecialedition/mods/94526)** — Cosmetic Solitude landmark additions.
+- **[s6o6t LORE - Mundus Stones](https://www.nexusmods.com/skyrimspecialedition/mods/51191)** — Mundus standing-stone lore expansion.
 
 ---
 
@@ -103,6 +111,7 @@ How varied and biologically alive wilderness travel feels.
 - **One With Nature** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/13343)) — Creature relationship tuning. Script-heavy — verify AE compatibility.
 - **Savage Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37768)) — Heavier danger-and-behavior.
 - **Frogs - Mihail** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120998)) — 4 frog variants. ESL-flagged.
+- **[Wearable Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/7560)** — Optional wearable lantern mechanic for night exploration.
 
 ---
 
@@ -115,8 +124,8 @@ Roads as built infrastructure at mesh/geometry level (separate from surface text
 - **Interesting Roads** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42749)) — Roadside character (barrels, carts, signs). Asset-only.
 - **Point The Way** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/352)) — Navigational signposting at junctions.
 
-### Notes
-- **Northern Roads** was evaluated and rejected due to patch burden at this modlist's complexity level.
+### Risks & Compatibility
+- **Northern Roads** was evaluated and rejected due to patch burden at this modlist's complexity level. **Northern Roads - Clutters Only** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126175)) is a lighter variant with only roadside clutter — re-evaluate if the full Northern Roads patch burden remains too high.
 
 ---
 
@@ -134,7 +143,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420) | Drifting iceberg meshes in northern waters. |
 | [Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634) | Animated ice floe meshes in cold regions. |
 
-### Notes
+### Risks & Compatibility
 - **R.A.S.S. + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. handles actor surfaces. Should coexist without conflicts — verify in testing.
 
 ---
@@ -164,20 +173,6 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ---
 
-## Candidate TODO Additions
+## Open Research
 
-### Timescale & Travel → `World Feel - Timescale & Travel`
-- `Extended Stay - Longer inn`
-- `Sleep Tight SE` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20680)) — NPC sleep schedules and sleepwear
-- `Sleep Tight - NPCs wear underwear` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87132))
-
-### Nights & Wildlife → `World Feel - Nights & Wildlife`
-- `Wearable Lanterns`
-
-### Cities & Landmarks → `World Feel - Cities & Landmarks`
-- `Nordic Runestones`
-- `Place of Power`
-- `Whiterun Horse Statues`
-- `Solitude Statuary`
-- `s6o6t LORE - Mundus Stones`
-- `Northern Roads - Clutters Only` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126175))
+Open research for the world-feel stack is tracked in `TODO.md`.

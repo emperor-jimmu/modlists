@@ -1,6 +1,6 @@
 # Performance Strategy
 
-**MO2 Separator:** `Performance`
+**MO2 Separators:** `Performance` → `Performance - Strategy`
 
 All items in this section belong to the `Performance` MO2 separator.
 
@@ -8,7 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Performance Budgeting
+## Performance Budgeting → separator: `Performance - Strategy`
 
 How `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy.
 
@@ -23,13 +23,13 @@ How `Elder Wilds` measures performance, identifies bottlenecks, and keeps genera
 - **Intuition-first route** — Change settings/mods by feel.
 - **Average-FPS route** — Judge by headline FPS even if frame pacing and bottleneck type stay unclear.
 
-### Notes
+### Risks & Compatibility
 - A single bad scene can be CPU-bound, GPU-bound, or content-bound in different directions.
 - Average FPS can improve while hitching and traversal smoothness get worse.
 
 ---
 
-## VRAM-Heavy Mod Review
+## VRAM-Heavy Mod Review → separator: `Performance - Strategy`
 
 Texture resolution, PBR/parallax adoption, heavy shader features, and world coverage drive VRAM pressure. Spend texture budget where visible in normal play.
 
@@ -43,13 +43,13 @@ Texture resolution, PBR/parallax adoption, heavy shader features, and world cove
 - **Max-detail route** — Broad 4K coverage, frequent material upgrades.
 - **Restraint-first route** — Mostly 2K and below with few exceptions.
 
-### Notes
+### Risks & Compatibility
 - High VRAM usage can look like generic stutter, but lowering unrelated gameplay mods won't fix it.
 - Some landscape/architecture/material upgrades cost more in aggregate than character textures ever will.
 
 ---
 
-## CPU-Heavy Script Review
+## CPU-Heavy Script Review → separator: `Performance - Strategy`
 
 CPU and Papyrus pressure comes from layered systems, NPC density, polling scripts, and constant background updates.
 
@@ -64,7 +64,7 @@ CPU and Papyrus pressure comes from layered systems, NPC density, polling script
 - **Permissive route** — Allow multiple overlapping always-on systems.
 - **Strict route** — Aggressively cut scripted features even when they materially help list identity.
 
-### Notes
+### Risks & Compatibility
 - Script delay often misdiagnosed as low FPS or "Skyrim being Skyrim."
 - Mid-save uninstalls can create save instability looking like performance decay.
 - A list can feel fine in short tests and still degrade over longer sessions.

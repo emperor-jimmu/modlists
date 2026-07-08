@@ -1,6 +1,6 @@
 # Testing & Maintenance
 
-**MO2 Separator:** `Performance`
+**MO2 Separators:** `Performance` → `Performance - Testing & Maintenance`
 
 All items in this section belong to the `Performance` MO2 separator.
 
@@ -8,7 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Performance Testing And Tuning
+## Performance Testing And Tuning → separator: `Performance - Testing & Maintenance`
 
 The goal is consistent frametimes — not just a high average FPS — across the scenarios you actually play.
 
@@ -84,7 +84,7 @@ Every tuning attempt recorded in git alongside modlist changes.
 
 ---
 
-## Maintenance And Rebuild Epilogue
+## Maintenance And Rebuild Epilogue → separator: `Performance - Testing & Maintenance`
 
 ### Patcher Revisit Triggers
 

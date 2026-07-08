@@ -4,7 +4,9 @@
 
 All mods in this section belong to the `Graphics - Lighting` MO2 separator unless noted.
 
-## Lighting Overhaul Strategy
+---
+
+## Lighting Overhaul Strategy → separator: `Graphics - Lighting`
 
 Build lighting as a coherent layer supporting the shader-first visual direction, stronger world scale, and third-person readability. Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route. The baseline is a Community Shaders-native stack with much lower patch burden than the LUX family.
 
@@ -35,15 +37,17 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 | --- | --- | --- |
 | [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) | Fire | 140K+ endorsements. Install after main lighting overhauls. → `Graphics - Lighting` |
 | [Luminous Atronachs](https://www.nexusmods.com/skyrimspecialedition/mods/27732) | Effects | Self-illuminating atronachs via particle lights. |
+| [KD Realistic Fireplaces](https://www.nexusmods.com/skyrimspecialedition/mods/28877) | Fire | Optional fireplace visual upgrade. Cosmetic only. |
 
 ### Alternatives
 
+- **EmbersXD Torch Edit** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134219)) — Torch visual replacer for Embers XD. Optional cosmetic.
 - **Relighting Skyrim SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/8586)) + **Luminosity Lighting Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/16830)) — Lightest vanilla-plus route. Falls back if the CS-native stack fails compatibility testing.
 - **ELFX Shadows** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63790)) — Strong alternate if CS-native proves insufficient for interior mood. Hard-requires base `Enhanced Lights and FX` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2424)).
 - **iLluminous Elementals** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138128)) — Broader elemental-light approach. Alternative to Luminous Atronachs.
 - **Window Shadows RT - Updated** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111091)) / **Ambiance** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46383)) — Fallback interior shadow mods.
 
-### Notes
+### Risks & Compatibility
 
 - The CS-native stack has ~35-55 total patches versus LUX's ~80-120 across the Patch Hub.
 - CS Light + True Light + WSU relies on Light Placer non-shadow-casting bulbs — test together before locking.

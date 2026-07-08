@@ -4,7 +4,7 @@
 
 All mods in this section belong to the `Graphics - Terrain & Flora` MO2 separator unless noted.
 
-## Terrain, Roads, And Snow
+## Terrain, Roads, And Snow → separator: `Graphics - Terrain & Flora`
 
 Treat terrain, roads, and snow as one connected presentation layer. Must stay coherent with Community Shaders, PBR support, rock meshes, weather, and later LOD generation.
 
@@ -15,7 +15,7 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 | Better Dynamic Snow SE | Snow-and-ash multistage accumulation. Works with `Simplicity of Snow`; the `BDSPatcher` Synthesis patcher handles mod-added objects automatically. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9121) |
 | Better Dynamic Ash SE | Solstheim ash equivalent. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54754) |
 
-### Landscape And Terrain (candidate list — test and narrow)
+### Landscape And Terrain (candidates — narrow after testing)
 
 | Mod | Description | Nexus |
 |-----|-------------|-------|
@@ -38,6 +38,8 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 |-----|-------------|-------|
 | Blended Roads - Light Plugin (ESL) | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171554) |
 | HD Remastered Blended Roads | HD hand-made rework. Choose 2K for performance, 4K for visual sweet spot. Requires Blended Roads base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63674) |
+| [Simplest Roads](https://www.nexusmods.com/skyrimspecialedition/mods/111255) | Minimal road texture replacer. Alternative to Blended Roads. | |
+| [Simple Complex Parallax Roads](https://www.nexusmods.com/skyrimspecialedition/mods/173826) | Parallax road textures requiring CS Complex Material. Alternative to Blended Roads. | |
 
 ### Snow And Support
 
@@ -51,14 +53,18 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 | Better Dynamic Ash SE | Solstheim ash equivalent. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54754) |
 | Enhanced Rocks and Mountains - CM and PBR | See Landscape section above; listed here for snow coherence. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336) |
 
-### Notes
+### Alternatives
+
+- **Windhelm Is Snowy - Base Object Swapper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165102)) — BOS-based snow coverage for Windhelm. Complements Simplicity of Snow.
+
+### Risks & Compatibility
 
 - Snow can look good in isolation and fail once mixed with mountains, roads, and weather-heavy scenes.
 - Heavy terrain parallax can look impressive close up while adding artifact risk or visual noise in motion.
 
 ---
 
-## Flora Visuals
+## Flora Visuals → separator: `Graphics - Terrain & Flora`
 
 Flora is the ground-level readability layer between terrain materials and tree coverage. It should improve grass density, wildland texture, and plant variety without making traversal unreadable or creating constant patch work.
 
@@ -80,6 +86,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 | A Nirnroot | Nirnroot mesh/texture replacer with glowing effects. No ESP. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80281) |
 | Flora Orientalis | Dependency for Vinland Grass Patch + mixed-route coverage. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64041) |
 | Waterplants | Dependency for Vinland Grass Patch + mixed-route coverage. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6092) |
+| [Flora Additions - Water Plants](https://www.nexusmods.com/skyrimspecialedition/mods/116324) | Optional water plant flora additions. | |
 
 ### 3D Plant Replacers (mesh-only, no ESP)
 
@@ -97,6 +104,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 |-----|-------------|-------|
 | Skyfall's Sleeping Hist Tree Overhaul | Riften Sleeping Hist tree replacement. Mesh/texture only, no ESP. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116792) |
 | TMD The Rift Leaves | 3D leaf particle replacer for The Rift. No ESP. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111461) |
+| [Bigger trees](https://www.nexusmods.com/skyrimspecialedition/mods/5281) | Optional tree size multiplier. | |
 
 ### Environment-Plant Extras (visual polish, not baseline)
 
@@ -114,8 +122,9 @@ Flora is the ground-level readability layer between terrain materials and tree c
 | Folkvangr - Grass and Landscape Overhaul | Main heavier alternate. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44899) |
 | Vinland Grass Patch | Only after the final grass combination is narrow enough. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95273) |
 | QW's Grass Patch 2 | Only after the final grass combination is narrow enough. | |
+| Grassreach - Blackreach Grass | Blackreach-specific grass replacer. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179420) |
 
-### Notes
+### Risks & Compatibility
 
 - Grass that looks strong in screenshots can make traversal and combat readability worse.
 - Layering multiple grass and plant mods creates real patch and cache maintenance cost.
@@ -123,7 +132,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 ---
 
-## Tree Overhauls For Dense Forests
+## Tree Overhauls For Dense Forests → separator: `Graphics - Terrain & Flora`
 
 Trees are the main large-scale world-shaping layer for wilderness mood, canopy silhouette, and perceived regional scale.
 
@@ -144,7 +153,7 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 | Happy Little Trees PBR | Support signal. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159171) |
 | Fabled Forests - Ulvenwald Patch (BOS) | Support signal. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134501) |
 
-### Notes
+### Risks & Compatibility
 
 - Dense tree overhauls can make roads, structures, and combat spaces harder to read in motion.
 - Heavier worldspace tree edits create clipping, blocked sightlines, floating objects, and broad patch debt.

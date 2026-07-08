@@ -1,6 +1,6 @@
 # Tool Pipeline
 
-**MO2 Separator:** `Performance`
+**MO2 Separators:** `Performance` → `Performance - Tool Pipeline`
 
 All items in this section belong to the `Performance` MO2 separator.
 
@@ -8,7 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Tool Workflow
+## Tool Workflow → separator: `Performance - Tool Pipeline`
 
 A heavy Skyrim list usually becomes unstable through stale output and sloppy rebuild habits before failing through any one mod choice.
 
@@ -25,7 +25,7 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 
 ---
 
-## 4K LOD Tool Baseline
+## 4K LOD Tool Baseline → separator: `Performance - Tool Pipeline`
 
 ### General Rules
 - Keep tools (`xLODGen`, `TexGen`, `DynDOLOD`) outside game folder and outside MO2 mod folders.
@@ -71,7 +71,7 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 
 ---
 
-## Optional Diagnostics And Performance Tools
+## Optional Diagnostics And Performance Tools → separator: `Performance - Tool Pipeline`
 
 Neither requires ongoing configuration or conflict maintenance once installed.
 
@@ -85,7 +85,7 @@ Neither requires ongoing configuration or conflict maintenance once installed.
 - Safe to install or uninstall at any time.
 - Complements [Seamless Saving](https://www.nexusmods.com/skyrimspecialedition/mods/173161) (targets main save serialisation, not cosaves). Safe to run both.
 
-### Notes
+### Risks & Compatibility
 - Neither mod touches worldspace records, leveled lists, or asset files.
 - Recursion Monitor is read-only in normal operation. Updated fork removes the only known compatibility concern.
 - S.L.A.C.K. hooks SKSE's internal save/load API; error-friendly mode catches exceptions instead of crashing.

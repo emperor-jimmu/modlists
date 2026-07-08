@@ -1,6 +1,6 @@
 # Optimization & Configuration
 
-**MO2 Separator:** `Performance`
+**MO2 Separators:** `Performance` → `Performance - Optimization & Configuration`
 
 All items in this section belong to the `Performance` MO2 separator.
 
@@ -8,7 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Shader Performance Impact
+## Shader Performance Impact → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
 - **Conservative to balanced route** — Accept a few heavier depth/lighting features once the rest of the visual stack is stable.
@@ -23,7 +23,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Grass, Tree, And Draw-Call Optimization
+## Grass, Tree, And Draw-Call Optimization → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
 - **Content restraint first, then low-maintenance optimization.**
@@ -31,13 +31,13 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 - **eFPS - Exterior FPS boost** — Optional only if exterior draw-call pressure still needs help after main world stack is stable. Plan for patch coverage.
 - Re-evaluate exterior optimization after major city, roadside, tree, or world-content choices.
 
-### Notes
+### Risks & Compatibility
 - `eFPS` has strong upside but real compatibility/patch overhead for lists with heavy exterior edits.
 - Heavy cities, outskirts, roads, trees, and landmark mods can erase optimization gains faster than tweak mods can recover them.
 
 ---
 
-## INI Tuning And Display Settings
+## INI Tuning And Display Settings → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
 - **Tool-first route** — Use `BethINI Pie` as the baseline editor.
@@ -66,7 +66,7 @@ Run through MO2 targeting the active profile INIs.
 
 ---
 
-## Save Safety Considerations
+## Save Safety Considerations → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
 - **Disposable-test route** — Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability.
@@ -74,6 +74,6 @@ Run through MO2 targeting the active profile INIs.
 - Don't treat old generated outputs, removed scripted mods, or stale occlusion data as safe just because the game still loads.
 - Preserve one or two mature long-session saves only for validation.
 
-### Notes
+### Risks & Compatibility
 - Save corruption can present as performance degradation long before it looks like hard failure.
 - Reusing one heavily mutated test save makes optimization conclusions far less trustworthy.

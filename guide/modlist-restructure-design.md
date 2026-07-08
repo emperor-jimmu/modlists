@@ -1,5 +1,7 @@
 # Modlist Restructure Design
 
+> **Status:** Historical design rationale. The two structural changes described here (separator naming/ordering and section file internal structure) were implemented on 2026-07-08. This file is kept for context and as a record of the decisions that shaped the current file conventions. It is not a live planning document.
+
 Date: 2026-07-05
 
 ## Overview

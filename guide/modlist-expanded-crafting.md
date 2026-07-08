@@ -8,7 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Alchemy Overhaul
+## Alchemy Overhaul → separator: `Expanded Systems - Crafting & Economy`
 
 Whether alchemy is a disciplined support system for potions/poisons/ingredients or a larger rework reshaping cooking and survival-adjacent loops.
 
@@ -18,7 +18,7 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 | [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924) | Alternative | Large integrated alchemy + cooking pillar. |
 | [Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877) | Alternative | Lighter fallback. |
 
-### Notes
+### Risks & Compatibility
 
 - A very large alchemy package can quietly absorb cooking and food design.
 - A restrained overhaul can undershoot if too many adjacent systems also land on conservative choices.
@@ -26,7 +26,7 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 
 ---
 
-## Cooking Systems
+## Cooking Systems → separator: `Expanded Systems - Crafting & Economy`
 
 Whether food and cooking are mostly ambient support for travel and downtime or a deliberate progression-and-preparation layer.
 
@@ -45,7 +45,7 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 | [Skyrim 3D Cooking](https://www.nexusmods.com/skyrimspecialedition/mods/23007) | Higher-detail cooking pot, oven, food-prep meshes. Mesh-only, no plugin. |
 | [Realistic HD Food Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/22087) | Photorealistic food textures. |
 
-### Notes
+### Risks & Compatibility
 
 - Cooking can become too dependent on the survival framework and stop making sense as its own system.
 - A very large cooking package can quietly absorb alchemy and economy ownership.
@@ -53,7 +53,7 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 
 ---
 
-## Smithing And Crafting Expansion
+## Smithing And Crafting Expansion → separator: `Expanded Systems - Crafting & Economy`
 
 What crafting is supposed to do: lightly improve vanilla smithing, become a broader rules-and-materials framework, or shift responsibility toward NPC services and roleplay texture.
 
@@ -65,7 +65,7 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 | [Complete Crafting Overhaul Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/28608) | Alternative | High-complexity material logic and crafting rules. |
 | [Summermyst — Enchantments](https://www.nexusmods.com/skyrimspecialedition/mods/6285) | Alternative | ~140 new enchantment effects. Verify compatibility with Thaumaturgy. |
 
-### Notes
+### Risks & Compatibility
 
 - A very large crafting framework can absorb economy and loot-balance ownership.
 - Mixing player-centric crafting with strong NPC-service assumptions can produce an incoherent progression loop.
@@ -73,7 +73,7 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 
 ---
 
-## Economy And Loot Balance
+## Economy And Loot Balance → separator: `Expanded Systems - Crafting & Economy`
 
 What economy and loot should feel like: lightly rebalanced merchant-and-pricing, deliberate loot distribution, or harsher scarcity-driven progression.
 
@@ -100,7 +100,7 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 | [Narrative Loot](https://www.nexusmods.com/skyrimspecialedition/mods/12812) | 1,629 lore-friendly misc items. No economy changes. Stacks cleanly. |
 | [SUDs — Skyrim's Unique Drinks](https://www.nexusmods.com/skyrimspecialedition/mods/85824) | 50+ unique drink items with custom meshes, textures, effects. |
 
-### Notes
+### Risks & Compatibility
 
 - A heavy loot-distribution framework can absorb crafting and progression ownership.
 - Harsh scarcity can make exploration, crafting, and reward pacing feel punitive rather than immersive.
@@ -108,7 +108,7 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 
 ---
 
-## Artifact And Unique Item Overhauls
+## Artifact And Unique Item Overhauls → separator: `Expanded Systems - Crafting & Economy`
 
 Unique-item content packs that add depth to Daedric artifacts, dragon priest masks, unique weapons, and quest items. Treats artifact overhauls as a separate layer from crafting — they change what named items are, not how the player makes generic items.
 
@@ -121,7 +121,7 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 | [Artificer](https://www.nexusmods.com/skyrimspecialedition/mods/99619) | Baseline (*choose one*) | Simonrim-aligned alternative to Reliquary of Myth. Requires Thaumaturgy + Mysticism. |
 | Discipline-first route | Alternative | Vanilla artifact stats. |
 
-### Notes
+### Risks & Compatibility
 
 - `Reliquary of Myth` + `ArteFakes` + `Unique Items Tweaks` touches every unique-item record. Verify the Synthesis patcher chain in → `Performance` doesn't re-balance the same records.
 - `Konahrik's Accoutrements` adds new Dragon Priest encounters — check the `LoTD Patches (Official)` hub in → `Legacy of the Dragonborn` for an integration patch.
@@ -130,7 +130,7 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 ---
 
-## Weapon Pack Additions
+## Weapon Pack Additions → separator: `Expanded Systems - Crafting & Economy`
 
 Weapon content packs adding new named and leveled-list weapons fitting vanilla's medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
@@ -142,7 +142,7 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 | [Immersive Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/16788) | Alternative | 230+ weapons. Unmaintained since Apr 2018. |
 | Discipline-first route | Alternative | Vanilla weapons only. |
 
-### Notes
+### Risks & Compatibility
 
 - `Heavy Armory` uses standard leveled-list integration; doesn't require Synthesis patcher intervention like `Immersive Weapons`. A `Heavy Armory - Adamant Addon` (mod 144316) provides Simonrim-aligned perk integration.
 - `LeanWolf's Better-Shaped Weapons` can conflict with `Unique Items Tweaks` and `Reliquary of Myth` on unique-weapon records.
@@ -151,7 +151,7 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 
 ---
 
-## Armor Pack Additions
+## Armor Pack Additions → separator: `Expanded Systems - Crafting & Economy`
 
 Armor content packs adding new named and leveled-list armors fitting the medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
@@ -174,7 +174,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [IA HIMBO Conversion V2](https://www.nexusmods.com/skyrimspecialedition/mods/76552) | Male path | BodySlide for all IA armors for HIMBO. Stacks on Retexture/Mesh Fixes. Includes CBBE patch. |
 | [IA — Realistic Armors replace by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/36746) | Optional | Swaps 10 IA sets for NordWarUA Realistic Armors. Requires Realistic Armor (36151). |
 
-### Notes
+### Risks & Compatibility
 
 - `Immersive Armors` unmaintained since November 2016 — verify game version compatibility before locking.
 - `NordwarUA Total Armor` standardizes cubemaps across all six sub-mods — any mod depending on original cubemaps needs re-testing.
@@ -185,7 +185,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 ---
 
-## Clothing And Wardrobe Extensions
+## Clothing And Wardrobe Extensions → separator: `Expanded Systems - Crafting & Economy`
 
 Clothing content packs adding new clothing, cloaks, and wearable non-armor items. More wardrobe variety without making every NPC a fashion show.
 
@@ -199,7 +199,7 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 | [Knapsack Backpacks SE](https://www.nexusmods.com/skyrimspecialedition/mods/3440) | Baseline | Carry-and-wearable utility with MCM. Cosmetic companion to Bandolier. |
 | Discipline-first route | Alternative | Vanilla clothing only. |
 
-### Notes
+### Risks & Compatibility
 
 - `Armor and Clothing Extension` requires `RUSTIC CLOTHING` and `SkyUI` — verify load order keeps `RUSTIC CLOTHING` above ACE.
 - `Cloaks of Skyrim` adds 100+ cloak items. If → `Third-Person Gameplay` adds a custom cloak-slot overhaul, verify stacking.

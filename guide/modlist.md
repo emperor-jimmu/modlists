@@ -45,7 +45,7 @@ The file [`separators.md`](separators.md) is the canonical ordered reference for
 - `World Feel` → [Immersive Scale and World Feel](modlist-world-feel.md)
 - `World Content` → [World Content](modlist-world-content.md)
 - `NPCs` → [NPCs](modlist-npcs.md)
-- `Enemies & Creatures` → [Creatures and Enemies](modlist-creatures.md)
+- `Enemies & Creatures` → [Enemies & Creatures](modlist-creatures.md)
 - `Audio` → [Audio and Feedback](modlist-audio.md)
 - `Survival & Combat` → [Survival, Difficulty, and Balance](modlist-survival-combat.md)
 - `Legacy of the Dragonborn` → [Legacy of the Dragonborn](modlist-lotd.md)

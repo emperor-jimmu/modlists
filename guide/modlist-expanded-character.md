@@ -8,7 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Character Creation And Starting Choices
+## Character Creation And Starting Choices → separator: `Expanded Systems - Character & Progression`
 
 How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or a configurable route. The decision should improve replayability and roleplay expression without pre-answering later race, progression, religion, survival, or follower choices.
 
@@ -21,8 +21,11 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 | [Alternate Start — Live Another Life](https://www.nexusmods.com/skyrimspecialedition/mods/272) | Alternative | Conservative fallback. |
 | [Skyrim Unbound Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/27962) | Alternative | Configurable middle ground with more setup freedom. |
 | [Realm of Lorkhan — Freeform Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/18223) | Alternative | Freeform branch. Not the default baseline. |
+| [Why I Came to Skyrim - Origin Stories](https://www.nexusmods.com/skyrimspecialedition/mods/167166) | Alternative | Background-driven starting scenario with narrative hook. |
+| [Why I Came to Skyrim - Skyrim Unbound Reborn patch](https://www.nexusmods.com/skyrimspecialedition/mods/167577) | Alternative | Patch for Origin Stories + Skyrim Unbound Reborn. |
+| [Racemenu Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/182536) | Alternative | RaceMenu character creation enhancement. |
 
-### Notes
+### Risks & Compatibility
 
 - Start frameworks carry world-state assumptions that ripple into later quest, city, survival, or follower decisions.
 - `Dealing with Backstories` must be judged against the chosen race, standing-stone, perk, and survival stack.
@@ -32,7 +35,7 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 
 ---
 
-## Race Overhauls
+## Race Overhauls → separator: `Expanded Systems - Character & Progression`
 
 How race traits shape long-term character identity. Choose before perks, magic, and religion build on top of it.
 
@@ -51,7 +54,7 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 | [RiS — Races](https://www.nexusmods.com/skyrimspecialedition/mods/149544) | Biological race overhaul | KID, SPID |
 | [RiS — Lineages](https://www.nexusmods.com/skyrimspecialedition/mods/174443) | 4 subraces per vanilla race | KID, SPID, Papyrus Ini Manipulator |
 
-### Notes
+### Risks & Compatibility
 
 - Race overhauls can quietly pre-decide too much of the character-building experience.
 - A very expressive route can push optimization-heavy play even if the project wants immersive tone.
@@ -59,7 +62,7 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 
 ---
 
-## Standing Stones
+## Standing Stones → separator: `Expanded Systems - Character & Progression`
 
 How standing stones and birthsigns provide ongoing passive identity. Judge together with race pick so the progression baseline stays coherent.
 
@@ -78,14 +81,14 @@ How standing stones and birthsigns provide ongoing passive identity. Judge toget
 | [RiS — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/157053) | 13 stones overhaul | aTweaks and Utilities, KID, Perk Entry Point Extender, SkyUI |
 | [RiS — Birthsigns](https://www.nexusmods.com/skyrimspecialedition/mods/154610) | Monthly waxing/waning birthsign effects | KID, Papyrus Ini Manipulator |
 
-### Notes
+### Risks & Compatibility
 
 - Stone and birthsign overhauls can quietly pre-decide too much of the character-building experience.
 - Judge race and stone picks as a pair so the progression baseline stays coherent.
 
 ---
 
-## Character Progression Mechanics
+## Character Progression Mechanics → separator: `Expanded Systems - Character & Progression`
 
 Supporting progression layers that govern how stats and skills grow over time.
 
@@ -99,7 +102,7 @@ Supporting progression layers that govern how stats and skills grow over time.
 
 ---
 
-## Character Traits And Identity Hooks
+## Character Traits And Identity Hooks → separator: `Expanded Systems - Character & Progression`
 
 Opt-in character-defining quirks shaping a run from the start without replacing the broader progression stack. Goal: stronger roleplay identity and replayability, not a giant second character-build framework.
 
@@ -109,7 +112,7 @@ Opt-in character-defining quirks shaping a run from the start without replacing 
 | [Pumping Iron — Dynamic Muscle Growth](https://www.nexusmods.com/skyrimspecialedition/mods/13434) | Baseline | Cosmetic muscle growth from combat + sleep. No gameplay impact. |
 | Minimalist route | Alternative | Leave identity to race, standing stones, perks, and self-imposed roleplay. |
 
-### Notes
+### Risks & Compatibility
 
 - Trait systems can duplicate what race, perk, religion, or survival choices are already doing.
 - If the best traits are too obviously optimal, the whole idea collapses into routine min-maxing.
@@ -117,7 +120,7 @@ Opt-in character-defining quirks shaping a run from the start without replacing 
 
 ---
 
-## Religion Or Roleplay Systems
+## Religion Or Roleplay Systems → separator: `Expanded Systems - Character & Progression`
 
 How much explicit spiritual identity and day-to-day roleplay texture `Elder Wilds` wants.
 
@@ -126,8 +129,9 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 | [Pilgrim — A Religion Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/54099) | Baseline | Fits Simonrim-leaning progression family. |
 | [Trua — Minimalistic Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/32549) | Alternative | Restrained fallback. |
 | [Wintersun — Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/22506) | Alternative | High-expression route for stronger roleplay pillar. |
+| [Gods And Worship](https://www.nexusmods.com/skyrimspecialedition/mods/45011) | Alternative | Full deity worship system with shrines, blessings, and penalties. |
 
-### Notes
+### Risks & Compatibility
 
 - A very light religion route can undershoot and leave roleplay identity too close to vanilla.
 - A heavy deity-centered framework can make religion dominate character identity.
@@ -136,7 +140,7 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 
 ---
 
-## Race-Specific Overhauls
+## Race-Specific Overhauls → separator: `Expanded Systems - Character & Progression`
 
 Dedicated overhauls for vampire, werewolf, and shout gameplay — three character-identity systems vanilla leaves shallow. These complete the EnaiRim suite begun with `Andromeda` (standing stones). All three are by EnaiSiaion, designed to work together, and require no cross-patching.
 
@@ -147,7 +151,7 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 | [Thunderchild — Epic Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/1460) | Baseline | 19 new shouts (57 words), meditation mechanics, boss encounters. |
 | Discipline-first route | Alternative | Vanilla vampire/werewolf/shout systems. |
 
-### Notes
+### Risks & Compatibility
 
 - All three are EnaiSiaion, designed to work with `Ordinator`, `Andromeda`, `Apocalypse`, and the broader EnaiRim ecosystem by design.
 - `Sacrosanct` and `Growl` interact with `Heart of the Beast` (werewolf transformation audio) in section 10. Load transformation-sfx after transformation-system mods.
@@ -157,7 +161,7 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 
 ---
 
-## Experience and Leveling
+## Experience and Leveling → separator: `Expanded Systems - Character & Progression`
 
 How the player gains levels and skill points. Instead of vanilla sleep-to-level, use Experience (discovery-based leveling) paired with Static Skill Leveling Rewritten (cooldown-gated skill advancement) for progression earned through exploration and deliberate practice.
 
@@ -171,7 +175,7 @@ How the player gains levels and skill points. Instead of vanilla sleep-to-level,
 | Discipline-first route | Alternative | Vanilla sleep-to-level. Avoids patcher requirement. | |
 | Static Skill Leveling — Custom Preset | Alternative | Manual tuning instead of Simpler Preset. | |
 
-### Notes
+### Risks & Compatibility
 
 - Experience's Synthesis Patcher must be re-run whenever the load order changes.
 - Static Skill Leveling's cooldown may feel restrictive; the Simple Preset mitigates this. Tune via .ini if needed.

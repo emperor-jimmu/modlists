@@ -4,7 +4,7 @@
 
 All mods in this section belong to the `Graphics - Characters & Creatures` MO2 separator unless noted.
 
-## Character, Skin, And Creature Visuals
+## Character, Skin, And Creature Visuals → separator: `Graphics - Characters & Creatures`
 
 Baseline visual treatment for player bodies, skin textures, and common creature visuals before NPC-specific overhauls are chosen. Target: grounded modern look that holds up in third person without drifting into overly glossy, doll-like, or hyper-stylized presentation.
 
@@ -156,7 +156,7 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 ---
 
-## Hair, Eyes, And Beards
+## Hair, Eyes, And Beards → separator: `Graphics - Characters & Creatures`
 
 Per-character face assets: hairstyles, eye textures, and beard options. Ensures character close-ups match the grim-dark tone without pulling in full NPC face-gen overhauls.
 
@@ -170,7 +170,7 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 
 Keep the beard decision minimal; vanilla beards work well with the chosen body and face mesh stack.
 
-### Notes
+### Risks & Compatibility
 
 - High-poly hair can clash with extreme lighting/shadow setups; verify KS Hairdos works with the CS-native lighting stack.
 - Eye textures that lean too stylized look out of place; pick a realistic pack matching grim-dark.
@@ -179,7 +179,7 @@ Keep the beard decision minimal; vanilla beards work well with the chosen body a
 
 ---
 
-## Skeleton And Bone Replacers
+## Skeleton And Bone Replacers → separator: `Graphics - Characters & Creatures`
 
 Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skeleton models in dungeons, Nordic ruins, draugr crypts, dragon priest rooms. Kept separate from the rigged skeleton baseline in → `Animations`.
 
@@ -189,7 +189,7 @@ Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skelet
 | [Skeleton Replacer HD — Mesh Patches](https://www.nexusmods.com/skyrimspecialedition/mods/177253) | Baseline | Add only if modlist includes a creature/content mod needing a mesh patch. |
 | Discipline-first route | Alternative | Rely on vanilla skeleton assets. |
 
-### Notes
+### Risks & Compatibility
 
 - Skeleton Replacer HD can conflict with creature mods that ship their own skeleton/bone assets.
 - Some vanilla draugr and dragon priest models have unique assets the mod can override; verify they're preserved.

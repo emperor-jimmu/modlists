@@ -223,7 +223,7 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 | [Universal Behaviour Runtime — Auto Skeleton Patch](https://www.nexusmods.com/skyrimspecialedition/mods/176724) | Baseline | Runtime skeleton patching for XPMSSE. Do NOT tick Pandora XPMSSE patch checkbox.                        |
 | [A-Pose Bug Fix — Universal Behavior Runtime](https://www.nexusmods.com/skyrimspecialedition/mods/168903)       | Baseline | Runtime A-pose interception and LE animation backward compatibility.                                    |
 
-### Notes
+### Risks & Compatibility
 
 - Validate current Pandora install guide and requirements tab during setup.
 - Leaving old generated output active or mixing generators makes debugging much harder.
@@ -256,12 +256,14 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 ### Companion Candidates (evaluate after baseline is locked)
 
+- **Dova Jump** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125550)) — Stamina-based jump height/distance. Complements parkour.
+- **Walk Speed Tuner** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179215)) — Configurable walk speed hotkey.
 - **Beam Walking Assist** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175511))
 - **RaySense - Jumping over obstacles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175506))
 - **RaySense - Edge Lookdown** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175514))
 - **Inertia - Physical Movement Response System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172783))
 
-### Notes
+### Risks & Compatibility
 
 - SkyClimb and SkyParkour are competing — not harmless companions.
 - Parkour can expose navmesh gaps in older worldspaces.
@@ -283,6 +285,10 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 | [Dynamic Female Weather Idles](https://www.nexusmods.com/skyrimspecialedition/mods/98493)                                                                   | Alternative | OAR-based weather-aware idles. Complements survival/weather stack. |
 | [EVG Animated Traversal](https://www.nexusmods.com/skyrimspecialedition/mods/63232)                                                                         | Alternative | Belongs in interaction/traversal bucket.                           |
 | [Goetia Animations](https://www.nexusmods.com/skyrimspecialedition/mods/68005) — Female / [Male](https://www.nexusmods.com/skyrimspecialedition/mods/68625) | Alternative | Animation pack for both genders.                                   |
+| [Poser Hotkeys Plus SSE](https://www.nexusmods.com/skyrimspecialedition/mods/17743)                                                                       | Alternative | Hotkey-based pose/idle system.                                      |
+| [More Tavern Idles - SSE Port](https://www.nexusmods.com/skyrimspecialedition/mods/16757)                                                                 | Alternative | Tavern-specific idle animation variety.                             |
+| [Lightweight Headtracking and Emotions](https://www.nexusmods.com/skyrimspecialedition/mods/224)                                                           | Alternative | NPC/PCP headtracking and expression support.                        |
+| [Smooth Random Jump Animation - Rework](https://www.nexusmods.com/skyrimspecialedition/mods/59633)                                                         | Alternative | Randomized jump animation replacer.                                 |
 
 ---
 
@@ -302,7 +308,14 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 | [Vindictus Fiona Moveset BFCO](https://www.nexusmods.com/skyrimspecialedition/mods/183971)                                                                                  | Alternative     | BFCO-specific moveset. Requires BFCO framework.                                                                                            |
 | [Vindictus Delia Animation Remake](https://www.nexusmods.com/skyrimspecialedition/mods/104717)                                                                              | Alternative     | Combat animation pack.                                                                                                                     |
 | [MCO / BFCO / SCAR WoLong QuarterStaffs](https://www.nexusmods.com/skyrimspecialedition/mods/128749)                                                                        | Alternative     | Works with MCO, BFCO, or SCAR. Quarterstaff moveset.                                                                                       |
-| [Dynamic Killmove - Pike](https://www.nexusmods.com/skyrimspecialedition/mods/103707)                                                                                       | Alternative     | Killmove animation for pike/spear weapons.                                                                                                 |
+| [Dynamic Killmove - Pike](https://www.nexusmods.com/skyrimspecialedition/mods/103707)                                                                       | Alternative     | Killmove animation for pike/spear weapons.                                                                                                 |
+| [KG Animations - One-handers and Dual Wield](https://www.nexusmods.com/skyrimspecialedition/mods/129519)                                                  | Alternative     | One-handed and dual-wield combat animation pack.                                                                                           |
+| [KG Animations - Two-handers](https://www.nexusmods.com/skyrimspecialedition/mods/101541)                                                                  | Alternative     | Two-handed combat animation pack.                                                                                                          |
+| [Smooth Random Blocking Animation 3.0](https://www.nexusmods.com/skyrimspecialedition/mods/59239)                                                          | Alternative     | Randomized blocking animation replacer.                                                                                                    |
+| [Precision - Enchanted Weapon Trails](https://www.nexusmods.com/skyrimspecialedition/mods/106358)                                                          | Alternative     | Weapon trail VFX requiring Precision.                                                                                                      |
+| [Killmove Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/140398)                                                                                | Alternative     | Killmove trigger and camera fixes.                                                                                                         |
+| [Goetia Animations - Magic Spell Casting](https://www.nexusmods.com/skyrimspecialedition/mods/70204)                                                       | Alternative     | Magic spell casting animation replacer.                                                                                                    |
+| [Diverse NPC Movesets](https://www.nexusmods.com/skyrimspecialedition/mods/141893)                                                                          | Alternative     | Varied NPC combat stances via SCAR/OAR.                                                                                                    |
 | [For Honor in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/151478)                                                                                           | High-Commitment | Comprehensive combat overhaul. Competing with MCO/BFCO and Valhalla.                                                                       |
 
 ---
@@ -376,7 +389,9 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 | [Dynamic Horse Petting Animations for Immersive Interactions](https://www.nexusmods.com/skyrimspecialedition/mods/111767)             | Add-on      | Horse interaction animations for II.                               |
 | [HSF Male Furniture Idles](https://www.nexusmods.com/skyrimspecialedition/mods/155228)                                                | Alternative | Male idle animations for furniture interactions.                   |
 | [Modern Female Sitting Animations Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/85599)                                | Alternative | Female sitting animation replacements.                             |
-| [Paired Animation Improvements](https://www.nexusmods.com/skyrimspecialedition/mods/99621)                                            | Alternative | Improved paired NPC interaction animations.                        |
+| [Paired Animation Improvements](https://www.nexusmods.com/skyrimspecialedition/mods/99621)                                            | Alternative | Improved paired NPC interaction animations.                             |
+| [Ultimate Animated Potions NG](https://www.nexusmods.com/skyrimspecialedition/mods/97674)                                            | Alternative | Potion-use animation replacer.                                          |
+| [JellyFish Ultimate Animated Potions NG](https://www.nexusmods.com/skyrimspecialedition/mods/168108)                                  | Alternative | Expanded potion animation pack for Ultimate Animated Potions NG.        |
 
 ---
 
@@ -412,6 +427,7 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 | [Weapon Styles - Draw-Sheathe animations for IED](https://www.nexusmods.com/skyrimspecialedition/mods/85085)         | Addon       | Conditional draw/sheathe animations per weapon type. Requires IED.                              |
 | [Walking Stick - Walk with staves or polearms - IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/120966) | Addon       | Staff/polearm walking animation support. Requires IED.                                          |
 | [Ready to Play IED](https://www.nexusmods.com/skyrimspecialedition/mods/158531)                                      | Alternative | Pre-configured IED preset. Evaluate only if manual IED configuration proves too time-consuming. |
+| [Weapons On Back](https://www.nexusmods.com/skyrimspecialedition/mods/14997)                                        | Alternative | Weapon positioning on back rather than hip. Complements IED/SDS. |
 
 ---
 
@@ -424,8 +440,9 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 | [New Creature Animation - Falmer](https://www.nexusmods.com/skyrimspecialedition/mods/83572)   | Falmer animation replacer.                     |
 | [DCA - Dragon Combat Animations](https://www.nexusmods.com/skyrimspecialedition/mods/123113)   | Dragon combat animation replacer.              |
 | [Draugr Greatsword Animation](https://www.nexusmods.com/skyrimspecialedition/mods/114721)      | Greatsword-wielding draugr animation replacer. |
+| [Troll - MCO](https://www.nexusmods.com/skyrimspecialedition/mods/175250)                     | Troll combat animation replacer (requires MCO). |
 
-### Notes
+### Risks & Compatibility
 
 - Validate per-pack combat-animation support individually. Keep layer small and intentional.
 
@@ -447,36 +464,13 @@ Strict ownership: one clear owner per layer.
 - Record which mods rely on generation, which on OAR, and which are pure presentation.
 - Test in repeatable scenarios: town walking, idle downtime, dungeon corridors, uneven outdoor combat, interaction-heavy interiors, creature encounters.
 
-### Notes
+### Risks & Compatibility
 
 - Animation conflicts look like camera, combat, or skeleton bugs until ownership is checked.
 - Mixed generated output hides whether a problem is from load order or stale behavior files.
 
 ---
 
-## Candidate TODO Additions
+## Open Research
 
-### Idles & Expressions → separator: `Animations - Movement & Idles`
-
-- [Poser Hotkeys Plus SSE](https://www.nexusmods.com/skyrimspecialedition/mods/17743) — `Poses, Actions and Musical`
-- [More Tavern Idles - SSE Port](https://www.nexusmods.com/skyrimspecialedition/mods/16757) — `More Tavern Idls - Immersive`
-- [Lightweight Headtracking and Emotions](https://www.nexusmods.com/skyrimspecialedition/mods/224) — `Headtracking and Emotions`
-
-### Combat Animation → separator: `Animations - Combat`
-
-- [Smooth Random Blocking Animation 3.0](https://www.nexusmods.com/skyrimspecialedition/mods/59239) — `Smooth block animation`
-- [Precision - Enchanted Weapon Trails](https://www.nexusmods.com/skyrimspecialedition/mods/106358) — `Weapon Trails`. Requires Precision.
-- [Killmove Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/140398) — `Killmove fixes`
-- [Goetia Animations - Magic Spell Casting](https://www.nexusmods.com/skyrimspecialedition/mods/70204)
-- [Diverse NPC Movesets](https://www.nexusmods.com/skyrimspecialedition/mods/141893) — Varied combat stances via SCAR/OAR.
-
-### Movement & Parkour → separator: `Animations - Interactions & Traversal`
-
-- [Smooth Random Jump Animation - Rework](https://www.nexusmods.com/skyrimspecialedition/mods/59633) — `Smooth Jump animation`
-- [Weapons On Back](https://www.nexusmods.com/skyrimspecialedition/mods/14997) — `Just Shields on your back / Weapons on Back AiO`
-- [Walk Speed Tuner](https://www.nexusmods.com/skyrimspecialedition/mods/179215) — `Walk Speed Tuner`
-- [Dova Jump](https://www.nexusmods.com/skyrimspecialedition/mods/125550)
-
-### Creature Animation → separator: `Animations - Creatures`
-
-- `Troll - MCO` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175250))
+Open research for the animations stack is tracked in `TODO.md`.

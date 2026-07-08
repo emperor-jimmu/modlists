@@ -6,7 +6,7 @@ All items in this section belong to the `Testing & Curation` MO2 separator.
 
 ---
 
-## Curation Rules
+## Curation Rules → separator: `Testing & Curation`
 
 Shared guardrails keeping individual picks consistent with the list's overall identity across every section.
 
@@ -33,7 +33,7 @@ No two mods should overhaul the same gameplay system unless one is explicitly a 
 
 ---
 
-## Testing Plan
+## Testing Plan → separator: `Testing & Curation`
 
 Each stage targets a specific category of load-order risk, ordered so earlier stages catch common failures before later stages invest time in detailed playthrough evaluation.
 
@@ -71,7 +71,7 @@ Play continuously for at least 2 hours: travel through 4+ worldspaces/holds incl
 
 ---
 
-## Post-Install Smoke Test
+## Post-Install Smoke Test → separator: `Testing & Curation`
 
 Run after completing any numbered section.
 

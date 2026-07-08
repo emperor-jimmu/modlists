@@ -29,6 +29,7 @@ The base menu and interface framework the rest of the UI stack builds on.
 | Norden UI  | Modern-rustic by Nithog, but depends on Extended UI (no official SE port).             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/166086) |
 | Vel'dun UI | Dunmer-themed by Nithog; too narrow a fit for Elder Wilds.                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176230) |
 | Prisma UI  | Web-UI framework replacing SkyUI. Incompatible with Oathvein UI and UIExtensions mods. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148718) |
+| SKSE Menu Framework | Low-level menu framework for SKSE-based UI mods. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120352) |
 
 ---
 
@@ -63,6 +64,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Mod                      | Description                                                           | Nexus                                                               |
 |--------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------|
 | Stats Tracker Menu - STM | Brand new (May 2026), very low community signal. Test before locking. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/180653) |
+| Kill feed | Kill notification overlay. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179053) |
 
 ---
 
@@ -95,6 +97,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Weapon Stat Viewer V2           | Weapon-stat overlay. Lock only if rendered cleanly. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127249) |
 | Enchanted Icon Overhaul         | Depends on Dynamic Inventory Icon Injector.         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174246) |
 | Dynamic Inventory Icon Injector |                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174136) |
+| Book 'Em                        | Book reading/collecting tracking UI.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84213)  |
 
 ---
 
@@ -120,6 +123,12 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Immersive Paper Map (3rd Edition)                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54710)  |
 | Skyrim Paper Map by FreelanceCartography for FWMF     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78995)  |
 | Legendary Map                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157397) |
+| [Pastel Map Markers](https://www.nexusmods.com/skyrimspecialedition/mods/3195) | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3195) |
+| Wyrmstooth Paper Map for FWMF                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124686) |
+| Apocrypha Paper Map for FWMF                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92774)  |
+| Beyond Reach Paper Map for FWMF                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119215) |
+| Blackreach Paper Map for FWMF                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53878)  |
+| Soul Cairn Paper Map for FWMF                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55387)  |
 
 ---
 
@@ -136,6 +145,9 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Completionist Addons                             | Mod-added content tracking.                                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112406) |
 | Quest Journal Overhaul                           | Journal UI redesign with quest tracking improvements.                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172488) |
 | Quest Journal Overhaul - Unofficial Mods Support | Extended mod support patch. Install after the main QJO.                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141837) |
+| [Character Menu SE](https://www.nexusmods.com/skyrimspecialedition/mods/173074) | Character stats/sheet UI replacement. Alternative. | |
+| [Character Menu SE - More Factions](https://www.nexusmods.com/skyrimspecialedition/mods/175026) | Additional faction tracking for Character Menu SE. | |
+| [Even Better Quest Objectives SE](https://www.nexusmods.com/skyrimspecialedition/mods/159) | Quest objective text clarifications and journal improvements. Alternative. | |
 
 ---
 
@@ -176,6 +188,8 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Gamepad Plus Plus            | Broader controller-input answer.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27007)  |
 | Wheeler - Quick Action Wheel | Radial interaction layer.                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97345)  |
 | WHEELER - Refined            | Updated visuals, better controller support. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167380) |
+| Auto Input Switch            | Automatically switches input device.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54309)  |
+| Show Player In Inventory     | Renders player model in inventory screen.   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178689) |
 
 ---
 
@@ -231,29 +245,6 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 ---
 
-## Candidate TODO Additions
+## Open Research
 
-### Framework & System UI → separator: `UI - Framework & HUD`
-
-| Mod                               | Nexus                                                               |
-|-----------------------------------|---------------------------------------------------------------------|
-| Character Menu SE                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/173074) |
-| Character Menu SE - More Factions | <https://www.nexusmods.com/skyrimspecialedition/mods/175026>        |
-| Kill feed                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179053) |
-| SKSE Menu Framework               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120352) |
-| Auto Input Switch                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54309)  |
-
-### Inventory → separator: `UI - Inventory & Items`
-
-| Mod                      | Nexus                                                               |
-|--------------------------|---------------------------------------------------------------------|
-| Unread books glow redone | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138451) |
-| Show Player In Inventory | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178689) |
-
-### HUD, Map & Dialogue → separator: `UI - Map, Dialogue, Menus`
-
-| Mod                                 | Nexus                                                               |
-|-------------------------------------|---------------------------------------------------------------------|
-| Pastel Map Markers                  |                                                                     |
-| Smart Talk (Dialogue Menu Enhancer) | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171449) |
-| Even Better Quest Objectives SE     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159)    |
+Open research for the UI stack is tracked in `TODO.md`.

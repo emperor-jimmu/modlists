@@ -8,7 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Perk Overhaul Compatibility
+## Perk Overhaul Compatibility → separator: `Expanded Systems - Magic & Perks`
 
 How much rules density and specialization pressure the list actually wants once race and standing-stone choices are in place.
 
@@ -18,7 +18,7 @@ How much rules density and specialization pressure the list actually wants once 
 | [Vokrii — Minimalistic Perks](https://www.nexusmods.com/skyrimspecialedition/mods/26176) | Alternative | Restrained if Adamant feels too system-forward. |
 | [Ordinator — Perks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1137) | Alternative | High-complexity branch. |
 
-### Notes
+### Risks & Compatibility
 
 - A dense perk framework can dominate the character-building experience and make later systems feel secondary.
 - A restrained framework can make the list feel under-committed if other systems also land on the conservative side.
@@ -26,7 +26,7 @@ How much rules density and specialization pressure the list actually wants once 
 
 ---
 
-## Magic System Expansion
+## Magic System Expansion → separator: `Expanded Systems - Magic & Perks`
 
 How broad, readable, and build-defining magic should feel once race, standing-stone, and perk baseline are in place.
 
@@ -44,7 +44,7 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 | [Sanguine Symphony](https://www.nexusmods.com/skyrimspecialedition/mods/148388) | Alternative | Blood-magic spells costing Health. Compatible with all overhauls. |
 | [Revealing Rune](https://www.nexusmods.com/skyrimspecialedition/mods/120935) | Candidate | Makes rune traps visible. Evaluate after primary overhaul locked. |
 
-### Notes
+### Risks & Compatibility
 
 - A very large spell ecosystem can dominate progression and make race, perk, and religion feel secondary.
 - Layering multiple spell packages casually turns this into a compatibility problem.
@@ -53,7 +53,7 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 ---
 
-## Stealth And Detection
+## Stealth And Detection → separator: `Expanded Systems - Magic & Perks`
 
 How Skyrim's detection system should be recalibrated for modern stealth mechanics without replacing the existing perk, magic, and combat layers.
 
@@ -63,7 +63,7 @@ How Skyrim's detection system should be recalibrated for modern stealth mechanic
 | Discipline-first route | Alternative | Rely on perk overhaul + Foundations bugfix mods. |
 | Deferred high-commitment branch | Alternative | Add stealth toolkit only if playtesting requires it. |
 
-### Notes
+### Risks & Compatibility
 
 - Detection recalibration can make encounter zones feel too easy or hard if it interacts with difficulty mods from → `Survival & Combat`.
 - A detection overhaul can make stealth-only play too dominant if it stacks with a perk overhaul that already buffs sneak.

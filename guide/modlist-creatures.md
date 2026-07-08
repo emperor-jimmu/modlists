@@ -1,14 +1,14 @@
-# Creatures and Enemies
+# Enemies & Creatures
 
-**MO2 Separator:** `NPCs - Enemies & Creatures`
+**MO2 Separator:** `Enemies & Creatures`
 
-All mods in this section belong to the `NPCs - Enemies & Creatures` MO2 separator.
+All mods in this section belong to the `Enemies & Creatures` MO2 separator.
 
 > NPC-specific content → [NPCs](modlist-npcs.md).
 
 ---
 
-## Enemy Variety
+## Enemy Variety → separator: `Enemies & Creatures`
 
 How hostile enemy groups feel less repetitive across ordinary play.
 
@@ -18,11 +18,11 @@ How hostile enemy groups feel less repetitive across ordinary play.
 | [OBIS SE](https://www.nexusmods.com/skyrimspecialedition/mods/4145) | Alternative | Heavier legacy bandit route. |
 | [Haugbui — A Draugr Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26188) | Alternative | Lighter undead route. |
 | [Skyrim Revamped — Complete Enemy Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/14598) | Alternative | List-wide enemy rebalance. |
-| Skyrim Immersive Creatures | Alternative | Out of scope; overlaps later creature subsections. |
+| [Skyrim Bandit Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/154352) | Alternative | New bandit variants, gear, and encounters. |
 
 ---
 
-## Creature Visual Overhauls
+## Creature Visual Overhauls → separator: `Enemies & Creatures`
 
 Creature-specific visual direction layered on top of the Bellyaches texture foundation from → `Characters & Creatures`.
 
@@ -40,10 +40,15 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Butterfly Improved by zzjay](https://www.nexusmods.com/skyrimspecialedition/mods/37302) | Baseline | |
 | [Fusa Fusa Project](https://www.nexusmods.com/skyrimspecialedition/mods/5514) | Alternative | Don't casually stack with Fluffworks. |
 | [Splendor — Dragon Variants](https://www.nexusmods.com/skyrimspecialedition/mods/9670) | Alternative | Last updated Sept 2017. |
+| [Next Gen Dragon VFX](https://www.nexusmods.com/skyrimspecialedition/mods/168405) | Alternative | Dragon breath/VFX visual upgrade. |
+| [Diverse 4thUnknown Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/146462) | Alternative | Dragon model variety via SkyPatcher. Requires Dragons SE. |
+| [Sleep of the Dead — Draugr Leather and Shroud Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/178057) | Alternative | Draugr shroud/leather retexture. |
+| [Frozen Electrocuted Combustion](https://www.nexusmods.com/skyrimspecialedition/mods/3532) | Alternative | Elemental creature death effects. |
+| [Better Butterflies](https://www.nexusmods.com/skyrimspecialedition/mods/79332) | Alternative | Butterfly insect visual overhaul. |
 
 ---
 
-## New Creature Additions
+## New Creature Additions → separator: `Enemies & Creatures`
 
 ### Mihail Creature Additions (all ESL-flagged)
 
@@ -77,7 +82,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 ---
 
-## Creature Behavior Improvements
+## Creature Behavior Improvements → separator: `Enemies & Creatures`
 
 How creatures attack, react, and express identity once combat starts.
 
@@ -87,28 +92,17 @@ How creatures attack, react, and express identity once combat starts.
 | [The Restless Dead](https://www.nexusmods.com/skyrimspecialedition/mods/94100) | Baseline | Undead-behavior baseline. Replaces abandoned Draugr Upgrades and Improvements. |
 | [Epic Dragon Combat REDONE](https://www.nexusmods.com/skyrimspecialedition/mods/126680) | Alternative | Full dragon combat overhaul — 20+ new types, unique abilities, custom VFX. Self-contained; replaces baseline dragon visual direction. |
 | [Dragon War](https://www.nexusmods.com/skyrimspecialedition/mods/51310) | Alternative | Heavier dragon route for fight structure/tempo. |
+| [Dragons actually fall down](https://www.nexusmods.com/skyrimspecialedition/mods/156824) | Alternative | Dragons collapse on the ground when staggered/low health. |
+| [Epic Dwarven Centurion Combat](https://www.nexusmods.com/skyrimspecialedition/mods/181405) | Alternative | Dwarven Centurion combat/animation overhaul. |
 | [SkyTEST Lite ESL](https://www.nexusmods.com/skyrimspecialedition/mods/84539) / [Animal Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/1532) / [Pelagius's Wildlife AI](https://www.nexusmods.com/skyrimspecialedition/mods/144909) | Alternative | Animal-side mods drifting into ecology territory. |
 
 ---
 
-## Wildlife Density And Rarity Balance
+## Wildlife Density And Rarity Balance → separator: `Enemies & Creatures`
 
 | Mod | Type | Notes |
 | --- | --- | --- |
 | [True Hunter — fewer animals per square meter](https://www.nexusmods.com/skyrimspecialedition/mods/25628) | Baseline | Spawn-chance reduction for more deliberate wildlife. |
 | [No Predators on roads](https://www.nexusmods.com/skyrimspecialedition/mods/11901) | Alternative | Abandoned (Aug 2017). Coexists with True Hunter. |
 
----
-
-## Candidate TODO Additions
-
-| Mod | Notes |
-| --- | --- |
-| [Next Gen Dragon VFX](https://www.nexusmods.com/skyrimspecialedition/mods/168405) | |
-| [Diverse 4thUnknown Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/146462) | v1.17. Requires Dragons SE + SkyPatcher. |
-| [Dragons actually fall down](https://www.nexusmods.com/skyrimspecialedition/mods/156824) | |
-| [Epic Dwarven Centurion Combat](https://www.nexusmods.com/skyrimspecialedition/mods/181405) | |
-| Skyrim Bandit Expansion | |
-| [Sleep of the Dead — Draugr Leather and Shroud Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/178057) | |
-| [Frozen Electrocuted Combustion](https://www.nexusmods.com/skyrimspecialedition/mods/3532) | |
-| [Better Butterflies](https://www.nexusmods.com/skyrimspecialedition/mods/79332) | |
+Open research for this section is tracked in `TODO.md`.

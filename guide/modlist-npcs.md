@@ -1,10 +1,10 @@
 # NPCs
 
-**MO2 Separator:** `NPCs` → `NPCs - Appearance`, `NPCs - Population`, `NPCs - Followers`
+**MO2 Separators:** `NPCs` → `NPCs - Appearance`, `NPCs - Population`, `NPCs - Followers`
 
 All mods in this section belong to one of the three NPC separators as noted per subsection.
 
-> Creature/enemy content moved to → [Creatures and Enemies](modlist-creatures.md).
+> Creature/enemy content moved to → [Enemies & Creatures](modlist-creatures.md).
 
 ---
 
@@ -73,6 +73,9 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [Civil War Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/139920) | Civil war faction dialogue | |
 | [Forsworn and Thalmor Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/130880) | Forsworn / Thalmor dialogue | |
 | [Shouts of Stallholders](https://www.nexusmods.com/skyrimspecialedition/mods/139025) | AI-Generated Content | Evaluate voice quality. |
+| [Naked Comments Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/142249) | NPC comments on player nudity. | Alternative |
+| [Collision Dialogue Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/115079) | Dialogue triggered by NPC collision events. | Alternative |
+| [Chattier Hunters and Fishermen](https://www.nexusmods.com/skyrimspecialedition/mods/179154) | Expanded ambient dialogue for hunters and fishermen. | Alternative |
 
 ### Follower Dialogue Expansion (FDE) series by Anbeegod
 
@@ -115,6 +118,7 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 | [Kaidan 2](https://www.nexusmods.com/skyrimspecialedition/mods/19075) | 1200+ | Romance arc. Custom AI — use built-in track/summon instead of NFF. | Use [Immersive Features AIO](https://kaidanmod.com) (Nexus Extended Edition deprecated). Extras: [A Makeover for Kaidan](https://www.nexusmods.com/skyrimspecialedition/mods/100586), [Immersive Kaidan Start](https://www.nexusmods.com/skyrimspecialedition/mods/64064). |
 
 ### Framework Notes
+- **Keep Up — Follower Locomotion Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169808)) — Prevents followers from getting stuck behind the player. Alternative, evaluate after baseline follower framework is locked.
 - Remiel and Auri use custom systems — do not assign via NFF/AFT.
 - Sofia works under NFF or standalone; Lucien tested with NFF but works standalone.
 - Kaidan 2: use built-in track/summon powers, not NFF.
@@ -123,13 +127,6 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 
 ---
 
-## Candidate TODO Additions
+## Open Research
 
-| Area | Mod | Separator | Notes |
-| --- | --- | --- | --- |
-| Dialogue | [Naked Comments Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/142249) | NPCs — Appearance | |
-| Dialogue | [Collision Dialogue Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/115079) | NPCs — Appearance | |
-| Dialogue | Extended NPC Dialogue series | NPCs — Appearance | |
-| Dialogue | [Chattier Hunters and Fishermen](https://www.nexusmods.com/skyrimspecialedition/mods/179154) | NPCs — Appearance | |
-| AI | [Immersive Citizens — AI](https://www.nexusmods.com/skyrimspecialedition/mods/173) | NPCs — Population | Known conflict with AI Overhaul SSE. |
-| Framework | [Keep Up — Follower Locomotion Fix](https://www.nexusmods.com/skyrimspecialedition/mods/169808) | NPCs — Followers | |
+Open research for the NPCs stack is tracked in `TODO.md`.

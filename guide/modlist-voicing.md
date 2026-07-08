@@ -6,7 +6,7 @@ All mods in this section belong to the `Voicing` MO2 separator.
 
 ---
 
-## Framework Overview
+## Framework Overview → separator: `Voicing`
 
 Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Generator) together give Skyrim's player character a voice. DBVO is the runtime framework; MCVO Generator scans the full load order and produces the data files for voice generation. Combined with AI voice synthesis (xVASynth or ElevenLabs), the player character speaks every dialogue line.
 
@@ -28,7 +28,7 @@ Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Gener
 | [MCVO Generator](https://www.nexusmods.com/skyrimspecialedition/mods/86737) + [xVASynth](https://www.nexusmods.com/skyrimspecialedition/mods/44184) | Alternative | Free custom-generation path. Quality is noticeably synthetic. Must re-run when load order changes. |
 | ElevenLabs + DBVO Voice Pack Creator | Alternative | Premium path. Higher quality, more natural output. Requires paid account and Discord-only tool. |
 
-### Notes
+### Setup Requirements
 - DBVO requires ConsoleUtilSSE NG, JContainers SE, SkyUI, and SKSE64 (all in foundations stack).
 - DBVO must load after any mod editing `dialoguemenu.swf`. Place after the UI stack in the left pane.
 - Windows 255-char path limit can crash on startup — keep install path short.
@@ -38,7 +38,7 @@ Dragonborn Voice Over (DBVO) and Main Character Voice Over Generator (MCVO Gener
 
 ---
 
-## Dual Voice Pack Strategy
+## Dual Voice Pack Strategy → separator: `Voicing`
 
 Two complete voice packs (one male, one female) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO MCM.
 
@@ -48,7 +48,7 @@ Two complete voice packs (one male, one female) for character flexibility. Insta
 
 ---
 
-## MCVO Generator + xVASynth Pipeline
+## MCVO Generator + xVASynth Pipeline → separator: `Voicing`
 
 ### Before Starting
 - Install DBVO and dependencies. DBVO must be enabled and in the load order before running MCVO Generator.
@@ -67,7 +67,7 @@ Repeat steps 2-4 with different voice model. Create separate MO2 mod. Enable one
 
 ---
 
-## ElevenLabs Custom Voice Pack
+## ElevenLabs Custom Voice Pack → separator: `Voicing`
 
 ### Prerequisites
 - ElevenLabs paid account (Creator $22/mo. recommended for full load order).

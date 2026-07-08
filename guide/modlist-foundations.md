@@ -1,8 +1,12 @@
 # Foundations and Compatibility
 
+**MO2 Separators:** `Foundations` → `Foundations - SKSE & Scripts`, `Foundations - Core Libraries`, `Foundations - Mesh & Texture Fixes`, `Foundations - Targeted Bugfixes`
+
 All mods in this section are installed into the appropriate `Foundations` sub-separators as noted per group.
 
-## Baseline
+---
+
+## Core Framework Baseline → separators: `Foundations` (parent)
 
 Install all core libraries and frameworks upfront — they are non-negotiable dependencies for virtually every mod in the list. Bulk-install prevents missing-master errors and lets every subsequent section work against the real framework stack.
 
@@ -60,10 +64,10 @@ A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of
 
 **Mods using SkyPatcher in this list:**
 
-- `Book Covers Skyrim - SkyPatched` (→ `02c`)
-- `Dawnguard Arsenal SSE - SkyPatched` (→ `08`)
-- `Diverse 4thUnknown Dragons` — uses SkyPatcher for combat-mod compatibility (→ `09`)
-- `Patchifier` Synthesis patcher generates SkyPatcher patches (→ `14d`)
+- `Book Covers Skyrim - SkyPatched` (→ [Textures & Meshes](modlist-graphics-textures.md))
+- `Dawnguard Arsenal SSE - SkyPatched` (→ [World Content](modlist-world-content.md))
+- `Diverse 4thUnknown Dragons` — uses SkyPatcher for combat-mod compatibility (→ [Enemies & Creatures](modlist-creatures.md))
+- `Patchifier` Synthesis patcher generates SkyPatcher patches (→ [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md))
 
 ### Mesh & Texture Fixes → separator: `Foundations - Mesh & Texture Fixes`
 
@@ -75,7 +79,7 @@ A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of
 
 ---
 
-## Official Masters Cleanup
+## Official Masters Cleanup → separator: `Foundations` (parent)
 
 Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAutoClean` on each file individually, collect cleaned `.esm` files into a `Cleaned Vanilla Masters` MO2 mod, and restore originals from `xEdit Backups` back into `Data\`.
 
@@ -94,7 +98,7 @@ Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAut
 5. Restore originals from `xEdit Backups` back into `Data\`.
 6. Enable `Cleaned Vanilla Masters` in MO2. Run LOOT again — no masters flagged.
 
-### Notes
+### Risks & Compatibility
 
 - Cleaning `Update.esm` is standard despite some mod-author cautions; USSEP's records win over cleaned originals.
 - Never clean a third-party mod's plugin unless LOOT explicitly flags it — many mods ship ITMs intentionally.
@@ -102,7 +106,7 @@ Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAut
 
 ---
 
-## Patching Technique And Strategy
+## Patching Technique And Strategy → separator: `Foundations` (parent)
 
 Adopt the canonical `xEdit` mod-by-mod patching workflow: install one mod at a time, run `xEdit` in `-veryquickshowconflicts` mode, resolve only new conflicts, use per-pair patches and `ModGroups`. Reserve `Bashed Patch` and `Synthesis` for the categories they genuinely own.
 
@@ -110,7 +114,7 @@ Adopt the canonical `xEdit` mod-by-mod patching workflow: install one mod at a t
 
 The **Bashed Patch** is an automatically generated plugin merging leveled lists, applying game-setting tweaks, and resolving category-tagged record conflicts. Replaces dozens of per-pair patches for the record types it owns.
 
-**Rebuild triggers:** adding/removing leveled-list mods, changing `.TweakSettings`, adding a mod with `Bash Tags`, form-ID compaction. It is step 2 in the full build order (after `SSEEdit`, before `Synthesis`; see → `14d`).
+**Rebuild triggers:** adding/removing leveled-list mods, changing `.TweakSettings`, adding a mod with `Bash Tags`, form-ID compaction. It is step 2 in the full build order (after `SSEEdit`, before `Synthesis`; see → [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md)).
 
 **What the Bashed Patch does not do:** resolve arbitrary record conflicts (→ `xEdit`/`Synthesis`), merge plugins (→ ESL flags), or iterative/rule-based patching (→ `Synthesis`).
 
@@ -123,7 +127,7 @@ The **Bashed Patch** is an automatically generated plugin merging leveled lists,
 - **NPC/follower mods** (RDO, Nether's, Serana Dialogue) — need `Actors.*` tags
 - **Audio overhauls** (AOS, ISC, Sounds of Skyrim) — need `Sound`/`C.Acoustic`
 
-Exact `Bash Tag` per plugin, `.TweakSettings` table, and build-order placement → `14d` [`modlist-performance-patches.md`](modlist-performance-patches.md).
+Exact `Bash Tag` per plugin, `.TweakSettings` table, and build-order placement → [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md).
 
 ### Cyclic Workflow (per new mod)
 
@@ -147,7 +151,7 @@ Run LOOT after new mod install. If flagged for cleaning, run `Quick Auto Clean` 
 
 Always use `<new file>.esp [Template] ESL` for patches. Never manually re-flag ESP↔ESL unless the mod author or xEdit explicitly says to.
 
-### Notes
+### Risks & Compatibility
 
 - Keep Bashed Patch and Synthesis scoped — don't let them absorb every decision.
 - Date-stamp patches and re-run xEdit after every source-mod update.
@@ -158,7 +162,7 @@ Always use `<new file>.esp [Template] ESL` for patches. Never manually re-flag E
 
 ---
 
-## ESP To ESL Conversion
+## ESP To ESL Conversion → separator: `Foundations` (parent)
 
 Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by moving into the 4096 light-plugin address space.
 
@@ -233,9 +237,6 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 ### Not Installed
 
+- **Alt-Tab Stuck Key Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148466)) — Prevents stuck modifier keys after alt-tabbing. Optional fix, evaluate if alt-tab issues arise during testing.
 - **I'm Walkin' Here NG with Pets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122516)) — Ally/pet body-blocking fix.
 - **Bard Instrumentals Mostly - Sing Rarely** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10927)) — Repetitive tavern singing. Not needed — other bard mods cover this. → separator: `Audio - SFX & Ambience`
-
-### TODO
-
-- **Alt-Tab Stuck Key Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148466)) — Stuck modifier keys after alt-tab.

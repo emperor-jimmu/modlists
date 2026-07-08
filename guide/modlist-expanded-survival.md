@@ -8,7 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Survival Systems
+## Survival Systems → separator: `Expanded Systems - Survival & Needs`
 
 How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, weather, disease, and wilderness friction for roleplay and travel texture, or a heavier survival framework as a central system. This section owns the baseline survival direction; → `Survival & Combat` owns later balance and difficulty interactions.
 
@@ -20,7 +20,7 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 | [Frostfall](https://www.nexusmods.com/skyrimspecialedition/mods/671) + [Campfire](https://www.nexusmods.com/skyrimspecialedition/mods/667) | Alternative | Harsh wilderness route. |
 | [Skills of the Wild](https://www.nexusmods.com/skyrimspecialedition/mods/37693) v2.0+ | Optional | 4 new skill trees (Hunting, Foraging, Tracking, Camping). Requires Campfire. Full compatibility with any survival baseline. |
 
-### Notes
+### Risks & Compatibility
 
 - A heavy survival system can dominate pacing and crowd out other expanded systems.
 - A very light setup can undershoot the immersive-travel pillar if later downtime decisions expect more texture.
@@ -29,7 +29,7 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 
 ---
 
-## Roleplay Upkeep And Hygiene
+## Roleplay Upkeep And Hygiene → separator: `Expanded Systems - Survival & Needs`
 
 Lighter day-to-day body-maintenance layer between full survival needs and pure visual flavor. Adds believable downtime rituals without turning hygiene into a second dominant survival framework.
 
@@ -71,7 +71,7 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 
 ---
 
-## Death Alternative System
+## Death Alternative System → separator: `Expanded Systems - Survival & Needs`
 
 What happens when the player falls in combat. Goal: add consequence and narrative texture to defeat without making every lost fight permanent.
 
@@ -80,7 +80,7 @@ What happens when the player falls in combat. Goal: add consequence and narrativ
 | [Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924) | Baseline | Nemesis system — respawn with debuffs, enemies gain name/buffs/presence, defeat nemesis to restore progress. |
 | Discipline-first route | Alternative | Vanilla death-and-reload loop. |
 
-### Notes
+### Risks & Compatibility
 
 - Death-alternative systems interact with every combat mod. Verify compatibility with `Valhalla Combat`, `Precision`, `TK Dodge`, and combat-animation mods from → `Animations`.
 - The nemesis system adds persistent NPCs and effects; verify save file size remains reasonable over long playthroughs.

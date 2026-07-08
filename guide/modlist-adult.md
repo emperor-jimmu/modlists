@@ -6,7 +6,7 @@ All mods in this section belong to the `Adult Content` MO2 separator unless note
 
 ---
 
-## Framework Prerequisites
+## Framework Prerequisites → separator: `Adult Content`
 
 OStim Standalone — a modern, standalone adult animation framework that does not require OSA or SexLab. The OStim Romance and Amorous Adventures patch layer depend on this.
 
@@ -28,14 +28,14 @@ OStim Standalone — a modern, standalone adult animation framework that does no
 | [Animation Pack Icons for OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/181880) | Baseline | 18 icons. |
 | [OTooTiredToMove](https://www.nexusmods.com/skyrimspecialedition/mods/154112) | Baseline | Temporary immobilisation after climax. |
 
-### Notes
+### Risks & Compatibility
 - OStim Standalone must not be loaded alongside legacy OSA or SexLab.
 - OStim Romance and AA OStim patch must match the same OStim Standalone version.
 - Keep auto-start settings conservative to avoid script load.
 
 ---
 
-## Romance Content
+## Romance Content → separator: `Adult Content`
 
 Opt-in quest-driven romance content running on top of the OStim framework.
 
@@ -43,14 +43,14 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 - **OStim Romance** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107671)) — Primary romance-content baseline. Active maintenance.
 - **Amorous Adventures OStim Standalone Patch** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150577)) — Ports classic Amorous Adventures content to OStim Standalone.
 
-### Notes
+### Risks & Compatibility
 - Lock the framework version first, then verify romance mod compatibility.
 - Romance quests add dialogue/quest records that may conflict with → `World Content` or → `NPCs` overhauls.
 - Verify load order with `RDO` and `Serana Dialogue Add-On` for overlapping NPCs.
 
 ---
 
-## NPCs And Dialogue → Adult Content
+## NPCs And Dialogue → separator: `Adult Content`
 
 | Mod | Type | Notes |
 | --- | --- | --- |
@@ -63,6 +63,6 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 | [Shrooms of Solstheim](https://www.nexusmods.com/skyrimspecialedition/mods/120050) | Alternative | Visual Solstheim flora upgrade. Adjacent to adult content. |
 | [BeeHH - Hentai Henchman](https://www.nexusmods.com/skyrimspecialedition/mods/182069) | Alternative | Research item only. Conflicts with NFF. |
 
-### Notes
+### Risks & Compatibility
 - Rigma conflicts with other male NPC overhauls. If → `NPCs` locks `The Men of Winter`, Rigma must override on a per-NPC basis or be reconciled.
 - Hygiene and bathing owned by `Bathing in Skyrim - Renewed` in → `Survival & Needs`. No separate bathing addon needed.

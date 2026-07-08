@@ -1,6 +1,6 @@
 # Survival, Difficulty, and Balance
 
-**MO2 Separator:** `Survival & Combat` → `Survival & Combat - Difficulty & Lethality`, `Survival & Combat - Enemy AI`, `Survival & Combat - Resources & Injuries`
+**MO2 Separators:** `Survival & Combat` → `Survival & Combat - Difficulty & Lethality`, `Survival & Combat - Enemy AI`, `Survival & Combat - Resources & Injuries`
 
 All mods in this section belong to one of the three survival/combat separators as noted per subsection.
 
@@ -17,7 +17,7 @@ Cross-load-order pressure: how quickly the world pushes back, how clearly dungeo
 - **Minimal intervention** — Leave encounter zones close to vanilla.
 - **Heavy world-structure** — Deleveled loot and stronger world gating (owned by → `Crafting & Economy`).
 
-### Notes
+### Risks & Compatibility
 - Encounter-zone structure can overlap with loot/economy decisions if this section pretends it owns world progression.
 - If `Arena` is combined with much harsher loot distribution, the result can overshoot from moody into over-gated.
 
@@ -32,6 +32,7 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 
 ### Alternatives
 - **Blade and Blunt - A Combat Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34549)) — Deliberate branch — it reaches far beyond simple pacing.
+- **Wildcat - Combat of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1368)) — Injury system, combat AI, and lethality tweaks. Legacy baseline.
 - **Minimalist route** — Keep lethality in the section-04 combat stack.
 
 ### Candidate
@@ -48,6 +49,7 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 
 ### Alternatives
 - **Skyrim Revamped - Complete Enemy Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14598)) — High-commitment. Add only if ordinary testing shows enemy behavior still too flat.
+- **SkyTactics - Dynamic Combat Styles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131148)) — SkyPatcher-based NPC combat style variety.
 - **NPCs Take Cover - Smarter Anti-Cheese AI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111890)) — NPCs take cover during combat instead of standing in the open. Lightweight, no new records.
 
 ---
@@ -72,7 +74,7 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 ### Baseline
 - **Know Your Enemy 2** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93258)) — Different creatures call for different tools; inspect system makes knowledge legible. Scope: tactical differentiation, not full enemy-ecosystem ownership.
 
-### Notes
+### Risks & Compatibility
 - Resistance systems can feel punishing if the player doesn't have enough ways to adapt mid-run.
 - For Steam 1.6.1170, the listed `Backported Extended ESL Support` requirement does not apply.
 - If the inspect flow or resistance spread feels too noisy, the concept may be better than the lived experience.
@@ -88,3 +90,6 @@ How difficulty and pressure choices interact with the chosen survival framework.
 - `Stress and Fear` naturally plugs into meals, inns, sleep, and calmer downtime.
 - If `Starfrost` remains the baseline, this section should amplify recovery need without forcing menu babysitting.
 - **Cold Breath NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174838)) (v1.8, May 2026) — Higher-fidelity fogged breath in cold environments. Mesh/particle replacer, no ESP.
+
+### Alternatives
+- **Navigation Restrictions - NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129086)) — Fast travel and navigation restrictions. Adds survival-oriented travel pressure.

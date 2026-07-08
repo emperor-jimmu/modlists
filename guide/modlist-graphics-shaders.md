@@ -6,7 +6,7 @@ All mods in this section belong to the `Graphics - Community Shaders` MO2 separa
 
 ---
 
-## Community Shaders Core Setup
+## Community Shaders Core Setup → separator: `Graphics - Community Shaders`
 
 This section owns the graphics-framework decision for the shader-first visual stack. Build modern visuals around `Community Shaders`, then layer materials, lighting, weather, water, and distant detail on top.
 
@@ -20,7 +20,7 @@ This section owns the graphics-framework decision for the shader-first visual st
 
 - Non-CS alternatives (ENB) are out of scope unless the project abandons the shader-first direction.
 
-### Notes
+### Risks & Compatibility
 
 - Some CS features are much heavier than the core framework.
 - Older ecosystem pages may refer to legacy behavior or outdated version requirements.
@@ -28,7 +28,7 @@ This section owns the graphics-framework decision for the shader-first visual st
 
 ---
 
-## Community Shaders Add-Ons And Required Features
+## Community Shaders Add-Ons And Required Features → separator: `Graphics - Community Shaders`
 
 How aggressive the first CS feature layer should be — improve shadowing, wetness, water response, and material depth without front-loading the full performance cost.
 
@@ -84,7 +84,7 @@ Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SS
 |------------|----------------|------------------|-----------------|----------------------|---------|--------|--------------------------|----------|
 | YYYY-MM-DD | Steam 1.6.1170 | Falkreath Forest | Overcast / 3 PM | Added Grass Lighting | 00      | 00     | Better depth, no flicker | Keep     |
 
-### Notes
+### Risks & Compatibility
 
 - Module stacks that look good in isolation can fight later weather, water, or lighting winners.
 - Measuring several shader changes at once makes later decisions impossible to trust.
@@ -92,7 +92,7 @@ Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SS
 
 ---
 
-## Parallax Framework Dependencies
+## Parallax Framework Dependencies → separator: `Graphics - Community Shaders`
 
 Auto Parallax and Complex Parallax Materials form the parallax rendering layer bridging CS parallax support with mesh and texture mods downstream.
 
@@ -100,14 +100,14 @@ Auto Parallax and Complex Parallax Materials form the parallax rendering layer b
 
 - Install **Auto Parallax** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/79473)) and **Complex Parallax Materials** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95134)) as infrastructure before adding parallax-enabled textures or meshes. CPM hard-depends on Auto Parallax. Install after the texture stack is mostly chosen but before PGPatcher runs.
 
-### Notes
+### Risks & Compatibility
 
 - Without Auto Parallax, Complex Parallax Materials will not function — both must be present.
 - Installing too early means regenerating parallax data after texture changes; install after the main texture stack is locked.
 
 ---
 
-## Physically Based Rendering (PBR) Support
+## Physically Based Rendering (PBR) Support → separator: `Graphics - Community Shaders`
 
 PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions.
 
@@ -164,7 +164,7 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 5. Run **PGPatcher** last — all PBR texture mods above require it.
 6. Only after core stack passes review, test optional landscape additions (`Cathedralist's PBR Landscape`, `TomatoRim PBR Landscapes AIO`).
 
-### Notes
+### Risks & Compatibility
 
 - VPBR is newer (March 2026) than Faultier's PBR Skyrim (v3.0) — single-point-of-failure risk if abandoned. Active development so far (v1.0 → v1.32 in ~2 months).
 - Faultier's PBR Landscapes 4k + ERM cover VPBR's landscape gap; Faultier's PBR Armors and Clothes covers the gear gap.
@@ -174,61 +174,6 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 
 ---
 
-## Candidate TODO Additions
+## Open Research
 
-→ Separators: `Community Shaders`, `Lighting`, `Weather & Water`, `Terrain & Flora`
-
-### Textures, Clutter & Meshes → `Graphics - Community Shaders`
-
-- `Racemenu Enhancer` — <https://www.nexusmods.com/skyrimspecialedition/mods/182536> — Character creation RaceMenu enhancer
-- `Visual Animated Enchants` — Weapon enchantment VFX replacer
-- `Apophysis Dragon Priests Masks` — Dragon priest mask retexture
-- `Runed Nordic Weapons` — Nordic weapon mesh/texture replacer
-- `Elven Armor replacer glow` — Elven armor retexture with glow maps
-- `Elsopa Iron weapons redone` — Iron weapon retexture
-- `Ennead Banners and Shields` — Banner/shield retexture
-- `Elsopa Quivers Redone` — Quiver retexture
-- `Believable greatswords sheathed` — Greatsword sheath mesh fix
-- `ElSopa - HD Medieval anvil` — Anvil retexture
-- `Elsopa Grindstones` — Grindstone retexture
-- `Renthal Workbench` — Workbench retexture
-- `VFX Edit AIO - Spells Retexture` — Spell visual effect retexture
-- `JFresh's Mead Stein` — Mead stein retexture
-- `SD's Horn Candles` — Candle retexture
-- `JS Dragon Claws` — Dragon claw retexture
-- `Skyrim remastered soul gems` — Soul gem retexture
-- `Rally's Market Stalls` — Market stall retexture
-- `KanJS Spell Tomes Animated` — Animated spell tome mesh replacer
-- `Alt Markarth Forge` — Markarth forge retexture
-- `HD Unique Handmade signs` — Inn/shop sign retexture
-- `Stay Arrows Stay` — Keeps arrows lodged in bodies and world
-- `One Quiver to rule them all` — Quiver attachment positioning fix
-- `Nordic Windhelm` / `Tomato's Windhelm` — <https://www.nexusmods.com/skyrimspecialedition/mods/174492> — Windhelm city retexture with PBR/Complex Material
-- `Distinguished Drapery` — <https://www.nexusmods.com/skyrimspecialedition/mods/173894> — Curtain/hanging fabric retexture
-- `The Mists of Blackreach` — <https://www.nexusmods.com/skyrimspecialedition/mods/179487> — Blackreach mist/fog VFX
-- `Better Wine Labels - Vanilla and LotD` — <https://www.nexusmods.com/skyrimspecialedition/mods/34698> — Wine bottle label retexture; PBR Patch: <https://www.nexusmods.com/skyrimspecialedition/mods/175588>
-- `Diverse Windmill Sails - BOS` — <https://www.nexusmods.com/skyrimspecialedition/mods/121759>
-- `Diverse Foods - BOS` — <https://www.nexusmods.com/skyrimspecialedition/mods/91599>
-- `Diverse Candles - BOS` — <https://www.nexusmods.com/skyrimspecialedition/mods/94369>
-- `Better Pelts and Hides` — <https://www.nexusmods.com/skyrimspecialedition/mods/87277>
-- `Fluffy Hanging rabbits` — <https://www.nexusmods.com/skyrimspecialedition/mods/89148>
-- `FrankBlack's Honey in a Jar` — <https://www.nexusmods.com/skyrimspecialedition/mods/104496>
-- `slightly Better Nordic Henges - BOS` — <https://www.nexusmods.com/skyrimspecialedition/mods/97162>
-
-### Lighting → `Graphics - Lighting`
-
-- `KD Realistic Fireplaces` — Fireplace visual upgrade
-- `EmbersXD Torch Edit` — <https://www.nexusmods.com/skyrimspecialedition/mods/134219> — Torch visual edit for Embers XD
-
-### Weather & Sky → `Graphics - Weather & Water`
-
-- `Draco's fantasy auroras` — Aurora/sky visual replacer
-- `Draco's moons` — Moon visual replacer
-
-### Flora & Landscape → `Graphics - Terrain & Flora`
-
-- `Flora Additions - Water Plants` — Water plant flora additions
-- `Bigger trees` — Tree size multiplier
-- `Grassreach - Blackreach Grass` — <https://www.nexusmods.com/skyrimspecialedition/mods/179420>
-- `Freak's Floral Solstheim` — <https://www.nexusmods.com/skyrimspecialedition/mods/138161>
-- Road texture options: `Simplest Roads` (<https://www.nexusmods.com/skyrimspecialedition/mods/111255>), `Simple Complex Parallax Roads` (<https://www.nexusmods.com/skyrimspecialedition/mods/173826>), `Blended Roads` (<https://www.nexusmods.com/skyrimspecialedition/mods/8834>)
+Open research for the graphics pipeline is tracked in `TODO.md`.

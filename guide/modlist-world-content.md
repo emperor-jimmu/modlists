@@ -1,6 +1,6 @@
 # World Content
 
-**MO2 Separator:** `World Content` → `World Content - Overhauls`, `World Content - Quests`, `World Content - Homes & Bases`, `World Content - Underwater`
+**MO2 Separators:** `World Content` → `World Content - Overhauls`, `World Content - Quests`, `World Content - Homes & Bases`, `World Content - Underwater`
 
 All mods in this section belong to one of the four world-content separators as noted per subsection.
 
@@ -12,7 +12,7 @@ Large worldspace-content changes making regions feel meaningfully different to c
 
 ### Baseline
 
-Keep restrained until section 08 is clearer. First experiment:
+First experiment:
 
 | Mod            | Description                                                                 | Nexus                                                              |
 |----------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -209,7 +209,7 @@ Smaller discoverable places between headline destinations.
 | Depths of Skyrim - Mesh fixes                 |                                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174995) |
 | More Underwater Treasures - AIO               | 56 treasures (Skyrim) + 35 (Solstheim). Marked compatible with Depths of Skyrim. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/128247) |
 
-### Notes
+### Setup Requirements
 
 - Use `SSE-Terrain-Tamriel-Extend.esm` for LOD generation (→ `Performance`).
 - Requires `iMaxGrassTypesPerTexure=7` in `Skyrim.ini`.
@@ -262,6 +262,14 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 | Immersive Armors                             | ~55 armor sets, 396 shields. 206K endorsements. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3479)                                                                                    |
 | Immersive Armors Retexture and Mesh Fixes SE | Brings visuals in line with 4K PBR stack.       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75891)                                                                                   |
 | Dawnguard Arsenal SSE - SkyPatched           | SkyPatched variant.                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/25094) — SkyPatched: [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113677) |
+
+### Alternatives
+
+| Mod | Description | Nexus |
+| --- | --- | --- |
+| [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595) | Unique moon-themed weapon with quest content. | |
+| [Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148) | Unique staff / Staff of Magnus replacer with expanded mechanics. | |
+| [Reliquary of Myth - Artifacts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/31612) | Artifact overhaul granting unique powers to daedric and quest rewards. | |
 
 ---
 

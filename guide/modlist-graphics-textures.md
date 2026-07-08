@@ -6,7 +6,7 @@ All mods in this section belong to the `Graphics - Textures & Meshes` MO2 separa
 
 ---
 
-## Mesh Improvements And Parallax Support
+## Mesh Improvements And Parallax Support → separator: `Graphics - Textures & Meshes`
 
 Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it.
 
@@ -118,7 +118,7 @@ All mesh-only, no ESP.
 
 ---
 
-## Furniture, Clutter, And Item Replacers
+## Furniture, Clutter, And Item Replacers → separator: `Graphics - Textures & Meshes`
 
 Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy city series — Rally's, Arc's, and Kanjs author lines plus standalone BOS replacers. No cell-record edits; all are BOS-based or pure replacers.
 
@@ -164,7 +164,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | Animated Filled Soul Gems | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110638) |
 | Animated Ingredients | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72852) |
 
-### Notes
+### Risks & Compatibility
 
 - Kanjs Soup and Stew has two variants: the base animation mod (113104) and a SkyPatched version (113191). The SkyPatched version is recommended for better compatibility.
 - Nordic Stonewalls + Complex Material: install the base mod first, then the PBR upgrade on top.
@@ -173,7 +173,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 ---
 
-## Unique Entity Replacers
+## Unique Entity Replacers → separator: `Graphics - Textures & Meshes`
 
 Model and texture upgrades for unique named entities and one-of-a-kind objects — characters, corpses, set-piece models not covered by broad replay packs. Closes visual gaps without swelling into full NPC beautification.
 
@@ -182,14 +182,14 @@ Model and texture upgrades for unique named entities and one-of-a-kind objects �
 | Night Mother                      | High-quality model/texture replacer for the Night Mother's corpse. ESL-flagged, zero script or record conflicts. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83527) |
 | Skyland Imperial and Nordic Tents | 4K tent textures with new mesh for the large Nordic fur tent. No ESP.                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57002) |
 
-### Notes
+### Risks & Compatibility
 
 - Verify Night Mother does not conflict with lighting/interior overhauls that modify the sanctuary cell.
 - Do not let this subsection grow into general NPC or creature overhaul — those are owned by → `NPCs`.
 
 ---
 
-## Blood, Decals, And Combat Visual Effects
+## Blood, Decals, And Combat Visual Effects → separator: `Graphics - Textures & Meshes`
 
 In-world visual effects during combat: blood pools, persistent decals, lingering marks. Separate from lighting/weather (ambient worldstate) and from hit-reaction/stagger (→ `Third-Person Gameplay`, → `Expanded Systems`).
 
@@ -206,7 +206,7 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 | Lightning VFX Edit      | Lightning bolt VFX replacer. Mesh-only, no ESP.                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124520) |
 | Dynamic Footprints SKSE | Persistent footprints on snow, mud, sand. Add after blood/decals baseline is stable.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175254) |
 
-### Notes
+### Risks & Compatibility
 
 - Blood/decals can interact poorly with CS weather mods handling screen-space wetness. Verify under a locked weather baseline.
 - Persistent blood decals can strain frame-rate and memory in long fights. Check MCM for decal lifetime and density.
@@ -215,7 +215,7 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 
 ---
 
-## Book and Paper Visual Overhauls
+## Book and Paper Visual Overhauls → separator: `Graphics - Textures & Meshes`
 
 Visual upgrades for books, notes, and paper — the most-read world objects. Texture and mesh improvements make reading feel more tactile and library exploration more rewarding without touching gameplay records.
 
@@ -228,11 +228,53 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 | Book Covers Skyrim                   | Core book-cover texture replacer. Every book gets a unique hand-crafted cover. 200K+ endorsements. Choose the **Main Files** download (not the USSEP Update variant). | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/901)    |
 | Book Covers Skyrim Enhanced Textures | 2K/4K texture upgrade. Install after base mod and overwrite. Optional but recommended for 4K displays.                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178820) |
 | Book Covers Skyrim - SkyPatched      | SkyPatcher-based forward-port resolving record-level conflicts. Choose **Recommended Main File**.                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/109254) |
-| Book Covers Skyrim - Lost Library    | Adds 150+ lore books from earlier TES games. Content companion; quest-level decision owned by → `08`.                                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/902)    |
+| Book Covers Skyrim - Lost Library    | Adds 150+ lore books from earlier TES games. Content companion; quest-level decision owned by → [World Content](modlist-world-content.md).                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/902)    |
 
-### Notes
+### Risks & Compatibility
 
 - With USSEP in the load order, use the SkyPatched variant — it handles USSEP forwarding plus broader compatibility.
 - Enhanced Textures is recommended for 4K displays. At 2K the base BC7 textures are adequate.
-- Verify compatibility with mods touching book inventory records (e.g., Unread Books Glow). SkyPatched resolves most record-level conflicts.
+- Verify compatibility with mods touching book inventory records (e.g. Unread Books Glow). SkyPatched resolves most record-level conflicts.
 - Base mod is ~600 MB for 2K. Evaluate whether unique book covers earn their VRAM and disk space cost.
+
+---
+
+## Optional Texture And Mesh Replacements → separator: `Graphics - Textures & Meshes`
+
+Small texture/mesh replacers that don't fit the main topic sections above. Each is a single-author or single-object upgrade. Adopt selectively based on which objects actually draw the eye in regular play.
+
+| Mod | Notes |
+| --- | --- |
+| [Visual Animated Enchants](https://www.nexusmods.com/skyrimspecialedition/mods/7037) | Original VAE — superseded by V.A.E.R. in the main Mesh Replacer Series. Keep only if V.A.E.R. conflicts. |
+| [Apophysis Dragon Priest Masks SE](https://www.nexusmods.com/skyrimspecialedition/mods/5800) | Dragon priest mask retexture. Optional cosmetic upgrade. |
+| [Runed Nordic Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/11559) | Nordic weapon mesh/texture replacer. |
+| [Elven Armor replacer glow](https://www.nexusmods.com/skyrimspecialedition/mods/73235) | Elven armor retexture with glow maps. |
+| [Elsopa Iron weapons redone](https://www.nexusmods.com/skyrimspecialedition/mods/52605) | Iron weapon retexture. |
+| [Ennead Banners and Shields](https://www.nexusmods.com/skyrimspecialedition/mods/46360) | Banner/shield retexture. |
+| [Elsopa Quivers Redone](https://www.nexusmods.com/skyrimspecialedition/mods/65921) | Quiver retexture. |
+| [Believable greatswords sheathed](https://www.nexusmods.com/skyrimspecialedition/mods/36909) | Greatsword sheath mesh fix. |
+| [ElSopa - HD Medieval anvil](https://www.nexusmods.com/skyrimspecialedition/mods/48825) | Anvil retexture. |
+| [Elsopa Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/58149) | Grindstone retexture. |
+| [Renthal's workbench](https://www.nexusmods.com/skyrimspecialedition/mods/23164) | Workbench retexture. |
+| [VFX Edit AIO - Spells Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/133774) | Spell visual effect retexture. |
+| [JFresh's Mead Stein - A Tankard Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/26685) | Mead stein/tankard retexture. |
+| [SD's Horn Candles](https://www.nexusmods.com/skyrimspecialedition/mods/40192) | Candle retexture. |
+| [JS Dragon Claws](https://www.nexusmods.com/skyrimspecialedition/mods/57038) | Dragon claw retexture. |
+| [Skyrim Remastered - Soul Gems](https://www.nexusmods.com/skyrimspecialedition/mods/39397) | Soul gem retexture. |
+| [Rally's Market Stalls](https://www.nexusmods.com/skyrimspecialedition/mods/81282) | Market stall retexture. |
+| [KanJS Spell Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/103057) | Animated spell tome mesh replacer. |
+| [Alt Markarth Forge](https://www.nexusmods.com/skyrimspecialedition/mods/88936) | Markarth forge retexture. |
+| [HD Unique Handmade Signs (ElSopa)](https://www.nexusmods.com/skyrimspecialedition/mods/21704) | Inn/shop sign retexture. |
+| [Skyking Windhelm Bridge Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/147846) | Windhelm bridge mesh/texture replacer. |
+| [Tomato's Windhelm - PBR or Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/174492) | Windhelm city-wide PBR retexture. 2K main file recommended. |
+| [Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894) | Curtain/hanging fabric retexture. |
+| [The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487) | Blackreach mist/fog visual effect overhaul. |
+| [Better Wine Labels - Vanilla and LotD](https://www.nexusmods.com/skyrimspecialedition/mods/34698) | Wine bottle label retexture. PBR patch: [175588](https://www.nexusmods.com/skyrimspecialedition/mods/175588) |
+| [Diverse Windmill Sails - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/121759) | BOS-based windmill sail variety. |
+| [Diverse Foods - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/91599) | BOS-based food item variety. |
+| [Diverse Candles - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/94369) | BOS-based candle variety. |
+| [Better Pelts and Hides](https://www.nexusmods.com/skyrimspecialedition/mods/87277) | Pelt/hide texture replacer. |
+| [Fluffy Hanging rabbits](https://www.nexusmods.com/skyrimspecialedition/mods/89148) | Hanging rabbit mesh/texture replacer. |
+| [FrankBlack's Honey in a Jar](https://www.nexusmods.com/skyrimspecialedition/mods/104496) | Honey jar retexture. |
+| [Slightly Better Nordic Henges - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/97162) | Nordic henge object variety via BOS. |
+| [One Quiver to rule them all](https://www.nexusmods.com/skyrimspecialedition/mods/172070) | Quiver attachment positioning fix. |

@@ -4,7 +4,7 @@
 
 All mods in this section belong to the `Graphics - Weather & Water` MO2 separator unless noted.
 
-## Weather And Atmosphere
+## Weather And Atmosphere → separator: `Graphics - Weather & Water`
 
 Weather should be chosen as part of the Community Shaders presentation layer, not as an isolated plugin choice. The target is a grounded but modern visual tone that preserves forest, mountain, and travel readability in third person.
 
@@ -28,7 +28,7 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 | Azurite Weathers III - Enhanced | Later tuning layer, not the first decision. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150269) |
 | Skydreamus CS Presets | Later tuning layer, not the first decision. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171145) |
 
-### Notes
+### Risks & Compatibility
 
 - A weather setup that looks stunning in screenshots can flatten gameplay readability in forests, storms, or dusk travel.
 - Overly aggressive fog, contrast, or dark nights work against third-person exploration and combat.
@@ -36,7 +36,7 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 
 ---
 
-## Water Visuals
+## Water Visuals → separator: `Graphics - Weather & Water`
 
 Treat water as a full visual stack: base water look, CS water features, mesh support, foam, waterfalls. Target: cold, readable, grounded water that holds up in motion during travel.
 
@@ -64,8 +64,9 @@ Evaluate these only after the main water base is selected.
 | Rally's Water Foam | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28922) |
 | Water Debris | Floating debris VFX. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171371) |
 | Underwater Bubbles - SKSE Plugin | No ESP, complements surface stack. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175559) |
+| Refined Water Droplet Replacer for R.A.S.S. | Rain/water droplet visual replacer. Works with R.A.S.S. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40793) |
 
-### Notes
+### Risks & Compatibility
 
 - Water can look strong in still shots and distracting in motion if foam, reflections, or wave response are overdone.
 - Water tone can clash with the chosen weather route.
@@ -73,7 +74,7 @@ Evaluate these only after the main water base is selected.
 
 ---
 
-## Sky, Stars, And Auroras
+## Sky, Stars, And Auroras → separator: `Graphics - Weather & Water`
 
 The cosmic visual layer: night-sky stars, aurora rendering, sky-dome enhancements. Kept separate from weather because sky-dome work is about clear-night rendering and long-horizon reads, not precipitation and overcast coverage.
 
@@ -93,8 +94,10 @@ Keep the discipline-first route alive if the weather mod's bundled star/sky text
 | Realistic Galaxy | Galaxy texture replacer. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111458) |
 | Ultra Hi-Res Nightsky | Hubble-imagery galaxy, up to 16K. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6096) |
 | Worlds Behind Glass | High-res night sky for telescope mods. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158077) |
+| [Draco's fantasy auroras](https://www.nexusmods.com/skyrimspecialedition/mods/120563) | Aurora/sky visual replacer. Optional cosmetic. | |
+| [Draco's moons](https://www.nexusmods.com/skyrimspecialedition/mods/40605) | Moon visual replacer. Optional cosmetic. | |
 
-### Notes
+### Risks & Compatibility
 
 - Aurora mods can look out of place in non-northern settings; verify southern holds.
 - Sky-dome edits can fight with weather mods that tweak the night sky. Give the aurora mod priority for night-sky changes.
