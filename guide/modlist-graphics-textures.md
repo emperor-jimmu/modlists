@@ -124,45 +124,45 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 ### Rally's, Arc's, And Snazzy Clutter
 
-| Mod | Description | Nexus |
-|-----|-------------|-------|
-| Rally's Noble Furniture - BOS | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113326) |
-| Rally's Orc Furniture | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111457) |
-| Rally's Upper Furniture | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112256) |
-| Rally's Barsets | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114178) |
-| Rally's Common Furniture | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110370) |
-| Rally's Dark Elf Furniture (High Poly - ENB Light) | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112042) |
-| Snazzy Common Wardrobes - BOS | Choose the BOS meshes main file. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92809) |
-| Whiterun Objects SMIMed (and fixes too) | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69125) |
-| Arc's WispMother Redux 2K-4K | Choose 2K. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111330) |
-| Arc's Kettle REDUX 2K-4K | Choose 2K. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110929) |
-| Arc's Kitchen Redux 2K-4K | Choose 2K. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111694) |
-| Arc's MeadBarrel Redux 2K-4K | Stack: install all three (base + Bloody + Distributed). Choose 2K for base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111195) |
-| Arc's Bloody MeadBarrel Redux | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116447) |
-| Distributed Arc's Mead Barrels | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119006) |
-| Arc's Tankard Redux | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112567) |
-| ElSopa - HD Iron Tools Redone SE | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60495) |
-| Diverse BOS Kitchenware | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112361) |
-| Dynamic Things Alternative - BOS | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60741) |
-| Nordic Stonewalls | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57686) |
-| Nordic Stonewall Terraces | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115210) |
-| Nordic Stonewalls Complex Material and PBR | PBR upgrade. Install after base Nordic Stonewalls. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127188) |
-| Snazzy Wall Mounted Trophies - BOS | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115054) |
-| Fluffy Wall Mounted Dead Animals | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90369) |
-| Wall Mounted Dead Animals Fixes | Install after Fluffy Wall Mounted Dead Animals. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58511) |
-| Snazzy Diverse Carriages - BOS | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112041) |
-| Snazzy Diverse Carriages - Seasonal Patch | Required if Seasonal Landscapes is adopted. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112210) |
+| Mod                                                | Description                                                                 | Nexus                                                               |
+|----------------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Rally's Noble Furniture - BOS                      |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113326) |
+| Rally's Orc Furniture                              |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111457) |
+| Rally's Upper Furniture                            |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112256) |
+| Rally's Barsets                                    |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114178) |
+| Rally's Common Furniture                           |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110370) |
+| Rally's Dark Elf Furniture (High Poly - ENB Light) |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112042) |
+| Snazzy Common Wardrobes - BOS                      | Choose the BOS meshes main file.                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92809)  |
+| Whiterun Objects SMIMed (and fixes too)            |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69125)  |
+| Arc's WispMother Redux 2K-4K                       | Choose 2K.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111330) |
+| Arc's Kettle REDUX 2K-4K                           | Choose 2K.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110929) |
+| Arc's Kitchen Redux 2K-4K                          | Choose 2K.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111694) |
+| Arc's MeadBarrel Redux 2K-4K                       | Stack: install all three (base + Bloody + Distributed). Choose 2K for base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111195) |
+| Arc's Bloody MeadBarrel Redux                      |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116447) |
+| Distributed Arc's Mead Barrels                     |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119006) |
+| Arc's Tankard Redux                                |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112567) |
+| ElSopa - HD Iron Tools Redone SE                   |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60495)  |
+| Diverse BOS Kitchenware                            |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112361) |
+| Dynamic Things Alternative - BOS                   |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60741)  |
+| Nordic Stonewalls                                  |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57686)  |
+| Nordic Stonewall Terraces                          |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115210) |
+| Nordic Stonewalls Complex Material and PBR         | PBR upgrade. Install after base Nordic Stonewalls.                          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127188) |
+| Snazzy Wall Mounted Trophies - BOS                 |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115054) |
+| Fluffy Wall Mounted Dead Animals                   |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90369)  |
+| Wall Mounted Dead Animals Fixes                    | Install after Fluffy Wall Mounted Dead Animals.                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58511)  |
+| Snazzy Diverse Carriages - BOS                     |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112041) |
+| Snazzy Diverse Carriages - Seasonal Patch          | Required if Seasonal Landscapes is adopted.                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112210) |
 
 ### Animated Items (mesh replacers)
 
-| Mod | Description | Nexus |
-|-----|-------------|-------|
-| Kanjs - Sanguine Rose Animated | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113606) |
+| Mod                                             | Description                                  | Nexus                                                               |
+|-------------------------------------------------|----------------------------------------------|---------------------------------------------------------------------|
+| Kanjs - Sanguine Rose Animated                  |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113606) |
 | Kanjs - Soup and Stew AIO Animated (SkyPatched) | Choose the SkyPatched version over the base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113191) |
-| Kanjs - Human Heart Animated and Beating Motion | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111616) |
-| Kanjs - Taproot Animated and Beating Motion | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111446) |
-| Animated Filled Soul Gems | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110638) |
-| Animated Ingredients | | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72852) |
+| Kanjs - Human Heart Animated and Beating Motion |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111616) |
+| Kanjs - Taproot Animated and Beating Motion     |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111446) |
+| Animated Filled Soul Gems                       |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110638) |
+| Animated Ingredients                            |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72852)  |
 
 ### Risks & Compatibility
 
@@ -243,38 +243,38 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 
 Small texture/mesh replacers that don't fit the main topic sections above. Each is a single-author or single-object upgrade. Adopt selectively based on which objects actually draw the eye in regular play.
 
-| Mod | Notes |
-| --- | --- |
-| [Visual Animated Enchants](https://www.nexusmods.com/skyrimspecialedition/mods/7037) | Original VAE — superseded by V.A.E.R. in the main Mesh Replacer Series. Keep only if V.A.E.R. conflicts. |
-| [Apophysis Dragon Priest Masks SE](https://www.nexusmods.com/skyrimspecialedition/mods/5800) | Dragon priest mask retexture. Optional cosmetic upgrade. |
-| [Runed Nordic Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/11559) | Nordic weapon mesh/texture replacer. |
-| [Elven Armor replacer glow](https://www.nexusmods.com/skyrimspecialedition/mods/73235) | Elven armor retexture with glow maps. |
-| [Elsopa Iron weapons redone](https://www.nexusmods.com/skyrimspecialedition/mods/52605) | Iron weapon retexture. |
-| [Ennead Banners and Shields](https://www.nexusmods.com/skyrimspecialedition/mods/46360) | Banner/shield retexture. |
-| [Elsopa Quivers Redone](https://www.nexusmods.com/skyrimspecialedition/mods/65921) | Quiver retexture. |
-| [Believable greatswords sheathed](https://www.nexusmods.com/skyrimspecialedition/mods/36909) | Greatsword sheath mesh fix. |
-| [ElSopa - HD Medieval anvil](https://www.nexusmods.com/skyrimspecialedition/mods/48825) | Anvil retexture. |
-| [Elsopa Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/58149) | Grindstone retexture. |
-| [Renthal's workbench](https://www.nexusmods.com/skyrimspecialedition/mods/23164) | Workbench retexture. |
-| [VFX Edit AIO - Spells Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/133774) | Spell visual effect retexture. |
-| [JFresh's Mead Stein - A Tankard Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/26685) | Mead stein/tankard retexture. |
-| [SD's Horn Candles](https://www.nexusmods.com/skyrimspecialedition/mods/40192) | Candle retexture. |
-| [JS Dragon Claws](https://www.nexusmods.com/skyrimspecialedition/mods/57038) | Dragon claw retexture. |
-| [Skyrim Remastered - Soul Gems](https://www.nexusmods.com/skyrimspecialedition/mods/39397) | Soul gem retexture. |
-| [Rally's Market Stalls](https://www.nexusmods.com/skyrimspecialedition/mods/81282) | Market stall retexture. |
-| [KanJS Spell Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/103057) | Animated spell tome mesh replacer. |
-| [Alt Markarth Forge](https://www.nexusmods.com/skyrimspecialedition/mods/88936) | Markarth forge retexture. |
-| [HD Unique Handmade Signs (ElSopa)](https://www.nexusmods.com/skyrimspecialedition/mods/21704) | Inn/shop sign retexture. |
-| [Skyking Windhelm Bridge Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/147846) | Windhelm bridge mesh/texture replacer. |
-| [Tomato's Windhelm - PBR or Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/174492) | Windhelm city-wide PBR retexture. 2K main file recommended. |
-| [Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894) | Curtain/hanging fabric retexture. |
-| [The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487) | Blackreach mist/fog visual effect overhaul. |
-| [Better Wine Labels - Vanilla and LotD](https://www.nexusmods.com/skyrimspecialedition/mods/34698) | Wine bottle label retexture. PBR patch: [175588](https://www.nexusmods.com/skyrimspecialedition/mods/175588) |
-| [Diverse Windmill Sails - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/121759) | BOS-based windmill sail variety. |
-| [Diverse Foods - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/91599) | BOS-based food item variety. |
-| [Diverse Candles - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/94369) | BOS-based candle variety. |
-| [Better Pelts and Hides](https://www.nexusmods.com/skyrimspecialedition/mods/87277) | Pelt/hide texture replacer. |
-| [Fluffy Hanging rabbits](https://www.nexusmods.com/skyrimspecialedition/mods/89148) | Hanging rabbit mesh/texture replacer. |
-| [FrankBlack's Honey in a Jar](https://www.nexusmods.com/skyrimspecialedition/mods/104496) | Honey jar retexture. |
-| [Slightly Better Nordic Henges - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/97162) | Nordic henge object variety via BOS. |
-| [One Quiver to rule them all](https://www.nexusmods.com/skyrimspecialedition/mods/172070) | Quiver attachment positioning fix. |
+| Mod                                                                                                       | Notes                                                                                                        |
+|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| [Visual Animated Enchants](https://www.nexusmods.com/skyrimspecialedition/mods/7037)                      | Original VAE — superseded by V.A.E.R. in the main Mesh Replacer Series. Keep only if V.A.E.R. conflicts.     |
+| [Apophysis Dragon Priest Masks SE](https://www.nexusmods.com/skyrimspecialedition/mods/5800)              | Dragon priest mask retexture. Optional cosmetic upgrade.                                                     |
+| [Runed Nordic Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/11559)                         | Nordic weapon mesh/texture replacer.                                                                         |
+| [Elven Armor replacer glow](https://www.nexusmods.com/skyrimspecialedition/mods/73235)                    | Elven armor retexture with glow maps.                                                                        |
+| [Elsopa Iron weapons redone](https://www.nexusmods.com/skyrimspecialedition/mods/52605)                   | Iron weapon retexture.                                                                                       |
+| [Ennead Banners and Shields](https://www.nexusmods.com/skyrimspecialedition/mods/46360)                   | Banner/shield retexture.                                                                                     |
+| [Elsopa Quivers Redone](https://www.nexusmods.com/skyrimspecialedition/mods/65921)                        | Quiver retexture.                                                                                            |
+| [Believable greatswords sheathed](https://www.nexusmods.com/skyrimspecialedition/mods/36909)              | Greatsword sheath mesh fix.                                                                                  |
+| [ElSopa - HD Medieval anvil](https://www.nexusmods.com/skyrimspecialedition/mods/48825)                   | Anvil retexture.                                                                                             |
+| [Elsopa Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/58149)                           | Grindstone retexture.                                                                                        |
+| [Renthal's workbench](https://www.nexusmods.com/skyrimspecialedition/mods/23164)                          | Workbench retexture.                                                                                         |
+| [VFX Edit AIO - Spells Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/133774)             | Spell visual effect retexture.                                                                               |
+| [JFresh's Mead Stein - A Tankard Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/26685)     | Mead stein/tankard retexture.                                                                                |
+| [SD's Horn Candles](https://www.nexusmods.com/skyrimspecialedition/mods/40192)                            | Candle retexture.                                                                                            |
+| [JS Dragon Claws](https://www.nexusmods.com/skyrimspecialedition/mods/57038)                              | Dragon claw retexture.                                                                                       |
+| [Skyrim Remastered - Soul Gems](https://www.nexusmods.com/skyrimspecialedition/mods/39397)                | Soul gem retexture.                                                                                          |
+| [Rally's Market Stalls](https://www.nexusmods.com/skyrimspecialedition/mods/81282)                        | Market stall retexture.                                                                                      |
+| [KanJS Spell Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/103057)                  | Animated spell tome mesh replacer.                                                                           |
+| [Alt Markarth Forge](https://www.nexusmods.com/skyrimspecialedition/mods/88936)                           | Markarth forge retexture.                                                                                    |
+| [HD Unique Handmade Signs (ElSopa)](https://www.nexusmods.com/skyrimspecialedition/mods/21704)            | Inn/shop sign retexture.                                                                                     |
+| [Skyking Windhelm Bridge Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/147846)            | Windhelm bridge mesh/texture replacer.                                                                       |
+| [Tomato's Windhelm - PBR or Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/174492) | Windhelm city-wide PBR retexture. 2K main file recommended.                                                  |
+| [Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894)                       | Curtain/hanging fabric retexture.                                                                            |
+| [The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487)                     | Blackreach mist/fog visual effect overhaul.                                                                  |
+| [Better Wine Labels - Vanilla and LotD](https://www.nexusmods.com/skyrimspecialedition/mods/34698)        | Wine bottle label retexture. PBR patch: [175588](https://www.nexusmods.com/skyrimspecialedition/mods/175588) |
+| [Diverse Windmill Sails - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/121759)                | BOS-based windmill sail variety.                                                                             |
+| [Diverse Foods - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/91599)                          | BOS-based food item variety.                                                                                 |
+| [Diverse Candles - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/94369)                        | BOS-based candle variety.                                                                                    |
+| [Better Pelts and Hides](https://www.nexusmods.com/skyrimspecialedition/mods/87277)                       | Pelt/hide texture replacer.                                                                                  |
+| [Fluffy Hanging rabbits](https://www.nexusmods.com/skyrimspecialedition/mods/89148)                       | Hanging rabbit mesh/texture replacer.                                                                        |
+| [FrankBlack's Honey in a Jar](https://www.nexusmods.com/skyrimspecialedition/mods/104496)                 | Honey jar retexture.                                                                                         |
+| [Slightly Better Nordic Henges - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/97162)          | Nordic henge object variety via BOS.                                                                         |
+| [One Quiver to rule them all](https://www.nexusmods.com/skyrimspecialedition/mods/172070)                 | Quiver attachment positioning fix.                                                                           |

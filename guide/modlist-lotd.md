@@ -10,21 +10,22 @@ All items in this section belong to the `Legacy of the Dragonborn` MO2 separator
 
 Treated as a foundational content pillar for the final list, not a late optional extra.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Legacy of the Dragonborn](https://www.nexusmods.com/skyrimspecialedition/mods/11802) v6.10.1 (May 2026) | Baseline | Non-negotiable centerpiece. |
-| [The Curator's Companion](https://www.nexusmods.com/skyrimspecialedition/mods/38529) v7.0.8 | Baseline | In-game tracking for museum displays and collection progress. |
-| [Legacy of the Dragonborn Patches (Official)](https://www.nexusmods.com/skyrimspecialedition/mods/30980) v6.10.7 (June 2026) | Baseline | Required integration infrastructure. |
-| Paintings Replacer for Legacy of the Dragonborn SSE (Nexus 13279, v1.1, Nov 2017) | Baseline | Texture replacer, low risk. |
-| Fate Cards Re-texture - Skyrim Concept Art (Nexus 16080, v01, Mar 2018) | Baseline | Texture replacer. |
-| Placeable Display Cases (Nexus 131107, v3.1, Jan 2025) | Baseline | Placeable museum display cases. |
-| [Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/126220) + [LoTD Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/130114) | Baseline | Museum achievement content. |
+| Mod                                                                                                                                                                          | Type     | Notes                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------|
+| [Legacy of the Dragonborn](https://www.nexusmods.com/skyrimspecialedition/mods/11802) v6.10.1 (May 2026)                                                                     | Baseline | Non-negotiable centerpiece.                                   |
+| [The Curator's Companion](https://www.nexusmods.com/skyrimspecialedition/mods/38529) v7.0.8                                                                                  | Baseline | In-game tracking for museum displays and collection progress. |
+| [Legacy of the Dragonborn Patches (Official)](https://www.nexusmods.com/skyrimspecialedition/mods/30980) v6.10.7 (June 2026)                                                 | Baseline | Required integration infrastructure.                          |
+| Paintings Replacer for Legacy of the Dragonborn SSE (Nexus 13279, v1.1, Nov 2017)                                                                                            | Baseline | Texture replacer, low risk.                                   |
+| Fate Cards Re-texture - Skyrim Concept Art (Nexus 16080, v01, Mar 2018)                                                                                                      | Baseline | Texture replacer.                                             |
+| Placeable Display Cases (Nexus 131107, v3.1, Jan 2025)                                                                                                                       | Baseline | Placeable museum display cases.                               |
+| [Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/126220) + [LoTD Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/130114) | Baseline | Museum achievement content.                                   |
 
 ---
 
 ## Supported Content → separator: `Legacy of the Dragonborn`
 
 ### Quest Mods With Strong LoTD Integration
+
 - **VIGILANT** — Multiple display cases in Hall of Oddities.
 - **Unslaad** — Official patch hub support.
 - **Glenmoril** — Patch pipeline still maturing; check before locking.
@@ -48,16 +49,19 @@ Treated as a foundational content pillar for the final list, not a late optional
 - **Obscure's College of Winterhold** — LoTD patch in OCW's own FOMOD. Covers private collection and unique College items.
 
 ### Display Expansions And Room Mods
+
 - **LOTD Display Patch Repos** — Third-party display patches not covered by official hub.
 - **Museum Display Room Expansion** — Evaluate if base museum feels cramped.
 - **Hall of Forgotten Guild** — Curator's Companion feature for additional collectible space.
 
 ### Collectible Additions
+
 - **Stones of Barenziah Quest Markers** — Dedicated display for completed crown.
 - **Jewels of the Reach** — Additional gemstone collectible.
 - **Dawnguard Treasure Map** — Feeds collection-driven exploration loop.
 
 ### Artifact Enhancement
+
 - **Zim's Immersive Artifacts** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9138)) — 50+ vanilla artifact rebalances. If no official patch, load LoTD after ZIA so museum display conditions use LoTD records.
 
 ---
@@ -70,6 +74,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 - Re-check museum sorting behavior after each major content addition.
 
 ### Mod Selection Questions
+
 1. Does this mod have official or high-quality third-party LoTD patch support?
 2. Does it add unique items that feel like they *should* be displayed?
 3. Does it conflict with LoTD worldspace edits?
@@ -80,26 +85,31 @@ Treated as a foundational content pillar for the final list, not a late optional
 ## Submods And Quality-Of-Life → separator: `Legacy of the Dragonborn`
 
 ### Sorting And Inventory
+
 - **Legacy Safehouse Plus** — Expanded safehouse with additional crafting stations. Check v6.10+ compatibility.
 - **LOTD - Explorer's Room** — Explorer-themed storage/display.
 - **Quick Light** — Not LoTD-specific but essential for museum navigation.
 - **Map Markers for LotD** — Fast-travel marker after quest conditions met.
 
 ### Museum-Specific UI
+
 - **LOTD Museum Exterior Fixes** — Navmesh and door-activation fixes.
 - **LOTD Hall of Secrets Door Fix** — Door activator fix.
 - **Object Manipulation Overhaul** — Display arrangement without console commands.
 
 ### Additional QoL
+
 - **LOTD - Museum Exterior Music** — Low priority; evaluate after → `Audio` is locked.
 - **Dynamic Activation Key** — Reduces E-key scroll-conflict with crowded displays.
 
 ### Relic System
+
 - **Relic Hunter** — Evaluate compatibility with LoTD v6's own relic system.
 - **LOTD - Explorer's League** — Guild-like progression. Check overlap with Curator's Companion.
 - **Shovels - Dig Up Treasure** — Check for conflict with LoTD dig-site expeditions.
 
 ### Risks & Compatibility
+
 - Legacy of the Dragonborn can drag the whole load order toward completionist design.
 - Museum-first progression changes perceived value of loot and unique-item mods.
 - Quest mods with strong LoTD integration may co-determine the quest mod stack.

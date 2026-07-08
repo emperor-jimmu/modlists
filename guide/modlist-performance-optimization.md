@@ -11,6 +11,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 ## Shader Performance Impact → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
+
 - **Conservative to balanced route** — Accept a few heavier depth/lighting features once the rest of the visual stack is stable.
 - Remove or downgrade luxury modules before tearing apart the rest of the graphics stack.
 - `Skyrim Upscaler` is a fallback tool from → `Graphics`, not the first answer to poor optimization.
@@ -18,6 +19,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 - Judge shader cost in motion, weather transitions, and dense foliage scenes.
 
 ### Alternatives
+
 - **Conservative route** — Keep CS close to the section-02 baseline.
 - **Luxury route** — Keep piling on expensive modules, then try to recover cost elsewhere.
 
@@ -26,12 +28,14 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 ## Grass, Tree, And Draw-Call Optimization → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
+
 - **Content restraint first, then low-maintenance optimization.**
 - **Lightened Skyrim** — Leading optimization branch. Almost invisible cleanup, low drama.
 - **eFPS - Exterior FPS boost** — Optional only if exterior draw-call pressure still needs help after main world stack is stable. Plan for patch coverage.
 - Re-evaluate exterior optimization after major city, roadside, tree, or world-content choices.
 
 ### Risks & Compatibility
+
 - `eFPS` has strong upside but real compatibility/patch overhead for lists with heavy exterior edits.
 - Heavy cities, outskirts, roads, trees, and landmark mods can erase optimization gains faster than tweak mods can recover them.
 
@@ -40,12 +44,14 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 ## INI Tuning And Display Settings → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
+
 - **Tool-first route** — Use `BethINI Pie` as the baseline editor.
 - Keep MO2 INI path behavior simple and documented.
 - After baseline is set, keep only a short list of manual overrides justified by display/shadow/frame-cap targets.
 - Let `SSE Display Tweaks` handle display behavior and frame pacing.
 
 ### BethINI Pie Configuration Baseline
+
 Run through MO2 targeting the active profile INIs.
 
 1. **Basic:** Reset to Defaults → High preset → Apply Recommended Tweaks. Window Mode: Borderless. FOV: First Person 75, Third Person 85.
@@ -69,11 +75,13 @@ Run through MO2 targeting the active profile INIs.
 ## Save Safety Considerations → separator: `Performance - Optimization & Configuration`
 
 ### Baseline
+
 - **Disposable-test route** — Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability.
 - Start new game when adding major worldspace optimization layers (eFPS mod page recommends fresh-start caution).
 - Don't treat old generated outputs, removed scripted mods, or stale occlusion data as safe just because the game still loads.
 - Preserve one or two mature long-session saves only for validation.
 
 ### Risks & Compatibility
+
 - Save corruption can present as performance degradation long before it looks like hard failure.
 - Reusing one heavily mutated test save makes optimization conclusions far less trustworthy.

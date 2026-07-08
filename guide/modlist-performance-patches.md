@@ -17,12 +17,15 @@ The generic category maps only become useful when tied to the actual mods `Elder
 ## Wrye Bash (Bashed Patch) Configuration → separator: `Performance - Bashed Patch & Synthesis`
 
 ### Tweak Settings
+
 Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below.
 
 **Tweak Actors:**
+
 - `Opposite Gender Anims: Female` and `Male` — needed for CBBE 3BA, HIMBO, KS Hairdos, EVG Conditional Idles, Goetia, Leviathan II packs.
 
 **Tweak Assorted:**
+
 - `All Armor Playable` — required by Immersive Armors (60+ sets with non-playable flag).
 - `No Light Fade Value Fix` — CS Light, True Light, ELFX, Relighting Skyrim, Luminosity all interact with fade values.
 - `No Light Flicker` — RAID Weathers, Cathedral, Obsidian, Azurite III CS weather variants.
@@ -33,17 +36,20 @@ Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below.
 - `Uniform Groundcover` — Skoglendi, Origins of Forest, Mari's flora need matching density variance.
 
 **Tweak Names:**
+
 - `Body Part Codes` — drive Sort: Armor/Clothes correctly with CBBE 3BA.
 - `Sort: Armor/Clothes` — with Immersive Armors, Bruma, Spaghetti's Cities, unsorted inventory is unreadable.
 - `Sort: Scrolls`, `Sort: Spells`, `Sort: Weapons/Ammunition` — Apocalypse, Mysticism, Odin, Adamant, Vokrii, Ordinator, Ars Metallica all add to these lists.
 - `Lore Friendly Text: Dwarven -> Dwemer` — PBR textures use Dwemer terminology.
 
 **Tweak Races:**
+
 - `Races Have All Head Parts` — KS Hairdos adds hundreds; set types code to ~45.
 - `Playable Head Parts`
 - Leave `Force Behavior Graph Gender` off — Elder Wilds does not standardize that flag.
 
 **Tweak Settings:**
+
 - `AI: Bump Reaction Delay` — raise to Adult Content to mute spammy follower reactions.
 - `AI: Conversation Chance` — leave default.
 - `AI: Max Active Actors` — raise to 80.
@@ -62,9 +68,11 @@ Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below.
 - `World: Timescale` — set to 20 and never change. **Save-baking warning:** this setting bakes into SSE saves.
 
 ### Bash Tags
+
 Set the following `Bash Tags` on the listed plugins (one file per plugin under `Data\Bash Patches\`):
 
 **Leveled List / Economy:**
+
 - `Immersive Weapons.esp` — `Relev`
 - `Immersive Armors.esp` — `Relev`
 - `Immersive Armors Retexture.esp` — `Graphics` (retexture, not content add)
@@ -82,11 +90,13 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 - `Alchemy Potions and Food Adjustments.esp` — `Stats`, `Keywords`
 
 **Race / Perk / Magic:**
+
 - `Aetherius.esp` / `Morningstar.esp` / `Imperious.esp` — `R.AddSpells` (whichever wins)
 - `Adamant.esp` / `Vokrii.esp` / `Ordinator.esp` — `NPC.Perks.Change`, `NPC.Perks.Add`
 - `Mysticism.esp` / `Odin.esp` / `Apocalypse.esp` — `SpellStats`, `EffectStats`
 
 **Lighting / Weather / Water:**
+
 - `CS Light.esp` / `True Light.esp` — `C.Light`, `C.ImageSpace`
 - `ELFX.esp` / `ELFX - Shadows.esp` — `C.Light`, `C.Fog`
 - `Relighting Skyrim.esp` / `Luminosity.esp` — `C.Light`
@@ -98,11 +108,13 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 - `Enhanced Rocks and Mountains.esp` / `Fix and Addon.esp` — `Graphics`, `ObjectBounds`
 
 **City / Worldspace:**
+
 - `Beyond Skyrim - Bruma SE.esp` — `C.Climate`, `C.Music`, `C.Light`, `C.Water`, `C.ImageSpace`, `C.Location`, `C.Regions`
 - `Spaghetti's Cities - AIO.esp` — `C.Light`, `C.MiscFlags`
 - `The Great Cities - Minor Cities and Towns SSE.esp` / `Dawn of Skyrim (Director's Cut) SE.esp` / `JK's Skyrim.esp` — `C.Light`, `C.MiscFlags`
 
 **NPC / Dialogue / Audio:**
+
 - `RUSTIC CLUTTER COLLECTION.esp` / `RUSTIC CLOTHING.esp` — `Names`, `Stats`
 - `High Poly Project.esp` — `Graphics`, `ObjectBounds`
 - `KS Hairdos SSE.esp` — `Graphics`, `Names`
@@ -120,6 +132,7 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 - `Sounds of Skyrim Complete SE.esp` — `Sound`, `C.Acoustic`
 
 **Survival / Follower:**
+
 - `Campfire.esp` — `C.MiscFlags`, `Invent.Add`
 - `Frostfall.esp` — `C.Climate`, `C.ImageSpace`
 - `Starfrost.esp` / `SunHelm.esp` / `Last Seed.esp` — `Stats`, `Keywords`, `Invent.Add` (whichever wins)
@@ -134,6 +147,7 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
 
 ### Stage 1 — NPC, AI, And Facegen
+
 - `KS Hairs Bald Helmets Fixer`
 - `High Poly Head Vampire Fix`
 - `HP_NPC_WIGS_TO_HEADPART`
@@ -150,6 +164,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `SynOppositeGenderAnimsTweak` — **do not enable** (Bashed Patch handles this).
 
 ### Stage 2 — Encounter Zones
+
 - `EZLeveler` — configure to unleveled-band target for OWL/MLU.
 - `EnemyReleveler` — delevel Bruma/Falskaar/Wyrmstooth enemies within new band.
 - `No More Easy Enemies`
@@ -158,6 +173,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `TrueUnleveledSkyrim` — only if dropping OWL and MLU.
 
 ### Stage 3 — Leveled Lists And Loot
+
 - `OWLLeveledListAddition` — adds IA/IW to OWL lists.
 - `OWLPatcher`
 - `Skyrim-LeveledLoot`
@@ -170,6 +186,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `Feminized Leveled Lists` / `Masculinized Leveled Lists`
 
 ### Stage 4 — Items, Crafting, Alchemy
+
 - `ApothecaryAutoPatcher` — pair with `CACO Patcher` if CACO in stack.
 - `BreakdownRecipeGenerator` / `CreateTemper`
 - `HonedMetalAdditionalIngredients`
@@ -186,6 +203,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `SynCGOStaves` — only if CGO staves in stack.
 
 ### Stage 5 — Magic, Spells, Enchanting
+
 - `Engarde_Synthesis`
 - `DisenchantEverything` / `SmartDisenchantEverything`
 - `Passive Enchanting Experience`
@@ -198,6 +216,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `SynESLify` — **must be last** in this stage.
 
 ### Stage 6 — Snow, Weather, Region
+
 - **`BDSPatcher`** — **required.** Use `BDSPatcher` entry (not Northpoint variant). Run with both BetterDynamicSnow and BetterDynamicAsh keywords active.
 - `SSBGPatcher`
 - `Nights Adjuster` / `Darker Weather Nights` — pick one.
@@ -209,6 +228,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `DestructibleSkyrimPatcher`
 
 ### Stage 7 — Trees, Flora, Mesh
+
 - `Pine Tree Rescaler`
 - `Tree Scaler`, `Tree 3D Editor`, `TreeWindEditor`
 - `FloraFixer`
@@ -216,6 +236,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `Harvest Those Mammoth Tusks`
 
 ### Stage 8 — Visuals And Lighting
+
 - `ELE Patcher` — skip (CS-only stack).
 - `ENB Light Patcher` — skip.
 - `NoShadowsPatch`
@@ -225,18 +246,21 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `RemoveLandscapeVertexColor`
 
 ### Stage 9 — Audio
+
 - **`AOSISCSoundPatcher`** — **required.** AOS and ISC both must be active when run.
 - `TUDMFootstepPatcher`
 - `Sounds of Seasons`
 - `SFCOPaintingRemover`
 
 ### Stage 10 — Performance And Cleanup
+
 - `Grass FPS`
 - `Configurable Grass Remover` — enable only if dense forest-floor route adopted.
 - `NavmeshCollector-Updated` — **do not** enable if Bruma or Falskaar in stack.
 - `Generic Synthesis Patcher` — keep ruleset empty until specific conflict identified.
 
 ### Stage 11 — Utility, Compatibility, ESLification
+
 - `Patchifier` — generates SkyPatcher/INI patches.
 - `SynEDIDFixer`
 - `SynStringMerger` — disable unless shipping translation layer.
@@ -261,6 +285,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 Rebuilding one stage does not replace stages after it.
 
 ### Patcher Load Order
+
 - `Bashed Patch` and `Synthesis` both write into same load-order range. Place Synthesis patch last unless a known conflict needs Bashed Patch to win.
 - `SynESLify` **must** be last in its stage.
 - `World: Timescale = 20` bakes into saves — never change on a long-running test save.
@@ -271,6 +296,7 @@ Rebuilding one stage does not replace stages after it.
 - Record Bashed Patch CRC after every rebuild. Verify by disabling source mods and confirming patch shrinks.
 
 ### Key Principles
+
 - The patch pipeline is the single source of truth for conflict resolution.
 - A patcher or tag exists because a specific mod in the list requires it — never pre-install speculative coverage.
 - The rebuild order is designed so a category change only triggers the affected stages.
