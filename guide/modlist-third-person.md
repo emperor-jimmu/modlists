@@ -88,6 +88,11 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 | [Poisoned Arrows and Bolts](https://www.nexusmods.com/skyrimspecialedition/mods/123585) | Optional | Poison crafting for ranged ammo. |
 | [Variadic Collision Dynamics](https://www.nexusmods.com/skyrimspecialedition/mods/183892) | Optional | Runtime collision-capsule adjustments. |
 | [Variadic Collision Dynamics - Resources](https://www.nexusmods.com/skyrimspecialedition/mods/184110) | Optional | Ready-to-use JSON presets for VCD. |
+| [Next-Gen Decapitations](https://www.nexusmods.com/skyrimspecialedition/mods/135254)                  | Optional | Decapitation system replacement with improved gore visuals.       |
+| [Death Drop Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/151590)                     | Optional | Changes how NPC bodies ragdoll and drop on death.                 |
+| [Dismembering Framework](https://www.nexusmods.com/skyrimspecialedition/mods/126203)                  | Optional | Dismemberment system framework.                                   |
+| [DF - Official Humanoid Asset Pack](https://www.nexusmods.com/skyrimspecialedition/mods/126327)       | Add-on   | Required asset pack for Dismembering Framework (humanoid).        |
+| [DF - Official Creature Asset Pack](https://www.nexusmods.com/skyrimspecialedition/mods/126328)       | Add-on   | Creature asset pack for Dismembering Framework (optional).        |
 
 ---
 

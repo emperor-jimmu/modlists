@@ -36,6 +36,7 @@ Authored settlement content — real places, not just denser vibes.
 | Mod                                           | Description                                                                                   | Nexus                                                               |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | The Great Cities - Minor Cities and Towns SSE | First-pass baseline giving multiple underbuilt settlements stronger structure.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20272)  |
+| The Great Cities- Resources                   | Prerequisite resource mod for all The Great Cities series mods. Install first.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104373) |
 | Cities of the North - Dawnstar                | Default modular lock for four smaller hold capitals. Designed to stack.                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28952)  |
 | Cities of the North - Morthal                 |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34168)  |
 | Cities of the North - Falkreath               |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56731)  |
@@ -47,6 +48,8 @@ Authored settlement content — real places, not just denser vibes.
 | JK's Tel Mithryn                              | Telvanni tower. ESL-flagged.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151512) |
 | FYX - Eastern Empire Company Building         |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86526)  |
 | FYX - Riften - Window Consistency             |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/182707) |
+| The City of Crossed Daggers - Riften Expansion | Riften market and canal expansion with new shops, NPCs, and quests.                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168629) |
+| Grand Solitude - The Walls of High King Erling | Solitude wall and exterior expansion adding new areas and detail.                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157506) |
 
 ### Locked Faction-HQ Additions
 
@@ -66,6 +69,7 @@ Authored settlement content — real places, not just denser vibes.
 | The Great Village of Kynesgrove        |                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42639) |
 | The Great Village of Mixwater Mill SSE |                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36350) |
 | The Great Town of Shor's Stone SSE     |                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/35977) |
+| The Great City Of Winterhold SSE Edition | Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17127)  |
 
 ---
 
@@ -80,6 +84,7 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 | Obscure's College of Winterhold         | Architecture baseline. FOMOD with ~50 built-in patches including LotD.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20514) | `World Content - Overhauls` |
 | Immersive College NPCs                  | ESL-flagged, vanilla assets, no cell edits. Integration patch in Obscure's FOMOD. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9252)  | `World Content - Overhauls` |
 | College of Winterhold - Quest Expansion | Skill-gated entry, 7 starter lessons before Saarthal. ESL-flagged, by jayserpa.   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66666) | `World Content - Quests`    |
+| JK's College of Winterhold              | Exterior and interior overhaul. Stack on Obscure's via combo patch below.          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65676) | `World Content - Overhauls` |
 
 ### Alternatives
 
@@ -88,6 +93,12 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 | Magical College of Winterhold                   | Cleaner fantasy aesthetic but weaker grim-dark fit.      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1539)  |
 | Immersive College of Winterhold                 | Architecture+NPCs+crafting. Unmaintained since Dec 2020. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17004) |
 | College of Winterhold - Quest Expansion (alone) | Questline-only option — lowest patch overhead.           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66666) |
+
+### Patch Support
+
+| Mod                                                                    | Description                                                                              | Nexus                                                               |
+|------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| JK's College of Winterhold (Immersive or Obscure) Combo Patches        | Compatibility patch enabling JK's College to stack over Obscure's or Immersive College.  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/67820)  |
 
 ### Compatibility Notes
 
