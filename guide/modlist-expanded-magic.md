@@ -49,6 +49,10 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 - **360 Ward** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/156225)) — Wards block from any direction. Significant third-person gameplay improvement.
 - **Sanguine Symphony** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148388)) — Blood-magic spells costing Health instead of Magicka. Compatible with all primary overhauls.
 
+### Candidates
+
+- **Revealing Rune** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120935)) — Makes rune traps visible without a spell or perk. Gameplay quality-of-life. Evaluate after the primary magic overhaul is locked.
+
 ### Notes
 
 - A very large spell ecosystem can dominate progression and make race, perk, and religion feel secondary.

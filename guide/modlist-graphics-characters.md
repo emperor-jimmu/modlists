@@ -120,6 +120,9 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 - **RUSTIC CLOTHING - Special Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/4703)) — Higher-res clothing textures. Test for style consistency.
 - **Dwemer Armors and Weapons Retexture SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93088)) — Gear-side companion to VPBR's Dwemer ruin textures.
 - **Steel Armor Redone - PBR and Complex Material** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177513)) — PBR retexture of CC Steel Armor. Requires CC Alternative Armors - Steel Soldier, Community Shaders, PGPatcher. Optional.
+- **Robes Retexture SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110655)) — Higher-quality robe textures for all vanilla robes.
+- **Divine Crusader Retexture SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123738)) — Retexture of the Divine Crusader armor set.
+- **Nirn Necessities - SMP Accessories** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112481)) — SMP-physics clothing accessories. Install base mod; add the PBR patch ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135807)) if using CS PBR.
 
 ---
 

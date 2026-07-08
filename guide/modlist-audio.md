@@ -79,3 +79,25 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 ### Notes
 - Only one Heart of the Beast variant active at a time. Both installed = file conflicts.
 - If `Growl` adds new werewolf forms not covered by the sound replacer, forms fall back to Growl defaults.
+
+---
+
+## Ambient And Environmental Audio → separator: `Audio - SFX & Ambience`
+
+Environmental soundscapes, creature ambient sounds, and weather audio to reinforce world immersion outside of combat.
+
+### Baseline
+
+- **Wildwood Echoes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112008)) — Forest and woodland soundscape expansion.
+- **Blackreach Eerie Ambience** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112114)) — Blackreach-specific ambient atmosphere.
+- **Murder of Songbirds** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111766)) — Ambient bird audio in wilderness areas.
+- **Nordic Winds** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112370)) — Weather-specific wind sound effects for colder regions.
+- **Whispering Tomes of Apocrypha** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113423)) — Apocrypha ambient soundscape.
+- **Falmer 'Dialogue' Overhaul - Echolocation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114625)) — Falmer echolocation vocalisation replacer. Creature-audio companion layer.
+- **Potema Revoiced** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123877)) — Revoiced Potema dialogue. Overwrites vanilla voice files rather than dialogue records.
+
+### Notes
+
+- All entries above are raw `.wav`/`.xwm` replacers or sound-descriptor mods — no record-level conflicts with ISC or AOS.
+- Load sound-descriptor edits after ISC and AOS in left pane.
+- Potema Revoiced replaces voice files only; verify compatibility with quest-expansion mods touching the Potema quest.

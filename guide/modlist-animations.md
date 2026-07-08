@@ -42,6 +42,11 @@ All mods in this section belong to one of the five animation separators as noted
 
 - **SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132292)) — Vault, climb, traverse environmental geometry. 10,112 endorsements.
 
+### Slope And Terrain Animation
+
+- **EVG CLAMBER - Slope Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114753)) — Character posture adjusts dynamically on slopes and stairs. Complements SkyParkour for terrain-aware traversal.
+- **Feminine EVG Clamber Stair Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148067)) — Female-specific stair animations for EVG CLAMBER.
+
 ### Alternatives
 
 - **SkyClimb** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97253)) — Climbing-first alternative built around EVGAT. Pick one (not cumulative with SkyParkour).
@@ -117,6 +122,13 @@ All mods in this section belong to one of the five animation separators as noted
 - **EVG Animated Traversal** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63232))
 - **Beginner Bard Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130776)) — For Skyrim's Got Talent.
 
+### Interaction Animation Additions (II companions)
+
+- **Immersive Interactions - Eating ingredients and apply poison animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117983)) — Add-on for the Immersive Interactions baseline. Adds eating and poison-apply animations.
+- **Dynamic Crafting Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116422)) — Crafting-station interaction animations.
+- **Dynamic Looting and Harvesting Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114547)) — Looting and harvesting interaction animations.
+- **Dynamic Horse Petting Animations for Immersive Interactions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111767)) — Horse interaction animations for II.
+
 ---
 
 ## Conditional Animation Systems → separator: `Animations - Framework`
@@ -140,6 +152,26 @@ All mods in this section belong to one of the five animation separators as noted
 
 ---
 
+## Equipment Display Framework → separator: `Animations - Framework`
+
+Equipment visibility, sheathing positions, and draw-sheathe animations. Builds on XPMSSE for third-person gamepad parity.
+
+### Baseline
+
+- **Immersive Equipment Displays (IED)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62001)) — Equipment visibility and positioning framework. Required by display addons below.
+- **Simple Dual Sheath** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50049)) — Dual-sheathed weapon support. Requires IED.
+
+### Addons
+
+- **Weapon Styles - Draw-Sheathe animations for IED** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85085)) — Conditional draw/sheathe animations per weapon type. Requires IED.
+- **Walking Stick - Walk with staves or polearms - IED-OAR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120966)) — Staff/polearm walking animation support. Requires IED.
+
+### Alternatives
+
+- **Ready to Play IED** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158531)) — Pre-configured IED preset. Evaluate only if manual IED configuration proves too time-consuming.
+
+---
+
 ## Creature Animations → separator: `Animations - Creatures`
 
 ### Baseline
@@ -147,6 +179,8 @@ All mods in this section belong to one of the five animation separators as noted
 - **New Creature Animation - Giant** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83317))
 - **New Creature Animation - Werewolf** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83806))
 - **New Creature Animation - Falmer** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83572))
+- **DCA - Dragon Combat Animations** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123113)) — Dragon combat animation replacer.
+- **Draugr Greatsword Animation** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114721)) — Greatsword-wielding draugr animation replacer.
 
 ### Notes
 

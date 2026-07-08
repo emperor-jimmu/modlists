@@ -34,6 +34,10 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 - **Blade and Blunt - A Combat Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34549)) — Deliberate branch — it reaches far beyond simple pacing.
 - **Minimalist route** — Keep lethality in the section-04 combat stack.
 
+### Candidate
+
+- **Relentless** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114022)) — Difficulty and pacing mod. Research before adding; evaluate how it interacts with the Section-04 combat stack and Arena encounter zones.
+
 ---
 
 ## Enemy AI Improvements → separator: `Survival & Combat - Enemy AI`
@@ -44,6 +48,7 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 
 ### Alternatives
 - **Skyrim Revamped - Complete Enemy Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14598)) — High-commitment. Add only if ordinary testing shows enemy behavior still too flat.
+- **NPCs Take Cover - Smarter Anti-Cheese AI** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111890)) — NPCs take cover during combat instead of standing in the open. Lightweight, no new records.
 
 ---
 
