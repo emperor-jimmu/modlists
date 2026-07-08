@@ -5,8 +5,8 @@ param(
 $scriptDir = Split-Path -Parent $PSCommandPath
 $root = Split-Path -Parent $scriptDir
 $files = @(
-  "guide/install.md"
   "guide/modlist.md"
+  "guide/install.md"
   "guide/modlist-foundations.md"
   "guide/modlist-graphics.md"
   "guide/modlist-graphics-pgpatcher.md"
@@ -70,7 +70,7 @@ foreach ($file in $files) {
   foreach ($line in $content -split "`r`n|`n") {
     if ($line -match '^#\s+(.+)$') {
       $text = $matches[1].Trim()
-      $base = ($text -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-+', '-' -replace '^-|-$', '').ToLower()
+      $base = ($text -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
       if ($anchorCount.ContainsKey($base)) {
         $anchorCount[$base]++
         $anchor = "$base-$($anchorCount[$base])"
@@ -95,8 +95,6 @@ $allLines += "version: $version"
 $allLines += "date: $date"
 $allLines += "generated-by: merge-modlist.ps1"
 $allLines += "---"
-$allLines += ""
-$allLines += "# Elder Wilds"
 $allLines += ""
 $allLines += "> Version **$version** — $date"
 $allLines += ""
