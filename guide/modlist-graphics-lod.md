@@ -31,6 +31,11 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 | HD LODs Textures SE                                     |                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3333)   |
 | Skyfall's Sleeping Hist Tree Overhaul — DynDOLOD Add-On | Billboard generation for replaced tree. Required for correct distant-LOD display. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169984) |
 | Happy Little Trees DynDOLOD Optimizations               |                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158587) |
+| Far Object LOD Improvement Project SSE (FOLIP)          | Improves distant object LOD.                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/79197)  |
+
+#### World Map Support
+
+`Elder Wilds` uses its flat map / paper-map framework — see `guide/modlist-ui.md`.
 
 #### Core Workflow Dependencies
 
@@ -47,7 +52,8 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 
 #### Setup
 
-- Install `DynDOLOD Resources SE 3` and `DynDOLOD DLL NG` as normal mods in MO2.
+- Install `DynDOLOD Resources SE 3` as a normal mod in MO2. During FOMOD installation, uncheck `Low-Res LOD Textures` and `Holy Cow`. On Skyrim SE 1.6+, also uncheck `Whiterun Exterior Grass`. Place the mod relatively high in the left pane.
+- Install `DynDOLOD DLL NG` as a normal mod in MO2. Provides the large-reference bug workaround from its own side — only use if the modlist ships with it and you understand the implications; not recommended unless the list explicitly requires it.
 - Install `No Grass In Objects`, `Grass Cache Fixes`, and `xLODGen Resource` as support content.
 - Register **TexGen**, **DynDOLOD**, and **xLODGen** as MO2 executables, not mixed into mod folders.
 - Treat occlusion as generated output, not as a separate mod pick.
@@ -87,6 +93,25 @@ Re-run relevant generated layers when a major tree overhaul, architecture change
 - First-pass questions: do distant trees match the overhaul? Do mountain/road/city approach views feel coherent? Is performance acceptable in real travel?
 - If using **Happy Little Trees**, test baseline output first, then compare DynDOLOD Optimizations.
 - If using heavier tree overhauls (**Ulvenwald**, **Fabled Forests**, **Nature of the Wild Lands**), prioritize clean transitions and stable horizons before longer range.
+
+##### Tree-Specific DynDOLOD Rules
+
+Certain tree overhauls require specialised tree rules in DynDOLOD for correct distant rendering. Example for **Happy Little Trees** (from the DynDOLOD add-on page):
+
+| LOD Level | Rule          |
+|-----------|---------------|
+| LOD4      | Level0 / Mesh |
+| LOD8      | Billboard4    |
+| LOD16     | Billboard(1)  |
+| LOD32     | Billboard(6)  |
+
+Apply matching rules for your chosen tree overhaul if its DynDOLOD add-on or author documentation specifies them.
+
+##### Additional Configuration Guidance
+
+- **Ultra Trees (3D tree LOD):** Recommended once first-pass High is validated. 3D tree LOD provides substantially better visual quality for a minor performance cost and unloads properly, unlike hybrid LODs. Anything above `1024` tile size for billboards provides diminishing returns — keep at or below `1024`.
+- **Billboard brightness:** Adjust the R/G/B brightness values in DynDOLOD's grass/billboard settings if distant tree LOD appears too bright in game. A common starting point is `0.500` across all channels.
+- **DynDOLOD DLL NG:** If using DLL NG for the large-reference bug workaround, ensure DynDOLOD settings match its expectations exactly (tick the large-reference workaround options in DynDOLOD's advanced GUI). Not recommended unless the modlist requires it.
 
 #### Baseline Starting Profile For Elder Wilds
 
@@ -128,3 +153,15 @@ Re-run relevant generated layers when a major tree overhaul, architecture change
 - **TexGen + DynDOLOD:** Rebuild if tree overhauls, large architecture, major LOD-support mods, or visual worldspace edits change.
 - **Occlusion:** Refresh when major worldspace edits or the distant-detail pass changes enough to affect visibility/culling.
 - If multiple major visual categories change together, prefer a clean full rebuild over partial guesswork.
+
+---
+
+### Seasonal LODs
+
+When using **Seasons of Skyrim SKSE** + **Turn of the Seasons**, DynDOLOD and xLODGen can generate seasonal LOD passes so distant detail matches the current season. This multiplies generation time considerably — plan accordingly.
+
+**xLODGen seasonal:** Tick the `Seasons` checkbox in the bottom-left corner and select which seasons need terrain LOD. Generation takes significantly longer than a single pass.
+
+**DynDOLOD seasonal:** Tick the `Seasons` checkbox, the `Snow` checkbox, and select the desired seasons in DynDOLOD's GUI. Generation time scales with the number of seasons selected.
+
+Rebuild seasonal LOD whenever the underlying terrain, tree, or landscape seasonal-swap data changes.

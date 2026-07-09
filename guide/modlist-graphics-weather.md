@@ -10,11 +10,11 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 
 **Primary candidates — test side-by-side:**
 
-| Mod            | Description                                                                                                   | Nexus                                                               |
-|----------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| NAT.CS III     | Works on the conservative CS stack (no SSGI required).                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139567) |
-| Azurite III CS | Requires the balanced CS add-on tier or higher (SSGI, Screen Space Shadows, Grass Lighting, Wetness Effects). | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/162153) |
-| Sky Sync - Community Shaders | Sky colour/dome enhancement for CS. Lighter than full weather replacement. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153543) |
+| Mod                          | Description                                                                                                   | Nexus                                                               |
+|------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| NAT.CS III                   | Works on the conservative CS stack (no SSGI required).                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139567) |
+| Azurite III CS               | Requires the balanced CS add-on tier or higher (SSGI, Screen Space Shadows, Grass Lighting, Wetness Effects). | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/162153) |
+| Sky Sync - Community Shaders | Sky colour/dome enhancement for CS. Lighter than full weather replacement.                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153543) |
 
 ### Alternatives
 
@@ -32,7 +32,7 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 ### Azurite III Addon
 
 | Mod | Description | Nexus |
-| --- | --- | --- |
+|-----|-------------|-------|
 | [Azurite III CS - Realistic Darker Nights](https://www.nexusmods.com/skyrimspecialedition/mods/183498) | Darker night preset for Azurite III CS. Requires testing — older nights affect third-person readability and combat detection. Needs Azurite III CS as base. |
 
 ### Risks & Compatibility
@@ -60,20 +60,20 @@ Treat water as a full visual stack: base water look, CS water features, mesh sup
 
 Evaluate these only after the main water base is selected.
 
-| Mod                                         | Description                                                | Nexus                                                               |
-|---------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------|
-| Simplicity of Sea                           |                                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56520)  |
-| Color and Transparency Tweaks               |                                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148761) |
-| Realistic Water Two SE                      | Legacy baseline.                                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2182)   |
-| Water for ENB                               | Legacy baseline.                                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37061)  |
-| FYX - Water Mesh Optimization               | Only add if it clearly improves shorelines or performance. |                                                                     |
-| Natural Waterfalls                          |                                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87261)  |
-| Rally's Water Foam                          |                                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28922)  |
-| Water Debris                                | Floating debris VFX.                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171371) |
-| Underwater Bubbles - SKSE Plugin            | No ESP, complements surface stack.                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175559) |
-| Refined Water Droplet Replacer for R.A.S.S. | Rain/water droplet visual replacer. Works with R.A.S.S.    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40793)  |
-| Wade in Water Redux - Swimming Overhaul     | Swimming overhaul with wading physics. Broader scope than Loki's Wade. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151353) |
-| GKB Waves Reborn                            | High-quality animated wave shader for shorelines. Prerequisite for GKB Waves For Various Mods. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/71126)  |
+| Mod                                         | Description                                                                                                                  | Nexus                                                               |
+|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Simplicity of Sea                           |                                                                                                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56520)  |
+| Color and Transparency Tweaks               |                                                                                                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148761) |
+| Realistic Water Two SE                      | Legacy baseline.                                                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2182)   |
+| Water for ENB                               | Legacy baseline.                                                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37061)  |
+| FYX - Water Mesh Optimization               | Only add if it clearly improves shorelines or performance.                                                                   |                                                                     |
+| Natural Waterfalls                          |                                                                                                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87261)  |
+| Rally's Water Foam                          |                                                                                                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28922)  |
+| Water Debris                                | Floating debris VFX.                                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171371) |
+| Underwater Bubbles - SKSE Plugin            | No ESP, complements surface stack.                                                                                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175559) |
+| Refined Water Droplet Replacer for R.A.S.S. | Rain/water droplet visual replacer. Works with R.A.S.S.                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40793)  |
+| Wade in Water Redux - Swimming Overhaul     | Swimming overhaul with wading physics. Broader scope than Loki's Wade.                                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151353) |
+| GKB Waves Reborn                            | High-quality animated wave shader for shorelines. Prerequisite for GKB Waves For Various Mods.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/71126)  |
 | GKB Waves For Various Mods                  | GKB wave coverage for mod-added coasts and new-lands. Requires GKB Waves Reborn. Verify compatibility with chosen water mod. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124742) |
 
 ### Risks & Compatibility
