@@ -91,25 +91,28 @@ Every tuning attempt recorded in git alongside modlist changes.
 | Patcher | Trigger | Settings Worth Tweaking |
 |---------|---------|------------------------|
 | **LOOT** | Every meaningful load-order change | No custom tweaks |
-| **Synthesis** | Any patched mod added/removed/updated | Weapon Stat Synth: raise/lower Damage Ceiling; add to Ignore List for new artifact mods |
-| **Wrye Bash** | Leveled-list-heavy mod added/removed | No per-run settings unless Bashed Patch imports unintended items |
+| **Synthesis** | Patcher list change, upstream mod added/removed/updated, Bash Tag change on any plugin | Weapon Stat Synth: raise/lower Damage Ceiling; add to Ignore List for new artifact mods |
+| **Wrye Bash** | Bash Tag change on any plugin, tweak setting change, new tagged plugin, or leveled-list-heavy mod added/removed | No per-run settings unless Bashed Patch imports unintended items |
 | **Pandora** | Animation mod added/removed/reordered; skeleton or behavior change | Direct output to Pandora Output |
 | **BodySlide** | Body preset/skin texture/armor mod change | No per-run settings beyond chosen preset |
 | **Grass Cache** | Grass/tree/landscape texture/worldspace change; density INI tweak | Rebuild from scratch |
 | **xLODGen** | Landscape texture/heightmap/worldspace change; terrain LOD mod change | Quality slider per-run for coastline artefacts |
 | **TexGen** | Object/tree/building texture changes producing LOD billboards; tree mod swaps | Revisit GrassModelHeightMultiplier and TreeMSAlphaThreshold |
-| **DynDOLOD** | Worldspace/tree/large-reference/LOD resource change; TexGen output change | Brightness/Contrast for LOD32; DoubleSidedTextureMask for new mountain types |
+| **DynDOLOD** | Worldspace/tree/large-reference/LOD resource change; TexGen output change; Bashed Patch or Synthesis change (form IDs affect reference records) | Brightness/Contrast for LOD32; DoubleSidedTextureMask for new mountain types |
 
-### Generator Output Order
-1. **Pandora** — after animation stack stabilizes
-2. **BodySlide** — after body/armor changes stabilize
-3. **Synthesis** — patchers the final stack actually uses
-4. **Wrye Bash** — only if Bashed Patch still warranted
-5. **Grass Cache** — after grass/tree/worldspace choices stabilize
+### Generator Output Order (First-Time Build)
+Run in this sequence when generating outputs for the first time. Independent outputs (Pandora, BodySlide) are generated earlier here than in the canonical → [rebuild order](modlist-performance-patches.md) because they can be iterated on while patchers are still in flux. The final LOD sequence (xLODGen → TexGen → Grass Cache → DynDOLOD) matches the rebuild order exactly.
+
+1. **SSEEdit** — quick-conflict check after every major mod addition
+2. **Pandora** — after animation stack stabilizes
+3. **BodySlide** — after body/armor changes stabilize
+4. **Bashed Patch** — after load order is stable enough for tagging
+5. **Synthesis** — patchers the final stack actually uses
 6. **xLODGen** — terrain LOD first
 7. **TexGen** — before DynDOLOD
-8. **DynDOLOD** — last
-9. **Occlusion** — only if needed on first DynDOLOD run
+8. **Grass Cache** — after grass/landscape/worldspace choices stabilize
+9. **DynDOLOD** — last major output (includes Occlusion generation)
+10. **SSE Display Tweaks + BethINI Pie** — final review after graphics baseline is set
 
 After generation, verify: `DynDOLOD.esm` at end of ESM block, `DynDOLOD.esp` near end, `Occlusion.esp` after, `Synthesis.esp`/`Bashed Patch` per tool guidance.
 

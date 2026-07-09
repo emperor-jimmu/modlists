@@ -271,17 +271,20 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 
 ### Build Order And Rebuild Triggers
 
-1. **SSEEdit** fast mode after every new plugin.
-2. **Bashed Patch** — triggers: any plugin with Bash Tag change, any tweak setting change, any new tagged plugin.
-3. **Synthesis** — triggers: any patcher list change, any upstream mod change, any Bash Tag change.
-4. **xLODGen + TexGen** — triggers: landscape/terrain/object mesh change.
-5. **DynDOLOD** — triggers: worldspace/tree/object/Bashed Patch/Synthesis change. Run twice: Medium to verify, final preset.
-6. **Pandora** — triggers: behavior/animation/skeleton change.
-7. **BodySlide** — triggers: body/skin/armor mesh change.
-8. **Grass Cache** — triggers: grass mod or Worldspaces with Grass SSEEdit Script change.
-9. **SSE Display Tweaks + BethINI Pie** review — triggers: lighting/weather/graphics stack change.
+The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be skipped if their inputs have not changed — rebuild only the affected stages when their triggers fire.
 
-Rebuilding one stage does not replace stages after it.
+1. **SSEEdit** — quick-conflict mode after every new plugin.
+2. **Bashed Patch** — triggers: any plugin with Bash Tag change, any tweak setting change, any new tagged plugin. A Bash Tag change also triggers Synthesis (stage 3) — both must rebuild.
+3. **Synthesis** — triggers: any patcher list change, any upstream mod change, any Bash Tag change.
+4. **Pandora** — triggers: behavior/animation/skeleton change. Independent of patcher and LOD stages — can be run separately at any point.
+5. **BodySlide** — triggers: body/skin/armor mesh change. Independent of patcher and LOD stages.
+6. **xLODGen** — triggers: landscape/terrain/heightmap change (does not need TexGen).
+7. **TexGen** — triggers: object/tree/building texture or mesh change producing LOD billboards. Requires xLODGen output when both are rebuilt together.
+8. **Grass Cache** — triggers: grass mod change, worldspace change (Grass SSEEdit Script), or grass density INI tweak. Run after final worldspace load order is established.
+9. **DynDOLOD** — triggers: worldspace/tree/object change, Bashed Patch or Synthesis change (form IDs affect reference records), or any xLODGen/TexGen output change. Includes Occlusion generation. Run twice: Medium to verify, final preset.
+10. **SSE Display Tweaks + BethINI Pie** — final review after lighting/weather/graphics stack change.
+
+**Dependency note:** DynDOLOD reads the final load order including Bashed Patch and Synthesis. If Synthesis changes form IDs or ESL flags, DynDOLOD must be rebuilt. Pandora and BodySlide do not affect LOD or patchers and can be run independently at any point without cascading into later stages.
 
 ### Patcher Load Order
 
