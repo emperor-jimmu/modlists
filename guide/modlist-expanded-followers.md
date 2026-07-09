@@ -12,14 +12,14 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 How much the world should notice what the player does socially — reputation, crime tools, city suspicion, and guard behavior.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Skyrim Reputation](https://www.nexusmods.com/skyrimspecialedition/mods/22374) | Baseline | Main reputation baseline. |
-| [The Choice is Yours](https://www.nexusmods.com/skyrimspecialedition/mods/3850) | Baseline | Quest auto-start control for content-heavy runs. |
-| [To Your Face SE](https://www.nexusmods.com/skyrimspecialedition/mods/24720) | Baseline | Social polish for city/tavern greetings. |
-| [Steal off Scoundrels](https://www.nexusmods.com/skyrimspecialedition/mods/171870) | Baseline | SKSE plugin — pickpocketing criminals not flagged as stealing. No ESP. |
-| [Suspicious City Guards](https://www.nexusmods.com/skyrimspecialedition/mods/38762) | Alternative | Urban tension around suspicious behavior. |
-| [Book Of Shadows](https://www.nexusmods.com/skyrimspecialedition/mods/76086) | Alternative | High-expression crime and stealth pillar. |
+| Mod                                                                                 | Type        | Dial           | Notes                                                                  |
+|-------------------------------------------------------------------------------------|-------------|----------------|------------------------------------------------------------------------|
+| [Skyrim Reputation](https://www.nexusmods.com/skyrimspecialedition/mods/22374)      | Baseline    | #1, #2, #3, #4 | Main reputation baseline.                                              |
+| [The Choice is Yours](https://www.nexusmods.com/skyrimspecialedition/mods/3850)     | Baseline    | #1, #2, #3, #4 | Quest auto-start control for content-heavy runs.                       |
+| [To Your Face SE](https://www.nexusmods.com/skyrimspecialedition/mods/24720)        | Baseline    | #1, #2, #3, #4 | Social polish for city/tavern greetings.                               |
+| [Steal off Scoundrels](https://www.nexusmods.com/skyrimspecialedition/mods/171870)  | Baseline    | #1, #2, #3, #4 | SKSE plugin — pickpocketing criminals not flagged as stealing. No ESP. |
+| [Suspicious City Guards](https://www.nexusmods.com/skyrimspecialedition/mods/38762) | Alternative | all            | Urban tension around suspicious behavior.                              |
+| [Book Of Shadows](https://www.nexusmods.com/skyrimspecialedition/mods/76086)        | Alternative | all            | High-expression crime and stealth pillar.                              |
 
 ### Risks & Compatibility
 
@@ -35,11 +35,11 @@ How much the world should notice what the player does socially — reputation, c
 
 How companion management should function at the systems level.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Nether's Follower Framework](https://www.nexusmods.com/skyrimspecialedition/mods/55653) | Baseline | Modern flexible route. |
-| [EFF — Extensible Follower Framework](https://www.nexusmods.com/skyrimspecialedition/mods/7003) | Alternative | Simpler established management. |
-| [Amazing Follower Tweaks SE](https://www.nexusmods.com/skyrimspecialedition/mods/6656) | Alternative | Heavy-management branch. |
+| Mod                                                                                             | Type        | Dial           | Notes                           |
+|-------------------------------------------------------------------------------------------------|-------------|----------------|---------------------------------|
+| [Nether's Follower Framework](https://www.nexusmods.com/skyrimspecialedition/mods/55653)        | Baseline    | #1, #2, #3, #4 | Modern flexible route.          |
+| [EFF — Extensible Follower Framework](https://www.nexusmods.com/skyrimspecialedition/mods/7003) | Alternative | all            | Simpler established management. |
+| [Amazing Follower Tweaks SE](https://www.nexusmods.com/skyrimspecialedition/mods/6656)          | Alternative | all            | Heavy-management branch.        |
 
 ### Risks & Compatibility
 
@@ -54,13 +54,13 @@ How companion management should function at the systems level.
 
 The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue with spouses and romance interests, and opt-in quest-driven romance arcs. Baseline is fade-to-black, not explicit content. Custom named followers belong in → `NPCs`.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Relationship Dialogue Overhaul — RDO](https://www.nexusmods.com/skyrimspecialedition/mods/1187) | Baseline | 5,000+ voiced lines for NPCs/followers/spouses. 137K endorsements, fully SFW. |
-| [Amorous Adventures](https://www.nexusmods.com/skyrimspecialedition/mods/7305) (clean variant) | Baseline | Opt-in romance quests, fade-to-black. **Lock only clean build.** |
-| [Marriage Mod — To Have And To Hold](https://www.nexusmods.com/skyrimspecialedition/mods/8589) | Baseline | Up to 11 spouses, divorce, enhanced wedding, dynamic events. |
-| [Serana Dialogue Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/32161) | Baseline | 7,000+ voiced lines, new story arcs, romance. 51K endorsements. |
-| Discipline-first route | Alternative | Vanilla marriage mechanics. |
+| Mod                                                                                              | Type        | Dial           | Notes                                                                         |
+|--------------------------------------------------------------------------------------------------|-------------|----------------|-------------------------------------------------------------------------------|
+| [Relationship Dialogue Overhaul — RDO](https://www.nexusmods.com/skyrimspecialedition/mods/1187) | Baseline    | #1, #2, #3, #4 | 5,000+ voiced lines for NPCs/followers/spouses. 137K endorsements, fully SFW. |
+| [Amorous Adventures](https://www.nexusmods.com/skyrimspecialedition/mods/7305) (clean variant)   | Baseline    | #1, #2, #3, #4 | Opt-in romance quests, fade-to-black. **Lock only clean build.**              |
+| [Marriage Mod — To Have And To Hold](https://www.nexusmods.com/skyrimspecialedition/mods/8589)   | Baseline    | #1, #2, #3, #4 | Up to 11 spouses, divorce, enhanced wedding, dynamic events.                  |
+| [Serana Dialogue Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/32161)              | Baseline    | #1, #2, #3, #4 | 7,000+ voiced lines, new story arcs, romance. 51K endorsements.               |
+| Discipline-first route                                                                           | Alternative | all            | Vanilla marriage mechanics.                                                   |
 
 ### Risks & Compatibility
 

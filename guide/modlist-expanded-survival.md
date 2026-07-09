@@ -12,13 +12,13 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, weather, disease, and wilderness friction for roleplay and travel texture, or a heavier survival framework as a central system. This section owns the baseline survival direction; → `Survival & Combat` owns later balance and difficulty interactions.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Starfrost — A Survival Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/97536) | Baseline | Fits Simonrim-aligned progression family. |
-| [SunHelm Survival](https://www.nexusmods.com/skyrimspecialedition/mods/39414) | Alternative | Practical if Starfrost proves too tightly tuned. |
-| [Last Seed — Survival Needs](https://www.nexusmods.com/skyrimspecialedition/mods/56393) | Alternative | Heavier classic route. |
-| [Frostfall](https://www.nexusmods.com/skyrimspecialedition/mods/671) + [Campfire](https://www.nexusmods.com/skyrimspecialedition/mods/667) | Alternative | Harsh wilderness route. |
-| [Skills of the Wild](https://www.nexusmods.com/skyrimspecialedition/mods/37693) v2.0+ | Optional | 4 new skill trees (Hunting, Foraging, Tracking, Camping). Requires Campfire. Full compatibility with any survival baseline. |
+| Mod                                                                                                                                        | Type        | Dial       | Notes                                                                                                                       |
+|--------------------------------------------------------------------------------------------------------------------------------------------|-------------|------------|-----------------------------------------------------------------------------------------------------------------------------|
+| [Starfrost — A Survival Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/97536)                                               | Baseline    | #1, #2, #4 | Fits Simonrim-aligned progression family.                                                                                   |
+| [SunHelm Survival](https://www.nexusmods.com/skyrimspecialedition/mods/39414)                                                              | Alternative | #1, #2, #4 | Practical if Starfrost proves too tightly tuned.                                                                            |
+| [Last Seed — Survival Needs](https://www.nexusmods.com/skyrimspecialedition/mods/56393)                                                    | Alternative | #1, #2, #4 | Heavier classic route.                                                                                                      |
+| [Frostfall](https://www.nexusmods.com/skyrimspecialedition/mods/671) + [Campfire](https://www.nexusmods.com/skyrimspecialedition/mods/667) | Alternative | #1         | Harsh wilderness route.                                                                                                     |
+| [Skills of the Wild](https://www.nexusmods.com/skyrimspecialedition/mods/37693) v2.0+                                                      | Optional    | #1         | 4 new skill trees (Hunting, Foraging, Tracking, Camping). Requires Campfire. Full compatibility with any survival baseline. |
 
 ### Risks & Compatibility
 
@@ -33,10 +33,10 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 
 Lighter day-to-day body-maintenance layer between full survival needs and pure visual flavor. Adds believable downtime rituals without turning hygiene into a second dominant survival framework.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline | SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution. |
-| Minimalist route | Alternative | Leave hygiene implied through inns, rivers, roleplay. |
+| Mod                                                                                       | Type        | Dial           | Notes                                                                                                                                                                      |
+|-------------------------------------------------------------------------------------------|-------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline    | #1, #2, #3, #4 | SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution. |
+| Minimalist route                                                                          | Alternative | all            | Leave hygiene implied through inns, rivers, roleplay.                                                                                                                      |
 
 ### Key Features
 
@@ -75,10 +75,10 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 
 What happens when the player falls in combat. Goal: add consequence and narrative texture to defeat without making every lost fight permanent.
 
-| Mod | Type | Notes |
-| --- | --- | --- |
-| [Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924) | Baseline | Nemesis system — respawn with debuffs, enemies gain name/buffs/presence, defeat nemesis to restore progress. |
-| Discipline-first route | Alternative | Vanilla death-and-reload loop. |
+| Mod                                                                           | Type        | Dial   | Notes                                                                                                        |
+|-------------------------------------------------------------------------------|-------------|--------|--------------------------------------------------------------------------------------------------------------|
+| [Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924) | Baseline    | #1, #4 | Nemesis system — respawn with debuffs, enemies gain name/buffs/presence, defeat nemesis to restore progress. |
+| Discipline-first route                                                        | Alternative | all    | Vanilla death-and-reload loop.                                                                               |
 
 ### Risks & Compatibility
 

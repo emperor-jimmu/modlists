@@ -33,6 +33,7 @@ $files = @(
   "guide/modlist-audio.md"
   "guide/modlist-survival-combat.md"
   "guide/modlist-lotd.md"
+  "guide/modlist-design-philosophy.md"
   "guide/modlist-curation.md"
   "guide/modlist-adult.md"
   "guide/modlist-voicing.md"
