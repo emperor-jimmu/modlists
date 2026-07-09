@@ -28,6 +28,7 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 | Cathedral Weathers              | Fallback benchmark.                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/24791)  |
 | Azurite Weathers III - Enhanced | Later tuning layer, not the first decision.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150269) |
 | Skydreamus CS Presets           | Later tuning layer, not the first decision.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171145) |
+| Mists of Tamriel                   | Mist/fog atmospheric enhancement. CS-compatible — verify fog density in third-person readability. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78703)  |
 
 ### Azurite III Addon
 
@@ -75,6 +76,7 @@ Evaluate these only after the main water base is selected.
 | Wade in Water Redux - Swimming Overhaul     | Swimming overhaul with wading physics. Broader scope than Loki's Wade.                                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151353) |
 | GKB Waves Reborn                            | High-quality animated wave shader for shorelines. Prerequisite for GKB Waves For Various Mods.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/71126)  |
 | GKB Waves For Various Mods                  | GKB wave coverage for mod-added coasts and new-lands. Requires GKB Waves Reborn. Verify compatibility with chosen water mod. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124742) |
+| WAVY Waterfalls Effect            | Animated waterfall mesh replacer with wave motion. CS-compatible. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126073) |
 
 ### Risks & Compatibility
 

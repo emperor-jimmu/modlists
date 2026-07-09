@@ -216,10 +216,18 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 | [Colovian Noble Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/4464)        | Alternative | all  | Imperial-themed high-status clothing. Pairs with Beyond Skyrim.              |
 | [Knapsack Backpacks SE](https://www.nexusmods.com/skyrimspecialedition/mods/3440)         | Alternative | all  | Carry-and-wearable utility with MCM. Cosmetic companion to Bandolier.        |
 | Discipline-first route                                                                    | Alternative | #3   | Vanilla clothing only.                                                       |
+| [RMB SPCH - Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/116030)  | Alternative | all  | SkyPatched version. Replaces original Cloaks of Skyrim (6369). Preferred over base. |
+| [Cloaks Of Skyrim Retextured SE](https://www.nexusmods.com/skyrimspecialedition/mods/42558) | Add-on      | all  | Retexture for Cloaks of Skyrim or RMB SPCH variant.                        |
+| [Cloaks Of Skyrim Retextured SE Female Mesh Patch](https://www.nexusmods.com/skyrimspecialedition/mods/85932) | Add-on | all | Female mesh fix for the retexture. |
+| [Artesian Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/17416)      | Alternative | all  | Higher-detail cloak mesh/texture replacer. Alternative to Cloaks of Skyrim. |
+| [Dynamic Artisan Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/146438)        | Alternative | all  | Dynamic cloak animations via OAR. Cloak physics and movement.               |
+| [RMB SPCH - Winter is Coming Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/116029) | Alternative | all | SkyPatched version of Winter is Coming Cloaks.                          |
+| [Dynamic Armor Variants](https://www.nexusmods.com/skyrimspecialedition/mods/65963)         | Alternative | all  | Visual armor/clothing variants based on conditions. No stat changes.        |
+| [Dynamic Lowered Hoods](https://www.nexusmods.com/skyrimspecialedition/mods/65964)          | Alternative | all  | Hoods lower dynamically when not in combat. OAR-based.                      |
 
 ### Risks & Compatibility
 
 - `Armor and Clothing Extension` requires `RUSTIC CLOTHING` and `SkyUI` — verify load order keeps `RUSTIC CLOTHING` above ACE.
-- `Cloaks of Skyrim` adds 100+ cloak items. If → `Third-Person Gameplay` adds a custom cloak-slot overhaul, verify stacking.
+- `Cloaks of Skyrim` adds 100+ cloak items. If → `Third-Person Gameplay` adds a custom cloak-slot overhaul, verify stacking. RMB SPCH (116030) is the preferred SkyPatched variant over the original.
 - `Knapsack Backpacks SE` (cosmetic) and `Bandolier` (inventory) can stack, but verify inventory UI doesn't show duplicate bag icons.
 - Verify `Colovian Noble Clothes` for known issues before locking.

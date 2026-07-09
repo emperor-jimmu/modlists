@@ -205,6 +205,8 @@ Smaller discoverable places between headline destinations.
 | Mod                                     | Description                                                            | Nexus                                                               |
 |-----------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------|
 | Hold Border Guards - Definitive Edition |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61170)  |
+| Hold Border Banners                     | Visual hold-border signposts and banners. Mesh-only, no ESP.           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1737)   |
+| Immersive Hold Borders SSE Fixed        | Hold-border checkpoint improvements with structures and guards.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47918)  |
 | Nordic Ruins of Skyrim SSE              |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20382)  |
 | Hidden Hideouts City Edition SE         |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2626)   |
 | 7000 Steps of Sanctum                   |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/128478) |

@@ -45,6 +45,10 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Sleep of the Dead — Draugr Leather and Shroud Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/178057) | Alternative | Draugr shroud/leather retexture. |
 | [Frozen Electrocuted Combustion](https://www.nexusmods.com/skyrimspecialedition/mods/3532) | Alternative | Elemental creature death effects. |
 | [Better Butterflies](https://www.nexusmods.com/skyrimspecialedition/mods/79332) | Alternative | Butterfly insect visual overhaul. |
+| [Bear Replacer - Chakra's Creatures](https://www.nexusmods.com/skyrimspecialedition/mods/177594) | Alternative | Bear model replacer. Alternative to Bears of the North. |
+| [Sabre Cat Replacer - Chakra's Creatures](https://www.nexusmods.com/skyrimspecialedition/mods/179058) | Alternative | Sabre cat model replacer. |
+| [Sabrecats of Skyrim - CS ENB Fur Parallax](https://www.nexusmods.com/skyrimspecialedition/mods/172385) | Alternative | Sabre cat fur parallax texture upgrade. |
+| [All the Sabre Cats - Model Swapper](https://www.nexusmods.com/skyrimspecialedition/mods/179353) | Alternative | Sabre cat model variety via Model Swapper. |
 
 ---
 

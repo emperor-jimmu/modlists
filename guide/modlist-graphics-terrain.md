@@ -88,6 +88,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 | Flora Orientalis                                                                             | Dependency for Vinland Grass Patch + mixed-route coverage.   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64041)  |
 | Waterplants                                                                                  | Dependency for Vinland Grass Patch + mixed-route coverage.   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6092)   |
 | [Flora Additions - Water Plants](https://www.nexusmods.com/skyrimspecialedition/mods/116324) | Optional water plant flora additions.                        |                                                                     |
+| [Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/135460) | Mountain flower replacer with BOS and Seasonal Landscapes support. |                                                                     |
 
 ### 3D Plant Replacers (mesh-only, no ESP)
 
@@ -124,6 +125,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 | Vinland Grass Patch                      | Only after the final grass combination is narrow enough. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95273)  |
 | QW's Grass Patch 2                       | Only after the final grass combination is narrow enough. |                                                                     |
 | Grassreach - Blackreach Grass            | Blackreach-specific grass replacer.                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179420) |
+| Wildlands Renewal                        | Grass and groundcover improvement mod. Evaluate as Skoglendi alternative or layering candidate. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139896) |
 
 ### Risks & Compatibility
 
@@ -153,6 +155,9 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 | Nature of the Wild Lands               | Compare only if Ulvenwald misses the right balance. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63604)  |
 | Happy Little Trees PBR                 | Support signal.                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159171) |
 | Fabled Forests - Ulvenwald Patch (BOS) | Support signal.                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134501) |
+| Nature of the Wild Lands - Animations Addon | OAR-based tree interaction animations for NotWL. Requires NotWL base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148132) |
+| Nature of the Wild Lands - PBR | PBR texture layer for NotWL trees. Requires NotWL base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150319) |
+| Nature of the Wild Lands - Snowier Spruce Trees | Spruce tree snow coverage addon for NotWL. Requires NotWL base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149165) |
 
 ### Risks & Compatibility
 

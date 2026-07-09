@@ -260,8 +260,9 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 | --- | --- | --- |
 | [Thundertrot Horse Animations](https://www.nexusmods.com/skyrimspecialedition/mods/140941) | Candidate | OAR-based horse movement/idle replacer. |
 | [Horse Animation Overhaul (WIP - OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/140122) | Candidate | Broader horse animation replacement. WIP — evaluate stability. |
+| [Riding Animation Overhaul - RAO (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/102881) | Candidate | OAR-based horse riding animation replacer.                      |
 
-Both are OAR-based and work under Pandora. Do not install together without verifying mutual compatibility.
+All three are OAR-based and work under Pandora. Do not install together without verifying mutual compatibility.
 
 ### Companion Candidates (evaluate after baseline is locked)
 
@@ -293,11 +294,17 @@ Both are OAR-based and work under Pandora. Do not install together without verif
 | [Conditional Armor Type Animations](https://www.nexusmods.com/skyrimspecialedition/mods/51507)                                                              | Alternative | Add after base locomotion is accepted.                             |
 | [Dynamic Female Weather Idles](https://www.nexusmods.com/skyrimspecialedition/mods/98493)                                                                   | Alternative | OAR-based weather-aware idles. Complements survival/weather stack. |
 | [EVG Animated Traversal](https://www.nexusmods.com/skyrimspecialedition/mods/63232)                                                                         | Alternative | Belongs in interaction/traversal bucket.                           |
-| [Goetia Animations](https://www.nexusmods.com/skyrimspecialedition/mods/68005) — Female / [Male](https://www.nexusmods.com/skyrimspecialedition/mods/68625) | Alternative | Animation pack for both genders.                                   |
+| [Goetia Animations - Female Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/68005)                 | Alternative | Female locomotion animation pack.                                  |
+| [Goetia Animations - Male Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/68625)                   | Alternative | Male locomotion animation pack.                                    |
 | [Poser Hotkeys Plus SSE](https://www.nexusmods.com/skyrimspecialedition/mods/17743)                                                                       | Alternative | Hotkey-based pose/idle system.                                      |
 | [More Tavern Idles - SSE Port](https://www.nexusmods.com/skyrimspecialedition/mods/16757)                                                                 | Alternative | Tavern-specific idle animation variety.                             |
 | [Lightweight Headtracking and Emotions](https://www.nexusmods.com/skyrimspecialedition/mods/224)                                                           | Alternative | NPC/PCP headtracking and expression support.                        |
-| [Smooth Random Jump Animation - Rework](https://www.nexusmods.com/skyrimspecialedition/mods/59633)                                                         | Alternative | Randomized jump animation replacer.                                 |
+| [Smooth Random Jump Animation - Rework](https://www.nexusmods.com/skyrimspecialedition/mods/59633)                                                         | Alternative     | Randomized jump animation replacer.                                 |
+| [Smooth Weapon Jump Animation](https://www.nexusmods.com/skyrimspecialedition/mods/74748)                                                                  | Alternative     | Weapon-drawn jump animation replacer.                               |
+| [Random Swimming Animations](https://www.nexusmods.com/skyrimspecialedition/mods/92951)                                                                    | Alternative     | Randomized swimming animation replacer.                             |
+| [Dynamic Sprint](https://www.nexusmods.com/skyrimspecialedition/mods/95561)                                                                                | Alternative     | SKSE-based sprint animation with motion-matched lean.               |
+| [Dynamic Sprint Stop](https://www.nexusmods.com/skyrimspecialedition/mods/107057)                                                                          | Alternative     | Sprint-stop animation with deceleration. Companion to Dynamic Sprint. |
+| [Vanargand Animations - Sneak idle walk and run](https://www.nexusmods.com/skyrimspecialedition/mods/54351)                                                | Alternative     | Sneak locomotion animation pack.                                    |
 
 ---
 
@@ -326,6 +333,16 @@ Both are OAR-based and work under Pandora. Do not install together without verif
 | [Goetia Animations - Magic Spell Casting](https://www.nexusmods.com/skyrimspecialedition/mods/70204)                                                       | Alternative     | Magic spell casting animation replacer.                                                                                                    |
 | [Diverse NPC Movesets](https://www.nexusmods.com/skyrimspecialedition/mods/141893)                                                                          | Alternative     | Varied NPC combat stances via SCAR/OAR.                                                                                                    |
 | [For Honor in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/151478)                                                                                           | High-Commitment | Comprehensive combat overhaul. Competing with MCO/BFCO and Valhalla.                                                                       |
+| [Vanargand Animations - Sneak Strike Attacks](https://www.nexusmods.com/skyrimspecialedition/mods/55420)                                                                 | Alternative     | Sneak power-attack animation replacer.                                                                                                     |
+| [Vanargand Animations - Sneak Thrust Attacks](https://www.nexusmods.com/skyrimspecialedition/mods/55031)                                                                 | Alternative     | Sneak thrust-attack animation replacer.                                                                                                    |
+| [Vanargand Animations - Archery](https://www.nexusmods.com/skyrimspecialedition/mods/60323)                                                                              | Alternative     | Archery draw-and-release animation replacer.                                                                                              |
+| [Vanargand Animations - Sneak Archery](https://www.nexusmods.com/skyrimspecialedition/mods/56788)                                                                        | Alternative     | Sneak archery stance and release animation replacer.                                                                                       |
+| [Vanargand Animations - Dual Wield Sneak Strikes](https://www.nexusmods.com/skyrimspecialedition/mods/64216)                                                             | Alternative     | Dual-wield sneak attack animation replacer.                                                                                                |
+| [Vanargand Animations - Crossbows](https://www.nexusmods.com/skyrimspecialedition/mods/66286)                                                                            | Alternative     | Crossbow draw-and-fire animation replacer.                                                                                                 |
+| [Vanargand Animations - Sneak Crossbows](https://www.nexusmods.com/skyrimspecialedition/mods/67282)                                                                      | Alternative     | Sneak crossbow stance and fire animation replacer.                                                                                         |
+| [Goetia Animations - Sneak Magic](https://www.nexusmods.com/skyrimspecialedition/mods/75482)                                                                             | Alternative     | Sneak magic-casting animation replacer.                                                                                                    |
+| [Goetia Animations - Conditional Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/76388)                                                                      | Alternative     | Conditional shout animation replacer.                                                                                                      |
+| [Dynamic Dodge Animation](https://www.nexusmods.com/skyrimspecialedition/mods/79598)                                                                                     | Alternative     | SKSE-based dodge animation with i-frames. DMCO-compatible.                                                                                 |
 
 ---
 
@@ -402,6 +419,12 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 | [Paired Animation Improvements](https://www.nexusmods.com/skyrimspecialedition/mods/99621)                                            | Alternative | Improved paired NPC interaction animations.                             |
 | [Ultimate Animated Potions NG](https://www.nexusmods.com/skyrimspecialedition/mods/97674)                                            | Alternative | Potion-use animation replacer.                                          |
 | [JellyFish Ultimate Animated Potions NG](https://www.nexusmods.com/skyrimspecialedition/mods/168108)                                  | Alternative | Expanded potion animation pack for Ultimate Animated Potions NG.        |
+| [Simple Wall Lean (RaySense)](https://www.nexusmods.com/skyrimspecialedition/mods/176847)                                            | Alternative | Contextual wall-leaning idle animation.                                 |
+| [Simple Wall Lean - More feminine Female animations](https://www.nexusmods.com/skyrimspecialedition/mods/182365)                     | Add-on      | Female-specific variant for Simple Wall Lean.                           |
+| [Divines Prayer Animations](https://www.nexusmods.com/skyrimspecialedition/mods/109175)                                              | Alternative | Conditional prayer-idle animation at shrine activations.                |
+| [Gesture Animation Remix (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/64420)                                           | Alternative | Expanded gesture/idle animation variety via OAR.                        |
+| [Lively Children Animations (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/67557)                                        | Alternative | Child NPC animation variety for play/idle/run.                          |
+| [Lively cart driver animation replacer or OAR](https://www.nexusmods.com/skyrimspecialedition/mods/70595)                            | Alternative | Cart driver animation replacer for carriage rides.                      |
 
 ---
 
