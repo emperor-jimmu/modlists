@@ -42,6 +42,32 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 | [Actor Value Generator](https://www.nexusmods.com/skyrimspecialedition/mods/84743)                  | Required by Classic Attributes.                                                           |
 | [XEMI Utility](https://www.nexusmods.com/skyrimspecialedition/mods/159084)                          | Required by FYX - Nordic Doors and Traps Collisions.                                      |
 | [Sonders Keyword Distribution Resources](https://www.nexusmods.com/skyrimspecialedition/mods/93995) | Keyword distribution framework for item/keyword tagging.                                  |
+| [Skyrim Save System Overhaul 3 (SSSO3)](https://www.nexusmods.com/skyrimspecialedition/mods/122343) | Save-system replacement with Save Shield, rotating caps, and safe timed hardsaves. Requires `JContainers SE` + `NL_MCM`. |
+| [Unofficial Skyrim Modder's Patch - USMP SE](https://www.nexusmods.com/skyrimspecialedition/mods/49616) | Modder-side patch collection fixing record-level bugs across DLC and CC content. Complements USSEP. |
+| [USMP - Patch Emporium](https://www.nexusmods.com/skyrimspecialedition/mods/50813) | Centralized patch hub for USMP — third-party compatibility patches for various content mods. Install after USMP base. |
+
+### SSSO3 Configuration
+
+Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format — the instability risk is **when** they fire (cell transitions, combat, half-evaluated script state), not the format. SSSO3 replaces vanilla triggers with a Save Shield that defers saves during unsafe states.
+
+**Installation:**
+
+1. Install requirements (already in Core Libraries): `JContainers SE`, `NL_MCM - A Modular MCM Framework`, `Regional Save Names`, `SSE Engine Fixes`
+2. Install the SSSO3 main file and `SSSO3 - French` (if applicable). Place SSSO3 anywhere in load order.
+3. **Disable all vanilla autosaves** in BethINI Pie: untick Autosaves, Save on Travel, Save on Rest, Save on Wait. SSSO3 force-deactivates them, but BethINI settings prevent the INI values from conflicting.
+4. Disable `iAutoSaveCount` in `Skyrim.ini` (`[SaveGame]`) to prevent the engine from reserving autosave slots — SSSO3 manages its own.
+
+**In-game setup (required before the rotating system activates):**
+
+1. Create your character and exit the starting cell (alternate-start mod or vanilla Helgen sequence).
+2. Make one manual save to generate a save file on disk.
+3. Open the SSSO3 MCM. Go to **Player Setup**.
+4. Press the **Find Player ID** button — SSSO3 reads it automatically from the save file. If it fails, use **Bypass Check** and type your character name exactly.
+5. Assign a **Quick Save key** and a **Quick Load key** in the MCM.
+6. **Select a preset profile.** For Elder Wilds, start with **Vanilla+** — it replicates vanilla autosave behavior with Save Shield protection and timed saves, no hardcore restrictions.
+7. From the MCM's **Rotating System** page, set your preferred save cap (20-30 is reasonable for a playthrough).
+
+**Campfire users:** SSSO3 must overwrite Campfire's files. Use the Campfire patch included with SSSO3 and let SSSO3 win file conflicts in MO2.
 
 ### SkyPatcher And SkyPatched Mods → separator: `Foundations - Core Libraries`
 
@@ -234,6 +260,7 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 | [Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967)                | Consistent jumping control.                                         |
 | [LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136)           | Leveled-list crash protection.                                      |
 | [Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076)         | Prevents explosion-force spells from launching objects into camera. |
+| [Weapons Armor Clothing and Clutter Fixes (WACCF)](https://www.nexusmods.com/skyrimspecialedition/mods/18994) | Broad record fix for weapon/armor/clothing/clutter records. High compatibility debt — test carefully with the crafting and artifact stack. Optional — skip if conflicts outweigh gains. |
 
 ### Not Installed
 

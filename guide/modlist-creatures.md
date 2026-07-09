@@ -66,6 +66,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 | Mod | Notes |
 | --- | --- |
+| [Swamp Skeletons - Chakra's Creatures](https://www.nexusmods.com/skyrimspecialedition/mods/151282) | Swamp-themed skeleton variants. ESL-flagged. |
 | [Edmond's Nature Series — BIRDS](https://www.nexusmods.com/skyrimspecialedition/mods/123068) | Species: Ravens, Pheasants, Seagulls, flocking birds and bats, Bone Hawks (unique audio), Ghost Ravens (Soul Cairn), plus additional placed hawks and hawk nests. ESL-flagged. Raven tris from Mihail (with permission), Seagulls from Mr. Siika community resource. Do not stack with Seagulls — Mihail. Pair with [Xtudo optimized textures](https://www.nexusmods.com/skyrimspecialedition/mods/123210) — pick **2K** main file. |
 | [Morrowind Creatures SE](https://www.nexusmods.com/skyrimspecialedition/mods/50435) | |
 | [Ogres SE](https://www.nexusmods.com/skyrimspecialedition/mods/59363) | |
@@ -94,6 +95,7 @@ How creatures attack, react, and express identity once combat starts.
 | [Dragon War](https://www.nexusmods.com/skyrimspecialedition/mods/51310) | Alternative | Heavier dragon route for fight structure/tempo. |
 | [Dragons actually fall down](https://www.nexusmods.com/skyrimspecialedition/mods/156824) | Alternative | Dragons collapse on the ground when staggered/low health. |
 | [Epic Dwarven Centurion Combat](https://www.nexusmods.com/skyrimspecialedition/mods/181405) | Alternative | Dwarven Centurion combat/animation overhaul. |
+| [New Creature Animation - Dwarven Centurion - SCAR2.0 - MCO - Nemesis or Pandora](https://www.nexusmods.com/skyrimspecialedition/mods/137805) | Alternative | Dwarven Centurion animation pack requiring MCO/BFCO or SCAR. Mutually exclusive with Epic Dwarven Centurion Combat — pick one. |
 | [SkyTEST Lite ESL](https://www.nexusmods.com/skyrimspecialedition/mods/84539) / [Animal Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/1532) / [Pelagius's Wildlife AI](https://www.nexusmods.com/skyrimspecialedition/mods/144909) | Alternative | Animal-side mods drifting into ecology territory. |
 
 ---

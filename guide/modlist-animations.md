@@ -254,6 +254,15 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 | [SkyClimb](https://www.nexusmods.com/skyrimspecialedition/mods/97253)                                                          | Alternative | Climbing-first alternative built around EVGAT. Pick one (not cumulative with SkyParkour). |
 | Discipline-first route                                                                                                         | Alternative | Vanilla climbing + TDM + sprint/jump only.                                                |
 
+### Horse Animation Candidates
+
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Thundertrot Horse Animations](https://www.nexusmods.com/skyrimspecialedition/mods/140941) | Candidate | OAR-based horse movement/idle replacer. |
+| [Horse Animation Overhaul (WIP - OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/140122) | Candidate | Broader horse animation replacement. WIP — evaluate stability. |
+
+Both are OAR-based and work under Pandora. Do not install together without verifying mutual compatibility.
+
 ### Companion Candidates (evaluate after baseline is locked)
 
 - **Dova Jump** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125550)) — Stamina-based jump height/distance. Complements parkour.
@@ -387,6 +396,7 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 | [Dynamic Crafting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/116422)                                             | Add-on      | Crafting-station interaction animations.                           |
 | [Dynamic Looting and Harvesting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/114547)                               | Add-on      | Looting and harvesting interaction animations.                     |
 | [Dynamic Horse Petting Animations for Immersive Interactions](https://www.nexusmods.com/skyrimspecialedition/mods/111767)             | Add-on      | Horse interaction animations for II.                               |
+| [Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations](https://www.nexusmods.com/skyrimspecialedition/mods/70117)            | Prerequisite | DAR/OAR animations for mining/chopping tools. Prerequisite for Chop Chop and related woodcutting mods. |
 | [HSF Male Furniture Idles](https://www.nexusmods.com/skyrimspecialedition/mods/155228)                                                | Alternative | Male idle animations for furniture interactions.                   |
 | [Modern Female Sitting Animations Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/85599)                                | Alternative | Female sitting animation replacements.                             |
 | [Paired Animation Improvements](https://www.nexusmods.com/skyrimspecialedition/mods/99621)                                            | Alternative | Improved paired NPC interaction animations.                             |

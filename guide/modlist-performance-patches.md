@@ -238,7 +238,6 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 ### Stage 8 — Visuals And Lighting
 
 - `ELE Patcher` — skip (CS-only stack).
-- `ENB Light Patcher` — skip.
 - `NoShadowsPatch`
 - `Radial Blur Remover`
 - `Remove Edge Glow`

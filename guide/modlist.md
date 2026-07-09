@@ -24,6 +24,7 @@ The full setup and installation guide (Steam config, MO2 setup, SKSE, tool regis
 The file [`separators.md`](separators.md) is the canonical ordered reference for `Mod Organizer 2` separators.
 
 - `Foundations` → [Foundations and Compatibility](modlist-foundations.md)
+- `UI` → [Modernized UI](modlist-ui.md)
 - `Graphics` → [Graphics Pipeline](modlist-graphics.md) (parent overview)
   - `Graphics – PGPatcher` → [PGPatcher](modlist-graphics-pgpatcher.md)
   - `Graphics – Community Shaders` → [Community Shaders](modlist-graphics-shaders.md)

@@ -67,28 +67,31 @@ Install together. Use **2K textures** for all — locks are examined up close bu
 | Towns and Settlements | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147761) |
 | Misc Locations        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147762) |
 | Player Homes          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/182336) |
+| Snazzy Interiors - Dawnstar Mortar and Pestle | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/140567) |
+| Snazzy Interiors - Winterhold Birna's Oddments | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138308) |
+| Snazzy Interiors Patch Collection | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/91604) |
 
 ### Mesh Replacer Series
 
 All mesh-only, no ESP.
 
-| Mod                        | Nexus                                                               |
-|----------------------------|---------------------------------------------------------------------|
-| V.A.E.R.                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145018) |
-| Thrones Expanded           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139544) |
-| Rustic Repose              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138889) |
-| Use Those Blankets         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75481)  |
-| Sleipnir Beds              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143168) |
-| The Royal Seat             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118892) |
-| Divide and Conquer         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117295) |
-| Oddments and Miscellanea   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118859) |
-| Utenlands Nordic Tents     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121203) |
-| Redoran Reverie            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132997) |
-| HFs Archery Target Remodel | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138492) |
-| Diverse Grindstones        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145870) |
-| Blary's Booksets           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159303) |
-| ElSopa Misc Ruins Redone   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153797) |
-| Snazzy Orc Chests          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142275) |
+| Mod                                   | Nexus                                                               |
+|---------------------------------------|---------------------------------------------------------------------|
+| V.A.E.R.                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145018) |
+| Thrones Expanded                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139544) |
+| Rustic Repose - A Common Bed Replacer | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138889) |
+| Use Those Blankets                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75481)  |
+| Sleipnir Beds                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143168) |
+| The Royal Seat                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118892) |
+| Divide and Conquer                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117295) |
+| Oddments and Miscellanea              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118859) |
+| Utenlands Nordic Tents                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121203) |
+| Redoran Reverie                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132997) |
+| HFs Archery Target Remodel            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138492) |
+| Diverse Grindstones                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145870) |
+| Blary's Booksets                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159303) |
+| ElSopa Misc Ruins Redone              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153797) |
+| Snazzy Orc Chests                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142275) |
 
 ### Environment & Props
 
@@ -153,6 +156,13 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | Snazzy Diverse Carriages - BOS                     |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112041) |
 | Snazzy Diverse Carriages - Seasonal Patch          | Required if Seasonal Landscapes is adopted.                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112210) |
 
+### Vanaheimr Series
+
+| Mod | Nexus |
+| --- | --- |
+| [Vanaheimr - Mines and Caves - Complex Material - PBR](https://www.nexusmods.com/skyrimspecialedition/mods/137033) |
+| [Vanaheimr - Ore Veins - Complex Material - PBR](https://www.nexusmods.com/skyrimspecialedition/mods/149148) |
+
 ### Animated Items (mesh replacers)
 
 | Mod                                             | Description                                  | Nexus                                                               |
@@ -163,6 +173,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | Kanjs - Taproot Animated and Beating Motion     |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111446) |
 | Animated Filled Soul Gems                       |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110638) |
 | Animated Ingredients                            |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72852)  |
+| Kanjs - Stalhrim Weapons Animated               | Animated Stalhrim weapon mesh replacer.       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/146167) |
 
 ### Risks & Compatibility
 
@@ -269,7 +280,11 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Tomato's Windhelm - PBR or Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/174492) | Windhelm city-wide PBR retexture. 2K main file recommended.                                                  |
 | [Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894)                       | Curtain/hanging fabric retexture.                                                                            |
 | [The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487)                     | Blackreach mist/fog visual effect overhaul.                                                                  |
+| [Valhalla Bridges](https://www.nexusmods.com/skyrimspecialedition/mods/157314)                           | Higher-detail bridge mesh replacers. Mesh-only, no ESP.                                                     |
+| [Valhalla Bridges - Addons Patches and Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/157804) | Compatibility patches and addon coverage for Valhalla Bridges. Install after base.                           |
+| [Ivy - Gates of Riverwood](https://www.nexusmods.com/skyrimspecialedition/mods/138864)                   | Ivy-covered gate mesh replacer at Riverwood entrance. BOS-based, optional cosmetic.                          |
 | [Better Wine Labels - Vanilla and LotD](https://www.nexusmods.com/skyrimspecialedition/mods/34698)        | Wine bottle label retexture. PBR patch: [175588](https://www.nexusmods.com/skyrimspecialedition/mods/175588) |
+| [Petroglyphs of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/146569)                       | Rock carving/runestone visual replacers. Mesh-only, no ESP. |
 | [Diverse Windmill Sails - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/121759)                | BOS-based windmill sail variety.                                                                             |
 | [Diverse Foods - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/91599)                          | BOS-based food item variety.                                                                                 |
 | [Diverse Candles - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/94369)                        | BOS-based candle variety.                                                                                    |
@@ -278,3 +293,8 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [FrankBlack's Honey in a Jar](https://www.nexusmods.com/skyrimspecialedition/mods/104496)                 | Honey jar retexture.                                                                                         |
 | [Slightly Better Nordic Henges - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/97162)          | Nordic henge object variety via BOS.                                                                         |
 | [One Quiver to rule them all](https://www.nexusmods.com/skyrimspecialedition/mods/172070)                 | Quiver attachment positioning fix.                                                                           |
+| [HFs - Flagons (BOS and Model Swapper)](https://www.nexusmods.com/skyrimspecialedition/mods/145495)      | Flagon/tankard variety via BOS.                                                                              |
+| [Divergence - Skytone - Runes](https://www.nexusmods.com/skyrimspecialedition/mods/150112)               | Custom rune texture replacer.                                                                                |
+| [Temples of the Ancients (2K - 4K)](https://www.nexusmods.com/skyrimspecialedition/mods/38544)           | Nordic temple/Aedric ruin retexture. 2K recommended.                                                         |
+| [Temples of the Ancients Complex Material and PBR](https://www.nexusmods.com/skyrimspecialedition/mods/127371) | PBR upgrade for Temples of the Ancients. Install after base mod.                                        |
+| [SB - Pressure Plate Trap Blending - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/86053)     | Blends pressure plates into floor textures via BOS.                                                          |

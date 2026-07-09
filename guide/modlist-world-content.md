@@ -33,21 +33,21 @@ Authored settlement content — real places, not just denser vibes.
 
 ### Baseline
 
-| Mod                                           | Description                                                                                   | Nexus                                                               |
-|-----------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| The Great Cities - Minor Cities and Towns SSE | First-pass baseline giving multiple underbuilt settlements stronger structure.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20272)  |
-| The Great Cities- Resources                   | Prerequisite resource mod for all The Great Cities series mods. Install first.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104373) |
-| Cities of the North - Dawnstar                | Default modular lock for four smaller hold capitals. Designed to stack.                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28952)  |
-| Cities of the North - Morthal                 |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34168)  |
-| Cities of the North - Falkreath               |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56731)  |
-| Cities of the North - Winterhold              |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40088)  |
-| Settlements Expanded                          | Makes seven underbuilt settlements feel inhabited (no city geometry changes). Must load late. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/7777)   |
-| The Great City of Solitude SSE                | Port expansion with new homes, shops, warehouses, NPCs.                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22243)  |
-| JK's Whiterun Outskirts                       | Whiterun-area expansion. Independent of `JK's Skyrim` AIO; stack without patching.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78351)  |
-| JK's Raven Rock                               | Solstheim settlement. ESL-flagged.                                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141070) |
-| JK's Tel Mithryn                              | Telvanni tower. ESL-flagged.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151512) |
-| FYX - Eastern Empire Company Building         |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86526)  |
-| FYX - Riften - Window Consistency             |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/182707) |
+| Mod                                            | Description                                                                                   | Nexus                                                               |
+|------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| The Great Cities - Minor Cities and Towns SSE  | First-pass baseline giving multiple underbuilt settlements stronger structure.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20272)  |
+| The Great Cities- Resources                    | Prerequisite resource mod for all The Great Cities series mods. Install first.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104373) |
+| Cities of the North - Dawnstar                 | Default modular lock for four smaller hold capitals. Designed to stack.                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28952)  |
+| Cities of the North - Morthal                  |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34168)  |
+| Cities of the North - Falkreath                |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56731)  |
+| Cities of the North - Winterhold               |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40088)  |
+| Settlements Expanded                           | Makes seven underbuilt settlements feel inhabited (no city geometry changes). Must load late. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/7777)   |
+| The Great City of Solitude SSE                 | Port expansion with new homes, shops, warehouses, NPCs.                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22243)  |
+| JK's Whiterun Outskirts                        | Whiterun-area expansion. Independent of `JK's Skyrim` AIO; stack without patching.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78351)  |
+| JK's Raven Rock                                | Solstheim settlement. ESL-flagged.                                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141070) |
+| JK's Tel Mithryn                               | Telvanni tower. ESL-flagged.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151512) |
+| FYX - Eastern Empire Company Building          |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86526)  |
+| FYX - Riften - Window Consistency              |                                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/182707) |
 | The City of Crossed Daggers - Riften Expansion | Riften market and canal expansion with new shops, NPCs, and quests.                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168629) |
 | Grand Solitude - The Walls of High King Erling | Solitude wall and exterior expansion adding new areas and detail.                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157506) |
 
@@ -61,15 +61,15 @@ Authored settlement content — real places, not just denser vibes.
 
 ### Alternatives
 
-| Mod                                    | Description                                                         | Nexus                                                              |
-|----------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------|
-| The Great Cities                       | Major-hold-capital follow-on. Treat as deliberate second-step.      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/320)   |
-| Capital Whiterun Expansion             | If JK's patch missing, mutually exclusive with JK's Whiterun edits. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37982) |
-| The Great Town of Ivarstead SSE        |                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34505) |
-| The Great Village of Kynesgrove        |                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42639) |
-| The Great Village of Mixwater Mill SSE |                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36350) |
-| The Great Town of Shor's Stone SSE     |                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/35977) |
-| The Great City Of Winterhold SSE Edition | Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17127)  |
+| Mod                                      | Description                                                                    | Nexus                                                              |
+|------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| The Great Cities                         | Major-hold-capital follow-on. Treat as deliberate second-step.                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/320)   |
+| Capital Whiterun Expansion               | If JK's patch missing, mutually exclusive with JK's Whiterun edits.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37982) |
+| The Great Town of Ivarstead SSE          |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34505) |
+| The Great Village of Kynesgrove          |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42639) |
+| The Great Village of Mixwater Mill SSE   |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36350) |
+| The Great Town of Shor's Stone SSE       |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/35977) |
+| The Great City Of Winterhold SSE Edition | Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17127) |
 
 ---
 
@@ -84,7 +84,7 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 | Obscure's College of Winterhold         | Architecture baseline. FOMOD with ~50 built-in patches including LotD.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20514) | `World Content - Overhauls` |
 | Immersive College NPCs                  | ESL-flagged, vanilla assets, no cell edits. Integration patch in Obscure's FOMOD. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9252)  | `World Content - Overhauls` |
 | College of Winterhold - Quest Expansion | Skill-gated entry, 7 starter lessons before Saarthal. ESL-flagged, by jayserpa.   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66666) | `World Content - Quests`    |
-| JK's College of Winterhold              | Exterior and interior overhaul. Stack on Obscure's via combo patch below.          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65676) | `World Content - Overhauls` |
+| JK's College of Winterhold              | Exterior and interior overhaul. Stack on Obscure's via combo patch below.         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65676) | `World Content - Overhauls` |
 
 ### Alternatives
 
@@ -96,9 +96,9 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 
 ### Patch Support
 
-| Mod                                                                    | Description                                                                              | Nexus                                                               |
-|------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| JK's College of Winterhold (Immersive or Obscure) Combo Patches        | Compatibility patch enabling JK's College to stack over Obscure's or Immersive College.  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/67820)  |
+| Mod                                                             | Description                                                                             | Nexus                                                              |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| JK's College of Winterhold (Immersive or Obscure) Combo Patches | Compatibility patch enabling JK's College to stack over Obscure's or Immersive College. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/67820) |
 
 ### Compatibility Notes
 
@@ -145,17 +145,33 @@ Travel-stop identity, small community presence, memorable rural pauses.
 
 ### Alternatives
 
-| Mod                        | Description                                 | Nexus                                                               |
-|----------------------------|---------------------------------------------|---------------------------------------------------------------------|
-| Hammet's Dungeon Pack 1 SE | Curated hand-authored dungeons.             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12186)  |
-| Children of the North Wind | Bespoke Nordic architecture at 9 locations. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147701) |
-| Skyrim Underground SSE     | Larger subterranean layer.                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131)    |
+| Mod                        | Description                                                           | Nexus                                                               |
+|----------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------|
+| Hammet's Dungeon Pack 1 SE | Curated hand-authored dungeons.                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12186)  |
+| Children of the North Wind | Bespoke Nordic architecture at 9 locations.                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147701) |
+| Skyrim Underground SSE     | Larger subterranean layer.                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131)    |
+| Icy Dungeons Pack          | Icy retexture of nordic crypt dungeons. Visual-only, no record edits. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136080) |
 
 ### Navmesh Support
 
 | Mod                                          | Description                                                                                                                         | Nexus                                                               |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | Navigator - Navmesh Fixes - Patch Collection | FOMOD covering Dungeons Revisited, LotD, Helgen Reborn, JK's interiors, etc. Install after content mods and Navigator are in place. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111379) |
+
+### Dungeon Visual Overhauls
+
+Visual-only overhauls for specific dungeons. No record or navmesh edits, but confirm compatibility on a per-dungeon basis if world-content mods touch the same cell.
+
+| Mod | Nexus |
+|-----|-------|
+| [Bleak Falls Tower](https://www.nexusmods.com/skyrimspecialedition/mods/83466) |
+| [Northern Scenery - Bleak Falls Barrow](https://www.nexusmods.com/skyrimspecialedition/mods/94647) |
+| [Northern Scenery - Ansilvund](https://www.nexusmods.com/skyrimspecialedition/mods/94720) |
+| [Northern Scenery - Angarvunde](https://www.nexusmods.com/skyrimspecialedition/mods/94650) |
+| [Northern Scenery - IronBind Barrow](https://www.nexusmods.com/skyrimspecialedition/mods/95788) |
+| [Bleak Falls Barrow Overhaul Version 2](https://www.nexusmods.com/skyrimspecialedition/mods/131057) |
+
+**Note:** Bleak Falls Tower and Bleak Falls Barrow Overhaul touch the same location (Bleak Falls Barrow). They are likely incompatible — pick one. Northern Scenery series covers separate dungeons and can be installed together.
 
 ---
 
@@ -182,20 +198,23 @@ Smaller discoverable places between headline destinations.
 | Dynamic Boats at Docks - Official Patch Hub |                                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172901) |
 | Snowy Ships for Snowy Regions               | BOS-based.                                                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111827) |
 | Unmarked Locations Pack - All In One        | + addon packs for Bruma, Wyrmstooth, Gray Cowl if those worldspaces are adopted. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113660) |
-| Ascend - Hidden Peaks of Skyrim             | Climbing challenge locations across Skyrim. Complements parkour movement.          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120802) |
+| Ascend - Hidden Peaks of Skyrim             | Climbing challenge locations across Skyrim. Complements parkour movement.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120802) |
 
 ### Alternatives
 
-| Mod                                     | Description                | Nexus                                                               |
-|-----------------------------------------|----------------------------|---------------------------------------------------------------------|
-| Hold Border Guards - Definitive Edition |                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61170)  |
-| Nordic Ruins of Skyrim SSE              |                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20382)  |
-| Hidden Hideouts City Edition SE         |                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2626)   |
-| 7000 Steps of Sanctum                   |                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/128478) |
-| Gildergreen Regrown                     |                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/348)    |
-| The Gildergreen Grows                   | Incompatible with Regrown. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147742) |
-| HAG Occult Orphan Rock                  |                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137996) |
-| Lore Friendly Roadside Ruins            |                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130581) |
+| Mod                                     | Description                                                            | Nexus                                                               |
+|-----------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Hold Border Guards - Definitive Edition |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61170)  |
+| Nordic Ruins of Skyrim SSE              |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20382)  |
+| Hidden Hideouts City Edition SE         |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2626)   |
+| 7000 Steps of Sanctum                   |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/128478) |
+| Gildergreen Regrown                     |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/348)    |
+| The Gildergreen Grows                   | Incompatible with Regrown.                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147742) |
+| HAG Occult Orphan Rock                  |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137996) |
+| Lore Friendly Roadside Ruins            |                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130581) |
+| HAG - Occult Witchmist Grove            | Witch-themed point of interest. Same series as HAG Occult Orphan Rock. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143685) |
+| HAG - Occult Cradle Stone Tower         | Occult tower point of interest. Same series.                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148542) |
+| Haunted Shipwrecks                      | Haunted shipwreck encounter locations. BOS-based, no cell edits.       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142986) |
 
 ---
 
@@ -265,11 +284,11 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 
 ### Alternatives
 
-| Mod | Description | Nexus |
-| --- | --- | --- |
-| [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595) | Unique moon-themed weapon with quest content. | |
-| [Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148) | Unique staff / Staff of Magnus replacer with expanded mechanics. | |
-| [Reliquary of Myth - Artifacts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/31612) | Artifact overhaul granting unique powers to daedric and quest rewards. | |
+| Mod                                                                                                  | Description                                                            | Nexus |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|-------|
+| [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)                              | Unique moon-themed weapon with quest content.                          |       |
+| [Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148)                         | Unique staff / Staff of Magnus replacer with expanded mechanics.       |       |
+| [Reliquary of Myth - Artifacts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/31612) | Artifact overhaul granting unique powers to daedric and quest rewards. |       |
 
 ---
 
@@ -291,37 +310,48 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 
 ### Faction Expansions
 
-| Mod                                    | Description                                                                                          | Nexus                                                               |
-|----------------------------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| A Chance Arrangement Plus Plus         | Thieves Guild quest overhaul.                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175885) |
-| Opulent Thieves Guild                  | Visual-progression companion.                                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10932)  |
-| Improved Companions - Questline Tweaks | Removes forced radiant-quest spam between Companions missions.                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120609) |
-| Penitus Oculatus                       | Locked. "Destroy the Dark Brotherhood!" replacement faction with radiant quests. 11.5K endorsements. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21061)  |
+| Mod                                                 | Description                                                                                                                     | Nexus                                                               |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| A Chance Arrangement Plus Plus                      | Thieves Guild quest overhaul.                                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175885) |
+| Opulent Thieves Guild                               | Visual-progression companion.                                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10932)  |
+| Improved Companions - Questline Tweaks              | Removes forced radiant-quest spam between Companions missions.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120609) |
+| Penitus Oculatus                                    | Locked. "Destroy the Dark Brotherhood!" replacement faction with radiant quests. 11.5K endorsements.                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21061)  |
+| The Brotherhood of Old - Dark Brotherhood Continued | Post-DB-questline continuation with new sanctuary, quests, and radiant content. Complements Penitus Oculatus alternative route. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15322)  |
 
 **Optional alternative:** **Destroy The Dark Brotherhood - Quest Expansion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118229)) — jayserpa's quest-expansion approach to destroying the DB. *Incompatible with Penitus Oculatus — choose one.*
 
+### Civil War Content
+
+| Mod | Description | Nexus |
+|-----|-------------|-------|
+| [Open Civil War SSE](https://www.nexusmods.com/skyrimspecialedition/mods/11076) | Expands civil war into a dynamic campaign with multiple front-lines, siege battles, and faction maneuvering. High-commitment — significant world interaction and patch footprint. |
+| [Serious Civil War Defense for OCW](https://www.nexusmods.com/skyrimspecialedition/mods/81557) | Adds settlement defense scenarios triggered by OCW campaign events. Requires Open Civil War. |
+| [After the Civil War - Siege Damage Repairs](https://www.nexusmods.com/skyrimspecialedition/mods/20668) | Post-war world repair: damaged cities and fortifications are restored over time. Complements OCW. |
+
+**Alternatives:** **Civil War Lines Expansion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77566)) — jayserpa's dialogue expansion for civil war soldiers. Also listed in → [NPCs](modlist-npcs.md) (Dialogue Expansions). Check for overlap with the NPCs entry.
+
 ### Quest Expansions (Vanilla+)
 
-| Mod                                       | Description                                                          | Nexus                                                               |
-|-------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------|
-| House of Horrors Quest Expansion          |                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57285)  |
-| Paarthurnax Quest Expansion               |                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51711)  |
-| The Only Cure Quest Expansion             |                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57683)  |
-| The Whispering Door Quest Expansion       |                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76606)  |
-| Quest Expansions Patches Hub              |                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113083) |
-| Saints and Seducers Extended Cut          | Transforms thin vanilla Creation into proper Shivering Isles return. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72772)  |
-| Infiltration - Quest Expansion            | Thieves Guild / Skyrim quest expansion.                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114054) |
-| The Taste of Death - Quest Addon          | Namira quest expansion.                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123173) |
-| More to do in the Soul Cairn              | Soul Cairn quest and content addon.                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115962) |
-| Boethiah's Calling - Alternate Questline  | Boethiah daedric quest alternative.                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121499) |
-| Mephala's Curse - Whispering Door Addon   | Whispering Door quest addon. Separable from the Quest Expansion — evaluate for overlap. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120650) |
+| Mod                                      | Description                                                                             | Nexus                                                               |
+|------------------------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| House of Horrors Quest Expansion         |                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57285)  |
+| Paarthurnax Quest Expansion              |                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51711)  |
+| The Only Cure Quest Expansion            |                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57683)  |
+| The Whispering Door Quest Expansion      |                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76606)  |
+| Quest Expansions Patches Hub             |                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113083) |
+| Saints and Seducers Extended Cut         | Transforms thin vanilla Creation into proper Shivering Isles return.                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72772)  |
+| Infiltration - Quest Expansion           | Thieves Guild / Skyrim quest expansion.                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114054) |
+| The Taste of Death - Quest Addon         | Namira quest expansion.                                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123173) |
+| More to do in the Soul Cairn             | Soul Cairn quest and content addon.                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115962) |
+| Boethiah's Calling - Alternate Questline | Boethiah daedric quest alternative.                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121499) |
+| Mephala's Curse - Whispering Door Addon  | Whispering Door quest addon. Separable from the Quest Expansion — evaluate for overlap. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120650) |
 
 ### Standalone Adventures
 
-| Mod                | Description                                                                               | Nexus                                                             |
-|--------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| The Forgotten City | Locked. Most decorated Skyrim quest mod. Self-contained murder-mystery, LoTD integration. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1179) |
-| Mysteries of the Dwemer | Dwemer-theme quest mod. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114863) |
+| Mod                     | Description                                                                               | Nexus                                                               |
+|-------------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| The Forgotten City      | Locked. Most decorated Skyrim quest mod. Self-contained murder-mystery, LoTD integration. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1179)   |
+| Mysteries of the Dwemer | Dwemer-theme quest mod.                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114863) |
 
 ### Alternatives
 
@@ -332,10 +362,33 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 | Wyrmstooth                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/45565)  |
 | Beyond Skyrim - Bruma SE                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10917)  |
 | Beyond Reach                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3008)   |
-| VIGILANT SE                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/11849)  |
 | Falskaar                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2057)   |
 | The Gray Cowl of Nocturnal - 10th Anniversary | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141327) |
 | The Isle Of Valefrost SE                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/103215) |
+
+### New Lands (High-Commitment)
+
+| Mod | Description | Nexus |
+|-----|-------------|-------|
+| [Land of Vominheim SE](https://www.nexusmods.com/skyrimspecialedition/mods/31472) | Expansive new worldspace — Valenwood-themed region, quests, dungeons, followers. High patch and compatibility debt. Evaluate against existing new-lands commitments. |
+| [Snowpoint](https://www.nexusmods.com/skyrimspecialedition/mods/146533) | New snow-covered worldspace with quest content. Lighter footprint than Vominheim. |
+
+### Vicn Trilogy (GLEN-MORIL + Unslaad + VIGILANT)
+
+The Vicn trilogy covers three connected quest mods. VIGILANT is already in the alternatives list above; GLEN-MORIL and Unslaad complete the set.
+
+| Mod | Nexus |
+|-----|-------|
+| [GLEN-MORIL - English Translation](https://www.nexusmods.com/skyrimspecialedition/mods/33146) |
+| [GLEN-MORIL - ElvenLabs Voiced](https://www.nexusmods.com/skyrimspecialedition/mods/156978) |
+| [GLEN-MORIL - Delayed Start](https://www.nexusmods.com/skyrimspecialedition/mods/57963) |
+| [Unslaad SE](https://www.nexusmods.com/skyrimspecialedition/mods/11789) |
+| [UNSLAAD - ElevenLabs Voiced](https://www.nexusmods.com/skyrimspecialedition/mods/155073) |
+| VIGILANT SE | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/11849)  |
+| [VIGILANT - GLENMORIL - UNSLAAD - Book Covers](https://www.nexusmods.com/skyrimspecialedition/mods/32940) |
+| [Animated Armoury Unslaad Patch](https://www.nexusmods.com/skyrimspecialedition/mods/89322) |
+
+All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)). Voiced addons replace subtitle-only dialogue. Delayed Start postpones GLEN-MORIL's initiation until the player reaches a minimum level.
 
 #### Standalone Quest Mods
 
@@ -352,7 +405,15 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 
 #### Lightweight Additions
 
-| Mod             | Description                          | Nexus                                                               |
-|-----------------|--------------------------------------|---------------------------------------------------------------------|
-| Leaps of Faith  | Lightweight pilgrimage. ESL-flagged. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53074)  |
-| Rescue Missions | Radiant rescue. ESL-flagged.         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144251) |
+| Mod                                                                 | Description                                                                            | Nexus                                                               |
+|---------------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Leaps of Faith                                                      | Lightweight pilgrimage. ESL-flagged.                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53074)  |
+| Rescue Missions                                                     | Radiant rescue. ESL-flagged.                                                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144251) |
+| Sleepwalking Into A Nightmare - New Daedric Prince Quest            | New Daedric quest mod. Evaluate for LoTD integration.                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141047) |
+| SIRENROOT - Deluge of Deceit                                        | Quest adventure with new dungeon, voice acting. LoTD patch status: needs verification. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/70917)  |
+| Legends of Aetherium - New Dungeon - Quest - Armour - Weapons       | Quest mod expanding the Aetherium storyline.                                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69807)  |
+| Restoring the Aretino Residence SE                                  | Short quest adding Aretino family home restoration. ESL-flagged.                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30447)  |
+| Better Skyrim Parties - Weddings - Funerals - Crowd Events Overhaul | Overhauls crowd events and ceremonies. Lightweight, ESL-flagged.                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/102594) |
+| SpiderWIP                                                           | Morthal-themed quest mod. Evaluate for coverage overlap.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84053)  |
+| Better Courier                                                      | Courier improvements — better delivery dialogue and behavior.                          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40709)  |
+| Informed Mail Delivery                                              | Quest-aware mail delivery with timed courier dispatches.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66339)  |

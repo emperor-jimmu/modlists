@@ -50,6 +50,12 @@ Install the CS main download (v1.7+) and enable modules via FOMOD. Install optio
 
 Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SSGI`, `Skylighting`, `Terrain Helper`, `Terrain Blending`, `Terrain Variation`, `Upscaling`, `Wetness Effects`.
 
+### Related Add-Ons
+
+| Mod | Description | Nexus |
+| --- | --- | --- |
+| [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | Wetness VFX triggered by swimming, rain, and water contact. SKSE plugin, complements CS Wetness Effects. |
+
 ---
 
 ### Graphics Testing Protocol

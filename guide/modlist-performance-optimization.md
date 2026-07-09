@@ -31,7 +31,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 - **Content restraint first, then low-maintenance optimization.**
 - **Lightened Skyrim** — Leading optimization branch. Almost invisible cleanup, low drama.
-- **eFPS - Exterior FPS boost** — Optional only if exterior draw-call pressure still needs help after main world stack is stable. Plan for patch coverage.
+- **eFPS - Anniversary Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58727)) — Optional only if exterior draw-call pressure still needs help after main world stack is stable. Plan for patch coverage.
 - Re-evaluate exterior optimization after major city, roadside, tree, or world-content choices.
 
 ### Risks & Compatibility

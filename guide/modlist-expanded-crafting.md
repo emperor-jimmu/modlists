@@ -71,6 +71,18 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 - Mixing player-centric crafting with strong NPC-service assumptions can produce an incoherent progression loop.
 - `Ars Metallica` and `Honed Metal` serve different purposes and should be locked together as complementary.
 
+### Woodcutting Support
+
+Prerequisite chain for Chop Chop woodcutting gameplay:
+
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Woodcutting Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/53538) | Prerequisite | Woodcutting behavior improvements. |
+| [KN Cutting Trees](https://www.nexusmods.com/skyrimspecialedition/mods/28715) | Prerequisite | Cutting Trees framework for wood-chopping. Required by Chop Chop. |
+| [Chop Chop](https://www.nexusmods.com/skyrimspecialedition/mods/171529) | Baseline | Interactive wood-chopping gameplay with choppable trees and resource gathering. |
+
+Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` from → [Animations & Movement](modlist-animations.md) for mining/chopping weapon animations.
+
 ---
 
 ## Economy And Loot Balance → separator: `Expanded Systems - Crafting & Economy`
@@ -99,6 +111,10 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 | --- | --- |
 | [Narrative Loot](https://www.nexusmods.com/skyrimspecialedition/mods/12812) | 1,629 lore-friendly misc items. No economy changes. Stacks cleanly. |
 | [SUDs — Skyrim's Unique Drinks](https://www.nexusmods.com/skyrimspecialedition/mods/85824) | 50+ unique drink items with custom meshes, textures, effects. |
+| [Amulets of Skyrim SSE](https://www.nexusmods.com/skyrimspecialedition/mods/487) | Adds wearable amulets for every deity, new quest amulets, and improved visuals. |
+| [Amulets of Skyrim - Tweaks and Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/31814) | Bugfix and compatibility patch for Amulets of Skyrim. Install after base. |
+| [Immersive Jewelry SSE](https://www.nexusmods.com/skyrimspecialedition/mods/5336) | 800+ earrings, rings, necklaces, bracelets. Heavy leveled-list integration. |
+| [Immersive Jewelry - Lower Value](https://www.nexusmods.com/skyrimspecialedition/mods/51255) | Value rebalance for Immersive Jewelry items. Optional — review for economy fit. |
 
 ### Risks & Compatibility
 

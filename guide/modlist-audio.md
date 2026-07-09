@@ -102,6 +102,7 @@ Environmental soundscapes, creature ambient sounds, and weather audio to reinfor
 | [Whispering Tomes of Apocrypha](https://www.nexusmods.com/skyrimspecialedition/mods/113423) | Apocrypha ambient soundscape. |
 | [Falmer 'Dialogue' Overhaul - Echolocation](https://www.nexusmods.com/skyrimspecialedition/mods/114625) | Falmer echolocation vocalisation replacer. Creature-audio companion layer. |
 | [Potema Revoiced](https://www.nexusmods.com/skyrimspecialedition/mods/123877) | Revoiced Potema dialogue. Overwrites vanilla voice files rather than dialogue records. |
+| [Whispers of the Daedric Princes](https://www.nexusmods.com/skyrimspecialedition/mods/141931) | Ambient Daedric prince whispers in dungeons and Oblivion-related locations. |
 
 ### Risks & Compatibility
 

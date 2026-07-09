@@ -50,7 +50,8 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Oxygen Meter 2 - Lung Shaped                                 | Cosmetic lung-shaped icon.                                                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171910) |
 | Oxygen Meter 2 - Fixes and Additions                         | Bugfixes and feature tweaks.                                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171916) |
 | Detection Meter                                              | Stealth detection meter. Pairs with RAID.                                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63057)  |
-| Detection Meter - AE Support                                 | Required for 1.6.1170.                                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77350)  |
+| Detection Meter - AE Support             | Required for 1.6.1170.                                                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77350)  |
+| Casting Bar Reskin - Edge UI Inspired    | Cosmetic reskin of Casting Bar. Evaluate integration with Veldun UI's own casting bar (not in Elder Wilds stack).              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/140826) |
 | STB Widgets                                                  | Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136148) |
 | Follower Stats                                               | MCM-based follower stat tracking. Pairs with Nether's.                                                                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159406) |
 | Tween Menu Overhaul Improved                                 | Main-menu and loading-screen visual overhaul. Updated version with additional scenes.                                          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155036) |
@@ -99,6 +100,18 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Dynamic Inventory Icon Injector |                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174136) |
 | Book 'Em                        | Book reading/collecting tracking UI.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84213)  |
 
+### Item Description Cards
+
+Add descriptive text to inventory item cards for better readability. All by the same author, share a consistent style. Install as a set.
+
+| Mod | Nexus |
+|-----|-------|
+| Weapons Have Description | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116785) |
+| Ingredients Have Description | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129755) |
+| Scrolls Have Descriptions | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107202) |
+| Soul Gems Have Description | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118941) |
+| Food and Drink Have Descriptions | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107292) |
+
 ---
 
 ## Map Improvements → separator: `UI - Map, Dialogue, Menus`
@@ -119,6 +132,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 | Mod                                                   | Nexus                                                               |
 |-------------------------------------------------------|---------------------------------------------------------------------|
+| The Nightmare Paper Map for FWMF by Limon             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143113) |
 | Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53788)  |
 | Immersive Paper Map (3rd Edition)                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54710)  |
 | Skyrim Paper Map by FreelanceCartography for FWMF     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78995)  |
@@ -169,6 +183,9 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 | Dialogue Interface ReShaped         | Visual dialogue flow.                                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46546)  |
 | Convenient Dialogue UI - SE         |                                                                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57943)  |
 | Smart Talk (Dialogue Menu Enhancer) | Highlights quest options, reorders choices, gamepad-friendly skip. 5.5K endorsements. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/161500) |
+| Various Dialogue Tags | Adds contextual tags to dialogue options (e.g., [Lie], [Persuade], [Ask]). ESL-flagged. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/103920) |
+| Various Book Tags | Adds contextual tags to book-reading prompts. Same author as Various Dialogue Tags. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151404) |
+| Skyrim Autocorrect - Dialogue Grammar Fixes | Fixes grammar, spelling, and punctuation in vanilla dialogue. Text-only, no records. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141632) |
 
 ---
 

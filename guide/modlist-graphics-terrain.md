@@ -56,6 +56,7 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 ### Alternatives
 
 - **Windhelm Is Snowy - Base Object Swapper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165102)) — BOS-based snow coverage for Windhelm. Complements Simplicity of Snow.
+- **Snowy Standing Stones for Snowy Regions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139000)) — BOS-based snow coverage for standing stones in snowy regions.
 
 ### Risks & Compatibility
 

@@ -134,6 +134,7 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 | [Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655) | Higher-quality robe textures for all vanilla robes. |
 | [Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738) | Retexture of Divine Crusader armor set. |
 | [Nirn Necessities — SMP Accessories](https://www.nexusmods.com/skyrimspecialedition/mods/112481) | SMP-physics clothing accessories. Add [PBR patch](https://www.nexusmods.com/skyrimspecialedition/mods/135807) if using CS PBR. |
+| [Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla](https://www.nexusmods.com/skyrimspecialedition/mods/141700) | Armor set with CBBE 3BA / HIMBO support. Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline. |
 
 ---
 
