@@ -57,6 +57,7 @@ $date = Get-Date -Format "yyyy-MM-dd"
 $mergedLines = @()
 $headings = @()
 $anchorCount = @{}
+$fileAnchorMap = @{}
 
 foreach ($file in $files) {
   $path = Join-Path $root $file
@@ -68,6 +69,7 @@ foreach ($file in $files) {
   $content = (Get-Content $path -Raw).Trim()
 
   # Extract h1 headings for the table of contents
+  $firstH1Anchor = $null
   foreach ($line in $content -split "`r`n|`n") {
     if ($line -match '^#\s+(.+)$') {
       $text = $matches[1].Trim()
@@ -80,7 +82,15 @@ foreach ($file in $files) {
         $anchor = $base
       }
       $headings += @{Text = $text; Anchor = $anchor}
+      if (-not $firstH1Anchor) { $firstH1Anchor = $anchor }
     }
+  }
+
+  # Map file paths to H1 anchors for cross-file link conversion
+  if ($firstH1Anchor) {
+    $basename = Split-Path -Leaf $file
+    $fileAnchorMap[$basename] = $firstH1Anchor
+    $fileAnchorMap[$file] = $firstH1Anchor
   }
 
   $mergedLines += ""
@@ -109,5 +119,15 @@ foreach ($h in $headings) {
 $allLines += ""
 $allLines += $mergedLines
 
-$allLines -join "`r`n" | Set-Content $outputPath -Encoding UTF8
+$mergedText = $allLines -join "`r`n"
+
+# Convert cross-file markdown links to internal anchor links
+foreach ($kv in $fileAnchorMap.GetEnumerator()) {
+  $escaped = [regex]::Escape($kv.Key)
+  $anchor = $kv.Value
+  $mergedText = $mergedText -replace "(?<=\]\()${escaped}#([^)]+)(?=\))", "#${anchor}-`$1"
+  $mergedText = $mergedText -replace "(?<=\]\()${escaped}(?=\))", "#${anchor}"
+}
+
+$mergedText | Set-Content $outputPath -Encoding UTF8
 Write-Host "Merged $($files.Count) files → $outputPath ($((Get-Item $outputPath).Length / 1KB -as [int]) KB)"
