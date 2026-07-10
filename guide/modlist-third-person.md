@@ -122,6 +122,14 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
+## Third-Person Interactions: Lockpicking → separator: `Third-Person - Combat & Targeting`
+
+Gamepad-accessible lockpicking that works entirely in third-person without mouse input. Required by the design directive — every interaction must work in third-person with a gamepad.
+
+| Mod | Notes |
+| --- | --- |
+| [Break The Lock - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/154901) | Physics-based lockpicking with breakable locks via OIF. Gamepad-compatible, third-person usable. Requires OIF framework. |
+
 ## Open Research
 
 Open research for the third-person stack is tracked in `TODO.md`.

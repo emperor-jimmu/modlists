@@ -143,8 +143,16 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420) | Drifting iceberg meshes in northern waters. |
 | [Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634) | Animated ice floe meshes in cold regions. |
 
+### OIF Ecosystem — Physics-Based Fire & Destruction Effects
+
+| Mod | Notes |
+| --- | --- |
+| [Dynamic Inn Fireplace - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/155492) | Physics-enabled inn fireplace embers, smoke, and debris via OIF. Adds ambient fire life to interiors. |
+| [No Fire During The Rain](https://www.nexusmods.com/skyrimspecialedition/mods/161369) | Exterior campfires and braziers are extinguished during rain/storms. Requires OIF. |
+
 ### Risks & Compatibility
 - **R.A.S.S. + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. handles actor surfaces. Should coexist without conflicts — verify in testing.
+- OIF-based fire effects depend on the OIF framework being installed and stable in the core library stack.
 
 ---
 
@@ -163,6 +171,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [Torches Candlelight and Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/162694) | Physics-equipped lanterns, NPC distribution. Requires BOS, MCM Helper. |
 | [Realistic Usable Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/110563) | Finite candles as consumable resource. |
 | [Handheld Lanterns - HDT-SMP](https://www.nexusmods.com/skyrimspecialedition/mods/135973) | Physics-equipped with sway. Requires FSMP. |
+| [Dynamic Torches NG - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/155838) | Torch fire reacts to movement, collisions, and wind via OIF. Requires OIF framework. |
 
 ---
 

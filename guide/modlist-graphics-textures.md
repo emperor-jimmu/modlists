@@ -174,6 +174,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | Animated Filled Soul Gems                       |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110638) |
 | Animated Ingredients                            |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72852)  |
 | Kanjs - Stalhrim Weapons Animated               | Animated Stalhrim weapon mesh replacer.       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/146167) |
+| Kanjs - Nordic Puzzle Door Animated             | Animated Nordic puzzle door mesh replacer.     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133482) |
 
 ### Risks & Compatibility
 

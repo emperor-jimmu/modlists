@@ -45,6 +45,7 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 | [Skyrim Save System Overhaul 3 (SSSO3)](https://www.nexusmods.com/skyrimspecialedition/mods/122343) | Save-system replacement with Save Shield, rotating caps, and safe timed hardsaves. Requires `JContainers SE` + `NL_MCM`. |
 | [Unofficial Skyrim Modder's Patch - USMP SE](https://www.nexusmods.com/skyrimspecialedition/mods/49616) | Modder-side patch collection fixing record-level bugs across DLC and CC content. Complements USSEP. |
 | [USMP - Patch Emporium](https://www.nexusmods.com/skyrimspecialedition/mods/50813) | Centralized patch hub for USMP — third-party compatibility patches for various content mods. Install after USMP base. |
+| [Object Impact Framework (OIF)](https://www.nexusmods.com/skyrimspecialedition/mods/149484) | Physics-based object impact system; prerequisite for several immersion/destruction mods. |
 
 ### SSSO3 Configuration
 

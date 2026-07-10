@@ -85,6 +85,15 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - Always use Reddit as part of mod research, with `r/skyrimmods` as the primary subreddit for community-signal checks before locking recommendations.
 - Prefer canonical base mod pages. Avoid using translation, patch, preset, or add-on pages as the main recommendation unless the section explicitly calls for that type of file.
 
+## Mod Placement Rules
+
+When moving mods from `TODO.md` into their section files:
+
+1. **If overriding/conflicting** — add as an `### Alternatives` entry with a note explaining the conflict and which existing mod it overrides.
+2. **If multiple main file options exist** — add a note specifying which file to pick (e.g., "Choose 2K", "Choose the SkyPatched version").
+3. **If already present** — do not add again. Check the full section file — the mod may already be listed under a different name or in a different table.
+4. **If tentative/unresearched** — add with a note flagging the uncertainty (e.g., "Tentative — evaluate visual and gameplay impact") rather than omitting it or leaving it in TODO forever.
+
 ## Research Workflow
 
 - The repo's planning flow is section-by-section, one category at a time.

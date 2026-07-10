@@ -23,6 +23,7 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 | [DIbella's Blessing](https://www.nexusmods.com/skyrimspecialedition/mods/82606)                               | Alternative | 233 female characters.                                            |
 | [Males Of Skyrim by zzjay](https://www.nexusmods.com/skyrimspecialedition/mods/37485)                         | Alternative | Broad male coverage.                                              |
 | [The Wolven Widow — SerketHetyt's Elisif Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/62209) | Alternative | Single-NPC overhaul (Elisif).                                     |
+| [Val Serano - Another Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/168735)                | Alternative | Single-NPC replacer for Val Serano (Pirate Quest Follower).        |
 | [Pride of Skyrim — AIO Male HPH Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/48904)          | Alternative | ~400 male NPCs with High Poly Head. Broad coverage.               |
 
 ### Overwrite Order

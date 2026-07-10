@@ -93,6 +93,10 @@ Neither requires ongoing configuration or conflict maintenance once installed.
 - Safe to install or uninstall at any time.
 - Complements [Seamless Saving](https://www.nexusmods.com/skyrimspecialedition/mods/173161) (targets main save serialisation, not cosaves). Safe to run both.
 
+### Log Watcher
+
+- **Nexus:** [Log Watcher - Real-time Analysis of SKSE Logs](https://www.nexusmods.com/skyrimspecialedition/mods/163979) — Monitors SKSE logs in real-time for errors, warnings, and crash indicators. Diagnostic aid for testing and load-order debugging.
+
 ### Risks & Compatibility
 - Neither mod touches worldspace records, leveled lists, or asset files.
 - Recursion Monitor is read-only in normal operation. Updated fork removes the only known compatibility concern.

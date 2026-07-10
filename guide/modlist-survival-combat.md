@@ -108,3 +108,11 @@ How difficulty and pressure choices interact with the chosen survival framework.
 ### Alternatives
 
 - **Navigation Restrictions - NG** `[#1]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129086)) — Fast travel and survival restrictions. Adds survival-oriented travel pressure.
+
+### Environmental Hazards → separator: `Survival & Combat - Resources & Injuries`
+
+Environmental damage layers that make fire, traps, and dungeon hazards genuinely threatening.
+
+| Mod | Notes |
+| --- | --- |
+| [Fires Hurt - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/157720) | Fire sources deal damage over time when stood in. Requires OIF framework. Adds meaningful hazard pressure to dungeons and campfires. |

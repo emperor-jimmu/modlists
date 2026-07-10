@@ -65,6 +65,7 @@ Authored settlement content — real places, not just denser vibes.
 |------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | The Great Cities                         | Major-hold-capital follow-on. Treat as deliberate second-step.                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/320)   |
 | Capital Whiterun Expansion               | If JK's patch missing, mutually exclusive with JK's Whiterun edits.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37982) |
+| Skyfall's Fortified Morthal              | Morthal city overhaul. Overrides COTN Morthal — choose one.                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126871) |
 | The Great Town of Ivarstead SSE          |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34505) |
 | The Great Village of Kynesgrove          |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42639) |
 | The Great Village of Mixwater Mill SSE   |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36350) |
@@ -172,6 +173,10 @@ Visual-only overhauls for specific dungeons. No record or navmesh edits, but con
 | [Bleak Falls Barrow Overhaul Version 2](https://www.nexusmods.com/skyrimspecialedition/mods/131057) |
 
 **Note:** Bleak Falls Tower and Bleak Falls Barrow Overhaul touch the same location (Bleak Falls Barrow). They are likely incompatible — pick one. Northern Scenery series covers separate dungeons and can be installed together.
+
+| Mod | Nexus |
+|-----|-------|
+| [Immersive Dungeon's Fire](https://www.nexusmods.com/skyrimspecialedition/mods/162277) | Enhanced fire VFX and ambient fire behavior in dungeons. Requires OIF. Tentative — evaluate visual and gameplay impact. |
 
 ---
 
