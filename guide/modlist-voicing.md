@@ -16,9 +16,10 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 |--------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Dragonborn Voice Over 2](https://www.nexusmods.com/skyrimspecialedition/mods/84329) | Framework           | SKSE plugin. Intercepts player dialogue and plays `.wav`/`.fuz` files. Settings via SKSE Menu Framework (F1). Per-character pack switching, per-save presets. |
 | [Bella Voice DBVO](https://www.nexusmods.com/skyrimspecialedition/mods/89810)        | Voice Pack          | Most popular female pack, broadest mod coverage.                                                                                                              |
+| [DBVO - Allison Voice Pack](https://www.nexusmods.com/skyrimspecialedition/mods/126843) | Voice Pack          | British female alternative.                                                                                                                                   |
 | Pre-made male packs                                                                  | Voice Pack          | Less common pre-made options available.                                                                                                                       |
 | Laura Bailey                                                                         | Recommended Actress | ElevenLabs Voice Design target for custom female pack via → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline).                                        |
-| Travis Willingham (Geralt)                                                           | Recommended Actor   | xVASynth default for custom male pack via → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline).                                                        |
+| Graham McTavish (The Saint / Geralt)                                                            | Recommended Actor   | ElevenLabs custom target for male pack via → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline).                                                        |
 
 ### Alternatives
 
@@ -39,13 +40,11 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 
 ---
 
-## Dual Voice Pack Strategy → separator: `Voicing`
+## Two Custom Voice Packs → separator: `Voicing`
 
-Two complete voice packs (one male, one female) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO2 voice pack dropdown in SKSE Menu Framework (F1).
+Two custom-generated packs (Laura Bailey female, Graham McTavish male) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO2 voice pack dropdown in SKSE Menu Framework (F1).
 
-- **Option A: Pre-Made Packs (Recommended)** — Female pack (Bella/Allison) + generate male via → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline).
-- **Option B: Custom Both** — Run → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline) twice with two different voice targets. Package as separate MO2 mods.
-- **Option C: MCVO Legacy** — MCVO Generator + xVASynth for DBVO1-format packs, used with DBVO2 legacy mode toggle enabled.
+Run → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline) twice with two ElevenLabs voice IDs (Laura Bailey female, Graham McTavish male). Package as separate MO2 mods and enable one at a time.
 
 ---
 
@@ -58,9 +57,7 @@ Unified workflow covering dialogue export → audio generation → packaging int
 - Install DBVO2 and dependencies (SKSE64, Address Library, SKSE Menu Framework). DBVO2 must be enabled in MO2 before exporting.
 - Build the full modlist in MO2 with final load order.
 - Download [DBVO Dialogue Export for xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/182009) — modern xEdit script that exports player dialogue lines. Replaces MCVO Generator.
-- Choose your audio generator:
-    - [ElevenLabs](https://elevenlabs.io) (paid, higher quality) — recommended for Laura Bailey custom target.
-    - [xVASynth](https://www.nexusmods.com/skyrimspecialedition/mods/44184) (free, synthetic) — used for male default (Geralt).
+- [ElevenLabs](https://elevenlabs.io) paid account — required for both custom targets (Laura Bailey and Graham McTavish).
 - Download DBVO Voice Packer 2 V2.5.1 (Google Drive link) — packages generated audio into DBVO2 format with `.fuz` files and `voice-pack.json` manifest.
 
 ### Step 1: Export Dialogue
@@ -73,26 +70,18 @@ Unified workflow covering dialogue export → audio generation → packaging int
 
 ### Step 2: Generate Audio
 
-**ElevenLabs (recommended for Laura Bailey custom pack):**
+**ElevenLabs (recommended for Laura Bailey or Graham McTavish custom pack):**
 
 1. Create an [ElevenLabs](https://elevenlabs.io) account. A paid subscription is required for full load orders (Creator $22/mo. or Pro $99/mo.).
 2. Get your API key: Profile → **Profile Settings** → **API Key** → copy the key.
 3. Choose a voice:
-   - **Voice Library** — browse pre-made voices. For a Laura Bailey target, look for voices tagged with similar qualities (Serana-inspired, warm alto, American female).
+   - **Voice Library** — browse pre-made voices. For a Laura Bailey target, look for voices tagged with similar qualities (warm alto, American female). For Graham McTavish, look for deep, gravelly male voices (Scottish-accented where possible).
    - **Voice Design** — create a custom voice from scratch with fine-grained control over accent, age, gender, and style.
-   - **Voice Cloning** — if you have a clean audio sample of the target voice, use Instant Voice Cloning.
+   - **Voice Cloning** — if you have a clean audio sample of the target actor, use Instant Voice Cloning.
 4. Get the voice ID: every voice has a unique ID in its URL (`/voice/<voice-id>`) or via `GET https://api.elevenlabs.io/v1/voices`.
-5. Download the DBVO Voice Pack Creator tool from the DBVO author's [Discord](https://discord.gg/7EFNjzATvC), `#tool-download` channel -> <https://drive.google.com/file/d/1ldnu6nQP_EI3ianO8KOpC5Y37ZKd5KJG/view> .
+5. Download the DBVO Voice Pack Creator tool from the DBVO author's [Discord](https://discord.gg/7EFNjzATvC), `#tool-download` channel.
 6. Point the Voice Pack Creator at your exported `TopicList*.txt` files, enter your API key and target voice ID, then run.
 7. The tool batch-generates `.wav` files covering every dialogue line in your load order.
-
-**xVASynth (for male default / Travis Willingham Geralt):**
-
-1. Install xVASynth and the desired voice model (default male: Geralt of Rivia pack from Witcher 3 Nexus 5676).
-2. Open xVASynth in Batch Mode.
-3. Load the exported `TopicList*.txt` files.
-4. Select the voice model, click **Generate**.
-5. xVASynth outputs `.wav` files.
 
 ### Step 3: Package into DBVO2 Format
 
@@ -116,8 +105,6 @@ Unified workflow covering dialogue export → audio generation → packaging int
 
 ElevenLabs Creator plan (100,000 chars/month) covers ~15,000–20,000 lines. Full 50,000+ line load order may need Pro plan ($99/month, 500,000 chars) or multiple months. Use free tier (10,000 chars/month) for testing only.
 
-xVASynth has no character limits but required batch processing of 50,000+ lines can take 2–3 hours.
-
 ### Generating The Second Set (Male/Female)
 
-Repeat Steps 2–4 with a different voice target (e.g., ElevenLabs Laura Bailey for female, xVASynth Geralt for male). Create a separate MO2 mod with a distinct pack name. Enable one at a time via the DBVO2 dropdown in SKSE Menu Framework.
+Repeat Steps 2–4 with the other voice target and ElevenLabs voice ID (Laura Bailey → female, Graham McTavish → male). Create a separate MO2 mod with a distinct pack name. Enable one at a time via the DBVO2 dropdown in SKSE Menu Framework.
