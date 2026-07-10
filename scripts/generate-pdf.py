@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate a PDF from the Cyberpunk 2077 modlist Markdown files."""
+"""Generate a PDF from the Cyberpunk 2077 modlist Markdown files.
+
+Uses Playwright (Chromium) for rendering — zero system dependencies beyond
+what Playwright already bundles. Works on Windows, macOS, and Linux.
+"""
 
 import re
 import sys
@@ -7,9 +11,10 @@ from pathlib import Path
 
 try:
     import markdown
-    from weasyprint import HTML, CSS
+    from playwright.sync_api import sync_playwright
 except ImportError:
     print("Missing dependencies. Run: pip install -r scripts/requirements.txt")
+    print("Then: playwright install chromium")
     sys.exit(1)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -19,37 +24,22 @@ OUTPUT_PATH = REPO_ROOT / "cyberpunk-2077-modlist.pdf"
 CATEGORY_FILES = sorted(MODLIST_DIR.glob("*.md"))
 
 CSS_STYLE = """
-@page {
-    size: A4;
-    margin: 2cm 2.2cm;
-    @bottom-center {
-        content: counter(page);
-        font-family: 'Segoe UI', 'DejaVu Sans', sans-serif;
-        font-size: 9pt;
-        color: #666;
-    }
-}
-
-@page toc {
-    @bottom-center {
-        content: none;
-    }
-}
-
 body {
-    font-family: Georgia, 'DejaVu Serif', serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 11pt;
     line-height: 1.6;
     color: #1a1a1a;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    font-family: 'Segoe UI', 'DejaVu Sans', sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 22pt;
     font-weight: 700;
     color: #111;
     margin-top: 0;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
     padding-bottom: 0.2cm;
     border-bottom: 2px solid #f0c040;
     page-break-before: always;
@@ -60,20 +50,20 @@ h1:first-of-type {
 }
 
 h2 {
-    font-family: 'Segoe UI', 'DejaVu Sans', sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 16pt;
     font-weight: 700;
-    margin-top: 0.6cm;
-    margin-bottom: 0.3cm;
+    margin-top: 0.5cm;
+    margin-bottom: 0.2cm;
     color: #333;
 }
 
 h3 {
-    font-family: 'Segoe UI', 'DejaVu Sans', sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 13pt;
     font-weight: 700;
-    margin-top: 0.4cm;
-    margin-bottom: 0.2cm;
+    margin-top: 0.3cm;
+    margin-bottom: 0.15cm;
     color: #444;
 }
 
@@ -87,7 +77,7 @@ a {
 }
 
 code {
-    font-family: Consolas, 'DejaVu Sans Mono', monospace;
+    font-family: Consolas, 'Courier New', monospace;
     font-size: 9pt;
     background: #f5f5f5;
     padding: 1px 4px;
@@ -100,6 +90,8 @@ pre {
     border-radius: 4px;
     font-size: 9pt;
     overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 pre code {
@@ -130,7 +122,7 @@ th, td {
 
 th {
     background: #f8f8f0;
-    font-family: 'Segoe UI', 'DejaVu Sans', sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -162,7 +154,7 @@ li {
 }
 
 .toc-page li {
-    font-family: 'Segoe UI', 'DejaVu Sans', sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 12pt;
     margin-bottom: 6px;
     border-bottom: 1px dotted #ccc;
@@ -179,7 +171,6 @@ HEADING_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 
 
 def extract_heading(md_file: Path) -> str:
-    """Return the first H1 heading from a markdown file, or its stem."""
     text = md_file.read_text(encoding="utf-8")
     match = HEADING_RE.search(text)
     if match:
@@ -188,7 +179,6 @@ def extract_heading(md_file: Path) -> str:
 
 
 def build_toc_html() -> str:
-    """Generate a table of contents page from category file headings."""
     items = []
     for md_file in CATEGORY_FILES:
         heading = extract_heading(md_file)
@@ -211,7 +201,7 @@ def build_html() -> str:
     for md_file in CATEGORY_FILES:
         md_content = md_file.read_text(encoding="utf-8")
         html_body = markdown.markdown(
-            md_content, extensions=["extra", "codehilite", "toc", "tables"]
+            md_content, extensions=["extra", "codehilite", "tables"]
         )
         pages.append(html_body)
 
@@ -222,6 +212,7 @@ def build_html() -> str:
 <head>
 <meta charset="utf-8">
 <title>Cyberpunk 2077 Modlist</title>
+<style>{CSS_STYLE}</style>
 </head>
 <body>
 {full_body}
@@ -238,16 +229,25 @@ def main() -> None:
     print(f"  Categories found: {len(CATEGORY_FILES)}")
 
     html = build_html()
-    doc = HTML(string=html)
-    css = CSS(string=CSS_STYLE)
 
-    try:
-        doc.write_pdf(str(OUTPUT_PATH), stylesheets=[css])
-    except Exception as exc:
-        print(f"Error: PDF generation failed: {exc}")
-        print("WeasyPrint requires system libraries (GTK3 on Windows).")
-        print("See: https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation")
-        sys.exit(1)
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page()
+        page.set_content(html, wait_until="networkidle")
+
+        page.pdf(
+            path=str(OUTPUT_PATH),
+            format="A4",
+            margin={"top": "2cm", "right": "2.2cm", "bottom": "2.5cm", "left": "2.2cm"},
+            print_background=True,
+            display_header_footer=True,
+            header_template='<span></span>',
+            footer_template='<span style="font-family: Segoe UI, Arial, sans-serif; font-size: 9pt; color: #666; width: 100%; text-align: center;">'
+                             '<span class="pageNumber"></span>'
+                             '</span>',
+        )
+
+        browser.close()
 
     size_kb = OUTPUT_PATH.stat().st_size / 1024
     print(f"  Done: {OUTPUT_PATH} ({size_kb:.0f} KB)")
