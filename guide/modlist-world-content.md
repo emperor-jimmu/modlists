@@ -386,11 +386,13 @@ The Vicn trilogy covers three connected quest mods. VIGILANT is already in the a
 | [GLEN-MORIL - Delayed Start](https://www.nexusmods.com/skyrimspecialedition/mods/57963) |
 | [Unslaad SE](https://www.nexusmods.com/skyrimspecialedition/mods/11789) |
 | [UNSLAAD - ElevenLabs Voiced](https://www.nexusmods.com/skyrimspecialedition/mods/155073) |
-| VIGILANT SE | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/11849)  |
+| [VIGILANT SE](https://www.nexusmods.com/skyrimspecialedition/mods/11849) |
+| [VIGILANT - English Translation (Plus Voiced Addon)](https://www.nexusmods.com/skyrimspecialedition/mods/11894) |
+| [VIGILANT (missing lines) - ElevenLabs Voiced](https://www.nexusmods.com/skyrimspecialedition/mods/161442) |
 | [VIGILANT - GLENMORIL - UNSLAAD - Book Covers](https://www.nexusmods.com/skyrimspecialedition/mods/32940) |
 | [Animated Armoury Unslaad Patch](https://www.nexusmods.com/skyrimspecialedition/mods/89322) |
 
-All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)). Voiced addons replace subtitle-only dialogue. Delayed Start postpones GLEN-MORIL's initiation until the player reaches a minimum level.
+All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)). Voiced addons replace subtitle-only dialogue. Delayed Start postpones GLEN-MORIL's initiation until the player reaches a minimum level. The VIGILANT voiced addon covers all missing lines for v1.8.0 and requires the English Translation.
 
 #### Standalone Quest Mods
 

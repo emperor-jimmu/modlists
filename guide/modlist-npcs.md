@@ -97,6 +97,7 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [Falmer Servant Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/120995)         | 483 lines, pro voice talent                          | ESL-flagged. Optional plugins: More Spawns, More Unique Servants. |
 | [Civil War Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/139920)              | Civil war faction dialogue                           |                                                                   |
 | [Forsworn and Thalmor Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/130880)   | Forsworn / Thalmor dialogue                          |                                                                   |
+| [Guard Dialogue Overhaul SE](https://www.nexusmods.com/skyrimspecialedition/mods/22075)              | 600+ lines for guards reacting to player deeds/gear  | 26.2K endorsements. Older mod — verify 1.6.1170.                 |
 | [Shouts of Stallholders](https://www.nexusmods.com/skyrimspecialedition/mods/139025)                 | AI-Generated Content                                 | Evaluate voice quality.                                           |
 | [Naked Comments Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/142249)                | NPC comments on player nudity.                       | Alternative                                                       |
 | [Collision Dialogue Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/115079)            | Dialogue triggered by NPC collision events.          | Alternative                                                       |
@@ -104,7 +105,7 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 
 ### Follower Dialogue Expansion (FDE) series by Anbeegod
 
-> AI-voiced, each ESL-flagged. Full set of 10 expansions:
+> AI-voiced, each ESL-flagged. Core entries listed below; the [official FDE collection](https://next.nexusmods.com/skyrimspecialedition/collections/uu3kpb) includes 26 mods total.
 
 | Follower                                                                                    | Lines | Notes                            |
 |---------------------------------------------------------------------------------------------|-------|----------------------------------|
@@ -118,8 +119,9 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [FDE — Ysolda](https://www.nexusmods.com/skyrimspecialedition/mods/124787)                  | 180   |                                  |
 | [FDE — Jenassa](https://www.nexusmods.com/skyrimspecialedition/mods/120255)                 | 500+  |                                  |
 | [FDE — Olfina Gray-Mane](https://www.nexusmods.com/skyrimspecialedition/mods/172562)        | 578   |                                  |
-
-Official FDE collection: <https://next.nexusmods.com/skyrimspecialedition/collections/uu3kpb>
+| [FDE — Mjoll the Lioness](https://www.nexusmods.com/skyrimspecialedition/mods/116025)       | 451   | Quest and location awareness.    |
+| [FDE — Faralda](https://www.nexusmods.com/skyrimspecialedition/mods/155510)                 | 441   | Self-contained follower, personal quest. Verify overlap with College Quest Expansion. |
+| [FDE — Eola](https://www.nexusmods.com/skyrimspecialedition/mods/157012)                    | 233   | Namira cultist dialogue.         |
 
 | Mod                                                                                     | Description                 | Notes                |
 |-----------------------------------------------------------------------------------------|-----------------------------|----------------------|
