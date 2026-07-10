@@ -162,6 +162,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 | [Character Menu SE](https://www.nexusmods.com/skyrimspecialedition/mods/173074) | Character stats/sheet UI replacement. Alternative. | |
 | [Character Menu SE - More Factions](https://www.nexusmods.com/skyrimspecialedition/mods/175026) | Additional faction tracking for Character Menu SE. | |
 | [Even Better Quest Objectives SE](https://www.nexusmods.com/skyrimspecialedition/mods/159) | Quest objective text clarifications and journal improvements. Alternative. | |
+| [Knotwork](https://www.nexusmods.com/skyrimspecialedition/mods/128235) | Custom quest journal knotwork art for non-vanilla questlines. Complements Quest Journal Overhaul. SKSE plugin. Alternative. | |
 
 ---
 

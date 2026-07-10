@@ -166,7 +166,13 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 | [KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817) | Baseline | Community-canonical hair pack. 141K endorsements. |
 | [Eyes Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/131210) | Baseline | Khisartin-style eye textures, grim-dark tone. |
 | [LDD Clean Cubemap for Eyes 4K](https://www.nexusmods.com/skyrimspecialedition/mods/168060) | Baseline | Cleaner eye cubemaps. Stacks on eye-texture baseline. |
+| [Brows](https://www.nexusmods.com/skyrimspecialedition/mods/1062) | Baseline | Brow shape and texture replacer for all races. |
+| [Better Argonian Horns](https://www.nexusmods.com/skyrimspecialedition/mods/80568) | Baseline | Higher-quality Argonian horn meshes and textures. BOS-based. |
 | [The Eyes Of Beauty SSE](https://www.nexusmods.com/skyrimspecialedition/mods/16185) | Alternative | Community-standard alternative to Eyes Nouveaux. |
+| [Argonian - Khajiit FabULook Eyes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/15136) | Alternative | High-res eye textures for Argonian and Khajiit. |
+| [Beards of Power](https://www.nexusmods.com/skyrimspecialedition/mods/42635) | Alternative | High-fidelity beard meshes and textures. Adds variety over vanilla. |
+| [SG Female Eyebrows](https://www.nexusmods.com/skyrimspecialedition/mods/25890) + [Improved](https://www.nexusmods.com/skyrimspecialedition/mods/93266) | Alternative | Higher-fidelity female eyebrow shapes. Use Improved variant. |
+| [Eyes of Beauty - Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/152223) | Alternative | Combines Eyes Nouveaux meshes with The Eyes of Beauty textures. Requires both as dependencies. |
 | Discipline-first route | Alternative | Rely on vanilla hair and eye textures entirely. |
 
 Keep the beard decision minimal; vanilla beards work well with the chosen body and face mesh stack.

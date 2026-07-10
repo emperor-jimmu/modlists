@@ -322,10 +322,17 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 | A Chance Arrangement Plus Plus                      | Thieves Guild quest overhaul.                                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175885) |
 | Opulent Thieves Guild                               | Visual-progression companion.                                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10932)  |
 | Improved Companions - Questline Tweaks              | Removes forced radiant-quest spam between Companions missions.                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120609) |
+| The Companions Extended Collection                  | Patches for several Companions mods. Integrates quest/dialogue/visual overhauls.                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95001)  |
 | Penitus Oculatus                                    | Locked. "Destroy the Dark Brotherhood!" replacement faction with radiant quests. 11.5K endorsements.                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21061)  |
 | The Brotherhood of Old - Dark Brotherhood Continued | Post-DB-questline continuation with new sanctuary, quests, and radiant content. Complements Penitus Oculatus alternative route. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15322)  |
 
 **Optional alternative:** **Destroy The Dark Brotherhood - Quest Expansion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118229)) — jayserpa's quest-expansion approach to destroying the DB. *Incompatible with Penitus Oculatus — choose one.*
+
+### Quest Pacing
+
+| Mod                                      | Description                                                                                                                     | Nexus                                                               |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| At Your Own Pace                         | Quest pacing mod — delays main quest, faction quests, and College entry via optional skill-gating and trigger delays. ESL-flagged. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52704)  |
 
 ### Civil War Content
 
@@ -352,6 +359,7 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 | More to do in the Soul Cairn             | Soul Cairn quest and content addon.                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115962) |
 | Boethiah's Calling - Alternate Questline | Boethiah daedric quest alternative.                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121499) |
 | Mephala's Curse - Whispering Door Addon  | Whispering Door quest addon. Separable from the Quest Expansion — evaluate for overlap. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120650) |
+| Dungeon Quests are not Miscellaneous     | Converts 7 misc dungeon quests to full side quests with journal entries.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123559) |
 
 ### Standalone Adventures
 
@@ -425,4 +433,6 @@ All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)
 | Better Skyrim Parties - Weddings - Funerals - Crowd Events Overhaul | Overhauls crowd events and ceremonies. Lightweight, ESL-flagged.                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/102594) |
 | SpiderWIP                                                           | Morthal-themed quest mod. Evaluate for coverage overlap.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84053)  |
 | Better Courier                                                      | Courier improvements — better delivery dialogue and behavior.                          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40709)  |
+| Quests Are In Skyrim                                                | Restricts radiant quest destinations to Skyrim province only. ESL-flagged.             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18416)  |
+| Andrealletius' Harder Quests                                        | Higher requirements for quest objectives — thaneships, nirnroot, solstheim quests, etc. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27939)  |
 | Informed Mail Delivery                                              | Quest-aware mail delivery with timed courier dispatches.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66339)  |

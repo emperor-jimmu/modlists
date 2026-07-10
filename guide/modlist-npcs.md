@@ -128,6 +128,7 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 |-----------------------------------------------------------------------------------------|-----------------------------|----------------------|
 | [Extended NPC Dialogue Hub](https://www.nexusmods.com/skyrimspecialedition/mods/179341) | Central dialogue framework  |                      |
 | [Small Talk](https://www.nexusmods.com/skyrimspecialedition/mods/168228)                | NPC-to-NPC ambient dialogue | SKSE plugin, no ESP. |
+| [Companions Dialogue Bundle](https://www.nexusmods.com/skyrimspecialedition/mods/93592) | Expanded Companion faction dialogue bundle.       | Alternative |
 
 ---
 

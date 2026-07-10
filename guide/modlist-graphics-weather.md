@@ -108,6 +108,10 @@ Keep the discipline-first route alive if the weather mod's bundled star/sky text
 | Worlds Behind Glass                                                                   | High-res night sky for telescope mods.                                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158077) |
 | [Draco's fantasy auroras](https://www.nexusmods.com/skyrimspecialedition/mods/120563) | Aurora/sky visual replacer. Optional cosmetic.                                                         |                                                                     |
 | [Draco's moons](https://www.nexusmods.com/skyrimspecialedition/mods/40605)            | Moon visual replacer. Optional cosmetic.                                                               |                                                                     |
+| [Shooting Stars SE](https://www.nexusmods.com/skyrimspecialedition/mods/73090)        | Adds randomized shooting-star streaks to the night sky. Script-free.                                    |                                                                     |
+| [Praedy's Night Sky AIO](https://www.nexusmods.com/skyrimspecialedition/mods/47530)   | High-quality night-sky and star texture replacer. Choose 2K.                                             |                                                                     |
+| [Texture Overhaul Stars and Galaxy of Nirn](https://www.nexusmods.com/skyrimspecialedition/mods/41260) | 8K star and galaxy texture replacer.                                                        |                                                                     |
+| [Skyrim Textures Redone - Stars](https://www.nexusmods.com/skyrimspecialedition/mods/4931) | Star texture replacer. Lighter alternative to full sky overhauls.                                  |                                                                     |
 
 ### Risks & Compatibility
 

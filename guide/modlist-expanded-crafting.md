@@ -36,6 +36,7 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 | [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924) | Alternative | #1, #2, #4 | Integrated alchemy + cooking.                                 |
 | [Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877)   | Alternative | all        | Lighter fallback.                                             |
 | [Mealtime](https://www.nexusmods.com/skyrimspecialedition/mods/22496)                              | Alternative | all        | Recipe-density companion if Gourmet's scope feels too narrow. |
+| [More Plants and Recipes SE](https://www.nexusmods.com/skyrimspecialedition/mods/69955)            | Alternative | #1, #2, #4 | Adds new plants and recipes to cooking/alchemy. Complements Gourmet. |
 
 ### Visual Companions
 

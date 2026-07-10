@@ -17,6 +17,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 | [Legacy of the Dragonborn Patches (Official)](https://www.nexusmods.com/skyrimspecialedition/mods/30980) v6.10.7 (June 2026)                                                 | Baseline | Required integration infrastructure.                          |
 | Paintings Replacer for Legacy of the Dragonborn SSE (Nexus 13279, v1.1, Nov 2017)                                                                                            | Baseline | Texture replacer, low risk.                                   |
 | Fate Cards Re-texture - Skyrim Concept Art (Nexus 16080, v01, Mar 2018)                                                                                                      | Baseline | Texture replacer.                                             |
+| Fate Cards Remade - Legacy of The Dragonborn                                                                                                                                 | Alternative | Higher-fidelity replacement for Fate Cards textures.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76418) |
 | Placeable Display Cases (Nexus 131107, v3.1, Jan 2025)                                                                                                                       | Baseline | Placeable museum display cases.                               |
 | [Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/126220) + [LoTD Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/130114) | Baseline | Museum achievement content.                                   |
 
@@ -99,6 +100,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ### Additional QoL
 
+- **Legacy of The Dragonborn - SMIM Chests** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55720)) — SMIM-quality chest meshes for the museum displays.
 - **LOTD - Museum Exterior Music** — Low priority; evaluate after → `Audio` is locked.
 - **Dynamic Activation Key** — Reduces E-key scroll-conflict with crowded displays.
 
