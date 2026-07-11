@@ -62,13 +62,21 @@ A quick-start utility that grants 100 trillion currency and 1 billion XP (level 
 
 ### Realistic Economy Mods (General)
 
-Many standalone economy mods are distributed via Steam Workshop and TruckyMods. Common features include:
+Many standalone economy mods are available for 1.60. Common features include:
 
 - **Realistic fuel costs** — diesel prices fluctuate by region
 - **Toll road costs** — adjusted to European norms (€0.10–0.30/km)
 - **Maintenance schedules** — trucks require servicing every 15,000–30,000 km
 - **Bank loans** — realistic interest rates and approval criteria based on company value
 - **Cargo income** — rebalanced so urgent/oversized cargo pays a genuine premium
+
+Notable economy mods compatible with 1.60:
+
+| Mod | Source | Notes |
+|-----|--------|-------|
+| **Realistic Economy by Quper** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/game-economy/realistic-economy-ferry-by-quper) | ~30k downloads, 4.7★, updated to 1.60.1. Comprehensive: fuel, loans, fines, cargo income, ferry costs, used truck market. |
+| **Realist Economy by Michelle Raouf** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/game-economy/realist-economy-by-michelle-raouf-344738) | Hardcore-focused: garage prices, AI driver salaries, dynamic insurance, progressive fines, permanent vehicle wear. |
+| **Realistic and Hard Economy** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/realistic-and-hard-economy-v114) | Banking overhaul, police penalties scaled to income, ferry/train fares revised. Last updated for 1.59. |
 
 **Note:** Economy mods are sensitive to game updates and each other. Only one economy-modifying mod should be active per profile.
 
