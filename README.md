@@ -1,6 +1,6 @@
 # Stellaris Modlist Guide
 
-A curated, beginner-friendly modlist and learning guide for **Stellaris** (2026, all DLC) on Windows.
+A curated, beginner-friendly modlist and learning guide for **Stellaris 4.4.6 "Nomads"** (all DLC) on Windows.
 
 Built with [MkDocs](https://www.mkdocs.org/) + [Material](https://squidfunk.github.io/mkdocs-material/) + [mkdocs-exporter](https://adrienbrignon.github.io/mkdocs-exporter/) for a browsable website and a production-quality PDF.
 
@@ -44,4 +44,7 @@ All screenshots and UI mod recommendations target **3840×2160 (4K)**. Web-scale
 
 ## Versioning
 
-See `VERSION` at repo root. Bumped when the modlist changes significantly.
+- `VERSION` — guide version (bumped when the modlist changes significantly)
+- `STELLARIS_VERSION` — target Stellaris version (currently **4.4.6 "Nomads"**)
+
+When Stellaris updates, check the [Paradox Patches wiki](https://stellaris.paradoxwikis.com/Patches) for the latest version before adding mods.

@@ -89,7 +89,9 @@ Older versions remain available on Steam indefinitely — Paradox doesn't remove
 
 ### Version Matching
 
-Every entry in this guide's modlist notes whether the mod is version-locked. Keep your game version matching the mods' target version.
+This guide targets **Stellaris 4.4.6 "Nomads"**. Every modlist entry must be confirmed compatible with 4.4.x before being added. Check the [Paradox Patches wiki](https://stellaris.paradoxwikis.com/Patches) to verify the current version.
+
+If a mod's Workshop page doesn't mention 4.4.x compatibility, check its last update date — if it predates the 4.4 release, it's incompatible.
 
 ### Starting Fresh
 

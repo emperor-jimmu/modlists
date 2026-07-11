@@ -2,11 +2,15 @@
 
 > Mods that fix base-game bugs and oversights without adding new content. These are the foundation — install these first, they should be at the top of your load order.
 
+## Current Status
+
+No bugfix mods are confirmed compatible with **Stellaris 4.4.6 "Nomads"** at this time. The comprehensive bugfix mods from earlier versions (3.x) have not been updated for 4.4.
+
+**To add bugfix mods:** Search the [Steam Workshop](https://steamcommunity.com/app/281990/workshop/) for the `Fixes` tag, sorted by most popular. Verify compatibility with 4.4.x before adding. Follow the rules in [Modlist Setup](../modlist-setup.md#handling-stellaris-version-updates) for version-locking.
+
 | Mod | Source | Version-Locked | Performance Impact | Notes |
 |-----|--------|----------------|--------------------|-------|
-| **Lezzi's Bugfixes** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3193914136) | Recommended | None | Comprehensive bugfix collection by Lezzi. Fixes Artillery Combat Computer behavior, Land Appropriation colony deletion, Grave Guardians first-contact issues, and more. Original code, standalone. |
-| **Miscellaneous Bug Fixes** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3233577943) | Recommended | None | Broad collection of vanilla bug fixes. Covers event errors, AI issues, and scripting bugs. |
-| **Event Bugfixes** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=785269836) | Recommended | None | Fixes bugs in vanilla event chains, anomalies, and scripted content. Complements the general bugfix mods above. |
+| <!-- Add mods here when confirmed for 4.4.x --> | | | | |
 
 ## Installation Notes
 
@@ -18,6 +22,6 @@
 
 Browse the Steam Workshop with the `Fixes` tag. When adding a bugfix mod, verify it:
 1. Doesn't add new content (pure fixes only)
-2. Is compatible with the current Stellaris version
+2. Is compatible with **4.4.x** specifically
 3. Lists its fix changelog so you know what's being patched
 4. Is maintained by an active author

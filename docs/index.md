@@ -17,7 +17,7 @@ This guide is written for **complete beginners** who want to learn the game whil
 
 ## Version
 
-Guide version **0.1** — Stellaris 2026 (all DLC), Windows.
+Guide version **0.1** — Stellaris **4.4.6 "Nomads"** (all DLC), Windows.
 
 ## Principles
 

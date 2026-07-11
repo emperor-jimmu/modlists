@@ -2,7 +2,7 @@
 
 ## Project Identity
 
-This project builds a curated, beginner-friendly modlist guide for Stellaris (2026, all DLC) on Windows. It teaches Stellaris fundamentals while providing ~60-120 mods covering bugfixes, UI/HUD, graphics, gameplay, content expansion, galaxy diversity, and alien breeding — no cheating/overpower mods.
+This project builds a curated, beginner-friendly modlist guide for Stellaris version **4.4.6 "Nomads"** (all DLC) on Windows. It teaches Stellaris fundamentals while providing ~60-120 mods covering bugfixes, UI/HUD, graphics, gameplay, content expansion, galaxy diversity, and alien breeding — no cheating/overpower mods.
 
 The output is a MkDocs website + a beautifully styled PDF guide.
 
@@ -23,6 +23,7 @@ stellaris-modlist/
 ├── README.md
 ├── AGENTS.md
 ├── VERSION
+├── STELLARIS_VERSION
 ├── mkdocs.yml
 ├── docs/
 │   ├── index.md
@@ -55,6 +56,18 @@ stellaris-modlist/
 └── scripts/
     └── build.ps1
 ```
+
+## Version Discipline (CRITICAL)
+
+**Current Stellaris version: 4.4.6 "Nomads".** Always check [the Paradox Patches wiki](https://stellaris.paradoxwikis.com/Patches) before adding any mod to confirm the current version.
+
+**Version matching rules:**
+- A mod MUST be explicitly compatible with **4.4.6**, **4.4.x**, or **4.4.0** to be added.
+- If the mod's Workshop page or description doesn't mention 4.4.x compatibility, check its last update date. If it hasn't been updated since before the 4.4 release, assume it's incompatible.
+- Do NOT add mods tagged for 3.x, 3.12, 4.0, 4.1, 4.2, or 4.3 — they will likely break on 4.4.6.
+- When Stellaris updates to a new major version (e.g., 4.5), update `STELLARIS_VERSION` and audit every mod in the list for compatibility.
+
+**If unsure about compatibility, DO NOT ADD THE MOD.**
 
 ## Content Rules
 
