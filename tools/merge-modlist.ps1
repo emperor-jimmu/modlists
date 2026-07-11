@@ -241,24 +241,18 @@ $a.Invoke("")
 $a.Invoke("#let ew-version = `"$version`"")
 $a.Invoke("#let ew-date = `"$date`"")
 $a.Invoke("")
-$a.Invoke("// -- Fonts --")
-$a.Invoke("#let ew-font-inter-path = `"$relFontDir/Inter-Regular.ttf`"")
-$a.Invoke("#let ew-font-jbmono-path = `"$relFontDir/JetBrainsMono-Regular.ttf`"")
-$a.Invoke("")
 $a.Invoke("// -- Page Setup --")
-$a.Invoke('#set text(font: ("Inter", ew-font-inter-path), size: 10pt)')
+$a.Invoke('#set text(size: 10pt)')
 $a.Invoke('#show link: set text(fill: rgb("#2563EB"))')
 $a.Invoke('#set raw(tab-size: 4)')
-$a.Invoke('#set heading(numbering: "1.1")')
 $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 2cm),')
 $a.Invoke('  footer: context align(center + bottom, text(8pt, fill: luma(140),')
-$a.Invoke('    counter(page).display() + " — " + counter(page).display(numbering: "1")')
+$a.Invoke('    counter(page).display() + " — " + counter(page).display()')
 $a.Invoke('  ))')
 $a.Invoke(')')
 $a.Invoke("")
 $a.Invoke("// -- Heading Styling --")
-$a.Invoke('#show heading.where(level: 1): set heading(numbering: none)')
 $a.Invoke('#show heading: it => {')
 $a.Invoke("  set text(")
 $a.Invoke('    size: if it.level == 1 { 22pt } else if it.level == 2 { 14pt } else if it.level == 3 { 11pt } else { 10.5pt },')
@@ -291,6 +285,9 @@ $a.Invoke("")
 foreach ($section in $allSections) { $a.Invoke($section) }
 
 $typContent = $typLines -join "`r`n"
+
+# -- Remove # from anchor references (typst parses #ref-with-hyphens as variable minus subtraction) --
+$typContent = $typContent -replace '#([a-zA-Z][a-zA-Z0-9-]*-(?:[a-zA-Z0-9-]+))', '$1'
 
 # -- Write .typ file --
 $outputDir = Join-Path $root "rendered"
