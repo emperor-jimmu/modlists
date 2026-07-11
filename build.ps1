@@ -92,7 +92,14 @@ function Convert-Inline {
         return '_' + $m.Groups[1].Value + '_'
     })
 
-    # Escape Typst special chars (outside code spans/placeholders)
+    # Bare URLs: <url> -> #link("url")[url] (before generic < > escaping)
+    $t = [regex]::Replace($t, '<(https?://[^>]+)>', {
+        param($m)
+        $url = $m.Groups[1].Value
+        return '#link("' + $url + '")[' + $url + ']'
+    })
+
+    # Escape remaining Typst special chars
     $t = $t -replace '`', '\`'
     $t = $t -replace '<', '\<'
     $t = $t -replace '>', '\>'

@@ -7,7 +7,6 @@ test-results/
 *.log
 
 # Typst build artifacts
-*.pdf
 sources/*.typ
 
 # OS files

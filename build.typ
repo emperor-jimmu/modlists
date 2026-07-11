@@ -6,20 +6,28 @@
 )
 
 #set text(font: "Segoe UI", size: 11pt)
+#show link: set text(fill: blue)
+#show link: underline
 
 #set heading(numbering: "1.1")
 
 #set par(justify: true, leading: 0.65em)
 
 // Title page
+#let version = read("VERSION").trim()
+
 #align(center, text(size: 28pt, weight: "bold")[ETS2 Modlist Guide])
+#v(0.3cm)
+#align(center, image("assets/truck-cover.jpg", width: 70%))
+#v(0.3cm)
 #align(center, text(size: 14pt)[Game Version 1.60])
+#align(center, text(size: 11pt, fill: gray)[Guide Version #version])
 #v(1cm)
 #align(center, text(size: 10pt)[Compiled from community mods, curated for stability and performance])
 #pagebreak()
 
 // Import table of contents
-#outline(title: "Table of Contents", indent: auto)
+#outline(title: "Table of Contents", indent: auto, depth: 2)
 #pagebreak()
 
 // Import each source section

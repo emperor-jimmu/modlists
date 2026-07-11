@@ -13,7 +13,7 @@ These are the core maps that form the foundation of a large map combo. All confi
 ### ProMods Europe 2.83 {★ Baseline}
 
 - **Version:** 2.83
-- **Source:** <https://promods.net> (free download after registration)
+- **Source:** [promods.net](https://promods.net) (free download after registration)
 - **Category:** Maps
 
 **Description:**
@@ -41,7 +41,7 @@ The gold standard for ETS2 map mods. ProMods overhauls the entire European base 
 ### ProMods Middle East Addon 2.83
 
 - **Version:** 2.83
-- **Source:** <https://promods.net> (bundled with ProMods download)
+- **Source:** [promods.net](https://promods.net) (bundled with ProMods download)
 - **Category:** Maps
 
 **Description:**
@@ -68,7 +68,7 @@ Official ProMods addon that extends the map into the Middle East. Covers Lebanon
 ### ProMods The Great Steppe 1.6.2
 
 - **Version:** 1.6.2
-- **Source:** <https://promods.net> (separate download)
+- **Source:** [promods.net](https://promods.net) (separate download)
 - **Category:** Maps
 
 **Description:**
@@ -95,7 +95,7 @@ An official ProMods addon that extends the map east into the Kazakh and Russian 
 ### RusMap 2.60
 
 - **Version:** 2.60 (updated 20 June 2026)
-- **Source:** <https://ets2.lt/en/project-rusmap-2-60-update-20-06-2026/> (Download: modsfire.com)
+- **Source:** [ets2.lt](https://ets2.lt/en/project-rusmap-2-60-update-20-06-2026/) (Download: modsfire.com)
 - **Category:** Maps
 
 **Description:**
@@ -122,7 +122,7 @@ A long-standing map mod covering the European part of Russia (Moscow, Leningrad,
 ### Roextended 5.2
 
 - **Version:** 5.2
-- **Source:** <https://roextended.ro>
+- **Source:** [roextended.ro](https://roextended.ro)
 - **Category:** Maps
 
 **Description:**
@@ -150,7 +150,7 @@ Roextended (ROEX) focuses on Romania, Bulgaria, Moldova, and the Black Sea regio
 ### Poland Rebuilding 2.6.4
 
 - **Version:** 2.6.4
-- **Source:** <https://ets2.lt/en/?s=poland+rebuilding+2.6.4> (search results)
+- **Source:** [polandrebuilding.pl](https://polandrebuilding.pl/en/download/poland-rebuilding-2-6) (official download page) / [SCS Forum](https://forum.scssoft.com/viewtopic.php?t=242280)
 - **Category:** Maps
 
 **Description:**
@@ -183,7 +183,7 @@ These mods add specific regions or rebuild existing ones. Not all are compatible
 ### Heart of Africa v1.60
 
 - **Version:** v1.60 (updated July 2026)
-- **Source:** <https://truckymods.io/euro-truck-simulator-2/maps/heart-of-africa>
+- **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/heart-of-africa)
 - **Category:** Maps
 
 **Description:**
@@ -209,7 +209,7 @@ A standalone map mod that adds regions of West and Central Africa, including Gam
 ### Road to Caucasus v2.8
 
 - **Version:** v2.8 (updated 6 July 2026)
-- **Source:** <https://ets2.lt/en/road-to-caucasus-v-2-8/> (Download: modsfire.com, 246 MB)
+- **Source:** [ets2.lt](https://ets2.lt/en/road-to-caucasus-v-2-8/) (Download: modsfire.com, 246 MB)
 - **Category:** Maps
 
 **Description:**
@@ -236,7 +236,7 @@ A scenic map that covers the Caucasus region, including parts of Georgia, Russia
 ### Iberia Rebuild
 
 - **Version:** Ongoing (check mod page for latest)
-- **Source:** <https://truckymods.io/euro-truck-simulator-2/maps/iberia-rebuild>
+- **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/iberia-rebuild)
 - **Category:** Maps
 
 **Description:**
@@ -263,7 +263,7 @@ Expands and remakes the Iberia DLC with new cities, reworked roads, and addition
 ### Portugal Rebuild
 
 - **Version:** v01
-- **Source:** <https://truckymods.io/euro-truck-simulator-2/maps/portugal-rebuild-v01>
+- **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/portugal-rebuild-v01)
 - **Category:** Maps
 
 **Description:**
@@ -290,7 +290,7 @@ A ProMods addon that recreates and improves Portugal with new logistics areas, r
 ### Bulgaria in Focus
 
 - **Version:** Latest (1.60 compatible)
-- **Source:** <https://truckymods.io/euro-truck-simulator-2/maps/bulgaria-in-focus>
+- **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/bulgaria-in-focus)
 - **Category:** Maps
 
 **Description:**
@@ -316,7 +316,7 @@ A detailed enhancement of Bulgaria that adds new cities, roads, and scenery. Rew
 ### Project Russia
 
 - **Version:** Latest (1.60 compatible)
-- **Source:** <https://truckymods.io/euro-truck-simulator-2/maps/project-russia>
+- **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/project-russia)
 - **Category:** Maps
 
 **Description:**
@@ -348,7 +348,7 @@ Connectors are small `.scs` files that stitch two map mods together so roads lin
 ### Hybrid Plus 1-2 Road Connector v2.0
 
 - **Version:** v2.0 (updated 29 June 2026)
-- **Source:** <https://ets2.lt/en/hybrid-plus-1-2-road-connector-v2-0/>
+- **Source:** [ets2.lt](https://ets2.lt/en/hybrid-plus-1-2-road-connector-v2-0/)
 - **Category:** Map Patches
 
 **Description:**
@@ -364,7 +364,7 @@ Road connector for the common ProMods + RusMap + Roextended + Poland Rebuilding 
 ### Road to Caucasus + Promods RC 1.8
 
 - **Version:** 1.8 (updated 20 June 2026)
-- **Source:** <https://ets2.lt/en/road-to-caucasus-promods-rc-1-8/>
+- **Source:** [ets2.lt](https://ets2.lt/en/road-to-caucasus-promods-rc-1-8/)
 - **Category:** Map Patches
 
 **Description:**
@@ -375,7 +375,7 @@ Connects Road to Caucasus v2.8 to ProMods 2.83. Optimised for ETS2 1.60.
 ### Road to Caucasus + ProMods The Great Steppe RC v2.1
 
 - **Version:** 2.1 (updated 20 June 2026)
-- **Source:** <https://ets2.lt/en/road-to-caucasus-promods-the-great-steppe-rc-v-2-1/>
+- **Source:** [ets2.lt](https://ets2.lt/en/road-to-caucasus-promods-the-great-steppe-rc-v-2-1/)
 - **Category:** Map Patches
 
 **Description:**
@@ -387,7 +387,7 @@ Connects Road to Caucasus to ProMods The Great Steppe 1.6.2. Optimised for ETS2 
 
 For a full map combo with ProMods, Middle East, RusMap, Roextended, and Poland Rebuilding:
 
-```
+```md
 Top (Highest Priority)
 ─────────────────────
 ProMods Definition File
