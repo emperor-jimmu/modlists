@@ -34,110 +34,156 @@ From highest priority (top) to lowest priority (bottom):
 TOP — HIGHEST PRIORITY (loads last, wins conflicts)
 ─────────────────────────────────────────────────────
 
-  1.  Traffic Packs
-  2.  Trailers & Cargo — AI Traffic
-  3.  Trailers & Cargo — Ownable
-  4.  Gameplay & Economy
-  5.  Trucks & Interiors
-  6.  Audio (engine packs, sound fixes)
-  7.  Weather & Environment
-  8.  Graphics (textures, lighting)
-  9.  Map Addons (Middle East, RusMap, connectors)
-  10. Map Base (ProMods)
+  1.  Map Base (ProMods)
+  2.  Map Addons (Middle East, RusMap, connectors)
+  3.  Graphics (textures, lighting)
+  4.  Weather & Environment
+  5.  Audio (engine packs, sound fixes)
+  6.  Trucks & Interiors
+  7.  Gameplay & Economy
+  8.  Trailers & Cargo — Ownable
+  9.  Trailers & Cargo — AI Traffic
+  10. Traffic Packs
 
 BOTTOM — LOWEST PRIORITY (loads first, base foundation)
 ```
 
 ---
 
-## Priority 1 (Top): Traffic Packs
+## Priority 1 (Top): Map Base
 
-**What goes here:** AI traffic density mods, AI vehicle packs, police enforcement, traffic behaviour overhauls.
+**What goes here:** ProMods Europe and its core asset files. The foundation upon which everything else builds.
 
-These must load last because they override the game's traffic spawn definitions, vehicle models, and AI behaviour parameters. If a map mod or graphics mod were placed above them, it could overwrite traffic density curves or remove custom AI vehicles.
+The base map mod must be at the **top** (highest priority) so its sectors, assets, and definitions override everything below it. The map provides the world geometry — roads, cities, terrain, prefabs — and every other mod category depends on this data being final. If a lower-priority mod could overwrite map sectors, roads would disappear and jobs would break.
 
 **From this guide:**
-- **Brutal Traffic v8.1** — AI behaviour and density curves. Must be at the very top so its definitions take precedence over any lower mod.
-- **EXPRESS PERFORMANCE MOD** — Realistic rush-hour traffic with FPS boost. Its traffic density curves must win over all other traffic data.
-- **AI Traffic Pack v2.5** — Real vehicle models replacing vanilla AI cars. Place above other traffic packs.
-- **Real Traffic Density** (Steam Workshop) — Time-of-day density curves.
-- **Police/parking enforcement mods** — Lowest of this group but still above all non-traffic mods. These need to override AI behaviour definitions.
+- **ProMods Europe 2.83** — The cornerstone. Its components load in this specific order from bottom to top:
+
+```
+  ProMods Definition File        ← Highest within this group
+  ProMods High Quality Addon     ← (optional, below definition)
+  ProMods Map Package
+  ProMods Media Package
+  ProMods Models 1
+  ProMods Models 2
+  ProMods Models 3               ← Lowest within this group
+```
+
+The definition file must be the highest of the ProMods files so it can declare which DLC-dependent sectors are active. Model and media packages go lowest because they only supply assets that other mods reference.
+
+- **ProMods The Great Steppe 1.6.2** — Sits just above the main ProMods files.
 
 ```yaml
 Example conflict:
-  A map mod adds a custom prefab with its own traffic spawn points.
-  If a traffic pack loads below the map mod, the map's traffic definitions
-  override the pack's density settings, partially disabling the traffic mod
-  in that map area. Traffic packs must be at the top to win.
+  A gameplay mod adds a new company prefab with its own road connections.
+  If the gameplay mod loaded above the map base, it could overwrite the
+  map's sector data, causing missing roads or broken navigation in that
+  area. The map base must be at the top so its world geometry and sector
+  data are never overwritten by lower-priority mods.
 ```
 
 ---
 
-## Priority 2: Trailers & Cargo — AI Traffic
+## Priority 2: Map Addons
 
-**What goes here:** AI traffic trailer packs, clean-traffic removers.
+**What goes here:** Map expansion addons, regional maps, map connectors and patches.
 
-AI trailer packs add or replace trailers that appear on AI vehicles in traffic. These need to load below traffic density mods (so the density mods control *how many* vehicles spawn) but above ownable trailer packs (so AI trailers do not interfere with player-owned trailer definitions).
+Map addons expand the playable area or connect different map mods together. They need to load below the base map mod (so the base map's core sectors take priority) but above graphics mods (so visual mods can render over their terrain).
 
 **From this guide:**
-- **Clean Traffic — No Default SCS Trailers v2.0** — Removes SCS trailers from AI traffic. Must load above AI trailer packs so the custom packs fill the gap.
-- **Trailers Traffic Pack by TrafficManiac v12.9.3** — 1,379 AI trailer models with real company skins.
-- **Ai Trailers Pack Evolution V2.8** — 150 addon AI trailers.
+- **ProMods Middle East Addon 2.83** — Below base ProMods files.
+- **RusMap 2.60** — Model file first, then map file.
+- **Roextended 5.2** — Generated sector file highest.
+- **Poland Rebuilding 2.6.4**
+- **Road to Caucasus v2.8**
+- **Iberia Rebuild**
+- **Portugal Rebuild**
+- **Bulgaria in Focus**
+- **Project Russia**
+- **Heart of Africa v1.60** — Standalone sector, bottom of map addons.
+- **Hybrid Plus 1-2 Road Connector v2.0** — Above all individual map files.
+- **Road to Caucasus + Promods RC 1.8**
+- **Road to Caucasus + ProMods The Great Steppe RC v2.1**
 
 ---
 
-## Priority 3: Trailers & Cargo — Ownable
+## Priority 3: Graphics
 
-**What goes here:** Ownable trailer packs, cargo definition packs, company skin replacements.
+**What goes here:** Texture overhauls, lighting mods, Reshade presets, comprehensive graphics packs.
 
-Ownable trailers and cargo definitions need to load below AI traffic trailers (to avoid conflicting) but above gameplay and economy mods (so economy mods can reference cargo data).
+Graphics mods replace textures, colour grading, lighting parameters, and shader configurations. They must load below map addons (so map sectors remain authoritative) but above weather mods (so weather lighting and sky textures do not override the graphics mod's colour grading).
 
 **From this guide:**
-- **Trailers and Cargo Pack by Jazzycat v11.10.5** — 175 trailers, 772 cargo types. Foundation of this section.
-- **Military Cargo Pack by Jazzycat v6.8.6** — 222 military cargo items, compatible with either Jazzycat main pack.
-- **TZ Express Trailer Pack v1.60** — 22 real-brand ownable trailers.
-- **SGD Trailer and Container Pack v1.60** — Krone container trailers with 4K PBR textures.
-- **NTM Trailers v2.1** — Kast's ownable NTM trailers with advanced coupling.
-- **Mini Trailers Pack v1.60** — Small/car trailers.
-- **Enhanced SCS Cargo v5.0** — Cargo reassignment. Place above other trailer packs so its cargo assignments take effect.
-- **Realistic Vanilla Company Skins** — Texture-only replacement. Anywhere in this section.
+- **Project Next Gen** — Lightweight texture overhaul. Load at the top of this section.
+- **Nextgen Graphics Road to 2.0 Spring Update** — Comprehensive graphics overhaul. Loads below Project Next Gen if using both (though stacking comprehensive overhauls is not recommended).
+- **Realistic Graphics Mod (RGM) v3.0** — Balanced colour/lighting adjustments.
+- **JBX Graphics v2.9** — Premium reshade preset. Loads below other graphics mods.
 
 ```yaml
-Important: Jazzycat's main Trailers and Cargo Pack and Overweight Trailers
-and Cargo Pack are mutually exclusive. Use one or the other, not both.
+Recommendation: Avoid stacking two comprehensive graphics overhauls.
+Choose one primary pack (Nextgen Graphics or RGM or JBX) and optionally
+add Project Next Gen for additional texture coverage.
 ```
 
 ---
 
-## Priority 4: Gameplay & Economy
+## Priority 4: Weather & Environment
 
-**What goes here:** Economy rebalances, company management, physics overhauls, dashboard replacements, QoL mods.
+**What goes here:** Weather overhauls, seasonal mods, skyboxes, rain effects, vegetation replacements.
 
-Gameplay mods modify core simulation data: income, fuel costs, tolls, physics parameters, UI layouts. They must load below cargo/trailer data (so they can reference correct cargo types) but above trucks (so truck mods can incorporate gameplay parameters).
+Weather mods replace skybox textures, rain/snow particle definitions, lighting curves, and seasonal vegetation data. They must load below graphics mods (so texture packs apply on top of weather-changed surfaces) but above audio mods (so rain sounds are not overwritten).
 
 **From this guide:**
-- **Collision Model Mod v1.60** — Tightens hitboxes and damage zones.
-- **Realistic Scania SmartDash v1.60** / **Iveco S-Way Improved Dashboard v1.60** — Dashboard replacements.
-- **Animated Steering Wheel v1.60** — Cosmetic animation.
-- **TDS ECO Grand Garage v1.0** — Economy rebalance.
-- **New Service** — Company management layer.
-- **SiSL's Route Advisor** — Enhanced navigation UI.
-- **Real Company Skins** — Logistics liveries for immersion.
-- **Ferry Plus v5.0.1** — New ferry connections. Above map mods.
-- **Indonesia Gameplay Mods v1** — Full gameplay overhaul pack.
+- **Realistic Weather System V2.9** — Complete weather overhaul. NOT compatible with other weather or graphics mods.
+- **Grimes Frosty Winter v10.7** — Full winter simulation. Place at top of weather section.
+- **Grimes New Summer v6.7**
+- **Grimes Spring v6.6**
+- **Grimes Early Autumn v9.0**
+- **Grimes Late Autumn/Mild Winter v6.6**
+- **Grimes Realistic Rain Reflections Addon v1.0** — Use with the matching season mod.
+- **Weather Mod V3.8** — Standalone weather.
+- **Grass_Tree / Autumn_ETS** — Vegetation replacement.
 
 ```yaml
-Rule: Only one economy-modifying mod per profile. Stacking economy mods
-causes unpredictable income calculations and potential save corruption.
+Important: Only one Grimes season mod can be active at a time. The
+Realistic Weather System V2.9 cannot be stacked with any other weather
+or graphics mod — it is a complete weather replacement.
 ```
 
 ---
 
-## Priority 5: Trucks & Interiors
+## Priority 5: Audio
+
+**What goes here:** Sound fixes packs, engine sound replacements, horn packs, ambient audio.
+
+Audio mods replace sound banks and mixing definitions. They must load below weather mods (so rain and environment sounds can be overridden by the weather system) but above truck mods (so engine sound packs can attach to specific truck definitions).
+
+**From this guide:**
+- **Sound Fixes Pack v26.34** — Foundation for all audio. High priority within this section.
+- **SFX Engine Sound Packs by Max2712**:
+  - 2022 MAN TGX (TG3) 510 D2676 Sound Pack v1.3.2
+  - SFX Renault Range T DTi460 Euro6C v2.05.1
+  - SFX Volvo FH13 D13K 500 Euro6 v2.47.1
+  - SFX Scania R410 DC13.115 Euro6 v1.29.1
+- **Scania V8 Stock Sound v12.0**
+- **Scania NextGen 660 DC16 V8 Sound Pack v1.3**
+- **Volvo FH5 I-Save 500 D13TC Sound Pack v1.3**
+- **Kriechbaum DAF Paccar MX-13 Sound v3.0**
+- **Kriechbaum Volvo FH4 D13 Sound v1.1**
+
+```yaml
+Sound Fixes Pack must be above individual engine sound packs — it provides
+the base sound bank that engine packs extend. Engine packs do not conflict
+with each other as long as they target different trucks.
+```
+
+---
+
+## Priority 6: Trucks & Interiors
 
 **What goes here:** Standalone truck mods, truck reworks, interior accessories, tuning parts, physics mods.
 
-Truck mods add new drivable vehicles or rework existing ones. They must load below gameplay mods (so gameplay settings like fuel consumption apply correctly) but above audio mods (so engine sound packs can attach to the truck definitions).
+Truck mods add new drivable vehicles or rework existing ones. They must load below audio mods (so engine sounds defined by audio packs apply correctly to each truck) but above gameplay mods (so gameplay settings like fuel consumption can reference truck parameters).
 
 **From this guide:**
 - **MAN TGX E6 by Gloover v2.2.1**
@@ -161,123 +207,87 @@ conflict, place the one you prefer higher.
 
 ---
 
-## Priority 6: Audio
+## Priority 7: Gameplay & Economy
 
-**What goes here:** Sound fixes packs, engine sound replacements, horn packs, ambient audio.
+**What goes here:** Economy rebalances, company management, physics overhauls, dashboard replacements, QoL mods.
 
-Audio mods replace sound banks and mixing definitions. They must load below truck mods so they can attach sounds to specific truck models, but above weather mods so rain and environment sounds do not override truck engine sounds.
+Gameplay mods modify core simulation data: income, fuel costs, tolls, physics parameters, UI layouts. They must load below truck mods (so truck parameters are final before gameplay logic references them) but above trailer/cargo data (so economy mods can reference cargo types from the final cargo data below).
 
 **From this guide:**
-- **Sound Fixes Pack v26.34** — Foundation for all audio. High priority within this section.
-- **SFX Engine Sound Packs by Max2712**:
-  - 2022 MAN TGX (TG3) 510 D2676 Sound Pack v1.3.2
-  - SFX Renault Range T DTi460 Euro6C v2.05.1
-  - SFX Volvo FH13 D13K 500 Euro6 v2.47.1
-  - SFX Scania R410 DC13.115 Euro6 v1.29.1
-- **Scania V8 Stock Sound v12.0**
-- **Scania NextGen 660 DC16 V8 Sound Pack v1.3**
-- **Volvo FH5 I-Save 500 D13TC Sound Pack v1.3**
-- **Kriechbaum DAF Paccar MX-13 Sound v3.0**
-- **Kriechbaum Volvo FH4 D13 Sound v1.1**
+- **Collision Model Mod v1.60** — Tightens hitboxes and damage zones.
+- **Realistic Scania SmartDash v1.60** / **Iveco S-Way Improved Dashboard v1.60** — Dashboard replacements.
+- **Animated Steering Wheel v1.60** — Cosmetic animation.
+- **TDS ECO Grand Garage v1.0** — Economy rebalance.
+- **New Service** — Company management layer.
+- **SiSL's Route Advisor** — Enhanced navigation UI.
+- **Real Company Skins** — Logistics liveries for immersion.
+- **Ferry Plus v5.0.1** — New ferry connections. Above map mods.
+- **Indonesia Gameplay Mods v1** — Full gameplay overhaul pack.
 
 ```yaml
-Sound Fixes Pack must be above individual engine sound packs — it provides
-the base sound bank that engine packs extend. Engine packs do not conflict
-with each other as long as they target different trucks.
+Rule: Only one economy-modifying mod per profile. Stacking economy mods
+causes unpredictable income calculations and potential save corruption.
 ```
 
 ---
 
-## Priority 7: Weather & Environment
+## Priority 8: Trailers & Cargo — Ownable
 
-**What goes here:** Weather overhauls, seasonal mods, skyboxes, rain effects, vegetation replacements.
+**What goes here:** Ownable trailer packs, cargo definition packs, company skin replacements.
 
-Weather mods replace skybox textures, rain/雪 particle definitions, lighting curves, and seasonal vegetation data. They must load below audio mods (so rain sounds are not overwritten by environment mods) but above graphics mods (so texture packs can apply on top of weather-changed surfaces).
+Ownable trailers and cargo definitions need to load below gameplay and economy mods (so economy mods can reference cargo data) but above AI traffic trailers (so AI trailers do not interfere with player-owned trailer definitions).
 
 **From this guide:**
-- **Realistic Weather System V2.9** — Complete weather overhaul. NOT compatible with other weather or graphics mods.
-- **Grimes Frosty Winter v10.7** — Full winter simulation. Place at top of weather section.
-- **Grimes New Summer v6.7**
-- **Grimes Spring v6.6**
-- **Grimes Early Autumn v9.0**
-- **Grimes Late Autumn/Mild Winter v6.6**
-- **Grimes Realistic Rain Reflections Addon v1.0** — Use with the matching season mod.
-- **Weather Mod V3.8** — Standalone weather.
-- **Grass_Tree / Autumn_ETS** — Vegetation replacement.
+- **Trailers and Cargo Pack by Jazzycat v11.10.5** — 175 trailers, 772 cargo types. Foundation of this section.
+- **Military Cargo Pack by Jazzycat v6.8.6** — 222 military cargo items, compatible with either Jazzycat main pack.
+- **TZ Express Trailer Pack v1.60** — 22 real-brand ownable trailers.
+- **SGD Trailer and Container Pack v1.60** — Krone container trailers with 4K PBR textures.
+- **NTM Trailers v2.1** — Kast's ownable NTM trailers with advanced coupling.
+- **Mini Trailers Pack v1.60** — Small/car trailers.
+- **Enhanced SCS Cargo v5.0** — Cargo reassignment. Place above other trailer packs so its cargo assignments take effect.
+- **Realistic Vanilla Company Skins** — Texture-only replacement. Anywhere in this section.
 
 ```yaml
-Important: Only one Grimes season mod can be active at a time. The
-Realistic Weather System V2.9 cannot be stacked with any other weather
-or graphics mod — it is a complete weather replacement.
+Important: Jazzycat's main Trailers and Cargo Pack and Overweight Trailers
+and Cargo Pack are mutually exclusive. Use one or the other, not both.
 ```
 
 ---
 
-## Priority 8: Graphics
+## Priority 9: Trailers & Cargo — AI Traffic
 
-**What goes here:** Texture overhauls, lighting mods, Reshade presets, comprehensive graphics packs.
+**What goes here:** AI traffic trailer packs, clean-traffic removers.
 
-Graphics mods replace textures, colour grading, lighting parameters, and shader configurations. They must load below weather mods so they can apply texture replacements on top of weather-changed terrain and buildings. They are the final visual layer before map data.
+AI trailer packs add or replace trailers that appear on AI vehicles in traffic. These need to load below ownable trailer packs (so AI trailers do not interfere with player-owned trailer definitions) but above traffic density mods (so the density mods control *how many* vehicles spawn).
 
 **From this guide:**
-- **Project Next Gen** — Lightweight texture overhaul. Load at the top of this section.
-- **Nextgen Graphics Road to 2.0 Spring Update** — Comprehensive graphics overhaul. Loads below Project Next Gen if using both (though stacking comprehensive overhauls is not recommended).
-- **Realistic Graphics Mod (RGM) v3.0** — Balanced colour/lighting adjustments.
-- **JBX Graphics v2.9** — Premium reshade preset. Loads below other graphics mods.
+- **Clean Traffic — No Default SCS Trailers v2.0** — Removes SCS trailers from AI traffic. Must load above AI trailer packs so the custom packs fill the gap.
+- **Trailers Traffic Pack by TrafficManiac v12.9.3** — 1,379 AI trailer models with real company skins.
+- **Ai Trailers Pack Evolution V2.8** — 150 addon AI trailers.
+
+---
+
+## Priority 10 (Bottom): Traffic Packs
+
+**What goes here:** AI traffic density mods, AI vehicle packs, police enforcement, traffic behaviour overhauls.
+
+Traffic packs must be at the very bottom (lowest priority) because they only need to override traffic-specific data: spawn definitions, vehicle models, and AI behaviour parameters. They should not conflict with any map, visual, or gameplay data — placing them lowest ensures they can only affect traffic systems without risk of overwriting critical game data from higher-priority mods.
+
+**From this guide:**
+- **Brutal Traffic v8.1** — AI behaviour and density curves. At the very bottom so its traffic-only definitions do not interfere with anything above.
+- **EXPRESS PERFORMANCE MOD** — Realistic rush-hour traffic with FPS boost. Lowest priority to stay out of other systems.
+- **AI Traffic Pack v2.5** — Real vehicle models replacing vanilla AI cars. Place above other traffic packs.
+- **Real Traffic Density** (Steam Workshop) — Time-of-day density curves.
+- **Police/parking enforcement mods** — Highest of this group but still at the bottom relative to all other mod categories.
 
 ```yaml
-Recommendation: Avoid stacking two comprehensive graphics overhauls.
-Choose one primary pack (Nextgen Graphics or RGM or JBX) and optionally
-add Project Next Gen for additional texture coverage.
+Example conflict:
+  A map mod adds a custom prefab with its own traffic spawn points.
+  If a traffic pack loaded above the map mod, the traffic pack's density
+  settings could override the map's traffic definitions, partially disabling
+  custom traffic spawns in that map area. Traffic packs at the bottom avoid
+  interfering with map data while still controlling traffic behaviour.
 ```
-
----
-
-## Priority 9: Map Addons
-
-**What goes here:** Map expansion addons, regional maps, map connectors and patches.
-
-Map addons expand the playable area or connect different map mods together. They must load above the base map mods so their sectors are registered correctly, but below graphics and weather mods so visual mods can render over their terrain.
-
-**From this guide:**
-- **ProMods Middle East Addon 2.83** — Below base ProMods files.
-- **RusMap 2.60** — Model file first, then map file.
-- **Roextended 5.2** — Generated sector file highest.
-- **Poland Rebuilding 2.6.4**
-- **Road to Caucasus v2.8**
-- **Iberia Rebuild**
-- **Portugal Rebuild**
-- **Bulgaria in Focus**
-- **Project Russia**
-- **Heart of Africa v1.60** — Standalone sector, bottom of map addons.
-- **Hybrid Plus 1-2 Road Connector v2.0** — Above all individual map files.
-- **Road to Caucasus + Promods RC 1.8**
-- **Road to Caucasus + ProMods The Great Steppe RC v2.1**
-
----
-
-## Priority 10 (Bottom): Map Base
-
-**What goes here:** ProMods Europe and its core asset files. The foundation upon which everything else builds.
-
-The base map mod must be at the **bottom** (lowest priority) so its sectors, assets, and definitions provide the foundation. Everything above it can override specific elements, but the base map's core data must be loaded first and not be overwritten.
-
-**From this guide:**
-- **ProMods Europe 2.83** — The cornerstone. Its four components load in this specific order from bottom to top:
-
-```
-  ProMods Definition File        ← Highest within this group
-  ProMods High Quality Addon     ← (optional, below definition)
-  ProMods Map Package
-  ProMods Media Package
-  ProMods Models 1
-  ProMods Models 2
-  ProMods Models 3               ← Lowest within this group
-```
-
-The definition file must be the highest of the ProMods files so it can declare which DLC-dependent sectors are active. Model and media packages go lowest because they only supply assets that other mods reference.
-
-- **ProMods The Great Steppe 1.6.2** — Sits at the very bottom, below all other ProMods files.
 
 ---
 
@@ -288,32 +298,36 @@ Copy this template into Truck Mod Manager for a full profile:
 ```
 TOP (Highest Priority)
 ────────────────────
-  Brutal Traffic v8.1
-  EXPRESS PERFORMANCE MOD
-  AI Traffic Pack v2.5
-  Police Enforcement Mod
+  ProMods Definition File
+  ProMods High Quality Addon
+  ProMods Map Package
+  ProMods Media Package
+  ProMods Models 1
+  ProMods Models 2
+  ProMods Models 3
+  ProMods The Great Steppe
   ───
-  Clean Traffic — No Default SCS Trailers
-  Trailers Traffic Pack by TrafficManiac
-  Ai Trailers Pack Evolution
+  Hybrid Plus Road Connector
+  RusMap Model
+  RusMap Map
+  Poland Rebuilding
+  Roextended (sector file)
+  Road to Caucasus + Connectors
+  ProMods Middle East Addon
   ───
-  Enhanced SCS Cargo v5.0
-  Jazzycat Trailers and Cargo Pack
-  Military Cargo Pack by Jazzycat
-  TZ Express Trailer Pack
-  SGD Trailer and Container Pack
-  NTM Trailers v2.1
-  Mini Trailers Pack
-  Realistic Vanilla Company Skins
+  Project Next Gen
+  Nextgen Graphics (or RGM / JBX)
   ───
-  Collision Model Mod
-  Dashboard replacements
-  Animated Steering Wheel
-  TDS ECO Grand Garage
-  New Service
-  SiSL's Route Advisor
-  Real Company Skins
-  Ferry Plus
+  Realistic Weather System V2.9 (or Grimes season mod)
+  Grimes Rain Reflections Addon
+  Grass_Tree / Autumn_ETS
+  ───
+  Sound Fixes Pack
+  MAN TGX D2676 Sound Pack
+  SFX Renault Range T Sound
+  SFX Volvo FH13 Sound
+  SFX Scania R410 Sound
+  Scania V8 Stock Sound
   ───
   MAN TGX E6 by Gloover
   Volvo FH6 ALM Mod
@@ -327,35 +341,32 @@ TOP (Highest Priority)
   Scania NG Parts / Accessories
   Realistic Truck Physics
   ───
-  Sound Fixes Pack
-  MAN TGX D2676 Sound Pack
-  SFX Renault Range T Sound
-  SFX Volvo FH13 Sound
-  SFX Scania R410 Sound
-  Scania V8 Stock Sound
+  Collision Model Mod
+  Dashboard replacements
+  Animated Steering Wheel
+  TDS ECO Grand Garage
+  New Service
+  SiSL's Route Advisor
+  Real Company Skins
+  Ferry Plus
   ───
-  Realistic Weather System V2.9 (or Grimes season mod)
-  Grimes Rain Reflections Addon
-  Grass_Tree / Autumn_ETS
+  Enhanced SCS Cargo v5.0
+  Jazzycat Trailers and Cargo Pack
+  Military Cargo Pack by Jazzycat
+  TZ Express Trailer Pack
+  SGD Trailer and Container Pack
+  NTM Trailers v2.1
+  Mini Trailers Pack
+  Realistic Vanilla Company Skins
   ───
-  Project Next Gen
-  Nextgen Graphics (or RGM / JBX)
+  Clean Traffic — No Default SCS Trailers
+  Trailers Traffic Pack by TrafficManiac
+  Ai Trailers Pack Evolution
   ───
-  Hybrid Plus Road Connector
-  RusMap Model
-  RusMap Map
-  Poland Rebuilding
-  Roextended (sector file)
-  Road to Caucasus + Connectors
-  ProMods Middle East Addon
-  ProMods The Great Steppe
-  ProMods Definition File
-  ProMods High Quality Addon
-  ProMods Map Package
-  ProMods Media Package
-  ProMods Models 1
-  ProMods Models 2
-  ProMods Models 3
+  Brutal Traffic v8.1
+  EXPRESS PERFORMANCE MOD
+  AI Traffic Pack v2.5
+  Police Enforcement Mod
 BOTTOM (Lowest Priority)
 ────────────────────
 ```
@@ -367,8 +378,8 @@ BOTTOM (Lowest Priority)
 | Mistake | Symptom | Fix |
 |---------|---------|-----|
 | Map mod above its own definition file | Black/grey sectors on map where DLC is missing | Place definition file above map package within the mod's group |
-| Weather mod below graphics mod | Weather textures override graphics textures, causing mismatched colours | Place weather above graphics |
-| Traffic pack below map mod | Traffic density reduced to defaults in map-added cities | Place traffic packs at top |
+| Weather mod above graphics mod | Weather textures override graphics textures, causing mismatched colours | Place weather below graphics |
+| Traffic pack above map mod | Traffic density definitions interfere with map sector traffic spawns | Place traffic packs at bottom |
 | Engine sound pack below Sound Fixes Pack | Sound Fixes Pack overwrites engine sounds with defaults | Place Sound Fixes Pack above individual engine packs |
 | Multiple economy mods active | Inconsistent income, duplicate cargo entries | Keep only one economy-modifying mod |
 | Connector below both maps it connects | Missing road at border crossing | Place connector above both map mods |
@@ -383,7 +394,7 @@ Some changes are safe; others will corrupt your save:
 
 | Change | Safe? | Notes |
 |--------|-------|-------|
-| Adding a new mod to the top (traffic) | Usually safe | Must be a pure addon with no map sector changes |
+| Adding a new mod to the bottom (traffic) | Usually safe | Must be a pure addon with no map sector changes |
 | Adding a new trailer pack | Usually safe | Must not replace existing trailers |
 | Adding a new truck mod | Usually safe | Standalone trucks do not affect saved game data |
 | Adding a new map mod | **Risky** | Can break existing delivery routes and discovered roads |
@@ -408,10 +419,10 @@ For players who want light enhancements without map mods:
 
 ```
 TOP
-  Brutal Traffic v8.1
-  Jazzycat Trailers and Cargo Pack
-  Sound Fixes Pack
   Project Next Gen
+  Sound Fixes Pack
+  Jazzycat Trailers and Cargo Pack
+  Brutal Traffic v8.1
 BOTTOM
 ```
 
@@ -419,11 +430,11 @@ BOTTOM
 
 ```
 TOP
-  EXPRESS PERFORMANCE MOD
-  Sound Fixes Pack
-  Grimes New Summer v6.7
   Nextgen Graphics
   JBX Graphics (Reshade)
+  Grimes New Summer v6.7
+  Sound Fixes Pack
+  EXPRESS PERFORMANCE MOD
 BOTTOM
 ```
 
