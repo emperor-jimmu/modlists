@@ -27,7 +27,11 @@ function Ensure-Fonts {
         $path = Join-Path $fontDir $name
         if (-not (Test-Path $path)) {
             Write-Host "Downloading $name..."
-            Invoke-WebRequest -Uri $fonts[$name] -OutFile $path
+            try {
+                Invoke-WebRequest -Uri $fonts[$name] -OutFile $path -UserAgent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) PowerShell/7" -ErrorAction Stop
+            } catch {
+                Write-Warning "Failed to download $name`: $($_.Exception.Message)"
+            }
         }
     }
 
@@ -116,7 +120,16 @@ function Convert-Table {
 function Convert-MarkdownToTypst {
     param([string]$Text, [string]$FileH1Anchor)
     # 1. Strip HTML comments
-    $lines = ($Text -replace '(?s)<!--.*?-->', '') -split "`r`n|`n"
+    $text = $Text -replace '(?s)<!--.*?-->', ''
+    # 2. Convert markdown emphasis to typst syntax
+    #    markdown ***bold italic*** → typst _*bold italic*_
+    $text = $text -replace '\*\*\*(.+?)\*\*\*', '_\*$1\*_'
+    #    markdown **bold** → typst *bold*
+    $text = $text -replace '\*\*(.+?)\*\*', '*$1*'
+    #    markdown *italic* → typst _italic_
+    $text = $text -replace '(?<!\*)\*(?!\s|\*)(.+?)(?<!\s|\*)\*(?!\*)', '_$1_'
+    # 3. Process lines
+    $lines = $text -split "`r`n|`n"
     $usedLabels = @{}
     $headingOrder = @()
     $converted = [System.Text.StringBuilder]::new()
