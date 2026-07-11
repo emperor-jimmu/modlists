@@ -1,0 +1,771 @@
+- generic [ref=f8e5]:
+  - banner [ref=f8e6]:
+    - generic [ref=f8e7]:
+      - link "Link to the Steam Homepage" [ref=f8e8] [cursor=pointer]:
+        - /url: https://store.steampowered.com/
+        - img "Link to the Steam Homepage" [ref=f8e9]
+      - navigation [ref=f8e10]:
+        - list [ref=f8e11]:
+          - button "STORE" [ref=f8e12] [cursor=pointer]
+          - button "COMMUNITY" [ref=f8e13] [cursor=pointer]
+          - link "About" [ref=f8e14] [cursor=pointer]:
+            - /url: https://store.steampowered.com/about/?snr=____globalheader
+          - link "SUPPORT" [ref=f8e15] [cursor=pointer]:
+            - /url: https://help.steampowered.com/en/
+      - generic [ref=f8e17]:
+        - link "Install Steam" [ref=f8e18] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/
+        - link "sign in" [ref=f8e19] [cursor=pointer]:
+          - /url: /login/
+        - text: "|"
+        - button "language" [ref=f8e20] [cursor=pointer]
+  - dialog [ref=f8e21]:
+    - generic [ref=f8e22]:
+      - link "Sign in" [ref=f8e23] [cursor=pointer]:
+        - /url: /login/
+      - group [ref=f8e24]:
+        - generic "Store" [ref=f8e25] [cursor=pointer]
+      - group [ref=f8e27]:
+        - generic "Community" [ref=f8e28] [cursor=pointer]
+      - link "About" [ref=f8e30] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=____globalheader
+      - link "Support" [ref=f8e31] [cursor=pointer]:
+        - /url: https://help.steampowered.com/en/
+      - generic [ref=f8e32]:
+        - button "Change language" [ref=f8e33] [cursor=pointer]
+        - link "Get the Steam Mobile App" [ref=f8e34] [cursor=pointer]:
+          - /url: https://store.steampowered.com/mobile?snr=____globalheader
+        - button "View desktop website" [ref=f8e35] [cursor=pointer]
+    - contentinfo [ref=f8e36]:
+      - text: © Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+      - generic [ref=f8e38]:
+        - link "Privacy Policy" [ref=f8e39] [cursor=pointer]:
+          - /url: https://store.steampowered.com/privacy_agreement/
+        - text: "|"
+        - link "Legal" [ref=f8e40] [cursor=pointer]:
+          - /url: http://www.valvesoftware.com/legal.htm
+        - text: "|"
+        - link "Steam Subscriber Agreement" [ref=f8e41] [cursor=pointer]:
+          - /url: https://store.steampowered.com/subscriber_agreement/
+        - text: "|"
+        - link "Refunds" [ref=f8e42] [cursor=pointer]:
+          - /url: https://store.steampowered.com/steam_refunds/
+  - generic [ref=f8e45]:
+    - generic [ref=f8e49]:
+      - generic [ref=f8e50]:
+        - link [ref=f8e51]:
+          - /url: https://steamcommunity.com/app/281990
+          - heading "Stellaris" [level=1] [ref=f8e52]
+        - link "Store Page" [ref=f8e53] [cursor=pointer]:
+          - /url: https://store.steampowered.com/app/281990/?snr=_9_apphubheader_
+      - generic [ref=f8e54]:
+        - link "All" [ref=f8e56] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/
+        - link "Discussions" [ref=f8e58] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/discussions/
+        - link "Screenshots" [ref=f8e60] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/screenshots/
+        - link "Artwork" [ref=f8e62] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/images/
+        - link "Broadcasts" [ref=f8e64] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/broadcasts/
+        - link "Videos" [ref=f8e66] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/videos/
+        - link "Workshop" [ref=f8e68] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/workshop/
+        - link "News" [ref=f8e70] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/news/
+        - link "Guides" [ref=f8e72] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/guides/
+        - link "Reviews" [ref=f8e74] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/reviews/
+    - generic [ref=f8e76]:
+      - generic [ref=f8e77]:
+        - img "Stellaris" [ref=f8e78]
+        - generic [ref=f8e79]:
+          - generic [ref=f8e80]: Modify the Galaxy
+          - generic [ref=f8e81]: Modify your Stellaris experience by checking out the many mods created and shared by the community, including tweaks to almost any aspect of the game.
+          - link "Learn More" [ref=f8e83] [cursor=pointer]:
+            - /url: https://stellaris.paradoxwikis.com/Stellaris_Wiki
+      - generic [ref=f8e84]:
+        - link "Home" [ref=f8e85] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/workshop/
+        - button "Browse" [ref=f8e86] [cursor=pointer]
+        - button "Your Items" [ref=f8e89] [cursor=pointer]
+        - link "Discussions" [ref=f8e92] [cursor=pointer]:
+          - /url: https://steamcommunity.com/workshop/discussions/?appid=281990
+        - link "About" [ref=f8e93] [cursor=pointer]:
+          - /url: https://steamcommunity.com/workshop/about/?appid=281990
+    - generic [ref=f8e97]:
+      - generic [ref=f8e98]:
+        - 'heading "Browsing: Items (Subscribe to add to your game)" [level=2] [ref=f8e100]':
+          - generic [ref=f8e101]:
+            - text: "Browsing: Items"
+            - generic [ref=f8e102]: (Subscribe to add to your game)
+        - generic [ref=f8e106]:
+          - generic [ref=f8e107]: 1,626 entries matching filters
+          - generic [ref=f8e108]:
+            - 'button "Results for: \"bug fixes\"" [ref=f8e109] [cursor=pointer]'
+            - button "Fixes" [ref=f8e115] [cursor=pointer]
+        - generic [ref=f8e124]:
+          - generic [ref=f8e126]:
+            - textbox "Search Stellaris" [ref=f8e130]: bug fixes
+            - button [ref=f8e134] [cursor=pointer]
+          - button "Most Popular (One Week)" [ref=f8e138] [cursor=pointer]
+      - generic [ref=f8e146]:
+        - generic [ref=f8e147]:
+          - generic [ref=f8e148]:
+            - generic [ref=f8e149]: "Special Filters:"
+            - combobox [ref=f8e150] [cursor=pointer]:
+              - generic [ref=f8e151]: None
+          - generic [ref=f8e156]:
+            - generic [ref=f8e157]: CATEGORIES
+            - generic [ref=f8e159]:
+              - generic [ref=f8e160] [cursor=pointer]:
+                - button [ref=f8e161]
+                - button [ref=f8e166]
+                - button "Balance" [ref=f8e170]
+              - generic [ref=f8e171] [cursor=pointer]:
+                - button [ref=f8e172]
+                - button [ref=f8e177]
+                - button "Buildings" [ref=f8e181]
+              - generic [ref=f8e182] [cursor=pointer]:
+                - button [ref=f8e183]
+                - button [ref=f8e188]
+                - button "Diplomacy" [ref=f8e192]
+              - generic [ref=f8e193] [cursor=pointer]:
+                - button [ref=f8e194]
+                - button [ref=f8e199]
+                - button "Economy" [ref=f8e203]
+              - generic [ref=f8e204] [cursor=pointer]:
+                - button [ref=f8e205]
+                - button [ref=f8e210]
+                - button "Events" [ref=f8e214]
+              - generic [ref=f8e215] [cursor=pointer]:
+                - button [ref=f8e216]
+                - button [ref=f8e221]
+                - button "Fixes" [ref=f8e225]
+              - generic [ref=f8e226] [cursor=pointer]:
+                - button [ref=f8e227]
+                - button [ref=f8e232]
+                - button "Font" [ref=f8e236]
+              - generic [ref=f8e237] [cursor=pointer]:
+                - button [ref=f8e238]
+                - button [ref=f8e243]
+                - button "Galaxy Generation" [ref=f8e247]
+              - generic [ref=f8e248] [cursor=pointer]:
+                - button [ref=f8e249]
+                - button [ref=f8e254]
+                - button "Gameplay" [ref=f8e258]
+              - generic [ref=f8e259] [cursor=pointer]:
+                - button [ref=f8e260]
+                - button [ref=f8e265]
+                - button "Graphics" [ref=f8e269]
+              - generic [ref=f8e270] [cursor=pointer]:
+                - button [ref=f8e271]
+                - button [ref=f8e276]
+                - button "Leaders" [ref=f8e280]
+              - generic [ref=f8e281] [cursor=pointer]:
+                - button [ref=f8e282]
+                - button [ref=f8e287]
+                - button "Loading Screen" [ref=f8e291]
+              - generic [ref=f8e292] [cursor=pointer]:
+                - button [ref=f8e293]
+                - button [ref=f8e298]
+                - button "Military" [ref=f8e302]
+              - generic [ref=f8e303] [cursor=pointer]:
+                - button [ref=f8e304]
+                - button [ref=f8e309]
+                - button "Overhaul" [ref=f8e313]
+              - generic [ref=f8e314] [cursor=pointer]:
+                - button [ref=f8e315]
+                - button [ref=f8e320]
+                - button "Sound" [ref=f8e324]
+              - generic [ref=f8e325] [cursor=pointer]:
+                - button [ref=f8e326]
+                - button [ref=f8e331]
+                - button "Spaceships" [ref=f8e335]
+              - generic [ref=f8e336] [cursor=pointer]:
+                - button [ref=f8e337]
+                - button [ref=f8e342]
+                - button "Species" [ref=f8e346]
+              - generic [ref=f8e347] [cursor=pointer]:
+                - button [ref=f8e348]
+                - button [ref=f8e353]
+                - button "Technologies" [ref=f8e357]
+              - generic [ref=f8e358] [cursor=pointer]:
+                - button [ref=f8e359]
+                - button [ref=f8e364]
+                - button "Total Conversion" [ref=f8e368]
+              - generic [ref=f8e369] [cursor=pointer]:
+                - button [ref=f8e370]
+                - button [ref=f8e375]
+                - button "Translation" [ref=f8e379]
+              - generic [ref=f8e380] [cursor=pointer]:
+                - button [ref=f8e381]
+                - button [ref=f8e386]
+                - button "Utilities" [ref=f8e390]
+              - generic [ref=f8e391] [cursor=pointer]:
+                - button [ref=f8e392]
+                - button [ref=f8e397]
+                - button "3.0.8" [ref=f8e401]
+              - generic [ref=f8e402] [cursor=pointer]:
+                - button [ref=f8e403]
+                - button [ref=f8e408]
+                - button "3.0.9" [ref=f8e412]
+              - generic [ref=f8e413] [cursor=pointer]:
+                - button [ref=f8e414]
+                - button [ref=f8e419]
+                - button "3.0.10" [ref=f8e423]
+              - generic [ref=f8e424] [cursor=pointer]:
+                - button [ref=f8e425]
+                - button [ref=f8e430]
+                - button "3.0.11" [ref=f8e434]
+          - generic [ref=f8e435]:
+            - generic [ref=f8e436]: Required DLC
+            - textbox "Filter by Name" [ref=f8e439]
+            - generic [ref=f8e441]:
+              - generic [ref=f8e442] [cursor=pointer]:
+                - button [ref=f8e443]
+                - button [ref=f8e448]
+                - button "Ancient Relics Story Pack" [ref=f8e452]
+              - generic [ref=f8e453] [cursor=pointer]:
+                - button [ref=f8e454]
+                - button [ref=f8e459]
+                - button "Anniversary Portraits" [ref=f8e463]
+              - generic [ref=f8e464] [cursor=pointer]:
+                - button [ref=f8e465]
+                - button [ref=f8e470]
+                - button "Apocalypse" [ref=f8e474]
+              - generic [ref=f8e475] [cursor=pointer]:
+                - button [ref=f8e476]
+                - button [ref=f8e481]
+                - button "Aquatics Species Pack" [ref=f8e485]
+              - generic [ref=f8e486] [cursor=pointer]:
+                - button [ref=f8e487]
+                - button [ref=f8e492]
+                - button "Astral Planes" [ref=f8e496]
+              - generic [ref=f8e497] [cursor=pointer]:
+                - button [ref=f8e498]
+                - button [ref=f8e503]
+                - button "BioGenesis" [ref=f8e507]
+              - generic [ref=f8e508] [cursor=pointer]:
+                - button [ref=f8e509]
+                - button [ref=f8e514]
+                - button "Complete Soundtrack" [ref=f8e518]
+              - generic [ref=f8e519] [cursor=pointer]:
+                - button [ref=f8e520]
+                - button [ref=f8e525]
+                - button "Cosmic Storms" [ref=f8e529]
+              - generic [ref=f8e530] [cursor=pointer]:
+                - button [ref=f8e531]
+                - button [ref=f8e536]
+                - button "Distant Stars Story Pack" [ref=f8e540]
+              - generic [ref=f8e541] [cursor=pointer]:
+                - button [ref=f8e542]
+                - button [ref=f8e547]
+                - button "Expansion Subscription" [ref=f8e551]
+              - generic [ref=f8e552] [cursor=pointer]:
+                - button [ref=f8e553]
+                - button [ref=f8e558]
+                - button "Federations" [ref=f8e562]
+              - generic [ref=f8e563] [cursor=pointer]:
+                - button [ref=f8e564]
+                - button [ref=f8e569]
+                - button "First Contact Story Pack" [ref=f8e573]
+              - generic [ref=f8e574] [cursor=pointer]:
+                - button [ref=f8e575]
+                - button [ref=f8e580]
+                - button "Galactic Paragons" [ref=f8e584]
+              - generic [ref=f8e585] [cursor=pointer]:
+                - button [ref=f8e586]
+                - button [ref=f8e591]
+                - button "Galaxy Edition Upgrade Pack" [ref=f8e595]
+              - generic [ref=f8e596] [cursor=pointer]:
+                - button [ref=f8e597]
+                - button [ref=f8e602]
+                - button "Grand Archive Story Pack" [ref=f8e606]
+              - generic [ref=f8e607] [cursor=pointer]:
+                - button [ref=f8e608]
+                - button [ref=f8e613]
+                - button "Humanoids Species Pack" [ref=f8e617]
+              - generic [ref=f8e618] [cursor=pointer]:
+                - button [ref=f8e619]
+                - button [ref=f8e624]
+                - button "Infernals Species Pack" [ref=f8e628]
+              - generic [ref=f8e629] [cursor=pointer]:
+                - button [ref=f8e630]
+                - button [ref=f8e635]
+                - button "Infinite Frontiers (eBook)" [ref=f8e639]
+              - generic [ref=f8e640] [cursor=pointer]:
+                - button [ref=f8e641]
+                - button [ref=f8e646]
+                - button "Leviathans Story Pack" [ref=f8e650]
+              - generic [ref=f8e651] [cursor=pointer]:
+                - button [ref=f8e652]
+                - button [ref=f8e657]
+                - button "Lithoids Species Pack" [ref=f8e661]
+              - generic [ref=f8e662] [cursor=pointer]:
+                - button [ref=f8e663]
+                - button [ref=f8e668]
+                - button "MegaCorp" [ref=f8e672]
+              - generic [ref=f8e673] [cursor=pointer]:
+                - button [ref=f8e674]
+                - button [ref=f8e679]
+                - button "Necroids Species Pack" [ref=f8e683]
+              - generic [ref=f8e684] [cursor=pointer]:
+                - button [ref=f8e685]
+                - button [ref=f8e690]
+                - button "Nemesis" [ref=f8e694]
+              - generic [ref=f8e695] [cursor=pointer]:
+                - button [ref=f8e696]
+                - button [ref=f8e701]
+                - button "Nomads" [ref=f8e705]
+              - generic [ref=f8e706] [cursor=pointer]:
+                - button [ref=f8e707]
+                - button [ref=f8e712]
+                - button "Nova Edition Upgrade Pack" [ref=f8e716]
+              - generic [ref=f8e717] [cursor=pointer]:
+                - button [ref=f8e718]
+                - button [ref=f8e723]
+                - button "Overlord" [ref=f8e727]
+              - generic [ref=f8e728] [cursor=pointer]:
+                - button [ref=f8e729]
+                - button [ref=f8e734]
+                - button "Plantoids Species Pack" [ref=f8e738]
+              - generic [ref=f8e739] [cursor=pointer]:
+                - button [ref=f8e740]
+                - button [ref=f8e745]
+                - button "Rick The Cube Species Portrait" [ref=f8e749]
+              - generic [ref=f8e750] [cursor=pointer]:
+                - button [ref=f8e751]
+                - button [ref=f8e756]
+                - button "Scenario Pack 1" [ref=f8e760]
+              - generic [ref=f8e761] [cursor=pointer]:
+                - button [ref=f8e762]
+                - button [ref=f8e767]
+                - button "Scenario Pack 2" [ref=f8e771]
+              - generic [ref=f8e772] [cursor=pointer]:
+                - button [ref=f8e773]
+                - button [ref=f8e778]
+                - button "Season 09 - Expansion Pass" [ref=f8e782]
+              - generic [ref=f8e783] [cursor=pointer]:
+                - button [ref=f8e784]
+                - button [ref=f8e789]
+                - button "Season 10" [ref=f8e793]
+              - generic [ref=f8e794] [cursor=pointer]:
+                - button [ref=f8e795]
+                - button [ref=f8e800]
+                - button "Shadows of the Shroud" [ref=f8e804]
+              - generic [ref=f8e805] [cursor=pointer]:
+                - button [ref=f8e806]
+                - button [ref=f8e811]
+                - button "Stargazer Species Portrait" [ref=f8e815]
+              - generic [ref=f8e816] [cursor=pointer]:
+                - button [ref=f8e817]
+                - button [ref=f8e822]
+                - button "Synthetic Dawn Story Pack" [ref=f8e826]
+              - generic [ref=f8e827] [cursor=pointer]:
+                - button [ref=f8e828]
+                - button [ref=f8e833]
+                - button "The Machine Age" [ref=f8e837]
+              - generic [ref=f8e838] [cursor=pointer]:
+                - button [ref=f8e839]
+                - button [ref=f8e844]
+                - button "Toxoids Species Pack" [ref=f8e848]
+              - generic [ref=f8e849] [cursor=pointer]:
+                - button [ref=f8e850]
+                - button [ref=f8e855]
+                - button "Utopia" [ref=f8e859]
+              - generic [ref=f8e860] [cursor=pointer]:
+                - button [ref=f8e861]
+                - button [ref=f8e866]
+                - button "Vipra the Vapor Species Portrait" [ref=f8e870]
+              - generic [ref=f8e871] [cursor=pointer]:
+                - button [ref=f8e872]
+                - button [ref=f8e877]
+                - button "Willpower" [ref=f8e881]
+          - button "Filter by Date" [ref=f8e883] [cursor=pointer]
+          - generic [ref=f8e884]:
+            - generic [ref=f8e885]: Some items are not possible to include in the game. You can still find them if you select this box.
+            - button "Show incompatible items" [ref=f8e886] [cursor=pointer]
+        - generic [ref=f8e892]:
+          - generic [ref=f8e893]:
+            - link [ref=f8e895] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2871620925
+              - img "Bug Fixes 4.2.4√" [ref=f8e896]
+            - generic [ref=f8e897]:
+              - link "Bug Fixes 4.2.4√" [ref=f8e911] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2871620925
+              - link "By Dr. Addiction" [ref=f8e913] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/wao123456987/myworkshopfiles/?appid=281990
+              - button [ref=f8e915] [cursor=pointer]
+          - generic [ref=f8e919]:
+            - link [ref=f8e921] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1630895523
+              - img "Bug fixes for Gaia terraforming and no districts 2.2.4" [ref=f8e922]
+            - generic [ref=f8e923]:
+              - link "Bug fixes for Gaia terraforming and no districts 2.2.4" [ref=f8e937] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1630895523
+              - link "By Dark Speaker" [ref=f8e939] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198015316951/myworkshopfiles/?appid=281990
+              - button [ref=f8e941] [cursor=pointer]
+          - generic [ref=f8e945]:
+            - link [ref=f8e947] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2164500987
+              - img "Bug Fixes" [ref=f8e948]
+            - generic [ref=f8e949]:
+              - link "Bug Fixes" [ref=f8e963] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2164500987
+              - link "By I" [ref=f8e965] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198451982789/myworkshopfiles/?appid=281990
+              - button [ref=f8e967] [cursor=pointer]
+          - generic [ref=f8e971]:
+            - link [ref=f8e973] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1911222615
+              - img "Bug Fixes" [ref=f8e974]
+            - generic [ref=f8e975]:
+              - link "Bug Fixes" [ref=f8e989] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1911222615
+              - link "By alexrider803" [ref=f8e991] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198133889260/myworkshopfiles/?appid=281990
+              - button [ref=f8e993] [cursor=pointer]
+          - generic [ref=f8e997]:
+            - link [ref=f8e999] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3233577943
+              - img "[3.12] Miscellaneous Bug Fixes" [ref=f8e1000]
+            - generic [ref=f8e1001]:
+              - link "[3.12] Miscellaneous Bug Fixes" [ref=f8e1015] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3233577943
+              - link "By sasaki412" [ref=f8e1017] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/sasaki1714/myworkshopfiles/?appid=281990
+              - button [ref=f8e1019] [cursor=pointer]
+          - generic [ref=f8e1023]:
+            - link [ref=f8e1025] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3383978343
+              - img "Ariphaos Unofficial Patch + Bug Fixes for 3.14" [ref=f8e1026]
+            - generic [ref=f8e1027]:
+              - link "Ariphaos Unofficial Patch + Bug Fixes for 3.14" [ref=f8e1041] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3383978343
+              - link "By blazeknave" [ref=f8e1043] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/blazeknave/myworkshopfiles/?appid=281990
+              - button [ref=f8e1045] [cursor=pointer]
+          - generic [ref=f8e1049]:
+            - link [ref=f8e1051] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3407002838
+              - img "Ariphaos Unofficial Patch + Bug Fixes for 3.14 OG" [ref=f8e1052]
+            - generic [ref=f8e1053]:
+              - link "Ariphaos Unofficial Patch + Bug Fixes for 3.14 OG" [ref=f8e1067] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3407002838
+              - link "By tony_sm" [ref=f8e1069] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198127043055/myworkshopfiles/?appid=281990
+              - button [ref=f8e1071] [cursor=pointer]
+          - generic [ref=f8e1075]:
+            - link [ref=f8e1077] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3755970299
+              - img "temp bug fixes for Warship girls R and MIST" [ref=f8e1078]
+            - generic [ref=f8e1079]:
+              - link "temp bug fixes for Warship girls R and MIST" [ref=f8e1093] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3755970299
+              - link "By LyVF5rpm9uv7brNY" [ref=f8e1095] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/LyVF5rpm9uv7brNY/myworkshopfiles/?appid=281990
+              - button [ref=f8e1097] [cursor=pointer]
+          - generic [ref=f8e1101]:
+            - link [ref=f8e1103] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3193914136
+              - img "Lezzi's Bugfixes [3.12]" [ref=f8e1104]
+            - generic [ref=f8e1105]:
+              - link "Lezzi's Bugfixes [3.12]" [ref=f8e1119] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3193914136
+              - link "By Lezzistrata" [ref=f8e1121] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/lezzistrata/myworkshopfiles/?appid=281990
+              - button [ref=f8e1123] [cursor=pointer]
+          - generic [ref=f8e1127]:
+            - link [ref=f8e1129] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3718461123
+              - img "Alastor's Bugfixes" [ref=f8e1130]
+            - generic [ref=f8e1131]:
+              - link "Alastor's Bugfixes" [ref=f8e1145] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3718461123
+              - link "By Alastors_Game" [ref=f8e1147] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198150427172/myworkshopfiles/?appid=281990
+              - button [ref=f8e1149] [cursor=pointer]
+          - generic [ref=f8e1153]:
+            - link [ref=f8e1155] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=785269836
+              - img "Event Bugfixes" [ref=f8e1156]
+            - generic [ref=f8e1157]:
+              - link "Event Bugfixes" [ref=f8e1171] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=785269836
+              - link "By ECHO" [ref=f8e1173] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198052428215/myworkshopfiles/?appid=281990
+              - button [ref=f8e1175] [cursor=pointer]
+          - generic [ref=f8e1179]:
+            - link [ref=f8e1181] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2273737306
+              - img "Starbases Bugfixes (Reactor, Armor, Shields)" [ref=f8e1182]
+            - generic [ref=f8e1183]:
+              - link "Starbases Bugfixes (Reactor, Armor, Shields)" [ref=f8e1197] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2273737306
+              - link "By Mealya" [ref=f8e1199] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198141245335/myworkshopfiles/?appid=281990
+              - button [ref=f8e1201] [cursor=pointer]
+          - generic [ref=f8e1205]:
+            - link [ref=f8e1207] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1959118244
+              - img "RPG Traits - General Bugfixes & Tweaks" [ref=f8e1208]
+            - generic [ref=f8e1209]:
+              - link "RPG Traits - General Bugfixes & Tweaks" [ref=f8e1223] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1959118244
+              - link "By explodoboy" [ref=f8e1225] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/explodoboy/myworkshopfiles/?appid=281990
+              - button [ref=f8e1227] [cursor=pointer]
+          - generic [ref=f8e1231]:
+            - link [ref=f8e1233] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2208679823
+              - img "(OUTDATED) SOFE Bugfixes" [ref=f8e1234]
+            - generic [ref=f8e1235]:
+              - link "(OUTDATED) SOFE Bugfixes" [ref=f8e1249] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2208679823
+              - link "By Nova Solarius" [ref=f8e1251] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/NSolarius/myworkshopfiles/?appid=281990
+              - button [ref=f8e1253] [cursor=pointer]
+          - generic [ref=f8e1257]:
+            - link [ref=f8e1259] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1191736394
+              - img "Grubsniks_assorted_bugfixes" [ref=f8e1260]
+            - generic [ref=f8e1261]:
+              - link "Grubsniks_assorted_bugfixes" [ref=f8e1275] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1191736394
+              - link "By Grubsnik" [ref=f8e1277] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198015073950/myworkshopfiles/?appid=281990
+              - button [ref=f8e1279] [cursor=pointer]
+          - generic [ref=f8e1283]:
+            - link [ref=f8e1285] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3757177420
+              - img "Stellar AI + Bug Branch" [ref=f8e1286]
+            - generic [ref=f8e1287]:
+              - link "Stellar AI + Bug Branch" [ref=f8e1301] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3757177420
+              - link "By Tempest" [ref=f8e1303] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/Tempest1273/myworkshopfiles/?appid=281990
+              - button [ref=f8e1305] [cursor=pointer]
+          - generic [ref=f8e1309]:
+            - link [ref=f8e1311] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2272161947
+              - img "Necroids Bug Fix" [ref=f8e1312]
+            - generic [ref=f8e1313]:
+              - link "Necroids Bug Fix" [ref=f8e1327] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2272161947
+              - link "By Ajey" [ref=f8e1329] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198176919346/myworkshopfiles/?appid=281990
+              - button [ref=f8e1331] [cursor=pointer]
+          - generic [ref=f8e1335]:
+            - link [ref=f8e1337] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761416318
+              - img "Wawunga's Arkship Class Districts" [ref=f8e1338]
+            - generic [ref=f8e1339]:
+              - link "Wawunga's Arkship Class Districts" [ref=f8e1353] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761416318
+              - link "By Wawunga" [ref=f8e1355] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198136725354/myworkshopfiles/?appid=281990
+              - button [ref=f8e1357] [cursor=pointer]
+          - generic [ref=f8e1361]:
+            - link [ref=f8e1363] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2633401654
+              - img "Combat Graphic Bug Fix" [ref=f8e1364]
+            - generic [ref=f8e1365]:
+              - link "Combat Graphic Bug Fix" [ref=f8e1379] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2633401654
+              - link "By Ajey" [ref=f8e1381] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198176919346/myworkshopfiles/?appid=281990
+              - button [ref=f8e1383] [cursor=pointer]
+          - generic [ref=f8e1387]:
+            - link [ref=f8e1389] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3250142195
+              - img "Uplift crash bug fix" [ref=f8e1390]
+            - generic [ref=f8e1391]:
+              - link "Uplift crash bug fix" [ref=f8e1405] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3250142195
+              - link "By neptunehs" [ref=f8e1407] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198339531819/myworkshopfiles/?appid=281990
+              - button [ref=f8e1409] [cursor=pointer]
+          - generic [ref=f8e1413]:
+            - link [ref=f8e1415] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3509171060
+              - img "4.0.21 Bug Fix" [ref=f8e1416]
+            - generic [ref=f8e1417]:
+              - link "4.0.21 Bug Fix" [ref=f8e1431] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3509171060
+              - link "By MyresMkG" [ref=f8e1433] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/MyresMkG/myworkshopfiles/?appid=281990
+              - button [ref=f8e1435] [cursor=pointer]
+          - generic [ref=f8e1439]:
+            - link [ref=f8e1441] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3753987714
+              - img "(Outdated) Psi Corp Bug Fix" [ref=f8e1442]
+            - generic [ref=f8e1443]:
+              - link "(Outdated) Psi Corp Bug Fix" [ref=f8e1457] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3753987714
+              - link "By Chipacabras" [ref=f8e1459] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198004312231/myworkshopfiles/?appid=281990
+              - button [ref=f8e1461] [cursor=pointer]
+          - generic [ref=f8e1465]:
+            - link [ref=f8e1467] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3481994032
+              - img "4.0.11 BUG FIX" [ref=f8e1468]
+            - generic [ref=f8e1469]:
+              - link "4.0.11 BUG FIX" [ref=f8e1483] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3481994032
+              - link "By ccoma01" [ref=f8e1485] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198062904536/myworkshopfiles/?appid=281990
+              - button [ref=f8e1487] [cursor=pointer]
+          - generic [ref=f8e1491]:
+            - link [ref=f8e1493] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1804911422
+              - img "Asteroid Waves Anomaly Bug Fix" [ref=f8e1494]
+            - generic [ref=f8e1495]:
+              - link "Asteroid Waves Anomaly Bug Fix" [ref=f8e1509] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1804911422
+              - link "By Wealthy Aardvark" [ref=f8e1511] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198002084836/myworkshopfiles/?appid=281990
+              - button [ref=f8e1513] [cursor=pointer]
+          - generic [ref=f8e1517]:
+            - generic [ref=f8e1518]:
+              - link "Starbase Resource Silo Bug Fix":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2819613790
+                - img "Starbase Resource Silo Bug Fix"
+            - generic [ref=f8e1519]:
+              - link "Starbase Resource Silo Bug Fix" [ref=f8e1533] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2819613790
+              - link "By erter" [ref=f8e1535] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/kerterf/myworkshopfiles/?appid=281990
+              - button [ref=f8e1537] [cursor=pointer]
+          - generic [ref=f8e1541]:
+            - generic [ref=f8e1542]:
+              - link "IBU BugFix Patch 3.12":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2611054691
+                - img "IBU BugFix Patch 3.12"
+            - generic [ref=f8e1543]:
+              - link "IBU BugFix Patch 3.12" [ref=f8e1557] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2611054691
+              - link "By Dryus" [ref=f8e1559] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198151381786/myworkshopfiles/?appid=281990
+              - button [ref=f8e1561] [cursor=pointer]
+          - generic [ref=f8e1565]:
+            - link [ref=f8e1567] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3746332472
+              - img "4.4 Opinion Modifiers bug fix" [ref=f8e1568]
+            - generic [ref=f8e1569]:
+              - link "4.4 Opinion Modifiers bug fix" [ref=f8e1583] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3746332472
+              - link "By QwertyKeyboard" [ref=f8e1585] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198908900874/myworkshopfiles/?appid=281990
+              - button [ref=f8e1587] [cursor=pointer]
+          - generic [ref=f8e1591]:
+            - generic [ref=f8e1592]:
+              - link "!000_Horizon Signal Gigastructures bug fix":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2657968030
+                - img "!000_Horizon Signal Gigastructures bug fix"
+            - generic [ref=f8e1593]:
+              - link "!000_Horizon Signal Gigastructures bug fix" [ref=f8e1607] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2657968030
+              - link "By Scyobi_Empire" [ref=f8e1609] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/5cy0b1/myworkshopfiles/?appid=281990
+              - button [ref=f8e1611] [cursor=pointer]
+          - generic [ref=f8e1615]:
+            - link [ref=f8e1617] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2809207844
+              - img "Subjugation CB Bug Fix - Status Quo" [ref=f8e1618]
+            - generic [ref=f8e1619]:
+              - link "Subjugation CB Bug Fix - Status Quo" [ref=f8e1633] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2809207844
+              - link "By ShepardCJS" [ref=f8e1635] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/ShepardCJS/myworkshopfiles/?appid=281990
+              - button [ref=f8e1637] [cursor=pointer]
+          - generic [ref=f8e1641]:
+            - generic [ref=f8e1642]:
+              - link "Bug fix in Gestalt robot assembly plant【ABANDONED]":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3247703705
+                - img "Bug fix in Gestalt robot assembly plant【ABANDONED]"
+            - generic [ref=f8e1643]:
+              - link "Bug fix in Gestalt robot assembly plant【ABANDONED]" [ref=f8e1657] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3247703705
+              - link "By 橡皮泥的记忆" [ref=f8e1659] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198237410072/myworkshopfiles/?appid=281990
+              - button [ref=f8e1661] [cursor=pointer]
+      - generic [ref=f8e1665]:
+        - generic [ref=f8e1666]:
+          - text: "Per page:"
+          - combobox [ref=f8e1667] [cursor=pointer]:
+            - generic [ref=f8e1668]: "30"
+        - generic [ref=f8e1673]:
+          - button [disabled] [ref=f8e1674] [cursor=pointer]
+          - generic [ref=f8e1678]:
+            - button "1" [ref=f8e1679]
+            - button "2" [ref=f8e1680] [cursor=pointer]
+            - button "3" [ref=f8e1681] [cursor=pointer]
+            - generic [ref=f8e1682]: ...
+            - button "55" [ref=f8e1683] [cursor=pointer]
+          - button [ref=f8e1684] [cursor=pointer]
+  - contentinfo [ref=f8e1689]:
+    - generic [ref=f8e1690]:
+      - generic [ref=f8e1691]:
+        - link [ref=f8e1692] [cursor=pointer]:
+          - /url: https://store.steampowered.com/?snr=_44_44_
+        - link [ref=f8e1703] [cursor=pointer]:
+          - /url: https://valvesoftware.com
+      - paragraph [ref=f8e1709]: © 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.VAT included in all prices where applicable.
+      - generic [ref=f8e1710]:
+        - link [ref=f8e1711] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Steam
+        - link [ref=f8e1714] [cursor=pointer]:
+          - /url: https://bsky.app/profile/steampowered.com
+        - link [ref=f8e1717] [cursor=pointer]:
+          - /url: https://facebook.com/steam
+        - link [ref=f8e1720] [cursor=pointer]:
+          - /url: https://twitter.com/steam
+    - generic [ref=f8e1723]:
+      - heading "STEAM" [level=3] [ref=f8e1724]
+      - link "About Steam" [ref=f8e1725] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=_44_44_
+      - link "Steam SSA" [ref=f8e1726] [cursor=pointer]:
+        - /url: https://store.steampowered.com/subscriber_agreement/?snr=_44_44_
+      - link "Steamworks" [ref=f8e1727] [cursor=pointer]:
+        - /url: https://partner.steamgames.com/
+      - link "Steam Distribution" [ref=f8e1728] [cursor=pointer]:
+        - /url: https://partner.steamgames.com/steamdirect
+      - link "Gift Cards" [ref=f8e1729] [cursor=pointer]:
+        - /url: https://store.steampowered.com/digitalgiftcards/?snr=_44_44_
+    - generic [ref=f8e1730]:
+      - heading "VALVE" [level=3] [ref=f8e1731]
+      - link "About Valve" [ref=f8e1732] [cursor=pointer]:
+        - /url: https://valvesoftware.com/about
+      - link "Jobs" [ref=f8e1733] [cursor=pointer]:
+        - /url: https://valvesoftware.com/
+      - link "Hardware" [ref=f8e1734] [cursor=pointer]:
+        - /url: https://store.steampowered.com/hardware/?snr=_44_44_
+      - link "Recycling" [ref=f8e1735] [cursor=pointer]:
+        - /url: https://store.steampowered.com/hardware_recycling/?snr=_44_44_
+    - generic [ref=f8e1736]:
+      - heading "LEGAL" [level=3] [ref=f8e1737]
+      - link "Privacy" [ref=f8e1738] [cursor=pointer]:
+        - /url: https://store.steampowered.com/privacy_agreement/?snr=_44_44_
+      - link "Accessibility" [ref=f8e1739] [cursor=pointer]:
+        - /url: https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436
+      - link "Notices & Policies" [ref=f8e1740] [cursor=pointer]:
+        - /url: https://store.steampowered.com/legal/?snr=_44_44_
+      - link "Cookies" [ref=f8e1741] [cursor=pointer]:
+        - /url: https://store.steampowered.com/account/cookiepreferences/?snr=_44_44_
+      - link "Refunds" [ref=f8e1742] [cursor=pointer]:
+        - /url: https://store.steampowered.com/steam_refunds/?snr=_44_44_
+    - generic [ref=f8e1743]:
+      - heading "MORE" [level=3] [ref=f8e1744]
+      - link "Get Steam" [ref=f8e1745] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=_44_44_
+      - link "Get Mobile Apps" [ref=f8e1746] [cursor=pointer]:
+        - /url: https://store.steampowered.com/mobile/?snr=_44_44_
+      - link "Get Support" [ref=f8e1747] [cursor=pointer]:
+        - /url: https://help.steampowered.com/
+      - link "My Account" [ref=f8e1748] [cursor=pointer]:
+        - /url: https://store.steampowered.com/account/?snr=_44_44_

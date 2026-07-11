@@ -4,9 +4,9 @@
 
 | Mod | Source | Version-Locked | Performance Impact | Notes |
 |-----|--------|----------------|--------------------|-------|
-| **Universal Resource Patch (URP)** | [Steam Workshop](https://steamcommunity.com/workshop/browse/?appid=281990&searchtext=Universal+Resource+Patch) | Recommended | None | Fixes hundreds of vanilla resource bugs, wrong modifiers, duplicate entries, and tooltip errors. By G00. The #1 most essential bugfix mod. |
-| **Stellaris: Bug Fixes** | [Steam Workshop](https://steamcommunity.com/workshop/browse/?appid=281990&searchtext=Stellaris+Bug+Fixes) | Recommended | None | Comprehensive bugfix mod covering event errors, AI issues, text errors, and scripting bugs. By Lola (formerly by Fazan). |
-| **Pinwheel Movement Fix** | [Steam Workshop](https://steamcommunity.com/workshop/browse/?appid=281990&searchtext=Pinwheel+Movement+Fix) | Recommended | None | Prevents ships from orbiting in the pinwheel pattern (an exploit the AI can't use correctly). Keeps fleet movement predictable. |
+| **Lezzi's Bugfixes** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3193914136) | Recommended | None | Comprehensive bugfix collection by Lezzi. Fixes Artillery Combat Computer behavior, Land Appropriation colony deletion, Grave Guardians first-contact issues, and more. Original code, standalone. |
+| **Miscellaneous Bug Fixes** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3233577943) | Recommended | None | Broad collection of vanilla bug fixes. Covers event errors, AI issues, and scripting bugs. |
+| **Event Bugfixes** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=785269836) | Recommended | None | Fixes bugs in vanilla event chains, anomalies, and scripted content. Complements the general bugfix mods above. |
 
 ## Installation Notes
 
@@ -16,7 +16,7 @@
 
 ## How to Add More
 
-Browse the Steam Workshop with the `Bug Fixes` tag. When adding a bugfix mod, verify it:
+Browse the Steam Workshop with the `Fixes` tag. When adding a bugfix mod, verify it:
 1. Doesn't add new content (pure fixes only)
 2. Is compatible with the current Stellaris version
 3. Lists its fix changelog so you know what's being patched

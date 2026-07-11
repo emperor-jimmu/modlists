@@ -1,0 +1,313 @@
+- generic [ref=f13e3]:
+  - banner [ref=f13e4]:
+    - generic [ref=f13e5]:
+      - link "Link to the Steam Homepage" [ref=f13e8] [cursor=pointer]:
+        - /url: https://store.steampowered.com/
+        - img "Link to the Steam Homepage" [ref=f13e9]
+      - navigation "Global Menu" [ref=f13e10]:
+        - link "STORE" [ref=f13e11] [cursor=pointer]:
+          - /url: https://store.steampowered.com/
+        - link "COMMUNITY" [ref=f13e12] [cursor=pointer]:
+          - /url: https://steamcommunity.com/
+        - link "About" [ref=f13e13] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/
+        - link "SUPPORT" [ref=f13e14] [cursor=pointer]:
+          - /url: https://help.steampowered.com/en/
+      - navigation "Account Menu" [ref=f13e16]:
+        - link "Install Steam" [ref=f13e17] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/
+        - link "sign in" [ref=f13e19] [cursor=pointer]:
+          - /url: https://steamcommunity.com/login/home/?goto=sharedfiles%2Ffiledetails%2F%3Fid%3D3193914136
+        - text: "| language"
+  - main [ref=f13e20]:
+    - generic [ref=f13e21]:
+      - generic [ref=f13e23]:
+        - link "Store Page" [ref=f13e26] [cursor=pointer]:
+          - /url: https://store.steampowered.com/app/281990?snr=2_100100_100101_100103_apphubheader
+        - generic [ref=f13e28]: Stellaris
+        - generic [ref=f13e30]:
+          - link "All" [ref=f13e31] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990
+          - link "Discussions" [ref=f13e32] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/discussions/
+          - link "Screenshots" [ref=f13e33] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/screenshots/
+          - link "Artwork" [ref=f13e34] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/images/
+          - link "Broadcasts" [ref=f13e35] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/broadcasts/
+          - link "Videos" [ref=f13e36] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/videos/
+          - link "Workshop" [ref=f13e37] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/workshop/
+          - link "News" [ref=f13e38] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/allnews/
+          - link "Guides" [ref=f13e39] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/guides/
+          - link "Reviews" [ref=f13e40] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/281990/reviews/
+      - generic [ref=f13e42]:
+        - link "Stellaris" [ref=f13e43] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990
+        - text: ">"
+        - link "Workshop" [ref=f13e44] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/281990/workshop/
+        - text: ">"
+        - link "Lezzistrata's Workshop" [ref=f13e45] [cursor=pointer]:
+          - /url: https://steamcommunity.com/id/lezzistrata/myworkshopfiles/?appid=281990
+    - generic [ref=f13e47]:
+      - generic [ref=f13e48]:
+        - generic [ref=f13e49]: 90 ratings
+        - generic [ref=f13e54]: Lezzi's Bugfixes [3.12]
+      - generic [ref=f13e56]:
+        - link "Description" [ref=f13e57] [cursor=pointer]:
+          - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3193914136
+        - link "Discussions0" [ref=f13e58] [cursor=pointer]:
+          - /url: https://steamcommunity.com/sharedfiles/filedetails/discussions/3193914136
+        - link "Comments17" [ref=f13e60] [cursor=pointer]:
+          - /url: https://steamcommunity.com/sharedfiles/filedetails/comments/3193914136
+        - link "Change Notes" [ref=f13e62] [cursor=pointer]:
+          - /url: https://steamcommunity.com/sharedfiles/filedetails/changelog/3193914136
+      - generic [ref=f13e64]:
+        - generic [ref=f13e71]:
+          - button "7" [ref=f13e74] [cursor=pointer]
+          - generic [ref=f13e76]:
+            - button [ref=f13e77] [cursor=pointer]
+            - button [ref=f13e78] [cursor=pointer]
+          - button [ref=f13e79] [cursor=pointer]
+          - generic [ref=f13e82]:
+            - button "Favorite" [ref=f13e83] [cursor=pointer]
+            - button "Share" [ref=f13e86] [cursor=pointer]
+          - button "Add to Collection" [ref=f13e88] [cursor=pointer]
+          - button [ref=f13e91] [cursor=pointer]
+        - generic [ref=f13e92]:
+          - link "Fixes" [ref=f13e94] [cursor=pointer]:
+            - /url: https://steamcommunity.com/workshop/browse/?appid=281990&browsesort=toprated&section=readytouseitems&requiredtags%5B%5D=Fixes
+          - generic [ref=f13e96]:
+            - generic [ref=f13e97]:
+              - generic [ref=f13e98]: File Size
+              - generic [ref=f13e99]: Posted
+              - generic [ref=f13e100]: Updated
+            - generic [ref=f13e101]:
+              - generic [ref=f13e102]: 213.683 KB
+              - generic [ref=f13e103]: 21 Mar, 2024 @ 4:39am
+              - generic [ref=f13e104]: 14 May, 2024 @ 9:44pm
+            - generic [ref=f13e105]:
+              - text: 4 Change Notes
+              - link "( view )" [ref=f13e107] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/changelog/3193914136
+      - generic [ref=f13e108]:
+        - generic [ref=f13e110]:
+          - generic [ref=f13e111]:
+            - generic [ref=f13e112]: Created by
+            - generic [ref=f13e115]:
+              - link [ref=f13e116] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/lezzistrata
+              - generic [ref=f13e119]: Lezzistrata Online
+          - generic [ref=f13e121]:
+            - text: See all
+            - link "248 collections" [ref=f13e122] [cursor=pointer]:
+              - /url: https://steamcommunity.com/workshop/browse/?browsesort=toprated&section=collections&appid=281990&childpublishedfileid=3193914136
+            - text: created by Lezzistrata and other people (some may be hidden)
+          - table [ref=f13e124]:
+            - rowgroup [ref=f13e125]:
+              - row [ref=f13e126]:
+                - cell "8,734" [ref=f13e127]
+                - cell "Unique Visitors" [ref=f13e128]
+              - row [ref=f13e129]:
+                - cell "727" [ref=f13e130]
+                - cell "Current Subscribers" [ref=f13e131]
+              - row [ref=f13e132]:
+                - cell "149" [ref=f13e133]
+                - cell "Current Favorites" [ref=f13e134]
+        - generic [ref=f13e136]:
+          - generic [ref=f13e138]:
+            - heading "Subscribe to download Lezzi's Bugfixes [3.12]" [level=1] [ref=f13e139]: Subscribe to downloadLezzi's Bugfixes [3.12]
+            - generic [ref=f13e140]: Subscribe
+          - generic [ref=f13e145]:
+            - generic [ref=f13e146]: In 1 collection by Lezzistrata
+            - button "Lezzi's Mods 13 items" [ref=f13e148] [cursor=pointer]:
+              - generic [ref=f13e149]: Lezzi's Mods
+              - generic [ref=f13e152]: 13 items
+          - generic [ref=f13e153]:
+            - generic [ref=f13e154]: Description
+            - generic [ref=f13e155]:
+              - text: A collection of bugfixes I've started offloading in to a standalone mod. All the fixes in this mod are original code I've written. Will keep adding as I fix things, and removing if/when PDX incorporates in to vanilla.
+              - generic [ref=f13e156]: "Current bugs fixed:"
+              - list [ref=f13e157]:
+                - listitem [ref=f13e158]: Artillery Combat Computer (*new) - Not a true fix, but does effectively patch the majority of the weirdness with artillery combat computers. A long-standing bug has been causing ships to rush in to close range before backing off to a more appropriate distance.
+                - listitem [ref=f13e159]: Land Appropriation - If you're invading planets with an army as a gestalt (or as a normal empire with the Land Appropriation policy turned on) the event which resettles pops to the conquered planet has multiple problems. The biggest problem is that it doesn't check how many pops are left on the planet its resettling from, which results in colonies being removed entirely.
+                - listitem [ref=f13e160]: Grave Guardians - When this fleet is spawned by the Lone Object Astral Rift it starts a first contact event that can't be completed, and loops infinitely. The fix gives you instant comms with that country as soon as you assign an envoy. - fixed in vanilla
+              - generic [ref=f13e161]: "Load Order:"
+              - text: Put this towards the TOP of your mod list. If you have other mods that affect ship combat computers, make sure they load after this so that they can overwrite my changes to that.
+          - generic [ref=f13e163]:
+            - generic [ref=f13e164]:
+              - generic [ref=f13e165]: 17 Comments
+              - generic [ref=f13e169]:
+                - link "<" [ref=f13e170]:
+                  - /url: javascript:void(0);
+                - generic [ref=f13e171]: 1 2
+                - link ">" [ref=f13e172] [cursor=pointer]:
+                  - /url: javascript:void(0);
+            - generic [ref=f13e174]:
+              - generic [ref=f13e176]:
+                - generic [ref=f13e177]:
+                  - link [ref=f13e179] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561197972261899
+                  - generic [ref=f13e181]:
+                    - link "Strife" [ref=f13e183] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561197972261899
+                    - generic "28 February, 2025 @ 10:30:15 pm EEST" [ref=f13e184]: 28 Feb, 2025 @ 10:30pm
+                - generic [ref=f13e186]: ad like to know 2 :-P
+              - generic [ref=f13e188]:
+                - generic [ref=f13e189]:
+                  - link [ref=f13e191] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/forealdo25
+                  - generic [ref=f13e193]:
+                    - link "Hot Wet Nobel Laureates" [ref=f13e195] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/forealdo25
+                    - generic "25 November, 2024 @ 8:43:13 am EEST" [ref=f13e196]: 25 Nov, 2024 @ 8:43am
+                - generic [ref=f13e198]: Is this still necessary? I know 3.13 may have fixed the thing with land appropriation.
+              - generic [ref=f13e200]:
+                - generic [ref=f13e201]:
+                  - link [ref=f13e203] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561198063477123
+                  - generic [ref=f13e205]:
+                    - link "RegularBlackChurnerBerbilBergle" [ref=f13e207] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561198063477123
+                    - generic "4 June, 2024 @ 12:24:58 am EEST" [ref=f13e208]: 4 Jun, 2024 @ 12:24am
+                - generic [ref=f13e210]: nice SOAD reference lol
+              - generic [ref=f13e212]:
+                - generic [ref=f13e213]:
+                  - link [ref=f13e215] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561198062123412
+                  - generic [ref=f13e218]:
+                    - link "Chaddeus" [ref=f13e220] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561198062123412
+                    - generic "28 May, 2024 @ 11:27:56 pm EEST" [ref=f13e221]: 28 May, 2024 @ 11:27pm
+                - generic [ref=f13e223]: and this is why i love the fans of stellaris. yalll are just proactive
+              - generic [ref=f13e225]:
+                - generic [ref=f13e226]:
+                  - link [ref=f13e228] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/lezzistrata
+                  - generic [ref=f13e230]:
+                    - generic [ref=f13e231]:
+                      - link "Lezzistrata" [ref=f13e232] [cursor=pointer]:
+                        - /url: https://steamcommunity.com/id/lezzistrata
+                      - generic [ref=f13e233]: "[author]"
+                    - generic "7 April, 2024 @ 9:59:13 pm EEST" [ref=f13e234]: 7 Apr, 2024 @ 9:59pm
+                - generic [ref=f13e236]: "@Beaver - Yup! It's always been like that, but the vanilla code that handles it is a mess. I play Terravore too, and it annoyed me so much, that's what made me start working on this mod."
+              - generic [ref=f13e238]:
+                - generic [ref=f13e239]:
+                  - link [ref=f13e241] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/TheBeaver
+                  - generic [ref=f13e243]:
+                    - link "Beaver" [ref=f13e245] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/TheBeaver
+                    - generic "7 April, 2024 @ 1:32:31 am EEST" [ref=f13e246]: 7 Apr, 2024 @ 1:32am
+                - generic [ref=f13e248]: wait when I conquer planets with my Terravore those pops that appear are pulled from other random planets??? Thanks for making this mod it's appreciated!
+              - generic [ref=f13e250]:
+                - generic [ref=f13e251]:
+                  - link [ref=f13e253] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/lezzistrata
+                  - generic [ref=f13e255]:
+                    - generic [ref=f13e256]:
+                      - link "Lezzistrata" [ref=f13e257] [cursor=pointer]:
+                        - /url: https://steamcommunity.com/id/lezzistrata
+                      - generic [ref=f13e258]: "[author]"
+                    - generic "28 March, 2024 @ 5:38:29 am EEST" [ref=f13e259]: 28 Mar, 2024 @ 5:38am
+                - generic [ref=f13e261]: "@Shizuri - It should, just make sure that mod loads *after* this one."
+              - generic [ref=f13e263]:
+                - generic [ref=f13e264]:
+                  - link [ref=f13e266] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/sonofcosmiczap
+                  - generic [ref=f13e269]:
+                    - link "SonOfCosmicZap" [ref=f13e271] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/sonofcosmiczap
+                    - generic "28 March, 2024 @ 3:56:45 am EEST" [ref=f13e272]: 28 Mar, 2024 @ 3:56am
+                - generic [ref=f13e274]: Good news! Paradox fixed the Grave Guardians glitch in the Eridanus 3.11.3 beta.
+              - generic [ref=f13e276]:
+                - generic [ref=f13e277]:
+                  - link [ref=f13e279] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561198021478310
+                  - generic [ref=f13e281]:
+                    - link "gobbibomb" [ref=f13e283] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561198021478310
+                    - generic "27 March, 2024 @ 9:22:20 pm EEST" [ref=f13e284]: 27 Mar, 2024 @ 9:22pm
+                - generic [ref=f13e286]: Ah bro don't know you, i send you fix when found bug and fix.
+              - generic [ref=f13e288]:
+                - generic [ref=f13e289]:
+                  - link [ref=f13e291] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561198929517872
+                  - generic [ref=f13e294]:
+                    - link "Shizuri" [ref=f13e296] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561198929517872
+                    - generic "27 March, 2024 @ 5:01:15 pm EEST" [ref=f13e297]: 27 Mar, 2024 @ 5:01pm
+                - generic [ref=f13e299]: Will this work fine with Combat Computer Fix Mod?
+            - generic [ref=f13e301]:
+              - link "<" [ref=f13e302]:
+                - /url: javascript:void(0);
+              - generic [ref=f13e303]: 1 2
+              - link ">" [ref=f13e304] [cursor=pointer]:
+                - /url: javascript:void(0);
+    - generic [ref=f13e309]:
+      - generic [ref=f13e310]:
+        - generic [ref=f13e311]:
+          - link [ref=f13e312] [cursor=pointer]:
+            - /url: https://store.steampowered.com/?snr=2_44_44_
+          - link [ref=f13e323] [cursor=pointer]:
+            - /url: https://valvesoftware.com
+        - paragraph [ref=f13e329]: © 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.VAT included in all prices where applicable.
+        - generic [ref=f13e330]:
+          - link [ref=f13e331] [cursor=pointer]:
+            - /url: https://www.youtube.com/@Steam
+          - link [ref=f13e334] [cursor=pointer]:
+            - /url: https://bsky.app/profile/steampowered.com
+          - link [ref=f13e337] [cursor=pointer]:
+            - /url: https://facebook.com/steam
+          - link [ref=f13e340] [cursor=pointer]:
+            - /url: https://twitter.com/steam
+      - generic [ref=f13e343]:
+        - heading "STEAM" [level=3] [ref=f13e344]
+        - link "About Steam" [ref=f13e345] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/?snr=2_44_44_
+        - link "Steam SSA" [ref=f13e346] [cursor=pointer]:
+          - /url: https://store.steampowered.com/subscriber_agreement/?snr=2_44_44_
+        - link "Steamworks" [ref=f13e347] [cursor=pointer]:
+          - /url: https://partner.steamgames.com/
+        - link "Steam Distribution" [ref=f13e348] [cursor=pointer]:
+          - /url: https://partner.steamgames.com/steamdirect
+        - link "Gift Cards" [ref=f13e349] [cursor=pointer]:
+          - /url: https://store.steampowered.com/digitalgiftcards/?snr=2_44_44_
+      - generic [ref=f13e350]:
+        - heading "VALVE" [level=3] [ref=f13e351]
+        - link "About Valve" [ref=f13e352] [cursor=pointer]:
+          - /url: https://valvesoftware.com/about
+        - link "Jobs" [ref=f13e353] [cursor=pointer]:
+          - /url: https://valvesoftware.com/
+        - link "Hardware" [ref=f13e354] [cursor=pointer]:
+          - /url: https://store.steampowered.com/hardware/?snr=2_44_44_
+        - link "Recycling" [ref=f13e355] [cursor=pointer]:
+          - /url: https://store.steampowered.com/hardware_recycling/?snr=2_44_44_
+      - generic [ref=f13e356]:
+        - heading "LEGAL" [level=3] [ref=f13e357]
+        - link "Privacy" [ref=f13e358] [cursor=pointer]:
+          - /url: https://store.steampowered.com/privacy_agreement/?snr=2_44_44_
+        - link "Accessibility" [ref=f13e359] [cursor=pointer]:
+          - /url: https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436
+        - link "Notices & Policies" [ref=f13e360] [cursor=pointer]:
+          - /url: https://store.steampowered.com/legal/?snr=2_44_44_
+        - link "Cookies" [ref=f13e361] [cursor=pointer]:
+          - /url: https://store.steampowered.com/account/cookiepreferences/?snr=2_44_44_
+        - link "Refunds" [ref=f13e362] [cursor=pointer]:
+          - /url: https://store.steampowered.com/steam_refunds/?snr=2_44_44_
+      - generic [ref=f13e363]:
+        - heading "MORE" [level=3] [ref=f13e364]
+        - link "Get Steam" [ref=f13e365] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/?snr=2_44_44_
+        - link "Get Mobile Apps" [ref=f13e366] [cursor=pointer]:
+          - /url: https://store.steampowered.com/mobile/?snr=2_44_44_
+        - link "Get Support" [ref=f13e367] [cursor=pointer]:
+          - /url: https://help.steampowered.com/
+        - link "My Account" [ref=f13e368] [cursor=pointer]:
+          - /url: https://store.steampowered.com/account/?snr=2_44_44_
