@@ -56,7 +56,7 @@ A curated, categorized modlist for **Crusader Kings 3** (latest version, all DLC
 
 ## Version Compatibility
 
-This guide targets CK3 **v1.15.x** (all DLC). CK3 auto-updates on Steam. To stay on the guide's version:
+This guide targets CK3 **v1.19.x** (all DLC). CK3 auto-updates on Steam. To stay on the guide's version:
 
 1. Steam -> Right-click CK3 -> Properties -> Betas
 2. Select the version matching this guide

@@ -5,8 +5,8 @@ Non-realistic content: supernatural, magical, and fantasy elements. These mods c
 ## Dark Ages
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2878901234
-- **Mod Version:** 1.15.x
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-10
 - **Load Order:** Late (after all other mods)
 - **Essential:** No
@@ -22,7 +22,7 @@ Post-apocalyptic total conversion set in a dark fantasy version of Europe. Undea
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2856789012
 - **Mod Version:** 1.7.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-01
 - **Load Order:** Late
 - **Essential:** No
@@ -37,8 +37,8 @@ Total conversion set in an original dark fantasy world. Unique magic system, sha
 ## After the End (Fan Fork)
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2865678901
-- **Mod Version:** 1.15.x
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-15
 - **Load Order:** Late
 - **Essential:** No

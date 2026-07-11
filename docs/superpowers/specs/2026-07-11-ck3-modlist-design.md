@@ -65,8 +65,8 @@ Each category is a markdown file. Mod entries separated by `---`:
 ## Mod Name
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=XXXX
-- **Mod Version:** 1.15.3
-- **CK3 Version:** 1.15.x (also note min patch if known, e.g. "1.14.0+")
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x (also note min patch if known, e.g. "1.19.0+")
 - **Updated:** 2026-06-20
 - **Load Order:** Early / Mid / Late
 - **Essential:** Yes / No

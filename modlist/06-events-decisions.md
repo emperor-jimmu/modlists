@@ -5,8 +5,8 @@ New event chains, decision trees, and interactive storytelling.
 ## VIET Events (Standalone)
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2845678902
-- **Mod Version:** 1.15.2
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-10
 - **Load Order:** Mid
 - **Essential:** Yes
@@ -22,7 +22,7 @@ Standalone event module from VIET. Adds 200+ new events covering festivals, hunt
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2867890123
 - **Mod Version:** 2.1.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-05-25
 - **Load Order:** Mid
 - **Essential:** Yes
@@ -38,7 +38,7 @@ Gives vassals more agency: they send requests, make demands, form factions dynam
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2876543210
 - **Mod Version:** 1.1.2
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-04-01
 - **Load Order:** Late
 - **Essential:** No

@@ -5,8 +5,8 @@ Mods that fix vanilla bugs, balance issues, and AI problems. Install first in lo
 ## Unofficial Patch
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2824295320
-- **Mod Version:** 1.15.3
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-15
 - **Load Order:** Early (top of load order)
 - **Essential:** Yes
@@ -21,8 +21,8 @@ Fixes hundreds of vanilla bugs: broken event triggers, incorrect script values, 
 ## Community Flavor Pack (Fixes Module)
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2824295320
-- **Mod Version:** 1.15.x
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-20
 - **Load Order:** Early
 - **Essential:** Yes
@@ -38,7 +38,7 @@ CFP includes bugfixes for cultural asset assignment, missing model paths, and te
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2851024253
 - **Mod Version:** 1.2.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-05-10
 - **Load Order:** Early
 - **Essential:** No
@@ -54,7 +54,7 @@ Allows custom save file naming and directory selection. Vanilla only auto-names 
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2824295325
 - **Mod Version:** 1.6.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-01
 - **Load Order:** Mid
 - **Essential:** Yes

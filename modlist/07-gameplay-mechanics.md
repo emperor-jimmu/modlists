@@ -5,8 +5,8 @@ New and expanded systems: laws, council, warfare, succession, economy.
 ## Crown Laws
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2871234567
-- **Mod Version:** 1.15.0
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-05
 - **Load Order:** Mid
 - **Essential:** Yes
@@ -22,7 +22,7 @@ Adds meaningful crown authority laws with multiple tiers and vassal contracts. I
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2882345678
 - **Mod Version:** 1.2.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-05-10
 - **Load Order:** Mid
 - **Essential:** No
@@ -38,7 +38,7 @@ Adds a new court position: Seneschal (steward of the realm). Manages domain logi
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2889012345
 - **Mod Version:** 1.6.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-01
 - **Load Order:** Mid
 - **Essential:** No
@@ -53,8 +53,8 @@ Adds 15+ new court positions: Chancellor of the Exchequer, Master of Horse, Spym
 ## Population Control
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2890123456
-- **Mod Version:** 1.15.0
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-12
 - **Load Order:** Late
 - **Essential:** No (see Performance Tools category)

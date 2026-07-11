@@ -5,8 +5,8 @@ Adds new cultures, faiths, regional flavor, and cultural mechanics.
 ## RICE — Regional Immersion and Cultural Enrichment
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2834567890
-- **Mod Version:** 1.15.x
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-15
 - **Load Order:** Mid
 - **Essential:** Yes
@@ -21,8 +21,8 @@ Adds regional flavor packs for underdeveloped regions: Siberia, Baltic, Sahel, T
 ## VIET — Vanilla Immersion, Events and Traits
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2845678901
-- **Mod Version:** 1.15.2
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-10
 - **Load Order:** Mid (after RICE)
 - **Essential:** Yes
@@ -37,8 +37,8 @@ Hundreds of new flavor events, decisions, and traits tied to culture, religion, 
 ## More Bookmarks+
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2851234567
-- **Mod Version:** 1.15.x
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-20
 - **Load Order:** Mid
 - **Essential:** Yes

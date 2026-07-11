@@ -1,5 +1,5 @@
 #let version = read("VERSION").trim()
-#let ck3-version = "1.15.x"
+#let ck3-version = read("data/ck3-version").trim()
 #let guide-date = "July 2026"
 
 #set page(

@@ -22,7 +22,7 @@ Adds 50+ new music tracks in period-authentic styles: medieval chants, folk inst
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2873456789
 - **Mod Version:** 1.1.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-05-01
 - **Load Order:** Late
 - **Essential:** No

@@ -5,8 +5,8 @@ Mods that improve game performance, reduce lag, or optimize loading.
 ## CK3 Performance Plus
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2841234567
-- **Mod Version:** 1.15.0
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-10
 - **Load Order:** Early
 - **Essential:** Yes
@@ -21,8 +21,8 @@ Optimizes AI calculations, reduces redundant character checks, and streamlines m
 ## Population Control
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2890123456
-- **Mod Version:** 1.15.0
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-12
 - **Load Order:** Late
 - **Essential:** No
@@ -38,7 +38,7 @@ Caps lowborn character counts. By 1300, vanilla CK3 has 15,000+ characters. This
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2891234567
 - **Mod Version:** 1.0.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-01
 - **Load Order:** Early
 - **Essential:** No

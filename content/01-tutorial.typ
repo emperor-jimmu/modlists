@@ -334,13 +334,13 @@ Once you're an emperor with stabilized succession, the game changes:
 
 #heading(level: 2)[Staying on the Right CK3 Version]
 
-CK3 auto-updates on Steam. This guide targets CK3 **v1.15.x**. When the game updates to a new major version:
+CK3 auto-updates on Steam. This guide targets CK3 **v1.19.x**. When the game updates to a new major version:
 
 #block[
 *To stay on this guide's version:*
 
 1. Steam Library > Right-click Crusader Kings 3 > Properties
-2. Betas tab > Select the version this guide targets (e.g., "1.15 - 1.15.x")
+2. Betas tab > Select the version this guide targets (e.g., "1.19 - 1.19.x")
 3. Steam will downgrade CK3 to that version
 4. Your mods will continue to work
 

@@ -5,8 +5,8 @@ Visual and terrain improvements for the game map.
 ## Clear Map
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2847198345
-- **Mod Version:** 1.15.0
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-12
 - **Load Order:** Early
 - **Essential:** Yes
@@ -38,7 +38,7 @@ Replaces the vanilla dark/oily water texture with brighter, clearer water. Match
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2869012345
 - **Mod Version:** 1.1.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-05-20
 - **Load Order:** Late (applied last)
 - **Essential:** No

@@ -50,6 +50,10 @@ Entries separated by `---`. See the design spec at `docs/superpowers/specs/2026-
 - The VERSION file controls the PDF version string
 - Performance data goes in `data/performance.yaml`
 
+## CK3 Version
+
+The current CK3 version is defined in `data/ck3-version` (e.g. `1.19.x`). All mods added to this project MUST work with this version. To determine the current CK3 version, check https://ck3.paradoxwikis.com/Patch or https://steamdb.info/app/1158310/. Update `data/ck3-version` when CK3 receives a new patch. When in doubt about a mod's compatibility with the target version, DO NOT add it.
+
 ## CK3 Tutorial
 
 The tutorial in `content/01-tutorial.typ` teaches a beginner how to play CK3 (2026). Deep dives: Marriage & Land, Succession & Dynasties, Religion, Vassal Management.

@@ -6,7 +6,7 @@ Adult-oriented mods adding mature content. Separate from the main guide — enab
 
 - **Link:** https://www.loverslab.com/files/file/XXXX-carnalitas/
 - **Mod Version:** 3.0.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-01
 - **Load Order:** Late (after all other mods)
 - **Essential:** No
@@ -24,7 +24,7 @@ Framework adding adult mechanics: fertility, seduction, pregnancy, courtly love,
 
 - **Link:** https://www.loverslab.com/files/file/XXXX-carnalitas-unlocked/
 - **Mod Version:** 1.5.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-05-15
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)

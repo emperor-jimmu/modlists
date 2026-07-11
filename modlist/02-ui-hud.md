@@ -5,8 +5,8 @@ Interface improvements, tooltip enhancements, and quality-of-life changes.
 ## Better UI Scaling
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2872154321
-- **Mod Version:** 1.15.0
-- **CK3 Version:** 1.15.x
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-10
 - **Load Order:** Early (before other UI mods)
 - **Essential:** Yes
@@ -22,7 +22,7 @@ Fixes UI scaling for high-resolution monitors (1440p, 4K). Vanilla scaling makes
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2881034987
 - **Mod Version:** 1.3.0
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-04-20
 - **Load Order:** Mid
 - **Essential:** No
@@ -38,7 +38,7 @@ Categorizes and groups notifications so the top bar doesn't overflow with icons.
 
 - **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2865143289
 - **Mod Version:** 1.2.1
-- **CK3 Version:** 1.15.x
+- **CK3 Version:** 1.19.x
 - **Updated:** 2026-05-15
 - **Load Order:** Mid
 - **Essential:** No
