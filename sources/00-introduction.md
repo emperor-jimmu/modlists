@@ -41,9 +41,17 @@ This guide **explicitly excludes** cheating or overpowered mods. You will not fi
 
 The goal is a challenging, rewarding simulation — not a shortcut to max level. If you want to trivialise the game, this is not the guide for you.
 
-## Baseline Resolution
+## Baseline Profile
 
-All visual mods in this guide are selected and tested at **3840 × 2160 (4K)**. If you are playing at 1080p or 1440p, some texture packs will still improve quality, but you may need to downscale certain 4K-only assets. Performance impact notes at each entry account for scaling.
+This guide targets a specific hardware baseline. Mods marked **★ Baseline** throughout the guide form the recommended profile for this setup:
+
+| Component | Spec |
+|-----------|------|
+| **GPU** | RTX 4080 Super (16 GB VRAM) |
+| **RAM** | 64 GB |
+| **Target** | 4K, 50-60 FPS, ultra settings |
+
+All visual mods are selected and tested at **3840 × 2160 (4K)**. If you are playing at 1080p or 1440p, some texture packs will still improve quality, but you may need to downscale certain 4K-only assets. Performance impact notes at each entry account for scaling.
 
 ## Guide Structure
 

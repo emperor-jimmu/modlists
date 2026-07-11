@@ -10,7 +10,7 @@ These are the core maps that form the foundation of a large map combo. All confi
 
 ---
 
-### ProMods Europe 2.83
+### ProMods Europe 2.83 {★ Baseline}
 
 - **Version:** 2.83
 - **Source:** https://promods.net (free download after registration)

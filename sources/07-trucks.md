@@ -4,7 +4,7 @@ Truck mods add new drivable vehicles — from real-world brands not officially l
 
 ---
 
-## MAN TGX E6 by Gloover v2.2.1
+## MAN TGX E6 by Gloover v2.2.1 {★ Baseline}
 
 | Field | Detail |
 |-------|--------|
@@ -27,7 +27,7 @@ A detailed standalone rework of the MAN TGX EfficientLine 6, one of the most pop
 
 ---
 
-## Volvo FH6 ALM Mod v1.60
+## Volvo FH6 ALM Mod v1.60 {★ Baseline (alternative)}
 
 | Field | Detail |
 |-------|--------|

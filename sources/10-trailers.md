@@ -4,7 +4,7 @@ Trailer and cargo mods add new ownable trailers, cargo types, real-company liver
 
 ---
 
-## Trailers and Cargo Pack by Jazzycat v11.10.5
+## Trailers and Cargo Pack by Jazzycat v11.10.5 {★ Baseline}
 
 | Field | Detail |
 |-------|--------|

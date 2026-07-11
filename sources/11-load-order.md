@@ -298,13 +298,13 @@ Copy this template into Truck Mod Manager for a full profile:
 ```
 TOP (Highest Priority)
 ────────────────────
-  ProMods Definition File
+  ProMods Definition File ★
   ProMods High Quality Addon
-  ProMods Map Package
-  ProMods Media Package
-  ProMods Models 1
-  ProMods Models 2
-  ProMods Models 3
+  ProMods Map Package ★
+  ProMods Media Package ★
+  ProMods Models 1 ★
+  ProMods Models 2 ★
+  ProMods Models 3 ★
   ProMods The Great Steppe
   ───
   Hybrid Plus Road Connector
@@ -316,21 +316,22 @@ TOP (Highest Priority)
   ProMods Middle East Addon
   ───
   Project Next Gen
-  Nextgen Graphics (or RGM / JBX)
+  Nextgen Graphics ★
   ───
-  Realistic Weather System V2.9 (or Grimes season mod)
+  Grimes New Summer v6.7 ★
+  Realistic Weather System V2.9 (or other Grimes season mod)
   Grimes Rain Reflections Addon
   Grass_Tree / Autumn_ETS
   ───
-  Sound Fixes Pack
+  Sound Fixes Pack ★
   MAN TGX D2676 Sound Pack
   SFX Renault Range T Sound
   SFX Volvo FH13 Sound
   SFX Scania R410 Sound
   Scania V8 Stock Sound
   ───
-  MAN TGX E6 by Gloover
-  Volvo FH6 ALM Mod
+  MAN TGX E6 by Gloover ★
+  Volvo FH6 ALM Mod ★
   Mercedes Actros MP6
   Ford F-Max Special Edition
   Iveco Hi-Way v8x4
@@ -341,17 +342,17 @@ TOP (Highest Priority)
   Scania NG Parts / Accessories
   Realistic Truck Physics
   ───
-  Collision Model Mod
+  Collision Model Mod ★
   Dashboard replacements
   Animated Steering Wheel
-  TDS ECO Grand Garage
+  TDS ECO Grand Garage ★
   New Service
-  SiSL's Route Advisor
-  Real Company Skins
+  SiSL's Route Advisor ★
+  Real Company Skins ★
   Ferry Plus
   ───
   Enhanced SCS Cargo v5.0
-  Jazzycat Trailers and Cargo Pack
+  Jazzycat Trailers and Cargo Pack ★
   Military Cargo Pack by Jazzycat
   TZ Express Trailer Pack
   SGD Trailer and Container Pack
@@ -363,12 +364,14 @@ TOP (Highest Priority)
   Trailers Traffic Pack by TrafficManiac
   Ai Trailers Pack Evolution
   ───
-  Brutal Traffic v8.1
+  Brutal Traffic v8.1 ★
+  AI Traffic Pack v2.5 ★
   EXPRESS PERFORMANCE MOD
-  AI Traffic Pack v2.5
   Police Enforcement Mod
 BOTTOM (Lowest Priority)
 ────────────────────
+
+★ = Baseline mod — part of the recommended profile for the RTX 4080 Super build.
 ```
 
 ---

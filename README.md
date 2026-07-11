@@ -1,6 +1,6 @@
 # ETS2 Modlist Guide
 
-A curated, community-sourced modlist for **Euro Truck Simulator 2 (Game Version 1.60)**. Compiled for stability, performance, and visual fidelity.
+A curated, community-sourced modlist for **Euro Truck Simulator 2 (Game Version 1.60)**. Compiled for stability, performance, and visual fidelity. Targets **RTX 4080 Super (16 GB VRAM) / 64 GB RAM** at **4K 50-60 FPS** — see [Baseline Profile](AGENTS.md).
 
 ## PDF Generation
 

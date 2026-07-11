@@ -58,7 +58,7 @@ Full winter simulation for ETS2:
 
 ---
 
-## Grimes New Summer v6.7
+## Grimes New Summer v6.7 {★ Baseline}
 
 | Field | Detail |
 |-------|--------|

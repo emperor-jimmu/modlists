@@ -4,7 +4,7 @@ Enhances ETS2 audio: engine sounds, ambient/environment audio, UI sounds, horn p
 
 ---
 
-## Sound Fixes Pack
+## Sound Fixes Pack {★ Baseline}
 
 | Field | Detail |
 |-------|--------|

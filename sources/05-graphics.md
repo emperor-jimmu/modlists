@@ -22,7 +22,7 @@ Replaces terrain, road, and building textures with high-quality (HQ) versions. C
 
 ---
 
-## Nextgen Graphics Road to 2.0 Spring Update
+## Nextgen Graphics Road to 2.0 Spring Update {★ Baseline}
 
 | Field | Detail |
 |-------|--------|
@@ -43,33 +43,6 @@ No longer requires BASE_0 and BASE_3 files. Works with map mods.
 **Compatibility:** 1.60.x, Promods compatible
 
 **Performance Impact at 4K:** ~10-15% FPS loss (~6-10 FPS), ~1-2 GB additional VRAM
-
----
-
-## Brutal Traffic v8.1
-
-| Field | Detail |
-|-------|--------|
-| **Version** | v8.1 |
-| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/brutal-traffic-v81) |
-| **Author** | Kass (uploaded by Cruiser) |
-| **Type** | AI traffic behavior + density |
-| **Downloads** | 16 |
-
-Re-engineers AI traffic behavior and density:
-- Realistic traffic jams and congestion
-- Weather-reactive AI (slower speeds in rain, cautious behavior)
-- Refined lane changing and overtaking
-- Day/night traffic density cycles
-- Road traffic accidents and custom events
-- Reduced truck/bus ratio for realism
-- Compatible with any AI traffic vehicle packs
-
-Low performance cost — optimizes traffic CPU usage.
-
-**Compatibility:** 1.60, all maps and DLCs, works with AI traffic packs
-
-**Performance Impact at 4K:** Negligible (<2% FPS loss), minimal VRAM impact
 
 ---
 
@@ -99,7 +72,9 @@ Adjusts color palettes, lighting intensity, skybox textures, and ambient light l
 | **Author** | JBX |
 | **Type** | Lighting + reshade preset |
 
-Premium reshade-based graphics preset. Delivers cinematic color grading, enhanced ambient occlusion, realistic bloom, and improved sky rendering. Paid mod with a free demo version available.
+Premium reshade-based graphics preset. Delivers cinematic color grading, enhanced ambient occlusion, realistic bloom, and improved sky rendering.
+
+> **💰 Paid mod** (free demo available). Paying for graphics mods is low priority — free alternatives like Nextgen Graphics or RGM offer comparable visual quality at no cost.
 
 **Compatibility:** 1.60, may conflict with other reshade presets
 
@@ -134,11 +109,12 @@ Free to use. Requires ReShade 5.x+ installation.
 |-----|-----------------|-------------|----------|----------|
 | Project Next Gen | ~2-3 FPS loss | +500 MB | Light texture improvement | Textures |
 | Nextgen Graphics | ~6-10 FPS loss | +1-2 GB | Full visual overhaul | Comprehensive |
-| Brutal Traffic | Negligible | Minimal | Better AI behavior | Traffic |
 | Realistic Graphics Mod | ~3-5 FPS loss | +800 MB | Balanced realism | Comprehensive |
 | JBX Graphics | ~10-15 FPS loss | +2 GB | Cinematic quality | Reshade/Lighting |
 | ReShade Presets | ~3-6 FPS loss | Varies | Color grading | Post-processing |
 
 ### Recommendation
 
-For a 4K build with an RTX 4070 or better: **Nextgen Graphics** + **Brutal Traffic** pair well. For lower-end hardware, **Project Next Gen** alone provides a solid visual upgrade at minimal cost. Avoid stacking multiple reshade presets or two comprehensive graphics overhauls together.
+For a 4K build with an RTX 4070 or better: **Nextgen Graphics** is the best pick. For lower-end hardware, **Project Next Gen** alone provides a solid visual upgrade at minimal cost. Avoid stacking multiple reshade presets or two comprehensive graphics overhauls together.
+
+> **Note on paid graphics mods:** JBX Graphics is the only paid option here. Free alternatives (Nextgen Graphics, RGM) deliver comparable quality — paying for graphics is low priority.

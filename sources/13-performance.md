@@ -9,14 +9,14 @@ This section documents the benchmark methodology used to evaluate the performanc
 | Component | Specification |
 |-----------|---------------|
 | **CPU** | [TBD] |
-| **GPU** | [TBD] |
-| **RAM** | [TBD] |
+| **GPU** | RTX 4080 Super (16 GB VRAM) |
+| **RAM** | 64 GB |
 | **Storage** | [TBD] |
 | **OS** | [TBD] |
 | **Resolution** | 3840 × 2160 (4K) |
 | **Game Version** | 1.60 |
 
-Hardware details will be filled in once systematic benchmarks are completed across multiple configurations.
+The baseline profile targets **50-60 FPS at 4K with ultra settings** on this hardware. The mods in this guide are curated to fit within the 16 GB VRAM budget so that a full map combo (ProMods + addons) plus graphics/weather overhauls runs without swapping to system memory.
 
 ---
 
@@ -63,7 +63,7 @@ Raw CSV logs are processed using a Python script that discards the first 60 seco
 | **1% Low** | The average FPS of the slowest 1% of frames — a measure of stutter severity. |
 | **Frame Time Variance** | Standard deviation of frame times (ms). Lower values indicate smoother delivery. |
 
-A modlist that maintains average FPS above 50 at 4K with 1% lows above 35 is considered acceptable. Below those thresholds, the visual gain from the mod does not justify the performance cost.
+A modlist that maintains average FPS above 50 at 4K with 1% lows above 35 is considered acceptable. Below those thresholds, the visual gain from the mod does not justify the performance cost. The baseline profile (RTX 4080 Super, 16 GB VRAM, 64 GB RAM) targets 50-60 FPS with the full modlist.
 
 ---
 

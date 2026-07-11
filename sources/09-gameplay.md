@@ -10,7 +10,7 @@ Economy mods adjust the core financial simulation — fuel costs, tolls, mainten
 
 ---
 
-### TDS ECO Grand Garage (Unofficial) v1.0
+### TDS ECO Grand Garage (Unofficial) v1.0 {★ Baseline}
 
 | Field | Detail |
 |-------|--------|
@@ -114,7 +114,36 @@ A hybrid mod that replaces vanilla flat traffic density with realistic 24-hour t
 
 ---
 
-### AI Traffic Pack v2.5
+### Brutal Traffic v8.1 {★ Baseline}
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v8.1 |
+| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/brutal-traffic-v81) |
+| **Author** | Kass (uploaded by Cruiser) |
+| **Type** | AI traffic behavior + density |
+| **Category** | Traffic |
+| **Downloads** | 16 |
+
+Re-engineers AI traffic behavior and density:
+
+- Realistic traffic jams and congestion
+- Weather-reactive AI (slower speeds in rain, cautious behavior)
+- Refined lane changing and overtaking
+- Day/night traffic density cycles
+- Road traffic accidents and custom events
+- Reduced truck/bus ratio for realism
+- Compatible with any AI traffic vehicle packs
+
+**Role-Playing Potential:** High — realistic traffic density and AI behavior make every trip feel alive. Rush hour congestion forces route planning, and weather-reactive AI adds an extra layer of caution in poor conditions.
+
+**Compatibility:** 1.60, all maps and DLCs, works with AI traffic packs
+
+**Performance Impact:** Negligible (<2% FPS loss) — optimized traffic CPU usage, minimal VRAM impact.
+
+---
+
+### AI Traffic Pack v2.5 {★ Baseline}
 
 | Field | Detail |
 |-------|--------|
@@ -225,7 +254,7 @@ The largest multiplayer platform for ETS2 and ATS. While primarily a multiplayer
 
 ---
 
-### SiSL's Route Advisor
+### SiSL's Route Advisor {★ Baseline}
 
 | Field | Detail |
 |-------|--------|
@@ -251,7 +280,7 @@ An enhanced navigation and information display for ETS2/ATS. Not to be confused 
 
 ---
 
-### Real Company Skins & Logistics Liveries
+### Real Company Skins & Logistics Liveries {★ Baseline}
 
 | Type | Description |
 |------|-------------|
@@ -320,7 +349,7 @@ An improved dashboard display for the Iveco S-Way (SCS version):
 
 ---
 
-### Collision Model Mod v1.60
+### Collision Model Mod v1.60 {★ Baseline}
 
 | Field | Detail |
 |-------|--------|
@@ -471,6 +500,7 @@ HIGH PRIORITY
   |
   v
 LOW PRIORITY
+  Brutal Traffic (traffic packs at bottom — lowest priority within gameplay)
   EXPRESS PERFORMANCE MOD (near bottom)
   Police / parking enforcement mods (lowest priority)
 ```
@@ -492,6 +522,7 @@ LOW PRIORITY
 | TDS ECO Grand Garage | Economy | ✅ Yes | Negligible | High | Unofficial port, economy rebalance |
 | XP and Money ETS2 | Cheat/Accelerator | ✅ Yes (1.40–1.61) | None | Low | Max-level save tool |
 | EXPRESS PERFORMANCE MOD | Traffic + FPS | ✅ Yes | +25–45% | High | Rush-hour curves, CPU relief |
+| Brutal Traffic v8.1 | Traffic behavior | ✅ Yes | <2% | High | Realistic AI, weather-reactive |
 | AI Traffic Pack v2.5 | Traffic variety | Check mod page | -3–8% | Medium | Real vehicle models |
 | Real Traffic Density | Traffic density | ✅ Yes | Low-Moderate | Medium-High | Steam Workshop |
 | New Service | Company mgmt | Check mod page | Negligible | Very High | Logistics management |
