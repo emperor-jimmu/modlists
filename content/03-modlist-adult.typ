@@ -1,8 +1,15 @@
 #heading(level: 1)[Adult Mods]
 
-This chapter covers adult-oriented mods. Content is separated from the main guide.
-Enable game rules for adult content only if you want these mechanics active.
+This chapter covers adult-oriented mods. Content separated from the main guide.
+#heading(level: 2)[Adult]
 
-// Auto-generated content will be inserted here by scripts/generate-mod-sections.ps1
-// Run: .\scripts\generate-mod-sections.ps1
-// To regenerate from modlist/11-adult.md
+#heading(level: 3)[Carnalitas Unlocked]
+#block[
+  *Link:*  \
+  *Load Order:*  | *Essential:*  | *Performance:* 
+
+  Adds additional content to Carnalitas: more events, more interactivity, more variety. Expands the framework with narrative content.
+
+]
+
+
