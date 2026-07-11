@@ -489,6 +489,37 @@ A comprehensive gameplay overhaul package including multiple interconnected game
 
 ---
 
+## World Details & Immersion
+
+World detail mods replace fictional in-game brands, logos, and signage with real-world equivalents. They do not change gameplay mechanics but dramatically increase the sense of driving through a real European landscape.
+
+---
+
+### Real Company Logo v3.4 {★ Baseline}
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v3.4 |
+| **Source** | [ets2.lt](https://ets2.lt/en/real-company-logo-v3-4-schumi-1-60/) |
+| **Author** | Schumi |
+| **Type** | World detail / company replacement |
+| **Category** | Map addon |
+
+Replaces 165+ fictional SCS companies and gas stations with real-world brands:
+
+- **Fuel stations:** Shell, BP, Esso, Total, Q8, Aral, Ingo, St1, MOL, EKO, OK, TQG, and others — regionally accurate per country
+- **Company buildings:** Real logos on warehouses, depots, and delivery points (Nestlé, IKEA, Remondis, Coca-Cola, and many more)
+- **Road signs:** Ika Bohag replaced with IKEA, directional signage corrected
+- **Addon for SCS Map** — works on the default map and all DLCs
+
+**Role-Playing Potential:** High — pulling into a Shell station in Germany or seeing a Coca-Cola depot in France makes the world feel authentic in a way fictional brands never can.
+
+**Compatibility:** 1.60.x, requires all map DLCs. Load above the main map mod in Mod Manager. Incompatible with other company replacement mods (pick one).
+
+**Performance Impact:** Negligible — texture and definition only, no new models.
+
+---
+
 ## Load Order & Compatibility
 
 ```
@@ -498,6 +529,7 @@ HIGH PRIORITY
   Animated Steering Wheel
   |
   v
+  World Details & Immersion (Real Company Logo — above map mods)
   Economy mods (only one)
   Traffic density / AI traffic mods
   Real company skins & logistics liveries
@@ -544,6 +576,7 @@ LOW PRIORITY
 | Scania SmartDash v1.60 | Dashboard | ✅ Yes | Negligible | Medium | Scania NG only |
 | Iveco S-Way Improved Dashboard | Dashboard | ✅ Yes | Negligible | Medium | Iveco S-Way only |
 | Indonesia Gameplay Mods | Overhaul pack | Check mod page | Low-Moderate | High | All-in-one |
+| Real Company Logo v3.4 | World detail | ✅ Yes | Negligible | High | Real gas stations, company logos, signs |
 
 ### Recommended Starter Setup
 

@@ -20,5 +20,6 @@ These mods form the recommended profile for this hardware. All are free. Marked 
 | **Audio** | Sound Fixes Pack v26.34 + engine pack(s) for your truck |
 | **Trucks** | MAN TGX E6 by Gloover v2.2.1 (or Volvo FH6 ALM Mod) |
 | **Gameplay** | TDS ECO Grand Garage + Collision Model Mod + Real Company Skins & Logistics Liveries + SiSL's Route Advisor |
+| **World** | Real Company Logo v3.4 (real gas stations, company logos, signage) |
 | **Traffic** | Brutal Traffic v8.1 + AI Traffic Pack v2.5 |
 | **Trailers** | Jazzycat Trailers and Cargo Pack v11.10.5 |

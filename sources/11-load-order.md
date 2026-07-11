@@ -15,14 +15,14 @@ Every mod in ETS2 ships a set of definition files (`.sii`), asset files (`.pmd`,
 
 ### Consequences of Wrong Load Order
 
-| Symptom | Likely Cause |
-|---------|-------------|
-| Grey/black sectors on the map | Map files loaded out of order — a lower-priority map is overwriting a higher-priority map's sectors |
-| Missing road connections at borders | Map connector placed below the maps it should connect |
-| Truck appears invisible in the dealer | Truck model loaded before a required sound or interior accessory mod |
-| Crash when entering a specific city | Map mod conflicting with a graphics/weather mod that overwrites its city definition |
-| Textures flickering or popping | Texture replacement mod loaded below the map mod it should override |
-| AI traffic cars floating or sinking | Traffic pack loaded above the map data defining road heights |
+| Symptom                               | Likely Cause                                                                                        |
+|---------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Grey/black sectors on the map         | Map files loaded out of order — a lower-priority map is overwriting a higher-priority map's sectors |
+| Missing road connections at borders   | Map connector placed below the maps it should connect                                               |
+| Truck appears invisible in the dealer | Truck model loaded before a required sound or interior accessory mod                                |
+| Crash when entering a specific city   | Map mod conflicting with a graphics/weather mod that overwrites its city definition                 |
+| Textures flickering or popping        | Texture replacement mod loaded below the map mod it should override                                 |
+| AI traffic cars floating or sinking   | Traffic pack loaded above the map data defining road heights                                        |
 
 ---
 
@@ -57,6 +57,7 @@ BOTTOM — LOWEST PRIORITY (loads first, base foundation)
 The base map mod must be at the **top** (highest priority) so its sectors, assets, and definitions override everything below it. The map provides the world geometry — roads, cities, terrain, prefabs — and every other mod category depends on this data being final. If a lower-priority mod could overwrite map sectors, roads would disappear and jobs would break.
 
 **From this guide:**
+
 - **ProMods Europe 2.83** — The cornerstone. Its components load in this specific order from bottom to top:
 
 ```
@@ -91,6 +92,7 @@ Example conflict:
 Map addons expand the playable area or connect different map mods together. They need to load below the base map mod (so the base map's core sectors take priority) but above graphics mods (so visual mods can render over their terrain).
 
 **From this guide:**
+
 - **ProMods Middle East Addon 2.83** — Below base ProMods files.
 - **RusMap 2.60** — Model file first, then map file.
 - **Roextended 5.2** — Generated sector file highest.
@@ -114,6 +116,7 @@ Map addons expand the playable area or connect different map mods together. They
 Graphics mods replace textures, colour grading, lighting parameters, and shader configurations. They must load below map addons (so map sectors remain authoritative) but above weather mods (so weather lighting and sky textures do not override the graphics mod's colour grading).
 
 **From this guide:**
+
 - **Project Next Gen** — Lightweight texture overhaul. Load at the top of this section.
 - **Nextgen Graphics Road to 2.0 Spring Update** — Comprehensive graphics overhaul. Loads below Project Next Gen if using both (though stacking comprehensive overhauls is not recommended).
 - **Realistic Graphics Mod (RGM) v3.0** — Balanced colour/lighting adjustments.
@@ -134,6 +137,7 @@ add Project Next Gen for additional texture coverage.
 Weather mods replace skybox textures, rain/snow particle definitions, lighting curves, and seasonal vegetation data. They must load below graphics mods (so texture packs apply on top of weather-changed surfaces) but above audio mods (so rain sounds are not overwritten).
 
 **From this guide:**
+
 - **Realistic Weather System V2.9** — Complete weather overhaul. NOT compatible with other weather or graphics mods.
 - **Grimes Frosty Winter v10.7** — Full winter simulation. Place at top of weather section.
 - **Grimes New Summer v6.7**
@@ -159,12 +163,13 @@ or graphics mod — it is a complete weather replacement.
 Audio mods replace sound banks and mixing definitions. They must load below weather mods (so rain and environment sounds can be overridden by the weather system) but above truck mods (so engine sound packs can attach to specific truck definitions).
 
 **From this guide:**
+
 - **Sound Fixes Pack v26.34** — Foundation for all audio. High priority within this section.
 - **SFX Engine Sound Packs by Max2712**:
-  - 2022 MAN TGX (TG3) 510 D2676 Sound Pack v1.3.2
-  - SFX Renault Range T DTi460 Euro6C v2.05.1
-  - SFX Volvo FH13 D13K 500 Euro6 v2.47.1
-  - SFX Scania R410 DC13.115 Euro6 v1.29.1
+    - 2022 MAN TGX (TG3) 510 D2676 Sound Pack v1.3.2
+    - SFX Renault Range T DTi460 Euro6C v2.05.1
+    - SFX Volvo FH13 D13K 500 Euro6 v2.47.1
+    - SFX Scania R410 DC13.115 Euro6 v1.29.1
 - **Scania V8 Stock Sound v12.0**
 - **Scania NextGen 660 DC16 V8 Sound Pack v1.3**
 - **Volvo FH5 I-Save 500 D13TC Sound Pack v1.3**
@@ -186,6 +191,7 @@ with each other as long as they target different trucks.
 Truck mods add new drivable vehicles or rework existing ones. They must load below audio mods (so engine sounds defined by audio packs apply correctly to each truck) but above gameplay mods (so gameplay settings like fuel consumption can reference truck parameters).
 
 **From this guide:**
+
 - **MAN TGX E6 by Gloover v2.2.1**
 - **Volvo FH6 ALM Mod v1.60**
 - **Mercedes-Benz Actros MP6 v1.60**
@@ -214,6 +220,7 @@ conflict, place the one you prefer higher.
 Gameplay mods modify core simulation data: income, fuel costs, tolls, physics parameters, UI layouts. They must load below truck mods (so truck parameters are final before gameplay logic references them) but above trailer/cargo data (so economy mods can reference cargo types from the final cargo data below).
 
 **From this guide:**
+
 - **Collision Model Mod v1.60** — Tightens hitboxes and damage zones.
 - **Realistic Scania SmartDash v1.60** / **Iveco S-Way Improved Dashboard v1.60** — Dashboard replacements.
 - **Animated Steering Wheel v1.60** — Cosmetic animation.
@@ -238,6 +245,7 @@ causes unpredictable income calculations and potential save corruption.
 Ownable trailers and cargo definitions need to load below gameplay and economy mods (so economy mods can reference cargo data) but above AI traffic trailers (so AI trailers do not interfere with player-owned trailer definitions).
 
 **From this guide:**
+
 - **Trailers and Cargo Pack by Jazzycat v11.10.5** — 175 trailers, 772 cargo types. Foundation of this section.
 - **Military Cargo Pack by Jazzycat v6.8.6** — 222 military cargo items, compatible with either Jazzycat main pack.
 - **TZ Express Trailer Pack v1.60** — 22 real-brand ownable trailers.
@@ -261,6 +269,7 @@ and Cargo Pack are mutually exclusive. Use one or the other, not both.
 AI trailer packs add or replace trailers that appear on AI vehicles in traffic. These need to load below ownable trailer packs (so AI trailers do not interfere with player-owned trailer definitions) but above traffic density mods (so the density mods control *how many* vehicles spawn).
 
 **From this guide:**
+
 - **Clean Traffic — No Default SCS Trailers v2.0** — Removes SCS trailers from AI traffic. Must load above AI trailer packs so the custom packs fill the gap.
 - **Trailers Traffic Pack by TrafficManiac v12.9.3** — 1,379 AI trailer models with real company skins.
 - **Ai Trailers Pack Evolution V2.8** — 150 addon AI trailers.
@@ -274,6 +283,7 @@ AI trailer packs add or replace trailers that appear on AI vehicles in traffic. 
 Traffic packs must be at the very bottom (lowest priority) because they only need to override traffic-specific data: spawn definitions, vehicle models, and AI behaviour parameters. They should not conflict with any map, visual, or gameplay data — placing them lowest ensures they can only affect traffic systems without risk of overwriting critical game data from higher-priority mods.
 
 **From this guide:**
+
 - **Brutal Traffic v8.1** — AI behaviour and density curves. At the very bottom so its traffic-only definitions do not interfere with anything above.
 - **EXPRESS PERFORMANCE MOD** — Realistic rush-hour traffic with FPS boost. Lowest priority to stay out of other systems.
 - **AI Traffic Pack v2.5** — Real vehicle models replacing vanilla AI cars. Place above other traffic packs.
@@ -333,6 +343,8 @@ TOP (Highest Priority)
   MAN TGX E6 by Gloover ★
   Volvo FH6 ALM Mod ★
   Mercedes Actros MP6
+  DAF XF 105 Bart De Vries
+  Renault Range T Evo by Gloover ★
   Ford F-Max Special Edition
   Iveco Hi-Way v8x4
   Iveco S-Way Hi-Powered
@@ -348,6 +360,7 @@ TOP (Highest Priority)
   TDS ECO Grand Garage ★
   New Service
   SiSL's Route Advisor ★
+  Real Company Logo v3.4 ★ (above map mods)
   Real Company Skins ★
   Ferry Plus
   ───
@@ -378,14 +391,14 @@ BOTTOM (Lowest Priority)
 
 ## Common Load Order Mistakes
 
-| Mistake | Symptom | Fix |
-|---------|---------|-----|
-| Map mod above its own definition file | Black/grey sectors on map where DLC is missing | Place definition file above map package within the mod's group |
-| Weather mod above graphics mod | Weather textures override graphics textures, causing mismatched colours | Place weather below graphics |
-| Traffic pack above map mod | Traffic density definitions interfere with map sector traffic spawns | Place traffic packs at bottom |
-| Engine sound pack below Sound Fixes Pack | Sound Fixes Pack overwrites engine sounds with defaults | Place Sound Fixes Pack above individual engine packs |
-| Multiple economy mods active | Inconsistent income, duplicate cargo entries | Keep only one economy-modifying mod |
-| Connector below both maps it connects | Missing road at border crossing | Place connector above both map mods |
+| Mistake                                  | Symptom                                                                 | Fix                                                            |
+|------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------|
+| Map mod above its own definition file    | Black/grey sectors on map where DLC is missing                          | Place definition file above map package within the mod's group |
+| Weather mod above graphics mod           | Weather textures override graphics textures, causing mismatched colours | Place weather below graphics                                   |
+| Traffic pack above map mod               | Traffic density definitions interfere with map sector traffic spawns    | Place traffic packs at bottom                                  |
+| Engine sound pack below Sound Fixes Pack | Sound Fixes Pack overwrites engine sounds with defaults                 | Place Sound Fixes Pack above individual engine packs           |
+| Multiple economy mods active             | Inconsistent income, duplicate cargo entries                            | Keep only one economy-modifying mod                            |
+| Connector below both maps it connects    | Missing road at border crossing                                         | Place connector above both map mods                            |
 
 ---
 
@@ -395,17 +408,18 @@ BOTTOM (Lowest Priority)
 
 Some changes are safe; others will corrupt your save:
 
-| Change | Safe? | Notes |
-|--------|-------|-------|
-| Adding a new mod to the bottom (traffic) | Usually safe | Must be a pure addon with no map sector changes |
-| Adding a new trailer pack | Usually safe | Must not replace existing trailers |
-| Adding a new truck mod | Usually safe | Standalone trucks do not affect saved game data |
-| Adding a new map mod | **Risky** | Can break existing delivery routes and discovered roads |
-| Removing any mod | **Risky** | Always test on a backup save first |
-| Reordering map mods | **Very risky** | Almost always breaks saves in map-added cities |
-| Removing ProMods | **Save-breaking** | Any save that visited a ProMods city is permanently broken |
+| Change                                   | Safe?             | Notes                                                      |
+|------------------------------------------|-------------------|------------------------------------------------------------|
+| Adding a new mod to the bottom (traffic) | Usually safe      | Must be a pure addon with no map sector changes            |
+| Adding a new trailer pack                | Usually safe      | Must not replace existing trailers                         |
+| Adding a new truck mod                   | Usually safe      | Standalone trucks do not affect saved game data            |
+| Adding a new map mod                     | **Risky**         | Can break existing delivery routes and discovered roads    |
+| Removing any mod                         | **Risky**         | Always test on a backup save first                         |
+| Reordering map mods                      | **Very risky**    | Almost always breaks saves in map-added cities             |
+| Removing ProMods                         | **Save-breaking** | Any save that visited a ProMods city is permanently broken |
 
 If you must change the load order mid-playthrough:
+
 1. Save your game manually first.
 2. Exit to the main menu.
 3. Make the change in Truck Mod Manager.

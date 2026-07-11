@@ -6,13 +6,13 @@ Truck mods add new drivable vehicles — from real-world brands not officially l
 
 ## MAN TGX E6 by Gloover v2.2.1 {★ Baseline}
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v2.2.1 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/man-tgx-e6-by-gloover-v2-2-1-1-60) |
-| **Author** | Gloover |
-| **Type** | Truck rework (standalone) |
-| **Category** | Top 5 Trucks this month (July 2026) |
+| Field        | Detail                                                                  |
+|--------------|-------------------------------------------------------------------------|
+| **Version**  | v2.2.1                                                                  |
+| **Source**   | [ets2mods.lt](https://ets2mods.lt/en/man-tgx-e6-by-gloover-v2-2-1-1-60) |
+| **Author**   | Gloover                                                                 |
+| **Type**     | Truck rework (standalone)                                               |
+| **Category** | Top 5 Trucks this month (July 2026)                                     |
 
 A detailed standalone rework of the MAN TGX EfficientLine 6, one of the most popular modern truck mods for ETS2:
 
@@ -29,13 +29,13 @@ A detailed standalone rework of the MAN TGX EfficientLine 6, one of the most pop
 
 ## Volvo FH6 ALM Mod v1.60 {★ Baseline (alternative)}
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/volvo-fh6-alm-mod-v1-60) |
-| **Author** | ALM |
-| **Type** | Truck rework (standalone) |
-| **Category** | Top 5 Trucks this month (July 2026) |
+| Field        | Detail                                                        |
+|--------------|---------------------------------------------------------------|
+| **Version**  | v1.60                                                         |
+| **Source**   | [ets2mods.lt](https://ets2mods.lt/en/volvo-fh6-alm-mod-v1-60) |
+| **Author**   | ALM                                                           |
+| **Type**     | Truck rework (standalone)                                     |
+| **Category** | Top 5 Trucks this month (July 2026)                           |
 
 A comprehensive rework of the Volvo FH6 (the latest generation FH):
 
@@ -53,13 +53,13 @@ A comprehensive rework of the Volvo FH6 (the latest generation FH):
 
 ## Mercedes-Benz Actros MP6 v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/mercedes-benz-actros-mp6-v1-60) |
-| **Author** | Various |
-| **Type** | Truck rework (standalone) |
-| **Category** | Top 5 Trucks this month (July 2026) |
+| Field        | Detail                                                               |
+|--------------|----------------------------------------------------------------------|
+| **Version**  | v1.60                                                                |
+| **Source**   | [ets2mods.lt](https://ets2mods.lt/en/mercedes-benz-actros-mp6-v1-60) |
+| **Author**   | Various                                                              |
+| **Type**     | Truck rework (standalone)                                            |
+| **Category** | Top 5 Trucks this month (July 2026)                                  |
 
 A detailed standalone version of the Mercedes-Benz Actros MP6 (the latest generation with MirrorCam):
 
@@ -75,15 +75,39 @@ A detailed standalone version of the Mercedes-Benz Actros MP6 (the latest genera
 
 ---
 
-## Ford F-Max Special Edition v.20.08.25
+## DAF XF 105 + Trailer "Bart De Vries" v10
 
 | Field | Detail |
 |-------|--------|
-| **Version** | 20.08.25 |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/ford-f-max-special-edition-v200825-566483) |
-| **Author** | Emre Aydın, Bertan Baday, SimülasyonTÜRK, SiSL, brvs1nhv |
-| **Type** | Standalone truck |
-| **Downloads** | 1,596 |
+| **Version** | v10 |
+| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/daf-xf-105-trailer-bart-de-vries-v10-158) |
+| **Author** | Community |
+| **Type** | Standalone truck + trailer |
+| **Downloads** | N/A |
+
+A standalone DAF XF 105 with custom Super Space Cab and a bundled Bart De Vries branded trailer:
+
+- 6x2 Taglift chassis, PACCAR MX Euro 4 engine, ZF AS Tronic R transmission
+- Exclusive Bart De Vries interior with custom salon
+- Cable animations, glass stickers, strobe lights
+- Personal wheels and 3 steering wheel options
+- Bundled trailer with matching livery
+
+**Compatibility:** 1.58–1.60 (reported working). Standalone — replaces the default DAF XF 105.
+
+**Performance Impact:** Moderate (~5-8% FPS loss at 4K).
+
+---
+
+## Ford F-Max Special Edition v.20.08.25
+
+| Field         | Detail                                                                                                      |
+|---------------|-------------------------------------------------------------------------------------------------------------|
+| **Version**   | 20.08.25                                                                                                    |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/ford-f-max-special-edition-v200825-566483) |
+| **Author**    | Emre Aydın, Bertan Baday, SimülasyonTÜRK, SiSL, brvs1nhv                                                    |
+| **Type**      | Standalone truck                                                                                            |
+| **Downloads** | 1,596                                                                                                       |
 
 A high-quality standalone port of the Ford Trucks F-MAX — the 2020 International Truck of the Year — modelled from scratch:
 
@@ -108,14 +132,14 @@ A high-quality standalone port of the Ford Trucks F-MAX — the 2020 Internation
 
 ## Iveco Hi-Way v8x4 and More
 
-| Field | Detail |
-|-------|--------|
-| **Version** | 1.0 |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/iveco-hi-way-v8x4-and-more-264046) |
-| **Author** | brvs1nhv (based on work by Schumi, knox_xss, Oscar, Fabry85, and others) |
-| **Type** | Truck rework |
-| **Downloads** | 994 |
-| **Rating** | 5.0 |
+| Field         | Detail                                                                                              |
+|---------------|-----------------------------------------------------------------------------------------------------|
+| **Version**   | 1.0                                                                                                 |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/iveco-hi-way-v8x4-and-more-264046) |
+| **Author**    | brvs1nhv (based on work by Schumi, knox_xss, Oscar, Fabry85, and others)                            |
+| **Type**      | Truck rework                                                                                        |
+| **Downloads** | 994                                                                                                 |
+| **Rating**    | 5.0                                                                                                 |
 
 A comprehensive rework and expansion of the Iveco Hi-Way:
 
@@ -139,14 +163,14 @@ A comprehensive rework and expansion of the Iveco Hi-Way:
 
 ## Iveco S-Way Hi-Powered
 
-| Field | Detail |
-|-------|--------|
-| **Version** | 1.0 |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/iveco-s-way-hi-powered-136517) |
-| **Author** | brvs1nhv (based on SoapModding, Weeda Transport) |
-| **Type** | Truck rework |
-| **Downloads** | 589 |
-| **Rating** | 5.0 |
+| Field         | Detail                                                                                          |
+|---------------|-------------------------------------------------------------------------------------------------|
+| **Version**   | 1.0                                                                                             |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/iveco-s-way-hi-powered-136517) |
+| **Author**    | brvs1nhv (based on SoapModding, Weeda Transport)                                                |
+| **Type**      | Truck rework                                                                                    |
+| **Downloads** | 589                                                                                             |
+| **Rating**    | 5.0                                                                                             |
 
 A tuned and expanded version of the Iveco S-Way:
 
@@ -165,15 +189,38 @@ A tuned and expanded version of the Iveco S-Way:
 
 ---
 
-## Peterbilt 350 v1.59–1.60
+## Renault Range T Evo by Gloover v2.4 {★ Baseline (alternative)}
 
 | Field | Detail |
 |-------|--------|
-| **Version** | v1.59–1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/peterbilt-350-v1-59-1-60) |
-| **Author** | Various |
-| **Type** | Standalone American truck for ETS2 |
-| **Category** | Top 5 Trucks this month (July 2026) |
+| **Version** | v2.4 |
+| **Source** | [ets3mods.com](https://ets3mods.com/renault-range-t-evo-1-60/) |
+| **Author** | Gloover |
+| **Type** | Standalone truck |
+
+Renault Range T from the same author (Gloover) as the MAN TGX E6 baseline truck. Models from 2013 through 2024 with extensive customisation:
+
+- Multiple cabin and chassis configurations
+- Custom interior with detailed gauges and dashboard
+- Dedicated sound package
+- Separate addon pack with additional tuning parts, rims, and templates
+- Performance-friendly despite high detail level
+
+**Compatibility:** 1.60. Standalone — found at a Renault dealer alongside the SCS version.
+
+**Performance Impact:** Moderate (~5-8% FPS loss at 4K).
+
+---
+
+## Peterbilt 350 v1.59–1.60
+
+| Field        | Detail                                                         |
+|--------------|----------------------------------------------------------------|
+| **Version**  | v1.59–1.60                                                     |
+| **Source**   | [ets2mods.lt](https://ets2mods.lt/en/peterbilt-350-v1-59-1-60) |
+| **Author**   | Various                                                        |
+| **Type**     | Standalone American truck for ETS2                             |
+| **Category** | Top 5 Trucks this month (July 2026)                            |
 
 A classic American truck for ETS2 — the Peterbilt 350, a vintage model from the 1950s:
 
@@ -190,14 +237,14 @@ A classic American truck for ETS2 — the Peterbilt 350, a vintage model from th
 
 ## Mercedes 1632 NG v1.8+
 
-| Field | Detail |
-|-------|--------|
-| **Version** | 1.8+ |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/mercedes-1632-ng) |
-| **Author** | Digital X (originally by Ekualizer) |
-| **Type** | Classic truck (standalone) |
-| **Downloads** | 4,280 |
-| **Rating** | 5.0 |
+| Field         | Detail                                                                             |
+|---------------|------------------------------------------------------------------------------------|
+| **Version**   | 1.8+                                                                               |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/mercedes-1632-ng) |
+| **Author**    | Digital X (originally by Ekualizer)                                                |
+| **Type**      | Classic truck (standalone)                                                         |
+| **Downloads** | 4,280                                                                              |
+| **Rating**    | 5.0                                                                                |
 
 A beloved classic — the Mercedes 1632 NG (Neue Generation) from the 1980s/90s:
 
@@ -219,14 +266,14 @@ A beloved classic — the Mercedes 1632 NG (Neue Generation) from the 1980s/90s:
 
 ## Mack Anthem
 
-| Field | Detail |
-|-------|--------|
-| **Version** | 1.0 |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/mack-anthem) |
-| **Author** | Ea7gign |
-| **Type** | Standalone American truck for ETS2 |
-| **Downloads** | 1,145 |
-| **Size** | 577.9 MB |
+| Field         | Detail                                                                        |
+|---------------|-------------------------------------------------------------------------------|
+| **Version**   | 1.0                                                                           |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/mack-anthem) |
+| **Author**    | Ea7gign                                                                       |
+| **Type**      | Standalone American truck for ETS2                                            |
+| **Downloads** | 1,145                                                                         |
+| **Size**      | 577.9 MB                                                                      |
 
 An American classic for ETS2 — the Mack Anthem:
 
@@ -245,13 +292,13 @@ An American classic for ETS2 — the Mack Anthem:
 
 ## Volvo VNL 1.0
 
-| Field | Detail |
-|-------|--------|
-| **Version** | 1.0 |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/volvo-vnl-10) |
-| **Author** | Ea7gign |
-| **Type** | Standalone American truck for ETS2 |
-| **Downloads** | 852 |
+| Field         | Detail                                                                         |
+|---------------|--------------------------------------------------------------------------------|
+| **Version**   | 1.0                                                                            |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/volvo-vnl-10) |
+| **Author**    | Ea7gign                                                                        |
+| **Type**      | Standalone American truck for ETS2                                             |
+| **Downloads** | 852                                                                            |
 
 A conversion of the Volvo VNL (North American model) for ETS2:
 
@@ -273,13 +320,13 @@ These mods add cabin accessories, GPS screens, decorations, and trim options com
 
 ### SiSL's Mega Pack
 
-| Field | Detail |
-|-------|--------|
-| **Version** | Latest |
-| **Source** | Steam Workshop (search "SiSL's Mega Pack") |
-| **Author** | SiSL |
-| **Type** | Interior accessories |
-| **Size** | ~1 GB |
+| Field       | Detail                                     |
+|-------------|--------------------------------------------|
+| **Version** | Latest                                     |
+| **Source**  | Steam Workshop (search "SiSL's Mega Pack") |
+| **Author**  | SiSL                                       |
+| **Type**    | Interior accessories                       |
+| **Size**    | ~1 GB                                      |
 
 The definitive cabin accessories mod for ETS2/ATS:
 
@@ -297,13 +344,13 @@ The definitive cabin accessories mod for ETS2/ATS:
 
 ### Black White Scania SR SCS
 
-| Field | Detail |
-|-------|--------|
-| **Version** | Latest |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/black-white-scania-sr-scs) |
-| **Author** | tunning6000 |
-| **Type** | Interior replacement |
-| **Downloads** | 1,041 |
+| Field         | Detail                                                                                      |
+|---------------|---------------------------------------------------------------------------------------------|
+| **Version**   | Latest                                                                                      |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trucks/black-white-scania-sr-scs) |
+| **Author**    | tunning6000                                                                                 |
+| **Type**      | Interior replacement                                                                        |
+| **Downloads** | 1,041                                                                                       |
 
 An interior replacement for the Scania NG S/R:
 
@@ -319,13 +366,13 @@ An interior replacement for the Scania NG S/R:
 
 ### ETS2 Add-On Compressors v1.7
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.7 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/ets2-add-on-compressors-v1-7-1-60) |
-| **Author** | Various |
-| **Type** | Exterior accessory |
-| **Downloads** | 0 (new upload July 2026) |
+| Field         | Detail                                                                  |
+|---------------|-------------------------------------------------------------------------|
+| **Version**   | v1.7                                                                    |
+| **Source**    | [ets2mods.lt](https://ets2mods.lt/en/ets2-add-on-compressors-v1-7-1-60) |
+| **Author**    | Various                                                                 |
+| **Type**      | Exterior accessory                                                      |
+| **Downloads** | 0 (new upload July 2026)                                                |
 
 Adds visible air compressor units to trucks as exterior tuning options:
 
@@ -341,13 +388,13 @@ Adds visible air compressor units to trucks as exterior tuning options:
 
 ### Abasstreppas LightFix Kit v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/abasstreppas-lightfix-kit-v1-60) |
-| **Author** | Abasstreppas |
-| **Type** | Light tuning |
-| **Downloads** | 0 (new upload July 2026) |
+| Field         | Detail                                                                |
+|---------------|-----------------------------------------------------------------------|
+| **Version**   | v1.60                                                                 |
+| **Source**    | [ets2mods.lt](https://ets2mods.lt/en/abasstreppas-lightfix-kit-v1-60) |
+| **Author**    | Abasstreppas                                                          |
+| **Type**      | Light tuning                                                          |
+| **Downloads** | 0 (new upload July 2026)                                              |
 
 Adds additional light mounting options and light accessories for trucks:
 
@@ -369,12 +416,12 @@ These mods change the way trucks feel on the road — suspension, weight transfe
 
 ### Realistic Truck Physics Mod
 
-| Field | Detail |
-|-------|--------|
-| **Version** | Various |
-| **Source** | Steam Workshop / TruckyMods |
-| **Author** | Various |
-| **Type** | Physics overhaul |
+| Field       | Detail                      |
+|-------------|-----------------------------|
+| **Version** | Various                     |
+| **Source**  | Steam Workshop / TruckyMods |
+| **Author**  | Various                     |
+| **Type**    | Physics overhaul            |
 
 Mods in this category adjust:
 
@@ -385,6 +432,7 @@ Mods in this category adjust:
 - Engine torque curves and gearbox behaviour
 
 **Known variants:**
+
 - **Realistic Truck Physics Mod** by **Zee** (Steam Workshop) — most popular, regularly updated
 - **Real Steering & Physics** — lighter adjustment, retains SCS base handling
 
@@ -400,13 +448,13 @@ The Scania Next Generation (2016+) platform is one of the most modded trucks in 
 
 ### Venus Scania NG Parts v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/venus-scania-ng-parts-v1-60) |
-| **Author** | Venus |
-| **Type** | Parts/tuning |
-| **Published** | July 6, 2026 |
+| Field         | Detail                                                            |
+|---------------|-------------------------------------------------------------------|
+| **Version**   | v1.60                                                             |
+| **Source**    | [ets2mods.lt](https://ets2mods.lt/en/venus-scania-ng-parts-v1-60) |
+| **Author**    | Venus                                                             |
+| **Type**      | Parts/tuning                                                      |
+| **Published** | July 6, 2026                                                      |
 
 Tuning parts for the Scania NG SCS truck:
 
@@ -423,13 +471,13 @@ Tuning parts for the Scania NG SCS truck:
 
 ### Addon Scania R/S Rear Bumper + Accessories v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/addon-scania-r-s-rear-bumper-accessories-v1-60) |
-| **Author** | Various |
-| **Type** | Tuning parts |
-| **Published** | July 5, 2026 |
+| Field         | Detail                                                                               |
+|---------------|--------------------------------------------------------------------------------------|
+| **Version**   | v1.60                                                                                |
+| **Source**    | [ets2mods.lt](https://ets2mods.lt/en/addon-scania-r-s-rear-bumper-accessories-v1-60) |
+| **Author**    | Various                                                                              |
+| **Type**      | Tuning parts                                                                         |
+| **Published** | July 5, 2026                                                                         |
 
 Rear bumper addon with integrated accessories:
 
@@ -445,13 +493,13 @@ Rear bumper addon with integrated accessories:
 
 ### SRI Lightbox Pack v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/en/sri-lightbox-pack-v1-60) |
-| **Author** | Various |
-| **Type** | Light tuning |
-| **Published** | July 5, 2026 |
+| Field         | Detail                                                        |
+|---------------|---------------------------------------------------------------|
+| **Version**   | v1.60                                                         |
+| **Source**    | [ets2mods.lt](https://ets2mods.lt/en/sri-lightbox-pack-v1-60) |
+| **Author**    | Various                                                       |
+| **Type**      | Light tuning                                                  |
+| **Published** | July 5, 2026                                                  |
 
 Lightbox (roof lightbar) pack for Scania trucks:
 
@@ -467,20 +515,22 @@ Lightbox (roof lightbar) pack for Scania trucks:
 
 ## Summary Table
 
-| Mod | Type | 1.60 Ready | FPS Impact | VRAM Impact | Notes |
-|-----|------|-----------|------------|-------------|-------|
-| MAN TGX E6 by Gloover v2.2.1 | Truck rework | ✅ Yes | 5-8% | +500 MB | Top 5 this month |
-| Volvo FH6 ALM Mod v1.60 | Truck rework | ✅ Yes | 5-8% | +500 MB | Latest FH generation |
-| Mercedes Actros MP6 v1.60 | Truck rework | ✅ Yes | 5-8% | +500 MB | MirrorCam included |
-| Ford F-Max Special Edition | Standalone truck | ✅ Yes | 5-10% | +600 MB | High detail, ICCOTY 2020 |
-| Iveco Hi-Way v8x4 | Truck rework | ✅ Yes | 5-8% | +400 MB | 22 chassis, 20 engines |
-| Iveco S-Way Hi-Powered | Truck rework | ✅ Yes | 5-8% | +400 MB | Tuned engines included |
-| Peterbilt 350 | Standalone (classic) | ✅ Yes | 3-5% | +200 MB | Vintage American truck |
-| Mercedes 1632 NG v1.8+ | Classic truck | ⚠️ 1.59 | 3-5% | +300 MB | Discontinued, community may continue |
-| Mack Anthem | American truck | ❌ 1.44 | 5-8% | +500 MB | Too old for 1.60 |
-| Volvo VNL 1.0 | American truck | ❌ 1.44 | 5-8% | +500 MB | Too old for 1.60 |
-| SiSL's Mega Pack | Interior accessories | ✅ Yes | <1% | Minimal | Essential for cabin customisation |
-| Realistic Truck Physics | Physics | Check version | <1% | None | Steam Workshop recommended |
+| Mod                          | Type                 | 1.60 Ready    | FPS Impact | VRAM Impact | Notes                                |
+|------------------------------|----------------------|---------------|------------|-------------|--------------------------------------|
+| MAN TGX E6 by Gloover v2.2.1 | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | ★ Baseline, Top 5 this month         |
+| Volvo FH6 ALM Mod v1.60      | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | ★ Baseline alternative               |
+| Mercedes Actros MP6 v1.60    | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | MirrorCam included                   |
+| DAF XF 105 Bart De Vries v10 | Standalone truck     | ✅ Yes         | 5-8%       | +500 MB     | Bundled trailer, custom interior     |
+| Renault Range T Evo v2.4     | Standalone truck     | ✅ Yes         | 5-8%       | +500 MB     | ★ Baseline alt, by Gloover, massive tuning |
+| Ford F-Max Special Edition   | Standalone truck     | ✅ Yes         | 5-10%      | +600 MB     | High detail, ICCOTY 2020             |
+| Iveco Hi-Way v8x4            | Truck rework         | ✅ Yes         | 5-8%       | +400 MB     | 22 chassis, 20 engines               |
+| Iveco S-Way Hi-Powered       | Truck rework         | ✅ Yes         | 5-8%       | +400 MB     | Tuned engines included               |
+| Peterbilt 350                | Standalone (classic) | ✅ Yes         | 3-5%       | +200 MB     | Vintage American truck               |
+| Mercedes 1632 NG v1.8+       | Classic truck        | ⚠️ 1.59       | 3-5%       | +300 MB     | Discontinued, community may continue |
+| Mack Anthem                  | American truck       | ❌ 1.44        | 5-8%       | +500 MB     | Too old for 1.60                     |
+| Volvo VNL 1.0                | American truck       | ❌ 1.44        | 5-8%       | +500 MB     | Too old for 1.60                     |
+| SiSL's Mega Pack             | Interior accessories | ✅ Yes         | <1%        | Minimal     | Essential for cabin customisation    |
+| Realistic Truck Physics      | Physics              | Check version | <1%        | None        | Steam Workshop recommended           |
 
 ### Notes
 
