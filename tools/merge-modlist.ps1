@@ -78,6 +78,67 @@ function Test-TypstInstalled {
 
 #endregion
 
+function Convert-Table {
+    param([string]$Text)
+    $result = [System.Text.StringBuilder]::new()
+    $lines = $Text -split "`r`n|`n"
+    $i = 0
+    $inCodeBlock = $false
+    while ($i -lt $lines.Length) {
+        $line = $lines[$i]
+        # Track code fence state
+        if ($line -match '^\s*```') { $inCodeBlock = !$inCodeBlock }
+        if ($inCodeBlock) { $result.AppendLine($line) | Out-Null; $i++; continue }
+        if ($line -match '^\s*\|.+\|' -and ($i+1) -lt $lines.Length -and $lines[$i+1] -match '^\s*\|[\s:-]+\|') {
+            $header = ($line -replace '^\s*\||\|\s*$', '') -split '\|' | ForEach-Object { $_.Trim() }
+            $i += 2
+            $rows = @()
+            while ($i -lt $lines.Length -and $lines[$i] -match '^\s*\|') {
+                $cells = ($lines[$i] -replace '^\s*\||\|\s*$', '') -split '\|' | ForEach-Object { $_.Trim() }
+                $rows += ,$cells
+                $i++
+            }
+            $result.AppendLine("#table(") | Out-Null
+            $result.AppendLine("  columns: ($(('auto,' * [Math]::Max($header.Count,1)).TrimEnd(',')),") | Out-Null
+            if ($header.Count -gt 0) { $result.AppendLine("  fill: (luma(240), none),") | Out-Null }
+            else { $result.AppendLine("  fill: none,") | Out-Null }
+            foreach ($cell in $header) { $result.AppendLine("  [*$cell*],") | Out-Null }
+            foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$cell],") | Out-Null } }
+            $result.AppendLine(")") | Out-Null
+        } else {
+            $result.AppendLine($line) | Out-Null
+            $i++
+        }
+    }
+    return $result.ToString()
+}
+
+function Convert-MarkdownToTypst {
+    param([string]$Text, [string]$FileH1Anchor)
+    # 1. Strip HTML comments
+    $lines = ($Text -replace '(?s)<!--.*?-->', '') -split "`r`n|`n"
+    $usedLabels = @{}
+    $headingOrder = @()
+    $converted = [System.Text.StringBuilder]::new()
+    foreach ($line in $lines) {
+        if ($line -match '^(#{1,6})\s+(.+)$') {
+            $level = $matches[1].Length
+            $body = $matches[2]
+            $converted.AppendLine(("=" * $level) + " $body") | Out-Null
+            $rawAnchor = ($body -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
+            if ([string]::IsNullOrEmpty($rawAnchor)) { $rawAnchor = "section" }
+            $label = if ($level -eq 1) { $rawAnchor } else { "$FileH1Anchor-$rawAnchor" }
+            $final = $label; $suffix = 2
+            while ($usedLabels.ContainsKey($final)) { $final = "$label-$suffix"; $suffix++ }
+            $usedLabels[$final] = $true
+            $converted.AppendLine("<$final>") | Out-Null
+            $headingOrder += @{Text = $body; Anchor = $final; Level = $level}
+        } else { $converted.AppendLine($line) | Out-Null }
+    }
+    $text = $converted.ToString() -replace '!\[([^\]]*)\]\(([^)]+)\)', '#image("$2")'
+    return @{ Content = Convert-Table -Text $text; Headings = $headingOrder }
+}
+
 $files = @(
   "guide/modlist.md"
   "guide/install.md"
