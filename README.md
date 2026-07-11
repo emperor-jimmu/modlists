@@ -38,6 +38,10 @@ The PDF is output at `site/pdf/guide.pdf` after build.
 | Performance | Empirical FPS/load time benchmarks |
 | Appendix | Glossary, troubleshooting, mod credits |
 
+## Resolution Baseline
+
+All screenshots and UI mod recommendations target **3840×2160 (4K)**. Web-scaled images max out at 1920px wide; the PDF retains full resolution.
+
 ## Versioning
 
 See `VERSION` at repo root. Bumped when the modlist changes significantly.

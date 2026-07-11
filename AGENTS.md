@@ -63,6 +63,17 @@ stellaris-modlist/
 - **Version discipline.** Every `modlist/*.md` entry should note whether the mod is version-locked in MO2.
 - **Performance notes.** Where known, annotate mods with performance impact (FPS cost, load time increase).
 - **External links.** Link to Steam Workshop pages (or GitHub/Discord for non-Steam mods).
+- **4K baseline.** All screenshots taken at 3840×2160. UI mod recommendations should note 4K compatibility. Screenshots go in `docs/assets/images/` and should be scaled for web (max 1920px wide) but full-res in the PDF.
+
+## Web Research
+
+When researching mods (Workshop pages, mod wikis, GitHub), the standard HTTP fetch may fail because Steam and some other sites block unauthenticated requests. If a page doesn't load, use **Playwright** (headless Chromium) to browse it. Playwright is already installed as a dependency of mkdocs-exporter:
+
+```powershell
+playwright install chrome
+```
+
+Use it to navigate Workshop pages, read mod descriptions, and extract information that regular HTTP fetch can't reach.
 
 ## Build Commands
 
