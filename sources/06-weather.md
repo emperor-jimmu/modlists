@@ -225,19 +225,91 @@ A vegetation overhaul mod that replaces grass and tree textures:
 
 ---
 
+## PNG Autumn Addon
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Included in PNG Graphics v1.15.6+ |
+| **Source** | [modland.net](https://www.modland.net/euro-truck-simulator-2/other/nextgen-graphics.html) (PNG Graphics) |
+| **Author** | Freemium |
+| **Type** | Seasonal weather + vegetation addon |
+
+Seasonal addon for PNG Graphics (Nextgen Graphics) that replaces summer/spring environments with autumn colours, weather, and lighting:
+
+- Autumnal vegetation colours (orange, red, yellow foliage)
+- Rebalanced lighting for shorter daylight hours
+- Overcast and foggy weather suited to autumn
+- Compatible with all map DLCs
+
+**Compatibility:** Requires PNG Graphics / Nextgen Graphics as the base mod. Load the Autumn Addon above the base PNG files. Not compatible with other seasonal or weather overhauls (Grimes, etc.).
+
+**Performance Impact:** Similar to base PNG (~6-10% FPS loss at 4K depending on density).
+
+---
+
+## Project Ultimate Weather 2.0
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 2.0 |
+| **Source** | [ets3mods.com](https://ets3mods.com/project-ultimate-weather-1-59-1-60/) (v1.0) / [Boosty](https://boosty.to/projectultimate) (v2.0, paid) |
+| **Author** | AngusMay (Project Ultimate) |
+| **Type** | Weather overhaul |
+
+A custom SCS weather rework with fully custom skyboxes and atmospheric lighting:
+
+- 8 sunny (non-rain) skyboxes and 4 overcast/rain skyboxes for natural variety
+- Rebalanced HDR, bloom, colour grading, and contrast
+- Improved fog and cloud formations
+- v2.0 adds further refinements to sky colours, fog density, and rain consistency
+
+**Compatibility:** 1.59–1.60. NOT compatible with other weather mods (Realistic Weather System, Grimes seasons, etc.). Fully compatible with PNG/Nextgen Graphics texture packs. v2.0 is exclusive to [Boosty/Patreon subscribers](https://boosty.to/projectultimate).
+
+**Performance Impact:** Negligible (~1-2% FPS loss) — definition-only changes, no new models.
+
+> **💰 Note:** v2.0 is a paid mod (Boosty/Patreon subscription). The free v1.0 is available on ets3mods.com.
+
+---
+
+## TM Realistic Rain v1.1
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v1.1 |
+| **Source** | [ets3mods.com](https://ets3mods.com/tm-real-rain-v1-1-1-59/) |
+| **Author** | TM Mods |
+| **Type** | Rain/weather enhancement |
+
+A standalone rain enhancement mod that reworks ETS2's rain visuals and audio:
+
+- Ultra-realistic raindrop visuals with dynamic density and natural movement
+- Improved rain sound effects with directional audio and cabin ambience
+- Realistic wet road reflections, surface puddling, and dynamic water sheen
+- Enhanced rain streaks on windshield with accurate wiper interaction
+- Compatible with most graphics, lighting, and sound overhaul mods
+
+**Compatibility:** 1.60 (reported). Works alongside most graphics and weather mods. May conflict with other rain-specific mods (Grimes Rain Reflections, Realistic Weather System).
+
+**Performance Impact:** Light (~2-3% FPS loss at 4K).
+
+---
+
 ## Summary Table
 
 | Mod | Category | Size | FPS Impact (4K) | VRAM Impact | Best For |
 |-----|----------|------|-----------------|-------------|----------|
 | Realistic Weather System V2.9 | Weather | 0.9 MB | <2% | Minimal | Realistic rain/thunder standalone |
 | Grimes Frosty Winter v10.7 | Seasonal | 3 GB | 15-20% | +2-3 GB | Full winter experience |
-| Grimes New Summer v6.7 | Seasonal | 761 MB | 8-12% | +1 GB | Summer environment overhaul |
+| Grimes New Summer v6.7 {★ Baseline} | Seasonal | 761 MB | 8-12% | +1 GB | Summer environment overhaul |
 | Grimes Spring v6.6 | Seasonal | 912 MB | 8-12% | +1 GB | Spring environment |
 | Grimes Early Autumn v9.0 | Seasonal | 1023 MB | 8-12% | +1 GB | Autumn environment |
 | Grimes Late Autumn/Mild Winter v6.6 | Seasonal | 750 MB | 8-12% | +1 GB | Late autumn / mild winter |
 | Grimes Rain Reflections v1.0 | Addon | 10 MB | <2% | Minimal | Wet road reflections |
 | Weather Mod V3.8 | Weather | ~50 MB | 3-5% | +200 MB | Lighting + fog overhaul |
 | Grass_Tree / Autumn_ETS | Vegetation | ~200 MB | 3-5% | +500 MB | Grass/tree textures |
+| PNG Autumn Addon | Seasonal | Bundled | 6-10% | +1-2 GB | Requires PNG/Nextgen base |
+| Project Ultimate Weather 2.0 | Weather | ~53 MB | 1-2% | Minimal | Paid v2.0, free v1.0 available |
+| TM Realistic Rain v1.1 | Rain | ~5.5 MB | 2-3% | Minimal | Standalone rain overhaul |
 
 ### Notes
 

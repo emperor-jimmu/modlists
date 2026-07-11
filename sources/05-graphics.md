@@ -103,6 +103,54 @@ Free to use. Requires ReShade 5.x+ installation.
 
 ---
 
+## Snowymoon v2
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 1.60.1.0s |
+| **Source** | [ets2.lt](https://ets2.lt/en/snowymoon-1-60-1-0s/) / [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/snowymoon-for-ets2-16010s) |
+| **Author** | Community |
+| **Type** | Lighting / graphics plugin (DX11) |
+
+A plugin-based graphics enhancement for ETS2 that improves lighting, colour grading, and visual clarity through DX11 injection:
+
+- Enhanced ambient lighting and global illumination
+- Improved colour grading with deeper blacks and natural highlights
+- Sharper image quality with reduced haze
+- Works alongside ReShade presets (load Snowymoon first)
+
+**Installation:** Extract to `bin\win_x64\` folder — not the mod folder. Launch with DirectX 11. Press END or CTRL+P to open the settings menu.
+
+**Compatibility:** 1.60 (tested with ProMods 2.83). Compatible with most mods since it operates outside the game's mod system. Conflicts with other DX11 injectors (other TAA/SweetFX plugins).
+
+**Performance Impact:** Light (~2-4% FPS loss at 4K).
+
+---
+
+## Project Ultimate RealEye ReShade
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest (released July 2026) |
+| **Source** | [Boosty](https://boosty.to/projectultimate) (paid subscription) |
+| **Author** | AngusMay (Project Ultimate) |
+| **Type** | ReShade preset |
+
+A premium ReShade preset from the Project Ultimate series, designed to deliver cinematic colour grading and realistic visual atmosphere:
+
+- Custom tonemapping for natural colour reproduction
+- Ambient occlusion and depth-of-field enhancements
+- Cinematic bloom, glare, and lens effects
+- Designed to pair with Project Ultimate Weather for a complete visual overhaul
+
+**Compatibility:** 1.60. Requires ReShade 5.x+ installed. Designed to work with Project Ultimate Weather.
+
+**Performance Impact:** Moderate (~5-10% FPS loss at 4K depending on effects enabled).
+
+> **💰 Paid mod** — available via Boosty/Patreon subscription. Free ReShade alternatives (community presets) deliver solid results at no cost; paying for ReShade presets is low priority.
+
+---
+
 ## Summary Table
 
 | Mod | FPS Impact (4K) | VRAM Impact | Best For | Category |
@@ -112,9 +160,11 @@ Free to use. Requires ReShade 5.x+ installation.
 | Realistic Graphics Mod | ~3-5 FPS loss | +800 MB | Balanced realism | Comprehensive |
 | JBX Graphics | ~10-15 FPS loss | +2 GB | Cinematic quality | Reshade/Lighting |
 | ReShade Presets | ~3-6 FPS loss | Varies | Color grading | Post-processing |
+| Snowymoon v2 | ~2-4 FPS loss | Minimal | Lighting/plugin | DX11 Injector |
+| Project Ultimate RealEye | ~5-10 FPS loss | Varies | Cinematic ReShade | Reshade (paid) |
 
 ### Recommendation
 
-For a 4K build with an RTX 4070 or better: **Nextgen Graphics** is the best pick. For lower-end hardware, **Project Next Gen** alone provides a solid visual upgrade at minimal cost. Avoid stacking multiple reshade presets or two comprehensive graphics overhauls together.
+For a 4K build with an RTX 4080 Super: **Nextgen Graphics** + **Snowymoon v2** pair well for visual quality. Add **TM Realistic Rain** from the weather section for wet-weather immersion. Avoid stacking multiple comprehensive graphics overhauls or two reshade presets simultaneously.
 
-> **Note on paid graphics mods:** JBX Graphics is the only paid option here. Free alternatives (Nextgen Graphics, RGM) deliver comparable quality — paying for graphics is low priority.
+> **Note on paid graphics mods:** JBX Graphics and Project Ultimate RealEye are paid. Free alternatives (Nextgen Graphics, community ReShade presets) deliver comparable quality — paying for graphics is low priority.
