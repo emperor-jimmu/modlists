@@ -17,6 +17,7 @@ One separator per mod category, listed in load order (top to bottom in the left 
 
 | # | Separator Name | Color | Hex |
 |---|---------------|-------|-----|
+| 0 | Foundations | Black | `#3B4048` |
 | 1 | Bugfixes | Red | `#E06C75` |
 | 2 | UI and HUD | Orange | `#D19A66` |
 | 3 | Graphics Base | Yellow | `#E5C07B` |
