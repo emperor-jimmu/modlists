@@ -144,8 +144,9 @@ function Convert-MarkdownToTypst {
         } else { $converted.AppendLine($line) | Out-Null }
     }
     $text = $converted.ToString() -replace '!\[([^\]]*)\]\(([^)]+)\)', '#image("$2")'
-    # Escape $ and _ (typst treats $ as math, _ as italic — labels safe as they contain neither)
+    # Escape $, # (hex colors), and _ (typst treats $ as math, # as code, _ as italic)
     $text = $text.Replace('$', '\$')
+    $text = $text -replace '(?<!\w)#([0-9a-fA-F])', '\#$1'
     $text = $text.Replace('_', '\_')
     $text = Convert-Table -Text $text
     # Escape bare < characters not part of labels
@@ -246,7 +247,7 @@ $a.Invoke("#let ew-font-jbmono-path = `"$relFontDir/JetBrainsMono-Regular.ttf`""
 $a.Invoke("")
 $a.Invoke("// -- Page Setup --")
 $a.Invoke('#set text(font: ("Inter", ew-font-inter-path), size: 10pt)')
-$a.Invoke('#set link(color: rgb("#2563EB"))')
+$a.Invoke('#set link(fill: rgb("#2563EB"))')
 $a.Invoke('#set raw(font: ("JetBrains Mono", ew-font-jbmono-path), theme: "one-dark")')
 $a.Invoke('#set heading(numbering: "1.1")')
 $a.Invoke('#set page(')
