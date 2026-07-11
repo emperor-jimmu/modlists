@@ -16,11 +16,11 @@ function Ensure-Fonts {
     $null = New-Item -ItemType Directory -Path $fontDir -Force
 
     $fonts = @{
-        "Inter-Regular.ttf"         = "https://github.com/rsms/inter/raw/master/docs/font-files/Inter-Regular.ttf"
-        "Inter-Bold.ttf"            = "https://github.com/rsms/inter/raw/master/docs/font-files/Inter-Bold.ttf"
-        "Inter-Italic.ttf"          = "https://github.com/rsms/inter/raw/master/docs/font-files/Inter-Italic.ttf"
-        "JetBrainsMono-Regular.ttf" = "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/ttf/JetBrainsMono-Regular.ttf"
-        "JetBrainsMono-Bold.ttf"    = "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/ttf/JetBrainsMono-Bold.ttf"
+        "Inter-Regular.ttf"         = "https://cdn.jsdelivr.net/gh/rsms/inter@master/docs/font-files/Inter-Regular.ttf"
+        "Inter-Bold.ttf"            = "https://cdn.jsdelivr.net/gh/rsms/inter@master/docs/font-files/Inter-Bold.ttf"
+        "Inter-Italic.ttf"          = "https://cdn.jsdelivr.net/gh/rsms/inter@master/docs/font-files/Inter-Italic.ttf"
+        "JetBrainsMono-Regular.ttf" = "https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@master/fonts/ttf/JetBrainsMono-Regular.ttf"
+        "JetBrainsMono-Bold.ttf"    = "https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@master/fonts/ttf/JetBrainsMono-Bold.ttf"
     }
 
     foreach ($name in $fonts.Keys) {
@@ -121,14 +121,8 @@ function Convert-MarkdownToTypst {
     param([string]$Text, [string]$FileH1Anchor)
     # 1. Strip HTML comments
     $text = $Text -replace '(?s)<!--.*?-->', ''
-    # 2. Convert markdown emphasis to typst syntax
-    #    markdown ***bold italic*** → typst _*bold italic*_
-    $text = $text -replace '\*\*\*(.+?)\*\*\*', '_\*$1\*_'
-    #    markdown **bold** → typst *bold*
-    $text = $text -replace '\*\*(.+?)\*\*', '*$1*'
-    #    markdown *italic* → typst _italic_
-    $text = $text -replace '(?<!\*)\*(?!\s|\*)(.+?)(?<!\s|\*)\*(?!\*)', '_$1_'
-    # 3. Process lines
+    # 2. Convert markdown autolinks <url> to plain URLs (typst treats <...> as labels)
+    $text = $text -replace '<(https?://[^>]+)>', '$1'
     $lines = $text -split "`r`n|`n"
     $usedLabels = @{}
     $headingOrder = @()
@@ -216,7 +210,7 @@ foreach ($file in $files) {
   if (-not (Test-Path $path)) { Write-Warning "Skipping $file -- not found"; continue }
   Write-Host "Processing $file..."
   $content = (Get-Content $path -Raw).Trim()
-  $fileH1Anchor = if ($content -match '^#\s+(.+)$') {
+  $fileH1Anchor = if ($content -match '(?m)^# (.+)$') {
     ($matches[1].Trim() -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
   } else { "untitled" }
   $result = Convert-MarkdownToTypst -Text $content -FileH1Anchor $fileH1Anchor
