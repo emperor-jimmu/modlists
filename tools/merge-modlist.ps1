@@ -247,8 +247,8 @@ $a.Invoke("#let ew-font-jbmono-path = `"$relFontDir/JetBrainsMono-Regular.ttf`""
 $a.Invoke("")
 $a.Invoke("// -- Page Setup --")
 $a.Invoke('#set text(font: ("Inter", ew-font-inter-path), size: 10pt)')
-$a.Invoke('#set link(fill: rgb("#2563EB"))')
-$a.Invoke('#set raw(font: ("JetBrains Mono", ew-font-jbmono-path), theme: "one-dark")')
+$a.Invoke('#show link: set text(fill: rgb("#2563EB"))')
+$a.Invoke('#set raw(tab-size: 4)')
 $a.Invoke('#set heading(numbering: "1.1")')
 $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 2cm),')
@@ -292,12 +292,14 @@ foreach ($section in $allSections) { $a.Invoke($section) }
 
 $typContent = $typLines -join "`r`n"
 
-# -- Resolve cross-file links: ](file.md#anchor) to ](#fileh1anchor-anchor) --
+# -- Resolve cross-file links: [text](file.md#anchor) -> #link(<fileh1-anchor>)[text] --
 foreach ($kv in $fileAnchorMap.GetEnumerator()) {
   $escaped = [regex]::Escape($kv.Key)
   $anchor = $kv.Value
-  $typContent = $typContent -replace "(?<=\]\()${escaped}#([^)]+)(?=\))", "#${anchor}-`$1"
-  $typContent = $typContent -replace "(?<=\]\()${escaped}(?=\))", "#${anchor}"
+  $r1 = '#link(<' + $anchor + '-$2>)[$1]'
+  $r2 = '#link(<' + $anchor + '>)[$1]'
+  $typContent = $typContent -replace "\[([^\]]*)\]\(${escaped}#([^)]+)\)", $r1
+  $typContent = $typContent -replace "\[([^\]]*)\]\(${escaped}\)", $r2
 }
 
 # -- Write .typ file --
@@ -310,7 +312,7 @@ Write-Host "Generated $typFile ($((Get-Item $typFile).Length / 1KB -as [int]) KB
 # -- Compile to PDF --
 Write-Host "Compiling PDF..."
 $pdfFile = Join-Path $outputDir "elder-wilds.pdf"
-$compiled = & typst compile $typFile $pdfFile 2>&1
+$compiled = & typst compile --root (Join-Path $root ".") $typFile $pdfFile 2>&1
 if ($LASTEXITCODE -eq 0) {
   Write-Host "PDF generated -> $pdfFile ($((Get-Item $pdfFile).Length / 1KB -as [int]) KB)" -ForegroundColor Green
 } else {
