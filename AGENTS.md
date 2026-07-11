@@ -69,6 +69,11 @@ Each mod in a chapter should follow:
 - PDF output filename includes guide version number.
 - **When the game updates**, verify every mod still supports the new version before bumping `gameVersion`.
 
+## Mod Research (Steam Workshop)
+- Start searches at the RimWorld app workshop hub: `https://steamcommunity.com/app/294100/workshop/`
+- Individual mod pages use the pattern: `https://steamcommunity.com/sharedfiles/filedetails/?id=<WORKSHOP_ID>`
+- Mods are installed via **Steam Workshop** only (no NexusMods) — RimPy auto-sort works natively with Workshop subscriptions
+
 ## Writing Process
 1. Research mods on Steam Workshop / GitHub via Playwright or web fetch
 2. Follow the per-mod format above
