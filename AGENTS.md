@@ -35,6 +35,7 @@ Rules:
 - Conflicts and dependencies MUST be cross-referenced across category files
 - Mods are listed in recommended install order within each category
 - Performance tags must be accurate -- test if unsure
+- **DO NOT ADD any mod whose version compatibility cannot be verified for 2.31 (or at minimum 2.3) — this is a hard block, not a preference**
 
 ## Terminology
 
