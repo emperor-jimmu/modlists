@@ -1,0 +1,11 @@
+[book]
+title = "RimWorld Modlist & Learning Guide"
+authors = ["Community"]
+description = "A beginner-friendly RimWorld 1.6.4633 modlist and gameplay guide"
+
+[output.html]
+site-url = "/"
+edit-url-template = ""
+
+[output.pdf]
+# mdbook-pdf or mdbook-pandoc backend

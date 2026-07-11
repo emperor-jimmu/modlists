@@ -1,0 +1,18 @@
+# mdbook output
+modlist/guide/
+
+# Performance test results (user's own data)
+performance/results/
+
+# OS files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user

@@ -1,0 +1,76 @@
+# AGENTS.md — RimWorld Modlist Project
+
+## Project Identity
+
+This repo builds a **curated, beginner-friendly RimWorld modlist + learning guide** that gets published as a PDF via mdbook. Target audience: first-time RimWorld player on Windows, 4K resolution. Current target game version: **1.6.4633** (see `version.json`).
+
+## Tooling
+
+| Tool | Purpose |
+|------|---------|
+| **RimPy Mod Manager** | Mod installation & load-order auto-sort |
+| **mdbook** | Builds chapters into a website & PDF |
+| **Playwright** | For browsing JS-rendered web pages (Steam Workshop, mod wikis, forums) when plain HTTP fetch fails |
+| **Pandoc** | PDF rendering engine (invoked by mdbook) |
+
+## Repository Structure
+
+```
+rimworld-modlist/
+  version.json          # Semver + target game version
+  missing-mods.md       # Mods that don't exist yet (with pseudo-specs)
+  README.md             # Human-facing project overview
+  AGENTS.md             # This file — instructions for AI assistants
+  .gitignore
+  modlist/              # Guide content (markdown, mdbook source)
+    chapter-*.md
+    appendix-*.md
+  performance/          # Performance testing
+    methodology.md      # How to benchmark TPS/load times
+    template.ods        # Spreadsheet template
+    results/            # gitignored — user's own benchmarks
+  book.toml             # mdbook configuration
+```
+
+## Content Guidelines
+
+### Tone & Audience
+- **First-time player** — assume zero RimWorld knowledge.
+- Explain *why* a mod exists (what problem it solves) before *what* it does.
+- Never assume the reader knows modding terminology.
+
+### Mod Selection (HARD RULES)
+- ✅ Bugfixes, performance optimizers, UI polish, graphics, content expansions, gameplay depth, alien breeding, NPC/story expansion.
+- ❌ Cheat mods, debug tools, overpowered weapons, anything that trivializes core survival mechanics.
+
+### Version Compatibility (HARD REQUIREMENT)
+- **Every mod MUST support RimWorld 1.6.x** (minimum 1.6). **1.6.4633** is the current exact version.
+- Verify compatibility on the mod's Steam Workshop page (look for the version tag in the description or requirements section).
+- If a mod's Workshop page does not explicitly state 1.6 support, do NOT add it.
+- If a mod was last updated for an older version (1.4, 1.5) and has no 1.6 update, do NOT add it — even if users report it "works fine."
+- Check `version.json` for the current tracked game version. Update both `gameVersion` (exact) and `gameVersionMin` (minimum minor) when the game updates.
+
+### 4K Baseline
+- All UI/HUD mods must work well at 4K (3840×2160).
+- Screenshots must be captured at 4K.
+
+### Mod Entries (per-mod format)
+Each mod in a chapter should follow:
+- **Name** — Steam Workshop link
+- **What it does** — 1-2 sentences
+- **Why it's here** — problem it solves
+- **Not OP because** — why it doesn't break balance
+- **Install** — OK to install now, or wait until comfortable with X
+
+## Versioning
+- `version.json` stores both exact game version (`gameVersion`) and minimum compatible minor (`gameVersionMin`), plus the guide's own semver.
+- Bump the guide's semver per meaningful guide updates.
+- Git tags matching guide semver.
+- PDF output filename includes guide version number.
+- **When the game updates**, verify every mod still supports the new version before bumping `gameVersion`.
+
+## Writing Process
+1. Research mods on Steam Workshop / GitHub via Playwright or web fetch
+2. Follow the per-mod format above
+3. Keep chapters ordered by learning progression
+4. Cross-reference mods between chapters where relevant
