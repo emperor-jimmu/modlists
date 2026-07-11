@@ -241,6 +241,8 @@ $a.Invoke("// -- Page Setup --")
 $a.Invoke('#set text(size: 10pt)')
 $a.Invoke('#show link: set text(fill: rgb("#2563EB"))')
 $a.Invoke('#set raw(tab-size: 4)')
+$a.Invoke('// Inline raw (backtick code) uses body font, not monospaced')
+$a.Invoke('#show raw.where(block: false): set text(font: "Inter")')
 $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 2cm),')
 $a.Invoke('  footer: context align(center + bottom, text(8pt, fill: luma(140),')
@@ -295,12 +297,13 @@ Write-Host "Generated $typFile ($((Get-Item $typFile).Length / 1KB -as [int]) KB
 # -- Compile to PDF --
 Write-Host "Compiling PDF..."
 $pdfFile = Join-Path $outputDir "elder-wilds.pdf"
-$compiled = & typst compile --root (Join-Path $root ".") $typFile $pdfFile 2>&1
-if ($LASTEXITCODE -eq 0) {
-  Write-Host "PDF generated -> $pdfFile ($((Get-Item $pdfFile).Length / 1KB -as [int]) KB)" -ForegroundColor Green
+$stderr = & typst compile --root (Join-Path $root ".") $typFile $pdfFile 2>&1
+$pdfFileObj = Get-Item $pdfFile -ErrorAction SilentlyContinue
+if ($pdfFileObj -and $pdfFileObj.Length -gt 0) {
+  Write-Host "PDF generated -> $pdfFile ($($pdfFileObj.Length / 1KB -as [int]) KB)" -ForegroundColor Green
 } else {
   Write-Host "Typst compilation failed:" -ForegroundColor Red
-  $compiled | ForEach-Object { Write-Host $_ -ForegroundColor Red }
+  $stderr | ForEach-Object { Write-Host $_ -ForegroundColor Red }
   exit 1
 }
 
