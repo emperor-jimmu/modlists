@@ -1,0 +1,25 @@
+# Playwright
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Log files
+*.log
+
+# Typst build artifacts
+*.pdf
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Python virtual environments
+.venv/
+venv/
+__pycache__/
+
+# Node
+node_modules/
+
+# Idea files
+*.idea/
