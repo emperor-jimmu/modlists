@@ -193,7 +193,9 @@ Truck mods add new drivable vehicles or rework existing ones. They must load bel
 **From this guide:**
 
 - **MAN TGX E6 by Gloover v2.2.1**
+- **MAN TG3 2020 by Gloover v1.8**
 - **Volvo FH6 ALM Mod v1.60**
+- **Volvo FH4 Reworked**
 - **Mercedes-Benz Actros MP6 v1.60**
 - **Ford F-Max Special Edition**
 - **Iveco Hi-Way v8x4 and More**
@@ -201,6 +203,7 @@ Truck mods add new drivable vehicles or rework existing ones. They must load bel
 - **Peterbilt 350**
 - **Mercedes 1632 NG v1.8+**
 - **SiSL's Mega Pack** — Interior accessories. Compatible with all trucks.
+- **50k Wheels Pack** — Wheels and rims.
 - **Venus Scania NG Parts v1.60**, **Addon Scania R/S Rear Bumper**, **SRI Lightbox Pack**
 - **ETS2 Add-On Compressors v1.7**, **Abasstreppas LightFix Kit v1.60**
 - **Realistic Truck Physics Mod**
@@ -227,6 +230,8 @@ Gameplay mods modify core simulation data: income, fuel costs, tolls, physics pa
 - **TDS ECO Grand Garage v1.0** — Economy rebalance.
 - **New Service** — Company management layer.
 - **SiSL's Route Advisor** — Enhanced navigation UI.
+- **Real Company Logo v3.4** — World detail / company replacement. Load above map mods.
+- **License Plates 3 by JmZ** — World detail / license plate replacement. Load near Real Company Logo.
 - **Real Company Skins** — Logistics liveries for immersion.
 - **Ferry Plus v5.0.1** — New ferry connections. Above map mods.
 - **Indonesia Gameplay Mods v1** — Full gameplay overhaul pack.
@@ -341,7 +346,9 @@ TOP (Highest Priority)
   Scania V8 Stock Sound
   ───
   MAN TGX E6 by Gloover ★
+  MAN TG3 2020 by Gloover
   Volvo FH6 ALM Mod ★
+  Volvo FH4 Reworked
   Mercedes Actros MP6
   DAF XF 105 Bart De Vries
   Renault Range T Evo by Gloover ★
@@ -351,6 +358,7 @@ TOP (Highest Priority)
   Peterbilt 350
   Mercedes 1632 NG
   SiSL's Mega Pack
+  50k Wheels Pack
   Scania NG Parts / Accessories
   Realistic Truck Physics
   ───
@@ -361,6 +369,7 @@ TOP (Highest Priority)
   New Service
   SiSL's Route Advisor ★
   Real Company Logo v3.4 ★ (above map mods)
+  License Plates 3 by JmZ
   Real Company Skins ★
   Ferry Plus
   ───

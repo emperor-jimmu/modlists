@@ -27,6 +27,32 @@ A detailed standalone rework of the MAN TGX EfficientLine 6, one of the most pop
 
 ---
 
+## MAN TG3 2020 by Gloover v1.8
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v1.8 |
+| **Source** | [ets3mods.com](https://ets3mods.com/man-tg3-2020-by-gloover-v1-8-1-60/) / [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/man-tg3-2020-by-gloover-v18-160) / [modland.net](https://www.modland.net/euro-truck-simulator-2/trucks/man-tg3.html) |
+| **Author** | Gloover |
+| **Type** | Standalone truck |
+
+The latest MAN TG3 (2020-present) as a standalone truck from the same author (Gloover) as the baseline MAN TGX E6:
+
+- High-detail exterior with accurate TG3 2020 design language (updated front grille, headlights, bumper)
+- Multiple cabin options (GN, GM, GX) with various roof heights
+- Multiple chassis configurations (4x2, 6x2, 6x4)
+- Custom interior with detailed dashboard
+- Compatible with the Max2712 D2676 sound pack listed in the audio section
+- 1.60-compatible with updated definitions
+
+**Note:** The Max2712 "2022 MAN TGX (TG3) 510 D2676 Sound Pack v1.3.2" in the audio section is designed specifically for this truck (and the SCS MAN TGX TG3). Pair them for best results.
+
+**Compatibility:** 1.60. Standalone — available alongside the SCS MAN TGX.
+
+**Performance Impact:** Moderate (~5-8% FPS loss at 4K).
+
+---
+
 ## Volvo FH6 ALM Mod v1.60 {★ Baseline (alternative)}
 
 | Field        | Detail                                                        |
@@ -46,6 +72,30 @@ A comprehensive rework of the Volvo FH6 (the latest generation FH):
 - I-Shift transmission support
 
 **Compatibility:** 1.60 only. Standalone truck — available at Volvo dealers alongside the SCS version.
+
+**Performance Impact:** Moderate (~5-8% FPS loss at 4K).
+
+---
+
+## Volvo FH4 Reworked
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest |
+| **Source** | [SCS Forum](https://forum.scssoft.com/viewtopic.php?t=294436) |
+| **Author** | Community |
+| **Type** | Truck rework (standalone) |
+
+A comprehensive rework of the Volvo FH4 (2012 generation):
+
+- Full exterior and interior overhaul with high-quality textures
+- Multiple cabin options (Globetrotter, Globetrotter XL, Globetrotter XXL)
+- Multiple chassis configurations (4x2, 6x2, 6x4)
+- Custom dashboard with functional gauges
+- I-Shift transmission support
+- Compatible with Kriechbaum Volvo FH4 D13 sound pack
+
+**Compatibility:** 1.60 (reported). Standalone — available at Volvo dealers.
 
 **Performance Impact:** Moderate (~5-8% FPS loss at 4K).
 
@@ -386,6 +436,29 @@ Adds visible air compressor units to trucks as exterior tuning options:
 
 ---
 
+### 50k Wheels Pack
+
+| Field       | Detail                                                                      |
+|-------------|-----------------------------------------------------------------------------|
+| **Version** | Latest                                                                      |
+| **Source**  | [SCS Forum](https://forum.scssoft.com/viewtopic.php?t=183178)               |
+| **Author**  | 50k                                                                         |
+| **Type**    | Wheels / rims / tyre accessory                                              |
+
+The definitive wheels and rims pack for ETS2:
+
+- Hundreds of custom rim designs (alloy, steel, painted, chrome)
+- Multiple tyre brands and tread patterns
+- Realistic wheel sizes and offsets
+- Compatible with most truck mods
+- Regularly updated alongside game versions
+
+**Compatibility:** 1.60 (reported). Works with SCS trucks and most standalone truck mods.
+
+**Performance Impact:** Negligible — texture-only, no additional geometry processing.
+
+---
+
 ### Abasstreppas LightFix Kit v1.60
 
 | Field         | Detail                                                                |
@@ -518,7 +591,9 @@ Lightbox (roof lightbar) pack for Scania trucks:
 | Mod                          | Type                 | 1.60 Ready    | FPS Impact | VRAM Impact | Notes                                |
 |------------------------------|----------------------|---------------|------------|-------------|--------------------------------------|
 | MAN TGX E6 by Gloover v2.2.1 | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | ★ Baseline, Top 5 this month         |
+| MAN TG3 2020 by Gloover v1.8 | Standalone truck     | ✅ Yes         | 5-8%       | +500 MB     | Newest MAN TG3, by same author       |
 | Volvo FH6 ALM Mod v1.60      | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | ★ Baseline alternative               |
+| Volvo FH4 Reworked           | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | Older FH generation rework           |
 | Mercedes Actros MP6 v1.60    | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | MirrorCam included                   |
 | DAF XF 105 Bart De Vries v10 | Standalone truck     | ✅ Yes         | 5-8%       | +500 MB     | Bundled trailer, custom interior     |
 | Renault Range T Evo v2.4     | Standalone truck     | ✅ Yes         | 5-8%       | +500 MB     | ★ Baseline alt, by Gloover, massive tuning |
@@ -530,6 +605,7 @@ Lightbox (roof lightbar) pack for Scania trucks:
 | Mack Anthem                  | American truck       | ❌ 1.44        | 5-8%       | +500 MB     | Too old for 1.60                     |
 | Volvo VNL 1.0                | American truck       | ❌ 1.44        | 5-8%       | +500 MB     | Too old for 1.60                     |
 | SiSL's Mega Pack             | Interior accessories | ✅ Yes         | <1%        | Minimal     | Essential for cabin customisation    |
+| 50k Wheels Pack              | Wheels / rims        | ✅ Yes         | <1%        | Minimal     | Definitive wheel pack                |
 | Realistic Truck Physics      | Physics              | Check version | <1%        | None        | Steam Workshop recommended           |
 
 ### Notes

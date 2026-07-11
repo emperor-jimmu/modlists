@@ -497,6 +497,32 @@ Replaces 165+ fictional SCS companies and gas stations with real-world brands:
 
 ---
 
+### License Plates 3 by JmZ
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest |
+| **Source** | [catalogue.smods.ru](https://catalogue.smods.ru/archives/418368) (mirror: modsbase.com) |
+| **Author** | JmZ |
+| **Type** | World detail / license plate replacement |
+| **Category** | Map addon |
+
+Replaces vanilla license plates on trucks, trailers, and AI traffic with realistic European plate designs:
+
+- Country-specific license plate formats (DE, FR, IT, PL, CZ, NL, BE, AT, ES, UK, and many more)
+- Realistic EU blue stripe with country code
+- Proper font, spacing, and plate dimensions per country
+- Applies to player trucks, AI traffic, and all trailers
+- Works alongside Real Company Logo and other world detail mods
+
+**Role-Playing Potential:** Medium — subtle but noticeable immersion boost. Seeing a Polish-registered truck with correct plates alongside a Dutch one reinforces the feeling of a real European road network.
+
+**Compatibility:** 1.60 (reported). Works alongside Real Company Logo, company skins, and most graphics/weather mods. Load in the world details section of Mod Manager.
+
+**Performance Impact:** Negligible — texture replacement only.
+
+---
+
 ## Load Order & Compatibility
 
 ```
@@ -506,7 +532,7 @@ HIGH PRIORITY
   Animated Steering Wheel
   |
   v
-  World Details & Immersion (Real Company Logo — above map mods)
+  World Details & Immersion (Real Company Logo, License Plates 3 — above map mods)
   Economy mods (only one)
   Traffic density / AI traffic mods
   Real company skins & logistics liveries
@@ -552,6 +578,7 @@ LOW PRIORITY
 | Scania SmartDash v1.60 | Dashboard | ✅ Yes | Negligible | Medium | Scania NG only |
 | Iveco S-Way Improved Dashboard | Dashboard | ✅ Yes | Negligible | Medium | Iveco S-Way only |
 | Indonesia Gameplay Mods | Overhaul pack | Check mod page | Low-Moderate | High | All-in-one |
+| License Plates 3 by JmZ | World detail | ✅ Yes | Negligible | Medium | Realistic EU license plates on trucks/trailers |
 | Real Company Logo v3.4 | World detail | ✅ Yes | Negligible | High | Real gas stations, company logos, signs |
 
 ### Recommended Starter Setup
@@ -563,10 +590,11 @@ Load Order:
 1. Collision Model Mod v1.60
 2. Realistic Scania SmartDash v1.60 (or Iveco S-Way Dashboard)
 3. TDS ECO Grand Garage v1.0
-4. Real Traffic Density (Steam Workshop)
-5. Real Company Skins (various)
-6. EXPRESS PERFORMANCE MOD (bottom)
-7. Police Enforcement Mod (lowest)
+4. Real Company Logo v3.4, License Plates 3
+5. Real Traffic Density (Steam Workshop)
+6. Real Company Skins (various)
+7. EXPRESS PERFORMANCE MOD (bottom)
+8. Police Enforcement Mod (lowest)
 ```
 
 This setup adds financial challenge, realistic traffic, authentic branding, driving consequences, and better in-cab information — transforming ETS2 into a genuine trucking role-playing experience without overcomplicating the mod profile.
