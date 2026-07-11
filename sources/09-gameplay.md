@@ -35,30 +35,7 @@ An unofficial update of the TDS ECO system, rebalancing garage purchase costs, m
 
 ---
 
-### XP AND MONEY ETS2 by Rodonitcho Mods
 
-| Field | Detail |
-|-------|--------|
-| **Version** | 11/07/2026 |
-| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/xp-and-money-ets2-by-rodonitcho-mods-140-161-11-07-2026) |
-| **Author** | Rodonitcho |
-| **Type** | Save-game money/XP editor |
-| **Category** | Other |
-| **Downloads** | 5 |
-
-A quick-start utility that grants 100 trillion currency and 1 billion XP (level 147,074). Creates a new profile with maxed-out finances:
-
-- Sets money to 100,000,000,000,000
-- Grants 1,000,000,000 XP (level ~147,074)
-- Designed for new profiles only — one-time use per profile
-
-**Role-Playing Potential:** Low — this is a cheat/accelerator, not a role-playing tool. Useful for skipping the early grind to test high-level content or set up a specific fleet scenario.
-
-**Compatibility:** 1.40–1.61. Works as a profile-level save injection.
-
-**Performance Impact:** None.
-
----
 
 ### Realistic Economy Mods (General)
 
@@ -560,7 +537,6 @@ LOW PRIORITY
 | Mod | Type | 1.60 Ready | FPS Impact | RP Potential | Notes |
 |-----|------|-----------|------------|-------------|-------|
 | TDS ECO Grand Garage | Economy | ✅ Yes | Negligible | High | Unofficial port, economy rebalance |
-| XP and Money ETS2 | Cheat/Accelerator | ✅ Yes (1.40–1.61) | None | Low | Max-level save tool |
 | EXPRESS PERFORMANCE MOD | Traffic + FPS | ✅ Yes | +25–45% | High | Rush-hour curves, CPU relief |
 | Brutal Traffic v8.1 | Traffic behavior | ✅ Yes | <2% | High | Realistic AI, weather-reactive |
 | AI Traffic Pack v2.5 | Traffic variety | Check mod page | -3–8% | Medium | Real vehicle models |
