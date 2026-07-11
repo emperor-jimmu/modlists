@@ -1,0 +1,56 @@
+methodology:
+  hardware:
+    cpu: "TBD"
+    gpu: "TBD"
+    ram: "TBD"
+    storage: "SSD"
+    os: "Windows 11"
+  tool: "CapFrameX"
+  scenario: "1066 start as Dublin (Ireland), Speed 5, 10 minutes recorded"
+  baseline_fps:
+    min: null
+    avg: null
+    max: null
+
+tests:
+  - category: "bugfixes"
+    label: "Bugfixes Only"
+    fps: { min: null, avg: null, max: null }
+  - category: "ui-hud"
+    label: "UI / HUD"
+    fps: { min: null, avg: null, max: null }
+  - category: "map-environment"
+    label: "Map & Environment"
+    fps: { min: null, avg: null, max: null }
+  - category: "portraits-models"
+    label: "Portraits & Models"
+    fps: { min: null, avg: null, max: null }
+  - category: "culture-religion"
+    label: "Culture & Religion"
+    fps: { min: null, avg: null, max: null }
+  - category: "events-decisions"
+    label: "Events & Decisions"
+    fps: { min: null, avg: null, max: null }
+  - category: "gameplay-mechanics"
+    label: "Gameplay Mechanics"
+    fps: { min: null, avg: null, max: null }
+  - category: "map-expansion"
+    label: "Map Expansion"
+    fps: { min: null, avg: null, max: null }
+  - category: "music-sound"
+    label: "Music & Sound"
+    fps: { min: null, avg: null, max: null }
+  - category: "fantasy-optional"
+    label: "Fantasy (Optional)"
+    fps: { min: null, avg: null, max: null }
+  - category: "adult"
+    label: "Adult"
+    fps: { min: null, avg: null, max: null }
+  - category: "performance-tools"
+    label: "Performance Tools"
+    fps: { min: null, avg: null, max: null }
+  - category: "full-modlist"
+    label: "Full Modlist (All Essential)"
+    fps: { min: null, avg: null, max: null }
+
+notes: []
