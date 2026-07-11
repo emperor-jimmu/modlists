@@ -114,6 +114,50 @@ function Convert-Table {
     return $result.ToString()
 }
 
+function Convert-MermaidDiagrams {
+    param([string]$Text, [string]$OutputDir, [ref]$Counter)
+
+    $npx = if (Get-Command "npx.cmd" -ErrorAction SilentlyContinue) { "npx.cmd" }
+           elseif (Get-Command "npx" -ErrorAction SilentlyContinue) { "npx" }
+           else { Write-Warning "npx not found — skipping mermaid diagrams"; return $Text }
+
+    $output = [System.Text.StringBuilder]::new()
+    $lines = $Text -split "`r`n|`n"
+    $i = 0
+    while ($i -lt $lines.Length) {
+        $line = $lines[$i]
+        if ($line -match '^```mermaid\s*$') {
+            $i++
+            $mermaid = [System.Text.StringBuilder]::new()
+            while ($i -lt $lines.Length -and $lines[$i] -notmatch '^```') {
+                $null = $mermaid.AppendLine($lines[$i])
+                $i++
+            }
+            if ($mermaid.Length -gt 0) {
+                $num = $Counter.Value
+                $svgFile = Join-Path $OutputDir "diagram-$num.svg"
+                if (-not (Test-Path $svgFile)) {
+                    $mmdFile = Join-Path $OutputDir "temp-diagram-$num.mmd"
+                    try {
+                        $mermaid.ToString() | Set-Content $mmdFile -Encoding UTF8 -ErrorAction Stop
+                        & $npx --yes @mermaid-js/mermaid-cli -i $mmdFile -o $svgFile -q 2>&1 | Out-Null
+                        if ($LASTEXITCODE -ne 0) { Write-Warning "mermaid diagram $num failed (ec=$LASTEXITCODE)" }
+                    } finally {
+                        Remove-Item $mmdFile -ErrorAction SilentlyContinue
+                    }
+                }
+            }
+            $null = $output.AppendLine("![](./diagram-$num.svg)")
+            $Counter.Value++
+            $i++ # skip ```
+        } else {
+            $null = $output.AppendLine($line)
+            $i++
+        }
+    }
+    return $output.ToString()
+}
+
 function Convert-MarkdownToTypst {
     param([string]$Text, [string]$FileH1Anchor)
     # 1. Strip HTML comments
@@ -208,12 +252,16 @@ $date = Get-Date -Format "yyyy-MM-dd"
 # -- Process files --
 $allSections = [System.Collections.Generic.List[string]]::new()
 $fileAnchorMap = @{}
+$diagramCounter = 0
+$outputDir = Join-Path $root "rendered"
+$null = New-Item -ItemType Directory -Path $outputDir -Force
 
 foreach ($file in $files) {
   $path = Join-Path $root $file
   if (-not (Test-Path $path)) { Write-Warning "Skipping $file -- not found"; continue }
   Write-Host "Processing $file..."
   $content = (Get-Content $path -Raw).Trim()
+  $content = Convert-MermaidDiagrams -Text $content -OutputDir $outputDir -Counter ([ref]$diagramCounter)
   $fileH1Anchor = if ($content -match '(?m)^# (.+)$') {
     ($matches[1].Trim() -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
   } else { "untitled" }

@@ -115,40 +115,34 @@ Yes. Precision runs at the collision-detection layer, independent of which comba
 
 ### The Framework Dependency Map
 
-```
-                         ┌─────────────────────────┐
-                         │      Pandora             │  ← behavior generation
-                         │   (replaces FNIS+Nemesis) │
-                         └───────────┬───────────────┘
-                                     │ requires
-                         ┌───────────▼───────────────┐
-                         │        XPMSSE             │  ← skeleton
-                         └───────────┬───────────────┘
-                                     │
-                         ┌───────────▼───────────────┐
-                         │    AMR + Payload Interp.  │  ← motion data + payload processing
-                         └───────────┬───────────────┘
-                                     │
-                         ┌───────────▼───────────────┐
-                         │     OAR (replaces DAR)    │  ← conditional animation selection
-                         └───────────┬───────────────┘
-                                     │
-                    ┌────────────────┼────────────────┐
-                    │                                  │
-         ┌──────────▼──────────┐          ┌───────────▼──────────┐
-         │   MCO / ADXP        │          │   BFCO               │  ← pick ONE
-         │   (+ DMCO dodge)    │          │   (+ DMK)            │
-         └──────────┬──────────┘          └───────────┬──────────┘
-                    │                                  │
-                    └──────────────┬───────────────────┘
-                                   │
-                         ┌─────────▼───────────┐
-                         │   SCAR (NPC AI)     │  ← optional, works with either
-                         └─────────────────────┘
-                                   │
-                         ┌─────────▼───────────┐
-                         │   Precision         │  ← collision detection, universal
-                         └─────────────────────┘
+```mermaid
+flowchart TD
+    P["Pandora<br/><i>behavior generation</i>"]
+    X["XPMSSE<br/><i>skeleton</i>"]
+    A["AMR + Payload Interp.<br/><i>motion data + processing</i>"]
+    O["OAR<br/><i>conditional animation selection</i>"]
+    M["MCO / ADXP (+ DMCO dodge)<br/><i>pick ONE</i>"]
+    B["BFCO (+ DMK)<br/><i>pick ONE</i>"]
+    S["SCAR<br/><i>NPC AI, optional</i>"]
+    PR["Precision<br/><i>collision detection, universal</i>"]
+
+    P -->|requires| X
+    X --> A
+    A --> O
+    O --> M
+    O --> B
+    M --> S
+    B --> S
+    S --> PR
+
+    style P fill:#1e293b,color:#e2e8f0
+    style X fill:#334155,color:#e2e8f0
+    style A fill:#475569,color:#e2e8f0
+    style O fill:#64748b,color:#e2e8f0
+    style M fill:#0f766e,color:#e2e8f0
+    style B fill:#0f766e,color:#e2e8f0
+    style S fill:#b45309,color:#e2e8f0
+    style PR fill:#1d4ed8,color:#e2e8f0
 ```
 
 ### Research Findings (July 2026)
