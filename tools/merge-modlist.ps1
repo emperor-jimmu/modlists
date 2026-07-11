@@ -292,16 +292,6 @@ foreach ($section in $allSections) { $a.Invoke($section) }
 
 $typContent = $typLines -join "`r`n"
 
-# -- Resolve cross-file links: [text](file.md#anchor) -> #link(<fileh1-anchor>)[text] --
-foreach ($kv in $fileAnchorMap.GetEnumerator()) {
-  $escaped = [regex]::Escape($kv.Key)
-  $anchor = $kv.Value
-  $r1 = '#link(<' + $anchor + '-$2>)[$1]'
-  $r2 = '#link(<' + $anchor + '>)[$1]'
-  $typContent = $typContent -replace "\[([^\]]*)\]\(${escaped}#([^)]+)\)", $r1
-  $typContent = $typContent -replace "\[([^\]]*)\]\(${escaped}\)", $r2
-}
-
 # -- Write .typ file --
 $outputDir = Join-Path $root "rendered"
 $null = New-Item -ItemType Directory -Path $outputDir -Force
