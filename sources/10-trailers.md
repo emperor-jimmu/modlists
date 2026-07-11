@@ -6,14 +6,14 @@ Trailer and cargo mods add new ownable trailers, cargo types, real-company liver
 
 ## Trailers and Cargo Pack by Jazzycat v11.10.5 {★ Baseline}
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v11.10.5 |
-| **Source** | [ets2.lt](https://ets2.lt/en/trailers-and-cargo-pack-by-jazzycat-v11-10-5/) |
-| **Author** | Jazzycat |
-| **Type** | Cargo + trailer pack |
-| **Size** | ~2.85 GB (3 parts × 950 MB) |
-| **Published** | July 5, 2026 |
+| Field         | Detail                                                                      |
+|---------------|-----------------------------------------------------------------------------|
+| **Version**   | v11.10.5                                                                    |
+| **Source**    | [ets2.lt](https://ets2.lt/en/trailers-and-cargo-pack-by-jazzycat-v11-10-5/) |
+| **Author**    | Jazzycat                                                                    |
+| **Type**      | Cargo + trailer pack                                                        |
+| **Size**      | ~2.85 GB (3 parts × 950 MB)                                                 |
+| **Published** | July 5, 2026                                                                |
 
 The definitive cargo expansion for ETS2 — the most comprehensive content pack in its category:
 
@@ -33,14 +33,14 @@ The definitive cargo expansion for ETS2 — the most comprehensive content pack 
 
 ## Overweight Trailers and Cargo Pack by Jazzycat v11.10.4
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v11.10.4 |
-| **Source** | [ets2.lt](https://ets2.lt/en/overweight-trailers-and-cargo-pack-by-jazzycat-v11-10-4/) |
-| **Author** | Jazzycat |
-| **Type** | Overweight/oversized cargo pack |
-| **Size** | 740 MB |
-| **Published** | June 21, 2026 |
+| Field         | Detail                                                                                 |
+|---------------|----------------------------------------------------------------------------------------|
+| **Version**   | v11.10.4                                                                               |
+| **Source**    | [ets2.lt](https://ets2.lt/en/overweight-trailers-and-cargo-pack-by-jazzycat-v11-10-4/) |
+| **Author**    | Jazzycat                                                                               |
+| **Type**      | Overweight/oversized cargo pack                                                        |
+| **Size**      | 740 MB                                                                                 |
+| **Published** | June 21, 2026                                                                          |
 
 A specialised subset of Jazzycat's main pack focusing on oversized and heavy-load trailers:
 
@@ -58,14 +58,14 @@ A specialised subset of Jazzycat's main pack focusing on oversized and heavy-loa
 
 ## Military Cargo Pack by Jazzycat v6.8.6
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v6.8.6 |
-| **Source** | [ets2.lt](https://ets2.lt/en/military-cargo-pack-by-jazzycat-v6-8-6/) |
-| **Author** | Jazzycat |
-| **Type** | Military cargo pack |
-| **Size** | 420 MB |
-| **Published** | June 21, 2026 |
+| Field         | Detail                                                                |
+|---------------|-----------------------------------------------------------------------|
+| **Version**   | v6.8.6                                                                |
+| **Source**    | [ets2.lt](https://ets2.lt/en/military-cargo-pack-by-jazzycat-v6-8-6/) |
+| **Author**    | Jazzycat                                                              |
+| **Type**      | Military cargo pack                                                   |
+| **Size**      | 420 MB                                                                |
+| **Published** | June 21, 2026                                                         |
 
 Adds military-themed cargo for immersive military logistics gameplay:
 
@@ -83,14 +83,14 @@ Adds military-themed cargo for immersive military logistics gameplay:
 
 ## TZ Express Trailer Pack v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2.lt](https://ets2.lt/en/tz-express-trailer-pack-v1-60/) |
-| **Author** | TZ Rommi |
-| **Type** | Ownable trailer pack |
-| **Size** | 405 MB |
-| **Published** | June 21, 2026 |
+| Field         | Detail                                                       |
+|---------------|--------------------------------------------------------------|
+| **Version**   | v1.60                                                        |
+| **Source**    | [ets2.lt](https://ets2.lt/en/tz-express-trailer-pack-v1-60/) |
+| **Author**    | TZ Rommi                                                     |
+| **Type**      | Ownable trailer pack                                         |
+| **Size**      | 405 MB                                                       |
+| **Published** | June 21, 2026                                                |
 
 A comprehensive ownable trailer pack with 22 real-brand trailer models:
 
@@ -109,14 +109,14 @@ A comprehensive ownable trailer pack with 22 real-brand trailer models:
 
 ## SGD Trailer and Container Pack v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2.lt](https://ets2.lt/en/sgd-trailer-and-container-pack-v1-60/) |
-| **Author** | SGDESIGN |
-| **Type** | Container trailer pack |
-| **Size** | 183 MB |
-| **Published** | June 18, 2026 |
+| Field         | Detail                                                              |
+|---------------|---------------------------------------------------------------------|
+| **Version**   | v1.60                                                               |
+| **Source**    | [ets2.lt](https://ets2.lt/en/sgd-trailer-and-container-pack-v1-60/) |
+| **Author**    | SGDESIGN                                                            |
+| **Type**      | Container trailer pack                                              |
+| **Size**      | 183 MB                                                              |
+| **Published** | June 18, 2026                                                       |
 
 A Krone-focused container trailer pack with extensive tuning:
 
@@ -140,14 +140,14 @@ A Krone-focused container trailer pack with extensive tuning:
 
 ## NTM Trailers v2.1 [1.59-1.60]
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v2.1 |
-| **Source** | [ets2.lt](https://ets2.lt/en/ntm-trailers-v2-1-1-59-1-60/) |
-| **Author** | Kast, Abasstrepas, 50keda |
-| **Type** | Ownable trailer pack |
-| **Size** | 95 MB |
-| **Published** | June 17, 2026 |
+| Field         | Detail                                                     |
+|---------------|------------------------------------------------------------|
+| **Version**   | v2.1                                                       |
+| **Source**    | [ets2.lt](https://ets2.lt/en/ntm-trailers-v2-1-1-59-1-60/) |
+| **Author**    | Kast, Abasstrepas, 50keda                                  |
+| **Type**      | Ownable trailer pack                                       |
+| **Size**      | 95 MB                                                      |
+| **Published** | June 17, 2026                                              |
 
 Kast's popular NTM (Närko) trailer pack, updated for 1.59-1.60:
 
@@ -169,14 +169,14 @@ Kast's popular NTM (Närko) trailer pack, updated for 1.59-1.60:
 
 ## Mini Trailers Pack v1.60
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2.lt](https://ets2.lt/en/mini-trailers-pack-v1-60/) |
-| **Author** | Quality3DMods |
-| **Type** | Small/car trailers |
-| **Size** | 77 MB |
-| **Published** | July 5, 2026 |
+| Field         | Detail                                                  |
+|---------------|---------------------------------------------------------|
+| **Version**   | v1.60                                                   |
+| **Source**    | [ets2.lt](https://ets2.lt/en/mini-trailers-pack-v1-60/) |
+| **Author**    | Quality3DMods                                           |
+| **Type**      | Small/car trailers                                      |
+| **Size**      | 77 MB                                                   |
+| **Published** | July 5, 2026                                            |
 
 Lightweight standalone trailers suitable for car mods and small deliveries:
 
@@ -194,15 +194,15 @@ Lightweight standalone trailers suitable for car mods and small deliveries:
 
 ## Enhanced SCS Cargo v5.0
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v5.0 |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trailers/enhanced-scs-cargo) |
-| **Author** | VirtualTruckTravels |
-| **Type** | Cargo reassignment |
-| **Size** | Small |
-| **Downloads** | 4,010 |
-| **Rating** | 5.0 |
+| Field         | Detail                                                                                 |
+|---------------|----------------------------------------------------------------------------------------|
+| **Version**   | v5.0                                                                                   |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/trailers/enhanced-scs-cargo) |
+| **Author**    | VirtualTruckTravels                                                                    |
+| **Type**      | Cargo reassignment                                                                     |
+| **Size**      | Small                                                                                  |
+| **Downloads** | 4,010                                                                                  |
+| **Rating**    | 5.0                                                                                    |
 
 A smart cargo reassignment mod that fixes SCS cargo-to-trailer mismatches:
 
@@ -220,15 +220,15 @@ A smart cargo reassignment mod that fixes SCS cargo-to-trailer mismatches:
 
 ## Realistic Vanilla Company Skins
 
-| Field | Detail |
-|-------|--------|
-| **Version** | Latest |
-| **Source** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/graphics/realistic-default-company-liveries) |
-| **Author** | DOWL |
-| **Type** | Company skin replacement |
-| **Size** | Small |
-| **Downloads** | 1,622 |
-| **Rating** | 4.8 |
+| Field         | Detail                                                                                                 |
+|---------------|--------------------------------------------------------------------------------------------------------|
+| **Version**   | Latest                                                                                                 |
+| **Source**    | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/graphics/realistic-default-company-liveries) |
+| **Author**    | DOWL                                                                                                   |
+| **Type**      | Company skin replacement                                                                               |
+| **Size**      | Small                                                                                                  |
+| **Downloads** | 1,622                                                                                                  |
+| **Rating**    | 4.8                                                                                                    |
 
 Replaces vanilla SCS company skins with higher-resolution, more realistic versions:
 
@@ -251,14 +251,14 @@ These mods replace or enhance AI traffic trailers with real-company liveries and
 
 ### Trailers Traffic Pack by TrafficManiac v12.9.3
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v12.9.3 |
-| **Source** | [ets2.lt](https://ets2.lt/en/trailers-traffic-pack-by-trafficmaniac-v12-9-3/) |
-| **Author** | TrafficManiac |
-| **Type** | AI traffic trailers |
-| **Size** | 1.5 GB |
-| **Published** | July 4, 2026 |
+| Field         | Detail                                                                        |
+|---------------|-------------------------------------------------------------------------------|
+| **Version**   | v12.9.3                                                                       |
+| **Source**    | [ets2.lt](https://ets2.lt/en/trailers-traffic-pack-by-trafficmaniac-v12-9-3/) |
+| **Author**    | TrafficManiac                                                                 |
+| **Type**      | AI traffic trailers                                                           |
+| **Size**      | 1.5 GB                                                                        |
+| **Published** | July 4, 2026                                                                  |
 
 Massive AI traffic trailer pack with real-company liveries:
 
@@ -278,14 +278,14 @@ Massive AI traffic trailer pack with real-company liveries:
 
 ### Ai Trailers Pack Evolution V2.8
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v2.8 |
-| **Source** | [ets2.lt](https://ets2.lt/en/ai-trailers-pack-evolution-v2-8/) |
-| **Author** | Kass |
-| **Type** | AI traffic trailers |
-| **Size** | 80 MB |
-| **Published** | July 4, 2026 |
+| Field         | Detail                                                         |
+|---------------|----------------------------------------------------------------|
+| **Version**   | v2.8                                                           |
+| **Source**    | [ets2.lt](https://ets2.lt/en/ai-trailers-pack-evolution-v2-8/) |
+| **Author**    | Kass                                                           |
+| **Type**      | AI traffic trailers                                            |
+| **Size**      | 80 MB                                                          |
+| **Published** | July 4, 2026                                                   |
 
 Lighter AI trailer traffic alternative:
 
@@ -303,14 +303,14 @@ Lighter AI trailer traffic alternative:
 
 ### Clean Traffic No Default SCS Trailers v2.0
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v2.0 |
-| **Source** | [ets2.lt](https://ets2.lt/en/clean-traffic-no-default-scs-trailers-v2-0/) |
-| **Author** | Various |
-| **Type** | Traffic removal |
-| **Size** | Minimal |
-| **Published** | June 24, 2026 |
+| Field         | Detail                                                                    |
+|---------------|---------------------------------------------------------------------------|
+| **Version**   | v2.0                                                                      |
+| **Source**    | [ets2.lt](https://ets2.lt/en/clean-traffic-no-default-scs-trailers-v2-0/) |
+| **Author**    | Various                                                                   |
+| **Type**      | Traffic removal                                                           |
+| **Size**      | Minimal                                                                   |
+| **Published** | June 24, 2026                                                             |
 
 Removes all default SCS trailers from AI traffic:
 
@@ -327,20 +327,20 @@ Removes all default SCS trailers from AI traffic:
 
 ## Summary Table
 
-| Mod | Type | 1.60 Ready | Size | FPS Impact | VRAM Impact | Notes |
-|-----|------|-----------|------|------------|-------------|-------|
-| Trailers & Cargo Pack by Jazzycat v11.10.5 | Cargo + trailers | ✅ Yes | 2.85 GB | 5-10% | +800-1200 MB | The ultimate cargo mod. 175 trailers, 772 cargo, 3000 skins |
-| Overweight Trailers & Cargo Pack by Jazzycat v11.10.4 | Overweight cargo | ✅ Yes | 740 MB | 5-8% | +400-600 MB | Do NOT use with main Jazzycat pack |
-| Military Cargo Pack by Jazzycat v6.8.6 | Military cargo | ✅ Yes | 420 MB | 3-5% | +200-300 MB | 222 military cargo items |
-| TZ Express Trailer Pack v1.60 | Ownable trailers | ⚠️ See notes | 405 MB | 5-8% | +400-500 MB | Some users report CTD on car transporter |
-| SGD Trailer & Container Pack v1.60 | Container trailers | ✅ Yes | 183 MB | 3-5% | +200-300 MB | Krone containers, 4K PBR textures |
-| NTM Trailers v2.1 | Ownable trailers | ✅ Yes | 95 MB | 3-5% | +150-200 MB | Kast quality, advanced coupling |
-| Mini Trailers Pack v1.60 | Small trailers | ✅ Yes | 77 MB | <1% | +50-100 MB | For car mods |
-| Enhanced SCS Cargo v5.0 | Cargo reassign | ✅ Yes | Small | <1% | None | Fixes SCS cargo-to-trailer mismatches |
-| Realistic Vanilla Company Skins | Skin replacement | ✅ Yes | Small | <1% | None | Better default company textures |
-| Trailers Traffic Pack by TrafficManiac v12.9.3 | AI traffic | ✅ Yes | 1.5 GB | 2-4% | +300-500 MB | 1379 trailers, 5091 skins |
-| Ai Trailers Pack Evolution V2.8 | AI traffic | ✅ Yes | 80 MB | 2-3% | +100-150 MB | 150 addon AI trailers |
-| Clean Traffic — No Default SCS Trailers v2.0 | Traffic cleanup | ✅ Yes | Minimal | None | None | Removes SCS trailers from traffic |
+| Mod                                                   | Type               | 1.60 Ready   | Size    | FPS Impact | VRAM Impact  | Notes                                                       |
+|-------------------------------------------------------|--------------------|--------------|---------|------------|--------------|-------------------------------------------------------------|
+| Trailers & Cargo Pack by Jazzycat v11.10.5            | Cargo + trailers   | ✅ Yes        | 2.85 GB | 5-10%      | +800-1200 MB | The ultimate cargo mod. 175 trailers, 772 cargo, 3000 skins |
+| Overweight Trailers & Cargo Pack by Jazzycat v11.10.4 | Overweight cargo   | ✅ Yes        | 740 MB  | 5-8%       | +400-600 MB  | Do NOT use with main Jazzycat pack                          |
+| Military Cargo Pack by Jazzycat v6.8.6                | Military cargo     | ✅ Yes        | 420 MB  | 3-5%       | +200-300 MB  | 222 military cargo items                                    |
+| TZ Express Trailer Pack v1.60                         | Ownable trailers   | ⚠️ See notes | 405 MB  | 5-8%       | +400-500 MB  | Some users report CTD on car transporter                    |
+| SGD Trailer & Container Pack v1.60                    | Container trailers | ✅ Yes        | 183 MB  | 3-5%       | +200-300 MB  | Krone containers, 4K PBR textures                           |
+| NTM Trailers v2.1                                     | Ownable trailers   | ✅ Yes        | 95 MB   | 3-5%       | +150-200 MB  | Kast quality, advanced coupling                             |
+| Mini Trailers Pack v1.60                              | Small trailers     | ✅ Yes        | 77 MB   | <1%        | +50-100 MB   | For car mods                                                |
+| Enhanced SCS Cargo v5.0                               | Cargo reassign     | ✅ Yes        | Small   | <1%        | None         | Fixes SCS cargo-to-trailer mismatches                       |
+| Realistic Vanilla Company Skins                       | Skin replacement   | ✅ Yes        | Small   | <1%        | None         | Better default company textures                             |
+| Trailers Traffic Pack by TrafficManiac v12.9.3        | AI traffic         | ✅ Yes        | 1.5 GB  | 2-4%       | +300-500 MB  | 1379 trailers, 5091 skins                                   |
+| Ai Trailers Pack Evolution V2.8                       | AI traffic         | ✅ Yes        | 80 MB   | 2-3%       | +100-150 MB  | 150 addon AI trailers                                       |
+| Clean Traffic — No Default SCS Trailers v2.0          | Traffic cleanup    | ✅ Yes        | Minimal | None       | None         | Removes SCS trailers from traffic                           |
 
 ### Notes
 

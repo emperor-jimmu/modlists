@@ -6,13 +6,13 @@ Enhances ETS2 audio: engine sounds, ambient/environment audio, UI sounds, horn p
 
 ## Sound Fixes Pack {★ Baseline}
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v26.34 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sound-fixes-pack-v26-34/) |
-| **Author** | Drive Safely |
-| **Type** | Comprehensive sound overhaul |
-| **Last Updated** | May 27, 2026 |
+| Field            | Detail                                                                                              |
+|------------------|-----------------------------------------------------------------------------------------------------|
+| **Version**      | v26.34                                                                                              |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sound-fixes-pack-v26-34/) |
+| **Author**       | Drive Safely                                                                                        |
+| **Type**         | Comprehensive sound overhaul                                                                        |
+| **Last Updated** | May 27, 2026                                                                                        |
 
 The essential foundation for any audio mod setup. Replaces and enhances hundreds of vanilla sounds across AI traffic, environments, and UI without touching player truck sounds:
 
@@ -35,13 +35,13 @@ High-quality studio-recorded engine sound replacements for specific trucks, by c
 
 ### 2022 MAN TGX (TG3) 510 D2676 Sound Pack v1.3.2
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.3.2 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/2022-man-tgx-tg3-510-d2676-sound-pack-v1-3-2-1-60/) |
-| **Author** | Max2712 |
-| **Type** | Engine sound replacement |
-| **Last Updated** | July 10, 2026 |
+| Field            | Detail                                                                                                                        |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| **Version**      | v1.3.2                                                                                                                        |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/2022-man-tgx-tg3-510-d2676-sound-pack-v1-3-2-1-60/) |
+| **Author**       | Max2712                                                                                                                       |
+| **Type**         | Engine sound replacement                                                                                                      |
+| **Last Updated** | July 10, 2026                                                                                                                 |
 
 Studio-quality sound samples recorded on a real 2022 MAN TGX 18.510 with stock 12.4L MAN D2676 Euro 6e engine. Replaces D2676 and D3876 engine sounds for SCS MAN TGX (TG3) and Gloover's MAN TG3 2020. Includes standalone D2676 510hp engine with realistic torque curves, real engine parameters, and matching ZF Traxon gearbox with 5 differential ratios (2.31–3.08).
 
@@ -51,13 +51,13 @@ Studio-quality sound samples recorded on a real 2022 MAN TGX 18.510 with stock 1
 
 ### SFX Renault Range T DTi460 Euro6C v2.05.1
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v2.05.1 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sfx-renault-range-t-dti460-euro6c-v2-05-1-1-60/) |
-| **Author** | Max2712 |
-| **Type** | Engine sound replacement |
-| **Last Updated** | July 1, 2026 |
+| Field            | Detail                                                                                                                     |
+|------------------|----------------------------------------------------------------------------------------------------------------------------|
+| **Version**      | v2.05.1                                                                                                                    |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sfx-renault-range-t-dti460-euro6c-v2-05-1-1-60/) |
+| **Author**       | Max2712                                                                                                                    |
+| **Type**         | Engine sound replacement                                                                                                   |
+| **Last Updated** | July 1, 2026                                                                                                               |
 
 **Compatibility:** ETS2 1.60
 
@@ -65,13 +65,13 @@ Studio-quality sound samples recorded on a real 2022 MAN TGX 18.510 with stock 1
 
 ### SFX Volvo FH13 D13K 500 Euro6 v2.47.1
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v2.47.1 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sfx-volvo-fh13-d13k-500-euro6-v2-47-1/) |
-| **Author** | Max2712 |
-| **Type** | Engine sound replacement |
-| **Last Updated** | June 7, 2026 |
+| Field            | Detail                                                                                                            |
+|------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Version**      | v2.47.1                                                                                                           |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sfx-volvo-fh13-d13k-500-euro6-v2-47-1/) |
+| **Author**       | Max2712                                                                                                           |
+| **Type**         | Engine sound replacement                                                                                          |
+| **Last Updated** | June 7, 2026                                                                                                      |
 
 **Compatibility:** ETS2 1.60
 
@@ -79,13 +79,13 @@ Studio-quality sound samples recorded on a real 2022 MAN TGX 18.510 with stock 1
 
 ### SFX Scania R410 DC13.115 Euro6 v1.29.1
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.29.1 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sfx-scania-r410-dc13-115-euro6-v1-29-1/) |
-| **Author** | Max2712 |
-| **Type** | Engine sound replacement |
-| **Last Updated** | June 7, 2026 |
+| Field            | Detail                                                                                                             |
+|------------------|--------------------------------------------------------------------------------------------------------------------|
+| **Version**      | v1.29.1                                                                                                            |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/sfx-scania-r410-dc13-115-euro6-v1-29-1/) |
+| **Author**       | Max2712                                                                                                            |
+| **Type**         | Engine sound replacement                                                                                           |
+| **Last Updated** | June 7, 2026                                                                                                       |
 
 **Compatibility:** ETS2 1.60
 
@@ -95,13 +95,13 @@ Studio-quality sound samples recorded on a real 2022 MAN TGX 18.510 with stock 1
 
 ## Scania V8 Stock Sound v12.0
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v12.0 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/scania-v8-stock-sound-v12-0-1-59/) |
-| **Author** | Slav Jerry |
-| **Type** | Engine sound replacement (V8) |
-| **Last Updated** | May 29, 2026 |
+| Field            | Detail                                                                                                       |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| **Version**      | v12.0                                                                                                        |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/scania-v8-stock-sound-v12-0-1-59/) |
+| **Author**       | Slav Jerry                                                                                                   |
+| **Type**         | Engine sound replacement (V8)                                                                                |
+| **Last Updated** | May 29, 2026                                                                                                 |
 
 Authentic Scania V8 stock sound for all SCS/Eugene and RJL Scanias (excluding P and G series). Supports:
 
@@ -126,13 +126,13 @@ Kriechbaum is one of the most well-known ETS2 sound mod creators, producing high
 
 ### Kriechbaum DAF Paccar MX-13 Sound v3.0
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v3.0 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/daf-paccar-mx-13-sound-v3-0-by-kriechbaum-1-47/) |
-| **Author** | Kriechbaum |
-| **Type** | Engine sound replacement |
-| **Released** | June 2023 (v3.0) |
+| Field        | Detail                                                                                                                     |
+|--------------|----------------------------------------------------------------------------------------------------------------------------|
+| **Version**  | v3.0                                                                                                                       |
+| **Source**   | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/daf-paccar-mx-13-sound-v3-0-by-kriechbaum-1-47/) |
+| **Author**   | Kriechbaum                                                                                                                 |
+| **Type**     | Engine sound replacement                                                                                                   |
+| **Released** | June 2023 (v3.0)                                                                                                           |
 
 High-quality Paccar MX-13 engine sound for DAF trucks. Requires confirmation of 1.60 compatibility — older versions may need manual adaptation.
 
@@ -142,13 +142,13 @@ High-quality Paccar MX-13 engine sound for DAF trucks. Requires confirmation of 
 
 ### Kriechbaum Volvo FH4 D13 Sound v1.1
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.1 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/scs-volvo-fh4-kriechbaum-d13-sound-v1-1/) |
-| **Author** | Kriechbaum |
-| **Type** | Engine sound replacement |
-| **Released** | January 2024 |
+| Field        | Detail                                                                                                              |
+|--------------|---------------------------------------------------------------------------------------------------------------------|
+| **Version**  | v1.1                                                                                                                |
+| **Source**   | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/scs-volvo-fh4-kriechbaum-d13-sound-v1-1/) |
+| **Author**   | Kriechbaum                                                                                                          |
+| **Type**     | Engine sound replacement                                                                                            |
+| **Released** | January 2024                                                                                                        |
 
 D13 engine sound replacement for SCS Volvo FH4.
 
@@ -158,13 +158,13 @@ D13 engine sound replacement for SCS Volvo FH4.
 
 ### Scania NG Tcab L6 Openpipe Kriechbaum Adaptation
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.0 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/scania-ng-tcab-scs-base-l6-openpipe-kriechbaum-adaptation-1-46/) |
-| **Author** | Community adaptation |
-| **Type** | Engine sound adaptation |
-| **Released** | March 2023 |
+| Field        | Detail                                                                                                                                     |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| **Version**  | v1.0                                                                                                                                       |
+| **Source**   | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/scania-ng-tcab-scs-base-l6-openpipe-kriechbaum-adaptation-1-46/) |
+| **Author**   | Community adaptation                                                                                                                       |
+| **Type**     | Engine sound adaptation                                                                                                                    |
+| **Released** | March 2023                                                                                                                                 |
 
 Adaptation of Kriechbaum's Scania L6 Open Pipe sound to SCS Scania NG Tcab base.
 
@@ -176,13 +176,13 @@ Adaptation of Kriechbaum's Scania L6 Open Pipe sound to SCS Scania NG Tcab base.
 
 ## Scania NextGen 660 DC16 V8 Sound Pack v1.3
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.3 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/2022-scania-nextgen-660-dc16-v8-sound-pack-v1-3-1-59/) |
-| **Author** | Community |
-| **Type** | Engine sound replacement (V8) |
-| **Last Updated** | May 28, 2026 |
+| Field            | Detail                                                                                                                           |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| **Version**      | v1.3                                                                                                                             |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/2022-scania-nextgen-660-dc16-v8-sound-pack-v1-3-1-59/) |
+| **Author**       | Community                                                                                                                        |
+| **Type**         | Engine sound replacement (V8)                                                                                                    |
+| **Last Updated** | May 28, 2026                                                                                                                     |
 
 **Compatibility:** Listed for 1.59 — likely compatible with 1.60
 
@@ -192,13 +192,13 @@ Adaptation of Kriechbaum's Scania L6 Open Pipe sound to SCS Scania NG Tcab base.
 
 ## Volvo FH5 I-Save 500 D13TC Sound Pack v1.3
 
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.3 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/2023-volvo-fh5-i-save-500-d13tc-sound-pack-v1-3-1-59/) |
-| **Author** | Community |
-| **Type** | Engine sound replacement |
-| **Last Updated** | May 24, 2026 |
+| Field            | Detail                                                                                                                           |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| **Version**      | v1.3                                                                                                                             |
+| **Source**       | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-sounds/2023-volvo-fh5-i-save-500-d13tc-sound-pack-v1-3-1-59/) |
+| **Author**       | Community                                                                                                                        |
+| **Type**         | Engine sound replacement                                                                                                         |
+| **Last Updated** | May 24, 2026                                                                                                                     |
 
 **Compatibility:** Listed for 1.59 — likely compatible with 1.60
 
@@ -208,14 +208,14 @@ Adaptation of Kriechbaum's Scania L6 Open Pipe sound to SCS Scania NG Tcab base.
 
 ## Notes on Other Audio Mods
 
-| Mod Type | Availability for 1.60 |
-|----------|----------------------|
-| **Radio/Music addon packs** | Limited on ets2mods.lt — most are outdated (1.36–1.38). TruckyMods/modhub.us listings unavailable via browser due to 404/blocking. Radio station mods are typically .live and .pls files that don't require game version updates. |
-| **Ambient/Environment sound overhauls** | Most on ets2mods.lt are outdated (1.31–1.36). "Realistic City Ambient & Sounds v1.1" from 2020 (1.36.x). Check SCS Forum or TruckyMods for 1.60-compatible alternatives. |
-| **Horn packs** | Included in Sound Fixes Pack (standalone "Nostalgia" air horn). Dedicated horn packs: not widely listed on ets2mods.lt — check TruckyMods/modhub.us. |
-| **UI sound replacements** | Not commonly distributed as standalone mods. Sound Fixes Pack covers UI improvements. |
-| **Improved Environment Sound** | Last version v1.5 from 2016 (1.22.x). Archived/unmaintained. |
-| **Real Environment Sound** | v1.0 from 2018 (1.31.x). Archived/unmaintained. |
+| Mod Type                                | Availability for 1.60                                                                                                                                                                                                             |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Radio/Music addon packs**             | Limited on ets2mods.lt — most are outdated (1.36–1.38). TruckyMods/modhub.us listings unavailable via browser due to 404/blocking. Radio station mods are typically .live and .pls files that don't require game version updates. |
+| **Ambient/Environment sound overhauls** | Most on ets2mods.lt are outdated (1.31–1.36). "Realistic City Ambient & Sounds v1.1" from 2020 (1.36.x). Check SCS Forum or TruckyMods for 1.60-compatible alternatives.                                                          |
+| **Horn packs**                          | Included in Sound Fixes Pack (standalone "Nostalgia" air horn). Dedicated horn packs: not widely listed on ets2mods.lt — check TruckyMods/modhub.us.                                                                              |
+| **UI sound replacements**               | Not commonly distributed as standalone mods. Sound Fixes Pack covers UI improvements.                                                                                                                                             |
+| **Improved Environment Sound**          | Last version v1.5 from 2016 (1.22.x). Archived/unmaintained.                                                                                                                                                                      |
+| **Real Environment Sound**              | v1.0 from 2018 (1.31.x). Archived/unmaintained.                                                                                                                                                                                   |
 
 ## Recommended Load Order
 
@@ -232,15 +232,15 @@ LOW PRIORITY (below map mods)
 
 ## Summary
 
-| Mod | 1.60 | Type | Performance |
-|-----|------|------|-------------|
-| Sound Fixes Pack v26.34 | Partial (advertised for 1.59, pending update) | Comprehensive | Negligible |
-| 2022 MAN TGX D2676 Sound Pack v1.3.2 | Yes | Engine (MAN TGX) | Negligible |
-| SFX Renault Range T DTi460 v2.05.1 | Yes | Engine (Renault) | Negligible |
-| SFX Volvo FH13 D13K v2.47.1 | Yes | Engine (Volvo) | Negligible |
-| SFX Scania R410 DC13.115 v1.29.1 | Yes | Engine (Scania) | Negligible |
-| Scania V8 Stock Sound v12.0 | Partial (1.59) | Engine (Scania V8) | Negligible |
-| Scania NextGen 660 DC16 V8 v1.3 | Partial (1.59) | Engine (Scania NG V8) | Negligible |
-| Volvo FH5 I-Save D13TC v1.3 | Partial (1.59) | Engine (Volvo FH5) | Negligible |
-| Kriechbaum Paccar MX-13 v3.0 | Unknown (1.47) | Engine (DAF) | Negligible |
-| Kriechbaum Volvo FH4 D13 v1.1 | Unknown (1.49) | Engine (Volvo FH4) | Negligible |
+| Mod                                  | 1.60                                          | Type                  | Performance |
+|--------------------------------------|-----------------------------------------------|-----------------------|-------------|
+| Sound Fixes Pack v26.34              | Partial (advertised for 1.59, pending update) | Comprehensive         | Negligible  |
+| 2022 MAN TGX D2676 Sound Pack v1.3.2 | Yes                                           | Engine (MAN TGX)      | Negligible  |
+| SFX Renault Range T DTi460 v2.05.1   | Yes                                           | Engine (Renault)      | Negligible  |
+| SFX Volvo FH13 D13K v2.47.1          | Yes                                           | Engine (Volvo)        | Negligible  |
+| SFX Scania R410 DC13.115 v1.29.1     | Yes                                           | Engine (Scania)       | Negligible  |
+| Scania V8 Stock Sound v12.0          | Partial (1.59)                                | Engine (Scania V8)    | Negligible  |
+| Scania NextGen 660 DC16 V8 v1.3      | Partial (1.59)                                | Engine (Scania NG V8) | Negligible  |
+| Volvo FH5 I-Save D13TC v1.3          | Partial (1.59)                                | Engine (Volvo FH5)    | Negligible  |
+| Kriechbaum Paccar MX-13 v3.0         | Unknown (1.47)                                | Engine (DAF)          | Negligible  |
+| Kriechbaum Volvo FH4 D13 v1.1        | Unknown (1.49)                                | Engine (Volvo FH4)    | Negligible  |
