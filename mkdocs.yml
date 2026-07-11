@@ -1,0 +1,60 @@
+site_name: Stellaris Modlist Guide
+site_description: A curated, beginner-friendly modlist and learning guide for Stellaris
+repo_url: https://github.com/nimrodko/stellaris-modlist
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+
+plugins:
+  - search
+  - exporter:
+      formats:
+        pdf:
+          enabled: !ENV [MKDOCS_EXPORTER_PDF, true]
+          stylesheets:
+            - stylesheets/pdf.scss
+          covers:
+            front: covers/front.html.j2
+            back: covers/back.html.j2
+          aggregator:
+            enabled: true
+            output: stellaris-modlist-guide.pdf
+            covers: all
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Modlist Setup: modlist-setup.md
+  - The Modlist:
+      - Bugfixes: modlist/bugfixes.md
+      - Audio: modlist/audio.md
+      - UI & HUD: modlist/ui-hud.md
+      - Graphics: modlist/graphics.md
+      - AI & Diplomacy: modlist/ai-diplomacy.md
+      - Economy & Automation: modlist/economy-automation.md
+      - Warfare & Ships: modlist/warfare-ships.md
+      - Technology: modlist/technology.md
+      - Events & Story: modlist/events-story.md
+      - Origins & Civics: modlist/origins-civics.md
+      - Species, Genetics & Portraits: modlist/species-portraits.md
+      - Galaxy & Setup: modlist/galaxy.md
+  - Load Order: load-order.md
+  - Starting a Game: starting-a-game.md
+  - Performance: performance.md
+  - Missing Mods (Research): missing-mods.md
+  - Appendix: appendix.md
+
+extra:
+  version: !ENV [GUIDE_VERSION, "0.1"]
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true

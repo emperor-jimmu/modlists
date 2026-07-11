@@ -1,0 +1,76 @@
+{
+  "separators": [
+    {
+      "name": "Bugfixes",
+      "order": 0,
+      "color": "#c62828",
+      "gradient": "linear-gradient(90deg, #c62828, #e53935)"
+    },
+    {
+      "name": "Audio",
+      "order": 1,
+      "color": "#6d4c41",
+      "gradient": "linear-gradient(90deg, #6d4c41, #8d6e63)"
+    },
+    {
+      "name": "UI & HUD",
+      "order": 2,
+      "color": "#1565c0",
+      "gradient": "linear-gradient(90deg, #1565c0, #42a5f5)"
+    },
+    {
+      "name": "Graphics",
+      "order": 3,
+      "color": "#6a1b9a",
+      "gradient": "linear-gradient(90deg, #6a1b9a, #ab47bc)"
+    },
+    {
+      "name": "AI & Diplomacy",
+      "order": 4,
+      "color": "#2e7d32",
+      "gradient": "linear-gradient(90deg, #2e7d32, #66bb6a)"
+    },
+    {
+      "name": "Economy & Automation",
+      "order": 5,
+      "color": "#33691e",
+      "gradient": "linear-gradient(90deg, #33691e, #689f38)"
+    },
+    {
+      "name": "Warfare & Ships",
+      "order": 6,
+      "color": "#e65100",
+      "gradient": "linear-gradient(90deg, #e65100, #ff9800)"
+    },
+    {
+      "name": "Technology",
+      "order": 7,
+      "color": "#01579b",
+      "gradient": "linear-gradient(90deg, #01579b, #0277bd)"
+    },
+    {
+      "name": "Events & Story",
+      "order": 8,
+      "color": "#f9a825",
+      "gradient": "linear-gradient(90deg, #f9a825, #fdd835)"
+    },
+    {
+      "name": "Origins & Civics",
+      "order": 9,
+      "color": "#4e342e",
+      "gradient": "linear-gradient(90deg, #4e342e, #6d4c41)"
+    },
+    {
+      "name": "Species, Genetics & Portraits",
+      "order": 10,
+      "color": "#ad1457",
+      "gradient": "linear-gradient(90deg, #ad1457, #ec407a)"
+    },
+    {
+      "name": "Galaxy & Setup",
+      "order": 11,
+      "color": "#00838f",
+      "gradient": "linear-gradient(90deg, #00838f, #4dd0e1)"
+    }
+  ]
+}
