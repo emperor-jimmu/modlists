@@ -34,14 +34,14 @@ The default controls are keyboard + mouse. Most players eventually upgrade to a 
 | Horn | H |
 | Wipers | P |
 | Parking Brake | Spacebar |
-| N | Map / GPS |
+| Map / GPS | N |
 | Enter / Exit Vehicle | E |
-| Shift + Up Arrow | Cruise Control + |
-| Shift + Down Arrow | Cruise Control - |
-| F2 | Dashboard display toggle |
-| F5 | Navigation mode toggle |
-| F6 | Jobs menu |
-| F8 | Info / messages |
+| Cruise Control + | Shift + Up Arrow |
+| Cruise Control - | Shift + Down Arrow |
+| Dashboard display toggle | F2 |
+| Navigation mode toggle | F5 |
+| Jobs menu | F6 |
+| Info / messages | F8 |
 
 You can rebind every key from the Options → Controls menu. If you have a controller or wheel, bindings are detected automatically.
 
