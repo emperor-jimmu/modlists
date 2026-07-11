@@ -13,13 +13,20 @@ test-results/
 Thumbs.db
 .DS_Store
 
-# Python virtual environments
+# Python
 .venv/
 venv/
 __pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.*
 
 # Node
 node_modules/
 
-# Idea files
-*.idea/
+# IDE files
+.idea/
+*.swp
+*.swo
