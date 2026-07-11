@@ -8,6 +8,7 @@ test-results/
 
 # Typst build artifacts
 *.pdf
+sources/*.typ
 
 # OS files
 Thumbs.db
