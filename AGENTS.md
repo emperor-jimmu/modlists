@@ -35,11 +35,12 @@ Every mod added to the catalog MUST be compatible with 1.6.15 (or at minimum 1.6
 
 1. Find the correct category file in `docs/guide/03-mod-catalog/`
 2. Add the mod entry following the existing format:
-   - Mod name and NexusMods URL
+   - Mod name with a download URL (NexusMods link, or note "Bundled with SMAPI" if applicable)
    - Brief description of what it does
    - Installation notes (if any)
    - Load order placement
    - Performance impact notes (if known)
+   - **Every mod MUST include its download URL** — no exceptions
 3. Update `docs/performance/03-mod-impact.md` if the mod has meaningful performance impact
 
 ## Build Commands
