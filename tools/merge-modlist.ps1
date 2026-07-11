@@ -107,8 +107,8 @@ function Convert-Table {
       $result.AppendLine("  columns: $colCount,") | Out-Null
       if ($header.Count -gt 0) { $result.AppendLine("  fill: (luma(240), none),") | Out-Null }
       else { $result.AppendLine("  fill: none,") | Out-Null }
-      foreach ($cell in $header) { $result.AppendLine("  [*$cell*],") | Out-Null }
-      foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$cell],") | Out-Null } }
+      foreach ($cell in $header) { $result.AppendLine("  [*$($cell -replace '#', '\#')*],") | Out-Null }
+      foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$($cell -replace '#', '\#')],") | Out-Null } }
       $result.AppendLine(")") | Out-Null
         } else {
             $result.AppendLine($line) | Out-Null
@@ -144,8 +144,11 @@ function Convert-MarkdownToTypst {
         } else { $converted.AppendLine($line) | Out-Null }
     }
     $text = $converted.ToString() -replace '!\[([^\]]*)\]\(([^)]+)\)', '#image("$2")'
+    # Escape $ and _ (typst treats $ as math, _ as italic — labels safe as they contain neither)
+    $text = $text.Replace('$', '\$')
+    $text = $text.Replace('_', '\_')
     $text = Convert-Table -Text $text
-    # Escape bare < characters not part of labels (e.g., <50, NPC_<50)
+    # Escape bare < characters not part of labels
     $text = $text -replace '<(?![a-zA-Z][a-zA-Z0-9-]*>)', '\<'
     return @{ Content = $text; Headings = $headingOrder }
 }
