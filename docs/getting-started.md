@@ -16,13 +16,13 @@ This is the most important decision you'll make. Your empire is defined by four 
 
 Ethics are your civilization's core values. They come in pairs of opposites — you pick one side of each pair, or stay neutral in the middle. There are **three axes**:
 
-| Axis | Ethic A | Ethic B |
-|------|---------|---------|
-| **Society** | **Egalitarian** — individual rights, utopian abundance, specialists are stronger | **Authoritarian** — stratified society, rulers are stronger, slavery allowed |
-| **Economy** | **Militarist** — strong military, cheaper claims, stronger armies | **Pacifist** — diplomatic bonuses, less war exhaustion, stability bonus |
-| **Diplomacy** | **Xenophile** — likes aliens, better diplomacy, more envoys, migration pacts | **Xenophobe** — dislikes aliens, cheaper starbases, purge allowed, population happiness bonus |
-| **Technology** | **Materialist** — more tech output, robots allowed, synthetic ascension | **Spiritualist** — more unity, psionic ascension, temple buildings |
-| **Governance** | — | **Gestalt Consciousness** — hivemind or machine intelligence, no factions, no trade, no happiness |
+| Axis           | Ethic A                                                                          | Ethic B                                                                                           |
+|----------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Society**    | **Egalitarian** — individual rights, utopian abundance, specialists are stronger | **Authoritarian** — stratified society, rulers are stronger, slavery allowed                      |
+| **Economy**    | **Militarist** — strong military, cheaper claims, stronger armies                | **Pacifist** — diplomatic bonuses, less war exhaustion, stability bonus                           |
+| **Diplomacy**  | **Xenophile** — likes aliens, better diplomacy, more envoys, migration pacts     | **Xenophobe** — dislikes aliens, cheaper starbases, purge allowed, population happiness bonus     |
+| **Technology** | **Materialist** — more tech output, robots allowed, synthetic ascension          | **Spiritualist** — more unity, psionic ascension, temple buildings                                |
+| **Governance** | —                                                                                | **Gestalt Consciousness** — hivemind or machine intelligence, no factions, no trade, no happiness |
 
 **Beginners should pick:** Egalitarian + Materialist + Xenophile (a "good guy" science-focused empire). This is simple to play: make friends, research fast, stay out of trouble.
 
@@ -30,13 +30,13 @@ Ethics are your civilization's core values. They come in pairs of opposites — 
 
 Authority is **how your leader is chosen** and determines some unique mechanics.
 
-| Authority | How Leaders Work | Unique Mechanic |
-|-----------|-----------------|-----------------|
-| **Democratic** | Elections every 10 years, you can support a candidate with campaign funds | Mandates: complete a goal during your leader's term for bonus unity |
-| **Oligarchic** | Elections every 40 years, choose from 3 candidates | Factions have more influence on policy |
-| **Dictatorial** | Leader rules for life, successor chosen on death | Strong leader bonuses, stable |
-| **Imperial** | Hereditary ruler, dynasty continues on death | Heir system, very stable |
-| **Gestalt Consciousness** | No elections, the "hive mind" is the leader | No factions, no trade, can't do first-contact diplomacy normally |
+| Authority                 | How Leaders Work                                                          | Unique Mechanic                                                     |
+|---------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------|
+| **Democratic**            | Elections every 10 years, you can support a candidate with campaign funds | Mandates: complete a goal during your leader's term for bonus unity |
+| **Oligarchic**            | Elections every 40 years, choose from 3 candidates                        | Factions have more influence on policy                              |
+| **Dictatorial**           | Leader rules for life, successor chosen on death                          | Strong leader bonuses, stable                                       |
+| **Imperial**              | Hereditary ruler, dynasty continues on death                              | Heir system, very stable                                            |
+| **Gestalt Consciousness** | No elections, the "hive mind" is the leader                               | No factions, no trade, can't do first-contact diplomacy normally    |
 
 **For your first game:** Pick **Democratic** or **Imperial**. They're simple and forgiving.
 
@@ -46,13 +46,13 @@ Origins are your empire's **starting situation and backstory**. Some start on a 
 
 **Beginner-friendly origins:**
 
-| Origin | What It Does | Why It's Good |
-|--------|-------------|---------------|
-| Prosperous Unification | Start with extra pops and a developed homeworld | Well-rounded, no gimmicks, strongest economy turn 1 |
-| Mechanist | Start with robotic workers researched + two robot pops | Robots work everywhere, good for materialist empires |
-| Syncretic Evolution | Two subspecies: one intelligent, one strong + rapid breeding | The worker species handles basic jobs while your main species does science |
-| Lost Colony | Your homeworld is Earth. Sol will be somewhere in the galaxy | Cool narrative hook, +opinion with humans |
-| Scion | You start as a vassal of a Fallen Empire | A superpower protects you — very forgiving |
+| Origin                 | What It Does                                                 | Why It's Good                                                              |
+|------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------|
+| Prosperous Unification | Start with extra pops and a developed homeworld              | Well-rounded, no gimmicks, strongest economy turn 1                        |
+| Mechanist              | Start with robotic workers researched + two robot pops       | Robots work everywhere, good for materialist empires                       |
+| Syncretic Evolution    | Two subspecies: one intelligent, one strong + rapid breeding | The worker species handles basic jobs while your main species does science |
+| Lost Colony            | Your homeworld is Earth. Sol will be somewhere in the galaxy | Cool narrative hook, +opinion with humans                                  |
+| Scion                  | You start as a vassal of a Fallen Empire                     | A superpower protects you — very forgiving                                 |
 
 **Avoid for your first game:** Doomsday (your planet explodes), Void Dweller (you start on habitats — complex), Here Be Dragons (distracting), any origin that changes basic mechanics.
 
@@ -68,6 +68,7 @@ Traits are your species' biological characteristics. You have a **point budget**
 - **Enduring** (+20 leader lifespan) — leaders don't die as fast
 
 **Newbie trap traits to avoid:**
+
 - Decadent (requires slaves or specialists get unhappy) — micro-heavy
 - Non-Adaptive (fewer habitable planets) — slows expansion
 - Solitary (lower housing usage, lower happiness from amenities) — sounds good but the happiness penalty hurts
@@ -78,13 +79,13 @@ Civics are your empire's **governmental policies** and specializations. You choo
 
 **Easy beginner civics:**
 
-| Civic | What It Does | Best With |
-|-------|-------------|-----------|
-| Meritocracy | Specialist jobs (+10% output) based on skill, not birth | Egalitarian, Democratic |
-| Technocracy | Ruler jobs also produce research | Materialist |
-| Mining Guilds | Miners produce extra minerals and also produce some alloys | Any expansionist build |
-| Efficient Bureaucracy | Fewer empire sprawl from pops | Any |
-| Functional Architecture | Cheaper buildings, extra building slot | Any — simple and effective |
+| Civic                   | What It Does                                               | Best With                  |
+|-------------------------|------------------------------------------------------------|----------------------------|
+| Meritocracy             | Specialist jobs (+10% output) based on skill, not birth    | Egalitarian, Democratic    |
+| Technocracy             | Ruler jobs also produce research                           | Materialist                |
+| Mining Guilds           | Miners produce extra minerals and also produce some alloys | Any expansionist build     |
+| Efficient Bureaucracy   | Fewer empire sprawl from pops                              | Any                        |
+| Functional Architecture | Cheaper buildings, extra building slot                     | Any — simple and effective |
 
 ## Resources — The Economy
 
@@ -92,26 +93,26 @@ Stellaris has **9 basic resources** organized into three tiers:
 
 ### Tier 1: Raw Resources
 
-| Resource | Produced By | Used For |
-|----------|-------------|----------|
+| Resource           | Produced By                | Used For                                                                    |
+|--------------------|----------------------------|-----------------------------------------------------------------------------|
 | **Energy Credits** | Generator Districts, trade | Upkeep for ships, starbases, leaders, and pops. Also the galactic currency. |
-| **Minerals** | Mining Districts | Building construction, districts, consumer goods, alloys |
-| **Food** | Agriculture Districts | Feeding your population. Surplus = pop growth bonus. |
+| **Minerals**       | Mining Districts           | Building construction, districts, consumer goods, alloys                    |
+| **Food**           | Agriculture Districts      | Feeding your population. Surplus = pop growth bonus.                        |
 
 ### Tier 2: Refined Resources
 
-| Resource | Produced By | Used For |
-|----------|-------------|----------|
+| Resource                | Produced By                          | Used For                                                                      |
+|-------------------------|--------------------------------------|-------------------------------------------------------------------------------|
 | **Consumer Goods (CG)** | Industrial Districts (Civilian mode) | Science, unity, administration, pop upkeep. If you run out, pops are unhappy. |
-| **Alloys** | Industrial Districts (Foundry mode) | Ships, starbases, megastructures. The most important military resource. |
+| **Alloys**              | Industrial Districts (Foundry mode)  | Ships, starbases, megastructures. The most important military resource.       |
 
 ### Tier 3: Strategic Resources
 
-| Resource | Produced By | Used For |
-|----------|-------------|----------|
-| **Unity** | Administrative buildings, traditions | Unlocking traditions (your empire's talent tree) and edicts |
-| **Research** | Research labs (Physics, Society, Engineering) | Unlocking technology. Each type is separate. |
-| **Influence** | Factions, first-contact, rivalries | Claims, diplomatic agreements, edicts, building starbases. The slowest resource. |
+| Resource      | Produced By                                   | Used For                                                                         |
+|---------------|-----------------------------------------------|----------------------------------------------------------------------------------|
+| **Unity**     | Administrative buildings, traditions          | Unlocking traditions (your empire's talent tree) and edicts                      |
+| **Research**  | Research labs (Physics, Society, Engineering) | Unlocking technology. Each type is separate.                                     |
+| **Influence** | Factions, first-contact, rivalries            | Claims, diplomatic agreements, edicts, building starbases. The slowest resource. |
 
 **The golden rule of Stellaris economics:** If you're running a deficit, you can fix it by reallocating pops. Pause the game, check your resource screen (top bar), and move pops from surplus resources to deficit ones.
 
@@ -183,13 +184,13 @@ War in Stellaris is **not like other strategy games**. Here's what you need to k
 
 Stellaris has several **victory conditions** — or you can ignore them entirely and set your own goals.
 
-| Victory Type | What You Need To Do | Difficulty |
-|-------------|---------------------|------------|
-| **Domination** | Own or vassalize 60% of all colonizable planets | Hard — lots of war required |
-| **Federation** | Lead a federation that controls 60% of all colonizable planets | Medium — diplomatic approach |
-| **Supremacy** | Be the sole galactic power (every other empire is your subject or dead) | Very Hard |
-| **Score** | Have the highest score by the victory year (2500 default) | Passive — just play well |
-| **Crisis** | Defeat the end-game crisis (Unbidden, Contingency, or Prethoryn Swarm) | This happens regardless — it's not a victory type, but it feels like one |
+| Victory Type   | What You Need To Do                                                     | Difficulty                                                               |
+|----------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Domination** | Own or vassalize 60% of all colonizable planets                         | Hard — lots of war required                                              |
+| **Federation** | Lead a federation that controls 60% of all colonizable planets          | Medium — diplomatic approach                                             |
+| **Supremacy**  | Be the sole galactic power (every other empire is your subject or dead) | Very Hard                                                                |
+| **Score**      | Have the highest score by the victory year (2500 default)               | Passive — just play well                                                 |
+| **Crisis**     | Defeat the end-game crisis (Unbidden, Contingency, or Prethoryn Swarm)  | This happens regardless — it's not a victory type, but it feels like one |
 
 **Recommended goal for your first game:** "Explore, make friends, survive until the end-game crisis, and try to defeat it." Don't worry about formal victory.
 
@@ -212,18 +213,18 @@ These are critical things Stellaris never explains:
 
 Since you have all DLC, here's what each major expansion adds to your game:
 
-| DLC | What It Adds | Impact on Gameplay |
-|-----|-------------|-------------------|
-| **Utopia** | Megastructures, ascension paths (Psionic/Genetic/Synthetic), habitats, unity ambitions | Essential. Ascension paths define your late-game identity. |
-| **Apocalypse** | Colossus (planet-killers), titans, marauders, the Great Khan | War becomes more dramatic. The Khan is a mid-game crisis. |
-| **Megacorp** | Megacorporation authority, branch offices, ecumenopolis, the Caravaneers, slave market | Adds economic victory path. |
-| **Synthetic Dawn** | Machine intelligence empires, rogue servitors, determined exterminators | Adds a major empire type. AI rebellions can happen. |
-| **Federations** | Expanded federations (5 types), galactic community, origins, juggernauts | Diplomatic play is now much deeper. |
-| **Nemesis** | Become the Crisis, espionage system, custodian/galactic emperor | You can become the villain. Espionage adds covert options. |
-| **Overlord** | New vassal types, auto-resettlement, mercenary enclaves, orbital rings | Vassal management is now a powerful mechanic. |
-| **Paragons** | Reworked leader system with unique paragon leaders | Leaders are now more interesting and personal. |
-| **Cosmogenesis** | Late-game crisis origin, new fallen empire mechanics | End-game content expansion. |
-| **Grand Archive** | New archaeological content, relic collection, precursor overhaul | More story content and collectibles. |
+| DLC                | What It Adds                                                                           | Impact on Gameplay                                         |
+|--------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------|
+| **Utopia**         | Megastructures, ascension paths (Psionic/Genetic/Synthetic), habitats, unity ambitions | Essential. Ascension paths define your late-game identity. |
+| **Apocalypse**     | Colossus (planet-killers), titans, marauders, the Great Khan                           | War becomes more dramatic. The Khan is a mid-game crisis.  |
+| **Megacorp**       | Megacorporation authority, branch offices, ecumenopolis, the Caravaneers, slave market | Adds economic victory path.                                |
+| **Synthetic Dawn** | Machine intelligence empires, rogue servitors, determined exterminators                | Adds a major empire type. AI rebellions can happen.        |
+| **Federations**    | Expanded federations (5 types), galactic community, origins, juggernauts               | Diplomatic play is now much deeper.                        |
+| **Nemesis**        | Become the Crisis, espionage system, custodian/galactic emperor                        | You can become the villain. Espionage adds covert options. |
+| **Overlord**       | New vassal types, auto-resettlement, mercenary enclaves, orbital rings                 | Vassal management is now a powerful mechanic.              |
+| **Paragons**       | Reworked leader system with unique paragon leaders                                     | Leaders are now more interesting and personal.             |
+| **Cosmogenesis**   | Late-game crisis origin, new fallen empire mechanics                                   | End-game content expansion.                                |
+| **Grand Archive**  | New archaeological content, relic collection, precursor overhaul                       | More story content and collectibles.                       |
 
 ## Next Steps
 
