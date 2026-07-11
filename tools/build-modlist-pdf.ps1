@@ -12,9 +12,9 @@ function Ensure-Fonts {
     $null = New-Item -ItemType Directory -Path $fontDir -Force
 
     $fonts = @{
-        "Inter-Regular.ttf"         = "https://raw.githubusercontent.com/rsms/inter/main/docs/font-files/Inter-Regular.ttf"
-        "Inter-Bold.ttf"            = "https://raw.githubusercontent.com/rsms/inter/main/docs/font-files/Inter-Bold.ttf"
-        "Inter-Italic.ttf"          = "https://raw.githubusercontent.com/rsms/inter/main/docs/font-files/Inter-Italic.ttf"
+        "Inter-Regular.woff2"      = "https://raw.githubusercontent.com/rsms/inter/master/docs/font-files/Inter-Regular.woff2"
+        "Inter-Bold.woff2"         = "https://raw.githubusercontent.com/rsms/inter/master/docs/font-files/Inter-Bold.woff2"
+        "Inter-Italic.woff2"       = "https://raw.githubusercontent.com/rsms/inter/master/docs/font-files/Inter-Italic.woff2"
         "JetBrainsMono-Regular.ttf" = "https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf"
         "JetBrainsMono-Bold.ttf"    = "https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Bold.ttf"
     }
