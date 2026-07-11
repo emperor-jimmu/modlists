@@ -1,4 +1,4 @@
-# Getting Started V3 — Minecraft 1.21.1 NeoForge
+# Getting Started — Minecraft 1.21.1 NeoForge
 
 This guide walks you through the modpack **one Wave at a time**. Each wave introduces one new capability. Don't install the next wave until you're comfortable with the current one.
 
@@ -135,9 +135,9 @@ This wave makes Minecraft run well, look great, and feel comfortable. No major g
 
 ### Install
 
-This pack uses the **Modrinth App** as the mod manager and launcher. See [MODLIST-V3.md](./MODLIST-V3.md#modrinth-app) for setup instructions — create a 1.21.1 NeoForge instance and install all Wave 0 mods from their Modrinth pages. All mods in this pack are available on Modrinth (every link in MODLIST-V3.md now points to Modrinth).
+This pack uses the **Modrinth App** as the mod manager and launcher. See [MODLIST.md](./MODLIST.md#modrinth-app) for setup instructions — create a 1.21.1 NeoForge instance and install all Wave 0 mods from their Modrinth pages. All mods in this pack are available on Modrinth (every link in MODLIST.md now points to Modrinth).
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-0--foundation) for the full mod list.
+See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full mod list.
 
 ### First Launch Settings
 
@@ -443,7 +443,7 @@ The biggest wave. Three industry-standard mods that together form a complete tec
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-1--tech-create--mekanism--ae2). Install all three core mods at once.
+See [MODLIST.md](./MODLIST.md#wave-1--tech-create--mekanism--ae2). Install all three core mods at once.
 
 ### How They Fit Together
 
@@ -911,7 +911,7 @@ Your colony grows alongside your factory. MineColonies provides autonomous NPC w
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-1--tech-create--mekanism--ae2). These mods are listed in Wave 1's Colony Automation and Chunk Loading sections.
+See [MODLIST.md](./MODLIST.md#wave-1--tech-create--mekanism--ae2). These mods are listed in Wave 1's Colony Automation and Chunk Loading sections.
 
 ### MineColonies — Autonomous NPC Colony
 
@@ -991,7 +991,7 @@ The world is larger, richer, and full of things to discover. Tectonic makes the 
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-2--exploration-world--dimensions). Install all mods at once.
+See [MODLIST.md](./MODLIST.md#wave-2--exploration-world--dimensions). Install all mods at once.
 
 ### Overworld
 
@@ -1236,7 +1236,7 @@ Every weapon can roll with random affixes, every accessory provides a unique abi
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-3--equipment-magic--rpg). Install all at once.
+See [MODLIST.md](./MODLIST.md#wave-3--equipment-magic--rpg). Install all at once.
 
 ### Skill Tree (RPG Series) — Persistent Character Growth
 
@@ -1444,7 +1444,7 @@ Farmer's Delight brings a full cooking system. This wave is entirely optional �
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-4--food-farming--comfort).
+See [MODLIST.md](./MODLIST.md#wave-4--food-farming--comfort).
 
 ### Farmer's Delight — Cooking Hub
 
@@ -1639,7 +1639,7 @@ Procedural bounty boards give you optional goals as you explore. No quest book, 
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-45--quests).
+See [MODLIST.md](./MODLIST.md#wave-45--quests).
 
 ### Bountiful — Bounty Boards in Villages
 
@@ -1674,7 +1674,7 @@ Your powerful gear finally has something worthy to fight. This wave adds better 
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-5--combat--mobs).
+See [MODLIST.md](./MODLIST.md#wave-5--combat--mobs).
 
 ### Better Combat — Weapon Feel
 
@@ -1846,7 +1846,7 @@ Tools and blocks to build the base you deserve. Every base deserves to look good
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-6--building--decoration).
+See [MODLIST.md](./MODLIST.md#wave-6--building--decoration).
 
 ### Rechiseled — Decorative Block Variants
 
@@ -1993,7 +1993,7 @@ Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, a
 
 ### Install
 
-See [MODLIST-V3.md](./MODLIST-V3.md#wave-7--space-exploration).
+See [MODLIST.md](./MODLIST.md#wave-7--space-exploration).
 
 ### Stellaris — Interplanetary Travel
 
@@ -2188,4 +2188,4 @@ You won't. Graves preserve your items. No creeper craters. The pack is designed 
 
 ### Java & Performance
 
-Minecraft 1.21.1 requires **Java 21**. See [MODLIST-V3.md](./MODLIST-V3.md#wave--1--prerequisites) for JDK installation instructions and recommended JVM arguments.
+Minecraft 1.21.1 requires **Java 21**. See [MODLIST.md](./MODLIST.md#wave--1--prerequisites) for JDK installation instructions and recommended JVM arguments.

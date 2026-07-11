@@ -2,7 +2,7 @@
 
 ## Completed
 
-### V3 Documentation (MODLIST-V3.md) — Full V3 Mod List Written
+### V3 Documentation (MODLIST.md) — Full V3 Mod List Written
 - [x] All mods pinned to their exact NeoForge 1.21.1 versions
 - [x] Waves 0-7 fully documented with mod tables, dependency tables, and config sections
 - [x] Interdependency notes for every wave noting cross-mod interactions
@@ -88,7 +88,8 @@
 - [x] Constant Music → The Immersive Music Mod (Constant Music forced 2min fade limit with 5 songs; Immersive Music Mod has 147 songs, biome/structure-aware, no dead air gap override)
 - [x] Chat Heads → removed (multiplayer-only feature, unnecessary for singleplayer pack)
 - [x] Better Advancements → Reliable Advancements (BA stale on 1.21.1 since Oct 2024; RA is active fork with scrollable tabs, search, auto-refresh, updated Apr 2026)
-- [x] V3 docs rendered to PDF: MODLIST-V3.pdf and GETTING-STARTED-V3.pdf in rendered/
+- [x] V1/V2 files deleted, V3 files renamed (MODLIST-V3.md -> MODLIST.md, GETTING-STARTED-V3.md -> GETTING-STARTED.md)
+- [x] PDFs rendered via cmarker Typst package: MODLIST.pdf (434 KB) and GETTING-STARTED.pdf (1.08 MB) in rendered/
 - [x] Removed Obscure API from V3 mod list (not available on NeoForge — Obscure Tooltips and Loot Journal depend on Fragmentum instead)
 - [x] Fixed OctoLib URL: modrinth.com/mod/octo-lib → modrinth.com/mod/shatterbyte-lib (slug is shatterbyte-lib, not octo-lib)
 - [x] Moved all 9 YUNG's mod URLs from CurseForge to Modrinth (CurseForge lacks NeoForge 1.21.1 builds; Modrinth has them for all YUNG's mods)
@@ -110,6 +111,12 @@
 
 ### Shaderpacks
 - [x] Complementary Unbound selected and documented in MODLIST-V3.md
+
+### PDF Generator
+- [x] Typst 0.15.0 installed via winget
+- [x] cmarker 0.1.10 package for inline markdown-to-Typst rendering
+- [x] generate-pdf.ps1 with dependency check, auto-install, and fallback winget path
+- [x] Both PDFs compile cleanly: MODLIST.pdf, GETTING-STARTED.pdf
 
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)

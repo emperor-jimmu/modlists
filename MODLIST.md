@@ -1,4 +1,4 @@
-# Mod List V3 — Minecraft 1.21.1 NeoForge
+# Mod List — Minecraft 1.21.1 NeoForge
 
 ## Wave -1 — Prerequisites
 
