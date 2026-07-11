@@ -1,9 +1,83 @@
-param(
+﻿param(
   [string]$OutputFile = "elder-wilds.md"
 )
 
 $scriptDir = Split-Path -Parent $PSCommandPath
 $root = Split-Path -Parent $scriptDir
+
+#region Helper functions
+
+function Ensure-Fonts {
+    <#
+    .SYNOPSIS
+        Downloads Inter and JetBrains Mono fonts to assets/fonts/ if missing.
+    #>
+    $fontDir = Join-Path $root "assets" "fonts"
+    $null = New-Item -ItemType Directory -Path $fontDir -Force
+
+    $fonts = @{
+        "Inter-Regular.ttf"         = "https://github.com/rsms/inter/raw/master/docs/font-files/Inter-Regular.ttf"
+        "Inter-Bold.ttf"            = "https://github.com/rsms/inter/raw/master/docs/font-files/Inter-Bold.ttf"
+        "Inter-Italic.ttf"          = "https://github.com/rsms/inter/raw/master/docs/font-files/Inter-Italic.ttf"
+        "JetBrainsMono-Regular.ttf" = "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/ttf/JetBrainsMono-Regular.ttf"
+        "JetBrainsMono-Bold.ttf"    = "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/ttf/JetBrainsMono-Bold.ttf"
+    }
+
+    foreach ($name in $fonts.Keys) {
+        $path = Join-Path $fontDir $name
+        if (-not (Test-Path $path)) {
+            Write-Host "Downloading $name..."
+            Invoke-WebRequest -Uri $fonts[$name] -OutFile $path
+        }
+    }
+
+    return $fontDir
+}
+
+function Resize-CoverImage {
+    <#
+    .SYNOPSIS
+        Resizes the cover image to 1200px wide, maintaining aspect ratio.
+    #>
+    $source = Join-Path $root "assets" "Gemini_Generated_Image_ivqvcgivqvcgivqv.png"
+    $target = Join-Path $root "assets" "cover-resized.png"
+
+    if (-not (Test-Path $source)) { return $null }
+    if (Test-Path $target) { return $target }
+
+    Add-Type -AssemblyName System.Drawing
+    $img = $null; $resized = $null; $graphics = $null
+    try {
+        $img = [System.Drawing.Image]::FromFile($source)
+        $newWidth = 1200
+        $ratio = $newWidth / $img.Width
+        $newHeight = [int]($img.Height * $ratio)
+
+        $resized = New-Object System.Drawing.Bitmap($newWidth, $newHeight)
+        $graphics = [System.Drawing.Graphics]::FromImage($resized)
+        $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+        $graphics.DrawImage($img, 0, 0, $newWidth, $newHeight)
+
+        $resized.Save($target, [System.Drawing.Imaging.ImageFormat]::Png)
+        return $target
+    } finally {
+        if ($graphics) { $graphics.Dispose() }
+        if ($resized) { $resized.Dispose() }
+        if ($img) { $img.Dispose() }
+    }
+}
+
+function Test-TypstInstalled {
+    <#
+    .SYNOPSIS
+        Returns $true if typst is found on PATH, $false otherwise.
+        Typical caller pattern: if (-not (Test-TypstInstalled)) { exit 1 }
+    #>
+    return [bool](Get-Command "typst" -ErrorAction SilentlyContinue)
+}
+
+#endregion
+
 $files = @(
   "guide/modlist.md"
   "guide/install.md"
