@@ -6,7 +6,8 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 ---
 
 ### Always First Equip
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/2557
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/2557>
 - **Version:** 1.11.0
 - **Released:** 2025-06-15
 - **Summary:** Repeats the first-equip animation each time you draw a weapon or
@@ -18,13 +19,14 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None
 - **Dependencies:** Native Settings UI
 - **MO2 Notes:**
-  - Extract to game root. Tag as **Root**.
-  - Configure via Native Settings UI in CET overlay (default Insert key).
-  - Highly configurable -- set trigger delay, hotkeys, and which animations to use.
+    - Extract to game root. Tag as **Root**.
+    - Configure via Native Settings UI in CET overlay (default Insert key).
+    - Highly configurable -- set trigger delay, hotkeys, and which animations to use.
 - **Performance:** None
 
 ### Quest Trigger Fixes
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/17980
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/17980>
 - **Version:** 1.5.0
 - **Released:** 2025-10-15
 - **Summary:** Fixes quest triggers that are still broken in v2.31 -- missions
@@ -34,14 +36,15 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** Check mod page for compatibility version vs all-in-one
 - **Dependencies:** redscript
 - **MO2 Notes:**
-  - Extract to game root. Tag as **Root**.
-  - Choose between "Compatibility" version (for heavily-modded setups) and
+    - Extract to game root. Tag as **Root**.
+    - Choose between "Compatibility" version (for heavily-modded setups) and
     "All-In-One" version (full coverage, fewer conflicts).
-  - Recommended: use the Compatibility version for this modlist.
+    - Recommended: use the Compatibility version for this modlist.
 - **Performance:** None
 
 ### Deceptious Bug Fixes
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/18318
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18318>
 - **Version:** 2.2.0
 - **Released:** 2024-12-09
 - **Summary:** Collection of non-subjective bug fixes merged into a single
@@ -51,13 +54,14 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** May conflict with other mods that touch the same scripts
 - **Dependencies:** redscript, RED4ext
 - **MO2 Notes:**
-  - Extract to game root. Tag as **Root**.
-  - Install AFTER Quest Trigger Fixes to avoid script overlap.
-  - Read included documentation for full list of fixes.
+    - Extract to game root. Tag as **Root**.
+    - Install AFTER Quest Trigger Fixes to avoid script overlap.
+    - Read included documentation for full list of fixes.
 - **Performance:** None
 
 ### Semimaru Quest Restart Bug Fix
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/23031
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23031>
 - **Version:** 1.0.0
 - **Released:** 2025-07-28
 - **Summary:** Hotfix for a quest-restart bug in the Motorbreath quest that
@@ -67,12 +71,13 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** May conflict with Quest Trigger Fixes -- test if both enabled
 - **Dependencies:** redscript
 - **MO2 Notes:**
-  - Extract to game root. Tag as **Root**.
-  - Place AFTER Quest Trigger Fixes in load order if using both.
+    - Extract to game root. Tag as **Root**.
+    - Place AFTER Quest Trigger Fixes in load order if using both.
 - **Performance:** None
 
 ### Immersion Patch -- Story Quest Fixes
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/29152
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/29152>
 - **Version:** 1.2.0
 - **Released:** 2026-04-25
 - **Summary:** Fixes animation and scripting bugs in main story quests
@@ -82,12 +87,13 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None known
 - **Dependencies:** redscript
 - **MO2 Notes:**
-  - Extract to game root. Tag as **Root**.
-  - Complements Quest Trigger Fixes -- covers different issues.
+    - Extract to game root. Tag as **Root**.
+    - Complements Quest Trigger Fixes -- covers different issues.
 - **Performance:** None
 
 ### Immersion Patch -- Minor Activities Quest Fixes
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/27162
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27162>
 - **Version:** 1.1.0
 - **Released:** 2026-07-04
 - **Summary:** Fixes immersion-breaking bugs in Cyberpsycho sightings and NCPD
@@ -97,8 +103,8 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None known
 - **Dependencies:** redscript
 - **MO2 Notes:**
-  - Extract to game root. Tag as **Root**.
-  - Install after the Story Quest Fixes version.
+    - Extract to game root. Tag as **Root**.
+    - Install after the Story Quest Fixes version.
 - **Performance:** None
 
 ## Install Order
