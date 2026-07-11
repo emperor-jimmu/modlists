@@ -31,6 +31,7 @@ Every mod added to a category file MUST include all these fields:
 ```
 
 Rules:
+- Every mod entry MUST include a direct link (Nexus URL) — never list a mod without its link
 - Always search Nexus Mods for the latest version before adding a mod
 - Conflicts and dependencies MUST be cross-referenced across category files
 - Mods are listed in recommended install order within each category
