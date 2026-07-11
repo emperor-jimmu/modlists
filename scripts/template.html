@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>$title$</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 11pt; }
+    body {
+      font-family: 'Open Sans', 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #2c2c2c;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20mm 25mm;
+    }
+
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('../docs/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('../docs/assets/fonts/OpenSans-Bold.ttf') format('truetype');
+      font-weight: bold;
+    }
+    @font-face {
+      font-family: 'Lora';
+      src: url('../docs/assets/fonts/Lora-Regular.ttf') format('truetype');
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: 'Lora';
+      src: url('../docs/assets/fonts/Lora-Bold.ttf') format('truetype');
+      font-weight: bold;
+    }
+
+    .title-page {
+      page-break-after: always;
+      text-align: center;
+      padding-top: 120mm;
+    }
+    .title-page h1 {
+      font-family: 'Lora', serif;
+      font-size: 28pt;
+      color: #4a7c59;
+      margin-bottom: 8pt;
+    }
+    .title-page .subtitle {
+      font-size: 14pt;
+      color: #666;
+      margin-bottom: 40pt;
+    }
+    .title-page .meta {
+      font-size: 10pt;
+      color: #888;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Lora', serif; color: #3a5a40; page-break-after: avoid; }
+    h1 { font-size: 22pt; margin-top: 30pt; margin-bottom: 12pt; border-bottom: 3px solid #4a7c59; padding-bottom: 4pt; }
+    h2 { font-size: 16pt; margin-top: 22pt; margin-bottom: 8pt; }
+    h3 { font-size: 13pt; margin-top: 16pt; margin-bottom: 6pt; }
+    h4 { font-size: 11pt; margin-top: 12pt; margin-bottom: 4pt; }
+
+    p { margin-bottom: 8pt; text-align: justify; }
+    a { color: #4a7c59; text-decoration: none; }
+    ul, ol { margin: 6pt 0 6pt 20pt; }
+    li { margin-bottom: 3pt; }
+
+    code {
+      font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+      font-size: 9pt;
+      background: #f0f4f0;
+      padding: 1pt 4pt;
+      border-radius: 3pt;
+    }
+    pre {
+      background: #f0f4f0;
+      padding: 10pt;
+      border-radius: 4pt;
+      margin: 8pt 0;
+      overflow-x: auto;
+    }
+    pre code { background: none; padding: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10pt 0;
+      font-size: 9.5pt;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 5pt 8pt;
+      text-align: left;
+    }
+    th { background: #4a7c59; color: white; font-weight: 600; }
+    tr:nth-child(even) { background: #f8faf8; }
+
+    .page-break { page-break-before: always; }
+
+    @page {
+      margin: 25mm 20mm;
+      @bottom-center {
+        content: counter(page);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 9pt;
+        color: #888;
+      }
+    }
+
+    .category-bar {
+      display: inline-block;
+      padding: 2pt 10pt;
+      border-radius: 3pt;
+      color: white;
+      font-size: 9pt;
+      font-weight: bold;
+      margin-bottom: 8pt;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-page">
+    <h1>$title$</h1>
+    $if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+    <p class="meta">$date$</p>
+  </div>
+
+  $for(include-before)$
+  $include-before$
+  $endfor$
+
+  $body$
+
+  $for(include-after)$
+  $include-after$
+  $endfor$
+</body>
+</html>
