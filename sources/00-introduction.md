@@ -63,13 +63,15 @@ The guide is organised into the following sections:
 
 Each mod entry follows a consistent format:
 
+```markdown
 ## Mod Name
 - **Version:** Latest tested version
 - **Source:** Download URL
 - **Category:** Section category
-**Description:** What the mod does and why it is included.
-**Compatibility:** Known conflicts, dependencies, and load order placement notes.
-**Performance Impact:** Estimated FPS cost and VRAM usage at 4K.
-**Configuration:** In-mod settings, if any, required for correct behaviour.
+- **Description:** What the mod does and why it is included.
+- **Compatibility:** Known conflicts, dependencies, and load order placement notes.
+- **Performance Impact:** Estimated FPS cost and VRAM usage at 4K.
+- **Configuration:** In-mod settings, if any, required for correct behaviour.
+```
 
 Let's build the ultimate ETS2 profile.
