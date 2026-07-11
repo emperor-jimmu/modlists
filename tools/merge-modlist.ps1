@@ -140,129 +140,169 @@ function Convert-MarkdownToTypst {
 }
 
 $files = @(
-  "guide/modlist.md"
-  "guide/install.md"
-  "guide/modlist-foundations.md"
-  "guide/modlist-graphics.md"
-  "guide/modlist-graphics-pgpatcher.md"
-  "guide/modlist-graphics-shaders.md"
-  "guide/modlist-graphics-textures.md"
-  "guide/modlist-graphics-lighting.md"
-  "guide/modlist-graphics-weather.md"
-  "guide/modlist-graphics-terrain.md"
-  "guide/modlist-graphics-characters.md"
-  "guide/modlist-graphics-lod.md"
-  "guide/modlist-ui.md"
-  "guide/modlist-animations.md"
-  "guide/modlist-third-person.md"
-  "guide/modlist-expanded-systems.md"
-  "guide/modlist-expanded-character.md"
-  "guide/modlist-expanded-magic.md"
-  "guide/modlist-expanded-survival.md"
-  "guide/modlist-expanded-crafting.md"
-  "guide/modlist-expanded-followers.md"
-  "guide/modlist-world-feel.md"
-  "guide/modlist-world-content.md"
-  "guide/modlist-npcs.md"
-  "guide/modlist-creatures.md"
-  "guide/modlist-audio.md"
-  "guide/modlist-survival-combat.md"
-  "guide/modlist-lotd.md"
-  "guide/modlist-design-philosophy.md"
-  "guide/modlist-curation.md"
-  "guide/modlist-adult.md"
-  "guide/modlist-voicing.md"
-  "guide/modlist-performance.md"
-  "guide/modlist-performance-strategy.md"
-  "guide/modlist-performance-optimization.md"
-  "guide/modlist-performance-tools.md"
-  "guide/modlist-performance-patches.md"
-  "guide/modlist-performance-testing.md"
+  "guide/modlist.md",
+  "guide/install.md",
+  "guide/modlist-foundations.md",
+  "guide/modlist-graphics.md",
+  "guide/modlist-graphics-pgpatcher.md",
+  "guide/modlist-graphics-shaders.md",
+  "guide/modlist-graphics-textures.md",
+  "guide/modlist-graphics-lighting.md",
+  "guide/modlist-graphics-weather.md",
+  "guide/modlist-graphics-terrain.md",
+  "guide/modlist-graphics-characters.md",
+  "guide/modlist-graphics-lod.md",
+  "guide/modlist-ui.md",
+  "guide/modlist-animations.md",
+  "guide/modlist-third-person.md",
+  "guide/modlist-expanded-systems.md",
+  "guide/modlist-expanded-character.md",
+  "guide/modlist-expanded-magic.md",
+  "guide/modlist-expanded-survival.md",
+  "guide/modlist-expanded-crafting.md",
+  "guide/modlist-expanded-followers.md",
+  "guide/modlist-world-feel.md",
+  "guide/modlist-world-content.md",
+  "guide/modlist-npcs.md",
+  "guide/modlist-creatures.md",
+  "guide/modlist-audio.md",
+  "guide/modlist-survival-combat.md",
+  "guide/modlist-lotd.md",
+  "guide/modlist-design-philosophy.md",
+  "guide/modlist-curation.md",
+  "guide/modlist-adult.md",
+  "guide/modlist-voicing.md",
+  "guide/modlist-performance.md",
+  "guide/modlist-performance-strategy.md",
+  "guide/modlist-performance-optimization.md",
+  "guide/modlist-performance-tools.md",
+  "guide/modlist-performance-patches.md",
+  "guide/modlist-performance-testing.md",
   "guide/separators.md"
 )
 
-$outputDir = Join-Path $root "rendered"
-$null = New-Item -ItemType Directory -Path $outputDir -Force
-$outputPath = Join-Path $outputDir $OutputFile
+# -- Prerequisites --
+if (-not (Test-TypstInstalled)) {
+  Write-Host "ERROR: Typst is not installed. Install: winget install Typst.Typst" -ForegroundColor Red
+  exit 1
+}
+$fontDir = Ensure-Fonts
+$coverPath = Resize-CoverImage
 
+# -- Read version --
 $versionPath = Join-Path $root "VERSION"
-$version = if (Test-Path $versionPath) { (Get-Content $versionPath -Raw).Trim() } else { "0.0.1-dev" }
+$version = if (Test-Path $versionPath) { (Get-Content $versionPath -Raw).Trim() } else { Write-Warning "VERSION file not found — using 0.0.1-dev"; "0.0.1-dev" }
 $date = Get-Date -Format "yyyy-MM-dd"
 
-$mergedLines = @()
-$headings = @()
-$anchorCount = @{}
+# -- Process files --
+$allSections = [System.Collections.Generic.List[string]]::new()
 $fileAnchorMap = @{}
 
 foreach ($file in $files) {
   $path = Join-Path $root $file
-  if (-not (Test-Path $path)) {
-    Write-Warning "Skipping $file — not found"
-    continue
-  }
-
+  if (-not (Test-Path $path)) { Write-Warning "Skipping $file -- not found"; continue }
+  Write-Host "Processing $file..."
   $content = (Get-Content $path -Raw).Trim()
-
-  # Extract h1 headings for the table of contents
-  $firstH1Anchor = $null
-  foreach ($line in $content -split "`r`n|`n") {
-    if ($line -match '^#\s+(.+)$') {
-      $text = $matches[1].Trim()
-      $base = ($text -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
-      if ($anchorCount.ContainsKey($base)) {
-        $anchorCount[$base]++
-        $anchor = "$base-$($anchorCount[$base])"
-      } else {
-        $anchorCount[$base] = 1
-        $anchor = $base
-      }
-      $headings += @{Text = $text; Anchor = $anchor}
-      if (-not $firstH1Anchor) { $firstH1Anchor = $anchor }
-    }
-  }
-
-  # Map file paths to H1 anchors for cross-file link conversion
-  if ($firstH1Anchor) {
-    $basename = Split-Path -Leaf $file
-    $fileAnchorMap[$basename] = $firstH1Anchor
-    $fileAnchorMap[$file] = $firstH1Anchor
-  }
-
-  $mergedLines += ""
-  $mergedLines += $content
-  $mergedLines += ""
+  $fileH1Anchor = if ($content -match '^#\s+(.+)$') {
+    ($matches[1].Trim() -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
+  } else { "untitled" }
+  $result = Convert-MarkdownToTypst -Text $content -FileH1Anchor $fileH1Anchor
+  $basename = Split-Path -Leaf $file
+  $fileAnchorMap[$basename] = $fileH1Anchor
+  $fileAnchorMap[$file] = $fileH1Anchor
+  $allSections.Add("// -- $file --")
+  $allSections.Add($result.Content)
+  $allSections.Add("")
 }
 
-# Build front matter + title + TOC
-$allLines = @()
-$allLines += "---"
-$allLines += "title: Elder Wilds"
-$allLines += "version: $version"
-$allLines += "date: $date"
-$allLines += "generated-by: merge-modlist.ps1"
-$allLines += "---"
-$allLines += ""
-$allLines += "> Version **$version** — $date"
-$allLines += ""
-$allLines += "## Table of Contents"
-$allLines += ""
+# -- Build .typ file --
+$relFontDir = "../assets/fonts"
+$relCover = if ($coverPath) { "../assets/cover-resized.png" } else { $null }
+$typLines = [System.Collections.Generic.List[string]]::new()
+$a = { param($s) $typLines.Add($s) }.GetNewClosure()
 
-foreach ($h in $headings) {
-  $allLines += "- [$($h.Text)](#$($h.Anchor))"
+$a.Invoke("// Generated by merge-modlist.ps1 -- do not edit")
+$a.Invoke("")
+$a.Invoke("#let ew-version = `"$version`"")
+$a.Invoke("#let ew-date = `"$date`"")
+$a.Invoke("")
+$a.Invoke("// -- Fonts --")
+$a.Invoke("#let ew-font-inter-path = `"$relFontDir/Inter-Regular.ttf`"")
+$a.Invoke("#let ew-font-jbmono-path = `"$relFontDir/JetBrainsMono-Regular.ttf`"")
+$a.Invoke("")
+$a.Invoke("// -- Page Setup --")
+$a.Invoke('#set text(font: ("Inter", ew-font-inter-path), size: 10pt)')
+$a.Invoke('#set link(color: rgb("#2563EB"))')
+$a.Invoke('#set raw(font: ("JetBrains Mono", ew-font-jbmono-path), theme: "one-dark")')
+$a.Invoke('#set heading(numbering: "1.1")')
+$a.Invoke('#set page(')
+$a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 2cm),')
+$a.Invoke('  footer: context align(center + bottom, text(8pt, fill: luma(140),')
+$a.Invoke('    counter(page).display() + " — " + counter(page).display(numbering: "1")')
+$a.Invoke('  ))')
+$a.Invoke(')')
+$a.Invoke("")
+$a.Invoke("// -- Heading Styling --")
+$a.Invoke('#show heading.where(level: 1): set heading(numbering: none)')
+$a.Invoke('#show heading: it => {')
+$a.Invoke("  set text(")
+$a.Invoke('    size: if it.level == 1 { 22pt } else if it.level == 2 { 14pt } else if it.level == 3 { 11pt } else { 10.5pt },')
+$a.Invoke('    fill: if it.level == 1 { rgb("#1e293b") } else if it.level == 2 { rgb("#334155") } else { rgb("#475569") },')
+$a.Invoke("  )")
+$a.Invoke('  if it.level == 1 { v(1.5cm) } else if it.level == 2 { v(0.8cm) } else if it.level >= 3 { v(0.4cm) }')
+$a.Invoke("  it")
+$a.Invoke('  if it.level == 1 { v(0.5cm) }')
+$a.Invoke("}")
+$a.Invoke("")
+
+# -- Cover Page --
+if ($relCover) {
+  $a.Invoke('#align(center + horizon, image("' + $relCover + '", width: 60%))')
+  $a.Invoke('#v(3cm)')
 }
+$a.Invoke('#align(center, text(size: 28pt, weight: "bold", fill: rgb("#0f172a"), "Elder Wilds"))')
+$a.Invoke('#align(center, text(size: 14pt, fill: rgb("#475569"), "Version " + ew-version))')
+$a.Invoke('#align(center, text(size: 10pt, fill: luma(120), "Generated " + ew-date))')
+$a.Invoke('#pagebreak()')
+$a.Invoke("")
+$a.Invoke("// -- Table of Contents --")
+$a.Invoke('#text(size: 16pt, weight: "bold", fill: rgb("#1e293b"), "Contents")')
+$a.Invoke("#v(0.5cm)")
+$a.Invoke("#outline(depth: 2)")
+$a.Invoke("#pagebreak()")
+$a.Invoke("")
+$a.Invoke("// -- Content --")
+$a.Invoke("")
+foreach ($section in $allSections) { $a.Invoke($section) }
 
-$allLines += ""
-$allLines += $mergedLines
+$typContent = $typLines -join "`r`n"
 
-$mergedText = $allLines -join "`r`n"
-
-# Convert cross-file markdown links to internal anchor links
+# -- Resolve cross-file links: ](file.md#anchor) to ](#fileh1anchor-anchor) --
 foreach ($kv in $fileAnchorMap.GetEnumerator()) {
   $escaped = [regex]::Escape($kv.Key)
   $anchor = $kv.Value
-  $mergedText = $mergedText -replace "(?<=\]\()${escaped}#([^)]+)(?=\))", "#${anchor}-`$1"
-  $mergedText = $mergedText -replace "(?<=\]\()${escaped}(?=\))", "#${anchor}"
+  $typContent = $typContent -replace "(?<=\]\()${escaped}#([^)]+)(?=\))", "#${anchor}-`$1"
+  $typContent = $typContent -replace "(?<=\]\()${escaped}(?=\))", "#${anchor}"
 }
 
-$mergedText | Set-Content $outputPath -Encoding UTF8
-Write-Host "Merged $($files.Count) files → $outputPath ($((Get-Item $outputPath).Length / 1KB -as [int]) KB)"
+# -- Write .typ file --
+$outputDir = Join-Path $root "rendered"
+$null = New-Item -ItemType Directory -Path $outputDir -Force
+$typFile = Join-Path $outputDir "elder-wilds.typ"
+$typContent | Set-Content $typFile -Encoding UTF8
+Write-Host "Generated $typFile ($((Get-Item $typFile).Length / 1KB -as [int]) KB)"
+
+# -- Compile to PDF --
+Write-Host "Compiling PDF..."
+$pdfFile = Join-Path $outputDir "elder-wilds.pdf"
+$compiled = & typst compile $typFile $pdfFile 2>&1
+if ($LASTEXITCODE -eq 0) {
+  Write-Host "PDF generated -> $pdfFile ($((Get-Item $pdfFile).Length / 1KB -as [int]) KB)" -ForegroundColor Green
+} else {
+  Write-Host "Typst compilation failed:" -ForegroundColor Red
+  $compiled | ForEach-Object { Write-Host $_ -ForegroundColor Red }
+  exit 1
+}
+
+# -- Cleanup --
+Remove-Item (Join-Path $outputDir "elder-wilds.md") -ErrorAction SilentlyContinue
