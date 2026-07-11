@@ -14,7 +14,7 @@ This repo is a markdown planning workspace for the Elder Wilds modlist. All plan
 | `guide/separators.md`             | MO2 separator layout reference                  |
 | `guide/install.md`                | Setup and installation guide                    |
 | `TODO.md`                         | Scratch backlog and future research ideas       |
-| `tools/merge-modlist.ps1`         | Merges section files into `rendered/elder-wilds.md` |
+| `tools/build-modlist-pdf.ps1`     | Generates `rendered/elder-wilds.pdf` from all section files via Typst |
 | `rendered/elder-wilds.md`         | Single-page rendered view of all section files  |
 
 See [`guide/modlist.md`](guide/modlist.md) for the full planning section index and project scope.

@@ -17,7 +17,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `guide/modlist.md` is the hub file: project scope, modlist identity pillars, separator mapping table, and the index to numbered section files. The installation guide was split into `guide/install.md` to keep `modlist.md` lean.
 - `guide/install.md` contains the full setup guide (pre-installation, toolchain, download instructions, load order build steps, post-install testing).
 - There is no build, test, lint, CI, or package-manager workflow to run here.
-- `tools/merge-modlist.ps1` concatenates all `guide/modlist*.md` section files into `rendered/elder-wilds.md` for a single-page view. Run from the repo root or the `tools/` directory.
+- `tools/build-modlist-pdf.ps1` generates `rendered/elder-wilds.pdf` from all `guide/*.md` section files using Typst. Run from the repo root or the `tools/` directory.
 
 ## File Roles
 
