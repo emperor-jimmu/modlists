@@ -121,7 +121,7 @@ Many mods in this guide have their own configuration files, in-game menus, or co
 
 - **Reshade presets:** Most require HDR to be On and Colour Correction to be On in the game's graphics settings. Disable in-game Depth of Field and Motion Blur — Reshade shaders handle these better.
 - **Weather packs (Grimes seasons, Realistic Brutal Weather):** Set **Rain Probability** to **Medium** in the mod's in-game settings if it offers one. Max rain probability increases GPU load from raindrop effects and wet-road reflections.
-- **Texture overhauls (4K highway signs, realistic building textures):** These have no configuration requirement beyond the `mm_max_resource_size ` tweak above. If textures fail to load, check the game log (`game.log.txt`) for `Failed to load resource` lines.
+- **Texture overhauls (4K highway signs, realistic building textures):** These have no configuration requirement beyond the `mm_max_resource_size` tweak above. If textures fail to load, check the game log (`game.log.txt`) for `Failed to load resource` lines.
 
 ### Map Mods
 

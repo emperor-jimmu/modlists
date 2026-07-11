@@ -54,7 +54,7 @@ Double-click `run.cmd`. This script does the following automatically:
 
 The first run takes longer because packages are being downloaded. Subsequent launches skip the install step and open immediately.
 
-![Truck Mod Manager console during first launch](screenshots/installation/mm-console-first-run.png)
+![Truck Mod Manager console during first launch](../screenshots/installation/mm-console-first-run.png)
 
 If the console window shows no errors, the main application window opens within a few seconds.
 
@@ -100,7 +100,7 @@ If all three paths resolve, the manager is ready to use.
 
 Truck Mod Manager automatically lists every ETS2 profile it finds in your documents folder. Each profile is displayed by its in-game name (not the folder hash), making it easy to identify your profiles.
 
-![Profile selection dropdown in Truck Mod Manager](screenshots/installation/mm-profile-selection.png)
+![Profile selection dropdown in Truck Mod Manager](../screenshots/installation/mm-profile-selection.png)
 
 ### Creating and Switching Profiles
 
@@ -139,7 +139,7 @@ Workshop mods cannot be re-ordered independently through Truck Mod Manager — W
 
 For Steam Workshop mods, the manager automatically fetches the official Workshop thumbnail and displays it in the list. This makes visual identification much faster than reading filenames.
 
-![Mod list with thumbnails in Truck Mod Manager](screenshots/installation/mm-mod-list.png)
+![Mod list with thumbnails in Truck Mod Manager](../screenshots/installation/mm-mod-list.png)
 
 ## Drag-and-Drop Load Order Management
 
@@ -159,7 +159,7 @@ This matches the convention used in the in-game mod manager: the mod at the top 
 
 The change is written to your profile's configuration file automatically. You do not need to click a separate "Save" button.
 
-![Drag-and-drop reordering in Truck Mod Manager](screenshots/installation/mm-drag-drop.png)
+![Drag-and-drop reordering in Truck Mod Manager](../screenshots/installation/mm-drag-drop.png)
 
 ### Enabling and Disabling Mods
 
@@ -219,7 +219,7 @@ The **Cloud Presets** panel also lets you:
 - **Overwrite** a preset with the current load order
 - **View preset metadata** — creation date, mod count, and associated profile
 
-![Cloud presets panel](screenshots/installation/mm-cloud-presets.png)
+![Cloud presets panel](../screenshots/installation/mm-cloud-presets.png)
 
 ## Crash Reporting and Logs
 
