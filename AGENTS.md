@@ -48,6 +48,7 @@ Rules:
 
 ## Design Philosophy
 
+- **Baseline: 4K resolution** -- all mods are evaluated and tested at 4K
 - **No "cheat" mods** -- no free items, no vendor price hacks, no unlimited carry
   weight, no mechanics removal
 - Mods must enhance depth, not remove friction
@@ -64,6 +65,10 @@ Rules:
 4. Update status: `testing` -> `approved` or `rejected`
 5. Approved mods move from research to the correct category file
 6. Rejected mods STAY in the research file -- add rejection reason, never delete
+
+## Tool Usage
+
+- **Web fetching:** Use `webfetch` for standard web pages. If a page doesn't render properly (e.g., JavaScript-rendered content), use Playwright (`browser_navigate`) as fallback.
 
 ## Commit Conventions
 
