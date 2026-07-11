@@ -30,12 +30,12 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 
 Whether food and cooking are mostly ambient support for travel and downtime or a deliberate progression-and-preparation layer.
 
-| Mod                                                                                                | Type        | Dial       | Notes                                                         |
-|----------------------------------------------------------------------------------------------------|-------------|------------|---------------------------------------------------------------|
-| [Gourmet — A Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/96876)          | Baseline    | #1, #2, #4 | Balanced modern route.                                        |
-| [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924) | Alternative | #1, #2, #4 | Integrated alchemy + cooking.                                 |
-| [Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877)   | Alternative | all        | Lighter fallback.                                             |
-| [Mealtime](https://www.nexusmods.com/skyrimspecialedition/mods/22496)                              | Alternative | all        | Recipe-density companion if Gourmet's scope feels too narrow. |
+| Mod                                                                                                | Type        | Dial       | Notes                                                                |
+|----------------------------------------------------------------------------------------------------|-------------|------------|----------------------------------------------------------------------|
+| [Gourmet — A Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/96876)          | Baseline    | #1, #2, #4 | Balanced modern route.                                               |
+| [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924) | Alternative | #1, #2, #4 | Integrated alchemy + cooking.                                        |
+| [Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877)   | Alternative | all        | Lighter fallback.                                                    |
+| [Mealtime](https://www.nexusmods.com/skyrimspecialedition/mods/22496)                              | Alternative | all        | Recipe-density companion if Gourmet's scope feels too narrow.        |
 | [More Plants and Recipes SE](https://www.nexusmods.com/skyrimspecialedition/mods/69955)            | Alternative | #1, #2, #4 | Adds new plants and recipes to cooking/alchemy. Complements Gourmet. |
 
 ### Visual Companions
@@ -90,15 +90,15 @@ Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` fr
 
 What economy and loot should feel like: lightly rebalanced merchant-and-pricing, deliberate loot distribution, or harsher scarcity-driven progression.
 
-| Mod                                                                                                 | Type        | Dial       | Notes                                                        |
-|-----------------------------------------------------------------------------------------------------|-------------|------------|--------------------------------------------------------------|
-| Mod                                                                                                 | Type        | Dial       | Notes                                                        |
-|-----------------------------------------------------------------------------------------------------|-------------|------------|--------------------------------------------------------------|
-| [Trade and Barter](https://www.nexusmods.com/skyrimspecialedition/mods/23081)                       | Baseline    | #1, #2, #4 | Merchant-pricing route.                                      |
-| [C.O.I.N. — Coins of Interesting Nature](https://www.nexusmods.com/skyrimspecialedition/mods/51439) | Baseline    | #1, #2, #4 | Regional coin variety. No price/loot changes.                |
-| [C.O.I.N. — Treasury Exchange](https://www.nexusmods.com/skyrimspecialedition/mods/131682)          | Baseline    | #1, #2, #4 | Currency exchange for coin type conversion.                  |
-| [Open World Loot](https://www.nexusmods.com/skyrimspecialedition/mods/49681)                        | Alternative | #1, #4     | Curated loot progression and encounter rewards.              |
-| [MorrowLoot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)                     | Alternative | #1         | Heavy scarcity. Only if deleveled loot is a defining pillar. |
+| Mod                                                                                                   | Type          | Dial         | Notes                                                          |
+|-------------------------------------------------------------------------------------------------------|---------------|--------------|----------------------------------------------------------------|
+| Mod                                                                                                   | Type          | Dial         | Notes                                                          |
+| ----------------------------------------------------------------------------------------------------- | ------------- | ------------ | -------------------------------------------------------------- |
+| [Trade and Barter](https://www.nexusmods.com/skyrimspecialedition/mods/23081)                         | Baseline      | #1, #2, #4   | Merchant-pricing route.                                        |
+| [C.O.I.N. — Coins of Interesting Nature](https://www.nexusmods.com/skyrimspecialedition/mods/51439)   | Baseline      | #1, #2, #4   | Regional coin variety. No price/loot changes.                  |
+| [C.O.I.N. — Treasury Exchange](https://www.nexusmods.com/skyrimspecialedition/mods/131682)            | Baseline      | #1, #2, #4   | Currency exchange for coin type conversion.                    |
+| [Open World Loot](https://www.nexusmods.com/skyrimspecialedition/mods/49681)                          | Alternative   | #1, #4       | Curated loot progression and encounter rewards.                |
+| [MorrowLoot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)                       | Alternative   | #1           | Heavy scarcity. Only if deleveled loot is a defining pillar.   |
 
 ### RiS Economy Series (optional)
 
@@ -131,14 +131,14 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 
 Unique-item content packs that add depth to Daedric artifacts, dragon priest masks, unique weapons, and quest items. Treats artifact overhauls as a separate layer from crafting — they change what named items are, not how the player makes generic items.
 
-| Mod                                                                                   | Type                    | Dial           | Notes                                                                                |
-|---------------------------------------------------------------------------------------|-------------------------|----------------|--------------------------------------------------------------------------------------|
-| [Reliquary of Myth](https://www.nexusmods.com/skyrimspecialedition/mods/31612)        | Baseline                | #1, #4         | Artifact stats and effects. 12K endorsements.                                        |
-| [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254)                | Alternative             | #1, #2, #3, #4 | Higher-detail 3D models for unique items. Stacks with Reliquary of Myth.             |
-| [Konahrik's Accoutrements](https://www.nexusmods.com/skyrimspecialedition/mods/22206) | Alternative             | #1, #4         | Dragon-priest gear, masks, harder fights. LoTD museum integration.                   |
-| [Unique Items Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/33723)      | Alternative             | #1, #2, #3, #4 | Gap-filler for artifacts Reliquary of Myth doesn't cover.                            |
-| [Artificer](https://www.nexusmods.com/skyrimspecialedition/mods/99619)                | Alternative             | #1, #2, #4     | Simonrim-aligned alternative to Reliquary of Myth. Requires Thaumaturgy + Mysticism. |
-| Discipline-first route                                                                | Alternative             | #3             | Vanilla artifact stats.                                                              |
+| Mod                                                                                   | Type        | Dial           | Notes                                                                                |
+|---------------------------------------------------------------------------------------|-------------|----------------|--------------------------------------------------------------------------------------|
+| [Reliquary of Myth](https://www.nexusmods.com/skyrimspecialedition/mods/31612)        | Baseline    | #1, #4         | Artifact stats and effects. 12K endorsements.                                        |
+| [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254)                | Alternative | #1, #2, #3, #4 | Higher-detail 3D models for unique items. Stacks with Reliquary of Myth.             |
+| [Konahrik's Accoutrements](https://www.nexusmods.com/skyrimspecialedition/mods/22206) | Alternative | #1, #4         | Dragon-priest gear, masks, harder fights. LoTD museum integration.                   |
+| [Unique Items Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/33723)      | Alternative | #1, #2, #3, #4 | Gap-filler for artifacts Reliquary of Myth doesn't cover.                            |
+| [Artificer](https://www.nexusmods.com/skyrimspecialedition/mods/99619)                | Alternative | #1, #2, #4     | Simonrim-aligned alternative to Reliquary of Myth. Requires Thaumaturgy + Mysticism. |
+| Discipline-first route                                                                | Alternative | #3             | Vanilla artifact stats.                                                              |
 
 ### Risks & Compatibility
 
@@ -195,7 +195,6 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 ### Risks & Compatibility
 
-- `Immersive Armors` unmaintained since November 2016 — verify game version compatibility before locking.
 - `NordwarUA Total Armor` standardizes cubemaps across all six sub-mods — any mod depending on original cubemaps needs re-testing.
 - `Common Clothes and Armors` adds clothing to NPC leveled lists. Verify NPCs look right if `Armor and Clothing Extension` is also active.
 - `Bandolier` changes inventory — carry-weight design must account for additional slots.
@@ -208,23 +207,23 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 Clothing content packs adding new clothing, cloaks, and wearable non-armor items. More wardrobe variety without making every NPC a fashion show.
 
-| Mod                                                                                       | Type        | Dial | Notes                                                                        |
-|-------------------------------------------------------------------------------------------|-------------|------|------------------------------------------------------------------------------|
-| [Armor and Clothing Extension](https://www.nexusmods.com/skyrimspecialedition/mods/19002) | Baseline    | #1, #2, #3, #4 | Clothing diversity. 35K+ endorsements. Requires RUSTIC CLOTHING + SkyUI.     |
-| [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)    | Alternative | all  | Common-cloth variety for bandit/sellsword archetypes.                        |
-| [Sforzinda Imitations](https://www.nexusmods.com/skyrimspecialedition/mods/54346)         | Alternative | all  | Curated boutique clothing. Cut if it pulls toward boutique-fantasy wardrobe. |
-| [Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/6369)              | Alternative | all  | 100+ cloaks via SPID. Highest third-person visual impact.                    |
-| [Colovian Noble Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/4464)        | Alternative | all  | Imperial-themed high-status clothing. Pairs with Beyond Skyrim.              |
-| [Knapsack Backpacks SE](https://www.nexusmods.com/skyrimspecialedition/mods/3440)         | Alternative | all  | Carry-and-wearable utility with MCM. Cosmetic companion to Bandolier.        |
-| Discipline-first route                                                                    | Alternative | #3   | Vanilla clothing only.                                                       |
-| [RMB SPCH - Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/116030)  | Alternative | all  | SkyPatched version. Replaces original Cloaks of Skyrim (6369). Preferred over base. |
-| [Cloaks Of Skyrim Retextured SE](https://www.nexusmods.com/skyrimspecialedition/mods/42558) | Add-on      | all  | Retexture for Cloaks of Skyrim or RMB SPCH variant.                        |
-| [Cloaks Of Skyrim Retextured SE Female Mesh Patch](https://www.nexusmods.com/skyrimspecialedition/mods/85932) | Add-on | all | Female mesh fix for the retexture. |
-| [Artesian Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/17416)      | Alternative | all  | Higher-detail cloak mesh/texture replacer. Alternative to Cloaks of Skyrim. |
-| [Dynamic Artisan Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/146438)        | Alternative | all  | Dynamic cloak animations via OAR. Cloak physics and movement.               |
-| [RMB SPCH - Winter is Coming Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/116029) | Alternative | all | SkyPatched version of Winter is Coming Cloaks.                          |
-| [Dynamic Armor Variants](https://www.nexusmods.com/skyrimspecialedition/mods/65963)         | Alternative | all  | Visual armor/clothing variants based on conditions. No stat changes.        |
-| [Dynamic Lowered Hoods](https://www.nexusmods.com/skyrimspecialedition/mods/65964)          | Alternative | all  | Hoods lower dynamically when not in combat. OAR-based.                      |
+| Mod                                                                                                           | Type        | Dial           | Notes                                                                               |
+|---------------------------------------------------------------------------------------------------------------|-------------|----------------|-------------------------------------------------------------------------------------|
+| [Armor and Clothing Extension](https://www.nexusmods.com/skyrimspecialedition/mods/19002)                     | Baseline    | #1, #2, #3, #4 | Clothing diversity. 35K+ endorsements. Requires RUSTIC CLOTHING + SkyUI.            |
+| [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)                        | Alternative | all            | Common-cloth variety for bandit/sellsword archetypes.                               |
+| [Sforzinda Imitations](https://www.nexusmods.com/skyrimspecialedition/mods/54346)                             | Alternative | all            | Curated boutique clothing. Cut if it pulls toward boutique-fantasy wardrobe.        |
+| [Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/6369)                                  | Alternative | all            | 100+ cloaks via SPID. Highest third-person visual impact.                           |
+| [Colovian Noble Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/4464)                            | Alternative | all            | Imperial-themed high-status clothing. Pairs with Beyond Skyrim.                     |
+| [Knapsack Backpacks SE](https://www.nexusmods.com/skyrimspecialedition/mods/3440)                             | Alternative | all            | Carry-and-wearable utility with MCM. Cosmetic companion to Bandolier.               |
+| Discipline-first route                                                                                        | Alternative | #3             | Vanilla clothing only.                                                              |
+| [RMB SPCH - Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/116030)                     | Alternative | all            | SkyPatched version. Replaces original Cloaks of Skyrim (6369). Preferred over base. |
+| [Cloaks Of Skyrim Retextured SE](https://www.nexusmods.com/skyrimspecialedition/mods/42558)                   | Add-on      | all            | Retexture for Cloaks of Skyrim or RMB SPCH variant.                                 |
+| [Cloaks Of Skyrim Retextured SE Female Mesh Patch](https://www.nexusmods.com/skyrimspecialedition/mods/85932) | Add-on      | all            | Female mesh fix for the retexture.                                                  |
+| [Artesian Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/17416)                        | Alternative | all            | Higher-detail cloak mesh/texture replacer. Alternative to Cloaks of Skyrim.         |
+| [Dynamic Artisan Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/146438)                          | Alternative | all            | Dynamic cloak animations via OAR. Cloak physics and movement.                       |
+| [RMB SPCH - Winter is Coming Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/116029)              | Alternative | all            | SkyPatched version of Winter is Coming Cloaks.                                      |
+| [Dynamic Armor Variants](https://www.nexusmods.com/skyrimspecialedition/mods/65963)                           | Alternative | all            | Visual armor/clothing variants based on conditions. No stat changes.                |
+| [Dynamic Lowered Hoods](https://www.nexusmods.com/skyrimspecialedition/mods/65964)                            | Alternative | all            | Hoods lower dynamically when not in combat. OAR-based.                              |
 
 ### Risks & Compatibility
 
