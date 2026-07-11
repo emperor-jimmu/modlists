@@ -102,13 +102,14 @@ function Convert-Table {
                 $rows += ,$cells
                 $i++
             }
-            $result.AppendLine("#table(") | Out-Null
-            $result.AppendLine("  columns: ($(('auto,' * [Math]::Max($header.Count,1)).TrimEnd(',')),") | Out-Null
-            if ($header.Count -gt 0) { $result.AppendLine("  fill: (luma(240), none),") | Out-Null }
-            else { $result.AppendLine("  fill: none,") | Out-Null }
-            foreach ($cell in $header) { $result.AppendLine("  [*$cell*],") | Out-Null }
-            foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$cell],") | Out-Null } }
-            $result.AppendLine(")") | Out-Null
+      $colCount = [Math]::Max($header.Count, 1)
+      $result.AppendLine("#table(") | Out-Null
+      $result.AppendLine("  columns: $colCount,") | Out-Null
+      if ($header.Count -gt 0) { $result.AppendLine("  fill: (luma(240), none),") | Out-Null }
+      else { $result.AppendLine("  fill: none,") | Out-Null }
+      foreach ($cell in $header) { $result.AppendLine("  [*$cell*],") | Out-Null }
+      foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$cell],") | Out-Null } }
+      $result.AppendLine(")") | Out-Null
         } else {
             $result.AppendLine($line) | Out-Null
             $i++
@@ -143,7 +144,10 @@ function Convert-MarkdownToTypst {
         } else { $converted.AppendLine($line) | Out-Null }
     }
     $text = $converted.ToString() -replace '!\[([^\]]*)\]\(([^)]+)\)', '#image("$2")'
-    return @{ Content = Convert-Table -Text $text; Headings = $headingOrder }
+    $text = Convert-Table -Text $text
+    # Escape bare < characters not part of labels (e.g., <50, NPC_<50)
+    $text = $text -replace '<(?![a-zA-Z][a-zA-Z0-9-]*>)', '\<'
+    return @{ Content = $text; Headings = $headingOrder }
 }
 
 $files = @(
