@@ -171,7 +171,7 @@ function Convert-MarkdownToTypst {
     foreach ($line in $lines) {
         if ($line -match '^(#{1,6})\s+(.+)$') {
             $level = $matches[1].Length
-            $body = $matches[2]
+            $body = $matches[2] -replace '`([^`]+)`', '$1'  # strip inline backticks so separator names use heading font
             $converted.AppendLine(("=" * $level) + " $body") | Out-Null
             $rawAnchor = ($body -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
             if ([string]::IsNullOrEmpty($rawAnchor)) { $rawAnchor = "section" }
@@ -289,8 +289,7 @@ $a.Invoke("// -- Page Setup --")
 $a.Invoke('#set text(size: 11pt)')
 $a.Invoke('#show link: set text(fill: rgb("#2563EB"))')
 $a.Invoke('#set raw(tab-size: 4)')
-$a.Invoke('// Inline raw (backtick code) uses body font, not monospaced')
-$a.Invoke('#show raw.where(block: false): set text(font: "Inter")')
+$a.Invoke('// Inline raw in body text keeps monospaced font; headings have backticks stripped')
 $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2cm, right: 1.5cm, top: 1.5cm, bottom: 2cm),')
 $a.Invoke('  footer-descent: 70%,')
