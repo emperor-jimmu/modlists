@@ -59,6 +59,8 @@ Treated as a foundational content pillar for the final list, not a late optional
 - **Stones of Barenziah Quest Markers** — Dedicated display for completed crown.
 - **Jewels of the Reach** — Additional gemstone collectible.
 - **Dawnguard Treasure Map** — Feeds collection-driven exploration loop.
+- **Legacy of the Dragonborn BadGremlins Collection** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15092)) — Gremlin-themed collectible display items for the museum.
+- **Fate Cards New Style - 2023 Remaster** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104676)) — Alternate fate card artwork and design. Alternative to Fate Cards Remade (76418).
 
 ### Artifact Enhancement
 

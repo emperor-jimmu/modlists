@@ -24,6 +24,12 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 - A restrained overhaul can undershoot if too many adjacent systems also land on conservative choices.
 - Treat large food-and-cooking coverage as a deliberate expansion choice, not something hitchhiking into the alchemy baseline.
 
+#### Flavor Additions
+
+| Mod | Dial | Notes |
+| --- | ---- | ----- |
+| [Alchemy Requires Bottles](https://www.nexusmods.com/skyrimspecialedition/mods/137443) | all | Empty potions at alchemy lab. Adds bottle-crafting step. Tentative — evaluate gameplay friction. |
+
 ---
 
 ## Cooking Systems → separator: `Expanded Systems - Crafting & Economy`

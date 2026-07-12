@@ -15,6 +15,7 @@ All mods in this section belong to one of the three third-person separators as n
 - **Customizable Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12201)) — Leaner fallback.
 - **True Directional Movement** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51614)) — Governs movement/targeting, not the camera framework itself.
 - **Improved Camera SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93962)) — Perspective support, not main third-person framework.
+- **Modern Combat Gamepad Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123409)) — Gamepad-centric combat controls integration. Research before adding — evaluate overlap with TDM and the combat stack.
 
 ### Risks & Compatibility
 - A good preset can hide weak camera behavior — judge the framework, not the preset.

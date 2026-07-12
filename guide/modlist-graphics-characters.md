@@ -171,6 +171,7 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 | [The Eyes Of Beauty SSE](https://www.nexusmods.com/skyrimspecialedition/mods/16185) | Alternative | Community-standard alternative to Eyes Nouveaux. |
 | [Argonian - Khajiit FabULook Eyes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/15136) | Alternative | High-res eye textures for Argonian and Khajiit. |
 | [Beards of Power](https://www.nexusmods.com/skyrimspecialedition/mods/42635) | Alternative | High-fidelity beard meshes and textures. Adds variety over vanilla. |
+| [BnP - Teeth Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/84288) | Alternative | Higher-quality teeth meshes/textures. Complements BnP skin stack. |
 | [SG Female Eyebrows](https://www.nexusmods.com/skyrimspecialedition/mods/25890) + [Improved](https://www.nexusmods.com/skyrimspecialedition/mods/93266) | Alternative | Higher-fidelity female eyebrow shapes. Use Improved variant. |
 | [Eyes of Beauty - Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/152223) | Alternative | Combines Eyes Nouveaux meshes with The Eyes of Beauty textures. Requires both as dependencies. |
 | Discipline-first route | Alternative | Rely on vanilla hair and eye textures entirely. |

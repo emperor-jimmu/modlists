@@ -261,6 +261,9 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 | [Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967)                | Consistent jumping control.                                         |
 | [LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136)           | Leveled-list crash protection.                                      |
 | [Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076)         | Prevents explosion-force spells from launching objects into camera. |
+| [Beard Mask Fix](https://www.nexusmods.com/skyrimspecialedition/mods/80232)                  | Beards use slot 44 — prevents mask clipping. SKSE plugin.           |
+| [Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)                   | Utility SKSE plugin.                                                |
+| [Description Framework Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139077) | Centralized patch collection for the Description Framework.         |
 | [Weapons Armor Clothing and Clutter Fixes (WACCF)](https://www.nexusmods.com/skyrimspecialedition/mods/18994) | Broad record fix for weapon/armor/clothing/clutter records. High compatibility debt — test carefully with the crafting and artifact stack. Optional — skip if conflicts outweigh gains. |
 
 ### Not Installed

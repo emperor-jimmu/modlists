@@ -27,6 +27,9 @@ OStim Standalone — a modern, standalone adult animation framework that does no
 | [Clean Navigation Icons for OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/181886)        | Baseline | 62 navigation icons.                                    |
 | [Animation Pack Icons for OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/181880)          | Baseline | 18 icons.                                               |
 | [OTooTiredToMove](https://www.nexusmods.com/skyrimspecialedition/mods/154112)                                    | Baseline | Temporary immobilisation after climax.                  |
+| [OStim Prism](https://www.nexusmods.com/skyrimspecialedition/mods/174750)                                        | Baseline | OStim framework visual/settings enhancement.            |
+| [OSquirt - OCum Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/167025)                           | Baseline | Expands OCum Ascended mechanics.                        |
+| [Ostim Standalone Sound Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/120663)                    | Baseline | Audio overhaul for OStim animations.                    |
 
 ### Risks & Compatibility
 
@@ -42,14 +45,22 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 
 ### Baseline
 
-- **OStim Romance** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107671)) — Primary romance-content baseline. Active maintenance.
-- **Amorous Adventures OStim Standalone Patch** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150577)) — Ports classic Amorous Adventures content to OStim Standalone.
+| Mod | Notes |
+| --- | --- |
+| [OStim Romance](https://www.nexusmods.com/skyrimspecialedition/mods/107671) | Primary romance-content baseline. Active maintenance. |
+| [OComfort - OStim Romance Fork](https://www.nexusmods.com/skyrimspecialedition/mods/139333) | Romance fork adding comfort/affection mechanics. Alternative to OStim Romance. |
+| [Amorous Adventures OStim Standalone - OStim Sequences](https://www.nexusmods.com/skyrimspecialedition/mods/106773) | Ports classic Amorous Adventures to OStim with sequence scenes. |
+| [Amorous Adventures OStim Standalone - Rewrite and MCM Patch with Fixes - Sequences Edition](https://www.nexusmods.com/skyrimspecialedition/mods/150577) | Updated rewrite with MCM patch and fixes. Supersedes the base patch. |
+| [Amorous Adventures MCM](https://www.nexusmods.com/skyrimspecialedition/mods/100112) | MCM configuration for Amorous Adventures. |
+| [Amorous Adventures - Player Dialogue Rewritten](https://www.nexusmods.com/skyrimspecialedition/mods/38989) | Reworks player dialogue options for Amorous Adventures. |
+| [Caught Red Handed - Quest Expansion - OStim Patch](https://www.nexusmods.com/skyrimspecialedition/mods/69711) | OStim integration for the Caught Red Handed quest expansion. |
 
 ### Risks & Compatibility
 
 - Lock the framework version first, then verify romance mod compatibility.
 - Romance quests add dialogue/quest records that may conflict with → `World Content` or → `NPCs` overhauls.
 - Verify load order with `RDO` and `Serana Dialogue Add-On` for overlapping NPCs.
+- `Amorous Adventures OStim Standalone - Rewrite` (150577) is the preferred version over the base OStim Sequences patch (106773).
 
 ---
 
