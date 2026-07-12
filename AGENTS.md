@@ -78,6 +78,15 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - Do not collapse separate concerns together. Example: animation-side camera awareness belongs in `guide/modlist-animations.md` (Animations); broader third-person camera/gameplay framework decisions belong in `guide/modlist-third-person.md` (Third-Person Gameplay).
 - Preserve established ownership decisions unless the user asks to revisit them. Current key animation ownership: `Pandora` for behavior generation, `XPMSSE` for skeleton assumptions, `Open Animation Replacer` for conditional selection.
 
+## Nexus Mods Search Workflow
+
+When discovering new mods to recommend:
+
+1. Open `https://www.nexusmods.com/skyrimspecialedition/mods/categories/`
+2. Choose the relevant category for the research area
+3. Sort by **Downloads** or **Endorsements** to surface the most popular/established mods
+4. Browse the top results, open promising pages, and evaluate fit against the modlist's design pillars and compatibility constraints
+
 ## Mod Link Verification Rules
 
 - Do not invent or guess Nexus links.

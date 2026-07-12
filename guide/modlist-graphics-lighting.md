@@ -10,7 +10,7 @@ All mods in this section belong to the `Graphics - Lighting` MO2 separator unles
 
 Build lighting as a coherent layer supporting the shader-first visual direction, stronger world scale, and third-person readability. Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route. The baseline is a Community Shaders-native stack with much lower patch burden than the LUX family.
 
-**⏱ Install order:** SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → DIAL → Embers XD → Luminous Atronachs.
+**⏱ Install order:** SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → Helios → Embers XD → Luminous Atronachs.
 
 ### Core CS-Native Stack
 
@@ -29,7 +29,7 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 | Mod | Role | Notes |
 | --- | --- | --- |
 | [Based Lighting Configs](https://www.nexusmods.com/skyrimspecialedition/mods/136870) | Presets | Standardizes tone/behavior across interiors/exteriors. |
-| [Dynamic Interior Ambient Lighting (DIAL)](https://www.nexusmods.com/skyrimspecialedition/mods/149920) | Ambient | Time-of-day and location-based ambient adjustment. |
+| [Helios](https://www.nexusmods.com/skyrimspecialedition/mods/181533) | Ambient | Dynamic auto-ambient adjustment for interiors and exteriors via Community Shaders. |
 
 ### Fire & Effects
 
