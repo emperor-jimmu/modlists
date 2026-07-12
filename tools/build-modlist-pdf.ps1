@@ -135,19 +135,19 @@ function Convert-MermaidDiagrams {
             }
             if ($mermaid.Length -gt 0) {
                 $num = $Counter.Value
-                $svgFile = Join-Path $OutputDir "diagram-$num.svg"
-                if (-not (Test-Path $svgFile)) {
+                $pngFile = Join-Path $OutputDir "diagram-$num.png"
+                if (-not (Test-Path $pngFile)) {
                     $mmdFile = Join-Path $OutputDir "temp-diagram-$num.mmd"
                     try {
                         $mermaid.ToString() | Set-Content $mmdFile -Encoding UTF8 -ErrorAction Stop
-                        & $npx --yes @mermaid-js/mermaid-cli -i $mmdFile -o $svgFile -q 2>&1 | Out-Null
+                        & $npx --yes @mermaid-js/mermaid-cli -i $mmdFile -o $pngFile -q 2>&1 | Out-Null
                         if ($LASTEXITCODE -ne 0) { Write-Warning "mermaid diagram $num failed (ec=$LASTEXITCODE)" }
                     } finally {
                         Remove-Item $mmdFile -ErrorAction SilentlyContinue
                     }
                 }
             }
-            $null = $output.AppendLine("![](./diagram-$num.svg)")
+            $null = $output.AppendLine("#image(""./diagram-$num.png"", width: 100%)")
             $Counter.Value++
             $i++ # skip ```
         } else {
@@ -292,10 +292,11 @@ $a.Invoke('#set raw(tab-size: 4)')
 $a.Invoke('// Inline raw (backtick code) uses body font and size, not monospaced')
 $a.Invoke('#show raw.where(block: false): set text(font: "Inter", size: 11pt)')
 $a.Invoke('#set page(')
-$a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 2cm),')
-$a.Invoke('  footer: context align(center + bottom, text(9pt, fill: luma(140),')
-$a.Invoke('    counter(page).display() + " — " + counter(page).display()')
-$a.Invoke('  ))')
+$a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 1.8cm),')
+$a.Invoke('  footer: context align(center + bottom, pad(top: 0.3cm,')
+$a.Invoke('    text(9pt, fill: luma(140),')
+$a.Invoke('      counter(page).display() + " — " + counter(page).display()')
+$a.Invoke('  ))),')
 $a.Invoke(')')
 $a.Invoke("")
 $a.Invoke("// -- Heading Styling --")
@@ -304,7 +305,7 @@ $a.Invoke("  set text(")
 $a.Invoke('    size: if it.level == 1 { 24pt } else if it.level == 2 { 16pt } else if it.level == 3 { 12pt } else { 11.5pt },')
 $a.Invoke('    fill: if it.level == 1 { rgb("#1e293b") } else if it.level == 2 { rgb("#334155") } else { rgb("#475569") },')
 $a.Invoke("  )")
-$a.Invoke('  if it.level == 1 { v(1.5cm) } else if it.level == 2 { v(0.8cm) } else if it.level >= 3 { v(0.4cm) }')
+$a.Invoke('  if it.level == 1 { v(1.5cm) } else if it.level == 2 { pagebreak(weak: true); v(0.8cm) } else if it.level >= 3 { v(0.4cm) }')
 $a.Invoke("  it")
 $a.Invoke('  if it.level == 1 { v(0.5cm) }')
 $a.Invoke("}")
