@@ -61,7 +61,7 @@ Rules:
 
 ## Research Workflow
 
-1. Discover mods on Nexus Mods
+1. Discover mods on Nexus Mods — navigate to https://www.nexusmods.com/cyberpunk2077/mods/categories/, pick a relevant category, sort by Downloads or Endorsements, then browse for fitting mods
 2. Add to `research/mods-to-investigate.md` with status `candidate`
 3. Research: check comments, bug reports, compatibility, design fit
 4. Update status: `testing` -> `approved` or `rejected`
