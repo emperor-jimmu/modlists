@@ -68,3 +68,202 @@ crafting. This section defines how the game plays.
 - **Dependencies:** Cyber Engine Tweaks, Native Settings UI, redscript
 - **MO2 Notes:** Extract to game root. Files go to `r6/scripts/`. Configure via Native Settings UI -> Mods -> RMK MODS. Has scaling factor slider (default 0.75) and difficulty threshold settings.
 - **Performance:** None
+
+### Combat Evolved
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/29125>
+- **Version:** 4.10.1
+- **Released:** 2026-04-23
+- **Summary:** Comprehensive enemy AI overhaul. Enemies use suppressive fire, flank, retreat to heal, coordinate attacks, and use smart weapons and grenades tactically. Each enemy archetype (gang, security, maxtac) has distinct behavioral profiles.
+- **Why:** Vanilla enemy AI is reactive and predictable — enemies stand in the open and take turns shooting. This makes every firefight dynamic and forces the player to use real tactics: reposition, use cover, prioritize threats, and manage stamina.
+- **Conflicts:** None known. Designed to be compatible with most combat mods.
+- **Dependencies:** Codeware, DigitalVixen Core, Mod Settings, redscript, TweakXL. Optional: True First Person Camera 2.0 for camera effects.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings -> Combat Evolved. To uninstall, delete `r6/scripts/CombatEvolved` and `r6/tweaks/CombatEvolved` directories.
+- **Performance:** Light (AI decision calculations only)
+
+### They Will Remember
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19747>
+- **Version:** 2.4.4
+- **Released:** 2025-02-13
+- **Summary:** Full gang reputation system with reinforcements, retaliation squads, relationships, and a disguise system. Gangs remember your actions — help them and they'll be neutral or friendly; attack them and they send hit squads.
+- **Why:** Vanilla gangs are cosmetic — every encounter resets to neutral. This makes faction choice matter: your reputation with each gang persists across the entire playthrough and affects random encounters, gig availability, and dialogue.
+- **Conflicts:** None known. Equipment-EX heavily recommended for disguise system.
+- **Dependencies:** Codeware, Mod Settings, redscript. Recommended: Equipment-EX, Inventory Adjustments Hub, Night City Alive (REDmod).
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Disguise system requires clothing with gang-affiliation tags — use Inventory Adjustments Hub to view tags on items.
+- **Performance:** Light (reputation tracking and spawn management)
+
+### Much Better Netrunning
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27237>
+- **Version:** 2.20
+- **Released:** 2026-02-03
+- **Summary:** Complete netrunning overhaul — successor to Better Netrunning, rebuilt from scratch. Makes quickhacking dangerous, rewarding, and tactical with configurable trace time, RAM costs, cooldowns, and enemy netrunner behavior.
+- **Why:** Vanilla netrunning becomes overpowered at midgame — enemies never trace you and RAM regenerates too fast. This makes quickhacking a high-risk, high-reward playstyle where positioning, timing, and loadout planning matter.
+- **Conflicts:** None known
+- **Dependencies:** Codeware, Cyber Engine Tweaks, Native Settings UI, RED4ext, Reds Logging Headers, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI -> Mods -> Much Better Netrunning. Supports full configuration of trace time, RAM costs, and enemy netrunner difficulty.
+- **Performance:** None
+
+### Dead Body Alert
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26746>
+- **Version:** 1.0
+- **Released:** 2026-01-08
+- **Summary:** Enemies react to discovering dead bodies — they stop acting like nothing happened and instead investigate, raise alarms, and search for the player. No more chilling next to a fallen squadmate.
+- **Why:** Vanilla stealth has a fundamental immersion gap — enemies ignore dead allies entirely. This makes stealth gameplay more realistic and requires the player to hide or move bodies, adding tactical depth to non-lethal approaches.
+- **Conflicts:** None known
+- **Dependencies:** redscript, Mod Settings (optional — toggle main feature and optional features)
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings if installed. Optional feature toggle available.
+- **Performance:** None
+
+### Immersive Stealth Weapon
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27149>
+- **Version:** 1.01
+- **Released:** 2026-01-28
+- **Summary:** Overhauls stealth weapon combat — no more guaranteed one-shot kills from stealth. Enemies have dynamic awareness, noise matters, and positioning determines whether you get the drop on someone. Strategic stealth combat.
+- **Why:** Vanilla stealth weapons trivialize encounters with guaranteed stealth kills. This makes stealth a genuine challenge where preparation, positioning, and equipment choice determine success rather than a binary "undetected = kill" formula.
+- **Conflicts:** Pairs well with Dead Body Alert and Silent Silencers and Throwing Knives
+- **Dependencies:** redscript, TweakXL, Mod Settings (optional)
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings if installed.
+- **Performance:** None
+
+### Immersive Healing
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26281>
+- **Version:** 3.3.0
+- **Released:** 2025-12-15
+- **Summary:** Replaces the cooldown-based healing system with individual health items in your inventory. Healing items are lootable, purchasable, and must be managed like any other consumable. Includes animation and sound overhauls.
+- **Why:** Vanilla healing is arcadey — press a button and wait for a cooldown. This makes healing a resource-management decision: carry enough health items, use them strategically, and restock between engagements.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, Codeware, Cyber Engine Tweaks, Input Loader, Native Settings UI, RED4ext, redscript, TweakXL (v1.11.1+)
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI -> Mods. Multiple file versions available (choose based on your other mods).
+- **Performance:** None
+
+### Immersive Grenades
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25334>
+- **Version:** 3.3.0
+- **Released:** 2025-10-28
+- **Summary:** No more charges — grenades are tracked as individual items integrated into the world. Each grenade you find or buy is a physical object. Also reworks the Ticking Time Bomb perk. Supports integration with custom grenade mods.
+- **Why:** Vanilla grenade charges are abstract and replenish for free. Tracking grenades as items makes explosive tactics a deliberate choice with resource consequences rather than a spammable panic button.
+- **Conflicts:** May conflict with mods that alter grenade behavior or the Ticking Time Bomb perk
+- **Dependencies:** ArchiveXL, Cyber Engine Tweaks, Native Settings UI, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI. Supports optional integration with custom grenade mods (Big Chungus Grenade, Chomper, GASH, etc.).
+- **Performance:** None
+
+### Immersive Throwables
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25074>
+- **Version:** 1.0.0
+- **Released:** 2025-10-17
+- **Summary:** Throwing a weapon unequips it and drops it at the impact location instead of going on cooldown. You must physically retrieve thrown weapons or lose them. Adds real consequence to knife and axe throws.
+- **Why:** Vanilla throwable weapons magically return to your inventory. This makes each throw a tactical decision — if you miss or can't reach the landing spot, you lose that weapon for the rest of the fight.
+- **Conflicts:** Compatible with Silent Silencers and Throwing Knives
+- **Dependencies:** ArchiveXL, Cyber Engine Tweaks, Input Loader, Native Settings UI, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI. Pairs with Throwable Weapon Reworked for stamina-based recovery.
+- **Performance:** None
+
+### Throwable Weapon Reworked
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27255>
+- **Version:** 1.0
+- **Released:** 2026-02-02
+- **Summary:** Redesigns throwable weapon recovery to be stamina-based. Character growth, builds, and cyberware choices affect how quickly you recover thrown weapons. Preserves each weapon's original characteristics while tying recovery to your build.
+- **Why:** Vanilla throwable recovery is flat and disconnected from character progression. Making it stamina-based gives attribute points and cyberware choices direct gameplay impact on thrown weapon viability.
+- **Conflicts:** None known. Pairs with Immersive Throwables for full throwing overhaul.
+- **Dependencies:** ArchiveXL, redscript, TweakXL. Recommended: Stamina Regen Fixes.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Works automatically — optional configuration.
+- **Performance:** None
+
+### Flesh and Chrome
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27988>
+- **Version:** 1.24.0
+- **Released:** 2026-03-11
+- **Summary:** Expands stamina into a full fatigue and recovery system. Creates a natural daily rhythm between action, rest, food, and chrome management. Stamina regen slows with fatigue; sleep, food, and rest restore it.
+- **Why:** Vanilla stamina is a short combat resource that recharges in seconds. This makes stamina a persistent resource you manage across the day — when to push harder, when to rest, what to eat, how much chrome to install.
+- **Conflicts:** Compatible with Cyberware-EX and most combat mods. May conflict with mods that alter base stamina behavior.
+- **Dependencies:** Codeware, redscript, DigitalVixen Core, Redscript Configuration Framework. Recommended: Consumable Animations.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Optional addon: Flesh and Chrome - Carry Overhaul (#28375) for inventory-weight integration. Review mod page for optional file choices.
+- **Performance:** None
+
+### Weapon Conditioning (Tier System Overhaul)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10479>
+- **Version:** 1.2.0
+- **Released:** 2023-10-31
+- **Summary:** Introduces a Condition stat to all weapons. Weapons degrade with use and must be repaired or replaced. Fixes the loot and crafting material economy by giving every weapon a lifespan and maintenance cost.
+- **Why:** Vanilla weapon economy has no sink — once you find a good weapon, you never need another. Condition degradation creates demand for replacement weapons and crafting materials, making loot discoveries and the crafting system meaningful throughout the game.
+- **Conflicts:** None known
+- **Dependencies:** Codeware, Cyber Engine Tweaks, Mod Settings, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings (or edit Config.reds manually). Install BEFORE Skillful Attributes and Skillful for best compatibility.
+- **Performance:** None
+
+### Skillful Attributes
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9281>
+- **Version:** 1.3.1
+- **Released:** 2023-09-27
+- **Summary:** Attribute levels increase through skill proficiency — the more you fight a certain way, the better you get at the related attributes. Replaces flat attribute-point leveling with use-based progression. Now requires Skillful.
+- **Why:** Vanilla attribute allocation is pure menu management — you distribute points at level-up regardless of how you play. This rewards actual playstyle: use Blade weapons and your Reflexes improve naturally, reinforcing build identity through gameplay.
+- **Conflicts:** None known. Designed to work with Skillful.
+- **Dependencies:** ArchiveXL, Mod Settings, redscript. Requires Skillful (#9309). Codeware may be needed.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. REQUIRES Skillful (#9309) to function. Install Weapon Conditioning before this for best compatibility.
+- **Performance:** None
+
+### Skillful
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9309>
+- **Version:** 2.0.3
+- **Released:** 2023-09-27
+- **Summary:** Spinoff from Skillful Attributes adding EXP multipliers for skill proficiencies, character levels, and street cred. Awards extra perk points and cyberware capacity at milestone levels. User-configurable via Mod Settings.
+- **Why:** Required by Skillful Attributes, but also stands alone as a progression accelerator that rewards investment in skills. Perk points and cyberware capacity at milestones make leveling feel more rewarding at every step.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, Mod Settings, redscript, TweakXL. Codeware may be needed.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Install BEFORE Skillful Attributes. Read redscript requirements page for any additional dependencies.
+- **Performance:** None
+
+### Watch Your Back
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27792>
+- **Version:** 1.0
+- **Released:** 2026-02-24
+- **Summary:** Adds ambushers who try to rob V in alleys, secluded areas, and during encounters. Random encounter system that creates dynamic, dangerous moments during exploration.
+- **Why:** Night City is supposed to be dangerous, but vanilla exploration is completely safe outside scripted encounters. Ambush events make the city feel lawless and unpredictable, rewarding awareness and preparation.
+- **Conflicts:** None known
+- **Dependencies:** Mod Settings, RED4ext, redscript
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Ambush frequency and difficulty are configurable.
+- **Performance:** None
+
+---
+
+## Install Order
+
+All mods are **Root**-category — enable Root Builder in MO2 before installing.
+
+1. Cyberware-EX
+2. Stealthrunner - Stealth Gameplay Expansion
+3. Damage Scaling and Balance
+4. Silent Silencers and Throwing Knives
+5. Convo Skill Check Scaling
+6. Combat Evolved
+7. They Will Remember
+8. Much Better Netrunning
+9. Dead Body Alert
+10. Immersive Stealth Weapon
+11. Immersive Healing
+12. Immersive Grenades
+13. Immersive Throwables
+14. Throwable Weapon Reworked
+15. Weapon Conditioning (Tier System Overhaul)
+16. Skillful
+17. Skillful Attributes
+18. Flesh and Chrome
+19. Watch Your Back
+
+**Notes:**
+- **Skillful** must be installed **before** Skillful Attributes (Skillful Attributes requires it)
+- **Weapon Conditioning** should be installed before Skillful/Skillful Attributes for best compatibility
+- **Flesh and Chrome** addons (Carry Overhaul) go after the main Flesh and Chrome install

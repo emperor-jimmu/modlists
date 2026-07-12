@@ -69,6 +69,54 @@ elements, metro/NCART, food/drink systems, and world reactivity.
 - **MO2 Notes:** Extract to game root. Configure via Mod Settings. Reload save after changes. Metro station terminals enabled by default; all others disabled.
 - **Performance:** None
 
+### Dark Future - Urban Survival Gameplay
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16300>
+- **Version:** 2.0.3
+- **Released:** 2026-01-19
+- **Summary:** Fully-featured survival system with Basic Needs (Hydration, Nutrition, Energy), Anxiety, Addiction, and more. Adds temperature effects, fast travel restrictions, and survival-lite mechanics that integrate with the existing game systems.
+- **Why:** Core survival layer that makes exploration, preparation, and resource management meaningful. Every food item, drink, and rest stop becomes a gameplay decision rather than set dressing. Complements Wannabe Edgerunner's Humanity system for a complete survival experience.
+- **Conflicts:** None known. Compatible with Wannabe Edgerunner, Cyberware-EX. Dark Future Core is a streamlined subset — use full Dark Future for this modlist.
+- **Dependencies:** ArchiveXL, Codeware, Input Loader, Mod Settings, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. For existing saves, run the setup command in CET console: `Game.DarkFutureSetup()`. Recommended: disable fast travel restrictions if using Limited Fast Travel.
+- **Performance:** Light (HUD widgets for needs tracking)
+
+### Eviction Notice - Story-Driven Rent System
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23187>
+- **Version:** 1.0.3
+- **Released:** 2025-08-08
+- **Summary:** Adds a fully-featured apartment rent system with recurring payments, late fees, and eviction consequences. Includes new characters to meet via text and lightweight quest content around housing.
+- **Why:** Transforms apartments from a one-time purchase into an ongoing financial decision. Makes earning eddies meaningful beyond gear upgrades and creates natural downtime between missions. Story-driven approach fits the "no cheat" philosophy.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, Codeware, Mod Settings, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Rent is due every 7 in-game days by default (configurable). Supports all owned apartments.
+- **Performance:** None
+
+### Anti-Theft Measures
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27229>
+- **Version:** 2.1.1
+- **Released:** 2026-01-31
+- **Summary:** Stealing vehicles requires breaching the security system. Vehicles may have deflating tires, jammed brakes, tracking devices, and other anti-theft countermeasures that activate if you fail the breach.
+- **Why:** Vanilla car theft is consequence-free — walk up to any vehicle and drive off. This adds a meaningful theft minigame and makes owned vehicles feel valuable. Pairs with Limited Fast Travel to make transportation choices matter.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, Codeware, Mod Settings, NightlyNow Core, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Optional Audioware recommended for audio feedback during breach attempts.
+- **Performance:** None
+
+### Immersive Road Crossing and Crashes
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26131>
+- **Version:** 1.4.2
+- **Released:** 2025-12-08
+- **Summary:** Increases traffic density and pedestrian responsiveness. Vehicles react more dynamically to gunfire, chases, and player actions. Pedestrians flee, dive for cover, and cross roads with realistic timing.
+- **Why:** Night City's streets feel empty and unresponsive in vanilla. This turns street shootouts and high-speed chases into chaotic, dynamic encounters where traffic and pedestrians react believably.
+- **Conflicts:** May conflict with other traffic-modifying mods
+- **Dependencies:** RED4ext, redscript, Mod Settings (optional)
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings if installed. Optional: install Impact Kill Looting Fix to avoid seeing loot despawn bugs from traffic accidents.
+- **Performance:** Light (additional NPC traffic calculations)
+
 ---
 
 ## Add-ons — NCI District Mods
@@ -104,3 +152,24 @@ These are companion mods for **Night City Interactions - Core** that add social 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19005>
 - **Summary:** Partner drinks at Buryger, Red Dirt, Kenmore Diner, the Market, PieZ, and Capitan Caliente.
 - **MO2 Notes:** Extract to game root. Requires NCI Core.
+
+---
+
+## Install Order
+
+Main section mods are **Root**-category — enable Root Builder in MO2 before installing. NCI district addons require NCI Core.
+
+1. Night City Interactions - Core
+2. NCI - Watson
+3. NCI - Westbrook
+4. NCI - Heywood
+5. NCI - Pacifica and Badlands
+6. NCI - Santo Domingo
+7. Metro System
+8. Wannabe Edgerunner
+9. Simple Flashlight
+10. Limited Fast Travel
+11. Dark Future - Urban Survival Gameplay
+12. Eviction Notice - Story-Driven Rent System
+13. Anti-Theft Measures
+14. Immersive Road Crossing and Crashes

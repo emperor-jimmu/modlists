@@ -107,6 +107,20 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
     - Install after the Story Quest Fixes version.
 - **Performance:** None
 
+### No More Limp Bollards (And Road Barriers)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26568>
+- **Version:** 1.0
+- **Released:** 2025-12-30
+- **Summary:** Modifies physics properties of roadside objects so bollards, railings, and barriers bolted to the ground no longer flop around like limp noodles. Temporary objects (construction fences, riot barricades) are left untouched.
+- **Why:** Persistent visual bug where fixed-in-place roadside objects have ragdoll physics, creating a junky, immersion-breaking look throughout Night City.
+- **Conflicts:** None known
+- **Dependencies:** None
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Simple archive install — no configuration needed.
+- **Performance:** None
+
+---
+
 ## Install Order
 
 1. Always First Equip
@@ -115,6 +129,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 4. Semimaru Quest Restart Bug Fix
 5. Immersion Patch -- Story Quest Fixes
 6. Immersion Patch -- Minor Activities Quest Fixes
+7. No More Limp Bollards (And Road Barriers)
 
 All are **Root**-category mods -- enable Root Builder in MO2 before installing.
 

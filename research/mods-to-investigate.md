@@ -76,5 +76,148 @@ Rejected mods stay documented -- never deleted.
 - **Cons:** Tagged as "Fair and balanced" but reduces loot availability — may conflict with economy balance from other mods.
 - **Alternatives:** Smarter Scrapper (auto-disassemble junk), vanilla loot
 - **Notes:** v2.1.1, by djkovrik (same author as many other mods in this list). Pairs with Smarter Scrapper for a complete loot cleanup solution. Evaluate whether reduced loot enhances RPG depth or creates scarcity frustration.
+
+---
+
+### Dark Future - Urban Survival Gameplay
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16300>
+- **Status:** approved
+- **Category:** Living World (06)
+- **Install:** Survival-lite needs system (Hydration, Nutrition, Energy, Anxiety). See `modlist/06-living-world.md`.
+
+### Flesh and Chrome
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27988>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Fatigue/recovery stamina expansion. See `modlist/05-gameplay-overhaul.md`. Optional addon: Carry Overhaul (#28375).
+
+### Eviction Notice - Story-Driven Rent System
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23187>
+- **Status:** approved
+- **Category:** Living World (06)
+- **Install:** Apartment rent system with characters and quests. See `modlist/06-living-world.md`.
+
+### Combat Evolved
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/29125>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Comprehensive enemy AI overhaul. See `modlist/05-gameplay-overhaul.md`.
+
+### Immersive Fixers
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15460>
+- **Status:** approved
+- **Category:** Quests & Stories (07)
+- **Install:** Makes fixer introductions less abrupt. See `modlist/07-quests-and-stories.md`.
+
+### They Will Remember
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19747>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Gang reputation/retaliation/disguise system. See `modlist/05-gameplay-overhaul.md`.
+
+### Much Better Netrunning
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27237>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Dangerous/rewarding netrunning overhaul. See `modlist/05-gameplay-overhaul.md`.
+
+### Dead Body Alert
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26746>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Enemies react to dead bodies. See `modlist/05-gameplay-overhaul.md`.
+
+### Immersive Stealth Weapon
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27149>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Strategic stealth combat overhaul. See `modlist/05-gameplay-overhaul.md`.
+
+### Immersive Healing
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26281>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Item-based healing overhaul. See `modlist/05-gameplay-overhaul.md`.
+
+### Immersive Grenades
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25334>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Individual grenade items. See `modlist/05-gameplay-overhaul.md`.
+
+### Immersive Throwables
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25074>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Thrown weapons drop at impact location. See `modlist/05-gameplay-overhaul.md`.
+
+### Throwable Weapon Reworked
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27255>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Stamina-based throwable recovery. See `modlist/05-gameplay-overhaul.md`.
+
+### Anti-Theft Measures
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27229>
+- **Status:** approved
+- **Category:** Living World (06)
+- **Install:** Vehicle security breach system. See `modlist/06-living-world.md`.
+
+### Weapon Conditioning (Tier System Overhaul)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10479>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Weapon degradation and repair. See `modlist/05-gameplay-overhaul.md`.
+
+### Skillful Attributes
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9281>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Attribute progression via skill use. See `modlist/05-gameplay-overhaul.md`. Requires Skillful (#9309).
+
+### Skillful
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9309>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** EXP multipliers and perk/cyberware milestones. See `modlist/05-gameplay-overhaul.md`.
+
+### Watch Your Back
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27792>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Ambusher encounter system. See `modlist/05-gameplay-overhaul.md`.
+
+### Immersive Road Crossing and Crashes
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26131>
+- **Status:** approved
+- **Category:** Living World (06)
+- **Install:** Traffic/pedestrian behavior overhaul. See `modlist/06-living-world.md`.
+
+### No More Limp Bollards (And Road Barriers)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26568>
+- **Status:** approved
+- **Category:** Bug Fixes (03)
+- **Install:** Physics fix for roadside objects. See `modlist/03-bug-fixes.md`.
+
 ---
 *Mods will be added here as they are discovered on Nexus Mods.*
