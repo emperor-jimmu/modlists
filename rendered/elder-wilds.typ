@@ -632,6 +632,12 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
   [Leveled-list crash protection.],
   [[Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076)],
   [Prevents explosion-force spells from launching objects into camera.],
+  [[Beard Mask Fix](https://www.nexusmods.com/skyrimspecialedition/mods/80232)],
+  [Beards use slot 44 — prevents mask clipping. SKSE plugin.],
+  [[Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)],
+  [Utility SKSE plugin.],
+  [[Description Framework Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139077)],
+  [Centralized patch collection for the Description Framework.],
   [[Weapons Armor Clothing and Clutter Fixes (WACCF)](https://www.nexusmods.com/skyrimspecialedition/mods/18994)],
   [Broad record fix for weapon/armor/clothing/clutter records. High compatibility debt — test carefully with the crafting and artifact stack. Optional — skip if conflicts outweigh gains.],
 )
@@ -1582,6 +1588,10 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
   [Higher-detail bridge mesh replacers. Mesh-only, no ESP.],
   [[Valhalla Bridges - Addons Patches and Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/157804)],
   [Compatibility patches and addon coverage for Valhalla Bridges. Install after base.],
+  [[Improved Closefaced Helmets](https://www.nexusmods.com/skyrimspecialedition/mods/824)],
+  [Mesh/texture overhaul for closed-face helmets.],
+  [[Improved Closefaced Helmets - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/146820)],
+  [SkyPatched variant; preferred over the base ICH for compatibility.],
   [[Ivy - Gates of Riverwood](https://www.nexusmods.com/skyrimspecialedition/mods/138864)],
   [Ivy-covered gate mesh replacer at Riverwood entrance. BOS-based, optional cosmetic.],
   [[Better Wine Labels - Vanilla and LotD](https://www.nexusmods.com/skyrimspecialedition/mods/34698)],
@@ -1656,7 +1666,7 @@ All mods in this section belong to the `Graphics - Lighting` MO2 separator unles
 
 Build lighting as a coherent layer supporting the shader-first visual direction, stronger world scale, and third-person readability. Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route. The baseline is a Community Shaders-native stack with much lower patch burden than the LUX family.
 
-**⏱ Install order:** SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → DIAL → Embers XD → Luminous Atronachs.
+**⏱ Install order:** SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → Helios → Embers XD → Luminous Atronachs.
 
 === Core CS-Native Stack
 <lighting-core-cs-native-stack>
@@ -1698,9 +1708,9 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
   [[Based Lighting Configs](https://www.nexusmods.com/skyrimspecialedition/mods/136870)],
   [Presets],
   [Standardizes tone/behavior across interiors/exteriors.],
-  [[Dynamic Interior Ambient Lighting (DIAL)](https://www.nexusmods.com/skyrimspecialedition/mods/149920)],
+  [[Helios](https://www.nexusmods.com/skyrimspecialedition/mods/181533)],
   [Ambient],
-  [Time-of-day and location-based ambient adjustment.],
+  [Dynamic auto-ambient adjustment for interiors and exteriors via Community Shaders.],
 )
 
 === Fire & Effects
@@ -2632,6 +2642,9 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
   [[Beards of Power](https://www.nexusmods.com/skyrimspecialedition/mods/42635)],
   [Alternative],
   [High-fidelity beard meshes and textures. Adds variety over vanilla.],
+  [[BnP - Teeth Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/84288)],
+  [Alternative],
+  [Higher-quality teeth meshes/textures. Complements BnP skin stack.],
   [[SG Female Eyebrows](https://www.nexusmods.com/skyrimspecialedition/mods/25890) + [Improved](https://www.nexusmods.com/skyrimspecialedition/mods/93266)],
   [Alternative],
   [Higher-fidelity female eyebrow shapes. Use Improved variant.],
@@ -4466,6 +4479,7 @@ All mods in this section belong to one of the three third-person separators as n
 - **Customizable Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12201)) — Leaner fallback.
 - **True Directional Movement** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51614)) — Governs movement/targeting, not the camera framework itself.
 - **Improved Camera SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93962)) — Perspective support, not main third-person framework.
+- **Modern Combat Gamepad Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123409)) — Gamepad-centric combat controls integration. Research before adding — evaluate overlap with TDM and the combat stack.
 
 === Risks & Compatibility
 <third-person-gameplay-risks--compatibility>
@@ -5555,6 +5569,20 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 - A restrained overhaul can undershoot if too many adjacent systems also land on conservative choices.
 - Treat large food-and-cooking coverage as a deliberate expansion choice, not something hitchhiking into the alchemy baseline.
 
+==== Flavor Additions
+<crafting--economy-flavor-additions>
+
+#table(
+  columns: 3,
+  fill: (luma(240), none),
+  [*Mod*],
+  [*Dial*],
+  [*Notes*],
+  [[Alchemy Requires Bottles](https://www.nexusmods.com/skyrimspecialedition/mods/137443)],
+  [all],
+  [Empty potions at alchemy lab. Adds bottle-crafting step. Tentative — evaluate gameplay friction.],
+)
+
 ---
 
 == Cooking Systems → separator: Expanded Systems - Crafting & Economy
@@ -6186,6 +6214,246 @@ The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue
 - Romance dialogue can conflict with custom-voiced follower mods from → `NPCs` that replace the same NPC's voice.
 - Romance quest mods add non-trivial content — review against → `World Content` to avoid doubling up on a single NPC's quest line.
 - Marriage events triggered by `To Have And To Hold` can fire during unintended moments; check MCM for event timing/cooldown settings.
+
+
+
+
+// -- guide/modlist-design-philosophy.md --
+= World Progression Philosophy
+<world-progression-philosophy>
+
+> **Adopted Combination:** `\#1` — **Static with Hard Threat** (see [Suggested Combinations](suggested-combinations)). The static-with-threat dial is the base; the "Living the World" pillar is layered on top — the home is a real anchor (survival warmth, food, rest, family), and the player quests when they want, not on the main quest's clock.
+
+This document owns the design dial that connects four concerns: **leveling**, **encounter zones**, **loot distribution**, and **difficulty**. They are not independent picks — change one and the other three shift. The modlist's section files cite this document when they need to justify a concrete pick.
+
+No concrete mod picks live here. The owning sections (notably → [Crafting & Economy](modlist-expanded-crafting.md) for loot distribution, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for encounter zones and difficulty) make the final call. This document presents the three styles, analyzes them across shared axes, and ends with **suggested combinations** for different list identities — the curator picks the combination that matches the list's intent.
+
+**Tagging convention:** Mods in the section files are tagged in a `Dial` column with one or more combination codes (`\#1`, `\#2`, `\#3`, `\#4`, `all`, `none`). `\#1` is the adopted combination for Elder Wilds; mods tagged `\#1` (or `all`) are on-dial, others are off-dial for the list's intent and need explicit justification.
+
+---
+
+== The Three Styles
+<world-progression-philosophy-the-three-styles>
+
+**Deleveled** — World no longer scales to the player. A Bandit Chief is dangerous at level 1 and level 50; loot tables are decoupled from player level so a high-tier weapon can be found in a low-level dungeon. `MorrowLoot Ultimate` is the canonical implementation. `Open World Loot` (in its "decapitate leveled lists" mode) sits in this camp.
+
+**Static Leveling** — World is fixed but the loot tables are hand-curated rather than the messy vanilla lists. Top-tier gear is rare, but it isn't gated behind specific zones — it's gated behind a curated drop table that the player learns over time. `Open World Loot` (default philosophy) is the closest popular implementation.
+
+**Vanilla With Curated Lists** — Keep leveled lists essentially as Bethesda shipped them, but curate content additions (new weapons, armors, jewelry) to fit the existing economy rather than inflating it. The base game is the default; new items plug in cleanly. `Trade and Barter` style interventions, content packs that match vanilla tier-spread, light Rarity-style interference at the edges.
+
+---
+
+== The Interlocked Dial
+<world-progression-philosophy-the-interlocked-dial>
+
+The four concerns are coupled, and the dial really has **six knobs** — the four named plus the **experience mod** (how fast the player levels and what skill-ups do) and the **perks overhaul** (what perks do and how perk points are spent). All six need to sing together or the list feels incoherent:
+
+- **Leveling style** (deleveled / static / vanilla) — what gear the world offers at what level.
+- **Encounter zones** — what threat the world offers at what location.
+- **Loot distribution** — what the player can actually pick up off that threat.
+- **Difficulty** — how hard any given encounter feels.
+- **Experience mod** — how fast the player accumulates levels and skill-ups relative to those four knobs.
+- **Perks overhaul** — what the player can build into, which determines whether a given dial feels like a wall or a puzzle.
+
+Common failure patterns when the six knobs don't sing:
+
+- **Deleveled loot + encounter-zone overhaul** stacks gating. The world closes in fast; progression has to come from skill, knowledge, and LoTD-style meta-progression, not from better gear.
+- **Vanilla loot + no encounter overhaul** produces the canonical problem: by level 30, glass and ebony are everywhere and nothing feels like a reward.
+- **Static loot + encounter-zone overhaul** is the most common "modern list" dial — it gates the *threat* without gating the *gear*, so the player feels strong against a curated threat ladder.
+- **Deleveled loot + survival framework** can overshoot into punitive early-game, especially in cold biomes where food and warmth are themselves scarce.
+- **Heavy perks overhaul + fast XP** floods the player with build options before they've explored the world — the list feels like a build simulator rather than a world.
+- **Vanilla perks + slow XP + deleveled loot** starves the player of both gear and build options; every fight is a coin-flip.
+- **Heavy perks overhaul + deleveled loot** is actually a *natural* pairing: the player can build into a counter for any encounter the world throws at them, which softens delevel's flat-late-game problem and gives the perks tree real purpose.
+
+A list that locks a strong position on one or two knobs without thinking through the other four will feel incoherent. This document is the place to think it through.
+
+---
+
+== Deleveled
+<world-progression-philosophy-deleveled>
+
+=== Power Fantasy
+<world-progression-philosophy-power-fantasy>
+
+Late-game power fantasy is **weaker**: the world never feels "below you" because the world is the world. Early-game power fantasy is **stronger in a punishing way**: nothing hands you gear, you have to earn every step. For a list that wants the player to feel small and threatened, this is the right dial. For a list that wants the player to feel like they're growing into a legend, it can feel like the dial never moves.
+
+=== Longterm Play
+<world-progression-philosophy-longterm-play>
+
+**Excellent for replayability** — knowing where the best gear is, or where the hardest fights are, doesn't trivialize the playthrough because the player level doesn't unlock anything. A new character in six months has the same discovery space. **Weak for in-list long-term progression** — if the player plans to spend 200+ hours in a single character, the lack of a power curve can feel flat late.
+
+=== Exploration & Discovery
+<world-progression-philosophy-exploration--discovery>
+
+**Excellent incentive structure.** "I should go everywhere, because anything I find could be a game-changer." Pairs well with `Legacy of the Dragonborn` (museum-as-reward) and big-world lists. A high-tier weapon found at level 5 is a story, not a balance violation.
+
+=== NPC & Encounter Balance
+<world-progression-philosophy-npc--encounter-balance>
+
+NPCs stay dangerous; the curve is flat. Pairs cleanly with encounter-zone overhauls that *add* a curve (so the world still has a sense of progression through the map even if the player's gear doesn't track). The risk is the **over-gated trap**: delevel + encounter overhaul + harsh survival + low early-game loot = the first ten levels feel like a wall. `Survival & Combat` already flags this combination as the "overshoot from moody into over-gated" pattern.
+
+=== Modlist Synergy
+<world-progression-philosophy-modlist-synergy>
+
+**The hardest style to balance with content-heavy modlists.** Every new leveled-list mod (every new weapon, armor, jewelry, alchemy ingredient) has to be tested against the deleveled tables — does this new sword break the world at level 5? Does this new jewelry inflate the merchant economy? The more mods in the list, the more curation work. Lists that are content-rich (like this one, with Heavy Armory, Immersive Armors, Immersive Jewelry, Narrative Loot, C.O.I.N., etc.) pay a high cost for running deleveled.
+
+=== Risks
+<world-progression-philosophy-risks>
+
+- Punitive early-game, especially combined with survival frameworks.
+- Content-mod curation overhead scales with modlist size.
+- Late-game power-fantasy curve can feel flat.
+- Easy to over-gate when combined with encounter-zone overhauls.
+
+=== Experience & Perks
+<world-progression-philosophy-experience--perks>
+
+**Pairs naturally with a heavy perks overhaul and slow-to-moderate XP.** Without leveled lists to gate gear, the player's power growth comes almost entirely from perks and skill-ups, so a rich perks tree carries real weight and a fast-XP setup would front-load that growth. A heavy-perks / slow-XP / deleveled-loot triple is the cleanest expression of the "earn every step" fantasy. Vanilla perks with fast XP undermines this — the player levels up faster than they can spend points and the world still doesn't give them anything.
+
+---
+
+== Static Leveling
+<world-progression-philosophy-static-leveling>
+
+=== Power Fantasy
+<world-progression-philosophy-power-fantasy-2>
+
+**Balanced.** The player grows into a legend against a threat that also has structure. Late-game still feels earned because curated late-game loot is meaningfully better than curated early-game loot, but a high-level player isn't drowning in game-breaking gear. For a list that wants both the growth fantasy and the threat, this is the natural dial.
+
+=== Longterm Play
+<world-progression-philosophy-longterm-play-2>
+
+**Strong for in-list long-term progression** — the player has a 100-hour power curve, and curated loot tables mean the curve is well-paced. **Acceptable for replayability** — a new character will find roughly the same gear at the same general progression points, but the discovery of *where* is still open. LoTD-style meta-progression carries replayability.
+
+=== Exploration & Discovery
+<world-progression-philosophy-exploration--discovery-2>
+
+**Incentive structure is moderate.** "Go everywhere to find good gear" is still true, but the curve is shallower than deleveled because the player knows tier-1 zones won't drop tier-5 items. Pairs well with maps and markers, with the museum, and with curated content packs that respect the tier spread.
+
+=== NPC & Encounter Balance
+<world-progression-philosophy-npc--encounter-balance-2>
+
+**The cleanest combination with encounter-zone overhauls.** Encounter zones add a *spatial* progression (Whiterun hold is easier than the Rift, the Rift is easier than Skrim wide); static loot adds a *temporal* progression (early-game player has starter gear, late-game player has curated late-tier gear). The two dials don't fight.
+
+=== Modlist Synergy
+<world-progression-philosophy-modlist-synergy-2>
+
+**The most content-mod-friendly style.** New weapons, armors, jewelry, and ingredients slot into curated tier slots. A new weapon mod that adds ten glass-tier swords integrates naturally; the same mod in a deleveled list has to be tested for "does this break level-5 progression." Lists that are content-rich benefit from static's lower curation overhead.
+
+=== Risks
+<world-progression-philosophy-risks-2>
+
+- The vanilla-curated-lists approach can feel like "vanilla with extra steps" if the curation isn't visibly better than Bethesda's default tables.
+- Late-game still risks the glass/ebony-everywhere problem if the curator isn't careful with the tier-4 and tier-5 entries.
+- Less distinctive than deleveled — the dial is "more polished" not "different feel."
+
+=== Experience & Perks
+<world-progression-philosophy-experience--perks-2>
+
+Pairs naturally with a heavy perks overhaul and a power-fantasy XP curve (high level cap, rewarding quest/discovery, no skill grinding). The player levels up faster than vanilla through quests and exploration while the static threat world keeps every level meaningful.
+
+---
+
+== Vanilla With Curated Lists
+<world-progression-philosophy-vanilla-with-curated-lists>
+
+=== Power Fantasy
+<world-progression-philosophy-power-fantasy-3>
+
+**Closest to Bethesda's intent.** The player grows into a legend against a world that grows with them. Late-game the world hands you legendary glass and ebony because you earned it. For a list that wants to honor the original game and add modern systems on top, this is the right dial.
+
+=== Longterm Play
+<world-progression-philosophy-longterm-play-3>
+
+**Strong for in-list long-term progression** (same as static). **Weaker for replayability** — a new character finds the same gear in the same places at the same levels. The strongest replayability lever is `Legacy of the Dragonborn` (different museum-fill order, different artifact quest chains, different pacing) rather than the loot dial itself.
+
+=== Exploration & Discovery
+<world-progression-philosophy-exploration--discovery-3>
+
+**Weakest incentive structure of the three styles.** The player learns the loot ladder quickly and the motivation to "go everywhere" weakens. Lists that want exploration incentive need to add it through other levers: `Legacy of the Dragonborn` museum-fill, Evolving Locations content, hand-placed world encounters, `Interesting NPCs` style content, etc.
+
+=== NPC & Encounter Balance
+<world-progression-philosophy-npc--encounter-balance-3>
+
+**Pairs cleanly with the least intervention.** Vanilla encounter zones + vanilla loot + light difficulty tuning produces a coherent, low-curation list. Adding heavy encounter-zone overhauls to vanilla loot often overshoots (the world gates but the gear doesn't, producing late-game "I'm level 50 in glass armor and a Bandit Chief one-shots me" frustration).
+
+=== Modlist Synergy
+<world-progression-philosophy-modlist-synergy-3>
+
+**The lowest curation overhead.** New content packs that respect vanilla tier-spread integrate trivially. The cost is that the list feels like "vanilla plus mods" rather than "a designed list."
+
+=== Risks
+<world-progression-philosophy-risks-3>
+
+- Late-game loot inflation is the canonical failure mode of this style.
+- Exploration incentive is weak; other systems have to carry it.
+- Distinctiveness depends entirely on what you put on top of vanilla (art, content, mechanics) — the loot dial alone doesn't sell a list.
+- Easy to under-tune and end up with the unmodded game's pacing problems.
+
+=== Experience & Perks
+<world-progression-philosophy-experience--perks-3>
+
+**Pairs naturally with vanilla or light perks and a moderate-to-fast XP curve.** The Bethesda-style growth fantasy works best when the player is unlocking perks at the rate Bethesda intended — fast enough to feel the build opening up, slow enough that the unlock matters. A heavy perks overhaul here can work, but the dial is doing less of the lifting, so the perks tree has to be the thing that makes the playthrough feel different. Slow XP with vanilla perks and vanilla loot produces a list that feels underpowered even at level 30 — the most common "is this modlist even on?" failure mode for this style.
+
+---
+
+== Suggested Combinations
+<world-progression-philosophy-suggested-combinations>
+
+These are **suggestions for different list identities**, not a ranking. The owning sections still pick the concrete mods; the combinations just steer those picks in compatible directions. The curator picks the combination that matches the list's intent.
+
+=== 1. "Big, Dark, Awe-Inspiring World" — Deleveled Or Static With Hard Threat
+<world-progression-philosophy-1-big-dark-awe-inspiring-world-deleveled-or-static-with-hard-threat>
+
+**Suggested dial:** Static leveling (preferred) or deleveled (committed), encounter-zone overhaul (`Arena` baseline or RiS Encounter Zones), harsher difficulty, deliberate loot scarcity at tier 1-2, **heavy perks overhaul (Simonrim-class depth) with slow-to-moderate XP** so the player's power growth comes from build choices against a flat world, not from gear inflation. Survival framework (cold, hunger, fatigue, disease) is on-dial — it makes the home a real anchor.
+
+**What it serves:** Exploration that makes Skyrim feel vast and threatening. The player feels small, the world feels dangerous, gear feels earned, and the perks tree is the primary expression of "I'm getting stronger." Pairs naturally with `Legacy of the Dragonborn` because the museum becomes the player's long-term reward ladder. The "Living the World" layer sits on top: a player home with a family, choosing when to quest, living a life in between the dragon-born moments.
+
+**Trade-offs:** High curation overhead for content mods if deleveled. Risk of over-gating early-game if survival and encounter overhaul stack. Late-game power curve depends heavily on the perks tree carrying it; a shallow perks overhaul breaks the fantasy.
+
+**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for the loot-distribution mod, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for encounter-zone and difficulty mods.
+
+=== 2. "Living The World / Museum-And-Collection" — Vanilla With Curated Lists
+<world-progression-philosophy-2-living-the-world-museum-and-collection-vanilla-with-curated-lists>
+
+**Suggested dial:** Vanilla with curated lists, light or no encounter-zone intervention, balanced difficulty (Simply Balanced tier), LoTD-anchored progression carrying the long-term reward ladder, **moderate perks overhaul (Path of the Berserker or Adamant tier) with vanilla-or-slightly-slow XP** to preserve Bethesda's growth pacing while giving the build a little more shape.
+
+**What it serves:** A list that wants to add modern systems and lots of new content on top of a Skyrim that still feels like Skyrim. The museum is the meta-progression; the loot dial is "vanilla with polish, not overhaul." Honors Bethesda's pacing intent while modernizing everything around it.
+
+**Trade-offs:** Late-game loot inflation is the canonical failure mode — mitigation is required curation of any new gear mods. Exploration incentive is weak; LoTD and content mods have to carry it. Distinctiveness depends on what you put on top. A heavy perks overhaul (Simonrim) here can overpower the "Skyrim that still feels like Skyrim" intent — the perks tree starts to feel like it's from a different game.
+
+**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for trade-and-barter-style interventions and content-mod curation rules, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for minimal encounter-zone intervention and balanced difficulty.
+
+=== 3. "Power Fantasy" — Vanilla Or Static, Lenient
+<world-progression-philosophy-3-power-fantasy-vanilla-or-static-lenient>
+
+**Suggested dial:** Vanilla with curated lists (preferred) or static, no encounter-zone overhaul, lenient difficulty, **vanilla or light perks with vanilla-to-fast XP** so the growth fantasy matches Bethesda's intent. Late-game gear arrives as Bethesda intended; the player becomes a legend.
+
+**What it serves:** A list that wants the player to feel like a growing hero, not a survivor. Pairs well with the "Dragonborn quest as the spine" playstyle — if the user is going to play the main quest, the loot dial should support that arc.
+
+**Trade-offs:** Same late-game inflation risk as combination 2. Risk of feeling like an unmodded game in the first 20 levels. Exploration incentive is the weakest of the three styles; needs other systems to compensate. A heavy perks overhaul contradicts the "Bethesda's growth pacing" intent and tends to overshoot into a build-simulator feel by mid-game.
+
+**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for trade-and-barter and minimal loot intervention, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for the lenient difficulty pick and minimal encounter-zone changes.
+
+=== 4. "Longterm Replayability" — Static, Moderate Gating, Tunable Difficulty
+<world-progression-philosophy-4-longterm-replayability-static-moderate-gating-tunable-difficulty>
+
+**Suggested dial:** Static leveling, moderate encounter-zone intervention (Arena tier, not harsher), difficulty mod with tuning knobs (Simply Balanced, not Blade and Blunt), curated content packs that respect the tier spread, **moderate-to-heavy perks overhaul (Path of the Berserker or Simonrim tier) with moderate XP** so a new character has a fresh build-puzzle to work through every restart.
+
+**What it serves:** A list the curator wants to come back to in six months and start fresh. Static gives the new character a fresh-but-familiar power curve; moderate encounter-zone intervention gives the world structure without punishing early exploration; a tunable difficulty mod lets the new character be tuned up or down as the player prefers; a moderate-to-heavy perks overhaul means each new character has a different build to commit to.
+
+**Trade-offs:** Static-with-curated-lists is the most balanced but the least distinctive dial — the list has to differentiate through art, content, and mechanics. The "vanilla-with-extra-steps" risk is real.
+
+**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for the static-with-curated-lists implementation (Open World Loot default or hand-rolled curated leveled lists), → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for moderate encounter-zone changes and tunable difficulty.
+
+---
+
+== How To Use This Document
+<world-progression-philosophy-how-to-use-this-document>
+
+When a section file picks a mod that touches the loot / encounter / difficulty / XP / perks dial, it should briefly note which **suggested combination** the pick serves. Example: "Picking `Open World Loot` (curated default) supports combination 1 (Big, Dark, World) or 4 (Longterm Replayability) and is not the right pick for combination 3 (Power Fantasy / vanilla-loot)."
+
+When two sections make picks that would push the list toward different combinations, the conflict is a signal to revisit this document and pick the combination explicitly. The document does not own the final answer — it owns the framework for making the answer coherent. The owning sections for the six knobs are: → [Crafting & Economy](modlist-expanded-crafting.md) (loot distribution), → [Survival, Difficulty, and Balance](modlist-survival-combat.md) (encounter zones + difficulty), → [Magic & Perks](modlist-expanded-magic.md) (perks overhaul + XP mod), with → [Character & Progression](modlist-expanded-character.md) holding the cross-cutting growth philosophy.
 
 
 
@@ -7025,6 +7293,18 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
   [Brawling - No Hitting Bystanders],
   [],
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116941)],
+  [Skyshards - Tweaks and ESLed],
+  [Collectible shard system tweaks and ESL conversion.],
+  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115820)],
+  [Skyshards and Immersive interactions FLM],
+  [First/Last mod patch for Skyshards + Immersive Interactions.],
+  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68072)],
+  [The Dragonborn's Bestiary - Lively's Alchemy Addon],
+  [Alchemy recipe data addon for the Bestiary book.],
+  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135010)],
+  [The Dragonborn's Fishiary - Bestiary Addon],
+  [Fishing data addon for the Fishiary book.],
+  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134739)],
 )
 
 === Alternatives
@@ -7108,6 +7388,86 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
   [[Reliquary of Myth - Artifacts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/31612)],
   [Artifact overhaul granting unique powers to daedric and quest rewards.],
   [],
+)
+
+==== Armor Set Additions
+<world-content-armor-set-additions>
+
+#table(
+  columns: 3,
+  fill: (luma(240), none),
+  [*Mod*],
+  [*Description*],
+  [*Notes*],
+  [[Armor Variants Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/34100)],
+  [Visual variants for every vanilla armor set.],
+  [Has CBBE patch. Fits medieval-Nordic aesthetic.],
+  [[Ufok's Reinforced Leather Armour](https://www.nexusmods.com/skyrimspecialedition/mods/183824)],
+  [D&D-inspired light armor.],
+  [3BA, CBBE, UBE, HIMBO, Vanilla. ESL, craftable, Skypatcher integration.],
+  [[Tera Armors Collection](https://www.nexusmods.com/skyrimspecialedition/mods/9651)],
+  [Armor collection ported from TERA MMO.],
+  [CBBE. Evaluate visual fit.],
+  [[Lustmord Vampire Armor - SSE CBBE Bodyslide](https://www.nexusmods.com/skyrimspecialedition/mods/16676)],
+  [CBBE 3BA vampire armor with physics.],
+  [14K endorsements.],
+  [[Wilderness Witch Outfit](https://www.nexusmods.com/skyrimspecialedition/mods/40963)],
+  [CBBE witch/mage outfit.],
+  [Fits grim-dark aesthetic.],
+  [[Dark Mage of Plegia - hdt SMP (CBBE 3BA)](https://www.nexusmods.com/skyrimspecialedition/mods/84554)],
+  [CBBE 3BA SMP dark mage outfit.],
+  [9K endorsements.],
+  [[Dremora Markynaz Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79753)],
+  [Daedric-themed armor set.],
+  [Requires HDT-SMP. HIMBO refit ([125150](https://www.nexusmods.com/skyrimspecialedition/mods/125150)), CBBE ([79968](https://www.nexusmods.com/skyrimspecialedition/mods/79968)).],
+  [[Silver Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79088)],
+  [Silver-themed armor set.],
+  [CBBE ([79319](https://www.nexusmods.com/skyrimspecialedition/mods/79319)), HIMBO ([87675](https://www.nexusmods.com/skyrimspecialedition/mods/87675)), HDT-SMP patch ([79255](https://www.nexusmods.com/skyrimspecialedition/mods/79255)).],
+  [[Colovian Prince Set](https://www.nexusmods.com/skyrimspecialedition/mods/79894)],
+  [Colovian-themed armor set.],
+  [],
+  [[Lifesworn Vestiges -- Champion of Arkay Armor](https://www.nexusmods.com/skyrimspecialedition/mods/136837)],
+  [Arkay-themed armor with optional SMP.],
+  [3BA/HIMBO ([175271](https://www.nexusmods.com/skyrimspecialedition/mods/175271)).],
+  [[Traveling Mage HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/69394)],
+  [Mage travel outfit with SMP.],
+  [CBBE 3BA/HIMBO ([69407](https://www.nexusmods.com/skyrimspecialedition/mods/69407)).],
+  [[JS Helm of Yngol SE](https://www.nexusmods.com/skyrimspecialedition/mods/51346)],
+  [Unique helm mesh/texture replacer.],
+  [],
+  [[Wind Ruler Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/60842)],
+  [Wind-themed armor set.],
+  [HDT-SMP ([63036](https://www.nexusmods.com/skyrimspecialedition/mods/63036)), HIMBO ([106036](https://www.nexusmods.com/skyrimspecialedition/mods/106036)).],
+  [[Imperial Guard Centurion Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/50410)],
+  [Imperial guard armor set.],
+  [3BA/HIMBO ([178841](https://www.nexusmods.com/skyrimspecialedition/mods/178841)), SPID ([123487](https://www.nexusmods.com/skyrimspecialedition/mods/123487)).],
+  [[Fur-lined Steel Armor](https://www.nexusmods.com/skyrimspecialedition/mods/106305)],
+  [Fur-trimmed steel armor.],
+  [],
+  [[Travelling Priest Robes](https://www.nexusmods.com/skyrimspecialedition/mods/118327)],
+  [Priest robe outfit. HIMBO/CBBE.],
+  [SPID distribution ([118464](https://www.nexusmods.com/skyrimspecialedition/mods/118464)).],
+  [[Nibenean Armors and Outfit SE](https://www.nexusmods.com/skyrimspecialedition/mods/50785)],
+  [Nibenese-style armor/outfits.],
+  [SPID ([123477](https://www.nexusmods.com/skyrimspecialedition/mods/123477)), male HIMBO refit.],
+  [[Templar Assassin Armor](https://www.nexusmods.com/skyrimspecialedition/mods/135547)],
+  [Assassin-themed armor. 3BA/BHUNP/CBBE/UNP.],
+  [HDT-SMP patch ([135910](https://www.nexusmods.com/skyrimspecialedition/mods/135910)).],
+  [[Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/69047)],
+  [Unique Dwemer face visor. Xtudo version.],
+  [],
+  [[Legendary Alpha Shields](https://www.nexusmods.com/skyrimspecialedition/mods/49387)],
+  [Shield variety pack.],
+  [SPID for NPCs ([80041](https://www.nexusmods.com/skyrimspecialedition/mods/80041)), Xtudo patches ([79895](https://www.nexusmods.com/skyrimspecialedition/mods/79895)).],
+  [[Legendary Alpha Shields 2](https://www.nexusmods.com/skyrimspecialedition/mods/79264)],
+  [Additional shield variety pack.],
+  [SPID for NPCs ([80110](https://www.nexusmods.com/skyrimspecialedition/mods/80110)), Xtudo patches ([79617](https://www.nexusmods.com/skyrimspecialedition/mods/79617)).],
+  [[JS Unique Utopia SE - Rings](https://www.nexusmods.com/skyrimspecialedition/mods/102226)],
+  [Unique ring mesh/texture replacer.],
+  [],
+  [[Land of Vominheim - Unique Rewards by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/102839)],
+  [Unique rewards patch for Land of Vominheim.],
+  [Install if Vominheim is adopted.],
 )
 
 ---
@@ -7247,6 +7607,9 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
   [Infiltration - Quest Expansion],
   [Thieves Guild / Skyrim quest expansion.],
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114054)],
+  [Caught Red Handed - Quest Expansion],
+  [Riften jail quest expansion.],
+  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65708)],
   [The Taste of Death - Quest Addon],
   [Namira quest expansion.],
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123173)],
@@ -7302,6 +7665,8 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2057)],
   [The Gray Cowl of Nocturnal - 10th Anniversary],
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141327)],
+  [[The Gray Cowl of Nocturnal - Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/125416)],
+  [Gameplay tweaks for Gray Cowl of Nocturnal. Install alongside the base mod.],
   [The Isle Of Valefrost SE],
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/103215)],
 )
@@ -7486,6 +7851,12 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
   [[Pride of Skyrim — AIO Male HPH Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/48904)],
   [Alternative],
   [~400 male NPCs with High Poly Head. Broad coverage.],
+  [[BeastHHBB](https://www.nexusmods.com/skyrimspecialedition/mods/38480)],
+  [Alternative],
+  [Khajiit and Argonian NPC/PC replacer — player character, NPCs, adoptable children, Interesting NPCs integration, fangs.],
+  [[Bijin Wives SE](https://www.nexusmods.com/skyrimspecialedition/mods/11247)],
+  [Alternative],
+  [Female NPC replacer for wives and selected NPCs.],
 )
 
 === Overwrite Order
@@ -8548,6 +8919,8 @@ Treated as a foundational content pillar for the final list, not a late optional
 - **Stones of Barenziah Quest Markers** — Dedicated display for completed crown.
 - **Jewels of the Reach** — Additional gemstone collectible.
 - **Dawnguard Treasure Map** — Feeds collection-driven exploration loop.
+- **Legacy of the Dragonborn BadGremlins Collection** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15092)) — Gremlin-themed collectible display items for the museum.
+- **Fate Cards New Style - 2023 Remaster** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104676)) — Alternate fate card artwork and design. Alternative to Fate Cards Remade (76418).
 
 === Artifact Enhancement
 <legacy-of-the-dragonborn-artifact-enhancement>
@@ -8613,385 +8986,6 @@ Treated as a foundational content pillar for the final list, not a late optional
 - Museum-first progression changes perceived value of loot and unique-item mods.
 - Quest mods with strong LoTD integration may co-determine the quest mod stack.
 - Third-party display patches for pre-2023 quest mods may not be maintained against LoTD v6.
-
-
-
-
-// -- guide/modlist-design-philosophy.md --
-= World Progression Philosophy
-<world-progression-philosophy>
-
-> **Adopted Combination:** `\#1` — **Static with Hard Threat** (see [Suggested Combinations](suggested-combinations)). The static-with-threat dial is the base; the "Living the World" pillar is layered on top — the home is a real anchor (survival warmth, food, rest, family), and the player quests when they want, not on the main quest's clock.
-
-This document owns the design dial that connects four concerns: **leveling**, **encounter zones**, **loot distribution**, and **difficulty**. They are not independent picks — change one and the other three shift. The modlist's section files cite this document when they need to justify a concrete pick.
-
-No concrete mod picks live here. The owning sections (notably → [Crafting & Economy](modlist-expanded-crafting.md) for loot distribution, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for encounter zones and difficulty) make the final call. This document presents the three styles, analyzes them across shared axes, and ends with **suggested combinations** for different list identities — the curator picks the combination that matches the list's intent.
-
-**Tagging convention:** Mods in the section files are tagged in a `Dial` column with one or more combination codes (`\#1`, `\#2`, `\#3`, `\#4`, `all`, `none`). `\#1` is the adopted combination for Elder Wilds; mods tagged `\#1` (or `all`) are on-dial, others are off-dial for the list's intent and need explicit justification.
-
----
-
-== The Three Styles
-<world-progression-philosophy-the-three-styles>
-
-**Deleveled** — World no longer scales to the player. A Bandit Chief is dangerous at level 1 and level 50; loot tables are decoupled from player level so a high-tier weapon can be found in a low-level dungeon. `MorrowLoot Ultimate` is the canonical implementation. `Open World Loot` (in its "decapitate leveled lists" mode) sits in this camp.
-
-**Static Leveling** — World is fixed but the loot tables are hand-curated rather than the messy vanilla lists. Top-tier gear is rare, but it isn't gated behind specific zones — it's gated behind a curated drop table that the player learns over time. `Open World Loot` (default philosophy) is the closest popular implementation.
-
-**Vanilla With Curated Lists** — Keep leveled lists essentially as Bethesda shipped them, but curate content additions (new weapons, armors, jewelry) to fit the existing economy rather than inflating it. The base game is the default; new items plug in cleanly. `Trade and Barter` style interventions, content packs that match vanilla tier-spread, light Rarity-style interference at the edges.
-
----
-
-== The Interlocked Dial
-<world-progression-philosophy-the-interlocked-dial>
-
-The four concerns are coupled, and the dial really has **six knobs** — the four named plus the **experience mod** (how fast the player levels and what skill-ups do) and the **perks overhaul** (what perks do and how perk points are spent). All six need to sing together or the list feels incoherent:
-
-- **Leveling style** (deleveled / static / vanilla) — what gear the world offers at what level.
-- **Encounter zones** — what threat the world offers at what location.
-- **Loot distribution** — what the player can actually pick up off that threat.
-- **Difficulty** — how hard any given encounter feels.
-- **Experience mod** — how fast the player accumulates levels and skill-ups relative to those four knobs.
-- **Perks overhaul** — what the player can build into, which determines whether a given dial feels like a wall or a puzzle.
-
-Common failure patterns when the six knobs don't sing:
-
-- **Deleveled loot + encounter-zone overhaul** stacks gating. The world closes in fast; progression has to come from skill, knowledge, and LoTD-style meta-progression, not from better gear.
-- **Vanilla loot + no encounter overhaul** produces the canonical problem: by level 30, glass and ebony are everywhere and nothing feels like a reward.
-- **Static loot + encounter-zone overhaul** is the most common "modern list" dial — it gates the *threat* without gating the *gear*, so the player feels strong against a curated threat ladder.
-- **Deleveled loot + survival framework** can overshoot into punitive early-game, especially in cold biomes where food and warmth are themselves scarce.
-- **Heavy perks overhaul + fast XP** floods the player with build options before they've explored the world — the list feels like a build simulator rather than a world.
-- **Vanilla perks + slow XP + deleveled loot** starves the player of both gear and build options; every fight is a coin-flip.
-- **Heavy perks overhaul + deleveled loot** is actually a *natural* pairing: the player can build into a counter for any encounter the world throws at them, which softens delevel's flat-late-game problem and gives the perks tree real purpose.
-
-A list that locks a strong position on one or two knobs without thinking through the other four will feel incoherent. This document is the place to think it through.
-
----
-
-== Deleveled
-<world-progression-philosophy-deleveled>
-
-=== Power Fantasy
-<world-progression-philosophy-power-fantasy>
-
-Late-game power fantasy is **weaker**: the world never feels "below you" because the world is the world. Early-game power fantasy is **stronger in a punishing way**: nothing hands you gear, you have to earn every step. For a list that wants the player to feel small and threatened, this is the right dial. For a list that wants the player to feel like they're growing into a legend, it can feel like the dial never moves.
-
-=== Longterm Play
-<world-progression-philosophy-longterm-play>
-
-**Excellent for replayability** — knowing where the best gear is, or where the hardest fights are, doesn't trivialize the playthrough because the player level doesn't unlock anything. A new character in six months has the same discovery space. **Weak for in-list long-term progression** — if the player plans to spend 200+ hours in a single character, the lack of a power curve can feel flat late.
-
-=== Exploration & Discovery
-<world-progression-philosophy-exploration--discovery>
-
-**Excellent incentive structure.** "I should go everywhere, because anything I find could be a game-changer." Pairs well with `Legacy of the Dragonborn` (museum-as-reward) and big-world lists. A high-tier weapon found at level 5 is a story, not a balance violation.
-
-=== NPC & Encounter Balance
-<world-progression-philosophy-npc--encounter-balance>
-
-NPCs stay dangerous; the curve is flat. Pairs cleanly with encounter-zone overhauls that *add* a curve (so the world still has a sense of progression through the map even if the player's gear doesn't track). The risk is the **over-gated trap**: delevel + encounter overhaul + harsh survival + low early-game loot = the first ten levels feel like a wall. `Survival & Combat` already flags this combination as the "overshoot from moody into over-gated" pattern.
-
-=== Modlist Synergy
-<world-progression-philosophy-modlist-synergy>
-
-**The hardest style to balance with content-heavy modlists.** Every new leveled-list mod (every new weapon, armor, jewelry, alchemy ingredient) has to be tested against the deleveled tables — does this new sword break the world at level 5? Does this new jewelry inflate the merchant economy? The more mods in the list, the more curation work. Lists that are content-rich (like this one, with Heavy Armory, Immersive Armors, Immersive Jewelry, Narrative Loot, C.O.I.N., etc.) pay a high cost for running deleveled.
-
-=== Risks
-<world-progression-philosophy-risks>
-
-- Punitive early-game, especially combined with survival frameworks.
-- Content-mod curation overhead scales with modlist size.
-- Late-game power-fantasy curve can feel flat.
-- Easy to over-gate when combined with encounter-zone overhauls.
-
-=== Experience & Perks
-<world-progression-philosophy-experience--perks>
-
-**Pairs naturally with a heavy perks overhaul and slow-to-moderate XP.** Without leveled lists to gate gear, the player's power growth comes almost entirely from perks and skill-ups, so a rich perks tree carries real weight and a fast-XP setup would front-load that growth. A heavy-perks / slow-XP / deleveled-loot triple is the cleanest expression of the "earn every step" fantasy. Vanilla perks with fast XP undermines this — the player levels up faster than they can spend points and the world still doesn't give them anything.
-
----
-
-== Static Leveling
-<world-progression-philosophy-static-leveling>
-
-=== Power Fantasy
-<world-progression-philosophy-power-fantasy-2>
-
-**Balanced.** The player grows into a legend against a threat that also has structure. Late-game still feels earned because curated late-game loot is meaningfully better than curated early-game loot, but a high-level player isn't drowning in game-breaking gear. For a list that wants both the growth fantasy and the threat, this is the natural dial.
-
-=== Longterm Play
-<world-progression-philosophy-longterm-play-2>
-
-**Strong for in-list long-term progression** — the player has a 100-hour power curve, and curated loot tables mean the curve is well-paced. **Acceptable for replayability** — a new character will find roughly the same gear at the same general progression points, but the discovery of *where* is still open. LoTD-style meta-progression carries replayability.
-
-=== Exploration & Discovery
-<world-progression-philosophy-exploration--discovery-2>
-
-**Incentive structure is moderate.** "Go everywhere to find good gear" is still true, but the curve is shallower than deleveled because the player knows tier-1 zones won't drop tier-5 items. Pairs well with maps and markers, with the museum, and with curated content packs that respect the tier spread.
-
-=== NPC & Encounter Balance
-<world-progression-philosophy-npc--encounter-balance-2>
-
-**The cleanest combination with encounter-zone overhauls.** Encounter zones add a *spatial* progression (Whiterun hold is easier than the Rift, the Rift is easier than Skrim wide); static loot adds a *temporal* progression (early-game player has starter gear, late-game player has curated late-tier gear). The two dials don't fight.
-
-=== Modlist Synergy
-<world-progression-philosophy-modlist-synergy-2>
-
-**The most content-mod-friendly style.** New weapons, armors, jewelry, and ingredients slot into curated tier slots. A new weapon mod that adds ten glass-tier swords integrates naturally; the same mod in a deleveled list has to be tested for "does this break level-5 progression." Lists that are content-rich benefit from static's lower curation overhead.
-
-=== Risks
-<world-progression-philosophy-risks-2>
-
-- The vanilla-curated-lists approach can feel like "vanilla with extra steps" if the curation isn't visibly better than Bethesda's default tables.
-- Late-game still risks the glass/ebony-everywhere problem if the curator isn't careful with the tier-4 and tier-5 entries.
-- Less distinctive than deleveled — the dial is "more polished" not "different feel."
-
-=== Experience & Perks
-<world-progression-philosophy-experience--perks-2>
-
-Pairs naturally with a heavy perks overhaul and a power-fantasy XP curve (high level cap, rewarding quest/discovery, no skill grinding). The player levels up faster than vanilla through quests and exploration while the static threat world keeps every level meaningful.
-
----
-
-== Vanilla With Curated Lists
-<world-progression-philosophy-vanilla-with-curated-lists>
-
-=== Power Fantasy
-<world-progression-philosophy-power-fantasy-3>
-
-**Closest to Bethesda's intent.** The player grows into a legend against a world that grows with them. Late-game the world hands you legendary glass and ebony because you earned it. For a list that wants to honor the original game and add modern systems on top, this is the right dial.
-
-=== Longterm Play
-<world-progression-philosophy-longterm-play-3>
-
-**Strong for in-list long-term progression** (same as static). **Weaker for replayability** — a new character finds the same gear in the same places at the same levels. The strongest replayability lever is `Legacy of the Dragonborn` (different museum-fill order, different artifact quest chains, different pacing) rather than the loot dial itself.
-
-=== Exploration & Discovery
-<world-progression-philosophy-exploration--discovery-3>
-
-**Weakest incentive structure of the three styles.** The player learns the loot ladder quickly and the motivation to "go everywhere" weakens. Lists that want exploration incentive need to add it through other levers: `Legacy of the Dragonborn` museum-fill, Evolving Locations content, hand-placed world encounters, `Interesting NPCs` style content, etc.
-
-=== NPC & Encounter Balance
-<world-progression-philosophy-npc--encounter-balance-3>
-
-**Pairs cleanly with the least intervention.** Vanilla encounter zones + vanilla loot + light difficulty tuning produces a coherent, low-curation list. Adding heavy encounter-zone overhauls to vanilla loot often overshoots (the world gates but the gear doesn't, producing late-game "I'm level 50 in glass armor and a Bandit Chief one-shots me" frustration).
-
-=== Modlist Synergy
-<world-progression-philosophy-modlist-synergy-3>
-
-**The lowest curation overhead.** New content packs that respect vanilla tier-spread integrate trivially. The cost is that the list feels like "vanilla plus mods" rather than "a designed list."
-
-=== Risks
-<world-progression-philosophy-risks-3>
-
-- Late-game loot inflation is the canonical failure mode of this style.
-- Exploration incentive is weak; other systems have to carry it.
-- Distinctiveness depends entirely on what you put on top of vanilla (art, content, mechanics) — the loot dial alone doesn't sell a list.
-- Easy to under-tune and end up with the unmodded game's pacing problems.
-
-=== Experience & Perks
-<world-progression-philosophy-experience--perks-3>
-
-**Pairs naturally with vanilla or light perks and a moderate-to-fast XP curve.** The Bethesda-style growth fantasy works best when the player is unlocking perks at the rate Bethesda intended — fast enough to feel the build opening up, slow enough that the unlock matters. A heavy perks overhaul here can work, but the dial is doing less of the lifting, so the perks tree has to be the thing that makes the playthrough feel different. Slow XP with vanilla perks and vanilla loot produces a list that feels underpowered even at level 30 — the most common "is this modlist even on?" failure mode for this style.
-
----
-
-== Suggested Combinations
-<world-progression-philosophy-suggested-combinations>
-
-These are **suggestions for different list identities**, not a ranking. The owning sections still pick the concrete mods; the combinations just steer those picks in compatible directions. The curator picks the combination that matches the list's intent.
-
-=== 1. "Big, Dark, Awe-Inspiring World" — Deleveled Or Static With Hard Threat
-<world-progression-philosophy-1-big-dark-awe-inspiring-world-deleveled-or-static-with-hard-threat>
-
-**Suggested dial:** Static leveling (preferred) or deleveled (committed), encounter-zone overhaul (`Arena` baseline or RiS Encounter Zones), harsher difficulty, deliberate loot scarcity at tier 1-2, **heavy perks overhaul (Simonrim-class depth) with slow-to-moderate XP** so the player's power growth comes from build choices against a flat world, not from gear inflation. Survival framework (cold, hunger, fatigue, disease) is on-dial — it makes the home a real anchor.
-
-**What it serves:** Exploration that makes Skyrim feel vast and threatening. The player feels small, the world feels dangerous, gear feels earned, and the perks tree is the primary expression of "I'm getting stronger." Pairs naturally with `Legacy of the Dragonborn` because the museum becomes the player's long-term reward ladder. The "Living the World" layer sits on top: a player home with a family, choosing when to quest, living a life in between the dragon-born moments.
-
-**Trade-offs:** High curation overhead for content mods if deleveled. Risk of over-gating early-game if survival and encounter overhaul stack. Late-game power curve depends heavily on the perks tree carrying it; a shallow perks overhaul breaks the fantasy.
-
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for the loot-distribution mod, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for encounter-zone and difficulty mods.
-
-=== 2. "Living The World / Museum-And-Collection" — Vanilla With Curated Lists
-<world-progression-philosophy-2-living-the-world-museum-and-collection-vanilla-with-curated-lists>
-
-**Suggested dial:** Vanilla with curated lists, light or no encounter-zone intervention, balanced difficulty (Simply Balanced tier), LoTD-anchored progression carrying the long-term reward ladder, **moderate perks overhaul (Path of the Berserker or Adamant tier) with vanilla-or-slightly-slow XP** to preserve Bethesda's growth pacing while giving the build a little more shape.
-
-**What it serves:** A list that wants to add modern systems and lots of new content on top of a Skyrim that still feels like Skyrim. The museum is the meta-progression; the loot dial is "vanilla with polish, not overhaul." Honors Bethesda's pacing intent while modernizing everything around it.
-
-**Trade-offs:** Late-game loot inflation is the canonical failure mode — mitigation is required curation of any new gear mods. Exploration incentive is weak; LoTD and content mods have to carry it. Distinctiveness depends on what you put on top. A heavy perks overhaul (Simonrim) here can overpower the "Skyrim that still feels like Skyrim" intent — the perks tree starts to feel like it's from a different game.
-
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for trade-and-barter-style interventions and content-mod curation rules, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for minimal encounter-zone intervention and balanced difficulty.
-
-=== 3. "Power Fantasy" — Vanilla Or Static, Lenient
-<world-progression-philosophy-3-power-fantasy-vanilla-or-static-lenient>
-
-**Suggested dial:** Vanilla with curated lists (preferred) or static, no encounter-zone overhaul, lenient difficulty, **vanilla or light perks with vanilla-to-fast XP** so the growth fantasy matches Bethesda's intent. Late-game gear arrives as Bethesda intended; the player becomes a legend.
-
-**What it serves:** A list that wants the player to feel like a growing hero, not a survivor. Pairs well with the "Dragonborn quest as the spine" playstyle — if the user is going to play the main quest, the loot dial should support that arc.
-
-**Trade-offs:** Same late-game inflation risk as combination 2. Risk of feeling like an unmodded game in the first 20 levels. Exploration incentive is the weakest of the three styles; needs other systems to compensate. A heavy perks overhaul contradicts the "Bethesda's growth pacing" intent and tends to overshoot into a build-simulator feel by mid-game.
-
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for trade-and-barter and minimal loot intervention, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for the lenient difficulty pick and minimal encounter-zone changes.
-
-=== 4. "Longterm Replayability" — Static, Moderate Gating, Tunable Difficulty
-<world-progression-philosophy-4-longterm-replayability-static-moderate-gating-tunable-difficulty>
-
-**Suggested dial:** Static leveling, moderate encounter-zone intervention (Arena tier, not harsher), difficulty mod with tuning knobs (Simply Balanced, not Blade and Blunt), curated content packs that respect the tier spread, **moderate-to-heavy perks overhaul (Path of the Berserker or Simonrim tier) with moderate XP** so a new character has a fresh build-puzzle to work through every restart.
-
-**What it serves:** A list the curator wants to come back to in six months and start fresh. Static gives the new character a fresh-but-familiar power curve; moderate encounter-zone intervention gives the world structure without punishing early exploration; a tunable difficulty mod lets the new character be tuned up or down as the player prefers; a moderate-to-heavy perks overhaul means each new character has a different build to commit to.
-
-**Trade-offs:** Static-with-curated-lists is the most balanced but the least distinctive dial — the list has to differentiate through art, content, and mechanics. The "vanilla-with-extra-steps" risk is real.
-
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for the static-with-curated-lists implementation (Open World Loot default or hand-rolled curated leveled lists), → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for moderate encounter-zone changes and tunable difficulty.
-
----
-
-== How To Use This Document
-<world-progression-philosophy-how-to-use-this-document>
-
-When a section file picks a mod that touches the loot / encounter / difficulty / XP / perks dial, it should briefly note which **suggested combination** the pick serves. Example: "Picking `Open World Loot` (curated default) supports combination 1 (Big, Dark, World) or 4 (Longterm Replayability) and is not the right pick for combination 3 (Power Fantasy / vanilla-loot)."
-
-When two sections make picks that would push the list toward different combinations, the conflict is a signal to revisit this document and pick the combination explicitly. The document does not own the final answer — it owns the framework for making the answer coherent. The owning sections for the six knobs are: → [Crafting & Economy](modlist-expanded-crafting.md) (loot distribution), → [Survival, Difficulty, and Balance](modlist-survival-combat.md) (encounter zones + difficulty), → [Magic & Perks](modlist-expanded-magic.md) (perks overhaul + XP mod), with → [Character & Progression](modlist-expanded-character.md) holding the cross-cutting growth philosophy.
-
-
-
-
-// -- guide/modlist-curation.md --
-= Modlist Curation Rules and Testing Plan
-<modlist-curation-rules-and-testing-plan>
-
-**MO2 Separator:** `Testing & Curation`
-
-All items in this section belong to the `Testing & Curation` MO2 separator.
-
----
-
-== Curation Rules → separator: Testing & Curation
-<modlist-curation-rules-and-testing-plan-curation-rules-separator-testing--curation>
-
-Shared guardrails keeping individual picks consistent with the list's overall identity across every section.
-
-=== Visual Style Consistency
-<modlist-curation-rules-and-testing-plan-visual-style-consistency>
-Every texture, mesh, and lighting mod must be evaluated for visual coherence. Don't mix low-resolution vanilla-retexture packs with high-end PBR material overhauls in the same category. Prefer grounded, weathered, northern, wilderness-first color palettes over clean, heroic, or high-fantasy.
-
-=== Lore Friendliness
-<modlist-curation-rules-and-testing-plan-lore-friendliness>
-New content must not contradict established Elder Scrolls lore (unless the contradiction is the deliberate point of a well-regarded quest mod). Cosmetics should respect setting: steel looks like steel, fur and leather dominate cold-region gear, architecture matches hold style. New content is welcome as long as it plausibly extends the existing world.
-
-=== Third-Person-First Design With Full Gamepad Support
-<modlist-curation-rules-and-testing-plan-third-person-first-design-with-full-gamepad-support>
-Every gameplay, animation, UI, camera, and interaction mod must be evaluated for third-person usability and gamepad compatibility first. The list must never force switching to first-person or keyboard/mouse for any interaction — lockpicking, reading, menus, crafting, dialogue, container looting, and favouriting. A mod that breaks the third-person gamepad experience is a poor fit regardless of individual quality.
-
-=== Animation Quality Bar
-<modlist-curation-rules-and-testing-plan-animation-quality-bar>
-Animations must meet the `Animations` baseline for blend smoothness, motion-capture fidelity, and weapon-type awareness. No clipping, snapping, floating, or poor foot-planting. The animation must look natural at standard gameplay speed in third-person, not only in slow-motion showcase clips.
-
-=== Performance Target And Hardware Assumptions
-<modlist-curation-rules-and-testing-plan-performance-target-and-hardware-assumptions>
-Target: mid-range modern GPU (roughly RTX 3060 / RX 6700 equivalent) at 1440p with a 60 FPS target in most outdoor scenes. Dense forests and major cities may drop below 60 FPS; acceptable if above 45 FPS. Mods requiring DLSS/framegen reach playable framerates on target baseline must be flagged optional.
-
-=== Preference For Lightweight Vs Feature-Rich Mods
-<modlist-curation-rules-and-testing-plan-preference-for-lightweight-vs-feature-rich-mods>
-When two mods solve the same goal, prefer the lighter option unless the feature-rich alternative brings a clearly measurable improvement. Lightweight: fewer deps, smaller plugin footprint, less script load, simpler patch requirements.
-
-=== Rules For Avoiding Overlapping Overhauls
-<modlist-curation-rules-and-testing-plan-rules-for-avoiding-overlapping-overhauls>
-No two mods should overhaul the same gameplay system unless one is explicitly a compatibility layer. Examples: two perk overhauls, two magic systems, two encounter-zone overhauls, two survival frameworks, two independent combat animation packs for the same attack sets. Alternatives in section files must clearly state whether they are compatible add-ons or exclusive branches.
-
----
-
-== Testing Plan → separator: Testing & Curation
-<modlist-curation-rules-and-testing-plan-testing-plan-separator-testing--curation>
-
-Each stage targets a specific category of load-order risk, ordered so earlier stages catch common failures before later stages invest time in detailed playthrough evaluation.
-
-=== Fresh Game Startup Checklist
-<modlist-curation-rules-and-testing-plan-fresh-game-startup-checklist>
-1. Skyrim launches from MO2 without crash or infinite load.
-2. Main menu displays correctly with all UI mods active.
-3. New game reaches the alternate-start character-generation flow without freezing.
-4. Character-generation menu (races, presets, body, sliders) works with all body/appearance mods.
-5. Clean character save saves and loads without corruption or missing-master warnings.
-6. MCM registers all expected configuration menus.
-7. Console commands and basic navigation work without error spam.
-
-If any step fails, do not proceed to later tests.
-
-=== Character Creation Test
-<modlist-curation-rules-and-testing-plan-character-creation-test>
-Verify: race/body preset/appearance sliders apply correctly; starting equipment/spells/inventory match alternate-start config; starting location loads without crashes, missing geometry, or broken lighting; perk/race/standing-stone overrides apply; first level-up triggers correctly; starting quest marker appears as expected.
-
-=== Third-Person Combat Test
-<modlist-curation-rules-and-testing-plan-third-person-combat-test>
-Five encounter types: one-handed+shield vs humanoid; two-handed power attacks vs large target; archery/ranged magic vs distant target; dual-wield or spell-sword vs fast enemy; mounted combat if horse overhaul is active. Verify: stable camera (lock-on, shoulder switching, free-look); dodge/block/parry/stagger trigger correctly; hit reactions/impact VFX/sound feedback play without delay; no animation breaks/snapping/T-posing; UI elements display correctly.
-
-=== City Performance Test
-<modlist-curation-rules-and-testing-plan-city-performance-test>
-Walk from gate to center in each major city (Whiterun, Solitude, Windhelm, Riften, Markarth). Record framerate range; note stutter/loading pauses/texture pop-in; check for missing objects, broken navmesh, stuck NPCs; verify city overhaul mods apply cleanly; confirm indoor cells load correct lighting. Fail if \<45 FPS on target hardware or visual errors make area feel broken.
-
-=== Forest Traversal Test
-<modlist-curation-rules-and-testing-plan-forest-traversal-test>
-Travel through dense pine (Falkreath), aspen/deciduous (The Rift), and tundra transition (Whiterun plains near forest edge). Record framerate with grass/tree/LOD active; check grass pop-in, tree LOD shimmer, distant-object flicker; verify soundscape mods change between biomes; confirm encounters/wildlife/patrols spawn at expected intervals; test grass cache without dead zones. Passes if traversal stays playable (no sustained drops below 45 FPS) and biome transitions feel organic.
-
-=== Dungeon Lighting Test
-<modlist-curation-rules-and-testing-plan-dungeon-lighting-test>
-Enter Nordic ruin, cave/mine, Dwemer ruin. Verify: lighting overhaul produces readable contrast without crushing blacks; torch/magelight/candlelight illuminate correctly; interior acoustic changes match room size/material; no light bleed through walls, misaligned shadows, or fire flicker mismatch; enemy silhouettes visible enough for third-person targeting. Fail if any interior is unplayably dark or lighting errors break immersion in more than one room per dungeon.
-
-=== UI And Controller Test
-<modlist-curation-rules-and-testing-plan-ui-and-controller-test>
-Test full UI with KB+M and controller: inventory/magic/map/journal/crafting menus open/navigate/close without errors; item cards display correct info; map renders correctly with quest markers in right positions; dialogue menus show full text; controller button mappings match expected layout; HUD elements display at correct size/position for target resolution. Fail if any menu is unusable on either input method or controller support requires manual INI editing.
-
-=== Long-Session Stability Test
-<modlist-curation-rules-and-testing-plan-long-session-stability-test>
-Play continuously for at least 2 hours: travel through 4+ worldspaces/holds including city-to-dungeon and fast-travel loads; complete 2 quest stages, 1 combat encounter, 1 menu-heavy activity; open/close MCM at least once; save/reload at least twice; check save file size and Papyrus log for accumulating errors. Passes if no crash, save remains loadable, no escalating error spam. Single crash = warning. Two crashes = failure requiring investigation.
-
----
-
-== Post-Install Smoke Test → separator: Testing & Curation
-<modlist-curation-rules-and-testing-plan-post-install-smoke-test-separator-testing--curation>
-
-Run after completing any numbered section.
-
-#table(
-  columns: 4,
-  fill: (luma(240), none),
-  [*\#*],
-  [*Command*],
-  [*Location*],
-  [*Stress Profile*],
-  [1],
-  [`coc Whiterun`],
-  [Whiterun],
-  [Major city — NPCs, shadows, architecture],
-  [2],
-  [`coc Solitude`],
-  [Solitude],
-  [Large city — water, long draw distances],
-  [3],
-  [`coc RiftenOrigin`],
-  [Riften],
-  [Canopy lighting, heavy NPC AI],
-  [4],
-  [`coc MarkarthOrigin`],
-  [Markarth],
-  [Dwemer stone, waterfalls, verticality],
-  [5],
-  [`coc Riverwood`],
-  [Riverwood],
-  [Forest exterior — grass, trees, landscape LOD],
-  [6],
-  [`coc BleakFallsBarrow01`],
-  [Bleak Falls Barrow],
-  [Interior dungeon — close-quarters lighting],
-  [7],
-  [`coc WhiterunBanneredMare`],
-  [Bannered Mare],
-  [Tavern interior — fire lighting, patron NPCs],
-)
-
-**Pass criteria:** No crash on load. No missing textures. Target: ≥60 FPS during graphics-heavy stages (sections 02+); ≥40 FPS acceptable during section 01. If any location fails, the most recently installed mod or generation step is the first suspect.
 
 
 
@@ -9062,6 +9056,15 @@ OStim Standalone — a modern, standalone adult animation framework that does no
   [[OTooTiredToMove](https://www.nexusmods.com/skyrimspecialedition/mods/154112)],
   [Baseline],
   [Temporary immobilisation after climax.],
+  [[OStim Prism](https://www.nexusmods.com/skyrimspecialedition/mods/174750)],
+  [Baseline],
+  [OStim framework visual/settings enhancement.],
+  [[OSquirt - OCum Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/167025)],
+  [Baseline],
+  [Expands OCum Ascended mechanics.],
+  [[Ostim Standalone Sound Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/120663)],
+  [Baseline],
+  [Audio overhaul for OStim animations.],
 )
 
 === Risks & Compatibility
@@ -9081,8 +9084,26 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 === Baseline
 <adult-content-baseline>
 
-- **OStim Romance** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107671)) — Primary romance-content baseline. Active maintenance.
-- **Amorous Adventures OStim Standalone Patch** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150577)) — Ports classic Amorous Adventures content to OStim Standalone.
+#table(
+  columns: 2,
+  fill: (luma(240), none),
+  [*Mod*],
+  [*Notes*],
+  [[OStim Romance](https://www.nexusmods.com/skyrimspecialedition/mods/107671)],
+  [Primary romance-content baseline. Active maintenance.],
+  [[OComfort - OStim Romance Fork](https://www.nexusmods.com/skyrimspecialedition/mods/139333)],
+  [Romance fork adding comfort/affection mechanics. Alternative to OStim Romance.],
+  [[Amorous Adventures OStim Standalone - OStim Sequences](https://www.nexusmods.com/skyrimspecialedition/mods/106773)],
+  [Ports classic Amorous Adventures to OStim with sequence scenes.],
+  [[Amorous Adventures OStim Standalone - Rewrite and MCM Patch with Fixes - Sequences Edition](https://www.nexusmods.com/skyrimspecialedition/mods/150577)],
+  [Updated rewrite with MCM patch and fixes. Supersedes the base patch.],
+  [[Amorous Adventures MCM](https://www.nexusmods.com/skyrimspecialedition/mods/100112)],
+  [MCM configuration for Amorous Adventures.],
+  [[Amorous Adventures - Player Dialogue Rewritten](https://www.nexusmods.com/skyrimspecialedition/mods/38989)],
+  [Reworks player dialogue options for Amorous Adventures.],
+  [[Caught Red Handed - Quest Expansion - OStim Patch](https://www.nexusmods.com/skyrimspecialedition/mods/69711)],
+  [OStim integration for the Caught Red Handed quest expansion.],
+)
 
 === Risks & Compatibility
 <adult-content-risks--compatibility-2>
@@ -9090,6 +9111,7 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 - Lock the framework version first, then verify romance mod compatibility.
 - Romance quests add dialogue/quest records that may conflict with → `World Content` or → `NPCs` overhauls.
 - Verify load order with `RDO` and `Serana Dialogue Add-On` for overlapping NPCs.
+- `Amorous Adventures OStim Standalone - Rewrite` (150577) is the preferred version over the base OStim Sequences patch (106773).
 
 ---
 
