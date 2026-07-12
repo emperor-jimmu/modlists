@@ -147,7 +147,7 @@ function Convert-MermaidDiagrams {
                     }
                 }
             }
-            $null = $output.AppendLine("#image(""./diagram-$num.png"", width: 100%)")
+            $null = $output.AppendLine("#image(""./diagram-$num.png"", width: 70%)")
             $Counter.Value++
             $i++ # skip ```
         } else {
@@ -292,11 +292,11 @@ $a.Invoke('#set raw(tab-size: 4)')
 $a.Invoke('// Inline raw (backtick code) uses body font and size, not monospaced')
 $a.Invoke('#show raw.where(block: false): set text(font: "Inter", size: 11pt)')
 $a.Invoke('#set page(')
-$a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 1.8cm),')
-$a.Invoke('  footer: context align(center + bottom, pad(top: 0.3cm,')
+$a.Invoke('  margin: (left: 2.5cm, right: 2cm, top: 2cm, bottom: 2.5cm),')
+$a.Invoke('  footer: context align(center + bottom,')
 $a.Invoke('    text(9pt, fill: luma(140),')
 $a.Invoke('      counter(page).display() + " — " + counter(page).display()')
-$a.Invoke('  ))),')
+$a.Invoke('  )),')
 $a.Invoke(')')
 $a.Invoke("")
 $a.Invoke("// -- Heading Styling --")
