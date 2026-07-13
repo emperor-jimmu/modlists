@@ -220,8 +220,8 @@ If installing manually:
 **Installation**: Download each `.zip` above, place in `.minecraft/resourcepacks/`, then enable them in Options → Resource Packs. Suggested load order (top = highest priority):
 
 1. Default Dark Mode
-2. Faithful 64x
-3. Fresh Animations
+2. Fresh Animations
+3. Faithful 64x
 4. RAY's 3D Rails
 5. 3D Ladders
 6. Better Lanterns
