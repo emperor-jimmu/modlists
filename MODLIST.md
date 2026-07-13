@@ -196,13 +196,14 @@ If installing manually:
 
 ### Texture Packs
 
-| Pack                                                                   | Role                                                                                 |
-|------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x)         | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
-| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) | Living entity animation overhaul — mobs blink, look around, show emotion             |
-| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)      | 3D block & item textures for all rail types                                          |
-| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)             | 3D model replacement for ladders                                                     |
-| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)   | Enhanced 3D look for lanterns and chains                                             |
+| Pack                                                                     | Role                                                                                 |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x)           | 64x vanilla block textures — clean, sharp, PBR-compatible with Complementary Unbound |
+| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion             |
+| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)        | 3D block & item textures for all rail types                                          |
+| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)               | 3D model replacement for ladders                                                     |
+| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)     | Enhanced 3D look for lanterns and chains                                             |
+| [Default Dark Mode](https://modrinth.com/resourcepack/default-dark-mode) | Dark UI theme for all vanilla screens, menus, and inventories                        |
 
 **Faithful 64x** upscales vanilla blocks to 64x resolution while preserving the original look. Works with Complementary Unbound's Integrated PBR+ for realistic material response (metal shines, wool is soft, stone is rough). Modded blocks (Create, Mekanism, AE2) use their default textures, which are already well-designed and blend naturally at 64x. The RTX 4080 SUPER handles this with zero FPS impact at 4K.
 
@@ -214,41 +215,28 @@ If installing manually:
 
 **Better Lanterns** gives lanterns and chains an enhanced 3D look with connected chain models. Compatible with Arcane Lanterns and Thin Air mods.
 
+**Default Dark Mode** applies a dark theme to all vanilla UI screens — menus, inventories, containers, the recipe book, and chat. It's a pure client-side overlay, requires no mods, and works alongside any shaderpack or texture pack. Place it high in the pack order so it overrides the default bright UI.
+
 **Installation**: Download each `.zip` above, place in `.minecraft/resourcepacks/`, then enable them in Options → Resource Packs. Suggested load order (top = highest priority):
 
-1. Faithful 64x
-2. Fresh Animations
-3. RAY's 3D Rails
-4. 3D Ladders
-5. Better Lanterns
+1. Default Dark Mode
+2. Faithful 64x
+3. Fresh Animations
+4. RAY's 3D Rails
+5. 3D Ladders
+6. Better Lanterns
 
 ### Configuration — Wave 0
 
-**Waystones**:
+**Waystones** (`config/waystones-common.toml`):
 
 - `inventoryButton` = `"any"` — Opens waystone menu from inventory without a keybind.
 - `enableCosts` = `false` — Free teleportation.
-- `enableCooldowns` = `false` — No teleport cooldown.
 
-**Tombstone (GraveStone Mod)**:
+**Loot Journal** (`config/obscuria/loot_journal-client.toml`):
 
-- `grave.keepExperience` = `true` — Keep all XP on death. Complements the Skill Tree (Wave 3).
-- `grave.protectionDuration` = `86400` — 24 hours of grave protection.
-
-**Aether**:
-
-- `"Use default Curios' menu"` = `true` — Uses Curios API menu instead of Aether's separate accessories screen.
-- `"Gives player Aether Portal Frame item"` = `false` — Player must build the portal manually.
-- `"Gives starting loot on entry"` = `true` — Grants Book of Lore and Golden Parachutes on first entry.
-- `"Show Patreon message"` = `false` — Removes Patreon nag screen.
-- `"Add Temporary Freezing automatically"` = `false` — Disables Aether's temporary freezing datapack.
-- `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
-
-**Loot Journal**:
-
-- `writeSessionJson` = `true` — Saves per-session gain/loss data.
-- `writeStatisticsJson` = `true` — Builds cumulative drop statistics.
-- `showSummaryOnDisconnect` = `true` — Shows session summary on disconnect.
+- `trackItemPickups` = `true` — Logs all item pickups for per-session statistics.
+- `trackXpPickups` = `true` — Logs all XP pickups for per-session statistics.
 
 ### Data Packs (Wave 0)
 
@@ -405,7 +393,16 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) 1.1.5 | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable |
 
-**The Aether**: Configuration covered in Wave 0.
+### Configuration — Wave 2
+
+**Aether** (`aether-common.toml`):
+
+- `"Use default Curios' menu"` = `true` — Uses Curios API menu instead of Aether's separate accessories screen.
+- `"Gives player Aether Portal Frame item"` = `false` — Player must build the portal manually.
+- `"Gives starting loot on entry"` = `true` — Grants Book of Lore and Golden Parachutes on first entry.
+- `"Show Patreon message"` = `false` — Removes Patreon nag screen.
+- `"Add Temporary Freezing automatically"` = `false` — Disables Aether's temporary freezing datapack.
+- `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
 
 **Interdependency note — Immersive Aircraft + Aether**: Aircraft can fly in the Aether dimension. An airship is a natural way to navigate Aether islands — it pairs well with the dimension's sky-island geography.
 
