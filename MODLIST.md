@@ -217,7 +217,7 @@ If installing manually:
 
 **Default Dark Mode** applies a dark theme to all vanilla UI screens — menus, inventories, containers, the recipe book, and chat. It's a pure client-side overlay, requires no mods, and works alongside any shaderpack or texture pack. Place it high in the pack order so it overrides the default bright UI.
 
-**Installation**: Download each `.zip` above, place in `.minecraft/resourcepacks/`, then enable them in Options → Resource Packs. Suggested load order (top = highest priority):
+**Installation**: Install via Modrinth App. Load order (top = highest priority):
 
 1. Default Dark Mode
 2. Fresh Animations
@@ -246,7 +246,7 @@ If installing manually:
 
 **BlazeandCave's Advancements Pack** adds 1000+ milestones across 16 themed tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks collecting every wood variant, killing every mob type, discovering every biome, and reaching tier milestones. Runs alongside Reliable Advancements (GUI overhaul) and Fancy Toasts (animated popups) without conflict.
 
-**Installation**: Drop the `.zip` into your world's `datapacks/` folder (`saves/<world>/datapacks/`), then run `/datapack enable "blazeandcave/advancements"`. The pack is per-world — enable it in each new world.
+**Installation**: Install via Modrinth App. In-game, run `/datapack enable "blazeandcave/advancements"`. The pack is per-world — enable it in each new world.
 
 ---
 
@@ -258,18 +258,18 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 | Mod                                                                                   | Role                                                                                                                                             |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Create**](https://www.curseforge.com/minecraft/mc-mods/create) 6.0.10              | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains            |
-| [**Mekanism**](https://www.curseforge.com/minecraft/mc-mods/mekanism) 10.7.19.85      | Industrial processing — ore multiplication (2x→5x), digital miner, fusion reactor, superdense energy storage, MekaSuit (flight, invulnerability) |
-| [**AE2**](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 19.2.17 | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                                    |
+| [**Create**](https://modrinth.com/mod/create) 6.0.10              | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains            |
+| [**Mekanism**](https://modrinth.com/mod/mekanism) 10.7.19.85      | Industrial processing — ore multiplication (2x→5x), digital miner, fusion reactor, superdense energy storage, MekaSuit (flight, invulnerability) |
+| [**AE2**](https://modrinth.com/mod/ae2) 19.2.17 | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                                    |
 
 ### Create Addons
 
 | Mod                                                                                                                      | Role                                                                                                                               |
 |--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Create Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) 1.6.0                           | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                 |
-| [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge) 0.2.1                  | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
-| [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
-| [Mekanism TFMG Compatibility](https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
+| [Create Crafts & Additions](https://modrinth.com/mod/createaddition) 1.6.0                           | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                 |
+| [Steam \'n\' Rails NeoForge](https://modrinth.com/mod/create-steam-n-rails) 0.2.1                  | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
+| [Create: The Factory Must Grow](https://modrinth.com/mod/create-industry) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
+| [Mekanism TFMG Compatibility](https://modrinth.com/mod/mekanism-tfmg-compat) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
 
 ### How They Work Together
 
@@ -317,7 +317,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                               | Role                                                                               |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**MineColonies**](https://www.curseforge.com/minecraft/mc-mods/minecolonies)     | Autonomous NPC colony — builders, miners, farmers, crafters, guards, research tree |
+| [**MineColonies**](https://modrinth.com/mod/minecolonies)     | Autonomous NPC colony — builders, miners, farmers, crafters, guards, research tree |
 | [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize)           | Structure building/placement library (MineColonies dependency)                     |
 | [MultiPiston](https://www.curseforge.com/minecraft/mc-mods/multi-piston)          | Multi-block piston library (MineColonies dependency)                               |
 | [BlockUI](https://www.curseforge.com/minecraft/mc-mods/blockui)                   | UI library (MineColonies dependency)                                               |

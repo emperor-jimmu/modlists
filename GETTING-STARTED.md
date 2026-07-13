@@ -186,7 +186,7 @@ Six optional resource packs enhance vanilla visuals and UI:
 | [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                      | 3D model replacement for ladders                                                        |
 | [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)            | Enhanced 3D look for lanterns and chains                                                |
 
-**Installation**: Download each `.zip`, place in `.minecraft/resourcepacks/`, enable them in Options → Resource Packs. Suggested load order (top = highest priority):
+**Installation**: Install via Modrinth App. Load order (top = highest priority):
 
 1. Default Dark Mode
 2. Fresh Animations
@@ -311,7 +311,7 @@ No configuration needed. Install and forget.
 
 This data pack adds **1000+ new advancements** across 16 tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks milestones like mining every ore type, collecting every wood variant, killing every mob, and discovering every biome.
 
-**Where to install**: Drop the `.zip` into the `datapacks/` folder of your world save (`.minecraft/saves/<world>/datapacks/`). Enable it with `/datapack enable "blazeandcave/advancements"`. It works alongside Reliable Advancements (UI) and Fancy Toasts (popups) without conflict.
+**Installation**: Install via Modrinth App. In-game, run `/datapack enable "blazeandcave/advancements"`. Works alongside Reliable Advancements (UI) and Fancy Toasts (popups) without conflict.
 
 **What it adds**: Thousands of hours of optional side goals. Everything is tracked through the vanilla advancement system — open with `L` to browse the 16 tabs and see what's available.
 
