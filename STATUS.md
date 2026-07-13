@@ -17,7 +17,7 @@
 
 ### Wave 1 — Tech, Colony & Chunk Loading (~13 mods)
 - [x] Core Tech: Create, Mekanism, AE2
-- [x] Ores: Skniro's Nether & End Ores
+- [x] ~~Ores: Skniro's Nether & End Ores~~ (removed — unnecessary, unpopular mod)
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
 - [x] Chunk Loading: Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)

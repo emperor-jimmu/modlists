@@ -259,8 +259,11 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | Mod                                                                                   | Role                                                                                                                                             |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Create**](https://modrinth.com/mod/create) 6.0.10              | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains            |
-| [**Mekanism**](https://modrinth.com/mod/mekanism) 10.7.19.85      | Industrial processing — ore multiplication (2x→5x), digital miner, fusion reactor, superdense energy storage, MekaSuit (flight, invulnerability) |
+| [**Mekanism**](https://modrinth.com/mod/mekanism) 10.7.19.85      | Industrial processing — ore multiplication (2x→5x), digital miner, superdense energy storage, MekaSuit (flight, invulnerability) |
+| [**Mekanism Generators**](https://modrinth.com/mod/mekanism-generators) 10.7.19.85 | Power generation — heat, wind, solar, gas-burning, bio generators, fission reactor, fusion reactor, turbine |
 | [**AE2**](https://modrinth.com/mod/ae2) 19.2.17 | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                                    |
+
+**Note**: On Modrinth, Mekanism v10 is split into separate modules. **Mekanism** (core) provides machines, processing, cables, and armor. **Mekanism Generators** provides all power generation. On CurseForge these were bundled in one JAR — the split is the Modrinth distribution, not a new mod. Both must be installed.
 
 ### Create Addons
 
@@ -268,7 +271,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 |--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [Create Crafts & Additions](https://modrinth.com/mod/createaddition) 1.6.0                           | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                 |
 | [Steam \'n\' Rails NeoForge](https://modrinth.com/mod/create-steam-n-rails) 0.2.1                  | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
-| [Create: The Factory Must Grow](https://modrinth.com/mod/create-industry) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
+| [Create: The Factory Must Grow](https://modrinth.com/mod/create-tfmg) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
 | [Mekanism TFMG Compatibility](https://modrinth.com/mod/mekanism-tfmg-compat) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
 
 ### How They Work Together
@@ -286,7 +289,6 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 |---------------------------------------------------------------------------------|----------------------------------------------|
 | Create (built-in)                                                               | Zinc, brass, copper                          |
 | Mekanism (built-in)                                                             | Osmium, tin, lead, uranium, fluorite         |
-| [Skniro\'s Nether & End Ores](https://modrinth.com/mod/skniros-nether-end-ores) | Additional ores in Nether and End dimensions |
 
 ### Configuration — Wave 1
 
@@ -651,7 +653,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation        | 49      | 8      | 57      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                             |
-| Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism, AE2, Nether & End Ores (TFMG-Stellaris compat listed in Wave 7 only)                                                                                       |
+| Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism + Generators, AE2 (TFMG-Stellaris compat listed in Wave 7 only)                                                                                             |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                                                                                            |
 | Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                                         |
 | Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |

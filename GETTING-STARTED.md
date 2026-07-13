@@ -845,18 +845,6 @@ By mid-game, you should have all three mods working together:
 | **Oil processing**     | TFMG               | Distillation Tower → diesel, gasoline, LPG. Crack heavy fractions   |
 | **Diesel power**       | TFMG               | Diesel engines produce 2,000–16,000 SU from refined oil             |
 | **Steel production**   | TFMG               | Multi-block Blast Furnace produces steel in bulk                    |
-| **Ore finding**        | Skniro's Ores      | New ore types generate in the Nether and End for mid-game expansion |
-
-### Nether & End Ores (Skniro's)
-
-Skniro's Nether and End Ores adds new ore types to both dimensions. These ores are processed through Mekanism machines and feed into Create/Mek material chains.
-
-**Nether ores**: Generate in the Nether at various Y-levels. Check JEI (`R`) to see exactly which ores are added and their required mining levels. Most can be processed through Mekanism's Enrichment Chamber for 2x output.
-
-**End ores**: Generate on the End islands after defeating the Ender Dragon. These are higher-tier materials used in advanced Mekanism machines and Create components.
-
-**Tip**: Use the Explorer's Compass (Wave 2) to find specific biomes where certain ores generate. Some ores are biome-specific.
-
 ### Mekanism TFMG Compatibility — Recipe Resolution
 
 The **Mekanism TFMG Compatibility** mod resolves overlapping recipes between Mekanism and TFMG. Both mods add similar processes (steel production, oil processing, plastic/rubber), and this compatibility layer ensures they work together rather than redundantly.
