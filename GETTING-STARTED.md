@@ -157,15 +157,15 @@ Open **Mod Menu → Distant Horizons → Config** after first launch. Set LOD Re
 
 These mods work automatically with no configuration. Install them and they optimize rendering, chunk generation, and entity processing in the background:
 
-| Mod                 | What it does                                                                        |
-|---------------------|-------------------------------------------------------------------------------------|
+| Mod                 | What it does                                                                             |
+|---------------------|------------------------------------------------------------------------------------------|
 | **Lithium**         | Server-side game logic optimization — faster entity AI, block updates, and chunk physics |
-| **ModernFix**       | Fixes performance bugs and memory leaks from other mods. All-in-one optimization    |
-| **ImmediatelyFast** | Speeds up block and item rendering by using immediate-mode rendering where possible |
-| **Entity Culling**  | Stops rendering entities that are behind walls or off-screen. Free FPS              |
-| **Dynamic FPS**     | Reduces frame rate when Minecraft is in the background — saves GPU power            |
-| **NoisiumForked**   | Accelerates world generation — faster chunk creation when exploring                 |
-| **FerriteCore**     | Reduces memory usage — fewer out-of-memory crashes in long sessions                |
+| **ModernFix**       | Fixes performance bugs and memory leaks from other mods. All-in-one optimization         |
+| **ImmediatelyFast** | Speeds up block and item rendering by using immediate-mode rendering where possible      |
+| **Entity Culling**  | Stops rendering entities that are behind walls or off-screen. Free FPS                   |
+| **Dynamic FPS**     | Reduces frame rate when Minecraft is in the background — saves GPU power                 |
+| **NoisiumForked**   | Accelerates world generation — faster chunk creation when exploring                      |
+| **FerriteCore**     | Reduces memory usage — fewer out-of-memory crashes in long sessions                      |
 
 **No config needed** for any of these. Install, launch, forget.
 
@@ -177,14 +177,14 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 
 Six optional resource packs enhance vanilla visuals and UI:
 
-| Pack                                                                            | Role                                                                                    |
-|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Default Dark Mode](https://modrinth.com/resourcepack/default-dark-mode)       | Dark UI theme for all vanilla screens, menus, and inventories                           |
-| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x)                 | 64x upscaled vanilla textures — clean, sharp, PBR-compatible with Complementary Unbound |
-| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)          | Living entity animation overhaul — mobs blink, look around, show emotion                |
-| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)               | 3D block & item textures for all rail types                                             |
-| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                      | 3D model replacement for ladders                                                        |
-| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)            | Enhanced 3D look for lanterns and chains                                                |
+| Pack                                                                     | Role                                                                                    |
+|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| [Default Dark Mode](https://modrinth.com/resourcepack/default-dark-mode) | Dark UI theme for all vanilla screens, menus, and inventories                           |
+| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x)           | 64x upscaled vanilla textures — clean, sharp, PBR-compatible with Complementary Unbound |
+| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion                |
+| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)        | 3D block & item textures for all rail types                                             |
+| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)               | 3D model replacement for ladders                                                        |
+| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)     | Enhanced 3D look for lanterns and chains                                                |
 
 **Installation**: Install via Modrinth App. Load order (top = highest priority):
 
@@ -213,11 +213,11 @@ Faithful 64x works with Complementary Unbound's Integrated PBR+ for realistic ma
 
 Your first session is about getting comfortable. Don't rush — this wave has zero progression pressure.
 
-| Session                         | Goal                                                                                                                                                                                                                                         |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data                                             |
-| **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey                                          |
-| **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                                                                 |
+| Session                         | Goal                                                                                                                                                                                                  |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data      |
+| **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey   |
+| **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                          |
 | **Ongoing**                     | LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
 
 ### Using Wave 0 Mods
@@ -299,7 +299,7 @@ Inventory management shortcuts: left-click drag across slots → distributes eve
 
 #### Curios API (Accessory Slots)
 
-Opens extra equipment slots on your character: ring, amulet, belt, gloves, charm, back, and more. Press the Curios keybind (check Controls) to open the Curios inventory. This replaces Trinkets from V2 — Relics RPG accessories and other Curios-compatible items go in these slots.
+Opens extra equipment slots on your character: ring, amulet, belt, gloves, charm, back, and more. Press the Curios keybind (check Controls) to open the Curios inventory. Relics RPG accessories and other Curios-compatible items go in these slots.
 
 #### Reliable Advancements
 
@@ -845,6 +845,7 @@ By mid-game, you should have all three mods working together:
 | **Oil processing**     | TFMG               | Distillation Tower → diesel, gasoline, LPG. Crack heavy fractions   |
 | **Diesel power**       | TFMG               | Diesel engines produce 2,000–16,000 SU from refined oil             |
 | **Steel production**   | TFMG               | Multi-block Blast Furnace produces steel in bulk                    |
+
 ### Mekanism TFMG Compatibility — Recipe Resolution
 
 The **Mekanism TFMG Compatibility** mod resolves overlapping recipes between Mekanism and TFMG. Both mods add similar processes (steel production, oil processing, plastic/rubber), and this compatibility layer ensures they work together rather than redundantly.
@@ -1607,7 +1608,7 @@ Cooking is a side activity you build up gradually. Start small and expand as you
 | Session                           | Focus                                                                                                                                                                           | What to Build                                 |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | **Session 1 — Kitchen tools**     | Craft a cutting board (knife + planks) and cooking pot (iron + planks). Build a stove (bricks + iron nuggets) as heat source. Find wild tomato, cabbage, onion, rice seeds      | Functional kitchen, first ingredients         |
-| **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice near water. Harvest manually or with vanilla mechanics. Cook your first meal (tomato soup is the easiest)                                   | Sustainable ingredient supply                 |
+| **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice near water. Harvest manually or with vanilla mechanics. Cook your first meal (tomato soup is the easiest)                                    | Sustainable ingredient supply                 |
 | **Session 3 — Brewing**           | Find barley, grapes, honey. Build a brewing station. Start your first batch of beer/wine/mead. Place an aging barrel                                                            | First drink fermenting, waiting for it to age |
 | **Session 4 — Kitchen expansion** | Craft Storage Delight cabinets and drawers for decorative ingredient storage. Try More Delight recipes (sandwiches, toasts). Collect Nether ingredients for My Nether's Delight | Full kitchen, all FD addons in use            |
 | **Ongoing**                       | Age drinks to Matured/Aged for boss-fight buffs. Explore oceans for Ocean's Delight ingredients. Stock your AE2 system with ingredients for autocrafting meals on demand        | Buff food always available for combat         |
@@ -2161,7 +2162,7 @@ Space is a Phase 2+ activity. Don't start until you have Mekanism basic processi
 | Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                                                     |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Phase 1** (hours 0-40)   | Wave 0 setup. Early Create (water wheel, mechanical press). Find certus quartz for AE2. Make first Mekanism machines (2x ore). Explore Terralith biomes. Skill Tree active from first action. Find your first Simply Swords weapon. Cook Farmer's Delight meals. Start MineColonies colony (builder hut, basic mines). Grab bounties from village boards |
-| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Rechiseled, Supplementaries, and Macaw's. Complete bounties for passive rewards as you explore                     |
+| **Phase 2** (hours 40-150) | Full Create factory (conveyors, deployers, sequenced crafters). Mekanism 3x-5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis rare/epic gear. Mutant Monsters. First Cataclysm boss. Build with Rechiseled, Supplementaries, and Macaw's. Complete bounties for passive rewards as you explore             |
 | **Phase 3** (hours 150+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis mythic gear. Twilight Forest final bosses. L_Ender's Cataclysm endgame bosses. BetterEnd End dimension. Monumental building projects with all decoration tools                                                                                                  |
 
 ## General Tips
