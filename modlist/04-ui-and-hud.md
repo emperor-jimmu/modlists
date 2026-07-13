@@ -111,6 +111,30 @@ Clean, informative, immersive.
 - **MO2 Notes:** Extract to game root. FPP module included. For TPP, use in-game Camera Auto Reset Time slider (max 10s, can be increased via `r6/config/settings/options.json`).
 - **Performance:** None
 
+### Better Armor Tooltip
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9706>
+- **Version:** 1.0.1
+- **Released:** 2025-12-28
+- **Summary:** Fixes the armor tooltip in the Cyberware/Ripperdoc menu to show your actual current damage reduction rather than a theoretical maximum.
+- **Why:** Vanilla armor tooltip is misleading — it shows a theoretical maximum "X% or more" rather than your actual damage reduction. This provides accurate, actionable data for gearing decisions.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, RED4ext, redscript
+- **MO2 Notes:** Extract to game root. Files go to `r6/scripts/`. Works automatically — no configuration needed.
+- **Performance:** None
+
+### Flavorfull Descriptions
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/13575>
+- **Version:** 1.0
+- **Released:** 2024-03-11
+- **Summary:** Restores lore/flavor texts on cyberware, healing items, and grenades that were removed in the 2.0 update.
+- **Why:** 2.0 stripped immersive item descriptions that added character and world-building to gear. Restoring them makes reading item tooltips feel like part of Night City's atmosphere rather than dry stat sheets.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to `Cyberpunk 2077/bin/x64/plugins/cyber_engine_tweaks/mods/`. Note: cyberdeck descriptions and some oversized tooltips may still have display issues.
+- **Performance:** None
+
 ### Improved Minimap Zoom
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/2959>
@@ -121,4 +145,104 @@ Clean, informative, immersive.
 - **Conflicts:** None known
 - **Dependencies:** Mod Settings, RED4ext, redscript
 - **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Improved Minimap Zoom.
+- **Performance:** None
+
+### Crafting Recipe Owned and Iconic Labels
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/11261>
+- **Version:** 1.1.1
+- **Released:** 2025-12-02
+- **Summary:** Adds check marks to recipe icons for items you already own, plus
+  iconic background borders for iconic recipes in the crafting menu.
+- **Why:** Vanilla crafting has no way to tell if you already own a craftable
+  item without cross-referencing your inventory. This eliminates wasted materials
+  on duplicates and makes iconic recipes visually distinct.
+- **Conflicts:** None known
+- **Dependencies:** redscript
+- **MO2 Notes:** Extract to game root. Files go to `r6/scripts/`. Works automatically.
+- **Performance:** None
+
+### Loot Quantity Text
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23942>
+- **Version:** 1.1
+- **Released:** 2025-09-19
+- **Summary:** Removes the vanilla 9999+ limit on loot quantity display in the
+  loot widget, showing the actual value instead.
+- **Why:** Vanilla caps loot quantity display at 9999 with a placeholder "9999+",
+  hiding whether a body has 10,042 or 25,378 eddies. Affects money and stackable
+  items, removing useful information for no good reason.
+- **Conflicts:** Compatible with Crafting Component Quantity Text and Numerals Get Commas
+- **Dependencies:** redscript
+- **MO2 Notes:** Extract `z_LootQuantityText.reds` to `Cyberpunk 2077/r6/scripts/`. Tag as **Root**.
+- **Performance:** None
+
+### Ultimate Kill Counter
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9372>
+- **Version:** 1.17
+- **Released:** 2025-09-12
+- **Summary:** Adds a detailed kill tracking tab to the Stats screen — tracks
+  Killed, Finished, Defeated, Incapacitated, and downed-by-type (melee, ranged,
+  quickhacks, stealth takedowns, etc.).
+- **Why:** Vanilla kill counters are buggy and incomplete. Accurate kill tracking
+  rewards different playstyles and provides meaningful feedback on combat approach.
+  Non-lethal options are properly distinguished from lethal ones.
+- **Conflicts:** Compatible with Stealthrunner (different scope)
+- **Dependencies:** ArchiveXL, RED4ext, redscript
+- **MO2 Notes:**
+    - Extract `DumpPromptFix.archive` to `Cyberpunk 2077/archive/pc/mod/`.
+    - Extract `UltimateKillCounter.reds` to `Cyberpunk 2077/r6/scripts/`.
+    - Tag as **Root**. Recommended for new playthroughs (existing saves show pre-mod vanilla figures).
+- **Performance:** None
+
+### Finished Quests Sorted
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16009>
+- **Version:** 1.01
+- **Released:** 2024-12-12
+- **Summary:** Fixes the sorting of Finished quests in the Journal so they
+  appear in the order you completed them, not the order their entries were created.
+- **Why:** v2.0's quest sorting uses entry-creation timestamps for the Finished
+  filter instead of completion timestamps, making the quest log look random.
+  This restores proper chronological order.
+- **Conflicts:** None known
+- **Dependencies:** redscript
+- **MO2 Notes:** Extract `FinishedQuestsSorted.reds` to `Cyberpunk 2077/r6/scripts/`. Tag as **Root**.
+- **Performance:** None
+
+### Loot Icons Extension
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16386>
+- **Version:** 1.53
+- **Released:** 2025-09-10
+- **Summary:** Expands loot icons with 60+ vanilla icon variants, wall/scan
+  visibility options, tinting by quality, icon sorting, and full Mod Settings
+  customization.
+- **Why:** Vanilla loot icons use generic magazine icons for all ammo types and
+  lack variety. This makes loot evaluation faster with distinct icons per item
+  type, plus color tinting by quality for quick rarity assessment.
+- **Conflicts:** Incompatible with Better Loot Markers (self-disables if both installed)
+- **Dependencies:** ArchiveXL, Codeware, redscript 0.5.31+, TweakXL. Recommended: Mod Settings.
+- **MO2 Notes:**
+    - Extract to game root. Tag as **Root**.
+    - Configure via Mod Settings for icon scale, layout, tinting, and visibility.
+    - Optional "LIExt Light" version available without DLL files.
+- **Performance:** Light (icon rendering only on loot open)
+
+### RAM bar fix
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22503>
+- **Version:** 1.2
+- **Released:** 2025-09-20
+- **Summary:** Prevents the health bar from shifting right when you have many
+  RAM cells. Shrinks cells to fit and adds a filled/max RAM counter.
+- **Why:** With high RAM counts, the health bar moves to the right, breaking HUD
+  alignment. This fixes the layout and adds a useful RAM usage counter.
+- **Conflicts:** Not compatible with Informative HUD Quickhacks Memory Counter (counter would shrink with RAM cells)
+- **Dependencies:** RED4ext, redscript. Optional: Mod Settings (for counter size/position).
+- **MO2 Notes:**
+    - Extract to game root. Tag as **Root**.
+    - Optional file without RAM counter available (works with Streamlined Health Bar).
+    - Counter color changes based on RAM fill level.
 - **Performance:** None

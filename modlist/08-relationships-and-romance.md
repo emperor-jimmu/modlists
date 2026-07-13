@@ -69,6 +69,33 @@ and relationship progression.
 - **MO2 Notes:** Extract to game root. Works automatically — no configuration needed. Features activate when partner visits your apartment.
 - **Performance:** None
 
+### I Really Want To Stay At Your House - Judy
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/8753>
+- **Version:** 3.6.0
+- **Released:** 2026-06-01
+- **Summary:** Judy stays at V's apartments (H10, Glen, Japantown, Corpo Plaza) for 2-day visits with full Romanced Enhanced schedule. Choose between longer stays or shorter 2.1-style hangouts via text message.
+- **Why:** Vanilla romance hangouts end when V sleeps or leaves — Judy disappears back to her apartment. This lets her truly live with V for extended periods, with daily routines, showering, eating, sleeping, and window-gazing. Hug/kiss options included.
+- **Conflicts:** Compatible with all Romanced Enhanced mods. Compatible with Apartment Cats: Japantown (shares scene files).
+- **Dependencies:** ArchiveXL, RED4ext, Romance Hangouts Enhanced, Romanced Enhanced Showers Feature
+- **MO2 Notes:** Extract to game root. First visit is mandatory short hangout; subsequent messages offer \[Longer Stay?\] or \[Shorter Visit?\] choice. Reset command: `Game.SetDebugFact("deceptious_stay", 99)`. Uninstall only when Judy is not visiting.
+- **Performance:** None
+
+### Judy Flirts on Dates
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/13690>
+- **Version:** 1.1
+- **Released:** 2025-08-24
+- **Summary:** Replaces Judy's repetitive idle dialogue during apartment hangouts
+  with warmer, more natural lines. Targets the three most grating repeated lines.
+- **Why:** Judy's date dialogue ("Well? C'mon!", "Everything alright, V?") plays
+  on a short loop that breaks immersion during extended hangouts. Replacing these
+  with repurposed vanilla lines creates a smoother, more natural atmosphere.
+- **Conflicts:** Anything modifying the same dialogue or subtitles in the affected apartments
+- **Dependencies:** Romance Hangouts Enhanced v2.2.0+
+- **MO2 Notes:** Extract to game root. Install AFTER Romance Hangouts Enhanced. Affects all apartments. Subtitle sync and lipsync may not be perfect.
+- **Performance:** None
+
 ### Gone Away - Better Partner Suspended Behaviour
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19412>
@@ -92,6 +119,8 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 3. River Romanced Enhanced
 4. Kerry Romanced Enhanced
 5. Romance Hangouts Enhanced
-6. Gone Away - Better Partner Suspended Behaviour
+6. Judy Flirts on Dates
+7. Gone Away - Better Partner Suspended Behaviour
+8. I Really Want To Stay At Your House - Judy
 
 **Note:** Requires **Deceptious Quest Core** from 07-Quests & Stories for Gone Away to work fully for Kerry/River.

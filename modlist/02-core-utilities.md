@@ -139,6 +139,18 @@ depend on. Install these first -- nothing else works without them.
     - Settings appear under CET's overlay (default Insert key).
 - **Performance:** None
 
+### Browser Extension
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10038>
+- **Version:** 0.9.7
+- **Released:** 2025-09-20
+- **Summary:** Framework for adding custom web sites to the in-game browser homepage. Gathers and shows all vanilla journal-defined sites.
+- **Why:** Enables economy mods like Much Better Eddies with its Dead Channel black-market fixer line. Provides the in-game browser infrastructure that other mods depend on.
+- **Conflicts:** None known
+- **Dependencies:** redscript, RED4ext, Codeware. Optional: Mod Settings.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Custom sites can be added by creating a child of BrowserEventsListener (see CustomSiteExample in optional files).
+- **Performance:** None
+
 ## Install Order
 
 1. Visual C++ Redistributable 2022 (system prerequisite)

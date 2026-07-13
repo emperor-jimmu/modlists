@@ -225,6 +225,66 @@ crafting. This section defines how the game plays.
 - **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Install BEFORE Skillful Attributes. Read redscript requirements page for any additional dependencies.
 - **Performance:** None
 
+### Damage Scaling and Balance - Extended
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21865>
+- **Version:** 1.0.0
+- **Released:** 2025-05-20
+- **Summary:** Companion to Damage Scaling and Balance — extends the configurable damage curve with additional scaling options, enemy tier refinements, and new preset configurations.
+- **Why:** Adds finer-grained control over the damage curve for players who want more customization than the base DSaB provides. Integrates seamlessly with the existing DSaB framework.
+- **Conflicts:** Requires Damage Scaling and Balance (1712)
+- **Dependencies:** Damage Scaling and Balance (1712), Cyber Engine Tweaks, Native Settings UI, redscript
+- **MO2 Notes:** Extract to game root. Install AFTER Damage Scaling and Balance. Configure via Native Settings UI -> Mods -> Dmg. Scaling.
+- **Performance:** None
+
+### Much Better Eddies
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30532>
+- **Version:** 1.3
+- **Released:** 2026-07-12
+- **Summary:** Full economy overhaul — per-district reputation system with buy/sell price scaling, quest reward rebalance, and a Lester-style black-market fixer line (Dead Channel).
+- **Why:** Vanilla economy breaks by midgame — you're a millionaire with nothing meaningful to spend on. This rebuilds the curve: jobs are your income, loot is supplemental, and every district's reputation affects prices. Fits the "no cheat" philosophy by making the economy tighter, not easier.
+- **Conflicts:** NOT compatible with Economy Punk, Economy of 2077, Economy Tweaks, Economy Rebalance, Atelier Price Fixer. Compatible with Dark Future and Virtual Atelier.
+- **Dependencies:** Cyber Engine Tweaks, RED4ext, redscript, Native Settings UI, Codeware, TweakXL, Browser Extension
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI -> Mods -> Much Better Eddies. Five presets: Vanilla, Easy, Standard (default), Hard, Custom. New game recommended; existing saves need cleanup of acquired wealth.
+- **Performance:** Light (reputation tracking per district)
+
+### Renaissance Punk - Perk Scaling
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/14037>
+- **Version:** 2.12.1
+- **Released:** 2024-04-05
+- **Summary:** Makes all perks scale with their associated attributes and/or skills, growing more powerful as your character develops in those areas.
+- **Why:** Vanilla perks are static — they do the same thing at level 10 as level 60. This makes perk potency reflect your investment in attributes and skills, rewarding specialized builds and making level-up choices feel more impactful.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks, redscript, TweakXL, Mod Settings
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Renaissance Punk. Supports optional files for different scaling intensities.
+- **Performance:** None
+
+### Easier Controller Sprint
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26610>
+- **Version:** 1.1.0
+- **Released:** 2026-01-05
+- **Summary:** Makes controller sprint activate on left-stick press only, removing the requirement to also hold a face button. Toggle and hold modes supported.
+- **Why:** Vanilla controller sprint requires holding both left-stick click and a face button, which is ergonomically awkward. This makes sprinting feel natural on controller without changing game balance.
+- **Conflicts:** None known
+- **Dependencies:** redscript
+- **MO2 Notes:** Extract to game root. Files go to `r6/scripts/`. Choose hold or toggle mode in the config file.
+- **Performance:** None
+
+### Bounties Restored
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21820>
+- **Version:** 1.0.0
+- **Released:** 2025-05-15
+- **Summary:** Restores bounty values to non-elite enemies, making random encounters and open-world combat more financially rewarding.
+- **Why:** Vanilla 2.0 removed bounties from most enemies, flattening the reward curve for open-world combat. Restoring them gives every firefight a small monetary incentive, making random encounters feel worthwhile.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to `Cyberpunk 2077/bin/x64/plugins/cyber_engine_tweaks/mods/`. Configure via CET overlay.
+- **Performance:** None
+
 ### Watch Your Back
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27792>
@@ -246,24 +306,31 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 1. Cyberware-EX
 2. Stealthrunner - Stealth Gameplay Expansion
 3. Damage Scaling and Balance
-4. Silent Silencers and Throwing Knives
-5. Convo Skill Check Scaling
-6. Combat Evolved
-7. They Will Remember
-8. Much Better Netrunning
-9. Dead Body Alert
-10. Immersive Stealth Weapon
-11. Immersive Healing
-12. Immersive Grenades
-13. Immersive Throwables
-14. Throwable Weapon Reworked
-15. Weapon Conditioning (Tier System Overhaul)
-16. Skillful
-17. Skillful Attributes
-18. Flesh and Chrome
-19. Watch Your Back
+4. Damage Scaling and Balance - Extended
+5. Silent Silencers and Throwing Knives
+6. Convo Skill Check Scaling
+7. Combat Evolved
+8. They Will Remember
+9. Much Better Netrunning
+10. Dead Body Alert
+11. Immersive Stealth Weapon
+12. Immersive Healing
+13. Immersive Grenades
+14. Immersive Throwables
+15. Throwable Weapon Reworked
+16. Weapon Conditioning (Tier System Overhaul)
+17. Skillful
+18. Skillful Attributes
+19. Flesh and Chrome
+20. Watch Your Back
+21. Renaissance Punk - Perk Scaling
+22. Easier Controller Sprint
+23. Bounties Restored
+24. Much Better Eddies
 
 **Notes:**
 - **Skillful** must be installed **before** Skillful Attributes (Skillful Attributes requires it)
 - **Weapon Conditioning** should be installed before Skillful/Skillful Attributes for best compatibility
 - **Flesh and Chrome** addons (Carry Overhaul) go after the main Flesh and Chrome install
+- **Much Better Eddies** should be installed last in this category due to its broad economy overrides — install after all other gameplay mods
+- **Damage Scaling and Balance - Extended** must be installed after Damage Scaling and Balance
