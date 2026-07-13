@@ -82,6 +82,13 @@ Survival & Combat (red)
 -#a82e2e Survival & Combat – Enemy AI-   <!-- → guide/modlist-survival-combat.md -->
 -#c25050 Survival & Combat – Resources & Injuries- <!-- → guide/modlist-survival-combat.md -->
 
+Weapons & Armor (steel)
+-#5A6B7A Weapons & Armor-                <!-- → guide/modlist-weapons-armor.md -->
+-#6E8294 Weapons & Armor – Weapons-      <!-- → guide/modlist-weapons-armor.md -->
+-#8299AC Weapons & Armor – Armor-        <!-- → guide/modlist-weapons-armor.md -->
+-#96AFC2 Weapons & Armor – Artifacts-    <!-- → guide/modlist-weapons-armor.md -->
+-#AAC5D8 Weapons & Armor – Clothing & Wardrobe- <!-- → guide/modlist-weapons-armor.md -->
+
 Standalone separators
 -#C49A31 Legacy of the Dragonborn-       <!-- → guide/modlist-lotd.md -->
 -#808080 Testing & Curation-             <!-- → guide/modlist-curation.md -->

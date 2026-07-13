@@ -221,6 +221,7 @@ $files = @(
   "guide/modlist-world-content.md",
   "guide/modlist-npcs.md",
   "guide/modlist-creatures.md",
+  "guide/modlist-weapons-armor.md",
   "guide/modlist-audio.md",
   "guide/modlist-survival-combat.md",
   "guide/modlist-lotd.md",

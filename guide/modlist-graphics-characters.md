@@ -134,6 +134,12 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 | [Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655) | Higher-quality robe textures for all vanilla robes. |
 | [Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738) | Retexture of Divine Crusader armor set. |
 | [Nirn Necessities — SMP Accessories](https://www.nexusmods.com/skyrimspecialedition/mods/112481) | SMP-physics clothing accessories. Add [PBR patch](https://www.nexusmods.com/skyrimspecialedition/mods/135807) if using CS PBR. |
+| [aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382) | Comprehensive armor/weapon/dragon retexture. 207K endorsements. |
+| [aMidianBorn Content Addon](https://www.nexusmods.com/skyrimspecialedition/mods/35390) | Extends aMidianBorn coverage to additional armors. Install after Book of Silence. |
+| [aMidianBorn Content Addon - 3BA and HIMBO Patch](https://www.nexusmods.com/skyrimspecialedition/mods/144952) | Body refit patch for Content Addon. |
+| [Resurgence Armory - Artifact Weapons and Armor Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/83855) | Visual overhaul for artifact weapons and armor models. |
+| [3BA and HIMBO Refits for Resurgence Armors](https://www.nexusmods.com/skyrimspecialedition/mods/85669) | Body refit for Resurgence Armory armors. |
+| [HDT-SMP Vanilla Armors](https://www.nexusmods.com/skyrimspecialedition/mods/142450) | Adds HDT-SMP physics to all vanilla armors. |
 | [Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla](https://www.nexusmods.com/skyrimspecialedition/mods/141700) | Armor set with CBBE 3BA / HIMBO support. Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline. |
 
 ---
@@ -172,6 +178,7 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 | [Argonian - Khajiit FabULook Eyes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/15136) | Alternative | High-res eye textures for Argonian and Khajiit. |
 | [Beards of Power](https://www.nexusmods.com/skyrimspecialedition/mods/42635) | Alternative | High-fidelity beard meshes and textures. Adds variety over vanilla. |
 | [BnP - Teeth Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/84288) | Alternative | Higher-quality teeth meshes/textures. Complements BnP skin stack. |
+| [New Beast Feet](https://www.nexusmods.com/skyrimspecialedition/mods/107689) | Alternative | Higher-detail beast race (Khajiit/Argonian) feet with claws/digits. |
 | [SG Female Eyebrows](https://www.nexusmods.com/skyrimspecialedition/mods/25890) + [Improved](https://www.nexusmods.com/skyrimspecialedition/mods/93266) | Alternative | Higher-fidelity female eyebrow shapes. Use Improved variant. |
 | [Eyes of Beauty - Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/152223) | Alternative | Combines Eyes Nouveaux meshes with The Eyes of Beauty textures. Requires both as dependencies. |
 | Discipline-first route | Alternative | Rely on vanilla hair and eye textures entirely. |

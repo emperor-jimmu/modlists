@@ -40,17 +40,16 @@ Install **FOMOD Plus - A Mod Installation Overhaul for Mod Organizer 2** (<https
 
 ## Recommended Base Toolchain
 
-- `Mod Organizer 2` as the main mod manager and profile system
-- `SKSE64` and `Address Library for SKSE Plugins` as the runtime baseline
-- `SSEEdit` for conflict review, patch inspection, cleaning guidance, and record-level troubleshooting
-- `Wrye Bash` for later leveled-list and compatibility review where it still adds value
-- `Synthesis` for selective patcher-based automation once the stack is stable enough to justify it
-- `Cathedral Assets Optimizer` for asset cleanup and conversion tasks when a mod actually needs it
-- `BethINI Pie` for baseline INI management and graphics/settings normalization
-- `Skyrim Special Edition: Creation Kit` for resaving LE plugins to SE format; used alongside `Creation Kit Platform Extended` for stability
-- `xLODGen`, `TexGen`, and `DynDOLOD` for terrain/object/tree distant detail workflow
-- `BodySlide and Outfit Studio` for the chosen body pipeline
-- `Pandora Behaviour Engine Plus` for animation behavior generation
+- [`Mod Organizer 2`](https://www.nexusmods.com/skyrimspecialedition/mods/6194) as the main mod manager and profile system
+- [`SKSE64`](https://skse.silverlock.org/) and [`Address Library for SKSE Plugins`](https://www.nexusmods.com/skyrimspecialedition/mods/32444) as the runtime baseline
+- [`SSEEdit`](https://www.nexusmods.com/skyrimspecialedition/mods/164) for conflict review, patch inspection, cleaning guidance, and record-level troubleshooting
+- [`Wrye Bash`](https://www.nexusmods.com/skyrimspecialedition/mods/6837) for later leveled-list and compatibility review where it still adds value
+- [`Synthesis`](https://www.nexusmods.com/skyrimspecialedition/mods/140863) for selective patcher-based automation once the stack is stable enough to justify it
+- [`Cathedral Assets Optimizer`](https://www.nexusmods.com/skyrimspecialedition/mods/23316) for asset cleanup and conversion tasks when a mod actually needs it
+- [`BethINI Pie`](https://www.nexusmods.com/skyrimspecialedition/mods/153026) for baseline INI management and graphics/settings normalization
+- [`Skyrim Special Edition: Creation Kit`](https://store.steampowered.com/app/489490/Skyrim_Special_Edition_Creation_Kit/) for resaving LE plugins to SE format; used alongside [`Creation Kit Platform Extended`](https://www.nexusmods.com/skyrimspecialedition/mods/71371) for stability
+- [`xLODGen`](https://www.nexusmods.com/skyrimspecialedition/mods/10202), [`TexGen`](https://www.nexusmods.com/skyrimspecialedition/mods/68547), and [`DynDOLOD`](https://www.nexusmods.com/skyrimspecialedition/mods/68547) for terrain/object/tree distant detail workflow
+- `BodySlide and Outfit Studio` and `Pandora Behaviour Engine Plus` are installed as regular mods — see → [Characters & Creatures](modlist-graphics-characters.md) (BodySlide) and → [Animations](modlist-animations.md) (Pandora). They are still registered as MO2 executables (see tool registration below).
 
 ## Mod Organizer 2 Setup
 

@@ -282,52 +282,9 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 
 ---
 
-## Weapons, Armor, And Equipment Additions → separator: `World Content - Quests`
+## Weapons, Armor And Equipment Additions
 
-### Baseline
-
-| Mod                                          | Description                                     | Nexus                                                                                                                                                |
-|----------------------------------------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Immersive Weapons                            | ~230 new weapons. 114K endorsements.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/16788)                                                                                   |
-| Immersive Armors                             | ~55 armor sets, 396 shields. 206K endorsements. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3479)                                                                                    |
-| Immersive Armors Retexture and Mesh Fixes SE | Brings visuals in line with 4K PBR stack.       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75891)                                                                                   |
-| Dawnguard Arsenal SSE - SkyPatched           | SkyPatched variant.                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/25094) — SkyPatched: [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113677) |
-
-### Alternatives
-
-| Mod                                                                                                  | Description                                                            | Nexus |
-|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|-------|
-| [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)                              | Unique moon-themed weapon with quest content.                          |       |
-| [Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148)                         | Unique staff / Staff of Magnus replacer with expanded mechanics.       |       |
-| [Reliquary of Myth - Artifacts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/31612) | Artifact overhaul granting unique powers to daedric and quest rewards. |       |
-
-#### Armor Set Additions
-
-| Mod | Description | Notes |
-| --- | --- | --- |
-| [Armor Variants Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/34100) | Visual variants for every vanilla armor set. | Has CBBE patch. Fits medieval-Nordic aesthetic. |
-| [Ufok's Reinforced Leather Armour](https://www.nexusmods.com/skyrimspecialedition/mods/183824) | D&D-inspired light armor. | 3BA, CBBE, UBE, HIMBO, Vanilla. ESL, craftable, Skypatcher integration. |
-| [Tera Armors Collection](https://www.nexusmods.com/skyrimspecialedition/mods/9651) | Armor collection ported from TERA MMO. | CBBE. Evaluate visual fit. |
-| [Lustmord Vampire Armor - SSE CBBE Bodyslide](https://www.nexusmods.com/skyrimspecialedition/mods/16676) | CBBE 3BA vampire armor with physics. | 14K endorsements. |
-| [Wilderness Witch Outfit](https://www.nexusmods.com/skyrimspecialedition/mods/40963) | CBBE witch/mage outfit. | Fits grim-dark aesthetic. |
-| [Dark Mage of Plegia - hdt SMP (CBBE 3BA)](https://www.nexusmods.com/skyrimspecialedition/mods/84554) | CBBE 3BA SMP dark mage outfit. | 9K endorsements. |
-| [Dremora Markynaz Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79753) | Daedric-themed armor set. | Requires HDT-SMP. HIMBO refit ([125150](https://www.nexusmods.com/skyrimspecialedition/mods/125150)), CBBE ([79968](https://www.nexusmods.com/skyrimspecialedition/mods/79968)). |
-| [Silver Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79088) | Silver-themed armor set. | CBBE ([79319](https://www.nexusmods.com/skyrimspecialedition/mods/79319)), HIMBO ([87675](https://www.nexusmods.com/skyrimspecialedition/mods/87675)), HDT-SMP patch ([79255](https://www.nexusmods.com/skyrimspecialedition/mods/79255)). |
-| [Colovian Prince Set](https://www.nexusmods.com/skyrimspecialedition/mods/79894) | Colovian-themed armor set. | |
-| [Lifesworn Vestiges -- Champion of Arkay Armor](https://www.nexusmods.com/skyrimspecialedition/mods/136837) | Arkay-themed armor with optional SMP. | 3BA/HIMBO ([175271](https://www.nexusmods.com/skyrimspecialedition/mods/175271)). |
-| [Traveling Mage HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/69394) | Mage travel outfit with SMP. | CBBE 3BA/HIMBO ([69407](https://www.nexusmods.com/skyrimspecialedition/mods/69407)). |
-| [JS Helm of Yngol SE](https://www.nexusmods.com/skyrimspecialedition/mods/51346) | Unique helm mesh/texture replacer. | |
-| [Wind Ruler Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/60842) | Wind-themed armor set. | HDT-SMP ([63036](https://www.nexusmods.com/skyrimspecialedition/mods/63036)), HIMBO ([106036](https://www.nexusmods.com/skyrimspecialedition/mods/106036)). |
-| [Imperial Guard Centurion Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/50410) | Imperial guard armor set. | 3BA/HIMBO ([178841](https://www.nexusmods.com/skyrimspecialedition/mods/178841)), SPID ([123487](https://www.nexusmods.com/skyrimspecialedition/mods/123487)). |
-| [Fur-lined Steel Armor](https://www.nexusmods.com/skyrimspecialedition/mods/106305) | Fur-trimmed steel armor. | |
-| [Travelling Priest Robes](https://www.nexusmods.com/skyrimspecialedition/mods/118327) | Priest robe outfit. HIMBO/CBBE. | SPID distribution ([118464](https://www.nexusmods.com/skyrimspecialedition/mods/118464)). |
-| [Nibenean Armors and Outfit SE](https://www.nexusmods.com/skyrimspecialedition/mods/50785) | Nibenese-style armor/outfits. | SPID ([123477](https://www.nexusmods.com/skyrimspecialedition/mods/123477)), male HIMBO refit. |
-| [Templar Assassin Armor](https://www.nexusmods.com/skyrimspecialedition/mods/135547) | Assassin-themed armor. 3BA/BHUNP/CBBE/UNP. | HDT-SMP patch ([135910](https://www.nexusmods.com/skyrimspecialedition/mods/135910)). |
-| [Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/69047) | Unique Dwemer face visor. Xtudo version. | |
-| [Legendary Alpha Shields](https://www.nexusmods.com/skyrimspecialedition/mods/49387) | Shield variety pack. | SPID for NPCs ([80041](https://www.nexusmods.com/skyrimspecialedition/mods/80041)), Xtudo patches ([79895](https://www.nexusmods.com/skyrimspecialedition/mods/79895)). |
-| [Legendary Alpha Shields 2](https://www.nexusmods.com/skyrimspecialedition/mods/79264) | Additional shield variety pack. | SPID for NPCs ([80110](https://www.nexusmods.com/skyrimspecialedition/mods/80110)), Xtudo patches ([79617](https://www.nexusmods.com/skyrimspecialedition/mods/79617)). |
-| [JS Unique Utopia SE - Rings](https://www.nexusmods.com/skyrimspecialedition/mods/102226) | Unique ring mesh/texture replacer. | |
-| [Land of Vominheim - Unique Rewards by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/102839) | Unique rewards patch for Land of Vominheim. | Install if Vominheim is adopted. |
+Weapons, armor, artifacts, and clothing content has been consolidated into its own dedicated section. See → [Weapons & Armor](modlist-weapons-armor.md).
 
 ---
 
@@ -388,10 +345,14 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 | Saints and Seducers Extended Cut         | Transforms thin vanilla Creation into proper Shivering Isles return.                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72772)  |
 | Infiltration - Quest Expansion           | Thieves Guild / Skyrim quest expansion.                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114054) |
 | Caught Red Handed - Quest Expansion      | Riften jail quest expansion.                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65708)  |
-| The Taste of Death - Quest Addon         | Namira quest expansion.                                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123173) |
+| The Heart of Dibella - Quest Expansion   |                                                                                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94863)  |
+| Innocence Lost - Quest Expansion         |                                                                                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80974)  |
+| The Taste of Death - Quest Addon         | Namira quest expansion.                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123173) |
 | More to do in the Soul Cairn             | Soul Cairn quest and content addon.                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115962) |
 | Boethiah's Calling - Alternate Questline | Boethiah daedric quest alternative.                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121499) |
 | Mephala's Curse - Whispering Door Addon  | Whispering Door quest addon. Separable from the Quest Expansion — evaluate for overlap. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120650) |
+
+**Alternative:** **Boethiah for Good Guys** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/329)) — older alternative that allows completing Boethiah's Calling without sacrificing a follower. Incompatible with Boethiah's Calling - Alternate Questline — choose one.
 | Dungeon Quests are not Miscellaneous     | Converts 7 misc dungeon quests to full side quests with journal entries.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123559) |
 
 ### Standalone Adventures
@@ -469,4 +430,7 @@ All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)
 | Better Courier                                                      | Courier improvements — better delivery dialogue and behavior.                          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40709)  |
 | Quests Are In Skyrim                                                | Restricts radiant quest destinations to Skyrim province only. ESL-flagged.             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18416)  |
 | Andrealletius' Harder Quests                                        | Higher requirements for quest objectives — thaneships, nirnroot, solstheim quests, etc. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27939)  |
+| Finding Derkeethus                                                  | Quest expansion to find and rescue the Argonian follower.                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19550)  |
+| Finding Derkeethus Duplicate FormID Fix                             | Fix for duplicate FormID conflict.                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46391)  |
+| Jiub's Opus                                                         | Quest to find Jiub's journal pages across Solstheim.                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17056)  |
 | Informed Mail Delivery                                              | Quest-aware mail delivery with timed courier dispatches.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66339)  |

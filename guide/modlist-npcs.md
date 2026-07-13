@@ -15,6 +15,7 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 | Mod                                                                                                           | Type        | Notes                                                             |
 |---------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------|
 | [Northbourne NPCs of Whiterun Hold](https://www.nexusmods.com/skyrimspecialedition/mods/35404)                | Baseline    | Modern, regionally textured look. Grounded route.                 |
+| [Northbourne NPCs of Winterhold](https://www.nexusmods.com/skyrimspecialedition/mods/43413)                  | Baseline    | Same author/series. Regionally textured look for Winterhold.      |
 | [The Men of Winter SSE](https://www.nexusmods.com/skyrimspecialedition/mods/10902)                            | Baseline    | Dedicated male coverage. Last updated Aug 2020 — verify 1.6.1170. |
 | [Children of the First — Altmer NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/122167)     | Baseline    | Race-specific modular overlay for Altmer.                         |
 | [Children of the Ash — Dunmer NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/122165)       | Baseline    | Race-specific modular overlay for Dunmer.                         |
