@@ -199,15 +199,13 @@ Faithful 64x works with Complementary Unbound's Integrated PBR+ for realistic ma
 
 #### Keybindings (Set These Up First)
 
-| Keybind             | Default       | Mod                     | Notes                           |
-|---------------------|---------------|-------------------------|---------------------------------|
-| View Recipes        | `R`           | JEI                     | Hover over any item and press R |
-| View Uses           | `U`           | JEI                     | Hover over any item and press U |
-| Open Fullscreen Map | `J`           | Xaero's World Map       | Opens the big map               |
-| Toggle Minimap      | `H` (default) | Xaero's Minimap         | Shows/hides the corner minimap  |
-| Open Waystone Menu  | **Not set**   | Waystones               | Set to `Ctrl+Shift+W`           |
-| Open Backpack       | `B`           | Sophisticated Backpacks | Opens equipped backpack         |
-| Zoom                | **Not set**   | Sodium                  | Set to `C` — hold to zoom in    |
+Many mods add their own keybinds. Open **Options → Controls → Key Binds** and browse the categories at the bottom — each mod's binds are grouped under its name. The most useful ones to set:
+
+- **View Recipes** (`R`) and **View Uses** (`U`) — JEI
+- **Open Backpack** (`B`) — Sophisticated Backpacks
+- **Zoom** (`C`) — Sodium
+- **Open Waystone Menu** — Waystones (unbound by default)
+- **Open Fullscreen Map** (`J`) — Xaero's World Map
 
 ### Session Plan — Wave 0
 
