@@ -409,7 +409,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                                         | Role                                                                                           |
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) 1.1.5 | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable |
+| [Immersive Aircraft](https://modrinth.com/mod/immersive-aircraft) 1.1.5                      | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable |
 
 ### Configuration — Wave 2
 
