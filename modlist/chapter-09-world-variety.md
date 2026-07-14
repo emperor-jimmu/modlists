@@ -21,6 +21,13 @@
 - Giddy-Up! (mounts and rideable animals — actually, this might be more gameplay?)
 - World Map Beautification Project (better map visuals) -->
 
+### [More Vanilla Biomes](https://steamcommunity.com/sharedfiles/filedetails/?id=1931453053)
+
+- **What it does:** Adds 10 vanilla-friendly biomes including Glacial Shield, Badlands, Cloud Forest, Marsh, Stormy Savanna, Coastal Dunes, Sandbar, Alpine Meadow, Oasis, and Ice Floes. Each has distinct terrain, flora, and wildlife distributions.
+- **Why it's here:** RimWorld's vanilla biomes are limited and can get repetitive. More Vanilla Biomes slots seamlessly into world generation with biomes that feel like they belong — no sci-fi gimmicks, just more variety for starting location choices.
+- **Not OP because:** New biomes have balanced terrain and resource distributions. Some are harder (Ice Floes), some easier (Alpine Meadow). They don't add op items or mechanics. Has built-in compatibility patches for many animal and plant mods.
+- **Install:** OK to install now, but best experience on a new world save. Requires Harmony. Compatible with most biome and world-gen mods.
+
 ## Installation Checkpoint
 <!-- TODO: OK to install now if you're starting a new colony. Some faction mods are best on fresh world gen. -->
 
