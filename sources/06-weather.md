@@ -294,6 +294,60 @@ A standalone rain enhancement mod that reworks ETS2's rain visuals and audio:
 
 ---
 
+---
+
+## Roadbound True Rain 2K
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 2K preset (Experimental) |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3738884203) |
+| **Author** | snazzyatoms |
+| **Type** | Rain physics + graphics + audio |
+| **Category** | Weather Setups |
+
+A standalone rain enhancement mod by snazzyatoms (author of Roadbound Economy, RealRoads AI Traffic) currently in early experimental public testing:
+
+- **2K preset** — custom 2048 rain texture, 32,000 droplets/meter (vanilla: 5,000)
+- **Dynamic rain intensity** — storm cells ramp from light drizzle to heavy/extreme rainfall
+- **Wet-road behavior** — realistic surface puddling and water sheen
+- **Windshield droplets** — high-density drop physics with directional wind/rain interaction
+- **Rain audio** — cabin EQ tuning, windshield rain positioning, exterior/world rain routing
+- Cabin rain EQ patched for 17 base-game trucks; 16 with windshield glass tuning
+- Future presets planned: Lite 512MB, Performance, 4K Ultra
+
+**Compatibility:** Built for ETS2 1.59.x, reported working on 1.60. Standalone — no other Roadbound mod required. Compatible with base-game trucks. Third-party truck mods with custom glass/interior files may not receive windshield droplet tuning.
+
+**Load Order:** Place above other weather/graphics mods. If using Roadbound True Night, place True Night above True Rain.
+
+**Performance Impact:** Moderate (~3-8% FPS loss at 4K) due to high droplet density and enhanced rain physics.
+
+---
+
+### RealRoads True Night
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3721755061) |
+| **Author** | snazzyatoms |
+| **Type** | Night lighting / environment |
+| **Category** | Weather Setups |
+| **Subscribers** | 5,861 |
+
+Darker, more realistic nighttime driving — rural roads, highways, and unlit areas become darker and more dependent on headlights:
+
+- Darker nighttime ambient lighting on rural roads and highways
+- Stronger contrast between lit urban areas and unlit country roads
+- Adjusts night visibility without making the game unplayable
+- Does NOT change traffic density, AI behavior, economy, map layouts, weather frequency, or physics
+
+**Compatibility:** Edits environment/lighting files. Works with traffic, truck, trailer, sound, and economy mods. May conflict with other graphics, weather, HDR, skybox, or lighting mods that edit the same files. Do not combine with other night lighting or HDR mods.
+
+**Performance Impact:** Negligible (1.96 MB — definition-only, no high-res textures).
+
+---
+
 ## Summary Table
 
 | Mod | Category | Size | FPS Impact (4K) | VRAM Impact | Best For |
@@ -310,6 +364,8 @@ A standalone rain enhancement mod that reworks ETS2's rain visuals and audio:
 | PNG Autumn Addon | Seasonal | Bundled | 6-10% | +1-2 GB | Requires PNG/Nextgen base |
 | Project Ultimate Weather 2.0 | Weather | ~53 MB | 1-2% | Minimal | Paid v2.0, free v1.0 available |
 | TM Realistic Rain v1.1 | Rain | ~5.5 MB | 2-3% | Minimal | Standalone rain overhaul |
+| Roadbound True Rain 2K | Rain (Experimental) | ~50 MB | 3-8% | +300 MB | High-density rain physics + audio |
+| RealRoads True Night | Night lighting | 1.96 MB | <1% | Negligible | Darker night driving, headlight-dependent roads |
 
 ### Notes
 

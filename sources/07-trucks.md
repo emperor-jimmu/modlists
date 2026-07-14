@@ -362,9 +362,15 @@ A conversion of the Volvo VNL (North American model) for ETS2:
 
 ---
 
-## Interior & Dashboard Accessories
+## Interior & Dashboard Mods
 
-These mods add cabin accessories, GPS screens, decorations, and trim options compatible with a wide range of trucks.
+Interior and dashboard mods improve the in-cab experience — from cabin accessories and dashboard replacements to improved gauge displays and infotainment enhancements. This section covers both universal accessories and truck-specific dashboard improvements compatible with ETS2 **1.60**.
+
+---
+
+### Universal Accessories
+
+These mods work across all trucks that support cabin accessories, adding decorations, GPS devices, trim options, and visual upgrades.
 
 ---
 
@@ -481,6 +487,150 @@ Adds additional light mounting options and light accessories for trucks:
 
 ---
 
+### Truck-Specific Dashboard Mods
+
+These mods replace or enhance the dashboard and infotainment display for specific SCS truck models. Each mod targets a particular truck and adds extra information pages, improved gauges, better readability, and realistic features. Only one dashboard mod should be active per truck model at a time.
+
+---
+
+#### Iveco S-Way Improved Dashboard v1.60
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v1.60 |
+| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-others/iveco-s-way-improved-dashboard-v1-60/) / [ets3mods.com](https://ets3mods.com/iveco-s-way-improved-dashboard-1-60/) |
+| **Author** | Community |
+| **Type** | Dashboard replacement |
+| **Truck** | SCS Iveco S-Way |
+
+An improved dashboard display for the SCS Iveco S-Way with clearer gauges, additional information panels, and a rebuilt infotainment module:
+
+- Redesigned digital dashboard with clearer gauges and information layout
+- Blind spot indicators, ETA, rest timer, low beam icon
+- Fuel gauges with remaining fuel/AdBlue percentage
+- Estimated operating range and trip average consumption
+- "Always On Display" infotainment page
+- Passenger MirrorCam pages on GPS module
+
+**Compatibility:** 1.60. Requires SCS Iveco S-Way.
+
+**Performance Impact:** Negligible.
+
+---
+
+#### Realistic Scania SmartDash v1.60
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v1.60 |
+| **Source** | [ets3mods.com](https://ets3mods.com/realistic-scania-smartdash-1-60/) |
+| **Author** | Community |
+| **Type** | Dashboard enhancement |
+| **Truck** | SCS Scania NG (S/R) |
+
+Enhances the Scania NG SmartDash display with realistic information pages inspired by real Scania dashboards:
+
+- New "Vehicle Information" page with odometer, trip time, remaining navigation time
+- Cruise control tolerance gauge and memory icon
+- Lift axle indicators (truck + trailer)
+- Engine brake icon and 120 km/h speed mark
+- Working compass on GPS screen
+- Ambient temperature and fan values on navigation display
+- ETA and time-to-rest indicators
+- Speed limit displayed on all pages
+
+**Note:** Speedometer reaches 120 km/h mark at 110 km/h due to game engine limitation.
+
+**Compatibility:** 1.60. Requires SCS Scania NG S/R. Marked as optional tag for convoy sessions.
+
+**Performance Impact:** Negligible.
+
+---
+
+#### Scania NG Improved Dashboard 1.60
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 1.60 |
+| **Source** | [ets3mods.com](https://ets3mods.com/scania-ng-improved-dashboard-1-60/) / [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2716102181) |
+| **Author** | KnightRider |
+| **Type** | Dashboard overhaul |
+| **Truck** | SCS Scania NG (S/R) |
+
+A comprehensive dashboard overhaul for the Scania NG with extensive additional gauges and information pages:
+
+- Oil temperature gauge and turbo pressure bar
+- Left/right blind spot indicators with improved warning sounds
+- Truck/trailer lift axle indicators
+- Cruise control memory icon and tolerance gauge
+- Remaining fuel/AdBlue percentage on all pages
+- Odometer, trip distance, average speed, trip time
+- ETA and time until rest on infotainment
+- Rear axle load page and suspension load bar
+- 3 new decorative infotainment pages
+- V8 logo in V8 interior (Exclusive cabin)
+- New interiors for R/S High Roof cab (Super/770 variants)
+
+**Note:** More feature-rich than the Realistic SmartDash — choose the one whose feature set you prefer. They should not be used together.
+
+**Compatibility:** 1.60. Requires SCS Scania NG S/R. Also compatible with the Next Generation Scania P G R S Pack mod.
+
+**Performance Impact:** Negligible.
+
+---
+
+#### MAN TGX 2020 Improved Dashboard 1.60
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 1.60 |
+| **Source** | [ets3mods.com](https://ets3mods.com/man-tgx-2020-improved-dashboard-1-60/) |
+| **Author** | Community |
+| **Type** | Dashboard overhaul |
+| **Truck** | SCS MAN TGX 2020 |
+
+A modern dashboard overhaul for the SCS MAN TGX 2020 with a redesigned layout and enhanced visuals:
+
+- Redesigned dashboard with modern layout and higher resolution textures
+- Sharper gauges with enhanced lighting and backlighting
+- Improved needle animations and warning lights
+- Realistic reflections and materials
+- Left/right blind spot indicators
+- Remaining fuel & AdBlue percentage
+- Turbo gauge and compass on GPS display
+- ETA and time until rest indicators
+- "Always On Display" infotainment page
+
+**Compatibility:** 1.60. Requires SCS MAN TGX 2020. Works with skins and tuning packs.
+
+**Performance Impact:** Negligible.
+
+---
+
+#### DAF 105 XF Customisable Dash 1.60
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 1.60 |
+| **Source** | [ets3mods.com](https://ets3mods.com/daf-105-xf-customisable-dash-1-60/) |
+| **Author** | Community |
+| **Type** | Dashboard replacement |
+| **Truck** | SCS DAF XF 105 |
+
+A customisable dashboard computer UI for the DAF XF 105:
+
+- Improved text sizes and colours
+- Black LCD screen styling
+- Trip screen with additional information
+- ETA and speed limit upgrades
+- Option to customise player/company names
+
+**Compatibility:** 1.60. Requires SCS DAF XF 105.
+
+**Performance Impact:** Negligible.
+
+---
+
 ## Realistic Truck Physics & Handling
 
 These mods change the way trucks feel on the road — suspension, weight transfer, braking, and tyre grip.
@@ -512,6 +662,37 @@ Mods in this category adjust:
 **Compatibility:** 1.60 (check individual mod pages for latest update). Physics mods are sensitive to game version changes.
 
 **Performance Impact:** Negligible — no additional graphics load.
+
+---
+
+## Engine & Transmission Mods
+
+Engine and transmission mods add or replace powertrain options across multiple trucks — providing realistic power curves, additional gear ratios, tuned transmissions for heavy hauling, and compatibility across SCS and modded trucks.
+
+---
+
+### Realistic Engines & Transmissions Pack
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3683879173) |
+| **Author** | SNDTJR |
+| **Type** | Engine + transmission pack |
+| **Category** | Truck parts: Engines, Transmissions |
+| **Rating** | 119 ratings |
+
+An updated and expanded engine and transmission pack inspired by real-world heavy-truck powertrains:
+
+- Engines inspired by Volvo, Cummins Big Cam, Detroit Diesel, PACCAR, and others
+- Transmissions configured to match engine torque curves for realistic driving
+- Multiple horsepower and torque options
+- Better performance under heavy loads
+- Compatible with most SCS and modded trucks
+
+**Compatibility:** 1.60 (reported working). Steam Workshop auto-updates.
+
+**Performance Impact:** Negligible — definition and data only, no new 3D models.
 
 ---
 
@@ -597,6 +778,11 @@ Lightbox (roof lightbar) pack for Scania trucks:
 | Mercedes Actros MP6 v1.60    | Truck rework         | ✅ Yes         | 5-8%       | +500 MB     | MirrorCam included                   |
 | DAF XF 105 Bart De Vries v10 | Standalone truck     | ✅ Yes         | 5-8%       | +500 MB     | Bundled trailer, custom interior     |
 | Renault Range T Evo v2.4     | Standalone truck     | ✅ Yes         | 5-8%       | +500 MB     | ★ Baseline alt, by Gloover, massive tuning |
+| Iveco S-Way Improved Dash     | Dashboard (Iveco S-Way) | ✅ Yes     | <1%        | Minimal     | SCS Iveco S-Way only                |
+| Realistic Scania SmartDash    | Dashboard (Scania NG) | ✅ Yes       | <1%        | Minimal     | SCS Scania NG only                  |
+| Scania NG Improved Dashboard  | Dashboard (Scania NG) | ✅ Yes       | <1%        | Minimal     | KnightRider, more gauges            |
+| MAN TGX 2020 Improved Dash    | Dashboard (MAN TGX)  | ✅ Yes         | <1%        | Minimal     | SCS MAN TGX 2020 only               |
+| DAF 105 XF Customisable Dash  | Dashboard (DAF XF 105) | ✅ Yes       | <1%        | Minimal     | SCS DAF XF 105 only                 |
 | Ford F-Max Special Edition   | Standalone truck     | ✅ Yes         | 5-10%      | +600 MB     | High detail, ICCOTY 2020             |
 | Iveco Hi-Way v8x4            | Truck rework         | ✅ Yes         | 5-8%       | +400 MB     | 22 chassis, 20 engines               |
 | Iveco S-Way Hi-Powered       | Truck rework         | ✅ Yes         | 5-8%       | +400 MB     | Tuned engines included               |

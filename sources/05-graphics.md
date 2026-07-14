@@ -151,6 +151,30 @@ A premium ReShade preset from the Project Ultimate series, designed to deliver c
 
 ---
 
+### Dynamic Lights & Better Headlights v1.0
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v1.0 |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3745429929) |
+| **Author** | Marc81 (MS CUSTOM DESIGNS) |
+| **Type** | Lighting overhaul |
+| **Category** | Graphics |
+
+A complete lighting overhaul that redesigns truck lights and AI traffic behavior for more realistic nighttime driving:
+
+- **True Dynamic Flares** — front and taillights react naturally to distance and viewing angle
+- **Modern Cut-off Lines** — low beams with sharp, wide, realistic LED/Halogen pattern on asphalt
+- **Extreme High Beam Range** — high beams pierce far into the dark, lighting roads, signs, and scenery
+- **No Interior Dimming** — custom asset structure prevents automatic dimming bugs with custom interiors
+- **Global AI Traffic Upgrade** — all AI cars and trucks receive the same realistic lighting treatment
+
+**Compatibility:** Tested on 1.60. Works alongside graphics and weather mods — place it above them in mod manager.
+
+**Performance Impact:** Low-Moderate (593 KB).
+
+---
+
 ## Summary Table
 
 | Mod | FPS Impact (4K) | VRAM Impact | Best For | Category |
@@ -162,6 +186,7 @@ A premium ReShade preset from the Project Ultimate series, designed to deliver c
 | ReShade Presets | ~3-6 FPS loss | Varies | Color grading | Post-processing |
 | Snowymoon v2 | ~2-4 FPS loss | Minimal | Lighting/plugin | DX11 Injector |
 | Project Ultimate RealEye | ~5-10 FPS loss | Varies | Cinematic ReShade | Reshade (paid) |
+| Dynamic Lights & Better Headlights v1.0 | ~2-4 FPS loss | Minimal | Realistic night lighting | Lighting |
 
 ### Recommendation
 

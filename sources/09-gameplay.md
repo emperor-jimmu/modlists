@@ -57,6 +57,33 @@ Notable economy mods compatible with 1.60:
 
 **Note:** Economy mods are sensitive to game updates and each other. Only one economy-modifying mod should be active per profile.
 
+---
+
+### Roadbound Economy - ETS2 - Light
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3721907696) |
+| **Author** | snazzyatoms |
+| **Type** | Economy modifier |
+| **Category** | Game Economy |
+
+A standalone economy-only gameplay mod that slows the money curve while keeping things casual-friendly:
+
+- Freight and cargo market income reduced compared to stock
+- Hired-driver income reduced so employees don't generate money too quickly
+- Adjusted garage purchase costs, upgrade costs, and company growth costs
+- Stronger cargo damage penalties and abandoned-job penalties
+- Higher towing, emergency refuel, and related service costs
+- **Light preset** — friendly vanilla-plus economy, slightly lower pay and slightly higher costs
+
+**Variants:** Vanilla Plus (recommended default), Medium, Cruel Reality — packaged separately. Use only one at a time.
+
+**Compatibility:** Edits only the economy data file — compatible with most traffic, truck, trailer, sound, and map mods. Do not use with other economy mods.
+
+**Performance Impact:** Negligible (27 KB).
+
 **Role-Playing Potential:** Very High — a realistic economy turns every delivery into a financial decision. Players must choose routes carefully, maintain their truck proactively, and grow their company organically.
 
 ---
@@ -154,6 +181,36 @@ Adds a wide variety of real-world vehicles to AI traffic, replacing the vanilla 
 
 ---
 
+### RealRoads AI Traffic - Real World AI Traffic Medium for ETS2
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 0.3.4 |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3719609355) |
+| **Author** | snazzyatoms |
+| **Type** | AI traffic density / behavior |
+| **Category** | AI Traffic |
+| **Subscribers** | 3,261 |
+
+An original AI traffic tuning project built from current SCS game definitions, shaped around real road flow:
+
+- Realistic European motorway flow with commuter peaks and controlled overnight traffic
+- Hourly-style traffic curves for natural road flow
+- Morning and evening rush-hour traffic shaping
+- Busier motorways and city approaches with more noticeable freight traffic
+- AI safety and patience tuning including yield timing improvements
+- Supports ETS2 1.58/1.59 — avoids overriding full base-game traffic_rules.sii
+
+**Preset guidance:** Light (weaker PCs/VR), Medium (recommended default), Heavy (busier roads). Use only one preset at a time.
+
+**Compatibility:** 1.59 (current). Do not combine with other traffic density or AI behavior mods that edit the same files.
+
+**Performance Impact:** Low — optimized traffic CPU usage, no VRAM impact.
+
+> **Night Quiet Add-On (Medium):** An optional add-on ([Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3745637986)) that reduces traffic spawn frequency from 12:00 AM to 4:00 AM to ~35% of the Medium preset's overnight rate. Creates quieter late-night driving without changing daytime or rush-hour curves. Place the add-on **above** RealRoads AI Traffic Medium in load order.
+
+---
+
 ### Real Traffic Density (Steam Workshop)
 
 | Field | Detail |
@@ -239,6 +296,30 @@ The largest multiplayer platform for ETS2 and ATS. While primarily a multiplayer
 
 ---
 
+### SCAR - Super Compact Advisor Rework
+
+| Field | Detail |
+|-------|--------|
+| **Version** | 1.60 Updated |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3735790362) |
+| **Author** | Cal |
+| **Type** | UI / route advisor replacement |
+| **Category** | UI |
+| **Rating** | 32 ratings |
+
+Replaces the standard Route Advisor with a super compact version that shows only the bare essentials at the bottom of the screen:
+
+- Displays speed, tachometer, navigation, company messages, finances, and damage info
+- Requires Widgets to be enabled in-game (press F1 → Widgets)
+- No built-in GPS/navigation map — uses your truck's GPS instead
+- Remake of BOBmat4's SuperCompact Advisor
+
+**Compatibility:** 1.60+. Requires Widgets to be enabled.
+
+**Performance Impact:** Negligible (218 KB).
+
+---
+
 ### SiSL's Route Advisor {★ Baseline}
 
 | Field | Detail |
@@ -260,6 +341,24 @@ An enhanced navigation and information display for ETS2/ATS. Not to be confused 
 **Role-Playing Potential:** Medium — enhances immersion by providing professional-grade navigation information. The customisable layouts let players set up a dashboard that feels like a real truck's info system.
 
 **Compatibility:** Steam Workshop auto-updates for latest ETS2 versions.
+
+**Performance Impact:** Negligible.
+
+---
+
+### Kafka English GPS Voice Mod
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3753425277) |
+| **Author** | Tacho_Meter |
+| **Type** | GPS voice navigation |
+| **Category** | Voice Navigation |
+
+Replaces the default GPS voice with Kafka-style English voice navigation directions.
+
+**Compatibility:** 1.60+. Works alongside any route advisor mod — voice navigation is a separate system.
 
 **Performance Impact:** Negligible.
 
@@ -305,34 +404,11 @@ These mods add consequences for poor driving, encouraging more careful and reali
 
 ## Quality-of-Life & Dashboard Mods
 
-These mods improve the driving interface, dashboard information, and overall user experience.
+These mods improve the driving interface and overall user experience. (Truck-specific dashboard replacements can be found in the Interior & Dashboard Mods section of the Trucks chapter.)
 
 ---
 
-### Iveco S-Way Improved Dashboard v1.60
-
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [ets2mods.lt](https://ets2mods.lt/euro-truck-simulator-2-mods/ets2-others/iveco-s-way-improved-dashboard-v1-60/) |
-| **Author** | Community |
-| **Type** | Dashboard replacement |
-| **Category** | Others |
-
-An improved dashboard display for the Iveco S-Way (SCS version):
-
-- Redesigned digital dashboard with clearer gauges and information layout
-- Larger readable navigation/info displays
-- Improved colour scheme for day and night driving
-- Additional information panels for fuel economy and trip data
-
-**Role-Playing Potential:** Medium — a more realistic, readable dashboard enhances the feeling of driving a modern truck. Useful for interior-camera drivers.
-
-**Compatibility:** 1.60. Requires SCS Iveco S-Way.
-
-**Performance Impact:** Negligible.
-
----
+<!-- Iveco S-Way Improved Dashboard moved to 07-trucks.md (Interior & Dashboard Mods) -->
 
 ### Collision Model Mod v1.60 {★ Baseline}
 
@@ -413,31 +489,7 @@ Adds 54 new ferry connections across Europe:
 
 ---
 
-### Realistic Scania SmartDash v1.60
-
-| Field | Detail |
-|-------|--------|
-| **Version** | v1.60 |
-| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/realistic-scania-smartdash-v160) |
-| **Author** | Community |
-| **Type** | Dashboard replacement |
-| **Category** | Other |
-| **Downloads** | 65 |
-
-Replaces the Scania NG digital dashboard with a realistic SmartDash display:
-
-- Accurate Scania SmartDash layout and graphics
-- Realistic gauge needles and indicator lights
-- Improved readability in direct sunlight and at night
-- ADAS-style driver assist information panel
-
-**Role-Playing Potential:** Medium — an authentic SmartDash display makes Scania NG drivers feel like they're sitting in a real Next Generation Scania.
-
-**Compatibility:** 1.60. Requires SCS Scania NG S/R.
-
-**Performance Impact:** Negligible.
-
----
+<!-- Realistic Scania SmartDash moved to 07-trucks.md (Interior & Dashboard Mods) -->
 
 ### Indonesia Gameplay Mods v1
 
@@ -523,12 +575,35 @@ Replaces vanilla license plates on trucks, trailers, and AI traffic with realist
 
 ---
 
+### Realistic EV License Plates
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Latest |
+| **Source** | [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3744843033) |
+| **Author** | Community |
+| **Type** | World detail / license plate |
+| **Category** | Map addon |
+| **Rating** | New (not enough ratings yet) |
+
+A small mod that adds special green/electric vehicle license plates to AI traffic, reflecting the real-world EV plate formats adopted across Europe:
+
+- Countries supported: Germany, Poland, Norway, Latvia, Romania, Bulgaria, Hungary, Slovakia, Austria, Czechia
+- Applies to electric vehicles in AI traffic
+- Works with vanilla vehicles only
+- Tested on 1.60
+
+**Compatibility:** 1.60. Works alongside License Plates 3 by JmZ and Real Company Logo. Requires a **Sound Fixes Pack compatibility patch** (link on workshop page) if using Sound Fixes Pack by Drive Safely — place the patch above both mods.
+
+**Performance Impact:** Negligible — texture replacement only.
+
+---
+
 ## Load Order & Compatibility
 
 ```
 HIGH PRIORITY
   Collision Model Mod
-  Dashboard replacements (Iveco, Scania SmartDash, etc.)
   Animated Steering Wheel
   |
   v
@@ -553,8 +628,9 @@ LOW PRIORITY
 - **Only one economy mod** per profile — stacking economy mods causes unpredictable income and cost calculations.
 - **Traffic density + AI vehicle packs** can be combined (density mod above, vehicle pack below).
 - **Police/parking enforcement** mods go last in load order — they need to override all other traffic definitions.
-- **Dashboard mods** are truck-specific and only affect their target truck. Use freely with any other mods.
+- **Dashboard mods** are truck-specific and listed in the Interior & Dashboard Mods section of the Trucks chapter. Use freely with any other mods.
 - **Ferry Plus** requires ProMods — place above ProMods map files in load order.
+- **Realistic EV License Plates** goes alongside License Plates 3 in the world details section of the load order.
 
 ---
 
@@ -563,7 +639,10 @@ LOW PRIORITY
 | Mod | Type | 1.60 Ready | FPS Impact | RP Potential | Notes |
 |-----|------|-----------|------------|-------------|-------|
 | TDS ECO Grand Garage | Economy | ✅ Yes | Negligible | High | Unofficial port, economy rebalance |
+| Roadbound Economy - ETS2 - Light | Economy | ✅ Yes | Negligible | Medium | Vanilla-plus, casual-friendly, standalone |
 | EXPRESS PERFORMANCE MOD | Traffic + FPS | ✅ Yes | +25–45% | High | Rush-hour curves, CPU relief |
+| RealRoads AI Traffic Medium | Traffic behavior | ✅ Yes (1.59) | <2% | High | Real flow curves, rush-hour shaping |
+| RealRoads Night Quiet Add-On | Traffic (add-on) | ✅ Yes | <2% | Medium | ~35% overnight traffic reduction |
 | Brutal Traffic v8.1 | Traffic behavior | ✅ Yes | <2% | High | Realistic AI, weather-reactive |
 | AI Traffic Pack v2.5 | Traffic variety | Check mod page | -3–8% | Medium | Real vehicle models |
 | Real Traffic Density | Traffic density | ✅ Yes | Low-Moderate | Medium-High | Steam Workshop |
@@ -575,11 +654,13 @@ LOW PRIORITY
 | Collision Model Mod | Physics | ✅ Yes | Negligible | High | Realistic damage |
 | Animated Steering Wheel | Animation | ✅ Yes | Negligible | Low-Medium | Cosmetic only |
 | Ferry Plus v5.0.1 | Travel | ✅ Yes | Negligible | Medium | Requires ProMods |
-| Scania SmartDash v1.60 | Dashboard | ✅ Yes | Negligible | Medium | Scania NG only |
-| Iveco S-Way Improved Dashboard | Dashboard | ✅ Yes | Negligible | Medium | Iveco S-Way only |
+<!-- Dashboard mods moved to 07-trucks.md (Interior & Dashboard Mods) -->
 | Indonesia Gameplay Mods | Overhaul pack | Check mod page | Low-Moderate | High | All-in-one |
+| SCAR - Super Compact Advisor Rework | UI | ✅ Yes | Negligible | Medium | Minimal bottom-screen HUD, no GPS |
+| Kafka English GPS Voice Mod | Voice navigation | ✅ Yes | Negligible | Low | Replace GPS voice with Kafka-style EN |
 | License Plates 3 by JmZ | World detail | ✅ Yes | Negligible | Medium | Realistic EU license plates on trucks/trailers |
 | Real Company Logo v3.4 | World detail | ✅ Yes | Negligible | High | Real gas stations, company logos, signs |
+| Realistic EV License Plates | World detail | ✅ Yes | Negligible | Low | Green EV plates on AI traffic, 10 countries |
 
 ### Recommended Starter Setup
 
@@ -588,13 +669,16 @@ For a balanced role-playing experience focused on immersion and realism:
 ```
 Load Order:
 1. Collision Model Mod v1.60
-2. Realistic Scania SmartDash v1.60 (or Iveco S-Way Dashboard)
-3. TDS ECO Grand Garage v1.0
-4. Real Company Logo v3.4, License Plates 3
-5. Real Traffic Density (Steam Workshop)
-6. Real Company Skins (various)
-7. EXPRESS PERFORMANCE MOD (bottom)
-8. Police Enforcement Mod (lowest)
+<!-- 2. Dashboard mods: see Interior & Dashboard Mods section in the Trucks chapter -->
+3. TDS ECO Grand Garage v1.0 (or Roadbound Economy - ETS2 - Light)
+4. Real Company Logo v3.4, License Plates 3, Realistic EV License Plates
+5. RealRoads AI Traffic Medium (above Night Quiet Add-On if using)
+6. RealRoads Night Quiet Add-On (below Medium, above other traffic)
+7. Real Company Skins (various)
+8. SCAR - Super Compact Advisor Rework + SiSL's Route Advisor
+9. Kafka English GPS Voice Mod
+10. EXPRESS PERFORMANCE MOD (bottom)
+11. Police Enforcement Mod (lowest)
 ```
 
-This setup adds financial challenge, realistic traffic, authentic branding, driving consequences, and better in-cab information — transforming ETS2 into a genuine trucking role-playing experience without overcomplicating the mod profile.
+This setup adds financial challenge, realistic traffic with natural day/night curves, authentic branding, driving consequences, a compact clean HUD, and better in-cab information — transforming ETS2 into a genuine trucking role-playing experience without overcomplicating the mod profile.
