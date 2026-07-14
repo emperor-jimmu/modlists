@@ -35,6 +35,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Draugrs — New models and textures](https://www.nexusmods.com/skyrimspecialedition/mods/123170) | Baseline | Most-seen undead enemy. |
 | [Spider SE](https://www.nexusmods.com/skyrimspecialedition/mods/182638) | Baseline | |
 | [Deer Reworked — Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/155433) | Baseline | |
+| [TNT - True Nordic Trolls - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/140979) | Baseline | Troll model/texture overhaul. |
 | [Cannibal Draugr on Solstheim](https://www.nexusmods.com/skyrimspecialedition/mods/21238) | Baseline | Bloodmoon-flavored identity. |
 | [Hagraven — New models and Textures](https://www.nexusmods.com/skyrimspecialedition/mods/160407) | Baseline | |
 | [Butterfly Improved by zzjay](https://www.nexusmods.com/skyrimspecialedition/mods/37302) | Baseline | |

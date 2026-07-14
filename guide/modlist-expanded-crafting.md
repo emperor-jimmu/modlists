@@ -90,6 +90,12 @@ Prerequisite chain for Chop Chop woodcutting gameplay:
 
 Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` from → [Animations & Movement](modlist-animations.md) for mining/chopping weapon animations.
 
+### Farming & Gardening
+
+| Mod | Dial | Notes |
+| --- | ---- | ----- |
+| [Simplicity of Seeding - Better Hearthfires and Farming CC Planter Scripts](https://www.nexusmods.com/skyrimspecialedition/mods/94428) | all | Improves Hearthfires planter scripts for more reliable farming. ESL-flagged. |
+
 ---
 
 ## Economy And Loot Balance → separator: `Expanded Systems - Crafting & Economy`

@@ -315,3 +315,4 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Stacks of Septims - 3D Coin Piles](https://www.nexusmods.com/skyrimspecialedition/mods/113071)        | 3D coin pile meshes. Mesh-only, no ESP.                                                                      |
 | [Stacks of Septims - My patches SE by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/113152) | Compatibility patch hub — C.O.I.N., LotD, JS Septims, Ennead, Skyland Bits, Maple Manor, etc. Install after base. |
 | [JS Purses and Septims SE](https://www.nexusmods.com/skyrimspecialedition/mods/37306)                 | Higher-detail coin purse and septim meshes/textures.                                                          |
+| [Skyrim Fantasy Overhaul - Fantastic City Walls SE-AE](https://www.nexusmods.com/skyrimspecialedition/mods/130952) | City wall texture overhaul with fantasy-inspired style. |

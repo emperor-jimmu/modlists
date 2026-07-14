@@ -71,6 +71,7 @@ Authored settlement content — real places, not just denser vibes.
 | The Great Village of Mixwater Mill SSE   |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36350) |
 | The Great Town of Shor's Stone SSE       |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/35977) |
 | The Great City Of Winterhold SSE Edition | Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17127) |
+| Riton Solitude                          | Solitude architecture overhaul. Likely conflicts with Grand Solitude — choose one. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/98390)  |
 
 ---
 
@@ -122,6 +123,7 @@ Travel-stop identity, small community presence, memorable rural pauses.
 | The Great Village of Old Hroldan SSE |                                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33189) |
 | Candlehearth - An Inn Overhaul       | Locked inn-overhaul baseline. Every inn in Skyrim. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97542) |
 | Ask Innkeepers To Show Room SE       | Preview room before renting. 5,351 endorsements.   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5990)  |
+| Inns Can Be Closed                    | Inns close at night, must knock for entry.          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57407)  |
 
 ### Alternatives
 
@@ -204,6 +206,7 @@ Smaller discoverable places between headline destinations.
 | Snowy Ships for Snowy Regions               | BOS-based.                                                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111827) |
 | Unmarked Locations Pack - All In One        | + addon packs for Bruma, Wyrmstooth, Gray Cowl if those worldspaces are adopted. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113660) |
 | Ascend - Hidden Peaks of Skyrim             | Climbing challenge locations across Skyrim. Complements parkour movement.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120802) |
+| Graveyards of the Marshlands                | Atmospheric graveyard locations in Hjaalmarch. ESL-flagged.                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132767) |
 
 ### Alternatives
 

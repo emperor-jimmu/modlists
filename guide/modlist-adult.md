@@ -64,4 +64,47 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 
 ---
 
+## NPC Relationship Content → separator: `Adult Content`
+
+NPC relationship simulation — schedules, pairings, and partner-swapping running on OStim.
+
+### Baseline
+
+| Mod | Notes |
+| --- | --- |
+| [OStim NPCs - NPC Sex Lives Improved](https://www.nexusmods.com/skyrimspecialedition/mods/82888) | NPC relationship schedules and partner variety. Requires OStim Standalone. |
+
+### Risks & Compatibility
+
+- Verify NPC schedules don't conflict with AI Overhaul SSE or other NPC behavior mods from → `NPCs`.
+- Heavy script load — test for Papyrus performance on longer playthroughs.
+
+---
+
+## Pregnancy & Family → separator: `Adult Content`
+
+Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form an interconnected ecosystem — evaluate as a set.
+
+### Baseline
+
+| Mod | Notes |
+| --- | --- |
+| [SkyChild](https://www.nexusmods.com/skyrimspecialedition/mods/128779) | Child NPC appearance overhaul. Replaces vanilla child models. |
+| [Wild Side - A SkyChild Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/135462) | Adds wild/feral child variants. Companion add-on for SkyChild. |
+
+### Alternatives & Tentative
+
+| Mod | Notes |
+| --- | --- |
+| [Beeing Female NG](https://www.nexusmods.com/skyrimspecialedition/mods/168434) | Tentative — evaluate gameplay and compatibility impact. Pregnancy and female reproductive system framework. |
+| [Beeing Female - FM - FMR - Skychild Patch](https://www.nexusmods.com/skyrimspecialedition/mods/169104) | Tentative — consider alongside Beeing Female NG. Compatibility patch for Beeing Female + SkyChild. |
+| [Seeds of Skyrim - Lore Pregnant NPCs](https://www.nexusmods.com/skyrimspecialedition/mods/55112) | Lore-friendly pregnant NPCs. Evaluate for overlap with Beeing Female pregnancy system. |
+
+### Risks & Compatibility
+
+- Pregnancy frameworks add persistent actor data and scripts — monitor save file growth.
+- SkyChild replaces child NPC models; verify compatibility with any mod that adds or modifies child NPCs.
+- These mods interact with each other; install patches where available.
+- Evaluate all pregnancy/child mods as a set before locking any individual pick.
+
 
