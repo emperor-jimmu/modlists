@@ -97,6 +97,15 @@
 - [x] Added Delight Lib as Wave 4 dependency (required by More Delight v26.04.30+)
 - [x] Switched all Wave 4 mod URLs to Modrinth
 
+## Completed Decisions
+
+- [x] Terralith URL switched from CurseForge to Modrinth (NeoForge 1.21.1 available)
+- [x] Tectonic URL switched from CurseForge to Modrinth (NeoForge 1.21.1 available)
+- [x] Better Days added to Wave 0 (day/night length control, chill QoL)
+- [x] Serene Seasons added to Wave 2 (seasonal colors, crop impact ON, temperature damage OFF)
+- [x] Better Days config: 2x day length, time effects disabled (compat with Serene Seasons crop system)
+- [x] MineColonies + 4 deps (Structurize, MultiPiston, BlockUI, Domum Ornamentum) confirmed CurseForge-only — not on Modrinth for NeoForge 1.21.1
+
 ## Pending
 
 ### Testing

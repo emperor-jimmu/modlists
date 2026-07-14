@@ -117,6 +117,7 @@ If installing manually:
 | [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare              |
 | [Sounds](https://modrinth.com/mod/sound)                                      | 170+ new sound effects for UIs, items, blocks, actions              |
 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)         | Subtle float/pulse animations on inventory items                    |
+| [Better Days](https://modrinth.com/mod/betterdays)                            | Customizable day/night cycle length, enhanced sleep                 |
 
 ### Inventory & UI
 
@@ -238,6 +239,13 @@ If installing manually:
 - `trackItemPickups` = `true` — Logs all item pickups for per-session statistics.
 - `trackXpPickups` = `true` — Logs all XP pickups for per-session statistics.
 
+**Better Days** (`config/betterdays-common.toml`):
+
+- `dayLengthMultiplier` = `2.0` — Days last 40 minutes (2x vanilla). Gives relaxed building time.
+- `nightLengthMultiplier` = `1.0` — Nights remain 10 minutes. Sleep acceleration is natural.
+- `enableSleepFeature` = `true` — Smooth time acceleration while in bed.
+- `enableTimeEffects` = `false` — Disable time-synced crop/furnace speed to avoid confusing behavior with Serene Seasons crop cycles.
+
 ### Data Packs (Wave 0)
 
 | Data Pack                                                                                                             | Role                                  |
@@ -339,8 +347,16 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                 | Role                                                            |
 |---------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Terralith](https://www.curseforge.com/minecraft/mc-mods/terralith) | Overhauled Overworld biomes                                     |
-| [Tectonic](https://www.curseforge.com/minecraft/mc-mods/tectonic)   | Better terrain shape — deeper valleys, taller mountains, cliffs |
+| [Terralith](https://modrinth.com/mod/terralith)                    | Overhauled Overworld biomes                                     |
+| [Tectonic](https://modrinth.com/mod/tectonic)                      | Better terrain shape — deeper valleys, taller mountains, cliffs |
+
+### Environment
+
+| Mod                                                                     | Role                                                                        |
+|-------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| [Serene Seasons](https://modrinth.com/mod/serene-seasons)               | Seasonal foliage colors, temperature shifts, crop growth cycles             |
+
+**Serene Seasons** adds four seasons (Spring, Summer, Autumn, Winter) with visual foliage changes, temperature shifts, and seasonal crop growth modifiers. Crop impact is enabled — planting in the wrong season reduces yield, encouraging greenhouse planning. Temperature damage is **disabled** — no freezing or heat damage, preserving the chill rule.
 
 ### Structures
 
@@ -355,14 +371,14 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [YUNG\'s Better Witch Huts](https://modrinth.com/mod/yungs-better-witch-huts)               | Expanded witch huts              |
 | [YUNG\'s Better Nether Fortresses](https://modrinth.com/mod/yungs-better-nether-fortresses) | Improved nether fortresses       |
 | [YUNG\'s Better Caves](https://modrinth.com/mod/yungs-better-caves)                         | Larger, more varied caves        |
-| [Structory](https://www.curseforge.com/minecraft/mc-mods/structory)                         | New hand-crafted structures      |
-| [Towns & Towers](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)             | Better village generation        |
+| [Structory](https://modrinth.com/datapack/structory)                                       | New hand-crafted structures      |
+| [Towns & Towers](https://modrinth.com/datapack/towns-and-towers)                           | Better village generation        |
 
 ### Dimensions
 
 | Mod                                                                                 | Role                                                                                       |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)                   | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
+| [The Aether](https://modrinth.com/mod/aether)                                       | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
 | [Deeper and Darker](https://modrinth.com/mod/deeperdarker)                          | The "Otherside" dimension — deep dark themed, warden gear                                  |
 | [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
 
@@ -530,6 +546,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - My Nether's Delight, Ocean's Delight, and Ender's Delight unlock food sources from cross-dimensional ingredients (Nether, Overworld oceans, and End), giving reasons to explore every dimension beyond just combat.
 - Storage Delight cabinets and drawers provide early-game kitchen storage that feeds into AE2 in Phase 2. They're designed as stepping stones, not replacements.
 - More Delight v26.04.30+ requires **Delight Lib** as a hard dependency — install both or neither.
+- **Serene Seasons** (Wave 2) affects crop growth rates seasonally — crops planted out-of-season grow slower. This adds depth to greenhouse planning with Farmer's Delight crops. Temperature damage is disabled, so crops are the only seasonal pressure.
 
 ---
 
@@ -652,14 +669,14 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 49      | 8      | 57      | Performance, QoL, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                             |
+| Wave 0 — Foundation        | 50      | 8      | 58      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                               |
 | Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism + Generators, AE2 (TFMG-Stellaris compat listed in Wave 7 only)                                                                                             |
-| Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods)                                                                                                                            |
-| Wave 2 — Exploration       | 20      | 5      | 25      | YUNG's (9), Terralith/Tectonic, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                                         |
+| Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
+| Wave 2 — Exploration       | 21      | 5      | 26      | YUNG's (9), Terralith/Tectonic, Serene Seasons, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                         |
 | Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
 | Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                                                                                                           |
 | Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                               |
 | Wave 5 — Combat            | 6       | 6      | 12      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf               |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
-| **Total**                  | **114** | **34** | **148** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
+| **Total**                  | **116** | **34** | **150** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
