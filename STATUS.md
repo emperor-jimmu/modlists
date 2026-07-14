@@ -127,5 +127,21 @@
 - [x] generate-pdf.ps1 with dependency check, auto-install, and fallback winget path
 - [x] Both PDFs compile cleanly: MODLIST.pdf, GETTING-STARTED.pdf
 
+### Added Mods (Jul 2026)
+- [x] Beautiful Enchanted Books (Wave 0 — Visual & Client QoL)
+- [x] Subtle Effects (Wave 0 — Visual & Client QoL)
+- [x] Darker Depths (Wave 2 — Underground & Ocean)
+- [x] Upgrade Aquatic + Blueprint dep (Wave 2 — Underground & Ocean)
+- [x] Cut Through (Wave 5 — Combat)
+- [x] Nullscape re-added as End data pack (Wave 2 — End Overhaul)
+
+### Config Overrides (Jul 2026)
+- [x] YUNG's Better Caves: cavern_layer spawn chance 23% → 30% (cavern_spawn_chance in better_cave.json) — gives Crystal Cavern biome more room to breathe
+
+### Skipped After Review
+- [x] Spelunkery — too much overlap with YUNG's Better Caves + Mekanism tool progression
+- [x] Galosphere — Darker Depths chosen as the cave content mod instead; Galosphere gems are orphan content
+- [x] Environmental — biome conflict with Terralith
+
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)

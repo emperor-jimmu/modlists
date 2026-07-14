@@ -118,6 +118,8 @@ If installing manually:
 | [Sounds](https://modrinth.com/mod/sound)                                      | 170+ new sound effects for UIs, items, blocks, actions              |
 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)         | Subtle float/pulse animations on inventory items                    |
 | [Better Days](https://modrinth.com/mod/betterdays)                            | Customizable day/night cycle length, enhanced sleep                 |
+| [Subtle Effects](https://modrinth.com/mod/subtle-effects)                    | Ambient particles, dust clouds, sparks, and subtle visual effects   |
+| [Beautiful Enchanted Books](https://modrinth.com/mod/beautiful-enchanted-books-mod-edition) | Unique textures per enchantment book type                           |
 
 ### Inventory & UI
 
@@ -358,6 +360,17 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 **Serene Seasons** adds four seasons (Spring, Summer, Autumn, Winter) with visual foliage changes, temperature shifts, and seasonal crop growth modifiers. Crop impact is enabled — planting in the wrong season reduces yield, encouraging greenhouse planning. Temperature damage is **disabled** — no freezing or heat damage, preserving the chill rule.
 
+### Underground & Ocean
+
+| Mod                                                                           | Role                                                                                   |
+|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| [Darker Depths](https://modrinth.com/mod/darker-depths)                       | Underground expansion — 3 new cave biomes, mobs, Forsaken Bronze, Living Crystals     |
+| [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic)                   | Ocean expansion — Thrasher mob, Ocean Ravines, Prismarine Coral, renewable sand       |
+
+**Interdependency note — Darker Depths + YUNG's Better Caves**: Darker Depths adds its own cave biomes (Molten Cavern, Sandy Catacombs, Crystal Cavern) that generate alongside YUNG's Better Caves' enlarged cave systems. Darker Depths biomes replace vanilla cave sections with themed variants, while YUNG's Better Caves changes the shape and connectivity of caves — they layer without direct conflict.
+
+**Interdependency note — Upgrade Aquatic + YUNG's Better Ocean Monuments**: Upgrade Aquatic adds ocean mobs, coral variants, and ocean-floor features. It does not modify Ocean Monuments — YUNG's Better Ocean Monuments replaces monument structure generation without conflict. Upgrade Aquatic items (thrasher teeth, prismarine coral) integrate naturally with Ocean's Delight (Wave 4) for seafood recipes.
+
 ### Structures
 
 | Mod                                                                                         | Role                             |
@@ -388,6 +401,9 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend-neoforge) v21.0.25                         | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
 | [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                     |
+| [Nullscape](https://modrinth.com/datapack/nullscape) (data pack)                                       | End terrain overhaul — surreal alien landscapes, new sky colors |
+
+**Nullscape**: A data pack that transforms the End's terrain into alien shapes (floating islands, spires, arches, voids) with unique sky colors per biome. **Compatible with BetterEnd** — Nullscape's own documentation states it works with BetterEnd specifically (it is incompatible with most End worldgen mods, but BetterEnd is the documented exception). Nullscape handles terrain shape and sky; BetterEnd handles biomes, mobs, gear, and structures. Install as a data pack in the world's `datapacks/` folder.
 
 ### New Dependencies (End Overhaul)
 
@@ -398,6 +414,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [WunderLib NeoForge](https://modrinth.com/mod/wunderlib-neoforge)       | Utility library — required by BetterEnd     |
 | [Moog\'s Structure Lib](https://modrinth.com/mod/moogs-structure-lib)   | Library — required by Moog's End Structures |
 | [Cristel Lib](https://www.curseforge.com/minecraft/mc-mods/cristel-lib) | Library — required by Towns & Towers        |
+| [Blueprint](https://modrinth.com/mod/blueprint)                         | Library — required by Upgrade Aquatic       |
 
 ### Navigation
 
@@ -572,6 +589,7 @@ Bountiful generates quests automatically — find a bounty board in any village,
 | [When Dungeons Arise](https://modrinth.com/mod/when-dungeons-arise)                               | Roguelike combat structures with loot                                                           |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                           |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons)                                 | Artillery engineering — siege cannons for colony defense and spectacle                          |
+| [Cut Through](https://modrinth.com/mod/cut-through)                                             | Combat QoL — swing through transparent blocks (tall grass, cobwebs) without breaking them        |
 
 Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
 
@@ -587,6 +605,8 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 | [Bookshelf](https://modrinth.com/mod/bookshelf-lib)          | Library — required by Enchantment Descriptions                     |
 
 **Better Combat + Simply Swords**: Simply Swords weapons have built-in Better Combat data files — each weapon category uses the correct attack animation, reach, and speed automatically.
+
+**Cut Through**: Works alongside Better Combat — lets you swing through transparent blocks (tall grass, vines, cobwebs) without breaking them, keeping your attack chain uninterrupted. Client-side only, no conflicts with any combat mod.
 
 ---
 
@@ -669,14 +689,14 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 50      | 8      | 58      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                               |
+| Wave 0 — Foundation        | 52      | 8      | 60      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                               |
 | Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism + Generators, AE2 (TFMG-Stellaris compat listed in Wave 7 only)                                                                                             |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
-| Wave 2 — Exploration       | 21      | 5      | 26      | YUNG's (9), Terralith/Tectonic, Serene Seasons, dimensions (3), End overhaul (2 + 5 deps), navigation, aircraft                                                                         |
+| Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                          |
 | Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
 | Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                                                                                                           |
 | Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                               |
-| Wave 5 — Combat            | 6       | 6      | 12      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf               |
+| Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
-| **Total**                  | **116** | **34** | **150** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
+| **Total**                  | **121** | **35** | **156** | All confirmed NeoForge 1.21.1                                                                                                                                                           |

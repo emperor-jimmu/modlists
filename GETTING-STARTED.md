@@ -407,6 +407,18 @@ Adds subtle float and pulse animations to items in your inventory and when you p
 
 **No config needed** — install and forget.
 
+#### Subtle Effects
+
+Adds ambient particles and subtle visual details: sparks from fire blocks, dust clouds when mobs/players hit the ground, slime trails from slimes, snoring Z particles from sleeping villagers, and more. Every particle effect can be individually toggled in Mod Menu → Subtle Effects → Config.
+
+**All features are toggleable** — if any effect feels excessive, disable it in the config.
+
+#### Beautiful Enchanted Books
+
+Replaces the generic enchanted book texture with unique, themed textures per enchantment type — Protection books look different from Sharpness books, making your library visually informative.
+
+**No config needed** — install and forget.
+
 #### Chunk Loaders — Infrastructure
 
 Chunk Loaders keep specific chunks loaded even when you're far away or in another dimension. Essential for keeping factories, farms, and your colony running.
@@ -1032,6 +1044,39 @@ The Explorer's Compass is essential for finding specific biomes and structures:
 
 **Keybinding note**: The compass does not have its own keybind by default. Craft it, hold it, right-click. If right-click does nothing, check Controls → Explorer's Compass for a conflicting keybind.
 
+### Underground & Ocean
+
+Your exploration isn't limited to the surface. The underground has new cave biomes to discover, and the oceans are richer with life.
+
+#### Darker Depths — Expanded Underground
+
+Darker Depths adds 3 unique cave biomes that generate deep underground, each with its own atmosphere, resources, and threats:
+
+| Biome             | Depth          | What to expect                                                        | Key resources                                                               |
+|-------------------|----------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Molten Cavern** | Deep (Y < 0)   | Lava pools, geysers, amber clusters, Dead Living Crystals             | Living Crystals (feed diamond to grow), Crystal Melons (temporary god-mode) |
+| **Sandy Catacombs**| Mid (Y 0-20)  | Petrified roots, aridrock, Void Soul mobs, Catacombs structure        | Void Souls (bottle them), Forsaken Bronze (unique metal for tools/weapons)  |
+| **Crystal Cavern**| Any depth      | Growing crystals, crystal-infused blocks, glowing ambience            | Crystal materials for decorative and utility items                          |
+
+**Key mechanic — Living Crystals**: Found as dead crystals in the Molten Cavern. Feed them a diamond to reawaken them. They grow over time and can spread to nearby diamond ore or transform melons into **Crystal Melons** — hold one in your off-hand to make any tool unbreakable with +20% speed and damage for 5 minutes (configurable).
+
+**Key mechanic — Void Souls**: Found in the Sandy Catacombs. When a Void Soul mob is "killed," it transforms into an invulnerable orb that expires after 60 seconds. Capture it in a glass bottle. Use amber to prevent expiration. Forsaken Bronze crafted from void-touched materials has unique properties (death-related abilities).
+
+**Compatibility**: Darker Depths' biomes generate inside YUNG's Better Caves' enlarged cave systems — they layer without conflict. Darker Depths replaces vanilla cave sections with themed biome variants.
+
+#### Upgrade Aquatic — Richer Oceans
+
+Upgrade Aquatic expands the ocean with new mobs, coral types, and ocean-floor features:
+
+| Feature           | What it does                                                                 |
+|-------------------|------------------------------------------------------------------------------|
+| **Thrasher**      | A fantasy shark-like mob that uses sonar and thrashes prey. Drops thrasher teeth for trident crafting |
+| **Ocean Ravines** | Underwater ravines filled with Prismarine Coral — harvest for decorative blocks and materials |
+| **Nautilus**      | Passive mob that drops shells for conduit crafting                           |
+| **Renewable sand**| Bubble columns below sandstone gradually convert stone to sand               |
+
+**Integration**: Upgrade Aquatic items like thrasher teeth and prismarine coral are compatible with Ocean's Delight (Wave 4) for seafood recipes. YUNG's Better Ocean Monuments is compatible — Upgrade Aquatic doesn't modify monument structures.
+
 ---
 
 ### Immersive Aircraft — Flyable Vehicles
@@ -1191,6 +1236,8 @@ After you defeat the Ender Dragon, the End becomes a full dimension worth explor
 | **Chorus forests**   | Dense chorus plant forests                                | Chorus flowers, new food         |
 
 **Moog's End Structures** adds towers, ruins, and dungeons across the End — many with loot better than vanilla End cities.
+
+**Nullscape** (data pack) overhauls the End's terrain into surreal alien shapes — floating islands, towering spires, natural arches, and void pits — with unique sky colors per biome. It is explicitly compatible with BetterEnd (per Nullscape's documentation, BetterEnd is the exception to its incompatibility with End worldgen mods). Nullscape handles terrain and sky; BetterEnd handles biomes, mobs, gear, and structures. Install as a data pack in the world's `datapacks/` folder.
 
 **Ender's Delight** adds food that can be cooked from End ingredients — gives useful status effects for End exploration.
 
@@ -1694,6 +1741,12 @@ Hover over any enchantment in a tooltip (on an item, in a book, or in the enchan
 **No config needed** — install and forget.
 
 **Dependency note**: **Ritchie's Projectile Library** is a library mod required by Create Big Cannons. It provides custom projectile trajectories and hit detection. Install it alongside Create Big Cannons — no separate configuration needed.
+
+#### Cut Through — Clean Combat
+
+Cut Through solves an annoyance: when fighting in tall grass, vines, or cobwebs, your weapon swings through them without breaking the block, letting you hit the mob behind it. No more accidentally breaking your grass farm or getting stuck swinging at cobwebs while a skeleton shoots you.
+
+**No config needed** — install and forget. Works with Better Combat and all other combat mods.
 
 ### Mutant Monsters — Boss Variants
 
