@@ -243,6 +243,75 @@ Replaces vanilla SCS company skins with higher-resolution, more realistic versio
 
 ---
 
+### Vangs Tipp Trailer v1.60
+
+| Field         | Detail                                                      |
+|---------------|-------------------------------------------------------------|
+| **Version**   | v1.60                                                       |
+| **Source**    | [ets2.lt](https://ets2.lt/en/vangs-tipp-trailer-v1-60/)     |
+| **Author**    | Community                                                   |
+| **Type**      | Ownable trailer (tipper)                                    |
+| **Published** | July 2026                                                   |
+
+A detailed ownable tipp (dump) trailer:
+
+- Realistic tipper trailer with functioning dump mechanism
+- Multiple paint and skin options
+- Suitable for bulk cargo transport
+- Compatible with 1.60 game version
+
+**Compatibility:** 1.60. Works alongside other trailer packs.
+
+**Performance Impact:** Light (~2-3% FPS loss at 4K).
+
+---
+
+### 8K Coopavel Krone Cool Liner by Rodonitcho Mods
+
+| Field         | Detail |
+|---------------|--------|
+| **Version**   | 1.40–1.60 |
+| **Source**    | [ets2.lt](https://ets2.lt/en/8k-coopavel-krone-cool-liner-by-rodonitcho-mods-1-40-1-60-08-07-2026/) |
+| **Author**    | Rodonitcho Mods |
+| **Type**      | Trailer skin |
+| **Published** | July 8, 2026 |
+
+A high-resolution 8K skin for the Krone Cool Liner fridge trailer:
+
+- Coopavel-branded livery in 8K resolution
+- High-detail textures for the Krone Cool Liner
+- Adds real-world branding immersion
+- Compatible with SCS Krone Cool Liner and modded versions
+
+**Compatibility:** 1.40–1.60. Requires Krone Cool Liner trailer (SCS or modded).
+
+**Performance Impact:** Negligible — texture-only.
+
+---
+
+### SCS Trailer Tuning Pack v1.60
+
+| Field         | Detail |
+|---------------|--------|
+| **Version**   | v1.60 |
+| **Source**    | [ets2.lt](https://ets2.lt/en/scs-trailer-tuning-pack-v1-60/) |
+| **Author**    | Community |
+| **Type**      | Trailer tuning / accessories |
+
+Adds tuning and customisation options for SCS standard trailers:
+
+- Additional bumper and mudflap options
+- Custom light configurations for trailers
+- Paint and trim customisation options
+- Works with all SCS ownable trailers
+- Enhances trailer visual variety
+
+**Compatibility:** 1.60. Requires SCS ownable trailers.
+
+**Performance Impact:** Negligible.
+
+---
+
 ## AI Traffic — Trailers
 
 These mods replace or enhance AI traffic trailers with real-company liveries and diverse trailer models.
@@ -325,6 +394,30 @@ Removes all default SCS trailers from AI traffic:
 
 ---
 
+### Real Emergency AI Pack v1.60 Base Edition
+
+| Field         | Detail |
+|---------------|--------|
+| **Version**   | v1.60 |
+| **Source**    | [ets2.lt](https://ets2.lt/en/real-emergency-ai-pack-1-60-base-edition/) |
+| **Author**    | Cipus (Cip-Sound-Modding) |
+| **Type**      | AI traffic (emergency vehicles) |
+| **Size**      | 95.6 MB |
+
+Adds realistic emergency service vehicles to AI traffic:
+
+- Police cars, ambulances, and fire trucks with authentic liveries
+- Emergency vehicle lights and sounds
+- Realistic emergency vehicle behaviour
+- Compatible with all maps and traffic packs
+- Base edition includes core emergency vehicle set
+
+**Compatibility:** 1.60. Place in traffic section of load order. Works alongside other AI traffic packs.
+
+**Performance Impact:** Light (~2-3% FPS loss at 4K).
+
+---
+
 ## Summary Table
 
 | Mod                                                   | Type               | 1.60 Ready   | Size    | FPS Impact | VRAM Impact  | Notes                                                       |
@@ -341,6 +434,10 @@ Removes all default SCS trailers from AI traffic:
 | Trailers Traffic Pack by TrafficManiac v12.9.3        | AI traffic         | ✅ Yes        | 1.5 GB  | 2-4%       | +300-500 MB  | 1379 trailers, 5091 skins                                   |
 | Ai Trailers Pack Evolution V2.8                       | AI traffic         | ✅ Yes        | 80 MB   | 2-3%       | +100-150 MB  | 150 addon AI trailers                                       |
 | Clean Traffic — No Default SCS Trailers v2.0          | Traffic cleanup    | ✅ Yes        | Minimal | None       | None         | Removes SCS trailers from traffic                           |
+| Vangs Tipp Trailer v1.60                              | Ownable trailer    | ✅ Yes        | N/A     | 2-3%       | +100-150 MB  | Detailed tipper trailer                                      |
+| 8K Coopavel Krone Cool Liner by Rodonitcho            | Trailer skin       | ✅ Yes        | N/A     | <1%        | Minimal      | High-res 8K skin for Krone Cool Liner                        |
+| SCS Trailer Tuning Pack v1.60                         | Trailer tuning     | ✅ Yes        | N/A     | <1%        | None         | Tuning options for SCS ownable trailers                      |
+| Real Emergency AI Pack v1.60 Base                     | AI traffic (emergency) | ✅ Yes    | 95.6 MB | 2-3%       | +50-100 MB   | Emergency vehicles in AI traffic                             |
 
 ### Notes
 

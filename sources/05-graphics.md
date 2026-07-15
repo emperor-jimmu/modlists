@@ -175,6 +175,52 @@ A complete lighting overhaul that redesigns truck lights and AI traffic behavior
 
 ---
 
+## GDX Realistic Graphics v2.1
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v2.1 |
+| **Source** | [ets2.lt](https://ets2.lt/en/gdx-realistic-graphics-v2-1/) |
+| **Author** | Community |
+| **Type** | Graphics overhaul / skybox replacement |
+
+Enhances visual quality with a focus on realism, lighting, and atmosphere:
+
+- 20+ skybox options with cloud textures up to 16K resolution
+- Brazilian-style weather system with more natural and varied skies
+- Better weather transitions throughout the day
+- More balanced lighting with improved reflections and visual effects
+- High-definition texture replacements
+
+**Compatibility:** 1.60. Works alongside other graphics mods — test for conflicts.
+
+**Performance Impact at 4K:** ~5-10% FPS loss (~3-6 FPS), ~500 MB-1 GB additional VRAM depending on skybox resolution.
+
+---
+
+## MasterGrade Real POV Reshade Shader and Preset v1.60
+
+| Field         | Detail |
+|---------------|--------|
+| **Version**   | v1.60 |
+| **Source**    | [ets2.lt](https://ets2.lt/en/mastergrade-real-pov-reshade-shader-and-preset-v1-60/) |
+| **Author**    | MasterGrade |
+| **Type**      | ReShade preset / shader |
+
+A ReShade preset designed for realistic first-person POV driving:
+
+- First-person camera-optimised colour grading and lighting
+- Realistic contrast, saturation, and ambient light balance
+- Reduces the default "washed out" look
+- Includes custom shader configuration
+- Designed for 1.60 game version
+
+**Compatibility:** 1.60. Requires ReShade installation. Works alongside other graphics mods — apply as the final post-processing layer.
+
+**Performance Impact at 4K:** ~3-5 FPS loss depending on shader complexity.
+
+---
+
 ## Summary Table
 
 | Mod | FPS Impact (4K) | VRAM Impact | Best For | Category |
@@ -187,6 +233,8 @@ A complete lighting overhaul that redesigns truck lights and AI traffic behavior
 | Snowymoon v2 | ~2-4 FPS loss | Minimal | Lighting/plugin | DX11 Injector |
 | Project Ultimate RealEye | ~5-10 FPS loss | Varies | Cinematic ReShade | Reshade (paid) |
 | Dynamic Lights & Better Headlights v1.0 | ~2-4 FPS loss | Minimal | Realistic night lighting | Lighting |
+| GDX Realistic Graphics v2.1 | ~3-6 FPS loss | +500 MB-1 GB | Skybox / atmosphere | Graphics overhaul |
+| MasterGrade Real POV Reshade | ~3-5 FPS loss | Varies | First-person POV | Reshade |
 
 ### Recommendation
 

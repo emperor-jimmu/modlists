@@ -339,6 +339,44 @@ A high-quality map of Central Russia with detailed cities, realistic road infras
 
 ---
 
+### Eurotunnel Refresh - A ProMods Addon v1.0
+
+- **Version:** v1.0
+- **Source:** [ets2.lt](https://ets2.lt/en/eurotunnel-refresh-a-promods-addon-v1-0/)
+- **Category:** Maps (ProMods addon)
+
+**Description:**
+A ProMods addon that modernises and improves the Eurotunnel experience on both the UK and French sides of the Channel. Focuses on making one of the busiest border crossings in ETS2 feel more realistic and up to date while keeping the original ProMods style.
+
+- Refreshed Eurotunnel terminals with improved road layout and scenery
+- Updated and modernised signage and approach roads
+
+**Compatibility:**
+- Requires ProMods 2.83
+- Place on top of all ProMods files in load order
+
+**Performance Impact:** Negligible.
+
+---
+
+### El Enclaves ProMods Addon v1.60
+
+- **Version:** v1.60
+- **Source:** [ets2.lt](https://ets2.lt/en/el-enclaves-promods-addon-v1-60/)
+- **Category:** Maps (ProMods addon)
+- **Size:** 5 MB
+
+**Description:**
+A ProMods addon that adds the African territorial parts of Spain — Ceuta, Melilla, and Menorca Island — to the game map. Small but detailed expansion for players running ProMods.
+
+**Compatibility:**
+- Requires ProMods 2.83 and all map DLCs
+- Place on top of all ProMods files in load order
+
+**Performance Impact:** Negligible — very small map area.
+
+---
+
 ## Connectors & Patches
 
 Connectors are small `.scs` files that stitch two map mods together so roads line up and navigation works across the border. They are essential for any multi-map combo.

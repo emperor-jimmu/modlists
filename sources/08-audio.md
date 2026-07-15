@@ -206,6 +206,29 @@ Adaptation of Kriechbaum's Scania L6 Open Pipe sound to SCS Scania NG Tcab base.
 
 ---
 
+### CAT C15 Twin Turbo Real Engine Pack
+
+| Field            | Detail |
+|------------------|--------|
+| **Version**      | 1.60 |
+| **Source**       | [ets2.lt](https://ets2.lt/en/cat-c15-twin-turbo-real-engine-pack-ets2-500-600-700-850hp-real-sound/) |
+| **Author**       | Community |
+| **Type**         | Engine sound replacement |
+
+A real-sound engine pack featuring the Caterpillar C15 Twin Turbo — a legendary American heavy-duty diesel:
+
+- Authentic CAT C15 twin-turbo engine sound recorded from real vehicles
+- Multiple power ratings: 500 HP, 600 HP, 700 HP, 850 HP
+- Realistic turbo whistle, exhaust note, and engine braking
+- Compatible with American truck mods and select European trucks
+- Adds a distinct American diesel character to ETS2
+
+**Compatibility:** 1.60. Works with compatible truck mods that support custom engine sounds.
+
+**Performance Impact:** Negligible.
+
+---
+
 ## Notes on Other Audio Mods
 
 | Mod Type                                | Availability for 1.60                                                                                                                                                                                                             |
@@ -244,3 +267,4 @@ LOW PRIORITY (below map mods)
 | Volvo FH5 I-Save D13TC v1.3          | Partial (1.59)                                | Engine (Volvo FH5)    | Negligible  |
 | Kriechbaum Paccar MX-13 v3.0         | Unknown (1.47)                                | Engine (DAF)          | Negligible  |
 | Kriechbaum Volvo FH4 D13 v1.1        | Unknown (1.49)                                | Engine (Volvo FH4)    | Negligible  |
+| CAT C15 Twin Turbo Real Engine Pack  | Yes                                           | Engine (CAT C15)      | Negligible  |

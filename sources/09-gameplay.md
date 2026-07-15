@@ -59,6 +59,30 @@ Notable economy mods compatible with 1.60:
 
 ---
 
+### Diesel Price ETS2 by Rodonitcho Mods
+
+| Field | Detail |
+|-------|--------|
+| **Version** | Weekly update (1.40–1.61) |
+| **Source** | [ets2.lt](https://ets2.lt/en/diesel-price-ets2-by-rodonitcho-mods-1-40-1-61-12-07-2026/) |
+| **Author** | Rodonitcho Mods |
+| **Type** | Fuel price / economy modifier |
+
+A regularly updated mod that adjusts diesel prices across all fuel stations in ETS2 to reflect real-world fuel cost fluctuations:
+
+- Updated weekly with current diesel price data
+- Regionally varied fuel pricing (prices differ by country)
+- Compatible with all map mods and DLCs
+- Works alongside other economy mods that do not modify fuel prices
+
+**Role-Playing Potential:** Medium — fuel becomes a meaningful operational cost. Players may route through countries with cheaper diesel, adding strategic depth to trip planning.
+
+**Compatibility:** 1.40–1.61. Compatible with economy mods that do not edit fuel prices directly.
+
+**Performance Impact:** Negligible — data-only mod.
+
+---
+
 ### Roadbound Economy - ETS2 - Light
 
 | Field | Detail |
@@ -178,6 +202,31 @@ Adds a wide variety of real-world vehicles to AI traffic, replacing the vanilla 
 **Compatibility:** Check mod page for latest game version support.
 
 **Performance Impact:** Moderate (~3-8% FPS loss) due to additional vehicle models in traffic. Use alongside performance-focused traffic density mods.
+
+---
+
+### Bus Traffic Pack by Jazzycat v18.2
+
+| Field | Detail |
+|-------|--------|
+| **Version** | v18.2 |
+| **Source** | [ets2.lt](https://ets2.lt/en/bus-traffic-pack-by-jazzycat-v18-2/) |
+| **Author** | Jazzycat |
+| **Type** | AI traffic variety (buses) |
+| **Size** | 430 MB |
+
+Adds 46 new bus models with over 1,500 real-company skins to AI traffic:
+
+- Brands include: Setra, Neoplan, Volvo, MAN, Mercedes-Benz, Ikarus, Scania, Ayats, Irizar, Temsa, Irisbus, Jelcz, Karosa, Caetano, Optare
+- Real European bus operator liveries
+- All standalone — works on any map
+- Compatible with all other Jazzycat packs
+
+**Role-Playing Potential:** Medium — adds authentic bus traffic to highways and city approaches, increasing immersion. Seeing regional bus operators on the road makes European routes feel genuine.
+
+**Compatibility:** 1.60.x. Works alongside AI Traffic Pack v2.5 and other Jazzycat packs.
+
+**Performance Impact:** Moderate (~3-6% FPS loss at 4K) — additional vehicle models in traffic. VRAM: +200-300 MB.
 
 ---
 
@@ -415,7 +464,7 @@ These mods improve the driving interface and overall user experience. (Truck-spe
 | Field | Detail |
 |-------|--------|
 | **Version** | v1.60 |
-| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/collision-model-mod-v160) |
+| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/collision-model-mod-v160) / [ets2.lt](https://ets2.lt/en/collision-model-mod-v1-60/) |
 | **Author** | Community |
 | **Type** | Physics / gameplay |
 | **Category** | Other |
@@ -441,8 +490,8 @@ Adjusts the collision model for tighter, more realistic hitboxes on trucks and t
 | Field | Detail |
 |-------|--------|
 | **Version** | v1.60 |
-| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/animated-steering-wheel-160) |
-| **Author** | Community |
+| **Source** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/animated-steering-wheel-160) / [ets2.lt](https://ets2.lt/en/animated-steering-wheel-1-60/) |
+| **Author** | DKL_quit |
 | **Type** | Animation / QoL |
 | **Category** | Other |
 | **Downloads** | 36 |
@@ -639,12 +688,14 @@ LOW PRIORITY
 | Mod | Type | 1.60 Ready | FPS Impact | RP Potential | Notes |
 |-----|------|-----------|------------|-------------|-------|
 | TDS ECO Grand Garage | Economy | ✅ Yes | Negligible | High | Unofficial port, economy rebalance |
+| Diesel Price ETS2 by Rodonitcho Mods | Economy (fuel) | ✅ Yes (1.40–1.61) | Negligible | Medium | Weekly fuel price updates per country |
 | Roadbound Economy - ETS2 - Light | Economy | ✅ Yes | Negligible | Medium | Vanilla-plus, casual-friendly, standalone |
 | EXPRESS PERFORMANCE MOD | Traffic + FPS | ✅ Yes | +25–45% | High | Rush-hour curves, CPU relief |
 | RealRoads AI Traffic Medium | Traffic behavior | ✅ Yes (1.59) | <2% | High | Real flow curves, rush-hour shaping |
 | RealRoads Night Quiet Add-On | Traffic (add-on) | ✅ Yes | <2% | Medium | ~35% overnight traffic reduction |
 | Brutal Traffic v8.1 | Traffic behavior | ✅ Yes | <2% | High | Realistic AI, weather-reactive |
 | AI Traffic Pack v2.5 | Traffic variety | Check mod page | -3–8% | Medium | Real vehicle models |
+| Bus Traffic Pack by Jazzycat v18.2 | Traffic (buses) | ✅ Yes | 3-6% | Medium | 46 bus models, 1500+ skins |
 | Real Traffic Density | Traffic density | ✅ Yes | Low-Moderate | Medium-High | Steam Workshop |
 | New Service | Company mgmt | Check mod page | Negligible | Very High | Logistics management |
 | TruckersMP | Multiplayer | ✅ Yes | CPU-bound | Maximum | External platform |
