@@ -175,25 +175,27 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 
 #### Texture Packs
 
-Five optional resource packs enhance vanilla visuals and UI:
+Six optional resource packs enhance vanilla visuals and UI:
 
 | Pack                                                                     | Role                                                                                    |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Default Dark Mode](https://modrinth.com/resourcepack/default-dark-mode) | Dark UI theme for all vanilla screens, menus, and inventories                           |
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion                |
+| [Alacrity](https://modrinth.com/resourcepack/alacrity)                   | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models               |
+| [Enhanced Boss Bars](https://modrinth.com/resourcepack/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses                |
 | [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)        | 3D block & item textures for all rail types                                             |
 | [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)               | 3D model replacement for ladders                                                        |
 | [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)     | Enhanced 3D look for lanterns and chains                                                |
 
 **Installation**: Install via Modrinth App. Load order (top = highest priority):
 
-1. Default Dark Mode
-2. Fresh Animations
-3. RAY's 3D Rails
-4. 3D Ladders
-5. Better Lanterns
+1. Fresh Animations
+2. Alacrity
+3. Enhanced Boss Bars
+4. RAY's 3D Rails
+5. 3D Ladders
+6. Better Lanterns
 
-Fresh Animations adds living entity animations — place it high in the pack order. The 3D model packs (Rails, Ladders, Lanterns) are pure model overrides with no resolution conflict — they work at any texture scale.
+Alacrity provides the base 32x textures and GUI overhaul. Place Fresh Animations above it so entity animations override correctly. The 3D model packs (Rails, Ladders, Lanterns) are pure model overrides with no resolution conflict — they work at any texture scale.
 
 #### Keybindings (Set These Up First)
 

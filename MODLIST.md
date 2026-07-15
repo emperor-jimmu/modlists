@@ -119,6 +119,7 @@ If installing manually:
 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)         | Subtle float/pulse animations on inventory items                    |
 | [Better Days](https://modrinth.com/mod/betterdays)                            | Customizable day/night cycle length, enhanced sleep                 |
 | [Beautiful Enchanted Books](https://modrinth.com/mod/beautiful-enchanted-books-mod-edition) | Unique textures per enchantment book type                           |
+| [Overflowing Bars](https://modrinth.com/mod/overflowing-bars)           | Expanded health, armor, and toughness bars beyond vanilla limits    |
 
 ### Inventory & UI
 
@@ -201,12 +202,17 @@ If installing manually:
 | Pack                                                                     | Role                                                                                 |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion             |
+| [Alacrity](https://modrinth.com/resourcepack/alacrity)                   | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models            |
+| [Enhanced Boss Bars](https://modrinth.com/resourcepack/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses              |
 | [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)        | 3D block & item textures for all rail types                                          |
 | [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)               | 3D model replacement for ladders                                                     |
 | [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)     | Enhanced 3D look for lanterns and chains                                             |
-| [Default Dark Mode](https://modrinth.com/resourcepack/default-dark-mode) | Dark UI theme for all vanilla screens, menus, and inventories                        |
 
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
+
+**Alacrity** is a full 32x conversion with an RPG-inspired art style — all blocks, items, GUI elements, and mobs are redesigned with a cohesive fantasy look. Draws from Warcraft, Elder Scrolls, and Gothic for its aesthetic. Custom 3D models (CEM) require a mod like Entity Model Features but the base pack works with any setup.
+
+**Enhanced Boss Bars** replaces boss bar textures with themed designs — covers vanilla bosses and has support for Twilight Forest bosses. For full compatibility with L_Ender's Cataclysm and The Aether (which use custom boss bar rendering), install the companion [Enhanced Boss Bars mod](https://modrinth.com/mod/enhanced-boss-bars-mod). Pure resource pack for vanilla/Twilight Forest bars.
 
 **RAY's 3D Rails** replaces rail block and item textures with 3D models. Supports shaders since v3.0. Compatible with all rail types from Steam 'n' Rails and Create.
 
@@ -214,15 +220,14 @@ If installing manually:
 
 **Better Lanterns** gives lanterns and chains an enhanced 3D look with connected chain models. Compatible with Arcane Lanterns and Thin Air mods.
 
-**Default Dark Mode** applies a dark theme to all vanilla UI screens — menus, inventories, containers, the recipe book, and chat. It's a pure client-side overlay, requires no mods, and works alongside any shaderpack or texture pack. Place it high in the pack order so it overrides the default bright UI.
-
 **Installation**: Install via Modrinth App. Load order (top = highest priority):
 
-1. Default Dark Mode
-2. Fresh Animations
-3. RAY's 3D Rails
-4. 3D Ladders
-5. Better Lanterns
+1. Fresh Animations
+2. Alacrity
+3. Enhanced Boss Bars
+4. RAY's 3D Rails
+5. 3D Ladders
+6. Better Lanterns
 
 ### Configuration — Wave 0
 
@@ -684,7 +689,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 51      | 8      | 59      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+5 resource packs, 1 shaderpack, 1 data pack)                                                               |
+| Wave 0 — Foundation        | 52      | 8      | 60      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
 | Wave 1 — Tech              | 8       | —      | 8       | Create + 4 addons, Mekanism + Generators, AE2 (TFMG-Stellaris compat listed in Wave 7 only)                                                                                             |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
 | Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                          |
@@ -694,4 +699,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
-| **Total**                  | **120** | **35** | **155** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
+| **Total**                  | **121** | **35** | **156** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
