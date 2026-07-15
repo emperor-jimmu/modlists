@@ -175,12 +175,11 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 
 #### Texture Packs
 
-Six optional resource packs enhance vanilla visuals and UI:
+Five optional resource packs enhance vanilla visuals and UI:
 
 | Pack                                                                     | Role                                                                                    |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | [Default Dark Mode](https://modrinth.com/resourcepack/default-dark-mode) | Dark UI theme for all vanilla screens, menus, and inventories                           |
-| [Faithful 64x](https://modrinth.com/resourcepack/faithful-64x)           | 64x upscaled vanilla textures — clean, sharp, PBR-compatible with Complementary Unbound |
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion                |
 | [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)        | 3D block & item textures for all rail types                                             |
 | [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)               | 3D model replacement for ladders                                                        |
@@ -190,12 +189,11 @@ Six optional resource packs enhance vanilla visuals and UI:
 
 1. Default Dark Mode
 2. Fresh Animations
-3. Faithful 64x
-4. RAY's 3D Rails
-5. 3D Ladders
-6. Better Lanterns
+3. RAY's 3D Rails
+4. 3D Ladders
+5. Better Lanterns
 
-Faithful 64x works with Complementary Unbound's Integrated PBR+ for realistic material response. Fresh Animations adds living entity animations — place it above Faithful 64x. The 3D model packs (Rails, Ladders, Lanterns) are pure model overrides with no resolution conflict — they work at any texture scale.
+Fresh Animations adds living entity animations — place it high in the pack order. The 3D model packs (Rails, Ladders, Lanterns) are pure model overrides with no resolution conflict — they work at any texture scale.
 
 #### Keybindings (Set These Up First)
 
