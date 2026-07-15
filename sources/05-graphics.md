@@ -22,7 +22,7 @@ Replaces terrain, road, and building textures with high-quality (HQ) versions. C
 
 ---
 
-## Nextgen Graphics Road to 2.0 Spring Update {★ Baseline}
+## Nextgen Graphics Road to 2.0 Spring Update {★ Baseline} {⚠️ Conflict: RGM, JBX, ReShade presets}
 
 | Field | Detail |
 |-------|--------|
@@ -44,9 +44,12 @@ No longer requires BASE_0 and BASE_3 files. Works with map mods.
 
 **Performance Impact at 4K:** ~10-15% FPS loss (~6-10 FPS), ~1-2 GB additional VRAM
 
+**Pros:** Most feature-rich overhaul (textures + rain + spring addon), active development, Promods bugfixes, free
+**Cons:** Highest VRAM usage of free options, can't stack with other comprehensive overhauls
+
 ---
 
-## Realistic Graphics Mod (RGM)
+## Realistic Graphics Mod (RGM) {⚠️ Conflict: Nextgen Graphics, JBX, ReShade presets}
 
 | Field | Detail |
 |-------|--------|
@@ -61,9 +64,12 @@ Adjusts color palettes, lighting intensity, skybox textures, and ambient light l
 
 **Performance Impact at 4K:** ~5-8% FPS loss (~3-5 FPS), ~800 MB additional VRAM
 
+**Pros:** Good balance between visuals and performance, low VRAM impact, free
+**Cons:** Less feature-rich than Nextgen (no rain/seasonal addons), less cinematic than JBX
+
 ---
 
-## JBX Graphics
+## JBX Graphics {⚠️ Conflict: Nextgen Graphics, RGM, ReShade presets}
 
 | Field | Detail |
 |-------|--------|
@@ -80,9 +86,12 @@ Premium reshade-based graphics preset. Delivers cinematic color grading, enhance
 
 **Performance Impact at 4K:** ~15-20% FPS loss (~10-15 FPS), ~2 GB additional VRAM
 
+**Pros:** Most cinematic/realistic visuals, premium color grading
+**Cons:** Paid mod, heaviest FPS/VRAM hit, conflicts with all other ReShade presets
+
 ---
 
-## ReShade Presets (Community)
+## ReShade Presets (Community) {⚠️ Conflict: JBX, Project Ultimate RealEye, MasterGrade Real POV}
 
 | Field | Detail |
 |-------|--------|
@@ -101,9 +110,12 @@ Free to use. Requires ReShade 5.x+ installation.
 
 **Performance Impact at 4K:** ~5-10% FPS loss (~3-6 FPS) depending on effects enabled
 
+**Pros:** Free, large variety of presets, low performance impact
+**Cons:** Requires separate ReShade installation, conflicts with other ReShade presets/lighting mods, less polished than paid presets
+
 ---
 
-## Snowymoon v2
+## Snowymoon v2 {⚠️ Conflict: other DX11 injectors (TAA/SweetFX plugins)}
 
 | Field | Detail |
 |-------|--------|
@@ -125,9 +137,12 @@ A plugin-based graphics enhancement for ETS2 that improves lighting, colour grad
 
 **Performance Impact:** Light (~2-4% FPS loss at 4K).
 
+**Pros:** Works alongside ReShade presets (stackable), lightweight, plugin-based (operates outside mod system)
+**Cons:** DX11 injector installation (not standard mod), conflicts with other DX11 injectors
+
 ---
 
-## Project Ultimate RealEye ReShade
+## Project Ultimate RealEye ReShade {⚠️ Conflict: JBX, MasterGrade Real POV, Community ReShade presets}
 
 | Field | Detail |
 |-------|--------|
@@ -147,11 +162,14 @@ A premium ReShade preset from the Project Ultimate series, designed to deliver c
 
 **Performance Impact:** Moderate (~5-10% FPS loss at 4K depending on effects enabled).
 
+**Pros:** Premium cinematic quality, designed to pair with Project Ultimate Weather, custom tonemapping
+**Cons:** Paid mod (Boosty/Patreon), conflicts with other ReShade presets, free alternatives comparable
+
 > **💰 Paid mod** — available via Boosty/Patreon subscription. Free ReShade alternatives (community presets) deliver solid results at no cost; paying for ReShade presets is low priority.
 
 ---
 
-### Dynamic Lights & Better Headlights v1.0
+### Dynamic Lights & Better Headlights v1.0 {⚠️ Conflict: other lighting overhauls}
 
 | Field | Detail |
 |-------|--------|
@@ -173,9 +191,12 @@ A complete lighting overhaul that redesigns truck lights and AI traffic behavior
 
 **Performance Impact:** Low-Moderate (593 KB).
 
+**Pros:** True dynamic flares with distance/view angles, modern LED/Halogen cut-off lines, global AI traffic upgrade
+**Cons:** Conflicts with other lighting overhauls, moderate performance impact
+
 ---
 
-## GDX Realistic Graphics v2.1
+## GDX Realistic Graphics v2.1 {⚠️ Conflict: Nextgen Graphics, RGM, JBX (if stacking comprehensive overhauls)}
 
 | Field | Detail |
 |-------|--------|
@@ -198,7 +219,7 @@ Enhances visual quality with a focus on realism, lighting, and atmosphere:
 
 ---
 
-## MasterGrade Real POV Reshade Shader and Preset v1.60
+## MasterGrade Real POV Reshade Shader and Preset v1.60 {⚠️ Conflict: JBX, Project Ultimate RealEye, Community ReShade presets}
 
 | Field         | Detail |
 |---------------|--------|
@@ -219,6 +240,9 @@ A ReShade preset designed for realistic first-person POV driving:
 
 **Performance Impact at 4K:** ~3-5 FPS loss depending on shader complexity.
 
+**Pros:** Optimised for first-person POV cockpit view, realistic contrast/saturation, free
+**Cons:** ReShade required, conflicts with other ReShade presets, limited to first-person use case
+
 ---
 
 ## Summary Table
@@ -236,7 +260,15 @@ A ReShade preset designed for realistic first-person POV driving:
 | GDX Realistic Graphics v2.1 | ~3-6 FPS loss | +500 MB-1 GB | Skybox / atmosphere | Graphics overhaul |
 | MasterGrade Real POV Reshade | ~3-5 FPS loss | Varies | First-person POV | Reshade |
 
-### Recommendation
+### Conflict Groups (Choose One Per Group)
+
+| Group | Options | Recommendation |
+|-------|---------|---------------|
+| **Comprehensive overhaul** | Nextgen Graphics, RGM, JBX Graphics | **Nextgen Graphics** for best visual variety + Promods fixes; **RGM** for lower VRAM; **JBX** only if paid mods are acceptable |
+| **ReShade preset** | JBX, Project Ultimate RealEye, MasterGrade Real POV, Community presets | **Community ReShade** or **MasterGrade** for free; **JBX** for paid cinematic |
+| **DX11 injector** | Snowymoon v2, other TAA/SweetFX plugins | **Snowymoon v2** (only option in this guide) |
+| **Night lighting** | Dynamic Lights & Better Headlights, RealRoads True Night, other lighting overhauls | **Dynamic Lights & Better Headlights** for comprehensive night lighting; **True Night** for darker skies standalone |
+| **Skybox replacement** | GDX Realistic Graphics vs using a comprehensive overhaul's skybox | Only if not using a comprehensive overhaul that already replaces skyboxes |
 
 For a 4K build with an RTX 4080 Super: **Nextgen Graphics** + **Snowymoon v2** pair well for visual quality. Add **TM Realistic Rain** from the weather section for wet-weather immersion. Avoid stacking multiple comprehensive graphics overhauls or two reshade presets simultaneously.
 

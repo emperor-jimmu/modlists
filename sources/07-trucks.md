@@ -700,7 +700,7 @@ An improved dashboard display for the SCS Iveco S-Way with clearer gauges, addit
 
 ---
 
-#### Realistic Scania SmartDash v1.60
+#### Realistic Scania SmartDash v1.60 {⚠️ Conflict: Scania NG Improved Dashboard (same truck, pick ONE)}
 
 | Field | Detail |
 |-------|--------|
@@ -727,9 +727,12 @@ Enhances the Scania NG SmartDash display with realistic information pages inspir
 
 **Performance Impact:** Negligible.
 
+**Pros:** Realistic Scania-inspired info pages, cleaner layout, ETA/rest timer, working compass
+**Cons:** Speedometer capped at 120 km/h mark (engine limitation), fewer gauges than KnightRider version
+
 ---
 
-#### Scania NG Improved Dashboard 1.60
+#### Scania NG Improved Dashboard 1.60 {⚠️ Conflict: Realistic Scania SmartDash (same truck, pick ONE)}
 
 | Field | Detail |
 |-------|--------|
@@ -758,6 +761,9 @@ A comprehensive dashboard overhaul for the Scania NG with extensive additional g
 **Compatibility:** 1.60. Requires SCS Scania NG S/R. Also compatible with the Next Generation Scania P G R S Pack mod.
 
 **Performance Impact:** Negligible.
+
+**Pros:** More gauges (oil temp, turbo bar, blind spot indicators, V8 logo), 3 decorative pages, compatible with PGRS pack
+**Cons:** Busier layout than SmartDash, may crowd the display
 
 ---
 
@@ -844,7 +850,7 @@ These mods change the way trucks feel on the road — suspension, weight transfe
 
 ---
 
-### TM Realistic Truck Physics Mod v1.60
+### TM Realistic Truck Physics Mod v1.60 {⚠️ Conflict: other physics/handling mods — only one active at a time}
 
 | Field       | Detail                                                                 |
 |-------------|------------------------------------------------------------------------|
@@ -866,6 +872,9 @@ Improves truck physics to make driving feel more realistic and immersive — add
 **Compatibility:** 1.60.x. Only one physics mod should be active at a time.
 
 **Performance Impact:** Negligible — no additional graphics load.
+
+**Pros:** Two presets included (Classic/Firm), realistic suspension and weight transfer, negligible performance impact
+**Cons:** Only one physics mod at a time, may not suit arcade-style drivers
 
 ---
 

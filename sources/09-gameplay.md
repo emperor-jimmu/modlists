@@ -10,7 +10,7 @@ Economy mods adjust the core financial simulation — fuel costs, tolls, mainten
 
 ---
 
-### TDS ECO Grand Garage (Unofficial) v1.0 {★ Baseline}
+### TDS ECO Grand Garage (Unofficial) v1.0 {★ Baseline} {⚠️ Conflict: other economy-modifying mods — only ONE economy mod per profile}
 
 | Field | Detail |
 |-------|--------|
@@ -33,6 +33,9 @@ An unofficial update of the TDS ECO system, rebalancing garage purchase costs, m
 
 **Performance Impact:** Negligible — no graphics changes.
 
+**Pros:** Garage-focused economy (purchase/maintenance/loans), forces fleet management thinking
+**Cons:** Unofficial port (unknown maintainer), may conflict with other economy mods, less comprehensive than standalone economy overhauls
+
 ---
 
 
@@ -49,17 +52,17 @@ Many standalone economy mods are available for 1.60. Common features include:
 
 Notable economy mods compatible with 1.60:
 
-| Mod | Source | Notes |
-|-----|--------|-------|
-| **Realistic Economy by Quper** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/game-economy/realistic-economy-ferry-by-quper) | ~30k downloads, 4.7★, updated to 1.60.1. Comprehensive: fuel, loans, fines, cargo income, ferry costs, used truck market. |
-| **Realist Economy by Michelle Raouf** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/game-economy/realist-economy-by-michelle-raouf-344738) | Hardcore-focused: garage prices, AI driver salaries, dynamic insurance, progressive fines, permanent vehicle wear. |
-| **Realistic and Hard Economy** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/realistic-and-hard-economy-v114) | Banking overhaul, police penalties scaled to income, ferry/train fares revised. Last updated for 1.59. |
+| Mod | Source | Notes | Pros | Cons |
+|-----|--------|-------|------|------|
+| **Realistic Economy by Quper** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/game-economy/realistic-economy-ferry-by-quper) | ~30k downloads, 4.7★, updated to 1.60.1. Comprehensive: fuel, loans, fines, cargo income, ferry costs, used truck market. | Most popular (30k downloads), most comprehensive, actively updated | May conflict with TDS ECO's garage changes |
+| **Realist Economy by Michelle Raouf** | [TruckyMods](https://truckymods.io/euro-truck-simulator-2/game-economy/realist-economy-by-michelle-raouf-344738) | Hardcore-focused: garage prices, AI driver salaries, dynamic insurance, progressive fines, permanent vehicle wear. | Hardcore realism (permanent wear, dynamic insurance), most immersive | May be too punishing for casual players |
+| **Realistic and Hard Economy** | [modhub.us](https://www.modhub.us/euro-truck-simulator-2-mods/realistic-and-hard-economy-v114) | Banking overhaul, police penalties scaled to income, ferry/train fares revised. Last updated for 1.59. | Banking-focused overhaul, police penalties scaled to income | Last updated for 1.59 (may need testing on 1.60) |
 
-**Note:** Economy mods are sensitive to game updates and each other. Only one economy-modifying mod should be active per profile.
+**Note:** Economy mods are sensitive to game updates and each other. **Only one economy-modifying mod should be active per profile.**
 
 ---
 
-### Diesel Price ETS2 by Rodonitcho Mods
+### Diesel Price ETS2 by Rodonitcho Mods {⚠️ Compatible with economy mods that do not edit fuel prices}
 
 | Field | Detail |
 |-------|--------|
@@ -81,9 +84,12 @@ A regularly updated mod that adjusts diesel prices across all fuel stations in E
 
 **Performance Impact:** Negligible — data-only mod.
 
+**Pros:** Weekly real-world fuel price updates, regionally varied pricing, works alongside economy mods
+**Cons:** Only edits fuel prices (not a full economy mod)
+
 ---
 
-### Roadbound Economy - ETS2 - Light
+### Roadbound Economy - ETS2 - Light {⚠️ Conflict: other economy-modifying mods — only ONE economy mod per profile}
 
 | Field | Detail |
 |-------|--------|
@@ -108,6 +114,9 @@ A standalone economy-only gameplay mod that slows the money curve while keeping 
 
 **Performance Impact:** Negligible (27 KB).
 
+**Pros:** Vanilla-plus friendly (not punishing), multiple difficulty variants (Light/Medium/Cruel), Steam Workshop auto-updates
+**Cons:** Only economy changes (no garage/company depth like TDS ECO), Steam Workshop (silent updates risk)
+
 **Role-Playing Potential:** Very High — a realistic economy turns every delivery into a financial decision. Players must choose routes carefully, maintain their truck proactively, and grow their company organically.
 
 ---
@@ -118,7 +127,7 @@ Traffic mods change how AI vehicles behave on the road — density, speed, varie
 
 ---
 
-### EXPRESS PERFORMANCE MOD — Realistic Rush-Hour Traffic + FPS Boost v1.0
+### EXPRESS PERFORMANCE MOD — Realistic Rush-Hour Traffic + FPS Boost v1.0 {⚠️ Conflict: Brutal Traffic, RealRoads AI Traffic, Real Traffic Density (traffic behavior — pick ONE)}
 
 | Field | Detail |
 |-------|--------|
@@ -146,11 +155,14 @@ A hybrid mod that replaces vanilla flat traffic density with realistic 24-hour t
 
 **Performance Impact:** Positive — +25–45% FPS in big cities (measured with included config tweaks).
 
+**Pros:** FPS BOOST (+25-45%) — the only traffic mod that improves performance, realistic rush-hour curves, includes config.cfg tweak guide
+**Cons:** AI vehicle cap reduced (50→35), less traffic variety than Brutal Traffic, lowest download count in category (59)
+
 **Notes:** Includes a bonus config.cfg tweak guide for mirror rendering settings that further improves FPS.
 
 ---
 
-### Brutal Traffic v8.1 {★ Baseline}
+### Brutal Traffic v8.1 {★ Baseline} {⚠️ Conflict: EXPRESS PERFORMANCE MOD, RealRoads AI Traffic, Real Traffic Density (traffic behavior — pick ONE)}
 
 | Field | Detail |
 |-------|--------|
@@ -176,6 +188,9 @@ Re-engineers AI traffic behavior and density:
 **Compatibility:** 1.60, all maps and DLCs, works with AI traffic packs
 
 **Performance Impact:** Negligible (<2% FPS loss) — optimized traffic CPU usage, minimal VRAM impact.
+
+**Pros:** Most realistic AI behavior (jams, weather-reactive, accidents), works with any AI traffic vehicle pack, negligible FPS loss
+**Cons:** Can't stack with other traffic behavior mods, accidents may be immersion-breaking for some
 
 ---
 
@@ -230,7 +245,7 @@ Adds 46 new bus models with over 1,500 real-company skins to AI traffic:
 
 ---
 
-### RealRoads AI Traffic - Real World AI Traffic Medium for ETS2
+### RealRoads AI Traffic - Real World AI Traffic Medium for ETS2 {⚠️ Conflict: Brutal Traffic, EXPRESS PERFORMANCE MOD, Real Traffic Density (traffic behavior — pick ONE)}
 
 | Field | Detail |
 |-------|--------|
@@ -256,11 +271,14 @@ An original AI traffic tuning project built from current SCS game definitions, s
 
 **Performance Impact:** Low — optimized traffic CPU usage, no VRAM impact.
 
+**Pros:** Real European motorway flow curves, rush-hour shaping, Night Quiet Add-On available, high subscriber count (3,261)
+**Cons:** Listed for 1.59 (may need testing on 1.60), do not combine with other traffic behavior mods
+
 > **Night Quiet Add-On (Medium):** An optional add-on ([Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3745637986)) that reduces traffic spawn frequency from 12:00 AM to 4:00 AM to ~35% of the Medium preset's overnight rate. Creates quieter late-night driving without changing daytime or rush-hour curves. Place the add-on **above** RealRoads AI Traffic Medium in load order.
 
 ---
 
-### Real Traffic Density (Steam Workshop)
+### Real Traffic Density (Steam Workshop) {⚠️ Conflict: Brutal Traffic, EXPRESS PERFORMANCE MOD, RealRoads AI Traffic (traffic behavior — pick ONE)}
 
 | Field | Detail |
 |-------|--------|
@@ -281,6 +299,9 @@ Adjusts AI traffic density based on region, time of day, and road type:
 **Compatibility:** Check Steam Workshop for latest version. Generally updated alongside game patches.
 
 **Performance Impact:** Low-Moderate. Depends on configured density multipliers.
+
+**Pros:** Steam Workshop auto-updates, region/time-of-day density curves, compatible with AI vehicle packs
+**Cons:** Steam Workshop (silent updates), less feature-rich than Brutal Traffic or RealRoads AI Traffic
 
 ---
 
@@ -345,7 +366,7 @@ The largest multiplayer platform for ETS2 and ATS. While primarily a multiplayer
 
 ---
 
-### SCAR - Super Compact Advisor Rework
+### SCAR - Super Compact Advisor Rework {⚠️ Conflict: SiSL's Route Advisor (route advisor replacement — pick ONE)}
 
 | Field | Detail |
 |-------|--------|
@@ -367,9 +388,12 @@ Replaces the standard Route Advisor with a super compact version that shows only
 
 **Performance Impact:** Negligible (218 KB).
 
+**Pros:** Minimal screen footprint, uses truck's GPS (no duplicate map), lightweight (218 KB)
+**Cons:** No built-in GPS navigation map, fewer info panels than SiSL's, less customisable
+
 ---
 
-### SiSL's Route Advisor {★ Baseline}
+### SiSL's Route Advisor {★ Baseline} {⚠️ Conflict: SCAR — both replace route advisor UI, pick ONE}
 
 | Field | Detail |
 |-------|--------|
@@ -392,6 +416,9 @@ An enhanced navigation and information display for ETS2/ATS. Not to be confused 
 **Compatibility:** Steam Workshop auto-updates for latest ETS2 versions.
 
 **Performance Impact:** Negligible.
+
+**Pros:** Customisable layouts with multiple skins, zoomable map, fuel/time/damage/income panels, configurable hotkeys
+**Cons:** More screen space used than SCAR, Steam Workshop (silent updates)
 
 ---
 
@@ -573,7 +600,7 @@ World detail mods replace fictional in-game brands, logos, and signage with real
 
 ---
 
-### Real Company Logo v3.4 {★ Baseline}
+### Real Company Logo v3.4 {★ Baseline} {⚠️ Conflict: other company replacement mods — pick ONE}
 
 | Field | Detail |
 |-------|--------|
@@ -595,6 +622,9 @@ Replaces 165+ fictional SCS companies and gas stations with real-world brands:
 **Compatibility:** 1.60.x, requires all map DLCs. Load above the main map mod in Mod Manager. Incompatible with other company replacement mods (pick one).
 
 **Performance Impact:** Negligible — texture and definition only, no new models.
+
+**Pros:** 165+ real-world brands (Shell, BP, IKEA, Coca-Cola), regionally accurate fuel stations, road sign corrections
+**Cons:** Incompatible with other company replacement mods, requires all map DLCs
 
 ---
 
@@ -672,10 +702,20 @@ LOW PRIORITY
   Police / parking enforcement mods (lowest priority)
 ```
 
+### Conflict Groups (Choose One Per Group)
+
+| Group | Options | Recommendation |
+|-------|---------|---------------|
+| **Economy overhaul** | TDS ECO Grand Garage, Realistic Economy by Quper, Realist Economy (Michelle Raouf), Realistic and Hard Economy, Roadbound Economy | **Roadbound Economy Light** for casual-friendly; **Realist Economy** for hardcore; **TDS ECO** for garage-focused |
+| **Traffic behavior** | Brutal Traffic v8.1, EXPRESS PERFORMANCE MOD, RealRoads AI Traffic, Real Traffic Density | **Brutal Traffic** for most realistic AI; **EXPRESS** for FPS boost; **RealRoads** for real flow curves |
+| **Company replacement** | Real Company Logo v3.4, any other company replacement mod | **Real Company Logo v3.4** (165+ brands, regionally accurate) |
+| **Route advisor** | SiSL's Route Advisor, SCAR | **SiSL's** for feature-rich; **SCAR** for minimal screen footprint |
+
 ### Key Rules
 
 - **Only one economy mod** per profile — stacking economy mods causes unpredictable income and cost calculations.
 - **Traffic density + AI vehicle packs** can be combined (density mod above, vehicle pack below).
+- **Traffic behavior** mods are mutually exclusive — pick ONE (Brutal Traffic, EXPRESS PERFORMANCE MOD, RealRoads AI Traffic, or Real Traffic Density).
 - **Police/parking enforcement** mods go last in load order — they need to override all other traffic definitions.
 - **Dashboard mods** are truck-specific and listed in the Interior & Dashboard Mods section of the Trucks chapter. Use freely with any other mods.
 - **Ferry Plus** requires ProMods — place above ProMods map files in load order.

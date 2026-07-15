@@ -4,7 +4,7 @@ Trailer and cargo mods add new ownable trailers, cargo types, real-company liver
 
 ---
 
-## Trailers and Cargo Pack by Jazzycat v11.10.5 {★ Baseline}
+## Trailers and Cargo Pack by Jazzycat v11.10.5 {★ Baseline} {⚠️ Conflict: Overweight Trailers and Cargo Pack — mutually exclusive, pick ONE}
 
 | Field         | Detail                                                                      |
 |---------------|-----------------------------------------------------------------------------|
@@ -29,9 +29,12 @@ The definitive cargo expansion for ETS2 — the most comprehensive content pack 
 
 **Performance Impact:** Moderate (5-10% FPS loss at 4K during heavy traffic scenes). The sheer number of AI trailer models increases draw calls. VRAM: +800 MB-1.2 GB depending on map region.
 
+**Pros:** The ultimate cargo mod — 175 trailers, 772 cargo types, ~3000 skins, compatible with all maps, works with Military Cargo Pack
+**Cons:** Huge size (2.85 GB), heavy VRAM usage, Overweight pack is a subset (pick ONE)
+
 ---
 
-## Overweight Trailers and Cargo Pack by Jazzycat v11.10.4
+## Overweight Trailers and Cargo Pack by Jazzycat v11.10.4 {⚠️ Conflict: Trailers and Cargo Pack — mutually exclusive, pick ONE (this is a subset)}
 
 | Field         | Detail                                                                                 |
 |---------------|----------------------------------------------------------------------------------------|
@@ -53,6 +56,9 @@ A specialised subset of Jazzycat's main pack focusing on oversized and heavy-loa
 **Compatibility:** 1.60.x. **Important: This pack is a subset of the main Trailers and Cargo Pack. Do NOT use them together.** Compatible with Military Cargo Pack and other Jazzycat packs.
 
 **Performance Impact:** Moderate (~5-8% FPS loss at 4K). VRAM: +400-600 MB.
+
+**Pros:** Smaller download (740 MB vs 2.85 GB), focused on oversized/heavy loads, lighter VRAM usage
+**Cons:** A subset of the main pack (cannot use both), fewer trailers (53 vs 175), fewer cargo types (341 vs 772)
 
 ---
 

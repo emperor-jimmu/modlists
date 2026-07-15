@@ -93,7 +93,7 @@ Studio-quality sound samples recorded on a real 2022 MAN TGX 18.510 with stock 1
 
 ---
 
-## Scania V8 Stock Sound v12.0
+## Scania V8 Stock Sound v12.0 {⚠️ Conflict: Scania NextGen 660 DC16 V8 Sound Pack (both target Scania NG V8 engines — pick ONE per truck)}
 
 | Field            | Detail                                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------|
@@ -118,6 +118,9 @@ Authentic Scania V8 stock sound for all SCS/Eugene and RJL Scanias (excluding P 
 
 **Performance Impact:** Negligible
 
+**Pros:** Covers ALL Scania V8 generations (4-series through NG), Opticruise shifting and retarder sounds, gearbox whine/engine fan
+**Cons:** 1.59 listed (needs testing on 1.60), V8 only (no inline-6 support)
+
 ---
 
 ## Kriechbaum Sound Packs
@@ -140,7 +143,7 @@ High-quality Paccar MX-13 engine sound for DAF trucks. Requires confirmation of 
 
 **Performance Impact:** Negligible
 
-### Kriechbaum Volvo FH4 D13 Sound v1.1
+### Kriechbaum Volvo FH4 D13 Sound v1.1 {⚠️ Conflict: SFX Volvo FH13 D13K v2.47.1 (both target Volvo FH D13 engines — pick ONE)}
 
 | Field        | Detail                                                                                                              |
 |--------------|---------------------------------------------------------------------------------------------------------------------|
@@ -174,7 +177,7 @@ Adaptation of Kriechbaum's Scania L6 Open Pipe sound to SCS Scania NG Tcab base.
 
 ---
 
-## Scania NextGen 660 DC16 V8 Sound Pack v1.3
+## Scania NextGen 660 DC16 V8 Sound Pack v1.3 {⚠️ Conflict: Scania V8 Stock Sound v12.0 (both target Scania NG V8 engines — pick ONE per truck)}
 
 | Field            | Detail                                                                                                                           |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -255,16 +258,26 @@ LOW PRIORITY (below map mods)
 
 ## Summary
 
-| Mod                                  | 1.60                                          | Type                  | Performance |
-|--------------------------------------|-----------------------------------------------|-----------------------|-------------|
-| Sound Fixes Pack v26.34              | Partial (advertised for 1.59, pending update) | Comprehensive         | Negligible  |
-| 2022 MAN TGX D2676 Sound Pack v1.3.2 | Yes                                           | Engine (MAN TGX)      | Negligible  |
-| SFX Renault Range T DTi460 v2.05.1   | Yes                                           | Engine (Renault)      | Negligible  |
-| SFX Volvo FH13 D13K v2.47.1          | Yes                                           | Engine (Volvo)        | Negligible  |
-| SFX Scania R410 DC13.115 v1.29.1     | Yes                                           | Engine (Scania)       | Negligible  |
-| Scania V8 Stock Sound v12.0          | Partial (1.59)                                | Engine (Scania V8)    | Negligible  |
-| Scania NextGen 660 DC16 V8 v1.3      | Partial (1.59)                                | Engine (Scania NG V8) | Negligible  |
-| Volvo FH5 I-Save D13TC v1.3          | Partial (1.59)                                | Engine (Volvo FH5)    | Negligible  |
-| Kriechbaum Paccar MX-13 v3.0         | Unknown (1.47)                                | Engine (DAF)          | Negligible  |
-| Kriechbaum Volvo FH4 D13 v1.1        | Unknown (1.49)                                | Engine (Volvo FH4)    | Negligible  |
-| CAT C15 Twin Turbo Real Engine Pack  | Yes                                           | Engine (CAT C15)      | Negligible  |
+| Mod                                  | 1.60                                          | Type                  | Performance | Conflicts With |
+|--------------------------------------|-----------------------------------------------|-----------------------|-------------|----------------|
+| Sound Fixes Pack v26.34              | Partial (advertised for 1.59, pending update) | Comprehensive         | Negligible  | None — must load ABOVE engine packs |
+| 2022 MAN TGX D2676 Sound Pack v1.3.2 | Yes                                           | Engine (MAN TGX)      | Negligible  | Other MAN TGX sound packs only |
+| SFX Renault Range T DTi460 v2.05.1   | Yes                                           | Engine (Renault)      | Negligible  | Other Renault Range T sound packs only |
+| SFX Volvo FH13 D13K v2.47.1          | Yes                                           | Engine (Volvo FH)     | Negligible  | **Kriechbaum Volvo FH4 D13** — both target Volvo FH D13 engines |
+| SFX Scania R410 DC13.115 v1.29.1     | Yes                                           | Engine (Scania L6)    | Negligible  | Compatible with V8 packs (different engine: inline-6 vs V8) |
+| Scania V8 Stock Sound v12.0          | Partial (1.59)                                | Engine (Scania V8)    | Negligible  | **Scania NextGen 660 DC16 V8** — both target Scania NG V8 |
+| Scania NextGen 660 DC16 V8 v1.3      | Partial (1.59)                                | Engine (Scania NG V8) | Negligible  | **Scania V8 Stock Sound** — both target Scania NG V8 |
+| Volvo FH5 I-Save D13TC v1.3          | Partial (1.59)                                | Engine (Volvo FH5)    | Negligible  | Other Volvo FH5 sound packs only |
+| Kriechbaum Paccar MX-13 v3.0         | Unknown (1.47)                                | Engine (DAF)          | Negligible  | Other DAF sound packs only |
+| Kriechbaum Volvo FH4 D13 v1.1        | Unknown (1.49)                                | Engine (Volvo FH4)    | Negligible  | **SFX Volvo FH13 D13K** — both target Volvo FH D13 engines |
+| CAT C15 Twin Turbo Real Engine Pack  | Yes                                           | Engine (CAT C15)      | Negligible  | Compatible — unique engine, no overlap |
+
+### Engine Sound Conflict Groups
+
+| Group | Options | Rule |
+|-------|---------|------|
+| **Scania NG V8** | Scania V8 Stock Sound v12.0, Scania NextGen 660 DC16 V8 v1.3 | Pick ONE per truck |
+| **Volvo FH D13** | SFX Volvo FH13 D13K v2.47.1, Kriechbaum Volvo FH4 D13 v1.1 | Pick ONE per truck |
+| **Same truck/engine** | Any two engine packs targeting the same truck model | Only ONE engine sound per truck — the highest-priority one wins |
+
+> **Key rule:** Engine sound packs do NOT conflict across different trucks. You can have a MAN sound pack, a Renault sound pack, and a Scania sound pack all active simultaneously — each targets a different truck.

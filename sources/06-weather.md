@@ -4,7 +4,7 @@ Overhauls ETS2 weather systems, seasonal environments, skyboxes, and vegetation.
 
 ---
 
-## Realistic Weather System V2.9
+## Realistic Weather System V2.9 {⚠️ Standalone — cannot stack with any weather, graphics, rain, or Grimes seasonal mods}
 
 | Field | Detail |
 |-------|--------|
@@ -29,9 +29,12 @@ A lightweight weather-only mod that completely overhauls rain and thunderstorm b
 
 **Performance Impact:** Negligible (<2% FPS loss) — small file size, light processing overhead.
 
+**Pros:** Lightest weight weather mod, realistic rain/thunder based on real climate data, authentic road slipperiness
+**Cons:** **Complete weather replacement** — cannot stack with ANY other weather, graphics, rain, or Grimes mods
+
 ---
 
-## Grimes Frosty Winter v10.7
+## Grimes Frosty Winter v10.7 {⚠️ Conflict: other Grimes seasons, all other weather/rain mods}
 
 | Field | Detail |
 |-------|--------|
@@ -56,9 +59,12 @@ Full winter simulation for ETS2:
 
 **Performance Impact:** Heavy (~15-20% FPS loss at 4K, ~2-3 GB VRAM) due to high-resolution assets across entire map.
 
+**Pros:** Most immersive winter experience (snow, winter textures, winter clothing), addons available (Frosty Wheels, Clear Roads, Physics)
+**Cons:** Heaviest FPS/VRAM impact of any weather mod, conflicts with all other seasons/weather mods
+
 ---
 
-## Grimes New Summer v6.7 {★ Baseline}
+## Grimes New Summer v6.7 {★ Baseline} {⚠️ Conflict: other Grimes seasons, Realistic Weather System, Project Ultimate Weather, PNG Autumn Addon}
 
 | Field | Detail |
 |-------|--------|
@@ -81,9 +87,12 @@ Improves the default summer environment:
 
 **Performance Impact:** Moderate (~8-12% FPS loss at 4K, ~1 GB VRAM).
 
+**Pros:** Best baseline summer environment (green vegetation, dense foliage), Grimes Rain Reflections addon compatible, moderate VRAM
+**Cons:** Conflicts with all other seasons/weather mods, moderate FPS hit
+
 ---
 
-## Grimes Spring v6.6
+## Grimes Spring v6.6 {⚠️ Conflict: other Grimes seasons, Realistic Weather System, Project Ultimate Weather, PNG Autumn Addon}
 
 | Field | Detail |
 |-------|--------|
@@ -104,9 +113,12 @@ Simulates a spring environment:
 
 **Performance Impact:** Moderate (~8-12% FPS loss at 4K, ~1 GB VRAM).
 
+**Pros:** Flowery meadows, spring bloom vegetation, realistic spring lighting
+**Cons:** Conflicts with all other seasons/weather mods, moderate FPS hit
+
 ---
 
-## Grimes Early Autumn v9.0
+## Grimes Early Autumn v9.0 {⚠️ Conflict: other Grimes seasons, Realistic Weather System, Project Ultimate Weather, PNG Autumn Addon}
 
 | Field | Detail |
 |-------|--------|
@@ -128,9 +140,12 @@ Simulates an early autumn environment:
 
 **Performance Impact:** Moderate (~8-12% FPS loss at 4K, ~1 GB VRAM).
 
+**Pros:** Rich autumn colors (orange/red foliage), autumnal daylight hours, large size (1023 MB) = more content
+**Cons:** Conflicts with all other seasons/weather mods, same FPS hit as other Grimes mods
+
 ---
 
-## Grimes Late Autumn/Mild Winter v6.6
+## Grimes Late Autumn/Mild Winter v6.6 {⚠️ Conflict: other Grimes seasons, Realistic Weather System, Project Ultimate Weather, PNG Autumn Addon}
 
 | Field | Detail |
 |-------|--------|
@@ -152,9 +167,12 @@ Simulates a late autumn or mild winter environment:
 
 **Performance Impact:** Moderate (~8-12% FPS loss at 4K, ~1 GB VRAM).
 
+**Pros:** Leafless winter aesthetic, pedestrians in winter clothes, transitional season feel
+**Cons:** Conflicts with all other seasons/weather mods, not a full winter (no snow)
+
 ---
 
-## Grimes Realistic Rain Reflections Addon v1.0
+## Grimes Realistic Rain Reflections Addon v1.0 {⚠️ Depends on Grimes seasonal mod — do NOT use with Frosty Winter}
 
 | Field | Detail |
 |-------|--------|
@@ -176,9 +194,12 @@ Designed for use with New Summer, Spring, Early Autumn, and Late Autumn/Mild Win
 
 **Performance Impact:** Negligible (<2% FPS loss).
 
+**Pros:** Improved wet road reflections and puddles, enhances Grimes seasonal mods, lightweight
+**Cons:** Requires a Grimes seasonal mod, incompatible with Frosty Winter and TM Realistic Rain
+
 ---
 
-## Weather Mod V3.8
+## Weather Mod V3.8 {⚠️ Conflict: other weather mods, Grimes seasons, Realistic Weather System, Project Ultimate Weather}
 
 | Field | Detail |
 |-------|--------|
@@ -200,9 +221,12 @@ A standalone weather mod for 1.60.x:
 
 **Performance Impact:** Light (~3-5% FPS loss).
 
+**Pros:** Cloudy/foggy atmosphere, autumn addons included, light performance impact
+**Cons:** Low download count (35 — less tested), conflicts with other weather mods
+
 ---
 
-## Grass_Tree / Autumn_ETS
+## Grass_Tree / Autumn_ETS {⚠️ Compatible with most weather mods — vegetation replacement only}
 
 | Field | Detail |
 |-------|--------|
@@ -223,9 +247,12 @@ A vegetation overhaul mod that replaces grass and tree textures:
 
 **Performance Impact:** Light (~3-5% FPS loss at 4K).
 
+**Pros:** Vegetation-only replacement (compatible with most weather mods), Steam Workshop version available
+**Cons:** Grass/tree textures only — no weather changes
+
 ---
 
-## PNG Autumn Addon
+## PNG Autumn Addon {⚠️ Conflict: Grimes seasons (requires Nextgen Graphics base, mutual exclusive with Grimes)}
 
 | Field | Detail |
 |-------|--------|
@@ -245,9 +272,12 @@ Seasonal addon for PNG Graphics (Nextgen Graphics) that replaces summer/spring e
 
 **Performance Impact:** Similar to base PNG (~6-10% FPS loss at 4K depending on density).
 
+**Pros:** Only autumn addon for Nextgen Graphics users, matches Nextgen's visual style
+**Cons:** Requires Nextgen Graphics, incompatible with Grimes and other weather overhauls
+
 ---
 
-## Project Ultimate Weather 2.0
+## Project Ultimate Weather 2.0 {⚠️ Conflict: all other weather mods (Grimes, Realistic Weather System, TM Realistic Rain, etc.)}
 
 | Field | Detail |
 |-------|--------|
@@ -267,11 +297,14 @@ A custom SCS weather rework with fully custom skyboxes and atmospheric lighting:
 
 **Performance Impact:** Negligible (~1-2% FPS loss) — definition-only changes, no new models.
 
+**Pros:** Negligible performance impact, 12 custom skyboxes, rebalanced HDR/bloom/color grading, pairs with Project Ultimate RealEye ReShade
+**Cons:** v2.0 is paid (Boosty/Patreon), incompatible with all other weather mods, free v1.0 has fewer features
+
 > **💰 Note:** v2.0 is a paid mod (Boosty/Patreon subscription). The free v1.0 is available on ets3mods.com.
 
 ---
 
-## TM Realistic Rain v1.1
+## TM Realistic Rain v1.1 {⚠️ Conflict: Grimes Rain Reflections, Realistic Weather System}
 
 | Field | Detail |
 |-------|--------|
@@ -292,11 +325,14 @@ A standalone rain enhancement mod that reworks ETS2's rain visuals and audio:
 
 **Performance Impact:** Light (~2-3% FPS loss at 4K).
 
----
+**Pros:** Realistic raindrop visuals with dynamic density, directional rain audio, works alongside most graphics/weather mods
+**Cons:** May conflict with Grimes Rain Reflections and Realistic Weather System, 1.60 compatibility is reported but not confirmed
 
 ---
 
-## Roadbound True Rain 2K
+---
+
+## Roadbound True Rain 2K {⚠️ Conflict: TM Realistic Rain, Grimes Rain Reflections, Realistic Weather System (rain-specific mod overlap)}
 
 | Field | Detail |
 |-------|--------|
@@ -322,9 +358,12 @@ A standalone rain enhancement mod by snazzyatoms (author of Roadbound Economy, R
 
 **Performance Impact:** Moderate (~3-8% FPS loss at 4K) due to high droplet density and enhanced rain physics.
 
+**Pros:** Highest droplet density (32,000/m), dynamic storm cells, cabin EQ tuning, early experimental — shaping up to be comprehensive
+**Cons:** Experimental, cabin tuning only for 17 base-game trucks (not all modded trucks), 1.60 compatibility reported but not confirmed
+
 ---
 
-### RealRoads True Night
+### RealRoads True Night {⚠️ Conflict: other night lighting/HDR mods, Realistic Weather System, comprehensive weather overhauls}
 
 | Field | Detail |
 |-------|--------|
@@ -346,6 +385,9 @@ Darker, more realistic nighttime driving — rural roads, highways, and unlit ar
 
 **Performance Impact:** Negligible (1.96 MB — definition-only, no high-res textures).
 
+**Pros:** Negligible performance impact, darker/more realistic nighttime driving, high subscriber count (5,861)
+**Cons:** Do not combine with other night lighting or HDR mods, may conflict with weather/graphics mods that edit environment files
+
 ---
 
 ## Summary Table
@@ -366,6 +408,17 @@ Darker, more realistic nighttime driving — rural roads, highways, and unlit ar
 | TM Realistic Rain v1.1 | Rain | ~5.5 MB | 2-3% | Minimal | Standalone rain overhaul |
 | Roadbound True Rain 2K | Rain (Experimental) | ~50 MB | 3-8% | +300 MB | High-density rain physics + audio |
 | RealRoads True Night | Night lighting | 1.96 MB | <1% | Negligible | Darker night driving, headlight-dependent roads |
+
+### Conflict Groups (Choose One Per Group)
+
+| Group | Options | Recommendation |
+|-------|---------|---------------|
+| **Seasonal weather** | Grimes Frosty Winter, Grimes New Summer, Grimes Spring, Grimes Early Autumn, Grimes Late Autumn/Mild Winter | **New Summer** for baseline (lowest VRAM of Grimes mods); **Frosty Winter** for immersion if you have VRAM headroom |
+| **Complete weather replacement** | Realistic Weather System V2.9 vs using any other weather mod | **Not recommended** — conflicts with graphics/weather/rain/Grimes mods. Only use on a minimal profile. |
+| **Seasonal addon for Nextgen** | PNG Autumn Addon vs a Grimes season | **Grimes** if not using Nextgen; PNG Autumn if already using Nextgen Graphics |
+| **Rain enhancement** | TM Realistic Rain, Roadbound True Rain, Grimes Rain Reflections | **TM Realistic Rain** for best compatibility; **Grimes Rain Reflections** if using Grimes seasonal |
+| **Night lighting** | RealRoads True Night vs other night lighting/HDR mods | **True Night** for darker skies standalone; **Dynamic Lights** (in Graphics) for comprehensive night lighting |
+| **Skybox/atmosphere** | Project Ultimate Weather, Weather Mod V3.8 | **Project Ultimate** for quality (free v1.0 available); **Weather Mod V3.8** for a free alternative |
 
 ### Notes
 

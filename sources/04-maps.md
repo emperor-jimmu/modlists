@@ -92,7 +92,7 @@ An official ProMods addon that extends the map east into the Kazakh and Russian 
 
 ---
 
-### RusMap 2.60
+### RusMap 2.60 {⚠️ Conflict: Project Russia}
 
 - **Version:** 2.60 (updated 20 June 2026)
 - **Source:** [ets2.lt](https://ets2.lt/en/project-rusmap-2-60-update-20-06-2026/) (Download: modsfire.com)
@@ -103,7 +103,7 @@ A long-standing map mod covering the European part of Russia (Moscow, Leningrad,
 
 **Compatibility:**
 
-- Known conflicts with: Standalone — no conflicts when used with the correct connector
+- Known conflicts with: Project Russia (overlapping areas — not recommended to use both)
 - Required load order: Load order: `rusmap_model` → `rusmap_map` → connectors
 - Required connectors: Promods-RusMap road connection, Hybrid Plus connector for multi-map combos
 
@@ -116,6 +116,9 @@ A long-standing map mod covering the European part of Russia (Moscow, Leningrad,
 
 - All map DLCs recommended for full compatibility
 - ProMods 2.83 (if used in combo)
+
+**Pros:** Massive coverage (60+ Russian cities + 16 Belarusian cities), extensive connector ecosystem (Hybrid Plus, dedicated RCs), long-standing community support
+**Cons:** Higher VRAM usage, heavier FPS impact in snow/vegetation areas, requires connectors for combos
 
 ---
 
@@ -233,7 +236,7 @@ A scenic map that covers the Caucasus region, including parts of Georgia, Russia
 
 ---
 
-### Iberia Rebuild
+### Iberia Rebuild {⚠️ Conflict: Portugal Rebuild}
 
 - **Version:** Ongoing (check mod page for latest)
 - **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/iberia-rebuild)
@@ -258,9 +261,12 @@ Expands and remakes the Iberia DLC with new cities, reworked roads, and addition
 - Iberia DLC
 - ProMods 2.83 (for the ProMods-compatible version)
 
+**Pros:** More comprehensive Iberian coverage (Spain + Portugal + Andorra + Gibraltar), ProMods-compatible version available, active development
+**Cons:** Higher VRAM usage, conflicts with Portugal Rebuild (overlapping areas)
+
 ---
 
-### Portugal Rebuild
+### Portugal Rebuild {⚠️ Conflict: Iberia Rebuild}
 
 - **Version:** v01
 - **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/portugal-rebuild-v01)
@@ -284,6 +290,9 @@ A ProMods addon that recreates and improves Portugal with new logistics areas, r
 
 - ProMods 2.83
 - Iberia DLC
+
+**Pros:** Lighter VRAM usage, direct ProMods addon (no load order fiddling), focused Portugal-only detail
+**Cons:** Portugal only (no Spain coverage), fewer cities than Iberia Rebuild
 
 ---
 
@@ -313,7 +322,7 @@ A detailed enhancement of Bulgaria that adds new cities, roads, and scenery. Rew
 
 ---
 
-### Project Russia
+### Project Russia {⚠️ Conflict: RusMap}
 
 - **Version:** Latest (1.60 compatible)
 - **Source:** [TruckyMods](https://truckymods.io/euro-truck-simulator-2/maps/project-russia)
@@ -336,6 +345,9 @@ A high-quality map of Central Russia with detailed cities, realistic road infras
 **Dependencies:**
 
 - All map DLCs recommended
+
+**Pros:** Higher quality detail in covered areas, no connectors needed, lighter VRAM than RusMap
+**Cons:** Smaller coverage area than RusMap, fewer cities, less community support for combos
 
 ---
 
