@@ -251,6 +251,10 @@ Jade shows what block you're looking at and extra information about it — modde
 
 **Pro tip**: Keep Jade enabled. It's the fastest way to check if a machine is running, a crop is ready, or a chest contains specific items.
 
+**Enhanced Boss Bars**: To avoid conflicts with the custom boss bar display, turn off Jade's own boss bar:
+
+> Main Menu → Mods → Jade → Config → Mod Settings → Display Bosses → OFF
+
 #### AppleSkin (Food Info)
 
 AppleSkin adds a visual overlay to your hunger bar showing exactly how much hunger and saturation food will restore before you eat it.
