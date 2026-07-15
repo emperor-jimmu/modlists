@@ -143,15 +143,30 @@ See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full mod list.
 
 #### Video Settings
 
-| Setting         | Recommended    | Notes                                                   |
-|-----------------|----------------|---------------------------------------------------------|
-| Graphics        | Fabulous       | Sodium makes this performant now                        |
-| Render Distance | 16-32 chunks   | Tune to your hardware; Distant Horizons handles far LOD |
-| Brightness      | Moody → Bright | Personal preference — Bright makes caves easier to see  |
+| Setting             | Recommended    | Notes                                                                 |
+|---------------------|----------------|-----------------------------------------------------------------------|
+| Graphics            | Fabulous       | Sodium makes this performant now                                      |
+| Render Distance     | 10 chunks      | Keep low — Distant Horizons handles everything beyond this            |
+| Simulation Distance | 8 chunks       | Controls entity ticking range; lower = less lag from distant mobs/farms |
+| Brightness          | Moody → Bright | Personal preference — Bright makes caves easier to see                |
+| VSync               | OFF            |                                                         |
+| Max Framerate       | Uncapped       |                                                         |
 
 #### Distant Horizons Settings
 
-Open **Mod Menu → Distant Horizons → Config** after first launch. Set LOD Render Distance to 1024 blocks. The mod generates LOD data as you explore — first visit to an area will have temporary pop-in.
+Open **Video Settings → [colored tiles icon]** (next to FOV slider). With Complementary Unbound Ultra at 4K, the shader is already taxing the GPU — DH LOD geometry still goes through the full shader pipeline (lighting, shadows, AO). Recommended for RTX 4080 Super + AMD 9900X:
+
+| Setting                      | Value      | Notes                                                                |
+|------------------------------|------------|----------------------------------------------------------------------|
+| Enable Rendering             | ON         |                                                                      |
+| Enable Distant Generation    | ON         |                                                                      |
+| LOD Render Distance Radius   | **128-256**| Start at 128; try 256 if FPS stays comfortable. 384+ with shaders at 4K is heavy |
+| Quality Preset               | **Medium** | High adds geometry that the shader must process per-pixel — cost multiplies |
+| CPU Load                     | Aggressive | 9900X has 24 threads; CPU isn't the bottleneck here                 |
+| Enable Cloud Rendering       | OFF        | Let Complementary Unbound handle clouds — double-clouding wastes GPU |
+| Show LOD Gen Progress        | ON         | Helps confirm generation is working                                 |
+
+DH auto-detects thread count — no need to set LOD Update Threads manually. The mod generates LOD data as you explore; first visit to an area will have temporary pop-in. Terralith + Tectonic complex terrain may take longer to generate initially. Monitor VRAM usage — shaders at 4K + DH LODs can push past 12GB on the 4080 Super's 16GB buffer.
 
 #### Performance — Install and Forget
 
@@ -213,7 +228,7 @@ Your first session is about getting comfortable. Don't rush — this wave has ze
 
 | Session                         | Goal                                                                                                                                                                                                  |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons LOD to 1024. Walk around spawn to generate LOD data      |
+| **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons (LOD 384-512, High quality, Aggressive CPU). Walk around spawn to generate LOD data      |
 | **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey   |
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                          |
 | **Ongoing**                     | LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |

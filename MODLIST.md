@@ -103,23 +103,23 @@ If installing manually:
 
 ### Visual & Client QoL
 
-| Mod                                                                           | Role                                                                |
-|-------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)               | Dynamic lighting                                                    |
-| [BetterF3](https://modrinth.com/mod/betterf3)                                 | Customizable debug HUD                                              |
-| [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | Realistic sound                                                     |
-| [AmbientSounds](https://modrinth.com/mod/ambientsounds)                       | Nature ambiance (birds, wind, water)                                |
-| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)         | 147 new biome/structure-based songs, vanilla silence gaps preserved |
-| [Immersive UI](https://modrinth.com/mod/immersive-ui)                         | Animated UI, smooth hotbar, item particles                          |
-| [Traveler's Titles](https://modrinth.com/mod/travelers-titles)                | RPG-style titles entering biomes/dimensions                         |
-| [Better Modlist](https://modrinth.com/mod/better-modlist-neoforge)            | Enhanced mod list screen with badges/categories                     |
-| [Better Third Person](https://modrinth.com/mod/better-third-person)           | Independent 360° camera rotation in third-person view               |
-| [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                 | Modern, sharp tooltip rendering with equipment compare              |
-| [Sounds](https://modrinth.com/mod/sound)                                      | 170+ new sound effects for UIs, items, blocks, actions              |
-| [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)         | Subtle float/pulse animations on inventory items                    |
-| [Better Days](https://modrinth.com/mod/betterdays)                            | Customizable day/night cycle length, enhanced sleep                 |
+| Mod                                                                                         | Role                                                                |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)                             | Dynamic lighting                                                    |
+| [BetterF3](https://modrinth.com/mod/betterf3)                                               | Customizable debug HUD                                              |
+| [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered)               | Realistic sound                                                     |
+| [AmbientSounds](https://modrinth.com/mod/ambientsounds)                                     | Nature ambiance (birds, wind, water)                                |
+| [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod)                       | 147 new biome/structure-based songs, vanilla silence gaps preserved |
+| [Immersive UI](https://modrinth.com/mod/immersive-ui)                                       | Animated UI, smooth hotbar, item particles                          |
+| [Traveler's Titles](https://modrinth.com/mod/travelers-titles)                              | RPG-style titles entering biomes/dimensions                         |
+| [Better Modlist](https://modrinth.com/mod/better-modlist-neoforge)                          | Enhanced mod list screen with badges/categories                     |
+| [Better Third Person](https://modrinth.com/mod/better-third-person)                         | Independent 360° camera rotation in third-person view               |
+| [Tooltip Overhaul](https://modrinth.com/mod/tooltip-overhaul)                               | Modern, sharp tooltip rendering with equipment compare              |
+| [Sounds](https://modrinth.com/mod/sound)                                                    | 170+ new sound effects for UIs, items, blocks, actions              |
+| [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations)                       | Subtle float/pulse animations on inventory items                    |
+| [Better Days](https://modrinth.com/mod/betterdays)                                          | Customizable day/night cycle length, enhanced sleep                 |
 | [Beautiful Enchanted Books](https://modrinth.com/mod/beautiful-enchanted-books-mod-edition) | Unique textures per enchantment book type                           |
-| [Overflowing Bars](https://modrinth.com/mod/overflowing-bars)           | Expanded health, armor, and toughness bars beyond vanilla limits    |
+| [Overflowing Bars](https://modrinth.com/mod/overflowing-bars)                               | Expanded health, armor, and toughness bars beyond vanilla limits    |
 
 ### Inventory & UI
 
@@ -195,18 +195,18 @@ If installing manually:
 | Advanced Colored Lighting  | 16 chunks       |
 | Texture Filtering          | 16x             |
 
-**General MC settings**: Render Distance 20–24 chunks, Fullscreen ON, VSync OFF, Max Framerate uncapped. Expected high FPS at 4K with complementary shaders. With high-res texture packs, monitor VRAM usage (peaks at ~14GB). Drop to High profile if targeting 144Hz+.
+**General MC settings**: Render Distance **10 chunks**, Simulation Distance **8 chunks**, Fullscreen ON, VSync OFF, Max Framerate uncapped. Distant Horizons handles far rendering — keep vanilla render distance low. Expected high FPS at 4K with Complementary Unbound. DH LODs still render through the shader pipeline, so push LOD distance gradually (256-384 recommended with shaders at 4K). Monitor VRAM usage (shaders + DH + high-res packs can peak past 12GB). Drop Complementary Unbound to High profile if chasing 144Hz+.
 
 ### Texture Packs
 
-| Pack                                                                     | Role                                                                                 |
-|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion             |
-| [Alacrity](https://modrinth.com/resourcepack/alacrity)                   | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models            |
-| [Enhanced Boss Bars](https://modrinth.com/resourcepack/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses              |
-| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)        | 3D block & item textures for all rail types                                          |
-| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)               | 3D model replacement for ladders                                                     |
-| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)     | Enhanced 3D look for lanterns and chains                                             |
+| Pack                                                                       | Role                                                                      |
+|----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)     | Living entity animation overhaul — mobs blink, look around, show emotion  |
+| [Alacrity](https://modrinth.com/resourcepack/alacrity)                     | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models |
+| [Enhanced Boss Bars](https://modrinth.com/resourcepack/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses    |
+| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)          | 3D block & item textures for all rail types                               |
+| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)                 | 3D model replacement for ladders                                          |
+| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)       | Enhanced 3D look for lanterns and chains                                  |
 
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
 
@@ -266,23 +266,23 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 ### Core Tech
 
-| Mod                                                                                   | Role                                                                                                                                             |
-|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Create**](https://modrinth.com/mod/create) 6.0.10              | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains            |
-| [**Mekanism**](https://modrinth.com/mod/mekanism) 10.7.19.85      | Industrial processing — ore multiplication (2x→5x), digital miner, superdense energy storage, MekaSuit (flight, invulnerability) |
-| [**Mekanism Generators**](https://modrinth.com/mod/mekanism-generators) 10.7.19.85 | Power generation — heat, wind, solar, gas-burning, bio generators, fission reactor, fusion reactor, turbine |
-| [**AE2**](https://modrinth.com/mod/ae2) 19.2.17 | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                                    |
+| Mod                                                                                | Role                                                                                                                                  |
+|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| [**Create**](https://modrinth.com/mod/create) 6.0.10                               | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains |
+| [**Mekanism**](https://modrinth.com/mod/mekanism) 10.7.19.85                       | Industrial processing — ore multiplication (2x→5x), digital miner, superdense energy storage, MekaSuit (flight, invulnerability)      |
+| [**Mekanism Generators**](https://modrinth.com/mod/mekanism-generators) 10.7.19.85 | Power generation — heat, wind, solar, gas-burning, bio generators, fission reactor, fusion reactor, turbine                           |
+| [**AE2**](https://modrinth.com/mod/ae2) 19.2.17                                    | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                         |
 
 **Note**: On Modrinth, Mekanism v10 is split into separate modules. **Mekanism** (core) provides machines, processing, cables, and armor. **Mekanism Generators** provides all power generation. On CurseForge these were bundled in one JAR — the split is the Modrinth distribution, not a new mod. Both must be installed.
 
 ### Create Addons
 
-| Mod                                                                                                                      | Role                                                                                                                               |
-|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Create Crafts & Additions](https://modrinth.com/mod/createaddition) 1.6.0                           | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                 |
-| [Steam \'n\' Rails NeoForge](https://modrinth.com/mod/create-steam-n-rails) 0.2.1                  | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
-| [Create: The Factory Must Grow](https://modrinth.com/mod/create-tfmg) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
-| [Mekanism TFMG Compatibility](https://modrinth.com/mod/mekanism-tfmg-compat) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
+| Mod                                                                               | Role                                                                                                                               |
+|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| [Create Crafts & Additions](https://modrinth.com/mod/createaddition) 1.6.0        | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                 |
+| [Steam \'n\' Rails NeoForge](https://modrinth.com/mod/create-steam-n-rails) 0.2.1 | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
+| [Create: The Factory Must Grow](https://modrinth.com/mod/create-tfmg) (TFMG)      | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
+| [Mekanism TFMG Compatibility](https://modrinth.com/mod/mekanism-tfmg-compat)      | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
 
 ### How They Work Together
 
@@ -295,10 +295,10 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | Transport          | Create trains + AE2 P2P tunnels                                                          |          |
 | Endgame            | Mekanism fusion reactor + MekaSuit + AE2 autocrafting                                    | ### Ores |
 
-| Mod                                                                             | Role                                         |
-|---------------------------------------------------------------------------------|----------------------------------------------|
-| Create (built-in)                                                               | Zinc, brass, copper                          |
-| Mekanism (built-in)                                                             | Osmium, tin, lead, uranium, fluorite         |
+| Mod                 | Role                                 |
+|---------------------|--------------------------------------|
+| Create (built-in)   | Zinc, brass, copper                  |
+| Mekanism (built-in) | Osmium, tin, lead, uranium, fluorite |
 
 ### Configuration — Wave 1
 
@@ -329,7 +329,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                               | Role                                                                               |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**MineColonies**](https://modrinth.com/mod/minecolonies)     | Autonomous NPC colony — builders, miners, farmers, crafters, guards, research tree |
+| [**MineColonies**](https://modrinth.com/mod/minecolonies)                         | Autonomous NPC colony — builders, miners, farmers, crafters, guards, research tree |
 | [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize)           | Structure building/placement library (MineColonies dependency)                     |
 | [MultiPiston](https://www.curseforge.com/minecraft/mc-mods/multi-piston)          | Multi-block piston library (MineColonies dependency)                               |
 | [BlockUI](https://www.curseforge.com/minecraft/mc-mods/blockui)                   | UI library (MineColonies dependency)                                               |
@@ -347,25 +347,25 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Overworld Worldgen
 
-| Mod                                                                 | Role                                                            |
-|---------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Terralith](https://modrinth.com/mod/terralith)                    | Overhauled Overworld biomes                                     |
-| [Tectonic](https://modrinth.com/mod/tectonic)                      | Better terrain shape — deeper valleys, taller mountains, cliffs |
+| Mod                                             | Role                                                            |
+|-------------------------------------------------|-----------------------------------------------------------------|
+| [Terralith](https://modrinth.com/mod/terralith) | Overhauled Overworld biomes                                     |
+| [Tectonic](https://modrinth.com/mod/tectonic)   | Better terrain shape — deeper valleys, taller mountains, cliffs |
 
 ### Environment
 
-| Mod                                                                     | Role                                                                        |
-|-------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Serene Seasons](https://modrinth.com/mod/serene-seasons)               | Seasonal foliage colors, temperature shifts, crop growth cycles             |
+| Mod                                                       | Role                                                            |
+|-----------------------------------------------------------|-----------------------------------------------------------------|
+| [Serene Seasons](https://modrinth.com/mod/serene-seasons) | Seasonal foliage colors, temperature shifts, crop growth cycles |
 
 **Serene Seasons** adds four seasons (Spring, Summer, Autumn, Winter) with visual foliage changes, temperature shifts, and seasonal crop growth modifiers. Crop impact is enabled — planting in the wrong season reduces yield, encouraging greenhouse planning. Temperature damage is **disabled** — no freezing or heat damage, preserving the chill rule.
 
 ### Underground & Ocean
 
-| Mod                                                                           | Role                                                                                   |
-|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [Darker Depths](https://modrinth.com/mod/darker-depths)                       | Underground expansion — 3 new cave biomes, mobs, Forsaken Bronze, Living Crystals     |
-| [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic)                   | Ocean expansion — Thrasher mob, Ocean Ravines, Prismarine Coral, renewable sand       |
+| Mod                                                         | Role                                                                              |
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [Darker Depths](https://modrinth.com/mod/darker-depths)     | Underground expansion — 3 new cave biomes, mobs, Forsaken Bronze, Living Crystals |
+| [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic) | Ocean expansion — Thrasher mob, Ocean Ravines, Prismarine Coral, renewable sand   |
 
 **Interdependency note — Darker Depths + YUNG's Better Caves**: Darker Depths adds its own cave biomes (Molten Cavern, Sandy Catacombs, Crystal Cavern) that generate alongside YUNG's Better Caves' enlarged cave systems. Darker Depths biomes replace vanilla cave sections with themed variants, while YUNG's Better Caves changes the shape and connectivity of caves — they layer without direct conflict.
 
@@ -384,8 +384,8 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [YUNG\'s Better Witch Huts](https://modrinth.com/mod/yungs-better-witch-huts)               | Expanded witch huts              |
 | [YUNG\'s Better Nether Fortresses](https://modrinth.com/mod/yungs-better-nether-fortresses) | Improved nether fortresses       |
 | [YUNG\'s Better Caves](https://modrinth.com/mod/yungs-better-caves)                         | Larger, more varied caves        |
-| [Structory](https://modrinth.com/datapack/structory)                                       | New hand-crafted structures      |
-| [Towns & Towers](https://modrinth.com/datapack/towns-and-towers)                           | Better village generation        |
+| [Structory](https://modrinth.com/datapack/structory)                                        | New hand-crafted structures      |
+| [Towns & Towers](https://modrinth.com/datapack/towns-and-towers)                            | Better village generation        |
 
 ### Dimensions
 
@@ -397,10 +397,10 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### End Overhaul
 
-| Mod                                                                                                    | Role                                                         |
-|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend-neoforge) v21.0.25                         | Full End overhaul — 24+ biomes, new mobs, gear, custom music |
-| [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                     |
+| Mod                                                                                                    | Role                                                            |
+|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| [**BetterEnd NeoForge**](https://modrinth.com/mod/betterend-neoforge) v21.0.25                         | Full End overhaul — 24+ biomes, new mobs, gear, custom music    |
+| [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                        |
 | [Nullscape](https://modrinth.com/datapack/nullscape) (data pack)                                       | End terrain overhaul — surreal alien landscapes, new sky colors |
 
 **Nullscape**: A data pack that transforms the End's terrain into alien shapes (floating islands, spires, arches, voids) with unique sky colors per biome. **Compatible with BetterEnd** — Nullscape's own documentation states it works with BetterEnd specifically (it is incompatible with most End worldgen mods, but BetterEnd is the documented exception). Nullscape handles terrain shape and sky; BetterEnd handles biomes, mobs, gear, and structures. Install as a data pack in the world's `datapacks/` folder.
@@ -424,9 +424,9 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Mobility
 
-| Mod                                                                                         | Role                                                                                           |
-|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Immersive Aircraft](https://modrinth.com/mod/immersive-aircraft) 1.1.5                      | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable |
+| Mod                                                                     | Role                                                                                           |
+|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| [Immersive Aircraft](https://modrinth.com/mod/immersive-aircraft) 1.1.5 | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable |
 
 ### Configuration — Wave 2
 
@@ -589,7 +589,7 @@ Bountiful generates quests automatically — find a bounty board in any village,
 | [When Dungeons Arise](https://modrinth.com/mod/when-dungeons-arise)                               | Roguelike combat structures with loot                                                           |
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                           |
 | [Create Big Cannons](https://modrinth.com/mod/create-big-cannons)                                 | Artillery engineering — siege cannons for colony defense and spectacle                          |
-| [Cut Through](https://modrinth.com/mod/cut-through)                                             | Combat QoL — swing through transparent blocks (tall grass, cobwebs) without breaking them        |
+| [Cut Through](https://modrinth.com/mod/cut-through)                                               | Combat QoL — swing through transparent blocks (tall grass, cobwebs) without breaking them       |
 
 Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
 
@@ -696,7 +696,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
 | Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                                                                                                           |
 | Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                               |
-| Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf |
+| Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf  |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 2       | 1      | 3       | Stellaris, TFMG-Stellaris compat (moved from Wave 1), Potentials API                                                                                                                    |
 | **Total**                  | **121** | **35** | **156** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
