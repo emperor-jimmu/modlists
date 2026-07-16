@@ -113,9 +113,9 @@ If installing manually:
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                         | Independent 360° camera rotation in third-person view               |
 | [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                               | Modern, sharp tooltip rendering with equipment compare              |
 | [Sounds](https://www.curseforge.com/minecraft/mc-mods/sound)                                                    | 170+ new sound effects for UIs, items, blocks, actions              |
-| [Tiny Item Animations](https://www.curseforge.com/minecraft/mc-mods/tiny-item-animations)                       | Subtle float/pulse animations on inventory items                    |
+| ~~Tiny Item Animations~~ (removed from CurseForge — conflicts with Immersive UI item rendering) |
 | [Better Days](https://www.curseforge.com/minecraft/mc-mods/betterdays)                                          | Customizable day/night cycle length, enhanced sleep                 |
-| [Beautiful Enchanted Books](https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books-mod-edition) | Unique textures per enchantment book type                           |
+| [Beautiful Enchanted Books [Mod Edition]](https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books) | Unique textures per enchantment book type — standalone mod, no resource pack needed |
 | [Overflowing Bars](https://www.curseforge.com/minecraft/mc-mods/overflowing-bars)                               | Expanded health, armor, and toughness bars beyond vanilla limits    |
 
 ### Inventory & UI
@@ -131,7 +131,7 @@ If installing manually:
 | [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                   |
 | [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups            |
 | [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles   |
-| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal)                   | Animated item pickup notifications               |
+| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)                   | Animated item pickup notifications               |
 | [Reliable Advancements](https://www.curseforge.com/minecraft/mc-mods/reliable-advancements) | Overhauled advancements UI with editor/pan/zoom  |
 | [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict     |
 
@@ -207,6 +207,7 @@ If installing manually:
 | [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/3d-ladders)                 | 3D model replacement for ladders                                          |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)       | Enhanced 3D look for lanterns and chains                                  |
 
+
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
 
 **Alacrity** is a full 32x conversion with an RPG-inspired art style — all blocks, items, GUI elements, and mobs are redesigned with a cohesive fantasy look. Draws from Warcraft, Elder Scrolls, and Gothic for its aesthetic. Custom 3D models (CEM) require a mod like Entity Model Features but the base pack works with any setup.
@@ -242,10 +243,39 @@ If installing manually:
 
 **Better Days** (`config/betterdays-common.toml`):
 
-- `dayLengthMultiplier` = `2.0` — Days last 40 minutes (2x vanilla). Gives relaxed building time.
-- `nightLengthMultiplier` = `1.0` — Nights remain 10 minutes. Sleep acceleration is natural.
+Time speed can be set via three modes (`speedMethod`):
+
+| Mode | How it works | Best for |
+|------|-------------|----------|
+| `MINUTES` (default) | Set `daySpeedMinutes` and `nightSpeedMinutes` in real minutes | Simple: 10 min day / 10 min night |
+| `RATIO` | Multiplier relative to vanilla (1.0 = vanilla 20min cycle) | Fine control: 0.5 = 40 min, 2.0 = 10 min |
+| `SEASON` | Day length varies by season using `seasonDayMinutes` and `seasonLatitude` | Immersive — day shortens in winter, lengthens in summer |
+
+**Recommended settings for this pack** (`speedMethod = "MINUTES"`):
+
+- `daySpeedMinutes` = `20` — Days last 20 minutes (2x vanilla). Gives relaxed building time.
+- `nightSpeedMinutes` = `10` — Nights remain 10 minutes. Sleep acceleration keeps them short.
 - `enableSleepFeature` = `true` — Smooth time acceleration while in bed.
-- `enableTimeEffects` = `false` — Disable time-synced crop/furnace speed to avoid confusing behavior with Serene Seasons crop cycles.
+- `dayStart` = `0` — Dawn at time 0. Night starts at 13000 (default, no change needed).
+- `nightStart` = `13000` — Dusk starts at time 13000 (default).
+
+**Time effects** — all disabled by default. Leave them off:
+
+- `weatherEffect` = `"SLEEPING"` — Lets rain/storms finish faster when sleeping (safe — NeoForge handles this natively anyway).
+- `potionEffect` = `"NEVER"` — Keep off. Speeding potion timers while sleeping is confusing.
+- `hungerEffect` = `"NEVER"` — Keep off. Speeding hunger while sleeping is annoying.
+- `blockEntityEffect` = `"NEVER"` — Keep off. Enabling this accelerates furnaces/hoppers during sleep, which can desync items and wastes fuel.
+- `cropEffect` = `"NEVER"` — Keep off. Conflicts with Serene Seasons crop cycle timers.
+
+**Regarding the SEASON mode**: Since this pack includes **Serene Seasons**, you may want to try `speedMethod = "SEASON"` (*not* `"SEASONS"` — the value is singular) for a more immersive cycle where summer days are long and winter days are short. However, this is experimental — Serene Seasons already handles seasonal crop growth and temperature; Better Days would only change day length visually. Test before committing.
+
+The `seasonDayMinutes` and `seasonLatitude` fields exist in the default config but may not appear in the file until `speedMethod = "SEASON"` is set and the game reloads. If they're missing, add these lines manually under the `[time]` section:
+
+```toml
+speedMethod = "SEASON"
+seasonDayMinutes = 20.0    # Total day+night length. 20 = vanilla.
+seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (long days). Serene Seasons detects this automatically.
+```
 
 **ModernFix** (configurable in-game via Mod List → ModernFix → Config, or `config/modernfix-mixins.properties`):
 
@@ -286,6 +316,18 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) 0.2.1 | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
 | [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) (TFMG)      | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
 | [Mekanism TFMG Compatibility](https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility)      | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
+| [Create: Gunsmithing](https://www.curseforge.com/minecraft/mc-mods/cgs)                            | Steampunk firearms integrated with Create — craftable using Create machines. Animated guns, attachments, ammo types. Optional Better Combat compatibility |
+| [Create Ornithopter Glider](https://www.curseforge.com/minecraft/mc-mods/create-ornithopter-glider) | Mechanical flapping glider with boost-assisted flight — integrates with Create rotational power                                                        |
+
+### Create: Gunsmithing Dependencies
+
+The following library mods are required by Create: Gunsmithing:
+
+| Mod                                                                                  | Role                                                                 |
+|--------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [[NTGL] NukaTeam's Gun Lib](https://www.curseforge.com/minecraft/mc-mods/nukateams-gun-lib) | Gun framework — animated weapons, ammo, attachments, gun packs. Required by Create: Gunsmithing |
+| [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib)                             | 3D animation library — required by NTGL                              |
+| [Framework](https://www.curseforge.com/minecraft/mc-mods/framework)                           | Utility library — required by NTGL                                   |
 
 ### Mekanism Addons
 
@@ -548,7 +590,9 @@ Forgematica defaults are correct for this pack. Key settings to know (accessible
 
 | Mod                                                                         | Role                                                |
 |-----------------------------------------------------------------------------|-----------------------------------------------------|
-| [Simply Swords](https://www.curseforge.com/minecraft/mc-mods/simply-swords) | 60+ unique weapons with passive/activated abilities |
+| [Simply Swords](https://www.curseforge.com/minecraft/mc-mods/simply-swords) | 60+ unique melee weapons with passive/activated abilities |
+| [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows) | 30+ unique bows with special abilities and custom attributes |
+| [Spartan Weaponry Unofficial](https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial) | Spears, halberds, pikes, lances, throwing knives — fills the polearm gap |
 | [Relics RPG](https://www.curseforge.com/minecraft/mc-mods/relics-rpg)                           | Legendary accessories with unique abilities         |
 | [Runes](https://www.curseforge.com/minecraft/mc-mods/runes)                                     | Socketable runes for weapons/tools                  |
 | [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)           | Accessory slots (rings, amulets, belts, gloves)     |
@@ -772,14 +816,14 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation        | 52      | 8      | 60      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
-| Wave 1 — Tech              | 10      | 1      | 11      | Create + 4 addons, Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + ForgeEndertech dep                                                           |
+| Wave 1 — Tech              | 12      | 4      | 16      | Create + 6 addons (incl. Gunsmithing, Ornithopter Glider), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
 | Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                          |
 | Wave 2.5 — Schematic Build | 1       | 1      | 2       | Forgematica + MaFgLib dep                                                                                                                                                               |
-| Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
+| Wave 3 — Equipment Magic   | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
 | Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                                                                                                           |
 | Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                               |
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf  |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                               |
-| **Total**                  | **123** | **37** | **160** | All confirmed NeoForge 1.21.1                           |
+| **Total**                  | **126** | **40** | **166** | All confirmed NeoForge 1.21.1                           |

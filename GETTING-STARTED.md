@@ -416,13 +416,14 @@ Adds 170+ new sound effects for UI interactions, menu clicks, item drops, eating
 
 **Dependency**: Requires [M.R.U](https://www.curseforge.com/minecraft/mc-mods/mru) library (installed automatically as part of Wave 0).
 
-**No config needed** — install and forget. If any sound feels off, customize individual sound events in `config/sounds/`.
+**No config needed** — install and forget. If any sound feels off, customize individual sound events in Mod List → Sounds → Config, or directly in `config/sounds/`. All 170+ sound categories can be individually enabled/disabled and volume-adjusted.
 
-#### Tiny Item Animations
+**Suggestions**:
+- **If a sound annoys you**: find its category in the config screen and disable it individually — you don't need to mute the whole mod
+- **Adding sounds for modded content**: Sounds supports custom resource packs that define sound events for other mods' items, blocks, and screens. Check the [Sounds documentation](https://docs.imb11.dev/sounds/) for the definition format
+- **Conflicts with Sound Physics Remastered**: None — Sounds handles UI and item feedback, Sound Physics handles environmental acoustics. They complement each other
 
-Adds subtle float and pulse animations to items in your inventory and when you pick up items. Items gently bob when inserted into slots or dropped. Purely cosmetic.
-
-**No config needed** — install and forget.
+~~#### Tiny Item Animations~~ — Removed. Conflicts with Immersive UI (both hook into inventory item rendering). Use Immersive UI's built-in item particles instead.
 
 #### Subtle Effects
 
@@ -430,11 +431,11 @@ Adds ambient particles and subtle visual details: sparks from fire blocks, dust 
 
 **All features are toggleable** — if any effect feels excessive, disable it in the config.
 
-#### Beautiful Enchanted Books
+#### Beautiful Enchanted Books [Mod Edition]
 
 Replaces the generic enchanted book texture with unique, themed textures per enchantment type — Protection books look different from Sharpness books, making your library visually informative.
 
-**No config needed** — install and forget.
+**No config needed** — install and forget. Standalone mod; no resource pack required.
 
 #### Chunk Loaders — Infrastructure
 

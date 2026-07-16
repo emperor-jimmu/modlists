@@ -15,12 +15,14 @@
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U
 - [x] Added YUNG's API to New Dependencies
 
-### Wave 1 — Tech, Colony & Chunk Loading (~13 mods)
+### Wave 1 — Tech, Colony & Chunk Loading (~18 mods)
 - [x] Core Tech: Create, Mekanism, AE2
 - [x] ~~Ores: Skniro's Nether & End Ores~~ (removed — unnecessary, unpopular mod)
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
 - [x] Chunk Loading: Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib
 - [x] Mekanism Addons: Advanced Finders, Advanced Chimneys + ForgeEndertech dep
+- [x] Create Addons: Create Crafts & Additions, Steam 'n' Rails, TFMG, Mekanism TFMG Compat
+- [x] Create Addons (new): Create: Gunsmithing + NTGL + GeckoLib + Framework deps, Create Ornithopter Glider
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 
 ### Wave 2 — Exploration (~23 mods)
@@ -35,10 +37,10 @@
 - [x] Tutorial written in GETTING-STARTED.md covering schematic sources, keybinds, Easy Place Mode, Material List, Schematic Verifier, single-layer mode
 - [x] Interdependency notes: pairs with Building Wands (Wave 6), client-side only, shader compatibility
 
-### Wave 3 — Equipment Magic & RPG (~17 mods incl. 10 deps)
+### Wave 3 — Equipment Magic & RPG (~18 mods incl. 10 deps)
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
 - [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
-- [x] Simply Swords, Relics RPG, Runes
+- [x] Simply Swords, Too Many Bows, Spartan Weaponry Unofficial, Relics RPG, Runes
 - [x] Simply Swords deps: Simply Tooltips, Fzzy Config
 - [x] Relics RPG / Skill Tree deps: Ranged Weapon API, Spell Engine
 - [x] Runes dep: Bundle API
