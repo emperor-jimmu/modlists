@@ -149,7 +149,6 @@ If installing manually:
 | Mod                                                                                  | Role                                                                     |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
-| [OpenLoader](https://www.curseforge.com/minecraft/mc-mods/open-loader)                                   | Load data packs and resource packs globally across all worlds            |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
 
@@ -286,11 +285,11 @@ seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (l
 
 | Data Pack                                                                                                             | Role                                  |
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [More Advancements 2.0](https://www.curseforge.com/minecraft/data-packs/more-advancements-2-0) (v2.0 for 1.21.x) | 100+ new advancements across organized tabs — bridges the gap between vanilla milestones |
+| [BlazeandCave's Advancements Pack](https://www.curseforge.com/minecraft/customization/blazeandcaves-advancements-pack) (v1.17.2 for 1.21.x) | 900+ new advancements across 16 themed tabs — mining, building, farming, combat, exploration, brewing, redstone, enchantments, and more |
 
-**More Advancements 2.0** adds 100+ new advancements across organized tabs, designed to flesh out the survival experience and bridge gaps between major vanilla milestones. Runs alongside Reliable Advancements (GUI overhaul) and Fancy Toasts (animated popups) without conflict.
+**BlazeandCave's Advancements Pack** adds 900+ milestones across 16 themed tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks collecting every wood variant, killing every mob type, discovering every biome, and reaching tier milestones.
 
-**Installation**: This data pack is loaded globally via **OpenLoader** (see Infrastructure section above). Place the `.zip` in `config/openloader/packs/` — no in-game `/datapack` command needed. OpenLoader applies it to every world automatically.
+**Installation**: Place the `.zip` in `CurseForge\Minecraft\Instances\<instance-name>\datapacks\`. The pack will appear under the **"Data Packs"** button on the world creation screen — click the arrow to enable it. No commands, no OpenLoader, no global folder needed.
 
 ---
 
@@ -816,7 +815,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 53      | 8      | 62      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading, datapack loader (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
+| Wave 0 — Foundation        | 52      | 8      | 61      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
 | Wave 1 — Tech              | 12      | 4      | 16      | Create + 6 addons (incl. Gunsmithing, Ornithopter Glider), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
 | Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                          |
@@ -827,4 +826,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf  |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                               |
-| **Total**                  | **127** | **40** | **167** | All confirmed NeoForge 1.21.1                           |
+| **Total**                  | **126** | **40** | **166** | All confirmed NeoForge 1.21.1                           |
