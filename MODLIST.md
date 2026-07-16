@@ -245,6 +245,10 @@ If installing manually:
 - `enableSleepFeature` = `true` — Smooth time acceleration while in bed.
 - `enableTimeEffects` = `false` — Disable time-synced crop/furnace speed to avoid confusing behavior with Serene Seasons crop cycles.
 
+**ModernFix** (configurable in-game via Mod List → ModernFix → Config, or `config/modernfix-mixins.properties`):
+
+- `mixin.perf.dynamic_resources` = `true` — Load block/item models lazily instead of all at startup. **Biggest single launch-time speedup** in the pack. Reduces memory usage too. Disable if you see missing textures or broken models.
+
 ### Data Packs (Wave 0)
 
 | Data Pack                                                                                                             | Role                                  |
