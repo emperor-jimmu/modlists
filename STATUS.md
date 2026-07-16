@@ -20,6 +20,7 @@
 - [x] ~~Ores: Skniro's Nether & End Ores~~ (removed — unnecessary, unpopular mod)
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
 - [x] Chunk Loading: Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib
+- [x] Mekanism Addons: Advanced Finders, Advanced Chimneys + ForgeEndertech dep
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 
 ### Wave 2 — Exploration (~23 mods)
@@ -64,11 +65,17 @@
 
 ### Wave 7 — Space Exploration (~1 mod)
 - [x] Stellaris 1.4.23 as core space mod
-- [x] Dependency: Architectury API (already in Wave 0)
+- [x] Dependency: Potentials API
+- [x] ~~TFMG-Stellaris Compatibility~~ removed (not needed, Stellaris has native fuel system)
 
 ## Completed Decisions
 
 ### Design choices
+- [x] Switched all mod links from Modrinth to CurseForge (July 2026)
+- [x] Updated installation instructions to use CurseForge App instead of Modrinth App
+- [x] Removed TFMG-Stellaris Compatibility (not on CurseForge, Stellaris has native fuel system)
+- [x] Added Advanced Finders + Advanced Chimneys to Wave 1 (Mekanism addons for ore detection and factory smoke)
+- [x] Added ForgeEndertech as dependency for Advanced Finders and Advanced Chimneys
 - [x] Removed Regions Unexplored (FPS concerns with Terralith/Tectonic overlap, no global-tag structure compat)
 - [x] Removed Additional Structures (Towns & Towers + Structory cover structures adequately)
 - [x] Removed Nullscape (BetterEnd's biome overhaul replaces Nullscape's End transformation)

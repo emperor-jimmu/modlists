@@ -135,7 +135,7 @@ This wave makes Minecraft run well, look great, and feel comfortable. No major g
 
 ### Install
 
-This pack uses the **Modrinth App** as the mod manager and launcher. See [MODLIST.md](./MODLIST.md#modrinth-app) for setup instructions — create a 1.21.1 NeoForge instance and install all Wave 0 mods from their Modrinth pages. All mods in this pack are available on Modrinth (every link in MODLIST.md now points to Modrinth).
+This pack uses the **CurseForge App** as the mod manager and launcher. See [MODLIST.md](./MODLIST.md#curseforge-app) for setup instructions — create a 1.21.1 NeoForge instance and install all Wave 0 mods from their CurseForge pages. All mods in this pack are available on CurseForge (every link in MODLIST.md now points to CurseForge).
 
 See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full mod list.
 
@@ -194,14 +194,14 @@ Six optional resource packs enhance vanilla visuals and UI:
 
 | Pack                                                                     | Role                                                                                    |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion                |
-| [Alacrity](https://modrinth.com/resourcepack/alacrity)                   | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models               |
-| [Enhanced Boss Bars](https://modrinth.com/resourcepack/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses                |
-| [RAY's 3D Rails](https://modrinth.com/resourcepack/rays-3d-rails)        | 3D block & item textures for all rail types                                             |
-| [3D Ladders](https://modrinth.com/resourcepack/3d-ladders)               | 3D model replacement for ladders                                                        |
-| [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)     | Enhanced 3D look for lanterns and chains                                                |
+| [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion                |
+| [Alacrity](https://www.curseforge.com/minecraft/texture-packs/alacrity)                   | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models               |
+| [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses                |
+| [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)        | 3D block & item textures for all rail types                                             |
+| [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/3d-ladders)               | 3D model replacement for ladders                                                        |
+| [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)     | Enhanced 3D look for lanterns and chains                                                |
 
-**Installation**: Install via Modrinth App. Load order (top = highest priority):
+**Installation**: Install via CurseForge App. Load order (top = highest priority):
 
 1. Fresh Animations
 2. Alacrity
@@ -294,7 +294,7 @@ When you die, a grave spawns with your items. No item loss, no despawning. Just 
 
 #### AmbientSounds + The Immersive Music Mod
 
-AmbientSounds adds nature sounds (birds, wind, water) based on your biome and time of day. [The Immersive Music Mod](https://modrinth.com/mod/immersivemusicmod) adds 147 new songs selected by biome and structure — plays like vanilla with natural silence gaps, no config needed.
+AmbientSounds adds nature sounds (birds, wind, water) based on your biome and time of day. [The Immersive Music Mod](https://www.curseforge.com/minecraft/mc-mods/the-immersive-music-mod) adds 147 new songs selected by biome and structure — plays like vanilla with natural silence gaps, no config needed.
 
 #### BetterF3
 
@@ -328,7 +328,7 @@ No configuration needed. Install and forget.
 
 This data pack adds **1000+ new advancements** across 16 tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks milestones like mining every ore type, collecting every wood variant, killing every mob, and discovering every biome.
 
-**Installation**: Install via Modrinth App. In-game, run `/datapack enable "blazeandcave/advancements"`. Works alongside Reliable Advancements (UI) and Fancy Toasts (popups) without conflict.
+**Installation**: Install via CurseForge App. In-game, run `/datapack enable "blazeandcave/advancements"`. Works alongside Reliable Advancements (UI) and Fancy Toasts (popups) without conflict.
 
 **What it adds**: Thousands of hours of optional side goals. Everything is tracked through the vanilla advancement system — open with `L` to browse the 16 tabs and see what's available.
 
@@ -410,13 +410,13 @@ Tooltip Overhaul redesigns the tooltip appearance — rounded corners, smoother 
 
 #### Eating Animations (N/A — not updated for 1.21.1 NeoForge)
 
-Eating Animation and its ports are not available for NeoForge 1.21.1. The original mod (Fabric) and the Forge port both have no 1.21.1 release. No replacement exists on Modrinth for this version. Remove from install list if present.
+Eating Animation and its ports are not available for NeoForge 1.21.1. The original mod (Fabric) and the Forge port both have no 1.21.1 release. No replacement exists on CurseForge for this version. Remove from install list if present.
 
 #### Sounds
 
 Adds 170+ new sound effects for UI interactions, menu clicks, item drops, eating, drinking, achievements, and block actions. Every vanilla action feels more tactile.
 
-**Dependency**: Requires [M.R.U](https://modrinth.com/mod/mru) library (installed automatically as part of Wave 0).
+**Dependency**: Requires [M.R.U](https://www.curseforge.com/minecraft/mc-mods/mru) library (installed automatically as part of Wave 0).
 
 **No config needed** — install and forget. If any sound feels off, customize individual sound events in `config/sounds/`.
 
@@ -644,7 +644,6 @@ TFMG adds aluminum as a new metal. **Bauxite ore** generates in the Overworld (t
 
 - Aluminum is used in advanced TFMG machines
 - Feeds into Mekanism's advanced alloy processing
-- Used in some Stellaris rocket components (via TFMG-Stellaris Compatibility)
 
 #### Progression Notes
 
@@ -2060,6 +2059,8 @@ See [MODLIST.md](./MODLIST.md#wave-7--space-exploration).
 
 Stellaris (by ExodusTeam) is a complete space exploration mod. Build rockets piece by piece, manage oxygen and fuel, and travel to 5 planets across 2 solar systems.
 
+**Video Tutorial**: [Stellaris Getting Started Guide](https://www.youtube.com/watch?v=oZwi3zcYi7c) — visual walkthrough of the rocket building process, planet progression, and key mechanics.
+
 #### Core Concepts
 
 | Concept               | What it means                                                                                                                            |
@@ -2153,32 +2154,17 @@ Once you have a foothold on another planet, set up automated resource extraction
 | **Mekanism ore processing** | Bring planet ores (desh, ostranium, tharsite) back to your main Mekanism processing line. 5x multiplication works on Stellaris ores                                                                     |
 | **AE2 storage**             | Store Stellaris materials in your ME drive. Set up autocrafting for rocket components. Place an ME interface + storage bus at your off-world base with a quantum link or P2P tunnel to the main network |
 | **Create transport**        | Use Create trains to move rocket materials from the launch pad area to your main base. Conveyor belts move components from storage to the Rocket Station                                                |
-| **TFMG fuel**               | Refine diesel/gasoline in TFMG's Distillation Tower → use it as rocket fuel for Stellaris (requires TFMG-Stellaris Compatibility). Single fuel chain from oil well to launch pad                        |
+| **TFMG fuel**               | Refine diesel/gasoline in TFMG's Distillation Tower for industrial fuel. Stellaris uses its own fuel crafting system (oil → fuel refinery)                                          |
 | **Sophisticated Backpacks** | Backpacks with netherite upgrades carry enough oxygen tanks and supplies for extended planetary expeditions                                                                                             |
 | **Farmer's Delight**        | Cooked meals are eatable in space (with oxygen present) — bring hearty stews and sandwiches instead of raw ingredients                                                                                  |
 
 ### Wave 7 Addons
-
-Three additions extend Stellaris beyond its core experience:
 
 #### Potentials API — Required Library
 
 Potentials API is a mandatory dependency for Stellaris. Install it without reservation — it provides networking and capability code that Stellaris's rocket systems, oxygen management, and planetary mechanics rely on. No user-facing features, no config, no gameplay changes.
 
 **No config needed** — library mod, install and forget.
-
-#### TFMG-Stellaris Compatibility — Fuel Bridge
-
-The **Create: TFMG - Stellaris Compatibility** mod bridges TFMG's oil refining with Stellaris's rocket fuel system. Without this mod, Stellaris has its own fuel crafting recipe (oil → fuel refinery). With it, you can use TFMG's diesel and gasoline as rocket fuel directly.
-
-**What it changes**:
-
-- TFMG diesel can fuel Stellaris rockets (no need for Stellaris's separate fuel refinery if you have TFMG's Distillation Tower)
-- TFMG gasoline also works as rocket fuel (lower efficiency than diesel)
-- Stellaris's own fuel recipe remains available as a fallback
-- Single fuel chain: find oil → TFMG Distillation Tower → diesel → rocket fuel
-
-**Config**: No changes needed. Compatibility works automatically once both TFMG and Stellaris are installed.
 
 ### Progression Placement
 

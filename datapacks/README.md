@@ -20,4 +20,4 @@ For a single world, place them in:
 
 | Data Pack        | Version | File                                                | Source                                                              |
 |------------------|---------|-----------------------------------------------------|---------------------------------------------------------------------|
-| No Creeper Grief | V.2.0.3 | `PK_No_Creeper_Grief_V.2.0.3_MC_1.20_to_1.20.1.zip` | [Modrinth](https://modrinth.com/datapack/kawamood-no-creeper-grief) |
+| No Creeper Grief | V.2.0.3 | `PK_No_Creeper_Grief_V.2.0.3_MC_1.20_to_1.20.1.zip` | [CurseForge](https://www.curseforge.com/minecraft/data-packs/kawamood-no-creeper-grief) |
