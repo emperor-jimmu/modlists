@@ -453,14 +453,27 @@ Chunk Loaders keep specific chunks loaded even when you're far away or in anothe
 3. **Right-click** to toggle it on — a colored border shows the loaded chunk
 4. **Done.** The chunk stays loaded across all dimensions
 
-**Best practices:**
+**Early game (Phase 1 — Cozy Roots):**
 
-- Place a loader at your **main base** first — keeps all Create/Mek/AE2 systems running
-- Place a loader at your **colony** (Wave 1.5) — keeps MineColonies workers active
-- Place a loader at each **mining outpost** — keeps the Mekanism digital miner running
-- Loaders work in any dimension. The Nether, The End, other planets — a loader keeps that chunk ticking
+- You don't need chunk loaders yet. Your base is small, nothing is automated, and you're always nearby.
+- **Wait until you have automation that runs without you.** Your first loader goes down when you build something that keeps working while you explore — a Create water wheel powering a millstone, a furnace array, or a small farm.
+- **When you place one**: Put a **Single Chunk Loader** at your starter base covering your first Create setup (water wheel + millstone + mechanical press) and your Sophisticated Storage barrel wall. This keeps your early processing running while you gather resources.
 
-**Tip**: You can have as many loaders as you want. No performance penalty as long as your PC handles the loaded chunks. Start with 2-3 and add as needed.
+**Late game (Phase 2+ — Industrial Ascent & Perpetual Ascent):**
+
+- Multiple loaders are essential. Your base sprawls across dozens of chunks — Mekanism factories, AE2 networks, Create contraptions, MineColonies, and multi-dimension operations all need to tick when you're not there.
+- **Upgrade to Multi Chunk Loaders** for factory complexes. A 3×3 area covers a Mekanism chemical plant or a Create factory wing. Single loaders are for isolated machines or outposts.
+- **Where to place them:**
+
+  | Priority | Location | Loader type | Why |
+  |----------|----------|-------------|-----|
+  | 1 | **Main base** (ME drive room, Mek induction matrix, Create power core) | Multi Chunk (3×3) | Keeps everything running — autocrafting, power generation, ore processing |
+  | 2 | **MineColonies colony** (Town Hall center) | Single or Multi | Keeps workers active, guards patrolling, buildings constructing |
+  | 3 | **Mining outposts** (Digital Miner, quarry) | Single | Keeps the miner running while you're off exploring or in another dimension |
+  | 4 | **Other dimensions** (Nether fortress farm, End island, Aether, Twilight Forest) | Single per outpost | Keeps farms and processes ticking across all dimensions |
+
+- **Loaders work in any dimension**: Nether, The End, The Aether, Twilight Forest — a loader keeps that chunk ticking no matter where you are.
+- **No performance concern**: You can place as many as you need. Each loaded chunk adds some CPU time, but a dozen loaders is negligible on a modern CPU like the 9900X. Only start worrying if you have 50+ loaders across a massive base.
 
 **Config**: No changes needed. Default range (1 chunk per loader) and recipe costs are appropriate.
 

@@ -108,7 +108,7 @@ If installing manually:
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                                     | Nature ambiance (birds, wind, water)                                |
 | [The Immersive Music Mod](https://www.curseforge.com/minecraft/mc-mods/the-immersive-music-mod)                       | 147 new biome/structure-based songs, vanilla silence gaps preserved |
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                                       | Animated UI, smooth hotbar, item particles                          |
-| [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles)                              | RPG-style titles entering biomes/dimensions                         |
+| [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)                              | RPG-style titles entering biomes/dimensions                         |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                          | Enhanced mod list screen with badges/categories                     |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                         | Independent 360° camera rotation in third-person view               |
 | [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                               | Modern, sharp tooltip rendering with equipment compare              |
@@ -151,6 +151,8 @@ If installing manually:
 | [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
+
+> **Note**: If using the CurseForge App, all dependencies listed below are **installed automatically** when you install the mod that requires them. You do not need to manually download or install any dependency entries in this document — just install the mods themselves through CurseForge.
 
 ### New Dependencies
 
