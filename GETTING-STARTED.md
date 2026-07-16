@@ -141,28 +141,28 @@ See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full mod list.
 
 #### Video Settings
 
-| Setting             | Recommended    | Notes                                                                 |
-|---------------------|----------------|-----------------------------------------------------------------------|
-| Graphics            | Fabulous       | Sodium makes this performant now                                      |
-| Render Distance     | 10 chunks      | Keep low — Distant Horizons handles everything beyond this            |
+| Setting             | Recommended    | Notes                                                                   |
+|---------------------|----------------|-------------------------------------------------------------------------|
+| Graphics            | Fabulous       | Sodium makes this performant now                                        |
+| Render Distance     | 10 chunks      | Keep low — Distant Horizons handles everything beyond this              |
 | Simulation Distance | 8 chunks       | Controls entity ticking range; lower = less lag from distant mobs/farms |
-| Brightness          | Moody → Bright | Personal preference — Bright makes caves easier to see                |
-| VSync               | OFF            |                                                         |
-| Max Framerate       | Uncapped       |                                                         |
+| Brightness          | Moody → Bright | Personal preference — Bright makes caves easier to see                  |
+| VSync               | OFF            |                                                                         |
+| Max Framerate       | Uncapped       |                                                                         |
 
 #### Distant Horizons Settings
 
 Open **Video Settings → [colored tiles icon]** (next to FOV slider). With Complementary Unbound Ultra at 4K, the shader is already taxing the GPU — DH LOD geometry still goes through the full shader pipeline (lighting, shadows, AO). Recommended for RTX 4080 Super + AMD 9900X:
 
-| Setting                      | Value      | Notes                                                                |
-|------------------------------|------------|----------------------------------------------------------------------|
-| Enable Rendering             | ON         |                                                                      |
-| Enable Distant Generation    | ON         |                                                                      |
-| LOD Render Distance Radius   | **128-256**| Start at 128; try 256 if FPS stays comfortable. 384+ with shaders at 4K is heavy |
-| Quality Preset               | **Medium** | High adds geometry that the shader must process per-pixel — cost multiplies |
-| CPU Load                     | Aggressive | 9900X has 24 threads; CPU isn't the bottleneck here                 |
-| Enable Cloud Rendering       | OFF        | Let Complementary Unbound handle clouds — double-clouding wastes GPU |
-| Show LOD Gen Progress        | ON         | Helps confirm generation is working                                 |
+| Setting                    | Value       | Notes                                                                            |
+|----------------------------|-------------|----------------------------------------------------------------------------------|
+| Enable Rendering           | ON          |                                                                                  |
+| Enable Distant Generation  | ON          |                                                                                  |
+| LOD Render Distance Radius | **128-256** | Start at 128; try 256 if FPS stays comfortable. 384+ with shaders at 4K is heavy |
+| Quality Preset             | **Medium**  | High adds geometry that the shader must process per-pixel — cost multiplies      |
+| CPU Load                   | Aggressive  | 9900X has 24 threads; CPU isn't the bottleneck here                              |
+| Enable Cloud Rendering     | OFF         | Let Complementary Unbound handle clouds — double-clouding wastes GPU             |
+| Show LOD Gen Progress      | ON          | Helps confirm generation is working                                              |
 
 DH auto-detects thread count — no need to set LOD Update Threads manually. The mod generates LOD data as you explore; first visit to an area will have temporary pop-in. Terralith + Tectonic complex terrain may take longer to generate initially. Monitor VRAM usage — shaders at 4K + DH LODs can push past 12GB on the 4080 Super's 16GB buffer.
 
@@ -190,14 +190,14 @@ Place **Complementary Unbound** `.zip` in the `shaderpacks/` folder. Launch Mine
 
 Six optional resource packs enhance vanilla visuals and UI:
 
-| Pack                                                                     | Role                                                                                    |
-|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)   | Living entity animation overhaul — mobs blink, look around, show emotion                |
-| [Alacrity](https://www.curseforge.com/minecraft/texture-packs/alacrity)                   | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models               |
-| [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses                |
-| [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)        | 3D block & item textures for all rail types                                             |
-| [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/nicos-3d-ladders)               | 3D model replacement for ladders                                                        |
-| [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)     | Enhanced 3D look for lanterns and chains                                                |
+| Pack                                                                                        | Role                                                                      |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)     | Living entity animation overhaul — mobs blink, look around, show emotion  |
+| [Alacrity](https://www.curseforge.com/minecraft/texture-packs/alacrity)                     | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models |
+| [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses    |
+| [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)          | 3D block & item textures for all rail types                               |
+| [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/nicos-3d-ladders)           | 3D model replacement for ladders                                          |
+| [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)       | Enhanced 3D look for lanterns and chains                                  |
 
 **Installation**: Install via CurseForge App. Load order (top = highest priority):
 
@@ -224,12 +224,12 @@ Many mods add their own keybinds. Open **Options → Controls → Key Binds** an
 
 Your first session is about getting comfortable. Don't rush — this wave has zero progression pressure.
 
-| Session                         | Goal                                                                                                                                                                                                  |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons (LOD 384-512, High quality, Aggressive CPU). Walk around spawn to generate LOD data      |
-| **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey   |
-| **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                          |
-| **Ongoing**                     | LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it |
+| Session                         | Goal                                                                                                                                                                                                                             |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Session 1 — Setup**           | Launch the game. Set keybinds (Ctrl+Shift+W for Waystones, C for zoom). Open Mod Menu to confirm all mods loaded. Configure Distant Horizons (LOD 384-512, High quality, Aggressive CPU). Walk around spawn to generate LOD data |
+| **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone at your base. Craft a Sophisticated Storage barrel for organized storage. Craft a backpack, equip it, set hotkey                              |
+| **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Install the Complementary Unbound shaderpack if desired. Make torches and light up your base perimeter                                                                     |
+| **Ongoing**                     | LambDynamicLights lights your way as you hold a torch. AmbientSounds plays nature music automatically. Chunk Loaders wait until you have automation to protect — place one at your base and forget it                            |
 
 ### Using Wave 0 Mods
 
@@ -419,6 +419,7 @@ Adds 170+ new sound effects for UI interactions, menu clicks, item drops, eating
 **No config needed** — install and forget. If any sound feels off, customize individual sound events in Mod List → Sounds → Config, or directly in `config/sounds/`. All 170+ sound categories can be individually enabled/disabled and volume-adjusted.
 
 **Suggestions**:
+
 - **If a sound annoys you**: find its category in the config screen and disable it individually — you don't need to mute the whole mod
 - **Adding sounds for modded content**: Sounds supports custom resource packs that define sound events for other mods' items, blocks, and screens. Check the [Sounds documentation](https://docs.imb11.dev/sounds/) for the definition format
 - **Conflicts with Sound Physics Remastered**: None — Sounds handles UI and item feedback, Sound Physics handles environmental acoustics. They complement each other
@@ -466,12 +467,12 @@ Chunk Loaders keep specific chunks loaded even when you're far away or in anothe
 - **Upgrade to Multi Chunk Loaders** for factory complexes. A 3×3 area covers a Mekanism chemical plant or a Create factory wing. Single loaders are for isolated machines or outposts.
 - **Where to place them:**
 
-  | Priority | Location | Loader type | Why |
-  |----------|----------|-------------|-----|
-  | 1 | **Main base** (ME drive room, Mek induction matrix, Create power core) | Multi Chunk (3×3) | Keeps everything running — autocrafting, power generation, ore processing |
-  | 2 | **MineColonies colony** (Town Hall center) | Single or Multi | Keeps workers active, guards patrolling, buildings constructing |
-  | 3 | **Mining outposts** (Digital Miner, quarry) | Single | Keeps the miner running while you're off exploring or in another dimension |
-  | 4 | **Other dimensions** (Nether fortress farm, End island, Aether, Twilight Forest) | Single per outpost | Keeps farms and processes ticking across all dimensions |
+  | Priority | Location                                                                         | Loader type        | Why                                                                        |
+  |----------|----------------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------|
+  | 1        | **Main base** (ME drive room, Mek induction matrix, Create power core)           | Multi Chunk (3×3)  | Keeps everything running — autocrafting, power generation, ore processing  |
+  | 2        | **MineColonies colony** (Town Hall center)                                       | Single or Multi    | Keeps workers active, guards patrolling, buildings constructing            |
+  | 3        | **Mining outposts** (Digital Miner, quarry)                                      | Single             | Keeps the miner running while you're off exploring or in another dimension |
+  | 4        | **Other dimensions** (Nether fortress farm, End island, Aether, Twilight Forest) | Single per outpost | Keeps farms and processes ticking across all dimensions                    |
 
 - **Loaders work in any dimension**: Nether, The End, The Aether, Twilight Forest — a loader keeps that chunk ticking no matter where you are.
 - **No performance concern**: You can place as many as you need. Each loaded chunk adds some CPU time, but a dozen loaders is negligible on a modern CPU like the 9900X. Only start worrying if you have 50+ loaders across a massive base.
@@ -522,6 +523,8 @@ Create is about **rotational power**. Every Create machine needs rotational forc
 Create has a built-in interactive tutorial called the **Ponder system**. Hold `W` while hovering over any Create block or item in JEI or your inventory. An animated scene plays showing exactly how the block works, what it connects to, and what it does.
 
 **Use Ponder constantly.** It is better than any written guide. Every Create player learns through Ponder first.
+
+For deeper tutorials, watch **Simi Cats** on YouTube — the [Create playlists](https://www.youtube.com/channel/UCrKV2QTuyGcv4E3eSJpBiYA/playlists) cover everything from basic mechanical power to advanced factories and trains.
 
 #### First Create Machines
 
@@ -669,6 +672,8 @@ TFMG adds aluminum as a new metal. **Bauxite ore** generates in the Overworld (t
 ### Mekanism — Industrial Processing
 
 Mekanism is about **processing materials at industrial scale**. Its power system (Joules) is separate from Create's rotational power, but you can bridge them — **Create Crafts & Additions** provides electric motors and alternators (convert between kinetic SU and Forge Energy FE), and Create's built-in alternator also works.
+
+For a step-by-step walkthrough, see the [Mekanism Getting Started Tutorial](https://wiki.aidancbrady.com/wiki/Tutorials/Getting_Started) on the official wiki. It covers your first Heat Generator, ore doubling, and the Tier system.
 
 #### Finding Osmium
 
@@ -1082,11 +1087,11 @@ Your exploration isn't limited to the surface. The underground has new cave biom
 
 Darker Depths adds 3 unique cave biomes that generate deep underground, each with its own atmosphere, resources, and threats:
 
-| Biome             | Depth          | What to expect                                                        | Key resources                                                               |
-|-------------------|----------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| **Molten Cavern** | Deep (Y < 0)   | Lava pools, geysers, amber clusters, Dead Living Crystals             | Living Crystals (feed diamond to grow), Crystal Melons (temporary god-mode) |
-| **Sandy Catacombs**| Mid (Y 0-20)  | Petrified roots, aridrock, Void Soul mobs, Catacombs structure        | Void Souls (bottle them), Forsaken Bronze (unique metal for tools/weapons)  |
-| **Crystal Cavern**| Any depth      | Growing crystals, crystal-infused blocks, glowing ambience            | Crystal materials for decorative and utility items                          |
+| Biome               | Depth        | What to expect                                                 | Key resources                                                               |
+|---------------------|--------------|----------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Molten Cavern**   | Deep (Y < 0) | Lava pools, geysers, amber clusters, Dead Living Crystals      | Living Crystals (feed diamond to grow), Crystal Melons (temporary god-mode) |
+| **Sandy Catacombs** | Mid (Y 0-20) | Petrified roots, aridrock, Void Soul mobs, Catacombs structure | Void Souls (bottle them), Forsaken Bronze (unique metal for tools/weapons)  |
+| **Crystal Cavern**  | Any depth    | Growing crystals, crystal-infused blocks, glowing ambience     | Crystal materials for decorative and utility items                          |
 
 **Key mechanic — Living Crystals**: Found as dead crystals in the Molten Cavern. Feed them a diamond to reawaken them. They grow over time and can spread to nearby diamond ore or transform melons into **Crystal Melons** — hold one in your off-hand to make any tool unbreakable with +20% speed and damage for 5 minutes (configurable).
 
@@ -1098,12 +1103,12 @@ Darker Depths adds 3 unique cave biomes that generate deep underground, each wit
 
 Upgrade Aquatic expands the ocean with new mobs, coral types, and ocean-floor features:
 
-| Feature           | What it does                                                                 |
-|-------------------|------------------------------------------------------------------------------|
-| **Thrasher**      | A fantasy shark-like mob that uses sonar and thrashes prey. Drops thrasher teeth for trident crafting |
-| **Ocean Ravines** | Underwater ravines filled with Prismarine Coral — harvest for decorative blocks and materials |
-| **Nautilus**      | Passive mob that drops shells for conduit crafting                           |
-| **Renewable sand**| Bubble columns below sandstone gradually convert stone to sand               |
+| Feature            | What it does                                                                                          |
+|--------------------|-------------------------------------------------------------------------------------------------------|
+| **Thrasher**       | A fantasy shark-like mob that uses sonar and thrashes prey. Drops thrasher teeth for trident crafting |
+| **Ocean Ravines**  | Underwater ravines filled with Prismarine Coral — harvest for decorative blocks and materials         |
+| **Nautilus**       | Passive mob that drops shells for conduit crafting                                                    |
+| **Renewable sand** | Bubble columns below sandstone gradually convert stone to sand                                        |
 
 **Integration**: Upgrade Aquatic items like thrasher teeth and prismarine coral are compatible with Ocean's Delight (Wave 4) for seafood recipes. YUNG's Better Ocean Monuments is compatible — Upgrade Aquatic doesn't modify monument structures.
 
@@ -1308,12 +1313,12 @@ See [MODLIST.md](./MODLIST.md#wave-25--schematic-building). Install both Forgema
 
 Forgematica doesn't come with built-in blueprints. You source `.litematic` files from:
 
-| Source | How | Best for |
-|--------|-----|----------|
-| **Planet Minecraft** | Search [planetminecraft.com](https://www.planetminecraft.com/projects/?keywords=litematica+schematic) for "litematica schematic [pyramid/skyscraper/castle]" | Pre-made megastructures, community builds |
-| **Create your own** | Build a structure in a creative test world → use Forgematica's Area Selection tool (set keybind) → save as `.litematic` | Custom designs, replicating your own builds |
-| **Reddit** | r/9x9, r/litematica, r/MinecraftBuilds | Niche builds, themed collections |
-| **Discord** | Litematica's official Discord, build-sharing servers | Active communities, help and tips |
+| Source               | How                                                                                                                                                          | Best for                                    |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| **Planet Minecraft** | Search [planetminecraft.com](https://www.planetminecraft.com/projects/?keywords=litematica+schematic) for "litematica schematic [pyramid/skyscraper/castle]" | Pre-made megastructures, community builds   |
+| **Create your own**  | Build a structure in a creative test world → use Forgematica's Area Selection tool (set keybind) → save as `.litematic`                                      | Custom designs, replicating your own builds |
+| **Reddit**           | r/9x9, r/litematica, r/MinecraftBuilds                                                                                                                       | Niche builds, themed collections            |
+| **Discord**          | Litematica's official Discord, build-sharing servers                                                                                                         | Active communities, help and tips           |
 
 Place `.litematic` files in the `schematics/` folder in your Minecraft directory. Forgematica also reads older `.schematic` and `.schem` files.
 
@@ -1321,13 +1326,13 @@ Place `.litematic` files in the `schematics/` folder in your Minecraft directory
 
 Forgematica works through a series of keybinds. Set these up first in **Options → Controls → Forgematica**:
 
-| Action | Suggested Key | What it does |
-|--------|---------------|--------------|
-| Open Configuration Menu | `M + C` | Opens Forgematica's in-game config screen |
-| Open Loaded Schematics | `M + L` | Lists all loaded schematics, select one for placement |
-| Toggle Easy Place Mode | `M + P` | Auto-places the correct block from your inventory. **Essential.** |
-| Open Material List | `M + M` | Shows block counts: total, placed, remaining, in inventory |
-| Execute Operation | `M + E` | Run paste/fill/delete operations (creative mode only) |
+| Action                  | Suggested Key | What it does                                                      |
+|-------------------------|---------------|-------------------------------------------------------------------|
+| Open Configuration Menu | `M + C`       | Opens Forgematica's in-game config screen                         |
+| Open Loaded Schematics  | `M + L`       | Lists all loaded schematics, select one for placement             |
+| Toggle Easy Place Mode  | `M + P`       | Auto-places the correct block from your inventory. **Essential.** |
+| Open Material List      | `M + M`       | Shows block counts: total, placed, remaining, in inventory        |
+| Execute Operation       | `M + E`       | Run paste/fill/delete operations (creative mode only)             |
 
 #### Step-by-Step: Building from a Schematic
 
@@ -1373,11 +1378,11 @@ For skyscrapers, pyramids, and other tall structures, building one layer at a ti
 
 ### Session Plan — Wave 2.5
 
-| Session | Focus | What to Do |
-|---------|-------|------------|
-| **Session 1 — Setup** | Set keybinds. Download a small schematic from Planet Minecraft (try a simple house or tower) to test. Load it, create a placement, open the material list | Forgematica installed, keybinds set, first schematic loaded |
-| **Session 2 — First schematic build** | Gather materials from the material list. Toggle Easy Place Mode on. Place blocks following the hologram. Run the verifier when done | First structure built from schematic |
-| **Session 3+ — Megaprojects** | Find or design a megastructure schematic (pyramid, skyscraper, cathedral). Use single-layer mode. This is a long-term project — chip away at it between other sessions | Ongoing megaproject, material list tracking progress |
+| Session                               | Focus                                                                                                                                                                  | What to Do                                                  |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| **Session 1 — Setup**                 | Set keybinds. Download a small schematic from Planet Minecraft (try a simple house or tower) to test. Load it, create a placement, open the material list              | Forgematica installed, keybinds set, first schematic loaded |
+| **Session 2 — First schematic build** | Gather materials from the material list. Toggle Easy Place Mode on. Place blocks following the hologram. Run the verifier when done                                    | First structure built from schematic                        |
+| **Session 3+ — Megaprojects**         | Find or design a megastructure schematic (pyramid, skyscraper, cathedral). Use single-layer mode. This is a long-term project — chip away at it between other sessions | Ongoing megaproject, material list tracking progress        |
 
 **Pacing tip**: You can install Forgematica at any point after Wave 0 — it has zero dependencies on other waves. Start using it in Wave 2 when you've explored the world enough to pick a build site for your megaproject. Building a massive structure is a 40+ hour activity — let it run alongside everything else.
 
@@ -2253,7 +2258,7 @@ Once you have a foothold on another planet, set up automated resource extraction
 | **Mekanism ore processing** | Bring planet ores (desh, ostranium, tharsite) back to your main Mekanism processing line. 5x multiplication works on Stellaris ores                                                                     |
 | **AE2 storage**             | Store Stellaris materials in your ME drive. Set up autocrafting for rocket components. Place an ME interface + storage bus at your off-world base with a quantum link or P2P tunnel to the main network |
 | **Create transport**        | Use Create trains to move rocket materials from the launch pad area to your main base. Conveyor belts move components from storage to the Rocket Station                                                |
-| **TFMG fuel**               | Refine diesel/gasoline in TFMG's Distillation Tower for industrial fuel. Stellaris uses its own fuel crafting system (oil → fuel refinery)                                          |
+| **TFMG fuel**               | Refine diesel/gasoline in TFMG's Distillation Tower for industrial fuel. Stellaris uses its own fuel crafting system (oil → fuel refinery)                                                              |
 | **Sophisticated Backpacks** | Backpacks with netherite upgrades carry enough oxygen tanks and supplies for extended planetary expeditions                                                                                             |
 | **Farmer's Delight**        | Cooked meals are eatable in space (with oxygen present) — bring hearty stews and sandwiches instead of raw ingredients                                                                                  |
 
