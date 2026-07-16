@@ -117,6 +117,7 @@ If installing manually:
 | [Better Days](https://www.curseforge.com/minecraft/mc-mods/betterdays)                                          | Customizable day/night cycle length, enhanced sleep                 |
 | [Beautiful Enchanted Books [Mod Edition]](https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books) | Unique textures per enchantment book type — standalone mod, no resource pack needed |
 | [Overflowing Bars](https://www.curseforge.com/minecraft/mc-mods/overflowing-bars)                               | Expanded health, armor, and toughness bars beyond vanilla limits    |
+| [Cherished Worlds](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds)                               | Favorite/pin worlds to top of list, prevent accidental deletion      |
 
 ### Inventory & UI
 
@@ -313,7 +314,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | Mod                                                                               | Role                                                                                                                               |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [Create Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) 1.6.0        | Electric motors, alternators, rolling mill, wires/rods, silver/electrum — bridges kinetic SU and Forge Energy (FE)                 |
-| [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) 0.2.1 | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
+| [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge) 0.2.1 | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                       |
 | [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) (TFMG)      | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage |
 | [Mekanism TFMG Compatibility](https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility)      | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                              |
 | [Create: Gunsmithing](https://www.curseforge.com/minecraft/mc-mods/cgs)                            | Steampunk firearms integrated with Create — craftable using Create machines. Animated guns, attachments, ammo types. Optional Better Combat compatibility |
@@ -815,7 +816,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 52      | 8      | 61      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
+| Wave 0 — Foundation        | 53      | 8      | 62      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
 | Wave 1 — Tech              | 12      | 4      | 16      | Create + 6 addons (incl. Gunsmithing, Ornithopter Glider), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
 | Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                          |
@@ -826,4 +827,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf  |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                               |
-| **Total**                  | **126** | **40** | **166** | All confirmed NeoForge 1.21.1                           |
+| **Total**                  | **127** | **40** | **167** | All confirmed NeoForge 1.21.1                           |

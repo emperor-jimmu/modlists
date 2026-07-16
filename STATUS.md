@@ -151,6 +151,7 @@
 
 ### Added Mods (Jul 2026 continued)
 - [x] Forgematica + MaFgLib dep (Wave 2.5 — Schematic Building)
+- [x] Cherished Worlds v10.1.1 (Wave 0 — Visual & Client QoL)
 
 ### Config Overrides (Jul 2026)
 - [x] YUNG's Better Caves: cavern_layer spawn chance 23% → 30% (cavern_spawn_chance in better_cave.json) — gives Crystal Cavern biome more room to breathe
