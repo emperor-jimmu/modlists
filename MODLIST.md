@@ -149,6 +149,7 @@ If installing manually:
 | Mod                                                                                  | Role                                                                     |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
+| [OpenLoader](https://www.curseforge.com/minecraft/mc-mods/open-loader)                                   | Load data packs and resource packs globally across all worlds            |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
 
@@ -204,7 +205,7 @@ If installing manually:
 | [Alacrity](https://www.curseforge.com/minecraft/texture-packs/alacrity)                     | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models |
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses    |
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)          | 3D block & item textures for all rail types                               |
-| [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/3d-ladders)                 | 3D model replacement for ladders                                          |
+| [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/nicos-3d-ladders)                 | 3D model replacement for ladders                                          |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)       | Enhanced 3D look for lanterns and chains                                  |
 
 
@@ -285,11 +286,11 @@ seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (l
 
 | Data Pack                                                                                                             | Role                                  |
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [BlazeandCave's Advancements Pack](https://www.curseforge.com/minecraft/data-packs/blazeandcaves-advancements-pack) (v2.3.0 for 1.21.x) | 1000+ new advancements across 16 tabs |
+| [More Advancements 2.0](https://www.curseforge.com/minecraft/data-packs/more-advancements-2-0) (v2.0 for 1.21.x) | 100+ new advancements across organized tabs — bridges the gap between vanilla milestones |
 
-**BlazeandCave's Advancements Pack** adds 1000+ milestones across 16 themed tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks collecting every wood variant, killing every mob type, discovering every biome, and reaching tier milestones. Runs alongside Reliable Advancements (GUI overhaul) and Fancy Toasts (animated popups) without conflict.
+**More Advancements 2.0** adds 100+ new advancements across organized tabs, designed to flesh out the survival experience and bridge gaps between major vanilla milestones. Runs alongside Reliable Advancements (GUI overhaul) and Fancy Toasts (animated popups) without conflict.
 
-**Installation**: Install via CurseForge App. In-game, run `/datapack enable "blazeandcave/advancements"`. The pack is per-world — enable it in each new world.
+**Installation**: This data pack is loaded globally via **OpenLoader** (see Infrastructure section above). Place the `.zip` in `config/openloader/packs/` — no in-game `/datapack` command needed. OpenLoader applies it to every world automatically.
 
 ---
 
@@ -815,7 +816,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                   |
 |----------------------------|---------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 52      | 8      | 60      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
+| Wave 0 — Foundation        | 53      | 8      | 62      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading, datapack loader (+7 resource packs, 1 shaderpack, 1 data pack)                                                               |
 | Wave 1 — Tech              | 12      | 4      | 16      | Create + 6 addons (incl. Gunsmithing, Ornithopter Glider), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
 | Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                          |
@@ -826,4 +827,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf  |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                               |
-| **Total**                  | **126** | **40** | **166** | All confirmed NeoForge 1.21.1                           |
+| **Total**                  | **127** | **40** | **167** | All confirmed NeoForge 1.21.1                           |

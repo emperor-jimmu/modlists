@@ -20,6 +20,7 @@
 - [x] ~~Ores: Skniro's Nether & End Ores~~ (removed — unnecessary, unpopular mod)
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
 - [x] Chunk Loading: Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib
+- [x] Infrastructure: OpenLoader added for global datapack loading
 - [x] Mekanism Addons: Advanced Finders, Advanced Chimneys + ForgeEndertech dep
 - [x] Create Addons: Create Crafts & Additions, Steam 'n' Rails, TFMG, Mekanism TFMG Compat
 - [x] Create Addons (new): Create: Gunsmithing + NTGL + GeckoLib + Framework deps, Create Ornithopter Glider
@@ -97,7 +98,7 @@
 - [x] AE2 channels kept on (logistics puzzle)
 - [x] Mekanism chunk loading disabled (delegated to Chunk Loaders mod)
 - [x] vanilla advancements + Fancy Toasts for progression guidance (no FTB Quests)
-- [x] Added BlazeandCave's Advancements Pack data pack for 1000+ tracked milestones across 16 tabs — pairs with Reliable Advancements (UI) for a complete advancement experience
+- [x] Replaced BlazeandCave's Advancements Pack (broken, outdated) with Advancements Odyssey + OpenLoader for global datapack loading
 - [x] Noisium → NoisiumForked (Noisium archived on 1.21.1; NoisiumForked is active fork, same functionality)
 - [x] Constant Music → The Immersive Music Mod (Constant Music forced 2min fade limit with 5 songs; Immersive Music Mod has 147 songs, biome/structure-aware, no dead air gap override)
 - [x] Chat Heads → removed (multiplayer-only feature, unnecessary for singleplayer pack)
@@ -129,7 +130,7 @@
 - [ ] Config tuning per mod
 
 ### Data Packs
-- [x] BlazeandCave's Advancements Pack selected (1000+ advancements, data pack for 1.21.x)
+- [x] Advancements Odyssey selected (comprehensive progression data pack for 26.1.x, loaded via OpenLoader)
 - [ ] No Creeper Grief data pack
 
 ### Shaderpacks

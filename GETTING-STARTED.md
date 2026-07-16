@@ -196,7 +196,7 @@ Six optional resource packs enhance vanilla visuals and UI:
 | [Alacrity](https://www.curseforge.com/minecraft/texture-packs/alacrity)                   | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models               |
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars) | Redesigned boss bars with themed designs for vanilla and modded bosses                |
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)        | 3D block & item textures for all rail types                                             |
-| [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/3d-ladders)               | 3D model replacement for ladders                                                        |
+| [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/nicos-3d-ladders)               | 3D model replacement for ladders                                                        |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)     | Enhanced 3D look for lanterns and chains                                                |
 
 **Installation**: Install via CurseForge App. Load order (top = highest priority):
