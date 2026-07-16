@@ -329,7 +329,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 | Mod                                                                               | Role                                                                               |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**MineColonies**](https://modrinth.com/mod/minecolonies)                         | Autonomous NPC colony — builders, miners, farmers, crafters, guards, research tree |
+| [**MineColonies**](https://www.curseforge.com/minecraft/mc-mods/minecolonies)     | Autonomous NPC colony — builders, miners, farmers, crafters, guards, research tree |
 | [Structurize](https://www.curseforge.com/minecraft/mc-mods/structurize)           | Structure building/placement library (MineColonies dependency)                     |
 | [MultiPiston](https://www.curseforge.com/minecraft/mc-mods/multi-piston)          | Multi-block piston library (MineColonies dependency)                               |
 | [BlockUI](https://www.curseforge.com/minecraft/mc-mods/blockui)                   | UI library (MineColonies dependency)                                               |
