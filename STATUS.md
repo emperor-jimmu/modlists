@@ -30,6 +30,11 @@
 - [x] Navigation: Explorer's Compass
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
 
+### Wave 2.5 — Schematic Building (2 mods)
+- [x] Forgematica + MaFgLib dep selected
+- [x] Tutorial written in GETTING-STARTED.md covering schematic sources, keybinds, Easy Place Mode, Material List, Schematic Verifier, single-layer mode
+- [x] Interdependency notes: pairs with Building Wands (Wave 6), client-side only, shader compatibility
+
 ### Wave 3 — Equipment Magic & RPG (~17 mods incl. 10 deps)
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
 - [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
@@ -141,6 +146,9 @@
 - [x] Upgrade Aquatic + Blueprint dep (Wave 2 — Underground & Ocean)
 - [x] Cut Through (Wave 5 — Combat)
 - [x] Nullscape re-added as End data pack (Wave 2 — End Overhaul)
+
+### Added Mods (Jul 2026 continued)
+- [x] Forgematica + MaFgLib dep (Wave 2.5 — Schematic Building)
 
 ### Config Overrides (Jul 2026)
 - [x] YUNG's Better Caves: cavern_layer spawn chance 23% → 30% (cavern_spawn_chance in better_cave.json) — gives Crystal Cavern biome more room to breathe

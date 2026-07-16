@@ -13,13 +13,14 @@
 #align(center + horizon, [
   #block(height: 3cm)
   #text(size: 36pt, weight: "bold", fill: navy)[Getting Started]
+  \
   #text(size: 18pt, fill: gray)[Minecraft 1.21.1 — NeoForge]
+  \
   #line(length: 50%)
+  \
   #text(size: 14pt, fill: luma(120))[Setup guide and tutorials]
   #block(height: 2cm)
   #text(size: 11pt, fill: luma(160))[Version #version]
 ])
-
-#pagebreak()
 
 #cmarker.render(read("../GETTING-STARTED.md"), h1-level: 0, set-document-title: false)

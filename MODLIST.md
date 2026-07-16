@@ -1,5 +1,3 @@
-# Mod List — Minecraft 1.21.1 NeoForge
-
 ## Wave -1 — Prerequisites
 
 ### JDK 21
@@ -454,6 +452,83 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ---
 
+## Wave 2.5 — Schematic Building
+
+Forgematica is the NeoForge/Forge port of Litematica — a client-side schematic mod that lets you load blueprints of structures (pyramids, skyscrapers, castles, factories) and tracks your building progress block-by-block.
+
+### Schematic Mod
+
+| Mod                                                                    | Role                                                                                                           |
+|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| [**Forgematica**](https://www.curseforge.com/minecraft/mc-mods/forgematica) | Load schematics, holographic overlay showing missing/wrong/extra blocks, material list, schematic verifier      |
+| [MaFgLib](https://www.curseforge.com/minecraft/mc-mods/mafglib)                     | Core library — required by Forgematica                                                                          |
+
+### Where to Get Schematics
+
+Forgematica does not ship with built-in blueprints — you source `.litematic` schematic files from:
+
+- **[Planet Minecraft](https://www.planetminecraft.com/projects/?keywords=litematica+schematic)** — the main community hub. Search "litematica schematic [pyramid/skyscraper/castle]" to find thousands of uploads.
+- **Create your own** — select an area in a test creative world, save it as a `.litematic` file via Forgematica's Area Selection tool.
+- **Reddit** — r/9x9, r/litematica, r/MinecraftBuilds
+- **CurseForge schematic packs** — some creators upload collections of schematics as data packs or resource packs
+- **Discord communities** — Litematica's official Discord and build-sharing servers
+
+Schematic files go in the `schematics/` folder in your Minecraft directory. Forgematica also reads legacy `.schematic` and `.schem` formats.
+
+Browse more at: [Planet Minecraft — Litematica tag (Java, free only)](https://www.planetminecraft.com/projects/tag/litematica/?monetization=0&platform=1)
+
+### Starter Schematic Library
+
+These 15 schematics are pre-vetted free downloads from Planet Minecraft. Download the `.litematic` file from each page and place it in your `schematics/` folder.
+
+| # | Schematic | Style | Complexity |
+|---|-----------|-------|------------|
+| 1 | [Stone House 1](https://www.planetminecraft.com/project/stone-house-1-litematica/) | Stone cottage | Low — starter home |
+| 2 | [Stone House 2](https://www.planetminecraft.com/project/stone-house-2-litematica/) | Stone cottage | Low — starter home |
+| 3 | [Stone House 3](https://www.planetminecraft.com/project/stone-house-3-litematica/) | Stone cottage | Low — starter home |
+| 4 | [Observatory (Pale Garden)](https://www.planetminecraft.com/project/observatory-pale-garden-schematic-for-litematic-amp-world-edit/) | Fantasy observatory | Medium — Pale Garden biome |
+| 5 | [Storage Silo](https://www.planetminecraft.com/project/storage-silo-schematic/) | Industrial silo | Medium — great for factory districts |
+| 6 | [Modern House](https://www.planetminecraft.com/project/free-modern-house-java-bedrock-schematic/) | Modern | Medium — with interior |
+| 7 | [Mossveil Cottage](https://www.planetminecraft.com/project/free-mossveil-cotttage-java-bedrock-schematic/) | Fantasy cottage | Medium — detailed interior |
+| 8 | [Fantasy Gate](https://www.planetminecraft.com/project/fantasy-gate-structure/) | Fantasy gate | Medium — entrance/landmark |
+| 9 | [Big Duo House](https://www.planetminecraft.com/project/big-duo-house/) | Large house | High — two-wing design |
+| 10 | [Modern House 172](https://www.planetminecraft.com/project/modern-house-172-map-schematic/) | Modern | High — large glass facade |
+| 11 | [Modern House (ID 4992361)](https://www.planetminecraft.com/project/modern-house-map-schematics-4992361/) | Modern | High — multi-level |
+| 12 | [Meadow House](https://www.planetminecraft.com/project/meadow-house-download/) | Rustic | High — sprawling layout |
+| 13 | [Deepslate Tower](https://www.planetminecraft.com/project/deepslate-tower-6804397/) | Dark fantasy tower | High — deepslate materials |
+| 14 | [Medieval Ice Tower](https://www.planetminecraft.com/project/medieval-fantasy-ice-snow-tower-download/) | Fantasy tower | High — ice/snow theme |
+| 15 | [White Modern House](https://www.planetminecraft.com/project/white-modern-house-litematic-with-interior/) | Modern | High — full interior |
+
+### Interdependency Notes for Wave 2.5
+
+- Forgematica is **client-side only** — it doesn't need to be on a server to work. If playing singleplayer, just install it client-side.
+- The holographic overlay works with shaders (Complementary Unbound). If the overlay flickers, toggle the shader off temporarily while placing blocks, or set the rendering layer in Forgematica's config.
+- Forgematica's **Easy Place Mode** (toggle with a keybind) auto-places blocks from your inventory matching the schematic — essential for large builds. Combine with Building Wands (Wave 6) for even faster placement.
+- Schematics are stored per-world and can be shared between players on a server. The material list updates in real-time as you place blocks.
+
+### Configuration — Wave 2.5
+
+Forgematica defaults are correct for this pack. Key settings to know (accessible via `M + C` in-game):
+
+| Setting              | Recommended | Notes                                                                                   |
+|----------------------|-------------|-----------------------------------------------------------------------------------------|
+| Easy Place Mode      | ON (toggle) | Auto-places correct blocks from your inventory. Bind a key to toggle it on/off          |
+| Render Layers        | Single      | Render only one layer at a time for tall builds. Switch layers with PgUp/PgDn           |
+| Overlay transparency | 0.7         | Default. Increase if the overlay is too faint against certain block textures            |
+| Material List HUD    | ON          | Shows remaining items needed in a compact HUD. Toggle on/off via Material List GUI      |
+
+**Keybindings to set** (Options → Controls → Forgematica):
+
+| Action                  | Suggested Key | What it does                                                     |
+|-------------------------|---------------|------------------------------------------------------------------|
+| Open Configuration Menu | `M + C`       | Opens Forgematica's in-game config screen                        |
+| Open Loaded Schematics  | `M + L`       | List all loaded schematics, select active placement              |
+| Toggle Easy Place Mode  | `M + P`       | Auto-place blocks from inventory matching the schematic           |
+| Open Material List      | `M + M`       | Shows block counts: total, placed, remaining, available          |
+| Execute Operation       | `M + E`       | Run the selected operation (paste, fill, delete, etc.)           |
+
+---
+
 ## Wave 3 — Equipment Magic & RPG
 
 ### RPG Progression
@@ -694,10 +769,11 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 1 — Tech              | 10      | 1      | 11      | Create + 4 addons, Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + ForgeEndertech dep                                                           |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                           |
 | Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                          |
+| Wave 2.5 — Schematic Build | 1       | 1      | 2       | Forgematica + MaFgLib dep                                                                                                                                                               |
 | Wave 3 — Equipment Magic   | 7       | 10     | 17      | Skill Tree, Simply Swords, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API) |
 | Wave 4 — Food & Farming    | 7       | —      | 7       | Farmer's Delight + 6 addon mods (including Ender's Delight moved from Wave 2)                                                                                                           |
 | Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                               |
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf  |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                    |
 | Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                               |
-| **Total**                  | **122** | **36** | **158** | All confirmed NeoForge 1.21.1                                                                                                                                                           |
+| **Total**                  | **123** | **37** | **160** | All confirmed NeoForge 1.21.1                           |

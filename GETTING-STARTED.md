@@ -1,5 +1,3 @@
-# Getting Started — Minecraft 1.21.1 NeoForge
-
 This guide walks you through the modpack **one Wave at a time**. Each wave introduces one new capability. Don't install the next wave until you're comfortable with the current one.
 
 ---
@@ -1281,6 +1279,93 @@ Exploration is something you dip into between factory sessions. No need to binge
 | **Session 4+ — Deep exploration**     | Work through Twilight Forest bosses at your own pace. Visit Deeper and Darker (requires finding an Ancient City). Explore the End after killing the dragon | Boss loot, dimension-specific resources          |
 
 **Pacing tip**: Explore between factory builds. When you're waiting for Mekanism to process or Create to assemble, grab your compass and walk in a random direction. Every direction has something new.
+
+---
+
+## Wave 2.5 — Schematic Building (Forgematica)
+
+Forgematica lets you load a blueprint of any structure and tracks your building progress block-by-block. It shows you exactly which blocks to place, which are missing, and how many materials you still need. This is how you build a pyramid, skyscraper, castle, or factory from a plan without guessing.
+
+### Install
+
+See [MODLIST.md](./MODLIST.md#wave-25--schematic-building). Install both Forgematica and its dependency MaFgLib. This is a **client-side only** mod — no server-side install needed for singleplayer.
+
+### Getting a Schematic
+
+Forgematica doesn't come with built-in blueprints. You source `.litematic` files from:
+
+| Source | How | Best for |
+|--------|-----|----------|
+| **Planet Minecraft** | Search [planetminecraft.com](https://www.planetminecraft.com/projects/?keywords=litematica+schematic) for "litematica schematic [pyramid/skyscraper/castle]" | Pre-made megastructures, community builds |
+| **Create your own** | Build a structure in a creative test world → use Forgematica's Area Selection tool (set keybind) → save as `.litematic` | Custom designs, replicating your own builds |
+| **Reddit** | r/9x9, r/litematica, r/MinecraftBuilds | Niche builds, themed collections |
+| **Discord** | Litematica's official Discord, build-sharing servers | Active communities, help and tips |
+
+Place `.litematic` files in the `schematics/` folder in your Minecraft directory. Forgematica also reads older `.schematic` and `.schem` files.
+
+### How to Use Forgematica
+
+Forgematica works through a series of keybinds. Set these up first in **Options → Controls → Forgematica**:
+
+| Action | Suggested Key | What it does |
+|--------|---------------|--------------|
+| Open Configuration Menu | `M + C` | Opens Forgematica's in-game config screen |
+| Open Loaded Schematics | `M + L` | Lists all loaded schematics, select one for placement |
+| Toggle Easy Place Mode | `M + P` | Auto-places the correct block from your inventory. **Essential.** |
+| Open Material List | `M + M` | Shows block counts: total, placed, remaining, in inventory |
+| Execute Operation | `M + E` | Run paste/fill/delete operations (creative mode only) |
+
+#### Step-by-Step: Building from a Schematic
+
+**1. Load a schematic into your world:**
+
+- Press `M + L` → click "Load Schematic" → navigate to your `schematics/` folder → select the `.litematic` file.
+- The schematic appears in your loaded list. Click it to select it, then click "Create Placement."
+- A holographic ghost of the structure appears in-world. Walk to position it, then press `M + E` to confirm the placement location.
+
+**2. View the materials you need:**
+
+- Press `M + M` to open the Material List GUI.
+- It shows four columns: **Total** (all blocks in the schematic), **Placed** (blocks you've already placed matching the schematic), **Missing** (blocks still needed — this is what you care about), **Available** (blocks you already have in your inventory).
+- Toggle the **Material List HUD** on — it shows a compact overlay of what you're missing, so you don't need to reopen the GUI constantly.
+
+**3. Place blocks with Easy Place Mode:**
+
+- Toggle **Easy Place Mode** on (`M + P`).
+- Look at a holographic block in the schematic. Right-click with the matching block in your hand — it auto-places in the correct orientation.
+- **Pro tip**: Easy Place Mode also works from your hotbar. If the required block is anywhere in your inventory (not just your hand), it auto-switches to it. Fill your inventory with schematic materials and right-click away.
+
+**4. Check your progress:**
+
+- The Schematic Verifier (`M + V` by default, or accessible from the main menu) lists every mismatch between your built structure and the schematic. Find missing blocks, wrong block types, and blocks placed where they shouldn't be.
+- Green = correct, Red = wrong block, Blue = missing. Walk around and fix the errors the verifier highlights.
+
+#### Single-Layer Mode for Tall Builds
+
+For skyscrapers, pyramids, and other tall structures, building one layer at a time is easier:
+
+- Open the Configuration Menu (`M + C`).
+- Go to the **Render Layers** tab.
+- Set mode to **Single Layer**.
+- Use `PgUp` / `PgDn` to move up and down through layers.
+- Only the current layer's blocks are shown — no holographic clutter from blocks above or below.
+
+### Tips
+
+- **Pair with Building Wands (Wave 6)**: Easy Place Mode + a Building Wand = place entire rows or walls of blocks in one click.
+- **Use a test world**: If you're designing your own schematic, build it in a creative superflat world first, save it, then load it in your survival world.
+- **Shaders and the overlay**: If the holographic overlay flickers with shaders on, either toggle the shader off temporarily while building, or adjust the overlay render layer in Forgematica's config.
+- **The Schematic Verifier is your QA tool**: Run it after completing a large build. It catches that one block you missed on the back side.
+
+### Session Plan — Wave 2.5
+
+| Session | Focus | What to Do |
+|---------|-------|------------|
+| **Session 1 — Setup** | Set keybinds. Download a small schematic from Planet Minecraft (try a simple house or tower) to test. Load it, create a placement, open the material list | Forgematica installed, keybinds set, first schematic loaded |
+| **Session 2 — First schematic build** | Gather materials from the material list. Toggle Easy Place Mode on. Place blocks following the hologram. Run the verifier when done | First structure built from schematic |
+| **Session 3+ — Megaprojects** | Find or design a megastructure schematic (pyramid, skyscraper, cathedral). Use single-layer mode. This is a long-term project — chip away at it between other sessions | Ongoing megaproject, material list tracking progress |
+
+**Pacing tip**: You can install Forgematica at any point after Wave 0 — it has zero dependencies on other waves. Start using it in Wave 2 when you've explored the world enough to pick a build site for your megaproject. Building a massive structure is a 40+ hour activity — let it run alongside everything else.
 
 ---
 
