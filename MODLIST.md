@@ -95,7 +95,7 @@ If installing manually:
 | [ImmediatelyFast](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast)      | Immediate-mode rendering                 |
 | [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)         | Hide off-screen entities                 |
 | [Dynamic FPS](https://www.curseforge.com/minecraft/mc-mods/dynamic-fps)               | Background FPS reduction                 |
-| [NoisiumForked](https://www.curseforge.com/minecraft/mc-mods/noisiumforked) (v2.7.0) | Worldgen optimization (active fork)      |
+| [NoisiumForked](https://www.curseforge.com/minecraft/mc-mods/noisiumforked) | Worldgen optimization (active fork)      |
 | [FerriteCore](https://www.curseforge.com/minecraft/mc-mods/ferritecore)             | Memory usage reduction                   |
 
 ### Visual & Client QoL
@@ -269,9 +269,9 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 | Mod                                                                                | Role                                                                                                                                  |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [**Create**](https://www.curseforge.com/minecraft/mc-mods/create) 6.0.10                               | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains |
-| [**Mekanism**](https://www.curseforge.com/minecraft/mc-mods/mekanism) 10.7.19.85                       | Industrial processing — ore multiplication (2x→5x), digital miner, superdense energy storage, MekaSuit (flight, invulnerability)      |
-| [**Mekanism Generators**](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) 10.7.19.85 | Power generation — heat, wind, solar, gas-burning, bio generators, fission reactor, fusion reactor, turbine                           |
+| [**Create**](https://www.curseforge.com/minecraft/mc-mods/create) | Mechanical automation — rotational power, water wheels, windmills, gear trains, conveyor belts, deployers, sequenced crafters, trains |
+| [**Mekanism**](https://www.curseforge.com/minecraft/mc-mods/mekanism) | Industrial processing — ore multiplication (2x→5x), digital miner, superdense energy storage, MekaSuit (flight, invulnerability)      |
+| [**Mekanism Generators**](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) | Power generation — heat, wind, solar, gas-burning, bio generators, fission reactor, fusion reactor, turbine                           |
 | [**AE2**](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 19.2.17                                    | Digital storage — ME drives, autocrafting, P2P tunnels, spatial storage. The storage backbone                                         |
 
 **Note**: Mekanism v10 for 1.21.1 NeoForge is split into separate modules. **Mekanism** (core) provides machines, processing, cables, and armor. **Mekanism Generators** provides all power generation. Both must be installed.
