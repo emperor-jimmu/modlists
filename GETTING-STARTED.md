@@ -203,12 +203,14 @@ Six optional resource packs enhance vanilla visuals and UI:
 
 1. Fresh Animations
 2. Alacrity
-3. Enhanced Boss Bars
-4. RAY's 3D Rails
-5. 3D Ladders
-6. Better Lanterns
+3. Alacrity — Just Enough Items Support
+4. Alacrity — Shulker Box Tooltip Support
+5. Enhanced Boss Bars
+6. RAY's 3D Rails
+7. 3D Ladders
+8. Better Lanterns
 
-Alacrity provides the base 32x textures and GUI overhaul. Place Fresh Animations above it so entity animations override correctly. The 3D model packs (Rails, Ladders, Lanterns) are pure model overrides with no resolution conflict — they work at any texture scale.
+Alacrity provides the base 32x textures and GUI overhaul. Place Fresh Animations above it so entity animations override correctly. Place the Alacrity support packs **below** the base Alacrity pack — putting them above causes corrupt JEI/Shulker graphics. The 3D model packs (Rails, Ladders, Lanterns) are pure model overrides with no resolution conflict — they work at any texture scale.
 
 #### Keybindings (Set These Up First)
 
@@ -713,7 +715,6 @@ TFMG adds aluminum as a new metal. **Bauxite ore** generates in the Overworld (t
 - TFMG is a **Wave 1 addition** — start exploring oil after you have basic Create (water wheel + hand crank) and basic Mekanism (Enrichment Chamber)
 - The Distillation Tower requires brass-tier Create components (brass casing, brass funnels)
 - Diesel engines are a mid-to-late game power upgrade — they replace/supplement water wheels and windmills
-- **TFMG Energy Converter** (installed alongside TFMG) bridges TFMG's voltage-based electricity to Forge Energy (FE) and AE2 energy — wire your diesel generators into your ME system or Mekanism induction matrix
 - Mekanism TFMG Compatibility (installed alongside TFMG) resolves overlapping recipes between TFMG and Mekanism — see the config section below for details
 
 ---

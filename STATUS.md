@@ -21,7 +21,7 @@
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
 - [x] Infrastructure: Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib
 - [x] Mekanism Addons: Advanced Finders, Advanced Chimneys + ForgeEndertech dep
-- [x] Create Addons: Create Crafts & Additions, Create: Power Grid, Steam 'n' Rails, TFMG, TFMG Energy Converter, Mekanism TFMG Compat
+- [x] Create Addons: Create Crafts & Additions, Create: Power Grid, Steam 'n' Rails, TFMG, Mekanism TFMG Compat
 - [x] Create Addons (new): Create: Gunsmithing + NTGL + GeckoLib + Framework deps, Create Ornithopter Glider
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 - [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
@@ -188,7 +188,7 @@
 - [x] Neo Bee Fix (Wave 4 — Food & Farming)
 - [x] Small Ships (Wave 2 — Mobility)
 - [x] Create: Power Grid (Wave 1 — Create Addons)
-- [x] TFMG Energy Converter (Wave 1 — Create Addons)
+- [x] ~~TFMG Energy Converter — removed, crashes~~
 
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
