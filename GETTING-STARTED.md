@@ -618,6 +618,27 @@ Once you have brass (from zinc + copper in a heated mixer), you unlock:
 
 ---
 
+### Create: Power Grid — Physics-Based Electricity
+
+Power Grid adds a separate electricity system to Create (beyond SU). Generators produce voltage, cables carry it with realistic loss (Ohm's law), and motors consume it. It bridges to Forge Energy (FE) so your Power Grid can power Mekanism and AE2 machines — and vice versa.
+
+#### Key Concepts
+
+- **Voltage vs Current**: Generators produce a voltage. Cables have resistance. Machines draw current (amperage). Power (watts) = voltage × current.
+- **AC vs DC**: Power Grid simulates both. Most generators produce AC, which travels farther but needs rectification for DC machines.
+- **Cable loss**: Longer cable runs lose voltage. Use transformers to step voltage up (for long runs) then step it back down locally.
+- **FE bridge**: Power Grid includes built-in FE conversion — connect an FE Converter to pull energy from any FE source (Mekanism, AE2 energy acceptor) into the grid, or push grid power to FE machines.
+
+#### When to Build
+
+Power Grid is a **mid-Phase 2 addition** — start after you have basic Create rotational power and have outgrown SU. The diesel engines from TFMG (below) feed into Power Grid naturally.
+
+#### Ponder
+
+Power Grid has full Ponder support. Hold `W` over any Power Grid block (generator, motor, cable, transformer) for animated walkthroughs.
+
+---
+
 ### Create: The Factory Must Grow (TFMG) — Industrial Oil & Steel
 
 TFMG extends Create into the oil age. Drill for crude oil, refine it into fuels, and burn them in diesel engines for massive rotational power. Produce steel at industrial scale and generate electricity with voltage management.
@@ -692,6 +713,7 @@ TFMG adds aluminum as a new metal. **Bauxite ore** generates in the Overworld (t
 - TFMG is a **Wave 1 addition** — start exploring oil after you have basic Create (water wheel + hand crank) and basic Mekanism (Enrichment Chamber)
 - The Distillation Tower requires brass-tier Create components (brass casing, brass funnels)
 - Diesel engines are a mid-to-late game power upgrade — they replace/supplement water wheels and windmills
+- **TFMG Energy Connector** (installed alongside TFMG) bridges TFMG's voltage-based electricity to Forge Energy (FE) and AE2 energy — wire your diesel generators into your ME system or Mekanism induction matrix
 - Mekanism TFMG Compatibility (installed alongside TFMG) resolves overlapping recipes between TFMG and Mekanism — see the config section below for details
 
 ---
@@ -1172,6 +1194,33 @@ Immersive Aircraft adds vanilla-style aircraft that let you fly across the Overw
 - Aircraft work in the **Aether** — fly between sky islands without building bridges.
 - Aircraft can be damaged by mobs and environmental hazards. Park them inside or on a high platform.
 - **No config changes needed** — default fuel consumption and durability are balanced for the pack.
+
+### Small Ships — Sailable Vessels
+
+Small Ships adds buildable, sailable ships for ocean travel. Unlike aircraft, ships are **Phase 1 accessible** (require simple materials — wood, wool, iron) and serve as moveable water bases.
+
+#### Ship Types
+
+| Ship         | Crew | Cargo    | Best for                                  |
+|--------------|------|----------|-------------------------------------------|
+| **Brigantine** | 1    | 18 slots | All-purpose sailing, exploration          |
+| **Cog**        | 2    | 27 slots | Cargo transport between coastal bases     |
+| **Drakkar**    | 2    | 9 slots  | Fast travel, river navigation, combat     |
+| **Galley**     | 1    | 9 slots  | Early-game personal vessel                |
+
+#### How to Use
+
+1. **Craft** a ship at a crafting table — each requires a hull (wood), mast (wood + wool for sail), and helm
+2. **Right-click** water to place. Right-click the helm to board
+3. **W/S** to move forward/backward, **A/D** to steer. Speed depends on wind direction (with wind = faster)
+4. **Park** by dismounting — ships float where you leave them. Right-click with a lead to tow
+
+#### Progression Notes
+
+- Ships are **Phase 1** — craftable with basic materials (planks, wool, iron). Use them for early coastal exploration before you have aircraft.
+- A **cog** can carry enough loot from ocean ruins/shipwrecks to stock a mid-game base.
+- Ships work in any dimension with water — build a dock at your base and sail to distant islands in the Aether.
+- This mod is in **beta** for NeoForge (2.0.0-b2.1). Core features work; expect minor bugs.
 
 ---
 
