@@ -9,8 +9,8 @@
 
 ### Wave 0 — Foundation (~59 mods incl. deps)
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
-- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist
-- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Fancy Toasts, Obscure Tooltips, Loot Journal, Reliable Advancements, Polymorph
+- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist, First Person Model, Presence Footsteps, Particular Reforged, Wakes Reforged
+- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Fancy Toasts, Tooltip Overhaul, Loot Journal, Reliable Advancements, Polymorph, Shulker Box Tooltip, Item Borders
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U
 - [x] Added YUNG's API to New Dependencies
@@ -130,6 +130,7 @@
 
 ### Data Packs
 - [x] BlazeandCave's Advancements Pack selected (900+ advancements, v1.17.2, placed in %APPDATA%\.minecraft\datapacks\)
+- [x] Vanilla Refresh datapack added (30+ QoL features, placed in %APPDATA%\.minecraft\datapacks\)
 - [ ] No Creeper Grief data pack
 
 ### Shaderpacks
@@ -143,7 +144,7 @@
 
 ### Added Mods (Jul 2026)
 - [x] Beautiful Enchanted Books (Wave 0 — Visual & Client QoL)
-- [x] Subtle Effects (Wave 0 — Visual & Client QoL)
+- [x] ~~Subtle Effects~~ → replaced with Particular Reforged (Wave 0 — Visual & Client QoL)
 - [x] Darker Depths (Wave 2 — Underground & Ocean)
 - [x] Upgrade Aquatic + Blueprint dep (Wave 2 — Underground & Ocean)
 - [x] Cut Through (Wave 5 — Combat)
@@ -152,6 +153,21 @@
 ### Added Mods (Jul 2026 continued)
 - [x] Forgematica + MaFgLib dep (Wave 2.5 — Schematic Building)
 - [x] Cherished Worlds v10.1.1 (Wave 0 — Visual & Client QoL)
+
+### Added Mods (Jul 2026 batch 2)
+- [x] Particular Reforged (Wave 0 — replaces Subtle Effects, same category)
+- [x] First Person Model + Not Enough Animations dep (Wave 0 — Visual & Client QoL)
+- [x] Presence Footsteps (Wave 0 — Visual & Client QoL)
+- [x] Wakes Reforged (Wave 0 — Visual & Client QoL)
+- [x] Shulker Box Tooltip (Wave 0 — Inventory & UI)
+- [x] Item Borders (Wave 0 — Inventory & UI)
+- [x] Smooth Font 32x (Wave 0 — Texture Pack)
+- [x] Vervada's 3D Plants (Wave 0 — Texture Pack)
+- [x] Vanilla Refresh (Wave 0 — Data Pack)
+
+### Removed Mods (Jul 2026 batch 2)
+- [x] Obscure Tooltips — removed (Tooltip Overhaul retained as sole tooltip mod)
+- [x] Subtle Effects — removed (replaced by Particular Reforged)
 
 ### Config Overrides (Jul 2026)
 - [x] YUNG's Better Caves: cavern_layer spawn chance 23% → 30% (cavern_spawn_chance in better_cave.json) — gives Crystal Cavern biome more room to breathe

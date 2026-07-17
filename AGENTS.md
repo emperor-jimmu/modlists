@@ -94,7 +94,7 @@ Mod Management       Add mods one wave at a time, test launch after each wave
                          - AppleSkin (food info)
                          - Loot Journal (pickup notifications)
                          - Fancy Toasts (advancement toasts)
-                         - Obscure Tooltips (animated tooltip visuals)
+
                          - Immersive UI (animated UI, smooth hotbar, item particles)
                          - Traveler's Titles (biome/dimension entry titles)
                           - Tooltip Overhaul (modern tooltip rendering)

@@ -112,6 +112,10 @@ If installing manually:
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                          | Enhanced mod list screen with badges/categories                     |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                         | Independent 360° camera rotation in third-person view               |
 | [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                               | Modern, sharp tooltip rendering with equipment compare              |
+| [First Person Model](https://www.curseforge.com/minecraft/mc-mods/first-person-model)                          | Full body rendering in first-person view (requires Not Enough Animations) |
+| [Presence Footsteps](https://www.curseforge.com/minecraft/mc-mods/presence-footsteps-neoforge)                  | Block-aware footstep sounds for every surface type                  |
+| [Particular Reforged](https://www.curseforge.com/minecraft/mc-mods/particular-reforged)                        | Ambient particles: 3D water splashes, fireflies, falling leaves, cave dust, waterfall cascades |
+| [Wakes Reforged](https://www.curseforge.com/minecraft/mc-mods/wakes-reforged)                                  | Realistic water wakes and splashes when traveling on water          |
 | [Sounds](https://www.curseforge.com/minecraft/mc-mods/sound)                                                    | 170+ new sound effects for UIs, items, blocks, actions              |
 | ~~Tiny Item Animations~~ (removed from CurseForge — conflicts with Immersive UI item rendering) |
 | [Better Days](https://www.curseforge.com/minecraft/mc-mods/betterdays)                                          | Customizable day/night cycle length, enhanced sleep                 |
@@ -131,7 +135,8 @@ If installing manually:
 | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                   |
 | [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                   |
 | [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups            |
-| [Obscure Tooltips](https://www.curseforge.com/minecraft/mc-mods/obscure-tooltips)           | Animated tooltips with 3D models and particles   |
+| [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)       | Preview shulker box contents on hover            |
+| [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                    | Colored borders on items based on rarity          |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)                   | Animated item pickup notifications               |
 | [Reliable Advancements](https://www.curseforge.com/minecraft/mc-mods/reliable-advancements) | Overhauled advancements UI with editor/pan/zoom  |
 | [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict     |
@@ -165,9 +170,10 @@ If installing manually:
 | [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                 | Accessory slots (replaces Trinkets)             |
 | [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)         | Library (AmbientSounds)                         |
 | [OctoLib](https://www.curseforge.com/minecraft/mc-mods/shatterbyte-lib)           | Library (Immersive UI)                          |
-| [Fragmentum](https://www.curseforge.com/minecraft/mc-mods/fragmentum)             | Library (Obscure Tooltips, Loot Journal)        |
+| [Fragmentum](https://www.curseforge.com/minecraft/mc-mods/fragmentum)             | Library (Loot Journal)        |
 | [M.R.U](https://www.curseforge.com/minecraft/mc-mods/mru)                         | Library (Sounds)                                |
 | [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api)              | Library (Traveler's Titles, YUNG's Better mods) |
+| [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) | First-person animation library (First Person Model dependency) |
 
 ### Shaderpack
 
@@ -207,6 +213,8 @@ If installing manually:
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)          | 3D block & item textures for all rail types                               |
 | [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/nicos-3d-ladders)                 | 3D model replacement for ladders                                          |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)       | Enhanced 3D look for lanterns and chains                                  |
+| [Smooth Font 32x](https://www.curseforge.com/minecraft/texture-packs/smooth-font)            | Smooth 32x font replacement for cleaner text readability                  |
+| [Vervada's 3D Plants](https://modrinth.com/resourcepack/3d-plants)                            | 3D models for almost all plants — more immersive flora                    |
 
 
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
@@ -229,6 +237,8 @@ If installing manually:
 4. RAY's 3D Rails
 5. 3D Ladders
 6. Better Lanterns
+7. Smooth Font 32x
+8. Vervada's 3D Plants
 
 ### Configuration — Wave 0
 
@@ -287,10 +297,20 @@ seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (l
 | Data Pack                                                                                                             | Role                                  |
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | [BlazeandCave's Advancements Pack](https://www.curseforge.com/minecraft/customization/blazeandcaves-advancements-pack) (v1.17.2 for 1.21.x) | 900+ new advancements across 16 themed tabs — mining, building, farming, combat, exploration, brewing, redstone, enchantments, and more |
+| [Vanilla Refresh](https://modrinth.com/datapack/vanilla-refresh) (latest for 1.21.x)                 | 30+ QoL features: sitting, day counter, better armor stands, player heads, homing XP, and more |
 
-**BlazeandCave's Advancements Pack** adds 900+ milestones across 16 themed tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks collecting every wood variant, killing every mob type, discovering every biome, and reaching tier milestones.
+**BlazeandCave's Advancements Pack** adds 900+ milestones across 16 themed tabs — mining, building, farming, combat, exploration, brewing, redstone, enchantments, and more. It tracks collecting every wood variant, killing every mob type, discovering every biome, and reaching tier milestones.
 
-**Installation**: Place the `.zip` in `CurseForge\Minecraft\Instances\<instance-name>\datapacks\`. The pack will appear under the **"Data Packs"** button on the world creation screen — click the arrow to enable it. No commands, no OpenLoader, no global folder needed.
+**Vanilla Refresh** adds 30+ quality-of-life features as a datapack, all configurable via an in-game settings menu. Notable features for this pack: day counter with milestone animations (day 100, 200, etc. — fits the 200h+ runway), sitting anywhere (crouch + right-click with empty hand), better armor stands, player head drop on death, homing XP orbs, extra loyal tridents, and path sprinting.
+
+**Disable overlapping features** (by default, these are on — disable to avoid conflicts with existing mods):
+
+- **Mob Health Display** — already provided by **Jade**. To disable: open the Vanilla Refresh settings menu → find "Mob Health Display" → toggle OFF.
+- **Biome Discovery Subtitles** — already covered by **Traveler's Titles** visually. To disable: Vanilla Refresh settings → find "Subtitles on Biome Discovery" → toggle OFF.
+
+All other Vanilla Refresh features are unique to this pack and complement the existing mod set without conflict.
+
+**Installation**: Place datapack `.zip` files in `CurseForge\Minecraft\Instances\<instance-name>\datapacks\`. They appear under the **"Data Packs"** button on the world creation screen — click the arrow to enable them. No commands, no OpenLoader, no global folder needed.
 
 ---
 

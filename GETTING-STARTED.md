@@ -402,7 +402,7 @@ Better Third Person decouples your camera from your character in third-person vi
 
 #### Tooltip Overhaul
 
-Tooltip Overhaul redesigns the tooltip appearance — rounded corners, smoother background, and better text contrast. It works alongside Obscure Tooltips (animated visual effects) without conflict — Tooltip Overhaul handles the background/layout layer, Obscure Tooltips adds the animated frame/glow layer.
+Tooltip Overhaul redesigns the tooltip appearance — rounded corners, smoother background, better text contrast, scrollable tooltips, text wrapping, and 3D item previews on hover. Frames can be styled with glint, static, or gradient borders.
 
 **No config needed** — install and forget.
 
@@ -426,11 +426,11 @@ Adds 170+ new sound effects for UI interactions, menu clicks, item drops, eating
 
 ~~#### Tiny Item Animations~~ — Removed. Conflicts with Immersive UI (both hook into inventory item rendering). Use Immersive UI's built-in item particles instead.
 
-#### Subtle Effects
+#### Particular Reforged
 
-Adds ambient particles and subtle visual details: sparks from fire blocks, dust clouds when mobs/players hit the ground, slime trails from slimes, snoring Z particles from sleeping villagers, and more. Every particle effect can be individually toggled in Mod Menu → Subtle Effects → Config.
+Enhances Minecraft's ambience with hand-crafted visual effects: 3D water splashes, waterfall cascades, fireflies in warm biomes at dusk, falling leaves that ripple on water, cave dust proportional to depth, bubbles from underwater chests, rain ripples, and cake-eating particles. Every effect can be individually toggled in the config.
 
-**All features are toggleable** — if any effect feels excessive, disable it in the config.
+**All features are toggleable** — if any effect feels excessive, disable it in `config/particular.json`.
 
 #### Beautiful Enchanted Books [Mod Edition]
 
