@@ -218,7 +218,7 @@ Many mods add their own keybinds. Open **Options → Controls → Key Binds** an
 - **Open Backpack** (`B`) — Sophisticated Backpacks
 - **Zoom** (`C`) — Sodium
 - **Open Waystone Menu** — Waystones (unbound by default)
-- **Open Fullscreen Map** (`J`) — Xaero's World Map
+- **Open Fullscreen Map** (`J`) — JourneyMap
 
 ### Session Plan — Wave 0
 
@@ -267,7 +267,7 @@ AppleSkin adds a visual overlay to your hunger bar showing exactly how much hung
 
 #### Polymorph (Recipe Conflicts)
 
-When two mods have different recipes for the same item (common in a 129-mod pack), Polymorph lets you choose which recipe to use at the crafting table.
+When two mods have different recipes for the same item (common in a 133-mod pack), Polymorph lets you choose which recipe to use at the crafting table.
 
 **How it works**:
 
@@ -308,9 +308,36 @@ Equip a torch or glowstone block → it emits light around you. Works in the off
 
 Makes sound behave more realistically — muffled through walls, echo in caves, directional audio. Works automatically with any sound pack.
 
+#### JourneyMap
+
+JourneyMap replaces the minimap and full-screen world map with a single mod. It automatically maps every chunk you visit and displays it on both a corner minimap and a full-screen map.
+
+**Key features:**
+
+- **Minimap** — top-right corner of the screen shows your immediate surroundings with entity dots and cardinal directions
+- **Full-screen map** (`J`) — zoomable world map showing every explored chunk. Biome colors, terrain height, and structure markers
+- **Waypoints** — press `B` at your location to drop a waypoint, or set one on the map. Custom icons, colors, and groups
+- **Entity radar** — shows nearby mobs, animals, and players on the minimap
+- **Auto-mapping** — every chunk you walk through is permanently mapped. No manual save needed
+
+**JourneyMap Integration** shows your placed Waystones as icon markers on the JourneyMap, making them easy to locate from the full-screen view without placing manual waypoints.
+
+**Pro tip**: Press `J` to open the full-screen map. Right-click to set a temporary waypoint. Double-click a waypoint name to edit it. Use the minimap corner buttons to toggle radar and zoom levels.
+
 #### Mouse Tweaks
 
 Inventory management shortcuts: left-click drag across slots → distributes evenly. Right-click drag → places one per slot. Scroll wheel on a stack → moves one to another inventory.
+
+#### Inventory Essentials
+
+Adds essential inventory control enhancements that work alongside Mouse Tweaks without overlap:
+
+- **Ctrl+click** a single item from a stack — moves one item instead of the whole stack
+- **Shift+Ctrl+click** — moves all items of that type from one inventory to another
+- **Sort buttons** on chest and inventory GUIs — single-click sorting
+- Works with any inventory type (chests, barrels, backpacks, ME terminals)
+
+No config needed — install and forget. Pairs with Mouse Tweaks (drag-to-distribute) for complete inventory control.
 
 #### Curios API (Accessory Slots)
 
