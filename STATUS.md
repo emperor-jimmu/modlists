@@ -7,30 +7,31 @@
 - [x] Waves 0-7 fully documented with mod tables, dependency tables, and config sections
 - [x] Interdependency notes for every wave noting cross-mod interactions
 
-### Wave 0 — Foundation (~59 mods incl. deps)
+### Wave 0 — Foundation (~65 mods incl. deps)
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
-- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist, First Person Model, Presence Footsteps, Particular Reforged, Wakes Reforged
-- [x] Inventory/UI: JEI, Jade, Jade Addons, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Fancy Toasts, Tooltip Overhaul, Loot Journal, Reliable Advancements, Polymorph, Shulker Box Tooltip, Item Borders
+- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged
+- [x] Inventory/UI: JEI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Mouse Tweaks, Inventory Essentials, Fancy Toasts, Tooltip Overhaul, Loot Journal, Reliable Advancements, Polymorph, Shulker Box Tooltip, Item Borders
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
-- [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U
+- [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U, Balm
 - [x] Added YUNG's API to New Dependencies
 
-### Wave 1 — Tech, Colony & Chunk Loading (~19 mods)
+### Wave 1 — Tech, Colony & Chunk Loading (~22 mods)
 - [x] Core Tech: Create, Mekanism, AE2, Applied Mekanistics
 - [x] ~~Ores: Skniro's Nether & End Ores~~ (removed — unnecessary, unpopular mod)
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
 - [x] Infrastructure: Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib
 - [x] Mekanism Addons: Advanced Finders, Advanced Chimneys + ForgeEndertech dep
-- [x] Create Addons: Create Crafts & Additions, Steam 'n' Rails, TFMG, Mekanism TFMG Compat
+- [x] Create Addons: Create Crafts & Additions, Create: Power Grid, Steam 'n' Rails, TFMG, TFMG Energy Connector, Mekanism TFMG Compat
 - [x] Create Addons (new): Create: Gunsmithing + NTGL + GeckoLib + Framework deps, Create Ornithopter Glider
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 - [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
 
-### Wave 2 — Exploration (~23 mods)
+### Wave 2 — Exploration (~30 mods)
 - [x] Worldgen: Terralith, Tectonic, BetterEnd NeoForge, Moog's End Structures
 - [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
 - [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
 - [x] Navigation: Explorer's Compass
+- [x] Mobility: Immersive Aircraft, Small Ships
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
 
 ### Wave 2.5 — Schematic Building (2 mods)
@@ -180,6 +181,14 @@
 - [x] Spelunkery — too much overlap with YUNG's Better Caves + Mekanism tool progression
 - [x] Galosphere — Darker Depths chosen as the cave content mod instead; Galosphere gems are orphan content
 - [x] Environmental — biome conflict with Terralith
+
+### Added Mods (Jul 2026 batch 3)
+- [x] 3D Skin Layers (Wave 0 — Visual & Client QoL)
+- [x] Better Safe Bed (Wave 0 — Visual & Client QoL)
+- [x] Neo Bee Fix (Wave 4 — Food & Farming)
+- [x] Small Ships (Wave 2 — Mobility)
+- [x] Create: Power Grid (Wave 1 — Create Addons)
+- [x] TFMG Energy Connector (Wave 1 — Create Addons)
 
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
