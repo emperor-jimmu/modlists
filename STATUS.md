@@ -15,8 +15,8 @@
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U
 - [x] Added YUNG's API to New Dependencies
 
-### Wave 1 — Tech, Colony & Chunk Loading (~18 mods)
-- [x] Core Tech: Create, Mekanism, AE2
+### Wave 1 — Tech, Colony & Chunk Loading (~19 mods)
+- [x] Core Tech: Create, Mekanism, AE2, Applied Mekanistics
 - [x] ~~Ores: Skniro's Nether & End Ores~~ (removed — unnecessary, unpopular mod)
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
 - [x] Infrastructure: Chunk Loaders, SuperMartijn642's Config Lib, SuperMartijn642's Core Lib
@@ -24,6 +24,7 @@
 - [x] Create Addons: Create Crafts & Additions, Steam 'n' Rails, TFMG, Mekanism TFMG Compat
 - [x] Create Addons (new): Create: Gunsmithing + NTGL + GeckoLib + Framework deps, Create Ornithopter Glider
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
+- [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
 
 ### Wave 2 — Exploration (~23 mods)
 - [x] Worldgen: Terralith, Tectonic, BetterEnd NeoForge, Moog's End Structures
@@ -79,7 +80,7 @@
 
 ### Design choices
 - [x] Switched all mod links from Modrinth to CurseForge (July 2026)
-- [x] Updated installation instructions to use CurseForge App instead of Modrinth App
+- [x] Updated installation instructions to use GDLauncher instead of CurseForge App (July 2026)
 - [x] Removed TFMG-Stellaris Compatibility (not on CurseForge, Stellaris has native fuel system)
 - [x] Added Advanced Finders + Advanced Chimneys to Wave 1 (Mekanism addons for ore detection and factory smoke)
 - [x] Added ForgeEndertech as dependency for Advanced Finders and Advanced Chimneys
@@ -97,7 +98,7 @@
 - [x] AE2 channels kept on (logistics puzzle)
 - [x] Mekanism chunk loading disabled (delegated to Chunk Loaders mod)
 - [x] vanilla advancements + Fancy Toasts for progression guidance (no FTB Quests)
-- [x] Replaced BlazeandCave's Advancements Pack with v1.17.2, placed in global datapacks folder
+- [x] Replaced BlazeandCave's Advancements Pack with v1.17.2, placed in global datapacks folder (later removed — advancement bloat)
 - [x] Noisium → NoisiumForked (Noisium archived on 1.21.1; NoisiumForked is active fork, same functionality)
 - [x] Constant Music → The Immersive Music Mod (Constant Music forced 2min fade limit with 5 songs; Immersive Music Mod has 147 songs, biome/structure-aware, no dead air gap override)
 - [x] Chat Heads → removed (multiplayer-only feature, unnecessary for singleplayer pack)
@@ -127,11 +128,11 @@
 - [ ] Verify no mod conflicts
 - [ ] Cross-wave integration testing
 - [ ] Config tuning per mod
-
 ### Data Packs
-- [x] BlazeandCave's Advancements Pack selected (900+ advancements, v1.17.2, placed in %APPDATA%\.minecraft\datapacks\)
-- [x] Vanilla Refresh datapack added (30+ QoL features, placed in %APPDATA%\.minecraft\datapacks\)
-- [ ] No Creeper Grief data pack
+
+- [x] Day Counter mod added to Wave 0 — replaces typewriter day counter (data pack format was incompatible with 1.21.1)
+- [x] BlazeandCave's Advancements Pack removed (advancement bloat, conflicts with Fancy Toasts progression clarity)
+- [x] No Creeper Grief data pack
 
 ### Shaderpacks
 - [x] Complementary Unbound selected and documented in MODLIST-V3.md
@@ -163,7 +164,7 @@
 - [x] Item Borders (Wave 0 — Inventory & UI)
 - [x] Smooth Font 32x (Wave 0 — Texture Pack)
 - [x] Vervada's 3D Plants (Wave 0 — Texture Pack)
-- [x] Vanilla Refresh (Wave 0 — Data Pack)
+- [x] Vanilla Refresh → Typewriter Day Counter → Day Counter mod (Wave 0 — Visual & Client QoL)
 
 ### Removed Mods (Jul 2026 batch 2)
 - [x] Obscure Tooltips — removed (Tooltip Overhaul retained as sole tooltip mod)

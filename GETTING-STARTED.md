@@ -133,7 +133,7 @@ This wave makes Minecraft run well, look great, and feel comfortable. No major g
 
 ### Install
 
-This pack uses the **CurseForge App** as the mod manager and launcher. See [MODLIST.md](./MODLIST.md#curseforge-app) for setup instructions — create a 1.21.1 NeoForge instance and install all Wave 0 mods from their CurseForge pages. All mods in this pack are available on CurseForge (every link in MODLIST.md now points to CurseForge).
+This pack uses **GDLauncher** as the mod manager and launcher. See [MODLIST.md](./MODLIST.md#gdlauncher) for setup instructions — create a 1.21.1 NeoForge instance and install all Wave 0 mods through GDLauncher's Addons tab. All mods in this pack are available on CurseForge (every link in MODLIST.md points to CurseForge), and GDLauncher installs from CurseForge directly.
 
 See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full mod list.
 
@@ -199,7 +199,7 @@ Six optional resource packs enhance vanilla visuals and UI:
 | [3D Ladders](https://www.curseforge.com/minecraft/texture-packs/nicos-3d-ladders)           | 3D model replacement for ladders                                          |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)       | Enhanced 3D look for lanterns and chains                                  |
 
-**Installation**: Install via CurseForge App. Load order (top = highest priority):
+**Installation**: Install via GDLauncher — drop `.zip` files into the instance's `resourcepacks/` folder. Load order (top = highest priority):
 
 1. Fresh Animations
 2. Alacrity
@@ -326,7 +326,7 @@ No configuration needed. Install and forget.
 
 This data pack adds **1000+ new advancements** across 16 tabs — mining, building, farming, combat, exploration, redstone, brewing, enchantments, and more. It tracks milestones like mining every ore type, collecting every wood variant, killing every mob, and discovering every biome.
 
-**Installation**: Install via CurseForge App. In-game, run `/datapack enable "blazeandcave/advancements"`. Works alongside Reliable Advancements (UI) and Fancy Toasts (popups) without conflict.
+**Installation**: Install via GDLauncher's Addons tab (from CurseForge), or download the `.zip` and place it in the world's `datapacks/` folder. In-game, run `/datapack enable "blazeandcave/advancements"`. Works alongside Reliable Advancements (UI) and Fancy Toasts (popups) without conflict.
 
 **What it adds**: Thousands of hours of optional side goals. Everything is tracked through the vanilla advancement system — open with `L` to browse the 16 tabs and see what's available.
 
