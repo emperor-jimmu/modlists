@@ -40,6 +40,17 @@ How much friction, structure, and world texture sits between major locations.
 
 ---
 
+## Horse Travel → separator: `World Feel - Timescale & Travel`
+
+Horse riding overhaul and mounted NPC transport — making horse travel feel modern and functional rather than the vanilla stiff-silhouette experience.
+
+| Mod | Description | Notes |
+|-----|-------------|-------|
+| [HorsePower - Modernized Horse Riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335) | Total horse riding overhaul — directional animations, in-place turning, follow-up attacks, sliding fix, ragdoll. | Requires SKSE, Address Library, Animation Motion Revolution, Pandora/Nemesis, TDM. Compatible with Convenient Horses (load HorsePower below). |
+| [RSE - Shoulder Or Saddle](https://www.nexusmods.com/skyrimspecialedition/mods/170232) | Pick up NPCs/corpses, carry on shoulder, secure to horse saddle for transport. RDR2-style dead-or-alive bounty hauling. | Requires OAR, Pandora/Nemesis. Compatible with all horse mods. Custom followers supported. |
+
+---
+
 ## Encounter Spacing And Wilderness Feel → separator: `World Feel - Nights & Wildlife`
 
 How busy, calm, or deliberately spaced wilderness travel feels between destinations.

@@ -106,6 +106,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 |--------------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------|
 | Skyfall's Sleeping Hist Tree Overhaul                                    | Riften Sleeping Hist tree replacement. Mesh/texture only, no ESP. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116792) |
 | TMD The Rift Leaves                                                      | 3D leaf particle replacer for The Rift. No ESP.                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111461) |
+| [Immersive 3D Leaves](https://www.nexusmods.com/skyrimspecialedition/mods/170242) | Replaces Riften's flat 2D leaves with 3D models. By MaximusTheWizard. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/170242) |
 | [Bigger trees](https://www.nexusmods.com/skyrimspecialedition/mods/5281) | Optional tree size multiplier.                                    |                                                                     |
 
 ### Environment-Plant Extras (visual polish, not baseline)

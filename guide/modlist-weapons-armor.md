@@ -100,6 +100,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [Elven Chainmail (SSE Port)](https://www.nexusmods.com/skyrimspecialedition/mods/14978) | Female-only elven light armor set + scimitar. Found in Northwatch Keep. | LE port by JWGaming75. Requires CBBE. Last updated Jan 2018 — verify 1.6.1170. |
 | [HD Falmer Elven Chainmail Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/35669) | HD retexture for Elven Chainmail. | By trion77/Vindition. Install over Elven Chainmail base mod. |
 | [Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284) | Replaces vanilla female vampire armor (3 color variants). CBBE 3BA, 811 endorsements. | Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)). |
+| [Faction Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/169281) | All-in-one retexture of Dawnguard, Vampire, Thieves Guild, Nightingale, Dark Brotherhood, Forsworn, Wolf armors/weapons. Optional mesh additions, color variants (Shrouded). | By Xavbio. Replaces hidden mod 96855. Respects original designs with refined detail and grounded look. Covers both armor and weapons. |
 
 ### Risks & Compatibility
 

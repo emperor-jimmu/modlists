@@ -155,6 +155,7 @@ Travel-stop identity, small community presence, memorable rural pauses.
 | Skyrim Underground SSE     | Larger subterranean layer.                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131)    |
 | Icy Dungeons Pack          | Icy retexture of nordic crypt dungeons. Visual-only, no record edits. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136080) |
 | [Ancient Falmer Ruins (Snow Elf Dungeons)](https://www.nexusmods.com/skyrimspecialedition/mods/126428) | 7+ Ancient Falmer dungeon/ruin locations — temples, cities, vaults across Skyrim. Hand-authored, lore-friendly. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126428) |
+| [Embershard Mine - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/168106) | Vanilla-plus overhaul of Embershard Mine — new paths, clutter, bandit sandbox routines, more lived-in feel. No radiant quest conflicts. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168106) |
 ### Navmesh Support
 
 | Mod                                          | Description                                                                                                                         | Nexus                                                               |

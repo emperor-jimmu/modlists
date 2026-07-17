@@ -2266,6 +2266,9 @@ Flora is the ground-level readability layer between terrain materials and tree c
   [TMD The Rift Leaves],
   [3D leaf particle replacer for The Rift. No ESP.],
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111461)],
+  [[Immersive 3D Leaves](https://www.nexusmods.com/skyrimspecialedition/mods/170242)],
+  [Replaces Riften's flat 2D leaves with 3D models. By MaximusTheWizard.],
+  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/170242)],
   [[Bigger trees](https://www.nexusmods.com/skyrimspecialedition/mods/5281)],
   [Optional tree size multiplier.],
   [],
@@ -6324,6 +6327,27 @@ How much friction, structure, and world texture sits between major locations.
 
 ---
 
+== Horse Travel → separator: World Feel - Timescale & Travel
+<immersive-scale-and-world-feel-horse-travel-separator-world-feel-timescale--travel>
+
+Horse riding overhaul and mounted NPC transport — making horse travel feel modern and functional rather than the vanilla stiff-silhouette experience.
+
+#table(
+  columns: 3,
+  fill: (luma(240), none),
+  [*Mod*],
+  [*Description*],
+  [*Notes*],
+  [[HorsePower - Modernized Horse Riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335)],
+  [Total horse riding overhaul — directional animations, in-place turning, follow-up attacks, sliding fix, ragdoll.],
+  [Requires SKSE, Address Library, Animation Motion Revolution, Pandora/Nemesis, TDM. Compatible with Convenient Horses (load HorsePower below).],
+  [[RSE - Shoulder Or Saddle](https://www.nexusmods.com/skyrimspecialedition/mods/170232)],
+  [Pick up NPCs/corpses, carry on shoulder, secure to horse saddle for transport. RDR2-style dead-or-alive bounty hauling.],
+  [Requires OAR, Pandora/Nemesis. Compatible with all horse mods. Custom followers supported.],
+)
+
+---
+
 == Encounter Spacing And Wilderness Feel → separator: World Feel - Nights & Wildlife
 <immersive-scale-and-world-feel-encounter-spacing-and-wilderness-feel-separator-world-feel-nights--wildlife>
 
@@ -6876,6 +6900,9 @@ Travel-stop identity, small community presence, memorable rural pauses.
   [[Ancient Falmer Ruins (Snow Elf Dungeons)](https://www.nexusmods.com/skyrimspecialedition/mods/126428)],
   [7+ Ancient Falmer dungeon/ruin locations — temples, cities, vaults across Skyrim. Hand-authored, lore-friendly.],
   [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126428)],
+  [[Embershard Mine - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/168106)],
+  [Vanilla-plus overhaul of Embershard Mine — new paths, clutter, bandit sandbox routines, more lived-in feel. No radiant quest conflicts.],
+  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168106)],
 )
 === Navmesh Support
 <world-content-navmesh-support>
@@ -8575,6 +8602,9 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
   [[Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284)],
   [Replaces vanilla female vampire armor (3 color variants). CBBE 3BA, 811 endorsements.],
   [Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)).],
+  [[Faction Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/169281)],
+  [All-in-one retexture of Dawnguard, Vampire, Thieves Guild, Nightingale, Dark Brotherhood, Forsworn, Wolf armors/weapons. Optional mesh additions, color variants (Shrouded).],
+  [By Xavbio. Replaces hidden mod 96855. Respects original designs with refined detail and grounded look. Covers both armor and weapons.],
 )
 
 === Risks & Compatibility
