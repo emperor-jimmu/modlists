@@ -20,7 +20,7 @@ java -version
 Recommended JVM arguments (for GDLauncher → right-click instance → Settings → Java & Memory → JVM Arguments):
 
 ```
--XX:+UseZGC -XX:+ZGenerational -Xms8G -Xmx8G
+-XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:SoftMaxHeapSize=12G -Xms8G -Xmx8G
 ```
 
 | System RAM | Recommended allocation |
@@ -29,7 +29,7 @@ Recommended JVM arguments (for GDLauncher → right-click instance → Settings 
 | 32 GB      | `-Xms22G -Xmx22G`      |
 | 64 GB      | `-Xms48G -Xmx48G`      |
 
-> **Note**: ZGC (Z Garbage Collector) with generational mode is the recommended GC for Java 21 with NeoForge. It provides consistently low latency (sub-millisecond pause times) and handles the large heap sizes common with modded Minecraft better than Shenandoah or G1GC. The Adoptium Temurin JDK 21 includes ZGC — no special Java build needed. If you encounter issues, you may also add `-XX:+AlwaysPreTouch` for pre-initialized memory pages.
+> **Note**: ZGC (Z Garbage Collector) with generational mode is the recommended GC for Java 21 with NeoForge. It provides consistently low latency (sub-millisecond pause times) and handles the large heap sizes common with modded Minecraft better than Shenandoah or G1GC. The Adoptium Temurin JDK 21 includes ZGC — no special Java build needed. `-XX:+AlwaysPreTouch` pre-initializes all memory pages at startup, preventing runtime page-fault stalls. `-XX:+PerfDisableSharedMem` disables synchronous `hsperfdata` file writes, removing a minor source of I/O-induced latency. `-XX:SoftMaxHeapSize=12G` tells ZGC to target ~12G heap usage and GC more aggressively to stay near that level, while allowing bursts above it up to `-Xmx`. For this to take effect, `-Xmx` must be set higher than `-Xms`. The baseline uses equal values for simplicity; on a 64 GB machine you may want e.g. `-Xms12G -Xmx24G` instead to let SoftMaxHeapSize work.
 
 ### GDLauncher
 
