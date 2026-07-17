@@ -150,17 +150,25 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 | Mod                                                                                         | Type        | Dial       | Notes                                                                          |
 |---------------------------------------------------------------------------------------------|-------------|------------|--------------------------------------------------------------------------------|
 | [Sacrosanct — Vampires of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/3928) | Baseline    | #1, #4     | Vampirism progression, 4 feeding tiers, blood-power by age. 133K endorsements. |
+| [Dark Envoy — Vampire Powers](https://www.nexusmods.com/skyrimspecialedition/mods/16425)    | Add-on      | #1, #4     | Small questline + new VL powers (Bat Form flight, Bat Teleport, Gate of Coldharbour). 2,157 endorsements. Author-tested with Sacrosanct. |
+| [Vampire Lord Renewed (VL Framework) ESL](https://www.nexusmods.com/skyrimspecialedition/mods/87166) | Add-on | #1, #4     | Humanoid VL form, inventory/spell menu access in VL form, loot/activate enabled. Explicitly supports Sacrosanct. Fully ESL-flagged. v6.4.11 actively maintained. |
+| [Vampire Lord Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/89538)           | Add-on      | all        | Visual-only VL replacer — 8K skin, armors, bigger wings, glowing eyes. Compatible with all gameplay overhauls. |
+| [Just Bite — DAK Patch for Sacrosanct](https://www.nexusmods.com/skyrimspecialedition/mods/122597) | Add-on | #1, #4     | Replaces Sacrosanct feeding pop-up menus with Dynamic Activation Key single-button feed/drain. Better gamepad/third-person UX. Requires DAK (96273). |
 | [Growl — Werebeasts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/14645)   | Baseline    | #1, #4     | Beast-form progression, perks, 5 werebear varieties.                           |
 | [Thunderchild — Epic Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/1460)      | Baseline    | #1, #2, #4 | 19 new shouts (57 words), meditation mechanics, boss encounters.               |
 | Discipline-first route                                                                      | Alternative | #3         | Vanilla vampire/werewolf/shout systems.                                        |
 
 ### Risks & Compatibility
 
-- All three are EnaiSiaion, designed to work with `Ordinator`, `Andromeda`, `Apocalypse`, and the broader EnaiRim ecosystem by design.
+- All three core overhauls are EnaiSiaion, designed to work with `Ordinator`, `Andromeda`, `Apocalypse`, and the broader EnaiRim ecosystem by design.
 - `Sacrosanct` and `Growl` interact with `Heart of the Beast` (werewolf transformation audio) in section 10. Load transformation-sfx after transformation-system mods.
 - `Thunderchild`'s new shouts interact with shout-audio mods (`Airgetlam - Shouts SFX`) from section 10. Verify sfx replacements apply to Thunderchild's shouts, not just vanilla.
 - Vampire feeding interacts with the crime-and-reputation baseline (`Skyrim Reputation` from → `Followers & Reputation`). Test feeding in cities.
 - `Thunderchild`'s boss encounters may overlap with world-content mods from → `World Content`.
+- `Dark Envoy` is visual- and gameplay-only; verified by author against Sacrosanct with no conflicts. Powers stand on their own as a complementary layer.
+- `Vampire Lord Renewed` touches VL transformation scripts and race records — install after Sacrosanct so its patches detect the correct overhaul. Pack 01 (MCM) is required; Pack 02 (NPC humanoid VL) is optional. Requires MCM Helper, PO3 Papyrus Extender, PapyrusUtil.
+- `Vampire Lord Overhaul` is mesh/texture only — no ESP records to conflict. Safe to install at any point.
+- `Just Bite` modifies Sacrosanct's feeding perk — install after Sacrosanct and DAK. Safe to update mid-save per author.
 
 ---
 

@@ -99,6 +99,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [Callisto HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/134752) | Female HDT-SMP heavy armor. Craftable, ESL-flagged. | Requires FSMP. Xtudo patches ([134900](https://www.nexusmods.com/skyrimspecialedition/mods/134900)) add SPID, Ancient Falmer replacer, LOTD, beast-race support. HIMBO male addon ([134789](https://www.nexusmods.com/skyrimspecialedition/mods/134789)). |
 | [Elven Chainmail (SSE Port)](https://www.nexusmods.com/skyrimspecialedition/mods/14978) | Female-only elven light armor set + scimitar. Found in Northwatch Keep. | LE port by JWGaming75. Requires CBBE. Last updated Jan 2018 — verify 1.6.1170. |
 | [HD Falmer Elven Chainmail Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/35669) | HD retexture for Elven Chainmail. | By trion77/Vindition. Install over Elven Chainmail base mod. |
+| [Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284) | Replaces vanilla female vampire armor (3 color variants). CBBE 3BA, 811 endorsements. | Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)). |
 
 ### Risks & Compatibility
 

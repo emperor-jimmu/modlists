@@ -11,3 +11,4 @@
 - **Elven Chainmail** (mod 14978) — Verify 1.6.1170 compatibility. LE-era port last updated Jan 2018. May need mesh/texture porting work. Alternatives: Archaic Elven Armaments (152679).
 - **Frozen in Time** — Verify no DynDOLOD or navmesh conflicts with Ancient Falmer Ruins if both are adopted. Check LoTD display patch availability.
 - **Occiglacies** — Verify LoTD display patch (mod 64117) compatibility with current LoTD version.
+- **Vampire follower evaluation** — Evaluate 4 vampire followers for NPCs section: Silas (Bosmer vampire, ESL, uses player body/skins), Koemia (custom-voiced, DBVO patch, mod 101405), Voira (Pandorable's, 1088 end., mod 42708), Dumitra (Altmer custom-voiced 600+ lines, mod 147787).
