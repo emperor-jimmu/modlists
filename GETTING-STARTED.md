@@ -713,7 +713,7 @@ TFMG adds aluminum as a new metal. **Bauxite ore** generates in the Overworld (t
 - TFMG is a **Wave 1 addition** — start exploring oil after you have basic Create (water wheel + hand crank) and basic Mekanism (Enrichment Chamber)
 - The Distillation Tower requires brass-tier Create components (brass casing, brass funnels)
 - Diesel engines are a mid-to-late game power upgrade — they replace/supplement water wheels and windmills
-- **TFMG Energy Connector** (installed alongside TFMG) bridges TFMG's voltage-based electricity to Forge Energy (FE) and AE2 energy — wire your diesel generators into your ME system or Mekanism induction matrix
+- **TFMG Energy Converter** (installed alongside TFMG) bridges TFMG's voltage-based electricity to Forge Energy (FE) and AE2 energy — wire your diesel generators into your ME system or Mekanism induction matrix
 - Mekanism TFMG Compatibility (installed alongside TFMG) resolves overlapping recipes between TFMG and Mekanism — see the config section below for details
 
 ---
