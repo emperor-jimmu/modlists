@@ -99,6 +99,7 @@ If installing manually:
 | [M.R.U](https://www.curseforge.com/minecraft/mc-mods/mru)                                   | Library (Sounds)                                               |
 | [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api)                        | Library (Traveler's Titles, YUNG's Better mods)                |
 | [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) | First-person animation library (First Person Model dependency) |
+| [Balm](https://www.curseforge.com/minecraft/mc-mods/balm)                                   | Multi-loader library (Inventory Essentials)                   |
 
 > **Note**: GDLauncher installs dependencies **automatically** when you install a mod through its Addons tab. You do not need to manually download or install any dependency entries in this document — just install the mods themselves and GDLauncher pulls in what's needed.
 
@@ -185,6 +186,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [JourneyMap Integration](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) | Shows Waystones as icons on JourneyMap                             |
 | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                   |
 | [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                   |
+| [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)   | Drag-to-transfer, single-item moves, sorting     |
 | [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups            |
 | [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)       | Preview shulker box contents on hover            |
 | [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                   | Colored borders on items based on rarity         |
@@ -841,7 +843,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                      |
 |----------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 53      | 8      | 61      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                                                                                  |
+| Wave 0 — Foundation        | 54      | 9      | 63      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                                                                                  |
 | Wave 1 — Tech              | 16      | 4      | 20      | Create + 10 addons (incl. Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                              |
 | Wave 2 — Exploration       | 23      | 6      | 29      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft                                                                                             |
@@ -852,4 +854,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                     |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                                                       |
 | Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                  |
-| **Total**                  | **132** | **40** | **172** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                              |
+| **Total**                  | **133** | **41** | **174** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                              |
