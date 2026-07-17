@@ -132,6 +132,8 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [Extended NPC Dialogue Hub](https://www.nexusmods.com/skyrimspecialedition/mods/179341) | Central dialogue framework  |                      |
 | [Small Talk](https://www.nexusmods.com/skyrimspecialedition/mods/168228)                | NPC-to-NPC ambient dialogue | SKSE plugin, no ESP. |
 | [Companions Dialogue Bundle](https://www.nexusmods.com/skyrimspecialedition/mods/93592) | Expanded Companion faction dialogue bundle.       | Alternative |
+| [Snow Elf Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/155222) | Race-aware dialogue for Snow Elf PCs across quests — Helgen, TG, DB, Dawnguard. | AI-voiced (ElevenLabs). Supports The Ancient Falmer, Lost Races of Nirn, True Snow Elf Race. Requires SKSE, Address Library, KID. |
+| [Custom Race Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/169521) | Consolidated race-dialogue mod combining Snow Elf, Dwemer, Ayleid, Maormer, Tsaesci. | Same author as Snow Elf Dialogue. Incompatible with Race Compatibility Dialogue SSE. |
 
 ---
 
@@ -169,6 +171,46 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 ### Additional Mods
 
 - [Keep Up — Follower Locomotion Fix](https://www.nexusmods.com/skyrimspecialedition/mods/169808) — Alternative. Prevents followers from getting stuck behind the player. Evaluate after the follower framework baseline is locked.
+
+---
+
+## Playable Race Additions → separator: `NPCs - Appearance`
+
+Playable race mods enabling new character options at game start. Snow Elf (Ancient Falmer) race mods are the primary focus — adding the option to play as the last surviving Snow Elf in Skyrim.
+
+### Race Framework
+
+| Mod | Notes |
+|-----|-------|
+| [RaceCompatibility for Skyrim Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/26869) | Required by several custom race mods. |
+| [Race Compatibility SKSE (RCS)](https://www.nexusmods.com/skyrimspecialedition/mods/122592) | Modern replacement for RaceCompatibility — no ESP/ESM file. Required by Lost Races of Nirn. Do not use alongside RaceCompatibility (ESP). |
+
+### Snow Elf Race Options
+
+| Mod | Type | Notes |
+|-----|------|-------|
+| [The Ancient Falmer - A Snow Elf Race SE](https://www.nexusmods.com/skyrimspecialedition/mods/16854) | Baseline | Most comprehensive snow elf race mod. Adds Snow Elf race, Gelebor/Vyrthur overhaul, optional followers (Valrysa, Ashian), craftable Ancient Falmer weapons. 2,752 endorsements. Requires RaceCompatibility. Last updated Oct 2023. |
+| [Lost Races of Nirn](https://www.nexusmods.com/skyrimspecialedition/mods/69467) | Alternative | Modular race pack: Ayleid, Dwemer, Maormer, Snow Elf, Tsaesci. Separate plugins per race via FOMOD. Requires RCS (no-ESP framework). HPH Addon available ([mod 147619](https://www.nexusmods.com/skyrimspecialedition/mods/147619)). |
+| [True Snow Elf Race](https://www.nexusmods.com/skyrimspecialedition/mods/7880) | Alternative | Vanilla-faithful standalone Snow Elf race. Last updated 2018. Does not require RaceCompatibility — standalone BSA. |
+
+### Recommended Companions
+
+| Mod | For | Notes |
+|-----|-----|-------|
+| [Frosty Snow Elf Skin Renewal](https://www.nexusmods.com/skyrimspecialedition/mods/16854?tab=files) | The Ancient Falmer | Hyperborean BnP skin for Ancient Falmer. Download from the Ancient Falmer Patch Center. Core mod per Ancient Falmer requirements. |
+| [High Poly Head For Custom Races](https://www.nexusmods.com/skyrimspecialedition/mods/43098) | The Ancient Falmer | Patches High Poly Head to work with 30+ custom races including The Ancient Falmer. 2,306 endorsements. Requires High Poly Head (off-site, vectorplexis) and RaceMenu. |
+| [Lost Races of Nirn - High Poly Head Addon](https://www.nexusmods.com/skyrimspecialedition/mods/147619) | Lost Races of Nirn | HPH patches for Lost Races of Nirn 3.0+. ESP-FE. Includes Dwemer, Maormer, Snow Elf, Tsaesci. |
+| [Lost Races of Nirn - Female Skin Textures](https://www.nexusmods.com/skyrimspecialedition/mods/90443) | Lost Races of Nirn | High-quality female textures based on Reverie Skin. UNP/CBBE, 4K-2K, ESP-FE. Fixes neck-seam issues with custom body textures. |
+
+### Risks & Compatibility
+
+- **Ancient Falmer vs Lost Races of Nirn:** These are competing race frameworks. The Ancient Falmer is more comprehensive (followers, spells, leveled-list weapons) but has a larger patch footprint (RaceCompatibility, Patch Center). Lost Races of Nirn is modular, uses the lighter RCS framework, and has better HPH support. **Evaluate which to adopt as baseline** — running both is risky.
+- **RaceCompatibility vs RCS:** Do not use both simultaneously. RaceCompatibility (ESP/ESM) is required by The Ancient Falmer. RCS (no ESP) is required by Lost Races of Nirn. This is a hard fork — pick one race framework.
+- **Race-aware dialogue:** Both race mods support [Snow Elf Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/155222) — see NPC Dialogue Expansions section.
+- **Alternate start synergy:** The Surviving Falmer ([mod 131974](https://www.nexusmods.com/skyrimspecialedition/mods/131974)) and alternate-start frameworks (LAL, Alternate Perspective) provide Snow Elf-specific starting scenarios.
+- **Third-person/gamepad:** Race mods are character-creation content — no third-person impact beyond face/body visuals at character gen.
+- **Perk/Combat overhauls:** The Ancient Falmer adds custom sunfire spells and racial abilities. Verify compatibility with the chosen perk overhaul (Simonrim or other) in → `Magic & Perks`.
+- **BodySlide:** Followers from The Ancient Falmer (Valrysa, Ashian) require BodySlide builds for the chosen body mod (CBBE/3BA). Factor into → `Performance` BodySlide rebuild cycles.
 
 ---
 

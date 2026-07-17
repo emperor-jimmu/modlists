@@ -154,7 +154,7 @@ Travel-stop identity, small community presence, memorable rural pauses.
 | Children of the North Wind | Bespoke Nordic architecture at 9 locations.                           | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147701) |
 | Skyrim Underground SSE     | Larger subterranean layer.                                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131)    |
 | Icy Dungeons Pack          | Icy retexture of nordic crypt dungeons. Visual-only, no record edits. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136080) |
-
+| [Ancient Falmer Ruins (Snow Elf Dungeons)](https://www.nexusmods.com/skyrimspecialedition/mods/126428) | 7+ Ancient Falmer dungeon/ruin locations — temples, cities, vaults across Skyrim. Hand-authored, lore-friendly. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126428) |
 ### Navmesh Support
 
 | Mod                                          | Description                                                                                                                         | Nexus                                                               |
@@ -364,6 +364,7 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 |-------------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | The Forgotten City      | Locked. Most decorated Skyrim quest mod. Self-contained murder-mystery, LoTD integration. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1179)   |
 | Mysteries of the Dwemer | Dwemer-theme quest mod.                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114863) |
+| [Frozen in Time - Definitely Not Another Snow Elf Waifu Mod](https://www.nexusmods.com/skyrimspecialedition/mods/39732) | Quest to reanimate an ancient Snow Elf warrior. 2-part quest, 2 dungeons, custom assets, portable player home. 2,833 endorsements. | AI-voiced (ElevenLabs). Vanilla/UUNP/CBBE body options. No AFT during quest. |
 
 ### Alternatives
 
@@ -437,3 +438,4 @@ All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)
 | Finding Derkeethus Duplicate FormID Fix                             | Fix for duplicate FormID conflict.                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46391)  |
 | Jiub's Opus                                                         | Quest to find Jiub's journal pages across Solstheim.                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17056)  |
 | Informed Mail Delivery                                              | Quest-aware mail delivery with timed courier dispatches.                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66339)  |
+| [The Surviving Falmer - An Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/131974) | Alternate start addon for Snow Elf player characters + small player home. Supports LAL and Alternate Perspective. | Requires a Snow Elf race mod (The Ancient Falmer, Lost Races of Nirn, or similar). |

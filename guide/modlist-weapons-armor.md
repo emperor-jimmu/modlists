@@ -25,8 +25,9 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 | [Legendary Skyrim Crossbows and Bows](https://www.nexusmods.com/skyrimspecialedition/mods/8273) | Alternative | #1, #4         | Specialty named/unique crossbows and bows. Lock if ranged is a viable build path. |
 | [Immersive Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/16788)                  | Alternative | #1, #4         | 230+ weapons. Unmaintained since Apr 2018. Prefer the SkyPatched variant below.    |
 | [Immersive Weapons SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/142044)      | Alternative | #1, #4         | SkyPatched forward-port resolving record-level conflicts. Preferred over original. |
-| [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)                         | Alternative | all            | Unique moon-themed weapon with quest content.                                     |
+| [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)      | Alternative | all            | Unique moon-themed weapon with quest content.                                     |
 | [Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148)                    | Alternative | all            | Unique staff / Staff of Magnus replacer with expanded mechanics.                  |
+| [Occiglacies - Ancient Falmer Blade](https://www.nexusmods.com/skyrimspecialedition/mods/35637) | Alternative | #1, #4         | Ancient Falmer greatsword/sword. Switchable 1H/2H at Skyforge. 1,471 endorsements. Found in Forgotten Vale area. LoTD display patch available. |
 | Discipline-first route                                                                          | Alternative | #3             | Vanilla weapons only.                                                             |
 
 ### Risks & Compatibility
@@ -95,6 +96,9 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [Legendary Alpha Shields 2](https://www.nexusmods.com/skyrimspecialedition/mods/79264) | Additional shield variety pack. | SPID for NPCs ([80110](https://www.nexusmods.com/skyrimspecialedition/mods/80110)), Xtudo patches ([79617](https://www.nexusmods.com/skyrimspecialedition/mods/79617)). |
 | [JS Unique Utopia SE - Rings](https://www.nexusmods.com/skyrimspecialedition/mods/102226) | Unique ring mesh/texture replacer. | |
 | [Land of Vominheim - Unique Rewards by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/102839) | Unique rewards patch for Land of Vominheim. | Install if Vominheim is adopted. |
+| [Callisto HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/134752) | Female HDT-SMP heavy armor. Craftable, ESL-flagged. | Requires FSMP. Xtudo patches ([134900](https://www.nexusmods.com/skyrimspecialedition/mods/134900)) add SPID, Ancient Falmer replacer, LOTD, beast-race support. HIMBO male addon ([134789](https://www.nexusmods.com/skyrimspecialedition/mods/134789)). |
+| [Elven Chainmail (SSE Port)](https://www.nexusmods.com/skyrimspecialedition/mods/14978) | Female-only elven light armor set + scimitar. Found in Northwatch Keep. | LE port by JWGaming75. Requires CBBE. Last updated Jan 2018 — verify 1.6.1170. |
+| [HD Falmer Elven Chainmail Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/35669) | HD retexture for Elven Chainmail. | By trion77/Vindition. Install over Elven Chainmail base mod. |
 
 ### Risks & Compatibility
 
