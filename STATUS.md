@@ -151,6 +151,9 @@
 - [x] Cut Through (Wave 5 — Combat)
 - [x] Nullscape re-added as End data pack (Wave 2 — End Overhaul)
 
+### Fixed Crashes (Jul 2026)
+- [x] Darker Depths 2.1.4 crash at startup — missing TerraBlender (worldgen API). Darker Depths 2.1+ requires TerraBlender or Biolith to register its cave biomes. Added TerraBlender NeoForge 1.21.1-4.1.0.8 as a required dependency.
+
 ### Added Mods (Jul 2026 continued)
 - [x] Forgematica + MaFgLib dep (Wave 2.5 — Schematic Building)
 - [x] Cherished Worlds v10.1.1 (Wave 0 — Visual & Client QoL)

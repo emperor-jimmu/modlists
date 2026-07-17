@@ -440,10 +440,13 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Underground & Ocean
 
-| Mod                                                                             | Role                                                                              |
-|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths)     | Underground expansion — 3 new cave biomes, mobs, Forsaken Bronze, Living Crystals |
-| [Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic) | Ocean expansion — Thrasher mob, Ocean Ravines, Prismarine Coral, renewable sand   |
+| Mod                                                                                                               | Role                                                                              |
+|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [TerraBlender](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge) (NeoForge) **— REQUIRED**      | Worldgen biome library — required by Darker Depths 2.1+ for biome placement       |
+| [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths)                                       | Underground expansion — 3 new cave biomes, mobs, Forsaken Bronze, Living Crystals |
+| [Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic)                                   | Ocean expansion — Thrasher mob, Ocean Ravines, Prismarine Coral, renewable sand   |
+
+**Interdependency note — Darker Depths + TerraBlender**: Darker Depths 2.1+ requires a worldgen API to register its cave biomes. Either **TerraBlender** (NeoForge) or **Biolith** must be installed. TerraBlender NeoForge is the recommended choice (available for 1.21.1 on both CurseForge and Modrinth). Without it, Darker Depths crashes on startup with `Missing Worldgen API! Install TerraBlender or Biolith.`
 
 **Interdependency note — Darker Depths + YUNG's Better Caves**: Darker Depths adds its own cave biomes (Molten Cavern, Sandy Catacombs, Crystal Cavern) that generate alongside YUNG's Better Caves' enlarged cave systems. Darker Depths biomes replace vanilla cave sections with themed variants, while YUNG's Better Caves changes the shape and connectivity of caves — they layer without direct conflict.
 
