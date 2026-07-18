@@ -8,8 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Performance Budgeting → separator: `Performance - Strategy`
-
+## Performance Budgeting
 How `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy.
 
 ### Baseline
@@ -29,8 +28,7 @@ How `Elder Wilds` measures performance, identifies bottlenecks, and keeps genera
 
 ---
 
-## VRAM-Heavy Mod Review → separator: `Performance - Strategy`
-
+## VRAM-Heavy Mod Review
 Texture resolution, PBR/parallax adoption, heavy shader features, and world coverage drive VRAM pressure. Spend texture budget where visible in normal play.
 
 ### Baseline
@@ -49,8 +47,7 @@ Texture resolution, PBR/parallax adoption, heavy shader features, and world cove
 
 ---
 
-## CPU-Heavy Script Review → separator: `Performance - Strategy`
-
+## CPU-Heavy Script Review
 CPU and Papyrus pressure comes from layered systems, NPC density, polling scripts, and constant background updates.
 
 ### Baseline

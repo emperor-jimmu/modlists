@@ -6,8 +6,7 @@ All items in this section belong to the `Legacy of the Dragonborn` MO2 separator
 
 ---
 
-## Core Mod Baseline → separator: `Legacy of the Dragonborn`
-
+## Core Mod Baseline
 Treated as a foundational content pillar for the final list, not a late optional extra.
 
 | Mod                                                                                                                                                                          | Type     | Notes                                                         |
@@ -22,8 +21,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-## Supported Content → separator: `Legacy of the Dragonborn`
-
+## Supported Content
 ### Quest Mods With Strong LoTD Integration
 
 - **VIGILANT** — Multiple display cases in Hall of Oddities.
@@ -68,8 +66,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-## Patch Strategy → separator: `Legacy of the Dragonborn`
-
+## Patch Strategy
 - Use **LoTD Patches (Official)** as default patch source.
 - Add third-party patches only when official collection doesn't cover a finalized mod.
 - Do not pre-install broad patch bundles for hypothetical mods.
@@ -84,8 +81,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-## Submods And Quality-Of-Life → separator: `Legacy of the Dragonborn`
-
+## Submods And Quality-Of-Life
 ### Sorting And Inventory
 
 - **Legacy Safehouse Plus** — Expanded safehouse with additional crafting stations. Check v6.10+ compatibility.

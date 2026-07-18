@@ -8,8 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Survival Systems → separator: `Expanded Systems - Survival & Needs`
-
+## Survival Systems
 How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, weather, disease, and wilderness friction for roleplay and travel texture, or a heavier survival framework as a central system. This section owns the baseline survival direction; → `Survival & Combat` owns later balance and difficulty interactions.
 
 | Mod                                                                                                                                        | Type        | Dial       | Notes                                                                                                                       |
@@ -29,8 +28,7 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 
 ---
 
-## Roleplay Upkeep And Hygiene → separator: `Expanded Systems - Survival & Needs`
-
+## Roleplay Upkeep And Hygiene
 Lighter day-to-day body-maintenance layer between full survival needs and pure visual flavor. Adds believable downtime rituals without turning hygiene into a second dominant survival framework.
 
 | Mod                                                                                       | Type        | Dial           | Notes                                                                                                                                                                      |
@@ -73,8 +71,7 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 
 ---
 
-## Death Alternative System → separator: `Expanded Systems - Survival & Needs`
-
+## Death Alternative System
 What happens when the player falls in combat. Goal: add consequence and narrative texture to defeat without making every lost fight permanent.
 
 | Mod                                                                           | Type        | Dial   | Notes                                                                                                        |

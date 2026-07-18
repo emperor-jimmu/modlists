@@ -8,8 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Perk Overhaul Compatibility → separator: `Expanded Systems - Magic & Perks`
-
+## Perk Overhaul Compatibility
 How much rules density and specialization pressure the list actually wants once race and standing-stone choices are in place.
 
 | Mod                                                                                      | Type        | Dial       | Notes                                                               |
@@ -26,8 +25,7 @@ How much rules density and specialization pressure the list actually wants once 
 
 ---
 
-## Magic System Expansion → separator: `Expanded Systems - Magic & Perks`
-
+## Magic System Expansion
 How broad, readable, and build-defining magic should feel once race, standing-stone, and perk baseline are in place.
 
 | Mod                                                                                        | Type        | Dial           | Notes                                                                           |
@@ -53,8 +51,7 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 ---
 
-## Stealth And Detection → separator: `Expanded Systems - Magic & Perks`
-
+## Stealth And Detection
 How Skyrim's detection system should be recalibrated for modern stealth mechanics without replacing the existing perk, magic, and combat layers.
 
 | Mod                                                                                       | Type        | Dial   | Notes                                                    |

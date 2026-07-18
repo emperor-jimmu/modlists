@@ -4,8 +4,7 @@
 
 All items in this section belong to the `Graphics - LOD & Distant Detail` MO2 separator unless noted.
 
-## LOD Generation And Distant Detail → separator: `Graphics - LOD & Distant Detail`
-
+## LOD Generation And Distant Detail
 Distant detail determines whether `Elder Wilds` feels large and coherent during travel instead of collapsing into obvious pop-in and flat backgrounds.
 
 ### Baseline

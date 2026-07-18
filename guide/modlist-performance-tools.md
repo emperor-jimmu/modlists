@@ -8,8 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Tool Workflow → separator: `Performance - Tool Pipeline`
-
+## Tool Workflow
 A heavy Skyrim list usually becomes unstable through stale output and sloppy rebuild habits before failing through any one mod choice.
 
 ### Baseline — Disciplined Route
@@ -25,8 +24,7 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 
 ---
 
-## 4K LOD Tool Baseline → separator: `Performance - Tool Pipeline`
-
+## 4K LOD Tool Baseline
 ### General Rules
 - Keep tools (`xLODGen`, `TexGen`, `DynDOLOD`) outside game folder and outside MO2 mod folders.
 - Keep output folders outside Program Files, Steam, Documents, Desktop, and MO2 instance.
@@ -79,8 +77,7 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 
 ---
 
-## Optional Diagnostics And Performance Tools → separator: `Performance - Tool Pipeline`
-
+## Optional Diagnostics And Performance Tools
 Neither requires ongoing configuration or conflict maintenance once installed.
 
 ### Recursion Monitor

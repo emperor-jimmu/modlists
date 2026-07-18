@@ -6,8 +6,7 @@ All mods in this section belong to one of the two audio separators as noted per 
 
 ---
 
-## Music Overhaul Strategy → separator: `Audio - Music`
-
+## Music Overhaul Strategy
 The soundtrack direction: how much to expand Skyrim's music while staying close to the Jeremy Soule baseline.
 
 ### Baseline
@@ -40,8 +39,7 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 
 ---
 
-## Weapon, Magic, And Impact SFX → separator: `Audio - SFX & Ambience`
-
+## Weapon, Magic, And Impact SFX
 The sound-effects layer for combat, magic, items, UI, and impact. The bar: modern, weighty, clear audio readable in third-person without visual confirmation.
 
 | Mod | Notes |
@@ -60,8 +58,7 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 
 ---
 
-## Creature And NPC SFX → separator: `Audio - SFX & Ambience`
-
+## Creature And NPC SFX
 ### Baseline
 - Minimalist route — rely on ISC + AOS for creature sounds. Add dedicated replacers only if testing reveals weak vocalisations.
 - **Talkative Dragons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26955)) — Dragons speak during combat via reused vanilla voice lines. ESL-flagged, only overwrites one record (`CreatureDialogueDragon`). 15,478 endorsements.
@@ -72,8 +69,7 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 
 ---
 
-## Combat And Immersion Audio → separator: `Audio - SFX & Ambience`
-
+## Combat And Immersion Audio
 Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX baseline.
 
 | Mod | Notes |
@@ -89,8 +85,7 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 
 ---
 
-## Ambient And Environmental Audio → separator: `Audio - SFX & Ambience`
-
+## Ambient And Environmental Audio
 Environmental soundscapes, creature ambient sounds, and weather audio to reinforce world immersion outside of combat.
 
 | Mod | Notes |

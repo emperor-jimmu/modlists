@@ -8,8 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Alchemy Overhaul → separator: `Expanded Systems - Crafting & Economy`
-
+## Alchemy Overhaul
 Whether alchemy is a disciplined support system for potions/poisons/ingredients or a larger rework reshaping cooking and survival-adjacent loops.
 
 | Mod                                                                                                | Type        | Dial       | Notes                                      |
@@ -32,8 +31,7 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 
 ---
 
-## Cooking Systems → separator: `Expanded Systems - Crafting & Economy`
-
+## Cooking Systems
 Whether food and cooking are mostly ambient support for travel and downtime or a deliberate progression-and-preparation layer.
 
 | Mod                                                                                                | Type        | Dial       | Notes                                                                |
@@ -60,8 +58,7 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 
 ---
 
-## Smithing And Crafting Expansion → separator: `Expanded Systems - Crafting & Economy`
-
+## Smithing And Crafting Expansion
 What crafting is supposed to do: lightly improve vanilla smithing, become a broader rules-and-materials framework, or shift responsibility toward NPC services and roleplay texture.
 
 | Mod                                                                                                | Type        | Dial           | Notes                                                                                  |
@@ -98,8 +95,7 @@ Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` fr
 
 ---
 
-## Economy And Loot Balance → separator: `Expanded Systems - Crafting & Economy`
-
+## Economy And Loot Balance
 What economy and loot should feel like: lightly rebalanced merchant-and-pricing, deliberate loot distribution, or harsher scarcity-driven progression.
 
 | Mod                                                                                                   | Type          | Dial         | Notes                                                          |

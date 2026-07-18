@@ -6,8 +6,7 @@ All mods in this section belong to one of the four weapons-and-armor separators 
 
 ---
 
-## Weapon Pack Additions → separator: `Weapons & Armor – Weapons`
-
+## Weapon Pack Additions
 Weapon content packs adding new named and leveled-list weapons fitting vanilla's medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
 ### Baseline
@@ -39,8 +38,7 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 
 ---
 
-## Armor Pack Additions → separator: `Weapons & Armor – Armor`
-
+## Armor Pack Additions
 Armor content packs adding new named and leveled-list armors fitting the medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
 ### Baseline
@@ -112,8 +110,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 ---
 
-## Artifact And Unique Item Overhauls → separator: `Weapons & Armor – Artifacts`
-
+## Artifact And Unique Item Overhauls
 Unique-item content packs that add depth to Daedric artifacts, dragon priest masks, unique weapons, and quest items. Treats artifact overhauls as a separate layer from crafting — they change what named items are, not how the player makes generic items.
 
 ### Baseline
@@ -141,8 +138,7 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 ---
 
-## Clothing And Wardrobe Extensions → separator: `Weapons & Armor – Clothing & Wardrobe`
-
+## Clothing And Wardrobe Extensions
 Clothing content packs adding new clothing, cloaks, and wearable non-armor items. More wardrobe variety without making every NPC a fashion show.
 
 ### Baseline

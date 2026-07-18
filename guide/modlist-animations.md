@@ -6,8 +6,7 @@ All mods in this section belong to one of the five animation separators as noted
 
 ---
 
-## Animation Framework Landscape — What Goes With What → separator: `Animations - Framework`
-
+## Animation Framework Landscape — What Goes With What
 Skyrim's animation stack has four distinct layers. Each layer has exactly one active owner. Understanding what replaces what, what depends on what, and what is mutually exclusive is the single most important prerequisite to building a stable animation load order.
 
 ### The Four Layers
@@ -209,8 +208,7 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 ---
 
-## Pandora Framework And Prerequisites → separator: `Animations - Framework`
-
+## Pandora Framework And Prerequisites
 | Mod                                                                                                             | Type     | Notes                                                                                                   |
 |-----------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------|
 | [Pandora Behaviour Engine Plus](https://www.nexusmods.com/skyrimspecialedition/mods/133232)                     | Baseline | Single behavior-generation owner. Register as MO2 executable; output to dedicated `Pandora Output` mod. |
@@ -226,8 +224,7 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 ---
 
-## Skeleton And Behavior Prerequisites → separator: `Animations - Framework`
-
+## Skeleton And Behavior Prerequisites
 | Mod                                                                                                         | Type        | Notes                                                            |
 |-------------------------------------------------------------------------------------------------------------|-------------|------------------------------------------------------------------|
 | [XP32 Maximum Skeleton Special Extended — XPMSSE](https://www.nexusmods.com/skyrimspecialedition/mods/1988) | Baseline    | Single skeleton baseline.                                        |
@@ -238,8 +235,7 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 ---
 
-## Parkour, Climbing, And Free-Form Movement → separator: `Animations - Interactions & Traversal`
-
+## Parkour, Climbing, And Free-Form Movement
 | Mod                                                                                                                            | Type        | Notes                                                                                     |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------|
 | [SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)](https://www.nexusmods.com/skyrimspecialedition/mods/132292) | Baseline    | Vault, climb, traverse environmental geometry. 10,112 endorsements.                       |
@@ -275,8 +271,7 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 ---
 
-## Locomotion → separator: `Animations - Movement & Idles`
-
+## Locomotion
 | Mod                                                                                                                                                         | Type        | Notes                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------|
 | [Leviathan Animations II - Male Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/81463)                                               | Baseline    | Male locomotion.                                                   |
@@ -302,8 +297,7 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 ---
 
-## Combat Animation Packs → separator: `Animations - Combat`
-
+## Combat Animation Packs
 | Mod                                                                                                                                                                         | Type            | Notes                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | [Precision - Accurate Melee Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/72347)                                                                          | Baseline        | Accurate melee collision detection.                                                                                                        |
@@ -340,8 +334,7 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 ---
 
-## ADXP/MCO Install Workflow Reference → separator: `Animations - Combat`
-
+## ADXP/MCO Install Workflow Reference
 External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Install ADXP MCO for Skyrim SE and AE (MO2)](https://www.youtube.com/watch?v=YeS6Pwnv3b8). Captures the canonical ADXP/MCO install flow; references below use the Elder Wilds stack (Pandora for behaviour generation, OAR for conditional selection).
 
 ### Tutorial Mod List — Elder Wilds Status
@@ -389,8 +382,7 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 
 ---
 
-## Non-Combat Interaction Animations → separator: `Animations - Interactions & Traversal`
-
+## Non-Combat Interaction Animations
 | Mod                                                                                                                                   | Type        | Notes                                                              |
 |---------------------------------------------------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------|
 | [Immersive Interactions - Animated Actions](https://www.nexusmods.com/skyrimspecialedition/mods/47670)                                | Baseline    | Core interaction animation framework.                              |
@@ -422,8 +414,7 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 
 ---
 
-## Conditional Animation Systems → separator: `Animations - Framework`
-
+## Conditional Animation Systems
 | Mod                                                                                                      | Type        | Notes                                                         |
 |----------------------------------------------------------------------------------------------------------|-------------|---------------------------------------------------------------|
 | [Open Animation Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/92109)                     | Baseline    | Single condition framework owner.                             |
@@ -434,8 +425,7 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 
 ---
 
-## Camera-Aware Animation Support → separator: `Animations - Framework`
-
+## Camera-Aware Animation Support
 | Mod                                                                                                                | Notes                                           |
 |--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
 | [Improved Camera SE](https://www.nexusmods.com/skyrimspecialedition/mods/93962)                                    | Only if hybrid perspective is a real playstyle. |
@@ -443,8 +433,7 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 
 ---
 
-## Equipment Display Framework → separator: `Animations - Framework`
-
+## Equipment Display Framework
 Equipment visibility, sheathing positions, and draw-sheathe animations. Builds on XPMSSE for third-person gamepad parity.
 
 | Mod                                                                                                                  | Type        | Notes                                                                                           |
@@ -458,8 +447,7 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 
 ---
 
-## Creature Animations → separator: `Animations - Creatures`
-
+## Creature Animations
 | Mod                                                                                            | Notes                                          |
 |------------------------------------------------------------------------------------------------|------------------------------------------------|
 | [New Creature Animation - Giant](https://www.nexusmods.com/skyrimspecialedition/mods/83317)    | Giant animation replacer.                      |
@@ -475,8 +463,7 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 
 ---
 
-## Animation Conflict Management → separator: `Animations - Framework`
-
+## Animation Conflict Management
 Strict ownership: one clear owner per layer.
 
 ### Owners

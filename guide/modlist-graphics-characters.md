@@ -4,8 +4,7 @@
 
 All mods in this section belong to the `Graphics - Characters & Creatures` MO2 separator unless noted.
 
-## Character, Skin, And Creature Visuals → separator: `Graphics - Characters & Creatures`
-
+## Character, Skin, And Creature Visuals
 Baseline visual treatment for player bodies, skin textures, and common creature visuals before NPC-specific overhauls are chosen. Target: grounded modern look that holds up in third person without drifting into overly glossy, doll-like, or hyper-stylized presentation.
 
 ### Body Bases And Skins
@@ -163,8 +162,7 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 ---
 
-## Hair, Eyes, And Beards → separator: `Graphics - Characters & Creatures`
-
+## Hair, Eyes, And Beards
 Per-character face assets: hairstyles, eye textures, and beard options. Ensures character close-ups match the grim-dark tone without pulling in full NPC face-gen overhauls.
 
 | Mod | Type | Notes |
@@ -194,8 +192,7 @@ Keep the beard decision minimal; vanilla beards work well with the chosen body a
 
 ---
 
-## Skeleton And Bone Replacers → separator: `Graphics - Characters & Creatures`
-
+## Skeleton And Bone Replacers
 Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skeleton models in dungeons, Nordic ruins, draugr crypts, dragon priest rooms. Kept separate from the rigged skeleton baseline in → `Animations`.
 
 | Mod | Type | Notes |

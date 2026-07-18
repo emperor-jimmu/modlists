@@ -8,8 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Shader Performance Impact → separator: `Performance - Optimization & Configuration`
-
+## Shader Performance Impact
 ### Baseline
 
 - **Conservative to balanced route** — Accept a few heavier depth/lighting features once the rest of the visual stack is stable.
@@ -25,8 +24,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Grass, Tree, And Draw-Call Optimization → separator: `Performance - Optimization & Configuration`
-
+## Grass, Tree, And Draw-Call Optimization
 ### Baseline
 
 - **Content restraint first, then low-maintenance optimization.**
@@ -41,8 +39,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## INI Tuning And Display Settings → separator: `Performance - Optimization & Configuration`
-
+## INI Tuning And Display Settings
 ### Baseline
 
 - **Tool-first route** — Use `BethINI Pie` as the baseline editor.
@@ -72,8 +69,7 @@ Run through MO2 targeting the active profile INIs.
 
 ---
 
-## Save Safety Considerations → separator: `Performance - Optimization & Configuration`
-
+## Save Safety Considerations
 ### Baseline
 
 - **Disposable-test route** — Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability.

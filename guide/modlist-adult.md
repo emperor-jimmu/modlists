@@ -6,8 +6,7 @@ All mods in this section belong to the `Adult Content` MO2 separator unless note
 
 ---
 
-## Framework Prerequisites → separator: `Adult Content`
-
+## Framework Prerequisites
 OStim Standalone — a modern, standalone adult animation framework that does not require OSA or SexLab. The OStim Romance and Amorous Adventures patch layer depend on this.
 
 | Mod                                                                                                              | Type     | Notes                                                   |
@@ -39,8 +38,7 @@ OStim Standalone — a modern, standalone adult animation framework that does no
 
 ---
 
-## Romance Content → separator: `Adult Content`
-
+## Romance Content
 Opt-in quest-driven romance content running on top of the OStim framework.
 
 ### Baseline
@@ -64,8 +62,7 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 
 ---
 
-## NPC Relationship Content → separator: `Adult Content`
-
+## NPC Relationship Content
 NPC relationship simulation — schedules, pairings, and partner-swapping running on OStim.
 
 ### Baseline
@@ -81,8 +78,7 @@ NPC relationship simulation — schedules, pairings, and partner-swapping runnin
 
 ---
 
-## Pregnancy & Family → separator: `Adult Content`
-
+## Pregnancy & Family
 Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form an interconnected ecosystem — evaluate as a set.
 
 ### Baseline

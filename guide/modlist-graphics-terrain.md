@@ -4,8 +4,7 @@
 
 All mods in this section belong to the `Graphics - Terrain & Flora` MO2 separator unless noted.
 
-## Terrain, Roads, And Snow → separator: `Graphics - Terrain & Flora`
-
+## Terrain, Roads, And Snow
 Treat terrain, roads, and snow as one connected presentation layer. Must stay coherent with Community Shaders, PBR support, rock meshes, weather, and later LOD generation.
 
 ### Baseline
@@ -65,8 +64,7 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 ---
 
-## Flora Visuals → separator: `Graphics - Terrain & Flora`
-
+## Flora Visuals
 Flora is the ground-level readability layer between terrain materials and tree coverage. It should improve grass density, wildland texture, and plant variety without making traversal unreadable or creating constant patch work.
 
 ### Grass
@@ -136,8 +134,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 ---
 
-## Tree Overhauls For Dense Forests → separator: `Graphics - Terrain & Flora`
-
+## Tree Overhauls For Dense Forests
 Trees are the main large-scale world-shaping layer for wilderness mood, canopy silhouette, and perceived regional scale.
 
 ### Baseline

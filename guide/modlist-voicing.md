@@ -6,8 +6,7 @@ All mods in this section belong to the `Voicing` MO2 separator.
 
 ---
 
-## Framework Overview → separator: `Voicing`
-
+## Framework Overview
 Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player dialogue and plays `.wav`/`.fuz` files via an SKSE plugin. Combined with the xEdit dialogue export tool and AI voice synthesis (ElevenLabs or xVASynth), the player character speaks every dialogue line.
 
 ### Baseline
@@ -40,16 +39,14 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 
 ---
 
-## Two Custom Voice Packs → separator: `Voicing`
-
+## Two Custom Voice Packs
 Two custom-generated packs (Laura Bailey female, Graham McTavish male) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO2 voice pack dropdown in SKSE Menu Framework (F1).
 
 Run → [Custom Voice Pack Pipeline](#custom-voice-pack-pipeline) twice with two ElevenLabs voice IDs (Laura Bailey female, Graham McTavish male). Package as separate MO2 mods and enable one at a time.
 
 ---
 
-## Custom Voice Pack Pipeline → separator: `Voicing`
-
+## Custom Voice Pack Pipeline
 Unified workflow covering dialogue export → audio generation → packaging into DBVO2 format. Replaces the legacy MCVO Generator + standalone ElevenLabs sections.
 
 ### Prerequisites

@@ -6,8 +6,7 @@ All mods in this section belong to the `Graphics - Textures & Meshes` MO2 separa
 
 ---
 
-## Mesh Improvements And Parallax Support → separator: `Graphics - Textures & Meshes`
-
+## Mesh Improvements And Parallax Support
 Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it.
 
 **⏱ Install order:** Core foundation → doors & walls → locks → furniture & city detail → mesh replacers → environment props → alternatives. Follow the grouping below.
@@ -16,7 +15,7 @@ Improve shape quality and silhouette readability without creating an unmaintaina
 
 | Mod                                     | Description                                                                          | Nexus                                                               |
 |-----------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Static Mesh Improvement Mod (SMIM)      | Core mesh foundation. → separator: `Graphics - Community Shaders`                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/659)    |
+| Static Mesh Improvement Mod (SMIM)      | Core mesh foundation.                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/659)    |
 | Unofficial Material Fix                 | Corrects material records for Community Shaders PBR. Install after SMIM.             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21027)  |
 | Simplicity of Snow v0.26                | Main file only (32.8 MB). Skip Parallax Meshes and patches for mods not in the list. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56235)  |
 | XEMI Utility                            | Prerequisite for FYX collision fixes below.                                          | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159084) |
@@ -121,8 +120,7 @@ All mesh-only, no ESP.
 
 ---
 
-## Furniture, Clutter, And Item Replacers → separator: `Graphics - Textures & Meshes`
-
+## Furniture, Clutter, And Item Replacers
 Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy city series — Rally's, Arc's, and Kanjs author lines plus standalone BOS replacers. No cell-record edits; all are BOS-based or pure replacers.
 
 ### Rally's, Arc's, And Snazzy Clutter
@@ -187,8 +185,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 ---
 
-## Unique Entity Replacers → separator: `Graphics - Textures & Meshes`
-
+## Unique Entity Replacers
 Model and texture upgrades for unique named entities and one-of-a-kind objects — characters, corpses, set-piece models not covered by broad replay packs. Closes visual gaps without swelling into full NPC beautification.
 
 | Mod                               | Description                                                                                                      | Nexus                                                              |
@@ -203,8 +200,7 @@ Model and texture upgrades for unique named entities and one-of-a-kind objects �
 
 ---
 
-## Blood, Decals, And Combat Visual Effects → separator: `Graphics - Textures & Meshes`
-
+## Blood, Decals, And Combat Visual Effects
 In-world visual effects during combat: blood pools, persistent decals, lingering marks. Separate from lighting/weather (ambient worldstate) and from hit-reaction/stagger (→ `Third-Person Gameplay`, → `Expanded Systems`).
 
 | Mod                         | Description                                                                                                                                           | Nexus                                                               |
@@ -229,8 +225,7 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 
 ---
 
-## Book and Paper Visual Overhauls → separator: `Graphics - Textures & Meshes`
-
+## Book and Paper Visual Overhauls
 Visual upgrades for books, notes, and paper — the most-read world objects. Texture and mesh improvements make reading feel more tactile and library exploration more rewarding without touching gameplay records.
 
 **⏱ Install order:** Book Covers Skyrim → Enhanced Textures → SkyPatched → Lost Library (optional content).
@@ -253,8 +248,7 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 
 ---
 
-## Optional Texture And Mesh Replacements → separator: `Graphics - Textures & Meshes`
-
+## Optional Texture And Mesh Replacements
 Small texture/mesh replacers that don't fit the main topic sections above. Each is a single-author or single-object upgrade. Adopt selectively based on which objects actually draw the eye in regular play.
 
 | Mod                                                                                                       | Notes                                                                                                        |

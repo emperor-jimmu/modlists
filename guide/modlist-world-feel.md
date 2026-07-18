@@ -6,8 +6,7 @@ All mods in this section belong to one of the four world-feel separators as note
 
 ---
 
-## Timescale And Calendar Adjustments → separator: `World Feel - Timescale & Travel`
-
+## Timescale And Calendar Adjustments
 How quickly days pass, whether routine actions consume believable chunks of time, and season/calendar support.
 
 ### Baseline
@@ -23,8 +22,7 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 ---
 
-## Travel Pacing And Carriage Fast Travel Rules → separator: `World Feel - Timescale & Travel`
-
+## Travel Pacing And Carriage Fast Travel Rules
 How much friction, structure, and world texture sits between major locations.
 
 ### Baseline
@@ -40,8 +38,7 @@ How much friction, structure, and world texture sits between major locations.
 
 ---
 
-## Horse Travel → separator: `World Feel - Timescale & Travel`
-
+## Horse Travel
 Horse riding overhaul and mounted NPC transport — making horse travel feel modern and functional rather than the vanilla stiff-silhouette experience.
 
 | Mod | Description | Notes |
@@ -51,8 +48,7 @@ Horse riding overhaul and mounted NPC transport — making horse travel feel mod
 
 ---
 
-## Encounter Spacing And Wilderness Feel → separator: `World Feel - Nights & Wildlife`
-
+## Encounter Spacing And Wilderness Feel
 How busy, calm, or deliberately spaced wilderness travel feels between destinations.
 
 ### Baseline
@@ -64,8 +60,7 @@ How busy, calm, or deliberately spaced wilderness travel feels between destinati
 
 ---
 
-## Soundscape And Ambient Audio → separator: `World Feel - Soundscapes`
-
+## Soundscape And Ambient Audio
 What roads, settlements, wilderness, and interiors sound like during ordinary exploration.
 
 ### Baseline
@@ -77,8 +72,7 @@ What roads, settlements, wilderness, and interiors sound like during ordinary ex
 
 ---
 
-## City Size, Outskirts, And Population Feel → separator: `World Feel - Cities & Landmarks`
-
+## City Size, Outskirts, And Population Feel
 How large, inhabited, and spatially convincing cities feel during ordinary play.
 
 ### Baseline
@@ -90,8 +84,7 @@ How large, inhabited, and spatially convincing cities feel during ordinary play.
 
 ---
 
-## Roadside Clutter, Ruins, And Landmark Density → separator: `World Feel - Cities & Landmarks`
-
+## Roadside Clutter, Ruins, And Landmark Density
 Small-to-mid-scale worldspace texture between major destinations.
 
 ### Baseline
@@ -114,8 +107,7 @@ Small-to-mid-scale worldspace texture between major destinations.
 
 ---
 
-## Wildlife And Creature Ecology → separator: `World Feel - Nights & Wildlife`
-
+## Wildlife And Creature Ecology
 How varied and biologically alive wilderness travel feels.
 
 ### Baseline
@@ -130,8 +122,7 @@ How varied and biologically alive wilderness travel feels.
 
 ---
 
-## Road Network And Surface Overhaul → separator: `World Feel - Cities & Landmarks`
-
+## Road Network And Surface Overhaul
 Roads as built infrastructure at mesh/geometry level (separate from surface texture ownership in → `Graphics`).
 
 ### Baseline
@@ -144,8 +135,7 @@ Roads as built infrastructure at mesh/geometry level (separate from surface text
 
 ---
 
-## Environmental Atmosphere: Wind And Dynamic Effects → separator: `World Feel - Soundscapes`
-
+## Environmental Atmosphere: Wind And Dynamic Effects
 Weather-aware wind physics, dynamic cloth, and airborne particles for physical world-layer motion.
 
 | Mod | Notes |
@@ -171,8 +161,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ---
 
-## Night Darkness And Visibility Balance → separator: `World Feel - Nights & Wildlife`
-
+## Night Darkness And Visibility Balance
 | Mod | Notes |
 | --- | --- |
 | Darkness baseline from the weather mod and CS pair selected in → `Graphics` | Base darkness level. |
@@ -190,8 +179,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ---
 
-## Activation Text → separator: `World Feel - Timescale & Travel`
-
+## Activation Text
 ### Baseline
 - **Roleplaying In Skyrim - Immersive Activators** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149908)) — Descriptive activation text (e.g., "Read Book" instead of "Activate"), hides NPC names until interaction (toggleable). 8KB, no scripts, no SKSE.
 

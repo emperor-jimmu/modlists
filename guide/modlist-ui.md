@@ -6,8 +6,7 @@ All mods in this section belong to one of the three UI separators as noted per s
 
 ---
 
-## UI Framework Prerequisites → separator: `UI - Framework & HUD`
-
+## UI Framework Prerequisites
 The base menu and interface framework the rest of the UI stack builds on.
 
 ### Baseline
@@ -33,8 +32,7 @@ The base menu and interface framework the rest of the UI stack builds on.
 
 ---
 
-## HUD Overhaul → separator: `UI - Framework & HUD`
-
+## HUD Overhaul
 Health, stamina, magicka, target readability, and permanent interface structure during ordinary play.
 
 ### Baseline
@@ -69,8 +67,7 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 ---
 
-## Inventory And Item Card Improvements → separator: `UI - Inventory & Items`
-
+## Inventory And Item Card Improvements
 ### Baseline
 
 | Mod                                          | Description                                                                        | Nexus                                                               |
@@ -114,8 +111,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## Map Improvements → separator: `UI - Map, Dialogue, Menus`
-
+## Map Improvements
 ### Baseline
 
 | Mod                                                                   | Description                                              | Nexus                                                               |
@@ -146,8 +142,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## Magic And Journal Improvements → separator: `UI - Map, Dialogue, Menus`
-
+## Magic And Journal Improvements
 ### Baseline
 
 | Mod                                              | Description                                                                                 | Nexus                                                               |
@@ -166,8 +161,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## Dialogue UI Improvements → separator: `UI - Map, Dialogue, Menus`
-
+## Dialogue UI Improvements
 ### Baseline
 
 | Mod                                    | Description                                               | Nexus                                                               |
@@ -190,8 +184,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## Controller-Friendly UI Support → separator: `UI - Framework & HUD`
-
+## Controller-Friendly UI Support
 ### Baseline
 
 | Mod                                | Description                                                                             | Nexus                                                               |
@@ -211,8 +204,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## UI Scaling For Ultrawide And High Resolution → separator: `UI - Framework & HUD`
-
+## UI Scaling For Ultrawide And High Resolution
 | Mod                              | Description                                               | Nexus                                                             |
 |----------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------|
 | Sovngarde - Mist's Font Replacer | Text readability for 16:9 4K HDR. Prefer Bold V8.9 first. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/386)  |
@@ -220,8 +212,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## Compass, Markers, And Minimal HUD → separator: `UI - Framework & HUD`
-
+## Compass, Markers, And Minimal HUD
 ### Baseline
 
 | Mod                                 | Description                                   | Nexus                                                              |
@@ -238,8 +229,7 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## Crafting Menu Improvements → separator: `UI - Inventory & Items`
-
+## Crafting Menu Improvements
 | Mod                           | Description                                                                         | Nexus                                                              |
 |-------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | COCKS                         | See Framework Prerequisites above. Directly improves the Constructible Object Menu. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81409) |
@@ -247,16 +237,14 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-## Loading Screens → separator: `UI - Map, Dialogue, Menus`
-
+## Loading Screens
 | Mod                                         | Description                                                                                                                                                           | Nexus                                                              |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | The Elder Scrolls Legends - Loading Screens | Locked baseline. 110 lore-friendly Legends artworks. Install at 100% frequency in 16:9 with Fixed Height border. At 100% frequency, vanilla lore tips are suppressed. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37929) |
 
 ---
 
-## Optional HUD → separator: `UI - Framework & HUD`
-
+## Optional HUD
 | Mod                                          | Description                                                                                                                                                         | Nexus                                                               |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | Skyrim Party Sheet - Follower and Player HUD | Persistent overlay for player attributes and follower info. v2.7 (June 2026). Research before installing — verify no conflicts with TrueHUD, Oathvein, or Nether's. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167538) |

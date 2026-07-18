@@ -8,8 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Character Creation And Starting Choices → separator: `Expanded Systems - Character & Progression`
-
+## Character Creation And Starting Choices
 How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or a configurable route. The decision should improve replayability and roleplay expression without pre-answering later race, progression, religion, survival, or follower choices.
 
 | Mod                                                                                                               | Type        | Dial           | Notes                                                                                                                   |
@@ -38,8 +37,7 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 
 ---
 
-## Race Overhauls → separator: `Expanded Systems - Character & Progression`
-
+## Race Overhauls
 How race traits shape long-term character identity. Choose before perks, magic, and religion build on top of it.
 
 | Mod                                                                                           | Type        | Dial       | Notes                                             |
@@ -65,8 +63,7 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 
 ---
 
-## Standing Stones → separator: `Expanded Systems - Character & Progression`
-
+## Standing Stones
 How standing stones and birthsigns provide ongoing passive identity. Judge together with race pick so the progression baseline stays coherent.
 
 | Mod                                                                                             | Type        | Dial       | Notes                                             |
@@ -91,8 +88,7 @@ How standing stones and birthsigns provide ongoing passive identity. Judge toget
 
 ---
 
-## Character Progression Mechanics → separator: `Expanded Systems - Character & Progression`
-
+## Character Progression Mechanics
 Supporting progression layers that govern how stats and skills grow over time.
 
 > All RiS mods require SKSE. Check individual mod pages for specific dependencies.
@@ -105,8 +101,7 @@ Supporting progression layers that govern how stats and skills grow over time.
 
 ---
 
-## Character Traits And Identity Hooks → separator: `Expanded Systems - Character & Progression`
-
+## Character Traits And Identity Hooks
 Opt-in character-defining quirks shaping a run from the start without replacing the broader progression stack. Goal: stronger roleplay identity and replayability, not a giant second character-build framework.
 
 | Mod                                                                                               | Type        | Dial           | Notes                                                                      |
@@ -123,8 +118,7 @@ Opt-in character-defining quirks shaping a run from the start without replacing 
 
 ---
 
-## Religion Or Roleplay Systems → separator: `Expanded Systems - Character & Progression`
-
+## Religion Or Roleplay Systems
 How much explicit spiritual identity and day-to-day roleplay texture `Elder Wilds` wants.
 
 | Mod                                                                                               | Type        | Dial       | Notes                                                             |
@@ -143,8 +137,7 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 
 ---
 
-## Race-Specific Overhauls → separator: `Expanded Systems - Character & Progression`
-
+## Race-Specific Overhauls
 Dedicated overhauls for vampire, werewolf, and shout gameplay — three character-identity systems vanilla leaves shallow. These complete the EnaiRim suite begun with `Andromeda` (standing stones). All three are by EnaiSiaion, designed to work together, and require no cross-patching.
 
 | Mod                                                                                         | Type        | Dial       | Notes                                                                          |
@@ -182,8 +175,7 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 
 ---
 
-## Train And Study Systems → separator: `Expanded Systems - Character & Progression`
-
+## Train And Study Systems
 Training and study utilities for off-combat skill progression.
 
 | Mod                                                                                                | Type     | Dial           | Notes                                                                                              |
@@ -193,8 +185,7 @@ Training and study utilities for off-combat skill progression.
 
 ---
 
-## Experience and Leveling → separator: `Expanded Systems - Character & Progression`
-
+## Experience and Leveling
 How the player gains levels and skill points. Instead of vanilla sleep-to-level, use Experience (discovery-based leveling) paired with Static Skill Leveling Rewritten (cooldown-gated skill advancement) for progression earned through exploration and deliberate practice.
 
 | Mod                                                                                          | Type        | Dial   | Notes                                                                       |

@@ -8,8 +8,7 @@ All mods in this section belong to one of the three survival/combat separators a
 
 ---
 
-## Difficulty Framework → separator: `Survival & Combat - Difficulty & Lethality`
-
+## Difficulty Framework
 Cross-load-order pressure: how quickly the world pushes back, how clearly dungeon progression reads, and whether difficulty comes from better structure instead of blunt stat inflation.
 
 ### Baseline
@@ -28,8 +27,7 @@ Cross-load-order pressure: how quickly the world pushes back, how clearly dungeo
 
 ---
 
-## Combat Lethality And Pacing → separator: `Survival & Combat - Difficulty & Lethality`
-
+## Combat Lethality And Pacing
 Tunes encounter harshness and time-to-kill on top of the combat framework from → `Third-Person`, not replacing it.
 
 ### Baseline
@@ -48,8 +46,7 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 
 ---
 
-## Enemy AI Improvements → separator: `Survival & Combat - Enemy AI`
-
+## Enemy AI Improvements
 ### Baseline
 
 - Restrained route — rely on `Arena`, the section-04 combat stack, and targeted creature/faction additions.
@@ -63,8 +60,7 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 
 ---
 
-## Injury, Stamina, And Resource Pressure → separator: `Survival & Combat - Resources & Injuries`
-
+## Injury, Stamina, And Resource Pressure
 Attrition that lingers beyond a single swing: drained stamina, enforced downtime, the feeling that repeated bad fights accumulate a cost.
 
 ### Baseline
@@ -80,8 +76,7 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 
 ---
 
-## Enemy Resistances And Knowledge Checks → separator: `Survival & Combat - Enemy AI`
-
+## Enemy Resistances And Knowledge Checks
 ### Baseline
 
 - **Know Your Enemy 2** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93258)) — Different creatures call for different tools; inspect system makes knowledge legible. Scope: tactical differentiation, not full enemy-ecosystem ownership.
@@ -94,8 +89,7 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 
 ---
 
-## Survival Systems Compatibility → separator: `Survival & Combat - Resources & Injuries`
-
+## Survival Systems Compatibility
 How difficulty and pressure choices interact with the chosen survival framework.
 
 ### Baseline
@@ -109,8 +103,7 @@ How difficulty and pressure choices interact with the chosen survival framework.
 
 - **Navigation Restrictions - NG** `[#1]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129086)) — Fast travel and survival restrictions. Adds survival-oriented travel pressure.
 
-### Environmental Hazards → separator: `Survival & Combat - Resources & Injuries`
-
+### Environmental Hazards
 Environmental damage layers that make fire, traps, and dungeon hazards genuinely threatening.
 
 | Mod | Notes |

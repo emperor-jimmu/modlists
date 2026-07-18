@@ -6,8 +6,7 @@ All mods in this section belong to the `Graphics - Lighting` MO2 separator unles
 
 ---
 
-## Lighting Overhaul Strategy → separator: `Graphics - Lighting`
-
+## Lighting Overhaul Strategy
 Build lighting as a coherent layer supporting the shader-first visual direction, stronger world scale, and third-person readability. Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route. The baseline is a Community Shaders-native stack with much lower patch burden than the LUX family.
 
 **⏱ Install order:** SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → Helios → Embers XD → Luminous Atronachs.

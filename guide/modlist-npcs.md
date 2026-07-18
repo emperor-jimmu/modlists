@@ -8,8 +8,7 @@ All mods in this section belong to one of the three NPC separators as noted per 
 
 ---
 
-## NPC Appearance Overhauls → separator: `NPCs - Appearance`
-
+## NPC Appearance Overhauls
 Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-decide the body/skin/baseline character-visual stack already owned by → `Characters & Creatures`.
 
 | Mod                                                                                                           | Type        | Notes                                                             |
@@ -42,8 +41,7 @@ After the appearance stack is final, run `FacegenBaseline` via Synthesis (→ [P
 
 ---
 
-## NPC AI & Behavior → separator: `NPCs - Population`
-
+## NPC AI & Behavior
 NPC schedule, behavior, and AI overhauls that affect how NPCs act rather than how they look.
 
 | Mod                                                                             | Type        | Notes                                                                |
@@ -57,8 +55,7 @@ NPC schedule, behavior, and AI overhauls that affect how NPCs act rather than ho
 
 ---
 
-## Civilian And Traveler Population Additions → separator: `NPCs - Population`
-
+## Civilian And Traveler Population Additions
 Extra background people making towns, inns, and roads feel used — without re-deciding city feel and roadside atmosphere.
 
 | Mod                                                                                            | Type        | Notes                                                                              |
@@ -72,8 +69,7 @@ Extra background people making towns, inns, and roads feel used — without re-d
 
 ---
 
-## NPC Name Variety → separator: `NPCs - Population`
-
+## NPC Name Variety
 Making named NPCs feel more regionally distinct without changing appearance or dialogue.
 
 | Mod                                                                                 | Coverage           | Notes                                                   |
@@ -88,8 +84,7 @@ Making named NPCs feel more regionally distinct without changing appearance or d
 
 ---
 
-## NPC Dialogue Expansions → separator: `NPCs - Population`
-
+## NPC Dialogue Expansions
 Targeted dialogue additions for existing NPCs — expanding what vanilla characters say via spliced vanilla voice assets.
 
 | Mod                                                                                                  | Description                                          | Notes                                                             |
@@ -138,8 +133,7 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 
 ---
 
-## Custom Followers → separator: `NPCs - Followers`
-
+## Custom Followers
 Custom fully-voiced follower additions with authored dialogue, quest commentary, and personal content. The follower framework decision (NFF vs EFF vs AFT) is owned by → [Followers & Reputation](modlist-expanded-followers.md).
 
 | Follower                                                                                                   | Lines | Notes                                                              | Dependencies / Extras                                                                                                                                                                                                                                                      |
@@ -175,8 +169,7 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 
 ---
 
-## Playable Race Additions → separator: `NPCs - Appearance`
-
+## Playable Race Additions
 Playable race mods enabling new character options at game start. Snow Elf (Ancient Falmer) race mods are the primary focus — adding the option to play as the last surviving Snow Elf in Skyrim.
 
 ### Race Framework

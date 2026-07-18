@@ -8,8 +8,7 @@ All mods in this section belong to the `Enemies & Creatures` MO2 separator.
 
 ---
 
-## Enemy Variety → separator: `Enemies & Creatures`
-
+## Enemy Variety
 How hostile enemy groups feel less repetitive across ordinary play.
 
 | Mod | Type | Notes |
@@ -22,8 +21,7 @@ How hostile enemy groups feel less repetitive across ordinary play.
 
 ---
 
-## Creature Visual Overhauls → separator: `Enemies & Creatures`
-
+## Creature Visual Overhauls
 Creature-specific visual direction layered on top of the Bellyaches texture foundation from → `Characters & Creatures`.
 
 | Mod | Type | Notes |
@@ -53,8 +51,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 ---
 
-## New Creature Additions → separator: `Enemies & Creatures`
-
+## New Creature Additions
 ### Mihail Creature Additions (all ESL-flagged)
 
 | Mod | Notes |
@@ -88,8 +85,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 ---
 
-## Creature Behavior Improvements → separator: `Enemies & Creatures`
-
+## Creature Behavior Improvements
 How creatures attack, react, and express identity once combat starts.
 
 | Mod | Type | Notes |
@@ -106,8 +102,7 @@ How creatures attack, react, and express identity once combat starts.
 
 ---
 
-## Wildlife Density And Rarity Balance → separator: `Enemies & Creatures`
-
+## Wildlife Density And Rarity Balance
 | Mod | Type | Notes |
 | --- | --- | --- |
 | [True Hunter — fewer animals per square meter](https://www.nexusmods.com/skyrimspecialedition/mods/25628) | Baseline | Spawn-chance reduction for more deliberate wildlife. |

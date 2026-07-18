@@ -8,8 +8,7 @@ Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
 
 ---
 
-## Crime, Reputation, And Social Systems → separator: `Expanded Systems - Followers & Reputation`
-
+## Crime, Reputation, And Social Systems
 How much the world should notice what the player does socially — reputation, crime tools, city suspicion, and guard behavior.
 
 | Mod                                                                                 | Type        | Dial           | Notes                                                                  |
@@ -31,8 +30,7 @@ How much the world should notice what the player does socially — reputation, c
 
 ---
 
-## Followers And Companion Systems → separator: `Expanded Systems - Followers & Reputation`
-
+## Followers And Companion Systems
 How companion management should function at the systems level.
 
 | Mod                                                                                             | Type        | Dial           | Notes                           |
@@ -50,8 +48,7 @@ How companion management should function at the systems level.
 
 ---
 
-## Romance, Marriage, And Companionship → separator: `Expanded Systems - Followers & Reputation`
-
+## Romance, Marriage, And Companionship
 The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue with spouses and romance interests, and opt-in quest-driven romance arcs. Baseline is fade-to-black, not explicit content. Custom named followers belong in → `NPCs`.
 
 | Mod                                                                                              | Type        | Dial           | Notes                                                                         |

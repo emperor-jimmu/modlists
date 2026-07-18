@@ -6,8 +6,7 @@ All mods in this section belong to the `Graphics - Community Shaders` MO2 separa
 
 ---
 
-## Community Shaders Core Setup → separator: `Graphics - Community Shaders`
-
+## Community Shaders Core Setup
 This section owns the graphics-framework decision for the shader-first visual stack. Build modern visuals around `Community Shaders`, then layer materials, lighting, weather, water, and distant detail on top.
 
 ### Baseline
@@ -28,8 +27,7 @@ This section owns the graphics-framework decision for the shader-first visual st
 
 ---
 
-## Community Shaders Add-Ons And Required Features → separator: `Graphics - Community Shaders`
-
+## Community Shaders Add-Ons And Required Features
 How aggressive the first CS feature layer should be — improve shadowing, wetness, water response, and material depth without front-loading the full performance cost.
 
 ### Feature Tiers
@@ -46,7 +44,7 @@ Install the CS main download (v1.7+) and enable modules via FOMOD. Install optio
 
 - **Skylighting** — Sky-driven ambient occlusion. Pairs cleanly with the conservative tier. Worth including for authentic grim-dark look.
 - **Skyrim Upscaler - DLSS FSR2 XeSS** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80343)) — Only if real performance testing proves it's needed.
-- **Embers XD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37085)) — The fire-and-ember answer (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements. → separator: `Graphics - Lighting`
+- **Embers XD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37085)) — The fire-and-ember answer (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements.
 
 Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SSGI`, `Skylighting`, `Terrain Helper`, `Terrain Blending`, `Terrain Variation`, `Upscaling`, `Wetness Effects`.
 
@@ -98,8 +96,7 @@ Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SS
 
 ---
 
-## Parallax Framework Dependencies → separator: `Graphics - Community Shaders`
-
+## Parallax Framework Dependencies
 Auto Parallax and Complex Parallax Materials form the parallax rendering layer bridging CS parallax support with mesh and texture mods downstream.
 
 ### Baseline
@@ -113,8 +110,7 @@ Auto Parallax and Complex Parallax Materials form the parallax rendering layer b
 
 ---
 
-## Physically Based Rendering (PBR) Support → separator: `Graphics - Community Shaders`
-
+## Physically Based Rendering (PBR) Support
 PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions.
 
 ### Baseline — Balanced PBR Route

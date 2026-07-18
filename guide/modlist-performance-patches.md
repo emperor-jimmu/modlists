@@ -8,14 +8,12 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Patcher Discipline → separator: `Performance - Bashed Patch & Synthesis`
-
+## Patcher Discipline
 The generic category maps only become useful when tied to the actual mods `Elder Wilds` ships with. This section is that binding: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and `Synthesis` patcher pipeline in exact order. Default is "do not touch" — add a `Synthesis` patcher or `Bash Tag` only when a specific mod in the list makes it necessary.
 
 ---
 
-## Wrye Bash (Bashed Patch) Configuration → separator: `Performance - Bashed Patch & Synthesis`
-
+## Wrye Bash (Bashed Patch) Configuration
 ### Tweak Settings
 
 Enable in *Wrye Bash* → *Bashed Patch* → *Tweakers* only the items below.
@@ -142,8 +140,7 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 
 ---
 
-## Synthesis Configuration → separator: `Performance - Bashed Patch & Synthesis`
-
+## Synthesis Configuration
 The `Synthesis` patcher pipeline runs as a single batch via **Run Mutagen** in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
 
 ### Stage 1 — NPC, AI, And Facegen

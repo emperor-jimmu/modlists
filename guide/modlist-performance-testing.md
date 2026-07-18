@@ -8,8 +8,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 ---
 
-## Performance Testing And Tuning → separator: `Performance - Testing & Maintenance`
-
+## Performance Testing And Tuning
 The goal is consistent frametimes — not just a high average FPS — across the scenarios you actually play.
 
 ### Tools
@@ -84,8 +83,7 @@ Every tuning attempt recorded in git alongside modlist changes.
 
 ---
 
-## Maintenance And Rebuild Epilogue → separator: `Performance - Testing & Maintenance`
-
+## Maintenance And Rebuild Epilogue
 ### Patcher Revisit Triggers
 
 | Patcher | Trigger | Settings Worth Tweaking |

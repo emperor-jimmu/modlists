@@ -4,8 +4,7 @@
 
 All mods in this section belong to the `Graphics - Weather & Water` MO2 separator unless noted.
 
-## Weather And Atmosphere → separator: `Graphics - Weather & Water`
-
+## Weather And Atmosphere
 Weather should be chosen as part of the Community Shaders presentation layer, not as an isolated plugin choice. The target is a grounded but modern visual tone that preserves forest, mountain, and travel readability in third person.
 
 **Primary candidates — test side-by-side:**
@@ -44,8 +43,7 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 
 ---
 
-## Water Visuals → separator: `Graphics - Weather & Water`
-
+## Water Visuals
 Treat water as a full visual stack: base water look, CS water features, mesh support, foam, waterfalls. Target: cold, readable, grounded water that holds up in motion during travel.
 
 ### Baseline
@@ -86,8 +84,7 @@ Evaluate these only after the main water base is selected.
 
 ---
 
-## Sky, Stars, And Auroras → separator: `Graphics - Weather & Water`
-
+## Sky, Stars, And Auroras
 The cosmic visual layer: night-sky stars, aurora rendering, sky-dome enhancements. Kept separate from weather because sky-dome work is about clear-night rendering and long-horizon reads, not precipitation and overcast coverage.
 
 ### Baseline

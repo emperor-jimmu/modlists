@@ -6,16 +6,14 @@ All mods in this section are installed into the appropriate `Foundations` sub-se
 
 ---
 
-## Core Framework Baseline → separators: `Foundations` (parent)
+## Core Framework Baseline
 
 Install all core libraries and frameworks upfront — they are non-negotiable dependencies for virtually every mod in the list. Bulk-install prevents missing-master errors and lets every subsequent section work against the real framework stack.
 
-### SKSE & Scripts → separator: `Foundations - SKSE & Scripts`
-
+### SKSE & Scripts
 - **SKSE64** — Script extender; required by almost every SKSE plugin. [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30379)
 
-### Core Libraries → separator: `Foundations - Core Libraries`
-
+### Core Libraries
 | Mod                                                                                                 | Purpose                                                                                   |
 |-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | [Address Library for SKSE Plugins](https://www.nexusmods.com/skyrimspecialedition/mods/32444)       | Universal SKSE plugin compatibility layer for 1.6.1170.                                   |
@@ -70,8 +68,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 
 **Campfire users:** SSSO3 must overwrite Campfire's files. Use the Campfire patch included with SSSO3 and let SSSO3 win file conflicts in MO2.
 
-### SkyPatcher And SkyPatched Mods → separator: `Foundations - Core Libraries`
-
+### SkyPatcher And SkyPatched Mods
 **SkyPatcher** is an SKSE plugin that patches vanilla records at runtime from INI-style configuration files rather than traditional ESP plugins. No winner-loser override chain, no per-pair patches for the records it covers.
 
 A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of an ESP. Assets (meshes, textures, scripts) still install in MO2's left pane, but the plugin slot is replaced by files under `SKSE/Plugins/SkyPatcher/`.
@@ -96,8 +93,7 @@ A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of
 - `Diverse 4thUnknown Dragons` — uses SkyPatcher for combat-mod compatibility (→ [Enemies & Creatures](modlist-creatures.md))
 - `Patchifier` Synthesis patcher generates SkyPatcher patches (→ [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md))
 
-### Mesh & Texture Fixes → separator: `Foundations - Mesh & Texture Fixes`
-
+### Mesh & Texture Fixes
 | Mod                   | Purpose                                                        |
 |-----------------------|----------------------------------------------------------------|
 | Particle Patch        | Particle shader/LOD corrections, CS-compatible.                |
@@ -106,7 +102,7 @@ A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of
 
 ---
 
-## Official Masters Cleanup → separator: `Foundations` (parent)
+## Official Masters Cleanup
 
 Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAutoClean` on each file individually, collect cleaned `.esm` files into a `Cleaned Vanilla Masters` MO2 mod, and restore originals from `xEdit Backups` back into `Data\`.
 
@@ -133,7 +129,7 @@ Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAut
 
 ---
 
-## Patching Technique And Strategy → separator: `Foundations` (parent)
+## Patching Technique And Strategy
 
 Adopt the canonical `xEdit` mod-by-mod patching workflow: install one mod at a time, run `xEdit` in `-veryquickshowconflicts` mode, resolve only new conflicts, use per-pair patches and `ModGroups`. Reserve `Bashed Patch` and `Synthesis` for the categories they genuinely own.
 
@@ -189,7 +185,7 @@ Always use `<new file>.esp [Template] ESL` for patches. Never manually re-flag E
 
 ---
 
-## ESP To ESL Conversion → separator: `Foundations` (parent)
+## ESP To ESL Conversion
 
 Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by moving into the 4096 light-plugin address space.
 
@@ -244,8 +240,7 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 ---
 
-## Targeted Bugfix Mods → separator: `Foundations - Targeted Bugfixes`
-
+## Targeted Bugfix Mods
 | Mod                                                                                           | Purpose                                                             |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | [Fuz Ro D-oh - Silent Voice](https://www.nexusmods.com/skyrimspecialedition/mods/15109)       | Subtitle safety for unvoiced dialogue.                              |
@@ -270,4 +265,4 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 - **Alt-Tab Stuck Key Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148466)) — Prevents stuck modifier keys after alt-tabbing. Optional fix, evaluate if alt-tab issues arise during testing.
 - **I'm Walkin' Here NG with Pets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122516)) — Ally/pet body-blocking fix.
-- **Bard Instrumentals Mostly - Sing Rarely** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10927)) — Repetitive tavern singing. Not needed — other bard mods cover this. → separator: `Audio - SFX & Ambience`
+- **Bard Instrumentals Mostly - Sing Rarely** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10927)) — Repetitive tavern singing. Not needed — other bard mods cover this.

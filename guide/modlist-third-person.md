@@ -6,8 +6,7 @@ All mods in this section belong to one of the three third-person separators as n
 
 ---
 
-## Third-Person Camera Framework → separator: `Third-Person - Camera & Movement`
-
+## Third-Person Camera Framework
 ### Baseline
 - **SmoothCam** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41252)) — Main third-person camera framework.
 
@@ -23,8 +22,7 @@ All mods in this section belong to one of the three third-person separators as n
 
 ---
 
-## Camera Presets And Shoulder Switching → separator: `Third-Person - Camera & Movement`
-
+## Camera Presets And Shoulder Switching
 Restrained centered-to-light-offset baseline. Shoulder switching is a support feature for visibility problems, not the main camera identity.
 
 ### Risks & Compatibility
@@ -33,16 +31,14 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-## True Directional Movement → separator: `Third-Person - Camera & Movement`
-
+## True Directional Movement
 - **True Directional Movement - Modernized Third Person Gameplay** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51614)) — Modern 360-degree character-relative movement.
 - Core value: freer facing, cleaner traversal, better animation-stack alignment.
 - May feel awkward in tight interiors, stairs, or precision positioning.
 
 ---
 
-## Target Lock And Targeting Behavior → separator: `Third-Person - Combat & Targeting`
-
+## Target Lock And Targeting Behavior
 - **TDM** as the targeting-behavior owner. Keep lock-on restrained — optional combat-readability tool, not permanent default.
 - **TrueHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62775)) — Optional feedback companion. Add only if testing shows material improvement.
 
@@ -52,8 +48,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-## Dodge, Sprint, And Movement Responsiveness → separator: `Third-Person - Camera & Movement`
-
+## Dodge, Sprint, And Movement Responsiveness
 ### Baseline
 - **TK Dodge RE - Script Free** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56956)) — First dodge candidate. Tactical repositioning, not combat pacing center.
 
@@ -63,8 +58,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-## Hit Reactions, Stagger, And Impact Feedback → separator: `Third-Person - Combat & Targeting`
-
+## Hit Reactions, Stagger, And Impact Feedback
 | Mod | Notes |
 | --- | --- |
 | [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Main gameplay-side comparison for hit feedback and stagger. |
@@ -76,8 +70,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-## Third-Person Combat Systems → separator: `Third-Person - Combat & Targeting`
-
+## Third-Person Combat Systems
 | Mod | Type | Notes |
 | --- | --- | --- |
 | [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Baseline | Gameplay-rule framework. |
@@ -101,8 +94,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-## Crosshair And Aiming Behavior → separator: `Third-Person - Combat & Targeting`
-
+## Crosshair And Aiming Behavior
 | Mod | Notes |
 | --- | --- |
 | [Better Third Person Selection - BTPS](https://www.nexusmods.com/skyrimspecialedition/mods/64339) | Object-selection reliability. |
@@ -111,8 +103,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-## Horse Camera And Mounted Controls → separator: `Third-Person - Mounted`
-
+## Horse Camera And Mounted Controls
 | Mod | Type | Notes |
 | --- | --- | --- |
 | [Press H to Horse](https://www.nexusmods.com/skyrimspecialedition/mods/81195) | Baseline | Actively maintained (May 2026). Few vanilla record edits. |
@@ -123,8 +114,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-## Third-Person Interactions: Lockpicking → separator: `Third-Person - Combat & Targeting`
-
+## Third-Person Interactions: Lockpicking
 Gamepad-accessible lockpicking that works entirely in third-person without mouse input. Required by the design directive — every interaction must work in third-person with a gamepad.
 
 | Mod | Notes |

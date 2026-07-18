@@ -6,8 +6,7 @@ All mods in this section belong to one of the four world-content separators as n
 
 ---
 
-## Landscape Overhauls → separator: `World Content - Overhauls`
-
+## Landscape Overhauls
 Large worldspace-content changes making regions feel meaningfully different to cross.
 
 ### Baseline
@@ -27,8 +26,7 @@ First experiment:
 
 ---
 
-## Cities, Towns, And Villages → separator: `World Content - Overhauls`
-
+## Cities, Towns, And Villages
 Authored settlement content — real places, not just denser vibes.
 
 ### Baseline
@@ -79,8 +77,7 @@ Authored settlement content — real places, not just denser vibes.
 
 ---
 
-## College of Winterhold → separators: `World Content - Overhauls` / `World Content - Quests`
-
+## College of Winterhold
 Coordinated three-mod sub-stack designed to work together without inter-mod patches.
 
 ### Baseline
@@ -116,8 +113,7 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 
 ---
 
-## Inns, Farms, And Small Settlements → separator: `World Content - Overhauls`
-
+## Inns, Farms, And Small Settlements
 Travel-stop identity, small community presence, memorable rural pauses.
 
 ### Baseline
@@ -140,8 +136,7 @@ Travel-stop identity, small community presence, memorable rural pauses.
 
 ---
 
-## Dungeons And Ruins → separator: `World Content - Overhauls`
-
+## Dungeons And Ruins
 ### Baseline
 
 | Mod                         | Description                                                  | Nexus                                                               |
@@ -187,8 +182,7 @@ Visual-only overhauls for specific dungeons. No record or navmesh edits, but con
 
 ---
 
-## Points Of Interest And Roadside Content → separator: `World Content - Overhauls`
-
+## Points Of Interest And Roadside Content
 Smaller discoverable places between headline destinations.
 
 ### Baseline
@@ -237,8 +231,7 @@ Smaller discoverable places between headline destinations.
 
 ---
 
-## Underwater → separator: `World Content - Underwater`
-
+## Underwater
 ### Baseline
 
 | Mod                                           | Description                                                                      | Nexus                                                               |
@@ -255,8 +248,7 @@ Smaller discoverable places between headline destinations.
 
 ---
 
-## Side Activities: Fishing, Hunting, And Downtime → separator: `World Content - Quests`
-
+## Side Activities: Fishing, Hunting, And Downtime
 Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-delving.
 
 ### Baseline
@@ -300,8 +292,7 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 ---
 
-## Quest Additions → separator: `World Content - Quests`
-
+## Quest Additions
 ### Everyday & Radiant
 
 | Mod                                  | Description                                   | Nexus                                                               |
