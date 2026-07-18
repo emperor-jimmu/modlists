@@ -1,4 +1,4 @@
-# 05 -- Gameplay Overhaul
+# 05 - Gameplay Overhaul
 
 **Goal:** Transform the game into a proper RPG. Skill trees, combat rebalance,
 loot economy, damage model, level scaling, enemy AI, stealth systems, and

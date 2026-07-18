@@ -1,4 +1,4 @@
-# 13 -- Weapons
+# 13 - Weapons
 
 **Goal:** Weapons and combat tools. New firearms, melee weapons, cyberware
 weapons, attachments, optics, and weapon visuals.

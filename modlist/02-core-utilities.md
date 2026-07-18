@@ -1,4 +1,4 @@
-# 02 -- Core Utilities
+# 02 - Core Utilities
 
 **Goal:** Script extenders, frameworks, and essential libraries that other mods
 depend on. Install these first -- nothing else works without them.
@@ -124,6 +124,18 @@ depend on. Install these first -- nothing else works without them.
     - Merged output written to `r6/cache/`.
 - **Performance:** None
 
+### Native Interactions Framework
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21422>
+- **Version:** 1.05b
+- **Released:** 2026-01-16
+- **Summary:** Framework for placing 21 interaction types (sitting, sleeping, drinking, showering, dancing, etc.) in the game world via in-game UI. Required by Lucy Apartment Remastered and Night City Hangouts series.
+- **Why:** Framework-tier mod enabling placed world interactions. Same role as ArchiveXL/Codeware — other mods build on it to add immersive seating, leaning, smoking, and other environmental interactions.
+- **Conflicts:** None known. Framework-only — no user-facing features by itself.
+- **Dependencies:** ArchiveXL, Codeware, CET, RED4ext, redscript, Phantom Liberty
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Codeware, before Native Settings UI. No configuration — other mods use this framework to place interactions.
+- **Performance:** None
+
 ### Native Settings UI
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/3518>
@@ -161,7 +173,8 @@ depend on. Install these first -- nothing else works without them.
 6. TweakXL
 7. Codeware
 8. Input Loader
-9. Native Settings UI
+9. Native Interactions Framework
+10. Native Settings UI
 
 All of these are **Root-category** mods -- enable Root Builder in MO2 before
 installing.

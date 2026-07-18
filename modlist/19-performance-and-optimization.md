@@ -1,4 +1,4 @@
-# 19 -- Performance & Optimization
+# 19 - Performance & Optimization
 
 **Goal:** Run the modlist at playable framerates. Hardware recommendations,
 benchmark methodology, optimization tools, engine settings, driver tuning, and

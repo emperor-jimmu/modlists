@@ -1,4 +1,4 @@
-# 15 -- Vehicles & Transport
+# 15 - Vehicles & Transport
 
 **Goal:** Vehicles and getting around Night City. Driving overhaul, new
 vehicles, car customization, vehicle handling, and transport systems.

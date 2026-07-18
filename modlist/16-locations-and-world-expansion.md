@@ -1,4 +1,4 @@
-# 16 -- Locations & World Expansion
+# 16 - Locations & World Expansion
 
 **Goal:** More places to go. New areas, interior expansions, open buildings,
 rooftop access, and environmental additions that expand Night City.

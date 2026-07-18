@@ -1,4 +1,4 @@
-# 14 -- Apartments & Housing
+# 14 - Apartments & Housing
 
 **Goal:** Housing and personal spaces. New apartments, apartment customization,
 decorations, garage expansions, and player home systems.

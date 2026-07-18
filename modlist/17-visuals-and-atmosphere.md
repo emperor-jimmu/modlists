@@ -1,4 +1,4 @@
-# 17 -- Visuals & Atmosphere
+# 17 - Visuals & Atmosphere
 
 **Goal:** Visual quality and atmosphere. Lighting, weather, LUTs/color grading,
 texture improvements, and environmental effects. Performance-conscious choices

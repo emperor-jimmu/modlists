@@ -1,4 +1,4 @@
-# 11 -- Clothing & Fashion
+# 11 - Clothing & Fashion
 
 **Goal:** Clothing, fashion, and style. Clothing pieces, full sets, virtual
 atelier stores, outfit management systems, and wardrobe expansion.

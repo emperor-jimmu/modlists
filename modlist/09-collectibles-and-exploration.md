@@ -1,4 +1,4 @@
-# 09 -- Collectibles & Exploration
+# 09 - Collectibles & Exploration
 
 **Goal:** More things to find and reasons to explore. Hidden items, collectathon
 expansions, secrets, easter eggs, and rewards for thorough exploration.

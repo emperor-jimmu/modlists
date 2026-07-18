@@ -1,4 +1,4 @@
-# 04 -- UI & HUD
+# 04 - UI & HUD
 
 **Goal:** Interface improvements. Menus, minimap, notifications, inventory
 screens, dialogue interface, and anything the player interacts with on screen.

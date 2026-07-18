@@ -1,4 +1,4 @@
-# 01 -- MO2 Setup & Tools
+# 01 - MO2 Setup & Tools
 
 **Goal:** Everything needed to get Mod Organizer 2 running with Cyberpunk 2077.
 Prerequisites, installation, profile setup, launch workflow, and essential

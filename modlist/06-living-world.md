@@ -1,4 +1,4 @@
-# 06 -- Living World
+# 06 - Living World
 
 **Goal:** Make Night City feel alive. Daily activities, survival-lite features,
 NPC routines and schedules, interactivity with the environment, immersion
@@ -222,6 +222,30 @@ elements, metro/NCART, food/drink systems, and world reactivity.
     - Beta stage — limited character selection, more in future updates.
 - **Performance:** None
 
+### Dance Off
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10615>
+- **Version:** 1.1.0
+- **Released:** 2024-12-22
+- **Summary:** Adds the option to dance with romance partners at club dance floors. Judy, Panam, River, Kerry, Jackie, Reed, Alex, Johnny, and So Mi are all potential dance partners across Totentanz, Riot, Empathy, 7th Hell, and Heavy Hearts Club.
+- **Why:** Clubs have dance floors but no partner dancing. This adds a meaningful social activity that complements the existing bar/drinking systems and strengthens partner relationships outside of quests and apartment hangouts.
+- **Conflicts:** None. Fully compatible with Immersive Bartenders (shared logic prevents animation issues).
+- **Dependencies:** ArchiveXL, RED4ext. Phantom Liberty optional (for Heavy Hearts Club, Reed/Alex/So Mi).
+- **MO2 Notes:** Extract to game root. File goes to `archive/pc/mod/`. Visit any club dance floor, choose "Dance with someone," and select a partner. Movement (WASD) ends the dance.
+- **Performance:** None
+
+### Roller Coaster Enhanced
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/14617>
+- **Version:** 1.1.3
+- **Released:** 2026-03-31
+- **Summary:** V can ride the Pacifica roller coaster with Songbird, Judy, Panam, or Kerry after repairing it. Partner messaging and waiting system with full date-style experience. Johnny returns for solo rides.
+- **Why:** The Pacifica coaster is a memorable one-time quest moment. This makes it a repeatable activity with romance partners, adding a unique date option that rewards exploration. Updated for Tower/PL ending PONR.
+- **Conflicts:** None known. River not supported (body type incompatible with coaster animations).
+- **Dependencies:** ArchiveXL, Deceptious Quest Core, RED4ext. Phantom Liberty optional (for Songbird).
+- **MO2 Notes:** Extract to game root. Activate by visiting H10 apartment once. Fix and ride the coaster first if not already repaired. Partner invites unlock after befriending/romancing them.
+- **Performance:** None
+
 ---
 
 ## Add-ons — NCI District Mods
@@ -258,6 +282,72 @@ These are companion mods for **Night City Interactions - Core** that add social 
 - **Summary:** Partner drinks at Buryger, Red Dirt, Kenmore Diner, the Market, PieZ, and Capitan Caliente.
 - **MO2 Notes:** Extract to game root. Requires NCI Core.
 
+### NCI - City Center
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21018>
+- **Version:** 2.0.0
+- **Released:** 2025-08-06
+- **Summary:** Partner drinks at 7th Hell, Empathy, Memorial Park Patio, Port Cafe, and Downtown greenhouse. Plus 3 solo drinking spots. v2.0 overhauled all dialogs with drinks/leaving on the bar and conversations on the partner.
+- **Why:** Completes the NCI district coverage — City Center is the only remaining district without its own addon. Partners: Judy, Panam, River, Kerry. Alcohol-free toggle supported.
+- **Conflicts:** Gigs may temporarily block specific drinking spots until fully completed (e.g. An Inconvenient Killer blocks 7th Hell).
+- **Dependencies:** Night City Interactions - Core (5519)
+- **MO2 Notes:** Extract to game root. Requires NCI Core already installed. Popup confirms activation. Uninstall safely when not within ~50m of a City Center location.
+- **Performance:** None
+
+---
+
+## Night City Hangouts
+
+These mods by The Digital Soul use the Native Interactions Framework to add interactive points (sit, lean, sleep, smoke) at key Night City venues. Each requires NIF and CET.
+
+### NCH - Lizzie's Bar
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21842>
+- **Version:** 1.1
+- **Released:** 2026-02-22
+- **Summary:** Adds sit, lean, sleep, and smoke interactions throughout Lizzie's Bar. Works inside the Mox-operated BD club.
+- **Why:** Modlist already includes Lizzie's Braindances — this adds physical interactivity to the same venue, making it a fully functional entertainment destination rather than a static backdrop.
+- **Conflicts:** NPCs may occasionally block interactable areas when the bar is busy.
+- **Dependencies:** Native Interactions Framework, CET. Recommends Lizzie's Braindances (already in modlist) and NCI Core (already in modlist).
+- **MO2 Notes:** Extract to game root. Interactions placed via NIF in-game UI — no manual configuration needed.
+- **Performance:** None
+
+### NCH - Jig Jig Street
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21730>
+- **Version:** 2.0
+- **Released:** 2026-02-22
+- **Summary:** Adds sit, lean, sleep, and smoke interactions throughout Jig-Jig Street interiors and exteriors. v2.0 improved placement and interaction names.
+- **Why:** Jig-Jig Street is Night City's red-light district but has no interactive elements in vanilla. Adding environmental interactions makes the area feel lived-in and explorable rather than a pass-through corridor.
+- **Conflicts:** NPCs may block interactable areas at night when the district is most crowded.
+- **Dependencies:** Native Interactions Framework, CET. Optional: Jig Jig Unleashed (16580) for tweaked version.
+- **MO2 Notes:** Extract to game root. Two versions available: standard and tweaked (requires Jig Jig Unleashed).
+- **Performance:** None
+
+### NCH - Aldecaldo Camps
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/24211>
+- **Version:** 1.0
+- **Released:** 2025-09-13
+- **Summary:** Adds sit, lean, sleep, and smoke interactions to both Aldecaldo camps (pre- and post-move). Compatible with Night City Interactions.
+- **Why:** The Aldecaldo camps are central to Panam's romance arc and the Nomad storyline. Adding interactivity makes these locations feel like lived-in communities rather than quest backdrops, complementing Panam Romanced Enhanced.
+- **Conflicts:** NPCs may block interactable areas.
+- **Dependencies:** Native Interactions Framework, CET. Recommends NCI Core (already in modlist).
+- **MO2 Notes:** Extract to game root. Compatible with Night City Interactions — NCI handles camp visits separately.
+- **Performance:** None
+
+### NCH - 7th Hell Club
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27752>
+- **Version:** 1.0
+- **Released:** 2026-02-22
+- **Summary:** Adds sit, lean, and smoke interactions to the 7th Hell Club — a small nightclub featured in character hangouts and NCI City Center partner drinks.
+- **Why:** 7th Hell is referenced by multiple mods already in the modlist (Dance Off, NCI City Center). Adding physical interactivity to this shared venue ties those systems together.
+- **Conflicts:** NPCs may block interactable areas, especially when the club is most crowded.
+- **Dependencies:** Native Interactions Framework, CET.
+- **MO2 Notes:** Extract to game root. Pairs well with Dance Off and NCI City Center for a complete 7th Hell experience.
+- **Performance:** None
+
 ---
 
 ## Install Order
@@ -270,19 +360,26 @@ Main section mods are **Root**-category — enable Root Builder in MO2 before in
 4. NCI - Heywood
 5. NCI - Pacifica and Badlands
 6. NCI - Santo Domingo
-7. Metro System
-8. Wannabe Edgerunner
-9. Simple Flashlight
-10. Limited Fast Travel
-11. Dark Future - Urban Survival Gameplay
-12. Eviction Notice - Story-Driven Rent System
-13. Anti-Theft Measures
-14. Immersive Road Crossing and Crashes
-15. Immersive Bartenders
-16. Gambling Props - Poker Chips and Playing Cards
-17. Playable Roulette - Gambling System
-18. Perfect Vanilla - Playable Roulette Fix
-19. Playable Blackjack - Gambling System
-20. Playable Arcade Machines
-21. Pet Your Cat
-22. Lizzie's Braindances
+7. NCI - City Center
+8. Metro System
+9. Wannabe Edgerunner
+10. Simple Flashlight
+11. Limited Fast Travel
+12. Dark Future - Urban Survival Gameplay
+13. Eviction Notice - Story-Driven Rent System
+14. Anti-Theft Measures
+15. Immersive Road Crossing and Crashes
+16. Immersive Bartenders
+17. Dance Off
+18. Roller Coaster Enhanced
+19. Gambling Props - Poker Chips and Playing Cards
+20. Playable Roulette - Gambling System
+21. Perfect Vanilla - Playable Roulette Fix
+22. Playable Blackjack - Gambling System
+23. Playable Arcade Machines
+24. Pet Your Cat
+25. NCH - Lizzie's Bar
+26. NCH - Jig Jig Street
+27. NCH - Aldecaldo Camps
+28. NCH - 7th Hell Club
+29. Lizzie's Braindances

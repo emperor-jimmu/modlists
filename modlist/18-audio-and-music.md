@@ -1,4 +1,4 @@
-# 18 -- Audio & Music
+# 18 - Audio & Music
 
 **Goal:** Sound and music. Sound overhauls, custom radio stations, ambient
 soundscapes, weapon audio, and vehicle sounds.

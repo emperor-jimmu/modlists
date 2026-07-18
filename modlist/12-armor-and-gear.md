@@ -1,4 +1,4 @@
-# 12 -- Armor & Gear
+# 12 - Armor & Gear
 
 **Goal:** Armor and combat gear. Armor pieces, gear sets, transmog/vanity
 systems, and equipment that provides gameplay-affecting stats.

@@ -1,4 +1,4 @@
-# 08 -- Relationships & Romance
+# 08 - Relationships & Romance
 
 **Goal:** Meaningful relationships. Expanded romance systems (M/F and F/F
 options), companion interactions, friendship mechanics, text messages, dates,
@@ -108,6 +108,53 @@ and relationship progression.
 - **MO2 Notes:** Extract to game root. Works for Judy/Panam immediately; requires Quest Core activation for Kerry/River.
 - **Performance:** None
 
+### I Really Want To Stay At Your House - Panam
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/8775>
+- **Version:** 3.5.1
+- **Released:** 2026-06-24
+- **Summary:** Panam stays at V's apartments (H10, Glen, Japantown, Corpo Plaza) for 2-day visits with full Romanced Enhanced schedule. Choose between longer stays or shorter 2.1-style hangouts via text message.
+- **Why:** Companion to the already-installed Judy version. Completes the extended-stay experience for Panam romancers with daily routines and proper schedule.
+- **Conflicts:** Compatible with all Romanced Enhanced mods and other IRWTSAYH mods. Compatible with Pet Your Cat (shares scene files).
+- **Dependencies:** ArchiveXL, RED4ext, Romance Hangouts Enhanced, Romanced Enhanced Showers Feature
+- **MO2 Notes:** Extract to game root. Same behavior as Judy version — first visit is mandatory short hangout; subsequent messages offer Long/Short stay choice. SFW without Showers Feature mod (v3.5.0+).
+- **Performance:** None
+
+### I Really Want To Stay At Your House - Kerry
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/8806>
+- **Version:** 3.5.0
+- **Released:** 2026-06-02
+- **Summary:** Kerry stays at V's apartments for 2-day visits with full schedule including guitar playing, lounging, eating, drinking, and showering. Long/Short stay choice via text message.
+- **Why:** Companion to the already-installed Judy version. Completes the set for Kerry romancers with his full Romanced Enhanced schedule in V's apartments.
+- **Conflicts:** Compatible with all Romanced Enhanced mods and other IRWTSAYH mods.
+- **Dependencies:** ArchiveXL, RED4ext, Romance Hangouts Enhanced, Romanced Enhanced Showers Feature
+- **MO2 Notes:** Extract to game root. SFW without Showers Feature mod (v3.5.0+). Kerry's schedule includes guitar playing sessions. Same Long/Short stay choice system.
+- **Performance:** None
+
+### I Really Want To Stay At Your House - River
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/8826>
+- **Version:** 3.5.0
+- **Released:** 2026-06-02
+- **Summary:** River stays at V's apartments for 2-day visits with full schedule. Long/Short stay choice via text message. Completes the full IRWTSAYH set across all 4 romance partners.
+- **Why:** Companion to the already-installed Judy version. Completes the extended-stay experience for River romancers.
+- **Conflicts:** Compatible with all Romanced Enhanced mods and other IRWTSAYH mods.
+- **Dependencies:** ArchiveXL, RED4ext, Romance Hangouts Enhanced, Romanced Enhanced Showers Feature
+- **MO2 Notes:** Extract to game root. SFW without Showers Feature mod (v3.5.0+). Same Long/Short stay choice system as other partners.
+- **Performance:** None
+
+### Hangout Romances
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18972>
+- **Version:** 1.08
+- **Released:** 2025-11-26
+- **Summary:** Adds a "Make Love" intimacy option to apartment hangouts after showering and cuddling with your partner. Well-integrated with the existing Romance Hangouts Enhanced flow.
+- **Why:** Adds intimate moments to the existing hangout system in a way that follows naturally from shower and cuddle interactions. CET-configurable for content preferences (shorter scenes, moaning toggle, animation type, lights control). Created by the same author as Lizzie's Braindances.
+- **Conflicts:** Explicitly compatible with Romance Hangouts Enhanced (v1.02+). May conflict with mods blocking or changing partner entities.
+- **Dependencies:** Romance Hangouts Enhanced v2.1.1+
+- **MO2 Notes:** Extract to game root. No config needed — activates automatically. CET commands available for customization: scene length, moaning toggle, animation gender (male/female/default), shorter Panam ending, time skip toggle, scene lights toggle. Ends with auto-sleep like vanilla hangouts.
+
 ---
 
 ## Install Order
@@ -122,5 +169,9 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 6. Judy Flirts on Dates
 7. Gone Away - Better Partner Suspended Behaviour
 8. I Really Want To Stay At Your House - Judy
+9. I Really Want To Stay At Your House - Panam
+10. I Really Want To Stay At Your House - River
+11. I Really Want To Stay At Your House - Kerry
+12. Hangout Romances
 
-**Note:** Requires **Deceptious Quest Core** from 07-Quests & Stories for Gone Away to work fully for Kerry/River.
+**Note:** Requires **Deceptious Quest Core** from 07-Quests & Stories for Gone Away to work fully for Kerry/River. Hangout Romances requires Romance Hangouts Enhanced v2.1.1+.

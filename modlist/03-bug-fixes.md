@@ -1,4 +1,4 @@
-# 03 -- Bug Fixes
+# 03 - Bug Fixes
 
 **Goal:** Fix bugs CDPR hasn't addressed. Quest fixes, animation fixes, world
 holes, scripting errors, and general polish. No gameplay changes -- only fixes.
