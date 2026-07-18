@@ -91,6 +91,7 @@ Small-to-mid-scale worldspace texture between major destinations.
 - **Ancient Land** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22900)) — Static worldspace flavor and distant landmark presence.
 - **Point The Way** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/352)) — Road guidance and signposting.
 - **Ryn's Standing Stones** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64256)) — Locked landmark baseline. Each stone becomes a unique environmental setpiece. World geometry only, no gameplay effects.
+- **Haystacks - Mihail's Shards of Immersion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125021)) — Haystack clutter variants with retextured shovels/pitchforks. ESP (verify ESL flag).
 
 ### Alternatives
 - **Interesting Roads** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42749)) — Lighter roadside variety. Asset-only, low compatibility risk.
@@ -104,6 +105,7 @@ Small-to-mid-scale worldspace texture between major destinations.
 - **[Immersive Laundry - Animated](https://www.nexusmods.com/skyrimspecialedition/mods/92814)** — Adds animation to the laundry lines. Install after Immersive Laundry.
 - **[Immersive Laundry Improvement ILIM](https://www.nexusmods.com/skyrimspecialedition/mods/20346)** — High-quality laundry texture replacer by Pfuscher. Install after Immersive Laundry.
 - **[Immersive Laundry - Patches for Multiple City Mods](https://www.nexusmods.com/skyrimspecialedition/mods/42423)** — Compatibility patches for city overhaul mods. Install after Immersive Laundry and city mods.
+- **[Shores of Skyrim — BOS](https://www.nexusmods.com/skyrimspecialedition/mods/140081)** — Shoreline overhaul adding rocks, driftwood, and debris to lake, river, and ocean shores. BOS-based, no cell-record edits.
 
 ---
 

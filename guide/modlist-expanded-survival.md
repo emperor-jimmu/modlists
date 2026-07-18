@@ -35,7 +35,8 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
 |-------------------------------------------------------------------------------------------|-------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline    | #1, #2, #3, #4 | SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution. |
 | [Saunas of Skyrim - The Bathing Mare (External)](https://www.nexusmods.com/skyrimspecialedition/mods/169240) | Add-on      | #1, #2, #3, #4 | Bathhouse outside Whiterun with custom NPCs, vendor, sauna buffs, brandy kegs, rentable bed. Compatible with JK's Whiterun and BiSR. |
-| Minimalist route                                                                          | Alternative | all            | Leave hygiene implied through inns, rivers, roleplay.                                                                                                                      |
+| [Real Water in Buckets and Barrels](https://www.nexusmods.com/skyrimspecialedition/mods/122422)             | Add-on      | all            | Visible water in containers (buckets, barrels, pots, pans). iNeed supported. BOS-based. Enhances survival-immersion visual detail.       |
+| Minimalist route                                                                                          | Alternative | all            | Leave hygiene implied through inns, rivers, roleplay.                                                                                      |
 
 ### Key Features
 

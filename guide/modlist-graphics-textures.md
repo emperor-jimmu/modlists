@@ -144,6 +144,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | Arc's Tankard Redux                                |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112567) |
 | ElSopa - HD Iron Tools Redone SE                   |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60495)  |
 | Diverse BOS Kitchenware                            |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112361) |
+| HFs - Diverse Inkwell and Quill (BOS)              | Diverse inkwell and quill meshes via BOS or Model Swapper.                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132023) |
 | Dynamic Things Alternative - BOS                   |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60741)  |
 | Nordic Stonewalls                                  |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57686)  |
 | Nordic Stonewall Terraces                          |                                                                             | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115210) |
@@ -238,6 +239,7 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 | Book Covers Skyrim Enhanced Textures | 2K/4K texture upgrade. Install after base mod and overwrite. Optional but recommended for 4K displays.                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178820) |
 | Book Covers Skyrim - SkyPatched      | SkyPatcher-based forward-port resolving record-level conflicts. Choose **Recommended Main File**.                                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/109254) |
 | Book Covers Skyrim - Lost Library    | Adds 150+ lore books from earlier TES games. Content companion; quest-level decision owned by → [World Content](modlist-world-content.md).                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/902)    |
+| HFs - Ruined Books                   | High-quality ruined/destroyed book clutter meshes. Complements Book Covers Skyrim for damaged books.                                                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132355) |
 
 ### Risks & Compatibility
 
@@ -278,6 +280,7 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894)                       | Curtain/hanging fabric retexture.                                                                            |
 | [The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487)                     | Blackreach mist/fog visual effect overhaul.                                                                  |
 | [Valhalla Bridges](https://www.nexusmods.com/skyrimspecialedition/mods/157314)                           | Higher-detail bridge mesh replacers. Mesh-only, no ESP.                                                     |
+| [HFs - Imperial Jail Grates](https://www.nexusmods.com/skyrimspecialedition/mods/171332)                 | High-quality remodel of Imperial jail grate doors/gates. Mesh-only clutter improvement.                     |
 | [Valhalla Bridges - Addons Patches and Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/157804) | Compatibility patches and addon coverage for Valhalla Bridges. Install after base.                           |
 | [Improved Closefaced Helmets](https://www.nexusmods.com/skyrimspecialedition/mods/824)                  | Mesh/texture overhaul for closed-face helmets.                                   |
 | [Improved Closefaced Helmets - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/146820)  | SkyPatched variant; preferred over the base ICH for compatibility.               |
@@ -290,6 +293,12 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Diverse Windmill Sails - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/121759)                | BOS-based windmill sail variety.                                                                             |
 | [Diverse Foods - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/91599)                          | BOS-based food item variety.                                                                                 |
 | [Diverse Candles - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/94369)                        | BOS-based candle variety.                                                                                    |
+| [Diverse Woodchopping Blocks - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/148317)           | BOS-based woodchopping block variety. Requires Happy Little Trees.                                           |
+| [Handcarts - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/154085)                             | BOS-based handcart variety (6 variants).                                                                     |
+| [Diverse Catches - BOS Fish Racks](https://www.nexusmods.com/skyrimspecialedition/mods/98989)             | BOS-based fish rack variety at docks/markets.                                                                |
+| [CC Fishing Gear Diversified - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/172724)           | BOS-based CC fishing gear model variety. Requires AE.                                                        |
+| [Kanjs - Bird Nests and Eggs - up to 4k](https://www.nexusmods.com/skyrimspecialedition/mods/64905)       | Bird nest and egg retexture. Required by Diverse Bird's Nests.                                               |
+| [Diverse Bird's Nests - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/100251)                  | BOS-based bird nest variety. Requires Kanjs - Bird Nests and Eggs above.                                     |
 | [Better Pelts and Hides](https://www.nexusmods.com/skyrimspecialedition/mods/87277)                       | Pelt/hide texture replacer.                                                                                  |
 | [Fluffy Hanging rabbits](https://www.nexusmods.com/skyrimspecialedition/mods/89148)                       | Hanging rabbit mesh/texture replacer.                                                                        |
 | [FrankBlack's Honey in a Jar](https://www.nexusmods.com/skyrimspecialedition/mods/104496)                 | Honey jar retexture.                                                                                         |

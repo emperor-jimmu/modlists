@@ -1313,6 +1313,9 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
   [Diverse BOS Kitchenware],
   [],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112361")[Nexus]],
+  [HFs - Diverse Inkwell and Quill (BOS)],
+  [Diverse inkwell and quill meshes via BOS or Model Swapper.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132023")[Nexus]],
   [Dynamic Things Alternative - BOS],
   [],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60741")[Nexus]],
@@ -1504,6 +1507,9 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
   [Book Covers Skyrim - Lost Library],
   [Adds 150+ lore books from earlier TES games. Content companion; quest-level decision owned by → @world-content-world-content.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/902")[Nexus]],
+  [HFs - Ruined Books],
+  [High-quality ruined/destroyed book clutter meshes. Complements Book Covers Skyrim for damaged books.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132355")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -1575,6 +1581,8 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
   [Blackreach mist/fog visual effect overhaul.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157314")[Valhalla Bridges]],
   [Higher-detail bridge mesh replacers. Mesh-only, no ESP.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171332")[HFs - Imperial Jail Grates]],
+  [High-quality remodel of Imperial jail grate doors/gates. Mesh-only clutter improvement.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157804")[Valhalla Bridges - Addons Patches and Fixes]],
   [Compatibility patches and addon coverage for Valhalla Bridges. Install after base.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/824")[Improved Closefaced Helmets]],
@@ -1599,6 +1607,18 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
   [BOS-based food item variety.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94369")[Diverse Candles - BOS]],
   [BOS-based candle variety.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148317")[Diverse Woodchopping Blocks - BOS]],
+  [BOS-based woodchopping block variety. Requires Happy Little Trees.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154085")[Handcarts - BOS]],
+  [BOS-based handcart variety (6 variants).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/98989")[Diverse Catches - BOS Fish Racks]],
+  [BOS-based fish rack variety at docks/markets.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172724")[CC Fishing Gear Diversified - BOS]],
+  [BOS-based CC fishing gear model variety. Requires AE.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64905")[Kanjs - Bird Nests and Eggs - up to 4k]],
+  [Bird nest and egg retexture. Required by Diverse Bird's Nests.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/100251")[Diverse Bird's Nests - BOS]],
+  [BOS-based bird nest variety. Requires Kanjs - Bird Nests and Eggs above.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/87277")[Better Pelts and Hides]],
   [Pelt/hide texture replacer.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89148")[Fluffy Hanging rabbits]],
@@ -5457,6 +5477,10 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
   [Add-on],
   [#1, #2, #3, #4],
   [Bathhouse outside Whiterun with custom NPCs, vendor, sauna buffs, brandy kegs, rentable bed. Compatible with JK's Whiterun and BiSR.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122422")[Real Water in Buckets and Barrels]],
+  [Add-on],
+  [all],
+  [Visible water in containers (buckets, barrels, pots, pans). iNeed supported. BOS-based. Enhances survival-immersion visual detail.],
   [Minimalist route],
   [Alternative],
   [all],
@@ -6356,6 +6380,7 @@ Small-to-mid-scale worldspace texture between major destinations.
 - *Ancient Land* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/22900")[Nexus]) — Static worldspace flavor and distant landmark presence.
 - *Point The Way* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/352")[Nexus]) — Road guidance and signposting.
 - *Ryn's Standing Stones* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/64256")[Nexus]) — Locked landmark baseline. Each stone becomes a unique environmental setpiece. World geometry only, no gameplay effects.
+- *Haystacks - Mihail's Shards of Immersion* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/125021")[Nexus]) — Haystack clutter variants with retextured shovels/pitchforks. ESP (verify ESL flag).
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives-6>
@@ -6370,6 +6395,7 @@ Small-to-mid-scale worldspace texture between major destinations.
 - *#link("https://www.nexusmods.com/skyrimspecialedition/mods/92814")[Immersive Laundry - Animated]* — Adds animation to the laundry lines. Install after Immersive Laundry.
 - *#link("https://www.nexusmods.com/skyrimspecialedition/mods/20346")[Immersive Laundry Improvement ILIM]* — High-quality laundry texture replacer by Pfuscher. Install after Immersive Laundry.
 - *#link("https://www.nexusmods.com/skyrimspecialedition/mods/42423")[Immersive Laundry - Patches for Multiple City Mods]* — Compatibility patches for city overhaul mods. Install after Immersive Laundry and city mods.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/140081")[Shores of Skyrim — BOS]* — Shoreline overhaul adding rocks, driftwood, and debris to lake, river, and ocean shores. BOS-based, no cell-record edits.
 
 ---
 
@@ -7729,6 +7755,9 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179154")[Chattier Hunters and Fishermen]],
   [Expanded ambient dialogue for hunters and fishermen.],
   [Alternative],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/133266")[Chatty NPCs and Followers]],
+  [Varied idle/contextual dialogue for all NPCs and followers. No behavior changes.],
+  [Baseline — complements existing faction-specific dialogue expansions.],
 )
 
 === Follower Dialogue Expansion (FDE) series by Anbeegod

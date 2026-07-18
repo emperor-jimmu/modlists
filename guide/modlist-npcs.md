@@ -101,6 +101,7 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [Naked Comments Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/142249)                | NPC comments on player nudity.                       | Alternative                                                       |
 | [Collision Dialogue Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/115079)            | Dialogue triggered by NPC collision events.          | Alternative                                                       |
 | [Chattier Hunters and Fishermen](https://www.nexusmods.com/skyrimspecialedition/mods/179154)         | Expanded ambient dialogue for hunters and fishermen. | Alternative                                                       |
+| [Chatty NPCs and Followers](https://www.nexusmods.com/skyrimspecialedition/mods/133266)                | Varied idle/contextual dialogue for all NPCs and followers. No behavior changes. | Baseline — complements existing faction-specific dialogue expansions. |
 
 ### Follower Dialogue Expansion (FDE) series by Anbeegod
 
