@@ -347,6 +347,42 @@ crafting. This section defines how the game plays.
 
 ---
 
+### Specialized Ripperdocs
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23399>
+- **Version:** 1.1.1
+- **Released:** 2025-08-11
+- **Summary:** Each ripperdoc sells only two types of cyberware. Automatically sorts all cyberware — including modded items — to match those specializations. Iconic items are vendor-exclusive with a built-in CET lookup table.
+- **Why:** Vanilla ripperdocs are interchangeable — every vendor sells everything. This forces exploration and makes ripperdoc choices meaningful. Finding an iconic Sandevistan now requires visiting the specialist who carries it, adding RPG depth to cyberware acquisition.
+- **Conflicts:** None known. Designed to complement Ripperdoc Cyberware Specializations but functions independently.
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Built-in CET window (requires button click) shows where each iconic is sold. Works seamlessly with Ripperdoc Vendor UI Enhancements (#23180) for map tooltip integration.
+- **Performance:** None
+
+### Black Chrome - Cyberware Expansion
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16031>
+- **Version:** 1.1.10
+- **Released:** 2024-07-31
+- **Summary:** Adds new cyberware items across all categories. Fair and balanced additions that expand chrome variety without breaking game balance.
+- **Why:** Even with Specialized Ripperdocs, the vanilla cyberware pool can feel shallow on repeat playthroughs. Black Chrome adds meaningful variety — new OS options, new arm mods, new leg implants — while maintaining the "fair and balanced" design philosophy by the same author as Neuralware and SynthDose.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, Cyber Engine Tweaks, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. 13 translation packs available. Same author as Neuralware (#19798) — evaluate both together. Install before Neuralware if using both.
+- **Performance:** None
+
+### Neuralware - Chipware Expansion
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19798>
+- **Version:** 1.2.1
+- **Released:** 2025-03-10
+- **Summary:** 40+ new neural implants with a chipware system — software chips that consume RAM, hardware chips with cooldowns, and skill chips. Relic becomes a neural chip after acquisition. Perk reworks for Chipware Connoisseur and Driver Update.
+- **Why:** Deepens the cyberware system with a new neural capacity resource and chip management layer. Software chips require licenses that expire (or can be cracked), adding an ongoing resource sink. The neural capacity trade-off forces meaningful build decisions — every chip slot matters.
+- **Conflicts:** Incompatible with: Cyberware RNG Bonuses Removed (#15543), More Melees More Fun (#14910), More Cyberware Capacity per Level (#10276), Ripperdoc Current Capacity Bug Fix (#11241). Raven Gemini II (#16209) mostly works but breaks attribute skill bonus chips.
+- **Dependencies:** ArchiveXL, Codeware, Cyber Engine Tweaks, Input Loader, Mod Settings, RED4ext, redscript, Reflex is Cool, TweakXL, VendorsXL. Optional: Audioware (custom sounds), CustomHackingSystem (chipware cracking), Bug Fix - Base Fists (#14130).
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Black Chrome if using both (same author). Moderately complex — test chip interactions before committing to a playthrough. 18 open bugs tracked on Nexus.
+- **Performance:** Light (chip effects and UI additions)
+
 ## Install Order
 
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
@@ -378,11 +414,16 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 25. Renaissance Punk - Perk Scaling
 26. Easier Controller Sprint
 27. Bounties Restored
-28. Much Better Eddies
+28. Specialized Ripperdocs
+29. Black Chrome - Cyberware Expansion
+30. Neuralware - Chipware Expansion
+31. Much Better Eddies
 
 **Notes:**
 - **Skillful** must be installed **before** Skillful Attributes (Skillful Attributes requires it)
 - **Weapon Conditioning** should be installed before Skillful/Skillful Attributes for best compatibility
 - **Flesh and Chrome** addons (Carry Overhaul) go after the main Flesh and Chrome install
+- **Specialized Ripperdocs** goes before Black Chrome and Neuralware so cyberware is correctly distributed across ripperdocs
+- **Black Chrome** and **Neuralware** are by the same author — install Black Chrome first if using both
 - **Much Better Eddies** should be installed last in this category due to its broad economy overrides — install after all other gameplay mods
 - **Damage Scaling and Balance - Extended** must be installed after Damage Scaling and Balance

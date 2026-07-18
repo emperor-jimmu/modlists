@@ -181,6 +181,18 @@ These mods by The Digital Soul use the Native Interactions Framework to add inte
 
 ---
 
+### Jacked In
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27525>
+- **Version:** 1.7.2a
+- **Released:** 2026-02-13
+- **Summary:** Netrunner chair minigame — activate netrunner chairs to breach systems with a risk/reward "Deep-Fry" mechanic. Consecutive successful breaches earn streak bonuses and netrunner XP. NCPD can trace failures. Optional Dark Future integration for nerve/energy penalties.
+- **Why:** Netrunner chairs are scattered across apartments and modded locations as set dressing — this gives them actual gameplay purpose. The risk/reward system adds tension to every hack: stack your streak for escalating rewards, but each breach brings you closer to a lethal trace. Complements the modlist's existing netrunner chair locations.
+- **Conflicts:** None known
+- **Dependencies:** Codeware, Mod Settings, redscript. Optional: Dark Future (#16300) for needs penalties. Supports modded chair locations (auto-detected).
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Highly configurable — adjust Deep-Fry risk accumulation, streak reset timing, NCPD trace difficulty, and chair usage thresholds. Seat switch bonus encourages moving between locations. Ice-baths reduce Deep-Fry gain. Tutorial available.
+- **Performance:** None
+
 ## Install Order
 
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
@@ -201,3 +213,4 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 14. NCH - Jig Jig Street
 15. NCH - Aldecaldo Camps
 16. NCH - 7th Hell Club
+17. Jacked In

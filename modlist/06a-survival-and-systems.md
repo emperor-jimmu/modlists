@@ -174,6 +174,18 @@ to daily life in Night City.
 
 ---
 
+### 1st Night City Bank
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/29412>
+- **Version:** 1.6
+- **Released:** 2026-05-04
+- **Summary:** Full in-game banking system — deposit, withdraw, and take loans with daily compound interest. Loan system with trauma team asset recovery on default. Fraud detection, bankruptcy, push notifications, and biometric authentication.
+- **Why:** Adds meaningful economic depth to Night City. Loans create risk/reward decisions — borrow for chrome but face escalating consequences on missed payments. The 3-day demand period and trauma team recovery prevent loans from being a cheat mechanic. Complements Eviction Notice and Dark Future for a complete survival-economy layer.
+- **Conflicts:** None known
+- **Dependencies:** Calendar (#30331), Redscript Configuration Framework (#30726), Codeware, redscript. Previous versions required Mod Settings (migrated in v1.6).
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Redscript Configuration Framework. Yield-based taxation on interest. Drop Box ATM add-on available for physical banking interactions. Install after Calendar and Redscript Configuration Framework.
+- **Performance:** None
+
 ## Install Order
 
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
@@ -185,9 +197,10 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 5. Dark Future - Urban Survival Gameplay
 6. Drug Dealer
 7. Eviction Notice - Story-Driven Rent System
-8. Anti-Theft Measures
-9. Immersive Meditations - Unmarked Locations
-10. Filthy Access Points
-11. Dedra's Truck Simulator (Convoy Job Delivery)
-12. Immersive Odometer and Fuel System
-13. NC Courier Jobs
+8. 1st Night City Bank
+9. Anti-Theft Measures
+10. Immersive Meditations - Unmarked Locations
+11. Filthy Access Points
+12. Dedra's Truck Simulator (Convoy Job Delivery)
+13. Immersive Odometer and Fuel System
+14. NC Courier Jobs

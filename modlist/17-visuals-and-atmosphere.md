@@ -107,13 +107,26 @@ only -- every visual mod must justify its frametime cost.
 
 ---
 
+### Cyberpunk 2077 HD Reworked Project
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/7652>
+- **Version:** 2.0
+- **Released:** 2023-03-12
+- **Summary:** Comprehensive texture overhaul by Halk Hogan PL (Witcher 3 HD Reworked author). Covers terrain, models/meshes, textures, and foliage across Night City with high-resolution replacements.
+- **Why:** The definitive texture pack for Cyberpunk 2077 — 18K+ endorsements from a proven mod author. Vanilla textures look blurry at 4K resolution (this modlist's baseline). Halk Hogan's replacements are optimized to be performance-neutral or better than vanilla while providing significantly higher visual fidelity.
+- **Conflicts:** Will be overwritten by other texture mods (ETO, Nova Rain, ReLUX). Install early in load order as a baseline texture layer.
+- **Dependencies:** None (standalone texture replacer). REDmod tagged — uses .archive file replacement.
+- **MO2 Notes:** Extract to `archive/pc/mod/`. Tag as **Root**. Install BEFORE ETO and other texture mods — let other visual mods overwrite where they conflict. Large download (multi-GB). Performance testing at 4K recommended.
+- **Performance:** Moderate (increased VRAM usage from high-resolution textures; author's optimizations aim to offset this)
+
 ## Install Order
 
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
-1. Environment Textures Overhaul - ETO
-2. Immersive Night City Fixes
-3. General Shadows Fixes
-4. Preem Mirrors - Reflective Mirror Materials
-5. Nova Rain (and Improved Ripples)
-6. ReLUX (Lighting Redux)
+1. Cyberpunk 2077 HD Reworked Project
+2. Environment Textures Overhaul - ETO
+3. Immersive Night City Fixes
+4. General Shadows Fixes
+5. Preem Mirrors - Reflective Mirror Materials
+6. Nova Rain (and Improved Ripples)
+7. ReLUX (Lighting Redux)

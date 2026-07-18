@@ -163,6 +163,30 @@ depend on. Install these first -- nothing else works without them.
 - **MO2 Notes:** Extract to game root. Tag as **Root**. Custom sites can be added by creating a child of BrowserEventsListener (see CustomSiteExample in optional files).
 - **Performance:** None
 
+### Redscript Configuration Framework
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30726>
+- **Version:** Verify
+- **Released:** 2026-07-07
+- **Summary:** Modern popup-based configuration framework for redscript mods. Replaces legacy Mod Settings for newer mods, offering a clean in-game configuration UI.
+- **Why:** Required by Calendar, 1st Night City Bank, and other modern mods that have migrated from Mod Settings. Provides a more maintainable configuration system.
+- **Conflicts:** None. Coexists with Mod Settings for legacy mod support.
+- **Dependencies:** Codeware, redscript
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Mod Settings (Native Settings UI). Newer mods use this; older mods still use Mod Settings.
+- **Performance:** None
+
+### Calendar
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30331>
+- **Version:** 3.5.0
+- **Released:** 2026-06-07
+- **Summary:** In-game calendar tracking from The Rescue quest anchor point. Handles quest-driven time skips and provides a scheduled-event API for mod integrations like banking and rent systems.
+- **Why:** Foundation framework for time-aware mods. Without a reliable calendar, loan due dates, rent cycles, and scheduled events cannot function correctly. Consumed by 1st Night City Bank and other DigitalVixen-suite mods.
+- **Conflicts:** None
+- **Dependencies:** Codeware, redscript, Redscript Configuration Framework. Pre-v3.5.0 required DigitalVixen Core (no longer needed).
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Redscript Configuration Framework. Configure via Mod Settings -> Calendar (post-heist coma days, poll interval). Date listener API available for mod integrations.
+- **Performance:** None
+
 ## Install Order
 
 1. Visual C++ Redistributable 2022 (system prerequisite)
@@ -175,6 +199,8 @@ depend on. Install these first -- nothing else works without them.
 8. Input Loader
 9. Native Interactions Framework
 10. Native Settings UI
+11. Redscript Configuration Framework
+12. Calendar
 
 All of these are **Root-category** mods -- enable Root Builder in MO2 before
 installing.

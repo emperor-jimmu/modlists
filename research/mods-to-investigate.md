@@ -545,4 +545,133 @@ The following character addons require Night City Allies and should be evaluated
 
 ---
 
+### Impoverished Kabuki Apartment
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27976>
+- **Status:** rejected
+- **Category:** Apartments & Housing (14)
+- **Reason:** Excessive dependency chain (Drug Objects, Native Interactions Framework, World Builder, Phantom Liberty, REDmod) for a single apartment. v1.00 with no updates. 29 endorsements — insufficient community validation. World Builder is a heavyweight dependency not justified by one location mod.
+
+---
+
+### Neuralware - Chipware Expansion
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19798>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** 40+ neural implants and chipware system. See `modlist/05-gameplay-overhaul.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### Ripperdoc Vendor UI Enhancements
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23180>
+- **Status:** approved
+- **Category:** UI & HUD (04)
+- **Install:** Highlights ripperdoc cyberware availability and map tooltips. See `modlist/04-ui-and-hud.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### Specialized Ripperdocs
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23399>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Ripperdoc specialization system. See `modlist/05-gameplay-overhaul.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### GhostNet - Better Netrunning Fix Targeted Breach
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30604>
+- **Status:** rejected
+- **Category:** Gameplay Overhaul (05)
+- **Reason:** Tagged as AI-Generated Content. v1 with only 6 endorsements. Suspiciously ambitious scope for an initial release. No changelog or dependency documentation. Insufficient community validation for inclusion.
+
+---
+
+### Jacked In
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27525>
+- **Status:** approved
+- **Category:** World Interaction (06b)
+- **Install:** Netrunner chair minigame with risk/reward system. See `modlist/06b-world-interaction.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### Calendar
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30331>
+- **Status:** approved
+- **Category:** Core Utilities (02)
+- **Install:** In-game calendar framework with scheduled-event API. See `modlist/02-core-utilities.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### 1st Night City Bank
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/29412>
+- **Status:** approved
+- **Category:** Survival & Systems (06a)
+- **Install:** In-game banking with deposits, withdrawals, and loans. See `modlist/06a-survival-and-systems.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### ClockWidget
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/20572>
+- **Status:** rejected
+- **Category:** UI & HUD (04)
+- **Reason:** Redundant with other HUD options under consideration (Wrist HUD #31097, Informative Widgets #31261). Basic clock widget — limited scope doesn't justify the CET + Codeware dependency overhead when more feature-rich alternatives exist.
+
+---
+
+### Black Chrome - Cyberware Expansion
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16031>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05)
+- **Install:** Cyberware expansion with fair and balanced items. See `modlist/05-gameplay-overhaul.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### Zenitex Modular Military Backpack - ArchiveXL
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18152>
+- **Status:** approved
+- **Category:** Armor & Gear (12)
+- **Install:** Modular backpack system with 60 items and gameplay bonuses. See `modlist/12-armor-and-gear.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### Car Modification Shop
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/4034>
+- **Status:** approved
+- **Category:** Vehicles & Transport (15)
+- **Install:** In-game vehicle customization shop. See `modlist/15-vehicles-and-transport.md`.
+- **Rejection Reason:** N/A
+
+---
+
+### Cyberpunk 2077 HD Reworked Project
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/7652>
+- **Status:** approved
+- **Category:** Visuals & Atmosphere (17)
+- **Install:** Comprehensive texture overhaul by Halk Hogan. See `modlist/17-visuals-and-atmosphere.md`.
+- **Rejection Reason:** N/A
+
+---
+
+---
+
 *Mods will be added here as they are discovered on Nexus Mods.*

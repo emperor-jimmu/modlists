@@ -85,6 +85,18 @@ vehicles, car customization, vehicle handling, and transport systems.
 
 ---
 
+### Car Modification Shop
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/4034>
+- **Version:** 2.2.0.1
+- **Released:** 2022-03-06
+- **Summary:** In-game vehicle customization shop with visual and performance modifications. Access via CET hotkey to modify owned vehicles with paint, tuning, and handling upgrades. The definitive vehicle modification mod with 24K+ endorsements.
+- **Why:** Vanilla vehicle customization is limited to CrystalCoat paint jobs. This adds comprehensive vehicle tuning — performance upgrades, visual mods, and handling adjustments — making vehicle ownership feel more personal and rewarding. Essential for any vehicle-focused modlist.
+- **Conflicts:** None known. CET-based — compatible with redscript vehicle mods.
+- **Dependencies:** Cyber Engine Tweaks 1.37.1+
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Uses CET-KIT by Psiberx (MIT license). Access via CET overlay. Modifications are persistent per-vehicle. Install after Virtual Car Dealer and Dedka Dealership so modified vehicles can be purchased first.
+- **Performance:** None
+
 ## Install Order
 
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
@@ -95,3 +107,4 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 4. Immersive Third-Person Vehicle Camera - TPP Cam Toolkit
 5. Quadra Turbo-Z
 6. Bikes of the Dark Future - Arch V4
+7. Car Modification Shop

@@ -277,6 +277,18 @@ Clean, informative, immersive.
 
 ---
 
+### Ripperdoc Vendor UI Enhancements
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23180>
+- **Version:** 1.04
+- **Released:** 2025-08-04
+- **Summary:** Highlights cyberware category labels in the ripperdoc UI when items are on sale. Map tooltip integration showing each ripperdoc's cyberware specializations. Fully translated to all languages.
+- **Why:** With Specialized Ripperdocs installed, knowing which vendor sells what becomes essential for planning cyberware purchases. This eliminates guesswork and makes the ripperdoc specialization system usable without referencing external tables.
+- **Conflicts:** None known. Compatible with Ripperdoc Cyberware Specializations and Specialized Ripperdocs.
+- **Dependencies:** Codeware, redscript. Optional: Mod Settings for in-game configuration. Integrates with Specialized Ripperdocs (#23399) and Ripperdoc Cyberware Specializations (#17110) if detected.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Single `.reds` file install. For MO2 users with RCS: see pinned comment for compatibility steps if enhanced tooltips don't appear.
+- **Performance:** None
+
 ## Install Order
 
 All **Root**-category mods -- enable Root Builder in MO2 before installing.
@@ -299,5 +311,6 @@ All **Root**-category mods -- enable Root Builder in MO2 before installing.
 16. Finished Quests Sorted
 17. Loot Icons Extension
 18. RAM bar fix
+19. Ripperdoc Vendor UI Enhancements
 
 Conflict Begone is a **Utility**-category standalone diagnostic tool -- install outside normal load order.
