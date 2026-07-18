@@ -285,10 +285,10 @@ $a.Invoke("")
 $a.Invoke("#let ew-version = `"$version`"")
 $a.Invoke("#let ew-date = `"$date`"")
 $a.Invoke("")
-$a.Invoke("// -- Page Setup --")
-$a.Invoke('#set text(size: 11pt)')
+$a.Invoke("// -- Fonts --")
+$a.Invoke('#set text(font: ("Inter", "Liberation Sans", "Arial"), size: 11.5pt, leading: 6pt)')
 $a.Invoke('#show link: set text(fill: rgb("#2563EB"))')
-$a.Invoke('#set raw(tab-size: 4)')
+$a.Invoke('#set raw(font: ("JetBrains Mono", "Consolas", "Courier New"), tab-size: 4)')
 $a.Invoke('// Inline raw in body text keeps monospaced font; headings have backticks stripped')
 $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2cm, right: 1.5cm, top: 1.5cm, bottom: 2cm),')
@@ -302,10 +302,10 @@ $a.Invoke("")
 $a.Invoke("// -- Heading Styling --")
 $a.Invoke('#show heading: it => {')
 $a.Invoke("  set text(")
-$a.Invoke('    size: if it.level == 1 { 24pt } else if it.level == 2 { 16pt } else if it.level == 3 { 12pt } else { 11.5pt },')
+$a.Invoke('    size: if it.level == 1 { 24pt } else if it.level == 2 { 16pt } else if it.level == 3 { 12.5pt } else { 11.5pt },')
 $a.Invoke('    fill: if it.level == 1 { rgb("#1e293b") } else if it.level == 2 { rgb("#334155") } else { rgb("#475569") },')
 $a.Invoke("  )")
-$a.Invoke('  if it.level == 1 { v(1.5cm) } else if it.level == 2 { pagebreak(weak: true); v(0.8cm) } else if it.level >= 3 { v(0.4cm) }')
+$a.Invoke('  if it.level == 1 { v(1.5cm); pagebreak(weak: true) } else if it.level == 2 { v(0.8cm) } else if it.level >= 3 { v(0.4cm) }')
 $a.Invoke("  it")
 $a.Invoke('  if it.level == 1 { v(0.5cm) }')
 $a.Invoke("}")
@@ -346,7 +346,7 @@ Write-Host "Generated $typFile ($((Get-Item $typFile).Length / 1KB -as [int]) KB
 # -- Compile to PDF --
 Write-Host "Compiling PDF..."
 $pdfFile = Join-Path $outputDir "elder-wilds.pdf"
-$stderr = & typst compile --root (Join-Path $root ".") $typFile $pdfFile 2>&1
+$stderr = & typst compile --root (Join-Path $root ".") --font-path $fontDir $typFile $pdfFile 2>&1
 $pdfFileObj = Get-Item $pdfFile -ErrorAction SilentlyContinue
 if ($pdfFileObj -and $pdfFileObj.Length -gt 0) {
   Write-Host "PDF generated -> $pdfFile ($($pdfFileObj.Length / 1KB -as [int]) KB)" -ForegroundColor Green
