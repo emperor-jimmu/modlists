@@ -182,6 +182,9 @@
 - [x] Galosphere — Darker Depths chosen as the cave content mod instead; Galosphere gems are orphan content
 - [x] Environmental — biome conflict with Terralith
 
+### Added Mods (Jul 2026 batch 4)
+- [x] Dynamic Villager Trades (Wave 0 — Village & Trading)
+
 ### Added Mods (Jul 2026 batch 3)
 - [x] 3D Skin Layers (Wave 0 — Visual & Client QoL)
 - [x] Better Safe Bed (Wave 0 — Visual & Client QoL)

@@ -216,6 +216,21 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
 
+### Village & Trading
+
+| Mod                                                                                                                               | Role                                                                      |
+|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [Dynamic Villager Trades Neoforge](https://www.curseforge.com/minecraft/mc-mods/dynamic-villager-trades-neoforge) 1.0.0         | Dynamically changing villager trades — villagers specialize in what you buy from them, reducing the need for massive trading halls |
+
+### Configuration — Village & Trading
+
+**Dynamic Villager Trades** (`config/dynamicvillagertraders.properties`):
+
+- `global_randomness` = `0.7` (recommended, default 1.0) — Lower values make villagers settle on specific trades faster; higher values increase time to get desired trades. Multiplied by group randomness in the datapack.
+- `refresh_delay` = `1` (recommended, default 0) — Number of restocks between trade changes. `1` means trades change every other restock, giving you time to use existing trades before they rotate. Trades always change on level-up regardless.
+- `no_book_duplicates` = `true` — Prevents librarians from selling the same enchant at different levels simultaneously.
+- `enchant_repair_compat` = `false` — Adds Curse of Vanishing to every book sold by librarians (for Enchant & Repair compatibility). Keep disabled unless that mod is added.
+
 ### Texture Packs
 
 | Pack                                                                                                                              | Role                                                                      |
@@ -850,7 +865,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                      |
 |----------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 57      | 9      | 66      | Performance, QoL, time control, storage, travel, graves, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                                                                                  |
+| Wave 0 — Foundation        | 58      | 9      | 67      | Performance, QoL, time control, storage, travel, graves, village trading, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                                                                                  |
 | Wave 1 — Tech              | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                              |
 | Wave 2 — Exploration       | 24      | 6      | 30      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships                                                                                       |
@@ -861,4 +876,4 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                     |
 | Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                                                       |
 | Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                  |
-| **Total**                  | **140** | **41** | **181** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                              |
+| **Total**                  | **141** | **41** | **182** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                              |
