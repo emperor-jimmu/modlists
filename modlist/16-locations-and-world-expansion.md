@@ -24,7 +24,7 @@ rooftop access, and environmental additions that expand Night City.
 
 ### Weeee - New H10 Exit
 
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/22334
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22334>
 - **Version:** 2.0.2
 - **Released:** 2025-06-25
 - **Summary:** Adds a new exit from V's H10 apartment building via a garbage chute slide, providing an alternative route to street level near Coach Fred.
@@ -38,7 +38,7 @@ rooftop access, and environmental additions that expand Night City.
 
 ### Urban Garden Grocery Store
 
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/28520
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/28520>
 - **Version:** 1.0
 - **Released:** 2026-03-29
 - **Summary:** Adds a functional grocery store interior in Santo Domingo, overrun by drugs. Browse aisles, interact with the environment, and use as a drug cooking station when paired with Drug Dealer mod.
@@ -52,7 +52,7 @@ rooftop access, and environmental additions that expand Night City.
 
 ### Casino Reforged - Assets Pack
 
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/26290
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26290>
 - **Version:** 1.1
 - **Released:** 2025-12-18
 - **Summary:** Shared asset pack for the Casino Reforged series. Provides models, textures, and props used by all casino phases. Required dependency for Phases 1 and 2.
@@ -66,7 +66,7 @@ rooftop access, and environmental additions that expand Night City.
 
 ### Casino Updates - Lamps
 
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/19614
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19614>
 - **Version:** 1.0
 - **Released:** 2025-11-12
 - **Summary:** Adds light sources and lamp models to the casino roof area, improving nighttime visibility and atmosphere around the North Oak casino.
@@ -80,7 +80,7 @@ rooftop access, and environmental additions that expand Night City.
 
 ### Casino Updates - Neon
 
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/25695
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25695>
 - **Version:** 1.0
 - **Released:** 2025-11-16
 - **Summary:** Adds neon signage to many areas of the casino roof, bringing colorful nighttime illumination to the North Oak casino district.
@@ -94,7 +94,7 @@ rooftop access, and environmental additions that expand Night City.
 
 ### Casino Reforged - Phase 1 - Access Areas and Fixes
 
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/25430
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25430>
 - **Version:** 1.3.1
 - **Released:** 2025-11-06
 - **Summary:** Opens access to the previously-inaccessible North Oak casino area through a cleared tunnel. Fixes terrain, collision, and adds entry points for the casino building. Co-authored with Oranje3.
@@ -108,7 +108,7 @@ rooftop access, and environmental additions that expand Night City.
 
 ### Casino Reforged - Phase 2 - Access Road and Entrance
 
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/25556
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25556>
 - **Version:** 1.1.2
 - **Released:** 2025-11-10
 - **Summary:** Completes the casino approach with a proper access road, car park, and grand entrance. v1.2+ unlocks the casino interior with lobby, floors, and a custom fast travel point. Co-authored with Kaoziun.

@@ -265,7 +265,8 @@ and relationship progression.
 - **Performance:** None
 
 ### Non-Canon Romances Enhanced
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/20466
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/20466>
 - **Version:** 1.0
 - **Released:** 2025-03-01
 - **Summary:** Expands romance content with non-canon romance options, adding new dialogue, scenes, and relationship progression for characters outside the four main romance paths.
@@ -276,7 +277,8 @@ and relationship progression.
 - **Performance:** None
 
 ### Pleasures of Night City - Sex Animations Library
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/22962
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22962>
 - **Version:** 1.0
 - **Released:** 2025-07-01
 - **Summary:** Animation framework providing intimate scene animations used by other romance and relationship mods. Pure library — no standalone content.
@@ -287,7 +289,8 @@ and relationship progression.
 - **Performance:** None
 
 ### Responsive V
-- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/22694
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22694>
 - **Version:** 1.0
 - **Released:** 2025-06-01
 - **Summary:** V reacts dynamically with contextual voice lines and animations to open-world events and Johnny's passenger-seat commentary while driving.

@@ -56,16 +56,72 @@ soundscapes, weapon audio, and vehicle sounds.
 - **MO2 Notes:** Extract to game root. Configure via Native Settings UI -> Mods -> Volume Lock Fix. Set desired lock levels for each audio channel (master, music, SFX, dialogue, vehicle).
 - **Performance:** None
 
+### Deadeye Sound Remover
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/12787>
+- **Version:** 1.0
+- **Released:** 2024-02-04
+- **Summary:** Removes the cartoonish "DOINK!" sound effect that plays when the Deadeye perk triggers, while keeping the perk bonuses intact.
+- **Why:** The Deadeye perk sound is jarring and immersion-breaking. This is the lightest possible fix — one TweakXL folder, zero dependencies, zero performance cost. Included in 51 Nexus collections including Welcome to Night City and NCR Core.
+- **Conflicts:** None known
+- **Dependencies:** None
+- **MO2 Notes:** Extract to game root. Creates `r6/tweaks/DeadeyeNoSound/`. To uninstall, delete the folder. No REDmod or script extenders required.
+- **Performance:** None
+
+### Immersive Breathing
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9423>
+- **Version:** 2.12a
+- **Released:** 2023-10-01
+- **Summary:** Adds breathing sound effects and VFX to V: medium breathing when idle, heavy breathing when exhausted. Sprint, slide, and jump gain stamina costs for added realism.
+- **Why:** V is a living person — breathing feedback adds physical presence and grounds the first-person experience. Stamina costs on movement actions create meaningful resource tradeoffs that pair well with survival systems.
+- **Conflicts:** Known issue with Dead Eyes perk (WIP fix). May conflict with other stamina-modifying mods.
+- **Dependencies:** Cyber Engine Tweaks, Immersive Stamina FX, Responsive V, TweakXL
+- **MO2 Notes:** Choose CET or TweakXL version. TweakXL version installs to `r6/tweaks/`, CET version to `bin/x64/plugins/cyber_engine_tweaks/mods/`. Recommended companion mods: Player Movement Overhaul, Walk by Default 2.0. See optional file Breathing System Active Only When Sprinting for a lighter variant.
+- **Performance:** Light (real-time audio + VFX)
+
+### 80's Retrowave Synthwave Radio with FEMALE DJ VOICE - RadioEXT
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/3461>
+- **Version:** 3
+- **Released:** 2023-10-15
+- **Summary:** Custom retrowave/synthwave radio station with a female DJ voice, using the RadioExt framework. Full station with music tracks and DJ banter.
+- **Why:** Synthwave is the definitive cyberpunk music genre and fits Night City's aesthetic perfectly. 1768 endorsements and zero bug reports make this a proven, stable addition. RadioExt-based for clean integration with the game's radio system.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks, RadioExt, RED4ext
+- **MO2 Notes:** Extract to game root. Station installs into RadioExt structure under `bin/x64/plugins/cyber_engine_tweaks/mods/radioExt/`. Must install RadioExt first. Custom DJ voice is pre-recorded (not AI-generated).
+- **Performance:** Light (additional audio streaming)
+
+### Cosmopolitan Night City
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/5909>
+- **Version:** 3.0
+- **Released:** 2022-09-29
+- **Summary:** NPCs across Night City speak 11 different languages with full voice acting and lipsync. Includes Kiroshi subtitle translation effects, correct dialogue timing, and gendered lines. Available in four editions.
+- **Why:** In a city where cyberware can translate any language in real time, monolingual NPCs break immersion. This mod makes Night City feel like a true global metropolis. 2523 endorsements, v2.3 compatibility confirmed. Significantly boosts replayability by letting players hear international voice casts.
+- **Conflicts:** Other mods modifying NPC dialogue voice lines. Compatibility patches available for Polyglot V and Change V's Native Language.
+- **Dependencies:** Codeware and RED4ext (required for v3.0 Customizable edition). Lite and Enhanced editions have no script dependencies.
+- **MO2 Notes:** FOMOD installer -- choose edition carefully. **Enhanced Edition:** all features (voice+lipsync+Kiroshi effect+correct timing+gendering). **Lite Edition:** minimal changes, more lore-friendly. **Customizable Edition (v3.0):** advanced features via Codeware. Subtitles available in 19 languages -- select matching patches in FOMOD. Large download (~multiple GB depending on edition).
+- **Performance:** Light to Moderate (multi-language audio streaming, Codeware runtime for v3.0)
+
 ---
 
 ## Install Order
 
 1. RadioExt
-2. Make Your Own Radio Station
-3. PHONKWAVE RADIO (radioExt)
-4. Volume Lock Fix
+2. Deadeye Sound Remover
+3. Immersive Breathing
+4. 80's Retrowave Synthwave Radio with FEMALE DJ VOICE - RadioEXT
+5. Make Your Own Radio Station
+6. PHONKWAVE RADIO (radioExt)
+7. Cosmopolitan Night City
+8. Volume Lock Fix
 
 **Notes:**
+
 - **RadioExt** must be installed before any custom radio stations
-- All custom radio stations (Make Your Own, PHONKWAVE) depend on RadioExt
-- **Volume Lock Fix** should be installed after all other audio mods to capture their volume changes
+- All custom radio stations (80's Retrowave, Make Your Own, PHONKWAVE) depend on RadioExt
+- **Deadeye Sound Remover** is a standalone TweakXL tweak with no deps — install anytime before Volume Lock Fix
+- **Immersive Breathing** requires Immersive Stamina FX, Responsive V, and TweakXL — ensure those are installed first
+- **Cosmopolitan Night City** has a complex FOMOD — review edition choice carefully before installing. Lite/Enhanced editions have no script deps; v3.0 Customizable requires Codeware+RED4ext
+- **Volume Lock Fix** should be installed last to capture volume changes from all audio mods

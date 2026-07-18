@@ -672,6 +672,96 @@ The following character addons require Night City Allies and should be evaluated
 
 ---
 
----
+### Nomad Cache - New Iconic Weapons
 
-*Mods will be added here as they are discovered on Nexus Mods.*
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19234>
+- **Status:** approved
+- **Category:** Weapons (13)
+- **Pros:** Adds 4 Nomad-themed iconic weapons (Inferno-V8R, Warden Infernal, Satara Trailblazer, Tomahawk Tepew) with custom models and effects. Part of Merchants of Death collective. High quality (1062 endorsements). World-implemented location-based acquisition. 0 bug reports.
+- **Cons:** Requires Phantom Liberty. Heavy dependency chain (ArchiveXL, Codeware, RED4ext, redscript, Trigger Mode Control, TweakXL).
+- **Alternatives:** Vanilla iconic weapons, other weapon pack mods
+- **Notes:** v1.0.1 by ogMisoru. Same author as Mox Cache. Trigger Mode Control required for Trailblazer variant. Weapons are acquired through world exploration, not crafting.
+
+### Expanded Ammo Counts
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/5040>
+- **Status:** approved
+- **Category:** Weapons (13) / QoL
+- **Pros:** Simple, lightweight (CET only). Offers both Unlimited and Realistic versions. High endorsements (1579). Choose-your-balance design fits modlist philosophy.
+- **Cons:** V1.0, no recent updates. 4 bug reports. "Unlimited" version conflicts with no-cheat philosophy if not using Realistic option.
+- **Alternatives:** Vanilla ammo counts
+- **Notes:** v1.0 by E3roKK. Evaluate only the Realistic version. The mod is simple enough that v2.31 compatibility is likely unaffected by game patches.
+
+### Better Chimera Mods
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18209>
+- **Status:** approved
+- **Category:** Weapons (13)
+- **Pros:** Overhauls underperforming Chimera weapon mods to be more impactful. Tagged "Fair and balanced." 1126 endorsements. 0 bug reports. Part of the Merchants of Death quality ecosystem. 8 other mods depend on it.
+- **Cons:** Requires Phantom Liberty. Dependency chain (ArchiveXL, redscript, TweakXL). Only affects Phantom Liberty content.
+- **Alternatives:** Vanilla Chimera mods
+- **Notes:** v1.1.1 by Seijax. v1.1.1 added Pyromania Unchained compatibility. Firecracker reworked from +25% damage instance to something more nuanced.
+
+### Mox Cache - New Iconic Weapons
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/20073>
+- **Status:** approved
+- **Category:** Weapons (13)
+- **Pros:** 3 Mox-themed iconic weapons with creative mechanics (Sloppy Seconds bounce-between-enemies, Glitch Bitch micro-taser activation, secret third weapon). World-integrated acquisition through vendors and exploration. 1115 endorsements. 0 bugs. 13 mods depend on it. Last updated Aug 2025.
+- **Cons:** Requires Phantom Liberty. Heavy dependency chain (ArchiveXL, Codeware, RED4ext, redscript, TweakXL). Secret third weapon is a dildo -- may not fit every playthrough's tone.
+- **Alternatives:** Vanilla iconic weapons, other weapon caches
+- **Notes:** v1.0.2 by ogMisoru (Merchants of Death). One weapon acquired from Lizzie's Bar, one from world exploration, one from Jig-Jig Street vendor. Alternate acquisition via Mr. Blue Eyes vendor mod available.
+
+### Weapon Sound Overhaul - REDmod
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9710>
+- **Status:** rejected
+- **Category:** Audio & Music (18)
+- **Rejection Reason:** v0.1 (early/unfinished). 5 bug reports with known issues (Archangel full auto, Widowmaker hipfire, Skippy ADS use default sounds). Author acknowledges full auto replacement not yet figured out. Last update Oct 2023. Revisit if development resumes.
+
+### Cosmopolitan Night City
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/5909>
+- **Status:** approved
+- **Category:** Audio & Music (18) / Immersion
+- **Pros:** NPCs speak 11 languages with full voice+lipsync. Kiroshi subtitle translation effects. Four editions from minimalist Lite to full Enhanced and v3.0 Customizable (Codeware-powered). 2523 endorsements. Updated for game v2.3. Subtitles in 19 languages. Huge post history (1001).
+- **Cons:** Codeware edition (v3.0) adds dependency chain (Codeware, RED4ext). Large file size. 3 bug reports. May conflict with other dialogue/audio mods. FOMOD complexity.
+- **Alternatives:** Vanilla English-only NPCs, Polyglot V (companion mod for V)
+- **Notes:** v3.0. Four editions: Enhanced, Lite, Customizable (Codeware), plus variants. Compatibility patches available for Polyglot V and Change V's Native Language. Adds significant immersion and replayability.
+
+### 80's Retrowave Synthwave Radio with FEMALE DJ VOICE - RadioEXT
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/3461>
+- **Status:** approved
+- **Category:** Audio & Music (18)
+- **Pros:** Adds a full retrowave/synthwave radio station with custom female DJ voice. 1768 endorsements. 0 bug reports. Fits Cyberpunk aesthetic well. Uses RadioEXT framework.
+- **Cons:** Requires CET, RadioEXT, and RED4ext. Music licensing -- custom tracks not from actual 80s artists. May clash tonally with vanilla stations.
+- **Alternatives:** Vanilla radio stations, other RadioEXT custom stations
+- **Notes:** v3. Single file. Preview video available on mod page. Evaluate how well the custom DJ voice integrates with vanilla radio presentation.
+
+### Immersive Breathing
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9423>
+- **Status:** approved
+- **Category:** Audio & Music (18) / Immersion (05a)
+- **Pros:** Adds breathing VFX/sounds when V is idle (medium) or exhausted (heavy). Sprint/slide/jump gain stamina cost for realism. 1645 endorsements. Two versions (CET and TweakXL). Recommended for survival/immersion loadouts.
+- **Cons:** Requires CET, Immersive Stamina FX, Responsive V, and TweakXL. 4 bug reports, including Dead Eyes perk issues. Stamina cost on movement may be frustrating for some players.
+- **Alternatives:** Vanilla (no breathing effects), AGIS Survival System Patch
+- **Notes:** v2.12a. Recommended companion mods: Player Movement Overhaul, Walk by Default 2.0. Pairs well with survival systems. The stamina cost on sprint/slide/jump may need config tweaking.
+
+### Deadeye Sound Remover
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/12787>
+- **Status:** approved
+- **Category:** Audio & Music (18) / QoL
+- **Pros:** Cleanly removes the cartoonish "DOINK!" sound from Deadeye perk. 963 endorsements, 374K unique DLs. No dependencies. Simple install (one tweak folder). Included in 51 collections. 1 bug report.
+- **Cons:** Extremely narrow scope -- only fixes one audio complaint. May be considered unnecessary by players who don't mind the sound.
+- **Alternatives:** Vanilla Deadeye sound
+- **Notes:** v1.0 by Seijax (uploaded Feb 2024). Pure TweakXL tweak -- remove folder to uninstall. "No redmod required." Included in major collections like Welcome to Night City 2.31a and NCR Core 2.31a.
+
+### Scarlett Johansson - AI Voice Enhancement Mod for Female V
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9998>
+- **Status:** rejected
+- **Category:** Audio & Music (18) / Voice
+- **Rejection Reason:** AI-generated voice content (ethical concerns). Last updated Oct 2023 with no ongoing development. AI voice quality inconsistent for story-critical emotional scenes. Only affects English Female V. 2 bug reports. Revisit if a higher-quality version emerges or AI voice tech improves.
