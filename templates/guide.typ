@@ -13,12 +13,11 @@
 #align(center + horizon, [
   #block(height: 4cm)
   #text(size: 36pt, weight: "bold", fill: navy)[Getting Started]
-  #block(height: 1.2cm)
+  #block(height: 0.7cm)
   #text(size: 18pt, fill: gray)[Minecraft 1.21.1 — NeoForge]
-  #block(height: 0.8cm)
+  #block(height: 1.0cm)
   #line(length: 50%)
-  #block(height: 0.8cm)
-  #text(size: 14pt, fill: luma(120))[Setup guide and tutorials]
+  #text(size: 14pt, fill: luma(140))[Setup guide and tutorials]
   #block(height: 2cm)
   #text(size: 11pt, fill: luma(160))[Version #version]
 ])

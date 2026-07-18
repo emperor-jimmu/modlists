@@ -81,7 +81,10 @@ If installing manually:
 
 **Important**: Do not add any mod `.jar` files yet. Wave -1 is complete when the vanilla 1.21.1 client runs under NeoForge with no mods installed.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 0 — Foundation
 
@@ -330,7 +333,10 @@ seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (l
 
 - `mixin.perf.dynamic_resources` = `true` — Load block/item models lazily instead of all at startup. **Biggest single launch-time speedup** in the pack. Reduces memory usage too. Disable if you see missing textures or broken models.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 1 — Tech (Create + Mekanism + AE2)
 
@@ -422,7 +428,10 @@ The following library mods are required by Create: Gunsmithing:
 - **Create: The Factory Must Grow** adds oil drilling, distillation towers, blast furnaces, and diesel engines — expanding Create's mechanical toolkit into heavy industry. Its steel replaces Mekanism's steel (TFMG's blast furnace is the intended steel source; Mekanism's steel recipe is disabled by the Mekanism TFMG Compat mod). TFMG aluminum and plastic feed into Mekanism's advanced processing chains.
 - **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both JEI item blacklist config and per-recipe toggles are available for pack tuning.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 1.5 — Colony Management
 
@@ -444,7 +453,10 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 - MineColonies Colony Research milestones signal Phase 2 progression readiness. For example, the "Industrial Revolution" research (Colony level 3, 5000 research points) serves as a soft gate — by the time you reach it, you have the colony infrastructure to support Mekanism and AE2. Hard recipe gating (e.g., Atomic Alloy locked behind research) requires a data pack or scripting mod and is not implemented in this pack — the progression pillars in AGENTS.md define the intent, and playtesting determines if soft gating is sufficient.
 - Chunk Loaders (Wave 0) are essential for MineColonies — they keep workers active while you explore other dimensions. Place at least one at your colony after setting up your base.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 2 — Exploration (World & Dimensions)
 
@@ -552,7 +564,10 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 **Interdependency note — Towns & Towers + Cristel Lib**: Towns & Towers requires **Cristel Lib** (included in Wave 2 Dependencies above). Without it the game will crash at startup. Cristel Lib provides structure config and runtime datapack support that Towns & Towers relies on for its biome-specific village variants.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 3 — Equipment Magic & RPG
 
@@ -644,7 +659,10 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - **Spell Engine** is required by both Relics RPG and Skill Tree (RPG Series) — it was previously considered for removal but must be retained as a mandatory dependency of these core RPG mods.
 - **Ranged Weapon API** is shared between Relics RPG and Skill Tree — install once, used by both.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 4 — Food, Farming & Comfort
 
@@ -675,7 +693,10 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - More Delight v26.04.30+ requires **Delight Lib** as a hard dependency — install both or neither.
 - **Serene Seasons** (Wave 2) affects crop growth rates seasonally — crops planted out-of-season grow slower. This adds depth to greenhouse planning with Farmer's Delight crops. Temperature damage is disabled, so crops are the only seasonal pressure.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 4.5 — Quests
 
@@ -687,7 +708,10 @@ Procedural bounty system that gives purpose to exploration and material collecti
 
 Bountiful generates quests automatically — find a bounty board in any village, accept tasks, earn rewards. Fully optional. Items from installed mods automatically appear in its reward pools.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 5 — Combat & Mobs
 
@@ -718,7 +742,10 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 
 **Cut Through**: Works alongside Better Combat — lets you swing through transparent blocks (tall grass, vines, cobwebs) without breaking them, keeping your attack chain uninterrupted. Client-side only, no conflicts with any combat mod.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 6 — Building & Decoration
 
@@ -751,7 +778,10 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 | [Resourceful Lib](https://www.curseforge.com/minecraft/mc-mods/resourceful-lib)                       | Core library — required by Handcrafted      |
 | [Fusion (Connected Textures)](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures) | Connected textures — required by Rechiseled |
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Wave 7 — Space Exploration
 
@@ -788,7 +818,10 @@ Sky Aesthetics is embedded in Stellaris — no separate install needed.
 
 Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materials that gate them behind Mekanism mid-game processing and AE2 infrastructure. Oxygen systems and fuel refining add a parallel supply-chain puzzle that rewards industrial automation.
 
----
+
+```typst
+#pagebreak()
+```
 
 ## Mod Count Summary
 

@@ -16,7 +16,6 @@
   show raw.where(block: false): set text(size: 9pt, fill: rgb("#c7254e"), font: "Consolas")
 
   show heading.where(level: 1): it => {
-    pagebreak(weak: true)
     set text(size: 20pt, weight: "bold", fill: navy)
     it
   }
