@@ -102,6 +102,7 @@ How creatures attack, react, and express identity once combat starts.
 | [Epic Dwarven Centurion Combat](https://www.nexusmods.com/skyrimspecialedition/mods/181405) | Alternative | Dwarven Centurion combat/animation overhaul. |
 | [New Creature Animation - Dwarven Centurion - SCAR2.0 - MCO - Nemesis or Pandora](https://www.nexusmods.com/skyrimspecialedition/mods/137805) | Alternative | Dwarven Centurion animation pack requiring MCO/BFCO or SCAR. Mutually exclusive with Epic Dwarven Centurion Combat — pick one. |
 | [SkyTEST Lite ESL](https://www.nexusmods.com/skyrimspecialedition/mods/84539) / [Animal Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/1532) / [Pelagius's Wildlife AI](https://www.nexusmods.com/skyrimspecialedition/mods/144909) | Alternative | Animal-side mods drifting into ecology territory. |
+| [World Eater Beater](https://www.nexusmods.com/skyrimspecialedition/mods/179758)              | Alternative | Alduin boss fight overhaul — phase-based encounter, new attacks, arena improvements. Replaces vanilla final-boss design. |
 
 ---
 

@@ -134,6 +134,7 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [Companions Dialogue Bundle](https://www.nexusmods.com/skyrimspecialedition/mods/93592) | Expanded Companion faction dialogue bundle.       | Alternative |
 | [Snow Elf Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/155222) | Race-aware dialogue for Snow Elf PCs across quests — Helgen, TG, DB, Dawnguard. | AI-voiced (ElevenLabs). Supports The Ancient Falmer, Lost Races of Nirn, True Snow Elf Race. Requires SKSE, Address Library, KID. |
 | [Custom Race Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/169521) | Consolidated race-dialogue mod combining Snow Elf, Dwemer, Ayleid, Maormer, Tsaesci. | Same author as Snow Elf Dialogue. Incompatible with Race Compatibility Dialogue SSE. |
+| [Skyrim Revoiced](https://www.nexusmods.com/skyrimspecialedition/mods/178085) | Revoiced AI-overhaul — NPC voice diversity across all holds and factions. Compatible with existing dialogue expansions. | Large-scale voice replacer. Test for overlap with FDE series and custom follower dialogue. |
 
 ---
 

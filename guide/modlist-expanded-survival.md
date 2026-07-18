@@ -36,6 +36,7 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
 | Mod                                                                                       | Type        | Dial           | Notes                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------|-------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline    | #1, #2, #3, #4 | SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution. |
+| [Saunas of Skyrim - The Bathing Mare (External)](https://www.nexusmods.com/skyrimspecialedition/mods/169240) | Add-on      | #1, #2, #3, #4 | Bathhouse outside Whiterun with custom NPCs, vendor, sauna buffs, brandy kegs, rentable bed. Compatible with JK's Whiterun and BiSR. |
 | Minimalist route                                                                          | Alternative | all            | Leave hygiene implied through inns, rivers, roleplay.                                                                                                                      |
 
 ### Key Features
@@ -68,6 +69,7 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 - Equipment handling, overlays, and optional integrations need stricter discipline than a simple immersion add-on.
 - Only hard runtime requirements should be treated as mandatory.
 - For Steam runtime `1.6.1170`, Backported Extended ESL Support requirement does not apply.
+- [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) adds bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. Alternative to dedicated sauna/bathhouse location mods.
 
 ---
 

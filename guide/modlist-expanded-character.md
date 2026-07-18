@@ -161,6 +161,7 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 | [Vampire Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/97185) | Add-on | all        | New vampire-themed clothing items. Author: Hornclonic. |
 | [Growl — Werebeasts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/14645)   | Baseline    | #1, #4     | Beast-form progression, perks, 5 werebear varieties.                           |
 | [Thunderchild — Epic Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/1460)      | Baseline    | #1, #2, #4 | 19 new shouts (57 words), meditation mechanics, boss encounters.               |
+| [Shout Progression](https://www.nexusmods.com/skyrimspecialedition/mods/170875)              | Add-on      | #1, #2, #4 | Perk-tree and progression for vanilla + Thunderchild shouts. XP-for-unlock loop replaces meditation. Gamepad-friendly MCM. |
 | Discipline-first route                                                                      | Alternative | #3         | Vanilla vampire/werewolf/shout systems.                                        |
 
 ### Risks & Compatibility

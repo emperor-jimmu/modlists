@@ -175,6 +175,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 | Animated Ingredients                            |                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72852)  |
 | Kanjs - Stalhrim Weapons Animated               | Animated Stalhrim weapon mesh replacer.       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/146167) |
 | Kanjs - Nordic Puzzle Door Animated             | Animated Nordic puzzle door mesh replacer.     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133482) |
+| Zerofrost's Tamriel Alchemy                     | Animated alchemy ingredient and potion replacer. Conflicts with Tamriel Alchemy Replacer. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/185386) |
 
 ### Risks & Compatibility
 
@@ -182,6 +183,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 - Nordic Stonewalls + Complex Material: install the base mod first, then the PBR upgrade on top.
 - Most Rally's and Arc's mods are texture-only or mesh-only; verify each against the load order for BOS overrides.
 - Snazzy Diverse Carriages Seasonal Patch hard-depends on Seasonal Landscapes (→ `Terrain & Flora`).
+- Zerofrost's Tamriel Alchemy (185386) conflicts with Tamriel Alchemy Replacer (165730) — pick one.
 
 ---
 
@@ -316,3 +318,4 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Stacks of Septims - My patches SE by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/113152) | Compatibility patch hub — C.O.I.N., LotD, JS Septims, Ennead, Skyland Bits, Maple Manor, etc. Install after base. |
 | [JS Purses and Septims SE](https://www.nexusmods.com/skyrimspecialedition/mods/37306)                 | Higher-detail coin purse and septim meshes/textures.                                                          |
 | [Skyrim Fantasy Overhaul - Fantastic City Walls SE-AE](https://www.nexusmods.com/skyrimspecialedition/mods/130952) | City wall texture overhaul with fantasy-inspired style. |
+| [Kanjs — Dragon Stone and Map of Dragon Burials](https://www.nexusmods.com/skyrimspecialedition/mods/167084) | Animated dragon stone and burial map mesh replacer. No ESP.
