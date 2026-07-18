@@ -9,7 +9,7 @@
 
 ### Wave 0 — Foundation (~65 mods incl. deps)
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
-- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged
+- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Status Effect Bars Reforged, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged
 - [x] Inventory/UI: JEI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Mouse Tweaks, Inventory Essentials, Fancy Toasts, Tooltip Overhaul, Loot Journal, Reliable Advancements, Polymorph, Shulker Box Tooltip, Item Borders
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U, Balm

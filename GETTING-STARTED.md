@@ -455,6 +455,10 @@ Adds 170+ new sound effects for UI interactions, menu clicks, item drops, eating
 
 ~~#### Tiny Item Animations~~ — Removed. Conflicts with Immersive UI (both hook into inventory item rendering). Use Immersive UI's built-in item particles instead.
 
+#### Status Effect Bars Reforged
+
+Adds small customizable progress bars to status effect icons in the HUD and inventory, showing remaining duration at a glance. Features a config screen (via Cloth Config) to adjust colors and bar position. Bars auto-hide for beacon effects and very long durations to reduce clutter. No known conflicts with Immersive UI — Status Effect Bars targets the effects overlay, while Immersive UI animates the hotbar and menus.
+
 #### Particular Reforged
 
 Enhances Minecraft's ambience with hand-crafted visual effects: 3D water splashes, waterfall cascades, fireflies in warm biomes at dusk, falling leaves that ripple on water, cave dust proportional to depth, bubbles from underwater chests, rain ripples, and cake-eating particles. Every effect can be individually toggled in the config.

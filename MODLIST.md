@@ -129,6 +129,7 @@ If installing manually:
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                                       | Nature ambiance (birds, wind, water)                                                           |
 | [The Immersive Music Mod](https://www.curseforge.com/minecraft/mc-mods/the-immersive-music-mod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved                            |
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                                         | Animated UI, smooth hotbar, item particles                                                     |
+| [Status Effect Bars Reforged](https://www.curseforge.com/minecraft/mc-mods/status-effect-bars-reforged)           | Duration bars on status effect icons in HUD and inventory                                       |
 | [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)                       | RPG-style titles entering biomes/dimensions                                                    |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                            | Enhanced mod list screen with badges/categories                                                |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                           | Independent 360° camera rotation in third-person view                                          |
