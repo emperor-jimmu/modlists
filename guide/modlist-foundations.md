@@ -159,10 +159,10 @@ Exact `Bash Tag` per plugin, `.TweakSettings` table, and build-order placement �
 ### Cyclic Workflow (per new mod)
 
 1. **Install and place.** Heuristic: broad world-changers early; narrow/local edits late.
-2. **Run `xEdit` with `-veryquickshowconflicts`.** Register xEdit in MO2 with that argument. Right-click → `Hide no conflict and empty rows`.
+2. **Run `xEdit` with `-veryquickshowconflicts`.** Register xEdit in MO2 with that argument. Right-click → **Hide no conflict and empty rows**.
 3. **Try load order first.** Move mod up/down if that resolves most conflicts; re-run.
 4. **Identify bad conflicts.** Only conflicts where the loser was supposed to win.
-5. **Build per-pair patch.** `Copy as override into…` → `<new file>.esp [Template] ESL`. Name explicitly (e.g., `LoreRim_x_RWT.esp`). Drag missing fields from loser into new record. Accept master addition. Run `Add Masters…` for every referenced mod. Save into `Patches` separator.
+5. **Build per-pair patch.** **Copy as override into…** → `<new file>.esp [Template] ESL`. Name explicitly (e.g., `LoreRim_x_RWT.esp`). Drag missing fields from loser into new record. Accept master addition. Run **Add Masters…** for every referenced mod. Save into `Patches` separator.
 6. **Build per-pair `ModGroup`s.** One `ModGroup` per conflicting pair. Move `*.ModGroup` files from `MO2 overwrite` into the source mod's own MO2 folder.
 7. **Re-open xEdit and confirm zero visible conflicts.**
 
@@ -172,7 +172,7 @@ Clean load order (`Skyrim.esm`, `Update.esm`, three DLCs) plus USSEP. USSEP ship
 
 ### Cleaning Discipline
 
-Run LOOT after new mod install. If flagged for cleaning, run `Quick Auto Clean` then `Check For Errors`. Red errors = reconsider the mod. QAC only removes ITM/UDR records.
+Run LOOT after new mod install. If flagged for cleaning, run **Quick Auto Clean** then **Check For Errors**. Red errors = reconsider the mod. QAC only removes ITM/UDR records.
 
 ### ESL-Flagged Patches
 
@@ -209,16 +209,16 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 ### Safe Conversion (low risk)
 
-1. Right-click → `Compact Form IDs for ESL`.
-2. Right-click → `Set Is-Esl Flag` (ESL only, not ESM).
+1. Right-click → **Compact Form IDs for ESL**.
+2. Right-click → **Set Is-Esl Flag** (ESL only, not ESM).
 3. Save. Re-sort with LOOT.
 
 ### Full Conversion (xEdit workflow)
 
-1. Load plugin + dependencies. Apply `Hide no conflict and empty rows`.
-2. Right-click → `Compact Form IDs for ESL`. If zero, skip to step 4.
-3. **Check for broken references:** Run `Check for Errors`; for external refs, load full load order → `Referenced By` → `Apply as filter`; or use `List records referencing specific plugins.pas`.
-4. Right-click → `Set Is-Esl Flag` (ESL only).
+1. Load plugin + dependencies. Apply **Hide no conflict and empty rows**.
+2. Right-click → **Compact Form IDs for ESL**. If zero, skip to step 4.
+3. **Check for broken references:** Run **Check for Errors**; for external refs, load full load order → **Referenced By** → **Apply as filter**; or use `List records referencing specific plugins.pas`.
+4. Right-click → **Set Is-Esl Flag** (ESL only).
 5. Save. Re-sort.
 
 ### Red Lines

@@ -55,10 +55,10 @@ Install **FOMOD Plus - A Mod Installation Overhaul for Mod Organizer 2** (<https
 
 - Follow STEP's standalone-folder approach: keep the game under a shallow custom path such as `C:\Games\Steam\steamapps\common\Skyrim Special Edition` and keep modding tools under a separate path such as `C:\Modding\Tools`.
 - Install `Mod Organizer 2` as a standalone application under `C:\Modding\Tools\Mod Organizer` rather than inside the game folder.
-- On first launch, create a `global instance`, select the Steam `Skyrim Special Edition` install, and name the instance something obvious like `Elder Wilds 1.6.1170`.
+- On first launch, create a **global instance**, select the Steam *Skyrim Special Edition* install, and name the instance something obvious like *Elder Wilds 1.6.1170*.
 - If MO2 prompts for profile settings during instance creation, tick every box so the profile keeps its own `INI` files and game-specific settings.
 - Connect MO2 to Nexus during first launch and let MO2 handle `nxm` links.
-- In `Settings > Workarounds`, tick `Enable archives parsing (experimental)` so MO2 reports asset conflicts more reliably.
+- In *Settings > Workarounds*, tick **Enable archives parsing (experimental)** so MO2 reports asset conflicts more reliably.
 - Create at least one clean working profile before major category testing, and keep separators aligned to this repo's structure in `separators.md`.
 - Keep generated outputs in their own enabled mods, never mixed into source mod folders.
 
@@ -100,9 +100,9 @@ iTintTextureResolution=2048
 
 ## Register Tools In MO2
 
-- Open MO2's executable editor from the gear icon and add each tool with `Add from file...`.
-- Tick `Use application's icon for desktop shortcuts` for each entry so shortcuts remain readable.
-- For tools that generate files, tick `Create files in mod instead of overwrite` and point them at the correct output mod.
+- Open MO2's executable editor from the gear icon and add each tool with **Add from file...**.
+- Tick **Use application's icon for desktop shortcuts** for each entry so shortcuts remain readable.
+- For tools that generate files, tick **Create files in mod instead of overwrite** and point them at the correct output mod.
 - Arrange the executables in a stable order so the dropdown reflects the real workflow instead of becoming random over time.
 
 ### MO2 Executable Reference
@@ -117,7 +117,7 @@ iTintTextureResolution=2048
 | `xLODGen`              | `xLODGenx64.exe`                    | `-lodgen -SSE -o:"DriveLetter:\Modding\Tools\xLODGen\xLODGen_Output"` | `Terrain LOD Output`                    | Replace `DriveLetter` with the actual drive letter used for the modding folder.                                |
 | `TexGen`               | `TexGen64.exe`                      | `-SSE`                                                                | `TexGen Output`                         | Keep output isolated and pack it into the dedicated mod immediately after generation.                          |
 | `DynDOLOD`             | `DynDOLODx64.exe`                   | `-SSE`                                                                | `DynDOLOD Output`                       | Keep output isolated and enable `DynDOLOD.esm` / `DynDOLOD.esp` after generation.                              |
-| `Wrye Bash`            | `Wrye Bash.exe`                     | none                                                                  | dedicated patch/output mod if used      | Register only if the list still needs a `Bashed Patch` or leveled-list review pass.                            |
+| `Wrye Bash`            | `Wrye Bash.exe`                     | none                                                                  | dedicated patch/output mod if used      | Register only if the list still needs a **Bashed Patch** or leveled-list review pass.                            |
 | `Synthesis`            | `Synthesis.exe`                     | none                                                                  | dedicated patch/output mod if used      | Give it its own output mod once the final patcher set is known.                                                |
 | `BodySlide`            | `BodySlide x64.exe`                 | none                                                                  | dedicated body/output mod               | Run through MO2 so mesh output respects the active profile and selected body stack.                            |
 | `Pandora`              | `Pandora Behaviour Engine Plus.exe` | none                                                                  | dedicated behavior/output mod if needed | Run through MO2 so behavior generation sees the real virtualized animation stack.                              |

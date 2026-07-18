@@ -39,21 +39,21 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 - Use `xLODGen` only for terrain LOD.
 - Use **SSE-Terrain-Tamriel-Extend.esm** as terrain-boundary resource (from STEP xLODGen forum; Mega mirrors available). **Activate it only during xLODGen generation** — place it below the last worldspace ESM in the right pane, then deactivate it afterward and reactivate `Terrain LOD Output`.
 - In MO2, ensure any landscape/tree mods that ship LOD-generation resources (e.g., Majestic Mountains, Cathedral Landscapes) are active during xLODGen.
-- In the xLODGen UI: right-click the Worldspace area → `Select All`. Tick only `Terrain LOD`. Apply LOD settings per STEP recommendations.
+- In the xLODGen UI: right-click the Worldspace area → **Select All**. Tick only **Terrain LOD**. Apply LOD settings per STEP recommendations.
 - 4K users: double diffuse and normal sizes for LOD4/LOD8/LOD16/LOD32.
-- Initial LOD4: keep `Optimize Unseen` off. For map/LOD32: use higher `Quality` (0-10) and `Optimize Unseen` ~550.
+- Initial LOD4: keep **Optimize Unseen** off. For map/LOD32: use higher **Quality** (0-10) and **Optimize Unseen** ~550.
 - After generation, run **ACMOS Road Generator**:
   1. Navigate to the ACMOS Road Generator tool folder and open the executable.
-  2. Set the roads dropdown to `Path Only`.
+  2. Set the roads dropdown to **Path Only**.
   3. Browse to your xLODGen output folder and select it.
-  4. Click `Generate`. If prompted to overwrite, click `Yes`.
-  5. When complete, zip the output folder (the tool offers this automatically) and install it as a new mod via MO2's `Add mod from file`.
+  4. Click **Generate**. If prompted to overwrite, click **Yes**.
+  5. When complete, zip the output folder (the tool offers this automatically) and install it as a new mod via MO2's **Add mod from file**.
 
 ### TexGen 4K STEP Baseline
 - MO2 executable: `TexGen64.exe -SSE`.
 - Run after `xLODGen`, before `DynDOLOD`.
-- Preset matching rendered resolution: `2160p = 4K`.
-- Grass options: tick `Grass` if no complex grass; tick `HD grass` if using complex grass / CS grass features.
+- Preset matching rendered resolution: **2160p = 4K**.
+- Grass options: tick **Grass** if no complex grass; tick **HD grass** if using complex grass / CS grass features.
 - `TexGen_SSE.ini`: `GrassModelHeightMultiplier=1.15`, `TreeMSAlphaThreshold=144`, `ObjectMSAlphaThreshold=96`.
 - `ForceComplexGrass`: `0` (default) or `1` (STEP complex-grass branch).
 - Move output to `TexGen Output` mod, enable before running `DynDOLOD`.
@@ -64,12 +64,12 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 - Grass brightness values: `0.500` for all R/G/B Top and Bottom channels.
 - `DoubleSidedTextureMask=mountain,mtn`, `DoubleSidedMeshMask=mountain,mtn`.
 - Complex grass branch: `ComplexGrassBillboard=5`, matching brightness values, `ComplexGrassBacklightMask=25`.
-- GUI: right-click worldspace list → `Select All`. Tick `Candles` and `FXGlow`. Load the `High` rules preset.
-- `Occlusion` only on first run. `Grass LOD` only if generating grass LOD.
+- GUI: right-click worldspace list → **Select All**. Tick **Candles** and **FXGlow**. Load the **High** rules preset.
+- **Occlusion** only on first run. **Grass LOD** only if generating grass LOD.
 - **Ultra Trees:** Enable 3D tree LOD for substantially better distant tree quality. Keep tile size at or below `1024` (diminishing returns beyond this).
-- Target: `4K` preset with `Optimal` tree/catch-all rules + recommended `LOD32` rules.
+- Target: **4K** preset with **Optimal** tree/catch-all rules + recommended **LOD32** rules.
 - Move output to `DynDOLOD Output` mod. In the right pane: place `DynDOLOD.esm` as the last ESM after all worldspace ESMs, `DynDOLOD.esp` second-to-last, and `Occlusion.esp` last (unless using Synthesis, which goes last).
-- Apply ACMOS-required rule edits in DynDOLOD's advanced rule editor: `Tree` → LOD32 set to `Billboard(6)`; `\` → LOD32 set to `Level0`.
+- Apply ACMOS-required rule edits in DynDOLOD's advanced rule editor: **Tree** → LOD32 set to **Billboard(6)**; **\\** → LOD32 set to **Level0**.
 
 ### 4K Validation
 - Benchmark before and after LOD from clean Whiterun save. Also check the Rift (`cow tamriel 40 -24`) for aspens.

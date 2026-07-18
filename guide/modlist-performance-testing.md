@@ -72,7 +72,7 @@ Stop once worst-case scenario is playable.
 - If a specific mod cuts FPS 30%+ vs its branch alternative, consider swapping.
 
 ### Benchmark Reports
-Export to CSV (NVIDIA FrameView Save CSV, MSI Afterburner `History > Log to file`). Keep a `benchmark-sheet.md`:
+Export to CSV (NVIDIA FrameView Save CSV, MSI Afterburner *History > Log to file*). Keep a `benchmark-sheet.md`:
 
 ```
 | Pass | Scenario | Avg FPS | 1% Low | GPU% | VRAM | Hitch Max | Delta vs Prev |
@@ -114,7 +114,7 @@ Run in this sequence when generating outputs for the first time. Independent out
 9. **DynDOLOD** — last major output (includes Occlusion generation)
 10. **SSE Display Tweaks + BethINI Pie** — final review after graphics baseline is set
 
-After generation, verify: `DynDOLOD.esm` at end of ESM block, `DynDOLOD.esp` near end, `Occlusion.esp` after, `Synthesis.esp`/`Bashed Patch` per tool guidance.
+After generation, verify: `DynDOLOD.esm` at end of ESM block, `DynDOLOD.esp` near end, `Occlusion.esp` after, `Synthesis.esp`/**Bashed Patch** per tool guidance.
 
 ### Change Tracking
 Keep `changelog.txt` or `build-notes.md` in `Output` separator recording: date/scope of each re-run, settings differing from baseline, branch choices changed, manual INI tweaks, reference-save used.

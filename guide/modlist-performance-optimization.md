@@ -68,7 +68,7 @@ Run through MO2 targeting the active profile INIs.
 
 7. **Visuals:** Max Particle Render Count 7500. Untick Lens Flare (CS handles post-processing).
 
-8. Click Save and Exit, then confirm values in `MO2 → Tools → INI Editor`.
+8. Click Save and Exit, then confirm values in *MO2 → Tools → INI Editor*.
 
 ---
 

@@ -12,9 +12,8 @@ function Ensure-Fonts {
     $null = New-Item -ItemType Directory -Path $fontDir -Force
 
     $fonts = @{
-        "Inter-Regular.woff2"      = "https://raw.githubusercontent.com/rsms/inter/master/docs/font-files/Inter-Regular.woff2"
-        "Inter-Bold.woff2"         = "https://raw.githubusercontent.com/rsms/inter/master/docs/font-files/Inter-Bold.woff2"
-        "Inter-Italic.woff2"       = "https://raw.githubusercontent.com/rsms/inter/master/docs/font-files/Inter-Italic.woff2"
+        "Inter.ttf"                = "https://github.com/google/fonts/raw/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf"
+        "Inter-Italic.ttf"          = "https://github.com/google/fonts/raw/main/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf"
         "JetBrainsMono-Regular.ttf" = "https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf"
         "JetBrainsMono-Bold.ttf"    = "https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Bold.ttf"
     }
@@ -101,10 +100,10 @@ function Convert-Table {
       $colCount = [Math]::Max($header.Count, 1)
       $result.AppendLine("#table(") | Out-Null
       $result.AppendLine("  columns: $colCount,") | Out-Null
-      if ($header.Count -gt 0) { $result.AppendLine("  fill: (luma(240), none),") | Out-Null }
+      if ($header.Count -gt 0) { $result.AppendLine("  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },") | Out-Null }
       else { $result.AppendLine("  fill: none,") | Out-Null }
-      foreach ($cell in $header) { $result.AppendLine("  [*$($cell -replace '#', '\#')*],") | Out-Null }
-      foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$($cell -replace '#', '\#')],") | Out-Null } }
+      foreach ($cell in $header) { $result.AppendLine("  [*$($cell)*],") | Out-Null }
+      foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$($cell)],") | Out-Null } }
       $result.AppendLine(")") | Out-Null
         } else {
             $result.AppendLine($line) | Out-Null
@@ -159,11 +158,15 @@ function Convert-MermaidDiagrams {
 }
 
 function Convert-MarkdownToTypst {
-    param([string]$Text, [string]$FileH1Anchor)
+    param([string]$Text, [string]$FileH1Anchor, [string]$FileKey, [hashtable]$AnchorMap)
     # 1. Strip HTML comments
     $text = $Text -replace '(?s)<!--.*?-->', ''
     # 2. Convert markdown autolinks <url> to plain URLs (typst treats <...> as labels)
     $text = $text -replace '<(https?://[^>]+)>', '$1'
+    # 3. Convert markdown italic *text* to typst #emph[text] (single *, before bold)
+    $text = $text -replace '(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)', '#emph[$1]'
+    # 4. Convert markdown bold **text** to typst bold *text*
+    $text = $text -replace '\*\*(.+?)\*\*', '*$1*'
     $lines = $text -split "`r`n|`n"
     $usedLabels = @{}
     $headingOrder = @()
@@ -175,7 +178,7 @@ function Convert-MarkdownToTypst {
             $converted.AppendLine(("=" * $level) + " $body") | Out-Null
             $rawAnchor = ($body -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
             if ([string]::IsNullOrEmpty($rawAnchor)) { $rawAnchor = "section" }
-            $label = if ($level -eq 1) { $rawAnchor } else { "$FileH1Anchor-$rawAnchor" }
+            $label = if ($level -eq 1) { "$FileKey-$rawAnchor" } else { "$FileH1Anchor-$rawAnchor" }
             $final = $label; $suffix = 2
             while ($usedLabels.ContainsKey($final)) { $final = "$label-$suffix"; $suffix++ }
             $usedLabels[$final] = $true
@@ -184,13 +187,33 @@ function Convert-MarkdownToTypst {
         } else { $converted.AppendLine($line) | Out-Null }
     }
     $text = $converted.ToString() -replace '!\[([^\]]*)\]\(([^)]+)\)', '#image("$2")'
+    # 4. Convert cross-file markdown links [text](file.md) to internal #link(<anchor>)[text]
+    $text = [regex]::Replace($text, '\[(.+?)\]\(([^)]+)\)', {
+        param($m)
+        $url = $m.Groups[2].Value
+        if ($url -match '^https?://') { return "#link(`"$url`")[$($m.Groups[1].Value -replace '^`(.+)`$', '$1')]" }
+        if ($url -match '^#') { return $m.Value }
+        $bare = ($url -replace '\.md$', '') -replace '^.*/', ''
+        $anchor = $AnchorMap[$bare]
+        if (-not $anchor) { $anchor = $AnchorMap[$url -replace '\.md$', ''] }
+        if (-not $anchor) { $anchor = $AnchorMap[$url] }
+        if ($anchor) { return "@$($anchor)" }
+        return $m.Value
+    })
     # Escape $, # (hex colors), and _ (typst treats $ as math, # as code, _ as italic)
     $text = $text.Replace('$', '\$')
-    $text = $text -replace '(?<!\w)#([0-9a-fA-F])', '\#$1'
+    $text = $text -replace '(?<!\w)#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b', '\#$1'
     $text = $text.Replace('_', '\_')
     $text = Convert-Table -Text $text
     # Escape bare < characters not part of labels
     $text = $text -replace '<(?![a-zA-Z][a-zA-Z0-9-]*>)', '\<'
+    # Unescape underscores inside URL strings (Typst strings don't treat \_ as escape)
+    $text = [regex]::Replace($text, '#(link|image)\("([^"]+)"\)', {
+        param($m)
+        $fn = $m.Groups[1].Value
+        $clean = $m.Groups[2].Value -replace '\\_', '_'
+        return "#${fn}(`"$clean`")"
+    })
     return @{ Content = $text; Headings = $headingOrder }
 }
 
@@ -249,9 +272,26 @@ $versionPath = Join-Path $root "VERSION"
 $version = if (Test-Path $versionPath) { (Get-Content $versionPath -Raw).Trim() } else { Write-Warning "VERSION file not found — using 0.0.1-dev"; "0.0.1-dev" }
 $date = Get-Date -Format "yyyy-MM-dd"
 
+# -- Pre-pass: build file → H1 anchor map --
+$fileAnchorMap = @{}
+foreach ($file in $files) {
+  $path = Join-Path $root $file
+  if (-not (Test-Path $path)) { continue }
+  $rawContent = (Get-Content $path -Raw)
+  if ($rawContent -match '(?m)^# (.+)$') {
+    $h1Text = $matches[1].Trim()
+    $rawAnchor = ($h1Text -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
+    if ([string]::IsNullOrEmpty($rawAnchor)) { $rawAnchor = "untitled" }
+    $fileKey = $file -replace '^guide/', '' -replace '^modlist-', '' -replace '\.md$', '' -replace '/', '-'
+    $anchor = "$fileKey-$rawAnchor"
+    $basename = Split-Path -Leaf $file
+    $fileAnchorMap[$basename] = $anchor
+    $fileAnchorMap[$file] = $anchor
+  }
+}
+
 # -- Process files --
 $allSections = [System.Collections.Generic.List[string]]::new()
-$fileAnchorMap = @{}
 $diagramCounter = 0
 $outputDir = Join-Path $root "rendered"
 $null = New-Item -ItemType Directory -Path $outputDir -Force
@@ -265,10 +305,8 @@ foreach ($file in $files) {
   $fileH1Anchor = if ($content -match '(?m)^# (.+)$') {
     ($matches[1].Trim() -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
   } else { "untitled" }
-  $result = Convert-MarkdownToTypst -Text $content -FileH1Anchor $fileH1Anchor
-  $basename = Split-Path -Leaf $file
-  $fileAnchorMap[$basename] = $fileH1Anchor
-  $fileAnchorMap[$file] = $fileH1Anchor
+  $fileKey = $file -replace '^guide/', '' -replace '^modlist-', '' -replace '\.md$', '' -replace '/', '-'
+  $result = Convert-MarkdownToTypst -Text $content -FileH1Anchor $fileH1Anchor -FileKey $fileKey -AnchorMap $fileAnchorMap
   $allSections.Add("// -- $file --")
   $allSections.Add($result.Content)
   $allSections.Add("")
@@ -286,9 +324,10 @@ $a.Invoke("#let ew-version = `"$version`"")
 $a.Invoke("#let ew-date = `"$date`"")
 $a.Invoke("")
 $a.Invoke("// -- Fonts --")
-$a.Invoke('#set text(font: ("Inter", "Liberation Sans", "Arial"), size: 11.5pt, leading: 6pt)')
-$a.Invoke('#show link: set text(fill: rgb("#2563EB"))')
-$a.Invoke('#set raw(font: ("JetBrains Mono", "Consolas", "Courier New"), tab-size: 4)')
+$a.Invoke('#set text(font: ("Inter", "Arial"), size: 11.5pt)')
+$a.Invoke('#show link: set text(font: ("Inter", "Arial"), size: 11.5pt, fill: rgb("#2563EB"))')
+$a.Invoke('#show ref: set text(font: ("Inter", "Arial"), size: 11.5pt, fill: rgb("#2563EB"))')
+$a.Invoke('#show raw: set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.9em)')
 $a.Invoke('// Inline raw in body text keeps monospaced font; headings have backticks stripped')
 $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2cm, right: 1.5cm, top: 1.5cm, bottom: 2cm),')
@@ -300,12 +339,13 @@ $a.Invoke('  )),')
 $a.Invoke(')')
 $a.Invoke("")
 $a.Invoke("// -- Heading Styling --")
+$a.Invoke('#set heading(numbering: "1.")')
 $a.Invoke('#show heading: it => {')
 $a.Invoke("  set text(")
 $a.Invoke('    size: if it.level == 1 { 24pt } else if it.level == 2 { 16pt } else if it.level == 3 { 12.5pt } else { 11.5pt },')
 $a.Invoke('    fill: if it.level == 1 { rgb("#1e293b") } else if it.level == 2 { rgb("#334155") } else { rgb("#475569") },')
 $a.Invoke("  )")
-$a.Invoke('  if it.level == 1 { v(0.5cm) } else if it.level == 2 { v(0.5cm) } else if it.level >= 3 { v(0.3cm) }')
+$a.Invoke('  if it.level == 1 { pagebreak(); v(0.5cm) } else if it.level == 2 { v(0.5cm) } else if it.level >= 3 { v(0.3cm) }')
 $a.Invoke("  it")
 $a.Invoke('  if it.level == 1 { v(0.5cm) }')
 $a.Invoke("}")

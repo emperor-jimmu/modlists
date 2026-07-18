@@ -160,8 +160,8 @@ Apply matching rules for your chosen tree overhaul if its DynDOLOD add-on or aut
 
 When using **Seasons of Skyrim SKSE** + **Turn of the Seasons**, DynDOLOD and xLODGen can generate seasonal LOD passes so distant detail matches the current season. This multiplies generation time considerably — plan accordingly.
 
-**xLODGen seasonal:** Tick the `Seasons` checkbox in the bottom-left corner and select which seasons need terrain LOD. Generation takes significantly longer than a single pass.
+**xLODGen seasonal:** Tick the **Seasons** checkbox in the bottom-left corner and select which seasons need terrain LOD. Generation takes significantly longer than a single pass.
 
-**DynDOLOD seasonal:** Tick the `Seasons` checkbox, the `Snow` checkbox, and select the desired seasons in DynDOLOD's GUI. Generation time scales with the number of seasons selected.
+**DynDOLOD seasonal:** Tick the **Seasons** checkbox, the **Snow** checkbox, and select the desired seasons in DynDOLOD's GUI. Generation time scales with the number of seasons selected.
 
 Rebuild seasonal LOD whenever the underlying terrain, tree, or landscape seasonal-swap data changes.

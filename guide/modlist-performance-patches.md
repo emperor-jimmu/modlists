@@ -18,54 +18,54 @@ The generic category maps only become useful when tied to the actual mods `Elder
 
 ### Tweak Settings
 
-Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below.
+Enable in *Wrye Bash* → *Bashed Patch* → *Tweakers* only the items below.
 
 **Tweak Actors:**
 
-- `Opposite Gender Anims: Female` and `Male` — needed for CBBE 3BA, HIMBO, KS Hairdos, EVG Conditional Idles, Goetia, Leviathan II packs.
+- **Opposite Gender Anims: Female** and **Male** — needed for CBBE 3BA, HIMBO, KS Hairdos, EVG Conditional Idles, Goetia, Leviathan II packs.
 
 **Tweak Assorted:**
 
-- `All Armor Playable` — required by Immersive Armors (60+ sets with non-playable flag).
-- `No Light Fade Value Fix` — CS Light, True Light, ELFX, Relighting Skyrim, Luminosity all interact with fade values.
-- `No Light Flicker` — RAID Weathers, Cathedral, Obsidian, Azurite III CS weather variants.
-- `Remove Load Screen Models` — SkyParkour v3, RaySense, Ricochet add 3D geometry that can leak into load screens.
-- `Save Sorting Fix` — real issue with this much plugin weight.
-- `Set Light Radii` — use 100% multiplier to leave lighting radii alone.
-- `Set Sound Attenuation Levels: Nirnroots Only` — leave default.
-- `Uniform Groundcover` — Skoglendi, Origins of Forest, Mari's flora need matching density variance.
+- **All Armor Playable** — required by Immersive Armors (60+ sets with non-playable flag).
+- **No Light Fade Value Fix** — CS Light, True Light, ELFX, Relighting Skyrim, Luminosity all interact with fade values.
+- **No Light Flicker** — RAID Weathers, Cathedral, Obsidian, Azurite III CS weather variants.
+- **Remove Load Screen Models** — SkyParkour v3, RaySense, Ricochet add 3D geometry that can leak into load screens.
+- **Save Sorting Fix** — real issue with this much plugin weight.
+- **Set Light Radii** — use 100% multiplier to leave lighting radii alone.
+- **Set Sound Attenuation Levels: Nirnroots Only** — leave default.
+- **Uniform Groundcover** — Skoglendi, Origins of Forest, Mari's flora need matching density variance.
 
 **Tweak Names:**
 
-- `Body Part Codes` — drive Sort: Armor/Clothes correctly with CBBE 3BA.
-- `Sort: Armor/Clothes` — with Immersive Armors, Bruma, Spaghetti's Cities, unsorted inventory is unreadable.
-- `Sort: Scrolls`, `Sort: Spells`, `Sort: Weapons/Ammunition` — Apocalypse, Mysticism, Odin, Adamant, Vokrii, Ordinator, Ars Metallica all add to these lists.
-- `Lore Friendly Text: Dwarven -> Dwemer` — PBR textures use Dwemer terminology.
+- **Body Part Codes** — drive Sort: Armor/Clothes correctly with CBBE 3BA.
+- **Sort: Armor/Clothes** — with Immersive Armors, Bruma, Spaghetti's Cities, unsorted inventory is unreadable.
+- **Sort: Scrolls**, **Sort: Spells**, **Sort: Weapons/Ammunition** — Apocalypse, Mysticism, Odin, Adamant, Vokrii, Ordinator, Ars Metallica all add to these lists.
+- **Lore Friendly Text: Dwarven -> Dwemer** — PBR textures use Dwemer terminology.
 
 **Tweak Races:**
 
-- `Races Have All Head Parts` — KS Hairdos adds hundreds; set types code to ~45.
-- `Playable Head Parts`
-- Leave `Force Behavior Graph Gender` off — Elder Wilds does not standardize that flag.
+- **Races Have All Head Parts** — KS Hairdos adds hundreds; set types code to ~45.
+- **Playable Head Parts**
+- Leave **Force Behavior Graph Gender** off — Elder Wilds does not standardize that flag.
 
 **Tweak Settings:**
 
-- `AI: Bump Reaction Delay` — raise to Adult Content to mute spammy follower reactions.
-- `AI: Conversation Chance` — leave default.
-- `AI: Max Active Actors` — raise to 80.
-- `AI: Max Dead Actors` — raise to 120.
-- `Arrow: Max Arrows Attached to NPC` — raise to 20.
-- `Combat: Max Actors` — raise to 60.
-- `Combat: Stealth Damage Bonus` — leave default (RAID is canonical authority).
-- `Msg: Cannot Equip Item Fix` — **must** be enabled (Campfire, Frostfall, SunHelm/Starfrost/Last Seed rely on it).
-- `Msg: No Fast Travel` — leave default.
-- `Player: Max Draggable Weight` — set to 1000.
-- `Player: Underwater Breath Control` — leave default.
-- `Soul Trap: Common/Grand/Greater/Lesser Soul Level` — set to vanilla values.
-- `Visuals: Masser/Secunda Size/Speed` — set to 1.0.
-- `Warning: Exterior/Interior Distance To Hostiles` — leave default.
-- `World: Cell Respawn Time` / `Respawn Time (Cleared)` — leave default.
-- `World: Timescale` — set to 20 and never change. **Save-baking warning:** this setting bakes into SSE saves.
+- **AI: Bump Reaction Delay** — raise to Adult Content to mute spammy follower reactions.
+- **AI: Conversation Chance** — leave default.
+- **AI: Max Active Actors** — raise to 80.
+- **AI: Max Dead Actors** — raise to 120.
+- **Arrow: Max Arrows Attached to NPC** — raise to 20.
+- **Combat: Max Actors** — raise to 60.
+- **Combat: Stealth Damage Bonus** — leave default (RAID is canonical authority).
+- **Msg: Cannot Equip Item Fix** — **must** be enabled (Campfire, Frostfall, SunHelm/Starfrost/Last Seed rely on it).
+- **Msg: No Fast Travel** — leave default.
+- **Player: Max Draggable Weight** — set to 1000.
+- **Player: Underwater Breath Control** — leave default.
+- **Soul Trap: Common/Grand/Greater/Lesser Soul Level** — set to vanilla values.
+- **Visuals: Masser/Secunda Size/Speed** — set to 1.0.
+- **Warning: Exterior/Interior Distance To Hostiles** — leave default.
+- **World: Cell Respawn Time** / **Respawn Time (Cleared)** — leave default.
+- **World: Timescale** — set to 20 and never change. **Save-baking warning:** this setting bakes into SSE saves.
 
 ### Bash Tags
 
@@ -144,7 +144,7 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 
 ## Synthesis Configuration → separator: `Performance - Bashed Patch & Synthesis`
 
-The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
+The `Synthesis` patcher pipeline runs as a single batch via **Run Mutagen** in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
 
 ### Stage 1 — NPC, AI, And Facegen
 
@@ -240,7 +240,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `ELE Patcher` — skip (CS-only stack).
 - `NoShadowsPatch`
 - `Radial Blur Remover`
-- `Remove Edge Glow`
+- **Remove Edge Glow**
 - `RemoveInteriorFogPatcher` — disable if AOS/Sounds of Skyrim present.
 - `RemoveLandscapeVertexColor`
 

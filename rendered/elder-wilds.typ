@@ -4,9 +4,10 @@
 #let ew-date = "2026-07-18"
 
 // -- Fonts --
-#set text(font: ("Inter", "Liberation Sans", "Arial"), size: 11.5pt, leading: 6pt)
-#show link: set text(fill: rgb("#2563EB"))
-#set raw(font: ("JetBrains Mono", "Consolas", "Courier New"), tab-size: 4)
+#set text(font: ("Inter", "Arial"), size: 11.5pt)
+#show link: set text(font: ("Inter", "Arial"), size: 11.5pt, fill: rgb("#2563EB"))
+#show ref: set text(font: ("Inter", "Arial"), size: 11.5pt, fill: rgb("#2563EB"))
+#show raw: set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.9em)
 // Inline raw in body text keeps monospaced font; headings have backticks stripped
 #set page(
   margin: (left: 2cm, right: 1.5cm, top: 1.5cm, bottom: 2cm),
@@ -18,12 +19,13 @@
 )
 
 // -- Heading Styling --
+#set heading(numbering: "1.")
 #show heading: it => {
   set text(
     size: if it.level == 1 { 24pt } else if it.level == 2 { 16pt } else if it.level == 3 { 12.5pt } else { 11.5pt },
     fill: if it.level == 1 { rgb("#1e293b") } else if it.level == 2 { rgb("#334155") } else { rgb("#475569") },
   )
-  if it.level == 1 { v(0.5cm) } else if it.level == 2 { v(0.5cm) } else if it.level >= 3 { v(0.3cm) }
+  if it.level == 1 { pagebreak(); v(0.5cm) } else if it.level == 2 { v(0.5cm) } else if it.level >= 3 { v(0.3cm) }
   it
   if it.level == 1 { v(0.5cm) }
 }
@@ -45,7 +47,7 @@
 
 // -- guide/modlist.md --
 = Elder Wilds
-<elder-wilds>
+<modlist-elder-wilds>
 
 Target build: Skyrim Special Edition / Anniversary Edition runtime `1.6.1170` via Steam
 
@@ -58,7 +60,7 @@ Scope notes:
 == Installation
 <elder-wilds-installation>
 
-The full setup and installation guide (Steam config, MO2 setup, SKSE, tool registration, operating rules) lives in [`install.md`](install.md).
+The full setup and installation guide (Steam config, MO2 setup, SKSE, tool registration, operating rules) lives in @install-installation-guide.
 
 == Research Workflow
 <elder-wilds-research-workflow>
@@ -71,16 +73,16 @@ The full setup and installation guide (Steam config, MO2 setup, SKSE, tool regis
 == Reference Docs
 <elder-wilds-reference-docs>
 
-- [`World Progression Philosophy`](modlist-design-philosophy.md) — Design dial connecting leveling, encounter zones, loot distribution, difficulty, XP, and perks. Adopted combination for Elder Wilds: **\#1 Static with Hard Threat** + "Living the World" layer (player home, family, slow questing).
+- @design-philosophy-world-progression-philosophy — Design dial connecting leveling, encounter zones, loot distribution, difficulty, XP, and perks. Adopted combination for Elder Wilds: *#1 Static with Hard Threat* + "Living the World" layer (player home, family, slow questing).
 
 
 
 
 // -- guide/install.md --
 = Installation Guide
-<installation-guide>
+<install-installation-guide>
 
-This document covers everything needed to set up the toolchain and environment for Elder Wilds. The section index and project scope live in [`modlist.md`](modlist.md).
+This document covers everything needed to set up the toolchain and environment for Elder Wilds. The section index and project scope live in @modlist-elder-wilds.
 
 == Pre-Installation: Steam, Skyrim, And Creation Kit
 <installation-guide-pre-installation-steam-skyrim-and-creation-kit>
@@ -89,25 +91,25 @@ This document covers everything needed to set up the toolchain and environment f
 <installation-guide-steam--skyrim-setup>
 
 1. Install Steam and Skyrim SE/AE outside `Program Files`, ideally under a shallow path such as `C:\Games\Skyrim Special Edition`.
-2. Confirm the game is on runtime `1.6.1170`. The **Anniversary Upgrade** is not used.
+2. Confirm the game is on runtime `1.6.1170`. The *Anniversary Upgrade* is not used.
 
 ==== Configure Steam
 <installation-guide-configure-steam>
 
-- **Disable the Steam Overlay**: In Steam, go to **Steam > Settings > In-Game** and uncheck "Enable the Steam overlay while in-game." Alternatively, disable it per-game: right-click **The Elder Scrolls V: Skyrim Special Edition** in your library, select **Properties**, and uncheck "Enable the Steam Overlay while in-game."
-- **Update-proof Skyrim**: In Steam, right-click **The Elder Scrolls V: Skyrim Special Edition > Properties > Updates**, set **Automatic Updates** to **"Wait until I launch the game."** Updates will not trigger when launching through MO2 via SKSE. If an update slips through, use the [Skyrim downgrade patcher](https://www.nexusmods.com/skyrimspecialedition/mods/32698/) to roll back.
+- *Disable the Steam Overlay*: In Steam, go to *Steam > Settings > In-Game* and uncheck "Enable the Steam overlay while in-game." Alternatively, disable it per-game: right-click *The Elder Scrolls V: Skyrim Special Edition* in your library, select *Properties*, and uncheck "Enable the Steam Overlay while in-game."
+- *Update-proof Skyrim*: In Steam, right-click *The Elder Scrolls V: Skyrim Special Edition > Properties > Updates*, set *Automatic Updates* to *"Wait until I launch the game."* Updates will not trigger when launching through MO2 via SKSE. If an update slips through, use the #link("https://www.nexusmods.com/skyrimspecialedition/mods/32698/")[Skyrim downgrade patcher] to roll back.
 
 ==== Vanilla Skyrim First Launch
 <installation-guide-vanilla-skyrim-first-launch>
 
-Launch Skyrim Special Edition through Steam to open the default launcher: click **Options**, select the **Ultra** preset, set **Aspect Ratio** and **Resolution** to your monitor's optimal values, set **Antialiasing** to **Off** (prepares for Community Shaders), ensure **Windowed Mode** is unchecked, click **OK** to save, and exit the launcher.
+Launch Skyrim Special Edition through Steam to open the default launcher: click *Options*, select the *Ultra* preset, set *Aspect Ratio* and *Resolution* to your monitor's optimal values, set *Antialiasing* to *Off* (prepares for Community Shaders), ensure *Windowed Mode* is unchecked, click *OK* to save, and exit the launcher.
 
 ==== Install The Creation Kit
 <installation-guide-install-the-creation-kit>
 
-- **Skyrim Special Edition: Creation Kit** (https://store.steampowered.com/app/1946180/Skyrim\_Special\_Edition\_Creation\_Kit/): Download and install via Steam. Launch the Creation Kit through Steam to allow the **Scripts** folder to extract (automatic on first launch). Exit once loaded. Download the pre-made [`CreationKitCustom.ini`](https://lexyslotd.com/guide/common-tasks/\creation-kit-ini) and extract it to the Skyrim root folder. This configures the CK to allow multiple masters and load DLC content. If the CK crashes on first launch, add an [outbound firewall rule](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-port-rule) for `CreationKit.exe`.
+- *Skyrim Special Edition: Creation Kit* (https://store.steampowered.com/app/1946180/Skyrim\_Special\_Edition\_Creation\_Kit/): Download and install via Steam. Launch the Creation Kit through Steam to allow the *Scripts* folder to extract (automatic on first launch). Exit once loaded. Download the pre-made #link("https://lexyslotd.com/guide/common-tasks/creation-kit-ini")[CreationKitCustom.ini] and extract it to the Skyrim root folder. This configures the CK to allow multiple masters and load DLC content. If the CK crashes on first launch, add an #link("https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-port-rule")[outbound firewall rule] for `CreationKit.exe`.
 
-- **Creation Kit Platform Extended** (https://www.nexusmods.com/skyrimspecialedition/mods/71371): Download **CK Platform Extended 0.6-b550** and extract directly into the main Skyrim Special Edition folder — NOT into a sub-folder.
+- *Creation Kit Platform Extended* (https://www.nexusmods.com/skyrimspecialedition/mods/71371): Download *CK Platform Extended 0.6-b550* and extract directly into the main Skyrim Special Edition folder — NOT into a sub-folder.
 
 ==== Create Modding Folders And Install Core Tools
 <installation-guide-create-modding-folders-and-install-core-tools>
@@ -117,7 +119,7 @@ Create a separate modding path with sub-folders (e.g., `C:\Modding` and `C:\Modd
 === FOMOD Plus Installation
 <installation-guide-fomod-plus-installation>
 
-Install **FOMOD Plus - A Mod Installation Overhaul for Mod Organizer 2** (https://www.nexusmods.com/skyrimspecialedition/mods/141001) after MO2 setup: extract the archive contents directly into your MO2 installation folder, merging the `plugins` folder. Restart MO2 — FOMOD Plus activates automatically, adding a `FOMOD` column in the left pane and a `FOMOD` tab on the right pane.
+Install *FOMOD Plus - A Mod Installation Overhaul for Mod Organizer 2* (https://www.nexusmods.com/skyrimspecialedition/mods/141001) after MO2 setup: extract the archive contents directly into your MO2 installation folder, merging the `plugins` folder. Restart MO2 — FOMOD Plus activates automatically, adding a `FOMOD` column in the left pane and a `FOMOD` tab on the right pane.
 
 == Core Setup Goals
 <installation-guide-core-setup-goals>
@@ -129,26 +131,26 @@ Install **FOMOD Plus - A Mod Installation Overhaul for Mod Organizer 2** (https:
 == Recommended Base Toolchain
 <installation-guide-recommended-base-toolchain>
 
-- [`Mod Organizer 2`](https://www.nexusmods.com/skyrimspecialedition/mods/6194) as the main mod manager and profile system
-- [`SKSE64`](https://skse.silverlock.org/) and [`Address Library for SKSE Plugins`](https://www.nexusmods.com/skyrimspecialedition/mods/32444) as the runtime baseline
-- [`SSEEdit`](https://www.nexusmods.com/skyrimspecialedition/mods/164) for conflict review, patch inspection, cleaning guidance, and record-level troubleshooting
-- [`Wrye Bash`](https://www.nexusmods.com/skyrimspecialedition/mods/6837) for later leveled-list and compatibility review where it still adds value
-- [`Synthesis`](https://www.nexusmods.com/skyrimspecialedition/mods/140863) for selective patcher-based automation once the stack is stable enough to justify it
-- [`Cathedral Assets Optimizer`](https://www.nexusmods.com/skyrimspecialedition/mods/23316) for asset cleanup and conversion tasks when a mod actually needs it
-- [`BethINI Pie`](https://www.nexusmods.com/skyrimspecialedition/mods/153026) for baseline INI management and graphics/settings normalization
-- [`Skyrim Special Edition: Creation Kit`](https://store.steampowered.com/app/489490/Skyrim\_Special\_Edition\_Creation\_Kit/) for resaving LE plugins to SE format; used alongside [`Creation Kit Platform Extended`](https://www.nexusmods.com/skyrimspecialedition/mods/71371) for stability
-- [`xLODGen`](https://www.nexusmods.com/skyrimspecialedition/mods/10202), [`TexGen`](https://www.nexusmods.com/skyrimspecialedition/mods/68547), and [`DynDOLOD`](https://www.nexusmods.com/skyrimspecialedition/mods/68547) for terrain/object/tree distant detail workflow
-- `BodySlide and Outfit Studio` and `Pandora Behaviour Engine Plus` are installed as regular mods — see → [Characters & Creatures](modlist-graphics-characters.md) (BodySlide) and → [Animations](modlist-animations.md) (Pandora). They are still registered as MO2 executables (see tool registration below).
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/6194")[Mod Organizer 2] as the main mod manager and profile system
+- #link("https://skse.silverlock.org/")[SKSE64] and #link("https://www.nexusmods.com/skyrimspecialedition/mods/32444")[Address Library for SKSE Plugins] as the runtime baseline
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/164")[SSEEdit] for conflict review, patch inspection, cleaning guidance, and record-level troubleshooting
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/6837")[Wrye Bash] for later leveled-list and compatibility review where it still adds value
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/140863")[Synthesis] for selective patcher-based automation once the stack is stable enough to justify it
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/23316")[Cathedral Assets Optimizer] for asset cleanup and conversion tasks when a mod actually needs it
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/153026")[BethINI Pie] for baseline INI management and graphics/settings normalization
+- #link("https://store.steampowered.com/app/489490/Skyrim_Special_Edition_Creation_Kit/")[Skyrim Special Edition: Creation Kit] for resaving LE plugins to SE format; used alongside #link("https://www.nexusmods.com/skyrimspecialedition/mods/71371")[Creation Kit Platform Extended] for stability
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/10202")[xLODGen], #link("https://www.nexusmods.com/skyrimspecialedition/mods/68547")[TexGen], and #link("https://www.nexusmods.com/skyrimspecialedition/mods/68547")[DynDOLOD] for terrain/object/tree distant detail workflow
+- `BodySlide and Outfit Studio` and `Pandora Behaviour Engine Plus` are installed as regular mods — see → @graphics-characters-characters--creatures (BodySlide) and → @animations-animations-and-movement (Pandora). They are still registered as MO2 executables (see tool registration below).
 
 == Mod Organizer 2 Setup
 <installation-guide-mod-organizer-2-setup>
 
 - Follow STEP's standalone-folder approach: keep the game under a shallow custom path such as `C:\Games\Steam\steamapps\common\Skyrim Special Edition` and keep modding tools under a separate path such as `C:\Modding\Tools`.
 - Install `Mod Organizer 2` as a standalone application under `C:\Modding\Tools\Mod Organizer` rather than inside the game folder.
-- On first launch, create a `global instance`, select the Steam `Skyrim Special Edition` install, and name the instance something obvious like `Elder Wilds 1.6.1170`.
+- On first launch, create a *global instance*, select the Steam #emph[Skyrim Special Edition] install, and name the instance something obvious like #emph[Elder Wilds 1.6.1170].
 - If MO2 prompts for profile settings during instance creation, tick every box so the profile keeps its own `INI` files and game-specific settings.
 - Connect MO2 to Nexus during first launch and let MO2 handle `nxm` links.
-- In `Settings > Workarounds`, tick `Enable archives parsing (experimental)` so MO2 reports asset conflicts more reliably.
+- In #emph[Settings > Workarounds], tick *Enable archives parsing (experimental)* so MO2 reports asset conflicts more reliably.
 - Create at least one clean working profile before major category testing, and keep separators aligned to this repo's structure in `separators.md`.
 - Keep generated outputs in their own enabled mods, never mixed into source mod folders.
 
@@ -193,9 +195,9 @@ iTintTextureResolution=2048
 == Register Tools In MO2
 <installation-guide-register-tools-in-mo2>
 
-- Open MO2's executable editor from the gear icon and add each tool with `Add from file...`.
-- Tick `Use application's icon for desktop shortcuts` for each entry so shortcuts remain readable.
-- For tools that generate files, tick `Create files in mod instead of overwrite` and point them at the correct output mod.
+- Open MO2's executable editor from the gear icon and add each tool with *Add from file...*.
+- Tick *Use application's icon for desktop shortcuts* for each entry so shortcuts remain readable.
+- For tools that generate files, tick *Create files in mod instead of overwrite* and point them at the correct output mod.
 - Arrange the executables in a stable order so the dropdown reflects the real workflow instead of becoming random over time.
 
 === MO2 Executable Reference
@@ -203,7 +205,7 @@ iTintTextureResolution=2048
 
 #table(
   columns: 5,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Tool*],
   [*Executable*],
   [*Arguments*],
@@ -253,7 +255,7 @@ iTintTextureResolution=2048
   [`Wrye Bash.exe`],
   [none],
   [dedicated patch/output mod if used],
-  [Register only if the list still needs a `Bashed Patch` or leveled-list review pass.],
+  [Register only if the list still needs a *Bashed Patch* or leveled-list review pass.],
   [`Synthesis`],
   [`Synthesis.exe`],
   [none],
@@ -277,7 +279,7 @@ iTintTextureResolution=2048
 - Launch the game through `SKSE`, not through Steam or the stock launcher, after the vanilla initialization step is complete.
 - Run `LOOT` before gameplay tests and before any major cleaning or conflict-review pass.
 - Use `xEditQuickAutoClean` only for plugins LOOT explicitly marks as needing cleaning.
-- Use `xEdit` after each major category to review conflicts instead of waiting until the whole list is assembled. The `Patching Technique And Strategy` section in [`modlist-foundations.md`](modlist-foundations.md) defines the workflow to follow from the first mod.
+- Use `xEdit` after each major category to review conflicts instead of waiting until the whole list is assembled. The `Patching Technique And Strategy` section in @foundations-foundations-and-compatibility defines the workflow to follow from the first mod.
 - Treat the `Overwrite` folder as a failure state; if files appear there, either move them into the proper output mod or fix the executable configuration that produced them.
 - Rebuild generated outputs after major changes to bodies, animations, grass, LOD, or other systems that produce artifacts.
 - Document manual fixes, custom arguments, and tool-specific decisions directly in this repository so the plan stays reproducible.
@@ -287,9 +289,9 @@ iTintTextureResolution=2048
 
 // -- guide/modlist-foundations.md --
 = Foundations and Compatibility
-<foundations-and-compatibility>
+<foundations-foundations-and-compatibility>
 
-**MO2 Separators:** `Foundations` → `Foundations - SKSE & Scripts`, `Foundations - Core Libraries`, `Foundations - Mesh & Texture Fixes`, `Foundations - Targeted Bugfixes`
+*MO2 Separators:* `Foundations` → `Foundations - SKSE & Scripts`, `Foundations - Core Libraries`, `Foundations - Mesh & Texture Fixes`, `Foundations - Targeted Bugfixes`
 
 All mods in this section are installed into the appropriate `Foundations` sub-separators as noted per group.
 
@@ -303,131 +305,131 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 === SKSE & Scripts → separator: Foundations - SKSE & Scripts
 <foundations-and-compatibility-skse--scripts-separator-foundations-skse--scripts>
 
-- **SKSE64** — Script extender; required by almost every SKSE plugin. [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30379)
+- *SKSE64* — Script extender; required by almost every SKSE plugin. #link("https://www.nexusmods.com/skyrimspecialedition/mods/30379")[Nexus]
 
 === Core Libraries → separator: Foundations - Core Libraries
 <foundations-and-compatibility-core-libraries-separator-foundations-core-libraries>
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Purpose*],
-  [[Address Library for SKSE Plugins](https://www.nexusmods.com/skyrimspecialedition/mods/32444)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32444")[Address Library for SKSE Plugins]],
   [Universal SKSE plugin compatibility layer for 1.6.1170.],
-  [[USSEP](https://www.nexusmods.com/skyrimspecialedition/mods/266)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/266")[USSEP]],
   [Foundational record patch. Requires the four free CC masters — no paid AE Upgrade needed.],
-  [[SSE Engine Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/17230)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17230")[SSE Engine Fixes]],
   [Critical engine-level stability and bug fixes.],
-  [[SSE Display Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/34705)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34705")[SSE Display Tweaks]],
   [Mandatory display and frame-pacing control.],
-  [[Scrambled Bugs](https://www.nexusmods.com/skyrimspecialedition/mods/43532)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/43532")[Scrambled Bugs]],
   [Collection of low-level engine tweaks.],
-  [[powerofthree's Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/51073)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51073")[powerofthree's Tweaks]],
   [SKSE plugin tweak framework; hard dependency for many modern mods.],
-  [[powerofthree's Papyrus Extender](https://www.nexusmods.com/skyrimspecialedition/mods/22854)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22854")[powerofthree's Papyrus Extender]],
   [Extended Papyrus scripting functions.],
-  [[PapyrusUtil](https://www.nexusmods.com/skyrimspecialedition/mods/13048)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/13048")[PapyrusUtil]],
   [Papyrus array/map utilities.],
-  [[JContainers](https://www.nexusmods.com/skyrimspecialedition/mods/16495)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16495")[JContainers]],
   [JSON data storage for Papyrus.],
-  [[Keyword Item Distributor (KID)](https://www.nexusmods.com/skyrimspecialedition/mods/55728)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55728")[Keyword Item Distributor (KID)]],
   [Distributes keywords to items without patching.],
-  [[Spell Perk Item Distributor (SPID)](https://www.nexusmods.com/skyrimspecialedition/mods/36869)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/36869")[Spell Perk Item Distributor (SPID)]],
   [Distributes spells/perks to NPCs dynamically.],
-  [[Base Object Swapper (BOS)](https://www.nexusmods.com/skyrimspecialedition/mods/60805)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60805")[Base Object Swapper (BOS)]],
   [Swaps base objects via rules without direct overrides.],
-  [[Crash Logger SSE AE VR](https://www.nexusmods.com/skyrimspecialedition/mods/59818)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/59818")[Crash Logger SSE AE VR]],
   [Crash dump logging for diagnosing CTDs.],
-  [[SkyPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/106659)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106659")[SkyPatcher]],
   [SKSE-based vanilla record patcher; hard requirement for several NPC/AI mods.],
-  [[Dual Casting Fix](https://www.nexusmods.com/skyrimspecialedition/mods/92454)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92454")[Dual Casting Fix]],
   [Required by Blade and Blunt.],
-  [[Andrealphus' Papyrus Functions](https://www.nexusmods.com/skyrimspecialedition/mods/85252)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85252")[Andrealphus' Papyrus Functions]],
   [Required by Dragon War.],
-  [[ConsoleUtilSSE NG](https://www.nexusmods.com/skyrimspecialedition/mods/76649)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76649")[ConsoleUtilSSE NG]],
   [Required by Dragon War and several animation behavior mods.],
-  [[Kris's Papyrus Extender](https://www.nexusmods.com/skyrimspecialedition/mods/115164)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115164")[Kris's Papyrus Extender]],
   [Required by Bathing in Skyrim - Renewed.],
-  [[Animation Queue Fix](https://www.nexusmods.com/skyrimspecialedition/mods/82395)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82395")[Animation Queue Fix]],
   [Animation-stack stability for heavy OAR/behavior loads.],
-  [[Papyrus Tweaks NG](https://www.nexusmods.com/skyrimspecialedition/mods/77779)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77779")[Papyrus Tweaks NG]],
   [Script-engine performance optimization; widely adopted baseline.],
-  [[Lexicon SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/153176)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153176")[Lexicon SKSE]],
   [Required by Actor Value Generator.],
-  [[Actor Value Generator](https://www.nexusmods.com/skyrimspecialedition/mods/84743)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84743")[Actor Value Generator]],
   [Required by Classic Attributes.],
-  [[XEMI Utility](https://www.nexusmods.com/skyrimspecialedition/mods/159084)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159084")[XEMI Utility]],
   [Required by FYX - Nordic Doors and Traps Collisions.],
-  [[Sonders Keyword Distribution Resources](https://www.nexusmods.com/skyrimspecialedition/mods/93995)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/93995")[Sonders Keyword Distribution Resources]],
   [Keyword distribution framework for item/keyword tagging.],
-  [[Skyrim Save System Overhaul 3 (SSSO3)](https://www.nexusmods.com/skyrimspecialedition/mods/122343)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122343")[Skyrim Save System Overhaul 3 (SSSO3)]],
   [Save-system replacement with Save Shield, rotating caps, and safe timed hardsaves. Requires `JContainers SE` + `NL\_MCM`.],
-  [[Unofficial Skyrim Modder's Patch - USMP SE](https://www.nexusmods.com/skyrimspecialedition/mods/49616)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49616")[Unofficial Skyrim Modder's Patch - USMP SE]],
   [Modder-side patch collection fixing record-level bugs across DLC and CC content. Complements USSEP.],
-  [[USMP - Patch Emporium](https://www.nexusmods.com/skyrimspecialedition/mods/50813)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50813")[USMP - Patch Emporium]],
   [Centralized patch hub for USMP — third-party compatibility patches for various content mods. Install after USMP base.],
-  [[Object Impact Framework (OIF)](https://www.nexusmods.com/skyrimspecialedition/mods/149484)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149484")[Object Impact Framework (OIF)]],
   [Physics-based object impact system; prerequisite for several immersion/destruction mods.],
 )
 
 === SSSO3 Configuration
 <foundations-and-compatibility-ssso3-configuration>
 
-Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format — the instability risk is **when** they fire (cell transitions, combat, half-evaluated script state), not the format. SSSO3 replaces vanilla triggers with a Save Shield that defers saves during unsafe states.
+Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format — the instability risk is *when* they fire (cell transitions, combat, half-evaluated script state), not the format. SSSO3 replaces vanilla triggers with a Save Shield that defers saves during unsafe states.
 
-**Installation:**
+*Installation:*
 
 1. Install requirements (already in Core Libraries): `JContainers SE`, `NL\_MCM - A Modular MCM Framework`, `Regional Save Names`, `SSE Engine Fixes`
 2. Install the SSSO3 main file and `SSSO3 - French` (if applicable). Place SSSO3 anywhere in load order.
-3. **Disable all vanilla autosaves** in BethINI Pie: untick Autosaves, Save on Travel, Save on Rest, Save on Wait. SSSO3 force-deactivates them, but BethINI settings prevent the INI values from conflicting.
+3. *Disable all vanilla autosaves* in BethINI Pie: untick Autosaves, Save on Travel, Save on Rest, Save on Wait. SSSO3 force-deactivates them, but BethINI settings prevent the INI values from conflicting.
 4. Disable `iAutoSaveCount` in `Skyrim.ini` (`[SaveGame]`) to prevent the engine from reserving autosave slots — SSSO3 manages its own.
 
-**In-game setup (required before the rotating system activates):**
+*In-game setup (required before the rotating system activates):*
 
 1. Create your character and exit the starting cell (alternate-start mod or vanilla Helgen sequence).
 2. Make one manual save to generate a save file on disk.
-3. Open the SSSO3 MCM. Go to **Player Setup**.
-4. Press the **Find Player ID** button — SSSO3 reads it automatically from the save file. If it fails, use **Bypass Check** and type your character name exactly.
-5. Assign a **Quick Save key** and a **Quick Load key** in the MCM.
-6. **Select a preset profile.** For Elder Wilds, start with **Vanilla+** — it replicates vanilla autosave behavior with Save Shield protection and timed saves, no hardcore restrictions.
-7. From the MCM's **Rotating System** page, set your preferred save cap (20-30 is reasonable for a playthrough).
+3. Open the SSSO3 MCM. Go to *Player Setup*.
+4. Press the *Find Player ID* button — SSSO3 reads it automatically from the save file. If it fails, use *Bypass Check* and type your character name exactly.
+5. Assign a *Quick Save key* and a *Quick Load key* in the MCM.
+6. *Select a preset profile.* For Elder Wilds, start with *Vanilla+* — it replicates vanilla autosave behavior with Save Shield protection and timed saves, no hardcore restrictions.
+7. From the MCM's *Rotating System* page, set your preferred save cap (20-30 is reasonable for a playthrough).
 
-**Campfire users:** SSSO3 must overwrite Campfire's files. Use the Campfire patch included with SSSO3 and let SSSO3 win file conflicts in MO2.
+*Campfire users:* SSSO3 must overwrite Campfire's files. Use the Campfire patch included with SSSO3 and let SSSO3 win file conflicts in MO2.
 
 === SkyPatcher And SkyPatched Mods → separator: Foundations - Core Libraries
 <foundations-and-compatibility-skypatcher-and-skypatched-mods-separator-foundations-core-libraries>
 
-**SkyPatcher** is an SKSE plugin that patches vanilla records at runtime from INI-style configuration files rather than traditional ESP plugins. No winner-loser override chain, no per-pair patches for the records it covers.
+*SkyPatcher* is an SKSE plugin that patches vanilla records at runtime from INI-style configuration files rather than traditional ESP plugins. No winner-loser override chain, no per-pair patches for the records it covers.
 
-A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of an ESP. Assets (meshes, textures, scripts) still install in MO2's left pane, but the plugin slot is replaced by files under `SKSE/Plugins/SkyPatcher/`.
+A *"SkyPatched"* variant ships record changes as SkyPatcher configs instead of an ESP. Assets (meshes, textures, scripts) still install in MO2's left pane, but the plugin slot is replaced by files under `SKSE/Plugins/SkyPatcher/`.
 
-**When to choose SkyPatched:**
+*When to choose SkyPatched:*
 
 - Mod only changes vanilla records (book stats, weapon damage, armor ratings, ingredient values), not new records
 - Load order is approaching the 254-plugin cap — each SkyPatched variant saves one ESP slot
 - Multiple mods edit the same records — runtime application avoids patch debt
 - Author explicitly provides a SkyPatched alternative
 
-**When to stick with traditional plugin:**
+*When to stick with traditional plugin:*
 
 - Mod adds new records (CELL, WRLD, QUST, NPC\_ with facegen)
 - Mod needs explicit load-order priority — Bashed Patch or xEdit patches give control that "all apply" doesn't
 - No SkyPatched variant available
 
-**Mods using SkyPatcher in this list:**
+*Mods using SkyPatcher in this list:*
 
-- `Book Covers Skyrim - SkyPatched` (→ [Textures & Meshes](modlist-graphics-textures.md))
-- `Dawnguard Arsenal SSE - SkyPatched` (→ [World Content](modlist-world-content.md))
-- `Diverse 4thUnknown Dragons` — uses SkyPatcher for combat-mod compatibility (→ [Enemies & Creatures](modlist-creatures.md))
-- `Patchifier` Synthesis patcher generates SkyPatcher patches (→ [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md))
+- `Book Covers Skyrim - SkyPatched` (→ @graphics-textures-textures--meshes)
+- `Dawnguard Arsenal SSE - SkyPatched` (→ @world-content-world-content)
+- `Diverse 4thUnknown Dragons` — uses SkyPatcher for combat-mod compatibility (→ @creatures-enemies--creatures)
+- `Patchifier` Synthesis patcher generates SkyPatcher patches (→ @performance-patches-bashed-patch--synthesis-configuration)
 
 === Mesh & Texture Fixes → separator: Foundations - Mesh & Texture Fixes
 <foundations-and-compatibility-mesh--texture-fixes-separator-foundations-mesh--texture-fixes>
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Purpose*],
   [Particle Patch],
@@ -479,33 +481,33 @@ Adopt the canonical `xEdit` mod-by-mod patching workflow: install one mod at a t
 === Wrye Bash And The Bashed Patch
 <foundations-and-compatibility-wrye-bash-and-the-bashed-patch>
 
-The **Bashed Patch** is an automatically generated plugin merging leveled lists, applying game-setting tweaks, and resolving category-tagged record conflicts. Replaces dozens of per-pair patches for the record types it owns.
+The *Bashed Patch* is an automatically generated plugin merging leveled lists, applying game-setting tweaks, and resolving category-tagged record conflicts. Replaces dozens of per-pair patches for the record types it owns.
 
-**Rebuild triggers:** adding/removing leveled-list mods, changing `.TweakSettings`, adding a mod with `Bash Tags`, form-ID compaction. It is step 2 in the full build order (after `SSEEdit`, before `Synthesis`; see → [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md)).
+*Rebuild triggers:* adding/removing leveled-list mods, changing `.TweakSettings`, adding a mod with `Bash Tags`, form-ID compaction. It is step 2 in the full build order (after `SSEEdit`, before `Synthesis`; see → @performance-patches-bashed-patch--synthesis-configuration).
 
-**What the Bashed Patch does not do:** resolve arbitrary record conflicts (→ `xEdit`/`Synthesis`), merge plugins (→ ESL flags), or iterative/rule-based patching (→ `Synthesis`).
+*What the Bashed Patch does not do:* resolve arbitrary record conflicts (→ `xEdit`/`Synthesis`), merge plugins (→ ESL flags), or iterative/rule-based patching (→ `Synthesis`).
 
-**Mods complementing or requiring Wrye Bash:**
+*Mods complementing or requiring Wrye Bash:*
 
-- **Leveled-list expanders** (Immersive Weapons, Immersive Armors, Hunterborn) — need `Relev`/`Delev`/`Invent.Add` tags
-- **World loot frameworks** (Open World Loot, MorrowLoot Ultimate)
-- **Economy mods** (Trade and Barter, Ars Metallica, Honed Metal, Apothecary) — need `Stats`/`Invent.Change`
-- **Lighting/weather** (CS Light, True Light, RAID Weathers) — need `C.Light`/`C.Water`/`C.Climate`
-- **NPC/follower mods** (RDO, Nether's, Serana Dialogue) — need `Actors.*` tags
-- **Audio overhauls** (AOS, ISC, Sounds of Skyrim) — need `Sound`/`C.Acoustic`
+- *Leveled-list expanders* (Immersive Weapons, Immersive Armors, Hunterborn) — need `Relev`/`Delev`/`Invent.Add` tags
+- *World loot frameworks* (Open World Loot, MorrowLoot Ultimate)
+- *Economy mods* (Trade and Barter, Ars Metallica, Honed Metal, Apothecary) — need `Stats`/`Invent.Change`
+- *Lighting/weather* (CS Light, True Light, RAID Weathers) — need `C.Light`/`C.Water`/`C.Climate`
+- *NPC/follower mods* (RDO, Nether's, Serana Dialogue) — need `Actors.*` tags
+- *Audio overhauls* (AOS, ISC, Sounds of Skyrim) — need `Sound`/`C.Acoustic`
 
-Exact `Bash Tag` per plugin, `.TweakSettings` table, and build-order placement → [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md).
+Exact `Bash Tag` per plugin, `.TweakSettings` table, and build-order placement → @performance-patches-bashed-patch--synthesis-configuration.
 
 === Cyclic Workflow (per new mod)
 <foundations-and-compatibility-cyclic-workflow-per-new-mod>
 
-1. **Install and place.** Heuristic: broad world-changers early; narrow/local edits late.
-2. **Run `xEdit` with `-veryquickshowconflicts`.** Register xEdit in MO2 with that argument. Right-click → `Hide no conflict and empty rows`.
-3. **Try load order first.** Move mod up/down if that resolves most conflicts; re-run.
-4. **Identify bad conflicts.** Only conflicts where the loser was supposed to win.
-5. **Build per-pair patch.** `Copy as override into…` → `\<new file>.esp [Template] ESL`. Name explicitly (e.g., `LoreRim\_x\_RWT.esp`). Drag missing fields from loser into new record. Accept master addition. Run `Add Masters…` for every referenced mod. Save into `Patches` separator.
-6. **Build per-pair `ModGroup`s.** One `ModGroup` per conflicting pair. Move `*.ModGroup` files from `MO2 overwrite` into the source mod's own MO2 folder.
-7. **Re-open xEdit and confirm zero visible conflicts.**
+1. *Install and place.* Heuristic: broad world-changers early; narrow/local edits late.
+2. *Run `xEdit` with `-veryquickshowconflicts`.* Register xEdit in MO2 with that argument. Right-click → *Hide no conflict and empty rows*.
+3. *Try load order first.* Move mod up/down if that resolves most conflicts; re-run.
+4. *Identify bad conflicts.* Only conflicts where the loser was supposed to win.
+5. *Build per-pair patch.* *Copy as override into…* → `\<new file>.esp [Template] ESL`. Name explicitly (e.g., `LoreRim\_x\_RWT.esp`). Drag missing fields from loser into new record. Accept master addition. Run *Add Masters…* for every referenced mod. Save into `Patches` separator.
+6. *Build per-pair `ModGroup`s.* One `ModGroup` per conflicting pair. Move `*.ModGroup` files from `MO2 overwrite` into the source mod's own MO2 folder.
+7. *Re-open xEdit and confirm zero visible conflicts.*
 
 === Starting State
 <foundations-and-compatibility-starting-state>
@@ -515,7 +517,7 @@ Clean load order (`Skyrim.esm`, `Update.esm`, three DLCs) plus USSEP. USSEP ship
 === Cleaning Discipline
 <foundations-and-compatibility-cleaning-discipline>
 
-Run LOOT after new mod install. If flagged for cleaning, run `Quick Auto Clean` then `Check For Errors`. Red errors = reconsider the mod. QAC only removes ITM/UDR records.
+Run LOOT after new mod install. If flagged for cleaning, run *Quick Auto Clean* then *Check For Errors*. Red errors = reconsider the mod. QAC only removes ITM/UDR records.
 
 === ESL-Flagged Patches
 <foundations-and-compatibility-esl-flagged-patches>
@@ -545,38 +547,38 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 - Fewer than 2048 new record forms
 - No new CELL/WRLD/NAVM/NAVI records
 - No QUST/DIAL overrides with hard-coded form ID references
-- **Trivially convertible:** Bodyslide outputs, SKSE plugin dummy ESPs, texture-replacer ESPs
+- *Trivially convertible:* Bodyslide outputs, SKSE plugin dummy ESPs, texture-replacer ESPs
 
 === Automated Discovery
 <foundations-and-compatibility-automated-discovery>
 
-1. **Built-in script:** `Find ESP plugins which could be turned into ESL.pas` — ships with SSEEdit.
-2. **Fractal's `ESP-ESL Finder v1.1`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117978))
-3. **`ESLify`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42211)) — batch-convert wrapper. Verify candidates manually first.
-4. **`SSEEdit Script - Header Change to Version 1.71`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115056)) — unlocks full 4095-record range for 1.6.1130+.
+1. *Built-in script:* `Find ESP plugins which could be turned into ESL.pas` — ships with SSEEdit.
+2. *Fractal's `ESP-ESL Finder v1.1`* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/117978")[Nexus])
+3. *`ESLify`* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/42211")[Nexus]) — batch-convert wrapper. Verify candidates manually first.
+4. *`SSEEdit Script - Header Change to Version 1.71`* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/115056")[Nexus]) — unlocks full 4095-record range for 1.6.1130+.
 
 === Safe Conversion (low risk)
 <foundations-and-compatibility-safe-conversion-low-risk>
 
-1. Right-click → `Compact Form IDs for ESL`.
-2. Right-click → `Set Is-Esl Flag` (ESL only, not ESM).
+1. Right-click → *Compact Form IDs for ESL*.
+2. Right-click → *Set Is-Esl Flag* (ESL only, not ESM).
 3. Save. Re-sort with LOOT.
 
 === Full Conversion (xEdit workflow)
 <foundations-and-compatibility-full-conversion-xedit-workflow>
 
-1. Load plugin + dependencies. Apply `Hide no conflict and empty rows`.
-2. Right-click → `Compact Form IDs for ESL`. If zero, skip to step 4.
-3. **Check for broken references:** Run `Check for Errors`; for external refs, load full load order → `Referenced By` → `Apply as filter`; or use `List records referencing specific plugins.pas`.
-4. Right-click → `Set Is-Esl Flag` (ESL only).
+1. Load plugin + dependencies. Apply *Hide no conflict and empty rows*.
+2. Right-click → *Compact Form IDs for ESL*. If zero, skip to step 4.
+3. *Check for broken references:* Run *Check for Errors*; for external refs, load full load order → *Referenced By* → *Apply as filter*; or use `List records referencing specific plugins.pas`.
+4. Right-click → *Set Is-Esl Flag* (ESL only).
 5. Save. Re-sort.
 
 === Red Lines
 <foundations-and-compatibility-red-lines>
 
-- **Never** convert plugins with CELL/WRLD/NAVM/NAVI records without verifying every cross-reference.
-- **Never** convert mid-playthrough.
-- **Never** convert a plugin another mod lists as a master without verifying.
+- *Never* convert plugins with CELL/WRLD/NAVM/NAVI records without verifying every cross-reference.
+- *Never* convert mid-playthrough.
+- *Never* convert a plugin another mod lists as a master without verifying.
 - ESL-flagged plugins still count toward the 4096 light-plugin limit.
 
 === Recommended Candidates
@@ -602,60 +604,60 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Purpose*],
-  [[Fuz Ro D-oh - Silent Voice](https://www.nexusmods.com/skyrimspecialedition/mods/15109)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/15109")[Fuz Ro D-oh - Silent Voice]],
   [Subtitle safety for unvoiced dialogue.],
-  [[Actor Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/32349)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32349")[Actor Limit Fix]],
   [Crowded scene / facial animation reliability.],
-  [[Equip Enchantment Fix](https://www.nexusmods.com/skyrimspecialedition/mods/42839)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42839")[Equip Enchantment Fix]],
   [Enchantments dropping off while equipped.],
-  [[NPC AI Process Position Fix - NG](https://www.nexusmods.com/skyrimspecialedition/mods/69326)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69326")[NPC AI Process Position Fix - NG]],
   [NPC processing after waiting/fast travel.],
-  [[Simple Offence Suppression](https://www.nexusmods.com/skyrimspecialedition/mods/41764)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/41764")[Simple Offence Suppression]],
   [Accidental hostility from stray hits.],
-  [[Bug Fixes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/33261)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33261")[Bug Fixes SSE]],
   [Crafting-menu, perk-application, and water-behavior fixes.],
-  [[Navigator - Navmesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/52641)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/52641")[Navigator - Navmesh Fixes]],
   [Follower pathing in complex worldspaces.],
-  [[Barter Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/77173)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77173")[Barter Limit Fix]],
   [Merchant gold cap overflow.],
-  [[Mum's the Word NG](https://www.nexusmods.com/skyrimspecialedition/mods/77409)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77409")[Mum's the Word NG]],
   [Worthless stolen-item tagging.],
-  [[Regional Save Names](https://www.nexusmods.com/skyrimspecialedition/mods/49698)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49698")[Regional Save Names]],
   [Save labeling for testing hygiene.],
-  [[Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18967")[Better Jumping SE]],
   [Consistent jumping control.],
-  [[LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129136")[LeveledList Crash Fix]],
   [Leveled-list crash protection.],
-  [[Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154076")[Explosion Collision Fix]],
   [Prevents explosion-force spells from launching objects into camera.],
-  [[Beard Mask Fix](https://www.nexusmods.com/skyrimspecialedition/mods/80232)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80232")[Beard Mask Fix]],
   [Beards use slot 44 — prevents mask clipping. SKSE plugin.],
-  [[Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177961")[Luma Utility]],
   [Utility SKSE plugin.],
-  [[Description Framework Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139077)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139077")[Description Framework Patch Hub]],
   [Centralized patch collection for the Description Framework.],
-  [[Weapons Armor Clothing and Clutter Fixes (WACCF)](https://www.nexusmods.com/skyrimspecialedition/mods/18994)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18994")[Weapons Armor Clothing and Clutter Fixes (WACCF)]],
   [Broad record fix for weapon/armor/clothing/clutter records. High compatibility debt — test carefully with the crafting and artifact stack. Optional — skip if conflicts outweigh gains.],
 )
 
 === Not Installed
 <foundations-and-compatibility-not-installed>
 
-- **Alt-Tab Stuck Key Fix** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148466)) — Prevents stuck modifier keys after alt-tabbing. Optional fix, evaluate if alt-tab issues arise during testing.
-- **I'm Walkin' Here NG with Pets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122516)) — Ally/pet body-blocking fix.
-- **Bard Instrumentals Mostly - Sing Rarely** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10927)) — Repetitive tavern singing. Not needed — other bard mods cover this. → separator: `Audio - SFX & Ambience`
+- *Alt-Tab Stuck Key Fix* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/148466")[Nexus]) — Prevents stuck modifier keys after alt-tabbing. Optional fix, evaluate if alt-tab issues arise during testing.
+- *I'm Walkin' Here NG with Pets* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/122516")[Nexus]) — Ally/pet body-blocking fix.
+- *Bard Instrumentals Mostly - Sing Rarely* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/10927")[Nexus]) — Repetitive tavern singing. Not needed — other bard mods cover this. → separator: `Audio - SFX & Ambience`
 
 
 
 
 // -- guide/modlist-graphics.md --
 = Graphics Pipeline
-<graphics-pipeline>
+<graphics-graphics-pipeline>
 
-**MO2 Separator:** `Graphics`
+*MO2 Separator:* `Graphics`
 
 == Overview
 <graphics-pipeline-overview>
@@ -669,33 +671,33 @@ The pipeline is designed to be evaluated in order — each stage depends on the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Stage*],
   [*File*],
   [*Category*],
   [1],
-  [[`Graphics - PGPatcher`](modlist-graphics-pgpatcher.md)],
+  [@graphics-pgpatcher-pgpatcher],
   [PGPatcher — parallax/PBR mesh generation],
   [2],
-  [[`Graphics - Community Shaders`](modlist-graphics-shaders.md)],
+  [@graphics-shaders-community-shaders],
   [Community Shaders — post-process framework and addon modules],
   [3],
-  [[`Graphics - Textures & Meshes`](modlist-graphics-textures.md)],
+  [@graphics-textures-textures--meshes],
   [Textures & Meshes — all surface-level asset replacement],
   [4],
-  [[`Graphics - Lighting`](modlist-graphics-lighting.md)],
+  [@graphics-lighting-lighting],
   [Lighting — interior, exterior, and effect lighting],
   [5],
-  [[`Graphics - Weather & Water`](modlist-graphics-weather.md)],
+  [@graphics-weather-weather--water],
   [Weather & Water — atmospheric and liquid rendering],
   [6],
-  [[`Graphics - Terrain & Flora`](modlist-graphics-terrain.md)],
+  [@graphics-terrain-terrain--flora],
   [Terrain & Flora — ground surfaces, grass, trees],
   [7],
-  [[`Graphics - Characters & Creatures`](modlist-graphics-characters.md)],
+  [@graphics-characters-characters--creatures],
   [Characters & Creatures — body, skin, hair, creature textures],
   [8],
-  [[`Graphics - LOD & Distant Detail`](modlist-graphics-lod.md)],
+  [@graphics-lod-lod--distant-detail],
   [LOD & Distant Detail — far-field rendering],
 )
 
@@ -713,9 +715,9 @@ The pipeline is designed to be evaluated in order — each stage depends on the 
 
 // -- guide/modlist-graphics-pgpatcher.md --
 = PGPatcher
-<pgpatcher>
+<graphics-pgpatcher-pgpatcher>
 
-**MO2 Separator:** `Graphics` → `Graphics - PGPatcher`
+*MO2 Separator:* `Graphics` → `Graphics - PGPatcher`
 
 All items in this section belong to the `Graphics - PGPatcher` MO2 separator unless noted.
 
@@ -728,11 +730,11 @@ PGPatcher is a post-installation patcher that generates parallax and PBR-compati
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[PGPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/120946)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120946")[PGPatcher]],
   [Baseline],
   [Post-installation parallax/PBR mesh generator. Keep output in own MO2 folder.],
 )
@@ -744,7 +746,7 @@ PGPatcher is a post-installation patcher that generates parallax and PBR-compati
 2. Let the generated patch load after the source texture/mesh mods it supports.
 3. Re-run whenever a major landscape, architecture, ruins, or clutter texture pack is replaced.
 4. Only keep generated output if it produces visible improvement without new artifacts.
-5. Hard requirement for mods such as [Steel Armor Redone - PBR and Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/175453).
+5. Hard requirement for mods such as #link("https://www.nexusmods.com/skyrimspecialedition/mods/175453")[Steel Armor Redone - PBR and Complex Material].
 
 === Alternatives
 <pgpatcher-alternatives>
@@ -762,9 +764,9 @@ PGPatcher is a post-installation patcher that generates parallax and PBR-compati
 
 // -- guide/modlist-graphics-shaders.md --
 = Community Shaders
-<community-shaders>
+<graphics-shaders-community-shaders>
 
-**MO2 Separator:** `Graphics` → `Graphics - Community Shaders`
+*MO2 Separator:* `Graphics` → `Graphics - Community Shaders`
 
 All mods in this section belong to the `Graphics - Community Shaders` MO2 separator unless a different one is noted.
 
@@ -778,8 +780,8 @@ This section owns the graphics-framework decision for the shader-first visual st
 === Baseline
 <community-shaders-baseline>
 
-- **Community Shaders** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86492)) — Core framework.
-- Validate prerequisites before judging later graphics layers: `SKSE64` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30379)), `Address Library for SKSE Plugins` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/32444)), `Luma Utility` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177961)), and any current page-listed dependencies.
+- *Community Shaders* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/86492")[Nexus]) — Core framework.
+- Validate prerequisites before judging later graphics layers: `SKSE64` (#link("https://www.nexusmods.com/skyrimspecialedition/mods/30379")[Nexus]), `Address Library for SKSE Plugins` (#link("https://www.nexusmods.com/skyrimspecialedition/mods/32444")[Nexus]), `Luma Utility` (#link("https://www.nexusmods.com/skyrimspecialedition/mods/177961")[Nexus]), and any current page-listed dependencies.
 - Record baseline performance before installing add-ons so module decisions are measured against a real control point.
 
 === Alternatives
@@ -806,17 +808,17 @@ How aggressive the first CS feature layer should be — improve shadowing, wetne
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Tier*],
   [*Modules*],
   [*When To Enable*],
-  [**Conservative**],
+  [*Conservative*],
   [Screen Space Shadows, Grass Lighting, Water Effects, Wetness Effects],
   [Start here],
-  [**Balanced**],
+  [*Balanced*],
   [Conservative + Terrain Shadows],
   [After trees, grass, weather, water, LOD are stable],
-  [**High-End**],
+  [*High-End*],
   [Balanced + SSGI, Subsurface Scattering],
   [Luxury, not requirement],
 )
@@ -826,9 +828,9 @@ Install the CS main download (v1.7+) and enable modules via FOMOD. Install optio
 === Plugins (separate downloads from core)
 <community-shaders-plugins-separate-downloads-from-core>
 
-- **Skylighting** — Sky-driven ambient occlusion. Pairs cleanly with the conservative tier. Worth including for authentic grim-dark look.
-- **Skyrim Upscaler - DLSS FSR2 XeSS** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80343)) — Only if real performance testing proves it's needed.
-- **Embers XD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37085)) — The fire-and-ember answer (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements. → separator: `Graphics - Lighting`
+- *Skylighting* — Sky-driven ambient occlusion. Pairs cleanly with the conservative tier. Worth including for authentic grim-dark look.
+- *Skyrim Upscaler - DLSS FSR2 XeSS* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/80343")[Nexus]) — Only if real performance testing proves it's needed.
+- *Embers XD* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/37085")[Nexus]) — The fire-and-ember answer (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements. → separator: `Graphics - Lighting`
 
 Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SSGI`, `Skylighting`, `Terrain Helper`, `Terrain Blending`, `Terrain Variation`, `Upscaling`, `Wetness Effects`.
 
@@ -837,11 +839,11 @@ Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SS
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
-  [[Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/158207")[Dynamic Wetness]],
   [Wetness VFX triggered by swimming, rain, and water contact. SKSE plugin, complements CS Wetness Effects.],
 )
 
@@ -882,7 +884,7 @@ Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SS
 
 #table(
   columns: 9,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Date*],
   [*Build*],
   [*Test Area*],
@@ -920,7 +922,7 @@ Auto Parallax and Complex Parallax Materials form the parallax rendering layer b
 === Baseline
 <community-shaders-baseline-2>
 
-- Install **Auto Parallax** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/79473)) and **Complex Parallax Materials** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95134)) as infrastructure before adding parallax-enabled textures or meshes. CPM hard-depends on Auto Parallax. Install after the texture stack is mostly chosen but before PGPatcher runs.
+- Install *Auto Parallax* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79473")[Nexus]) and *Complex Parallax Materials* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/95134")[Nexus]) as infrastructure before adding parallax-enabled textures or meshes. CPM hard-depends on Auto Parallax. Install after the texture stack is mostly chosen but before PGPatcher runs.
 
 === Risks & Compatibility
 <community-shaders-risks--compatibility-3>
@@ -940,36 +942,36 @@ PBR is an adoption strategy layered on top of Community Shaders, not a separate 
 
 Broad AIO base + targeted terrain and rock overrides.
 
-- **Vanilla PBR AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174091), 11.5 GB) — Primary base. Covers all architecture, clutter, actors, dungeons with vanilla-faithful art direction.
-- **Faultier's PBR Landscapes 4k** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125308), 3.0 GB) — Fills VPBR's terrain gap. Do NOT install `Faultier's Skyrim AIO` alongside VPBR.
-- **Enhanced Rocks and Mountains - Complex Material and PBR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336)) — Modern rock/mountain overhaul. Load after VPBR to override its mountain textures. Install both main files (meshes then textures, choose PBR in FOMOD).
-- **Tomato's PBR Whiterun** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135771)) — Optional Whiterun override. Install 2K (735 MB), skip 4K (2 GB). Optional: `Improved Dragon Carvings` (beta, 2K) and `PBR Talos`.
-- **Tomato's PBR Farmhouses 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135774)) — Optional farmhouse override. Install Grey 2K (84 MB), skip 4K. Optional: `WSU PBR Farmhouse windows patch` if Window Shadows Ultimate is in the stack.
+- *Vanilla PBR AIO* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/174091")[Nexus], 11.5 GB) — Primary base. Covers all architecture, clutter, actors, dungeons with vanilla-faithful art direction.
+- *Faultier's PBR Landscapes 4k* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/125308")[Nexus], 3.0 GB) — Fills VPBR's terrain gap. Do NOT install `Faultier's Skyrim AIO` alongside VPBR.
+- *Enhanced Rocks and Mountains - Complex Material and PBR* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/121336")[Nexus]) — Modern rock/mountain overhaul. Load after VPBR to override its mountain textures. Install both main files (meshes then textures, choose PBR in FOMOD).
+- *Tomato's PBR Whiterun* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/135771")[Nexus]) — Optional Whiterun override. Install 2K (735 MB), skip 4K (2 GB). Optional: `Improved Dragon Carvings` (beta, 2K) and `PBR Talos`.
+- *Tomato's PBR Farmhouses 2.0* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/135774")[Nexus]) — Optional farmhouse override. Install Grey 2K (84 MB), skip 4K. Optional: `WSU PBR Farmhouse windows patch` if Window Shadows Ultimate is in the stack.
 
-Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** as standard features. Verify the chosen PBR texture set uses both before adding extra reflection/cubemap mods.
+Community Shaders ships *Dynamic Cubemaps* and *Image-Based Lighting (IBL)* as standard features. Verify the chosen PBR texture set uses both before adding extra reflection/cubemap mods.
 
 === Alternatives
 <community-shaders-alternatives-2>
 
-- **Minimal PBR:** Enable support but only use a few showcase conversions.
-- **Full PBR push:** Broad world coverage with higher maintenance and consistency risk.
+- *Minimal PBR:* Enable support but only use a few showcase conversions.
+- *Full PBR push:* Broad world coverage with higher maintenance and consistency risk.
 
 === Priority Coverage
 <community-shaders-priority-coverage>
 
-**Priority 1** — seen constantly in travel and third person:
+*Priority 1* — seen constantly in travel and third person:
 
 - City architecture; farmhouses and rural buildings
 - Nordic ruins and dungeon stonework
 - High-visibility clutter and props
 
-**Priority 2** — fill in after core look settles:
+*Priority 2* — fill in after core look settles:
 
 - Select landscape regions with strong material identity
 - City sets from settlement overhauls that survive later testing
 - Broader regional packs that fill obvious gaps
 
-**Defer for now:**
+*Defer for now:*
 
 - Full-world landscape replacement
 - Low-visibility assets adding patching/VRAM cost without changing moment-to-moment feel
@@ -978,19 +980,19 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 === Priority 2 Candidate Mods
 <community-shaders-priority-2-candidate-mods>
 
-- **A Cathedralist's PBR Landscape** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137333))
-- **TomatoRim PBR Landscapes AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177621))
-- **PBR textures for The Great Cities Collection** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133493))
-- **PBR Hub** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139889)) — Discovery hub for later expansion.
+- *A Cathedralist's PBR Landscape* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/137333")[Nexus])
+- *TomatoRim PBR Landscapes AIO* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/177621")[Nexus])
+- *PBR textures for The Great Cities Collection* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/133493")[Nexus])
+- *PBR Hub* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/139889")[Nexus]) — Discovery hub for later expansion.
 
 === Working Rollout Order
 <community-shaders-working-rollout-order>
 
-1. Install **Vanilla PBR AIO** — broad PBR base for architecture, clutter, actors, dungeons.
-2. Install **Faultier's PBR Landscapes 4k** — fills VPBR's terrain gap.
-3. Install **Enhanced Rocks and Mountains** after VPBR — overrides VPBR's mountain textures.
-4. Optionally install **Tomato's PBR Whiterun** and **Tomato's PBR Farmhouses 2.0** after VPBR.
-5. Run **PGPatcher** last — all PBR texture mods above require it.
+1. Install *Vanilla PBR AIO* — broad PBR base for architecture, clutter, actors, dungeons.
+2. Install *Faultier's PBR Landscapes 4k* — fills VPBR's terrain gap.
+3. Install *Enhanced Rocks and Mountains* after VPBR — overrides VPBR's mountain textures.
+4. Optionally install *Tomato's PBR Whiterun* and *Tomato's PBR Farmhouses 2.0* after VPBR.
+5. Run *PGPatcher* last — all PBR texture mods above require it.
 6. Only after core stack passes review, test optional landscape additions (`Cathedralist's PBR Landscape`, `TomatoRim PBR Landscapes AIO`).
 
 === Risks & Compatibility
@@ -1014,9 +1016,9 @@ Open research for the graphics pipeline is tracked in `TODO.md`.
 
 // -- guide/modlist-graphics-textures.md --
 = Textures & Meshes
-<textures--meshes>
+<graphics-textures-textures--meshes>
 
-**MO2 Separator:** `Graphics` → `Graphics - Textures & Meshes`
+*MO2 Separator:* `Graphics` → `Graphics - Textures & Meshes`
 
 All mods in this section belong to the `Graphics - Textures & Meshes` MO2 separator unless a different one is noted.
 
@@ -1027,35 +1029,35 @@ All mods in this section belong to the `Graphics - Textures & Meshes` MO2 separa
 
 Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it.
 
-**⏱ Install order:** Core foundation → doors & walls → locks → furniture & city detail → mesh replacers → environment props → alternatives. Follow the grouping below.
+*⏱ Install order:* Core foundation → doors & walls → locks → furniture & city detail → mesh replacers → environment props → alternatives. Follow the grouping below.
 
 === Core Foundation
 <textures--meshes-core-foundation>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Static Mesh Improvement Mod (SMIM)],
   [Core mesh foundation. → separator: `Graphics - Community Shaders`],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/659)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/659")[Nexus]],
   [Unofficial Material Fix],
   [Corrects material records for Community Shaders PBR. Install after SMIM.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21027)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21027")[Nexus]],
   [Simplicity of Snow v0.26],
   [Main file only (32.8 MB). Skip Parallax Meshes and patches for mods not in the list.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56235)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56235")[Nexus]],
   [XEMI Utility],
   [Prerequisite for FYX collision fixes below.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159084)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159084")[Nexus]],
   [FYX - Nordic Doors and Traps Collisions],
   [Collision geometry fix. Requires XEMI Utility.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/100295)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/100295")[Nexus]],
   [Flame VFX Edit],
   [Mesh-only fire spell effect improvement. CS-compatible.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/109414)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/109414")[Nexus]],
 )
 
 === Doors, Walls & Structures
@@ -1063,49 +1065,49 @@ Improve shape quality and silhouette readability without creating an unmaintaina
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Glorious Doors of Skyrim (GDOS)],
-  [Higher-detail door meshes for all architecture types. FOMOD: **2K textures**, install **all door categories**, include **Splendid Mechanized Dwemer Door** (ESL).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/32376)],
+  [Higher-detail door meshes for all architecture types. FOMOD: *2K textures*, install *all door categories*, include *Splendid Mechanized Dwemer Door* (ESL).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32376")[Nexus]],
   [Whiterun Has Walls Redone],
   [3D geometry and parallax textures for Whiterun's exterior walls. Replaces flat walls.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119229)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119229")[Nexus]],
   [Stockades of Skyrim 3D],
   [Base layer for 3D stockade walls and barricades.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/43227)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/43227")[Nexus]],
   [FYX - 3D Stockades],
   [Overwrites Stockades of Skyrim 3D meshes. Install after the stockade base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65104)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65104")[Nexus]],
   [Born in a Barn - Door Curtains for Shacks],
   [BOS-based door curtains for shacks and poor homes. No ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113432)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113432")[Nexus]],
 )
 
 === Security Overhaul SKSE Series
 <textures--meshes-security-overhaul-skse-series>
 
-Install together. Use **2K textures** for all — locks are examined up close but 4K is wasted VRAM.
+Install together. Use *2K textures* for all — locks are examined up close but 4K is wasted VRAM.
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [Lock Variations],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58224)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/58224")[Nexus]],
   [Regional Locks],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62781)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62781")[Nexus]],
   [Lock Add-ons],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/59529)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/59529")[Nexus]],
   [Some More Locks],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/59961)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/59961")[Nexus]],
   [Extra Locks],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126119)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126119")[Nexus]],
   [PBR],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/152269)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/152269")[Nexus]],
 )
 
 === Furniture, Clutter & City Detail
@@ -1113,50 +1115,50 @@ Install together. Use **2K textures** for all — locks are examined up close bu
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Snazzy Furniture and Clutter Overhaul (SFCO)],
   [Clutter objects, geometry, and variety beyond VPBR's base textures.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2414)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2414")[Nexus]],
 )
 
-**Snazzy City series** (BOS-based, city-by-city clutter improvements):
+*Snazzy City series* (BOS-based, city-by-city clutter improvements):
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [Whiterun AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147621)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147621")[Nexus]],
   [Windhelm AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147620)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147620")[Nexus]],
   [Solitude AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147618)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147618")[Nexus]],
   [Markarth AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147624)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147624")[Nexus]],
   [Riften AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147594)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147594")[Nexus]],
   [Falkreath AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147671)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147671")[Nexus]],
   [Dawnstar AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147758)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147758")[Nexus]],
   [Winterhold AIO],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150194)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/150194")[Nexus]],
   [Towns and Settlements],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147761)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147761")[Nexus]],
   [Misc Locations],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147762)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147762")[Nexus]],
   [Player Homes],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/182336)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/182336")[Nexus]],
   [Snazzy Interiors - Dawnstar Mortar and Pestle],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/140567)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140567")[Nexus]],
   [Snazzy Interiors - Winterhold Birna's Oddments],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138308)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138308")[Nexus]],
   [Snazzy Interiors Patch Collection],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/91604)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/91604")[Nexus]],
 )
 
 === Mesh Replacer Series
@@ -1166,39 +1168,39 @@ All mesh-only, no ESP.
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [V.A.E.R.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145018)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145018")[Nexus]],
   [Thrones Expanded],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139544)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139544")[Nexus]],
   [Rustic Repose - A Common Bed Replacer],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138889)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138889")[Nexus]],
   [Use Those Blankets],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75481)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/75481")[Nexus]],
   [Sleipnir Beds],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143168)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143168")[Nexus]],
   [The Royal Seat],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118892)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118892")[Nexus]],
   [Divide and Conquer],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117295)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117295")[Nexus]],
   [Oddments and Miscellanea],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118859)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118859")[Nexus]],
   [Utenlands Nordic Tents],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121203)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121203")[Nexus]],
   [Redoran Reverie],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132997)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132997")[Nexus]],
   [HFs Archery Target Remodel],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138492)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138492")[Nexus]],
   [Diverse Grindstones],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145870)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145870")[Nexus]],
   [Blary's Booksets],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159303)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159303")[Nexus]],
   [ElSopa Misc Ruins Redone],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153797)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153797")[Nexus]],
   [Snazzy Orc Chests],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142275)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142275")[Nexus]],
 )
 
 === Environment & Props
@@ -1206,47 +1208,47 @@ All mesh-only, no ESP.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [TB's 3D Driftwood],
   [3D driftwood mesh replacer. No ESP. Complements coastal areas.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80418)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80418")[Nexus]],
   [WiZkiD Hunter's Camp Overhaul],
   [Visual overhaul for hunter camps (tents, campfires, pots, clutter). No ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113558)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113558")[Nexus]],
   [Improved Fish SE],
   [Higher-quality fish meshes and textures.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17324)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17324")[Nexus]],
   [Improved Fish PBR],
   [PBR textures for fish. Requires Improved Fish SE as mesh base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145624)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145624")[Nexus]],
   [CC Fish PBRed],
   [PBR textures for CC fish. Requires free AE fish addon.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131083)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/131083")[Nexus]],
   [JS Badges of Office],
   [Replacer for Jarl's crown, court-mage's circlet, steward's key. Mesh-only, no ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/128579)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128579")[Nexus]],
 )
 
-> **PGPatcher:** Use the PGPatcher workflow in → `Graphics - PGPatcher` for late-stage parallax generation rules.
+> *PGPatcher:* Use the PGPatcher workflow in → `Graphics - PGPatcher` for late-stage parallax generation rules.
 
 === Alternatives
 <textures--meshes-alternatives>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [High Poly Project],
   [Optional. Keep only if the extra geometry earns its conflict cost.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12029)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12029")[Nexus]],
   [RUSTIC CLUTTER COLLECTION],
   [Higher-res diffuse/normal replacer. May be redundant with VPBR's clutter coverage — evaluate side-by-side.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5795)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5795")[Nexus]],
 )
 
 === Mesh Section Notes
@@ -1268,88 +1270,88 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Rally's Noble Furniture - BOS],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113326)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113326")[Nexus]],
   [Rally's Orc Furniture],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111457)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111457")[Nexus]],
   [Rally's Upper Furniture],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112256)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112256")[Nexus]],
   [Rally's Barsets],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114178)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114178")[Nexus]],
   [Rally's Common Furniture],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110370)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110370")[Nexus]],
   [Rally's Dark Elf Furniture (High Poly - ENB Light)],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112042)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112042")[Nexus]],
   [Snazzy Common Wardrobes - BOS],
   [Choose the BOS meshes main file.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92809)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92809")[Nexus]],
   [Whiterun Objects SMIMed (and fixes too)],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69125)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69125")[Nexus]],
   [Arc's WispMother Redux 2K-4K],
   [Choose 2K.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111330)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111330")[Nexus]],
   [Arc's Kettle REDUX 2K-4K],
   [Choose 2K.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110929)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110929")[Nexus]],
   [Arc's Kitchen Redux 2K-4K],
   [Choose 2K.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111694)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111694")[Nexus]],
   [Arc's MeadBarrel Redux 2K-4K],
   [Stack: install all three (base + Bloody + Distributed). Choose 2K for base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111195)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111195")[Nexus]],
   [Arc's Bloody MeadBarrel Redux],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116447)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116447")[Nexus]],
   [Distributed Arc's Mead Barrels],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119006)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119006")[Nexus]],
   [Arc's Tankard Redux],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112567)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112567")[Nexus]],
   [ElSopa - HD Iron Tools Redone SE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60495)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60495")[Nexus]],
   [Diverse BOS Kitchenware],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112361)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112361")[Nexus]],
   [Dynamic Things Alternative - BOS],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60741)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60741")[Nexus]],
   [Nordic Stonewalls],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57686)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57686")[Nexus]],
   [Nordic Stonewall Terraces],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115210)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115210")[Nexus]],
   [Nordic Stonewalls Complex Material and PBR],
   [PBR upgrade. Install after base Nordic Stonewalls.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127188)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/127188")[Nexus]],
   [Snazzy Wall Mounted Trophies - BOS],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115054)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115054")[Nexus]],
   [Fluffy Wall Mounted Dead Animals],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90369)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90369")[Nexus]],
   [Wall Mounted Dead Animals Fixes],
   [Install after Fluffy Wall Mounted Dead Animals.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58511)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/58511")[Nexus]],
   [Snazzy Diverse Carriages - BOS],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112041)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112041")[Nexus]],
   [Snazzy Diverse Carriages - Seasonal Patch],
   [Required if Seasonal Landscapes is adopted.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112210)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112210")[Nexus]],
 )
 
 === Vanaheimr Series
@@ -1357,11 +1359,11 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
-  [[Vanaheimr - Mines and Caves - Complex Material - PBR](https://www.nexusmods.com/skyrimspecialedition/mods/137033)],
-  [[Vanaheimr - Ore Veins - Complex Material - PBR](https://www.nexusmods.com/skyrimspecialedition/mods/149148)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137033")[Vanaheimr - Mines and Caves - Complex Material - PBR]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149148")[Vanaheimr - Ore Veins - Complex Material - PBR]],
 )
 
 === Animated Items (mesh replacers)
@@ -1369,37 +1371,37 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Kanjs - Sanguine Rose Animated],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113606)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113606")[Nexus]],
   [Kanjs - Soup and Stew AIO Animated (SkyPatched)],
   [Choose the SkyPatched version over the base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113191)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113191")[Nexus]],
   [Kanjs - Human Heart Animated and Beating Motion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111616)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111616")[Nexus]],
   [Kanjs - Taproot Animated and Beating Motion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111446)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111446")[Nexus]],
   [Animated Filled Soul Gems],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110638)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110638")[Nexus]],
   [Animated Ingredients],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72852)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/72852")[Nexus]],
   [Kanjs - Stalhrim Weapons Animated],
   [Animated Stalhrim weapon mesh replacer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/146167)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146167")[Nexus]],
   [Kanjs - Nordic Puzzle Door Animated],
   [Animated Nordic puzzle door mesh replacer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133482)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/133482")[Nexus]],
   [Zerofrost's Tamriel Alchemy],
   [Animated alchemy ingredient and potion replacer. Conflicts with Tamriel Alchemy Replacer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/185386)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/185386")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -1420,16 +1422,16 @@ Model and texture upgrades for unique named entities and one-of-a-kind objects �
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Night Mother],
   [High-quality model/texture replacer for the Night Mother's corpse. ESL-flagged, zero script or record conflicts.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83527)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/83527")[Nexus]],
   [Skyland Imperial and Nordic Tents],
   [4K tent textures with new mesh for the large Nordic fur tent. No ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57002)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57002")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -1447,16 +1449,16 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Dynamic Bloodpool Framework],
   [Blood and decal framework. Lock in after weather/lighting baselines are stable (decals must read correctly under both daylight and your night setup).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172080)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172080")[Nexus]],
   [Dragon Breath VFX Edit],
   [Dragon breath projectile/impact VFX replacer. Mesh-only, no ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118431)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118431")[Nexus]],
 )
 
 === Alternatives
@@ -1464,19 +1466,19 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Improved Sparks],
   [Orange spark effects on metal impacts and grindstones. FOMOD with density options (1X-20X).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19831)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/19831")[Nexus]],
   [Lightning VFX Edit],
   [Lightning bolt VFX replacer. Mesh-only, no ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124520)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124520")[Nexus]],
   [Dynamic Footprints SKSE],
   [Persistent footprints on snow, mud, sand. Add after blood/decals baseline is stable.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175254)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175254")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -1494,29 +1496,29 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 
 Visual upgrades for books, notes, and paper — the most-read world objects. Texture and mesh improvements make reading feel more tactile and library exploration more rewarding without touching gameplay records.
 
-**⏱ Install order:** Book Covers Skyrim → Enhanced Textures → SkyPatched → Lost Library (optional content).
+*⏱ Install order:* Book Covers Skyrim → Enhanced Textures → SkyPatched → Lost Library (optional content).
 
 === Base + Enhancements
 <textures--meshes-base-enhancements>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Book Covers Skyrim],
-  [Core book-cover texture replacer. Every book gets a unique hand-crafted cover. 200K+ endorsements. Choose the **Main Files** download (not the USSEP Update variant).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/901)],
+  [Core book-cover texture replacer. Every book gets a unique hand-crafted cover. 200K+ endorsements. Choose the *Main Files* download (not the USSEP Update variant).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/901")[Nexus]],
   [Book Covers Skyrim Enhanced Textures],
   [2K/4K texture upgrade. Install after base mod and overwrite. Optional but recommended for 4K displays.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178820)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/178820")[Nexus]],
   [Book Covers Skyrim - SkyPatched],
-  [SkyPatcher-based forward-port resolving record-level conflicts. Choose **Recommended Main File**.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/109254)],
+  [SkyPatcher-based forward-port resolving record-level conflicts. Choose *Recommended Main File*.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/109254")[Nexus]],
   [Book Covers Skyrim - Lost Library],
-  [Adds 150+ lore books from earlier TES games. Content companion; quest-level decision owned by → [World Content](modlist-world-content.md).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/902)],
+  [Adds 150+ lore books from earlier TES games. Content companion; quest-level decision owned by → @world-content-world-content.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/902")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -1536,128 +1538,128 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Visual Animated Enchants](https://www.nexusmods.com/skyrimspecialedition/mods/7037)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/7037")[Visual Animated Enchants]],
   [Original VAE — superseded by V.A.E.R. in the main Mesh Replacer Series. Keep only if V.A.E.R. conflicts.],
-  [[Apophysis Dragon Priest Masks SE](https://www.nexusmods.com/skyrimspecialedition/mods/5800)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5800")[Apophysis Dragon Priest Masks SE]],
   [Dragon priest mask retexture. Optional cosmetic upgrade.],
-  [[Runed Nordic Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/11559)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11559")[Runed Nordic Weapons]],
   [Nordic weapon mesh/texture replacer.],
-  [[Elven Armor replacer glow](https://www.nexusmods.com/skyrimspecialedition/mods/73235)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73235")[Elven Armor replacer glow]],
   [Elven armor retexture with glow maps.],
-  [[Elsopa Iron weapons redone](https://www.nexusmods.com/skyrimspecialedition/mods/52605)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/52605")[Elsopa Iron weapons redone]],
   [Iron weapon retexture.],
-  [[Ennead Banners and Shields](https://www.nexusmods.com/skyrimspecialedition/mods/46360)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46360")[Ennead Banners and Shields]],
   [Banner/shield retexture.],
-  [[Elsopa Quivers Redone](https://www.nexusmods.com/skyrimspecialedition/mods/65921)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65921")[Elsopa Quivers Redone]],
   [Quiver retexture.],
-  [[Believable greatswords sheathed](https://www.nexusmods.com/skyrimspecialedition/mods/36909)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/36909")[Believable greatswords sheathed]],
   [Greatsword sheath mesh fix.],
-  [[ElSopa - HD Medieval anvil](https://www.nexusmods.com/skyrimspecialedition/mods/48825)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/48825")[ElSopa - HD Medieval anvil]],
   [Anvil retexture.],
-  [[Elsopa Grindstones](https://www.nexusmods.com/skyrimspecialedition/mods/58149)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/58149")[Elsopa Grindstones]],
   [Grindstone retexture.],
-  [[Renthal's workbench](https://www.nexusmods.com/skyrimspecialedition/mods/23164)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/23164")[Renthal's workbench]],
   [Workbench retexture.],
-  [[VFX Edit AIO - Spells Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/133774)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/133774")[VFX Edit AIO - Spells Retexture]],
   [Spell visual effect retexture.],
-  [[JFresh's Mead Stein - A Tankard Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/26685)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26685")[JFresh's Mead Stein - A Tankard Replacer]],
   [Mead stein/tankard retexture.],
-  [[SD's Horn Candles](https://www.nexusmods.com/skyrimspecialedition/mods/40192)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/40192")[SD's Horn Candles]],
   [Candle retexture.],
-  [[JS Dragon Claws](https://www.nexusmods.com/skyrimspecialedition/mods/57038)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57038")[JS Dragon Claws]],
   [Dragon claw retexture.],
-  [[Skyrim Remastered - Soul Gems](https://www.nexusmods.com/skyrimspecialedition/mods/39397)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/39397")[Skyrim Remastered - Soul Gems]],
   [Soul gem retexture.],
-  [[Rally's Market Stalls](https://www.nexusmods.com/skyrimspecialedition/mods/81282)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81282")[Rally's Market Stalls]],
   [Market stall retexture.],
-  [[KanJS Spell Tomes Animated](https://www.nexusmods.com/skyrimspecialedition/mods/103057)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/103057")[KanJS Spell Tomes Animated]],
   [Animated spell tome mesh replacer.],
-  [[Alt Markarth Forge](https://www.nexusmods.com/skyrimspecialedition/mods/88936)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/88936")[Alt Markarth Forge]],
   [Markarth forge retexture.],
-  [[HD Unique Handmade Signs (ElSopa)](https://www.nexusmods.com/skyrimspecialedition/mods/21704)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21704")[HD Unique Handmade Signs (ElSopa)]],
   [Inn/shop sign retexture.],
-  [[Skyking Windhelm Bridge Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/147846)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147846")[Skyking Windhelm Bridge Overhaul]],
   [Windhelm bridge mesh/texture replacer.],
-  [[Tomato's Windhelm - PBR or Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/174492)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174492")[Tomato's Windhelm - PBR or Complex Material]],
   [Windhelm city-wide PBR retexture. 2K main file recommended.],
-  [[Distinguished Drapery](https://www.nexusmods.com/skyrimspecialedition/mods/173894)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173894")[Distinguished Drapery]],
   [Curtain/hanging fabric retexture.],
-  [[The Mists of Blackreach](https://www.nexusmods.com/skyrimspecialedition/mods/179487)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179487")[The Mists of Blackreach]],
   [Blackreach mist/fog visual effect overhaul.],
-  [[Valhalla Bridges](https://www.nexusmods.com/skyrimspecialedition/mods/157314)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157314")[Valhalla Bridges]],
   [Higher-detail bridge mesh replacers. Mesh-only, no ESP.],
-  [[Valhalla Bridges - Addons Patches and Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/157804)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157804")[Valhalla Bridges - Addons Patches and Fixes]],
   [Compatibility patches and addon coverage for Valhalla Bridges. Install after base.],
-  [[Improved Closefaced Helmets](https://www.nexusmods.com/skyrimspecialedition/mods/824)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/824")[Improved Closefaced Helmets]],
   [Mesh/texture overhaul for closed-face helmets.],
-  [[Improved Closefaced Helmets - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/146820)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146820")[Improved Closefaced Helmets - SkyPatched]],
   [SkyPatched variant; preferred over the base ICH for compatibility.],
-  [[Ivy - Gates of Riverwood](https://www.nexusmods.com/skyrimspecialedition/mods/138864)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138864")[Ivy - Gates of Riverwood]],
   [Ivy-covered gate mesh replacer at Riverwood entrance. BOS-based, optional cosmetic.],
-  [[Better Wine Labels - Vanilla and LotD](https://www.nexusmods.com/skyrimspecialedition/mods/34698)],
-  [Wine bottle label retexture. PBR patch: [175588](https://www.nexusmods.com/skyrimspecialedition/mods/175588)],
-  [[Basic Dining Set Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/30055)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34698")[Better Wine Labels - Vanilla and LotD]],
+  [Wine bottle label retexture. PBR patch: #link("https://www.nexusmods.com/skyrimspecialedition/mods/175588")[175588]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/30055")[Basic Dining Set Replacer]],
   [Higher-detail dining table and chair meshes. No ESP.],
-  [[RUSTIC COOKING - Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/6142)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6142")[RUSTIC COOKING - Special Edition]],
   [High-res cooking pot, oven, and kitchen clutter textures.],
-  [[ElSopa - Campfire HD SE](https://www.nexusmods.com/skyrimspecialedition/mods/24511)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/24511")[ElSopa - Campfire HD SE]],
   [HD retexture of Campfire's portable crafting items. Requires Campfire.],
-  [[Petroglyphs of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/146569)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146569")[Petroglyphs of Skyrim]],
   [Rock carving/runestone visual replacers. Mesh-only, no ESP.],
-  [[Diverse Windmill Sails - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/121759)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121759")[Diverse Windmill Sails - BOS]],
   [BOS-based windmill sail variety.],
-  [[Diverse Foods - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/91599)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/91599")[Diverse Foods - BOS]],
   [BOS-based food item variety.],
-  [[Diverse Candles - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/94369)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94369")[Diverse Candles - BOS]],
   [BOS-based candle variety.],
-  [[Better Pelts and Hides](https://www.nexusmods.com/skyrimspecialedition/mods/87277)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/87277")[Better Pelts and Hides]],
   [Pelt/hide texture replacer.],
-  [[Fluffy Hanging rabbits](https://www.nexusmods.com/skyrimspecialedition/mods/89148)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89148")[Fluffy Hanging rabbits]],
   [Hanging rabbit mesh/texture replacer.],
-  [[FrankBlack's Honey in a Jar](https://www.nexusmods.com/skyrimspecialedition/mods/104496)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/104496")[FrankBlack's Honey in a Jar]],
   [Honey jar retexture.],
-  [[Slightly Better Nordic Henges - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/97162)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97162")[Slightly Better Nordic Henges - BOS]],
   [Nordic henge object variety via BOS.],
-  [[One Quiver to rule them all](https://www.nexusmods.com/skyrimspecialedition/mods/172070)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172070")[One Quiver to rule them all]],
   [Quiver attachment positioning fix.],
-  [[HFs - Flagons (BOS and Model Swapper)](https://www.nexusmods.com/skyrimspecialedition/mods/145495)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145495")[HFs - Flagons (BOS and Model Swapper)]],
   [Flagon/tankard variety via BOS.],
-  [[Divergence - Skytone - Runes](https://www.nexusmods.com/skyrimspecialedition/mods/150112)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/150112")[Divergence - Skytone - Runes]],
   [Custom rune texture replacer.],
-  [[Temples of the Ancients (2K - 4K)](https://www.nexusmods.com/skyrimspecialedition/mods/38544)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/38544")[Temples of the Ancients (2K - 4K)]],
   [Nordic temple/Aedric ruin retexture. 2K recommended.],
-  [[Temples of the Ancients Complex Material and PBR](https://www.nexusmods.com/skyrimspecialedition/mods/127371)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/127371")[Temples of the Ancients Complex Material and PBR]],
   [PBR upgrade for Temples of the Ancients. Install after base mod.],
-  [[SB - Pressure Plate Trap Blending - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/86053)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/86053")[SB - Pressure Plate Trap Blending - BOS]],
   [Blends pressure plates into floor textures via BOS.],
-  [[Skyland Bits and Bobs - A Clutter Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/95032)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95032")[Skyland Bits and Bobs - A Clutter Overhaul]],
   [Clutter item texture/mesh overhaul. May overlap with Snazzy and Rally's coverage — evaluate side-by-side.],
-  [[CleverCharff's AIO](https://www.nexusmods.com/skyrimspecialedition/mods/44650)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/44650")[CleverCharff's AIO]],
   [Architecture and dungeon texture overhaul. Broad coverage — test for cohesion with VPBR.],
-  [[RUSTIC MAPS](https://www.nexusmods.com/skyrimspecialedition/mods/42614)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42614")[RUSTIC MAPS]],
   [High-res world map and local map texture replacer. Redundant with FWMF paper maps — pick one map route.],
-  [[Parallax Textures For Vanilla Game and Various Mods](https://www.nexusmods.com/skyrimspecialedition/mods/125527)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/125527")[Parallax Textures For Vanilla Game and Various Mods]],
   [Broad parallax texture pack for vanilla and mod-added objects. Use 2K for performance.],
-  [[Detailed Rugs](https://www.nexusmods.com/skyrimspecialedition/mods/9030)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/9030")[Detailed Rugs]],
   [Higher-detail rug texture/mesh replacer. No ESP.],
-  [[Detailed Rugs 4K-2K - Cleaned and Upscaled Textures](https://www.nexusmods.com/skyrimspecialedition/mods/70301)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/70301")[Detailed Rugs 4K-2K - Cleaned and Upscaled Textures]],
   [Cleaned/upscaled rug textures. Overwrites Detailed Rugs — pick one.],
-  [[JS Rumpled Rugs SE](https://www.nexusmods.com/skyrimspecialedition/mods/70534)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/70534")[JS Rumpled Rugs SE]],
   [Rumpled rug mesh/texture replacer. Alternative to Detailed Rugs.],
-  [[Parallax Caves 4k-2k](https://www.nexusmods.com/skyrimspecialedition/mods/83106)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/83106")[Parallax Caves 4k-2k]],
   [Cave wall parallax texture replacer. Use 2K. Complements Vanaheimr Mines and Caves.],
-  [[Stacks of Septims - 3D Coin Piles](https://www.nexusmods.com/skyrimspecialedition/mods/113071)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113071")[Stacks of Septims - 3D Coin Piles]],
   [3D coin pile meshes. Mesh-only, no ESP.],
-  [[Stacks of Septims - My patches SE by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/113152)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113152")[Stacks of Septims - My patches SE by Xtudo]],
   [Compatibility patch hub — C.O.I.N., LotD, JS Septims, Ennead, Skyland Bits, Maple Manor, etc. Install after base.],
-  [[JS Purses and Septims SE](https://www.nexusmods.com/skyrimspecialedition/mods/37306)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37306")[JS Purses and Septims SE]],
   [Higher-detail coin purse and septim meshes/textures.],
-  [[Skyrim Fantasy Overhaul - Fantastic City Walls SE-AE](https://www.nexusmods.com/skyrimspecialedition/mods/130952)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/130952")[Skyrim Fantasy Overhaul - Fantastic City Walls SE-AE]],
   [City wall texture overhaul with fantasy-inspired style.],
-  [[Kanjs — Dragon Stone and Map of Dragon Burials](https://www.nexusmods.com/skyrimspecialedition/mods/167084)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167084")[Kanjs — Dragon Stone and Map of Dragon Burials]],
   [Animated dragon stone and burial map mesh replacer. No ESP.],
 )
 
@@ -1666,9 +1668,9 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 
 // -- guide/modlist-graphics-lighting.md --
 = Lighting
-<lighting>
+<graphics-lighting-lighting>
 
-**MO2 Separator:** `Graphics` → `Graphics - Lighting`
+*MO2 Separator:* `Graphics` → `Graphics - Lighting`
 
 All mods in this section belong to the `Graphics - Lighting` MO2 separator unless noted.
 
@@ -1679,49 +1681,49 @@ All mods in this section belong to the `Graphics - Lighting` MO2 separator unles
 
 Build lighting as a coherent layer supporting the shader-first visual direction, stronger world scale, and third-person readability. Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route. The baseline is a Community Shaders-native stack with much lower patch burden than the LUX family.
 
-**⏱ Install order:** SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → Helios → Embers XD → Luminous Atronachs.
+*⏱ Install order:* SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → Helios → Embers XD → Luminous Atronachs.
 
 === Core CS-Native Stack
 <lighting-core-cs-native-stack>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Role*],
   [*Notes*],
-  [[Standard Lighting Templates (SLT)](https://www.nexusmods.com/skyrimspecialedition/mods/66943)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/66943")[Standard Lighting Templates (SLT)]],
   [Foundation],
   [Standardized light template records. Replaces per-cell template work.],
-  [[CS Light](https://www.nexusmods.com/skyrimspecialedition/mods/138443)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138443")[CS Light]],
   [Core],
   [CS-native interior/exterior lighting.],
-  [[True Light](https://www.nexusmods.com/skyrimspecialedition/mods/135488)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135488")[True Light]],
   [Exterior bulbs],
-  [Exterior bulb placement via Light Placer. **Pin v3.4.1** — v3.5.x breaks LoS II lamppost ground illumination.],
-  [[Window Shadows Ultimate (WSU)](https://www.nexusmods.com/skyrimspecialedition/mods/150494)],
+  [Exterior bulb placement via Light Placer. *Pin v3.4.1* — v3.5.x breaks LoS II lamppost ground illumination.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/150494")[Window Shadows Ultimate (WSU)]],
   [Interior],
   [Interior shadowed windows.],
-  [[Ambient Templates for Lighting Mods](https://www.nexusmods.com/skyrimspecialedition/mods/153425)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153425")[Ambient Templates for Lighting Mods]],
   [Required],
   [Required by the CS-native stack.],
 )
 
-> **True Light FOMOD:** Select **Exterior mode** — attaches bulbs to exterior meshes (braziers, campfires, torches, lanterns) via Light Placer. This replaces Lux Orbis's exterior lighting role.
+> *True Light FOMOD:* Select *Exterior mode* — attaches bulbs to exterior meshes (braziers, campfires, torches, lanterns) via Light Placer. This replaces Lux Orbis's exterior lighting role.
 
 === Configuration & Ambient
 <lighting-configuration--ambient>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Role*],
   [*Notes*],
-  [[Based Lighting Configs](https://www.nexusmods.com/skyrimspecialedition/mods/136870)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/136870")[Based Lighting Configs]],
   [Presets],
   [Standardizes tone/behavior across interiors/exteriors.],
-  [[Helios](https://www.nexusmods.com/skyrimspecialedition/mods/181533)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/181533")[Helios]],
   [Ambient],
   [Dynamic auto-ambient adjustment for interiors and exteriors via Community Shaders.],
 )
@@ -1731,17 +1733,17 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Role*],
   [*Notes*],
-  [[Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37085")[Embers XD]],
   [Fire],
   [140K+ endorsements. Install after main lighting overhauls. → `Graphics - Lighting`],
-  [[Luminous Atronachs](https://www.nexusmods.com/skyrimspecialedition/mods/27732)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27732")[Luminous Atronachs]],
   [Effects],
   [Self-illuminating atronachs via particle lights.],
-  [[KD Realistic Fireplaces](https://www.nexusmods.com/skyrimspecialedition/mods/28877)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/28877")[KD Realistic Fireplaces]],
   [Fire],
   [Optional fireplace visual upgrade. Cosmetic only.],
 )
@@ -1749,11 +1751,11 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 === Alternatives
 <lighting-alternatives>
 
-- **EmbersXD Torch Edit** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134219)) — Torch visual replacer for Embers XD. Optional cosmetic.
-- **Relighting Skyrim SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/8586)) + **Luminosity Lighting Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/16830)) — Lightest vanilla-plus route. Falls back if the CS-native stack fails compatibility testing.
-- **ELFX Shadows** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63790)) — Strong alternate if CS-native proves insufficient for interior mood. Hard-requires base `Enhanced Lights and FX` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2424)).
-- **iLluminous Elementals** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138128)) — Broader elemental-light approach. Alternative to Luminous Atronachs.
-- **Window Shadows RT - Updated** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111091)) / **Ambiance** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46383)) — Fallback interior shadow mods.
+- *EmbersXD Torch Edit* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/134219")[Nexus]) — Torch visual replacer for Embers XD. Optional cosmetic.
+- *Relighting Skyrim SE* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/8586")[Nexus]) + *Luminosity Lighting Overhaul* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/16830")[Nexus]) — Lightest vanilla-plus route. Falls back if the CS-native stack fails compatibility testing.
+- *ELFX Shadows* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/63790")[Nexus]) — Strong alternate if CS-native proves insufficient for interior mood. Hard-requires base `Enhanced Lights and FX` (#link("https://www.nexusmods.com/skyrimspecialedition/mods/2424")[Nexus]).
+- *iLluminous Elementals* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/138128")[Nexus]) — Broader elemental-light approach. Alternative to Luminous Atronachs.
+- *Window Shadows RT - Updated* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/111091")[Nexus]) / *Ambiance* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/46383")[Nexus]) — Fallback interior shadow mods.
 
 === Risks & Compatibility
 <lighting-risks--compatibility>
@@ -1771,9 +1773,9 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 
 // -- guide/modlist-graphics-weather.md --
 = Weather & Water
-<weather--water>
+<graphics-weather-weather--water>
 
-**MO2 Separator:** `Graphics` → `Graphics - Weather & Water`
+*MO2 Separator:* `Graphics` → `Graphics - Weather & Water`
 
 All mods in this section belong to the `Graphics - Weather & Water` MO2 separator unless noted.
 
@@ -1782,23 +1784,23 @@ All mods in this section belong to the `Graphics - Weather & Water` MO2 separato
 
 Weather should be chosen as part of the Community Shaders presentation layer, not as an isolated plugin choice. The target is a grounded but modern visual tone that preserves forest, mountain, and travel readability in third person.
 
-**Primary candidates — test side-by-side:**
+*Primary candidates — test side-by-side:*
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [NAT.CS III],
   [Works on the conservative CS stack (no SSGI required).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139567)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139567")[Nexus]],
   [Azurite III CS],
   [Requires the balanced CS add-on tier or higher (SSGI, Screen Space Shadows, Grass Lighting, Wetness Effects).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/162153)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/162153")[Nexus]],
   [Sky Sync - Community Shaders],
   [Sky colour/dome enhancement for CS. Lighter than full weather replacement.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153543)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153543")[Nexus]],
 )
 
 === Alternatives
@@ -1806,37 +1808,37 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Raid Weathers CS],
   [Gameplay-clarity route. Requires base `RAID Weathers`.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171041)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171041")[Nexus]],
   [RAID Weathers (base)],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63116)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63116")[Nexus]],
   [Vanilla Weathers for CS],
   [Vanilla-plus CS-native. Has a True Storms patch.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165393)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/165393")[Nexus]],
   [Obsidian Weathers],
   [Fallback benchmark.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12125)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12125")[Nexus]],
   [Obsidian CS],
   [Fallback benchmark.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/162627)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/162627")[Nexus]],
   [Cathedral Weathers],
   [Fallback benchmark.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/24791)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/24791")[Nexus]],
   [Azurite Weathers III - Enhanced],
   [Later tuning layer, not the first decision.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150269)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/150269")[Nexus]],
   [Skydreamus CS Presets],
   [Later tuning layer, not the first decision.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171145)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171145")[Nexus]],
   [Mists of Tamriel],
   [Mist/fog atmospheric enhancement. CS-compatible — verify fog density in third-person readability.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78703)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78703")[Nexus]],
 )
 
 === Azurite III Addon
@@ -1844,11 +1846,11 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
-  [[Azurite III CS - Realistic Darker Nights](https://www.nexusmods.com/skyrimspecialedition/mods/183498)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/183498")[Azurite III CS - Realistic Darker Nights]],
   [Darker night preset for Azurite III CS. Requires testing — older nights affect third-person readability and combat detection. Needs Azurite III CS as base.],
 )
 
@@ -1871,22 +1873,22 @@ Treat water as a full visual stack: base water look, CS water features, mesh sup
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Water Effects - Community Shaders],
   [Baseline shader feature layer. CS 1.5.2+ ships a `Unified Water` module — evaluate whether it replaces the need for a standalone water base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112762)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112762")[Nexus]],
   [A Water Made For CS in mind],
   [Primary base-water candidate.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172959)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172959")[Nexus]],
   [Splashes Of Skyrim],
   [Baseline inclusion, not optional. SKSE plugin for water impact effects; CS 1.4.1+ includes FPS optimizations.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47710)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47710")[Nexus]],
   [Loki's Wade In Water],
   [Water-interaction layer for wading. Mesh/anim replacer, no ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42854)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42854")[Nexus]],
 )
 
 === Alternatives
@@ -1896,52 +1898,52 @@ Evaluate these only after the main water base is selected.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Simplicity of Sea],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56520)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56520")[Nexus]],
   [Color and Transparency Tweaks],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148761)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148761")[Nexus]],
   [Realistic Water Two SE],
   [Legacy baseline.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2182)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2182")[Nexus]],
   [Water for ENB],
   [Legacy baseline.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37061)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37061")[Nexus]],
   [FYX - Water Mesh Optimization],
   [Only add if it clearly improves shorelines or performance.],
   [],
   [Natural Waterfalls],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87261)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/87261")[Nexus]],
   [Rally's Water Foam],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28922)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/28922")[Nexus]],
   [Water Debris],
   [Floating debris VFX.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171371)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171371")[Nexus]],
   [Underwater Bubbles - SKSE Plugin],
   [No ESP, complements surface stack.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175559)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175559")[Nexus]],
   [Refined Water Droplet Replacer for R.A.S.S.],
   [Rain/water droplet visual replacer. Works with R.A.S.S.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40793)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/40793")[Nexus]],
   [Wade in Water Redux - Swimming Overhaul],
   [Swimming overhaul with wading physics. Broader scope than Loki's Wade.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151353)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151353")[Nexus]],
   [GKB Waves Reborn],
   [High-quality animated wave shader for shorelines. Prerequisite for GKB Waves For Various Mods.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/71126)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/71126")[Nexus]],
   [GKB Waves For Various Mods],
   [GKB wave coverage for mod-added coasts and new-lands. Requires GKB Waves Reborn. Verify compatibility with chosen water mod.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124742)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124742")[Nexus]],
   [WAVY Waterfalls Effect],
   [Animated waterfall mesh replacer with wave motion. CS-compatible.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126073)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126073")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -1963,13 +1965,13 @@ The cosmic visual layer: night-sky stars, aurora rendering, sky-dome enhancement
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [AURORA S.E.],
   [Adds proper northern-lights rendering. Genuinely upgrades the night vista without bloating the weather or lighting layer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6021)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6021")[Nexus]],
 )
 
 Keep the discipline-first route alive if the weather mod's bundled star/sky textures already read well. Defer a full sky-dome overhaul if playtesting shows the night sky needs more investment.
@@ -1979,38 +1981,38 @@ Keep the discipline-first route alive if the weather mod's bundled star/sky text
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Rally's Celestial Canvas],
   [Complete night-sky overhaul: auroras, galaxy, stars, constellations. Hand-drawn (8K galaxy, 4K stars).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110869)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110869")[Nexus]],
   [Realistic Galaxy],
   [Galaxy texture replacer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111458)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111458")[Nexus]],
   [Ultra Hi-Res Nightsky],
   [Hubble-imagery galaxy, up to 16K.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6096)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6096")[Nexus]],
   [Worlds Behind Glass],
   [High-res night sky for telescope mods.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158077)],
-  [[Draco's fantasy auroras](https://www.nexusmods.com/skyrimspecialedition/mods/120563)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/158077")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120563")[Draco's fantasy auroras]],
   [Aurora/sky visual replacer. Optional cosmetic.],
   [],
-  [[Draco's moons](https://www.nexusmods.com/skyrimspecialedition/mods/40605)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/40605")[Draco's moons]],
   [Moon visual replacer. Optional cosmetic.],
   [],
-  [[Shooting Stars SE](https://www.nexusmods.com/skyrimspecialedition/mods/73090)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73090")[Shooting Stars SE]],
   [Adds randomized shooting-star streaks to the night sky. Script-free.],
   [],
-  [[Praedy's Night Sky AIO](https://www.nexusmods.com/skyrimspecialedition/mods/47530)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47530")[Praedy's Night Sky AIO]],
   [High-quality night-sky and star texture replacer. Choose 2K.],
   [],
-  [[Texture Overhaul Stars and Galaxy of Nirn](https://www.nexusmods.com/skyrimspecialedition/mods/41260)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/41260")[Texture Overhaul Stars and Galaxy of Nirn]],
   [8K star and galaxy texture replacer.],
   [],
-  [[Skyrim Textures Redone - Stars](https://www.nexusmods.com/skyrimspecialedition/mods/4931)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4931")[Skyrim Textures Redone - Stars]],
   [Star texture replacer. Lighter alternative to full sky overhauls.],
   [],
 )
@@ -2027,9 +2029,9 @@ Keep the discipline-first route alive if the weather mod's bundled star/sky text
 
 // -- guide/modlist-graphics-terrain.md --
 = Terrain & Flora
-<terrain--flora>
+<graphics-terrain-terrain--flora>
 
-**MO2 Separator:** `Graphics` → `Graphics - Terrain & Flora`
+*MO2 Separator:* `Graphics` → `Graphics - Terrain & Flora`
 
 All mods in this section belong to the `Graphics - Terrain & Flora` MO2 separator unless noted.
 
@@ -2043,16 +2045,16 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Better Dynamic Snow SE],
   [Snow-and-ash multistage accumulation. Works with `Simplicity of Snow`; the `BDSPatcher` Synthesis patcher handles mod-added objects automatically.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9121)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/9121")[Nexus]],
   [Better Dynamic Ash SE],
   [Solstheim ash equivalent.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54754)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54754")[Nexus]],
 )
 
 === Landscape And Terrain (candidates — narrow after testing)
@@ -2060,46 +2062,46 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Skyking Fantasia Landscapes],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107256)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107256")[Nexus]],
   [Atlantean Landscape - Majestic Edition],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/102170)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102170")[Nexus]],
   [Atlantean Landscape - Complete - Complex Terrain Parallax],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89542)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89542")[Nexus]],
   [A Cathedralist's PBR Landscape],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137333)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137333")[Nexus]],
   [TomatoRim PBR Landscapes AIO],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177621)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177621")[Nexus]],
   [Vanaheimr - Landscapes - AIO - Complex Material - PBR],
   [PBR pipeline support. Evaluate alongside Cathedralist and TomatoRim.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/145439)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145439")[Nexus]],
   [Enhanced Rocks and Mountains - Complex Material and PBR],
-  [**Primary mountain/rock identity.** CS-native, no plugins, Complex Material support. Drop Majestic Mountains entirely (author inactive since June 2022, mesh misses snow coverage on rock piles).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336)],
+  [*Primary mountain/rock identity.* CS-native, no plugins, Complex Material support. Drop Majestic Mountains entirely (author inactive since June 2022, mesh misses snow coverage on rock piles).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121336")[Nexus]],
   [Enhanced Rocks and Mountains - Fix and Addon],
   [Extends ERM to underground spaces and Whiterun Skyforge.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142493)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142493")[Nexus]],
   [Tomato's Complex Parallax Material Landscapes AIO - With DLCs],
   [Older Tomato landscape release. TomatoRim PBR above is the newer version — evaluate which to use.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110981)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110981")[Nexus]],
   [Tomato's Whiterun Remake - PBR or Complex Material],
   [Whiterun-specific terrain retexture.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/173747)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173747")[Nexus]],
   [Seasonal Landscapes],
   [Seasonal texture-swap system. Requires extensive patching — evaluate patch debt before locking.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66903)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/66903")[Nexus]],
   [Tomato's Whiterun Remake PBR - Seasonal Landscapes Patch],
   [Required if both Whiterun Remake and Seasonal Landscapes are adopted.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174042)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174042")[Nexus]],
 )
 
 === Roads
@@ -2107,20 +2109,20 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Blended Roads - Light Plugin (ESL)],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171554)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171554")[Nexus]],
   [HD Remastered Blended Roads],
   [HD hand-made rework. Choose 2K for performance, 4K for visual sweet spot. Requires Blended Roads base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63674)],
-  [[Simplest Roads](https://www.nexusmods.com/skyrimspecialedition/mods/111255)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63674")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111255")[Simplest Roads]],
   [Minimal road texture replacer. Alternative to Blended Roads.],
   [],
-  [[Simple Complex Parallax Roads](https://www.nexusmods.com/skyrimspecialedition/mods/173826)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173826")[Simple Complex Parallax Roads]],
   [Parallax road textures requiring CS Complex Material. Alternative to Blended Roads.],
   [],
 )
@@ -2130,38 +2132,38 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Simplicity of Snow],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56235)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56235")[Nexus]],
   [Nordic Snow],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/670)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/670")[Nexus]],
   [Nordic Snow - Complex Material],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133034)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/133034")[Nexus]],
   [Hyperborean Snow SE - 8K],
   [Comparison candidate, not locked.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29283)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29283")[Nexus]],
   [Better Dynamic Snow SE],
   [Multistage accumulation with terrain-blended coverage.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9121)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/9121")[Nexus]],
   [Better Dynamic Ash SE],
   [Solstheim ash equivalent.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54754)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54754")[Nexus]],
   [Enhanced Rocks and Mountains - CM and PBR],
   [See Landscape section above; listed here for snow coherence.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121336")[Nexus]],
 )
 
 === Alternatives
 <terrain--flora-alternatives>
 
-- **Windhelm Is Snowy - Base Object Swapper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165102)) — BOS-based snow coverage for Windhelm. Complements Simplicity of Snow.
-- **Snowy Standing Stones for Snowy Regions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139000)) — BOS-based snow coverage for standing stones in snowy regions.
+- *Windhelm Is Snowy - Base Object Swapper* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/165102")[Nexus]) — BOS-based snow coverage for Windhelm. Complements Simplicity of Snow.
+- *Snowy Standing Stones for Snowy Regions* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/139000")[Nexus]) — BOS-based snow coverage for standing stones in snowy regions.
 
 === Risks & Compatibility
 <terrain--flora-risks--compatibility>
@@ -2181,19 +2183,19 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Skoglendi - A Grass Mod],
   [Baseline grass.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93944)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/93944")[Nexus]],
   [Merethic Grasslands],
   [Variety enhancer; pairs with Skoglendi for northern grassland texture.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/164058)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/164058")[Nexus]],
   [Origins Of Forest - 3D Forest Grass],
   [Density enhancer. Add only if forests feel too sparse after terrain and tree choices are locked.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/45719)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/45719")[Nexus]],
 )
 
 === Plant Replacers
@@ -2201,32 +2203,32 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Mari's flora],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/45952)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/45952")[Nexus]],
   [Freak's Floral Meadows],
   [Meadow flower replacer. No ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148525)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148525")[Nexus]],
   [Freak's Floral Solstheim],
   [Solstheim ash-covered grass/flora replacer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138161)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138161")[Nexus]],
   [A Nirnroot],
   [Nirnroot mesh/texture replacer with glowing effects. No ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80281)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80281")[Nexus]],
   [Flora Orientalis],
   [Dependency for Vinland Grass Patch + mixed-route coverage.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64041)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64041")[Nexus]],
   [Waterplants],
   [Dependency for Vinland Grass Patch + mixed-route coverage.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6092)],
-  [[Flora Additions - Water Plants](https://www.nexusmods.com/skyrimspecialedition/mods/116324)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6092")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116324")[Flora Additions - Water Plants]],
   [Optional water plant flora additions.],
   [],
-  [[Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/135460)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135460")[Reimagined Mountain Flowers - Base Object Swapper - Seasons of Skyrim]],
   [Mountain flower replacer with BOS and Seasonal Landscapes support.],
   [],
 )
@@ -2236,7 +2238,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
@@ -2245,16 +2247,16 @@ Flora is the ground-level readability layer between terrain materials and tree c
   [],
   [Cathedral - 3D Stonecrop],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110726)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110726")[Nexus]],
   [DrJacopo - 3D Tundra Shrubs],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/108747)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/108747")[Nexus]],
   [Cathedral PBR Plants],
   [PBR texture layer for the Cathedral 3D series. Requires original Cathedral plants and PGPatcher.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135836)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135836")[Nexus]],
   [PBR Waterplants],
   [PBR textures for underwater plants.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129928)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129928")[Nexus]],
 )
 
 === Tree-Adjacent
@@ -2262,20 +2264,20 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Skyfall's Sleeping Hist Tree Overhaul],
   [Riften Sleeping Hist tree replacement. Mesh/texture only, no ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116792)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116792")[Nexus]],
   [TMD The Rift Leaves],
   [3D leaf particle replacer for The Rift. No ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111461)],
-  [[Immersive 3D Leaves](https://www.nexusmods.com/skyrimspecialedition/mods/170242)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111461")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/170242")[Immersive 3D Leaves]],
   [Replaces Riften's flat 2D leaves with 3D models. By MaximusTheWizard.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/170242)],
-  [[Bigger trees](https://www.nexusmods.com/skyrimspecialedition/mods/5281)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/170242")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5281")[Bigger trees]],
   [Optional tree size multiplier.],
   [],
 )
@@ -2285,16 +2287,16 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [High Quality Ivy Replacer - BOS],
   [Replaces ivy meshes/textures. Animated/static via FOMOD. No performance cost.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113578)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113578")[Nexus]],
   [Grumbledook Swordferns - Optional PBR],
   [New swordfern meshes/textures. Hard-requires BOS; PBR variant requires CS.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163949)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/163949")[Nexus]],
 )
 
 > Evaluate these after grass, 3D plant replacers, and tree choices are locked. Both layer via BOS (no cell-record edits).
@@ -2304,25 +2306,25 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Folkvangr - Grass and Landscape Overhaul],
   [Main heavier alternate.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44899)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/44899")[Nexus]],
   [Vinland Grass Patch],
   [Only after the final grass combination is narrow enough.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95273)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95273")[Nexus]],
   [QW's Grass Patch 2],
   [Only after the final grass combination is narrow enough.],
   [],
   [Grassreach - Blackreach Grass],
   [Blackreach-specific grass replacer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179420)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179420")[Nexus]],
   [Wildlands Renewal],
   [Grass and groundcover improvement mod. Evaluate as Skoglendi alternative or layering candidate.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139896)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139896")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -2344,16 +2346,16 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Traverse the Ulvenwald - 3.3],
   [Main dense-forest candidate.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57874)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57874")[Nexus]],
   [Tomato's PBR Vanilla Trees],
   [PBR tree texture option; can layer under whichever tree overhaul wins testing.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139375)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139375")[Nexus]],
 )
 
 === Alternatives
@@ -2361,34 +2363,34 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Happy Little Trees],
   [Safer fallback baseline.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50961)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50961")[Nexus]],
   [Fabled Forests],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94462)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94462")[Nexus]],
   [Nature of the Wild Lands],
   [Compare only if Ulvenwald misses the right balance.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63604)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63604")[Nexus]],
   [Happy Little Trees PBR],
   [Support signal.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159171)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159171")[Nexus]],
   [Fabled Forests - Ulvenwald Patch (BOS)],
   [Support signal.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134501)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/134501")[Nexus]],
   [Nature of the Wild Lands - Animations Addon],
   [OAR-based tree interaction animations for NotWL. Requires NotWL base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148132)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148132")[Nexus]],
   [Nature of the Wild Lands - PBR],
   [PBR texture layer for NotWL trees. Requires NotWL base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/150319)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/150319")[Nexus]],
   [Nature of the Wild Lands - Snowier Spruce Trees],
   [Spruce tree snow coverage addon for NotWL. Requires NotWL base.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149165)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149165")[Nexus]],
 )
 
 === Risks & Compatibility
@@ -2403,9 +2405,9 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 
 // -- guide/modlist-graphics-characters.md --
 = Characters & Creatures
-<characters--creatures>
+<graphics-characters-characters--creatures>
 
-**MO2 Separator:** `Graphics` → `Graphics - Characters & Creatures`
+*MO2 Separator:* `Graphics` → `Graphics - Characters & Creatures`
 
 All mods in this section belong to the `Graphics - Characters & Creatures` MO2 separator unless noted.
 
@@ -2417,21 +2419,21 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 === Body Bases And Skins
 <characters--creatures-body-bases-and-skins>
 
-**⏱ Install order:** CBBE → CBBE 3BA → HIMBO → RaceMenu → BnP skins → female preset → male preset → overlay/freckle packs.
+*⏱ Install order:* CBBE → CBBE 3BA → HIMBO → RaceMenu → BnP skins → female preset → male preset → overlay/freckle packs.
 
 ==== Female Body
 <characters--creatures-female-body>
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[CBBE NSFW](https://www.nexusmods.com/skyrimspecialedition/mods/74257)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74257")[CBBE NSFW]],
   [Female body base.],
-  [[CBBE 3BA (3BBB)](https://www.nexusmods.com/skyrimspecialedition/mods/30174)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/30174")[CBBE 3BA (3BBB)]],
   [Extension and preset ecosystem.],
-  [[BnP — Female Skin](https://www.nexusmods.com/skyrimspecialedition/mods/65274)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65274")[BnP — Female Skin]],
   [Female skin textures.],
 )
 
@@ -2440,12 +2442,12 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[HIMBO](https://www.nexusmods.com/skyrimspecialedition/mods/74174)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74174")[HIMBO]],
   [Male body base.],
-  [[BnP — Male Skin](https://www.nexusmods.com/skyrimspecialedition/mods/65402)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65402")[BnP — Male Skin]],
   [Male skin textures.],
 )
 
@@ -2454,22 +2456,22 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[RaceMenu SE](https://www.nexusmods.com/skyrimspecialedition/mods/29624)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29624")[RaceMenu SE]],
   [Character creation framework.],
   [High Poly Head 1.4 SE],
-  [[Google Drive mirror](https://drive.google.com/drive/folders/1V\_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi). Pair with Expressive Facegen Morphs + Expressive Facial Animation (Female + Male).],
-  [[SlimFantasy — 3BAv2 Body Preset](https://www.nexusmods.com/skyrimspecialedition/mods/119145)],
+  [#link("https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi")[Google Drive mirror]. Pair with Expressive Facegen Morphs + Expressive Facial Animation (Female + Male).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119145")[SlimFantasy — 3BAv2 Body Preset]],
   [Female Bodyslide preset. Slim/lean dancer physique.],
-  [[HIMBO Preset — Chadborn](https://www.nexusmods.com/skyrimspecialedition/mods/155757)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155757")[HIMBO Preset — Chadborn]],
   [Male Bodyslide preset. Muscular build.],
-  [[Lovely Makeup — Racemenu Overlays](https://www.nexusmods.com/skyrimspecialedition/mods/94271)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94271")[Lovely Makeup — Racemenu Overlays]],
   [Makeup overlay collection.],
-  [[Lovely Makeup 2](https://www.nexusmods.com/skyrimspecialedition/mods/102335)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102335")[Lovely Makeup 2]],
   [Additional makeup overlays.],
-  [[Koralina's Freckles and Moles](https://www.nexusmods.com/skyrimspecialedition/mods/62508)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62508")[Koralina's Freckles and Moles]],
   [Freckle and mole overlays.],
 )
 
@@ -2486,7 +2488,7 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 === BodySlide And Outfit Studio Setup
 <characters--creatures-bodyslide-and-outfit-studio-setup>
 
-- **BodySlide and Outfit Studio** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/201))
+- *BodySlide and Outfit Studio* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/201")[Nexus])
 - Install as a normal mod in MO2.
 - Register `BodySlide x64.exe` in MO2 as an executable.
 - Create a dedicated `BodySlide Output` mod before generating anything.
@@ -2511,9 +2513,9 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 
 - Run BodySlide through MO2, not from the game folder.
 - Set output path to the dedicated `BodySlide Output` mod location.
-- **Female meshes:** Select the `SlimFantasy` preset (not plain CBBE).
-- **Male meshes:** Select the `Chadborn` preset before batch building.
-- Use **Batch Build** once the baseline armor/clothing set is stable enough to avoid constant rebuilds.
+- *Female meshes:* Select the `SlimFantasy` preset (not plain CBBE).
+- *Male meshes:* Select the `Chadborn` preset before batch building.
+- Use *Batch Build* once the baseline armor/clothing set is stable enough to avoid constant rebuilds.
 - If multiple body variants appear, choose the option matching active CBBE 3BA and HIMBO ecosystems.
 - Rebuild after installing or replacing major armor packs, outfit conversions, or body-shape presets.
 
@@ -2543,11 +2545,11 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 ==== Baseline
 <characters--creatures-baseline>
 
-- **OBody NG** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77016)) — Core distribution layer.
-- **Real Body - 3BA (3BBB) CBBE Presets** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/83299)) — Curated semi-realistic 3BA presets for OBody distribution.
-- **Realistic Racial Body Diversity - OBody NG Config** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87239)) — Per-race body distribution (broader Nords, leaner Elves, heavy Orcs). Covers both CBBE 3BA and HIMBO.
-- **Individual presets:** `Rugged Body - 3BA`, `Skinny Berry - 3BA`, `Realistic chubby and curvy body - 3BA`.
-- **Male variety:** **HIMBO SliderPresets Pack 02** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176023)) — 10 presets.
+- *OBody NG* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/77016")[Nexus]) — Core distribution layer.
+- *Real Body - 3BA (3BBB) CBBE Presets* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/83299")[Nexus]) — Curated semi-realistic 3BA presets for OBody distribution.
+- *Realistic Racial Body Diversity - OBody NG Config* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/87239")[Nexus]) — Per-race body distribution (broader Nords, leaner Elves, heavy Orcs). Covers both CBBE 3BA and HIMBO.
+- *Individual presets:* `Rugged Body - 3BA`, `Skinny Berry - 3BA`, `Realistic chubby and curvy body - 3BA`.
+- *Male variety:* *HIMBO SliderPresets Pack 02* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/176023")[Nexus]) — 10 presets.
 
 ==== Alternatives
 <characters--creatures-alternatives>
@@ -2570,40 +2572,40 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Immersive Fur Garments](https://www.nexusmods.com/skyrimspecialedition/mods/77073)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77073")[Immersive Fur Garments]],
   [New fur garments to leveled lists.],
-  [[Immersive Fur Garments — SPID](https://www.nexusmods.com/skyrimspecialedition/mods/82177)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82177")[Immersive Fur Garments — SPID]],
   [SPID distribution addon (ESL-flagged). Install base mod (delete .esp) + SPID addon.],
-  [[Faultier's PBR Armors and Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/175319) (2.9 GB)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175319")[Faultier's PBR Armors and Clothes] (2.9 GB)],
   [Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher.],
-  [[RUSTIC CLOTHING — SE](https://www.nexusmods.com/skyrimspecialedition/mods/4703)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4703")[RUSTIC CLOTHING — SE]],
   [Higher-res clothing textures. Test for style consistency.],
-  [[Dwemer Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/93088)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/93088")[Dwemer Armors and Weapons Retexture SE]],
   [Gear-side companion to VPBR's Dwemer ruin textures.],
-  [[Steel Armor Redone — PBR](https://www.nexusmods.com/skyrimspecialedition/mods/177513)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177513")[Steel Armor Redone — PBR]],
   [PBR retexture of CC Steel Armor. Requires CC Alternative Armors — Steel Soldier, CS, PGPatcher. Optional.],
-  [[Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110655")[Robes Retexture SE]],
   [Higher-quality robe textures for all vanilla robes.],
-  [[Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123738")[Divine Crusader Retexture SE]],
   [Retexture of Divine Crusader armor set.],
-  [[Nirn Necessities — SMP Accessories](https://www.nexusmods.com/skyrimspecialedition/mods/112481)],
-  [SMP-physics clothing accessories. Add [PBR patch](https://www.nexusmods.com/skyrimspecialedition/mods/135807) if using CS PBR.],
-  [[aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112481")[Nirn Necessities — SMP Accessories]],
+  [SMP-physics clothing accessories. Add #link("https://www.nexusmods.com/skyrimspecialedition/mods/135807")[PBR patch] if using CS PBR.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35382")[aMidianBorn Book of Silence SE]],
   [Comprehensive armor/weapon/dragon retexture. 207K endorsements.],
-  [[aMidianBorn Content Addon](https://www.nexusmods.com/skyrimspecialedition/mods/35390)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35390")[aMidianBorn Content Addon]],
   [Extends aMidianBorn coverage to additional armors. Install after Book of Silence.],
-  [[aMidianBorn Content Addon - 3BA and HIMBO Patch](https://www.nexusmods.com/skyrimspecialedition/mods/144952)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/144952")[aMidianBorn Content Addon - 3BA and HIMBO Patch]],
   [Body refit patch for Content Addon.],
-  [[Resurgence Armory - Artifact Weapons and Armor Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/83855)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/83855")[Resurgence Armory - Artifact Weapons and Armor Overhaul]],
   [Visual overhaul for artifact weapons and armor models.],
-  [[3BA and HIMBO Refits for Resurgence Armors](https://www.nexusmods.com/skyrimspecialedition/mods/85669)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85669")[3BA and HIMBO Refits for Resurgence Armors]],
   [Body refit for Resurgence Armory armors.],
-  [[HDT-SMP Vanilla Armors](https://www.nexusmods.com/skyrimspecialedition/mods/142450)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142450")[HDT-SMP Vanilla Armors]],
   [Adds HDT-SMP physics to all vanilla armors.],
-  [[Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla](https://www.nexusmods.com/skyrimspecialedition/mods/141700)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141700")[Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla]],
   [Armor set with CBBE 3BA / HIMBO support. Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline.],
 )
 
@@ -2614,10 +2616,10 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Bellyaches Animal and Creature Pack SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6839)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6839")[Bellyaches Animal and Creature Pack SSE]],
   [Creature texture foundation.],
 )
 
@@ -2642,44 +2644,44 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6817")[KS Hairdos SSE]],
   [Baseline],
   [Community-canonical hair pack. 141K endorsements.],
-  [[Eyes Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/131210)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/131210")[Eyes Nouveaux]],
   [Baseline],
   [Khisartin-style eye textures, grim-dark tone.],
-  [[LDD Clean Cubemap for Eyes 4K](https://www.nexusmods.com/skyrimspecialedition/mods/168060)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168060")[LDD Clean Cubemap for Eyes 4K]],
   [Baseline],
   [Cleaner eye cubemaps. Stacks on eye-texture baseline.],
-  [[Brows](https://www.nexusmods.com/skyrimspecialedition/mods/1062)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1062")[Brows]],
   [Baseline],
   [Brow shape and texture replacer for all races.],
-  [[Better Argonian Horns](https://www.nexusmods.com/skyrimspecialedition/mods/80568)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80568")[Better Argonian Horns]],
   [Baseline],
   [Higher-quality Argonian horn meshes and textures. BOS-based.],
-  [[The Eyes Of Beauty SSE](https://www.nexusmods.com/skyrimspecialedition/mods/16185)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16185")[The Eyes Of Beauty SSE]],
   [Alternative],
   [Community-standard alternative to Eyes Nouveaux.],
-  [[Argonian - Khajiit FabULook Eyes SSE](https://www.nexusmods.com/skyrimspecialedition/mods/15136)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/15136")[Argonian - Khajiit FabULook Eyes SSE]],
   [Alternative],
   [High-res eye textures for Argonian and Khajiit.],
-  [[Beards of Power](https://www.nexusmods.com/skyrimspecialedition/mods/42635)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42635")[Beards of Power]],
   [Alternative],
   [High-fidelity beard meshes and textures. Adds variety over vanilla.],
-  [[BnP - Teeth Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/84288)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84288")[BnP - Teeth Overhaul]],
   [Alternative],
   [Higher-quality teeth meshes/textures. Complements BnP skin stack.],
-  [[New Beast Feet](https://www.nexusmods.com/skyrimspecialedition/mods/107689)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107689")[New Beast Feet]],
   [Alternative],
   [Higher-detail beast race (Khajiit/Argonian) feet with claws/digits.],
-  [[SG Female Eyebrows](https://www.nexusmods.com/skyrimspecialedition/mods/25890) + [Improved](https://www.nexusmods.com/skyrimspecialedition/mods/93266)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/25890")[SG Female Eyebrows] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/93266")[Improved]],
   [Alternative],
   [Higher-fidelity female eyebrow shapes. Use Improved variant.],
-  [[Eyes of Beauty - Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/152223)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/152223")[Eyes of Beauty - Nouveaux]],
   [Alternative],
   [Combines Eyes Nouveaux meshes with The Eyes of Beauty textures. Requires both as dependencies.],
   [Discipline-first route],
@@ -2706,14 +2708,14 @@ Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skelet
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Skeleton Replacer HD — SE](https://www.nexusmods.com/skyrimspecialedition/mods/52845)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/52845")[Skeleton Replacer HD — SE]],
   [Baseline],
-  [High-res skeleton/bone models. Choose **2K** main file.],
-  [[Skeleton Replacer HD — Mesh Patches](https://www.nexusmods.com/skyrimspecialedition/mods/177253)],
+  [High-res skeleton/bone models. Choose *2K* main file.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177253")[Skeleton Replacer HD — Mesh Patches]],
   [Baseline],
   [Add only if modlist includes a creature/content mod needing a mesh patch.],
   [Discipline-first route],
@@ -2733,9 +2735,9 @@ Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skelet
 
 // -- guide/modlist-graphics-lod.md --
 = LOD & Distant Detail
-<lod--distant-detail>
+<graphics-lod-lod--distant-detail>
 
-**MO2 Separator:** `Graphics` → `Graphics - LOD & Distant Detail`
+*MO2 Separator:* `Graphics` → `Graphics - LOD & Distant Detail`
 
 All items in this section belong to the `Graphics - LOD & Distant Detail` MO2 separator unless noted.
 
@@ -2760,13 +2762,13 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [DynDOLOD Resources SE 3],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52897)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/52897")[Nexus]],
   [DynDOLOD DLL NG],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97720)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97720")[Nexus]],
 )
 
 ==== Optional Distant Detail Support
@@ -2774,22 +2776,22 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
   [*Nexus*],
   [HD LODs Textures SE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3333)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3333")[Nexus]],
   [Skyfall's Sleeping Hist Tree Overhaul — DynDOLOD Add-On],
   [Billboard generation for replaced tree. Required for correct distant-LOD display.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169984)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169984")[Nexus]],
   [Happy Little Trees DynDOLOD Optimizations],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158587)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/158587")[Nexus]],
   [Far Object LOD Improvement Project SSE (FOLIP)],
   [Improves distant object LOD.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/79197)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/79197")[Nexus]],
 )
 
 ==== World Map Support
@@ -2802,17 +2804,17 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [No Grass In Objects],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42161)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42161")[Nexus]],
   [Worldspaces with Grass SSEEdit Script],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55152)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55152")[Nexus]],
   [Grass Cache Fixes],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60891)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60891")[Nexus]],
   [xLODGen Resource — SSE Terrain Tamriel],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54680)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54680")[Nexus]],
 )
 
 ---
@@ -2826,7 +2828,7 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 - Install `DynDOLOD Resources SE 3` as a normal mod in MO2. During FOMOD installation, uncheck `Low-Res LOD Textures` and `Holy Cow`. On Skyrim SE 1.6+, also uncheck `Whiterun Exterior Grass`. Place the mod relatively high in the left pane.
 - Install `DynDOLOD DLL NG` as a normal mod in MO2. Provides the large-reference bug workaround from its own side — only use if the modlist ships with it and you understand the implications; not recommended unless the list explicitly requires it.
 - Install `No Grass In Objects`, `Grass Cache Fixes`, and `xLODGen Resource` as support content.
-- Register **TexGen**, **DynDOLOD**, and **xLODGen** as MO2 executables, not mixed into mod folders.
+- Register *TexGen*, *DynDOLOD*, and *xLODGen* as MO2 executables, not mixed into mod folders.
 - Treat occlusion as generated output, not as a separate mod pick.
 
 ==== Dedicated MO2 Output Mods (create before generation)
@@ -2834,7 +2836,7 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Output Folder*],
   [*Purpose*],
   [`Grass Cache Output`],
@@ -2857,34 +2859,34 @@ Keep generated outputs in the `Output` separator. Do not generate final outputs 
 1. Confirm load order and conflict resolution first.
 2. Generate grass cache (No Grass In Objects workflow).
 3. Install/update `Grass Cache Output`.
-4. Run **xLODGen** for terrain LOD (once terrain and snow are stable).
+4. Run *xLODGen* for terrain LOD (once terrain and snow are stable).
 5. Install/update `Terrain LOD Output`.
-6. Run **TexGen**.
+6. Run *TexGen*.
 7. Install/update `TexGen Output`.
-8. Run **DynDOLOD**.
+8. Run *DynDOLOD*.
 9. Install/update `DynDOLOD Output`.
-10. Generate **occlusion data** near the end, keep in `Occlusion Output`.
+10. Generate *occlusion data* near the end, keep in `Occlusion Output`.
 
 Re-run relevant generated layers when a major tree overhaul, architecture change, landscape shift, grass change, or LOD-relevant texture pack is replaced.
 
 ==== Recommended Starting DynDOLOD Configuration
 <lod--distant-detail-recommended-starting-dyndolod-configuration>
 
-- **First-pass preset: High** — start here even if the setup is graphics-heavy. Move above only after checking travel performance and distant coherence.
+- *First-pass preset: High* — start here even if the setup is graphics-heavy. Move above only after checking travel performance and distant coherence.
 - Generate both object and tree LOD on the first real pass to judge forest silhouette quality early.
 - Keep large-reference and ultra-aggressive options off for the first pass.
 - First-pass questions: do distant trees match the overhaul? Do mountain/road/city approach views feel coherent? Is performance acceptable in real travel?
-- If using **Happy Little Trees**, test baseline output first, then compare DynDOLOD Optimizations.
-- If using heavier tree overhauls (**Ulvenwald**, **Fabled Forests**, **Nature of the Wild Lands**), prioritize clean transitions and stable horizons before longer range.
+- If using *Happy Little Trees*, test baseline output first, then compare DynDOLOD Optimizations.
+- If using heavier tree overhauls (*Ulvenwald*, *Fabled Forests*, *Nature of the Wild Lands*), prioritize clean transitions and stable horizons before longer range.
 
 ===== Tree-Specific DynDOLOD Rules
 <lod--distant-detail-tree-specific-dyndolod-rules>
 
-Certain tree overhauls require specialised tree rules in DynDOLOD for correct distant rendering. Example for **Happy Little Trees** (from the DynDOLOD add-on page):
+Certain tree overhauls require specialised tree rules in DynDOLOD for correct distant rendering. Example for *Happy Little Trees* (from the DynDOLOD add-on page):
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*LOD Level*],
   [*Rule*],
   [LOD4],
@@ -2902,16 +2904,16 @@ Apply matching rules for your chosen tree overhaul if its DynDOLOD add-on or aut
 ===== Additional Configuration Guidance
 <lod--distant-detail-additional-configuration-guidance>
 
-- **Ultra Trees (3D tree LOD):** Recommended once first-pass High is validated. 3D tree LOD provides substantially better visual quality for a minor performance cost and unloads properly, unlike hybrid LODs. Anything above `1024` tile size for billboards provides diminishing returns — keep at or below `1024`.
-- **Billboard brightness:** Adjust the R/G/B brightness values in DynDOLOD's grass/billboard settings if distant tree LOD appears too bright in game. A common starting point is `0.500` across all channels.
-- **DynDOLOD DLL NG:** If using DLL NG for the large-reference bug workaround, ensure DynDOLOD settings match its expectations exactly (tick the large-reference workaround options in DynDOLOD's advanced GUI). Not recommended unless the modlist requires it.
+- *Ultra Trees (3D tree LOD):* Recommended once first-pass High is validated. 3D tree LOD provides substantially better visual quality for a minor performance cost and unloads properly, unlike hybrid LODs. Anything above `1024` tile size for billboards provides diminishing returns — keep at or below `1024`.
+- *Billboard brightness:* Adjust the R/G/B brightness values in DynDOLOD's grass/billboard settings if distant tree LOD appears too bright in game. A common starting point is `0.500` across all channels.
+- *DynDOLOD DLL NG:* If using DLL NG for the large-reference bug workaround, ensure DynDOLOD settings match its expectations exactly (tick the large-reference workaround options in DynDOLOD's advanced GUI). Not recommended unless the modlist requires it.
 
 ==== Baseline Starting Profile For Elder Wilds
 <lod--distant-detail-baseline-starting-profile-for-elder-wilds>
 
-- **Preset:** High
-- **Quality target:** Balanced object and tree LOD with stable travel performance
-- **First-pass goal:** Believable distant forests, readable city approaches, clean mountain silhouettes
+- *Preset:* High
+- *Quality target:* Balanced object and tree LOD with stable travel performance
+- *First-pass goal:* Believable distant forests, readable city approaches, clean mountain silhouettes
 - Keep optional LOD texture upgrades and tree-specific optimization mods disabled at first
 
 ---
@@ -2946,10 +2948,10 @@ Apply matching rules for your chosen tree overhaul if its DynDOLOD add-on or aut
 === Rebuild Rules
 <lod--distant-detail-rebuild-rules>
 
-- **Grass cache:** Rebuild if grass baseline, major flora layering, or worldspace edits change.
-- **Terrain LOD:** Rebuild if landscape, snow, mountain, or terrain-color direction changes.
-- **TexGen + DynDOLOD:** Rebuild if tree overhauls, large architecture, major LOD-support mods, or visual worldspace edits change.
-- **Occlusion:** Refresh when major worldspace edits or the distant-detail pass changes enough to affect visibility/culling.
+- *Grass cache:* Rebuild if grass baseline, major flora layering, or worldspace edits change.
+- *Terrain LOD:* Rebuild if landscape, snow, mountain, or terrain-color direction changes.
+- *TexGen + DynDOLOD:* Rebuild if tree overhauls, large architecture, major LOD-support mods, or visual worldspace edits change.
+- *Occlusion:* Refresh when major worldspace edits or the distant-detail pass changes enough to affect visibility/culling.
 - If multiple major visual categories change together, prefer a clean full rebuild over partial guesswork.
 
 ---
@@ -2957,11 +2959,11 @@ Apply matching rules for your chosen tree overhaul if its DynDOLOD add-on or aut
 === Seasonal LODs
 <lod--distant-detail-seasonal-lods>
 
-When using **Seasons of Skyrim SKSE** + **Turn of the Seasons**, DynDOLOD and xLODGen can generate seasonal LOD passes so distant detail matches the current season. This multiplies generation time considerably — plan accordingly.
+When using *Seasons of Skyrim SKSE* + *Turn of the Seasons*, DynDOLOD and xLODGen can generate seasonal LOD passes so distant detail matches the current season. This multiplies generation time considerably — plan accordingly.
 
-**xLODGen seasonal:** Tick the `Seasons` checkbox in the bottom-left corner and select which seasons need terrain LOD. Generation takes significantly longer than a single pass.
+*xLODGen seasonal:* Tick the *Seasons* checkbox in the bottom-left corner and select which seasons need terrain LOD. Generation takes significantly longer than a single pass.
 
-**DynDOLOD seasonal:** Tick the `Seasons` checkbox, the `Snow` checkbox, and select the desired seasons in DynDOLOD's GUI. Generation time scales with the number of seasons selected.
+*DynDOLOD seasonal:* Tick the *Seasons* checkbox, the *Snow* checkbox, and select the desired seasons in DynDOLOD's GUI. Generation time scales with the number of seasons selected.
 
 Rebuild seasonal LOD whenever the underlying terrain, tree, or landscape seasonal-swap data changes.
 
@@ -2970,9 +2972,9 @@ Rebuild seasonal LOD whenever the underlying terrain, tree, or landscape seasona
 
 // -- guide/modlist-ui.md --
 = Modernized UI
-<modernized-ui>
+<ui-modernized-ui>
 
-**MO2 Separators:** `UI - Framework & HUD`, `UI - Inventory & Items`, `UI - Map, Dialogue, Menus`
+*MO2 Separators:* `UI - Framework & HUD`, `UI - Inventory & Items`, `UI - Map, Dialogue, Menus`
 
 All mods in this section belong to one of the three UI separators as noted per subsection.
 
@@ -2988,31 +2990,31 @@ The base menu and interface framework the rest of the UI stack builds on.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [SkyUI],
   [Non-negotiable baseline.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12604)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12604")[Nexus]],
   [Oathvein UI],
   [Locked visual direction. Grim-dark presentation matches the project tone; cleaner dependency chain than Norden UI.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160916)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160916")[Nexus]],
   [UIExtensions],
   [Support infrastructure, not competing UI identity.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17561)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17561")[Nexus]],
   [Constructible Object Custom Keyword System (COCKS)],
   [Crafting-menu category infrastructure.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81409)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81409")[Nexus]],
   [MCM Helper],
   [Persists MCM settings across saves. Hard dependency of TDM, CNO, and others.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53000)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53000")[Nexus]],
   [Stay At The System Page NG],
   [Keeps System page open after loading a save. Most noticeable on gamepad.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76927)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76927")[Nexus]],
   [ImGui Icons],
   [Icon font resource for ImGui-based mods (Dialogue History, etc.).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114790)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114790")[Nexus]],
 )
 
 === Alternatives
@@ -3020,22 +3022,22 @@ The base menu and interface framework the rest of the UI stack builds on.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Norden UI],
   [Modern-rustic by Nithog, but depends on Extended UI (no official SE port).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/166086)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/166086")[Nexus]],
   [Vel'dun UI],
   [Dunmer-themed by Nithog; too narrow a fit for Elder Wilds.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176230)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/176230")[Nexus]],
   [Prisma UI],
   [Web-UI framework replacing SkyUI. Incompatible with Oathvein UI and UIExtensions mods.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148718)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148718")[Nexus]],
   [SKSE Menu Framework],
   [Low-level menu framework for SKSE-based UI mods.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120352)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120352")[Nexus]],
 )
 
 ---
@@ -3050,64 +3052,64 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [SkyHUD],
   [Baseline layout framework: widget positioning, visibility, style consistency.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/463)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/463")[Nexus]],
   [TrueHUD],
   [Combat-feedback: actor info bars, boss bars, player widgets, recent-loot logging. Same author as TDM.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62775)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62775")[Nexus]],
   [Casting Bar],
   [Cast/draw timing for spells, shouts, and bow draw.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80455)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80455")[Nexus]],
   [Floating Damage],
   [Optional combat-feedback overlay. Install only after confirming acceptable visual noise.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14332)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14332")[Nexus]],
   [QuickLoot IE],
   [Container/corpse loot window on interact. Improved controller support, third-person readability. FOMOD with placement presets.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120075)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120075")[Nexus]],
   [Oxygen Meter 2],
   [Breath meter when underwater. Configurable position/opacity.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64532)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64532")[Nexus]],
   [Oxygen Meter 2 - Lung Shaped],
   [Cosmetic lung-shaped icon.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171910)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171910")[Nexus]],
   [Oxygen Meter 2 - Fixes and Additions],
   [Bugfixes and feature tweaks.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171916)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171916")[Nexus]],
   [Detection Meter],
   [Stealth detection meter. Pairs with RAID.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63057)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63057")[Nexus]],
   [Detection Meter - AE Support],
   [Required for 1.6.1170.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77350)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77350")[Nexus]],
   [Casting Bar Reskin - Edge UI Inspired],
   [Cosmetic reskin of Casting Bar. Evaluate integration with Veldun UI's own casting bar (not in Elder Wilds stack).],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/140826)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140826")[Nexus]],
   [STB Widgets],
   [Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136148)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/136148")[Nexus]],
   [Follower Stats],
   [MCM-based follower stat tracking. Pairs with Nether's.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159406)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159406")[Nexus]],
   [Tween Menu Overhaul Improved],
   [Main-menu and loading-screen visual overhaul. Updated version with additional scenes.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/155036)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155036")[Nexus]],
   [RUMINATE - Frost and Snow - Main Menu Video Pack],
   [Frost-and-snow themed main menu cinematic.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/160831)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160831")[Nexus]],
   [Skeuomorphism of Skyrim - Immersive Plaque Reading Interface],
   [3D in-world plaque model. Requires BOS. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119849)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119849")[Nexus]],
   [Dynamic Location Pop-ups],
   [Location discovery notification banner.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153122)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153122")[Nexus]],
   [Complete Controller Setup],
   [SKSE-based controller config: remapping, radial-menus, camera profiles for gamepad.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99978)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99978")[Nexus]],
 )
 
 === Alternatives
@@ -3115,16 +3117,16 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Stats Tracker Menu - STM],
   [Brand new (May 2026), very low community signal. Test before locking.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/180653)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/180653")[Nexus]],
   [Kill feed],
   [Kill notification overlay.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179053)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179053")[Nexus]],
 )
 
 ---
@@ -3137,49 +3139,49 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [moreHUD SE],
   [Mandatory. Broader item-information layer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12688)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12688")[Nexus]],
   [moreHUD Inventory Edition],
   [Mandatory. Extends readability into inventory views.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18619)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18619")[Nexus]],
   [Inventory Interface Information Injector],
   [Value/weight/stat-per-weight columns. Same author as moreHUD.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85702)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85702")[Nexus]],
   [I4 Weapon Icons Overhaul],
   [30+ weapon category icons. Depends on III.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/106432)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106432")[Nexus]],
   [I4 Armor Icons Overhaul],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119824)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119824")[Nexus]],
   [I4 Shout Icons Overhaul],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107334)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107334")[Nexus]],
   [The Handy Icon Collection Collective (THICC)],
   [Thousands of high-fidelity icons. Additive to I4 family.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90508)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90508")[Nexus]],
   [Favorites Menu Effects Description],
   [Effect descriptions in favorites menu. SKSE plugin, no ESP. Essential for gamepad.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143532)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143532")[Nexus]],
   [B.O.O.B.I.E.S (aka Immersive Icons)],
   [Icon overhaul for SkyUI. 28K+ endorsements. FOMOD: 2K recommended.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89241)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89241")[Nexus]],
   [B.O.O.B.I.E.S - POTIONS],
   [Dedicated potion bottle icons.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163838)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/163838")[Nexus]],
   [P.E.N.I.S. for B.O.O.B.I.E.S.],
   [Ingredient icon pack.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/90526)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90526")[Nexus]],
   [A.S.S. for B.O.O.B.I.E.S.],
   [Food & drink icon pack.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89823)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89823")[Nexus]],
   [Rotols More Icons],
   [Additional coverage for items B.O.O.B.I.E.S doesn't cover.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113657)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113657")[Nexus]],
 )
 
 === Alternatives
@@ -3187,28 +3189,28 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [SkyUI Item Card Fixes],
   [Cleaner item-card presentation.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29116)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29116")[Nexus]],
   [Aura's Inventory Tweaks],
   [Stronger sorting and icon structure.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68557)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68557")[Nexus]],
   [Weapon Stat Viewer V2],
   [Weapon-stat overlay. Lock only if rendered cleanly.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127249)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/127249")[Nexus]],
   [Enchanted Icon Overhaul],
   [Depends on Dynamic Inventory Icon Injector.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174246)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174246")[Nexus]],
   [Dynamic Inventory Icon Injector],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174136)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174136")[Nexus]],
   [Book 'Em],
   [Book reading/collecting tracking UI.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84213)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84213")[Nexus]],
 )
 
 === Item Description Cards
@@ -3218,19 +3220,19 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [Weapons Have Description],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116785)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116785")[Nexus]],
   [Ingredients Have Description],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129755)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129755")[Nexus]],
   [Scrolls Have Descriptions],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107202)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107202")[Nexus]],
   [Soul Gems Have Description],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118941)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118941")[Nexus]],
   [Food and Drink Have Descriptions],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/107292)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107292")[Nexus]],
 )
 
 ---
@@ -3243,31 +3245,31 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Flat World Map Framework (FWMF)],
   [Non-negotiable map foundation.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29932)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29932")[Nexus]],
   [Local Map Upgrade],
   [Local-map for interior/close-range navigation.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129756)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129756")[Nexus]],
   [HD Local Map],
   [HD textures for the local map upgrade.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74722)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74722")[Nexus]],
   [Atlas Map Markers SE - Updated with MCM],
   [Expanded map markers with MCM configuration.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/24104)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/24104")[Nexus]],
   [Traditional (8K) Skyrim and Solstheim Paper Maps for FWMF (AE and SE)],
   [High-fidelity paper-map replacer for FWMF.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64493)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64493")[Nexus]],
   [Custom Map Markers for Traditional Skyrim and Solstheim Paper Maps],
   [Cosmetic map marker styling for the Traditional map set.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64777)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64777")[Nexus]],
   [Updates to various maps for FWMF],
   [Coverage patches for additional FWMF worldspaces.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84112)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84112")[Nexus]],
 )
 
 === Alternatives
@@ -3275,31 +3277,31 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [The Nightmare Paper Map for FWMF by Limon],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143113)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143113")[Nexus]],
   [Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53788)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53788")[Nexus]],
   [Immersive Paper Map (3rd Edition)],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54710)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54710")[Nexus]],
   [Skyrim Paper Map by FreelanceCartography for FWMF],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78995)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78995")[Nexus]],
   [Legendary Map],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157397)],
-  [[Pastel Map Markers](https://www.nexusmods.com/skyrimspecialedition/mods/3195)],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3195)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157397")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3195")[Pastel Map Markers]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3195")[Nexus]],
   [Wyrmstooth Paper Map for FWMF],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124686)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124686")[Nexus]],
   [Apocrypha Paper Map for FWMF],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92774)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92774")[Nexus]],
   [Beyond Reach Paper Map for FWMF],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119215)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119215")[Nexus]],
   [Blackreach Paper Map for FWMF],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53878)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53878")[Nexus]],
   [Soul Cairn Paper Map for FWMF],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55387)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55387")[Nexus]],
 )
 
 ---
@@ -3312,41 +3314,41 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Convenient Reading UI - SE],
   [Reading comfort for normal play.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50202)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50202")[Nexus]],
   [Wider MCM Menu for SkyUI],
   [Support fix for cramped config menus.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22825)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22825")[Nexus]],
   [Modern Wait Menu],
   [Clock-face interface showing time, weather preview. Gamepad-friendly. SKSE plugin, no ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/117661)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117661")[Nexus]],
   [Completionist - Skyrim Completion Tracker (NG)],
   [MCM-based quest/item/location/book/shout completion tracker. Run the Automated GUI Patcher.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46358)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46358")[Nexus]],
   [Completionist Addons],
   [Mod-added content tracking.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112406)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112406")[Nexus]],
   [Quest Journal Overhaul],
   [Journal UI redesign with quest tracking improvements.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172488)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172488")[Nexus]],
   [Quest Journal Overhaul - Unofficial Mods Support],
   [Extended mod support patch. Install after the main QJO.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141837)],
-  [[Character Menu SE](https://www.nexusmods.com/skyrimspecialedition/mods/173074)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141837")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173074")[Character Menu SE]],
   [Character stats/sheet UI replacement. Alternative.],
   [],
-  [[Character Menu SE - More Factions](https://www.nexusmods.com/skyrimspecialedition/mods/175026)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175026")[Character Menu SE - More Factions]],
   [Additional faction tracking for Character Menu SE.],
   [],
-  [[Even Better Quest Objectives SE](https://www.nexusmods.com/skyrimspecialedition/mods/159)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159")[Even Better Quest Objectives SE]],
   [Quest objective text clarifications and journal improvements. Alternative.],
   [],
-  [[Knotwork](https://www.nexusmods.com/skyrimspecialedition/mods/128235)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128235")[Knotwork]],
   [Custom quest journal knotwork art for non-vanilla questlines. Complements Quest Journal Overhaul. SKSE plugin. Alternative.],
   [],
 )
@@ -3361,22 +3363,22 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Better Dialogue Controls],
   [First-pass dialogue friction fix.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1429)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1429")[Nexus]],
   [Better MessageBox Controls],
   [Same for message boxes.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1428)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1428")[Nexus]],
   [Dialogue History],
   [Scrollable dialogue log. Essential for gamepad.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114238)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114238")[Nexus]],
   [Improved Alternate Conversation Camera],
   [Dialogue camera baseline. Test for CS letterbox conflict.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68210)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68210")[Nexus]],
 )
 
 === Alternatives
@@ -3384,28 +3386,28 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Dialogue Interface ReShaped],
   [Visual dialogue flow.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46546)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46546")[Nexus]],
   [Convenient Dialogue UI - SE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57943)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57943")[Nexus]],
   [Smart Talk (Dialogue Menu Enhancer)],
   [Highlights quest options, reorders choices, gamepad-friendly skip. 5.5K endorsements.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/161500)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/161500")[Nexus]],
   [Various Dialogue Tags],
-  [Adds contextual tags to dialogue options (e.g., [Lie], [Persuade], [Ask]). ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/103920)],
+  [Adds contextual tags to dialogue options (e.g., #link("https://www.nexusmods.com/skyrimspecialedition/mods/103920")[Lie], [Persuade], [Ask]). ESL-flagged.],
+  [[Nexus]],
   [Various Book Tags],
   [Adds contextual tags to book-reading prompts. Same author as Various Dialogue Tags.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151404)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151404")[Nexus]],
   [Skyrim Autocorrect - Dialogue Grammar Fixes],
   [Fixes grammar, spelling, and punctuation in vanilla dialogue. Text-only, no records.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141632)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141632")[Nexus]],
 )
 
 ---
@@ -3418,16 +3420,16 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Skyrim SE Controller Interface Fix],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1147)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1147")[Nexus]],
   [Show Player In Menus],
   [Renders player character in menus for gear previews. Essential for third-person parity.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/122648)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122648")[Nexus]],
 )
 
 === Alternatives
@@ -3435,25 +3437,25 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Gamepad Plus Plus],
   [Broader controller-input answer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27007)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27007")[Nexus]],
   [Wheeler - Quick Action Wheel],
   [Radial interaction layer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97345)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97345")[Nexus]],
   [WHEELER - Refined],
   [Updated visuals, better controller support.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167380)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167380")[Nexus]],
   [Auto Input Switch],
   [Automatically switches input device.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54309)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54309")[Nexus]],
   [Show Player In Inventory],
   [Renders player model in inventory screen.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/178689)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/178689")[Nexus]],
 )
 
 ---
@@ -3463,16 +3465,16 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Sovngarde - Mist's Font Replacer],
   [Text readability for 16:9 4K HDR. Prefer Bold V8.9 first.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/386)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/386")[Nexus]],
   [Complete Widescreen Fix],
   [Secondary for ultrawide layouts.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1778)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1778")[Nexus]],
 )
 
 ---
@@ -3485,16 +3487,16 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Compass Navigation Overhaul],
   [First-pass navigational layer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/74484)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74484")[Nexus]],
   [CoMAP - Common Marker Addon Project],
   [Marker consistency across the FWMF ecosystem.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56123)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56123")[Nexus]],
 )
 
 === Alternatives
@@ -3502,16 +3504,16 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Immersive HUD - iHUD SE],
   [Minimal-HUD branch.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12440)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12440")[Nexus]],
   [MiniMap],
   [Very optional. Last updated May 2021; occasional crash reports on 1.6.1170.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/49490)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49490")[Nexus]],
 )
 
 ---
@@ -3521,16 +3523,16 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [COCKS],
   [See Framework Prerequisites above. Directly improves the Constructible Object Menu.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/81409)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81409")[Nexus]],
   [SkyUI - Vanilla Crafting menu],
   [Fallback for vanilla-style split categories.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18717)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18717")[Nexus]],
 )
 
 ---
@@ -3540,13 +3542,13 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [The Elder Scrolls Legends - Loading Screens],
   [Locked baseline. 110 lore-friendly Legends artworks. Install at 100% frequency in 16:9 with Fixed Height border. At 100% frequency, vanilla lore tips are suppressed.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37929)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37929")[Nexus]],
 )
 
 ---
@@ -3556,13 +3558,13 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Skyrim Party Sheet - Follower and Player HUD],
   [Persistent overlay for player attributes and follower info. v2.7 (June 2026). Research before installing — verify no conflicts with TrueHUD, Oathvein, or Nether's.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/167538)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167538")[Nexus]],
 )
 
 ---
@@ -3577,9 +3579,9 @@ Open research for the UI stack is tracked in `TODO.md`.
 
 // -- guide/modlist-animations.md --
 = Animations and Movement
-<animations-and-movement>
+<animations-animations-and-movement>
 
-**MO2 Separators:** `Animations - Framework`, `Animations - Movement & Idles`, `Animations - Combat`, `Animations - Interactions & Traversal`, `Animations - Creatures`
+*MO2 Separators:* `Animations - Framework`, `Animations - Movement & Idles`, `Animations - Combat`, `Animations - Interactions & Traversal`, `Animations - Creatures`
 
 All mods in this section belong to one of the five animation separators as noted per subsection.
 
@@ -3595,24 +3597,24 @@ Skyrim's animation stack has four distinct layers. Each layer has exactly one ac
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Layer*],
   [*Role*],
   [*One Active*],
   [*Elder Wilds Pick*],
-  [**Behavior Engine**],
+  [*Behavior Engine*],
   [Generates behavior files from animation data. Runs as an external tool (MO2 executable).],
   [Yes],
   [Pandora],
-  [**Conditional Replacer**],
+  [*Conditional Replacer*],
   [Selects which `.hkx` file plays based on runtime conditions (weapon type, location, weather, NPC identity, etc.).],
   [Yes],
   [OAR (Open Animation Replacer)],
-  [**Combat Animation Framework**],
+  [*Combat Animation Framework*],
   [Overhauls attack behavior: replaces vanilla attack chain logic with modern combo systems, enables motion-data-driven attacks, adds jumping/swimming/charged attacks.],
   [Yes],
   [TBD — MCO or BFCO (see below)],
-  [**NPC Combat AI**],
+  [*NPC Combat AI*],
   [Teaches NPCs to use combat animation movesets intelligently — combo selection, distance management, attack commitment.],
   [None required],
   [SCAR (Baseline after Precision is proven)],
@@ -3625,34 +3627,34 @@ Behavior engines are the foundation. They read your installed animation mods, re
 
 #table(
   columns: 6,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Engine*],
   [*Status*],
   [*Creature Support*],
   [*Reads Nemesis Patches*],
   [*Reads FNIS Formats*],
   [*Notes*],
-  [**FNIS**],
+  [*FNIS*],
   [Deprecated],
   [Limited (Add-on)],
   [No],
   [Natively],
   [Closed source. Last meaningful update ~2016. No AE support. Do not use.],
-  [**Nemesis**],
+  [*Nemesis*],
   [Superseded],
   [Partial (never completed)],
   [Natively],
   [Partial],
   [Open source. Replaced FNIS around 2020. Creature support was a promised feature that never shipped. Still works on AE 1.6.1170 but Pandora is the direct upgrade.],
-  [**Pandora**],
-  [**Current**],
+  [*Pandora*],
+  [*Current*],
   [Full],
   [Yes],
   [Yes],
-  [Open source. Cross-platform. Error-tolerant (isolates illegal edits so one broken mod doesn't poison the whole patch). Faster generation. Reads both Nemesis patch format and legacy FNIS XML. **Elder Wilds baseline.**],
+  [Open source. Cross-platform. Error-tolerant (isolates illegal edits so one broken mod doesn't poison the whole patch). Faster generation. Reads both Nemesis patch format and legacy FNIS XML. *Elder Wilds baseline.*],
 )
 
-**Key compatibility rule:** Pandora replaces both FNIS and Nemesis. You do NOT install FNIS or Nemesis alongside Pandora. Most mods that say "Requires Nemesis" work under Pandora without modification — the Nemesis patch format is read natively. The rare exception is a hypothetical mod using a Nemesis-only code plugin that Pandora hasn't implemented, but this is essentially nonexistent in a modern AE load order.
+*Key compatibility rule:* Pandora replaces both FNIS and Nemesis. You do NOT install FNIS or Nemesis alongside Pandora. Most mods that say "Requires Nemesis" work under Pandora without modification — the Nemesis patch format is read natively. The rare exception is a hypothetical mod using a Nemesis-only code plugin that Pandora hasn't implemented, but this is essentially nonexistent in a modern AE load order.
 
 Nemesis page lists "Project New Reign — Nemesis Unlimited Behavior Engine" at mod ID 60033 (the real page), NOT the various fork/translation pages that share the Nemesis name.
 
@@ -3663,25 +3665,25 @@ Conditional replacers sit between the behavior engine output and the game engine
 
 #table(
   columns: 5,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Replacer*],
   [*Status*],
   [*Backward Compat*],
   [*Open Source*],
   [*Notes*],
-  [**DAR** (Dynamic Animation Replacer)],
+  [*DAR* (Dynamic Animation Replacer)],
   [Maintenance-only],
   [—],
   [No (closed)],
   [Author inactive. Works on AE 1.6.1170 but no new features expected. If DAR ever breaks from a future Skyrim update, nobody can fix it except the original author.],
-  [**OAR** (Open Animation Replacer)],
-  [**Current**],
+  [*OAR* (Open Animation Replacer)],
+  [*Current*],
   [Full DAR backward compatibility],
   [Yes],
-  [Implements every DAR condition. Adds: animation variants (random/sequential), presets (reusable condition blocks), in-game editor, constant polling, paired animation support, graph variable conditions. **Elder Wilds baseline.**],
+  [Implements every DAR condition. Adds: animation variants (random/sequential), presets (reusable condition blocks), in-game editor, constant polling, paired animation support, graph variable conditions. *Elder Wilds baseline.*],
 )
 
-**Key compatibility rule:** Any mod packaged for DAR works in OAR without modification. OAR reads DAR's folder structure and condition format natively. You do NOT need DAR installed alongside OAR — OAR is a complete replacement.
+*Key compatibility rule:* Any mod packaged for DAR works in OAR without modification. OAR reads DAR's folder structure and condition format natively. You do NOT need DAR installed alongside OAR — OAR is a complete replacement.
 
 DAR-based mods use folder paths like `meshes\actors\character\animations\DynamicAnimationReplacer\\_CustomConditions\...`. OAR reads these same folders with no conversion needed. Mod authors increasingly ship OAR-native configs (JSON-based, richer conditions) but DAR-format mods remain fully functional.
 
@@ -3692,27 +3694,27 @@ Combat frameworks replace Skyrim's vanilla attack behavior — directional power
 
 #table(
   columns: 5,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Framework*],
   [*Requires*],
   [*Built-In Features*],
   [*Moveset Format*],
   [*Notes*],
-  [**MCO / ADXP** (Modern Movement Combat Overhaul / Attack - Distar Experience)],
+  [*MCO / ADXP* (Modern Movement Combat Overhaul / Attack - Distar Experience)],
   [AMR + Payload Interpreter + Pandora/Nemesis + OAR/DAR],
   [Directional power attacks (via separate mod), combo chains, motion-driven attacks],
   [`MCO\_Attack*.hkx` naming],
   [Established standard. Vast moveset library. Active community. The "Distar ecosystem" includes MCO, DMCO (dodge), and related mods. Distar's mods have moved to Nexus (mod ID 117115 for the `.esp`; main files and movesets still reference the off-site download).],
-  [**BFCO** (Attack Behavior Framework)],
+  [*BFCO* (Attack Behavior Framework)],
   [AMR + Payload Interpreter + DMK + Pandora/Nemesis + OAR],
-  [Directional power attacks (built-in, single hotkey), combo chains, motion-driven attacks, **jump attacks**, **swim attacks**, **charge attacks**, NPC combo AI (bfcoAI), gamepad MCM hotkeys],
+  [Directional power attacks (built-in, single hotkey), combo chains, motion-driven attacks, *jump attacks*, *swim attacks*, *charge attacks*, NPC combo AI (bfcoAI), gamepad MCM hotkeys],
   [`BFCO\_Attack*.hkx` naming],
   [Newer alternative. More features packed into one framework. Has an MCO→BFCO converter tool for movesets. Mutually exclusive with MCO/SkySA/ABR.],
 )
 
-**Key compatibility rule: MCO and BFCO are mutually exclusive.** They perform the same function (attack behavior overhaul) and conflict on behavior files, power attack handling, and animation event processing. Pick one. Do not install both.
+*Key compatibility rule: MCO and BFCO are mutually exclusive.* They perform the same function (attack behavior overhaul) and conflict on behavior files, power attack handling, and animation event processing. Pick one. Do not install both.
 
-Both MCO and BFCO require **AMR** and **Payload Interpreter** as hard dependencies — these are not optional. BFCO does NOT eliminate the need for AMR; it lists AMR as a "must" requirement on its Nexus page. The shared dependency chain for either path is:
+Both MCO and BFCO require *AMR* and *Payload Interpreter* as hard dependencies — these are not optional. BFCO does NOT eliminate the need for AMR; it lists AMR as a "must" requirement on its Nexus page. The shared dependency chain for either path is:
 
 ```
 Pandora (behavior generation)
@@ -3723,11 +3725,11 @@ Pandora (behavior generation)
   + [MCO  OR  BFCO] (attack behavior framework)
 ```
 
-BFCO also requires **Directional Movement Keys (DMK)** for directional power attacks to work correctly — this is unique to BFCO. MCO handles directional input through its own `.esp` and optional companion mods like "Separate Power Attacks."
+BFCO also requires *Directional Movement Keys (DMK)* for directional power attacks to work correctly — this is unique to BFCO. MCO handles directional input through its own `.esp` and optional companion mods like "Separate Power Attacks."
 
-**Moveset portability:** MCO movesets (.hkx files using `MCO\_Attack*` naming) can be converted to BFCO format using the community "MCO To BFCO Converter" tool. The reverse (BFCO → MCO) is less common since BFCO has additional attack types (jump, swim) that have no MCO equivalent.
+*Moveset portability:* MCO movesets (.hkx files using `MCO\_Attack*` naming) can be converted to BFCO format using the community "MCO To BFCO Converter" tool. The reverse (BFCO → MCO) is less common since BFCO has additional attack types (jump, swim) that have no MCO equivalent.
 
-**Companion mods that BFCO replaces internally (do NOT install alongside BFCO):**
+*Companion mods that BFCO replaces internally (do NOT install alongside BFCO):*
 
 - One Click Power Attack NG / Elden Power Attack / For Honor Power Attack (power attack hotkey — BFCO has its own in MCM)
 - Dual Wield Parrying (built into BFCO)
@@ -3742,15 +3744,15 @@ NPC combat AI teaches enemies to use combat animation movesets the way a player 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Requires*],
   [*Works With*],
   [*Notes*],
-  [**SCAR** (Skyrim Combos AI Revolution)],
+  [*SCAR* (Skyrim Combos AI Revolution)],
   [Pandora/Nemesis + Address Library. AMR recommended (not mandatory).],
   [MCO, BFCO, or vanilla],
-  [NPCs use SCAR-annotated animations via scarAI. With BFCO: SCAR annotations take priority; animations without SCAR annotations fall back to bfcoAI. With MCO: SCAR handles all NPC combo logic. **Elder Wilds baseline** (after Precision is confirmed stable).],
+  [NPCs use SCAR-annotated animations via scarAI. With BFCO: SCAR annotations take priority; animations without SCAR annotations fall back to bfcoAI. With MCO: SCAR handles all NPC combo logic. *Elder Wilds baseline* (after Precision is confirmed stable).],
 )
 
 SCAR does NOT require AMR as a hard dependency (not listed in its Nexus requirements), but the two are designed to work together — AMR's motion data makes SCAR-driven NPC attacks feel grounded and weighty rather than ice-skating.
@@ -3758,25 +3760,25 @@ SCAR does NOT require AMR as a hard dependency (not listed in its Nexus requirem
 === Practical Compatibility Q&A
 <animations-and-movement-practical-compatibility-q--a>
 
-**Q: I have a DAR mod from 2021. Will it work with OAR?**
+*Q: I have a DAR mod from 2021. Will it work with OAR?*
 Yes. OAR implements every DAR condition and reads DAR folder structures natively. Install OAR, don't install DAR, and the DAR-packaged mod will work.
 
-**Q: I have a mod that says "Requires Nemesis." Can I use Pandora instead?**
+*Q: I have a mod that says "Requires Nemesis." Can I use Pandora instead?*
 Yes, in virtually all cases. Pandora reads Nemesis patch format natively. The mod's Nemesis patch checkbox will appear in Pandora's UI just as it would in Nemesis.
 
-**Q: Do I need FNIS for creature animations (e.g., werewolf, vampire lord)?**
+*Q: Do I need FNIS for creature animations (e.g., werewolf, vampire lord)?*
 No. Pandora has full creature support. FNIS is completely unnecessary in a modern AE load order.
 
-**Q: I want to try BFCO instead of MCO. What do I need to change?**
+*Q: I want to try BFCO instead of MCO. What do I need to change?*
 Remove MCO and any MCO-specific movesets. Install BFCO, DMK, and BFCO-format movesets (or convert MCO movesets with the converter tool). Re-run Pandora, ticking BFCO's patch instead of MCO's. AMR, Payload Interpreter, OAR, and XPMSSE all stay — they're shared requirements.
 
-**Q: Can I install SCAR without MCO or BFCO?**
+*Q: Can I install SCAR without MCO or BFCO?*
 Technically yes — SCAR has no hard dependency on either. But SCAR is designed to work with MCO/BFCO movesets, and without them NPCs can only use vanilla attack animations, which defeats the purpose. Always pair SCAR with a combat animation framework.
 
-**Q: What about SkySA and ABR?**
+*Q: What about SkySA and ABR?*
 Both are predecessors to MCO from the Distar ecosystem. SkySA was the original attack behavior mod; ABR was a fork. MCO superseded both. BFCO lists both as incompatible. Do not use either in a modern load order.
 
-**Q: Does Precision (accurate melee collisions) work with all of this?**
+*Q: Does Precision (accurate melee collisions) work with all of this?*
 Yes. Precision runs at the collision-detection layer, independent of which combat framework you choose. It works with MCO, BFCO, and vanilla. No special compatibility configuration needed.
 
 === The Framework Dependency Map
@@ -3789,15 +3791,15 @@ Yes. Precision runs at the collision-detection layer, independent of which comba
 
 All four tasks researched. Sources: Nexus mod pages, Nexus community posts tabs, official patch compatibility statements.
 
-**Task 1 — Pandora compatibility with modlist behavior mods**
+*Task 1 — Pandora compatibility with modlist behavior mods*
 
-Pandora v4.3.1 is confirmed compatible with all behavior-requiring mods currently in the Elder Wilds modlist. The BFCO author (BF001) explicitly tested and confirmed: *"I tested in Pandora v4.3.1 + Skeleton Auto Patch, everything works perfectly"* (BFCO sticky post, May 2024, updated for v3.100+). Pandora reads both Nemesis patch format and legacy FNIS XML natively — the only edge case identified is SCAR (see Task 3 below).
+Pandora v4.3.1 is confirmed compatible with all behavior-requiring mods currently in the Elder Wilds modlist. The BFCO author (BF001) explicitly tested and confirmed: #emph["I tested in Pandora v4.3.1 + Skeleton Auto Patch, everything works perfectly"] (BFCO sticky post, May 2024, updated for v3.100+). Pandora reads both Nemesis patch format and legacy FNIS XML natively — the only edge case identified is SCAR (see Task 3 below).
 
 Behavior-requiring mods in the current modlist and their Pandora status:
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Has Pandora Patch*],
   [*Notes*],
@@ -3809,7 +3811,7 @@ Behavior-requiring mods in the current modlist and their Pandora status:
   [Tick in Pandora UI. Author-tested with v4.3.1.],
   [SCAR],
   [Yes (requires fix)],
-  [Tick in Pandora. Also needs **[SCAR - Pandora - Fix](https://www.nexusmods.com/skyrimspecialedition/mods/164638)** loaded after SCAR. Without the fix: `WARN : Dispatcher > "SCAR" > defaultfemale~1hm\_behavior > Replace > Element > \\#2521/event/Element0/id > FAILED`.],
+  [Tick in Pandora. Also needs *#link("https://www.nexusmods.com/skyrimspecialedition/mods/164638")[SCAR - Pandora - Fix]* loaded after SCAR. Without the fix: `WARN : Dispatcher > "SCAR" > defaultfemale~1hm\_behavior > Replace > Element > #2521/event/Element0/id > FAILED`.],
   [Animated Armoury OAR],
   [Yes],
   [Tick in Pandora for new weapon-type behaviors.],
@@ -3824,7 +3826,7 @@ Behavior-requiring mods in the current modlist and their Pandora status:
   [Tick in Pandora.],
   [XPMSSE],
   [Yes (OR skip)],
-  [Do NOT tick the XPMSSE patch checkbox if using **Universal Behaviour Runtime — Auto Skeleton Patch** (mod 176724). The Auto Skeleton Patch replaces the old Pandora XPMSSE checkbox.],
+  [Do NOT tick the XPMSSE patch checkbox if using *Universal Behaviour Runtime — Auto Skeleton Patch* (mod 176724). The Auto Skeleton Patch replaces the old Pandora XPMSSE checkbox.],
   [Precision],
   [No patch needed],
   [SKSE plugin only; no behavior generation.],
@@ -3842,41 +3844,41 @@ Behavior-requiring mods in the current modlist and their Pandora status:
   [SKSE plugin only; install only when a pack explicitly lists it.],
 )
 
-**Task 2 — MCO vs BFCO community signal on AE 1.6.1170 with Pandora**
+*Task 2 — MCO vs BFCO community signal on AE 1.6.1170 with Pandora*
 
 Both frameworks are actively maintained and Pandora-compatible. The community signal divides along a clear line:
 
-- **MCO** remains the established standard with the larger moveset library (hundreds of MCO-format animation packs). It is the proven path with the most community tutorials and troubleshooting resources. Distar's ecosystem (MCO, DMCO, related mods) is mature.
-- **BFCO** is the rapidly growing alternative. Key advantages: built-in jump attacks, swim attacks, charge attacks, vanilla attack speed support, and gamepad MCM hotkey support — all features that MCO requires separate companion mods (or can't do) to achieve. BFCO v3.100+ is described by the author as "almost done with my idea," indicating maturity.
+- *MCO* remains the established standard with the larger moveset library (hundreds of MCO-format animation packs). It is the proven path with the most community tutorials and troubleshooting resources. Distar's ecosystem (MCO, DMCO, related mods) is mature.
+- *BFCO* is the rapidly growing alternative. Key advantages: built-in jump attacks, swim attacks, charge attacks, vanilla attack speed support, and gamepad MCM hotkey support — all features that MCO requires separate companion mods (or can't do) to achieve. BFCO v3.100+ is described by the author as "almost done with my idea," indicating maturity.
 
-The **MCO→BFCO Converter** ([mod 119926](https://www.nexusmods.com/skyrimspecialedition/mods/119926), v1.2.2) is actively maintained and handles: file renaming, annotation conversion (attack speed, power windows, recovery, next-attack chaining, multi-window annotations), and batch processing. It converts `MCO\_powerattackloop*.hkx` and `MCO\_powerattackoutro*.hkx` files (supported since converter v1.2.1 / BFCO >= 3.3). The converter has gone through 10+ bugfix releases, with progressively better annotation fidelity.
+The *MCO→BFCO Converter* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/119926")[mod 119926], v1.2.2) is actively maintained and handles: file renaming, annotation conversion (attack speed, power windows, recovery, next-attack chaining, multi-window annotations), and batch processing. It converts `MCO\_powerattackloop#emph[.hkx` and `MCO\_powerattackoutro].hkx` files (supported since converter v1.2.1 / BFCO >= 3.3). The converter has gone through 10+ bugfix releases, with progressively better annotation fidelity.
 
-BFCO also has a **BFCO NG** companion ([mod 160505](https://www.nexusmods.com/skyrimspecialedition/mods/160505)) for flexible hotkey assignment. BFCO's FOMOD offers pre-input behavior choices: "Vanilla Like" (can only input next attack after hit frame) vs "MCO Like" (can input next attack almost immediately — same feel as MCO).
+BFCO also has a *BFCO NG* companion (#link("https://www.nexusmods.com/skyrimspecialedition/mods/160505")[mod 160505]) for flexible hotkey assignment. BFCO's FOMOD offers pre-input behavior choices: "Vanilla Like" (can only input next attack after hit frame) vs "MCO Like" (can input next attack almost immediately — same feel as MCO).
 
-**Recommendation:** BFCO is the better long-term fit for Elder Wilds given its built-in gamepad support, fewer companion-mods-required, and the converter making the MCO moveset library accessible. However, MCO remains a fully viable alternative. The decision can be deferred — either path works with Pandora and the rest of the stack.
+*Recommendation:* BFCO is the better long-term fit for Elder Wilds given its built-in gamepad support, fewer companion-mods-required, and the converter making the MCO moveset library accessible. However, MCO remains a fully viable alternative. The decision can be deferred — either path works with Pandora and the rest of the stack.
 
-**Task 3 — SCAR + Pandora interaction confirmed**
+*Task 3 — SCAR + Pandora interaction confirmed*
 
-SCAR works with Pandora but needs the **SCAR - Pandora - Fix** ([mod 164638](https://www.nexusmods.com/skyrimspecialedition/mods/164638)). Requirements: Pandora Behaviour Engine Plus + SCAR AE Support. Install order: SCAR → SCAR AE Support → SCAR Pandora Fix. Then re-run Pandora.
+SCAR works with Pandora but needs the *SCAR - Pandora - Fix* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/164638")[mod 164638]). Requirements: Pandora Behaviour Engine Plus + SCAR AE Support. Install order: SCAR → SCAR AE Support → SCAR Pandora Fix. Then re-run Pandora.
 
 Additional SCAR compatibility notes from community posts:
-- If using **SCAR AE Support** ([mod 77285](https://www.nexusmods.com/skyrimspecialedition/mods/77285)) with BFCO: do NOT install the default animations in the SCAR AE Support FOMOD — they cause compatibility issues with BFCO.
+- If using *SCAR AE Support* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/77285")[mod 77285]) with BFCO: do NOT install the default animations in the SCAR AE Support FOMOD — they cause compatibility issues with BFCO.
 - SCAR version 2.0 from GitHub (not the Nexus page) reportedly has issues with BFCO — stick to the Nexus version (v1.06b) for now.
-- SCAR does not hard-require MCO; it works with MCO, BFCO, or SkySA/ABR. The SCAR Nexus comments explicitly state: *"You don't need MCO if you are using ABR or SkySA for this mod to work."*
+- SCAR does not hard-require MCO; it works with MCO, BFCO, or SkySA/ABR. The SCAR Nexus comments explicitly state: #emph["You don't need MCO if you are using ABR or SkySA for this mod to work."]
 
-**Task 4 — MCO→BFCO converter quality assessment**
+*Task 4 — MCO→BFCO converter quality assessment*
 
 The converter tool (v1.2.2) is actively maintained with good annotation fidelity but is not lossless. The changelog reveals the conversion has gone through multiple rounds of bugfixing:
 
-- **v1.1.3:** Multi-window annotations fixed (animations with more than one `MCO\_nextattack` or `MCO\_PowerWinOpen` now convert correctly).
-- **v1.1.4:** Added `MCO\_powerWinOpen`/`MCO\_powerWinClose` → BFCO annotation recognition.
-- **v1.1.5:** Added attack speed annotation conversion (`MCO\_AttackSpeed` → `BFCO\_AttackSpeed`).
-- **v1.1.6:** Old BFCO annotations are removed on re-conversion.
-- **v1.2.1:** Power attack loop and outro files supported (`MCO\_powerattackloop*.hkx`, `MCO\_powerattackoutro*.hkx`).
+- *v1.1.3:* Multi-window annotations fixed (animations with more than one `MCO\_nextattack` or `MCO\_PowerWinOpen` now convert correctly).
+- *v1.1.4:* Added `MCO\_powerWinOpen`/`MCO\_powerWinClose` → BFCO annotation recognition.
+- *v1.1.5:* Added attack speed annotation conversion (`MCO\_AttackSpeed` → `BFCO\_AttackSpeed`).
+- *v1.1.6:* Old BFCO annotations are removed on re-conversion.
+- *v1.2.1:* Power attack loop and outro files supported (`MCO\_powerattackloop#emph[.hkx`, `MCO\_powerattackoutro].hkx`).
 
 Known limitations: the converter handles standard MCO annotations. MCO movesets with heavily custom or non-standard annotations may not convert perfectly. Complex movesets should be tested individually after conversion for: animation timing drift, ice-skating (lost motion data), missing combo-chain windows, and power attack trigger reliability.
 
-**Risk assessment for the converter:** For the vast majority of MCO movesets with standard Distar-ecosystem annotations, the converter should produce clean BFCO output. Edge-case movesets with hand-tuned custom annotations are the primary risk. Given that Elder Wilds hasn't locked specific movesets yet, this is a manageable risk — verify each adopted moveset post-conversion rather than counting on batch-convert perfection.
+*Risk assessment for the converter:* For the vast majority of MCO movesets with standard Distar-ecosystem annotations, the converter should produce clean BFCO output. Edge-case movesets with hand-tuned custom annotations are the primary risk. Given that Elder Wilds hasn't locked specific movesets yet, this is a manageable risk — verify each adopted moveset post-conversion rather than counting on batch-convert perfection.
 
 ---
 
@@ -3885,17 +3887,17 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Pandora Behaviour Engine Plus](https://www.nexusmods.com/skyrimspecialedition/mods/133232)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/133232")[Pandora Behaviour Engine Plus]],
   [Baseline],
   [Single behavior-generation owner. Register as MO2 executable; output to dedicated `Pandora Output` mod.],
-  [[Universal Behaviour Runtime — Auto Skeleton Patch](https://www.nexusmods.com/skyrimspecialedition/mods/176724)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/176724")[Universal Behaviour Runtime — Auto Skeleton Patch]],
   [Baseline],
   [Runtime skeleton patching for XPMSSE. Do NOT tick Pandora XPMSSE patch checkbox.],
-  [[A-Pose Bug Fix — Universal Behavior Runtime](https://www.nexusmods.com/skyrimspecialedition/mods/168903)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168903")[A-Pose Bug Fix — Universal Behavior Runtime]],
   [Baseline],
   [Runtime A-pose interception and LE animation backward compatibility.],
 )
@@ -3905,8 +3907,8 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 - Validate current Pandora install guide and requirements tab during setup.
 - Leaving old generated output active or mixing generators makes debugging much harder.
-- **SCAR compatibility:** SCAR triggers a known Pandora warning (`defaultfemale~1hm\_behavior > Replace > Element > \#2521`). Install **[SCAR - Pandora - Fix](https://www.nexusmods.com/skyrimspecialedition/mods/164638)** after SCAR + SCAR AE Support to resolve it. Re-run Pandora after adding.
-- Do NOT tick the Pandora XPMSSE patch checkbox if **Universal Behaviour Runtime — Auto Skeleton Patch** is installed — they are mutually exclusive. The Auto Skeleton Patch is the preferred route.
+- *SCAR compatibility:* SCAR triggers a known Pandora warning (`defaultfemale~1hm\_behavior > Replace > Element > #2521`). Install *#link("https://www.nexusmods.com/skyrimspecialedition/mods/164638")[SCAR - Pandora - Fix]* after SCAR + SCAR AE Support to resolve it. Re-run Pandora after adding.
+- Do NOT tick the Pandora XPMSSE patch checkbox if *Universal Behaviour Runtime — Auto Skeleton Patch* is installed — they are mutually exclusive. The Auto Skeleton Patch is the preferred route.
 
 ---
 
@@ -3915,23 +3917,23 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[XP32 Maximum Skeleton Special Extended — XPMSSE](https://www.nexusmods.com/skyrimspecialedition/mods/1988)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1988")[XP32 Maximum Skeleton Special Extended — XPMSSE]],
   [Baseline],
   [Single skeleton baseline.],
-  [[CBPC — Physics with Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/21224)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21224")[CBPC — Physics with Collisions]],
   [Baseline],
   [Default first-pass physics for CBBE 3BA.],
-  [[FSMP — Faster HDT-SMP](https://www.nexusmods.com/skyrimspecialedition/mods/57339)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57339")[FSMP — Faster HDT-SMP]],
   [Baseline],
   [SMP coverage alongside CBPC. Required by OStim and some outfits.],
-  [[XPMSSE Fixed Scripts](https://www.nexusmods.com/skyrimspecialedition/mods/44252)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/44252")[XPMSSE Fixed Scripts]],
   [Alternative],
   [Companion script fix over XPMSSE.],
-  [[ConsoleUtilSSE NG](https://www.nexusmods.com/skyrimspecialedition/mods/76649)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76649")[ConsoleUtilSSE NG]],
   [Alternative],
   [Keep available for script-dependent pieces.],
 )
@@ -3943,20 +3945,20 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)](https://www.nexusmods.com/skyrimspecialedition/mods/132292)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132292")[SkyParkour v3 - Procedural Parkour and Climbing Framework (SPPF)]],
   [Baseline],
   [Vault, climb, traverse environmental geometry. 10,112 endorsements.],
-  [[EVG CLAMBER - Slope Animations](https://www.nexusmods.com/skyrimspecialedition/mods/114753)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114753")[EVG CLAMBER - Slope Animations]],
   [Baseline],
   [Character posture adjusts dynamically on slopes and stairs. Complements SkyParkour.],
-  [[Feminine EVG Clamber Stair Animations](https://www.nexusmods.com/skyrimspecialedition/mods/148067)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148067")[Feminine EVG Clamber Stair Animations]],
   [Baseline],
   [Female-specific stair animations for EVG CLAMBER.],
-  [[SkyClimb](https://www.nexusmods.com/skyrimspecialedition/mods/97253)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97253")[SkyClimb]],
   [Alternative],
   [Climbing-first alternative built around EVGAT. Pick one (not cumulative with SkyParkour).],
   [Discipline-first route],
@@ -3969,17 +3971,17 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Thundertrot Horse Animations](https://www.nexusmods.com/skyrimspecialedition/mods/140941)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140941")[Thundertrot Horse Animations]],
   [Candidate],
   [OAR-based horse movement/idle replacer.],
-  [[Horse Animation Overhaul (WIP - OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/140122)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140122")[Horse Animation Overhaul (WIP - OAR)]],
   [Candidate],
   [Broader horse animation replacement. WIP — evaluate stability.],
-  [[Riding Animation Overhaul - RAO (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/102881)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102881")[Riding Animation Overhaul - RAO (OAR)]],
   [Candidate],
   [OAR-based horse riding animation replacer.],
 )
@@ -3989,12 +3991,12 @@ All three are OAR-based and work under Pandora. Do not install together without 
 === Companion Candidates (evaluate after baseline is locked)
 <animations-and-movement-companion-candidates-evaluate-after-baseline-is-locked>
 
-- **Dova Jump** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125550)) — Stamina-based jump height/distance. Complements parkour.
-- **Walk Speed Tuner** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179215)) — Configurable walk speed hotkey.
-- **Beam Walking Assist** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175511))
-- **RaySense - Jumping over obstacles** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175506))
-- **RaySense - Edge Lookdown** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175514))
-- **Inertia - Physical Movement Response System** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172783))
+- *Dova Jump* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/125550")[Nexus]) — Stamina-based jump height/distance. Complements parkour.
+- *Walk Speed Tuner* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/179215")[Nexus]) — Configurable walk speed hotkey.
+- *Beam Walking Assist* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/175511")[Nexus])
+- *RaySense - Jumping over obstacles* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/175506")[Nexus])
+- *RaySense - Edge Lookdown* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/175514")[Nexus])
+- *Inertia - Physical Movement Response System* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/172783")[Nexus])
 
 === Risks & Compatibility
 <animations-and-movement-risks--compatibility-2>
@@ -4010,68 +4012,68 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Leviathan Animations II - Male Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/81463)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81463")[Leviathan Animations II - Male Idle Walk And Run]],
   [Baseline],
   [Male locomotion.],
-  [[Leviathan Animations II - Female Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/80760)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80760")[Leviathan Animations II - Female Idle Walk And Run]],
   [Baseline],
   [Female locomotion.],
-  [[Vanargand Animations II - Male Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/99999)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99999")[Vanargand Animations II - Male Idle Walk And Run]],
   [Alternative],
   [Main male alternative.],
-  [[Vanargand Animations II - Female Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/100000)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/100000")[Vanargand Animations II - Female Idle Walk And Run]],
   [Alternative],
   [Main female alternative.],
-  [[NPC Animation Remix (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/63471)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63471")[NPC Animation Remix (OAR)]],
   [Alternative],
   [NPC-specific movement and idle animation remix.],
-  [[Arm Movement Animations (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/62849)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62849")[Arm Movement Animations (OAR)]],
   [Alternative],
   [Hand and arm idle animation variations.],
-  [[Conditional Armor Type Animations](https://www.nexusmods.com/skyrimspecialedition/mods/51507)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51507")[Conditional Armor Type Animations]],
   [Alternative],
   [Add after base locomotion is accepted.],
-  [[Dynamic Female Weather Idles](https://www.nexusmods.com/skyrimspecialedition/mods/98493)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/98493")[Dynamic Female Weather Idles]],
   [Alternative],
   [OAR-based weather-aware idles. Complements survival/weather stack.],
-  [[EVG Animated Traversal](https://www.nexusmods.com/skyrimspecialedition/mods/63232)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63232")[EVG Animated Traversal]],
   [Alternative],
   [Belongs in interaction/traversal bucket.],
-  [[Goetia Animations - Female Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/68005)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68005")[Goetia Animations - Female Idle Walk And Run]],
   [Alternative],
   [Female locomotion animation pack.],
-  [[Goetia Animations - Male Idle Walk And Run](https://www.nexusmods.com/skyrimspecialedition/mods/68625)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68625")[Goetia Animations - Male Idle Walk And Run]],
   [Alternative],
   [Male locomotion animation pack.],
-  [[Poser Hotkeys Plus SSE](https://www.nexusmods.com/skyrimspecialedition/mods/17743)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17743")[Poser Hotkeys Plus SSE]],
   [Alternative],
   [Hotkey-based pose/idle system.],
-  [[More Tavern Idles - SSE Port](https://www.nexusmods.com/skyrimspecialedition/mods/16757)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16757")[More Tavern Idles - SSE Port]],
   [Alternative],
   [Tavern-specific idle animation variety.],
-  [[Lightweight Headtracking and Emotions](https://www.nexusmods.com/skyrimspecialedition/mods/224)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/224")[Lightweight Headtracking and Emotions]],
   [Alternative],
   [NPC/PCP headtracking and expression support.],
-  [[Smooth Random Jump Animation - Rework](https://www.nexusmods.com/skyrimspecialedition/mods/59633)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/59633")[Smooth Random Jump Animation - Rework]],
   [Alternative],
   [Randomized jump animation replacer.],
-  [[Smooth Weapon Jump Animation](https://www.nexusmods.com/skyrimspecialedition/mods/74748)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74748")[Smooth Weapon Jump Animation]],
   [Alternative],
   [Weapon-drawn jump animation replacer.],
-  [[Random Swimming Animations](https://www.nexusmods.com/skyrimspecialedition/mods/92951)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92951")[Random Swimming Animations]],
   [Alternative],
   [Randomized swimming animation replacer.],
-  [[Dynamic Sprint](https://www.nexusmods.com/skyrimspecialedition/mods/95561)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95561")[Dynamic Sprint]],
   [Alternative],
   [SKSE-based sprint animation with motion-matched lean.],
-  [[Dynamic Sprint Stop](https://www.nexusmods.com/skyrimspecialedition/mods/107057)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107057")[Dynamic Sprint Stop]],
   [Alternative],
   [Sprint-stop animation with deceleration. Companion to Dynamic Sprint.],
-  [[Vanargand Animations - Sneak idle walk and run](https://www.nexusmods.com/skyrimspecialedition/mods/54351)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54351")[Vanargand Animations - Sneak idle walk and run]],
   [Alternative],
   [Sneak locomotion animation pack.],
 )
@@ -4083,101 +4085,101 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Precision - Accurate Melee Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/72347)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/72347")[Precision - Accurate Melee Collisions]],
   [Baseline],
   [Accurate melee collision detection.],
-  [[SCAR - Skyrim Combos AI Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/72014)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/72014")[SCAR - Skyrim Combos AI Revolution]],
   [Baseline],
-  [Add after Precision is proven. Companion mods: [SCAR AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/77285) + [SCAR Pandora Fix](https://www.nexusmods.com/skyrimspecialedition/mods/164638). If using BFCO, skip default animations in SCAR AE FOMOD.],
-  [[Animated Armoury - OAR](https://www.nexusmods.com/skyrimspecialedition/mods/103577)],
+  [Add after Precision is proven. Companion mods: #link("https://www.nexusmods.com/skyrimspecialedition/mods/77285")[SCAR AE Support] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/164638")[SCAR Pandora Fix]. If using BFCO, skip default animations in SCAR AE FOMOD.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/103577")[Animated Armoury - OAR]],
   [Baseline],
-  [12 new weapon types. Requires [DAR Version](https://www.nexusmods.com/skyrimspecialedition/mods/35978) for meshes/collision/leveled lists. Tick in Pandora for new weapon behaviors.],
-  [[No Spinning Death Animation LITE](https://www.nexusmods.com/skyrimspecialedition/mods/33597)],
+  [12 new weapon types. Requires #link("https://www.nexusmods.com/skyrimspecialedition/mods/35978")[DAR Version] for meshes/collision/leveled lists. Tick in Pandora for new weapon behaviors.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33597")[No Spinning Death Animation LITE]],
   [Baseline],
   [Prevents spinning death animations.],
-  [[MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117115")[MCO ADXP - Modern Movement Combat Overhaul]],
   [High-Commitment],
   [System-level decision. Evaluate later.],
-  [[Animation Motion Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/50258) + [Payload Interpreter](https://www.nexusmods.com/skyrimspecialedition/mods/65089)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50258")[Animation Motion Revolution] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/65089")[Payload Interpreter]],
   [High-Commitment],
   [Required MCO support.],
-  [[IFrame Generator RE AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/82737)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82737")[IFrame Generator RE AE Support]],
   [Support],
   [Install only when a pack explicitly lists it.],
-  [[BFCO - Attack Behavior Framework](https://www.nexusmods.com/skyrimspecialedition/mods/117052)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117052")[BFCO - Attack Behavior Framework]],
   [High-Commitment],
-  [System-level framework competing with MCO/ADXP. Mutually exclusive. Requires [DMK](https://www.nexusmods.com/skyrimspecialedition/mods/174499) for directional power attacks. Confirmed working with Pandora v4.3.1. Companion: [BFCO NG](https://www.nexusmods.com/skyrimspecialedition/mods/160505) for flexible hotkeys.],
-  [[Elden Ring DLC Light Greatsword Moveset](https://www.nexusmods.com/skyrimspecialedition/mods/122800)],
+  [System-level framework competing with MCO/ADXP. Mutually exclusive. Requires #link("https://www.nexusmods.com/skyrimspecialedition/mods/174499")[DMK] for directional power attacks. Confirmed working with Pandora v4.3.1. Companion: #link("https://www.nexusmods.com/skyrimspecialedition/mods/160505")[BFCO NG] for flexible hotkeys.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122800")[Elden Ring DLC Light Greatsword Moveset]],
   [Alternative],
   [Requires MCO or BFCO framework. 1H and 2H moveset.],
-  [[Vindictus Fiona Moveset BFCO](https://www.nexusmods.com/skyrimspecialedition/mods/183971)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/183971")[Vindictus Fiona Moveset BFCO]],
   [Alternative],
   [BFCO-specific moveset. Requires BFCO framework.],
-  [[Vindictus Delia Animation Remake](https://www.nexusmods.com/skyrimspecialedition/mods/104717)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/104717")[Vindictus Delia Animation Remake]],
   [Alternative],
   [Combat animation pack.],
-  [[MCO / BFCO / SCAR WoLong QuarterStaffs](https://www.nexusmods.com/skyrimspecialedition/mods/128749)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128749")[MCO / BFCO / SCAR WoLong QuarterStaffs]],
   [Alternative],
   [Works with MCO, BFCO, or SCAR. Quarterstaff moveset.],
-  [[Dynamic Killmove - Pike](https://www.nexusmods.com/skyrimspecialedition/mods/103707)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/103707")[Dynamic Killmove - Pike]],
   [Alternative],
   [Killmove animation for pike/spear weapons.],
-  [[KG Animations - One-handers and Dual Wield](https://www.nexusmods.com/skyrimspecialedition/mods/129519)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129519")[KG Animations - One-handers and Dual Wield]],
   [Alternative],
   [One-handed and dual-wield combat animation pack.],
-  [[KG Animations - Two-handers](https://www.nexusmods.com/skyrimspecialedition/mods/101541)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/101541")[KG Animations - Two-handers]],
   [Alternative],
   [Two-handed combat animation pack.],
-  [[Smooth Random Blocking Animation 3.0](https://www.nexusmods.com/skyrimspecialedition/mods/59239)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/59239")[Smooth Random Blocking Animation 3.0]],
   [Alternative],
   [Randomized blocking animation replacer.],
-  [[Precision - Enchanted Weapon Trails](https://www.nexusmods.com/skyrimspecialedition/mods/106358)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106358")[Precision - Enchanted Weapon Trails]],
   [Alternative],
   [Weapon trail VFX requiring Precision.],
-  [[Killmove Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/140398)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140398")[Killmove Fixes]],
   [Alternative],
   [Killmove trigger and camera fixes.],
-  [[Goetia Animations - Magic Spell Casting](https://www.nexusmods.com/skyrimspecialedition/mods/70204)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/70204")[Goetia Animations - Magic Spell Casting]],
   [Alternative],
   [Magic spell casting animation replacer.],
-  [[Diverse NPC Movesets](https://www.nexusmods.com/skyrimspecialedition/mods/141893)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141893")[Diverse NPC Movesets]],
   [Alternative],
   [Varied NPC combat stances via SCAR/OAR.],
-  [[For Honor in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/151478)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151478")[For Honor in Skyrim]],
   [High-Commitment],
   [Comprehensive combat overhaul. Competing with MCO/BFCO and Valhalla.],
-  [[Vanargand Animations - Sneak Strike Attacks](https://www.nexusmods.com/skyrimspecialedition/mods/55420)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55420")[Vanargand Animations - Sneak Strike Attacks]],
   [Alternative],
   [Sneak power-attack animation replacer.],
-  [[Vanargand Animations - Sneak Thrust Attacks](https://www.nexusmods.com/skyrimspecialedition/mods/55031)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55031")[Vanargand Animations - Sneak Thrust Attacks]],
   [Alternative],
   [Sneak thrust-attack animation replacer.],
-  [[Vanargand Animations - Archery](https://www.nexusmods.com/skyrimspecialedition/mods/60323)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60323")[Vanargand Animations - Archery]],
   [Alternative],
   [Archery draw-and-release animation replacer.],
-  [[Vanargand Animations - Sneak Archery](https://www.nexusmods.com/skyrimspecialedition/mods/56788)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56788")[Vanargand Animations - Sneak Archery]],
   [Alternative],
   [Sneak archery stance and release animation replacer.],
-  [[Vanargand Animations - Dual Wield Sneak Strikes](https://www.nexusmods.com/skyrimspecialedition/mods/64216)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64216")[Vanargand Animations - Dual Wield Sneak Strikes]],
   [Alternative],
   [Dual-wield sneak attack animation replacer.],
-  [[Vanargand Animations - Crossbows](https://www.nexusmods.com/skyrimspecialedition/mods/66286)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/66286")[Vanargand Animations - Crossbows]],
   [Alternative],
   [Crossbow draw-and-fire animation replacer.],
-  [[Vanargand Animations - Sneak Crossbows](https://www.nexusmods.com/skyrimspecialedition/mods/67282)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/67282")[Vanargand Animations - Sneak Crossbows]],
   [Alternative],
   [Sneak crossbow stance and fire animation replacer.],
-  [[Goetia Animations - Sneak Magic](https://www.nexusmods.com/skyrimspecialedition/mods/75482)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/75482")[Goetia Animations - Sneak Magic]],
   [Alternative],
   [Sneak magic-casting animation replacer.],
-  [[Goetia Animations - Conditional Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/76388)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76388")[Goetia Animations - Conditional Shouts]],
   [Alternative],
   [Conditional shout animation replacer.],
-  [[Dynamic Dodge Animation](https://www.nexusmods.com/skyrimspecialedition/mods/79598)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/79598")[Dynamic Dodge Animation]],
   [Alternative],
   [SKSE-based dodge animation with i-frames. DMCO-compatible.],
 )
@@ -4187,14 +4189,14 @@ All three are OAR-based and work under Pandora. Do not install together without 
 == ADXP/MCO Install Workflow Reference → separator: Animations - Combat
 <animations-and-movement-adxpmco-install-workflow-reference-separator-animations-combat>
 
-External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Install ADXP MCO for Skyrim SE and AE (MO2)](https://www.youtube.com/watch?v=YeS6Pwnv3b8). Captures the canonical ADXP/MCO install flow; references below use the Elder Wilds stack (Pandora for behaviour generation, OAR for conditional selection).
+External tutorial baseline: #link("https://www.youtube.com/watch?v=YeS6Pwnv3b8")[Capt. Panda — STEP BY STEP GUIDE on How to Install ADXP MCO for Skyrim SE and AE (MO2)]. Captures the canonical ADXP/MCO install flow; references below use the Elder Wilds stack (Pandora for behaviour generation, OAR for conditional selection).
 
 === Tutorial Mod List — Elder Wilds Status
 <animations-and-movement-tutorial-mod-list-elder-wilds-status>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Tutorial role*],
   [*Elder Wilds status*],
@@ -4261,86 +4263,86 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Immersive Interactions - Animated Actions](https://www.nexusmods.com/skyrimspecialedition/mods/47670)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47670")[Immersive Interactions - Animated Actions]],
   [Baseline],
   [Core interaction animation framework.],
-  [[Go to bed](https://www.nexusmods.com/skyrimspecialedition/mods/4224)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4224")[Go to bed]],
   [Baseline],
   [Bed interaction animations.],
-  [[Animated Interactions SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/143798)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143798")[Animated Interactions SKSE]],
   [Alternative],
   [Can coexist only if overlapping actions are deliberately disabled.],
-  [[Take a Seat](https://www.nexusmods.com/skyrimspecialedition/mods/54193)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54193")[Take a Seat]],
   [Alternative],
   [Sitting interaction animations.],
-  [[Immersive Hunting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/96961)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/96961")[Immersive Hunting Animations]],
   [Alternative],
   [Hunting-related animations.],
-  [[Immersive Carcass Carrying](https://www.nexusmods.com/skyrimspecialedition/mods/99867)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99867")[Immersive Carcass Carrying]],
   [Alternative],
   [Carcass carrying animations.],
-  [[Flute Animation Fix](https://www.nexusmods.com/skyrimspecialedition/mods/69609)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69609")[Flute Animation Fix]],
   [Alternative],
   [Flute playing animation fix.],
-  [[Witcher Flute](https://www.nexusmods.com/skyrimspecialedition/mods/144660)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/144660")[Witcher Flute]],
   [Alternative],
   [Witcher-style flute animation.],
-  [[EVG Animated Traversal](https://www.nexusmods.com/skyrimspecialedition/mods/63232)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63232")[EVG Animated Traversal]],
   [Alternative],
   [Environment traversal animations.],
-  [[Beginner Bard Animations](https://www.nexusmods.com/skyrimspecialedition/mods/130776)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/130776")[Beginner Bard Animations]],
   [Alternative],
   [For Skyrim's Got Talent.],
-  [[Immersive Interactions - Eating ingredients and apply poison animations](https://www.nexusmods.com/skyrimspecialedition/mods/117983)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117983")[Immersive Interactions - Eating ingredients and apply poison animations]],
   [Add-on],
   [Eating and poison-apply animations for II.],
-  [[Dynamic Crafting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/116422)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116422")[Dynamic Crafting Animations]],
   [Add-on],
   [Crafting-station interaction animations.],
-  [[Dynamic Looting and Harvesting Animations](https://www.nexusmods.com/skyrimspecialedition/mods/114547)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114547")[Dynamic Looting and Harvesting Animations]],
   [Add-on],
   [Looting and harvesting interaction animations.],
-  [[Dynamic Horse Petting Animations for Immersive Interactions](https://www.nexusmods.com/skyrimspecialedition/mods/111767)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111767")[Dynamic Horse Petting Animations for Immersive Interactions]],
   [Add-on],
   [Horse interaction animations for II.],
-  [[Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations](https://www.nexusmods.com/skyrimspecialedition/mods/70117)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/70117")[Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations]],
   [Prerequisite],
   [DAR/OAR animations for mining/chopping tools. Prerequisite for Chop Chop and related woodcutting mods.],
-  [[HSF Male Furniture Idles](https://www.nexusmods.com/skyrimspecialedition/mods/155228)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155228")[HSF Male Furniture Idles]],
   [Alternative],
   [Male idle animations for furniture interactions.],
-  [[Modern Female Sitting Animations Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/85599)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85599")[Modern Female Sitting Animations Overhaul]],
   [Alternative],
   [Female sitting animation replacements.],
-  [[Paired Animation Improvements](https://www.nexusmods.com/skyrimspecialedition/mods/99621)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99621")[Paired Animation Improvements]],
   [Alternative],
   [Improved paired NPC interaction animations.],
-  [[Ultimate Animated Potions NG](https://www.nexusmods.com/skyrimspecialedition/mods/97674)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97674")[Ultimate Animated Potions NG]],
   [Alternative],
   [Potion-use animation replacer.],
-  [[JellyFish Ultimate Animated Potions NG](https://www.nexusmods.com/skyrimspecialedition/mods/168108)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168108")[JellyFish Ultimate Animated Potions NG]],
   [Alternative],
   [Expanded potion animation pack for Ultimate Animated Potions NG.],
-  [[Simple Wall Lean (RaySense)](https://www.nexusmods.com/skyrimspecialedition/mods/176847)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/176847")[Simple Wall Lean (RaySense)]],
   [Alternative],
   [Contextual wall-leaning idle animation.],
-  [[Simple Wall Lean - More feminine Female animations](https://www.nexusmods.com/skyrimspecialedition/mods/182365)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/182365")[Simple Wall Lean - More feminine Female animations]],
   [Add-on],
   [Female-specific variant for Simple Wall Lean.],
-  [[Divines Prayer Animations](https://www.nexusmods.com/skyrimspecialedition/mods/109175)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/109175")[Divines Prayer Animations]],
   [Alternative],
   [Conditional prayer-idle animation at shrine activations.],
-  [[Gesture Animation Remix (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/64420)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64420")[Gesture Animation Remix (OAR)]],
   [Alternative],
   [Expanded gesture/idle animation variety via OAR.],
-  [[Lively Children Animations (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/67557)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/67557")[Lively Children Animations (OAR)]],
   [Alternative],
   [Child NPC animation variety for play/idle/run.],
-  [[Lively cart driver animation replacer or OAR](https://www.nexusmods.com/skyrimspecialedition/mods/70595)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/70595")[Lively cart driver animation replacer or OAR]],
   [Alternative],
   [Cart driver animation replacer for carriage rides.],
 )
@@ -4352,23 +4354,23 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Open Animation Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/92109)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92109")[Open Animation Replacer]],
   [Baseline],
   [Single condition framework owner.],
-  [[EVG Conditional Idles](https://www.nexusmods.com/skyrimspecialedition/mods/34006)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34006")[EVG Conditional Idles]],
   [Alternative],
   [Idle animation conditional framework.],
-  [[Conditional Armor Type Animations](https://www.nexusmods.com/skyrimspecialedition/mods/51507)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51507")[Conditional Armor Type Animations]],
   [Alternative],
   [Armor-type-based animation switching.],
-  [[Unique Jarl Throne Sitting Animation (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/174752)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174752")[Unique Jarl Throne Sitting Animation (OAR)]],
   [Alternative],
   [Throne sitting animation for Jarls.],
-  [[Malignis Animations - Conditions](https://www.nexusmods.com/skyrimspecialedition/mods/132028)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132028")[Malignis Animations - Conditions]],
   [Alternative],
   [OAR condition pack for animation variety. Personal favourite.],
 )
@@ -4380,12 +4382,12 @@ External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Instal
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Improved Camera SE](https://www.nexusmods.com/skyrimspecialedition/mods/93962)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/93962")[Improved Camera SE]],
   [Only if hybrid perspective is a real playstyle.],
-  [[Comprehensive First Person Animation Overhaul - CFPAO](https://www.nexusmods.com/skyrimspecialedition/mods/87169)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/87169")[Comprehensive First Person Animation Overhaul - CFPAO]],
   [Optional first-person polish.],
 )
 
@@ -4398,26 +4400,26 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Immersive Equipment Displays (IED)](https://www.nexusmods.com/skyrimspecialedition/mods/62001)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62001")[Immersive Equipment Displays (IED)]],
   [Baseline],
   [Equipment visibility and positioning framework.],
-  [[Simple Dual Sheath](https://www.nexusmods.com/skyrimspecialedition/mods/50049)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50049")[Simple Dual Sheath]],
   [Baseline],
   [Dual-sheathed weapon support. Requires IED.],
-  [[Weapon Styles - Draw-Sheathe animations for IED](https://www.nexusmods.com/skyrimspecialedition/mods/85085)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85085")[Weapon Styles - Draw-Sheathe animations for IED]],
   [Addon],
   [Conditional draw/sheathe animations per weapon type. Requires IED.],
-  [[Walking Stick - Walk with staves or polearms - IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/120966)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120966")[Walking Stick - Walk with staves or polearms - IED-OAR]],
   [Addon],
   [Staff/polearm walking animation support. Requires IED.],
-  [[Ready to Play IED](https://www.nexusmods.com/skyrimspecialedition/mods/158531)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/158531")[Ready to Play IED]],
   [Alternative],
   [Pre-configured IED preset. Evaluate only if manual IED configuration proves too time-consuming.],
-  [[Weapons On Back](https://www.nexusmods.com/skyrimspecialedition/mods/14997)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14997")[Weapons On Back]],
   [Alternative],
   [Weapon positioning on back rather than hip. Complements IED/SDS.],
 )
@@ -4429,20 +4431,20 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[New Creature Animation - Giant](https://www.nexusmods.com/skyrimspecialedition/mods/83317)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/83317")[New Creature Animation - Giant]],
   [Giant animation replacer.],
-  [[New Creature Animation - Werewolf](https://www.nexusmods.com/skyrimspecialedition/mods/83806)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/83806")[New Creature Animation - Werewolf]],
   [Werewolf animation replacer.],
-  [[New Creature Animation - Falmer](https://www.nexusmods.com/skyrimspecialedition/mods/83572)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/83572")[New Creature Animation - Falmer]],
   [Falmer animation replacer.],
-  [[DCA - Dragon Combat Animations](https://www.nexusmods.com/skyrimspecialedition/mods/123113)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123113")[DCA - Dragon Combat Animations]],
   [Dragon combat animation replacer.],
-  [[Draugr Greatsword Animation](https://www.nexusmods.com/skyrimspecialedition/mods/114721)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114721")[Draugr Greatsword Animation]],
   [Greatsword-wielding draugr animation replacer.],
-  [[Troll - MCO](https://www.nexusmods.com/skyrimspecialedition/mods/175250)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175250")[Troll - MCO]],
   [Troll combat animation replacer (requires MCO).],
 )
 
@@ -4461,9 +4463,9 @@ Strict ownership: one clear owner per layer.
 === Owners
 <animations-and-movement-owners>
 
-- **Behavior generation:** Pandora only
-- **Skeleton:** XPMSSE only
-- **Conditional selection:** Open Animation Replacer only
+- *Behavior generation:* Pandora only
+- *Skeleton:* XPMSSE only
+- *Conditional selection:* Open Animation Replacer only
 
 === Workflow
 <animations-and-movement-workflow>
@@ -4490,9 +4492,9 @@ Open research for the animations stack is tracked in `TODO.md`.
 
 // -- guide/modlist-third-person.md --
 = Third-Person Gameplay
-<third-person-gameplay>
+<third-person-third-person-gameplay>
 
-**MO2 Separators:** `Third-Person - Camera & Movement`, `Third-Person - Combat & Targeting`, `Third-Person - Mounted`
+*MO2 Separators:* `Third-Person - Camera & Movement`, `Third-Person - Combat & Targeting`, `Third-Person - Mounted`
 
 All mods in this section belong to one of the three third-person separators as noted per subsection.
 
@@ -4503,14 +4505,14 @@ All mods in this section belong to one of the three third-person separators as n
 
 === Baseline
 <third-person-gameplay-baseline>
-- **SmoothCam** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41252)) — Main third-person camera framework.
+- *SmoothCam* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/41252")[Nexus]) — Main third-person camera framework.
 
 === Alternatives
 <third-person-gameplay-alternatives>
-- **Customizable Camera** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12201)) — Leaner fallback.
-- **True Directional Movement** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51614)) — Governs movement/targeting, not the camera framework itself.
-- **Improved Camera SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93962)) — Perspective support, not main third-person framework.
-- **Modern Combat Gamepad Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123409)) — Gamepad-centric combat controls integration. Research before adding — evaluate overlap with TDM and the combat stack.
+- *Customizable Camera* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/12201")[Nexus]) — Leaner fallback.
+- *True Directional Movement* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/51614")[Nexus]) — Governs movement/targeting, not the camera framework itself.
+- *Improved Camera SE* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/93962")[Nexus]) — Perspective support, not main third-person framework.
+- *Modern Combat Gamepad Overhaul* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/123409")[Nexus]) — Gamepad-centric combat controls integration. Research before adding — evaluate overlap with TDM and the combat stack.
 
 === Risks & Compatibility
 <third-person-gameplay-risks--compatibility>
@@ -4534,7 +4536,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 == True Directional Movement → separator: Third-Person - Camera & Movement
 <third-person-gameplay-true-directional-movement-separator-third-person-camera--movement>
 
-- **True Directional Movement - Modernized Third Person Gameplay** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51614)) — Modern 360-degree character-relative movement.
+- *True Directional Movement - Modernized Third Person Gameplay* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/51614")[Nexus]) — Modern 360-degree character-relative movement.
 - Core value: freer facing, cleaner traversal, better animation-stack alignment.
 - May feel awkward in tight interiors, stairs, or precision positioning.
 
@@ -4543,8 +4545,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 == Target Lock And Targeting Behavior → separator: Third-Person - Combat & Targeting
 <third-person-gameplay-target-lock-and-targeting-behavior-separator-third-person-combat--targeting>
 
-- **TDM** as the targeting-behavior owner. Keep lock-on restrained — optional combat-readability tool, not permanent default.
-- **TrueHUD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62775)) — Optional feedback companion. Add only if testing shows material improvement.
+- *TDM* as the targeting-behavior owner. Keep lock-on restrained — optional combat-readability tool, not permanent default.
+- *TrueHUD* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/62775")[Nexus]) — Optional feedback companion. Add only if testing shows material improvement.
 
 === Risks & Compatibility
 <third-person-gameplay-risks--compatibility-3>
@@ -4558,12 +4560,12 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 === Baseline
 <third-person-gameplay-baseline-2>
-- **TK Dodge RE - Script Free** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56956)) — First dodge candidate. Tactical repositioning, not combat pacing center.
+- *TK Dodge RE - Script Free* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/56956")[Nexus]) — First dodge candidate. Tactical repositioning, not combat pacing center.
 
 === Alternatives
 <third-person-gameplay-alternatives-2>
-- **TK Dodge SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15309)) — Legacy fallback reference.
-- **Dodge for all** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174544)) — Newer (May 2026). Too early for baseline — low community signal.
+- *TK Dodge SE* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/15309")[Nexus]) — Legacy fallback reference.
+- *Dodge for all* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/174544")[Nexus]) — Newer (May 2026). Too early for baseline — low community signal.
 
 ---
 
@@ -4572,10 +4574,10 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64741")[Valhalla Combat]],
   [Main gameplay-side comparison for hit feedback and stagger.],
   [Precision (from → `Animations`)],
   [Adjacent support for contact feel.],
@@ -4593,62 +4595,62 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64741")[Valhalla Combat]],
   [Baseline],
   [Gameplay-rule framework.],
-  [[MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117115")[MCO ADXP - Modern Movement Combat Overhaul]],
   [Alternative],
   [Ambitious alternative. Re-evaluate deliberately.],
   [SCAR (from → `Animations`)],
   [Baseline],
   [NPC-side attack variety.],
-  [[Knockback SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/171277)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171277")[Knockback SKSE]],
   [Support],
   [Required only if MCO is chosen.],
-  [[RaySense - Cover Animation](https://www.nexusmods.com/skyrimspecialedition/mods/175504)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175504")[RaySense - Cover Animation]],
   [Optional],
   [Cover animation system.],
-  [[Fire Ignites Arrows](https://www.nexusmods.com/skyrimspecialedition/mods/118544)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118544")[Fire Ignites Arrows]],
   [Optional],
   [Arrow ignition from fire sources.],
-  [[Poisoned Arrows and Bolts](https://www.nexusmods.com/skyrimspecialedition/mods/123585)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123585")[Poisoned Arrows and Bolts]],
   [Optional],
   [Poison crafting for ranged ammo.],
-  [[Variadic Collision Dynamics](https://www.nexusmods.com/skyrimspecialedition/mods/183892)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/183892")[Variadic Collision Dynamics]],
   [Optional],
   [Runtime collision-capsule adjustments.],
-  [[Variadic Collision Dynamics - Resources](https://www.nexusmods.com/skyrimspecialedition/mods/184110)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/184110")[Variadic Collision Dynamics - Resources]],
   [Optional],
   [Ready-to-use JSON presets for VCD.],
-  [[Next-Gen Decapitations](https://www.nexusmods.com/skyrimspecialedition/mods/135254)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135254")[Next-Gen Decapitations]],
   [Optional],
   [Decapitation system replacement with improved gore visuals.],
-  [[Death Drop Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/151590)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151590")[Death Drop Overhaul]],
   [Optional],
   [Changes how NPC bodies ragdoll and drop on death.],
-  [[Dismembering Framework](https://www.nexusmods.com/skyrimspecialedition/mods/126203)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126203")[Dismembering Framework]],
   [Optional],
   [Dismemberment system framework.],
-  [[DF - Official Humanoid Asset Pack](https://www.nexusmods.com/skyrimspecialedition/mods/126327)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126327")[DF - Official Humanoid Asset Pack]],
   [Add-on],
   [Required asset pack for Dismembering Framework (humanoid).],
-  [[DF - Official Creature Asset Pack](https://www.nexusmods.com/skyrimspecialedition/mods/126328)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126328")[DF - Official Creature Asset Pack]],
   [Add-on],
   [Creature asset pack for Dismembering Framework (optional).],
-  [[Eviscerate](https://www.nexusmods.com/skyrimspecialedition/mods/68884)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68884")[Eviscerate]],
   [Optional],
   [Combat gore / dismemberment alternative.],
-  [[Cinema - Dynamic Combat Letterbox](https://www.nexusmods.com/skyrimspecialedition/mods/171912)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171912")[Cinema - Dynamic Combat Letterbox]],
   [Optional],
   [Letterbox overlay during combat.],
-  [[Parry for All](https://www.nexusmods.com/skyrimspecialedition/mods/167873)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167873")[Parry for All]],
   [Optional],
   [Parrying support for non-equipped actors.],
-  [[Deadly spell impact](https://www.nexusmods.com/skyrimspecialedition/mods/146299)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146299")[Deadly spell impact]],
   [Optional],
   [Spell impact visual + audio upgrade.],
 )
@@ -4660,14 +4662,14 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Better Third Person Selection - BTPS](https://www.nexusmods.com/skyrimspecialedition/mods/64339)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64339")[Better Third Person Selection - BTPS]],
   [Object-selection reliability.],
   [TrueHUD],
   [Optional aiming readability aid.],
-  [[Ricochet - Arrow Physics Framework](https://www.nexusmods.com/skyrimspecialedition/mods/160603)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160603")[Ricochet - Arrow Physics Framework]],
   [Lock only if archery is a meaningful combat style.],
 )
 
@@ -4678,23 +4680,23 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Press H to Horse](https://www.nexusmods.com/skyrimspecialedition/mods/81195)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81195")[Press H to Horse]],
   [Baseline],
   [Actively maintained (May 2026). Few vanilla record edits.],
-  [[Horses Simply Turn Better](https://www.nexusmods.com/skyrimspecialedition/mods/57790)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57790")[Horses Simply Turn Better]],
   [Baseline],
   [Free add-on. Sharpens turning radius for TDM.],
-  [[Convenient Horses](https://www.nexusmods.com/skyrimspecialedition/mods/9519)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/9519")[Convenient Horses]],
   [Alternative],
   [Last updated Jan 2022 (stale).],
-  [[Simplest Horses](https://www.nexusmods.com/skyrimspecialedition/mods/54225)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54225")[Simplest Horses]],
   [Alternative],
   [Lightweight SPID+MCM drop-in.],
-  [[HorsePower - Modernized horse riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169335")[HorsePower - Modernized horse riding]],
   [Alternative],
   [Modernized horse riding overhaul.],
 )
@@ -4708,10 +4710,10 @@ Gamepad-accessible lockpicking that works entirely in third-person without mouse
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Break The Lock - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/154901)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154901")[Break The Lock - OIF]],
   [Physics-based lockpicking with breakable locks via OIF. Gamepad-compatible, third-person usable. Requires OIF framework.],
 )
 
@@ -4725,9 +4727,9 @@ Open research for the third-person stack is tracked in `TODO.md`.
 
 // -- guide/modlist-expanded-systems.md --
 = Expanded Systems
-<expanded-systems>
+<expanded-systems-expanded-systems>
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`
+*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`
 
 == Overview
 <expanded-systems-overview>
@@ -4741,29 +4743,29 @@ The system is designed to be evaluated in order — progression choices (races, 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Area*],
   [*File*],
   [*Separator*],
   [*Topics*],
   [Character & Progression],
-  [[`Character & Progression`](modlist-expanded-character.md)],
+  [@expanded-character-character--progression],
   [`Expanded Systems - Character & Progression`],
   [Alternate starts, races, standing stones, traits, religion, vampire/werewolf/shouts],
   [Magic & Perks],
-  [[`Magic & Perks`](modlist-expanded-magic.md)],
+  [@expanded-magic-magic--perks],
   [`Expanded Systems - Magic & Perks`],
   [Perk overhauls, magic expansion, stealth/detection],
   [Survival & Needs],
-  [[`Survival & Needs`](modlist-expanded-survival.md)],
+  [@expanded-survival-survival--needs],
   [`Expanded Systems - Survival & Needs`],
   [Survival frameworks, hygiene, death alternative],
   [Crafting & Economy],
-  [[`Crafting & Economy`](modlist-expanded-crafting.md)],
+  [@expanded-crafting-crafting--economy],
   [`Expanded Systems - Crafting & Economy`],
   [Alchemy, cooking, smithing, enchanting, economy],
   [Followers & Reputation],
-  [[`Followers & Reputation`](modlist-expanded-followers.md)],
+  [@expanded-followers-followers--reputation],
   [`Expanded Systems - Followers & Reputation`],
   [Crime/reputation, follower frameworks, romance/marriage],
 )
@@ -4780,13 +4782,13 @@ The system is designed to be evaluated in order — progression choices (races, 
 
 // -- guide/modlist-expanded-character.md --
 = Character & Progression
-<character--progression>
+<expanded-character-character--progression>
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Character & Progression`
+*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Character & Progression`
 
 All mods in this section belong to the `Expanded Systems - Character & Progression` MO2 separator unless noted.
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
+Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -4797,60 +4799,60 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Alternate Perspective — Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/50326)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50326")[Alternate Perspective — Alternate Start]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Main baseline candidate.],
-  [[Dealing with Backstories](https://www.nexusmods.com/skyrimspecialedition/mods/61106)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/61106")[Dealing with Backstories]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Origins companion — background-driven starting skills, bonuses, drawbacks, gear.],
-  [[Take Notes — Journal of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/13570)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/13570")[Take Notes — Journal of the Dragonborn SSE]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Persistent in-game journal. Low-risk roleplay companion.],
-  [[Roleplaying In Skyrim — Origins](https://www.nexusmods.com/skyrimspecialedition/mods/150186)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/150186")[Roleplaying In Skyrim — Origins]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Origin-driven flavor and bonuses. Requires SKSE + Papyrus Ini Manipulator; soft-requires Actor Value Generator + SkyUI.],
-  [[Alternate Start — Live Another Life](https://www.nexusmods.com/skyrimspecialedition/mods/272)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/272")[Alternate Start — Live Another Life]],
   [Alternative],
   [all],
   [Conservative fallback.],
-  [[Skyrim Unbound Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/27962)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27962")[Skyrim Unbound Reborn]],
   [Alternative],
   [all],
   [Configurable middle ground with more setup freedom.],
-  [[Realm of Lorkhan — Freeform Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/18223)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18223")[Realm of Lorkhan — Freeform Alternate Start]],
   [Alternative],
-  [\\#3],
+  [#3],
   [Freeform branch. Not the default baseline.],
-  [[Why I Came to Skyrim - Origin Stories](https://www.nexusmods.com/skyrimspecialedition/mods/167166)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167166")[Why I Came to Skyrim - Origin Stories]],
   [Alternative],
   [all],
   [Background-driven starting scenario with narrative hook.],
-  [[Why I Came to Skyrim - Skyrim Unbound Reborn patch](https://www.nexusmods.com/skyrimspecialedition/mods/167577)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167577")[Why I Came to Skyrim - Skyrim Unbound Reborn patch]],
   [Alternative],
   [all],
   [Patch for Origin Stories + Skyrim Unbound Reborn.],
-  [[Skyrim Unbound Reborn - New started room](https://www.nexusmods.com/skyrimspecialedition/mods/118648)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118648")[Skyrim Unbound Reborn - New started room]],
   [Alternative],
   [all],
   [Improvement to Unborn start room],
-  [[Racemenu Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/182536)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/182536")[Racemenu Enhancer]],
   [Alternative],
   [all],
   [RaceMenu character creation enhancement.],
-  [[Adventurer's Start - An Alternate Perspective Addon](https://www.nexusmods.com/skyrimspecialedition/mods/145599)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145599")[Adventurer's Start - An Alternate Perspective Addon]],
   [Add-on],
   [all],
   [Additional starting scenarios for Alternate Perspective. Install after AP base.],
-  [[Alternate Perspective - Hole in the Wall Fix](https://www.nexusmods.com/skyrimspecialedition/mods/174222)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174222")[Alternate Perspective - Hole in the Wall Fix]],
   [Add-on],
   [all],
   [Fix for AP's starting cell geometry. Install after AP base.],
@@ -4874,22 +4876,22 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Aetherius — Race Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26686)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26686")[Aetherius — Race Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Balanced modern route; pairs with Evenstar.],
-  [[Morningstar — Minimalistic Races](https://www.nexusmods.com/skyrimspecialedition/mods/22298)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22298")[Morningstar — Minimalistic Races]],
   [Alternative],
-  [\\#3],
+  [#3],
   [Restrained fallback.],
-  [[Imperious — Races of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1315)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1315")[Imperious — Races of Skyrim]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [High-expression comparison; pairs with Andromeda.],
 )
 
@@ -4900,16 +4902,16 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Purpose*],
   [*Dial*],
   [*Requirements*],
-  [[RiS — Races](https://www.nexusmods.com/skyrimspecialedition/mods/149544)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149544")[RiS — Races]],
   [Biological race overhaul],
   [all],
   [KID, SPID],
-  [[RiS — Lineages](https://www.nexusmods.com/skyrimspecialedition/mods/174443)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174443")[RiS — Lineages]],
   [4 subraces per vanilla race],
   [all],
   [KID, SPID, Papyrus Ini Manipulator],
@@ -4931,22 +4933,22 @@ How standing stones and birthsigns provide ongoing passive identity. Judge toget
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Evenstar — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/41256)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/41256")[Evenstar — Standing Stones]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Balanced modern route; pairs with Aetherius.],
-  [[Mundus — A Standing Stone Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/33411)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33411")[Mundus — A Standing Stone Overhaul]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Simonrim route; pairs with Aetherius.],
-  [[Andromeda — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/14910)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14910")[Andromeda — Standing Stones]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [High-expression comparison; pairs with Imperious.],
 )
 
@@ -4957,16 +4959,16 @@ How standing stones and birthsigns provide ongoing passive identity. Judge toget
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Purpose*],
   [*Dial*],
   [*Requirements*],
-  [[RiS — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/157053)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157053")[RiS — Standing Stones]],
   [13 stones overhaul],
   [all],
   [aTweaks and Utilities, KID, Perk Entry Point Extender, SkyUI],
-  [[RiS — Birthsigns](https://www.nexusmods.com/skyrimspecialedition/mods/154610)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154610")[RiS — Birthsigns]],
   [Monthly waxing/waning birthsign effects],
   [all],
   [KID, Papyrus Ini Manipulator],
@@ -4989,22 +4991,22 @@ Supporting progression layers that govern how stats and skills grow over time.
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Purpose*],
   [*Dial*],
   [*Requirements*],
-  [[RiS — Classic Attributes](https://www.nexusmods.com/skyrimspecialedition/mods/151476)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151476")[RiS — Classic Attributes]],
   [10 classic RPG attributes],
-  [\\#1, \\#4],
+  [#1, #4],
   [Actor Value Generator],
-  [[RiS — Useful MiscStats](https://www.nexusmods.com/skyrimspecialedition/mods/149142)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149142")[RiS — Useful MiscStats]],
   [Misc stat progression layer],
   [all],
   [Actor Value Generator],
-  [[RiS — Skill Based Stat Growth](https://www.nexusmods.com/skyrimspecialedition/mods/147455)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147455")[RiS — Skill Based Stat Growth]],
   [Health/Magicka/Stamina grow with skills],
-  [\\#1, \\#4],
+  [#1, #4],
   [Papyrus Ini Manipulator],
 )
 
@@ -5017,22 +5019,22 @@ Opt-in character-defining quirks shaping a run from the start without replacing 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Biggie Traits](https://www.nexusmods.com/skyrimspecialedition/mods/136384)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/136384")[Biggie Traits]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Run-defining tradeoffs. Fallout-style traits. No hard dependencies.],
-  [[Pumping Iron — Dynamic Muscle Growth](https://www.nexusmods.com/skyrimspecialedition/mods/13434)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/13434")[Pumping Iron — Dynamic Muscle Growth]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Cosmetic muscle growth from combat + sleep. No gameplay impact.],
   [Minimalist route],
   [Alternative],
-  [\\#2, \\#3],
+  [#2, #3],
   [Leave identity to race, standing stones, perks, and self-imposed roleplay.],
 )
 
@@ -5052,26 +5054,26 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Pilgrim — A Religion Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/54099)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54099")[Pilgrim — A Religion Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Fits Simonrim-leaning progression family.],
-  [[Trua — Minimalistic Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/32549)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32549")[Trua — Minimalistic Faiths of Skyrim]],
   [Alternative],
-  [\\#3],
+  [#3],
   [Restrained fallback.],
-  [[Wintersun — Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/22506)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22506")[Wintersun — Faiths of Skyrim]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [High-expression route for stronger roleplay pillar.],
-  [[Gods And Worship](https://www.nexusmods.com/skyrimspecialedition/mods/45011)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/45011")[Gods And Worship]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Full deity worship system with shrines, blessings, and penalties.],
 )
 
@@ -5092,66 +5094,66 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Sacrosanct — Vampires of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/3928)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3928")[Sacrosanct — Vampires of Skyrim]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Vampirism progression, 4 feeding tiers, blood-power by age. 133K endorsements.],
-  [[Dark Envoy — Vampire Powers](https://www.nexusmods.com/skyrimspecialedition/mods/16425)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16425")[Dark Envoy — Vampire Powers]],
   [Add-on],
-  [\\#1, \\#4],
+  [#1, #4],
   [Small questline + new VL powers (Bat Form flight, Bat Teleport, Gate of Coldharbour). 2,157 endorsements. Author-tested with Sacrosanct.],
-  [[Vampire Lord Renewed (VL Framework) ESL](https://www.nexusmods.com/skyrimspecialedition/mods/87166)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/87166")[Vampire Lord Renewed (VL Framework) ESL]],
   [Add-on],
-  [\\#1, \\#4],
+  [#1, #4],
   [Humanoid VL form, inventory/spell menu access in VL form, loot/activate enabled. Explicitly supports Sacrosanct. Fully ESL-flagged. v6.4.11 actively maintained.],
-  [[Vampire Lord Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/89538)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89538")[Vampire Lord Overhaul]],
   [Add-on],
   [all],
   [Visual-only VL replacer — 8K skin, armors, bigger wings, glowing eyes. Compatible with all gameplay overhauls.],
-  [[Just Bite — DAK Patch for Sacrosanct](https://www.nexusmods.com/skyrimspecialedition/mods/122597)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122597")[Just Bite — DAK Patch for Sacrosanct]],
   [Add-on],
-  [\\#1, \\#4],
+  [#1, #4],
   [Replaces Sacrosanct feeding pop-up menus with Dynamic Activation Key single-button feed/drain. Better gamepad/third-person UX. Requires DAK (96273).],
-  [[Vampire Feed Decals](https://www.nexusmods.com/skyrimspecialedition/mods/123546)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123546")[Vampire Feed Decals]],
   [Add-on],
-  [\\#1, \\#4],
+  [#1, #4],
   [Blood decals on body/face when feeding as a vampire. BodySlot-based (race-independent). Requires Vampire Animations (100349), Behavior Data Injector. Optional SPID for NPC decals.],
-  [[Dark Destiny — Become a Vampire Unwillingly](https://www.nexusmods.com/skyrimspecialedition/mods/84998)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84998")[Dark Destiny — Become a Vampire Unwillingly]],
   [Add-on],
   [all],
   [Short voiced quest scene where the player is captured and turned into a vampire against their will in Pinemoon Cave. AI-voiced (ElevenLabs). No hard dependencies. Compatible with any vampire overhaul.],
-  [[Seeking The Cure — A Rising At Dawn Quest Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/85923)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85923")[Seeking The Cure — A Rising At Dawn Quest Overhaul]],
   [Add-on],
   [all],
   [Makes vampirism incurable — Falion's ritual fails. Rising At Dawn becomes a non-repeatable story quest. 100+ lines AI-voiced dialogue. Pairs with Dark Destiny for a full unwilling-vampire arc.],
-  [[Ancient Mausoleum SSE](https://www.nexusmods.com/skyrimspecialedition/mods/18724)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18724")[Ancient Mausoleum SSE]],
   [Add-on],
   [all],
   [Small vampire-themed player home with custom storage and artifact displays (dragon claws, masks).],
-  [[Vampire Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/97185)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97185")[Vampire Clothing Expansion]],
   [Add-on],
   [all],
   [New vampire-themed clothing items. Author: Hornclonic.],
-  [[Growl — Werebeasts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/14645)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14645")[Growl — Werebeasts of Skyrim]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Beast-form progression, perks, 5 werebear varieties.],
-  [[Thunderchild — Epic Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/1460)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1460")[Thunderchild — Epic Shouts]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [19 new shouts (57 words), meditation mechanics, boss encounters.],
-  [[Shout Progression](https://www.nexusmods.com/skyrimspecialedition/mods/170875)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/170875")[Shout Progression]],
   [Add-on],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Perk-tree and progression for vanilla + Thunderchild shouts. XP-for-unlock loop replaces meditation. Gamepad-friendly MCM.],
   [Discipline-first route],
   [Alternative],
-  [\\#3],
+  [#3],
   [Vanilla vampire/werewolf/shout systems.],
 )
 
@@ -5181,18 +5183,18 @@ Training and study utilities for off-combat skill progression.
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Train and Study](https://www.nexusmods.com/skyrimspecialedition/mods/17578)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17578")[Train and Study]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Training overhaul: study skill books, practice at training dummies, learn from NPCs.],
-  [[Train and Study - Base Object Swapper](https://www.nexusmods.com/skyrimspecialedition/mods/42920)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42920")[Train and Study - Base Object Swapper]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [BOS addon for Train and Study — enables training dummy interaction via BOS. Install both together.],
 )
 
@@ -5205,34 +5207,34 @@ How the player gains levels and skill points. Instead of vanilla sleep-to-level,
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Experience](https://www.nexusmods.com/skyrimspecialedition/mods/17751)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17751")[Experience]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Core leveling — exploration, quests, combat, discovery. Not skill grinding.],
-  [[Experience — MCM](https://www.nexusmods.com/skyrimspecialedition/mods/65880)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65880")[Experience — MCM]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [MCM config for XP rates and per-source toggles.],
-  [[Static Skill Leveling Rewritten](https://www.nexusmods.com/skyrimspecialedition/mods/89940)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89940")[Static Skill Leveling Rewritten]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Cooldown-based skill advancement. ESL-flagged.],
-  [[No Startup Quest XP](https://www.nexusmods.com/skyrimspecialedition/mods/55682)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55682")[No Startup Quest XP]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Prevents XP from startup quests with alternate start.],
-  [[Skyshards](https://www.nexusmods.com/skyrimspecialedition/mods/60748)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60748")[Skyshards]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [60+ glowing shards granting XP on collection. ESL-flagged.],
   [Discipline-first route],
   [Alternative],
-  [\\#2, \\#3],
+  [#2, #3],
   [Vanilla sleep-to-level. Avoids patcher requirement.],
   [Static Skill Leveling — Custom Preset],
   [Alternative],
@@ -5248,14 +5250,14 @@ How the player gains levels and skill points. Instead of vanilla sleep-to-level,
 - Skyshards placement may clip with city overhauls, new-lands mods, or landscape edits.
 - All four mods are ESL-flagged or lightweight, adding minimal plugin pressure.
 
-=== Experience Configuration For \#1 (Static With Hard Threat)
+=== Experience Configuration For #1 (Static With Hard Threat)
 <character--progression-experience-configuration-for-1-static-with-hard-threat>
 
 Settings tuned for the adopted combination: power fantasy XP pace, high level cap, rewarding discovery and quest completion, no skill grinding.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Setting*],
   [*Value*],
   [*Notes*],
@@ -5305,13 +5307,13 @@ Settings tuned for the adopted combination: power fantasy XP pace, high level ca
 
 // -- guide/modlist-expanded-magic.md --
 = Magic & Perks
-<magic--perks>
+<expanded-magic-magic--perks>
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Magic & Perks`
+*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Magic & Perks`
 
 All mods in this section belong to the `Expanded Systems - Magic & Perks` MO2 separator unless noted.
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
+Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -5322,23 +5324,23 @@ How much rules density and specialization pressure the list actually wants once 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Adamant — A Perk Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/30191)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/30191")[Adamant — A Perk Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Balanced modern route.],
-  [[Vokrii — Minimalistic Perks](https://www.nexusmods.com/skyrimspecialedition/mods/26176)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26176")[Vokrii — Minimalistic Perks]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Restrained if Adamant feels too system-forward.],
-  [[Ordinator — Perks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1137)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1137")[Ordinator — Perks of Skyrim]],
   [Alternative],
-  [\\#1, \\#4],
-  [High-complexity branch. Pairs with \\#1's heavy-perks recommendation.],
+  [#1, #4],
+  [High-complexity branch. Pairs with #1's heavy-perks recommendation.],
 )
 
 === Risks & Compatibility
@@ -5357,52 +5359,52 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Mysticism — A Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/27839)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27839")[Mysticism — A Magic Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Balanced modern route.],
-  [[Triumvirate — Mage Archetypes](https://www.nexusmods.com/skyrimspecialedition/mods/39170)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/39170")[Triumvirate — Mage Archetypes]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Identity-driven archetype spells (Cleric, Druid, Shadow Mage, Shaman, Warlock).],
-  [[Strange Runes](https://www.nexusmods.com/skyrimspecialedition/mods/19438)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/19438")[Strange Runes]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Floating Nordic runes during spell charging. Visual only, no records.],
-  [[Odin — Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46000")[Odin — Skyrim Magic Overhaul]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Moderate expansion.],
-  [[Apocalypse — Magic of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1090)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1090")[Apocalypse — Magic of Skyrim]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Maximum spell variety.],
-  [[Lost Grimoire SSE](https://www.nexusmods.com/skyrimspecialedition/mods/4455)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4455")[Lost Grimoire SSE]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [115+ lore-friendly spells. Compatible with any primary overhaul.],
-  [[Elemental Mastery Magic](https://www.nexusmods.com/skyrimspecialedition/mods/139953)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139953")[Elemental Mastery Magic]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Elemental specialization and tiered mastery bonuses.],
-  [[Immersive Illusion Spells](https://www.nexusmods.com/skyrimspecialedition/mods/142357)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142357")[Immersive Illusion Spells]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [New illusion types beyond fear/calm/frenzy.],
-  [[360 Ward](https://www.nexusmods.com/skyrimspecialedition/mods/156225)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/156225")[360 Ward]],
   [Alternative],
   [all],
   [Wards block from any direction. Third-person improvement.],
-  [[Sanguine Symphony](https://www.nexusmods.com/skyrimspecialedition/mods/148388)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148388")[Sanguine Symphony]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Blood-magic spells costing Health. Compatible with all overhauls.],
-  [[Revealing Rune](https://www.nexusmods.com/skyrimspecialedition/mods/120935)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120935")[Revealing Rune]],
   [Candidate],
   [all],
   [Makes rune traps visible. Evaluate after primary overhaul locked.],
@@ -5425,18 +5427,18 @@ How Skyrim's detection system should be recalibrated for modern stealth mechanic
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Realistic AI Detection (RAID)](https://www.nexusmods.com/skyrimspecialedition/mods/2345)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2345")[Realistic AI Detection (RAID)]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Script-free detection recalibration. 23.8K endorsements.],
   [Discipline-first route],
   [Alternative],
-  [\\#2, \\#3],
+  [#2, #3],
   [Rely on perk overhaul + Foundations bugfix mods.],
   [Deferred high-commitment branch],
   [Alternative],
@@ -5457,13 +5459,13 @@ How Skyrim's detection system should be recalibrated for modern stealth mechanic
 
 // -- guide/modlist-expanded-survival.md --
 = Survival & Needs
-<survival--needs>
+<expanded-survival-survival--needs>
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Survival & Needs`
+*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Survival & Needs`
 
 All mods in this section belong to the `Expanded Systems - Survival & Needs` MO2 separator unless noted.
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
+Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -5474,30 +5476,30 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Starfrost — A Survival Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/97536)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97536")[Starfrost — A Survival Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Fits Simonrim-aligned progression family.],
-  [[SunHelm Survival](https://www.nexusmods.com/skyrimspecialedition/mods/39414)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/39414")[SunHelm Survival]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Practical if Starfrost proves too tightly tuned.],
-  [[Last Seed — Survival Needs](https://www.nexusmods.com/skyrimspecialedition/mods/56393)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56393")[Last Seed — Survival Needs]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Heavier classic route.],
-  [[Frostfall](https://www.nexusmods.com/skyrimspecialedition/mods/671) + [Campfire](https://www.nexusmods.com/skyrimspecialedition/mods/667)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/671")[Frostfall] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/667")[Campfire]],
   [Alternative],
-  [\\#1],
-  [Harsh wilderness route. Adds: [Campfire - Script Optimization](https://www.nexusmods.com/skyrimspecialedition/mods/149913), [Frostfall - Seasons](https://www.nexusmods.com/skyrimspecialedition/mods/16317), [Frostfall Spell Monitor Optimized](https://www.nexusmods.com/skyrimspecialedition/mods/65700).],
-  [[Skills of the Wild](https://www.nexusmods.com/skyrimspecialedition/mods/37693) v2.0+],
+  [#1],
+  [Harsh wilderness route. Adds: #link("https://www.nexusmods.com/skyrimspecialedition/mods/149913")[Campfire - Script Optimization], #link("https://www.nexusmods.com/skyrimspecialedition/mods/16317")[Frostfall - Seasons], #link("https://www.nexusmods.com/skyrimspecialedition/mods/65700")[Frostfall Spell Monitor Optimized].],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37693")[Skills of the Wild] v2.0+],
   [Optional],
-  [\\#1],
+  [#1],
   [4 new skill trees (Hunting, Foraging, Tracking, Camping). Requires Campfire. Full compatibility with any survival baseline.],
 )
 
@@ -5518,18 +5520,18 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135288")[Bathing in Skyrim — Renewed]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution.],
-  [[Saunas of Skyrim - The Bathing Mare (External)](https://www.nexusmods.com/skyrimspecialedition/mods/169240)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169240")[Saunas of Skyrim - The Bathing Mare (External)]],
   [Add-on],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Bathhouse outside Whiterun with custom NPCs, vendor, sauna buffs, brandy kegs, rentable bed. Compatible with JK's Whiterun and BiSR.],
   [Minimalist route],
   [Alternative],
@@ -5540,12 +5542,12 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
 === Key Features
 <survival--needs-key-features>
 
-- **Washable Blood** — Uses a KPE function (not Dirt & Blood's overlay-based system) to remove blood decals directly. Compatible with Enhanced Blood Textures, Just Blood, Sanguine Symphony.
-- **Dirtiful Dirt** — Bundles Zaki's 2K dirt overlays. Optional: Zaki's higher-res variants or MoonMods alternative textures.
-- **Custom Animations** — Packaged male animations (Tweens) and female animations (BakaFactory, Krzp). Auto-detects JVraven's Malignis Bathing animations. Falls back to vanilla bathing idles — no FNIS/Pandora requirement for basic use.
-- **Unique Soap** — Craftable at cooking pots from vanilla materials, or buy from general merchants (SkyPatcher). Multiple soap types with different benefits. Linen wash rag as a soap-free fallback.
-- **Automatic Freecam** — Switches to third-person freecam during bathing, matching the pattern of other animation frameworks.
-- **Follower Support** — Tracks and manages follower hygiene alongside the player.
+- *Washable Blood* — Uses a KPE function (not Dirt & Blood's overlay-based system) to remove blood decals directly. Compatible with Enhanced Blood Textures, Just Blood, Sanguine Symphony.
+- *Dirtiful Dirt* — Bundles Zaki's 2K dirt overlays. Optional: Zaki's higher-res variants or MoonMods alternative textures.
+- *Custom Animations* — Packaged male animations (Tweens) and female animations (BakaFactory, Krzp). Auto-detects JVraven's Malignis Bathing animations. Falls back to vanilla bathing idles — no FNIS/Pandora requirement for basic use.
+- *Unique Soap* — Craftable at cooking pots from vanilla materials, or buy from general merchants (SkyPatcher). Multiple soap types with different benefits. Linen wash rag as a soap-free fallback.
+- *Automatic Freecam* — Switches to third-person freecam during bathing, matching the pattern of other animation frameworks.
+- *Follower Support* — Tracks and manages follower hygiene alongside the player.
 
 === Hard Dependencies
 <survival--needs-hard-dependencies>
@@ -5571,7 +5573,7 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 - Equipment handling, overlays, and optional integrations need stricter discipline than a simple immersion add-on.
 - Only hard runtime requirements should be treated as mandatory.
 - For Steam runtime `1.6.1170`, Backported Extended ESL Support requirement does not apply.
-- [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) adds bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. Alternative to dedicated sauna/bathhouse location mods.
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/49014")[Simple Inn Bath] adds bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. Alternative to dedicated sauna/bathhouse location mods.
 
 ---
 
@@ -5582,14 +5584,14 @@ What happens when the player falls in combat. Goal: add consequence and narrativ
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/72924")[Shadow of Skyrim]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Nemesis system — respawn with debuffs, enemies gain name/buffs/presence, defeat nemesis to restore progress.],
   [Discipline-first route],
   [Alternative],
@@ -5610,13 +5612,13 @@ What happens when the player falls in combat. Goal: add consequence and narrativ
 
 // -- guide/modlist-expanded-crafting.md --
 = Crafting & Economy
-<crafting--economy>
+<expanded-crafting-crafting--economy>
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Crafting & Economy`
+*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Crafting & Economy`
 
 All mods in this section belong to the `Expanded Systems - Crafting & Economy` MO2 separator unless noted.
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
+Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -5627,20 +5629,20 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Apothecary — An Alchemy Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/52130)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/52130")[Apothecary — An Alchemy Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Balanced modern route.],
-  [[Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/19924")[Complete Alchemy and Cooking Overhaul]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Large integrated alchemy + cooking pillar.],
-  [[Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5877")[Alchemy Potions and Food Adjustments]],
   [Alternative],
   [all],
   [Lighter fallback.],
@@ -5658,11 +5660,11 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Dial*],
   [*Notes*],
-  [[Alchemy Requires Bottles](https://www.nexusmods.com/skyrimspecialedition/mods/137443)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137443")[Alchemy Requires Bottles]],
   [all],
   [Empty potions at alchemy lab. Adds bottle-crafting step. Tentative — evaluate gameplay friction.],
 )
@@ -5676,30 +5678,30 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Gourmet — A Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/96876)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/96876")[Gourmet — A Cooking Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Balanced modern route.],
-  [[Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/19924")[Complete Alchemy and Cooking Overhaul]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Integrated alchemy + cooking.],
-  [[Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5877")[Alchemy Potions and Food Adjustments]],
   [Alternative],
   [all],
   [Lighter fallback.],
-  [[Mealtime](https://www.nexusmods.com/skyrimspecialedition/mods/22496)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22496")[Mealtime]],
   [Alternative],
   [all],
   [Recipe-density companion if Gourmet's scope feels too narrow.],
-  [[More Plants and Recipes SE](https://www.nexusmods.com/skyrimspecialedition/mods/69955)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69955")[More Plants and Recipes SE]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Adds new plants and recipes to cooking/alchemy. Complements Gourmet.],
 )
 
@@ -5708,17 +5710,17 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Dial*],
   [*Notes*],
-  [[Hyper Realistic Cooked Beef](https://www.nexusmods.com/skyrimspecialedition/mods/173752) + [Hyper Realistic Bread](https://www.nexusmods.com/skyrimspecialedition/mods/173283)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173752")[Hyper Realistic Cooked Beef] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/173283")[Hyper Realistic Bread]],
   [all],
   [Mesh/texture-only replacers. Zero plugin overhead.],
-  [[Skyrim 3D Cooking](https://www.nexusmods.com/skyrimspecialedition/mods/23007)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/23007")[Skyrim 3D Cooking]],
   [all],
   [Higher-detail cooking pot, oven, food-prep meshes. Mesh-only, no plugin.],
-  [[Realistic HD Food Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/22087)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22087")[Realistic HD Food Remastered]],
   [all],
   [Photorealistic food textures.],
 )
@@ -5739,30 +5741,30 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Ars Metallica](https://www.nexusmods.com/skyrimspecialedition/mods/321)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/321")[Ars Metallica]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Smithing XP, tanning, mining improvements. No heavy rules restructuring.],
-  [[Honed Metal](https://www.nexusmods.com/skyrimspecialedition/mods/61015)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/61015")[Honed Metal]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [NPC crafting/enchanting services. Makes gold economy matter.],
-  [[Thaumaturgy — Enchanting Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/57138)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57138")[Thaumaturgy — Enchanting Overhaul]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Simonrim-aligned. Pairs with Mysticism + Adamant. Prerequisite for artifact overhauls.],
-  [[Complete Crafting Overhaul Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/28608)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/28608")[Complete Crafting Overhaul Remastered]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [High-complexity material logic and crafting rules.],
-  [[Summermyst — Enchantments](https://www.nexusmods.com/skyrimspecialedition/mods/6285)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6285")[Summermyst — Enchantments]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [~140 new enchantment effects. Verify compatibility with Thaumaturgy.],
 )
 
@@ -5780,37 +5782,37 @@ Prerequisite chain for Chop Chop woodcutting gameplay:
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Woodcutting Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/53538)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53538")[Woodcutting Tweaks]],
   [Prerequisite],
   [all],
   [Woodcutting behavior improvements.],
-  [[KN Cutting Trees](https://www.nexusmods.com/skyrimspecialedition/mods/28715)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/28715")[KN Cutting Trees]],
   [Prerequisite],
   [all],
   [Cutting Trees framework for wood-chopping. Required by Chop Chop.],
-  [[Chop Chop](https://www.nexusmods.com/skyrimspecialedition/mods/171529)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171529")[Chop Chop]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Interactive wood-chopping gameplay with choppable trees and resource gathering.],
 )
 
-Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` from → [Animations & Movement](modlist-animations.md) for mining/chopping weapon animations.
+Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` from → @animations-animations-and-movement for mining/chopping weapon animations.
 
 === Farming & Gardening
 <crafting--economy-farming--gardening>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Dial*],
   [*Notes*],
-  [[Simplicity of Seeding - Better Hearthfires and Farming CC Planter Scripts](https://www.nexusmods.com/skyrimspecialedition/mods/94428)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94428")[Simplicity of Seeding - Better Hearthfires and Farming CC Planter Scripts]],
   [all],
   [Improves Hearthfires planter scripts for more reliable farming. ESL-flagged.],
 )
@@ -5824,7 +5826,7 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
@@ -5837,29 +5839,29 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
   [-------------],
   [------------],
   [--------------------------------------------------------------],
-  [[Trade and Barter](https://www.nexusmods.com/skyrimspecialedition/mods/23081)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/23081")[Trade and Barter]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Merchant-pricing route.],
-  [[C.O.I.N. — Coins of Interesting Nature](https://www.nexusmods.com/skyrimspecialedition/mods/51439)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51439")[C.O.I.N. — Coins of Interesting Nature]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Regional coin variety. No price/loot changes.],
-  [[C.O.I.N. — Treasury Exchange](https://www.nexusmods.com/skyrimspecialedition/mods/131682)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/131682")[C.O.I.N. — Treasury Exchange]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Currency exchange for coin type conversion.],
-  [[Open World Loot](https://www.nexusmods.com/skyrimspecialedition/mods/49681)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49681")[Open World Loot]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Curated loot progression and encounter rewards. Prefer SkyPatched variant below.],
-  [[Open World Loot - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/110795)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110795")[Open World Loot - SkyPatched]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [SkyPatched forward-port resolving record-level conflicts. Preferred over original.],
-  [[MorrowLoot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3058")[MorrowLoot Ultimate]],
   [Alternative],
-  [\\#1],
+  [#1],
   [Heavy scarcity. Only if deleveled loot is a defining pillar.],
 )
 
@@ -5868,22 +5870,22 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Purpose*],
   [*Dial*],
   [*Requirements*],
-  [[RiS — Encounter Zones](https://www.nexusmods.com/skyrimspecialedition/mods/149899)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149899")[RiS — Encounter Zones]],
   [Reworks encounter zones with randomizer. ESL-flagged.],
-  [\\#1, \\#4],
+  [#1, #4],
   [None],
-  [[RiS — Evolving Economy](https://www.nexusmods.com/skyrimspecialedition/mods/149830)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149830")[RiS — Evolving Economy]],
   [Dynamic pricing by resources, season, Civil War, reputation, distance.],
-  [\\#1, \\#4],
+  [#1, #4],
   [Papyrus Ini Manipulator, Po3 Papyrus Extender],
-  [[RiS — Loot Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/157259)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157259")[RiS — Loot Overhaul]],
   [Rarity-driven loot, equipment breakage, deleveled artifacts.],
-  [\\#1],
+  [#1],
   [Papyrus Ini Manipulator, SkyUI],
 )
 
@@ -5892,26 +5894,26 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Dial*],
   [*Notes*],
-  [[Narrative Loot](https://www.nexusmods.com/skyrimspecialedition/mods/12812)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12812")[Narrative Loot]],
   [all],
   [1,629 lore-friendly misc items. No economy changes. Stacks cleanly.],
-  [[SUDs — Skyrim's Unique Drinks](https://www.nexusmods.com/skyrimspecialedition/mods/85824)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85824")[SUDs — Skyrim's Unique Drinks]],
   [all],
   [50+ unique drink items with custom meshes, textures, effects.],
-  [[Amulets of Skyrim SSE](https://www.nexusmods.com/skyrimspecialedition/mods/487)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/487")[Amulets of Skyrim SSE]],
   [all],
   [Adds wearable amulets for every deity, new quest amulets, and improved visuals.],
-  [[Amulets of Skyrim - Tweaks and Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/31814)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/31814")[Amulets of Skyrim - Tweaks and Fixes]],
   [all],
   [Bugfix and compatibility patch for Amulets of Skyrim. Install after base.],
-  [[Immersive Jewelry SSE](https://www.nexusmods.com/skyrimspecialedition/mods/5336)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5336")[Immersive Jewelry SSE]],
   [all],
   [800+ earrings, rings, necklaces, bracelets. Heavy leveled-list integration.],
-  [[Immersive Jewelry - Lower Value](https://www.nexusmods.com/skyrimspecialedition/mods/51255)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51255")[Immersive Jewelry - Lower Value]],
   [all],
   [Value rebalance for Immersive Jewelry items. Optional — review for economy fit.],
 )
@@ -5928,20 +5930,20 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 == Weapons, Armor, And Equipment Content
 <crafting--economy-weapons-armor-and-equipment-content>
 
-Weapon packs, armor packs, artifacts, and clothing content have been consolidated into their own dedicated section. See → [Weapons & Armor](modlist-weapons-armor.md).
+Weapon packs, armor packs, artifacts, and clothing content have been consolidated into their own dedicated section. See → @weapons-armor-weapons--armor.
 
 
 
 
 // -- guide/modlist-expanded-followers.md --
 = Followers & Reputation
-<followers--reputation>
+<expanded-followers-followers--reputation>
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Followers & Reputation`
+*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Followers & Reputation`
 
 All mods in this section belong to the `Expanded Systems - Followers & Reputation` MO2 separator unless noted.
 
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
+Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -5952,32 +5954,32 @@ How much the world should notice what the player does socially — reputation, c
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Skyrim Reputation](https://www.nexusmods.com/skyrimspecialedition/mods/22374)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22374")[Skyrim Reputation]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Main reputation baseline.],
-  [[The Choice is Yours](https://www.nexusmods.com/skyrimspecialedition/mods/3850)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3850")[The Choice is Yours]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Quest auto-start control for content-heavy runs.],
-  [[To Your Face SE](https://www.nexusmods.com/skyrimspecialedition/mods/24720)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/24720")[To Your Face SE]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Social polish for city/tavern greetings.],
-  [[Steal off Scoundrels](https://www.nexusmods.com/skyrimspecialedition/mods/171870)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171870")[Steal off Scoundrels]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [SKSE plugin — pickpocketing criminals not flagged as stealing. No ESP.],
-  [[Suspicious City Guards](https://www.nexusmods.com/skyrimspecialedition/mods/38762)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/38762")[Suspicious City Guards]],
   [Alternative],
   [all],
   [Urban tension around suspicious behavior.],
-  [[Book Of Shadows](https://www.nexusmods.com/skyrimspecialedition/mods/76086)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76086")[Book Of Shadows]],
   [Alternative],
   [all],
   [High-expression crime and stealth pillar.],
@@ -6001,20 +6003,20 @@ How companion management should function at the systems level.
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Nether's Follower Framework](https://www.nexusmods.com/skyrimspecialedition/mods/55653)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55653")[Nether's Follower Framework]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Modern flexible route.],
-  [[EFF — Extensible Follower Framework](https://www.nexusmods.com/skyrimspecialedition/mods/7003)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/7003")[EFF — Extensible Follower Framework]],
   [Alternative],
   [all],
   [Simpler established management.],
-  [[Amazing Follower Tweaks SE](https://www.nexusmods.com/skyrimspecialedition/mods/6656)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6656")[Amazing Follower Tweaks SE]],
   [Alternative],
   [all],
   [Heavy-management branch.],
@@ -6037,26 +6039,26 @@ The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Relationship Dialogue Overhaul — RDO](https://www.nexusmods.com/skyrimspecialedition/mods/1187)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1187")[Relationship Dialogue Overhaul — RDO]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [5,000+ voiced lines for NPCs/followers/spouses. 137K endorsements, fully SFW.],
-  [[Amorous Adventures](https://www.nexusmods.com/skyrimspecialedition/mods/7305) (clean variant)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/7305")[Amorous Adventures] (clean variant)],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
-  [Opt-in romance quests, fade-to-black. **Lock only clean build.**],
-  [[Marriage Mod — To Have And To Hold](https://www.nexusmods.com/skyrimspecialedition/mods/8589)],
+  [#1, #2, #3, #4],
+  [Opt-in romance quests, fade-to-black. *Lock only clean build.*],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/8589")[Marriage Mod — To Have And To Hold]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Up to 11 spouses, divorce, enhanced wedding, dynamic events.],
-  [[Serana Dialogue Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/32161)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32161")[Serana Dialogue Add-On]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [7,000+ voiced lines, new story arcs, romance. 51K endorsements.],
   [Discipline-first route],
   [Alternative],
@@ -6078,50 +6080,50 @@ The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue
 
 // -- guide/modlist-design-philosophy.md --
 = World Progression Philosophy
-<world-progression-philosophy>
+<design-philosophy-world-progression-philosophy>
 
-> **Adopted Combination:** `\#1` — **Static with Hard Threat** (see [Suggested Combinations](suggested-combinations)). The static-with-threat dial is the base; the "Living the World" pillar is layered on top — the home is a real anchor (survival warmth, food, rest, family), and the player quests when they want, not on the main quest's clock.
+> *Adopted Combination:* `#1` — *Static with Hard Threat* (see [Suggested Combinations](suggested-combinations)). The static-with-threat dial is the base; the "Living the World" pillar is layered on top — the home is a real anchor (survival warmth, food, rest, family), and the player quests when they want, not on the main quest's clock.
 
-This document owns the design dial that connects four concerns: **leveling**, **encounter zones**, **loot distribution**, and **difficulty**. They are not independent picks — change one and the other three shift. The modlist's section files cite this document when they need to justify a concrete pick.
+This document owns the design dial that connects four concerns: *leveling*, *encounter zones*, *loot distribution*, and *difficulty*. They are not independent picks — change one and the other three shift. The modlist's section files cite this document when they need to justify a concrete pick.
 
-No concrete mod picks live here. The owning sections (notably → [Crafting & Economy](modlist-expanded-crafting.md) for loot distribution, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for encounter zones and difficulty) make the final call. This document presents the three styles, analyzes them across shared axes, and ends with **suggested combinations** for different list identities — the curator picks the combination that matches the list's intent.
+No concrete mod picks live here. The owning sections (notably → @expanded-crafting-crafting--economy for loot distribution, → @survival-combat-survival-difficulty-and-balance for encounter zones and difficulty) make the final call. This document presents the three styles, analyzes them across shared axes, and ends with *suggested combinations* for different list identities — the curator picks the combination that matches the list's intent.
 
-**Tagging convention:** Mods in the section files are tagged in a `Dial` column with one or more combination codes (`\#1`, `\#2`, `\#3`, `\#4`, `all`, `none`). `\#1` is the adopted combination for Elder Wilds; mods tagged `\#1` (or `all`) are on-dial, others are off-dial for the list's intent and need explicit justification.
+*Tagging convention:* Mods in the section files are tagged in a `Dial` column with one or more combination codes (`#1`, `#2`, `#3`, `#4`, `all`, `none`). `#1` is the adopted combination for Elder Wilds; mods tagged `#1` (or `all`) are on-dial, others are off-dial for the list's intent and need explicit justification.
 
 ---
 
 == The Three Styles
 <world-progression-philosophy-the-three-styles>
 
-**Deleveled** — World no longer scales to the player. A Bandit Chief is dangerous at level 1 and level 50; loot tables are decoupled from player level so a high-tier weapon can be found in a low-level dungeon. `MorrowLoot Ultimate` is the canonical implementation. `Open World Loot` (in its "decapitate leveled lists" mode) sits in this camp.
+*Deleveled* — World no longer scales to the player. A Bandit Chief is dangerous at level 1 and level 50; loot tables are decoupled from player level so a high-tier weapon can be found in a low-level dungeon. `MorrowLoot Ultimate` is the canonical implementation. `Open World Loot` (in its "decapitate leveled lists" mode) sits in this camp.
 
-**Static Leveling** — World is fixed but the loot tables are hand-curated rather than the messy vanilla lists. Top-tier gear is rare, but it isn't gated behind specific zones — it's gated behind a curated drop table that the player learns over time. `Open World Loot` (default philosophy) is the closest popular implementation.
+*Static Leveling* — World is fixed but the loot tables are hand-curated rather than the messy vanilla lists. Top-tier gear is rare, but it isn't gated behind specific zones — it's gated behind a curated drop table that the player learns over time. `Open World Loot` (default philosophy) is the closest popular implementation.
 
-**Vanilla With Curated Lists** — Keep leveled lists essentially as Bethesda shipped them, but curate content additions (new weapons, armors, jewelry) to fit the existing economy rather than inflating it. The base game is the default; new items plug in cleanly. `Trade and Barter` style interventions, content packs that match vanilla tier-spread, light Rarity-style interference at the edges.
+*Vanilla With Curated Lists* — Keep leveled lists essentially as Bethesda shipped them, but curate content additions (new weapons, armors, jewelry) to fit the existing economy rather than inflating it. The base game is the default; new items plug in cleanly. `Trade and Barter` style interventions, content packs that match vanilla tier-spread, light Rarity-style interference at the edges.
 
 ---
 
 == The Interlocked Dial
 <world-progression-philosophy-the-interlocked-dial>
 
-The four concerns are coupled, and the dial really has **six knobs** — the four named plus the **experience mod** (how fast the player levels and what skill-ups do) and the **perks overhaul** (what perks do and how perk points are spent). All six need to sing together or the list feels incoherent:
+The four concerns are coupled, and the dial really has *six knobs* — the four named plus the *experience mod* (how fast the player levels and what skill-ups do) and the *perks overhaul* (what perks do and how perk points are spent). All six need to sing together or the list feels incoherent:
 
-- **Leveling style** (deleveled / static / vanilla) — what gear the world offers at what level.
-- **Encounter zones** — what threat the world offers at what location.
-- **Loot distribution** — what the player can actually pick up off that threat.
-- **Difficulty** — how hard any given encounter feels.
-- **Experience mod** — how fast the player accumulates levels and skill-ups relative to those four knobs.
-- **Perks overhaul** — what the player can build into, which determines whether a given dial feels like a wall or a puzzle.
+- *Leveling style* (deleveled / static / vanilla) — what gear the world offers at what level.
+- *Encounter zones* — what threat the world offers at what location.
+- *Loot distribution* — what the player can actually pick up off that threat.
+- *Difficulty* — how hard any given encounter feels.
+- *Experience mod* — how fast the player accumulates levels and skill-ups relative to those four knobs.
+- *Perks overhaul* — what the player can build into, which determines whether a given dial feels like a wall or a puzzle.
 
 Common failure patterns when the six knobs don't sing:
 
-- **Deleveled loot + encounter-zone overhaul** stacks gating. The world closes in fast; progression has to come from skill, knowledge, and LoTD-style meta-progression, not from better gear.
-- **Vanilla loot + no encounter overhaul** produces the canonical problem: by level 30, glass and ebony are everywhere and nothing feels like a reward.
-- **Static loot + encounter-zone overhaul** is the most common "modern list" dial — it gates the *threat* without gating the *gear*, so the player feels strong against a curated threat ladder.
-- **Deleveled loot + survival framework** can overshoot into punitive early-game, especially in cold biomes where food and warmth are themselves scarce.
-- **Heavy perks overhaul + fast XP** floods the player with build options before they've explored the world — the list feels like a build simulator rather than a world.
-- **Vanilla perks + slow XP + deleveled loot** starves the player of both gear and build options; every fight is a coin-flip.
-- **Heavy perks overhaul + deleveled loot** is actually a *natural* pairing: the player can build into a counter for any encounter the world throws at them, which softens delevel's flat-late-game problem and gives the perks tree real purpose.
+- *Deleveled loot + encounter-zone overhaul* stacks gating. The world closes in fast; progression has to come from skill, knowledge, and LoTD-style meta-progression, not from better gear.
+- *Vanilla loot + no encounter overhaul* produces the canonical problem: by level 30, glass and ebony are everywhere and nothing feels like a reward.
+- *Static loot + encounter-zone overhaul* is the most common "modern list" dial — it gates the #emph[threat] without gating the #emph[gear], so the player feels strong against a curated threat ladder.
+- *Deleveled loot + survival framework* can overshoot into punitive early-game, especially in cold biomes where food and warmth are themselves scarce.
+- *Heavy perks overhaul + fast XP* floods the player with build options before they've explored the world — the list feels like a build simulator rather than a world.
+- *Vanilla perks + slow XP + deleveled loot* starves the player of both gear and build options; every fight is a coin-flip.
+- *Heavy perks overhaul + deleveled loot* is actually a #emph[natural] pairing: the player can build into a counter for any encounter the world throws at them, which softens delevel's flat-late-game problem and gives the perks tree real purpose.
 
 A list that locks a strong position on one or two knobs without thinking through the other four will feel incoherent. This document is the place to think it through.
 
@@ -6133,27 +6135,27 @@ A list that locks a strong position on one or two knobs without thinking through
 === Power Fantasy
 <world-progression-philosophy-power-fantasy>
 
-Late-game power fantasy is **weaker**: the world never feels "below you" because the world is the world. Early-game power fantasy is **stronger in a punishing way**: nothing hands you gear, you have to earn every step. For a list that wants the player to feel small and threatened, this is the right dial. For a list that wants the player to feel like they're growing into a legend, it can feel like the dial never moves.
+Late-game power fantasy is *weaker*: the world never feels "below you" because the world is the world. Early-game power fantasy is *stronger in a punishing way*: nothing hands you gear, you have to earn every step. For a list that wants the player to feel small and threatened, this is the right dial. For a list that wants the player to feel like they're growing into a legend, it can feel like the dial never moves.
 
 === Longterm Play
 <world-progression-philosophy-longterm-play>
 
-**Excellent for replayability** — knowing where the best gear is, or where the hardest fights are, doesn't trivialize the playthrough because the player level doesn't unlock anything. A new character in six months has the same discovery space. **Weak for in-list long-term progression** — if the player plans to spend 200+ hours in a single character, the lack of a power curve can feel flat late.
+*Excellent for replayability* — knowing where the best gear is, or where the hardest fights are, doesn't trivialize the playthrough because the player level doesn't unlock anything. A new character in six months has the same discovery space. *Weak for in-list long-term progression* — if the player plans to spend 200+ hours in a single character, the lack of a power curve can feel flat late.
 
 === Exploration & Discovery
 <world-progression-philosophy-exploration--discovery>
 
-**Excellent incentive structure.** "I should go everywhere, because anything I find could be a game-changer." Pairs well with `Legacy of the Dragonborn` (museum-as-reward) and big-world lists. A high-tier weapon found at level 5 is a story, not a balance violation.
+*Excellent incentive structure.* "I should go everywhere, because anything I find could be a game-changer." Pairs well with `Legacy of the Dragonborn` (museum-as-reward) and big-world lists. A high-tier weapon found at level 5 is a story, not a balance violation.
 
 === NPC & Encounter Balance
 <world-progression-philosophy-npc--encounter-balance>
 
-NPCs stay dangerous; the curve is flat. Pairs cleanly with encounter-zone overhauls that *add* a curve (so the world still has a sense of progression through the map even if the player's gear doesn't track). The risk is the **over-gated trap**: delevel + encounter overhaul + harsh survival + low early-game loot = the first ten levels feel like a wall. `Survival & Combat` already flags this combination as the "overshoot from moody into over-gated" pattern.
+NPCs stay dangerous; the curve is flat. Pairs cleanly with encounter-zone overhauls that #emph[add] a curve (so the world still has a sense of progression through the map even if the player's gear doesn't track). The risk is the *over-gated trap*: delevel + encounter overhaul + harsh survival + low early-game loot = the first ten levels feel like a wall. `Survival & Combat` already flags this combination as the "overshoot from moody into over-gated" pattern.
 
 === Modlist Synergy
 <world-progression-philosophy-modlist-synergy>
 
-**The hardest style to balance with content-heavy modlists.** Every new leveled-list mod (every new weapon, armor, jewelry, alchemy ingredient) has to be tested against the deleveled tables — does this new sword break the world at level 5? Does this new jewelry inflate the merchant economy? The more mods in the list, the more curation work. Lists that are content-rich (like this one, with Heavy Armory, Immersive Armors, Immersive Jewelry, Narrative Loot, C.O.I.N., etc.) pay a high cost for running deleveled.
+*The hardest style to balance with content-heavy modlists.* Every new leveled-list mod (every new weapon, armor, jewelry, alchemy ingredient) has to be tested against the deleveled tables — does this new sword break the world at level 5? Does this new jewelry inflate the merchant economy? The more mods in the list, the more curation work. Lists that are content-rich (like this one, with Heavy Armory, Immersive Armors, Immersive Jewelry, Narrative Loot, C.O.I.N., etc.) pay a high cost for running deleveled.
 
 === Risks
 <world-progression-philosophy-risks>
@@ -6166,7 +6168,7 @@ NPCs stay dangerous; the curve is flat. Pairs cleanly with encounter-zone overha
 === Experience & Perks
 <world-progression-philosophy-experience--perks>
 
-**Pairs naturally with a heavy perks overhaul and slow-to-moderate XP.** Without leveled lists to gate gear, the player's power growth comes almost entirely from perks and skill-ups, so a rich perks tree carries real weight and a fast-XP setup would front-load that growth. A heavy-perks / slow-XP / deleveled-loot triple is the cleanest expression of the "earn every step" fantasy. Vanilla perks with fast XP undermines this — the player levels up faster than they can spend points and the world still doesn't give them anything.
+*Pairs naturally with a heavy perks overhaul and slow-to-moderate XP.* Without leveled lists to gate gear, the player's power growth comes almost entirely from perks and skill-ups, so a rich perks tree carries real weight and a fast-XP setup would front-load that growth. A heavy-perks / slow-XP / deleveled-loot triple is the cleanest expression of the "earn every step" fantasy. Vanilla perks with fast XP undermines this — the player levels up faster than they can spend points and the world still doesn't give them anything.
 
 ---
 
@@ -6176,27 +6178,27 @@ NPCs stay dangerous; the curve is flat. Pairs cleanly with encounter-zone overha
 === Power Fantasy
 <world-progression-philosophy-power-fantasy-2>
 
-**Balanced.** The player grows into a legend against a threat that also has structure. Late-game still feels earned because curated late-game loot is meaningfully better than curated early-game loot, but a high-level player isn't drowning in game-breaking gear. For a list that wants both the growth fantasy and the threat, this is the natural dial.
+*Balanced.* The player grows into a legend against a threat that also has structure. Late-game still feels earned because curated late-game loot is meaningfully better than curated early-game loot, but a high-level player isn't drowning in game-breaking gear. For a list that wants both the growth fantasy and the threat, this is the natural dial.
 
 === Longterm Play
 <world-progression-philosophy-longterm-play-2>
 
-**Strong for in-list long-term progression** — the player has a 100-hour power curve, and curated loot tables mean the curve is well-paced. **Acceptable for replayability** — a new character will find roughly the same gear at the same general progression points, but the discovery of *where* is still open. LoTD-style meta-progression carries replayability.
+*Strong for in-list long-term progression* — the player has a 100-hour power curve, and curated loot tables mean the curve is well-paced. *Acceptable for replayability* — a new character will find roughly the same gear at the same general progression points, but the discovery of #emph[where] is still open. LoTD-style meta-progression carries replayability.
 
 === Exploration & Discovery
 <world-progression-philosophy-exploration--discovery-2>
 
-**Incentive structure is moderate.** "Go everywhere to find good gear" is still true, but the curve is shallower than deleveled because the player knows tier-1 zones won't drop tier-5 items. Pairs well with maps and markers, with the museum, and with curated content packs that respect the tier spread.
+*Incentive structure is moderate.* "Go everywhere to find good gear" is still true, but the curve is shallower than deleveled because the player knows tier-1 zones won't drop tier-5 items. Pairs well with maps and markers, with the museum, and with curated content packs that respect the tier spread.
 
 === NPC & Encounter Balance
 <world-progression-philosophy-npc--encounter-balance-2>
 
-**The cleanest combination with encounter-zone overhauls.** Encounter zones add a *spatial* progression (Whiterun hold is easier than the Rift, the Rift is easier than Skrim wide); static loot adds a *temporal* progression (early-game player has starter gear, late-game player has curated late-tier gear). The two dials don't fight.
+*The cleanest combination with encounter-zone overhauls.* Encounter zones add a #emph[spatial] progression (Whiterun hold is easier than the Rift, the Rift is easier than Skrim wide); static loot adds a #emph[temporal] progression (early-game player has starter gear, late-game player has curated late-tier gear). The two dials don't fight.
 
 === Modlist Synergy
 <world-progression-philosophy-modlist-synergy-2>
 
-**The most content-mod-friendly style.** New weapons, armors, jewelry, and ingredients slot into curated tier slots. A new weapon mod that adds ten glass-tier swords integrates naturally; the same mod in a deleveled list has to be tested for "does this break level-5 progression." Lists that are content-rich benefit from static's lower curation overhead.
+*The most content-mod-friendly style.* New weapons, armors, jewelry, and ingredients slot into curated tier slots. A new weapon mod that adds ten glass-tier swords integrates naturally; the same mod in a deleveled list has to be tested for "does this break level-5 progression." Lists that are content-rich benefit from static's lower curation overhead.
 
 === Risks
 <world-progression-philosophy-risks-2>
@@ -6218,27 +6220,27 @@ Pairs naturally with a heavy perks overhaul and a power-fantasy XP curve (high l
 === Power Fantasy
 <world-progression-philosophy-power-fantasy-3>
 
-**Closest to Bethesda's intent.** The player grows into a legend against a world that grows with them. Late-game the world hands you legendary glass and ebony because you earned it. For a list that wants to honor the original game and add modern systems on top, this is the right dial.
+*Closest to Bethesda's intent.* The player grows into a legend against a world that grows with them. Late-game the world hands you legendary glass and ebony because you earned it. For a list that wants to honor the original game and add modern systems on top, this is the right dial.
 
 === Longterm Play
 <world-progression-philosophy-longterm-play-3>
 
-**Strong for in-list long-term progression** (same as static). **Weaker for replayability** — a new character finds the same gear in the same places at the same levels. The strongest replayability lever is `Legacy of the Dragonborn` (different museum-fill order, different artifact quest chains, different pacing) rather than the loot dial itself.
+*Strong for in-list long-term progression* (same as static). *Weaker for replayability* — a new character finds the same gear in the same places at the same levels. The strongest replayability lever is `Legacy of the Dragonborn` (different museum-fill order, different artifact quest chains, different pacing) rather than the loot dial itself.
 
 === Exploration & Discovery
 <world-progression-philosophy-exploration--discovery-3>
 
-**Weakest incentive structure of the three styles.** The player learns the loot ladder quickly and the motivation to "go everywhere" weakens. Lists that want exploration incentive need to add it through other levers: `Legacy of the Dragonborn` museum-fill, Evolving Locations content, hand-placed world encounters, `Interesting NPCs` style content, etc.
+*Weakest incentive structure of the three styles.* The player learns the loot ladder quickly and the motivation to "go everywhere" weakens. Lists that want exploration incentive need to add it through other levers: `Legacy of the Dragonborn` museum-fill, Evolving Locations content, hand-placed world encounters, `Interesting NPCs` style content, etc.
 
 === NPC & Encounter Balance
 <world-progression-philosophy-npc--encounter-balance-3>
 
-**Pairs cleanly with the least intervention.** Vanilla encounter zones + vanilla loot + light difficulty tuning produces a coherent, low-curation list. Adding heavy encounter-zone overhauls to vanilla loot often overshoots (the world gates but the gear doesn't, producing late-game "I'm level 50 in glass armor and a Bandit Chief one-shots me" frustration).
+*Pairs cleanly with the least intervention.* Vanilla encounter zones + vanilla loot + light difficulty tuning produces a coherent, low-curation list. Adding heavy encounter-zone overhauls to vanilla loot often overshoots (the world gates but the gear doesn't, producing late-game "I'm level 50 in glass armor and a Bandit Chief one-shots me" frustration).
 
 === Modlist Synergy
 <world-progression-philosophy-modlist-synergy-3>
 
-**The lowest curation overhead.** New content packs that respect vanilla tier-spread integrate trivially. The cost is that the list feels like "vanilla plus mods" rather than "a designed list."
+*The lowest curation overhead.* New content packs that respect vanilla tier-spread integrate trivially. The cost is that the list feels like "vanilla plus mods" rather than "a designed list."
 
 === Risks
 <world-progression-philosophy-risks-3>
@@ -6251,76 +6253,76 @@ Pairs naturally with a heavy perks overhaul and a power-fantasy XP curve (high l
 === Experience & Perks
 <world-progression-philosophy-experience--perks-3>
 
-**Pairs naturally with vanilla or light perks and a moderate-to-fast XP curve.** The Bethesda-style growth fantasy works best when the player is unlocking perks at the rate Bethesda intended — fast enough to feel the build opening up, slow enough that the unlock matters. A heavy perks overhaul here can work, but the dial is doing less of the lifting, so the perks tree has to be the thing that makes the playthrough feel different. Slow XP with vanilla perks and vanilla loot produces a list that feels underpowered even at level 30 — the most common "is this modlist even on?" failure mode for this style.
+*Pairs naturally with vanilla or light perks and a moderate-to-fast XP curve.* The Bethesda-style growth fantasy works best when the player is unlocking perks at the rate Bethesda intended — fast enough to feel the build opening up, slow enough that the unlock matters. A heavy perks overhaul here can work, but the dial is doing less of the lifting, so the perks tree has to be the thing that makes the playthrough feel different. Slow XP with vanilla perks and vanilla loot produces a list that feels underpowered even at level 30 — the most common "is this modlist even on?" failure mode for this style.
 
 ---
 
 == Suggested Combinations
 <world-progression-philosophy-suggested-combinations>
 
-These are **suggestions for different list identities**, not a ranking. The owning sections still pick the concrete mods; the combinations just steer those picks in compatible directions. The curator picks the combination that matches the list's intent.
+These are *suggestions for different list identities*, not a ranking. The owning sections still pick the concrete mods; the combinations just steer those picks in compatible directions. The curator picks the combination that matches the list's intent.
 
 === 1. "Big, Dark, Awe-Inspiring World" — Deleveled Or Static With Hard Threat
 <world-progression-philosophy-1-big-dark-awe-inspiring-world-deleveled-or-static-with-hard-threat>
 
-**Suggested dial:** Static leveling (preferred) or deleveled (committed), encounter-zone overhaul (`Arena` baseline or RiS Encounter Zones), harsher difficulty, deliberate loot scarcity at tier 1-2, **heavy perks overhaul (Simonrim-class depth) with slow-to-moderate XP** so the player's power growth comes from build choices against a flat world, not from gear inflation. Survival framework (cold, hunger, fatigue, disease) is on-dial — it makes the home a real anchor.
+*Suggested dial:* Static leveling (preferred) or deleveled (committed), encounter-zone overhaul (`Arena` baseline or RiS Encounter Zones), harsher difficulty, deliberate loot scarcity at tier 1-2, *heavy perks overhaul (Simonrim-class depth) with slow-to-moderate XP* so the player's power growth comes from build choices against a flat world, not from gear inflation. Survival framework (cold, hunger, fatigue, disease) is on-dial — it makes the home a real anchor.
 
-**What it serves:** Exploration that makes Skyrim feel vast and threatening. The player feels small, the world feels dangerous, gear feels earned, and the perks tree is the primary expression of "I'm getting stronger." Pairs naturally with `Legacy of the Dragonborn` because the museum becomes the player's long-term reward ladder. The "Living the World" layer sits on top: a player home with a family, choosing when to quest, living a life in between the dragon-born moments.
+*What it serves:* Exploration that makes Skyrim feel vast and threatening. The player feels small, the world feels dangerous, gear feels earned, and the perks tree is the primary expression of "I'm getting stronger." Pairs naturally with `Legacy of the Dragonborn` because the museum becomes the player's long-term reward ladder. The "Living the World" layer sits on top: a player home with a family, choosing when to quest, living a life in between the dragon-born moments.
 
-**Trade-offs:** High curation overhead for content mods if deleveled. Risk of over-gating early-game if survival and encounter overhaul stack. Late-game power curve depends heavily on the perks tree carrying it; a shallow perks overhaul breaks the fantasy.
+*Trade-offs:* High curation overhead for content mods if deleveled. Risk of over-gating early-game if survival and encounter overhaul stack. Late-game power curve depends heavily on the perks tree carrying it; a shallow perks overhaul breaks the fantasy.
 
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for the loot-distribution mod, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for encounter-zone and difficulty mods.
+*Owned by:* → @expanded-crafting-crafting--economy for the loot-distribution mod, → @survival-combat-survival-difficulty-and-balance for encounter-zone and difficulty mods.
 
 === 2. "Living The World / Museum-And-Collection" — Vanilla With Curated Lists
 <world-progression-philosophy-2-living-the-world-museum-and-collection-vanilla-with-curated-lists>
 
-**Suggested dial:** Vanilla with curated lists, light or no encounter-zone intervention, balanced difficulty (Simply Balanced tier), LoTD-anchored progression carrying the long-term reward ladder, **moderate perks overhaul (Path of the Berserker or Adamant tier) with vanilla-or-slightly-slow XP** to preserve Bethesda's growth pacing while giving the build a little more shape.
+*Suggested dial:* Vanilla with curated lists, light or no encounter-zone intervention, balanced difficulty (Simply Balanced tier), LoTD-anchored progression carrying the long-term reward ladder, *moderate perks overhaul (Path of the Berserker or Adamant tier) with vanilla-or-slightly-slow XP* to preserve Bethesda's growth pacing while giving the build a little more shape.
 
-**What it serves:** A list that wants to add modern systems and lots of new content on top of a Skyrim that still feels like Skyrim. The museum is the meta-progression; the loot dial is "vanilla with polish, not overhaul." Honors Bethesda's pacing intent while modernizing everything around it.
+*What it serves:* A list that wants to add modern systems and lots of new content on top of a Skyrim that still feels like Skyrim. The museum is the meta-progression; the loot dial is "vanilla with polish, not overhaul." Honors Bethesda's pacing intent while modernizing everything around it.
 
-**Trade-offs:** Late-game loot inflation is the canonical failure mode — mitigation is required curation of any new gear mods. Exploration incentive is weak; LoTD and content mods have to carry it. Distinctiveness depends on what you put on top. A heavy perks overhaul (Simonrim) here can overpower the "Skyrim that still feels like Skyrim" intent — the perks tree starts to feel like it's from a different game.
+*Trade-offs:* Late-game loot inflation is the canonical failure mode — mitigation is required curation of any new gear mods. Exploration incentive is weak; LoTD and content mods have to carry it. Distinctiveness depends on what you put on top. A heavy perks overhaul (Simonrim) here can overpower the "Skyrim that still feels like Skyrim" intent — the perks tree starts to feel like it's from a different game.
 
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for trade-and-barter-style interventions and content-mod curation rules, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for minimal encounter-zone intervention and balanced difficulty.
+*Owned by:* → @expanded-crafting-crafting--economy for trade-and-barter-style interventions and content-mod curation rules, → @survival-combat-survival-difficulty-and-balance for minimal encounter-zone intervention and balanced difficulty.
 
 === 3. "Power Fantasy" — Vanilla Or Static, Lenient
 <world-progression-philosophy-3-power-fantasy-vanilla-or-static-lenient>
 
-**Suggested dial:** Vanilla with curated lists (preferred) or static, no encounter-zone overhaul, lenient difficulty, **vanilla or light perks with vanilla-to-fast XP** so the growth fantasy matches Bethesda's intent. Late-game gear arrives as Bethesda intended; the player becomes a legend.
+*Suggested dial:* Vanilla with curated lists (preferred) or static, no encounter-zone overhaul, lenient difficulty, *vanilla or light perks with vanilla-to-fast XP* so the growth fantasy matches Bethesda's intent. Late-game gear arrives as Bethesda intended; the player becomes a legend.
 
-**What it serves:** A list that wants the player to feel like a growing hero, not a survivor. Pairs well with the "Dragonborn quest as the spine" playstyle — if the user is going to play the main quest, the loot dial should support that arc.
+*What it serves:* A list that wants the player to feel like a growing hero, not a survivor. Pairs well with the "Dragonborn quest as the spine" playstyle — if the user is going to play the main quest, the loot dial should support that arc.
 
-**Trade-offs:** Same late-game inflation risk as combination 2. Risk of feeling like an unmodded game in the first 20 levels. Exploration incentive is the weakest of the three styles; needs other systems to compensate. A heavy perks overhaul contradicts the "Bethesda's growth pacing" intent and tends to overshoot into a build-simulator feel by mid-game.
+*Trade-offs:* Same late-game inflation risk as combination 2. Risk of feeling like an unmodded game in the first 20 levels. Exploration incentive is the weakest of the three styles; needs other systems to compensate. A heavy perks overhaul contradicts the "Bethesda's growth pacing" intent and tends to overshoot into a build-simulator feel by mid-game.
 
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for trade-and-barter and minimal loot intervention, → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for the lenient difficulty pick and minimal encounter-zone changes.
+*Owned by:* → @expanded-crafting-crafting--economy for trade-and-barter and minimal loot intervention, → @survival-combat-survival-difficulty-and-balance for the lenient difficulty pick and minimal encounter-zone changes.
 
 === 4. "Longterm Replayability" — Static, Moderate Gating, Tunable Difficulty
 <world-progression-philosophy-4-longterm-replayability-static-moderate-gating-tunable-difficulty>
 
-**Suggested dial:** Static leveling, moderate encounter-zone intervention (Arena tier, not harsher), difficulty mod with tuning knobs (Simply Balanced, not Blade and Blunt), curated content packs that respect the tier spread, **moderate-to-heavy perks overhaul (Path of the Berserker or Simonrim tier) with moderate XP** so a new character has a fresh build-puzzle to work through every restart.
+*Suggested dial:* Static leveling, moderate encounter-zone intervention (Arena tier, not harsher), difficulty mod with tuning knobs (Simply Balanced, not Blade and Blunt), curated content packs that respect the tier spread, *moderate-to-heavy perks overhaul (Path of the Berserker or Simonrim tier) with moderate XP* so a new character has a fresh build-puzzle to work through every restart.
 
-**What it serves:** A list the curator wants to come back to in six months and start fresh. Static gives the new character a fresh-but-familiar power curve; moderate encounter-zone intervention gives the world structure without punishing early exploration; a tunable difficulty mod lets the new character be tuned up or down as the player prefers; a moderate-to-heavy perks overhaul means each new character has a different build to commit to.
+*What it serves:* A list the curator wants to come back to in six months and start fresh. Static gives the new character a fresh-but-familiar power curve; moderate encounter-zone intervention gives the world structure without punishing early exploration; a tunable difficulty mod lets the new character be tuned up or down as the player prefers; a moderate-to-heavy perks overhaul means each new character has a different build to commit to.
 
-**Trade-offs:** Static-with-curated-lists is the most balanced but the least distinctive dial — the list has to differentiate through art, content, and mechanics. The "vanilla-with-extra-steps" risk is real.
+*Trade-offs:* Static-with-curated-lists is the most balanced but the least distinctive dial — the list has to differentiate through art, content, and mechanics. The "vanilla-with-extra-steps" risk is real.
 
-**Owned by:** → [Crafting & Economy](modlist-expanded-crafting.md) for the static-with-curated-lists implementation (Open World Loot default or hand-rolled curated leveled lists), → [Survival, Difficulty, and Balance](modlist-survival-combat.md) for moderate encounter-zone changes and tunable difficulty.
+*Owned by:* → @expanded-crafting-crafting--economy for the static-with-curated-lists implementation (Open World Loot default or hand-rolled curated leveled lists), → @survival-combat-survival-difficulty-and-balance for moderate encounter-zone changes and tunable difficulty.
 
 ---
 
 == How To Use This Document
 <world-progression-philosophy-how-to-use-this-document>
 
-When a section file picks a mod that touches the loot / encounter / difficulty / XP / perks dial, it should briefly note which **suggested combination** the pick serves. Example: "Picking `Open World Loot` (curated default) supports combination 1 (Big, Dark, World) or 4 (Longterm Replayability) and is not the right pick for combination 3 (Power Fantasy / vanilla-loot)."
+When a section file picks a mod that touches the loot / encounter / difficulty / XP / perks dial, it should briefly note which *suggested combination* the pick serves. Example: "Picking `Open World Loot` (curated default) supports combination 1 (Big, Dark, World) or 4 (Longterm Replayability) and is not the right pick for combination 3 (Power Fantasy / vanilla-loot)."
 
-When two sections make picks that would push the list toward different combinations, the conflict is a signal to revisit this document and pick the combination explicitly. The document does not own the final answer — it owns the framework for making the answer coherent. The owning sections for the six knobs are: → [Crafting & Economy](modlist-expanded-crafting.md) (loot distribution), → [Survival, Difficulty, and Balance](modlist-survival-combat.md) (encounter zones + difficulty), → [Magic & Perks](modlist-expanded-magic.md) (perks overhaul + XP mod), with → [Character & Progression](modlist-expanded-character.md) holding the cross-cutting growth philosophy.
+When two sections make picks that would push the list toward different combinations, the conflict is a signal to revisit this document and pick the combination explicitly. The document does not own the final answer — it owns the framework for making the answer coherent. The owning sections for the six knobs are: → @expanded-crafting-crafting--economy (loot distribution), → @survival-combat-survival-difficulty-and-balance (encounter zones + difficulty), → @expanded-magic-magic--perks (perks overhaul + XP mod), with → @expanded-character-character--progression holding the cross-cutting growth philosophy.
 
 
 
 
 // -- guide/modlist-world-feel.md --
 = Immersive Scale and World Feel
-<immersive-scale-and-world-feel>
+<world-feel-immersive-scale-and-world-feel>
 
-**MO2 Separators:** `World Feel` → `World Feel - Timescale & Travel`, `World Feel - Soundscapes`, `World Feel - Nights & Wildlife`, `World Feel - Cities & Landmarks`
+*MO2 Separators:* `World Feel` → `World Feel - Timescale & Travel`, `World Feel - Soundscapes`, `World Feel - Nights & Wildlife`, `World Feel - Cities & Landmarks`
 
 All mods in this section belong to one of the four world-feel separators as noted per subsection.
 
@@ -6333,16 +6335,16 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 === Baseline
 <immersive-scale-and-world-feel-baseline>
-- **Time Flies SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39426)) — Grounded play loops without turning into abstract clock tuning.
-- **Seasonal Calendar** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18164)) — Narrow companion if weather-and-season direction makes calendar readability worthwhile.
-- **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — High-commitment seasonal branch. Cost: 4× DynDOLOD passes, 4× grass caches, meaningful patch footprint. Only adopt if the project owns that LOD-generation workflow.
+- *Time Flies SE* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/39426")[Nexus]) — Grounded play loops without turning into abstract clock tuning.
+- *Seasonal Calendar* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/18164")[Nexus]) — Narrow companion if weather-and-season direction makes calendar readability worthwhile.
+- *Seasons of Skyrim SKSE* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/62861")[Nexus]) + *Turn of the Seasons* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/63623")[Nexus]) — High-commitment seasonal branch. Cost: 4× DynDOLOD passes, 4× grass caches, meaningful patch footprint. Only adopt if the project owns that LOD-generation workflow.
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives>
-- **Dynamic Timescale - Remade** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141531)) — Environment-aware time shifts.
-- **[Extended Stay - Longer inn](https://www.nexusmods.com/skyrimspecialedition/mods/156)** — Optional longer-stay inn mechanic. Adopt only if the project leans into "living the world."
-- **[Sleep Tight SE](https://www.nexusmods.com/skyrimspecialedition/mods/20680)** — NPC sleep schedule enforcement and sleepwear.
-- **[Sleep Tight - NPCs wear underwear](https://www.nexusmods.com/skyrimspecialedition/mods/87132)** — NPC sleepwear variant without sleep schedule changes.
+- *Dynamic Timescale - Remade* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/141531")[Nexus]) — Environment-aware time shifts.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/156")[Extended Stay - Longer inn]* — Optional longer-stay inn mechanic. Adopt only if the project leans into "living the world."
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/20680")[Sleep Tight SE]* — NPC sleep schedule enforcement and sleepwear.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/87132")[Sleep Tight - NPCs wear underwear]* — NPC sleepwear variant without sleep schedule changes.
 
 ---
 
@@ -6353,16 +6355,16 @@ How much friction, structure, and world texture sits between major locations.
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-2>
-- **Carriage and Ferry Travel Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/8379)) — Improves vanilla public-travel layer. Verify 1.6.1170 compatibility (predates AE).
-- **Carriage Drivers Are Alive** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51260)) — Names, schedules, dialogue for carriage drivers.
-- **Carriages and Stables Dialogue Bundle** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/79297)) — Bribes, rumors, destination chat. Stacks cleanly with above.
+- *Carriage and Ferry Travel Overhaul* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/8379")[Nexus]) — Improves vanilla public-travel layer. Verify 1.6.1170 compatibility (predates AE).
+- *Carriage Drivers Are Alive* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/51260")[Nexus]) — Names, schedules, dialogue for carriage drivers.
+- *Carriages and Stables Dialogue Bundle* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79297")[Nexus]) — Bribes, rumors, destination chat. Stacks cleanly with above.
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives-2>
-- **Carriage Stops of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10434)) — Broader route coverage.
-- **Fast Travel Cost** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20200)) — Economic pressure on map fast travel.
-- **Campfire** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/667)) — Camping-and-rest companion. Already in the survival conversation.
-- **Journeyman - A Fast Travel Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92220)) — Restricts fast travel unless a Travel Pack is crafted/purchased. SKSE plugin + ESP. Fits "living the world" without forcing no-fast-travel.
+- *Carriage Stops of Skyrim* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/10434")[Nexus]) — Broader route coverage.
+- *Fast Travel Cost* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/20200")[Nexus]) — Economic pressure on map fast travel.
+- *Campfire* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/667")[Nexus]) — Camping-and-rest companion. Already in the survival conversation.
+- *Journeyman - A Fast Travel Overhaul* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/92220")[Nexus]) — Restricts fast travel unless a Travel Pack is crafted/purchased. SKSE plugin + ESP. Fits "living the world" without forcing no-fast-travel.
 
 ---
 
@@ -6373,14 +6375,14 @@ Horse riding overhaul and mounted NPC transport — making horse travel feel mod
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Notes*],
-  [[HorsePower - Modernized Horse Riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169335")[HorsePower - Modernized Horse Riding]],
   [Total horse riding overhaul — directional animations, in-place turning, follow-up attacks, sliding fix, ragdoll.],
   [Requires SKSE, Address Library, Animation Motion Revolution, Pandora/Nemesis, TDM. Compatible with Convenient Horses (load HorsePower below).],
-  [[RSE - Shoulder Or Saddle](https://www.nexusmods.com/skyrimspecialedition/mods/170232)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/170232")[RSE - Shoulder Or Saddle]],
   [Pick up NPCs/corpses, carry on shoulder, secure to horse saddle for transport. RDR2-style dead-or-alive bounty hauling.],
   [Requires OAR, Pandora/Nemesis. Compatible with all horse mods. Custom followers supported.],
 )
@@ -6394,12 +6396,12 @@ How busy, calm, or deliberately spaced wilderness travel feels between destinati
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-3>
-- **Extended Encounters** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44810)) — Broad wilderness and road activity, lightweight.
+- *Extended Encounters* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/44810")[Nexus]) — Broad wilderness and road activity, lightweight.
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives-3>
-- **Radiance Encounters** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19720)) — World reactivity and consequences.
-- **Immersive Patrols SE AE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/718)) — Faction-patrol route.
+- *Radiance Encounters* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/19720")[Nexus]) — World reactivity and consequences.
+- *Immersive Patrols SE AE* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/718")[Nexus]) — Faction-patrol route.
 
 ---
 
@@ -6410,12 +6412,12 @@ What roads, settlements, wilderness, and interiors sound like during ordinary ex
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-4>
-- **Sounds of Skyrim Complete SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/8286)) — Roads, wilderness, dungeons, settlements in one exploration-facing project.
+- *Sounds of Skyrim Complete SE* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/8286")[Nexus]) — Roads, wilderness, dungeons, settlements in one exploration-facing project.
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives-4>
-- **Acoustic Space Improvement Fixes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78992)) — Interior ambience and reverb treatment.
-- **Discipline-first** — Keep current sound stack if playtesting shows world already sounds readable.
+- *Acoustic Space Improvement Fixes* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/78992")[Nexus]) — Interior ambience and reverb treatment.
+- *Discipline-first* — Keep current sound stack if playtesting shows world already sounds readable.
 
 ---
 
@@ -6426,12 +6428,12 @@ How large, inhabited, and spatially convincing cities feel during ordinary play.
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-5>
-- **Spaghetti's Cities - AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84735)) — Denser, more inhabited without giant patch-management.
+- *Spaghetti's Cities - AIO* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/84735")[Nexus]) — Denser, more inhabited without giant patch-management.
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives-5>
-- **Dawn of Skyrim (Director's Cut)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9074)) — Stronger city-core expansion. Last updated June 2020.
-- **JK's Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6289)) — Heavier all-in-one. Only if city transformation should become a loud identity pillar.
+- *Dawn of Skyrim (Director's Cut)* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/9074")[Nexus]) — Stronger city-core expansion. Last updated June 2020.
+- *JK's Skyrim* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/6289")[Nexus]) — Heavier all-in-one. Only if city transformation should become a loud identity pillar.
 
 ---
 
@@ -6442,23 +6444,23 @@ Small-to-mid-scale worldspace texture between major destinations.
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-6>
-- **Ancient Land** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22900)) — Static worldspace flavor and distant landmark presence.
-- **Point The Way** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/352)) — Road guidance and signposting.
-- **Ryn's Standing Stones** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64256)) — Locked landmark baseline. Each stone becomes a unique environmental setpiece. World geometry only, no gameplay effects.
+- *Ancient Land* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/22900")[Nexus]) — Static worldspace flavor and distant landmark presence.
+- *Point The Way* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/352")[Nexus]) — Road guidance and signposting.
+- *Ryn's Standing Stones* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/64256")[Nexus]) — Locked landmark baseline. Each stone becomes a unique environmental setpiece. World geometry only, no gameplay effects.
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives-6>
-- **Interesting Roads** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42749)) — Lighter roadside variety. Asset-only, low compatibility risk.
-- **Giant Crab Shells - Mihail's Shards of Immersion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124681)) — Coastal scenery. ESL-flagged.
-- **[Nordic Runestones](https://www.nexusmods.com/skyrimspecialedition/mods/32019)** — Optional Nordic runestone world-object additions.
-- **[Place of Power](https://www.nexusmods.com/skyrimspecialedition/mods/6109)** — Optional standing-stone mesh/texture enhancement.
-- **[Whiterun Horse Statues](https://www.nexusmods.com/skyrimspecialedition/mods/51417)** — Cosmetic Whiterun landmark additions.
-- **[Solitude Statuary](https://www.nexusmods.com/skyrimspecialedition/mods/94526)** — Cosmetic Solitude landmark additions.
-- **[s6o6t LORE - Mundus Stones](https://www.nexusmods.com/skyrimspecialedition/mods/51191)** — Mundus standing-stone lore expansion.
-- **[Immersive Laundry](https://www.nexusmods.com/skyrimspecialedition/mods/2011)** — Hanging laundry lines in cities and towns. Immersion staple.
-- **[Immersive Laundry - Animated](https://www.nexusmods.com/skyrimspecialedition/mods/92814)** — Adds animation to the laundry lines. Install after Immersive Laundry.
-- **[Immersive Laundry Improvement ILIM](https://www.nexusmods.com/skyrimspecialedition/mods/20346)** — High-quality laundry texture replacer by Pfuscher. Install after Immersive Laundry.
-- **[Immersive Laundry - Patches for Multiple City Mods](https://www.nexusmods.com/skyrimspecialedition/mods/42423)** — Compatibility patches for city overhaul mods. Install after Immersive Laundry and city mods.
+- *Interesting Roads* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/42749")[Nexus]) — Lighter roadside variety. Asset-only, low compatibility risk.
+- *Giant Crab Shells - Mihail's Shards of Immersion* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/124681")[Nexus]) — Coastal scenery. ESL-flagged.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/32019")[Nordic Runestones]* — Optional Nordic runestone world-object additions.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/6109")[Place of Power]* — Optional standing-stone mesh/texture enhancement.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/51417")[Whiterun Horse Statues]* — Cosmetic Whiterun landmark additions.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/94526")[Solitude Statuary]* — Cosmetic Solitude landmark additions.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/51191")[s6o6t LORE - Mundus Stones]* — Mundus standing-stone lore expansion.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/2011")[Immersive Laundry]* — Hanging laundry lines in cities and towns. Immersion staple.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/92814")[Immersive Laundry - Animated]* — Adds animation to the laundry lines. Install after Immersive Laundry.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/20346")[Immersive Laundry Improvement ILIM]* — High-quality laundry texture replacer by Pfuscher. Install after Immersive Laundry.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/42423")[Immersive Laundry - Patches for Multiple City Mods]* — Compatibility patches for city overhaul mods. Install after Immersive Laundry and city mods.
 
 ---
 
@@ -6469,15 +6471,15 @@ How varied and biologically alive wilderness travel feels.
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-7>
-- **Animallica SE - Skyrim Wildlife Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20456)) — More biologically varied during travel.
-- **Butterflies Land True** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/29434)) — Insects land on surfaces. No scripts, ESL-flagged, ~1 KB.
+- *Animallica SE - Skyrim Wildlife Overhaul* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/20456")[Nexus]) — More biologically varied during travel.
+- *Butterflies Land True* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/29434")[Nexus]) — Insects land on surfaces. No scripts, ESL-flagged, ~1 KB.
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives-7>
-- **One With Nature** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/13343)) — Creature relationship tuning. Script-heavy — verify AE compatibility.
-- **Savage Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37768)) — Heavier danger-and-behavior.
-- **Frogs - Mihail** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120998)) — 4 frog variants. ESL-flagged.
-- **[Wearable Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/7560)** — Optional wearable lantern mechanic for night exploration.
+- *One With Nature* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/13343")[Nexus]) — Creature relationship tuning. Script-heavy — verify AE compatibility.
+- *Savage Skyrim* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/37768")[Nexus]) — Heavier danger-and-behavior.
+- *Frogs - Mihail* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/120998")[Nexus]) — 4 frog variants. ESL-flagged.
+- *#link("https://www.nexusmods.com/skyrimspecialedition/mods/7560")[Wearable Lanterns]* — Optional wearable lantern mechanic for night exploration.
 
 ---
 
@@ -6488,13 +6490,13 @@ Roads as built infrastructure at mesh/geometry level (separate from surface text
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-8>
-- **Blended Roads - Light Plugin (ESL)** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171554)) — Locked baseline. Seamless road-to-terrain blending. No worldspace edits, no patch requirements.
-- **Interesting Roads** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42749)) — Roadside character (barrels, carts, signs). Asset-only.
-- **Point The Way** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/352)) — Navigational signposting at junctions.
+- *Blended Roads - Light Plugin (ESL)* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/171554")[Nexus]) — Locked baseline. Seamless road-to-terrain blending. No worldspace edits, no patch requirements.
+- *Interesting Roads* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/42749")[Nexus]) — Roadside character (barrels, carts, signs). Asset-only.
+- *Point The Way* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/352")[Nexus]) — Navigational signposting at junctions.
 
 === Risks & Compatibility
 <immersive-scale-and-world-feel-risks--compatibility>
-- **Northern Roads** was evaluated and rejected due to patch burden at this modlist's complexity level. **Northern Roads - Clutters Only** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126175)) is a lighter variant with only roadside clutter — re-evaluate if the full Northern Roads patch burden remains too high.
+- *Northern Roads* was evaluated and rejected due to patch burden at this modlist's complexity level. *Northern Roads - Clutters Only* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/126175")[Nexus]) is a lighter variant with only roadside clutter — re-evaluate if the full Northern Roads patch burden remains too high.
 
 ---
 
@@ -6505,22 +6507,22 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Dynamic Wind Framework - SKSE Plugin](https://www.nexusmods.com/skyrimspecialedition/mods/177023)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177023")[Dynamic Wind Framework - SKSE Plugin]],
   [Infrastructure baseline.],
-  [[Dynamic Wind - Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/177024)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177024")[Dynamic Wind - Skyrim]],
   [Required data companion with weather/location profiles.],
-  [[Particle Wind - SKSE Plugin](https://www.nexusmods.com/skyrimspecialedition/mods/174812)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174812")[Particle Wind - SKSE Plugin]],
   [Dust, leaves, snow, ash respond to wind direction.],
-  [[Realistic Boat Bobbing SE](https://www.nexusmods.com/skyrimspecialedition/mods/26080) + [BOS Edition](https://www.nexusmods.com/skyrimspecialedition/mods/88885)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26080")[Realistic Boat Bobbing SE] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/88885")[BOS Edition]],
   [Boat bobbing with BOS mesh swap support.],
-  [[R.A.S.S. - Rain Ash And Snow Shaders](https://www.nexusmods.com/skyrimspecialedition/mods/22745)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22745")[R.A.S.S. - Rain Ash And Snow Shaders]],
   [Visible rain droplets, snow accumulation, ash/frost shaders on player/NPCs. 33K+ endorsements.],
-  [[Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121420")[Animated Icebergs]],
   [Drifting iceberg meshes in northern waters.],
-  [[Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90634")[Animated Ice Floes]],
   [Animated ice floe meshes in cold regions.],
 )
 
@@ -6529,18 +6531,18 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Dynamic Inn Fireplace - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/155492)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155492")[Dynamic Inn Fireplace - OIF]],
   [Physics-enabled inn fireplace embers, smoke, and debris via OIF. Adds ambient fire life to interiors.],
-  [[No Fire During The Rain](https://www.nexusmods.com/skyrimspecialedition/mods/161369)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/161369")[No Fire During The Rain]],
   [Exterior campfires and braziers are extinguished during rain/storms. Requires OIF.],
 )
 
 === Risks & Compatibility
 <immersive-scale-and-world-feel-risks--compatibility-2>
-- **R.A.S.S. + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. handles actor surfaces. Should coexist without conflicts — verify in testing.
+- *R.A.S.S. + CS coexistence:* CS Wetness Effects handles terrain/objects; R.A.S.S. handles actor surfaces. Should coexist without conflicts — verify in testing.
 - OIF-based fire effects depend on the OIF framework being installed and stable in the core library stack.
 
 ---
@@ -6550,33 +6552,33 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
   [Darkness baseline from the weather mod and CS pair selected in → `Graphics`],
   [Base darkness level.],
-  [[Simply Darker Nights](https://www.nexusmods.com/skyrimspecialedition/mods/14269)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14269")[Simply Darker Nights]],
   [Simple image-space overlay. Verify it's not redundant before adding.],
-  [[Lanterns of Skyrim II](https://www.nexusmods.com/skyrimspecialedition/mods/30817)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/30817")[Lanterns of Skyrim II]],
   [Road and settlement exterior lantern placement. FOMOD patch hub covers ~30-50 patches.],
-  [[CS Lantern Lights - Lanterns of Skyrim II](https://www.nexusmods.com/skyrimspecialedition/mods/179964)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179964")[CS Lantern Lights - Lanterns of Skyrim II]],
   [CS particle lights for LoS II. Install after LoS II.],
-  [[Simple Wearable Lanterns - Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/132196)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132196")[Simple Wearable Lanterns - Remastered]],
   [Preferred carried-visibility branch. Modern, lightweight, no SKSE.],
 )
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Torches Candlelight and Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/162694)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/162694")[Torches Candlelight and Lanterns]],
   [Physics-equipped lanterns, NPC distribution. Requires BOS, MCM Helper.],
-  [[Realistic Usable Lanterns](https://www.nexusmods.com/skyrimspecialedition/mods/110563)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110563")[Realistic Usable Lanterns]],
   [Finite candles as consumable resource.],
-  [[Handheld Lanterns - HDT-SMP](https://www.nexusmods.com/skyrimspecialedition/mods/135973)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135973")[Handheld Lanterns - HDT-SMP]],
   [Physics-equipped with sway. Requires FSMP.],
-  [[Dynamic Torches NG - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/155838)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155838")[Dynamic Torches NG - OIF]],
   [Torch fire reacts to movement, collisions, and wind via OIF. Requires OIF framework.],
 )
 
@@ -6587,7 +6589,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 === Baseline
 <immersive-scale-and-world-feel-baseline-9>
-- **Roleplaying In Skyrim - Immersive Activators** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149908)) — Descriptive activation text (e.g., "Read Book" instead of "Activate"), hides NPC names until interaction (toggleable). 8KB, no scripts, no SKSE.
+- *Roleplaying In Skyrim - Immersive Activators* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/149908")[Nexus]) — Descriptive activation text (e.g., "Read Book" instead of "Activate"), hides NPC names until interaction (toggleable). 8KB, no scripts, no SKSE.
 
 ---
 
@@ -6601,9 +6603,9 @@ Open research for the world-feel stack is tracked in `TODO.md`.
 
 // -- guide/modlist-world-content.md --
 = World Content
-<world-content>
+<world-content-world-content>
 
-**MO2 Separators:** `World Content` → `World Content - Overhauls`, `World Content - Quests`, `World Content - Homes & Bases`, `World Content - Underwater`
+*MO2 Separators:* `World Content` → `World Content - Overhauls`, `World Content - Quests`, `World Content - Homes & Bases`, `World Content - Underwater`
 
 All mods in this section belong to one of the four world-content separators as noted per subsection.
 
@@ -6621,13 +6623,13 @@ First experiment:
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [The Marshlands],
   [Gives Hjaalmarch strong identity without redefining a central travel space.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/23062)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/23062")[Nexus]],
 )
 
 === Alternatives
@@ -6635,16 +6637,16 @@ First experiment:
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Whiterun Forest Borealis],
   [Heavier compatibility pressure.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/11343)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11343")[Nexus]],
   [Aspens Ablaze],
   [Rift identity layer. Keep only if → `Terrain & Flora` can absorb it.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39998)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/39998")[Nexus]],
 )
 
 ---
@@ -6659,55 +6661,55 @@ Authored settlement content — real places, not just denser vibes.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [The Great Cities - Minor Cities and Towns SSE],
   [First-pass baseline giving multiple underbuilt settlements stronger structure.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20272)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/20272")[Nexus]],
   [The Great Cities- Resources],
   [Prerequisite resource mod for all The Great Cities series mods. Install first.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104373)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/104373")[Nexus]],
   [Cities of the North - Dawnstar],
   [Default modular lock for four smaller hold capitals. Designed to stack.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/28952)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/28952")[Nexus]],
   [Cities of the North - Morthal],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34168)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34168")[Nexus]],
   [Cities of the North - Falkreath],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56731)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56731")[Nexus]],
   [Cities of the North - Winterhold],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40088)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/40088")[Nexus]],
   [Settlements Expanded],
   [Makes seven underbuilt settlements feel inhabited (no city geometry changes). Must load late.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/7777)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/7777")[Nexus]],
   [The Great City of Solitude SSE],
   [Port expansion with new homes, shops, warehouses, NPCs.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/22243)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22243")[Nexus]],
   [JK's Whiterun Outskirts],
   [Whiterun-area expansion. Independent of `JK's Skyrim` AIO; stack without patching.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78351)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78351")[Nexus]],
   [JK's Raven Rock],
   [Solstheim settlement. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141070)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141070")[Nexus]],
   [JK's Tel Mithryn],
   [Telvanni tower. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151512)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151512")[Nexus]],
   [FYX - Eastern Empire Company Building],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/86526)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/86526")[Nexus]],
   [FYX - Riften - Window Consistency],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/182707)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/182707")[Nexus]],
   [The City of Crossed Daggers - Riften Expansion],
   [Riften market and canal expansion with new shops, NPCs, and quests.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168629)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168629")[Nexus]],
   [Grand Solitude - The Walls of High King Erling],
   [Solitude wall and exterior expansion adding new areas and detail.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/157506)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157506")[Nexus]],
 )
 
 === Locked Faction-HQ Additions
@@ -6715,19 +6717,19 @@ Authored settlement content — real places, not just denser vibes.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [JK's Fort Dawnguard],
   [ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110645)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110645")[Nexus]],
   [JK's Castle Volkihar],
   [ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116314)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116314")[Nexus]],
   [JK's Dark Brotherhood Sanctuaries],
   [ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121950)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121950")[Nexus]],
 )
 
 === Alternatives
@@ -6735,49 +6737,49 @@ Authored settlement content — real places, not just denser vibes.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [The Great Cities],
   [Major-hold-capital follow-on. Treat as deliberate second-step.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/320)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/320")[Nexus]],
   [Capital Whiterun Expansion],
   [If JK's patch missing, mutually exclusive with JK's Whiterun edits.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37982)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37982")[Nexus]],
   [Skyfall's Fortified Morthal],
   [Morthal city overhaul. Overrides COTN Morthal — choose one.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126871)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126871")[Nexus]],
   [The Great Town of Ivarstead SSE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34505)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34505")[Nexus]],
   [Thuldor's Ivarstead],
   [Ivarstead town overhaul. Alternative to The Great Town of Ivarstead — choose one. AI-Generated Content tagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99494)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99494")[Nexus]],
   [The Great Village of Kynesgrove],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42639)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42639")[Nexus]],
   [The Great Village of Mixwater Mill SSE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36350)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/36350")[Nexus]],
   [The Great Town of Shor's Stone SSE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/35977)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35977")[Nexus]],
   [The Great City Of Winterhold SSE Edition],
   [Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17127)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17127")[Nexus]],
   [Spaghetti's Towns - Riverwood],
   [Lightweight Riverwood tweaks (clutter, fishing spot, mill supplies). ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85356)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85356")[Nexus]],
   [Spaghetti's Towns - Rorikstead],
   [Lightweight Rorikstead tweaks (food shipments, crops, farm animals). ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85802)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85802")[Nexus]],
   [COTN Winterhold Blacksmith],
   [Adds a blacksmith NPC and shop to COTN Winterhold. Requires COTN Winterhold.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44964)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/44964")[Nexus]],
   [Riton Solitude],
   [Solitude architecture overhaul. Likely conflicts with Grand Solitude — choose one.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/98390)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/98390")[Nexus]],
 )
 
 ---
@@ -6792,26 +6794,26 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [*Separator*],
   [Obscure's College of Winterhold],
   [Architecture baseline. FOMOD with ~50 built-in patches including LotD.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20514)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/20514")[Nexus]],
   [`World Content - Overhauls`],
   [Immersive College NPCs],
   [ESL-flagged, vanilla assets, no cell edits. Integration patch in Obscure's FOMOD.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9252)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/9252")[Nexus]],
   [`World Content - Overhauls`],
   [College of Winterhold - Quest Expansion],
   [Skill-gated entry, 7 starter lessons before Saarthal. ESL-flagged, by jayserpa.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66666)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/66666")[Nexus]],
   [`World Content - Quests`],
   [JK's College of Winterhold],
   [Exterior and interior overhaul. Stack on Obscure's via combo patch below.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65676)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65676")[Nexus]],
   [`World Content - Overhauls`],
 )
 
@@ -6820,19 +6822,19 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Magical College of Winterhold],
   [Cleaner fantasy aesthetic but weaker grim-dark fit.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1539)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1539")[Nexus]],
   [Immersive College of Winterhold],
   [Architecture+NPCs+crafting. Unmaintained since Dec 2020.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17004)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17004")[Nexus]],
   [College of Winterhold - Quest Expansion (alone)],
   [Questline-only option — lowest patch overhead.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66666)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/66666")[Nexus]],
 )
 
 === Patch Support
@@ -6840,20 +6842,20 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [JK's College of Winterhold (Immersive or Obscure) Combo Patches],
   [Compatibility patch enabling JK's College to stack over Obscure's or Immersive College.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/67820)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/67820")[Nexus]],
 )
 
 === Compatibility Notes
 <world-content-compatibility-notes>
 
 - Obscure's ↔ COTN Winterhold: Compatible without patch. Load COTN before OCW.
-- Obscure's ↔ CS-native lighting: No official patch. Verify CellSettings.esp forwarding for CS Light + True Light bulbs. Install **OCW Meshes Optimized and Merged for CS patch** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139165)).
+- Obscure's ↔ CS-native lighting: No official patch. Verify CellSettings.esp forwarding for CS Light + True Light bulbs. Install *OCW Meshes Optimized and Merged for CS patch* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/139165")[Nexus]).
 - Obscure's ↔ LOTD: Patch in OCW's own FOMOD. ESP-FE format.
 - ICN ↔ NPC appearance: Load ICN after broad NPC overhauls to avoid blackface.
 - Quest Expansion ↔ FDE Brelyna Maryon: Both touch her dialogue tree — test for overlap.
@@ -6870,22 +6872,22 @@ Travel-stop identity, small community presence, memorable rural pauses.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [The Great Village of Old Hroldan SSE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33189)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33189")[Nexus]],
   [Candlehearth - An Inn Overhaul],
   [Locked inn-overhaul baseline. Every inn in Skyrim.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97542)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97542")[Nexus]],
   [Ask Innkeepers To Show Room SE],
   [Preview room before renting. 5,351 endorsements.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5990)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5990")[Nexus]],
   [Inns Can Be Closed],
   [Inns close at night, must knock for entry.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57407)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57407")[Nexus]],
 )
 
 === Alternatives
@@ -6893,17 +6895,17 @@ Travel-stop identity, small community presence, memorable rural pauses.
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [Granite Hill],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14658)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14658")[Nexus]],
   [Lund's Hamlet - An Overhaul],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169830)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169830")[Nexus]],
   [The Great Town of Karthwasten SSE],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33032)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33032")[Nexus]],
   [Oakwood],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61007)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/61007")[Nexus]],
 )
 
 ---
@@ -6916,19 +6918,19 @@ Travel-stop identity, small community presence, memorable rural pauses.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Forgotten Dungeons (SSE)],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/449)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/449")[Nexus]],
   [Dungeons - Revisited],
   [Improves existing ruins rather than adding new destinations.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51798)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51798")[Nexus]],
   [Iconic's Crown of Barenziah],
   [High-quality crown/gems/display stand.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137469)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137469")[Nexus]],
 )
 
 === Alternatives
@@ -6936,41 +6938,41 @@ Travel-stop identity, small community presence, memorable rural pauses.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Hammet's Dungeon Pack 1 SE],
   [Curated hand-authored dungeons.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/12186)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12186")[Nexus]],
   [Children of the North Wind],
   [Bespoke Nordic architecture at 9 locations.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147701)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147701")[Nexus]],
   [Skyrim Underground SSE],
   [Larger subterranean layer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/131")[Nexus]],
   [Icy Dungeons Pack],
   [Icy retexture of nordic crypt dungeons. Visual-only, no record edits.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/136080)],
-  [[Ancient Falmer Ruins (Snow Elf Dungeons)](https://www.nexusmods.com/skyrimspecialedition/mods/126428)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/136080")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126428")[Ancient Falmer Ruins (Snow Elf Dungeons)]],
   [7+ Ancient Falmer dungeon/ruin locations — temples, cities, vaults across Skyrim. Hand-authored, lore-friendly.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126428)],
-  [[Embershard Mine - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/168106)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126428")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168106")[Embershard Mine - Revamped]],
   [Vanilla-plus overhaul of Embershard Mine — new paths, clutter, bandit sandbox routines, more lived-in feel. No radiant quest conflicts.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/168106)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168106")[Nexus]],
 )
 === Navmesh Support
 <world-content-navmesh-support>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Navigator - Navmesh Fixes - Patch Collection],
   [FOMOD covering Dungeons Revisited, LotD, Helgen Reborn, JK's interiors, etc. Install after content mods and Navigator are in place.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111379)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111379")[Nexus]],
 )
 
 === Dungeon Visual Overhauls
@@ -6980,25 +6982,25 @@ Visual-only overhauls for specific dungeons. No record or navmesh edits, but con
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
-  [[Bleak Falls Tower](https://www.nexusmods.com/skyrimspecialedition/mods/83466)],
-  [[Northern Scenery - Bleak Falls Barrow](https://www.nexusmods.com/skyrimspecialedition/mods/94647)],
-  [[Northern Scenery - Ansilvund](https://www.nexusmods.com/skyrimspecialedition/mods/94720)],
-  [[Northern Scenery - Angarvunde](https://www.nexusmods.com/skyrimspecialedition/mods/94650)],
-  [[Northern Scenery - IronBind Barrow](https://www.nexusmods.com/skyrimspecialedition/mods/95788)],
-  [[Bleak Falls Barrow Overhaul Version 2](https://www.nexusmods.com/skyrimspecialedition/mods/131057)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/83466")[Bleak Falls Tower]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94647")[Northern Scenery - Bleak Falls Barrow]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94720")[Northern Scenery - Ansilvund]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94650")[Northern Scenery - Angarvunde]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95788")[Northern Scenery - IronBind Barrow]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/131057")[Bleak Falls Barrow Overhaul Version 2]],
 )
 
-**Note:** Bleak Falls Tower and Bleak Falls Barrow Overhaul touch the same location (Bleak Falls Barrow). They are likely incompatible — pick one. Northern Scenery series covers separate dungeons and can be installed together.
+*Note:* Bleak Falls Tower and Bleak Falls Barrow Overhaul touch the same location (Bleak Falls Barrow). They are likely incompatible — pick one. Northern Scenery series covers separate dungeons and can be installed together.
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
-  [[Immersive Dungeon's Fire](https://www.nexusmods.com/skyrimspecialedition/mods/162277)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/162277")[Immersive Dungeon's Fire]],
   [Enhanced fire VFX and ambient fire behavior in dungeons. Requires OIF. Tentative — evaluate visual and gameplay impact.],
 )
 
@@ -7014,73 +7016,73 @@ Smaller discoverable places between headline destinations.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Hidden Hideouts of Skyrim SE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2625)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2625")[Nexus]],
   [Daedric Shrines - All in One],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78772)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78772")[Nexus]],
   [Daedric Shrines - Patch Collection],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78809)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78809")[Nexus]],
   [Environs - Abandoned Abodes],
   [ESL-flagged, zero script overhead.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/82410)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82410")[Nexus]],
   [Evolving Locations - Riverside Shack],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124268)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124268")[Nexus]],
   [Evolving Locations - Lucky Shack],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123700)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123700")[Nexus]],
   [Evolving Locations - Cliffside Retreat],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124524)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124524")[Nexus]],
   [Reinforced Civil War Camps],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153645)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153645")[Nexus]],
   [Hagraven Houses Animated],
   [BOS mesh replacer.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/101952)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/101952")[Nexus]],
   [Ivarstead Source],
   [Landscape fix. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118825)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118825")[Nexus]],
   [Rorikstead Basalt Cliffs],
   [Adds basalt cliff meshes around Rorikstead for visual improvement. No ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/25718)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/25718")[Nexus]],
   [More Wooden Bridges],
   [Adds wooden bridge meshes to locations across Skyrim. Replacer + new placements.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42201)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42201")[Nexus]],
   [Winterhold Docks],
   [Adds dock structures to Winterhold. ESL-flagged light plugin. Complements COTN Winterhold.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/100889)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/100889")[Nexus]],
   [Animated Ships],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110260)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110260")[Nexus]],
   [Finer Sails],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112517)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112517")[Nexus]],
   [Dynamic Boats at Docks - Official Patch Hub],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172901)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172901")[Nexus]],
   [Snowy Ships for Snowy Regions],
   [BOS-based.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111827)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111827")[Nexus]],
   [Better Docks],
   [Dock mesh overhaul for Skyrim and Solstheim docks. Lore-friendly.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2384)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2384")[Nexus]],
   [Unmarked Locations Pack - All In One],
   [+ addon packs for Bruma, Wyrmstooth, Gray Cowl if those worldspaces are adopted.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113660)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113660")[Nexus]],
   [Ascend - Hidden Peaks of Skyrim],
   [Climbing challenge locations across Skyrim. Complements parkour movement.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120802)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120802")[Nexus]],
   [Graveyards of the Marshlands],
   [Atmospheric graveyard locations in Hjaalmarch. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132767)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132767")[Nexus]],
 )
 
 === Alternatives
@@ -7088,49 +7090,49 @@ Smaller discoverable places between headline destinations.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Hold Border Guards - Definitive Edition],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61170)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/61170")[Nexus]],
   [Hold Border Banners],
   [Visual hold-border signposts and banners. Mesh-only, no ESP.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1737)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1737")[Nexus]],
   [Immersive Hold Borders SSE Fixed],
   [Hold-border checkpoint improvements with structures and guards.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47918)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47918")[Nexus]],
   [Nordic Ruins of Skyrim SSE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20382)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/20382")[Nexus]],
   [Hidden Hideouts City Edition SE],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2626)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2626")[Nexus]],
   [7000 Steps of Sanctum],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/128478)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128478")[Nexus]],
   [Gildergreen Regrown],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/348)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/348")[Nexus]],
   [The Gildergreen Grows],
   [Incompatible with Regrown.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/147742)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147742")[Nexus]],
   [HAG Occult Orphan Rock],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137996)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137996")[Nexus]],
   [Lore Friendly Roadside Ruins],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/130581)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/130581")[Nexus]],
   [HAG - Occult Witchmist Grove],
   [Witch-themed point of interest. Same series as HAG Occult Orphan Rock.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/143685)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143685")[Nexus]],
   [HAG - Occult Cradle Stone Tower],
   [Occult tower point of interest. Same series.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148542)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148542")[Nexus]],
   [Haunted Shipwrecks],
   [Haunted shipwreck encounter locations. BOS-based, no cell edits.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142986)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142986")[Nexus]],
 )
 
 ---
@@ -7143,19 +7145,19 @@ Smaller discoverable places between headline destinations.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Depths of Skyrim - An Underwater Overhaul SSE],
   [New grass, coral, kelp, 1000+ fish, unmarked treasures.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26913)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26913")[Nexus]],
   [Depths of Skyrim - Mesh fixes],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174995)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174995")[Nexus]],
   [More Underwater Treasures - AIO],
   [56 treasures (Skyrim) + 35 (Solstheim). Marked compatible with Depths of Skyrim.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/128247)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128247")[Nexus]],
 )
 
 === Setup Requirements
@@ -7177,55 +7179,55 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Simple Fishing Overhaul],
   [200+ lines improved dialogue, NPC reactions, MCM. ESL-flagged, by jayserpa.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/103440)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/103440")[Nexus]],
   [Hunterborn SE],
   [Dressing, skinning, harvesting, butchering. 20K endorsements. Use `Hunterborn Extender` via Synthesis.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/7900)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/7900")[Nexus]],
   [Headhunter - Bounties Redone],
   [Locked. Transforms vanilla bounties. By jayserpa, 28K+ endorsements.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119228)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119228")[Nexus]],
   [Skyrim's Got Talent],
   [Locked. Instrument practice, skill progression, inn performances. By jayserpa.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/106106)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106106")[Nexus]],
   [SGT - Player Reactions Addon],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/78629)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78629")[Nexus]],
   [SGT - Show in UI],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135473)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135473")[Nexus]],
   [SGT - Visual Improvements],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172079)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172079")[Nexus]],
   [Immersive Fishing],
   [New spots, rods, fish types, radiant quests.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115249)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115249")[Nexus]],
   [Fishermen Fish],
   [No ESP, mesh replacer only.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134408)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/134408")[Nexus]],
   [Garbage Loot - Barrels and Sacks],
   [ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18047)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18047")[Nexus]],
   [Brawling - No Hitting Bystanders],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116941)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116941")[Nexus]],
   [Skyshards - Tweaks and ESLed],
   [Collectible shard system tweaks and ESL conversion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115820)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115820")[Nexus]],
   [Skyshards and Immersive interactions FLM],
   [First/Last mod patch for Skyshards + Immersive Interactions.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/68072)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68072")[Nexus]],
   [The Dragonborn's Bestiary - Lively's Alchemy Addon],
   [Alchemy recipe data addon for the Bestiary book.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135010)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135010")[Nexus]],
   [The Dragonborn's Fishiary - Bestiary Addon],
   [Fishing data addon for the Fishiary book.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134739)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/134739")[Nexus]],
 )
 
 === Alternatives
@@ -7233,34 +7235,34 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Simple Hunting Overhaul],
   [Simpler alternative by jayserpa. If chosen, replaces Hunterborn. Requires `Dynamic Activation Key`.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95943)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95943")[Nexus]],
   [Dynamic Activation Key],
   [Required by SHO.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/96273)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/96273")[Nexus]],
   [Immersive Hunting Animations],
   [SHO companion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/96961)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/96961")[Nexus]],
   [Immersive Carcass Carrying],
   [SHO companion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99867)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99867")[Nexus]],
   [Hunters Loot],
   [SHO companion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/119348)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119348")[Nexus]],
   [Streamlined Fishing],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80683)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80683")[Nexus]],
   [Become a Bard / Bards Reborn],
   [Not compatible with SGT without patch.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47994)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47994")[Nexus]],
   [Fishing Extension Framework],
   [Required for new-lands fishing.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139626)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139626")[Nexus]],
 )
 
 ---
@@ -7268,7 +7270,7 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 == Weapons, Armor And Equipment Additions
 <world-content-weapons-armor-and-equipment-additions>
 
-Weapons, armor, artifacts, and clothing content has been consolidated into its own dedicated section. See → [Weapons & Armor](modlist-weapons-armor.md).
+Weapons, armor, artifacts, and clothing content has been consolidated into its own dedicated section. See → @weapons-armor-weapons--armor.
 
 ---
 
@@ -7280,37 +7282,37 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Sidequests of Skyrim],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54245)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54245")[Nexus]],
   [Missives],
   [Dual everyday-quest baseline with Sidequests.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17576)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17576")[Nexus]],
   [Missives - Voice and Quest Expansion],
   [20 new types, voiced.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/166094)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/166094")[Nexus]],
   [Missives - Notes Retexture],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46201)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46201")[Nexus]],
   [Missives - Notes Retexture Darkened],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111765)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111765")[Nexus]],
   [Diverse Witcher Missives Boards],
   [BOS-based.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111770)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111770")[Nexus]],
   [Missives - Unique Missive Boards],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111375)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111375")[Nexus]],
   [Missives Quest Conversion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135984)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135984")[Nexus]],
   [Missives - Worldspace Additions],
   [Required for new-lands.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26788)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26788")[Nexus]],
 )
 
 === Faction Expansions
@@ -7318,44 +7320,44 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [A Chance Arrangement Plus Plus],
   [Thieves Guild quest overhaul.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175885)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175885")[Nexus]],
   [Opulent Thieves Guild],
   [Visual-progression companion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10932)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/10932")[Nexus]],
   [Improved Companions - Questline Tweaks],
   [Removes forced radiant-quest spam between Companions missions.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120609)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120609")[Nexus]],
   [The Companions Extended Collection],
   [Patches for several Companions mods. Integrates quest/dialogue/visual overhauls.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/95001)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95001")[Nexus]],
   [Penitus Oculatus],
   [Locked. "Destroy the Dark Brotherhood!" replacement faction with radiant quests. 11.5K endorsements.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21061)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21061")[Nexus]],
   [The Brotherhood of Old - Dark Brotherhood Continued],
   [Post-DB-questline continuation with new sanctuary, quests, and radiant content. Complements Penitus Oculatus alternative route.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15322)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/15322")[Nexus]],
 )
 
-**Optional alternative:** **Destroy The Dark Brotherhood - Quest Expansion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118229)) — jayserpa's quest-expansion approach to destroying the DB. *Incompatible with Penitus Oculatus — choose one.*
+*Optional alternative:* *Destroy The Dark Brotherhood - Quest Expansion* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/118229")[Nexus]) — jayserpa's quest-expansion approach to destroying the DB. #emph[Incompatible with Penitus Oculatus — choose one.]
 
 === Quest Pacing
 <world-content-quest-pacing>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [At Your Own Pace],
   [Quest pacing mod — delays main quest, faction quests, and College entry via optional skill-gating and trigger delays. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52704)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/52704")[Nexus]],
 )
 
 === Civil War Content
@@ -7363,92 +7365,92 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
-  [[Open Civil War SSE](https://www.nexusmods.com/skyrimspecialedition/mods/11076)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11076")[Open Civil War SSE]],
   [Expands civil war into a dynamic campaign with multiple front-lines, siege battles, and faction maneuvering. High-commitment — significant world interaction and patch footprint.],
-  [[Serious Civil War Defense for OCW](https://www.nexusmods.com/skyrimspecialedition/mods/81557)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81557")[Serious Civil War Defense for OCW]],
   [Adds settlement defense scenarios triggered by OCW campaign events. Requires Open Civil War.],
-  [[After the Civil War - Siege Damage Repairs](https://www.nexusmods.com/skyrimspecialedition/mods/20668)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/20668")[After the Civil War - Siege Damage Repairs]],
   [Post-war world repair: damaged cities and fortifications are restored over time. Complements OCW.],
 )
 
-**Alternatives:** **Civil War Lines Expansion** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/77566)) — jayserpa's dialogue expansion for civil war soldiers. Also listed in → [NPCs](modlist-npcs.md) (Dialogue Expansions). Check for overlap with the NPCs entry.
+*Alternatives:* *Civil War Lines Expansion* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/77566")[Nexus]) — jayserpa's dialogue expansion for civil war soldiers. Also listed in → @npcs-npcs (Dialogue Expansions). Check for overlap with the NPCs entry.
 
 === Quest Expansions (Vanilla+)
 <world-content-quest-expansions-vanilla>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [House of Horrors Quest Expansion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57285)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57285")[Nexus]],
   [Paarthurnax Quest Expansion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/51711)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51711")[Nexus]],
   [The Only Cure Quest Expansion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57683)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57683")[Nexus]],
   [The Whispering Door Quest Expansion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/76606)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76606")[Nexus]],
   [Quest Expansions Patches Hub],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113083)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113083")[Nexus]],
   [Saints and Seducers Extended Cut],
   [Transforms thin vanilla Creation into proper Shivering Isles return.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/72772)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/72772")[Nexus]],
   [Infiltration - Quest Expansion],
   [Thieves Guild / Skyrim quest expansion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114054)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114054")[Nexus]],
   [Caught Red Handed - Quest Expansion],
   [Riften jail quest expansion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/65708)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65708")[Nexus]],
   [The Heart of Dibella - Quest Expansion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94863)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94863")[Nexus]],
   [Innocence Lost - Quest Expansion],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80974)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80974")[Nexus]],
   [The Taste of Death - Quest Addon],
   [Namira quest expansion.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123173)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123173")[Nexus]],
   [More to do in the Soul Cairn],
   [Soul Cairn quest and content addon.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/115962)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115962")[Nexus]],
   [Boethiah's Calling - Alternate Questline],
   [Boethiah daedric quest alternative.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121499)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121499")[Nexus]],
   [Mephala's Curse - Whispering Door Addon],
   [Whispering Door quest addon. Separable from the Quest Expansion — evaluate for overlap.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120650)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120650")[Nexus]],
 )
 
-**Alternative:** **Boethiah for Good Guys** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/329)) — older alternative that allows completing Boethiah's Calling without sacrificing a follower. Incompatible with Boethiah's Calling - Alternate Questline — choose one.
-| Dungeon Quests are not Miscellaneous     | Converts 7 misc dungeon quests to full side quests with journal entries.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/123559) |
+*Alternative:* *Boethiah for Good Guys* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/329")[Nexus]) — older alternative that allows completing Boethiah's Calling without sacrificing a follower. Incompatible with Boethiah's Calling - Alternate Questline — choose one.
+| Dungeon Quests are not Miscellaneous     | Converts 7 misc dungeon quests to full side quests with journal entries.                | #link("https://www.nexusmods.com/skyrimspecialedition/mods/123559")[Nexus] |
 
 === Standalone Adventures
 <world-content-standalone-adventures>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [The Forgotten City],
   [Locked. Most decorated Skyrim quest mod. Self-contained murder-mystery, LoTD integration.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1179)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1179")[Nexus]],
   [Mysteries of the Dwemer],
   [Dwemer-theme quest mod.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114863)],
-  [[Frozen in Time - Definitely Not Another Snow Elf Waifu Mod](https://www.nexusmods.com/skyrimspecialedition/mods/39732)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114863")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/39732")[Frozen in Time - Definitely Not Another Snow Elf Waifu Mod]],
   [Quest to reanimate an ancient Snow Elf warrior. 2-part quest, 2 dungeons, custom assets, portable player home. 2,833 endorsements.],
   [AI-voiced (ElevenLabs). Vanilla/UUNP/CBBE body options. No AFT during quest.],
 )
@@ -7461,23 +7463,23 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
   [Wyrmstooth],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/45565)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/45565")[Nexus]],
   [Beyond Skyrim - Bruma SE],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10917)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/10917")[Nexus]],
   [Beyond Reach],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3008)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3008")[Nexus]],
   [Falskaar],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2057)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2057")[Nexus]],
   [The Gray Cowl of Nocturnal - 10th Anniversary],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141327)],
-  [[The Gray Cowl of Nocturnal - Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/125416)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141327")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/125416")[The Gray Cowl of Nocturnal - Tweaks]],
   [Gameplay tweaks for Gray Cowl of Nocturnal. Install alongside the base mod.],
   [The Isle Of Valefrost SE],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/103215)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/103215")[Nexus]],
 )
 
 === New Lands (High-Commitment)
@@ -7485,13 +7487,13 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
-  [[Land of Vominheim SE](https://www.nexusmods.com/skyrimspecialedition/mods/31472)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/31472")[Land of Vominheim SE]],
   [Expansive new worldspace — Valenwood-themed region, quests, dungeons, followers. High patch and compatibility debt. Evaluate against existing new-lands commitments.],
-  [[Snowpoint](https://www.nexusmods.com/skyrimspecialedition/mods/146533)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146533")[Snowpoint]],
   [New snow-covered worldspace with quest content. Lighter footprint than Vominheim.],
 )
 
@@ -7502,56 +7504,56 @@ The Vicn trilogy covers three connected quest mods. VIGILANT is already in the a
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Nexus*],
-  [[GLEN-MORIL - English Translation](https://www.nexusmods.com/skyrimspecialedition/mods/33146)],
-  [[GLEN-MORIL - ElvenLabs Voiced](https://www.nexusmods.com/skyrimspecialedition/mods/156978)],
-  [[GLEN-MORIL - Delayed Start](https://www.nexusmods.com/skyrimspecialedition/mods/57963)],
-  [[Unslaad SE](https://www.nexusmods.com/skyrimspecialedition/mods/11789)],
-  [[UNSLAAD - ElevenLabs Voiced](https://www.nexusmods.com/skyrimspecialedition/mods/155073)],
-  [[VIGILANT SE](https://www.nexusmods.com/skyrimspecialedition/mods/11849)],
-  [[VIGILANT - English Translation (Plus Voiced Addon)](https://www.nexusmods.com/skyrimspecialedition/mods/11894)],
-  [[VIGILANT (missing lines) - ElevenLabs Voiced](https://www.nexusmods.com/skyrimspecialedition/mods/161442)],
-  [[VIGILANT - GLENMORIL - UNSLAAD - Book Covers](https://www.nexusmods.com/skyrimspecialedition/mods/32940)],
-  [[Animated Armoury Unslaad Patch](https://www.nexusmods.com/skyrimspecialedition/mods/89322)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33146")[GLEN-MORIL - English Translation]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/156978")[GLEN-MORIL - ElvenLabs Voiced]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57963")[GLEN-MORIL - Delayed Start]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11789")[Unslaad SE]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155073")[UNSLAAD - ElevenLabs Voiced]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11849")[VIGILANT SE]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11894")[VIGILANT - English Translation (Plus Voiced Addon)]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/161442")[VIGILANT (missing lines) - ElevenLabs Voiced]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32940")[VIGILANT - GLENMORIL - UNSLAAD - Book Covers]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89322")[Animated Armoury Unslaad Patch]],
 )
 
-All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)). Voiced addons replace subtitle-only dialogue. Delayed Start postpones GLEN-MORIL's initiation until the player reaches a minimum level. The VIGILANT voiced addon covers all missing lines for v1.8.0 and requires the English Translation.
+All three have LoTD integration (→ @lotd-legacy-of-the-dragonborn). Voiced addons replace subtitle-only dialogue. Delayed Start postpones GLEN-MORIL's initiation until the player reaches a minimum level. The VIGILANT voiced addon covers all missing lines for v1.8.0 and requires the English Translation.
 
 ==== Standalone Quest Mods
 <world-content-standalone-quest-mods>
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Moon and Star],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/4301)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4301")[Nexus]],
   [The Wheels of Lull],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/748)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/748")[Nexus]],
   [Whispers of the Depths],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/127087)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/127087")[Nexus]],
   [Before the End],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/142238)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142238")[Nexus]],
   [Val Serano - Pirate Custom Voiced Follower and Quest Adventure],
   [],
   [],
   [The Frozen Heart],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159911)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159911")[Nexus]],
   [Midnight Sun],
   [],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163295)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/163295")[Nexus]],
   [Echoes of Oblivion],
   [AI-Generated Content.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153979)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153979")[Nexus]],
 )
 
 ==== Lightweight Additions
@@ -7559,56 +7561,56 @@ All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
   [Leaps of Faith],
   [Lightweight pilgrimage. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/53074)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53074")[Nexus]],
   [Rescue Missions],
   [Radiant rescue. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/144251)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/144251")[Nexus]],
   [Sleepwalking Into A Nightmare - New Daedric Prince Quest],
   [New Daedric quest mod. Evaluate for LoTD integration.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141047)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141047")[Nexus]],
   [SIRENROOT - Deluge of Deceit],
   [Quest adventure with new dungeon, voice acting. LoTD patch status: needs verification.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/70917)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/70917")[Nexus]],
   [Legends of Aetherium - New Dungeon - Quest - Armour - Weapons],
   [Quest mod expanding the Aetherium storyline.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/69807)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69807")[Nexus]],
   [Restoring the Aretino Residence SE],
   [Short quest adding Aretino family home restoration. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/30447)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/30447")[Nexus]],
   [Better Skyrim Parties - Weddings - Funerals - Crowd Events Overhaul],
   [Overhauls crowd events and ceremonies. Lightweight, ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/102594)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102594")[Nexus]],
   [SpiderWIP],
   [Morthal-themed quest mod. Evaluate for coverage overlap.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/84053)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84053")[Nexus]],
   [Better Courier],
   [Courier improvements — better delivery dialogue and behavior.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/40709)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/40709")[Nexus]],
   [Quests Are In Skyrim],
   [Restricts radiant quest destinations to Skyrim province only. ESL-flagged.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18416)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18416")[Nexus]],
   [Andrealletius' Harder Quests],
   [Higher requirements for quest objectives — thaneships, nirnroot, solstheim quests, etc.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/27939)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27939")[Nexus]],
   [Finding Derkeethus],
   [Quest expansion to find and rescue the Argonian follower.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/19550)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/19550")[Nexus]],
   [Finding Derkeethus Duplicate FormID Fix],
   [Fix for duplicate FormID conflict.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/46391)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46391")[Nexus]],
   [Jiub's Opus],
   [Quest to find Jiub's journal pages across Solstheim.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17056)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17056")[Nexus]],
   [Informed Mail Delivery],
   [Quest-aware mail delivery with timed courier dispatches.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/66339)],
-  [[The Surviving Falmer - An Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/131974)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/66339")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/131974")[The Surviving Falmer - An Alternate Start]],
   [Alternate start addon for Snow Elf player characters + small player home. Supports LAL and Alternate Perspective.],
   [Requires a Snow Elf race mod (The Ancient Falmer, Lost Races of Nirn, or similar).],
 )
@@ -7618,13 +7620,13 @@ All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)
 
 // -- guide/modlist-npcs.md --
 = NPCs
-<npcs>
+<npcs-npcs>
 
-**MO2 Separators:** `NPCs` → `NPCs - Appearance`, `NPCs - Population`, `NPCs - Followers`
+*MO2 Separators:* `NPCs` → `NPCs - Appearance`, `NPCs - Population`, `NPCs - Followers`
 
 All mods in this section belong to one of the three NPC separators as noted per subsection.
 
-> Creature/enemy content moved to → [Enemies & Creatures](modlist-creatures.md).
+> Creature/enemy content moved to → @creatures-enemies--creatures.
 
 ---
 
@@ -7635,50 +7637,50 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Northbourne NPCs of Whiterun Hold](https://www.nexusmods.com/skyrimspecialedition/mods/35404)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35404")[Northbourne NPCs of Whiterun Hold]],
   [Baseline],
   [Modern, regionally textured look. Grounded route.],
-  [[Northbourne NPCs of Winterhold](https://www.nexusmods.com/skyrimspecialedition/mods/43413)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/43413")[Northbourne NPCs of Winterhold]],
   [Baseline],
   [Same author/series. Regionally textured look for Winterhold.],
-  [[The Men of Winter SSE](https://www.nexusmods.com/skyrimspecialedition/mods/10902)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/10902")[The Men of Winter SSE]],
   [Baseline],
   [Dedicated male coverage. Last updated Aug 2020 — verify 1.6.1170.],
-  [[Children of the First — Altmer NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/122167)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122167")[Children of the First — Altmer NPC Overhaul]],
   [Baseline],
   [Race-specific modular overlay for Altmer.],
-  [[Children of the Ash — Dunmer NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/122165)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122165")[Children of the Ash — Dunmer NPC Overhaul]],
   [Baseline],
   [Race-specific modular overlay for Dunmer.],
-  [[High Poly True to Vanilla NPC Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/74226)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74226")[High Poly True to Vanilla NPC Overhaul]],
   [Alternative],
   [Vanilla-faithful fallback. Broad NPC coverage.],
-  [[Pandorable's NPCs (AIO)](https://www.nexusmods.com/skyrimspecialedition/mods/78524)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78524")[Pandorable's NPCs (AIO)]],
   [Alternative],
   [Beauty-forward branch. Broad female coverage.],
-  [[DIbella's Blessing](https://www.nexusmods.com/skyrimspecialedition/mods/82606)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82606")[DIbella's Blessing]],
   [Alternative],
   [233 female characters.],
-  [[Males Of Skyrim by zzjay](https://www.nexusmods.com/skyrimspecialedition/mods/37485)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37485")[Males Of Skyrim by zzjay]],
   [Alternative],
   [Broad male coverage.],
-  [[The Wolven Widow — SerketHetyt's Elisif Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/62209)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62209")[The Wolven Widow — SerketHetyt's Elisif Overhaul]],
   [Alternative],
   [Single-NPC overhaul (Elisif).],
-  [[Val Serano - Another Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/168735)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168735")[Val Serano - Another Replacer]],
   [Alternative],
   [Single-NPC replacer for Val Serano (Pirate Quest Follower).],
-  [[Pride of Skyrim — AIO Male HPH Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/48904)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/48904")[Pride of Skyrim — AIO Male HPH Overhaul]],
   [Alternative],
   [~400 male NPCs with High Poly Head. Broad coverage.],
-  [[BeastHHBB](https://www.nexusmods.com/skyrimspecialedition/mods/38480)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/38480")[BeastHHBB]],
   [Alternative],
   [Khajiit and Argonian NPC/PC replacer — player character, NPCs, adoptable children, Interesting NPCs integration, fangs.],
-  [[Bijin Wives SE](https://www.nexusmods.com/skyrimspecialedition/mods/11247)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11247")[Bijin Wives SE]],
   [Alternative],
   [Female NPC replacer for wives and selected NPCs.],
 )
@@ -7688,12 +7690,12 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 
 Stack broad-coverage mods first, then region/race-specific, then single-NPC overhauls last. The later mod wins for any NPC it covers.
 
-1. **Broad base layer** — Choose one male and one female branch: `High Poly True to Vanilla`, `Pandorable's`, `DIbella's Blessing`, `Males of Skyrim`, or `Pride of Skyrim`.
-2. **Region or gender-specific** — `Northbourne NPCs of Whiterun Hold` (Whiterun only), `The Men of Winter SSE` (males broadly). Override specific holds or gender groups on top of the base layer.
-3. **Race-specific overlays** — `Children of the First` (Altmer), `Children of the Ash` (Dunmer) — load after general overhauls so race-specific facegen wins for their target NPCs.
-4. **Single-NPC finishers** — `The Wolven Widow` (Elisif) — load last so named individuals use the intended facegen.
+1. *Broad base layer* — Choose one male and one female branch: `High Poly True to Vanilla`, `Pandorable's`, `DIbella's Blessing`, `Males of Skyrim`, or `Pride of Skyrim`.
+2. *Region or gender-specific* — `Northbourne NPCs of Whiterun Hold` (Whiterun only), `The Men of Winter SSE` (males broadly). Override specific holds or gender groups on top of the base layer.
+3. *Race-specific overlays* — `Children of the First` (Altmer), `Children of the Ash` (Dunmer) — load after general overhauls so race-specific facegen wins for their target NPCs.
+4. *Single-NPC finishers* — `The Wolven Widow` (Elisif) — load last so named individuals use the intended facegen.
 
-After the appearance stack is final, run `FacegenBaseline` via Synthesis (→ [Patcher Reference](\facegenbaseline--npc-stat-patcher-reference)).
+After the appearance stack is final, run `FacegenBaseline` via Synthesis (→ [Patcher Reference](facegenbaseline--npc-stat-patcher-reference)).
 
 ---
 
@@ -7704,11 +7706,11 @@ NPC schedule, behavior, and AI overhauls that affect how NPCs act rather than ho
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[AI Overhaul SSE](https://www.nexusmods.com/skyrimspecialedition/mods/21654)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21654")[AI Overhaul SSE]],
   [Baseline],
   [NPC schedule and behavior overhaul. Pairs with any appearance route.],
 )
@@ -7717,7 +7719,7 @@ NPC schedule, behavior, and AI overhauls that affect how NPCs act rather than ho
 <npcs-risks--compatibility>
 - AI Overhaul SSE is compatible with all listed appearance overhauls. Load AI Overhaul after appearance mods so schedule records win.
 - Quest mods that move NPC schedules may need AI Overhaul patches — check the mod page for supported mods.
-- Do not install `Immersive Citizens — AI Overhaul SE` alongside AI Overhaul SSE (→ [Population](\civilian-and-traveler-population-additions)).
+- Do not install `Immersive Citizens — AI Overhaul SE` alongside AI Overhaul SSE (→ [Population](civilian-and-traveler-population-additions)).
 
 ---
 
@@ -7728,26 +7730,26 @@ Extra background people making towns, inns, and roads feel used — without re-d
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Crowded Streets](https://www.nexusmods.com/skyrimspecialedition/mods/127723)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/127723")[Crowded Streets]],
   [Baseline],
   [Compatibility-first crowd: zero cell edits, dynamic cleanup, configurable density.],
-  [[Travellers of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1973)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1973")[Travellers of Skyrim]],
   [Alternative],
   [Road-traveler route. LE-era port — verify 1.6.1170.],
-  [[Populated Skyrim Reborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/32190)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32190")[Populated Skyrim Reborn SSE]],
   [Alternative],
   [Heavier legacy route.],
-  [[MINPCs](https://www.nexusmods.com/skyrimspecialedition/mods/29483)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29483")[MINPCs]],
   [Alternative],
   [Adventurer-style incidental content.],
-  [[Immersive Citizens — AI Overhaul SE](https://www.nexusmods.com/skyrimspecialedition/mods/173)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173")[Immersive Citizens — AI Overhaul SE]],
   [Alternative],
   [Known conflict with AI Overhaul SSE.],
-  [[Interesting NPCs SE (3DNPC)](https://www.nexusmods.com/skyrimspecialedition/mods/29194)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29194")[Interesting NPCs SE (3DNPC)]],
   [Alternative],
   [Authored content NPCs.],
 )
@@ -7761,29 +7763,29 @@ Making named NPCs feel more regionally distinct without changing appearance or d
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Coverage*],
   [*Notes*],
-  [[NPCs Names Distributor](https://www.nexusmods.com/skyrimspecialedition/mods/73081)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73081")[NPCs Names Distributor]],
   [Framework],
   [Distributes name variations by race, faction, location.],
-  [[Tamrielic Names](https://www.nexusmods.com/skyrimspecialedition/mods/73153)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73153")[Tamrielic Names]],
   [Human NPCs],
   [Nord, Imperial, Redguard, Breton.],
-  [[Reachmen Tribes Names](https://www.nexusmods.com/skyrimspecialedition/mods/73312)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73312")[Reachmen Tribes Names]],
   [Forsworn / Reach],
   [],
-  [[Ashlander Nomads Names](https://www.nexusmods.com/skyrimspecialedition/mods/73315)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73315")[Ashlander Nomads Names]],
   [Dunmer / Solstheim],
   [],
-  [[Dovah Names](https://www.nexusmods.com/skyrimspecialedition/mods/74053)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74053")[Dovah Names]],
   [Dragons],
   [],
-  [[Daedric Names](https://www.nexusmods.com/skyrimspecialedition/mods/74055)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74055")[Daedric Names]],
   [Daedra],
   [],
-  [[Player Name Randomizer](https://www.nexusmods.com/skyrimspecialedition/mods/92438)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92438")[Player Name Randomizer]],
   [Player],
   [Randomizes display name on new game.],
 )
@@ -7797,44 +7799,44 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Notes*],
-  [[Dialogue Expansion — Windhelm](https://www.nexusmods.com/skyrimspecialedition/mods/112415)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112415")[Dialogue Expansion — Windhelm]],
   [180+ lines for citizens/guards/court],
-  [**Discontinued** — installed copies work, no future updates.],
-  [[Dialogue Expansion — Imperial Soldiers](https://www.nexusmods.com/skyrimspecialedition/mods/113208)],
+  [*Discontinued* — installed copies work, no future updates.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113208")[Dialogue Expansion — Imperial Soldiers]],
   [Imperial soldier dialogue],
-  [**Discontinued** — same status.],
-  [[Bandit Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/87961)],
+  [*Discontinued* — same status.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/87961")[Bandit Lines Expansion]],
   [Spliced vanilla bandit assets],
   [],
-  [[Extended Bandit Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/113168)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113168")[Extended Bandit Dialogue]],
   [Additional bandit lines],
   [],
-  [[Falmer Servant Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/120995)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120995")[Falmer Servant Lines Expansion]],
   [483 lines, pro voice talent],
   [ESL-flagged. Optional plugins: More Spawns, More Unique Servants.],
-  [[Civil War Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/139920)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139920")[Civil War Lines Expansion]],
   [Civil war faction dialogue],
   [],
-  [[Forsworn and Thalmor Lines Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/130880)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/130880")[Forsworn and Thalmor Lines Expansion]],
   [Forsworn / Thalmor dialogue],
   [],
-  [[Guard Dialogue Overhaul SE](https://www.nexusmods.com/skyrimspecialedition/mods/22075)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22075")[Guard Dialogue Overhaul SE]],
   [600+ lines for guards reacting to player deeds/gear],
   [26.2K endorsements. Older mod — verify 1.6.1170.],
-  [[Shouts of Stallholders](https://www.nexusmods.com/skyrimspecialedition/mods/139025)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139025")[Shouts of Stallholders]],
   [AI-Generated Content],
   [Evaluate voice quality.],
-  [[Naked Comments Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/142249)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142249")[Naked Comments Overhaul]],
   [NPC comments on player nudity.],
   [Alternative],
-  [[Collision Dialogue Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/115079)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115079")[Collision Dialogue Overhaul]],
   [Dialogue triggered by NPC collision events.],
   [Alternative],
-  [[Chattier Hunters and Fishermen](https://www.nexusmods.com/skyrimspecialedition/mods/179154)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179154")[Chattier Hunters and Fishermen]],
   [Expanded ambient dialogue for hunters and fishermen.],
   [Alternative],
 )
@@ -7842,77 +7844,77 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 === Follower Dialogue Expansion (FDE) series by Anbeegod
 <npcs-follower-dialogue-expansion-fde-series-by-anbeegod>
 
-> AI-voiced, each ESL-flagged. Core entries listed below; the [official FDE collection](https://next.nexusmods.com/skyrimspecialedition/collections/uu3kpb) includes 26 mods total.
+> AI-voiced, each ESL-flagged. Core entries listed below; the #link("https://next.nexusmods.com/skyrimspecialedition/collections/uu3kpb")[official FDE collection] includes 26 mods total.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Follower*],
   [*Lines*],
   [*Notes*],
-  [[FDE — Aela the Huntress](https://www.nexusmods.com/skyrimspecialedition/mods/114801)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114801")[FDE — Aela the Huntress]],
   [2700+],
   [Romance arc, werewolf mechanics.],
-  [[FDE — Brelyna Maryon](https://www.nexusmods.com/skyrimspecialedition/mods/113359)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113359")[FDE — Brelyna Maryon]],
   [400+],
   [],
-  [[FDE — Lydia](https://www.nexusmods.com/skyrimspecialedition/mods/119226)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119226")[FDE — Lydia]],
   [400+],
   [],
-  [[FDE — Roggi Knot-Beard](https://www.nexusmods.com/skyrimspecialedition/mods/134694)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/134694")[FDE — Roggi Knot-Beard]],
   [],
   [],
-  [[FDE — Aranea Ienith](https://www.nexusmods.com/skyrimspecialedition/mods/141907)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141907")[FDE — Aranea Ienith]],
   [495],
   [],
-  [[FDE — Borgakh the Steel Heart](https://www.nexusmods.com/skyrimspecialedition/mods/133571)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/133571")[FDE — Borgakh the Steel Heart]],
   [478],
   [],
-  [[FDE — Uthgerd the Unbroken](https://www.nexusmods.com/skyrimspecialedition/mods/122487)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122487")[FDE — Uthgerd the Unbroken]],
   [233],
   [],
-  [[FDE — Ysolda](https://www.nexusmods.com/skyrimspecialedition/mods/124787)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124787")[FDE — Ysolda]],
   [180],
   [],
-  [[FDE — Jenassa](https://www.nexusmods.com/skyrimspecialedition/mods/120255)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120255")[FDE — Jenassa]],
   [500+],
   [],
-  [[FDE — Olfina Gray-Mane](https://www.nexusmods.com/skyrimspecialedition/mods/172562)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172562")[FDE — Olfina Gray-Mane]],
   [578],
   [],
-  [[FDE — Mjoll the Lioness](https://www.nexusmods.com/skyrimspecialedition/mods/116025)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116025")[FDE — Mjoll the Lioness]],
   [451],
   [Quest and location awareness.],
-  [[FDE — Faralda](https://www.nexusmods.com/skyrimspecialedition/mods/155510)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155510")[FDE — Faralda]],
   [441],
   [Self-contained follower, personal quest. Verify overlap with College Quest Expansion.],
-  [[FDE — Eola](https://www.nexusmods.com/skyrimspecialedition/mods/157012)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157012")[FDE — Eola]],
   [233],
   [Namira cultist dialogue.],
 )
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Notes*],
-  [[Extended NPC Dialogue Hub](https://www.nexusmods.com/skyrimspecialedition/mods/179341)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179341")[Extended NPC Dialogue Hub]],
   [Central dialogue framework],
   [],
-  [[Small Talk](https://www.nexusmods.com/skyrimspecialedition/mods/168228)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168228")[Small Talk]],
   [NPC-to-NPC ambient dialogue],
   [SKSE plugin, no ESP.],
-  [[Companions Dialogue Bundle](https://www.nexusmods.com/skyrimspecialedition/mods/93592)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/93592")[Companions Dialogue Bundle]],
   [Expanded Companion faction dialogue bundle.],
   [Alternative],
-  [[Snow Elf Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/155222)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155222")[Snow Elf Dialogue]],
   [Race-aware dialogue for Snow Elf PCs across quests — Helgen, TG, DB, Dawnguard.],
   [AI-voiced (ElevenLabs). Supports The Ancient Falmer, Lost Races of Nirn, True Snow Elf Race. Requires SKSE, Address Library, KID.],
-  [[Custom Race Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/169521)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169521")[Custom Race Dialogue]],
   [Consolidated race-dialogue mod combining Snow Elf, Dwemer, Ayleid, Maormer, Tsaesci.],
   [Same author as Snow Elf Dialogue. Incompatible with Race Compatibility Dialogue SSE.],
-  [[Skyrim Revoiced](https://www.nexusmods.com/skyrimspecialedition/mods/178085)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/178085")[Skyrim Revoiced]],
   [Revoiced AI-overhaul — NPC voice diversity across all holds and factions. Compatible with existing dialogue expansions.],
   [Large-scale voice replacer. Test for overlap with FDE series and custom follower dialogue.],
 )
@@ -7922,53 +7924,53 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 == Custom Followers → separator: NPCs - Followers
 <npcs-custom-followers-separator-npcs-followers>
 
-Custom fully-voiced follower additions with authored dialogue, quest commentary, and personal content. The follower framework decision (NFF vs EFF vs AFT) is owned by → [Followers & Reputation](modlist-expanded-followers.md).
+Custom fully-voiced follower additions with authored dialogue, quest commentary, and personal content. The follower framework decision (NFF vs EFF vs AFT) is owned by → @expanded-followers-followers--reputation.
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Follower*],
   [*Lines*],
   [*Notes*],
   [*Dependencies / Extras*],
-  [[Lucien — Immersive Fully Voiced Male Follower](https://www.nexusmods.com/skyrimspecialedition/mods/20035)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/20035")[Lucien — Immersive Fully Voiced Male Follower]],
   [5000+],
   [Personal quest, LoTD-aware. 30K+ endorsements.],
   [See framework notes.],
-  [[Remiel — Custom Voiced Dwemer Specialist](https://www.nexusmods.com/skyrimspecialedition/mods/51874)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51874")[Remiel — Custom Voiced Dwemer Specialist]],
   [~5000],
   [Custom framework — do not assign via NFF/AFT.],
   [Banter with Inigo, Auri, Kaidan 2.],
-  [[INIGO](https://www.nexusmods.com/skyrimspecialedition/mods/1461)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1461")[INIGO]],
   [7000+],
   [100K+ endorsements.],
-  [[Inigo Official Patch SE](https://www.nexusmods.com/skyrimspecialedition/mods/62868) required for 1.6.1170. Visual replacer: [Lulu's INIGO 2.0](https://www.nexusmods.com/skyrimspecialedition/mods/126199).],
-  [[Khajiit Will Follow](https://www.nexusmods.com/skyrimspecialedition/mods/2227)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62868")[Inigo Official Patch SE] required for 1.6.1170. Visual replacer: #link("https://www.nexusmods.com/skyrimspecialedition/mods/126199")[Lulu's INIGO 2.0].],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2227")[Khajiit Will Follow]],
   [],
   [4 Khajiit followers. ~8K endorsements.],
   [See framework notes.],
-  [[Song of the Green (Auri Follower)](https://www.nexusmods.com/skyrimspecialedition/mods/11278)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11278")[Song of the Green (Auri Follower)]],
   [1000+],
   [Romance option, Inigo banter. Custom framework — do not assign via NFF/AFT 2.0+.],
-  [Visual replacer: [Majestic Auri](https://www.nexusmods.com/skyrimspecialedition/mods/72361).],
-  [[Sofia — The Funny Fully Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/2180)],
+  [Visual replacer: #link("https://www.nexusmods.com/skyrimspecialedition/mods/72361")[Majestic Auri].],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2180")[Sofia — The Funny Fully Voiced Follower]],
   [],
   [Comic relief. May be cut for tonal mismatch.],
   [See framework notes.],
-  [[Kaidan 2](https://www.nexusmods.com/skyrimspecialedition/mods/19075)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/19075")[Kaidan 2]],
   [1200+],
   [Romance arc. Custom AI — do not assign via NFF/AFT.],
-  [Use [Immersive Features AIO](https://kaidanmod.com) (Nexus Extended Edition deprecated). Extras: [A Makeover for Kaidan](https://www.nexusmods.com/skyrimspecialedition/mods/100586), [Immersive Kaidan Start](https://www.nexusmods.com/skyrimspecialedition/mods/64064).],
+  [Use #link("https://kaidanmod.com")[Immersive Features AIO] (Nexus Extended Edition deprecated). Extras: #link("https://www.nexusmods.com/skyrimspecialedition/mods/100586")[A Makeover for Kaidan], #link("https://www.nexusmods.com/skyrimspecialedition/mods/64064")[Immersive Kaidan Start].],
 )
 
 === Framework Notes
 <npcs-framework-notes>
 
-**NFF compatibility per follower:**
+*NFF compatibility per follower:*
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Follower*],
   [*NFF-Safe?*],
   [*Notes*],
@@ -7976,7 +7978,7 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
   [Yes],
   [Tested with NFF, also works standalone.],
   [Remiel],
-  [**No**],
+  [*No*],
   [Custom system — banter with Inigo, Auri, Kaidan 2.],
   [INIGO],
   [Yes],
@@ -7985,13 +7987,13 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
   [Yes],
   [Designed for NFF.],
   [Auri],
-  [**No**],
+  [*No*],
   [Custom system — has Inigo banter.],
   [Sofia],
   [Yes],
   [Works under NFF or standalone.],
   [Kaidan 2],
-  [**No**],
+  [*No*],
   [Custom AI — use built-in track/summon powers.],
 )
 
@@ -8001,7 +8003,7 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 === Additional Mods
 <npcs-additional-mods>
 
-- [Keep Up — Follower Locomotion Fix](https://www.nexusmods.com/skyrimspecialedition/mods/169808) — Alternative. Prevents followers from getting stuck behind the player. Evaluate after the follower framework baseline is locked.
+- #link("https://www.nexusmods.com/skyrimspecialedition/mods/169808")[Keep Up — Follower Locomotion Fix] — Alternative. Prevents followers from getting stuck behind the player. Evaluate after the follower framework baseline is locked.
 
 ---
 
@@ -8015,12 +8017,12 @@ Playable race mods enabling new character options at game start. Snow Elf (Ancie
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[RaceCompatibility for Skyrim Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/26869)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26869")[RaceCompatibility for Skyrim Special Edition]],
   [Required by several custom race mods.],
-  [[Race Compatibility SKSE (RCS)](https://www.nexusmods.com/skyrimspecialedition/mods/122592)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122592")[Race Compatibility SKSE (RCS)]],
   [Modern replacement for RaceCompatibility — no ESP/ESM file. Required by Lost Races of Nirn. Do not use alongside RaceCompatibility (ESP).],
 )
 
@@ -8029,17 +8031,17 @@ Playable race mods enabling new character options at game start. Snow Elf (Ancie
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[The Ancient Falmer - A Snow Elf Race SE](https://www.nexusmods.com/skyrimspecialedition/mods/16854)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16854")[The Ancient Falmer - A Snow Elf Race SE]],
   [Baseline],
   [Most comprehensive snow elf race mod. Adds Snow Elf race, Gelebor/Vyrthur overhaul, optional followers (Valrysa, Ashian), craftable Ancient Falmer weapons. 2,752 endorsements. Requires RaceCompatibility. Last updated Oct 2023.],
-  [[Lost Races of Nirn](https://www.nexusmods.com/skyrimspecialedition/mods/69467)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69467")[Lost Races of Nirn]],
   [Alternative],
-  [Modular race pack: Ayleid, Dwemer, Maormer, Snow Elf, Tsaesci. Separate plugins per race via FOMOD. Requires RCS (no-ESP framework). HPH Addon available ([mod 147619](https://www.nexusmods.com/skyrimspecialedition/mods/147619)).],
-  [[True Snow Elf Race](https://www.nexusmods.com/skyrimspecialedition/mods/7880)],
+  [Modular race pack: Ayleid, Dwemer, Maormer, Snow Elf, Tsaesci. Separate plugins per race via FOMOD. Requires RCS (no-ESP framework). HPH Addon available (#link("https://www.nexusmods.com/skyrimspecialedition/mods/147619")[mod 147619]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/7880")[True Snow Elf Race]],
   [Alternative],
   [Vanilla-faithful standalone Snow Elf race. Last updated 2018. Does not require RaceCompatibility — standalone BSA.],
 )
@@ -8049,20 +8051,20 @@ Playable race mods enabling new character options at game start. Snow Elf (Ancie
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*For*],
   [*Notes*],
-  [[Frosty Snow Elf Skin Renewal](https://www.nexusmods.com/skyrimspecialedition/mods/16854?tab=files)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16854?tab=files")[Frosty Snow Elf Skin Renewal]],
   [The Ancient Falmer],
   [Hyperborean BnP skin for Ancient Falmer. Download from the Ancient Falmer Patch Center. Core mod per Ancient Falmer requirements.],
-  [[High Poly Head For Custom Races](https://www.nexusmods.com/skyrimspecialedition/mods/43098)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/43098")[High Poly Head For Custom Races]],
   [The Ancient Falmer],
   [Patches High Poly Head to work with 30+ custom races including The Ancient Falmer. 2,306 endorsements. Requires High Poly Head (off-site, vectorplexis) and RaceMenu.],
-  [[Lost Races of Nirn - High Poly Head Addon](https://www.nexusmods.com/skyrimspecialedition/mods/147619)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147619")[Lost Races of Nirn - High Poly Head Addon]],
   [Lost Races of Nirn],
   [HPH patches for Lost Races of Nirn 3.0+. ESP-FE. Includes Dwemer, Maormer, Snow Elf, Tsaesci.],
-  [[Lost Races of Nirn - Female Skin Textures](https://www.nexusmods.com/skyrimspecialedition/mods/90443)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90443")[Lost Races of Nirn - Female Skin Textures]],
   [Lost Races of Nirn],
   [High-quality female textures based on Reverie Skin. UNP/CBBE, 4K-2K, ESP-FE. Fixes neck-seam issues with custom body textures.],
 )
@@ -8070,50 +8072,50 @@ Playable race mods enabling new character options at game start. Snow Elf (Ancie
 === Risks & Compatibility
 <npcs-risks--compatibility-2>
 
-- **Ancient Falmer vs Lost Races of Nirn:** These are competing race frameworks. The Ancient Falmer is more comprehensive (followers, spells, leveled-list weapons) but has a larger patch footprint (RaceCompatibility, Patch Center). Lost Races of Nirn is modular, uses the lighter RCS framework, and has better HPH support. **Evaluate which to adopt as baseline** — running both is risky.
-- **RaceCompatibility vs RCS:** Do not use both simultaneously. RaceCompatibility (ESP/ESM) is required by The Ancient Falmer. RCS (no ESP) is required by Lost Races of Nirn. This is a hard fork — pick one race framework.
-- **Race-aware dialogue:** Both race mods support [Snow Elf Dialogue](https://www.nexusmods.com/skyrimspecialedition/mods/155222) — see NPC Dialogue Expansions section.
-- **Alternate start synergy:** The Surviving Falmer ([mod 131974](https://www.nexusmods.com/skyrimspecialedition/mods/131974)) and alternate-start frameworks (LAL, Alternate Perspective) provide Snow Elf-specific starting scenarios.
-- **Third-person/gamepad:** Race mods are character-creation content — no third-person impact beyond face/body visuals at character gen.
-- **Perk/Combat overhauls:** The Ancient Falmer adds custom sunfire spells and racial abilities. Verify compatibility with the chosen perk overhaul (Simonrim or other) in → `Magic & Perks`.
-- **BodySlide:** Followers from The Ancient Falmer (Valrysa, Ashian) require BodySlide builds for the chosen body mod (CBBE/3BA). Factor into → `Performance` BodySlide rebuild cycles.
+- *Ancient Falmer vs Lost Races of Nirn:* These are competing race frameworks. The Ancient Falmer is more comprehensive (followers, spells, leveled-list weapons) but has a larger patch footprint (RaceCompatibility, Patch Center). Lost Races of Nirn is modular, uses the lighter RCS framework, and has better HPH support. *Evaluate which to adopt as baseline* — running both is risky.
+- *RaceCompatibility vs RCS:* Do not use both simultaneously. RaceCompatibility (ESP/ESM) is required by The Ancient Falmer. RCS (no ESP) is required by Lost Races of Nirn. This is a hard fork — pick one race framework.
+- *Race-aware dialogue:* Both race mods support #link("https://www.nexusmods.com/skyrimspecialedition/mods/155222")[Snow Elf Dialogue] — see NPC Dialogue Expansions section.
+- *Alternate start synergy:* The Surviving Falmer (#link("https://www.nexusmods.com/skyrimspecialedition/mods/131974")[mod 131974]) and alternate-start frameworks (LAL, Alternate Perspective) provide Snow Elf-specific starting scenarios.
+- *Third-person/gamepad:* Race mods are character-creation content — no third-person impact beyond face/body visuals at character gen.
+- *Perk/Combat overhauls:* The Ancient Falmer adds custom sunfire spells and racial abilities. Verify compatibility with the chosen perk overhaul (Simonrim or other) in → `Magic & Perks`.
+- *BodySlide:* Followers from The Ancient Falmer (Valrysa, Ashian) require BodySlide builds for the chosen body mod (CBBE/3BA). Factor into → `Performance` BodySlide rebuild cycles.
 
 ---
 
 == FacegenBaseline & NPC Stat Patcher Reference
 <npcs-facegenbaseline--npc-stat-patcher-reference>
 
-These Synthesis patchers resolve facegen and stat issues introduced by NPC appearance and behavior overhauls. Both run as part of the Synthesis pipeline documented in → [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md).
+These Synthesis patchers resolve facegen and stat issues introduced by NPC appearance and behavior overhauls. Both run as part of the Synthesis pipeline documented in → @performance-patches-bashed-patch--synthesis-configuration.
 
 === FacegenBaseline
 <npcs-facegenbaseline>
 
-**What it does:** Generates missing or corrected facegen data (face morphology `.nif` files and tint layers `.dds`) for NPCs added or changed by appearance mods. Without it, NPCs can display the black-face bug (dark head on light body), mismatched facial features, or incorrect tint layers.
+*What it does:* Generates missing or corrected facegen data (face morphology `.nif` files and tint layers `.dds`) for NPCs added or changed by appearance mods. Without it, NPCs can display the black-face bug (dark head on light body), mismatched facial features, or incorrect tint layers.
 
-**When to run:**
+*When to run:*
 - After every change to the NPC appearance stack — adding, removing, or reordering appearance overhauls
 - After installing any mod that adds new NPCs (quest mods, world content, new lands)
 - After running any Synthesis patcher that changes NPC head parts or face morphs
 - Every time the load order of NPC-related plugins changes
 
-**How to set up in Synthesis:**
+*How to set up in Synthesis:*
 
 1. Add the `FacegenBaseline` patcher to your Synthesis pipeline (Stage 1 in → [performance-patches.md](modlist-performance-patches.mdstage-1--npc-ai-and-facegen)).
-2. Configure the **Source Mods** list — select every NPC appearance overhaul and any mod that adds NPCs with custom facegen. The patcher reads facegen from these source mods and copies it into the output.
-3. Set **Output Mod** to a dedicated mod folder (e.g., `FacegenBaseline Output` in the `Output` MO2 separator).
+2. Configure the *Source Mods* list — select every NPC appearance overhaul and any mod that adds NPCs with custom facegen. The patcher reads facegen from these source mods and copies it into the output.
+3. Set *Output Mod* to a dedicated mod folder (e.g., `FacegenBaseline Output` in the `Output` MO2 separator).
 4. Run Synthesis with the full pipeline — FacegenBaseline runs after KS Hairs Bald Helmets Fixer and HP\_NPC\_WIGS\_TO\_HEADPART.
 
-**Configuration options:**
+*Configuration options:*
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Option*],
   [*Recommendation*],
   [*Notes*],
   [Source Mods],
   [Select all NPC appearance overhauls + any mod listed in this file that ships facegen],
-  [Missed source mods are the \\#1 cause of black-face],
+  [Missed source mods are the #1 cause of black-face],
   [Output Mod],
   [Dedicated mod in `Output` separator],
   [Do not output into an existing NPC overhaul mod],
@@ -8125,11 +8127,11 @@ These Synthesis patchers resolve facegen and stat issues introduced by NPC appea
   [Required for correct NPC skin/ makeup in dialog],
 )
 
-**Troubleshooting:**
+*Troubleshooting:*
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Symptom*],
   [*Likely Cause*],
   [*Fix*],
@@ -8153,13 +8155,13 @@ These Synthesis patchers resolve facegen and stat issues introduced by NPC appea
 === NPCStatRescaler
 <npcs-npcstatrescaler>
 
-**What it does:** Rescales NPC stats (health, magicka, stamina, level, skills) to match the list's encounter balance. Ensures NPCs added by appearance or content mods don't fall outside the intended power curve.
+*What it does:* Rescales NPC stats (health, magicka, stamina, level, skills) to match the list's encounter balance. Ensures NPCs added by appearance or content mods don't fall outside the intended power curve.
 
-**When to run:** After any NPC appearance overhaul, new NPC mod, or encounter-zone change. Runs in the same Synthesis stage as FacegenBaseline.
+*When to run:* After any NPC appearance overhaul, new NPC mod, or encounter-zone change. Runs in the same Synthesis stage as FacegenBaseline.
 
-**Configuration:** Set target stat ranges to match the encounter design in → [Survival, Difficulty, and Balance](modlist-survival-combat.md). Default Synthesis profile applies reasonable vanilla+-derived values.
+*Configuration:* Set target stat ranges to match the encounter design in → @survival-combat-survival-difficulty-and-balance. Default Synthesis profile applies reasonable vanilla+-derived values.
 
-**Key relationship:** NPCStatRescaler runs after FacegenBaseline in the Synthesis pipeline. If both are active, FacegenBaseline runs first so that NPC records have complete facegen data before stats are rescaled.
+*Key relationship:* NPCStatRescaler runs after FacegenBaseline in the Synthesis pipeline. If both are active, FacegenBaseline runs first so that NPC records have complete facegen data before stats are rescaled.
 
 ---
 
@@ -8173,13 +8175,13 @@ Open research for the NPCs stack is tracked in `TODO.md`.
 
 // -- guide/modlist-creatures.md --
 = Enemies & Creatures
-<enemies--creatures>
+<creatures-enemies--creatures>
 
-**MO2 Separator:** `Enemies & Creatures`
+*MO2 Separator:* `Enemies & Creatures`
 
 All mods in this section belong to the `Enemies & Creatures` MO2 separator.
 
-> NPC-specific content → [NPCs](modlist-npcs.md).
+> NPC-specific content → @npcs-npcs.
 
 ---
 
@@ -8190,23 +8192,23 @@ How hostile enemy groups feel less repetitive across ordinary play.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Lawless — A Bandit Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/88080)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/88080")[Lawless — A Bandit Overhaul]],
   [Baseline],
   [Cleanest vanilla-plus bandit variety. Bandits are the most overexposed enemy family.],
-  [[OBIS SE](https://www.nexusmods.com/skyrimspecialedition/mods/4145)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4145")[OBIS SE]],
   [Alternative],
   [Heavier legacy bandit route.],
-  [[Haugbui — A Draugr Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26188)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26188")[Haugbui — A Draugr Overhaul]],
   [Alternative],
   [Lighter undead route.],
-  [[Skyrim Revamped — Complete Enemy Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/14598)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14598")[Skyrim Revamped — Complete Enemy Overhaul]],
   [Alternative],
   [List-wide enemy rebalance.],
-  [[Skyrim Bandit Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/154352)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154352")[Skyrim Bandit Expansion]],
   [Alternative],
   [New bandit variants, gear, and encounters.],
 )
@@ -8220,74 +8222,74 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Fluffworks](https://www.nexusmods.com/skyrimspecialedition/mods/56361)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56361")[Fluffworks]],
   [Baseline],
   [Broad furred-animal presentation layer.],
-  [[Bears of the North](https://www.nexusmods.com/skyrimspecialedition/mods/47541)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47541")[Bears of the North]],
   [Baseline],
   [Species standout for common large wildlife threat.],
-  [[Iconic's Dragon Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/101712)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/101712")[Iconic's Dragon Retexture]],
   [Baseline],
   [Clean dragon presentation upgrade.],
-  [[Dragons SE](https://www.nexusmods.com/skyrimspecialedition/mods/132218)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132218")[Dragons SE]],
   [Baseline],
   [Full dragon model replacer. Not compatible with Iconic's — choose one.],
-  [[Draugrs — New models and textures](https://www.nexusmods.com/skyrimspecialedition/mods/123170)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123170")[Draugrs — New models and textures]],
   [Baseline],
   [Most-seen undead enemy.],
-  [[Spider SE](https://www.nexusmods.com/skyrimspecialedition/mods/182638)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/182638")[Spider SE]],
   [Baseline],
   [],
-  [[Deer Reworked — Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/155433)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155433")[Deer Reworked — Ultimate]],
   [Baseline],
   [],
-  [[TNT - True Nordic Trolls - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/140979)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140979")[TNT - True Nordic Trolls - Revamped]],
   [Baseline],
   [Troll model/texture overhaul.],
-  [[Cannibal Draugr on Solstheim](https://www.nexusmods.com/skyrimspecialedition/mods/21238)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21238")[Cannibal Draugr on Solstheim]],
   [Baseline],
   [Bloodmoon-flavored identity.],
-  [[Hagraven — New models and Textures](https://www.nexusmods.com/skyrimspecialedition/mods/160407)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160407")[Hagraven — New models and Textures]],
   [Baseline],
   [],
-  [[Butterfly Improved by zzjay](https://www.nexusmods.com/skyrimspecialedition/mods/37302)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37302")[Butterfly Improved by zzjay]],
   [Baseline],
   [],
-  [[Fusa Fusa Project](https://www.nexusmods.com/skyrimspecialedition/mods/5514)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/5514")[Fusa Fusa Project]],
   [Alternative],
   [Don't casually stack with Fluffworks.],
-  [[Splendor — Dragon Variants](https://www.nexusmods.com/skyrimspecialedition/mods/9670)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/9670")[Splendor — Dragon Variants]],
   [Alternative],
   [Last updated Sept 2017.],
-  [[Next Gen Dragon VFX](https://www.nexusmods.com/skyrimspecialedition/mods/168405)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168405")[Next Gen Dragon VFX]],
   [Alternative],
   [Dragon breath/VFX visual upgrade.],
-  [[Diverse 4thUnknown Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/146462)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146462")[Diverse 4thUnknown Dragons]],
   [Alternative],
   [Dragon model variety via SkyPatcher. Requires Dragons SE.],
-  [[Sleep of the Dead — Draugr Leather and Shroud Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/178057)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/178057")[Sleep of the Dead — Draugr Leather and Shroud Replacer]],
   [Alternative],
   [Draugr shroud/leather retexture.],
-  [[Frozen Electrocuted Combustion](https://www.nexusmods.com/skyrimspecialedition/mods/3532)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3532")[Frozen Electrocuted Combustion]],
   [Alternative],
   [Elemental creature death effects.],
-  [[Better Butterflies](https://www.nexusmods.com/skyrimspecialedition/mods/79332)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/79332")[Better Butterflies]],
   [Alternative],
   [Butterfly insect visual overhaul.],
-  [[Bear Replacer - Chakra's Creatures](https://www.nexusmods.com/skyrimspecialedition/mods/177594)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177594")[Bear Replacer - Chakra's Creatures]],
   [Alternative],
   [Bear model replacer. Alternative to Bears of the North.],
-  [[Sabre Cat Replacer - Chakra's Creatures](https://www.nexusmods.com/skyrimspecialedition/mods/179058)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179058")[Sabre Cat Replacer - Chakra's Creatures]],
   [Alternative],
   [Sabre cat model replacer.],
-  [[Sabrecats of Skyrim - CS ENB Fur Parallax](https://www.nexusmods.com/skyrimspecialedition/mods/172385)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172385")[Sabrecats of Skyrim - CS ENB Fur Parallax]],
   [Alternative],
   [Sabre cat fur parallax texture upgrade.],
-  [[All the Sabre Cats - Model Swapper](https://www.nexusmods.com/skyrimspecialedition/mods/179353)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179353")[All the Sabre Cats - Model Swapper]],
   [Alternative],
   [Sabre cat model variety via Model Swapper.],
 )
@@ -8302,22 +8304,22 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Farm Geese](https://www.nexusmods.com/skyrimspecialedition/mods/156242)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/156242")[Farm Geese]],
   [],
-  [[Sewer Rats](https://www.nexusmods.com/skyrimspecialedition/mods/137591)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137591")[Sewer Rats]],
   [],
-  [[Giant Bats and Rats](https://www.nexusmods.com/skyrimspecialedition/mods/140134)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140134")[Giant Bats and Rats]],
   [],
-  [[Imps](https://www.nexusmods.com/skyrimspecialedition/mods/33759)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33759")[Imps]],
   [],
-  [[Giant Centipedes](https://www.nexusmods.com/skyrimspecialedition/mods/26192)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/26192")[Giant Centipedes]],
   [],
-  [[Ogrim](https://www.nexusmods.com/skyrimspecialedition/mods/27243)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27243")[Ogrim]],
   [],
-  [[Ruinachs](https://www.nexusmods.com/skyrimspecialedition/mods/49543)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49543")[Ruinachs]],
   [],
 )
 
@@ -8326,18 +8328,18 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Swamp Skeletons - Chakra's Creatures](https://www.nexusmods.com/skyrimspecialedition/mods/151282)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151282")[Swamp Skeletons - Chakra's Creatures]],
   [Swamp-themed skeleton variants. ESL-flagged.],
-  [[Edmond's Nature Series — BIRDS](https://www.nexusmods.com/skyrimspecialedition/mods/123068)],
-  [Species: Ravens, Pheasants, Seagulls, flocking birds and bats, Bone Hawks (unique audio), Ghost Ravens (Soul Cairn), plus additional placed hawks and hawk nests. ESL-flagged. Raven tris from Mihail (with permission), Seagulls from Mr. Siika community resource. Do not stack with Seagulls — Mihail. Pair with [Xtudo optimized textures](https://www.nexusmods.com/skyrimspecialedition/mods/123210) — pick **2K** main file.],
-  [[Morrowind Creatures SE](https://www.nexusmods.com/skyrimspecialedition/mods/50435)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123068")[Edmond's Nature Series — BIRDS]],
+  [Species: Ravens, Pheasants, Seagulls, flocking birds and bats, Bone Hawks (unique audio), Ghost Ravens (Soul Cairn), plus additional placed hawks and hawk nests. ESL-flagged. Raven tris from Mihail (with permission), Seagulls from Mr. Siika community resource. Do not stack with Seagulls — Mihail. Pair with #link("https://www.nexusmods.com/skyrimspecialedition/mods/123210")[Xtudo optimized textures] — pick *2K* main file.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50435")[Morrowind Creatures SE]],
   [],
-  [[Ogres SE](https://www.nexusmods.com/skyrimspecialedition/mods/59363)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/59363")[Ogres SE]],
   [],
-  [[Sea Turtles — Mihail](https://www.nexusmods.com/skyrimspecialedition/mods/122141)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122141")[Sea Turtles — Mihail]],
   [],
 )
 
@@ -8346,16 +8348,16 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Diverse True Wolves and Dogs](https://www.nexusmods.com/skyrimspecialedition/mods/38058)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/38058")[Diverse True Wolves and Dogs]],
   [],
-  [[Real Rabbits HD](https://www.nexusmods.com/skyrimspecialedition/mods/29223)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29223")[Real Rabbits HD]],
   [],
-  [[Rally's Shaggy Cows of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/47742)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47742")[Rally's Shaggy Cows of Skyrim]],
   [],
-  [[Realistic Horse Breeds by KrittaKitty](https://www.nexusmods.com/skyrimspecialedition/mods/7685)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/7685")[Realistic Horse Breeds by KrittaKitty]],
   [Verify 1.6.1170 compatibility.],
 )
 
@@ -8368,35 +8370,35 @@ How creatures attack, react, and express identity once combat starts.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Dragons Use Thu'um](https://www.nexusmods.com/skyrimspecialedition/mods/87085)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/87085")[Dragons Use Thu'um]],
   [Baseline],
   [Smarter dragon shout usage and encounter AI.],
-  [[The Restless Dead](https://www.nexusmods.com/skyrimspecialedition/mods/94100)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94100")[The Restless Dead]],
   [Baseline],
   [Undead-behavior baseline. Replaces abandoned Draugr Upgrades and Improvements.],
-  [[Epic Dragon Combat REDONE](https://www.nexusmods.com/skyrimspecialedition/mods/126680)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126680")[Epic Dragon Combat REDONE]],
   [Alternative],
   [Full dragon combat overhaul — 20+ new types, unique abilities, custom VFX. Self-contained; replaces baseline dragon visual direction.],
-  [[Dragon War](https://www.nexusmods.com/skyrimspecialedition/mods/51310)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51310")[Dragon War]],
   [Alternative],
   [Heavier dragon route for fight structure/tempo.],
-  [[Dragons actually fall down](https://www.nexusmods.com/skyrimspecialedition/mods/156824)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/156824")[Dragons actually fall down]],
   [Alternative],
   [Dragons collapse on the ground when staggered/low health.],
-  [[Epic Dwarven Centurion Combat](https://www.nexusmods.com/skyrimspecialedition/mods/181405)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/181405")[Epic Dwarven Centurion Combat]],
   [Alternative],
   [Dwarven Centurion combat/animation overhaul.],
-  [[New Creature Animation - Dwarven Centurion - SCAR2.0 - MCO - Nemesis or Pandora](https://www.nexusmods.com/skyrimspecialedition/mods/137805)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137805")[New Creature Animation - Dwarven Centurion - SCAR2.0 - MCO - Nemesis or Pandora]],
   [Alternative],
   [Dwarven Centurion animation pack requiring MCO/BFCO or SCAR. Mutually exclusive with Epic Dwarven Centurion Combat — pick one.],
-  [[SkyTEST Lite ESL](https://www.nexusmods.com/skyrimspecialedition/mods/84539) / [Animal Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/1532) / [Pelagius's Wildlife AI](https://www.nexusmods.com/skyrimspecialedition/mods/144909)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84539")[SkyTEST Lite ESL] / #link("https://www.nexusmods.com/skyrimspecialedition/mods/1532")[Animal Tweaks] / #link("https://www.nexusmods.com/skyrimspecialedition/mods/144909")[Pelagius's Wildlife AI]],
   [Alternative],
   [Animal-side mods drifting into ecology territory.],
-  [[World Eater Beater](https://www.nexusmods.com/skyrimspecialedition/mods/179758)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179758")[World Eater Beater]],
   [Alternative],
   [Alduin boss fight overhaul — phase-based encounter, new attacks, arena improvements. Replaces vanilla final-boss design.],
 )
@@ -8408,14 +8410,14 @@ How creatures attack, react, and express identity once combat starts.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[True Hunter — fewer animals per square meter](https://www.nexusmods.com/skyrimspecialedition/mods/25628)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/25628")[True Hunter — fewer animals per square meter]],
   [Baseline],
   [Spawn-chance reduction for more deliberate wildlife.],
-  [[No Predators on roads](https://www.nexusmods.com/skyrimspecialedition/mods/11901)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11901")[No Predators on roads]],
   [Alternative],
   [Abandoned (Aug 2017). Coexists with True Hunter.],
 )
@@ -8427,9 +8429,9 @@ Open research for this section is tracked in `TODO.md`.
 
 // -- guide/modlist-weapons-armor.md --
 = Weapons & Armor
-<weapons--armor>
+<weapons-armor-weapons--armor>
 
-**MO2 Separators:** `Weapons & Armor` → `Weapons & Armor – Weapons`, `Weapons & Armor – Armor`, `Weapons & Armor – Artifacts`, `Weapons & Armor – Clothing & Wardrobe`
+*MO2 Separators:* `Weapons & Armor` → `Weapons & Armor – Weapons`, `Weapons & Armor – Armor`, `Weapons & Armor – Artifacts`, `Weapons & Armor – Clothing & Wardrobe`
 
 All mods in this section belong to one of the four weapons-and-armor separators as noted per subsection.
 
@@ -8445,18 +8447,18 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Heavy Armory](https://www.nexusmods.com/skyrimspecialedition/mods/6308)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6308")[Heavy Armory]],
   [Baseline],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [150+ lore-friendly weapons, 11 new types. OAR-compatible polearm animations.],
-  [[Dawnguard Arsenal SSE - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/25094)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/25094")[Dawnguard Arsenal SSE - SkyPatched]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Dawnguard-themed weapons, enhanced crossbows. SkyPatched variant.],
 )
 
@@ -8465,42 +8467,42 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[LeanWolf's Better-Shaped Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/2017)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2017")[LeanWolf's Better-Shaped Weapons]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Upgraded vanilla weapon silhouettes. Stacks with Heavy Armory.],
-  [[Legendary Skyrim Crossbows and Bows](https://www.nexusmods.com/skyrimspecialedition/mods/8273)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/8273")[Legendary Skyrim Crossbows and Bows]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Specialty named/unique crossbows and bows. Lock if ranged is a viable build path.],
-  [[Immersive Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/16788)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16788")[Immersive Weapons]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [230+ weapons. Unmaintained since Apr 2018. Prefer the SkyPatched variant below.],
-  [[Immersive Weapons SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/142044)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142044")[Immersive Weapons SkyPatched]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [SkyPatched forward-port resolving record-level conflicts. Preferred over original.],
-  [[Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/170595")[Moonblade]],
   [Alternative],
   [all],
   [Unique moon-themed weapon with quest content.],
-  [[Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/178148")[Sorcerer Staff]],
   [Alternative],
   [all],
   [Unique staff / Staff of Magnus replacer with expanded mechanics.],
-  [[Occiglacies - Ancient Falmer Blade](https://www.nexusmods.com/skyrimspecialedition/mods/35637)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35637")[Occiglacies - Ancient Falmer Blade]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Ancient Falmer greatsword/sword. Switchable 1H/2H at Skyforge. 1,471 endorsements. Found in Forgotten Vale area. LoTD display patch available.],
   [Discipline-first route],
   [Alternative],
-  [\\#3],
+  [#3],
   [Vanilla weapons only.],
 )
 
@@ -8524,16 +8526,16 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
-  [[Immersive Armors](https://www.nexusmods.com/skyrimspecialedition/mods/3479)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3479")[Immersive Armors]],
   [~55 armor sets, 396 shields. 206K endorsements.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3479)],
-  [[Immersive Armors Retexture and Mesh Fixes SE](https://www.nexusmods.com/skyrimspecialedition/mods/75891)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3479")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/75891")[Immersive Armors Retexture and Mesh Fixes SE]],
   [Brings visuals in line with 4K PBR stack.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75891)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/75891")[Nexus]],
 )
 
 === Alternatives
@@ -8541,19 +8543,19 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Nexus*],
-  [[NordwarUA Total Armor Compilation](https://www.nexusmods.com/skyrimspecialedition/mods/61423)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/61423")[NordwarUA Total Armor Compilation]],
   [Visual model overhaul — 6 NordwarUA mods. Cubemap standardization.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61423)],
-  [[Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/61423")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21305")[Common Clothes and Armors]],
   [Clothing/light-armor variants for bandits, sellswords, travelers.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21305)],
-  [[Bandolier — Bags and Pouches](https://www.nexusmods.com/skyrimspecialedition/mods/2417)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21305")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2417")[Bandolier — Bags and Pouches]],
   [Carry-capacity utility with MCM config.],
-  [[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2417)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2417")[Nexus]],
   [Discipline-first route],
   [Vanilla armor sets only.],
   [],
@@ -8562,24 +8564,24 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 === Immersive Armors Visual Pipeline
 <weapons--armor-immersive-armors-visual-pipeline>
 
-> **Stack order:** `Immersive Armors` → `Retexture and Mesh Fixes` → (optional) `Realistic Armors replace by Xtudo` → (choose one female path) `CBBE 3BA BodySlide` OR HIMBO's CBBE patch → (if male) `HIMBO Conversion V2`.
+> *Stack order:* `Immersive Armors` → `Retexture and Mesh Fixes` → (optional) `Realistic Armors replace by Xtudo` → (choose one female path) `CBBE 3BA BodySlide` OR HIMBO's CBBE patch → (if male) `HIMBO Conversion V2`.
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Role*],
   [*Dial*],
   [*Notes*],
-  [[IA — SSE CBBE 3BA BodySlide](https://www.nexusmods.com/skyrimspecialedition/mods/22382)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22382")[IA — SSE CBBE 3BA BodySlide]],
   [Female path],
   [all],
   [BodySlide for all female IA outfits. Do not stack with Retexture/Mesh Fixes' bundled CBBE meshes.],
-  [[IA HIMBO Conversion V2](https://www.nexusmods.com/skyrimspecialedition/mods/76552)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76552")[IA HIMBO Conversion V2]],
   [Male path],
   [all],
   [BodySlide for all IA armors for HIMBO. Stacks on Retexture/Mesh Fixes. Includes CBBE patch.],
-  [[IA — Realistic Armors replace by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/36746)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/36746")[IA — Realistic Armors replace by Xtudo]],
   [Optional],
   [all],
   [Swaps 10 IA sets for NordWarUA Realistic Armors. Requires Realistic Armor (36151).],
@@ -8590,92 +8592,92 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
   [*Notes*],
-  [[Armor Variants Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/34100)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34100")[Armor Variants Expansion]],
   [Visual variants for every vanilla armor set.],
   [Has CBBE patch. Fits medieval-Nordic aesthetic.],
-  [[Ufok's Reinforced Leather Armour](https://www.nexusmods.com/skyrimspecialedition/mods/183824)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/183824")[Ufok's Reinforced Leather Armour]],
   [D&D-inspired light armor.],
   [3BA, CBBE, UBE, HIMBO, Vanilla. ESL, craftable, Skypatcher integration.],
-  [[Tera Armors Collection](https://www.nexusmods.com/skyrimspecialedition/mods/9651)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/9651")[Tera Armors Collection]],
   [Armor collection ported from TERA MMO.],
   [CBBE. Evaluate visual fit.],
-  [[Lustmord Vampire Armor - SSE CBBE Bodyslide](https://www.nexusmods.com/skyrimspecialedition/mods/16676)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/16676")[Lustmord Vampire Armor - SSE CBBE Bodyslide]],
   [CBBE 3BA vampire armor with physics.],
   [14K endorsements.],
-  [[Wilderness Witch Outfit](https://www.nexusmods.com/skyrimspecialedition/mods/40963)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/40963")[Wilderness Witch Outfit]],
   [CBBE witch/mage outfit.],
   [Fits grim-dark aesthetic.],
-  [[Dark Mage of Plegia - hdt SMP (CBBE 3BA)](https://www.nexusmods.com/skyrimspecialedition/mods/84554)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84554")[Dark Mage of Plegia - hdt SMP (CBBE 3BA)]],
   [CBBE 3BA SMP dark mage outfit.],
   [9K endorsements.],
-  [[Dremora Markynaz Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79753)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/79753")[Dremora Markynaz Armor SE]],
   [Daedric-themed armor set.],
-  [Requires HDT-SMP. HIMBO refit ([125150](https://www.nexusmods.com/skyrimspecialedition/mods/125150)), CBBE ([79968](https://www.nexusmods.com/skyrimspecialedition/mods/79968)).],
-  [[Silver Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/79088)],
+  [Requires HDT-SMP. HIMBO refit (#link("https://www.nexusmods.com/skyrimspecialedition/mods/125150")[125150]), CBBE (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79968")[79968]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/79088")[Silver Armor SE]],
   [Silver-themed armor set.],
-  [CBBE ([79319](https://www.nexusmods.com/skyrimspecialedition/mods/79319)), HIMBO ([87675](https://www.nexusmods.com/skyrimspecialedition/mods/87675)), HDT-SMP patch ([79255](https://www.nexusmods.com/skyrimspecialedition/mods/79255)).],
-  [[Colovian Prince Set](https://www.nexusmods.com/skyrimspecialedition/mods/79894)],
+  [CBBE (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79319")[79319]), HIMBO (#link("https://www.nexusmods.com/skyrimspecialedition/mods/87675")[87675]), HDT-SMP patch (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79255")[79255]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/79894")[Colovian Prince Set]],
   [Colovian-themed armor set.],
   [],
-  [[Lifesworn Vestiges -- Champion of Arkay Armor](https://www.nexusmods.com/skyrimspecialedition/mods/136837)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/136837")[Lifesworn Vestiges -- Champion of Arkay Armor]],
   [Arkay-themed armor with optional SMP.],
-  [3BA/HIMBO ([175271](https://www.nexusmods.com/skyrimspecialedition/mods/175271)).],
-  [[Traveling Mage HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/69394)],
+  [3BA/HIMBO (#link("https://www.nexusmods.com/skyrimspecialedition/mods/175271")[175271]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69394")[Traveling Mage HDT-SMP Armor]],
   [Mage travel outfit with SMP.],
-  [CBBE 3BA/HIMBO ([69407](https://www.nexusmods.com/skyrimspecialedition/mods/69407)).],
-  [[JS Helm of Yngol SE](https://www.nexusmods.com/skyrimspecialedition/mods/51346)],
+  [CBBE 3BA/HIMBO (#link("https://www.nexusmods.com/skyrimspecialedition/mods/69407")[69407]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51346")[JS Helm of Yngol SE]],
   [Unique helm mesh/texture replacer.],
   [],
-  [[Wind Ruler Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/60842)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/60842")[Wind Ruler Armor SE]],
   [Wind-themed armor set.],
-  [HDT-SMP ([63036](https://www.nexusmods.com/skyrimspecialedition/mods/63036)), HIMBO ([106036](https://www.nexusmods.com/skyrimspecialedition/mods/106036)).],
-  [[Imperial Guard Centurion Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/50410)],
+  [HDT-SMP (#link("https://www.nexusmods.com/skyrimspecialedition/mods/63036")[63036]), HIMBO (#link("https://www.nexusmods.com/skyrimspecialedition/mods/106036")[106036]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50410")[Imperial Guard Centurion Armor SE]],
   [Imperial guard armor set.],
-  [3BA/HIMBO ([178841](https://www.nexusmods.com/skyrimspecialedition/mods/178841)), SPID ([123487](https://www.nexusmods.com/skyrimspecialedition/mods/123487)).],
-  [[Fur-lined Steel Armor](https://www.nexusmods.com/skyrimspecialedition/mods/106305)],
+  [3BA/HIMBO (#link("https://www.nexusmods.com/skyrimspecialedition/mods/178841")[178841]), SPID (#link("https://www.nexusmods.com/skyrimspecialedition/mods/123487")[123487]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106305")[Fur-lined Steel Armor]],
   [Fur-trimmed steel armor.],
   [],
-  [[Travelling Priest Robes](https://www.nexusmods.com/skyrimspecialedition/mods/118327)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118327")[Travelling Priest Robes]],
   [Priest robe outfit. HIMBO/CBBE.],
-  [SPID distribution ([118464](https://www.nexusmods.com/skyrimspecialedition/mods/118464)).],
-  [[Nibenean Armors and Outfit SE](https://www.nexusmods.com/skyrimspecialedition/mods/50785)],
+  [SPID distribution (#link("https://www.nexusmods.com/skyrimspecialedition/mods/118464")[118464]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50785")[Nibenean Armors and Outfit SE]],
   [Nibenese-style armor/outfits.],
-  [SPID ([123477](https://www.nexusmods.com/skyrimspecialedition/mods/123477)), male HIMBO refit.],
-  [[Templar Assassin Armor](https://www.nexusmods.com/skyrimspecialedition/mods/135547)],
+  [SPID (#link("https://www.nexusmods.com/skyrimspecialedition/mods/123477")[123477]), male HIMBO refit.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135547")[Templar Assassin Armor]],
   [Assassin-themed armor. 3BA/BHUNP/CBBE/UNP.],
-  [HDT-SMP patch ([135910](https://www.nexusmods.com/skyrimspecialedition/mods/135910)).],
-  [[Visage of Mzund](https://www.nexusmods.com/skyrimspecialedition/mods/69047)],
+  [HDT-SMP patch (#link("https://www.nexusmods.com/skyrimspecialedition/mods/135910")[135910]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69047")[Visage of Mzund]],
   [Unique Dwemer face visor. Xtudo version.],
   [],
-  [[Legendary Alpha Shields](https://www.nexusmods.com/skyrimspecialedition/mods/49387)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49387")[Legendary Alpha Shields]],
   [Shield variety pack.],
-  [SPID for NPCs ([80041](https://www.nexusmods.com/skyrimspecialedition/mods/80041)), Xtudo patches ([79895](https://www.nexusmods.com/skyrimspecialedition/mods/79895)).],
-  [[Legendary Alpha Shields 2](https://www.nexusmods.com/skyrimspecialedition/mods/79264)],
+  [SPID for NPCs (#link("https://www.nexusmods.com/skyrimspecialedition/mods/80041")[80041]), Xtudo patches (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79895")[79895]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/79264")[Legendary Alpha Shields 2]],
   [Additional shield variety pack.],
-  [SPID for NPCs ([80110](https://www.nexusmods.com/skyrimspecialedition/mods/80110)), Xtudo patches ([79617](https://www.nexusmods.com/skyrimspecialedition/mods/79617)).],
-  [[JS Unique Utopia SE - Rings](https://www.nexusmods.com/skyrimspecialedition/mods/102226)],
+  [SPID for NPCs (#link("https://www.nexusmods.com/skyrimspecialedition/mods/80110")[80110]), Xtudo patches (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79617")[79617]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102226")[JS Unique Utopia SE - Rings]],
   [Unique ring mesh/texture replacer.],
   [],
-  [[Land of Vominheim - Unique Rewards by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/102839)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102839")[Land of Vominheim - Unique Rewards by Xtudo]],
   [Unique rewards patch for Land of Vominheim.],
   [Install if Vominheim is adopted.],
-  [[Callisto HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/134752)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/134752")[Callisto HDT-SMP Armor]],
   [Female HDT-SMP heavy armor. Craftable, ESL-flagged.],
-  [Requires FSMP. Xtudo patches ([134900](https://www.nexusmods.com/skyrimspecialedition/mods/134900)) add SPID, Ancient Falmer replacer, LOTD, beast-race support. HIMBO male addon ([134789](https://www.nexusmods.com/skyrimspecialedition/mods/134789)).],
-  [[Elven Chainmail (SSE Port)](https://www.nexusmods.com/skyrimspecialedition/mods/14978)],
+  [Requires FSMP. Xtudo patches (#link("https://www.nexusmods.com/skyrimspecialedition/mods/134900")[134900]) add SPID, Ancient Falmer replacer, LOTD, beast-race support. HIMBO male addon (#link("https://www.nexusmods.com/skyrimspecialedition/mods/134789")[134789]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14978")[Elven Chainmail (SSE Port)]],
   [Female-only elven light armor set + scimitar. Found in Northwatch Keep.],
   [LE port by JWGaming75. Requires CBBE. Last updated Jan 2018 — verify 1.6.1170.],
-  [[HD Falmer Elven Chainmail Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/35669)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35669")[HD Falmer Elven Chainmail Retexture]],
   [HD retexture for Elven Chainmail.],
   [By trion77/Vindition. Install over Elven Chainmail base mod.],
-  [[Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95284")[Kozakowy's Female Vampire Armor Replacer]],
   [Replaces vanilla female vampire armor (3 color variants). CBBE 3BA, 811 endorsements.],
-  [Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)).],
-  [[Faction Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/169281)],
+  [Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available (#link("https://www.nexusmods.com/skyrimspecialedition/mods/143980")[143980]).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169281")[Faction Armors and Weapons Retexture SE]],
   [All-in-one retexture of Dawnguard, Vampire, Thieves Guild, Nightingale, Dark Brotherhood, Forsworn, Wolf armors/weapons. Optional mesh additions, color variants (Shrouded).],
   [By Xavbio. Replaces hidden mod 96855. Respects original designs with refined detail and grounded look. Covers both armor and weapons.],
 )
@@ -8686,7 +8688,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 - `NordwarUA Total Armor` standardizes cubemaps across all six sub-mods — any mod depending on original cubemaps needs re-testing.
 - `Common Clothes and Armors` adds clothing to NPC leveled lists. Verify NPCs look right if `Armor and Clothing Extension` is also active.
 - `Bandolier` changes inventory — carry-weight design must account for additional slots.
-- The Retexture/Mesh Fixes mod and CBBE 3BA BodySlide are **not stackable** for female meshes. HIMBO Conversion V2 avoids this conflict (designed to stack on top of Retexture/Mesh Fixes).
+- The Retexture/Mesh Fixes mod and CBBE 3BA BodySlide are *not stackable* for female meshes. HIMBO Conversion V2 avoids this conflict (designed to stack on top of Retexture/Mesh Fixes).
 - All IA companion mods trigger `Pandora` and `BodySlide` rebuilds in → `Performance`.
 
 ---
@@ -8701,14 +8703,14 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Reliquary of Myth](https://www.nexusmods.com/skyrimspecialedition/mods/31612)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/31612")[Reliquary of Myth]],
   [Baseline],
-  [\\#1, \\#4],
+  [#1, #4],
   [Artifact stats and effects. 12K endorsements.],
 )
 
@@ -8717,30 +8719,30 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/41254")[ArteFakes]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Higher-detail 3D models for unique items. Stacks with Reliquary of Myth.],
-  [[Konahrik's Accoutrements](https://www.nexusmods.com/skyrimspecialedition/mods/22206)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22206")[Konahrik's Accoutrements]],
   [Alternative],
-  [\\#1, \\#4],
+  [#1, #4],
   [Dragon-priest gear, masks, harder fights. LoTD museum integration.],
-  [[Unique Items Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/33723)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33723")[Unique Items Tweaks]],
   [Alternative],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Gap-filler for artifacts Reliquary of Myth doesn't cover.],
-  [[Artificer](https://www.nexusmods.com/skyrimspecialedition/mods/99619)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99619")[Artificer]],
   [Alternative],
-  [\\#1, \\#2, \\#4],
+  [#1, #2, #4],
   [Simonrim-aligned alternative to Reliquary of Myth. Requires Thaumaturgy + Mysticism.],
   [Discipline-first route],
   [Alternative],
-  [\\#3],
+  [#3],
   [Vanilla artifact stats.],
 )
 
@@ -8764,14 +8766,14 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Armor and Clothing Extension](https://www.nexusmods.com/skyrimspecialedition/mods/19002)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/19002")[Armor and Clothing Extension]],
   [Baseline],
-  [\\#1, \\#2, \\#3, \\#4],
+  [#1, #2, #3, #4],
   [Clothing diversity. 35K+ endorsements. Requires RUSTIC CLOTHING + SkyUI.],
 )
 
@@ -8780,64 +8782,64 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Dial*],
   [*Notes*],
-  [[Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/21305")[Common Clothes and Armors]],
   [Alternative],
   [all],
   [Common-cloth variety for bandit/sellsword archetypes.],
-  [[Sforzinda Imitations](https://www.nexusmods.com/skyrimspecialedition/mods/54346)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54346")[Sforzinda Imitations]],
   [Alternative],
   [all],
   [Curated boutique clothing. Cut if it pulls toward boutique-fantasy wardrobe.],
-  [[Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/6369)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6369")[Cloaks of Skyrim]],
   [Alternative],
   [all],
   [100+ cloaks via SPID. Highest third-person visual impact.],
-  [[Colovian Noble Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/4464)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4464")[Colovian Noble Clothes]],
   [Alternative],
   [all],
   [Imperial-themed high-status clothing. Pairs with Beyond Skyrim.],
-  [[Knapsack Backpacks SE](https://www.nexusmods.com/skyrimspecialedition/mods/3440)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3440")[Knapsack Backpacks SE]],
   [Alternative],
   [all],
   [Carry-and-wearable utility with MCM. Cosmetic companion to Bandolier.],
   [Discipline-first route],
   [Alternative],
-  [\\#3],
+  [#3],
   [Vanilla clothing only.],
-  [[RMB SPCH - Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/116030)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116030")[RMB SPCH - Cloaks of Skyrim]],
   [Alternative],
   [all],
   [SkyPatched version. Replaces original Cloaks of Skyrim (6369). Preferred over base.],
-  [[Cloaks Of Skyrim Retextured SE](https://www.nexusmods.com/skyrimspecialedition/mods/42558)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42558")[Cloaks Of Skyrim Retextured SE]],
   [Add-on],
   [all],
   [Retexture for Cloaks of Skyrim or RMB SPCH variant.],
-  [[Cloaks Of Skyrim Retextured SE Female Mesh Patch](https://www.nexusmods.com/skyrimspecialedition/mods/85932)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85932")[Cloaks Of Skyrim Retextured SE Female Mesh Patch]],
   [Add-on],
   [all],
   [Female mesh fix for the retexture.],
-  [[Artesian Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/17416)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17416")[Artesian Cloaks of Skyrim]],
   [Alternative],
   [all],
   [Higher-detail cloak mesh/texture replacer. Alternative to Cloaks of Skyrim.],
-  [[Dynamic Artisan Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/146438)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146438")[Dynamic Artisan Cloaks]],
   [Alternative],
   [all],
   [Dynamic cloak animations via OAR. Cloak physics and movement.],
-  [[RMB SPCH - Winter is Coming Cloaks](https://www.nexusmods.com/skyrimspecialedition/mods/116029)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116029")[RMB SPCH - Winter is Coming Cloaks]],
   [Alternative],
   [all],
   [SkyPatched version of Winter is Coming Cloaks.],
-  [[Dynamic Armor Variants](https://www.nexusmods.com/skyrimspecialedition/mods/65963)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65963")[Dynamic Armor Variants]],
   [Alternative],
   [all],
   [Visual armor/clothing variants based on conditions. No stat changes.],
-  [[Dynamic Lowered Hoods](https://www.nexusmods.com/skyrimspecialedition/mods/65964)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65964")[Dynamic Lowered Hoods]],
   [Alternative],
   [all],
   [Hoods lower dynamically when not in combat. OAR-based.],
@@ -8856,9 +8858,9 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 
 // -- guide/modlist-audio.md --
 = Audio and Feedback
-<audio-and-feedback>
+<audio-audio-and-feedback>
 
-**MO2 Separators:** `Audio` → `Audio - Music`, `Audio - SFX & Ambience`
+*MO2 Separators:* `Audio` → `Audio - Music`, `Audio - SFX & Ambience`
 
 All mods in this section belong to one of the two audio separators as noted per subsection.
 
@@ -8874,31 +8876,31 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Chapter II - Jeremy Soule Inspired Music](https://www.nexusmods.com/skyrimspecialedition/mods/37792)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37792")[Chapter II - Jeremy Soule Inspired Music]],
   [Darker, more emotional melancholy without breaking from Soule's shape.],
-  [[The Northerner Diaries - Immersive Edition](https://www.nexusmods.com/skyrimspecialedition/mods/33903)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33903")[The Northerner Diaries - Immersive Edition]],
   [Authentic Jeremy Soule compositions: 19 exploration tracks.],
-  [[The Southerner Diaries](https://www.nexusmods.com/skyrimspecialedition/mods/32593)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32593")[The Southerner Diaries]],
   [22 Soule-inspired exploration and town tracks.],
-  [[Melodies of Civilization](https://www.nexusmods.com/skyrimspecialedition/mods/37533)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37533")[Melodies of Civilization]],
   [20+ town, tavern, and settlement tracks.],
-  [[Nyghtfall - Dark Fantasy Music](https://www.nexusmods.com/skyrimspecialedition/mods/39011)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/39011")[Nyghtfall - Dark Fantasy Music]],
   [~7 hours, 98 dark-fantasy tracks. Evaluate after baseline is in place.],
-  [[Nordenhamr - Viking Music](https://www.nexusmods.com/skyrimspecialedition/mods/58080)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/58080")[Nordenhamr - Viking Music]],
   [Viking identity reinforcement.],
-  [[BA Bard Songs](https://www.nexusmods.com/skyrimspecialedition/mods/47202)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47202")[BA Bard Songs]],
   [Bard song replacer. Compatible with Skyrim's Got Talent.],
 )
 
 === Alternatives
 <audio-and-feedback-alternatives>
 
-- **Yggdrasil Music and SoundFX Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21578)) — Harsher, more ritualistic direction. Last updated April 2021.
-- **Silent Combat Music** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/5148)) — Support option if combat music becomes intrusive.
-- **Minimalist route** — Keep vanilla soundtrack.
+- *Yggdrasil Music and SoundFX Overhaul* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/21578")[Nexus]) — Harsher, more ritualistic direction. Last updated April 2021.
+- *Silent Combat Music* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/5148")[Nexus]) — Support option if combat music becomes intrusive.
+- *Minimalist route* — Keep vanilla soundtrack.
 
 === Installation Notes
 <audio-and-feedback-installation-notes>
@@ -8921,14 +8923,14 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Immersive Sounds - Compendium](https://www.nexusmods.com/skyrimspecialedition/mods/523)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/523")[Immersive Sounds - Compendium]],
   [Weapon-and-armor SFX baseline. Broadest patch ecosystem.],
-  [[Audio Overhaul for Skyrim SE](https://www.nexusmods.com/skyrimspecialedition/mods/12341)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12341")[Audio Overhaul for Skyrim SE]],
   [Master reverb-and-attenuation layer. 27K endorsements, actively maintained (v4.1.4, April 2026).],
-  [[Airgetlam - Shouts SFX](https://www.nexusmods.com/skyrimspecialedition/mods/33993)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33993")[Airgetlam - Shouts SFX]],
   [Shout-audio companion. Replaces raw `.wav` files, no record conflicts.],
   [Strange Runes],
   [Magic audio layer (cross-referenced from → `Magic & Perks`).],
@@ -8951,7 +8953,7 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 === Baseline
 <audio-and-feedback-baseline-2>
 - Minimalist route — rely on ISC + AOS for creature sounds. Add dedicated replacers only if testing reveals weak vocalisations.
-- **Talkative Dragons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/26955)) — Dragons speak during combat via reused vanilla voice lines. ESL-flagged, only overwrites one record (`CreatureDialogueDragon`). 15,478 endorsements.
+- *Talkative Dragons* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/26955")[Nexus]) — Dragons speak during combat via reused vanilla voice lines. ESL-flagged, only overwrites one record (`CreatureDialogueDragon`). 15,478 endorsements.
 
 === Risks & Compatibility
 <audio-and-feedback-risks--compatibility-3>
@@ -8967,16 +8969,16 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Precision](https://www.nexusmods.com/skyrimspecialedition/mods/72347)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/72347")[Precision]],
   [Already locked in → `Third-Person`; audio impact is secondary.],
-  [[Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64741")[Valhalla Combat]],
   [Already locked; parry/stagger/timed-block audio feedback.],
-  [[Heart of the Beast - Werewolf Sound and Camera Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/13776)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/13776")[Heart of the Beast - Werewolf Sound and Camera Overhaul]],
   [Werewolf audio baseline if `Growl` is adopted.],
-  [[Heart of the Beast - Feral](https://www.nexusmods.com/skyrimspecialedition/mods/165648)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/165648")[Heart of the Beast - Feral]],
   [Alternative werewolf sounds. Choose one variant, not both.],
 )
 
@@ -8994,24 +8996,24 @@ Environmental soundscapes, creature ambient sounds, and weather audio to reinfor
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Wildwood Echoes](https://www.nexusmods.com/skyrimspecialedition/mods/112008)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112008")[Wildwood Echoes]],
   [Forest and woodland soundscape expansion.],
-  [[Blackreach Eerie Ambience](https://www.nexusmods.com/skyrimspecialedition/mods/112114)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112114")[Blackreach Eerie Ambience]],
   [Blackreach-specific ambient atmosphere.],
-  [[Murder of Songbirds](https://www.nexusmods.com/skyrimspecialedition/mods/111766)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111766")[Murder of Songbirds]],
   [Ambient bird audio in wilderness areas.],
-  [[Nordic Winds](https://www.nexusmods.com/skyrimspecialedition/mods/112370)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112370")[Nordic Winds]],
   [Weather-specific wind sound effects for colder regions.],
-  [[Whispering Tomes of Apocrypha](https://www.nexusmods.com/skyrimspecialedition/mods/113423)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113423")[Whispering Tomes of Apocrypha]],
   [Apocrypha ambient soundscape.],
-  [[Falmer 'Dialogue' Overhaul - Echolocation](https://www.nexusmods.com/skyrimspecialedition/mods/114625)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114625")[Falmer 'Dialogue' Overhaul - Echolocation]],
   [Falmer echolocation vocalisation replacer. Creature-audio companion layer.],
-  [[Potema Revoiced](https://www.nexusmods.com/skyrimspecialedition/mods/123877)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123877")[Potema Revoiced]],
   [Revoiced Potema dialogue. Overwrites vanilla voice files rather than dialogue records.],
-  [[Whispers of the Daedric Princes](https://www.nexusmods.com/skyrimspecialedition/mods/141931)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141931")[Whispers of the Daedric Princes]],
   [Ambient Daedric prince whispers in dungeons and Oblivion-related locations.],
 )
 
@@ -9027,13 +9029,13 @@ Environmental soundscapes, creature ambient sounds, and weather audio to reinfor
 
 // -- guide/modlist-survival-combat.md --
 = Survival, Difficulty, and Balance
-<survival-difficulty-and-balance>
+<survival-combat-survival-difficulty-and-balance>
 
-**MO2 Separators:** `Survival & Combat` → `Survival & Combat - Difficulty & Lethality`, `Survival & Combat - Enemy AI`, `Survival & Combat - Resources & Injuries`
+*MO2 Separators:* `Survival & Combat` → `Survival & Combat - Difficulty & Lethality`, `Survival & Combat - Enemy AI`, `Survival & Combat - Resources & Injuries`
 
 All mods in this section belong to one of the three survival/combat separators as noted per subsection.
 
-**\#1 picks locked:** Arena, Simply Balanced, Less Sniperlike NPCs (restrained AI route), Stress and Fear + Light the Way + Bathing patch, Know Your Enemy 2.
+*#1 picks locked:* Arena, Simply Balanced, Less Sniperlike NPCs (restrained AI route), Stress and Fear + Light the Way + Bathing patch, Know Your Enemy 2.
 
 ---
 
@@ -9045,13 +9047,13 @@ Cross-load-order pressure: how quickly the world pushes back, how clearly dungeo
 === Baseline
 <survival-difficulty-and-balance-baseline>
 
-- **Arena - An Encounter Zone Overhaul** `[\#1, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/33487)) — Cleanest middle ground: more progression pressure than vanilla, still readable and open-world friendly.
+- *Arena - An Encounter Zone Overhaul* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/33487")[#1, #4]` ([Nexus]) — Cleanest middle ground: more progression pressure than vanilla, still readable and open-world friendly.
 
 === Alternatives
 <survival-difficulty-and-balance-alternatives>
 
-- **Minimal intervention** `[\#3]` — Leave encounter zones close to vanilla.
-- **Heavy world-structure** `[\#1]` — Deleveled loot and stronger world gating (owned by → `Crafting & Economy`).
+- *Minimal intervention* `[#3]` — Leave encounter zones close to vanilla.
+- *Heavy world-structure* `[#1]` — Deleveled loot and stronger world gating (owned by → `Crafting & Economy`).
 
 === Risks & Compatibility
 <survival-difficulty-and-balance-risks--compatibility>
@@ -9069,19 +9071,19 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 === Baseline
 <survival-difficulty-and-balance-baseline-2>
 
-- **Simply Balanced** `[\#1, \#2, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15541)) — Preferred pacing tool. Final damage/progression tuning without re-owning stamina, injury, or combat behavior.
+- *Simply Balanced* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/15541")[#1, #2, #4]` ([Nexus]) — Preferred pacing tool. Final damage/progression tuning without re-owning stamina, injury, or combat behavior.
 
 === Alternatives
 <survival-difficulty-and-balance-alternatives-2>
 
-- **Blade and Blunt - A Combat Overhaul** `[\#1]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34549)) — Deliberate branch — it reaches far beyond simple pacing.
-- **Wildcat - Combat of Skyrim** `[\#1, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/1368)) — Injury system, combat AI, and lethality tweaks. Legacy baseline.
-- **Minimalist route** `[\#3]` — Keep lethality in the section-04 combat stack.
+- *Blade and Blunt - A Combat Overhaul* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/34549")[#1]` ([Nexus]) — Deliberate branch — it reaches far beyond simple pacing.
+- *Wildcat - Combat of Skyrim* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/1368")[#1, #4]` ([Nexus]) — Injury system, combat AI, and lethality tweaks. Legacy baseline.
+- *Minimalist route* `[#3]` — Keep lethality in the section-04 combat stack.
 
 === Candidate
 <survival-difficulty-and-balance-candidate>
 
-- **Relentless** `[\#1]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/114022)) — Difficulty and pacing mod. Research before adding; evaluate how it interacts with the Section-04 combat stack and Arena encounter zones.
+- *Relentless* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/114022")[#1]` ([Nexus]) — Difficulty and pacing mod. Research before adding; evaluate how it interacts with the Section-04 combat stack and Arena encounter zones.
 
 ---
 
@@ -9092,14 +9094,14 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 <survival-difficulty-and-balance-baseline-3>
 
 - Restrained route — rely on `Arena`, the section-04 combat stack, and targeted creature/faction additions.
-- **Less Sniperlike NPCs** `[all]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34199)) — Reduces NPC projectile accuracy. Prefer applying via Wrye Bash (~70.0) to avoid an extra plugin.
+- *Less Sniperlike NPCs* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/34199")[all]` ([Nexus]) — Reduces NPC projectile accuracy. Prefer applying via Wrye Bash (~70.0) to avoid an extra plugin.
 
 === Alternatives
 <survival-difficulty-and-balance-alternatives-3>
 
-- **Skyrim Revamped - Complete Enemy Overhaul** `[\#1, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14598)) — High-commitment. Add only if ordinary testing shows enemy behavior still too flat.
-- **SkyTactics - Dynamic Combat Styles** `[\#1, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131148)) — SkyPatcher-based NPC combat style variety.
-- **NPCs Take Cover - Smarter Anti-Cheese AI** `[all]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111890)) — NPCs take cover during combat instead of standing in the open. Lightweight, no new records.
+- *Skyrim Revamped - Complete Enemy Overhaul* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/14598")[#1, #4]` ([Nexus]) — High-commitment. Add only if ordinary testing shows enemy behavior still too flat.
+- *SkyTactics - Dynamic Combat Styles* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/131148")[#1, #4]` ([Nexus]) — SkyPatcher-based NPC combat style variety.
+- *NPCs Take Cover - Smarter Anti-Cheese AI* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/111890")[all]` ([Nexus]) — NPCs take cover during combat instead of standing in the open. Lightweight, no new records.
 
 ---
 
@@ -9111,15 +9113,15 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 === Baseline
 <survival-difficulty-and-balance-baseline-4>
 
-- **Stress and Fear - A Dynamic Sanity System** `[\#1, \#2, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/116522)) — Emotional/pacing consequences encouraging rest, food, inns, and quieter recovery. Design is light enough to create stories without shouting over the rest of the list.
-- **Light the Way - A Stress and Fear Add-On** `[\#1, \#2, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/171532)) — Light-flicker effect during high-stress moments.
-- **Bathing in Skyrim - Renewed - Stress and Fear patch** `[\#1, \#2, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141564)) — Cleanliness affects sanity. Required if both mods installed.
+- *Stress and Fear - A Dynamic Sanity System* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/116522")[#1, #2, #4]` ([Nexus]) — Emotional/pacing consequences encouraging rest, food, inns, and quieter recovery. Design is light enough to create stories without shouting over the rest of the list.
+- *Light the Way - A Stress and Fear Add-On* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/171532")[#1, #2, #4]` ([Nexus]) — Light-flicker effect during high-stress moments.
+- *Bathing in Skyrim - Renewed - Stress and Fear patch* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/141564")[#1, #2, #4]` ([Nexus]) — Cleanliness affects sanity. Required if both mods installed.
 
 === Alternatives
 <survival-difficulty-and-balance-alternatives-4>
 
-- **Blade and Blunt** `[\#1]` — Overlapping alternative for harsher stamina-and-combat pressure.
-- **Minimalist route** `[\#3]` — Keep resource pressure inside existing combat/survival layers.
+- *Blade and Blunt* `[#1]` — Overlapping alternative for harsher stamina-and-combat pressure.
+- *Minimalist route* `[#3]` — Keep resource pressure inside existing combat/survival layers.
 
 ---
 
@@ -9129,7 +9131,7 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 === Baseline
 <survival-difficulty-and-balance-baseline-5>
 
-- **Know Your Enemy 2** `[\#1, \#4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93258)) — Different creatures call for different tools; inspect system makes knowledge legible. Scope: tactical differentiation, not full enemy-ecosystem ownership.
+- *Know Your Enemy 2* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/93258")[#1, #4]` ([Nexus]) — Different creatures call for different tools; inspect system makes knowledge legible. Scope: tactical differentiation, not full enemy-ecosystem ownership.
 
 === Risks & Compatibility
 <survival-difficulty-and-balance-risks--compatibility-2>
@@ -9151,12 +9153,12 @@ How difficulty and pressure choices interact with the chosen survival framework.
 - Additive route — use pressure layers that reward existing survival behaviors (eating, resting, warming up, returning to town).
 - `Stress and Fear` naturally plugs into meals, inns, sleep, and calmer downtime.
 - If `Starfrost` remains the baseline, this section should amplify recovery need without forcing menu babysitting.
-- **Cold Breath - NG** `[all]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174838)) (v1.8, May 2026) — Higher-fidelity fogged breath in cold environments. Mesh/particle replacer, no ESP.
+- *Cold Breath - NG* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/174838")[all]` ([Nexus]) (v1.8, May 2026) — Higher-fidelity fogged breath in cold environments. Mesh/particle replacer, no ESP.
 
 === Alternatives
 <survival-difficulty-and-balance-alternatives-5>
 
-- **Navigation Restrictions - NG** `[\#1]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/129086)) — Fast travel and survival restrictions. Adds survival-oriented travel pressure.
+- *Navigation Restrictions - NG* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/129086")[#1]` ([Nexus]) — Fast travel and survival restrictions. Adds survival-oriented travel pressure.
 
 === Environmental Hazards → separator: Survival & Combat - Resources & Injuries
 <survival-difficulty-and-balance-environmental-hazards-separator-survival--combat-resources--injuries>
@@ -9165,10 +9167,10 @@ Environmental damage layers that make fire, traps, and dungeon hazards genuinely
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Fires Hurt - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/157720)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157720")[Fires Hurt - OIF]],
   [Fire sources deal damage over time when stood in. Requires OIF framework. Adds meaningful hazard pressure to dungeons and campfires.],
 )
 
@@ -9177,9 +9179,9 @@ Environmental damage layers that make fire, traps, and dungeon hazards genuinely
 
 // -- guide/modlist-lotd.md --
 = Legacy of the Dragonborn
-<legacy-of-the-dragonborn>
+<lotd-legacy-of-the-dragonborn>
 
-**MO2 Separator:** `Legacy of the Dragonborn`
+*MO2 Separator:* `Legacy of the Dragonborn`
 
 All items in this section belong to the `Legacy of the Dragonborn` MO2 separator.
 
@@ -9192,29 +9194,29 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[Legacy of the Dragonborn](https://www.nexusmods.com/skyrimspecialedition/mods/11802) v6.10.1 (May 2026)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/11802")[Legacy of the Dragonborn] v6.10.1 (May 2026)],
   [Baseline],
   [Non-negotiable centerpiece.],
-  [[The Curator's Companion](https://www.nexusmods.com/skyrimspecialedition/mods/38529) v7.0.8],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/38529")[The Curator's Companion] v7.0.8],
   [Baseline],
   [In-game tracking for museum displays and collection progress.],
-  [[Legacy of the Dragonborn Patches (Official)](https://www.nexusmods.com/skyrimspecialedition/mods/30980) v6.10.7 (June 2026)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/30980")[Legacy of the Dragonborn Patches (Official)] v6.10.7 (June 2026)],
   [Baseline],
   [Required integration infrastructure.],
   [Paintings Replacer for Legacy of the Dragonborn SSE (Nexus 13279, v1.1, Nov 2017)],
   [Baseline],
   [Texture replacer, low risk.],
-  [Fate Cards Remade - Legacy of The Dragonborn ([Nexus 76418](https://www.nexusmods.com/skyrimspecialedition/mods/76418))],
+  [Fate Cards Remade - Legacy of The Dragonborn (#link("https://www.nexusmods.com/skyrimspecialedition/mods/76418")[Nexus 76418])],
   [Baseline],
   [130 unique card artworks, remade meshes and display assets.],
   [Placeable Display Cases (Nexus 131107, v3.1, Jan 2025)],
   [Baseline],
   [Placeable museum display cases.],
-  [[Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/126220) + [LoTD Achievement Injector](https://www.nexusmods.com/skyrimspecialedition/mods/130114)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126220")[Achievement Injector] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/130114")[LoTD Achievement Injector]],
   [Baseline],
   [Museum achievement content.],
 )
@@ -9227,55 +9229,55 @@ Treated as a foundational content pillar for the final list, not a late optional
 === Quest Mods With Strong LoTD Integration
 <legacy-of-the-dragonborn-quest-mods-with-strong-lotd-integration>
 
-- **VIGILANT** — Multiple display cases in Hall of Oddities.
-- **Unslaad** — Official patch hub support.
-- **Glenmoril** — Patch pipeline still maturing; check before locking.
-- **Project AHO** — Full display room in Hall of Secrets.
-- **Carved Brink** — Displays for Faceted Stones artifacts.
-- **The Forgotten City** — Unique items and choice reward display.
-- **Beyond Skyrim - Bruma** — Count-flation and display-base integration.
-- **Beyond Reach** — Third-party patch.
-- **The Wheels of Lull** — Hall of Secrets display slots.
-- **Moon and Star** — Unique armor/weapon display.
-- **Wyrmstooth** — Displays for unique items.
-- **Falskaar** — Base museum count supports.
-- **Sirenroot - A Verdant Tale** — Check patch status.
-- **Midwood Isle** — Official patch support.
-- **The Gray Cowl of Nocturnal** — Legendary mask display.
-- **The Breton Paladin** — Official patch support.
-- **Clockwork** — Unique item display slots.
-- **Konahrik's Accoutrements** — Deep integration with dedicated display room.
-- **Artifacts - The Ice Blade of the Monarch** — Standalone artifact with display.
-- **Artifacts - The Tournament of the Ten Bloods** — New artifact quest with displays.
-- **Obscure's College of Winterhold** — LoTD patch in OCW's own FOMOD. Covers private collection and unique College items.
+- *VIGILANT* — Multiple display cases in Hall of Oddities.
+- *Unslaad* — Official patch hub support.
+- *Glenmoril* — Patch pipeline still maturing; check before locking.
+- *Project AHO* — Full display room in Hall of Secrets.
+- *Carved Brink* — Displays for Faceted Stones artifacts.
+- *The Forgotten City* — Unique items and choice reward display.
+- *Beyond Skyrim - Bruma* — Count-flation and display-base integration.
+- *Beyond Reach* — Third-party patch.
+- *The Wheels of Lull* — Hall of Secrets display slots.
+- *Moon and Star* — Unique armor/weapon display.
+- *Wyrmstooth* — Displays for unique items.
+- *Falskaar* — Base museum count supports.
+- *Sirenroot - A Verdant Tale* — Check patch status.
+- *Midwood Isle* — Official patch support.
+- *The Gray Cowl of Nocturnal* — Legendary mask display.
+- *The Breton Paladin* — Official patch support.
+- *Clockwork* — Unique item display slots.
+- *Konahrik's Accoutrements* — Deep integration with dedicated display room.
+- *Artifacts - The Ice Blade of the Monarch* — Standalone artifact with display.
+- *Artifacts - The Tournament of the Ten Bloods* — New artifact quest with displays.
+- *Obscure's College of Winterhold* — LoTD patch in OCW's own FOMOD. Covers private collection and unique College items.
 
 === Display Expansions And Room Mods
 <legacy-of-the-dragonborn-display-expansions-and-room-mods>
 
-- **LOTD Display Patch Repos** — Third-party display patches not covered by official hub.
-- **Museum Display Room Expansion** — Evaluate if base museum feels cramped.
-- **Hall of Forgotten Guild** — Curator's Companion feature for additional collectible space.
+- *LOTD Display Patch Repos* — Third-party display patches not covered by official hub.
+- *Museum Display Room Expansion* — Evaluate if base museum feels cramped.
+- *Hall of Forgotten Guild* — Curator's Companion feature for additional collectible space.
 
 === Collectible Additions
 <legacy-of-the-dragonborn-collectible-additions>
 
-- **Stones of Barenziah Quest Markers** — Dedicated display for completed crown.
-- **Jewels of the Reach** — Additional gemstone collectible.
-- **Dawnguard Treasure Map** — Feeds collection-driven exploration loop.
-- **Legacy of the Dragonborn BadGremlins Collection** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15092)) — Gremlin-themed collectible display items for the museum.
-- **Fate Cards New Style - 2023 Remaster** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/104676)) — Alternate fate card artwork and design. Alternative to Fate Cards Remade (76418).
+- *Stones of Barenziah Quest Markers* — Dedicated display for completed crown.
+- *Jewels of the Reach* — Additional gemstone collectible.
+- *Dawnguard Treasure Map* — Feeds collection-driven exploration loop.
+- *Legacy of the Dragonborn BadGremlins Collection* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/15092")[Nexus]) — Gremlin-themed collectible display items for the museum.
+- *Fate Cards New Style - 2023 Remaster* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/104676")[Nexus]) — Alternate fate card artwork and design. Alternative to Fate Cards Remade (76418).
 
 === Artifact Enhancement
 <legacy-of-the-dragonborn-artifact-enhancement>
 
-- **Zim's Immersive Artifacts** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/9138)) — 50+ vanilla artifact rebalances. If no official patch, load LoTD after ZIA so museum display conditions use LoTD records.
+- *Zim's Immersive Artifacts* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/9138")[Nexus]) — 50+ vanilla artifact rebalances. If no official patch, load LoTD after ZIA so museum display conditions use LoTD records.
 
 ---
 
 == Patch Strategy → separator: Legacy of the Dragonborn
 <legacy-of-the-dragonborn-patch-strategy-separator-legacy-of-the-dragonborn>
 
-- Use **LoTD Patches (Official)** as default patch source.
+- Use *LoTD Patches (Official)* as default patch source.
 - Add third-party patches only when official collection doesn't cover a finalized mod.
 - Do not pre-install broad patch bundles for hypothetical mods.
 - Re-check museum sorting behavior after each major content addition.
@@ -9284,7 +9286,7 @@ Treated as a foundational content pillar for the final list, not a late optional
 <legacy-of-the-dragonborn-mod-selection-questions>
 
 1. Does this mod have official or high-quality third-party LoTD patch support?
-2. Does it add unique items that feel like they *should* be displayed?
+2. Does it add unique items that feel like they #emph[should] be displayed?
 3. Does it conflict with LoTD worldspace edits?
 4. Does the play order fit the museum's unlock progression?
 
@@ -9296,31 +9298,31 @@ Treated as a foundational content pillar for the final list, not a late optional
 === Sorting And Inventory
 <legacy-of-the-dragonborn-sorting-and-inventory>
 
-- **Legacy Safehouse Plus** — Expanded safehouse with additional crafting stations. Check v6.10+ compatibility.
-- **LOTD - Explorer's Room** — Explorer-themed storage/display.
-- **Quick Light** — Not LoTD-specific but essential for museum navigation.
-- **Map Markers for LotD** — Fast-travel marker after quest conditions met.
+- *Legacy Safehouse Plus* — Expanded safehouse with additional crafting stations. Check v6.10+ compatibility.
+- *LOTD - Explorer's Room* — Explorer-themed storage/display.
+- *Quick Light* — Not LoTD-specific but essential for museum navigation.
+- *Map Markers for LotD* — Fast-travel marker after quest conditions met.
 
 === Museum-Specific UI
 <legacy-of-the-dragonborn-museum-specific-ui>
 
-- **LOTD Museum Exterior Fixes** — Navmesh and door-activation fixes.
-- **LOTD Hall of Secrets Door Fix** — Door activator fix.
-- **Object Manipulation Overhaul** — Display arrangement without console commands.
+- *LOTD Museum Exterior Fixes* — Navmesh and door-activation fixes.
+- *LOTD Hall of Secrets Door Fix* — Door activator fix.
+- *Object Manipulation Overhaul* — Display arrangement without console commands.
 
 === Additional QoL
 <legacy-of-the-dragonborn-additional-qol>
 
-- **Legacy of The Dragonborn - SMIM Chests** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55720)) — SMIM-quality chest meshes for the museum displays.
-- **LOTD - Museum Exterior Music** — Low priority; evaluate after → `Audio` is locked.
-- **Dynamic Activation Key** — Reduces E-key scroll-conflict with crowded displays.
+- *Legacy of The Dragonborn - SMIM Chests* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/55720")[Nexus]) — SMIM-quality chest meshes for the museum displays.
+- *LOTD - Museum Exterior Music* — Low priority; evaluate after → `Audio` is locked.
+- *Dynamic Activation Key* — Reduces E-key scroll-conflict with crowded displays.
 
 === Relic System
 <legacy-of-the-dragonborn-relic-system>
 
-- **Relic Hunter** — Evaluate compatibility with LoTD v6's own relic system.
-- **LOTD - Explorer's League** — Guild-like progression. Check overlap with Curator's Companion.
-- **Shovels - Dig Up Treasure** — Check for conflict with LoTD dig-site expeditions.
+- *Relic Hunter* — Evaluate compatibility with LoTD v6's own relic system.
+- *LOTD - Explorer's League* — Guild-like progression. Check overlap with Curator's Companion.
+- *Shovels - Dig Up Treasure* — Check for conflict with LoTD dig-site expeditions.
 
 === Risks & Compatibility
 <legacy-of-the-dragonborn-risks--compatibility>
@@ -9335,9 +9337,9 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 // -- guide/modlist-adult.md --
 = Adult Content
-<adult-content>
+<adult-adult-content>
 
-**MO2 Separator:** `Adult Content`
+*MO2 Separator:* `Adult Content`
 
 All mods in this section belong to the `Adult Content` MO2 separator unless noted.
 
@@ -9350,62 +9352,62 @@ OStim Standalone — a modern, standalone adult animation framework that does no
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Type*],
   [*Notes*],
-  [[OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/98163)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/98163")[OStim Standalone]],
   [Baseline],
   [Modern adult animation framework. Does not require OSA.],
-  [[OStim Community Resource](https://www.nexusmods.com/skyrimspecialedition/mods/106519)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106519")[OStim Community Resource]],
   [Baseline],
   [Shared framework for OStim add-ons.],
-  [[Night-blooming Violets for OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/98276)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/98276")[Night-blooming Violets for OStim Standalone]],
   [Baseline],
   [Scene framework addon.],
-  [[OARE - Open Animations Romance and Erotica](https://www.nexusmods.com/skyrimspecialedition/mods/80594)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80594")[OARE - Open Animations Romance and Erotica]],
   [Baseline],
   [Recommended animation pack baseline.],
-  [[Additional Leito's Animations for Ostim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/104995)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/104995")[Additional Leito's Animations for Ostim Standalone]],
   [Baseline],
   [~150 animations.],
-  [[Anub's animations for Ostim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/101918)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/101918")[Anub's animations for Ostim Standalone]],
   [Baseline],
   [~685 animations.],
-  [[PPA - Procedural Penis Animations](https://www.nexusmods.com/skyrimspecialedition/mods/172002)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172002")[PPA - Procedural Penis Animations]],
   [Baseline],
   [CBPC collision physics addon.],
-  [[OSmp - Automatic SMP physics toggle for OStim](https://www.nexusmods.com/skyrimspecialedition/mods/72547)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/72547")[OSmp - Automatic SMP physics toggle for OStim]],
   [Baseline],
   [ESL-flagged, supports CBBE 3BA and HIMBO.],
-  [[Female Moan Voicesets For Ostim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/121383)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121383")[Female Moan Voicesets For Ostim Standalone]],
   [Baseline],
   [38 voicesets keyed to voice types.],
-  [[Ostim SA-Sound Replacer-Blowjob](https://www.nexusmods.com/skyrimspecialedition/mods/131890)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/131890")[Ostim SA-Sound Replacer-Blowjob]],
   [Baseline],
   [Sound replacer.],
-  [[Male Orgasm Sounds For Ostim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/132396)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132396")[Male Orgasm Sounds For Ostim Standalone]],
   [Baseline],
   [Sound replacer for male animations.],
-  [[OCum Ascended](https://www.nexusmods.com/skyrimspecialedition/mods/77506)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77506")[OCum Ascended]],
   [Baseline],
   [Cum and orgasm mechanics with visual layers.],
-  [[Clean Navigation Icons for OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/181886)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/181886")[Clean Navigation Icons for OStim Standalone]],
   [Baseline],
   [62 navigation icons.],
-  [[Animation Pack Icons for OStim Standalone](https://www.nexusmods.com/skyrimspecialedition/mods/181880)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/181880")[Animation Pack Icons for OStim Standalone]],
   [Baseline],
   [18 icons.],
-  [[OTooTiredToMove](https://www.nexusmods.com/skyrimspecialedition/mods/154112)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154112")[OTooTiredToMove]],
   [Baseline],
   [Temporary immobilisation after climax.],
-  [[OStim Prism](https://www.nexusmods.com/skyrimspecialedition/mods/174750)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174750")[OStim Prism]],
   [Baseline],
   [OStim framework visual/settings enhancement.],
-  [[OSquirt - OCum Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/167025)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167025")[OSquirt - OCum Expansion]],
   [Baseline],
   [Expands OCum Ascended mechanics.],
-  [[Ostim Standalone Sound Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/120663)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120663")[Ostim Standalone Sound Overhaul]],
   [Baseline],
   [Audio overhaul for OStim animations.],
 )
@@ -9429,22 +9431,22 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[OStim Romance](https://www.nexusmods.com/skyrimspecialedition/mods/107671)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107671")[OStim Romance]],
   [Primary romance-content baseline. Active maintenance.],
-  [[OComfort - OStim Romance Fork](https://www.nexusmods.com/skyrimspecialedition/mods/139333)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139333")[OComfort - OStim Romance Fork]],
   [Romance fork adding comfort/affection mechanics. Alternative to OStim Romance.],
-  [[Amorous Adventures OStim Standalone - OStim Sequences](https://www.nexusmods.com/skyrimspecialedition/mods/106773)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106773")[Amorous Adventures OStim Standalone - OStim Sequences]],
   [Ports classic Amorous Adventures to OStim with sequence scenes.],
-  [[Amorous Adventures OStim Standalone - Rewrite and MCM Patch with Fixes - Sequences Edition](https://www.nexusmods.com/skyrimspecialedition/mods/150577)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/150577")[Amorous Adventures OStim Standalone - Rewrite and MCM Patch with Fixes - Sequences Edition]],
   [Updated rewrite with MCM patch and fixes. Supersedes the base patch.],
-  [[Amorous Adventures MCM](https://www.nexusmods.com/skyrimspecialedition/mods/100112)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/100112")[Amorous Adventures MCM]],
   [MCM configuration for Amorous Adventures.],
-  [[Amorous Adventures - Player Dialogue Rewritten](https://www.nexusmods.com/skyrimspecialedition/mods/38989)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/38989")[Amorous Adventures - Player Dialogue Rewritten]],
   [Reworks player dialogue options for Amorous Adventures.],
-  [[Caught Red Handed - Quest Expansion - OStim Patch](https://www.nexusmods.com/skyrimspecialedition/mods/69711)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/69711")[Caught Red Handed - Quest Expansion - OStim Patch]],
   [OStim integration for the Caught Red Handed quest expansion.],
 )
 
@@ -9468,10 +9470,10 @@ NPC relationship simulation — schedules, pairings, and partner-swapping runnin
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[OStim NPCs - NPC Sex Lives Improved](https://www.nexusmods.com/skyrimspecialedition/mods/82888)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82888")[OStim NPCs - NPC Sex Lives Improved]],
   [NPC relationship schedules and partner variety. Requires OStim Standalone.],
 )
 
@@ -9493,12 +9495,12 @@ Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[SkyChild](https://www.nexusmods.com/skyrimspecialedition/mods/128779)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128779")[SkyChild]],
   [Child NPC appearance overhaul. Replaces vanilla child models.],
-  [[Wild Side - A SkyChild Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/135462)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135462")[Wild Side - A SkyChild Add-On]],
   [Adds wild/feral child variants. Companion add-on for SkyChild.],
 )
 
@@ -9507,14 +9509,14 @@ Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form 
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Notes*],
-  [[Beeing Female NG](https://www.nexusmods.com/skyrimspecialedition/mods/168434)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168434")[Beeing Female NG]],
   [Tentative — evaluate gameplay and compatibility impact. Pregnancy and female reproductive system framework.],
-  [[Beeing Female - FM - FMR - Skychild Patch](https://www.nexusmods.com/skyrimspecialedition/mods/169104)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169104")[Beeing Female - FM - FMR - Skychild Patch]],
   [Tentative — consider alongside Beeing Female NG. Compatibility patch for Beeing Female + SkyChild.],
-  [[Seeds of Skyrim - Lore Pregnant NPCs](https://www.nexusmods.com/skyrimspecialedition/mods/55112)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55112")[Seeds of Skyrim - Lore Pregnant NPCs]],
   [Lore-friendly pregnant NPCs. Evaluate for overlap with Beeing Female pregnancy system.],
 )
 
@@ -9531,9 +9533,9 @@ Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form 
 
 // -- guide/modlist-voicing.md --
 = Main Character Voicing
-<main-character-voicing>
+<voicing-main-character-voicing>
 
-**MO2 Separator:** `Voicing`
+*MO2 Separator:* `Voicing`
 
 All mods in this section belong to the `Voicing` MO2 separator.
 
@@ -9549,17 +9551,17 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod / Resource*],
   [*Type*],
   [*Notes*],
-  [[Dragonborn Voice Over 2](https://www.nexusmods.com/skyrimspecialedition/mods/84329)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84329")[Dragonborn Voice Over 2]],
   [Framework],
   [SKSE plugin. Intercepts player dialogue and plays `.wav`/`.fuz` files. Settings via SKSE Menu Framework (F1). Per-character pack switching, per-save presets.],
-  [[Bella Voice DBVO](https://www.nexusmods.com/skyrimspecialedition/mods/89810)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89810")[Bella Voice DBVO]],
   [Voice Pack],
   [Most popular female pack, broadest mod coverage.],
-  [[DBVO - Allison Voice Pack](https://www.nexusmods.com/skyrimspecialedition/mods/126843)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126843")[DBVO - Allison Voice Pack]],
   [Voice Pack],
   [British female alternative.],
   [Pre-made male packs],
@@ -9567,10 +9569,10 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
   [Less common pre-made options available.],
   [Laura Bailey],
   [Recommended Actress],
-  [ElevenLabs Voice Design target for custom female pack via → [Custom Voice Pack Pipeline](\\custom-voice-pack-pipeline).],
+  [ElevenLabs Voice Design target for custom female pack via → [Custom Voice Pack Pipeline](custom-voice-pack-pipeline).],
   [Graham McTavish (The Saint / Geralt)],
   [Recommended Actor],
-  [ElevenLabs custom target for male pack via → [Custom Voice Pack Pipeline](\\custom-voice-pack-pipeline).],
+  [ElevenLabs custom target for male pack via → [Custom Voice Pack Pipeline](custom-voice-pack-pipeline).],
 )
 
 === Alternatives
@@ -9578,20 +9580,20 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod / Resource*],
   [*Type*],
   [*Notes*],
-  [[xVASynth](https://www.nexusmods.com/skyrimspecialedition/mods/44184)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/44184")[xVASynth]],
   [Alternative],
   [Free audio generation. Quality is noticeably synthetic. Used for male default (Geralt voice model).],
-  [[ElevenLabs](https://elevenlabs.io)],
+  [#link("https://elevenlabs.io")[ElevenLabs]],
   [Alternative],
   [Premium audio generation. Higher quality, more natural output. Used for Laura Bailey custom target.],
-  [[DBVO Dialogue Export for xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/182009)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/182009")[DBVO Dialogue Export for xEdit]],
   [Alternative],
   [Replaces MCVO Generator for dialogue export. xEdit script with optional ESPFE fix patch.],
-  [[MCVO Generator](https://www.nexusmods.com/skyrimspecialedition/mods/86737)],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/86737")[MCVO Generator]],
   [Alternative],
   [Legacy dialogue export. Still works with DBVO2 legacy mode. Last updated March 2023.],
 )
@@ -9612,7 +9614,7 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 
 Two custom-generated packs (Laura Bailey female, Graham McTavish male) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO2 voice pack dropdown in SKSE Menu Framework (F1).
 
-Run → [Custom Voice Pack Pipeline](\custom-voice-pack-pipeline) twice with two ElevenLabs voice IDs (Laura Bailey female, Graham McTavish male). Package as separate MO2 mods and enable one at a time.
+Run → [Custom Voice Pack Pipeline](custom-voice-pack-pipeline) twice with two ElevenLabs voice IDs (Laura Bailey female, Graham McTavish male). Package as separate MO2 mods and enable one at a time.
 
 ---
 
@@ -9626,32 +9628,32 @@ Unified workflow covering dialogue export → audio generation → packaging int
 
 - Install DBVO2 and dependencies (SKSE64, Address Library, SKSE Menu Framework). DBVO2 must be enabled in MO2 before exporting.
 - Build the full modlist in MO2 with final load order.
-- Download [DBVO Dialogue Export for xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/182009) — modern xEdit script that exports player dialogue lines. Replaces MCVO Generator.
-- [ElevenLabs](https://elevenlabs.io) paid account — required for both custom targets (Laura Bailey and Graham McTavish).
+- Download #link("https://www.nexusmods.com/skyrimspecialedition/mods/182009")[DBVO Dialogue Export for xEdit] — modern xEdit script that exports player dialogue lines. Replaces MCVO Generator.
+- #link("https://elevenlabs.io")[ElevenLabs] paid account — required for both custom targets (Laura Bailey and Graham McTavish).
 - Download DBVO Voice Packer 2 V2.5.1 (Google Drive link) — packages generated audio into DBVO2 format with `.fuz` files and `voice-pack.json` manifest.
 
 === Step 1: Export Dialogue
 <main-character-voicing-step-1-export-dialogue>
 
 1. Open SSEEdit/xEdit with all load-order mods active.
-2. Right-click any plugin → **Apply Script** → select `DBVO\_Dialogue\_Export.pas`.
-3. The script scans all dialogue in the load order and outputs one `TopicList*.txt` file per dialogue-containing mod, plus a `BrokenTopicList*.txt` listing lines that need manual editing.
+2. Right-click any plugin → *Apply Script* → select `DBVO\_Dialogue\_Export.pas`.
+3. The script scans all dialogue in the load order and outputs one `TopicList#emph[.txt` file per dialogue-containing mod, plus a `BrokenTopicList].txt` listing lines that need manual editing.
 4. Optionally create the ESPFE fix patch (trims whitespace, deduplicates lines).
 5. Save the output to a working directory outside MO2's `mods` folder.
 
 === Step 2: Generate Audio
 <main-character-voicing-step-2-generate-audio>
 
-**ElevenLabs (recommended for Laura Bailey or Graham McTavish custom pack):**
+*ElevenLabs (recommended for Laura Bailey or Graham McTavish custom pack):*
 
-1. Create an [ElevenLabs](https://elevenlabs.io) account. A paid subscription is required for full load orders (Creator \$22/mo. or Pro \$99/mo.).
-2. Get your API key: Profile → **Profile Settings** → **API Key** → copy the key.
+1. Create an #link("https://elevenlabs.io")[ElevenLabs] account. A paid subscription is required for full load orders (Creator \$22/mo. or Pro \$99/mo.).
+2. Get your API key: Profile → *Profile Settings* → *API Key* → copy the key.
 3. Choose a voice:
-   - **Voice Library** — browse pre-made voices. For a Laura Bailey target, look for voices tagged with similar qualities (warm alto, American female). For Graham McTavish, look for deep, gravelly male voices (Scottish-accented where possible).
-   - **Voice Design** — create a custom voice from scratch with fine-grained control over accent, age, gender, and style.
-   - **Voice Cloning** — if you have a clean audio sample of the target actor, use Instant Voice Cloning.
+   - *Voice Library* — browse pre-made voices. For a Laura Bailey target, look for voices tagged with similar qualities (warm alto, American female). For Graham McTavish, look for deep, gravelly male voices (Scottish-accented where possible).
+   - *Voice Design* — create a custom voice from scratch with fine-grained control over accent, age, gender, and style.
+   - *Voice Cloning* — if you have a clean audio sample of the target actor, use Instant Voice Cloning.
 4. Get the voice ID: every voice has a unique ID in its URL (`/voice/<voice-id>`) or via `GET https://api.elevenlabs.io/v1/voices`.
-5. Download the DBVO Voice Pack Creator tool from the DBVO author's [Discord](https://discord.gg/7EFNjzATvC), `tool-download` channel.
+5. Download the DBVO Voice Pack Creator tool from the DBVO author's #link("https://discord.gg/7EFNjzATvC")[Discord], `tool-download` channel.
 6. Point the Voice Pack Creator at your exported `TopicList*.txt` files, enter your API key and target voice ID, then run.
 7. The tool batch-generates `.wav` files covering every dialogue line in your load order.
 
@@ -9670,8 +9672,8 @@ Unified workflow covering dialogue export → audio generation → packaging int
 
 1. Enable the mod in MO2. Place after DBVO2 in the left pane.
 2. Launch the game through SKSE.
-3. Open SKSE Menu Framework (Press **F1**) → Dragonborn Voice Over → General.
-4. Ensure **Use legacy voice over** is **Off** (V2 packs only).
+3. Open SKSE Menu Framework (Press *F1*) → Dragonborn Voice Over → General.
+4. Ensure *Use legacy voice over* is *Off* (V2 packs only).
 5. Select your voice pack from the dropdown.
 6. Test dialogue lines with any NPC — uncovered lines fall back to subtitles.
 
@@ -9690,38 +9692,38 @@ Repeat Steps 2–4 with the other voice target and ElevenLabs voice ID (Laura Ba
 
 // -- guide/modlist-performance.md --
 = Performance and Technical Workflow
-<performance-and-technical-workflow>
+<performance-performance-and-technical-workflow>
 
-**MO2 Separator:** `Performance`
+*MO2 Separator:* `Performance`
 
 == Overview
 <performance-and-technical-workflow-overview>
 
 This section owns the performance budgeting, optimization discipline, generated-patch pipeline, and long-term maintenance workflow that keeps `Elder Wilds` stable as the load order grows. The section is split into five sub-files that each own a distinct concern:
 
-- **Performance Strategy**: budgeted performance analysis, VRAM-heavy mod review, CPU-heavy script review
-- **Optimization & Configuration**: shader impact, grass/tree/draw-call optimization, INI tuning (BethINI Pie baseline), save safety
-- **Tool Pipeline**: xEdit/Pandora/DynDOLOD/Synthesis workflow discipline, 4K LOD baseline (xLODGen/TexGen/DynDOLOD STEP config), optional diagnostics (Recursion Monitor, S.L.A.C.K.)
-- **Bashed Patch & Synthesis Configuration**: exact Wrye Bash tweak settings, Bash Tag per plugin, full Synthesis patcher pipeline (11 stages), build order and rebuild triggers
-- **Testing & Maintenance**: benchmark methodology and scenarios, tuning knobs, patcher revisit triggers, generator output order, change tracking, MCM recording, mod update workflow
+- *Performance Strategy*: budgeted performance analysis, VRAM-heavy mod review, CPU-heavy script review
+- *Optimization & Configuration*: shader impact, grass/tree/draw-call optimization, INI tuning (BethINI Pie baseline), save safety
+- *Tool Pipeline*: xEdit/Pandora/DynDOLOD/Synthesis workflow discipline, 4K LOD baseline (xLODGen/TexGen/DynDOLOD STEP config), optional diagnostics (Recursion Monitor, S.L.A.C.K.)
+- *Bashed Patch & Synthesis Configuration*: exact Wrye Bash tweak settings, Bash Tag per plugin, full Synthesis patcher pipeline (11 stages), build order and rebuild triggers
+- *Testing & Maintenance*: benchmark methodology and scenarios, tuning knobs, patcher revisit triggers, generator output order, change tracking, MCM recording, mod update workflow
 
 == Sub-File Index
 <performance-and-technical-workflow-sub-file-index>
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*File*],
   [*Section*],
-  [[`modlist-performance-strategy.md`](modlist-performance-strategy.md)],
+  [@performance-strategy-performance-strategy],
   [Performance Strategy],
-  [[`modlist-performance-optimization.md`](modlist-performance-optimization.md)],
+  [@performance-optimization-optimization--configuration],
   [Optimization & Configuration],
-  [[`modlist-performance-tools.md`](modlist-performance-tools.md)],
+  [@performance-tools-tool-pipeline],
   [Tool Pipeline],
-  [[`modlist-performance-patches.md`](modlist-performance-patches.md)],
+  [@performance-patches-bashed-patch--synthesis-configuration],
   [Bashed Patch & Synthesis Configuration],
-  [[`modlist-performance-testing.md`](modlist-performance-testing.md)],
+  [@performance-testing-testing--maintenance],
   [Testing & Maintenance],
 )
 
@@ -9745,13 +9747,13 @@ This section owns the performance budgeting, optimization discipline, generated-
 
 // -- guide/modlist-performance-strategy.md --
 = Performance Strategy
-<performance-strategy>
+<performance-strategy-performance-strategy>
 
-**MO2 Separators:** `Performance` → `Performance - Strategy`
+*MO2 Separators:* `Performance` → `Performance - Strategy`
 
 All items in this section belong to the `Performance` MO2 separator.
 
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section.
+Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -9762,7 +9764,7 @@ How `Elder Wilds` measures performance, identifies bottlenecks, and keeps genera
 
 === Baseline
 <performance-strategy-baseline>
-- **Budgeted route** — Separate GPU, VRAM, CPU/script, and draw-call problems so fixes target the real cause.
+- *Budgeted route* — Separate GPU, VRAM, CPU/script, and draw-call problems so fixes target the real cause.
 - Treat performance as four different problems that can look similar: shader cost, VRAM pressure, CPU/script load, and exterior draw-call pressure.
 - Keep one repeatable forest scene, one city scene, and one dungeon/interior scene for comparisons.
 - Record baseline and post-change captures with `PresentMon` and review in `CapFrameX`.
@@ -9770,8 +9772,8 @@ How `Elder Wilds` measures performance, identifies bottlenecks, and keeps genera
 
 === Alternatives
 <performance-strategy-alternatives>
-- **Intuition-first route** — Change settings/mods by feel.
-- **Average-FPS route** — Judge by headline FPS even if frame pacing and bottleneck type stay unclear.
+- *Intuition-first route* — Change settings/mods by feel.
+- *Average-FPS route* — Judge by headline FPS even if frame pacing and bottleneck type stay unclear.
 
 === Risks & Compatibility
 <performance-strategy-risks--compatibility>
@@ -9787,15 +9789,15 @@ Texture resolution, PBR/parallax adoption, heavy shader features, and world cove
 
 === Baseline
 <performance-strategy-baseline-2>
-- **Selective route** — High resolution only for hero assets, creatures, architecture, or landscape layers dominating the screen.
+- *Selective route* — High resolution only for hero assets, creatures, architecture, or landscape layers dominating the screen.
 - Start below maximum resolution when a visual pack offers multiple sizes; scale up only if testing proves the asset earns it.
 - Treat PBR/parallax conversions as a VRAM and maintenance choice, not just a screenshot upgrade.
 - If a scene stutters, verify actual memory pressure before blaming scripts or AI.
 
 === Alternatives
 <performance-strategy-alternatives-2>
-- **Max-detail route** — Broad 4K coverage, frequent material upgrades.
-- **Restraint-first route** — Mostly 2K and below with few exceptions.
+- *Max-detail route* — Broad 4K coverage, frequent material upgrades.
+- *Restraint-first route* — Mostly 2K and below with few exceptions.
 
 === Risks & Compatibility
 <performance-strategy-risks--compatibility-2>
@@ -9811,7 +9813,7 @@ CPU and Papyrus pressure comes from layered systems, NPC density, polling script
 
 === Baseline
 <performance-strategy-baseline-3>
-- **Moderated route** — Keep strong feature mods, but avoid stacking several background-heavy systems solving similar jobs.
+- *Moderated route* — Keep strong feature mods, but avoid stacking several background-heavy systems solving similar jobs.
 - Treat NPC expansion, survival layers, follower frameworks, reputation systems, defeat systems, and ambient event mods as cumulative load.
 - Prefer one good system per gameplay problem instead of three lighter systems all ticking in the background.
 - Keep diagnostic logging off during normal play unless a bug needs it.
@@ -9819,8 +9821,8 @@ CPU and Papyrus pressure comes from layered systems, NPC density, polling script
 
 === Alternatives
 <performance-strategy-alternatives-3>
-- **Permissive route** — Allow multiple overlapping always-on systems.
-- **Strict route** — Aggressively cut scripted features even when they materially help list identity.
+- *Permissive route* — Allow multiple overlapping always-on systems.
+- *Strict route* — Aggressively cut scripted features even when they materially help list identity.
 
 === Risks & Compatibility
 <performance-strategy-risks--compatibility-3>
@@ -9833,13 +9835,13 @@ CPU and Papyrus pressure comes from layered systems, NPC density, polling script
 
 // -- guide/modlist-performance-optimization.md --
 = Optimization & Configuration
-<optimization--configuration>
+<performance-optimization-optimization--configuration>
 
-**MO2 Separators:** `Performance` → `Performance - Optimization & Configuration`
+*MO2 Separators:* `Performance` → `Performance - Optimization & Configuration`
 
 All items in this section belong to the `Performance` MO2 separator.
 
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section.
+Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -9849,7 +9851,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 === Baseline
 <optimization--configuration-baseline>
 
-- **Conservative to balanced route** — Accept a few heavier depth/lighting features once the rest of the visual stack is stable.
+- *Conservative to balanced route* — Accept a few heavier depth/lighting features once the rest of the visual stack is stable.
 - Remove or downgrade luxury modules before tearing apart the rest of the graphics stack.
 - `Skyrim Upscaler` is a fallback tool from → `Graphics`, not the first answer to poor optimization.
 - Use `SSE Display Tweaks` from → `Foundations` to enforce stable frame cap.
@@ -9858,8 +9860,8 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 === Alternatives
 <optimization--configuration-alternatives>
 
-- **Conservative route** — Keep CS close to the section-02 baseline.
-- **Luxury route** — Keep piling on expensive modules, then try to recover cost elsewhere.
+- *Conservative route* — Keep CS close to the section-02 baseline.
+- *Luxury route* — Keep piling on expensive modules, then try to recover cost elsewhere.
 
 ---
 
@@ -9869,9 +9871,9 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 === Baseline
 <optimization--configuration-baseline-2>
 
-- **Content restraint first, then low-maintenance optimization.**
-- **Lightened Skyrim** — Leading optimization branch. Almost invisible cleanup, low drama.
-- **eFPS - Anniversary Edition** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/58727)) — Optional only if exterior draw-call pressure still needs help after main world stack is stable. Plan for patch coverage.
+- *Content restraint first, then low-maintenance optimization.*
+- *Lightened Skyrim* — Leading optimization branch. Almost invisible cleanup, low drama.
+- *eFPS - Anniversary Edition* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/58727")[Nexus]) — Optional only if exterior draw-call pressure still needs help after main world stack is stable. Plan for patch coverage.
 - Re-evaluate exterior optimization after major city, roadside, tree, or world-content choices.
 
 === Risks & Compatibility
@@ -9888,7 +9890,7 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 === Baseline
 <optimization--configuration-baseline-3>
 
-- **Tool-first route** — Use `BethINI Pie` as the baseline editor.
+- *Tool-first route* — Use `BethINI Pie` as the baseline editor.
 - Keep MO2 INI path behavior simple and documented.
 - After baseline is set, keep only a short list of manual overrides justified by display/shadow/frame-cap targets.
 - Let `SSE Display Tweaks` handle display behavior and frame pacing.
@@ -9898,21 +9900,21 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 
 Run through MO2 targeting the active profile INIs.
 
-1. **Basic:** Reset to Defaults → High preset → Apply Recommended Tweaks. Window Mode: Borderless. FOV: First Person 75, Third Person 85.
+1. *Basic:* Reset to Defaults → High preset → Apply Recommended Tweaks. Window Mode: Borderless. FOV: First Person 75, Third Person 85.
 
-2. **General → Saved Games:** Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer).
+2. *General → Saved Games:* Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer).
 
-3. **Gameplay:** Difficulty Adept. Untick Disable Kill Cam. Tick Remove Borders. Untick Tutorials.
+3. *Gameplay:* Difficulty Adept. Untick Disable Kill Cam. Tick Remove Borders. Untick Tutorials.
 
-4. **Interface:** Tick Dialogue Subtitles and General Subtitles. Leave Compass and Crosshair ticked. Untick Floating Quest Markers. Leave Controller Vibration ticked.
+4. *Interface:* Tick Dialogue Subtitles and General Subtitles. Leave Compass and Crosshair ticked. Untick Floating Quest Markers. Leave Controller Vibration ticked.
 
-5. **Environment:** Grass Density 60. Untick Reflect Sky.
+5. *Environment:* Grass Density 60. Untick Reflect Sky.
 
-6. **View Distance:** Leave Tree LOD Distance at High default for now. Set to `0` via INI Editor before DynDOLOD generation later.
+6. *View Distance:* Leave Tree LOD Distance at High default for now. Set to `0` via INI Editor before DynDOLOD generation later.
 
-7. **Visuals:** Max Particle Render Count 7500. Untick Lens Flare (CS handles post-processing).
+7. *Visuals:* Max Particle Render Count 7500. Untick Lens Flare (CS handles post-processing).
 
-8. Click Save and Exit, then confirm values in `MO2 → Tools → INI Editor`.
+8. Click Save and Exit, then confirm values in #emph[MO2 → Tools → INI Editor].
 
 ---
 
@@ -9922,7 +9924,7 @@ Run through MO2 targeting the active profile INIs.
 === Baseline
 <optimization--configuration-baseline-4>
 
-- **Disposable-test route** — Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability.
+- *Disposable-test route* — Keep clean labeled saves for pre-LOD, post-LOD, city-performance, forest-travel, and long-session stability.
 - Start new game when adding major worldspace optimization layers (eFPS mod page recommends fresh-start caution).
 - Don't treat old generated outputs, removed scripted mods, or stale occlusion data as safe just because the game still loads.
 - Preserve one or two mature long-session saves only for validation.
@@ -9938,13 +9940,13 @@ Run through MO2 targeting the active profile INIs.
 
 // -- guide/modlist-performance-tools.md --
 = Tool Pipeline
-<tool-pipeline>
+<performance-tools-tool-pipeline>
 
-**MO2 Separators:** `Performance` → `Performance - Tool Pipeline`
+*MO2 Separators:* `Performance` → `Performance - Tool Pipeline`
 
 All items in this section belong to the `Performance` MO2 separator.
 
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section.
+Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -9963,8 +9965,8 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 
 === Alternatives
 <tool-pipeline-alternatives>
-- **Ad hoc route** — Rebuild whenever something looks broken.
-- **Late-everything route** — Postpone most generated work until the end.
+- *Ad hoc route* — Rebuild whenever something looks broken.
+- *Late-everything route* — Postpone most generated work until the end.
 
 ---
 
@@ -9983,24 +9985,24 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 <tool-pipeline-xlodgen-4k-step-baseline>
 - MO2 executable: `xLODGenx64.exe -lodgen -SSE -o:"\<output path>"`.
 - Use `xLODGen` only for terrain LOD.
-- Use **SSE-Terrain-Tamriel-Extend.esm** as terrain-boundary resource (from STEP xLODGen forum; Mega mirrors available). **Activate it only during xLODGen generation** — place it below the last worldspace ESM in the right pane, then deactivate it afterward and reactivate `Terrain LOD Output`.
+- Use *SSE-Terrain-Tamriel-Extend.esm* as terrain-boundary resource (from STEP xLODGen forum; Mega mirrors available). *Activate it only during xLODGen generation* — place it below the last worldspace ESM in the right pane, then deactivate it afterward and reactivate `Terrain LOD Output`.
 - In MO2, ensure any landscape/tree mods that ship LOD-generation resources (e.g., Majestic Mountains, Cathedral Landscapes) are active during xLODGen.
-- In the xLODGen UI: right-click the Worldspace area → `Select All`. Tick only `Terrain LOD`. Apply LOD settings per STEP recommendations.
+- In the xLODGen UI: right-click the Worldspace area → *Select All*. Tick only *Terrain LOD*. Apply LOD settings per STEP recommendations.
 - 4K users: double diffuse and normal sizes for LOD4/LOD8/LOD16/LOD32.
-- Initial LOD4: keep `Optimize Unseen` off. For map/LOD32: use higher `Quality` (0-10) and `Optimize Unseen` ~550.
-- After generation, run **ACMOS Road Generator**:
+- Initial LOD4: keep *Optimize Unseen* off. For map/LOD32: use higher *Quality* (0-10) and *Optimize Unseen* ~550.
+- After generation, run *ACMOS Road Generator*:
   1. Navigate to the ACMOS Road Generator tool folder and open the executable.
-  2. Set the roads dropdown to `Path Only`.
+  2. Set the roads dropdown to *Path Only*.
   3. Browse to your xLODGen output folder and select it.
-  4. Click `Generate`. If prompted to overwrite, click `Yes`.
-  5. When complete, zip the output folder (the tool offers this automatically) and install it as a new mod via MO2's `Add mod from file`.
+  4. Click *Generate*. If prompted to overwrite, click *Yes*.
+  5. When complete, zip the output folder (the tool offers this automatically) and install it as a new mod via MO2's *Add mod from file*.
 
 === TexGen 4K STEP Baseline
 <tool-pipeline-texgen-4k-step-baseline>
 - MO2 executable: `TexGen64.exe -SSE`.
 - Run after `xLODGen`, before `DynDOLOD`.
-- Preset matching rendered resolution: `2160p = 4K`.
-- Grass options: tick `Grass` if no complex grass; tick `HD grass` if using complex grass / CS grass features.
+- Preset matching rendered resolution: *2160p = 4K*.
+- Grass options: tick *Grass* if no complex grass; tick *HD grass* if using complex grass / CS grass features.
 - `TexGen\_SSE.ini`: `GrassModelHeightMultiplier=1.15`, `TreeMSAlphaThreshold=144`, `ObjectMSAlphaThreshold=96`.
 - `ForceComplexGrass`: `0` (default) or `1` (STEP complex-grass branch).
 - Move output to `TexGen Output` mod, enable before running `DynDOLOD`.
@@ -10012,12 +10014,12 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 - Grass brightness values: `0.500` for all R/G/B Top and Bottom channels.
 - `DoubleSidedTextureMask=mountain,mtn`, `DoubleSidedMeshMask=mountain,mtn`.
 - Complex grass branch: `ComplexGrassBillboard=5`, matching brightness values, `ComplexGrassBacklightMask=25`.
-- GUI: right-click worldspace list → `Select All`. Tick `Candles` and `FXGlow`. Load the `High` rules preset.
-- `Occlusion` only on first run. `Grass LOD` only if generating grass LOD.
-- **Ultra Trees:** Enable 3D tree LOD for substantially better distant tree quality. Keep tile size at or below `1024` (diminishing returns beyond this).
-- Target: `4K` preset with `Optimal` tree/catch-all rules + recommended `LOD32` rules.
+- GUI: right-click worldspace list → *Select All*. Tick *Candles* and *FXGlow*. Load the *High* rules preset.
+- *Occlusion* only on first run. *Grass LOD* only if generating grass LOD.
+- *Ultra Trees:* Enable 3D tree LOD for substantially better distant tree quality. Keep tile size at or below `1024` (diminishing returns beyond this).
+- Target: *4K* preset with *Optimal* tree/catch-all rules + recommended *LOD32* rules.
 - Move output to `DynDOLOD Output` mod. In the right pane: place `DynDOLOD.esm` as the last ESM after all worldspace ESMs, `DynDOLOD.esp` second-to-last, and `Occlusion.esp` last (unless using Synthesis, which goes last).
-- Apply ACMOS-required rule edits in DynDOLOD's advanced rule editor: `Tree` → LOD32 set to `Billboard(6)`; `\` → LOD32 set to `Level0`.
+- Apply ACMOS-required rule edits in DynDOLOD's advanced rule editor: *Tree* → LOD32 set to *Billboard(6)*; *\\* → LOD32 set to *Level0*.
 
 === 4K Validation
 <tool-pipeline-4k-validation>
@@ -10035,20 +10037,20 @@ Neither requires ongoing configuration or conflict maintenance once installed.
 
 === Recursion Monitor
 <tool-pipeline-recursion-monitor>
-- **Nexus:** [Recursion Monitor](https://www.nexusmods.com/skyrimspecialedition/mods/76867) — Detects broken Papyrus scripts stuck in recursive loops. Requires SKSE, Address Library.
-- **Updated fork:** [recursion-fix-updated](https://www.nexusmods.com/skyrimspecialedition/mods/179627) (May 2026) — Removes blocking debug popup; writes to SKSE log instead. Prefer for production list.
+- *Nexus:* #link("https://www.nexusmods.com/skyrimspecialedition/mods/76867")[Recursion Monitor] — Detects broken Papyrus scripts stuck in recursive loops. Requires SKSE, Address Library.
+- *Updated fork:* #link("https://www.nexusmods.com/skyrimspecialedition/mods/179627")[recursion-fix-updated] (May 2026) — Removes blocking debug popup; writes to SKSE log instead. Prefer for production list.
 
 === S.L.A.C.K. (Save And Load Accelerator For SKSE Cosaves)
 <tool-pipeline-slack-save-and-load-accelerator-for-skse-cosaves>
-- **Nexus:** [S.L.A.C.K.](https://www.nexusmods.com/skyrimspecialedition/mods/163969) — Cosaves save up to 150× faster, load up to 15× faster. Error-friendly mode catches exceptions from other SKSE plugins' cosave handlers.
+- *Nexus:* #link("https://www.nexusmods.com/skyrimspecialedition/mods/163969")[S.L.A.C.K.] — Cosaves save up to 150× faster, load up to 15× faster. Error-friendly mode catches exceptions from other SKSE plugins' cosave handlers.
 - Requires: SKSE 1.6.1170, Address Library, SSE Engine Fixes (SKSE64 Preloader).
 - Safe to install or uninstall at any time.
-- Complements [Seamless Saving](https://www.nexusmods.com/skyrimspecialedition/mods/173161) (targets main save serialisation, not cosaves). Safe to run both.
+- Complements #link("https://www.nexusmods.com/skyrimspecialedition/mods/173161")[Seamless Saving] (targets main save serialisation, not cosaves). Safe to run both.
 
 === Log Watcher
 <tool-pipeline-log-watcher>
 
-- **Nexus:** [Log Watcher - Real-time Analysis of SKSE Logs](https://www.nexusmods.com/skyrimspecialedition/mods/163979) — Monitors SKSE logs in real-time for errors, warnings, and crash indicators. Diagnostic aid for testing and load-order debugging.
+- *Nexus:* #link("https://www.nexusmods.com/skyrimspecialedition/mods/163979")[Log Watcher - Real-time Analysis of SKSE Logs] — Monitors SKSE logs in real-time for errors, warnings, and crash indicators. Diagnostic aid for testing and load-order debugging.
 
 === Risks & Compatibility
 <tool-pipeline-risks--compatibility>
@@ -10062,13 +10064,13 @@ Neither requires ongoing configuration or conflict maintenance once installed.
 
 // -- guide/modlist-performance-patches.md --
 = Bashed Patch & Synthesis Configuration
-<bashed-patch--synthesis-configuration>
+<performance-patches-bashed-patch--synthesis-configuration>
 
-**MO2 Separators:** `Performance` → `Performance - Bashed Patch & Synthesis`
+*MO2 Separators:* `Performance` → `Performance - Bashed Patch & Synthesis`
 
 All items in this section belong to the `Performance` MO2 separator.
 
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section.
+Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -10085,61 +10087,61 @@ The generic category maps only become useful when tied to the actual mods `Elder
 === Tweak Settings
 <bashed-patch--synthesis-configuration-tweak-settings>
 
-Enable in `Wrye Bash` → `Bashed Patch` → `Tweakers` only the items below.
+Enable in #emph[Wrye Bash] → #emph[Bashed Patch] → #emph[Tweakers] only the items below.
 
-**Tweak Actors:**
+*Tweak Actors:*
 
-- `Opposite Gender Anims: Female` and `Male` — needed for CBBE 3BA, HIMBO, KS Hairdos, EVG Conditional Idles, Goetia, Leviathan II packs.
+- *Opposite Gender Anims: Female* and *Male* — needed for CBBE 3BA, HIMBO, KS Hairdos, EVG Conditional Idles, Goetia, Leviathan II packs.
 
-**Tweak Assorted:**
+*Tweak Assorted:*
 
-- `All Armor Playable` — required by Immersive Armors (60+ sets with non-playable flag).
-- `No Light Fade Value Fix` — CS Light, True Light, ELFX, Relighting Skyrim, Luminosity all interact with fade values.
-- `No Light Flicker` — RAID Weathers, Cathedral, Obsidian, Azurite III CS weather variants.
-- `Remove Load Screen Models` — SkyParkour v3, RaySense, Ricochet add 3D geometry that can leak into load screens.
-- `Save Sorting Fix` — real issue with this much plugin weight.
-- `Set Light Radii` — use 100% multiplier to leave lighting radii alone.
-- `Set Sound Attenuation Levels: Nirnroots Only` — leave default.
-- `Uniform Groundcover` — Skoglendi, Origins of Forest, Mari's flora need matching density variance.
+- *All Armor Playable* — required by Immersive Armors (60+ sets with non-playable flag).
+- *No Light Fade Value Fix* — CS Light, True Light, ELFX, Relighting Skyrim, Luminosity all interact with fade values.
+- *No Light Flicker* — RAID Weathers, Cathedral, Obsidian, Azurite III CS weather variants.
+- *Remove Load Screen Models* — SkyParkour v3, RaySense, Ricochet add 3D geometry that can leak into load screens.
+- *Save Sorting Fix* — real issue with this much plugin weight.
+- *Set Light Radii* — use 100% multiplier to leave lighting radii alone.
+- *Set Sound Attenuation Levels: Nirnroots Only* — leave default.
+- *Uniform Groundcover* — Skoglendi, Origins of Forest, Mari's flora need matching density variance.
 
-**Tweak Names:**
+*Tweak Names:*
 
-- `Body Part Codes` — drive Sort: Armor/Clothes correctly with CBBE 3BA.
-- `Sort: Armor/Clothes` — with Immersive Armors, Bruma, Spaghetti's Cities, unsorted inventory is unreadable.
-- `Sort: Scrolls`, `Sort: Spells`, `Sort: Weapons/Ammunition` — Apocalypse, Mysticism, Odin, Adamant, Vokrii, Ordinator, Ars Metallica all add to these lists.
-- `Lore Friendly Text: Dwarven -> Dwemer` — PBR textures use Dwemer terminology.
+- *Body Part Codes* — drive Sort: Armor/Clothes correctly with CBBE 3BA.
+- *Sort: Armor/Clothes* — with Immersive Armors, Bruma, Spaghetti's Cities, unsorted inventory is unreadable.
+- *Sort: Scrolls*, *Sort: Spells*, *Sort: Weapons/Ammunition* — Apocalypse, Mysticism, Odin, Adamant, Vokrii, Ordinator, Ars Metallica all add to these lists.
+- *Lore Friendly Text: Dwarven -> Dwemer* — PBR textures use Dwemer terminology.
 
-**Tweak Races:**
+*Tweak Races:*
 
-- `Races Have All Head Parts` — KS Hairdos adds hundreds; set types code to ~45.
-- `Playable Head Parts`
-- Leave `Force Behavior Graph Gender` off — Elder Wilds does not standardize that flag.
+- *Races Have All Head Parts* — KS Hairdos adds hundreds; set types code to ~45.
+- *Playable Head Parts*
+- Leave *Force Behavior Graph Gender* off — Elder Wilds does not standardize that flag.
 
-**Tweak Settings:**
+*Tweak Settings:*
 
-- `AI: Bump Reaction Delay` — raise to Adult Content to mute spammy follower reactions.
-- `AI: Conversation Chance` — leave default.
-- `AI: Max Active Actors` — raise to 80.
-- `AI: Max Dead Actors` — raise to 120.
-- `Arrow: Max Arrows Attached to NPC` — raise to 20.
-- `Combat: Max Actors` — raise to 60.
-- `Combat: Stealth Damage Bonus` — leave default (RAID is canonical authority).
-- `Msg: Cannot Equip Item Fix` — **must** be enabled (Campfire, Frostfall, SunHelm/Starfrost/Last Seed rely on it).
-- `Msg: No Fast Travel` — leave default.
-- `Player: Max Draggable Weight` — set to 1000.
-- `Player: Underwater Breath Control` — leave default.
-- `Soul Trap: Common/Grand/Greater/Lesser Soul Level` — set to vanilla values.
-- `Visuals: Masser/Secunda Size/Speed` — set to 1.0.
-- `Warning: Exterior/Interior Distance To Hostiles` — leave default.
-- `World: Cell Respawn Time` / `Respawn Time (Cleared)` — leave default.
-- `World: Timescale` — set to 20 and never change. **Save-baking warning:** this setting bakes into SSE saves.
+- *AI: Bump Reaction Delay* — raise to Adult Content to mute spammy follower reactions.
+- *AI: Conversation Chance* — leave default.
+- *AI: Max Active Actors* — raise to 80.
+- *AI: Max Dead Actors* — raise to 120.
+- *Arrow: Max Arrows Attached to NPC* — raise to 20.
+- *Combat: Max Actors* — raise to 60.
+- *Combat: Stealth Damage Bonus* — leave default (RAID is canonical authority).
+- *Msg: Cannot Equip Item Fix* — *must* be enabled (Campfire, Frostfall, SunHelm/Starfrost/Last Seed rely on it).
+- *Msg: No Fast Travel* — leave default.
+- *Player: Max Draggable Weight* — set to 1000.
+- *Player: Underwater Breath Control* — leave default.
+- *Soul Trap: Common/Grand/Greater/Lesser Soul Level* — set to vanilla values.
+- *Visuals: Masser/Secunda Size/Speed* — set to 1.0.
+- *Warning: Exterior/Interior Distance To Hostiles* — leave default.
+- *World: Cell Respawn Time* / *Respawn Time (Cleared)* — leave default.
+- *World: Timescale* — set to 20 and never change. *Save-baking warning:* this setting bakes into SSE saves.
 
 === Bash Tags
 <bashed-patch--synthesis-configuration-bash-tags>
 
 Set the following `Bash Tags` on the listed plugins (one file per plugin under `Data\Bash Patches\`):
 
-**Leveled List / Economy:**
+*Leveled List / Economy:*
 
 - `Immersive Weapons.esp` — `Relev`
 - `Immersive Armors.esp` — `Relev`
@@ -10157,13 +10159,13 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 - `CACO.esp` — `Invent.Add`, `Stats`, `Keywords`
 - `Alchemy Potions and Food Adjustments.esp` — `Stats`, `Keywords`
 
-**Race / Perk / Magic:**
+*Race / Perk / Magic:*
 
 - `Aetherius.esp` / `Morningstar.esp` / `Imperious.esp` — `R.AddSpells` (whichever wins)
 - `Adamant.esp` / `Vokrii.esp` / `Ordinator.esp` — `NPC.Perks.Change`, `NPC.Perks.Add`
 - `Mysticism.esp` / `Odin.esp` / `Apocalypse.esp` — `SpellStats`, `EffectStats`
 
-**Lighting / Weather / Water:**
+*Lighting / Weather / Water:*
 
 - `CS Light.esp` / `True Light.esp` — `C.Light`, `C.ImageSpace`
 - `ELFX.esp` / `ELFX - Shadows.esp` — `C.Light`, `C.Fog`
@@ -10175,13 +10177,13 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 - `Simplicity of Sea.esp` — `C.Water`
 - `Enhanced Rocks and Mountains.esp` / `Fix and Addon.esp` — `Graphics`, `ObjectBounds`
 
-**City / Worldspace:**
+*City / Worldspace:*
 
 - `Beyond Skyrim - Bruma SE.esp` — `C.Climate`, `C.Music`, `C.Light`, `C.Water`, `C.ImageSpace`, `C.Location`, `C.Regions`
 - `Spaghetti's Cities - AIO.esp` — `C.Light`, `C.MiscFlags`
 - `The Great Cities - Minor Cities and Towns SSE.esp` / `Dawn of Skyrim (Director's Cut) SE.esp` / `JK's Skyrim.esp` — `C.Light`, `C.MiscFlags`
 
-**NPC / Dialogue / Audio:**
+*NPC / Dialogue / Audio:*
 
 - `RUSTIC CLUTTER COLLECTION.esp` / `RUSTIC CLOTHING.esp` — `Names`, `Stats`
 - `High Poly Project.esp` — `Graphics`, `ObjectBounds`
@@ -10199,21 +10201,21 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 - `Immersive Sounds - Compendium.esp` — `Sound`
 - `Sounds of Skyrim Complete SE.esp` — `Sound`, `C.Acoustic`
 
-**Survival / Follower:**
+*Survival / Follower:*
 
 - `Campfire.esp` — `C.MiscFlags`, `Invent.Add`
 - `Frostfall.esp` — `C.Climate`, `C.ImageSpace`
 - `Starfrost.esp` / `SunHelm.esp` / `Last Seed.esp` — `Stats`, `Keywords`, `Invent.Add` (whichever wins)
 - `Nether's Follower Framework.esp` / `EFF.esp` / `Amazing Follower Tweaks SE.esp` — `Actors.Factions`, `Invent.Add`
 
-**No Tags:** `TrueHUD.esp`, `Sovngarde - Mist's Font Replacer.esp`
+*No Tags:* `TrueHUD.esp`, `Sovngarde - Mist's Font Replacer.esp`
 
 ---
 
 == Synthesis Configuration → separator: Performance - Bashed Patch & Synthesis
 <bashed-patch--synthesis-configuration-synthesis-configuration-separator-performance-bashed-patch--synthesis>
 
-The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
+The `Synthesis` patcher pipeline runs as a single batch via *Run Mutagen* in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
 
 === Stage 1 — NPC, AI, And Facegen
 <bashed-patch--synthesis-configuration-stage-1-npc-ai-and-facegen>
@@ -10231,7 +10233,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `RaceCompatibilityDialogue`
 - `RacialHeights` / `HarmonizedRaceHeights-Patcher`
 - `SynBanditWarForwarder`
-- `SynOppositeGenderAnimsTweak` — **do not enable** (Bashed Patch handles this).
+- `SynOppositeGenderAnimsTweak` — *do not enable* (Bashed Patch handles this).
 
 === Stage 2 — Encounter Zones
 <bashed-patch--synthesis-configuration-stage-2-encounter-zones>
@@ -10265,7 +10267,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `HonedMetalAdditionalIngredients`
 - `Heim Recipe Patcher`
 - `ReProccer Evolved`
-- **`Weapon Stat Synthesis Patcher`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149027)) — Elder Wilds config: Damage Floor 4, Ceiling 22, Weight/Value Scale 1.0, Speed/Reach Normalization ON. Ignore List: Reliquary of Myth, ArteFakes, Unique Items Tweaks, Konahrik's Accoutrements. Run after OWLLeveledListAddition, SpeedandReachFixes, AmmoTweaks.
+- *`Weapon Stat Synthesis Patcher`* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/149027")[Nexus]) — Elder Wilds config: Damage Floor 4, Ceiling 22, Weight/Value Scale 1.0, Speed/Reach Normalization ON. Ignore List: Reliquary of Myth, ArteFakes, Unique Items Tweaks, Konahrik's Accoutrements. Run after OWLLeveledListAddition, SpeedandReachFixes, AmmoTweaks.
 - `SpeedandReachFixes`
 - `WeaponSpeedEffectsFix`
 - `SynFixShieldData` / `SynFixWeaponAttackSpeed`
@@ -10287,12 +10289,12 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `ReadingIsGoodLegacy`
 - `AllBooksHavePerks`
 - `SpellTomePriceFixPatcher` / `SynSpellTomeNameExtender` / `DisplaySpellTomeLevelPatcher-local` / `spelltome\_yeeter` — pick one.
-- `SynESLify` — **must be last** in this stage.
+- `SynESLify` — *must be last* in this stage.
 
 === Stage 6 — Snow, Weather, Region
 <bashed-patch--synthesis-configuration-stage-6-snow-weather-region>
 
-- **`BDSPatcher`** — **required.** Use `BDSPatcher` entry (not Northpoint variant). Run with both BetterDynamicSnow and BetterDynamicAsh keywords active.
+- *`BDSPatcher`* — *required.* Use `BDSPatcher` entry (not Northpoint variant). Run with both BetterDynamicSnow and BetterDynamicAsh keywords active.
 - `SSBGPatcher`
 - `Nights Adjuster` / `Darker Weather Nights` — pick one.
 - `SkyVRaan Weather Patcher` — only if installed.
@@ -10317,14 +10319,14 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `ELE Patcher` — skip (CS-only stack).
 - `NoShadowsPatch`
 - `Radial Blur Remover`
-- `Remove Edge Glow`
+- *Remove Edge Glow*
 - `RemoveInteriorFogPatcher` — disable if AOS/Sounds of Skyrim present.
 - `RemoveLandscapeVertexColor`
 
 === Stage 9 — Audio
 <bashed-patch--synthesis-configuration-stage-9-audio>
 
-- **`AOSISCSoundPatcher`** — **required.** AOS and ISC both must be active when run.
+- *`AOSISCSoundPatcher`* — *required.* AOS and ISC both must be active when run.
 - `TUDMFootstepPatcher`
 - `Sounds of Seasons`
 - `SFCOPaintingRemover`
@@ -10334,7 +10336,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 
 - `Grass FPS`
 - `Configurable Grass Remover` — enable only if dense forest-floor route adopted.
-- `NavmeshCollector-Updated` — **do not** enable if Bruma or Falskaar in stack.
+- `NavmeshCollector-Updated` — *do not* enable if Bruma or Falskaar in stack.
 - `Generic Synthesis Patcher` — keep ruleset empty until specific conflict identified.
 
 === Stage 11 — Utility, Compatibility, ESLification
@@ -10345,7 +10347,7 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 - `SynStringMerger` — disable unless shipping translation layer.
 - `CellEditorIDFixer` — required (Bruma, Falskaar, Wyrmstooth, Beyond Reach).
 - `SynPEXPatcher`
-- `SynPerkCOBJPatcher` / `SynESLify` — **keep at end**, ESLify output.
+- `SynPerkCOBJPatcher` / `SynESLify` — *keep at end*, ESLify output.
 
 ---
 
@@ -10354,24 +10356,24 @@ The `Synthesis` patcher pipeline runs as a single batch via `Run Mutagen` in MO2
 
 The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be skipped if their inputs have not changed — rebuild only the affected stages when their triggers fire.
 
-1. **SSEEdit** — quick-conflict mode after every new plugin.
-2. **Bashed Patch** — triggers: any plugin with Bash Tag change, any tweak setting change, any new tagged plugin. A Bash Tag change also triggers Synthesis (stage 3) — both must rebuild.
-3. **Synthesis** — triggers: any patcher list change, any upstream mod change, any Bash Tag change.
-4. **Pandora** — triggers: behavior/animation/skeleton change. Independent of patcher and LOD stages — can be run separately at any point.
-5. **BodySlide** — triggers: body/skin/armor mesh change. Independent of patcher and LOD stages.
-6. **xLODGen** — triggers: landscape/terrain/heightmap change (does not need TexGen).
-7. **TexGen** — triggers: object/tree/building texture or mesh change producing LOD billboards. Requires xLODGen output when both are rebuilt together.
-8. **Grass Cache** — triggers: grass mod change, worldspace change (Grass SSEEdit Script), or grass density INI tweak. Run after final worldspace load order is established.
-9. **DynDOLOD** — triggers: worldspace/tree/object change, Bashed Patch or Synthesis change (form IDs affect reference records), or any xLODGen/TexGen output change. Includes Occlusion generation. Run twice: Medium to verify, final preset.
-10. **SSE Display Tweaks + BethINI Pie** — final review after lighting/weather/graphics stack change.
+1. *SSEEdit* — quick-conflict mode after every new plugin.
+2. *Bashed Patch* — triggers: any plugin with Bash Tag change, any tweak setting change, any new tagged plugin. A Bash Tag change also triggers Synthesis (stage 3) — both must rebuild.
+3. *Synthesis* — triggers: any patcher list change, any upstream mod change, any Bash Tag change.
+4. *Pandora* — triggers: behavior/animation/skeleton change. Independent of patcher and LOD stages — can be run separately at any point.
+5. *BodySlide* — triggers: body/skin/armor mesh change. Independent of patcher and LOD stages.
+6. *xLODGen* — triggers: landscape/terrain/heightmap change (does not need TexGen).
+7. *TexGen* — triggers: object/tree/building texture or mesh change producing LOD billboards. Requires xLODGen output when both are rebuilt together.
+8. *Grass Cache* — triggers: grass mod change, worldspace change (Grass SSEEdit Script), or grass density INI tweak. Run after final worldspace load order is established.
+9. *DynDOLOD* — triggers: worldspace/tree/object change, Bashed Patch or Synthesis change (form IDs affect reference records), or any xLODGen/TexGen output change. Includes Occlusion generation. Run twice: Medium to verify, final preset.
+10. *SSE Display Tweaks + BethINI Pie* — final review after lighting/weather/graphics stack change.
 
-**Dependency note:** DynDOLOD reads the final load order including Bashed Patch and Synthesis. If Synthesis changes form IDs or ESL flags, DynDOLOD must be rebuilt. Pandora and BodySlide do not affect LOD or patchers and can be run independently at any point without cascading into later stages.
+*Dependency note:* DynDOLOD reads the final load order including Bashed Patch and Synthesis. If Synthesis changes form IDs or ESL flags, DynDOLOD must be rebuilt. Pandora and BodySlide do not affect LOD or patchers and can be run independently at any point without cascading into later stages.
 
 === Patcher Load Order
 <bashed-patch--synthesis-configuration-patcher-load-order>
 
 - `Bashed Patch` and `Synthesis` both write into same load-order range. Place Synthesis patch last unless a known conflict needs Bashed Patch to win.
-- `SynESLify` **must** be last in its stage.
+- `SynESLify` *must* be last in its stage.
 - `World: Timescale = 20` bakes into saves — never change on a long-running test save.
 - `Skyrim-LeveledLoot` and `OWL` overlap: run `OWLLeveledListAddition` first.
 - `AOSISCSoundPatcher` requires both AOS and ISC active.
@@ -10391,13 +10393,13 @@ The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be
 
 // -- guide/modlist-performance-testing.md --
 = Testing & Maintenance
-<testing--maintenance>
+<performance-testing-testing--maintenance>
 
-**MO2 Separators:** `Performance` → `Performance - Testing & Maintenance`
+*MO2 Separators:* `Performance` → `Performance - Testing & Maintenance`
 
 All items in this section belong to the `Performance` MO2 separator.
 
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section.
+Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -10411,22 +10413,22 @@ The goal is consistent frametimes — not just a high average FPS — across the
 
 #table(
   columns: 2,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Tool*],
   [*Purpose*],
-  [**NVIDIA FrameView**],
+  [*NVIDIA FrameView*],
   [Lightweight overlay/logging: FPS, frametime, GPU power, thermals. No CPU per-core but lower overhead.],
-  [**MSI Afterburner + RivaTuner**],
+  [*MSI Afterburner + RivaTuner*],
   [Full overlay/logging: FPS, frametime, GPU usage, CPU per-core, VRAM, draw calls, temps.],
-  [**GPU-Z**],
+  [*GPU-Z*],
   [Sensor logging for GPU clock, voltage, thermals, power limits.],
-  [**Community Shaders debug overlay**],
+  [*Community Shaders debug overlay*],
   [Press F11 for render-time breakdown, draw-call count, VRAM usage.],
-  [**SSE Display Tweaks OSD**],
+  [*SSE Display Tweaks OSD*],
   [Set `ShowOSD=true` in SSEDisplayTweaks.ini for basic overlay.],
-  [**Skyrim console tools**],
+  [*Skyrim console tools*],
   [`showstats` for real-time overlay; `sgtm 0.3` slows to 30% for inspecting stutter; `tfc 1` freezes camera.],
-  [**Cathedral Assets Optimizer**],
+  [*Cathedral Assets Optimizer*],
   [Downscale uncompressed/oversized textures for VRAM relief.],
 )
 
@@ -10442,7 +10444,7 @@ The goal is consistent frametimes — not just a high average FPS — across the
 
 #table(
   columns: 4,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Scenario*],
   [*Location*],
   [*Teleport*],
@@ -10509,14 +10511,14 @@ The goal is consistent frametimes — not just a high average FPS — across the
 <testing--maintenance-tuning-knobs-ordered-by-impact>
 Stop once worst-case scenario is playable.
 
-1. **Grass density** (BethINI > Environment > Grass Density). 40-60 range.
-2. **Grass render distance** (BethINI > View Distance > Grass LOD Fade). Drop to 50-70 for forest gains.
-3. **Shadow resolution** (BethINI > Visuals > Shadow Resolution). 2048 is sweet spot.
-4. **Particle count** (BethINI > Visuals > Max Particle Render Count). 7500 baseline; drop to 5000 if fire/frost causes framedrops.
-5. **Tree LOD distance** — keep `fTreeLoadDistance=0` (DynDOLOD manages).
-6. **Object LOD fade** — drop `fMeshLODLevel2FadeTreeDistance` to 6144, `fMeshLODLevel1FadeTreeDistance` to 8192.
-7. **VSync / framerate cap** — use SSE Display Tweaks `LockFrameRate=60`, `VSync=0`.
-8. **Skyrim Upscaler** — if GPU is bottleneck, enable with Quality preset.
+1. *Grass density* (BethINI > Environment > Grass Density). 40-60 range.
+2. *Grass render distance* (BethINI > View Distance > Grass LOD Fade). Drop to 50-70 for forest gains.
+3. *Shadow resolution* (BethINI > Visuals > Shadow Resolution). 2048 is sweet spot.
+4. *Particle count* (BethINI > Visuals > Max Particle Render Count). 7500 baseline; drop to 5000 if fire/frost causes framedrops.
+5. *Tree LOD distance* — keep `fTreeLoadDistance=0` (DynDOLOD manages).
+6. *Object LOD fade* — drop `fMeshLODLevel2FadeTreeDistance` to 6144, `fMeshLODLevel1FadeTreeDistance` to 8192.
+7. *VSync / framerate cap* — use SSE Display Tweaks `LockFrameRate=60`, `VSync=0`.
+8. *Skyrim Upscaler* — if GPU is bottleneck, enable with Quality preset.
 
 === When To Accept
 <testing--maintenance-when-to-accept>
@@ -10526,7 +10528,7 @@ Stop once worst-case scenario is playable.
 
 === Benchmark Reports
 <testing--maintenance-benchmark-reports>
-Export to CSV (NVIDIA FrameView Save CSV, MSI Afterburner `History > Log to file`). Keep a `benchmark-sheet.md`:
+Export to CSV (NVIDIA FrameView Save CSV, MSI Afterburner #emph[History > Log to file]). Keep a `benchmark-sheet.md`:
 
 ```
 | Pass | Scenario | Avg FPS | 1% Low | GPU% | VRAM | Hitch Max | Delta vs Prev |
@@ -10546,55 +10548,55 @@ Every tuning attempt recorded in git alongside modlist changes.
 
 #table(
   columns: 3,
-  fill: (luma(240), none),
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Patcher*],
   [*Trigger*],
   [*Settings Worth Tweaking*],
-  [**LOOT**],
+  [*LOOT*],
   [Every meaningful load-order change],
   [No custom tweaks],
-  [**Synthesis**],
+  [*Synthesis*],
   [Patcher list change, upstream mod added/removed/updated, Bash Tag change on any plugin],
   [Weapon Stat Synth: raise/lower Damage Ceiling; add to Ignore List for new artifact mods],
-  [**Wrye Bash**],
+  [*Wrye Bash*],
   [Bash Tag change on any plugin, tweak setting change, new tagged plugin, or leveled-list-heavy mod added/removed],
   [No per-run settings unless Bashed Patch imports unintended items],
-  [**Pandora**],
+  [*Pandora*],
   [Animation mod added/removed/reordered; skeleton or behavior change],
   [Direct output to Pandora Output],
-  [**BodySlide**],
+  [*BodySlide*],
   [Body preset/skin texture/armor mod change],
   [No per-run settings beyond chosen preset],
-  [**Grass Cache**],
+  [*Grass Cache*],
   [Grass/tree/landscape texture/worldspace change; density INI tweak],
   [Rebuild from scratch],
-  [**xLODGen**],
+  [*xLODGen*],
   [Landscape texture/heightmap/worldspace change; terrain LOD mod change],
   [Quality slider per-run for coastline artefacts],
-  [**TexGen**],
+  [*TexGen*],
   [Object/tree/building texture changes producing LOD billboards; tree mod swaps],
   [Revisit GrassModelHeightMultiplier and TreeMSAlphaThreshold],
-  [**DynDOLOD**],
+  [*DynDOLOD*],
   [Worldspace/tree/large-reference/LOD resource change; TexGen output change; Bashed Patch or Synthesis change (form IDs affect reference records)],
   [Brightness/Contrast for LOD32; DoubleSidedTextureMask for new mountain types],
 )
 
 === Generator Output Order (First-Time Build)
 <testing--maintenance-generator-output-order-first-time-build>
-Run in this sequence when generating outputs for the first time. Independent outputs (Pandora, BodySlide) are generated earlier here than in the canonical → [rebuild order](modlist-performance-patches.md) because they can be iterated on while patchers are still in flux. The final LOD sequence (xLODGen → TexGen → Grass Cache → DynDOLOD) matches the rebuild order exactly.
+Run in this sequence when generating outputs for the first time. Independent outputs (Pandora, BodySlide) are generated earlier here than in the canonical → @performance-patches-bashed-patch--synthesis-configuration because they can be iterated on while patchers are still in flux. The final LOD sequence (xLODGen → TexGen → Grass Cache → DynDOLOD) matches the rebuild order exactly.
 
-1. **SSEEdit** — quick-conflict check after every major mod addition
-2. **Pandora** — after animation stack stabilizes
-3. **BodySlide** — after body/armor changes stabilize
-4. **Bashed Patch** — after load order is stable enough for tagging
-5. **Synthesis** — patchers the final stack actually uses
-6. **xLODGen** — terrain LOD first
-7. **TexGen** — before DynDOLOD
-8. **Grass Cache** — after grass/landscape/worldspace choices stabilize
-9. **DynDOLOD** — last major output (includes Occlusion generation)
-10. **SSE Display Tweaks + BethINI Pie** — final review after graphics baseline is set
+1. *SSEEdit* — quick-conflict check after every major mod addition
+2. *Pandora* — after animation stack stabilizes
+3. *BodySlide* — after body/armor changes stabilize
+4. *Bashed Patch* — after load order is stable enough for tagging
+5. *Synthesis* — patchers the final stack actually uses
+6. *xLODGen* — terrain LOD first
+7. *TexGen* — before DynDOLOD
+8. *Grass Cache* — after grass/landscape/worldspace choices stabilize
+9. *DynDOLOD* — last major output (includes Occlusion generation)
+10. *SSE Display Tweaks + BethINI Pie* — final review after graphics baseline is set
 
-After generation, verify: `DynDOLOD.esm` at end of ESM block, `DynDOLOD.esp` near end, `Occlusion.esp` after, `Synthesis.esp`/`Bashed Patch` per tool guidance.
+After generation, verify: `DynDOLOD.esm` at end of ESM block, `DynDOLOD.esp` near end, `Occlusion.esp` after, `Synthesis.esp`/*Bashed Patch* per tool guidance.
 
 === Change Tracking
 <testing--maintenance-change-tracking>
@@ -10603,7 +10605,7 @@ Keep `changelog.txt` or `build-notes.md` in `Output` separator recording: date/s
 === MCM Settings Recording
 <testing--maintenance-mcm-settings-recording>
 1. Screenshot each MCM page; store in `MCM-Reference` under `Output` separator.
-2. Use **MCM Recorder** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/24113)) — record/replay via JSON profiles.
+2. Use *MCM Recorder* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/24113")[Nexus]) — record/replay via JSON profiles.
 3. Cross-check on rebuild.
 
 === Mod Update Workflow
@@ -10615,14 +10617,14 @@ Keep `changelog.txt` or `build-notes.md` in `Output` separator recording: date/s
 
 === Playing Forward
 <testing--maintenance-playing-forward>
-Two installations of `Elder Wilds` can look quite different while following the same guide. The rule: **whatever you changed, note it, and re-run only the patchers whose upstream input changed.**
+Two installations of `Elder Wilds` can look quite different while following the same guide. The rule: *whatever you changed, note it, and re-run only the patchers whose upstream input changed.*
 
 
 
 
 // -- guide/separators.md --
 = Modlist Separators
-<modlist-separators>
+<separators-modlist-separators>
 
 Flat separator names sorted by MO2 left-pane load order. Parent categories anchor the hue; sub-separators step up in lightness for visible differentiation.
 
