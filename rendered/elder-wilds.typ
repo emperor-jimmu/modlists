@@ -35,13 +35,10 @@
 #align(center, text(size: 28pt, weight: "bold", fill: rgb("#0f172a"), "Elder Wilds"))
 #align(center, text(size: 15pt, fill: rgb("#475569"), "Version " + ew-version))
 #align(center, text(size: 11pt, fill: luma(120), "Generated " + ew-date))
-#pagebreak()
 
 // -- Table of Contents --
-#text(size: 17pt, weight: "bold", fill: rgb("#1e293b"), "Contents")
 #v(0.5cm)
-#outline(depth: 2)
-#pagebreak()
+#outline(depth: 1)
 
 // -- Content --
 
