@@ -19,6 +19,7 @@ except ImportError:
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MODLIST_DIR = REPO_ROOT / "modlist"
+VERSION_PATH = REPO_ROOT / "VERSION"
 OUTPUT_PATH = REPO_ROOT / "cyberpunk-2077-modlist.pdf"
 
 CATEGORY_FILES = sorted(MODLIST_DIR.glob("*.md"))
@@ -140,6 +141,49 @@ li {
     margin-bottom: 2px;
 }
 
+.cover-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    page-break-after: always;
+}
+
+.cover-page h1 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 36pt;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 0.3cm 0;
+    padding: 0;
+    border-bottom: none;
+    page-break-before: avoid;
+}
+
+.cover-page .accent-line {
+    width: 4cm;
+    height: 3px;
+    background: #f0c040;
+    margin: 0.5cm auto 0.8cm auto;
+}
+
+.cover-page .subtitle {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 13pt;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 2cm;
+}
+
+.cover-page .version {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11pt;
+    color: #888;
+    margin-bottom: 0.3cm;
+}
+
 .toc-page h1 {
     page-break-before: avoid;
     border-bottom: none;
@@ -178,6 +222,22 @@ def extract_heading(md_file: Path) -> str:
     return md_file.stem
 
 
+def read_version() -> str:
+    if VERSION_PATH.exists():
+        return VERSION_PATH.read_text(encoding="utf-8").strip()
+    return "unknown"
+
+
+def build_cover_html() -> str:
+    version = read_version()
+    return f"""<div class="cover-page">
+<h1>Cyberpunk 2077 Modlist</h1>
+<div class="accent-line"></div>
+<div class="subtitle">A curated, performance-conscious modding guide</div>
+<div class="version">Version {version}</div>
+</div>"""
+
+
 def build_toc_html() -> str:
     items = []
     for md_file in CATEGORY_FILES:
@@ -195,6 +255,7 @@ def build_toc_html() -> str:
 
 
 def build_html() -> str:
+    cover_html = build_cover_html()
     toc_html = build_toc_html()
 
     pages = []
@@ -205,7 +266,7 @@ def build_html() -> str:
         )
         pages.append(html_body)
 
-    full_body = toc_html + "\n" + "\n".join(pages)
+    full_body = cover_html + "\n" + toc_html + "\n" + "\n".join(pages)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
