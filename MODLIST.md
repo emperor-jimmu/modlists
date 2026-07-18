@@ -82,9 +82,7 @@ If installing manually:
 **Important**: Do not add any mod `.jar` files yet. Wave -1 is complete when the vanilla 1.21.1 client runs under NeoForge with no mods installed.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 0 — Foundation
 
@@ -334,9 +332,7 @@ seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (l
 - `mixin.perf.dynamic_resources` = `true` — Load block/item models lazily instead of all at startup. **Biggest single launch-time speedup** in the pack. Reduces memory usage too. Disable if you see missing textures or broken models.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 1 — Tech (Create + Mekanism + AE2)
 
@@ -429,9 +425,7 @@ The following library mods are required by Create: Gunsmithing:
 - **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both JEI item blacklist config and per-recipe toggles are available for pack tuning.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 1.5 — Colony Management
 
@@ -454,9 +448,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 - Chunk Loaders (Wave 0) are essential for MineColonies — they keep workers active while you explore other dimensions. Place at least one at your colony after setting up your base.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 2 — Exploration (World & Dimensions)
 
@@ -565,9 +557,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 **Interdependency note — Towns & Towers + Cristel Lib**: Towns & Towers requires **Cristel Lib** (included in Wave 2 Dependencies above). Without it the game will crash at startup. Cristel Lib provides structure config and runtime datapack support that Towns & Towers relies on for its biome-specific village variants.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 3 — Equipment Magic & RPG
 
@@ -660,9 +650,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - **Ranged Weapon API** is shared between Relics RPG and Skill Tree — install once, used by both.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 4 — Food, Farming & Comfort
 
@@ -694,9 +682,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - **Serene Seasons** (Wave 2) affects crop growth rates seasonally — crops planted out-of-season grow slower. This adds depth to greenhouse planning with Farmer's Delight crops. Temperature damage is disabled, so crops are the only seasonal pressure.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 4.5 — Quests
 
@@ -709,9 +695,7 @@ Procedural bounty system that gives purpose to exploration and material collecti
 Bountiful generates quests automatically — find a bounty board in any village, accept tasks, earn rewards. Fully optional. Items from installed mods automatically appear in its reward pools.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 5 — Combat & Mobs
 
@@ -743,9 +727,7 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 **Cut Through**: Works alongside Better Combat — lets you swing through transparent blocks (tall grass, vines, cobwebs) without breaking them, keeping your attack chain uninterrupted. Client-side only, no conflicts with any combat mod.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 6 — Building & Decoration
 
@@ -779,9 +761,7 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 | [Fusion (Connected Textures)](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures) | Connected textures — required by Rechiseled |
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Wave 7 — Space Exploration
 
@@ -819,9 +799,7 @@ Sky Aesthetics is embedded in Stellaris — no separate install needed.
 Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materials that gate them behind Mekanism mid-game processing and AE2 infrastructure. Oxygen systems and fuel refining add a parallel supply-chain puzzle that rewards industrial automation.
 
 
-```typst
-#pagebreak()
-```
+<!--raw-typst #pagebreak() -->
 
 ## Mod Count Summary
 
