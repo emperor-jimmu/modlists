@@ -154,8 +154,8 @@ li {
 }
 
 .cover-page .logo {
-    max-width: 6cm;
-    max-height: 6cm;
+    max-width: 10cm;
+    max-height: 10cm;
     margin-bottom: 1.5cm;
 }
 
