@@ -1,4 +1,4 @@
-# AGENTS.md -- Cyberpunk 2077 Modlist
+# AGENTS.md -- The Netrunner's Shadow
 
 ## Project Purpose
 

@@ -237,6 +237,18 @@ These quests form a connected story arc by Undermine / Alyzandre, telling a post
 - **MO2 Notes:** Extract to game root. Phase 1 only — remaining phases will be free updates. Quest starts via text message from So Mi. Answer options: Yes (begin), No (pause 7 days, new dialog), Wait (reset, try again in 7 days). Phase 3 will lock V into the quest until conclusion.
 - **Performance:** None
 
+### Night City Allies - Be A Fixer
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/28572>
+- **Version:** 2.1
+- **Released:** 2026-06-27
+- **Summary:** Send mercs on missions via a management UI — deploy fixer crews to conduct intel gathering, cargo theft, cargo sales, and black market operations. Includes Black Market Intel (BMI) currency for purchasing iconic weapons. Dynamic car theft missions with bomb timers and GPS tracking.
+- **Why:** Adds a management layer to the mercenary fantasy — you're no longer just a solo operator, but a fixer running operations. The BMI currency and black market weapon system gives iconic weapons a secondary acquisition path beyond world exploration. Cargo economy ties meaningfully to the existing Much Better Eddies and 1st Night City Bank systems.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks, Native Settings UI, Codeware, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI. Merc missions have configurable success rates and rewards. Car theft dynamic missions trigger randomly — adjustable frequency via settings.
+- **Performance:** Light (UI-based management, occasional dynamic spawns)
+
 ---
 
 ## Install Order
@@ -258,9 +270,10 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 13. Arasoka Office Job - Counter-Intelligence Division
 14. Taxi Work in Night City
 15. The Thin Blue Line
-16. Possibilities
-17. Romantic Hangout with So Mi
-18. The Ransom
-19. Into the Depths
+16. Night City Allies - Be A Fixer
+17. Possibilities
+18. Romantic Hangout with So Mi
+19. The Ransom
+20. Into the Depths
 
 **Note:** Deceptious Quest Core is also required by mods in 08-Relationships & Romance (Gone Away). Songbird romance arc (items 16-19) requires sending Songbird to the moon in Phantom Liberty. New Quest - Encore requires 2.31 compatibility verification (last updated pre-2.0). Rita Wheeler Romanced is required by Rita Post-Romance Messages Addon in 08-Relationships & Romance.

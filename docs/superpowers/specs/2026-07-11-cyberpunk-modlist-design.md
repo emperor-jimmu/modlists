@@ -1,4 +1,4 @@
-# Cyberpunk 2077 Modlist — Design Spec
+# The Netrunner's Shadow — Design Spec
 
 **Date:** 2026-07-11
 **Game version:** Cyberpunk 2077 v2.31 (v2.3-compatible)

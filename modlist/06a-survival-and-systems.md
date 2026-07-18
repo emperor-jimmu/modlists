@@ -186,6 +186,18 @@ to daily life in Night City.
 - **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Redscript Configuration Framework. Yield-based taxation on interest. Drop Box ATM add-on available for physical banking interactions. Install after Calendar and Redscript Configuration Framework.
 - **Performance:** None
 
+### Stock Market and News System
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/6319>
+- **Version:** 1.4
+- **Released:** 2024-02-28
+- **Summary:** Fully usable stock market system that dynamically reacts to quests and player actions. Also adds a news system showing articles based on quest progress and player choices. 33 corporate stocks with prices that shift based on game events.
+- **Why:** One of the most iconic missing features from the E3 demos — a living, breathing corporate economy that responds to your actions. Destroy a Militech convoy and their stock drops; help Arasaka and their value rises. Creates a new layer of consequence awareness where your choices affect the market. 7,000+ endorsements, by the creator of RadioExt.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Stock market accessible via computer terminal or phone browser. Prices update dynamically based on quest completion and world events. Compatible with E3 Smart Windows for visual apartment integration.
+- **Performance:** None
+
 ## Install Order
 
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
@@ -198,9 +210,10 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 6. Drug Dealer
 7. Eviction Notice - Story-Driven Rent System
 8. 1st Night City Bank
-9. Anti-Theft Measures
-10. Immersive Meditations - Unmarked Locations
-11. Filthy Access Points
-12. Dedra's Truck Simulator (Convoy Job Delivery)
-13. Immersive Odometer and Fuel System
-14. NC Courier Jobs
+9. Stock Market and News System
+10. Anti-Theft Measures
+11. Immersive Meditations - Unmarked Locations
+12. Filthy Access Points
+13. Dedra's Truck Simulator (Convoy Job Delivery)
+14. Immersive Odometer and Fuel System
+15. NC Courier Jobs

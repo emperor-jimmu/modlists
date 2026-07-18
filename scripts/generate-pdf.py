@@ -245,7 +245,7 @@ def build_cover_html() -> str:
         logo_src = f'<img class="logo" src="data:image/jpeg;base64,{logo_b64}" alt="Logo">'
     return f"""<div class="cover-page">
 {logo_src}
-<h1>Cyberpunk 2077 Modlist</h1>
+<h1>The Netrunner's Shadow</h1>
 <div class="accent-line"></div>
 <div class="subtitle">A curated, performance-conscious modding guide</div>
 <div class="version">Version {version}</div>
@@ -286,7 +286,7 @@ def build_html() -> str:
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Cyberpunk 2077 Modlist</title>
+<title>The Netrunner's Shadow</title>
 <style>{CSS_STYLE}</style>
 </head>
 <body>
@@ -300,7 +300,7 @@ def main() -> None:
         print("Error: no category files found in modlist/ directory.")
         sys.exit(1)
 
-    print("Generating Cyberpunk 2077 Modlist PDF...")
+    print("Generating The Netrunner's Shadow PDF...")
     print(f"  Categories found: {len(CATEGORY_FILES)}")
 
     html = build_html()

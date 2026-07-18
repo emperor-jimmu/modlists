@@ -125,6 +125,18 @@ decorations, garage expansions, and player home systems.
 - **MO2 Notes:** Extract to game root. Purchase via computer terminal or real estate listing. Rent applies if using Eviction Notice. Tag as **Root**.
 - **Performance:** None
 
+### E3 Smart Windows
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/7026>
+- **Version:** 1.2
+- **Released:** 2026-01-14
+- **Summary:** Adds the interactive smart window from the 2018 E3 demo to V's apartments. Features dynamic weather display, time-of-day transitions, news feeds, and stock market integration that displays live portfolio data from the Stock Market and News System.
+- **Why:** Restores one of the most requested cut features shown in pre-release demos. The smart window provides visual weather/ambient information and serves as a natural dashboard for the stock market system. 4,200+ endorsements.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, TweakXL. Stock market integration requires Stock Market and News System (#6319).
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Smart window appears in applicable apartments (The Glen, Japantown, Corpo Plaza, Northside). News and stock tickers require Stock Market and News System for full functionality.
+- **Performance:** None
+
 ---
 
 ## Install Order
@@ -133,10 +145,11 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Clean Computer Wallpaper
 2. QoL Higher TV Quality
-3. Apartment Cats - The Glen
-4. Apartment Cats - Japantown
-5. Apartment Cats - Dogtown
-6. Apartment Toys
-7. Rent a Motel
-8. Longshore Apartments - Charter Hill
-9. Lucy Apartment Remastered
+3. E3 Smart Windows
+4. Apartment Cats - The Glen
+5. Apartment Cats - Japantown
+6. Apartment Cats - Dogtown
+7. Apartment Toys
+8. Rent a Motel
+9. Longshore Apartments - Charter Hill
+10. Lucy Apartment Remastered

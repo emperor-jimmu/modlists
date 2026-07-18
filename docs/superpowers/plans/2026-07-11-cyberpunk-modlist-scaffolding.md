@@ -1,4 +1,4 @@
-# Cyberpunk 2077 Modlist — Implementation Plan
+# The Netrunner's Shadow — Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -143,7 +143,7 @@ git commit -m "chore: add .gitignore"
 - [ ] **Step 1: Write AGENTS.md**
 
 ```markdown
-# AGENTS.md — Cyberpunk 2077 Modlist
+# AGENTS.md — The Netrunner's Shadow
 
 ## Project Purpose
 
@@ -239,7 +239,7 @@ git commit -m "chore: add AGENTS.md"
 - [ ] **Step 1: Write README.md**
 
 ```markdown
-# Cyberpunk 2077 Modlist
+# The Netrunner's Shadow
 
 A curated, performance-conscious modlist for **Cyberpunk 2077 v2.31**
 (v2.3-compatible), organized via Mod Organizer 2.
@@ -1002,7 +1002,7 @@ def build_html() -> str:
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Cyberpunk 2077 Modlist</title>
+<title>The Netrunner's Shadow</title>
 </head>
 <body>
 {full_body}
@@ -1015,7 +1015,7 @@ def main() -> None:
         print("Error: no category files found in modlist/ directory.")
         sys.exit(1)
 
-    print("Generating Cyberpunk 2077 Modlist PDF...")
+    print("Generating The Netrunner's Shadow PDF...")
     print(f"  Categories found: {len(CATEGORY_FILES)}")
 
     html = build_html()
