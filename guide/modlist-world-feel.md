@@ -43,7 +43,7 @@ Horse riding overhaul and mounted NPC transport — making horse travel feel mod
 
 | Mod | Description | Notes |
 |-----|-------------|-------|
-| [HorsePower - Modernized Horse Riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335) | Total horse riding overhaul — directional animations, in-place turning, follow-up attacks, sliding fix, ragdoll. | Requires SKSE, Address Library, Animation Motion Revolution, Pandora/Nemesis, TDM. Compatible with Convenient Horses (load HorsePower below). |
+| [HorsePower - Modernized Horse Riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335) | **Baseline.** Total horse riding overhaul — directional animations, in-place turning, follow-up attacks, sliding fix, ragdoll. | Requires SKSE, Address Library, Animation Motion Revolution, Pandora/Nemesis, TDM. Compatible with Convenient Horses (load HorsePower below). |
 | [RSE - Shoulder Or Saddle](https://www.nexusmods.com/skyrimspecialedition/mods/170232) | Pick up NPCs/corpses, carry on shoulder, secure to horse saddle for transport. RDR2-style dead-or-alive bounty hauling. | Requires OAR, Pandora/Nemesis. Compatible with all horse mods. Custom followers supported. |
 
 ---

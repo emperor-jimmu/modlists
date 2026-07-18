@@ -11,9 +11,33 @@ Part of the [`Performance and Technical Workflow`](modlist-performance.md) secti
 ## Patcher Discipline
 The generic category maps only become useful when tied to the actual mods `Elder Wilds` ships with. This section is that binding: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and `Synthesis` patcher pipeline in exact order. Default is "do not touch" — add a `Synthesis` patcher or `Bash Tag` only when a specific mod in the list makes it necessary.
 
+### Pre-Build Checklist
+
+Before every Bashed Patch or Synthesis rebuild, verify:
+
+- [ ] **MO2 backup profile created** — Right-click profile → Copy. Name with date and build stage (e.g., `Elder Wilds - 2026-07-18 pre-patch`).
+- [ ] **All plugins active** in the right pane — disabled plugins cause missing-master errors.
+- [ ] **xEdit conflict review** completed on the last category added — quick auto-conflict scan (`Apply Filter to show Conflicts`).
+- [ ] **No form ID compaction** happened since the last build — compacting form IDs breaks Synthesis patchers that reference original FormIDs. If compaction was done, full rebuild is mandatory.
+- [ ] **LOOT sorted** — sort before building so load order is stable. Tags auto-detected from LOOT masterlist. Only manually set tags not already present in LOOT.
+- [ ] **Synthesis patcher list verified** — disable any patcher whose prerequisite mod is not installed (e.g., `ELE Patcher` with CS-only stack).
+
 ---
 
 ## Wrye Bash (Bashed Patch) Configuration
+
+### Bashed Patch Dialogue Settings
+
+When building the Bashed Patch, configure these checkboxes at the top of the Build Patch dialogue:
+
+| Option | Setting | Notes |
+|--------|---------|-------|
+| Merge Patches | **OFF** | Synthesis handles merge-level conflict resolution. Do not let Wrye Bash merge plugins — it produces merge plugins that are fragile to load-order changes and hard to debug. |
+| Import [Categories] | ON | Required for Bash Tags to function. Each category below corresponds to a Bash Tag type — only categories with tagged plugins are active. |
+| Leveled Lists | **ON** | Core function — merges leveled-list changes from Delev/Relev/Invent.Add tagged plugins. Without this, only the last plugin's leveled-list edits win. |
+| Tweak Settings | ON | Applies the `.TweakSettings` configured below. |
+| Alias Mod Names | ON | Human-readable names in the patch header. Aids debugging when examining the Bashed Patch in xEdit. |
+
 ### Tweak Settings
 
 Enable in *Wrye Bash* → *Bashed Patch* → *Tweakers* only the items below.
@@ -66,6 +90,22 @@ Enable in *Wrye Bash* → *Bashed Patch* → *Tweakers* only the items below.
 - **World: Timescale** — set to 20 and never change. **Save-baking warning:** this setting bakes into SSE saves.
 
 ### Bash Tags
+
+Bash Tags tell Wrye Bash which record types to import from which plugins into the Bashed Patch. LOOT auto-detects most tags; only set manual tags for plugins not covered by LOOT's masterlist.
+
+**Tag priority (lowest → highest):**
+1. Plugin header description (set by mod author)
+2. LOOT masterlist.yaml (`%LOCALAPPDATA%\LOOT\Skyrim Special Edition\`)
+3. LOOT userlist.yaml
+4. Manual tags in `Data\BashTags\<PluginName>.txt`
+5. Manual tags set in Wrye Bash UI (overrides all above)
+
+**When to manually set tags:**
+- Plugin is new and not yet catalogued in LOOT masterlist
+- Plugin's LOOT entry has wrong or missing tags
+- Plugin ships with a `BashTags` folder containing a `.txt` file — copy those tags exactly
+
+**How to verify:** After building the Bashed Patch, open it in xEdit. If a plugin's leveled-list edits, actor stats, or item stats are missing from the patch when they should be present, the plugin is missing tags.**
 
 Set the following `Bash Tags` on the listed plugins (one file per plugin under `Data\Bash Patches\`):
 
@@ -264,8 +304,37 @@ Port of zEBD to Synthesis/Mutagen. Distributes equipment (armor/clothing/weapons
 - `MissingEncounterZonesPatcher`
 - `TrueUnleveledSkyrim` — only if dropping OWL and MLU.
 
+### Automated Leveled List Addition Configuration
+
+A Synthesis patcher that automatically adds weapons and armor to leveled lists, reducing manual patching for standalone weapon/armor mods. Runs in Stage 3 before OWLLeveledListAddition.
+
+**What it does:** Scans all loaded plugins for weapons and armor records, then injects them into appropriate vanilla leveled lists based on material tier, type, and stat comparison against existing list entries.
+
+**Setup:**
+
+1. Add `Automated Leveled List Addition` to your Synthesis pipeline (already listed in Stage 3 above).
+2. In the patcher settings, configure three **Output Plugins** — one each for weapons, armor, and misc items. Use a dedicated output plugin (e.g., `ALLA Output.esp`).
+3. Set default output plugin names in the script's Settings section to avoid re-typing on each run.
+4. Run after adding new weapon/armor mods and before `OWLLeveledListAddition`.
+
+**Configuration options:**
+
+| Option | Recommendation | Notes |
+|--------|----------------|-------|
+| Output Plugin (Weapons) | `ALLA Weapons.esp` | Separate output for weapon leveled-list entries |
+| Output Plugin (Armor) | `ALLA Armor.esp` | Separate output for armor leveled-list entries |
+| Output Plugin (Misc) | `ALLA Misc.esp` | For jewelry, clothing, misc items |
+| Smart Level Assignment | Yes | Matches item tier to list level based on stats |
+| Skip Already Leveled Items | Yes | Avoids duplicating items already in leveled lists |
+| Skip Unique/Quest Items | Yes | Prevents unique artifacts from appearing in random loot |
+
+**When to run:** After adding any standalone weapon or armor mod to the load order. Since Elder Wilds now has 16+ standalone weapon mods, this patcher is essential — run it every time the Weapons & Armor section changes.
+
+**Key relationships:** Runs before `OWLLeveledListAddition` and `leveledlistresolver`. Does not replace OWL integration — it handles inject-only distribution while OWL controls tier-gating and deleveling logic.
+
 ### Stage 3 — Leveled Lists And Loot
 
+- **`Automated Leveled List Addition`** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/25395)) — Automatically adds weapons/armor to leveled lists. Configure output plugins per section (weapons, armor, misc). Set default output plugins in the script's Settings section to avoid re-typing plugin names. Run after new weapon/armor mods are added and before `OWLLeveledListAddition`. See `### Automated Leveled List Addition Configuration` below.
 - `OWLLeveledListAddition` — adds IA/IW to OWL lists.
 - `OWLPatcher`
 - `Skyrim-LeveledLoot`
@@ -293,6 +362,27 @@ Port of zEBD to Synthesis/Mutagen. Distributes equipment (armor/clothing/weapons
 - `SlotsSlotsSlots`
 - `AmmoTweaks`
 - `SynCGOStaves` — only if CGO staves in stack.
+
+### Weapon Stat Synthesis Patcher Configuration
+
+Normalizes weapon stats across the entire load order when standalone weapon mods use different balance baselines. Runs in Stage 4 after `ReProccer Evolved`. Critical when adopting 16+ standalone weapon mods with varying stat philosophies.
+
+**What it does:** Recalculates weapon damage, weight, value, speed, and reach for all weapons based on a unified scaling formula. Ensures every weapon — vanilla, Heavy Armory, Immersive Weapons, and standalone mods — fits a consistent power curve.
+
+**Elder Wilds config:**
+
+| Option | Value | Notes |
+|--------|-------|-------|
+| Damage Floor | 4 | Lowest damage any weapon can have |
+| Damage Ceiling | 22 | Highest damage any weapon can have |
+| Weight/Value Scale | 1.0 | Linear scaling between weight and value |
+| Speed Normalization | ON | Standardizes attack speed ranges per weapon type |
+| Reach Normalization | ON | Standardizes reach ranges per weapon type |
+| Ignore List | `Reliquary of Myth.esp`, `ArteFakes.esp`, `Unique Items Tweaks.esp`, `Konahrik's Accoutrements.esp` | Do not rebalance unique/artifact items |
+
+**When to run:** After any weapon mod is added, removed, or updated. Run after `ReProccer Evolved`, `SpeedandReachFixes`, and `AmmoTweaks`. Output after `OWLLeveledListAddition`.
+
+**Key relationship:** This patcher owns weapon stat balance. Do NOT allow Wrye Bash or other Synthesis patchers to override its damage/speed/reach output. The Ignore List prevents artifact overhauls (`Reliquary of Myth`, `ArteFakes`, `Unique Items Tweaks`) from being re-scaled — those mods own their own balance.
 
 ### Stage 5 — Magic, Spells, Enchanting
 
@@ -394,3 +484,8 @@ The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be
 - The patch pipeline is the single source of truth for conflict resolution.
 - A patcher or tag exists because a specific mod in the list requires it — never pre-install speculative coverage.
 - The rebuild order is designed so a category change only triggers the affected stages.
+- **Form ID compaction is dangerous.** Compacting form IDs (e.g., via xEdit "Compact FormIDs for ESL") changes records that Synthesis patchers reference by FormID. If you compact, rebuild EVERYTHING from scratch — Bashed Patch, Synthesis, Pandora, BodySlide, DynDOLOD. Better: compact only after finalizing a section, before running the pipeline.
+- **SynESLify must be last.** ESL-flagging changes plugin headers and can shift load order indices. Run it as the final Stage 11 patcher and never before DynDOLOD (DynDOLOD reads FormIDs directly).
+- **Verify the Bashed Patch after rebuild.** Open in xEdit, expand Leveled Items and Leveled NPCs trees. Confirm the expected entries from tagged plugins are present. Record the CRC and file size in your build notes — compare on the next rebuild to ensure it didn't silently shrink (common when mod plugins are disabled or removed).
+- **Grass Cache must be last worldspace step before DynDOLOD.** If you rebuild the grass cache after DynDOLOD, grass LOD will be stale. Always: Bashed Patch → Synthesis → xLODGen → TexGen → Grass Cache → DynDOLOD.
+- **Run DynDOLOD twice.** First pass at Medium to verify output is clean and no error messages appear. Second pass at the target preset (High/Ultra) for the final LOD.

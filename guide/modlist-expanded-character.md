@@ -25,6 +25,7 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 | [Skyrim Unbound Reborn - New started room](https://www.nexusmods.com/skyrimspecialedition/mods/118648)            | Alternative | all            | Improvement to Unborn start room                                                                                        |
 | [Racemenu Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/182536)                                   | Alternative | all            | RaceMenu character creation enhancement.                                                                                |
 | [Adventurer's Start - An Alternate Perspective Addon](https://www.nexusmods.com/skyrimspecialedition/mods/145599) | Add-on      | all            | Additional starting scenarios for Alternate Perspective. Install after AP base.                                         |
+| [New Beginnings - Alternate Perspective Extension](https://www.nexusmods.com/skyrimspecialedition/mods/57818)  | Add-on      | all            | Flo27's classic scenario pack ported to AP. ~15 additional starts. Install after AP base.                               |
 | [Alternate Perspective - Hole in the Wall Fix](https://www.nexusmods.com/skyrimspecialedition/mods/174222)        | Add-on      | all            | Fix for AP's starting cell geometry. Install after AP base.                                                             |
 
 ### Risks & Compatibility

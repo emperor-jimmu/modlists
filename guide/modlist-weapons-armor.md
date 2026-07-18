@@ -27,6 +27,25 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 | [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)      | Alternative | all            | Unique moon-themed weapon with quest content.                                     |
 | [Sorcerer Staff](https://www.nexusmods.com/skyrimspecialedition/mods/178148)                    | Alternative | all            | Unique staff / Staff of Magnus replacer with expanded mechanics.                  |
 | [Occiglacies - Ancient Falmer Blade](https://www.nexusmods.com/skyrimspecialedition/mods/35637) | Alternative | #1, #4         | Ancient Falmer greatsword/sword. Switchable 1H/2H at Skyforge. 1,471 endorsements. Found in Forgotten Vale area. LoTD display patch available. |
+| [Lost Relics of Tamriel - Echos of the Past](https://www.nexusmods.com/skyrimspecialedition/mods/122137) | Alternative | #1, #2, #4 | Legendary relic/artifact collection by Noctis3DArts. Adds multiple unique weapons and artifacts. |
+| [Bloodskal Blade 4](https://www.nexusmods.com/skyrimspecialedition/mods/120399) | Alternative | #1, #2, #4 | Remodels the Bloodskal Blade. PBR conversion available (165893). |
+| [Bloodskal Blade 4 — PBR Conversion](https://www.nexusmods.com/skyrimspecialedition/mods/165893) | Add-on | #1, #2 | PBR textures for Bloodskal Blade 4. Requires 120399 + CS + PGPatcher. |
+| [Nordic Battle Axes](https://www.nexusmods.com/skyrimspecialedition/mods/143738) | Alternative | all | 3 new 2H war axes. Craftable at forge under Steel perk. Simple, lore-friendly. |
+| [Volkihar Relic Sword](https://www.nexusmods.com/skyrimspecialedition/mods/128508) | Alternative | #1, #4 | Unique 1H vampire sword. Animated textures, bleed mechanics, Vampire Lord +30% dmg. Fits grim-dark. |
+| [Imperial Gladius — Imperial Sword Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/147965) | Alternative | all | Replaces vanilla Imperial Sword model. Single mesh replacer. |
+| [Ivory Bow SE](https://www.nexusmods.com/skyrimspecialedition/mods/115856) | Alternative | #1, #4 | New bow by johnskyrim. |
+| [Steel Battleaxe Of Fiery Souls — Truly Unique](https://www.nexusmods.com/skyrimspecialedition/mods/154943) | Alternative | #1, #4 | Unique weapon rework with animated textures, VFX, 4K/2K. Fits grim-dark. |
+| [PBR Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139889) | Framework | #1, #2 | Collection of PBR add-ons for various weapon/armor mods. 36 files. Install only sub-files matching weapons already adopted. Requires CS + PGPatcher. |
+| [Radiance](https://www.nexusmods.com/skyrimspecialedition/mods/143286) | Alternative | #1, #2, #4 | Glowing light sword/mace, acts as torch replacement. ESL, SKSE, follower-compatible. Strong dark-fantasy fit. |
+| [Runecarvers Edge](https://www.nexusmods.com/skyrimspecialedition/mods/138601) | Alternative | #1, #4 | Lore-friendly sword + greatsword. Vanilla/Complex Material/PBR support. ESL, leveled lists. |
+| [Chitin Bow SE](https://www.nexusmods.com/skyrimspecialedition/mods/162526) | Alternative | #1, #4 | Dunmer-themed bow. SPID distribution companion (162877). |
+| [Chitin Bow SPID](https://www.nexusmods.com/skyrimspecialedition/mods/162877) | Add-on | all | SPID distribution for Chitin Bow SE. |
+| [Relentless](https://www.nexusmods.com/skyrimspecialedition/mods/114022) | Alternative | #1, #4 | New sword by johnskyrim. SkyPatcher vendor injection available (114641). |
+| [Relentless — LL Injection SkyPatcher](https://www.nexusmods.com/skyrimspecialedition/mods/114641) | Add-on | all | Adds Relentless to Dawnguard vendors (Gunmar/Hestla). No plugin, no conflicts. |
+| [Debaser SE](https://www.nexusmods.com/skyrimspecialedition/mods/94439) | Alternative | #1, #4 | Lore-friendly weapon by johnskyrim. Xtudo patches available (94481). |
+| [Debaser — My patches SE by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/94481) | Add-on | all | Xtudo patches for Debaser. 13 files covering SPID, crafting, visuals. |
+| [Elexorien](https://www.nexusmods.com/skyrimspecialedition/mods/94883) | Alternative | #1, #4 | Weapon by johnskyrim. Lore-friendly, fair/balanced, craftable, ESL. |
+| [Singularity Blades](https://www.nexusmods.com/skyrimspecialedition/mods/168139) | Alternative | #1, #4 | Weapon mod by volodavkaa. |
 | Discipline-first route                                                                          | Alternative | #3             | Vanilla weapons only.                                                             |
 
 ### Risks & Compatibility

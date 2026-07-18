@@ -80,6 +80,11 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 ### Baseline
 
 - **Know Your Enemy 2** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/93258)) — Different creatures call for different tools; inspect system makes knowledge legible. Scope: tactical differentiation, not full enemy-ecosystem ownership.
+- **Know Your Enemy 2 — Armors** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94067)) — Armor-based resistance module. Adds resistances to NPC armor materials.
+- **Know Your Enemy 2 — Integration Patch** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94078)) — Unifies creature + armor inspect spell. Removes duplicate features between modules.
+- **The Dragonborn's Bestiary — KYE2 Patch** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/124145)) — Bridges Bestiary and KYE2 systems.
+
+**Install order:** KYE2 → Armors → Integration Patch → Bestiary Patch.
 
 ### Risks & Compatibility
 

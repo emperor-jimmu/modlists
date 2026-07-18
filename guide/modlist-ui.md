@@ -238,9 +238,18 @@ Add descriptive text to inventory item cards for better readability. All by the 
 ---
 
 ## Loading Screens
-| Mod                                         | Description                                                                                                                                                           | Nexus                                                              |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| The Elder Scrolls Legends - Loading Screens | Locked baseline. 110 lore-friendly Legends artworks. Install at 100% frequency in 16:9 with Fixed Height border. At 100% frequency, vanilla lore tips are suppressed. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37929) |
+
+### Baseline
+
+| Mod | Description | Notes |
+|-----|-------------|-------|
+| [Lore-Friendly Load Screen Compendium (Loading Screens)](https://www.nexusmods.com/skyrimspecialedition/mods/138294) | Locked baseline. Lore-friendly loading screens with in-world art and text. Requires Improved Loading Screen Colors (61712) and SSE Display Tweaks (34705) for the load screen filter — both already in the stack. | By ChildofDragons. Install at 100% frequency to suppress vanilla tips. |
+
+### Alternatives
+
+| Mod | Description | Notes |
+|-----|-------------|-------|
+| [The Elder Scrolls Legends - Loading Screens](https://www.nexusmods.com/skyrimspecialedition/mods/37929) | 110 Legends card-art loading screens. Install at 100% frequency in 16:9 with Fixed Height border. | Previously locked baseline. Keep as known-good fallback. |
 
 ---
 

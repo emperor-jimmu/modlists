@@ -110,7 +110,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 | [Horses Simply Turn Better](https://www.nexusmods.com/skyrimspecialedition/mods/57790) | Baseline | Free add-on. Sharpens turning radius for TDM. |
 | [Convenient Horses](https://www.nexusmods.com/skyrimspecialedition/mods/9519) | Alternative | Last updated Jan 2022 (stale). |
 | [Simplest Horses](https://www.nexusmods.com/skyrimspecialedition/mods/54225) | Alternative | Lightweight SPID+MCM drop-in. |
-| [HorsePower - Modernized horse riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335) | Alternative | Modernized horse riding overhaul. |
+| [HorsePower - Modernized horse riding](https://www.nexusmods.com/skyrimspecialedition/mods/169335) | Baseline | Modernized horse riding overhaul. Requires SKSE, Address Library, Animation Motion Revolution, Pandora, TDM. |
 
 ---
 

@@ -3560,15 +3560,33 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 == Loading Screens
 <modernized-ui-loading-screens>
+
+=== Baseline
+<modernized-ui-baseline-9>
+
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
   [*Mod*],
   [*Description*],
-  [*Nexus*],
-  [The Elder Scrolls Legends - Loading Screens],
-  [Locked baseline. 110 lore-friendly Legends artworks. Install at 100% frequency in 16:9 with Fixed Height border. At 100% frequency, vanilla lore tips are suppressed.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37929")[Nexus]],
+  [*Notes*],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138294")[Lore-Friendly Load Screen Compendium (Loading Screens)]],
+  [Locked baseline. Lore-friendly loading screens with in-world art and text. Requires Improved Loading Screen Colors (61712) and SSE Display Tweaks (34705) for the load screen filter — both already in the stack.],
+  [By ChildofDragons. Install at 100% frequency to suppress vanilla tips.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-8>
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Mod*],
+  [*Description*],
+  [*Notes*],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37929")[The Elder Scrolls Legends - Loading Screens]],
+  [110 Legends card-art loading screens. Install at 100% frequency in 16:9 with Fixed Height border.],
+  [Previously locked baseline. Keep as known-good fallback.],
 )
 
 ---
@@ -4694,8 +4712,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
   [Alternative],
   [Lightweight SPID+MCM drop-in.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169335")[HorsePower - Modernized horse riding]],
-  [Alternative],
-  [Modernized horse riding overhaul.],
+  [Baseline],
+  [Modernized horse riding overhaul. Requires SKSE, Address Library, Animation Motion Revolution, Pandora, TDM.],
 )
 
 ---
@@ -4847,6 +4865,10 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
   [Add-on],
   [all],
   [Additional starting scenarios for Alternate Perspective. Install after AP base.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57818")[New Beginnings - Alternate Perspective Extension]],
+  [Add-on],
+  [all],
+  [Flo27's classic scenario pack ported to AP. ~15 additional starts. Install after AP base.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174222")[Alternate Perspective - Hole in the Wall Fix]],
   [Add-on],
   [all],
@@ -6376,7 +6398,7 @@ Horse riding overhaul and mounted NPC transport — making horse travel feel mod
   [*Description*],
   [*Notes*],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169335")[HorsePower - Modernized Horse Riding]],
-  [Total horse riding overhaul — directional animations, in-place turning, follow-up attacks, sliding fix, ragdoll.],
+  [*Baseline.* Total horse riding overhaul — directional animations, in-place turning, follow-up attacks, sliding fix, ragdoll.],
   [Requires SKSE, Address Library, Animation Motion Revolution, Pandora/Nemesis, TDM. Compatible with Convenient Horses (load HorsePower below).],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/170232")[RSE - Shoulder Or Saddle]],
   [Pick up NPCs/corpses, carry on shoulder, secure to horse saddle for transport. RDR2-style dead-or-alive bounty hauling.],
@@ -8561,6 +8583,82 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
   [Alternative],
   [#1, #4],
   [Ancient Falmer greatsword/sword. Switchable 1H/2H at Skyforge. 1,471 endorsements. Found in Forgotten Vale area. LoTD display patch available.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122137")[Lost Relics of Tamriel - Echos of the Past]],
+  [Alternative],
+  [#1, #2, #4],
+  [Legendary relic/artifact collection by Noctis3DArts. Adds multiple unique weapons and artifacts.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120399")[Bloodskal Blade 4]],
+  [Alternative],
+  [#1, #2, #4],
+  [Remodels the Bloodskal Blade. PBR conversion available (165893).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/165893")[Bloodskal Blade 4 — PBR Conversion]],
+  [Add-on],
+  [#1, #2],
+  [PBR textures for Bloodskal Blade 4. Requires 120399 + CS + PGPatcher.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143738")[Nordic Battle Axes]],
+  [Alternative],
+  [all],
+  [3 new 2H war axes. Craftable at forge under Steel perk. Simple, lore-friendly.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128508")[Volkihar Relic Sword]],
+  [Alternative],
+  [#1, #4],
+  [Unique 1H vampire sword. Animated textures, bleed mechanics, Vampire Lord +30% dmg. Fits grim-dark.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147965")[Imperial Gladius — Imperial Sword Replacer]],
+  [Alternative],
+  [all],
+  [Replaces vanilla Imperial Sword model. Single mesh replacer.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115856")[Ivory Bow SE]],
+  [Alternative],
+  [#1, #4],
+  [New bow by johnskyrim.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154943")[Steel Battleaxe Of Fiery Souls — Truly Unique]],
+  [Alternative],
+  [#1, #4],
+  [Unique weapon rework with animated textures, VFX, 4K/2K. Fits grim-dark.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139889")[PBR Hub]],
+  [Framework],
+  [#1, #2],
+  [Collection of PBR add-ons for various weapon/armor mods. 36 files. Install only sub-files matching weapons already adopted. Requires CS + PGPatcher.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143286")[Radiance]],
+  [Alternative],
+  [#1, #2, #4],
+  [Glowing light sword/mace, acts as torch replacement. ESL, SKSE, follower-compatible. Strong dark-fantasy fit.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138601")[Runecarvers Edge]],
+  [Alternative],
+  [#1, #4],
+  [Lore-friendly sword + greatsword. Vanilla/Complex Material/PBR support. ESL, leveled lists.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/162526")[Chitin Bow SE]],
+  [Alternative],
+  [#1, #4],
+  [Dunmer-themed bow. SPID distribution companion (162877).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/162877")[Chitin Bow SPID]],
+  [Add-on],
+  [all],
+  [SPID distribution for Chitin Bow SE.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114022")[Relentless]],
+  [Alternative],
+  [#1, #4],
+  [New sword by johnskyrim. SkyPatcher vendor injection available (114641).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114641")[Relentless — LL Injection SkyPatcher]],
+  [Add-on],
+  [all],
+  [Adds Relentless to Dawnguard vendors (Gunmar/Hestla). No plugin, no conflicts.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94439")[Debaser SE]],
+  [Alternative],
+  [#1, #4],
+  [Lore-friendly weapon by johnskyrim. Xtudo patches available (94481).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94481")[Debaser — My patches SE by Xtudo]],
+  [Add-on],
+  [all],
+  [Xtudo patches for Debaser. 13 files covering SPID, crafting, visuals.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94883")[Elexorien]],
+  [Alternative],
+  [#1, #4],
+  [Weapon by johnskyrim. Lore-friendly, fair/balanced, craftable, ESL.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168139")[Singularity Blades]],
+  [Alternative],
+  [#1, #4],
+  [Weapon mod by volodavkaa.],
   [Discipline-first route],
   [Alternative],
   [#3],
@@ -9262,6 +9360,11 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 <survival-difficulty-and-balance-baseline-5>
 
 - *Know Your Enemy 2* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/93258")[#1, #4]` ([Nexus]) — Different creatures call for different tools; inspect system makes knowledge legible. Scope: tactical differentiation, not full enemy-ecosystem ownership.
+- *Know Your Enemy 2 — Armors* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/94067")[#1, #4]` ([Nexus]) — Armor-based resistance module. Adds resistances to NPC armor materials.
+- *Know Your Enemy 2 — Integration Patch* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/94078")[#1, #4]` ([Nexus]) — Unifies creature + armor inspect spell. Removes duplicate features between modules.
+- *The Dragonborn's Bestiary — KYE2 Patch* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/124145")[#1, #4]` ([Nexus]) — Bridges Bestiary and KYE2 systems.
+
+*Install order:* KYE2 → Armors → Integration Patch → Bestiary Patch.
 
 === Risks & Compatibility
 <survival-difficulty-and-balance-risks--compatibility-2>
@@ -10185,10 +10288,51 @@ Part of the @performance-performance-and-technical-workflow section.
 <bashed-patch--synthesis-configuration-patcher-discipline>
 The generic category maps only become useful when tied to the actual mods `Elder Wilds` ships with. This section is that binding: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and `Synthesis` patcher pipeline in exact order. Default is "do not touch" — add a `Synthesis` patcher or `Bash Tag` only when a specific mod in the list makes it necessary.
 
+=== Pre-Build Checklist
+<bashed-patch--synthesis-configuration-pre-build-checklist>
+
+Before every Bashed Patch or Synthesis rebuild, verify:
+
+- [ ] *MO2 backup profile created* — Right-click profile → Copy. Name with date and build stage (e.g., `Elder Wilds - 2026-07-18 pre-patch`).
+- [ ] *All plugins active* in the right pane — disabled plugins cause missing-master errors.
+- [ ] *xEdit conflict review* completed on the last category added — quick auto-conflict scan (`Apply Filter to show Conflicts`).
+- [ ] *No form ID compaction* happened since the last build — compacting form IDs breaks Synthesis patchers that reference original FormIDs. If compaction was done, full rebuild is mandatory.
+- [ ] *LOOT sorted* — sort before building so load order is stable. Tags auto-detected from LOOT masterlist. Only manually set tags not already present in LOOT.
+- [ ] *Synthesis patcher list verified* — disable any patcher whose prerequisite mod is not installed (e.g., `ELE Patcher` with CS-only stack).
+
 ---
 
 == Wrye Bash (Bashed Patch) Configuration
 <bashed-patch--synthesis-configuration-wrye-bash-bashed-patch-configuration>
+
+=== Bashed Patch Dialogue Settings
+<bashed-patch--synthesis-configuration-bashed-patch-dialogue-settings>
+
+When building the Bashed Patch, configure these checkboxes at the top of the Build Patch dialogue:
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Option*],
+  [*Setting*],
+  [*Notes*],
+  [Merge Patches],
+  [*OFF*],
+  [Synthesis handles merge-level conflict resolution. Do not let Wrye Bash merge plugins — it produces merge plugins that are fragile to load-order changes and hard to debug.],
+  [Import [Categories]],
+  [ON],
+  [Required for Bash Tags to function. Each category below corresponds to a Bash Tag type — only categories with tagged plugins are active.],
+  [Leveled Lists],
+  [*ON*],
+  [Core function — merges leveled-list changes from Delev/Relev/Invent.Add tagged plugins. Without this, only the last plugin's leveled-list edits win.],
+  [Tweak Settings],
+  [ON],
+  [Applies the `.TweakSettings` configured below.],
+  [Alias Mod Names],
+  [ON],
+  [Human-readable names in the patch header. Aids debugging when examining the Bashed Patch in xEdit.],
+)
+
 === Tweak Settings
 <bashed-patch--synthesis-configuration-tweak-settings>
 
@@ -10243,6 +10387,22 @@ Enable in #emph[Wrye Bash] → #emph[Bashed Patch] → #emph[Tweakers] only the 
 
 === Bash Tags
 <bashed-patch--synthesis-configuration-bash-tags>
+
+Bash Tags tell Wrye Bash which record types to import from which plugins into the Bashed Patch. LOOT auto-detects most tags; only set manual tags for plugins not covered by LOOT's masterlist.
+
+*Tag priority (lowest → highest):*
+1. Plugin header description (set by mod author)
+2. LOOT masterlist.yaml (`%LOCALAPPDATA%\LOOT\Skyrim Special Edition\`)
+3. LOOT userlist.yaml
+4. Manual tags in `Data\BashTags\<PluginName>.txt`
+5. Manual tags set in Wrye Bash UI (overrides all above)
+
+*When to manually set tags:*
+- Plugin is new and not yet catalogued in LOOT masterlist
+- Plugin's LOOT entry has wrong or missing tags
+- Plugin ships with a `BashTags` folder containing a `.txt` file — copy those tags exactly
+
+*How to verify:* After building the Bashed Patch, open it in xEdit. If a plugin's leveled-list edits, actor stats, or item stats are missing from the patch when they should be present, the plugin is missing tags.**
 
 Set the following `Bash Tags` on the listed plugins (one file per plugin under `Data\Bash Patches\`):
 
@@ -10534,9 +10694,56 @@ Port of zEBD to Synthesis/Mutagen. Distributes equipment (armor/clothing/weapons
 - `MissingEncounterZonesPatcher`
 - `TrueUnleveledSkyrim` — only if dropping OWL and MLU.
 
+=== Automated Leveled List Addition Configuration
+<bashed-patch--synthesis-configuration-automated-leveled-list-addition-configuration>
+
+A Synthesis patcher that automatically adds weapons and armor to leveled lists, reducing manual patching for standalone weapon/armor mods. Runs in Stage 3 before OWLLeveledListAddition.
+
+*What it does:* Scans all loaded plugins for weapons and armor records, then injects them into appropriate vanilla leveled lists based on material tier, type, and stat comparison against existing list entries.
+
+*Setup:*
+
+1. Add `Automated Leveled List Addition` to your Synthesis pipeline (already listed in Stage 3 above).
+2. In the patcher settings, configure three *Output Plugins* — one each for weapons, armor, and misc items. Use a dedicated output plugin (e.g., `ALLA Output.esp`).
+3. Set default output plugin names in the script's Settings section to avoid re-typing on each run.
+4. Run after adding new weapon/armor mods and before `OWLLeveledListAddition`.
+
+*Configuration options:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Option*],
+  [*Recommendation*],
+  [*Notes*],
+  [Output Plugin (Weapons)],
+  [`ALLA Weapons.esp`],
+  [Separate output for weapon leveled-list entries],
+  [Output Plugin (Armor)],
+  [`ALLA Armor.esp`],
+  [Separate output for armor leveled-list entries],
+  [Output Plugin (Misc)],
+  [`ALLA Misc.esp`],
+  [For jewelry, clothing, misc items],
+  [Smart Level Assignment],
+  [Yes],
+  [Matches item tier to list level based on stats],
+  [Skip Already Leveled Items],
+  [Yes],
+  [Avoids duplicating items already in leveled lists],
+  [Skip Unique/Quest Items],
+  [Yes],
+  [Prevents unique artifacts from appearing in random loot],
+)
+
+*When to run:* After adding any standalone weapon or armor mod to the load order. Since Elder Wilds now has 16+ standalone weapon mods, this patcher is essential — run it every time the Weapons & Armor section changes.
+
+*Key relationships:* Runs before `OWLLeveledListAddition` and `leveledlistresolver`. Does not replace OWL integration — it handles inject-only distribution while OWL controls tier-gating and deleveling logic.
+
 === Stage 3 — Leveled Lists And Loot
 <bashed-patch--synthesis-configuration-stage-3-leveled-lists-and-loot>
 
+- *`Automated Leveled List Addition`* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/25395")[Nexus]) — Automatically adds weapons/armor to leveled lists. Configure output plugins per section (weapons, armor, misc). Set default output plugins in the script's Settings section to avoid re-typing plugin names. Run after new weapon/armor mods are added and before `OWLLeveledListAddition`. See `### Automated Leveled List Addition Configuration` below.
 - `OWLLeveledListAddition` — adds IA/IW to OWL lists.
 - `OWLPatcher`
 - `Skyrim-LeveledLoot`
@@ -10565,6 +10772,45 @@ Port of zEBD to Synthesis/Mutagen. Distributes equipment (armor/clothing/weapons
 - `SlotsSlotsSlots`
 - `AmmoTweaks`
 - `SynCGOStaves` — only if CGO staves in stack.
+
+=== Weapon Stat Synthesis Patcher Configuration
+<bashed-patch--synthesis-configuration-weapon-stat-synthesis-patcher-configuration>
+
+Normalizes weapon stats across the entire load order when standalone weapon mods use different balance baselines. Runs in Stage 4 after `ReProccer Evolved`. Critical when adopting 16+ standalone weapon mods with varying stat philosophies.
+
+*What it does:* Recalculates weapon damage, weight, value, speed, and reach for all weapons based on a unified scaling formula. Ensures every weapon — vanilla, Heavy Armory, Immersive Weapons, and standalone mods — fits a consistent power curve.
+
+*Elder Wilds config:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Option*],
+  [*Value*],
+  [*Notes*],
+  [Damage Floor],
+  [4],
+  [Lowest damage any weapon can have],
+  [Damage Ceiling],
+  [22],
+  [Highest damage any weapon can have],
+  [Weight/Value Scale],
+  [1.0],
+  [Linear scaling between weight and value],
+  [Speed Normalization],
+  [ON],
+  [Standardizes attack speed ranges per weapon type],
+  [Reach Normalization],
+  [ON],
+  [Standardizes reach ranges per weapon type],
+  [Ignore List],
+  [`Reliquary of Myth.esp`, `ArteFakes.esp`, `Unique Items Tweaks.esp`, `Konahrik's Accoutrements.esp`],
+  [Do not rebalance unique/artifact items],
+)
+
+*When to run:* After any weapon mod is added, removed, or updated. Run after `ReProccer Evolved`, `SpeedandReachFixes`, and `AmmoTweaks`. Output after `OWLLeveledListAddition`.
+
+*Key relationship:* This patcher owns weapon stat balance. Do NOT allow Wrye Bash or other Synthesis patchers to override its damage/speed/reach output. The Ignore List prevents artifact overhauls (`Reliquary of Myth`, `ArteFakes`, `Unique Items Tweaks`) from being re-scaled — those mods own their own balance.
 
 === Stage 5 — Magic, Spells, Enchanting
 <bashed-patch--synthesis-configuration-stage-5-magic-spells-enchanting>
@@ -10676,6 +10922,11 @@ The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be
 - The patch pipeline is the single source of truth for conflict resolution.
 - A patcher or tag exists because a specific mod in the list requires it — never pre-install speculative coverage.
 - The rebuild order is designed so a category change only triggers the affected stages.
+- *Form ID compaction is dangerous.* Compacting form IDs (e.g., via xEdit "Compact FormIDs for ESL") changes records that Synthesis patchers reference by FormID. If you compact, rebuild EVERYTHING from scratch — Bashed Patch, Synthesis, Pandora, BodySlide, DynDOLOD. Better: compact only after finalizing a section, before running the pipeline.
+- *SynESLify must be last.* ESL-flagging changes plugin headers and can shift load order indices. Run it as the final Stage 11 patcher and never before DynDOLOD (DynDOLOD reads FormIDs directly).
+- *Verify the Bashed Patch after rebuild.* Open in xEdit, expand Leveled Items and Leveled NPCs trees. Confirm the expected entries from tagged plugins are present. Record the CRC and file size in your build notes — compare on the next rebuild to ensure it didn't silently shrink (common when mod plugins are disabled or removed).
+- *Grass Cache must be last worldspace step before DynDOLOD.* If you rebuild the grass cache after DynDOLOD, grass LOD will be stale. Always: Bashed Patch → Synthesis → xLODGen → TexGen → Grass Cache → DynDOLOD.
+- *Run DynDOLOD twice.* First pass at Medium to verify output is clean and no error messages appear. Second pass at the target preset (High/Ultra) for the final LOD.
 
 
 
