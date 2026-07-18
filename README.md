@@ -10,6 +10,8 @@ A curated, performance-conscious modlist for **Cyberpunk 2077 v2.31**
   and meaningful interactivity
 - **Abundant collectibles** and exploration rewards
 - **Meaningful relationships** -- expanded romance and companion systems
+- **Adult content** -- mature romance, intimacy, and relationship content that
+  serves narrative depth and character connection
 - **Playable performance** -- detailed optimization guide included
 
 ## Requirements
@@ -56,6 +58,12 @@ for detailed hardware recommendations and benchmarks.
 | 19 | [Performance & Optimization](modlist/19-performance-and-optimization.md) | Benchmarks, settings, tools |
 
 ## Design Philosophy
+
+This modlist embraces:
+
+- **RPG depth** -- mods must enhance systems, not bypass them
+- **Adult content** -- mature romance and intimacy that deepens character
+  relationships, with preference for PG/mature toggles
 
 This modlist will **never** include:
 

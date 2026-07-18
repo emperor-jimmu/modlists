@@ -4,7 +4,7 @@
 
 A curated, performance-conscious modlist and guide for Cyberpunk 2077 (v2.31,
 v2.3-compatible), organized via Mod Organizer 2. Focused on RPG depth, living
-world, collectibles, and meaningful relationships.
+world, collectibles, meaningful relationships, and adult content.
 
 ## File Structure
 
@@ -58,6 +58,11 @@ Rules:
 - When a mod offers both cheat and balanced options, only the balanced config is
   used and documented
 - Prefer mods that are actively maintained and version-compatible with v2.31
+- **Adult content accepted** -- romance, intimacy, and mature relationship
+  content is welcome when it serves narrative depth and character connection.
+  Preference for mods with PG/mature content toggles. Adult mods must be
+  well-integrated with existing romance and relationship systems -- standalone
+  "one-night stand" mods without narrative context do not qualify.
 
 ## Research Workflow
 
