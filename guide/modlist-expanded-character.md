@@ -154,6 +154,11 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 | [Vampire Lord Renewed (VL Framework) ESL](https://www.nexusmods.com/skyrimspecialedition/mods/87166) | Add-on | #1, #4     | Humanoid VL form, inventory/spell menu access in VL form, loot/activate enabled. Explicitly supports Sacrosanct. Fully ESL-flagged. v6.4.11 actively maintained. |
 | [Vampire Lord Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/89538)           | Add-on      | all        | Visual-only VL replacer — 8K skin, armors, bigger wings, glowing eyes. Compatible with all gameplay overhauls. |
 | [Just Bite — DAK Patch for Sacrosanct](https://www.nexusmods.com/skyrimspecialedition/mods/122597) | Add-on | #1, #4     | Replaces Sacrosanct feeding pop-up menus with Dynamic Activation Key single-button feed/drain. Better gamepad/third-person UX. Requires DAK (96273). |
+| [Vampire Feed Decals](https://www.nexusmods.com/skyrimspecialedition/mods/123546) | Add-on | #1, #4     | Blood decals on body/face when feeding as a vampire. BodySlot-based (race-independent). Requires Vampire Animations (100349), Behavior Data Injector. Optional SPID for NPC decals. |
+| [Dark Destiny — Become a Vampire Unwillingly](https://www.nexusmods.com/skyrimspecialedition/mods/84998) | Add-on | all        | Short voiced quest scene where the player is captured and turned into a vampire against their will in Pinemoon Cave. AI-voiced (ElevenLabs). No hard dependencies. Compatible with any vampire overhaul. |
+| [Seeking The Cure — A Rising At Dawn Quest Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/85923) | Add-on | all        | Makes vampirism incurable — Falion's ritual fails. Rising At Dawn becomes a non-repeatable story quest. 100+ lines AI-voiced dialogue. Pairs with Dark Destiny for a full unwilling-vampire arc. |
+| [Ancient Mausoleum SSE](https://www.nexusmods.com/skyrimspecialedition/mods/18724) | Add-on | all        | Small vampire-themed player home with custom storage and artifact displays (dragon claws, masks). |
+| [Vampire Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/97185) | Add-on | all        | New vampire-themed clothing items. Author: Hornclonic. |
 | [Growl — Werebeasts of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/14645)   | Baseline    | #1, #4     | Beast-form progression, perks, 5 werebear varieties.                           |
 | [Thunderchild — Epic Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/1460)      | Baseline    | #1, #2, #4 | 19 new shouts (57 words), meditation mechanics, boss encounters.               |
 | Discipline-first route                                                                      | Alternative | #3         | Vanilla vampire/werewolf/shout systems.                                        |
@@ -169,6 +174,10 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 - `Vampire Lord Renewed` touches VL transformation scripts and race records — install after Sacrosanct so its patches detect the correct overhaul. Pack 01 (MCM) is required; Pack 02 (NPC humanoid VL) is optional. Requires MCM Helper, PO3 Papyrus Extender, PapyrusUtil.
 - `Vampire Lord Overhaul` is mesh/texture only — no ESP records to conflict. Safe to install at any point.
 - `Just Bite` modifies Sacrosanct's feeding perk — install after Sacrosanct and DAK. Safe to update mid-save per author.
+- `Vampire Feed Decals` requires `Vampire Animations` (100349), `Behavior Data Injector`, and optionally `Payload Interpreter` for blood spray. Install Vampire Feed Proxy after any vampire overhaul mod. Test via MCM ("Vampire Blood Decals" → "Main" → "Apply Blood Decals").
+- `Dark Destiny` + `Seeking The Cure` form a coherent unwilling-vampire narrative arc — Dark Destiny triggers the turning, Seeking The Cure makes it permanent. Both are AI-voiced and compatible with any vampire overhaul (Sacrosanct, Sacrilege, Better Vampires).
+- `Ancient Mausoleum` is a standalone player home with no gameplay record conflicts. Safe to install at any point.
+- `Vampire Clothing Expansion` adds items via leveled lists. Verify no overlap with `Armor and Clothing Extension` or other wardrobe mods.
 
 ---
 

@@ -67,10 +67,14 @@ Authored settlement content — real places, not just denser vibes.
 | Capital Whiterun Expansion               | If JK's patch missing, mutually exclusive with JK's Whiterun edits.            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37982) |
 | Skyfall's Fortified Morthal              | Morthal city overhaul. Overrides COTN Morthal — choose one.                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/126871) |
 | The Great Town of Ivarstead SSE          |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/34505) |
+| Thuldor's Ivarstead                     | Ivarstead town overhaul. Alternative to The Great Town of Ivarstead — choose one. AI-Generated Content tagged. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/99494) |
 | The Great Village of Kynesgrove          |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42639) |
 | The Great Village of Mixwater Mill SSE   |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/36350) |
 | The Great Town of Shor's Stone SSE       |                                                                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/35977) |
 | The Great City Of Winterhold SSE Edition | Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/17127) |
+| Spaghetti's Towns - Riverwood            | Lightweight Riverwood tweaks (clutter, fishing spot, mill supplies). ESL-flagged. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85356) |
+| Spaghetti's Towns - Rorikstead           | Lightweight Rorikstead tweaks (food shipments, crops, farm animals). ESL-flagged. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/85802) |
+| COTN Winterhold Blacksmith               | Adds a blacksmith NPC and shop to COTN Winterhold. Requires COTN Winterhold. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/44964) |
 | Riton Solitude                          | Solitude architecture overhaul. Likely conflicts with Grand Solitude — choose one. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/98390)  |
 
 ---
@@ -201,10 +205,14 @@ Smaller discoverable places between headline destinations.
 | Reinforced Civil War Camps                  |                                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153645) |
 | Hagraven Houses Animated                    | BOS mesh replacer.                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/101952) |
 | Ivarstead Source                            | Landscape fix. ESL-flagged.                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/118825) |
+| Rorikstead Basalt Cliffs                    | Adds basalt cliff meshes around Rorikstead for visual improvement. No ESP.       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/25718) |
+| More Wooden Bridges                         | Adds wooden bridge meshes to locations across Skyrim. Replacer + new placements.  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42201) |
+| Winterhold Docks                            | Adds dock structures to Winterhold. ESL-flagged light plugin. Complements COTN Winterhold. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/100889) |
 | Animated Ships                              |                                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110260) |
 | Finer Sails                                 |                                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/112517) |
 | Dynamic Boats at Docks - Official Patch Hub |                                                                                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/172901) |
 | Snowy Ships for Snowy Regions               | BOS-based.                                                                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111827) |
+| Better Docks                                | Dock mesh overhaul for Skyrim and Solstheim docks. Lore-friendly.                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2384) |
 | Unmarked Locations Pack - All In One        | + addon packs for Bruma, Wyrmstooth, Gray Cowl if those worldspaces are adopted. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113660) |
 | Ascend - Hidden Peaks of Skyrim             | Climbing challenge locations across Skyrim. Complements parkour movement.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120802) |
 | Graveyards of the Marshlands                | Atmospheric graveyard locations in Hjaalmarch. ESL-flagged.                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132767) |

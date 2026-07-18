@@ -107,6 +107,10 @@ Small-to-mid-scale worldspace texture between major destinations.
 - **[Whiterun Horse Statues](https://www.nexusmods.com/skyrimspecialedition/mods/51417)** — Cosmetic Whiterun landmark additions.
 - **[Solitude Statuary](https://www.nexusmods.com/skyrimspecialedition/mods/94526)** — Cosmetic Solitude landmark additions.
 - **[s6o6t LORE - Mundus Stones](https://www.nexusmods.com/skyrimspecialedition/mods/51191)** — Mundus standing-stone lore expansion.
+- **[Immersive Laundry](https://www.nexusmods.com/skyrimspecialedition/mods/2011)** — Hanging laundry lines in cities and towns. Immersion staple.
+- **[Immersive Laundry - Animated](https://www.nexusmods.com/skyrimspecialedition/mods/92814)** — Adds animation to the laundry lines. Install after Immersive Laundry.
+- **[Immersive Laundry Improvement ILIM](https://www.nexusmods.com/skyrimspecialedition/mods/20346)** — High-quality laundry texture replacer by Pfuscher. Install after Immersive Laundry.
+- **[Immersive Laundry - Patches for Multiple City Mods](https://www.nexusmods.com/skyrimspecialedition/mods/42423)** — Compatibility patches for city overhaul mods. Install after Immersive Laundry and city mods.
 
 ---
 
