@@ -102,6 +102,18 @@ decorations, garage expansions, and player home systems.
     - Each apartment toy can be set/disabled independently.
 - **Performance:** None
 
+### Rent a Motel
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21729>
+- **Version:** 6.0
+- **Released:** 2025-05-01
+- **Summary:** Rent motel rooms across Night City — approach the payment terminal, pay for 24 hours or 7 days, and the room is yours. Sleep, shower, and use amenities. Overstay fines apply. 5 motels supported: Sunset (102), Kabuki (203), Dewdrop Inn (106), No-Tell (206, custom interior), Las Palapas (111, custom interior).
+- **Why:** Extends the housing system beyond owned apartments — motels are everywhere in Night City but inaccessible. Confirmed compatible with patch 2.21-2.31. Works with Dark Future and Eviction Notice, adding low-cost temporary housing that fits the survival-lite economy. Configurable prices per motel.
+- **Conflicts:** None known. Compatible with Dark Future and Eviction Notice.
+- **Dependencies:** ArchiveXL, Codeware, Cyber Engine Tweaks, Native Interactions Framework, redscript. Native Settings UI (optional, for settings). Recommended: Dark Future (#16300), Eviction Notice (#23187).
+- **MO2 Notes:** Extract to game root. Prices configurable via Native Settings UI. Supports 11 languages. Overstay fine is 20% of rent cost. 10% discount for multi-day stays.
+- **Performance:** None
+
 ---
 
 ## Install Order
@@ -114,4 +126,5 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 4. Apartment Cats - Japantown
 5. Apartment Cats - Dogtown
 6. Apartment Toys
-7. Lucy Apartment Remastered
+7. Rent a Motel
+8. Lucy Apartment Remastered

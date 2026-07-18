@@ -56,4 +56,26 @@ expansions, secrets, easter eggs, and rewards for thorough exploration.
 - **MO2 Notes:** Extract to game root. Sloppy Seconds looted from NCPD Scanner Hustle south of Kabuki Market. Glitch Bitch purchased from Lizzie's Bar bartender. Secret third weapon on Jig-Jig Street. Alternate acquisition via CET commands or Mr. Blue Eyes vendor.
 - **Performance:** None
 
+### Card Collection - Treasure Hunt
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25445>
+- **Version:** 2
+- **Released:** 2025-12-01
+- **Summary:** 100 collectible Cyberpunk-universe themed cards hidden across Night City. Each card has unique artwork and provides rewards when found. Progress is tracked and saved.
+- **Why:** Adds a genuine collectathon layer to exploration — cards are hidden in the world, rewarding thorough exploration with artwork and in-game rewards. Simple dependencies and no performance impact make it an easy addition to the exploration pillar.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, Cyber Engine Tweaks, RED4ext, TweakXL
+- **MO2 Notes:** Extract to game root. v2 updated all illustrations with player and artist-submitted pictures. Safe to update mid-game (keeps progress). File size is heavy due to uncompromised image quality.
+- **Performance:** Light (asset-only, no runtime scripts beyond CET collection tracking)
+
 ---
+
+## Install Order
+
+All mods are **Root**-category — enable Root Builder in MO2 before installing.
+
+1. DLC Liberation Protocol
+2. Extra Iconics
+3. Nomad Cache - New Iconic Weapons
+4. Mox Cache - New Iconic Weapons
+5. Card Collection - Treasure Hunt

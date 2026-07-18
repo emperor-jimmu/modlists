@@ -84,7 +84,7 @@ Rejected mods stay documented -- never deleted.
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16300>
 - **Status:** approved
 - **Category:** Living World (06)
-- **Install:** Survival-lite needs system (Hydration, Nutrition, Energy, Anxiety). See `modlist/06-living-world.md`.
+- **Install:** Survival-lite needs system (Hydration, Nutrition, Energy, Anxiety). See `modlist/06a-survival-and-systems.md`.
 
 ### Flesh and Chrome
 
@@ -98,7 +98,7 @@ Rejected mods stay documented -- never deleted.
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23187>
 - **Status:** approved
 - **Category:** Living World (06)
-- **Install:** Apartment rent system with characters and quests. See `modlist/06-living-world.md`.
+- **Install:** Apartment rent system with characters and quests. See `modlist/06a-survival-and-systems.md`.
 
 ### Combat Evolved
 
@@ -175,7 +175,7 @@ Rejected mods stay documented -- never deleted.
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27229>
 - **Status:** approved
 - **Category:** Living World (06)
-- **Install:** Vehicle security breach system. See `modlist/06-living-world.md`.
+- **Install:** Vehicle security breach system. See `modlist/06a-survival-and-systems.md`.
 
 ### Weapon Conditioning (Tier System Overhaul)
 
@@ -210,7 +210,7 @@ Rejected mods stay documented -- never deleted.
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26131>
 - **Status:** approved
 - **Category:** Living World (06)
-- **Install:** Traffic/pedestrian behavior overhaul. See `modlist/06-living-world.md`.
+- **Install:** Traffic/pedestrian behavior overhaul. See `modlist/06a-survival-and-systems.md`.
 
 ### No More Limp Bollards (And Road Barriers)
 
@@ -314,7 +314,7 @@ Rejected mods stay documented -- never deleted.
 - **Cons:** Low endorsement count (62). NPCs can block interactable areas. Author is relatively new.
 - **Dependencies:** Native Interactions Framework (21422), CET.
 - **Conflicts:** None known.
-- **Install:** See `modlist/06-living-world.md`. Pairs with Dance Off and NCI City Center for complete 7th Hell experience.
+- **Install:** See `modlist/06a-survival-and-systems.md`. Pairs with Dance Off and NCI City Center for complete 7th Hell experience.
 
 ### Night City Hangouts - Aldecaldo Camps
 
@@ -327,7 +327,7 @@ Rejected mods stay documented -- never deleted.
 - **Cons:** Low endorsement count (177). NPCs can block interactable areas.
 - **Dependencies:** Native Interactions Framework (21422), CET. Recommends NCI Core (already in modlist).
 - **Conflicts:** None known.
-- **Install:** See `modlist/06-living-world.md`. Complements Panam Romanced Enhanced.
+- **Install:** See `modlist/06a-survival-and-systems.md`. Complements Panam Romanced Enhanced.
 
 ### Night City Hangouts - Jig Jig Street
 
@@ -340,7 +340,7 @@ Rejected mods stay documented -- never deleted.
 - **Cons:** NPC blocking at peak hours (night).
 - **Dependencies:** Native Interactions Framework (21422), CET. Optional: Jig Jig Unleashed (16580) for tweaked version.
 - **Conflicts:** None known.
-- **Install:** See `modlist/06-living-world.md`. Two versions: standard and tweaked (requires Jig Jig Unleashed).
+- **Install:** See `modlist/06a-survival-and-systems.md`. Two versions: standard and tweaked (requires Jig Jig Unleashed).
 
 ### Night City Hangouts - Lizzie's Bar
 
@@ -353,7 +353,7 @@ Rejected mods stay documented -- never deleted.
 - **Cons:** NPCs can block interactable areas when bar is busy.
 - **Dependencies:** Native Interactions Framework (21422), CET. Recommends Lizzie's Braindances and NCI Core.
 - **Conflicts:** None known.
-- **Install:** See `modlist/06-living-world.md`. Complements Lizzie's Braindances for a complete Mox club experience.
+- **Install:** See `modlist/06a-survival-and-systems.md`. Complements Lizzie's Braindances for a complete Mox club experience.
 
 ### NCI Addon - City Center
 
@@ -366,7 +366,7 @@ Rejected mods stay documented -- never deleted.
 - **Cons:** Requires NCI Core (already in modlist).
 - **Dependencies:** Night City Interactions - Core (5519, already in modlist at 06).
 - **Conflicts:** Gigs may temporarily block specific drinking spots until fully completed.
-- **Notes:** Fits cleanly into existing NCI Add-ons section of 06-living-world.md. Partners: Judy, Panam, River, Kerry -- all have existing mod support.
+- **Notes:** Fits cleanly into existing NCI Add-ons section of 06b-world-interaction.md. Partners: Judy, Panam, River, Kerry -- all have existing mod support.
 
 ---
 
@@ -492,6 +492,56 @@ Rejected mods stay documented -- never deleted.
 - **Dependencies:** Romance Hangouts Enhanced v2.1.1+ (11590, already in modlist).
 - **Conflicts:** Explicitly compatible with RHE per RHE's own entry. May conflict with mods blocking/changing partner entities.
 - **Install:** See `modlist/08-relationships-and-romance.md`. Drop .archive, no config needed. CET commands for customization.
+
+---
+
+### Night City Allies - Immersive Companion System
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27625>
+- **Status:** candidate
+- **Category:** Living World (06) / Gameplay Overhaul (05)
+- **Pros:** Full companion system for Night City — tagged "Fair and balanced" and "Total Conversion." CET-based. Major immersion expansion that aligns with the modlist's living world and relationships pillars.
+- **Cons:** Large-scale system mod — potential conflicts with NCI, NCH, They Will Remember, Stealthrunner, Wannabe Edgerunner, and other mods that modify NPC behaviors or world interactions. Needs thorough isolation testing before approval.
+- **Dependencies:** Cyber Engine Tweaks
+- **Notes:** High-impact mod — requires dedicated testing session to evaluate compatibility with the full modlist. Check for conflicts with Night City Interactions (NCI) district addons, Night City Hangouts (NCH), and all gameplay overhaul mods in 05. Also evaluate overlap with existing romance companion systems (Romanced Enhanced, IRWTSAYH, Romance Hangouts Enhanced).
+
+### Night City Allies - Characters Addon
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27769>
+- **Status:** candidate
+- **Category:** Living World (06)
+- **Pros:** Character expansion for NCA companion system. Adds recruitable characters.
+- **Cons:** Depends on Night City Allies (#27625). Evaluate only after NCA core is approved.
+- **Dependencies:** Night City Allies (#27625)
+- **Notes:** Pending NCA evaluation.
+
+### Night City Allies - Missions Addon (Be A Fixer)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/28572>
+- **Status:** candidate
+- **Category:** Living World (06) / Quests & Stories (07)
+- **Pros:** Adds mission/fixer gameplay to the NCA companion system.
+- **Cons:** Depends on Night City Allies (#27625). Evaluate only after NCA core is approved.
+- **Dependencies:** Night City Allies (#27625)
+- **Notes:** Pending NCA evaluation.
+
+### NCA Character Addons
+
+The following character addons require Night City Allies and should be evaluated as a group after NCA core is approved:
+
+| Mod | Nexus ID | Character |
+|-----|----------|-----------|
+| Rita Wheeler Remastered | [29141](https://www.nexusmods.com/cyberpunk2077/mods/29141) | Rita Wheeler — NCA-compatible version |
+| Amelia Marshall | [28961](https://www.nexusmods.com/cyberpunk2077/mods/28961) | Amelia Marshall — NCA-compatible character |
+| Bella 'Bluebell' Jones | [28887](https://www.nexusmods.com/cyberpunk2077/mods/28887) | Bella Jones — NCA-compatible character |
+| Collette Dimitrova | [29421](https://www.nexusmods.com/cyberpunk2077/mods/29421) | Collette Dimitrova — NCA-compatible character |
+| Daisy 'Daisycutter' Clarke | [28903](https://www.nexusmods.com/cyberpunk2077/mods/28903) | Daisy Clarke — NCA-compatible character |
+| Helen Tesfayeh | [28890](https://www.nexusmods.com/cyberpunk2077/mods/28890) | Helen Tesfayeh — NCA-compatible character |
+
+- **Status:** candidate (all)
+- **Category:** Living World (06) / Relationships & Romance (08)
+- **Dependencies:** Night City Allies (#27625) for all. Rita Wheeler Remastered also depends on Rita Wheeler Romanced (#9191).
+- **Notes:** All tagged Sexualised. Evaluate as a group alongside NCA core. If approved, these would add diverse NPC companions ranging from established characters (Rita) to new ones, enriching Night City's social fabric.
 
 ---
 

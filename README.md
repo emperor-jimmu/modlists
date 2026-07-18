@@ -42,7 +42,9 @@ for detailed hardware recommendations and benchmarks.
 | 03 | [Bug Fixes](modlist/03-bug-fixes.md) | Quest fixes, animation fixes, world holes |
 | 04 | [UI & HUD](modlist/04-ui-and-hud.md) | Interface, menus, minimap, inventory |
 | 05 | [Gameplay Overhaul](modlist/05-gameplay-overhaul.md) | RPG systems, combat, loot, crafting |
-| 06 | [Living World](modlist/06-living-world.md) | Daily activities, survival, immersion |
+| 06a | [Survival & Systems](modlist/06a-survival-and-systems.md) | Survival-lite, economy, transport |
+| 06b | [World Interaction](modlist/06b-world-interaction.md) | Venues, interactivity, world reactivity |
+| 06c | [Leisure & Entertainment](modlist/06c-leisure-and-entertainment.md) | Gambling, arcades, dancing, braindances |
 | 07 | [Quests & Stories](modlist/07-quests-and-stories.md) | New quests, expanded storylines, gigs |
 | 08 | [Relationships & Romance](modlist/08-relationships-and-romance.md) | Romance systems, companions |
 | 09 | [Collectibles & Exploration](modlist/09-collectibles-and-exploration.md) | Hidden items, secrets |

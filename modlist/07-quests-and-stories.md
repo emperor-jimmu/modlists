@@ -66,6 +66,90 @@ City.
 - **MO2 Notes:** Extract to game root. Quest triggers after leaving Black Sapphire — use the hotel key Aurore slips you. Quest fails if not completed before tracking the twins' car to Dogtown. Resettable via Deceptious Quest Core Utilities. TweakXL yaml goes in `r6/tweaks/`.
 - **Performance:** None
 
+### The Kidnapping of Panam
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/17329>
+- **Version:** 2.1.0
+- **Released:** 2024-10-01
+- **Summary:** Panam has gone missing. A cryptic message, a deadly ambush at the Sunset Motel, and a trail leading into Maelstrom territory. V races against time to rescue her from a chromed-up boss with a personal vendetta.
+- **Why:** Adds a high-stakes narrative quest centered on Panam with full voice acting, holocalls, and horror elements. Supports both male and female V with different activation conditions. 1,100+ endorsements.
+- **Conflicts:** None known. Compatible with Panam Romanced Enhanced.
+- **Dependencies:** ArchiveXL, RED4ext, TweakXL, Phantom Liberty
+- **MO2 Notes:** Extract to game root. For male V: requires first dating quest completed with no active dating quest. For female V: quest activates automatically with a 24-hour delay. NG+ compatible.
+- **Performance:** None
+
+### High Stakes Quest
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18023>
+- **Version:** 1.3.2
+- **Released:** 2024-12-01
+- **Summary:** A vehicle-based quest featuring holocalls from Regina, a timed driving phase with autosaves, and a full narrative with Johnny dialogue. Vehicle durability tracking with popups.
+- **Why:** Adds a driving-focused quest that uses Night City's vehicle mechanics as core gameplay rather than just transport. Video holocalls add production value. Multiple community translations available.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL, Phantom Liberty
+- **MO2 Notes:** Extract to game root. Quest includes autosaves every 45 seconds during the drive phase. Uses AI-generated dialogue alongside vanilla Johnny lines. 9 other mods use this as a dependency.
+- **Performance:** None
+
+### New Quest - Californication
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/7833>
+- **Version:** 3.1.2
+- **Released:** 2025-08-18
+- **Summary:** Adds a new quest for romanced Judy. Requires Judy staying in NC and positive conversation with Judy's Abuela.
+- **Why:** Extends Judy's narrative after her romance arc concludes. Requires specific story conditions, making it a natural continuation rather than a disconnected side quest.
+- **Conflicts:** None known
+- **Dependencies:** Judy Romanced Enhanced (#4508), Deceptious Quest Core
+- **MO2 Notes:** Extract to game root. Requires Judy romanced and staying in Night City (Star ending incompatible). Requires positive Abuela conversation outcome.
+- **Performance:** None
+
+### New Quest - Encore
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/8413>
+- **Version:** 3.2.1
+- **Released:** 2023-05-27
+- **Summary:** Adds a new quest for romanced Panam. Requires Panam Romanced.
+- **Why:** Extends the Panam romance with additional narrative content beyond the base game and Romanced Enhanced schedule.
+- **Conflicts:** None known
+- **Dependencies:** Panam Romanced Enhanced (#4626), Deceptious Quest Core
+- **MO2 Notes:** Extract to game root. Requires Panam romanced. **Compatibility note:** Last updated May 2023 (pre-2.0). Verify 2.31 compatibility before installing — test in isolation first.
+- **Performance:** None
+
+### New Quest - Hot Fuzz
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/7832>
+- **Version:** 3.1.4
+- **Released:** 2025-08-18
+- **Summary:** Adds a new quest for romanced Judy with intimate narrative content. Requires Judy staying in NC and positive Abuela conversation.
+- **Why:** Adult companion quest to Californication — adds relationship depth for Judy romancers who want more narrative content after the main romance arc.
+- **Conflicts:** None known
+- **Dependencies:** Judy Romanced Enhanced (#4508), Deceptious Quest Core
+- **MO2 Notes:** Extract to game root. Same prerequisites as Californication. Install after Californication in load order.
+- **Performance:** None
+
+### 8ug8ear Romance
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/6313>
+- **Version:** 3.01
+- **Released:** 2022-06-01
+- **Summary:** 8ug8ear becomes a romanceable character. Receive messages, follow her quest, visit her apartment, and become intimate depending on choices.
+- **Why:** 8ug8ear is an established character from the main story (rescued during the Sandra Dorsett mission). This gives her a proper narrative follow-up with branching intimacy choices.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, RED4ext, TweakXL
+- **MO2 Notes:** Extract to game root. Requires completing the Sandra Dorsett rescue mission where you encounter 8ug8ear.
+- **Performance:** None
+
+### Rita Wheeler Romanced
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9191>
+- **Version:** 3.3.1
+- **Released:** 2025-08-18
+- **Summary:** Adds a small romance/hookup quest with Rita Wheeler, the Mox bouncer at Lizzie's Bar. Includes intimacy scenes and dialogue.
+- **Why:** Rita is a recognizable Night City character who's present throughout the game but has no interactivity beyond bar security. This gives her depth as a person rather than set dressing, fitting the modlist's goal of a living, decadent city where characters have agency.
+- **Conflicts:** None known
+- **Dependencies:** ArchiveXL, RED4ext, TweakXL
+- **MO2 Notes:** Extract to game root. Quest becomes available after meeting Rita at Lizzie's Bar. Pairs with Rita Post-Romance Messages Addon in 08-Relationships & Romance for ongoing contact.
+- **Performance:** None
+
 ---
 
 ## Song So Mi Romance Arc
@@ -131,9 +215,16 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 3. Cutscene Weapon Swapper
 4. Immersive Fixers
 5. Aurore Romanced (Lady Marmalade)
-6. Possibilities
-7. Romantic Hangout with So Mi
-8. The Ransom
-9. Into the Depths
+6. The Kidnapping of Panam
+7. High Stakes Quest
+8. New Quest - Californication
+9. New Quest - Encore
+10. New Quest - Hot Fuzz
+11. 8ug8ear Romance
+12. Rita Wheeler Romanced
+13. Possibilities
+14. Romantic Hangout with So Mi
+15. The Ransom
+16. Into the Depths
 
-**Note:** Deceptious Quest Core is also required by mods in 08-Relationships & Romance (Gone Away). Songbird romance arc (items 6-9) requires sending Songbird to the moon in Phantom Liberty.
+**Note:** Deceptious Quest Core is also required by mods in 08-Relationships & Romance (Gone Away). Songbird romance arc (items 13-16) requires sending Songbird to the moon in Phantom Liberty. New Quest - Encore requires 2.31 compatibility verification (last updated pre-2.0). Rita Wheeler Romanced is required by Rita Post-Romance Messages Addon in 08-Relationships & Romance.

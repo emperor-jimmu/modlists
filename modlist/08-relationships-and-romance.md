@@ -144,6 +144,114 @@ and relationship progression.
 - **MO2 Notes:** Extract to game root. SFW without Showers Feature mod (v3.5.0+). Same Long/Short stay choice system as other partners.
 - **Performance:** None
 
+### Romanced Enhanced Showers Feature
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23074>
+- **Version:** 1.0.0
+- **Released:** 2025-08-18
+- **Summary:** Addon that enables the NSFW showering routine/feature for all four Romanced Enhanced mods (Judy, Panam, Kerry, River).
+- **Why:** Required dependency for all four I Really Want To Stay At Your House mods. Enables the shower schedule activity that completes the daily routine immersion for partner characters.
+- **Conflicts:** None known
+- **Dependencies:** Judy Romanced Enhanced, Panam Romanced Enhanced, Kerry Romanced Enhanced, or River Romanced Enhanced (at least one required). ArchiveXL.
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Works automatically with Romanced Enhanced mods. IRWTSAYH mods are SFW without this mod — install to enable shower features.
+- **Performance:** None
+
+### Post-Romance Delivery System (Judy)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21496>
+- **Version:** 4.0
+- **Released:** 2025-06-01
+- **Summary:** After romancing Judy, receive randomized text messages, gifts, and physical packages at V's apartment. Dark Future compatibility. UI interaction prompts.
+- **Why:** Keeps the Judy romance alive post-story with ongoing contact. Physical packages at your door add tangible, world-grounded reward that fits the living world pillar.
+- **Conflicts:** None known. Dark Future compatible.
+- **Dependencies:** ArchiveXL, Cyber Engine Tweaks, TweakXL
+- **MO2 Notes:** Extract to game root. Triggers after Judy romance is locked in. Messages arrive randomly during gameplay, not on a fixed timer.
+- **Performance:** None
+
+### Post-Romance Delivery System (Panam)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21689>
+- **Version:** 4.1
+- **Released:** 2025-07-14
+- **Summary:** After romancing Panam, receive randomized text messages, gifts, and physical packages at V's apartment. Dark Future compatibility. UI interaction prompts.
+- **Why:** Same as Judy version — ongoing post-romance contact that deepens the relationship rather than letting it go silent after the final quest.
+- **Conflicts:** None known. Dark Future compatible.
+- **Dependencies:** ArchiveXL, Cyber Engine Tweaks, TweakXL
+- **MO2 Notes:** Extract to game root. Triggers after Panam romance. Physical packages appear at apartment door.
+- **Performance:** None
+
+### Post-Romance Delivery System (Kerry)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21420>
+- **Version:** 3.2
+- **Released:** 2025-05-01
+- **Summary:** After romancing Kerry, receive randomized text messages, eddies, and crafting items. Dark Future compatibility. UI interaction.
+- **Why:** Kerry has the least post-romance content in the current modlist. This fills a gap with ongoing contact from a partner who otherwise goes silent.
+- **Conflicts:** None known. Dark Future compatible.
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Triggers after Kerry romance. Messages randomize between game cycles and reloads, never on a predictable timer.
+- **Performance:** None
+
+### Post-Romance Delivery System (River)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21449>
+- **Version:** 3.3
+- **Released:** 2025-05-01
+- **Summary:** After romancing River, receive randomized text messages, buffs, and rewards. Dark Future compatibility. UI interaction.
+- **Why:** River has limited post-romance content beyond the Romanced Enhanced schedule. Ongoing deliveries maintain relationship immersion.
+- **Conflicts:** None known. Dark Future compatible.
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Triggers after River romance. Messages arrive randomly — not on a fixed schedule.
+- **Performance:** None
+
+### Post-Romance Delivery System (Meredith)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23242>
+- **Version:** 1.3
+- **Released:** 2025-08-01
+- **Summary:** After the Meredith Stout encounter, receive ongoing text messages. 65+ unique messages. Fixed overlapping message issue with Judy version.
+- **Why:** Meredith is a memorable early-game encounter who vanishes from the story. This provides a diegetic continuation that makes her feel like a real person with ongoing interest in V, fitting the decadent corporate world of Night City.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Triggers after the Meredith encounter. Install alongside the other Post-Romance Delivery mods — author fixed message overlaps.
+- **Performance:** None
+
+### Go on a Date (Panam)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26613>
+- **Version:** 1
+- **Released:** 2026-05-19
+- **Summary:** Adds side romance dates with Panam triggered by phone messages, playing out as mini open-world side quests.
+- **Why:** Complements the Panam Romanced Enhanced and IRWTSAYH Panam mods with outdoor date activities beyond apartment hangouts. Adds variety to Panam romance content.
+- **Conflicts:** None known. Compatible with Romanced Enhanced mods.
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Dates trigger via phone message — not on a fixed timer.
+- **Performance:** None
+
+### Judy's Voicemail
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21937>
+- **Version:** 2.1
+- **Released:** 2025-08-16
+- **Summary:** Judy leaves voicemail messages when V is featured in NCPD news or wanted. Supports both masculine and feminine V voice.
+- **Why:** Adds reactive relationship content — Judy notices when V makes headlines. Grounds the romance in the game world rather than isolating it to apartment scenes.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Works automatically when Judy romance is active and V gains wanted level or news coverage.
+- **Performance:** None
+
+### Rita Post-Romance Messages Addon
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30537>
+- **Version:** 1
+- **Released:** 2026-07-01
+- **Summary:** Over 100 new messages and exclusive photo content from Rita Wheeler after completing her romance quest. Extends the post-romance contact for the Mox bouncer.
+- **Why:** Extends the Rita Wheeler Romanced quest (#9191) with ongoing messaging content. Keeps a minor romance alive rather than a one-and-done encounter.
+- **Conflicts:** None known
+- **Dependencies:** Rita Wheeler Romanced (#9191, in 07-Quests & Stories)
+- **MO2 Notes:** Extract to game root. Requires Rita Wheeler Romanced installed first. Messages trigger after completing the Rita quest.
+- **Performance:** None
+
 ### Hangout Romances
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18972>
@@ -165,13 +273,22 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 2. Panam Romanced Enhanced
 3. River Romanced Enhanced
 4. Kerry Romanced Enhanced
-5. Romance Hangouts Enhanced
-6. Judy Flirts on Dates
-7. Gone Away - Better Partner Suspended Behaviour
-8. I Really Want To Stay At Your House - Judy
-9. I Really Want To Stay At Your House - Panam
-10. I Really Want To Stay At Your House - River
-11. I Really Want To Stay At Your House - Kerry
-12. Hangout Romances
+5. Romanced Enhanced Showers Feature
+6. Romance Hangouts Enhanced
+7. Judy Flirts on Dates
+8. Gone Away - Better Partner Suspended Behaviour
+9. I Really Want To Stay At Your House - Judy
+10. I Really Want To Stay At Your House - Panam
+11. I Really Want To Stay At Your House - River
+12. I Really Want To Stay At Your House - Kerry
+13. Hangout Romances
+14. Post-Romance Delivery System (Judy)
+15. Post-Romance Delivery System (Panam)
+16. Post-Romance Delivery System (Kerry)
+17. Post-Romance Delivery System (River)
+18. Post-Romance Delivery System (Meredith)
+19. Go on a Date (Panam)
+20. Judy's Voicemail
+21. Rita Post-Romance Messages Addon
 
-**Note:** Requires **Deceptious Quest Core** from 07-Quests & Stories for Gone Away to work fully for Kerry/River. Hangout Romances requires Romance Hangouts Enhanced v2.1.1+.
+**Note:** Requires **Deceptious Quest Core** from 07-Quests & Stories for Gone Away to work fully for Kerry/River. Hangout Romances requires Romance Hangouts Enhanced v2.1.1+. Rita Post-Romance Messages Addon requires Rita Wheeler Romanced (#9191) from 07-Quests & Stories.
