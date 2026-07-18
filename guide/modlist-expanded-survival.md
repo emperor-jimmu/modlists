@@ -38,6 +38,14 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
 | [Real Water in Buckets and Barrels](https://www.nexusmods.com/skyrimspecialedition/mods/122422)             | Add-on      | all            | Visible water in containers (buckets, barrels, pots, pans). iNeed supported. BOS-based. Enhances survival-immersion visual detail.       |
 | Minimalist route                                                                                          | Alternative | all            | Leave hygiene implied through inns, rivers, roleplay.                                                                                      |
 
+### Eating & Drinking Animations
+Visible eating and drinking as a downtime ritual — animated consumption with sound effects, NPC autonomous eating, MCM-configurable. Complements survival needs without adding hunger mechanics.
+
+| Mod                                                                                   | Type     | Dial | Notes                                                                                                     |
+|---------------------------------------------------------------------------------------|----------|------|-----------------------------------------------------------------------------------------------------------|
+| [Animated Eating Redux SE](https://www.nexusmods.com/skyrimspecialedition/mods/4652)  | Baseline | all  | Third-person eating/drinking animations with sound. NPCs eat autonomously based on time of day. FOMOD with optional animated potions, coffee/tea. Requires SKSE + SkyUI + Pandora (behavior engine). |
+| [Animated Eating Redux - Settings Loader](https://www.nexusmods.com/skyrimspecialedition/mods/63841) | Companion | all | MCM settings loader/preset. Install after Animated Eating Redux.                           |
+
 ### Key Features
 
 - **Washable Blood** — Uses a KPE function (not Dirt & Blood's overlay-based system) to remove blood decals directly. Compatible with Enhanced Blood Textures, Just Blood, Sanguine Symphony.

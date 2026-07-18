@@ -12,3 +12,5 @@
 - **Frozen in Time** — Verify no DynDOLOD or navmesh conflicts with Ancient Falmer Ruins if both are adopted. Check LoTD display patch availability.
 - **Occiglacies** — Verify LoTD display patch (mod 64117) compatibility with current LoTD version.
 - **Vampire follower evaluation** — Evaluate 4 vampire followers for NPCs section: Silas (Bosmer vampire, ESL, uses player body/skins), Koemia (custom-voiced, DBVO patch, mod 101405), Voira (Pandorable's, 1088 end., mod 42708), Dumitra (Altmer custom-voiced 600+ lines, mod 147787).
+- **DF Edit NPC face replacers (11 mods)** — Individual Distinct Faces edits for Camilla (177048), Rayya (179325), Angi (178488), Sapphire (161017), Saadia (169287), Jenassa (164775), Aranea (176413), Brelyna (166402), Eola (161817), Fura Bloodmouth (171382), Ysolda (169910). Requires NPC appearance baseline confirmed before adding. Some are SkyPatched, some ESP-based. Will selectively override whatever NPC overhaul is chosen.
+- **Vampire Clans and Bloodlines (37517)** — Major gameplay expansion adding vampire clans/factions with new races, leveled lists, dungeons. Evaluate for pillar fit (CS compat, LoTD patches, third-person/gamepad).

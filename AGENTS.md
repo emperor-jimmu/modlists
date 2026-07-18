@@ -116,3 +116,38 @@ When moving mods from `TODO.md` into their section files:
 ## Workspace Notes
 
 - `.playwright-mcp/` and `*.log` are ignored in `.gitignore`; they are scratch artifacts from verification work, not project content.
+- `nexus-*-snapshot.md` files in the repo root are scratch artifacts from playwright-based mod research — clean them up after committing.
+
+## Session Decisions & Verified Baselines (2026-07-18)
+
+These are confirmed from the current modlist state. When evaluating armor/body/physics mods, use these as givens.
+
+### Body & Physics
+- **FSMP — Faster HDT-SMP (57339):** Baseline in `modlist-animations.md:232`. Required by OStim and physics outfits. All HDT-SMP armor mods are adoptable.
+- **HIMBO (74174):** Male body baseline in `modlist-graphics-characters.md:26`. HIMBO refits for armor mods are relevant.
+- **CBBE 3BA:** Female body baseline. CBBE 3BA refits for armor mods are relevant.
+- **OBody NG:** Body distribution framework. Works with both CBBE 3BA and HIMBO.
+
+### Quest & World Content
+- **VIGILANT (11849):** Listed in `modlist-world-content.md:401` (Vicn Trilogy). Patches for VIGILANT (e.g. Ancient Imperial Armor for Vigilant) are adoptable.
+- **Moon and Star (4301):** Listed in `modlist-world-content.md:413`. Undeath Moon and Star patches are adoptable.
+- **Beyond Skyrim - Bruma (10917):** Listed in `modlist-world-content.md:376`. Bruma-related patches/replacers are adoptable.
+- **LoTD:** Anchors the museum/collection pillar. All quest mod displays in `modlist-lotd.md:19-36`. Undeath LoTD patches should be verified.
+
+### Graphics Framework
+- **Community Shaders:** Exclusive graphics framework. No ENB, no LUX. PBR texture companions (e.g. Buoyant Armiger PBR, Dark Apprentice PBR) are in-scope.
+- **Embers XD (37085):** Baseline fire/ember mod in `modlist-graphics-lighting.md:37`. Required by Diverse Campfires (109731).
+- **GDOS — Glorious Doors of Skyrim (32376):** Baseline in `modlist-graphics-textures.md:29`. Undeath GDOS Door Patch (132038) is REQUIRED if Undeath is adopted.
+
+### Behavior & Animation
+- **Pandora:** Behavior engine baseline. Nemesis-format behavior patches are generally backward-compatible (used for Animated Eating Redux 4652).
+- **OAR — Open Animation Replacer:** Conditional animation selection baseline.
+
+### Armor Stack Decisions
+- **Immersive Armors** is baseline. HIMBO Conversion V2 (76552) is the male path.
+- **FSMP physics armors** are adoptable (FSMP is baseline). Include HDT-SMP patches where available.
+- **SPID distribution** companions are relevant for NPC integration of armor mods.
+
+### Undeath Decisions
+- **Undeath Remastered (6180):** Quest mod candidate. If adopted: GDOS Door Patch (132038) is mandatory. Camera Fix (52950) and Conjuration Absorb Fix (18762) are required bugfixes. Pick ONE lich gameplay route: Classical Lichdom (40802) recommended over Immersive Lichdom (9223) or The Ascension (32960). Facegen Data Patch (20046) required if NPC overhauls are used.
+

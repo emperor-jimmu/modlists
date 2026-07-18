@@ -95,6 +95,23 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [JS Unique Utopia SE - Rings](https://www.nexusmods.com/skyrimspecialedition/mods/102226) | Unique ring mesh/texture replacer. | |
 | [Land of Vominheim - Unique Rewards by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/102839) | Unique rewards patch for Land of Vominheim. | Install if Vominheim is adopted. |
 | [Callisto HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/134752) | Female HDT-SMP heavy armor. Craftable, ESL-flagged. | Requires FSMP. Xtudo patches ([134900](https://www.nexusmods.com/skyrimspecialedition/mods/134900)) add SPID, Ancient Falmer replacer, LOTD, beast-race support. HIMBO male addon ([134789](https://www.nexusmods.com/skyrimspecialedition/mods/134789)). |
+| [Armors of the Velothi Pt. I](https://www.nexusmods.com/skyrimspecialedition/mods/62752) | Dunmer-themed armor packs (multiple sets). | Install Pt. I then Pt. II. |
+| [Armors of the Velothi Pt. II](https://www.nexusmods.com/skyrimspecialedition/mods/69996) | Additional Velothi armor sets. | Install after Pt. I. |
+| [Ancient Imperial Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/142655) | Imperial-themed armor set. | |
+| [Ancient Imperial Armor for Vigilant SE](https://www.nexusmods.com/skyrimspecialedition/mods/142972) | VIGILANT replacer for Ancient Imperial Armor. | Install if VIGILANT is adopted. |
+| [BS Bruma - Imperial Armors Replacer - Ancient Imperial](https://www.nexusmods.com/skyrimspecialedition/mods/82860) | Replaces Bruma Imperial armors with Ancient Imperial. Xtudo. | Install if Beyond Skyrim - Bruma is adopted. |
+| [Dwemer Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/81043) | Dwarven armor model/texture replacer. 4thUnknown. | CBBE 3BA ([81602](https://www.nexusmods.com/skyrimspecialedition/mods/81602)), HIMBO ([95191](https://www.nexusmods.com/skyrimspecialedition/mods/95191)), SkyPatch ([159254](https://www.nexusmods.com/skyrimspecialedition/mods/159254)). |
+| [Ancient Argonian Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/100724) | Argonian-themed armor set. | HIMBO refit ([139314](https://www.nexusmods.com/skyrimspecialedition/mods/139314)). |
+| [Thalmor Ceykynd Armors](https://www.nexusmods.com/skyrimspecialedition/mods/136041) | Thalmor-themed armor sets. | CBBE 3BA ([140647](https://www.nexusmods.com/skyrimspecialedition/mods/140647)), HIMBO ([140823](https://www.nexusmods.com/skyrimspecialedition/mods/140823)), HDT-SMP ([147509](https://www.nexusmods.com/skyrimspecialedition/mods/147509)). |
+| [Ysmir Armor SE](https://www.nexusmods.com/skyrimspecialedition/mods/112454) | Nordic-themed armor set. | |
+| [The Southbound Scouts - HDT-SMP](https://www.nexusmods.com/skyrimspecialedition/mods/122550) | Ranger/hunter armor with physics. | Requires FSMP. |
+| [Gorm HDT-SMP Armor](https://www.nexusmods.com/skyrimspecialedition/mods/119257) | Armor set with physics. | Requires FSMP. |
+| [Arcane Mage Armor](https://www.nexusmods.com/skyrimspecialedition/mods/160014) | Mage armor with multiple body options (3BA/BHUNP/CBBE/UNP/Vanilla). | |
+| [Steel Vanguard Armor (CBBE HDT-SMP)](https://www.nexusmods.com/skyrimspecialedition/mods/149852) | Steel-tier armor with physics. | 3BA/HIMBO refits ([149974](https://www.nexusmods.com/skyrimspecialedition/mods/149974)). |
+| [Buoyant Armiger Glass Armory](https://www.nexusmods.com/skyrimspecialedition/mods/152146) | Glass-tier Dunmer/Morrowind armor set. | PBR ([182690](https://www.nexusmods.com/skyrimspecialedition/mods/182690)), HIMBO/CBBE bodyslides ([174215](https://www.nexusmods.com/skyrimspecialedition/mods/174215)). |
+| [Dark Apprentice (3BA SMP)](https://www.nexusmods.com/skyrimspecialedition/mods/171434) | Mage armor with physics. | PBR ([171845](https://www.nexusmods.com/skyrimspecialedition/mods/171845)), SPID ([172938](https://www.nexusmods.com/skyrimspecialedition/mods/172938)). |
+| [Bosmeri Swallowtail Armour](https://www.nexusmods.com/skyrimspecialedition/mods/124248) | Bosmer/wood elf-themed armor. | SPID distribution ([176955](https://www.nexusmods.com/skyrimspecialedition/mods/176955)). |
+| [Wolf Leather Armor](https://www.nexusmods.com/skyrimspecialedition/mods/136189) | Light armor set. | BHUNP/HIMBO/CBBE/3BA bodyslides ([136273](https://www.nexusmods.com/skyrimspecialedition/mods/136273)). |
 | [Elven Chainmail (SSE Port)](https://www.nexusmods.com/skyrimspecialedition/mods/14978) | Female-only elven light armor set + scimitar. Found in Northwatch Keep. | LE port by JWGaming75. Requires CBBE. Last updated Jan 2018 — verify 1.6.1170. |
 | [HD Falmer Elven Chainmail Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/35669) | HD retexture for Elven Chainmail. | By trion77/Vindition. Install over Elven Chainmail base mod. |
 | [Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284) | Replaces vanilla female vampire armor (3 color variants). CBBE 3BA, 811 endorsements. | Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)). |
@@ -102,6 +119,8 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 ### Risks & Compatibility
 
+- **Item Equip Restrictor** ([109510](https://www.nexusmods.com/skyrimspecialedition/mods/109510)) — SKSE plugin restricting armor/gender mismatches. Install in Foundations. Prevents NPCs equipping incompatible gender/race armors.
+- **TangyTweaks' HIMBO Conversions** ([135362](https://www.nexusmods.com/skyrimspecialedition/mods/135362)) — Bulk HIMBO bodyslide conversions for various armor mods. Install if HIMBO is male body baseline.
 - `NordwarUA Total Armor` standardizes cubemaps across all six sub-mods — any mod depending on original cubemaps needs re-testing.
 - `Common Clothes and Armors` adds clothing to NPC leveled lists. Verify NPCs look right if `Armor and Clothing Extension` is also active.
 - `Bandolier` changes inventory — carry-weight design must account for additional slots.
@@ -125,6 +144,7 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 |---------------------------------------------------------------------------------------|-------------|----------------|--------------------------------------------------------------------------------------|
 | [ArteFakes](https://www.nexusmods.com/skyrimspecialedition/mods/41254)                | Alternative | #1, #2, #3, #4 | Higher-detail 3D models for unique items. Stacks with Reliquary of Myth.             |
 | [Konahrik's Accoutrements](https://www.nexusmods.com/skyrimspecialedition/mods/22206) | Alternative | #1, #4         | Dragon-priest gear, masks, harder fights. LoTD museum integration.                   |
+| [Dragon Priest Hood Variants](https://www.nexusmods.com/skyrimspecialedition/mods/123043)   | Alternative | all            | Hooded/unhooded variants for Dragon Priest masks. Verify vs Apophysis (5800) and Diverse Dragon Priests (105519). |
 | [Unique Items Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/33723)      | Alternative | #1, #2, #3, #4 | Gap-filler for artifacts Reliquary of Myth doesn't cover.                            |
 | [Artificer](https://www.nexusmods.com/skyrimspecialedition/mods/99619)                | Alternative | #1, #2, #4     | Simonrim-aligned alternative to Reliquary of Myth. Requires Thaumaturgy + Mysticism. |
 | Discipline-first route                                                                | Alternative | #3             | Vanilla artifact stats.                                                              |

@@ -33,6 +33,13 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Draugrs — New models and textures](https://www.nexusmods.com/skyrimspecialedition/mods/123170) | Baseline | Most-seen undead enemy. |
 | [Spider SE](https://www.nexusmods.com/skyrimspecialedition/mods/182638) | Baseline | |
 | [Deer Reworked — Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/155433) | Baseline | |
+| [Edmond's Nature Series — DEER](https://www.nexusmods.com/skyrimspecialedition/mods/145374) | Alternative | Deer/elk model replacer. Alternative to Deer Reworked — Ultimate. |
+| [Fox Replacer — Mihail](https://www.nexusmods.com/skyrimspecialedition/mods/163477) | Alternative | Fox model replacer. ESL-flagged. |
+| [Spriggans SE](https://www.nexusmods.com/skyrimspecialedition/mods/90547) | Alternative | Spriggan model/texture replacer. |
+| [Riv's Wolves of the Wild — Diverse Wolf Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/173704) | Alternative | BOS-based wolf model variety. Verify compatibility with Diverse True Wolves and Dogs (38058). |
+| [Diverse Dragon Priests — Pixie's Creature Series](https://www.nexusmods.com/skyrimspecialedition/mods/105519) | Alternative | BOS-based dragon priest mask/clothing variety. Verify vs Apophysis Dragon Priest Masks (5800). |
+| [Diverse Dragon Priests — Xtudo Optimized Textures](https://www.nexusmods.com/skyrimspecialedition/mods/105713) | Add-on | Optimized textures for Diverse Dragon Priests. Install after base. |
+| [Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/124394) + [Expanded](https://www.nexusmods.com/skyrimspecialedition/mods/154872) | Alternative | Skeleton model replacer + variants. CONFLICT: alternative to Skeleton Replacer HD (52845). Pick one skeleton route. |
 | [TNT - True Nordic Trolls - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/140979) | Baseline | Troll model/texture overhaul. |
 | [Cannibal Draugr on Solstheim](https://www.nexusmods.com/skyrimspecialedition/mods/21238) | Baseline | Bloodmoon-flavored identity. |
 | [Hagraven — New models and Textures](https://www.nexusmods.com/skyrimspecialedition/mods/160407) | Baseline | |
@@ -63,6 +70,8 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Giant Centipedes](https://www.nexusmods.com/skyrimspecialedition/mods/26192) | |
 | [Ogrim](https://www.nexusmods.com/skyrimspecialedition/mods/27243) | |
 | [Ruinachs](https://www.nexusmods.com/skyrimspecialedition/mods/49543) | |
+| [Pigs](https://www.nexusmods.com/skyrimspecialedition/mods/150479) | |
+| [Mammoth Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/69391) | Multiple mammoth variants (woolly, steppe, etc.). ESL-flagged. |
 
 ### Non-Mihail Creature Additions
 
@@ -73,6 +82,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Morrowind Creatures SE](https://www.nexusmods.com/skyrimspecialedition/mods/50435) | |
 | [Ogres SE](https://www.nexusmods.com/skyrimspecialedition/mods/59363) | |
 | [Sea Turtles — Mihail](https://www.nexusmods.com/skyrimspecialedition/mods/122141) | |
+| [Wraiths SE](https://www.nexusmods.com/skyrimspecialedition/mods/47808) | New wraith enemy type. 4thUnknown quality. ESL-flagged. |
 
 ### Additional Species Follow-Ups
 

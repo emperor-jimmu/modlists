@@ -419,6 +419,36 @@ All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)
 | Midnight Sun                                                   |                       | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/163295) |
 | Echoes of Oblivion                                             | AI-Generated Content. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153979) |
 
+#### Undeath — Lichdom Quest Mod
+
+Undeath adds a necromancy-themed questline that lets the player become a Lich. New worldspace, transformation mechanic, perk tree.
+
+**Core mod:**
+
+| Mod | Description | Nexus |
+|-----|-------------|-------|
+| [Undeath Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/6180) | Base quest mod. Requires Dawnguard + Dragonborn. | |
+
+**Lich gameplay overhaul (pick ONE):**
+
+| Mod | Description | Nexus |
+|-----|-------------|-------|
+| [Undeath - Classical Lichdom](https://www.nexusmods.com/skyrimspecialedition/mods/40802) | **Recommended.** Full lich perk tree and progression. 157K UDLs. | |
+| [Undeath - The Ascension](https://www.nexusmods.com/skyrimspecialedition/mods/32960) | Alternative. Lighter overhaul (bugfixes + balance). | |
+| [Undeath Immersive Lichdom SSE](https://www.nexusmods.com/skyrimspecialedition/mods/9223) | Alternative. Different lich mechanical approach. | |
+
+**Required fixes and patches:**
+
+| Mod | Description | Nexus |
+|-----|-------------|-------|
+| [Undeath Camera Fix SE](https://www.nexusmods.com/skyrimspecialedition/mods/52950) | Fixes camera during lich transformation. | Required. |
+| [Undeath Conjuration Absorb Fix](https://www.nexusmods.com/skyrimspecialedition/mods/18762) | Fixes conjuration absorption interaction. | Required. |
+| [Undeath Remastered - Facegen Data Patch](https://www.nexusmods.com/skyrimspecialedition/mods/20046) | Facegen for Undeath NPCs. | Required if NPC overhauls used. |
+| [Undeath GDOS Door Patch](https://www.nexusmods.com/skyrimspecialedition/mods/132038) | GDOS compatibility. | REQUIRED — GDOS is baseline. |
+| [Moon and Star - Undeath Remastered Patch](https://www.nexusmods.com/skyrimspecialedition/mods/82740) | Moon and Star compat. Xtudo. | Install if Moon and Star adopted. |
+
+**MO2 install order (left pane):** Undeath Remastered → lich overhaul → Camera Fix → Absorb Fix → Facegen Patch (if NPC overhauls) → GDOS Door Patch → Moon and Star Patch (if adopted).
+
 #### Lightweight Additions
 
 | Mod                                                                 | Description                                                                            | Nexus                                                               |
