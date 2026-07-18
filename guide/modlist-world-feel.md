@@ -15,7 +15,6 @@ How quickly days pass, whether routine actions consume believable chunks of time
 - **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — High-commitment seasonal branch. Cost: 4× DynDOLOD passes, 4× grass caches, meaningful patch footprint. Only adopt if the project owns that LOD-generation workflow.
 
 ### Alternatives
-- **Dynamic Timescale - Remade** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/141531)) — Environment-aware time shifts.
 - **[Extended Stay - Longer inn](https://www.nexusmods.com/skyrimspecialedition/mods/156)** — Optional longer-stay inn mechanic. Adopt only if the project leans into "living the world."
 - **[Sleep Tight SE](https://www.nexusmods.com/skyrimspecialedition/mods/20680)** — NPC sleep schedule enforcement and sleepwear.
 - **[Sleep Tight - NPCs wear underwear](https://www.nexusmods.com/skyrimspecialedition/mods/87132)** — NPC sleepwear variant without sleep schedule changes.

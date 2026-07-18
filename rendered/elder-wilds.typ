@@ -6361,7 +6361,6 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 === Alternatives
 <immersive-scale-and-world-feel-alternatives>
-- *Dynamic Timescale - Remade* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/141531")[Nexus]) — Environment-aware time shifts.
 - *#link("https://www.nexusmods.com/skyrimspecialedition/mods/156")[Extended Stay - Longer inn]* — Optional longer-stay inn mechanic. Adopt only if the project leans into "living the world."
 - *#link("https://www.nexusmods.com/skyrimspecialedition/mods/20680")[Sleep Tight SE]* — NPC sleep schedule enforcement and sleepwear.
 - *#link("https://www.nexusmods.com/skyrimspecialedition/mods/87132")[Sleep Tight - NPCs wear underwear]* — NPC sleepwear variant without sleep schedule changes.
@@ -10383,7 +10382,7 @@ Enable in #emph[Wrye Bash] → #emph[Bashed Patch] → #emph[Tweakers] only the 
 - *Visuals: Masser/Secunda Size/Speed* — set to 1.0.
 - *Warning: Exterior/Interior Distance To Hostiles* — leave default.
 - *World: Cell Respawn Time* / *Respawn Time (Cleared)* — leave default.
-- *World: Timescale* — set to 20 and never change. *Save-baking warning:* this setting bakes into SSE saves.
+- *World: Timescale* — set to 12 and never change. *Save-baking warning:* this setting bakes into SSE saves.
 
 === Bash Tags
 <bashed-patch--synthesis-configuration-bash-tags>
@@ -10909,7 +10908,7 @@ The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be
 
 - `Bashed Patch` and `Synthesis` both write into same load-order range. Place Synthesis patch last unless a known conflict needs Bashed Patch to win.
 - `SynESLify` *must* be last in its stage.
-- `World: Timescale = 20` bakes into saves — never change on a long-running test save.
+- `World: Timescale = 12` bakes into saves — never change on a long-running test save.
 - `Skyrim-LeveledLoot` and `OWL` overlap: run `OWLLeveledListAddition` first.
 - `AOSISCSoundPatcher` requires both AOS and ISC active.
 - `HP\_NPC\_WIGS\_TO\_HEADPART` before `KS Hairs Bald Helmets Fixer`.
