@@ -297,19 +297,17 @@ All mods in this section are installed into the appropriate `Foundations` sub-se
 
 ---
 
-== Core Framework Baseline → separators: Foundations (parent)
-<foundations-and-compatibility-core-framework-baseline-separators-foundations-parent>
+== Core Framework Baseline
+<foundations-and-compatibility-core-framework-baseline>
 
 Install all core libraries and frameworks upfront — they are non-negotiable dependencies for virtually every mod in the list. Bulk-install prevents missing-master errors and lets every subsequent section work against the real framework stack.
 
-=== SKSE & Scripts → separator: Foundations - SKSE & Scripts
-<foundations-and-compatibility-skse--scripts-separator-foundations-skse--scripts>
-
+=== SKSE & Scripts
+<foundations-and-compatibility-skse--scripts>
 - *SKSE64* — Script extender; required by almost every SKSE plugin. #link("https://www.nexusmods.com/skyrimspecialedition/mods/30379")[Nexus]
 
-=== Core Libraries → separator: Foundations - Core Libraries
-<foundations-and-compatibility-core-libraries-separator-foundations-core-libraries>
-
+=== Core Libraries
+<foundations-and-compatibility-core-libraries>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -397,9 +395,8 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 
 *Campfire users:* SSSO3 must overwrite Campfire's files. Use the Campfire patch included with SSSO3 and let SSSO3 win file conflicts in MO2.
 
-=== SkyPatcher And SkyPatched Mods → separator: Foundations - Core Libraries
-<foundations-and-compatibility-skypatcher-and-skypatched-mods-separator-foundations-core-libraries>
-
+=== SkyPatcher And SkyPatched Mods
+<foundations-and-compatibility-skypatcher-and-skypatched-mods>
 *SkyPatcher* is an SKSE plugin that patches vanilla records at runtime from INI-style configuration files rather than traditional ESP plugins. No winner-loser override chain, no per-pair patches for the records it covers.
 
 A *"SkyPatched"* variant ships record changes as SkyPatcher configs instead of an ESP. Assets (meshes, textures, scripts) still install in MO2's left pane, but the plugin slot is replaced by files under `SKSE/Plugins/SkyPatcher/`.
@@ -424,9 +421,8 @@ A *"SkyPatched"* variant ships record changes as SkyPatcher configs instead of a
 - `Diverse 4thUnknown Dragons` — uses SkyPatcher for combat-mod compatibility (→ @creatures-enemies--creatures)
 - `Patchifier` Synthesis patcher generates SkyPatcher patches (→ @performance-patches-bashed-patch--synthesis-configuration)
 
-=== Mesh & Texture Fixes → separator: Foundations - Mesh & Texture Fixes
-<foundations-and-compatibility-mesh--texture-fixes-separator-foundations-mesh--texture-fixes>
-
+=== Mesh & Texture Fixes
+<foundations-and-compatibility-mesh--texture-fixes>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -442,8 +438,8 @@ A *"SkyPatched"* variant ships record changes as SkyPatcher configs instead of a
 
 ---
 
-== Official Masters Cleanup → separator: Foundations (parent)
-<foundations-and-compatibility-official-masters-cleanup-separator-foundations-parent>
+== Official Masters Cleanup
+<foundations-and-compatibility-official-masters-cleanup>
 
 Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAutoClean` on each file individually, collect cleaned `.esm` files into a `Cleaned Vanilla Masters` MO2 mod, and restore originals from `xEdit Backups` back into `Data\`.
 
@@ -473,8 +469,8 @@ Clean all six-plus vanilla masters before installing any mod. Use `xEditQuickAut
 
 ---
 
-== Patching Technique And Strategy → separator: Foundations (parent)
-<foundations-and-compatibility-patching-technique-and-strategy-separator-foundations-parent>
+== Patching Technique And Strategy
+<foundations-and-compatibility-patching-technique-and-strategy>
 
 Adopt the canonical `xEdit` mod-by-mod patching workflow: install one mod at a time, run `xEdit` in `-veryquickshowconflicts` mode, resolve only new conflicts, use per-pair patches and `ModGroups`. Reserve `Bashed Patch` and `Synthesis` for the categories they genuinely own.
 
@@ -536,8 +532,8 @@ Always use `\<new file>.esp [Template] ESL` for patches. Never manually re-flag 
 
 ---
 
-== ESP To ESL Conversion → separator: Foundations (parent)
-<foundations-and-compatibility-esp-to-esl-conversion-separator-foundations-parent>
+== ESP To ESL Conversion
+<foundations-and-compatibility-esp-to-esl-conversion>
 
 Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by moving into the 4096 light-plugin address space.
 
@@ -599,9 +595,8 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 ---
 
-== Targeted Bugfix Mods → separator: Foundations - Targeted Bugfixes
-<foundations-and-compatibility-targeted-bugfix-mods-separator-foundations-targeted-bugfixes>
-
+== Targeted Bugfix Mods
+<foundations-and-compatibility-targeted-bugfix-mods>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -648,7 +643,7 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 
 - *Alt-Tab Stuck Key Fix* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/148466")[Nexus]) — Prevents stuck modifier keys after alt-tabbing. Optional fix, evaluate if alt-tab issues arise during testing.
 - *I'm Walkin' Here NG with Pets* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/122516")[Nexus]) — Ally/pet body-blocking fix.
-- *Bard Instrumentals Mostly - Sing Rarely* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/10927")[Nexus]) — Repetitive tavern singing. Not needed — other bard mods cover this. → separator: `Audio - SFX & Ambience`
+- *Bard Instrumentals Mostly - Sing Rarely* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/10927")[Nexus]) — Repetitive tavern singing. Not needed — other bard mods cover this.
 
 
 
@@ -723,9 +718,8 @@ All items in this section belong to the `Graphics - PGPatcher` MO2 separator unl
 
 ---
 
-== PGPatcher Workflow → separator: Graphics - PGPatcher
-<pgpatcher-pgpatcher-workflow-separator-graphics-pgpatcher>
-
+== PGPatcher Workflow
+<pgpatcher-pgpatcher-workflow>
 PGPatcher is a post-installation patcher that generates parallax and PBR-compatible meshes from the installed texture and mesh stack. It must run after the main texture, mesh, parallax, and PBR candidate set is mostly chosen so it works against a stable asset baseline.
 
 #table(
@@ -772,9 +766,8 @@ All mods in this section belong to the `Graphics - Community Shaders` MO2 separa
 
 ---
 
-== Community Shaders Core Setup → separator: Graphics - Community Shaders
-<community-shaders-community-shaders-core-setup-separator-graphics-community-shaders>
-
+== Community Shaders Core Setup
+<community-shaders-community-shaders-core-setup>
 This section owns the graphics-framework decision for the shader-first visual stack. Build modern visuals around `Community Shaders`, then layer materials, lighting, weather, water, and distant detail on top.
 
 === Baseline
@@ -798,9 +791,8 @@ This section owns the graphics-framework decision for the shader-first visual st
 
 ---
 
-== Community Shaders Add-Ons And Required Features → separator: Graphics - Community Shaders
-<community-shaders-community-shaders-add-ons-and-required-features-separator-graphics-community-shaders>
-
+== Community Shaders Add-Ons And Required Features
+<community-shaders-community-shaders-add-ons-and-required-features>
 How aggressive the first CS feature layer should be — improve shadowing, wetness, water response, and material depth without front-loading the full performance cost.
 
 === Feature Tiers
@@ -830,7 +822,7 @@ Install the CS main download (v1.7+) and enable modules via FOMOD. Install optio
 
 - *Skylighting* — Sky-driven ambient occlusion. Pairs cleanly with the conservative tier. Worth including for authentic grim-dark look.
 - *Skyrim Upscaler - DLSS FSR2 XeSS* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/80343")[Nexus]) — Only if real performance testing proves it's needed.
-- *Embers XD* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/37085")[Nexus]) — The fire-and-ember answer (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements. → separator: `Graphics - Lighting`
+- *Embers XD* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/37085")[Nexus]) — The fire-and-ember answer (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements.
 
 Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SSGI`, `Skylighting`, `Terrain Helper`, `Terrain Blending`, `Terrain Variation`, `Upscaling`, `Wetness Effects`.
 
@@ -914,9 +906,8 @@ Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SS
 
 ---
 
-== Parallax Framework Dependencies → separator: Graphics - Community Shaders
-<community-shaders-parallax-framework-dependencies-separator-graphics-community-shaders>
-
+== Parallax Framework Dependencies
+<community-shaders-parallax-framework-dependencies>
 Auto Parallax and Complex Parallax Materials form the parallax rendering layer bridging CS parallax support with mesh and texture mods downstream.
 
 === Baseline
@@ -932,9 +923,8 @@ Auto Parallax and Complex Parallax Materials form the parallax rendering layer b
 
 ---
 
-== Physically Based Rendering (PBR) Support → separator: Graphics - Community Shaders
-<community-shaders-physically-based-rendering-pbr-support-separator-graphics-community-shaders>
-
+== Physically Based Rendering (PBR) Support
+<community-shaders-physically-based-rendering-pbr-support>
 PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions.
 
 === Baseline — Balanced PBR Route
@@ -1024,9 +1014,8 @@ All mods in this section belong to the `Graphics - Textures & Meshes` MO2 separa
 
 ---
 
-== Mesh Improvements And Parallax Support → separator: Graphics - Textures & Meshes
-<textures--meshes-mesh-improvements-and-parallax-support-separator-graphics-textures--meshes>
-
+== Mesh Improvements And Parallax Support
+<textures--meshes-mesh-improvements-and-parallax-support>
 Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it.
 
 *⏱ Install order:* Core foundation → doors & walls → locks → furniture & city detail → mesh replacers → environment props → alternatives. Follow the grouping below.
@@ -1041,7 +1030,7 @@ Improve shape quality and silhouette readability without creating an unmaintaina
   [*Description*],
   [*Nexus*],
   [Static Mesh Improvement Mod (SMIM)],
-  [Core mesh foundation. → separator: `Graphics - Community Shaders`],
+  [Core mesh foundation.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/659")[Nexus]],
   [Unofficial Material Fix],
   [Corrects material records for Community Shaders PBR. Install after SMIM.],
@@ -1260,9 +1249,8 @@ All mesh-only, no ESP.
 
 ---
 
-== Furniture, Clutter, And Item Replacers → separator: Graphics - Textures & Meshes
-<textures--meshes-furniture-clutter-and-item-replacers-separator-graphics-textures--meshes>
-
+== Furniture, Clutter, And Item Replacers
+<textures--meshes-furniture-clutter-and-item-replacers>
 Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy city series — Rally's, Arc's, and Kanjs author lines plus standalone BOS replacers. No cell-record edits; all are BOS-based or pure replacers.
 
 === Rally's, Arc's, And Snazzy Clutter
@@ -1415,9 +1403,8 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 
 ---
 
-== Unique Entity Replacers → separator: Graphics - Textures & Meshes
-<textures--meshes-unique-entity-replacers-separator-graphics-textures--meshes>
-
+== Unique Entity Replacers
+<textures--meshes-unique-entity-replacers>
 Model and texture upgrades for unique named entities and one-of-a-kind objects — characters, corpses, set-piece models not covered by broad replay packs. Closes visual gaps without swelling into full NPC beautification.
 
 #table(
@@ -1442,9 +1429,8 @@ Model and texture upgrades for unique named entities and one-of-a-kind objects �
 
 ---
 
-== Blood, Decals, And Combat Visual Effects → separator: Graphics - Textures & Meshes
-<textures--meshes-blood-decals-and-combat-visual-effects-separator-graphics-textures--meshes>
-
+== Blood, Decals, And Combat Visual Effects
+<textures--meshes-blood-decals-and-combat-visual-effects>
 In-world visual effects during combat: blood pools, persistent decals, lingering marks. Separate from lighting/weather (ambient worldstate) and from hit-reaction/stagger (→ `Third-Person Gameplay`, → `Expanded Systems`).
 
 #table(
@@ -1491,9 +1477,8 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 
 ---
 
-== Book and Paper Visual Overhauls → separator: Graphics - Textures & Meshes
-<textures--meshes-book-and-paper-visual-overhauls-separator-graphics-textures--meshes>
-
+== Book and Paper Visual Overhauls
+<textures--meshes-book-and-paper-visual-overhauls>
 Visual upgrades for books, notes, and paper — the most-read world objects. Texture and mesh improvements make reading feel more tactile and library exploration more rewarding without touching gameplay records.
 
 *⏱ Install order:* Book Covers Skyrim → Enhanced Textures → SkyPatched → Lost Library (optional content).
@@ -1531,9 +1516,8 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 
 ---
 
-== Optional Texture And Mesh Replacements → separator: Graphics - Textures & Meshes
-<textures--meshes-optional-texture-and-mesh-replacements-separator-graphics-textures--meshes>
-
+== Optional Texture And Mesh Replacements
+<textures--meshes-optional-texture-and-mesh-replacements>
 Small texture/mesh replacers that don't fit the main topic sections above. Each is a single-author or single-object upgrade. Adopt selectively based on which objects actually draw the eye in regular play.
 
 #table(
@@ -1676,9 +1660,8 @@ All mods in this section belong to the `Graphics - Lighting` MO2 separator unles
 
 ---
 
-== Lighting Overhaul Strategy → separator: Graphics - Lighting
-<lighting-lighting-overhaul-strategy-separator-graphics-lighting>
-
+== Lighting Overhaul Strategy
+<lighting-lighting-overhaul-strategy>
 Build lighting as a coherent layer supporting the shader-first visual direction, stronger world scale, and third-person readability. Interior mood matters, but so do readability, compatibility cost, and coherence with the final weather route. The baseline is a Community Shaders-native stack with much lower patch burden than the LUX family.
 
 *⏱ Install order:* SLT → CS Light + True Light + WSU → Based Lighting Configs → Ambient Templates → Helios → Embers XD → Luminous Atronachs.
@@ -1779,9 +1762,8 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 
 All mods in this section belong to the `Graphics - Weather & Water` MO2 separator unless noted.
 
-== Weather And Atmosphere → separator: Graphics - Weather & Water
-<weather--water-weather-and-atmosphere-separator-graphics-weather--water>
-
+== Weather And Atmosphere
+<weather--water-weather-and-atmosphere>
 Weather should be chosen as part of the Community Shaders presentation layer, not as an isolated plugin choice. The target is a grounded but modern visual tone that preserves forest, mountain, and travel readability in third person.
 
 *Primary candidates — test side-by-side:*
@@ -1863,9 +1845,8 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 
 ---
 
-== Water Visuals → separator: Graphics - Weather & Water
-<weather--water-water-visuals-separator-graphics-weather--water>
-
+== Water Visuals
+<weather--water-water-visuals>
 Treat water as a full visual stack: base water look, CS water features, mesh support, foam, waterfalls. Target: cold, readable, grounded water that holds up in motion during travel.
 
 === Baseline
@@ -1955,9 +1936,8 @@ Evaluate these only after the main water base is selected.
 
 ---
 
-== Sky, Stars, And Auroras → separator: Graphics - Weather & Water
-<weather--water-sky-stars-and-auroras-separator-graphics-weather--water>
-
+== Sky, Stars, And Auroras
+<weather--water-sky-stars-and-auroras>
 The cosmic visual layer: night-sky stars, aurora rendering, sky-dome enhancements. Kept separate from weather because sky-dome work is about clear-night rendering and long-horizon reads, not precipitation and overcast coverage.
 
 === Baseline
@@ -2035,9 +2015,8 @@ Keep the discipline-first route alive if the weather mod's bundled star/sky text
 
 All mods in this section belong to the `Graphics - Terrain & Flora` MO2 separator unless noted.
 
-== Terrain, Roads, And Snow → separator: Graphics - Terrain & Flora
-<terrain--flora-terrain-roads-and-snow-separator-graphics-terrain--flora>
-
+== Terrain, Roads, And Snow
+<terrain--flora-terrain-roads-and-snow>
 Treat terrain, roads, and snow as one connected presentation layer. Must stay coherent with Community Shaders, PBR support, rock meshes, weather, and later LOD generation.
 
 === Baseline
@@ -2173,9 +2152,8 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 ---
 
-== Flora Visuals → separator: Graphics - Terrain & Flora
-<terrain--flora-flora-visuals-separator-graphics-terrain--flora>
-
+== Flora Visuals
+<terrain--flora-flora-visuals>
 Flora is the ground-level readability layer between terrain materials and tree coverage. It should improve grass density, wildland texture, and plant variety without making traversal unreadable or creating constant patch work.
 
 === Grass
@@ -2336,9 +2314,8 @@ Flora is the ground-level readability layer between terrain materials and tree c
 
 ---
 
-== Tree Overhauls For Dense Forests → separator: Graphics - Terrain & Flora
-<terrain--flora-tree-overhauls-for-dense-forests-separator-graphics-terrain--flora>
-
+== Tree Overhauls For Dense Forests
+<terrain--flora-tree-overhauls-for-dense-forests>
 Trees are the main large-scale world-shaping layer for wilderness mood, canopy silhouette, and perceived regional scale.
 
 === Baseline
@@ -2411,9 +2388,8 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 
 All mods in this section belong to the `Graphics - Characters & Creatures` MO2 separator unless noted.
 
-== Character, Skin, And Creature Visuals → separator: Graphics - Characters & Creatures
-<characters--creatures-character-skin-and-creature-visuals-separator-graphics-characters--creatures>
-
+== Character, Skin, And Creature Visuals
+<characters--creatures-character-skin-and-creature-visuals>
 Baseline visual treatment for player bodies, skin textures, and common creature visuals before NPC-specific overhauls are chosen. Target: grounded modern look that holds up in third person without drifting into overly glossy, doll-like, or hyper-stylized presentation.
 
 === Body Bases And Skins
@@ -2637,9 +2613,8 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 ---
 
-== Hair, Eyes, And Beards → separator: Graphics - Characters & Creatures
-<characters--creatures-hair-eyes-and-beards-separator-graphics-characters--creatures>
-
+== Hair, Eyes, And Beards
+<characters--creatures-hair-eyes-and-beards>
 Per-character face assets: hairstyles, eye textures, and beard options. Ensures character close-ups match the grim-dark tone without pulling in full NPC face-gen overhauls.
 
 #table(
@@ -2701,9 +2676,8 @@ Keep the beard decision minimal; vanilla beards work well with the chosen body a
 
 ---
 
-== Skeleton And Bone Replacers → separator: Graphics - Characters & Creatures
-<characters--creatures-skeleton-and-bone-replacers-separator-graphics-characters--creatures>
-
+== Skeleton And Bone Replacers
+<characters--creatures-skeleton-and-bone-replacers>
 Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skeleton models in dungeons, Nordic ruins, draugr crypts, dragon priest rooms. Kept separate from the rigged skeleton baseline in → `Animations`.
 
 #table(
@@ -2741,9 +2715,8 @@ Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skelet
 
 All items in this section belong to the `Graphics - LOD & Distant Detail` MO2 separator unless noted.
 
-== LOD Generation And Distant Detail → separator: Graphics - LOD & Distant Detail
-<lod--distant-detail-lod-generation-and-distant-detail-separator-graphics-lod--distant-detail>
-
+== LOD Generation And Distant Detail
+<lod--distant-detail-lod-generation-and-distant-detail>
 Distant detail determines whether `Elder Wilds` feels large and coherent during travel instead of collapsing into obvious pop-in and flat backgrounds.
 
 === Baseline
@@ -2980,9 +2953,8 @@ All mods in this section belong to one of the three UI separators as noted per s
 
 ---
 
-== UI Framework Prerequisites → separator: UI - Framework & HUD
-<modernized-ui-ui-framework-prerequisites-separator-ui-framework--hud>
-
+== UI Framework Prerequisites
+<modernized-ui-ui-framework-prerequisites>
 The base menu and interface framework the rest of the UI stack builds on.
 
 === Baseline
@@ -3042,9 +3014,8 @@ The base menu and interface framework the rest of the UI stack builds on.
 
 ---
 
-== HUD Overhaul → separator: UI - Framework & HUD
-<modernized-ui-hud-overhaul-separator-ui-framework--hud>
-
+== HUD Overhaul
+<modernized-ui-hud-overhaul>
 Health, stamina, magicka, target readability, and permanent interface structure during ordinary play.
 
 === Baseline
@@ -3131,9 +3102,8 @@ Health, stamina, magicka, target readability, and permanent interface structure 
 
 ---
 
-== Inventory And Item Card Improvements → separator: UI - Inventory & Items
-<modernized-ui-inventory-and-item-card-improvements-separator-ui-inventory--items>
-
+== Inventory And Item Card Improvements
+<modernized-ui-inventory-and-item-card-improvements>
 === Baseline
 <modernized-ui-baseline-3>
 
@@ -3237,9 +3207,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Map Improvements → separator: UI - Map, Dialogue, Menus
-<modernized-ui-map-improvements-separator-ui-map-dialogue-menus>
-
+== Map Improvements
+<modernized-ui-map-improvements>
 === Baseline
 <modernized-ui-baseline-4>
 
@@ -3306,9 +3275,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Magic And Journal Improvements → separator: UI - Map, Dialogue, Menus
-<modernized-ui-magic-and-journal-improvements-separator-ui-map-dialogue-menus>
-
+== Magic And Journal Improvements
+<modernized-ui-magic-and-journal-improvements>
 === Baseline
 <modernized-ui-baseline-5>
 
@@ -3355,9 +3323,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Dialogue UI Improvements → separator: UI - Map, Dialogue, Menus
-<modernized-ui-dialogue-ui-improvements-separator-ui-map-dialogue-menus>
-
+== Dialogue UI Improvements
+<modernized-ui-dialogue-ui-improvements>
 === Baseline
 <modernized-ui-baseline-6>
 
@@ -3412,9 +3379,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Controller-Friendly UI Support → separator: UI - Framework & HUD
-<modernized-ui-controller-friendly-ui-support-separator-ui-framework--hud>
-
+== Controller-Friendly UI Support
+<modernized-ui-controller-friendly-ui-support>
 === Baseline
 <modernized-ui-baseline-7>
 
@@ -3460,9 +3426,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== UI Scaling For Ultrawide And High Resolution → separator: UI - Framework & HUD
-<modernized-ui-ui-scaling-for-ultrawide-and-high-resolution-separator-ui-framework--hud>
-
+== UI Scaling For Ultrawide And High Resolution
+<modernized-ui-ui-scaling-for-ultrawide-and-high-resolution>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -3479,9 +3444,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Compass, Markers, And Minimal HUD → separator: UI - Framework & HUD
-<modernized-ui-compass-markers-and-minimal-hud-separator-ui-framework--hud>
-
+== Compass, Markers, And Minimal HUD
+<modernized-ui-compass-markers-and-minimal-hud>
 === Baseline
 <modernized-ui-baseline-8>
 
@@ -3518,9 +3482,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Crafting Menu Improvements → separator: UI - Inventory & Items
-<modernized-ui-crafting-menu-improvements-separator-ui-inventory--items>
-
+== Crafting Menu Improvements
+<modernized-ui-crafting-menu-improvements>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -3537,9 +3500,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Loading Screens → separator: UI - Map, Dialogue, Menus
-<modernized-ui-loading-screens-separator-ui-map-dialogue-menus>
-
+== Loading Screens
+<modernized-ui-loading-screens>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -3553,9 +3515,8 @@ Add descriptive text to inventory item cards for better readability. All by the 
 
 ---
 
-== Optional HUD → separator: UI - Framework & HUD
-<modernized-ui-optional-hud-separator-ui-framework--hud>
-
+== Optional HUD
+<modernized-ui-optional-hud>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -3587,9 +3548,8 @@ All mods in this section belong to one of the five animation separators as noted
 
 ---
 
-== Animation Framework Landscape — What Goes With What → separator: Animations - Framework
-<animations-and-movement-animation-framework-landscape-what-goes-with-what-separator-animations-framework>
-
+== Animation Framework Landscape — What Goes With What
+<animations-and-movement-animation-framework-landscape-what-goes-with-what>
 Skyrim's animation stack has four distinct layers. Each layer has exactly one active owner. Understanding what replaces what, what depends on what, and what is mutually exclusive is the single most important prerequisite to building a stable animation load order.
 
 === The Four Layers
@@ -3882,9 +3842,8 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 ---
 
-== Pandora Framework And Prerequisites → separator: Animations - Framework
-<animations-and-movement-pandora-framework-and-prerequisites-separator-animations-framework>
-
+== Pandora Framework And Prerequisites
+<animations-and-movement-pandora-framework-and-prerequisites>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -3912,9 +3871,8 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 ---
 
-== Skeleton And Behavior Prerequisites → separator: Animations - Framework
-<animations-and-movement-skeleton-and-behavior-prerequisites-separator-animations-framework>
-
+== Skeleton And Behavior Prerequisites
+<animations-and-movement-skeleton-and-behavior-prerequisites>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -3940,9 +3898,8 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 
 ---
 
-== Parkour, Climbing, And Free-Form Movement → separator: Animations - Interactions & Traversal
-<animations-and-movement-parkour-climbing-and-free-form-movement-separator-animations-interactions--traversal>
-
+== Parkour, Climbing, And Free-Form Movement
+<animations-and-movement-parkour-climbing-and-free-form-movement>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4007,9 +3964,8 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 ---
 
-== Locomotion → separator: Animations - Movement & Idles
-<animations-and-movement-locomotion-separator-animations-movement--idles>
-
+== Locomotion
+<animations-and-movement-locomotion>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4080,9 +4036,8 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 ---
 
-== Combat Animation Packs → separator: Animations - Combat
-<animations-and-movement-combat-animation-packs-separator-animations-combat>
-
+== Combat Animation Packs
+<animations-and-movement-combat-animation-packs>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4186,9 +4141,8 @@ All three are OAR-based and work under Pandora. Do not install together without 
 
 ---
 
-== ADXP/MCO Install Workflow Reference → separator: Animations - Combat
-<animations-and-movement-adxpmco-install-workflow-reference-separator-animations-combat>
-
+== ADXP/MCO Install Workflow Reference
+<animations-and-movement-adxpmco-install-workflow-reference>
 External tutorial baseline: #link("https://www.youtube.com/watch?v=YeS6Pwnv3b8")[Capt. Panda — STEP BY STEP GUIDE on How to Install ADXP MCO for Skyrim SE and AE (MO2)]. Captures the canonical ADXP/MCO install flow; references below use the Elder Wilds stack (Pandora for behaviour generation, OAR for conditional selection).
 
 === Tutorial Mod List — Elder Wilds Status
@@ -4258,9 +4212,8 @@ External tutorial baseline: #link("https://www.youtube.com/watch?v=YeS6Pwnv3b8")
 
 ---
 
-== Non-Combat Interaction Animations → separator: Animations - Interactions & Traversal
-<animations-and-movement-non-combat-interaction-animations-separator-animations-interactions--traversal>
-
+== Non-Combat Interaction Animations
+<animations-and-movement-non-combat-interaction-animations>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4349,9 +4302,8 @@ External tutorial baseline: #link("https://www.youtube.com/watch?v=YeS6Pwnv3b8")
 
 ---
 
-== Conditional Animation Systems → separator: Animations - Framework
-<animations-and-movement-conditional-animation-systems-separator-animations-framework>
-
+== Conditional Animation Systems
+<animations-and-movement-conditional-animation-systems>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4377,9 +4329,8 @@ External tutorial baseline: #link("https://www.youtube.com/watch?v=YeS6Pwnv3b8")
 
 ---
 
-== Camera-Aware Animation Support → separator: Animations - Framework
-<animations-and-movement-camera-aware-animation-support-separator-animations-framework>
-
+== Camera-Aware Animation Support
+<animations-and-movement-camera-aware-animation-support>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4393,9 +4344,8 @@ External tutorial baseline: #link("https://www.youtube.com/watch?v=YeS6Pwnv3b8")
 
 ---
 
-== Equipment Display Framework → separator: Animations - Framework
-<animations-and-movement-equipment-display-framework-separator-animations-framework>
-
+== Equipment Display Framework
+<animations-and-movement-equipment-display-framework>
 Equipment visibility, sheathing positions, and draw-sheathe animations. Builds on XPMSSE for third-person gamepad parity.
 
 #table(
@@ -4426,9 +4376,8 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 
 ---
 
-== Creature Animations → separator: Animations - Creatures
-<animations-and-movement-creature-animations-separator-animations-creatures>
-
+== Creature Animations
+<animations-and-movement-creature-animations>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4455,9 +4404,8 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 
 ---
 
-== Animation Conflict Management → separator: Animations - Framework
-<animations-and-movement-animation-conflict-management-separator-animations-framework>
-
+== Animation Conflict Management
+<animations-and-movement-animation-conflict-management>
 Strict ownership: one clear owner per layer.
 
 === Owners
@@ -4500,9 +4448,8 @@ All mods in this section belong to one of the three third-person separators as n
 
 ---
 
-== Third-Person Camera Framework → separator: Third-Person - Camera & Movement
-<third-person-gameplay-third-person-camera-framework-separator-third-person-camera--movement>
-
+== Third-Person Camera Framework
+<third-person-gameplay-third-person-camera-framework>
 === Baseline
 <third-person-gameplay-baseline>
 - *SmoothCam* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/41252")[Nexus]) — Main third-person camera framework.
@@ -4521,9 +4468,8 @@ All mods in this section belong to one of the three third-person separators as n
 
 ---
 
-== Camera Presets And Shoulder Switching → separator: Third-Person - Camera & Movement
-<third-person-gameplay-camera-presets-and-shoulder-switching-separator-third-person-camera--movement>
-
+== Camera Presets And Shoulder Switching
+<third-person-gameplay-camera-presets-and-shoulder-switching>
 Restrained centered-to-light-offset baseline. Shoulder switching is a support feature for visibility problems, not the main camera identity.
 
 === Risks & Compatibility
@@ -4533,18 +4479,16 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-== True Directional Movement → separator: Third-Person - Camera & Movement
-<third-person-gameplay-true-directional-movement-separator-third-person-camera--movement>
-
+== True Directional Movement
+<third-person-gameplay-true-directional-movement>
 - *True Directional Movement - Modernized Third Person Gameplay* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/51614")[Nexus]) — Modern 360-degree character-relative movement.
 - Core value: freer facing, cleaner traversal, better animation-stack alignment.
 - May feel awkward in tight interiors, stairs, or precision positioning.
 
 ---
 
-== Target Lock And Targeting Behavior → separator: Third-Person - Combat & Targeting
-<third-person-gameplay-target-lock-and-targeting-behavior-separator-third-person-combat--targeting>
-
+== Target Lock And Targeting Behavior
+<third-person-gameplay-target-lock-and-targeting-behavior>
 - *TDM* as the targeting-behavior owner. Keep lock-on restrained — optional combat-readability tool, not permanent default.
 - *TrueHUD* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/62775")[Nexus]) — Optional feedback companion. Add only if testing shows material improvement.
 
@@ -4555,9 +4499,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-== Dodge, Sprint, And Movement Responsiveness → separator: Third-Person - Camera & Movement
-<third-person-gameplay-dodge-sprint-and-movement-responsiveness-separator-third-person-camera--movement>
-
+== Dodge, Sprint, And Movement Responsiveness
+<third-person-gameplay-dodge-sprint-and-movement-responsiveness>
 === Baseline
 <third-person-gameplay-baseline-2>
 - *TK Dodge RE - Script Free* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/56956")[Nexus]) — First dodge candidate. Tactical repositioning, not combat pacing center.
@@ -4569,9 +4512,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-== Hit Reactions, Stagger, And Impact Feedback → separator: Third-Person - Combat & Targeting
-<third-person-gameplay-hit-reactions-stagger-and-impact-feedback-separator-third-person-combat--targeting>
-
+== Hit Reactions, Stagger, And Impact Feedback
+<third-person-gameplay-hit-reactions-stagger-and-impact-feedback>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4590,9 +4532,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-== Third-Person Combat Systems → separator: Third-Person - Combat & Targeting
-<third-person-gameplay-third-person-combat-systems-separator-third-person-combat--targeting>
-
+== Third-Person Combat Systems
+<third-person-gameplay-third-person-combat-systems>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4657,9 +4598,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-== Crosshair And Aiming Behavior → separator: Third-Person - Combat & Targeting
-<third-person-gameplay-crosshair-and-aiming-behavior-separator-third-person-combat--targeting>
-
+== Crosshair And Aiming Behavior
+<third-person-gameplay-crosshair-and-aiming-behavior>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4675,9 +4615,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-== Horse Camera And Mounted Controls → separator: Third-Person - Mounted
-<third-person-gameplay-horse-camera-and-mounted-controls-separator-third-person-mounted>
-
+== Horse Camera And Mounted Controls
+<third-person-gameplay-horse-camera-and-mounted-controls>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -4703,9 +4642,8 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
-== Third-Person Interactions: Lockpicking → separator: Third-Person - Combat & Targeting
-<third-person-gameplay-third-person-interactions-lockpicking-separator-third-person-combat--targeting>
-
+== Third-Person Interactions: Lockpicking
+<third-person-gameplay-third-person-interactions-lockpicking>
 Gamepad-accessible lockpicking that works entirely in third-person without mouse input. Required by the design directive — every interaction must work in third-person with a gamepad.
 
 #table(
@@ -4792,9 +4730,8 @@ Part of the @expanded-systems-expanded-systems section.
 
 ---
 
-== Character Creation And Starting Choices → separator: Expanded Systems - Character & Progression
-<character--progression-character-creation-and-starting-choices-separator-expanded-systems-character--progression>
-
+== Character Creation And Starting Choices
+<character--progression-character-creation-and-starting-choices>
 How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or a configurable route. The decision should improve replayability and roleplay expression without pre-answering later race, progression, religion, survival, or follower choices.
 
 #table(
@@ -4869,9 +4806,8 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 
 ---
 
-== Race Overhauls → separator: Expanded Systems - Character & Progression
-<character--progression-race-overhauls-separator-expanded-systems-character--progression>
-
+== Race Overhauls
+<character--progression-race-overhauls>
 How race traits shape long-term character identity. Choose before perks, magic, and religion build on top of it.
 
 #table(
@@ -4926,9 +4862,8 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 
 ---
 
-== Standing Stones → separator: Expanded Systems - Character & Progression
-<character--progression-standing-stones-separator-expanded-systems-character--progression>
-
+== Standing Stones
+<character--progression-standing-stones>
 How standing stones and birthsigns provide ongoing passive identity. Judge together with race pick so the progression baseline stays coherent.
 
 #table(
@@ -4982,9 +4917,8 @@ How standing stones and birthsigns provide ongoing passive identity. Judge toget
 
 ---
 
-== Character Progression Mechanics → separator: Expanded Systems - Character & Progression
-<character--progression-character-progression-mechanics-separator-expanded-systems-character--progression>
-
+== Character Progression Mechanics
+<character--progression-character-progression-mechanics>
 Supporting progression layers that govern how stats and skills grow over time.
 
 > All RiS mods require SKSE. Check individual mod pages for specific dependencies.
@@ -5012,9 +4946,8 @@ Supporting progression layers that govern how stats and skills grow over time.
 
 ---
 
-== Character Traits And Identity Hooks → separator: Expanded Systems - Character & Progression
-<character--progression-character-traits-and-identity-hooks-separator-expanded-systems-character--progression>
-
+== Character Traits And Identity Hooks
+<character--progression-character-traits-and-identity-hooks>
 Opt-in character-defining quirks shaping a run from the start without replacing the broader progression stack. Goal: stronger roleplay identity and replayability, not a giant second character-build framework.
 
 #table(
@@ -5047,9 +4980,8 @@ Opt-in character-defining quirks shaping a run from the start without replacing 
 
 ---
 
-== Religion Or Roleplay Systems → separator: Expanded Systems - Character & Progression
-<character--progression-religion-or-roleplay-systems-separator-expanded-systems-character--progression>
-
+== Religion Or Roleplay Systems
+<character--progression-religion-or-roleplay-systems>
 How much explicit spiritual identity and day-to-day roleplay texture `Elder Wilds` wants.
 
 #table(
@@ -5087,9 +5019,8 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 
 ---
 
-== Race-Specific Overhauls → separator: Expanded Systems - Character & Progression
-<character--progression-race-specific-overhauls-separator-expanded-systems-character--progression>
-
+== Race-Specific Overhauls
+<character--progression-race-specific-overhauls>
 Dedicated overhauls for vampire, werewolf, and shout gameplay — three character-identity systems vanilla leaves shallow. These complete the EnaiRim suite begun with `Andromeda` (standing stones). All three are by EnaiSiaion, designed to work together, and require no cross-patching.
 
 #table(
@@ -5176,9 +5107,8 @@ Dedicated overhauls for vampire, werewolf, and shout gameplay — three characte
 
 ---
 
-== Train And Study Systems → separator: Expanded Systems - Character & Progression
-<character--progression-train-and-study-systems-separator-expanded-systems-character--progression>
-
+== Train And Study Systems
+<character--progression-train-and-study-systems>
 Training and study utilities for off-combat skill progression.
 
 #table(
@@ -5200,9 +5130,8 @@ Training and study utilities for off-combat skill progression.
 
 ---
 
-== Experience and Leveling → separator: Expanded Systems - Character & Progression
-<character--progression-experience-and-leveling-separator-expanded-systems-character--progression>
-
+== Experience and Leveling
+<character--progression-experience-and-leveling>
 How the player gains levels and skill points. Instead of vanilla sleep-to-level, use Experience (discovery-based leveling) paired with Static Skill Leveling Rewritten (cooldown-gated skill advancement) for progression earned through exploration and deliberate practice.
 
 #table(
@@ -5317,9 +5246,8 @@ Part of the @expanded-systems-expanded-systems section.
 
 ---
 
-== Perk Overhaul Compatibility → separator: Expanded Systems - Magic & Perks
-<magic--perks-perk-overhaul-compatibility-separator-expanded-systems-magic--perks>
-
+== Perk Overhaul Compatibility
+<magic--perks-perk-overhaul-compatibility>
 How much rules density and specialization pressure the list actually wants once race and standing-stone choices are in place.
 
 #table(
@@ -5352,9 +5280,8 @@ How much rules density and specialization pressure the list actually wants once 
 
 ---
 
-== Magic System Expansion → separator: Expanded Systems - Magic & Perks
-<magic--perks-magic-system-expansion-separator-expanded-systems-magic--perks>
-
+== Magic System Expansion
+<magic--perks-magic-system-expansion>
 How broad, readable, and build-defining magic should feel once race, standing-stone, and perk baseline are in place.
 
 #table(
@@ -5420,9 +5347,8 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 ---
 
-== Stealth And Detection → separator: Expanded Systems - Magic & Perks
-<magic--perks-stealth-and-detection-separator-expanded-systems-magic--perks>
-
+== Stealth And Detection
+<magic--perks-stealth-and-detection>
 How Skyrim's detection system should be recalibrated for modern stealth mechanics without replacing the existing perk, magic, and combat layers.
 
 #table(
@@ -5469,9 +5395,8 @@ Part of the @expanded-systems-expanded-systems section.
 
 ---
 
-== Survival Systems → separator: Expanded Systems - Survival & Needs
-<survival--needs-survival-systems-separator-expanded-systems-survival--needs>
-
+== Survival Systems
+<survival--needs-survival-systems>
 How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, weather, disease, and wilderness friction for roleplay and travel texture, or a heavier survival framework as a central system. This section owns the baseline survival direction; → `Survival & Combat` owns later balance and difficulty interactions.
 
 #table(
@@ -5513,9 +5438,8 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 
 ---
 
-== Roleplay Upkeep And Hygiene → separator: Expanded Systems - Survival & Needs
-<survival--needs-roleplay-upkeep-and-hygiene-separator-expanded-systems-survival--needs>
-
+== Roleplay Upkeep And Hygiene
+<survival--needs-roleplay-upkeep-and-hygiene>
 Lighter day-to-day body-maintenance layer between full survival needs and pure visual flavor. Adds believable downtime rituals without turning hygiene into a second dominant survival framework.
 
 #table(
@@ -5577,9 +5501,8 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 
 ---
 
-== Death Alternative System → separator: Expanded Systems - Survival & Needs
-<survival--needs-death-alternative-system-separator-expanded-systems-survival--needs>
-
+== Death Alternative System
+<survival--needs-death-alternative-system>
 What happens when the player falls in combat. Goal: add consequence and narrative texture to defeat without making every lost fight permanent.
 
 #table(
@@ -5622,9 +5545,8 @@ Part of the @expanded-systems-expanded-systems section.
 
 ---
 
-== Alchemy Overhaul → separator: Expanded Systems - Crafting & Economy
-<crafting--economy-alchemy-overhaul-separator-expanded-systems-crafting--economy>
-
+== Alchemy Overhaul
+<crafting--economy-alchemy-overhaul>
 Whether alchemy is a disciplined support system for potions/poisons/ingredients or a larger rework reshaping cooking and survival-adjacent loops.
 
 #table(
@@ -5671,9 +5593,8 @@ Whether alchemy is a disciplined support system for potions/poisons/ingredients 
 
 ---
 
-== Cooking Systems → separator: Expanded Systems - Crafting & Economy
-<crafting--economy-cooking-systems-separator-expanded-systems-crafting--economy>
-
+== Cooking Systems
+<crafting--economy-cooking-systems>
 Whether food and cooking are mostly ambient support for travel and downtime or a deliberate progression-and-preparation layer.
 
 #table(
@@ -5734,9 +5655,8 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 
 ---
 
-== Smithing And Crafting Expansion → separator: Expanded Systems - Crafting & Economy
-<crafting--economy-smithing-and-crafting-expansion-separator-expanded-systems-crafting--economy>
-
+== Smithing And Crafting Expansion
+<crafting--economy-smithing-and-crafting-expansion>
 What crafting is supposed to do: lightly improve vanilla smithing, become a broader rules-and-materials framework, or shift responsibility toward NPC services and roleplay texture.
 
 #table(
@@ -5819,9 +5739,8 @@ Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` fr
 
 ---
 
-== Economy And Loot Balance → separator: Expanded Systems - Crafting & Economy
-<crafting--economy-economy-and-loot-balance-separator-expanded-systems-crafting--economy>
-
+== Economy And Loot Balance
+<crafting--economy-economy-and-loot-balance>
 What economy and loot should feel like: lightly rebalanced merchant-and-pricing, deliberate loot distribution, or harsher scarcity-driven progression.
 
 #table(
@@ -5947,9 +5866,8 @@ Part of the @expanded-systems-expanded-systems section.
 
 ---
 
-== Crime, Reputation, And Social Systems → separator: Expanded Systems - Followers & Reputation
-<followers--reputation-crime-reputation-and-social-systems-separator-expanded-systems-followers--reputation>
-
+== Crime, Reputation, And Social Systems
+<followers--reputation-crime-reputation-and-social-systems>
 How much the world should notice what the player does socially — reputation, crime tools, city suspicion, and guard behavior.
 
 #table(
@@ -5996,9 +5914,8 @@ How much the world should notice what the player does socially — reputation, c
 
 ---
 
-== Followers And Companion Systems → separator: Expanded Systems - Followers & Reputation
-<followers--reputation-followers-and-companion-systems-separator-expanded-systems-followers--reputation>
-
+== Followers And Companion Systems
+<followers--reputation-followers-and-companion-systems>
 How companion management should function at the systems level.
 
 #table(
@@ -6032,9 +5949,8 @@ How companion management should function at the systems level.
 
 ---
 
-== Romance, Marriage, And Companionship → separator: Expanded Systems - Followers & Reputation
-<followers--reputation-romance-marriage-and-companionship-separator-expanded-systems-followers--reputation>
-
+== Romance, Marriage, And Companionship
+<followers--reputation-romance-marriage-and-companionship>
 The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue with spouses and romance interests, and opt-in quest-driven romance arcs. Baseline is fade-to-black, not explicit content. Custom named followers belong in → `NPCs`.
 
 #table(
@@ -6328,9 +6244,8 @@ All mods in this section belong to one of the four world-feel separators as note
 
 ---
 
-== Timescale And Calendar Adjustments → separator: World Feel - Timescale & Travel
-<immersive-scale-and-world-feel-timescale-and-calendar-adjustments-separator-world-feel-timescale--travel>
-
+== Timescale And Calendar Adjustments
+<immersive-scale-and-world-feel-timescale-and-calendar-adjustments>
 How quickly days pass, whether routine actions consume believable chunks of time, and season/calendar support.
 
 === Baseline
@@ -6348,9 +6263,8 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 ---
 
-== Travel Pacing And Carriage Fast Travel Rules → separator: World Feel - Timescale & Travel
-<immersive-scale-and-world-feel-travel-pacing-and-carriage-fast-travel-rules-separator-world-feel-timescale--travel>
-
+== Travel Pacing And Carriage Fast Travel Rules
+<immersive-scale-and-world-feel-travel-pacing-and-carriage-fast-travel-rules>
 How much friction, structure, and world texture sits between major locations.
 
 === Baseline
@@ -6368,9 +6282,8 @@ How much friction, structure, and world texture sits between major locations.
 
 ---
 
-== Horse Travel → separator: World Feel - Timescale & Travel
-<immersive-scale-and-world-feel-horse-travel-separator-world-feel-timescale--travel>
-
+== Horse Travel
+<immersive-scale-and-world-feel-horse-travel>
 Horse riding overhaul and mounted NPC transport — making horse travel feel modern and functional rather than the vanilla stiff-silhouette experience.
 
 #table(
@@ -6389,9 +6302,8 @@ Horse riding overhaul and mounted NPC transport — making horse travel feel mod
 
 ---
 
-== Encounter Spacing And Wilderness Feel → separator: World Feel - Nights & Wildlife
-<immersive-scale-and-world-feel-encounter-spacing-and-wilderness-feel-separator-world-feel-nights--wildlife>
-
+== Encounter Spacing And Wilderness Feel
+<immersive-scale-and-world-feel-encounter-spacing-and-wilderness-feel>
 How busy, calm, or deliberately spaced wilderness travel feels between destinations.
 
 === Baseline
@@ -6405,9 +6317,8 @@ How busy, calm, or deliberately spaced wilderness travel feels between destinati
 
 ---
 
-== Soundscape And Ambient Audio → separator: World Feel - Soundscapes
-<immersive-scale-and-world-feel-soundscape-and-ambient-audio-separator-world-feel-soundscapes>
-
+== Soundscape And Ambient Audio
+<immersive-scale-and-world-feel-soundscape-and-ambient-audio>
 What roads, settlements, wilderness, and interiors sound like during ordinary exploration.
 
 === Baseline
@@ -6421,9 +6332,8 @@ What roads, settlements, wilderness, and interiors sound like during ordinary ex
 
 ---
 
-== City Size, Outskirts, And Population Feel → separator: World Feel - Cities & Landmarks
-<immersive-scale-and-world-feel-city-size-outskirts-and-population-feel-separator-world-feel-cities--landmarks>
-
+== City Size, Outskirts, And Population Feel
+<immersive-scale-and-world-feel-city-size-outskirts-and-population-feel>
 How large, inhabited, and spatially convincing cities feel during ordinary play.
 
 === Baseline
@@ -6437,9 +6347,8 @@ How large, inhabited, and spatially convincing cities feel during ordinary play.
 
 ---
 
-== Roadside Clutter, Ruins, And Landmark Density → separator: World Feel - Cities & Landmarks
-<immersive-scale-and-world-feel-roadside-clutter-ruins-and-landmark-density-separator-world-feel-cities--landmarks>
-
+== Roadside Clutter, Ruins, And Landmark Density
+<immersive-scale-and-world-feel-roadside-clutter-ruins-and-landmark-density>
 Small-to-mid-scale worldspace texture between major destinations.
 
 === Baseline
@@ -6464,9 +6373,8 @@ Small-to-mid-scale worldspace texture between major destinations.
 
 ---
 
-== Wildlife And Creature Ecology → separator: World Feel - Nights & Wildlife
-<immersive-scale-and-world-feel-wildlife-and-creature-ecology-separator-world-feel-nights--wildlife>
-
+== Wildlife And Creature Ecology
+<immersive-scale-and-world-feel-wildlife-and-creature-ecology>
 How varied and biologically alive wilderness travel feels.
 
 === Baseline
@@ -6483,9 +6391,8 @@ How varied and biologically alive wilderness travel feels.
 
 ---
 
-== Road Network And Surface Overhaul → separator: World Feel - Cities & Landmarks
-<immersive-scale-and-world-feel-road-network-and-surface-overhaul-separator-world-feel-cities--landmarks>
-
+== Road Network And Surface Overhaul
+<immersive-scale-and-world-feel-road-network-and-surface-overhaul>
 Roads as built infrastructure at mesh/geometry level (separate from surface texture ownership in → `Graphics`).
 
 === Baseline
@@ -6500,9 +6407,8 @@ Roads as built infrastructure at mesh/geometry level (separate from surface text
 
 ---
 
-== Environmental Atmosphere: Wind And Dynamic Effects → separator: World Feel - Soundscapes
-<immersive-scale-and-world-feel-environmental-atmosphere-wind-and-dynamic-effects-separator-world-feel-soundscapes>
-
+== Environmental Atmosphere: Wind And Dynamic Effects
+<immersive-scale-and-world-feel-environmental-atmosphere-wind-and-dynamic-effects>
 Weather-aware wind physics, dynamic cloth, and airborne particles for physical world-layer motion.
 
 #table(
@@ -6547,9 +6453,8 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ---
 
-== Night Darkness And Visibility Balance → separator: World Feel - Nights & Wildlife
-<immersive-scale-and-world-feel-night-darkness-and-visibility-balance-separator-world-feel-nights--wildlife>
-
+== Night Darkness And Visibility Balance
+<immersive-scale-and-world-feel-night-darkness-and-visibility-balance>
 #table(
   columns: 2,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -6584,9 +6489,8 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ---
 
-== Activation Text → separator: World Feel - Timescale & Travel
-<immersive-scale-and-world-feel-activation-text-separator-world-feel-timescale--travel>
-
+== Activation Text
+<immersive-scale-and-world-feel-activation-text>
 === Baseline
 <immersive-scale-and-world-feel-baseline-9>
 - *Roleplaying In Skyrim - Immersive Activators* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/149908")[Nexus]) — Descriptive activation text (e.g., "Read Book" instead of "Activate"), hides NPC names until interaction (toggleable). 8KB, no scripts, no SKSE.
@@ -6611,9 +6515,8 @@ All mods in this section belong to one of the four world-content separators as n
 
 ---
 
-== Landscape Overhauls → separator: World Content - Overhauls
-<world-content-landscape-overhauls-separator-world-content-overhauls>
-
+== Landscape Overhauls
+<world-content-landscape-overhauls>
 Large worldspace-content changes making regions feel meaningfully different to cross.
 
 === Baseline
@@ -6651,9 +6554,8 @@ First experiment:
 
 ---
 
-== Cities, Towns, And Villages → separator: World Content - Overhauls
-<world-content-cities-towns-and-villages-separator-world-content-overhauls>
-
+== Cities, Towns, And Villages
+<world-content-cities-towns-and-villages>
 Authored settlement content — real places, not just denser vibes.
 
 === Baseline
@@ -6784,9 +6686,8 @@ Authored settlement content — real places, not just denser vibes.
 
 ---
 
-== College of Winterhold → separators: World Content - Overhauls / World Content - Quests
-<world-content-college-of-winterhold-separators-world-content-overhauls-world-content-quests>
-
+== College of Winterhold
+<world-content-college-of-winterhold>
 Coordinated three-mod sub-stack designed to work together without inter-mod patches.
 
 === Baseline
@@ -6862,9 +6763,8 @@ Coordinated three-mod sub-stack designed to work together without inter-mod patc
 
 ---
 
-== Inns, Farms, And Small Settlements → separator: World Content - Overhauls
-<world-content-inns-farms-and-small-settlements-separator-world-content-overhauls>
-
+== Inns, Farms, And Small Settlements
+<world-content-inns-farms-and-small-settlements>
 Travel-stop identity, small community presence, memorable rural pauses.
 
 === Baseline
@@ -6910,9 +6810,8 @@ Travel-stop identity, small community presence, memorable rural pauses.
 
 ---
 
-== Dungeons And Ruins → separator: World Content - Overhauls
-<world-content-dungeons-and-ruins-separator-world-content-overhauls>
-
+== Dungeons And Ruins
+<world-content-dungeons-and-ruins>
 === Baseline
 <world-content-baseline-5>
 
@@ -7006,9 +6905,8 @@ Visual-only overhauls for specific dungeons. No record or navmesh edits, but con
 
 ---
 
-== Points Of Interest And Roadside Content → separator: World Content - Overhauls
-<world-content-points-of-interest-and-roadside-content-separator-world-content-overhauls>
-
+== Points Of Interest And Roadside Content
+<world-content-points-of-interest-and-roadside-content>
 Smaller discoverable places between headline destinations.
 
 === Baseline
@@ -7137,9 +7035,8 @@ Smaller discoverable places between headline destinations.
 
 ---
 
-== Underwater → separator: World Content - Underwater
-<world-content-underwater-separator-world-content-underwater>
-
+== Underwater
+<world-content-underwater>
 === Baseline
 <world-content-baseline-7>
 
@@ -7169,9 +7066,8 @@ Smaller discoverable places between headline destinations.
 
 ---
 
-== Side Activities: Fishing, Hunting, And Downtime → separator: World Content - Quests
-<world-content-side-activities-fishing-hunting-and-downtime-separator-world-content-quests>
-
+== Side Activities: Fishing, Hunting, And Downtime
+<world-content-side-activities-fishing-hunting-and-downtime>
 Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-delving.
 
 === Baseline
@@ -7274,9 +7170,8 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 
 ---
 
-== Quest Additions → separator: World Content - Quests
-<world-content-quest-additions-separator-world-content-quests>
-
+== Quest Additions
+<world-content-quest-additions>
 === Everyday & Radiant
 <world-content-everyday--radiant>
 
@@ -7630,9 +7525,8 @@ All mods in this section belong to one of the three NPC separators as noted per 
 
 ---
 
-== NPC Appearance Overhauls → separator: NPCs - Appearance
-<npcs-npc-appearance-overhauls-separator-npcs-appearance>
-
+== NPC Appearance Overhauls
+<npcs-npc-appearance-overhauls>
 Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-decide the body/skin/baseline character-visual stack already owned by → `Characters & Creatures`.
 
 #table(
@@ -7699,9 +7593,8 @@ After the appearance stack is final, run `FacegenBaseline` via Synthesis (→ [P
 
 ---
 
-== NPC AI & Behavior → separator: NPCs - Population
-<npcs-npc-ai--behavior-separator-npcs-population>
-
+== NPC AI & Behavior
+<npcs-npc-ai--behavior>
 NPC schedule, behavior, and AI overhauls that affect how NPCs act rather than how they look.
 
 #table(
@@ -7723,9 +7616,8 @@ NPC schedule, behavior, and AI overhauls that affect how NPCs act rather than ho
 
 ---
 
-== Civilian And Traveler Population Additions → separator: NPCs - Population
-<npcs-civilian-and-traveler-population-additions-separator-npcs-population>
-
+== Civilian And Traveler Population Additions
+<npcs-civilian-and-traveler-population-additions>
 Extra background people making towns, inns, and roads feel used — without re-deciding city feel and roadside atmosphere.
 
 #table(
@@ -7756,9 +7648,8 @@ Extra background people making towns, inns, and roads feel used — without re-d
 
 ---
 
-== NPC Name Variety → separator: NPCs - Population
-<npcs-npc-name-variety-separator-npcs-population>
-
+== NPC Name Variety
+<npcs-npc-name-variety>
 Making named NPCs feel more regionally distinct without changing appearance or dialogue.
 
 #table(
@@ -7792,9 +7683,8 @@ Making named NPCs feel more regionally distinct without changing appearance or d
 
 ---
 
-== NPC Dialogue Expansions → separator: NPCs - Population
-<npcs-npc-dialogue-expansions-separator-npcs-population>
-
+== NPC Dialogue Expansions
+<npcs-npc-dialogue-expansions>
 Targeted dialogue additions for existing NPCs — expanding what vanilla characters say via spliced vanilla voice assets.
 
 #table(
@@ -7921,9 +7811,8 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 
 ---
 
-== Custom Followers → separator: NPCs - Followers
-<npcs-custom-followers-separator-npcs-followers>
-
+== Custom Followers
+<npcs-custom-followers>
 Custom fully-voiced follower additions with authored dialogue, quest commentary, and personal content. The follower framework decision (NFF vs EFF vs AFT) is owned by → @expanded-followers-followers--reputation.
 
 #table(
@@ -8007,9 +7896,8 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 
 ---
 
-== Playable Race Additions → separator: NPCs - Appearance
-<npcs-playable-race-additions-separator-npcs-appearance>
-
+== Playable Race Additions
+<npcs-playable-race-additions>
 Playable race mods enabling new character options at game start. Snow Elf (Ancient Falmer) race mods are the primary focus — adding the option to play as the last surviving Snow Elf in Skyrim.
 
 === Race Framework
@@ -8185,9 +8073,8 @@ All mods in this section belong to the `Enemies & Creatures` MO2 separator.
 
 ---
 
-== Enemy Variety → separator: Enemies & Creatures
-<enemies--creatures-enemy-variety-separator-enemies--creatures>
-
+== Enemy Variety
+<enemies--creatures-enemy-variety>
 How hostile enemy groups feel less repetitive across ordinary play.
 
 #table(
@@ -8215,9 +8102,8 @@ How hostile enemy groups feel less repetitive across ordinary play.
 
 ---
 
-== Creature Visual Overhauls → separator: Enemies & Creatures
-<enemies--creatures-creature-visual-overhauls-separator-enemies--creatures>
-
+== Creature Visual Overhauls
+<enemies--creatures-creature-visual-overhauls>
 Creature-specific visual direction layered on top of the Bellyaches texture foundation from → `Characters & Creatures`.
 
 #table(
@@ -8296,9 +8182,8 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 ---
 
-== New Creature Additions → separator: Enemies & Creatures
-<enemies--creatures-new-creature-additions-separator-enemies--creatures>
-
+== New Creature Additions
+<enemies--creatures-new-creature-additions>
 === Mihail Creature Additions (all ESL-flagged)
 <enemies--creatures-mihail-creature-additions-all-esl-flagged>
 
@@ -8363,9 +8248,8 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 
 ---
 
-== Creature Behavior Improvements → separator: Enemies & Creatures
-<enemies--creatures-creature-behavior-improvements-separator-enemies--creatures>
-
+== Creature Behavior Improvements
+<enemies--creatures-creature-behavior-improvements>
 How creatures attack, react, and express identity once combat starts.
 
 #table(
@@ -8405,9 +8289,8 @@ How creatures attack, react, and express identity once combat starts.
 
 ---
 
-== Wildlife Density And Rarity Balance → separator: Enemies & Creatures
-<enemies--creatures-wildlife-density-and-rarity-balance-separator-enemies--creatures>
-
+== Wildlife Density And Rarity Balance
+<enemies--creatures-wildlife-density-and-rarity-balance>
 #table(
   columns: 3,
   fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
@@ -8437,9 +8320,8 @@ All mods in this section belong to one of the four weapons-and-armor separators 
 
 ---
 
-== Weapon Pack Additions → separator: Weapons & Armor – Weapons
-<weapons--armor-weapon-pack-additions-separator-weapons--armor-weapons>
-
+== Weapon Pack Additions
+<weapons--armor-weapon-pack-additions>
 Weapon content packs adding new named and leveled-list weapons fitting vanilla's medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
 === Baseline
@@ -8516,9 +8398,8 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 
 ---
 
-== Armor Pack Additions → separator: Weapons & Armor – Armor
-<weapons--armor-armor-pack-additions-separator-weapons--armor-armor>
-
+== Armor Pack Additions
+<weapons--armor-armor-pack-additions>
 Armor content packs adding new named and leveled-list armors fitting the medieval-Nordic aesthetic. More variety without diluting the loot ladder.
 
 === Baseline
@@ -8693,9 +8574,8 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 ---
 
-== Artifact And Unique Item Overhauls → separator: Weapons & Armor – Artifacts
-<weapons--armor-artifact-and-unique-item-overhauls-separator-weapons--armor-artifacts>
-
+== Artifact And Unique Item Overhauls
+<weapons--armor-artifact-and-unique-item-overhauls>
 Unique-item content packs that add depth to Daedric artifacts, dragon priest masks, unique weapons, and quest items. Treats artifact overhauls as a separate layer from crafting — they change what named items are, not how the player makes generic items.
 
 === Baseline
@@ -8756,9 +8636,8 @@ Unique-item content packs that add depth to Daedric artifacts, dragon priest mas
 
 ---
 
-== Clothing And Wardrobe Extensions → separator: Weapons & Armor – Clothing & Wardrobe
-<weapons--armor-clothing-and-wardrobe-extensions-separator-weapons--armor-clothing--wardrobe>
-
+== Clothing And Wardrobe Extensions
+<weapons--armor-clothing-and-wardrobe-extensions>
 Clothing content packs adding new clothing, cloaks, and wearable non-armor items. More wardrobe variety without making every NPC a fashion show.
 
 === Baseline
@@ -8866,9 +8745,8 @@ All mods in this section belong to one of the two audio separators as noted per 
 
 ---
 
-== Music Overhaul Strategy → separator: Audio - Music
-<audio-and-feedback-music-overhaul-strategy-separator-audio-music>
-
+== Music Overhaul Strategy
+<audio-and-feedback-music-overhaul-strategy>
 The soundtrack direction: how much to expand Skyrim's music while staying close to the Jeremy Soule baseline.
 
 === Baseline
@@ -8916,9 +8794,8 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 
 ---
 
-== Weapon, Magic, And Impact SFX → separator: Audio - SFX & Ambience
-<audio-and-feedback-weapon-magic-and-impact-sfx-separator-audio-sfx--ambience>
-
+== Weapon, Magic, And Impact SFX
+<audio-and-feedback-weapon-magic-and-impact-sfx>
 The sound-effects layer for combat, magic, items, UI, and impact. The bar: modern, weighty, clear audio readable in third-person without visual confirmation.
 
 #table(
@@ -8947,9 +8824,8 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 
 ---
 
-== Creature And NPC SFX → separator: Audio - SFX & Ambience
-<audio-and-feedback-creature-and-npc-sfx-separator-audio-sfx--ambience>
-
+== Creature And NPC SFX
+<audio-and-feedback-creature-and-npc-sfx>
 === Baseline
 <audio-and-feedback-baseline-2>
 - Minimalist route — rely on ISC + AOS for creature sounds. Add dedicated replacers only if testing reveals weak vocalisations.
@@ -8962,9 +8838,8 @@ The sound-effects layer for combat, magic, items, UI, and impact. The bar: moder
 
 ---
 
-== Combat And Immersion Audio → separator: Audio - SFX & Ambience
-<audio-and-feedback-combat-and-immersion-audio-separator-audio-sfx--ambience>
-
+== Combat And Immersion Audio
+<audio-and-feedback-combat-and-immersion-audio>
 Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX baseline.
 
 #table(
@@ -8989,9 +8864,8 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 
 ---
 
-== Ambient And Environmental Audio → separator: Audio - SFX & Ambience
-<audio-and-feedback-ambient-and-environmental-audio-separator-audio-sfx--ambience>
-
+== Ambient And Environmental Audio
+<audio-and-feedback-ambient-and-environmental-audio>
 Environmental soundscapes, creature ambient sounds, and weather audio to reinforce world immersion outside of combat.
 
 #table(
@@ -9039,9 +8913,8 @@ All mods in this section belong to one of the three survival/combat separators a
 
 ---
 
-== Difficulty Framework → separator: Survival & Combat - Difficulty & Lethality
-<survival-difficulty-and-balance-difficulty-framework-separator-survival--combat-difficulty--lethality>
-
+== Difficulty Framework
+<survival-difficulty-and-balance-difficulty-framework>
 Cross-load-order pressure: how quickly the world pushes back, how clearly dungeon progression reads, and whether difficulty comes from better structure instead of blunt stat inflation.
 
 === Baseline
@@ -9063,9 +8936,8 @@ Cross-load-order pressure: how quickly the world pushes back, how clearly dungeo
 
 ---
 
-== Combat Lethality And Pacing → separator: Survival & Combat - Difficulty & Lethality
-<survival-difficulty-and-balance-combat-lethality-and-pacing-separator-survival--combat-difficulty--lethality>
-
+== Combat Lethality And Pacing
+<survival-difficulty-and-balance-combat-lethality-and-pacing>
 Tunes encounter harshness and time-to-kill on top of the combat framework from → `Third-Person`, not replacing it.
 
 === Baseline
@@ -9087,9 +8959,8 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 
 ---
 
-== Enemy AI Improvements → separator: Survival & Combat - Enemy AI
-<survival-difficulty-and-balance-enemy-ai-improvements-separator-survival--combat-enemy-ai>
-
+== Enemy AI Improvements
+<survival-difficulty-and-balance-enemy-ai-improvements>
 === Baseline
 <survival-difficulty-and-balance-baseline-3>
 
@@ -9105,9 +8976,8 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 
 ---
 
-== Injury, Stamina, And Resource Pressure → separator: Survival & Combat - Resources & Injuries
-<survival-difficulty-and-balance-injury-stamina-and-resource-pressure-separator-survival--combat-resources--injuries>
-
+== Injury, Stamina, And Resource Pressure
+<survival-difficulty-and-balance-injury-stamina-and-resource-pressure>
 Attrition that lingers beyond a single swing: drained stamina, enforced downtime, the feeling that repeated bad fights accumulate a cost.
 
 === Baseline
@@ -9125,9 +8995,8 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 
 ---
 
-== Enemy Resistances And Knowledge Checks → separator: Survival & Combat - Enemy AI
-<survival-difficulty-and-balance-enemy-resistances-and-knowledge-checks-separator-survival--combat-enemy-ai>
-
+== Enemy Resistances And Knowledge Checks
+<survival-difficulty-and-balance-enemy-resistances-and-knowledge-checks>
 === Baseline
 <survival-difficulty-and-balance-baseline-5>
 
@@ -9142,9 +9011,8 @@ Attrition that lingers beyond a single swing: drained stamina, enforced downtime
 
 ---
 
-== Survival Systems Compatibility → separator: Survival & Combat - Resources & Injuries
-<survival-difficulty-and-balance-survival-systems-compatibility-separator-survival--combat-resources--injuries>
-
+== Survival Systems Compatibility
+<survival-difficulty-and-balance-survival-systems-compatibility>
 How difficulty and pressure choices interact with the chosen survival framework.
 
 === Baseline
@@ -9160,9 +9028,8 @@ How difficulty and pressure choices interact with the chosen survival framework.
 
 - *Navigation Restrictions - NG* `#link("https://www.nexusmods.com/skyrimspecialedition/mods/129086")[#1]` ([Nexus]) — Fast travel and survival restrictions. Adds survival-oriented travel pressure.
 
-=== Environmental Hazards → separator: Survival & Combat - Resources & Injuries
-<survival-difficulty-and-balance-environmental-hazards-separator-survival--combat-resources--injuries>
-
+=== Environmental Hazards
+<survival-difficulty-and-balance-environmental-hazards>
 Environmental damage layers that make fire, traps, and dungeon hazards genuinely threatening.
 
 #table(
@@ -9187,9 +9054,8 @@ All items in this section belong to the `Legacy of the Dragonborn` MO2 separator
 
 ---
 
-== Core Mod Baseline → separator: Legacy of the Dragonborn
-<legacy-of-the-dragonborn-core-mod-baseline-separator-legacy-of-the-dragonborn>
-
+== Core Mod Baseline
+<legacy-of-the-dragonborn-core-mod-baseline>
 Treated as a foundational content pillar for the final list, not a late optional extra.
 
 #table(
@@ -9223,9 +9089,8 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-== Supported Content → separator: Legacy of the Dragonborn
-<legacy-of-the-dragonborn-supported-content-separator-legacy-of-the-dragonborn>
-
+== Supported Content
+<legacy-of-the-dragonborn-supported-content>
 === Quest Mods With Strong LoTD Integration
 <legacy-of-the-dragonborn-quest-mods-with-strong-lotd-integration>
 
@@ -9274,9 +9139,8 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-== Patch Strategy → separator: Legacy of the Dragonborn
-<legacy-of-the-dragonborn-patch-strategy-separator-legacy-of-the-dragonborn>
-
+== Patch Strategy
+<legacy-of-the-dragonborn-patch-strategy>
 - Use *LoTD Patches (Official)* as default patch source.
 - Add third-party patches only when official collection doesn't cover a finalized mod.
 - Do not pre-install broad patch bundles for hypothetical mods.
@@ -9292,9 +9156,8 @@ Treated as a foundational content pillar for the final list, not a late optional
 
 ---
 
-== Submods And Quality-Of-Life → separator: Legacy of the Dragonborn
-<legacy-of-the-dragonborn-submods-and-quality-of-life-separator-legacy-of-the-dragonborn>
-
+== Submods And Quality-Of-Life
+<legacy-of-the-dragonborn-submods-and-quality-of-life>
 === Sorting And Inventory
 <legacy-of-the-dragonborn-sorting-and-inventory>
 
@@ -9345,9 +9208,8 @@ All mods in this section belong to the `Adult Content` MO2 separator unless note
 
 ---
 
-== Framework Prerequisites → separator: Adult Content
-<adult-content-framework-prerequisites-separator-adult-content>
-
+== Framework Prerequisites
+<adult-content-framework-prerequisites>
 OStim Standalone — a modern, standalone adult animation framework that does not require OSA or SexLab. The OStim Romance and Amorous Adventures patch layer depend on this.
 
 #table(
@@ -9421,9 +9283,8 @@ OStim Standalone — a modern, standalone adult animation framework that does no
 
 ---
 
-== Romance Content → separator: Adult Content
-<adult-content-romance-content-separator-adult-content>
-
+== Romance Content
+<adult-content-romance-content>
 Opt-in quest-driven romance content running on top of the OStim framework.
 
 === Baseline
@@ -9460,9 +9321,8 @@ Opt-in quest-driven romance content running on top of the OStim framework.
 
 ---
 
-== NPC Relationship Content → separator: Adult Content
-<adult-content-npc-relationship-content-separator-adult-content>
-
+== NPC Relationship Content
+<adult-content-npc-relationship-content>
 NPC relationship simulation — schedules, pairings, and partner-swapping running on OStim.
 
 === Baseline
@@ -9485,9 +9345,8 @@ NPC relationship simulation — schedules, pairings, and partner-swapping runnin
 
 ---
 
-== Pregnancy & Family → separator: Adult Content
-<adult-content-pregnancy--family-separator-adult-content>
-
+== Pregnancy & Family
+<adult-content-pregnancy--family>
 Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form an interconnected ecosystem — evaluate as a set.
 
 === Baseline
@@ -9541,9 +9400,8 @@ All mods in this section belong to the `Voicing` MO2 separator.
 
 ---
 
-== Framework Overview → separator: Voicing
-<main-character-voicing-framework-overview-separator-voicing>
-
+== Framework Overview
+<main-character-voicing-framework-overview>
 Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player dialogue and plays `.wav`/`.fuz` files via an SKSE plugin. Combined with the xEdit dialogue export tool and AI voice synthesis (ElevenLabs or xVASynth), the player character speaks every dialogue line.
 
 === Baseline
@@ -9609,18 +9467,16 @@ Dragonborn Voice Over 2 (DBVO2) is the runtime framework that intercepts player 
 
 ---
 
-== Two Custom Voice Packs → separator: Voicing
-<main-character-voicing-two-custom-voice-packs-separator-voicing>
-
+== Two Custom Voice Packs
+<main-character-voicing-two-custom-voice-packs>
 Two custom-generated packs (Laura Bailey female, Graham McTavish male) for character flexibility. Install as separate MO2 mods, swap via MO2 profile or DBVO2 voice pack dropdown in SKSE Menu Framework (F1).
 
 Run → [Custom Voice Pack Pipeline](custom-voice-pack-pipeline) twice with two ElevenLabs voice IDs (Laura Bailey female, Graham McTavish male). Package as separate MO2 mods and enable one at a time.
 
 ---
 
-== Custom Voice Pack Pipeline → separator: Voicing
-<main-character-voicing-custom-voice-pack-pipeline-separator-voicing>
-
+== Custom Voice Pack Pipeline
+<main-character-voicing-custom-voice-pack-pipeline>
 Unified workflow covering dialogue export → audio generation → packaging into DBVO2 format. Replaces the legacy MCVO Generator + standalone ElevenLabs sections.
 
 === Prerequisites
@@ -9757,9 +9613,8 @@ Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
-== Performance Budgeting → separator: Performance - Strategy
-<performance-strategy-performance-budgeting-separator-performance-strategy>
-
+== Performance Budgeting
+<performance-strategy-performance-budgeting>
 How `Elder Wilds` measures performance, identifies bottlenecks, and keeps generated workflow sane once the list gets heavy.
 
 === Baseline
@@ -9782,9 +9637,8 @@ How `Elder Wilds` measures performance, identifies bottlenecks, and keeps genera
 
 ---
 
-== VRAM-Heavy Mod Review → separator: Performance - Strategy
-<performance-strategy-vram-heavy-mod-review-separator-performance-strategy>
-
+== VRAM-Heavy Mod Review
+<performance-strategy-vram-heavy-mod-review>
 Texture resolution, PBR/parallax adoption, heavy shader features, and world coverage drive VRAM pressure. Spend texture budget where visible in normal play.
 
 === Baseline
@@ -9806,9 +9660,8 @@ Texture resolution, PBR/parallax adoption, heavy shader features, and world cove
 
 ---
 
-== CPU-Heavy Script Review → separator: Performance - Strategy
-<performance-strategy-cpu-heavy-script-review-separator-performance-strategy>
-
+== CPU-Heavy Script Review
+<performance-strategy-cpu-heavy-script-review>
 CPU and Papyrus pressure comes from layered systems, NPC density, polling scripts, and constant background updates.
 
 === Baseline
@@ -9845,9 +9698,8 @@ Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
-== Shader Performance Impact → separator: Performance - Optimization & Configuration
-<optimization--configuration-shader-performance-impact-separator-performance-optimization--configuration>
-
+== Shader Performance Impact
+<optimization--configuration-shader-performance-impact>
 === Baseline
 <optimization--configuration-baseline>
 
@@ -9865,9 +9717,8 @@ Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
-== Grass, Tree, And Draw-Call Optimization → separator: Performance - Optimization & Configuration
-<optimization--configuration-grass-tree-and-draw-call-optimization-separator-performance-optimization--configuration>
-
+== Grass, Tree, And Draw-Call Optimization
+<optimization--configuration-grass-tree-and-draw-call-optimization>
 === Baseline
 <optimization--configuration-baseline-2>
 
@@ -9884,9 +9735,8 @@ Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
-== INI Tuning And Display Settings → separator: Performance - Optimization & Configuration
-<optimization--configuration-ini-tuning-and-display-settings-separator-performance-optimization--configuration>
-
+== INI Tuning And Display Settings
+<optimization--configuration-ini-tuning-and-display-settings>
 === Baseline
 <optimization--configuration-baseline-3>
 
@@ -9918,9 +9768,8 @@ Run through MO2 targeting the active profile INIs.
 
 ---
 
-== Save Safety Considerations → separator: Performance - Optimization & Configuration
-<optimization--configuration-save-safety-considerations-separator-performance-optimization--configuration>
-
+== Save Safety Considerations
+<optimization--configuration-save-safety-considerations>
 === Baseline
 <optimization--configuration-baseline-4>
 
@@ -9950,9 +9799,8 @@ Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
-== Tool Workflow → separator: Performance - Tool Pipeline
-<tool-pipeline-tool-workflow-separator-performance-tool-pipeline>
-
+== Tool Workflow
+<tool-pipeline-tool-workflow>
 A heavy Skyrim list usually becomes unstable through stale output and sloppy rebuild habits before failing through any one mod choice.
 
 === Baseline — Disciplined Route
@@ -9970,9 +9818,8 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 
 ---
 
-== 4K LOD Tool Baseline → separator: Performance - Tool Pipeline
-<tool-pipeline-4k-lod-tool-baseline-separator-performance-tool-pipeline>
-
+== 4K LOD Tool Baseline
+<tool-pipeline-4k-lod-tool-baseline>
 === General Rules
 <tool-pipeline-general-rules>
 - Keep tools (`xLODGen`, `TexGen`, `DynDOLOD`) outside game folder and outside MO2 mod folders.
@@ -10030,9 +9877,8 @@ A heavy Skyrim list usually becomes unstable through stale output and sloppy reb
 
 ---
 
-== Optional Diagnostics And Performance Tools → separator: Performance - Tool Pipeline
-<tool-pipeline-optional-diagnostics-and-performance-tools-separator-performance-tool-pipeline>
-
+== Optional Diagnostics And Performance Tools
+<tool-pipeline-optional-diagnostics-and-performance-tools>
 Neither requires ongoing configuration or conflict maintenance once installed.
 
 === Recursion Monitor
@@ -10074,16 +9920,14 @@ Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
-== Patcher Discipline → separator: Performance - Bashed Patch & Synthesis
-<bashed-patch--synthesis-configuration-patcher-discipline-separator-performance-bashed-patch--synthesis>
-
+== Patcher Discipline
+<bashed-patch--synthesis-configuration-patcher-discipline>
 The generic category maps only become useful when tied to the actual mods `Elder Wilds` ships with. This section is that binding: exact `Wrye Bash` tweaks, `Bash Tags` per plugin, and `Synthesis` patcher pipeline in exact order. Default is "do not touch" — add a `Synthesis` patcher or `Bash Tag` only when a specific mod in the list makes it necessary.
 
 ---
 
-== Wrye Bash (Bashed Patch) Configuration → separator: Performance - Bashed Patch & Synthesis
-<bashed-patch--synthesis-configuration-wrye-bash-bashed-patch-configuration-separator-performance-bashed-patch--synthesis>
-
+== Wrye Bash (Bashed Patch) Configuration
+<bashed-patch--synthesis-configuration-wrye-bash-bashed-patch-configuration>
 === Tweak Settings
 <bashed-patch--synthesis-configuration-tweak-settings>
 
@@ -10212,9 +10056,8 @@ Set the following `Bash Tags` on the listed plugins (one file per plugin under `
 
 ---
 
-== Synthesis Configuration → separator: Performance - Bashed Patch & Synthesis
-<bashed-patch--synthesis-configuration-synthesis-configuration-separator-performance-bashed-patch--synthesis>
-
+== Synthesis Configuration
+<bashed-patch--synthesis-configuration-synthesis-configuration>
 The `Synthesis` patcher pipeline runs as a single batch via *Run Mutagen* in MO2, output to `Patches\Synthesis Patch.esp`. Patchers listed in run order — do not reorder.
 
 === Stage 1 — NPC, AI, And Facegen
@@ -10403,9 +10246,8 @@ Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
-== Performance Testing And Tuning → separator: Performance - Testing & Maintenance
-<testing--maintenance-performance-testing-and-tuning-separator-performance-testing--maintenance>
-
+== Performance Testing And Tuning
+<testing--maintenance-performance-testing-and-tuning>
 The goal is consistent frametimes — not just a high average FPS — across the scenarios you actually play.
 
 === Tools
@@ -10540,9 +10382,8 @@ Every tuning attempt recorded in git alongside modlist changes.
 
 ---
 
-== Maintenance And Rebuild Epilogue → separator: Performance - Testing & Maintenance
-<testing--maintenance-maintenance-and-rebuild-epilogue-separator-performance-testing--maintenance>
-
+== Maintenance And Rebuild Epilogue
+<testing--maintenance-maintenance-and-rebuild-epilogue>
 === Patcher Revisit Triggers
 <testing--maintenance-patcher-revisit-triggers>
 
