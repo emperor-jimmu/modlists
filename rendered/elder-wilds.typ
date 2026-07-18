@@ -8791,6 +8791,30 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169281")[Faction Armors and Weapons Retexture SE]],
   [All-in-one retexture of Dawnguard, Vampire, Thieves Guild, Nightingale, Dark Brotherhood, Forsworn, Wolf armors/weapons. Optional mesh additions, color variants (Shrouded).],
   [By Xavbio. Replaces hidden mod 96855. Respects original designs with refined detail and grounded look. Covers both armor and weapons.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129809")[Armor of Nocturnal]],
+  [Dark fantasy light armor set, standalone craftable. Dwarven-tier.],
+  [ChakraSSE. 4K/2K textures, custom male/female meshes. No HDT-SMP. HIMBO refit below.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/135092")[Armor of Nocturnal — HIMBO Refit — Heavy and Light Armor Patches]],
+  [HIMBO bodyslide + optional heavy/light ESP patches for Armor of Nocturnal.],
+  [Requires 129809, BodySlide, HIMBO. Fixes original's mixed armor-type issue. Patches usable without HIMBO.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153545")[Armor of Alessia]],
+  [Fantasy heavy armor set + Alessian Sword, standalone craftable. Ebony-tier.],
+  [ChakraSSE. 4K textures, custom male/female meshes. HIMBO via ChakraSSE HIMBO bundle (159950).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/149231")[Nightstalker Nazir Armor Replacer]],
+  [Armor replacer, standalone craftable.],
+  [ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/146704")[Nordic Brute Armor (CBBE HDT-SMP)]],
+  [Heavy armor with HDT-SMP cloth physics.],
+  [ChakraSSE. Requires FSMP. HIMBO via ChakraSSE HIMBO bundle (159950).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142360")[Drake Knight Armor]],
+  [Armor set, glow variant available.],
+  [ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132399")[Armor Of Hermaeus Mora]],
+  [Daedric-themed armor set.],
+  [ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159950")[More ChakraSSE Armor HIMBO Refits]],
+  [HIMBO/BodySlide refits for Armor of Alessia, Nightstalker Nazir, Nordic Brute, Drake Knight, Armor of Hermaeus Mora.],
+  [Install per-armor, overwrite originals. Requires each base mod + BodySlide + HIMBO. 55 endorsements.],
 )
 
 === Risks & Compatibility
@@ -8803,6 +8827,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 - `Bandolier` changes inventory — carry-weight design must account for additional slots.
 - The Retexture/Mesh Fixes mod and CBBE 3BA BodySlide are *not stackable* for female meshes. HIMBO Conversion V2 avoids this conflict (designed to stack on top of Retexture/Mesh Fixes).
 - All IA companion mods trigger `Pandora` and `BodySlide` rebuilds in → `Performance`.
+- *SynthEBD* (#link("https://github.com/Synthesis-Collective/SynthEBD")[GitHub]) — Synthesis patcher for NPC equipment/outfit distribution with complex rule-based config. Use as a SPID alternative when a mod has no SPID config or needs multi-condition NPC filtering. Included in the Synthesis pipeline (→ `Performance`, Stage 1). Add SynthEBD configs per armor mod when SPID distribution is unavailable or insufficient.
 
 ---
 
@@ -10302,8 +10327,193 @@ The `Synthesis` patcher pipeline runs as a single batch via *Run Mutagen* in MO2
 - `KS Hairs Bald Helmets Fixer`
 - `High Poly Head Vampire Fix`
 - `HP\_NPC\_WIGS\_TO\_HEADPART`
-- `FacegenBaseline` — after all NPC overhauls installed; fallback to zEdit FaceGen patcher if needed.
+- `FacegenBaseline` — after all NPC overhauls installed; fallback to zEdit FaceGen patcher if needed. See `### FacegenBaseline Configuration` below.
+- *`SynthEBD`* — NPC equipment/outfit distribution via rule-based config. Use as a SPID alternative for armor/clothing distribution when SPID can't cover the target (e.g., complex outfit rules, multi-condition NPC filtering). Requires SynthEBD config files per armor/outfit mod. See `### SynthEBD Configuration` below.
 - `NPCStatRescaler`
+
+=== FacegenBaseline Configuration
+<bashed-patch--synthesis-configuration-facegenbaseline-configuration>
+
+Generates missing or corrected facegen data (face morphology `.nif` files and tint layers `.dds`) for NPCs added or changed by appearance mods. Prevents the black-face bug, mismatched facial features, and incorrect tint layers.
+
+*When to run:*
+- After every change to the NPC appearance stack — adding, removing, or reordering appearance overhauls
+- After installing any mod that adds new NPCs (quest mods, world content, new lands)
+- After running any Synthesis patcher that changes NPC head parts or face morphs
+- Every time the load order of NPC-related plugins changes
+
+*Setup in Synthesis:*
+
+1. Add `FacegenBaseline` to your Synthesis pipeline (already listed in Stage 1 above).
+2. Configure the *Source Mods* list — select every NPC appearance overhaul and any mod that adds NPCs with custom facegen. The patcher reads facegen from these source mods and copies it into the output.
+3. Set *Output Mod* to a dedicated mod folder (e.g., `FacegenBaseline Output` in the `Output` MO2 separator). Do not output into an existing NPC overhaul mod.
+4. Run Synthesis with the full pipeline — FacegenBaseline runs after KS Hairs Bald Helmets Fixer and HP\_NPC\_WIGS\_TO\_HEADPART.
+
+*Configuration options:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Option*],
+  [*Recommendation*],
+  [*Notes*],
+  [Source Mods],
+  [Select all NPC appearance overhauls + any mod listed in the NPCs section that ships facegen],
+  [Missed source mods are the #1 cause of black-face],
+  [Output Mod],
+  [Dedicated mod in `Output` separator],
+  [Do not output into an existing NPC overhaul mod],
+  [Overwrite Mode],
+  [Replace (default)],
+  [Keeps output clean on each rebuild],
+  [Include Tint Layers],
+  [Yes],
+  [Required for correct NPC skin/makeup in dialogue],
+)
+
+*Troubleshooting:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Symptom*],
+  [*Likely Cause*],
+  [*Fix*],
+  [Black face (dark head, light body)],
+  [NPC's facegen `.nif` missing from output, or a later mod overwrites it],
+  [Add the NPC's source mod to Source Mods; verify load order places FacegenBaseline output after all NPC overhauls],
+  [Face doesn't match appearance mod (wrong morph, wrong hair)],
+  [A different mod's facegen is winning the conflict],
+  [Reorder mods so the intended appearance mod loads after conflicting overhauls, then re-run FacegenBaseline],
+  [Grey face (no tint layers)],
+  [Tint layers not generated or not found],
+  [Verify "Include Tint Layers" is enabled; check that `Textures\actors\character\FacegenTints` exists in output],
+  [CTD when approaching an NPC],
+  [Corrupted facegen data — mismatched head part count or missing assets],
+  [Delete FacegenBaseline output, re-verify all source mods are selected, re-run Synthesis from scratch],
+  [FacegenBaseline fails with "no facegen found"],
+  [Source mods list is empty or the patcher can't find compatible face NIFs],
+  [Check that at least one source mod is selected and contains `meshes\actors\character\facegendata\facegeom\`],
+)
+
+=== SynthEBD Configuration
+<bashed-patch--synthesis-configuration-synthebd-configuration>
+
+Port of zEBD to Synthesis/Mutagen. Distributes equipment (armor/clothing/weapons), body shapes, textures, and heights to NPCs via rule-based config files. Treat as the primary SPID alternative when an armor/outfit mod has no SPID config or needs multi-condition NPC filtering.
+
+*Download:* #link("https://github.com/Synthesis-Collective/SynthEBD/releases")[GitHub Releases] or #link("https://www.nexusmods.com/skyrimspecialedition/mods/138909")[Nexus]. Extract the `SynthEBD` folder to your mod utilities directory. Launch `SynthEBD.exe` through MO2.
+
+*Setup in Synthesis:*
+
+1. Add `SynthEBD` to your Synthesis pipeline (already listed in Stage 1 above, after FacegenBaseline).
+2. Run *SynthEBD.exe* (standalone GUI) before Synthesis to configure settings and install config files. The Synthesis patcher reads the configuration produced by the standalone tool.
+3. Set the *Output Data Folder* to a dedicated MO2 mod (e.g., `C:\MO2\mods\SynthEBD Output`) via the `General Settings` tab.
+4. Install config files via the `Textures and Meshes` tab using the *Install Config From Archive* button — select each config file you want active.
+5. Run SynthEBD standalone to build the configuration database, then run Synthesis with the full pipeline.
+
+*General Settings:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Option*],
+  [*Recommendation*],
+  [*Notes*],
+  [Output Name],
+  [`SynthEBD.esp`],
+  [Generated plugin name],
+  [Output Data Folder],
+  [Dedicated MO2 mod folder],
+  [All generated files (ESP + assets) land here],
+  [Apply Textures and Meshes],
+  [Yes],
+  [Enables asset distribution from config files],
+  [Apply Body Shape Using],
+  [None (OFF)],
+  [Elder Wilds uses OBody NG for body distribution — let OBody handle it],
+  [Apply Height Changes],
+  [OFF],
+  [Leave height control to other patchers in Stage 1 (`RacialHeights` / `HarmonizedRaceHeights-Patcher`)],
+  [Enable Consistency],
+  [Yes],
+  [Keeps the same body shape on NPCs across save loads],
+  [Verbose Mode for Conflict NPCs],
+  [ON (debugging)],
+  [Logs decision-making for NPCs with assignment conflicts; disable once configs are stable],
+)
+
+*Textures and Meshes settings:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Option*],
+  [*Recommendation*],
+  [*Notes*],
+  [Allow config files to change NPC textures],
+  [Yes],
+  [Core distribution function],
+  [Allow config files to change NPC meshes],
+  [Yes],
+  [Core distribution function],
+  [Patch NPCs with custom bodies],
+  [ON],
+  [Ensures NPCs from mods with custom WNAM get textures],
+  [Patch NPCs with custom faces],
+  [ON],
+  [Ensures NPCs from appearance overhauls get assigned face textures],
+  [Force Vanilla Body Mesh Paths],
+  [OFF],
+  [Elder Wilds uses OBody NG — body mesh paths managed separately],
+  [Generate combination assignment log],
+  [ON (debugging)],
+  [Disable once configs are stable],
+)
+
+*Config File Types:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Config Type*],
+  [*Purpose*],
+  [*Elder Wilds Usage*],
+  [Asset Config],
+  [Distributes armor/clothing/weapon textures and meshes to NPCs],
+  [Primary use case — install when an armor mod lacks SPID config],
+  [BodyGen Config],
+  [Distributes BodyGen morphs],
+  [OFF — OBody NG handles body distribution],
+  [BodySlide Settings],
+  [Distributes BodySlide presets via OBody/AutoBody],
+  [OFF — OBody NG handles body distribution],
+  [Height Config],
+  [Distributes NPC heights],
+  [OFF — use Stage 1 height patchers instead],
+)
+
+*Attribute Groups:* The core controller of SynthEBD's distribution system. Config files reference Attribute Groups to control which NPCs get which assets. Attribute Groups define filters by race, gender, faction, class, voice type, unique NPC, etc. Check *Supercede Plugin Group Definitions with Main* in General Settings to control distribution from all config files from a single centralized menu — recommended for Elder Wilds.
+
+*When to run:* After adding or updating any armor/clothing mod that uses a SynthEBD config for NPC distribution (typically as a SPID fallback). Run the SynthEBD standalone GUI first to re-process configs, then run the full Synthesis pipeline.
+
+*Troubleshooting:*
+
+#table(
+  columns: 3,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Symptom*],
+  [*Likely Cause*],
+  [*Fix*],
+  [NPCs not getting assigned equipment],
+  [Config file not installed or Attribute Group doesn't match],
+  [Verify config installed via `Textures and Meshes` tab; check Attribute Group filters match the target NPC],
+  [Body shapes won't assign],
+  [Body shape distribution enabled but no BodySlide/BodyGen config installed],
+  [Set `Apply Body Shape Using` to None — OBody NG handles this separately],
+  [Duplicate NPC entries],
+  [Config file has redundant Attribute Group rules],
+  [Enable Verbose Mode, check SynthEBD\\Logs for conflicting assignments],
+)
 - `AIOverhaulPatcher` / `ICAIO AI for Mods`
 - `AI Stealth Overhaul` — with RAID.
 - `Followers-are-Sneaky`

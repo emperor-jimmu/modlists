@@ -116,6 +116,14 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [HD Falmer Elven Chainmail Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/35669) | HD retexture for Elven Chainmail. | By trion77/Vindition. Install over Elven Chainmail base mod. |
 | [Kozakowy's Female Vampire Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/95284) | Replaces vanilla female vampire armor (3 color variants). CBBE 3BA, 811 endorsements. | Female-only, no weightslider compatibility. Pure mesh/texture replacer — no records conflict. 3BA SMP conversion available ([143980](https://www.nexusmods.com/skyrimspecialedition/mods/143980)). |
 | [Faction Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/169281) | All-in-one retexture of Dawnguard, Vampire, Thieves Guild, Nightingale, Dark Brotherhood, Forsworn, Wolf armors/weapons. Optional mesh additions, color variants (Shrouded). | By Xavbio. Replaces hidden mod 96855. Respects original designs with refined detail and grounded look. Covers both armor and weapons. |
+| [Armor of Nocturnal](https://www.nexusmods.com/skyrimspecialedition/mods/129809) | Dark fantasy light armor set, standalone craftable. Dwarven-tier. | ChakraSSE. 4K/2K textures, custom male/female meshes. No HDT-SMP. HIMBO refit below. |
+| [Armor of Nocturnal — HIMBO Refit — Heavy and Light Armor Patches](https://www.nexusmods.com/skyrimspecialedition/mods/135092) | HIMBO bodyslide + optional heavy/light ESP patches for Armor of Nocturnal. | Requires 129809, BodySlide, HIMBO. Fixes original's mixed armor-type issue. Patches usable without HIMBO. |
+| [Armor of Alessia](https://www.nexusmods.com/skyrimspecialedition/mods/153545) | Fantasy heavy armor set + Alessian Sword, standalone craftable. Ebony-tier. | ChakraSSE. 4K textures, custom male/female meshes. HIMBO via ChakraSSE HIMBO bundle (159950). |
+| [Nightstalker Nazir Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/149231) | Armor replacer, standalone craftable. | ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950). |
+| [Nordic Brute Armor (CBBE HDT-SMP)](https://www.nexusmods.com/skyrimspecialedition/mods/146704) | Heavy armor with HDT-SMP cloth physics. | ChakraSSE. Requires FSMP. HIMBO via ChakraSSE HIMBO bundle (159950). |
+| [Drake Knight Armor](https://www.nexusmods.com/skyrimspecialedition/mods/142360) | Armor set, glow variant available. | ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950). |
+| [Armor Of Hermaeus Mora](https://www.nexusmods.com/skyrimspecialedition/mods/132399) | Daedric-themed armor set. | ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950). |
+| [More ChakraSSE Armor HIMBO Refits](https://www.nexusmods.com/skyrimspecialedition/mods/159950) | HIMBO/BodySlide refits for Armor of Alessia, Nightstalker Nazir, Nordic Brute, Drake Knight, Armor of Hermaeus Mora. | Install per-armor, overwrite originals. Requires each base mod + BodySlide + HIMBO. 55 endorsements. |
 
 ### Risks & Compatibility
 
@@ -126,6 +134,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 - `Bandolier` changes inventory — carry-weight design must account for additional slots.
 - The Retexture/Mesh Fixes mod and CBBE 3BA BodySlide are **not stackable** for female meshes. HIMBO Conversion V2 avoids this conflict (designed to stack on top of Retexture/Mesh Fixes).
 - All IA companion mods trigger `Pandora` and `BodySlide` rebuilds in → `Performance`.
+- **SynthEBD** ([GitHub](https://github.com/Synthesis-Collective/SynthEBD)) — Synthesis patcher for NPC equipment/outfit distribution with complex rule-based config. Use as a SPID alternative when a mod has no SPID config or needs multi-condition NPC filtering. Included in the Synthesis pipeline (→ `Performance`, Stage 1). Add SynthEBD configs per armor mod when SPID distribution is unavailable or insufficient.
 
 ---
 
