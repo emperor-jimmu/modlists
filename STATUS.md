@@ -34,11 +34,6 @@
 - [x] Mobility: Immersive Aircraft, Small Ships
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
 
-### Wave 2.5 — Schematic Building (2 mods)
-- [x] Forgematica + MaFgLib dep selected
-- [x] Tutorial written in GETTING-STARTED.md covering schematic sources, keybinds, Easy Place Mode, Material List, Schematic Verifier, single-layer mode
-- [x] Interdependency notes: pairs with Building Wands (Wave 6), client-side only, shader compatibility
-
 ### Wave 3 — Equipment Magic & RPG (~18 mods incl. 10 deps)
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
 - [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
@@ -156,7 +151,6 @@
 - [x] Darker Depths 2.1.4 crash at startup — missing TerraBlender (worldgen API). Darker Depths 2.1+ requires TerraBlender or Biolith to register its cave biomes. Added TerraBlender NeoForge 1.21.1-4.1.0.8 as a required dependency.
 
 ### Added Mods (Jul 2026 continued)
-- [x] Forgematica + MaFgLib dep (Wave 2.5 — Schematic Building)
 - [x] Cherished Worlds v10.1.1 (Wave 0 — Visual & Client QoL)
 
 ### Added Mods (Jul 2026 batch 2)
