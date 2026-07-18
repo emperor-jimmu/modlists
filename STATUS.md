@@ -193,5 +193,23 @@
 - [x] Create: Power Grid (Wave 1 — Create Addons)
 - [x] TFMG Energy Converter (Wave 1 — Create Addons) + Kotlin for Forge dep — crash was missing Kotlin stdlib, fixed
 
+### Added Mods (Jul 2026 — Research Batch)
+- [x] Eating Animations (Wave 0 — Visual & Client QoL) — NeoForge 1.21.1 available as eatinganimation-1.21.0-6.0.1.jar
+- [x] Camera Overhaul (Wave 0 — Visual & Client QoL) — v2.0.5 for NeoForge 1.21.0-1.21.1
+- [x] Improved Village Placement (Wave 0 — Village & Trading) — v1.1.1 for NeoForge 1.21.1
+- [x] The Magic Mirror (Wave 6 — Building & Decoration) — v1.21.1-1.0.0.1887 for NeoForge
+- [x] \[DLS\] Dark Loading Screen (Wave 0 — Visual & Client QoL) — dark loading screen replacement
+
+### Skipped After Review (Jul 2026)
+- [x] Dynamic Surroundings — overlaps with AmbientSounds (ambience), Presence Footsteps (footsteps), and Particular Reforged (particles)
+- [x] Ambient Environment — redundant with AmbientSounds
+- [x] Cool Rain — Fabric-only; Cool Rain Reforged stale; overlap with DS/AmbientSounds
+- [x] Continuity — requires Sinytra Connector + FFAPI on NeoForge; Fusion (already a dep) covers connected textures
+- [x] Smooth Scrolling Refurbished — Fabric-only, no NeoForge version
+- [x] Pocketwatch — Fabric-only, no NeoForge version
+- [x] Make Bubbles Pop — no native NeoForge (requires Connector); author planning port but unreleased
+- [x] Fadeless — available but skippable; loading fades are a minor annoyance
+- [x] Explosive Enhancement — not essential; Camera Overhaul already adds explosion screen shakes
+
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)

@@ -435,9 +435,11 @@ Tooltip Overhaul redesigns the tooltip appearance — rounded corners, smoother 
 
 **No config needed** — install and forget.
 
-#### Eating Animations (N/A — not updated for 1.21.1 NeoForge)
+#### Eating Animations
 
-Eating Animation and its ports are not available for NeoForge 1.21.1. The original mod (Fabric) and the Forge port both have no 1.21.1 release. No replacement exists on CurseForge for this version. Remove from install list if present.
+Adds a first-person eating and drinking animation — food moves to the player's mouth and shrinks as it's consumed. Works in the inventory HUD too (configurable in `eatinganimation-client.toml`). Compatible with Farmer's Delight foods.
+
+**No config needed** — install and forget.
 
 #### Sounds
 

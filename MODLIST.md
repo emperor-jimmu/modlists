@@ -87,19 +87,19 @@ If installing manually:
 
 ### Dependencies
 
-| Mod                                                                                         | Role                                                           |
-|---------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config)                   | Config screen library                                          |
-| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api)           | Cross-loader compatibility                                     |
-| [YACL](https://www.curseforge.com/minecraft/mc-mods/yacl)                                   | Config library                                                 |
-| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                           | Accessory slots (replaces Trinkets)                            |
-| [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)                   | Library (AmbientSounds)                                        |
-| [OctoLib](https://www.curseforge.com/minecraft/mc-mods/shatterbyte-lib)                     | Library (Immersive UI)                                         |
-| [Fragmentum](https://www.curseforge.com/minecraft/mc-mods/fragmentum)                       | Library (Loot Journal)                                         |
-| [M.R.U](https://www.curseforge.com/minecraft/mc-mods/mru)                                   | Library (Sounds)                                               |
-| [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api)                        | Library (Traveler's Titles, YUNG's Better mods)                |
-| [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) | First-person animation library (First Person Model dependency) |
-| [Balm](https://www.curseforge.com/minecraft/mc-mods/balm)                                   | Multi-loader library (Inventory Essentials)                   |
+| Mod                                                                                         | Role                                                                       |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config)                   | Config screen library                                                      |
+| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api)           | Cross-loader compatibility                                                 |
+| [YACL](https://www.curseforge.com/minecraft/mc-mods/yacl)                                   | Config library                                                             |
+| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                           | Accessory slots (replaces Trinkets)                                        |
+| [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)                   | Library (AmbientSounds)                                                    |
+| [OctoLib](https://www.curseforge.com/minecraft/mc-mods/shatterbyte-lib)                     | Library (Immersive UI)                                                     |
+| [Fragmentum](https://www.curseforge.com/minecraft/mc-mods/fragmentum)                       | Library (Loot Journal)                                                     |
+| [M.R.U](https://www.curseforge.com/minecraft/mc-mods/mru)                                   | Library (Sounds)                                                           |
+| [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api)                        | Library (Traveler's Titles, YUNG's Better mods)                            |
+| [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) | First-person animation library (First Person Model dependency)             |
+| [Balm](https://www.curseforge.com/minecraft/mc-mods/balm)                                   | Multi-loader library (Inventory Essentials)                                |
 | [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge)           | Kotlin stdlib — required by Kotlin-based mods (e.g. TFMG Energy Converter) |
 
 > **Note**: GDLauncher installs dependencies **automatically** when you install a mod through its Addons tab. You do not need to manually download or install any dependency entries in this document — just install the mods themselves and GDLauncher pulls in what's needed.
@@ -129,23 +129,26 @@ If installing manually:
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                                       | Nature ambiance (birds, wind, water)                                                           |
 | [The Immersive Music Mod](https://www.curseforge.com/minecraft/mc-mods/the-immersive-music-mod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved                            |
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                                         | Animated UI, smooth hotbar, item particles                                                     |
-| [Status Effect Bars Reforged](https://www.curseforge.com/minecraft/mc-mods/status-effect-bars-reforged)           | Duration bars on status effect icons in HUD and inventory                                       |
+| [Status Effect Bars Reforged](https://www.curseforge.com/minecraft/mc-mods/status-effect-bars-reforged)           | Duration bars on status effect icons in HUD and inventory                                      |
 | [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)                       | RPG-style titles entering biomes/dimensions                                                    |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                            | Enhanced mod list screen with badges/categories                                                |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                           | Independent 360° camera rotation in third-person view                                          |
 | [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                                 | Modern, sharp tooltip rendering with equipment compare                                         |
 | [First Person Model](https://www.curseforge.com/minecraft/mc-mods/first-person-model)                             | Full body rendering in first-person view (requires Not Enough Animations)                      |
-| [3D Skin Layers](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d)                                   | Renders player skin layers (jackets, hats) with 3D depth                                       |
+| [3D Skin Layers](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d)                                     | Renders player skin layers (jackets, hats) with 3D depth                                       |
 | [Presence Footsteps](https://www.curseforge.com/minecraft/mc-mods/presence-footsteps-neoforge)                    | Block-aware footstep sounds for every surface type                                             |
 | [Particular Reforged](https://www.curseforge.com/minecraft/mc-mods/particular-reforged)                           | Ambient particles: 3D water splashes, fireflies, falling leaves, cave dust, waterfall cascades |
 | [Wakes Reforged](https://www.curseforge.com/minecraft/mc-mods/wakes-reforged)                                     | Realistic water wakes and splashes when traveling on water                                     |
 | [Sounds](https://www.curseforge.com/minecraft/mc-mods/sound)                                                      | 170+ new sound effects for UIs, items, blocks, actions                                         |
 | [Better Days](https://www.curseforge.com/minecraft/mc-mods/betterdays)                                            | Customizable day/night cycle length, enhanced sleep                                            |
-| [Better Safe Bed](https://www.curseforge.com/minecraft/mc-mods/better-safe-bed)                                  | Prevents mobs that can't reach you from blocking sleep — chill-rule essential                  |
+| [Better Safe Bed](https://www.curseforge.com/minecraft/mc-mods/better-safe-bed)                                   | Prevents mobs that can't reach you from blocking sleep — chill-rule essential                  |
 | [Beautiful Enchanted Books [Mod Edition]](https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books) | Unique textures per enchantment book type — standalone mod, no resource pack needed            |
 | [Overflowing Bars](https://www.curseforge.com/minecraft/mc-mods/overflowing-bars)                                 | Expanded health, armor, and toughness bars beyond vanilla limits                               |
 | [Cherished Worlds](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds)                                 | Favorite/pin worlds to top of list, prevent accidental deletion                                |
 | [Day Counter](https://www.curseforge.com/minecraft/mc-mods/day-counter)                                           | Day counter title overlay with milestone celebrations — appears at dawn each day               |
+| [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)                           | First-person eating/drinking animation — food moves to mouth and shrinks                       |
+| [Camera Overhaul](https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul)                                    | Camera tilting, screen shakes, mouselook roll, idle sway — satisfying movement feedback        |
+| [\[DLS\] Dark Loading Screen](https://www.curseforge.com/minecraft/mc-mods/dls-dark-loading-screen/files/7425971) | Replaces the default bright-red loading screen with a dark version — easier on the eyes        |
 
 ### Shaderpack
 
@@ -181,22 +184,22 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 ### Inventory & UI
 
-| Mod                                                                                         | Role                                             |
-|---------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)                                     | Recipe viewer                                    |
-| [Jade](https://www.curseforge.com/minecraft/mc-mods/jade)                                   | Block info HUD                                   |
-| [Jade Addons (Neo/Forge)](https://www.curseforge.com/minecraft/mc-mods/jade-addons-forge)   | Extra Jade info panels                           |
-| [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)                       | Real-time minimap + full-screen world map, waypoints, entity radar |
+| Mod                                                                                           | Role                                                               |
+|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)                                       | Recipe viewer                                                      |
+| [Jade](https://www.curseforge.com/minecraft/mc-mods/jade)                                     | Block info HUD                                                     |
+| [Jade Addons (Neo/Forge)](https://www.curseforge.com/minecraft/mc-mods/jade-addons-forge)     | Extra Jade info panels                                             |
+| [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)                         | Real-time minimap + full-screen world map, waypoints, entity radar |
 | [JourneyMap Integration](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) | Shows Waystones as icons on JourneyMap                             |
-| [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                         | Food hunger/saturation overlay                   |
-| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                   | Inventory management shortcuts                   |
-| [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)   | Drag-to-transfer, single-item moves, sorting     |
-| [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                   | Beautiful animated advancement popups            |
-| [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)       | Preview shulker box contents on hover            |
-| [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                   | Colored borders on items based on rarity         |
-| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)          | Animated item pickup notifications               |
-| [Reliable Advancements](https://www.curseforge.com/minecraft/mc-mods/reliable-advancements) | Overhauled advancements UI with editor/pan/zoom  |
-| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                         | Choose crafting result when recipes conflict     |
+| [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                           | Food hunger/saturation overlay                                     |
+| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                     | Inventory management shortcuts                                     |
+| [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)     | Drag-to-transfer, single-item moves, sorting                       |
+| [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                     | Beautiful animated advancement popups                              |
+| [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)         | Preview shulker box contents on hover                              |
+| [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                     | Colored borders on items based on rarity                           |
+| [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)            | Animated item pickup notifications                                 |
+| [Reliable Advancements](https://www.curseforge.com/minecraft/mc-mods/reliable-advancements)   | Overhauled advancements UI with editor/pan/zoom                    |
+| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                           | Choose crafting result when recipes conflict                       |
 
 ### Storage & Travel
 
@@ -219,9 +222,10 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 ### Village & Trading
 
-| Mod                                                                                                                               | Role                                                                      |
-|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [Dynamic Villager Trades Neoforge](https://www.curseforge.com/minecraft/mc-mods/dynamic-villager-trades-neoforge) 1.0.0         | Dynamically changing villager trades — villagers specialize in what you buy from them, reducing the need for massive trading halls |
+| Mod                                                                                                                     | Role                                                                                                                               |
+|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| [Dynamic Villager Trades Neoforge](https://www.curseforge.com/minecraft/mc-mods/dynamic-villager-trades-neoforge) 1.0.0 | Dynamically changing villager trades — villagers specialize in what you buy from them, reducing the need for massive trading halls |
+| [Improved Village Placement](https://www.curseforge.com/minecraft/mc-mods/improved-village-placement)                   | Forces villages to spawn on flat terrain — prevents cliff-side and underwater villages                                             |
 
 ### Configuration — Village & Trading
 
@@ -353,7 +357,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Steam \'n\' Rails NeoForge](https://www.curseforge.com/minecraft/mc-mods/steam-n-rails-neoforge) 0.2.1                  | Expanded train system — new tracks (spruce, monorail), semaphores, conductor mob, coupling/decoupling blocks                                              |
 | [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) (TFMG)                     | Heavy engineering & oil — crude oil drilling, distillation, diesel/gasoline/LPG engines, steel, aluminum, electricity with voltage                        |
 | [Mekanism TFMG Compatibility](https://www.curseforge.com/minecraft/mc-mods/mekanism-the-factory-must-grow-compatibility) | 85+ recipe bridges — deduplicates lead/steel/sulfur, integrates aluminum/plastic into Mekanism chains                                                     |
-| [TFMG Energy Converter](https://modrinth.com/mod/tfmg-energy-converter) 26.03                                              | Bidirectional TFMG electricity ↔ FE/AE2 bridge — lets TFMG diesel engines/generators power non-TFMG machines (Mekanism, AE2). Requires Kotlin for Forge   |
+| [TFMG Energy Converter](https://modrinth.com/mod/tfmg-energy-converter) 26.03                                            | Bidirectional TFMG electricity ↔ FE/AE2 bridge — lets TFMG diesel engines/generators power non-TFMG machines (Mekanism, AE2). Requires Kotlin for Forge   |
 | [Create: Gunsmithing](https://www.curseforge.com/minecraft/mc-mods/cgs)                                                  | Steampunk firearms integrated with Create — craftable using Create machines. Animated guns, attachments, ammo types. Optional Better Combat compatibility |
 | [Create Ornithopter Glider](https://www.curseforge.com/minecraft/mc-mods/create-ornithopter-glider)                      | Mechanical flapping glider with boost-assisted flight — integrates with Create rotational power                                                           |
 | [Create: Train Utilities](https://www.curseforge.com/minecraft/mc-mods/create-trainutilities) 3.0.3                      | Sliding doors with realistic sounds, platform blocks, station building blocks                                                                             |
@@ -526,10 +530,10 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 
 ### Mobility
 
-| Mod                                                                                         | Role                                                                                           |
-|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) 1.1.5 | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable |
-| [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships) 2.0.0-b2.1           | Sailable ships — brigantine, cog, drakkar, galley. Build, crew, and navigate; moveable bases on water. Beta (NeoForge) |
+| Mod                                                                                         | Role                                                                                                                   |
+|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) 1.1.5 | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable                         |
+| [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships) 2.0.0-b2.1          | Sailable ships — brigantine, cog, drakkar, galley. Build, crew, and navigate; moveable bases on water. Beta (NeoForge) |
 
 ### Configuration — Wave 2
 
@@ -721,16 +725,16 @@ This cost curve encourages the player to settle for "good enough" gear until the
 
 ## Wave 4 — Food, Farming & Comfort
 
-| Mod                                                                                                   | Role                                                                  |
-|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**Farmer's Delight**](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) 1.3.2            | Cooking hub — cutting board, cooking pot, stove, new crops            |
-| [**Brewin' And Chewin'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0       | Drinks and fermentation — beer, wine, mead, whiskey                   |
-| [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight) 1.3.0             | Kitchen furniture — drawers, cabinets, shelves for ingredient storage |
-| [**More Delight**](https://www.curseforge.com/minecraft/mc-mods/more-delight) 26.04.18a+1.21-neoforge | Extra meals, sandwiches, toasts, and knife variants                   |
-| [**My Nether's Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 1.10.2     | Nether-themed food ingredients and recipes                            |
-| [**Ocean's Delight**](https://www.curseforge.com/minecraft/mc-mods/oceans-delight) 1.0.4              | Ocean-themed seafood dishes                                           |
-| [**Ender's Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0             | End-themed food for Farmer's Delight (moved from Wave 2)              |
-| [Neo Bee Fix](https://modrinth.com/mod/neo-bee-fix)                                                               | Fixes bee AI bugs — bees leave hives, don't fall from sky, no NW wander bias |
+| Mod                                                                                                   | Role                                                                         |
+|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| [**Farmer's Delight**](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) 1.3.2            | Cooking hub — cutting board, cooking pot, stove, new crops                   |
+| [**Brewin' And Chewin'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0       | Drinks and fermentation — beer, wine, mead, whiskey                          |
+| [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight) 1.3.0             | Kitchen furniture — drawers, cabinets, shelves for ingredient storage        |
+| [**More Delight**](https://www.curseforge.com/minecraft/mc-mods/more-delight) 26.04.18a+1.21-neoforge | Extra meals, sandwiches, toasts, and knife variants                          |
+| [**My Nether's Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 1.10.2     | Nether-themed food ingredients and recipes                                   |
+| [**Ocean's Delight**](https://www.curseforge.com/minecraft/mc-mods/oceans-delight) 1.0.4              | Ocean-themed seafood dishes                                                  |
+| [**Ender's Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0             | End-themed food for Farmer's Delight (moved from Wave 2)                     |
+| [Neo Bee Fix](https://modrinth.com/mod/neo-bee-fix)                                                   | Fixes bee AI bugs — bees leave hives, don't fall from sky, no NW wander bias |
 
 ### New Dependencies (Wave 4)
 
@@ -797,16 +801,17 @@ Apotheosis also adds boss modifiers and elite mob affixes — partially covers w
 
 ### Core Decoration
 
-| Mod                                                                             | Role                                                          |
-|---------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Rechiseled](https://www.curseforge.com/minecraft/mc-mods/rechiseled)           | 600+ decorative block variants with connected textures        |
-| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) | Vanilla+ decoration — jars, signposts, faucets, weather vanes |
-| [Macaw\'s Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges) | Bridges in all wood types                                     |
-| [Macaw\'s Doors](https://www.curseforge.com/minecraft/mc-mods/macaws-doors)     | Vanilla-style doors for every wood                            |
-| [Macaw\'s Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)     | Roofing blocks                                                |
-| [Macaw\'s Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows) | Window variants                                               |
-| [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands)   | Faster large-scale construction                               |
-| [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)         | Furniture — chairs, tables, shelves, curtains                 |
+| Mod                                                                               | Role                                                               |
+|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| [Rechiseled](https://www.curseforge.com/minecraft/mc-mods/rechiseled)             | 600+ decorative block variants with connected textures             |
+| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries)   | Vanilla+ decoration — jars, signposts, faucets, weather vanes      |
+| [Macaw\'s Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges)   | Bridges in all wood types                                          |
+| [Macaw\'s Doors](https://www.curseforge.com/minecraft/mc-mods/macaws-doors)       | Vanilla-style doors for every wood                                 |
+| [Macaw\'s Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)       | Roofing blocks                                                     |
+| [Macaw\'s Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows)   | Window variants                                                    |
+| [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands)     | Faster large-scale construction                                    |
+| [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)           | Furniture — chairs, tables, shelves, curtains                      |
+| [The Magic Mirror](https://www.curseforge.com/minecraft/mc-mods/the-magic-mirror) | Reflective mirror block that shows the nearest player's reflection |
 
 ### Rechiseled Addons
 
@@ -864,17 +869,17 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 ## Mod Count Summary
 
-| Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                      |
-|----------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation        | 58      | 9      | 67      | Performance, QoL, time control, storage, travel, graves, village trading, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                                                                                  |
+| Wave                       | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
+|----------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wave 0 — Foundation        | 58      | 9      | 67      | Performance, QoL, time control, storage, travel, graves, village trading, UI, chunk loading (+6 resource packs, 1 shaderpack, 1 data pack)                                                                                                                             |
 | Wave 1 — Tech              | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
-| Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                              |
-| Wave 2 — Exploration       | 24      | 6      | 30      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships                                                                                       |
-| Wave 2.5 — Schematic Build | 1       | 1      | 2       | Forgematica + MaFgLib dep                                                                                                                                                                                                                                  |
-| Wave 3 — Equipment Magic   | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                   |
-| Wave 4 — Food & Farming    | 8       | —      | 8       | Farmer's Delight + 6 addon mods + Neo Bee Fix                                                                                                                                                                                                              |
-| Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                                                                                                  |
-| Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                     |
-| Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                                                       |
-| Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                  |
-| **Total**                  | **141** | **41** | **182** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                              |
+| Wave 1.5 — Colony          | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                                          |
+| Wave 2 — Exploration       | 24      | 6      | 30      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships                                                                                                  |
+| Wave 2.5 — Schematic Build | 1       | 1      | 2       | Forgematica + MaFgLib dep                                                                                                                                                                                                                                              |
+| Wave 3 — Equipment Magic   | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
+| Wave 4 — Food & Farming    | 8       | —      | 8       | Farmer's Delight + 6 addon mods + Neo Bee Fix                                                                                                                                                                                                                          |
+| Wave 4.5 — Quests          | 1       | —      | 1       | Bountiful                                                                                                                                                                                                                                                              |
+| Wave 5 — Combat            | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
+| Wave 6 — Building          | 10      | 3      | 13      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                                                                   |
+| Wave 7 — Space Exploration | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
+| **Total**                  | **141** | **41** | **182** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
