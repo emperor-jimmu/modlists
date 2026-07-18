@@ -5,6 +5,7 @@ Uses Playwright (Chromium) for rendering — zero system dependencies beyond
 what Playwright already bundles. Works on Windows, macOS, and Linux.
 """
 
+import base64
 import re
 import sys
 from pathlib import Path
@@ -20,6 +21,7 @@ except ImportError:
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MODLIST_DIR = REPO_ROOT / "modlist"
 VERSION_PATH = REPO_ROOT / "VERSION"
+LOGO_PATH = REPO_ROOT / "assets" / "Netrunner's_shadow_logo_2K.jpeg"
 OUTPUT_PATH = REPO_ROOT / "cyberpunk-2077-modlist.pdf"
 
 CATEGORY_FILES = sorted(MODLIST_DIR.glob("*.md"))
@@ -151,6 +153,12 @@ li {
     page-break-after: always;
 }
 
+.cover-page .logo {
+    max-width: 6cm;
+    max-height: 6cm;
+    margin-bottom: 1.5cm;
+}
+
 .cover-page h1 {
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 36pt;
@@ -230,7 +238,13 @@ def read_version() -> str:
 
 def build_cover_html() -> str:
     version = read_version()
+    logo_src = ""
+    if LOGO_PATH.exists():
+        logo_bytes = LOGO_PATH.read_bytes()
+        logo_b64 = base64.b64encode(logo_bytes).decode("ascii")
+        logo_src = f'<img class="logo" src="data:image/jpeg;base64,{logo_b64}" alt="Logo">'
     return f"""<div class="cover-page">
+{logo_src}
 <h1>Cyberpunk 2077 Modlist</h1>
 <div class="accent-line"></div>
 <div class="subtitle">A curated, performance-conscious modding guide</div>
