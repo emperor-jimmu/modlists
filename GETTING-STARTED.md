@@ -1059,6 +1059,204 @@ After defeating the Ender Dragon, the End becomes a full dimension.
 
 ---
 
+## Wave 2.5 — Building Your Home
+
+You've explored the world, found stunning biomes, and gathered materials. Now it's time to stop surviving and start **living**. This section covers how to build a home you're proud of — no creative mode required, no artistic talent assumed. Just a few principles that separate "dirt hut" from "place I actually want to come back to."
+
+Building is a core pillar of this modpack. At any point you can stop optimizing factories and just build something beautiful. This guide works at any stage — but it's especially satisfying now, when you have enough materials to be selective but haven't yet automated everything.
+
+### Finding Your Build Site
+
+Before placing a single block, find a location that inspires you. You have tools for this:
+
+| Tool | How | Why |
+|------|-----|-----|
+| **Explorer's Compass** | Craft: 1 compass + 4 iron (+pattern). Right-click → search "cherry", "redwood", "meadow" | Find specific biomes by name |
+| **JourneyMap** | Press `J` → explore the fullscreen map | See terrain, biomes, and your marked waypoints |
+| **Small Ship** | Sail along coastlines | Discover waterfronts you'd miss on foot |
+| **Biplane** | Fly low over terrain | Spot valley builds, mountain perches, river mouths |
+
+**What to look for**:
+
+- **Waterfront** — river banks, ocean cliffs, lake shores. Water reflects builds beautifully with shaders
+- **Mountain valleys** — enclosed, dramatic, defensible. Terralith makes these spectacular
+- **Forest clearings** — surrounded by trees feels cozy and sheltered
+- **Cliff faces** — cut into the hillside for a build that looks permanent, not placed
+- **Cherry groves** — pink petals + mountain backdrop = instant atmosphere
+
+**Pro tip**: Place a **Waystone** at your chosen site before you start building. You'll want to teleport back with materials.
+
+### The Block Palette Rule
+
+The single biggest upgrade from "meh" to "wow" is using **3–5 complementary blocks** instead of one. Every great build you've ever seen uses a palette. Here's the formula:
+
+| Role | Percentage | Purpose |
+|------|-----------|---------|
+| **Primary** | ~50% | Dominant wall material — defines the build |
+| **Secondary** | ~30% | Complementary texture — similar tone, different surface |
+| **Accent** | ~20% | Detail material — corners, trim, highlights, pops of color |
+
+#### Finding Palettes: BlockPalettes.com
+
+**[BlockPalettes.com](https://www.blockpalettes.com)** — the single best resource for block combination inspiration. Browse hundreds of community-created palettes, each showing exactly which blocks work together. Filter by style, color, or mood.
+
+**How to use it**:
+
+1. Open [blockpalettes.com/palettes](https://www.blockpalettes.com/palettes)
+2. Browse featured palettes or filter by color/theme
+3. Click a palette to see all blocks in the combination
+4. Test it: place a 5×5 section in a flat area, step back, see if it works
+5. If any block fights the others, swap it out
+
+#### Starter Palettes for This Modpack
+
+These palettes use blocks you can gather in Waves 0–2. Each fits a different biome and vibe:
+
+**Medieval Stone** — stone brick + cracked stone brick + mossy stone brick + cobblestone (corners/base)
+
+**Cozy Cottage** — oak planks + spruce planks + cobblestone (chimney/base) + oak leaves (roofline trim)
+
+**Desert Sandstone** — sandstone + smooth sandstone + cut sandstone + terracotta accents
+
+**Nordic Cabin** — spruce planks + stripped spruce log + stone + dark oak stairs (roof)
+
+**Cherry Zen** — cherry planks + cherry log + stone brick + pink petals (garden)
+
+**Mountain Fortress** — stone brick + deepslate tiles + tuff bricks + copper (accents/patina)
+
+**Tropical** — jungle planks + bamboo mosaic + mangrove propagules + sand
+
+**Endstone Palace** — purpur block + purpur pillar + end stone bricks + chorus flower (End builds)
+
+**Tip**: Open BlockPalettes.com in your browser while you build. When you're stuck on what goes together, browse palettes until something clicks.
+
+### Depth and Layering
+
+Flat walls are the second most common beginner mistake (after single-block builds). A flat wall looks like a placeholder. A layered wall looks **built**.
+
+#### Five Techniques That Transform Flat Walls
+
+| Technique | How to do it | Why it works |
+|-----------|-------------|--------------|
+| **Inset windows** | Push glass back one block into the wall instead of flush with the surface | Creates shadow lines that frame windows |
+| **Outcropped corners** | Extend corner blocks one block forward from the main wall plane | Breaks up 90-degree edges, adds structural feel |
+| **Alternating depth** | Every 3–4 blocks along a wall, push one column back or pull one forward | Wall reads as textured rather than uniform |
+| **Stair/slab detailing** | Upside-down stairs under windowsills, stairs as roofline trim, slabs as half-height ledges | Catches light and shadow in ways full blocks can't |
+| **Overhanging roofline** | Always extend the roof 1–2 blocks past the wall on all sides | Creates shadow line that defines where building ends and sky begins |
+
+**Fastest single improvement**: Add vertical **log pillars** every 3–5 blocks along exterior walls. Logs imply structural support and instantly break up flat surfaces. Works with every style.
+
+### Roof Design
+
+A bad roof ruins a good build. A good roof makes even a simple box look intentional.
+
+#### Three Roof Styles (Pick One)
+
+| Style | Shape | Best for | How |
+|-------|-------|----------|-----|
+| **A-frame (pitched)** | Triangle cross-section | Cottages, cabins, medieval | Stairs ascending from each wall meeting at a ridge. Overhang 1 block on all sides |
+| **Flat with parapet** | Flat top, raised edges | Modern, desert, fortress | Slabs or full blocks, 1-block wall around perimeter |
+| **Stepped pyramid** | Layered squares getting smaller | Asian, temples, fantasy | Each layer 2 blocks smaller than the one below |
+
+**Material rule**: Roof material should **contrast** with wall material. Dark roof on light walls, or vice versa. Spruce stairs on oak walls. Deepslate on stone brick. Blackstone on sandstone.
+
+**Common mistake**: Roof too small. The roof should be wider and taller than feels "necessary." An oversized roof looks dramatic; an undersized one looks like a hat that doesn't fit.
+
+### Interior Design
+
+An empty interior is as bad as a bad exterior. Minecraft has no furniture mod yet (Wave 6 adds Handcrafted), but vanilla blocks create convincing rooms.
+
+#### Lighting (Critical)
+
+**Never place torches on interior walls.** They look improvised. Better options:
+
+| Light source | Look | How |
+|-------------|------|-----|
+| **Lanterns** | Warm, architectural | Hang from ceiling via fence post |
+| **Glow berries** | Organic, trailing | Place on ceiling, let vines trail down |
+| **Sea lanterns** | Clean, neutral | Modern or sci-fi builds |
+| **Jack o'lanterns** | Hidden under carpets | Floor lighting without visible sources |
+| **Froglights** | Subtle, colorful | Pearlescent/verdant/ochre variants from Aether or Overworld |
+
+#### Functional Rooms
+
+| Room | Key blocks | Details |
+|------|-----------|---------|
+| **Kitchen** | Smoker, campfire, barrels, chests | Barrel = cabinets. Chest with food item frame = pantry. Cooking pot over campfire |
+| **Bedroom** | Bed, crafting table, bookshelf, lantern | Banner on wall above bed as headboard. Carpet at foot of bed |
+| **Library** | Bookshelves, lectern, quill | Cover walls with bookshelves for instant warmth |
+| **Storage** | Sophisticated Storage barrels, chests | Organized rows. Sign labels on each barrel |
+| **Workshop** | Crafting table, furnace, anvil | Industrial feel — stone walls, iron accents |
+
+**Pro tip**: Place **item frames** on walls with maps, banners, or shields inside. They function as paintings with more variety.
+
+### Blending Into the Landscape
+
+A build that looks dropped from the sky is unfinished, no matter how detailed the structure itself is.
+
+**Key principles**:
+
+- **Use biome-appropriate materials** — spruce in cold biomes, sandstone in desert, dark oak near jungle edges. The build should look like it was built from local materials, not imported
+- **Never leave flat grass at the base** — add a slight slope toward the entrance, gravel/cobblestone paths leading away, small dirt mounds or rock outcroppings at corners
+- **Plant trees near the build** — a cluster of 2–3 trees on one side breaks the silhouette and gives context. Use the biome's native trees
+- **Cut into hillsides** — a build emerging from a hillside looks permanent; one sitting on top looks temporary
+- **Paths and surroundings** — gravel paths, stone brick walkways, and lantern posts leading away from the entrance sell the idea that people live here
+- **Never run more than 7 blocks in a straight line** when shaping terrain — curves look natural, straight lines look artificial
+
+### Modpack-Specific Building Tools
+
+You have tools that vanilla players don't. Use them:
+
+| Tool | What it does for building |
+|------|--------------------------|
+| **Waystones** | Place one at your build site. Teleport home for materials, teleport back. No more carrying 3 inventories of blocks across 500 blocks |
+| **Sophisticated Storage** | Barrels near your build site hold materials organized by type. Label with signs |
+| **Backpack** | Carry your palette blocks in your backpack while building. Press `B` to swap materials on the go |
+| **Create Blueprint** | Craft Blueprint and Quill. Select your finished build → save as blueprint → use Schematicannon to auto-rebuild it elsewhere with materials from chests |
+| **Building Wands** (Wave 6) | Place walls, fill areas, build circles/cylinders in bulk. Wait for Wave 6 for this one |
+| **JourneyMap waypoints** | Mark your build site, mark material locations, mark inspiration you find while exploring |
+| **Dynamic Lights** (`Ctrl+L`) | Hold a lantern while building at night. No more stopping to place torches |
+
+### Quick-Start: Your First Real House
+
+If you've never built anything beyond a dirt hut, follow these steps for your first proper home:
+
+1. **Pick a palette** — Open [BlockPalettes.com](https://www.blockpalettes.com), find 4 blocks you like. Test in a 5×5 section
+2. **Lay the foundation** — Cobblestone or stone brick ring, 7×9 interior minimum (small but not cramped)
+3. **Raise the walls** — Use your primary block. Leave gaps for windows (2-block wide minimum)
+4. **Add depth** — Push windows back 1 block. Add log pillars at corners and every 4 blocks
+5. **Build the roof** — A-frame with stairs. Overhang 1 block. Use a contrasting material
+6. **Add the door** — Center of one wall. Stairs as a small porch step in front
+7. **Light it up** — Lanterns from ceiling, not torches on walls
+8. **Furnish basics** — Bed, crafting table, furnace, 2–4 barrels for storage
+9. **Blend the exterior** — Paths leading away, trees nearby, flowers at the entrance, leaves around the roofline
+10. **Step back and admire** — You just built something worth coming home to
+
+### Community Resources
+
+| Resource | URL | What it's for |
+|----------|-----|---------------|
+| **BlockPalettes** | [blockpalettes.com](https://www.blockpalettes.com) | Block color combinations and palette inspiration |
+| **Building Guide App** | [buildingguide.app](https://buildingguide.app) | Step-by-step tutorials with materials lists (128+ builds) |
+| **r/MinecraftBuilds** | [reddit.com/r/MinecraftBuilds](https://www.reddit.com/r/MinecraftBuilds) | Community showcase, inspiration, feedback |
+| **r/MinecraftHouses** | [reddit.com/r/MinecraftHouses](https://www.reddit.com/r/MinecraftHouses) | House-specific builds and ideas |
+| **r/MinecraftTutorials** | [reddit.com/r/MinecraftTutorials](https://www.reddit.com/r/MinecraftTutorials) | How-to guides for specific techniques |
+| **Minecraft Wiki — Building** | [minecraft.fandom.com/wiki/Building](https://minecraft.fandom.com/wiki/Building) | Official guides on terraforming, furniture, layout |
+
+### Session Plan — Wave 2.5
+
+| Session | Focus | What to Build |
+|---------|-------|---------------|
+| **Session 1 — Site selection** | Explore with Explorer's Compass. Find a biome you love. Place Waystone. Mark on JourneyMap | Your future home location |
+| **Session 2 — Palette + foundation** | Browse BlockPalettes.com. Pick 4 blocks. Lay foundation ring. Raise walls to 4 blocks high | Shell of your first real house |
+| **Session 3 — Roof + depth** | Build A-frame roof. Add log pillars. Inset windows. Add door | Recognizable house shape |
+| **Session 4 — Interior** | Lanterns from ceiling. Bed, crafting table, furnace. Barrels for storage. Item frames on walls | Livable interior |
+| **Session 5 — Landscaping** | Paths, trees, flowers, leaf trim around roofline. Step back and see the difference | Home in a world |
+
+**Tip**: Don't aim for perfection on your first build. Aim for "better than a dirt hut." You can always expand, renovate, or rebuild later. The skills transfer — your second build will be twice as good.
+
+---
+
 ## Wave 3 — Equipment Magic & RPG
 
 Every weapon rolls with random affixes, every accessory provides a unique ability, and a skill tree gives every action meaning. This wave makes you **feel** your character grow alongside your tech.
