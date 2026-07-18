@@ -114,6 +114,17 @@ decorations, garage expansions, and player home systems.
 - **MO2 Notes:** Extract to game root. Prices configurable via Native Settings UI. Supports 11 languages. Overstay fine is 20% of rent cost. 10% discount for multi-day stays.
 - **Performance:** None
 
+### Longshore Apartments - Charter Hill
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/28223
+- **Version:** 1.0
+- **Released:** 2026-03-01
+- **Summary:** Adds a new purchasable apartment in the Charter Hill district. Full interior with functional amenities, lighting controls, and stash access. Located in a luxury high-rise with city views.
+- **Why:** Expands the housing system beyond the vanilla apartments. Charter Hill is an underserved district for player housing — this fills a geographic gap. Works with Eviction Notice's rent system and provides another location to customize and inhabit.
+- **Conflicts:** None known. Standard apartment mod — compatible with housing and rent systems.
+- **Dependencies:** ArchiveXL, Codeware, RED4ext, TweakXL. Compatible with Eviction Notice (#23187) and Dark Future (#16300).
+- **MO2 Notes:** Extract to game root. Purchase via computer terminal or real estate listing. Rent applies if using Eviction Notice. Tag as **Root**.
+- **Performance:** None
+
 ---
 
 ## Install Order
@@ -127,4 +138,5 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 5. Apartment Cats - Dogtown
 6. Apartment Toys
 7. Rent a Motel
-8. Lucy Apartment Remastered
+8. Longshore Apartments - Charter Hill
+9. Lucy Apartment Remastered

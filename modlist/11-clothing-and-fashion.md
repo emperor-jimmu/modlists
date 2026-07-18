@@ -90,3 +90,75 @@ atelier stores, outfit management systems, and wardrobe expansion.
     - Access via hub menu backpack button. Configure sorting in Mod Settings.
     - Supports Ctrl+click and Shift+click for multi-select.
 - **Performance:** Light (custom UI only on backpack open)
+
+### Virtual Atelier Delivery
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/21482
+- **Version:** Verify
+- **Released:** 2025-05-01
+- **Summary:** Adds a delivery system to Virtual Atelier purchases — items ordered online are shipped to V's apartment stash rather than appearing instantly in inventory.
+- **Why:** Virtual Atelier is already in the modlist as the online shopping framework. The instant-item-delivery breaks immersion — this adds a realistic delivery delay that makes shopping feel grounded in the world. Complements Virtual Atelier without changing its core functionality.
+- **Conflicts:** None known. Requires Virtual Atelier.
+- **Dependencies:** Virtual Atelier (#2987, already installed). ArchiveXL, Codeware, RED4ext, TweakXL.
+- **MO2 Notes:** Extract to game root. Install after Virtual Atelier. Configure delivery time via settings. Tag as **Root**.
+- **Performance:** None
+
+### Hyst Atelier Store - Virtual Atelier
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/6015
+- **Version:** Verify
+- **Released:** 2023-11-01
+- **Summary:** Virtual Atelier storefront for Hyst body-compatible clothing. Adds a curated selection of outfits and individual pieces designed for Hyst body meshes.
+- **Why:** Expands the Virtual Atelier ecosystem with a dedicated store for Hyst-compatible clothing. Since Hyst Bodies (#9887) is already in the modlist, having a clothing store that specifically supports that body framework ensures clothing compatibility.
+- **Conflicts:** None known. Virtual Atelier store — no world edits.
+- **Dependencies:** Virtual Atelier (#2987). Hyst Bodies (#9887) for full body compatibility.
+- **MO2 Notes:** Extract to game root. Install after Virtual Atelier and Hyst Bodies. Access via Virtual Atelier computer terminal. Tag as **Root**.
+- **Performance:** None
+
+### Zenitex Virtual Atelier
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/10090
+- **Version:** Verify
+- **Released:** 2023-10-01
+- **Summary:** Virtual Atelier storefront offering a wide range of stylish, cyberpunk-appropriate clothing for Fem V. Includes casual wear, street fashion, and corpo attire.
+- **Why:** Expands the Virtual Atelier ecosystem with a well-curated clothing store. Zenitex is one of the most popular Atelier stores on Nexus, offering high-quality, lore-appropriate fashion that fits Night City's aesthetic.
+- **Conflicts:** None known. Virtual Atelier store.
+- **Dependencies:** Virtual Atelier (#2987). Community Palette Project (#10437) for color variants.
+- **MO2 Notes:** Extract to game root. Install after Virtual Atelier. Access via Virtual Atelier computer terminal. Tag as **Root**.
+- **Performance:** None
+
+### The Zenitex Military Store
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/21735
+- **Version:** Verify
+- **Released:** 2025-06-01
+- **Summary:** Virtual Atelier storefront for tactical and military-style clothing and gear. Includes combat pants, tactical vests, military jackets, and operator-wear.
+- **Why:** Night City's combat zones and edgerunner culture demand tactical fashion alongside street style. This store fills the tactical/military niche in the Virtual Atelier ecosystem, offering practical combat-ready clothing options.
+- **Conflicts:** None known. Virtual Atelier store.
+- **Dependencies:** Virtual Atelier (#2987). Zenitex Virtual Atelier (#10090) for shared assets.
+- **MO2 Notes:** Extract to game root. Install after Zenitex Virtual Atelier. Access via Virtual Atelier computer terminal. Tag as **Root**.
+- **Performance:** None
+
+### NanoSuit - Archive XL
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/14677
+- **Version:** Verify
+- **Released:** 2024-05-01
+- **Summary:** Adds a high-tech nanosuit armor set using ArchiveXL framework. Includes helmet, body suit, and accessories with customizable colors and variants.
+- **Why:** A nanosuit fits perfectly in Cyberpunk's transhumanist world — it's the kind of cutting-edge combat tech that corps and edgerunners would use. ArchiveXL-based means no file conflicts. Serves both the clothing and armor pillars.
+- **Conflicts:** None known (ArchiveXL-based, no file overwrites)
+- **Dependencies:** ArchiveXL, TweakXL, Community Palette Project (#10437)
+- **MO2 Notes:** Extract to game root. Access via Virtual Atelier or console commands. Tag as **Root**.
+- **Performance:** None
+
+---
+
+## Install Order
+
+All mods are **Root**-category — enable Root Builder in MO2 before installing.
+
+1. Virtual Atelier
+2. Equipment-EX
+3. The Community Palette Project
+4. Novawear Pants - Fem Masc V (ArchiveXL)
+5. Revised Backpack
+6. Virtual Atelier Delivery
+7. Hyst Atelier Store - Virtual Atelier
+8. Zenitex Virtual Atelier
+9. The Zenitex Military Store
+10. NanoSuit - Archive XL

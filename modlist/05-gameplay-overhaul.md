@@ -297,6 +297,54 @@ crafting. This section defines how the game plays.
 - **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Ambush frequency and difficulty are configurable.
 - **Performance:** None
 
+### NIGHT CITY ALIVE
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10395>
+- **Version:** 2.2
+- **Released:** 2023-10-24
+- **Summary:** Major NPC population and traffic overhaul. Increases crowd density, adds dynamic pedestrian behaviors, and makes Night City's streets feel genuinely alive with varied citizen activities, vehicle traffic patterns, and ambient events.
+- **Why:** Vanilla Night City's streets feel sparse and lifeless. This mod transforms the city into a bustling metropolis with realistic population density and traffic flow, serving the "living world" pillar. Replaces Immersive Road Crossing (#26131, removed from 06b) with broader and more comprehensive coverage. 9,400+ endorsements.
+- **Conflicts:** May conflict with other traffic or NPC population mods. Compatible with Night City Interactions (different scope — NCA handles ambient population, NCI handles player-initiated social interactions). Compatible with Immersive Fixers and Responsive NPCs (different behavioral domains).
+- **Dependencies:** REDMod
+- **MO2 Notes:** REDMod file — deploy via REDmod launcher or MO2 REDmod plugin. Test traffic density settings to find the right balance for 4K performance. Tag as **Root**.
+- **Performance:** Moderate (additional NPC and vehicle simulation)
+
+### Responsive NPCs
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/14800>
+- **Version:** 0.26
+- **Released:** 2024-05-20
+- **Summary:** NPCs react dynamically to player actions — commenting on drawn weapons, fleeing from combat, reacting to player appearance and cyberware, and responding to world events contextually.
+- **Why:** Vanilla NPCs are oblivious to the player's actions beyond basic combat states. This adds a layer of world reactivity where citizens notice and respond to what V does, making the world feel responsive rather than scripted. Complements NCA (handles population density) by adding behavioral depth to those NPCs.
+- **Conflicts:** Low — behavioral scripting only, no world edits. Compatible with NCA and Night City Interactions.
+- **Dependencies:** Cyber Engine Tweaks, Native Settings UI (optional)
+- **MO2 Notes:** Extract to CET plugins folder. Configure reaction frequency and types via CET overlay or Native Settings UI. Tag as **Root**.
+- **Performance:** Light (CET scripting, negligible overhead)
+
+### Shift - Dynamic First Person Camera
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22340>
+- **Version:** Verify
+- **Released:** June 2025
+- **Summary:** Adds dynamic camera movement in first-person — head bob, inertia, leaning, and contextual camera shifts based on movement and actions.
+- **Why:** Vanilla first-person camera is rigid and disconnected from V's movement. Shift adds physical presence to the first-person view, making walking, running, and combat feel more grounded without affecting aim or gameplay.
+- **Conflicts:** Check compatibility with Immersive First Person (#9309) — Shift focuses on camera dynamics while IFP focuses on body visibility. May be complementary.
+- **Dependencies:** Cyber Engine Tweaks, Native Settings UI (optional)
+- **MO2 Notes:** Extract to CET plugins folder. Configure intensity via Native Settings UI. Test alongside Immersive First Person for compatibility. Tag as **Root**.
+- **Performance:** None
+
+### The Immersive Way
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30352>
+- **Version:** Verify
+- **Released:** July 2026
+- **Summary:** Adds third-person immersive scenes for Fem V using the Native Interactions Framework, with optional Dark Future integration for survival-contextual actions.
+- **Why:** Extends the Native Interactions Framework with additional immersive scenes, giving Fem V third-person context for daily activities. Dark Future integration ties survival mechanics to visual storytelling, deepening the RPG experience.
+- **Conflicts:** None known. Requires Native Interactions Framework.
+- **Dependencies:** Native Interactions Framework (#10479). Optional: Dark Future (#16300).
+- **MO2 Notes:** Extract to game root. Fem V only. Install after Native Interactions Framework and Dark Future. Tag as **Root**.
+- **Performance:** None
+
 ---
 
 ## Install Order
@@ -323,10 +371,14 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 18. Skillful Attributes
 19. Flesh and Chrome
 20. Watch Your Back
-21. Renaissance Punk - Perk Scaling
-22. Easier Controller Sprint
-23. Bounties Restored
-24. Much Better Eddies
+21. NIGHT CITY ALIVE
+22. Responsive NPCs
+23. Shift - Dynamic First Person Camera
+24. The Immersive Way
+25. Renaissance Punk - Perk Scaling
+26. Easier Controller Sprint
+27. Bounties Restored
+28. Much Better Eddies
 
 **Notes:**
 - **Skillful** must be installed **before** Skillful Attributes (Skillful Attributes requires it)

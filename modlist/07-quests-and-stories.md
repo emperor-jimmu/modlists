@@ -150,6 +150,39 @@ City.
 - **MO2 Notes:** Extract to game root. Quest becomes available after meeting Rita at Lizzie's Bar. Pairs with Rita Post-Romance Messages Addon in 08-Relationships & Romance for ongoing contact.
 - **Performance:** None
 
+### Arasoka Office Job - Counter-Intelligence Division
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/29054
+- **Version:** 1.2
+- **Released:** 2026-05-01
+- **Summary:** New questline involving Arasaka counter-intelligence work. Infiltrate corporate operations and uncover internal Arasaka secrets in a narrative-driven mission series.
+- **Why:** Corporate intrigue is core to Cyberpunk's identity but the vanilla game focuses heavily on street-level stories. This quest adds the white-collar side of Night City — espionage, office politics, and corpo power plays — diversifying the quest portfolio.
+- **Conflicts:** None known. Check compatibility with other quest mods that modify Arasaka-related world sectors.
+- **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Test in isolation first to verify 2.31 compatibility.
+- **Performance:** None
+
+### Taxi Work in Night City
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/15624
+- **Version:** 0.4.6
+- **Released:** 2024-07-01
+- **Summary:** Adds a working taxi driver gameplay loop — pick up fares across Night City, navigate traffic, manage customer satisfaction, and earn eddies as a legitimate driver.
+- **Why:** Adds a peaceful, immersive gameplay activity that contrasts with combat-heavy content. Taxi work lets players experience Night City from a different perspective — as a service worker navigating the streets — deepening the roleplay possibilities. Earns eddies through honest work, fitting the no-cheat philosophy.
+- **Conflicts:** None known. Works alongside NC Courier Jobs and Dedra's Truck Simulator as part of the "working citizen" gameplay layer.
+- **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. v0.4.6 is still in development — expect updates. Works with any vehicle, including modded vehicles.
+- **Performance:** None
+
+### The Thin Blue Line
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/29274
+- **Version:** 1.0
+- **Released:** 2026-06-01
+- **Summary:** NCPD-focused gameplay mod adding police-related activities, interactions, and consequences. Walk the line between law enforcement and the streets.
+- **Why:** The NCPD is a major faction in Cyberpunk lore but vanilla interactions are limited to wanted levels. This mod expands police interactions into a gameplay system, adding moral choices and consequences that deepen the RPG experience.
+- **Conflicts:** Check compatibility with Immersive Fixers (#20808) — The Thin Blue Line handles NCPD/police, Immersive Fixers handles fixer-related behavior. Should be complementary but verify.
+- **Dependencies:** CET, ArchiveXL, Codeware
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Tagged "Fair and balanced" — verify no cheat mechanics.
+- **Performance:** None
+
 ---
 
 ## Song So Mi Romance Arc
@@ -222,9 +255,12 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 10. New Quest - Hot Fuzz
 11. 8ug8ear Romance
 12. Rita Wheeler Romanced
-13. Possibilities
-14. Romantic Hangout with So Mi
-15. The Ransom
-16. Into the Depths
+13. Arasoka Office Job - Counter-Intelligence Division
+14. Taxi Work in Night City
+15. The Thin Blue Line
+16. Possibilities
+17. Romantic Hangout with So Mi
+18. The Ransom
+19. Into the Depths
 
-**Note:** Deceptious Quest Core is also required by mods in 08-Relationships & Romance (Gone Away). Songbird romance arc (items 13-16) requires sending Songbird to the moon in Phantom Liberty. New Quest - Encore requires 2.31 compatibility verification (last updated pre-2.0). Rita Wheeler Romanced is required by Rita Post-Romance Messages Addon in 08-Relationships & Romance.
+**Note:** Deceptious Quest Core is also required by mods in 08-Relationships & Romance (Gone Away). Songbird romance arc (items 16-19) requires sending Songbird to the moon in Phantom Liberty. New Quest - Encore requires 2.31 compatibility verification (last updated pre-2.0). Rita Wheeler Romanced is required by Rita Post-Romance Messages Addon in 08-Relationships & Romance.

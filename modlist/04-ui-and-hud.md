@@ -246,3 +246,58 @@ Clean, informative, immersive.
     - Optional file without RAM counter available (works with Streamlined Health Bar).
     - Counter color changes based on RAM fill level.
 - **Performance:** None
+
+---
+
+### Crouch Vignette Effect Remover
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/535
+- **Version:** Verify
+- **Released:** 2020-12-25
+- **Summary:** Removes the dark vignette effect that appears when crouching.
+- **Why:** The crouch vignette is disorienting and reduces visibility during stealth gameplay. Removing it is a pure QoL improvement that doesn't affect game balance.
+- **Conflicts:** None known
+- **Dependencies:** None (standalone file replacement)
+- **MO2 Notes:** Extract to game root. Simple .reds script -- no dependencies. Tag as **Root**.
+- **Performance:** None
+
+---
+
+### Conflict Begone - Archive Conflict Checker
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/21912
+- **Version:** Verify
+- **Released:** 2025-04-30
+- **Summary:** Scans installed archives and detects file conflicts between mods, with exportable reports and user-mod support.
+- **Why:** Essential diagnostic tool for large modlists. Quickly identifies which mods are overwriting each other's files, making conflict resolution manageable. No runtime impact -- runs on demand.
+- **Conflicts:** None known
+- **Dependencies:** None (standalone utility)
+- **MO2 Notes:** Run as needed from the game directory. Generates conflict reports for manual resolution. Not a runtime mod -- use for diagnosis only. Tag as **Utility**.
+- **Performance:** None (on-demand tool, no runtime impact)
+
+---
+
+## Install Order
+
+All **Root**-category mods -- enable Root Builder in MO2 before installing.
+
+1. Crouch Vignette Effect Remover
+2. Immersive First Person
+3. Limited HUD
+4. Better Loot Markers
+5. Clear Skill Checks
+6. Real Vendor Names
+7. Immersive Timeskip
+8. Stash Filters
+9. No Camera Auto Centering
+10. Better Armor Tooltip
+11. Flavorfull Descriptions
+12. Improved Minimap Zoom
+13. Crafting Recipe Owned and Iconic Labels
+14. Loot Quantity Text
+15. Ultimate Kill Counter
+16. Finished Quests Sorted
+17. Loot Icons Extension
+18. RAM bar fix
+
+Conflict Begone is a **Utility**-category standalone diagnostic tool -- install outside normal load order.

@@ -50,6 +50,39 @@ vehicles, car customization, vehicle handling, and transport systems.
 - **MO2 Notes:** Extract to game root. Vehicle prices auto-generated based on VCD dealer prices with discounts applied. 15+ mods use this framework. Supports CET live-tuning of vehicle stats.
 - **Performance:** None
 
+### Immersive Third-Person Vehicle Camera - TPP Cam Toolkit
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/20476
+- **Version:** Verify
+- **Released:** 2025-10-01
+- **Summary:** Third-person camera toolkit for vehicles. Provides customizable camera angles, FOV adjustment, and dynamic camera behavior for driving in third-person.
+- **Why:** Vanilla third-person vehicle camera is limited and rigid. This toolkit provides cinematic and functional camera options for driving, enhancing the vehicle experience without conflicting with first-person mods (Immersive First Person is on-foot only, Shift is FP camera dynamics).
+- **Conflicts:** None known. On-foot camera mods (Immersive First Person #9309, Shift #22340) operate in different domains.
+- **Dependencies:** Cyber Engine Tweaks. Optional: Native Settings UI.
+- **MO2 Notes:** Extract to CET plugins folder. Configure camera presets via CET overlay or Native Settings UI. Works in third-person driving mode only. Tag as **Root**.
+- **Performance:** None
+
+### Quadra Turbo-Z
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/29122
+- **Version:** Verify
+- **Released:** 2026-06-01
+- **Summary:** Adds the Quadra Turbo-Z, a classic Cyberpunk-lore sports car, as a purchasable vehicle via Virtual Car Dealer.
+- **Why:** The Quadra brand is iconic to the Cyberpunk universe. The Turbo-Z is a lore-friendly addition that expands the Virtual Car Dealer catalog with a vehicle that belongs in Night City. Complements existing Quadra models in the game.
+- **Conflicts:** None known. Virtual Car Dealer vehicle.
+- **Dependencies:** Virtual Car Dealer (#4454)
+- **MO2 Notes:** Extract to game root. Purchase via Virtual Car Dealer. Tag as **Root**.
+- **Performance:** None
+
+### Bikes of the Dark Future - Arch V4
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/18736
+- **Version:** Verify
+- **Released:** 2024-12-01
+- **Summary:** Adds the Arch V4 motorcycle line — lore-friendly Arch bikes with custom variants and paint options, purchasable via Virtual Car Dealer.
+- **Why:** Arch motorcycles are a canonical Cyberpunk brand (co-designed with Keanu Reeves). Adding the V4 model expands the motorcycle roster with a vehicle that authentically belongs in the Cyberpunk universe.
+- **Conflicts:** None known. Virtual Car Dealer vehicle.
+- **Dependencies:** Virtual Car Dealer (#4454)
+- **MO2 Notes:** Extract to game root. Purchase via Virtual Car Dealer. Tag as **Root**.
+- **Performance:** None
+
 ---
 
 ## Install Order
@@ -59,3 +92,6 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 1. Virtual Car Dealer
 2. Vehicle Pack - Utility
 3. Dedka Car Dealership - Working Vehicle Shop Framework
+4. Immersive Third-Person Vehicle Camera - TPP Cam Toolkit
+5. Quadra Turbo-Z
+6. Bikes of the Dark Future - Arch V4

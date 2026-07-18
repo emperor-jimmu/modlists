@@ -219,6 +219,20 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 
 ---
 
+### Streaming Bug Workaround
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/22857
+- **Version:** 0.1
+- **Released:** 2025-07-22
+- **Summary:** Workaround for the game's streaming bug where assets fail to load, causing invisible walls, missing geometry, and pop-in issues.
+- **Why:** The streaming bug is a well-known engine-level issue affecting heavily-modded setups. This CET-based workaround forces asset reloading, preventing game-breaking invisible collisions and missing world geometry. Essential for larger modlists.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to CET plugins folder. Run the console command provided on the mod page when streaming issues occur. Tag as **Root**.
+- **Performance:** None
+
+---
+
 ## Install Order
 
 1. Always First Equip
@@ -234,6 +248,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 11. Immersion Patch -- Story Quest Fixes
 12. Immersion Patch -- Minor Activities Quest Fixes
 13. No More Limp Bollards (And Road Barriers)
+14. Streaming Bug Workaround
 
 All are **Root**-category mods -- enable Root Builder in MO2 before installing.
 

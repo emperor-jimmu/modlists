@@ -51,9 +51,69 @@ only -- every visual mod must justify its frametime cost.
 
 ---
 
+### Environment Textures Overhaul - ETO
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/13372
+- **Version:** Verify
+- **Released:** 2024-03-08
+- **Summary:** Comprehensive overhaul of environment textures including roads, sidewalks, buildings, and terrain at 4K resolution.
+- **Why:** Supports the modlist's 4K baseline with high-resolution environment textures. Replaces vanilla textures that look blurry at 4K, significantly improving visual fidelity of Night City's surfaces.
+- **Conflicts:** Will be overwritten by any mod that changes the same textures. Install early in load order.
+- **Dependencies:** None (texture replacer)
+- **MO2 Notes:** Extract to `archive/pc/mod/`. Install early -- other texture mods should overwrite ETO where they conflict. Large download size. Tag as **Root**.
+- **Performance:** Heavy (increased VRAM usage from 4K textures)
+
+---
+
+### Immersive Night City Fixes
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/20588
+- **Version:** Verify
+- **Released:** 2025-04-01
+- **Summary:** Fixes various visual bugs, floating objects, z-fighting, and misplaced props across Night City.
+- **Why:** Even after CDPR's patches, visual bugs persist in the open world. This mod fixes floating props, clipping geometry, and visual errors that break immersion during exploration.
+- **Conflicts:** Low -- uses ArchiveXL patching where possible
+- **Dependencies:** ArchiveXL, TweakXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Safe to install mid-playthrough.
+- **Performance:** None
+
+---
+
+### General Shadows Fixes
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/20405
+- **Version:** Verify
+- **Released:** 2025-03-28
+- **Summary:** Fixes shadow rendering issues including flickering, banding, and incorrect shadow casting across the game world.
+- **Why:** Shadow artifacts break visual consistency at 4K resolution. These fixes address engine-level shadow bugs that CDPR never patched, improving image quality without performance cost.
+- **Conflicts:** None known (shader-level fixes)
+- **Dependencies:** None (standalone)
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Works alongside other visual mods.
+- **Performance:** None
+
+---
+
+### Preem Mirrors - Reflective Mirror Materials
+
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/25633
+- **Version:** Verify
+- **Released:** 2025-12-04
+- **Summary:** Upgrades mirror materials across Night City with proper reflective shaders, replacing the low-quality vanilla mirror surfaces.
+- **Why:** Vanilla mirrors use blurry, low-resolution reflections that look dated. This mod applies proper reflective materials to mirrors, enhancing visual quality in apartments, bathrooms, and storefronts.
+- **Conflicts:** May conflict with other mirror/reflection mods
+- **Dependencies:** None (material override)
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Performance impact depends on the number of reflective surfaces in view -- generally Light.
+- **Performance:** Light
+
+---
+
 ## Install Order
 
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
-1. Nova Rain (and Improved Ripples)
-2. ReLUX (Lighting Redux)
+1. Environment Textures Overhaul - ETO
+2. Immersive Night City Fixes
+3. General Shadows Fixes
+4. Preem Mirrors - Reflective Mirror Materials
+5. Nova Rain (and Improved Ripples)
+6. ReLUX (Lighting Redux)

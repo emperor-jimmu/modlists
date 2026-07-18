@@ -76,6 +76,7 @@ Rules:
 ## Tool Usage
 
 - **Web fetching:** Use `webfetch` for standard web pages. If a page doesn't render properly (e.g., JavaScript-rendered content), use Playwright (`browser_navigate`) as fallback.
+- **Adult-content blocked mods:** When a Nexus Mods page is hidden by the adult content filter (visible in `webfetch`/`ctx_fetch` but content blocked), use Playwright (`browser_navigate` → `browser_evaluate`) to view the page. The `webfetch` and `ctx_fetch_and_index` tools cannot bypass this filter.
 
 ## Commit Conventions
 

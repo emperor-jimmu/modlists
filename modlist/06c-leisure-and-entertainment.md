@@ -107,6 +107,17 @@ and amusement — things to do in Night City when you're not on a gig.
 - **MO2 Notes:** Extract to game root. Activate by visiting H10 apartment once. Fix and ride the coaster first if not already repaired. Partner invites unlock after befriending/romancing them.
 - **Performance:** None
 
+### Licks Club
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/28068
+- **Version:** 1.0
+- **Released:** 2026-01-15
+- **Summary:** Adds an adult entertainment club venue accessible in Night City, with atmospheric interior and ambient scenes fitting the city's decadent nightlife.
+- **Why:** Night City's nightlife includes adult venues as part of its identity — the Afterlife, Lizzie's Bar, and Clouds are all core to the world. This adds another layer of the city's entertainment district, serving world authenticity.
+- **Conflicts:** None known. Check compatibility with Night City Interactions and NCH addons.
+- **Dependencies:** ArchiveXL, Codeware
+- **MO2 Notes:** Extract to game root. May have PG/mature content toggle. Tag as **Root**.
+- **Performance:** Light
+
 ---
 
 ## Add-ons — NCI District Mods
@@ -127,3 +138,4 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 6. Lizzie's Braindances
 7. Dance Off
 8. Roller Coaster Enhanced
+9. Licks Club

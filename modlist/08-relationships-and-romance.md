@@ -262,6 +262,40 @@ and relationship progression.
 - **Conflicts:** Explicitly compatible with Romance Hangouts Enhanced (v1.02+). May conflict with mods blocking or changing partner entities.
 - **Dependencies:** Romance Hangouts Enhanced v2.1.1+
 - **MO2 Notes:** Extract to game root. No config needed — activates automatically. CET commands available for customization: scene length, moaning toggle, animation gender (male/female/default), shorter Panam ending, time skip toggle, scene lights toggle. Ends with auto-sleep like vanilla hangouts.
+- **Performance:** None
+
+### Non-Canon Romances Enhanced
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/20466
+- **Version:** 1.0
+- **Released:** 2025-03-01
+- **Summary:** Expands romance content with non-canon romance options, adding new dialogue, scenes, and relationship progression for characters outside the four main romance paths.
+- **Why:** Expands the relationships pillar by giving players more romantic options with characters they connect with. Complements the existing romance enhanced mods (Panam #4626, Judy #21937, River #26746, Kerry #27698) by adding additional character depth.
+- **Conflicts:** Verify compatibility with existing Romance Enhanced mods — non-canon characters should not conflict with main four romance NPCs.
+- **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Install after the four main romance enhanced mods. Tag as **Root**.
+- **Performance:** None
+
+### Pleasures of Night City - Sex Animations Library
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/22962
+- **Version:** 1.0
+- **Released:** 2025-07-01
+- **Summary:** Animation framework providing intimate scene animations used by other romance and relationship mods. Pure library — no standalone content.
+- **Why:** Framework dependency for romance and relationship mods that need intimate scene animations. Serves the adult content pillar by providing the technical foundation for narrative-driven intimate content. No standalone scenes — content is provided by dependent mods.
+- **Conflicts:** None known (animation library)
+- **Dependencies:** ArchiveXL, RED4ext
+- **MO2 Notes:** Extract to game root. Install before any mods that depend on it. Tag as **Root**. This is a framework library — it does nothing on its own.
+- **Performance:** None
+
+### Responsive V
+- **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/22694
+- **Version:** 1.0
+- **Released:** 2025-06-01
+- **Summary:** V reacts dynamically with contextual voice lines and animations to open-world events and Johnny's passenger-seat commentary while driving.
+- **Why:** V is traditionally a mostly-silent protagonist outside of scripted scenes. This mod makes V feel like a reactive character who comments on the world around them and responds to Johnny's banter during drives, deepening the RPG experience and making V feel like a person rather than a camera. Requires Phantom Liberty.
+- **Conflicts:** None known. Voice line additions, no quest edits.
+- **Dependencies:** ArchiveXL, Codeware, redscript. Optional: Mod Settings. Requires Phantom Liberty DLC.
+- **MO2 Notes:** Extract to game root. Install after Phantom Liberty. Configure via Mod Settings. Tag as **Root**.
+- **Performance:** None
 
 ---
 
@@ -281,14 +315,17 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 10. I Really Want To Stay At Your House - Panam
 11. I Really Want To Stay At Your House - River
 12. I Really Want To Stay At Your House - Kerry
-13. Hangout Romances
-14. Post-Romance Delivery System (Judy)
-15. Post-Romance Delivery System (Panam)
-16. Post-Romance Delivery System (Kerry)
-17. Post-Romance Delivery System (River)
-18. Post-Romance Delivery System (Meredith)
-19. Go on a Date (Panam)
-20. Judy's Voicemail
-21. Rita Post-Romance Messages Addon
+13. Pleasures of Night City - Sex Animations Library
+14. Non-Canon Romances Enhanced
+15. Responsive V
+16. Hangout Romances
+17. Post-Romance Delivery System (Judy)
+18. Post-Romance Delivery System (Panam)
+19. Post-Romance Delivery System (Kerry)
+20. Post-Romance Delivery System (River)
+21. Post-Romance Delivery System (Meredith)
+22. Go on a Date (Panam)
+23. Judy's Voicemail
+24. Rita Post-Romance Messages Addon
 
 **Note:** Requires **Deceptious Quest Core** from 07-Quests & Stories for Gone Away to work fully for Kerry/River. Hangout Romances requires Romance Hangouts Enhanced v2.1.1+. Rita Post-Romance Messages Addon requires Rita Wheeler Romanced (#9191) from 07-Quests & Stories.

@@ -30,17 +30,17 @@ turn static backdrops into lived-in locations.
 - **MO2 Notes:** Extract to `Cyberpunk 2077/bin/x64/plugins/cyber_engine_tweaks/mods/flashlight/`. Set hotkey via CET overlay -> Bindings. Configure via Native Settings UI -> Mods.
 - **Performance:** None
 
-### Immersive Road Crossing and Crashes
+### Sit Anywhere
 
-- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26131>
-- **Version:** 1.4.2
-- **Released:** 2025-12-08
-- **Summary:** Increases traffic density and pedestrian responsiveness. Vehicles react more dynamically to gunfire, chases, and player actions. Pedestrians flee, dive for cover, and cross roads with realistic timing.
-- **Why:** Night City's streets feel empty and unresponsive in vanilla. This turns street shootouts and high-speed chases into chaotic, dynamic encounters where traffic and pedestrians react believably.
-- **Conflicts:** May conflict with other traffic-modifying mods
-- **Dependencies:** RED4ext, redscript, Mod Settings (optional)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings if installed. Optional: install Impact Kill Looting Fix to avoid seeing loot despawn bugs from traffic accidents.
-- **Performance:** Light (additional NPC traffic calculations)
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/7299>
+- **Version:** Verify
+- **Released:** 2023-02-11
+- **Summary:** Adds the ability to sit on ledges, benches, stairs, and other surfaces across Night City with a simple interaction key.
+- **Why:** A small but impactful immersion feature — Night City is full of places to sit, but vanilla only lets you sit in a handful of scripted locations. Enables organic downtime moments during exploration and adds a photography tool.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to CET plugins folder. Bind a key via CET overlay -> Bindings. Tag as **Root**.
+- **Performance:** None
 
 ### Immersive Bartenders
 
@@ -52,6 +52,18 @@ turn static backdrops into lived-in locations.
 - **Conflicts:** None known. Fully compatible with Night City Interactions.
 - **Dependencies:** None (standalone)
 - **MO2 Notes:** Extract to game root. Saves the drink cost and buff effects. Includes a fix for Claire's garage quest step. Available as REDmod version.
+- **Performance:** None
+
+### Consumable Animations
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26762>
+- **Version:** Verify
+- **Released:** 2025-12-24
+- **Summary:** Adds eating and drinking animations when consuming food and beverages, replacing the instant inventory consumption with visible character actions.
+- **Why:** Vanilla food/drink consumption is an instant menu action with no visual feedback. This adds immersive eating and drinking animations, making consumables feel like part of the world rather than stat buffs.
+- **Conflicts:** None known
+- **Dependencies:** Cyber Engine Tweaks
+- **MO2 Notes:** Extract to game root. Works with all vanilla consumables. Tag as **Root**.
 - **Performance:** None
 
 ### Pet Your Cat
@@ -175,16 +187,17 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Night City Interactions - Core
 2. Simple Flashlight
-3. Immersive Road Crossing and Crashes
+3. Sit Anywhere
 4. Immersive Bartenders
-5. Pet Your Cat
-6. NCI - Watson
-7. NCI - Westbrook
-8. NCI - Heywood
-9. NCI - Pacifica and Badlands
-10. NCI - Santo Domingo
-11. NCI - City Center
-12. NCH - Lizzie's Bar
-13. NCH - Jig Jig Street
-14. NCH - Aldecaldo Camps
-15. NCH - 7th Hell Club
+5. Consumable Animations
+6. Pet Your Cat
+7. NCI - Watson
+8. NCI - Westbrook
+9. NCI - Heywood
+10. NCI - Pacifica and Badlands
+11. NCI - Santo Domingo
+12. NCI - City Center
+13. NCH - Lizzie's Bar
+14. NCH - Jig Jig Street
+15. NCH - Aldecaldo Camps
+16. NCH - 7th Hell Club

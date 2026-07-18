@@ -30,6 +30,18 @@ to daily life in Night City.
 - **MO2 Notes:** Extract to game root. Configure via Mod Settings. Neuroblockers sold at med vendors (or craftable). To uninstall safely: restore humanity first, run `Game.EdgerunnerClear()` in CET console, save, then delete mod files.
 - **Performance:** None
 
+### Immersive Cyberware
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21916>
+- **Version:** 1.0.2
+- **Released:** June 2025
+- **Summary:** Adds visual effects and UI feedback to cyberware installation — screen glitches, distortion, and cyberware-specific HUD elements when installing new chrome.
+- **Why:** Vanilla cyberware installation is a menu click with no ceremony. This makes getting chipped feel like the invasive, body-altering procedure it's supposed to be. Complements Cyberware-EX (#11077) — Immersive Cyberware handles visuals/feedback, Cyberware-EX handles slot expansion.
+- **Conflicts:** None known. Compatible with Cyberware-EX (different systems).
+- **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
+- **MO2 Notes:** Extract to game root. Install after Cyberware-EX. Tag as **Root**.
+- **Performance:** None
+
 ### Limited Fast Travel
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/1889>
@@ -53,6 +65,18 @@ to daily life in Night City.
 - **Dependencies:** ArchiveXL, Codeware, Input Loader, Mod Settings, RED4ext, redscript, TweakXL
 - **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. For existing saves, run the setup command in CET console: `Game.DarkFutureSetup()`. Recommended: disable fast travel restrictions if using Limited Fast Travel.
 - **Performance:** Light (HUD widgets for needs tracking)
+
+### Drug Dealer
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27800>
+- **Version:** Verify
+- **Released:** 2026
+- **Summary:** DLC-sized mod adding a full drug dealing gameplay loop — source, process, and distribute illicit substances across Night City with risk/reward mechanics.
+- **Why:** Night City is defined by its drug trade as much as its chrome. This adds a morally grey gameplay system that fits the survival-lite philosophy — high risk, high reward, with consequences for getting caught. Complements Dark Future's drug/trafficking systems.
+- **Conflicts:** Check Dark Future (#16300) compatibility — may overlap on drug-related mechanics.
+- **Dependencies:** ArchiveXL, Codeware. Optional: Audioware.
+- **MO2 Notes:** Extract to game root. Verify balance settings before playing — ensure it's not a cheat money printer. Tag as **Root**.
+- **Performance:** None
 
 ### Eviction Notice - Story-Driven Rent System
 
@@ -114,6 +138,18 @@ to daily life in Night City.
 - **MO2 Notes:** Extract to game root. v1.3 specifically patched for 2.31 compatibility. Cheat rank-up option is opt-in via CET command — not the default. Payment penalties for late deliveries based on real-world time. Delete old install folder before updating from v1.x to v2.0+.
 - **Performance:** None
 
+### Immersive Odometer and Fuel System
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23834>
+- **Version:** 4.7
+- **Released:** September 2025
+- **Summary:** Adds a realistic odometer, fuel consumption, and refueling system for all player vehicles. Fuel depletes with distance driven and must be replenished at gas stations.
+- **Why:** Vehicles in vanilla Cyberpunk have infinite range with no operating costs. Adding fuel management creates meaningful vehicle ownership decisions — do you take the fast car that guzzles fuel, or the efficient commuter? Gas stations become functional locations, adding purpose to the world.
+- **Conflicts:** None known. Compatible with Virtual Car Dealer and all vehicle mods.
+- **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL. Optional: Native Settings UI.
+- **MO2 Notes:** Extract to game root. Configure fuel consumption rate and odometer units via Native Settings UI. Refuel at any gas station. Tag as **Root**.
+- **Performance:** None
+
 ### NC Courier Jobs
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25551>
@@ -144,11 +180,14 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Metro System
 2. Wannabe Edgerunner - A simple Cyberpsychosis mod
-3. Limited Fast Travel
-4. Dark Future - Urban Survival Gameplay
-5. Eviction Notice - Story-Driven Rent System
-6. Anti-Theft Measures
-7. Immersive Meditations - Unmarked Locations
-8. Filthy Access Points
-9. Dedra's Truck Simulator (Convoy Job Delivery)
-10. NC Courier Jobs
+3. Immersive Cyberware
+4. Limited Fast Travel
+5. Dark Future - Urban Survival Gameplay
+6. Drug Dealer
+7. Eviction Notice - Story-Driven Rent System
+8. Anti-Theft Measures
+9. Immersive Meditations - Unmarked Locations
+10. Filthy Access Points
+11. Dedra's Truck Simulator (Convoy Job Delivery)
+12. Immersive Odometer and Fuel System
+13. NC Courier Jobs
