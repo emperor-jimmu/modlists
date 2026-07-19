@@ -78,6 +78,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Conflicts:** None known
 - **Dependencies:** Cyber Engine Tweaks, Native Settings UI, redscript
 - **MO2 Notes:** Extract to game root. Configure via Native Settings UI -> Mods -> Dmg. Scaling. Level curve presets available. Supports disabling multipliers in flashback scenes.
+    - **Recommended baseline config (no-cheat balanced):** Damage to NPCs 1.0–1.2x, Damage to Player 1.5–2.5x (ramp by tier), Headshot 1.5–2.0x, Quickhack 0.7x, Grenade 1.0x, Melee to NPC 1.0–1.2x, Melee to Player 1.5x, Stamina scaling 0.8x slow curve, Boss 1.0x. Start from "RMK Balanced" preset and tweak from there.
 - **Performance:** None
 
 ### Damage Scaling and Balance - Extended

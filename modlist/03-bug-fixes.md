@@ -8,20 +8,16 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 ### Always First Equip
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/2557>
-- **Version:** 1.11.0
-- **Released:** 2025-06-15
-- **Summary:** Repeats the first-equip animation each time you draw a weapon or
-  press a hotkey. Fixes the bug where weapons appear invisible on the first draw
-  after loading a save.
-- **Why:** Vanilla bug -- after loading a save, the equip animation doesn't play,
-  making weapons appear invisible or floating. This mod restores the animation
-  and adds weapon inspection (IdleBreak, SafeAction).
+- **Version:** 2.1.5
+- **Released:** 2026-03-30
+- **Summary:** Repeats first-equip animation each time you draw a weapon or press a hotkey. Adds weapon inspection (IdleBreak, SafeAction) with highly configurable probability, timing, and scene-aware triggers.
+- **Why:** Vanilla bug -- after loading a save, the first-draw equip animation doesn't play, making weapons appear invisible or floating. Beyond fixing this, the mod adds immersive weapon inspection animations that trigger based on configurable probability, making gunplay feel more tactile.
 - **Conflicts:** None
-- **Dependencies:** Native Settings UI
+- **Dependencies:** redscript. Optional: ArchiveXL, Input Loader, Mod Settings, RED4ext.
 - **MO2 Notes:**
     - Extract to game root. Tag as **Root**.
-    - Configure via Native Settings UI in CET overlay (default Insert key).
-    - Highly configurable -- set trigger delay, hotkeys, and which animations to use.
+    - Configure via Mod Settings (v0.2.17+) for in-game hotkeys and probability sliders.
+    - Supports firstEquip on weapon switch, IdleBreak while holstered, SafeAction on empty mag, and scene-aware skips (Stuntjock jump, mounted combat, cutscenes).
 - **Performance:** None
 
 ### Quest Trigger Fixes

@@ -29,7 +29,7 @@ expansions, secrets, easter eggs, and rewards for thorough exploration.
 - **Why:** Vanilla has a limited set of iconic weapons — this doubles the pool with handcrafted, lore-friendly weapons that have unique mechanics (plasma shotgun, sentient ghost blade, EMP thunderstrike LMG, etc.). Each weapon has a distinct playstyle and discovery method.
 - **Conflicts:** Incompatible with standalone versions of included weapons (uninstall old versions first)
 - **Dependencies:** ArchiveXL, Codeware, redscript, Trigger Mode Control, TweakXL
-- **MO2 Notes:** Extract to game root. Files go to `r6/scripts/SeijaxIconics`, `r6/tweaks/SeijaxIconics`, and `archive/pc/mod/`. To uninstall, remove all three paths. Translations available as separate downloads. Item codes available in description for troubleshooting.
+- **MO2 Notes:** Extract to game root. Files go to `r6/scripts/SeijaxIconics`, `r6/tweaks/SeijaxIconics`, and `archive/pc/mod/`. To uninstall, remove all three paths. Translations available as separate downloads. Item codes available in description for troubleshooting. Recommended companions (not required): Smart Weapons Unchained, Weapon Handling Control, Berserk Unchained, Pyromania Unchained.
 - **Performance:** Light (script-only, no runtime overhead)
 
 ### Nomad Cache - New Iconic Weapons

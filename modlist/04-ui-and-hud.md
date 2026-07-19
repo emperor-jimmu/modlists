@@ -83,7 +83,7 @@ Clean, informative, immersive.
 - **Summary:** Replaces the static timeskip screen with an overlay that shows the world moving around you while time passes, activated by hotkey.
 - **Why:** Breaks immersion less than the vanilla black-screen timeskip. Lets you see the city change as hours pass.
 - **Conflicts:** None known
-- **Dependencies:** Input Loader, RED4ext, redscript
+- **Dependencies:** Input Loader, RED4ext, redscript. Optional: Mod Settings (for in-game hotkey config).
 - **MO2 Notes:** Extract to game root. Default hotkey is O (keyboard) / Right Pad (controller). Configurable via Mod Settings. Can also replace the default timeskip menu (enable in `r6/scripts/ImmersiveTimeskip/Config.reds`).
 - **Performance:** None
 
@@ -245,6 +245,7 @@ Clean, informative, immersive.
     - Extract to game root. Tag as **Root**.
     - Optional file without RAM counter available (works with Streamlined Health Bar).
     - Counter color changes based on RAM fill level.
+    - If using a custom game font, counter may misalign. Optional add-on by urmyflower adjusts size and position.
 - **Performance:** None
 
 ---
