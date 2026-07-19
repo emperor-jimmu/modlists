@@ -43,7 +43,7 @@
 
 ## Late Game (Days 120+) — With Mods
 <!-- TODO:
-- Genetic Rim / Alpha Genes: start gene editing, create super-colonists
+- Vanilla Genetics Expanded / Alpha Genes: start gene editing, create super-colonists
 - Giddy-Up: mount your animals for faster travel and combat
 - Modded win conditions (some mods add new endings)
 - Facing modded threats: Alpha Animals alpha predators, VFE endgame threats

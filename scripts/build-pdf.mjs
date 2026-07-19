@@ -165,7 +165,9 @@ for (const ch of CHAPTERS) {
 
 // ── write .typ file & compile ──
 
-writeFileSync(OUTPUT_TYP, out.join('\n'), 'utf-8');
+// Replace any #horizontalrule with valid Typst equivalent
+let typ = out.join('\n').replace(/#horizontalrule/g, '#line(length: 100%)');
+writeFileSync(OUTPUT_TYP, typ, 'utf-8');
 console.log(`Written ${OUTPUT_TYP}`);
 console.log('Compiling…');
 
