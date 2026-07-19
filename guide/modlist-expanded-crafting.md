@@ -68,6 +68,7 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 | [Thaumaturgy — Enchanting Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/57138)     | Baseline    | #1, #2, #4     | Simonrim-aligned. Pairs with Mysticism + Adamant. Prerequisite for artifact overhauls. |
 | [Complete Crafting Overhaul Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/28608) | Alternative | #1, #2, #4     | High-complexity material logic and crafting rules.                                     |
 | [Summermyst — Enchantments](https://www.nexusmods.com/skyrimspecialedition/mods/6285)              | Alternative | #1, #2, #4     | ~140 new enchantment effects. Verify compatibility with Thaumaturgy.                   |
+| [Honed Thaumaturgy (FLM)](https://www.nexusmods.com/skyrimspecialedition/mods/104295)             | Patch       | #1, #2, #4     | Lets Honed Metal NPC enchanters use Thaumaturgy enchantments. Requires FLM (optional). |
 
 ### Risks & Compatibility
 

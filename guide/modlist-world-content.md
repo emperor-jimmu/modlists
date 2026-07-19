@@ -449,6 +449,12 @@ Undeath adds a necromancy-themed questline that lets the player become a Lich. N
 
 **MO2 install order (left pane):** Undeath Remastered → lich overhaul → Camera Fix → Absorb Fix → Facegen Patch (if NPC overhauls) → GDOS Door Patch → Moon and Star Patch (if adopted).
 
+#### Quest Timing & Pacing
+
+| Mod                                                                                                         | Description                                                                                                                   | Nexus                                                              |
+|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| [Timing is Everything SE](https://www.nexusmods.com/skyrimspecialedition/mods/25464)                        | Adjust starting conditions/level requirements for 19 quests and 9 world encounters (Dawnguard, Dragonborn, Hearthfire, Daedric, etc.). MCM-configurable. By kryptopyr. | Essential for "Living the World" pillar. |
+
 #### Lightweight Additions
 
 | Mod                                                                 | Description                                                                            | Nexus                                                               |

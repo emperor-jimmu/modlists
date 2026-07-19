@@ -51,6 +51,22 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 ---
 
+## Spell Learning Mechanic
+Replaces the vanilla "eat-tome-learn" system with time-based study, supporting the slow leveling and immersive pacing pillars.
+
+| Mod                                                                                                            | Type     | Dial   | Notes                                                           |
+|----------------------------------------------------------------------------------------------------------------|----------|--------|-----------------------------------------------------------------|
+| [Immersive Spell Learning - DESTified](https://www.nexusmods.com/skyrimspecialedition/mods/45514)              | Baseline | #1, #2 | Time-based spell study via DEST framework. One spell at a time. |
+| [Immersive Spell Learning](https://www.nexusmods.com/skyrimspecialedition/mods/33375)                          | Parent   | #1, #2 | Original mod this is based on. DESTified version preferred.     |
+
+### Risks & Compatibility
+
+- Works with any spell mod that uses standard spell tomes. No patches needed.
+- Compatible with Survival Mode and SunHelm (studying induces Fatigue).
+- Has MCM for configuration. Only one spell can be studied at a time; switching loses progress.
+
+---
+
 ## Stealth And Detection
 How Skyrim's detection system should be recalibrated for modern stealth mechanics without replacing the existing perk, magic, and combat layers.
 
