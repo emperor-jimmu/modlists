@@ -77,8 +77,8 @@ function postProcessTable(text) {
 
     // Find the content start inside align(center)[...]
     const afterFigRaw = text.slice(figStart + 8);
-    const bracketSearch = afterFigRaw.indexOf('align(center)[') + 'align(center)['.length;
-    const contentStart = figStart + 8 + bracketSearch;
+    const bracketOffset = afterFigRaw.indexOf('align(center)[') + 'align(center)['.length - 1;
+    const contentStart = figStart + 8 + bracketOffset;
 
     // Match the ] that closes align(center)[...]
     let depth = 1;
@@ -96,7 +96,7 @@ function postProcessTable(text) {
     if (figEndMatch) {
       // Extract inner table content and replace #table( with #styled-table(
       let inner = text.slice(contentStart + 1, j - 1); // between [ and ]
-      inner = inner.replace(/\btable\(/g, 'styled-table(');
+      inner = inner.replace(/#table\(/g, '#styled-table(');
       result.push(inner);
       i = j + figEndMatch[0].length;
     } else {
@@ -149,7 +149,7 @@ write(``);
 // ── table of contents ──
 
 write(`#pagebreak()`);
-write(`#outline(title: [Contents], indent: auto)`);
+write(`#outline(title: [Contents], indent: auto, depth: 1)`);
 write(``);
 
 // ── chapters ──
