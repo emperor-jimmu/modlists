@@ -279,7 +279,20 @@ rooftop access, and environmental additions that expand Night City.
     - Pairs with Dance Off and NCI City Center for full Empathy Club experience.
 - **Performance:** Light
 
----
+### 7th Hell Club Unlocked and Remastered
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27207>
+- **Version:** 1.0
+- **Released:** 2026-03-03
+- **Summary:** Unlocks all previously-inaccessible locked doors on both floors of 7th Hell Club. Removes broken props, adds usable doors throughout, and improves lighting ambiance while keeping the club's dark, dirty, gritty character intact.
+- **Why:** Vanilla 7th Hell has large sections locked off for no reason beyond a single gig. Unlocking the full club makes the venue feel complete and supports existing modlist content — NCH 7th Hell Club (in 06b) adds sit/lean/smoke interactions, and this opens the physical space for those interactions to happen in. Works perfectly with Aroused Encounters of Night City if installed.
+- **Conflicts:** VIP Remaster variant solves prop conflicts with 7th Hell Bar Enhanced (#22454, not in modlist). Compatible with NCH 7th Hell Club (#27752, in modlist 06b).
+- **Dependencies:** Phantom Liberty (required). None else — standalone .archive.
+- **MO2 Notes:**
+    - Drop files into `Cyberpunk 2077/archive/pc/mod/`.
+    - Use main file for standard install. Use VIP Remaster file only if 7th Hell Bar Enhanced is installed.
+    - Uninstall: delete the .archive files from the mod folder.
+- **Performance:** None
 
 ### Japantown Shooting Range
 
@@ -387,17 +400,18 @@ rooftop access, and environmental additions that expand Night City.
 11. Japantown Greenery
 12. Dandelion Cocktail Bar Enhanced
 13. Empathy Bar Enhanced
-14. Japantown Shooting Range
-15. Yaiba Bike Showroom
-16. Underground Casino
-17. Corpo Rooftop Bar
-18. Afterlife Expanded
-19. Viktor Vektors Garage
-20. H10 Megabuilding Unlocked
-21. Jig Jig Unleashed
-22. The Atlantis - Restored
-23. North Oak Exclusive Club And Casino Restored
-24. Arasaka Kujira Ship
+14. 7th Hell Club Unlocked and Remastered
+15. Japantown Shooting Range
+16. Yaiba Bike Showroom
+17. Underground Casino
+18. Corpo Rooftop Bar
+19. Afterlife Expanded
+20. Viktor Vektors Garage
+21. H10 Megabuilding Unlocked
+22. Jig Jig Unleashed
+23. The Atlantis - Restored
+24. North Oak Exclusive Club And Casino Restored
+25. Arasaka Kujira Ship
 
 **Notes:**
 

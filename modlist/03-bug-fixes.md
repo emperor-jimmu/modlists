@@ -201,6 +201,18 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
     - Install after the Story Quest Fixes version.
 - **Performance:** None
 
+### Stats Bar UI Fix
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/24925>
+- **Version:** 1.0-for-2.31
+- **Released:** 2025-10-14
+- **Summary:** Fixes incorrect stat bar rendering in the UI where certain stat bars display at wrong widths, causing misleading visual comparisons between stats.
+- **Why:** The stats bar UI has a rendering bug that shows incorrect bar widths, making stat comparisons unreliable. This is a pure visual fix — no gameplay changes, no config needed. Explicitly versioned for 2.31.
+- **Conflicts:** None known
+- **Dependencies:** None (standalone redscript fix)
+- **MO2 Notes:** Extract to game root. Files go to `r6/scripts/`. v1.0-for-2.31 — confirmed compatible with the target patch version.
+- **Performance:** None
+
 ### No More Limp Bollards (And Road Barriers)
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26568>
@@ -243,7 +255,8 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 10. H10 Interactive Stash Door Restored
 11. Immersion Patch -- Story Quest Fixes
 12. Immersion Patch -- Minor Activities Quest Fixes
-13. No More Limp Bollards (And Road Barriers)
-14. Streaming Bug Workaround
+13. Stats Bar UI Fix
+14. No More Limp Bollards (And Road Barriers)
+15. Streaming Bug Workaround
 
 ---

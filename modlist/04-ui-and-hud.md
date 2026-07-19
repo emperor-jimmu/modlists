@@ -75,6 +75,18 @@ Clean, informative, immersive.
 - **MO2 Notes:** Extract to game root. Files go to `Cyberpunk 2077/r6/scripts/`.
 - **Performance:** None
 
+### Contacts Redux
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27146>
+- **Version:** 1.0.2
+- **Released:** 2026-03-28
+- **Summary:** Phone contact list overhaul — live online status indicators, visible contact avatars, smart sorting (by availability, recent calls, affinity), and improved contact list UI layout.
+- **Why:** Vanilla phone contact list is bare text with no personality. This adds avatars, online status, and intelligent sorting — the phone feels like a device with real contacts, not a text menu. Smart sorting keeps frequent contacts accessible while reducing clutter.
+- **Conflicts:** None known. Check compatibility with Immersive Fixers (modifies fixer contact timing — different layer, likely compatible).
+- **Dependencies:** ArchiveXL (required), redscript (required). Optional: Mod Settings.
+- **MO2 Notes:** Extract to game root. Contact avatars appear next to names. Online status indicators show who's available. Sort contacts by availability, recent calls, or affinity.
+- **Performance:** None
+
 ### Immersive Timeskip
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/5115>
@@ -121,6 +133,18 @@ Clean, informative, immersive.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, RED4ext, redscript
 - **MO2 Notes:** Extract to game root. Files go to `r6/scripts/`. Works automatically — no configuration needed.
+- **Performance:** None
+
+### Show Weapon Plus Quality
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19347>
+- **Version:** 1.0.0
+- **Released:** 2025-01-26
+- **Summary:** Displays the weapon "+" quality tier directly on weapon cards (e.g., "D5 Copperhead ++") so you can see tier at a glance without mental math.
+- **Why:** Weapon damage tiers use "+" and "++" notation but are not shown on weapon cards — you have to compare DPS numbers between weapons to gauge tier. This shows the tier label directly, making weapon comparison instant. Pure QoL — no balance impact.
+- **Conflicts:** Verify against Better Armor Tooltip (different domains — armor vs. weapon tooltips, likely compatible).
+- **Dependencies:** redscript
+- **MO2 Notes:** Extract to game root. Weapon cards show tier label next to weapon name. No configuration needed.
 - **Performance:** None
 
 ### Flavorfull Descriptions
@@ -175,6 +199,42 @@ Clean, informative, immersive.
 - **Conflicts:** Compatible with Crafting Component Quantity Text and Numerals Get Commas
 - **Dependencies:** redscript
 - **MO2 Notes:** Extract `z_LootQuantityText.reds` to `Cyberpunk 2077/r6/scripts/`.
+- **Performance:** None
+
+### Numerals Get Commas
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/17160>
+- **Version:** 1.2.0
+- **Released:** 2025-01-27
+- **Summary:** Adds thousands separators (commas) to large number displays throughout the UI — eddies, item values, loot quantities, and backpack tooltips.
+- **Why:** Large numbers without separators are hard to parse at a glance — is that 1000000 or 100000? This adds commas everywhere eddies and quantities appear, making the UI more readable. Mod Settings integration for toggling per-display. Pure QoL with zero balance impact.
+- **Conflicts:** Compatible with Loot Quantity Text (explicitly listed)
+- **Dependencies:** Codeware, Mod Settings (for configuration menu)
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Numerals Get Commas. Toggle comma display per UI element (inventory money, loot quantities, tooltips).
+- **Performance:** None
+
+### Show Me How Many - Proper Inventory Activity Logs
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22744>
+- **Version:** 2.0.3
+- **Released:** 2025-07-16
+- **Summary:** Enhances inventory activity logs with item quantity, quality color coding (Common/Uncommon/Rare/Epic/Legendary/Iconic), item type, and sell value display.
+- **Why:** Vanilla activity logs show bare item names — you can't tell if that "Maelstrom Jacket" is Common or Legendary without opening inventory. Quality color coding makes loot evaluation instant. Mod Settings integration with per-feature toggles: quantity, quality, type, value, and color coding.
+- **Conflicts:** None known. Complements Throttled Activity Log (different layer — this shows more detail, Throttled reduces spam).
+- **Dependencies:** redscript (required). Optional: ArchiveXL (localizations), Mod Settings (configuration).
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Show Me How Many. Toggle individual features: activity log, quantity, quality, item type, sell value, and quality color coding.
+- **Performance:** None
+
+### Throttled Activity Log
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/17674>
+- **Version:** 1.1
+- **Released:** 2024-11-08
+- **Summary:** Consolidates repeated activity log messages — instead of 5 individual "Scrap x1" lines, you get one "Scrap x5" entry.
+- **Why:** Looting or dismantling items in bulk floods the activity log with redundant messages, pushing useful notifications off screen. This throttles identical sequential entries into consolidated single lines, keeping the log informative without spam.
+- **Conflicts:** None known. Complements Show Me How Many (consolidation vs. detail display).
+- **Dependencies:** redscript
+- **MO2 Notes:** Extract to game root. No configuration needed — works automatically.
 - **Performance:** None
 
 ### Ultimate Kill Counter
@@ -264,6 +324,42 @@ Clean, informative, immersive.
 
 ---
 
+### 4K Hand Cursor
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/12225>
+- **Version:** 1.0
+- **Released:** 2024-01-09
+- **Summary:** Replaces the low-resolution interaction hand cursor with a 4K version, eliminating visible pixelation at the modlist's 4K baseline resolution.
+- **Why:** Vanilla hand cursor texture is noticeably low-res and pixelated at 4K — a small but constant visual irritation during every interaction prompt. Simple .archive texture replacement with zero performance cost.
+- **Conflicts:** Any other mod replacing the hand cursor texture
+- **Dependencies:** None (standalone .archive texture)
+- **MO2 Notes:** Drop .archive into `Cyberpunk 2077/archive/pc/mod/`. Texture replacer — survives game updates.
+- **Performance:** None
+
+### Compact Weapon Mod Slots
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25032>
+- **Version:** 1.0.0
+- **Released:** 2025-10-15
+- **Summary:** Compacts weapon mod slot UI when extra attachment slots are present (from mods like Depeche Mods), keeping all attachments in a single row for cleaner weapon card layout.
+- **Why:** When extra weapon mod slots are added by other mods (Depeche Mods is in this modlist), the default UI stacks them vertically, wasting screen space. This keeps them in one compact row.
+- **Conflicts:** None known. Designed for use with mods that add extra weapon mod slots.
+- **Dependencies:** None (standalone)
+- **MO2 Notes:** Extract to game root. Only useful if the modlist has mods that add extra weapon mod slots — pairs directly with Depeche Mods (in 05b).
+- **Performance:** None
+
+### Now Playing Display
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21570>
+- **Version:** 1.3.4
+- **Released:** 2025-05-20
+- **Summary:** Displays the currently playing radio track name and artist as an on-screen overlay, with optional reduced lens curve effect.
+- **Why:** Standard QoL feature missing from vanilla — you can hear a track but can't identify it without opening menus. Especially valuable with custom RadioExt stations (Retrowave, Phonkwave) already in the modlist. Clean, unobtrusive display that disappears when not showing track info.
+- **Conflicts:** None known
+- **Dependencies:** Codeware, Cyber Engine Tweaks
+- **MO2 Notes:** Extract to `Cyberpunk 2077/bin/x64/plugins/cyber_engine_tweaks/mods/`. Optional reduced lens curve effect file available. May not display correct metadata for all custom RadioExt stations (depends on station config).
+- **Performance:** None
+
 ### Conflict Begone - Archive Conflict Checker
 
 - **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/21912
@@ -298,18 +394,26 @@ Clean, informative, immersive.
 4. Better Loot Markers
 5. Clear Skill Checks
 6. Real Vendor Names
-7. Immersive Timeskip
-8. Stash Filters
-9. No Camera Auto Centering
-10. Better Armor Tooltip
-11. Flavorfull Descriptions
-12. Improved Minimap Zoom
-13. Crafting Recipe Owned and Iconic Labels
-14. Loot Quantity Text
-15. Ultimate Kill Counter
-16. Finished Quests Sorted
-17. Loot Icons Extension
-18. RAM bar fix
-19. Ripperdoc Vendor UI Enhancements
+7. Contacts Redux
+8. Immersive Timeskip
+9. Stash Filters
+10. No Camera Auto Centering
+11. Better Armor Tooltip
+12. Show Weapon Plus Quality
+13. Flavorfull Descriptions
+14. Improved Minimap Zoom
+15. Crafting Recipe Owned and Iconic Labels
+16. Loot Quantity Text
+17. Numerals Get Commas
+18. Show Me How Many
+19. Throttled Activity Log
+20. Ultimate Kill Counter
+21. Finished Quests Sorted
+22. Loot Icons Extension
+23. RAM bar fix
+24. Compact Weapon Mod Slots
+25. Now Playing Display
+26. 4K Hand Cursor
+27. Ripperdoc Vendor UI Enhancements
 
 Conflict Begone is a **Utility**-category standalone diagnostic tool -- install outside normal load order.

@@ -963,6 +963,179 @@ Cross-referenced with existing modlist entries (Weapon Conditioning, Enhanced Cr
 - **Notes:** v1.0.1 by Gigowatt221 (same author as Depeche Mods). Listed as recommended but not required by TrunkCraft. Pure fix — no configuration needed. No known conflicts.
 ---
 
+## UI/HUD/Immersion Mods — Batch Review (2026-07-19)
+
+Cross-referenced with existing modlist entries for conflicts and redundancy. Two mods (#2805, #9372) already in modlist.
+
+### Clear Skill Checks
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/2805>
+- **Status:** already-in-modlist
+- **Category:** UI & HUD (04)
+- **Notes:** Already in `modlist/04-ui-and-hud.md`. v1.1.1 (Nov 2025), 7,147 endorsements. Requires redscript.
+
+### Ultimate Kill Counter
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9372>
+- **Status:** already-in-modlist
+- **Category:** UI & HUD (04)
+- **Notes:** Already in `modlist/04-ui-and-hud.md`. v1.17 (Sep 2025), 2.31 supported. Requires CET, RED4ext.
+
+---
+
+### 7th Hell Club Unlocked and Remastered
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27207>
+- **Status:** approved
+- **Category:** Locations & World Expansion (16) / World Interaction (06b)
+- **Pros:** Unlocks all locked doors in 7th Hell Club, removes broken props, adds immersion features (usable doors, lighting tweaks). Compatible with NCH 7th Hell Club (#27752, already in modlist) and Aroused Encounters of Night City. 408 endorsements, 0 bugs. Works on patches 2.21-2.31+. Simple .archive install — no script dependencies.
+- **Cons:** Requires Phantom Liberty. VIP Remaster is optional to solve prop conflicts with 7th Hell Bar Enhanced (#22454, not in modlist). Author has several similar club unlock mods (Afterlife, Riot, Totentanz, Heavy Hearts, Dicky Twister, El Cojote Cujo) — potential cascade of club mods.
+- **Dependencies:** Phantom Liberty (required). None else — standalone .archive.
+- **Conflicts:** May conflict with 7th Hell Bar Enhanced (#22454) without VIP Remaster variant. Compatible with NCH 7th Hell (#27752).
+- **Notes:** v1.0 by Krxnext (Mar 2026). Same author as TactiCool V's H10 Apartment. Strong complement to existing NCH 7th Hell interactions — NCH adds sit/lean/smoke, this opens locked areas. Install: drop in `archive/pc/mod`.
+
+### spawn0 - CLOTHING AND LINGERIE STORE
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/3244>
+- **Status:** rejected
+- **Category:** Clothing & Fashion (11)
+- **Rejection Reason:** Requires two additional spawn0 mods as hard dependencies (spawn0 BETTER NEW CLOTHES + spawn0 LINGERIE), creating a fragile three-mod chain. "Legendary quality clothes available" raises balance concerns — free top-tier clothing from a virtual store conflicts with "no cheat mods" philosophy. Adult content (lingerie) lacks narrative context — purely a clothing inventory expansion without relationship/depth integration. Dependencies: redscript + Virtual Atelier + two spawn0 mods. 8,636 endorsements but endorsement count alone doesn't overcome design philosophy mismatch.
+
+### Weather Probability Rebalance
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/3196>
+- **Status:** approved
+- **Category:** Visuals & Atmosphere (17)
+- **Pros:** Significantly reduces the excessive sunny weather bias. Redesigned weather transitions and durations for more variety (rain, fog, toxic fog, etc.). 11,318 endorsements (highest of all 17 mods). Simple .archive install — no script dependencies. v2.9 adds optional No Vignette versions. Explicitly updated for patches 2.0 and 2.1.
+- **Cons:** Conflicts with ANY mod that edits `base\weather\24h_basic\cp2077_master_env_ep1_v006.env`. May conflict with ReLUX (lighting overhaul) and other weather/lighting mods — needs specific compatibility test. Last explicit version update was for patch 2.1 (v2.7). No "2.31" in changelog but .env edits typically survive patch updates.
+- **Dependencies:** None (standalone .archive).
+- **Conflicts:** Mods editing the master environment file. Check against ReLUX (#?). No other known weather mods in modlist. Nova Rain (in modlist) edits rain effects — different file, likely compatible.
+- **Notes:** v2.9 by rmkara. No vignette variants remove the dark-around-edges screen effect. Creates a dramatically different atmosphere — pairs well with living world mods. Performance: None (data edit only).
+
+### Running Man - New Sprinting Perks
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26611>
+- **Status:** approved
+- **Category:** Gameplay Overhaul (05b) / Skills & Perks
+- **Pros:** Adds "Double Sprint" perk (toggle sprint while already sprinting for speed burst). Stamina cost integrated with Shinobi skill + Sandevistan. Hold-to-sprint users can double-tap. 303 endorsements, 0 bugs. Actively maintained (v1.1.3, Apr 2026). Compatible with Easier Controller Sprint.
+- **Cons:** Double Sprint stamina cost may feel punishing without Shinobi 60 + Sandevistan. Input Loader added as dependency in v1.1.0 — adds to dependency chain. Low-ish endorsement count (303).
+- **Dependencies:** RED4ext, redscript, TweakXL, Input Loader.
+- **Conflicts:** Fixed conflict with Jenkins Tendons cyberware in v1.1.2. No other known conflicts.
+- **Notes:** v1.1.3 by IllB3rry (Apr 2026). Tagged "Skills/Perks" only — not "Cheating." Fits the modlist's RPG depth goals by adding a meaningful sprinting mechanic beyond the binary toggle. Evaluate whether Double Sprint speed feels balanced with other movement mods.
+
+### Bloat Begone (Remove Unwanted Menu Elements and Ads)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9208>
+- **Status:** rejected
+- **Category:** UI & HUD (04)
+- **Rejection Reason:** Last updated Oct 2023 (patch 2.02 era). No updates through patches 2.1, 2.2, or 2.31. 1 bug report. Changelog mentions no version compatibility verification for anything past 2.02. Simple UI mod but may have broken elements with 2.3+ menu changes (patch 2.2 added SmartFrames and other menu features). If the modlist needs menu decluttering, revisit if author updates.
+
+### Numerals Get Commas
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/17160>
+- **Status:** approved
+- **Category:** UI & HUD (04)
+- **Pros:** Adds thousands separators (commas) to large number displays: eddies, item values, loot quantities, backpack tooltips. Mod Settings integration for toggles. v1.2.0 adds money delineation to inventory tooltips. 11 translations available. GitHub-hosted bug tracking. Simple, focused QoL with no balance impact.
+- **Cons:** Requires Codeware + Mod Settings (both likely already in dependency chain). Minor — adds to mod count for a single visual change.
+- **Dependencies:** Codeware, Mod Settings (optional for configuration).
+- **Conflicts:** Compatible with Looting QoL.
+- **Notes:** v1.2.0 by woodiertexas (Jan 2025). Pure QoL — fits modlist "enhance depth, not remove friction" philosophy as readability improvement, not a cheat.
+
+### Throttled Activity Log
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/17674>
+- **Status:** approved
+- **Category:** UI & HUD (04)
+- **Pros:** Reduces activity log spam by consolidating repeated pick-up messages (e.g., "Scrap x5" instead of 5 individual lines). 709 endorsements, 0 bugs. Tags: UI + QoL. Complements Show Me How Many (#22744) for complete activity log overhaul.
+- **Cons:** None significant. Purely reductive — may miss notification of specific item pickups if player relies on log detail.
+- **Dependencies:** Not specified in description — likely redscript (needs verification).
+- **Conflicts:** None known. Complements Show Me How Many (#22744) — different layer (throttling vs. detail display).
+- **Notes:** v1.1. Focused mod that solves a specific annoyance without bloat. Fits alongside Show Me How Many for comprehensive inventory log improvements.
+
+### Informative HUD Quickhacks Memory Counter
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10685>
+- **Status:** rejected
+- **Category:** UI & HUD (04)
+- **Rejection Reason:** v0.9.2 (pre-1.0, unfinished). Last updated Nov 2023 — pre-2.0 era. No updates through 2.0, 2.1, 2.2, or 2.31. 685 endorsements but the mod is fundamentally version-locked to pre-2.0 quickhack memory system. Quickhack memory mechanics changed significantly in 2.0 (capacity became a fixed stat). High probability the mod is broken on current patches. The RAM bar fix (#?) already in modlist may serve similar purpose.
+
+### Compact Weapon Mod Slots
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25032>
+- **Status:** approved
+- **Category:** UI & HUD (04) / RPG Systems (05b)
+- **Pros:** Compacts weapon mod slots UI when using mods that add extra attachment slots (like Depeche Mods, already in modlist). Keeps attachments in one row for space efficiency. 604 endorsements, 0 bugs. v1.0.0.
+- **Cons:** Niche — only useful if the modlist has mods that increase weapon mod slot counts. Check compatibility with specific weapon UI mods.
+- **Dependencies:** To be verified (likely Codeware or native UI hook).
+- **Conflicts:** None known.
+- **Notes:** v1.0.0. Pairs directly with Depeche Mods (#25350, in modlist 05b) which can add extra attachment slots. Without such mods, this provides minimal benefit. Evaluate after confirming extra-slot mod is in final modlist.
+
+### 4K Hand Cursor
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/12225>
+- **Status:** approved
+- **Category:** UI & HUD (04)
+- **Pros:** Replaces the low-resolution interaction hand cursor with a 4K version. 514 endorsements, 0 bugs. No dependencies — simple .archive texture replacement. Perfect for the modlist's 4K baseline.
+- **Cons:** Single texture swap — very narrow scope. Released Jan 2024 but texture replacers don't need version updates.
+- **Dependencies:** None.
+- **Conflicts:** Any other mod replacing the hand cursor texture.
+- **Notes:** v1.0. Drop-in .archive — zero performance impact, zero maintenance. Vanilla cursor is visibly low-res at 4K.
+
+### Stats Bar UI Fix
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/24925>
+- **Status:** approved
+- **Category:** Bug Fixes (03) / UI & HUD (04)
+- **Pros:** Fixes a UI bug in the stats bar where certain stat bars display incorrectly. Explicitly versioned "1.0-for-2.31" — confirmed 2.31 compatible. 505 endorsements, 0 bugs. Tags: UI + Bug Fixes.
+- **Cons:** Very narrow scope — fixes one specific UI rendering issue. No Mod Settings or config.
+- **Dependencies:** To be verified.
+- **Conflicts:** None known.
+- **Notes:** v1.0-for-2.31. Could fit in either 03-bug-fixes.md or 04-ui-and-hud.md. Leaning 03 as it's a fix, not an enhancement.
+
+### Contacts Redux
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27146>
+- **Status:** approved
+- **Category:** UI & HUD (04)
+- **Pros:** Phone contact list overhaul — live online status indicators, visible contact avatars, smart sorting (by availability/recent calls/affinity), improved UI layout. 317 endorsements, 0 bugs. Tags: Gameplay + UI + Overhaul + QoL. Good immersion — phone feels more like a real device.
+- **Cons:** Low endorsement count (317). No dependency list visible in fetch — needs verification. May conflict with other phone/contact mods.
+- **Dependencies:** To be verified (likely Codeware/CET/redscript).
+- **Conflicts:** None known. May interact with mods that add contact entries (quest mods like Possibilities). Check compatibility with Immersive Fixers (#15460, already in modlist) which modifies fixer contact timing.
+- **Notes:** v1.0.2. A polished phone UI is a key missing piece in vanilla — this addresses it comprehensively. Evaluate dependency chain before final approval.
+
+### Show Me How Many - Proper Inventory Activity Logs
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22744>
+- **Status:** approved
+- **Category:** UI & HUD (04) / RPG Systems (05b)
+- **Pros:** Enhances inventory activity logs with item quantity, quality color coding (Common/Uncommon/Rare/Epic/Legendary/Iconic), item type, and sell value. Full Mod Settings integration with per-feature toggles. v2.0.0+ adds quality color system. 308 endorsements, 0 bugs. Complements Throttled Activity Log (#17674) — shows more detail vs. reducing spam.
+- **Cons:** Performance optimization in v2.0.1 suggests an earlier performance issue (now fixed). Mod Settings dependency for full customization.
+- **Dependencies:** Mod Settings (for configuration).
+- **Conflicts:** None known. Stacks with Throttled Activity Log (#17674) — different goals.
+- **Notes:** v2.0.3 (last updated for localization fix). Quality color coding is genuinely useful during loot evaluation. Mod Settings integration means zero-CET config friction.
+
+### Now Playing Display
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21570>
+- **Status:** approved
+- **Category:** UI & HUD (04) / Audio & Music (18)
+- **Pros:** Displays currently playing radio track name and artist on screen. Optional reduced lens curve effect file. 275 endorsements, 0 bugs. Tags: UI + QoL + CET. Clean, unobtrusive design. Especially valuable with custom radio stations (RadioExt stations already in modlist).
+- **Cons:** Requires CET. Low endorsement count (275). May not display correct metadata for custom RadioExt stations (depends on station config).
+- **Dependencies:** CET.
+- **Conflicts:** None known.
+- **Notes:** v1.3.4. Now-playing display is a standard QoL feature missing from vanilla — worth including given the modlist's radio station investments (Retrowave, Phonkwave, MYORS). Test with RadioExt stations.
+
+### Show Weapon Plus Quality
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19347>
+- **Status:** approved
+- **Category:** UI & HUD (04)
+- **Pros:** Displays weapon "+" quality tier on weapon cards (e.g., "D5 Copperhead ++"). 258 endorsements, 0 bugs. Tags: UI + QoL. Small, focused improvement for loot evaluation.
+- **Cons:** May overlap with Better Armor Tooltip (already in modlist) or other weapon UI mods. Low endorsement count (258). Check weapon card overlap.
+- **Dependencies:** To be verified.
+- **Conflicts:** Verify against Better Armor Tooltip and other weapon card mods in the modlist. If tooltip space is contested, prioritize the more comprehensive mod.
+- **Notes:** v1.0.0. The weapon "+" system determines damage tier — showing it directly on the card eliminates need to compare numbers mentally. Pure QoL with no balance impact.
+
 ## Location Mods Batch Review (2026-07-19)
 
 ### Canyon Explorer

@@ -117,6 +117,18 @@ features. How your character grows and how resources flow.
 - **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Renaissance Punk. Supports optional files for different scaling intensities.
 - **Performance:** None
 
+### Running Man - New Sprinting Perks
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/26611>
+- **Version:** 1.1.3
+- **Released:** 2026-04-05
+- **Summary:** Adds "Double Sprint" perk — toggle sprint while already sprinting for a speed burst. Stamina cost integrated with Shinobi skill progression and Sandevistan cyberware.
+- **Why:** Sprinting in vanilla is a binary toggle — you're either sprinting or you're not. This adds a meaningful skill layer: Double Sprint costs stamina but can be mitigated through skill investment (Shinobi 60) and cyberware (Sandevistan), rewarding build specialization. Hold-to-sprint users can double-tap the sprint button to activate.
+- **Conflicts:** Fixed conflict with Jenkins Tendons cyberware in v1.1.2. Compatible with Easier Controller Sprint.
+- **Dependencies:** RED4ext, redscript, TweakXL, Input Loader
+- **MO2 Notes:** Extract to game root. Double Sprint activated by pressing sprint key again while already sprinting (or double-tapping hold-to-sprint button). Stamina cost reduces with Shinobi skill level; zero cost at Shinobi 60 + Sandevistan active.
+- **Performance:** None
+
 ### Flesh and Chrome
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27988>
@@ -250,16 +262,17 @@ features. How your character grows and how resources flow.
 7. Skillful
 8. Skillful Attributes
 9. Renaissance Punk - Perk Scaling
-10. Flesh and Chrome
-11. Immersive Healing
-12. Immersive Grenades
-13. Immersive Throwables
-14. Throwable Weapon Reworked
-15. The Immersive Way
-16. Specialized Ripperdocs
-17. Black Chrome - Cyberware Expansion
-18. Neuralware - Chipware Expansion
-19. Much Better Eddies
+10. Running Man - New Sprinting Perks
+11. Flesh and Chrome
+12. Immersive Healing
+13. Immersive Grenades
+14. Immersive Throwables
+15. Throwable Weapon Reworked
+16. The Immersive Way
+17. Specialized Ripperdocs
+18. Black Chrome - Cyberware Expansion
+19. Neuralware - Chipware Expansion
+20. Much Better Eddies
 
 **Notes:**
 - **Skillful** must be installed **before** Skillful Attributes (Skillful Attributes requires it)
