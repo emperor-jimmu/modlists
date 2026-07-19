@@ -36,13 +36,49 @@ features. How your character grows and how resources flow.
 ### Weapon Conditioning (Tier System Overhaul)
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10479>
-- **Version:** 1.2.0
+- **Version:** 1.2.1
 - **Released:** 2023-10-31
 - **Summary:** Introduces a Condition stat to all weapons. Weapons degrade with use and must be repaired or replaced. Fixes the loot and crafting material economy by giving every weapon a lifespan and maintenance cost.
 - **Why:** Vanilla weapon economy has no sink — once you find a good weapon, you never need another. Condition degradation creates demand for replacement weapons and crafting materials, making loot discoveries and the crafting system meaningful throughout the game.
-- **Conflicts:** None known
+- **Conflicts:** None known. Add-on system includes unequippable weapon mods and quality-matching override — disable these add-ons if using Depeche Mods (25350).
 - **Dependencies:** Codeware, Cyber Engine Tweaks, Mod Settings, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings (or edit Config.reds manually). Install BEFORE Skillful Attributes and Skillful for best compatibility.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings (or edit Config.reds manually). Install BEFORE Skillful Attributes and Skillful for best compatibility.
+- **Performance:** None
+
+### Enhanced Craft
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/4378>
+- **Version:** 4.0.9
+- **Released:** 2022-04-19
+- **Summary:** Extends the crafting menu with weapon variant selection (basic and iconic skins), custom weapon naming, and configurable recipe quality requirements for iconic appearances.
+- **Why:** Vanilla crafting produces identical weapons with no personality. This adds cosmetic variety — choose between weapon skins and name your crafted guns — without affecting stats or balance. Iconic appearances are cosmetic only, not actual iconic weapons.
+- **Conflicts:** None known. Explicitly compatible with Upgrade Weapons Unlocked and Weapon Conditioning.
+- **Dependencies:** Codeware, Input Loader, RED4ext, redscript, TweakXL (v1.4.2+). Optional: ArchiveXL, Mod Settings (for in-game settings menu).
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Enhanced Craft. Iconic skins require higher-quality recipes by default (Epic+); configurable to Rare+ or Legendary only. Custom naming uses a text input dialog during crafting.
+- **Performance:** None
+
+### Upgrade Weapons Unlocked
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9889>
+- **Version:** 1.3.0
+- **Released:** 2023-10-11
+- **Summary:** Restores non-iconic weapon upgrades removed in patch 2.0. Configurable upgrade costs, optional quality-tier gating, and an option to make items iconic when upgraded to ++ tier. Merges with Preem Weaponsmith.
+- **Why:** CDPR removed non-iconic weapon upgrades in 2.0, leaving only iconics upgradable. This restores that path with balance levers — upgrade costs are configurable (including vanilla pricing), and you can limit upgrades to +/++ only to prevent power creep. Works with Weapon Conditioning's repair system.
+- **Conflicts:** Any mod that replaces `GetUpgradableList`, `GetItemFinalUpgradeCost`, `UpgradeItem`, `ApplyQualityModifier`, or `IsUpgradable` and loads after this mod. Explicitly compatible with Weapon Conditioning, Enhanced Craft, Soft Crafting, and Better HMGs.
+- **Dependencies:** redscript (v0.5.16+), TweakXL (v1.5.0+). Optional: Mod Settings.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings or manually edit `r6/scripts/UpgradeWeaponsUnlocked/UpgradeWeaponsUnlocked.reds`. Set `upgradeReduction` to 0 (default) for vanilla costs or 2.0 for 20% reduction. Toggle `nonIconicsEnabled` to limit non-iconic upgrades to + tier only.
+- **Performance:** None
+
+### Depeche Mods - Unified Weapon Modification
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25350>
+- **Version:** 1.3.3
+- **Released:** 2025-10-29
+- **Summary:** Smart vendor system extracts and repurchases weapon mods when selling, safe mod swapping without destruction, and optional Tech ability gates for high-tier mod installation. 19-language localization.
+- **Why:** Vanilla weapon modding is destructive — swapping a scope destroys the old one, vendors pay nothing for attached mods, and arbitrary restrictions block mod removal. This makes modding fair: vendors pay full value including attachments, nothing is lost on swap, and Tech ability can gate high-tier tinkering (optional).
+- **Conflicts:** Mods overwriting `InventoryItemModeLogicController` or `VendorDataManager.SellItemsToVendor` (Attachments Unlocked, Auto Unequip Weapon Mods, Extract The Mods In Weapon Shops, Replace Weapon Mods, Unequip Mods, Unlock Me The Mods, Vendor Filters — none in this modlist). Disable Weapon Conditioning's add-on system (unequippable mods/quality matching) to avoid overlap.
+- **Dependencies:** redscript, ArchiveXL (localizations). Optional: Mod Settings, Slots Slots Slots.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Depeche Mods. Features configurable per type: Smart Vendor extraction, safe swapping, Tech ability gates (disabled by default), combat blocking, holster requirement. If using Weapon Conditioning, disable its add-on system in WC's Mod Settings.
 - **Performance:** None
 
 ### Skillful
@@ -54,7 +90,7 @@ features. How your character grows and how resources flow.
 - **Why:** Required by Skillful Attributes, but also stands alone as a progression accelerator that rewards investment in skills. Perk points and cyberware capacity at milestones make leveling feel more rewarding at every step.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Mod Settings, redscript, TweakXL. Codeware may be needed.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Install BEFORE Skillful Attributes. Read redscript requirements page for any additional dependencies.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings. Install BEFORE Skillful Attributes. Read redscript requirements page for any additional dependencies.
 - **Performance:** None
 
 ### Skillful Attributes
@@ -66,7 +102,7 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla attribute allocation is pure menu management — you distribute points at level-up regardless of how you play. This rewards actual playstyle: use Blade weapons and your Reflexes improve naturally, reinforcing build identity through gameplay.
 - **Conflicts:** None known. Designed to work with Skillful.
 - **Dependencies:** ArchiveXL, Mod Settings, redscript. Requires Skillful (#9309). Codeware may be needed.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. REQUIRES Skillful (#9309) to function. Install Weapon Conditioning before this for best compatibility.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings. REQUIRES Skillful (#9309) to function. Install Weapon Conditioning before this for best compatibility.
 - **Performance:** None
 
 ### Renaissance Punk - Perk Scaling
@@ -90,7 +126,7 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla stamina is a short combat resource that recharges in seconds. This makes stamina a persistent resource you manage across the day — when to push harder, when to rest, what to eat, how much chrome to install.
 - **Conflicts:** Compatible with Cyberware-EX and most combat mods. May conflict with mods that alter base stamina behavior.
 - **Dependencies:** Codeware, redscript, DigitalVixen Core, Redscript Configuration Framework. Recommended: Consumable Animations.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Optional addon: Flesh and Chrome - Carry Overhaul (#28375) for inventory-weight integration. Review mod page for optional file choices.
+- **MO2 Notes:** Extract to game root. Optional addon: Flesh and Chrome - Carry Overhaul (#28375) for inventory-weight integration. Review mod page for optional file choices.
 - **Performance:** None
 
 ### Immersive Healing
@@ -102,7 +138,7 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla healing is arcadey — press a button and wait for a cooldown. This makes healing a resource-management decision: carry enough health items, use them strategically, and restock between engagements.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Codeware, Cyber Engine Tweaks, Input Loader, Native Settings UI, RED4ext, redscript, TweakXL (v1.11.1+)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI -> Mods. Multiple file versions available (choose based on your other mods).
+- **MO2 Notes:** Extract to game root. Configure via Native Settings UI -> Mods. Multiple file versions available (choose based on your other mods).
 - **Performance:** None
 
 ### Immersive Grenades
@@ -114,7 +150,7 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla grenade charges are abstract and replenish for free. Tracking grenades as items makes explosive tactics a deliberate choice with resource consequences rather than a spammable panic button.
 - **Conflicts:** May conflict with mods that alter grenade behavior or the Ticking Time Bomb perk
 - **Dependencies:** ArchiveXL, Cyber Engine Tweaks, Native Settings UI, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI. Supports optional integration with custom grenade mods (Big Chungus Grenade, Chomper, GASH, etc.).
+- **MO2 Notes:** Extract to game root. Configure via Native Settings UI. Supports optional integration with custom grenade mods (Big Chungus Grenade, Chomper, GASH, etc.).
 - **Performance:** None
 
 ### Immersive Throwables
@@ -126,7 +162,7 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla throwable weapons magically return to your inventory. This makes each throw a tactical decision — if you miss or can't reach the landing spot, you lose that weapon for the rest of the fight.
 - **Conflicts:** Compatible with Silent Silencers and Throwing Knives
 - **Dependencies:** ArchiveXL, Cyber Engine Tweaks, Input Loader, Native Settings UI, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI. Pairs with Throwable Weapon Reworked for stamina-based recovery.
+- **MO2 Notes:** Extract to game root. Configure via Native Settings UI. Pairs with Throwable Weapon Reworked for stamina-based recovery.
 - **Performance:** None
 
 ### Throwable Weapon Reworked
@@ -138,7 +174,7 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla throwable recovery is flat and disconnected from character progression. Making it stamina-based gives attribute points and cyberware choices direct gameplay impact on thrown weapon viability.
 - **Conflicts:** None known. Pairs with Immersive Throwables for full throwing overhaul.
 - **Dependencies:** ArchiveXL, redscript, TweakXL. Recommended: Stamina Regen Fixes.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Works automatically — optional configuration.
+- **MO2 Notes:** Extract to game root. Works automatically — optional configuration.
 - **Performance:** None
 
 ### The Immersive Way
@@ -150,7 +186,7 @@ features. How your character grows and how resources flow.
 - **Why:** Extends the Native Interactions Framework with additional immersive scenes, giving Fem V third-person context for daily activities. Dark Future integration ties survival mechanics to visual storytelling, deepening the RPG experience.
 - **Conflicts:** None known. Requires Native Interactions Framework.
 - **Dependencies:** Native Interactions Framework (#10479). Optional: Dark Future (#16300).
-- **MO2 Notes:** Extract to game root. Fem V only. Install after Native Interactions Framework and Dark Future. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Fem V only. Install after Native Interactions Framework and Dark Future.
 - **Performance:** None
 
 ### Specialized Ripperdocs
@@ -162,7 +198,7 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla ripperdocs are interchangeable — every vendor sells everything. This forces exploration and makes ripperdoc choices meaningful. Finding an iconic Sandevistan now requires visiting the specialist who carries it, adding RPG depth to cyberware acquisition.
 - **Conflicts:** None known. Designed to complement Ripperdoc Cyberware Specializations but functions independently.
 - **Dependencies:** Cyber Engine Tweaks
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Built-in CET window (requires button click) shows where each iconic is sold. Works seamlessly with Ripperdoc Vendor UI Enhancements (#23180) for map tooltip integration.
+- **MO2 Notes:** Extract to game root. Built-in CET window (requires button click) shows where each iconic is sold. Works seamlessly with Ripperdoc Vendor UI Enhancements (#23180) for map tooltip integration.
 - **Performance:** None
 
 ### Black Chrome - Cyberware Expansion
@@ -174,7 +210,7 @@ features. How your character grows and how resources flow.
 - **Why:** Even with Specialized Ripperdocs, the vanilla cyberware pool can feel shallow on repeat playthroughs. Black Chrome adds meaningful variety — new OS options, new arm mods, new leg implants — while maintaining the "fair and balanced" design philosophy by the same author as Neuralware and SynthDose.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Cyber Engine Tweaks, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. 13 translation packs available. Same author as Neuralware (#19798) — evaluate both together. Install before Neuralware if using both.
+- **MO2 Notes:** Extract to game root. 13 translation packs available. Same author as Neuralware (#19798) — evaluate both together. Install before Neuralware if using both.
 - **Performance:** None
 
 ### Neuralware - Chipware Expansion
@@ -186,7 +222,7 @@ features. How your character grows and how resources flow.
 - **Why:** Deepens the cyberware system with a new neural capacity resource and chip management layer. Software chips require licenses that expire (or can be cracked), adding an ongoing resource sink. The neural capacity trade-off forces meaningful build decisions — every chip slot matters.
 - **Conflicts:** Incompatible with: Cyberware RNG Bonuses Removed (#15543), More Melees More Fun (#14910), More Cyberware Capacity per Level (#10276), Ripperdoc Current Capacity Bug Fix (#11241). Raven Gemini II (#16209) mostly works but breaks attribute skill bonus chips.
 - **Dependencies:** ArchiveXL, Codeware, Cyber Engine Tweaks, Input Loader, Mod Settings, RED4ext, redscript, Reflex is Cool, TweakXL, VendorsXL. Optional: Audioware (custom sounds), CustomHackingSystem (chipware cracking), Bug Fix - Base Fists (#14130).
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Black Chrome if using both (same author). Moderately complex — test chip interactions before committing to a playthrough. 18 open bugs tracked on Nexus.
+- **MO2 Notes:** Extract to game root. Install after Black Chrome if using both (same author). Moderately complex — test chip interactions before committing to a playthrough. 18 open bugs tracked on Nexus.
 - **Performance:** Light (chip effects and UI additions)
 
 ### Much Better Eddies
@@ -198,35 +234,38 @@ features. How your character grows and how resources flow.
 - **Why:** Vanilla economy breaks by midgame — you're a millionaire with nothing meaningful to spend on. This rebuilds the curve: jobs are your income, loot is supplemental, and every district's reputation affects prices. Fits the "no cheat" philosophy by making the economy tighter, not easier.
 - **Conflicts:** NOT compatible with Economy Punk, Economy of 2077, Economy Tweaks, Economy Rebalance, Atelier Price Fixer. Compatible with Dark Future and Virtual Atelier.
 - **Dependencies:** Cyber Engine Tweaks, RED4ext, redscript, Native Settings UI, Codeware, TweakXL, Browser Extension
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI -> Mods -> Much Better Eddies. Five presets: Vanilla, Easy, Standard (default), Hard, Custom. New game recommended; existing saves need cleanup of acquired wealth.
+- **MO2 Notes:** Extract to game root. Configure via Native Settings UI -> Mods -> Much Better Eddies. Five presets: Vanilla, Easy, Standard (default), Hard, Custom. New game recommended; existing saves need cleanup of acquired wealth.
 - **Performance:** Light (reputation tracking per district)
 
 ---
 
 ## Install Order
 
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
-
 1. Cyberware-EX
 2. Convo Skill Check Scaling
 3. Weapon Conditioning (Tier System Overhaul)
-4. Skillful
-5. Skillful Attributes
-6. Renaissance Punk - Perk Scaling
-7. Flesh and Chrome
-8. Immersive Healing
-9. Immersive Grenades
-10. Immersive Throwables
-11. Throwable Weapon Reworked
-12. The Immersive Way
-13. Specialized Ripperdocs
-14. Black Chrome - Cyberware Expansion
-15. Neuralware - Chipware Expansion
-16. Much Better Eddies
+4. Enhanced Craft
+5. Upgrade Weapons Unlocked
+6. Depeche Mods - Unified Weapon Modification
+7. Skillful
+8. Skillful Attributes
+9. Renaissance Punk - Perk Scaling
+10. Flesh and Chrome
+11. Immersive Healing
+12. Immersive Grenades
+13. Immersive Throwables
+14. Throwable Weapon Reworked
+15. The Immersive Way
+16. Specialized Ripperdocs
+17. Black Chrome - Cyberware Expansion
+18. Neuralware - Chipware Expansion
+19. Much Better Eddies
 
 **Notes:**
 - **Skillful** must be installed **before** Skillful Attributes (Skillful Attributes requires it)
 - **Weapon Conditioning** should be installed before Skillful/Skillful Attributes for best compatibility
+- **Enhanced Craft** and **Upgrade Weapons Unlocked** are crafting-system additions that sit between Weapon Conditioning and the Skillful duo — they modify the crafting UI and upgrade paths without affecting skill progression
+- **Depeche Mods** — if using Weapon Conditioning, disable WC's add-on system (unequippable mods/quality matching) in WC's Mod Settings to avoid overlap
 - **Flesh and Chrome** addons (Carry Overhaul) go after the main Flesh and Chrome install
 - **Specialized Ripperdocs** goes before Black Chrome and Neuralware so cyberware is correctly distributed across ripperdocs
 - **Black Chrome** and **Neuralware** are by the same author — install Black Chrome first if using both

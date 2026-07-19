@@ -27,7 +27,7 @@ City.
 - **Why:** Required by the Songbird romance quest chain. Same role as Deceptious Quest Core but for the Undermine ecosystem — enables plug-and-play quest activation without manual resets.
 - **Conflicts:** None known.
 - **Dependencies:** ArchiveXL, RED4ext, redscript, TweakXL, Phantom Liberty
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Deceptious Quest Core. New quests auto-activate on install — no apartment visit needed.
+- **MO2 Notes:** Extract to game root. Install after Deceptious Quest Core. New quests auto-activate on install — no apartment visit needed.
 - **Performance:** None
 
 ### Cutscene Weapon Swapper
@@ -51,7 +51,7 @@ City.
 - **Why:** Vanilla fixer introductions feel gamey — a phone rings and suddenly you know a fixer you've never met. This smooths the introduction into something that feels like it belongs in Night City's diegetic world.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, RED4ext, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Files go to `archive/pc/mod/`. Works automatically — no configuration needed.
+- **MO2 Notes:** Extract to game root. Files go to `archive/pc/mod/`. Works automatically — no configuration needed.
 - **Performance:** None
 
 ### Aurore Romanced (Lady Marmalade)
@@ -158,7 +158,7 @@ City.
 - **Why:** Corporate intrigue is core to Cyberpunk's identity but the vanilla game focuses heavily on street-level stories. This quest adds the white-collar side of Night City — espionage, office politics, and corpo power plays — diversifying the quest portfolio.
 - **Conflicts:** None known. Check compatibility with other quest mods that modify Arasaka-related world sectors.
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Test in isolation first to verify 2.31 compatibility.
+- **MO2 Notes:** Extract to game root. Test in isolation first to verify 2.31 compatibility.
 - **Performance:** None
 
 ### Taxi Work in Night City
@@ -169,7 +169,7 @@ City.
 - **Why:** Adds a peaceful, immersive gameplay activity that contrasts with combat-heavy content. Taxi work lets players experience Night City from a different perspective — as a service worker navigating the streets — deepening the roleplay possibilities. Earns eddies through honest work, fitting the no-cheat philosophy.
 - **Conflicts:** None known. Works alongside NC Courier Jobs and Dedra's Truck Simulator as part of the "working citizen" gameplay layer.
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. v0.4.6 is still in development — expect updates. Works with any vehicle, including modded vehicles.
+- **MO2 Notes:** Extract to game root. v0.4.6 is still in development — expect updates. Works with any vehicle, including modded vehicles.
 - **Performance:** None
 
 ### The Thin Blue Line
@@ -180,7 +180,7 @@ City.
 - **Why:** The NCPD is a major faction in Cyberpunk lore but vanilla interactions are limited to wanted levels. This mod expands police interactions into a gameplay system, adding moral choices and consequences that deepen the RPG experience.
 - **Conflicts:** Check compatibility with Immersive Fixers (#20808) — The Thin Blue Line handles NCPD/police, Immersive Fixers handles fixer-related behavior. Should be complementary but verify.
 - **Dependencies:** CET, ArchiveXL, Codeware
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Tagged "Fair and balanced" — verify no cheat mechanics.
+- **MO2 Notes:** Extract to game root. Tagged "Fair and balanced" — verify no cheat mechanics.
 - **Performance:** None
 
 ---
@@ -246,14 +246,12 @@ These quests form a connected story arc by Undermine / Alyzandre, telling a post
 - **Why:** Adds a management layer to the mercenary fantasy — you're no longer just a solo operator, but a fixer running operations. The BMI currency and black market weapon system gives iconic weapons a secondary acquisition path beyond world exploration. Cargo economy ties meaningfully to the existing Much Better Eddies and 1st Night City Bank systems.
 - **Conflicts:** None known
 - **Dependencies:** Cyber Engine Tweaks, Native Settings UI, Codeware, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI. Merc missions have configurable success rates and rewards. Car theft dynamic missions trigger randomly — adjustable frequency via settings.
+- **MO2 Notes:** Extract to game root. Configure via Native Settings UI. Merc missions have configurable success rates and rewards. Car theft dynamic missions trigger randomly — adjustable frequency via settings.
 - **Performance:** Light (UI-based management, occasional dynamic spawns)
 
 ---
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Deceptious Quest Core
 2. Undermine Quest Series (UQS)

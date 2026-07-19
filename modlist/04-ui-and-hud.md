@@ -19,7 +19,7 @@ Clean, informative, immersive.
 - **Conflicts:** None known
 - **Dependencies:** Cyber Engine Tweaks
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Configure toggle hotkey via CET overlay -> Bindings -> **Hotkeys** and **Inputs** menus.
     - Free look shortcut defaults to "B".
     - Multi-language support available via separate translation mods on Nexus.
@@ -174,7 +174,7 @@ Clean, informative, immersive.
   items, removing useful information for no good reason.
 - **Conflicts:** Compatible with Crafting Component Quantity Text and Numerals Get Commas
 - **Dependencies:** redscript
-- **MO2 Notes:** Extract `z_LootQuantityText.reds` to `Cyberpunk 2077/r6/scripts/`. Tag as **Root**.
+- **MO2 Notes:** Extract `z_LootQuantityText.reds` to `Cyberpunk 2077/r6/scripts/`.
 - **Performance:** None
 
 ### Ultimate Kill Counter
@@ -193,7 +193,7 @@ Clean, informative, immersive.
 - **MO2 Notes:**
     - Extract `DumpPromptFix.archive` to `Cyberpunk 2077/archive/pc/mod/`.
     - Extract `UltimateKillCounter.reds` to `Cyberpunk 2077/r6/scripts/`.
-    - Tag as **Root**. Recommended for new playthroughs (existing saves show pre-mod vanilla figures).
+    - . Recommended for new playthroughs (existing saves show pre-mod vanilla figures).
 - **Performance:** None
 
 ### Finished Quests Sorted
@@ -208,7 +208,7 @@ Clean, informative, immersive.
   This restores proper chronological order.
 - **Conflicts:** None known
 - **Dependencies:** redscript
-- **MO2 Notes:** Extract `FinishedQuestsSorted.reds` to `Cyberpunk 2077/r6/scripts/`. Tag as **Root**.
+- **MO2 Notes:** Extract `FinishedQuestsSorted.reds` to `Cyberpunk 2077/r6/scripts/`.
 - **Performance:** None
 
 ### Loot Icons Extension
@@ -225,7 +225,7 @@ Clean, informative, immersive.
 - **Conflicts:** Incompatible with Better Loot Markers (self-disables if both installed)
 - **Dependencies:** ArchiveXL, Codeware, redscript 0.5.31+, TweakXL. Recommended: Mod Settings.
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Configure via Mod Settings for icon scale, layout, tinting, and visibility.
     - Optional "LIExt Light" version available without DLL files.
 - **Performance:** Light (icon rendering only on loot open)
@@ -242,7 +242,7 @@ Clean, informative, immersive.
 - **Conflicts:** Not compatible with Informative HUD Quickhacks Memory Counter (counter would shrink with RAM cells)
 - **Dependencies:** RED4ext, redscript. Optional: Mod Settings (for counter size/position).
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Optional file without RAM counter available (works with Streamlined Health Bar).
     - Counter color changes based on RAM fill level.
     - If using a custom game font, counter may misalign. Optional add-on by urmyflower adjusts size and position.
@@ -259,7 +259,7 @@ Clean, informative, immersive.
 - **Why:** The crouch vignette is disorienting and reduces visibility during stealth gameplay. Removing it is a pure QoL improvement that doesn't affect game balance.
 - **Conflicts:** None known
 - **Dependencies:** None (standalone file replacement)
-- **MO2 Notes:** Extract to game root. Simple .reds script -- no dependencies. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Simple .reds script -- no dependencies.
 - **Performance:** None
 
 ---
@@ -287,12 +287,10 @@ Clean, informative, immersive.
 - **Why:** With Specialized Ripperdocs installed, knowing which vendor sells what becomes essential for planning cyberware purchases. This eliminates guesswork and makes the ripperdoc specialization system usable without referencing external tables.
 - **Conflicts:** None known. Compatible with Ripperdoc Cyberware Specializations and Specialized Ripperdocs.
 - **Dependencies:** Codeware, redscript. Optional: Mod Settings for in-game configuration. Integrates with Specialized Ripperdocs (#23399) and Ripperdoc Cyberware Specializations (#17110) if detected.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Single `.reds` file install. For MO2 users with RCS: see pinned comment for compatibility steps if enhanced tooltips don't appear.
+- **MO2 Notes:** Extract to game root. Single `.reds` file install. For MO2 users with RCS: see pinned comment for compatibility steps if enhanced tooltips don't appear.
 - **Performance:** None
 
 ## Install Order
-
-All **Root**-category mods -- enable Root Builder in MO2 before installing.
 
 1. Crouch Vignette Effect Remover
 2. Immersive First Person

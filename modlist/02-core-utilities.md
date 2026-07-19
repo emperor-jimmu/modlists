@@ -18,7 +18,6 @@ depend on. Install these first -- nothing else works without them.
 - **Dependencies:** Visual C++ Redistributable 2022
 - **MO2 Notes:**
     - Extract archive to game root.
-    - Tag mod as **Root** category in MO2 (it installs to `bin/x64/` and `red4ext/`).
     - Verify: check `<GameDir>/red4ext/logs/red4ext.log` for successful load.
 - **Performance:** None
 
@@ -35,7 +34,6 @@ depend on. Install these first -- nothing else works without them.
 - **Dependencies:** Visual C++ Redistributable
 - **MO2 Notes:**
     - Extract archive to game root.
-    - Tag mod as **Root** category.
     - Add `CET.exe` as an executable in MO2 -- launch the game through CET.
     - Launches `Cyberpunk2077.exe` automatically; injects its overlay.
 - **Performance:** None
@@ -53,7 +51,6 @@ depend on. Install these first -- nothing else works without them.
 - **Dependencies:** None (standalone)
 - **MO2 Notes:**
     - Extract archive to game root.
-    - Tag mod as **Root** category.
     - Compiled scripts appear in `r6/cache/redscript/`.
 - **Performance:** None
 
@@ -69,7 +66,7 @@ depend on. Install these first -- nothing else works without them.
 - **Conflicts:** None
 - **Dependencies:** RED4ext 1.29.0+, redscript 0.5.31+
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Install this BEFORE TweakXL and any clothing/appearance mods.
     - No FOMOD -- simple extraction.
 - **Performance:** None
@@ -86,7 +83,7 @@ depend on. Install these first -- nothing else works without them.
 - **Conflicts:** None
 - **Dependencies:** RED4ext 1.29.0+
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Install after ArchiveXL.
     - TweakDB overrides load from `r6/tweaks/`.
 - **Performance:** None
@@ -103,7 +100,7 @@ depend on. Install these first -- nothing else works without them.
 - **Conflicts:** None
 - **Dependencies:** RED4ext 1.29.0+, redscript 0.5.31+, CET 1.37.0+
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Install after ArchiveXL and TweakXL.
 - **Performance:** None
 
@@ -119,7 +116,7 @@ depend on. Install these first -- nothing else works without them.
 - **Conflicts:** None
 - **Dependencies:** RED4ext
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Custom input files go in `r6/input/`.
     - Merged output written to `r6/cache/`.
 - **Performance:** None
@@ -133,7 +130,7 @@ depend on. Install these first -- nothing else works without them.
 - **Why:** Framework-tier mod enabling placed world interactions. Same role as ArchiveXL/Codeware — other mods build on it to add immersive seating, leaning, smoking, and other environmental interactions.
 - **Conflicts:** None known. Framework-only — no user-facing features by itself.
 - **Dependencies:** ArchiveXL, Codeware, CET, RED4ext, redscript, Phantom Liberty
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Codeware, before Native Settings UI. No configuration — other mods use this framework to place interactions.
+- **MO2 Notes:** Extract to game root. Install after Codeware, before Native Settings UI. No configuration — other mods use this framework to place interactions.
 - **Performance:** None
 
 ### Native Settings UI
@@ -147,7 +144,7 @@ depend on. Install these first -- nothing else works without them.
 - **Conflicts:** None
 - **Dependencies:** CET
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Settings appear under CET's overlay (default Insert key).
 - **Performance:** None
 
@@ -160,7 +157,7 @@ depend on. Install these first -- nothing else works without them.
 - **Why:** Enables economy mods like Much Better Eddies with its Dead Channel black-market fixer line. Provides the in-game browser infrastructure that other mods depend on.
 - **Conflicts:** None known
 - **Dependencies:** redscript, RED4ext, Codeware. Optional: Mod Settings.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Custom sites can be added by creating a child of BrowserEventsListener (see CustomSiteExample in optional files).
+- **MO2 Notes:** Extract to game root. Custom sites can be added by creating a child of BrowserEventsListener (see CustomSiteExample in optional files).
 - **Performance:** None
 
 ### Redscript Configuration Framework
@@ -172,7 +169,7 @@ depend on. Install these first -- nothing else works without them.
 - **Why:** Required by Calendar, 1st Night City Bank, and other modern mods that have migrated from Mod Settings. Provides a more maintainable configuration system.
 - **Conflicts:** None. Coexists with Mod Settings for legacy mod support.
 - **Dependencies:** Codeware, redscript
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Mod Settings (Native Settings UI). Newer mods use this; older mods still use Mod Settings.
+- **MO2 Notes:** Extract to game root. Install after Mod Settings (Native Settings UI). Newer mods use this; older mods still use Mod Settings.
 - **Performance:** None
 
 ### Calendar
@@ -184,7 +181,7 @@ depend on. Install these first -- nothing else works without them.
 - **Why:** Foundation framework for time-aware mods. Without a reliable calendar, loan due dates, rent cycles, and scheduled events cannot function correctly. Consumed by 1st Night City Bank and other DigitalVixen-suite mods.
 - **Conflicts:** None
 - **Dependencies:** Codeware, redscript, Redscript Configuration Framework. Pre-v3.5.0 required DigitalVixen Core (no longer needed).
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install after Redscript Configuration Framework. Configure via Mod Settings -> Calendar (post-heist coma days, poll interval). Date listener API available for mod integrations.
+- **MO2 Notes:** Extract to game root. Install after Redscript Configuration Framework. Configure via Mod Settings -> Calendar (post-heist coma days, poll interval). Date listener API available for mod integrations.
 - **Performance:** None
 
 ## Install Order
@@ -202,7 +199,6 @@ depend on. Install these first -- nothing else works without them.
 11. Redscript Configuration Framework
 12. Calendar
 
-All of these are **Root-category** mods -- enable Root Builder in MO2 before
 installing.
 
 ---

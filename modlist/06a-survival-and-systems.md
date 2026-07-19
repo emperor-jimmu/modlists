@@ -39,7 +39,7 @@ to daily life in Night City.
 - **Why:** Vanilla cyberware installation is a menu click with no ceremony. This makes getting chipped feel like the invasive, body-altering procedure it's supposed to be. Complements Cyberware-EX (#11077) — Immersive Cyberware handles visuals/feedback, Cyberware-EX handles slot expansion.
 - **Conflicts:** None known. Compatible with Cyberware-EX (different systems).
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Install after Cyberware-EX. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Cyberware-EX.
 - **Performance:** None
 
 ### Limited Fast Travel
@@ -63,7 +63,7 @@ to daily life in Night City.
 - **Why:** Core survival layer that makes exploration, preparation, and resource management meaningful. Every food item, drink, and rest stop becomes a gameplay decision rather than set dressing. Complements Wannabe Edgerunner's Humanity system for a complete survival experience.
 - **Conflicts:** None known. Compatible with Wannabe Edgerunner, Cyberware-EX. Dark Future Core is a streamlined subset — use full Dark Future for this modlist.
 - **Dependencies:** ArchiveXL, Codeware, Input Loader, Mod Settings, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. For existing saves, run the setup command in CET console: `Game.DarkFutureSetup()`. Recommended: disable fast travel restrictions if using Limited Fast Travel.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings. For existing saves, run the setup command in CET console: `Game.DarkFutureSetup()`. Recommended: disable fast travel restrictions if using Limited Fast Travel.
 - **Performance:** Light (HUD widgets for needs tracking)
 
 ### Drug Dealer
@@ -75,7 +75,7 @@ to daily life in Night City.
 - **Why:** Night City is defined by its drug trade as much as its chrome. This adds a morally grey gameplay system that fits the survival-lite philosophy — high risk, high reward, with consequences for getting caught. Complements Dark Future's drug/trafficking systems.
 - **Conflicts:** Check Dark Future (#16300) compatibility — may overlap on drug-related mechanics.
 - **Dependencies:** ArchiveXL, Codeware. Optional: Audioware.
-- **MO2 Notes:** Extract to game root. Verify balance settings before playing — ensure it's not a cheat money printer. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Verify balance settings before playing — ensure it's not a cheat money printer.
 - **Performance:** None
 
 ### Eviction Notice - Story-Driven Rent System
@@ -87,7 +87,7 @@ to daily life in Night City.
 - **Why:** Transforms apartments from a one-time purchase into an ongoing financial decision. Makes earning eddies meaningful beyond gear upgrades and creates natural downtime between missions. Story-driven approach fits the "no cheat" philosophy.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Codeware, Mod Settings, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Rent is due every 7 in-game days by default (configurable). Supports all owned apartments.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings. Rent is due every 7 in-game days by default (configurable). Supports all owned apartments.
 - **Performance:** None
 
 ### Anti-Theft Measures
@@ -99,7 +99,7 @@ to daily life in Night City.
 - **Why:** Vanilla car theft is consequence-free — walk up to any vehicle and drive off. This adds a meaningful theft minigame and makes owned vehicles feel valuable. Pairs with Limited Fast Travel to make transportation choices matter.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Codeware, Mod Settings, NightlyNow Core, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Optional Audioware recommended for audio feedback during breach attempts.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings. Optional Audioware recommended for audio feedback during breach attempts.
 - **Performance:** None
 
 ### Immersive Meditations - Unmarked Locations
@@ -147,7 +147,7 @@ to daily life in Night City.
 - **Why:** Vehicles in vanilla Cyberpunk have infinite range with no operating costs. Adding fuel management creates meaningful vehicle ownership decisions — do you take the fast car that guzzles fuel, or the efficient commuter? Gas stations become functional locations, adding purpose to the world.
 - **Conflicts:** None known. Compatible with Virtual Car Dealer and all vehicle mods.
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL. Optional: Native Settings UI.
-- **MO2 Notes:** Extract to game root. Configure fuel consumption rate and odometer units via Native Settings UI. Refuel at any gas station. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Configure fuel consumption rate and odometer units via Native Settings UI. Refuel at any gas station.
 - **Performance:** None
 
 ### NC Courier Jobs
@@ -169,7 +169,7 @@ to daily life in Night City.
 - **Why:** Night City's streets feel empty and unresponsive in vanilla. This turns street shootouts and high-speed chases into chaotic, dynamic encounters where traffic and pedestrians react believably.
 - **Conflicts:** May conflict with other traffic-modifying mods
 - **Dependencies:** RED4ext, redscript, Mod Settings (optional)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings if installed. Optional: install Impact Kill Looting Fix to avoid seeing loot despawn bugs from traffic accidents.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings if installed. Optional: install Impact Kill Looting Fix to avoid seeing loot despawn bugs from traffic accidents.
 - **Performance:** Light (additional NPC traffic calculations)
 
 ---
@@ -183,7 +183,7 @@ to daily life in Night City.
 - **Why:** Adds meaningful economic depth to Night City. Loans create risk/reward decisions — borrow for chrome but face escalating consequences on missed payments. The 3-day demand period and trauma team recovery prevent loans from being a cheat mechanic. Complements Eviction Notice and Dark Future for a complete survival-economy layer.
 - **Conflicts:** None known
 - **Dependencies:** Calendar (#30331), Redscript Configuration Framework (#30726), Codeware, redscript. Previous versions required Mod Settings (migrated in v1.6).
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Redscript Configuration Framework. Yield-based taxation on interest. Drop Box ATM add-on available for physical banking interactions. Install after Calendar and Redscript Configuration Framework.
+- **MO2 Notes:** Extract to game root. Configure via Redscript Configuration Framework. Yield-based taxation on interest. Drop Box ATM add-on available for physical banking interactions. Install after Calendar and Redscript Configuration Framework.
 - **Performance:** None
 
 ### Stock Market and News System
@@ -199,8 +199,6 @@ to daily life in Night City.
 - **Performance:** None
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Metro System
 2. Wannabe Edgerunner - A simple Cyberpsychosis mod

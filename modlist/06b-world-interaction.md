@@ -39,7 +39,7 @@ turn static backdrops into lived-in locations.
 - **Why:** A small but impactful immersion feature — Night City is full of places to sit, but vanilla only lets you sit in a handful of scripted locations. Enables organic downtime moments during exploration and adds a photography tool.
 - **Conflicts:** None known
 - **Dependencies:** Cyber Engine Tweaks
-- **MO2 Notes:** Extract to CET plugins folder. Bind a key via CET overlay -> Bindings. Tag as **Root**.
+- **MO2 Notes:** Extract to CET plugins folder. Bind a key via CET overlay -> Bindings.
 - **Performance:** None
 
 ### Immersive Bartenders
@@ -63,7 +63,7 @@ turn static backdrops into lived-in locations.
 - **Why:** Vanilla food/drink consumption is an instant menu action with no visual feedback. This adds immersive eating and drinking animations, making consumables feel like part of the world rather than stat buffs.
 - **Conflicts:** None known
 - **Dependencies:** Cyber Engine Tweaks
-- **MO2 Notes:** Extract to game root. Works with all vanilla consumables. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Works with all vanilla consumables.
 - **Performance:** None
 
 ### Pet Your Cat
@@ -190,12 +190,10 @@ These mods by The Digital Soul use the Native Interactions Framework to add inte
 - **Why:** Netrunner chairs are scattered across apartments and modded locations as set dressing — this gives them actual gameplay purpose. The risk/reward system adds tension to every hack: stack your streak for escalating rewards, but each breach brings you closer to a lethal trace. Complements the modlist's existing netrunner chair locations.
 - **Conflicts:** None known
 - **Dependencies:** Codeware, Mod Settings, redscript. Optional: Dark Future (#16300) for needs penalties. Supports modded chair locations (auto-detected).
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Highly configurable — adjust Deep-Fry risk accumulation, streak reset timing, NCPD trace difficulty, and chair usage thresholds. Seat switch bonus encourages moving between locations. Ice-baths reduce Deep-Fry gain. Tutorial available.
+- **MO2 Notes:** Extract to game root. Highly configurable — adjust Deep-Fry risk accumulation, streak reset timing, NCPD trace difficulty, and chair usage thresholds. Seat switch bonus encourages moving between locations. Ice-baths reduce Deep-Fry gain. Tutorial available.
 - **Performance:** None
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Night City Interactions - Core
 2. Simple Flashlight

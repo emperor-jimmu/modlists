@@ -66,7 +66,7 @@ decorations, garage expansions, and player home systems.
   makes apartment TVs look like actual modern screens.
 - **Conflicts:** None known
 - **Dependencies:** None
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Simple archive install — works for all apartment TVs automatically.
+- **MO2 Notes:** Extract to game root. Simple archive install — works for all apartment TVs automatically.
 - **Performance:** None
 
 ### Lucy Apartment Remastered
@@ -82,7 +82,7 @@ decorations, garage expansions, and player home systems.
 - **Conflicts:** Not compatible with H10 Elevator Expanded (19792)
 - **Dependencies:** ArchiveXL, Codeware, Cyber Engine Tweaks, Native Interactions Framework, RED4ext
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Native Interactions Framework required for drink interactions.
     - Access from H10 Megabuilding — new apartment option.
 - **Performance:** Light
@@ -97,7 +97,7 @@ decorations, garage expansions, and player home systems.
 - **Conflicts:** May conflict with mods that redecorate or alter apartment layouts
 - **Dependencies:** ArchiveXL, TweakXL, Deceptious Quest Core, Native Settings UI, Phantom Liberty
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Choose AV design per apartment via Native Settings UI in CET overlay.
     - Each apartment toy can be set/disabled independently.
 - **Performance:** None
@@ -122,7 +122,7 @@ decorations, garage expansions, and player home systems.
 - **Why:** Expands the housing system beyond the vanilla apartments. Charter Hill is an underserved district for player housing — this fills a geographic gap. Works with Eviction Notice's rent system and provides another location to customize and inhabit.
 - **Conflicts:** None known. Standard apartment mod — compatible with housing and rent systems.
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, TweakXL. Compatible with Eviction Notice (#23187) and Dark Future (#16300).
-- **MO2 Notes:** Extract to game root. Purchase via computer terminal or real estate listing. Rent applies if using Eviction Notice. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Purchase via computer terminal or real estate listing. Rent applies if using Eviction Notice.
 - **Performance:** None
 
 ### E3 Smart Windows
@@ -134,14 +134,12 @@ decorations, garage expansions, and player home systems.
 - **Why:** Restores one of the most requested cut features shown in pre-release demos. The smart window provides visual weather/ambient information and serves as a natural dashboard for the stock market system. 4,200+ endorsements.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, TweakXL. Stock market integration requires Stock Market and News System (#6319).
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Smart window appears in applicable apartments (The Glen, Japantown, Corpo Plaza, Northside). News and stock tickers require Stock Market and News System for full functionality.
+- **MO2 Notes:** Extract to game root. Smart window appears in applicable apartments (The Glen, Japantown, Corpo Plaza, Northside). News and stock tickers require Stock Market and News System for full functionality.
 - **Performance:** None
 
 ---
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Clean Computer Wallpaper
 2. QoL Higher TV Quality

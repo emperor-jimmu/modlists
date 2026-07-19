@@ -78,7 +78,7 @@ and amusement — things to do in Night City when you're not on a gig.
 - **Conflicts:** None known — built in native quest system, no file conflicts
 - **Dependencies:** None (standalone — uses native game quest system)
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Access menu in Lizzie's Bar main room. Select performer and location.
     - Beta stage — limited character selection, more in future updates.
 - **Performance:** None
@@ -115,7 +115,7 @@ and amusement — things to do in Night City when you're not on a gig.
 - **Why:** Night City's nightlife includes adult venues as part of its identity — the Afterlife, Lizzie's Bar, and Clouds are all core to the world. This adds another layer of the city's entertainment district, serving world authenticity.
 - **Conflicts:** None known. Check compatibility with Night City Interactions and NCH addons.
 - **Dependencies:** ArchiveXL, Codeware
-- **MO2 Notes:** Extract to game root. May have PG/mature content toggle. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. May have PG/mature content toggle.
 - **Performance:** Light
 
 ---
@@ -127,8 +127,6 @@ These are companion mods for **Night City Interactions - Core** that add social 
 ---
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Gambling Props - Poker Chips and Playing Cards
 2. Playable Roulette - Gambling System

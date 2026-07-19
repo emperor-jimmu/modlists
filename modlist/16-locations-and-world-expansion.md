@@ -31,7 +31,7 @@ rooftop access, and environmental additions that expand Night City.
 - **Why:** H10 is the player's primary residence but only has one exit point. Adding a secondary exit makes the apartment feel more connected to the surrounding neighborhood and provides practical convenience for daily routines.
 - **Conflicts:** None known. Check compatibility with other H10 mods.
 - **Dependencies:** ArchiveXL, Codeware, Deceptious Quest Core. Phantom Liberty NOT required (PL files bundled for base-game users).
-- **MO2 Notes:** Extract to game root. Files go to `archive\pc\mod`. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Files go to `archive\pc\mod`.
 - **Performance:** None
 
 ---
@@ -45,7 +45,7 @@ rooftop access, and environmental additions that expand Night City.
 - **Why:** Night City lacks mundane civilian infrastructure — everyone eats from vending machines. A grocery store adds civilian world authenticity, making the city feel inhabited by normal people who buy groceries. Serves the "living world" pillar by filling in missing civic infrastructure. Note: misclassified as adult content by Nexus — this is a normal location mod.
 - **Conflicts:** Any mod that changes the same building space. Compatible with Sit Anywhere and Immersive Night City Fixes.
 - **Dependencies:** Phantom Liberty DLC (required), ArchiveXL (required). Drug Dealer - Become a Kingpin (optional, for functional cooking station).
-- **MO2 Notes:** Extract to game root. Tag as **Root**.
+- **MO2 Notes:** Extract to game root.
 - **Performance:** Light (5 NPCs, single interior cell)
 
 ---
@@ -59,7 +59,7 @@ rooftop access, and environmental additions that expand Night City.
 - **Why:** Foundation mod for the Casino Reforged project. Install first before any other casino mods.
 - **Conflicts:** None known. Asset pack only — does nothing on its own.
 - **Dependencies:** None (pure asset pack, no requirements).
-- **MO2 Notes:** Extract to game root. Install before all other Casino Reforged mods. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install before all other Casino Reforged mods.
 - **Performance:** None
 
 ---
@@ -73,7 +73,7 @@ rooftop access, and environmental additions that expand Night City.
 - **Why:** Part of the Casino Reforged visual upgrade path. Small but impactful visual polish that enhances the casino district's nighttime atmosphere.
 - **Conflicts:** None known. Landscape/visual mod.
 - **Dependencies:** ArchiveXL. Lists Casino Reforged Phase 1 and Phase 2 as requirements on Nexus.
-- **MO2 Notes:** Extract to game root. Tag as **Root**.
+- **MO2 Notes:** Extract to game root.
 - **Performance:** None
 
 ---
@@ -87,7 +87,7 @@ rooftop access, and environmental additions that expand Night City.
 - **Why:** Part of the Casino Reforged visual upgrade path. Neon is iconic to Cyberpunk's visual identity — adding it to the casino district enhances the area's atmosphere and makes it feel like a proper Night City landmark.
 - **Conflicts:** None known. Visual/landscape mod.
 - **Dependencies:** ArchiveXL. Lists Casino Reforged Phase 1, Phase 2, and Casino Updates - Lamps as requirements on Nexus.
-- **MO2 Notes:** Extract to game root. Tag as **Root**.
+- **MO2 Notes:** Extract to game root.
 - **Performance:** None
 
 ---
@@ -101,7 +101,7 @@ rooftop access, and environmental additions that expand Night City.
 - **Why:** The North Oak casino is a prominent landmark visible from much of Night City but completely inaccessible in vanilla. Phase 1 makes the area explorable, turning a background prop into a real location. Serves the exploration pillar.
 - **Conflicts:** None known. Location mod.
 - **Dependencies:** Phantom Liberty DLC (required), ArchiveXL, Casino Reforged - Assets Pack, Native Settings UI, TweakXL. Casino Updates - Lamps and Neon recommended for visual polish.
-- **MO2 Notes:** Extract to game root. Install after Assets Pack. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Assets Pack.
 - **Performance:** None
 
 ---
@@ -115,14 +115,12 @@ rooftop access, and environmental additions that expand Night City.
 - **Why:** Completes the Casino Reforged project by adding a believable access route and opening the casino interior. Without a proper road and entrance, the casino feels like an unfinished asset. Phase 2 turns it into a proper destination.
 - **Conflicts:** None known. Location mod.
 - **Dependencies:** Phantom Liberty DLC (required), ArchiveXL, Casino Reforged - Assets Pack, Casino Reforged - Phase 1, TweakXL. Galena GT Widebody and Jefferson Thrax Limo (optional, for vehicles in car park).
-- **MO2 Notes:** Extract to game root. Install after Phase 1. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Phase 1.
 - **Performance:** None
 
 ---
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Marmur Bank (Watson District Branch)
 2. Weeee - New H10 Exit

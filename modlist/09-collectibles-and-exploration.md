@@ -72,8 +72,6 @@ expansions, secrets, easter eggs, and rewards for thorough exploration.
 
 ## Install Order
 
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
-
 1. DLC Liberation Protocol
 2. Extra Iconics
 3. Nomad Cache - New Iconic Weapons

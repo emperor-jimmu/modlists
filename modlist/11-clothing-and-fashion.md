@@ -20,7 +20,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
   in-game web stores for browsing and buying.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install first — all atelier-dependent mods go after.
+- **MO2 Notes:** Extract to game root. Install first — all atelier-dependent mods go after.
 - **Performance:** None
 
 ### Equipment-EX
@@ -34,7 +34,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
   slots for customization. Enables wearing accessories with overlapping body slots.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Toggle items appear in specific equipment slots defined by each clothing mod.
+- **MO2 Notes:** Extract to game root. Toggle items appear in specific equipment slots defined by each clothing mod.
 - **Performance:** None
 
 ### The Community Palette Project
@@ -49,7 +49,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
   use consistent palette names.
 - **Conflicts:** None known
 - **Dependencies:** None (asset-only framework)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install before any clothing mod that references it.
+- **MO2 Notes:** Extract to game root. Install before any clothing mod that references it.
 - **Performance:** None
 
 ### Novawear Pants - Fem Masc V (ArchiveXL)
@@ -65,7 +65,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, TweakXL, The Community Palette Project, Equipment-EX, CET (optional for item codes)
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Toggle items in Legs Inner slot (detail toggles) and Legs Outer slot (cuff toggles).
     - 50 color variants available via Virtual Atelier or CET item codes.
     - Supports vanilla, RB (EBBRB, EBBPRB), Eve, Angel, and Gymfiend body mods.
@@ -86,7 +86,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
 - **Dependencies:** ArchiveXL, Codeware, Input Loader, RED4ext, redscript.
   Optional: Mod Settings.
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Access via hub menu backpack button. Configure sorting in Mod Settings.
     - Supports Ctrl+click and Shift+click for multi-select.
 - **Performance:** Light (custom UI only on backpack open)
@@ -99,7 +99,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
 - **Why:** Virtual Atelier is already in the modlist as the online shopping framework. The instant-item-delivery breaks immersion — this adds a realistic delivery delay that makes shopping feel grounded in the world. Complements Virtual Atelier without changing its core functionality.
 - **Conflicts:** None known. Requires Virtual Atelier.
 - **Dependencies:** Virtual Atelier (#2987, already installed). ArchiveXL, Codeware, RED4ext, TweakXL.
-- **MO2 Notes:** Extract to game root. Install after Virtual Atelier. Configure delivery time via settings. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Virtual Atelier. Configure delivery time via settings.
 - **Performance:** None
 
 ### Hyst Atelier Store - Virtual Atelier
@@ -110,7 +110,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
 - **Why:** Expands the Virtual Atelier ecosystem with a dedicated store for Hyst-compatible clothing. Since Hyst Bodies (#9887) is already in the modlist, having a clothing store that specifically supports that body framework ensures clothing compatibility.
 - **Conflicts:** None known. Virtual Atelier store — no world edits.
 - **Dependencies:** Virtual Atelier (#2987). Hyst Bodies (#9887) for full body compatibility.
-- **MO2 Notes:** Extract to game root. Install after Virtual Atelier and Hyst Bodies. Access via Virtual Atelier computer terminal. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Virtual Atelier and Hyst Bodies. Access via Virtual Atelier computer terminal.
 - **Performance:** None
 
 ### Zenitex Virtual Atelier
@@ -121,7 +121,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
 - **Why:** Expands the Virtual Atelier ecosystem with a well-curated clothing store. Zenitex is one of the most popular Atelier stores on Nexus, offering high-quality, lore-appropriate fashion that fits Night City's aesthetic.
 - **Conflicts:** None known. Virtual Atelier store.
 - **Dependencies:** Virtual Atelier (#2987). Community Palette Project (#10437) for color variants.
-- **MO2 Notes:** Extract to game root. Install after Virtual Atelier. Access via Virtual Atelier computer terminal. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Virtual Atelier. Access via Virtual Atelier computer terminal.
 - **Performance:** None
 
 ### The Zenitex Military Store
@@ -132,7 +132,7 @@ atelier stores, outfit management systems, and wardrobe expansion.
 - **Why:** Night City's combat zones and edgerunner culture demand tactical fashion alongside street style. This store fills the tactical/military niche in the Virtual Atelier ecosystem, offering practical combat-ready clothing options.
 - **Conflicts:** None known. Virtual Atelier store.
 - **Dependencies:** Virtual Atelier (#2987). Zenitex Virtual Atelier (#10090) for shared assets.
-- **MO2 Notes:** Extract to game root. Install after Zenitex Virtual Atelier. Access via Virtual Atelier computer terminal. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Zenitex Virtual Atelier. Access via Virtual Atelier computer terminal.
 - **Performance:** None
 
 ### NanoSuit - Archive XL
@@ -143,14 +143,12 @@ atelier stores, outfit management systems, and wardrobe expansion.
 - **Why:** A nanosuit fits perfectly in Cyberpunk's transhumanist world — it's the kind of cutting-edge combat tech that corps and edgerunners would use. ArchiveXL-based means no file conflicts. Serves both the clothing and armor pillars.
 - **Conflicts:** None known (ArchiveXL-based, no file overwrites)
 - **Dependencies:** ArchiveXL, TweakXL, Community Palette Project (#10437)
-- **MO2 Notes:** Extract to game root. Access via Virtual Atelier or console commands. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Access via Virtual Atelier or console commands.
 - **Performance:** None
 
 ---
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Virtual Atelier
 2. Equipment-EX

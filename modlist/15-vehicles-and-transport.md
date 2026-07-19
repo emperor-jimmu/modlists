@@ -21,7 +21,7 @@ vehicles, car customization, vehicle handling, and transport systems.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Access via in-game web browser. Different dealers offer different inventories.
     - Install BEFORE any vehicle mods that use Virtual Car Dealer for distribution.
 - **Performance:** None
@@ -58,7 +58,7 @@ vehicles, car customization, vehicle handling, and transport systems.
 - **Why:** Vanilla third-person vehicle camera is limited and rigid. This toolkit provides cinematic and functional camera options for driving, enhancing the vehicle experience without conflicting with first-person mods (Immersive First Person is on-foot only, Shift is FP camera dynamics).
 - **Conflicts:** None known. On-foot camera mods (Immersive First Person #9309, Shift #22340) operate in different domains.
 - **Dependencies:** Cyber Engine Tweaks. Optional: Native Settings UI.
-- **MO2 Notes:** Extract to CET plugins folder. Configure camera presets via CET overlay or Native Settings UI. Works in third-person driving mode only. Tag as **Root**.
+- **MO2 Notes:** Extract to CET plugins folder. Configure camera presets via CET overlay or Native Settings UI. Works in third-person driving mode only.
 - **Performance:** None
 
 ### Quadra Turbo-Z
@@ -69,7 +69,7 @@ vehicles, car customization, vehicle handling, and transport systems.
 - **Why:** The Quadra brand is iconic to the Cyberpunk universe. The Turbo-Z is a lore-friendly addition that expands the Virtual Car Dealer catalog with a vehicle that belongs in Night City. Complements existing Quadra models in the game.
 - **Conflicts:** None known. Virtual Car Dealer vehicle.
 - **Dependencies:** Virtual Car Dealer (#4454)
-- **MO2 Notes:** Extract to game root. Purchase via Virtual Car Dealer. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Purchase via Virtual Car Dealer.
 - **Performance:** None
 
 ### Bikes of the Dark Future - Arch V4
@@ -80,7 +80,7 @@ vehicles, car customization, vehicle handling, and transport systems.
 - **Why:** Arch motorcycles are a canonical Cyberpunk brand (co-designed with Keanu Reeves). Adding the V4 model expands the motorcycle roster with a vehicle that authentically belongs in the Cyberpunk universe.
 - **Conflicts:** None known. Virtual Car Dealer vehicle.
 - **Dependencies:** Virtual Car Dealer (#4454)
-- **MO2 Notes:** Extract to game root. Purchase via Virtual Car Dealer. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Purchase via Virtual Car Dealer.
 - **Performance:** None
 
 ---
@@ -94,12 +94,10 @@ vehicles, car customization, vehicle handling, and transport systems.
 - **Why:** Vanilla vehicle customization is limited to CrystalCoat paint jobs. This adds comprehensive vehicle tuning — performance upgrades, visual mods, and handling adjustments — making vehicle ownership feel more personal and rewarding. Essential for any vehicle-focused modlist.
 - **Conflicts:** None known. CET-based — compatible with redscript vehicle mods.
 - **Dependencies:** Cyber Engine Tweaks 1.37.1+
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Uses CET-KIT by Psiberx (MIT license). Access via CET overlay. Modifications are persistent per-vehicle. Install after Virtual Car Dealer and Dedka Dealership so modified vehicles can be purchased first.
+- **MO2 Notes:** Extract to game root. Uses CET-KIT by Psiberx (MIT license). Access via CET overlay. Modifications are persistent per-vehicle. Install after Virtual Car Dealer and Dedka Dealership so modified vehicles can be purchased first.
 - **Performance:** None
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Virtual Car Dealer
 2. Vehicle Pack - Utility

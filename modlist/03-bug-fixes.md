@@ -15,7 +15,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None
 - **Dependencies:** redscript. Optional: ArchiveXL, Input Loader, Mod Settings, RED4ext.
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Configure via Mod Settings (v0.2.17+) for in-game hotkeys and probability sliders.
     - Supports firstEquip on weapon switch, IdleBreak while holstered, SafeAction on empty mag, and scene-aware skips (Stuntjock jump, mounted combat, cutscenes).
 - **Performance:** None
@@ -32,7 +32,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** Check mod page for compatibility version vs all-in-one
 - **Dependencies:** redscript
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Choose between "Compatibility" version (for heavily-modded setups) and
     "All-In-One" version (full coverage, fewer conflicts).
     - Recommended: use the Compatibility version for this modlist.
@@ -50,7 +50,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** May conflict with other mods that touch the same scripts
 - **Dependencies:** redscript, RED4ext
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Install AFTER Quest Trigger Fixes to avoid script overlap.
     - Read included documentation for full list of fixes.
 - **Performance:** None
@@ -68,7 +68,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** Compatible with Quest Trigger Fixes (covers different aspects)
 - **Dependencies:** ArchiveXL, RED4ext
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Works retroactively — no need to reload a save from before the quest.
 - **Performance:** None
 
@@ -84,7 +84,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
   without checking the inventory screen.
 - **Conflicts:** None known
 - **Dependencies:** redscript
-- **MO2 Notes:** Extract `EddiesNotificationFix.reds` to `Cyberpunk 2077/r6/scripts/`. Tag as **Root**.
+- **MO2 Notes:** Extract `EddiesNotificationFix.reds` to `Cyberpunk 2077/r6/scripts/`.
 - **Performance:** None
 
 ### Epistrophy Delamain Despawn Fix
@@ -99,7 +99,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None known
 - **Dependencies:** ArchiveXL 1.26.2+, RED4ext 1.30.0+
 - **MO2 Notes:**
-    - Extract `EpistrophyDelamainDespawnFix.archive` to `Cyberpunk 2077/archive/pc/mod/`. Tag as **Root**.
+    - Extract `EpistrophyDelamainDespawnFix.archive` to `Cyberpunk 2077/archive/pc/mod/`.
     - IMPORTANT: Must be installed BEFORE completing Epistrophy — does not apply retroactively.
 - **Performance:** None
 
@@ -115,7 +115,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
   Melissa Rory's name was misspelled. These undermine the wanted system's integrity.
 - **Conflicts:** None known. Not needed if Cop Killer (14652) is installed.
 - **Dependencies:** Codeware, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**.
+- **MO2 Notes:** Extract to game root.
 - **Performance:** None
 
 ### Item Records Fixes
@@ -131,7 +131,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
   stability for any mod that queries item tags or iconic presets.
 - **Conflicts:** None known — loads early so other mods can overwrite
 - **Dependencies:** redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Loads automatically before other TweakXL mods.
+- **MO2 Notes:** Extract to game root. Loads automatically before other TweakXL mods.
 - **Performance:** None
 
 ### HUD Fixes
@@ -147,7 +147,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** Auto-disables Health Bar/Weapon Roster fixes if Limited HUD is installed
 - **Dependencies:** Cyber Engine Tweaks
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Configure via CET overlay or mod window. Set hotkey for manual HUD restore.
     - "HUD Features Autohide" ON by default (v1.6+ design).
 - **Performance:** None
@@ -165,7 +165,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None known — hooks via ArchiveXL without editing vanilla files
 - **Dependencies:** ArchiveXL 1.24.0+, RED4ext 1.28.0+
 - **MO2 Notes:**
-    - Extract archive and xl file to `Cyberpunk 2077/archive/pc/mod/`. Tag as **Root**.
+    - Extract archive and xl file to `Cyberpunk 2077/archive/pc/mod/`.
     - Effective upon leaving and returning to the apartment after install.
 - **Performance:** None
 
@@ -181,7 +181,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None known
 - **Dependencies:** redscript
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Complements Quest Trigger Fixes -- covers different issues.
 - **Performance:** None
 
@@ -197,7 +197,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Conflicts:** None known
 - **Dependencies:** redscript
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Install after the Story Quest Fixes version.
 - **Performance:** None
 
@@ -210,7 +210,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Why:** Persistent visual bug where fixed-in-place roadside objects have ragdoll physics, creating a junky, immersion-breaking look throughout Night City.
 - **Conflicts:** None known
 - **Dependencies:** None
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Simple archive install — no configuration needed.
+- **MO2 Notes:** Extract to game root. Simple archive install — no configuration needed.
 - **Performance:** None
 
 ---
@@ -224,7 +224,7 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 - **Why:** The streaming bug is a well-known engine-level issue affecting heavily-modded setups. This CET-based workaround forces asset reloading, preventing game-breaking invisible collisions and missing world geometry. Essential for larger modlists.
 - **Conflicts:** None known
 - **Dependencies:** Cyber Engine Tweaks
-- **MO2 Notes:** Extract to CET plugins folder. Run the console command provided on the mod page when streaming issues occur. Tag as **Root**.
+- **MO2 Notes:** Extract to CET plugins folder. Run the console command provided on the mod page when streaming issues occur.
 - **Performance:** None
 
 ---
@@ -245,7 +245,5 @@ holes, scripting errors, and general polish. No gameplay changes -- only fixes.
 12. Immersion Patch -- Minor Activities Quest Fixes
 13. No More Limp Bollards (And Road Barriers)
 14. Streaming Bug Workaround
-
-All are **Root**-category mods -- enable Root Builder in MO2 before installing.
 
 ---

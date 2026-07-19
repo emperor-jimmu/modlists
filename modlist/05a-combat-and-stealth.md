@@ -17,7 +17,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla enemy AI is reactive and predictable — enemies stand in the open and take turns shooting. This makes every firefight dynamic and forces the player to use real tactics: reposition, use cover, prioritize threats, and manage stamina.
 - **Conflicts:** None known. Designed to be compatible with most combat mods.
 - **Dependencies:** Codeware, DigitalVixen Core, Mod Settings, redscript, TweakXL. Optional: True First Person Camera 2.0 for camera effects.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings -> Combat Evolved. To uninstall, delete `r6/scripts/CombatEvolved` and `r6/tweaks/CombatEvolved` directories.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings -> Combat Evolved. To uninstall, delete `r6/scripts/CombatEvolved` and `r6/tweaks/CombatEvolved` directories.
 - **Performance:** Light (AI decision calculations only)
 
 ### Stealthrunner - Stealth Gameplay Expansion
@@ -53,7 +53,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla stealth has a fundamental immersion gap — enemies ignore dead allies entirely. This makes stealth gameplay more realistic and requires the player to hide or move bodies, adding tactical depth to non-lethal approaches.
 - **Conflicts:** None known
 - **Dependencies:** redscript, Mod Settings (optional — toggle main feature and optional features)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings if installed. Optional feature toggle available.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings if installed. Optional feature toggle available.
 - **Performance:** None
 
 ### Immersive Stealth Weapon
@@ -65,7 +65,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla stealth weapons trivialize encounters with guaranteed stealth kills. This makes stealth a genuine challenge where preparation, positioning, and equipment choice determine success rather than a binary "undetected = kill" formula.
 - **Conflicts:** Pairs well with Dead Body Alert and Silent Silencers and Throwing Knives
 - **Dependencies:** redscript, TweakXL, Mod Settings (optional)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings if installed.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings if installed.
 - **Performance:** None
 
 ### Damage Scaling and Balance
@@ -102,7 +102,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla netrunning becomes overpowered at midgame — enemies never trace you and RAM regenerates too fast. This makes quickhacking a high-risk, high-reward playstyle where positioning, timing, and loadout planning matter.
 - **Conflicts:** None known
 - **Dependencies:** Codeware, Cyber Engine Tweaks, Native Settings UI, RED4ext, Reds Logging Headers, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Native Settings UI -> Mods -> Much Better Netrunning. Supports full configuration of trace time, RAM costs, and enemy netrunner difficulty.
+- **MO2 Notes:** Extract to game root. Configure via Native Settings UI -> Mods -> Much Better Netrunning. Supports full configuration of trace time, RAM costs, and enemy netrunner difficulty.
 - **Performance:** None
 
 ### They Will Remember
@@ -114,7 +114,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla gangs are cosmetic — every encounter resets to neutral. This makes faction choice matter: your reputation with each gang persists across the entire playthrough and affects random encounters, gig availability, and dialogue.
 - **Conflicts:** None known. Equipment-EX heavily recommended for disguise system.
 - **Dependencies:** Codeware, Mod Settings, redscript. Recommended: Equipment-EX, Inventory Adjustments Hub, Night City Alive (REDmod).
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Disguise system requires clothing with gang-affiliation tags — use Inventory Adjustments Hub to view tags on items.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings. Disguise system requires clothing with gang-affiliation tags — use Inventory Adjustments Hub to view tags on items.
 - **Performance:** Light (reputation tracking and spawn management)
 
 ### Watch Your Back
@@ -126,7 +126,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Night City is supposed to be dangerous, but vanilla exploration is completely safe outside scripted encounters. Ambush events make the city feel lawless and unpredictable, rewarding awareness and preparation.
 - **Conflicts:** None known
 - **Dependencies:** Mod Settings, RED4ext, redscript
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Configure via Mod Settings. Ambush frequency and difficulty are configurable.
+- **MO2 Notes:** Extract to game root. Configure via Mod Settings. Ambush frequency and difficulty are configurable.
 - **Performance:** None
 
 ### Bounties Restored
@@ -150,7 +150,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla Night City's streets feel sparse and lifeless. This mod transforms the city into a bustling metropolis with realistic population density and traffic flow, serving the "living world" pillar. Replaces Immersive Road Crossing (#26131, removed from 06b) with broader and more comprehensive coverage. 9,400+ endorsements.
 - **Conflicts:** May conflict with other traffic or NPC population mods. Compatible with Night City Interactions (different scope — NCA handles ambient population, NCI handles player-initiated social interactions). Compatible with Immersive Fixers and Responsive NPCs (different behavioral domains).
 - **Dependencies:** REDMod
-- **MO2 Notes:** REDMod file — deploy via REDmod launcher or MO2 REDmod plugin. Test traffic density settings to find the right balance for 4K performance. Tag as **Root**.
+- **MO2 Notes:** REDMod file — deploy via REDmod launcher or MO2 REDmod plugin. Test traffic density settings to find the right balance for 4K performance.
 - **Performance:** Moderate (additional NPC and vehicle simulation)
 
 ### Responsive NPCs
@@ -162,7 +162,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla NPCs are oblivious to the player's actions beyond basic combat states. This adds a layer of world reactivity where citizens notice and respond to what V does, making the world feel responsive rather than scripted. Complements NCA (handles population density) by adding behavioral depth to those NPCs.
 - **Conflicts:** Low — behavioral scripting only, no world edits. Compatible with NCA and Night City Interactions.
 - **Dependencies:** Cyber Engine Tweaks, Native Settings UI (optional)
-- **MO2 Notes:** Extract to CET plugins folder. Configure reaction frequency and types via CET overlay or Native Settings UI. Tag as **Root**.
+- **MO2 Notes:** Extract to CET plugins folder. Configure reaction frequency and types via CET overlay or Native Settings UI.
 - **Performance:** Light (CET scripting, negligible overhead)
 
 ### Shift - Dynamic First Person Camera
@@ -174,7 +174,7 @@ and moment-to-moment action. How combat and encounters play out.
 - **Why:** Vanilla first-person camera is rigid and disconnected from V's movement. Shift adds physical presence to the first-person view, making walking, running, and combat feel more grounded without affecting aim or gameplay.
 - **Conflicts:** Check compatibility with Immersive First Person (#9309) — Shift focuses on camera dynamics while IFP focuses on body visibility. May be complementary.
 - **Dependencies:** Cyber Engine Tweaks, Native Settings UI (optional)
-- **MO2 Notes:** Extract to CET plugins folder. Configure intensity via Native Settings UI. Test alongside Immersive First Person for compatibility. Tag as **Root**.
+- **MO2 Notes:** Extract to CET plugins folder. Configure intensity via Native Settings UI. Test alongside Immersive First Person for compatibility.
 - **Performance:** None
 
 ### Easier Controller Sprint
@@ -192,8 +192,6 @@ and moment-to-moment action. How combat and encounters play out.
 ---
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Combat Evolved
 2. Stealthrunner - Stealth Gameplay Expansion

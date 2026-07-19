@@ -23,7 +23,7 @@ only -- every visual mod must justify its frametime cost.
   and lighting mods that don't edit rain textures/particles.
 - **Dependencies:** None
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Optional improved ripples file available for download separately.
     - Works with path tracing, RT, and raster modes.
 - **Performance:** Light
@@ -44,7 +44,7 @@ only -- every visual mod must justify its frametime cost.
 - **Conflicts:** None known — replaces vanilla lighting files
 - **Dependencies:** ArchiveXL, ReImagined (required for v2.31+)
 - **MO2 Notes:**
-    - Extract to game root. Tag as **Root**.
+    - Extract to game root.
     - Designed for path tracing but functional in RT and raster modes.
     - Modular updates released as separate downloads before being merged into AIO.
 - **Performance:** Light (asset replacement, no per-frame overhead)
@@ -60,7 +60,7 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** Supports the modlist's 4K baseline with high-resolution environment textures. Replaces vanilla textures that look blurry at 4K, significantly improving visual fidelity of Night City's surfaces.
 - **Conflicts:** Will be overwritten by any mod that changes the same textures. Install early in load order.
 - **Dependencies:** None (texture replacer)
-- **MO2 Notes:** Extract to `archive/pc/mod/`. Install early -- other texture mods should overwrite ETO where they conflict. Large download size. Tag as **Root**.
+- **MO2 Notes:** Extract to `archive/pc/mod/`. Install early -- other texture mods should overwrite ETO where they conflict. Large download size.
 - **Performance:** Heavy (increased VRAM usage from 4K textures)
 
 ---
@@ -74,7 +74,7 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** Even after CDPR's patches, visual bugs persist in the open world. This mod fixes floating props, clipping geometry, and visual errors that break immersion during exploration.
 - **Conflicts:** Low -- uses ArchiveXL patching where possible
 - **Dependencies:** ArchiveXL, TweakXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Safe to install mid-playthrough.
+- **MO2 Notes:** Extract to game root. Safe to install mid-playthrough.
 - **Performance:** None
 
 ---
@@ -88,7 +88,7 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** Shadow artifacts break visual consistency at 4K resolution. These fixes address engine-level shadow bugs that CDPR never patched, improving image quality without performance cost.
 - **Conflicts:** None known (shader-level fixes)
 - **Dependencies:** None (standalone)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Works alongside other visual mods.
+- **MO2 Notes:** Extract to game root. Works alongside other visual mods.
 - **Performance:** None
 
 ---
@@ -102,7 +102,7 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** Vanilla mirrors use blurry, low-resolution reflections that look dated. This mod applies proper reflective materials to mirrors, enhancing visual quality in apartments, bathrooms, and storefronts.
 - **Conflicts:** May conflict with other mirror/reflection mods
 - **Dependencies:** None (material override)
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Performance impact depends on the number of reflective surfaces in view -- generally Light.
+- **MO2 Notes:** Extract to game root. Performance impact depends on the number of reflective surfaces in view -- generally Light.
 - **Performance:** Light
 
 ### No More Duplicate NPCs
@@ -114,7 +114,7 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** Seeing the same NPC face repeated across a crowd breaks visual immersion, especially at 4K where details are more visible. This mod dramatically improves crowd variety by randomly swapping duplicate appearances.
 - **Conflicts:** Incompatible with NPC LoD Tweak (for PT). Compatible with crowd density mods (Nova Crowds, Psycho Crowds).
 - **Dependencies:** ArchiveXL, Codeware, Mod Settings, redscript
-- **MO2 Notes:** Extract to game root. Auto-detects graphics settings on first install — lower-end PCs default to Existing Appearance Swaps only (0% Unique). Debug overlay available via Mod Settings for troubleshooting. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Auto-detects graphics settings on first install — lower-end PCs default to Existing Appearance Swaps only (0% Unique). Debug overlay available via Mod Settings for troubleshooting.
 - **Performance:** Moderate (Unique Appearance Creation uses GPU); Light (Existing Appearance Swaps only)
 
 ### Expanded Citizens
@@ -126,7 +126,7 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** Complements No More Duplicate NPCs — where NMD actively swaps duplicates, this makes more base appearances available for the crowd system to draw from. Together they maximize visual variety in Night City's citizens.
 - **Conflicts:** None known. Compatible with No More Duplicate NPCs — different approaches that complement each other.
 - **Dependencies:** ArchiveXL
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Install before No More Duplicate NPCs in mod order if using both.
+- **MO2 Notes:** Extract to game root. Install before No More Duplicate NPCs in mod order if using both.
 - **Performance:** Light
 
 ### Beautiful IRIS - Eyes Texture for NPC
@@ -138,7 +138,7 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** NPC eyes share only ~10 base iris textures across the entire game — this subtle upgrade makes NPCs look brighter and more lifelike while keeping their identity intact. Fits the 4K visual baseline by improving a detail that becomes noticeable at high resolution.
 - **Conflicts:** Not compatible with other mods editing NPC eye diffuse textures. Compatible with Unique Eye Core.
 - **Dependencies:** None
-- **MO2 Notes:** Extract to `archive/pc/mod/`. Simple .archive install. Tag as **Root**. Works alongside other NPC visual mods.
+- **MO2 Notes:** Extract to `archive/pc/mod/`. Simple .archive install. Works alongside other NPC visual mods.
 - **Performance:** None
 
 ---
@@ -152,12 +152,10 @@ only -- every visual mod must justify its frametime cost.
 - **Why:** The definitive texture pack for Cyberpunk 2077 — 18K+ endorsements from a proven mod author. Vanilla textures look blurry at 4K resolution (this modlist's baseline). Halk Hogan's replacements are optimized to be performance-neutral or better than vanilla while providing significantly higher visual fidelity.
 - **Conflicts:** Will be overwritten by other texture mods (ETO, Nova Rain, ReLUX). Install early in load order as a baseline texture layer.
 - **Dependencies:** None (standalone texture replacer). REDmod tagged — uses .archive file replacement.
-- **MO2 Notes:** Extract to `archive/pc/mod/`. Tag as **Root**. Install BEFORE ETO and other texture mods — let other visual mods overwrite where they conflict. Large download (multi-GB). Performance testing at 4K recommended.
+- **MO2 Notes:** Extract to `archive/pc/mod/`. Install BEFORE ETO and other texture mods — let other visual mods overwrite where they conflict. Large download (multi-GB). Performance testing at 4K recommended.
 - **Performance:** Moderate (increased VRAM usage from high-resolution textures; author's optimizations aim to offset this)
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Cyberpunk 2077 HD Reworked Project
 2. Environment Textures Overhaul - ETO

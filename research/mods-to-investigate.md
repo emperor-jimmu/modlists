@@ -895,3 +895,69 @@ The following character addons require Night City Allies and should be evaluated
 - **Status:** rejected
 - **Category:** Audio & Music (18) / Voice
 - **Rejection Reason:** AI-generated voice content (ethical concerns). Last updated Oct 2023 with no ongoing development. AI voice quality inconsistent for story-critical emotional scenes. Only affects English Female V. 2 bug reports. Revisit if a higher-quality version emerges or AI voice tech improves.
+
+---
+
+## Crafting Mods — Batch Review (2026-07-19)
+
+Cross-referenced with existing modlist entries (Weapon Conditioning, Enhanced Craft, Upgrade Weapons Unlocked in 05b).
+
+### Depeche Mods - Unified Weapon Modification
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25350>
+- **Status:** approved → moved to modlist 05b
+- **Category:** RPG Systems & Economy (05b)
+- **Pros:** Three major systems: (1) Smart Vendor System — vendors extract weapon mods before purchase and pay full combined value, extracted parts appear in buyback; (2) Safe Mod Swapping — old mod returns to inventory instead of being destroyed; (3) Optional Tech ability gates for high-tier mod install/removal, combat blocking, and holster requirements. Fully configurable per feature. 19-language localization. 223 endorsements, updated Jan 2026.
+- **Cons:** Conflicts with mods overwriting `InventoryItemModeLogicController` or `VendorDataManager.SellItemsToVendor` (lists 7 specific conflicting mods — none in our modlist). Must disable Weapon Conditioning's add-on system (unequippable mods/quality matching) to avoid overlap. Potential interaction with Much Better Eddies' vendor pricing needs verification.
+- **Alternatives:** Attachments Unlocked, Auto Unequip Weapon Mods, Extract The Mods In Weapon Shops (all explicitly listed as conflicting by Depeche — it supersedes them)
+- **Notes:** v1.3.3 by Gigowatt221. Requires redscript, ArchiveXL (localizations), Mod Settings (optional). Compatible with Slots Slots Slots. Claims "Compatible with inventory and economy overhauls" — likely safe with Much Better Eddies but verify sell-price interaction. Would go in 05b after Upgrade Weapons Unlocked, before Skillful.
+
+### Reverse Engineering
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/27485>
+- **Status:** testing
+- **Category:** RPG Systems & Economy (05b)
+- **Pros:** Learn crafting recipes by disassembling weapons — chance-based with INT and Technical Ability scaling, weapon family knowledge points accumulation, 0-50% chance cap. Does not work on clothing. Configurable debug logging. Very immersive concept that turns disassembly into a meaningful mechanic.
+- **Cons:** v1.0 only, 48 endorsements (low adoption). Tagged "AI-Generated Content" (quality concern, not ethical). Only requires redscript (light). Concept is strong but implementation unproven at scale.
+- **Alternatives:** Vanilla recipe acquisition (vendor purchases, world loot)
+- **Notes:** v1.0 by zzip27, updated Feb 2026 (likely 2.31 compatible). Test for: recipe balance (too easy/too hard to learn), interaction with weapon mods that add new weapons, and whether the knowledge point system feels natural or grindy. No known conflicts with Enhanced Craft or Upgrade Weapons Unlocked (touches disassembly, not crafting UI or upgrade logic).
+
+### Immersive Crafting Access
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16154>
+- **Status:** testing
+- **Category:** RPG Systems & Economy (05b) / World Interaction (06b)
+- **Pros:** Restricts crafting and disassembly to stash access (car trunk, apartment). V can always disassemble but with ~30% parts reduction without Tech skills. Planned features: crafting at weapon vendors, disassembly help at junk vendors. By Deceptious (trusted author — same as Romance Hangouts Enhanced, Immersive Bartending, etc.). 556 endorsements.
+- **Cons:** v0.0.5 — early/experimental. Planned vendor features not yet implemented. Disassembly penalty also affects quickhacks (author undecided on whether to keep). Translation files included but only English talent descriptions updated.
+- **Alternatives:** Vanilla anywhere-crafting, stash-only crafting via self-imposed restriction
+- **Notes:** v0.0.5 by Deceptious. Requires ArchiveXL, Codeware, RED4ext, TweakXL. Pairs with Car Stash Only on Open Trunk (9158) + TrunkCraft (30233) + Vehicular Annoyances Patch (29587) for full trunk-crafting ecosystem. No conflicts expected with Enhanced Craft (different layers — ICA restricts location, EC adds UI).
+
+### Car Stash Only on Open Trunk
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9158>
+- **Status:** testing
+- **Category:** Vehicles & Transport (15) / World Interaction (06b)
+- **Pros:** Simple immersion fix — stash access requires physically opening the car trunk first. 557 endorsements. No dependencies. Pure redscript.
+- **Cons:** Last updated Jan 2024 — verify 2.31 compatibility. Conflicts with any mod editing `GetTrunkActions` function.
+- **Alternatives:** Vanilla trunk access (always available regardless of trunk state)
+- **Notes:** v1.2 by SKNTheLisper. Drop `r6` folder into game root to install. Part of the trunk-crafting ecosystem chain: ICA (16154) → Car Stash (9158) → TrunkCraft (30233) → VAP (29587). Test interaction with any vehicle mods that modify trunk behavior.
+
+### TrunkCraft
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30233>
+- **Status:** testing
+- **Category:** Vehicles & Transport (15) / World Interaction (06b)
+- **Pros:** Bridges Car Stash Only on Open Trunk (9158) and Immersive Crafting Access (16154) so crafting from the car trunk only works when the trunk is physically open. Trunk closed = no prompt. Trunk open = craft away. Simple, focused fix.
+- **Cons:** Brand new (Jun 2026), 5 endorsements only. Depends on two other testing-status mods — fragile chain. Recommends Vehicular Annoyances Patch (29587).
+- **Alternatives:** Accept the minor inconsistency (ICA lets you craft from trunk without visual trunk opening), or skip trunk crafting entirely
+- **Notes:** v1.0.0 by ReiiXz. Requires Immersive Crafting Access and Car Stash Only on Open Trunk (soft dependency — works standalone but pointless without them). Overwrite when asked. Credits Deceptious and SKNTheLisper for permissions.
+
+### Vehicular Annoyances Patch
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/29587>
+- **Status:** testing
+- **Category:** Bug Fixes (03) / Vehicles & Transport (15)
+- **Pros:** Patches three vehicle-related bugs: (1) hijacked vehicles sometimes continue driving on their own ignoring player input; (2) killing a driver leaves a stale "Body Check" prompt; (3) interacting with the trunk then closing the menu clears trunk interaction prompts (critical for the trunk-crafting ecosystem). Recommended companion to Immersive Crafting Access.
+- **Cons:** None significant. These bugs are subtle — some players may never encounter them. Implementation may have edge cases (author acknowledges).
+- **Alternatives:** Live with the vanilla bugs
+- **Notes:** v1.0.1 by Gigowatt221 (same author as Depeche Mods). Listed as recommended but not required by TrunkCraft. Pure fix — no configuration needed. No known conflicts.

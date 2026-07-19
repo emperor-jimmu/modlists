@@ -153,7 +153,7 @@ and relationship progression.
 - **Why:** Required dependency for all four I Really Want To Stay At Your House mods. Enables the shower schedule activity that completes the daily routine immersion for partner characters.
 - **Conflicts:** None known
 - **Dependencies:** Judy Romanced Enhanced, Panam Romanced Enhanced, Kerry Romanced Enhanced, or River Romanced Enhanced (at least one required). ArchiveXL.
-- **MO2 Notes:** Extract to game root. Tag as **Root**. Works automatically with Romanced Enhanced mods. IRWTSAYH mods are SFW without this mod — install to enable shower features.
+- **MO2 Notes:** Extract to game root. Works automatically with Romanced Enhanced mods. IRWTSAYH mods are SFW without this mod — install to enable shower features.
 - **Performance:** None
 
 ### Post-Romance Delivery System (Judy)
@@ -273,7 +273,7 @@ and relationship progression.
 - **Why:** Expands the relationships pillar by giving players more romantic options with characters they connect with. Complements the existing romance enhanced mods (Panam #4626, Judy #21937, River #26746, Kerry #27698) by adding additional character depth.
 - **Conflicts:** Verify compatibility with existing Romance Enhanced mods — non-canon characters should not conflict with main four romance NPCs.
 - **Dependencies:** ArchiveXL, Codeware, RED4ext, redscript, TweakXL
-- **MO2 Notes:** Extract to game root. Install after the four main romance enhanced mods. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after the four main romance enhanced mods.
 - **Performance:** None
 
 ### Pleasures of Night City - Sex Animations Library
@@ -285,7 +285,7 @@ and relationship progression.
 - **Why:** Framework dependency for romance and relationship mods that need intimate scene animations. Serves the adult content pillar by providing the technical foundation for narrative-driven intimate content. No standalone scenes — content is provided by dependent mods.
 - **Conflicts:** None known (animation library)
 - **Dependencies:** ArchiveXL, RED4ext
-- **MO2 Notes:** Extract to game root. Install before any mods that depend on it. Tag as **Root**. This is a framework library — it does nothing on its own.
+- **MO2 Notes:** Extract to game root. Install before any mods that depend on it. This is a framework library — it does nothing on its own.
 - **Performance:** None
 
 ### Responsive V
@@ -297,14 +297,12 @@ and relationship progression.
 - **Why:** V is traditionally a mostly-silent protagonist outside of scripted scenes. This mod makes V feel like a reactive character who comments on the world around them and responds to Johnny's banter during drives, deepening the RPG experience and making V feel like a person rather than a camera. Requires Phantom Liberty.
 - **Conflicts:** None known. Voice line additions, no quest edits.
 - **Dependencies:** ArchiveXL, Codeware, redscript. Optional: Mod Settings. Requires Phantom Liberty DLC.
-- **MO2 Notes:** Extract to game root. Install after Phantom Liberty. Configure via Mod Settings. Tag as **Root**.
+- **MO2 Notes:** Extract to game root. Install after Phantom Liberty. Configure via Mod Settings.
 - **Performance:** None
 
 ---
 
 ## Install Order
-
-All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Judy Romanced Enhanced
 2. Panam Romanced Enhanced
