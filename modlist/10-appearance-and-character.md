@@ -207,11 +207,11 @@ included when they serve authenticity rather than pure titillation.
 - **Nexus:** https://www.nexusmods.com/cyberpunk2077/mods/30332
 - **Version:** 1.5
 - **Released:** 2026-07
-- **Summary:** Comprehensive physics overhaul for character and cloth physics. Improves the quality and realism of body physics, clothing movement, and environmental physics interactions.
-- **Why:** Physics quality is particularly noticeable at 4K resolution where jittery or low-fidelity physics animations break visual consistency. This overhaul improves physics simulation quality, enhancing the visual presence of characters and their clothing.
-- **Conflicts:** May conflict with other physics mods. Check compatibility with Citizen Breast Physics (#21520, already installed).
+- **Summary:** Comprehensive physics overhaul for static objects and environmental physics. Improves the quality and realism of cloth movement, object interactions, and environmental physics.
+- **Why:** Physics quality is particularly noticeable at 4K resolution where jittery or low-fidelity physics animations break visual consistency. This overhaul improves physics simulation for the game world, enhancing immersion.
+- **Conflicts:** May conflict with other environmental physics mods. No conflict with body/breast physics mods — operates on different systems.
 - **Dependencies:** Verify on Nexus — likely ArchiveXL and RED4ext. Check for other native plugin dependencies.
-- **MO2 Notes:** Extract to game root. Test physics quality impact at 4K — may have performance implications in crowded areas. Verify compatibility with Citizen Breast Physics.
+- **MO2 Notes:** Extract to game root. Test physics quality impact at 4K — may have performance implications in crowded areas.
 - **Performance:** Moderate (physics calculations, more noticeable in crowded areas)
 
 ---
