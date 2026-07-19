@@ -4,7 +4,7 @@ A curated, beginner-friendly RimWorld modlist with a comprehensive learning guid
 
 ## Quick Start
 
-1. **Install RimWorld** (Steam) — ensure you own all DLC (Royalty, Ideology, Biotech, Anomaly)
+1. **Install RimWorld** (Steam) — ensure you own all DLC (Royalty, Ideology, Biotech, Anomaly, Odyssey)
 2. **Install [RimPy Mod Manager](https://github.com/rimpy-custom/RimPy/releases)**
 3. **Read the guide** — start with [Chapter 1: What is RimWorld](modlist/chapter-01-what-is-rimworld.md)
 4. **Subscribe to mods** — each chapter links mods on Steam Workshop
@@ -34,14 +34,11 @@ The guide is ordered as a **learning progression**. Install mods as you go — d
 
 ## Building the PDF
 
+Requires [Pandoc](https://pandoc.org/) and [Typst](https://typst.app/).
+
 ```bash
-# Install mdbook
-cargo install mdbook
-
-# Build the guide
-mdbook build
-
-# Output: modlist/guide/output/rimworld-modding-guide-v{version}.pdf
+node scripts/build-pdf.mjs
+# Output: output/Home-Among-the-Stars-v{version}.pdf
 ```
 
 ## Performance Testing

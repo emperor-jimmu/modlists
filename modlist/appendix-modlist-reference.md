@@ -13,3 +13,7 @@
 | 9 | Eccentric Extras - Flares | Weapons/Combat | Aelanna | 2552628275 |
 | 10 | Pulse Weaponry | Weapons/Combat | DetVisor | 3077879089 |
 | 11 | Spacer Arsenal | Weapons/Combat | DetVisor | 3247891820 |
+| 12 | Reel's Turret Pipeline | Weapons/Combat | Reel | 3424132769 |
+| 13 | More Creepjoiners | NPC Interactions | Unknown | 3434682604 |
+| 14 | Floor-Mounted Aquarium | Graphics | Unknown | 3538928291 |
+| 15 | Hacking Expansion | Gameplay | Unknown | 3573344880 |

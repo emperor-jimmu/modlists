@@ -4,6 +4,10 @@
 
 This repo builds a **curated, beginner-friendly RimWorld modlist + learning guide** that gets published as a PDF via mdbook. Target audience: first-time RimWorld player on Windows, 4K resolution. Current target game version: **1.6.4633** (see `version.json`).
 
+### DLC Assumption
+
+The guide assumes the player owns **all RimWorld DLCs**: Royalty, Ideology, Biotech, Anomaly, and Odyssey. Every mod is evaluated against this full-DLC baseline. Do not reject a mod solely because it requires a specific DLC — instead, note which DLC it requires and verify it integrates well with the full suite.
+
 ## Tooling
 
 | Tool                  | Purpose                                                                                            |

@@ -19,6 +19,13 @@
 - RPG Style Inventory — paun inventory display with paper-doll style
 - Better Ground Terrain — terrain textures with more detail -->
 
+### [Floor-Mounted Aquarium](https://steamcommunity.com/sharedfiles/filedetails/?id=3538928291)
+
+- **What it does:** Adds floor-mounted aquariums in 3 sizes that emit light, increase room beauty, and periodically produce fish. Powered buildings that function as both decoration and a passive food source. Works with either Vanilla Fishing Expanded or Odyssey DLC's fishing mechanics.
+- **Why it's here:** Bases look sterile without decorative touches. Aquariums add visual warmth to rec rooms, dining halls, and hospitals. The passive fish production is a small bonus, not the main draw — they're a beauty-building joy item first.
+- **Not OP because:** Aquariums require power, resources to build, and space. Fish production is slow and minor — it won't replace hunting or farming. They're purely cosmetic with a negligible food side-effect. The beauty boost only applies while powered.
+- **Install:** OK to install now. Safe to add mid-save.
+
 ## Installation Checkpoint
 ✅ OK to install all mods in this chapter now.
 

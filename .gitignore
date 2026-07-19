@@ -18,3 +18,7 @@ Thumbs.db
 *.user
 
 .playwright-mcp/
+
+# Typst PDF build output
+output/
+modlist.typ

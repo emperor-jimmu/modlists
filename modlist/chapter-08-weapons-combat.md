@@ -47,6 +47,13 @@
 - **Not OP because:** Each weapon has its own niche with clear strengths and weaknesses. They're sidegrades to vanilla charge weapons, not upgrades. No required dependencies.
 - **Install:** OK to install now for mid-to-late game colonies. Integrates with existing research.
 
+### [Reel's Turret Pipeline](https://steamcommunity.com/sharedfiles/filedetails/?id=3424132769)
+
+- **What it does:** Adds an ammunition pipe network that automatically refills connected turrets. Build ammo pipes from your storage to defensive positions — turrets pull ammo directly from the network instead of needing a pawn to manually rearm them.
+- **Why it's here:** Manually rearming turrets is tedious and dangerous — pawns get shot lugging shells across the killbox. The pipe system turns turret maintenance from a constant chore into a one-time setup, letting you focus on tactics.
+- **Not OP because:** You still need to produce the ammo. Pipes cost resources to build and space to route. A severed pipe line stops feeding until repaired. It automates logistics, not combat — your turrets still fire the same ammo at the same rate.
+- **Install:** OK to install now. Safe to add mid-save.
+
 ## Installation Checkpoint
 <!-- TODO: Evaluate — CE needs special consideration. Recommend waiting until comfortable with vanilla combat first. -->
 
