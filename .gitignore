@@ -20,5 +20,4 @@ Thumbs.db
 .playwright-mcp/
 
 # Typst PDF build output
-output/
 modlist.typ
