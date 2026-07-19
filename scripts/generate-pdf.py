@@ -34,6 +34,21 @@ body {
     color: #1a1a1a;
     margin: 0;
     padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+a {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.nexus-link {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color: #d4a017;
 }
 
 h1 {
@@ -74,11 +89,6 @@ h3 {
 
 strong {
     color: #222;
-}
-
-a {
-    color: #1a73e8;
-    text-decoration: underline;
 }
 
 code {
@@ -291,7 +301,7 @@ def build_html() -> str:
         html_body = html_body.replace("<h1>", f'<h1 id="{slug}">', 1)
         html_body = re.sub(
             r'<a href="(https://www\.nexusmods\.com[^"]*)">([^<]+)</a>',
-            r'<a href="\1" style="color: #d4a017;">\2</a>',
+            r'<a href="\1" class="nexus-link">\2</a>',
             html_body,
         )
         pages.append(html_body)
@@ -325,7 +335,6 @@ def main() -> None:
         browser = pw.chromium.launch()
         page = browser.new_page()
         page.set_content(html, wait_until="networkidle")
-        page.emulate_media(media="screen")
 
         page.pdf(
             path=str(OUTPUT_PATH),
