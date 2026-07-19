@@ -93,3 +93,11 @@ Each mod in a chapter should follow:
 2. Follow the per-mod format above
 3. Keep chapters ordered by learning progression
 4. Cross-reference mods between chapters where relevant
+
+### Mod Research Fallback
+
+If standard HTTP fetch tools fail to read a Steam Workshop page's description content, use Playwright (playwright_browser_navigate + playwright_browser_snapshot) to render the page and extract the mod description.
+
+### Dependencies
+
+Adding a mod that introduces a new dependency is not a blocker. Add the dependency alongside it (framework mod in ch.03, content mod in its appropriate chapter). Every new dependency must still pass the same version-compatibility check (must support 1.6.x).

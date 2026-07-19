@@ -19,6 +19,13 @@
 - RPG Style Inventory — paun inventory display with paper-doll style
 - Better Ground Terrain — terrain textures with more detail -->
 
+### [CCP's Stone Tweaks Vanilla](https://steamcommunity.com/sharedfiles/filedetails/?id=1524681306)
+
+- **What it does:** Applies colour tweaks to all vanilla stone types (sandstone, granite, limestone, slate, marble) so they look more distinct and natural. Includes built-in patches for Vanilla Royalty, Vanilla Ideology, Expanded Floors, and more. Colours are fully customisable via the mod settings menu.
+- **Why it's here:** Vanilla stone types all blend into a muddy grey-brown at 4K resolution. Distinct colours make stone floors, walls, and sculptures visually readable — you can immediately tell granite from marble at a glance.
+- **Not OP because:** Purely cosmetic. Nothing changes balance, game mechanics, or resource values. The mod only touches textures and colours.
+- **Install:** OK to install now. Safe to add mid-save. Requires XML Extensions (already in your load order from Chapter 3).
+
 ### [Floor-Mounted Aquarium](https://steamcommunity.com/sharedfiles/filedetails/?id=3538928291)
 
 - **What it does:** Adds floor-mounted aquariums in 3 sizes that emit light, increase room beauty, and periodically produce fish. Powered buildings that function as both decoration and a passive food source. Works with either Vanilla Fishing Expanded or Odyssey DLC's fishing mechanics.

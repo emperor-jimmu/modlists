@@ -22,6 +22,13 @@
 - Pharmacist — configure medicine usage per pawn/injury (don't use glitterworld meds on scratches).
 - Better Workbench Management — bills management improvements. -->
 
+### [Fluffy Breakdowns (1.6 Update)](https://steamcommunity.com/sharedfiles/filedetails/?id=2584064444)
+
+- **What it does:** Adds a maintenance system — powered buildings (refrigerators, comms consoles, fabricators, etc.) gradually accumulate breakdowns and need periodic repairs. A new "Maintenance" bill type lets you schedule fixing tasks. Breakdown severity escalates if ignored.
+- **Why it's here:** Vanilla buildings never break down, which means once you build something, you never think about it again. Breakdowns create a reason to maintain your colony — giving your constructors steady work between projects and adding a layer of logistics to mid-game base management.
+- **Not OP because:** Breakdowns progress slowly and give plenty of warning. The maintenance work is mild — it doesn't distract from survival. It adds depth without punishing the player. By Fluffy (reputable mod author known for balanced, well-designed mods).
+- **Install:** OK to install now. Buildings will start accumulating wear. Safe to add mid-save.
+
 ### [Eccentric Tech - Fusion Power](https://steamcommunity.com/sharedfiles/filedetails/?id=2742125879)
 
 - **What it does:** Adds the Multi-Mode Fusion Stellarator (MMFS) — a compact fusion reactor with multiple fuel modes (deuterium, tritium, helium-3), fuel extraction/production buildings, and ignition capacitors. 4 new research projects, 5 new resources, 7 new buildings.

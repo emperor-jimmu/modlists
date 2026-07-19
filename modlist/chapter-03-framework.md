@@ -18,6 +18,13 @@
 - ResearchPal (Fluffy) — tech tree organization (is this framework or UI?)
 - Awesome Inventory — framework for item filtering -->
 
+### [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2577315200)
+
+- **What it does:** Provides XML patching utilities that let other mods modify game data cleanly without overwriting files. Enables mods to add new texture color variants, floor types, and other data-driven content.
+- **Why it's here:** Several graphical and content mods (including CCP's Stone Tweaks Vanilla) now require XML Extensions as of RimWorld 1.6. Its patching system is the modern replacement for older XML-based framework approaches.
+- **Not OP because:** It's a pure framework — no gameplay content, no balance impact. It simply enables other mods to work.
+- **Install:** OK to install now. Safe to add mid-save.
+
 ### [Eccentric Tech - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2552623545)
 
 - **What it does:** Adds an advanced AI mainframe (Aurora Core), nanofabrication facilities, and Second Wave materials (Nanoweave, HD Hex Cells). Unlocks the entire Eccentric Tech research tree.
