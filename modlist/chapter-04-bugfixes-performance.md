@@ -10,13 +10,12 @@
 
 ## The Mods
 
-<!-- TODO: List with per-mod format:
-- RocketMan — the gold standard for performance. Multithreading, optimization, built-in TPS counter.
-- Performance Fish — newer, focuses on specific bottlenecks. May conflict with RocketMan (choose one).
-- RimFridge — prevents food exploits from fridges being too cheap? Actually is this QoL or balance?
-- QualityBuilder — ensures high-quality construction without micromanagement
-- While You're Up — pawns do nearby tasks while walking to their destination
-- Replace Stuff — replace walls/furniture without deconstructing first -->
+### [Forced Rearmament](https://steamcommunity.com/sharedfiles/filedetails/?id=3232549170)
+
+- **What it does:** Ensures colonists and slaves automatically rearm themselves with their dropped weapon after recovering from a knockdown. Vanilla pawns sometimes forget their weapons — this mod makes them reliably pick it back up.
+- **Why it's here:** It's a common and frustrating vanilla bug — a pawn gets knocked down, gets back up, and wanders off unarmed, leaving their weapon on the ground. You don't notice until the next raid. Forced Rearmament fixes this silently. Drafting a pawn or having them rescued cancels the rearm, so you keep manual control when it matters.
+- **Not OP because:** Only affects rearming behaviour — no stat changes, no speed boosts, no combat advantages. The same weapon, same pawn, same DPS. Enemies are unaffected (they behave exactly as vanilla). It simply fixes a bug where pawns forget to pick up their own gear.
+- **Install:** OK to install now. Safe to add/remove mid-save.
 
 ## Installation Checkpoint
 ✅ OK to install all mods in this chapter now.

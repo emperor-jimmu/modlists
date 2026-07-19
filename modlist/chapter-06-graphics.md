@@ -38,6 +38,13 @@
 - **Not OP because:** Aquariums require power, resources to build, and space. Fish production is slow and minor — it won't replace hunting or farming. They're purely cosmetic with a negligible food side-effect. The beauty boost only applies while powered.
 - **Install:** OK to install now. Safe to add mid-save.
 
+### [Animal Variety Coats](https://steamcommunity.com/sharedfiles/filedetails/?id=1511926373)
+
+- **What it does:** Adds colour and pattern variation to vanilla animals — muffalo, wargs, timber wolves, rhinos, thrumbos, and 20+ other species no longer look identical. Each animal spawns with randomised coat colours and patterns, making herds and packs visually distinct.
+- **Why it's here:** When every muffalo in your herd looks identical, they blur into a single visual blob — especially at 4K where the repetition is more noticeable. Animal Variety Coats makes each animal feel individual. Spotting your favourite muffalo in a pack becomes possible. Pairs well with Vanilla Pawns Retextured and AI Upscaled Textures for a complete visual refresh.
+- **Not OP because:** Purely cosmetic texture variation — no stat changes, no gameplay impact. Leather colour and wool colour are unchanged (leather tint is set per-species, not per-individual). Only affects newly spawned animals.
+- **Install:** OK to install now. Safe to add mid-save — only newly spawned animals will show variation. Compatible with all creature mods from Chapter 12.
+
 ## Installation Checkpoint
 ✅ OK to install all mods in this chapter now.
 

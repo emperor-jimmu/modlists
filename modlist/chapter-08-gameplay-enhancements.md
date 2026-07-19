@@ -59,6 +59,13 @@
 - **Not OP because:** Hacking requires crafting the cyberdeck first, then researching upgrades. Failed hacks have consequences — alerting enemies, damaging the cyberdeck, or triggering defensive countermeasures. The unlocked tech is powerful but gated behind risk. You can't hack everything immediately.
 - **Install:** OK to install now. Safe to add mid-save.
 
+### [Mech Chargers Repair Mechs](https://steamcommunity.com/sharedfiles/filedetails/?id=3721671407)
+
+- **What it does:** Vanilla mech chargers (Biotech DLC) slowly repair mechanoids while they recharge — healing injuries and restoring destroyed parts over time. Configurable repair speed (default 10 HP per in-game hour).
+- **Why it's here:** In vanilla, repairing damaged mechanoids requires manual intervention — crafting repair paks, ordering mechs to specific repair stations, and babysitting the process. This mod makes mech chargers pull double duty: charge and repair in one step. The repair is slow enough that it won't save a mech mid-battle, but it keeps your mechanoid army ready between engagements without tedious micro.
+- **Not OP because:** Damaged mechs don't automatically path to chargers — you still need to manually order them to recharge. Repair speed is configurable (1–50 HP/hour) and happens while the mech is charging (meaning it's not available for work or combat). Restoring destroyed parts can be toggled off in settings if it feels too generous. Requires Biotech DLC.
+- **Install:** OK to install now. Safe to add mid-save. Requires Biotech DLC. Works with both regular and large vanilla mech chargers.
+
 ## Installation Checkpoint
 ✅ OK to install all mods in this chapter now.
 

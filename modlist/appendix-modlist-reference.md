@@ -50,3 +50,14 @@
 | 46 | Reel's Turret Pipeline | 10 — Weapons/Combat | Reel | 3424132769 |
 | 47 | More Vanilla Biomes | 11 — World Variety | Zylleon | 1931453053 |
 | 48 | More Creepjoiners | 13 — NPC Interactions | Unknown | 3434682604 |
+| 49 | Real Ruins | 11 — World Variety | mrorangu | 1552146295 |
+| 50 | Sometimes Raids Go Wrong | 11 — World Variety | RemingtonRyder | 1551336515 |
+| 51 | Leo - Events | 11 — World Variety | Leo39994 | 3730168769 |
+| 52 | Forced Rearmament | 04 — Bugfixes & Performance | seeki | 3232549170 |
+| 53 | Mech Chargers Repair Mechs | 08 — Gameplay | NotherKiller | 3721671407 |
+| 54 | Vanilla Animals Expanded | 12 — Monsters & Creatures | Oskar Potocki | 2871933948 |
+| 55 | Alpha Animals | 12 — Monsters & Creatures | Sarg Bjornson | 1541721856 |
+| 56 | Megafauna | 12 — Monsters & Creatures | Spino | 1055485938 |
+| 57 | Vanilla Animals Expanded — Waste Animals | 12 — Monsters & Creatures | Oskar Potocki | 2962126499 |
+| 58 | A Dog Said... Animal Prosthetics 2 | 12 — Monsters & Creatures | Samuel_Bucher | 3238353862 |
+| 59 | Animal Variety Coats | 06 — Graphics | cucumpear | 1511926373 |
