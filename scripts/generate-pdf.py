@@ -77,8 +77,12 @@ strong {
 }
 
 a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+a[href*="nexusmods.com/cyberpunk2077"] {
     color: #d4a017;
-    text-decoration: none;
 }
 
 code {
@@ -195,6 +199,10 @@ li {
     margin-bottom: 0.3cm;
 }
 
+.toc-page {
+    page-break-after: always;
+}
+
 .toc-page h1 {
     break-before: avoid;
     page-break-before: avoid;
@@ -218,7 +226,7 @@ li {
 }
 
 .toc-page li a {
-    color: #222;
+    color: #1a73e8;
     text-decoration: none;
 }
 """
@@ -285,6 +293,11 @@ def build_html() -> str:
         heading = extract_heading(md_file)
         slug = heading.lower().replace(" ", "-").replace("&", "").replace("\u2014", "")
         html_body = html_body.replace("<h1>", f'<h1 id="{slug}">', 1)
+        html_body = re.sub(
+            r'<a href="(https://www\.nexusmods\.com[^"]*)">([^<]+)</a>',
+            r'<a href="\1" style="color: #d4a017;">\2</a>',
+            html_body,
+        )
         pages.append(html_body)
 
     full_body = cover_html + "\n" + toc_html + "\n" + "\n".join(pages)
