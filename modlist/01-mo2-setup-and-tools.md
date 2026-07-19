@@ -78,14 +78,11 @@ gradient shades of the parent category's color.
 | 04 | 04 ─ UI & HUD | `#00ACC1` | ▶ HUD & Minimap | `#80DEEA` |
 | | | | ▶ Menus & Inventory | `#4DD0E1` |
 | | | | ▶ Notifications & Dialogue | `#26C6DA` |
-| 05 | 05 ─ Gameplay Overhaul | `#E65100` | ▶ Combat & AI | `#FFB74D` |
-| | | | ▶ Stealth & Netrunning | `#FFA726` |
-| | | | ▶ Loot Economy | `#FF9800` |
-| | | | ▶ Crafting & Upgrades | `#FB8C00` |
-| 06 | 06 ─ Living World | `#2E7D32` | ▶ Immersion & Atmosphere | `#81C784` |
-| | | | ▶ Survival Needs | `#66BB6A` |
-| | | | ▶ NPC Schedules | `#4CAF50` |
-| | | | ▶ Food, Drink & Metro | `#43A047` |
+| 05a | 05a ─ Combat & Stealth | `#E65100` | — | — |
+| 05b | 05b ─ RPG Systems & Economy | `#EF6C00` | — | — |
+| 06a | 06a ─ Survival & Systems | `#2E7D32` | — | — |
+| 06b | 06b ─ World Interaction | `#388E3C` | — | — |
+| 06c | 06c ─ Leisure & Entertainment | `#43A047` | — | — |
 | 07 | 07 ─ Quests & Stories | `#F9A825` | ▶ Main Quest Expansions | `#FFF59D` |
 | | | | ▶ Side Content | `#FFEE58` |
 | | | | ▶ Gigs & Unaffiliated | `#FFEB3B` |

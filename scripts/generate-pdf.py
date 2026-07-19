@@ -293,6 +293,11 @@ def build_html() -> str:
     pages = []
     for md_file in CATEGORY_FILES:
         md_content = md_file.read_text(encoding="utf-8")
+        md_content = re.sub(
+            r'(?<!<)(https://www\.nexusmods\.com/[^\s<>"\')\]]+)',
+            r'<\1>',
+            md_content,
+        )
         html_body = markdown.markdown(
             md_content, extensions=["extra", "codehilite", "tables"]
         )
