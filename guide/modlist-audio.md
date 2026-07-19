@@ -76,12 +76,14 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 | --- | --- |
 | [Precision](https://www.nexusmods.com/skyrimspecialedition/mods/72347) | Already locked in → `Third-Person`; audio impact is secondary. |
 | [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Already locked; parry/stagger/timed-block audio feedback. |
+| [Dynamic Impacts](https://www.nexusmods.com/skyrimspecialedition/mods/140320) | Weapon-type-vs-armor impact sounds and sparks. Requires MIF - Mu Impact Framework (95624). ISC/AOS patches available. |
 | [Heart of the Beast - Werewolf Sound and Camera Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/13776) | Werewolf audio baseline if `Growl` is adopted. |
 | [Heart of the Beast - Feral](https://www.nexusmods.com/skyrimspecialedition/mods/165648) | Alternative werewolf sounds. Choose one variant, not both. |
 
 ### Risks & Compatibility
 - Only one Heart of the Beast variant active at a time. Both installed = file conflicts.
 - If `Growl` adds new werewolf forms not covered by the sound replacer, forms fall back to Growl defaults.
+- Dynamic Impacts requires **MIF - Mu Impact Framework (95624)**. Use its ISC/AOS patches if those audio mods are active.
 
 ---
 

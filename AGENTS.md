@@ -29,6 +29,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `guide/modlist-design-philosophy.md` is the authoritative design-philosophy source for world progression — leveling, encounter zones, loot distribution, difficulty, XP/leveling, and perks as an interlocked dial. Adopted combination: **#1 Static with Hard Threat** + "Living the World" layer (player home, family, slow questing). Mods in section files are tagged in a `Dial` column that indicates which combination(s) they serve.
 - `TODO.md` is the central scratch backlog for open research and candidate mods not yet adopted. Section files reference it with an `## Open Research` heading rather than carrying their own `## Candidate TODO Additions` stub.
 - `guide/modlist-restructure-design.md` is the historical design rationale for the current file conventions. It is not a live planning document; keep it for context but do not edit it as if it were active guidance.
+- `guide/modlist-curation.md` is the active curation rulebook. When evaluating mods or making additions, cross-reference its curation principles before committing.
 
 ## Lighting & Graphics Direction
 

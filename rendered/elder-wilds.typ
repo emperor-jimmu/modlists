@@ -6632,6 +6632,36 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ---
 
+== NPC Dialogue Immersion
+<immersive-scale-and-world-feel-npc-dialogue-immersion>
+Market trader and ambient NPC dialogue variety — making recurring NPC interactions feel less repetitive.
+
+#table(
+  columns: 2,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Mod*],
+  [*Notes*],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139025")[Shouts of Stallholders]],
+  [Adds varied voiced lines to vanilla market stall sellers (and mod-added NPCs with vanilla voice types). Uses SPID for NPC exclusion. AI-Generated Content tagged. Safe to install/uninstall mid-game. May be suppressed by idle-comment-suppressing mods.],
+)
+
+---
+
+== Fire And Camp Interaction
+<immersive-scale-and-world-feel-fire-and-camp-interaction>
+Interactive campfire behavior for survival and immersion — sitting, cooking, resting at fires.
+
+#table(
+  columns: 2,
+  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },
+  [*Mod*],
+  [*Notes*],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140915")[Usable Campfires]],
+  [Makes campfires interactive: sit, cook (with OAR + Animated Eating Redux), rest. Survival Mode compatible. Compatible with Embers XD, Campfire (667), retextures. Incompatible with other campfire-replacing mods.],
+)
+
+---
+
 == Activation Text
 <immersive-scale-and-world-feel-activation-text>
 === Baseline
@@ -7124,6 +7154,12 @@ Smaller discoverable places between headline destinations.
   [Graveyards of the Marshlands],
   [Atmospheric graveyard locations in Hjaalmarch. ESL-flagged.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/132767")[Nexus]],
+  [The Wreck of the Argent Raptor],
+  [Adds the Argent Raptor shipwreck north of Windhelm, matching Xander's story at Solitude Docks. ESL-flagged, adds only, no vanilla record edits.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140763")[Nexus]],
+  [Corrupted Cradlestone Tower - FuzzBeed's Forsworn Camps],
+  [Overhauls Cradlestone Tower at the summit of Lost Valley Redoubt with aqueducts and fortified walls. Part of a Forsworn camp improvement series.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/139765")[Nexus]],
 )
 
 === Alternatives
@@ -9262,6 +9298,8 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
   [Already locked in → `Third-Person`; audio impact is secondary.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64741")[Valhalla Combat]],
   [Already locked; parry/stagger/timed-block audio feedback.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140320")[Dynamic Impacts]],
+  [Weapon-type-vs-armor impact sounds and sparks. Requires MIF - Mu Impact Framework (95624). ISC/AOS patches available.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/13776")[Heart of the Beast - Werewolf Sound and Camera Overhaul]],
   [Werewolf audio baseline if `Growl` is adopted.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/165648")[Heart of the Beast - Feral]],
@@ -9272,6 +9310,7 @@ Combat-specific and immersion-audio mods layering on top of the weapon/magic SFX
 <audio-and-feedback-risks--compatibility-4>
 - Only one Heart of the Beast variant active at a time. Both installed = file conflicts.
 - If `Growl` adds new werewolf forms not covered by the sound replacer, forms fall back to Growl defaults.
+- Dynamic Impacts requires *MIF - Mu Impact Framework (95624)*. Use its ISC/AOS patches if those audio mods are active.
 
 ---
 

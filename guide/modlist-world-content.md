@@ -210,6 +210,8 @@ Smaller discoverable places between headline destinations.
 | Unmarked Locations Pack - All In One        | + addon packs for Bruma, Wyrmstooth, Gray Cowl if those worldspaces are adopted. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/113660) |
 | Ascend - Hidden Peaks of Skyrim             | Climbing challenge locations across Skyrim. Complements parkour movement.        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120802) |
 | Graveyards of the Marshlands                | Atmospheric graveyard locations in Hjaalmarch. ESL-flagged.                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/132767) |
+| The Wreck of the Argent Raptor             | Adds the Argent Raptor shipwreck north of Windhelm, matching Xander's story at Solitude Docks. ESL-flagged, adds only, no vanilla record edits. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/140763) |
+| Corrupted Cradlestone Tower - FuzzBeed's Forsworn Camps | Overhauls Cradlestone Tower at the summit of Lost Valley Redoubt with aqueducts and fortified walls. Part of a Forsworn camp improvement series. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139765) |
 
 ### Alternatives
 

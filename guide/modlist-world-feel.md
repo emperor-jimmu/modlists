@@ -180,6 +180,24 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 
 ---
 
+## NPC Dialogue Immersion
+Market trader and ambient NPC dialogue variety — making recurring NPC interactions feel less repetitive.
+
+| Mod | Notes |
+| --- | --- |
+| [Shouts of Stallholders](https://www.nexusmods.com/skyrimspecialedition/mods/139025) | Adds varied voiced lines to vanilla market stall sellers (and mod-added NPCs with vanilla voice types). Uses SPID for NPC exclusion. AI-Generated Content tagged. Safe to install/uninstall mid-game. May be suppressed by idle-comment-suppressing mods. |
+
+---
+
+## Fire And Camp Interaction
+Interactive campfire behavior for survival and immersion — sitting, cooking, resting at fires.
+
+| Mod | Notes |
+| --- | --- |
+| [Usable Campfires](https://www.nexusmods.com/skyrimspecialedition/mods/140915) | Makes campfires interactive: sit, cook (with OAR + Animated Eating Redux), rest. Survival Mode compatible. Compatible with Embers XD, Campfire (667), retextures. Incompatible with other campfire-replacing mods. |
+
+---
+
 ## Activation Text
 ### Baseline
 - **Roleplaying In Skyrim - Immersive Activators** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/149908)) — Descriptive activation text (e.g., "Read Book" instead of "Activate"), hides NPC names until interaction (toggleable). 8KB, no scripts, no SKSE.
