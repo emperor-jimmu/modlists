@@ -31,6 +31,13 @@ Framework mods don't add content themselves — they provide APIs that other mod
 - **Not OP because:** It's a pure framework — no gameplay content, no balance impact. It simply enables other mods to work.
 - **Install:** OK to install now. Safe to add mid-save.
 
+### [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013)
+
+- **What it does:** A core modding library required by the entire Vanilla Expanded series. Provides shared code for custom gizmos, UI systems, hediff mechanics, faction management, base generation, and more. Also removes the hard cap of 12 factions set by the base game.
+- **Why it's here:** Many mods in this guide (Vanilla Furniture Expanded, Vanilla Cooking Expanded, Vanilla Weapons Expanded, and more) depend on Vanilla Expanded Framework as their backbone. It centralises shared code so each mod doesn't have to ship its own copy, keeping the modlist lean and compatible.
+- **Not OP because:** Pure framework — no gameplay content, no items, no mechanics. It provides infrastructure for other mods to build on. The faction-cap removal is the only user-facing change, and it only matters if other mods add factions.
+- **Install:** OK to install now. Place after XML Extensions and before Eccentric Tech - Core in load order. Safe to add mid-save.
+
 ### [Eccentric Tech - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2552623545)
 
 - **What it does:** Adds an advanced AI mainframe (Aurora Core), nanofabrication facilities, and Second Wave materials (Nanoweave, HD Hex Cells). Unlocks the entire Eccentric Tech research tree.

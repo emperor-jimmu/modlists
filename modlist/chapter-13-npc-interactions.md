@@ -1,4 +1,4 @@
-# Chapter 12: NPC Interactions
+# Chapter 13: NPC Interactions
 
 ## Learning Objectives
 - Increase depth of faction relationships and diplomacy
@@ -31,4 +31,4 @@
 <!-- TODO: OK to install now — works mid-save. -->
 
 ## Next Steps
-Proceed to [Chapter 13: Alien Breeding](chapter-13-alien-breeding.md).
+Proceed to [Chapter 14: Alien Breeding](chapter-14-alien-breeding.md).

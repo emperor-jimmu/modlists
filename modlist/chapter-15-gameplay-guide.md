@@ -1,4 +1,4 @@
-# Chapter 14: Gameplay Guide — A Full Modded Run
+# Chapter 15: Gameplay Guide — A Full Modded Run
 
 ## Learning Objectives
 - Apply all previous mod chapters in a cohesive playthrough
@@ -11,9 +11,9 @@
 ## Starting Your Modded Colony
 <!-- TODO: 
 - Colonist selection with modded traits (some mods add new traits — watch for OP ones)
-- Biome selection with modded biomes (ch. 09) — recommend sticking with Temperate Forest for first modded run
+- Biome selection with modded biomes (ch. 11) — recommend sticking with Temperate Forest for first modded run
 - Starting scenario with modded scenarios (some mods add new starts)
-- Initial base layout with more furniture options (ch.06), planning tool (ch.05), and Replace Stuff (ch.04)
+- Initial base layout with more furniture options (ch.09), planning tool (ch.05), and Replace Stuff (ch.04)
 -->
 
 ## Early Game (Days 1-30) — With Mods
@@ -60,4 +60,4 @@
 -->
 
 ## Next Steps
-Proceed to [Chapter 15: Troubleshooting](chapter-15-troubleshooting.md).
+Proceed to [Chapter 16: Troubleshooting](chapter-16-troubleshooting.md).

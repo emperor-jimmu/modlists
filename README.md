@@ -19,19 +19,20 @@ The guide is ordered as a **learning progression**. Install mods as you go — d
 |---|---------|-------------------|
 | 01 | What is RimWorld | Core game loop, storyteller, difficulty, starting choices, DLC overview |
 | 02 | Setup | Installing RimWorld + RimPy, organizing mods |
-| 03 | Framework | Core libraries (Harmony, HugsLib, etc.) |
+| 03 | Framework | Core libraries (Harmony, HugsLib, VEF, etc.) |
 | 04 | Bugfixes & Performance | Vanilla bugfixes, RocketMan, performance optimization |
 | 05 | UI / HUD | Better tooltips, work tab, Mint Menus |
 | 06 | Graphics | Clean Textures, visual enhancements |
 | 07 | Audio & Music | Music packs, sound QoL tweaks |
 | 08 | Gameplay Enhancements | Allow Tool, Common Sense, hauling logic |
-| 09 | Weapons & Combat | New weapons, combat AI, balance |
-| 10 | World Variety | Biomes, factions, events, exploration |
-| 11 | Monsters & Creatures | Alpha Animals, new threats |
-| 12 | NPC Interactions | Faction diplomacy, quest expansion |
-| 13 | Alien Breeding | Genetic Rim, Alpha Genetics |
-| 14 | Gameplay Guide | Full modded run — early/mid/late game |
-| 15 | Troubleshooting | Load order fixes, compatibility |
+| 09 | Furniture & Production | Production buildings, power, security, medical, decor |
+| 10 | Weapons & Combat | New weapons, combat AI, balance |
+| 11 | World Variety | Biomes, factions, events, exploration |
+| 12 | Monsters & Creatures | Alpha Animals, new threats |
+| 13 | NPC Interactions | Faction diplomacy, quest expansion |
+| 14 | Alien Breeding | Genetic Rim, Alpha Genetics |
+| 15 | Gameplay Guide | Full modded run — early/mid/late game |
+| 16 | Troubleshooting | Load order fixes, compatibility |
 
 ## Building the PDF
 

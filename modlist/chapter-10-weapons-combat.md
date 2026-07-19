@@ -1,4 +1,4 @@
-# Chapter 9: Weapons & Combat
+# Chapter 10: Weapons & Combat
 
 ## Learning Objectives
 - Expand the arsenal with balanced new weapons
@@ -56,4 +56,4 @@
 <!-- TODO: Evaluate — CE needs special consideration. Recommend waiting until comfortable with vanilla combat first. -->
 
 ## Next Steps
-Proceed to [Chapter 10: World Variety](chapter-10-world-variety.md).
+Proceed to [Chapter 11: World Variety](chapter-11-world-variety.md).

@@ -1,4 +1,4 @@
-# Appendix B: Resources
+# Appendix C: Resources
 
 ## Official Resources
 - [RimWorld Official Wiki](https://rimworldwiki.com/)

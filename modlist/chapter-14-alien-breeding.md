@@ -1,4 +1,4 @@
-# Chapter 13: Alien Breeding
+# Chapter 14: Alien Breeding
 
 ## Learning Objectives
 - Understand RimWorld's genetic engineering systems
@@ -22,4 +22,4 @@
 ⚠ Wait until you're established mid-game (Chapter 14 covers how to play with this setup). These mods add complexity best tackled after you've survived a few raids.
 
 ## Next Steps
-Proceed to [Chapter 14: Gameplay Guide](chapter-14-gameplay-guide.md).
+Proceed to [Chapter 15: Gameplay Guide](chapter-15-gameplay-guide.md).

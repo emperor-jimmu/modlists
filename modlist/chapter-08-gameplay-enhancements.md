@@ -63,4 +63,4 @@
 ✅ OK to install all mods in this chapter now.
 
 ## Next Steps
-Proceed to [Chapter 9: Weapons & Combat](chapter-09-weapons-combat.md).
+Proceed to [Chapter 9: Furniture & Production](chapter-09-furniture-production.md).

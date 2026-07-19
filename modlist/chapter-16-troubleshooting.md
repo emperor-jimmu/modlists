@@ -1,4 +1,4 @@
-# Chapter 15: Troubleshooting
+# Chapter 16: Troubleshooting
 
 ## Learning Objectives
 - Diagnose common mod-related issues
@@ -54,4 +54,4 @@
 <!-- TODO: RimWorld Discord, r/RimWorld, mod-specific Workshop pages. Provide error logs. -->
 
 ## Next Steps
-Congratulations! You've completed the guide. See [Appendix B: Resources](appendix-resources.md) for community links and further reading.
+Congratulations! You've completed the guide. See [Appendix C: Resources](appendix-resources.md) for community links and further reading.
