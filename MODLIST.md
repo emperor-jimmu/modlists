@@ -169,7 +169,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Alacrity](https://www.curseforge.com/minecraft/texture-packs/alacrity)                                                           | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models |
 | [Alacrity — Just Enough Items Support](https://www.curseforge.com/minecraft/texture-packs/alacrity-jei-support)                   | Retextures JEI (+8 addons) to match Alacrity's RPG style                  |
 | [Alacrity — Shulker Box Tooltip Support](https://www.curseforge.com/minecraft/texture-packs/alacrity-shulker-box-tooltip-support) | Retextures Shulker Box Tooltip previews to match Alacrity's RPG style     |
-
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars)                                       | Redesigned boss bars with themed designs for vanilla and modded bosses    |
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                | 3D block & item textures for all rail types                               |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)                                             | Enhanced 3D look for lanterns and chains                                  |
