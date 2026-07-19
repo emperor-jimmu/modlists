@@ -81,10 +81,6 @@ a {
     text-decoration: underline;
 }
 
-a[href*="nexusmods.com/cyberpunk2077"] {
-    color: #d4a017;
-}
-
 code {
     font-family: Consolas, 'Courier New', monospace;
     font-size: 9pt;
@@ -329,6 +325,7 @@ def main() -> None:
         browser = pw.chromium.launch()
         page = browser.new_page()
         page.set_content(html, wait_until="networkidle")
+        page.emulate_media(media="screen")
 
         page.pdf(
             path=str(OUTPUT_PATH),
