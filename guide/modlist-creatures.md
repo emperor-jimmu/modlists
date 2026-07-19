@@ -67,6 +67,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Sewer Rats](https://www.nexusmods.com/skyrimspecialedition/mods/137591) | |
 | [Giant Bats and Rats](https://www.nexusmods.com/skyrimspecialedition/mods/140134) | |
 | [Imps](https://www.nexusmods.com/skyrimspecialedition/mods/33759) | |
+| [Zombie Dogs and Skinned Hounds](https://www.nexusmods.com/skyrimspecialedition/mods/34390) | Undead canine variety. |
 | [Giant Centipedes](https://www.nexusmods.com/skyrimspecialedition/mods/26192) | |
 | [Ogrim](https://www.nexusmods.com/skyrimspecialedition/mods/27243) | |
 | [Ruinachs](https://www.nexusmods.com/skyrimspecialedition/mods/49543) | |

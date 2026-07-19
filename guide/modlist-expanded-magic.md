@@ -35,7 +35,8 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 | [Strange Runes](https://www.nexusmods.com/skyrimspecialedition/mods/19438)                 | Alternative | #1, #2, #3, #4 | Floating Nordic runes during spell charging. Visual only, no records.           |
 | [Odin — Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000)  | Alternative | #1, #4         | Moderate expansion.                                                             |
 | [Apocalypse — Magic of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1090)   | Alternative | #1, #4         | Maximum spell variety.                                                          |
-| [Lost Grimoire SSE](https://www.nexusmods.com/skyrimspecialedition/mods/4455)              | Alternative | #1, #2, #4     | 115+ lore-friendly spells. Compatible with any primary overhaul.                |
+| [Lost Grimoire SSE](https://www.nexusmods.com/skyrimspecialedition/mods/4455)              | Addition    | #1, #2, #4     | 115+ lore-friendly spells. Compatible with any primary overhaul.                |
+| [Lost Grimoire - B.O.O.B.I.E.S Support](https://www.nexusmods.com/skyrimspecialedition/mods/158139) | Addition | #1, #2, #4 | Spell tome icons via B.O.O.B.I.E.S. Requires Lost Grimoire + B.O.O.B.I.E.S. |
 | [Elemental Mastery Magic](https://www.nexusmods.com/skyrimspecialedition/mods/139953)      | Alternative | #1, #4         | Elemental specialization and tiered mastery bonuses.                            |
 | [Immersive Illusion Spells](https://www.nexusmods.com/skyrimspecialedition/mods/142357)    | Alternative | #1, #4         | New illusion types beyond fear/calm/frenzy.                                     |
 | [360 Ward](https://www.nexusmods.com/skyrimspecialedition/mods/156225)                     | Alternative | all            | Wards block from any direction. Third-person improvement.                       |
