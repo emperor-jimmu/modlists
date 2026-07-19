@@ -173,7 +173,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                | 3D block & item textures for all rail types                               |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)                                             | Enhanced 3D look for lanterns and chains                                  |
 | [Smooth Font 32x](https://www.curseforge.com/minecraft/texture-packs/smooth-font)                                                 | Smooth 32x font replacement for cleaner text readability                  |
-| [Vervada's 3D Plants](https://modrinth.com/resourcepack/3d-plants)                                                                | 3D models for almost all plants — more immersive flora                    |
 
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
 
@@ -200,7 +199,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 7. 3D Ladders
 8. Better Lanterns
 9. Smooth Font 32x
-10. Vervada's 3D Plants
 
 ### Infrastructure
 

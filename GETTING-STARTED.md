@@ -117,7 +117,6 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 7. 3D Ladders
 8. Better Lanterns
 9. Smooth Font 32x
-10. Vervada's 3D Plants
 
 **Alacrity support packs go BELOW the base Alacrity pack** — putting them above corrupts JEI graphics.
 

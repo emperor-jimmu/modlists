@@ -162,7 +162,6 @@
 - [x] Shulker Box Tooltip (Wave 0 — Inventory & UI)
 - [x] Item Borders (Wave 0 — Inventory & UI)
 - [x] Smooth Font 32x (Wave 0 — Texture Pack)
-- [x] Vervada's 3D Plants (Wave 0 — Texture Pack)
 - [x] Vanilla Refresh → Typewriter Day Counter → Day Counter mod (Wave 0 — Visual & Client QoL)
 
 ### Removed Mods (Jul 2026 batch 2)
@@ -225,6 +224,9 @@
 
 ### MODLIST.md correction needed
 - [ ] Better Days section: `dayStart = 0` is outside Better Days' valid range (22300-24000). Should note actual range or set to default (23500). The MODLIST.md value was aspirational but not achievable.
+
+### Removed Mods (Jul 2026)
+- [x] Vervada's 3D Plants (Wave 0 — Texture Pack) — removed due to incompatibility issues with other mods
 
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
