@@ -54,11 +54,13 @@ Open **Options → Controls → Key Binds** and set these before anything else:
 
 ## Wave 0 — Foundation
 
-This wave makes Minecraft run well, look great, and feel comfortable. Install all Wave 0 mods before launching.
+The essentials that make the game run well. Dependencies, performance, rendering, shaders, chunk loading, and texture packs. Install everything here before launching.
 
 ### Install
 
 Use **GDLauncher** — create a 1.21.1 NeoForge instance, install all Wave 0 mods via the Addons tab. See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full list.
+
+Wave 0.5 (Player Experience) can be installed at the same time — they're independent mods that don't conflict.
 
 ### First Launch Checklist
 
@@ -91,6 +93,8 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 #### 3. Shader Setup
 
 Drop **Complementary Unbound** `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select Complementary Unbound. Works with Iris on NeoForge.
+
+**Euphoria Patches** (optional add-on): Install the patcher mod, it auto-detects Complementary and applies additional visual options. All features disabled by default.
 
 **Settings for RTX 4080 SUPER (16GB VRAM, 4K)**:
 
@@ -151,6 +155,35 @@ These mods optimize automatically. No config needed.
 **ModernFix critical setting**: `mixin.perf.dynamic_resources = true` in `config/modernfix-mixins.properties` — biggest single launch-time speedup. Disable only if you see missing textures.
 
 ---
+
+### Infrastructure
+
+#### Chunk Loaders
+
+Keeps chunks loaded when you're far away or in another dimension.
+
+| Type                | Coverage            | Use                       |
+|---------------------|---------------------|---------------------------|
+| Single Chunk Loader | 1 chunk             | One machine or farm       |
+| Spotloader          | Handheld, temporary | Explore nearby            |
+| Multi Chunk Loader  | 3×3 chunks          | Factory complex or colony |
+
+**How**: Craft (check JEI — iron + redstone + ender pearl), place, right-click to toggle. Colored border shows loaded area.
+
+**Placement priority** (late game):
+
+1. Main base (ME drive, Mekanism induction matrix, Create power core) — Multi Chunk
+2. MineColonies colony — Single or Multi
+3. Mining outposts (Digital Miner) — Single
+4. Other dimensions — Single per outpost
+
+No performance concern with a dozen loaders on a modern CPU.
+
+---
+
+## Wave 0.5 — Player Experience
+
+All the visual polish, UI improvements, inventory tools, storage, travel, trading, and quality-of-life features that make the game feel great. Install alongside Wave 0.
 
 ### Visual & Client QoL — What to Expect
 
@@ -355,31 +388,6 @@ Die → grave spawns with all your items. Right-click the grave to retrieve. No 
 
 ---
 
-### Infrastructure
-
-#### Chunk Loaders
-
-Keeps chunks loaded when you're far away or in another dimension.
-
-| Type                | Coverage            | Use                       |
-|---------------------|---------------------|---------------------------|
-| Single Chunk Loader | 1 chunk             | One machine or farm       |
-| Spotloader          | Handheld, temporary | Explore nearby            |
-| Multi Chunk Loader  | 3×3 chunks          | Factory complex or colony |
-
-**How**: Craft (check JEI — iron + redstone + ender pearl), place, right-click to toggle. Colored border shows loaded area.
-
-**Placement priority** (late game):
-
-1. Main base (ME drive, Mekanism induction matrix, Create power core) — Multi Chunk
-2. MineColonies colony — Single or Multi
-3. Mining outposts (Digital Miner) — Single
-4. Other dimensions — Single per outpost
-
-No performance concern with a dozen loaders on a modern CPU.
-
----
-
 ### Village & Trading
 
 #### Dynamic Villager Trades
@@ -398,7 +406,7 @@ Forces villages to spawn on flat terrain. No more cliff-side or underwater villa
 
 ---
 
-### Session Plan — Wave 0
+### Session Plan — Wave 0.5
 
 | Session                         | Goal                                                                                                                                                                                                           |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

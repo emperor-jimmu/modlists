@@ -120,10 +120,11 @@
 ## Pending
 
 ### Testing
-- [ ] Test launch with Waves 0-7
+- [ ] Test launch with Waves 0-7 — generate default configs for all mods
 - [ ] Verify no mod conflicts
 - [ ] Cross-wave integration testing
 - [ ] Config tuning per mod
+- [ ] After test launch, capture Apotheosis defaults (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) then apply overrides per MODLIST.md §Wave 3
 ### Data Packs
 
 - [x] Day Counter mod added to Wave 0 — replaces typewriter day counter (data pack format was incompatible with 1.21.1)
@@ -168,9 +169,6 @@
 - [x] Obscure Tooltips — removed (Tooltip Overhaul retained as sole tooltip mod)
 - [x] Subtle Effects — removed (replaced by Particular Reforged)
 
-### Config Overrides (Jul 2026)
-- [x] YUNG's Better Caves: cavern_layer spawn chance 23% → 30% (cavern_spawn_chance in better_cave.json) — gives Crystal Cavern biome more room to breathe
-
 ### Skipped After Review
 - [x] Spelunkery — too much overlap with YUNG's Better Caves + Mekanism tool progression
 - [x] Galosphere — Darker Depths chosen as the cave content mod instead; Galosphere gems are orphan content
@@ -204,6 +202,29 @@
 - [x] Make Bubbles Pop — no native NeoForge (requires Connector); author planning port but unreleased
 - [x] Fadeless — available but skippable; loading fades are a minor annoyance
 - [x] Explosive Enhancement — not essential; Camera Overhaul already adds explosion screen shakes
+
+### Added Mods (Jul 2026 batch 5)
+- [x] Easy Anvils (Wave 0 — Utility & QoL) — anvil overhaul, requires Puzzles Lib (already in pack)
+- [x] Euphoria Patches (Wave 0 — Shaderpack) — optional add-on for Complementary Unbound, standalone on NeoForge
+
+### Config Overrides Created (Jul 2026)
+- [x] YUNG's Better Caves (config/bettercaves/neoforge-1.21.1/better_cave.json) — cavern_spawn_chance 23% → 30%, gives Crystal Cavern biome more room to breathe
+- [x] Waystones (config/waystones-common.toml) — free teleport (enableCosts=false), inventory button on "ANY"
+- [x] Better Days (config/betterdays-common.toml) — MINUTES mode, 20min days/10min nights, all time effects disabled, smooth sleep acceleration
+- [x] Dynamic Villager Trades (config/dynamicvillagertraders.properties) — global_randomness=0.7, refresh_delay=1, no_book_duplicates=true
+- [x] Loot Journal (config/obscuria/loot_journal-client.toml) — trackItemPickups=true, trackXpPickups=true
+- [x] Mekanism (config/Mekanism/general.toml) — allowChunkloading=false (delegated to Chunk Loaders mod)
+- [x] Aether (aether-common.toml) — Curios menu=true, no portal frame, starting loot on entry, Patreon message off, freezing/ruined portal data packs off
+- [x] Comfortable Campfires (config/comfortable_campfires.json) — Regen I near campfires, Resistance I near soul campfires, 30s duration, 8-block range, 5s tick interval
+- [x] Reforged Accurate Block Placement (config/reforged_accurate_block_placement.json) — accurate placement on, fast breaking off, crouch prompt hidden, placement highlight on
+- [x] GraveStone Mod (config/gravestone-server.toml) — obituary on, owner-only break, sneak pickup, break pickup, ghost off, friendly ghost on
+- [x] Serene Seasons (config/sereneseasons-common.toml) — seasonal_crops=true, out_of_season_crop_behavior=0 (slow growth, no breakage), crop_tooltips=true
+- [x] Apotheosis module toggles (config/apotheosis/apotheosis.cfg) — all modules enabled (Deadly, Enchantment, Adventure, Spawner, Potion, Village), Garden disabled, book on first join
+- [x] Apotheosis spawner (config/apotheosis/spawner.cfg) — default spawner silk touch level 1, damage 100, no banned mobs
+- [ ] Apotheosis remaining configs (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) — need test launch to capture defaults, then apply overrides from MODLIST.md section
+
+### MODLIST.md correction needed
+- [ ] Better Days section: `dayStart = 0` is outside Better Days' valid range (22300-24000). Should note actual range or set to default (23500). The MODLIST.md value was aspirational but not achievable.
 
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
