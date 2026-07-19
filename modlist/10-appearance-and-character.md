@@ -19,6 +19,30 @@ included when they serve authenticity rather than pure titillation.
 - **MO2 Notes:** Extract to `archive/pc/mod/`. Choose resolution appropriate for your hardware — 4K version recommended for the modlist baseline.
 - **Performance:** Light (higher VRAM usage for 8K variant)
 
+### Universal Skin Tone - Realistic Textures
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15426>
+- **Version:** 1
+- **Released:** 2024-11-05
+- **Summary:** Comprehensive FemV texture rework covering head, body, arms, genitals, and nipple textures. 72 skin tones across diverse human skin types. Framework-agnostic — works with any VTK body mod.
+- **Why:** Vanilla skin textures lack detail and range at 4K resolution. This provides 72 skin tones with realistic subsurface scattering, normal maps, and microdetails. 65 other mods depend on it — the standard for FemV skin textures.
+- **Conflicts:** Other skin texture replacers for FemV. Must match skin tone selection between this and Realistic Complexion II head textures.
+- **Dependencies:** VTK body mod (e.g., Vanilla HD, ANGEL, EBB)
+- **MO2 Notes:** Extract to game root. Large file set (17 files). Choose matching skin tone across body and head textures. 4K recommended for the 4K baseline; 8K variant available but VRAM-intensive. Tag as **Root**.
+- **Performance:** Light (4K); Moderate (8K)
+
+### Realistic Complexion II (for Universal Skin Tone)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15634>
+- **Version:** 1
+- **Released:** 2025-12-12
+- **Summary:** Hand-painted FemV head color textures with 5 skin types and 6 base variants (72 tones total). Includes hand-sculpted face detail normal map in 4K or 8K.
+- **Why:** Complements Universal Skin Tone with matching head textures and enhanced face detail (normal map/roughness). The hand-sculpted face detail adds realism that vanilla head meshes lack, visible even at 4K.
+- **Conflicts:** Other FemV head texture mods. Must match skin tone with Universal Skin Tone body texture.
+- **Dependencies:** Universal Skin Tone (#15426) — hard requirement. VTK head mesh (from Vanilla HD or similar).
+- **MO2 Notes:** Extract to game root. Choose the same skin tone family (Pale/Fair/Vanilla/Tan/Brown/Dark) as the Universal Skin Tone body texture. 4K face detail recommended; 8K may cause stutter on lower VRAM. Tag as **Root**.
+- **Performance:** Light (4K); Moderate (8K face detail)
+
 ### NPCs Enhancement - Hyst Bodies
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/9887>
@@ -41,6 +65,18 @@ included when they serve authenticity rather than pure titillation.
 - **Conflicts:** None known (CET script-based, no loose file overwrites)
 - **Dependencies:** Cyber Engine Tweaks
 - **MO2 Notes:** Extract to game root. Works via CET scripting — no archive conflicts.
+- **Performance:** None
+
+### Gymfiend - Body Mod - Male V - VTK
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/6423>
+- **Version:** 1.4.2
+- **Released:** 2025-11-10
+- **Summary:** Muscular Male V body with full VTK support. Exclusive texture paths (not shared with NPCs). Includes VTK-supported head mesh, body, arms, and genitals with multiple muscle definition options.
+- **Why:** Male V body customization is underserved compared to Fem V. Gymfiend provides a high-quality VTK body with exclusive texture paths (no NPC sharing), enabling tattoo and skin texture mod compatibility. 307 other mods use it as a dependency — a sign of ecosystem quality.
+- **Conflicts:** Other Male V body mods. Compatible with skin texture and tattoo mods (VTK-supported).
+- **Dependencies:** None (self-contained VTK body)
+- **MO2 Notes:** Extract to game root. Multiple muscle definition options available in files. VTK head mesh included in separate file — install separately. Tag as **Root**.
 - **Performance:** None
 
 ### Citizen Breast Physics
@@ -92,6 +128,18 @@ included when they serve authenticity rather than pure titillation.
 - **Conflicts:** None known (CCXL-based)
 - **Dependencies:** Community Palette Project (CCXL framework, already in modlist)
 - **MO2 Notes:** Extract to game root. Fem V only. Requires CCXL framework. Tag as **Root**.
+- **Performance:** None
+
+### Beanie's CCXL Salon - 21 Fem V Hairstyles
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19191>
+- **Version:** 1.3
+- **Released:** 2025-02-10
+- **Summary:** 21 standalone FemV hairstyles (no replacers) with CCXL hair profile compatibility. Uses vanilla hair cards for Preem Hair compatibility.
+- **Why:** Expands FemV hairstyle options significantly with standalone hairs that don't replace any vanilla slots. CCXL-compatible for future hair profile expansion. Simple drag-and-drop install.
+- **Conflicts:** None known. Cannot use with mods that replace vanilla hair cards if those differ from vanilla.
+- **Dependencies:** None (standalone). Optional: Community Palette Project (CCXL framework) for hair profiles.
+- **MO2 Notes:** Extract to game root. Hairs appear after vanilla numbered hairstyles in the character creator. Compatible with Preem Hair (uses vanilla cards). Tag as **Root**.
 - **Performance:** None
 
 ### EKT Custom Character Creator - FEMV ONLY
@@ -161,14 +209,18 @@ included when they serve authenticity rather than pure titillation.
 All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. 8k-4k Skin Texture and Material
-2. Songbird's New Look REMASTERED
-3. NPCs Enhancement - Hyst Bodies
-4. CET NPC Body Tweaks
-5. Citizen Breast Physics
-6. Hair Color Profiles CCXL
-7. Wolfcut Hair Collection - CCXL
-8. EKT Custom Character Creator - FEMV ONLY
-9. Vessnelle's 4K Johnny Silverhand Overhaul
-10. Judy Enhanced Body with 4K Texture
-11. Lethal Curves - Modular Body Rig
-12. VAXIS's ULTRA Physics Overhaul
+2. Universal Skin Tone - Realistic Textures
+3. Realistic Complexion II (for Universal Skin Tone)
+4. Songbird's New Look REMASTERED
+5. NPCs Enhancement - Hyst Bodies
+6. CET NPC Body Tweaks
+7. Gymfiend - Body Mod - Male V - VTK
+8. Citizen Breast Physics
+9. Hair Color Profiles CCXL
+10. Wolfcut Hair Collection - CCXL
+11. Beanie's CCXL Salon - 21 Fem V Hairstyles
+12. EKT Custom Character Creator - FEMV ONLY
+13. Vessnelle's 4K Johnny Silverhand Overhaul
+14. Judy Enhanced Body with 4K Texture
+15. Lethal Curves - Modular Body Rig
+16. VAXIS's ULTRA Physics Overhaul

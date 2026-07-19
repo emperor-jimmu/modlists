@@ -105,6 +105,42 @@ only -- every visual mod must justify its frametime cost.
 - **MO2 Notes:** Extract to game root. Tag as **Root**. Performance impact depends on the number of reflective surfaces in view -- generally Light.
 - **Performance:** Light
 
+### No More Duplicate NPCs
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15585>
+- **Version:** 1.4
+- **Released:** 2025-03-24
+- **Summary:** Dynamically swaps duplicate NPC crowd appearances using two strategies — Unique Appearance Creation (via Codeware, GPU-intensive) or existing appearance swaps. Configurable frequency slider via Mod Settings.
+- **Why:** Seeing the same NPC face repeated across a crowd breaks visual immersion, especially at 4K where details are more visible. This mod dramatically improves crowd variety by randomly swapping duplicate appearances.
+- **Conflicts:** Incompatible with NPC LoD Tweak (for PT). Compatible with crowd density mods (Nova Crowds, Psycho Crowds).
+- **Dependencies:** ArchiveXL, Codeware, Mod Settings, redscript
+- **MO2 Notes:** Extract to game root. Auto-detects graphics settings on first install — lower-end PCs default to Existing Appearance Swaps only (0% Unique). Debug overlay available via Mod Settings for troubleshooting. Tag as **Root**.
+- **Performance:** Moderate (Unique Appearance Creation uses GPU); Light (Existing Appearance Swaps only)
+
+### Expanded Citizens
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25765>
+- **Version:** 1.0
+- **Released:** 2025-11-20
+- **Summary:** Expands citizen/crowd .ent files with 1,500+ existing-but-unreferenced appearances from the game files, making more visual variety available without adding new assets.
+- **Why:** Complements No More Duplicate NPCs — where NMD actively swaps duplicates, this makes more base appearances available for the crowd system to draw from. Together they maximize visual variety in Night City's citizens.
+- **Conflicts:** None known. Compatible with No More Duplicate NPCs — different approaches that complement each other.
+- **Dependencies:** ArchiveXL
+- **MO2 Notes:** Extract to game root. Tag as **Root**. Install before No More Duplicate NPCs in mod order if using both.
+- **Performance:** Light
+
+### Beautiful IRIS - Eyes Texture for NPC
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/14083>
+- **Version:** 1
+- **Released:** 2024-04-06
+- **Summary:** Replaces NPC iris textures with brighter, more refined versions from the Beautiful IRIS set. Preserves each NPC's original eye color. Only affects eyes with irises (not cyber-eyes).
+- **Why:** NPC eyes share only ~10 base iris textures across the entire game — this subtle upgrade makes NPCs look brighter and more lifelike while keeping their identity intact. Fits the 4K visual baseline by improving a detail that becomes noticeable at high resolution.
+- **Conflicts:** Not compatible with other mods editing NPC eye diffuse textures. Compatible with Unique Eye Core.
+- **Dependencies:** None
+- **MO2 Notes:** Extract to `archive/pc/mod/`. Simple .archive install. Tag as **Root**. Works alongside other NPC visual mods.
+- **Performance:** None
+
 ---
 
 ### Cyberpunk 2077 HD Reworked Project
@@ -125,8 +161,11 @@ All mods are **Root**-category — enable Root Builder in MO2 before installing.
 
 1. Cyberpunk 2077 HD Reworked Project
 2. Environment Textures Overhaul - ETO
-3. Immersive Night City Fixes
-4. General Shadows Fixes
-5. Preem Mirrors - Reflective Mirror Materials
-6. Nova Rain (and Improved Ripples)
-7. ReLUX (Lighting Redux)
+3. Expanded Citizens
+4. No More Duplicate NPCs
+5. Beautiful IRIS - Eyes Texture for NPC
+6. Immersive Night City Fixes
+7. General Shadows Fixes
+8. Preem Mirrors - Reflective Mirror Materials
+9. Nova Rain (and Improved Ripples)
+10. ReLUX (Lighting Redux)

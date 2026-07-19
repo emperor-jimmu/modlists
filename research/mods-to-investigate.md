@@ -554,6 +554,136 @@ The following character addons require Night City Allies and should be evaluated
 
 ---
 
+### Extended and Improved Headlights
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/5013>
+- **Status:** candidate
+- **Category:** Vehicles & Transport (15)
+- **Pros:** Tweaks vehicle headlight range, brightness, and durability via Native Settings UI tab. 6,397 endorsements. Makes first-person driving much more useful at night.
+- **Cons:** Requires CET + Native Settings UI. Last updated Aug 2022 — verify 2.31 compatibility.
+- **Dependencies:** CET, Native Settings UI
+- **Notes:** v1.1 by keanuWheeze/NexusGuy999. Simple config mod with slider-based customization. Evaluate whether improved headlights fit — pure QoL with no downside.
+
+### No More Duplicate NPCs
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15585>
+- **Status:** approved
+- **Category:** Visuals & Atmosphere (17)
+- **Install:** See `modlist/17-visuals-and-atmosphere.md`. Installed after Expanded Citizens, before Beautiful IRIS.
+- **Pros:** Dynamically swaps duplicate NPC crowd appearances using two strategies (Unique Appearance Creation via Codeware, or existing appearance swaps). Configurable via Mod Settings slider. 2,660 endorsements. Actively maintained (v1.4, Mar 2025).
+- **Cons:** Unique Appearance Creation strategy is GPU/VRAM intensive. May conflict with NPC LoD Tweak mod. Requires ArchiveXL, Codeware, Mod Settings, redscript.
+- **Dependencies:** ArchiveXL, Codeware, Mod Settings, redscript
+- **Conflicts:** Incompatible with NPC LoD Tweak (for PT). Compatible with crowd density mods (Nova Crowds, Psycho Crowds).
+- **Notes:** By MisterChedda. Debug overlay available for troubleshooting. Auto-detects graphics settings on first install. Dramatically improves visual variety in crowds at 4K.
+
+### Expanded Citizens
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25765>
+- **Status:** approved
+- **Category:** Visuals & Atmosphere (17)
+- **Install:** See `modlist/17-visuals-and-atmosphere.md`. Installed before No More Duplicate NPCs.
+- **Pros:** Expands citizen .ent files with 1,500+ existing-but-unreferenced appearances from game files. Unlocks more visual variety in crowds without adding new assets. 442 endorsements. 0 bug reports.
+- **Cons:** Low endorsement count. Tagged as Modder's Resource — may need further configuration. May overlap with No More Duplicate NPCs.
+- **Notes:** v1.0 by cisicisi/f80h (Nov 2025). Different approach from No More Duplicate NPCs — this makes more appearances available, while NMD actively swaps duplicates. They complement each other well.
+
+### Universal Skin Tone - Realistic Textures
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15426>
+- **Status:** approved
+- **Category:** Appearance & Character (10)
+- **Install:** See `modlist/10-appearance-and-character.md`. Installed after 8k-4k Skin Texture, before Realistic Complexion II.
+- **Pros:** Comprehensive FemV texture rework: head, body, arms, genitals, and nipple textures with 72 skin tones covering diverse human skin types. 3,491 endorsements. 65 other mods use it as dependency. By Arkhe (same author as Beautiful IRIS, Realistic Complexion II).
+- **Cons:** Tagged Sexualised. Requires VTK body framework. Large file set (20 items). Complex install with multiple archive files.
+- **Dependencies:** VTK body mod (e.g., Vanilla HD, ANGEL, EBB, etc.)
+- **Notes:** v1 by Arkhe (last updated Nov 2024). Foundation mod for Realistic Complexion II (#15634). Framework-agnostic — works with any VTK body. 8K/4K options available.
+
+### Realistic Complexion II (for Universal Skin Tone)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15634>
+- **Status:** approved
+- **Category:** Appearance & Character (10)
+- **Install:** See `modlist/10-appearance-and-character.md`. Installed after Universal Skin Tone, before Songbird's New Look.
+- **Pros:** Hand-painted FemV head color textures (5 skin types, 6 base variants = 72 tones) plus hand-sculpted face detail normal map (4K/8K). 1,014 endorsements. 0 bug reports. By Arkhe.
+- **Cons:** Hard dependency on Universal Skin Tone (#15426). 8K face detail may cause stuttering on lower VRAM. Adds to mod count.
+- **Dependencies:** Universal Skin Tone (#15426) — hard requirement. VTK head mesh (e.g., from Vanilla HD).
+- **Notes:** v1 by Arkhe (last updated Dec 2025). Pairs with Universal Skin Tone for complete visual overhaul. Standalone head textures — body textures come from #15426. Choose matching skin tone between head and body.
+
+### Beanie's CCXL Salon - 21 Fem V Hairstyles
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19191>
+- **Status:** approved
+- **Category:** Appearance & Character (10)
+- **Install:** See `modlist/10-appearance-and-character.md`. Installed after Wolfcut Hair Collection, before EKT Custom Character Creator.
+- **Pros:** 21 standalone FemV hairstyles (no replacers). CCXL hair profile compatible. Uses vanilla hair cards (compatible with Preem Hair). 1,708 endorsements. 256K unique DLs.
+- **Cons:** Requires CCXL framework if CCXL profiles are desired (optional). Some hair caps slightly dark per author. 1 bug report.
+- **Dependencies:** None (standalone). Optional: CCXL for hair profiles.
+- **Notes:** v1.3 by beanie (last updated Feb 2025). Hairs appear after vanilla numbered hairstyles in CC. Drag-and-drop install. Cannot use with Preem Hair's enhanced cards if that replaces vanilla cards.
+
+### Gymfiend - Body Mod - Male V - VTK
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/6423>
+- **Status:** approved
+- **Category:** Appearance & Character (10)
+- **Install:** See `modlist/10-appearance-and-character.md`. Installed after CET NPC Body Tweaks, before Citizen Breast Physics.
+- **Pros:** Muscular Male V body with full VTK support. Exclusive texture paths (not shared with NPCs). VTK-supported head mesh for skin/tattoo compatibility. 2,558 endorsements. Updated Nov 2025 (actively maintained). 307 other mods use it.
+- **Cons:** Tagged Sexualised (genitals included). Large mod with 15 files. Complex FOMOD installation. May be too muscular for some roleplay concepts.
+- **Dependencies:** None (self-contained VTK body).
+- **Notes:** v1.4.2 by Gymfiend Team (uploaded by Ghartios). Last updated Nov 2025. Includes body, arms, head mesh, and genitals. Multiple muscle definition options. Enables Male V body customization alongside skin texture mods.
+
+### Vessnelle Hair Collection
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/5406>
+- **Status:** candidate
+- **Category:** Appearance & Character (10)
+- **Pros:** 24 Male V hairstyles in one pack. 4,539 endorsements (highest of new candidates). 384K total DLs. Simple install (single .archive file).
+- **Cons:** Last updated Nov 2022 — very old, 2.31 compatibility unverified. Only one hair pack can be active at a time (replacer-based). No CCXL support — replaces vanilla hair slots.
+- **Dependencies:** None (standalone .archive).
+- **Notes:** v1.0 by Vessnelle. Replacer-style hair pack — only one can be active in mod folder. Texture quality must be set to maximum. Includes fix for cyberware slot 1 conflict. Evaluate compatibility and compare with newer hair mod options.
+
+### xResistance's Devilish Face Tattoo
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/2484>
+- **Status:** candidate
+- **Category:** Appearance & Character (10)
+- **Pros:** Detailed devilish face tattoo for both FemV and MaleV. Replaces face tattoo slot 11. 1,027 endorsements. No dependencies. Simple .archive install.
+- **Cons:** Last updated Mar 2023 — 2.31 compatibility unverified. Replacer-based (overwrites slot 11). 30 file variants may be confusing to choose from.
+- **Dependencies:** None.
+- **Notes:** v1.0 by xResistance. Single face tattoo option — fits edgy/street kid character concepts. Evaluate whether a permanent face tattoo fits the modlist's "no restrictions on character creation" philosophy.
+
+### Alternate Eyeliner Collection
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/11033>
+- **Status:** candidate
+- **Category:** Appearance & Character (10)
+- **Pros:** 6 alternate eyeliner styles replacing makeup slots 1-6. Color-customizable in-game. 2,297 endorsements. 27 other mods use it. Simple install.
+- **Cons:** Last updated Nov 2023. Replaces existing makeup slots (not additive). Need to check compatibility with other makeup mods.
+- **Dependencies:** None (standalone .archive).
+- **Notes:** v2.02 by CoralineKoralina/guidethisonekalaheria/longing600. Eyeliner 2 uses resources from mod #1801 (CoralineKoralina), eyeliner 6 uses resources from mod #994. Individual .archive files can be deleted selectively if only some eyeliners are wanted.
+
+### Koralina's New Eyebrows Edits
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/1975>
+- **Status:** candidate
+- **Category:** Appearance & Character (10)
+- **Pros:** Replaces eyebrows slots 2 and 5 with multiple custom edit options (natural, bushy, straight, slit, etc.). 1,384 endorsements. No dependencies. Simple install.
+- **Cons:** Very old (Mar 2021, v1.0) — 2.31 compatibility highly uncertain. Only 2 eyebrow slots affected. Do not install more than one file at once.
+- **Dependencies:** None.
+- **Notes:** v1.0 by Koralina. Multiple edit options per slot — pick one. Eyebrow appearance also affected by eye shape choices. Same author as Alternate Eyeliner Collection contributors. Evaluate compatibility before approval — oldest mod in candidate list.
+
+### Beautiful IRIS - Eyes Texture for NPC
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/14083>
+- **Status:** approved
+- **Category:** Visuals & Atmosphere (17)
+- **Install:** See `modlist/17-visuals-and-atmosphere.md`. Installed after No More Duplicate NPCs, before Immersive Night City Fixes.
+- **Pros:** Replaces NPC iris textures with brighter, more refined versions. Preserves original eye colors. No dependencies. Compatible with Unique Eye Core. 493 endorsements. 0 bug reports. By Arkhe (trusted author).
+- **Cons:** Only affects ~10 shared iris textures (game limitation — NPCs share base textures with color masks). May conflict with other NPC eye texture mods. Low endorsement count.
+- **Dependencies:** None.
+- **Conflicts:** Any other mod editing NPC eye diffuse textures.
+- **Notes:** v1 by Arkhe (Apr 2024). Subtle visual improvement — NPC eyes look brighter and more refined while staying true to character. Simple .archive install. Pairs with other Arkhe texture mods (Beautiful Iris for V, Universal Skin Tone, Realistic Complexion).
+
+---
+
 ### Neuralware - Chipware Expansion
 
 - **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19798>
