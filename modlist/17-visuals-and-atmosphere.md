@@ -142,6 +142,24 @@ only -- every visual mod must justify its frametime cost.
 - **Performance:** None
 
 ---
+---
+
+### Night City Recolor
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15991>
+- **Version:** 0.1
+- **Released:** 2024-08-28
+- **Summary:** Randomizes colors for 200+ neon signs, holographic signs, dataterms, and neon elements across Night City on every game load. Preserves unique location signs (Afterlife, Misty's Esoterica).
+- **Why:** Night City's neon identity is iconic but static. Randomizing colors per load adds visual variety without performance cost, making each play session feel slightly different. By MisterChedda, trusted author of No More Duplicate NPCs (already in modlist). Intentionally avoids unique location signs to preserve artistic intent.
+- **Conflicts:** None known. Separate curated-signs companion mod planned for unique locations.
+- **Dependencies:** ArchiveXL, Codeware (latest version required), redscript.
+- **MO2 Notes:**
+    - Extract to game root.
+    - Colors change on game load/reload only — not dynamic during gameplay.
+    - Does not affect Afterlife, Misty's Esoterica, or other unique location signs.
+    - v0.1 — early release. Some signs may not be covered yet.
+- **Performance:** Light
+
 
 ### Cyberpunk 2077 HD Reworked Project
 
@@ -164,6 +182,12 @@ only -- every visual mod must justify its frametime cost.
 5. Beautiful IRIS - Eyes Texture for NPC
 6. Immersive Night City Fixes
 7. General Shadows Fixes
-8. Preem Mirrors - Reflective Mirror Materials
-9. Nova Rain (and Improved Ripples)
-10. ReLUX (Lighting Redux)
+8. Night City Recolor
+9. Preem Mirrors - Reflective Mirror Materials
+10. Nova Rain (and Improved Ripples)
+11. ReLUX (Lighting Redux)
+
+**Notes:**
+
+- **Night City Recolor** requires latest Codeware — ensure Codeware is updated before installing
+- v0.1 early release — check for updates that may add more signs or curated location support

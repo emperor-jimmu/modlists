@@ -138,6 +138,42 @@ decorations, garage expansions, and player home systems.
 - **Performance:** None
 
 ---
+---
+
+### Japantown Garage
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19850>
+- **Version:** 1.0.2
+- **Released:** 2025-07-25
+- **Summary:** Adds a two-car garage to V's Japantown Apartment. Two size variants (oversized and small). Removes construction debris and adds an accessible door from inside the garage.
+- **Why:** The Japantown apartment is the earliest purchasable apartment but lacks a garage — this fills that gap with a functional vehicle storage space directly integrated into the apartment exterior. Safe ArchiveXL sector edits ensure no world cell corruption.
+- **Conflicts:** None known. Garage door object collision fixed in v1.0.1.
+- **Dependencies:** Phantom Liberty DLC (required), ArchiveXL, Codeware, RED4ext.
+- **MO2 Notes:**
+    - Extract to game root.
+    - Two variants available: Oversized Two Car and Small garage — choose one.
+    - Delete JapantownGarage.archive and JapantownGarage.xl from archive/pc/mod to uninstall.
+    - Garage integrates with existing Japantown apartment entrance.
+- **Performance:** Light
+
+---
+
+### SmartFrames - Art Collector
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18337>
+- **Version:** 1.0
+- **Released:** 2024-12-11
+- **Summary:** 16 iconic artworks scaled for SmartFrames display (Mona Lisa, Starry Night, The Scream, The Great Wave, etc.). Uses the SmartFrames system added in patch 2.2 to display art in V's apartments.
+- **Why:** SmartFrames are an underutilized base game feature — this pack adds cultural depth to V's living spaces with recognizable artworks. No game dependencies — just images in a folder. The apartment is V's sanctuary; art personalizes it beyond default options.
+- **Conflicts:** None. This is an image pack — no .archive or script files.
+- **Dependencies:** SmartFrames (base game feature from patch 2.2+). No mod dependencies.
+- **MO2 Notes:**
+    - Extract images to C:\Users\<username>\OneDrive\Pictures\Cyberpunk 2077 (or the game's configured screenshot folder).
+    - Images auto-detect in SmartFrames — no activation needed.
+    - Delete individual images to remove specific artworks.
+    - 16 artworks included: Mona Lisa, Starry Night, The Scream, The Great Wave, Girl with a Pearl Earring, Nighthawks, The Persistence of Memory, and more.
+- **Performance:** None
+
 
 ## Install Order
 
@@ -148,6 +184,13 @@ decorations, garage expansions, and player home systems.
 5. Apartment Cats - Japantown
 6. Apartment Cats - Dogtown
 7. Apartment Toys
-8. Rent a Motel
-9. Longshore Apartments - Charter Hill
-10. Lucy Apartment Remastered
+8. SmartFrames - Art Collector
+9. Rent a Motel
+10. Japantown Garage
+11. Longshore Apartments - Charter Hill
+12. Lucy Apartment Remastered
+
+**Notes:**
+
+- **SmartFrames - Art Collector** is a pure image pack — no conflict risk, install early
+- **Japantown Garage** requires Codeware and RED4ext — ensure core utilities (Category 02) are installed

@@ -961,3 +961,207 @@ Cross-referenced with existing modlist entries (Weapon Conditioning, Enhanced Cr
 - **Cons:** None significant. These bugs are subtle — some players may never encounter them. Implementation may have edge cases (author acknowledges).
 - **Alternatives:** Live with the vanilla bugs
 - **Notes:** v1.0.1 by Gigowatt221 (same author as Depeche Mods). Listed as recommended but not required by TrunkCraft. Pure fix — no configuration needed. No known conflicts.
+---
+
+## Location Mods Batch Review (2026-07-19)
+
+### Canyon Explorer
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/25617>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Removes player kill zones in the canyon, enabling full exploration. Vehicle summoning in canyon. Supports 2.21, 2.3, and 2.31. 356 endorsements, 0 bugs. By Oranje3 (v1.0.2, Jan 2026).
+- **Cons:** Requires Phantom Liberty + ArchiveXL. Recommended companion mods (Canyon Bridge #25611, Canyon Fixes #25918, Canyon construction ramp #27013) add dependency chain. Limited standalone utility — designed to work with Oranje3's Canyon mod ecosystem.
+- **Dependencies:** ArchiveXL (required). Recommended: Canyon Bridge (25611), Canyon construction ramp (27013), Canyon Fixes (25918), Outdoor V (27131).
+- **Notes:** Simple install — unpack to game folder. Evaluate whether canyon exploration adds meaningful content or is just empty space. Construction ramp needed to reach the floor.
+
+### Japantown Garage
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/19850>
+- **Status:** approved -> modlist 14
+- **Category:** Apartments & Housing (14) / Vehicles & Transport (15)
+- **Pros:** Two-car garage for V's Japantown Apartment with two size variants. Removes construction debris, adds accessible interior door. Safe sector edits with ArchiveXL. 344 endorsements. Updated for 2.3 (v1.0.2).
+- **Cons:** Requires Phantom Liberty, ArchiveXL, Codeware, RED4ext. 1 bug fixed in v1.0.1 (garage door object collision).
+- **Dependencies:** ArchiveXL, Codeware, RED4ext. Phantom Liberty required.
+- **Notes:** v1.0.2 by Sammmy1036 (Jul 2025). Simple uninstall — delete .archive + .xl from `archive/pc/mod`. Enhances functional value of the otherwise minimalist Japantown apartment.
+
+### Pacifica Enhanced
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21848>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Adds props to empty Pacifica areas — trash, tents, shacks, construction debris. Works with Patch 2.31. Little to no FPS impact. 342 endorsements, 0 bugs. Aligns with modlist's living world goals.
+- **Cons:** Requires Phantom Liberty and ArchiveXL. Civilian NPCs may occasionally clip through props when spooked (hostile NPCs unaffected). Low endorsement count due to recency.
+- **Dependencies:** ArchiveXL. Phantom Liberty required.
+- **Notes:** v1.1 by WhiteRabbit0110 (Nov 2025). Covers NCART station, Pacifica Blvd, Los Osos hotel area. Author acknowledges Pacifica as "one of the most neglected areas" — check for overlap with other Pacifica mods.
+
+### North Oak Exclusive Club And Casino Restored
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15132>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Entirely new interior and CDPR-built exterior for the unused North Oak Casino. 2000+ AMM models with colliders and effects. Easter eggs. 332 endorsements. Open source.
+- **Cons:** Extremely heavy dependency chain (7 AMM prop packs + ArchiveXL + RED4ext + redscript + TweakXL). Requires Phantom Liberty. Last updated Jan 2025 — verify 2.31 compatibility. Very fragile dependency stack.
+- **Dependencies:** AMM (790), AMM Props - Classic Art (14808), AMM Props - Vegetation (5007), Hollywood Props (8106), Proxima's Prop Paradise (10983), ArchiveXL, RED4ext, redscript, TweakXL. Phantom Liberty.
+- **Notes:** v2.2 by SirMZK. Fast travel access only. Future plans: ObjectSpawner 2.0, Roulette integration. Dependency chain may be too fragile for core modlist without thorough testing.
+
+### Night City Recolor
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/15991>
+- **Status:** approved -> modlist 17
+- **Category:** Visuals & Atmosphere (17)
+- **Pros:** Randomizes colors for 200+ neon signs, holograms, dataterms on every game load. By MisterChedda (trusted — same author as No More Duplicate NPCs). 285 endorsements. Avoids unique location signs (Afterlife, Misty's) to preserve ambience.
+- **Cons:** v0.1 — early release. 3 bug reports. Requires ArchiveXL + Codeware + redscript. Colors only change on reload, not dynamically. Last updated Aug 2024 — verify 2.31 compatibility.
+- **Dependencies:** ArchiveXL, Codeware (latest), redscript.
+- **Notes:** v0.1 by MisterChedda. Planned curated-signs companion mod. Evaluate whether randomized neon feels natural or immersion-breaking at 4K.
+
+### SmartFrames - Art Collector
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/18337>
+- **Status:** approved -> modlist 14
+- **Category:** Apartments & Housing (14)
+- **Pros:** Uses SmartFrames system (patch 2.2) to display 16 iconic artworks (Mona Lisa, Starry Night, The Scream, etc.). 284 endorsements, 0 bugs. No game/mod dependencies — simple image pack.
+- **Cons:** Last updated Dec 2024. Only 16 images. Requires SmartFrames set up (base game feature).
+- **Dependencies:** SmartFrames (base game patch 2.2+). No mod dependencies.
+- **Install:** Unzip images into `C:\Users\<username>\OneDrive\Pictures\Cyberpunk 2077` (or whatever the game's screenshot/SmartFrame folder is set to). Images must be in the screenshot folder for SmartFrames to detect them.
+- **Notes:** v1.0 by Eva_Fan. Delete individual images to remove specific artworks. Adds culture and personality to V's living spaces — fits the collectibles/roleplay aspect of the modlist.
+
+### Japantown Greenery
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22203>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Renovated Japantown Greenery with vegetation, green lighting, trap door for tactical gameplay. Native Interactions. 162 endorsements, 0 bugs. World Builder conversion in v2.32 reduced requirements.
+- **Cons:** By TheRealJonCross — prolific but openly prioritizes "function over lore/aesthetics." Some users report modifications feel out of place. Requires ArchiveXL, NIF, TweakXL.
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL.
+- **Notes:** v2.33 by Jon Cross. Included in his "Cyberpunk 2077 Unofficial DLC 2" bundle (22745). Author states "If something aligns with in-game lore, cool. If not, IDGAF." Evaluate whether visual style fits modlist aesthetic standards.
+
+### Arasaka Kujira Ship (with Collision)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21538>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Restores cut content — the massive Arasaka Kujira aircraft carrier with walkable collision, ladders, fast travel, stash, computer. Native Interactions support.
+- **Cons:** Requires Let There Be Flight to access (must fly there). Only 34 endorsements. By TheRealJonCross. Empty shell with no interior — pure exploration value. CET "Remove Boundary Teleport" must be enabled.
+- **Dependencies:** ArchiveXL, TweakXL, Let There Be Flight (5208). Optional: Drive an Aerial Vehicle (13842).
+- **Notes:** v2.32 by Jon Cross. Cut content restoration but minimal gameplay integration. Low endorsement count. Removed from author's DLC 2 bundle — concerning. Evaluate whether an empty aircraft carrier adds enough value to justify flight mod dependency.
+
+### Afterlife Expanded (with Apartment)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/20983>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / Apartments & Housing (14)
+- **Pros:** Renovated Afterlife roof AV entrance and personal V apartment/room. Green lighting, bathroom/shower, NPCs, stash, computer. Native Interactions. 203 endorsements. Lore-appropriate — references Path of Glory ending.
+- **Cons:** Phantom Liberty required. By TheRealJonCross. AMM needed to restore roof elevator. Apartment is single room only.
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL. Phantom Liberty required.
+- **Notes:** v2.33 by Jon Cross. Afterlife is central to V's arc — personal space there is meaningful. Author says "should not mess up anything" for Path of Glory quest. Test for quest compatibility.
+
+### Corpo Rooftop Bar
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16048>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Red-themed VIP rooftop bar in Westbrook Charter Hill. Arcade games, BD room, private dance area, outdoor theater, spa baths. 147 endorsements. AV landing pad.
+- **Cons:** Inaccessible by foot — must fly or teleport. By TheRealJonCross. Requires AMM for some props.
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL.
+- **Notes:** v2.3 by Jon Cross. Rooftop-only — no street access. Evaluate whether an inaccessible location requiring flight mods fits the modlist's grounded philosophy.
+
+### Dandelion Cocktail Bar Enhanced
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22516>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Small enhancement of an existing cocktail bar. Green lighting, arcade machines, stash, Native Interactions. Walkable from street. 123 endorsements.
+- **Cons:** Very small scope — lighting + props only. By TheRealJonCross. 1 bug report. May overlap with NCI City Center district addon.
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL.
+- **Notes:** v2.3 by Jon Cross. Evaluate whether minor bar enhancements justify dependency chain when NCI addons already cover City Center bars.
+
+### Empathy Bar Enhanced
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/22478>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16)
+- **Pros:** Full enhancement of Empathy Club — purple/pink lighting, dance floor, lit back hallways. Native Interactions, stash, computer. 112 endorsements, 0 bugs. Walkable. Does not break "A Lack of Empathy" mission.
+- **Cons:** By TheRealJonCross. AMM needed for locked doors. Optional dependencies on Empathy Club Unlocked (27380) and Trash Removal (15249).
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL. Optional: Empathy Club Unlocked (27380).
+- **Notes:** v2.32 by Jon Cross. Empathy Club is already a key romance hangout (NCI City Center, Dance Off) — this enhancement directly supports existing modlist content. Strong thematic fit.
+
+### Japantown Shooting Range
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21800>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / World Interaction (06b)
+- **Pros:** Restores cut content — CDPR left the shooting range mini-game in files but removed access. Restores range + decorates gun shop + makes terminal functional. 94 endorsements.
+- **Cons:** Phantom Liberty required. By TheRealJonCross. 1 bug report. Simple mini-game may lack depth.
+- **Dependencies:** ArchiveXL, TweakXL. Phantom Liberty required.
+- **Notes:** v2.32 by Jon Cross. Cut content restoration fits modlist goals. Thanks to Sammmy1036 for Archive assistance. Evaluate whether mini-game is interesting enough to justify inclusion.
+
+### Yaiba Bike Showroom
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/28552>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / Vehicles & Transport (15)
+- **Pros:** Permanent version of the "Nitro Youth Energy" mission showroom. AV landing pad, parking lot, 90 NPCs, colored bikes on display, custom scooter prop. Computer for vehicle purchases. 26 endorsements (very new — Mar 2026).
+- **Cons:** Very low endorsements. By TheRealJonCross. Recycles mission assets — may feel redundant if you've done the mission. No map marker.
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL.
+- **Notes:** v2.3 by Jon Cross (Mar 2026). Essentially a mission set piece made permanently accessible.
+
+### Underground Casino (Working Roulette)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/20280>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / World Interaction (06b)
+- **Pros:** Enhances the "Tyger and Vulture" gig casino into a permanent Night City venue. Green neon, holo fish tanks, street visibility, stash, computer. Native Interactions. Compatible with associated mission. 162 endorsements, 0 bugs.
+- **Cons:** By TheRealJonCross. Gambling requires separate Playable Roulette mod (15450). Doors may be locked post-quest (mod includes fix).
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL. Optional: Playable Roulette (15450).
+- **Notes:** v2.34 by Jon Cross. Paired with Playable Roulette creates genuine gambling gameplay — unique in this batch. Supports "leisure and entertainment" pillar. One of the more substantive TheRealJonCross entries.
+
+### Viktor Vektors Garage (Working Car Mods and Repair)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/20793>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / Vehicles & Transport (15)
+- **Pros:** Opens Vik's garage from street level — removes fake walls/gates for driveable tunnel. Decorated interior, Native Interactions, stash, computer. 378 endorsements (highest in this batch). Actively maintained (v2.391, Mar 2026).
+- **Cons:** Known issue: street slightly "raised" outside Vik's due to wall removal. By TheRealJonCross. AMM props file needed. Large FAQ page may indicate usability friction.
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), TweakXL. Optional: Personal Mechanics (26885), Garage Add-on (23386), Licks Club (28068).
+- **Notes:** v2.391 by Jon Cross. Most popular and most maintained of the author's mods. Street-level access to Vik's clinic is a long-requested feature. Combined with Garage Add-on, creates functional vehicle repair at a story-central location.
+
+### Viktor Vektor's Garage Add-on (Vik will fix your car)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23386>
+- **Status:** approved -> modlist 15
+- **Category:** Vehicles & Transport (15)
+- **Pros:** Functional vehicle repair at Vik's garage — approach in car, auto-repair for 500 eddies with unique audio cue (no AI voice). Works with all vehicle types. CET console confirmation. 190 endorsements, 0 bugs. By Dedra.
+- **Cons:** Requires Viktor Vektors Garage (20793) + AMM + ArchiveXL + CET. Optional audio requires Audioware + Codeware + redscript + TweakXL. Some users report being charged while not in a car (fixed in v1.1).
+- **Dependencies:** Viktor Vektors Garage (20793), AMM (790), ArchiveXL, CET. Optional: Audioware (12001), Codeware, redscript, TweakXL, NIF (21422).
+- **Notes:** v1.1 by Dedra (Aug 2025). Transforms Vik's garage from visual-only into functional gameplay. 500 eddie cost adds meaningful resource trade-off — fits modlist "no free items" philosophy. Safe to install/remove mid-playthrough.
+
+### H10 Megabuilding Unlocked
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/12681>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / Apartments & Housing (14)
+- **Pros:** Unlocks and makes accessible large portions of the H10 Megabuilding (V's home building). Adds new explorable areas, NPCs, and apartment spaces. 2,479 endorsements (very high). Tagged Locations + Apartment.
+- **Cons:** Requires Phantom Liberty. Last updated Sep 2025 — verify 2.31 post-September update compatibility. Changelog mentions fixing occluder/building mesh issues at Landing Zone and invisible building meshes. 403-blocked on web fetchers (adult content tag likely).
+- **Dependencies:** Phantom Liberty required. Additional dependencies to be verified (page 403-blocked on fetchers — need direct browser to confirm).
+- **Notes:** v1.x by unknown author (page access limited). High endorsement count (2,479) suggests broad community acceptance. The H10 Megabuilding is V's home — unlocking more of it adds significant immersion. Verify full dependency chain when page is accessible.
+
+### Jig Jig Unleashed - REVOLUTION
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/16580>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / Apartments & Housing (14)
+- **Pros:** Massive Jig Jig overhaul — 3000+ new props, 100+ dynamic NPCs, thematic interactions (whiskey, yakitori, tea), enhanced Mox presence, customizable pod apartment (Doll/Custom themes, 10K eddies purchase), Holodancer selection, new Brendan location. 703 endorsements (highest in batch). In-game Mods menu settings. 0 bugs. By Proxima Dust (trusted Jig Jig mod author).
+- **Cons:** Heavy dependency chain (AMM, ArchiveXL, CET, NIF, Native Settings UI, Proxima's Prop Archives). Tagged adult. Pod apartment is small — interactions have reduced range. Custom/Doll theme mixing causes clipping.
+- **Dependencies:** AMM (790) or prop compatibility file, ArchiveXL, CET, Native Interactions Framework (21422), Native Settings UI (3518), Proxima's Prop Archives (19635).
+- **Notes:** v1.3 by Proxima Dust (May 2026). Revolution is the definitive Jig Jig mod — the author's prior Jig Jig work established the category. Compatible with NCH Jig Jig Street (21730) tweaked version. World Builder-built. In-game toggles phrased as in-world actions ("Welcome the Mox" = more Mox NPCs). Strong thematic fit for adult/immersion content.
+
+### The Atlantis - Restored
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/20072>
+- **Status:** approved -> modlist 16
+- **Category:** Locations & World Expansion (16) / World Interaction (06b)
+- **Pros:** Reopens The Atlantis from Johnny's flashback as a functional club. Unlocks entrance, removes barriers/garbage, adds NPCs (clubgoers + employees with randomized appearances), interactable bartenders (VendorsXL), fast travel point. 549 endorsements. Active maintenance (v1.4 for 2.31). Native Interactions (dance, drink, lean, smoke). Cameos by Nina Kraviz (DJ), Rogue, and Nix. By nutboy.
+- **Cons:** NOT compatible with NCI - Watson (14804) — reactivates quest NPC. Must NOT install during Never Fade Away questline (prevents progression). Some NPC animations don't play properly. Vendor dependency (VendorsXL). Nim's Material Override (#5266) causes crashes in area.
+- **Dependencies:** ArchiveXL, Native Interactions Framework (21422), VendorsXL (19679).
+- **Notes:** v1.4 by nutboy (Sep 2025). Game patch 2.21+ required. Phantom Liberty not required but some NPC appearances won't spawn without it. Author left space mostly vanilla — encourages decor add-ons. Strong community reception (549 endorsements, 127 posts). The Atlantis is a key piece of Johnny's backstory — reconnecting with it adds meaningful world-building.

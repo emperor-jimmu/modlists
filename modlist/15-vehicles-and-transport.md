@@ -84,6 +84,26 @@ vehicles, car customization, vehicle handling, and transport systems.
 - **Performance:** None
 
 ---
+---
+
+### Viktor Vektor's Garage Add-on (Vik will fix your car)
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/23386>
+- **Version:** 1.1
+- **Released:** 2025-08-12
+- **Summary:** Functional vehicle repair at Vik's garage. Approach in a car and Vik repairs it for 500 eddies with a unique audio cue. Works with all vehicle types. No AI voice used. Confirmed via CET console message.
+- **Why:** Transforms Vik's garage from a visual-only location into functional gameplay. The 500 eddie repair cost adds a meaningful resource trade-off — fits the modlist's "no free items" philosophy. Having Vik as your mechanic reinforces the established character relationship.
+- **Conflicts:** None known. Requires Viktor Vektors Garage (20793) to function.
+- **Dependencies:** Viktor Vektors Garage (20793 — required), AMM (790), ArchiveXL, CET. Optional for audio: Audioware (12001), Codeware, redscript, TweakXL.
+- **MO2 Notes:**
+    - Extract to game root.
+    - CET console will show "Vik's Garage Mod: Installed and initialized" on load.
+    - 500 eddies deducted per repair — ensure you have funds.
+    - Works with all vehicle types (cars and motorcycles).
+    - Safe to install or remove mid-playthrough.
+    - Delete from bin/x64/plugins/cyber_engine_tweaks/mods to uninstall.
+- **Performance:** None
+
 
 ### Car Modification Shop
 
@@ -106,3 +126,9 @@ vehicles, car customization, vehicle handling, and transport systems.
 5. Quadra Turbo-Z
 6. Bikes of the Dark Future - Arch V4
 7. Car Modification Shop
+8. Viktor Vektor's Garage Add-on
+
+**Notes:**
+
+- **Viktor Vektor's Garage Add-on** requires Viktor Vektors Garage (20793) from Category 16 — install Category 16's garage mod first
+- Vehicle repair costs 500 eddies — balanced for mid-game economy
