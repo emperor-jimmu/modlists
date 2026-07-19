@@ -23,14 +23,15 @@ The guide is ordered as a **learning progression**. Install mods as you go — d
 | 04 | Bugfixes & Performance | Vanilla bugfixes, RocketMan, performance optimization |
 | 05 | UI / HUD | Better tooltips, work tab, Mint Menus |
 | 06 | Graphics | Clean Textures, visual enhancements |
-| 07 | Gameplay Enhancements | Allow Tool, Common Sense, hauling logic |
-| 08 | Weapons & Combat | New weapons, combat AI, balance |
-| 09 | World Variety | Biomes, factions, events, exploration |
-| 10 | Monsters & Creatures | Alpha Animals, new threats |
-| 11 | NPC Interactions | Faction diplomacy, quest expansion |
-| 12 | Alien Breeding | Genetic Rim, Alpha Genetics |
-| 13 | Gameplay Guide | Full modded run — early/mid/late game |
-| 14 | Troubleshooting | Load order fixes, compatibility |
+| 07 | Audio & Music | Music packs, sound QoL tweaks |
+| 08 | Gameplay Enhancements | Allow Tool, Common Sense, hauling logic |
+| 09 | Weapons & Combat | New weapons, combat AI, balance |
+| 10 | World Variety | Biomes, factions, events, exploration |
+| 11 | Monsters & Creatures | Alpha Animals, new threats |
+| 12 | NPC Interactions | Faction diplomacy, quest expansion |
+| 13 | Alien Breeding | Genetic Rim, Alpha Genetics |
+| 14 | Gameplay Guide | Full modded run — early/mid/late game |
+| 15 | Troubleshooting | Load order fixes, compatibility |
 
 ## Building the PDF
 

@@ -1,4 +1,4 @@
-# Chapter 9: World Variety
+# Chapter 10: World Variety
 
 ## Learning Objectives
 - Add new biomes, factions, and events to make every playthrough unique
@@ -32,4 +32,4 @@
 <!-- TODO: OK to install now if you're starting a new colony. Some faction mods are best on fresh world gen. -->
 
 ## Next Steps
-Proceed to [Chapter 10: Monsters & Creatures](chapter-10-monsters-creatures.md).
+Proceed to [Chapter 11: Monsters & Creatures](chapter-11-monsters-creatures.md).

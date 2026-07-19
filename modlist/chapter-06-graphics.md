@@ -10,14 +10,19 @@
 
 ## The Mods
 
-<!-- TODO: List with per-mod format:
-- Clean Textures — reworked textures for smoother, cleaner look at high res
-- Show Hair With Hats — pawns' hair appears over hats (also shows headgear)
-- Vanilla Textures Expanded — higher-res versions of vanilla textures
-- \[T] MoreFloors — more flooring options for prettier bases
-- Color Variety — adds color variation to apparel and items
-- RPG Style Inventory — paun inventory display with paper-doll style
-- Better Ground Terrain — terrain textures with more detail -->
+### [AI Upscaled Textures - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2307494117)
+
+- **What it does:** AI-upscaled textures for all Core, Royalty, Ideology, Biotech, and Anomaly assets — pawns, plants, items, buildings, overlays, and more. Everything gets a resolution bump.
+- **Why it's here:** At 4K, RimWorld's vanilla textures can look pixelated and blurry. AI Upscaled Textures sharpens the entire game world — pawns, items, and buildings all gain crispness without changing the art style. The mod author recommends pairing it with Graphics Settings+ to reduce VRAM usage.
+- **Not OP because:** Purely cosmetic texture replacement. No gameplay changes. The AI upscaling has limitations (it can't add detail that wasn't there) but it removes the "jagged edge" look at high resolution.
+- **Install:** OK to install now. Safe to add mid-save. Recommends Graphics Settings+ mod for performance.
+
+### [Vanilla Pawns Retextured](https://steamcommunity.com/sharedfiles/filedetails/?id=2275310562)
+
+- **What it does:** Replaces human pawn textures with crisp 512×512 versions. Also covers Biotech gene-related textures. Designed as a base for alien race textures but works beautifully as a standalone visual upgrade.
+- **Why it's here:** Pawns are the characters you watch for hundreds of hours — they deserve to look sharp. At 4K, vanilla pawn textures can appear soft. Vanilla Pawns Retextured gives them clean, defined edges without changing the art direction.
+- **Not OP because:** Pure texture replacement. The mod changes nothing about pawn stats, behaviour, or gameplay. Its textures will override other texture packs loaded before it in the load order.
+- **Install:** OK to install now. Safe to add mid-save. Load after AI Upscaled Textures if using both, so VPR's pawn textures take priority.
 
 ### [CCP's Stone Tweaks Vanilla](https://steamcommunity.com/sharedfiles/filedetails/?id=1524681306)
 
@@ -37,4 +42,4 @@
 ✅ OK to install all mods in this chapter now.
 
 ## Next Steps
-Proceed to [Chapter 7: Gameplay Enhancements](chapter-07-gameplay-enhancements.md).
+Proceed to [Chapter 7: Audio & Music](chapter-07-audio-music.md).

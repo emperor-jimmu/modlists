@@ -1,4 +1,4 @@
-# Chapter 12: Alien Breeding
+# Chapter 13: Alien Breeding
 
 ## Learning Objectives
 - Understand RimWorld's genetic engineering systems
@@ -19,7 +19,7 @@
 - Animal Genetics — breed animals with specific traits -->
 
 ## Installation Checkpoint
-⚠ Wait until you're established mid-game (Chapter 13 covers how to play with this setup). These mods add complexity best tackled after you've survived a few raids.
+⚠ Wait until you're established mid-game (Chapter 14 covers how to play with this setup). These mods add complexity best tackled after you've survived a few raids.
 
 ## Next Steps
-Proceed to [Chapter 13: Gameplay Guide](chapter-13-gameplay-guide.md).
+Proceed to [Chapter 14: Gameplay Guide](chapter-14-gameplay-guide.md).

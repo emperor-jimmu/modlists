@@ -6,17 +6,23 @@
 - Verify they load correctly
 
 ## Overview
-<!-- TODO: Explain that these mods don't add content themselves — they provide APIs for other mods. They must load first. -->
+Framework mods don't add content themselves — they provide APIs that other mods depend on. They must load first in your mod order (RimPy handles this automatically).
 
 ## The Mods
 
-<!-- TODO: List framework mods with per-mod format from AGENTS.md:
-- Harmony (pardeike) — essential modding API
-- HugsLib (UnlimitedHugs) — shared library for many mods
-- Mod Manager (Fluffy) — in-game mod management UI
-- JecsTools (Megasploot) — advanced tools for content mods
-- ResearchPal (Fluffy) — tech tree organization (is this framework or UI?)
-- Awesome Inventory — framework for item filtering -->
+### [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077)
+
+- **What it does:** Harmony is a code-patching library that lets mods modify RimWorld's built-in behaviour without overwriting game files. It's the foundation nearly every RimWorld mod depends on.
+- **Why it's here:** Without Harmony, mods can't safely change how the game works. It enables other mods to add features, fix bugs, and improve UI without touching RimWorld's original code. It's the single most important mod in any modded setup.
+- **Not OP because:** Pure framework — zero gameplay impact. It doesn't add, remove, or change anything in the game itself. It simply makes other mods possible.
+- **Install:** OK to install now. Must be at the very top of your load order (RimPy handles this). Safe to add mid-save.
+
+### [HugsLib](https://steamcommunity.com/sharedfiles/filedetails/?id=818773962)
+
+- **What it does:** HugsLib is a shared library mod that provides common utilities for other mods — settings menus, logging tools, and helper functions. Also includes the Log Publisher (Ctrl+F12 to upload logs for troubleshooting).
+- **Why it's here:** Many mods in this guide (Allow Tool, Defensive Positions, and others) depend on HugsLib. Installing it once centrally prevents each mod from shipping its own copy. Best practice: load it right after Harmony.
+- **Not OP because:** Pure library — no gameplay content. It provides infrastructure for other mods but doesn't change anything itself.
+- **Install:** OK to install now. Place right after Harmony in load order. Safe to add mid-save.
 
 ### [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2577315200)
 

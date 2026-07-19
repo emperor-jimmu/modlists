@@ -1,4 +1,4 @@
-# Chapter 13: Gameplay Guide — A Full Modded Run
+# Chapter 14: Gameplay Guide — A Full Modded Run
 
 ## Learning Objectives
 - Apply all previous mod chapters in a cohesive playthrough
@@ -60,4 +60,4 @@
 -->
 
 ## Next Steps
-Proceed to [Chapter 14: Troubleshooting](chapter-14-troubleshooting.md).
+Proceed to [Chapter 15: Troubleshooting](chapter-15-troubleshooting.md).

@@ -1,4 +1,4 @@
-# Chapter 14: Troubleshooting
+# Chapter 15: Troubleshooting
 
 ## Learning Objectives
 - Diagnose common mod-related issues

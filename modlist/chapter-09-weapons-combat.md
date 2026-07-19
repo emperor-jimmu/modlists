@@ -1,4 +1,4 @@
-# Chapter 8: Weapons & Combat
+# Chapter 9: Weapons & Combat
 
 ## Learning Objectives
 - Expand the arsenal with balanced new weapons
@@ -10,14 +10,12 @@
 
 ## The Mods
 
-<!-- TODO: List with per-mod format (research actual mods on Steam Workshop):
-- Combat Extended? (Note: CE is a major overhaul, many incompatibilities — reconsider)
-- Vanilla Weapons Expanded series
-- Dual Wield (balanced, accuracy penalty for dual wielding)
-- Simple Sidearms (already in ch.07 — cross-reference)
-- Yayo's Combat (lighter than CE, better combat balance without breaking everything)
-- Gunplay (projectile physics, bullet trails, cover rebalance)
-- Dead Man's Switch (grenades detonate on death) -->
+### [Defensive Positions](https://steamcommunity.com/sharedfiles/filedetails/?id=761219125)
+
+- **What it does:** Lets colonists remember their designated defensive positions. Save up to 4 positions per colonist (Advanced mode) and send everyone to their posts with one click. Also provides hotkeys for quick group selection and positioning.
+- **Why it's here:** In a raid, every second counts. Vanilla requires you to manually draft each pawn and click them to their position — time you don't have when sappers are breaching your wall. Defensive Positions lets you pre-plan positions during downtime and deploy instantly when the alarm sounds.
+- **Not OP because:** It doesn't make pawns fight better — it just gets them to the right place faster. The positions are static (pawns won't re-position mid-battle), and you still need to manage tactics once they're there. Requires HugsLib.
+- **Install:** OK to install now. Safe to add mid-save. Requires HugsLib (already in your load order from Chapter 3).
 
 ### [Eccentric Tech - Advanced Shields](https://steamcommunity.com/sharedfiles/filedetails/?id=2591721581)
 
@@ -58,4 +56,4 @@
 <!-- TODO: Evaluate — CE needs special consideration. Recommend waiting until comfortable with vanilla combat first. -->
 
 ## Next Steps
-Proceed to [Chapter 9: World Variety](chapter-09-world-variety.md).
+Proceed to [Chapter 10: World Variety](chapter-10-world-variety.md).

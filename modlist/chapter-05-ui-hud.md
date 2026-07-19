@@ -37,15 +37,82 @@
 - **Not OP because:** It only automates *existing* actions you could already do manually — it doesn't make anything faster, cheaper, or stronger. The pawns still need to walk over and do the work.
 - **Install:** OK to install now. Safe to add mid-save. Requires HugsLib (already in your load order from Chapter 3).
 
-<!-- TODO: Add remaining UI/HUD mods with per-mod format:
-- Dubs Mint Menus — better crafting menus (cleaner, filterable)
-- Work Tab (Fluffy) — expanded work priority management (set priorities 1-9 per pawn per task)
-- RimHUD — expanded pawn info panel (detailed stats, gear, health at a glance)
-- Numbers (Fluffy) — customizable overview of colony stats in a table
-- Better Pawn Control — manage animal handling assignments
-- More Planning — colored planning mode for base layout
-- Interaction Bubbles — shows what pawns are saying/talking about
-- Color Coded Mood Bar — mood bar changes color (green/yellow/orange/red) for at-a-glance status -->
+### [RimHUD](https://steamcommunity.com/sharedfiles/filedetails/?id=1508850027)
+
+- **What it does:** Replaces the vanilla bottom-left pawn card with a comprehensive info panel showing stats, equipment, health, skills, mood, and needs — all on one screen. Fully customisable layout.
+- **Why it's here:** The vanilla pawn card hides most useful information behind sub-tabs. RimHUD surfaces everything at once — you can see a pawn's shooting accuracy, move speed, equipped weapon DPS, health conditions, and current job without clicking anywhere. Invaluable at 4K where the tiny vanilla card is even harder to read.
+- **Not OP because:** Pure information display. It shows stats that already exist in the game — nothing is added, buffed, or changed. You just don't have to hunt for the data anymore.
+- **Install:** OK to install now. Safe to add mid-save.
+
+### [Better Workbench Management](https://steamcommunity.com/sharedfiles/filedetails/?id=935982361)
+
+- **What it does:** Overhauls the workbench bill management interface — adds a searchable bill list, drag-and-drop reordering, bill copying, and a cleaner layout for managing multiple production queues.
+- **Why it's here:** Once you have 5+ workbenches each with multiple bills, the vanilla interface becomes a scrolling nightmare. Better Workbench Management turns bill management into a fast, searchable, organised workflow.
+- **Not OP because:** Pure UI improvement. It doesn't change production speed, material costs, or bill limits — just how you find and organise them.
+- **Install:** OK to install now. Safe to add mid-save.
+
+### [Designator Shapes](https://steamcommunity.com/sharedfiles/filedetails/?id=1235181370)
+
+- **What it does:** Adds a shape palette to the planning/designation tools — draw lines, rectangles, ellipses, circles, pentagons, hexagons, grids, and pre-set shapes (sun lamp, trade beacon). Includes undo/redo and a flood-fill tool.
+- **Why it's here:** Building curved or diagonal structures in vanilla requires placing each tile individually. Designator Shapes lets you plan and build in geometric patterns — essential for aesthetic bases, efficient strip-mining grids, and precise defensive layouts.
+- **Not OP because:** Pure building tool. It doesn't add resources, speed construction, or change game mechanics. It just makes placing blueprints faster and more precise.
+- **Install:** OK to install now. Safe to add mid-save.
+
+### [Dynamic Trade Interface](https://steamcommunity.com/sharedfiles/filedetails/?id=3020706506)
+
+- **What it does:** A high-performance, customisable trade window — resize, reorder columns, search/filter with RegEx, save filter presets, sort by any column, buy/sell max affordable with one click. Does not replace vanilla; both are accessible via a hotkey.
+- **Why it's here:** The vanilla trade window is slow and cluttered, especially with modded items. Dynamic Trade Interface makes trading fast — search for what you need, see unit prices clearly, and process bulk trades in seconds instead of minutes.
+- **Not OP because:** Pure UI improvement to an existing system. Trade prices, availability, and mechanics are unchanged. It just makes the interface faster.
+- **Install:** OK to install now. Safe to add/remove mid-save.
+
+### [Range Finder](https://steamcommunity.com/sharedfiles/filedetails/?id=1332119637)
+
+- **What it does:** Select one or more pawns/turrets, press a hotkey, and their weapon range is displayed on the map as a coloured overlay. Press twice to keep it visible until toggled off.
+- **Why it's here:** Vanilla doesn't show you weapon ranges — you estimate by eye. Range Finder lets you position firing lines, place turrets, and plan hunting grounds with precision. Essential for effective defensive setup.
+- **Not OP because:** Pure visual overlay. Range values are the same as vanilla — they're just visible now.
+- **Install:** OK to install now. Safe to add mid-save.
+
+### [Power Tab 2 - 1.6 Bug Fixed Version](https://steamcommunity.com/sharedfiles/filedetails/?id=3528086894)
+
+- **What it does:** Overhauls the power grid information window — shows connected consumers, battery charge, production vs. consumption, and power storage details in an organised, expandable UI.
+- **Why it's here:** Vanilla's power tab shows a single number (net power). When you have chemfuel generators, solar panels, batteries, and turrets all on one grid, you need to see where power is going. Power Tab 2 gives you the full picture.
+- **Not OP because:** Information-only. It doesn't change power production, consumption, or battery mechanics. It surfaces data the game already tracks internally.
+- **Install:** OK to install now. Safe to add mid-save. This is a bug-fixed fork that works on 1.6.
+
+### [DDI - Deep Drill Indicator](https://steamcommunity.com/sharedfiles/filedetails/?id=2566736688)
+
+- **What it does:** Adds a visible overlay on all scanned deep drill resources once your ground-penetrating scanner is powered. No more hovering over each drill site to check what's there.
+- **Why it's here:** After scanning, you need to remember or re-hover over every underground deposit to find the resource you need. DDI puts the resource type and count right on the map — a huge time-saver during mid-game resource scouting.
+- **Not OP because:** The resources must still be scanned with a powered ground-penetrating scanner. It only displays what you've already discovered — no free information.
+- **Install:** OK to install now. Requires a powered ground-penetrating scanner to function.
+
+### [RandomPlus](https://steamcommunity.com/sharedfiles/filedetails/?id=1434137894)
+
+- **What it does:** Lets you set minimum specifications for pawn generation — minimum skill levels, required traits, age range, and more. The randomise button keeps rerolling until it finds a pawn meeting your criteria (with a configurable max reroll limit).
+- **Why it's here:** Vanilla pawn generation is pure RNG — you can click "randomise" for 20 minutes without seeing a pawn with both Plants and Construction. RandomPlus saves hours of clicking without letting you hand-pick super-pawns.
+- **Not OP because:** You're still working within the game's normal pawn generation pool — you just set a floor. A pawn with 8+ in Plants and no pyromania is a good start, not a god roll. The max reroll limit prevents infinite searching.
+- **Install:** OK to install now. Safe to add mid-save.
+
+### [Day Counter](https://steamcommunity.com/sharedfiles/filedetails/?id=3490487928)
+
+- **What it does:** Adds a persistent on-screen display showing how many days have passed in your colony. Fully configurable position and appearance in mod settings.
+- **Why it's here:** The vanilla game tracks days internally but doesn't show them prominently. Knowing what day you're on helps plan around seasonal growing windows, raid cooldowns, and quest timers. Particularly useful for new players learning the game's pacing.
+- **Not OP because:** Pure information display. The day counter already exists in the game (visible in the history tab) — this just puts it on screen.
+- **Install:** OK to install now. Safe to add mid-save.
+
+### [Fahrenheit and Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=937759575)
+
+- **What it does:** Displays both Fahrenheit and Celsius in the temperature readout. Which scale appears first depends on your game settings.
+- **Why it's here:** RimWorld discussions, guides, and wikis use Celsius, but if you grew up with Fahrenheit, you have to mentally convert every temperature. This mod shows both at once — no more wondering what 20°C "feels like."
+- **Not OP because:** Pure display change. Temperature mechanics are untouched — it just shows you the same number in two units.
+- **Install:** OK to install now. Safe to add mid-save.
+
+### [Tainted Renaming](https://steamcommunity.com/sharedfiles/filedetails/?id=2021251001)
+
+- **What it does:** Moves the "T" prefix from the start of tainted apparel names to the end — "Tainted Shirt" becomes "Shirt (Tainted)". Configurable in settings.
+- **Why it's here:** Alphabetical sorting puts all tainted items together at the top of your lists. Moving the tag to the end sorts items by their actual name, so shirts are with shirts and pants are with pants. A small change that makes inventory management noticeably cleaner.
+- **Not OP because:** Purely cosmetic text change. No gameplay impact whatsoever.
+- **Install:** OK to install now. Safe to add mid-save.
 
 ## Installation Checkpoint
 ✅ OK to install all mods in this chapter now.

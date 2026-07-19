@@ -162,7 +162,7 @@ Let's walk through installing one mod from start to finish. We'll use **Harmony*
 1. Click **Run** in RimPy to launch RimWorld.
 2. At the main menu, click the **Mods** button. You should see Harmony listed and active.
 3. If it's marked with a green checkmark or no error indicator, it's loaded correctly.
-4. Start a new colony and look at the debug log (Ctrl+` to open the console). You should see Harmony's startup message confirming it initialised. If there are any red error lines, note them and check the troubleshooting section in Chapter 14.
+4. Start a new colony and look at the debug log (Ctrl+` to open the console). You should see Harmony's startup message confirming it initialised. If there are any red error lines, note them and check the troubleshooting section in Chapter 15.
 5. Exit RimWorld.
 
 That's the complete install flow for one mod. Every mod in subsequent chapters follows the same pattern: **Subscribe → Refresh in RimPy → Activate → Sort → Save → Run.** You'll get fast at it.

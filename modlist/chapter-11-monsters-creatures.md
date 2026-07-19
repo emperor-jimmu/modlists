@@ -1,4 +1,4 @@
-# Chapter 10: Monsters & Creatures
+# Chapter 11: Monsters & Creatures
 
 ## Learning Objectives
 - Add new animal species, monsters, and threats to the world
@@ -23,4 +23,4 @@
 <!-- TODO: OK to install now. These mods are additive — new creatures will spawn in new maps. -->
 
 ## Next Steps
-Proceed to [Chapter 11: NPC Interactions](chapter-11-npc-interactions.md).
+Proceed to [Chapter 12: NPC Interactions](chapter-12-npc-interactions.md).
