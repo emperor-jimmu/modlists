@@ -22,7 +22,7 @@ stardew-valley-modlist/
 │   │   ├── 01-setup.md       # MO2 + SMAPI installation
 │   │   ├── 02-vanilla-primer.md
 │   │   ├── 03-mod-catalog/
-│   │   │   ├── 01-bugfixes.md
+│   │   │   ├── 01-dialogue.md
 │   │   │   ├── 02-ui-hud.md
 │   │   │   ├── 03-graphics-base.md
 │   │   │   ├── 04-graphics-portraits.md

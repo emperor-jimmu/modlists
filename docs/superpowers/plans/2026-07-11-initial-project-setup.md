@@ -91,7 +91,7 @@ If you need to browse web pages that don't work with standard tools, use Playwri
 ## Conventions
 
 - Markdown files use `##` for chapter headings, `###` for section headings
-- File names are zero-padded numbers for ordering (e.g., `01-bugfixes.md`)
+- File names are zero-padded numbers for ordering (e.g., `01-dialogue.md`)
 - Keep performance data factual — note "not tested" rather than guessing
 - No multiplayer mods, no cheat/overpowered mods, no overtly pornographic content
 ```

@@ -17,7 +17,7 @@ This guide teaches Stardew Valley in three waves. Each wave adds complexity — 
 Play your first year (or more) with only **foundations, bugfixes, and UI/HUD mods** installed. The game looks cleaner, runs smoother, and surfaces information better — but every mechanic is pure Stardew Valley. Chapter [02-vanilla-primer.md](02-vanilla-primer.md) teaches all the core systems: farming, mining, fishing, combat, relationships, and the Community Center.
 
 **Wave 1 mod catalog sections:**
-[00 — Foundations](03-mod-catalog/00-foundations.md) · [01 — Bugfixes](03-mod-catalog/01-bugfixes.md) · [02 — UI and HUD](03-mod-catalog/02-ui-and-hud.md)
+[00 — Foundations](03-mod-catalog/00-foundations.md) · [01 — Dialogue](03-mod-catalog/01-dialogue.md) · [02 — UI and HUD](03-mod-catalog/02-ui-and-hud.md)
 
 ### Wave 2 — Content Expansion
 
@@ -129,4 +129,4 @@ Before diving in, run a quick sanity check:
 
 ## Next Steps
 
-With SMAPI and Stardrop ready, move to [02-vanilla-primer.md](02-vanilla-primer.md) for a crash course on playing Stardew Valley. If you already know the basics, jump straight into the mod catalog starting with [01-bugfixes.md](03-mod-catalog/01-bugfixes.md).
+With SMAPI and Stardrop ready, move to [02-vanilla-primer.md](02-vanilla-primer.md) for a crash course on playing Stardew Valley. If you already know the basics, jump straight into the mod catalog starting with [01-dialogue.md](03-mod-catalog/01-dialogue.md).

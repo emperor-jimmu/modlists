@@ -79,7 +79,7 @@ If you need to browse web pages that don't work with standard tools, use Playwri
 ## Conventions
 
 - Markdown files use `##` for chapter headings, `###` for section headings
-- File names are zero-padded numbers for ordering (e.g., `01-bugfixes.md`)
+- File names are zero-padded numbers for ordering (e.g., `01-dialogue.md`)
 - Keep performance data factual — note "not tested" rather than guessing
 - **No cheat/overpowered mods:** no mods that give free money, infinite stamina, god-mode tools, instant level-ups, time manipulation, or anything that bypasses core progression mechanics. Likewise no "knowledge mods" that reveal all NPC schedules, fish bite times, or Luck values without earning them in-game. If a mod eliminates the need to learn the game's systems, it doesn't belong here.
 - **Adult mods** (expanded dialogue, seasonal outfits, dating expansion, suggestive but non-explicit content) are fine. Overtly pornographic/explicit mods are not.
