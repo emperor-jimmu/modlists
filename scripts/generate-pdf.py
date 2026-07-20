@@ -1,11 +1,12 @@
 """
-Generate a single continuous PDF of the Stellaris Modlist Guide
+Generate a single continuous PDF of the Starbound Stories guide
 using Playwright to render the MkDocs HTML output.
 
 Replaces mkdocs-exporter's aggregator which inserts blank pages
 between documents during PDF stitching.
 """
 
+import base64
 import os
 import re
 import shutil
@@ -21,6 +22,7 @@ OUTPUT_PDF = ROOT / "stellaris-modlist-guide.pdf"
 MKDOCS_YML = ROOT / "mkdocs.yml"
 PDF_SCSS = ROOT / "stylesheets" / "pdf.scss"
 FRONT_COVER = ROOT / "covers" / "front.html.j2"
+LOGO_PATH = ROOT / "docs" / "assets" / "logo.png"
 
 
 def extract_nav_order(mkdocs_yml_path: Path) -> list[str]:
@@ -76,10 +78,22 @@ def extract_content(html: str) -> str:
 
 
 def read_cover() -> str:
-    """Read the front cover HTML template, strip Jinja2 if unrendered."""
+    """Read the front cover HTML template, inject logo as base64, strip Jinja2."""
     if not FRONT_COVER.exists():
         return ""
+
+    # Encode logo as base64 data URI
+    logo_data = ""
+    if LOGO_PATH.exists():
+        raw = LOGO_PATH.read_bytes()
+        b64 = base64.b64encode(raw).decode("ascii")
+        logo_data = f"data:image/png;base64,{b64}"
+
     html = FRONT_COVER.read_text(encoding="utf-8")
+
+    # Inject logo before stripping other Jinja2 placeholders
+    html = html.replace("{{LOGO}}", logo_data)
+
     # Strip any remaining Jinja2 template syntax
     html = re.sub(r"\{\{.*?\}\}", "", html)
     return html
@@ -179,7 +193,7 @@ def main():
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Stellaris Modlist Guide</title>
+<title>Starbound Stories</title>
 <style>
 {css_text}
 </style>
@@ -201,6 +215,9 @@ def main():
             format="A4",
             margin={"top": "2.5cm", "bottom": "2.5cm", "left": "2cm", "right": "2cm"},
             print_background=True,
+            display_header_footer=True,
+            header_template="<div></div>",
+            footer_template='<div style="width: 100%; text-align: center; font-size: 9pt; font-family: Segoe UI, Roboto, sans-serif; color: #888; padding: 0 2cm;">Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>',
         )
         browser.close()
 

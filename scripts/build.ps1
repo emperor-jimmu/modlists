@@ -8,7 +8,7 @@ $Version = Get-Content -Path "$ProjectRoot\VERSION" -Raw | ForEach-Object { $_.T
 $env:GUIDE_VERSION = $Version
 $env:MKDOCS_EXPORTER_PDF = if (-not $SkipPdf) { "true" } else { "false" }
 
-Write-Host "Stellaris Modlist Guide — Build v$Version" -ForegroundColor Cyan
+Write-Host "Starbound Stories — Build v$Version" -ForegroundColor Cyan
 
 Push-Location $ProjectRoot
 try {

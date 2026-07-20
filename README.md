@@ -1,4 +1,4 @@
-# Stellaris Modlist Guide
+# Starbound Stories
 
 A curated, beginner-friendly modlist and learning guide for **Stellaris 4.4.6 "Nomads"** (all DLC) on Windows.
 

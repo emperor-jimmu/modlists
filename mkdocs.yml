@@ -1,4 +1,4 @@
-site_name: Stellaris Modlist Guide
+site_name: Starbound Stories
 site_description: A curated, beginner-friendly modlist and learning guide for Stellaris
 
 theme:
@@ -35,6 +35,7 @@ nav:
       - Galaxy & Setup: modlist/galaxy.md
   - Load Order: load-order.md
   - Starting a Game: starting-a-game.md
+  - Strategy Guide: strategy-guide.md
   - Performance: performance.md
   - Missing Mods (Research): missing-mods.md
   - Appendix: appendix.md

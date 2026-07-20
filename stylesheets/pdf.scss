@@ -1,16 +1,16 @@
-// Stellaris Modlist Guide — PDF Styling
+// Starbound Stories — PDF Styling
 
 $primary-color: #1a237e;
 $secondary-color: #283593;
 $accent-color: #0277bd;
 $text-color: #212121;
 $light-bg: #f5f5f5;
-$font-family: 'Segoe UI', 'Roboto', sans-serif;
-$code-font: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+$font-family: "Segoe UI", "Roboto", sans-serif;
+$code-font: "Cascadia Code", "Fira Code", "Consolas", monospace;
 
 @page {
   size: A4;
-  margin: 2.5cm 2cm 2.5cm 2cm;
+  margin: 2.5cm 1.5cm 2.5cm 1.5cm;
 
   @top-center {
     content: string(doctitle);
@@ -64,14 +64,16 @@ h3 {
   font-size: 12pt;
 }
 
-p, li {
+p,
+li {
   font-family: $font-family;
   font-size: 10pt;
   line-height: 1.5;
   color: $text-color;
 }
 
-pre, code {
+pre,
+code {
   font-family: $code-font;
   font-size: 9pt;
   background-color: $light-bg;
@@ -116,15 +118,63 @@ a {
   text-decoration: none;
 }
 
-
 img {
   max-width: 100%;
   page-break-inside: avoid;
 }
 
-.front-cover, .back-cover {
+.front-cover,
+.back-cover {
   page: cover;
   page-break-after: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .cover-content {
+    text-align: center;
+    padding: 3cm;
+
+    .cover-logo {
+      max-width: 60%;
+      height: auto;
+      margin-bottom: 1.5em;
+    }
+
+    h1 {
+      font-size: 36pt;
+      margin-bottom: 0.5em;
+      color: white;
+      border: none;
+    }
+
+    .subtitle {
+      font-size: 16pt;
+      color: #90caf9;
+      margin-bottom: 2em;
+    }
+
+    .version {
+      font-size: 12pt;
+      color: #bbb;
+    }
+
+    .meta {
+      font-size: 10pt;
+      color: #888;
+      margin-top: 3em;
+    }
+  }
+}
+
+.front-cover .cover-content {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 50%, #1a237e 100%);
+  color: white;
+}
+
+.back-cover .cover-content {
+  background: linear-gradient(135deg, #1a237e 0%, #1b2838 50%, #0d1b2a 100%);
+  color: white;
 }
 
 blockquote {

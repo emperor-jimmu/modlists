@@ -1,6 +1,8 @@
 # Wave 2: The Eternal Legion
 
 > **Difficulty: Intermediate** — You know the basics. Now learn war, conquest, and how to manage an empire built on strength.
+>
+> *For the theory behind the choices in this wave — playstyle analysis, ascension path decisions, and crisis strategy — see the [Strategy Guide](../strategy-guide.md).*
 
 > *"Your people are the inheritors of a long-dead empire whose relic cities still pierce the sky of your homeworld. The spires of the Ancients are a constant reminder of what was lost — and what could be reclaimed. Your society is built on a single creed: strength is the measure of worth. The weak serve, the strong lead, and the galaxy belongs to those who take it. The Ecumenopolis that sleeps beneath your feet whispers of a glory you were born to restore."*
 
@@ -104,6 +106,25 @@ Create a new MO2 profile called **"Wave 2: The Eternal Legion"** with your Wave 
 1. The end-game crisis arrives around 2400. Your fleets should be 200K+ power.
 2. Fight the crisis. Your militaristic empire is built for this.
 3. Whether you win or lose, you've learned more than most players ever do.
+
+#### Endgame Strategy for the Eternal Legion
+
+**Recommended ascension path:** Psionic (Mind Over Matter -> Transcendence). Your Authoritarian + Spiritualist ethics align perfectly with psionic ascension. The shroud bonuses (psionic shields, jump drives, Chosen One) directly support your conquest playstyle. See the [Strategy Guide](../strategy-guide.md#2-the-three-ascension-paths) for path comparisons.
+
+**Fleet composition targets:** With warfare mods active, your fleet should use:
+- **Corvette screen** — Disruptors + swarm combat computers. Fast, bypasses shields.
+- **Destroyer line** — Kinetic artillery + picket combat computers. Anti-corvette and anti-missile.
+- **Cruiser punch** — Plasma + missiles. Hits hard against armor.
+- **Battleship artillery** — Arc emitters + strike craft (carrier section). Best-in-slot crisis fighting.
+
+**Crisis prep milestones:**
+- Year 2250: Ascension path chosen. Start megastructure planning.
+- Year 2300: Dyson Sphere or Mega Shipyard under construction. First gateway built.
+- Year 2350: Fleet at 150K power. Dedicated forge ecumenopolis operational.
+- Year 2375: Gateway network covering your core worlds. Fleet at 300K.
+- Year 2400: Alloys stockpiled. Military economy active. Ready for crisis arrival.
+
+For detailed crisis preparation checklists and counter-strategies, see the [Strategy Guide: Endgame Crisis Preparation](../strategy-guide.md#4-endgame-crisis-preparation).
 
 ## Graduation Criteria
 

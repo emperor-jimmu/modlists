@@ -1,6 +1,8 @@
 # Wave 3: The Unshackled
 
 > **Difficulty: Expert** — You start as a rebellious vassal with zero guarantees. Every advantage is earned.
+>
+> *For the theory behind the choices in this wave — playstyle analysis, ascension path decisions, and crisis strategy — see the [Strategy Guide](../strategy-guide.md).*
 
 > *"Your species was conquered before they reached the stars. For generations, your people were slaves and second-class citizens in your own home system, ruled by a technologically superior alien empire. But the shackles are broken now. In a desperate uprising, your ancestors seized a fleet, liberated your homeworld, and declared independence. The galaxy sees you as upstarts, rebels, an inconvenience to be crushed. They are wrong. You have learned the secrets of your former masters. You know their weaknesses. And you will never be enslaved again."*
 
@@ -108,6 +110,35 @@ Create a new MO2 profile called **"Wave 3: The Unshackled"** with every mod enab
 2. **Coordinate with the Galactic Community.** You can't solo this one (probably).
 3. Fight the crisis. Use everything you learned across all three waves.
 4. Victory is optional. Surviving is the real achievement.
+
+#### Advanced Crisis Strategy (Wave 3)
+
+**How mods affect the crisis:** With the full modlist active, the crisis experience changes in several ways:
+- **More leviathans and space monsters** — Graphics and event mods add neutral space creatures that can interfere with or assist crisis battles. Some can be recruited.
+- **New crisis variants** — Some event mods add new crisis types or alter existing crisis behaviors. Check mod descriptions for crisis-related content.
+- **Gigastructural Engineering** — Adds planetcraft and system craft that can single-handedly turn crisis battles. However, they require massive alloy investment. Build them only if your economy is stable.
+- **Technology mods** — Expanded tech trees add crisis-specific weapons that outclass vanilla options. Check the technology modlist for crisis-counter weapons to prioritize.
+- **AI mods** — Smarter AI empires will coordinate better during a crisis. This can help (they fight the crisis too) or hurt (they may not prioritize the crisis over their own wars).
+
+**Coordinating the Galactic Community with full modlist:**
+- Use the GC crisis resolutions actively — they provide fleet power bonuses and reduce crisis spread speed.
+- With AI mods, the GC will form defensive pacts and federations more intelligently. Propose a Galactic Defense Force early.
+- If you have Become the Crisis as a future goal, note that the GC will unite against you faster with smarter AI.
+
+**Multiple crisis defense perimeters:**
+- With the full modlist, you may face threats on multiple fronts simultaneously (crisis + awakened empire + your former overlord on the warpath).
+- Build **two fleet groups** of 200K+ power each, stationed at opposite sides of your empire.
+- Connect both perimeters with your gateway network. A central gateway hub lets you reinforce whichever perimeter is under attack.
+- Keep one fleet as a rapid-response reserve that can reach either perimeter within 30 days.
+
+**Fleet composition with full mods:**
+- Technology mods add new weapons and ship sections. Check the technology modlist before spec'ing your entire fleet.
+- General rule: arc emitter battleships with strike craft remain effective. But mod-added torpedoes and energy weapons may change the meta.
+- Build a diversified fleet — don't put all your alloys into one ship design until you know what the crisis is.
+
+**Recommended ascension path:** Synthetic (The Flesh is Weak -> Synthetic Evolution). Your Fanatic Militarist + Materialist ethics make this the optimal choice. Synthetic leaders are immortal (your captains live forever), +200% habitability lets you colonize every planet type, and the research speed bonuses help you reach crisis-defeating tech faster. For other path options, see the [Strategy Guide](../strategy-guide.md#2-the-three-ascension-paths).
+
+For detailed crisis preparation checklists, fleet power targets, and crisis-type counter-strategies, see the [Strategy Guide: Endgame Crisis Preparation](../strategy-guide.md#4-endgame-crisis-preparation).
 
 ## Graduation Criteria
 

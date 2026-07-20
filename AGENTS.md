@@ -1,4 +1,4 @@
-# Stellaris Modlist Guide — AI Assistant Instructions
+# Starbound Stories — AI Assistant Instructions
 
 ## Project Identity
 

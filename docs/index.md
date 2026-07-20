@@ -1,6 +1,6 @@
-# Stellaris Modlist Guide
+# Starbound Stories
 
-Welcome to the **Stellaris Modlist Guide** — a curated, three-wave curriculum for learning Stellaris through modded playthroughs.
+Welcome to **Starbound Stories** — a curated, three-wave curriculum for learning Stellaris through modded playthroughs.
 
 This guide is written for **complete beginners** who want to learn the game while enjoying a balanced modlist. No prior experience required.
 
