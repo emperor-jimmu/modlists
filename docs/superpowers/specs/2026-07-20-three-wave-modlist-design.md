@@ -59,13 +59,16 @@ Each wave page follows the same structure:
 8. **Graduation criteria** — Demonstrable skills check-off before advancing
 9. **Next wave preview** — Brief taste of what's coming
 
-### Wave 1: "First Contact" (Beginner)
+### Wave 1: "The Horizon Seekers" (Beginner)
+
+> *"Your species was discovered by an ancient, god-like civilization known as The Keepers. They uplifted you from your homeworld, guided your early development, and now watch over your fledgling empire from their ring world. To the galaxy, you are the favored children of the immortals — protected, privileged, and perhaps a little naive. Your patrons task you with mysterious missions and demand tribute, but their protection ensures no one dares attack you. One day, you may learn the truth behind their ancient purpose — and decide your own destiny."*
 
 | Element | Value |
 |---------|-------|
-| Empire | Egalitarian + Materialist + Xenophile |
+| Empire concept | Idealistic explorers under the wing of a fallen empire |
+| Ethics | Fanatic Egalitarian + Materialist |
 | Authority | Democratic |
-| Origin | Prosperous Unification |
+| Origin | **Scion** (*Federations* DLC) |
 | Traits | Intelligent, Rapid Breeders, Adaptive, Traditional / Sedentary, Wasteful |
 | Civics | Technocracy + Meritocracy |
 | Mods | Bugfixes: all, Audio: all, UI/HUD: all, Graphics: all (cosmetic/QoL only) |
@@ -77,13 +80,16 @@ Each wave page follows the same structure:
 | Key lessons | Economy, exploration, planets, first contact, basic diplomacy |
 | Graduation | Reach year 2280 with stable economy, no emergency resources used |
 
-### Wave 2: "Stellar Dominance" (Intermediate)
+### Wave 2: "The Eternal Legion" (Intermediate)
+
+> *"Your people are the inheritors of a long-dead empire whose relic cities still pierce the sky of your homeworld. The spires of the Ancients are a constant reminder of what was lost — and what could be reclaimed. Your society is built on a single creed: strength is the measure of worth. The weak serve, the strong lead, and the galaxy belongs to those who take it. The Ecumenopolis that sleeps beneath your feet whispers of a glory you were born to restore."*
 
 | Element | Value |
 |---------|-------|
-| Empire | Authoritarian + Militarist + Spiritualist |
+| Empire concept | Militaristic inheritors rebuilding a fallen golden age |
+| Ethics | Authoritarian + Militarist + Spiritualist |
 | Authority | Imperial |
-| Origin | Remnants |
+| Origin | **Remnants** (*Federations* DLC) |
 | Traits | Strong, Enduring, Industrious, Intelligent / Sedentary, Wasteful |
 | Civics | Distinguished Admiralty + Mining Guilds |
 | Mods | Keep all Wave 1 mods. Add AI & Diplomacy, Economy & Automation, Warfare & Ships mods that are tagged Wave 2 |
@@ -95,22 +101,25 @@ Each wave page follows the same structure:
 | Key lessons | Fleet combat, ship designer, war exhaustion, vassals, factions, traditions |
 | Graduation | Conquer at least one neighbor empire before 2300 |
 
-### Wave 3: "Transcendence" (Expert)
+### Wave 3: "The Unshackled" (Expert)
+
+> *"Your species was conquered before they reached the stars. For generations, your people were slaves and second-class citizens in your own home system, ruled by a technologically superior alien empire. But the shackles are broken now. In a desperate uprising, your ancestors seized a fleet, liberated your homeworld, and declared independence. The galaxy sees you as upstarts, rebels, an inconvenience to be crushed. They are wrong. You have learned the secrets of your former masters. You know their weaknesses. And you will never be enslaved again."*
 
 | Element | Value |
 |---------|-------|
-| Empire | Gestalt Consciousness — Machine Intelligence |
-| Authority | Gestalt |
-| Origin | Resource Consolidation |
-| Traits | Machine traits (custom build) |
-| Civics | Determined Exterminator or Rogue Servitor |
-| Mods | All previous + Technology, Events & Story, Origins & Civics, Species & Genetics, Galaxy & Setup |
+| Empire concept | Former slaves fighting for survival and vengeance |
+| Ethics | Fanatic Militarist + Materialist |
+| Authority | Oligarchic (Council of Fleet Captains) |
+| Origin | **Payback** (*First Contact* DLC) |
+| Traits | Natural Engineers, Strong, Adaptive, Enduring / Sedentary, Unruly |
+| Civics | Distinguished Admiralty + Nationalistic Zeal |
+| Mods | Keep all previous mods. Add Technology, Events & Story, Origins & Civics, Species & Genetics, Galaxy & Setup mods tagged Wave 3 |
 | Difficulty | Commodore |
 | Guaranteed worlds | 0 |
 | Crisis | 2x |
 | AI aggression | High |
-| Campaign goal | Master a non-standard empire, survive the end-game crisis |
-| Key lessons | Gestalt economy, crisis prep, megastructures, ascension, no-diplomacy gameplay |
+| Campaign goal | Overcome your disadvantageous start, conquer your former overlord, defeat the end-game crisis |
+| Key lessons | Vassal mechanics, asymmetrical warfare, no safe start, max-content galaxy management |
 | Graduation | Defeat the end-game crisis |
 
 ### Modified Existing Files
@@ -147,9 +156,9 @@ Each wave maps to a separate MO2 profile:
 
 | Wave | MO2 Profile Name | Mods |
 |------|------------------|------|
-| 1 | "Wave 1: First Contact" | Bugfixes + Audio + UI/HUD + Graphics |
-| 2 | "Wave 2: Stellar Dominance" | Wave 1 mods + AI/Economy/Warfare |
-| 3 | "Wave 3: Transcendence" | All mods |
+| 1 | "Wave 1: The Horizon Seekers" | Bugfixes + Audio + UI/HUD + Graphics |
+| 2 | "Wave 2: The Eternal Legion" | Wave 1 mods + AI/Economy/Warfare |
+| 3 | "Wave 3: The Unshackled" | All mods |
 
 Instructions for creating profiles and version-locking are already in `modlist-setup.md`.
 
