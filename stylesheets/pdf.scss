@@ -107,11 +107,15 @@ table {
   }
 }
 
-a[href^="http"]::after {
-  content: " (" attr(href) ")";
-  font-size: 8pt;
-  color: #888;
+a[href]::after {
+  content: none !important;
 }
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+}
+
 
 img {
   max-width: 100%;
