@@ -11,19 +11,6 @@ theme:
 
 plugins:
   - search
-  - exporter:
-      formats:
-        pdf:
-          enabled: !ENV [MKDOCS_EXPORTER_PDF, true]
-          stylesheets:
-            - stylesheets/pdf.scss
-          covers:
-            front: covers/front.html.j2
-            back: covers/back.html.j2
-          aggregator:
-            enabled: true
-            output: stellaris-modlist-guide.pdf
-            covers: front
 
 nav:
   - Home: index.md
