@@ -1,6 +1,5 @@
 site_name: Stellaris Modlist Guide
 site_description: A curated, beginner-friendly modlist and learning guide for Stellaris
-repo_url: https://github.com/nimrodko/stellaris-modlist
 
 theme:
   name: material
@@ -54,6 +53,7 @@ nav:
   - Appendix: appendix.md
 
 extra:
+  generator: false
   version: !ENV [GUIDE_VERSION, "0.1"]
 
 markdown_extensions:
