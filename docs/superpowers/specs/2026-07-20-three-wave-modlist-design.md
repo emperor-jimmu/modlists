@@ -68,7 +68,7 @@ Each wave page follows the same structure:
 | Origin | Prosperous Unification |
 | Traits | Intelligent, Rapid Breeders, Adaptive, Traditional / Sedentary, Wasteful |
 | Civics | Technocracy + Meritocracy |
-| Mods | Bugfixes, Audio, UI/HUD, Graphics (cosmetic/QoL only) |
+| Mods | Bugfixes: all, Audio: all, UI/HUD: all, Graphics: all (cosmetic/QoL only) |
 | Difficulty | Ensign |
 | Guaranteed worlds | 2 |
 | Crisis | 1x |
@@ -86,7 +86,7 @@ Each wave page follows the same structure:
 | Origin | Remnants |
 | Traits | Strong, Enduring, Industrious, Intelligent / Sedentary, Wasteful |
 | Civics | Distinguished Admiralty + Mining Guilds |
-| Mods | Keep Wave 1 mods + add AI & Diplomacy, Economy & Automation, Warfare & Ships |
+| Mods | Keep all Wave 1 mods. Add AI & Diplomacy, Economy & Automation, Warfare & Ships mods that are tagged Wave 2 |
 | Difficulty | Captain |
 | Guaranteed worlds | 1 |
 | Crisis | 1x |
@@ -117,22 +117,15 @@ Each wave page follows the same structure:
 
 **`docs/index.md`** — Update to describe the 3-wave curriculum as the core concept. Replace the flat "principles" section with a wave overview.
 
-**`docs/modlist/*.md`** (all 12 category pages) — Add an "Applies to Wave" line at the top of each category table:
+**`docs/modlist/*.md`** (all 12 category pages) — Add a **"Wave" column** to each mod table. Every mod entry gets tagged with its wave(s):
 
-| Category | Wave |
-|----------|------|
-| Bugfixes | Wave 1+ |
-| Audio | Wave 1+ |
-| UI & HUD | Wave 1+ |
-| Graphics | Wave 1+ |
-| AI & Diplomacy | Wave 2+ |
-| Economy & Automation | Wave 2+ |
-| Warfare & Ships | Wave 2+ |
-| Technology | Wave 3+ |
-| Events & Story | Wave 3+ |
-| Origins & Civics | Wave 3+ |
-| Species & Portraits | Wave 3+ |
-| Galaxy & Setup | Wave 3+ |
+| Mod | Source | Version-Locked | Wave | Notes |
+|-----|--------|----------------|------|-------|
+| UI Overhaul Dynamic | Steam Workshop | No | 1+ | Dynamic resolution UI... |
+| Some Complex AI Mod | Steam Workshop | Yes | 2+ | Smarter AI, changes behavior... |
+| Endgame Crisis Expanded | GitHub | Yes | 3 | Adds new crisis types... |
+
+This replaces the old table schema (`Mod | Source | Version-Locked | Performance Impact | Notes`). Wave column comes after Version-Locked, Performance Impact moves into Notes or is kept as a separate column (to be decided per-page).
 
 **`docs/starting-a-game.md`** — Add a note at the top pointing to the Waves section: "This page is a general reference. For the full guided experience, follow [The Waves](waves/wave-1-beginners.md) in order."
 
@@ -165,5 +158,5 @@ Instructions for creating profiles and version-locking are already in `modlist-s
 - 3 new files: `docs/waves/wave-1-beginners.md`, `docs/waves/wave-2-intermediate.md`, `docs/waves/wave-3-expert.md`
 - 1 modified nav config: `mkdocs.yml`
 - 1 modified index: `docs/index.md`
-- 12 modified category pages: each Adds "Applies to Wave" header
+- 12 modified category pages: each mod table gains a "Wave" column; old "Performance Impact" column merged into Notes
 - 1 modified starting-a-game page: add wave reference
