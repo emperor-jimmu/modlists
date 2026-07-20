@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper]{book}
+
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{bookmark}
+\usepackage{longtable}
+\usepackage{array}
+
+% Colors
+\definecolor{deepgreen}{HTML}{2D5A27}
+\definecolor{warmgold}{HTML}{C8A84E}
+
+% Fonts
+\setmainfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+
+% Headings
+\titleformat{\chapter}{\Huge\bfseries\color{deepgreen}}{}{0em}{}
+\titleformat{\section}{\Large\bfseries\color{deepgreen}}{}{0em}{}
+\titleformat{\subsection}{\large\bfseries\color{deepgreen}}{}{0em}{}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{deepgreen}Fields, Vines \& Barrels}
+\fancyfoot[CE,CO]{\thepage}
+
+% Cover page
+\title{\Huge\textcolor{deepgreen}{Fields, Vines \& Barrels}\\[0.5em]
+\Large A Farming Simulator 25 Modlist \& Guide}
+\author{}
+\date{\today}
+
+\begin{document}
+
+% Cover
+\begin{titlepage}
+\centering
+\vspace*{3cm}
+\includegraphics[width=0.6\textwidth]{assets/logo.png}\\[2cm]
+{\Huge\bfseries\color{deepgreen} Fields, Vines \& Barrels}\\[0.5cm]
+{\Large A Farming Simulator 25 Modlist \& Guide}\\[1cm]
+{\large Build date: \today}
+\vfill
+\end{titlepage}
+
+% TOC
+\tableofcontents
+\newpage
+
+$body$
+
+\end{document}

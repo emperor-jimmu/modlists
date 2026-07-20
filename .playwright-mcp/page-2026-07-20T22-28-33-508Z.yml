@@ -1,0 +1,267 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - banner [ref=f2e3]:
+      - generic [ref=f2e5]:
+        - list [ref=f2e7]:
+          - listitem [ref=f2e8]:
+            - link "Merch-Shop" [ref=f2e9] [cursor=pointer]:
+              - /url: https://www.amazon.de/stores/FarmingSimulator/page/9A9F1907-13EB-45C3-B236-F7049E3D1D8C?ref_=ast_bln?ingress=0&visitId=3d684a99-483f-4a42-a18e-5d476450e18f&language=en_GB
+          - listitem [ref=f2e10]:
+            - link "Downloads" [ref=f2e11] [cursor=pointer]:
+              - /url: https://eshop.giants-software.com/downloads.php
+          - listitem [ref=f2e12]:
+            - link "Forum" [ref=f2e13] [cursor=pointer]:
+              - /url: https://forum.giants-software.com/viewforum.php?f=478
+          - listitem [ref=f2e14]:
+            - link "Updates" [ref=f2e15] [cursor=pointer]:
+              - /url: /updates.php
+          - listitem [ref=f2e16]:
+            - link "Support" [ref=f2e17] [cursor=pointer]:
+              - /url: /support.php
+          - listitem [ref=f2e18]:
+            - link "Company" [ref=f2e19] [cursor=pointer]:
+              - /url: https://www.giants-software.com/
+          - listitem [ref=f2e20]:
+            - link "Jobs" [ref=f2e21] [cursor=pointer]:
+              - /url: https://www.giants-software.com/jobs.php
+        - generic [ref=f2e22]:
+          - list [ref=f2e23]:
+            - listitem [ref=f2e24]:
+              - link "Whatsapp" [ref=f2e25] [cursor=pointer]:
+                - /url: https://whatsapp.com/channel/0029Va7XvT0CHDyd5Spgqm0Q
+                - generic [ref=f2e26]: 
+            - listitem [ref=f2e27]:
+              - link "X (formerly Twitter)" [ref=f2e28] [cursor=pointer]:
+                - /url: https://twitter.com/farmingsim
+            - listitem [ref=f2e31]:
+              - link "Facebook" [ref=f2e32] [cursor=pointer]:
+                - /url: https://www.facebook.com/giants.farming.simulator
+                - generic [ref=f2e33]: 
+            - listitem [ref=f2e34]:
+              - link "Youtube" [ref=f2e35] [cursor=pointer]:
+                - /url: https://www.youtube.com/giantssoftware
+                - generic [ref=f2e36]: 
+            - listitem [ref=f2e37]:
+              - link "Instagram" [ref=f2e38] [cursor=pointer]:
+                - /url: https://www.instagram.com/farmingsimulator/
+                - generic [ref=f2e39]: 
+            - listitem [ref=f2e40]:
+              - link "Twitch" [ref=f2e41] [cursor=pointer]:
+                - /url: https://www.twitch.tv/giantssoftware
+                - generic [ref=f2e42]: 
+            - listitem [ref=f2e43]:
+              - link "Discord" [ref=f2e44] [cursor=pointer]:
+                - /url: https://discord.gg/giantssoftware
+                - generic [ref=f2e45]: 
+            - listitem [ref=f2e46]:
+              - link "Tiktok" [ref=f2e47] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@farmingsimulator
+                - generic [ref=f2e48]: 
+          - list [ref=f2e49]:
+            - listitem [ref=f2e50]:
+              - link [ref=f2e51] [cursor=pointer]:
+                - /url: "#"
+                - img "lang" [ref=f2e52]
+      - generic [ref=f2e54]:
+        - link [ref=f2e56] [cursor=pointer]:
+          - /url: /index.php
+          - img "Farming Simulator Logo" [ref=f2e57]
+        - generic [ref=f2e58]:
+          - list [ref=f2e59]:
+            - listitem [ref=f2e60]:
+              - link "BLOG" [ref=f2e61] [cursor=pointer]:
+                - /url: /news.php
+            - listitem [ref=f2e62]:
+              - link "GAMES" [ref=f2e63] [cursor=pointer]:
+                - /url: /about.php
+            - listitem [ref=f2e64]:
+              - link "MEDIA" [ref=f2e65] [cursor=pointer]:
+                - /url: /media.php
+            - listitem [ref=f2e66]:
+              - link "DLC" [ref=f2e67] [cursor=pointer]:
+                - /url: /dlc.php
+            - listitem [ref=f2e68]:
+              - link "MODS" [ref=f2e69] [cursor=pointer]:
+                - /url: /mods.php
+            - listitem [ref=f2e70]:
+              - link "TUTORIALS" [ref=f2e71] [cursor=pointer]:
+                - /url: /newsArticle.php?news_id=280
+          - link "BUY NOW" [ref=f2e72] [cursor=pointer]:
+            - /url: /buy-now.php
+    - generic [ref=f2e73]:
+      - navigation [ref=f2e76]:
+        - list [ref=f2e77]:
+          - listitem [ref=f2e78]:
+            - heading [level=3] [ref=f2e79]:
+              - link "MODHUB" [ref=f2e80] [cursor=pointer]:
+                - /url: mods.php
+          - listitem [ref=f2e81]:
+            - link "LATEST" [ref=f2e82] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=latest&page=0
+          - listitem [ref=f2e83]:
+            - link "TOP DOWNLOADED" [ref=f2e84] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=mostDownloaded&page=0
+          - listitem [ref=f2e85]:
+            - link "PREFAB" [ref=f2e86] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=prefab&page=0
+          - listitem [ref=f2e87]:
+            - link "CATEGORY ▼" [ref=f2e88] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - text: ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼
+          - listitem [ref=f2e89]:
+            - link "FS22" [ref=f2e90] [cursor=pointer]:
+              - /url: mods.php?title=fs2022&page=0
+          - listitem [ref=f2e91]:
+            - link "CROSSPLAY" [ref=f2e92] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=crossplay&page=0
+          - listitem [ref=f2e93]:
+            - link "LOGIN" [ref=f2e95] [cursor=pointer]:
+              - /url: https://modhub.giants-software.com/main.php
+      - generic [ref=f2e96]:
+        - heading "CoursePlay" [level=2] [ref=f2e97]
+        - generic [ref=f2e98]: "Courseplay FS25 Courseplay for Farming Simulator 25 is a long-standing and powerful automation mod that has been a staple in the Farming Simulator community for nearly 15 years. Originally developed for earlier versions of the game, Courseplay has continually evolved, offering features far beyond the capabilities of the base game’s AI. - Fully customizable course generation and editing, - Multiple vehicles work together on the same field, - Automated harvesting and unloading, - Bale collection and wrapping, - Support for vineyards and specialty crops, - Harvester self-unload, - Pick up heaps on the field or empty bunker silos with loaders or shovels, - Bunker silo push and compaction. It also integrates seamlessly with other mods like AutoDrive, making it ideal for managing large-scale farms. Despite improvements to the in-game AI over the years, Courseplay remains the gold standard for automation in Farming Simulator, thanks to its flexibility, reliability, and active development community. For a link to our latest release, Help page and GitHub page where you can find more information, help, and report issues please visit Courseplay Website or go directly to our GitHub page. Many thanks to our translators and to our community for reporting bugs, giving us feedback and great ideas. Changelog 8.0.0.0: - Initial FS25 migration Changelog 8.1.0.0 - UI rework - Same great functionality as in FS22 - Course Editor got its own construction screen - New loop turn for headland for towed tools that can't be driven in reverse, like a seeder with grain cart (can be turned on in the vehicle settings) - Faster pathfinding using jump point search - Requires the latest game patch Changelog 8.1.0.3 - MP fix when starting a helper with an implements that is already unfolded. - Several bugfixes."
+        - generic [ref=f2e100]:
+          - generic [ref=f2e102]:
+            - generic [ref=f2e103]:
+              - generic [ref=f2e104]: Game
+              - generic [ref=f2e106]: Farming Simulator 25
+            - generic [ref=f2e107]:
+              - generic [ref=f2e108]: Manufacturer
+              - generic [ref=f2e110]: None
+            - generic [ref=f2e111]:
+              - generic [ref=f2e112]: Category
+              - link "Gameplay" [ref=f2e115] [cursor=pointer]:
+                - /url: mods.php?title=fs2025&filter=gameplay&page=0
+            - generic [ref=f2e116]:
+              - generic [ref=f2e117]: Author
+              - link "Courseplay.devTeam" [ref=f2e120] [cursor=pointer]:
+                - /url: mods.php?title=fs2025&filter=org&org_id=184770&page=0
+            - generic [ref=f2e121]:
+              - generic [ref=f2e122]: Filename
+              - generic [ref=f2e124]: FS25_Courseplay.zip
+            - generic [ref=f2e125]:
+              - generic [ref=f2e126]: Size
+              - generic [ref=f2e128]: 3.79 MB
+            - generic [ref=f2e129]:
+              - generic [ref=f2e130]: Version
+              - generic [ref=f2e132]: 8.1.0.3
+            - generic [ref=f2e133]:
+              - generic [ref=f2e134]: Released
+              - generic [ref=f2e136]: 11.02.2026
+            - generic [ref=f2e137]:
+              - generic [ref=f2e138]: Platform
+              - generic [ref=f2e140]: PC/MAC
+          - generic [ref=f2e141]:
+            - generic [ref=f2e142]:
+              - generic [ref=f2e143]: "User Rating:"
+              - generic [ref=f2e144]:
+                - generic [ref=f2e145]: 
+                - generic [ref=f2e146]: 
+                - generic [ref=f2e147]: 
+                - generic [ref=f2e148]: 
+                - generic [ref=f2e149]:  
+              - generic [ref=f2e150]: 4.5 (1164)
+            - link "DOWNLOAD" [ref=f2e156] [cursor=pointer]:
+              - /url: https://cdn25.giants-software.com/modHub/storage/00331515/FS25_Courseplay.zip
+      - generic [ref=f2e157]:
+        - separator [ref=f2e158]
+        - heading "Screenshots" [level=2] [ref=f2e159]
+        - list [ref=f2e175]:
+          - listitem [ref=f2e176] [cursor=pointer]
+          - listitem [ref=f2e177] [cursor=pointer]
+          - listitem [ref=f2e178] [cursor=pointer]
+          - listitem [ref=f2e179] [cursor=pointer]
+          - listitem [ref=f2e180] [cursor=pointer]
+          - listitem [ref=f2e181] [cursor=pointer]
+      - generic [ref=f2e182]:
+        - separator [ref=f2e183]
+        - generic [ref=f2e184]:
+          - text: All user generated contents on ModHub are properties of their respective creators. GIANTS Software and our co-publisher/distributor are not responsible for these user generated contents or any damage they may cause to your game. If you think your user generated content or parts of it are on ModHub without your consent, please contact us.
+          - link "abuse@giants-software.com" [ref=f2e185] [cursor=pointer]:
+            - /url: mailto:abuse@giants-software.com
+    - generic [ref=f2e186]:
+      - heading "Social Media" [level=2] [ref=f2e188]
+      - generic [ref=f2e189]:
+        - generic [ref=f2e190]:
+          - list:
+            - listitem [ref=f2e191]:
+              - link [ref=f2e192] [cursor=pointer]:
+                - /url: https://twitter.com/farmingsim
+                - img "X (formerly Twitter)" [ref=f2e195]
+            - listitem [ref=f2e196]:
+              - link [ref=f2e197] [cursor=pointer]:
+                - /url: https://www.facebook.com/giants.farming.simulator
+                - img "Facebook" [ref=f2e200]
+            - listitem [ref=f2e201]:
+              - link [ref=f2e202] [cursor=pointer]:
+                - /url: https://www.youtube.com/giantssoftware
+                - img "Youtube" [ref=f2e205]
+            - listitem [ref=f2e206]:
+              - link [ref=f2e207] [cursor=pointer]:
+                - /url: https://www.instagram.com/farmingsimulator/
+                - img "Instagram" [ref=f2e210]
+            - listitem [ref=f2e211]:
+              - link [ref=f2e212] [cursor=pointer]:
+                - /url: https://www.twitch.tv/giantssoftware
+                - img "Twitch" [ref=f2e215]
+            - listitem [ref=f2e216]:
+              - link [ref=f2e217] [cursor=pointer]:
+                - /url: https://discord.gg/giantssoftware
+                - img "Discord" [ref=f2e220]
+            - listitem [ref=f2e221]:
+              - link [ref=f2e222] [cursor=pointer]:
+                - /url: https://whatsapp.com/channel/0029Va7XvT0CHDyd5Spgqm0Q
+                - img "Whatsapp" [ref=f2e225]
+            - listitem [ref=f2e226]:
+              - link [ref=f2e227] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@farmingsimulator
+                - img "Tiktok" [ref=f2e230]
+        - generic [ref=f2e232]:
+          - link [ref=f2e234] [cursor=pointer]:
+            - /url: https://twitter.com/farmingsim
+            - img "X (formerly Twitter)" [ref=f2e235]
+          - paragraph [ref=f2e236]:
+            - text: Finally, we can share more details about FarmCon 26! 🚜🎉 Discover the full stage program, upcoming Beans & Alpacas presentations, Influencer Meet & Greets, factory tours, exclusive merch, NEW trading cards and our Barnyard Meetup in Trier. 🦙 A few last tickets are still
+            - link "https://t.co/kmMpI4G16k" [ref=f2e237] [cursor=pointer]:
+              - /url: https://t.co/kmMpI4G16k
+    - generic [ref=f2e239]:
+      - img "Windows" [ref=f2e243]
+      - img "Mac" [ref=f2e247]
+      - link [ref=f2e251] [cursor=pointer]:
+        - /url: https://www.playstation.com/
+        - img "PlayStation" [ref=f2e252]
+      - link [ref=f2e256] [cursor=pointer]:
+        - /url: https://www.xbox.com/
+        - img "Xbox" [ref=f2e257]
+      - link [ref=f2e261] [cursor=pointer]:
+        - /url: https://www.logitechg.com/
+        - img "Logitech" [ref=f2e262]
+      - link [ref=f2e266] [cursor=pointer]:
+        - /url: https://hori.co.uk/
+        - img "Hori" [ref=f2e267]
+      - link [ref=f2e271] [cursor=pointer]:
+        - /url: https://www.thrustmaster.com/
+        - img "Thrustmaster" [ref=f2e272]
+    - contentinfo [ref=f2e273]:
+      - generic [ref=f2e276]:
+        - link [ref=f2e277] [cursor=pointer]:
+          - /url: https://giants-software.com
+          - img "GIANTS Logo" [ref=f2e278]
+        - generic [ref=f2e279]:
+          - generic [ref=f2e280]:
+            - link "PRIVACY POLICY" [ref=f2e281] [cursor=pointer]:
+              - /url: /privacyPolicy.php
+            - text: "|"
+            - link "TERMS OF USE" [ref=f2e282] [cursor=pointer]:
+              - /url: /termsAndConditions.php
+            - text: "|"
+            - link "IMPRINT" [ref=f2e283] [cursor=pointer]:
+              - /url: /imprint.php
+            - text: "|"
+            - link "PRESS" [ref=f2e284] [cursor=pointer]:
+              - /url: https://press.giants-software.com/?lang=en
+          - generic [ref=f2e285]: © 2026 GIANTS Software GmbH All Rights Reserved. All other trademarks are properties of their respective owners.
+        - img "age rating logo" [ref=f2e287]
+  - generic [ref=f2e289]:
+    - generic [ref=f2e290]: We use cookies and analytics tools to improve the user friendliness of the Internet website. By continuing to use our website you are agreeing to our use of cookies.
+    - button "OK" [ref=f2e292] [cursor=pointer]

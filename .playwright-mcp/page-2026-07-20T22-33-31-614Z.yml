@@ -1,0 +1,340 @@
+- generic [active] [ref=f69e1]:
+  - generic:
+    - generic:
+      - link "דילוג לתוכן הראשי" [ref=f69e2] [cursor=pointer]
+      - link "עזרה בנושא נגישות" [ref=f69e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=iw
+  - generic [ref=f69e8]:
+    - search [ref=f69e9]:
+      - generic [ref=f69e11]:
+        - link [ref=f69e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=iw&ictx=2&sa=X&ved=0ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQPQgI
+          - 'img "גביע העולם בכדורגל 2026: חגיגה" [ref=f69e14]'
+        - generic [ref=f69e15]:
+          - generic [ref=f69e16]:
+            - combobox "חיפוש" [ref=f69e19]: FS25 "fleet manager" OR "vehicle fleet" mod site:farming-simulator.com OR site:kingmods.net OR site:fs25.net FS25 "fleet manager" OR "vehicle fleet" mod site:farming-simulator.com OR site:kingmods.net OR site:fs25.net
+            - generic [ref=f69e20]:
+              - button "ניקוי" [ref=f69e22] [cursor=pointer]
+              - generic [ref=f69e27]:
+                - button "כלי הזנה" [ref=f69e28] [cursor=pointer]
+                - button "חיפוש קולי" [ref=f69e32] [cursor=pointer]
+                - button "חיפוש לפי תמונה" [ref=f69e35] [cursor=pointer]
+          - button "חיפוש" [ref=f69e38] [cursor=pointer]
+    - generic [ref=f69e43]:
+      - button "הגדרות" [ref=f69e45] [cursor=pointer]
+      - button "שיתוף" [ref=f69e51] [cursor=pointer]
+      - generic [ref=f69e57]:
+        - button "אפליקציות Google" [ref=f69e59] [cursor=pointer]
+        - link "כניסה" [ref=f69e64] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=iw&passive=true&continue=https://www.google.com/search%3Fq%3DFS25%2B%2522fleet%2Bmanager%2522%2BOR%2B%2522vehicle%2Bfleet%2522%2Bmod%2Bsite:farming-simulator.com%2BOR%2Bsite:kingmods.net%2BOR%2Bsite:fs25.net&ec=futura_srp_og_si_72236_p
+  - generic [ref=f69e66]:
+    - navigation [ref=f69e72]:
+      - generic [ref=f69e78]:
+        - list [ref=f69e79]:
+          - listitem [ref=f69e80]:
+            - link "מצב AI" [ref=f69e83] [cursor=pointer]:
+              - /url: /search?q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sca_esv=3271cc0dab4982ea&udm=50&fbs=ABfTbFVO1EsH_-qmOC758SFg6HOopi3HIuklAPyQKMPVQI9jvkc1CZ2yjIhNI2Bqel2mbM-6xIxk-oKxyaJYJ87Fo_y7RYnsFzwjFd8clBF6b7W3H_uaLEuiXFz5AKliqR_cigFtripBwyHnF_16jr8XkdtqJ4_j7_Sygbc6toEauHt1bk-ZN572wg2zfJmu2dp_vR7Bv9oUwGeRCAUbB5MEMK0vVyzfwDmwKf3BUwqqwyzjvU8rOro&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQ2J8OegQICxAD
+          - listitem [ref=f69e87]:
+            - link "הכול" [disabled] [ref=f69e88]
+          - listitem [ref=f69e91]:
+            - link "תמונות" [ref=f69e92] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=2&fbs=ABfTbFVO1EsH_-qmOC758SFg6HOopi3HIuklAPyQKMPVQI9jvkc1CZ2yjIhNI2Bqel2mbM-6xIxk-oKxyaJYJ87Fo_y7RYnsFzwjFd8clBF6b7W3H_uaLEuiXFz5AKliqR_cigFtripBwyHnF_16jr8XkdtqJ4_j7_Sygbc6toEauHt1bk-ZN572wg2zfJmu2dp_vR7Bv9oUwGeRCAUbB5MEMK0vVyzfwDmwKf3BUwqqwyzjvU8rOro&q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sa=X&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQtKgLegQIDxAB
+          - listitem [ref=f69e95]:
+            - link "סרטונים קצרים" [ref=f69e96] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=39&fbs=ABfTbFVO1EsH_-qmOC758SFg6HOopi3HIuklAPyQKMPVQI9jvkc1CZ2yjIhNI2Bqel2mbM-6xIxk-oKxyaJYJ87Fo_y7RYnsFzwjFd8clBF6b7W3H_uaLEuiXFz5AKliqR_cigFtripBwyHnF_16jr8XkdtqJ4_j7_Sygbc6toEauHt1bk-ZN572wg2zfJmu2dp_vR7Bv9oUwGeRCAUbB5MEMK0vVyzfwDmwKf3BUwqqwyzjvU8rOro&q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sa=X&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQs6gLegQIEBAB
+          - listitem [ref=f69e99]:
+            - link "סרטונים" [ref=f69e100] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=7&fbs=ABfTbFVO1EsH_-qmOC758SFg6HOopi3HIuklAPyQKMPVQI9jvkc1CZ2yjIhNI2Bqel2mbM-6xIxk-oKxyaJYJ87Fo_y7RYnsFzwjFd8clBF6b7W3H_uaLEuiXFz5AKliqR_cigFtripBwyHnF_16jr8XkdtqJ4_j7_Sygbc6toEauHt1bk-ZN572wg2zfJmu2dp_vR7Bv9oUwGeRCAUbB5MEMK0vVyzfwDmwKf3BUwqqwyzjvU8rOro&q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sa=X&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQtKgLegQIERAB
+          - listitem [ref=f69e103]:
+            - link "שופינג" [ref=f69e104] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=28&fbs=ABfTbFVO1EsH_-qmOC758SFg6HOopi3HIuklAPyQKMPVQI9jvkc1CZ2yjIhNI2Bqel2mbM-6xIxk-oKxyaJYJ87Fo_y7RYnsFzwjFd8clBF6b7W3H_uaLEuiXFz5AKliqR_cigFtripBwyHnF_16jr8XkdtqJ4_j7_Sygbc6toEauHt1bk-ZN572wg2zfJmu2dp_vR7Bv9oUwGeRCAUbB5MEMK0vVyzfwDmwKf3BUwqqwyzjvU8rOro&q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&ved=1t:220175&ictx=111
+          - listitem [ref=f69e107]:
+            - link "חדשות" [ref=f69e108] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&tbm=nws&source=lnms&fbs=ABfTbFVO1EsH_-qmOC758SFg6HOopi3HIuklAPyQKMPVQI9jvkc1CZ2yjIhNI2Bqel2mbM-6xIxk-oKxyaJYJ87Fo_y7RYnsFzwjFd8clBF6b7W3H_uaLEuiXFz5AKliqR_cigFtripBwyHnF_16jr8XkdtqJ4_j7_Sygbc6toEauHt1bk-ZN572wg2zfJmu2dp_vR7Bv9oUwGeRCAUbB5MEMK0vVyzfwDmwKf3BUwqqwyzjvU8rOro&sa=X&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQ0pQJegQIDBAB
+          - listitem [ref=f69e111]:
+            - button [ref=f69e112] [cursor=pointer]:
+              - generic "מסננים נוספים" [ref=f69e113]: עוד
+        - button "כלים" [ref=f69e120] [cursor=pointer]
+    - heading "תוצאות חיפוש" [level=1] [ref=f69e127]
+    - generic [ref=f69e133]:
+      - generic [ref=f69e134]: Looking for results in English?
+      - link [ref=f69e135] [cursor=pointer]:
+        - /url: "#"
+      - link "Change to English" [ref=f69e139] [cursor=pointer]:
+        - /url: /setprefs?sig=0_f8-2yoAP8dakrB5v03rFhSXZOUQ%3D&source=en_ignored_notification&prev=https://www.google.com/search?q%3DFS25%2B%2522fleet%2Bmanager%2522%2BOR%2B%2522vehicle%2Bfleet%2522%2Bmod%2Bsite:farming-simulator.com%2BOR%2Bsite:kingmods.net%2BOR%2Bsite:fs25.net&hl=en&sa=X&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQhoQCKAF6BAgKEAQ
+      - link "אני רוצה להישאר ב-עברית" [ref=f69e140] [cursor=pointer]:
+        - /url: "#"
+      - link "הגדרות שפה" [ref=f69e142] [cursor=pointer]:
+        - /url: /preferences?lang=1&hl=iw&sa=X&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQiIQCKAN6BAgKEAY#languages
+    - main [ref=f69e144]:
+      - generic [ref=f69e148]:
+        - generic [ref=f69e151]:
+          - heading "Web results" [level=2] [ref=f69e152]
+          - generic [ref=f69e153]:
+            - generic [ref=f69e156]:
+              - link "Unload Garage V1.0.2 FS25.net https://fs25.net › unload-garage-v1-0" [ref=f69e158] [cursor=pointer]:
+                - /url: https://fs25.net/unload-garage-v1-0/
+                - heading "Unload Garage V1.0.2" [level=3] [ref=f69e159]
+                - generic [ref=f69e165]:
+                  - generic [ref=f69e166]: FS25.net
+                  - generic [ref=f69e169]:
+                    - text: https://fs25.net
+                    - generic [ref=f69e170]: › unload-garage-v1-0
+              - generic [ref=f69e171]:
+                - generic [ref=f69e172]: ·
+                - link "לדף המתורגם" [ref=f69e173] [cursor=pointer]:
+                  - /url: https://translate.google.com/translate?u=https://fs25.net/unload-garage-v1-0/&hl=iw&sl=en&tl=iw&client=search
+              - button "מידע על התוצאה הזו" [ref=f69e176] [cursor=pointer]
+            - generic [ref=f69e182]:
+              - generic [ref=f69e183]: 12 ביוני 2026 —
+              - generic [ref=f69e184]:
+                - text: The
+                - emphasis [ref=f69e185]: mod
+                - text: "is especially useful for: optimizing the number of vehicles ... organizing a"
+                - emphasis [ref=f69e186]: vehicle fleet
+                - text: on a server or in a single player game.
+            - img "דירוג 5.0 מתוך 5, (6) ביקורות של משתמשים" [ref=f69e191]: 5.0(6)
+        - generic [ref=f69e198]:
+          - generic [ref=f69e201]:
+            - link "Autodrive Hof Bergmann V1.3 FS25.net https://fs25.net › autodrive-hof-bergmann..." [ref=f69e203] [cursor=pointer]:
+              - /url: https://fs25.net/autodrive-hof-bergmann-v1-3/
+              - heading "Autodrive Hof Bergmann V1.3" [level=3] [ref=f69e204]
+              - generic [ref=f69e210]:
+                - generic [ref=f69e211]: FS25.net
+                - generic [ref=f69e214]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e215]: › autodrive-hof-bergmann...
+            - generic [ref=f69e216]:
+              - generic [ref=f69e217]: ·
+              - link "לדף המתורגם" [ref=f69e218] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/autodrive-hof-bergmann-v1-3/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e221] [cursor=pointer]
+          - generic [ref=f69e227]:
+            - generic [ref=f69e228]: 26 בדצמ׳ 2025 —
+            - generic [ref=f69e229]:
+              - text: AutoDrive Courses – Hof Bergmann Winter Update (
+              - emphasis [ref=f69e230]: FS25
+              - text: ) Adapted to the winter map update. Tested with the available map
+              - emphasis [ref=f69e231]: vehicle fleet
+              - text: . Total ...
+          - img "דירוג 4.0 מתוך 5, (1) ביקורות של משתמשים" [ref=f69e236]: 4.0(1)
+        - generic [ref=f69e243]:
+          - generic [ref=f69e246]:
+            - link "Enhanced Mod / Cheat Menu V2.0 FS25.net https://fs25.net › enhanced-mod-cheat-me..." [ref=f69e248] [cursor=pointer]:
+              - /url: https://fs25.net/enhanced-mod-cheat-menu-v1-0/
+              - heading "Enhanced Mod / Cheat Menu V2.0" [level=3] [ref=f69e249]
+              - generic [ref=f69e255]:
+                - generic [ref=f69e256]: FS25.net
+                - generic [ref=f69e259]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e260]: › enhanced-mod-cheat-me...
+            - generic [ref=f69e261]:
+              - generic [ref=f69e262]: ·
+              - link "לדף המתורגם" [ref=f69e263] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/enhanced-mod-cheat-menu-v1-0/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e266] [cursor=pointer]
+          - generic [ref=f69e272]:
+            - generic [ref=f69e273]: 30 במאי 2026 —
+            - generic [ref=f69e274]:
+              - text: This
+              - emphasis [ref=f69e275]: FS25
+              - text: modification adds a
+              - emphasis [ref=f69e276]: mod
+              - text: and cheat menu with a huge range of functionality. ...
+              - emphasis [ref=f69e277]: Fleet Manager
+              - text: "– browse all your vehicles: repair, clean, ..."
+          - img "דירוג 3.9 מתוך 5, (16) ביקורות של משתמשים" [ref=f69e282]: 3.9(16)
+        - generic [ref=f69e289]:
+          - generic [ref=f69e292]:
+            - link "Hirschfeld FSX 63.72 V1.0.0.1 FS25.net https://fs25.net › hirschfeld-fsx-63-72-v1..." [ref=f69e294] [cursor=pointer]:
+              - /url: https://fs25.net/hirschfeld-fsx-63-72-v1-0-0-1/
+              - heading "Hirschfeld FSX 63.72 V1.0.0.1" [level=3] [ref=f69e295]
+              - generic [ref=f69e301]:
+                - generic [ref=f69e302]: FS25.net
+                - generic [ref=f69e305]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e306]: › hirschfeld-fsx-63-72-v1...
+            - generic [ref=f69e307]:
+              - generic [ref=f69e308]: ·
+              - link "לדף המתורגם" [ref=f69e309] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/hirschfeld-fsx-63-72-v1-0-0-1/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e312] [cursor=pointer]
+          - generic [ref=f69e319]:
+            - text: Compatible with LS25 /
+            - emphasis [ref=f69e320]: FS25
+            - text: Cleanly integrated modification for your
+            - emphasis [ref=f69e321]: vehicle fleet
+            - text: . A practical and visually stunning
+            - emphasis [ref=f69e322]: FS25 mod
+            - text: for everyone who wants to do ...
+        - generic [ref=f69e326]:
+          - generic [ref=f69e329]:
+            - link "Farm Tablet V2.5.3 FS25.net https://fs25.net › farm-tablet-v1-1" [ref=f69e331] [cursor=pointer]:
+              - /url: https://fs25.net/farm-tablet-v1-1/
+              - heading "Farm Tablet V2.5.3" [level=3] [ref=f69e332]
+              - generic [ref=f69e338]:
+                - generic [ref=f69e339]: FS25.net
+                - generic [ref=f69e342]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e343]: › farm-tablet-v1-1
+            - generic [ref=f69e344]:
+              - generic [ref=f69e345]: ·
+              - link "לדף המתורגם" [ref=f69e346] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/farm-tablet-v1-1/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e349] [cursor=pointer]
+          - generic [ref=f69e356]:
+            - text: "Saves: No migration needed. What's New in v2.3.0.0. Three New Apps."
+            - emphasis [ref=f69e357]: Fleet Manager
+            - text: (FLEET) Lists every motorized vehicle your farm owns, sorted by fuel level ...
+          - img "דירוג 4.5 מתוך 5, (19) ביקורות של משתמשים" [ref=f69e362]: 4.5(19)
+        - generic [ref=f69e369]:
+          - generic [ref=f69e372]:
+            - link "Mecklenburg Lake District V1.1 FS25.net https://fs25.net › mecklenburg-lake-distri..." [ref=f69e374] [cursor=pointer]:
+              - /url: https://fs25.net/mecklenburg-lake-district-v1-0/
+              - heading "Mecklenburg Lake District V1.1" [level=3] [ref=f69e375]
+              - generic [ref=f69e381]:
+                - generic [ref=f69e382]: FS25.net
+                - generic [ref=f69e385]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e386]: › mecklenburg-lake-distri...
+            - generic [ref=f69e387]:
+              - generic [ref=f69e388]: ·
+              - link "לדף המתורגם" [ref=f69e389] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/mecklenburg-lake-district-v1-0/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e392] [cursor=pointer]
+          - generic [ref=f69e398]:
+            - generic [ref=f69e399]: 22 באוג׳ 2025 —
+            - generic [ref=f69e400]:
+              - text: "Features: 1 main farm with silo, shelters,"
+              - emphasis [ref=f69e401]: vehicle fleet
+              - text: areas 1 cow farm with barn, slurry pit and outdoor pasture 1 pig farm for fattening and ...
+          - img "דירוג 4.5 מתוך 5, (4) ביקורות של משתמשים" [ref=f69e406]: 4.5(4)
+        - generic [ref=f69e413]:
+          - generic [ref=f69e416]:
+            - link "Birgland V2.0 FS25.net https://fs25.net › birgland-v1-0" [ref=f69e418] [cursor=pointer]:
+              - /url: https://fs25.net/birgland-v1-0/
+              - heading "Birgland V2.0" [level=3] [ref=f69e419]
+              - generic [ref=f69e425]:
+                - generic [ref=f69e426]: FS25.net
+                - generic [ref=f69e429]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e430]: › birgland-v1-0
+            - generic [ref=f69e431]:
+              - generic [ref=f69e432]: ·
+              - link "לדף המתורגם" [ref=f69e433] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/birgland-v1-0/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e436] [cursor=pointer]
+          - generic [ref=f69e442]:
+            - generic [ref=f69e443]: 27 במאי 2026 —
+            - generic [ref=f69e444]:
+              - text: Those who start the game as a “New Farmer” will begin on a small dairy farm with a well-equipped starter
+              - emphasis [ref=f69e445]: vehicle fleet
+              - text: . ... Download
+              - emphasis [ref=f69e446]: mod
+              - text: ...
+          - img "דירוג 3.9 מתוך 5, (11) ביקורות של משתמשים" [ref=f69e451]: 3.9(11)
+        - generic [ref=f69e458]:
+          - generic [ref=f69e461]:
+            - link "Wollschow 25 V1.0.0.1 FS25.net https://fs25.net › wollschow-25-v1-0" [ref=f69e463] [cursor=pointer]:
+              - /url: https://fs25.net/wollschow-25-v1-0/
+              - heading "Wollschow 25 V1.0.0.1" [level=3] [ref=f69e464]
+              - generic [ref=f69e470]:
+                - generic [ref=f69e471]: FS25.net
+                - generic [ref=f69e474]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e475]: › wollschow-25-v1-0
+            - generic [ref=f69e476]:
+              - generic [ref=f69e477]: ·
+              - link "לדף המתורגם" [ref=f69e478] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/wollschow-25-v1-0/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e481] [cursor=pointer]
+          - generic [ref=f69e487]:
+            - generic [ref=f69e488]: 24 באפר׳ 2026 —
+            - generic [ref=f69e489]:
+              - text: ... correctly – Starting
+              - emphasis [ref=f69e490]: vehicle fleet
+              - text: "added to the estate. Credits: VirtualFarming[Paul]. 2.7/5 - (7 votes). Download"
+              - emphasis [ref=f69e491]: mod
+              - text: . File, File size. zip ...
+          - img "דירוג 2.7 מתוך 5, (7) ביקורות של משתמשים" [ref=f69e496]: 2.7(7)
+        - generic [ref=f69e503]:
+          - generic [ref=f69e506]:
+            - link "Bilk | ModHub Farming Simulator https://www.farming-simulator.com › mod" [ref=f69e508] [cursor=pointer]:
+              - /url: https://www.farming-simulator.com/mod.php?lang=fr&country=fr&mod_id=283111
+              - heading "Bilk | ModHub" [level=3] [ref=f69e509]
+              - generic [ref=f69e515]:
+                - generic [ref=f69e516]: Farming Simulator
+                - generic [ref=f69e519]:
+                  - text: https://www.farming-simulator.com
+                  - generic [ref=f69e520]: › mod
+            - generic [ref=f69e521]:
+              - generic [ref=f69e522]: ·
+              - link "לדף המתורגם" [ref=f69e523] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://www.farming-simulator.com/mod.php?lang%3Dfr%26country%3Dfr%26mod_id%3D283111&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e526] [cursor=pointer]
+          - generic [ref=f69e533]:
+            - text: "Farm 1: The main farm where the cows and a large BioGas plant are located, there are also sheds and plenty of storage space for the"
+            - emphasis [ref=f69e534]: vehicle fleet
+            - text: ", as well as ..."
+        - generic [ref=f69e538]:
+          - generic [ref=f69e541]:
+            - link "Le Mechet XXL Savegame V1.1 FS25.net https://fs25.net › le-mechet-xxl-savegame..." [ref=f69e543] [cursor=pointer]:
+              - /url: https://fs25.net/le-mechet-xxl-savegame-v1-1/
+              - heading "Le Mechet XXL Savegame V1.1" [level=3] [ref=f69e544]
+              - generic [ref=f69e550]:
+                - generic [ref=f69e551]: FS25.net
+                - generic [ref=f69e554]:
+                  - text: https://fs25.net
+                  - generic [ref=f69e555]: › le-mechet-xxl-savegame...
+            - generic [ref=f69e556]:
+              - generic [ref=f69e557]: ·
+              - link "לדף המתורגם" [ref=f69e558] [cursor=pointer]:
+                - /url: https://translate.google.com/translate?u=https://fs25.net/le-mechet-xxl-savegame-v1-1/&hl=iw&sl=en&tl=iw&client=search
+            - button "מידע על התוצאה הזו" [ref=f69e561] [cursor=pointer]
+          - generic [ref=f69e567]:
+            - generic [ref=f69e568]: 21 ביוני 2026 —
+            - generic [ref=f69e569]:
+              - text: There is no
+              - emphasis [ref=f69e570]: vehicle fleet
+              - text: ", but there is €1,000,000 starting capital. NO additional mods are required, except those provided by the modder ..."
+      - navigation [ref=f69e573]:
+        - heading "ניווט בדפים" [level=1] [ref=f69e574]
+        - text: "1"
+        - link "Page 2" [ref=f69e577] [cursor=pointer]:
+          - /url: /search?q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sca_esv=3271cc0dab4982ea&ei=PKJeatyoEMixhbIP5aeMqAw&start=10&sa=N&sstk=AU9db-DD7gHhgJ5AHUebiiWnnw_wYJl2d2R6BTUc7aYuGwLg4o7vbZn55XzUimdU3eMhiF1I-I8uYP2vNTvuxaL1c1rBB-WJkaEwYg&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQ8tMDegQIOxAE
+          - text: "2"
+        - link "Page 3" [ref=f69e579] [cursor=pointer]:
+          - /url: /search?q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sca_esv=3271cc0dab4982ea&ei=PKJeatyoEMixhbIP5aeMqAw&start=20&sa=N&sstk=AU9db-DD7gHhgJ5AHUebiiWnnw_wYJl2d2R6BTUc7aYuGwLg4o7vbZn55XzUimdU3eMhiF1I-I8uYP2vNTvuxaL1c1rBB-WJkaEwYg&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQ8tMDegQIOxAG
+          - text: "3"
+        - link "Page 4" [ref=f69e581] [cursor=pointer]:
+          - /url: /search?q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sca_esv=3271cc0dab4982ea&ei=PKJeatyoEMixhbIP5aeMqAw&start=30&sa=N&sstk=AU9db-DD7gHhgJ5AHUebiiWnnw_wYJl2d2R6BTUc7aYuGwLg4o7vbZn55XzUimdU3eMhiF1I-I8uYP2vNTvuxaL1c1rBB-WJkaEwYg&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQ8tMDegQIOxAI
+          - text: "4"
+        - link "Page 5" [ref=f69e583] [cursor=pointer]:
+          - /url: /search?q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sca_esv=3271cc0dab4982ea&ei=PKJeatyoEMixhbIP5aeMqAw&start=40&sa=N&sstk=AU9db-DD7gHhgJ5AHUebiiWnnw_wYJl2d2R6BTUc7aYuGwLg4o7vbZn55XzUimdU3eMhiF1I-I8uYP2vNTvuxaL1c1rBB-WJkaEwYg&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQ8tMDegQIOxAK
+          - text: "5"
+        - heading [level=2] [ref=f69e585]:
+          - link "הבא" [ref=f69e586] [cursor=pointer]:
+            - /url: /search?q=FS25+%22fleet+manager%22+OR+%22vehicle+fleet%22+mod+site:farming-simulator.com+OR+site:kingmods.net+OR+site:fs25.net&sca_esv=3271cc0dab4982ea&ei=PKJeatyoEMixhbIP5aeMqAw&start=10&sa=N&sstk=AU9db-DD7gHhgJ5AHUebiiWnnw_wYJl2d2R6BTUc7aYuGwLg4o7vbZn55XzUimdU3eMhiF1I-I8uYP2vNTvuxaL1c1rBB-WJkaEwYg&ved=2ahUKEwjctpD4p-KVAxXIWEEAHeUTA8UQ8NMDegQIOxAM
+      - navigation
+    - contentinfo [ref=f69e589]:
+      - heading "קישורים בכותרת תחתונה" [level=1] [ref=f69e590]
+      - generic [ref=f69e594]:
+        - generic [ref=f69e596]:
+          - text: ישראל
+          - generic [ref=f69e598]:
+            - button "מחוז תל אביב - מכתובת ה-IP שלך" [ref=f69e600] [cursor=pointer]:
+              - generic [ref=f69e601]: מחוז תל אביב
+              - generic [ref=f69e603]:
+                - text: "-"
+                - generic [ref=f69e604]: מכתובת ה-IP שלך
+            - text: "-"
+            - button "לעדכון המיקום" [ref=f69e606] [cursor=pointer]
+        - generic [ref=f69e609]:
+          - link "עזרה" [ref=f69e610] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=iw&fg=1
+          - link "שליחת משוב" [ref=f69e611] [cursor=pointer]:
+            - /url: "#"
+          - link "פרטיות" [ref=f69e612] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=iw&fg=1
+          - link "תנאים" [ref=f69e613] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=iw&fg=1

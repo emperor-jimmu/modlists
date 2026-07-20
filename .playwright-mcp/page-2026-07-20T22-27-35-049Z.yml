@@ -1,0 +1,271 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - banner [ref=f1e3]:
+      - generic [ref=f1e5]:
+        - list [ref=f1e7]:
+          - listitem [ref=f1e8]:
+            - link "Merch-Shop" [ref=f1e9] [cursor=pointer]:
+              - /url: https://www.amazon.de/stores/FarmingSimulator/page/9A9F1907-13EB-45C3-B236-F7049E3D1D8C?ref_=ast_bln?ingress=0&visitId=3d684a99-483f-4a42-a18e-5d476450e18f&language=en_GB
+          - listitem [ref=f1e10]:
+            - link "Downloads" [ref=f1e11] [cursor=pointer]:
+              - /url: https://eshop.giants-software.com/downloads.php
+          - listitem [ref=f1e12]:
+            - link "Forum" [ref=f1e13] [cursor=pointer]:
+              - /url: https://forum.giants-software.com/viewforum.php?f=478
+          - listitem [ref=f1e14]:
+            - link "Updates" [ref=f1e15] [cursor=pointer]:
+              - /url: /updates.php
+          - listitem [ref=f1e16]:
+            - link "Support" [ref=f1e17] [cursor=pointer]:
+              - /url: /support.php
+          - listitem [ref=f1e18]:
+            - link "Company" [ref=f1e19] [cursor=pointer]:
+              - /url: https://www.giants-software.com/
+          - listitem [ref=f1e20]:
+            - link "Jobs" [ref=f1e21] [cursor=pointer]:
+              - /url: https://www.giants-software.com/jobs.php
+        - generic [ref=f1e22]:
+          - list [ref=f1e23]:
+            - listitem [ref=f1e24]:
+              - link "Whatsapp" [ref=f1e25] [cursor=pointer]:
+                - /url: https://whatsapp.com/channel/0029Va7XvT0CHDyd5Spgqm0Q
+                - generic [ref=f1e26]: 
+            - listitem [ref=f1e27]:
+              - link "X (formerly Twitter)" [ref=f1e28] [cursor=pointer]:
+                - /url: https://twitter.com/farmingsim
+            - listitem [ref=f1e31]:
+              - link "Facebook" [ref=f1e32] [cursor=pointer]:
+                - /url: https://www.facebook.com/giants.farming.simulator
+                - generic [ref=f1e33]: 
+            - listitem [ref=f1e34]:
+              - link "Youtube" [ref=f1e35] [cursor=pointer]:
+                - /url: https://www.youtube.com/giantssoftware
+                - generic [ref=f1e36]: 
+            - listitem [ref=f1e37]:
+              - link "Instagram" [ref=f1e38] [cursor=pointer]:
+                - /url: https://www.instagram.com/farmingsimulator/
+                - generic [ref=f1e39]: 
+            - listitem [ref=f1e40]:
+              - link "Twitch" [ref=f1e41] [cursor=pointer]:
+                - /url: https://www.twitch.tv/giantssoftware
+                - generic [ref=f1e42]: 
+            - listitem [ref=f1e43]:
+              - link "Discord" [ref=f1e44] [cursor=pointer]:
+                - /url: https://discord.gg/giantssoftware
+                - generic [ref=f1e45]: 
+            - listitem [ref=f1e46]:
+              - link "Tiktok" [ref=f1e47] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@farmingsimulator
+                - generic [ref=f1e48]: 
+          - list [ref=f1e49]:
+            - listitem [ref=f1e50]:
+              - link [ref=f1e51] [cursor=pointer]:
+                - /url: "#"
+                - img "lang" [ref=f1e52]
+      - generic [ref=f1e54]:
+        - link [ref=f1e56] [cursor=pointer]:
+          - /url: /index.php
+          - img "Farming Simulator Logo" [ref=f1e57]
+        - generic [ref=f1e58]:
+          - list [ref=f1e59]:
+            - listitem [ref=f1e60]:
+              - link "BLOG" [ref=f1e61] [cursor=pointer]:
+                - /url: /news.php
+            - listitem [ref=f1e62]:
+              - link "GAMES" [ref=f1e63] [cursor=pointer]:
+                - /url: /about.php
+            - listitem [ref=f1e64]:
+              - link "MEDIA" [ref=f1e65] [cursor=pointer]:
+                - /url: /media.php
+            - listitem [ref=f1e66]:
+              - link "DLC" [ref=f1e67] [cursor=pointer]:
+                - /url: /dlc.php
+            - listitem [ref=f1e68]:
+              - link "MODS" [ref=f1e69] [cursor=pointer]:
+                - /url: /mods.php
+            - listitem [ref=f1e70]:
+              - link "TUTORIALS" [ref=f1e71] [cursor=pointer]:
+                - /url: /newsArticle.php?news_id=280
+          - link "BUY NOW" [ref=f1e72] [cursor=pointer]:
+            - /url: /buy-now.php
+    - generic [ref=f1e73]:
+      - navigation [ref=f1e76]:
+        - list [ref=f1e77]:
+          - listitem [ref=f1e78]:
+            - heading [level=3] [ref=f1e79]:
+              - link "MODHUB" [ref=f1e80] [cursor=pointer]:
+                - /url: mods.php
+          - listitem [ref=f1e81]:
+            - link "LATEST" [ref=f1e82] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=latest&page=0
+          - listitem [ref=f1e83]:
+            - link "TOP DOWNLOADED" [ref=f1e84] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=mostDownloaded&page=0
+          - listitem [ref=f1e85]:
+            - link "PREFAB" [ref=f1e86] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=prefab&page=0
+          - listitem [ref=f1e87]:
+            - link "CATEGORY ▼" [ref=f1e88] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - text: ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼
+          - listitem [ref=f1e89]:
+            - link "FS22" [ref=f1e90] [cursor=pointer]:
+              - /url: mods.php?title=fs2022&page=0
+          - listitem [ref=f1e91]:
+            - link "CROSSPLAY" [ref=f1e92] [cursor=pointer]:
+              - /url: mods.php?title=fs2025&filter=crossplay&page=0
+          - listitem [ref=f1e93]:
+            - link "LOGIN" [ref=f1e95] [cursor=pointer]:
+              - /url: https://modhub.giants-software.com/main.php
+      - generic [ref=f1e96]:
+        - heading "Bale Autoload Pack" [level=2] [ref=f1e97]
+        - generic [ref=f1e98]: "The Bale Autoload Pack includes: Kroeger PWO 24 Bale Autoload Price: from $25,500 Category: Bale loaders, Flatbed trailers * Configuration: Standard or Bale Autoload * Configuration: Extension * Configuration: Beacon * Autoload for - round bales (125cm: 26 bales, 150cm: 22 bales, 180cm: 18 bales, cotton: 4 bales) - square bales (120cm: 238 bales, 180cm: 30 bales, 220cm & 240cm: 24 bales, cotton: 2 bales) * each side of the body can be opened separately or both sides at the same time (\"U\" key to select the loading side, \"Y\" key to open/close) * Color choice for trailer & rims * Choice of tyres (Continental, Trelleborg, BKT, Vredestein) * New rear lights with reverse lights Farmtech DPW 1800 Bale Autoload Price: from $20,500 Category: Bale loaders, Flatbed trailers * Configuration: Standard or Bale Autoload * Configuration: Extension * Configuration: Beacon * Autoload for - round bales (125cm: 26 bales, 150cm: 22 bales, 180cm: 18 bales, cotton: 4 bales) - square bales (120cm: 317 bales, 180cm: 30 bales, 220cm & 240cm: 24 bales, cotton: 2 bales) * Rim color option * Choice of tyres (Continental, Trelleborg, BKT, Vredestein) * New rear lights with reverse lights Farmtech DDK 2400 Bale Autoload Price: from $30,500 Category: Trailers, Bale loaders, Flatbed trailers * Configuration: Bales, Bale Autoload, 14m³, 28m³ * Autoload for - round bales (125cm: 22 bales, 150cm: 18 bales, 180cm: 14 bales, cotton: 3 bales) - square bales (120cm: 246 bales, 180cm: 24 bales, 220cm & 240cm: 18 bales, cotton: 1 bale) * Rim color option * Choice of tyres (Continental, Trelleborg, BKT, Vredestein) * New rear lights with reverse lights * Configuration for trailer hitch Farmtech EDK 650 Bale Autoload Price: from $6,000 Category: Trailers, Bale loaders, Flatbed trailers * Configuration: Bales, Bale Autoload, 4m³, 8m³ * Autoload for - round bales (125cm: 10 bales, 150cm & 180cm: 6 bales) - square bales (120cm: 120 bales, 180cm: 12 bales, 220cm & 240cm: 9 bales) * Rim color option How Bale Autoload works: Important notes: - Bale Autoload is only available when configured in the workshop/garage. 1. Move the trailer into working position with \"B\". Bales can now be collected. - In \"EASY\" working mode, the trailer automatically collects bales located up to 4m beside the trailer. - In \"PRO\" working mode, the bales must be placed on the trailer to be detected by Autoload. The working mode can be changed at any time with \"Ctrl\"+\"Z\". 2. After collecting the bales, move the trailer into transport position with \"B\". 3. To unload, start unloading mode with \"Z\". The unloading assistant controls are available during the unloading process. The bales can be moved in all directions and rotated on all axes. Select the unloading position and unload the bales with \"Z\". After unloading, end the unloading process with \"Z\". The unloading process can be cancelled with \"X\". Changelog 1.2.0.0 - Fixed synchronization and unloading issues on dedicated servers - Restacked HD bales on PWO and DPW - Unloading helper controls are now available during the unloading process - Updated the explanation of how Bale Autoload works - Added DDK 2400 trailer hitch configuration Changelog 1.1.0.0 - Optimized bale positions - Added support for various mod bales (square bales: Hesston 240, 180x70, 220x70, 240x70; round bales: 085) - Restacked HD bales on the EDK 650 & DDK 2400 - Various minor adjustments"
+        - generic [ref=f1e100]:
+          - generic [ref=f1e102]:
+            - generic [ref=f1e103]:
+              - generic [ref=f1e104]: Game
+              - generic [ref=f1e106]: Farming Simulator 25
+            - generic [ref=f1e107]:
+              - generic [ref=f1e108]: Manufacturer
+              - generic [ref=f1e110]: Farmtech, Kroeger
+            - generic [ref=f1e111]:
+              - generic [ref=f1e112]: Category
+              - link "Trailers - Trailers" [ref=f1e115] [cursor=pointer]:
+                - /url: mods.php?title=fs2025&filter=trailers&page=0
+            - generic [ref=f1e116]:
+              - generic [ref=f1e117]: Author
+              - link "[Weekend Farmers] Amarok-10" [ref=f1e120] [cursor=pointer]:
+                - /url: mods.php?title=fs2025&filter=org&org_id=238646&page=0
+            - generic [ref=f1e121]:
+              - generic [ref=f1e122]: Filename
+              - generic [ref=f1e124]: FS25_baleAutoloadPack.zip
+            - generic [ref=f1e125]:
+              - generic [ref=f1e126]: Size
+              - generic [ref=f1e128]: 13.25 MB
+            - generic [ref=f1e129]:
+              - generic [ref=f1e130]: Version
+              - generic [ref=f1e132]: 1.2.0.0
+            - generic [ref=f1e133]:
+              - generic [ref=f1e134]: Released
+              - generic [ref=f1e136]: 16.07.2026
+            - generic [ref=f1e137]:
+              - generic [ref=f1e138]: Platform
+              - generic [ref=f1e140]: PC/MAC, PS5, XBS, S2
+          - generic [ref=f1e141]:
+            - generic [ref=f1e142]:
+              - generic [ref=f1e143]: "User Rating:"
+              - generic [ref=f1e144]:
+                - generic [ref=f1e145]: 
+                - generic [ref=f1e146]: 
+                - generic [ref=f1e147]: 
+                - generic [ref=f1e148]: 
+                - generic [ref=f1e149]:  
+              - generic [ref=f1e150]: 4.5 (3154)
+            - link "DOWNLOAD" [ref=f1e156] [cursor=pointer]:
+              - /url: https://cdn25.giants-software.com/modHub/storage/00305991/FS25_baleAutoloadPack.zip
+      - generic [ref=f1e157]:
+        - separator [ref=f1e158]
+        - heading "Mod Powered By:" [level=2] [ref=f1e159]
+        - link [ref=f1e160] [cursor=pointer]:
+          - /url: https://www.facebook.com/StefanT4xs
+      - generic [ref=f1e162]:
+        - separator [ref=f1e163]
+        - heading "Screenshots" [level=2] [ref=f1e164]
+        - list [ref=f1e178]:
+          - listitem [ref=f1e179] [cursor=pointer]
+          - listitem [ref=f1e180] [cursor=pointer]
+          - listitem [ref=f1e181] [cursor=pointer]
+          - listitem [ref=f1e182] [cursor=pointer]
+          - listitem [ref=f1e183] [cursor=pointer]
+      - generic [ref=f1e184]:
+        - separator [ref=f1e185]
+        - generic [ref=f1e186]:
+          - text: All user generated contents on ModHub are properties of their respective creators. GIANTS Software and our co-publisher/distributor are not responsible for these user generated contents or any damage they may cause to your game. If you think your user generated content or parts of it are on ModHub without your consent, please contact us.
+          - link "abuse@giants-software.com" [ref=f1e187] [cursor=pointer]:
+            - /url: mailto:abuse@giants-software.com
+    - generic [ref=f1e188]:
+      - heading "Social Media" [level=2] [ref=f1e190]
+      - generic [ref=f1e191]:
+        - generic [ref=f1e192]:
+          - list:
+            - listitem [ref=f1e193]:
+              - link [ref=f1e194] [cursor=pointer]:
+                - /url: https://twitter.com/farmingsim
+                - img "X (formerly Twitter)" [ref=f1e197]
+            - listitem [ref=f1e198]:
+              - link [ref=f1e199] [cursor=pointer]:
+                - /url: https://www.facebook.com/giants.farming.simulator
+                - img "Facebook" [ref=f1e202]
+            - listitem [ref=f1e203]:
+              - link [ref=f1e204] [cursor=pointer]:
+                - /url: https://www.youtube.com/giantssoftware
+                - img "Youtube" [ref=f1e207]
+            - listitem [ref=f1e208]:
+              - link [ref=f1e209] [cursor=pointer]:
+                - /url: https://www.instagram.com/farmingsimulator/
+                - img "Instagram" [ref=f1e212]
+            - listitem [ref=f1e213]:
+              - link [ref=f1e214] [cursor=pointer]:
+                - /url: https://www.twitch.tv/giantssoftware
+                - img "Twitch" [ref=f1e217]
+            - listitem [ref=f1e218]:
+              - link [ref=f1e219] [cursor=pointer]:
+                - /url: https://discord.gg/giantssoftware
+                - img "Discord" [ref=f1e222]
+            - listitem [ref=f1e223]:
+              - link [ref=f1e224] [cursor=pointer]:
+                - /url: https://whatsapp.com/channel/0029Va7XvT0CHDyd5Spgqm0Q
+                - img "Whatsapp" [ref=f1e227]
+            - listitem [ref=f1e228]:
+              - link [ref=f1e229] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@farmingsimulator
+                - img "Tiktok" [ref=f1e232]
+        - generic [ref=f1e234]:
+          - link [ref=f1e236] [cursor=pointer]:
+            - /url: https://twitter.com/farmingsim
+            - img "X (formerly Twitter)" [ref=f1e237]
+          - paragraph [ref=f1e238]:
+            - text: Finally, we can share more details about FarmCon 26! 🚜🎉 Discover the full stage program, upcoming Beans & Alpacas presentations, Influencer Meet & Greets, factory tours, exclusive merch, NEW trading cards and our Barnyard Meetup in Trier. 🦙 A few last tickets are still
+            - link "https://t.co/kmMpI4G16k" [ref=f1e239] [cursor=pointer]:
+              - /url: https://t.co/kmMpI4G16k
+    - generic [ref=f1e241]:
+      - img "Windows" [ref=f1e245]
+      - img "Mac" [ref=f1e249]
+      - link [ref=f1e253] [cursor=pointer]:
+        - /url: https://www.playstation.com/
+        - img "PlayStation" [ref=f1e254]
+      - link [ref=f1e258] [cursor=pointer]:
+        - /url: https://www.xbox.com/
+        - img "Xbox" [ref=f1e259]
+      - link [ref=f1e263] [cursor=pointer]:
+        - /url: https://www.logitechg.com/
+        - img "Logitech" [ref=f1e264]
+      - link [ref=f1e268] [cursor=pointer]:
+        - /url: https://hori.co.uk/
+        - img "Hori" [ref=f1e269]
+      - link [ref=f1e273] [cursor=pointer]:
+        - /url: https://www.thrustmaster.com/
+        - img "Thrustmaster" [ref=f1e274]
+    - contentinfo [ref=f1e275]:
+      - generic [ref=f1e278]:
+        - link [ref=f1e279] [cursor=pointer]:
+          - /url: https://giants-software.com
+          - img "GIANTS Logo" [ref=f1e280]
+        - generic [ref=f1e281]:
+          - generic [ref=f1e282]:
+            - link "PRIVACY POLICY" [ref=f1e283] [cursor=pointer]:
+              - /url: /privacyPolicy.php
+            - text: "|"
+            - link "TERMS OF USE" [ref=f1e284] [cursor=pointer]:
+              - /url: /termsAndConditions.php
+            - text: "|"
+            - link "IMPRINT" [ref=f1e285] [cursor=pointer]:
+              - /url: /imprint.php
+            - text: "|"
+            - link "PRESS" [ref=f1e286] [cursor=pointer]:
+              - /url: https://press.giants-software.com/?lang=en
+          - generic [ref=f1e287]: © 2026 GIANTS Software GmbH All Rights Reserved. All other trademarks are properties of their respective owners.
+        - img "age rating logo" [ref=f1e289]
+  - generic [ref=f1e291]:
+    - generic [ref=f1e292]: We use cookies and analytics tools to improve the user friendliness of the Internet website. By continuing to use our website you are agreeing to our use of cookies.
+    - button "OK" [ref=f1e294] [cursor=pointer]

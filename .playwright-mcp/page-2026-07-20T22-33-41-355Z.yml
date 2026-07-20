@@ -1,0 +1,409 @@
+- generic [active] [ref=f73e1]:
+  - generic:
+    - generic:
+      - link "דילוג לתוכן הראשי" [ref=f73e2] [cursor=pointer]
+      - link "עזרה בנושא נגישות" [ref=f73e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=iw
+  - generic [ref=f73e8]:
+    - search [ref=f73e9]:
+      - generic [ref=f73e11]:
+        - link [ref=f73e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=iw&ictx=2&sa=X&ved=0ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQPQgI
+          - 'img "גביע העולם בכדורגל 2026: חגיגה" [ref=f73e14]'
+        - generic [ref=f73e15]:
+          - generic [ref=f73e16]:
+            - combobox "חיפוש" [ref=f73e19]: FS25 production chain OR production overview OR supply chain mod 2025 2026 FS25 production chain OR production overview OR supply chain mod 2025 2026
+            - generic [ref=f73e20]:
+              - button "ניקוי" [ref=f73e22] [cursor=pointer]
+              - generic [ref=f73e27]:
+                - button "כלי הזנה" [ref=f73e28] [cursor=pointer]
+                - button "חיפוש קולי" [ref=f73e32] [cursor=pointer]
+                - button "חיפוש לפי תמונה" [ref=f73e35] [cursor=pointer]
+          - button "חיפוש" [ref=f73e38] [cursor=pointer]
+    - generic [ref=f73e43]:
+      - button "הגדרות" [ref=f73e45] [cursor=pointer]
+      - button "שיתוף" [ref=f73e51] [cursor=pointer]
+      - generic [ref=f73e57]:
+        - button "אפליקציות Google" [ref=f73e59] [cursor=pointer]
+        - link "כניסה" [ref=f73e64] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=iw&passive=true&continue=https://www.google.com/search%3Fq%3DFS25%2Bproduction%2Bchain%2BOR%2Bproduction%2Boverview%2BOR%2Bsupply%2Bchain%2Bmod%2B2025%2B2026&ec=futura_srp_og_si_72236_p
+  - generic [ref=f73e66]:
+    - navigation [ref=f73e72]:
+      - generic [ref=f73e78]:
+        - list [ref=f73e79]:
+          - listitem [ref=f73e80]:
+            - link "מצב AI" [ref=f73e83] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&udm=50&fbs=ABfTbFXIAv_y4xNaef5reBxOl35BFd2qhb8G0eXqwIQ4SHrtQIkX2VaUT6Hqfqu8Mpttzpo9Ud2eshCRyMsScENJTt-re-XVTKcYiRpY_eUiOJKNHnY3w43axyvlDb55YW28fU88L3bHReMJmibT0xJZf3b3g1p5G1A9C3Hple_yPA1aI5o8Yk1syaNNL1n-mp0YH3UR4_iTaKs7QhTCW2EveIGlUc5NSaGbq5P1aAxfzwL5KZJKGEM&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ2J8OegQIEhAD
+          - listitem [ref=f73e87]:
+            - link "הכול" [disabled] [ref=f73e88]
+          - listitem [ref=f73e91]:
+            - link "תמונות" [ref=f73e92] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=2&fbs=ABfTbFXIAv_y4xNaef5reBxOl35BFd2qhb8G0eXqwIQ4SHrtQIkX2VaUT6Hqfqu8Mpttzpo9Ud2eshCRyMsScENJTt-re-XVTKcYiRpY_eUiOJKNHnY3w43axyvlDb55YW28fU88L3bHReMJmibT0xJZf3b3g1p5G1A9C3Hple_yPA1aI5o8Yk1syaNNL1n-mp0YH3UR4_iTaKs7QhTCW2EveIGlUc5NSaGbq5P1aAxfzwL5KZJKGEM&q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQtKgLegQIGRAB
+          - listitem [ref=f73e95]:
+            - link "סרטונים" [ref=f73e96] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=7&fbs=ABfTbFXIAv_y4xNaef5reBxOl35BFd2qhb8G0eXqwIQ4SHrtQIkX2VaUT6Hqfqu8Mpttzpo9Ud2eshCRyMsScENJTt-re-XVTKcYiRpY_eUiOJKNHnY3w43axyvlDb55YW28fU88L3bHReMJmibT0xJZf3b3g1p5G1A9C3Hple_yPA1aI5o8Yk1syaNNL1n-mp0YH3UR4_iTaKs7QhTCW2EveIGlUc5NSaGbq5P1aAxfzwL5KZJKGEM&q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQtKgLegQIFxAB
+          - listitem [ref=f73e99]:
+            - link "שופינג" [ref=f73e100] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=28&fbs=ABfTbFXIAv_y4xNaef5reBxOl35BFd2qhb8G0eXqwIQ4SHrtQIkX2VaUT6Hqfqu8Mpttzpo9Ud2eshCRyMsScENJTt-re-XVTKcYiRpY_eUiOJKNHnY3w43axyvlDb55YW28fU88L3bHReMJmibT0xJZf3b3g1p5G1A9C3Hple_yPA1aI5o8Yk1syaNNL1n-mp0YH3UR4_iTaKs7QhTCW2EveIGlUc5NSaGbq5P1aAxfzwL5KZJKGEM&q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&ved=1t:220175&ictx=111
+          - listitem [ref=f73e103]:
+            - link "סרטונים קצרים" [ref=f73e104] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=39&fbs=ABfTbFXIAv_y4xNaef5reBxOl35BFd2qhb8G0eXqwIQ4SHrtQIkX2VaUT6Hqfqu8Mpttzpo9Ud2eshCRyMsScENJTt-re-XVTKcYiRpY_eUiOJKNHnY3w43axyvlDb55YW28fU88L3bHReMJmibT0xJZf3b3g1p5G1A9C3Hple_yPA1aI5o8Yk1syaNNL1n-mp0YH3UR4_iTaKs7QhTCW2EveIGlUc5NSaGbq5P1aAxfzwL5KZJKGEM&q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQs6gLegQIFhAB
+          - listitem [ref=f73e107]:
+            - link "חדשות" [ref=f73e108] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&tbm=nws&source=lnms&fbs=ABfTbFXIAv_y4xNaef5reBxOl35BFd2qhb8G0eXqwIQ4SHrtQIkX2VaUT6Hqfqu8Mpttzpo9Ud2eshCRyMsScENJTt-re-XVTKcYiRpY_eUiOJKNHnY3w43axyvlDb55YW28fU88L3bHReMJmibT0xJZf3b3g1p5G1A9C3Hple_yPA1aI5o8Yk1syaNNL1n-mp0YH3UR4_iTaKs7QhTCW2EveIGlUc5NSaGbq5P1aAxfzwL5KZJKGEM&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ0pQJegQIFBAB
+          - listitem [ref=f73e111]:
+            - button [ref=f73e112] [cursor=pointer]:
+              - generic "מסננים נוספים" [ref=f73e113]: עוד
+        - button "כלים" [ref=f73e120] [cursor=pointer]
+    - heading "תוצאות חיפוש" [level=1] [ref=f73e127]
+    - generic [ref=f73e133]:
+      - generic [ref=f73e134]: Looking for results in English?
+      - link [ref=f73e135] [cursor=pointer]:
+        - /url: "#"
+      - link "Change to English" [ref=f73e139] [cursor=pointer]:
+        - /url: /setprefs?sig=0_f8-2yoAP8dakrB5v03rFhSXZOUQ%3D&source=en_ignored_notification&prev=https://www.google.com/search?q%3DFS25%2Bproduction%2Bchain%2BOR%2Bproduction%2Boverview%2BOR%2Bsupply%2Bchain%2Bmod%2B2025%2B2026&hl=en&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQhoQCKAF6BAgHEAQ
+      - link "אני רוצה להישאר ב-עברית" [ref=f73e140] [cursor=pointer]:
+        - /url: "#"
+      - link "הגדרות שפה" [ref=f73e142] [cursor=pointer]:
+        - /url: /preferences?lang=1&hl=iw&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQiIQCKAN6BAgHEAY#languages
+    - generic [ref=f73e143]:
+      - generic [ref=f73e162]:
+        - heading "חיפוש ייקח עוד קצת זמן לחשוב" [level=2] [ref=f73e166]:
+          - generic [ref=f73e167]:
+            - generic [ref=f73e168]: חיפוש
+            - generic [ref=f73e178]: ייקח עוד קצת זמן לחשוב
+        - progressbar "בתהליך יצירה" [ref=f73e181]
+      - main [ref=f73e232]:
+        - generic [ref=f73e236]:
+          - generic [ref=f73e240]:
+            - generic [ref=f73e242]:
+              - heading "סרטונים" [level=2] [ref=f73e243]
+              - button "מידע על התוצאה הזו" [ref=f73e244] [cursor=pointer]
+            - generic [ref=f73e250]:
+              - generic [ref=f73e257]:
+                - generic [ref=f73e258]:
+                  - link [ref=f73e260] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=GhjP5lBQS7Y
+                    - heading "BASIC GUIDE TO PRODUCTIONS - Farming Simulator 25 YouTube Farmer Cop 8 בנוב׳ 2024" [level=3] [ref=f73e261]:
+                      - generic [ref=f73e262]: BASIC GUIDE TO PRODUCTIONS - Farming Simulator 25
+                      - generic [ref=f73e266]:
+                        - generic [ref=f73e267]:
+                          - text: YouTube
+                          - generic [ref=f73e268]: · Farmer Cop
+                        - generic [ref=f73e269]: 8 בנוב׳ 2024
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: YouTube
+                            - generic: · Farmer Cop
+                      - button "מידע על התוצאה הזו" [ref=f73e270] [cursor=pointer]
+                - button "הסרטון ‪BASIC GUIDE TO PRODUCTIONS - Farming Simulator 25‬‏ הועלה על ידי ‪Farmer Cop‬‏ אל ‪YouTube‬‏. הפעלה ב-Google. 8:49" [ref=f73e275] [cursor=pointer]:
+                  - generic [ref=f73e276]: 8:49
+              - generic [ref=f73e296]:
+                - generic [ref=f73e297]:
+                  - link [ref=f73e299] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=vQTvmhfcj-I
+                    - heading "EASILY MANAGE MULTIPLE RPODUCTIONS! - Farming ... YouTube Farmer Cop 10 בפבר׳ 2026" [level=3] [ref=f73e300]:
+                      - generic [ref=f73e301]: EASILY MANAGE MULTIPLE RPODUCTIONS! - Farming ...
+                      - generic [ref=f73e305]:
+                        - generic [ref=f73e306]:
+                          - text: YouTube
+                          - generic [ref=f73e307]: · Farmer Cop
+                        - generic [ref=f73e308]: 10 בפבר׳ 2026
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: YouTube
+                            - generic: · Farmer Cop
+                      - button "מידע על התוצאה הזו" [ref=f73e309] [cursor=pointer]
+                - button "הסרטון ‪EASILY MANAGE MULTIPLE RPODUCTIONS! - Farming ...‬‏ הועלה על ידי ‪Farmer Cop‬‏ אל ‪YouTube‬‏. הפעלה ב-Google. 6:21" [ref=f73e314] [cursor=pointer]:
+                  - generic [ref=f73e315]: 6:21
+              - generic [ref=f73e332]:
+                - generic [ref=f73e333]:
+                  - link [ref=f73e335] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=GvO7NdTsEL4
+                    - heading "Guide To Productions - Farming Simulator 25 - Tutorial YouTube Ultra-Farmer 13 ביולי 2025" [level=3] [ref=f73e336]:
+                      - generic [ref=f73e337]: Guide To Productions - Farming Simulator 25 - Tutorial
+                      - generic [ref=f73e341]:
+                        - generic [ref=f73e342]:
+                          - text: YouTube
+                          - generic [ref=f73e343]: · Ultra-Farmer
+                        - generic [ref=f73e344]: 13 ביולי 2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: YouTube
+                            - generic: · Ultra-Farmer
+                      - button "מידע על התוצאה הזו" [ref=f73e345] [cursor=pointer]
+                - button "הסרטון ‪Guide To Productions - Farming Simulator 25 - Tutorial‬‏ הועלה על ידי ‪Ultra-Farmer‬‏ אל ‪YouTube‬‏. הפעלה ב-Google. 16:54" [ref=f73e350] [cursor=pointer]:
+                  - generic [ref=f73e351]: 16:54
+              - generic [ref=f73e369]:
+                - generic [ref=f73e370]:
+                  - link [ref=f73e372] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=Oksyz7QUpu0
+                    - heading "All In One Production / FS25 UPDATE Mar 2/26 YouTube LooneyFarmGuy 2 במרץ 2026" [level=3] [ref=f73e373]:
+                      - generic [ref=f73e374]: All In One Production / FS25 UPDATE Mar 2/26
+                      - generic [ref=f73e378]:
+                        - generic [ref=f73e379]:
+                          - text: YouTube
+                          - generic [ref=f73e380]: · LooneyFarmGuy
+                        - generic [ref=f73e381]: 2 במרץ 2026
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: YouTube
+                            - generic: · LooneyFarmGuy
+                      - button "מידע על התוצאה הזו" [ref=f73e382] [cursor=pointer]
+                - button "הסרטון ‪All In One Production / FS25 UPDATE Mar 2/26‬‏ הועלה על ידי ‪LooneyFarmGuy‬‏ אל ‪YouTube‬‏. הפעלה ב-Google. 4:47" [ref=f73e387] [cursor=pointer]:
+                  - generic [ref=f73e388]: 4:47
+            - link "צפייה בכל הסרטונים" [ref=f73e405] [cursor=pointer]:
+              - /url: /search?sca_esv=3271cc0dab4982ea&udm=7&q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8ccDKAJ6BAgkEAQ
+              - separator [ref=f73e406]
+              - generic [ref=f73e407]: לראות הכל
+          - generic [ref=f73e414]:
+            - heading "Web results" [level=2] [ref=f73e415]
+            - generic [ref=f73e416]:
+              - generic [ref=f73e419]:
+                - link "Productions Manager V1.0.0.1 FS25.net https://fs25.net › nx-productions-v1-0" [ref=f73e421] [cursor=pointer]:
+                  - /url: https://fs25.net/nx-productions-v1-0/
+                  - heading "Productions Manager V1.0.0.1" [level=3] [ref=f73e422]
+                  - generic [ref=f73e428]:
+                    - generic [ref=f73e429]: FS25.net
+                    - generic [ref=f73e432]:
+                      - text: https://fs25.net
+                      - generic [ref=f73e433]: › nx-productions-v1-0
+                - generic [ref=f73e434]:
+                  - generic [ref=f73e435]: ·
+                  - link "לדף המתורגם" [ref=f73e436] [cursor=pointer]:
+                    - /url: https://fs25.net/nx-productions-v1-0/
+                - button "מידע על התוצאה הזו" [ref=f73e439] [cursor=pointer]
+              - generic [ref=f73e445]:
+                - generic [ref=f73e446]: 30 באפר׳ 2026 —
+                - generic [ref=f73e447]:
+                  - text: A production management mod for Farming Simulator 25 that
+                  - emphasis [ref=f73e448]: provides an overview of all your production facilities
+                  - text: with automatic management ...
+          - generic [ref=f73e452]:
+            - generic [ref=f73e455]:
+              - link "ProductionStorageControl | ModHub Farming Simulator https://www.farming-simulator.com › mod" [ref=f73e457] [cursor=pointer]:
+                - /url: https://www.farming-simulator.com/mod.php?mod_id=315838&title=fs2025
+                - heading "ProductionStorageControl | ModHub" [level=3] [ref=f73e458]
+                - generic [ref=f73e464]:
+                  - generic [ref=f73e465]: Farming Simulator
+                  - generic [ref=f73e468]:
+                    - text: https://www.farming-simulator.com
+                    - generic [ref=f73e469]: › mod
+              - generic [ref=f73e470]:
+                - generic [ref=f73e471]: ·
+                - link "לדף המתורגם" [ref=f73e472] [cursor=pointer]:
+                  - /url: https://www.farming-simulator.com/mod.php?mod_id=315838&title=fs2025
+              - button "מידע על התוצאה הזו" [ref=f73e475] [cursor=pointer]
+            - generic [ref=f73e482]:
+              - emphasis [ref=f73e483]: Production
+              - text: Storage Control allows you to manage the storage of a
+              - emphasis [ref=f73e484]: production
+              - text: ". Features: PSC adds the ability to MANUALLY spawn pallets and bales to all ..."
+          - generic [ref=f73e488]:
+            - generic [ref=f73e491]:
+              - 'link "FS25 production chains value : r/farmingsimulator Reddit · r/farmingsimulator מעל 120 תגובות · לפני שנה" [ref=f73e493] [cursor=pointer]':
+                - /url: https://www.reddit.com/r/farmingsimulator/comments/1gr8yfb/fs25_production_chains_value/
+                - 'heading "FS25 production chains value : r/farmingsimulator" [level=3] [ref=f73e494]'
+                - generic [ref=f73e500]:
+                  - generic [ref=f73e501]: Reddit · r/farmingsimulator
+                  - generic [ref=f73e503]: מעל 120 תגובות · לפני שנה
+              - button "מידע על התוצאה הזו" [ref=f73e507] [cursor=pointer]
+            - generic [ref=f73e514]:
+              - text: After a bit of work i managed to create a spreadsheet for the actual added value of the
+              - emphasis [ref=f73e515]: production chains
+              - text: .
+            - generic [ref=f73e518]:
+              - generic [ref=f73e519]:
+                - link [ref=f73e522] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/farmingsimulator/comments/1h06rsj/best_production_chains_timemoney_on_hard_mode_for/
+                  - generic [ref=f73e523]:
+                    - text: Best
+                    - emphasis [ref=f73e524]: production chains
+                    - text: time/money on Hard mode for
+                    - emphasis [ref=f73e525]: FS25
+                    - text: "?"
+                - generic [ref=f73e526]: 40 פוסטים
+                - generic [ref=f73e528]: 26 בנוב׳ 2024
+              - generic [ref=f73e530]:
+                - link [ref=f73e533] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/farmingsimulator/comments/1gos2nw/fs25_production_chains/
+                  - generic [ref=f73e534]:
+                    - emphasis [ref=f73e535]: FS25 Production Chains
+                    - text: ": r/farmingsimulator - Reddit"
+                - generic [ref=f73e536]: 162 פוסטים
+                - generic [ref=f73e538]: 11 בנוב׳ 2024
+              - link "עוד תוצאות מ-www.reddit.com" [ref=f73e543] [cursor=pointer]:
+                - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026+site:www.reddit.com&sca_esv=3271cc0dab4982ea&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQrQIoAnoECDMQAw
+          - generic [ref=f73e547]:
+            - generic [ref=f73e550]:
+              - 'link "FS25: all production chains at a glance GPORTAL https://www.g-portal.com › blog › fs25-al..." [ref=f73e552] [cursor=pointer]':
+                - /url: https://www.g-portal.com/en/blog/fs25-all-production-chains-overview
+                - 'heading "FS25: all production chains at a glance" [level=3] [ref=f73e553]'
+                - generic [ref=f73e559]:
+                  - generic [ref=f73e560]: GPORTAL
+                  - generic [ref=f73e563]:
+                    - text: https://www.g-portal.com
+                    - generic [ref=f73e564]: › blog › fs25-al...
+              - generic [ref=f73e565]:
+                - generic [ref=f73e566]: ·
+                - link "לדף המתורגם" [ref=f73e567] [cursor=pointer]:
+                  - /url: https://www.g-portal.com/en/blog/fs25-all-production-chains-overview
+              - button "מידע על התוצאה הזו" [ref=f73e570] [cursor=pointer]
+            - generic [ref=f73e576]:
+              - generic [ref=f73e577]: 31 בינו׳ 2025 —
+              - generic [ref=f73e578]:
+                - text: In this blog article, we present
+                - emphasis [ref=f73e579]: all FS25 production chains
+                - text: and give you information on the products produced and how they can be processed.
+          - generic [ref=f73e586]:
+            - generic [ref=f73e589]:
+              - link "Production Chain Menu Guide Farming Simulator 25 YouTube · AF Gamez מעל 740 צפיות · לפני שנה" [ref=f73e591] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=gwP5-wA3AUY
+                - heading "Production Chain Menu Guide Farming Simulator 25" [level=3] [ref=f73e592]
+                - generic [ref=f73e598]:
+                  - generic [ref=f73e599]: YouTube · AF Gamez
+                  - generic [ref=f73e601]: מעל 740 צפיות · לפני שנה
+              - button "מידע על התוצאה הזו" [ref=f73e605] [cursor=pointer]
+            - generic [ref=f73e610]:
+              - button "הסרטון ‪Production Chain Menu Guide Farming Simulator 25‬‏ הועלה על ידי ‪AF Gamez‬‏ אל ‪YouTube‬‏. הפעלה ב-Google. 4:48" [ref=f73e611] [cursor=pointer]:
+                - generic [ref=f73e612]: 4:48
+              - generic [ref=f73e625]: In this video we discuss the production chain menu, in the main menu screen for Farming Simulator 25 Become a channel member!
+          - generic [ref=f73e631]:
+            - generic [ref=f73e634]:
+              - 'link "Production Chains: Farming Simulator 25 farmingsimulator.wiki.gg https://farmingsimulator.wiki.gg › wiki › F..." [ref=f73e636] [cursor=pointer]':
+                - /url: https://farmingsimulator.wiki.gg/wiki/Production_Chains/Farming_Simulator_25
+                - 'heading "Production Chains: Farming Simulator 25" [level=3] [ref=f73e637]'
+                - generic [ref=f73e643]:
+                  - generic [ref=f73e644]: farmingsimulator.wiki.gg
+                  - generic [ref=f73e647]:
+                    - text: https://farmingsimulator.wiki.gg
+                    - generic [ref=f73e648]: › wiki › F...
+              - generic [ref=f73e649]:
+                - generic [ref=f73e650]: ·
+                - link "לדף המתורגם" [ref=f73e651] [cursor=pointer]:
+                  - /url: https://farmingsimulator.wiki.gg/wiki/Production_Chains/Farming_Simulator_25
+              - button "מידע על התוצאה הזו" [ref=f73e654] [cursor=pointer]
+            - generic [ref=f73e660]:
+              - generic [ref=f73e661]: 6 בנוב׳ 2025 —
+              - generic [ref=f73e662]:
+                - text: Description.
+                - emphasis [ref=f73e663]: Production chains
+                - text: "in Farming Simulator 25 include: Greenhouse: Now you can also produce oyster mushroom, enoki, chili, onion, ..."
+          - generic [ref=f73e667]:
+            - generic [ref=f73e670]:
+              - link "A FS25 handy Production Chain flow chart and In game ... Facebook · MrFarquar מעל 10 תגובות באמוג'י · לפני שנה" [ref=f73e672] [cursor=pointer]:
+                - /url: https://www.facebook.com/MrFarquar/posts/a-fs25-handy-production-chain-flow-chart-and-in-game-icons-feel-free-to-purchase/531940949647930/
+                - heading "A FS25 handy Production Chain flow chart and In game ..." [level=3] [ref=f73e673]
+                - generic [ref=f73e679]:
+                  - generic [ref=f73e680]: Facebook · MrFarquar
+                  - generic [ref=f73e682]: מעל 10 תגובות באמוג'י · לפני שנה
+              - button "מידע על התוצאה הזו" [ref=f73e686] [cursor=pointer]
+            - generic [ref=f73e693]:
+              - text: A
+              - emphasis [ref=f73e694]: FS25
+              - text: handy
+              - emphasis [ref=f73e695]: Production Chain
+              - text: flow chart and In game Icons. Feel free to purchase through my partner link. Farming Simulator 25 (PC-Digital Download)
+          - generic [ref=f73e702]:
+            - generic [ref=f73e705]:
+              - link "All In One Production is Back for FS25 - New Mod YouTube · Mrs Sim Gamer מעל 500 צפיות · לפני שנה" [ref=f73e707] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=CXCnCgHlX3k
+                - heading "All In One Production is Back for FS25 - New Mod" [level=3] [ref=f73e708]
+                - generic [ref=f73e714]:
+                  - generic [ref=f73e715]: YouTube · Mrs Sim Gamer
+                  - generic [ref=f73e717]: מעל 500 צפיות · לפני שנה
+              - button "מידע על התוצאה הזו" [ref=f73e721] [cursor=pointer]
+            - generic [ref=f73e726]:
+              - button "הסרטון ‪All In One Production is Back for FS25 - New Mod‬‏ הועלה על ידי ‪Mrs Sim Gamer‬‏ אל ‪YouTube‬‏. הפעלה ב-Google. 7:38" [ref=f73e727] [cursor=pointer]:
+                - generic [ref=f73e728]: 7:38
+              - generic [ref=f73e744]: "The All in One Production is back for #farmingsimulator25! One of my favourites in #FS22 is now here. Produce the base game products in one ..."
+        - generic [ref=f73e748]:
+          - generic [ref=f73e753]:
+            - heading "אנשים חיפשו גם" [level=2] [ref=f73e755]
+            - generic [ref=f73e757]:
+              - generic [ref=f73e758]:
+                - link "Production chains FS25" [ref=f73e762] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=Production+chains+FS25&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAgoEAE
+                - link "FS25 most profitable production" [ref=f73e776] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=FS25+most+profitable+production&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAg3EAE
+                - link "FS25 divided production" [ref=f73e790] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=FS25+divided+production&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAg0EAE
+                - link "FS25 Production Revamp" [ref=f73e804] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=FS25+Production+Revamp&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAgyEAE
+              - generic [ref=f73e815]:
+                - link "Production chains fs25 selling" [ref=f73e819] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=Production+chains+fs25+selling&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAgxEAE
+                - link "Fs25 production chains profit" [ref=f73e833] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=Fs25+production+chains+profit&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAgtEAE
+                - link "Fs25 Barley Production" [ref=f73e847] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=Fs25+Barley+Production&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAgsEAE
+                - link "FS25 production upgrade" [ref=f73e861] [cursor=pointer]:
+                  - /url: /search?sca_esv=3271cc0dab4982ea&q=FS25+production+upgrade&sa=X&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ1QJ6BAgrEAE
+          - navigation [ref=f73e872]:
+            - heading "ניווט בדפים" [level=1] [ref=f73e873]
+            - text: "1"
+            - link "Page 2" [ref=f73e876] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=10&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAE
+              - text: "2"
+            - link "Page 3" [ref=f73e878] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=20&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAG
+              - text: "3"
+            - link "Page 4" [ref=f73e880] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=30&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAI
+              - text: "4"
+            - link "Page 5" [ref=f73e882] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=40&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAK
+              - text: "5"
+            - link "Page 6" [ref=f73e884] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=50&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAM
+              - text: "6"
+            - link "Page 7" [ref=f73e886] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=60&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAO
+              - text: "7"
+            - link "Page 8" [ref=f73e888] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=70&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAQ
+              - text: "8"
+            - link "Page 9" [ref=f73e890] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=80&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAS
+              - text: "9"
+            - link "Page 10" [ref=f73e892] [cursor=pointer]:
+              - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=90&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8tMDegQIJRAU
+              - text: "10"
+            - heading [level=2] [ref=f73e894]:
+              - link "הבא" [ref=f73e895] [cursor=pointer]:
+                - /url: /search?q=FS25+production+chain+OR+production+overview+OR+supply+chain+mod+2025+2026&sca_esv=3271cc0dab4982ea&ei=RaJeaqTPFOefhbIPoL2zSQ&start=10&sa=N&sstk=AU9db-C-yY9xhc6OUgVSSvLmgPQl40hsHgE7gHtENy_sR-TugIKggPkSHaknjdO6jaSZciOYGYBEVEIudsoEyPoaSt1wTE9-pcJaCg&ved=2ahUKEwjkhbr8p-KVAxXnT0EAHaDeLAkQ8NMDegQIJRAW
+        - navigation
+    - contentinfo [ref=f73e898]:
+      - heading "קישורים בכותרת תחתונה" [level=1] [ref=f73e899]
+      - generic [ref=f73e903]:
+        - generic [ref=f73e905]:
+          - text: ישראל
+          - generic [ref=f73e907]:
+            - button "מחוז המרכז - על סמך הפעילות הקודמת שלך" [ref=f73e909] [cursor=pointer]:
+              - generic [ref=f73e910]: מחוז המרכז
+              - generic [ref=f73e912]:
+                - text: "-"
+                - generic [ref=f73e913]: על סמך הפעילות הקודמת שלך
+            - text: "-"
+            - button "לעדכון המיקום" [ref=f73e915] [cursor=pointer]
+        - generic [ref=f73e918]:
+          - link "עזרה" [ref=f73e919] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=iw&fg=1
+          - link "שליחת משוב" [ref=f73e920] [cursor=pointer]:
+            - /url: "#"
+          - link "פרטיות" [ref=f73e921] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=iw&fg=1
+          - link "תנאים" [ref=f73e922] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=iw&fg=1
