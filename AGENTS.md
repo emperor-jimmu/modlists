@@ -15,7 +15,7 @@ stardew-valley-modlist/
 │   │   ├── 02-vanilla-primer.md
 │   │   ├── 03-mod-catalog/  # numbered mod category files
 │   │   ├── 04-modded-gameplay.md
-│   │   └── 05-mo2-separators.md
+│   │   └── 05-mod-manager-setup.md
 │   ├── performance/         # FPS/load time benchmarks
 │   └── superpowers/         # specs, plans
 ├── scripts/
@@ -65,11 +65,12 @@ Every mod added to the catalog MUST be compatible with 1.6.15 (or at minimum 1.6
 - Metrics: FPS (avg/min), load times at key locations
 - Results in `docs/performance/` as markdown tables
 
-## MO2 Separators
+## Stardrop Mod Management
 
-- One top-level separator per mod category (15 total)
-- Each with a distinct color; subcategory separators use gradient
-- Documented in `docs/guide/05-mo2-separators.md`
+- Stardrop is the mod manager, downloaded from [NexusMods](https://www.nexusmods.com/stardewvalley/mods/10455)
+- Profiles separate mod lists for different playthroughs (three-wave approach)
+- Mod Groups (Folder grouping) replace the old separator system
+- Covers profiles, grouping, filtering, and themes in `docs/guide/05-mod-manager-setup.md`
 
 ## Web Browsing
 

@@ -168,7 +168,7 @@ Use this as a rough guide for when to move between waves. There is no strict tim
 
 | Milestone | Wave Status |
 |-----------|-------------|
-| Installed SMAPI and MO2, Foundations mods active | Ready for Wave 1 |
+| Installed SMAPI and Stardrop, Foundations mods active | Ready for Wave 1 |
 | Reached Summer Year 1, comfortable with all five vanilla skills | Wave 1 is working |
 | Completed at least 2 Community Center rooms | You know vanilla well enough |
 | Reached Year 2, finished the Community Center | Ready for Wave 2 |
@@ -182,4 +182,4 @@ Use this as a rough guide for when to move between waves. There is no strict tim
 
 ## Next Steps
 
-With the mechanics understood, the final chapter [05-mo2-separators.md](05-mo2-separators.md) covers MO2 separator configuration — colors, gradients, and the recommended separator list that matches this guide's category structure.
+With the mechanics understood, the final chapter [05-mod-manager-setup.md](05-mod-manager-setup.md) covers Stardrop mod management — profiles, mod groups, filtering, and tips for keeping your mod list organized.

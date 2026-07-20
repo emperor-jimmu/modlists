@@ -23,7 +23,7 @@ Prerequisite mods that other mods depend on. These must be installed first and l
 
 ## Load Order
 
-Place the **== Foundations ==** separator at the very top of MO2's left pane. These mods should always load before any other mod.
+These mods should always be enabled and loaded before any other mod. In Stardrop, use **Folder** grouping to keep foundations at the top of your mod list.
 
 ## Notes
 

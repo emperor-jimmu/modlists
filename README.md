@@ -4,7 +4,7 @@
 
 # Welcome to the Valley
 
-A curated, beginner-friendly modlist for **Stardew Valley** using **Mod Organizer 2**.
+A curated, beginner-friendly modlist for **Stardew Valley** using **Stardrop**.
 
 ## Philosophy
 
@@ -30,7 +30,7 @@ This guide is built for **first-time players** who want a richer, more polished 
 ## Prerequisites
 
 - **Stardew Valley** (latest version, from Steam/GOG)
-- **Mod Organizer 2** — [Download](https://github.com/ModOrganizer2/modorganizer/releases)
+- **Stardrop** — [Download](https://www.nexusmods.com/stardewvalley/mods/10455)
 - **SMAPI** — [Download](https://smapi.io/)
 - **Pandoc** — `winget install Pandoc`
 - **wkhtmltopdf** — [Download](https://wkhtmltopdf.org/downloads.html)
@@ -38,9 +38,9 @@ This guide is built for **first-time players** who want a richer, more polished 
 ## Quick Start
 
 1. Install SMAPI (run the installer, point it at your Stardew Valley install)
-2. Install Mod Organizer 2
+2. Download and extract Stardrop
 3. Clone this repo: `git clone https://github.com/YOUR_USER/stardew-valley-modlist.git`
-4. Follow `docs/guide/01-setup.md` for MO2 configuration and mod installation order
+4. Follow `docs/guide/01-setup.md` for Stardrop configuration and mod installation order
 5. Install mods per category in the order specified in `docs/guide/03-mod-catalog/`
 
 ## Building the PDF Guide
@@ -63,11 +63,11 @@ The guide teaches Stardew Valley in three waves — each adds complexity on top 
 
 | Chapter | File | Description |
 |---------|------|-------------|
-| 1 | `01-setup.md` | MO2 + SMAPI installation walkthrough + wave structure |
+| 1 | `01-setup.md` | Stardrop + SMAPI installation walkthrough + wave structure |
 | 2 | `02-vanilla-primer.md` | How to play Stardew Valley (Wave 1 — first-time friendly) |
 | 3 | `03-mod-catalog/*` | Full mod catalog by category (16 categories across 3 waves) |
 | 4 | `04-modded-gameplay.md` | New mechanics from Waves 2 and 3, progression checklist |
-| 5 | `05-mo2-separators.md` | MO2 separator list with colors and gradients |
+| 5 | `05-mod-manager-setup.md` | Stardrop mod management: profiles, groups, and filtering |
 
 ## Performance
 

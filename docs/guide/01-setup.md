@@ -1,6 +1,6 @@
-# Setup: Installing SMAPI and Mod Organizer 2
+# Setup: Installing SMAPI and Stardrop
 
-This chapter walks through setting up Mod Organizer 2 (MO2) and SMAPI, the two tools you need to manage and run Stardew Valley mods. Follow every step in order — skipping ahead is where things break.
+This chapter walks through setting up Stardrop and SMAPI, the two tools you need to manage and run Stardew Valley mods. Stardrop is a purpose-built mod manager for Stardew Valley — lightweight, cross-platform, and designed to work seamlessly with SMAPI.
 
 ## Prerequisites
 
@@ -46,88 +46,87 @@ SMAPI (Stardew Modding API) is the loader that lets mods hook into the game. Wit
 
 To verify: run the game via SMAPI. You should see a dark console window open alongside the game with SMAPI version info. If you see that, SMAPI is working.
 
-**Do not install mods yet** — MO2 will handle that.
+## Installing Stardrop
 
-## Installing Mod Organizer 2
+Stardrop is an open-source, cross-platform mod manager built specifically for Stardew Valley. Unlike general-purpose mod managers, it integrates directly with SMAPI and the Nexus Mods API — no plugin configuration, no virtual file system to learn.
 
-MO2 keeps your Stardew Valley install folder clean by virtualising the mod file system. Every mod lives in its own directory inside MO2 — nothing touches the game folder directly.
-
-1. Download the latest release from the [MO2 GitHub releases page](https://github.com/ModOrganizer2/modorganizer/releases).
-2. Run the installer. Choose **Portable** when asked — this keeps all mod data inside a single folder (recommended for modlists).
-3. Pick an install location outside `Program Files` to avoid permission issues. Example: `C:\Games\Mod Organizer 2`.
-4. When the installer asks which game to manage, select **Stardew Valley** (or skip and set it up manually later).
+1. Download the latest release from [Stardrop on Nexus Mods](https://www.nexusmods.com/stardewvalley/mods/10455) (or from the [GitHub releases page](https://github.com/Floogen/Stardrop/releases)).
+2. Extract the archive to a folder of your choice. Example: `C:\Games\Stardrop`
+3. Run `Stardrop.exe`. On first launch it will ask for your Stardew Valley install folder — point it at your game directory.
 
 ### First Launch
 
-1. Launch MO2. It will open a setup wizard asking for the Stardew Valley executable location. Point it to your game folder.
-2. MO2 will ask about Nexus integration. Log in with your Nexus Mods account — this enables "Download with Mod Manager" buttons on Nexus mod pages.
-3. You should see the main MO2 window. On the right sidebar, confirm the game is detected as **Stardew Valley**.
+1. Stardrop scans your `Mods` folder and loads any existing mods. If you already installed SMAPI from the previous step, you will see it listed.
+2. The main window shows a table of your mods with columns for name, version, status, and update availability.
+3. Click **Help → Settings** to set up Nexus integration and choose your preferences.
 
-## Configuring MO2 for This Modlist
+### Connect to Nexus Mods
 
-### Create a Profile
+1. In Stardrop, go to **Nexus Mods → API Connection → Stardrop**.
+2. A browser window opens asking you to authorize Stardrop. Log in with your Nexus Mods account and grant access.
+3. Copy the API key from the browser back into Stardrop and click **Apply**.
+4. Once connected, the **Download with Mod Manager** button on Nexus mod pages will trigger Stardrop to download and install mods automatically.
 
-1. In the top toolbar, click **Profile** (dropdown) → **<Manage...>**.
-2. Create a new profile called `SDV Modlist Guide`. Check "Use profile-specific Game INI Files" — this keeps our tweaks separate from vanilla.
-3. Set this profile as default.
+### Set Up a Profile
 
-### Add SMAPI as an Executable
+Stardrop supports mod profiles — separate mod lists for different playthroughs. Create one for this guide:
 
-1. In MO2, click the **Executables** dropdown (top-right, shows "Stardew Valley" by default) → **<Edit...>**.
-2. Click the **+** → **Add from file...** → navigate to your Stardew Valley folder and select `StardewModdingAPI.exe`.
-3. Name it **SMAPI** and click **OK**.
-4. Select **SMAPI** from the executables dropdown — this is what you will always launch through from now on.
-
-### Set Up Separators
-
-Separators are visual dividers in MO2's left panel that keep your load order organised. This guide uses 15 category separators matching the mod catalog chapters. Create them now (or after installing mods):
-
-1. In the left panel, right-click the empty space → **Create separator**.
-2. Name it after the mod category (e.g., `=== 01 — Bugfixes ===`).
-3. Repeat for all 15 categories listed in [05-mo2-separators.md](05-mo2-separators.md).
-
-Separators don't affect load order — they just keep your list readable.
+1. Click **Profiles → Manage Profiles**.
+2. Click **New**, name it `SDV Modlist Guide`, and click **OK**.
+3. Check **Automatically save profile changes** so your mod list stays in sync.
+4. Select this profile from the dropdown before installing mods.
 
 ## Installing Mods
 
-The mod catalog in [03-mod-catalog/](03-mod-catalog/) lists every mod in installation order. Each category should be installed as a group before moving to the next.
+The mod catalog in [03-mod-catalog/](03-mod-catalog/) lists every mod in installation order. Install each category as a group before moving to the next.
 
 ### Downloading from Nexus Mods
 
-- Browse to the mod's Nexus page and click **Download with Manager**. MO2 will pick it up automatically.
-- If the download doesn't start, check that MO2's Nexus integration is logged in (Tools → Settings → Nexus).
+- Browse to the mod's Nexus page and click **Download with Mod Manager** (the "Vortex" button). Stardrop's NXM handler picks it up automatically.
+- If the download doesn't start, check that your API key is valid in **Nexus Mods → API Connection**.
+- Stardrop will ask whether to install the mod immediately. Choose **Yes** and it places the mod in your active profile's mod folder.
 
-### Installing in MO2
+### Installing Manually
 
-1. In MO2's right panel, double-click the downloaded archive (or select it and click the install icon).
-2. MO2 shows a preview of the mod's file structure. Click **OK**.
-3. A dialog may warn about overwriting files — click **Replace** only if you are sure the new mod should override. When in doubt, check the mod catalog notes.
+- Click **Add Mods** (or drag and drop a `.zip` file onto the Stardrop window).
+- Stardrop extracts the archive and adds it to your mod list. If the archive contains multiple mods (common for framework requirements), Stardrop installs them all at once.
 
-### Load Order (Left Panel) vs Plugin Order (Right Panel)
+### Enabling and Disabling Mods
 
-- **Left panel** (mod list): Determines which mod's files win when two mods modify the same game file. Higher = wins.
-- **Right panel** (plugins/Content Patcher): Controls SMAPI load order. Higher = loads later, overrides earlier plugins.
+- Each mod has a checkbox in the **Enabled** column. Unchecked mods are passed to SMAPI as disabled.
+- Use **Shift+click** or **Ctrl+click** to bulk-enable or bulk-disable multiple mods at once.
 
-For this modlist, the left panel order is what matters most. The mod catalog tells you exactly where each mod should sit.
+### Organizing with Mod Groups
+
+Stardrop groups mods by their folder, content pack type, or category. To change the grouping:
+
+1. Click the **Group By** dropdown in the toolbar.
+2. Options include:
+   - **Folder** — groups mods by their parent directory
+   - **Content Pack** — groups mods by the framework they target (CP, JA, etc.)
+   - **None** — flat list
+
+For this guide, **Folder** grouping works best since each mod category maps to a clear folder structure.
 
 ## Verifying Your Installation
 
 Before diving in, run a quick sanity check:
 
-1. In MO2, select the **SMAPI** executable and click **Run**.
+1. In Stardrop, click the **SMAPI** button (or go to **Mods → Launch SMAPI**).
 2. The SMAPI console opens and shows each mod being loaded. Watch for red `ERROR` or yellow `WARN` lines — they indicate broken dependencies or version mismatches.
 3. Once the game reaches the title screen, quit. If SMAPI showed no errors, your setup is good.
 
 ### Common Issues
 
-| Problem                                            | Fix                                                                               |
-|----------------------------------------------------|-----------------------------------------------------------------------------------|
-| "SMAPI not found" or game launches without console | Re-run the SMAPI installer                                                        |
-| MO2 says game executable not found                 | Check MO2's executable settings point to `Stardew Valley.exe` in your game folder |
-| Mod has a red X (missing DLL)                      | You missed a required dependency — check the mod catalog entry                    |
-| Mod downloads won't start in MO2                   | Re-authenticate Nexus integration in MO2 settings                                 |
-| Game crashes on launch                             | Disable all mods and enable them one category at a time                           |
+| Problem | Fix |
+|---------|-----|
+| Stardrop says SMAPI is missing | Re-run the SMAPI installer from [smapi.io](https://smapi.io/) |
+| Mod shows a red warning for missing dependencies | You missed a required framework mod — check the catalog entry's requirements |
+| NXM downloads don't start | Re-authorize your Nexus API key in **Nexus Mods → API Connection** |
+| Game crashes on launch | Disable all mods in Stardrop and enable them one category at a time |
+| Stardrop won't launch | Install [.NET 8 Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) (required by Stardrop) |
+| SMAPI console shows "Skipped" mods | These mods are disabled in Stardrop — enable them via the checkbox |
 
 ## Next Steps
 
-With SMAPI and MO2 ready, move to [02-vanilla-primer.md](02-vanilla-primer.md) for a crash course on playing Stardew Valley. If you already know the basics, jump straight into the mod catalog starting with [01-bugfixes.md](03-mod-catalog/01-bugfixes.md).
+With SMAPI and Stardrop ready, move to [02-vanilla-primer.md](02-vanilla-primer.md) for a crash course on playing Stardew Valley. If you already know the basics, jump straight into the mod catalog starting with [01-bugfixes.md](03-mod-catalog/01-bugfixes.md).

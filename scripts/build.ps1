@@ -35,7 +35,7 @@ $files = @(
     (Join-Path $ProjectRoot "docs/guide/02-vanilla-primer.md"),
     (Get-ChildItem (Join-Path $ProjectRoot "docs/guide/03-mod-catalog") -Filter "*.md" | Sort-Object Name).FullName,
     (Join-Path $ProjectRoot "docs/guide/04-modded-gameplay.md"),
-    (Join-Path $ProjectRoot "docs/guide/05-mo2-separators.md")
+    (Join-Path $ProjectRoot "docs/guide/05-mod-manager-setup.md")
 ) | Where-Object { Test-Path $_ }
 
 if ($files.Count -eq 0) {
