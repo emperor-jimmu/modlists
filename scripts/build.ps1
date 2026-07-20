@@ -5,12 +5,10 @@ param(
 
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 $Version = Get-Content -Path "$ProjectRoot\VERSION" -Raw | ForEach-Object { $_.Trim() }
-
-Write-Host "Stellaris Modlist Guide — Build v$Version" -ForegroundColor Cyan
-
-# Set version for mkdocs-exporter and covers to pick up
 $env:GUIDE_VERSION = $Version
 $env:MKDOCS_EXPORTER_PDF = if (-not $SkipPdf) { "true" } else { "false" }
+
+Write-Host "Stellaris Modlist Guide — Build v$Version" -ForegroundColor Cyan
 
 Push-Location $ProjectRoot
 try {

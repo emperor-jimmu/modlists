@@ -23,7 +23,7 @@ plugins:
           aggregator:
             enabled: true
             output: stellaris-modlist-guide.pdf
-            covers: all
+            covers: front
 
 nav:
   - Home: index.md
