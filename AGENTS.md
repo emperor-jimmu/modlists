@@ -13,7 +13,7 @@ stardew-valley-modlist/
 │   ├── guide/               # guide chapters + mod catalog
 │   │   ├── 01-setup.md
 │   │   ├── 02-vanilla-primer.md
-│   │   ├── 03-mod-catalog/  # numbered mod category files
+│   │   ├── 03-mod-catalog/  # numbered mod category files + 99-alternates-and-conflicts.md
 │   │   ├── 04-modded-gameplay.md
 │   │   └── 05-mod-manager-setup.md
 │   ├── performance/         # FPS/load time benchmarks
@@ -42,6 +42,7 @@ Every mod added to the catalog MUST be compatible with 1.6.15 (or at minimum 1.6
    - Performance impact notes (if known)
    - **Every mod MUST include its download URL** — no exceptions
 3. Update `docs/performance/03-mod-impact.md` if the mod has meaningful performance impact
+4. If the mod conflicts with an existing catalog pick or is a strong alternative, add it to `docs/guide/03-mod-catalog/99-alternates-and-conflicts.md` instead
 
 ## Build Commands
 
@@ -85,3 +86,4 @@ If you need to browse web pages that don't work with standard tools, use Playwri
 - **Adult mods** (expanded dialogue, seasonal outfits, dating expansion, suggestive but non-explicit content) are fine. Overtly pornographic/explicit mods are not.
 - No multiplayer mods.
 - **Version rule:** Every mod MUST be compatible with SDV 1.6.15 (or at minimum 1.6). Check the mod's Nexus page and SMAPI compatibility list before adding.
+- **Conflicting mods:** Document mutually exclusive mods in `99-alternates-and-conflicts.md` rather than cluttering primary catalog entries.

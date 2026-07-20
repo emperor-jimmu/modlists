@@ -65,7 +65,7 @@ The guide teaches Stardew Valley in three waves — each adds complexity on top 
 |---------|------|-------------|
 | 1 | `01-setup.md` | Stardrop + SMAPI installation walkthrough + wave structure |
 | 2 | `02-vanilla-primer.md` | How to play Stardew Valley (Wave 1 — first-time friendly) |
-| 3 | `03-mod-catalog/*` | Full mod catalog by category (16 categories across 3 waves) |
+| 3 | `03-mod-catalog/*` | Full mod catalog by category (16 categories across 3 waves) + alternates/conflicts |
 | 4 | `04-modded-gameplay.md` | New mechanics from Waves 2 and 3, progression checklist |
 | 5 | `05-mod-manager-setup.md` | Stardrop mod management: profiles, groups, and filtering |
 
