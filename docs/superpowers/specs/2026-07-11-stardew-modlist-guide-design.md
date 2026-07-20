@@ -1,4 +1,4 @@
-# Stardew Valley Modlist Guide — Design Spec
+# Welcome to the Valley — Design Spec
 
 ## Overview
 
@@ -54,7 +54,7 @@ stardew-valley-modlist/
 
 - **Tool:** Pandoc + wkhtmltopdf
 - **Command:** `scripts/build.ps1`
-- **Process:** Read ordered markdown files → merge with chapter breaks → apply HTML template + CSS → output `stardew-valley-modlist-guide.pdf`
+- **Process:** Read ordered markdown files → merge with chapter breaks → apply HTML template + CSS → output `welcome-to-the-valley-guide.pdf`
 - **Dependencies verified at build time** with clear error messages
 
 ## PDF Styling

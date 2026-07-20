@@ -189,4 +189,4 @@ The year runs Spring → Summer → Fall → Winter. Each season lasts 28 days.
 
 ## Next Steps
 
-Once you have a comfortable feel for the basics, the modlist in [03-mod-catalog/](03-mod-catalog/) adds quality-of-life improvements, new content, and visual upgrades. Each mod is chosen to feel like a natural extension of the game rather than a replacement. Start with [01-bugfixes.md](03-mod-catalog/01-bugfixes.md).
+Once you have a comfortable feel for the basics, you are ready to move from **Wave 1** (enhanced vanilla) to **Wave 2** (content expansion). See [01-setup.md](01-setup.md) for the full wave structure. Start with the Wave 2 graphics catalog sections in [03-mod-catalog/](03-mod-catalog/), then work through world expansion, new items, NPCs, and audio. Once those feel natural, [04-modded-gameplay.md](04-modded-gameplay.md) teaches the new mechanics each Wave 2 mod category introduces — and eventually Wave 3's gameplay overhauls.

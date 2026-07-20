@@ -1,4 +1,4 @@
-# Stardew Valley Modlist Guide — AGENTS.md
+# Welcome to the Valley — AGENTS.md
 
 ## Project Purpose
 
@@ -49,7 +49,7 @@ Every mod added to the catalog MUST be compatible with 1.6.15 (or at minimum 1.6
 # Build the full PDF guide
 ./scripts/build.ps1
 
-# Output: stardew-valley-modlist-guide.pdf in project root
+# Output: welcome-to-the-valley-guide.pdf in project root
 ```
 
 ## PDF Styling
@@ -80,5 +80,7 @@ If you need to browse web pages that don't work with standard tools, use Playwri
 - Markdown files use `##` for chapter headings, `###` for section headings
 - File names are zero-padded numbers for ordering (e.g., `01-bugfixes.md`)
 - Keep performance data factual — note "not tested" rather than guessing
-- No multiplayer mods, no cheat/overpowered mods, no overtly pornographic content
+- **No cheat/overpowered mods:** no mods that give free money, infinite stamina, god-mode tools, instant level-ups, time manipulation, or anything that bypasses core progression mechanics. Likewise no "knowledge mods" that reveal all NPC schedules, fish bite times, or Luck values without earning them in-game. If a mod eliminates the need to learn the game's systems, it doesn't belong here.
+- **Adult mods** (expanded dialogue, seasonal outfits, dating expansion, suggestive but non-explicit content) are fine. Overtly pornographic/explicit mods are not.
+- No multiplayer mods.
 - **Version rule:** Every mod MUST be compatible with SDV 1.6.15 (or at minimum 1.6). Check the mod's Nexus page and SMAPI compatibility list before adding.

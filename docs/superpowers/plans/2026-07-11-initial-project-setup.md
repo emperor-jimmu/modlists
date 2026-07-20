@@ -1,4 +1,4 @@
-# Stardew Valley Modlist Guide — Initial Project Setup
+# Welcome to the Valley — Initial Project Setup
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -18,7 +18,7 @@
 - [ ] **Step 1: Write AGENTS.md**
 
 ```markdown
-# Stardew Valley Modlist Guide — AGENTS.md
+# Welcome to the Valley — AGENTS.md
 
 ## Project Purpose
 
@@ -62,7 +62,7 @@ stardew-valley-modlist/
 # Build the full PDF guide
 ./scripts/build.ps1
 
-# Output: stardew-valley-modlist-guide.pdf in project root
+# Output: welcome-to-the-valley-guide.pdf in project root
 ```
 
 ## PDF Styling
@@ -111,7 +111,7 @@ Expected: `True`
 - [ ] **Step 1: Write README.md**
 
 ```markdown
-# Stardew Valley Modlist Guide
+# Welcome to the Valley
 
 A curated, beginner-friendly modlist for **Stardew Valley** using **Mod Organizer 2**.
 
@@ -156,7 +156,7 @@ This guide is built for **first-time players** who want a richer, more polished 
 ./scripts/build.ps1
 ```
 
-Output: `stardew-valley-modlist-guide.pdf`
+Output: `welcome-to-the-valley-guide.pdf`
 
 ## Guide Structure
 
@@ -455,7 +455,7 @@ Expected: `True`
 ```powershell
 <#
 .SYNOPSIS
-Builds the Stardew Valley Modlist Guide PDF from markdown sources.
+Builds the Welcome to the Valley guide PDF from markdown sources.
 .DESCRIPTION
 Merges all markdown files in order, applies the HTML template, and
 generates a PDF via Pandoc + wkhtmltopdf.
@@ -463,7 +463,7 @@ generates a PDF via Pandoc + wkhtmltopdf.
 
 $ErrorActionPreference = "Stop"
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
-$OutputFile = Join-Path $ProjectRoot "stardew-valley-modlist-guide.pdf"
+$OutputFile = Join-Path $ProjectRoot "welcome-to-the-valley-guide.pdf"
 
 # Check dependencies
 $pandoc = Get-Command pandoc -ErrorAction SilentlyContinue
@@ -499,7 +499,7 @@ Write-Host "Building PDF from $($files.Count) markdown files..." -ForegroundColo
 # Build the PDF
 $template = Join-Path $ProjectRoot "scripts/template.html"
 $metadata = @(
-    "--metadata", "title=Stardew Valley Modlist Guide",
+    "--metadata", "title=Welcome to the Valley",
     "--metadata", "subtitle=A Curated First-Time Player Experience",
     "--metadata", "date=$(Get-Date -Format 'yyyy-MM-dd')"
 )
@@ -510,7 +510,7 @@ $args = @(
     "--toc",
     "--toc-depth=2",
     "--number-sections",
-    "--metadata", "title=Stardew Valley Modlist Guide",
+    "--metadata", "title=Welcome to the Valley",
     "--metadata", "subtitle=A Curated First-Time Player Experience",
     "--metadata", "date=$(Get-Date -Format 'yyyy-MM-dd')",
     "-o", $OutputFile

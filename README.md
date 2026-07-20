@@ -1,4 +1,8 @@
-# Stardew Valley Modlist Guide
+<p align="center">
+  <img src="assets/logo.png" alt="Welcome to the Valley logo" width="200" />
+</p>
+
+# Welcome to the Valley
 
 A curated, beginner-friendly modlist for **Stardew Valley** using **Mod Organizer 2**.
 
@@ -45,16 +49,24 @@ This guide is built for **first-time players** who want a richer, more polished 
 ./scripts/build.ps1
 ```
 
-Output: `stardew-valley-modlist-guide.pdf`
+Output: `welcome-to-the-valley-guide.pdf`
 
 ## Guide Structure
 
+The guide teaches Stardew Valley in three waves — each adds complexity on top of the last:
+
+| Wave | Scope | Mod Categories |
+|------|-------|----------------|
+| **1** | Enhanced vanilla (foundations, bugfixes, UI) | 00–02 |
+| **2** | Content expansion (graphics, world, items, NPCs) | 03–11, 15 |
+| **3** | Gameplay overhaul (skills, farming, balance) | 12–14 |
+
 | Chapter | File | Description |
 |---------|------|-------------|
-| 1 | `01-setup.md` | MO2 + SMAPI installation walkthrough |
-| 2 | `02-vanilla-primer.md` | How to play Stardew Valley (first-time friendly) |
-| 3 | `03-mod-catalog/*` | Full mod catalog by category (15 categories) |
-| 4 | `04-modded-gameplay.md` | How the game changes with the modlist |
+| 1 | `01-setup.md` | MO2 + SMAPI installation walkthrough + wave structure |
+| 2 | `02-vanilla-primer.md` | How to play Stardew Valley (Wave 1 — first-time friendly) |
+| 3 | `03-mod-catalog/*` | Full mod catalog by category (16 categories across 3 waves) |
+| 4 | `04-modded-gameplay.md` | New mechanics from Waves 2 and 3, progression checklist |
 | 5 | `05-mo2-separators.md` | MO2 separator list with colors and gradients |
 
 ## Performance

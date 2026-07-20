@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Builds the Stardew Valley Modlist Guide PDF from markdown sources.
+Builds the Welcome to the Valley guide PDF from markdown sources.
 .DESCRIPTION
 Merges all markdown files in order, applies the HTML template, and
 generates a PDF via Pandoc + wkhtmltopdf.
@@ -8,7 +8,7 @@ generates a PDF via Pandoc + wkhtmltopdf.
 
 $ErrorActionPreference = "Stop"
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
-$OutputFile = Join-Path $ProjectRoot "stardew-valley-modlist-guide.pdf"
+$OutputFile = Join-Path $ProjectRoot "welcome-to-the-valley-guide.pdf"
 
 # Check dependencies
 $pandoc = Get-Command pandoc -ErrorAction SilentlyContinue
@@ -17,11 +17,17 @@ if (-not $pandoc) {
     exit 1
 }
 
-$wkhtml = Get-Command wkhtmltopdf -ErrorAction SilentlyContinue
-if (-not $wkhtml) {
-    Write-Error "wkhtmltopdf not found. Download from https://wkhtmltopdf.org/downloads.html"
+$wkhtmlPaths = @(
+    (Get-Command wkhtmltopdf -ErrorAction SilentlyContinue).Source,
+    "C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe",
+    "C:\Program Files (x86)\wkhtmltopdf\bin\wkhtmltopdf.exe",
+    "$env:LOCALAPPDATA\wkhtmltopdf\bin\wkhtmltopdf.exe"
+) | Where-Object { $_ -and (Test-Path $_) }
+if (-not $wkhtmlPaths) {
+    Write-Error "wkhtmltopdf not found. Install with: winget install wkhtmltopdf"
     exit 1
 }
+$wkhtml = $wkhtmlPaths | Select-Object -First 1
 
 # Collect markdown files in order
 $files = @(
@@ -39,16 +45,27 @@ if ($files.Count -eq 0) {
 
 Write-Host "Building PDF from $($files.Count) markdown files..." -ForegroundColor Green
 
+# Ensure wkhtmltopdf is in PATH
+$wkhtmlDir = Split-Path -Parent $wkhtml
+if ($wkhtmlDir -and ($env:Path -notlike "*$wkhtmlDir*")) {
+    $env:Path = "$wkhtmlDir;$env:Path"
+}
 $template = Join-Path $ProjectRoot "scripts/template.html"
+$fontDir = Join-Path $ProjectRoot "docs/assets/fonts"
+$fontUri = "file:///$($fontDir.Replace('\', '/'))"
+$logoPath = Join-Path $ProjectRoot "assets/logo.png"
+$logoUri = "file:///$($logoPath.Replace('\', '/'))"
 $args = @(
     "--pdf-engine=wkhtmltopdf",
     "--template=$template",
     "--toc",
     "--toc-depth=2",
     "--number-sections",
-    "--metadata", "title=Stardew Valley Modlist Guide",
+    "--metadata", "title=Welcome to the Valley",
     "--metadata", "subtitle=A Curated First-Time Player Experience",
     "--metadata", "date=$(Get-Date -Format 'yyyy-MM-dd')",
+    "--metadata", "font-path=$fontUri",
+    "--metadata", "logo-path=$logoUri",
     "-o", $OutputFile
 ) + $files
 

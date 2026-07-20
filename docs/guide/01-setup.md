@@ -8,6 +8,31 @@ This chapter walks through setting up Mod Organizer 2 (MO2) and SMAPI, the two t
 - **~2 GB free disk space** for the modlist.
 - A free [Nexus Mods](https://nexusmods.com) account — almost every mod in this catalog is hosted there.
 
+## How This Guide Is Structured: The Three-Wave Approach
+
+This guide teaches Stardew Valley in three waves. Each wave adds complexity — install each wave's mods as a group, play with them until you're comfortable, then move on. Installing everything at once will overwhelm you with mechanics you have no context for.
+
+### Wave 1 — Vanilla (Enhanced Quality of Life)
+
+Play your first year (or more) with only **foundations, bugfixes, and UI/HUD mods** installed. The game looks cleaner, runs smoother, and surfaces information better — but every mechanic is pure Stardew Valley. Chapter [02-vanilla-primer.md](02-vanilla-primer.md) teaches all the core systems: farming, mining, fishing, combat, relationships, and the Community Center.
+
+**Wave 1 mod catalog sections:**
+[00 — Foundations](03-mod-catalog/00-foundations.md) · [01 — Bugfixes](03-mod-catalog/01-bugfixes.md) · [02 — UI and HUD](03-mod-catalog/02-ui-and-hud.md)
+
+### Wave 2 — Content Expansion
+
+Once vanilla mechanics are second nature, add content mods. These introduce new areas, items, enemies, NPCs, and storylines — but the core game loop (farm → mine → craft → build relationships → repeat) stays intact. Chapter [04-modded-gameplay.md](04-modded-gameplay.md) section "Wave 2" teaches the new systems these mods bring.
+
+**Wave 2 mod catalog sections:**
+[03–06 — Graphics](03-mod-catalog/03-graphics-base.md) · [07 — World Expansion](03-mod-catalog/07-world-expansion.md) · [08 — Monsters and Combat](03-mod-catalog/08-monsters-and-combat.md) · [09 — Items and Weapons](03-mod-catalog/09-items-and-weapons.md) · [10 — NPC Interactions](03-mod-catalog/10-npc-interactions.md) · [11 — Grown-Up Town](03-mod-catalog/11-grownup-town.md) · [15 — Music and Audio](03-mod-catalog/15-music-and-audio.md)
+
+### Wave 3 — Gameplay Overhaul
+
+For players who have thoroughly explored Waves 1 and 2 and want deeper mechanical changes. These mods rework skill trees, profession paths, farming systems, and core gameplay balance. They assume you know the game intimately — rebalancing mods won't make sense if you don't know what they changed.
+
+**Wave 3 mod catalog sections:**
+[12 — Gameplay Tweaks](03-mod-catalog/12-gameplay-tweaks.md) · [13 — Skills and Professions](03-mod-catalog/13-skills-and-professions.md) · [14 — Farming and Making](03-mod-catalog/14-farming-and-making.md)
+
 ## Installing SMAPI
 
 SMAPI (Stardew Modding API) is the loader that lets mods hook into the game. Without it, no mod works.
