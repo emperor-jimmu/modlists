@@ -1,5 +1,7 @@
 # Starting a Modded Game
 
+> **This page is a general reference** for empire creation and galaxy settings. For the full guided experience, follow [The Waves](waves/wave-1-beginners.md) in order — each wave prescribes a specific empire, mod set, and difficulty.
+
 This page is your **pre-flight checklist**. Read it alongside the game as you create your first modded empire.
 
 ## Step 1: Launch Through MO2

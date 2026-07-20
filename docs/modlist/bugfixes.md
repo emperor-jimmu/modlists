@@ -8,8 +8,8 @@ No bugfix mods are confirmed compatible with **Stellaris 4.4.6 "Nomads"** at thi
 
 **To add bugfix mods:** Search the [Steam Workshop](https://steamcommunity.com/app/281990/workshop/) for the `Fixes` tag, sorted by most popular. Verify compatibility with 4.4.x before adding. Follow the rules in [Modlist Setup](../modlist-setup.md#handling-stellaris-version-updates) for version-locking.
 
-| Mod | Source | Version-Locked | Performance Impact | Notes |
-|-----|--------|----------------|--------------------|-------|
+| Mod | Source | Version-Locked | Wave | Notes |
+|-----|--------|----------------|------|-------|
 | <!-- Add mods here when confirmed for 4.4.x --> | | | | |
 
 ## Installation Notes

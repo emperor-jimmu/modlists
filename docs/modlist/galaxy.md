@@ -2,9 +2,9 @@
 
 > Mods that expand galaxy generation, starting options, planetary diversity, hyperlane density, and game rules.
 
-| Mod | Source | Version-Locked | Performance Impact | Notes |
-|-----|--------|----------------|--------------------|-------|
-| <!-- Name --> | <!-- Link --> | <!-- Yes/No --> | <!-- Minor/Moderate --> | <!-- Description --> |
+| Mod | Source | Version-Locked | Wave | Notes |
+|-----|--------|----------------|------|-------|
+| <!-- Name --> | <!-- Link --> | <!-- Yes/No --> | <!-- 3 --> | <!-- Description --> |
 
 ## What to Look For
 

@@ -105,4 +105,4 @@ When you're ready to move to a new Stellaris version:
 
 ## Next Steps
 
-With MO2 set up, head to [The Modlist](modlist/) to start choosing your mods.
+With MO2 set up, head to [The Modlist](modlist/bugfixes.md) to start choosing your mods.

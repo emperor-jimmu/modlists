@@ -2,9 +2,9 @@
 
 > Mods related to species traits, genetic engineering, hybridization, portrait packs, namelists, and cross-species mechanics.
 
-| Mod | Source | Version-Locked | Performance Impact | Notes |
-|-----|--------|----------------|--------------------|-------|
-| <!-- Name --> | <!-- Link --> | <!-- Yes/No --> | <!-- Minor --> | <!-- Description --> |
+| Mod | Source | Version-Locked | Wave | Notes |
+|-----|--------|----------------|------|-------|
+| <!-- Name --> | <!-- Link --> | <!-- Yes/No --> | <!-- 3 --> | <!-- Description --> |
 
 ## Performance Warning
 

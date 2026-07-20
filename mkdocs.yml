@@ -30,7 +30,11 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Modlist Setup: modlist-setup.md
-  - The Modlist:
+  - The Waves (Curriculum):
+      - 'Wave 1: The Horizon Seekers': waves/wave-1-beginners.md
+      - 'Wave 2: The Eternal Legion': waves/wave-2-intermediate.md
+      - 'Wave 3: The Unshackled': waves/wave-3-expert.md
+  - The Modlist (Reference):
       - Bugfixes: modlist/bugfixes.md
       - Audio: modlist/audio.md
       - UI & HUD: modlist/ui-hud.md
