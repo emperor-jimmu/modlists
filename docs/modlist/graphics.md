@@ -14,5 +14,6 @@
 | [Real Space - New Frontiers](https://steamcommunity.com/sharedfiles/filedetails/?id=2475617894) | Steam Workshop | No | 3 | New star classes, megastructures, and galaxy features. Requires Real Space 4.0. 4.4 compatible. |
 | [ASB Addon: More Particles](https://steamcommunity.com/sharedfiles/filedetails/?id=1468105710) | Steam Workshop | No | 2 | Increases visible weapon particle count for more spectacular battles. Requires Amazing Space Battles. |
 | [Diverse Rooms (Updated)](https://steamcommunity.com/sharedfiles/filedetails/?id=3397828987) | Steam Workshop | No | 1+ | Adds empire room backgrounds from multiple sources. Cosmetic. 4.4 compatible. |
+| [UI Overhaul Dynamic - More Backgrounds](https://steamcommunity.com/sharedfiles/filedetails/?id=3750644408) | Steam Workshop | No | 1+ | Adds 8 real Hubble Space Telescope galaxy images as main menu backgrounds. Submod for UI Overhaul Dynamic. Cosmetic, compatible with everything. |
 | [KCS Fungoid](https://steamcommunity.com/sharedfiles/filedetails/?id=3089417314) | Steam Workshop | No | 2 | Applies empire flag colors to Fungoid ship hulls. Cosmetic recolor. 4.4 compatible. |
 | [KCS Mammalian](https://steamcommunity.com/sharedfiles/filedetails/?id=3089417503) | Steam Workshop | No | 2 | Applies empire flag colors to Mammalian ship hulls. Cosmetic recolor. 4.4 compatible. |
