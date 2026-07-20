@@ -1,4 +1,4 @@
-# 01 — Setup: Installing SMAPI and Mod Organizer 2
+# Setup: Installing SMAPI and Mod Organizer 2
 
 This chapter walks through setting up Mod Organizer 2 (MO2) and SMAPI, the two tools you need to manage and run Stardew Valley mods. Follow every step in order — skipping ahead is where things break.
 

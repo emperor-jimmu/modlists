@@ -29,6 +29,13 @@ Base graphical overhauls that change buildings, paths, fences, and interior/exte
 | (CP)(AT) Nostalgic Old Furniture Collection | Vintage/antique furniture with two modes: replace vanilla furniture or add as new items. Supports both CP and AT. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/22767) — CP/AT-based, Apr 2024, 2.2k+ endorsements. Requires CP; AT optional. Configurable via GMCM. Double bed can't be shared with spouse in Add mode. | Below other furniture mods |
 | Myc's Seasonal Fireplace | Seasonal stone fireplace with kettle and cauldron. Replaces the stone fireplace with seasonal decor. Also available as AT pack. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/9754) — CP/AT-based, Mar 2024, 1k+ endorsements. Requires CP; AT optional. Replaces fireplace2 by default, configurable to replace any fireplace. | Same as other furniture mods |
 
+### Player Equipment & Items
+
+| Mod | Purpose | Notes | Load Order |
+|-----|---------|-------|------------|
+| Grandpa's Tools | Retextures all vanilla tools in a weathered, handcrafted style — axe, pickaxe, hoe, watering can, scythe, fishing rod, pan, and weapons. Matches the Medieval Craftables aesthetic. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/8835) — CP-based by Gweniaczek & Stashek, 6k+ endorsements. Configurable per-tool toggles. Requires CP. | Below building textures, above item retextures |
+| Gwen's Medieval Craftables | Retextures all craftable equipment and machines — furnaces, kegs, preserve jars, chests, bee houses, scarecrows, sprinklers, and more. Medieval/fantasy aesthetic. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/5513) — CP-based by Gweniaczek, 12k+ endorsements. Each machine type is individually toggleable in config. Pairs with Grandpa's Tools and Medieval Buildings for a cohesive look. | Same as Grandpa's Tools |
+
 ## Notes
 
 - **Medieval Buildings** and **Way Back Pelican Town** are designed as a matching set (farm + town). You can mix them with other terrain recolours.

@@ -1,4 +1,4 @@
-# 02 — Vanilla Primer: How to Play Stardew Valley
+# Vanilla Primer: How to Play Stardew Valley
 
 This chapter covers everything a first-time player needs to know to play Stardew Valley comfortably. The mod catalog later assumes you understand these basics, so read through even if you think you know the game — some 1.6 mechanics may be new to you.
 

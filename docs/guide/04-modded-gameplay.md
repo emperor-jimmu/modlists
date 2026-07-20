@@ -1,4 +1,4 @@
-# 04 — Modded Gameplay: What Changes and How to Play
+# Modded Gameplay: What Changes and How to Play
 
 This chapter covers the new mechanics, systems, and content added by the modlist across Waves 2 and 3. Each section assumes you have already installed the corresponding mod catalog categories and understand the vanilla mechanics from [02-vanilla-primer.md](02-vanilla-primer.md). If something here references a mod you haven't installed yet, jump back to that category in [03-mod-catalog/](03-mod-catalog/) first.
 
