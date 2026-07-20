@@ -1,4 +1,4 @@
-# Chapter 6: Graphics
+# Chapter 6: Graphics 🟢 Wave 1 — Essential
 
 ## Learning Objectives
 - Improve visual clarity at 4K resolution

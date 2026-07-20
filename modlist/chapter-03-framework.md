@@ -1,4 +1,4 @@
-# Chapter 3: Framework Mods
+# Chapter 3: Framework Mods 🟢 Wave 1 — Essential
 
 ## Learning Objectives
 - Install the core libraries that almost every mod depends on

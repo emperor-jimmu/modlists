@@ -1,4 +1,4 @@
-# Chapter 14: Alien Breeding
+# Chapter 14: Alien Breeding 🔵 Wave 2 — Intermediate
 
 ## Learning Objectives
 - Understand RimWorld's genetic engineering systems

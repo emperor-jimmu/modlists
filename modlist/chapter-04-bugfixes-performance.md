@@ -1,4 +1,4 @@
-# Chapter 4: Bugfixes & Performance
+# Chapter 4: Bugfixes & Performance 🟢 Wave 1 — Essential
 
 ## Learning Objectives
 - Fix known vanilla bugs that can ruin a colony

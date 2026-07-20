@@ -1,4 +1,4 @@
-# Chapter 9: Furniture & Production
+# Chapter 9: Furniture & Production 🔵 Wave 2 — Intermediate
 
 ## Learning Objectives
 - Expand your base-building options with vanilla-friendly furniture sets

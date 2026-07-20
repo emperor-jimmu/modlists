@@ -1,4 +1,4 @@
-# Chapter 10: Weapons & Combat
+# Chapter 10: Weapons & Combat 🔵 Wave 2 — Intermediate
 
 ## Learning Objectives
 - Expand the arsenal with balanced new weapons
@@ -52,8 +52,22 @@
 - **Not OP because:** You still need to produce the ammo. Pipes cost resources to build and space to route. A severed pipe line stops feeding until repaired. It automates logistics, not combat — your turrets still fire the same ammo at the same rate.
 - **Install:** OK to install now. Safe to add mid-save.
 
+### [Vanilla Vehicles Expanded](https://steamcommunity.com/workshop/filedetails/?id=3014906877)
+
+- **What it does:** Adds drivable vehicles — cars, trucks, APCs, tanks, and aircraft. Vehicles can be built from blueprints, fuelled with chemfuel, repaired, upgraded, and customised. Use them for fast world-map travel, cargo transport, mobile bases, mounted combat, and vehicle-on-vehicle battles. Each vehicle type has unique weapon mounts, upgrade slots, fuel capacity, and armour.
+- **Why it's here:** Vehicles are a genuine paradigm shift. A single jeep turns a two-day caravan into a half-day trip. An APC lets you raid enemy bases, rescue downed allies, and retreat under armour. Tanks punch through siege lines that infantry can't crack. The vehicle crafting chain (blueprint → frame → components → engine → armour → weapons) creates a satisfying mid-to-late-game production goal. The Vehicle Framework handles all the hard technical work (pathfinding, fuel consumption, damage models), and Vanilla Vehicles Expanded provides the actual vehicles.
+- **Not OP because:** Vehicles cost significant resources (steel, plasteel, components, chemfuel) and require skilled crafters. Damaged vehicles can explode, killing the crew. Vehicle value adds to colony wealth, scaling raid strength. Fuel management is a real constraint — running out of chemfuel mid-expedition strands your squad. Requires dedicated pawns for maintenance and repair.
+- **Install:** **Wave 2 mod.** Wait until you have a mid-game colony with fabrication and chemfuel production running. Requires **Vehicle Framework** ([3014915404](https://steamcommunity.com/workshop/filedetails/?id=3014915404)), Vanilla Expanded Framework, and Harmony. Best on a fresh save for world-gen integration. Safe to add mid-save — new vehicle blueprints appear from traders and quests.
+
+### [Vanilla Vehicles Expanded - Upgrades](https://steamcommunity.com/sharedfiles/filedetails/?id=3302208420)
+
+- **What it does:** Adds upgrade modules for vehicles — armour plating slabs, weapon mounts, engine tunings for speed/fuel-efficiency, cargo expanders, sensor arrays, and specialised equipment. Each vehicle has limited upgrade slots, forcing trade-offs between speed, armour, firepower, and utility.
+- **Why it's here:** Base vehicles are capable but generic. Upgrades let you specialise: a scout jeep gets speed and sensors; a troop transport gets armour and reinforced suspension; a tank gets upgraded weapons and targeting systems. The upgrade system adds a whole tech tree layer for your crafters and researchers to work through.
+- **Not OP because:** Upgrades cost resources and require research (often in parallel to the base vehicle tech). Heavier upgrades reduce speed and fuel efficiency. Slot limits prevent stacking every upgrade on one vehicle. Over-upgrading reduces reliability.
+- **Install:** **Wave 2 mod.** Only after installing Vanilla Vehicles Expanded. Safe to add mid-save.
+
 ## Installation Checkpoint
-<!-- TODO: Evaluate — CE needs special consideration. Recommend waiting until comfortable with vanilla combat first. -->
+✅ **Wave 1 mods** (Defensive Positions, Advanced Shields, Flares, Pulse Weaponry, Spacer Arsenal, Turret Pipeline) are safe to install immediately — they add tools and variety without changing combat fundamentals. **Wave 2 mods** (Vanilla Vehicles Expanded + Upgrades) should wait until you have a mid-game colony with fabrication and chemfuel production. Vehicles are a significant new system — don't rush them.
 
 ## Next Steps
 Proceed to [Chapter 11: World Variety](chapter-11-world-variety.md).

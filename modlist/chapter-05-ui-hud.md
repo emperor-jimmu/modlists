@@ -1,4 +1,4 @@
-# Chapter 5: UI / HUD
+# Chapter 5: UI / HUD 🟢 Wave 1 — Essential
 
 ## Learning Objectives
 - Improve RimWorld's interface for comfortable 4K use

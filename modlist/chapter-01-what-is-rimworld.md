@@ -242,6 +242,24 @@ RimWorld has five expansion packs. Each adds layers of complexity, and you can e
 
 **Recommendation for your first run:** Enable **Biotech** and **Odyssey**. Add **Royalty** if you want psycasts. Save **Ideology** and **Anomaly** for a second or third playthrough when you're ready for more complexity.
 
+## Two Waves of Modding
+
+This guide is organized into two installation waves. You don't need to install everything at once — in fact, you shouldn't.
+
+**Wave 1 — Essential (Chapters 3-7):** Framework, bugfixes, UI, graphics, and audio mods. These don't change how RimWorld plays — they fix bugs, improve performance, make the interface usable at 4K, and polish the visuals and sound. Install all of these before your first modded colony. They make the game run smoother and look better without adding any complexity.
+
+**Wave 2 — Intermediate (Chapters 8-14):** Gameplay enhancements, furniture, combat, world variety, creatures, NPC interactions, and alien breeding. These mods add real content and depth — new systems to learn, new mechanics to master, and new ways to play. Install these *after* you've survived your first year or two with Wave 1 and feel ready for more.
+
+### How to Transition Between Waves
+
+1. Install all Wave 1 mods (Ch 3-7). Run RimPy auto-sort. Start a colony.
+2. Play through the early and mid game. Learn the basics: building a freezer, surviving raids, recruiting prisoners, managing moods.
+3. Once you have a stable colony (6+ colonists, decent defenses, stable food and power), install the Wave 2 mods.
+4. Run RimPy auto-sort again. The new content integrates into your existing save — new factions appear via world events, new crafting recipes unlock, and new creatures spawn on newly-generated maps.
+5. Some Wave 2 content (new biomes, storyteller changes, world-gen factions) works best on a fresh save. The install notes for each mod tell you.
+
+> **Tip:** You don't have to add every Wave 2 mod at once. Pick the chapters that interest you most and install those first. The mods are designed to work together, but they're also independent — adding only the creature mods (Ch 12) without the furniture mods (Ch 9) works fine.
+
 ## What is Modding?
 
 Modding means modifying the game with community-created content. RimWorld has one of the most active modding communities in gaming — tens of thousands of mods add everything from bugfixes to entire new game systems.

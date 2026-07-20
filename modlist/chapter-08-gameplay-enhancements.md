@@ -1,4 +1,4 @@
-# Chapter 8: Gameplay Enhancements
+# Chapter 8: Gameplay Enhancements 🔵 Wave 2 — Intermediate
 
 ## Learning Objectives
 - Reduce tedious micromanagement
@@ -6,7 +6,10 @@
 - Add quality-of-life features that deepen strategy without making the game easier
 
 ## Overview
-<!-- TODO: Explain the difference between "gameplay enhancement" and "cheat." These mods improve pawn behavior AI, give you better tools to manage your colony, and add depth to existing systems. They don't give you free resources, invincible pawns, or auto-winning mechanics. -->
+
+The mods in this chapter add depth to how you manage your colony — smarter pawn AI, new infrastructure systems, and quality-of-life improvements that reduce tedious micromanagement. None of them make the game easier; they make the *act of managing* more interesting. A few mods here (Dubs Bad Hygiene, Prison Labor) add major new systems that fundamentally change how you plan your base. These are Wave 2 mods — wait until you're comfortable with vanilla before adding them.
+
+This chapter is split into two tiers: **Quality-of-Life** mods you can add immediately, and **Deep Systems** that transform colony management.
 
 ## The Mods
 
@@ -66,8 +69,26 @@
 - **Not OP because:** Damaged mechs don't automatically path to chargers — you still need to manually order them to recharge. Repair speed is configurable (1–50 HP/hour) and happens while the mech is charging (meaning it's not available for work or combat). Restoring destroyed parts can be toggled off in settings if it feels too generous. Requires Biotech DLC.
 - **Install:** OK to install now. Safe to add mid-save. Requires Biotech DLC. Works with both regular and large vanilla mech chargers.
 
+## Deep Systems
+
+The following mods add major new infrastructure layers. They are **Wave 2 mods** — install them only after you've built a stable, self-sufficient colony and feel ready for more complexity.
+
+### [Dubs Bad Hygiene](https://steamcommunity.com/sharedfiles/filedetails/?id=836308268)
+
+- **What it does:** Adds a complete water and sewage management system — toilets, showers, sinks, washing machines, central heating, irrigation pipes, water towers, and hygiene as a pawn need. Pawns need clean water to drink, bath to stay happy, and toilets to avoid messes. Includes a Lite mode that simplifies the system. Also integrates with Odyssey DLC (vacuum toilets, ice extraction, grey water recycling).
+- **Why it's here:** Vanilla RimWorld has no plumbing. Pawns eat, sleep, and work but never need to wash or use a bathroom. Dubs Bad Hygiene transforms base planning: every room needs water pipes, sewage needs to drain somewhere, and central heating rethinks your temperature management. It's the single most popular depth mod in the community because it makes colonies feel *real* — bathrooms, plumbing, and hygiene are things you naturally expect settlers to deal with.
+- **Not OP because:** The system has real consequences — broken pipes flood rooms, backed-up sewage gives mood penalties, unwashed pawns get unhappy and sick. All buildings cost resources (steel, components) and take space. The water tower is a vulnerability (one good shot and your water supply is gone). Lite mode reduces complexity without removing the core loop.
+- **Install:** **Wave 2 mod.** Wait until you have a stable colony with research capacity before adding. Best on a fresh save for proper pipe routing, but safe to add mid-save (pipes need to be laid retroactively). Cannot be removed from saves easily. Check the [mod wiki](https://github.com/Dubwise56/Dubs-Bad-Hygiene/wiki) for setup guides.
+
+### [Prison Labor](https://steamcommunity.com/sharedfiles/filedetails/?id=1899474310)
+
+- **What it does:** Lets you put prisoners to work — mining, crafting, cleaning, hauling, farming, and more. Prisoners assigned to work have a "Force to work" toggle in their prisoner tab. Work speed and quality depend on their skills and mood. Includes a work-avoidance system where prisoners may slack off or attempt escape if conditions are bad.
+- **Why it's here:** In vanilla, prisoners sit idle in cells until you recruit or release them — hundreds of hours of wasted labor per prisoner. Prison Labor turns your prison into a productive asset. The work-avoidance mechanic creates interesting trade-offs: harsh conditions produce faster work but more escape attempts and mood breaks. A well-designed prison with good food, recreation, and beds keeps prisoners productive and docile.
+- **Not OP because:** Prisoners work at reduced efficiency compared to colonists. They require supervision (warden time). Low mood leads to work avoidance, prison breaks, or tantrums. Bad prison conditions cause health problems (poor food, no recreation). The mod includes a "Disable mod" toggle in settings for safe removal from saves if needed.
+- **Install:** **Wave 2 mod.** Wait until you've established a regular prisoner recruitment pipeline and have spare resources to build a proper prison complex. Requires a dedicated warden and at least one prisoner to be useful. Safe to add mid-save.
+
 ## Installation Checkpoint
-✅ OK to install all mods in this chapter now.
+✅ **Wave 1 (Quality-of-Life) mods** can be installed immediately. **Wave 2 (Deep Systems) mods** (Dubs Bad Hygiene, Prison Labor) should wait until you have a stable mid-game colony. All Wave 1 mods are safe to add mid-save; Wave 2 mods are best added when you're ready to expand your colony's infrastructure.
 
 ## Next Steps
 Proceed to [Chapter 9: Furniture & Production](chapter-09-furniture-production.md).

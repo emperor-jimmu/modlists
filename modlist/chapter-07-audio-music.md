@@ -1,4 +1,4 @@
-# Chapter 7: Audio & Music
+# Chapter 7: Audio & Music 🟢 Wave 1 — Essential
 
 ## Learning Objectives
 - Expand RimWorld's soundtrack with new music

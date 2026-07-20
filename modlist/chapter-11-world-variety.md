@@ -1,4 +1,4 @@
-# Chapter 11: World Variety
+# Chapter 11: World Variety 🔵 Wave 2 — Intermediate
 
 ## Learning Objectives
 - Add new biomes, factions, and events to make every playthrough unique
@@ -49,8 +49,33 @@
 - **Not OP because:** Events are temporary and balanced through the storyteller's threat cycle. Good events (silver showers, mineral seams) give resources but often attract attention or require work to harvest. Bad events (dancing plague, awakened trees) are disruptive but survivable with proper preparation. Every event has a clear end condition.
 - **Install:** OK to install now. Safe to add mid-save. With 60+ events, consider reviewing the event list in mod settings to disable ones that don't fit your playstyle.
 
+## Deep Systems
+
+The following mods add major new gameplay frameworks — entire new factions to fight, new storytellers with unique rules, and world-gen systems that change how every playthrough feels. These are **Wave 2 mods** — install them after you feel comfortable with vanilla raids, storytellers, and world mechanics.
+
+### [Vanilla Factions Expanded - Mechanoids](https://steamcommunity.com/sharedfiles/filedetails/?id=2329011599)
+
+- **What it does:** Adds a full mechanoid faction with distinct base types, unique raid patterns, and escalating endgame threats. Mechanoid bases generate on the world map — you can scout them, avoid them, or attack them for loot and tech. The faction has its own AI behaviour, different from both human raiders and vanilla mechanoid clusters.
+- **Why it's here:** Vanilla mechanoids are limited to clusters and ship chunks. A dedicated mechanoid faction gives them real faction identity — they build bases, launch their own raids, and escalate in sophistication as your colony grows. Fighting them requires different tactics than humanoid enemies: EMP weapons, shield belts, careful positioning, and armour penetration become essential. This is the definitive mechanoid expansion for RimWorld.
+- **Not OP because:** The faction scales with colony wealth and threat level — early encounters are manageable, late-game bases are genuinely dangerous. You can scout bases before engaging. Mechanoid bases don't expand (they're static), so you control the engagement timing. No forced encounters — you can ignore them until you're ready.
+- **Install:** **Wave 2 mod.** Wait until you've handled vanilla mechanoid clusters and feel ready for a dedicated mechanoid faction that raids and builds bases. Requires Vanilla Expanded Framework. Best on a fresh save for proper world-gen distribution.
+
+### [Vanilla Storytellers Expanded — Perry Persistent](https://steamcommunity.com/sharedfiles/filedetails/?id=2149702069)
+
+- **What it does:** A new storyteller who constantly keeps you on your toes — significantly more events than Cassandra, almost every day brings something new. Allows double the normal population cap. Adds a rare "Man in the Coat" who arrives with a powerful weapon during colony disasters. Quest frequency is also doubled.
+- **Why it's here:** Cassandra's steady ramp can feel predictable once you've played a few colonies. Perry Persistent turns the pace up — you're always reacting to something, always adapting. The double population cap means you can build a genuinely large colony (20+ pawns) without the storyteller throttling recruitment. Great for players who want more action and bigger colonies.
+- **Not OP because:** More events means more threats, not just more rewards — the threat cycle runs constantly. Double population is optional (the game still scales raid strength to colony wealth). Man in the Coat is rare and his weapon is powerful but not game-breaking. Works with any difficulty setting.
+- **Install:** **Wave 2 mod.** Wait until you're comfortable with Cassandra Classic's pacing before switching to Perry. Change storytellers mid-save at any time via options.
+
+### [Vanilla Storytellers Expanded — Winston Waves](https://steamcommunity.com/sharedfiles/filedetails/?id=3215569151)
+
+- **What it does:** A radical departure from traditional storytellers — Winston ignores wealth scaling entirely. Instead, he sends escalating waves of enemies on a fixed timer. Every 5th wave is a "boss wave" with modifiers (enemies explode on death, double health, sniper rifles, reinforcements). Defeating waves earns reward choices across 5 tiers (Poor to Legendary).
+- **Why it's here:** Winston Waves is effectively a new game mode. Wealth management (the core strategic skill in vanilla RimWorld) becomes irrelevant — your defences, tactics, and pawn quality determine survival, not your silver stockpile. The reward system turns every wave into a risk-reward puzzle: survive well enough and you earn powerful gear, new colonists, or animal packs. This is perfect for intermediate players who want to test their combat skills without the wealth-management metagame.
+- **Not OP because:** Wave difficulty escalates regardless of your performance — you can't out-research or out-build the threat curve. Boss wave modifiers stack in unpredictable ways. Rewards are random and you choose from limited options. Compatible with most raid-affecting mods. Does NOT work with gravships (mobile colonies).
+- **Install:** **Wave 2 mod.** Wait until you're comfortable with standard combat tactics (cover, killboxes, prioritisation). Change storytellers mid-save at any time — progress is preserved if you switch back.
+
 ## Installation Checkpoint
-✅ OK to install all mods in this chapter now. Real Ruins generates on new maps; Sometimes Raids Go Wrong and Leo - Events trigger dynamically on existing saves.
+✅ **Wave 1 mods** (More Vanilla Biomes, Real Ruins, Sometimes Raids Go Wrong, Leo - Events) are safe to install immediately — they add variety and emergent storytelling. **Wave 2 mods** (VFE - Mechanoids, Vanilla Storytellers Expanded series) add significant new mechanics — wait until you're comfortable with vanilla storytellers and raids before adding them. New storytellers can be swapped mid-save. VFE - Mechanoids generates bases on world creation, so a fresh save gives the best experience.
 
 ## Next Steps
 Proceed to [Chapter 12: Monsters & Creatures](chapter-12-monsters-creatures.md).

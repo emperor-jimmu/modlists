@@ -1,4 +1,4 @@
-# Chapter 12: Monsters & Creatures
+# Chapter 12: Monsters & Creatures 🔵 Wave 2 — Intermediate
 
 ## Learning Objectives
 - Add new animal species, monsters, and threats to the world
@@ -45,8 +45,19 @@
 - **Not OP because:** Animal bionics require dedicated research (gated behind human prosthetics), crafting at an Animal Prosthetics Table, and significant resources. The category system prevents small animals from receiving end-game bionics — you can't turn a rat into a cyber-warrior. Scar healing requires industrial medicine. Built-in patches cover all Vanilla Animals Expanded creatures.
 - **Install:** OK to install now. Safe to add mid-save. Requires XML Extensions (already in your load order) for the optional category override system. Compatible with all animal mods listed in this chapter. Not compatible with the original A Dog Said... (use this version only).
 
+## Deep Systems
+
+The following mod adds a major new interaction layer with animals — rideable mounts that change how you travel, explore, and fight. This is a **Wave 2 mod** — install it after you've built a stable mid-game colony with animal handling infrastructure.
+
+### [Giddy-Up 2 - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3674332861)
+
+- **What it does:** Lets pawns ride animals as mounts — travel faster on the world map, fight from horseback, and assign specific animals as personal rides. An all-in-one overhaul of the classic Giddy-Up mod series, combining rideable animals, combat mounts, and animal-pulled caravans into a single, highly performant mod. Mountable species are fully configurable in mod settings.
+- **Why it's here:** In vanilla, animals are pack mules and haulers — they never change how your pawns *move*. Giddy-Up turns animals into a mobility system: mounted pawns travel across the map faster (and with less hunger), fight with cavalry bonuses, and lead caravans at higher speeds. It makes animal husbandry a strategic choice rather than a production calculation. Pairs perfectly with Megafauna (ride a woolly mammoth into battle) and Vanilla Animals Expanded.
+- **Not OP because:** Mounted pawns are easier targets (larger hitbox) and animals can be killed under you. Not all animals can be mounted — species and size are configurable but gated by realism. Guests from Hospitality mod won't use mounts. Requires food and handling skill — a starved or untrained mount is useless. Go to RimWorld → Mods → Giddy-Up 2 → Mod Options to configure which species can be ridden.
+- **Install:** **Wave 2 mod.** Wait until you have a stable animal-handling operation (at least one decent handler, some penned animals, and food production to support extra mouths). Compatible with all creature mods in this chapter. Requires Harmony. Newly spawned animals (after install) can be ridden; existing animals may need to be re-tamed or born.
+
 ## Installation Checkpoint
-✅ OK to install all mods in this chapter now. They are additive — new creatures will spawn on newly-generated maps and via events on existing saves. Safe to add mid-save, but for the best distribution of biome-specific animals, start a new world.
+✅ **Wave 1 mods** (Vanilla Animals Expanded, Alpha Animals, Megafauna, Waste Animals, A Dog Said... 2) are safe to install immediately — new creatures add variety without changing core systems. **Wave 2 mod** (Giddy-Up 2) should wait until you have a stable animal-handling operation — mounts add a significant new mobility layer that's most rewarding once you have animals to ride.
 
 ## Next Steps
 Proceed to [Chapter 13: NPC Interactions](chapter-13-npc-interactions.md).
