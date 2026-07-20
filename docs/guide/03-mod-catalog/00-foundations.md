@@ -22,6 +22,7 @@ Prerequisite mods that other mods depend on. These must be installed first and l
 | Furniture Framework | Framework that adds new furniture items to the game via Content Patcher | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/23458) — CP-based. Needed by some furniture packs. | Furniture mods that use FF |
 | Calcifer | Furniture catalogue framework for Content Patcher | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/20628) — CP-based. Needed by some furniture packs. | Furniture mods that use Calcifer |
 | Em's Cows | Alternative Textures content pack adding 40+ cow skin variants | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/34291) — CP + AT-based, 1.6 Compatible. Requires Alternative Textures + CP + SMAPI. Parent mod for Em and Harry's Exotic Cattle. | Animal cosmetic mods that reference Em's cow variants |
+| Central Station | Warp network framework — adds fast-travel between custom locations. Required by several map-expanding mods. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/8000) — CP-based, 1.6 Compatible. 10k+ endorsements. Requires SMAPI + CP. | Map expansion mods that add custom travel locations |
 | Console Commands | In-game console for debugging | Bundled with SMAPI | SMAPI utility |
 | Error Handler | Friendly SMAPI error messages | Bundled with SMAPI | SMAPI utility |
 
