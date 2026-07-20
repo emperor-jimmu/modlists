@@ -17,39 +17,43 @@ java -version
 
 #### Performance Tuning
 
-Recommended JVM arguments (for GDLauncher → right-click instance → Settings → Java & Memory → JVM Arguments):
+Recommended JVM arguments (for XMCL → instance settings → Java → JVM Arguments):
 
 ```
 -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:SoftMaxHeapSize=12G -Xms8G -Xmx8G
 ```
 
-| System RAM | Recommended allocation |
-|------------|------------------------|
-| 16 GB      | `-Xms10G -Xmx10G`      |
-| 32 GB      | `-Xms22G -Xmx22G`      |
-| 64 GB      | `-Xms48G -Xmx48G`      |
+| System RAM | Recommended allocation                                       |
+|------------|--------------------------------------------------------------|
+| 16 GB      | `-Xms6G -Xmx10G -XX:SoftMaxHeapSize=8G`                     |
+| 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G`                   |
+| 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G`                   |
 
 > **Note**: ZGC (Z Garbage Collector) with generational mode is the recommended GC for Java 21 with NeoForge. It provides consistently low latency (sub-millisecond pause times) and handles the large heap sizes common with modded Minecraft better than Shenandoah or G1GC. The Adoptium Temurin JDK 21 includes ZGC — no special Java build needed. `-XX:+AlwaysPreTouch` pre-initializes all memory pages at startup, preventing runtime page-fault stalls. `-XX:+PerfDisableSharedMem` disables synchronous `hsperfdata` file writes, removing a minor source of I/O-induced latency. `-XX:SoftMaxHeapSize=12G` tells ZGC to target ~12G heap usage and GC more aggressively to stay near that level, while allowing bursts above it up to `-Xmx`. For this to take effect, `-Xmx` must be set higher than `-Xms`. The baseline uses equal values for simplicity; on a 64 GB machine you may want e.g. `-Xms12G -Xmx24G` instead to let SoftMaxHeapSize work.
 
-### GDLauncher
+### X Minecraft Launcher (XMCL)
 
-| Tool                                  | Role                                     |
-|---------------------------------------|------------------------------------------|
-| [GDLauncher](https://gdlauncher.com/) | Mod manager and launcher for the modpack |
+| Tool                                                              | Role                                     |
+|-------------------------------------------------------------------|------------------------------------------|
+| [XMCL](https://www.xmcl.app/)                                     | Mod manager and launcher for the modpack |
 
-**GDLauncher** manages mod and modpack installation, updates, and launching for this modpack. It supports both **CurseForge** and **Modrinth** as mod sources in one launcher, handles NeoForge installation automatically, manages Java versions per instance, and lets you install mods with one click. Free, with no premium tier.
+**XMCL** manages mod and modpack installation, updates, and launching for this modpack. It supports both **CurseForge** and **Modrinth** as mod sources in one launcher, handles NeoForge installation automatically, manages Java versions per instance, and uses hard links to avoid duplicate mod storage. Open source, free, with no premium tier.
 
 **Setup**:
 
-1. Download and install [GDLauncher](https://gdlauncher.com/) for your OS.
-2. Create a new instance: click **+** on the Library page → select Minecraft **1.21.1** and modloader **NeoForge** (latest recommended for 1.21.1).
-3. GDLauncher downloads NeoForge and the correct Java version automatically.
+1. Download and install **XMCL** from [xmcl.app](https://www.xmcl.app/) for your OS.
+   - Windows: App Installer, AppX, or Zip (x64)
+   - macOS: DMG (Intel or Apple Silicon)
+   - Linux: Deb, RPM, AppImage, Flathub
+   - Or via winget: `winget install CI010.XMinecraftLauncher`
+2. Create a new instance: click **+** → select Minecraft **1.21.1** and modloader **NeoForge** (latest recommended for 1.21.1).
+3. XMCL downloads NeoForge and the correct Java version automatically.
 4. Launch the instance once to generate the `mods/` directory and configs.
 5. Verify the main menu shows "NeoForge X.X.X" in the bottom-left corner.
 
-From there, add mods through the instance's **Addons** tab from either CurseForge or Modrinth, or by dropping `.jar` files into the instance's `mods/` folder. All mod links in this document link to their CurseForge pages — GDLauncher can install from CurseForge directly via the Addons tab.
+From there, install mods through the instance's **Mods** tab from either CurseForge or Modrinth, or by dropping `.jar` files into the instance's `mods/` folder. XMCL uses hard links — mods are stored once globally and linked per instance, avoiding duplicates. All mod links in this document link to their CurseForge pages — XMCL can install from CurseForge directly via the Mods tab.
 
-For texture packs, drop `.zip` files into the instance's `resourcepacks/` folder. For shaderpacks, drop `.zip` files into the instance's `shaderpacks/` folder. Access the instance folder by right-clicking the instance and selecting **Open Folder**.
+For texture packs, drop `.zip` files into the instance's **Resource Packs** tab or folder. For shaderpacks, drop `.zip` files into the instance's **Shader Packs** tab or folder. Access the instance folder from the instance settings.
 
 ### Minecraft 1.21.1
 
@@ -69,7 +73,7 @@ Install the **Minecraft 1.21.1** vanilla client from the official launcher:
 |------------------------------------|---------------------------------|
 | [NeoForge](https://neoforged.net/) | Mod loader for Minecraft 1.21.1 |
 
-NeoForge is the mod loader powering this modpack. If you're using **GDLauncher**, it installs NeoForge automatically when you create a NeoForge instance (see [GDLauncher](#gdlauncher) above) — skip to step 5 to verify.
+NeoForge is the mod loader powering this modpack. If you're using **XMCL**, it installs NeoForge automatically when you create a NeoForge instance (see [XMCL](#x-minecraft-launcher-xmcl) above) — skip to step 5 to verify.
 
 If installing manually:
 
@@ -105,7 +109,7 @@ The essentials that make the game run well. Dependencies, performance, rendering
 | [Balm](https://www.curseforge.com/minecraft/mc-mods/balm)                                   | Multi-loader library (Inventory Essentials)                                |
 | [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge)           | Kotlin stdlib — required by Kotlin-based mods (e.g. TFMG Energy Converter) |
 
-> **Note**: GDLauncher installs dependencies **automatically** when you install a mod through its Addons tab. You do not need to manually download or install any dependency entries in this document — just install the mods themselves and GDLauncher pulls in what's needed.
+> **Note**: XMCL installs dependencies **automatically** when you install a mod through its Mods tab. You do not need to manually download or install any dependency entries in this document — just install the mods themselves and XMCL pulls in what's needed.
 
 ### Performance & Rendering
 
@@ -188,7 +192,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 **Better Lanterns** gives lanterns and chains an enhanced 3D look with connected chain models. Compatible with Arcane Lanterns and Thin Air mods.
 
-**Installation**: Install via GDLauncher — drop `.zip` files into the instance's `resourcepacks/` folder (right-click instance → Open Folder). Load order (top = highest priority):
+**Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
 1. Fresh Animations
 2. Alacrity

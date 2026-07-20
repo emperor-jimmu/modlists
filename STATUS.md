@@ -76,7 +76,7 @@
 
 ### Design choices
 - [x] Switched all mod links from Modrinth to CurseForge (July 2026)
-- [x] Updated installation instructions to use GDLauncher instead of CurseForge App (July 2026)
+- [x] Updated installation instructions to use XMCL instead of GDLauncher (July 2026)
 - [x] Removed TFMG-Stellaris Compatibility (not on CurseForge, Stellaris has native fuel system)
 - [x] Added Advanced Finders + Advanced Chimneys to Wave 1 (Mekanism addons for ore detection and factory smoke)
 - [x] Added ForgeEndertech as dependency for Advanced Finders and Advanced Chimneys
@@ -116,6 +116,10 @@
 - [x] Serene Seasons added to Wave 2 (seasonal colors, crop impact ON, temperature damage OFF)
 - [x] Better Days config: 2x day length, time effects disabled (compat with Serene Seasons crop system)
 - [x] MineColonies + 4 deps (Structurize, MultiPiston, BlockUI, Domum Ornamentum) confirmed CurseForge-only — not on Modrinth for NeoForge 1.21.1
+
+## Completed — Recent Changes
+
+- [x] Replaced GDLauncher with XMCL across all docs (MODLIST.md, GETTING-STARTED.md, STATUS.md) — July 2026
 
 ## Pending
 

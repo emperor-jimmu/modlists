@@ -58,7 +58,7 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 ### Install
 
-Use **GDLauncher** — create a 1.21.1 NeoForge instance, install all Wave 0 mods via the Addons tab. See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full list.
+Use **XMCL** — create a 1.21.1 NeoForge instance, install all Wave 0 mods via the Mods tab. See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full list.
 
 Wave 0.5 (Player Experience) can be installed at the same time — they're independent mods that don't conflict.
 
@@ -120,17 +120,17 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 
 **Alacrity support packs go BELOW the base Alacrity pack** — putting them above corrupts JEI graphics.
 
-#### 5. JVM Arguments (GDLauncher → Instance Settings → Java & Memory)
+#### 5. JVM Arguments (XMCL → instance settings → Java → JVM Arguments)
 
 ```
 -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:SoftMaxHeapSize=12G -Xms8G -Xmx8G
 ```
 
-| System RAM | Allocation        |
-|------------|-------------------|
-| 16 GB      | `-Xms10G -Xmx10G` |
-| 32 GB      | `-Xms22G -Xmx22G` |
-| 64 GB      | `-Xms48G -Xmx48G` |
+| System RAM | Allocation                                                    |
+|------------|---------------------------------------------------------------|
+| 16 GB      | `-Xms6G -Xmx10G -XX:SoftMaxHeapSize=8G`                      |
+| 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G`                    |
+| 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G`                    |
 
 ---
 
