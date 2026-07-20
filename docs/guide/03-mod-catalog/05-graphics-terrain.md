@@ -14,6 +14,8 @@ Recolours and overhauls for outdoor tilesheets, foliage, grass, and overall worl
 | Immersive Lighting | Smoother day-night transitions with realistic sunrise and sunset, improved interior/exterior lighting, deeper shadows, and time-of-day window sprites. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/43126) — CP + SMAPI-based, v1.2.2, 415+ endorsements. Requires SMAPI and Content Patcher. Vanilla-friendly. Modfest 2026 entry. | After terrain recolours, above screen-space effects |
 | Global God Rays | Renders sun beams (god rays) in outdoor locations during the day. Rays move with the sun angle, change colour at sunset, and fade at night. Weather-specific configuration. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/40483) — SMAPI-based, v1.1.1, 1.2k+ endorsements. Requires SMAPI only. Configurable per-weather via GMCM. Low performance impact. Works with Cloudy Skies modded weathers. | After all lighting/visual mods |
 
+| (CP) Earthy Ridgeside Village | Recolours Ridgeside Village buildings, interiors, and maps to match DaisyNiko's Earthy Recolour palette. Includes trees, Spirit Realm, and spouse rooms. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/17980) — CP-based, v1.1.3 (Oct 2025), 1.5k+ endorsements. Requires CP + Ridgeside Village (RSV). Optional companion to DaisyNiko's Earthy Recolour and Earthy Interiors. Continuation of DeonDF's original recolor. | After Earthy Recolour, before building retextures. Requires RSV installed first |
+
 ## Notes
 
 - **Terrain recolours** (like Earthy Recolour) change the colour palette of the world. Only use one outdoor recolor at a time.
@@ -21,3 +23,4 @@ Recolours and overhauls for outdoor tilesheets, foliage, grass, and overall worl
 - **Clear Glasses** achieves a similar visual result to ReShade presets but as a SMAPI mod — no external tools needed. It also provides load time improvements. If you use both, disable colour filters in one of them to avoid double-processing.
 - **Way Back Pelican Town** had its terrain/building entry moved to 03-graphics-base.md but is referenced here as it pairs well with terrain recolours.
 - **Elle's Cuter Grass** requires Grass Variety (found in foundations) and adds many flower/grass sprite options. Use the DaisyNiko's Earthy Recolour version to match that terrain palette, or the Vibrant Pastoral Redrawn version for a brighter look.
+- **(CP) Earthy Ridgeside Village** only has effect if **Ridgeside Village** (not in this catalog) is installed. It recolours RSV's maps, buildings, and interiors to match the Earthy palette. Safe to add or remove at any time.

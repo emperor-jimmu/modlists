@@ -23,6 +23,7 @@ Prerequisite mods that other mods depend on. These must be installed first and l
 | Calcifer | Furniture catalogue framework for Content Patcher | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/20628) — CP-based. Needed by some furniture packs. | Furniture mods that use Calcifer |
 | Em's Cows | Alternative Textures content pack adding 40+ cow skin variants | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/34291) — CP + AT-based, 1.6 Compatible. Requires Alternative Textures + CP + SMAPI. Parent mod for Em and Harry's Exotic Cattle. | Animal cosmetic mods that reference Em's cow variants |
 | Central Station | Warp network framework — adds fast-travel between custom locations. Required by several map-expanding mods. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/8000) — CP-based, 1.6 Compatible. 10k+ endorsements. Requires SMAPI + CP. | Map expansion mods that add custom travel locations |
+| Custom Fixed Dialogue | Framework that lets Content Patcher mods create NPC-specific versions of hardcoded dialogue strings — dumpster diving comments, birthday reactions, bubble speech, and other generic lines that normally use the same text for everyone. | [NexusMods](https://www.nexusmods.com/stardewvalley/mods/6358) — SMAPI-based by aedenthorn, v2.4.5 (Apr 2026), 17k+ endorsements. Requires SMAPI only. Used by 17+ mods as a dependency. Allows any CP content pack to add per-NPC dialogue keys for strings from Characters.json, ExtraDialogue.json, and StringsFromCSFiles.json. | After SMAPI, before content packs that use it |
 | Console Commands | In-game console for debugging | Bundled with SMAPI | SMAPI utility |
 | Error Handler | Friendly SMAPI error messages | Bundled with SMAPI | SMAPI utility |
 
@@ -35,3 +36,4 @@ These mods should always be enabled and loaded before any other mod. In Stardrop
 - Always install the latest SMAPI version compatible with SDV 1.6.15.
 - When in doubt about a dependency, check the mod's Nexus description — most list their requirements clearly.
 - Keep foundations up to date first before updating dependent mods.
+- **Custom Fixed Dialogue** is a framework-only mod — it doesn't add dialogue on its own but enables other content packs to target specific NPCs for generic dialogue strings. Install it proactively if you use dialogue expansion mods that list it as a dependency. No in-game configuration needed.
