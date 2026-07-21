@@ -8,44 +8,44 @@ Rewrite `guide/template.typ` to produce a colorful, readable, light-mode PDF. Al
 
 WCAG AA contrast ratios verified on `#FFFFFF` background. Body text and metadata pass 4.5:1 minimum. Large text (headings) pass 3:1 minimum.
 
-| Role | Hex | White-on contrast | Notes |
-|---|---|---|---|
-| Page background | `#FFFFFF` | — | |
-| Body text | `#1E1E1E` | 17.1:1 AAA | Slightly warmer than pure black |
-| Headings | `#2D2D2D` | 12.6:1 AAA | Subtle distinction from body |
-| Accent green (tips, rules) | `#5C7A2A` | 4.6:1 AA | Sampled from PZ in-game UI green |
-| Accent amber (warnings, links, H3) | `#B34700` | 4.8:1 AA | Darkened from original `#CC5500` for contrast |
-| Accent red (danger, critical) | `#8B0000` | 9.3:1 AAA | |
-| Accent blue (info) | `#4A6A8A` | 5.4:1 AA | Darkened from original `#5B7B9A` |
-| Metadata / notes gray | `#666666` | 5.7:1 AA | Darkened from original `#888888` |
-| Light gray (callout bg, mod bg) | `#F4F4F4` | — | Slightly warmer than `#F5F5F5` |
-| Table zebra stripe | `#FAFAFA` | — | Very subtle alternation |
-| Table borders | `#DDDDDD` | — | Visible but not heavy |
-| Footer rule line | `#DDDDDD` | — | Matches table borders |
-| Links | `#B34700` | — | Same amber as warnings |
+| Role                               | Hex       | White-on contrast | Notes                                         |
+|------------------------------------|-----------|-------------------|-----------------------------------------------|
+| Page background                    | `#FFFFFF` | —                 |                                               |
+| Body text                          | `#1E1E1E` | 17.1:1 AAA        | Slightly warmer than pure black               |
+| Headings                           | `#2D2D2D` | 12.6:1 AAA        | Subtle distinction from body                  |
+| Accent green (tips, rules)         | `#5C7A2A` | 4.6:1 AA          | Sampled from PZ in-game UI green              |
+| Accent amber (warnings, links, H3) | `#B34700` | 4.8:1 AA          | Darkened from original `#CC5500` for contrast |
+| Accent red (danger, critical)      | `#8B0000` | 9.3:1 AAA         |                                               |
+| Accent blue (info)                 | `#4A6A8A` | 5.4:1 AA          | Darkened from original `#5B7B9A`              |
+| Metadata / notes gray              | `#666666` | 5.7:1 AA          | Darkened from original `#888888`              |
+| Light gray (callout bg, mod bg)    | `#F4F4F4` | —                 | Slightly warmer than `#F5F5F5`                |
+| Table zebra stripe                 | `#FAFAFA` | —                 | Very subtle alternation                       |
+| Table borders                      | `#DDDDDD` | —                 | Visible but not heavy                         |
+| Footer rule line                   | `#DDDDDD` | —                 | Matches table borders                         |
+| Links                              | `#B34700` | —                 | Same amber as warnings                        |
 
 ## Typography
 
 All sizes, leading (line height), and spacing specified. Leading uses Typst defaults unless overridden.
 
-| Role | Font | Size | Weight | Color | Leading | Above | Below |
-|---|---|---|---|---|---|---|---|
-| Body | Atkinson Hyperlegible | 11pt | Regular | `#1E1E1E` | 1.4em | — | — |
-| H1 | Special Elite | 22pt | Regular | `#2D2D2D` | 1.2em | 24pt | 12pt |
-| H2 | Special Elite | 17pt | Regular | `#2D2D2D` | 1.2em | 20pt | 10pt |
-| H3 | Special Elite | 14pt | Regular | `#B34700` | 1.2em | 16pt | 8pt |
-| Code | JetBrains Mono | 10pt | Regular | `#1E1E1E` | 1.3em | — | — |
-| Cover title | Special Elite | 40pt | Regular | `#2D2D2D` | — | — | — |
-| Cover subtitle | Atkinson Hyperlegible | 14pt | Regular | `#666666` | — | — | — |
-| Cover meta | Atkinson Hyperlegible | 10pt | Regular | `#666666` | — | — | — |
-| Page header | Atkinson Hyperlegible | 8pt | Regular | `#666666` | — | — | — |
-| Page footer | Atkinson Hyperlegible | 9pt | Regular | `#666666` | — | — | — |
-| Links | Inherit | Inherit | Regular | `#B34700` | Inherit | — | — |
-| Bold body | Atkinson Hyperlegible | 11pt | Bold | `#1E1E1E` | Inherit | — | — |
-| Italic body | Atkinson Hyperlegible | 11pt | Italic | `#1E1E1E` | Inherit | — | — |
-| Callout label | Atkinson Hyperlegible | 10pt | Bold | Matches border | — | — | — |
-| Mod name | Special Elite | 13pt | Regular | `#B34700` | — | — | — |
-| Mod metadata | Atkinson Hyperlegible | 9pt | Regular | `#666666` | — | — | — |
+| Role           | Font                  | Size    | Weight  | Color          | Leading | Above | Below |
+|----------------|-----------------------|---------|---------|----------------|---------|-------|-------|
+| Body           | Atkinson Hyperlegible | 11pt    | Regular | `#1E1E1E`      | 1.4em   | —     | —     |
+| H1             | Special Elite         | 22pt    | Regular | `#2D2D2D`      | 1.2em   | 24pt  | 12pt  |
+| H2             | Special Elite         | 17pt    | Regular | `#2D2D2D`      | 1.2em   | 20pt  | 10pt  |
+| H3             | Special Elite         | 14pt    | Regular | `#B34700`      | 1.2em   | 16pt  | 8pt   |
+| Code           | JetBrains Mono        | 10pt    | Regular | `#1E1E1E`      | 1.3em   | —     | —     |
+| Cover title    | Special Elite         | 40pt    | Regular | `#2D2D2D`      | —       | —     | —     |
+| Cover subtitle | Atkinson Hyperlegible | 14pt    | Regular | `#666666`      | —       | —     | —     |
+| Cover meta     | Atkinson Hyperlegible | 10pt    | Regular | `#666666`      | —       | —     | —     |
+| Page header    | Atkinson Hyperlegible | 8pt     | Regular | `#666666`      | —       | —     | —     |
+| Page footer    | Atkinson Hyperlegible | 9pt     | Regular | `#666666`      | —       | —     | —     |
+| Links          | Inherit               | Inherit | Regular | `#B34700`      | Inherit | —     | —     |
+| Bold body      | Atkinson Hyperlegible | 11pt    | Bold    | `#1E1E1E`      | Inherit | —     | —     |
+| Italic body    | Atkinson Hyperlegible | 11pt    | Italic  | `#1E1E1E`      | Inherit | —     | —     |
+| Callout label  | Atkinson Hyperlegible | 10pt    | Bold    | Matches border | —       | —     | —     |
+| Mod name       | Special Elite         | 13pt    | Regular | `#B34700`      | —       | —     | —     |
+| Mod metadata   | Atkinson Hyperlegible | 9pt     | Regular | `#666666`      | —       | —     | —     |
 
 ## Page Layout — Typst Implementation
 
@@ -218,13 +218,13 @@ Each callout type is a function producing a styled `#block()`.
 
 Color variables for callout backgrounds:
 
-| Variable | Hex |
-|---|---|
+| Variable      | Hex       |
+|---------------|-----------|
 | `green-light` | `#EDF2E4` |
 | `amber-light` | `#FEF0E4` |
-| `red-light` | `#FDE8E8` |
-| `blue-light` | `#EBF0F6` |
-| `gray-light` | `#F4F4F4` |
+| `red-light`   | `#FDE8E8` |
+| `blue-light`  | `#EBF0F6` |
+| `gray-light`  | `#F4F4F4` |
 
 - Left border only (3px → 1.5pt in Typst stroke units).
 - 12pt internal padding (inset).
@@ -426,12 +426,12 @@ Fonts are loaded via `--font-path assets/fonts` at compile time. Family names ar
 
 ## Implementation Scope
 
-| File | Action |
-|---|---|
-| `guide/template.typ` | Full rewrite — all styles, functions, cover page, dividers |
-| `guide/main.typ` | Minimal — remove old `#set document()` call if template now handles it directly; verify includes compile |
-| All wave content files | No changes |
-| `assets/` | No changes |
+| File                   | Action                                                                                                   |
+|------------------------|----------------------------------------------------------------------------------------------------------|
+| `guide/template.typ`   | Full rewrite — all styles, functions, cover page, dividers                                               |
+| `guide/main.typ`       | Minimal — remove old `#set document()` call if template now handles it directly; verify includes compile |
+| All wave content files | No changes                                                                                               |
+| `assets/`              | No changes                                                                                               |
 
 ## Non-Goals
 
