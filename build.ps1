@@ -202,10 +202,19 @@ foreach ($file in $mdFiles) {
     Write-Host "  [OK] $($file.Target)" -ForegroundColor Green
 }
 
+# --- Copy assets to template directory ---
+if (-not (Test-Path "template/assets")) {
+    New-Item -ItemType Directory -Path "template/assets" -Force | Out-Null
+}
+if (Test-Path "assets/logo.png") {
+    Copy-Item "assets/logo.png" "template/assets/logo.png" -Force
+    Write-Host "  [OK] Copied logo.png to template/assets/" -ForegroundColor Green
+}
+
 # --- Compile PDF ---
 Write-Host "`nCompiling PDF..." -ForegroundColor Cyan
 
-& typst compile template/main.typ output/beyond-the-surface.pdf
+& typst compile --font-path "assets/fonts" template/main.typ output/beyond-the-surface.pdf
 
 if ($LASTEXITCODE -eq 0) {
     $fileSize = [math]::Round((Get-Item "output/beyond-the-surface.pdf").Length / 1MB, 2)

@@ -18,7 +18,7 @@ Mods are curated by the project owner and written into per-wave `modlist.md` fil
 
 ## Project Structure
 
-```
+```bash
 terraria-modlist/
 ├── AGENTS.md                     # AI agent instructions for this project
 ├── README.md                     # Project overview, usage, prerequisites
@@ -118,19 +118,19 @@ The guide text in `guide.md` may cross-reference mods by name and explain how th
 - **Mods:** Major content overhauls, new mechanics, new classes. Defined in `modlist.md` by project owner.
 - **Guide:** Expert topics: modded boss progression order (which mod's bosses overlap with which vanilla progression tier, recommended kill order), class synergies with modded gear (cross-mod equipment interactions, hybrid builds), post-Moon Lord content (modded endgame bosses, superbosses, post-game tiers), secret/legendary seed strategies, modded biome navigation.
 - **Player Challenges:** A dedicated section presenting self-imposed restriction rulesets. Each challenge has a name, a rules block, and strategic advice for that restriction. At least 4 challenges:
-  - **Class Purity:** Pick one damage type at character creation. You may never deal damage with any other type. (Includes whip restrictions for summoners, tool damage considerations.)
-  - **No Crafting:** You may only use items found in chests, dropped by enemies, or purchased from NPCs. No crafting stations allowed.
-  - **Hardcore Adjacent:** Mediumcore character (drop items on death). Full strategy for corpse runs, backup gear caches, and teleporter recovery networks.
-  - **One Life:** Hardcore character with strategic advice for extreme caution, including which bosses to overprepare for and which to skip until post-game gear.
+    - **Class Purity:** Pick one damage type at character creation. You may never deal damage with any other type. (Includes whip restrictions for summoners, tool damage considerations.)
+    - **No Crafting:** You may only use items found in chests, dropped by enemies, or purchased from NPCs. No crafting stations allowed.
+    - **Hardcore Adjacent:** Mediumcore character (drop items on death). Full strategy for corpse runs, backup gear caches, and teleporter recovery networks.
+    - **One Life:** Hardcore character with strategic advice for extreme caution, including which bosses to overprepare for and which to skip until post-game gear.
 - **Story:** Second-person narrative. The Guide is absent. An unnamed entity — ancient, detached, faintly curious — narrates. It has observed the player across all three realities. Its voice is cryptic and observational, never warm but never hostile. It imposes the player's chosen challenge not as punishment but as a final lesson. The tone is dark and philosophical; avoid melodrama. The entity doesn't monologue about destiny — it asks questions, posits possibilities, and ultimately steps back to watch what the player does with the knowledge.
 
 ## Story Framework
 
-| Wave | Narrator | POV | Tone |
-|------|----------|-----|------|
-| 0 | The Guide (Andrew) | First-person | Lighthearted, humorous, warm |
-| 1 | Omniscient + Guide interjections | Second-person with first-person dialogue | Bittersweet, creeping unease |
-| 2 | Unnamed entity | Second-person | Dark, philosophical, detached |
+| Wave | Narrator                         | POV                                      | Tone                          |
+|------|----------------------------------|------------------------------------------|-------------------------------|
+| 0    | The Guide (Andrew)               | First-person                             | Lighthearted, humorous, warm  |
+| 1    | Omniscient + Guide interjections | Second-person with first-person dialogue | Bittersweet, creeping unease  |
+| 2    | Unnamed entity                   | Second-person                            | Dark, philosophical, detached |
 
 Each `story.md` is 200-400 words and appears at the start of its wave chapter in the PDF.
 
@@ -140,50 +140,50 @@ Each `story.md` is 200-400 words and appears at the start of its wave chapter in
 
 - **Engine:** Typst 0.15
 - **Markdown bridging:** Typst cannot natively parse `.md` files. The `build.bat` script must preprocess Markdown into Typst-compatible format before compilation. Two equivalent approaches (pick one during implementation):
-  - **Option A (recommended):** Write guide content directly in `.typ` partial files under `template/` instead of `.md`. The `guide/` folder holds source markdown for human editing; `build.bat` converts `.md` to `.typ` via a simple pandoc invocation (`pandoc guide/wave-0/guide.md -o template/wave-0-guide.typ`), then runs `typst compile`.
-  - **Option B:** Write all content natively in `.typ` files under `template/`, eliminating the `guide/` markdown files. Simpler pipeline but less portable for external contributors.
+    - **Option A (recommended):** Write guide content directly in `.typ` partial files under `template/` instead of `.md`. The `guide/` folder holds source markdown for human editing; `build.bat` converts `.md` to `.typ` via a simple pandoc invocation (`pandoc guide/wave-0/guide.md -o template/wave-0-guide.typ`), then runs `typst compile`.
+    - **Option B:** Write all content natively in `.typ` files under `template/`, eliminating the `guide/` markdown files. Simpler pipeline but less portable for external contributors.
 - **Build script (`build.bat`):**
-  - Check that `typst` is on PATH; error with a clear message if not found
-  - Create `output/` directory if missing
-  - Run the markdown-to-typst preprocessing step (if Option A)
-  - Run `typst compile template/main.typ output/beyond-the-surface.pdf`
-  - Print success/failure message with output file path
+    - Check that `typst` is on PATH; error with a clear message if not found
+    - Create `output/` directory if missing
+    - Run the markdown-to-typst preprocessing step (if Option A)
+    - Run `typst compile template/main.typ output/beyond-the-surface.pdf`
+    - Print success/failure message with output file path
 - **Excluded from PDF:** `conflicts.md`, `mod-ideas.md`
 
 ### Visual Design
 
 - **Cover page:** Logo centered at top, title "Beyond the Surface", subtitle with game version and date, decorative frame
 - **Color palette:**
-  - Body text: dark brown or charcoal on cream/off-white background
-  - Wave accent colors: Wave 0 header = copper/orange (#B87333), Wave 1 header = silver/blue (#8A9BBA), Wave 2 header = gold/purple (#B8860B)
-  - Callout boxes, tips, and warnings use these accent colors as borders/backgrounds
-  - Links use wave-appropriate accent color
+    - Body text: dark brown or charcoal on cream/off-white background
+    - Wave accent colors: Wave 0 header = copper/orange (#B87333), Wave 1 header = silver/blue (#8A9BBA), Wave 2 header = gold/purple (#B8860B)
+    - Callout boxes, tips, and warnings use these accent colors as borders/backgrounds
+    - Links use wave-appropriate accent color
 - **Typography:**
-  - Body font: Open Sans or Inter (clean sans-serif, free, readable at length)
-  - Heading font: A pixel/retro font bundled with the project for game feel. Must be freely redistributable. Recommendation: Press Start 2P (OFL-licensed) or similar bundled at `assets/fonts/`
-  - Monospace font for code/commands: bundled or system fallback (Consolas)
+    - Body font: Open Sans or Inter (clean sans-serif, free, readable at length)
+    - Heading font: A pixel/retro font bundled with the project for game feel. Must be freely redistributable. Recommendation: Press Start 2P (OFL-licensed) or similar bundled at `assets/fonts/`
+    - Monospace font for code/commands: bundled or system fallback (Consolas)
 - **Layout:**
-  - Table of contents after cover page
-  - Setup chapter before Wave 0
-  - Each wave is a top-level chapter
-  - Mod entries as subsections with colored mechanic-impact badges
-  - Guide content uses callout blocks (tip/warning/note) with colored borders
+    - Table of contents after cover page
+    - Setup chapter before Wave 0
+    - Each wave is a top-level chapter
+    - Mod entries as subsections with colored mechanic-impact badges
+    - Guide content uses callout blocks (tip/warning/note) with colored borders
 - **Page count:** 100+ pages at A4 or US Letter
 
 ## tModLoader Setup & Configuration
 
 The `guide/setup.md` file must cover these topics in order. This chapter appears in the PDF between the TOC and Wave 0:
 
-| Section | Content Requirements |
-|---------|---------------------|
-| What is tModLoader | One paragraph explaining it's an official mod loader on Steam, free if you own Terraria. Link to store page. |
-| Installation | Installing via Steam, launch as separate app, first-time setup wait. Screenshot of Steam library entry. |
-| Workshop basics | How to browse the Workshop from tModLoader's main menu, subscribing to mods, where subscribed mods appear in the mods list. |
-| Enabling/disabling mods | The mods menu, enable/disable toggle, the reload button, dependency auto-enable behavior. |
-| Load order | How to reorder mods, why order matters, how each wave's `modlist.md` Load Order section maps to this screen. |
-| Mod configuration | Accessing per-mod config menus, common settings players may want to adjust. |
-| Per-wave setup | Clear checklist: unsub/unsub from prior wave's mods, sub to new wave's mods, apply load order from `modlist.md`, generate a new world with the wave's specified settings. |
-| Troubleshooting | Out of memory (64-bit vs 32-bit tModLoader), mod conflict error messages and what they look like, "mod not found" resolution, verifying game file integrity. |
+| Section                 | Content Requirements                                                                                                                                                      |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| What is tModLoader      | One paragraph explaining it's an official mod loader on Steam, free if you own Terraria. Link to store page.                                                              |
+| Installation            | Installing via Steam, launch as separate app, first-time setup wait. Screenshot of Steam library entry.                                                                   |
+| Workshop basics         | How to browse the Workshop from tModLoader's main menu, subscribing to mods, where subscribed mods appear in the mods list.                                               |
+| Enabling/disabling mods | The mods menu, enable/disable toggle, the reload button, dependency auto-enable behavior.                                                                                 |
+| Load order              | How to reorder mods, why order matters, how each wave's `modlist.md` Load Order section maps to this screen.                                                              |
+| Mod configuration       | Accessing per-mod config menus, common settings players may want to adjust.                                                                                               |
+| Per-wave setup          | Clear checklist: unsub/unsub from prior wave's mods, sub to new wave's mods, apply load order from `modlist.md`, generate a new world with the wave's specified settings. |
+| Troubleshooting         | Out of memory (64-bit vs 32-bit tModLoader), mod conflict error messages and what they look like, "mod not found" resolution, verifying game file integrity.              |
 
 ## Files Outside the PDF
 

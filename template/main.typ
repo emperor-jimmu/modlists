@@ -8,7 +8,7 @@
 #page(fill: bg-cream)[
   #align(center)[
     #v(2cm)
-    #image("../assets/logo.png", width: 60%)
+    #image("assets/logo.png", width: 60%)
     #v(2cm)
     #text(size: 32pt, font: "Press Start 2P", fill: copper)[Beyond the Surface]
     #v(1cm)
