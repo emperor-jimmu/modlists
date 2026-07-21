@@ -20,7 +20,7 @@
 // ===== PAGE SETUP =====
 #set page(
   paper: "a4",
-  margin: (right: 20mm, top: 20mm, bottom: 24mm, left: 20mm),
+  margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 24mm),
   fill: color-bg,
   header: context [
     #set text(fill: color-gray, size: 8pt)
@@ -29,7 +29,7 @@
   footer: context [
     #set text(fill: color-orange, size: 10pt)
     #align(center)[
-      No One is Coming — Page #counter(page).display("1")
+      No One is Coming  —  Page #counter(page).display("1")
     ]
   ],
 )
