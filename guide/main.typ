@@ -2,13 +2,10 @@
 
 #import "template.typ": *
 
-#set document(
-  title: "No One is Coming — Project Zomboid B42 Modlist & Survival Guide",
-  author: "No One is Coming Team",
-)
-
 // ===== COVER PAGE =====
 #cover-page()
+
+#set page(numbering: "1")
 
 // ===== TABLE OF CONTENTS =====
 #outline(

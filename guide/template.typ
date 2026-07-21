@@ -29,17 +29,6 @@
 #set page(
   paper: "a4",
   margin: (left: 22mm, right: 22mm, top: 22mm, bottom: 24mm),
-  header: [
-    #set text(size: 8pt, fill: gray, font: body-font)
-    #align(right)[No One Is Coming — PZ B42 Modlist]
-  ],
-  header-ascent: 10pt,
-  footer: context [
-    #line(length: 100%, stroke: 0.5pt + border-color)
-    #set text(size: 9pt, fill: gray, font: body-font)
-    #align(center)[Page #counter(page).display("1")]
-  ],
-  footer-descent: 8pt,
 )
 
 // ===== BASE TEXT & PARAGRAPH =====
