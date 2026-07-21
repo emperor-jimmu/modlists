@@ -1,13 +1,13 @@
 @echo off
-title Fields, Vines & Barrels - PDF Builder
+title "Fields, Vines and Barrels - PDF Builder"
 
 echo ============================================
-echo  Fields, Vines ^& Barrels - PDF Builder
+echo   Fields, Vines and Barrels - PDF Builder
 echo ============================================
 echo.
 
 REM Check prerequisites
-where pandoc >nul 2>&1
+pandoc --version >nul 2>&1
 if errorlevel 1 (
     echo [ERROR] Pandoc not found. Install from https://pandoc.org
     goto :end
@@ -22,63 +22,63 @@ if defined XELATEX_PATH (
     set "ENGINE=--pdf-engine=xelatex --template=pandoc-template.tex"
     set "LABEL=XeLaTeX"
 ) else (
-    set "ENGINE=--pdf-engine=pdfhtml"
+    set "ENGINE=--to=html5 --standalone -o output/fields-vines-and-barrels.html"
     set "LABEL=HTML fallback (XeLaTeX not found)"
 )
 
 echo [OK] Building PDF with %LABEL%...
 echo.
 
-REM Build using a temp file list to avoid batch variable size limits
-(
-    echo guide/mod-manager.md
-    echo guide/reshade.md
-    echo guide/wave-0/story.md
-    echo guide/wave-0/getting-started.md
-    echo guide/wave-0/01-map.md
-    echo guide/wave-0/02-visuals-reshade.md
-    echo guide/wave-0/03-ui-qol.md
-    echo guide/wave-0/04-vehicles.md
-    echo guide/wave-0/05-implements.md
-    echo guide/wave-0/06-placeables.md
-    echo guide/wave-0/07-gameplay.md
-    echo guide/wave-1/story.md
-    echo guide/wave-1/strategy.md
-    echo guide/wave-1/01-map.md
-    echo guide/wave-1/02-ui-qol.md
-    echo guide/wave-1/03-vehicles.md
-    echo guide/wave-1/04-implements.md
-    echo guide/wave-1/05-placeables.md
-    echo guide/wave-1/06-production-economy.md
-    echo guide/wave-1/07-gameplay.md
-    echo guide/wave-2/story.md
-    echo guide/wave-2/strategy.md
-    echo guide/wave-2/01-map.md
-    echo guide/wave-2/02-ui-qol.md
-    echo guide/wave-2/03-vehicles.md
-    echo guide/wave-2/04-implements.md
-    echo guide/wave-2/05-placeables.md
-    echo guide/wave-2/06-production-economy.md
-    echo guide/wave-2/07-gameplay.md
-    echo conflicts.md
-    echo mod-ideas.md
-) > build-files.txt
-
-pandoc @build-files.txt ^
+pandoc ^
+    guide/mod-manager.md ^
+    guide/reshade.md ^
+    guide/wave-0/story.md ^
+    guide/wave-0/getting-started.md ^
+    guide/wave-0/01-map.md ^
+    guide/wave-0/02-visuals-reshade.md ^
+    guide/wave-0/03-ui-qol.md ^
+    guide/wave-0/04-vehicles.md ^
+    guide/wave-0/05-implements.md ^
+    guide/wave-0/06-placeables.md ^
+    guide/wave-0/07-gameplay.md ^
+    guide/wave-1/story.md ^
+    guide/wave-1/strategy.md ^
+    guide/wave-1/01-map.md ^
+    guide/wave-1/02-ui-qol.md ^
+    guide/wave-1/03-vehicles.md ^
+    guide/wave-1/04-implements.md ^
+    guide/wave-1/05-placeables.md ^
+    guide/wave-1/06-production-economy.md ^
+    guide/wave-1/07-gameplay.md ^
+    guide/wave-2/story.md ^
+    guide/wave-2/strategy.md ^
+    guide/wave-2/01-map.md ^
+    guide/wave-2/02-ui-qol.md ^
+    guide/wave-2/03-vehicles.md ^
+    guide/wave-2/04-implements.md ^
+    guide/wave-2/05-placeables.md ^
+    guide/wave-2/06-production-economy.md ^
+    guide/wave-2/07-gameplay.md ^
+    conflicts.md ^
+    mod-ideas.md ^
     --from=markdown+pipe_tables+grid_tables ^
     --toc ^
     --toc-depth=3 ^
-    %ENGINE% ^
-    -o output/fields-vines-and-barrels.pdf
+    -o output/fields-vines-and-barrels.pdf ^
+    %ENGINE%
 
-del build-files.txt 2>nul
+set PANDOC_EXIT=%ERRORLEVEL%
 
-if errorlevel 1 (
+if %PANDOC_EXIT% neq 0 (
     echo.
-    echo [ERROR] PDF build failed
-) else (
+    echo [ERROR] Build failed ^(exit code %PANDOC_EXIT%^)
+) else if defined XELATEX_PATH (
     echo.
     echo [OK] PDF created: output\fields-vines-and-barrels.pdf
+) else (
+    echo.
+    echo [OK] HTML fallback created: output\fields-vines-and-barrels.html
+    echo [NOTE] Install XeLaTeX for full PDF output: https://tug.org/texlive/
 )
 
 :end
