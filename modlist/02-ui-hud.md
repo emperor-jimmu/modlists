@@ -11,6 +11,11 @@ Interface improvements, tooltip enhancements, and quality-of-life changes.
 - **Load Order:** Early (before other UI mods)
 - **Essential:** Yes
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other UI scaling mods
+- **System/Mechanic Impact:** UI — resolution scaling, text sizing, element layout
+- **Installation Notes:** Load before other UI mods to ensure proper scaling base
+- **Configuration:** None
 
 Fixes UI scaling for high-resolution monitors (1440p, 4K). Vanilla scaling makes text tiny at high resolutions. This mod adds proper scaling options.
 
@@ -27,6 +32,11 @@ Fixes UI scaling for high-resolution monitors (1440p, 4K). Vanilla scaling makes
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** UI — notification system, alert management
+- **Installation Notes:** None
+- **Configuration:** None
 
 Adds a button (hotkey: F) to clear all notifications at once. Vanilla requires clearing each individually.
 
@@ -43,26 +53,15 @@ Adds a button (hotkey: F) to clear all notifications at once. Vanilla requires c
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other name formatting mods
+- **System/Mechanic Impact:** UI — character name display formatting
+- **Installation Notes:** None
+- **Configuration:** None
 
 Characters use name formatting appropriate to their rank (King William, Emperor William). Vanilla uses inconsistent formatting.
 
 **Gameplay Impact:** Better immersion — character names reflect their station.
-
----
-
-## Interactive Map Viewer
-
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2891045678
-- **Mod Version:** 1.0.0
-- **CK3 Version:** 1.14.x+
-- **Updated:** 2026-03-01
-- **Load Order:** Mid
-- **Essential:** No
-- **Performance:** Minor
-
-Adds an expanded map tooltip showing terrain, holdings, development, supply, and control at a glance.
-
-**Gameplay Impact:** Faster strategic decisions without clicking into every province.
 
 ---
 
@@ -75,23 +74,12 @@ Adds an expanded map tooltip showing terrain, holdings, development, supply, and
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other outliner mods (Expanded Outliner, etc.)
+- **System/Mechanic Impact:** UI — outliner panel, army management, title management
+- **Installation Notes:** None
+- **Configuration:** None
 
 Combines Expanded Outliner features with manual sorting, elective title control from the outliner, army management tools, and pinned title management. Updated and expanded for CK3 1.19.
 
 **Gameplay Impact:** Full outliner workflow control — sort, filter, manage armies and titles without opening multiple panels.
-
----
-
-## Custom Title Form of Address
-
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2653885896
-- **Mod Version:** 0.4.0
-- **CK3 Version:** 1.18.x (not yet updated to 1.19)
-- **Updated:** 2026-03-01
-- **Load Order:** Mid
-- **Essential:** No
-- **Performance:** None
-
-Allows you to set a custom form of address for your primary title (e.g., "Great King" instead of "King", "Tsar" instead of "Emperor"). Affects all game UI and events where your title appears.
-
-**Gameplay Impact:** Pure roleplay. Customize how your realm addresses you. Note: currently on CK3 1.18 — verify 1.19 update before using.

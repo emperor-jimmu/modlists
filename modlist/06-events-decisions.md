@@ -11,6 +11,11 @@ New event chains, decision trees, and interactive storytelling.
 - **Load Order:** Mid
 - **Essential:** Yes
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Events — 200+ flavor events covering festivals, hunts, tournaments, pilgrimages, illnesses, romances
+- **Installation Notes:** Can be used standalone or alongside the full VIET mod
+- **Configuration:** Game rules allow adjusting event frequency
 
 Standalone event module from VIET. Adds 200+ new events covering festivals, hunts, tournaments, pilgrimages, illnesses, romances, and random encounters.
 
@@ -27,6 +32,11 @@ Standalone event module from VIET. Adds 200+ new events covering festivals, hunt
 - **Load Order:** Mid
 - **Essential:** Yes
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** Other vassal AI overhauls
+- **System/Mechanic Impact:** Vassal management — AI requests, demands, dynamic factions, council voting, marriage proposals, independent scheming
+- **Installation Notes:** May require a new save game for full effect
+- **Configuration:** Game rules allow tuning vassal activity frequency and aggression
 
 A comprehensive overhaul of CK3's vassal mechanics. Vassals send requests, make demands, form factions dynamically, propose marriages, and scheme independently. Council voting becomes meaningful.
 
@@ -43,6 +53,11 @@ A comprehensive overhaul of CK3's vassal mechanics. Vassals send requests, make 
 - **Load Order:** Late
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** UI mods that expose hidden values
+- **System/Mechanic Impact:** UI — stat display, character information visibility, scheme chance display
+- **Installation Notes:** Load late to ensure it overrides other mods' stat displays. Best for experienced players seeking a challenge.
+- **Configuration:** None
 
 Roleplay-focused mod that hides character stats and exact numbers behind vague descriptions. Instead of "20 Diplomacy", you see "well-spoken". Scheme chances are hidden. You play by impressions rather than spreadsheets.
 
@@ -59,26 +74,15 @@ Roleplay-focused mod that hides character stats and exact numbers behind vague d
 - **Load Order:** Late
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other execution overhaul mods
+- **System/Mechanic Impact:** Events — execution methods, stress effects, trait interactions
+- **Installation Notes:** None
+- **Configuration:** None
 
 Adds 9 execution methods: beheading, hanging, burning, drowning, boiling, crushing, impaling, flaying, and blood eagle. Each method has unique events, sounds, and stress effects. Cruel methods incur stress unless you have sadistic or vengeful traits.
 
 **Gameplay Impact:** More immersion and roleplay around prisoner executions. Your character's traits affect which methods are available without stress penalties.
-
----
-
-## Better Battles (Updated)
-
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=3492170324
-- **Mod Version:** 1.16.2.3
-- **CK3 Version:** 1.16.x (not updated to 1.19)
-- **Updated:** 2025-06-02
-- **Load Order:** Mid
-- **Essential:** No
-- **Performance:** Minor
-
-Adds combat-enriching events when you personally command armies: battlefield duels, siege decisions, tactical choices, and event chains. No vanilla files replaced.
-
-**Gameplay Impact:** Battles become more than just number comparisons. Your personal involvement in commanding armies creates memorable stories. Note: last updated for CK3 1.16.x — check for 1.19 version before using.
 
 ---
 
@@ -91,6 +95,11 @@ Adds combat-enriching events when you personally command armies: battlefield due
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Court — AI courtier suggestions, marriage/g ward recommendations, council position jostling
+- **Installation Notes:** May cause more frequent event popups — adjust game speed accordingly
+- **Configuration:** None
 
 Courtiers actively participate in court life: they suggest marriage candidates, recommend guardians for children, propose inviting useful characters to court, and jostle for council/court positions when better-qualified candidates are available.
 
@@ -107,6 +116,11 @@ Courtiers actively participate in court life: they suggest marriage candidates, 
 - **Load Order:** Late
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Court — decision to spawn courtiers for gold
+- **Installation Notes:** None
+- **Configuration:** None
 
 Simple decision to spawn male or female courtiers in your court for a small gold cost, similar to CK2's system. Useful for filling empty courts or finding marriage candidates.
 
@@ -123,6 +137,11 @@ Simple decision to spawn male or female courtiers in your court for a small gold
 - **Load Order:** Mid (after Social Relations Expanded)
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** Social Relations Expanded (recommended, not required)
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Events — prisoner rescue, vengeance vendettas, family member capture/release mechanics
+- **Installation Notes:** Works best alongside Social Relations Expanded for full vendetta integration
+- **Configuration:** None
 
 Adds events for rescuing captured family members, avenging their deaths, and responding to prisoner events with meaningful choices. Characters develop vendettas and rescue missions become personal story arcs.
 
@@ -139,6 +158,11 @@ Adds events for rescuing captured family members, avenging their deaths, and res
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** Other combat event overhauls
+- **System/Mechanic Impact:** Combat — duel events, champion mechanics, tribal claimant challenges
+- **Installation Notes:** None
+- **Configuration:** None
 
 Enhances single combat events with champion mechanics, tribal claimant challenges, and more duel variety. Non-combat rulers can send champions or refuse duels with consequences.
 
@@ -155,6 +179,11 @@ Enhances single combat events with champion mechanics, tribal claimant challenge
 - **Load Order:** Late
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** Other 3D battle map overhauls (use Redux compatibility patch)
+- **System/Mechanic Impact:** Visual — 3D battle map graphics, unit models, siege equipment visuals, combat animations
+- **Installation Notes:** If conflicts arise with other visual mods, install the Battle Graphics Redux Compatibility Patch after this mod
+- **Configuration:** None
 
 Adds new 3D battle map graphics: unit models, battlefield props, siege equipment visuals, and combat animations. Enhances the visual presentation of battles on the map.
 
@@ -171,6 +200,11 @@ Adds new 3D battle map graphics: unit models, battlefield props, siege equipment
 - **Load Order:** After Battle Graphics
 - **Essential:** No (only if using Battle Graphics with conflicting mods)
 - **Performance:** None
+- **Dependencies:** Battle Graphics
+- **Incompatibilities:** None (resolves conflicts for Battle Graphics)
+- **System/Mechanic Impact:** Visual — conflict resolution for Battle Graphics with other visual mods
+- **Installation Notes:** Load after Battle Graphics. Only use if listed in the Battle Graphics compatibility list.
+- **Configuration:** None
 
 General compatibility patch for Battle Graphics and other visual mods. Ensures Battle Graphics works alongside other map and model mods without conflicts. Only use if listed in the Battle Graphics compatibility list.
 

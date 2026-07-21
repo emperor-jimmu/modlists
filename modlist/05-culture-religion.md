@@ -11,6 +11,11 @@ Adds new cultures, faiths, regional flavor, and cultural mechanics.
 - **Load Order:** Mid
 - **Essential:** Yes
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** Other regional flavor total conversions
+- **System/Mechanic Impact:** Events — regional decisions, artifacts, traditions, holding slots, special buildings
+- **Installation Notes:** Can be installed alongside More Bookmarks+ and VIET for full flavor
+- **Configuration:** Game rules allow adjusting regional event frequency
 
 Adds regional flavor packs for underdeveloped regions: Siberia, Baltic, Sahel, Tibet, steppes, and more. Each region gets unique decisions, artifacts, traditions, and events.
 
@@ -27,6 +32,11 @@ Adds regional flavor packs for underdeveloped regions: Siberia, Baltic, Sahel, T
 - **Load Order:** Mid (after RICE)
 - **Essential:** Yes
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** None known (compatible with most mods)
+- **System/Mechanic Impact:** Events — flavor events, decisions, traits, event chains for festivals/hunts/pilgrimages
+- **Installation Notes:** Load after RICE for best event integration
+- **Configuration:** Game rules allow adjusting event frequency and enabling/disabling specific event modules
 
 The CK3 successor to the CK2 VIET mod. Adds hundreds of new flavor events, decisions, and traits tied to culture, religion, and profession. Includes event chains for festivals, hunts, tournaments, pilgrimages, illnesses, and random encounters.
 
@@ -43,6 +53,11 @@ The CK3 successor to the CK2 VIET mod. Adds hundreds of new flavor events, decis
 - **Load Order:** Mid
 - **Essential:** Yes
 - **Performance:** Moderate (larger map, more characters)
+- **Dependencies:** None
+- **Incompatibilities:** Other bookmark mods, map-altering mods without compatibility patches
+- **System/Mechanic Impact:** Map — new start dates, baronies, dejure borders, cultural/religious setup, holy orders, CoAs
+- **Installation Notes:** Install before RICE. Pair with Population Control for performance. Use A Special World compatch if running with Medieval Arts or Unique Buildings+.
+- **Configuration:** None
 
 Adds dozens of new start dates between 769 and 1337, each with historical characters, situations, and flavor. Adds ~300 new baronies, modified dejure borders, thousands of new CoAs, and historical holy orders. Fully integrated with Cities of Wonders 3 and Tenets to Doctrines.
 
@@ -59,6 +74,11 @@ Adds dozens of new start dates between 769 and 1337, each with historical charac
 - **Load Order:** Late (after EPE and Culture Expanded)
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** Ethnicities & Portraits Expanded, Culture Expanded
+- **Incompatibilities:** None (resolves conflicts)
+- **System/Mechanic Impact:** Visual & Culture — cultural assignment and portrait definition resolution
+- **Installation Notes:** Load after both EPE and Culture Expanded. Only needed if running both mods together.
+- **Configuration:** None
 
 Compatibility patch for running Ethnicities & Portraits Expanded alongside Culture Expanded and related mods. Resolves conflicts in cultural assignment and portrait definitions.
 
@@ -75,6 +95,11 @@ Compatibility patch for running Ethnicities & Portraits Expanded alongside Cultu
 - **Load Order:** Mid (after EPE)
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** None (complements EPE)
+- **Incompatibilities:** Other culture overhauls without compatibility patches
+- **System/Mechanic Impact:** Culture — traditions, decisions, events, cultural mechanics
+- **Installation Notes:** Install after EPE. Complements the Cultural Names sub-mod.
+- **Configuration:** None
 
 Map-spanning project that expands culture variety, decisions, events, traditions, and cultural mechanics. From the same team as Ethnicities & Portraits Expanded. Adds deeper cultural distinctions and region-specific flavor.
 
@@ -91,6 +116,11 @@ Map-spanning project that expands culture variety, decisions, events, traditions
 - **Load Order:** Mid (after Culture Expanded)
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** Culture Expanded
+- **Incompatibilities:** Other name list mods
+- **System/Mechanic Impact:** Culture — character name lists per culture
+- **Installation Notes:** Install after Culture Expanded. Requires Culture Expanded to function.
+- **Configuration:** None
 
 Adds culturally appropriate name lists to all cultures in Culture Expanded. Characters get names that match their specific culture rather than generic regional names.
 
@@ -107,6 +137,11 @@ Adds culturally appropriate name lists to all cultures in Culture Expanded. Char
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** Other Islam-specific overhauls
+- **System/Mechanic Impact:** Religion — caliphate mechanics, Islamic legal schools, religious events and decisions
+- **Installation Notes:** None
+- **Configuration:** None
 
 Adds flavor content for Muslim rulers and realms: new decisions, events, mechanics for caliphates, Islamic legal schools, and religious dynamics. Enhances the Muslim play experience beyond vanilla.
 

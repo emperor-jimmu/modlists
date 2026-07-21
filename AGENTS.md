@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project curates a Crusader Kings 3 modlist (2026, all DLC) and generates a PDF guide via Typst. The repo serves as a source of truth for mods organized by category, a CK3 beginner's tutorial, and a PDF build pipeline.
+This project curates **A More Perfect Realm** — a Crusader Kings 3 modlist (2026, all DLC) — and generates a PDF guide via Typst. The repo serves as a source of truth for mods organized by category, a CK3 beginner's tutorial, and a PDF build pipeline.
 
 ## Mod Manager
 

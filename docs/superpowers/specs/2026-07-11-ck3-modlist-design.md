@@ -71,6 +71,11 @@ Each category is a markdown file. Mod entries separated by `---`:
 - **Load Order:** Early / Mid / Late
 - **Essential:** Yes / No
 - **Performance:** None / Minor / Moderate / Heavy
+- **Dependencies:** Required mods (or None)
+- **Incompatibilities:** Conflicting mods (or None known)
+- **System/Mechanic Impact:** Which game systems the mod touches (e.g. map, events, warfare, economy, culture, UI, visual, audio)
+- **Installation Notes:** Special setup steps (or None)
+- **Configuration:** Game rules to adjust (or None)
 
 Description paragraph explaining what the mod does.
 

@@ -12,12 +12,15 @@ Adult-oriented mods adding mature content. Separate from the main guide — enab
 - **Required by:** CBO, Carnalitas Unlocked, Physical Attributes Lite, Carnal Consequences, Family Romance, Slavery Reimagined, Love Reimagined, Prostitution Reimagined
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** None (is the framework all other adult mods depend on)
+- **Incompatibilities:** Other adult content frameworks
+- **System/Mechanic Impact:** Social — fertility, seduction, pregnancy, courtly love, bastard dynamics, adult events
+- **Installation Notes:** Install after all non-adult mods. Foundation mod — most adult mods require this. Download from LoversLab (not Steam Workshop).
+- **Configuration:** Game rules allow toggling frequency, graphicness, and which mechanics are active. Start with moderate settings.
 
 Framework adding adult mechanics: fertility, seduction, pregnancy, courtly love, bastard dynamics, and related events. Deeply configurable via game rules. The foundation for most adult mods for CK3.
 
 **Gameplay Impact:** Adds a social/sexual dimension to court politics. Seduction schemes, legitimacy disputes, love affairs affecting diplomacy. Configurable to be subtle or explicit.
-
-**Configuration:** Game rules allow toggling frequency, graphicness, and which mechanics are active. Start with moderate settings.
 
 ---
 
@@ -30,6 +33,11 @@ Framework adding adult mechanics: fertility, seduction, pregnancy, courtly love,
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)
 - **Performance:** None
+- **Dependencies:** Carnalitas
+- **Incompatibilities:** None (builds on Carnalitas)
+- **System/Mechanic Impact:** Social — additional adult events, interactions, and scenarios beyond base Carnalitas
+- **Installation Notes:** Install after Carnalitas. Check LoversLab for the latest Unlocked-specific download if separate from the main framework.
+- **Configuration:** Inherits Carnalitas game rules
 
 Expands Carnalitas with additional events, mechanics, and interactivity. Part of the Carnalitas ecosystem — check LoversLab for the latest Unlocked-specific download if separate from the main framework.
 
@@ -46,6 +54,11 @@ Expands Carnalitas with additional events, mechanics, and interactivity. Part of
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)
 - **Performance:** Minor
+- **Dependencies:** Carnalitas
+- **Incompatibilities:** Other body/figure mods
+- **System/Mechanic Impact:** Visual — body type customization, physical attributes, character model enhancement
+- **Installation Notes:** Install after Carnalitas. Required by Physical Attributes Lite and other body-dependent adult mods.
+- **Configuration:** Inherits Carnalitas game rules
 
 Body enhancement framework for Carnalitas. Adds body type customization, physical attributes, and improved character models for adult content. Required by many adult mod addons.
 
@@ -62,6 +75,11 @@ Body enhancement framework for Carnalitas. Adds body type customization, physica
 - **Load Order:** After CBO
 - **Essential:** No (requires CBO and Carnalitas)
 - **Performance:** None
+- **Dependencies:** Carnalitas, Carnalitas Body Optimization (CBO)
+- **Incompatibilities:** The full Physical Attributes mod (this is the Lite version)
+- **System/Mechanic Impact:** Genetics — inherited physical traits (genitalia size, breast size, height, weight, lactation)
+- **Installation Notes:** Install after both Carnalitas and CBO. Compatible with CBO's body framework.
+- **Configuration:** Inherits Carnalitas game rules
 
 A lighter version of Physical Attributes. Adds genitalia and breast size as inherited character traits, display of height and weight, and lactation genetics. Integrates with Carnalitas for gameplay effects.
 
@@ -78,6 +96,11 @@ A lighter version of Physical Attributes. Adds genitalia and breast size as inhe
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)
 - **Performance:** None
+- **Dependencies:** Carnalitas
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Social — spouse interactions, romantic events, family relationship mechanics
+- **Installation Notes:** Install after Carnalitas
+- **Configuration:** Inherits Carnalitas game rules
 
 Adds family-oriented romance content: expanded interactions between spouses, romantic events for married couples, and deeper family relationship mechanics.
 
@@ -94,6 +117,11 @@ Adds family-oriented romance content: expanded interactions between spouses, rom
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)
 - **Performance:** None
+- **Dependencies:** Carnalitas
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Social — realistic consequences (fertility debuffs, pregnancy, enhanced seduction/abduction/romance)
+- **Installation Notes:** Install after Carnalitas
+- **Configuration:** Inherits Carnalitas game rules
 
 Adds realistic consequences to Carnalitas mechanics: rape incurs fertility debuffs, prostitution can lead to pregnancy, and enhanced seduction/abduction/romance scheme interactions.
 
@@ -110,6 +138,11 @@ Adds realistic consequences to Carnalitas mechanics: rape incurs fertility debuf
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)
 - **Performance:** Minor
+- **Dependencies:** Carnalitas
+- **Incompatibilities:** Other slavery system mods
+- **System/Mechanic Impact:** Economy & Social — slavery system, slave trade, integration with economy and warfare
+- **Installation Notes:** Install after Carnalitas. Compatible with CK3 1.19.x and Carnalitas 2.16.
+- **Configuration:** Game rules may include slavery-specific settings
 
 Comprehensive rework of the Carnalitas slavery system with improved balance and better integration with other game systems. Compatible with CK3 1.19.x and Carnalitas 2.16.
 
@@ -126,6 +159,11 @@ Comprehensive rework of the Carnalitas slavery system with improved balance and 
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)
 - **Performance:** None
+- **Dependencies:** Carnalitas
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Social — romantic encounter variety, romantic interaction realism
+- **Installation Notes:** Install after Carnalitas. Use with CBO Unofficial for best visual results.
+- **Configuration:** Inherits Carnalitas game rules
 
 Rework of the Carnalitas "Make Love" interaction for better realism, immersion, and player experience. More variety in romantic encounters and their effects. Use with CBO Unofficial for best results.
 
@@ -142,6 +180,11 @@ Rework of the Carnalitas "Make Love" interaction for better realism, immersion, 
 - **Load Order:** After Carnalitas
 - **Essential:** No (requires Carnalitas)
 - **Performance:** None
+- **Dependencies:** Carnalitas
+- **Incompatibilities:** Other prostitution system mods
+- **System/Mechanic Impact:** Economy & Social — prostitution system, AI usage, balanced income/trade-offs
+- **Installation Notes:** Install after Carnalitas. Adapted for CK3 1.19.0.3 and Carnalitas 2.16.
+- **Configuration:** Game rules may include prostitution-specific settings
 
 Rework of the Carnalitas prostitution system with better balance, more interactions, and improved AI usage. Adapted for CK3 1.19.0.3 and Carnalitas 2.16.
 

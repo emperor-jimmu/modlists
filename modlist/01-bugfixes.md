@@ -11,6 +11,11 @@ Mods that fix vanilla bugs, balance issues, and AI problems. Install first in lo
 - **Load Order:** Early (top of load order)
 - **Essential:** Yes
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Core engine — event triggers, script values, AI logic, localisation
+- **Installation Notes:** Place at the very top of your load order, above all other mods
+- **Configuration:** None
 
 Fixes hundreds of vanilla bugs: broken event triggers, incorrect script values, AI logic errors, missing localisation, and game rule issues. The single most important mod for a stable game.
 
@@ -27,6 +32,11 @@ Fixes hundreds of vanilla bugs: broken event triggers, incorrect script values, 
 - **Load Order:** Early
 - **Essential:** Yes
 - **Performance:** Minor
+- **Dependencies:** None (standalone fixes module)
+- **Incompatibilities:** Other major portrait/clothing overhauls without compatibility patches
+- **System/Mechanic Impact:** Asset system — cultural clothing models, textures, model paths
+- **Installation Notes:** Install before EPE and other visual mods
+- **Configuration:** None
 
 CFP includes bugfixes for cultural asset assignment, missing model paths, and texture errors alongside its visual content.
 
@@ -43,6 +53,11 @@ CFP includes bugfixes for cultural asset assignment, missing model paths, and te
 - **Load Order:** Early
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Save/load system — file naming and directory selection
+- **Installation Notes:** None
+- **Configuration:** None
 
 Allows custom save file naming and directory selection. Vanilla only auto-names saves.
 
@@ -59,6 +74,11 @@ Allows custom save file naming and directory selection. Vanilla only auto-names 
 - **Load Order:** Mid
 - **Essential:** Yes
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** UI — character search interface, filters, sorting
+- **Installation Notes:** None
+- **Configuration:** None
 
 Overhauls the character search interface with more filters, sortable columns, and saved search presets. Vanilla's finder is slow and limited.
 

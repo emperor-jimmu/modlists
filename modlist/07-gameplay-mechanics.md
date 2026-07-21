@@ -11,6 +11,11 @@ New and expanded systems: laws, council, warfare, succession, economy.
 - **Load Order:** Mid
 - **Essential:** Yes
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other crown authority / law overhauls
+- **System/Mechanic Impact:** Law — crown authority tiers, vassal contracts, realm stability, succession options
+- **Installation Notes:** May conflict with other mods that alter crown authority mechanics
+- **Configuration:** None
 
 Adds meaningful crown authority laws with multiple tiers and vassal contracts. Influence realm stability, vassal obligations, and succession options.
 
@@ -27,6 +32,11 @@ Adds meaningful crown authority laws with multiple tiers and vassal contracts. I
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other court position overhauls (use Court Positions Expanded instead)
+- **System/Mechanic Impact:** Court position — domain logistics, tax collection, construction priorities
+- **Installation Notes:** Compatible with Court Positions Expanded — Seneschal fills a specific role
+- **Configuration:** None
 
 Adds a new court position: Seneschal (steward of the realm). Manages domain logistics, tax collection efficiency, and construction priorities.
 
@@ -43,6 +53,11 @@ Adds a new court position: Seneschal (steward of the realm). Manages domain logi
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** None
+- **Incompatibilities:** Other court position mods (incompatible with Seneschal if they overlap)
+- **System/Mechanic Impact:** Court — 15+ new court positions with tasks and events
+- **Installation Notes:** May cause UI crowding in the court panel. Increase window size if needed.
+- **Configuration:** None
 
 Adds 15+ new court positions: Chancellor of the Exchequer, Master of Horse, Spymaster's Deputy, Royal Physician, Chief Justice, etc. Each with tasks and events.
 
@@ -59,6 +74,11 @@ Adds 15+ new court positions: Chancellor of the Exchequer, Master of Horse, Spym
 - **Load Order:** Late
 - **Essential:** No (see Performance Tools category)
 - **Performance:** Positive (improves late-game speed)
+- **Dependencies:** None
+- **Incompatibilities:** Other character count mods
+- **System/Mechanic Impact:** Performance — lowborn character population cap, character count limits
+- **Installation Notes:** Load late. Also listed in Performance Tools category for reference.
+- **Configuration:** Configurable cap on lowborn character count via game rules
 
 Limits population growth of lowborn characters, culling excess courtiers and wanderers. Late-game lag from 10,000+ characters is significantly reduced.
 
@@ -75,6 +95,11 @@ Limits population growth of lowborn characters, culling excess courtiers and wan
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other weapon type mods
+- **System/Mechanic Impact:** Warfare — new Men-at-Arms type, cultural traditions, innovation requirements
+- **Installation Notes:** None
+- **Configuration:** None
 
 Adds Greatswords as a new weapon type with unique Men-at-Arms units, cultural traditions, and innovation requirements. Several regional variants with different stats and costs.
 
@@ -91,6 +116,11 @@ Adds Greatswords as a new weapon type with unique Men-at-Arms units, cultural tr
 - **Load Order:** Late (after all other mods)
 - **Essential:** No
 - **Performance:** Minor
+- **Dependencies:** EPE, CFP, MB+, RICE, Community Title Project, Culture Expanded (for full compatch benefit)
+- **Incompatibilities:** The old Gambo's Most Excellent Super Compatch (this replaces it)
+- **System/Mechanic Impact:** Various — compatibility layer across major mods, plus early bookmarks and flavor events
+- **Installation Notes:** Load after all other mods. Follow the author's recommended load order for all supported mods.
+- **Configuration:** None
 
 The successor to Gambo's Most Excellent Super Compatch. Makes major mods work together: EPE, CFP, MB+, RICE, Community Title Project, Culture Expanded, and more. Also adds early bookmarks and flavor. Provides a working load order template.
 
@@ -107,6 +137,11 @@ The successor to Gambo's Most Excellent Super Compatch. Makes major mods work to
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** None known
+- **System/Mechanic Impact:** Education — language learning, multilingual courts, child education languages
+- **Installation Notes:** Two modes: Passive Learning (natural language pickup) and Active Learning (guaranteed fluency at stress cost). Choose in mod settings.
+- **Configuration:** Game rule to switch between Passive and Active learning modes
 
 Allows you to designate up to three education languages for your court. Children may speak them fluently by age six. Two modes: Passive Learning (children pick up languages naturally) and Active Learning (guaranteed fluency at a stress cost). AI uses the feature too.
 
@@ -123,6 +158,11 @@ Allows you to designate up to three education languages for your court. Children
 - **Load Order:** Mid
 - **Essential:** No
 - **Performance:** None
+- **Dependencies:** None
+- **Incompatibilities:** Other artifact system overhauls
+- **System/Mechanic Impact:** Economy — artifact finder, trading system, AI buy/sell offers, artifact economy
+- **Installation Notes:** None
+- **Configuration:** None
 
 Adds an artifact finder and trading system: search for artifacts by type/quality/region, buy from other characters, and sell your own. The AI uses the system too, initiating buy/sell offers based on artifact usefulness.
 

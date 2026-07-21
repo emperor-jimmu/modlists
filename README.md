@@ -1,10 +1,10 @@
-# CK3 Modlist Guide
+# A More Perfect Realm
 
 A curated, categorized modlist for **Crusader Kings 3** (latest version, all DLC), packaged as a learn-to-play guide with automatic PDF generation.
 
 ## What This Is
 
-- **Curated modlist** — 100+ mods across 12 categories: bugfixes, UI, graphics, gameplay, culture/religion, events, map expansion, music, fantasy (optional), adult (separate), and performance tools
+- **Curated modlist** — 100+ mods across 12 categories ("A More Perfect Realm") in bugfixes, UI, graphics, gameplay, culture/religion, events, map expansion, music, fantasy (optional), adult (separate), and performance tools
 - **CK3 beginner's tutorial** — Teaches you the game from scratch, with deep dives on marriage, succession, religion, and vassal management
 - **PDF guide** — One command builds a printable PDF via Typst
 - **Performance benchmarks** — Empirical FPS testing per mod category
