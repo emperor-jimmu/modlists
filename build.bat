@@ -26,36 +26,18 @@ echo.
 
 REM --- Prerequisite: Required fonts ---
 echo Checking fonts...
-powershell -Command ^
-  "$fonts = @('Crimson Pro', 'Libre Baskerville', 'Fira Code', 'Cinzel');" ^
-  "$missing = @();" ^
-  "$fontCollection = [System.Drawing.Text.InstalledFontCollection]::new();" ^
-  "$fontNames = $fontCollection.Families | ForEach-Object { $_.Name };" ^
-  "foreach ($f in $fonts) {" ^
-  "  if ($fontNames -notcontains $f) {" ^
-  "    $missing += $f;" ^
-  "    Write-Host '[WARN] Missing font: ' -NoNewline; Write-Host $f -ForegroundColor Yellow;" ^
-  "  } else {" ^
-  "    Write-Host '[OK]   Found font: ' -NoNewline; Write-Host $f -ForegroundColor Green;" ^
-  "  }" ^
-  "};" ^
-  "if ($missing.Count -gt 0) {" ^
-  "  Write-Host '';" ^
-  "  Write-Host '[WARN] Missing fonts will cause Typst to fall back to system serif/mono.' -ForegroundColor Yellow;" ^
-  "  Write-Host '       The PDF will build but may not look as intended.' -ForegroundColor Yellow;" ^
-  "  Write-Host 'Missing fonts:' $missing;" ^
-  "  Write-Host 'Download from Google Fonts or install via system font manager.';" ^
-  "} else {" ^
-  "  Write-Host '';" ^
-  "  Write-Host '[OK]   All required fonts installed.' -ForegroundColor Green;" ^
-  "}"
+
+REM Check project font directory first (self-contained fonts)
+if exist "fonts\*.ttf" (set "FONTS_DIR=--font-path fonts")
+
+powershell -ExecutionPolicy Bypass -File check-fonts.ps1
 echo.
 
 REM --- Build ---
 echo Building PDF...
 echo.
 
-typst compile guide/_index.typ output/No-Crown-Without-Blood.pdf --root .
+typst compile guide/_index.typ output/No-Crown-Without-Blood.pdf --root . %FONTS_DIR%
 
 if %errorlevel% neq 0 (
     echo.

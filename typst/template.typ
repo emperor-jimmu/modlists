@@ -44,24 +44,9 @@
   pagebreak()
 }
 
-// --- Body page setup ---
+// --- Body text setup ---
 #let setup-document() = {
-  set page(
-    paper: "a4",
-    fill: parchment,
-    margin: body-margin,
-    numbering: "1",
-    header: align(
-      right,
-      text(font: heading-font, size: 8pt, fill: header-color)[*No Crown Without Blood*],
-    ),
-    footer: context align(
-      center,
-      text(font: body-font, size: 8pt, fill: header-color)[— #counter(page).display() —],
-    ),
-  )
-
-  set text(font: body-font, size: 11pt, fill: body-text-color)
+  set text(font: body-font, size: 12pt, fill: body-text-color)
   set par(justify: true, leading: 0.65em, first-line-indent: 0pt)
 
   show heading: apply-heading-style

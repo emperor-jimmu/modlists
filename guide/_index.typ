@@ -5,7 +5,23 @@
 // Cover page
 #cover-page()
 
-// Body setup (fonts, colors, page layout, TOC)
+// Page setup — MUST be top-level. set rules in functions do not persist in Typst.
+#set page(
+  paper: "a4",
+  fill: parchment,
+  margin: body-margin,
+  numbering: "1",
+  header: align(
+    right,
+    text(font: heading-font, size: 10pt, fill: header-color)[*No Crown Without Blood*],
+  ),
+  footer: context align(
+    center,
+    text(font: heading-font, size: 10pt, fill: header-color)[— #counter(page).display() —],
+  ),
+)
+
+// Body setup (fonts, colors, show rules, TOC)
 #setup-document()
 
 // --- Shared Content ---

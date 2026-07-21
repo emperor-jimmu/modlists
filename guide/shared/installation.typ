@@ -107,4 +107,4 @@ Regardless of your wave, these baseline settings are recommended:
   [*Sound*], [Default — some mods add audio and rely on default settings],
 )
 
-#tip-box[Graphics settings depend on your hardware. Higher textures and shadows work well with Wave 1+ graphics mods, but start conservatively and increase if your framerate allows.]
+#tip-box[Graphics settings depend on your hardware. Wave 1+ graphics mods target stable 60 FPS at 1440p on an NVIDIA RTX 3080 (or equivalent). If your GPU is older or slower, reduce resolution or shadow quality — the modlist is tuned for high-end hardware.]

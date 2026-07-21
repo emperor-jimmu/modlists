@@ -8,11 +8,11 @@ Wave 1 expands the mod list to include *Graphics*, *Light mechanic*, and *Conten
 
 // === Graphics (3) ===
 
-#mod-placeholder("Graphics", ("Improved lighting engine with better ambient occlusion, bloom, and shadow cascades", "Time-of-day color grading that makes sunsets, dawn, and night more atmospheric", "Weather effects enhancement — rain, snow, and fog"), "Must be compatible with other graphics mods. No performance drops below 30 FPS on medium hardware (GTX 1060 or equivalent).")
+#mod-placeholder("Graphics", ("Improved lighting engine with better ambient occlusion, bloom, and shadow cascades", "Time-of-day color grading that makes sunsets, dawn, and night more atmospheric", "Weather effects enhancement — rain, snow, and fog"), "Must be compatible with other graphics mods. Target: stable 60+ FPS on NVIDIA RTX 3080 or equivalent at 1440p with high settings.")
 
-#mod-placeholder("Graphics", ("High-resolution texture pack for terrain, buildings, and environments", "Improved armor and weapon textures for all faction troops", "Better character face and skin textures"), "Must not exceed 4GB VRAM usage at 1080p with medium settings. Must not conflict with equipment mods.")
+#mod-placeholder("Graphics", ("High-resolution texture pack for terrain, buildings, and environments", "Improved armor and weapon textures for all faction troops", "Better character face and skin textures"), "Target: 60 FPS at 1440p on RTX 3080 (10GB VRAM) or equivalent. Must not conflict with equipment mods.")
 
-#mod-placeholder("Graphics", ("Higher-poly character heads with better expressions and skin shading", "Improved hair and beard rendering", "Better body proportions and armor fitting"), "Must be compatible with any character creation mods in this wave.")
+#mod-placeholder("Graphics", ("Higher-poly character heads with better expressions and skin shading", "Improved hair and beard rendering", "Better body proportions and armor fitting"), "Must be compatible with any character creation mods in this wave. Target: 60 FPS at 1440p on RTX 3080 or equivalent.")
 
 // === UI/QoL (2) ===
 
