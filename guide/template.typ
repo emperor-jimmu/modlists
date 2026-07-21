@@ -81,3 +81,29 @@
     stroke: 0.5pt + border-color,
   )[#it]
 }
+
+// ===== HEADINGS =====
+#show heading: set text(font: heading-font, weight: "regular")
+
+#show heading.where(level: 1): it => {
+  set text(fill: heading-color, size: 22pt)
+  v(24pt, weak: true)
+  it
+  v(4pt)
+  line(length: 100%, stroke: 0.5pt + green)
+  v(12pt, weak: true)
+}
+
+#show heading.where(level: 2): it => {
+  set text(fill: heading-color, size: 17pt)
+  v(20pt, weak: true)
+  it
+  v(10pt, weak: true)
+}
+
+#show heading.where(level: 3): it => {
+  set text(fill: amber, size: 14pt)
+  v(16pt, weak: true)
+  it
+  v(8pt, weak: true)
+}
