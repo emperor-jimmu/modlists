@@ -70,5 +70,4 @@
 #include "16-audio-sound.typ"
 #include "17-characters-appearance.typ"
 #include "18-tools-utilities.typ"
-#include "98-conflicts.typ"
-#include "99-mod-ideas.typ"
+// 98-conflicts.typ and 99-mod-ideas.typ are reference files only — not included in the PDF.
