@@ -1,11 +1,10 @@
 \documentclass[11pt,a4paper]{book}
 
+\usepackage[hmargin=2cm, vmargin=2.5cm]{geometry}
 \usepackage{fontspec}
 \usepackage{xcolor}
 \usepackage{titling}
 \usepackage{graphicx}
-\usepackage{hyperref}
-\hypersetup{colorlinks=true, urlcolor=warmgold, linkcolor=deepgreen, citecolor=deepgreen}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{bookmark}
@@ -13,17 +12,27 @@
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{calc}
+\usepackage{newunicodechar}
+
+% Colors (define before hyperref so \hypersetup can reference them)
+\definecolor{deepgreen}{HTML}{2D5A27}
+\definecolor{warmgold}{HTML}{C8A84E}
+\definecolor{warnred}{HTML}{CC4444}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=warmgold, linkcolor=deepgreen, citecolor=deepgreen}
+
+% Replace glyphs not available in Cambria
+\newunicodechar{⚠}{\textbf{\textcolor{warnred}{\small[!]}}}
+\newunicodechar{★}{\,*\,}
 
 % Fix: Pandoc generates \LTcaptype{none} for uncaptioned longtables — need a dummy counter
 \newcounter{none}
 
-% Colors
-\definecolor{deepgreen}{HTML}{2D5A27}
-\definecolor{warmgold}{HTML}{C8A84E}
-
-% Fonts — use Windows system fonts (available on any Windows install)
+% Fonts — use Windows system fonts
 \setmainfont{Cambria}
 \setsansfont{Calibri}
+\setmonofont{Consolas}
 
 % Headings
 \titleformat{\chapter}{\Huge\bfseries\color{deepgreen}}{}{0em}{}
