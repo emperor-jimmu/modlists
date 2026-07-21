@@ -22,15 +22,17 @@
 
 // Table of contents
 #pagebreak()
-#outline(title: [Table of Contents], depth: 2)
+#outline(title: [Table of Contents], depth: 1)
 
 // Setup chapter
 #pagebreak()
+#show link: set text(fill: link-blue)
 #chapter-heading("tModLoader Setup & Configuration", copper)
 #include "generated/setup.typ"
 
 // Wave 0
 #pagebreak()
+#show link: set text(fill: copper)
 #chapter-heading("Wave 0 — First Steps", copper)
 #text(size: 14pt, style: "italic")[Classic (Softcore) | Medium World | Corruption]
 #v(0.5cm)
@@ -42,6 +44,7 @@
 
 // Wave 1
 #pagebreak()
+#show link: set text(fill: silver)
 #chapter-heading("Wave 1 — Digging Deeper", silver)
 #text(size: 14pt, style: "italic")[Expert (Softcore) | Medium World | Corruption or Crimson]
 #v(0.5cm)
@@ -53,6 +56,7 @@
 
 // Wave 2
 #pagebreak()
+#show link: set text(fill: gold)
 #chapter-heading("Wave 2 — Beyond the Surface", gold)
 #text(size: 14pt, style: "italic")[Expert (Softcore) | Large World | Corruption]
 #v(0.5cm)

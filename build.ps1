@@ -190,6 +190,75 @@ Convert-ModDataToMarkdown -YamlPath "data/wave-2-mods.yaml" -OutputPath "guide/w
 Convert-ConflictsToMarkdown -YamlPath "data/conflicts.yaml" -OutputPath "conflicts.md"
 Convert-ModIdeasToMarkdown -YamlPath "data/mod-ideas.yaml" -OutputPath "mod-ideas.md"
 
+# --- Generate modlist Typst files directly (bypass pandoc for card styling) ---
+function Convert-ModDataToTypst {
+    param([string]$YamlPath, [string]$OutputPath)
+
+    if (-not (Test-Path $YamlPath)) {
+        Write-Host "  [SKIP-T] $YamlPath not found" -ForegroundColor DarkYellow
+        return
+    }
+
+    $yamlContent = Get-Content $YamlPath -Raw
+    $data = ConvertFrom-Yaml $yamlContent
+
+    $waveColors = @("copper", "silver", "gold")
+    $waveColor = $waveColors[$data.wave]
+
+    $typ = @"
+#import "../../lib.typ": *
+
+#heading(level: 1)[$($data.title)]
+#text(size: 12pt, style: "italic")[$($data.subtitle)]
+#v(0.8em)
+
+"@
+
+    if ($data.mods -and $data.mods.Count -gt 0) {
+        foreach ($mod in $data.mods) {
+            # Escape description for Typst string
+            $desc = $mod.description -replace '\\', '\\' -replace '"', '\"'
+
+            # Build dependencies array
+            $deps = @()
+            if ($mod.dependencies -and $mod.dependencies.Count -gt 0) {
+                $deps = $mod.dependencies | ForEach-Object { '"' + $_.name + '"' }
+            }
+
+            $impactLines = @()
+            $imp = $mod.impact
+            $impactLines += "`n    `"New items/equipment`": $($imp.new_items.ToString().ToLower()),"
+            $impactLines += "`n    `"New NPCs/enemies`": $($imp.new_npcs.ToString().ToLower()),"
+            $impactLines += "`n    `"New biomes`": $($imp.new_biomes.ToString().ToLower()),"
+            $impactLines += "`n    `"New bosses`": $($imp.new_bosses.ToString().ToLower()),"
+            $impactLines += "`n    `"Gameplay mechanic changes`": $($imp.mechanic_changes.ToString().ToLower()),"
+            $impactLines += "`n    `"UI/QoL only`": $($imp.ui_qol.ToString().ToLower()),"
+
+            $typ += "#mod-card(`n  `"$($mod.name)`",`n  `"$($mod.url)`",`n  [$( $desc )],`n"
+            if ($deps.Count -gt 0) {
+                $typ += "  dependencies: ($( $deps -join ', ' )),`n"
+            }
+            $typ += "  impact: ($( $impactLines -join '' )`n  ),`n"
+            $typ += "  color: $waveColor`n)`n"
+        }
+
+        if ($data.load_order -and $data.load_order.Count -gt 0) {
+            $typ += "`n#load-order-section($($data.wave),`n  (`n"
+            foreach ($modName in $data.load_order) {
+                $typ += "    `"$modName`",`n"
+            }
+            $typ += "  )`n)`n"
+        }
+    }
+
+    $typ | Out-File -FilePath $OutputPath -Encoding UTF8
+    Write-Host "  [OK] Generated $OutputPath" -ForegroundColor Green
+}
+
+Convert-ModDataToTypst -YamlPath "data/wave-0-mods.yaml" -OutputPath "template/generated/wave-0/modlist.typ"
+Convert-ModDataToTypst -YamlPath "data/wave-1-mods.yaml" -OutputPath "template/generated/wave-1/modlist.typ"
+Convert-ModDataToTypst -YamlPath "data/wave-2-mods.yaml" -OutputPath "template/generated/wave-2/modlist.typ"
+
 # --- Markdown to Typst conversion ---
 Write-Host "`nConverting Markdown to Typst..." -ForegroundColor Cyan
 
@@ -197,13 +266,10 @@ $mdFiles = @(
     @{ Source = "guide/setup.md"; Target = "template/generated/setup.typ" },
     @{ Source = "guide/wave-0/story.md"; Target = "template/generated/wave-0/story.typ" },
     @{ Source = "guide/wave-0/guide.md"; Target = "template/generated/wave-0/guide.typ" },
-    @{ Source = "guide/wave-0/modlist.md"; Target = "template/generated/wave-0/modlist.typ" },
     @{ Source = "guide/wave-1/story.md"; Target = "template/generated/wave-1/story.typ" },
     @{ Source = "guide/wave-1/guide.md"; Target = "template/generated/wave-1/guide.typ" },
-    @{ Source = "guide/wave-1/modlist.md"; Target = "template/generated/wave-1/modlist.typ" },
     @{ Source = "guide/wave-2/story.md"; Target = "template/generated/wave-2/story.typ" },
-    @{ Source = "guide/wave-2/guide.md"; Target = "template/generated/wave-2/guide.typ" },
-    @{ Source = "guide/wave-2/modlist.md"; Target = "template/generated/wave-2/modlist.typ" }
+    @{ Source = "guide/wave-2/guide.md"; Target = "template/generated/wave-2/guide.typ" }
 )
 
 foreach ($file in $mdFiles) {
