@@ -79,6 +79,7 @@
     [
       #text(fill: color, weight: "bold", size: 11pt)[#icon #label]
       #v(4pt)
+      #set text(fill: color-text)
       #body
     ]
   )
@@ -164,14 +165,26 @@
 
 // ===== SETTINGS TABLE =====
 #let settings-table(rows) = {
+  let cells = rows.map(((key, value)) => (
+    text(fill: color-orange, weight: "bold")[#key],
+    text(fill: color-text)[#value],
+  )).flatten()
+
+  let even-bg = color-bg
+  let odd-bg = color-callout-bg
+  let fills = ()
+  for i in range(0, rows.len()) {
+    let bg = if calc.even(i) { even-bg } else { odd-bg }
+    fills.push(bg)
+    fills.push(bg)
+  }
+
   table(
     columns: (40%, 60%),
     stroke: 0.5pt + color-gray,
     inset: 8pt,
-    ..rows.map(((key, value)) => (
-      text(fill: color-orange, weight: "bold")[#key],
-      text(fill: color-text)[#value],
-    )).flatten(),
+    fill: (_, y) => fills.at(y, default: even-bg),
+    ..cells,
   )
   v(12pt)
 }
