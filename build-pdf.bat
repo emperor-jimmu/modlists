@@ -6,6 +6,9 @@ for /f "tokens=2*" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Ses
 for /f "tokens=2*" %%a in ('reg query "HKCU\Environment" /v PATH 2^>nul') do set "USER_PATH=%%b"
 set "PATH=%MACHINE_PATH%;%USER_PATH%;%PATH%"
 
+REM Suppress MiKTeX update check warnings during build
+set MIKTEX_CHECK_UPDATE=0
+
 echo ============================================
 echo   Fields, Vines and Barrels - PDF Builder
 echo ============================================
@@ -66,11 +69,10 @@ pandoc ^
     guide/wave-2/05-placeables.md ^
     guide/wave-2/06-production-economy.md ^
     guide/wave-2/07-gameplay.md ^
-    conflicts.md ^
-    mod-ideas.md ^
     --from=markdown+pipe_tables+grid_tables ^
     --toc ^
-    --toc-depth=3 ^
+    --toc-depth=1 ^
+    --top-level-division=chapter ^
     -o output/fields-vines-and-barrels.pdf ^
     %ENGINE%
 

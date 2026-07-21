@@ -2,6 +2,17 @@
 
 Mods added in this wave beyond Wave 0.
 
+## Difficulty Settings (carried forward from Wave 0)
+
+| Setting | Value |
+|---|---|
+| Economic Difficulty | Normal |
+| Plant Growth | Normal |
+| Fuel Usage | On |
+| Traffic | On |
+| Auto-Repair | Off |
+| Seasons | On |
+
 | Name | Author | Source | Version | Notes |
 |---|---|---|---|---|
 | Precision Farming 3.0 | GIANTS Software | [ModHub #318936](https://www.farming-simulator.com/mod.php?mod_id=318936&title=fs2025) | 1.5.1 | ⚠ 4.5★ (9,392). Official free DLC. Soil sampling, tramlines, PWM sprayers, section control, N-sensors. Crossplay. |
