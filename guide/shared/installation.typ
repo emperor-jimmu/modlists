@@ -1,3 +1,5 @@
+#import "../../typst/styles.typ": *
+
 = Installation & Setup
 
 This section covers everything you need to set up Bannerlord with BLSE and prepare for any wave. Follow these steps once — they apply to all three waves.
