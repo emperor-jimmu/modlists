@@ -26,18 +26,13 @@
     #set text(fill: color-gray, size: 8pt)
     #align(right)[No One is Coming — PZ B42 Modlist]
   ],
+  footer: context [
+    #set text(fill: color-orange, size: 10pt)
+    #align(center)[
+      No One is Coming — Page #counter(page).display("1")
+    ]
+  ],
 )
-
-// Page numbers displayed in body content, not header/footer
-#show page: it => {
-  it
-  context {
-    set text(fill: color-orange, size: 10pt)
-    align(center, block(above: 1em, [
-      No One is Coming  —  Page #counter(page).display()
-    ]))
-  }
-}
 
 // ===== TEXT & LINKS =====
 #set text(
