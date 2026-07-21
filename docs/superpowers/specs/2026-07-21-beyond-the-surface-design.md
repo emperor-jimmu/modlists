@@ -17,6 +17,7 @@ terraria-modlist/
 ├── assets/
 │   └── logo.png                  # Beyond the Surface cover logo
 ├── guide/
+│   ├── setup.md                   # tModLoader installation & configuration
 │   ├── wave-0/
 │   │   ├── story.md              # Wave 0 roleplay narrative
 │   │   ├── guide.md              # Complete beginner's how-to-play guide
@@ -29,10 +30,10 @@ terraria-modlist/
 │       ├── story.md              # Wave 2 roleplay narrative
 │       ├── guide.md              # Expert strategy, mechanics deep-dive
 │       └── modlist.md            # Content overhauls + mechanics
+├── build.bat                     # PDF generation batch script (root level)
 ├── conflicts.md                  # Known mod conflicts (excluded from PDF)
 ├── mod-ideas.md                  # Mod ideas for future development (excluded from PDF)
 ├── output/
-│   ├── build.bat                 # PDF generation batch script
 │   └── beyond-the-surface.pdf    # Generated PDF output
 └── template/
     └── main.typ                  # Typst 0.15 PDF template
@@ -44,19 +45,19 @@ terraria-modlist/
 
 - **Mods:** UI/QoL only, no gameplay changes. Roughly 5-8 mods (flexible, no forced quota).
 - **Guide:** Complete beginner tutorial — controls, first night, NPC housing, full boss progression, class basics, biome order, fishing, potions, hardmode transition.
-- **Story:** A bewildered newcomer wakes up with amnesia and a chatty Guide. They bumble through learning the world, discovering that slimes hurt and nights are dangerous. By Moon Lord's defeat, they've grown from copper shortsword to cosmic power, with hints of "worlds beyond."
+- **Story:** Narrated by the Guide himself — a warm, slightly sarcastic mentor voice. The Guide greets the player ("Oh, hello there!") and walks them through survival basics in his signature charmingly obvious style ("You'll want to build a house. No, really, you will."). As the journey progresses, the Guide's tone grows genuinely proud, and by Moon Lord's defeat he hints that "other worlds" might need the player's help.
 
 ### Wave 1 — "Digging Deeper" (QoL + Light Content)
 
 - **Mods:** QoL + light content expansions. No forced count; add mods that genuinely improve the experience.
 - **Guide:** Class specialization deep-dive (melee/ranged/magic/summoner), arena building, farming strategies, event optimization (Pumpkin/Frost Moon, Old One's Army), wiring, advanced housing, biome spread management.
-- **Story:** The Guide is back but remembers nothing. The world is familiar yet distorted — new biomes, stranger creatures. The hero realizes each "world" is a layer of reality. Victory brings unsettling clarity: there's one more layer.
+- **Story:** The Guide's voice returns, but something's off — his cheerfulness has an edge, his jokes feel forced. "You're back. I don't... remember why, but I knew you would be." The world has changed: familiar biomes twisted, new horrors in the dark, creatures that shouldn't exist. The Guide's advice grows darker and more cryptic as the player descends. By the end, he admits he doesn't fully understand what's happening — but something is calling from deeper still, and "I won't be able to follow you there."
 
 ### Wave 2 — "Beyond the Surface" (Full Overhaul)
 
 - **Mods:** Major content overhauls (Calamity, Thorium), new mechanics, new classes. Player-induced challenge modes (class-locked runs, no-hit challenges, etc.).
 - **Guide:** Expert mechanics deep-dive, modded boss progression order, class synergies, post-Moon Lord content, secret seeds, legendary difficulty, player challenge rulesets.
-- **Story:** Reality is breaking. Ancient calamities, void-touched horrors, gods bleeding into the world. The hero chooses a path of self-imposed limitation — proving mastery isn't about power, but precision. The final victory reveals the surface was never the destination.
+- **Story:** Narrated by an unnamed omnipotent being — ancient, patient, and faintly amused. It has watched the player across three realities. "You have done well, little flame. But what burns brightest casts the longest shadow." The voice guides with detached curiosity, sometimes offering cryptic wisdom, sometimes simply observing. It imposes the player's challenge ("Prove yourself not by what you wield, but by what you choose not to."). The final victory isn't for glory — it's for understanding. "You were never meant to reach the surface. You were meant to learn there isn't one."
 
 ## Mod Rules
 
@@ -96,7 +97,7 @@ terraria-modlist/
 ## PDF Generation
 
 - **Engine:** Typst 0.15
-- **Build:** `output/build.bat` runs `typst compile template/main.typ output/beyond-the-surface.pdf`
+- **Build:** Root-level `build.bat` runs `typst compile template/main.typ output/beyond-the-surface.pdf`
 - **Template:** `template/main.typ` includes all guide files and renders the complete document
 - **Excluded from PDF:** `conflicts.md` and `mod-ideas.md` (developer reference only)
 
@@ -110,7 +111,26 @@ terraria-modlist/
 
 ## Story Framework
 
-Connected lighthearted adventure following one hero across three worlds. Each wave's `story.md` is a short narrative (~200-400 words) setting the tone. Written in second-person ("You wake up...") to immerse the player.
+Three connected narratives from three different narrative voices, following one hero across three realities:
+
+- **Wave 0 ("First Steps"):** The Guide as warm, sarcastic mentor — first-person from his perspective. He addresses the player directly as a clueless newcomer he's fond of. Tone: lighthearted, humorous, gradually proud.
+- **Wave 1 ("Digging Deeper"):** The Guide again, but unsettled — he's missing memories, the world has changed, and his cheerfulness is cracking. He still tries to help but doesn't understand why everything feels wrong. Tone: bittersweet, increasingly ominous.
+- **Wave 2 ("Beyond the Surface"):** An unnamed omnipotent entity replaces the Guide. It has observed the player across all three worlds. It speaks in cryptic, poetic observations and imposes the final challenge. Tone: dark, philosophical, faintly amused.
+
+Each wave's `story.md` is a short narrative (~200-400 words). Wave 0 is first-person ("I am Andrew, your Guide..."). Waves 1-2 are second-person ("You wake up again...") with the respective narrator's interjections.
+
+## tModLoader Setup & Configuration
+
+The guide must include a dedicated setup section covering:
+
+1. **Installing tModLoader:** Via Steam (free, requires base Terraria). Link to Steam store page.
+2. **First launch:** tModLoader launches as a separate Steam app. Initial setup takes a few minutes.
+3. **Workshop integration:** How to browse and subscribe to mods via Steam Workshop from within tModLoader's main menu.
+4. **Mod management:** Enabling/disabling mods, mod configuration menus, load order basics.
+5. **Per-wave configuration:** Each wave's guide specifies exactly which mods to enable and any required config changes.
+6. **Troubleshooting:** Common issues (out of memory, mod conflicts, version mismatches) and solutions.
+
+This setup section appears in the PDF before Wave 0 content.
 
 ## Files NOT in PDF Output
 
