@@ -26,17 +26,15 @@
   ]
 ]
 
-#let page-footer = context [
-  #set text(fill: color-gray, size: 8pt)
-  #align(center)[No One is Coming — Project Zomboid B42 Modlist \ #counter(page).display()]
-]
-
 #set page(
   paper: "a4",
   margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 20mm),
   fill: color-bg,
   header: page-header,
-  footer: page-footer,
+  footer: context [
+    #set text(fill: color-orange, size: 10pt)
+    #align(center)[No One is Coming  —  #counter(page).display()]
+  ],
 )
 
 // ===== TEXT & LINKS =====
