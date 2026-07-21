@@ -1,11 +1,12 @@
-output/*.pdf
 .DS_Store
 Thumbs.db
 Desktop.ini
 *.tmp
 *.temp
 ~$*
+
 .vscode/
 .idea/
 .playwright-mcp/
+
 search-b42-framework.yml

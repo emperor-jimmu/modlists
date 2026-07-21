@@ -18,21 +18,25 @@
 #let color-info-border = rgb("#4A6A8A")
 
 // ===== PAGE SETUP =====
+#let page-header = context [
+  #set text(fill: color-gray, size: 8pt)
+  #align(right)[
+    No One is Coming — PZ B42 Modlist  \
+    #counter(page).display()
+  ]
+]
+
+#let page-footer = context [
+  #set text(fill: color-gray, size: 8pt)
+  #align(center)[No One is Coming — Project Zomboid B42 Modlist \ #counter(page).display()]
+]
+
 #set page(
   paper: "a4",
   margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 20mm),
   fill: color-bg,
-  header: context [
-    #set text(fill: color-gray, size: 8pt)
-    #align(right)[
-      No One is Coming — PZ B42 Modlist  \
-      #counter(page).display()
-    ]
-  ],
-  footer: context [
-    #set text(fill: color-gray, size: 8pt)
-    #align(center)[No One is Coming — Project Zomboid B42 Modlist \ #counter(page).display()]
-  ],
+  header: page-header,
+  footer: page-footer,
 )
 
 // ===== TEXT & LINKS =====
@@ -94,7 +98,7 @@
 
 // ===== COVER PAGE =====
 #let cover-page() = {
-  set page(fill: color-bg, margin: 0pt)
+  set page(fill: color-bg, margin: 0pt, header: none, footer: none)
   align(center + horizon,
     block(width: 100%, height: 100%, fill: color-bg, {
       v(40mm)
@@ -118,6 +122,13 @@
     })
   )
   pagebreak()
+  // Restore normal page settings for subsequent pages
+  set page(
+    margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 20mm),
+    fill: color-bg,
+    header: page-header,
+    footer: page-footer,
+  )
 }
 
 // ===== WAVE DIVIDER PAGE =====
