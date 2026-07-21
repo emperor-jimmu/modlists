@@ -5,7 +5,7 @@
 #set align(center + horizon)
 #v(3cm)
 
-#image("assets/logo.png", width: 40%)
+#image("assets/logo.png", width: 65%)
 #v(1.2cm)
 
 #text(

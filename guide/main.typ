@@ -46,7 +46,7 @@
 #outline(
   title: [Table of Contents],
   indent: 2em,
-  depth: 2,
+  depth: 1,
 )
 
 // === Body (Arabic page numbers) ===
