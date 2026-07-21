@@ -11,10 +11,18 @@
 #cover-page()
 
 // ===== TABLE OF CONTENTS =====
-#outline(
-  title: text(font: heading-font, size: 22pt, fill: color-crimson)[Table of Contents],
-  indent: 2em,
-)
+[
+  #show outline.entry: it => {
+    it.body
+    h(1fr)
+    text(fill: amber)[#it.page]
+  }
+  #outline(
+    title: text(size: 22pt, font: heading-font, fill: heading-color)[Contents],
+    indent: 1.5em,
+    depth: 2,
+  )
+]
 #pagebreak()
 
 // ===== PREFACE =====
