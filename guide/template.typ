@@ -20,16 +20,22 @@
 // ===== PAGE SETUP =====
 #set page(
   paper: "a4",
-  margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 24mm),
-  fill: color-bg,
+  margin: (
+    left: 20mm,
+    right: 20mm,
+    top: 20mm,
+    bottom: 24mm,
+  ),
+  background: rect(fill: color-bg, width: 100%, height: 100%),
   header: context [
     #set text(fill: color-gray, size: 8pt)
-    #align(right)[No One is Coming — PZ B42 Modlist]
+    #align(right)[No One Is Co ming — PZ B42 Modlist]
   ],
+
   footer: context [
     #set text(fill: color-orange, size: 10pt)
     #align(center)[
-      No One is Coming  —  Page #counter(page).display("1")
+      No One Is Coming — Page #counter(page).display("1")
     ]
   ],
 )
@@ -167,21 +173,17 @@
     text(fill: color-text)[#value],
   )).flatten()
 
-  let even-bg = color-bg
-  let odd-bg = color-callout-bg
-  let fills = ()
-  for i in range(0, rows.len()) {
-    let bg = if calc.even(i) { even-bg } else { odd-bg }
-    fills.push(bg)
-    fills.push(bg)
-  }
-
   table(
     columns: (40%, 60%),
     stroke: 0.5pt + color-gray,
     inset: 8pt,
-    fill: (_, y) => fills.at(y, default: even-bg),
+    fill: (_, y) => if calc.even(y) {
+      color-bg
+    } else {
+      color-callout-bg
+    },
     ..cells,
   )
+
   v(12pt)
 }
