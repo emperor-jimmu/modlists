@@ -19,10 +19,10 @@
 
 // ===== PAGE SETUP =====
 #let page-header = context [
-  #set text(fill: color-gray, size: 8pt)
+  #set text(fill: color-orange, size: 9pt)
   #align(right)[
-    No One is Coming — PZ B42 Modlist  \
-    #counter(page).display()
+    No One is Coming  \
+    Page #counter(page).display()
   ]
 ]
 
@@ -31,11 +31,6 @@
   margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 20mm),
   fill: color-bg,
   header: page-header,
-  footer: context [
-    #set text(fill: color-orange, size: 10pt)
-    #align(center)[No One is Coming]
-  ],
-  numbering: "1",
 )
 
 // ===== TEXT & LINKS =====
