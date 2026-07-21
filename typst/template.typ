@@ -6,22 +6,16 @@
   set page(
     paper: "a4",
     fill: charcoal,
-    margin: (left: 3cm, right: 3cm, top: 3cm, bottom: 3cm),
+    margin: (left: 1.8cm, right: 1.8cm, top: 2.5cm, bottom: 2.5cm),
   )
 
   v(10%)
 
   align(center)[
-    #image("../assets/logo.png", width: 40%)
+    #image("../assets/logo.png", width: 70%)
   ]
 
   v(2em)
-
-  align(center)[
-    #text(font: display-font, size: 40pt, fill: cover-gold, weight: "bold")[No Crown Without Blood]
-  ]
-
-  v(0.8em)
 
   align(center)[
     #text(font: heading-font, size: 16pt, fill: cover-cream)[A Bannerlord Modlist & Guide]
