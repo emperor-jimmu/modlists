@@ -29,15 +29,12 @@
 #set page(
   paper: "a4",
   margin: (left: 22mm, right: 22mm, top: 22mm, bottom: 24mm),
-  header: locate(loc => {
-    let h1s = query(heading.where(level: 1), loc)
-    if h1s.len() > 0 {
-      set text(size: 8pt, fill: gray, font: body-font)
-      h1s.last().body
-    }
-  }),
+  header: [
+    #set text(size: 8pt, fill: gray, font: body-font)
+    #align(right)[No One Is Coming — PZ B42 Modlist]
+  ],
   header-ascent: 10pt,
-  footer: [
+  footer: context [
     #line(length: 100%, stroke: 0.5pt + border-color)
     #set text(size: 9pt, fill: gray, font: body-font)
     #align(center)[Page #counter(page).display("1")]
@@ -69,7 +66,7 @@
 
 // ===== INLINE STYLING =====
 #show strong: set text(font: body-font, weight: "bold")
-#show emph: set text(font: body-font, weight: "italic")
+#show emph: set text(font: body-font, style: "italic")
 #show link: set text(fill: amber)
 
 // ===== CODE =====
