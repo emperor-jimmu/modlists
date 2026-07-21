@@ -14,16 +14,16 @@ For your first game, pick a small, stable ruler where you can learn the mechanic
 
 #heading(level: 3)[Recommended First Stops]
 
-- **Dublin (1066, Ireland):** Independent Petty King under no liege. No aggressive neighbors (the Irish are similarly weak). Learn at your own pace and form the Kingdom of Ireland. This is *the* tutorial start.
-- **Matilda di Canossa (1066, Tuscany):** Powerful Italian duke under the Holy Roman Empire. Strong economy, central Italy, good marriage options. You must navigate imperial politics but have enough power to matter.
-- **Count of Vermandois (1066, France):** Small French count protected by France. Dynasty prestige from being Karlings. Simple domain, strong liege, safe learning environment.
+- *Dublin (1066, Ireland):* Independent Petty King under no liege. No aggressive neighbors (the Irish are similarly weak). Learn at your own pace and form the Kingdom of Ireland. This is *the* tutorial start.
+- *Matilda di Canossa (1066, Tuscany):* Powerful Italian duke under the Holy Roman Empire. Strong economy, central Italy, good marriage options. You must navigate imperial politics but have enough power to matter.
+- *Count of Vermandois (1066, France):* Small French count protected by France. Dynasty prestige from being Karlings. Simple domain, strong liege, safe learning environment.
 
 #heading(level: 3)[Starts to Avoid]
 
-- **Byzantine Empire:** Too complex. Intrigue is lethal, vassals are treacherous, mechanics are overwhelming.
-- **Tribal rulers (867 anywhere):** Different economy (prestige-based, not gold). Raiding, prestige deaths, succession chaos.
-- **Muslim rulers:** Different succession (multiple heirs, no primogeniture), different faith mechanics.
-- **867 Viking starts:** Everyone hates you, raids go both ways, and your first decade is war.
+- *Byzantine Empire:* Too complex. Intrigue is lethal, vassals are treacherous, mechanics are overwhelming.
+- *Tribal rulers (867 anywhere):* Different economy (prestige-based, not gold). Raiding, prestige deaths, succession chaos.
+- *Muslim rulers:* Different succession (multiple heirs, no primogeniture), different faith mechanics.
+- *867 Viking starts:* Everyone hates you, raids go both ways, and your first decade is war.
 
 #heading(level: 2)[The Interface]
 
@@ -334,7 +334,7 @@ Once you're an emperor with stabilized succession, the game changes:
 
 #heading(level: 2)[Staying on the Right CK3 Version]
 
-CK3 auto-updates on Steam. This guide targets CK3 **v1.19.x**. When the game updates to a new major version:
+CK3 auto-updates on Steam. This guide targets CK3 *v1.19.x*. When the game updates to a new major version:
 
 #block[
 *To stay on this guide's version:*

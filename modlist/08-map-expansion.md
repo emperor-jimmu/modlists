@@ -4,23 +4,23 @@ Extended map regions, new dejure setups, and additional provinces.
 
 ## More Bookmarks+ (Map Component)
 
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2851234567
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2216670956
 - **Mod Version:** 1.19.x
 - **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-20
 - **Load Order:** Mid (before RICE)
 - **Essential:** Yes
-- **Performance:** Minor
+- **Performance:** Moderate
 
-Beyond new start dates, MB+ adjusts dejure borders, adds missing historical titles, and corrects cultural/religious map setup for each era.
+Beyond new start dates, MB+ adjusts dejure borders, adds ~300 new baronies, thousands of new CoAs, and corrects cultural/religious map setup for each era. Extends map detail from Iberia to Mongolia.
 
-**Gameplay Impact:** More historically accurate map. Dejure empires exist earlier. Border gore from ahistorical setups is reduced.
+**Gameplay Impact:** More historically accurate map. Dejure empires exist earlier. Border gore from ahistorical setups is reduced. Heavier on system resources — pair with Population Control.
 
 ---
 
-## RICE (Map Component)
+## Regional Immersion and Cultural Enrichment (RICE) — Map Component
 
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2834567890
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2273832430
 - **Mod Version:** 1.19.x
 - **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-15

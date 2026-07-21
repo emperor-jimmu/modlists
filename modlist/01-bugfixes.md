@@ -4,7 +4,7 @@ Mods that fix vanilla bugs, balance issues, and AI problems. Install first in lo
 
 ## Unofficial Patch
 
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2824295320
+- **Link:** https://steamcommunity.com/workshop/filedetails/?id=2871648329
 - **Mod Version:** 1.19.x
 - **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-15
@@ -20,7 +20,7 @@ Fixes hundreds of vanilla bugs: broken event triggers, incorrect script values, 
 
 ## Community Flavor Pack (Fixes Module)
 
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2824295320
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2220098919
 - **Mod Version:** 1.19.x
 - **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-20

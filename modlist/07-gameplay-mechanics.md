@@ -63,3 +63,67 @@ Adds 15+ new court positions: Chancellor of the Exchequer, Master of Horse, Spym
 Limits population growth of lowborn characters, culling excess courtiers and wanderers. Late-game lag from 10,000+ characters is significantly reduced.
 
 **Gameplay Impact:** Faster performance in late game (post-1200). Fewer irrelevant characters to scroll through.
+
+---
+
+## New Weapon: Greatsword
+
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=3412981336
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
+- **Updated:** 2026-06-10
+- **Load Order:** Mid
+- **Essential:** No
+- **Performance:** None
+
+Adds Greatswords as a new weapon type with unique Men-at-Arms units, cultural traditions, and innovation requirements. Several regional variants with different stats and costs.
+
+**Gameplay Impact:** New strategic options for military composition. Cultures with greatsword traditions get unique MAA that fill a different niche than standard heavy infantry.
+
+---
+
+## Gambo's Legendary — Early Bookmarks and Super Compatch
+
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=3630559851
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
+- **Updated:** 2026-06-15
+- **Load Order:** Late (after all other mods)
+- **Essential:** No
+- **Performance:** Minor
+
+The successor to Gambo's Most Excellent Super Compatch. Makes major mods work together: EPE, CFP, MB+, RICE, Community Title Project, Culture Expanded, and more. Also adds early bookmarks and flavor. Provides a working load order template.
+
+**Gameplay Impact:** Essential compatibility layer for large modlists. Ensures major mods don't conflict. The author provides a recommended load order for all supported mods. Note: this replaces the older (1.17-only) Gambo's Most Excellent Super Compatch.
+
+---
+
+## Multilingual Education
+
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2756456587
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
+- **Updated:** 2026-06-01
+- **Load Order:** Mid
+- **Essential:** No
+- **Performance:** None
+
+Allows you to designate up to three education languages for your court. Children may speak them fluently by age six. Two modes: Passive Learning (children pick up languages naturally) and Active Learning (guaranteed fluency at a stress cost). AI uses the feature too.
+
+**Gameplay Impact:** Your children actually speak the languages of your realm's cultures. More realistic multilingual courts without micromanagement.
+
+---
+
+## Search & Trade Artifacts
+
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2962238514
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
+- **Updated:** 2026-06-10
+- **Load Order:** Mid
+- **Essential:** No
+- **Performance:** None
+
+Adds an artifact finder and trading system: search for artifacts by type/quality/region, buy from other characters, and sell your own. The AI uses the system too, initiating buy/sell offers based on artifact usefulness.
+
+**Gameplay Impact:** Artifacts become real economic goods. You can actively hunt for specific relics, expand your treasury, or liquidate unwanted items. No more waiting for random event artifacts.

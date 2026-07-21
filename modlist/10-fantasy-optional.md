@@ -18,19 +18,19 @@ Post-apocalyptic total conversion set in a dark fantasy version of Europe. Undea
 
 ---
 
-## Godherja
+## Godherja: The Dying World
 
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2856789012
-- **Mod Version:** 1.7.0
-- **CK3 Version:** 1.19.x
-- **Updated:** 2026-06-01
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2326030123
+- **Mod Version:** 0.3.3.4
+- **CK3 Version:** 1.16.x (not yet updated to 1.19)
+- **Updated:** 2025-07-13
 - **Load Order:** Late
 - **Essential:** No
 - **Performance:** Heavy
 
-Total conversion set in an original dark fantasy world. Unique magic system, shattered empire, divine curses. Fully custom map, cultures, religions.
+Total conversion set in an original dark fantasy world. Unique magic system, shattered empire, divine curses. Fully custom map, cultures, religions. Features migration mechanics, dynamic civil wars, colonization, and a unique magic system.
 
-**Gameplay Impact:** Completely different game. Magic and fantasy elements are central. Requires learning a new world from scratch.
+**Gameplay Impact:** Completely different game. Magic and fantasy elements are central. Requires learning a new world from scratch. Note: currently only compatible with CK3 1.16.x — check for 1.19 update before using.
 
 ---
 

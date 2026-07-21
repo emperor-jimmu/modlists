@@ -4,7 +4,7 @@ Interface improvements, tooltip enhancements, and quality-of-life changes.
 
 ## Better UI Scaling
 
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2872154321
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2217509277
 - **Mod Version:** 1.19.x
 - **CK3 Version:** 1.19.x
 - **Updated:** 2026-06-10
@@ -20,7 +20,7 @@ Fixes UI scaling for high-resolution monitors (1440p, 4K). Vanilla scaling makes
 
 ## Clear Notifications
 
-- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2881034987
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2261468688
 - **Mod Version:** 1.3.0
 - **CK3 Version:** 1.19.x
 - **Updated:** 2026-04-20
@@ -28,9 +28,9 @@ Fixes UI scaling for high-resolution monitors (1440p, 4K). Vanilla scaling makes
 - **Essential:** No
 - **Performance:** None
 
-Categorizes and groups notifications so the top bar doesn't overflow with icons. Includes a "mark all read" button.
+Adds a button (hotkey: F) to clear all notifications at once. Vanilla requires clearing each individually.
 
-**Gameplay Impact:** Less visual clutter, easier to spot important alerts.
+**Gameplay Impact:** Less visual clutter, faster cleanup of stale notifications.
 
 ---
 
@@ -63,3 +63,35 @@ Characters use name formatting appropriate to their rank (King William, Emperor 
 Adds an expanded map tooltip showing terrain, holdings, development, supply, and control at a glance.
 
 **Gameplay Impact:** Faster strategic decisions without clicking into every province.
+
+---
+
+## Better Extended Outliner
+
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=3732078752
+- **Mod Version:** 1.19.x
+- **CK3 Version:** 1.19.x
+- **Updated:** 2026-07-01
+- **Load Order:** Mid
+- **Essential:** No
+- **Performance:** None
+
+Combines Expanded Outliner features with manual sorting, elective title control from the outliner, army management tools, and pinned title management. Updated and expanded for CK3 1.19.
+
+**Gameplay Impact:** Full outliner workflow control — sort, filter, manage armies and titles without opening multiple panels.
+
+---
+
+## Custom Title Form of Address
+
+- **Link:** https://steamcommunity.com/sharedfiles/filedetails/?id=2653885896
+- **Mod Version:** 0.4.0
+- **CK3 Version:** 1.18.x (not yet updated to 1.19)
+- **Updated:** 2026-03-01
+- **Load Order:** Mid
+- **Essential:** No
+- **Performance:** None
+
+Allows you to set a custom form of address for your primary title (e.g., "Great King" instead of "King", "Tsar" instead of "Emperor"). Affects all game UI and events where your title appears.
+
+**Gameplay Impact:** Pure roleplay. Customize how your realm addresses you. Note: currently on CK3 1.18 — verify 1.19 update before using.
