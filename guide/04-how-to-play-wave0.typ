@@ -1,6 +1,8 @@
 // 04-how-to-play-wave0.typ -- Essential Gameplay Primer
 
 #pagebreak()
+#import "lib.typ": callout
+
 = How to Play: Wave 0
 
 An essential, spoiler-free primer for new Mass Effect players.

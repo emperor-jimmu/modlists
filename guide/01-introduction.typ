@@ -1,6 +1,8 @@
 // 01-introduction.typ -- Introduction
 
 #pagebreak()
+#import "lib.typ": callout
+
 = Introduction
 
 == What This Guide Is

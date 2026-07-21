@@ -1,6 +1,8 @@
 // 02-installation.typ -- Full ME3Tweaks Installation Guide
 
 #pagebreak()
+#import "lib.typ": callout
+
 = Installation
 
 This chapter walks you through setting up the complete ME3Tweaks modding

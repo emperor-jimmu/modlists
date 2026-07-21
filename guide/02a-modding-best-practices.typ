@@ -1,6 +1,8 @@
 // 02a-modding-best-practices.typ -- Modding Best Practices
 
 #pagebreak()
+#import "lib.typ": callout
+
 = Modding Best Practices
 
 Follow these practices for a stable, conflict-free modded game. The

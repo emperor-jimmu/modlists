@@ -1,6 +1,8 @@
 // 09-bugfixes-patches.typ -- Bugfixes and Community Patches
 
 #pagebreak()
+#import "lib.typ": callout
+
 = Bugfixes and Community Patches
 
 These mods are foundational. Install them first, before any other category.

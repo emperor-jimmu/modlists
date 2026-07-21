@@ -1,6 +1,8 @@
 // 98-conflicts.typ -- Known Conflicts
 
 #pagebreak()
+#import "lib.typ": callout
+
 = Known Conflicts
 
 Documented incompatibilities, conflict resolution steps, and DLC mount

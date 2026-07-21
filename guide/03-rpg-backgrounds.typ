@@ -1,6 +1,8 @@
 // 03-rpg-backgrounds.typ -- RPG Character Creation Backgrounds
 
 #pagebreak()
+#import "lib.typ": callout
+
 = RPG Backgrounds
 
 Each wave has a suggested character profile. These cover only the choices

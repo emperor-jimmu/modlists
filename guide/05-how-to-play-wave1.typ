@@ -1,6 +1,8 @@
 // 05-how-to-play-wave1.typ -- Comprehensive Advanced Guide
 
 #pagebreak()
+#import "lib.typ": callout
+
 = How to Play: Wave 1
 
 A comprehensive deep-dive into Mass Effect mechanics for experienced

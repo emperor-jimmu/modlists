@@ -1,5 +1,7 @@
 // 00-cover.typ -- Cover page
 
+#import "lib.typ": clr-n7-red, clr-blue, clr-muted
+
 #set align(center + horizon)
 #v(3cm)
 
@@ -7,7 +9,7 @@
 #v(1.2cm)
 
 #text(
-  font: ("Orbitron", "Segoe UI", "DejaVu Sans"),
+  font: ("Orbitron", "Segoe UI", "Arial"),
   size: 36pt,
   fill: clr-n7-red,
   weight: "bold",

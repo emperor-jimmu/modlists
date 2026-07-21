@@ -1,6 +1,8 @@
 // 02b-mem-texture-guide.typ -- MEM Texture Installation Guide
 
 #pagebreak()
+#import "lib.typ": callout
+
 = MEM Texture Guide
 
 Mass Effect Modder (MEM) is the tool for installing texture replacements
