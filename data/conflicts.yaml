@@ -1,0 +1,6 @@
+conflicts: []
+# Format:
+# - wave: 0
+#   mods: ["Mod A", "Mod B"]
+#   symptom: "Game crashes on load"
+#   workaround: "Disable Mod B"
