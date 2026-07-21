@@ -114,12 +114,27 @@ mods:
       mechanic_changes: false
       ui_qol: true
 
+  - name: "Auto Reforge"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2707400823"
+    description: "Automatically reforges items to find the best modifier. Saves time and coins when min-maxing equipment."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
 load_order:
   - "Which Mod Is This From? (WMITF)"
   - "Colored Damage Types"
   - "Boss Cursor"
   - "Shop Expander"
   - "AlchemistNPC Lite"
+  - "Auto Reforge"
   - "Fargo's Mutant Mod"
   - "Magic Storage"
   - "Thorium Mod"

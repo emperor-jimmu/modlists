@@ -100,20 +100,6 @@ mods:
       mechanic_changes: false
       ui_qol: true
 
-  - name: "Auto Reforge"
-    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2707400823"
-    description: "Automatically reforges items to find the best modifier. Saves time and coins when min-maxing equipment."
-    dependencies: []
-    load_before: []
-    load_after: []
-    impact:
-      new_items: false
-      new_npcs: false
-      new_biomes: false
-      new_bosses: false
-      mechanic_changes: false
-      ui_qol: true
-
 load_order:
   - "Recipe Browser"
   - "Boss Checklist"
@@ -122,4 +108,3 @@ load_order:
   - "Wing Slot Extra"
   - "Shorter Respawn Time"
   - "Better Boss Health Bar"
-  - "Auto Reforge"
