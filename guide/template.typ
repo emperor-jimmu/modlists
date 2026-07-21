@@ -1,4 +1,4 @@
-// No One is Coming — Shared Template
+// No One is Coming — Shared Template (Light Mode)
 // Usage: typst compile --font-path assets/fonts guide/main.typ output/No-One-Is-Coming.pdf
 
 // ===== FONTS =====
@@ -8,182 +8,76 @@
 #let mono-font = "JetBrains Mono"
 
 // ===== COLOR PALETTE =====
-#let color-bg = rgb("#1A1A1A")
-#let color-text = rgb("#F5F0E8")
-#let color-crimson = rgb("#8B0000")
-#let color-orange = rgb("#CC5500")
-#let color-green = rgb("#556B2F")
-#let color-gray = rgb("#888888")
-#let color-callout-bg = rgb("#252525")
-#let color-info-border = rgb("#4A6A8A")
+#let white       = rgb("#FFFFFF")
+#let body-color  = rgb("#1E1E1E")
+#let heading-color = rgb("#2D2D2D")
+#let green       = rgb("#5C7A2A")
+#let amber       = rgb("#B34700")
+#let red         = rgb("#8B0000")
+#let blue        = rgb("#4A6A8A")
+#let gray        = rgb("#666666")
+
+#let green-light  = rgb("#EDF2E4")
+#let amber-light  = rgb("#FEF0E4")
+#let red-light    = rgb("#FDE8E8")
+#let blue-light   = rgb("#EBF0F6")
+#let gray-light   = rgb("#F4F4F4")
+#let zebra        = rgb("#FAFAFA")
+#let border-color = rgb("#DDDDDD")
 
 // ===== PAGE SETUP =====
 #set page(
   paper: "a4",
-  margin: (
-    left: 20mm,
-    right: 20mm,
-    top: 20mm,
-    bottom: 24mm,
-  ),
-  background: rect(fill: color-bg, width: 100%, height: 100%),
-  header: context [
-    #set text(fill: color-gray, size: 8pt)
-    #align(right)[No One Is Co ming — PZ B42 Modlist]
+  margin: (left: 22mm, right: 22mm, top: 22mm, bottom: 24mm),
+  header: locate(loc => {
+    let h1s = query(heading.where(level: 1), loc)
+    if h1s.len() > 0 {
+      set text(size: 8pt, fill: gray, font: body-font)
+      h1s.last().body
+    }
+  }),
+  header-ascent: 10pt,
+  footer: [
+    #line(length: 100%, stroke: 0.5pt + border-color)
+    #set text(size: 9pt, fill: gray, font: body-font)
+    #align(center)[Page #counter(page).display("1")]
   ],
-
-  footer: context [
-    #set text(fill: color-orange, size: 10pt)
-    #align(center)[
-      No One Is Coming — Page #counter(page).display("1")
-    ]
-  ],
+  footer-descent: 8pt,
 )
 
-// ===== TEXT & LINKS =====
+// ===== BASE TEXT & PARAGRAPH =====
 #set text(
-  font: (body-font, heading-font),
+  font: body-font,
   size: 11pt,
-  fill: color-text,
+  fill: body-color,
   lang: "en",
 )
 
-#show link: set text(fill: color-orange)
+#set par(
+  leading: 0.65em,
+  justify: true,
+  first-line-indent: 0pt,
+  spacing: 0.6em,
+)
 
-// ===== HEADINGS =====
-#show heading.where(level: 1): it => {
-  v(12pt, weak: true)
-  set text(font: heading-font, size: 22pt, fill: color-crimson, weight: "regular")
-  it
-  v(4pt)
-  line(length: 100%, stroke: 1pt + color-crimson)
-  v(8pt)
-}
+// ===== LISTS =====
+#set list(
+  indent: 1.5em,
+  body-indent: 0.5em,
+  spacing: 0.3em,
+)
 
-#show heading.where(level: 2): it => {
-  v(10pt, weak: true)
-  set text(font: heading-font, size: 17pt, fill: color-crimson, weight: "regular")
-  it
-  v(8pt)
-}
+// ===== INLINE STYLING =====
+#show strong: set text(font: body-font, weight: "bold")
+#show emph: set text(font: body-font, weight: "italic")
+#show link: set text(fill: amber)
 
-#show heading.where(level: 3): it => {
-  v(8pt, weak: true)
-  set text(font: heading-font, size: 14pt, fill: color-orange, weight: "regular")
-  it
-  v(6pt)
-}
-
-// ===== CALLOUT BLOCKS =====
-#let callout(color, icon, label, body) = {
+// ===== CODE =====
+#show raw: set text(font: mono-font, size: 10pt, fill: body-color)
+#show raw.where(block: true): it => {
   block(
-    fill: color-callout-bg,
-    stroke: (left: 4pt + color),
-    inset: 12pt,
-    radius: 2pt,
-    [
-      #text(fill: color, weight: "bold", size: 11pt)[#icon #label]
-      #v(4pt)
-      #set text(fill: color-text)
-      #body
-    ]
-  )
-  v(6pt)
-}
-
-#let tip(body) = callout(color-green, none, "TIP:", body)
-#let warning(body) = callout(color-orange, none, "WARNING:", body)
-#let danger(body) = callout(color-crimson, none, "DANGER:", body)
-#let info(body) = callout(color-info-border, none, "INFO:", body)
-#let note(body) = callout(color-gray, none, "NOTE:", body)
-
-// ===== COVER PAGE =====
-#let cover-page() = {
-  align(center + horizon,
-    block(width: 100%, fill: color-bg, {
-      v(40mm)
-      image("assets/logo.png", width: 60%)
-      v(12mm)
-      text(font: heading-font, size: 36pt, fill: color-crimson)[NO ONE IS COMING]
-      v(8mm)
-      text(font: body-font, size: 14pt, fill: color-text)[
-        A Project Zomboid Build 42 Modlist & Survival Guide
-      ]
-      v(10mm)
-      text(font: body-font, size: 10pt, fill: color-gray)[
-        Build 42.12.3 | 3 Waves | For New & Veteran Survivors
-      ]
-      v(10mm)
-      text(font: body-font, size: 8pt, fill: color-gray)[
-        Best viewed digitally. Print at your own toner expense.
-      ]
-      v(20mm)
-      text(font: body-font, size: 10pt, fill: color-gray)[Compiled July 2026]
-    })
-  )
-  pagebreak()
-}
-
-// ===== WAVE DIVIDER PAGE =====
-#let wave-divider(number, name, story) = {
-  align(center + horizon,
-    block(width: 100%, fill: color-bg, {
-      v(50mm)
-      text(font: heading-font, size: 28pt, fill: color-crimson)[Wave #number]
-      v(8mm)
-      text(font: heading-font, size: 36pt, fill: color-orange)[#name]
-      v(16mm)
-      text(font: body-font, size: 12pt, fill: color-text, style: "italic")[#story]
-      v(30mm)
-      line(length: 60%, stroke: 1pt + color-crimson)
-      v(8mm)
-      text(font: heading-font, size: 14pt, fill: color-gray)[Begin Wave #number]
-    })
-  )
-  pagebreak()
-}
-
-// ===== MOD ENTRY =====
-#let mod-entry(name, workshop-id, category, dependencies, system-impact, description) = {
-  block(
-    fill: color-callout-bg,
-    inset: 12pt,
-    radius: 2pt,
-    [
-      #text(font: heading-font, size: 14pt, fill: color-orange)[#name]
-      #v(4pt)
-      #text(fill: color-orange, size: 10pt)[#link("https://steamcommunity.com/sharedfiles/filedetails/?id=" + workshop-id)[Steam Workshop]]
-      #v(4pt)
-      #text(fill: color-text, size: 10pt)[*Category:* #category]
-      #v(2pt)
-      #text(fill: color-text, size: 10pt)[*Dependencies:* #dependencies]
-      #v(2pt)
-      #text(fill: color-text, size: 10pt)[*System Impact:* #system-impact]
-      #v(4pt)
-      #text(fill: color-text, size: 11pt)[#description]
-    ]
-  )
-  v(8pt)
-}
-
-// ===== SETTINGS TABLE =====
-#let settings-table(rows) = {
-  let cells = rows.map(((key, value)) => (
-    text(fill: color-orange, weight: "bold")[#key],
-    text(fill: color-text)[#value],
-  )).flatten()
-
-  table(
-    columns: (40%, 60%),
-    stroke: 0.5pt + color-gray,
-    inset: 8pt,
-    fill: (_, y) => if calc.even(y) {
-      color-bg
-    } else {
-      color-callout-bg
-    },
-    ..cells,
-  )
-
-  v(12pt)
+    fill: gray-light,
+    inset: 10pt,
+    stroke: 0.5pt + border-color,
+  )[#it]
 }
