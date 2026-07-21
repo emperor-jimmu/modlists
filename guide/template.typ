@@ -129,3 +129,83 @@
 #let danger(body) = callout-block("Danger", body, red-light, red, red)
 #let info(body) = callout-block("Info", body, blue-light, blue, blue)
 #let note(body) = callout-block("Note", body, gray-light, border-color, gray)
+
+// ===== COVER PAGE =====
+#let cover-page() = {
+  set align(center + horizon)
+  set par(justify: false)
+  v(40mm)
+  image("assets/logo.png", width: 50%)
+  v(20mm)
+  text(size: 40pt, font: heading-font, fill: heading-color)[NO ONE IS COMING]
+  v(8mm)
+  text(size: 14pt, font: body-font, fill: gray)[A Project Zomboid Build 42 Modlist & Survival Guide]
+  v(16mm)
+  text(size: 10pt, font: body-font, fill: gray)[Build 42.12.3 · October 2025]
+  v(4mm)
+  text(size: 10pt, font: body-font, fill: gray)[Compiled #datetime.today().display("[month repr:long] [day] [year]")]
+  v(4mm)
+  text(size: 10pt, font: body-font, fill: gray, style: "italic")[Best viewed digitally. Print at your own toner expense.]
+  pagebreak()
+}
+
+// ===== WAVE DIVIDER PAGE =====
+#let wave-divider(number, name, story) = {
+  set align(center + horizon)
+  set par(justify: false)
+  v(60mm)
+  text(size: 28pt, font: heading-font, fill: heading-color)[WAVE #number]
+  v(8mm)
+  line(length: 40mm, stroke: 1pt + green)
+  v(8mm)
+  text(size: 36pt, font: heading-font, fill: amber)[#name]
+  v(16mm)
+  text(size: 12pt, font: body-font, fill: gray, style: "italic")[#story]
+  v(24mm)
+  line(length: 40mm, stroke: 0.5pt + border-color)
+  v(8mm)
+  text(size: 10pt, font: body-font, fill: gray)[Begin Wave #number]
+  pagebreak()
+}
+
+// ===== MOD ENTRY =====
+#let mod-entry(name, workshop-id, category, dependencies, system-impact, description) = {
+  block(
+    fill: gray-light,
+    inset: (x: 14pt, y: 12pt),
+    radius: 0pt,
+    stroke: none,
+    [
+      #set par(spacing: 0.4em)
+      #text(size: 13pt, font: heading-font, fill: amber)[#name]
+      #h(1em)
+      #link("https://steamcommunity.com/sharedfiles/filedetails/?id=" + workshop-id)[
+        #text(size: 9pt, fill: amber)[Workshop #workshop-id]
+      ]
+      #v(4pt)
+      #text(size: 9pt, fill: gray)[Category: #category · Dependencies: #dependencies · System Impact: #system-impact]
+      #v(6pt)
+      #description
+    ]
+  )
+  v(8pt, weak: true)
+}
+
+// ===== SETTINGS TABLE =====
+#let settings-table(rows) = {
+  let cells = rows.map(((key, value)) => (
+    text(weight: "bold", fill: body-color)[#key],
+    text(fill: body-color)[#value],
+  )).flatten()
+
+  set table(
+    columns: (auto, 1fr),
+    stroke: 0.5pt + border-color,
+    inset: (x: 10pt, y: 6pt),
+    fill: (_, y) => if calc.rem(y, 2) == 0 { white } else { zebra },
+  )
+  table(
+    ..cells,
+  )
+  v(12pt, weak: true)
+}
