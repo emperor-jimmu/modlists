@@ -1,8 +1,8 @@
 // main.typ — The Long Ascent master template
-// Compile with: typst compile --font-path assets/fonts template/main.typ output/the-long-ascent.pdf
+// Compile with: typst compile --root . --font-path assets/fonts template/main.typ output/the-long-ascent.pdf
 //
 // Fonts are resolved from assets/fonts/ via the --font-path CLI flag.
-// No system font dependency required.
+// All paths are relative to project root (--root .).
 
 #import "lib.typ": *
 
@@ -63,7 +63,6 @@
 #chapter-heading([Table of Contents])
 #outline(
   indent: 1em,
-  fill: line(fill: mun-gray),
 )
 
 // ─── Installation ────────────────────────────────────────────────

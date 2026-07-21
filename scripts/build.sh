@@ -41,7 +41,7 @@ fi
 
 # Compile
 echo "[1/1] Compiling PDF with Typst..."
-typst compile --font-path assets/fonts template/main.typ output/the-long-ascent.pdf
+typst compile --root . --font-path assets/fonts template/main.typ output/the-long-ascent.pdf
 
 echo ""
 echo "=== Build complete ==="

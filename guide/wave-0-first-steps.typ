@@ -1,5 +1,7 @@
 // guide/wave-0-first-steps.typ
 
+#import "../template/lib.typ": *
+
 #section-heading([About Wave 0])
 
 Wave 0 is for new players or veterans returning to stock KSP. It adds only UI and quality-of-life mods — nothing that changes gameplay, parts, or physics. You will learn core skills in the stock game before any mechanics become more complex.

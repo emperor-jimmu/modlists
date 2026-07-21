@@ -1,5 +1,7 @@
 // guide/wave-1-going-further.typ
 
+#import "../template/lib.typ": *
+
 #section-heading([About Wave 1])
 
 Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical additions that add content without fundamentally changing difficulty. You should be comfortable with the skills taught in Wave 0 (orbit, Mun landing, docking) before installing these mods.

@@ -1,5 +1,7 @@
 // guide/installation.typ
 
+#import "../template/lib.typ": *
+
 #chapter-heading([Installation Guide])
 
 #section-heading([Prerequisites])
@@ -81,10 +83,10 @@ CKAN may warn about mod conflicts. When installing via the `.ckan` metapackages,
 To rebuild this PDF from the source Typst files:
 
 #code-block[
-  # Windows
+  \# Windows
   scripts\build.bat
 
-  # Linux / macOS
+  \# Linux / macOS
   bash scripts/build.sh
 ]
 

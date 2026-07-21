@@ -1,5 +1,7 @@
 // guide/appendix.typ
 
+#import "../template/lib.typ": *
+
 #section-heading([Maneuver Reference Card])
 
 #section-heading([Delta-V Map — Stock Kerbol System])

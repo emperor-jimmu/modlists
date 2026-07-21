@@ -27,9 +27,7 @@
 
 // ─── Page Setup ──────────────────────────────────────────────────
 
-#let page-setup(
-  page,
-) = {
+#let page-setup(it) = {
   set page(
     paper: "a4",
     margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm),
@@ -41,6 +39,7 @@
   )
   set text(font: body-font, size: 10pt, fill: text-dark)
   set par(leading: 0.6em, justify: true)
+  it
 }
 
 // ─── Headings ────────────────────────────────────────────────────
