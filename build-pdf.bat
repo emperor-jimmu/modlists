@@ -1,6 +1,11 @@
 @echo off
 title "Fields, Vines and Barrels - PDF Builder"
 
+REM Refresh PATH from registry (picks up tools installed after this session started)
+for /f "tokens=2*" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v PATH 2^>nul') do set "MACHINE_PATH=%%b"
+for /f "tokens=2*" %%a in ('reg query "HKCU\Environment" /v PATH 2^>nul') do set "USER_PATH=%%b"
+set "PATH=%MACHINE_PATH%;%USER_PATH%;%PATH%"
+
 echo ============================================
 echo   Fields, Vines and Barrels - PDF Builder
 echo ============================================
@@ -16,9 +21,11 @@ if errorlevel 1 (
 REM Ensure output directory exists
 if not exist "output\" New-Item -ItemType Directory -Force -Path "output" >nul
 
-REM Detect XeLaTeX by looking for it directly
-for /f "delims=" %%i in ('where xelatex 2^>nul') do set XELATEX_PATH=%%i
-if defined XELATEX_PATH (
+REM Detect XeLaTeX
+set "HAS_XELATEX=0"
+xelatex --version >nul 2>&1
+if not errorlevel 1 set "HAS_XELATEX=1"
+if %HAS_XELATEX% equ 1 (
     set "ENGINE=--pdf-engine=xelatex --template=pandoc-template.tex"
     set "LABEL=XeLaTeX"
 ) else (
@@ -72,7 +79,7 @@ set PANDOC_EXIT=%ERRORLEVEL%
 if %PANDOC_EXIT% neq 0 (
     echo.
     echo [ERROR] Build failed ^(exit code %PANDOC_EXIT%^)
-) else if defined XELATEX_PATH (
+) else if %HAS_XELATEX% equ 1 (
     echo.
     echo [OK] PDF created: output\fields-vines-and-barrels.pdf
 ) else (

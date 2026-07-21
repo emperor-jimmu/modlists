@@ -10,14 +10,19 @@
 \usepackage{bookmark}
 \usepackage{longtable}
 \usepackage{array}
+\usepackage{booktabs}
+\usepackage{calc}
+
+% Fix: Pandoc generates \LTcaptype{none} for uncaptioned longtables — need a dummy counter
+\newcounter{none}
 
 % Colors
 \definecolor{deepgreen}{HTML}{2D5A27}
 \definecolor{warmgold}{HTML}{C8A84E}
 
-% Fonts
-\setmainfont{TeX Gyre Termes}
-\setsansfont{TeX Gyre Heros}
+% Fonts — use Windows system fonts (available on any Windows install)
+\setmainfont{Cambria}
+\setsansfont{Calibri}
 
 % Headings
 \titleformat{\chapter}{\Huge\bfseries\color{deepgreen}}{}{0em}{}
@@ -25,6 +30,7 @@
 \titleformat{\subsection}{\large\bfseries\color{deepgreen}}{}{0em}{}
 
 % Header/Footer
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE,RO]{\color{deepgreen}Fields, Vines \& Barrels}
