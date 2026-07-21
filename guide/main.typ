@@ -35,6 +35,7 @@
   fill: clr-n7-red,
 )
 #show link: set text(fill: clr-blue)
+#show raw: set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 10pt)
 
 // === Cover (front matter; no page number) ===
 #include "00-cover.typ"

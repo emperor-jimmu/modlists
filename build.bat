@@ -42,7 +42,7 @@ echo.
 echo Compiling PDF...
 echo.
 
-typst compile guide\main.typ output\The-Final-Cycle.pdf
+typst compile --font-path fonts guide\main.typ output\The-Final-Cycle.pdf
 
 if %errorlevel% equ 0 (
     echo.
