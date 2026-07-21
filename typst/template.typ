@@ -12,7 +12,7 @@
   v(10%)
 
   align(center)[
-    #image("assets/logo.png", width: 40%)
+    #image("../assets/logo.png", width: 40%)
   ]
 
   v(2em)
@@ -55,7 +55,7 @@
       right,
       text(font: heading-font, size: 8pt, fill: header-color)[*No Crown Without Blood*],
     ),
-    footer: align(
+    footer: context align(
       center,
       text(font: body-font, size: 8pt, fill: header-color)[— #counter(page).display() —],
     ),
