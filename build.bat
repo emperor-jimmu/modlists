@@ -55,7 +55,7 @@ REM --- Build ---
 echo Building PDF...
 echo.
 
-typst compile guide/_index.typ output/No-Crown-Without-Blood.pdf
+typst compile guide/_index.typ output/No-Crown-Without-Blood.pdf --root .
 
 if %errorlevel% neq 0 (
     echo.

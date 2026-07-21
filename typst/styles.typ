@@ -116,7 +116,7 @@
 #let mod-placeholder(category, examples, requirements) = {
   block(
     fill: code-bg,
-    stroke: (dash: "dashed") + 1.5pt + header-color.transparentize(50%),
+    stroke: (dash: "dashed", thickness: 1.5pt, paint: header-color.transparentize(50%)),
     radius: 6pt,
     inset: 10pt,
     breakable: true,
