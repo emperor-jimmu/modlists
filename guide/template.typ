@@ -107,3 +107,25 @@
   it
   v(8pt, weak: true)
 }
+
+// ===== CALLOUT BLOCKS =====
+#let callout-block(label, body, bg, border-c, label-c) = {
+  block(
+    fill: bg,
+    inset: 12pt,
+    radius: 0pt,
+    stroke: (left: 1.5pt + border-c),
+    [
+      #set par(spacing: 0.4em)
+      #text(size: 10pt, weight: "bold", fill: label-c)[#label: ]
+      #body
+    ]
+  )
+  v(6pt, weak: true)
+}
+
+#let tip(body) = callout-block("Tip", body, green-light, green, green)
+#let warning(body) = callout-block("Warning", body, amber-light, amber, amber)
+#let danger(body) = callout-block("Danger", body, red-light, red, red)
+#let info(body) = callout-block("Info", body, blue-light, blue, blue)
+#let note(body) = callout-block("Note", body, gray-light, border-color, gray)
