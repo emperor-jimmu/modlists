@@ -98,9 +98,8 @@
 
 // ===== COVER PAGE =====
 #let cover-page() = {
-  set page(fill: color-bg, margin: 0pt, header: none, footer: none)
   align(center + horizon,
-    block(width: 100%, height: 100%, fill: color-bg, {
+    block(width: 100%, fill: color-bg, {
       v(40mm)
       image("assets/logo.png", width: 60%)
       v(12mm)
@@ -122,20 +121,12 @@
     })
   )
   pagebreak()
-  // Restore normal page settings for subsequent pages
-  set page(
-    margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 20mm),
-    fill: color-bg,
-    header: page-header,
-    footer: page-footer,
-  )
 }
 
 // ===== WAVE DIVIDER PAGE =====
 #let wave-divider(number, name, story) = {
-  set page(fill: color-bg, margin: 20mm)
   align(center + horizon,
-    block(width: 100%, height: 100%, fill: color-bg, {
+    block(width: 100%, fill: color-bg, {
       v(50mm)
       text(font: heading-font, size: 28pt, fill: color-crimson)[Wave #number]
       v(8mm)
