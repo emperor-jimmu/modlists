@@ -7,3 +7,5 @@ Desktop.ini
 ~$*
 .vscode/
 .idea/
+.playwright-mcp/
+search-b42-framework.yml
