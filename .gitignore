@@ -1,0 +1,9 @@
+output/*.pdf
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.temp
+~$*
+.vscode/
+.idea/
