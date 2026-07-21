@@ -27,21 +27,84 @@ All waves use the *[B42] Mod Manager* as the foundation for managing mods.
   "Essential tool for managing mods in Build 42. Create mod profiles (one per wave), reorder mods, save/load configurations, and detect known conflicts.",
 )
 
-=== Mod Manager Setup
+=== Installation
 
 #list(
-  [Subscribe to the mod on Steam Workshop using the link above.],
-  [Launch Project Zomboid. On the main menu, click *Mods*.],
-  [Enable *[B42] Mod Manager* and restart if prompted.],
-  [Return to the main menu and click the new *Mod Manager* button.],
-  [Create a profile for the wave you're playing (e.g., "Wave 0 — The First Night").],
-  [For each mod in the wave: subscribe on Steam Workshop, then enable it in your profile.],
-  [Arrange mods in the correct load order (see Installation chapter).],
-  [Save the profile and launch the game through the Mod Manager.],
+  [Subscribe to *[B42] Mod Manager* on Steam Workshop using the link above.],
+  [Launch Project Zomboid. On the main menu, click *Mods* in the bottom-left.],
+  [Find *[B42] Mod Manager* in the list and click the toggle to enable it. A popup may appear — click *Enable*.],
+  [Exit the Mods screen and return to the main menu. You should now see a new *Mod Manager* button on the left side. Click it.],
+)
+
+=== Profiles
+
+Profiles let you save and switch between different mod configurations. Each wave in this guide should have its own profile:
+
+#list(
+  [Inside the Mod Manager, click *New Profile*.],
+  [Name it after the wave (e.g., "Wave 0 — The First Night").],
+  [The profile starts empty. You'll add mods to it in the next step.],
+  [Create additional profiles for each wave you plan to play.],
 )
 
 #tip[
-  Always launch through the Mod Manager, not the vanilla Mods screen. The manager ensures your load order is respected and warns about missing dependencies.
+  Profiles are stored in your Zomboid user folder and persist across game sessions. You can switch between them at any time by selecting a different profile in the Mod Manager.
+]
+
+=== Adding Mods to a Profile
+
+#list(
+  [In the Mod Manager, select the profile you want to configure.],
+  [The left panel lists *Available Mods* — everything you've subscribed to on Steam Workshop.],
+  [Find a mod and click the green arrow to move it to the *Enabled Mods* panel on the right.],
+  [You can also double-click a mod name to toggle it.],
+  [Add every mod listed in your wave's Modlist chapter, in the order specified.],
+  [If a mod shows a red warning icon, it means a dependency is missing — check the mod's Workshop page for requirements.],
+)
+
+=== Load Order
+
+Load order determines which mod takes priority when multiple mods change the same thing. The Mod Manager lets you drag and drop mods to reorder them:
+
+#list(
+  [Click and hold a mod in the *Enabled Mods* panel.],
+  [Drag it up or down to change its position in the load order.],
+  [Mods at the *bottom* of the list load *last* and override mods above them.],
+  [Each wave's Modlist chapter includes a recommended load order. Follow it carefully.],
+  [As a rule: frameworks first, content next, graphics after, UI/QoL last, overrides at the very bottom.],
+)
+
+#danger[
+  Incorrect load order is the most common cause of mod conflicts and crashes. If your game won't start or mods aren't working, check the load order first. See the Installation chapter for detailed load order rules.
+]
+
+=== Saving and Launching
+
+#list(
+  [After adding all mods and arranging load order, click *Save Profile* at the bottom.],
+  [Click *Apply and Return to Main Menu*.],
+  [Back on the main menu, click *Solo* or *Host* as normal.],
+  [Your enabled mods are now active. Start a new game with the sandbox settings from your wave's Settings chapter.],
+)
+
+#warning[
+  Always launch your game *after* configuring the Mod Manager, not through the vanilla Mods screen. If you use the vanilla Mods screen after setting up the Mod Manager, the vanilla screen may overwrite your load order. Stick to the Mod Manager exclusively once you've set it up.
+]
+
+=== Switching Waves
+
+When you're ready to move to the next wave:
+
+#list(
+  [Return to the main menu and open the Mod Manager.],
+  [Select your new wave's profile from the dropdown (e.g., "Wave 1 — Scars and Lessons").],
+  [Subscribe to all mods listed in the new wave's Modlist chapter if you haven't already.],
+  [Add them to the profile and arrange load order.],
+  [Save and launch a *new game* — do not continue an old save with new mods.],
+)
+
+#info[
+  You can have all three profiles configured simultaneously. The Mod Manager tracks which mods belong to each profile independently. Switching between waves is just a profile selection away.
 ]
 
 === A Note on Difficulty

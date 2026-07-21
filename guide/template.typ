@@ -31,7 +31,7 @@
   ],
   footer: context [
     #set text(fill: color-gray, size: 8pt)
-    #align(center)[No One is Coming — Project Zomboid B42 Modlist]
+    #align(center)[No One is Coming — Project Zomboid B42 Modlist \ #counter(page).display()]
   ],
 )
 
@@ -97,7 +97,7 @@
   align(center + horizon,
     block(width: 100%, height: 100%, fill: color-bg, {
       v(40mm)
-      image("assets/logo.png", width: 40%)
+      image("assets/logo.png", width: 60%)
       v(12mm)
       text(font: heading-font, size: 36pt, fill: color-crimson)[NO ONE IS COMING]
       v(8mm)
@@ -148,15 +148,15 @@
     [
       #text(font: heading-font, size: 14pt, fill: color-orange)[#name]
       #v(4pt)
-      #link("https://steamcommunity.com/sharedfiles/filedetails/?id=" + workshop-id)[Steam Workshop]
+      #text(fill: color-orange, size: 10pt)[#link("https://steamcommunity.com/sharedfiles/filedetails/?id=" + workshop-id)[Steam Workshop]]
       #v(4pt)
-      #text(fill: color-gray, size: 10pt)[*Category:* #category]
+      #text(fill: color-text, size: 10pt)[*Category:* #category]
       #v(2pt)
-      #text(fill: color-gray, size: 10pt)[*Dependencies:* #dependencies]
+      #text(fill: color-text, size: 10pt)[*Dependencies:* #dependencies]
       #v(2pt)
-      #text(fill: color-gray, size: 10pt)[*System Impact:* #system-impact]
+      #text(fill: color-text, size: 10pt)[*System Impact:* #system-impact]
       #v(4pt)
-      #text(size: 11pt)[#description]
+      #text(fill: color-text, size: 11pt)[#description]
     ]
   )
   v(8pt)
