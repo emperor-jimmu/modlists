@@ -1,0 +1,18 @@
+{
+    "spec_version": "v1.34",
+    "identifier": "TheLongAscentWave0",
+    "name": "The Long Ascent — Wave 0: First Steps",
+    "abstract": "Wave 0 of The Long Ascent: UI and QoL mods for KSP 1.12.5. No gameplay changes.",
+    "author": "Nimrod Perez",
+    "license": "CC-BY-4.0",
+    "version": "1.0.0",
+    "depends": [
+        { "name": "ModuleManager" }
+    ],
+    "recommends": [
+    ],
+    "supports": [
+        { "name": "BreakingGround-DLC" },
+        { "name": "MakingHistory-DLC" }
+    ]
+}
