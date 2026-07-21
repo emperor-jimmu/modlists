@@ -39,32 +39,45 @@
   )
   set text(font: body-font, size: 10pt, fill: text-dark)
   set par(leading: 0.6em, justify: true)
+
+  // Heading styling — show rules so outline() detects them
+  show heading: set text(font: heading-font)
+  show heading.where(level: 1): it => {
+    v(1em)
+    set text(weight: "bold", size: 18pt, fill: ksp-orange)
+    it.body
+    v(0.3em)
+    line(length: 100%, stroke: 1pt + ksp-orange)
+    v(0.8em)
+  }
+  show heading.where(level: 2): it => {
+    v(0.8em)
+    set text(weight: "semibold", size: 14pt, fill: space-dark)
+    it.body
+    v(0.5em)
+  }
+  show heading.where(level: 3): it => {
+    v(0.6em)
+    set text(weight: "regular", size: 12pt, fill: space-light)
+    it.body
+    v(0.3em)
+  }
+
   it
 }
 
 // ─── Headings ────────────────────────────────────────────────────
 
 #let chapter-heading(title) = {
-  v(1em)
-  set text(font: heading-font, weight: "bold", size: 18pt, fill: ksp-orange)
-  title
-  v(0.3em)
-  line(length: 100%, stroke: 1pt + ksp-orange)
-  v(0.8em)
+  heading(level: 1, title)
 }
 
 #let section-heading(title) = {
-  v(0.8em)
-  set text(font: heading-font, weight: "semibold", size: 14pt, fill: space-dark)
-  title
-  v(0.5em)
+  heading(level: 2, title)
 }
 
 #let sub-heading(title) = {
-  v(0.6em)
-  set text(font: heading-font, weight: "regular", size: 12pt, fill: space-light)
-  title
-  v(0.3em)
+  heading(level: 3, title)
 }
 
 // ─── Wave Title Page ─────────────────────────────────────────────

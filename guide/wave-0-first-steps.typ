@@ -50,6 +50,66 @@ Start a *Science* or *Career* save on Normal difficulty. Sandbox is tempting but
   If you choose Career, use default settings. Don't touch the difficulty sliders yet — the stock balance is well-tested for new players.
 ]]
 
+#section-heading([Key Concepts])
+
+Before you build anything, let's get the terminology straight. These words will appear constantly throughout the guide — and the game.
+
+#section-heading([Delta-V (Δv)])
+
+Delta-v is your rocket's *fuel budget*. It tells you how much your rocket can change its velocity, measured in meters per second (m/s). Think of it like the range on a car — you need enough to get where you're going.
+
+Every maneuver costs delta-v:
+- Getting from the launch pad to low Kerbin orbit: ~3,400 m/s
+- Transfer from Kerbin orbit to the Mun: ~860 m/s
+- Landing on the Mun from low orbit: ~580 m/s
+- Returning to Kerbin: ~860 m/s
+
+The sum of these is your mission's delta-v budget. If your rocket has less than the total required, you won't make it.
+
+#info[[
+  There are two kinds of delta-v: *atmospheric* (inside a planet's atmosphere) and *vacuum* (in space). Atmospheric delta-v is always lower because engines are less efficient when fighting air pressure. Always check which number you're looking at — the VAB shows atmospheric by default. Switch to vacuum in the delta-v panel for transfer and landing calculations.
+]]
+
+#section-heading([Apoapsis and Periapsis])
+
+Every orbit is an ellipse. The *apoapsis* (Ap) is the highest point of your orbit above the body. The *periapsis* (Pe) is the lowest point. You'll use these constantly in the Map view to plan burns.
+
+- Burning prograde at apoapsis raises periapsis
+- Burning prograde at periapsis raises apoapsis
+- To circularize your orbit, burn at Ap or Pe until they're equal
+
+#section-heading([Prograde and Retrograde])
+
+On the navball (the big blue ball at the bottom-center of your screen during flight):
+
+- *Prograde* (green circle, no X) — your direction of travel. Burn prograde to speed up.
+- *Retrograde* (green circle with an X) — opposite your direction of travel. Burn retrograde to slow down.
+
+These are relative to what you're orbiting. In space, prograde is your orbital velocity vector. Near the ground, it's your surface velocity. Click the navball speed indicator to toggle between Orbit, Surface, and Target modes.
+
+#section-heading([TWR — Thrust-to-Weight Ratio])
+
+TWR is the ratio of your engine's thrust to your rocket's weight. A TWR of 1.0 means you hover. Below 1.0, you don't leave the pad. For a comfortable launch, aim for a TWR between 1.3 and 2.0 at liftoff. Higher TWR means faster acceleration but can cause aerodynamic stress and overheating in the lower atmosphere.
+
+#tip[[
+  As you burn fuel, your rocket gets lighter, so TWR increases during flight. A rocket that starts at TWR 1.3 might be at TWR 4.0 by the time the first stage burns out. Watch your throttle — you may need to reduce it to avoid going too fast too low.
+]]
+
+#section-heading([SAS — Stability Augmentation System])
+
+SAS is your autopilot. Press T to toggle it on. When active, it holds your orientation against external forces and can automatically point at specific directions (prograde, retrograde, radial, normal, target, etc.). Higher-level pilots and probe cores unlock more SAS modes.
+
+#section-heading([The Navball])
+
+The navball shows your orientation in 3D space:
+- *Blue half* — you're pointed at the sky
+- *Brown half* — you're pointed at the ground
+- The line where they meet is the horizon
+- The center dot is your current heading
+- Markers around the edge show cardinal directions: 0° = North, 90° = East, 180° = South, 270° = West
+
+Most launches go *east* (90°) because Kerbin's rotation gives you a free 175 m/s of velocity in that direction.
+
 #section-heading([The Kerbal Space Center])
 
 Click through the buildings to understand what each one does:
@@ -109,19 +169,6 @@ Building a rocket that reaches space is easy. Reaching *orbit* requires speed �
 
 #tip[[
   If your rocket flips during the gravity turn: add fins at the bottom, make the rocket taller rather than wider, and keep your speed below ~300 m/s while still in the thick lower atmosphere (below 10 km).
-]]
-
-#section-heading([Delta-V Budget])
-
-Delta-v (Δv) is your rocket's total ability to change velocity, measured in meters per second (m/s). Approximate requirements:
-
-- Reach low Kerbin orbit (LKO, 80 km): ~3,400 m/s
-- Mun transfer + capture: ~860 + 310 m/s
-- Mun landing: ~580 m/s
-- Mun return to Kerbin: ~860 m/s
-
-#danger[[
-  These are vacuum delta-v numbers! Atmospheric delta-v is different. Kerbal Engineer Redux (installed in this wave) shows both — look at the vacuum number for in-space maneuvers.
 ]]
 
 #section-heading([Going to the Mun])

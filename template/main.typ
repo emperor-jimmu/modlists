@@ -28,7 +28,7 @@
     set align(center)
 
     v(3cm)
-    image("../assets/logo.png", width: 4cm)
+    image("../assets/logo.png", width: 8cm)
     v(1.5cm)
 
     set text(font: heading-font, weight: "extrabold", size: 32pt, fill: white)
