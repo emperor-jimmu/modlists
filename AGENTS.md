@@ -52,7 +52,13 @@ Entries separated by `---`. See the design spec at `docs/superpowers/specs/2026-
 
 ## CK3 Version
 
-The current CK3 version is defined in `data/ck3-version` (e.g. `1.19.x`). All mods added to this project MUST work with this version. To determine the current CK3 version, check https://ck3.paradoxwikis.com/Patch or https://steamdb.info/app/1158310/. Update `data/ck3-version` when CK3 receives a new patch. When in doubt about a mod's compatibility with the target version, DO NOT add it.
+The current CK3 version is defined in `data/ck3-version` (e.g. `1.19.x`). All mods added to this project MUST work with this version. To determine the current CK3 version, check https://ck3.paradoxwikis.com/Patch or https://steamdb.info/app/1158310/. Update `data/ck3-version` when CK3 receives a new patch.
+
+**Version targeting rules (in order of preference):**
+1. **Exact match preferred** — A mod's CK3 version should match `data/ck3-version` exactly if available.
+2. **Minimum floor: 1.19 (April 20, 2026)** — If the mod doesn't exactly match, it MUST at least target CK3 v1.19.x. This was the baseline patch, and any mod not updated for this version is too old.
+3. **Date heuristic** — If the mod's `Updated` field is *after* April 20, 2026, it likely supports 1.19 (authors typically keep mods current). If the date is before April 20, 2026, the mod likely predates 1.19 and should be scrutinised or rejected.
+4. **When in doubt, DO NOT add it** — If you cannot confirm 1.19 compatibility through version field, update date, or workshop listing, err on the side of exclusion.
 
 ## CK3 Tutorial
 
