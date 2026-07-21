@@ -33,8 +33,9 @@
   header: page-header,
   footer: context [
     #set text(fill: color-orange, size: 10pt)
-    #align(center)[No One is Coming  —  #counter(page).display()]
+    #align(center)[No One is Coming]
   ],
+  numbering: "1",
 )
 
 // ===== TEXT & LINKS =====
