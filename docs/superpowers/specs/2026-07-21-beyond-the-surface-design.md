@@ -193,5 +193,4 @@ The `guide/setup.md` file must cover these topics in order. This chapter appears
 ## Implementation Notes
 
 - Guide content tone: instructional, occasionally humorous, never condescending. Wave 0 assumes zero game knowledge; Wave 2 assumes the reader has beaten Moon Lord.
-- All modlist content (`modlist.md` files, `conflicts.md`, `mod-ideas.md`) is provided by the project owner. The implementation scaffolds these as empty files with the format template included as a comment.
 - `AGENTS.md` should document: project purpose, Typst version requirement, pandoc dependency (if Option A chosen), file structure conventions, and that mod content is user-managed.
