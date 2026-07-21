@@ -90,6 +90,24 @@ function Convert-ModDataToMarkdown {
         }
     } else {
         $md += "*No mods added yet. Fill in `data/wave-$($data.wave)-mods.yaml` with your mod selections.*`n`n"
+        $md += "## Mod Entry Template`n`n"
+        $md += "Use this format when adding mods to the YAML data file:`n`n"
+        $md += '```yaml' + "`n"
+        $md += '- name: "Mod Name"' + "`n"
+        $md += '  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=XXXXX"' + "`n"
+        $md += '  description: "Brief description of what this mod does."' + "`n"
+        $md += '  dependencies:' + "`n"
+        $md += '    - name: "Dependency Mod"' + "`n"
+        $md += '      type: "hard"  # or "soft"' + "`n"
+        $md += '      load_order: "before"  # or "after"' + "`n"
+        $md += '  impact:' + "`n"
+        $md += '    new_items: false' + "`n"
+        $md += '    new_npcs: false' + "`n"
+        $md += '    new_biomes: false' + "`n"
+        $md += '    new_bosses: false' + "`n"
+        $md += '    mechanic_changes: false' + "`n"
+        $md += '    ui_qol: true' + "`n"
+        $md += '```' + "`n"
     }
 
     if ($data.load_order -and $data.load_order.Count -gt 0) {
