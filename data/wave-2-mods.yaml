@@ -1,5 +1,137 @@
 wave: 2
 title: "Wave 2 — Beyond the Surface"
 subtitle: "Content overhauls + mechanics"
-mods: []
-load_order: []
+mods:
+  - name: "Calamity Mod"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2824688072"
+    description: "Massive content overhaul adding 20+ new bosses, new biomes (Sulphurous Sea, Abyss), new classes, new items, and extensive post-Moon Lord content. The definitive Terraria modding experience."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: true
+      new_npcs: true
+      new_biomes: true
+      new_bosses: true
+      mechanic_changes: true
+      ui_qol: false
+
+  - name: "Calamity Mod Music"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2824688266"
+    description: "Music pack for Calamity Mod. Adds new boss themes, biome music, and ambient tracks that complement the Calamity experience."
+    dependencies:
+      - name: "Calamity Mod"
+        type: "hard"
+        load_order: "after"
+    load_before: []
+    load_after:
+      - "Calamity Mod"
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: false
+
+  - name: "Calamity Mod Extras"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2824688425"
+    description: "Additional content for Calamity Mod including extra items, recipes, and quality of life features that complement the main mod."
+    dependencies:
+      - name: "Calamity Mod"
+        type: "hard"
+        load_order: "after"
+    load_before: []
+    load_after:
+      - "Calamity Mod"
+    impact:
+      new_items: true
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Fargo's Soul Mod"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2570931073"
+    description: "Endgame content mod that adds challenging superbosses, new items, and post-Moon Lord progression. Designed for players who have completed Calamity."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: true
+      new_npcs: true
+      new_biomes: false
+      new_bosses: true
+      mechanic_changes: true
+      ui_qol: false
+
+  - name: "Spirit Mod"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3449158983"
+    description: "Large content mod adding new biomes, bosses, items, and NPCs. Features unique mechanics and a focus on exploration and discovery."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: true
+      new_npcs: true
+      new_biomes: true
+      new_bosses: true
+      mechanic_changes: true
+      ui_qol: false
+
+  - name: "Structure Helper"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2790924965"
+    description: "Helps build structures by showing blueprints and auto-placing blocks. Useful for building arenas and bases efficiently."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Subworld Library"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2785100219"
+    description: "Library mod that enables subworlds (separate dimensions). Required by several content mods that add new dimensions to explore."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: true
+      ui_qol: false
+
+  - name: "Calamity Fancy UI"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3723637703"
+    description: "Enhanced UI for Calamity Mod with better boss health bars, improved inventory management, and quality of life features specific to Calamity."
+    dependencies:
+      - name: "Calamity Mod"
+        type: "hard"
+        load_order: "after"
+    load_before: []
+    load_after:
+      - "Calamity Mod"
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+load_order:
+  - "Subworld Library"
+  - "Structure Helper"
+  - "Calamity Mod"
+  - "Calamity Mod Music"
+  - "Calamity Mod Extras"
+  - "Calamity Fancy UI"
+  - "Fargo's Soul Mod"
+  - "Spirit Mod"

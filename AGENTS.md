@@ -23,6 +23,27 @@ A 3-wave Terraria modlist and game guide. Each wave is a fresh playthrough with 
 
 All mod content (modlist.md, conflicts.md, mod-ideas.md) is user-managed. The build system generates these files from `data/*.yaml`. Do not add or remove mods without user approval.
 
+### Mod Addition Rules
+
+- **No conflicting mods** — mods must work together within each wave
+- **No porn mods** — adult/nude content is acceptable where relevant, but ask user if in doubt
+- **No redundant mods** — don't add multiple mods that do the same thing
+- **No incompatible mods** — must be compatible with Terraria 1.4.5.x (use patch release date as heuristic)
+- **No cheating/overpowered/all-knowing mods** — maintain game balance and discovery
+
+### What Mods to Add
+
+- **Wave 0:** UI/QoL mods only (no gameplay changes)
+- **Wave 1:** Graphics, more content, light mechanics
+- **Wave 2:** Full content overhauls, advanced mechanics, player challenges
+
+### Research Process
+
+- Use Playwright to browse mod information when tools can't fetch it
+- Check Steam Workshop for compatibility with Terraria 1.4.5.x
+- Verify mod dependencies and conflicts
+- Document all mod choices in the appropriate `data/wave-X-mods.yaml` file
+
 ## Build Process
 
 ```powershell
