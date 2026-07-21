@@ -1,0 +1,21 @@
+# Typst
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Font download artifacts
+assets/fonts/*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Output
+output/
