@@ -411,6 +411,8 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [3D Skin Layers](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d)                                     | Renders player skin layers (jackets, hats) with 3D depth                                       |
 | [Presence Footsteps](https://www.curseforge.com/minecraft/mc-mods/presence-footsteps-neoforge)                    | Block-aware footstep sounds for every surface type                                             |
 | [Particular Reforged](https://www.curseforge.com/minecraft/mc-mods/particular-reforged)                           | Ambient particles: 3D water splashes, fireflies, falling leaves, cave dust, waterfall cascades |
+| [Particle Rain](https://www.curseforge.com/minecraft/mc-mods/particle-rain)                                       | Replaces default weather with particle effects: angled rain, desert sandstorms, fog, wind      |
+| [Swinging Lanterns](https://www.curseforge.com/minecraft/mc-mods/swinging-lanterns)                               | Subtle swinging movement on lanterns and attached chains — makes builds feel alive             |
 | [Wakes Reforged](https://www.curseforge.com/minecraft/mc-mods/wakes-reforged)                                     | Realistic water wakes and splashes when traveling on water                                     |
 | [Sounds](https://www.curseforge.com/minecraft/mc-mods/sound)                                                      | 170+ new sound effects for UIs, items, blocks, actions                                         |
 | [Better Days](https://www.curseforge.com/minecraft/mc-mods/betterdays)                                            | Customizable day/night cycle length, enhanced sleep                                            |
@@ -617,6 +619,14 @@ Block-aware footstep sounds for every surface — wood creaks, gravel crunches, 
 #### Particular Reforged
 
 Ambient visual effects: 3D water splashes, waterfall cascades, fireflies at dusk, falling leaves, cave dust, underwater bubbles, rain ripples. Toggle individual effects in `config/particular.json` if any feel excessive.
+
+#### Particle Rain
+
+Replaces vanilla rain and snow with angled particle effects (wind-blown during storms), adds sandstorms to deserts and dry biomes (including modded), plus atmospheric fog and wind. Client-side only, no gameplay impact — purely cosmetic weather enhancement. Configurable via `/particlerain` in-game menu or Mod List → Config. By PigCart, same author as Cosy Critters (already in this wave).
+
+#### Swinging Lanterns
+
+Adds subtle physics-based swaying to hanging lanterns and their chains. Makes builds feel alive and dynamic — lanterns gently rock as if stirred by a breeze. Client-side only, works on vanilla servers. No dependencies, no config needed.
 
 #### Wakes Reforged
 

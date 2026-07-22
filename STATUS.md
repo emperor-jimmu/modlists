@@ -246,6 +246,10 @@
 ### Skipped After Review (Jul 2026 batch 6)
 - [x] Automobility — no NeoForge version, only maintained for 1.20/1.20.1. Last updated Jun 2023. Abandoned.
 
+### Added Mods (Jul 2026 batch 8 — Weather Particles)
+- [x] Particle Rain v4-beta.10 (Wave 0 — Visual & Client QoL) — replaces default weather with particle effects: angled rain, desert sandstorms, fog, wind. Client-side only, by PigCart (same author as Cosy Critters). MIT license, 16.3M downloads, NeoForge 1.21.1 native.
+- [x] Swinging Lanterns v1.5.0.1 (Wave 0 — Visual & Client QoL) — subtle physics-based swaying on lanterns and chains. Client-side only, no dependencies, 250K downloads, NeoForge 1.21.1 native.
+
 ### Added Mods (Jul 2026 batch 7 — Ambient Visuals)
 - [x] Cosy Critters & Creepy Crawlies v0.3.3 (Wave 0.5 — Visual & Client QoL) — ambient atmospheric animals: birds, bugs, critters. Client-side only, 97KB, all effects configurable. NeoForge 1.21.1 native. By PigCart (GrandArtisan, 709K downloads).
 - [x] Foxified Dense Flowers v1.0.0 (Wave 0.5 — Visual & Client QoL) — renders multiple flowers per block in flower fields. NeoForge 1.21.1 native, client-side only. NeoForge port of the original Fabric mod (172K downloads, MIT licensed). By owen233.
