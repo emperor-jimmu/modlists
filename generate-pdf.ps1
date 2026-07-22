@@ -8,26 +8,14 @@ function Write-Status($Symbol, $Message) {
   Write-Host " $Message"
 }
 
-function Test-Dependency($Name, $Command) {
-  $null = Get-Command $Command -ErrorAction SilentlyContinue
-  if (-not $?) {
-    Write-Status "FAIL" "$Name not found."
-    return $false
-  }
-  Write-Status "OK" "$Name found at $(Get-Command $Command).Source"
-  return $true
-}
-
 function Test-TypstInstall() {
   $null = Get-Command "typst" -ErrorAction SilentlyContinue
   if ($?) { return $true }
 
-  # Refresh PATH from registry (covers installer-based installs)
   $env:Path = [Environment]::GetEnvironmentVariable("Path", "User") + ";" + [Environment]::GetEnvironmentVariable("Path", "Machine")
   $null = Get-Command "typst" -ErrorAction SilentlyContinue
   if ($?) { return $true }
 
-  # Fallback: check known winget package directory
   $wingetTypst = Join-Path $env:LOCALAPPDATA "Microsoft\WinGet\Packages\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\typst-x86_64-pc-windows-msvc\typst.exe"
   if (Test-Path $wingetTypst) {
     $env:Path = $env:Path + ";" + [System.IO.Path]::GetDirectoryName($wingetTypst)
@@ -44,7 +32,6 @@ function Test-TypstInstall() {
       Write-Status "OK" "Typst installed successfully."
       return $true
     }
-    # Post-install fallback to winget path
     if (Test-Path $wingetTypst) {
       $env:Path = $env:Path + ";" + [System.IO.Path]::GetDirectoryName($wingetTypst)
       Write-Status "OK" "Typst installed via winget."
@@ -57,30 +44,30 @@ function Test-TypstInstall() {
   Write-Host ""
   Write-Host "Install Typst manually from https://github.com/typst/typst/releases" -ForegroundColor Yellow
   Write-Host "  winget install Typst.Typst" -ForegroundColor Cyan
-  Write-Host "  scoop install typst" -ForegroundColor Cyan
   return $false
 }
 
-function Compile-Pdf($Name, $SourceFile) {
+function Compile-Guide() {
   Write-Host ""
-  Write-Host "Compiling $Name..." -ForegroundColor Cyan
-  $outputPdf = Join-Path $RenderedDir "$Name.pdf"
+  Write-Host "Compiling Driftwood Guide..." -ForegroundColor Cyan
+  $sourceFile = Join-Path $ProjectRoot "templates" "guide.typ"
+  $outputPdf = Join-Path $RenderedDir "DRIFTWOOD-GUIDE.pdf"
 
-  $result = typst compile --root $ProjectRoot $SourceFile $outputPdf 2>&1
+  $result = typst compile --root $ProjectRoot $sourceFile $outputPdf 2>&1
   if ($LASTEXITCODE -eq 0) {
     $fileInfo = Get-Item $outputPdf
     $sizeKB = [math]::Round($fileInfo.Length / 1KB, 1)
-    Write-Status "OK" "$Name.pdf → $outputPdf ($sizeKB KB)"
+    Write-Status "OK" "DRIFTWOOD-GUIDE.pdf -> $outputPdf ($sizeKB KB)"
     return $true
   } else {
-    Write-Status "FAIL" "Failed to compile $Name.pdf"
+    Write-Status "FAIL" "Failed to compile DRIFTWOOD-GUIDE.pdf"
     Write-Host $result -ForegroundColor Red
     return $false
   }
 }
 
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host " Minecraft Modpack — PDF Generator" -ForegroundColor Cyan
+Write-Host " Driftwood -- PDF Generator" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -100,18 +87,12 @@ if (-not (Test-Path $RenderedDir)) {
   New-Item -ItemType Directory -Path $RenderedDir -Force | Out-Null
 }
 
-Write-Host ""
-Write-Host "=== Mod List ===" -ForegroundColor Cyan
-$modlistOk = Compile-Pdf "MODLIST" (Join-Path $ProjectRoot "templates" "modlist.typ")
+$guideOk = Compile-Guide
 
 Write-Host ""
-Write-Host "=== Getting Started Guide ===" -ForegroundColor Cyan
-$guideOk = Compile-Pdf "GETTING-STARTED" (Join-Path $ProjectRoot "templates" "guide.typ")
-
-Write-Host ""
-if ($modlistOk -and $guideOk) {
-  Write-Status "OK" "All PDFs generated successfully."
+if ($guideOk) {
+  Write-Status "OK" "Guide PDF generated successfully."
 } else {
-  Write-Status "FAIL" "One or more PDFs failed to compile."
+  Write-Status "FAIL" "PDF compilation failed."
   exit 1
 }
