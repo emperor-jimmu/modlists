@@ -94,17 +94,6 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
   version_pin: [Compatible with KSP 1.12.x. Requires a DX11-capable GPU.],
 )
 
-#mod-entry(
-  name: [PlanetShine],
-  ckan_id: "PlanetShine",
-  url: "https://github.com/Gameslinx/PlanetShine",
-  description: [Simulates reflected light from planets and moons onto your vessel. A ship orbiting Kerbin gets a blue-tinted glow from below; near the Mun, a gray reflection. Adds subtle but immersive ambient lighting.],
-  dependencies: ("ModuleManager"),
-  impact_types: (Graphics),
-  impact_description: [Adds directional ambient light based on nearby celestial body color and distance. Redundant with Deferred (which handles this natively) — only install both if you prefer PlanetShine's specific look.],
-  conflicts: [Deferred's built-in planet reflection system overlaps with PlanetShine's purpose. Use one or the other, or accept minor visual redundancy.],
-  version_pin: [Compatible with KSP 1.12.x. Optional if using Deferred.],
-)
 
 #mod-entry(
   name: [Vapor Cones],
@@ -460,29 +449,7 @@ Many parts mods in Wave 1 use custom fuel types beyond stock LiquidFuel/Oxidizer
 
 #section-heading([Heavy Lift])
 
-#mod-entry(
-  name: [SpaceY Heavy Lifters],
-  ckan_id: "SpaceY-Lifters",
-  url: "https://spacedock.info/mod/88/SpaceY-Heavy-Lifters-SYL-by-NecroBones",
-  description: [5m and 7.5m rocket parts: enormous fuel tanks, high-thrust engines, large SRBs, and adapters. An alternative to NF Launch Vehicles for Saturn V-class and larger rockets. Larger diameters and heavier parts than NF Launch Vehicles.],
-  dependencies: ("ModuleManager"),
-  impact_types: (Parts),
-  impact_description: [Adds large-diameter rocket parts. SpaceY parts are larger and heavier than NF Launch Vehicles. Both coexist — use whichever fits your payload scale and preferred art style.],
-  conflicts: [NF Launch Vehicles provides similar 5m–7.5m parts with the Nertea/Restock aesthetic. Both can be installed together — SpaceY is bulkier; NF Launch Vehicles is sleeker.],
-  version_pin: [Compatible with KSP 1.12.x. SpaceY Expanded adds more large parts.],
-)
 
-#mod-entry(
-  name: [SpaceY Expanded],
-  ckan_id: "SpaceY-Expanded",
-  url: "https://spacedock.info/mod/90/SpaceY-Expanded",
-  description: [Expands SpaceY with more 5m–7.5m parts: additional engine variants, extra-large SRBs, interstage adapters, and structural components. Requires SpaceY Heavy Lifters.],
-  dependencies: ("SpaceY-Lifters", "ModuleManager"),
-  impact_types: (Parts),
-  impact_description: [Adds more large rocket parts. Requires SpaceY Heavy Lifters. Engine and structural variety for heavy-lift configurations.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Requires SpaceY Heavy Lifters.],
-)
 
 // ═══ PARTS PACKS ═══
 
@@ -606,17 +573,6 @@ Many parts mods in Wave 1 use custom fuel types beyond stock LiquidFuel/Oxidizer
   version_pin: [Compatible with KSP 1.12.x. Does not alter stock resource scanning — SCANsat scanning is parallel and additive.],
 )
 
-#mod-entry(
-  name: [Orbital Survey Plus],
-  ckan_id: "OrbitalSurveyPlus",
-  url: "https://spacedock.info/mod/574/Orbital-Survey-Plus",
-  description: [Lighter alternative to SCANsat. Enhances the stock resource scanning interface with better visualization and improved waypoint integration — no new parts or satellite-mapping gameplay loop. For players who want better survey tools without the full SCANsat experience.],
-  dependencies: ("ModuleManager"),
-  impact_types: (UI, Mechanics),
-  impact_description: [Improves the stock orbital survey UI. Works with stock scanning mechanics — does not add new scanner parts or separate map overlays. A vanilla+ upgrade rather than a full overhaul.],
-  conflicts: [SCANsat is the primary recommended survey mod for this modlist — it provides comprehensive altimetry, biome, and slope maps essential for Wave 2 colonization. OSP is offered as a lighter alternative for players who prefer to stick closer to stock.],
-  version_pin: [Compatible with KSP 1.12.x. SCANsat is recommended over OSP for this modlist. Install OSP only if you specifically want a lighter touch to orbital survey.],
-)
 
 #mod-entry(
   name: [FreeIva],
@@ -728,17 +684,6 @@ These mods add meticulously detailed replicas of real-world spacecraft and launc
 
 #section-heading([Shuttle, SLS & ISS])
 
-#mod-entry(
-  name: [Shuttle Orbiter Construction Kit],
-  ckan_id: "ShuttleOrbiterConstructionKit",
-  url: "https://forum.kerbalspaceprogram.com/topic/170758-112x-shuttle-orbiter-construction-kit/",
-  description: [Build the US Space Shuttle orbiter from modular parts. Fuselage sections, wings, OMS pods, cargo bay, Canadarm, and nose/cockpit sections assemble into a detailed shuttle. Designed to mount on an external tank and SRB stack (build your own or use companion mods).],
-  dependencies: ("B9PartSwitch", "ModuleManager", "Benjee10-SharedAssets"),
-  impact_types: (Parts),
-  impact_description: [Adds modular shuttle orbiter parts. The shuttle is assembled from sections — you build the fuselage, attach wings, add OMS pods. Does not include the ET/SRB stack — use a launcher parts pack or build one from stock/procedural parts.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Needs a launcher (ET + SRBs) to reach orbit. Shuttle Payload Delivery Systems adds ISS-compatible cargo bay payloads. SOCKrepainted and SOCKrecolored add visual variants.],
-)
 
 #mod-entry(
   name: [Artemis Construction Kit],
@@ -1006,41 +951,6 @@ These mods are not available through CKAN. Install them manually by downloading 
   version_pin: [Compatible with KSP 1.12.x. Manual install only. Requires Kopernicus.],
 )
 
-#mod-entry(
-  name: [Promised Worlds],
-  ckan_id: "PromisedWorlds",
-  url: "https://github.com/PromisedWorlds/PromisedWorlds",
-  description: [Faithful recreation of KSP 2's planned solar systems in KSP 1. Adds interstellar destinations including the DebDeb, Tuun, and other star systems that were promised for KSP 2. GitHub: PromisedWorlds/PromisedWorlds (208★).],
-  dependencies: ("Kopernicus", "ModuleManager"),
-  impact_types: (Parts, Mechanics, Gameplay),
-  impact_description: [Adds KSP 2-inspired interstellar systems. Not on CKAN — manual install from forum thread or GitHub. Adds multiple new star systems.],
-  conflicts: [Adding multiple interstellar planet packs creates a very large install. Most players should choose 1–2. Kcalbeloh is the recommended interstellar destination for this modlist.],
-  version_pin: [Compatible with KSP 1.12.x. Manual install only. Choose this or Kcalbeloh (or both if your system can handle it).],
-)
-
-#mod-entry(
-  name: [Cosmic Serenity],
-  ckan_id: "CosmicSerenity",
-  url: "https://forum.kerbalspaceprogram.com/topic/228453-112x-cosmic-serenity-v31/",
-  description: [A smaller-scale planet pack adding serene, handcrafted worlds to the Kerbol system. Focuses on quality over quantity — each added body is carefully designed with unique terrain and biomes. A more restrained alternative to sprawling multi-system packs.],
-  dependencies: ("Kopernicus", "ModuleManager"),
-  impact_types: (Parts, Mechanics),
-  impact_description: [Adds custom-designed planets and moons. Not on CKAN — manual install from forum thread. A lighter alternative to multi-system packs.],
-  conflicts: [QuackPack and Minor Planets Expansion also add bodies to the Kerbol system. Cosmic Serenity is standalone — verify compatibility if combining.],
-  version_pin: [Compatible with KSP 1.12.x. Manual install only.],
-)
-
-#mod-entry(
-  name: [Buran Orbiter Construction Kit],
-  ckan_id: "BuranOrbiterConstructionKit",
-  url: "https://forum.kerbalspaceprogram.com/topic/221160-wip-buran-orbiter-construction-kit/",
-  description: [Soviet Buran shuttle orbiter construction kit. Build the Soviet counterpart to the US Space Shuttle with modular Buran fuselage, wing, and thermal protection parts. Designed to complement SOCK for Cold War-era shuttle programs on both sides. WIP — still in active development.],
-  dependencies: ("B9PartSwitch", "ModuleManager"),
-  impact_types: (Parts),
-  impact_description: [Adds modular Buran orbiter parts. Not on CKAN — manual install from forum thread. GitHub: hugoraider/Buran-Orbiter-Construction-Kit. Designed to work alongside SOCK and Tantares LV for Energia launcher integration.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Manual install only. WIP mod — expect updates and changes.],
-)
 
 #mod-entry(
   name: [OPT Spaceplane Continued],
@@ -1054,29 +964,7 @@ These mods are not available through CKAN. Install them manually by downloading 
   version_pin: [Compatible with KSP 1.12.x. Manual install only. OPT Reconfig (CKAN) required for Community Tech Tree integration and balance adjustments.],
 )
 
-#mod-entry(
-  name: [ORANGES],
-  ckan_id: "ORANGES",
-  url: "https://forum.kerbalspaceprogram.com/topic/211919-wip-oranges-stockalike-shuttle-derived-launch-vehicles-v100-beta-2-6feb2023/",
-  description: [Shuttle-derived launch vehicle parts: Ares I, Ares V, SLS block variants, and Jupiter DIRECT launchers. Alternative to Artemis Construction Kit for players who want the full shuttle-derived launcher family rather than just the SLS/Orion stack. WIP beta by EStreetRockets.],
-  dependencies: ("B9PartSwitch", "CommunityResourcePack", "DeployableEngines", "ModuleManager"),
-  impact_types: (Parts, Mechanics),
-  impact_description: [Adds shuttle-derived launcher parts. Not on CKAN — manual install from forum thread. Shares the EStreetRockets style with Rocket Motor Menagerie. Choose between this and Artemis Construction Kit — both cover similar hardware.],
-  conflicts: [Artemis Construction Kit covers similar SLS hardware. Choose one SLS/launcher mod — using both creates redundant parts. Rocket Motor Menagerie provides RS-25 engines that work with either.],
-  version_pin: [Compatible with KSP 1.12.x. Manual install only. WIP beta — expect changes. Rocket Motor Menagerie (CKAN) adds compatible RS-25 engine variants.],
-)
 
-#mod-entry(
-  name: [reDIRECT],
-  ckan_id: "reDIRECT",
-  url: "https://forum.kerbalspaceprogram.com/topic/172187-18x-redirect-stockalike-orion-sls-shuttle-derived-launchers-fixes-v0101/",
-  description: [Stockalike SLS, Orion, and shuttle-derived launchers by benjee10. An earlier/more compact SLS implementation — a lighter alternative to Artemis Construction Kit for players who want SLS hardware with fewer parts and dependencies. Includes Orion capsule and shuttle-derived launcher components.],
-  dependencies: ("B9PartSwitch", "ModuleManager"),
-  impact_types: (Parts),
-  impact_description: [Adds SLS and Orion parts in a lighter implementation. Not on CKAN — manual install from forum thread or SpaceDock (id:1742). Consider this if Artemis Construction Kit's many dependencies are a concern.],
-  conflicts: [Artemis Construction Kit (same author, newer and more comprehensive) and ORANGES cover the same hardware. Choose one SLS mod.],
-  version_pin: [Compatible with KSP 1.12.x. Manual install only. Artemis Construction Kit is recommended over reDIRECT for new installs — it has more parts, active development, and CKAN support.],
-)
 
 #mod-entry(
   name: [Completely Non-Aggressive Rocketry (CNAR)],
