@@ -31,7 +31,7 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
   impact_types: (UI),
   impact_description: [Adds a planning tool accessible from the VAB and Tracking Station. No parts, no gameplay changes — purely informational. Shows delta-v over time as a porkchop plot with color-coded efficiency.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. For a simpler alternative, Astrogator integrates transfer planning directly into the map view.],
+  version_pin: [Compatible with KSP 1.12.x.],
 )
 
 #mod-entry(
@@ -60,18 +60,6 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
   impact_description: [Adds a popup window during docking with alignment crosshairs, distance, and relative angle readouts. No parts — the indicator appears when you target a docking port and select "Control from Here" on your own port.],
   conflicts: [Community Navball Docking Alignment Indicator provides similar information on the navball instead of in a separate window. Choose the interface style you prefer — you do not need both. DPAI is the recommended default for this modlist.],
   version_pin: [Compatible with KSP 1.12.x. Wave 2 suggests switching to Community Navball DAI once docking becomes second nature.],
-)
-
-#mod-entry(
-  name: [Community Navball Docking Alignment Indicator],
-  ckan_id: "CommunityNavballDockingIndicator",
-  url: "https://spacedock.info/mod/532/Community-NavBall-Docking-Alignment-Indicator",
-  description: [Adds docking alignment indicators directly on the navball. Rather than a separate window, you get a marker showing your alignment to the target docking port — everything integrated into the instrument you're already watching during approach. An advanced alternative to DPAI.],
-  dependencies: (),
-  impact_types: (UI),
-  impact_description: [Augments the navball with docking alignment markers during docking approaches. No separate windows — the navball itself shows alignment. Suggested as an optional replacement for DPAI in Wave 2 for experienced pilots.],
-  conflicts: [Docking Port Alignment Indicator — choose one. DPAI is recommended while learning docking; Navball DAI is the advanced option.],
-  version_pin: [Compatible with KSP 1.12.x. DPAI is recommended for now. Wave 2 suggests replacing DPAI with this once you've mastered docking.],
 )
 
 // ═══ SCIENCE TRACKING ═══
@@ -106,17 +94,6 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
   version_pin: [Compatible with KSP 1.12.x. Optional — the stock alarm clock (added in KSP 1.12) handles basic use cases. Use KAC if you manage 5+ concurrent missions.],
 )
 
-#mod-entry(
-  name: [Astrogator],
-  ckan_id: "Astrogator",
-  url: "https://github.com/HebaruSan/Astrogator",
-  description: [Alternative to Transfer Window Planner with a simplified, map-view-integrated workflow. Shows transfer options directly in the Tracking Station and Map view with one-click maneuver node creation. Prefer this if you find TWP's interface overwhelming.],
-  dependencies: (),
-  impact_types: (UI),
-  impact_description: [Adds transfer planning tools integrated into the stock map and tracking station views. Generates single-click transfer nodes to any target. Simpler and more streamlined than TWP — choose whichever interface style you prefer.],
-  conflicts: [Transfer Window Planner provides the same function with a more detailed porkchop-plot interface. Choose one — using both is redundant. TWP is the default for this modlist; install Astrogator if you prefer its simplicity.],
-  version_pin: [Compatible with KSP 1.12.x. Choose either this or TWP — not both.],
-)
 
 #mod-entry(
   name: [Waypoint Manager],
@@ -353,9 +330,9 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
 #pagebreak()
 #chapter-heading([Wave 0.5 Mods — How to Use Them])
 
-#section-heading([Transfer Window Planner & Astrogator])
+#section-heading([Transfer Window Planner])
 
-TWP and Astrogator solve the same problem — when to launch for another planet — with different interfaces. TWP gives you porkchop plots showing delta-v costs for every departure date. Astrogator skips the plot and generates transfer nodes directly from the map view. Try both early on; pick the one that makes more sense to you. You'll use it constantly once you go interplanetary in Wave 1.
+TWP shows you optimal departure windows via porkchop plots — color-coded charts of delta-v cost over time. Pick the most efficient window and TWP provides the ejection angle and burn parameters. You'll use it constantly once you go interplanetary in Wave 1.
 
 #section-heading([Docking Alignment])
 
@@ -481,7 +458,7 @@ Before launching any mission, verify in the VAB:
 
 Transfer windows tell you *when* to burn, not just *how much* delta-v you need.
 
-- *Use TWP or Astrogator:* Open the planner, select origin (Kerbin) and destination (e.g., Duna). The porkchop plot shows delta-v for every departure date. Click the darkest blue region for the most efficient window.
+- *Use TWP:* Open the planner, select origin (Kerbin) and destination (e.g., Duna). The porkchop plot shows delta-v for every departure date. Click the darkest blue region for the most efficient window.
 - *Phase angles (eyeball method):* Duna should be ~44° ahead of Kerbin in its orbit. Eve ~54° behind. Jool ~96° ahead. If you can't use a planner, these rough angles get you close.
 - *Depart from low circular orbit:* A 100 km circular orbit is ideal for interplanetary ejection. Elliptical orbits complicate ejection-angle calculations.
 - *Mid-course correction:* About halfway to your destination, create a small correction burn (10–50 m/s) to fine-tune your encounter periapsis. This is far cheaper than correcting during the departure burn.
