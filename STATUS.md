@@ -138,11 +138,12 @@
 ### Shaderpacks
 - [x] Complementary Unbound selected and documented in MODLIST-V3.md
 
-### PDF Generator
-- [x] Typst 0.15.0 installed via winget
-- [x] cmarker 0.1.10 package for inline markdown-to-Typst rendering
-- [x] generate-pdf.ps1 with dependency check, auto-install, and fallback winget path
-- [x] Both PDFs compile cleanly: MODLIST.pdf, GETTING-STARTED.pdf
+### Merged Guide (Jul 2026)
+- [x] GUIDE.md created — single canonical source merged from MODLIST.md + GETTING-STARTED.md
+- [x] Driftwood Typst theme — cover page with logo, TOC, color palette from logo
+- [x] templates/modlist.typ removed — superseded by single guide.typ
+- [x] generate-pdf.ps1 simplified to single DRIFTWOOD-GUIDE.pdf output
+- [x] DRIFTWOOD-GUIDE.pdf compiled cleanly
 
 ### Added Mods (Jul 2026)
 - [x] Beautiful Enchanted Books (Wave 0 — Visual & Client QoL)
