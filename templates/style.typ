@@ -1,37 +1,75 @@
+// style.typ — Driftwood palette for the merged guide
 #let apply(body) = {
-  set text(font: ("Cambria", "Georgia"), size: 11pt, lang: "en")
+  set text(font: ("Cambria", "Georgia"), size: 11pt, lang: "en", fill: rgb("#2C1810"))
   set par(leading: 0.65em)
 
+  // Code blocks — dark warm background
   show raw.where(block: true): it => {
-    set text(font: ("Consolas", "Courier New"), size: 9pt)
+    set text(font: ("Consolas", "Courier New"), size: 9pt, fill: rgb("#E8D8C0"))
     block(
-      fill: luma(245),
-      inset: (x: 10pt, y: 6pt),
+      fill: rgb("#2C2418"),
+      inset: (x: 10pt, y: 8pt),
       radius: 3pt,
       width: 100%,
-      stroke: 0.5pt + luma(220),
+      stroke: 0.5pt + rgb("#4A3C30"),
     )[#it]
   }
 
-  show raw.where(block: false): set text(size: 9pt, fill: rgb("#c7254e"), font: "Consolas")
+  // Inline code — blue text, no background
+  show raw.where(block: false): set text(size: 9pt, fill: rgb("#5B7B8A"), font: "Consolas")
 
+  // H1 — driftwood dark (used for the document title only)
   show heading.where(level: 1): it => {
-    set text(size: 20pt, weight: "bold", fill: navy)
+    set text(size: 20pt, weight: "bold", fill: rgb("#403020"))
     it
   }
 
+  // H2 — driftwood brown (wave section headers)
   show heading.where(level: 2): it => {
-    set text(size: 15pt, weight: "bold", fill: rgb("#1a3a5c"))
+    set text(size: 15pt, weight: "bold", fill: rgb("#604020"))
     it
   }
 
-  show link: set text(fill: rgb("#1a6dd4"))
+  // H3 — driftwood blue (subsections)
+  show heading.where(level: 3): it => {
+    set text(size: 12pt, weight: "semibold", fill: rgb("#5B7B8A"))
+    it
+  }
 
-  show table: set table(
-    fill: (luma(248), luma(235)),
-    stroke: 0.5pt + luma(180),
-    inset: 5pt,
-  )
+  // Links — driftwood blue
+  show link: set text(fill: rgb("#5B7B8A"))
+
+  // Tables — brown header row with white text, cream alternating body rows
+  show table: it => {
+    set table(
+      fill: (luma(255), rgb("#F5EDE0")),
+      stroke: none,
+      inset: (x: 6pt, y: 4pt),
+    )
+    // Style header row: brown fill, white text
+    show table.cell.where(y: 0): cell => {
+      set text(fill: white, weight: "bold", size: 9pt)
+      block(
+        fill: rgb("#604020"),
+        inset: (x: 6pt, y: 3pt),
+      )[#cell]
+    }
+    it
+  }
+
+  // Horizontal rules between rows
+  show table.hline: set stroke(0.5pt + rgb("#C8B8A0"))
+
+  // Blockquotes -> callout boxes (cream bg, gold left border)
+  show quote: it => {
+    block(
+      fill: rgb("#F5EDE0"),
+      inset: (x: 10pt, y: 6pt),
+      radius: 2pt,
+      width: 100%,
+      stroke: (left: 4pt + rgb("#C4A882"), top: none, right: none, bottom: none),
+    )[#it]
+  }
 
   body
 }
