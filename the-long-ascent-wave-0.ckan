@@ -7,12 +7,29 @@
     "license": "CC-BY-4.0",
     "version": "1.0.0",
     "depends": [
-        { "name": "ModuleManager" }
+        { "name": "ModuleManager" },
+        { "name": "Harmony2" }
     ],
     "recommends": [
         { "name": "KerbalEngineerRedux" },
         { "name": "BetterTimeWarpCont" },
-        { "name": "TransferWindowPlanner" }
+        { "name": "TransferWindowPlanner" },
+        { "name": "KSPCommunityFixes" },
+        { "name": "DockingPortAlignmentIndicator" },
+        { "name": "CommunityNavballDockingIndicator" },
+        { "name": "BetterBurnTime" },
+        { "name": "PreciseManeuver" },
+        { "name": "Trajectories" },
+        { "name": "KerbalAlarmClock" },
+        { "name": "WaypointManager" },
+        { "name": "JanitorsCloset" },
+        { "name": "HideEmptyTechNodes" },
+        { "name": "ToolbarController" },
+        { "name": "ClickThroughBlocker" },
+        { "name": "SpaceTuxLibrary" },
+        { "name": "IndicatorLights" },
+        { "name": "IndicatorLightsCommunityExtensions" },
+        { "name": "ZTheme" }
     ],
     "supports": [
         { "name": "BreakingGround-DLC" },

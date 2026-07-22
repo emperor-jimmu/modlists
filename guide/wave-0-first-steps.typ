@@ -56,6 +56,192 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
   version_pin: [Compatible with KSP 1.12.x.],
 )
 
+// ═══ BUGFIXES & FOUNDATION ═══
+
+#mod-entry(
+  name: [KSP Community Fixes],
+  ckan_id: "KSPCommunityFixes",
+  url: "https://forum.kerbalspaceprogram.com/topic/204002-kspcommunityfixes/",
+  description: [Comprehensive bugfix and QoL patch collection. Fixes dozens of stock bugs (resource handling, physics quirks, UI glitches) and adds optional quality-of-life tweaks like better maneuver node handling, SAS improvements, and part-action-window enhancements. One of the foundational mods every install should have.],
+  dependencies: ("ModuleManager", "Harmony2"),
+  impact_types: (UI),
+  impact_description: [Patches stock bugs and adds optional UI/QoL improvements. All fixes can be individually toggled via config. No new parts or mechanics — just makes the stock game work better.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Harmony2. Settings configurable via the in-game difficulty options menu.],
+)
+
+// ═══ DOCKING AIDS ═══
+
+#mod-entry(
+  name: [Docking Port Alignment Indicator],
+  ckan_id: "DockingPortAlignmentIndicator",
+  url: "https://spacedock.info/mod/543/Docking-Port-Alignment-Indicator",
+  description: [Adds a dedicated docking alignment window showing relative position, orientation, and alignment of your vessel to the target docking port. Displays a crosshair-style indicator that makes precision docking intuitive.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI),
+  impact_description: [Adds a popup window during docking with alignment crosshairs, distance, and relative angle readouts. No parts — the indicator appears when you target a docking port and select "Control from Here" on your own port.],
+  conflicts: [Community Navball Docking Alignment Indicator provides similar information on the navball instead of in a separate window. Choose the interface style you prefer — you do not need both.],
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Community Navball Docking Alignment Indicator],
+  ckan_id: "CommunityNavballDockingIndicator",
+  url: "https://spacedock.info/mod/532/Community-NavBall-Docking-Alignment-Indicator",
+  description: [Adds docking alignment indicators directly on the navball. Rather than a separate window, you get a marker showing your alignment to the target docking port — everything integrated into the instrument you're already watching during approach.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Augments the navball with docking alignment markers during docking approaches. No separate windows — the navball itself shows alignment. An advanced alternative to DPAI for players who have internalized docking and no longer need the separate popup.],
+  conflicts: [Docking Port Alignment Indicator provides the same information in a dedicated window. DPAI is recommended while learning docking — Community Navball DAI is suggested as an optional replacement in Wave 2 for experienced pilots.],
+  version_pin: [Compatible with KSP 1.12.x. Install alongside DPAI during Waves 0–1 to compare both interfaces. Wave 2 suggests switching to this as your sole docking aid.],
+)
+
+// ═══ FLIGHT INFORMATION ═══
+
+#mod-entry(
+  name: [BetterBurnTime],
+  ckan_id: "BetterBurnTime",
+  url: "https://spacedock.info/mod/21/BetterBurnTime",
+  description: [Shows more accurate burn time and countdown information next to the navball during maneuvers. Displays time-to-burn, estimated burn duration, and a "time-to-impact" readout during landings or rendezvous approach.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI),
+  impact_description: [Improves the burn-time indicator next to the navball with more accurate predictions and additional context. No parts, no gameplay changes — just better numbers.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Does not conflict with KER or MechJeb — provides complementary burn-time data displayed directly on the navball.],
+)
+
+#mod-entry(
+  name: [Precise Maneuver],
+  ckan_id: "PreciseManeuver",
+  url: "https://forum.kerbalspaceprogram.com/topic/207261-precisemaneuver/",
+  description: [Replaces and overhauls the stock maneuver node editor with a precision window. Edit maneuver components numerically (prograde, normal, radial), fine-tune burn timing, and increment/decrement with configurable step sizes. For players who want exact numbers rather than dragging gizmos.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Replaces the stock maneuver gizmo with a numerical editor window. No gameplay changes — the maneuver node system works identically, you just get precise numeric control instead of click-and-drag.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Complements MechJeb's Maneuver Planner — use both for full maneuver control.],
+)
+
+#mod-entry(
+  name: [Trajectories],
+  ckan_id: "Trajectories",
+  url: "https://spacedock.info/mod/396/Trajectories",
+  description: [Predicts your vessel's atmospheric trajectory accounting for drag and planetary rotation. Shows the actual landing site on the planet's surface in Map view — essential for precision landings at the KSC runway, targeted reentries, or Falcon 9-style booster recovery.],
+  dependencies: ("ModuleManager", "ToolbarController"),
+  impact_types: (UI),
+  impact_description: [Overlays a predicted atmospheric trajectory on the Map view. Shows where you'll actually land, accounting for aerodynamics and rotation. Purely predictive — does not change flight physics.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Accuracy depends on vessel orientation during atmospheric flight. Set your attitude then read the prediction.],
+)
+
+// ═══ PLANNING & NAVIGATION ═══
+
+#mod-entry(
+  name: [Kerbal Alarm Clock],
+  ckan_id: "KerbalAlarmClock",
+  url: "https://github.com/linuxgurugamer/KerbalAlarmClock",
+  description: [Advanced alarm system for managing multiple concurrent missions. Set alarms for maneuver nodes, transfer windows, SOI changes, and periapsis/apoapsis crossings. Automatically pauses timewarp or kills warp before the event. More feature-rich than the stock alarm clock.],
+  dependencies: ("ToolbarController"),
+  impact_types: (UI),
+  impact_description: [Adds an alarm clock interface accessible via toolbar. Alarms can trigger at specific times, orbit events, or transfer windows. No gameplay changes — purely a mission management tool.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Optional — the stock alarm clock (added in KSP 1.12) handles basic use cases. Use KAC if you manage 5+ concurrent missions.],
+)
+
+#mod-entry(
+  name: [Waypoint Manager],
+  ckan_id: "WaypointManager",
+  url: "https://spacedock.info/mod/3107/Waypoint-Manager",
+  description: [Displays custom waypoints in the flight view and on the navball for navigation. Create waypoints at specific coordinates, at your current position, or at nearby vessels. Useful for marking landing sites, biome boundaries, or base locations during flight.],
+  dependencies: ("ToolbarController"),
+  impact_types: (UI),
+  impact_description: [Adds in-flight waypoint markers visible in the world and on the navball. Waypoints are persistent and can be created/edited in flight. No parts or gameplay changes.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Waypoints persist across flights in the same save.],
+)
+
+// ═══ VAB/SPH TOOLS ═══
+
+#mod-entry(
+  name: [The Janitor's Closet],
+  ckan_id: "JanitorsCloset",
+  url: "https://spacedock.info/mod/944/The-Janitors-Closet",
+  description: [Parts management tool for the VAB/SPH. Filter, sort, and hide parts by mod, category, or custom rules. When you have dozens of parts packs installed, this keeps the editor part list manageable by letting you hide parts you never use.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI),
+  impact_description: [Adds a part-filtering interface in the VAB/SPH. Can permanently hide parts from the editor list or temporarily filter by mod. No parts removed from the game — just hidden from the editor menu.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Particularly useful after installing large parts packs in Wave 1 and 2.],
+)
+
+// ═══ TECH TREE ═══
+
+#mod-entry(
+  name: [Hide Empty Tech Tree Nodes],
+  ckan_id: "HideEmptyTechNodes",
+  url: "https://spacedock.info/mod/577/HideEmptyTechNodes",
+  description: [Removes empty tech tree nodes from the R&D Center view. When you install a modified tech tree that adds nodes (like Community Tech Tree), not all nodes will be populated by your installed mods — this mod hides the empty ones for a cleaner interface.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Hides technology nodes in the R&D Center that have no parts available to unlock. Purely cosmetic — does not change the tech tree structure or part assignments.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Most useful when paired with Community Tech Tree (Wave 1) or other custom tech trees. Does nothing noticeable with the stock tech tree since all stock nodes are populated.],
+)
+
+// ═══ TOOLBAR ═══
+
+#mod-entry(
+  name: [Toolbar Controller],
+  ckan_id: "ToolbarController",
+  url: "https://github.com/linuxgurugamer/ToolbarControl",
+  description: [Modern maintained toolbar framework. Provides a unified toolbar button system used by many mods (KAC, Waypoint Manager, Trajectories). Replaces the original blizzy78 Toolbar with improved compatibility and active maintenance by LGG.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Provides a framework for toolbar buttons. Required by several other Wave 0 mods. No visible impact on its own — other mods use it to add their buttons.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Required dependency for Kerbal Alarm Clock, Waypoint Manager, and Trajectories.],
+)
+
+// ═══ VISUAL INDICATORS ═══
+
+#mod-entry(
+  name: [IndicatorLights],
+  ckan_id: "IndicatorLights",
+  url: "https://spacedock.info/mod/566/IndicatorLights",
+  description: [Adds functional LED indicators to stock parts. Batteries show charge level with colored lights, probe cores show signal status, docking ports show alignment, and more. Parts that were once opaque black boxes now visually communicate their state.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI, Graphics),
+  impact_description: [Adds colored light indicators to stock parts that reflect actual part state (charge, signal, control, etc.). Purely visual — part functionality is unchanged. The indicators provide at-a-glance status without opening right-click menus.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. IndicatorLights Community Extensions adds indicators for mod parts (see below).],
+)
+
+#mod-entry(
+  name: [IndicatorLights Community Extensions],
+  ckan_id: "IndicatorLightsCommunityExtensions",
+  url: "https://spacedock.info/mod/974/IndicatorLights-Community-Extensions",
+  description: [Extends IndicatorLights with LED indicators for popular mod parts including ReStock, Near Future Technologies, and others. Ensures your entire part catalog benefits from visual status indicators, not just the stock parts.],
+  dependencies: ("IndicatorLights"),
+  impact_types: (UI, Graphics),
+  impact_description: [Adds IndicatorLights compatibility patches for mod parts. No new functionality — just extends the visual indicator system to more parts. Requires IndicatorLights.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires IndicatorLights. Only useful if you install parts mods (Wave 1+).],
+)
+
+// ═══ UI THEME ═══
+
+#mod-entry(
+  name: [ZTheme],
+  ckan_id: "ZTheme",
+  url: "https://forum.kerbalspaceprogram.com/topic/217396-112x-ztheme-v121-a-dark-theme-for-ksp-2025-07-26/",
+  description: [Dark UI theme for KSP's interface. Replaces the stock light-gray UI panels with a sleek dark theme across all scenes (Space Center, VAB/SPH, flight view, map view). Easier on the eyes during long play sessions and gives the game a modern look.],
+  dependencies: (),
+  impact_types: (UI, Graphics),
+  impact_description: [Replaces UI textures and color schemes with a dark theme. No gameplay changes — purely cosmetic UI reskin. Applies globally to all KSP interface elements.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Installed via CKAN. No dependencies. Can be toggled or uninstalled at any time without affecting saves.],
+)
+
 // ═══════════════════════════════════════════════════════════════════
 // HOW TO USE THESE MODS
 // ═══════════════════════════════════════════════════════════════════

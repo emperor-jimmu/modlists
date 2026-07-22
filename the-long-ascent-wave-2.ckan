@@ -10,7 +10,8 @@
         { "name": "ModuleManager" }
     ],
     "suggests": [
-        { "name": "PlanetsideExplorationTechnologies" }
+        { "name": "PlanetsideExplorationTechnologies" },
+        { "name": "CommunityNavballDockingIndicator" }
     ],
     "supports": [
         { "name": "BreakingGround-DLC" },

@@ -32,6 +32,22 @@ Wave 2 is the endgame. It adds life support, colonization, interstellar travel, 
   version_pin: [Compatible with KSP 1.12.x.],
 )
 
+#section-heading([Wave 1→2 UI Upgrades])
+
+At this stage you have hundreds of hours of flight experience. You can now replace certain Wave 0 UI mods with leaner alternatives that expect pilot proficiency:
+
+#mod-entry(
+  name: [Community Navball Docking Alignment Indicator],
+  ckan_id: "CommunityNavballDockingIndicator",
+  url: "https://spacedock.info/mod/532/Community-NavBall-Docking-Alignment-Indicator",
+  description: [Suggested optional replacement for DPAI. By Wave 2 you no longer need a separate docking window — the navball-based indicator keeps your eyes on the instrument you're already watching during approach. No new windows, no screen clutter.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Replaces DPAI's separate alignment window with navball-integrated markers. Suggested (not required) — if you prefer DPAI's dedicated window, keep using it.],
+  conflicts: [Docking Port Alignment Indicator — if you switch to this, uninstall DPAI. The two are mutually exclusive. Both are installed by default in Waves 0–1 so you can compare; pick one by Wave 2.],
+  version_pin: [Compatible with KSP 1.12.x. Suggested replacement for DPAI in Wave 2. Uninstall DPAI if switching.],
+)
+
 // ═══════════════════════════════════════════════════════════════════
 // HOW TO USE THESE MODS
 // ═══════════════════════════════════════════════════════════════════
