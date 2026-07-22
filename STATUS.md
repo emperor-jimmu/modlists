@@ -211,6 +211,7 @@
 - [x] Easy Anvils (Wave 0 — Utility & QoL) — anvil overhaul, requires Puzzles Lib (already in pack)
 - [x] Euphoria Patches (Wave 0 — Shaderpack) — optional add-on for Complementary Unbound, standalone on NeoForge
 - [x] Euphoria Patches recommended settings added to GUIDE.md (Popular Settings tab + feature table)
+- [x] Architectury API installation documented in GUIDE.md Wave 0.5 (cross-loader dependency, was missing from GUIDE despite being in mod list)
 
 ### Config Overrides Created (Jul 2026)
 - [x] YUNG's Better Caves (config/bettercaves/neoforge-1.21.1/better_cave.json) — cavern_spawn_chance 23% → 30%, gives Crystal Cavern biome more room to breathe

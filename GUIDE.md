@@ -482,6 +482,16 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 - `no_book_duplicates` = `true` — Prevents librarians from selling the same enchant at different levels simultaneously.
 - `enchant_repair_compat` = `false` — Adds Curse of Vanishing to every book sold by librarians (for Enchant & Repair compatibility). Keep disabled unless that mod is added.
 
+### Dependencies — Wave 0.5
+
+| Mod                                                                               | Role                                                       | Required By                                                |
+|-----------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------|
+| [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility — lets Fabric mods run on NeoForge | First Person Model, Eating Animation, multiple Wave 1-3+ mods |
+
+**Architectury API** is a lightweight library with no user-visible features — install once and forget. It provides the abstraction layer that lets Fabric-origin client QoL mods (First Person Model, Eating Animation) run seamlessly on NeoForge. Without it, these mods crash at startup with a missing-dependency error.
+
+**Install**: In XMCL, search `Architectury API` in the Mods tab and add it. Alternatively, download from CurseForge and drop the `.jar` into `mods/`. No config needed. The game loads it silently — you'll never see it in-game, but JEI's mod list confirms it's present.
+
 ### Configuration — Wave 0.5
 
 **Waystones** (`config/waystones-common.toml`):
