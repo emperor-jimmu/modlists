@@ -240,8 +240,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 **RAY's 3D Rails** replaces rail block and item textures with 3D models. Supports shaders since v3.0. Compatible with all rail types from Steam 'n' Rails and Create.
 
-**3D Ladders** replaces the vanilla ladder model with a 3D version. Simple, lightweight, no conflicts.
-
 **Better Lanterns** gives lanterns and chains an enhanced 3D look with connected chain models. Compatible with Arcane Lanterns and Thin Air mods.
 
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
@@ -252,9 +250,8 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 4. Alacrity — Shulker Box Tooltip Support
 5. Enhanced Boss Bars
 6. RAY's 3D Rails
-7. 3D Ladders
-8. Better Lanterns
-9. Smooth Font 32x
+7. Better Lanterns
+8. Smooth Font 32x
 
 ### Infrastructure
 
@@ -324,9 +321,8 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 4. Alacrity — Shulker Box Tooltip Support
 5. Enhanced Boss Bars
 6. RAY's 3D Rails
-7. 3D Ladders
-8. Better Lanterns
-9. Smooth Font 32x
+7. Better Lanterns
+8. Smooth Font 32x
 
 **Alacrity support packs go BELOW the base Alacrity pack** — putting them above corrupts JEI graphics.
 
@@ -427,6 +423,8 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Camera Overhaul](https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul)                                    | Camera tilting, screen shakes, mouselook roll, idle sway — satisfying movement feedback        |
 | [Dynamic Crosshair](https://www.curseforge.com/minecraft/mc-mods/dynamic-crosshair)                               | Context-aware crosshair — hides/shows/changes style based on what you're looking at or holding |
 | [\[DLS\] Dark Loading Screen](https://www.curseforge.com/minecraft/mc-mods/dls-dark-loading-screen/files/7425971) | Replaces the default bright-red loading screen with a dark version — easier on the eyes        |
+| [Cosy Critters & Creepy Crawlies](https://www.curseforge.com/minecraft/mc-mods/cosy-critters)                        | Ambient atmospheric animals — birds, bugs, and critters that bring the world to life            |
+| [Foxified Dense Flowers](https://www.curseforge.com/minecraft/mc-mods/foxified-dense-flowers)                        | Renders multiple flowers per block in flower fields for denser, more natural-looking flora      |
 
 ### Inventory & UI
 
@@ -670,6 +668,14 @@ Camera tilting on movement, screen shakes on explosions, mouselook roll, idle sw
 #### [DLS] Dark Loading Screen
 
 Replaces the bright-red loading screen with a dark version. No config.
+
+#### Cosy Critters & Creepy Crawlies
+
+Adds ambient atmospheric creatures: birds flock in the sky and land on elevated blocks, bugs scuttle through grass, and other critters bring the world to life. Birds scatter when you or a vehicle approach. **Client-side only** — no server install needed. All effects individually toggleable via `/cosycritters` command or the mod list config menu. Zero performance impact (97KB).
+
+#### Foxified Dense Flowers
+
+Renders multiple flowers per block in flower fields — the more flowers adjacent to each other, the denser the display. Makes flower forests and plains feel lush and overgrown without adding new flowers or changing worldgen. **Client-side only**. Works with existing vanilla and modded flowers.
 
 ---
 
@@ -2721,7 +2727,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +10 resource packs)                                                                            |
-| Wave 0.5 — Player Experience | 45      | —      | 45      | Visual & Client QoL (27), Inventory & UI (14), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
+| Wave 0.5 — Player Experience | 47      | —      | 47      | Visual & Client QoL (29), Inventory & UI (14), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony            | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                                          |
 | Wave 2 — Exploration         | 26      | 6      | 32      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships, hang glider, IaA addon                                                                         |
@@ -2731,7 +2737,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat              | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
 | Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                               |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
-| **Total**                    | **146** | **40** | **186** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
+| **Total**                    | **148** | **40** | **188** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 

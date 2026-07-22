@@ -9,7 +9,7 @@
 
 ### Wave 0 — Foundation (~65 mods incl. deps)
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
-- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Status Effect Bars Reforged, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged
+- [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Status Effect Bars Reforged, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged, Cosy Critters, Foxified Dense Flowers
 - [x] Inventory/UI: JEI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Mouse Tweaks, Inventory Essentials, Fancy Toasts, Tooltip Overhaul, Loot Journal, Reliable Advancements, Polymorph, Shulker Box Tooltip, Item Borders
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U, Balm
@@ -234,6 +234,7 @@
 
 ### Removed Mods (Jul 2026)
 - [x] Vervada's 3D Plants (Wave 0 — Texture Pack) — removed due to incompatibility issues with other mods
+- [x] 3D Ladders (Wave 0 — Texture Pack) — duplicate functionality; RAY's 3D Rails already covers 3D ladders alongside its rail models
 
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
@@ -244,3 +245,16 @@
 
 ### Skipped After Review (Jul 2026 batch 6)
 - [x] Automobility — no NeoForge version, only maintained for 1.20/1.20.1. Last updated Jun 2023. Abandoned.
+
+### Added Mods (Jul 2026 batch 7 — Ambient Visuals)
+- [x] Cosy Critters & Creepy Crawlies v0.3.3 (Wave 0.5 — Visual & Client QoL) — ambient atmospheric animals: birds, bugs, critters. Client-side only, 97KB, all effects configurable. NeoForge 1.21.1 native. By PigCart (GrandArtisan, 709K downloads).
+- [x] Foxified Dense Flowers v1.0.0 (Wave 0.5 — Visual & Client QoL) — renders multiple flowers per block in flower fields. NeoForge 1.21.1 native, client-side only. NeoForge port of the original Fabric mod (172K downloads, MIT licensed). By owen233.
+
+### Skipped After Review (Jul 2026 batch 7 — Foliage Resource Packs)
+- [x] Rainbow's Foliage — requires Polytone mod (unverified NeoForge 1.21.1), 16x textures clash with Alacrity 32x. Model/blockstate conflicts with Alacrity.
+- [x] Os' Colorful Grasses — 16x grass textures clash with Alacrity 32x RPG art style.
+- [x] Mickey Joe's Flowers — 16x 3D flower models clash with Alacrity 32x. High quality (94K downloads, updated Jul 2026) but visual inconsistency.
+- [x] Bushy Pink Petals, Wildflowers & Leaf Litter — 16x ground cover clashes with Alacrity 32x. Last updated Aug 2025.
+- [x] (Bee's) Fancy Crops — 16x crop textures clash with Alacrity 32x. Built for Farmer's Delight (14.9M downloads, GrandArtisan creator) but resolution mismatch is unresolvable.
+- [x] Retextured Vine — 16x vine textures clash with Alacrity 32x. Too narrow in scope (vines only, 22K downloads) to justify pack-order headache.
+- [x] LambdaBetterGrass — Fabric-only (requires Fabric API + ModMenu). No NeoForge version exists. 9.2M downloads but on wrong modloader.
