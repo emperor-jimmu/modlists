@@ -18,20 +18,99 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
 
 #section-heading([Mod List])
 
-// Example mod entry — replace with actual mods:
-// #mod-entry(
-//   name: [Kerbal Engineer Redux],
-//   ckan_id: "KerbalEngineerRedux",
-//   url: "https://forum.kerbalspaceprogram.com/topic/...",
-//   description: [Displays critical flight data (delta-v, TWR, orbital info) in a customizable HUD.],
-//   dependencies: (),
-//   impact_types: (UI),
-//   impact_description: [Adds readout panels to VAB/SPH and flight view. No new parts, no gameplay changes.],
-//   conflicts: none,
-//   version_pin: [Compatible with KSP 1.12.x.],
-// )
+// ═══ UI & HUD ═══
 
-// TODO: Add mod entries here
+#mod-entry(
+  name: [Kerbal Engineer Redux],
+  ckan_id: "KerbalEngineerRedux",
+  url: "https://forum.kerbalspaceprogram.com/topic/17833-130-kerbal-engineer-redux-1130-2017-05-28/",
+  description: [Displays critical flight data (delta-v, TWR, orbital info, biome, and more) in a customizable HUD. Essential for knowing your rocket's capabilities before you launch.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Adds readout panels to VAB/SPH and flight view. No new parts, no gameplay changes. Replaces guesswork with numbers.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [BetterTimeWarp Continued],
+  ckan_id: "BetterTimeWarpCont",
+  url: "https://forum.kerbalspaceprogram.com/topic/154935-112x-bettertimewarpcontinued-customizable-time-warp-and-lossless-physics-warp/",
+  description: [Adds custom warp speed levels and fixes stock time warp behavior. Lets you fine-tune warp rates for long burns or interplanetary transfers.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Replaces the stock warp rate list with customizable levels. No gameplay changes — just more control over how fast you wait.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Transfer Window Planner],
+  ckan_id: "TransferWindowPlanner",
+  url: "https://forum.kerbalspaceprogram.com/topic/84005-112x-transfer-window-planner-v1800-april-11/",
+  description: [A porkchop-plot calculator for interplanetary transfers. Shows the most efficient departure date and delta-v required to reach any planet or moon.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Adds a planning tool accessible from the VAB and Tracking Station. No parts, no gameplay changes. Purely informational.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+// ═══════════════════════════════════════════════════════════════════
+// HOW TO USE THESE MODS
+// ═══════════════════════════════════════════════════════════════════
+
+#pagebreak()
+#chapter-heading([Wave 0 Mods — How to Use Them])
+
+#section-heading([Kerbal Engineer Redux (KER)])
+
+KER adds two things: a toolbar button in the VAB/SPH, and a toolbar button in flight. Both open customizable readout panels.
+
+*In the VAB:* Click the KER button to open the build engineer panel. This shows your rocket's delta-v per stage, TWR, and burn time — all calculated live as you build. You'll see two delta-v columns: *atmospheric* and *vacuum*. Atmospheric is for the first ~20 km of ascent (engines are less efficient in thick air). Vacuum is for everything above. For transfer stages and landers, always plan using the vacuum number.
+
+The most important VAB readouts: *Delta-V*, *TWR*, and *Burn Time*. If TWR is below 1.0 at launch, you won't leave the pad. If delta-v to orbit is below 3,400 m/s, you're cutting it close.
+
+*In flight:* Press the KER toolbar button (or the hotkey you set in settings) to open the flight HUD. You can click and drag readouts anywhere on screen. The essential flight readouts for a beginner:
+
+- *Orbit: Apoapsis / Periapsis* — watch these during ascent and after maneuvers
+- *Vessel: Altitude (Surface)* — shows your true height above terrain, not sea level
+- *Surface: Vertical Speed* — critical for landings. Keep this low and decreasing
+- *Orbit: Time to Apoapsis / Periapsis* — timing your circularization burns
+- *Vessel: Total Delta-V* — how much gas you have left
+
+#tip[[
+  KER's readouts are deeply customizable, but don't go overboard. Start with the five listed above. Add more as you learn what each number means. A cluttered HUD is harder to read than no HUD at all.
+]]
+
+#section-heading([BetterTimeWarp Continued])
+
+BetterTimeWarp replaces the stock warp bar (the arrows next to the MET clock) with a customizable warp menu. Click the toolbar button (a clock icon) to open settings.
+
+*Key features:*
+- *Custom warp rates:* You can add intermediate speeds (8×, 15×, etc.) for more granular time compression. Useful for long interplanetary burns where the stock jump from 50× to 100× is too abrupt.
+- *Physics warp override:* Normally, physics warp (Alt+period) caps at 4×. BetterTimeWarp lets you push it higher with less risk of kraken attacks, though your mileage may vary with high-part-count vessels.
+- *Lossless physics warp:* At moderate rates (up to ~10× physical), BetterTimeWarp runs extra physics steps to reduce the wobble and explosion risk that plagues stock physics warp.
+
+#tip[[
+  Set a custom physics warp of 6× for long ion-engine burns. At 6×, most craft can handle the physics load without spontaneous disassembly. Above 10×, save first.
+]]
+
+#section-heading([Transfer Window Planner])
+
+TransferWindowPlanner (TWP) is a porkchop-plot tool that calculates the optimal departure time and delta-v for interplanetary transfers. You won't need it in Wave 0 — Mun and Minmus transfers are measured in hours, not months — but it's worth knowing where it lives.
+
+*Access:* Toolbar button in the VAB, SPH, and Tracking Station. Opens a large window with dropdowns for origin and destination.
+
+*How to read a porkchop plot:*
+- The Y-axis is departure date, X-axis is arrival date
+- Colors represent delta-v: blue = cheap, red = expensive
+- Click anywhere on the plot to see exact departure time and delta-v
+- TWP can create a maneuver node for you, but you'll still need to execute it manually
+
+#info[[
+  TWP becomes essential in Wave 1 when you start going interplanetary. For now, just know it exists. When you're ready to launch for Duna, open TWP first.
+]]
 
 // ═══════════════════════════════════════════════════════════════════
 // TUTORIAL: FIRST STEPS

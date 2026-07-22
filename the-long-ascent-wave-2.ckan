@@ -10,6 +10,7 @@
         { "name": "ModuleManager" }
     ],
     "suggests": [
+        { "name": "PlanetsideExplorationTechnologies" }
     ],
     "supports": [
         { "name": "BreakingGround-DLC" },

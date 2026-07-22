@@ -37,14 +37,14 @@
       #context page.numbering
     ],
   )
-  set text(font: body-font, size: 10pt, fill: text-dark)
+  set text(font: body-font, size: 11.5pt, fill: text-dark)
   set par(leading: 0.6em, justify: true)
 
   // Heading styling — show rules so outline() detects them
   show heading: set text(font: heading-font)
   show heading.where(level: 1): it => {
     v(1em)
-    set text(weight: "bold", size: 18pt, fill: ksp-orange)
+    set text(weight: "bold", size: 20pt, fill: ksp-orange)
     it.body
     v(0.3em)
     line(length: 100%, stroke: 1pt + ksp-orange)
@@ -52,7 +52,7 @@
   }
   show heading.where(level: 2): it => {
     v(0.8em)
-    set text(weight: "semibold", size: 14pt, fill: space-dark)
+    set text(weight: "semibold", size: 15pt, fill: space-dark)
     it.body
     v(0.5em)
   }
@@ -115,7 +115,7 @@
     fill: space-mid,
     stroke: (left: 3pt + accent),
   )[
-    #set text(font: body-font, size: 9.5pt, fill: white)
+    #set text(font: body-font, size: 10.5pt, fill: white)
     #body
   ]
   v(0.5em)
@@ -126,7 +126,13 @@
 #let tip(body) = callout(kerbin-green, body)
 #let danger(body) = callout(warning-red, body)
 
-// ─── Mod Entry ───────────────────────────────────────────────────
+// ─── Mod Impact Type Constants ───────────────────────────────────
+
+#let UI        = "UI"
+#let Parts     = "Parts"
+#let Graphics  = "Graphics"
+#let Mechanics = "Mechanics"
+#let Gameplay  = "Gameplay"
 
 #let mod-entry(
   name: none,
@@ -140,72 +146,76 @@
   version_pin: none,
 ) = {
   v(0.8em)
-  grid(
-    columns: (1fr, 2fr),
-    column-gutter: 1.5em,
-    row-gutter: 0.3em,
+  block(
+    inset: 12pt,
+    radius: 6pt,
+    fill: rgb("#F7F9FC"),
+    stroke: (left: 3pt + ksp-teal, top: 0.5pt + rgb("#E0E4E8"), right: 0.5pt + rgb("#E0E4E8"), bottom: 0.5pt + rgb("#E0E4E8")),
+  )[
+    #grid(
+      columns: (1fr, 2fr),
+      column-gutter: 1.8em,
+      row-gutter: 0.3em,
 
     // Left column — metadata
     [
-      #set text(font: heading-font, weight: "semibold", size: 11pt, fill: space-dark)
+      #set text(font: heading-font, weight: "semibold", size: 13pt, fill: space-dark)
       #if url != none {
         link(url)[#name]
       } else {
         name
       }
-      #v(0.2em)
-      #set text(font: code-font, size: 8pt, fill: mun-gray)
-      [`#ckan_id`]
 
       #v(0.5em)
 
       #if dependencies.len() > 0 {
-        set text(font: body-font, size: 8pt, fill: mun-gray)
-        [*Dependencies:* #dependencies.join(", ")]
-        v(0.2em)
+        set text(font: body-font, size: 9pt, fill: mun-gray)
+        let deps = if type(dependencies) == array { dependencies } else { (dependencies,) }
+        [*Dependencies:* #deps.join(", ")]
+        v(0.15em)
       }
 
       #if impact_types.len() > 0 {
-        set text(font: body-font, size: 8pt, fill: mun-gray)
-        [*Impact:* #impact_types.join(", ")]
-        v(0.2em)
+        set text(font: body-font, size: 9pt, fill: mun-gray)
+        let types = if type(impact_types) == array { impact_types } else { (impact_types,) }
+        [*Impact:* #types.join(", ")]
+        v(0.15em)
       }
 
       #if version_pin != none {
-        set text(font: body-font, size: 8pt, fill: mun-gray)
+        set text(font: body-font, size: 9pt, fill: mun-gray)
         [*Version:* #version_pin]
-        v(0.2em)
+        v(0.15em)
       }
     ],
 
     // Right column — description + impact + conflicts
     [
-      #set text(font: body-font, size: 10pt)
+      #set text(font: body-font, size: 11pt)
       #description
 
       #if impact_description != none {
-        v(0.4em)
-        set text(font: body-font, size: 9pt, fill: text-dark)
+        v(0.5em)
+        set text(font: body-font, size: 10pt, fill: text-dark)
         [#impact_description]
       }
 
       #if conflicts != none {
-        v(0.4em)
-        text(font: body-font, size: 8.5pt, fill: warning-red)[
+        v(0.5em)
+        text(font: body-font, size: 9.5pt, fill: warning-red)[
           ⚠ Conflicts: #conflicts
         ]
       }
     ],
   )
-  v(0.3em)
-  line(length: 100%, stroke: 0.5pt + rgb("#d0d0d0"))
+  ]
   v(0.5em)
 }
 
 // ─── Wave Boundary Criteria Table ────────────────────────────────
 
 #let wave-criteria-table() = {
-  set text(font: body-font, size: 8.5pt)
+  set text(font: body-font, size: 9pt)
   table(
     columns: (auto, auto, auto, auto),
     inset: 6pt,

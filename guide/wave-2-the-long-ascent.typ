@@ -18,7 +18,62 @@ Wave 2 is the endgame. It adds life support, colonization, interstellar travel, 
 
 #section-heading([Mod List])
 
-// TODO: Add mod entries here
+// ═══ COLONIZATION ═══
+
+#mod-entry(
+  name: [Planetside Exploration Technologies],
+  ckan_id: "PlanetsideExplorationTechnologies",
+  url: "https://github.com/BenJee-GitHub/PlanetsideExplorationTechnologies",
+  description: [Colony and surface base building parts: inflatable habitats, landing pads, modular connector tubes, resource silos, and deployable surface structures. Designed for constructing permanent planetary outposts that can be expanded incrementally.],
+  dependencies: ("CommunityCategoryKit", "B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds base-building parts optimized for surface assembly — parts ship compact and deploy on-site. Integrates with stock ISRU for fuel production. Pairs well with life support mods (USI-LS, TAC-LS) to create self-sustaining colonies. Without life support, these are purely aesthetic/RP base parts.],
+  conflicts: [MKS (USI Modular Kolonization System) provides overlapping colonization parts and mechanics. If using MKS for the full resource-chain colonization experience, Planetside Exploration Technologies is redundant. If you only want base assembly parts without complex resource chains, use this instead of MKS.],
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+// ═══════════════════════════════════════════════════════════════════
+// HOW TO USE THESE MODS
+// ═══════════════════════════════════════════════════════════════════
+
+#pagebreak()
+#chapter-heading([Wave 2 Mods — How to Use Them])
+
+#section-heading([Planetside Exploration Technologies (Base Building)])
+
+Planetside gives you the parts to build surface bases, but it doesn't add new resource chains — it works with stock ISRU. Here's how to approach base construction:
+
+*Phase 1 — Scout:* Before you land a single part, scan the target body with SCANsat (from Wave 1). Find a flat area with high ore concentration. Minmus's Flats and the Mun's craters are ideal first targets. Land a small probe to confirm the terrain is as flat as the map suggests.
+
+*Phase 2 — Power and ISRU:* Land a drilling rig first. The minimum viable base: a Drill-O-Matic, a Convert-O-Tron 250, an ore tank, a fuel tank, and sufficient power (solar for inner planets, reactors for outer). Radiators are not optional — the converter will overheat and shut down within seconds without them. Test the full ISRU chain on the launch pad before flying it anywhere.
+
+*Phase 3 — Expansion:* Now deploy Planetside parts. Inflatable habitats connect to the ISRU hub via modular connector tubes. Landing pads let you land subsequent supply ships precisely (they have guidance beacons). Resource silos store excess fuel and ore. Think of the base as a space station that happens to sit on the ground — the same assembly principles apply.
+
+*Phase 4 — Self-sufficiency (with life support):* If you add a life support mod (USI-LS, TAC-LS, Kerbalism), your base now needs to produce supplies in addition to fuel. Greenhouses and recyclers close the resource loop. The goal: a base that produces fuel, supplies, and can even build new vessels (when paired with Extraplanetary Launchpads or similar).
+
+#tip[[
+  Build your first base on Minmus. The gravity is so low that landing heavy modules is trivial, and the flats have the highest ore concentration in the Kerbin system. Once you've proven the design works on Minmus, replicate it on the Mun, then Duna.
+]]
+
+#warning[[
+  Precision landing matters a lot when assembling a base. If your habitat module lands 5 km from your ISRU rig, you either spend hours rovering parts together or you revert and try again. Use MechJeb's Landing Guidance (Wave 1) or get very good at manual targeted landings before attempting base assembly.
+]]
+
+#section-heading([Integration with Wave 0–1 Mods])
+
+By Wave 2, your modlist is fully layered. Here's how the mods work together during a typical colony mission:
+
+- *KER* or *MechJeb* gives you delta-v and TWR readouts during base module design — heavy ISRU equipment requires powerful transfer stages
+- *MechJeb's Landing Guidance* can precision-land base modules within a few hundred meters of your target
+- *BetterTimeWarp* lets you warp through resource processing at custom speeds without breaking physics
+- *TransferWindowPlanner* optimizes the trip from Kerbin to your colony world
+- *SCANsat* provides the resource map that tells you where to land
+- *Near Future reactors* (from Wave 1) power bases on outer planets where solar is useless
+- *Planetside parts* provide the base structure, and stock ISRU provides the fuel chain
+
+#info[[
+  This layered integration is the philosophy of the 3-wave system. Each wave builds on the previous one, and by Wave 2, your mods form a coherent whole rather than a pile of independent addons.
+]]
 
 // ═══════════════════════════════════════════════════════════════════
 // STRATEGY GUIDE

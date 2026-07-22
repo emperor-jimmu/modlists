@@ -10,6 +10,9 @@
         { "name": "ModuleManager" }
     ],
     "recommends": [
+        { "name": "KerbalEngineerRedux" },
+        { "name": "BetterTimeWarpCont" },
+        { "name": "TransferWindowPlanner" }
     ],
     "supports": [
         { "name": "BreakingGround-DLC" },
