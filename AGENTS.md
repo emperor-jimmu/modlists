@@ -17,6 +17,7 @@ A curated 3-wave modlist and game guide for Kerbal Space Program 1.12.5, distrib
   3. Otherwise → Wave 1.
 - **Mod Rules:** No conflicts within wave, no redundant mods, no cheating/OP mods, no NSFW/porn mods.
 - **CKAN:** All mods must have valid CKAN identifiers. One `.ckan` file per wave, plus a combined file.
+- **Mod URLs — NEVER fabricate.** Every mod entry's `url` field must link to a real, verified project page (KSP forum thread, GitHub repo, or SpaceDock page). Source URLs from CKAN NetKAN metadata (`https://raw.githubusercontent.com/KSP-CKAN/NetKAN/master/NetKAN/<id>.netkan`) — check `resources.homepage`, `$kref` for GitHub/SpaceDock references, or search the KSP forum directly. Never guess topic IDs. Forum URLs require the full title slug: `/topic/<id>-<slug>/` — bare `/topic/<id>/` returns 404.
 - **DLCs:** Breaking Ground and Making History recommended but not required. DLC-dependent mods go in optional subsections.
 
 ### File Roles
@@ -41,7 +42,7 @@ A curated 3-wave modlist and game guide for Kerbal Space Program 1.12.5, distrib
 #mod-entry(
   name: [Mod Name],
   ckan_id: "CKAN-Identifier",
-  url: "https://forum.kerbalspaceprogram.com/...",
+  url: "https://forum.kerbalspaceprogram.com/topic/<id>-<slug>/",
   description: [Brief description of the mod.],
   dependencies: (ModA, ModB, ModC),
   impact_types: (UI, Parts, Graphics, Mechanics, Gameplay),
