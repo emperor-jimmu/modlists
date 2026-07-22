@@ -36,8 +36,8 @@
     it
   }
 
-  // Links — driftwood blue
-  show link: set text(fill: rgb("#5B7B8A"))
+  // Links — deeper blue for contrast
+  show link: set text(fill: rgb("#2B5F7A"))
 
   // Tables — brown header row with white text, cream alternating body rows
   show table: it => {

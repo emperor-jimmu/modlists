@@ -27,19 +27,19 @@ Recommended JVM arguments (for XMCL → instance settings → Java → JVM Argum
 -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:SoftMaxHeapSize=12G -Xms8G -Xmx8G
 ```
 
-| System RAM | Recommended allocation                                       |
-|------------|--------------------------------------------------------------|
-| 16 GB      | `-Xms6G -Xmx10G -XX:SoftMaxHeapSize=8G`                     |
-| 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G`                   |
-| 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G`                   |
+| System RAM | Recommended allocation                    |
+|------------|-------------------------------------------|
+| 16 GB      | `-Xms6G -Xmx10G -XX:SoftMaxHeapSize=8G`   |
+| 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G` |
+| 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G` |
 
 > **Note**: ZGC (Z Garbage Collector) with generational mode is the recommended GC for Java 21 with NeoForge. It provides consistently low latency (sub-millisecond pause times) and handles the large heap sizes common with modded Minecraft better than Shenandoah or G1GC. The Adoptium Temurin JDK 21 includes ZGC — no special Java build needed. `-XX:+AlwaysPreTouch` pre-initializes all memory pages at startup, preventing runtime page-fault stalls. `-XX:+PerfDisableSharedMem` disables synchronous `hsperfdata` file writes, removing a minor source of I/O-induced latency. `-XX:SoftMaxHeapSize=12G` tells ZGC to target ~12G heap usage and GC more aggressively to stay near that level, while allowing bursts above it up to `-Xmx`. For this to take effect, `-Xmx` must be set higher than `-Xms`. The baseline uses equal values for simplicity; on a 64 GB machine you may want e.g. `-Xms12G -Xmx24G` instead to let SoftMaxHeapSize work.
 
 ### X Minecraft Launcher (XMCL)
 
-| Tool                                                              | Role                                     |
-|-------------------------------------------------------------------|------------------------------------------|
-| [XMCL](https://www.xmcl.app/)                                     | Mod manager and launcher for the modpack |
+| Tool                          | Role                                     |
+|-------------------------------|------------------------------------------|
+| [XMCL](https://www.xmcl.app/) | Mod manager and launcher for the modpack |
 
 **XMCL** manages mod and modpack installation, updates, and launching for this modpack. It supports both **CurseForge** and **Modrinth** as mod sources in one launcher, handles NeoForge installation automatically, manages Java versions per instance, and uses hard links to avoid duplicate mod storage. Open source, free, with no premium tier.
 
@@ -137,7 +137,6 @@ Open **Options → Controls → Key Binds** and set these before anything else:
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 0 — Foundation
@@ -151,13 +150,13 @@ The essentials that make the game run well. Dependencies, performance, rendering
 | [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)                     | Rendering engine                         |
 | [Iris](https://www.curseforge.com/minecraft/mc-mods/irisshaders)                  | Shader loader (v1.8.14, NeoForge native) |
 | [Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium)                   | Server-side game logic optimization      |
+| [FerriteCore](https://www.curseforge.com/minecraft/mc-mods/ferritecore)           | Memory usage reduction                   |
 | [Distant Horizons](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) | LOD rendering                            |
 | [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix)               | All-in-one perf + bug fixes              |
 | [ImmediatelyFast](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast)   | Immediate-mode rendering                 |
 | [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)      | Hide off-screen entities                 |
 | [Dynamic FPS](https://www.curseforge.com/minecraft/mc-mods/dynamic-fps)           | Background FPS reduction                 |
 | [NoisiumForked](https://www.curseforge.com/minecraft/mc-mods/noisiumforked)       | Worldgen optimization (active fork)      |
-| [FerriteCore](https://www.curseforge.com/minecraft/mc-mods/ferritecore)           | Memory usage reduction                   |
 
 **ModernFix** (configurable in-game via Mod List → ModernFix → Config, or `config/modernfix-mixins.properties`):
 
@@ -165,10 +164,10 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 ### Shaderpack
 
-| Shaderpack                                                                                                    | Description                                                                                           |
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-unbound)             | Realistic visual style, Potato→Ultra profiles, block-specific effects                                 |
-| [Euphoria Patches](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches)                             | Optional add-on for Complementary Shaders — extends with handcrafted features, all disabled by default |
+| Shaderpack                                                                                        | Description                                                                                            |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| [Complementary Unbound](https://www.curseforge.com/minecraft/customization/complementary-unbound) | Realistic visual style, Potato→Ultra profiles, block-specific effects                                  |
+| [Euphoria Patches](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches)                 | Optional add-on for Complementary Shaders — extends with handcrafted features, all disabled by default |
 
 **Euphoria Patches** is a shader add-on, not a standalone shaderpack. It patches Complementary Shaders (Reimagined or Unbound) with additional visual options. Install via its patcher mod (requires NeoForge, no additional mod dependencies). All features are disabled by default and can be individually enabled from the shader options menu.
 
@@ -317,11 +316,11 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:SoftMaxHeapSize=12G -Xms8G -Xmx8G
 ```
 
-| System RAM | Allocation                                                    |
-|------------|---------------------------------------------------------------|
-| 16 GB      | `-Xms6G -Xmx10G -XX:SoftMaxHeapSize=8G`                      |
-| 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G`                    |
-| 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G`                    |
+| System RAM | Allocation                                |
+|------------|-------------------------------------------|
+| 16 GB      | `-Xms6G -Xmx10G -XX:SoftMaxHeapSize=8G`   |
+| 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G` |
+| 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G` |
 
 ---
 
@@ -370,7 +369,6 @@ Keeps chunks loaded when you're far away or in another dimension.
 No performance concern with a dozen loaders on a modern CPU.
 
 ---
-
 
 <!--raw-typst #pagebreak() -->
 
@@ -442,9 +440,9 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 
 ### Utility & QoL
 
-| Mod                                                                             | Role                                                                                                  |
-|---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Easy Anvils](https://www.curseforge.com/minecraft/mc-mods/easy-anvils)         | Overhauled anvils — persistent items, reduced prior work penalties, free renaming, repair with blocks |
+| Mod                                                                     | Role                                                                                                  |
+|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| [Easy Anvils](https://www.curseforge.com/minecraft/mc-mods/easy-anvils) | Overhauled anvils — persistent items, reduced prior work penalties, free renaming, repair with blocks |
 
 **Easy Anvils** requires **Puzzles Lib** — already in Wave 5 as a Mutant Monsters dependency. No additional mods needed.
 
@@ -516,15 +514,15 @@ seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (l
 
 Dynamic Crosshair uses **YACL** (already in the pack) for its in-game config screen. Recommended settings:
 
-| Setting | Value | Effect |
-|---------|-------|--------|
-| `hideWhenNotLookingAtAnything` | `true` | Hides crosshair when pointing at sky/air — clean UI during building/exploration |
-| `showWhenLookingAtBlock` | `true` | Reappears when looking at a block — signals interactability |
-| `showWhenLookingAtEntity` | `true` | Reappears when looking at mobs/players — signals combat target |
-| `showWhenHoldingTool` | `true` | Shows crosshair when mining with pickaxe/axe/shovel — shows exact breaking target |
-| `showWhenHoldingWeapon` | `true` | Shows crosshair in combat with any weapon |
-| `crosshairStyle` | `"CONTEXTUAL"` | Changes crosshair shape per context (default dot, block outline for mining, reticle for combat) |
-| `crosshairColor` | `"ENTITY_BASED"` | White for neutral/block, red for hostile entities, green for interactable entities |
+| Setting                        | Value            | Effect                                                                                          |
+|--------------------------------|------------------|-------------------------------------------------------------------------------------------------|
+| `hideWhenNotLookingAtAnything` | `true`           | Hides crosshair when pointing at sky/air — clean UI during building/exploration                 |
+| `showWhenLookingAtBlock`       | `true`           | Reappears when looking at a block — signals interactability                                     |
+| `showWhenLookingAtEntity`      | `true`           | Reappears when looking at mobs/players — signals combat target                                  |
+| `showWhenHoldingTool`          | `true`           | Shows crosshair when mining with pickaxe/axe/shovel — shows exact breaking target               |
+| `showWhenHoldingWeapon`        | `true`           | Shows crosshair in combat with any weapon                                                       |
+| `crosshairStyle`               | `"CONTEXTUAL"`   | Changes crosshair shape per context (default dot, block outline for mining, reticle for combat) |
+| `crosshairColor`               | `"ENTITY_BASED"` | White for neutral/block, red for hostile entities, green for interactable entities              |
 
 No keybind changes needed — the mod works fully through context detection. YACL provides a searchable settings screen.
 
@@ -760,7 +758,6 @@ Forces villages to spawn on flat terrain. No more cliff-side or underwater villa
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Light up your base perimeter. Start noticing Traveler's Titles when entering new biomes                                                                  |
 
 ---
-
 
 <!--raw-typst #pagebreak() -->
 
@@ -1157,7 +1154,6 @@ Smoke ventilation systems for factories. Redirect emissions outdoors.
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 1.5 — Colony Management
@@ -1181,7 +1177,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 - Chunk Loaders (Wave 0) are essential for MineColonies — they keep workers active while you explore other dimensions. Place at least one at your colony after setting up your base.
 
 MineColonies provides autonomous NPC workers that mine, farm, craft, and guard your base. Grows alongside your factory.
-
 
 ### Getting Started
 
@@ -1239,7 +1234,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 **Tip**: The colony is a long-term background investment. Start it early, check periodically, let it grow.
 
 ---
-
 
 <!--raw-typst #pagebreak() -->
 
@@ -1339,7 +1333,6 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 **Interdependency note — Towns & Towers + Cristel Lib**: Towns & Towers requires **Cristel Lib** (included in Wave 2 Dependencies above). Without it the game will crash at startup. Cristel Lib provides structure config and runtime datapack support that Towns & Towers relies on for its biome-specific village variants.
 
 The world is dramatically transformed. Terralith overhauls biomes, Tectonic reshapes terrain, YUNG's expands every structure, and three new dimensions open up.
-
 
 ### Overworld
 
@@ -1604,7 +1597,6 @@ After defeating the Ender Dragon, the End becomes a full dimension.
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 2.5 — Building Your Home
@@ -1617,12 +1609,12 @@ Building is a core pillar of this modpack. At any point you can stop optimizing 
 
 Before placing a single block, find a location that inspires you. You have tools for this:
 
-| Tool | How | Why |
-|------|-----|-----|
-| **Explorer's Compass** | Craft: 1 compass + 4 iron (+pattern). Right-click → search "cherry", "redwood", "meadow" | Find specific biomes by name |
-| **JourneyMap** | Press `J` → explore the fullscreen map | See terrain, biomes, and your marked waypoints |
-| **Small Ship** | Sail along coastlines | Discover waterfronts you'd miss on foot |
-| **Biplane** | Fly low over terrain | Spot valley builds, mountain perches, river mouths |
+| Tool                   | How                                                                                      | Why                                                |
+|------------------------|------------------------------------------------------------------------------------------|----------------------------------------------------|
+| **Explorer's Compass** | Craft: 1 compass + 4 iron (+pattern). Right-click → search "cherry", "redwood", "meadow" | Find specific biomes by name                       |
+| **JourneyMap**         | Press `J` → explore the fullscreen map                                                   | See terrain, biomes, and your marked waypoints     |
+| **Small Ship**         | Sail along coastlines                                                                    | Discover waterfronts you'd miss on foot            |
+| **Biplane**            | Fly low over terrain                                                                     | Spot valley builds, mountain perches, river mouths |
 
 **What to look for**:
 
@@ -1638,11 +1630,11 @@ Before placing a single block, find a location that inspires you. You have tools
 
 The single biggest upgrade from "meh" to "wow" is using **3–5 complementary blocks** instead of one. Every great build you've ever seen uses a palette. Here's the formula:
 
-| Role | Percentage | Purpose |
-|------|-----------|---------|
-| **Primary** | ~50% | Dominant wall material — defines the build |
-| **Secondary** | ~30% | Complementary texture — similar tone, different surface |
-| **Accent** | ~20% | Detail material — corners, trim, highlights, pops of color |
+| Role          | Percentage | Purpose                                                    |
+|---------------|------------|------------------------------------------------------------|
+| **Primary**   | ~50%       | Dominant wall material — defines the build                 |
+| **Secondary** | ~30%       | Complementary texture — similar tone, different surface    |
+| **Accent**    | ~20%       | Detail material — corners, trim, highlights, pops of color |
 
 #### Finding Palettes: BlockPalettes.com
 
@@ -1684,13 +1676,13 @@ Flat walls are the second most common beginner mistake (after single-block build
 
 #### Five Techniques That Transform Flat Walls
 
-| Technique | How to do it | Why it works |
-|-----------|-------------|--------------|
-| **Inset windows** | Push glass back one block into the wall instead of flush with the surface | Creates shadow lines that frame windows |
-| **Outcropped corners** | Extend corner blocks one block forward from the main wall plane | Breaks up 90-degree edges, adds structural feel |
-| **Alternating depth** | Every 3–4 blocks along a wall, push one column back or pull one forward | Wall reads as textured rather than uniform |
-| **Stair/slab detailing** | Upside-down stairs under windowsills, stairs as roofline trim, slabs as half-height ledges | Catches light and shadow in ways full blocks can't |
-| **Overhanging roofline** | Always extend the roof 1–2 blocks past the wall on all sides | Creates shadow line that defines where building ends and sky begins |
+| Technique                | How to do it                                                                               | Why it works                                                        |
+|--------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| **Inset windows**        | Push glass back one block into the wall instead of flush with the surface                  | Creates shadow lines that frame windows                             |
+| **Outcropped corners**   | Extend corner blocks one block forward from the main wall plane                            | Breaks up 90-degree edges, adds structural feel                     |
+| **Alternating depth**    | Every 3–4 blocks along a wall, push one column back or pull one forward                    | Wall reads as textured rather than uniform                          |
+| **Stair/slab detailing** | Upside-down stairs under windowsills, stairs as roofline trim, slabs as half-height ledges | Catches light and shadow in ways full blocks can't                  |
+| **Overhanging roofline** | Always extend the roof 1–2 blocks past the wall on all sides                               | Creates shadow line that defines where building ends and sky begins |
 
 **Fastest single improvement**: Add vertical **log pillars** every 3–5 blocks along exterior walls. Logs imply structural support and instantly break up flat surfaces. Works with every style.
 
@@ -1700,11 +1692,11 @@ A bad roof ruins a good build. A good roof makes even a simple box look intentio
 
 #### Three Roof Styles (Pick One)
 
-| Style | Shape | Best for | How |
-|-------|-------|----------|-----|
-| **A-frame (pitched)** | Triangle cross-section | Cottages, cabins, medieval | Stairs ascending from each wall meeting at a ridge. Overhang 1 block on all sides |
-| **Flat with parapet** | Flat top, raised edges | Modern, desert, fortress | Slabs or full blocks, 1-block wall around perimeter |
-| **Stepped pyramid** | Layered squares getting smaller | Asian, temples, fantasy | Each layer 2 blocks smaller than the one below |
+| Style                 | Shape                           | Best for                   | How                                                                               |
+|-----------------------|---------------------------------|----------------------------|-----------------------------------------------------------------------------------|
+| **A-frame (pitched)** | Triangle cross-section          | Cottages, cabins, medieval | Stairs ascending from each wall meeting at a ridge. Overhang 1 block on all sides |
+| **Flat with parapet** | Flat top, raised edges          | Modern, desert, fortress   | Slabs or full blocks, 1-block wall around perimeter                               |
+| **Stepped pyramid**   | Layered squares getting smaller | Asian, temples, fantasy    | Each layer 2 blocks smaller than the one below                                    |
 
 **Material rule**: Roof material should **contrast** with wall material. Dark roof on light walls, or vice versa. Spruce stairs on oak walls. Deepslate on stone brick. Blackstone on sandstone.
 
@@ -1718,23 +1710,23 @@ An empty interior is as bad as a bad exterior. Minecraft has no furniture mod ye
 
 **Never place torches on interior walls.** They look improvised. Better options:
 
-| Light source | Look | How |
-|-------------|------|-----|
-| **Lanterns** | Warm, architectural | Hang from ceiling via fence post |
-| **Glow berries** | Organic, trailing | Place on ceiling, let vines trail down |
-| **Sea lanterns** | Clean, neutral | Modern or sci-fi builds |
-| **Jack o'lanterns** | Hidden under carpets | Floor lighting without visible sources |
-| **Froglights** | Subtle, colorful | Pearlescent/verdant/ochre variants from Aether or Overworld |
+| Light source        | Look                 | How                                                         |
+|---------------------|----------------------|-------------------------------------------------------------|
+| **Lanterns**        | Warm, architectural  | Hang from ceiling via fence post                            |
+| **Glow berries**    | Organic, trailing    | Place on ceiling, let vines trail down                      |
+| **Sea lanterns**    | Clean, neutral       | Modern or sci-fi builds                                     |
+| **Jack o'lanterns** | Hidden under carpets | Floor lighting without visible sources                      |
+| **Froglights**      | Subtle, colorful     | Pearlescent/verdant/ochre variants from Aether or Overworld |
 
 #### Functional Rooms
 
-| Room | Key blocks | Details |
-|------|-----------|---------|
-| **Kitchen** | Smoker, campfire, barrels, chests | Barrel = cabinets. Chest with food item frame = pantry. Cooking pot over campfire |
-| **Bedroom** | Bed, crafting table, bookshelf, lantern | Banner on wall above bed as headboard. Carpet at foot of bed |
-| **Library** | Bookshelves, lectern, quill | Cover walls with bookshelves for instant warmth |
-| **Storage** | Sophisticated Storage barrels, chests | Organized rows. Sign labels on each barrel |
-| **Workshop** | Crafting table, furnace, anvil | Industrial feel — stone walls, iron accents |
+| Room         | Key blocks                              | Details                                                                           |
+|--------------|-----------------------------------------|-----------------------------------------------------------------------------------|
+| **Kitchen**  | Smoker, campfire, barrels, chests       | Barrel = cabinets. Chest with food item frame = pantry. Cooking pot over campfire |
+| **Bedroom**  | Bed, crafting table, bookshelf, lantern | Banner on wall above bed as headboard. Carpet at foot of bed                      |
+| **Library**  | Bookshelves, lectern, quill             | Cover walls with bookshelves for instant warmth                                   |
+| **Storage**  | Sophisticated Storage barrels, chests   | Organized rows. Sign labels on each barrel                                        |
+| **Workshop** | Crafting table, furnace, anvil          | Industrial feel — stone walls, iron accents                                       |
 
 **Pro tip**: Place **item frames** on walls with maps, banners, or shields inside. They function as paintings with more variety.
 
@@ -1755,15 +1747,15 @@ A build that looks dropped from the sky is unfinished, no matter how detailed th
 
 You have tools that vanilla players don't. Use them:
 
-| Tool | What it does for building |
-|------|--------------------------|
-| **Waystones** | Place one at your build site. Teleport home for materials, teleport back. No more carrying 3 inventories of blocks across 500 blocks |
-| **Sophisticated Storage** | Barrels near your build site hold materials organized by type. Label with signs |
-| **Backpack** | Carry your palette blocks in your backpack while building. Press `B` to swap materials on the go |
-| **Create Blueprint** | Craft Blueprint and Quill. Select your finished build → save as blueprint → use Schematicannon to auto-rebuild it elsewhere with materials from chests |
-| **Building Wands** (Wave 6) | Place walls, fill areas, build circles/cylinders in bulk. Wait for Wave 6 for this one |
-| **JourneyMap waypoints** | Mark your build site, mark material locations, mark inspiration you find while exploring |
-| **Dynamic Lights** (`Ctrl+L`) | Hold a lantern while building at night. No more stopping to place torches |
+| Tool                          | What it does for building                                                                                                                              |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Waystones**                 | Place one at your build site. Teleport home for materials, teleport back. No more carrying 3 inventories of blocks across 500 blocks                   |
+| **Sophisticated Storage**     | Barrels near your build site hold materials organized by type. Label with signs                                                                        |
+| **Backpack**                  | Carry your palette blocks in your backpack while building. Press `B` to swap materials on the go                                                       |
+| **Create Blueprint**          | Craft Blueprint and Quill. Select your finished build → save as blueprint → use Schematicannon to auto-rebuild it elsewhere with materials from chests |
+| **Building Wands** (Wave 6)   | Place walls, fill areas, build circles/cylinders in bulk. Wait for Wave 6 for this one                                                                 |
+| **JourneyMap waypoints**      | Mark your build site, mark material locations, mark inspiration you find while exploring                                                               |
+| **Dynamic Lights** (`Ctrl+L`) | Hold a lantern while building at night. No more stopping to place torches                                                                              |
 
 ### Quick-Start: Your First Real House
 
@@ -1782,29 +1774,28 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 
 ### Community Resources
 
-| Resource | URL | What it's for |
-|----------|-----|---------------|
-| **BlockPalettes** | [blockpalettes.com](https://www.blockpalettes.com) | Block color combinations and palette inspiration |
-| **Building Guide App** | [buildingguide.app](https://buildingguide.app) | Step-by-step tutorials with materials lists (128+ builds) |
-| **r/MinecraftBuilds** | [reddit.com/r/MinecraftBuilds](https://www.reddit.com/r/MinecraftBuilds) | Community showcase, inspiration, feedback |
-| **r/MinecraftHouses** | [reddit.com/r/MinecraftHouses](https://www.reddit.com/r/MinecraftHouses) | House-specific builds and ideas |
-| **r/MinecraftTutorials** | [reddit.com/r/MinecraftTutorials](https://www.reddit.com/r/MinecraftTutorials) | How-to guides for specific techniques |
-| **Minecraft Wiki — Building** | [minecraft.fandom.com/wiki/Building](https://minecraft.fandom.com/wiki/Building) | Official guides on terraforming, furniture, layout |
+| Resource                      | URL                                                                              | What it's for                                             |
+|-------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------|
+| **BlockPalettes**             | [blockpalettes.com](https://www.blockpalettes.com)                               | Block color combinations and palette inspiration          |
+| **Building Guide App**        | [buildingguide.app](https://buildingguide.app)                                   | Step-by-step tutorials with materials lists (128+ builds) |
+| **r/MinecraftBuilds**         | [reddit.com/r/MinecraftBuilds](https://www.reddit.com/r/MinecraftBuilds)         | Community showcase, inspiration, feedback                 |
+| **r/MinecraftHouses**         | [reddit.com/r/MinecraftHouses](https://www.reddit.com/r/MinecraftHouses)         | House-specific builds and ideas                           |
+| **r/MinecraftTutorials**      | [reddit.com/r/MinecraftTutorials](https://www.reddit.com/r/MinecraftTutorials)   | How-to guides for specific techniques                     |
+| **Minecraft Wiki — Building** | [minecraft.fandom.com/wiki/Building](https://minecraft.fandom.com/wiki/Building) | Official guides on terraforming, furniture, layout        |
 
 ### Session Plan — Wave 2.5
 
-| Session | Focus | What to Build |
-|---------|-------|---------------|
-| **Session 1 — Site selection** | Explore with Explorer's Compass. Find a biome you love. Place Waystone. Mark on JourneyMap | Your future home location |
-| **Session 2 — Palette + foundation** | Browse BlockPalettes.com. Pick 4 blocks. Lay foundation ring. Raise walls to 4 blocks high | Shell of your first real house |
-| **Session 3 — Roof + depth** | Build A-frame roof. Add log pillars. Inset windows. Add door | Recognizable house shape |
-| **Session 4 — Interior** | Lanterns from ceiling. Bed, crafting table, furnace. Barrels for storage. Item frames on walls | Livable interior |
-| **Session 5 — Landscaping** | Paths, trees, flowers, leaf trim around roofline. Step back and see the difference | Home in a world |
+| Session                              | Focus                                                                                          | What to Build                  |
+|--------------------------------------|------------------------------------------------------------------------------------------------|--------------------------------|
+| **Session 1 — Site selection**       | Explore with Explorer's Compass. Find a biome you love. Place Waystone. Mark on JourneyMap     | Your future home location      |
+| **Session 2 — Palette + foundation** | Browse BlockPalettes.com. Pick 4 blocks. Lay foundation ring. Raise walls to 4 blocks high     | Shell of your first real house |
+| **Session 3 — Roof + depth**         | Build A-frame roof. Add log pillars. Inset windows. Add door                                   | Recognizable house shape       |
+| **Session 4 — Interior**             | Lanterns from ceiling. Bed, crafting table, furnace. Barrels for storage. Item frames on walls | Livable interior               |
+| **Session 5 — Landscaping**          | Paths, trees, flowers, leaf trim around roofline. Step back and see the difference             | Home in a world                |
 
 **Tip**: Don't aim for perfection on your first build. Aim for "better than a dirt hut." You can always expand, renovate, or rebuild later. The skills transfer — your second build will be twice as good.
 
 ---
-
 
 <!--raw-typst #pagebreak() -->
 
@@ -1884,7 +1875,6 @@ This cost curve encourages the player to settle for "good enough" gear until the
 - **Ranged Weapon API** is shared between Relics RPG and Skill Tree — install once, used by both.
 
 Every weapon rolls with random affixes, every accessory provides a unique ability, and a skill tree gives every action meaning. This wave makes you **feel** your character grow alongside your tech.
-
 
 ### Skill Tree (RPG Series) — Character Growth
 
@@ -2095,7 +2085,6 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 4 — Food, Farming & Comfort
@@ -2113,7 +2102,6 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [Comfortable Campfires](https://www.curseforge.com/minecraft/mc-mods/comfortable-campfires)           | Campfires grant configurable status effects — sit by the fire, get a buff    |
 
 Farmer's Delight brings a full cooking ecosystem. Optional — you can survive on baked potatoes — but cooking gives powerful status effects, better healing, and a cozy kitchen to build around.
-
 
 ### Farmer's Delight — Cooking Hub
 
@@ -2273,7 +2261,6 @@ Fixes bee AI — bees properly leave hives, don't fall from sky, no northwest wa
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 4.5 — Quests
@@ -2327,7 +2314,6 @@ Find **bounty boards** in every village (lectern-like block near center). Right-
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 5 — Combat & Mobs
@@ -2345,7 +2331,6 @@ Find **bounty boards** in every village (lectern-like block near center). Right-
 Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
 
 Your powerful gear finally has worthy opponents. Better combat mechanics, tougher mobs, epic boss fights, roguelike dungeons.
-
 
 ### Better Combat — Weapon Feel
 
@@ -2482,25 +2467,24 @@ Functional cannons built from Create materials, using rotational power for assem
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 6 — Building & Decoration
 
 ### Core Decoration
 
-| Mod                                                                               | Role                                                               |
-|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [Rechiseled](https://www.curseforge.com/minecraft/mc-mods/rechiseled)             | 600+ decorative block variants with connected textures             |
-| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries)   | Vanilla+ decoration — jars, signposts, faucets, weather vanes      |
-| [Macaw\'s Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges)   | Bridges in all wood types                                          |
-| [Macaw\'s Doors](https://www.curseforge.com/minecraft/mc-mods/macaws-doors)       | Vanilla-style doors for every wood                                 |
-| [Macaw\'s Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)       | Roofing blocks                                                     |
-| [Macaw\'s Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows)   | Window variants                                                    |
-| [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands)     | Faster large-scale construction                                    |
+| Mod                                                                                                                     | Role                                                                  |
+|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| [Rechiseled](https://www.curseforge.com/minecraft/mc-mods/rechiseled)                                                   | 600+ decorative block variants with connected textures                |
+| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries)                                         | Vanilla+ decoration — jars, signposts, faucets, weather vanes         |
+| [Macaw\'s Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges)                                         | Bridges in all wood types                                             |
+| [Macaw\'s Doors](https://www.curseforge.com/minecraft/mc-mods/macaws-doors)                                             | Vanilla-style doors for every wood                                    |
+| [Macaw\'s Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)                                             | Roofing blocks                                                        |
+| [Macaw\'s Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows)                                         | Window variants                                                       |
+| [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands)                                           | Faster large-scale construction                                       |
 | [\[Reforged\] Accurate Block Placement](https://www.curseforge.com/minecraft/mc-mods/reforged-accurate-block-placement) | Precision block placement — place on the exact face you're looking at |
-| [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)           | Furniture — chairs, tables, shelves, curtains                      |
-| [The Magic Mirror](https://www.curseforge.com/minecraft/mc-mods/the-magic-mirror) | Reflective mirror block that shows the nearest player's reflection |
+| [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)                                                 | Furniture — chairs, tables, shelves, curtains                         |
+| [The Magic Mirror](https://www.curseforge.com/minecraft/mc-mods/the-magic-mirror)                                       | Reflective mirror block that shows the nearest player's reflection    |
 
 ### Rechiseled Addons
 
@@ -2510,7 +2494,6 @@ Functional cannons built from Create materials, using rotational power for assem
 | [Rechiseled: Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/rechiseled-applied-energistics-2) | AE2 autocrafting for Rechiseled blocks via Chiseling Pattern Encoder |
 
 Tools and blocks to build the base you deserve.
-
 
 ### Rechiseled — Decorative Block Variants
 
@@ -2644,7 +2627,6 @@ Reflective mirror block showing the nearest player's reflection.
 
 ---
 
-
 <!--raw-typst #pagebreak() -->
 
 ## Wave 7 — Space Exploration
@@ -2675,23 +2657,22 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 ## Mod Count Summary
 
-| Wave                             | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
-|----------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation              | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +10 resource packs)                                                                            |
-| Wave 0.5 — Player Experience     | 45      | —      | 45      | Visual & Client QoL (27), Inventory & UI (14), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
-| Wave 1 — Tech                    | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
-| Wave 1.5 — Colony                | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                                          |
-| Wave 2 — Exploration             | 24      | 6      | 30      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships                                                                                                  |
-| Wave 3 — Equipment Magic         | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
-| Wave 4 — Food & Farming          | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
-| Wave 4.5 — Quests                | 1       | —      | 1       | Bountiful                                                                                                                                                                                                                                                              |
-| Wave 5 — Combat                  | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
-| Wave 6 — Building                | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                               |
-| Wave 7 — Space Exploration       | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
-| **Total**                        | **144** | **40** | **184** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
+| Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
+|------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +10 resource packs)                                                                            |
+| Wave 0.5 — Player Experience | 45      | —      | 45      | Visual & Client QoL (27), Inventory & UI (14), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
+| Wave 1 — Tech                | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
+| Wave 1.5 — Colony            | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                                          |
+| Wave 2 — Exploration         | 24      | 6      | 30      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships                                                                                                  |
+| Wave 3 — Equipment Magic     | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
+| Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
+| Wave 4.5 — Quests            | 1       | —      | 1       | Bountiful                                                                                                                                                                                                                                                              |
+| Wave 5 — Combat              | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
+| Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                               |
+| Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
+| **Total**                    | **144** | **40** | **184** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
-
 
 ### Stellaris — Interplanetary Travel
 
