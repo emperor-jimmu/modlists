@@ -2,9 +2,6 @@
 
 <!-- Cover page and TOC are handled in the Typst template. -->
 
-
-<!--raw-typst #pagebreak() -->
-
 ## Wave -1 — Prerequisites
 
 ### JDK 21

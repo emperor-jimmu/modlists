@@ -32,7 +32,7 @@
 #set page(numbering: "i")
 #pagebreak()
 #set outline.entry(fill: line(length: 100%, stroke: 0.5pt + luma(200)))
-#outline(indent: 1.2em)
+#outline(indent: 1.2em, depth: 2)
 
 // ---- Body ----
 #set page(numbering: "1", number-align: center)
