@@ -1,0 +1,36 @@
+{
+    "spec_version": "v1.34",
+    "identifier": "TheLongAscentWave05",
+    "name": "The Long Ascent — Wave 0.5: Building Blocks",
+    "abstract": "Wave 0.5 of The Long Ascent: Advanced planning tools, VAB/SPH enhancements, and mission management mods for KSP 1.12.5.",
+    "author": "Nimrod Perez",
+    "license": "CC-BY-4.0",
+    "version": "1.0.0",
+    "depends": [
+        { "name": "ModuleManager" }
+    ],
+    "recommends": [
+        { "name": "TransferWindowPlanner" },
+        { "name": "Trajectories" },
+        { "name": "DockingPortAlignmentIndicator" },
+        { "name": "CommunityNavballDockingIndicator" },
+        { "name": "xScienceContinued" },
+        { "name": "KerbalAlarmClock" },
+        { "name": "Astrogator" },
+        { "name": "WaypointManager" },
+        { "name": "TrackingStationEvolved" },
+        { "name": "ContractConfigurator" },
+        { "name": "JanitorsCloset" },
+        { "name": "RCSBuildAidCont" },
+        { "name": "VABOrganizer" },
+        { "name": "EditorExtensionsRedux" },
+        { "name": "HangerExtenderExtended" },
+        { "name": "HideEmptyTechNodes" },
+        { "name": "IndicatorLights" },
+        { "name": "IndicatorLightsCommunityExtensions" }
+    ],
+    "supports": [
+        { "name": "BreakingGround-DLC" },
+        { "name": "MakingHistory-DLC" }
+    ]
+}

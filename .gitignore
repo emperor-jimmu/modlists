@@ -1,6 +1,3 @@
-# Typst
-*.pdf
-
 # Python
 __pycache__/
 *.pyc
@@ -16,9 +13,6 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-
-# Output
-output/
 
 # Playwright output
 .playwright-mcp/

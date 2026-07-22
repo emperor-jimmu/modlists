@@ -60,7 +60,6 @@
 
 // ─── Table of Contents ───────────────────────────────────────────
 
-#chapter-heading([Table of Contents])
 #outline(
   indent: 1em,
 )
@@ -79,6 +78,16 @@
 )
 #chapter-heading([Wave 0 — Mod List])
 #include "../guide/wave-0-first-steps.typ"
+
+// ─── Wave 0.5: Building & Planning Tools ─────────────────────────
+
+#wave-title-page(
+  0.5,
+  [Building Blocks],
+  [Advanced Tools, Planning & Editor Enhancements],
+)
+#chapter-heading([Wave 0.5 — Mod List])
+#include "../guide/wave-05-tools.typ"
 
 // ─── Wave 1 ──────────────────────────────────────────────────────
 

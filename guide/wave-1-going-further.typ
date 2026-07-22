@@ -696,6 +696,18 @@ These mods add meticulously detailed replicas of real-world spacecraft and launc
   version_pin: [Compatible with KSP 1.12.x. Integrates with HabTech2 for ISS builds. Community Tech Tree adds dedicated station-part tech nodes.],
 )
 
+#mod-entry(
+  name: [Mark One Laboratory Extensions (MOLE)],
+  ckan_id: "MOLE",
+  url: "https://forum.kerbalspaceprogram.com/topic/154893-min-ksp-1122-mark-one-laboratory-extensions-mole/",
+  description: [Early-game space station and orbital laboratory parts in the Mk1 form factor. Adds compact lab modules, experiment storage, science instruments, and orbital workshop parts that unlock early in the tech tree — before the stock Mobile Processing Lab. Build your first orbital outpost with 1.25m parts.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds Mk1-sized station and laboratory parts for early career mode. MOLE parts unlock before the stock lab, giving you a reason to build orbital stations early. Complements StationPartsExpansionRedux (later, larger station parts) and HabTech2 (ISS-specific).],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Designed for early career station-building. Pairs with StationPartsExpansionRedux and HabTech2 for a complete station-part progression from early Mk1 to late-game ISS-scale.],
+)
+
 // ═══ AIRCRAFT & SPACEPLANES ═══
 
 #section-heading([Aircraft & Spaceplanes])
@@ -844,6 +856,30 @@ These mods add meticulously detailed replicas of real-world spacecraft and launc
   version_pin: [Compatible with KSP 1.12.x. Requires Kopernicus Stable Branch. Parallax config must be downloaded manually from the Kcalbeloh forum thread.],
 )
 
+#mod-entry(
+  name: [Minor Planets Expansion],
+  ckan_id: "MinorPlanetsExpansion",
+  url: "https://forum.kerbalspaceprogram.com/topic/192848-112x-planet-pack-minor-planets-expansion/",
+  description: [Adds dwarf planets, asteroids, and minor bodies to the Outer Planets Mod system. Populates the gaps between OPM's gas giants with realistically-scaled minor planets, trojan asteroids, and Kuiper belt objects. Requires OPM.],
+  dependencies: ("Kopernicus", "OuterPlanetsMod", "KSPCommunityFixes", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds minor bodies to the OPM system. Requires Outer Planets Mod. Each body has unique biomes and science definitions. Increases the number of destinations in the outer system without adding new star systems or altering existing planets.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Outer Planets Mod and Kopernicus. Adds bodies without replacing or modifying OPM planets.],
+)
+
+#mod-entry(
+  name: [QuackPack],
+  ckan_id: "QuackPack",
+  url: "https://forum.kerbalspaceprogram.com/topic/210155-112x-kopernicus-quackpack-v131-an-inner-system-expansion/",
+  description: [Inner system expansion by the Kopernicus team. Adds new planets and moons between Moho and Kerbin's orbit — fills the empty inner solar system with new destinations. Designed to complement OPM (outer system) for a fully expanded Kerbol system.],
+  dependencies: ("Kopernicus", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds new bodies to the inner Kerbol system. Requires Kopernicus. Complements OPM — OPM expands outward, QuackPack expands inward. Both can be installed together for a complete solar system expansion.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Kopernicus. Works alongside OPM without conflicts.],
+)
+
 // ═══ MANUAL INSTALL ═══
 
 #section-heading([Manual Install Mods])
@@ -853,6 +889,42 @@ These mods are not available through CKAN. Install them manually by downloading 
 #warning[[
   Manual-install mods do not appear in CKAN metapackages. You must download and update them yourself. Only install mods from mods you trust — always verify download links from the official forum threads.
 ]]
+
+#mod-entry(
+  name: [Grannus Expansion Pack (GEP)],
+  ckan_id: "GrannusExpansionPack",
+  url: "https://forum.kerbalspaceprogram.com/topic/169664-1125-grannus-expansion-pack-v128-10-may-2022/",
+  description: [Adds a binary star system centered on Grannus, a red dwarf companion to Kerbol. Multiple planets orbit the distant star, reachable via interstellar transfer. Expands the late-game with a second star system. GEP-Volumetrics (SpaceDock) adds cloud support.],
+  dependencies: ("Kopernicus", "ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds the Grannus binary star system. Not on CKAN — manual install from forum thread. Compatible with OPM and Minor Planets Expansion.],
+  conflicts: [Kcalbeloh also adds a secondary star system. Both can be installed together for two interstellar destinations, but this significantly increases memory usage. Consider whether you want one or both secondary systems.],
+  version_pin: [Compatible with KSP 1.12.x. Manual install only. Requires Kopernicus.],
+)
+
+#mod-entry(
+  name: [Promised Worlds],
+  ckan_id: "PromisedWorlds",
+  url: "https://forum.kerbalspaceprogram.com/topic/228751-112x-v200-promised-worlds-a-faithful-recreation-of-ksp-2s-solar-systems-in-ksp-1/",
+  description: [Faithful recreation of KSP 2's planned solar systems in KSP 1. Adds interstellar destinations including the DebDeb, Tuun, and other star systems that were promised for KSP 2. GitHub: PromisedWorlds/PromisedWorlds (208★).],
+  dependencies: ("Kopernicus", "ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds KSP 2-inspired interstellar systems. Not on CKAN — manual install from forum thread or GitHub. Adds multiple new star systems.],
+  conflicts: [Adding multiple interstellar planet packs creates a very large install. Most players should choose 1–2. Kcalbeloh is the recommended interstellar destination for this modlist.],
+  version_pin: [Compatible with KSP 1.12.x. Manual install only. Choose this or Kcalbeloh (or both if your system can handle it).],
+)
+
+#mod-entry(
+  name: [Cosmic Serenity],
+  ckan_id: "CosmicSerenity",
+  url: "https://forum.kerbalspaceprogram.com/topic/228453-112x-cosmic-serenity-v31/",
+  description: [A smaller-scale planet pack adding serene, handcrafted worlds to the Kerbol system. Focuses on quality over quantity — each added body is carefully designed with unique terrain and biomes. A more restrained alternative to sprawling multi-system packs.],
+  dependencies: ("Kopernicus", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds custom-designed planets and moons. Not on CKAN — manual install from forum thread. A lighter alternative to multi-system packs.],
+  conflicts: [QuackPack and Minor Planets Expansion also add bodies to the Kerbol system. Cosmic Serenity is standalone — verify compatibility if combining.],
+  version_pin: [Compatible with KSP 1.12.x. Manual install only.],
+)
 
 #mod-entry(
   name: [Buran Orbiter Construction Kit],

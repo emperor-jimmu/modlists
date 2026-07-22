@@ -11,6 +11,11 @@
     ],
     "suggests": [
         { "name": "PlanetsideExplorationTechnologies" },
+        { "name": "Pathfinder" },
+        { "name": "Buffalo2" },
+        { "name": "ExtraplanetaryLaunchpads" },
+        { "name": "SimpleConstruction" },
+        { "name": "FarFutureTechnologies" },
         { "name": "CommunityNavballDockingIndicator" }
     ],
     "supports": [

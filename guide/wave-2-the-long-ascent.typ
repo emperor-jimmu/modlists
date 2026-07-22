@@ -32,6 +32,10 @@ Wave 2 is the endgame. It adds life support, colonization, interstellar travel, 
   version_pin: [Compatible with KSP 1.12.x.],
 )
 
+#info[[
+  *Colonization Alternatives:* Pathfinder (CKAN: "Pathfinder") and Buffalo 2 (CKAN: "Buffalo2") by Angel-125 provide a different base-building approach with inflatable modules, resource extraction, and rover parts. The Wild Blue Industries ecosystem is simpler than MKS and has broad mod support, but adds its own resource framework (WBIResources). Planetside is the recommended colonization mod for this modlist — Pathfinder and Buffalo are suggested alternatives if you prefer the WBI ecosystem or want rover-focused surface exploration.
+]]
+
 #section-heading([Wave 1→2 UI Upgrades])
 
 At this stage you have hundreds of hours of flight experience. You can now replace certain Wave 0 UI mods with leaner alternatives that expect pilot proficiency:
@@ -46,6 +50,78 @@ At this stage you have hundreds of hours of flight experience. You can now repla
   impact_description: [Replaces DPAI's separate alignment window with navball-integrated markers. Suggested (not required) — if you prefer DPAI's dedicated window, keep using it.],
   conflicts: [Docking Port Alignment Indicator — if you switch to this, uninstall DPAI. The two are mutually exclusive. Both are installed by default in Waves 0–1 so you can compare; pick one by Wave 2.],
   version_pin: [Compatible with KSP 1.12.x. Suggested replacement for DPAI in Wave 2. Uninstall DPAI if switching.],
+)
+
+// ═══ OFF-WORLD MANUFACTURING ═══
+
+#section-heading([Off-World Manufacturing])
+
+By Wave 2, ISRU refueling is routine. The next step is building entire vessels from local resources — no more launching from Kerbin. These mods add the manufacturing chain to make that possible.
+
+#mod-entry(
+  name: [Extraplanetary Launchpads],
+  ckan_id: "ExtraPlanetaryLaunchpads",
+  url: "https://forum.kerbalspaceprogram.com/topic/54284-112x-extraplanetary-launchpads/",
+  description: [Build rockets and bases from ore — anywhere. Adds workshops, smelters, and orbital construction docks that convert raw materials (Metal, RocketParts) into fully functional vessels. Mine ore, process it into RocketParts, and build new ships on-site without a connection to Kerbin. The definitive off-world manufacturing mod.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds a complete manufacturing resource chain: Ore → Metal → RocketParts. Workshops and construction docks consume RocketParts to build vessels. Part productivity depends on engineer skill. Transforms colony gameplay from "refuel here" to "the colony IS the space program." Stock ISRU and base parts already provide the mining half of the equation.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. KIS and KAS recommended for connecting base modules and transporting resources. Infernal Robotics and KerbalStats are supported but optional.],
+)
+
+#mod-entry(
+  name: [SimpleConstruction!],
+  ckan_id: "SimpleConstruction",
+  url: "https://spacedock.info/mod/59/SimpleConstruction-SCON-by-matterbeam",
+  description: [Gives stock parts Extraplanetary Launchpads functionality. Stock ore tanks, ISRU converters, and workshops gain the ability to produce RocketParts and build vessels — without EL's dedicated parts. If you find EL's parts ugly or don't want additional part clutter, this lets you use stock parts for the entire manufacturing chain.],
+  dependencies: ("ExtraplanetaryLaunchpads", "ModuleManager"),
+  impact_types: (Mechanics, Gameplay),
+  impact_description: [Reconfigures stock parts to serve as EL workshops, smelters, and construction docks. No new part models — uses the existing stock ISRU and tank parts you already know. Requires Extraplanetary Launchpads as the underlying framework.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Extraplanetary Launchpads. NotSoSimpleConstruction (CKAN) adds additional EL functionality to more stock parts. Choose either SimpleConstruction (lightweight) or use EL's own parts — not both.],
+)
+
+// ═══ INTERSTELLAR PROPULSION ═══
+
+#section-heading([Interstellar Propulsion])
+
+Wave 1 gave you the tools to explore the expanded solar system (OPM, QuackPack, Minor Planets). Wave 2 interstellar propulsion makes those outer planets feel close — and lets you reach entirely new star systems (Kcalbeloh, GEP).
+
+#mod-entry(
+  name: [Far Future Technologies],
+  ckan_id: "FarFutureTechnologies",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Advanced interstellar propulsion by Nertea: fusion torches, antimatter drives, nuclear salt-water rockets, and pulsed inertial confinement engines. Builds on the Near Future Technologies ecosystem with the same high model quality and Restock-compatible art style. The recommended interstellar propulsion mod for this modlist.],
+  dependencies: ("CommunityResourcePack", "B9PartSwitch", "DeployableEngines", "ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds endgame propulsion technologies: fusion engines (5,000–30,000s Isp), antimatter-initiated fusion, and beam-core antimatter drives (100,000+ s Isp). Requires massive power infrastructure — pairs with Near Future Electrical reactors. Engines consume advanced resources (FusionPellets, Antimatter) that must be produced or mined.],
+  conflicts: [KSP Interstellar Extended (KSPIE) is the competing interstellar mod. FFT is recommended — it has better model quality, fits the Nertea/Restock visual style already established in Wave 1, and is fully CKAN-supported. Choose one interstellar mod — not both.],
+  version_pin: [Compatible with KSP 1.12.x. Requires significant power infrastructure (Near Future Electrical reactors recommended). Sterling Systems (manual install) adds complementary engine parts. SystemHeat recommended for thermal management.],
+)
+
+#mod-entry(
+  name: [KSP Interstellar Extended],
+  ckan_id: "KSPInterstellarExtended",
+  url: "https://spacedock.info/mod/172/KSP-Interstellar-Extended",
+  description: [The original comprehensive interstellar mod: fusion, antimatter, beamed power, warp drives, and ISRU resource chains spanning the entire solar system. Deeper and more complex than FFT with decades of development history and broad mod compatibility. Manual install only.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds a complete interstellar technology tree: thermal rockets, fusion drives, antimatter reactors, alcubierre warp drives, and in-situ resource extraction for exotic fuels. Significantly more complex than FFT — includes waste heat management, reactor fuel reprocessing, and beamed power networks.],
+  conflicts: [Far Future Technologies covers the same niche with simpler mechanics and better visuals. Choose one interstellar mod. KSPIE is deeper and more detailed; FFT is cleaner and better integrated with the Nertea ecosystem already in Wave 1.],
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock or GitHub — not on CKAN. Sterling Systems adds complementary engine parts for both KSPIE and FFT.],
+)
+
+#mod-entry(
+  name: [Sterling Systems],
+  ckan_id: "SterlingSystems",
+  url: "https://github.com/post-kerbin-mining-corporation/SterlingSystems",
+  description: [Additional advanced engine parts that complement both FFT and KSPIE. Adds sterling-cycle nuclear engines, hybrid thermal rockets, and niche propulsion options that fill gaps between the main interstellar propulsion mods. Designed to pair with whichever interstellar mod you choose.],
+  dependencies: ("CommunityResourcePack", "B9PartSwitch", "DeployableEngines", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds extra advanced engines that work with FFT or KSPIE resource frameworks. Not a standalone propulsion system — supplements your chosen interstellar mod with additional engine variety.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install — not on CKAN. Designed to complement FFT or KSPIE. Install alongside whichever interstellar mod you chose.],
 )
 
 // ═══════════════════════════════════════════════════════════════════

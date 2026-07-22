@@ -67,6 +67,7 @@
         { "name": "BoringCrewServices" },
         { "name": "HabTech2" },
         { "name": "StationPartsExpansionRedux" },
+        { "name": "MOLE" },
         { "name": "AirplanePlus" },
         { "name": "Mk3Expansion" },
         { "name": "MarkIVSpaceplaneSystem" },
@@ -74,7 +75,9 @@
         { "name": "SoundingRockets" },
         { "name": "OuterPlanetsMod" },
         { "name": "Parallax-OuterPlanetsMod" },
-        { "name": "KcalbelohSystem" }
+        { "name": "KcalbelohSystem" },
+        { "name": "MinorPlanetsExpansion" },
+        { "name": "QuackPack" }
     ],
     "suggests": [
         { "name": "OrbitalSurveyPlus" },

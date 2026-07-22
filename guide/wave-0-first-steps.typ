@@ -4,12 +4,12 @@
 
 #section-heading([About Wave 0])
 
-Wave 0 is for new players or veterans returning to stock KSP. It adds only UI and quality-of-life mods — nothing that changes gameplay, parts, or physics. You will learn core skills in the stock game before any mechanics become more complex.
+Wave 0 is for new players or veterans returning to stock KSP. It adds only the most essential HUD, QoL, and bugfix mods — nothing that changes gameplay, parts, or physics. You will learn core skills in the stock game before any tools become more complex.
 
 #wave-criteria-table()
 
 #info[[
-  *Wave 0 Decision Rule:* If a mod does not change any game mechanic, it belongs here. If it adds parts, resources, or new failure conditions, it belongs in Wave 1 or 2.
+  *Wave 0 Decision Rule:* Only UI/HUD overlays, readouts, and bugfixes. No docking aids, no VAB tools, no planning utilities. If a mod changes how you build or plan rather than what information you see, it belongs in Wave 0.5 or later.
 ]]
 
 // ═══════════════════════════════════════════════════════════════════
@@ -44,25 +44,13 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
   version_pin: [Compatible with KSP 1.12.x.],
 )
 
-#mod-entry(
-  name: [Transfer Window Planner],
-  ckan_id: "TransferWindowPlanner",
-  url: "https://forum.kerbalspaceprogram.com/topic/84005-112x-transfer-window-planner-v1800-april-11/",
-  description: [A porkchop-plot calculator for interplanetary transfers. Shows the most efficient departure date and delta-v required to reach any planet or moon.],
-  dependencies: (),
-  impact_types: (UI),
-  impact_description: [Adds a planning tool accessible from the VAB and Tracking Station. No parts, no gameplay changes. Purely informational.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x.],
-)
-
 // ═══ BUGFIXES & FOUNDATION ═══
 
 #mod-entry(
   name: [KSP Community Fixes],
   ckan_id: "KSPCommunityFixes",
   url: "https://forum.kerbalspaceprogram.com/topic/204002-kspcommunityfixes/",
-  description: [Comprehensive bugfix and QoL patch collection. Fixes dozens of stock bugs (resource handling, physics quirks, UI glitches) and adds optional quality-of-life tweaks like better maneuver node handling, SAS improvements, and part-action-window enhancements. One of the foundational mods every install should have.],
+  description: [Comprehensive bugfix and QoL patch collection. Fixes dozens of stock bugs (resource handling, physics quirks, UI glitches) and adds optional quality-of-life tweaks like better maneuver node handling, SAS improvements, and part-action-window enhancements.],
   dependencies: ("ModuleManager", "Harmony2"),
   impact_types: (UI),
   impact_description: [Patches stock bugs and adds optional UI/QoL improvements. All fixes can be individually toggled via config. No new parts or mechanics — just makes the stock game work better.],
@@ -70,30 +58,16 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
   version_pin: [Compatible with KSP 1.12.x. Requires Harmony2. Settings configurable via the in-game difficulty options menu.],
 )
 
-// ═══ DOCKING AIDS ═══
-
 #mod-entry(
-  name: [Docking Port Alignment Indicator],
-  ckan_id: "DockingPortAlignmentIndicator",
-  url: "https://spacedock.info/mod/543/Docking-Port-Alignment-Indicator",
-  description: [Adds a dedicated docking alignment window showing relative position, orientation, and alignment of your vessel to the target docking port. Displays a crosshair-style indicator that makes precision docking intuitive.],
+  name: [Station Keeping],
+  ckan_id: "StationKeeping",
+  url: "https://forum.kerbalspaceprogram.com/topic/173518-112x-station-keeping/",
+  description: [Fixes orbit drift during timewarp. In stock KSP, a vessel's orbit subtly changes every time you enter and exit timewarp — this mod locks orbits precisely on rails during warp so your carefully-placed station or satellite constellation stays exactly where you left it.],
   dependencies: ("ModuleManager"),
   impact_types: (UI),
-  impact_description: [Adds a popup window during docking with alignment crosshairs, distance, and relative angle readouts. No parts — the indicator appears when you target a docking port and select "Control from Here" on your own port.],
-  conflicts: [Community Navball Docking Alignment Indicator provides similar information on the navball instead of in a separate window. Choose the interface style you prefer — you do not need both.],
-  version_pin: [Compatible with KSP 1.12.x.],
-)
-
-#mod-entry(
-  name: [Community Navball Docking Alignment Indicator],
-  ckan_id: "CommunityNavballDockingIndicator",
-  url: "https://spacedock.info/mod/532/Community-NavBall-Docking-Alignment-Indicator",
-  description: [Adds docking alignment indicators directly on the navball. Rather than a separate window, you get a marker showing your alignment to the target docking port — everything integrated into the instrument you're already watching during approach.],
-  dependencies: (),
-  impact_types: (UI),
-  impact_description: [Augments the navball with docking alignment markers during docking approaches. No separate windows — the navball itself shows alignment. An advanced alternative to DPAI for players who have internalized docking and no longer need the separate popup.],
-  conflicts: [Docking Port Alignment Indicator provides the same information in a dedicated window. DPAI is recommended while learning docking — Community Navball DAI is suggested as an optional replacement in Wave 2 for experienced pilots.],
-  version_pin: [Compatible with KSP 1.12.x. Install alongside DPAI during Waves 0–1 to compare both interfaces. Wave 2 suggests switching to this as your sole docking aid.],
+  impact_description: [Prevents orbital drift during timewarp transitions. No new parts or mechanics — purely a precision fix for the stock physics engine. Critical for maintaining station orbits and relay networks.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. If you have stations or relay networks, this mod is essential. Without it, every timewarp session slowly degrades your orbits.],
 )
 
 // ═══ FLIGHT INFORMATION ═══
@@ -107,7 +81,7 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
   impact_types: (UI),
   impact_description: [Improves the burn-time indicator next to the navball with more accurate predictions and additional context. No parts, no gameplay changes — just better numbers.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Does not conflict with KER or MechJeb — provides complementary burn-time data displayed directly on the navball.],
+  version_pin: [Compatible with KSP 1.12.x. Does not conflict with KER — provides complementary burn-time data displayed directly on the navball.],
 )
 
 #mod-entry(
@@ -119,73 +93,7 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
   impact_types: (UI),
   impact_description: [Replaces the stock maneuver gizmo with a numerical editor window. No gameplay changes — the maneuver node system works identically, you just get precise numeric control instead of click-and-drag.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Complements MechJeb's Maneuver Planner — use both for full maneuver control.],
-)
-
-#mod-entry(
-  name: [Trajectories],
-  ckan_id: "Trajectories",
-  url: "https://spacedock.info/mod/396/Trajectories",
-  description: [Predicts your vessel's atmospheric trajectory accounting for drag and planetary rotation. Shows the actual landing site on the planet's surface in Map view — essential for precision landings at the KSC runway, targeted reentries, or Falcon 9-style booster recovery.],
-  dependencies: ("ModuleManager", "ToolbarController"),
-  impact_types: (UI),
-  impact_description: [Overlays a predicted atmospheric trajectory on the Map view. Shows where you'll actually land, accounting for aerodynamics and rotation. Purely predictive — does not change flight physics.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Accuracy depends on vessel orientation during atmospheric flight. Set your attitude then read the prediction.],
-)
-
-// ═══ PLANNING & NAVIGATION ═══
-
-#mod-entry(
-  name: [Kerbal Alarm Clock],
-  ckan_id: "KerbalAlarmClock",
-  url: "https://github.com/linuxgurugamer/KerbalAlarmClock",
-  description: [Advanced alarm system for managing multiple concurrent missions. Set alarms for maneuver nodes, transfer windows, SOI changes, and periapsis/apoapsis crossings. Automatically pauses timewarp or kills warp before the event. More feature-rich than the stock alarm clock.],
-  dependencies: ("ToolbarController"),
-  impact_types: (UI),
-  impact_description: [Adds an alarm clock interface accessible via toolbar. Alarms can trigger at specific times, orbit events, or transfer windows. No gameplay changes — purely a mission management tool.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Optional — the stock alarm clock (added in KSP 1.12) handles basic use cases. Use KAC if you manage 5+ concurrent missions.],
-)
-
-#mod-entry(
-  name: [Waypoint Manager],
-  ckan_id: "WaypointManager",
-  url: "https://spacedock.info/mod/3107/Waypoint-Manager",
-  description: [Displays custom waypoints in the flight view and on the navball for navigation. Create waypoints at specific coordinates, at your current position, or at nearby vessels. Useful for marking landing sites, biome boundaries, or base locations during flight.],
-  dependencies: ("ToolbarController"),
-  impact_types: (UI),
-  impact_description: [Adds in-flight waypoint markers visible in the world and on the navball. Waypoints are persistent and can be created/edited in flight. No parts or gameplay changes.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Waypoints persist across flights in the same save.],
-)
-
-// ═══ VAB/SPH TOOLS ═══
-
-#mod-entry(
-  name: [The Janitor's Closet],
-  ckan_id: "JanitorsCloset",
-  url: "https://spacedock.info/mod/944/The-Janitors-Closet",
-  description: [Parts management tool for the VAB/SPH. Filter, sort, and hide parts by mod, category, or custom rules. When you have dozens of parts packs installed, this keeps the editor part list manageable by letting you hide parts you never use.],
-  dependencies: ("ModuleManager"),
-  impact_types: (UI),
-  impact_description: [Adds a part-filtering interface in the VAB/SPH. Can permanently hide parts from the editor list or temporarily filter by mod. No parts removed from the game — just hidden from the editor menu.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Particularly useful after installing large parts packs in Wave 1 and 2.],
-)
-
-// ═══ TECH TREE ═══
-
-#mod-entry(
-  name: [Hide Empty Tech Tree Nodes],
-  ckan_id: "HideEmptyTechNodes",
-  url: "https://spacedock.info/mod/577/HideEmptyTechNodes",
-  description: [Removes empty tech tree nodes from the R&D Center view. When you install a modified tech tree that adds nodes (like Community Tech Tree), not all nodes will be populated by your installed mods — this mod hides the empty ones for a cleaner interface.],
-  dependencies: (),
-  impact_types: (UI),
-  impact_description: [Hides technology nodes in the R&D Center that have no parts available to unlock. Purely cosmetic — does not change the tech tree structure or part assignments.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Most useful when paired with Community Tech Tree (Wave 1) or other custom tech trees. Does nothing noticeable with the stock tech tree since all stock nodes are populated.],
+  version_pin: [Compatible with KSP 1.12.x. Complements MechJeb's Maneuver Planner (Wave 1) — use both for full maneuver control.],
 )
 
 // ═══ TOOLBAR ═══
@@ -194,38 +102,12 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
   name: [Toolbar Controller],
   ckan_id: "ToolbarController",
   url: "https://github.com/linuxgurugamer/ToolbarControl",
-  description: [Modern maintained toolbar framework. Provides a unified toolbar button system used by many mods (KAC, Waypoint Manager, Trajectories). Replaces the original blizzy78 Toolbar with improved compatibility and active maintenance by LGG.],
+  description: [Modern maintained toolbar framework. Provides a unified toolbar button system used by many mods (KAC, Waypoint Manager, Trajectories). Required dependency for several Wave 0.5 mods.],
   dependencies: (),
   impact_types: (UI),
-  impact_description: [Provides a framework for toolbar buttons. Required by several other Wave 0 mods. No visible impact on its own — other mods use it to add their buttons.],
+  impact_description: [Provides a framework for toolbar buttons. No visible impact on its own — other mods use it to add their buttons.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Required dependency for Kerbal Alarm Clock, Waypoint Manager, and Trajectories.],
-)
-
-// ═══ VISUAL INDICATORS ═══
-
-#mod-entry(
-  name: [IndicatorLights],
-  ckan_id: "IndicatorLights",
-  url: "https://spacedock.info/mod/566/IndicatorLights",
-  description: [Adds functional LED indicators to stock parts. Batteries show charge level with colored lights, probe cores show signal status, docking ports show alignment, and more. Parts that were once opaque black boxes now visually communicate their state.],
-  dependencies: ("ModuleManager"),
-  impact_types: (UI, Graphics),
-  impact_description: [Adds colored light indicators to stock parts that reflect actual part state (charge, signal, control, etc.). Purely visual — part functionality is unchanged. The indicators provide at-a-glance status without opening right-click menus.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. IndicatorLights Community Extensions adds indicators for mod parts (see below).],
-)
-
-#mod-entry(
-  name: [IndicatorLights Community Extensions],
-  ckan_id: "IndicatorLightsCommunityExtensions",
-  url: "https://spacedock.info/mod/974/IndicatorLights-Community-Extensions",
-  description: [Extends IndicatorLights with LED indicators for popular mod parts including ReStock, Near Future Technologies, and others. Ensures your entire part catalog benefits from visual status indicators, not just the stock parts.],
-  dependencies: ("IndicatorLights"),
-  impact_types: (UI, Graphics),
-  impact_description: [Adds IndicatorLights compatibility patches for mod parts. No new functionality — just extends the visual indicator system to more parts. Requires IndicatorLights.],
-  conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Requires IndicatorLights. Only useful if you install parts mods (Wave 1+).],
+  version_pin: [Compatible with KSP 1.12.x. Required dependency for mods in later waves.],
 )
 
 // ═══ UI THEME ═══
@@ -234,7 +116,7 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only UI an
   name: [ZTheme],
   ckan_id: "ZTheme",
   url: "https://forum.kerbalspaceprogram.com/topic/217396-112x-ztheme-v121-a-dark-theme-for-ksp-2025-07-26/",
-  description: [Dark UI theme for KSP's interface. Replaces the stock light-gray UI panels with a sleek dark theme across all scenes (Space Center, VAB/SPH, flight view, map view). Easier on the eyes during long play sessions and gives the game a modern look.],
+  description: [Dark UI theme for KSP's interface. Replaces the stock light-gray UI panels with a sleek dark theme across all scenes. Easier on the eyes during long play sessions.],
   dependencies: (),
   impact_types: (UI, Graphics),
   impact_description: [Replaces UI textures and color schemes with a dark theme. No gameplay changes — purely cosmetic UI reskin. Applies globally to all KSP interface elements.],
@@ -257,8 +139,7 @@ KER adds two things: a toolbar button in the VAB/SPH, and a toolbar button in fl
 
 The most important VAB readouts: *Delta-V*, *TWR*, and *Burn Time*. If TWR is below 1.0 at launch, you won't leave the pad. If delta-v to orbit is below 3,400 m/s, you're cutting it close.
 
-*In flight:* Press the KER toolbar button (or the hotkey you set in settings) to open the flight HUD. You can click and drag readouts anywhere on screen. The essential flight readouts for a beginner:
-
+*In flight:* Press the KER toolbar button (or the hotkey you set in settings) to open the flight HUD. The essential flight readouts for a beginner:
 - *Orbit: Apoapsis / Periapsis* — watch these during ascent and after maneuvers
 - *Vessel: Altitude (Surface)* — shows your true height above terrain, not sea level
 - *Surface: Vertical Speed* — critical for landings. Keep this low and decreasing
@@ -274,29 +155,21 @@ The most important VAB readouts: *Delta-V*, *TWR*, and *Burn Time*. If TWR is be
 BetterTimeWarp replaces the stock warp bar (the arrows next to the MET clock) with a customizable warp menu. Click the toolbar button (a clock icon) to open settings.
 
 *Key features:*
-- *Custom warp rates:* You can add intermediate speeds (8×, 15×, etc.) for more granular time compression. Useful for long interplanetary burns where the stock jump from 50× to 100× is too abrupt.
-- *Physics warp override:* Normally, physics warp (Alt+period) caps at 4×. BetterTimeWarp lets you push it higher with less risk of kraken attacks, though your mileage may vary with high-part-count vessels.
-- *Lossless physics warp:* At moderate rates (up to ~10× physical), BetterTimeWarp runs extra physics steps to reduce the wobble and explosion risk that plagues stock physics warp.
+- *Custom warp rates:* You can add intermediate speeds (8×, 15×, etc.) for more granular time compression.
+- *Physics warp override:* Normally, physics warp (Alt+period) caps at 4×. BetterTimeWarp lets you push it higher.
+- *Lossless physics warp:* At moderate rates (up to ~10× physical), BetterTimeWarp runs extra physics steps to reduce wobble and explosion risk.
 
 #tip[[
   Set a custom physics warp of 6× for long ion-engine burns. At 6×, most craft can handle the physics load without spontaneous disassembly. Above 10×, save first.
 ]]
 
-#section-heading([Transfer Window Planner])
+#section-heading([Precise Maneuver])
 
-TransferWindowPlanner (TWP) is a porkchop-plot tool that calculates the optimal departure time and delta-v for interplanetary transfers. You won't need it in Wave 0 — Mun and Minmus transfers are measured in hours, not months — but it's worth knowing where it lives.
+Open Precise Maneuver by clicking its icon (a maneuver node with a gear) in the toolbar when you have a maneuver node selected. The window shows numerical values for prograde, normal, and radial components. Use the +/− buttons for fine adjustments, or type exact values. The "Snap" dropdown controls increment size — use 1.0 m/s for rough planning, 0.1 or 0.01 for fine-tuning intercepts.
 
-*Access:* Toolbar button in the VAB, SPH, and Tracking Station. Opens a large window with dropdowns for origin and destination.
+#section-heading([Station Keeping])
 
-*How to read a porkchop plot:*
-- The Y-axis is departure date, X-axis is arrival date
-- Colors represent delta-v: blue = cheap, red = expensive
-- Click anywhere on the plot to see exact departure time and delta-v
-- TWP can create a maneuver node for you, but you'll still need to execute it manually
-
-#info[[
-  TWP becomes essential in Wave 1 when you start going interplanetary. For now, just know it exists. When you're ready to launch for Duna, open TWP first.
-]]
+Station Keeping works automatically — install it and forget it. Your station and satellite orbits will remain stable across timewarp sessions. No configuration needed. If you notice a station's orbit still drifting, check that the mod is installed correctly (look for a "StationKeeping" folder in GameData).
 
 // ═══════════════════════════════════════════════════════════════════
 // TUTORIAL: FIRST STEPS
@@ -346,7 +219,6 @@ Every orbit is an ellipse. The *apoapsis* (Ap) is the highest point of your orbi
 #section-heading([Prograde and Retrograde])
 
 On the navball (the big blue ball at the bottom-center of your screen during flight):
-
 - *Prograde* (green circle, no X) — your direction of travel. Burn prograde to speed up.
 - *Retrograde* (green circle with an X) — opposite your direction of travel. Burn retrograde to slow down.
 
@@ -378,7 +250,6 @@ Most launches go *east* (90°) because Kerbin's rotation gives you a free 175 m/
 #section-heading([The Kerbal Space Center])
 
 Click through the buildings to understand what each one does:
-
 - *Vehicle Assembly Building (VAB)* — build rockets (vertical launch)
 - *Spaceplane Hangar (SPH)* — build planes (horizontal takeoff)
 - *Tracking Station* — view and control all active flights
@@ -407,7 +278,6 @@ Open the VAB. You'll see the parts list on the left and the assembly area in the
 #section-heading([Staging])
 
 Staging is the sequence in which parts fire. The staging stack is on the right side of the VAB. The bottom-most stage fires first. A basic staging sequence:
-
 - Stage 0 (top): Parachute deploys
 - Stage 1: Decoupler fires, pod separates from tank
 - Stage 2 (bottom): Engine ignites at launch
@@ -441,7 +311,6 @@ Building a rocket that reaches space is easy. Reaching *orbit* requires speed �
 #section-heading([Transfer Burn])
 
 From low Kerbin orbit (80–100 km circular, equatorial):
-
 1. Switch to Map view. Rotate the camera so you can see the Mun's orbit.
 2. The Mun rises over Kerbin's horizon — when it's about 45 degrees ahead of your craft in its orbit, you're at the transfer window.
 3. Create a maneuver node on your orbit. Drag prograde until the projected path intersects the Mun's sphere of influence (SoI). It should take about 860 m/s.
@@ -456,7 +325,6 @@ From low Kerbin orbit (80–100 km circular, equatorial):
 When you enter the Mun's SoI, you'll be on a flyby trajectory. At Mun periapsis (Pe marker), burn retrograde to slow down and enter orbit. Target a 15–20 km circular orbit.
 
 To land:
-
 1. From low Mun orbit, burn retrograde until your trajectory line hits the surface. Target a flat area (the Mun's large craters — maria — are dark, flat regions).
 2. As you descend, keep burning retrograde. Watch your surface velocity indicator (click the navball speed readout until it says "Surface").
 3. When below ~2,000 m altitude, your speed should drop below 100 m/s.
@@ -502,9 +370,9 @@ Docking lets you join two spacecraft in orbit. It's essential for Apollo-style M
 6. Drift in at less than 0.5 m/s. The magnetic docking ports will snap together.
 
 #info[[
-  RCS thrusters must be placed symmetrically around your craft's center of mass to avoid unwanted rotation during translation. In the VAB, toggle the center of mass indicator to check.
+  RCS thrusters must be placed symmetrically around your craft's center of mass to avoid unwanted rotation during translation. In the VAB, toggle the center of mass indicator to check. RCS Build Aid (Wave 0.5) makes this much easier.
 ]]
 
 #section-heading([Where to Go from Here])
 
-At this point you can reach orbit, land on the Mun, dock two craft together, and return home safely. You've mastered the core skills. When you're comfortable with these maneuvers — able to execute them without reverting to the VAB every five minutes — you're ready for Wave 1.
+At this point you can reach orbit, land on the Mun, dock two craft together, and return home safely. You've mastered the core skills. When you're comfortable with these maneuvers — able to execute them without reverting to the VAB every five minutes — you're ready for Wave 0.5.
