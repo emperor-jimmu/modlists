@@ -235,3 +235,10 @@
 
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
+
+### Added Mods (Jul 2026 batch 6)
+- [x] Hang Glider v21.1.0 (Wave 2 — Mobility) — simple fabric-and-wood glider, Phase 1 accessible exploration aid. Requires Puzzles Lib (already in pack).
+- [x] Man of Many Planes 0.2.1 (Wave 2 — Mobility) — Immersive Aircraft addon, two Create-themed aircraft. Requires Immersive Aircraft (already in pack).
+
+### Skipped After Review (Jul 2026 batch 6)
+- [x] Automobility — no NeoForge version, only maintained for 1.20/1.20.1. Last updated Jun 2023. Abandoned.

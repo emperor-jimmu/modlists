@@ -50,26 +50,11 @@ Recommended JVM arguments (for XMCL → instance settings → Java → JVM Argum
    - macOS: DMG (Intel or Apple Silicon)
    - Linux: Deb, RPM, AppImage, Flathub
    - Or via winget: `winget install CI010.XMinecraftLauncher`
-2. Create a new instance: click **+** → select Minecraft **1.21.1** and modloader **NeoForge** (latest recommended for 1.21.1).
-3. XMCL downloads NeoForge and the correct Java version automatically.
-4. Launch the instance once to generate the `mods/` directory and configs.
-5. Verify the main menu shows "NeoForge X.X.X" in the bottom-left corner.
+2. Open XMCL and follow the [NeoForge](#neoforge) instructions below to create your instance.
 
-From there, install mods through the instance's **Mods** tab from either CurseForge or Modrinth, or by dropping `.jar` files into the instance's `mods/` folder. XMCL uses hard links — mods are stored once globally and linked per instance, avoiding duplicates. All mod links in this document link to their CurseForge pages — XMCL can install from CurseForge directly via the Mods tab.
+Once the instance is running, install mods through the **Mods** tab from either CurseForge or Modrinth, or by dropping `.jar` files into the instance's `mods/` folder. XMCL uses hard links — mods are stored once globally and linked per instance, avoiding duplicates. All mod links in this document link to their CurseForge pages — XMCL can install from CurseForge directly via the Mods tab.
 
 For texture packs, drop `.zip` files into the instance's **Resource Packs** tab or folder. For shaderpacks, drop `.zip` files into the instance's **Shader Packs** tab or folder. Access the instance folder from the instance settings.
-
-### Minecraft 1.21.1
-
-Install the **Minecraft 1.21.1** vanilla client from the official launcher:
-
-1. Open the [Minecraft Launcher](https://www.minecraft.net/download).
-2. Create a new installation with version **release 1.21.1**.
-3. Run it once to generate the vanilla `versions/` and `libraries/` directories, then close.
-4. Locate your Minecraft directory:
-   - Windows: `%APPDATA%\.minecraft`
-   - Linux: `~/.minecraft`
-   - macOS: `~/Library/Application Support/minecraft`
 
 ### NeoForge
 
@@ -77,15 +62,24 @@ Install the **Minecraft 1.21.1** vanilla client from the official launcher:
 |------------------------------------|---------------------------------|
 | [NeoForge](https://neoforged.net/) | Mod loader for Minecraft 1.21.1 |
 
-NeoForge is the mod loader powering this modpack. If you're using **XMCL**, it installs NeoForge automatically when you create a NeoForge instance (see [XMCL](#x-minecraft-launcher-xmcl) above) — skip to step 5 to verify.
+NeoForge is the mod loader powering this modpack. **XMCL installs NeoForge and Minecraft 1.21.1 automatically** when you create a NeoForge instance (see [XMCL](#x-minecraft-launcher-xmcl) above). This is the recommended path — XMCL handles the Minecraft version, mod loader, and Java runtime in one step.
 
-If installing manually:
+**Using XMCL (recommended)**:
 
-1. Download the **NeoForge installer** for Minecraft 1.21.1 from [neoforged.net](https://neoforged.net/).
-2. Run the installer: `java -jar neoforge-1.21.1-<version>-installer.jar`.
-3. Select **"Install client"** and point it to your Minecraft directory (auto-detected on most systems).
-4. Launch the new **neoforge** profile in the Minecraft Launcher once to generate the `mods/` directory and NeoForge configs.
+1. In XMCL, create a new instance: click **+** → select Minecraft **1.21.1** and modloader **NeoForge** (latest recommended for 1.21.1).
+2. XMCL downloads Minecraft 1.21.1, NeoForge, and the correct Java version automatically.
+3. Launch the instance once to generate the `mods/` directory and NeoForge configs.
+4. Verify the main menu shows "NeoForge X.X.X" in the bottom-left corner.
+5. From then on, install mods through the instance's **Mods** tab — search CurseForge or Modrinth, or drop `.jar` files into the instance's `mods/` folder.
+
+If you prefer the official launcher:
+
+1. Run **Minecraft 1.21.1** vanilla at least once from the official launcher to generate the game directory.
+2. Download the **NeoForge installer** for 1.21.1 from [neoforged.net](https://neoforged.net/).
+3. Run it: `java -jar neoforge-1.21.1-<version>-installer.jar` → select "Install client".
+4. Launch the new **neoforge** profile once to generate the `mods/` directory.
 5. Verify the main menu shows "NeoForge X.X.X" in the bottom-left corner.
+   - Your Minecraft directory: Windows `%APPDATA%\.minecraft`, Linux `~/.minecraft`, macOS `~/Library/Application Support/minecraft`
 
 **Important**: Do not add any mod `.jar` files yet. Wave -1 is complete when the vanilla 1.21.1 client runs under NeoForge with no mods installed.
 
@@ -1314,6 +1308,8 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) 1.1.5 | Flyable aircraft — biplane, airship, cargo airship, warship, gyrocopter. Upgradable, colorable                         |
 | [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships) 2.0.0-b2.1          | Sailable ships — brigantine, cog, drakkar, galley. Build, crew, and navigate; moveable bases on water. Beta (NeoForge) |
+| [Hang Glider](https://www.curseforge.com/minecraft/mc-mods/hang-glider) v21.1.0             | Craftable hang glider — glide from any height. No fuel, no power. Phase 1 accessible exploration aid                    |
+| [Man of Many Planes](https://www.curseforge.com/minecraft/mc-mods/man-of-many-planes) 0.2.1 | Immersive Aircraft addon — two Create-themed aircraft. Requires Immersive Aircraft                                     |
 
 ### Configuration — Wave 2
 
@@ -1327,6 +1323,10 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 - `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
 
 **Interdependency note — Immersive Aircraft + Aether**: Aircraft can fly in the Aether dimension. An airship is a natural way to navigate Aether islands — it pairs well with the dimension's sky-island geography.
+
+**Interdependency note — Man of Many Planes + Immersive Aircraft**: Man of Many Planes is a direct addon for Immersive Aircraft that adds two Create-themed aircraft. It requires Immersive Aircraft to function. The addon planes share the same fuel, parking, and dimension traversal behavior as base Immersive Aircraft vehicles.
+
+**Interdependency note — Hang Glider + Create Ornithopter Glider**: The Hang Glider provides simpler, earlier flight than the Create Ornithopter Glider (Wave 1). The Hang Glider requires only wood and leather (Phase 1 accessible, no power), while the Ornithopter Glider needs Create rotational power (Phase 1.5+). Both coexist as a natural progression: Hang Glider for early-Phase-1 exploration, Ornithopter Glider once Create infrastructure is online, Immersive Aircraft for powered mid-game flight.
 
 **Interdependency note — Twilight Forest + Apotheosis**: Apotheosis boss affixes (Wave 3) apply to Twilight Forest bosses. A Naga with the "Tough" affix is significantly harder. This is intended — it keeps dimension bosses relevant even with late-game gear. If a boss feels too strong, the player can return after better equipment or use Apotheosis gems/runes for the edge.
 
@@ -1456,6 +1456,31 @@ Buildable, sailable ships. **Phase 1 accessible** — requires wood, wool, iron.
 **How**: Craft hull (wood) + mast (wood + wool) + helm. Right-click water to place. Right-click helm to board. `W/S` to move, `A/D` to steer. Speed depends on wind direction. Dismount to park — ships float where left. Right-click with lead to tow.
 
 **Note**: Beta for NeoForge (2.0.0-b2.1). Core features work; minor bugs expected.
+
+#### Hang Glider
+
+Simple fabric-and-wood glider. **Phase 1 accessible** — requires only wood and leather, no fuel or power.
+
+- Craft the glider (check JEI — wood + leather + string)
+- Equip in your hand and jump off any height to glide
+- Hold forward to maintain speed, steer with mouse
+- Dismount by pressing sneak — you'll drop safely to the ground
+- Requires **Puzzles Lib** (already in pack from Wave 5 / Easy Anvils)
+
+**Progression**: The Hang Glider is the earliest flight option. It provides gentle gliding for early exploration before the player has Create power for the Ornithopter Glider (Wave 1) or fuel infrastructure for Immersive Aircraft. It cannot gain altitude — it's pure glide, not powered flight. Ideal for scouting Terralith biomes from mountain peaks.
+
+**Config**: No changes needed — default behavior is ideal. Gliding is inherently chill (no fuel, no maintenance, no risk of crashing unless you fly into terrain).
+
+#### Man of Many Planes — Immersive Aircraft Addon
+
+Adds two Create-themed aircraft to Immersive Aircraft. **Phase 2 accessible** — requires Immersive Aircraft (iron + wool/leather) plus Create materials (andesite alloy, brass).
+
+- **Two new aircraft** — brass-and-mechanical themed designs
+- Uses the same fuel, parking, and controls as base Immersive Aircraft
+- Works in the Aether dimension like all Immersive Aircraft
+- Craft recipes available in JEI
+
+**Integration**: These aircraft offer a visual and thematic bridge between Create (Wave 1) and Immersive Aircraft (Wave 2). A player deep in Create will appreciate aircraft that match their factory's aesthetic.
 
 ---
 
@@ -1587,11 +1612,11 @@ After defeating the Ender Dragon, the End becomes a full dimension.
 
 | Session                           | Focus                                                                                                                    | What to Do                       |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Session 1 — Scout**             | Craft Explorer's Compass. Search for cherry grove or redwood forest. Mark waypoints on JourneyMap. Loot a YUNG's dungeon | First taste of transformed world |
+| **Session 1 — Scout**             | Craft Explorer's Compass. Search for cherry grove or redwood forest. Mark waypoints on JourneyMap. Loot a YUNG's dungeon. Craft a Hang Glider for early aerial scouting | First taste of transformed world |
 | **Session 2 — Aether**            | Gather glowstone. Build Aether portal. Explore first sky island, collect ambrosium and zanite                            | Safe new dimension               |
 | **Session 3 — Twilight Forest**   | Find 2×2 pool, surround with flowers, throw diamond. Enter, place Waystone. Defeat the Naga                              | First Twilight boss              |
 | **Session 4+ — Deep exploration** | Work through Twilight Forest bosses. Visit Deeper and Darker (find Ancient City). Explore End post-Dragon                | Boss loot, dimension resources   |
-| **Session 5 — Aircraft**          | Craft a biplane or airship (iron + wool). Explore Terralith biomes from the air                                          | Fast travel, scenic views        |
+| **Session 5 — Aircraft**          | Craft a biplane or airship (iron + wool). Explore Terralith biomes from the air. Craft Man of Many Planes aircraft for Create-themed flight | Fast travel, scenic views        |
 
 **Pacing tip**: Explore between factory builds. Grab your compass and walk in a random direction when waiting for Mekanism to process or Create to assemble.
 
@@ -2663,14 +2688,14 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 0.5 — Player Experience | 45      | —      | 45      | Visual & Client QoL (27), Inventory & UI (14), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony            | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                                          |
-| Wave 2 — Exploration         | 24      | 6      | 30      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships                                                                                                  |
+| Wave 2 — Exploration         | 26      | 6      | 32      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships, hang glider, IaA addon                                                                         |
 | Wave 3 — Equipment Magic     | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
 | Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 1       | —      | 1       | Bountiful                                                                                                                                                                                                                                                              |
 | Wave 5 — Combat              | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
 | Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                               |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
-| **Total**                    | **144** | **40** | **184** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
+| **Total**                    | **146** | **40** | **186** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
