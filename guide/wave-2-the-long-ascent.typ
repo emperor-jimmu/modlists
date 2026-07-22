@@ -96,43 +96,31 @@ Wave 1 gave you the tools to explore the expanded solar system (OPM, QuackPack, 
   dependencies: ("CommunityResourcePack", "B9PartSwitch", "DeployableEngines", "ModuleManager"),
   impact_types: (Parts, Mechanics, Gameplay),
   impact_description: [Adds endgame propulsion technologies: fusion engines (5,000–30,000s Isp), antimatter-initiated fusion, and beam-core antimatter drives (100,000+ s Isp). Requires massive power infrastructure — pairs with Near Future Electrical reactors. Engines consume advanced resources (FusionPellets, Antimatter) that must be produced or mined.],
-  conflicts: [KSP Interstellar Extended (KSPIE) is the competing interstellar mod. FFT is recommended — it has better model quality, fits the Nertea/Restock visual style already established in Wave 1, and is fully CKAN-supported. Choose one interstellar mod — not both.],
+  conflicts: none,
   version_pin: [Compatible with KSP 1.12.x. Requires significant power infrastructure (Near Future Electrical reactors recommended). Sterling Systems (manual install) adds complementary engine parts. SystemHeat recommended for thermal management.],
-)
-
-#mod-entry(
-  name: [KSP Interstellar Extended],
-  ckan_id: "KSPInterstellarExtended",
-  url: "https://forum.kerbalspaceprogram.com/topic/173818-181-1122-ksp-interstellar-extended-1295-release-thread/",
-  description: [The original comprehensive interstellar mod: fusion, antimatter, beamed power, warp drives, and ISRU resource chains spanning the entire solar system. Deeper and more complex than FFT with decades of development history and broad mod compatibility. Manual install only.],
-  dependencies: ("ModuleManager"),
-  impact_types: (Parts, Mechanics, Gameplay),
-  impact_description: [Adds a complete interstellar technology tree: thermal rockets, fusion drives, antimatter reactors, alcubierre warp drives, and in-situ resource extraction for exotic fuels. Significantly more complex than FFT — includes waste heat management, reactor fuel reprocessing, and beamed power networks.],
-  conflicts: [Far Future Technologies covers the same niche with simpler mechanics and better visuals. Choose one interstellar mod. KSPIE is deeper and more detailed; FFT is cleaner and better integrated with the Nertea ecosystem already in Wave 1.],
-  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock or GitHub — not on CKAN. Sterling Systems adds complementary engine parts for both KSPIE and FFT.],
 )
 
 #mod-entry(
   name: [Sterling Systems],
   ckan_id: "SterlingSystems",
   url: "https://forum.kerbalspaceprogram.com/topic/219609-1125-sterling-systems-v06-may-23-2025/",
-  description: [Additional advanced engine parts that complement both FFT and KSPIE. Adds sterling-cycle nuclear engines, hybrid thermal rockets, and niche propulsion options that fill gaps between the main interstellar propulsion mods. Designed to pair with whichever interstellar mod you choose.],
+  description: [Additional advanced engine parts that complement Far Future Technologies. Adds sterling-cycle nuclear engines, hybrid thermal rockets, and niche propulsion options that fill gaps in FFT's interstellar propulsion lineup. Designed to pair with FFT for a complete near-future-to-interstellar engine progression.],
   dependencies: ("CommunityResourcePack", "B9PartSwitch", "DeployableEngines", "ModuleManager"),
   impact_types: (Parts, Mechanics),
-  impact_description: [Adds extra advanced engines that work with FFT or KSPIE resource frameworks. Not a standalone propulsion system — supplements your chosen interstellar mod with additional engine variety.],
+  impact_description: [Adds extra advanced engines that work with FFT's resource frameworks (FusionPellets, Antimatter). Not a standalone propulsion system — supplements FFT with additional engine variety and niche propulsion options.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Manual install — not on CKAN. Designed to complement FFT or KSPIE. Install alongside whichever interstellar mod you chose.],
+  version_pin: [Compatible with KSP 1.12.x. Manual install — not on CKAN. Designed to complement Far Future Technologies.],
 )
 
 #mod-entry(
   name: [Blueshift],
   ckan_id: "Blueshift",
   url: "https://forum.kerbalspaceprogram.com/topic/198274-112x-blueshift/",
-  description: [FTL (faster-than-light) warp drive mod by Angel-125. Unlike KSPIE's alcubierre drive, Blueshift requires you to build a warp-coil infrastructure — you must construct and deploy warp coils at your destination before you can FTL there. A "balanced" FTL system that makes you work for faster-than-light travel rather than handing it to you.],
+  description: [FTL (faster-than-light) warp drive mod by Angel-125. Unlike instant warp drives, Blueshift requires you to build a warp-coil infrastructure — you must construct and deploy warp coils at your destination before you can FTL there. A "balanced" FTL system that makes you work for faster-than-light travel rather than handing it to you.],
   dependencies: ("ModuleManager"),
   impact_types: (Parts, Mechanics, Gameplay),
-  impact_description: [Adds FTL warp drives requiring destination infrastructure. You must deploy warp-coil networks before FTL travel becomes possible — no free jumps. More balanced and progression-gated than KSPIE's instant alcubierre drive. Uses Kopernicus for interstellar destinations.],
-  conflicts: [FFT and KSPIE provide their own interstellar propulsion (fusion torches, antimatter drives, alcubierre warp). Blueshift is a separate FTL approach — all three can coexist, but each represents a different interstellar philosophy. Blueshift = balanced progression FTL; FFT = near-future realistic propulsion; KSPIE = kitchen-sink interstellar.],
+  impact_description: [Adds FTL warp drives requiring destination infrastructure. You must deploy warp-coil networks before FTL travel becomes possible — no free jumps. Warp travel is gated behind progression milestones rather than handed out instantly. Uses Kopernicus for interstellar destinations.],
+  conflicts: [Far Future Technologies provides sub-light interstellar propulsion (fusion torches, antimatter drives). Blueshift's FTL warp system is a complementary layer — use both for a complete interstellar progression: FFT engines to explore new stars, then deploy warp coils for fast travel between them.],
   version_pin: [Compatible with KSP 1.12.x. Recommends Kopernicus for interstellar destinations. Waterfall recommended for warp-drive visual effects.],
 )
 
@@ -256,7 +244,7 @@ A typical MKS-style colonization resource chain:
 
 #section-heading([Engine Classes])
 
-Interstellar mods (KSP Interstellar Extended, Far Future Technologies) introduce propulsion technologies beyond chemical rockets:
+Far Future Technologies introduces propulsion technologies beyond chemical rockets:
 
 - *Nuclear thermal (NERVA):* Heats propellant with a fission reactor. Isp 800–1,000 s. Good for interplanetary heavy lift.
 - *Fusion drives:* Isp 5,000–30,000 s. Requires massive power plants (often the engine IS the power plant). Interstellar-capable.
