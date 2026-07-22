@@ -165,6 +165,32 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 **Euphoria Patches** is a shader add-on, not a standalone shaderpack. It patches Complementary Shaders (Reimagined or Unbound) with additional visual options. Install via its patcher mod (requires NeoForge, no additional mod dependencies). All features are disabled by default and can be individually enabled from the shader options menu.
 
+**Recommended Euphoria Patches settings to enable** (Shader Options → Popular Settings tab, then apply the preset):
+
+Performance impact is rated for the RTX 4080 SUPER (16GB VRAM, 4K, High profile) targeting 70-80 FPS. The base Complementary settings already leave headroom (no Bloom, no Entity Shadows, Shadow Res 2048, DH LOD 128-256 chunks), so Euphoria's overhead should be absorbed without dropping below the target. If FPS dips occur, disable the Heavy-impact features first.
+
+| Category         | Setting                         | Value  | Perf     | Why                                                                 |
+|------------------|---------------------------------|--------|----------|---------------------------------------------------------------------|
+| World            | Colored Lighting                | ON     | Moderate | Dynamic block light colors — glowstone, redstone, sea lanterns      |
+| World            | Seasons                         | ON     | None     | Leaves/grass shift colors with Serene Seasons calendar              |
+| World            | Darkness Desaturation           | ON     | None     | Colors desaturate in darkness for more atmospheric nights           |
+| World            | Better Bedrock Noise            | ON     | None     | Smoother, more natural bedrock layer pattern                        |
+| Atmosphere       | Better Clouds                   | ON     | **Heavy**    | Volumetric cloud improvements over base Complementary (High quality)|
+| Atmosphere       | No Rain Above Clouds            | ON     | None     | Rain only falls below cloud layer (Iris-only)                       |
+| Atmosphere       | Aurora Colors                   | Custom | None     | Fine-tune aurora hue/saturation for personal taste                  |
+| Water            | Better Water                    | ON     | **Heavy**    | Improved water reflections and wave animation                       |
+| Effects          | Lava Edge Effect                | ON     | Low      | Glowing edge on lava blocks for depth (Iris-only)                   |
+| Effects          | End Portal Rays                 | ON     | Low      | Light rays emanate from End portal frames (Iris-only)               |
+| Effects          | Epic Thunderstorm               | ON     | Moderate | More dramatic lightning visuals (Iris-only); cost only during storms|
+| Effects          | Soul Sand Valley Overhaul       | ON     | Moderate | Richer fog and particle atmosphere in soul sand valleys             |
+| Effects          | Dragon Death Effect             | ON     | Low      | Spectacular visual during Ender Dragon death                        |
+| Entities         | Better Waving Vines/Sugar Cane  | ON     | None     | Smoother plant waving animation (Iris-only)                         |
+| Entities         | Third-Person Interactive Foliage| ON     | Low      | Foliage reacts to player in third person (Iris-only)                |
+| Entities         | Third-Person Soul Sand Eyes     | ON     | Low      | Soul sand valley eyes track player in third person (Iris-only)      |
+| Mod Support      | Better Modded SSBL              | ON     | Moderate | Auto-emissive modded light sources at correct light levels          |
+
+> **Tip**: The Popular Settings preset applies the most impactful options in one click. Browse individual categories afterward to fine-tune. Features marked "Iris-only" require Iris (not Oculus) — this pack uses Iris on NeoForge, so all features work.
+
 **Settings for NVIDIA RTX 4080 SUPER (16GB VRAM, 4K) — target: stable 70-80 FPS**:
 
 | Setting                    | Value           |
@@ -278,7 +304,7 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 
 Drop **Complementary Unbound** `.zip` into `shaderpacks/`. In-game: Options → Video Settings → Shaderpacks → select Complementary Unbound. Works with Iris on NeoForge.
 
-**Euphoria Patches** (optional add-on): Install the patcher mod, it auto-detects Complementary and applies additional visual options. All features disabled by default.
+**Euphoria Patches** (optional add-on): Install the patcher mod, it auto-detects Complementary and applies additional visual options. All features disabled by default. Open Shader Options → Popular Settings tab → apply the Popular Settings preset, then browse individual categories to fine-tune.
 
 **Settings for RTX 4080 SUPER (16GB VRAM, 4K)**:
 
