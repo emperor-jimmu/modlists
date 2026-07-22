@@ -78,7 +78,7 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
   dependencies: ("ModuleManager"),
   impact_types: (Graphics),
   impact_description: [Changes the rendering pipeline. More dynamic lights, better reflections, and many of the features Planetshine provides natively. Significant visual improvement with a smaller performance hit than stacking multiple lighting mods.],
-  conflicts: [PlanetShine is redundant with Deferred (Deferred handles planet reflections natively). Only install PlanetShine alongside Deferred if you specifically prefer its look.],
+  conflicts: none,
   version_pin: [Compatible with KSP 1.12.x.],
 )
 
@@ -693,7 +693,7 @@ These mods add meticulously detailed replicas of real-world spacecraft and launc
   dependencies: ("B9PartSwitch", "CommunityResourcePack", "ModuleManager", "Benjee10-SharedAssets", "DeployableEngines", "AnimatedDecouplers", "SimpleAdjustableFairings", "HabTechProps"),
   impact_types: (Parts, Mechanics),
   impact_description: [Adds SLS and Orion parts. RS-25 engines use LH2/LOX via CRP. SRBs use solid fuel. Orion has integrated RCS, parachutes, and heat shield. Designed to reach the Moon and beyond. Rocket Motor Menagerie adds RS-25 variants for more engine options.],
-  conflicts: [ReDIRECT and ORANGES are alternative SLS/shuttle-derived launcher mods. Artemis Construction Kit is the recommended choice for this modlist — it has the best CKAN support and active development. Use only one SLS mod.],
+  conflicts: none,
   version_pin: [Compatible with KSP 1.12.x. Requires Breaking Ground DLC for robotic parts support. Rocket Motor Menagerie adds RS-25 engine variants.],
 )
 
@@ -1048,10 +1048,10 @@ Load a sandbox save and launch a simple rocket to orbit. This lets you assess pe
 
 - TUFX: Open the TUFX toolbar menu (in flight) and try a lighter profile. "Default-Low" disables ambient occlusion, which is the biggest GPU hog. Fox's Experimental profile is beautiful but heavy — save it for screenshots.
 - Parallax: If ground scatter kills your framerate, reduce the scatter density in the Parallax settings (accessible from the Space Center scene).
-- Deferred: If the deferred renderer causes visual glitches or extreme slowdown, you can disable it in its config file. Deferred handles planet reflections, so *disable PlanetShine if you keep Deferred* — running both is redundant and costs performance.
+- Deferred: If the deferred renderer causes visual glitches or extreme slowdown, you can disable it in its config file. Deferred handles planet reflections natively, so no separate planet-lighting mod is needed.
 
 *Mod conflicts to watch:*
-- PlanetShine + Deferred = redundant planet lighting. Choose one.
+
 - If your sky is pure black after installing AVP, Scatterer or EVE didn't load correctly. Reinstall both from CKAN.
 - If engine plumes are missing or look broken, Waterfall and its configs may need a reinstall. WaterfallRestock provides plume configs for Restock engines specifically.
 
@@ -1102,8 +1102,7 @@ Wave 1 adds significant performance load, especially from graphics mods. If your
 1. *Disable TUFX ambient occlusion* — this alone can recover 10–20 FPS
 2. *Reduce Parallax scatter density* to 50%
 3. *Lower AVP texture resolution* or remove it entirely
-4. *Uninstall PlanetShine* if using Deferred (redundant)
-5. *Cap part counts* — keep ships under 200 parts, stations under 300
+4. *Cap part counts* — keep ships under 200 parts, stations under 300
 
 #tip[[
   KSP is CPU-bound by physics, not GPU-bound by graphics. If you have FPS issues during launch (when physics is heavy) but not in orbit, the culprit is part count, not your graphics mods. Simplify the vessel, not the visuals.
