@@ -16,6 +16,7 @@
         { "name": "ExtraplanetaryLaunchpads" },
         { "name": "SimpleConstruction" },
         { "name": "FarFutureTechnologies" },
+        { "name": "Blueshift" },
         { "name": "CommunityNavballDockingIndicator" }
     ],
     "supports": [

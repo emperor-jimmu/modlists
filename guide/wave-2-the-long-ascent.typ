@@ -103,7 +103,7 @@ Wave 1 gave you the tools to explore the expanded solar system (OPM, QuackPack, 
 #mod-entry(
   name: [KSP Interstellar Extended],
   ckan_id: "KSPInterstellarExtended",
-  url: "https://spacedock.info/mod/172/KSP-Interstellar-Extended",
+  url: "https://forum.kerbalspaceprogram.com/topic/173818-181-1122-ksp-interstellar-extended-1295-release-thread/",
   description: [The original comprehensive interstellar mod: fusion, antimatter, beamed power, warp drives, and ISRU resource chains spanning the entire solar system. Deeper and more complex than FFT with decades of development history and broad mod compatibility. Manual install only.],
   dependencies: ("ModuleManager"),
   impact_types: (Parts, Mechanics, Gameplay),
@@ -115,7 +115,7 @@ Wave 1 gave you the tools to explore the expanded solar system (OPM, QuackPack, 
 #mod-entry(
   name: [Sterling Systems],
   ckan_id: "SterlingSystems",
-  url: "https://github.com/post-kerbin-mining-corporation/SterlingSystems",
+  url: "https://forum.kerbalspaceprogram.com/topic/219609-1125-sterling-systems-v06-may-23-2025/",
   description: [Additional advanced engine parts that complement both FFT and KSPIE. Adds sterling-cycle nuclear engines, hybrid thermal rockets, and niche propulsion options that fill gaps between the main interstellar propulsion mods. Designed to pair with whichever interstellar mod you choose.],
   dependencies: ("CommunityResourcePack", "B9PartSwitch", "DeployableEngines", "ModuleManager"),
   impact_types: (Parts, Mechanics),
@@ -123,6 +123,24 @@ Wave 1 gave you the tools to explore the expanded solar system (OPM, QuackPack, 
   conflicts: none,
   version_pin: [Compatible with KSP 1.12.x. Manual install — not on CKAN. Designed to complement FFT or KSPIE. Install alongside whichever interstellar mod you chose.],
 )
+
+#mod-entry(
+  name: [Blueshift],
+  ckan_id: "Blueshift",
+  url: "https://forum.kerbalspaceprogram.com/topic/198274-112x-blueshift/",
+  description: [FTL (faster-than-light) warp drive mod by Angel-125. Unlike KSPIE's alcubierre drive, Blueshift requires you to build a warp-coil infrastructure — you must construct and deploy warp coils at your destination before you can FTL there. A "balanced" FTL system that makes you work for faster-than-light travel rather than handing it to you.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds FTL warp drives requiring destination infrastructure. You must deploy warp-coil networks before FTL travel becomes possible — no free jumps. More balanced and progression-gated than KSPIE's instant alcubierre drive. Uses Kopernicus for interstellar destinations.],
+  conflicts: [FFT and KSPIE provide their own interstellar propulsion (fusion torches, antimatter drives, alcubierre warp). Blueshift is a separate FTL approach — all three can coexist, but each represents a different interstellar philosophy. Blueshift = balanced progression FTL; FFT = near-future realistic propulsion; KSPIE = kitchen-sink interstellar.],
+  version_pin: [Compatible with KSP 1.12.x. Recommends Kopernicus for interstellar destinations. Waterfall recommended for warp-drive visual effects.],
+)
+
+#info[[
+  *Base Building Alternative:* Kerbal Planetary Base Systems (https://forum.kerbalspaceprogram.com/topic/133606-112x-kerbal-planetary-base-systems/) is a popular alternative to Planetside Exploration Technologies. KPBS adds modular surface base parts with a distinct visual style and broad mod support. Manual install from forum thread — not on CKAN. Choose Planetside (CKAN, benjee10 style) or KPBS (manual, modular style) for your surface base needs.
+
+  *EVA Construction Tools:* KIS — Kerbal Inventory System (https://forum.kerbalspaceprogram.com/topic/149848-minimum-ksp-version-112-kerbal-inventory-system-kis-v129/) and KAS — Kerbal Attachment System (https://forum.kerbalspaceprogram.com/topic/23555-0211-kas-v043-struts-pipes-part-storage-containers-merged-winches-amp-more/) are the classic EVA construction pair. KIS lets kerbals carry and place parts during EVA; KAS adds winches, pipes, and struts for connecting base modules. Both are manual install from forum threads — not on CKAN. These were once essential and remain popular, though KSP 1.11+ added stock EVA construction that covers many KIS/KAS use cases.
+]]
 
 // ═══════════════════════════════════════════════════════════════════
 // HOW TO USE THESE MODS

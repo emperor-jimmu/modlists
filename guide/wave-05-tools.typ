@@ -145,7 +145,7 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
 #mod-entry(
   name: [CapCom — Mission Control On The Go],
   ckan_id: "CapCom",
-  url: "https://spacedock.info/mod/131/CapCom-Mission-Control-On-The-Go",
+  url: "https://forum.kerbalspaceprogram.com/topic/107789-18x-capcom-mission-control-on-the-go/",
   description: [Review and accept contracts without returning to Mission Control. Access the contract list from any scene via a toolbar button — accept new contracts, review active ones, and check deadlines while in flight or the tracking station.],
   dependencies: ("ToolbarController"),
   impact_types: (UI),
@@ -169,6 +169,66 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
 // ═══ VAB/SPH TOOLS ═══
 
 #section-heading([VAB/SPH Tools])
+
+#mod-entry(
+  name: [Conformal Decals],
+  ckan_id: "ConformalDecals",
+  url: "https://github.com/JPLRepo/ConformalDecals",
+  description: [Apply customized flags and decals directly onto part surfaces. Decals conform to curved surfaces and can be scaled, rotated, and positioned anywhere on your craft. Purely cosmetic — the Kerbal equivalent of nose art and mission patches on real spacecraft.],
+  dependencies: (),
+  impact_types: (UI, Graphics),
+  impact_description: [Adds decal parts that project your chosen flag onto any surface. Decals are physicsless — no mass, no drag, no gameplay impact. Complements TURD (recoloring) and SimpleRepaint (re-shading) for complete visual customization.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Works on any part surface. Decals are purely visual — no effect on vessel performance.],
+)
+
+#mod-entry(
+  name: [Buoyancy Adjuster],
+  ckan_id: "BuoyancyAdjuster",
+  url: "https://github.com/linuxgurugamer/BuoyancyAdjuster",
+  description: [Adjust the buoyancy of any part to make submersibles, submarines, and floating bases practical. Stock KSP has no built-in buoyancy control — this mod lets you tune whether a part floats, sinks, or hovers at neutral buoyancy. Essential for underwater exploration.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI),
+  impact_description: [Adds a buoyancy slider to part right-click menus. Positive values = float higher. Negative = sink. Zero = neutral. No new parts — every existing part gains configurable buoyancy.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Makes submarine and underwater base construction feasible without part mass manipulation.],
+)
+
+#mod-entry(
+  name: [Speed Unit Annex],
+  ckan_id: "SpeedUnitAnnex",
+  url: "https://github.com/yalov/SpeedUnitAnnex",
+  description: [Changes the navball speed readout from m/s to Mach number, knots, or km/h. Displays Mach number at the top of the navball when in atmosphere — essential for supersonic flight management and realistic aircraft operations.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Adds unit conversion to the navball speed indicator. No gameplay changes — purely changes how speed is displayed. Configure your preferred unit in the mod's settings. Mach is most useful for atmospheric flight; knots for maritime.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Particularly useful for aircraft builders — knowing you're at Mach 2.2 is more intuitive than 660 m/s.],
+)
+
+#mod-entry(
+  name: [KerbNote Lite],
+  ckan_id: "KerbNoteLite",
+  url: "https://github.com/linuxgurugamer/KerbNoteLite",
+  description: [Terrain warning system and in-flight notepad. Audible and visual terrain proximity warnings prevent CFIT (controlled flight into terrain) during landing and low-altitude flight. Also adds a persistent notepad for mission notes.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Adds terrain proximity alerts with configurable warning thresholds. The "pull up" warning triggers when your descent rate and terrain proximity indicate imminent impact. Notepad feature persists across scene changes for mission tracking.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Terrain warnings are most useful for night landings, IVA-only flights, and landing on bodies with poor visibility.],
+)
+
+#mod-entry(
+  name: [KerbVision IR],
+  ckan_id: "KerbVisionIR",
+  url: "https://github.com/linuxgurugamer/KerbVisionIR",
+  description: [Night vision and infrared camera overlay for dark-side missions. Toggleable IR view illuminates terrain and vessels in complete darkness — essential for landing on a planet's night side, docking in shadow, or navigating unlit terrain.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Adds a night-vision camera overlay accessible via toolbar. The IR view shows terrain and vessels in grayscale thermal-style rendering. No gameplay changes — purely a visual aid for low-light conditions.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Particularly useful for outer-planet missions (OPM, Jool) where solar illumination is extremely weak. Toggle on/off as needed — no permanent HUD change.],
+)
 
 #mod-entry(
   name: [The Janitor's Closet],

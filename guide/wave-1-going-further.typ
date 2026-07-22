@@ -32,6 +32,18 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
   version_pin: [Compatible with KSP 1.12.x.],
 )
 
+#mod-entry(
+  name: [AtmosphereAutopilot],
+  ckan_id: "AtmosphereAutopilot",
+  url: "https://github.com/BobPalmer/AtmosphereAutopilot",
+  description: [Fly-by-wire flight control system with automatic trim and advanced autopilot modes. Replaces KSP's basic SAS with proper control-surface coordination, auto-trim, and stability augmentation. Includes autopilot modes for altitude hold, heading hold, and auto-throttle — makes long-duration atmospheric flight hands-off.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI, Mechanics),
+  impact_description: [Improves atmospheric flight control with coordinated surface deflection and automatic trim. The autopilot modes handle altitude, heading, and speed — useful for circumnavigation flights and long-duration atmospheric surveys. Complements MechJeb (space autopilot) with atmospheric specialization.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Does not conflict with MechJeb — AA handles atmospheric flight, MJ handles spaceflight. Use both for complete autopilot coverage.],
+)
+
 // ═══ GRAPHICS OVERHAUL ═══
 
 #mod-entry(
@@ -193,7 +205,7 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
 #mod-entry(
   name: [Textures Unlimited Recolour Depot (TURD)],
   ckan_id: "TURD",
-  url: "https://forum.kerbalspaceprogram.com/topic/174188-112x-turd/",
+  url: "https://forum.kerbalspaceprogram.com/topic/174188-112x-textures-unlimited-recolour-depot/",
   description: [In-editor part recoloring using Textures Unlimited's PBR shaders. Select any supported part in the VAB/SPH and recolor it with preset palettes or custom colors — make your rockets any color you want while maintaining the PBR material quality. Works with stock parts and mod packs that ship TURD configs.],
   dependencies: ("TexturesUnlimited", "ModuleManager"),
   impact_types: (Graphics, UI),
@@ -203,15 +215,15 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
 )
 
 #mod-entry(
-  name: [EVA Visor],
-  ckan_id: "EVA-Visor",
-  url: "https://forum.kerbalspaceprogram.com/topic/198691-eva-visor/",
-  description: [Adds reflective visor effects to EVA kerbals. The helmet visor reflects the environment — stars, planets, and nearby vessels show up as reflections on the gold-tinted visor. A small but immersive detail that makes EVA photos significantly more cinematic.],
-  dependencies: ("TextureReplacerReplaced"),
+  name: [Simple Repaint],
+  ckan_id: "SimpleRepaint",
+  url: "https://github.com/Electrocutor/SimpleRepaint",
+  description: [Part re-shader for parts that lack TURD support. Provides basic color/reflectivity adjustments for mod parts that don't have full PBR texture configs — a lighter-weight alternative to TURD for quick visual customization. Complements TURD by covering parts TURD doesn't support.],
+  dependencies: ("TexturesUnlimited", "ModuleManager"),
   impact_types: (Graphics),
-  impact_description: [Adds environment-mapped visor reflections to kerbal EVA suits. Purely visual — no gameplay effect. Requires TextureReplacerReplaced for the visor texture replacement system.],
+  impact_description: [Adds basic shader-based repainting for parts without TURD configs. Uses TexturesUnlimited's PBR framework. Not a replacement for TURD — use both: TURD for parts with full configs, SimpleRepaint for everything else.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Niche cosmetic mod — purely for screenshots and immersion.],
+  version_pin: [Compatible with KSP 1.12.x. Requires TexturesUnlimited. Complements TURD — install both for maximum part customization coverage.],
 )
 
 #mod-entry(
@@ -300,6 +312,18 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
   version_pin: [Compatible with KSP 1.12.x. Requires Waterfall, WaterfallRestock, and ReStock. CKAN automatically resolves dependencies — just install and it works.],
 )
 
+#mod-entry(
+  name: [Rocket Sound Enhancement],
+  ckan_id: "RocketSoundEnhancement",
+  url: "https://github.com/ensou04/RocketSoundEnhancement",
+  description: [Replaces stock engine sounds with realistic, high-quality audio. Engine roar changes with throttle, distance, and atmospheric density. Includes sonic boom effects — when the camera pans ahead of a supersonic craft, sound cuts out (you're traveling faster than sound). Transforms the auditory experience of launches and atmospheric flight.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Replaces stock sound effects with layered, dynamic audio. Engine sounds respond to throttle position and camera distance. Includes realistic sonic-boom physics and atmospheric sound attenuation. Pure audio — no gameplay changes.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Complements Waterfall's visual plumes with matching audio quality. Default configs cover stock engines; additional configs available for mod engines.],
+)
+
 // ═══ TECH TREE ═══
 
 #mod-entry(
@@ -378,6 +402,86 @@ Many parts mods in Wave 1 use custom fuel types beyond stock LiquidFuel/Oxidizer
   impact_description: [Enables deploy/retract animations on supported engines. Pure framework — does nothing unless another mod provides animated engine parts. Required dependency for several Wave 1 parts packs.],
   conflicts: none,
   version_pin: [Compatible with KSP 1.12.x. Required by Rocket Motor Menagerie, Artemis Construction Kit, and CryoEngines.],
+)
+
+// ═══ NERTEA SUITE EXTENSIONS ═══
+
+#section-heading([Nertea Suite Extensions])
+
+#mod-entry(
+  name: [Heat Control],
+  ckan_id: "HeatControl",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Advanced radiator parts by Nertea: deployable radiators, graphene panels, and active cooling systems for managing extreme heat from nuclear reactors and engines. System Heat provides the thermal framework — Heat Control provides the radiator parts.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds high-temperature radiator parts. Essential for nuclear reactors (NF Electrical) and nuclear engines (Kerbal Atomics). System Heat recommended for advanced thermal simulation that uses these radiators.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. System Heat recommended. Both work together: System Heat = framework, Heat Control = parts.],
+)
+
+#mod-entry(
+  name: [System Heat],
+  ckan_id: "SystemHeat",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Advanced thermal simulation by Nertea. Replaces KSP's simplified core-heat with detailed heat flow, thermal mass, and warm-up/cool-down phases for nuclear reactors. Adds realistic thermal management — not just "add radiators" but manage heat distribution and temperature limits.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics),
+  impact_description: [Overhauls core-heat with detailed simulation. Nuclear reactors and ISRU converters have real thermal requirements — manage heat flow, temperature, and thermal inertia. Recommends Heat Control for compatible radiator parts designed for this system.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Recommends Heat Control. Skip System Heat if you prefer simpler thermal management (stock core-heat with Heat Control radiators).],
+)
+
+#mod-entry(
+  name: [Kerbal Atomics],
+  ckan_id: "KerbalAtomics",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Nuclear thermal rockets by Nertea. NERVA-style engines with LH2 propellant and 800–1,000s Isp. Includes open-cycle gas-core and closed-cycle nuclear engines — the bridge between chemical rockets and fusion drives. Uses CryoTanks for LH2 boil-off management.],
+  dependencies: ("CommunityResourcePack", "CryoTanks", "B9PartSwitch", "DeployableEngines", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds nuclear thermal engines consuming LH2 for high-efficiency deep-space propulsion. Requires cryogenic fuel management. Higher Isp than chemical engines at the cost of engine mass and radiation. Fits between NF Propulsion and FFT in the Nertea engine progression.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires CryoTanks and CRP. Pairs with NF Electrical for reactor power and Heat Control/System Heat for thermal management.],
+)
+
+#mod-entry(
+  name: [Space Dust],
+  ckan_id: "SpaceDust",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Exotic resource harvesting framework by Nertea. Places harvestable antimatter, fusion fuel, and exotic particles in specific orbital bands, planetary rings, and atmospheric layers. Required for FFT's advanced fuel chains — send dedicated harvester missions to collect resources rather than buying them at KSC.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics, Gameplay),
+  impact_description: [Defines harvestable exotic resource locations — specific orbits, rings, and atmospheres. Transforms FFT's fuel chain from KSC purchases to in-situ harvesting expeditions. Purpose-built harvester parts needed per resource type.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Required for full FFT gameplay. Without SpaceDust, exotic FFT fuels are KSC-only. With it, fuel acquisition becomes a mission objective itself.],
+)
+
+// ═══ HEAVY LIFT ═══
+
+#section-heading([Heavy Lift])
+
+#mod-entry(
+  name: [SpaceY Heavy Lifters],
+  ckan_id: "SpaceY-Lifters",
+  url: "https://spacedock.info/mod/88/SpaceY-Heavy-Lifters-SYL-by-NecroBones",
+  description: [5m and 7.5m rocket parts: enormous fuel tanks, high-thrust engines, large SRBs, and adapters. An alternative to NF Launch Vehicles for Saturn V-class and larger rockets. Larger diameters and heavier parts than NF Launch Vehicles.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds large-diameter rocket parts. SpaceY parts are larger and heavier than NF Launch Vehicles. Both coexist — use whichever fits your payload scale and preferred art style.],
+  conflicts: [NF Launch Vehicles provides similar 5m–7.5m parts with the Nertea/Restock aesthetic. Both can be installed together — SpaceY is bulkier; NF Launch Vehicles is sleeker.],
+  version_pin: [Compatible with KSP 1.12.x. SpaceY Expanded adds more large parts.],
+)
+
+#mod-entry(
+  name: [SpaceY Expanded],
+  ckan_id: "SpaceY-Expanded",
+  url: "https://spacedock.info/mod/90/SpaceY-Expanded",
+  description: [Expands SpaceY with more 5m–7.5m parts: additional engine variants, extra-large SRBs, interstage adapters, and structural components. Requires SpaceY Heavy Lifters.],
+  dependencies: ("SpaceY-Lifters", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds more large rocket parts. Requires SpaceY Heavy Lifters. Engine and structural variety for heavy-lift configurations.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires SpaceY Heavy Lifters.],
 )
 
 // ═══ PARTS PACKS ═══
@@ -905,7 +1009,7 @@ These mods are not available through CKAN. Install them manually by downloading 
 #mod-entry(
   name: [Promised Worlds],
   ckan_id: "PromisedWorlds",
-  url: "https://forum.kerbalspaceprogram.com/topic/228751-112x-v200-promised-worlds-a-faithful-recreation-of-ksp-2s-solar-systems-in-ksp-1/",
+  url: "https://github.com/PromisedWorlds/PromisedWorlds",
   description: [Faithful recreation of KSP 2's planned solar systems in KSP 1. Adds interstellar destinations including the DebDeb, Tuun, and other star systems that were promised for KSP 2. GitHub: PromisedWorlds/PromisedWorlds (208★).],
   dependencies: ("Kopernicus", "ModuleManager"),
   impact_types: (Parts, Mechanics, Gameplay),
@@ -984,6 +1088,42 @@ These mods are not available through CKAN. Install them manually by downloading 
   impact_description: [Adds a broad collection of rocket parts. Not on CKAN — manual install from forum thread or SpaceDock (id:2271). A heavier alternative to Sounding Rockets for expanding the early-to-mid game rocket catalog.],
   conflicts: none,
   version_pin: [Compatible with KSP 1.12.x. Manual install only. Sounding Rockets (CKAN) is the recommended early-game rocket mod for this modlist. CNAR adds more variety but requires manual installation.],
+)
+
+#mod-entry(
+  name: [KerbalFX],
+  ckan_id: "KerbalFX",
+  url: "https://spacedock.info/mod/4190/KerbalFX",
+  description: [Additional aerodynamic effects: improved contrails, wingtip vortices, condensation effects, and enhanced vapor cones. Very light on performance — adds visual polish to atmospheric flight without the GPU cost of heavy shader mods. Complements Firefly and VaporCones with more subtle atmospheric particle effects.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Adds aerodynamic particle effects during atmospheric flight. Lightweight — designed to run well even on modest GPUs. No gameplay impact.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Works alongside Firefly and VaporCones for a complete aero-effects suite.],
+)
+
+#mod-entry(
+  name: [Kerbin Side Remastered],
+  ckan_id: "KerbinSideRemastered",
+  url: "https://forum.kerbalspaceprogram.com/topic/174336-kerbin-side-remastered-101-173/",
+  description: [Adds dozens of detailed bases, airfields, and points of interest across Kerbin. Landing strips, helipads, radar installations, and even an underground hangar — makes Kerbin feel alive and worth exploring. Each location has unique features and serves as a destination for atmospheric flight missions.],
+  dependencies: ("KerbalKonstructs"),
+  impact_types: (Parts),
+  impact_description: [Adds static structures and launch sites via KerbalKonstructs. No flight mechanics changes — purely adds locations to visit. Expands the scope of atmospheric flight from "go up and come down" to actual cross-Kerbin navigation between points of interest.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Requires KerbalKonstructs (available via CKAN suggests).],
+)
+
+#mod-entry(
+  name: [Throttle Controlled Avionics],
+  ckan_id: "ThrottleControlledAvionics",
+  url: "https://forum.kerbalspaceprogram.com/topic/97154-19-110-throttle-controlled-avionics/",
+  description: [VTOL flight computer. Automatically balances thrust across multiple engines to maintain stable hover and controlled translation — essential for VTOL craft, tilt-engine designs, and precision landers. Transforms VTOL from a white-knuckle balancing act to a flyable, practical vehicle class.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI, Mechanics),
+  impact_description: [Adds thrust-balancing and VTOL control algorithms. Manages differential throttle across engine groups to maintain attitude during hover and translation. No new parts — works with any engine configuration. Complements AtmosphereAutopilot and MechJeb with VTOL-specific control.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Essential for practical VTOL operations. Configure engine groups in the VAB for TCA to manage.],
 )
 
 // ═══════════════════════════════════════════════════════════════════
