@@ -22,8 +22,6 @@
         { "name": "SystemHeat" },
         { "name": "KerbalAtomics" },
         { "name": "SpaceDust" },
-        { "name": "SpaceY-Lifters" },
-        { "name": "SpaceY-Expanded" },
         { "name": "AnimatedDecouplers" },
         { "name": "SimpleAdjustableFairings" },
         { "name": "Benjee10-SharedAssets" },
@@ -33,7 +31,6 @@
         { "name": "Deferred" },
         { "name": "ParallaxContinued" },
         { "name": "Parallax-StockTextures" },
-        { "name": "PlanetShine" },
         { "name": "VaporCones" },
         { "name": "Firefly" },
         { "name": "TextureReplacerReplaced" },
@@ -70,7 +67,6 @@
         { "name": "EisenhowerAstronautics" },
         { "name": "TundraExploration" },
         { "name": "TundraTechnologies" },
-        { "name": "ShuttleOrbiterConstructionKit" },
         { "name": "ArtemisConstructionKit" },
         { "name": "RocketMotorMenagerie" },
         { "name": "BoringCrewServices" },
@@ -89,7 +85,6 @@
         { "name": "QuackPack" }
     ],
     "suggests": [
-        { "name": "OrbitalSurveyPlus" },
         { "name": "ProceduralParts" },
         { "name": "ProceduralFairings" },
         { "name": "NeptuneCamera" },
