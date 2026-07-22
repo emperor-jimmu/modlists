@@ -9,19 +9,34 @@
 #show: apply
 
 #let version = read("../VERSION").trim()
+#let logo-path = "../assets/driftwood-logo.png"
 
+// ---- Cover Page ----
+#set page(numbering: none)
 #align(center + horizon, [
-  #block(height: 4cm)
-  #text(size: 36pt, weight: "bold", fill: navy)[Getting Started]
-  #block(height: 0.7cm)
-  #text(size: 18pt, fill: gray)[Minecraft 1.21.1 — NeoForge]
-  #block(height: 1.0cm)
-  #line(length: 50%)
-  #text(size: 14pt, fill: luma(140))[Setup guide and tutorials]
-  #block(height: 2cm)
+  #block(height: 1.5cm)
+  #image(logo-path, width: 60%)
+  #block(height: 1cm)
+  #text(size: 36pt, weight: "bold", fill: rgb("#604020"))[Driftwood]
+  #block(height: 0.5cm)
+  #text(size: 18pt, fill: rgb("#5B7B8A"))[Setup & Mod Guide]
+  #block(height: 0.8cm)
+  #line(length: 40%, stroke: 0.5pt + luma(180))
+  #block(height: 0.4cm)
+  #text(size: 13pt, fill: luma(120))[Minecraft 1.21.1 -- NeoForge]
+  #block(height: 1.5cm)
   #text(size: 11pt, fill: luma(160))[Version #version]
 ])
 
+// ---- Table of Contents ----
+#set page(numbering: "i")
 #pagebreak()
+#outline(
+  indent: 1.2em,
+  fill: line(length: 100%, stroke: 0.5pt + luma(200)),
+)
 
-#cmarker.render(read("../GETTING-STARTED.md"), h1-level: 0, set-document-title: false)
+// ---- Body ----
+#set page(numbering: "1", number-align: center)
+#pagebreak()
+#cmarker.render(read("../GUIDE.md"), h1-level: 0, set-document-title: false)
