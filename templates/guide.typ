@@ -31,10 +31,8 @@
 // ---- Table of Contents ----
 #set page(numbering: "i")
 #pagebreak()
-#outline(
-  indent: 1.2em,
-  fill: line(length: 100%, stroke: 0.5pt + luma(200)),
-)
+#set outline.entry(fill: line(length: 100%, stroke: 0.5pt + luma(200)))
+#outline(indent: 1.2em)
 
 // ---- Body ----
 #set page(numbering: "1", number-align: center)

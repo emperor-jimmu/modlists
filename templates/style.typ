@@ -57,9 +57,6 @@
     it
   }
 
-  // Horizontal rules between rows
-  show table.hline: set stroke(0.5pt + rgb("#C8B8A0"))
-
   // Blockquotes -> callout boxes (cream bg, gold left border)
   show quote: it => {
     block(
