@@ -45,6 +45,28 @@
   notes: none,
 )
 
+#mod-entry(
+  name: "Leviathan Retrofits",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2445",
+  game: "LE3",
+  version: "v1.0.1",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework", "Reaper Retrofits"),
+  impact: [Overhauls the Leviathan DLC by replacing Reaper enemies with a blended force of Collectors and Reapers, using lore from Mass Effect 3 Multiplayer to explain the Collectors' return. Collector Troopers and Captains are renamed to Collector Drones and Guardians to match ME2 naming. Adds a new codex entry explaining how Collectors survived from dark space on low-velocity spacecraft.],
+  notes: [Compatible with EGM and LE3 Diversification Project. Requires Reaper Retrofits (mod #833) for the Wretched enemy type that appears in some encounters.],
+)
+
+#mod-entry(
+  name: "Priority Earth Overhaul Mod (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2548",
+  game: "LE3",
+  version: "v4.2",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Massive and meticulously crafted overhaul of Mass Effect 3's finale, answering "What would the Finale be like had Bioware the time and resources it needed?". Features a Suicide Mission-style War Asset assignment system for Hades Cannons, restored cutscenes (Garrus' Platoon, Hammer Rollout), new temporary allies (Krogan/Salarian/Geth/Kirrahe/Grunt), base defense mechanics with fail conditions, completely reworked visuals (250+ changes), restored voice lines, modernized streaming, and dozens of bug fixes for both vanilla and the mod itself.],
+  notes: [Studio-level quality, suitable for first-time playthroughs. Compatible with Miranda Mod, Character Consistency Project, and Kaidan Gay Romance Restored. Pairs with Integrated Collector Faction (mod #2994) for Collector enemies during Priority: Earth. Requires LE3 Community Patch.],
+)
+
 == UI and Quality of Life
 
 #mod-entry(
@@ -137,6 +159,50 @@
   deps: ("Expanded Galaxy Mod (LE) -- Normandy Module", "LE3 Community Patch and Framework"),
   impact: [Puts Miranda back on the Normandy post-Horizon as a full crew member. Features fully voiced conversations including a romance scene, cabin invites, optional squadmate role on Cerberus HQ, Citadel DLC, Leviathan DLC, and Priority: Earth missions, plus a team assignment mini-game. Includes AI-created voice lines for Citadel, Leviathan, and Earth content.],
   notes: [Optional: EGM Squadmate Pack (for full squadmate functionality) and EGM Galactic War Module (for team assignments). English only due to extensive dialogue.],
+)
+
+#mod-entry(
+  name: "N7 - A Spectre's Gift",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1956",
+  game: "LE3",
+  version: "v1.0.4",
+  last-checked: "2026-07",
+  deps: ("Expanded Galaxy Mod (LE) -- Normandy Module",),
+  impact: [Discover the legacy of the Andromeda Initiative. Adds a fully voiced solo N7 mission aboard a blasted shipwreck, a new Halberd assault rifle, a detailed Ark model for the Normandy cabin, and a cybernetic implant system. Begins after Priority: Palaven by reading a mail from Spectre Rix. Features discoveries and lore around the Andromeda Initiative.],
+  notes: [Requires EGM Normandy Module. English only. Incompatible with The Collectors Cabin and Poly Romance Mod. EGM Armors addon can be discovered immersively during the mission.],
+)
+
+#mod-entry(
+  name: "Pinnacle Station Apartment (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1588",
+  game: "LE3",
+  version: "v1.3",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Restores the apartment from Pinnacle Station as a usable player apartment in Mass Effect 3. Features a Spectre Terminal, Normandy email, Alliance Requisitions, weapon bench, armor locker, war asset terminal, power respec, intel terminal, and Shadow Broker terminal. Can spend time with your love interest (with compatibility for Miranda Mod, Thane Lives, and Kelly Returns).],
+  notes: [Compatible with EGM v0.85+, Spectre Expansion Mod v0.9.6.6+, and Project Variety v0.5.8+. Requires LE3 Community Patch.],
+)
+
+#mod-entry(
+  name: "Omega Hub",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1597",
+  game: "LE3",
+  version: "v1.1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Ports Omega from Mass Effect 2 into Mass Effect 3 as a new explorable hub area, fulfilling BioWare's original vision for the station. Visit Nyreen's memorial, the Cerberus prison, Upper Afterlife bar (with bartender interactions), Lower Afterlife dance floor, Aria in her throne room, Harrot's store, and Batarian State Arms. Features new ambient dialogue, returning ME2 characters (Patriarch, Ish, Sel, Bouncer), and framework for other modders to build upon.],
+  notes: [Currently requires EGM or Spectre Expansion Mod for galaxy map access to the hub. Built as a foundation for the modding community. Compatible with LE3 Diversification Project and Spectre Expansion Mod. May contain minor visual bugs as it's a port from LE2 to LE3.],
+)
+
+#mod-entry(
+  name: "Orikon's Optional Content Restorations (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/3046",
+  game: "LE3",
+  version: "v1.3",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Growing collection of independently selectable content restorations across Mass Effect 3. Includes: restored Collector Assault Rifle weapon, restored cinematic gondola jump on Mars, restored voice lines throughout Vancouver and Mars, restored camera angles at Presidium Commons, restored Tarquin Victus dialogue during Tuchanka: Turian Platoon, restored Kenneth/Gabriella recruitment scene at Purgatory, restored investigate option with Udina about Cerberus, and restored Despoina music. All content is standalone and optional during install.],
+  notes: [Choose which restorations to install. Regularly updated with new content. Compatible with most mods as each restoration is independent.],
 )
 
 == Characters and Appearance
