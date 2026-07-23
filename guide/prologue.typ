@@ -72,5 +72,5 @@ Install one wave at a time. Play it until the experiences it offers feel familia
 #align(center)[
   #text(font: body-font, size: 10pt, fill: mun-gray, style: "italic")[The guide assumes patience. The guide assumes curiosity. The guide assumes you want to go further than anyone has gone before.]
   #v(0.2em)
-  [Let's begin.]
+  Let's begin.
 ]
