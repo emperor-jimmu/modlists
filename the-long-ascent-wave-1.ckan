@@ -13,6 +13,7 @@
     "recommends": [
         { "name": "MechJeb2" },
         { "name": "AtmosphereAutopilot" },
+        { "name": "Scatterer" },
         { "name": "CommunityTechTree" },
         { "name": "CommunityResourcePack" },
         { "name": "B9PartSwitch" },
@@ -36,10 +37,13 @@
         { "name": "Firefly" },
         { "name": "TextureReplacerReplaced" },
         { "name": "TUFX" },
+        { "name": "EnvironmentalVisualEnhancements" },
+        { "name": "BlackrackVolumetricClouds" },
         { "name": "Shabby" },
-        { "name": "Shaddy" },
+        { "name": "PoodsMilkyWaySkybox" },
         { "name": "DistantObject" },
         { "name": "TexturesUnlimited" },
+        { "name": "TURD" },
         { "name": "SimpleRepaint" },
         { "name": "ReStock" },
         { "name": "ReStockPlus" },
@@ -83,7 +87,13 @@
         { "name": "Parallax-OuterPlanetsMod" },
         { "name": "KcalbelohSystem" },
         { "name": "MinorPlanetsExpansion" },
-        { "name": "QuackPack" }
+        { "name": "QuackPack" },
+        { "name": "GrannusExpansionPack" },
+        { "name": "OPTSpaceplaneContinued" },
+        { "name": "CNAR" },
+        { "name": "KerbalFX" },
+        { "name": "KerbinSideRemastered" },
+        { "name": "ThrottleControlledAvionics" }
     ],
     "suggests": [
         { "name": "ProceduralParts" },

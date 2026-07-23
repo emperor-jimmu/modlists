@@ -14,9 +14,10 @@
         { "name": "PlanetsideExplorationTechnologies" },
         { "name": "Pathfinder" },
         { "name": "Buffalo2" },
-        { "name": "ExtraplanetaryLaunchpads" },
+        { "name": "ExtraPlanetaryLaunchpads" },
         { "name": "SimpleConstruction" },
         { "name": "FarFutureTechnologies" },
+        { "name": "SterlingSystems" },
         { "name": "Blueshift" },
         { "name": "CommunityNavballDockingIndicator" }
     ],

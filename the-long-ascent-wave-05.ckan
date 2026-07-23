@@ -18,6 +18,7 @@
         { "name": "KerbalAlarmClock" },
         { "name": "WaypointManager" },
         { "name": "TrackingStationEvolved" },
+        { "name": "CapCom" },
         { "name": "ContractConfigurator" },
         { "name": "ConformalDecals" },
         { "name": "BuoyancyAdjuster" },
@@ -29,6 +30,7 @@
         { "name": "VABOrganizer" },
         { "name": "EditorExtensionsRedux" },
         { "name": "HangerExtenderExtended" },
+        { "name": "WaterLaunchSites" },
         { "name": "HideEmptyTechNodes" },
         { "name": "IndicatorLights" },
         { "name": "IndicatorLightsCommunityExtensions" }
