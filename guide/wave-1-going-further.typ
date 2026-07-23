@@ -1158,24 +1158,7 @@ In-Situ Resource Utilization converts raw ore into usable fuel. The components:
   ISRU equipment is godlessly heavy. A full mining rig can weigh 20+ tons. Test the full chain on Minmus first — its low gravity makes landing and returning with heavy payloads far easier than the Mun. Minmus also has high ore concentrations in its flats.
 ]]
 
-#section-heading([Space Stations])
 
-#section-heading([Why Build a Station?])
-
-- *Refueling depot* — dock tankers, mine on Minmus, ferry fuel to orbit
-- *Science lab* — the Mobile Processing Lab multiplies science value over time
-- *Crew rotation hub* — swap kerbals between missions without landing
-- *Relay hub* — high-orbit station with powerful relay antennas extends comms coverage
-
-#section-heading([Station Assembly])
-
-1. Launch the core (lab, docking hub, power, probe core)
-2. Dock additional modules (fuel tanks, habitation, antennas, extra docking ports)
-3. Keep part count reasonable — too many parts and the physics engine crawls. Aim for under 200 parts per station.
-
-#tip[[
-  Always include a probe core on every station module. If you undock the wrong port and lose control of a drifting section, a probe core lets you recover it. Also: reaction wheels. Stations in KSP get wobbly without them.
-]]
 
 #section-heading([SSTO Spaceplanes])
 
