@@ -104,6 +104,9 @@
             "name": "HangerExtenderExtended"
         },
         {
+            "name": "KerbalKonstructs"
+        },
+        {
             "name": "WaterLaunchSites"
         },
         {
@@ -374,9 +377,6 @@
         },
         {
             "name": "NeptuneCamera"
-        },
-        {
-            "name": "KerbalKonstructs"
         },
         {
             "name": "DockRotate"

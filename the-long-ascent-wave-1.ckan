@@ -99,7 +99,6 @@
         { "name": "ProceduralParts" },
         { "name": "ProceduralFairings" },
         { "name": "NeptuneCamera" },
-        { "name": "KerbalKonstructs" },
         { "name": "DockRotate" },
         { "name": "WildBlueTools" }
     ],

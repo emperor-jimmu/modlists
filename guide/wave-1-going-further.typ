@@ -999,7 +999,19 @@ These mods are not available through CKAN. Install them manually by downloading 
   impact_types: (Parts),
   impact_description: [Adds static structures and launch sites via KerbalKonstructs. No flight mechanics changes — purely adds locations to visit. Expands the scope of atmospheric flight from "go up and come down" to actual cross-Kerbin navigation between points of interest.],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Requires KerbalKonstructs (available via CKAN suggests).],
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Requires KerbalKonstructs (included in Wave 0.5).],
+)
+
+#mod-entry(
+  name: [Tundra's Space Center],
+  ckan_id: "TundraSpaceCenter",
+  url: "https://forum.kerbalspaceprogram.com/topic/174368-18-112-tundras-space-center-v20-december-18th-stockalike-ksc-launchpads/",
+  description: [Adds stockalike additional launch pads, runways, helipads, and support structures to the Kerbal Space Center. Expands the KSC with alternative launch sites at the space center itself — VTOL pads, auxiliary runways, and satellite launch complexes integrated into the existing KSC layout.],
+  dependencies: ("KerbalKonstructs"),
+  impact_types: (Parts, Graphics),
+  impact_description: [Adds static structures and alternate launch sites at KSC via KerbalKonstructs. No flight mechanics changes — the structures are visual and functional launch locations. Complements Kerbin Side Remastered (which adds sites across Kerbin) by improving the KSC itself.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Requires KerbalKonstructs (included in Wave 0.5). Complements Kerbin Side Remastered.],
 )
 
 #mod-entry(

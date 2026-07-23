@@ -30,6 +30,7 @@
         { "name": "VABOrganizer" },
         { "name": "EditorExtensionsRedux" },
         { "name": "HangerExtenderExtended" },
+        { "name": "KerbalKonstructs" },
         { "name": "WaterLaunchSites" },
         { "name": "HideEmptyTechNodes" },
         { "name": "IndicatorLights" },

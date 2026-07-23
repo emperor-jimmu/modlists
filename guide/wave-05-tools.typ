@@ -267,6 +267,22 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
   version_pin: [Compatible with KSP 1.12.x. Particularly useful in Wave 1 when building large historical launchers and space stations.],
 )
 
+// ═══ KSC & LAUNCH SITES ═══
+
+#section-heading([KSC & Launch Sites])
+
+#mod-entry(
+  name: [Kerbal Konstructs],
+  ckan_id: "KerbalKonstructs",
+  url: "https://forum.kerbalspaceprogram.com/topic/204210-ksp-18-kerbal-konstructs-continued/",
+  description: [Framework for adding new static buildings, structures, and launch sites to KSP. Required by Water Launch Sites, Tundra's Space Center, and Kerbin Side Remastered for placing additional locations on planetary surfaces.],
+  dependencies: (),
+  impact_types: (UI),
+  impact_description: [Provides the framework that other mods use to place static structures and alternate launch sites. No visible effect on its own — install alongside site-adding mods to see new locations.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Required by Water Launch Sites (this wave) and several Wave 1 mods.],
+)
+
 #mod-entry(
   name: [Water Launch Sites],
   ckan_id: "WaterLaunchSites",
@@ -274,9 +290,9 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
   description: [Adds water-based launch sites to Kerbin. Launch seaplanes, boats, and amphibious craft directly from the ocean. Adds several water launch locations around Kerbin for varied maritime and seaplane operations.],
   dependencies: ("KerbalKonstructs"),
   impact_types: (UI),
-  impact_description: [Adds water launch sites via KerbalKonstructs. Purely additional launch location options for seaplane and maritime missions. Requires KerbalKonstructs.],
+  impact_description: [Adds water launch sites via KerbalKonstructs. Purely additional launch location options for seaplane and maritime missions. Requires KerbalKonstructs (included in this wave).],
   conflicts: none,
-  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Requires KerbalKonstructs (available via CKAN suggests in Wave 1).],
+  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Requires KerbalKonstructs.],
 )
 
 // ═══ TECH TREE ═══
