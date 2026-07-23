@@ -1041,45 +1041,94 @@ MechJeb is an autopilot with a learning curve. Every feature is accessed through
   MechJeb's data readouts are similar to KER's. If you prefer MechJeb's autopilot but KER's cleaner HUD, you can use both — open MechJeb for automation, KER for the flight HUD.
 ]]
 
+#section-heading([AtmosphereAutopilot])
+
+AtmosphereAutopilot (AA) is a fly-by-wire system for atmospheric flight. It's more sophisticated than SAS for aircraft.
+
+- *Auto-trim:* Automatically adjusts control surfaces so your plane flies straight hands-off. Toggle on before long cruise flights.
+- *Altitude hold:* Maintains current altitude using pitch control. Good for survey contracts at constant altitude.
+- *Heading hold:* Maintains current heading. Combines with altitude hold for hands-off cruise.
+- *Auto-throttle:* Holds a target speed. Use for efficient subsonic cruise or supersonic dashes.
+- *Fly-by-wire modes:* The "Moderation" mode smooths your inputs, preventing over-correction. "Director" mode flies toward your cursor position. Toggle between them in AA's settings.
+
+#tip[[
+  AA handles atmosphere — MechJeb handles space. Use both. AA's altitude/heading hold for the atmospheric climb, then hand off to MJ's ascent autopilot at ~30 km. They don't conflict.
+]]
+
+#section-heading([Kerbal Atomics + System Heat])
+
+Nuclear engines and reactors produce heat. System Heat is the thermal management framework — every reactor and NERV variant in Kerbal Atomics uses it.
+
+#section-heading([Reactor Basics])
+
+1. *Startup:* Right-click the reactor, click "Activate." It takes time to reach operating temperature — nuclear engines produce zero thrust while warming up (30–120 seconds depending on reactor size).
+2. *Shutdown:* Right-click, "Deactivate." The reactor cools passively but stays hot for hours. You cannot time-warp through cooldown.
+3. *Waste heat:* Heat is stored in the reactor and radiators. If the "Waste Heat" bar fills completely, the reactor emergency-scrambles and you lose all power/thrust.
+
+#section-heading([Radiator Rules])
+
+- Radiators must be deployed (extendable panels) OR active (fixed panels that glow when cooling)
+- One medium radiator per small reactor; 4–8 large radiators per fusion reactor
+- Radiators cool everything on the same vessel — you don't need to pair them
+- Place radiators symmetrically and away from other hot parts
+
+#tip[[
+  The System Heat toolbar button shows a live thermal overlay. Green = nominal, yellow = warming, red = approaching shutdown. If everything is red, deploy more radiators or reduce power.
+]]
+
 #section-heading([Using the Graphics Mods])
 
-*First launch after installing visuals:*
-Load a sandbox save and launch a simple rocket to orbit. This lets you assess performance before committing to a career save. If you're getting less than 30 FPS during launch, start disabling features:
+Wave 1 adds a full visual overhaul stack. Here's how to configure each layer:
 
-- TUFX: Open the TUFX toolbar menu (in flight) and try a lighter profile. "Default-Low" disables ambient occlusion, which is the biggest GPU hog. Fox's Experimental profile is beautiful but heavy — save it for screenshots.
-- Parallax: If ground scatter kills your framerate, reduce the scatter density in the Parallax settings (accessible from the Space Center scene).
-- Deferred: If the deferred renderer causes visual glitches or extreme slowdown, you can disable it in its config file. Deferred handles planet reflections natively, so no separate planet-lighting mod is needed.
-
-*Mod conflicts to watch:*
-
-- If your sky is pure black after installing AVP, Scatterer or EVE didn't load correctly. Reinstall both from CKAN.
-- If engine plumes are missing or look broken, Waterfall and its configs may need a reinstall. WaterfallRestock provides plume configs for Restock engines specifically.
-
-#warning[[
-  AVP's high-resolution textures demand 6–8 GB of VRAM. If your GPU has less, install the medium or low-res texture option during the AVP install process, or expect significant stuttering during atmospheric flight.
-]]
+- *Scatterer:* Atmospheric scattering, ocean shaders, sunflare. Toggle in flight via the Scatterer toolbar menu. Adjust ocean quality if you see FPS drops during launch.
+- *EVE + AVP:* Cloud layers and skybox. Installed automatically. No manual config needed unless you want to tweak cloud density.
+- *Deferred:* Changes the entire render pipeline. Toggle via config file in GameData/Deferred/. If you see visual glitches, disable it — the game falls back to stock rendering. Deferred handles planet reflections, so no separate planet-lighting mod is needed.
+- *TUFX + Shabby/Shaddy:* Post-processing (bloom, ambient occlusion, color grading). Switch profiles from the TUFX toolbar menu in flight. Shabby and Shaddy add extra profile presets beyond the built-in defaults. Try Shabby first for a cinematic look.
+- *Parallax:* Terrain tessellation. In Parallax settings (toolbar button), reduce scatter density if you see terrain pop-in or FPS drops near the surface. High-quality setting requires a DX11-capable GPU.
+- *Waterfall + Restock Waterfall Expansion:* Engine plumes. Automatic — no config needed. The plumes respond to atmospheric pressure (expand in vacuum, contract in atmosphere). Purely visual.
+- *Rocket Sound Enhancement:* Audio overhaul. Sonic boom effects, distance-based attenuation. Configurable in settings — disable sonic booms if they startle you during timewarp transitions.
+- *Distant Object Enhancement:* Renders distant planets and vessels as points of light. The toolbar menu lets you toggle vessel flares and adjust sky-dimming intensity.
+- *Textures Unlimited + TURD + Simple Repaint:* PBR shading framework and part recoloring. TURD adds a repaint GUI in the VAB/SPH — right-click any supported part to change its color. Simple Repaint covers parts without TURD configs. Both are visual only.
 
 #section-heading([New Parts Overview])
 
-*ReStock and ReStock+:* Your stock parts now look dramatically better, but they function identically. Restock+ adds new stock-alike parts that fill gaps — a 2.5m reaction wheel, 0.625m RCS tanks, missing adapter pieces. These appear in the same tech tree nodes you'd expect them to, so you won't see them all at once in Sandbox.
+Wave 1 adds a lot of parts. Here's how they're organized:
 
-*Near Future Technologies (8 packs):* These parts unlock in mid-to-late tech tree nodes and are designed for interplanetary and deep-space missions:
+- *Restock + Restock+:* Revamped stock parts (visual) + new stock-alike parts (functional). Your rockets look better and you get missing part sizes like 0.625m RCS tanks and 2.5m reaction wheels.
+- *Near Future suite (7 packs):* The core parts expansion. Solar panels (blanket arrays for outer system), electrical (reactors + capacitors), propulsion (advanced engines), construction (trusses + structural), spacecraft (command pods), launch vehicles (5m–7.5m lifters), and aeronautics (spaceplane parts). NF Launch Vehicles covers the heavy-lift niche; NF Electrical's reactors power the entire tech tree.
+- *Historical:* Bluedog Design Bureau (US rockets from Mercury to Apollo) and Tantares (Soviet spacecraft + launchers). Both are comprehensive — each adds 100+ parts. Pick one or install both for the full Cold War experience.
+- *Modern:* Artemis Construction Kit (SLS + Orion), Eisenhower Astronautics (modern launchers), Tundra Exploration (SpaceX-inspired). Each covers a different modern program.
+- *Station parts:* Stockalike Station Parts Expansion Redux, HabTech2, Planetside Exploration Technologies. Everything you need for orbital construction — inflatable habitats, centrifuges, trusses, docking adapters.
+- *Planes:* Airplane Plus, Mk2/Mk3/MkIV expansion packs, Mk-33, OPT Spaceplane. If it flies in atmosphere, it has expanded parts here.
+- *Planet packs:* Outer Planets Mod (Saturn–Pluto analogs), Minor Planets Expansion (dwarf planets between them), QuackPack (inner system), Kcalbeloh (black hole system), Grannus (binary red dwarf). Each adds new destinations with full biome and science support. You can install all five if your system handles it.
 
-- *NF Solar* (Electrics node): Curved and blanket solar arrays scale from probe-sized to station-scale. Use for inner-planet missions (Kerbin, Eve, Duna).
-- *NF Electrical* (Specialized Electrics + Experimental Electrics): Nuclear reactors consume EnrichedUranium and produce constant power regardless of distance from the sun. Essential for Jool+ missions where solar panels produce negligible power. Watch reactor core temperature — let it overheat and you'll have a very bad day.
-- *NF Propulsion* (Advanced Propulsion + Experimental Propulsion): Electric engines with extremely high Isp (2,000–10,000 s) but very low thrust. VASIMR thrusters, ion engines, and pulsed inductive thrusters. They consume massive amounts of ElectricCharge plus Xenon, Argon, or Lithium propellant. You *must* pair these with NF Electrical reactors — solar panels won't cut it.
-- *NF Construction* (Advanced Construction): Octo-girders, hexagonal trusses, and modular connectors for building large orbital structures. Use these to keep part counts manageable on space stations and interplanetary motherships.
-- *NF Spacecraft* (Advanced Command Modules): Multi-kerbal pods and deep-space habitation modules with integrated RCS, experiments, and storage. Designed for long-duration crewed missions beyond Kerbin's SOI.
-- *NF Launch Vehicles* (Heavy Rocketry + Very Heavy Rocketry): 5m and 7.5m tanks and engines for Saturn V-class rockets. These are big, heavy, and expensive in career mode — use them when you need to launch a fully assembled interplanetary ship in one go.
-- *NF Aeronautics* (High Altitude Flight + Hypersonic Flight): Nuclear jets that run on IntakeAtm (they heat atmospheric gas, no oxygen needed). This means powered flight on Duna and Eve. Requires a nuclear reactor from this pack or NF Electrical to run.
+#section-heading([The Fuel System])
 
-*Mk2 Expansion:* New Mk2 fuselage parts appear in the same tech nodes as stock Mk2 parts. The inline docking port and cargo ramp are particularly useful for SSTO spaceplanes.
+Wave 1 introduces custom fuel types beyond stock LiquidFuel/Oxidizer. Three mods power this ecosystem.
 
-*SCANsat:* Radar (RADAR), Synthetic Aperture Radar (SAR), Multispectral, and Biome scanners unlock at various tech nodes. You launch them on polar-orbit satellites (roughly 80°–90° inclination to cover the entire surface over time). The SCANsat map window (toolbar button in any scene) shows biome, altimetry, and resource maps for every scanned body. Useful for finding flat landing zones and high-ore areas before sending ISRU equipment.
+#section-heading([Community Resource Pack (CRP)])
 
-*Hullcam VDS:* Camera parts unlock across multiple tech nodes. Attach them to your craft, right-click to activate the feed. Use docking cameras for precision docking, rover cameras for driving in IVA, and telescope lenses for cinematics.
+CRP defines the resources: Hydrogen, Methane, Kerosene, Hydrazine, and dozens more. You never interact with CRP directly — it's a library that other mods reference. But without it, custom fuels don't exist.
 
-*FreeIva:* Once installed, enter IVA view (C key) and click on hatches or connected modules to move between them. Kerbals can float through docking ports, crew tubes, and habitable modules. Not all mod IVAs have passable colliders, but stock and major mod parts (Restock, Near Future) should work.
+#section-heading([B9 Part Switch])
+
+B9PartSwitch is the part you actually use. In the VAB, right-click any compatible fuel tank. A dropdown lets you switch what it holds: LFO (stock), LH2/Oxidizer (cryogenic), Methane/Ox, or Monopropellant. The tank model doesn't change — only its contents.
+
+#tip[[
+  LH2 is the most efficient fuel (highest Isp) but the least dense. A tank full of LH2 weighs less than the same tank full of LFO — but it takes up more volume. LH2 stages are physically larger for the same delta-v.
+]]
+
+#section-heading([Cryogenic Tanks — Boil-Off Management])
+
+LH2 and Methane are cryogenic — they slowly evaporate in storage. This is "boil-off."
+
+- *Standard tanks:* Fuel evaporates over time. Acceptable for short missions (Mun, Minmus). Unacceptable for interplanetary.
+- *Insulated tanks:* CryoTanks adds insulated variants that reduce boil-off by ~90%. Use these for Duna and beyond.
+- *Active cooling:* Some parts (cryo-coolers) consume ElectricCharge to eliminate boil-off entirely. Necessary for Jool missions lasting years.
+
+#info[[
+  Boil-off only matters on long time-scales. A Mun mission takes days — you'll never notice. A Grannus transit takes decades — uninsulated LH2 will be gone before you leave Kerbin's SOI.
+]]
 
 #section-heading([Planet Packs: OPM and Kcalbeloh])
 
@@ -1498,3 +1547,17 @@ The Advanced Grabbing Unit (the "Klaw") attaches to asteroids as if docking. Onc
 - Time warp with care — the Klaw can phase through the asteroid at high warp
 - Bring extra reaction wheels — an E-class asteroid can weigh thousands of tons
 - Target a Kerbin periapsis of ~35 km for aerocapture with a heat shield
+
+#pagebreak()
+#chapter-heading([Player Challenges — Wave 1])
+
+Interplanetary missions that test your design and piloting skills.
+
+- *Duna Independent:* Duna round-trip with no ISRU. Bring all fuel from Kerbin. Design a ship with 6,500+ m/s from LKO.
+- *Duna Double:* Land on Duna AND Ike in the same mission. Requires lander capable of two separate descents or an SSTO lander.
+- *Eve Rocks:* Land on Eve, plant a flag, and return the kerbal safely to Kerbin. The hardest stock challenge. Gilly ISRU is fair game.
+- *Mohole Diver:* Land on Moho and return. Requires ~8,000+ m/s from LKO. Use a nuclear transfer stage.
+- *Jool-5:* Land on all 5 Jool moons (Laythe, Vall, Tylo, Bop, Pol) in one mission. Tylo is the barrier — design the mission around it.
+- *Minmus Fuel Empire:* Build a fully automated Minmus mining base with miner, tanker, and orbital depot. Bonus: refuel an interplanetary ship from the depot.
+- *Laythe SSTO:* Build an SSTO spaceplane that reaches Kerbin orbit, transfers to Laythe, lands, and returns — all without refueling or staging.
+- *System Relay:* Deploy CommNet relay satellites to every planet and moon in the Kerbol system. Bonus: full coverage with zero dead zones.
