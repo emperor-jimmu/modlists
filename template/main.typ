@@ -82,11 +82,6 @@ The Long Ascent is not just a journey upward. It's a journey outward. Into the d
 Take your time. There's no hurry. The stars will wait.
 
 #v(1cm)
-#set align(center)
-#set text(font: body-font, size: 10pt, fill: ksp-teal, style: "italic")
-["Do not go gentle into that good night."]
-#v(0.2em)
-[— Dylan Thomas]
 
 // ─── Before You Begin ─────────────────────────────────────────────
 
@@ -126,9 +121,11 @@ Install one wave at a time. Play it until the experiences it offers feel familia
 #v(1cm)
 #set align(center)
 #set text(font: body-font, size: 10pt, fill: mun-gray, style: "italic")
-[The guide assumes patience. The guide assumes curiosity. The guide assumes you want to go further than anyone has gone before.]
+The guide assumes patience. The guide assumes curiosity. The guide assumes you want to go further than anyone has gone before.
+
 #v(0.2em)
-[Let's begin.]
+
+Let's begin.
 
 // ─── Table of Contents ───────────────────────────────────────────
 
