@@ -60,6 +60,18 @@ Wave 1 expands the mod list to include *Graphics*, *Light mechanic*, and *Conten
   [Complements Realistic Morale System. No gameplay conflicts — audio only.],
 )
 
+// ---- BloodMod ----
+#mod-entry(
+  "BloodMod — More Blood and Gore",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/1591",
+  "Graphics",
+  [None — standalone],
+  [Increases blood splatter and gore effects across all battlefields. Adds decals, blood pooling, and more visceral combat visuals without changing any game mechanics. Purely visual — no damage or combat changes.],
+  [No configuration needed. Active automatically.],
+  [Graphics section. Loads independently — pure asset replacement.],
+  [Purely visual. No conflicts with any mod. Complements Perfect Fire Arrows and Immersive Battlefields for atmospheric battles.],
+)
+
 // ========================================
 // Content Addition
 // ========================================
@@ -136,6 +148,54 @@ Wave 1 expands the mod list to include *Graphics*, *Light mechanic*, and *Conten
   [Extensive MCM settings for troop customization, gear unlock requirements, doctrine selection, and retinue management.],
   [Content Addition — late in the section. Custom troop trees should load after all equipment and troop mods.],
   [Explicitly compatible with v1.4.x. Does not replace vanilla troop trees — adds alongside them. Safe with Bandit Variety.],
+)
+
+// ---- Open Source Armory ----
+#mod-entry(
+  "Open Source Armory",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/2829",
+  "Content Addition",
+  [Harmony],
+  [Massive community-created weapon and armor asset pack. Adds hundreds of new items distributed across cultures. Required dependency for Calradia Expanded Kingdoms (Wave 2). Installed as a single pack containing Open Source Armory, Saddlery, and Weaponry.],
+  [No configuration needed. Items are distributed automatically to appropriate cultures and troops.],
+  [Content Addition — early. Asset packs must load before troop and equipment mods that reference them.],
+  [Required by Calradia Expanded Kingdoms (Wave 2). Widely compatible — standard asset addition. No conflicts.],
+)
+
+// ---- Warlord Pack ----
+#mod-entry(
+  "Warlord Pack",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/5655",
+  "Content Addition",
+  [None — standalone],
+  [Brings classic Warband features to Bannerlord: feasts, manhunters and deserters, nobility ranks, books and scrolls, reactive companions, ambushes, tavern drunks, claimant quests, standard arena equipment, and classic voice lines. Every feature can be toggled individually via MCM.],
+  [Extensive MCM settings — each feature can be enabled or disabled independently. Disable Manhunters if using Calradia Expanded Kingdoms (Wave 2) to avoid duplication. Disable Nobility if using Banner Kings (Wave 2) to avoid title conflicts.],
+  [Content Addition — after troop mods, before Light Mechanic overrides.],
+  [#tip-box[Contains a Nobility feature that adds ranks — disable if planning to use Banner Kings (Wave 2).] Manhunters overlap with CEK (Wave 2) — disable the Warlord Pack version if both are active. All features are toggleable — safe to install even if some overlap with other mods.],
+)
+
+// ---- Captivity Events ----
+#mod-entry(
+  "Captivity Events",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/1226",
+  "Content Addition",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Expands Bannerlord's captivity system with dynamic events, captor interactions, and story-driven encounters. Being captured becomes a narrative experience rather than a loading screen. Includes ransom negotiations, escape scenarios, and world events that can trigger while imprisoned.],
+  [MCM settings for event frequency and which event types are enabled. Adult-content events can be disabled if preferred.],
+  [Content Addition — after settlement mods. Event systems load before mechanic overrides.],
+  [#tip-box[Contains adult-themed events — configure via MCM to disable if preferred.] Compatible with all mods. Event-driven — does not modify core systems.],
+)
+
+// ---- Camp Followers ----
+#mod-entry(
+  "Camp Followers",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/3317",
+  "Content Addition",
+  [None — standalone],
+  [Adds camp follower options to army menus — weapons traders and camp followers that follow your army on campaign. Adds historical depth to the army experience with services available when encamped.],
+  [No configuration needed. Access via the army menu.],
+  [Content Addition — late. Army menu additions should load after all troop and settlement mods.],
+  [No conflicts. Standalone army menu addition. Compatible with all mods.],
 )
 
 // ========================================
@@ -228,6 +288,90 @@ Wave 1 expands the mod list to include *Graphics*, *Light mechanic*, and *Conten
   [Standalone tweak to siege parameters. Does not conflict with Realistic Morale System or Xorberax's Legacy. Compatible with all mods.],
 )
 
+// ---- Art of War ----
+#mod-entry(
+  "Art of War",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/3970",
+  "Light Mechanic",
+  [Harmony, MCM],
+  [Improves AI behavior on the campaign map during wartime. Armies detach parties to defend raided villages, siege target logic is smarter, mercenary clans are not wasted on garrison duty, and armies patrol last-attacked settlements instead of wandering aimlessly. All features toggleable via MCM.],
+  [MCM settings for each feature: detachment logic, siege targeting, garrison behavior, patrol logic. Tune AI aggressiveness and detachment thresholds.],
+  [Light Mechanic — mid-section. AI behavior changes should load before combat mechanics.],
+  [Compatible with Realistic Morale System and Epic Sieges — different systems (campaign AI vs. battle morale vs. siege parameters). No overlap.],
+)
+
+// ---- Breakable Polearms ----
+#mod-entry(
+  "Breakable Polearms",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/5285",
+  "Light Mechanic",
+  [MCM, UIExtenderEx],
+  [Polearms can now break during combat. Adds tactical depth — lances and spears are not infinite-use weapons. High-quality polearms last longer. Configurable break chance and durability. Tagged as fair and balanced by the community.],
+  [MCM settings for break chance, durability scaling, and which polearm types are affected.],
+  [Light Mechanic — battle mechanic. Loads after troop mods, before compilation mods.],
+  [Compatible with all weapon and combat mods. Does not change damage values — only adds breakability.],
+)
+
+// ---- Kingdom Politics Expanded ----
+#mod-entry(
+  "Kingdom Politics Expanded",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/4970",
+  "Light Mechanic",
+  [Harmony],
+  [Complete overhaul of AI voting on kingdom policies and settlement ownership. AI lords vote based on their actual needs — loyalty, security, gold, militia — not arbitrary weights. Tracks per-clan war scores and siege contributions for fair fief distribution. Fixes broken vanilla policies: Crown Duty, Land Grants for Veterans, King's Mercenaries, Peerage, and Road Tolls.],
+  [MCM settings to toggle settlement voting overhaul and policy voting behavior. Console command available to opt out of fief candidacy.],
+  [Light Mechanic — mid-section. Kingdom mechanics load after faction mods, before compilation mods.],
+  [Fixes broken vanilla policies — these were bugged in the base game. Save-compatible to add. Use console command `mods.uninstall_kingdom_politics_expanded` before removing. No conflicts with other mods.],
+)
+
+// ---- Nemesis ----
+#mod-entry(
+  "Nemesis",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/5729",
+  "Light Mechanic",
+  [Harmony],
+  [Lords are no longer faceless units in battle. They taunt, insult, and react to your actions — being hit, blocking, or striking their horse. 1800+ voice lines across 50 distinct voices, including unique accents (French Vlandians, Scottish Battanians, Ukrainian Sturgian women). Includes True Noble Opinion system — each lord has their own relationship with you, not just the clan leader's. Also works in tournaments.],
+  [No configuration needed. Hold Left Alt to see nearby companions and enemy lords. Works automatically in battle and tournaments.],
+  [Light Mechanic — late. Voice/dialogue system loads after NPC mods, before compilation mods.],
+  [True Noble Opinion separates individual lord relationships from clan leader — compatible with Complex Characters but may interact with its ambition system. No data saved — safe to add or remove at any time.],
+)
+
+// ---- Malfoy Collection ----
+#mod-entry(
+  "Malfoy Collection",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/5356",
+  "Light Mechanic",
+  [Harmony],
+  [Compilation of 8 small tweak mods, each toggleable via MCM: Hidden Parents (removes auto-generated parent characters from encyclopedia), No AI Circular Tactics (disables the infamous circle-of-death AI behavior), Reveal All Heroes (unlocks all hero encyclopedia entries at campaign start), Companion Takeover (companions take command if player falls in battle), Reduced Execution Penalty, Tavern Reservation (buy drinks for soldiers), No Auto Garrison Donation, and No Big Smiles. Updated for v1.4.x (June 2026).],
+  [MCM settings for each of the 8 features — enable or disable individually. Disable Reveal All Heroes if you prefer encyclopedia fog-of-war.],
+  [Light Mechanic — mid-section. Collection of UI and behavior tweaks — loads before heavy mechanic mods.],
+  [#tip-box[Reveal All Heroes unlocks encyclopedia entries — this is different from All Heroes Are Visible In Battle (Wave 0) which adds a battle overlay. Both can be used together.] No known conflicts. All features individually toggleable.],
+)
+
+// ---- Pregnancy Control Continued ----
+#mod-entry(
+  "Pregnancy Control Continued",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/5478",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Revives and expands the Pregnancy Control mod with a complete seduction system using Bannerlord's persuasion mechanics. Seduce heroes through persuasion, manage dynasty and pregnancy mechanics. Integrates with the game's existing social systems.],
+  [MCM settings for seduction difficulty, pregnancy rates, and feature toggles. Adult-content features can be configured.],
+  [Light Mechanic — late. Character relationship systems load after NPC mods.],
+  [#tip-box[Contains adult-themed content — configure via MCM.] Dynasty and pregnancy mechanics are thematically relevant for long-term campaigns. Compatible with Dramalord — different systems (pregnancy/dynasty vs. marriage/affairs).],
+)
+
+// ---- Dramalord ----
+#mod-entry(
+  "Dramalord",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/6682",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Overhauls Bannerlord's marriage and relationship system. Adds flirting, affairs, love-based marriage, and NPC reactions to romantic events — including jealousy and relationship consequences. Highly configurable — range from expanded romance to full relationship simulation. All NPC reactions reflect their personality traits.],
+  [Extensive MCM settings for every feature — flirt success rates, affair discovery chance, NPC reaction intensity, and which mechanics are active.],
+  [Light Mechanic — late. Relationship mechanics load after NPC and dialogue systems.],
+  [Complements Complex Characters and Nemesis — different relationship layers (dialogue/ambition vs. battle taunts vs. romance). Compatible with Pregnancy Control Continued — Dramalord handles relationship mechanics while PCC handles pregnancy and seduction.],
+)
+
 // ---- Xorberax's Legacy ----
 #mod-entry(
   "Xorberax's Legacy",
@@ -240,4 +384,4 @@ Wave 1 expands the mod list to include *Graphics*, *Light mechanic*, and *Conten
   [Bank system adds economy depth. Cut Through Everyone enhances combat feel without overhauling damage. Scholars and Training Field offer alternative skill progression. Shoulder Camera is UI-only. No overlap with Fourberie (rogue/schemes are separate from combat/economy). Disabling Deadly Combat, Deadly Horse Charges, and Friendly Fire keeps this within Wave 1 scope.],
 )
 
-#tip-box[Wave 1 contains 17 mods across 3 categories. Light Mechanic cap is 15 (8 used). Content Addition cap is 10 (6 used). Room remains for future additions if gaps are identified during playtesting.]
+#tip-box[Wave 1 contains 30 mods across 3 categories. Light Mechanic cap is 15 (15 used — at capacity). Content Addition cap is 10 (10 used — at capacity). Graphics is unlimited. No room for additional mods in capped categories unless existing mods are removed.]

@@ -94,6 +94,47 @@ Bannerlord uses a combination of directional input for combat and standard keybo
 
 The encyclopedia (N) is your most powerful information tool. It contains every character, settlement, faction, and unit type in the game. Use it constantly — before accepting a quest, before entering a tournament, before attacking an enemy party. Knowledge is power, and the encyclopedia is free.
 
+=== Controller / Gamepad Support
+
+Bannerlord has full native controller support — it was designed for console release alongside PC. If you prefer playing with a gamepad, the game handles it smoothly. The controller layout is well-tested and covers all essential actions, though some tasks are faster with a mouse.
+
+*Controller setup.* Plug in your controller before launching Bannerlord. The game auto-detects Xbox, PlayStation, and most third-party controllers. If it doesn't recognize yours, enable Steam Input in Steam's controller settings: right-click Bannerlord in your library, select Properties, open the Controller tab, and enable Steam Input for your controller type. BLSE does not interfere with controller support.
+
+*Navigation.* World-map movement uses the left stick. Camera control in battles and menus uses the right stick. The D-pad scrolls through lists and menus. Face buttons confirm, cancel, and navigate tabs. The shoulder buttons cycle between menu categories — Party, Inventory, Character, Clan, Kingdom, and Quests. Holding the left bumper brings up a radial menu for quick access to these same screens during gameplay.
+
+*Combat.* Directional combat translates naturally to the right stick — flick in the desired direction then press the right trigger to attack, or hold the right stick in the matching direction to block. The left bumper raises your shield. The right bumper kicks. Pressing the left stick toggles between first and third-person view. The right stick click locks onto the nearest enemy.
+
+#table(
+  columns: (auto, auto, auto),
+  [*Action*], [*Xbox Layout*], [*DualSense Layout*],
+  [Movement / Navigation], [Left Stick], [Left Stick],
+  [Camera / Combat Direction], [Right Stick], [Right Stick],
+  [Attack / Fire], [RT], [R2],
+  [Block (hold)], [LT], [L2],
+  [Kick], [RB], [R1],
+  [Shield Raise], [LB], [L1],
+  [Interact / Mount / Dismount], [A], [Cross],
+  [Jump], [B], [Circle],
+  [Crouch / Order Menu], [X], [Square],
+  [Switch Weapon], [Y], [Triangle],
+  [Inventory], [Select / View], [Touchpad Left],
+  [Character Screen], [Start / Menu ─ Inventory tab], [Options — Character tab],
+  [Radial Quick Menu], [Hold LB], [Hold L1],
+  [Encyclopedia], [Start / Menu — Encyclopedia tab], [Options — Encyclopedia tab],
+  [Troop Commands], [D-Pad Up/Down/Left/Right], [D-Pad Up/Down/Left/Right],
+  [Talk / Order Halt], [D-Pad Down], [D-Pad Down],
+  [Order Charge], [D-Pad Up], [D-Pad Up],
+  [Order Advance], [D-Pad Right], [D-Pad Right],
+  [Order Fall Back], [D-Pad Left], [D-Pad Left],
+  [Lock On (toggle)], [RS Click], [R3],
+  [Toggle Camera], [LS Click], [L3],
+  [Show Map Indicators], [Hold Left Stick], [Hold Left Stick],
+  [Pause / Play Time], [Hold Select / View], [Hold Touchpad Left],
+  [Fast-Forward Time], [RB + D-Pad], [R1 + D-Pad],
+)
+
+*Limitations.* Inventory management is faster with a mouse — dragging items and comparing equipment tooltips is a mouse-first workflow. Some mod configuration menus (MCM) may not have full controller navigation; keep your mouse nearby for mod setup. The encyclopedia search bar requires typing — a keyboard is needed or use the on-screen keyboard. Menus with grid layouts (like the troop upgrade screen) scroll more slowly on controller than with a mouse wheel. None of these are blockers — just keep the keyboard within reach for the 10% of tasks where controller input is slower.
+
 === Combat Basics
 
 Bannerlord's combat is directional. This is the defining feature of the series and what separates it from other action RPGs. Mastering it takes practice but rewards you with a combat system of unusual depth.
