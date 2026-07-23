@@ -8,27 +8,30 @@
 #let clr-amber = rgb("#FFA500")
 #let clr-info = rgb("#3A5A7C")
 #let clr-text = rgb("#E0E0E0")
-#let clr-w0 = rgb("#4A90D9")
-#let clr-w1 = rgb("#E07B39")
 #let clr-ok = rgb("#4CAF50")
 #let clr-muted = rgb("#888888")
+#let clr-le1 = rgb("#4A90D9")
+#let clr-le2 = rgb("#4CAF50")
+#let clr-le3 = rgb("#FFA500")
+#let clr-launcher = rgb("#888888")
 
-// === Wave Badge ===
-#let wave-badge(waves) = {
-  for wave in waves {
-    let (color, label) = if wave == 0 {
-      (clr-w0, "Wave 0")
-    } else {
-      (clr-w1, "Wave 1")
-    }
-    box(
-      fill: color,
-      inset: (x: 8pt, y: 2pt),
-      radius: 4pt,
-      text(fill: white, size: 9pt, weight: "bold", label)
-    )
-    h(4pt)
+// === Game Badge ===
+#let game-badge(game) = {
+  let (color, label) = if game == "LE1" {
+    (clr-le1, "LE1")
+  } else if game == "LE2" {
+    (clr-le2, "LE2")
+  } else if game == "LE3" {
+    (clr-le3, "LE3")
+  } else {
+    (clr-launcher, "Launcher")
   }
+  box(
+    fill: color,
+    inset: (x: 8pt, y: 2pt),
+    radius: 4pt,
+    text(fill: white, size: 9pt, weight: "bold", label)
+  )
 }
 
 // === Callout Box ===
@@ -62,7 +65,7 @@
       radius: 4pt,
       stroke: (left: 4pt + color),
       [
-        #text(fill: color, weight: "bold", size: 10pt)[#icon\ ]
+        #text(fill: color, weight: "bold", size: 10pt)[#icon ]
         #body
       ],
     ),
@@ -74,7 +77,7 @@
 #let mod-entry(
   name: "",
   url: "",
-  waves: (),
+  game: none,
   version: "",
   last-checked: "",
   deps: (),
@@ -89,10 +92,12 @@
       radius: 6pt,
       stroke: 1pt + clr-content,
       [
-        #wave-badge(waves)
+        #if game != none {
+          game-badge(game)
+        }
         #text(size: 13pt, weight: "bold")[#name]
 
-        #text(size: 9pt, fill: clr-muted)[v\ #version \ | \ Last checked: #last-checked]
+        #text(size: 9pt, fill: clr-muted)[#version | Last checked: #last-checked]
 
         #link(url)[#url]
 

@@ -48,9 +48,9 @@ restore from backup and reinstall.
 
 Recommended format:
 ```
-1. LE1 Community Patch (wave 0)
-2. LE2 Community Patch (wave 0)
-3. LE3 Community Patch (wave 0)
+1. LE1 Community Patch
+2. Unofficial LE2 Patch
+3. LE3 Community Patch and Framework
 ...
 ```
 
@@ -90,7 +90,6 @@ You should restore your clean backup when:
   applied.
 - The game crashes consistently and you cannot identify the cause.
 - A mod update requires a clean reinstall (check the mod's changelog).
-- You want to switch between Wave 0 and Wave 1 mod setups.
 
 Restoring is simple: delete your current game directory (or rename it)
 and copy the clean backup back to the original location.

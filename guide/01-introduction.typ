@@ -8,11 +8,10 @@
 == What This Guide Is
 
 The Final Cycle is a curated modlist and companion guide for Mass Effect
-Legendary Edition (MELE, 2021+). It is built around two progressive
-"waves" -- each a complete playthrough with its own mod selection,
-roleplaying background, and gameplay strategy. Whether you are stepping
-onto the Normandy for the first time or returning for another cycle,
-there is a wave for you.
+Legendary Edition (MELE, 2021+). It gives you everything you need for a
+definitive playthrough: a hand-picked mod collection, character
+backgrounds to inspire your Shepard, and gameplay guides to help you
+thrive from Eden Prime to the final battle.
 
 The modlist follows strict standards:
 every mod must be compatible with the Legendary Edition, no cheats or
@@ -22,35 +21,24 @@ most modern option is chosen.
 
 == How to Use This Guide
 
-Choose your path:
-
 #callout("info")[
-  *New to Mass Effect? -- Wave 0 Path*
-
   1. Start with the Installation guide (next chapter) to set up the
-     ME3Tweaks toolchain.
+     ME3Tweaks toolchain, create a clean backup, and understand how
+     mods are loaded.
   2. Read Modding Best Practices and the MEM Texture Guide for safe
-     modding habits.
-  3. Choose your Wave 0 RPG Background -- a newcomer-friendly character.
-  4. Read How to Play: Wave 0 for an essential, spoiler-free primer on
-     classes, combat, the morality system, and exploration.
-  5. Install all mods listed under the *Wave 0* subsections of each
-     category, in the order they appear. Skip *Wave 1 Additional* sections
-     entirely.
-]
-
-#callout("tip")[
-  *Returning Player? -- Wave 1 Path*
-
-  1. Review the Installation guide if this is your first time modding MELE.
-  2. Read Modding Best Practices and the MEM Texture Guide -- the texture
-     rule is critical.
-  3. Choose your Wave 1 RPG Background -- a more nuanced character profile.
-  4. Read How to Play: Wave 1 for a comprehensive deep-dive into power
-     combos, weapon optimization, Insanity tactics, and squad synergy.
-  5. Install \*all\* mods across every category -- both the *Wave 0*
-     subsections and the *Wave 1 Additional* subsections -- in the order
-     they appear.
+     modding habits -- the texture rule is critical.
+  3. Browse the RPG Backgrounds chapter. Choose a character profile
+     that speaks to you, or use them as inspiration for your own
+     Shepard. Each profile explains which class is easiest, which is
+     hardest, and what kind of player would enjoy each one.
+  4. Read the How to Play primer for an essential, spoiler-free guide
+     to classes, combat, the morality system, and exploration.
+  5. Experienced players should also read the Advanced Combat chapter
+     for deep-dives into power combos, weapon optimization, Insanity
+     tactics, and squad synergy.
+  6. Install every mod in this guide. Follow the category install order
+     in Modding Best Practices and install mods in the order they
+     appear within each category. Apply texture mods absolutely last.
 ]
 
 == Modding Philosophy

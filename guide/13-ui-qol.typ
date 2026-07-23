@@ -1,16 +1,21 @@
 // 13-ui-qol.typ -- UI and Quality of Life
 
+#import "lib.typ": mod-entry
+
 #pagebreak()
 = UI and Quality of Life
 
 Interface improvements, convenience features, and quality-of-life tweaks.
-Wave 0 includes essentials that do not alter game balance. Wave 1 adds
-enhanced or more opinionated UI changes.
 
-== Wave 0
+#mod-entry(
+  name: "Journal Enhanced (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1508",
+  game: "LE3",
+  version: "v1.6",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Significantly improves the Mass Effect 3 journal with enhanced quest descriptions, proper quest expiration handling, and fixes for vanilla journal bugs. Adds aftermath descriptions for completed quests and ensures missions properly update and expire.],
+  notes: none,
+)
 
-_Mods to be added. Wave 0 QoL mods must not alter game balance or add content._
 
-== Wave 1 Additional
-
-_Mods to be added. Use the \#mod-entry() function._

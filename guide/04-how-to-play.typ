@@ -1,13 +1,13 @@
-// 04-how-to-play-wave0.typ -- Essential Gameplay Primer
+// 04-how-to-play.typ -- Essential Gameplay Primer
 
 #pagebreak()
 #import "lib.typ": callout
 
-= How to Play: Wave 0
+= How to Play
 
-An essential, spoiler-free primer for new Mass Effect players.
-Covers the fundamentals you need to survive and thrive in your first
-cycle through the trilogy.
+An essential, spoiler-free primer for Mass Effect players of all
+experience levels. Covers the fundamentals you need to survive and
+thrive from Eden Prime to the final battle.
 
 == Getting Started
 

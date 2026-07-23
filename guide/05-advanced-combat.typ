@@ -1,14 +1,14 @@
-// 05-how-to-play-wave1.typ -- Comprehensive Advanced Guide
+// 05-advanced-combat.typ -- Advanced Combat and Mechanics Deep-Dive
 
 #pagebreak()
 #import "lib.typ": callout
 
-= How to Play: Wave 1
+= Advanced Combat
 
 A comprehensive deep-dive into Mass Effect mechanics for experienced
-players. Assumes you have completed the trilogy at least once and
-understand the fundamentals covered in the Wave 0 primer. Contains
-mechanics spoilers (power combos, optimal builds) but no story spoilers.
+players. Assumes you understand the fundamentals covered in the How to
+Play chapter. Contains mechanics spoilers (power combos, optimal builds)
+but no story spoilers.
 
 == Power Combo System
 
