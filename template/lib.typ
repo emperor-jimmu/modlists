@@ -17,6 +17,7 @@
 #let mun-gray     = rgb("#B0B8C4")
 #let white        = rgb("#F5F7FA")
 #let warning-red  = rgb("#EF5350")
+#let awe-gold     = rgb("#FFB300")
 #let text-dark    = rgb("#1A1A2E")
 
 // ─── Fonts (resolved by Typst from --font-path directory) ───────
@@ -125,6 +126,7 @@
 #let warning(body) = callout(ksp-orange, body)
 #let tip(body) = callout(kerbin-green, body)
 #let danger(body) = callout(warning-red, body)
+#let awe(body) = callout(awe-gold, body)
 
 // ─── Mod Impact Type Constants ───────────────────────────────────
 
