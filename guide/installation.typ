@@ -36,19 +36,12 @@ CKAN should already include the default repository. If you don't see mods appear
 The modlist ships as four CKAN metapackage files — one per wave — plus a combined file. Each wave is cumulative: Wave 0.5 includes Wave 0; Wave 1 includes all previous; Wave 2 is the complete modlist. Install them in order and play through each wave's guide before adding the next.
 
 #info[[
-  *Wave 0 — First Steps:* `the-long-ascent-wave-0.ckan` (8 mods). UI and HUD overlays only — KER readouts, BetterBurnTime, bugfixes, a dark theme. No gameplay changes. Install this first and learn orbital flight before anything else.
-]]
+  = Wave files
 
-#info[[
-  *Wave 0.5 — Building Blocks:* `the-long-ascent-wave-05.ckan` (23 mods, cumulative with Wave 0). Advanced planning and editor tools — Transfer Window Planner, DPAI, Trajectories, Kerbal Alarm Clock, SCANsat, VAB enhancers. Adds no new parts or mechanics, but transforms how you plan missions and build rockets. Install once you can reach orbit consistently.
-]]
-
-#info[[
-  *Wave 1 — Going Further:* `the-long-ascent-wave-1.ckan` (77 mods, cumulative with Waves 0–0.5). Graphics overhaul (Scatterer, AVP, Deferred, Parallax, Waterfall), parts expansion (Near Future suite, Restock+, historical and modern rocket packs), planet packs (OPM, Kcalbeloh, Grannus, QuackPack), and fuel system mods (CRP, B9PartSwitch, CryoTanks). Transforms KSP into a modern game with destinations across the solar system. Install once you've mastered Mun landings, docking, and space stations.
-]]
-
-#info[[
-  *Wave 2 — The Long Ascent:* `the-long-ascent-wave-2.ckan` (7 mods, cumulative with all previous). Life support, colonization (Planetside, MKS, Extraplanetary Launchpads), and interstellar propulsion (Far Future Technologies, Blueshift). Each mod is optional — pick the ones that match your preferred challenge level. Install once interplanetary travel is routine.
+  - *Wave 0 — First Steps:* `the-long-ascent-wave-0.ckan` (8 mods). UI and HUD overlays: KER, BetterBurnTime, bugfixes, dark theme. No gameplay changes. Install first and learn orbital flight.
+  - *Wave 0.5 — Building Blocks:* `the-long-ascent-wave-05.ckan` (23 mods, cumulative with Wave 0). Planning tools and editor enhancements: TWP, DPAI, Trajectories, KAC, SCANsat, VAB tools. No new parts or mechanics. Install once you can reach orbit consistently.
+  - *Wave 1 — Going Further:* `the-long-ascent-wave-1.ckan` (77 mods, cumulative with Waves 0–0.5). Graphics overhaul (Scatterer, AVP, Deferred, Parallax, Waterfall), parts expansion (Near Future suite, Restock+, historical and modern rocket packs), planet packs (OPM, Kcalbeloh, Grannus, QuackPack), and fuel system mods. Install once you've mastered Mun landings, docking, and space stations.
+  - *Wave 2 — The Long Ascent:* `the-long-ascent-wave-2.ckan` (7 mods, cumulative with all previous). Life support, colonization, interstellar propulsion (FFT, Blueshift). Each mod is optional. Install once interplanetary travel is routine.
 ]]
 
 For each wave:
