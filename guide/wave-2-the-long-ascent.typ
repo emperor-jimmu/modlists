@@ -8,9 +8,9 @@ Wave 2 is the endgame. It adds life support, colonization, interstellar travel, 
 
 #wave-criteria-table()
 
-#danger[[
+#danger([
   Wave 2 mods are optional. Install only the ones that match your preferred challenge level. Removing a Wave 2 mod mid-save will likely break that save.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // MOD ENTRIES
@@ -32,9 +32,9 @@ Wave 2 is the endgame. It adds life support, colonization, interstellar travel, 
   version_pin: [Compatible with KSP 1.12.x.],
 )
 
-#info[[
+#info([
   *Colonization Alternatives:* Pathfinder (CKAN: "Pathfinder") and Buffalo 2 (CKAN: "Buffalo2") by Angel-125 provide a different base-building approach with inflatable modules, resource extraction, and rover parts. The Wild Blue Industries ecosystem is simpler than MKS and has broad mod support, but adds its own resource framework (WBIResources). Planetside is the recommended colonization mod for this modlist — Pathfinder and Buffalo are suggested alternatives if you prefer the WBI ecosystem or want rover-focused surface exploration.
-]]
+])
 
 #section-heading([Wave 1→2 UI Upgrades])
 
@@ -124,11 +124,11 @@ Wave 1 gave you the tools to explore the expanded solar system (OPM, QuackPack, 
   version_pin: [Compatible with KSP 1.12.x. Recommends Kopernicus for interstellar destinations. Waterfall recommended for warp-drive visual effects.],
 )
 
-#info[[
+#info([
   *Base Building Alternative:* Kerbal Planetary Base Systems (https://forum.kerbalspaceprogram.com/topic/133606-112x-kerbal-planetary-base-systems/) is a popular alternative to Planetside Exploration Technologies. KPBS adds modular surface base parts with a distinct visual style and broad mod support. Manual install from forum thread — not on CKAN. Choose Planetside (CKAN, benjee10 style) or KPBS (manual, modular style) for your surface base needs.
 
   *EVA Construction Tools:* KIS — Kerbal Inventory System (https://forum.kerbalspaceprogram.com/topic/149848-minimum-ksp-version-112-kerbal-inventory-system-kis-v129/) and KAS — Kerbal Attachment System (https://forum.kerbalspaceprogram.com/topic/23555-0211-kas-v043-struts-pipes-part-storage-containers-merged-winches-amp-more/) are the classic EVA construction pair. KIS lets kerbals carry and place parts during EVA; KAS adds winches, pipes, and struts for connecting base modules. Both are manual install from forum threads — not on CKAN. These were once essential and remain popular, though KSP 1.11+ added stock EVA construction that covers many KIS/KAS use cases.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // HOW TO USE THESE MODS
@@ -149,13 +149,13 @@ Planetside gives you the parts to build surface bases, but it doesn't add new re
 
 *Phase 4 — Self-sufficiency (with life support):* If you add a life support mod (USI-LS, TAC-LS, Kerbalism), your base now needs to produce supplies in addition to fuel. Greenhouses and recyclers close the resource loop. The goal: a base that produces fuel, supplies, and can even build new vessels (when paired with Extraplanetary Launchpads or similar).
 
-#tip[[
+#tip([
   Build your first base on Minmus. The gravity is so low that landing heavy modules is trivial, and the flats have the highest ore concentration in the Kerbin system. Once you've proven the design works on Minmus, replicate it on the Mun, then Duna.
-]]
+])
 
-#warning[[
+#warning([
   Precision landing matters a lot when assembling a base. If your habitat module lands 5 km from your ISRU rig, you either spend hours rovering parts together or you revert and try again. Use MechJeb's Landing Guidance (Wave 1) or get very good at manual targeted landings before attempting base assembly.
-]]
+])
 
 #section-heading([Integration with Wave 0–1 Mods])
 
@@ -169,9 +169,9 @@ By Wave 2, your modlist is fully layered. Here's how the mods work together duri
 - *Near Future reactors* (from Wave 1) power bases on outer planets where solar is useless
 - *Planetside parts* provide the base structure, and stock ISRU provides the fuel chain
 
-#info[[
+#info([
   This layered integration is the philosophy of the 3-wave system. Each wave builds on the previous one, and by Wave 2, your mods form a coherent whole rather than a pile of independent addons.
-]]
+])
 
 #section-heading([Community Navball Docking Alignment Indicator])
 
@@ -182,9 +182,9 @@ By Wave 2, you should be comfortable docking without DPAI's separate window. The
 - *Range ring:* A circle around the marker indicates distance. It shrinks as you get closer.
 - *Prograde marker:* The standard prograde marker still shows relative velocity. Keep it centered on the DAI marker for a perfect straight-in approach.
 
-#tip[[
+#tip([
   Switch your camera to "Chase" mode (V key) and align the view with your docking port. The navball, camera, and DAI marker all agree — approach becomes trivial.
-]]
+])
 
 #section-heading([Extraplanetary Launchpads — Building Off-World])
 
@@ -205,9 +205,9 @@ Extraplanetary Launchpads (EL) lets you build vessels anywhere — no Kerbin req
 - Multiple workshops stack. 4 workshops + 8 engineers = 4× speed.
 - Time warp works during construction. Set KAC alarm for completion.
 
-#info[[
+#info([
   Build a survey station (the EL survey part) near your mining base. The survey station increases build range and provides a construction waypoint. Without it, you can only build at the exact location of the workshop.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // STRATEGY GUIDE
@@ -233,9 +233,9 @@ Life support mods (USI-LS, TAC-LS, Kerbalism) introduce consumable resources: su
 3. *Long missions* (Jool, Eeloo): Build self-sustaining habitats. Greenhouses running on ore + electricity produce supplies indefinitely, but require a mining outpost or regular resupply.
 4. *Colonies*: Close the loop entirely. Combine ISRU, greenhouses, and waste processing. The goal is net-zero consumption.
 
-#tip[[
+#tip([
   Always send supplies *ahead* of crewed missions. Launch an uncrewed supply depot to the destination's orbit before sending kerbals. A dead supply mission is inconvenient; dead kerbals are a mission failure.
-]]
+])
 
 #section-heading([Habitation and Homesickness])
 
@@ -258,9 +258,9 @@ The solution is staged:
 3. *Manufacturing hub* — Extraplanetary Launchpads or MKS workshops. These consume raw materials and MetalParts/SpecializedParts to build new vessels and modules *on site*.
 4. *Self-sustaining colony* — The colony produces all of: supplies (food/water/O2), fuel, construction materials, and new vessels. At this point, Kerbin is a launch pad for initial crew, not a supply line.
 
-#warning[[
+#warning([
   MKS and USI mods are designed to work together (they share USI-LS as a common dependency). MKS provides the colonization parts and resource chains; USI-LS provides the life support mechanics. Installing one without the other is possible but you will miss the full integration.
-]]
+])
 
 #section-heading([Resource Chains — Colonization])
 
@@ -272,9 +272,9 @@ A typical MKS-style colonization resource chain:
 - *Life support:* Supplies, Mulch, Fertilizer (Mulch + Fertilizer + greenhouse = more Supplies)
 - *Maintenance:* Machinery slowly wears out. Workshops consume MaterialKits to produce replacement Machinery.
 
-#info[[
+#info([
   This is the "Everything is a resource chain" phase of KSP. If you enjoy Factorio-style logistics puzzles, this is your moment. If it sounds exhausting, skip the colonization layer and stick with life support + interstellar travel only.
-]]
+])
 
 #section-heading([Interstellar Travel])
 
@@ -287,9 +287,9 @@ Far Future Technologies introduces propulsion technologies beyond chemical rocke
 - *Antimatter:* Isp 100,000+ s. Exotic, dangerous, requires antimatter production infrastructure.
 - *Warp/Alcubierre:* Science fiction. Warp drive contracts space ahead and expands it behind. Instant or near-instant travel, requires exotic matter.
 
-#danger[[
+#danger([
   High Isp, low thrust engines mean *burns measured in days or weeks*. A fusion drive with 0.1 m/s² acceleration needs hours to change velocity by 1 km/s. Plan your burns around periapsis kicks — multiple short burns at periapsis to raise apoapsis gradually. Do not attempt to circularize an interstellar trajectory with a single burn.
-]]
+])
 
 #section-heading([Interstellar Destination Profiles])
 
@@ -312,9 +312,9 @@ Kcalbeloh is a black hole with orbiting planets. Install it for a truly alien de
 - *System layout:* Habitable planets, gas giants, and exotic bodies orbit the singularity. Each has unique science — some require special protection (radiation shielding parts).
 - *Strategy:* Send an uncrewed probe through the wormhole first. Map the system with SCANsat. Then decide whether to mount a crewed mission — the delta-v for capture in the black hole's gravity well is enormous. Plan for it.
 
-#warning[[
+#warning([
   Installing both Kcalbeloh AND Grannus is a significant memory commitment. If your game crashes during interstellar transit, reduce texture quality or remove one system. The guide assumes both are installed — you can still follow it with just one.
-]]
+])
 
 #section-heading([Blueshift Warp Infrastructure])
 
@@ -335,9 +335,9 @@ Blueshift gives you FTL travel — but with a catch. You must deploy warp coils 
 4. The scout ship can now warp home OR subsequent Blueshift ships can warp to the coil.
 5. Repeat for each new system. Your warp network grows with exploration.
 
-#info[[
+#info([
   This loop is the intended progression: FFT engines for initial exploration (slow, difficult, rewarding), Blueshift for established routes (fast, convenient, earned). Without FFT, Blueshift has no way to deploy the first coil. They are designed to work together.
-]]
+])
 
 #section-heading([Coil Network Strategy])
 
@@ -389,9 +389,9 @@ Kerbals on multi-decade missions need gravity or they go stir-crazy (USI-LS habi
 3. *Fusion reactors:* High power, consumes fusion fuel. The engine often doubles as the power plant.
 4. *Antimatter reactors:* Extreme power, extreme danger. Antimatter containment failure = ship becomes a cloud of plasma.
 
-#warning[[
+#warning([
   Antimatter containment requires active power. If your reactor shuts down, the containment field fails, and the antimatter annihilates. Always have a backup power source isolating the antimatter pods. This is not a drill — FFT models this behavior.
-]]
+])
 
 #section-heading([Realism Overhaul — What Changes])
 
@@ -461,9 +461,9 @@ With all Wave 2 mods active, the systems interact:
 4. *Colonization* provides *in-situ fuel production* → reduces required launch mass from Kerbin
 5. *Interstellar engines* consume *reactor fuel* (fission/fusion/antimatter) → colonization must produce reactor fuel too
 
-#tip[[
+#tip([
   When all systems are active, Minmus becomes your most important asset. Its low gravity means cheap ISRU, its high ore concentration means efficient resource extraction, and its location at Kerbin's edge means you're already partway out of the gravity well. Build your first major colony on Minmus, not the Mun.
-]]
+])
 
 #pagebreak()
 #chapter-heading([Player Challenges — Wave 2])

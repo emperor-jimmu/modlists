@@ -39,9 +39,9 @@ Approximate vacuum delta-v from low Kerbin orbit (LKO, 80 km):
   [Eeloo capture], [1,400],
 )
 
-#info[[
+#info([
   These are vacuum numbers. Atmospheric launches require more — use atmospheric delta-v in the VAB. Values assume optimal transfer windows and Hohmann transfers. Add 10–20% margin for imperfect execution.
-]]
+])
 
 #section-heading([Keybinding Quick Reference])
 

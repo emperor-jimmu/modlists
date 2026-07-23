@@ -8,9 +8,9 @@ Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical ad
 
 #wave-criteria-table()
 
-#warning[[
+#warning([
   Wave 1 mods are cumulative with Waves 0–0.5. Do not skip the earlier waves — Wave 1 includes their mods. Install Waves 0 and 0.5 first, play until you've mastered orbital operations and station assembly, then add Wave 1.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // MOD ENTRIES
@@ -935,9 +935,9 @@ These mods add meticulously detailed replicas of real-world spacecraft and launc
 
 These mods are not available through CKAN. Install them manually by downloading from their forum threads and placing the extracted folders in `GameData/`.
 
-#warning[[
+#warning([
   Manual-install mods do not appear in CKAN metapackages. You must download and update them yourself. Only install mods from mods you trust — always verify download links from the official forum threads.
-]]
+])
 
 #mod-entry(
   name: [Grannus Expansion Pack (GEP)],
@@ -1037,9 +1037,9 @@ MechJeb is an autopilot with a learning curve. Every feature is accessed through
 
 *Landing Guidance:* Pick a target on the surface. MechJeb deorbits and lands within a few hundred meters. Great for precision base-building in Wave 2.
 
-#tip[[
+#tip([
   MechJeb's data readouts are similar to KER's. If you prefer MechJeb's autopilot but KER's cleaner HUD, you can use both — open MechJeb for automation, KER for the flight HUD.
-]]
+])
 
 #section-heading([AtmosphereAutopilot])
 
@@ -1051,9 +1051,9 @@ AtmosphereAutopilot (AA) is a fly-by-wire system for atmospheric flight. It's mo
 - *Auto-throttle:* Holds a target speed. Use for efficient subsonic cruise or supersonic dashes.
 - *Fly-by-wire modes:* The "Moderation" mode smooths your inputs, preventing over-correction. "Director" mode flies toward your cursor position. Toggle between them in AA's settings.
 
-#tip[[
+#tip([
   AA handles atmosphere — MechJeb handles space. Use both. AA's altitude/heading hold for the atmospheric climb, then hand off to MJ's ascent autopilot at ~30 km. They don't conflict.
-]]
+])
 
 #section-heading([Kerbal Atomics + System Heat])
 
@@ -1072,9 +1072,9 @@ Nuclear engines and reactors produce heat. System Heat is the thermal management
 - Radiators cool everything on the same vessel — you don't need to pair them
 - Place radiators symmetrically and away from other hot parts
 
-#tip[[
+#tip([
   The System Heat toolbar button shows a live thermal overlay. Green = nominal, yellow = warming, red = approaching shutdown. If everything is red, deploy more radiators or reduce power.
-]]
+])
 
 #section-heading([Using the Graphics Mods])
 
@@ -1114,9 +1114,9 @@ CRP defines the resources: Hydrogen, Methane, Kerosene, Hydrazine, and dozens mo
 
 B9PartSwitch is the part you actually use. In the VAB, right-click any compatible fuel tank. A dropdown lets you switch what it holds: LFO (stock), LH2/Oxidizer (cryogenic), Methane/Ox, or Monopropellant. The tank model doesn't change — only its contents.
 
-#tip[[
+#tip([
   LH2 is the most efficient fuel (highest Isp) but the least dense. A tank full of LH2 weighs less than the same tank full of LFO — but it takes up more volume. LH2 stages are physically larger for the same delta-v.
-]]
+])
 
 #section-heading([Cryogenic Tanks — Boil-Off Management])
 
@@ -1126,9 +1126,9 @@ LH2 and Methane are cryogenic — they slowly evaporate in storage. This is "boi
 - *Insulated tanks:* CryoTanks adds insulated variants that reduce boil-off by ~90%. Use these for Duna and beyond.
 - *Active cooling:* Some parts (cryo-coolers) consume ElectricCharge to eliminate boil-off entirely. Necessary for Jool missions lasting years.
 
-#info[[
+#info([
   Boil-off only matters on long time-scales. A Mun mission takes days — you'll never notice. A Grannus transit takes decades — uninsulated LH2 will be gone before you leave Kerbin's SOI.
-]]
+])
 
 #section-heading([Planet Packs: OPM and Kcalbeloh])
 
@@ -1136,9 +1136,9 @@ LH2 and Methane are cryogenic — they slowly evaporate in storage. This is "boi
 
 *Kcalbeloh System:* An entirely separate star system accessible via a wormhole near Jool. The wormhole behaves like a special SOI — fly into it and you emerge in the Kcalbeloh system. The delta-v to reach the wormhole is roughly equivalent to a Jool transfer (~2,000 m/s from LKO). Once inside Kcalbeloh, the system's planets range from habitable worlds to exotic bodies orbiting a black hole.
 
-#warning[[
+#warning([
   Installing both OPM and Kcalbeloh makes for a very large (and somewhat crowded) outer system. OPM fills the gap between Jool and interstellar space; Kcalbeloh adds a separate star system. They are technically compatible, but you may prefer to choose one per save.
-]]
+])
 
 *Parallax terrain patches:*
 - OPM: Install `Parallax-OuterPlanetsMod` from CKAN. This automatically applies Parallax terrain to OPM bodies.
@@ -1153,9 +1153,9 @@ Wave 1 adds significant performance load, especially from graphics mods. If your
 3. *Lower AVP texture resolution* or remove it entirely
 4. *Cap part counts* — keep ships under 200 parts, stations under 300
 
-#tip[[
+#tip([
   KSP is CPU-bound by physics, not GPU-bound by graphics. If you have FPS issues during launch (when physics is heavy) but not in orbit, the culprit is part count, not your graphics mods. Simplify the vessel, not the visuals.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // TUTORIAL: GOING FURTHER
@@ -1177,9 +1177,9 @@ In space, there's no drag and no gravity losses. You don't need high TWR. What m
 - *Nuclear transfer stages:* A single NERV engine on a long Mk3 fuselage of liquid fuel only (no oxidizer). ~8,000 m/s in a single stage. The interplanetary workhorse.
 - *Ion tugs:* Dawn engines on xenon. 20,000+ m/s, but burns take hours and thrust is measured in millinewtons. Good for small probes, terrible for crewed ships.
 
-#tip[[
+#tip([
   After ~3,000 m/s of delta-v in a single stage, adding more fuel tanks gives diminishing returns. The tank's own dry mass eats your gains. At that point, add another stage — or switch to a higher-Isp engine.
-]]
+])
 
 #section-heading([TWR vs Isp — What Matters in Space])
 
@@ -1197,9 +1197,9 @@ Build interplanetary ships as dockable modules:
 3. *Crew module* — hitchhiker container or Mk2 crew cabin with docking port.
 4. *Power + comms* — solar panels or RTG, relay antenna, probe core (always).
 
-#info[[
+#info([
   The modular approach means your deep-space tug does multiple missions. After delivering a Duna lander, the tug returns to Kerbin orbit, refuels at a depot, picks up a Jool payload, and goes again. Reusable infrastructure saves launches — and funds in Career mode.
-]]
+])
 
 #section-heading([The Delta-V Budget])
 
@@ -1225,9 +1225,9 @@ Not all contracts are worth your time.
 - *Skip:* Part-testing contracts (tedious, low pay), rescue contracts (fun but scale poorly), tourist contracts (acceptable early, tedious late).
 - *Must-take:* World First milestones. These are the game's progression backbone and pay enormously.
 
-#tip[[
+#tip([
   Build a "contract bus" — a small probe with every science instrument, a relay antenna, and ~3,000 m/s of delta-v. Launch one to each new body you visit. It completes 3–4 contracts at once.
-]]
+])
 
 #section-heading([Science Farming])
 
@@ -1266,9 +1266,9 @@ Every planet has a specific launch window when the transfer is most efficient. T
 - *Jool* (Jupiter analog): Phase angle ~96°, delta-v from LKO ~2,000 m/s
 - *Moho* (Mercury analog): Phase angle ~-252°, delta-v from LKO ~2,200 m/s
 
-#info[[
+#info([
   Duna is the best first interplanetary target. It has an atmosphere (thin, but enough to aerobrake and use parachutes), low gravity, and a moderate transfer cost. Eve is easier to reach but brutally hard to leave — its thick atmosphere and high gravity make ascent nearly as expensive as Kerbin.
-]]
+])
 
 #section-heading([Executing a Duna Transfer])
 
@@ -1278,9 +1278,9 @@ Every planet has a specific launch window when the transfer is most efficient. T
 4. Burn. Mid-course correction: about halfway there, create another tiny node to fine-tune your Duna periapsis.
 5. At Duna, aerobrake — set periapsis to ~15–20 km to use the atmosphere for capture. Bring heat shields.
 
-#tip[[
+#tip([
   Ike (Duna's moon) is tidally locked and small — an even easier landing target than the Mun. If Duna itself intimidates you, go to Ike first.
-]]
+])
 
 #section-heading([Eve — The Purple Hell])
 
@@ -1299,9 +1299,9 @@ Eve's surface is hot, purple, and high-pressure. Solar panels work fine (no atmo
 - *Science:* Eve has biomes (peaks, lowlands, shallows, etc.) but they're hard to reach without an aircraft.
 - *Explodium Sea:* Liquid on Eve's surface. Ships float (barely). Not recommended for first visits.
 
-#danger[[
+#danger([
   Do not send a crewed mission to Eve unless you have a tested, working ascent vehicle. Eve ascent from sea level costs ~8,000 m/s of delta-v — nearly three times Kerbin. The atmospheric pressure kills engine Isp until ~30 km altitude. This is the single hardest maneuver in stock KSP.
-]]
+])
 
 #section-heading([Eve Ascent Strategy])
 
@@ -1339,9 +1339,9 @@ Phase angle ~-252° (Moho is ahead of Kerbin in its orbit). This window is short
 
 Moho has no atmosphere and moderate gravity (~0.27 g). Landing costs ~1,200 m/s. Use a high-Isp vacuum engine (Terrier, Poodle, or a nuclear stage). The surface is hot but solar panels produce enormous power this close to the sun — small panels are enough.
 
-#tip[[
+#tip([
   Moho has a large molten core and a thin crust. The "Mohole" at its north pole is a bottomless pit. Do not drive rovers near it. Kerbals have fallen in. They do not come out.
-]]
+])
 
 #section-heading([ISRU — Mining and Refueling])
 
@@ -1355,9 +1355,9 @@ In-Situ Resource Utilization converts raw ore into usable fuel. The components:
 4. *ISRU Converter (e.g. Convert-O-Tron)* — converts ore + electricity into liquid fuel, oxidizer, or monopropellant
 5. *Radiators* — the converter generates immense heat and will shut down without sufficient cooling
 
-#danger[[
+#danger([
   ISRU equipment is godlessly heavy. A full mining rig can weigh 20+ tons. Test the full chain on Minmus first — its low gravity makes landing and returning with heavy payloads far easier than the Mun. Minmus also has high ore concentrations in its flats.
-]]
+])
 
 #section-heading([Minmus Mining Base — A Walkthrough])
 
@@ -1383,9 +1383,9 @@ A Minmus miner needs:
 6. *Radiators:* 2× medium TCS panels. The converter melts without them.
 7. *Engine:* A single Terrier or Spark. TWR > 0.3 on Minmus is trivial.
 
-#warning[[
+#warning([
   The mining drill must touch the ground. Mount it low on the lander or use pistons (Breaking Ground DLC). If the drill hovers above the surface, it won't work — and the game won't tell you why.
-]]
+])
 
 #section-heading([The Fuel Tanker])
 
@@ -1409,9 +1409,9 @@ In low Minmus orbit (~20 km), park a fuel depot:
 
 The workflow: Miner fills itself → tanker lands, docks, transfers fuel → tanker ascends, docks with depot → depot refuels interplanetary ships. This chain turns Minmus into infinite free fuel in Kerbin's backyard.
 
-#tip[[
+#tip([
   Automate with Kerbal Alarm Clock: set an alarm for when the miner's ore tanks are full (~6 days for a Junior drill with 8% ore). When the alarm fires, switch to the miner, launch the tanker, make the fuel run. One fuel run per week keeps your interplanetary fleet running indefinitely.
-]]
+])
 
 #section-heading([Duna Surface Operations])
 
@@ -1444,9 +1444,9 @@ A Duna base needs:
 
 Ike is tidally locked to Duna. A satellite in Ike-stationary orbit above Duna's far side has permanent line-of-sight to Ike AND Kerbin. Put a powerful relay there (RA-100) and every probe on Duna's surface has comms coverage through Ike.
 
-#tip[[
+#tip([
   Ike has no atmosphere and low gravity (~0.1 g). It's an even easier mining target than Minmus. Build your Duna-system fuel depot on Ike, not Duna. The savings in tanker ascent delta-v pays for the transfer from Ike orbit to Duna orbit many times over.
-]]
+])
 
 
 #section-heading([The Jool System])
@@ -1482,9 +1482,9 @@ Tylo is what separates good engineers from great ones. Requirements:
 - Delta-v from low Tylo orbit to surface and back: ~5,000 m/s
 - No atmosphere = no parachutes, no aerobraking. Pure engines.
 
-#tip[[
+#tip([
   The optimal Tylo lander uses asparagus-staged drop tanks. Start with 4–6 radial tanks feeding a central core. Drop pairs as they empty. The final core stage has enough TWR to land alone (now much lighter). This is one of the few places where asparagus staging is unquestionably correct.
-]]
+])
 
 #section-heading([Bop and Pol — Mining Outposts])
 
@@ -1493,9 +1493,9 @@ After conquering Tylo, Bop and Pol are your reward. Both have:
 - High ore concentrations
 - Excellent ISRU base potential for outer-system missions (OPM planets beyond Jool)
 
-#info[[
+#info([
   The Jool system is the last stop before the outer planets (OPM) and the first interstellar hop (Kcalbeloh wormhole, if installed). Build your Jool fuel depot well — it will service missions for the entire endgame.
-]]
+])
 
 #section-heading([SSTO Spaceplanes])
 

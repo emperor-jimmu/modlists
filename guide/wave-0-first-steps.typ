@@ -8,9 +8,9 @@ Wave 0 is for new players or veterans returning to stock KSP. It adds only the m
 
 #wave-criteria-table()
 
-#info[[
+#info([
   *Wave 0 Decision Rule:* Only UI/HUD overlays, readouts, and bugfixes. No docking aids, no VAB tools, no planning utilities. If a mod changes how you build or plan rather than what information you see, it belongs in Wave 0.5 or later.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // MOD ENTRIES
@@ -146,9 +146,9 @@ The most important VAB readouts: *Delta-V*, *TWR*, and *Burn Time*. If TWR is be
 - *Orbit: Time to Apoapsis / Periapsis* — timing your circularization burns
 - *Vessel: Total Delta-V* — how much gas you have left
 
-#tip[[
+#tip([
   KER's readouts are deeply customizable, but don't go overboard. Start with the five listed above. Add more as you learn what each number means. A cluttered HUD is harder to read than no HUD at all.
-]]
+])
 
 #section-heading([BetterTimeWarp Continued])
 
@@ -159,9 +159,9 @@ BetterTimeWarp replaces the stock warp bar (the arrows next to the MET clock) wi
 - *Physics warp override:* Normally, physics warp (Alt+period) caps at 4×. BetterTimeWarp lets you push it higher.
 - *Lossless physics warp:* At moderate rates (up to ~10× physical), BetterTimeWarp runs extra physics steps to reduce wobble and explosion risk.
 
-#tip[[
+#tip([
   Set a custom physics warp of 6× for long ion-engine burns. At 6×, most craft can handle the physics load without spontaneous disassembly. Above 10×, save first.
-]]
+])
 
 #section-heading([Precise Maneuver])
 
@@ -181,9 +181,9 @@ BetterBurnTime replaces the stock burn-time indicator next to the navball. When 
 
 Start your burn so that half the burn happens before the node and half after. BetterBurnTime handles the timing — when the countdown hits zero, throttle up. When the "Est. Burn" counter reaches zero, cut engines.
 
-#tip[[
+#tip([
   During landings, BetterBurnTime's impact timer is more responsive than the altimeter alone. When it counts down to ~3 seconds at high speed, you're about to lithobrake. Burn retrograde immediately.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // TUTORIAL: FIRST STEPS
@@ -198,9 +198,9 @@ Start your burn so that half the burn happens before the node and half after. Be
 
 Start a *Science* or *Career* save on Normal difficulty. Sandbox is tempting but overwhelming — you unlock all parts at once without context. Science mode gates parts behind experiments, teaching you one set of parts at a time. Career adds funds and contracts, giving you goals and constraints that mirror real space programs.
 
-#tip[[
+#tip([
   If you choose Career, use default settings. Don't touch the difficulty sliders yet — the stock balance is well-tested for new players.
-]]
+])
 
 #section-heading([Key Concepts])
 
@@ -218,9 +218,9 @@ Every maneuver costs delta-v:
 
 The sum of these is your mission's delta-v budget. If your rocket has less than the total required, you won't make it.
 
-#info[[
+#info([
   There are two kinds of delta-v: *atmospheric* (inside a planet's atmosphere) and *vacuum* (in space). Atmospheric delta-v is always lower because engines are less efficient when fighting air pressure. Always check which number you're looking at — the VAB shows atmospheric by default. Switch to vacuum in the delta-v panel for transfer and landing calculations.
-]]
+])
 
 #section-heading([Apoapsis and Periapsis])
 
@@ -242,9 +242,9 @@ These are relative to what you're orbiting. In space, prograde is your orbital v
 
 TWR is the ratio of your engine's thrust to your rocket's weight. A TWR of 1.0 means you hover. Below 1.0, you don't leave the pad. For a comfortable launch, aim for a TWR between 1.3 and 2.0 at liftoff. Higher TWR means faster acceleration but can cause aerodynamic stress and overheating in the lower atmosphere.
 
-#tip[[
+#tip([
   As you burn fuel, your rocket gets lighter, so TWR increases during flight. A rocket that starts at TWR 1.3 might be at TWR 4.0 by the time the first stage burns out. Watch your throttle — you may need to reduce it to avoid going too fast too low.
-]]
+])
 
 #section-heading([SAS — Stability Augmentation System])
 
@@ -285,9 +285,9 @@ Open the VAB. You'll see the parts list on the left and the assembly area in the
 4. *Parachute* — for landing safely. Mk16 parachute on top of the pod.
 5. *Decoupler* — separates stages. Place between the pod and the tank if you want the pod to return alone, or at the bottom to eject the entire stage.
 
-#info[[
+#info([
   *The Golden Rule of Rocket Design:* Heavy stuff goes at the top, engines at the bottom. Your center of mass should be above your center of thrust. If the rocket flips during ascent, you have a stability problem — add fins at the bottom.
-]]
+])
 
 #section-heading([Staging])
 
@@ -316,9 +316,9 @@ Building a rocket that reaches space is easy. Reaching *orbit* requires speed �
 6. Switch to Map view (M) and watch your apoapsis. Cut the engine when apoapsis reaches ~80,000 m (above 70 km = space)
 7. Coast to apoapsis, then burn prograde to circularize
 
-#tip[[
+#tip([
   If your rocket flips during the gravity turn: add fins at the bottom, make the rocket taller rather than wider, and keep your speed below ~300 m/s while still in the thick lower atmosphere (below 10 km).
-]]
+])
 
 #section-heading([Where to Go from Here])
 

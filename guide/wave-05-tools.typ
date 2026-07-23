@@ -8,9 +8,9 @@ Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicator
 
 #wave-criteria-table()
 
-#info[[
+#info([
   *Wave 0.5 Decision Rule:* These mods add no new parts or gameplay mechanics, but they change editor workflows, introduce mission planning, and affect how you build. If you're still learning the stock VAB and mission flow, stay on Wave 0 for now.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // MOD ENTRIES
@@ -365,9 +365,9 @@ Trajectories predicts where your craft will land — accounting for atmospheric 
 - *Body-fixed mode (default):* The X stays locked to the rotating planet surface. Use this for landings.
 - *Inertial mode:* The X shows where you'd land if the planet stopped rotating. Use this for orbital planning only.
 
-#tip[[
+#tip([
   When aerobraking at Duna or Jool, set Trajectories to body-fixed mode. Adjust your periapsis until the predicted exit trajectory has the apoapsis you want. A 15 km Duna periapsis captures you; a 25 km one just bends your path.
-]]
+])
 
 #section-heading([SCANsat])
 
@@ -380,9 +380,9 @@ SCANsat adds persistent planetary maps. Open the map viewer from the SCANsat too
 
 Launch one scanner satellite per body you plan to visit. Even a tiny CubeSat with a scanning antenna and solar panels works. The maps persist across saves.
 
-#info[[
+#info([
   SCANsat scanning generates science points passively. A single scanner in polar orbit around the Mun will complete several "Scan [Body]" contracts with zero additional effort.
-]]
+])
 
 // ═══════════════════════════════════════════════════════════════════
 // TUTORIAL: BUILDING & PLANNING
@@ -403,9 +403,9 @@ From low Kerbin orbit (80–100 km circular, equatorial):
 3. Create a maneuver node on your orbit. Drag prograde until the projected path intersects the Mun's sphere of influence (SoI). It should take about 860 m/s.
 4. Execute the burn at the node. Keep the craft pointed at the maneuver marker on the navball.
 
-#info[[
+#info([
   If you miss the Mun's SoI entirely, your burn timing was wrong. Adjust the maneuver node position along your orbit (drag the center circle of the node) — this changes *when* you burn, which changes *where* the Mun is when you arrive.
-]]
+])
 
 #section-heading([Mun Capture and Landing])
 
@@ -418,9 +418,9 @@ To land:
 4. In the final ~500 m, keep velocity below 20 m/s. Land at less than ~6 m/s to avoid breaking anything.
 5. SAS set to "Retrograde Hold" (if unlocked) keeps you oriented for the burn — use Stability Assist otherwise and steer manually.
 
-#tip[[
+#tip([
   Kill horizontal velocity first (retrograde marker centered on the horizon line), then control vertical descent. If you tip over on landing, your horizontal velocity was too high.
-]]
+])
 
 #section-heading([Returning from the Mun])
 
@@ -456,9 +456,9 @@ Docking lets you join two spacecraft in orbit. It's essential for Apollo-style M
 5. Align the prograde marker with the target marker on the navball.
 6. Drift in at less than 0.5 m/s. The magnetic docking ports will snap together.
 
-#info[[
+#info([
   RCS thrusters must be placed symmetrically around your craft's center of mass to avoid unwanted rotation during translation. In the VAB, toggle the center of mass indicator to check. RCS Build Aid (Wave 0.5) makes this much easier.
-]]
+])
 
 #section-heading([Space Stations])
 
@@ -477,9 +477,9 @@ Now that you can dock, you can build stations.
 2. Dock additional modules (fuel tanks, habitation, antennas, extra docking ports)
 3. Keep part count reasonable — too many parts and the physics engine crawls. Aim for under 200 parts per station.
 
-#tip[[
+#tip([
   Always include a probe core on every station module. If you undock the wrong port and lose control of a drifting section, a probe core lets you recover it. Also: reaction wheels. Stations in KSP get wobbly without them.
-]]
+])
 
 #section-heading([Building Better Rockets])
 
@@ -493,9 +493,9 @@ Every rocket design is a tradeoff between three things: payload mass (what you w
 - Upper stage TWR can be as low as 0.5 — you're already in space, fighting gravity with orbital velocity.
 - For every ton of payload to LKO, expect 4–6 tons of launch vehicle. Better designs push this toward 4.
 
-#tip[[
+#tip([
   KER's VAB readout shows atmospheric and vacuum delta-v. Use *atmospheric* for your first stage (it burns in thick air). Use *vacuum* for upper stages, transfer stages, and landers. Switching mid-design avoids surprises when your 3,400 m/s vacuum-rated first stage can't actually reach orbit.
-]]
+])
 
 #section-heading([Staging Strategies])
 
@@ -534,9 +534,9 @@ In the SPH, toggle all three indicators (CoM, CoL, CoT). The relationship betwee
 
 The critical check: drain all fuel tanks in the SPH (right-click each tank, set fuel to zero) and check CoM vs CoL again. Fuel is heavy — your CoM will shift as it burns. If CoM moves *behind* CoL when tanks are empty, your plane will become unstable mid-flight.
 
-#danger[[
+#danger([
   The #1 cause of spaceplane failure: CoM shifts behind CoL as fuel drains. Always check dry-CoM position. If CoM moves backward, move wings slightly aft or add a small fuel tank at the nose to keep the dry CoM forward.
-]]
+])
 
 #section-heading([Wing Design])
 
@@ -581,9 +581,9 @@ Transfer windows tell you *when* to burn, not just *how much* delta-v you need.
 - *Depart from low circular orbit:* A 100 km circular orbit is ideal for interplanetary ejection. Elliptical orbits complicate ejection-angle calculations.
 - *Mid-course correction:* About halfway to your destination, create a small correction burn (10–50 m/s) to fine-tune your encounter periapsis. This is far cheaper than correcting during the departure burn.
 
-#tip[[
+#tip([
   Duna is the best first interplanetary target. Its atmosphere (thin, but enough for parachutes), low gravity (0.3g), and moderate transfer cost (~1,100 m/s from LKO) make it forgiving. Ike is even easier — no atmosphere but ultra-low gravity and it's right there when you arrive at Duna.
-]]
+])
 
 #section-heading([Where to Go from Here])
 
