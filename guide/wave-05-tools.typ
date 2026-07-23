@@ -363,6 +363,96 @@ KAC is most useful when you have 3+ concurrent missions. Create alarms for: mane
 #pagebreak()
 #chapter-heading([Wave 0.5 Guide — Building & Planning])
 
+Now that you can reach orbit consistently, it's time to go further. Wave 0.5's tools — TWP for planning, DPAI for docking, KAC for mission timing — all come together here.
+
+#section-heading([Going to the Mun])
+
+#section-heading([Transfer Burn])
+
+From low Kerbin orbit (80–100 km circular, equatorial):
+1. Switch to Map view. Rotate the camera so you can see the Mun's orbit.
+2. The Mun rises over Kerbin's horizon — when it's about 45 degrees ahead of your craft in its orbit, you're at the transfer window.
+3. Create a maneuver node on your orbit. Drag prograde until the projected path intersects the Mun's sphere of influence (SoI). It should take about 860 m/s.
+4. Execute the burn at the node. Keep the craft pointed at the maneuver marker on the navball.
+
+#info[[
+  If you miss the Mun's SoI entirely, your burn timing was wrong. Adjust the maneuver node position along your orbit (drag the center circle of the node) — this changes *when* you burn, which changes *where* the Mun is when you arrive.
+]]
+
+#section-heading([Mun Capture and Landing])
+
+When you enter the Mun's SoI, you'll be on a flyby trajectory. At Mun periapsis (Pe marker), burn retrograde to slow down and enter orbit. Target a 15–20 km circular orbit.
+
+To land:
+1. From low Mun orbit, burn retrograde until your trajectory line hits the surface. Target a flat area (the Mun's large craters — maria — are dark, flat regions).
+2. As you descend, keep burning retrograde. Watch your surface velocity indicator (click the navball speed readout until it says "Surface").
+3. When below ~2,000 m altitude, your speed should drop below 100 m/s.
+4. In the final ~500 m, keep velocity below 20 m/s. Land at less than ~6 m/s to avoid breaking anything.
+5. SAS set to "Retrograde Hold" (if unlocked) keeps you oriented for the burn — use Stability Assist otherwise and steer manually.
+
+#tip[[
+  Kill horizontal velocity first (retrograde marker centered on the horizon line), then control vertical descent. If you tip over on landing, your horizontal velocity was too high.
+]]
+
+#section-heading([Returning from the Mun])
+
+1. Launch eastward from the Mun's surface (the Mun rotates slowly — east is still the efficient direction)
+2. Establish a low circular orbit (~15 km)
+3. Burn prograde to escape the Mun — your trajectory will bend back toward Kerbin
+4. Target a Kerbin periapsis of ~35 km for aerocapture
+5. Detach the command pod, deploy parachute, land in the ocean
+
+#section-heading([Basic Docking])
+
+#section-heading([Why Dock?])
+
+Docking lets you join two spacecraft in orbit. It's essential for Apollo-style Mun missions (leave the lander in Mun orbit, dock to return), space stations, and refueling operations.
+
+#section-heading([Rendezvous])
+
+1. Launch the second craft into a lower orbit than the target (faster orbit = catches up) or higher (slower = target catches you).
+2. Target the other craft in Map view (click it, select "Set as Target").
+3. Create a maneuver node. Adjust until the closest approach markers (orange and magenta arrows) are within 2 km of each other.
+4. Execute the burn.
+5. When within ~2 km, your navball switches to "Target" mode. The prograde marker now shows your velocity *relative to the target*.
+6. Burn retrograde (in target mode) to zero out relative velocity.
+7. Point at the target (pink circle marker) and burn gently (~10–20 m/s) toward it.
+8. Repeat: close distance, zero velocity, aim again. Don't rush — docking is a slow dance.
+
+#section-heading([Docking Proper])
+
+1. When within ~50 m, right-click your docking port and select "Control from Here."
+2. Right-click the target's docking port and select "Set as Target."
+3. Switch to fine-control mode (Caps Lock — pitch/yaw/roll indicators turn blue).
+4. Use RCS (R key) and translation controls (I/J/K/L for up/down/left/right, H/N for forward/back).
+5. Align the prograde marker with the target marker on the navball.
+6. Drift in at less than 0.5 m/s. The magnetic docking ports will snap together.
+
+#info[[
+  RCS thrusters must be placed symmetrically around your craft's center of mass to avoid unwanted rotation during translation. In the VAB, toggle the center of mass indicator to check. RCS Build Aid (Wave 0.5) makes this much easier.
+]]
+
+#section-heading([Space Stations])
+
+Now that you can dock, you can build stations.
+
+#section-heading([Why Build a Station?])
+
+- *Refueling depot* — dock tankers, mine on Minmus, ferry fuel to orbit
+- *Science lab* — the Mobile Processing Lab multiplies science value over time
+- *Crew rotation hub* — swap kerbals between missions without landing
+- *Relay hub* — high-orbit station with powerful relay antennas extends comms coverage
+
+#section-heading([Station Assembly])
+
+1. Launch the core (lab, docking hub, power, probe core)
+2. Dock additional modules (fuel tanks, habitation, antennas, extra docking ports)
+3. Keep part count reasonable — too many parts and the physics engine crawls. Aim for under 200 parts per station.
+
+#tip[[
+  Always include a probe core on every station module. If you undock the wrong port and lose control of a drifting section, a probe core lets you recover it. Also: reaction wheels. Stations in KSP get wobbly without them.
+]]
+
 #section-heading([Building Better Rockets])
 
 #section-heading([The Rocket Equation])
@@ -466,3 +556,7 @@ Transfer windows tell you *when* to burn, not just *how much* delta-v you need.
 #tip[[
   Duna is the best first interplanetary target. Its atmosphere (thin, but enough for parachutes), low gravity (0.3g), and moderate transfer cost (~1,100 m/s from LKO) make it forgiving. Ike is even easier — no atmosphere but ultra-low gravity and it's right there when you arrive at Duna.
 ]]
+
+#section-heading([Where to Go from Here])
+
+You can now land on the Mun, dock spacecraft in orbit, and assemble space stations. You've mastered the core skills of orbital operations. When you're comfortable with rendezvous and can plan Mun missions without step-by-step instructions, you're ready for Wave 1 — interplanetary travel, ISRU mining, and exploring the expanded solar system.
