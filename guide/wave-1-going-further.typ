@@ -1233,6 +1233,67 @@ Every planet has a specific launch window when the transfer is most efficient. T
   Ike (Duna's moon) is tidally locked and small — an even easier landing target than the Mun. If Duna itself intimidates you, go to Ike first.
 ]]
 
+#section-heading([Eve — The Purple Hell])
+
+Eve is the easiest planet to reach and the hardest planet to leave. This is the game's ultimate engineering challenge.
+
+#section-heading([Transfer and Entry])
+
+- Transfer: Phase angle ~54°, delta-v from LKO ~1,100 m/s (same as Duna — deceptively cheap)
+- Atmospheric entry: Eve's atmosphere is 5× denser than Kerbin's. You will need heat shields — and you won't need engines until you leave.
+- Landing: Parachutes work extremely well. A single Mk16-XL can land 20+ tons. No engines needed for touchdown.
+
+#section-heading([Surface Operations])
+
+Eve's surface is hot, purple, and high-pressure. Solar panels work fine (no atmosphere attenuation issues), but your kerbals are stuck unless you brought a serious ascent vehicle.
+
+- *Science:* Eve has biomes (peaks, lowlands, shallows, etc.) but they're hard to reach without an aircraft.
+- *Explodium Sea:* Liquid on Eve's surface. Ships float (barely). Not recommended for first visits.
+
+#danger[[
+  Do not send a crewed mission to Eve unless you have a tested, working ascent vehicle. Eve ascent from sea level costs ~8,000 m/s of delta-v — nearly three times Kerbin. The atmospheric pressure kills engine Isp until ~30 km altitude. This is the single hardest maneuver in stock KSP.
+]]
+
+#section-heading([Eve Ascent Strategy])
+
+1. *Do not land at sea level.* Target a mountain peak (5+ km altitude). Every kilometer of elevation saves ~500 m/s.
+2. *Aerospike engines* (Dart) maintain decent Isp in thick atmosphere. Vector engines work for the upper stage.
+3. *Shed everything.* Jettison parachutes, landing legs, ladders — all dead weight — before lighting engines.
+4. *Stage aggressively.* Your first stage gets you through the soup (0–20 km). Second stage takes over when Isp recovers.
+5. *Fairing or nose cone* on top. Drag is brutal in Eve's lower atmosphere.
+
+#section-heading([Gilly — Eve's Lifeboat])
+
+Gilly is Eve's tiny captured asteroid-moon. Gravity: 0.005 g. You can reach orbit with RCS alone.
+
+- *Why visit:* Gilly has high ore concentration and trivial escape costs. It's the best ISRU base in the inner solar system.
+- *How to land:* You don't "land" on Gilly — you rendezvous with it. Approach at < 5 m/s. Time warp kills relative velocity.
+- *Strategy:* Build a Gilly mining outpost. Refuel Eve ascent vehicles in Gilly orbit before descending. This solves the "how do I get back from Eve" problem without needing a single-stage-to-orbit-from-sea-level monster.
+
+
+#section-heading([Moho — The Sun-Diver])
+
+Moho is Kerbin's closest planet to the sun — and one of the hardest to reach despite being "right there."
+
+#section-heading([Why Moho is Hard])
+
+- *Inclined orbit:* Moho's orbit is tilted 7° relative to Kerbin's. You must match inclination mid-transfer or at arrival — expensive either way.
+- *Deep gravity well:* Transfer from LKO costs ~2,200 m/s. Capture at Moho costs another ~2,000 m/s. Total one-way: ~4,200 m/s — more than Jool.
+- *No atmosphere:* Cannot aerobrake. Every meter per second must come from your engines.
+- *No moons:* No ISRU helper body. You must bring all return fuel or mine on Moho's surface.
+
+#section-heading([Transfer Window])
+
+Phase angle ~-252° (Moho is ahead of Kerbin in its orbit). This window is short — a few days at best. Use Transfer Window Planner to nail it. The ejection burn from Kerbin should also include a normal component to match Moho's inclination. TWP gives you the exact numbers.
+
+#section-heading([Capture and Landing])
+
+Moho has no atmosphere and moderate gravity (~0.27 g). Landing costs ~1,200 m/s. Use a high-Isp vacuum engine (Terrier, Poodle, or a nuclear stage). The surface is hot but solar panels produce enormous power this close to the sun — small panels are enough.
+
+#tip[[
+  Moho has a large molten core and a thin crust. The "Mohole" at its north pole is a bottomless pit. Do not drive rovers near it. Kerbals have fallen in. They do not come out.
+]]
+
 #section-heading([ISRU — Mining and Refueling])
 
 #section-heading([The ISRU Chain])
@@ -1303,7 +1364,89 @@ The workflow: Miner fills itself → tanker lands, docks, transfers fuel → tan
   Automate with Kerbal Alarm Clock: set an alarm for when the miner's ore tanks are full (~6 days for a Junior drill with 8% ore). When the alarm fires, switch to the miner, launch the tanker, make the fuel run. One fuel run per week keeps your interplanetary fleet running indefinitely.
 ]]
 
+#section-heading([Duna Surface Operations])
 
+You've reached Duna. Now what? Surface ops turn a flag-planting mission into a sustained presence.
+
+#section-heading([Landing Zones])
+
+- *Lowlands:* Flat, low elevation, rich in science. Safe landing zone for first missions.
+- *Midlands:* Rolling terrain. More biomes nearby for rover exploration.
+- *Highlands/Peaks:* Hard to land on, high science value. Good for experienced missions.
+- *Poles:* Ice caps. Cold, inclined, but unique science.
+
+#section-heading([Rover Deployment])
+
+Duna's gravity (0.3 g) and thin atmosphere make rovers viable but tricky:
+- Wide wheelbase prevents flipping on slopes
+- Low center of mass, reaction wheels set to "SAS only"
+- Drive at < 15 m/s — Duna's surface looks smooth from orbit but is littered with rocks
+- Solar panels work at ~40% efficiency compared to Kerbin. Bring RTGs for long-duration rovers
+
+#section-heading([Surface Base Design])
+
+A Duna base needs:
+1. *Power:* Solar arrays + fuel cells for dust storms (yes, dust storms exist with visual mods; no, they don't block solar panels — but they look cool)
+2. *ISRU:* Duna has ore. Mine it. The low gravity makes tanker ascents cheap.
+3. *Habitation:* Hitchhiker containers or Planetside inflatables
+4. *Docking:* Surface docking is hard — ports rarely align on uneven ground. Use KAS/KIS to connect modules with flexible pipes, or land modules on wheels and dock them on a flat area.
+
+#section-heading([Ike — Duna's Relay Hub])
+
+Ike is tidally locked to Duna. A satellite in Ike-stationary orbit above Duna's far side has permanent line-of-sight to Ike AND Kerbin. Put a powerful relay there (RA-100) and every probe on Duna's surface has comms coverage through Ike.
+
+#tip[[
+  Ike has no atmosphere and low gravity (~0.1 g). It's an even easier mining target than Minmus. Build your Duna-system fuel depot on Ike, not Duna. The savings in tanker ascent delta-v pays for the transfer from Ike orbit to Duna orbit many times over.
+]]
+
+
+#section-heading([The Jool System])
+
+Jool is the Kerbol system's gas giant — 5 moons, each a unique challenge. With OPM installed, Jool is the gateway to the outer planets.
+
+#section-heading([Transfer])
+
+Phase angle ~96°, delta-v from LKO ~2,000 m/s. Jool's massive gravity well makes capture easy — a small retro-burn at periapsis (~200 m/s) captures you. The real cost is maneuvering between moons.
+
+#section-heading([Moon Hopping Strategy])
+
+Visit in this order to minimize delta-v:
+
+1. *Laythe (outermost):* Oxygen atmosphere. Jet engines work here. Land a spaceplane on the islands, explore the oceans. Joolrise is gorgeous.
+2. *Vall (inner):* Europa analog. Ice moon, moderate gravity (~0.23 g). Blue-tinted terrain. Good ISRU candidate — abundant ore.
+3. *Tylo (deep gravity well):* The monster. Tylo has Kerbin-like gravity (~0.8 g) and no atmosphere. Landing costs ~2,500 m/s — more than reaching orbit from Kerbin. This is the ultimate vacuum landing challenge. Use high-TWR engines, bring extra fuel, and save before descent.
+4. *Bop (outer, inclined):* Small captured asteroid. Low gravity, inclined orbit. Good mining base once you're in the Jool system.
+5. *Pol (outermost):* Tiny, lumpy, low gravity. Tricky to land on (the terrain is spiky), but the views of Jool are spectacular.
+
+#section-heading([Laythe Spaceplanes])
+
+Laythe is the only body beyond Kerbin with a breathable atmosphere. Jet engines (RAPIERs in air-breathing mode, or standalone Whiplash/Panther) work perfectly. A Laythe SSTO can fly indefinitely on atmospheric oxygen.
+
+- *Island hopping:* Laythe's land is scattered islands. A seaplane or amphibious lander is essential.
+- *Science:* Laythe has diverse biomes (shores, shallows, poles, islands). A single spaceplane can visit them all.
+- *ISRU:* Ore is available, but you're competing with Vall for mining efficiency. Vall is better for fuel, Laythe is better for crew.
+
+#section-heading([Tylo — The Final Exam])
+
+Tylo is what separates good engineers from great ones. Requirements:
+- TWR > 1.0 on Tylo (~0.8 Kerbin TWR)
+- Delta-v from low Tylo orbit to surface and back: ~5,000 m/s
+- No atmosphere = no parachutes, no aerobraking. Pure engines.
+
+#tip[[
+  The optimal Tylo lander uses asparagus-staged drop tanks. Start with 4–6 radial tanks feeding a central core. Drop pairs as they empty. The final core stage has enough TWR to land alone (now much lighter). This is one of the few places where asparagus staging is unquestionably correct.
+]]
+
+#section-heading([Bop and Pol — Mining Outposts])
+
+After conquering Tylo, Bop and Pol are your reward. Both have:
+- Extremely low gravity (RCS landing viable)
+- High ore concentrations
+- Excellent ISRU base potential for outer-system missions (OPM planets beyond Jool)
+
+#info[[
+  The Jool system is the last stop before the outer planets (OPM) and the first interstellar hop (Kcalbeloh wormhole, if installed). Build your Jool fuel depot well — it will service missions for the entire endgame.
+]]
 
 #section-heading([SSTO Spaceplanes])
 
