@@ -238,6 +238,17 @@
 - [x] Vervada's 3D Plants (Wave 0 — Texture Pack) — removed due to incompatibility issues with other mods
 - [x] 3D Ladders (Wave 0 — Texture Pack) — duplicate functionality; RAY's 3D Rails already covers 3D ladders alongside its rail models
 
+### Added Mods (Jul 2026 batch 11 — Visual Polish)
+- [x] (Bee's) Fancy Crops (Wave 0 — Texture Pack) — 6.5M downloads, works with Farmer's Delight
+- [x] Fire Rekindled (Wave 0 — Texture Pack) — animated fire/lava/water textures, Create mod support
+- [x] Rainbow's Foliage (Wave 0 — Texture Pack) — foliage color variation, requires Polytone dep
+- [x] Mickey Joe's Flowers (Wave 0 — Texture Pack) — enhanced 3D flowers
+- [x] Bushy Pink Petals, Wildflowers & Leaf Litter (Wave 0 — Texture Pack) — 3D ground cover
+- [x] Effectual (Wave 0.5 — Visual & Client QoL) — atmospheric particles, compatible with Particular Reforged via config
+- [x] Polytone (Wave 0.5 — Dependency) — required by Rainbow's Foliage texture pack
+- [x] TLib (Wave 0.5 — Dependency) — required by Effectual
+- [ ] Effectual config tuning: disable cave dust (duplicated by Particular Reforged) after test launch
+
 ### Additional Mod Candidates
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
 
@@ -262,11 +273,11 @@
 ### Added Resource Packs (Jul 2026 batch 10 — Font)
 - [x] Smooth Font 32x (Wave 0 — Texture Pack) — Faithful 32x-based smooth font, 7.8M downloads, 69KB. Only overrides font textures, safe alongside 16x packs. By apt9002. [CurseForge](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
 
-### Skipped After Review (Jul 2026 batch 7 — Foliage Resource Packs)
-- [x] Rainbow's Foliage — requires Polytone mod (unverified NeoForge 1.21.1)
-- [x] Os' Colorful Grasses — low download count, niche scope
-- [x] Mickey Joe's Flowers — 16x resolution, last updated Jul 2026
-- [x] Bushy Pink Petals, Wildflowers & Leaf Litter — 16x ground cover, last updated Aug 2025
-- [x] (Bee's) Fancy Crops — 16x resolution, niche scope
-- [x] Retextured Vine — too narrow in scope (vines only, 22K downloads) to justify pack-order headache
-- [x] LambdaBetterGrass — Fabric-only (requires Fabric API + ModMenu). No NeoForge version exists. 9.2M downloads but on wrong modloader.
+### Review History — Foliage Resource Packs (Jul 2026)
+- [x] Rainbow's Foliage — was blocked by Polytone dep; now verified: Polytone has NeoForge 1.21.1 ✅ ADDED (Jul 2026 batch 11)
+- [x] Os' Colorful Grasses — 814K downloads but 32x texture conflict with 16x packs, Patreon-gated full version ❌ STILL SKIPPED
+- [x] Mickey Joe's Flowers — enhanced 3D flowers, 95K downloads, actively updated ✅ ADDED (Jul 2026 batch 11)
+- [x] Bushy Pink Petals, Wildflowers & Leaf Litter — 3D ground cover, 178K downloads, Apache 2.0, actively maintained ✅ ADDED (Jul 2026 batch 11)
+- [x] (Bee's) Fancy Crops — 6.5M downloads, Farmer's Delight compatible — too popular to skip ✅ ADDED (Jul 2026 batch 11)
+- [x] Retextured Vine — still too narrow in scope (vines only, 22K downloads) ❌ STILL SKIPPED
+- [x] LambdaBetterGrass — Fabric-only. No NeoForge version exists. 9.2M downloads but on wrong modloader ❌ STILL SKIPPED
