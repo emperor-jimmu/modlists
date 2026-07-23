@@ -4,7 +4,7 @@
 
 #section-heading([About Wave 0])
 
-Wave 0 is for new players or veterans returning to stock KSP. It adds only the most essential HUD, QoL, and bugfix mods — nothing that changes gameplay, parts, or physics. You will learn core skills in the stock game before any tools become more complex.
+Wave 0 is for new players or veterans returning to stock KSP. It adds only the most essential HUD, QoL, and bugfix mods — nothing that changes gameplay, parts, or physics. By the end of this wave you will reach stable Kerbin orbit, the foundation for everything that follows.
 
 #wave-criteria-table()
 

@@ -4,12 +4,12 @@
 
 #section-heading([About Wave 1])
 
-Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical additions that add content without fundamentally changing difficulty. You should be comfortable with the skills taught in Wave 0 (orbit, Mun landing, docking) before installing these mods.
+Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical additions that add content without fundamentally changing difficulty. You should be comfortable with the skills taught in Waves 0–0.5 (orbit, Mun landings, docking, space stations) before installing these mods.
 
 #wave-criteria-table()
 
 #warning[[
-  Wave 1 mods are cumulative with Wave 0. Do not skip Wave 0 — Wave 1 includes its mods. Install Wave 0 first, play until you've mastered the basics, then add Wave 1.
+  Wave 1 mods are cumulative with Waves 0–0.5. Do not skip the earlier waves — Wave 1 includes their mods. Install Waves 0 and 0.5 first, play until you've mastered orbital operations and station assembly, then add Wave 1.
 ]]
 
 // ═══════════════════════════════════════════════════════════════════

@@ -4,7 +4,7 @@
 
 #section-heading([About Wave 2])
 
-Wave 2 is the endgame. It adds life support, colonization, interstellar travel, and realism overhauls. These mods change the game fundamentally — mistakes now have permanent consequences, and the systems interact in complex ways. You should have hundreds of hours in KSP and be fluent in interplanetary missions before attempting this wave.
+Wave 2 is the endgame. It adds life support, colonization, interstellar travel, and realism overhauls. These mods change the game fundamentally — mistakes now have permanent consequences, and the systems interact in complex ways. You should be fluent in interplanetary missions (Wave 1) and have at least one established colony or station before attempting this wave.
 
 #wave-criteria-table()
 

@@ -4,7 +4,7 @@
 
 #section-heading([About Wave 0.5])
 
-Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicators. These mods go beyond Wave 0's pure UI/HUD — they change how you interact with the VAB/SPH, plan missions, and manage your save. You should be comfortable with the basics taught in Wave 0 before installing these.
+Wave 0.5 adds advanced planning tools, editor enhancements, and visual indicators. These mods go beyond Wave 0's pure UI/HUD — they change how you interact with the VAB/SPH, plan missions, and manage your save. By the end of this wave you will land on the Mun, dock spacecraft in orbit, and assemble your first space station. You must be able to reach orbit consistently (Wave 0) before installing these.
 
 #wave-criteria-table()
 

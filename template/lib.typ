@@ -217,18 +217,20 @@
 #let wave-criteria-table() = {
   set text(font: body-font, size: 9pt)
   table(
-    columns: (auto, auto, auto, auto),
+    columns: (auto, auto, auto, auto, auto),
     inset: 6pt,
-    align: (left, center, center, center),
+    align: (left, center, center, center, center),
     stroke: 0.5pt + mun-gray,
     table.header(
-      [*Criterion*], [*Wave 0*], [*Wave 1*], [*Wave 2*],
+      [*Criterion*], [*Wave 0*], [*Wave 0.5*], [*Wave 1*], [*Wave 2*],
     ),
-    [Gameplay changed?], [No], [Adds content], [Adds complexity],
-    [Learning curve], [None], [Parts/options], [Entirely new systems],
-    [New resource chains?], [No], [Trivial or none], [Yes (LS, colony, fuel)],
-    [Penalizes mistakes?], [No], [No], [Yes (dead kerbals, RUD)],
-    [Save-breaking?], [No], [Unlikely], [Likely],
+    [Gameplay changed?], [No], [No], [Adds content], [Adds complexity],
+    [New parts?], [No], [No], [Yes (2000+)], [Yes (colony + interstellar)],
+    [Learning curve], [None], [Tools & planning], [Parts, planets, graphics], [Life support, colonies, FTL],
+    [Resource chains?], [No], [No], [Fuel types (CRP/cryo)], [Full (LS, colony, reactor fuel)],
+    [Failure conditions?], [No (revert only)], [No (revert only)], [Mission failure (no revert)], [Permanent (dead kerbals)],
+    [Progression goal], [Stable orbit], [Mun, docking, stations], [Interplanetary], [Interstellar, self-sustaining],
+    [Save-breaking?], [No], [No], [Unlikely], [Likely (choose wave carefully)],
   )
   v(0.5em)
 }
