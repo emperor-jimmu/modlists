@@ -320,6 +320,14 @@ Building a rocket that reaches space is easy. Reaching *orbit* requires speed �
   If your rocket flips during the gravity turn: add fins at the bottom, make the rocket taller rather than wider, and keep your speed below ~300 m/s while still in the thick lower atmosphere (below 10 km).
 ])
 
+#awe([
+  *Look down.*
+
+  You are in orbit. Not "almost in orbit." Not "in space but falling back." You are circling an entire planet at 2,300 meters per second, and it is not pulling you down. The blue arc of Kerbin fills the window. The stars are steady. You did this with math, engineering, and a rocket you built yourself.
+
+  This is not a loading screen. This is a planet. And you are flying around it.
+])
+
 #section-heading([Where to Go from Here])
 
 At this point you can reach a stable Kerbin orbit. You understand the gravity turn, how to read the navball, and how to use KER's readouts to plan your burns. Congratulations — you're no longer ground-bound.
@@ -330,6 +338,13 @@ From here, you have options:
 - *Progress:* When you can consistently reach orbit without reverting flights, install Wave 0.5. It adds advanced planning tools and teaches you to go further — Mun landings, docking, and space stations.
 
 #pagebreak()
+
+#awe([
+  *Every landing is a controlled crash.*
+
+  When BetterBurnTime's impact timer counts down and your engine bell kisses the surface, you are completing a journey that began on the launchpad. Fuel tanks emptied, stages discarded, parachutes deployed — every gram of your rocket was accounted for in the math that brought you here. The kerbal in the pod just traveled farther than most humans in history. Take a moment before you hit "Recover Vessel."
+])
+
 #chapter-heading([Player Challenges — Wave 0])
 
 These are optional goals to test your orbital skills. No mods beyond Wave 0 required.

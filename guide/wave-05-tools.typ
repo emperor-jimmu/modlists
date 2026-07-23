@@ -422,6 +422,14 @@ To land:
   Kill horizontal velocity first (retrograde marker centered on the horizon line), then control vertical descent. If you tip over on landing, your horizontal velocity was too high.
 ])
 
+#awe([
+  *You are standing on another world.*
+
+  Four hundred thousand kilometers from home. The sky is black at noon. Kerbin hangs in the sky — a blue-and-white marble that contains everyone you've ever known. It looks small from here. It is small. And you just flew here in a contraption of aluminum and explosives.
+
+  Plant the flag. Take a screenshot. Breathe.
+])
+
 #section-heading([Returning from the Mun])
 
 1. Launch eastward from the Mun's surface (the Mun rotates slowly — east is still the efficient direction)
@@ -460,6 +468,14 @@ Docking lets you join two spacecraft in orbit. It's essential for Apollo-style M
   RCS thrusters must be placed symmetrically around your craft's center of mass to avoid unwanted rotation during translation. In the VAB, toggle the center of mass indicator to check. RCS Build Aid (Wave 0.5) makes this much easier.
 ])
 
+#awe([
+  *Two ships meet in the dark.*
+
+  For a moment, there was empty space between them. Now there is a sealed docking port, and two vessels have become one. You brought them together across kilometers of vacuum, matched velocities to centimeters per second, and touched aluminum to aluminum without a scratch.
+
+  If you can dock, you can build anything. Stations. Interplanetary ships. Colonies. Docking is not a skill. Docking is a door.
+])
+
 #section-heading([Space Stations])
 
 Now that you can dock, you can build stations.
@@ -479,6 +495,14 @@ Now that you can dock, you can build stations.
 
 #tip([
   Always include a probe core on every station module. If you undock the wrong port and lose control of a drifting section, a probe core lets you recover it. Also: reaction wheels. Stations in KSP get wobbly without them.
+])
+
+#awe([
+  *You built this.*
+
+  It did not exist an hour ago. Now there is a space station in orbit — your space station. Modules you designed, launched, and docked yourself. Solar panels you angled toward the sun. Docking ports waiting for ships that haven't been built yet.
+
+  This station wasn't in the game. You put it there. The Kerbol system now contains something that wouldn't exist without you. Every station you build from here adds to a universe that is increasingly, irreversibly yours.
 ])
 
 #section-heading([Building Better Rockets])
