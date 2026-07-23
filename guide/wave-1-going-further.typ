@@ -1282,6 +1282,14 @@ Every planet has a specific launch window when the transfer is most efficient. T
   Ike (Duna's moon) is tidally locked and small — an even easier landing target than the Mun. If Duna itself intimidates you, go to Ike first.
 ])
 
+#awe([
+  *You're not in Kerbin's orbit anymore.*
+
+  Cross the sphere-of-influence boundary and something changes. The navball still works. The engines still fire. But the blue planet that has been your home for every mission until now just became a dot. Duna is ahead — red, alien, waiting. Between you and it: millions of kilometers of nothing.
+
+  Every interplanetary mission begins with this moment. The point where Kerbin stops being your world and becomes a reference point. You're not going home for a while. You're going somewhere new.
+])
+
 #section-heading([Eve — The Purple Hell])
 
 Eve is the easiest planet to reach and the hardest planet to leave. This is the game's ultimate engineering challenge.
@@ -1475,6 +1483,16 @@ Laythe is the only body beyond Kerbin with a breathable atmosphere. Jet engines 
 - *Science:* Laythe has diverse biomes (shores, shallows, poles, islands). A single spaceplane can visit them all.
 - *ISRU:* Ore is available, but you're competing with Vall for mining efficiency. Vall is better for fuel, Laythe is better for crew.
 
+#awe([
+  *Jool is rising.*
+
+  You are standing on an island on Laythe. Liquid water laps at the shore. Oxygen fills the air — jet engines work here, impossibly. And on the horizon, Jool fills half the sky. Green bands of cloud swirl in slow motion. Three moons are visible as crescents. The light is green-tinted, alien, beautiful.
+
+  You flew here. Across the solar system. To an ocean moon. To watch a gas giant rise.
+
+  There are people on Earth who have never seen anything this beautiful. You are looking at it through the window of a spaceplane you designed.
+])
+
 #section-heading([Tylo — The Final Exam])
 
 Tylo is what separates good engineers from great ones. Requirements:
@@ -1495,6 +1513,16 @@ After conquering Tylo, Bop and Pol are your reward. Both have:
 
 #info([
   The Jool system is the last stop before the outer planets (OPM) and the first interstellar hop (Kcalbeloh wormhole, if installed). Build your Jool fuel depot well — it will service missions for the entire endgame.
+])
+
+#awe([
+  *The wormhole waits.*
+
+  Near Jool, there is a distortion in spacetime — a sphere of bent light that leads to another star system. You can see the stars on the other side, shifted blue and strange. A black hole lives there. Planets orbit it. The laws of physics stretch thin around its event horizon.
+
+  You don't have to go through. Nobody is making you. But you came all this way. And on the other side, there is something no kerbal has ever seen.
+
+  The wormhole doesn't care if you're ready. It just is.
 ])
 
 #section-heading([SSTO Spaceplanes])
@@ -1547,6 +1575,16 @@ The Advanced Grabbing Unit (the "Klaw") attaches to asteroids as if docking. Onc
 - Time warp with care — the Klaw can phase through the asteroid at high warp
 - Bring extra reaction wheels — an E-class asteroid can weigh thousands of tons
 - Target a Kerbin periapsis of ~35 km for aerocapture with a heat shield
+
+#awe([
+  *Between planets, there is silence.*
+
+  The engine has cut off. The trajectory is set. For the next hundred days, your ship will coast through the void — no burns, no alarms, no ground control. Just the hum of life support and the slow rotation of stars outside the window.
+
+  This is the part of spaceflight that movies skip. The waiting. The quiet. The knowledge that you are moving faster than any human ever has, and it still takes months to cross a solar system. Your kerbals are fine. They have snacks. They have each other. They have the stars.
+
+  Don't time-warp through this. Not every time. Sometimes, just sit with it. The silence is part of the journey.
+])
 
 #pagebreak()
 #chapter-heading([Player Challenges — Wave 1])

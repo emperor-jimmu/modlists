@@ -291,6 +291,16 @@ Far Future Technologies introduces propulsion technologies beyond chemical rocke
   High Isp, low thrust engines mean *burns measured in days or weeks*. A fusion drive with 0.1 m/s² acceleration needs hours to change velocity by 1 km/s. Plan your burns around periapsis kicks — multiple short burns at periapsis to raise apoapsis gradually. Do not attempt to circularize an interstellar trajectory with a single burn.
 ])
 
+#awe([
+  *You are between stars.*
+
+  Kerbol is a bright point behind you. Grannus is a dim red dot ahead. Between them: light-years of vacuum, cosmic rays, and the faint background hum of the universe. Your ship's fusion drive has been burning for years. It will burn for years more. The kerbals on board were young when they left. They will be older when they arrive.
+
+  This is what interstellar travel means. Not warp drives and instant jumps — though those will come — but the slow, patient crossing of the gulf between suns. You are doing something that humans have only dreamed of. You are committing to a journey that will take longer than the entire history of aviation on Earth.
+
+  The engine burns. The stars don't move. And somewhere ahead, a new sun waits.
+])
+
 #section-heading([Interstellar Destination Profiles])
 
 With Kcalbeloh and Grannus installed, you have two interstellar destinations. Each requires different preparation.
@@ -303,6 +313,16 @@ Grannus is a binary red dwarf companion to Kerbol. It's the easier first interst
 - *Strategy:* Grannus is a "conventional" star system — bring ISRU equipment, establish a mining base, use it as a staging point. No exotic physics required.
 - *Power:* Solar panels work poorly this far from Kerbol. Bring fission reactors (Near Future Electrical) or RTGs.
 
+#awe([
+  *A new sun.*
+
+  For decades, Grannus was a red point of light. Now it's a disc. An alien star with alien planets, and you are the first kerbal to see them. The light is redder than Kerbol's, casting long shadows and strange colors across unfamiliar terrain.
+
+  You crossed the void between stars to get here. Not in a loading screen. Not in a cutscene. In real game-time, with real physics, using engines you built and fuel you refined and courage you found somewhere between "what if" and "why not."
+
+  Welcome to another solar system. It's been waiting for you.
+])
+
 #section-heading([Kcalbeloh — The Black Hole System])
 
 Kcalbeloh is a black hole with orbiting planets. Install it for a truly alien destination:
@@ -311,6 +331,16 @@ Kcalbeloh is a black hole with orbiting planets. Install it for a truly alien de
 - *Black hole effects:* Time dilation near the event horizon is visual only (no gameplay effect), but the accretion disk is spectacular. Screenshot territory.
 - *System layout:* Habitable planets, gas giants, and exotic bodies orbit the singularity. Each has unique science — some require special protection (radiation shielding parts).
 - *Strategy:* Send an uncrewed probe through the wormhole first. Map the system with SCANsat. Then decide whether to mount a crewed mission — the delta-v for capture in the black hole's gravity well is enormous. Plan for it.
+
+#awe([
+  *The black hole has an accretion disk.*
+
+  It is made of matter being torn apart at relativistic speeds. It glows. The light bends around the event horizon — you can see the back of the accretion disk warped above and below the black hole itself. The singularity is invisible. The effect is unmistakable. You are looking at the most violent object in the known universe, and it is beautiful.
+
+  Time moves differently here. Not in the game — the game clock ticks normally — but in your mind. You arrived. You are orbiting a black hole. Whatever you do next, you will always be a kerbal who orbited a black hole.
+
+  Take the screenshot. Everyone does. No one forgets.
+])
 
 #warning([
   Installing both Kcalbeloh AND Grannus is a significant memory commitment. If your game crashes during interstellar transit, reduce texture quality or remove one system. The guide assumes both are installed — you can still follow it with just one.
@@ -345,6 +375,16 @@ Blueshift gives you FTL travel — but with a catch. You must deploy warp coils 
 - *Second coil:* Kcalbeloh. Requires advanced coil and antimatter-powered scout (longer range, higher power draw).
 - *Waypoint coils:* Deploy coils at gas giants between stars for emergency refueling stops.
 - *Coil security:* Coils are vulnerable. If a coil loses power, ships cannot warp to it. Include redundant power (solar + fission) and a probe core for remote rebooting.
+
+#awe([
+  *The stars move.*
+
+  One moment you were in orbit around Kerbol. The next, the warp field collapsed and the stars rearranged themselves. Grannus is now a disc, not a dot. The journey that took your scout ship decades just happened in an instant.
+
+  This is what you worked for. The warp coil you deployed. The power infrastructure you built. The years of sub-light travel to place that first beacon. It all led to this: the ability to cross light-years in heartbeats. Not because it was easy. Because you earned it.
+
+  Look out the window. Those aren't your stars. That's not your sun. You are in another solar system, and you got here by bending the fabric of spacetime with technology you assembled in orbit. Welcome to the interstellar age.
+])
 
 #section-heading([Interstellar Mission Planning])
 
@@ -463,6 +503,18 @@ With all Wave 2 mods active, the systems interact:
 
 #tip([
   When all systems are active, Minmus becomes your most important asset. Its low gravity means cheap ISRU, its high ore concentration means efficient resource extraction, and its location at Kerbin's edge means you're already partway out of the gravity well. Build your first major colony on Minmus, not the Mun.
+])
+
+#awe([
+  *Look how far you've come.*
+
+  You started on a launchpad with a command pod and a dream. Now you have colonies on three planets, a station at Jool, warp coils bridging star systems, and kerbals living on worlds you discovered. The Kerbol system is not the same place it was when you installed Wave 0.
+
+  You built this. Not the game. You. Every module docked. Every fuel run completed. Every rescue mission that became a triumph. Every moment of terror when a lander tipped over and you somehow saved it. Every quiet hour in the VAB, staring at delta-v numbers, solving problems with math and creativity.
+
+  KSP doesn't have an ending. But if it did, this would be it: a universe that is bigger, stranger, and more beautiful than the one you started with — because you made it that way.
+
+  Thank you for taking The Long Ascent.
 ])
 
 #pagebreak()
