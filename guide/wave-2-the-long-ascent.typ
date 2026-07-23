@@ -173,6 +173,42 @@ By Wave 2, your modlist is fully layered. Here's how the mods work together duri
   This layered integration is the philosophy of the 3-wave system. Each wave builds on the previous one, and by Wave 2, your mods form a coherent whole rather than a pile of independent addons.
 ]]
 
+#section-heading([Community Navball Docking Alignment Indicator])
+
+By Wave 2, you should be comfortable docking without DPAI's separate window. The Navball DAI replaces it with a marker directly on the navball.
+
+- *Green marker:* Your docking port is aligned with the target port. Approach slowly.
+- *Red marker:* Misaligned. Translate (I/J/K/L) to center the marker.
+- *Range ring:* A circle around the marker indicates distance. It shrinks as you get closer.
+- *Prograde marker:* The standard prograde marker still shows relative velocity. Keep it centered on the DAI marker for a perfect straight-in approach.
+
+#tip[[
+  Switch your camera to "Chase" mode (V key) and align the view with your docking port. The navball, camera, and DAI marker all agree — approach becomes trivial.
+]]
+
+#section-heading([Extraplanetary Launchpads — Building Off-World])
+
+Extraplanetary Launchpads (EL) lets you build vessels anywhere — no Kerbin required. SimpleConstruction is a lighter alternative with fewer parts.
+
+#section-heading([The Build Chain])
+
+1. *Mine:* Extract MetalOre with standard drills (same as stock ore drilling).
+2. *Smelt:* Convert MetalOre → Metal in a smelter part.
+3. *Build:* Convert Metal → RocketParts in a workshop. RocketParts are the construction currency.
+4. *Construct:* Open the EL construction window (toolbar button), select a craft file, assign a survey stake or docking port as the spawn point. The workshop consumes RocketParts over time.
+5. *Launch:* The vessel materializes at the spawn point — fully fueled if you supplied tanks of fuel.
+
+#section-heading([Production Rates])
+
+- A single workshop with 2 engineers produces ~1 ton of RocketParts per day.
+- A small probe (~5 tons) takes 5 days; a large lander (~50 tons) takes 50+ days.
+- Multiple workshops stack. 4 workshops + 8 engineers = 4× speed.
+- Time warp works during construction. Set KAC alarm for completion.
+
+#info[[
+  Build a survey station (the EL survey part) near your mining base. The survey station increases build range and provides a construction waypoint. Without it, you can only build at the exact location of the workshop.
+]]
+
 // ═══════════════════════════════════════════════════════════════════
 // STRATEGY GUIDE
 // ═══════════════════════════════════════════════════════════════════
@@ -428,3 +464,17 @@ With all Wave 2 mods active, the systems interact:
 #tip[[
   When all systems are active, Minmus becomes your most important asset. Its low gravity means cheap ISRU, its high ore concentration means efficient resource extraction, and its location at Kerbin's edge means you're already partway out of the gravity well. Build your first major colony on Minmus, not the Mun.
 ]]
+
+#pagebreak()
+#chapter-heading([Player Challenges — Wave 2])
+
+Endgame challenges requiring colonies, interstellar travel, or both.
+
+- *Duna Self-Sufficiency:* Build a Duna colony that produces all Supplies, Fuel, and RocketParts locally. No resupply from Kerbin for 5+ years.
+- *Jool Gateway:* Assemble a station in Jool orbit with 200+ parts, crew capacity of 12+, and fuel reserves of 50,000+ units. It should service missions to all 5 moons.
+- *Wormhole Probe:* Send an uncrewed probe through the Kcalbeloh wormhole near Jool. Map the destination system with SCANsat and transmit data back.
+- *Interstellar Crewed:* Launch a crewed mission to Grannus, land on at least one planet, and return all kerbals safely to Kerbin. Use FFT engines for transit and Blueshift for return.
+- *Warp Network:* Deploy Blueshift warp coils at Kerbol, Jool, Grannus, and Kcalbeloh. Any ship must be able to warp between any two coils.
+- *Tylo Solo:* Land on Tylo and return using a single-stage lander — no asparagus staging, no drop tanks. Pure engineering.
+- *Colony Empire:* Establish self-sustaining colonies at Minmus, Duna, Laythe, Vall, and Grannus II. Each must produce Supplies and RocketParts locally.
+- *Grand Tour:* Visit every planet and moon in the Kerbol system (stock + OPM + Minor Planets + QuackPack) in a single save file. Flag on each. Interstellar destinations are bonus.
