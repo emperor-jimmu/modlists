@@ -190,17 +190,6 @@
   notes: none,
 )
 
-#mod-entry(
-  name: "Myriad Pro Begone",
-  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1070",
-  game: "Launcher",
-  version: "v1.4",
-  last-checked: "2026-07",
-  deps: ("ME3Tweaks Mod Manager",),
-  impact: [Replaces the Myriad Pro font used throughout all three games' user interfaces with a cleaner, more readable alternative. Fixes character differentiation issues (L/I distinction), improves text alignment, adds drop shadows to LE2 dialogue wheel text, and fixes various UI text scaling issues across LE1, LE2, and LE3. Uses M3's merge functionality for compatibility.],
-  notes: [Applies to all three games (LE1, LE2, LE3). Compatible with EGM's expanded Squad Select UI (v1.4+). Native support for iOS Datapad Messages Integration (v1.3+).],
-)
-
 == Weapons and Armor
 
 #mod-entry(

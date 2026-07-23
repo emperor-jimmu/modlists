@@ -64,4 +64,5 @@
 #include "09-le1.typ"
 #include "10-le2.typ"
 #include "11-le3.typ"
+#include "12-launcher.typ"
 // 98-conflicts.typ and 99-mod-ideas.typ are reference files only — not included in the PDF.
