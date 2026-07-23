@@ -61,27 +61,41 @@
 // ─── Prologue ─────────────────────────────────────────────────────
 
 #pagebreak()
-#set align(center)
-#set text(font: heading-font, size: 18pt, fill: awe-gold)
-[Prologue]
-#v(1cm)
-
-#set align(left)
-#set text(font: body-font, size: 11pt, fill: mun-gray)
-
-We used to look up at the sky and wonder at our place in the cosmos. Now we look down and wonder at ours. KSP gives you a universe and asks: what will you do with it?
-
-That question has no right answer. You might land on the Mun and call it a career. You might build a station, a colony, an empire spanning star systems. You might strand Jebediah on Eve and spend the rest of your save trying to bring him home. All of these are valid. All of them are the point.
-
-This guide is not a checklist. It's a companion. It will teach you to fly, to land, to dock, to mine, to build, to travel between stars. But between the instructions, it will also remind you: stop. Look around. You are standing on a moon orbiting a gas giant in a simulated solar system you assembled yourself from a hundred mods written by strangers who love space as much as you do. That's not a loading screen. That's a miracle.
-
-The mods in this list were chosen to serve a feeling — the awe of exploration, the solitude of deep space, the terror and beauty of the unknown. You'll hear it in the engine roar at liftoff. You'll see it in the accretion disk of a black hole. You'll feel it in the silence between stars.
-
-The Long Ascent is not just a journey upward. It's a journey outward. Into the dark. Into the strange. Into the places Kerbals have never been.
-
-Take your time. There's no hurry. The stars will wait.
+{
+  set align(center)
+  set text(font: heading-font, size: 18pt, fill: awe-gold)
+  [Prologue]
+}
 
 #v(1cm)
+
+{
+  set text(font: body-font, size: 11pt, fill: text-dark)
+  set par(leading: 0.7em, justify: true)
+
+  We used to look up at the sky and wonder at our place in the cosmos. Now we look down and wonder at ours. KSP gives you a universe and asks: what will you do with it?
+
+  That question has no right answer. You might land on the Mun and call it a career. You might build a station, a colony, an empire spanning star systems. You might strand Jebediah on Eve and spend the rest of your save trying to bring him home. All of these are valid. All of them are the point.
+
+  This guide is not a checklist. It's a companion. It will teach you to fly, to land, to dock, to mine, to build, to travel between stars. But between the instructions, it will also remind you: stop. Look around. You are standing on a moon orbiting a gas giant in a simulated solar system you assembled yourself from a hundred mods written by strangers who love space as much as you do. That's not a loading screen. That's a miracle.
+
+  The mods in this list were chosen to serve a feeling — the awe of exploration, the solitude of deep space, the terror and beauty of the unknown. You'll hear it in the engine roar at liftoff. You'll see it in the accretion disk of a black hole. You'll feel it in the silence between stars.
+
+  The Long Ascent is not just a journey upward. It's a journey outward. Into the dark. Into the strange. Into the places Kerbals have never been.
+
+  Take your time. There's no hurry. The stars will wait.
+}
+
+#v(1cm)
+
+{
+  set align(center)
+  set text(font: body-font, size: 10pt, fill: ksp-teal, style: "italic")
+  ["Do not go gentle into that good night."]
+  v(0.2em)
+  set text(style: "normal")
+  [— Dylan Thomas]
+}
 
 // ─── Before You Begin ─────────────────────────────────────────────
 
@@ -119,13 +133,15 @@ This modlist is structured in four cumulative waves. Each adds complexity, parts
 Install one wave at a time. Play it until the experiences it offers feel familiar. Then install the next. The guide will be here when you're ready.
 
 #v(1cm)
-#set align(center)
-#set text(font: body-font, size: 10pt, fill: mun-gray, style: "italic")
-The guide assumes patience. The guide assumes curiosity. The guide assumes you want to go further than anyone has gone before.
 
-#v(0.2em)
-
-Let's begin.
+{
+  set align(center)
+  set text(font: body-font, size: 10pt, fill: mun-gray, style: "italic")
+  [The guide assumes patience. The guide assumes curiosity. The guide assumes you want to go further than anyone has gone before.]
+  v(0.2em)
+  set text(style: "normal")
+  [Let's begin.]
+}
 
 // ─── Table of Contents ───────────────────────────────────────────
 
