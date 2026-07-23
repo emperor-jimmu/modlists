@@ -10,9 +10,9 @@
 ### Wave 0 — Foundation (~65 mods incl. deps)
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Status Effect Bars Reforged, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged, Cosy Critters, Foxified Dense Flowers
-- [x] Inventory/UI: JEI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Mouse Tweaks, Inventory Essentials, Fancy Toasts, Tooltip Overhaul, Loot Journal, Reliable Advancements, Polymorph, Shulker Box Tooltip, Item Borders
+- [x] Inventory/UI: EMI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Mouse Tweaks, Inventory Essentials, Advancement Plaques, Tooltip Overhaul, Loot Journal, Reliable Advancements, Polymorph, Shulker Box Tooltip, Item Borders
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
-- [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U, Balm
+- [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U, Balm, Iceberg
 - [x] Added YUNG's API to New Dependencies
 
 ### Wave 1 — Tech, Colony & Chunk Loading (~22 mods)
@@ -107,6 +107,9 @@
 - [x] More Delight version pin fixed: 3.5.0 → 26.05.20a-1.21-neoforge (3.5.0 doesn't exist; mod uses date-based versioning)
 - [x] Added Delight Lib as Wave 4 dependency (required by More Delight v26.04.30+)
 - [x] Switched all Wave 4 mod URLs to Modrinth
+- [x] Replaced JEI with EMI — recipe viewer with recipe trees, craftable mode, favorites, zero dependencies
+- [x] Replaced Fancy Toasts with Advancement Plaques — glowing plaque popups (copper/silver/gold borders), requires Iceberg
+- [x] Added Iceberg as Wave 0.5 dependency (Advancement Plaques library)
 
 ## Completed Decisions
 
@@ -166,7 +169,6 @@
 - [x] Wakes Reforged (Wave 0 — Visual & Client QoL)
 - [x] Shulker Box Tooltip (Wave 0 — Inventory & UI)
 - [x] Item Borders (Wave 0 — Inventory & UI)
-- [x] Smooth Font 32x (Wave 0 — Texture Pack)
 - [x] Vanilla Refresh → Typewriter Day Counter → Day Counter mod (Wave 0 — Visual & Client QoL)
 
 ### Removed Mods (Jul 2026 batch 2)
@@ -255,10 +257,10 @@
 - [x] Foxified Dense Flowers v1.0.0 (Wave 0.5 — Visual & Client QoL) — renders multiple flowers per block in flower fields. NeoForge 1.21.1 native, client-side only. NeoForge port of the original Fabric mod (172K downloads, MIT licensed). By owen233.
 
 ### Skipped After Review (Jul 2026 batch 7 — Foliage Resource Packs)
-- [x] Rainbow's Foliage — requires Polytone mod (unverified NeoForge 1.21.1), 16x textures clash with Alacrity 32x. Model/blockstate conflicts with Alacrity.
-- [x] Os' Colorful Grasses — 16x grass textures clash with Alacrity 32x RPG art style.
-- [x] Mickey Joe's Flowers — 16x 3D flower models clash with Alacrity 32x. High quality (94K downloads, updated Jul 2026) but visual inconsistency.
-- [x] Bushy Pink Petals, Wildflowers & Leaf Litter — 16x ground cover clashes with Alacrity 32x. Last updated Aug 2025.
-- [x] (Bee's) Fancy Crops — 16x crop textures clash with Alacrity 32x. Built for Farmer's Delight (14.9M downloads, GrandArtisan creator) but resolution mismatch is unresolvable.
-- [x] Retextured Vine — 16x vine textures clash with Alacrity 32x. Too narrow in scope (vines only, 22K downloads) to justify pack-order headache.
+- [x] Rainbow's Foliage — requires Polytone mod (unverified NeoForge 1.21.1)
+- [x] Os' Colorful Grasses — low download count, niche scope
+- [x] Mickey Joe's Flowers — 16x resolution, last updated Jul 2026
+- [x] Bushy Pink Petals, Wildflowers & Leaf Litter — 16x ground cover, last updated Aug 2025
+- [x] (Bee's) Fancy Crops — 16x resolution, niche scope
+- [x] Retextured Vine — too narrow in scope (vines only, 22K downloads) to justify pack-order headache
 - [x] LambdaBetterGrass — Fabric-only (requires Fabric API + ModMenu). No NeoForge version exists. 9.2M downloads but on wrong modloader.

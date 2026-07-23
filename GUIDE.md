@@ -62,15 +62,7 @@ For texture packs, drop `.zip` files into the instance's **Resource Packs** tab 
 |------------------------------------|---------------------------------|
 | [NeoForge](https://neoforged.net/) | Mod loader for Minecraft 1.21.1 |
 
-NeoForge is the mod loader powering this modpack. **XMCL installs NeoForge and Minecraft 1.21.1 automatically** when you create a NeoForge instance (see [XMCL](#x-minecraft-launcher-xmcl) above). This is the recommended path — XMCL handles the Minecraft version, mod loader, and Java runtime in one step.
-
-**Using XMCL (recommended)**:
-
-1. In XMCL, create a new instance: click **+** → select Minecraft **1.21.1** and modloader **NeoForge** (latest recommended for 1.21.1).
-2. XMCL downloads Minecraft 1.21.1, NeoForge, and the correct Java version automatically.
-3. Launch the instance once to generate the `mods/` directory and NeoForge configs.
-4. Verify the main menu shows "NeoForge X.X.X" in the bottom-left corner.
-5. From then on, install mods through the instance's **Mods** tab — search CurseForge or Modrinth, or drop `.jar` files into the instance's `mods/` folder.
+NeoForge is the mod loader powering this modpack. **XMCL installs NeoForge and Minecraft 1.21.1 automatically** when you create a NeoForge instance (see [XMCL](#x-minecraft-launcher-xmcl) above). Follow the XMCL steps — it handles the Minecraft version, mod loader, and Java runtime in one step.
 
 If you prefer the official launcher:
 
@@ -222,19 +214,11 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | Pack                                                                                                                              | Role                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)                                           | Living entity animation overhaul — mobs blink, look around, show emotion  |
-| [Alacrity](https://www.curseforge.com/minecraft/texture-packs/alacrity)                                                           | Full 32x conversion — RPG-themed textures, GUI overhaul, custom 3D models |
-| [Alacrity — Just Enough Items Support](https://www.curseforge.com/minecraft/texture-packs/alacrity-jei-support)                   | Retextures JEI (+8 addons) to match Alacrity's RPG style                  |
-| [Alacrity — Shulker Box Tooltip Support](https://www.curseforge.com/minecraft/texture-packs/alacrity-shulker-box-tooltip-support) | Retextures Shulker Box Tooltip previews to match Alacrity's RPG style     |
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars)                                       | Redesigned boss bars with themed designs for vanilla and modded bosses    |
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                | 3D block & item textures for all rail types                               |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)                                             | Enhanced 3D look for lanterns and chains                                  |
-| [Smooth Font 32x](https://www.curseforge.com/minecraft/texture-packs/smooth-font)                                                 | Smooth 32x font replacement for cleaner text readability                  |
 
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
-
-**Alacrity** is a full 32x conversion with an RPG-inspired art style — all blocks, items, GUI elements, and mobs are redesigned with a cohesive fantasy look. Draws from Warcraft, Elder Scrolls, and Gothic for its aesthetic. Custom 3D models (CEM) require a mod like Entity Model Features but the base pack works with any setup.
-
-**Alacrity Mod Support packs** (by TheDatThai) extend Alacrity's RPG styling to mod UIs: JEI and Shulker Box Tooltip. Place these **below** the base Alacrity pack — putting them above corrupts JEI/Shulker graphics (mismatched textures).
 
 **Enhanced Boss Bars** replaces boss bar textures with themed designs — covers vanilla bosses and has support for Twilight Forest bosses. For full compatibility with L_Ender's Cataclysm and The Aether (which use custom boss bar rendering), install the companion [Enhanced Boss Bars mod](https://www.curseforge.com/minecraft/mc-mods/enhanced-boss-bars-mod). Pure resource pack for vanilla/Twilight Forest bars.
 
@@ -245,13 +229,9 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
 1. Fresh Animations
-2. Alacrity
-3. Alacrity — Just Enough Items Support
-4. Alacrity — Shulker Box Tooltip Support
-5. Enhanced Boss Bars
-6. RAY's 3D Rails
-7. Better Lanterns
-8. Smooth Font 32x
+2. Enhanced Boss Bars
+3. RAY's 3D Rails
+4. Better Lanterns
 
 ### Infrastructure
 
@@ -316,27 +296,9 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 #### 4. Texture Pack Load Order (top = highest priority)
 
 1. Fresh Animations
-2. Alacrity
-3. Alacrity — JEI Support
-4. Alacrity — Shulker Box Tooltip Support
-5. Enhanced Boss Bars
-6. RAY's 3D Rails
-7. Better Lanterns
-8. Smooth Font 32x
-
-**Alacrity support packs go BELOW the base Alacrity pack** — putting them above corrupts JEI graphics.
-
-#### 5. JVM Arguments (XMCL → instance settings → Java → JVM Arguments)
-
-```
--XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:SoftMaxHeapSize=12G -Xms8G -Xmx8G
-```
-
-| System RAM | Allocation                                |
-|------------|-------------------------------------------|
-| 16 GB      | `-Xms6G -Xmx10G -XX:SoftMaxHeapSize=8G`   |
-| 32 GB      | `-Xms12G -Xmx22G -XX:SoftMaxHeapSize=12G` |
-| 64 GB      | `-Xms12G -Xmx32G -XX:SoftMaxHeapSize=12G` |
+2. Enhanced Boss Bars
+3. RAY's 3D Rails
+4. Better Lanterns
 
 ---
 
@@ -373,7 +335,7 @@ Keeps chunks loaded when you're far away or in another dimension.
 | Spotloader          | Handheld, temporary | Explore nearby            |
 | Multi Chunk Loader  | 3×3 chunks          | Factory complex or colony |
 
-**How**: Craft (check JEI — iron + redstone + ender pearl), place, right-click to toggle. Colored border shows loaded area.
+**How**: Craft (check EMI — iron + redstone + ender pearl), place, right-click to toggle. Colored border shows loaded area.
 
 **Placement priority** (late game):
 
@@ -432,7 +394,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 
 | Mod                                                                                           | Role                                                               |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [JEI](https://www.curseforge.com/minecraft/mc-mods/jei)                                       | Recipe viewer                                                      |
+| [EMI](https://www.curseforge.com/minecraft/mc-mods/emi)                                       | Recipe viewer with recipe trees                                    |
 | [Jade](https://www.curseforge.com/minecraft/mc-mods/jade)                                     | Block info HUD                                                     |
 | [Jade Addons (Neo/Forge)](https://www.curseforge.com/minecraft/mc-mods/jade-addons-forge)     | Extra Jade info panels                                             |
 | [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)                         | Real-time minimap + full-screen world map, waypoints, entity radar |
@@ -440,7 +402,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                           | Food hunger/saturation overlay                                     |
 | [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                     | Inventory management shortcuts                                     |
 | [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)     | Drag-to-transfer, single-item moves, sorting                       |
-| [Fancy Toasts](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts)                     | Beautiful animated advancement popups                              |
+| [Advancement Plaques](https://www.curseforge.com/minecraft/mc-mods/advancement-plaques)  | Glowing plaque advancement popups with copper/silver/gold borders   |
 | [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)         | Preview shulker box contents on hover                              |
 | [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                     | Colored borders on items based on rarity                           |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)            | Animated item pickup notifications                                 |
@@ -487,10 +449,11 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | Mod                                                                               | Role                                                       | Required By                                                |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------|
 | [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility — lets Fabric mods run on NeoForge | First Person Model, Eating Animation, multiple Wave 1-3+ mods |
+| [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)                  | Library for config-driven UI mods                           | Advancement Plaques                                         |
 
 **Architectury API** is a lightweight library with no user-visible features — install once and forget. It provides the abstraction layer that lets Fabric-origin client QoL mods (First Person Model, Eating Animation) run seamlessly on NeoForge. Without it, these mods crash at startup with a missing-dependency error.
 
-**Install**: In XMCL, search `Architectury API` in the Mods tab and add it. Alternatively, download from CurseForge and drop the `.jar` into `mods/`. No config needed. The game loads it silently — you'll never see it in-game, but JEI's mod list confirms it's present.
+**Install**: In XMCL, search `Architectury API` in the Mods tab and add it. Alternatively, download from CurseForge and drop the `.jar` into `mods/`. No config needed. The game loads it silently — you'll never see it in-game, but EMI's mod list confirms it's present.
 
 ### Configuration — Wave 0.5
 
@@ -691,9 +654,9 @@ Renders multiple flowers per block in flower fields — the more flowers adjacen
 
 ### Inventory & UI — Your Daily Tools
 
-#### JEI (Just Enough Items)
+#### EMI
 
-Your primary learning tool. **Hover any item, press `R`** to see how to craft it. **Press `U`** to see what it's used in. Every mod in future waves is learned through JEI first.
+Your primary learning tool. **Hover any item, press `R`** to see how to craft it. **Press `U`** to see what it's used in. Every mod in future waves is learned through EMI first. EMI also shows recipe trees — break down complex crafts (Create sequenced assembly, Mekanism ore processing chains) into every step, showing base ingredients and leftovers.
 
 #### Jade + Jade Addons
 
@@ -747,11 +710,11 @@ Animated pickup notifications near your hotbar. Session summary on disconnect sh
 
 #### Reliable Advancements
 
-Overhauled advancements UI — larger screen, pan/zoom, tab sorting, search. Open with `L`. Pairs with Fancy Toasts (animated popups).
+Overhauled advancements UI — larger screen, pan/zoom, tab sorting, search. Open with `L`. Pairs with Advancement Plaques (glowing popup banners).
 
-#### Fancy Toasts
+#### Advancement Plaques
 
-Beautiful animated advancement popups. No config.
+Glowing advancement plaques replace vanilla popups — copper for Tasks, silver for Goals, gold for Challenges. Requires **Iceberg** (auto-installed). Configurable position, distance, and whitelist filter.
 
 #### Polymorph
 
@@ -799,7 +762,7 @@ Forces villages to spawn on flat terrain. No more cliff-side or underwater villa
 
 | Session                         | Goal                                                                                                                                                                                                           |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality). Install Complementary Unbound shader. Enable Alacrity + Fresh Animations texture packs. Walk around spawn to generate LOD data |
+| **Session 1 — Setup**           | Launch, set keybinds, configure Distant Horizons (LOD 128-256, Medium quality). Install Complementary Unbound shader. Enable Fresh Animations texture pack. Walk around spawn to generate LOD data |
 | **Session 2 — Survival basics** | Punch trees, build a starter shack, find food, get iron. Place your first Waystone. Craft a Sophisticated Storage barrel. Craft a backpack                                                                     |
 | **Session 3 — Comfort**         | Explore nearby terrain. Find a village. Set up a bed. Light up your base perimeter. Start noticing Traveler's Titles when entering new biomes                                                                  |
 
@@ -885,7 +848,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 - **Sophisticated Storage Create Integration** and **Sophisticated Backpacks Create Integration** (both by P3pp3rF1y) enable full backpack and barrel functionality on Create contraptions — upgrades, automation features (pickup, magnet, feeding), and inventory settings all work while the contraption is in motion. Without these addons, Sophisticated inventories on contraptions are limited to basic item transport.
 - **Applied Mekanistics** bridges AE2 autocrafting with Mekanism's chemical processing — ME Chemical Output Buses, ME Chemical Import Buses, and P2P tunnels for chemicals/gases enable autocrafting of Mekanism recipes (including fission/fusion products) directly through the AE2 crafting CPU. Without this mod, Mekanism chemical steps are manual bottlenecks.
 - **Create: The Factory Must Grow** adds oil drilling, distillation towers, blast furnaces, and diesel engines — expanding Create's mechanical toolkit into heavy industry. Its steel replaces Mekanism's steel (TFMG's blast furnace is the intended steel source; Mekanism's steel recipe is disabled by the Mekanism TFMG Compat mod). TFMG aluminum and plastic feed into Mekanism's advanced processing chains.
-- **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both JEI item blacklist config and per-recipe toggles are available for pack tuning.
+- **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both EMI item blacklist config and per-recipe toggles are available for pack tuning.
 
 The core tech trio. Create handles mechanical automation, Mekanism handles industrial processing, AE2 handles digital storage and autocrafting. Install all three core mods plus addons at once.
 
@@ -895,12 +858,12 @@ The core tech trio. Create handles mechanical automation, Mekanism handles indus
 
 Create is about **rotational power (SU)**. Machines consume SU to run. If consumption exceeds generation, machines stop.
 
-**Learning with Ponder**: Hold `W` while hovering over any Create block/item in JEI. An animated tutorial plays showing exactly how it works. **Use Ponder constantly** — it's better than any written guide.
+**Learning with Ponder**: Hold `W` while hovering over any Create block/item in EMI. An animated tutorial plays showing exactly how it works. **Use Ponder constantly** — it's better than any written guide.
 
 **First Create setup**:
 
 1. Mine **andesite** — the most important early resource
-2. Craft **andesite casing** (andesite + wood nugget in JEI)
+2. Craft **andesite casing** (andesite + wood nugget in EMI)
 3. Craft **cogwheel** and **large cogwheel** — transfer rotational power
 4. Place a **hand crank** → attach cogwheel → attach **millstone** → right-click crank to grind wheat/ore manually
 5. Build a **water wheel** in flowing water (2–3 block drop) → attach shaft → power 2–3 basic machines (256 SU)
@@ -922,7 +885,7 @@ Create is about **rotational power (SU)**. Machines consume SU to run. If consum
 - Goggles: `G` (hold over machine) — shows SU, RPM, stress info
 - Toolbox: `T` (hold)
 
-**Goggles** are essential — craft early, check JEI.
+**Goggles** are essential — craft early, check EMI.
 
 #### Mekanism — Industrial Processing
 
@@ -1101,7 +1064,7 @@ Steampunk firearms crafted using Create machines. Animated guns with attachments
 
 **Getting started**:
 
-1. Build a **Gunsmithing Table** (check JEI — uses Create brass + wood)
+1. Build a **Gunsmithing Table** (check EMI — uses Create brass + wood)
 2. Craft **gun frames** — pistol, rifle, shotgun, each with different stats
 3. Craft **barrels, grips, magazines** at the mechanical press
 4. Assemble at the Gunsmithing Table
@@ -1117,7 +1080,7 @@ Steampunk firearms crafted using Create machines. Animated guns with attachments
 
 Mechanical flapping glider powered by Create rotational power.
 
-**How**: Craft the glider (check JEI — brass + leather + feathers). Equip in chest slot. Hold jump to flap (consumes SU from a connected power source or internal buffer). Boost-assisted flight for short bursts.
+**How**: Craft the glider (check EMI — brass + leather + feathers). Equip in chest slot. Hold jump to flap (consumes SU from a connected power source or internal buffer). Boost-assisted flight for short bursts.
 
 **Use**: Early flight before MekaSuit. Pairs with Create windmills or water wheels for power.
 
@@ -1144,7 +1107,7 @@ Together: tracks → stations → navigation → interiors → detailing → per
 
 Ore detection devices with directional indicators for nearby ore veins.
 
-**How**: Craft a finder (check JEI — tiers for different ores). Hold it — arrows point toward nearest vein, distance shown on HUD. Synchronized in multiplayer.
+**How**: Craft a finder (check EMI — tiers for different ores). Hold it — arrows point toward nearest vein, distance shown on HUD. Synchronized in multiplayer.
 
 #### Advanced Chimneys
 
@@ -1490,7 +1453,7 @@ Vanilla-style flyable aircraft. Mid-game (requires iron + basic Create/Mek mater
 | Warship       | Coal/charcoal | 3     | 9 slots  | Armed combat, defense        |
 | Gyrocopter    | Coal/charcoal | 1     | None     | Agile short-range flight     |
 
-**How**: Craft at table (check JEI — iron + wool/leather), place on ground, right-click to enter. `W` to ascend, `S` to descend, `A/D` to rotate. Any furnace fuel works.
+**How**: Craft at table (check EMI — iron + wool/leather), place on ground, right-click to enter. `W` to ascend, `S` to descend, `A/D` to rotate. Any furnace fuel works.
 
 **Integration**: Aircraft work in the **Aether** — fly between sky islands without bridges. Park indoors or on high platforms (mobs damage parked aircraft).
 
@@ -1513,7 +1476,7 @@ Buildable, sailable ships. **Phase 1 accessible** — requires wood, wool, iron.
 
 Simple fabric-and-wood glider. **Phase 1 accessible** — requires only wood and leather, no fuel or power.
 
-- Craft the glider (check JEI — wood + leather + string)
+- Craft the glider (check EMI — wood + leather + string)
 - Equip in your hand and jump off any height to glide
 - Hold forward to maintain speed, steer with mouse
 - Dismount by pressing sneak — you'll drop safely to the ground
@@ -1530,7 +1493,7 @@ Adds two Create-themed aircraft to Immersive Aircraft. **Phase 2 accessible** �
 - **Two new aircraft** — brass-and-mechanical themed designs
 - Uses the same fuel, parking, and controls as base Immersive Aircraft
 - Works in the Aether dimension like all Immersive Aircraft
-- Craft recipes available in JEI
+- Craft recipes available in EMI
 
 **Integration**: These aircraft offer a visual and thematic bridge between Create (Wave 1) and Immersive Aircraft (Wave 2). A player deep in Create will appreciate aircraft that match their factory's aesthetic.
 
@@ -2010,7 +1973,7 @@ Every action earns XP. Spend points on permanent stat bonuses.
 
 30+ unique bows with special abilities and custom attributes.
 
-**How they work**: Each bow has a unique passive or activated ability. Check JEI for recipes and stats. Some shoot multiple arrows, some inflict status effects, some have special draw mechanics.
+**How they work**: Each bow has a unique passive or activated ability. Check EMI for recipes and stats. Some shoot multiple arrows, some inflict status effects, some have special draw mechanics.
 
 **Finding them**: Dungeon chests, mob drops, and boss loot. Combine with Apotheosis gem socketing for even more damage.
 
@@ -2022,7 +1985,7 @@ Spears, halberds, pikes, lances, throwing knives — fills the polearm gap that 
 
 **Key feature**: Extended reach on all polearms (hit from 2-4 blocks away). Throwing weapons return after being thrown.
 
-**Finding them**: Crafted at table (check JEI — wood/stone/iron/gold/diamond/netherite tiers). Lower tiers craftable early; higher tiers gate behind material progression.
+**Finding them**: Crafted at table (check EMI — wood/stone/iron/gold/diamond/netherite tiers). Lower tiers craftable early; higher tiers gate behind material progression.
 
 ### Relics RPG — Legendary Accessories
 
@@ -2112,16 +2075,16 @@ Socketable permanent stat boosts:
 | **Cut**      | Rough + Gem Cutting Station + dust | +50% stat value  |
 | **Flawless** | 2 Cut gems of same type + station  | +100% stat value |
 
-**Gem Cutting Station**: Craft (check JEI), place rough gem + dust → cut gem. Dust from breaking unwanted cut gems.
+**Gem Cutting Station**: Craft (check EMI), place rough gem + dust → cut gem. Dust from breaking unwanted cut gems.
 
-**Gem Socketing Table**: Craft (check JEI), place item + gem in socket slot. Limited sockets per gear piece — expand with socketing tools.
+**Gem Socketing Table**: Craft (check EMI), place item + gem in socket slot. Limited sockets per gear piece — expand with socketing tools.
 
 #### Enchanting Overhaul
 
 - **Higher level cap**: Sharpness VIII, Protection VIII, Fortune V, Looting V possible
 - **Tiered bookshelves**: Hell, Seashelf, Endshelf enable higher enchantment levels
 - **Library of Alexandria**: Stores all enchanted books in one block
-- **30+ new enchantments**: Check JEI for full list
+- **30+ new enchantments**: Check EMI for full list
 
 #### Boss Affixes
 
@@ -2240,7 +2203,7 @@ Craft: 2 iron + 2 planks + 1 bowl. Place over a heat source:
 
 #### Kitchen Storage
 
-Craft **oak/pantry cabinets** (check JEI — varies by wood). Function as chests with kitchen aesthetics.
+Craft **oak/pantry cabinets** (check EMI — varies by wood). Function as chests with kitchen aesthetics.
 
 **Tip**: Set up kitchen near your AE2 network. Cook manually or stock ingredients in ME drives for autocrafting.
 
@@ -2250,7 +2213,7 @@ Alcohol brewing with aging mechanics. Grow hops, barley, grapes on farmland.
 
 #### Brewing Station
 
-Craft (check JEI — barrel-like recipe). Right-click to open GUI.
+Craft (check EMI — barrel-like recipe). Right-click to open GUI.
 
 1. Add **water** + main ingredient:
    - Barley → beer base (wort)
@@ -2262,7 +2225,7 @@ Craft (check JEI — barrel-like recipe). Right-click to open GUI.
 
 #### Aging Barrel
 
-Craft (check JEI — wooden barrel). Place fermented mixture inside, right-click to seal.
+Craft (check EMI — wooden barrel). Place fermented mixture inside, right-click to seal.
 
 Ages one stage per in-game day: Young → Matured → Aged → Vintage (4 stages). Each stage increases status effect potency and duration.
 
@@ -2298,7 +2261,7 @@ Decorative kitchen storage that works as functional inventory:
 - **Knife variants**: Diamond and netherite knives (much longer lasting than iron)
 - **New cooking pot recipes**: Stews, soups, pasta dishes
 
-All recipes visible in JEI. Uses existing cutting board and cooking pot.
+All recipes visible in EMI. Uses existing cutting board and cooking pot.
 
 ### My Nether's Delight — Nether Food
 
@@ -2578,7 +2541,7 @@ Tools and blocks to build the base you deserve.
 
 **How**:
 
-1. Craft **chisel** (iron + 2 sticks, check JEI)
+1. Craft **chisel** (iron + 2 sticks, check EMI)
 2. Right-click with chisel → chiseling screen
 3. Place base block in input slot → browse all variants
 4. Click variant to preview (cycles through single block, row, 3×3 grid)
@@ -2686,7 +2649,7 @@ Place many blocks at once. Closest thing to WorldEdit without a server plugin.
 
 Reflective mirror block showing the nearest player's reflection.
 
-**How**: Craft (check JEI — glass + frame materials). Place on wall. Shows your character model in real-time, including armor and held items.
+**How**: Craft (check EMI — glass + frame materials). Place on wall. Shows your character model in real-time, including armor and held items.
 
 **Use**: Decorative vanity mirrors in bedrooms and dressing rooms. Purely aesthetic — no functional gameplay effect.
 
@@ -2795,7 +2758,7 @@ Complete space exploration mod. Build rockets piece by piece, manage oxygen and 
 **Step 4 — Prepare for launch**:
 
 1. Fill fuel tank from Refinery (fluid pipes or buckets)
-2. Equip **Space Suit** (check JEI — steel + glass + rubber/leather)
+2. Equip **Space Suit** (check EMI — steel + glass + rubber/leather)
 3. Fill suit with oxygen at Oxygen Distributor
 4. Stock supplies: food (Farmer's Delight meals work with oxygen), blocks, torches, weapons
 
@@ -2884,8 +2847,8 @@ Start with Moon missions, establish Tier 1 base, then Mercury/Venus. Mars and Gl
 
 | Keybind               | Suggested             | Mod                     | Wave |
 |-----------------------|-----------------------|-------------------------|------|
-| View Recipes          | `R`                   | JEI                     | 0    |
-| View Uses             | `U`                   | JEI                     | 0    |
+| View Recipes          | `R`                   | EMI                     | 0    |
+| View Uses             | `U`                   | EMI                     | 0    |
 | Open Fullscreen Map   | `J`                   | JourneyMap              | 0    |
 | Toggle Minimap        | **Check default**     | JourneyMap              | 0    |
 | Open Waystone Menu    | `Ctrl+Shift+W`        | Waystones               | 0    |
@@ -2917,7 +2880,7 @@ Start with Moon missions, establish Tier 1 base, then Mercury/Venus. Mars and Gl
 
 ### Finding Help
 
-- **JEI (`R`/`U`)** — always your first stop. Hover any item, press R for recipe, U for uses
+- **EMI (`R`/`U`)** — always your first stop. Hover any item, press R for recipe, U for uses
 - **Ponder (`W` over Create blocks)** — interactive animated tutorials. Better than any wiki
 - **Mod Menu / Configured** — every installed mod's config screen
 - Most mods link to their wiki or Discord from Mod Menu entry

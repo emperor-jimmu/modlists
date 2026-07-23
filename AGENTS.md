@@ -86,14 +86,14 @@ Configuration        All non-default config overrides live in config/
 Mod Management       Add mods one wave at a time, test launch after each wave
                      Never add a mod that duplicates an existing mod's role
                         QoL and performance mods are encouraged:
-                         - JEI / Jade (recipe and block info)
+                         - EMI / Jade (recipe and block info)
                          - Sodium (performance)
                          - Iris (shader loader — enables shaderpacks)
                          - Distant Horizons (LOD — extreme render distance)
                          - Xaero's Minimap / JourneyMap (minimap)
                          - AppleSkin (food info)
                          - Loot Journal (pickup notifications)
-                         - Fancy Toasts (advancement toasts)
+                         - Advancement Plaques (advancement plaques)
 
                          - Immersive UI (animated UI, smooth hotbar, item particles)
                          - Traveler's Titles (biome/dimension entry titles)
