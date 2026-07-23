@@ -213,10 +213,13 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 | Pack                                                                                                                              | Role                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [Smooth Font](https://www.curseforge.com/minecraft/texture-packs/smooth-font)                                                     | 32x smooth font — clean modern typeface, Faithful 32x-based              |
 | [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations)                                           | Living entity animation overhaul — mobs blink, look around, show emotion  |
 | [Enhanced Boss Bars](https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars)                                       | Redesigned boss bars with themed designs for vanilla and modded bosses    |
 | [RAY's 3D Rails](https://www.curseforge.com/minecraft/texture-packs/rays-3d-rails)                                                | 3D block & item textures for all rail types                               |
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)                                             | Enhanced 3D look for lanterns and chains                                  |
+
+**Smooth Font** replaces Minecraft's pixelated default font with a clean, smooth 32x typeface based on Faithful 32x. Improves readability across menus, chat, and UI while keeping a vanilla-friendly look. Only overrides font textures — safe to use alongside any 16x resource packs. By apt9002. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
 
 **Fresh Animations** adds idle animations, directional looking, sleep/blink cycles, and emotional states to all vanilla mobs. It's a resource pack overlay (not a mod) — place it high in the pack order. Works on any version with no mod dependencies.
 
@@ -228,10 +231,11 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
-1. Fresh Animations
-2. Enhanced Boss Bars
-3. RAY's 3D Rails
-4. Better Lanterns
+1. Smooth Font
+2. Fresh Animations
+3. Enhanced Boss Bars
+4. RAY's 3D Rails
+5. Better Lanterns
 
 ### Infrastructure
 
@@ -295,10 +299,11 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 
 #### 4. Texture Pack Load Order (top = highest priority)
 
-1. Fresh Animations
-2. Enhanced Boss Bars
-3. RAY's 3D Rails
-4. Better Lanterns
+1. Smooth Font
+2. Fresh Animations
+3. Enhanced Boss Bars
+4. RAY's 3D Rails
+5. Better Lanterns
 
 ---
 
@@ -2708,7 +2713,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +10 resource packs)                                                                            |
+| Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
 | Wave 0.5 — Player Experience | 47      | —      | 47      | Visual & Client QoL (29), Inventory & UI (14), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony            | 5       | —      | 5       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only)                                                                                                                                                                                          |

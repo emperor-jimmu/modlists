@@ -259,6 +259,9 @@
 ### Added Mods (Jul 2026 batch 9 — Dark UI)
 - [x] Dark Mode Everywhere v1.4.0 (Wave 0.5 — Visual & Client QoL) — shader-based dark mode for all GUIs, 3 darkness levels, toggleable in-game. Client-side only, MIT license, 36.2M downloads, NeoForge 1.21.1 native. By Buuz135. No dependencies.
 
+### Added Resource Packs (Jul 2026 batch 10 — Font)
+- [x] Smooth Font 32x (Wave 0 — Texture Pack) — Faithful 32x-based smooth font, 7.8M downloads, 69KB. Only overrides font textures, safe alongside 16x packs. By apt9002. [CurseForge](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
+
 ### Skipped After Review (Jul 2026 batch 7 — Foliage Resource Packs)
 - [x] Rainbow's Foliage — requires Polytone mod (unverified NeoForge 1.21.1)
 - [x] Os' Colorful Grasses — low download count, niche scope
