@@ -10,14 +10,8 @@ Use BLSE's Auto-Sort function to resolve this automatically. If Auto-Sort places
   columns: (auto, auto, 1fr),
   stroke: 0.5pt + header-color.transparentize(60%),
   [*Position*], [*Mod*], [*Notes*],
-  [1.], [Better Fonts & Text Scaling], [Font mods load first to apply before other UI mods],
-  [2.], [Better Tooltips], [Depends on font mod for correct text display],
-  [3.], [Map Enhancements], [No dependencies — loads independently],
-  [4.], [Inventory Management], [No dependencies — loads independently],
-  [5.], [Troop & Party Management], [No dependencies — loads independently],
-  [6.], [Dialogue & Menus], [No dependencies — loads independently],
-  [7.], [Battle Orders], [No dependencies — loads independently],
-  [8.], [Save Management], [No dependencies — loads independently],
+  [1.], [Banner Fix], [Graphics fix loads first — applies before UI overlays],
+  [2.], [All Heroes Are Visible In Battle], [UI overlay loads after graphics fixes. No dependencies.],
 )
 
-#warning-box[The load order is a suggested template based on placeholder mods. When real mods are added, update this table with actual mod names and verified positions. Always run BLSE Auto-Sort first, then adjust manually if needed.]
+#tip-box[Wave 0 has only 2 mods. BLSE's Auto-Sort will handle this correctly by default. If you add additional UI/QoL mods from future waves, insert them between these two positions or after position 2.]

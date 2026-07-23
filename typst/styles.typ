@@ -4,7 +4,7 @@
 // --- Font families (with fallbacks) ---
 #let body-font = ("Crimson Pro", "Libertinus Serif")
 #let heading-font = ("Libre Baskerville", "Libertinus Serif")
-#let mono-font = ("Fira Code", "Libertinus Mono")
+#let mono-font = ("Fira Code")
 #let display-font = ("Cinzel", "Libre Baskerville")
 
 // --- Colors ---

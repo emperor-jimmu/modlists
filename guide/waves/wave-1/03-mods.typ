@@ -4,38 +4,240 @@
 
 Wave 1 expands the mod list to include *Graphics*, *Light mechanic*, and *Content addition* mods alongside continued *UI/QoL* improvements. No heavy overhauls — those are reserved for Wave 2.
 
-#warning-box[Read each placeholder carefully. The examples listed are real mod types that fit the slot — but the actual mod chosen must be verified for compatibility with BL 1.4.x / WS 1.2.x before being added permanently.]
+#warning-box[All mods require the foundation framework from the Installation section: Harmony, ButterLib, UIExtenderEx, and MCM. Install these before adding any Wave 1 mods.]
 
-// === Graphics (3) ===
+// ========================================
+// Graphics
+// ========================================
 
-#mod-placeholder("Graphics", ("Improved lighting engine with better ambient occlusion, bloom, and shadow cascades", "Time-of-day color grading that makes sunsets, dawn, and night more atmospheric", "Weather effects enhancement — rain, snow, and fog"), "Must be compatible with other graphics mods. Target: stable 60+ FPS on NVIDIA RTX 3080 or equivalent at 1440p with high settings.")
+== Graphics
 
-#mod-placeholder("Graphics", ("High-resolution texture pack for terrain, buildings, and environments", "Improved armor and weapon textures for all faction troops", "Better character face and skin textures"), "Target: 60 FPS at 1440p on RTX 3080 (10GB VRAM) or equivalent. Must not conflict with equipment mods.")
+// ---- Raise your Banner ----
+#mod-entry(
+  "Raise your Banner",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/3253",
+  "Graphics",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Adds more banners to the battlefield. Troops, formations, and locations display faction banners, increasing visual fidelity and immersion during large-scale battles.],
+  [MCM settings for banner density and placement. Toggle which formations display banners.],
+  [Graphics section — early. Load before texture and content mods.],
+  [Same author as Raise your Torch — designed to work together. No known conflicts.],
+)
 
-#mod-placeholder("Graphics", ("Higher-poly character heads with better expressions and skin shading", "Improved hair and beard rendering", "Better body proportions and armor fitting"), "Must be compatible with any character creation mods in this wave. Target: 60 FPS at 1440p on RTX 3080 or equivalent.")
+// ---- Perfect Fire Arrows ----
+#mod-entry(
+  "Perfect Fire Arrows",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/3303",
+  "Graphics",
+  [None — standalone],
+  [Visual-only mod. Archers and ranged troops shoot flaming projectiles during night battles. Fire arrows provide atmospheric lighting without affecting damage or accuracy.],
+  [No configuration needed. Active automatically during night battles.],
+  [Graphics section. No dependencies — loads independently.],
+  [Purely visual. No conflicts with any other mod.],
+)
 
-// === UI/QoL (2) ===
+// ---- Hairstyles dlx ----
+#mod-entry(
+  "Hairstyles dlx",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/4762",
+  "Graphics",
+  [None — standalone],
+  [Replaces several male and female hairstyles with higher-quality alternatives. Visible in character creation and on NPCs throughout the world. No gameplay impact.],
+  [No configuration. Replaces hairstyles automatically in the character creation menu and on NPCs.],
+  [Graphics section. Load after texture mods if present.],
+  [May conflict with other character appearance mods that modify hairstyles. Compatible with Women in Calradia.],
+)
 
-#mod-placeholder("UI/QoL", ("Search and filter functionality for the in-game encyclopedia", "Show troop upgrade trees with stat comparisons", "Track relationship changes, quest history, and notable interactions"), "Must not alter any underlying game data — display and search only.")
+// ---- Immersive Battlefields ----
+#mod-entry(
+  "Immersive Battlefields",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/4633",
+  "Graphics",
+  [Harmony],
+  [Adds battlefield audio immersion — sergeants repeat and pass formation commands audibly, soldiers yell when a charge is ordered, and horn sounds echo across the field. Audio-only, no gameplay mechanics changed.],
+  [Config file in mod folder for volume, frequency, and which sounds are enabled.],
+  [Graphics section — late. Audio layer loads after visual mods.],
+  [Complements Realistic Morale System. No gameplay conflicts — audio only.],
+)
 
-#mod-placeholder("UI/QoL", ("Free camera mode in battles (spectator and replay)", "Customizable key bindings for formation commands", "Better death cam — follow your killer or your troops after death"), "Must not allow control of troops after death (no cheating/god-mode).")
+// ========================================
+// Content Addition
+// ========================================
 
-// === Light Mechanic (5) ===
+== Content Addition
 
-#mod-placeholder("Light mechanic", ("Non-aggression pacts, defensive alliances, and trade agreements between kingdoms", "Peace treaty duration enforcement — prevents immediate re-declaration of war", "Messenger system — send diplomatic proposals without traveling to the ruler"), "Must not override core kingdom mechanics. Must integrate with BL 1.4.7's faction AI. Diplomacy should be earned, not bought.")
+// ---- Cultured Start Reloaded ----
+#mod-entry(
+  "Cultured Start Reloaded",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/10050",
+  "Content Addition",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Overhauls Bannerlord's character creation with a custom start system. Choose your start type, culture, starting resources, clan tier, and equipment. Skip the tutorial or begin with alternative scenarios that fit the Exile narrative.],
+  [Extensive MCM options for start type, starting gold, clan tier, equipment packages, and culture selection. Configure before starting a new campaign.],
+  [Content Addition — early. Character creation mods must load before any mod that references the player character.],
+  [Bypasses the vanilla main quest — supported by the modlist's Exile narrative. Requires the full framework (Harmony, ButterLib, UIExtenderEx, MCM).],
+)
 
-#mod-placeholder("Light mechanic", ("Better AI battle tactics — enemy lords use formations, flanking, and terrain", "Improved AI decision-making for declaring war and making peace", "AI lords manage their fiefs and parties more efficiently"), "Must not make the game unfair. AI should be smarter, not omniscient. Must still be beatable by a skilled player on normal difficulty.")
+// ---- Women in Calradia ----
+#mod-entry(
+  "Women in Calradia",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/1578",
+  "Content Addition",
+  [Harmony],
+  [Adds 17 female companions and 3 male companions to the world. An optional NPC replacer version is available for existing characters. Expands companion variety for recruiting and role assignment.],
+  [Two versions available — choose the companion addition version for new characters, or the NPC replacer version to modify existing NPCs. Configure during mod installation.],
+  [Content Addition — early. New characters must exist before other mods reference them.],
+  [Adds new characters without modifying existing ones. Compatible with all mods. Lore-friendly companion additions — not adult or pornographic content.],
+)
 
-#mod-placeholder("Light mechanic", ("More varied tournament prizes including named weapons and armor", "Different tournament formats (team fights, archery contests, jousting)", "Arena betting with dynamic odds based on your reputation"), "Must not make tournaments a primary income source — prizes should be cosmetic or sidegrade-tier, not best-in-slot.")
+// ---- Bandit Variety ----
+#mod-entry(
+  "Bandit Variety",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/3041",
+  "Content Addition",
+  [Harmony],
+  [Adds 12 new bandit troop trees — one male and one female variant for each bandit type. Units upgrade through tier 6. Makes bandit encounters more diverse, challenging, and rewarding throughout the campaign.],
+  [No configuration. The new troop trees are added automatically.],
+  [Content Addition — after character/companion mods, before Light Mechanic mods that modify faction behavior.],
+  [#warning-box[Balance note: tier 6 bandit units may be strong in early game. Monitor difficulty and adjust game settings if needed.] No conflicts with other mods.],
+)
 
-#mod-placeholder("Light mechanic", ("Bandit parties scale with game time — late-game bandit armies instead of irrelevant looters", "Minor factions have unique troops, leaders, and motivations instead of being generic", "Bandit hideouts have more variety and better rewards for clearing them"), "Must not make bandits overpower players in early game. Scaling should match clan tier progression.")
+// ---- Titles ----
+#mod-entry(
+  "Titles",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/9794",
+  "Content Addition",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Adds historically-accurate noble titles reflecting each lord's holdings and position within their kingdom. Enhances the feudal atmosphere with proper forms of address. Mostly visual and immersion-focused with gameplay additions planned.],
+  [MCM settings for title display format, localization, and title conditions.],
+  [Content Addition. No dependency conflicts — loads independently within the section.],
+  [Purely additive — no known conflicts. Works alongside Complex Characters and Rumor Has It for NPC depth.],
+)
 
-#mod-placeholder("Light mechanic", ("Settlements slowly adopt the culture of their owner over time", "Cultural bonuses for troops recruited in their native regions", "Cultural festivals and events that affect prosperity and loyalty"), "Must not allow instant culture conversion. Change should take multiple in-game years.")
+// ---- Player Settlements ----
+#mod-entry(
+  "Player Settlements",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/7298",
+  "Content Addition",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Build your own towns, villages, and castles anywhere on the campaign map. Construction requires gold, influence, and minimum clan tier (all configurable). Adds a new layer of strategic settlement planning to the mid-game.],
+  [MCM settings for build costs, construction time, maximum settlement count, and clan tier requirements.],
+  [Content Addition — after troop and equipment mods, before Light Mechanic overrides.],
+  [Verify placement coordinates do not conflict with any map-modifying mods. Compatible with all mods in this list.],
+)
 
-// === Content Addition (3) ===
+// ---- Retinues ----
+#mod-entry(
+  "Retinues — Custom Clan and Kingdom Troops",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/8847",
+  "Content Addition",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Design custom clan and kingdom troop trees. Unlock gear through battle, outfit and promote retinues, and select unique doctrine perks that provide bonuses. Compatible with Bannerlord v1.2, v1.3, and v1.4. Adds troop customization without replacing vanilla trees.],
+  [Extensive MCM settings for troop customization, gear unlock requirements, doctrine selection, and retinue management.],
+  [Content Addition — late in the section. Custom troop trees should load after all equipment and troop mods.],
+  [Explicitly compatible with v1.4.x. Does not replace vanilla troop trees — adds alongside them. Safe with Bandit Variety.],
+)
 
-#mod-placeholder("Content addition", ("Additional historically-inspired armor sets for each faction", "More weapon variety — different sword types, polearms, and bows", "New horse breeds with distinct stats and appearances"), "Must not add overpowered items. New equipment should be sidegrades to existing items, not strict upgrades. Must be compatible with texture mods.")
+// ========================================
+// Light Mechanic
+// ========================================
 
-#mod-placeholder("Content addition", ("Additional troop upgrade paths for all factions", "Noble troops have more distinct specializations from common troops", "Unique troop types for minor factions and mercenary companies"), "Must maintain faction identity. Vlandian troops should not become better archers than Battanians. Must not create unbeatable combinations.")
+== Light Mechanic
 
-#mod-placeholder("Content addition", ("More companion variety — different backgrounds, skills, and personalities", "Companions have personal quests and storylines", "More named NPCs in the world with unique dialogue and interactions"), "Must not add companions that trivialize early game. Dialogue must not conflict with the game's tone.")
+// ---- Better Time ----
+#mod-entry(
+  "Better Time",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/2849",
+  "Light Mechanic",
+  [Harmony, Better Core (#link("https://www.nexusmods.com/mountandblade2bannerlord/mods/6367")[Nexus])],
+  [Adds two extra speed options and a speed button to the campaign map time control panel. Accelerate travel and waiting without affecting combat time or battle flow. Reduces downtime during long-distance travel and siege waiting periods.],
+  [MCM settings for default speed and hotkey bindings. Configure speed multipliers for each level.],
+  [Light Mechanic — early. Time control should load before mods that depend on time progression.],
+  [Requires Better Core if from the Better mod series. Does not affect battle time — campaign map only.],
+)
+
+// ---- Raise your Torch ----
+#mod-entry(
+  "Raise your Torch",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/3289",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Equips torches during night battles for both player and AI troops. Transforms night engagements from frustrating blindness into tactical, atmospheric encounters where visibility becomes a strategic resource.],
+  [MCM settings for torch brightness, which troop types carry torches, and torch behavior during combat.],
+  [Light Mechanic. Battle mechanic — loads after content additions, before other battle mods.],
+  [Same author as Raise your Banner — designed to work together. Compatible with Perfect Fire Arrows and Immersive Battlefields.],
+)
+
+// ---- Complex Characters ----
+#mod-entry(
+  "Complex Characters",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/7565",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Adds 467 situation-based dialogue lines for NPCs. Lords and ladies have distinct ambitions and personalities through a new ambition system that influences their behavior on the campaign map. NPCs react dynamically to your actions and reputation.],
+  [MCM settings for ambition system strength, dialogue frequency, and personality influence on AI behavior.],
+  [Light Mechanic. Dialogue system — loads after content additions, before battle mechanics.],
+  [Complements Rumor Has It — different systems (dialogue vs. rumors) that enhance NPC depth without overlapping. Both can be used together safely.],
+)
+
+// ---- Rumor Has It ----
+#mod-entry(
+  "Rumor Has It",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/11190",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Immersive rumor system. NPCs in taverns and towns dynamically discuss world events, wars, marriages, and the reputations of other lords. Information spreads organically through Calradia, giving you intel about the world without needing to be everywhere at once.],
+  [MCM settings for rumor frequency, spread range, and which event types generate rumors.],
+  [Light Mechanic. Dialogue/diplomacy layer — loads before battle and faction mechanics.],
+  [Complements Complex Characters. Both enhance NPC interaction through different, non-redundant systems. No known conflicts.],
+)
+
+// ---- Fourberie ----
+#mod-entry(
+  "Fourberie",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/2969",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Expands criminal and rogue gameplay with a large panel of features — schemes, dirty tactics, assassination plots, disguise systems, prisoner interactions, and more. Develop a cunning character who wins through guile rather than brute force. Used by 31+ other mods.],
+  [Extensive MCM settings for each feature toggle. All schemes and tactics can be individually enabled or disabled. Configure difficulty scaling for rogue actions.],
+  [Light Mechanic — late. Rogue gameplay must load after dialogue, NPC, and faction systems.],
+  [#tip-box[All features are individually toggleable. Disable any that feel overpowered or that overlap with Xorberax's Legacy.] No direct conflicts — Fourberie focuses on rogue/schemes while Xorberax's Legacy covers combat and economy.],
+)
+
+// ---- Realistic Morale System ----
+#mod-entry(
+  "Realistic Morale System",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/10059",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Battle morale overhaul. Troops react realistically to danger, casualties, leader presence, and tactical pressure. Captains and generals inspire nearby units. Flanked or panicked formations struggle to hold the line. Transforms battles into tense, dynamic engagements where morale matters as much as numbers.],
+  [MCM settings for morale thresholds, leader influence strength, panic behavior, and recovery rates.],
+  [Light Mechanic — late battle logic. Must load after all troop and content mods, before any combat overhaul (none in Wave 1).],
+  [Complements Immersive Battlefields (audio) and Epic Sieges (siege parameters). No overlap — morale is a separate system from damage or audio. Verify compatibility with Xorberax's Legacy combat sub-mods (deadly combat features are disabled by recommendation).],
+)
+
+// ---- Epic Sieges ----
+#mod-entry(
+  "Epic Sieges",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/7294",
+  "Light Mechanic",
+  [Harmony],
+  [Enhances siege battles by adjusting key parameters — ladders can be pushed down by defenders, siege towers and battering rams are more durable, gates last longer, and barricades are easier to destroy. Longer, more strategic sieges that reward player tactics over brute force.],
+  [No MCM integration. Configuration via the mod's config file for parameter tuning.],
+  [Light Mechanic — late. Siege parameter changes should load after all content and troop mods.],
+  [Standalone tweak to siege parameters. Does not conflict with Realistic Morale System or Xorberax's Legacy. Compatible with all mods.],
+)
+
+// ---- Xorberax's Legacy ----
+#mod-entry(
+  "Xorberax's Legacy",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/3462",
+  "Light Mechanic",
+  [Harmony, ButterLib, UIExtenderEx, MCM],
+  [Compilation of 9 sub-mods originally developed by Xorberax, updated and compiled into a single module with MCM integration. Each sub-mod can be individually toggled. Enabled features: Banks of Calradia (loans and interest), Cut Through Everyone (multi-hit weapons), Honest Work (village labor), Scholars of Calradia (skill lectures), Shoulder Camera (improved third-person), Training Field (troop training).],
+  [#danger-box[*Critical:* Disable the following sub-mods in MCM before starting a campaign: *Deadly Combat*, *Deadly Horse Charges*, and *Friendly Fire*. These are heavy combat overhauls reserved for Wave 2.] All other sub-mods are individually toggleable via MCM.],
+  [Light Mechanic — last. Compilation mods that touch multiple systems must load after all individual mods to avoid override conflicts.],
+  [Bank system adds economy depth. Cut Through Everyone enhances combat feel without overhauling damage. Scholars and Training Field offer alternative skill progression. Shoulder Camera is UI-only. No overlap with Fourberie (rogue/schemes are separate from combat/economy). Disabling Deadly Combat, Deadly Horse Charges, and Friendly Fire keeps this within Wave 1 scope.],
+)
+
+#tip-box[Wave 1 contains 17 mods across 3 categories. Light Mechanic cap is 15 (8 used). Content Addition cap is 10 (6 used). Room remains for future additions if gaps are identified during playtesting.]

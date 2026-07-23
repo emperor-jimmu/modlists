@@ -80,6 +80,32 @@ For each mod in a wave's modlist:
 
 #warning-box[Always check the mod's installation instructions on its Nexus page. Some mods require specific subfolder placement or additional dependencies not listed here.]
 
+== Required Foundation Mods
+
+These mods are the dependency framework. Every other mod in this guide requires one or more of them. Install all of them once, regardless of which wave you choose. Download each from its Nexus Mods page, extract into your `Modules\` folder, then launch BLSE and enable them.
+
+#danger-box[Do not skip any of these. Missing a foundation mod will cause other mods to fail to load or crash on startup. Install the foundation before installing any wave's modlist.]
+
++ #link("https://www.nexusmods.com/mountandblade2bannerlord/mods/2006")[*Harmony*] — Runtime method patching library. Required by ButterLib, UIExtenderEx, MCM, and nearly every other mod in this list. Includes a debug UI accessible via `CTRL+ALT+H`.
++ #link("https://www.nexusmods.com/mountandblade2bannerlord/mods/2018")[*ButterLib*] — Extension library providing crash reporting, compatibility checks, and shared utilities. Required by MCM and most modern mods.
++ #link("https://www.nexusmods.com/mountandblade2bannerlord/mods/2102")[*UIExtenderEx*] — UI extension framework. Required by MCM and any mod that modifies the game interface.
++ #link("https://www.nexusmods.com/mountandblade2bannerlord/mods/612")[*Mod Configuration Menu (MCM)*] — In-game mod settings menu. Required by any mod with configurable options. Used by 867+ mods.
++ #link("https://www.nexusmods.com/mountandblade2bannerlord/mods/404")[*Better Exception Window*] — Enhanced crash handler with detailed error reporting, emergency save, screenshot attachments, and an "attempt to continue" feature. Requires Harmony.
++ #link("https://www.nexusmods.com/mountandblade2bannerlord/mods/6367")[*Better Core*] — Shared utility library for the Better mod series. Only required if you install Better Time (Wave 1). Does nothing on its own.
+
+#tip-box[BLSE's Auto-Sort will place these foundation mods at the top of your load order automatically. No manual ordering needed.]
+
+=== Additional Setup: Unblock DLLs
+
+Windows may block DLL files downloaded from the internet, preventing mods from loading. Run the following PowerShell command once in your Bannerlord `Modules` directory to unblock all mod DLLs. This is a one-time setup step — not a mod that goes in your load order.
+
+#link("https://www.nexusmods.com/mountandblade2bannerlord/mods/397")[Unblock DLLs (Nexus Mods page)]
+
+#block(fill: code-bg, inset: 10pt, radius: 4pt)[
+  #show raw: set text(font: mono-font, size: 9.5pt)
+  `Get-ChildItem -Recurse -Filter *.dll | Unblock-File`
+]
+
 == Wave-Specific Setup
 
 After installing BLSE and your game, follow the *Getting Started* section of your chosen wave. Each wave has its own mod list and recommended game settings.
