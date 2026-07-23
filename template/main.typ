@@ -62,16 +62,16 @@
 
 #pagebreak()
 {
-  set align(center)
-  set text(font: heading-font, size: 18pt, fill: awe-gold)
+  #set align(center)
+  #set text(font: heading-font, size: 18pt, fill: awe-gold)
   [Prologue]
 }
 
 #v(1cm)
 
 {
-  set text(font: body-font, size: 11pt, fill: text-dark)
-  set par(leading: 0.7em, justify: true)
+  #set text(font: body-font, size: 11pt, fill: text-dark)
+  #set par(leading: 0.7em, justify: true)
 
   We used to look up at the sky and wonder at our place in the cosmos. Now we look down and wonder at ours. KSP gives you a universe and asks: what will you do with it?
 
@@ -89,11 +89,11 @@
 #v(1cm)
 
 {
-  set align(center)
-  set text(font: body-font, size: 10pt, fill: ksp-teal, style: "italic")
+  #set align(center)
+  #set text(font: body-font, size: 10pt, fill: ksp-teal, style: "italic")
   ["Do not go gentle into that good night."]
-  v(0.2em)
-  set text(style: "normal")
+  #v(0.2em)
+  #set text(style: "normal")
   [— Dylan Thomas]
 }
 
@@ -135,11 +135,11 @@ Install one wave at a time. Play it until the experiences it offers feel familia
 #v(1cm)
 
 {
-  set align(center)
-  set text(font: body-font, size: 10pt, fill: mun-gray, style: "italic")
+  #set align(center)
+  #set text(font: body-font, size: 10pt, fill: mun-gray, style: "italic")
   [The guide assumes patience. The guide assumes curiosity. The guide assumes you want to go further than anyone has gone before.]
-  v(0.2em)
-  set text(style: "normal")
+  #v(0.2em)
+  #set text(style: "normal")
   [Let's begin.]
 }
 
