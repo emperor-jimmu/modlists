@@ -255,12 +255,107 @@ Far Future Technologies introduces propulsion technologies beyond chemical rocke
   High Isp, low thrust engines mean *burns measured in days or weeks*. A fusion drive with 0.1 m/s² acceleration needs hours to change velocity by 1 km/s. Plan your burns around periapsis kicks — multiple short burns at periapsis to raise apoapsis gradually. Do not attempt to circularize an interstellar trajectory with a single burn.
 ]]
 
+#section-heading([Interstellar Destination Profiles])
+
+With Kcalbeloh and Grannus installed, you have two interstellar destinations. Each requires different preparation.
+
+#section-heading([Grannus — The Red Dwarf])
+
+Grannus is a binary red dwarf companion to Kerbol. It's the easier first interstellar target:
+- *Transit time:* ~50–100 years with fusion engines (FFT). Faster with antimatter.
+- *Planets:* Multiple terrestrial and gas giant worlds. Full biome and science support.
+- *Strategy:* Grannus is a "conventional" star system — bring ISRU equipment, establish a mining base, use it as a staging point. No exotic physics required.
+- *Power:* Solar panels work poorly this far from Kerbol. Bring fission reactors (Near Future Electrical) or RTGs.
+
+#section-heading([Kcalbeloh — The Black Hole System])
+
+Kcalbeloh is a black hole with orbiting planets. Install it for a truly alien destination:
+- *Wormhole option:* A wormhole near Jool connects to Kcalbeloh. You can send probes through without interstellar engines. Crewed? Nobody's tested the radiation.
+- *Transit time (conventional):* 100–300 years. Antimatter drives cut this to decades.
+- *Black hole effects:* Time dilation near the event horizon is visual only (no gameplay effect), but the accretion disk is spectacular. Screenshot territory.
+- *System layout:* Habitable planets, gas giants, and exotic bodies orbit the singularity. Each has unique science — some require special protection (radiation shielding parts).
+- *Strategy:* Send an uncrewed probe through the wormhole first. Map the system with SCANsat. Then decide whether to mount a crewed mission — the delta-v for capture in the black hole's gravity well is enormous. Plan for it.
+
+#warning[[
+  Installing both Kcalbeloh AND Grannus is a significant memory commitment. If your game crashes during interstellar transit, reduce texture quality or remove one system. The guide assumes both are installed — you can still follow it with just one.
+]]
+
+#section-heading([Blueshift Warp Infrastructure])
+
+Blueshift gives you FTL travel — but with a catch. You must deploy warp coils at your destination before you can jump there.
+
+#section-heading([How Warp Coils Work])
+
+1. A warp coil is a deployable part (like a satellite) that you leave in orbit around a target body.
+2. Once a coil is deployed and powered, any Blueshift-equipped ship can warp to it — instantly.
+3. Coils consume power (significant amounts — fission reactors minimum).
+4. Range is limited by coil level (basic → advanced → exotic). Upgraded coils reach further systems.
+
+#section-heading([The Scout-and-Deploy Loop])
+
+1. Send a Far Future Technologies ship to the target system using sub-light engines (fusion/antimatter).
+2. The scout ship carries a warp coil in its payload bay.
+3. Upon arrival, deploy the coil in orbit around the destination star or a key planet.
+4. The scout ship can now warp home OR subsequent Blueshift ships can warp to the coil.
+5. Repeat for each new system. Your warp network grows with exploration.
+
+#info[[
+  This loop is the intended progression: FFT engines for initial exploration (slow, difficult, rewarding), Blueshift for established routes (fast, convenient, earned). Without FFT, Blueshift has no way to deploy the first coil. They are designed to work together.
+]]
+
+#section-heading([Coil Network Strategy])
+
+- *First coil:* Deploy at Grannus (closer, easier than Kcalbeloh). Use a fusion-powered scout with basic coil.
+- *Second coil:* Kcalbeloh. Requires advanced coil and antimatter-powered scout (longer range, higher power draw).
+- *Waypoint coils:* Deploy coils at gas giants between stars for emergency refueling stops.
+- *Coil security:* Coils are vulnerable. If a coil loses power, ships cannot warp to it. Include redundant power (solar + fission) and a probe core for remote rebooting.
+
 #section-heading([Interstellar Mission Planning])
 
 1. *Power infrastructure:* Interstellar engines consume gigawatts. You need nuclear reactors, beamed power networks, or on-board fusion. Solar panels are useless beyond Duna's orbit.
 2. *Radiators:* Thermal management becomes the limiting factor. Every reactor and engine produces waste heat. Without enough radiator area, your ship melts. High-temperature radiators (graphene) are more mass-efficient.
 3. *Braking:* Arriving in another star system requires deceleration. Bring enough delta-v for capture — aerocapture at the target star is rarely practical at interstellar velocities.
 4. *Communications:* At interstellar distances, CommNet latency becomes absurd. Plan for autonomous probe operation.
+
+#section-heading([Deep Space Vessel Architecture])
+
+Interstellar ships are not just bigger rockets. They're infrastructure you assemble in orbit and live on for decades (or centuries, in game-time).
+
+#section-heading([Modular Assembly in Orbit])
+
+Build your interstellar ship in Kerbin orbit using docking:
+1. *Engine section:* Fusion or antimatter drive cluster with radiators. Launched first (heaviest module).
+2. *Fuel section:* Cryogenic tanks for fusion fuel pellets or antimatter containment pods. Launched separately and docked.
+3. *Habitation ring:* Centrifuge or inflatable habitat modules. Launched crewless, crew boards last.
+4. *Lander/payload bay:* Detachable exploration vessel for the destination system.
+
+Use the largest docking ports (Sr.) or multi-port connections for structural rigidity. A ship assembled from Jr. ports will flex apart under thrust.
+
+#section-heading([Radiator Placement])
+
+Thermal management is the limiting factor for interstellar ships. Rules:
+- Radiators must face away from the sun AND away from other hot components
+- Place radiators perpendicular to the ship's long axis (like wings)
+- Never place hab modules between engine and radiators — they'll cook
+- High-temperature graphene radiators (from System Heat) are more mass-efficient but more fragile
+
+#section-heading([Artificial Gravity])
+
+Kerbals on multi-decade missions need gravity or they go stir-crazy (USI-LS habitation timer). Options:
+- *Centrifuge rings:* Stockalike Station Parts Redux has inflatable centrifuges. Spin them up with reaction wheels.
+- *Spin gravity:* Rotate the entire ship. Needs RCS to start/stop rotation. Docking during spin is impossible — stop first.
+- *Ignore it:* Send enough habitation modules that the timer exceeds mission duration. Valid strategy, more mass.
+
+#section-heading([Power Hierarchy])
+
+1. *Solar:* Useless beyond Duna. Ignore for interstellar.
+2. *Fission reactors* (Near Future Electrical): Reliable, long-lasting, moderate power. Good for coil power and life support.
+3. *Fusion reactors:* High power, consumes fusion fuel. The engine often doubles as the power plant.
+4. *Antimatter reactors:* Extreme power, extreme danger. Antimatter containment failure = ship becomes a cloud of plasma.
+
+#warning[[
+  Antimatter containment requires active power. If your reactor shuts down, the containment field fails, and the antimatter annihilates. Always have a backup power source isolating the antimatter pods. This is not a drill — FFT models this behavior.
+]]
 
 #section-heading([Realism Overhaul — What Changes])
 
@@ -281,6 +376,44 @@ Fuel is no longer a generic "Liquid Fuel + Oxidizer" mix. RealFuels adds realist
 - Solid rockets: High thrust, cannot throttle, single burn only
 
 Each fuel type has different tank volumes, boil-off rates (cryogenics evaporate), and ignition requirements.
+
+#section-heading([Multi-Colony Empire Management])
+
+By Wave 2 endgame, you're managing colonies across multiple star systems. Here's how to keep it from collapsing into chaos.
+
+#section-heading([Colony Specialization])
+
+Each colony should do ONE thing well:
+
+- *Minmus Flats:* Fuel hub. Exports LFO, LH2, Monoprop. Lowest launch costs in the game.
+- *Duna Midlands:* Manufacturing. Exports MaterialKits, SpecializedParts. Needs imported fuel and supplies.
+- *Laythe Islands:* Science + Crew. Mobile Processing Lab in Jool orbit processes data from the entire system.
+- *Vall Orbit:* Outer-system fuel depot. Services Jool missions and interstellar departures.
+- *Grannus II:* Interstellar gateway. First off-world colony in another star system.
+
+#section-heading([Supply Routes])
+
+- *Scheduled tankers:* Build reusable fuel tankers on fixed routes (Minmus → LKO, Vall → Jool SOI edge). Launch them on every transfer window.
+- *KAC alarm chains:* Set an alarm for each transfer window. Kerbal Alarm Clock's "transfer window" alarm type does this automatically.
+- *Emergency reserves:* Every colony keeps 50% more supplies than its next resupply window requires. A missed window should not mean dead kerbals.
+
+#section-heading([When to Stop Expanding])
+
+- *Part count:* Each colony adds 50–200 parts. KSP's physics engine degrades above ~500 total parts in physics range. Spread colonies across SOIs to avoid loading them simultaneously.
+- *Diminishing returns:* Your third fuel depot doesn't add much. Focus on one excellent depot per planetary system.
+- *The kraken:* Large ships docked to large stations invite physics glitches. Autostrut everything. Quicksave before docking. Accept that sometimes the universe just breaks.
+
+#section-heading([Endgame — What "Winning" Looks Like])
+
+There's no win condition in KSP. But here's what a "complete" Long Ascent playthrough looks like:
+
+1. Self-sustaining colonies at Minmus, Duna, and Laythe
+2. A Jool gateway station servicing outer-planet missions
+3. Warp coil network connecting Kerbol → Grannus → Kcalbeloh
+4. At least one crewed interstellar round-trip with all kerbals returning alive
+5. A flag planted on Tylo (because you earned it)
+
+After that, you've beaten the modlist. Start a new save with Kerbalism's full realism settings, or try Real Solar System. The Long Ascent taught you how to fly — now fly anywhere.
 
 #section-heading([System Interactions — The Full Picture])
 
