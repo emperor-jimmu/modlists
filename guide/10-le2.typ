@@ -120,7 +120,7 @@
   url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1655",
   game: "LE2",
   version: "v1.0.1",
-  last-checked: "2026-07",
+  last-checked: "2023-03",
   deps: (),
   impact: [Configurable, honest charging system for fuel depots in Mass Effect 2. No longer pays full price when you only need a partial refill of fuel or probes. Prices and resource amounts per tick are user-configurable. Fixes the vanilla oversight where partial purchases cost the same as full ones.],
   notes: none,
