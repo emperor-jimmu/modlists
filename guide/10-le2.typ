@@ -250,6 +250,28 @@
 )
 
 #mod-entry(
+  name: "Cerberus Daily News Emails (LE2)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1624",
+  game: "LE2",
+  version: "v2.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Reincorporates the defunct Cerberus Daily News articles written by BioWare back into the game as in-game emails. Adds new emails from Miranda, Jack, Grunt, Samara, Garrus, Tali, and Anderson, plus Spacer-specific emails from Shepard's mother. Emails arrive through Kelly and can be reread from the Archived Emails menu. Uses the email merge format so it is automatically compatible with any other mods that add emails to LE2.],
+  notes: [Uses email merge format -- no conflict with other email-adding mods. Includes Russian, German, Polish, Italian, Spanish, and French translations. Installable on existing saves at any point in the game.],
+)
+
+#mod-entry(
+  name: "Extended Romance Scenes",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1198",
+  game: "LE2",
+  version: "v1.4.1",
+  last-checked: "2026-07",
+  deps: ("Expanded Shepard Armory (ME2LE)", "ME3Tweaks Mod Manager"),
+  impact: [Extends all 7 LE2 romance scenes by appending the corresponding LE3 romantic cinematics to the end of the LE2 scenes. Miranda uses the Kaidan LE3 scene; Jack, Tali, Jacob, Thane, Garrus, and Liara use the Liara LE3 scene. Miranda's scene moves from the engine room to Shepard's cabin.],
+  notes: [Contains nudity. Compatible with Same-Gender Romances, More Gay Romances, Optional Flirting, and New Suit for Miranda LE2. Requires Expanded Shepard Armory and ME3Tweaks Mod Manager.],
+)
+
+#mod-entry(
   name: "Earlier Cabin Invites (LE2)",
   url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1220",
   game: "LE2",
@@ -348,6 +370,17 @@
   deps: ("Unofficial LE2 Patch",),
   impact: [Extensive visual overhaul for all quarians in Mass Effect 2. Adds unique face morphs for each quarian, diverse face textures with emissive freckles and face markings, new varied outfits and cloth patterns, visor transparency options, and more detailed meshes. Inspired by official concept art. Provides compatibility patches for many major LE2 mods.],
   notes: [Hard requirement: Unofficial LE2 Patch. Not compatible with mods that change Tali or other quarians. Includes Tali wardrobe addon (mod #2171). LE1 version also available (mod #1812).],
+)
+
+#mod-entry(
+  name: "Cerberus and Alliance Uniform Consistency (LE2)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1021",
+  game: "LE2",
+  version: "v3.2.1",
+  last-checked: "2026-07",
+  deps: ("LE2 Prologue Framework", "Unofficial LE2 Patch"),
+  impact: [Updates all Cerberus personnel uniforms across the Normandy, Lazarus Station, the Derelict Reaper, and Project Overlord to their Mass Effect 3 versions. Backports ME3 dress uniforms for Anderson and Hackett, and outfits Alliance soldiers on the Citadel with proper uniforms. Adds 5 casual outfits for Shepard: Cerberus fatigues, Alliance fatigues, Cerberus dress uniform, Alliance dress uniform, and the ME3 intro outfit.],
+  notes: [Requires LE2 Prologue Framework and Unofficial LE2 Patch. If using Expanded Shepard Armory, you MUST also install Anderson and Hackett Consistency Mod for compatibility. LE1 counterpart available as Alliance Uniform Consistency (mod #799).],
 )
 
 #mod-entry(

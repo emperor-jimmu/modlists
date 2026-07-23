@@ -139,6 +139,17 @@
   notes: none,
 )
 
+#mod-entry(
+  name: "Keepers Finders (LE1)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1043",
+  game: "LE1",
+  version: "v2.1",
+  last-checked: "2026-02",
+  deps: ("LE1 Community Patch",),
+  impact: [Marks unscanned Keepers on the Citadel minimap and radar while the Keeper Scanning quest is active. Allows scanning all 21 Keepers (vanilla stops at 20). After scanning all 21, unlocks a secret optional assignment with a decoded message puzzle. Includes a Keeper scan database in the Codex.],
+  notes: [Requires LE1 Community Patch v2.0+. Secret assignment is optional and humorous in tone. Compatible with LE1 Diversification Project (patch included). Translations available for French, German, Spanish, Italian, Polish, Russian.],
+)
+
 == Content
 
 #mod-entry(
@@ -218,6 +229,28 @@
   notes: [Alpha status. Actively in development; expect updates and incomplete content.],
 )
 
+#mod-entry(
+  name: "Same-Gender Romances for LE1",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/564",
+  game: "LE1",
+  version: "v1.1.2",
+  last-checked: "2025-11",
+  deps: ("LE1 Community Patch",),
+  impact: [Allows Ashley and Kaidan to be romanced by both male and female Shepard in Mass Effect 1, utilizing unused voiced dialogue from the game files. Adds flirt options, adjusts romance triggers to require player choice, and includes optional features like same-gender love interest activating the beacon on Eden Prime and NPCs flirting regardless of Shepard's gender.],
+  notes: [Requires LE1 Community Patch v2.0+. English voice only. Companion mods available for LE2 (Same-Gender Romances for LE2, mod #1115) and LE3 (More Gay Romances, mod #489).],
+)
+
+#mod-entry(
+  name: "Spectre Expansion Mod - LE1",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2951",
+  game: "LE1",
+  version: "v0.5.1",
+  last-checked: "2025-11",
+  deps: ("LE1 Community Patch", "Private Message Terminal (LE1)"),
+  impact: [Expanded galaxy map, lore, and content expansion for Mass Effect 1. Unlocks additional star clusters including alien home systems (Asari, Turian, Salarian, Volus, Elcor, Hanar, Krogan, Batarian). Adds dozens of new emails via the Private Message Terminal, expanded collection assignments, new codex entries, and a new voiced conversation with the Hanar Ambassador (requires LE1 Diversification Project). Part of the Spectre Expansion Mod series.],
+  notes: [Beta status (v0.5.1) -- fully functional but not yet feature complete. Requires LE1 Community Patch 2.0+ and Private Message Terminal. LE1 Diversification Project recommended for full experience. Some email overlap with Eclectic Emails (~4-5 emails); may increase as mod expands.],
+)
+
 == Characters and Appearance
 
 #mod-entry(
@@ -284,6 +317,50 @@
   deps: ("ME3Tweaks Mod Manager",),
   impact: [Replaces the appearance of Dr. Heart's experiments (Thorian Creepers) with an original and unused zombie model with unique textures found in the game files. Gameplay remains unchanged -- same abilities and damage thresholds. Adds enemy variety while fixing an immersion-breaking reuse of the Thorian Creeper model.],
   notes: [Fully compatible with LE1 Community Patch v2.0. Can be safely installed or removed at any point during a playthrough.],
+)
+
+#mod-entry(
+  name: "Saren Stages LE1",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/666",
+  game: "LE1",
+  version: "v3.1",
+  last-checked: "2025-11",
+  deps: ("LE1 Community Patch",),
+  impact: [Visual overhaul of Saren's transformation throughout Mass Effect 1 using hand-created new meshes and HD textures. Introduces earlier, less mutated forms of Saren before his heavy Geth implants, making his gradual indoctrination more visually narrative. Options include a concept art-inspired "Sith" look for early encounters, or a more subtle armor-only progression. Compatible with Saren Biotic VFX Fix.],
+  notes: [Requires LE1 Community Patch for the LE1 Framework. Multiple installer options for different transformation progressions. Includes localization support.],
+)
+
+#mod-entry(
+  name: "Tali Remastered LE1",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1145",
+  game: "LE1",
+  version: "v1.2",
+  last-checked: "2025-11",
+  deps: ("LE1 Community Patch",),
+  impact: [Replaces Tali's LE1 model with Creative Machinima's fully animated face, including jaw, teeth, and eyelashes. Improved suit mesh to accommodate the new face. Multiple installer options for suit and hood combinations (reworked vs. vanilla).],
+  notes: [Requires LE1 Community Patch Framework. INCOMPATIBLE with Children of Rannoch -- both mods change Tali's appearance, choose one. Disable "film grain" in game options for best visor rendering. LE2 and LE3 versions also available by the same author.],
+)
+
+#mod-entry(
+  name: "Mental's Catsuits for AMM",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2594",
+  game: "LE1",
+  version: "v1.0",
+  last-checked: "2024-12",
+  deps: ("Appearance Modification Menu",),
+  impact: [Adds new catsuit outfits and armors for female Shepard, Liara, and Ashley to Mass Effect 1. Outfits are accessible via the Appearance Modification Menu's armory locker. Can be used as both combat armor and casual appearances.],
+  notes: [Requires Appearance Modification Menu (AMM) for LE1. Outfits are found in the AMM locker interface.],
+)
+
+#mod-entry(
+  name: "More Hair for Femshep (ME1LE)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/495",
+  game: "LE1",
+  version: "v1.1",
+  last-checked: "2022-03",
+  deps: ("ME3Tweaks Mod Manager", "Trilogy Save Editor"),
+  impact: [Adds 15 new hairstyles to Mass Effect 1 ported from The Sims 4 (originally by Anto). Includes styles like Angelina, Anya, Berta, Camila, Craig, Ines, Isabel, Levitating, Lina, Maggie, North, Oasis, Olga, Pilar, and Runaway. Textures stored on TFC for optimized memory usage.],
+  notes: [Hairstyles cannot be selected in Character Creator -- must use the Trilogy Save Editor to apply them to your Shepard. Can be changed at any time during a playthrough. LE2 version (mod #481) and LE3 version (mod #493) also available.],
 )
 
 == Texture Mods

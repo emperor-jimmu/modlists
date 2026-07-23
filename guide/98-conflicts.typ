@@ -15,7 +15,27 @@ priority notes.
 
 == Incompatible Mod Pairs
 
-_None documented yet. Add entries as conflicts are discovered._
+*Tali Remastered LE1 vs Children of Rannoch (LE1)*
+
+Both mods replace Tali's appearance in Mass Effect 1 with different custom models.
+They cannot be used together. Choose one based on preference:
+- Tali Remastered: Full animated face with jaw/teeth/eyelashes, multiple suit options.
+- Children of Rannoch: Unique face morphs for all quarians, diverse outfits, concept-art inspired.
+
+*Spectre Expansion Mod - LE1 vs Eclectic Emails (LE1)*
+
+Both mods add new emails to the Private Message Terminal. There is currently some
+overlap in email content (~4-5 emails). While not technically incompatible today,
+as Spectre Expansion Mod expands with more email content, overlap will likely
+increase and Eclectic Emails may be marked incompatible in future versions.
+
+*Spectre Expansion Mod - LE2 vs Eclectic Emails (LE2)*
+
+Both mods add new emails to the Private Message Terminal. There is currently some
+overlap in email content. While not technically incompatible today (both use the
+email merge format), as Spectre Expansion Mod expands with more email content,
+overlap will likely increase. Neither mod should be marked incompatible outright,
+but be aware of duplicated emails if using both.
 
 == Overwrite Warnings
 

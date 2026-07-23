@@ -54,6 +54,17 @@
   notes: [Studio-level quality, suitable for first-time playthroughs. Compatible with Miranda Mod, Character Consistency Project, and Kaidan Gay Romance Restored. Pairs with Integrated Collector Faction (mod #2994) for Collector enemies during Priority: Earth. Requires LE3 Community Patch.],
 )
 
+#mod-entry(
+  name: "CAT6 Retrofits",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2410",
+  game: "LE3",
+  version: "v1.1",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Replaces the CAT6 enemies encountered during the Citadel DLC with visually improved models and textures inspired by their concept art. Includes unique appearances for CAT6 Troopers, Guardians, and Rampart units. Part of the same author's suite of enemy retrofit mods alongside Geth Retrofits and Leviathan Retrofits.],
+  notes: [Companion mod to Armax Expansion Mod. Compatible with LE3 Diversification Project.],
+)
+
 == UI and Quality of Life
 
 #mod-entry(
@@ -64,6 +75,39 @@
   last-checked: "2024-04",
   deps: (),
   impact: [Significantly improves the Mass Effect 3 journal with enhanced quest descriptions, proper quest expiration handling, and fixes for vanilla journal bugs. Adds aftermath descriptions for completed quests and ensures missions properly update and expire.],
+  notes: none,
+)
+
+#mod-entry(
+  name: "Glorious Elevators (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2771",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Restores elevator rides to various areas in Mass Effect 3, replacing instant-loading transitions with immersive travel sequences. Features ambient dialogue and squad banter during rides, restoring the atmosphere of the original trilogy's hub areas.],
+  notes: none,
+)
+
+#mod-entry(
+  name: "HUD Enhancements LE3",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1942",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Various quality-of-life improvements to the Mass Effect 3 HUD. Fixes known mixed input issues, supports controller remapping, and improves the overall usability of the interface.],
+  notes: none,
+)
+
+#mod-entry(
+  name: "Shorter Notifications (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/803",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Reduces the duration of on-screen notifications and tutorials in Mass Effect 3, preventing them from lingering and blocking gameplay elements for too long.],
   notes: none,
 )
 
@@ -78,6 +122,28 @@
   deps: (),
   impact: [Removes the Starchild sequence from Mass Effect 3's ending entirely. The Crucible fires automatically, the Destroy ending plays, and Shepard survives (with the breath scene intact). Includes options for shorter dream sequences and a prologue without the child. Compatible with AHEM and CEM via install options.],
   notes: [Requires LE3 Community Patch and Framework (v1.3+).],
+)
+
+#mod-entry(
+  name: "Audemus' Happy Ending Mod",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/323",
+  game: "LE3",
+  version: "v4.0",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Replaces Mass Effect 3's controversial ending with an alternative Destroy ending. Removes the Starchild sequence entirely and provides a satisfying conclusion where Shepard survives. Features extended cinematics, new dialogue, and a reworked final sequence with improved visual effects.],
+  notes: [Compatible with Citadel Epilogue Mod. Choose one ending mod (Happy Ending, Starchild-Be-Gone, or CEM), not multiple.],
+)
+
+#mod-entry(
+  name: "Ashley Williams' Hospital Stay",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2218",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework", "ME3Tweaks Mod Manager"),
+  impact: [Reworks Ashley's appearance during her hospital stay after the Cerberus Coup. Gives her a proper hospital outfit instead of her combat armor, with visible injuries and a more appropriate look for a recovering soldier.],
+  notes: [Requires LE3 Community Patch and Framework.],
 )
 
 == Content
@@ -192,6 +258,83 @@
   notes: [Choose which restorations to install. Regularly updated with new content. Compatible with most mods as each restoration is independent.],
 )
 
+#mod-entry(
+  name: "Anderson's Final Conversation Restored",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/658",
+  game: "LE3",
+  version: "v1.0.2",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Restores cut content from Mass Effect 3's ending, extending the final conversation with Anderson. Features reworked facial animations, gestures, camera work, and musical cues to deliver a more emotionally complete conclusion to Anderson's arc.],
+  notes: [Compatible with Skippable Catalyst Conversation (select patch during install) and Starchild-Be-Gone.],
+)
+
+#mod-entry(
+  name: "Armax Expansion Mod",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1269",
+  game: "LE3",
+  version: "v1.2.1",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Massively expands the Armax Arsenal Arena in the Citadel DLC with new enemy factions, squadmate allies, and scenarios. Adds Collectors, Geth, and Reaper forces as playable enemy types. Includes Doctor Chakwas and Doctor Michel as squadmate options, new arena maps, and Kirrahe as a console ally.],
+  notes: [Requires LE3 Community Patch and Framework. Spanish translation available. Companion mod to CAT6 Retrofits.],
+)
+
+#mod-entry(
+  name: "Conrad No Apology",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/579",
+  game: "LE3",
+  version: "v2.1",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Fixes Conrad Verner's dialogue in Mass Effect 3 to properly reflect your Mass Effect 1 decisions. If you were paragon with Conrad, he thanks you; if you were renegade, he cowers. Also updates Conrad's appearance to match your import choices.],
+  notes: [Companion mod for Conrad Verner Remembers (ME2LE, mod #385). Compatible with LE3 Community Patch.],
+)
+
+#mod-entry(
+  name: "Diana Allers Overhaul",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1136",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Overhauls Diana Allers' appearance in Mass Effect 3 with improved facial textures, a new hairstyle, and updated outfit options. Gives the war correspondent a more polished and consistent look.],
+  notes: [Required by Primitives texture mod for full texture coverage. Compatible with LE3 Community Patch.],
+)
+
+#mod-entry(
+  name: "Dreams Remade",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1630",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Replaces the dream and hallucination sequences in Mass Effect 3 with remade versions featuring improved visuals, enhanced audio, and reworked camera angles for a more atmospheric and emotionally impactful experience.],
+  notes: [Requires LE3 Community Patch and Framework.],
+)
+
+#mod-entry(
+  name: "Fate of Emily Wong (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1223",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Incorporates the Fate of Emily Wong storyline from the Cerberus Daily News into Mass Effect 3. Adds new emails and a small questline referencing Emily Wong's fate during the Reaper invasion, providing closure for her character.],
+  notes: none,
+)
+
+#mod-entry(
+  name: "Citadel Epilogue Mod (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1018",
+  game: "LE3",
+  version: "v1.5",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Extends the Citadel DLC to serve as a proper epilogue after the main story ending. Allows players to continue exploring the Citadel and interacting with squadmates after the final battle, providing a satisfying send-off.],
+  notes: [Compatible with Happy Ending Mod and Starchild-Be-Gone. Requires LE3 Community Patch.],
+)
+
 == Characters and Appearance
 
 #mod-entry(
@@ -225,6 +368,94 @@
   deps: ("LE3 Community Patch and Framework",),
   impact: [Restores Miranda's various butt shots that were removed from Mass Effect 3 Legendary Edition. Camera angles on the Presidium and Horizon can be toggled on or off via mod settings. Includes the LE2 version as a separate download on the same mod page.],
   notes: [Requires LE3 Community Patch v1.5 or higher. English only. LE2 version available as mod #393.],
+)
+
+#mod-entry(
+  name: "Ashley Consistency Project (MELE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1209",
+  game: "LE3",
+  version: "v1.1",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Makes Ashley's appearance fully consistent throughout Mass Effect 3. Gives her proper casual clothes instead of her combat outfit, a hospital outfit during the Huerta Memorial sequence, and updated armor options including LE1 and Ajax armor sets.],
+  notes: [Requires LE3 Community Patch Framework. Incompatible with LE3 Alternative Squadmate Bodies. Compatible with EGM Squadmate Pack -- install EGM first and pick the same option for Ash.],
+)
+
+#mod-entry(
+  name: "Cat Suits for Female Shepard (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1139",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Adds several new cat suit outfits for female Shepard. Suits are added to Shepard's closet and can be worn as casual outfits or as armor pieces. LE1 and LE2 versions also available by the same author.],
+  notes: [Part of a trilogy-wide mod series. LE1 version (mod #1065) and LE2 version (mod #1065) also available.],
+)
+
+#mod-entry(
+  name: "Geth Retrofits - LE3",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/847",
+  game: "LE3",
+  version: "v1.1",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Overhauls the Geth faction in Mass Effect 3 with improved models and textures for Geth Troopers, Rocket Troopers, Hunters, Primes, and Colossi. Updates their appearance for visual consistency across the trilogy.],
+  notes: [Part of a trilogy-wide retrofit suite. LE2 version also available (mod #2600).],
+)
+
+#mod-entry(
+  name: "Kaidan Alenko Overhaul (LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1424",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Comprehensive overhaul of Kaidan Alenko's appearance in Mass Effect 3 with improved facial textures, updated outfit options, and consistent visual quality throughout the game.],
+  notes: [Requires LE3 Community Patch and Framework.],
+)
+
+#mod-entry(
+  name: "More Hair for Femshep (ME3LE)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/493",
+  game: "LE3",
+  version: "v1.2",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager", "Trilogy Save Editor"),
+  impact: [Adds a large collection of new hairstyles for female Shepard in Mass Effect 3, ported from Sims 4 hairs by Anto. Hairstyles must be applied using the Trilogy Save Editor. Also serves as a modder's resource.],
+  notes: [Requires Trilogy Save Editor to apply hairstyles. LE1 version (mod #495) and LE2 version (mod #481) also available.],
+)
+
+#mod-entry(
+  name: "Reworked Kai Leng",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1038",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Replaces Kai Leng's character model with a redesigned version featuring improved textures, a more menacing appearance, and updated visual effects for his cybernetic enhancements.],
+  notes: [Requires LE3 Community Patch and Framework.],
+)
+
+#mod-entry(
+  name: "Samara's Daughters - LE3",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1554",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Updates the appearance of Samara's Ardat-Yakshi daughters with unique, differentiated face textures and appearances instead of using generic Asari faces.],
+  notes: none,
+)
+
+#mod-entry(
+  name: "Tali Remastered LE3",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1148",
+  game: "LE3",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Replaces Tali'Zorah's appearance in Mass Effect 3 with a fully remastered model featuring a detailed, animated face with jaw, teeth, and eyelashes visible through her helmet visor. Multiple suit style options available during installation.],
+  notes: [Part of a trilogy-wide remaster. LE1 version (mod #1145) also available.],
 )
 
 == Graphics
