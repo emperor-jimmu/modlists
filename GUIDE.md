@@ -382,7 +382,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Beautiful Enchanted Books [Mod Edition]](https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books) | Unique textures per enchantment book type — standalone mod, no resource pack needed            |
 | [Overflowing Bars](https://www.curseforge.com/minecraft/mc-mods/overflowing-bars)                                 | Expanded health, armor, and toughness bars beyond vanilla limits                               |
 | [Cherished Worlds](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds)                                 | Favorite/pin worlds to top of list, prevent accidental deletion                                |
-| [Day Counter](https://www.curseforge.com/minecraft/mc-mods/day-counter)                                           | Day counter title overlay with milestone celebrations — appears at dawn each day               |
+| [Day Counter](https://modrinth.com/mod/daycount)                                                                 | Day counter title overlay with milestone celebrations — appears at dawn each day               |
 | [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)                           | First-person eating/drinking animation — food moves to mouth and shrinks                       |
 | [Camera Overhaul](https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul)                                    | Camera tilting, screen shakes, mouselook roll, idle sway — satisfying movement feedback        |
 | [Dynamic Crosshair](https://www.curseforge.com/minecraft/mc-mods/dynamic-crosshair)                               | Context-aware crosshair — hides/shows/changes style based on what you're looking at or holding |
@@ -2132,6 +2132,7 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | Mod                                                                                                   | Role                                                                         |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | [**Farmer's Delight**](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) 1.3.2            | Cooking hub — cutting board, cooking pot, stove, new crops                   |
+| [**Extra Mod Integrations**](https://www.curseforge.com/minecraft/mc-mods/extra-mod-integrations)     | Adds compat recipes for 50+ mods — Farmer's Delight, Create, Mekanism, AE2   |
 | [**Brewin' And Chewin'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0       | Drinks and fermentation — beer, wine, mead, whiskey                          |
 | [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight) 1.3.0             | Kitchen furniture — drawers, cabinets, shelves for ingredient storage        |
 | [**More Delight**](https://www.curseforge.com/minecraft/mc-mods/more-delight) 26.04.18a+1.21-neoforge | Extra meals, sandwiches, toasts, and knife variants                          |
