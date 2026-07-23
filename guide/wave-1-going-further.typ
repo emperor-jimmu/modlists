@@ -1115,6 +1115,97 @@ Wave 1 adds significant performance load, especially from graphics mods. If your
 #pagebreak()
 #chapter-heading([Wave 1 Guide — Going Further])
 
+#section-heading([Build Strategies for Interplanetary Ships])
+
+Interplanetary ships are different from launch vehicles. You build them in orbit and they never touch atmosphere. Design accordingly.
+
+#section-heading([Staging in Vacuum])
+
+In space, there's no drag and no gravity losses. You don't need high TWR. What matters is *delta-v per ton of dry mass*.
+
+- *Serial staging:* Drop empty tanks as you go. Simple, reliable, wastes docking ports.
+- *Asparagus staging:* Feed fuel inward from outer tanks. All engines fire at once. Best mass fraction, complex plumbing.
+- *Nuclear transfer stages:* A single NERV engine on a long Mk3 fuselage of liquid fuel only (no oxidizer). ~8,000 m/s in a single stage. The interplanetary workhorse.
+- *Ion tugs:* Dawn engines on xenon. 20,000+ m/s, but burns take hours and thrust is measured in millinewtons. Good for small probes, terrible for crewed ships.
+
+#tip[[
+  After ~3,000 m/s of delta-v in a single stage, adding more fuel tanks gives diminishing returns. The tank's own dry mass eats your gains. At that point, add another stage — or switch to a higher-Isp engine.
+]]
+
+#section-heading([TWR vs Isp — What Matters in Space])
+
+- *Launch:* TWR > 1.3. Isp is secondary. You're fighting gravity.
+- *Transfer burn:* TWR > 0.3. Lower means the burn takes multiple orbits (periapsis kicking). Annoying but doable.
+- *Deep space cruise:* TWR 0.05 is fine. You have months. Isp is everything.
+- *Landing:* TWR > 1.0 relative to the body you're landing on (Mun: ~1.6 m/s², so ~0.2 TWR relative to Kerbin). Lightweight vacuum engines like the Terrier or Poodle excel here.
+
+#section-heading([Modular Ship Design])
+
+Build interplanetary ships as dockable modules:
+
+1. *Propulsion section* — engine cluster + fuel tanks. Detachable and reusable.
+2. *Payload* — lander, rover, station module. Dock to the tug for transit, undock at destination.
+3. *Crew module* — hitchhiker container or Mk2 crew cabin with docking port.
+4. *Power + comms* — solar panels or RTG, relay antenna, probe core (always).
+
+#info[[
+  The modular approach means your deep-space tug does multiple missions. After delivering a Duna lander, the tug returns to Kerbin orbit, refuels at a depot, picks up a Jool payload, and goes again. Reusable infrastructure saves launches — and funds in Career mode.
+]]
+
+#section-heading([The Delta-V Budget])
+
+Before launching a mission, add up the cost of every maneuver:
+- LKO to Duna transfer: ~1,100 m/s
+- Duna capture (aerobrake): ~0 m/s
+- Land on Duna (parachutes): ~50 m/s
+- Duna ascent to orbit: ~1,400 m/s
+- Duna to Kerbin transfer: ~700 m/s
+Total one-way: ~3,250 m/s. Round-trip (no refuel): ~6,500 m/s.
+
+Design your ship to the round-trip number first, then add 20% margin for mistakes. If the resulting ship is absurdly large, consider ISRU refueling at the destination.
+
+#section-heading([Campaign Play — Career Mode Strategy])
+
+Wave 1 mods transform Career mode. The Community Tech Tree deepens progression from ~15 nodes to ~50. Near Future parts fill those nodes with meaningful upgrades. Here's how to play it.
+
+#section-heading([Contract Selection])
+
+Not all contracts are worth your time.
+
+- *Accept:* "Explore [body]" (big payout, drives progression), "Science from [body]" (pairs with exploration), satellite contracts (easy money with a relay bus).
+- *Skip:* Part-testing contracts (tedious, low pay), rescue contracts (fun but scale poorly), tourist contracts (acceptable early, tedious late).
+- *Must-take:* World First milestones. These are the game's progression backbone and pay enormously.
+
+#tip[[
+  Build a "contract bus" — a small probe with every science instrument, a relay antenna, and ~3,000 m/s of delta-v. Launch one to each new body you visit. It completes 3–4 contracts at once.
+]]
+
+#section-heading([Science Farming])
+
+With CTT installed, you need roughly 3× the science to complete the tree. Priority order:
+1. *Mun + Minmus biome hopping* — a single lander with all experiments can visit 5+ biomes per trip. Bring a scientist to reset the Science Jr. and Goo.
+2. *Mobile Processing Lab* — put one in Minmus orbit, feed it data from the surface, collect 500 science per transmission.
+3. *SCANsat* — scanning planets generates science passively. Launch scanner satellites to every body in the system.
+4. *Kcalbeloh/Grannus* — each interstellar body is a fresh science goldmine.
+
+#section-heading([Funds Management])
+
+- Upgrade Mission Control first (more contracts), then Tracking Station (patched conics for interplanetary), then R&D (unlock higher tech nodes).
+- The VAB and Launchpad upgrades are expensive — wait until you have 1M+ funds.
+- Tourism contracts to the Mun and Minmus are the best funds/hour in the mid-game. A 16-seat tourist bus to Minmus pays ~500,000 funds.
+
+#section-heading([CTT Node Priority])
+
+With Community Tech Tree, the stock "one node unlocks everything" problem is fixed. Each mod's parts sit in dedicated nodes. Priority path for Wave 1:
+
+1. *Basic Science → Space Exploration:* Unlock SCANsat parts and basic probes
+2. *Nuclear Propulsion:* NERV and Kerbal Atomics engines — your interplanetary workhorses
+3. *Large Probes → Advanced Electrics:* Near Future Solar panels. The blanket arrays are game-changers for outer-system missions.
+4. *Advanced Fuel Systems → Cryogenic Engines:* CryoTanks and LH2 engines for high-Isp upper stages
+5. *Orbital Assembly → Large Station Parts:* StationPartsExpansionRedux — build your orbital fuel depot
+
+After this, specialize: colonization (Planetside, MKS), interstellar (FFT, Blueshift), or expand (more planet packs).
+
 #section-heading([Interplanetary Transfer Windows])
 
 #section-heading([Phase Angles])
@@ -1156,6 +1247,60 @@ In-Situ Resource Utilization converts raw ore into usable fuel. The components:
 
 #danger[[
   ISRU equipment is godlessly heavy. A full mining rig can weigh 20+ tons. Test the full chain on Minmus first — its low gravity makes landing and returning with heavy payloads far easier than the Mun. Minmus also has high ore concentrations in its flats.
+]]
+
+#section-heading([Minmus Mining Base — A Walkthrough])
+
+Minmus is the ideal ISRU starting point. Low gravity (0.05 g), flat landing zones, and high ore concentration in the Flats biome. Here's how to set up a fuel production chain.
+
+#section-heading([Site Selection])
+
+- *Greater Flats:* Huge, perfectly level area near the equator. Easiest landing zone in the game. Ore concentration 8–12% (excellent).
+- *Lesser Flats:* Smaller, slightly inclined. Backup option.
+- *Poles:* Some ore, but inclined — harder to land and ascend efficiently.
+
+Land your scanner satellite in polar Minmus orbit first (SCANsat or stock M700). The SCANsat map will show you exact ore hotspots.
+
+#section-heading([Miner Design])
+
+A Minmus miner needs:
+
+1. *Drill-O-Matic Junior* (or Senior for speed) — deployed with the "Deploy Drill" action
+2. *ISRU Convert-O-Tron 125* (the small one is enough for Minmus)
+3. *Ore tank* — at least the 300-unit radial tank
+4. *Fuel tanks* — the miner is its own first customer. Fill them up on the surface.
+5. *Power:* 4× Gigantor solar arrays + 2× Z-4K batteries. Minmus has good sunlight.
+6. *Radiators:* 2× medium TCS panels. The converter melts without them.
+7. *Engine:* A single Terrier or Spark. TWR > 0.3 on Minmus is trivial.
+
+#warning[[
+  The mining drill must touch the ground. Mount it low on the lander or use pistons (Breaking Ground DLC). If the drill hovers above the surface, it won't work — and the game won't tell you why.
+]]
+
+#section-heading([The Fuel Tanker])
+
+Build a separate craft for ferrying fuel to orbit:
+
+1. Large fuel tanks (at least a Rockomax X200-32)
+2. A docking port (Jr. or standard) on top
+3. RCS thrusters for docking at the orbital depot
+4. Enough TWR to lift a full fuel load from Minmus surface (~0.1 Kerbin TWR is plenty)
+
+The tanker lands at the mining base, docks (or uses KAS/KIS fuel hoses), fills up, and returns to orbit. Each round trip costs ~400 m/s. A full X200-32 tank of LFO is a substantial amount of fuel for interplanetary operations.
+
+#section-heading([Orbital Fuel Depot])
+
+In low Minmus orbit (~20 km), park a fuel depot:
+
+1. Rockomax Jumbo-64 tank (the orange one) with docking ports on both ends
+2. Large reaction wheels (full tanks are heavy and sluggish)
+3. Relay antenna — the depot doubles as a comms relay for far-side landers
+4. Probe core — no crew needed for a gas station
+
+The workflow: Miner fills itself → tanker lands, docks, transfers fuel → tanker ascends, docks with depot → depot refuels interplanetary ships. This chain turns Minmus into infinite free fuel in Kerbin's backyard.
+
+#tip[[
+  Automate with Kerbal Alarm Clock: set an alarm for when the miner's ore tanks are full (~6 days for a Junior drill with 8% ore). When the alarm fires, switch to the miner, launch the tanker, make the fuel run. One fuel run per week keeps your interplanetary fleet running indefinitely.
 ]]
 
 
