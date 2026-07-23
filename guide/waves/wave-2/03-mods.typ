@@ -79,3 +79,51 @@ Wave 2 introduces *Heavy overhaul* mods — mods that fundamentally change or re
   [Integration layer — loads after ALL its dependency mods (BK, CEK, Warlord Pack). Must be absolute last in the load order.],
   [#danger-box[Only needed if ALL constituent mods are installed: Banner Kings + Calradia Expanded Kingdoms + Warlord Pack.] If any dependency is missing, this mod will fail to load. Verify all four mods are present and active before enabling this integration patch.],
 )
+
+// ---- AI Influence - History Manager ----
+#mod-entry(
+  "AI Influence — History Manager",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/10550",
+  "Heavy Overhaul",
+  [AI Influence (9711)],
+  [Companion utility for AI Influence. Manages and persists AI-generated conversation histories, NPC memories, and world event records across game sessions. Without this, conversations are ephemeral — with it, NPCs develop persistent relationships that evolve over time. Required for a meaningful AI Influence experience with long-term relationship tracking.],
+  [No configuration needed. Works automatically alongside AI Influence.],
+  [Integration layer — after AI Influence, before any patches that reference AI character data.],
+  [Requires AI Influence (9711) to be installed and active. Does nothing without its parent mod. Excluded if AI Influence is not in the modlist.],
+)
+
+// ---- Bannerlord Economy Overhaul ----
+#mod-entry(
+  "Bannerlord Economy Overhaul",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/9558",
+  "Heavy Overhaul",
+  [Harmony, ButterLib, MCM, UIExtenderEx],
+  [Comprehensive economy rework. Supply and demand function properly — goods flow between settlements based on trade routes, workshops produce based on input availability, and prices reflect genuine scarcity. Caravans make economic sense. Towns can become wealthy trade hubs or impoverished backwaters based on geography and security. Transforms Bannerlord's economy from a gamey overlay into a living system.],
+  [MCM settings for price elasticity, workshop profitability, caravan efficiency, and trade route dynamics.],
+  [Economy layer — early in Heavy Overhaul. Economic systems process before kingdom and diplomacy mods.],
+  [#warning-box[May conflict with Banner Kings economy system.] Test carefully if using both. BK has its own economic overhaul. Complements Improved Garrisons — strong economy funds better garrison management.],
+)
+
+// ---- Improved Garrisons ----
+#mod-entry(
+  "Improved Garrisons",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/688",
+  "Heavy Overhaul",
+  [Harmony, ButterLib, MCM, UIExtenderEx],
+  [Complete fief management overhaul — used by 41+ other mods. Auto-recruit from villages, recruit prisoners, create recruiter parties, auto-train/upgrade garrison troops with customizable templates, and deploy guard parties that patrol, defend, and follow you into war. Guard parties have full AI — retreat, heal, sell prisoners, resupply autonomously. Standalone UI accessible anywhere on the map. Per-settlement configuration.],
+  [Extensive MCM and in-game UI — per-settlement settings, training templates sync across saves, recruitment thresholds, guard party behavior, culture restrictions, elite-only recruitment.],
+  [Economy/Kingdom layer — after economy mods, before diplomacy. Garrison management depends on economy and feeds into kingdom warfare.],
+  [Used as a dependency by 41+ mods. Save-game compatible. Guard parties complement Party AI Controls (garrison guards vs. companion party orders). Does not conflict with BK directly but may overlap fief management features — test if using both.],
+)
+
+// ---- Ancient Civilizations ----
+#mod-entry(
+  "Ancient Civilizations",
+  "https://www.nexusmods.com/mountandblade2bannerlord/mods/5859",
+  "Heavy Overhaul",
+  [Harmony, ButterLib, MCM, UIExtenderEx],
+  [Adds ancient civilization factions, cultures, and troop trees to Calradia. New kingdoms with classical-era aesthetics — inspired by Rome, Greece, Carthage, and other ancient powers. New troop trees, lords, settlements, and cultural mechanics expand the world beyond medieval Calradia.],
+  [MCM settings for faction behavior and feature toggles.],
+  [World/Faction layer — after map mods, before economy and kingdom mods. Must load after CEK if both are used.],
+  [#warning-box[May conflict with Calradia Expanded Kingdoms — both add new factions/cultures.] Test carefully if using both. Different time periods (medieval vs. classical) — consider choosing one faction overhaul for campaign stability.],
+)

@@ -24,6 +24,7 @@
 // Wave accent colors
 #let wave-0-accent = rgb("#1A4B8C")
 #let wave-1-accent = rgb("#2D5A27")
+#let wave-1d5-accent = rgb("#B85C1A")
 #let wave-2-accent = rgb("#8B1A1A")
 
 // Callout box colors

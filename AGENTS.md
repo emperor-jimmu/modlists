@@ -35,6 +35,12 @@ This file governs how AI agents should work within this repository.
 - No redundant mods (no two mods that do the same thing)
 - New mods must fit the wave's allowed categories per the mod taxonomy
 
+## Nexus Mods fetching
+
+- **Adult content or 403-blocked mods**: Use Playwright browser to navigate to the mod page. The Playwright browser has a logged-in Nexus Mods session and can view adult content. Do NOT use `webfetch`, `ctx_fetch_and_index`, or `ctx_execute` with `fetch()` — these will return HTTP 403 or adult-content-blocked pages.
+- **All other mods**: Use `ctx_fetch_and_index` with concurrency 6-8 for efficient parallel fetching, then `ctx_search` or `ctx_batch_execute` to extract details.
+- After fetching a mod via Playwright, capture the page snapshot (`playwright_browser_snapshot`) and extract: mod name, description, dependencies/requirements, version compatibility, and category tags.
+
 ## Writing style
 
 - **Wave introductions** (`00-introduction.typ`): In-character, second-person narrative, immersive

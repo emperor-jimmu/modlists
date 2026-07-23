@@ -44,6 +44,14 @@
 #include "waves/wave-1/03-mods.typ"
 #include "waves/wave-1/load-order.typ"
 
+// --- Wave 1.5: The Forging ---
+#wave-header("1.5", "The Forging", wave-1d5-accent)
+#include "waves/wave-1.5/00-introduction.typ"
+#include "waves/wave-1.5/01-strategy.typ"
+#include "waves/wave-1.5/02-mechanics.typ"
+#include "waves/wave-1.5/03-mods.typ"
+#include "waves/wave-1.5/load-order.typ"
+
 // --- Wave 2: The Reckoning ---
 #wave-header(2, "The Reckoning", wave-2-accent)
 #include "waves/wave-2/00-introduction.typ"
