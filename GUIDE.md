@@ -364,6 +364,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                                       | Nature ambiance (birds, wind, water)                                                           |
 | [The Immersive Music Mod](https://www.curseforge.com/minecraft/mc-mods/the-immersive-music-mod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved                            |
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                                         | Animated UI, smooth hotbar, item particles                                                     |
+| [Dark Mode Everywhere](https://www.curseforge.com/minecraft/mc-mods/dark-mode-everywhere)                         | Shader-based dark mode for all GUIs — 3 darkness levels, toggleable in-game                    |
 | [Status Effect Bars Reforged](https://www.curseforge.com/minecraft/mc-mods/status-effect-bars-reforged)           | Duration bars on status effect icons in HUD and inventory                                      |
 | [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)                       | RPG-style titles entering biomes/dimensions                                                    |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                            | Enhanced mod list screen with badges/categories                                                |
@@ -518,6 +519,13 @@ Dynamic Crosshair uses **YACL** (already in the pack) for its in-game config scr
 | `crosshairColor`               | `"ENTITY_BASED"` | White for neutral/block, red for hostile entities, green for interactable entities              |
 
 No keybind changes needed — the mod works fully through context detection. YACL provides a searchable settings screen.
+
+**Dark Mode Everywhere** (`config/darkmodeeverywhere-client.toml`):
+
+- `darkModeLevel` = `1` — Darkness level: 0 (light), 1 (medium, default), 2 (full dark). Change in-game via the button in the bottom-left corner of any GUI.
+- `methodShaderDump` = `false` — Set to `true` temporarily if a GUI looks broken, to log which methods the shader is targeting.
+
+**Known issue — double text**: Some mods render text shadows that get doubled by the dark shader. Fix: edit `darkmodeeverywhereshaders.json` (create in `config/` or via a resource pack) and change `darkColorRecplacement` from `16777215` to `4868682` (all 3 occurrences). Only needed if you see doubled text on specific screens.
 
 All the visual polish, UI improvements, inventory tools, storage, travel, trading, and quality-of-life features that make the game feel great. Install alongside Wave 0.
 

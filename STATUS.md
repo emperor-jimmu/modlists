@@ -256,6 +256,9 @@
 - [x] Cosy Critters & Creepy Crawlies v0.3.3 (Wave 0.5 — Visual & Client QoL) — ambient atmospheric animals: birds, bugs, critters. Client-side only, 97KB, all effects configurable. NeoForge 1.21.1 native. By PigCart (GrandArtisan, 709K downloads).
 - [x] Foxified Dense Flowers v1.0.0 (Wave 0.5 — Visual & Client QoL) — renders multiple flowers per block in flower fields. NeoForge 1.21.1 native, client-side only. NeoForge port of the original Fabric mod (172K downloads, MIT licensed). By owen233.
 
+### Added Mods (Jul 2026 batch 9 — Dark UI)
+- [x] Dark Mode Everywhere v1.4.0 (Wave 0.5 — Visual & Client QoL) — shader-based dark mode for all GUIs, 3 darkness levels, toggleable in-game. Client-side only, MIT license, 36.2M downloads, NeoForge 1.21.1 native. By Buuz135. No dependencies.
+
 ### Skipped After Review (Jul 2026 batch 7 — Foliage Resource Packs)
 - [x] Rainbow's Foliage — requires Polytone mod (unverified NeoForge 1.21.1)
 - [x] Os' Colorful Grasses — low download count, niche scope
