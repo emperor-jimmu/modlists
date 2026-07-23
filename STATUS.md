@@ -241,11 +241,11 @@
 ### Added Mods (Jul 2026 batch 11 — Visual Polish)
 - [x] (Bee's) Fancy Crops (Wave 0 — Texture Pack) — 6.5M downloads, works with Farmer's Delight
 - [x] Fire Rekindled (Wave 0 — Texture Pack) — animated fire/lava/water textures, Create mod support
-- [x] Rainbow's Foliage (Wave 0 — Texture Pack) — foliage color variation, requires Polytone dep
-- [x] Mickey Joe's Flowers (Wave 0 — Texture Pack) — enhanced 3D flowers
+- [x] ~~Rainbow's Foliage (Wave 0 — Texture Pack) — foliage color variation~~ **REMOVED** — no compatible NeoForge version
+- [x] ~~Mickey Joe's Flowers (Wave 0 — Texture Pack) — enhanced 3D flowers~~ **REMOVED** — no compatible NeoForge version
 - [x] Bushy Pink Petals, Wildflowers & Leaf Litter (Wave 0 — Texture Pack) — 3D ground cover
 - [x] Effectual (Wave 0.5 — Visual & Client QoL) — atmospheric particles, compatible with Particular Reforged via config
-- [x] Polytone (Wave 0.5 — Dependency) — required by Rainbow's Foliage texture pack
+- [x] ~~Polytone (Wave 0.5 — Dependency) — required by Rainbow's Foliage~~ **REMOVED** — orphaned dep
 - [x] TLib (Wave 0.5 — Dependency) — required by Effectual
 - [ ] Effectual config tuning: disable cave dust (duplicated by Particular Reforged) after test launch
 
@@ -274,9 +274,9 @@
 - [x] Smooth Font 32x (Wave 0 — Texture Pack) — Faithful 32x-based smooth font, 7.8M downloads, 69KB. Only overrides font textures, safe alongside 16x packs. By apt9002. [CurseForge](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
 
 ### Review History — Foliage Resource Packs (Jul 2026)
-- [x] Rainbow's Foliage — was blocked by Polytone dep; now verified: Polytone has NeoForge 1.21.1 ✅ ADDED (Jul 2026 batch 11)
+- [x] ~~Rainbow's Foliage — was blocked by Polytone dep; verified Polytone has NeoForge 1.21.1 but no compatible version of the resource pack for 1.21.1~~ ❌ REMOVED
 - [x] Os' Colorful Grasses — 814K downloads but 32x texture conflict with 16x packs, Patreon-gated full version ❌ STILL SKIPPED
-- [x] Mickey Joe's Flowers — enhanced 3D flowers, 95K downloads, actively updated ✅ ADDED (Jul 2026 batch 11)
+- [x] ~~Mickey Joe's Flowers — enhanced 3D flowers, 95K downloads, actively updated~~ ❌ REMOVED — no compatible NeoForge version found
 - [x] Bushy Pink Petals, Wildflowers & Leaf Litter — 3D ground cover, 178K downloads, Apache 2.0, actively maintained ✅ ADDED (Jul 2026 batch 11)
 - [x] (Bee's) Fancy Crops — 6.5M downloads, Farmer's Delight compatible — too popular to skip ✅ ADDED (Jul 2026 batch 11)
 - [x] Retextured Vine — still too narrow in scope (vines only, 22K downloads) ❌ STILL SKIPPED

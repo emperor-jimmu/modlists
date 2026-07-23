@@ -220,8 +220,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Better Lanterns](https://www.curseforge.com/minecraft/texture-packs/better-lanterns)                                             | Enhanced 3D look for lanterns and chains                                  |
 | [(Bee's) Fancy Crops](https://modrinth.com/resourcepack/fancy-crops)                                                            | Reworked crop models with texture variations — compatible with Farmer's Delight |
 | [Fire Rekindled](https://modrinth.com/resourcepack/fire-rekindled)                                                              | Animated fire, lava, water, and portal textures — includes Create mod support |
-| [Rainbow's Foliage](https://www.curseforge.com/minecraft/texture-packs/rainbows-foliage)                                        | Foliage detail and color variation — adds visual variety to trees and plants |
-| [Mickey Joe's Flowers](https://www.curseforge.com/minecraft/texture-packs/mickey-joes-flowers)                                  | Enhanced 3D flowers respecting vanilla artstyle                           |
 | [Bushy Pink Petals, Wildflowers & Leaf Litter](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter) | 3D models for pink petals, wildflowers, and leaf litter on the ground     |
 
 **Smooth Font** replaces Minecraft's pixelated default font with a clean, smooth 32x typeface based on Faithful 32x. Improves readability across menus, chat, and UI while keeping a vanilla-friendly look. Only overrides font textures — safe to use alongside any 16x resource packs. By apt9002. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
@@ -238,10 +236,6 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 **Fire Rekindled** overhauls almost all animated textures in the game: fire, soul fire, campfires, torches, lanterns, water, lava, magma, nether portal, slime, sculk, and more. Animations are 32-64 frames, loop seamlessly, and stay close to vanilla artstyle. Supports **Create** mod (honey, steam jet particles). All textures include Normal and Specular maps (LabPBR standard) for PBR-compatible shaders. 1.3M downloads, MIT license. By Tectato. [Source (Modrinth)](https://modrinth.com/resourcepack/fire-rekindled) — Optional CTM addon pack available.
 
-**Rainbow's Foliage** adds detail and color variation to vegetation — trees, leaves, and plants get subtle hue shifts and texture variations for more natural-looking forests. Compatible with modded biomes (Terralith). Requires **Polytone** mod (client-side, auto-installed Wave 0.5 dependency) for the color and lighting effects. By thepoeticrainbow. 116K downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/rainbows-foliage)
-
-**Mickey Joe's Flowers** revamps all flowers with an enhanced 3D look that respects the vanilla artstyle. Each flower type gets unique model depth and shape — tulips, poppies, dandelions, cornflowers, and all others feel more dimensional without looking out of place. 16x, vanilla-friendly. By MushirMickeyJoe. 95K downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/mickey-joes-flowers)
-
 **Bushy Pink Petals, Wildflowers & Leaf Litter** replaces flat pink petals, wildflowers, and leaf litter with 3D models. Makes ground cover look thicker and more natural — petals and leaves pile up with visible depth. Apache 2.0 licensed, actively maintained. By godhusk. 178K downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter)
 
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
@@ -253,9 +247,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 5. Better Lanterns
 6. (Bee's) Fancy Crops
 7. Fire Rekindled
-8. Rainbow's Foliage
-9. Mickey Joe's Flowers
-10. Bushy Pink Petals, Wildflowers & Leaf Litter
+8. Bushy Pink Petals, Wildflowers & Leaf Litter
 
 ### Infrastructure
 
@@ -326,9 +318,7 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 5. Better Lanterns
 6. (Bee's) Fancy Crops
 7. Fire Rekindled
-8. Rainbow's Foliage
-9. Mickey Joe's Flowers
-10. Bushy Pink Petals, Wildflowers & Leaf Litter
+8. Bushy Pink Petals, Wildflowers & Leaf Litter
 
 ---
 
@@ -482,7 +472,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 |-----------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------|
 | [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility — lets Fabric mods run on NeoForge | First Person Model, Eating Animation, Effectual, multiple Wave 1-3+ mods |
 | [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)                  | Library for config-driven UI mods                           | Advancement Plaques                                         |
-| [Polytone](https://www.curseforge.com/minecraft/mc-mods/polytone)               | Custom block colors, lightmaps, biome colors — Optifine format support for resource packs | Rainbow's Foliage (texture pack)                           |
+| [Polytone](https://www.curseforge.com/minecraft/mc-mods/polytone)               | Custom block colors, lightmaps, biome colors — Optifine format support for resource packs | — (dependency orphaned — Rainbow's Foliage removed)        |
 | [TLib (Take's Lib)](https://www.curseforge.com/minecraft/mc-mods/tlib)          | Library for atmospheric effects                             | Effectual                                                   |
 
 **Architectury API** is a lightweight library with no user-visible features — install once and forget. It provides the abstraction layer that lets Fabric-origin client QoL mods (First Person Model, Eating Animation) run seamlessly on NeoForge. Without it, these mods crash at startup with a missing-dependency error.
