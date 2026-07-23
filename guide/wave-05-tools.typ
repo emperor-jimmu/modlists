@@ -356,6 +356,34 @@ KAC is most useful when you have 3+ concurrent missions. Create alarms for: mane
 
 *Hangar Extender:* Install before building large historical rockets (Saturn V, SLS) or interplanetary motherships. The extended boundaries are automatic — no configuration needed. If your craft is already hitting the VAB ceiling, save it as-is before installing, then reload and continue building.
 
+#section-heading([Trajectories])
+
+Trajectories predicts where your craft will land — accounting for atmospheric drag and planetary rotation. Toggle it on from the toolbar (the icon looks like a trajectory arc).
+
+- *Red X:* Predicted impact point. This is where you'll hit the ground if you do nothing.
+- *Blue line:* Your trajectory through the atmosphere, showing how drag bends your path.
+- *Body-fixed mode (default):* The X stays locked to the rotating planet surface. Use this for landings.
+- *Inertial mode:* The X shows where you'd land if the planet stopped rotating. Use this for orbital planning only.
+
+#tip[[
+  When aerobraking at Duna or Jool, set Trajectories to body-fixed mode. Adjust your periapsis until the predicted exit trajectory has the apoapsis you want. A 15 km Duna periapsis captures you; a 25 km one just bends your path.
+]]
+
+#section-heading([SCANsat])
+
+SCANsat adds persistent planetary maps. Open the map viewer from the SCANsat toolbar button (a radar dish icon).
+
+- *Altimetry map:* Height above sea level. Use this to find flat landing zones and mountain peaks.
+- *Biome map:* Color-coded biomes. Essential for science farming — plan your lander's route to visit multiple biomes per trip.
+- *Slope map:* Terrain steepness. Red = steep, blue = flat. Land in the blue.
+- *Coverage:* Maps start blank and fill in as your scanner passes over the surface. A polar orbit at 80° inclination scans everything.
+
+Launch one scanner satellite per body you plan to visit. Even a tiny CubeSat with a scanning antenna and solar panels works. The maps persist across saves.
+
+#info[[
+  SCANsat scanning generates science points passively. A single scanner in polar orbit around the Mun will complete several "Scan [Body]" contracts with zero additional effort.
+]]
+
 // ═══════════════════════════════════════════════════════════════════
 // TUTORIAL: BUILDING & PLANNING
 // ═══════════════════════════════════════════════════════════════════
@@ -560,3 +588,15 @@ Transfer windows tell you *when* to burn, not just *how much* delta-v you need.
 #section-heading([Where to Go from Here])
 
 You can now land on the Mun, dock spacecraft in orbit, and assemble space stations. You've mastered the core skills of orbital operations. When you're comfortable with rendezvous and can plan Mun missions without step-by-step instructions, you're ready for Wave 1 — interplanetary travel, ISRU mining, and exploring the expanded solar system.
+
+#pagebreak()
+#chapter-heading([Player Challenges — Wave 0.5])
+
+Test your Mun, docking, and station skills.
+
+- *Single-Stage Lander:* Mun landing and return with no staging during descent or ascent. One engine, one tank, one landing.
+- *Apollo Style:* Design a two-part mission — Command/Service Module stays in Mun orbit while a separate lander descends. Dock them back together before returning.
+- *No RCS Docking:* Dock two craft using only main engine thrust. No RCS thrusters allowed. Translation via careful tapping.
+- *Three-Module Station:* Launch and dock three separate modules (core + hab + fuel depot) into a single station. No module may exceed 30 parts.
+- *Polar Mun Landing:* Land on the rim of a Mun polar crater. The terrain is steep, the lighting eternal twilight. Good luck.
+- *Slope Landing:* Land on Minmus in the Slopes biome. Inclination 15–30°. Your lander must not tip.

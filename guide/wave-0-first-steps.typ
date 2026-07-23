@@ -171,6 +171,20 @@ Open Precise Maneuver by clicking its icon (a maneuver node with a gear) in the 
 
 Station Keeping works automatically — install it and forget it. Your station and satellite orbits will remain stable across timewarp sessions. No configuration needed. If you notice a station's orbit still drifting, check that the mod is installed correctly (look for a "StationKeeping" folder in GameData).
 
+#section-heading([BetterBurnTime])
+
+BetterBurnTime replaces the stock burn-time indicator next to the navball. When you create a maneuver node, it shows three numbers:
+
+- *Time to burn:* Countdown until you should start burning. The indicator turns green when it's time.
+- *Burn duration:* How long the burn will take at full throttle.
+- *Time to impact:* Shows during landings — how many seconds until you hit the surface. Watch this on final descent.
+
+Start your burn so that half the burn happens before the node and half after. BetterBurnTime handles the timing — when the countdown hits zero, throttle up. When the "Est. Burn" counter reaches zero, cut engines.
+
+#tip[[
+  During landings, BetterBurnTime's impact timer is more responsive than the altimeter alone. When it counts down to ~3 seconds at high speed, you're about to lithobrake. Burn retrograde immediately.
+]]
+
 // ═══════════════════════════════════════════════════════════════════
 // TUTORIAL: FIRST STEPS
 // ═══════════════════════════════════════════════════════════════════
@@ -315,3 +329,14 @@ From here, you have options:
 - *Experiment:* Build progressively larger rockets. See how much payload you can lift to orbit.
 - *Progress:* When you can consistently reach orbit without reverting flights, install Wave 0.5. It adds advanced planning tools and teaches you to go further — Mun landings, docking, and space stations.
 
+#pagebreak()
+#chapter-heading([Player Challenges — Wave 0])
+
+These are optional goals to test your orbital skills. No mods beyond Wave 0 required.
+
+- *Single-Stage to Orbit:* Reach orbit without decoupling anything. The entire rocket goes to space together.
+- *SRB Only:* Orbit using only solid rocket boosters — no liquid engines. Throttle management is... creative.
+- *Minimalist:* Orbit with a rocket under 10 parts. Every part must earn its place.
+- *High Orbit:* Achieve a circular orbit at 500 km altitude (stock contracts consider this "high orbit" — science bonus).
+- *Polar Orbit:* Launch north from KSC into a 90° inclination orbit. Harder than east because you get no rotation assist.
+- *Precision Landing:* De-orbit and splash down within 5 km of the Kerbal Space Center. Use your trajectory prediction skill.
