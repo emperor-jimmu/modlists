@@ -1,5 +1,6 @@
 {
     "spec_version": "v1.34",
+    "kind": "metapackage",
     "identifier": "TheLongAscent",
     "name": "The Long Ascent",
     "abstract": "A curated 3-wave modlist and comprehensive game guide for Kerbal Space Program 1.12.5",

@@ -1,5 +1,6 @@
 {
     "spec_version": "v1.34",
+    "kind": "metapackage",
     "identifier": "TheLongAscentWave1",
     "name": "The Long Ascent — Wave 1: Going Further",
     "abstract": "Wave 1 of The Long Ascent: Graphics, parts packs, and light mechanical additions. Requires Wave 0.",
