@@ -1,6 +1,6 @@
 // 11-le3.typ -- LE3 Mods
 
-#import "lib.typ": mod-entry
+#import "lib.typ": mod-entry, callout
 
 #pagebreak()
 
@@ -17,19 +17,6 @@
   deps: (),
   impact: [Extensive bugfix and correction mod for Mass Effect 3 Legendary Edition. Provides both the Community Patch and Framework components which serve as the foundation for most LE3 mods. Fixes hundreds of bugs across gameplay, quests, dialogue, audio, and visual issues.],
   notes: [Required by many LE3 mods including Expanded Galaxy Mod, LE3 Diversification Project, Miranda Mod, and Liara Mourns the Dead. Install before all other LE3 mods.],
-)
-
-== Graphics
-
-#mod-entry(
-  name: "LE3 Opening Remaster",
-  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/19",
-  game: "LE3",
-  version: "v3.0",
-  last-checked: "2026-05",
-  deps: (),
-  impact: [Remasters the Mass Effect 3 opening video using enhanced Bink 2 format. Features improved video interpolation from ALOV 3.0 for a sharper, higher-quality intro cinematic. Multi-language support included.],
-  notes: [Requires ME3Tweaks Mod Manager 8.1 or newer. Install LE3 Community Patch BEFORE this mod if using both.],
 )
 
 == Gameplay and Mechanics
@@ -239,3 +226,108 @@
   impact: [Restores Miranda's various butt shots that were removed from Mass Effect 3 Legendary Edition. Camera angles on the Presidium and Horizon can be toggled on or off via mod settings. Includes the LE2 version as a separate download on the same mod page.],
   notes: [Requires LE3 Community Patch v1.5 or higher. English only. LE2 version available as mod #393.],
 )
+
+== Graphics
+
+#mod-entry(
+  name: "LE3 Opening Remaster",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/19",
+  game: "LE3",
+  version: "v3.0",
+  last-checked: "2026-05",
+  deps: (),
+  impact: [Remasters the Mass Effect 3 opening video using enhanced Bink 2 format. Features improved video interpolation from ALOV 3.0 for a sharper, higher-quality intro cinematic. Multi-language support included.],
+  notes: [Requires ME3Tweaks Mod Manager 8.1 or newer. Install LE3 Community Patch BEFORE this mod if using both.],
+)
+
+== Texture Mods
+
+#mod-entry(
+  name: "A Lot Of Textures (ALOT) -- LE3",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/363",
+  game: "LE3",
+  version: "v2021.1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Massive vanilla-friendly graphical overhaul for Mass Effect 3. Combines hand-crafted texture replacements from the original OT ALOT project (endorsed by BioWare as a key inspiration behind the LE) with a vastly improved Improved Static Lighting (ISL) component. ISL runs ~40,000 light and shadow maps through neural network-based denoising, antialiasing, and upscaling to eliminate blocky shadows and lighting artifacts. Fixes the most glaring upscaling issues in LE with textures for the Presidium sky, text holograms, Legion, Tali, EDI, Garrus, Liara, and more.],
+  notes: [Separate download files for LE1, LE2, and LE3 on the same mod page. Two installation methods: MEM (Mass Effect Modder) replaces all matching textures globally and must be installed AFTER all content mods; M3TO (ME3Tweaks Mod Manager Texture Override) replaces at runtime by asset name, can be toggled on/off, and should be installed BEFORE any .mem mods. M3TO is faster and more flexible. Always install texture mods AFTER content mods.],
+)
+
+#mod-entry(
+  name: "A Lot Of Textures (ALOT) -- ISL for LE3",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/363",
+  game: "LE3",
+  version: "v2021.1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Improved Static Lighting component for ALOT. Runs ~40,000 light and shadow maps through neural network-based denoising, antialiasing, and upscaling to eliminate blocky shadows and lighting artifacts in Mass Effect 3. Separate download file from the main ALOT package on the same mod page.],
+  notes: [Separate file on the ALOT mod page (#363). Install AFTER the main ALOT package. Uses Mass Effect Modder (MEM). Always install texture mods AFTER content mods.],
+)
+
+#mod-entry(
+  name: "Primitives - A Facial Appearance Overhaul",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/22",
+  game: "LE3",
+  version: "v1.5",
+  last-checked: "2026-07",
+  deps: ("LE3 Community Patch and Framework",),
+  impact: [Large-scale overhaul for the faces of human and asari characters across all three Legendary Edition games. Features high quality textures based on Ellise's original trilogy complexions. Replaces unique complexions for named characters (Liara, FemShep, Kaidan, etc.), generic complexions for non-individualized human and asari NPCs, eyes and eyelashes for all human and asari characters, and miscellaneous textures including eyebrows, makeup, freckles, and Asari tattoos. Unique complexions are 4K, generic complexions are 2K for performance.],
+  notes: [Requires LE3 Community Patch and Diana Allers Overhaul for all textures. Install via Mass Effect Modder (MEM). Available as All-in-One or Individual Install packages. Always install texture mods AFTER content mods.],
+)
+
+#mod-entry(
+  name: "ExoPlanets LE2-LE3",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/3028",
+  game: "LE3",
+  version: "v1.1",
+  last-checked: "2025-12",
+  deps: (),
+  impact: [Replaces vanilla galaxy map exoplanet textures with more natural and realistic versions. Covers giant gas type, desert type, moon type, and Earth type planets. Inspired by our own Solar System's appearance. Unique planets like Illium and the Helios system remain untouched.],
+  notes: [Applies to LE2 and LE3. LE1 planets are not rendered the same way and do not need this overhaul. Compatible with mods adding new systems and planets like EGM (as long as they use vanilla files). Install via Mass Effect Modder (MEM). Always install texture mods AFTER content mods.],
+)
+
+#mod-entry(
+  name: "Femshepping's Female MELE Complexions",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/274",
+  game: "LE3",
+  version: "v4.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [30 complexion replacers for the three default Female Shepard complexions across all three Legendary Edition games. Replaces the vanilla complexions in Character Creator with high quality alternatives.],
+  notes: [Requires Mass Effect Modder (MEM) to install. Install texture mods AFTER content mods. Use Trilogy Save Editor to change which complexion your existing Shepard uses.],
+)
+
+#mod-entry(
+  name: "(NSFW) Paramours",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1132",
+  game: "LE3",
+  version: "v1.5",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Fully nude textures for in-game female body meshes across all three Legendary Edition games. Texture edits only -- cannot make characters nude on their own. Only affects the vanilla nude mesh, not underwear.],
+  notes: [NSFW content. Install via Mass Effect Modder (MEM). Choose only ONE texture for Ashley, ONE for FemShep, and ONE for Asari per game. Always install texture mods AFTER content mods.],
+)
+
+#mod-entry(
+  name: "LE3 Opening Remaster",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/19",
+  game: "LE3",
+  version: "v3.0",
+  last-checked: "2026-05",
+  deps: (),
+  impact: [Remasters the Mass Effect 3 opening video using enhanced Bink 2 format. Features improved video interpolation from ALOV 3.0 for a sharper, higher-quality intro cinematic. Multi-language support included.],
+  notes: [Requires ME3Tweaks Mod Manager 8.1 or newer. Install LE3 Community Patch BEFORE this mod if using both.],
+)
+
+=== Recommended Load Order
+
+Install texture mods in the following order using Mass Effect Modder (MEM). Later mods overwrite earlier ones, so install higher-priority mods last:
+
+#callout("info", [
+  + ALOT
+  + ALOT ISL
+  + Primitives
+  + ExoPlanets
+  + Complexion
+  + Paramour
+])

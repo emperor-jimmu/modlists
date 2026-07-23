@@ -1,6 +1,6 @@
 // 09-le1.typ -- LE1 Mods
 
-#import "lib.typ": mod-entry
+#import "lib.typ": mod-entry, callout
 
 #pagebreak()
 
@@ -333,12 +333,29 @@
 )
 
 #mod-entry(
-  name: "A Lot Of Textures (ALOT)",
+  name: "A Lot Of Textures (ALOT) -- LE1",
   url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/363",
-  game: "Launcher",
+  game: "LE1",
   version: "v2021.1.0",
   last-checked: "2026-07",
   deps: (),
-  impact: [Massive vanilla-friendly graphical overhaul for the entire Mass Effect Trilogy. Combines hand-crafted texture replacements from the original OT ALOT project (endorsed by BioWare as a key inspiration behind the LE) with a vastly improved Improved Static Lighting (ISL) component. ISL runs ~40,000 light and shadow maps through neural network-based denoising, antialiasing, and upscaling to eliminate blocky shadows and lighting artifacts across all three games. Fixes the most glaring upscaling issues in LE with textures for the Presidium sky, text holograms, Legion, Tali, EDI, Garrus, Liara, and more.],
-  notes: [Applies to LE1, LE2, and LE3. Two installation methods: MEM (Mass Effect Modder) replaces all matching textures globally and must be installed AFTER all content mods; M3TO (ME3Tweaks Mod Manager Texture Override) replaces at runtime by asset name, can be toggled on/off, and should be installed BEFORE any .mem mods. M3TO is faster and more flexible. Always install texture mods AFTER content mods.],
+  impact: [Massive vanilla-friendly graphical overhaul for Mass Effect 1. Combines hand-crafted texture replacements from the original OT ALOT project (endorsed by BioWare as a key inspiration behind the LE) with a vastly improved Improved Static Lighting (ISL) component. ISL runs ~40,000 light and shadow maps through neural network-based denoising, antialiasing, and upscaling to eliminate blocky shadows and lighting artifacts. Fixes the most glaring upscaling issues in LE with textures for the Presidium sky, text holograms, Legion, Tali, EDI, Garrus, Liara, and more.],
+  notes: [Separate download files for LE1, LE2, and LE3 on the same mod page. Two installation methods: MEM (Mass Effect Modder) replaces all matching textures globally and must be installed AFTER all content mods; M3TO (ME3Tweaks Mod Manager Texture Override) replaces at runtime by asset name, can be toggled on/off, and should be installed BEFORE any .mem mods. M3TO is faster and more flexible. Always install texture mods AFTER content mods.],
 )
+
+=== Recommended Load Order
+
+Install texture mods in the following order using Mass Effect Modder (MEM). Later mods overwrite earlier ones, so install higher-priority mods last:
+
+#callout("info", [
+  + ALOT
+  + ALOT ISL
+  + 4k Upscaled Armor and Cloth Textures
+  + LEUITM
+  + Primitives
+  + 4k Enhanced Textures MEM
+  + Complexion
+  + Paramour
+  + LEDs ON LE1
+  + Zeb's Eye Re-Textures
+])
