@@ -19,6 +19,17 @@
   notes: none,
 )
 
+#mod-entry(
+  name: "Conrad Verner Remembers (ME2LE)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/385",
+  game: "LE2",
+  version: "v2.1",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Fixes the long-standing Conrad Verner import bug where he always believes Shepard pointed a gun at him in ME1, regardless of actual choices. Introduces an in-universe mechanic: inspect Conrad's picture in the Normandy cabin before ever landing on Illium to set the correct import flags. Also updates Conrad's appearance and dialogue to match your Shepard's decisions.],
+  notes: [Must inspect the cabin picture BEFORE landing on Illium. Companion mod for ME3: Conrad No Apology (mod #579). Fully compatible with Unofficial LE2 Patch v0.9.5+.],
+)
+
 == Utilities and Frameworks
 
 #mod-entry(
@@ -41,19 +52,6 @@
   deps: ("ME3Tweaks Mod Manager",),
   impact: [Framework mod providing engine-level improvements required by certain LE2 mods and serving as a resource for other mod developers. Features include: helmet hides hair for henchmen, Arc Projector CTD fix, configurable armor/helmet matching system, coalesced-configurable camera shake, pawn sight radius, tracer speed, corpse cleanup disable, and power use configuration.],
   notes: [Required by mods from RepugnantPear (Armored NPCs, Armored Squad, etc.). Permissions open to all MELE mod developers with credit. Reporting bugs requires installation log.],
-)
-
-== Graphics
-
-#mod-entry(
-  name: "Relay Jump Remaster (LE2)",
-  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/418",
-  game: "LE2",
-  version: "v4.0",
-  last-checked: "2026-05",
-  deps: ("ME3Tweaks Mod Manager",),
-  impact: [Completely redesigned 4K relay jump video for Mass Effect 2 combining an entirely new CGI shot with edited Mass Effect 3 relay footage. Uses Bink 2 format at 4K 60fps with AI-based interpolation and high-quality Wwise audio. Created by the team behind ALOV.],
-  notes: [Requires ME3Tweaks Mod Manager 8.1 or newer.],
 )
 
 == Gameplay and Mechanics
@@ -113,6 +111,28 @@
   notes: none,
 )
 
+#mod-entry(
+  name: "Alternative Persuasion (LE2)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1983",
+  game: "LE2",
+  version: "v1.1",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Replaces the vanilla binary Charm/Intimidate threshold system with a probability-based persuasion mechanic. Charm and Intimidate options become dice-roll checks rather than hard point-gated requirements. Eliminates the strong incentive to go all-Paragon or all-Renegade, making Paragade and Renegon playstyles equally viable. Multiple difficulty options available.],
+  notes: [Not compatible with Paragade Persuasion mod (#1673). Can be re-installed mid-playthrough to change difficulty. Save-scumming is prevented by design.],
+)
+
+#mod-entry(
+  name: "Nos Astra Mineral Exchange",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1205",
+  game: "LE2",
+  version: "v1.2",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Adds a mineral exchange machine to Nos Astra on Illium, allowing players to purchase iridium, palladium, platinum, and element zero using credits. Provides an alternative to planet scanning for resource acquisition.],
+  notes: none,
+)
+
 == UI and Quality of Life
 
 #mod-entry(
@@ -157,6 +177,28 @@
   deps: (),
   impact: [Various improvements to the Mass Effect 2 HUD. Supports up to 6 weapon types per squadmate with Truly Unrestricted Weapons, allows controller Y-button power remapping on the fly, fixes all known mixed input issues (no UI flickering), enables hotkey bar toggle with Y key, and remembers hotkey bar hide state across saves. Fixes minor visual issues with weapon wheel and squadmate weapon icons.],
   notes: [All languages supported. Works with Myriad Pro Begone. Can lock interaction prompts to always show controller or keyboard prompts for mixed input setups like Steam Deck.],
+)
+
+#mod-entry(
+  name: "LE2 Mission Results Screen Fix",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/896",
+  game: "LE2",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Fixes the mission results screen in Mass Effect 2 that was broken in the Legendary Edition. Corrects the aspect ratio and positioning of UI elements for both standard 16:9 and ultrawide 21:9 displays.],
+  notes: none,
+)
+
+#mod-entry(
+  name: "Myriad Pro Begone",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1070",
+  game: "Launcher",
+  version: "v1.4",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Replaces the Myriad Pro font used throughout all three games' user interfaces with a cleaner, more readable alternative. Fixes character differentiation issues (L/I distinction), improves text alignment, adds drop shadows to LE2 dialogue wheel text, and fixes various UI text scaling issues across LE1, LE2, and LE3. Uses M3's merge functionality for compatibility.],
+  notes: [Applies to all three games (LE1, LE2, LE3). Compatible with EGM's expanded Squad Select UI (v1.4+). Native support for iOS Datapad Messages Integration (v1.3+).],
 )
 
 == Weapons and Armor
@@ -317,4 +359,94 @@
   deps: ("ME3Tweaks Mod Manager",),
   impact: [Restores Miranda's various butt shots that were removed from Mass Effect 2 Legendary Edition. The LE3 version of this mod (mod #392) is also available.],
   notes: [Adult content mod. LE3 counterpart available as mod #392.],
+)
+
+#mod-entry(
+  name: "Armored NPCs (LE2)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1998",
+  game: "LE2",
+  version: "v1.8",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager", "Unofficial LE2 Patch"),
+  impact: [Outfits key NPCs throughout Mass Effect 2 with custom, lore-appropriate armor. C-SEC officers on the Citadel wear custom light armor and carry weapons. Alliance Marines use LE3-style armor. Nos Astra security, Omega guards, and Cerberus crew receive appropriate gear. Horizon squadmates (Ashley and Kaidan) wear Alliance heavy armor. Arrival mission Batarians get custom helmets and armor.],
+  notes: [Includes compatibility patches for Expanded Shepard Armory, F.I.S.H. Mod, and Casual Hubs. Built on Unofficial LE2 Patch and LE2 Improved Functionality.],
+)
+
+#mod-entry(
+  name: "Aria Consistency Mod (ME2LE)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1068",
+  game: "LE2",
+  version: "v1.1",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Makes Aria T'Loak's appearance consistent with her look from the Omega DLC. Updates her outfit and facial features with improved models and textures, including proper fingerless gloves. Planned as part of Project Variety for MELE2.],
+  notes: none,
+)
+
+#mod-entry(
+  name: "Anderson and Hackett Consistency Mod (ME2LE)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1063",
+  game: "LE2",
+  version: "v2.1",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Gives Admiral Hackett and Admiral Anderson their unique dress blues from Mass Effect 3. Anderson's face can optionally be replaced with his ME1 or ME3 version. Also replaces Anderson's picture of Kaidan with Kahlee Sanders. Appearance options selectable at install time.],
+  notes: [Fully compatible with Expanded Shepard Armory. Planned as part of Project Variety for MELE2.],
+)
+
+#mod-entry(
+  name: "More Hair for Femshep (ME2LE)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/481",
+  game: "LE2",
+  version: "v1.2",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager", "Trilogy Save Editor"),
+  impact: [Adds a large collection of new hairstyles for female Shepard in Mass Effect 2, ported from Sims 4 hairs by Anto. Hairstyles must be applied using the Trilogy Save Editor. Also serves as a modder's resource for other hair mods.],
+  notes: [Requires Trilogy Save Editor to apply hairstyles to Shepard. LE1 version (mod #495) and LE3 version (mod #493) also available.],
+)
+
+== Texture Mods
+
+#mod-entry(
+  name: "Relay Jump Remaster (LE2)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/418",
+  game: "LE2",
+  version: "v4.0",
+  last-checked: "2026-05",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Completely redesigned 4K relay jump video for Mass Effect 2 combining an entirely new CGI shot with edited Mass Effect 3 relay footage. Uses Bink 2 format at 4K 60fps with AI-based interpolation and high-quality Wwise audio. Created by the team behind ALOV.],
+  notes: [Requires ME3Tweaks Mod Manager 8.1 or newer.],
+)
+
+#mod-entry(
+  name: "Improved Normandy Crash Site Flashback Textures",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/874",
+  game: "LE2",
+  version: "v2.0",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Replaces all 8 flashback textures shown during the Normandy Crash Site DLC with new 4K versions. The vanilla textures still used low-resolution ME1 Xbox 360 graphics at 1024x512. Includes an Alliance Uniform Consistency continuity version for players using that mod in LE1.],
+  notes: [Requires ME3Tweaks Mod Manager 9.2 or newer for the Texture Override system. A Unofficial LE2 Patch compatible version is available and recommended if using both mods. Install BEFORE content mods if possible.],
+)
+
+#mod-entry(
+  name: "GunMetal Weapon Textures (LE2 and LE3)",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1772",
+  game: "LE2",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: (),
+  impact: [Texture replacement for various weapons in LE2 and LE3 that removes ugly labels and decals from albedo and normal maps, and alters tint maps so only the weapon light color changes on upgrade. LE2 covers: Predator, Phalanx, Viper, Geth Rifle, Vindicator, and Katana. LE3 covers: Arc Pistol, Predator, Phalanx, Viper, and Geth Rifle.],
+  notes: [Applies to LE2 and LE3. Requires Mass Effect Modder (MEM) to install. Vanilla .mem files included for each weapon if you want to revert. Always install texture mods AFTER content mods.],
+)
+
+#mod-entry(
+  name: "LEUITM2",
+  url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/1827",
+  game: "LE2",
+  version: "v1.0",
+  last-checked: "2026-07",
+  deps: ("ME3Tweaks Mod Manager",),
+  impact: [Lore-friendly HD texture pack for Mass Effect 2 and companion to LEUITM for LE1. Hand-crafted texture replacements for character faces, armor, environments, and props with many LE-specific bug fixes. Resolves upscaling artifacts, UV mapping issues, unaligned character teeth, specular and normal map miss-mapping, and Asari color correction (removes neon blue skin). Features variant options for Asari skin, Liara face progression, Garrus armor style, and Wrex appearance. Each variant is optional and mutually exclusive per category.],
+  notes: [Install AFTER all content mods and DLC mods. Designed to complement LEUITM for LE1. Install via ME3Tweaks Mod Manager texture tools (.mem files). Choose only one variant per character/category.],
 )
