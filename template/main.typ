@@ -67,6 +67,7 @@
 #pagebreak()
 #outline(
   indent: 1em,
+  depth: 1,
 )
 
 // ─── Installation ────────────────────────────────────────────────
