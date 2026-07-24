@@ -54,7 +54,7 @@ No endpoint. Mekanism endgame activates: fusion reactor, supercritical phase shi
 
 ### Mod List
 
-The complete mod list with versions, roles, and download links is maintained in **[MODLIST.md](./MODLIST.md)** (V3 — NeoForge 1.21.1). V3 is the only version that remains — V1 (Forge 1.20.1) and V2 (Fabric 1.21.1) have been removed.
+The complete mod list with versions, roles, and download links is maintained in **[GUIDE.md](./GUIDE.md)** (NeoForge 1.21.1). V3 is the only version that remains — V1 (Forge 1.20.1) and V2 (Fabric 1.21.1) have been removed.
 
 ### Integration Rules
 
@@ -111,7 +111,7 @@ File Layout          config/              — mod config overrides, tracked in v
                      datapacks/           — world data packs
                      resourcepacks/       — optional resource packs
                      shaderpacks/         — shader .zip files
-                      MODLIST.md           — Mod list (NeoForge 1.21.1)
+                      GUIDE.md            — Mod list (NeoForge 1.21.1)
                      AGENTS.md            — this file
                      STATUS.md            — what's configured, what's pending
                       GETTING-STARTED.md   — per-wave tutorials, keybinds, configs
@@ -128,7 +128,7 @@ the user's Minecraft instance at %APPDATA%\.minecraft\mods\.
 When starting a session on this project, follow this order:
 
 1. **Read STATUS.md** — understand what was in progress, what's blocked, what's done.
-2. **Read MODLIST.md** — know the current mod set and version pins.
+2. **Read GUIDE.md** — know the current mod set and version pins.
 3. **Pick one chunk** — each session should produce one completed unit of work (a mod configured, an integration wired, a data pack written, a bug fixed).
 4. **Update STATUS.md** — mark what was completed, note blockers, set the next chunk.
 

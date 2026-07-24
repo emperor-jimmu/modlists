@@ -1,6 +1,6 @@
 # Data Packs
 
-Data packs in this directory are tracked for version control. Place `.zip` files from MODLIST.md here for reference.
+Data packs in this directory are tracked for version control. Place `.zip` files from GUIDE.md here for reference.
 
 ## How to Install
 

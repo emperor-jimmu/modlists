@@ -138,7 +138,7 @@
 - [ ] Verify no mod conflicts
 - [ ] Cross-wave integration testing
 - [ ] Config tuning per mod
-- [ ] After test launch, capture Apotheosis defaults (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) then apply overrides per MODLIST.md §Wave 3
+- [ ] After test launch, capture Apotheosis defaults (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) then apply overrides per GUIDE.md §Wave 3
 ### Data Packs
 
 - [x] Day Counter mod added to Wave 0 — replaces typewriter day counter (data pack format was incompatible with 1.21.1)
@@ -236,10 +236,10 @@
 - [x] Serene Seasons (config/sereneseasons-common.toml) — seasonal_crops=true, out_of_season_crop_behavior=0 (slow growth, no breakage), crop_tooltips=true
 - [x] Apotheosis module toggles (config/apotheosis/apotheosis.cfg) — all modules enabled (Deadly, Enchantment, Adventure, Spawner, Potion, Village), Garden disabled, book on first join
 - [x] Apotheosis spawner (config/apotheosis/spawner.cfg) — default spawner silk touch level 1, damage 100, no banned mobs
-- [ ] Apotheosis remaining configs (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) — need test launch to capture defaults, then apply overrides from MODLIST.md section
+- [ ] Apotheosis remaining configs (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) — need test launch to capture defaults, then apply overrides from GUIDE.md section
+### GUIDE.md correction needed
 
-### MODLIST.md correction needed
-- [ ] Better Days section: `dayStart = 0` is outside Better Days' valid range (22300-24000). Should note actual range or set to default (23500). The MODLIST.md value was aspirational but not achievable.
+- [ ] Better Days section: `dayStart = 0` is outside Better Days' valid range (22300-24000). Should note actual range or set to default (23500). The GUIDE.md value was aspirational but not achievable.
 
 ### Removed Mods (Jul 2026)
 - [x] Vervada's 3D Plants (Wave 0 — Texture Pack) — removed due to incompatibility issues with other mods

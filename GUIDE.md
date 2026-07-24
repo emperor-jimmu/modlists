@@ -261,7 +261,7 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 ### Install
 
-Use **XMCL** — create a 1.21.1 NeoForge instance, install all Wave 0 mods via the Mods tab. See [MODLIST.md](./MODLIST.md#wave-0--foundation) for the full list.
+Use **XMCL** — create a 1.21.1 NeoForge instance, install all Wave 0 mods via the Mods tab. See [Wave 0](#wave-0--foundation) for the full list.
 
 Wave 0.5 (Player Experience) can be installed at the same time — they're independent mods that don't conflict.
 
@@ -1479,6 +1479,45 @@ Every vanilla structure is expanded:
 
 **Integration**: Thrasher teeth and prismarine coral integrate with Ocean's Delight (Wave 4) for seafood recipes. Compatible with YUNG's Better Ocean Monuments.
 
+#### Hybrid Aquatic — Marine Creatures
+
+Expands underwater life with realistic marine creatures and diving equipment.
+
+**Creatures added**:
+
+| Category | Examples |
+|----------|----------|
+| **Fish** | Reef fish, clownfish, groupers, puffers |
+| **Sharks** | Hammerhead, great white — neutral until provoked |
+| **Crustaceans** | Crabs, lobsters, shrimp — drop food ingredients |
+| **Critters** | Otters (tameable!), nautiluses, seahorses |
+| **Mini-boss** | Deep sea guardian — found in ocean caves |
+
+**Blocks & items**:
+
+| Item | Use |
+|------|-----|
+| **Diving Armor** | Full set — extended underwater breathing, faster swim speed |
+| **Sea Sponges** | Absorb water, decorative blocks |
+| **Fishing Hooks** | Specialty hooks for better catches |
+| **Crates** | Storage blocks with ocean aesthetic |
+| **Anemones** | Decorative coral-like blocks |
+| **New Corals** | Additional coral variants for ocean decoration |
+
+**Getting started**:
+
+1. Explore oceans — creatures spawn naturally in rivers, swamps, and oceans
+2. Kill crustaceans → food ingredients for Farmer's Delight recipes
+3. Find deep sea guardian in ocean caves → challenging mini-boss fight
+4. Collect coral and anemones → decorate your underwater base
+5. Craft diving armor → extended ocean exploration becomes viable
+
+**Integration with Starcatcher (Wave 4)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries. No config needed — more fish to catch, more variety in your catalogue.
+
+**Integration with Better Fishtanks (Wave 4)**: Use Fish Bags to catch Hybrid Aquatic creatures and place them in aquariums. Otters, nautiluses, and reef fish make excellent tank inhabitants.
+
+**Integration with Ocean's Delight (Wave 4)**: Hybrid Aquatic crustacean drops (crab meat, lobster tail) integrate as seafood ingredients.
+
 ---
 
 ### Mobility
@@ -2352,6 +2391,89 @@ Fixes bee AI — bees properly leave hives, don't fall from sky, no northwest wa
 
 **Integration**: Bees produce honey for Brewin' And Chewin' mead. Farm bees near your kitchen for renewable brewing ingredients.
 
+### Starcatcher — Fishing Overhaul
+
+A complete fishing overhaul with 100+ fish, skill-based minigame, progression system, and tournaments.
+
+**Core mechanics**:
+
+| Feature | What it does |
+|---------|--------------|
+| **Fishing Minigame** | Skill-based reel-in — timing matters, not just patience |
+| **Catalogue** | Records every catch — biome, weather, time conditions documented |
+| **Trophies** | Mount your best catches as wall decorations |
+| **Tackle Box** | Store hooks, bobbers, baits, and fish — portable fishing station |
+| **Aquariums** | Multi-block fish tanks — place caught fish inside, scaled by size/weight |
+| **Tournaments** | Compete against friends for biggest catch |
+| **Selling Bin** | Sell fish for emeralds — price based on size, weight, rarity |
+| **Cosmetics** | Fisherman hats, rod skins — found in shipwrecks and treasure |
+
+**Getting started**:
+
+1. Craft a **fishing rod** (3 sticks + 2 string) — Starcatcher replaces vanilla fishing
+2. Cast near water → minigame triggers on bite
+3. Complete the minigame → fish caught, added to catalogue
+4. Craft a **Tackle Box** (check EMI) → store fish and accessories
+5. Find **baits** in loot chests or craft them → attract specific fish types
+
+**Fish conditions**: Each fish has specific requirements:
+
+| Condition | Examples |
+|-----------|----------|
+| **Biome** | Ocean fish, river fish, swamp fish |
+| **Weather** | Rain-only, clear-only, storm-only |
+| **Time of day** | Day fish, night fish, dawn/dusk |
+| **Elevation** | Surface vs. deep water |
+
+**Golden Fish**: Rare variants of every fish — higher value, trophy-worthy. Hunt these for the ultimate collection.
+
+**Integration with Farmer's Delight**: Install [Starcatcher's Delight](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight) for fish-related cooking recipes. Fish fillets, seafood stews, sushi — all visible in EMI.
+
+**Integration with Hybrid Aquatic (Wave 2)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries. No config needed — more fish to catch, more variety in your catalogue.
+
+### Better Fishtanks — Aquariums
+
+Functional aquariums for displaying your catches. Build the tank of your dreams.
+
+**Core blocks**:
+
+| Block | Function |
+|-------|----------|
+| **Fishtank** | Glass tank — house fish, configurable water levels |
+| **Aquarist Table** | Crafting station for tanks, decorations, and supplies |
+| **Fish Bag** | Catch and transport fish — right-click fish in world, right-click tank to place |
+| **Food Container** | Store fish food in bulk — flakes, kelp, shrimp, pellets |
+| **Decorations** | Coral, shipwrecks, stones, branches, towers, kelp — 30+ variants |
+
+**Getting started**:
+
+1. Craft an **Aquarist Table** (check EMI — iron + glass + planks)
+2. Craft a **Fishtank** (glass + iron ingots) — place it down
+3. Craft a **Fish Bag** (leather + string) → right-click any fish in the world to catch it
+4. Right-click the Fishtank with a filled Fish Bag → fish placed inside
+5. Add **decorations** from the Aquarist Table → customize the tank
+
+**Fish Eggs**: Tanks passively produce fish eggs in 6 rarity tiers (Common → Legendary). Crack them in the Aquarist Table for loot.
+
+**Aquarist Villager**: A new villager profession. Trades fish supplies and rare eggs. Assign by placing an Aquarist Table near an unemployed villager.
+
+**Tech integration (Create, AE2)**:
+
+- Fishtank and Aquarist Table inventories are **fully accessible** via Create pipes
+- Use fluid pipes to fill tanks with water automatically
+- Automate fish feeding with Create mechanical systems
+- Connect to AE2 network for remote inventory access
+
+**Config options**:
+
+| Setting | Default | What it does |
+|---------|---------|--------------|
+| **Require Food** | ON | Fish need feeding to survive — disable for pure aesthetics |
+| **Fish Bag Captures** | Normal fish only | Enable to capture Guardians, Drowned, Whales |
+| **Rendering Mode** | Vanilla Waterlogging | Toggle experimental entity rendering for water |
+
+**Integration with Starcatcher**: Better Fishtanks displays what Starcatcher catches. Starcatcher provides the fishing gameplay; Better Fishtanks provides the aquarium showcase. Different systems, complementary purposes.
+
 ---
 
 <!--raw-typst #pagebreak() -->
@@ -2712,6 +2834,42 @@ Reflective mirror block showing the nearest player's reflection.
 
 **Use**: Decorative vanity mirrors in bedrooms and dressing rooms. Purely aesthetic — no functional gameplay effect.
 
+### Fetzi's Displays — Item Showcases
+
+Display your hard-earned items in style. Craft a **Workbench** (check EMI) to make all display types.
+
+| Display Type | What it does | Best for |
+|--------------|--------------|----------|
+| **Glass Cloches** | Glass dome on pedestal — 16 colors | Trophy items, rare drops, gems |
+| **Katana Stands** | Vertical weapon rack | Simply Swords weapons, boss drops |
+| **Wall Holders + Plaques** | Wall-mounted display with name tag | Named weapons, "GOD SWORD" vibes |
+| **Racks** (4 types) | Horizontal/vertical item holders | Tool organization, collection display |
+
+**Scale, rotation, position**: Items in displays can be scaled, rotated, and repositioned. Check the [Wiki](https://github.com/NotFetzi/FetzisDisplays/wiki) for exact controls.
+
+**Integration with Apotheosis (Wave 3)**: Glass cloches and katana stands are ideal for showcasing mythic drops. Mount your perfect gem rolls and affix-rolled weapons as trophies. Wall holders with plaques let you name your legendary weapons — "Flamebane, Bane of the Ender Dragon."
+
+### Lili's Pottery — Decorative Earthenware
+
+Part of the [Let's Do](https://www.curseforge.com/minecraft/mc-mods?class=mc-mods&search=let%27s+do) cozy mod series. Adds pottery blocks for interior decoration.
+
+**What it adds**:
+
+| Category | Variants |
+|----------|----------|
+| **Clay** | 6 new clay types found in various biomes |
+| **Pots & Vases** | 7 variants in old and new clay styles |
+| **Urn & Amphore** | Functional storage — save items from death |
+
+**How**:
+
+1. Find **new clay types** in world (beaches, rivers, various biomes)
+2. **Knead** clay at crafting table → raw pot forms
+3. **Bake** in furnace → hardened pottery
+4. **Paint** patterns → finished decorated pottery
+
+**Integration with Handcrafted**: Both add decorative blocks but cover different aesthetics. Handcrafted is rustic furniture (chairs, tables, shelves). Lili's Pottery is earthenware (pots, vases, urns). Together they provide a full interior decoration toolkit.
+
 ---
 
 ### Session Plan — Wave 6
@@ -2950,7 +3108,7 @@ You won't. GraveStone Mod preserves your items on death. No creeper grief data p
 
 ### Java & Performance
 
-Minecraft 1.21.1 requires **Java 21**. See [MODLIST.md](./MODLIST.md#wave--1--prerequisites) for JDK installation and JVM arguments.
+Minecraft 1.21.1 requires **Java 21**. See [Wave -1](#wave--1--prerequisites) for JDK installation and JVM arguments.
 
 **Performance tips**:
 
