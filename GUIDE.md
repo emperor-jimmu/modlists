@@ -470,7 +470,10 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | Cross-loader compatibility — lets Fabric mods run on NeoForge | First Person Model, Eating Animation, Effectual, multiple Wave 1-3+ mods |
 | [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)                  | Library for config-driven UI mods                           | Advancement Plaques                                         |
 | [Polytone](https://www.curseforge.com/minecraft/mc-mods/polytone)               | Custom block colors, lightmaps, biome colors — Optifine format support for resource packs | — (dependency orphaned — Rainbow's Foliage removed)        |
+| [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched)     | Worldgen modifier API — handles village placement hooks   | Improved Village Placement |
 | [TLib (Take's Lib)](https://www.curseforge.com/minecraft/mc-mods/tlib)          | Library for atmospheric effects                             | Effectual                                                   |
+
+**Lithostitched** is a worldgen library that Improved Village Placement uses to hook into the village generation system. Without it, IVP crashes at startup with a `NoClassDefFoundError` for `AddWorldgenModifiersEvent`. This mod was not declared as a dependency in IVP's metadata — install it manually.
 
 **Architectury API** is a lightweight library with no user-visible features — install once and forget. It provides the abstraction layer that lets Fabric-origin client QoL mods (First Person Model, Eating Animation) run seamlessly on NeoForge. Without it, these mods crash at startup with a missing-dependency error.
 
