@@ -18,7 +18,6 @@
 #title-page(
   ttl: "Only Monsters Remain",
   sbtl: "A Curated Witcher 3 Modlist & Game Guide",
-  logo-path: "logo.png",
 )
 
 #pagebreak()
@@ -38,11 +37,11 @@
 
 == Game Installation
 
-Before modding, you need a clean installation of The Witcher 3. Install #link("https://www.gog.com")[GOG], #link("https://store.steampowered.com")[Steam], or #link("https://store.epicgames.com")[Epic Games Store] and download The Witcher 3: Wild Hunt \u{2014} Game of the Year Edition.
+Before modding, you need a clean installation. Install via GOG, Steam, or Epic Games Store and download The Witcher 3: Wild Hunt \u{2014} Game of the Year Edition.
 
-Verify your game version is #strong[4.04] (released July 19, 2023). On Steam, right-click the game in your library, go to Properties \u{2192} Betas, and select "4.04" from the dropdown. GOG Galaxy and Epic auto-update to the latest version.
+Verify your game version is #strong[4.04] (released July 19, 2023). On Steam, right-click the game in your library, go to Properties \u{2192} Betas, and select "4.04" from the dropdown. GOG Galaxy and Epic auto-update.
 
-Launch the game once to generate configuration files in your documents folder. This creates the `dx12filelist.txt` and `dx11filelist.txt` that mod managers use to detect installed mods.
+Launch the game once to generate configuration files. This creates the `dx12filelist.txt` and `dx11filelist.txt` that mod managers use to detect installed mods.
 
 == Mod Manager Setup
 
@@ -52,26 +51,17 @@ Launch the game once to generate configuration files in your documents folder. T
 
 Step-by-step setup:
 1. Launch the Mod Manager
-2. Navigate to Settings and set your game directory (where `witcher3.exe` lives)
+2. Go to Settings and set your game directory (where `witcher3.exe` lives)
 3. The Mod Manager scans your `Mods/` folder and detects any existing mods
 4. Click Profiles \u{2192} New Profile and name it #strong["Only Monsters Remain \u{2014} Wave 0"]
 5. Enable #strong[Script Merger] integration in settings
 6. Enable #strong[Mod Deactivation] for easy profile switching
 
-The Mod Manager keeps each profile's mod list separate, so you can switch between waves without reinstalling.
-
-== Merged Files & Load Order
-
-The #strong[Script Merger] utility (bundled with the Mod Manager) resolves conflicts when two mods edit the same game file. After installing all mods for a wave:
-1. Click the #strong[Script Merger] button in the Mod Manager
-2. Accept the auto-merge suggestions
-3. Apply the merged output
-
-You should rarely need to manually resolve conflicts with this modlist, as all mods have been tested for compatibility.
+After installing all mods for a wave, click the #strong[Script Merger] button in the Mod Manager, accept auto-merge suggestions, and apply the merged output.
 
 = Modlist \u{2014} Wave 0
 
-The mods listed below are UI and quality-of-life improvements only. They make the game more comfortable to play without altering combat, progression, economy, or world mechanics.
+The mods listed below are UI and quality-of-life improvements only. They make the game more comfortable without altering combat, progression, economy, or world mechanics.
 
 <!-- Mod entries will be added here once the modlist is finalized. -->
 
@@ -79,384 +69,370 @@ The mods listed below are UI and quality-of-life improvements only. They make th
 
 == Welcome to the Continent
 
-You are #strong[Geralt of Rivia], a witcher \u{2014} a genetically enhanced monster hunter for hire. The world you inhabit is at war. The Nilfgaardian Empire has invaded the Northern Kingdoms, and peasants, soldiers, and monsters alike struggle to survive.
+You are #strong[Geralt of Rivia], a witcher \u{2014} a genetically enhanced monster hunter for hire. The world is at war. The Nilfgaardian Empire has invaded the Northern Kingdoms, and peasants, soldiers, and monsters alike struggle to survive.
 
-Your goal: find #strong[Ciri], your adopted daughter, who is being pursued by the Wild Hunt, a spectral cavalcade from another world.
+Your goal: find #strong[Ciri], your adopted daughter, being pursued by the Wild Hunt.
 
 == Core Gameplay Loop
 
-The game follows a simple rhythm:
+1. #strong[Explore] the world
+2. #strong[Take contracts] \u2014 help villagers by slaying monsters
+3. #strong[Complete quests] \u2014 main story, side quests, contracts, treasure hunts
+4. #strong[Level up] \u2014 earn experience, unlock skills, craft better gear
+5. #strong[Prepare] \u2014 read the bestiary, apply oils, brew potions before fights
 
-1. #strong[Explore] the world \u{2014} White Orchard, Velen, Novigrad, Skellige, and Toussaint
-2. #strong[Take contracts] \u{2014} help villagers by slaying monsters
-3. #strong[Complete quests] \u{2014} main story, side quests, witcher contracts, treasure hunts
-4. #strong[Level up] \u{2014} earn experience, unlock skills, craft better gear
-5. #strong[Prepare] \u{2014} read the bestiary, apply oils, brew potions before fights
-
-#tip-box(body: [The most important habit: save often. Use quicksave (F5) before every contract, and keep manual saves before major story decisions.])
+#tip-box(body: [Save often. Use quicksave (F5) before every contract, and manual saves before major story decisions.])
 
 == Understanding the HUD
 
-- #strong[Vitality] (top-left red bar) \u{2014} your health. Zero means death.
-- #strong[Stamina] (top-left yellow bar, below vitality) \u{2014} used for Signs and dodging. Recharges quickly.
-- #strong[Quickslots] (bottom center) \u{2014} potions, bombs, crossbow bolts. Assign via inventory.
-- #strong[Minimap] (top-right) \u{2014} shows nearby points of interest, quest markers, and enemies.
-- #strong[Quest tracker] (upper-left) \u{2014} your active quest's objective and distance.
-- #strong[Toxicity] (top-left green bar, appears after using potions) \u{2014} too high and you take damage.
-
-= Controls & UI
-
-== Keyboard & Mouse Layout
-
-| #strong[Action] | #strong[Key] |
-|--- | --- |
-| Move | W / A / S / D |
-| Sprint | Shift (hold) |
-| Dodge | Alt + direction |
-| Roll | Double-tap direction or Alt + double-tap |
-| Light Attack | Left mouse button |
-| Heavy Attack | Right mouse button (hold) |
-| Cast Sign | Q |
-| Draw / Sheathe Steel Sword | 1 |
-| Draw / Sheathe Silver Sword | 2 |
-| Use Quickslot | Z / X / C / V |
-| Open Inventory | I |
-| Open Character / Skills | C |
-| Open Map | M |
-| Open Journal / Bestiary | J |
-| Open Alchemy | B |
-| Meditation | Ctrl |
-| Quick Save | F5 |
-| Quick Load | F9 |
-
-== Controller Layout (Xbox / PlayStation)
-
-| #strong[Action] | #strong[Button] |
-|--- | --- |
-| Move | Left stick |
-| Sprint | Left stick (click) |
-| Light Attack | RB / R1 |
-| Heavy Attack | RT / R2 |
-| Cast Sign | LB / L1 + face button |
-| Dodge | A / Cross + direction |
-| Roll | A / Cross + double-tap direction |
-| Parry | LB / L1 (tap before enemy hits) |
-| Open Inventory | Back / Select |
-| Open Map | Start / Options |
-| Meditation | Hold Start / Options |
+- Vitality (top-left red bar) \u{2014} your health. Zero means death.
+- Stamina (top-left yellow bar) \u{2014} used for Signs and dodging.
+- Quickslots (bottom center) \u{2014} potions, bombs, crossbow bolts.
+- Minimap (top-right) \u{2014} nearby points of interest, quest markers, enemies.
+- Quest tracker (upper-left) \u{2014} active quest objective and distance.
+- Toxicity (top-left green bar) \u{2014} appears after using potions. Too high and you take damage.
 
 == Meditation Mechanics
 
-Press Ctrl (or hold Start on controller) to meditate. Meditation:
-- #strong[Restores health] on lower difficulties (Not \u201cDeath March\u201d)
-- #strong[Advances time] \u2014 useful for waiting until night (some monsters only spawn at night)
-- #strong[Refills potions] by consuming one unit of strong alcohol from your inventory (e.g., Dwarven Spirit, Alcohest)
+Meditation (Ctrl or hold Start):
+- Restores health on lower difficulties (not Death March)
+- Advances time \u{2014} some monsters only spawn at night
+- Refills potions by consuming one unit of strong alcohol from your inventory
 
-#tip-box(body: [Always carry at least 10 Dwarven Spirit or Alcohest in your inventory. Without them, meditation won't refill your potions.])
+#tip-box(body: [Always carry at least 10 Dwarven Spirit or Alcohest. Without alcohol, meditation won't refill your potions.])
+
+= Controls & UI
+
+== Keyboard & Mouse
+
+#tbl(cols: 2,
+  [*Action*], [*Key*],
+  [Move], [W / A / S / D],
+  [Sprint], [Shift (hold)],
+  [Dodge], [Alt + direction],
+  [Roll], [Double-tap direction or Alt + double-tap],
+  [Light Attack], [Left mouse button],
+  [Heavy Attack], [Right mouse button (hold)],
+  [Cast Sign], [Q],
+  [Draw / Sheathe Steel Sword], [1],
+  [Draw / Sheathe Silver Sword], [2],
+  [Use Quickslot], [Z / X / C / V],
+  [Open Inventory], [I],
+  [Open Character / Skills], [C],
+  [Open Map], [M],
+  [Open Journal / Bestiary], [J],
+  [Open Alchemy], [B],
+  [Meditation], [Ctrl],
+  [Quick Save], [F5],
+  [Quick Load], [F9],
+)
+
+== Controller (Xbox / PlayStation)
+
+#tbl(cols: 2,
+  [*Action*], [*Button*],
+  [Move], [Left stick],
+  [Sprint], [Left stick (click)],
+  [Light Attack], [RB / R1],
+  [Heavy Attack], [RT / R2],
+  [Cast Sign], [LB / L1 + face button],
+  [Dodge], [A / Cross + direction],
+  [Roll], [A / Cross + double-tap direction],
+  [Parry], [LB / L1 (tap before enemy hits)],
+  [Open Inventory], [Back / Select],
+  [Open Map], [Start / Options],
+  [Meditation], [Hold Start / Options],
+)
+
+== Navigation
+
+- Roach (your horse): summon by holding Whistle. Gallop with sprint.
+- Fast travel: unlock signposts by interacting with them once. Open the world map and click any unlocked signpost.
 
 = Combat Basics
 
 == Core Combat Flow
 
-Witcher combat is about #strong[preparation and positioning], not just button-mashing. Each fight follows a pattern:
-
-1. #strong[Read the bestiary] before the contract \u2014 know your enemy's weaknesses
-2. #strong[Apply the right oil] to your silver sword \u2014 +50% damage against that type
-3. #strong[Cast Quen] before engaging \u2014 absorbs one hit
-4. #strong[Use the right Sign] during the fight
-5. #strong[Dodge and reposition] \u2014 don't stand still
+1. Read the bestiary before the contract
+2. Apply the right oil to your silver sword (+50% damage)
+3. Cast Quen before engaging (absorbs one hit)
+4. Use the right Sign during the fight
+5. Dodge and reposition \u2014 never stand still
 
 == Attack Types
 
-#strong[Light Attack] \u2014 Fast, chains into a 3-hit combo. Low stamina cost. Your primary damage source against most enemies.
-
-#strong[Heavy Attack] \u2014 Slow but powerful. Breaks guards and staggers. High stamina cost. Best against single, slow enemies.
-
-#strong[Parry] \u2014 Blocks incoming attacks. Only works against humanoid enemies. Timing is forgiving.
-
-#strong[Counter] \u2014 Tap Parry just as an enemy's attack lands. Staggers them briefly, allowing a follow-up hit. Does not work on most monsters.
-
-#strong[Dodge] \u2014 Quick sidestep. Short distance, low stamina cost. Your main defensive move.
-#strong[Roll] \u2014 Long-distance evasion with invincibility frames. Higher stamina cost. Use for large-area attacks.
+- Light Attack \u2014 fast, chains into 3-hit combo. Low stamina. Primary damage source.
+- Heavy Attack \u2014 slow, powerful. Breaks guards. High stamina.
+- Parry \u2014 blocks attacks. Humanoids only.
+- Counter \u2014 tap Parry as attack lands. Staggers briefly.
+- Dodge \u2014 quick sidestep. Low stamina. Main defensive move.
+- Roll \u2014 invincibility frames. Higher stamina. Use for area attacks.
 
 == The Five Signs
 
-| #strong[Sign] | #strong[Effect] | #strong[Best Against] |
-|--- | --- | --- |
-| Aard | Telekinetic blast, knocks back | Shielded humans, group packs |
-| Igni | Fire damage, burning status | Necrophages, monster nests |
-| Yrden | Magic trap, slows enemies | Wraiths, foglets, fast enemies |
-| Quen | Protective damage shield | Everything (always useful) |
-| Axii | Stuns / mind-control | Humans, conversation checks |
+#tbl(cols: 3,
+  [*Sign*], [*Effect*], [*Best Against*],
+  [Aard], [Telekinetic blast], [Shielded humans, group packs],
+  [Igni], [Fire damage, burning], [Necrophages, monster nests],
+  [Yrden], [Magic trap, slows], [Wraiths, foglets, fast enemies],
+  [Quen], [Damage shield], [Everything],
+  [Axii], [Stuns / mind-control], [Humans, dialog checks],
+)
 
-#tip-box(body: [Quen is the most important Sign for new players. Keep it active at all times. It absorbs one hit completely and buys you time to react.])
+#tip-box(body: [Quen is the most important Sign for new players. Keep it active at all times. It absorbs one hit and buys time to react.])
 
-== Combat Survival Tips
+== Combat Tips
 
-1. #strong[Never fight fair] \u2014 use every tool: bombs, traps, potions, the environment
-2. #strong[Dodge toward attacks], not away \u2014 many enemies have forward-reaching swings that miss if you step inside their range
-3. #strong[Igni destroys monster nests] \u2014 you get XP and materials
-4. #strong[Aard knocks down] \u2014 follow up with a one-hit kill prompt on grounded enemies
-5. #strong[The crossbow] \u2014 one-shots flying enemies out of the sky, useful underwater
+1. Never fight fair \u{2014} use bombs, traps, potions, and the environment
+2. Dodge toward attacks \u2014 many enemy swings miss if you step inside their range
+3. Igni destroys monster nests \u2014 free XP and materials
+4. Aard knocks down enemies \u2014 follow with one-hit kill prompt
+5. Crossbow one-shots flying enemies and works underwater
 
 = Progression Guide
 
 == How Leveling Works
 
-You gain experience (#strong[XP]) from:
-- #strong[Main quests] \u2014 largest XP rewards (100\u2013500 XP)
-- #strong[Side quests] \u2014 significant XP (50\u2013200 XP)
-- #strong[Witcher contracts] \u2014 good XP and coin (50\u2013150 XP)
-- #strong[Discovering locations] \u2014 5\u201310 XP per ? cleared
-- #strong[Killing enemies] \u2014 minimal XP (1\u201320 XP)
-
-The game uses #strong[level scaling] in a soft sense: quests have recommended levels, and enemies within a few levels of you are fair fights. You can tackle content significantly above your level, but it will be very difficult.
+Experience (XP) comes from:
+- Main quests \u2014 100-500 XP
+- Side quests \u2014 50-200 XP
+- Witcher contracts \u2014 50-150 XP
+- Discovering locations \u2014 5-10 XP
+- Killing enemies \u2014 1-20 XP
 
 == Skill Trees
 
-There are four skill trees, plus mutations unlocked later:
-
-#strong[Combat Tree] \u2014 Increases sword damage, critical hits, adrenaline gain. The most straightforward tree. Recommended for new players.
-
-#strong[Signs Tree] \u2014 Boosts Sign intensity, unlocks alternate Sign modes (e.g., Yrden turret, Igni stream). Powerful but requires investment.
-
-#strong[Alchemy Tree] \u2014 Extends potion duration, increases toxicity cap, improves bomb effectiveness. Becomes very strong mid-to-late game.
-
-#strong[General Tree] \u2014 Utility perks: +1000 carry weight (Strong Back), passive health regen from food (Gourmet), bonus XP (Trophy Collector).
+- #strong[Combat] \u2014 sword damage, crits, adrenaline gain
+- #strong[Signs] \u2014 Sign intensity, alternate Sign modes
+- #strong[Alchemy] \u2014 potion duration, toxicity, bomb effectiveness
+- #strong[General] \u2014 utility perks, cross-tree bonuses
 
 == Beginner Build (Levels 1\u201315)
 
-Place 3 ability points into #strong[Muscle Memory] (Combat, fast attack damage). Then 3 into #strong[Precise Blows] (Combat, fast attack crit chance). This gives you reliable damage.
-
-For survivability, place 1 point into #strong[Gourmet] (General) \u2014 it makes food regenerate health for 20 minutes instead of 10 seconds, effectively giving you passive healing through most of the early game.
-
-Finish with 3 points into #strong[Exploding Shield] (Signs) to make your Quen shield damage nearby enemies when broken.
+Place 3 points into #strong[Muscle Memory] (Combat, fast attack damage), then 3 into #strong[Precise Blows] (Combat, fast attack crit). For survivability, 1 point in #strong[Gourmet] (General) makes food heal for 20 minutes. Finish with 3 in #strong[Exploding Shield] (Signs).
 
 == Gear Progression
 
-1. #strong[White Orchard] (levels 1\u20136) \u2014 loot everything, buy the Temerian armor set from the merchant near the inn
-2. #strong[Velen / Novigrad] (levels 6\u201318) \u2014 start Witcher gear scavenger hunts (Griffin School gear)
-3. #strong[Skellige] (levels 18\u201330) \u2014 upgrade to Cat or Bear School gear
-4. #strong[Kaer Morhen and beyond] (levels 30+) \u2014 enhanced, superior, and mastercrafted witcher gear
-
-Always replace gear that is 5+ levels below you. Relic items (orange name) have unique bonuses but are often outclassed by witcher gear of the same level.
+1. White Orchard (levels 1-6) \u2014 loot everything, buy Temerian armor
+2. Velen / Novigrad (levels 6-18) \u2014 start Witcher gear scavenger hunts (Griffin)
+3. Skellige (levels 18-30) \u2014 upgrade to Cat or Bear School gear
+4. Endgame (levels 30+) \u2014 enhanced, superior, mastercrafted witcher gear
 
 == Mutagens
 
-Mutagens are consumable items that provide passive bonuses when slotted:
+- Red \u2014 +Attack Power
+- Green \u2014 +Alchemy bonuses
+- Blue \u2014 +Sign Intensity
 
-- #strong[Red mutagen] \u2014 +Attack Power
-- #strong[Green mutagen] \u2014 +Alchemy/toxicity-related bonuses
-- #strong[Blue mutagen] \u2014 +Sign Intensity
+Slot 3 same-color skills adjacent to a matching mutagen for a 3x multiplier. Upgrade 3 of the same type to Greater versions for stronger effects.
 
-Slot three skills of the same color adjacent to a matching mutagen for a bonus multiplier (e.g., 3 red skills + red mutagen = 3x the mutagen's effect). Upgrade mutagens to Greater versions (3 of the same type) for even stronger effects.
+= Difficulty Selection
+
+#tbl(cols: 2,
+  [*Difficulty*], [*Description*],
+  [Just the Story], [Very easy, generous auto-regen],
+  [Sword and Story], [Moderate. Recommended for first-time players.],
+  [Blood and Broken Bones], [Challenging. Enemies deal more damage.],
+  [Death March], [Maximum difficulty. No auto-regen. For veterans.],
+)
 
 // ================================================================
 // WAVE 1: A WITCHER'S JOURNEY
 // ================================================================
-#wave-header(num: 1, wave-title: "A Witcher's Journey", wave-sub: "Enhanced Graphics & Content \u2014 For Experienced Players")
+#wave-header(num: 1, wave-title: "A Witcher's Journey", wave-sub: "Enhanced Graphics & Content \u{2014} For Experienced Players")
 
 #tip-box(body: [This wave adds visual enhancements and new content. You should be comfortable with the base game's mechanics before installing Wave 1 mods.])
 
 = Upgrading to Wave 1
 
-1. Open the Mod Manager and create a new profile: #strong["Only Monsters Remain \u2014 Wave 1"]
+1. Create a new Mod Manager profile: "Only Monsters Remain \u{2014} Wave 1"
 2. Copy your Wave 0 mods to the new profile
-3. Install the Wave 1 mods listed below
-4. Run Script Merger to resolve any conflicts
+3. Install Wave 1 mods (listed below)
+4. Run Script Merger
 5. Verify load order against the Reference section
 
 #info-box(ititle: "Performance Note", body: [
-  Wave 1 includes graphics mods that increase visual fidelity. If you experience frame rate drops, try disabling the most demanding mods first (lighting overhauls, HD texture packs) rather than lowering in-game settings significantly.
+  Wave 1 includes graphics mods. If you experience frame rate drops, disable the most demanding mods first (lighting overhauls, HD texture packs) rather than lowering in-game settings significantly.
 ])
 
-= Modlist \u2014 Wave 1
+= Modlist \u{2014} Wave 1
 
-All Wave 0 mods plus the following graphics, content, and enhanced UI mods:
+All Wave 0 mods plus graphics, content, and enhanced UI mods:
 
 <!-- Mod entries will be added here once the modlist is finalized. -->
 
 = Advanced Strategy
 
-== Build Theory Fundamentals
+== Build Archetypes
 
-By Wave 1, you should understand the basics. Now it's time to optimize. Every build in The Witcher 3 fits one of three archetypes:
+#strong[Combat-Focused] \u2014 Maximize fast attack damage, crit chance, crit damage. Use adrenaline for finishers. Best for active swordplay.
 
-#strong[Combat-Focused:] Maximize fast attack damage, critical hit chance, and critical hit damage. Use adrenaline for powerful finishers. Best for players who enjoy active swordplay.
+#strong[Sign-Focused] \u2014 Maximize Sign intensity to control the battlefield. Alternate Sign modes (Yrden turret, Igni stream). Best for tactical players.
 
-#strong[Sign-Focused:] Maximize Sign intensity to control the battlefield. Alternate Sign modes offer unique advantages (e.g., Yrden turret for area denial, Igni stream for constant burning). Best for tactical players.
-
-#strong[Alchemy-Focused:] Maximize toxicity to run multiple decoctions simultaneously. Decoctions provide passive bonuses (health regen, damage reduction, stamina regen). Best for players who preparate strategically.
+#strong[Alchemy-Focused] \u2014 Maximize toxicity to run multiple decoctions for passive bonuses. Best for preparative players.
 
 == Hybrid Builds
 
-The most powerful builds in the game combine two trees:
+#strong[Combat + Alchemy (Euphoria)] \u2014 Euphoria mutation converts toxicity into attack power and Sign intensity. With 3+ decoctions, this is the strongest build in the game.
 
-#strong[Combat + Alchemy (Euphoria)] \u2014 The Euphoria mutation converts your toxicity into bonus attack power and Sign intensity. With 3+ decoctions active, you deal massive damage. This is widely considered the strongest build in the game.
+#strong[Sign + Combat (Piercing Cold)] \u2014 Aard freezes enemies solid for instant kills. Combine with sword damage against frozen enemies.
 
-#strong[Sign + Combat (Piercing Cold)] \u2014 The Piercing Cold mutation makes Aard freeze enemies solid, allowing instant kills. Combined with sword damage for frozen enemies, this build controls crowds and eliminates threats quickly.
+#strong[Alchemy + Signs (Conductors of Magic)] \u2014 Sign intensity scales with sword damage. Alchemy-enhanced swords make Signs hit harder than pure Sign builds.
 
-#strong[Alchemy + Signs (Conductors of Magic)] \u2014 This mutation boosts Sign intensity based on your sword's damage. With alchemy enhancing your swords, your Signs hit harder than a pure Sign build.
+== Stat Priority
 
-== Stat Priority Reference
-
-| Build | 1st Priority | 2nd Priority | 3rd Priority |
-|--- | --- | --- | --- |
-| Combat Sword | Attack Power | Crit Chance | Crit Damage |
-| Combat Whirl | Stamina Regen | Attack Power | Adrenaline Gain |
-| Signs | Sign Intensity | Stamina Regen | Quen / Alternate |
-| Alchemy Euphoria | Toxicity | Decoction Duration | Bomb Radius |
+#tbl(cols: 4,
+  [*Build*], [*1st Priority*], [*2nd Priority*], [*3rd Priority*],
+  [Combat Sword], [Attack Power], [Crit Chance], [Crit Damage],
+  [Combat Whirl], [Stamina Regen], [Attack Power], [Adrenaline Gain],
+  [Signs], [Sign Intensity], [Stamina Regen], [Quen / Alternate],
+  [Alchemy Euphoria], [Toxicity], [Decoction Duration], [Bomb Radius],
+)
 
 = Advanced Combat
 
-== Enemy Weaknesses in Depth
+== Enemy Weaknesses
 
-Every monster type has specific weaknesses. Exploit them:
+#strong[Necrophages] (drowners, ghouls, rotfiends) \u2014 Weak to fire (Igni) and Necrophage oil. Yrden slows them. Their attacks are telegraphed.
 
-#strong[Necrophages] (drowners, ghouls, rotfiends, wraiths) \u2014 Weak to fire (Igni) and necrophage oil. Use Yrden to slow them. Their attacks are telegraphed and easy to dodge.
+#strong[Specters] (noonwraiths, nightwraiths) \u2014 Weak to Moon Dust bombs and Specter oil. Yrden makes them tangible. Fight during the day.
 
-#strong[Specters] (noonwraiths, nightwraiths, plagues) \u2014 Weak to Moon Dust bombs (prevents phasing) and specter oil. Yrden makes them tangible. Fight them during the day to reduce their power.
+#strong[Ogroids] (trolls, golems, gargoyles) \u2014 Weak to Northern Wind bombs and Ogroid oil. Aard interrupts their heavy swings.
 
-#strong[Ogroids] (trolls, gargoyles, golems, cyclops) \u2014 Weak to Northern Wind bombs and ogroid oil. Aard interrupts their telegraphed heavy swings. Fight them in open areas where you can kite.
+#strong[Beasts] (wolves, bears, werewolves) \u2014 Weak to Grapeshot and Beast oil. Axii stuns them. Werewolves regenerate \u2014 use Moon Dust or Igni.
 
-#strong[Beasts] (wolves, bears, panthers, werewolves) \u2014 Weak to Grapeshot bombs and beast oil. Axii stuns them briefly. Werewolves regenerate health \u2014 use Moon Dust or Igni to stop it.
+#strong[Draconids] (wyverns, forktails, basilisks) \u2014 Weak to Draconid oil. Crossbow shots knock them out of the sky.
 
-#strong[Draconids] (wyverns, forktails, basilisks, cockatrices) \u2014 Weak to draconid oil. Crossbow shots knock flying draconids to the ground for massive follow-up damage.
+#strong[Elementals] (golems, elementals, ice giants) \u2014 Weak to Elementa oil. Igni deals bonus damage. Dodge, don't parry.
 
-#strong[Elementals] (golems, elementals, ice giants) \u2014 Weak to elementa oil. Igni deals bonus damage. Their attacks are slow but hit hard \u2014 dodge, don't parry.
+== Oils
 
-== Alchemy Deep Dive
+#tbl(cols: 2,
+  [*Oil*], [*Enemy Type*],
+  [Beast Oil], [Wolves, bears, panthers, werewolves],
+  [Necrophage Oil], [Drowners, ghouls, rotfiends, wraiths],
+  [Elementa Oil], [Golems, elementals, ice giants],
+  [Draconid Oil], [Wyverns, forktails, basilisks],
+  [Vampire Oil], [Ekimmaras, katakans, bruxae],
+  [Specter Oil], [Noonwraiths, nightwraiths, plagues],
+  [Hanged Man's Venom], [Humans],
+)
 
-Oils are applied to your sword before combat and last for 20\u201330 hits. Higher-quality oils (enhanced, superior) last longer and deal more bonus damage. You only need to apply an oil once per fight.
+== Bombs
 
-| Oil | Enemy Type |
-|--- | --- |
-| Beast Oil | Wolves, bears, panthers, werewolves, dogs |
-| Necrophage Oil | Drowners, ghouls, rotfiends, wraiths, hags |
-| Elementa Oil | Golems, elementals, ice giants |
-| Draconid Oil | Wyverns, forktails, basilisks, cockatrices |
-| Vampire Oil | Ekimmaras, katakans, bruxae, alp |
-| Specter Oil | Noonwraiths, nightwraiths, plagues |
-| Hanged Man's Venom | Humans (bonus damage to poisoned) |
+- Grapeshot \u2014 physical damage, staggers. All-purpose.
+- Northern Wind \u2014 freezes enemies solid for instant kills.
+- Dancing Star \u2014 fire damage, burning. Good against necrophages.
+- Moon Dust \u2014 prevents specter phasing. Essential for wraiths.
+- Dimeritium Bomb \u2014 disables magic enemies.
+- Samum \u2014 stuns and blinds. Crowd control.
+- Dragon's Dream \u2014 flammable gas + Igni = massive explosion.
 
-Bombs are consumable area-of-effect tools. Craft them in the Alchemy menu:
+== Advanced Techniques
 
-#strong[Grapeshot] \u2014 Physical damage, staggers. All-purpose.
-#strong[Northern Wind] \u2014 Freezes enemies solid. Follow up with a one-hit kill.
-#strong[Dancing Star] \u2014 Fire damage, burning. Good against necrophages.
-#strong[Moon Dust] \u2014 Prevents specters from phasing. Essential against wraiths.
-#strong[Dimeritium Bomb] \u2014 Disables magic and Sign-casting enemies.
-#strong[Samum] \u2014 Stuns and blinds. Good for crowd control.
-#strong[Dragon's Dream] \u2014 Releases flammable gas. Igni triggers a massive explosion.
+- Counter \u2014 tap parry just as enemy attack lands. Staggers humanoids.
+- Rend (Heavy skill) \u2014 hold heavy attack to charge. Armor-piercing.
+- Whirl (Light skill) \u2014 hold light attack to spin. Hits multiple enemies.
+- Essential potions: Swallow (heal), Thunderbolt (+attack), Cat (night vision), White Raffard's (instant heal), Maribor Forest (adrenaline), White Honey (clear toxicity).
 
 = Gear & Crafting
 
 == Witcher Gear Sets
 
-Each School offers a complete armor and weapon set with set bonuses at Grandmaster tier:
+#tbl(cols: 4,
+  [*School*], [*Weight*], [*Primary Bonus*], [*Best For*],
+  [Griffin], [Medium], [+Sign Intensity], [Sign builds],
+  [Cat (Feline)], [Light], [+Attack Power, +Crit], [Combat builds],
+  [Bear (Ursine)], [Heavy], [+Adrenaline, +Defense], [Tank builds],
+  [Wolf], [Medium], [+Mixed stats], [Hybrid builds],
+  [Viper], [Light], [+Poison immunity], [Story / NG+],
+  [Manticore], [Medium], [+Alchemy bonuses], [Alchemy builds],
+)
 
-| School | Weight | Primary Bonus | Best Build |
-|--- | --- | --- | --- |
-| Griffin | Medium | +Sign Intensity | Sign builds |
-| Cat (Feline) | Light | +Attack Power, +Crit | Combat builds |
-| Bear (Ursine) | Heavy | +Adrenaline, +Defense | Tank builds |
-| Wolf | Medium | +Mixed stats | Hybrid builds |
-| Viper | Light | +Poison immunity | Story / NG+ |
-| Manticore | Medium | +Alchemy bonuses | Alchemy builds |
-
-#tip-box(body: [Witcher gear diagrams are found via Scavenger Hunt quests. Buy the maps from blacksmiths and armorers to start these quests.])
+Diagrams found via Scavenger Hunt quests. Buy maps from blacksmiths and armorers.
 
 == Grandmaster Crafting (Blood and Wine)
 
-The Grandmaster Smith in Beauclair can craft the highest tier of witcher gear. Each set gains two bonuses at 3-piece and 6-piece equipped:
+3-piece and 6-piece set bonuses at the Grandmaster Smith in Beauclair:
+- Griffin: +40% Yrden size / Cast Signs while dodging
+- Feline: 20% bleed on crit / +20% attack power after kill
+- Ursine: 15% damage reduction / Adrenaline not consumed on hit
+- Wolf: +25% crit damage / +25% bomb damage
+- Manticore: +10% crit chance / +100% bomb damage
 
-#strong[Griffin 3-pc:] Yrden trap size +40%. #strong[6-pc:] Cast Signs while dodging.
-#strong[Feline 3-pc:] 20% chance to bleed on crit. #strong[6-pc:] Attack power +20% for 3s after killing an enemy.
-#strong[Ursine 3-pc:] 15% damage reduction. #strong[6-pc:] Adrenaline not consumed when taking damage.
-#strong[Wolf 3-pc:] Critical hit damage +25%. #strong[6-pc:] All bombs deal +25% damage.
+== Runewords (Hearts of Stone)
 
-== Runewords & Glyphwords (Hearts of Stone)
+Unlock at the Runewright in Upper Novigrad (35,000 crowns for all three tiers).
 
-The Runewright in Upper Novigrad can engrave special enchantments onto your gear. Unlocking all three tiers costs 35,000 crowns total.
-
-#strong[Levity] \u2014 Heavy armor counts as Light. Enables Cat School Techniques bonus with heavy armor.
-#strong[Severance] \u2014 Increases Whirl and Rend range by 2. Essential for Whirl builds.
-#strong[Preservation] \u2014 Your gear never degrades. Saves repair costs.
-#strong[Invigoration] \u2014 Healing above max vitality increases damage.
-#strong[Prolongation] \u2014 Potion effects extend on kill.
-#strong[Entanglement] \u2014 Yrden traps follow you.
+- Levity \u2014 heavy armor counts as light
+- Severance \u2014 +2 range to Whirl and Rend
+- Preservation \u2014 gear never degrades
+- Invigoration \u2014 over-healing increases damage
+- Prolongation \u2014 potions extend on kill
+- Entanglement \u2014 Yrden traps follow you
 
 = Gwent Guide
 
-== Gwent Rules
+== Rules
 
-Gwent is a two-player card game played over three rounds. Each player draws from a deck of unit cards, special cards (weather, horns, scorch), and hero cards.
+Gwent is played over three rounds. Play one card per turn or pass. Total strength on your board wins the round. Win 2 of 3 to win the match.
 
-- Play one card per turn, or pass to save cards for the next round
-- Win 2 out of 3 rounds to win the match
-- Total strength on your side of the board wins the round
+== Factions
 
-== Faction Overview
+#tbl(cols: 3,
+  [*Faction*], [*Strength*], [*Weakness*],
+  [Northern Realms], [Card draw from wins], [Low individual strength],
+  [Nilfgaard], [Spy manipulation], [Complex synergy],
+  [Scoia'tael], [Ambush, pass first], [Low base strength],
+  [Monsters], [Swarm, cloning], [Weather vulnerable],
+  [Skellige], [Graveyard synergy], [Weak in round 3],
+)
 
-| Faction | Strength | Weakness |
-|--- | --- | --- |
-| Northern Realms | Card draw from winning rounds | Low individual card strength |
-| Nilfgaard | Spy manipulation, high stats | Complex synergy requirements |
-| Scoia'tael | Ambush cards, ability to pass first | Low base strength |
-| Monsters | Swarm tactics, unit cloning | Weather vulnerable |
-| Skellige | Graveyard synergy, round 2 burst | Weak in round 3 |
+== Deck Building
 
-== Deck Building Principles
-
-1. Minimum 22 unit cards. Remove your weakest units first.
-2. Include #strong[spies] (draw 2 cards for opponent). They give card advantage, the most important resource in Gwent.
-3. Include #strong[decoy] to reuse your medic or spy.
-4. Include #strong[scorch] and #strong[biting frost] as counters.
-5. All hero cards (gold border) are immune to scorch and weather. Prioritize them.
+1. Minimum 22 unit cards \u2014 remove weakest first
+2. Include spies (draw 2 cards) for card advantage
+3. Include decoy to reuse medics or spies
+4. Include scorch and biting frost as counters
+5. Hero cards (gold border) are immune to scorch and weather
 
 = Exploration
 
 == The ? System
 
-Every undiscovered location on the map shows as a white question mark (?). These include:
-- #strong[Places of Power] \u2014 grant a free skill point on first use
-- #strong[Hidden treasures] \u2014 guarded loot (often relic gear)
-- #strong[Monster nests] \u2014 destroy with Igni for XP and materials
-- #strong[Abandoned sites] \u2014 clear monsters to restore the village
-- #strong[Smuggler's caches] \u2014 floating barrels in water (Skellige especially)
-
-Regions by ? count: Velen (~200+), Skellige (~180), Novigrad (~50), Toussaint (~60), White Orchard (~30).
+Discoverable locations include: Places of Power (free skill points), hidden treasures (relic gear), monster nests (destroy with Igni), abandoned sites, and smuggler's caches.
 
 == Places of Power
 
-Each region has a fixed number of Places of Power. Visit each one on every playthrough for the free skill point:
+#tbl(cols: 3,
+  [*Region*], [*Count*], [*Total Skill Points*],
+  [White Orchard], [6], [6],
+  [Velen], [15], [15],
+  [Novigrad], [5], [5],
+  [Skellige], [18], [18],
+  [Toussaint (BoW)], [5], [5],
+)
 
-| Region | Count | Total Skill Points |
-|--- | --- | --- |
-| White Orchard | 6 | 6 |
-| Velen | 15 | 15 |
-| Novigrad | 5 | 5 |
-| Skellige | 18 | 18 |
-| Toussaint (BoW) | 5 | 5 |
+Fully explore White Orchard before leaving \u2014 it becomes partially inaccessible.
 
 // ================================================================
 // WAVE 2: MASTER WITCHER
 // ================================================================
-#wave-header(num: 2, wave-title: "Master Witcher", wave-sub: "Mechanics Overhauls \u2014 For Veteran Players")
+#wave-header(num: 2, wave-title: "Master Witcher", wave-sub: "Mechanics Overhauls \u{2014} For Veteran Players")
 
-#tip-box(body: [Wave 2 introduces gameplay overhauls that fundamentally change how The Witcher 3 plays. Only install this wave if you have completed the main game and both expansions at least once.])
+#tip-box(body: [Wave 2 introduces gameplay overhauls. Only install if you have completed the main game and both expansions at least once.])
 
 = Upgrading to Wave 2
 
-1. Open the Mod Manager and create a new profile: #strong["Only Monsters Remain \u2014 Wave 2"]
-2. Copy your Wave 1 mods to the new profile
-3. Install the Wave 2 mods listed below
+1. Create a new Mod Manager profile: "Only Monsters Remain \u{2014} Wave 2"
+2. Copy Wave 1 mods to the new profile
+3. Install Wave 2 mods (listed below)
 4. Run Script Merger
-5. Start a #strong[New Game+] or a fresh save
+5. Start a New Game+ or fresh save
 
-= Modlist \u2014 Wave 2
+= Modlist \u{2014} Wave 2
 
-All Wave 0 and Wave 1 mods plus the following mechanics overhauls and advanced gameplay mods:
+All previous mods plus mechanics overhauls and advanced gameplay mods:
 
 <!-- Mod entries will be added here once the modlist is finalized. -->
 
@@ -464,112 +440,83 @@ All Wave 0 and Wave 1 mods plus the following mechanics overhauls and advanced g
 
 == The Legend of the White Wolf
 
-The stories say a witcher lived who never lost a contract. Who faced down a leshen with nothing but a silver sword and a worn-out Axii sign. Who walked into villages covered in monster blood and walked out with gold in his pocket and a new tale on his lips.
-
-That witcher is you.
-
-You've walked the Path for decades. The Trial of the Grasses is a distant memory, Kaer Morhen a fading postcard. You've seen the best and worst of the Continent: the nobility and the filth, the beauty and the horror, the order and the chaos.
-
-Now the monsters have adapted. They're smarter, faster, deadlier. Old tactics fail. New ones must be forged.
-
-== Character Concept
+You've walked the Path for decades. The Trial of the Grasses is a distant memory. You've seen the best and worst of the Continent. Now the monsters have adapted \u{2014} they're smarter, faster, deadlier. Old tactics fail. New ones must be forged.
 
 - #strong[School]: Your choice (Wolf, Cat, Bear, Griffin, Viper, Manticore)
 - #strong[Age]: Older, wiser, slower but more precise
 - #strong[Motto]: "Monsters come in many shapes. The worst ones wear human faces."
-- #strong[Playstyle]: Methodical, prepared, never reckless
 
 == Suggested Playthrough Rules
 
-1. Always read the bestiary before every contract
-2. Apply the correct oil before every fight (not during)
-3. Never use fast travel except between regions (signpost to signpost)
-4. Only meditate at inns, taverns, or your own bed (Corvo Bianco)
-5. Wear your chosen School's witcher gear for immersion
-6. Complete witcher contracts before main quests
-7. Use each Sign situationally \u2014 no spamming Quen
+1. Read the bestiary before every contract
+2. Apply the correct oil before every fight
+3. Only fast travel between regions (signpost to signpost)
+4. Meditate only at inns, taverns, or your own bed
+5. Wear your School's witcher gear
+6. Complete contracts before main quests
+7. Use each Sign situationally \u2014 no spamming
 
 = Mastery Mechanics
 
-== Combat Overhauls
+== Combat Changes
 
-Wave 2's mechanics mods change fundamentals:
+- Damage rebalance \u2014 fights are shorter and more lethal
+- Stamina matters \u2014 dodging and Signs share a pool
+- Parry windows tighten \u2014 enemies feint and vary timing
 
-#strong[Damage rebalance] \u2014 Enemies hit harder, but so do you. Fights are shorter and more lethal. Rock Paper Scissors-style combat: preparation determines victory, not stat checks.
+== Economy Changes
 
-#strong[Stamina matters] \u2014 Dodging and Sign-casting share a stamina pool. You cannot spam dodge \u2192 Igni \u2192 dodge. Every action must be intentional.
+- Reduced loot \u2014 earn coin through contracts, not looting
+- Crafting costs more \u2014 hunt specific monsters for rare parts
+- Weight matters \u2014 carry less, choose carefully
 
-#strong[Parry windows tighten] \u2014 Humanoid enemies feint and vary their timing. Parrying requires reading the enemy's body language, not just reacting to the swing indicator.
+== Adaptation Guide
 
-== Economy & Survival
-
-#strong[Reduced loot] \u2014 Bandits carry fewer crowns. Merchants have less gold to trade. You must earn your coin through contracts, not by looting every peasant's house.
-
-#strong[Crafting requires more] \u2014 Witcher gear diagrams demand rare monster parts. You must hunt specific monsters for their drops.
-
-#strong[Weight matters] \u2014 Encumbrance is stricter. You cannot carry three full armor sets. Choose what you wear and what you leave behind.
-
-== Adapting to Wave 2
-
-1. Prepare #strong[thoroughly] \u2014 read the bestiary for every contract, no exceptions
-2. Use #strong[everything at your disposal] \u2014 oils, bombs, potions, decoctions, terrain
-3. #strong[Avoid fair fights] \u2014 use traps, environmental hazards, choke points
-4. Invest in #strong[alchemy] \u2014 it becomes dramatically more valuable when fights are lethal
-5. #strong[Position, don't dodge] \u2014 careful positioning beats reactive dodging in a stamina-constrained world
+1. Prepare thoroughly \u2014 read the bestiary for every contract
+2. Use everything \u2014 oils, bombs, potions, decoctions, terrain
+3. Avoid fair fights \u2014 use traps, environmental hazards, choke points
+4. Invest in alchemy \u2014 dramatically more valuable at higher difficulty
+5. Position, don't dodge \u2014 stamina is precious
 
 = Specialized Builds
 
-These builds are optimized for Wave 2's increased difficulty and mechanical depth. Each requires specific mutations unlocked through Blood and Wine.
+#strong[Euphoria Alchemy Tank] \u2014 Mutation: Euphoria. Gear: Manticore. Run 3-4 decoctions. Rend for damage. Priority: Toxicity > Attack Power > Vitality.
 
-== Euphoria Alchemy Tank
+#strong[Piercing Cold Signs] \u2014 Mutation: Piercing Cold. Gear: Griffin. Freeze with Aard, execute. Igni stream, Yrden turret. Priority: Sign Intensity > Stamina Regen.
 
-#strong[Mutation:] Euphoria
-#strong[Gear:] Manticore School (alchemy bonus)
-#strong[Playstyle:] Run 3\u20134 decoctions simultaneously for massive passive bonuses. Use Rend (charged heavy attack) for damage.
+#strong[Deadly Precision Critical] \u2014 Mutation: Metamorphosis. Gear: Feline. Glass cannon, Whirl, crits. Apply status effects for random buffs. Priority: Crit Chance > Crit Damage > Attack Power.
 
-Priority: Toxicity > Attack Power > Vitality. Key decoctions: Ekimmara (damage heal), Water Hag (full health bonus), Archgriffin (heavy attack stamina cost).
+#strong[Conductors of Magic Hybrid] \u2014 Mutation: Conductors of Magic. Gear: Wolf. Alternate Signs and sword. Adapt to any enemy.
 
-== Piercing Cold Signs
+== Mutation Unlock Guide
 
-#strong[Mutation:] Piercing Cold
-#strong[Gear:] Griffin School (Sign bonus)
-#strong[Playstyle:] Freeze enemies with Aard, then execute them. Igni stream for burning. Yrden turret for area denial.
-
-Priority: Sign Intensity > Stamina Regen > Elemental Damage. Max Aard and Igni skills first.
-
-== Deadly Precision Critical
-
-#strong[Mutation:] Metamorphosis
-#strong[Gear:] Feline School (crit bonus)
-#strong[Playstyle:] Glass cannon. Fast attacks, Whirl, critical hits. Apply status effects (bleed, poison, burning) to trigger Metamorphosis, which grants random buffs.
-
-Priority: Crit Chance > Crit Damage > Attack Power. Requires precise positioning and quick reflexes.
+- Euphoria \u2014 Blood and Wine main quest ("The Wine Wars")
+- Piercing Cold \u2014 Blood and Wine side quest (explore unseen area)
+- Conductors of Magic \u2014 Blood and Wine main quest progression
+- Metamorphosis \u2014 Blood and Wine side quest (defeat unseen elder)
 
 = Endgame & NG+
 
-== When to Start New Game+
+== When to Start NG+
 
-Complete the main quest at least through the Battle of Kaer Morhen (level 30+). Ideally, finish both expansions first (Blood and Wine's mutations are especially valuable). Recommended level: 50+.
+Complete the main quest (level 30+). Finish both expansions first \u2014 mutations are valuable in NG+. Recommended: level 50+.
 
-#strong[Carries over:] Character level and skills, unlocked mutations, alchemy formulas (not crafted potions), Gwent cards, crafting diagrams, gold, inventory items.
+#strong[Carries over:] Level, skills, mutations, formulas (not crafted potions), Gwent cards, diagrams, gold, inventory.
 
-#strong[Resets:] Quest progress, world state, point-of-interest discoveries, signposts.
+#strong[Resets:] Quest progress, world state, discoveries, signposts.
 
 == Blood and Wine Endgame
 
-#strong[Hanse bases] \u2014 Repeatable combat encounters. Great for leveling and farming. Enemies respawn if you don't kill the leader.
-
-#strong[Grandmaster crafting] \u2014 Unlock Grandmaster tier of your chosen witcher set.
-
-#strong[Corvo Bianco] \u2014 Renovate your vineyard. Unlock mutagen slots, a Gwent table, and a place to display your armor collections.
+- Hanse bases \u2014 repeatable combat, great for leveling
+- Grandmaster crafting \u2014 tier 6 witcher gear
+- Mutation system \u2014 12 unique mutations
+- Corvo Bianco \u2014 renovate your vineyard
 
 == Hearts of Stone Endgame
 
-#strong[Runewright] \u2014 Unlock all three tiers of runewords and glyphwords (35,000 crowns total).
-
-#strong[Ofieri quests] \u2014 Unique gear: the Ofieri saddle (+100 stamina), the Viper Venomous silver sword.
-
-#strong[Legendary items] \u2014 Iris (steel sword, unique heavy attack), Viper School gear diagrams.
+- Runewright \u2014 unlock all 3 tiers (35,000 crowns)
+- Ofieri quests \u2014 unique gear and rewards
+- Legendary items \u2014 Iris (steel sword), Viper School gear
 
 // ================================================================
 // REFERENCE
@@ -583,27 +530,28 @@ Complete the main quest at least through the Battle of Kaer Morhen (level 30+). 
 
 == Load Order Guidelines
 
-For each wave, install mods in this general order:
+Install mods in this general order:
 1. Core frameworks and libraries
 2. Graphics and textures
 3. UI and HUD changes
-4. Gameplay tweaks and mechanics
-5. Content mods (quests, gear, NPCs)
-6. Overhauls and total conversions
+4. Gameplay tweaks
+5. Content mods
+6. Overhauls
 
 == Mod Manager Guide
 
 See the full guide at: #link("https://www.nexusmods.com/witcher3/mods/2678")[Witcher 3 Mod Manager].
 
-Key features: profile management, script merging, load order control, mod deactivation.
+Features: profile management, script merging, load order control, mod deactivation.
 
 == Troubleshooting
 
-| #strong[Problem] | #strong[Solution] |
-|--- | --- |
-| Game crashes on launch | Run Script Merger. Check for missing dependencies. |
-| Script compilation errors | Delete `mod0000_MergedFiles/` and re-merge. |
-| Missing textures | Reinstall the texture mod. Verify game files. |
-| Low FPS after Wave 1 | Disable demanding mods before lowering in-game settings. |
-| Mod not showing in Mod Manager | Ensure archive isn't corrupted. Try manual install. |
-| Profiles not switching | Restart the Mod Manager and confirm the profile is selected. |
+#tbl(cols: 2,
+  [*Problem*], [*Solution*],
+  [Game crashes on launch], [Run Script Merger. Check dependencies.],
+  [Script compilation errors], [Delete `mod0000_MergedFiles/` and re-merge.],
+  [Missing textures], [Reinstall the texture mod. Verify game files.],
+  [Low FPS after Wave 1], [Disable demanding mods first.],
+  [Mod not showing in manager], [Check archive. Try manual install.],
+  [Profiles not switching], [Restart Mod Manager. Confirm profile selected.],
+)

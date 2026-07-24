@@ -109,3 +109,13 @@
   ]
   v(6pt)
 }
+
+#let tbl(cols: 2, ..args) = {
+  grid(
+    columns: (1fr,) * cols,
+    fill: (x, y) => if y == 0 { rgb("#f5f0e1") } else if calc.even(y) { rgb("#faf8f3") } else { none },
+    stroke: 0.3pt + luma(180),
+    inset: 4pt,
+    ..args,
+  )
+}
