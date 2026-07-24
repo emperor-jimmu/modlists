@@ -1,27 +1,28 @@
 #let mod-entry(name, url, version, deps, impact) = {
-  grid(
-    columns: (auto, 1fr),
-    rows: (auto, auto),
-    gutter: 0.2em,
-    {
-      if url != "" and url != none {
-        link(url)[#text(weight: "bold", size: 10.5pt, name)]
-      } else {
-        text(weight: "bold", size: 10.5pt, name)
-      }
-    },
-    {
-      if version != "" and version != none [
-        *Version:* #version
-      ]
-      if deps != "" and deps != none [
-        *Dependencies:* #deps
-      ]
-      if impact != "" and impact != none [
-        *Impact:* #impact
-      ]
-    },
-  )
+  block(
+    fill: rgb("#f8f9fa"),
+    inset: 10pt,
+    radius: 4pt,
+    stroke: 0.5pt + rgb("#dfe6e9"),
+  )[
+    #if url != "" and url != none {
+      link(url)[#text(weight: "bold", size: 11pt, name)]
+    } else {
+      text(weight: "bold", size: 11pt, name)
+    }
+    #if version != "" and version != none [
+      #v(4pt)
+      *Version:* #version
+    ]
+    #if deps != "" and deps != none [
+      #v(3pt)
+      *Dependencies:* #deps
+    ]
+    #if impact != "" and impact != none [
+      #v(3pt)
+      *Impact:* #impact
+    ]
+  ]
 }
 
 
