@@ -77,6 +77,36 @@ function Test-TypstInstalled {
 
 #endregion
 
+function Convert-GfmAlerts {
+    param([string]$Text)
+    $result = [System.Text.StringBuilder]::new()
+    $lines = $Text -split "`r`n|`n"
+    $i = 0
+    $inCodeBlock = $false
+    while ($i -lt $lines.Length) {
+        $line = $lines[$i]
+        if ($line -match '^\s*```') { $inCodeBlock = !$inCodeBlock }
+        if ($inCodeBlock) { $result.AppendLine($line) | Out-Null; $i++; continue }
+        if ($line -match '^>\s*\[!(NOTE|TIP|WARNING|CAUTION|IMPORTANT)\]\s*$') {
+            $type = $matches[1].ToLower()
+            $i++
+            $bodyLines = [System.Collections.Generic.List[string]]::new()
+            while ($i -lt $lines.Length -and $lines[$i] -match '^>\s?(.*)$') {
+                $null = $bodyLines.Add($matches[1])
+                $i++
+            }
+            $body = ($bodyLines | Where-Object { $_ -ne $null }) -join "`n"
+            $result.AppendLine("#$type[")
+            $result.AppendLine($body)
+            $result.AppendLine("]")
+        } else {
+            $result.AppendLine($line) | Out-Null
+            $i++
+        }
+    }
+    return $result.ToString()
+}
+
 function Convert-Table {
     param([string]$Text)
     $result = [System.Text.StringBuilder]::new()
@@ -100,9 +130,15 @@ function Convert-Table {
       $colCount = [Math]::Max($header.Count, 1)
       $result.AppendLine("#table(") | Out-Null
       $result.AppendLine("  columns: $colCount,") | Out-Null
-      if ($header.Count -gt 0) { $result.AppendLine("  fill: (x, _) => if calc.rem(x, 2) == 0 { luma(230) },") | Out-Null }
-      else { $result.AppendLine("  fill: none,") | Out-Null }
+      if ($header.Count -gt 0) {
+        $result.AppendLine('  fill: (x, y) => if y == 0 { rgb("#E2E8F0") } else if calc.rem(y - 1, 2) == 0 { luma(242) } else { none },') | Out-Null
+        $result.AppendLine('  stroke: 0.5pt + luma(200),') | Out-Null
+      } else {
+        $result.AppendLine('  fill: (x, y) => if calc.rem(y, 2) == 0 { luma(242) } else { none },') | Out-Null
+        $result.AppendLine('  stroke: 0.5pt + luma(200),') | Out-Null
+      }
       foreach ($cell in $header) { $result.AppendLine("  [*$($cell)*],") | Out-Null }
+      if ($rows.Count -gt 0) { $result.AppendLine('  table.hline(stroke: 0.75pt + rgb("#94A3B8")),') | Out-Null }
       foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$($cell)],") | Out-Null } }
       $result.AppendLine(")") | Out-Null
         } else {
@@ -161,6 +197,8 @@ function Convert-MarkdownToTypst {
     param([string]$Text, [string]$FileH1Anchor, [string]$FileKey, [hashtable]$AnchorMap)
     # 1. Strip HTML comments
     $text = $Text -replace '(?s)<!--.*?-->', ''
+    # 1b. Convert GFM alerts to callout blocks
+    $text = Convert-GfmAlerts -Text $text
     # 2. Convert markdown autolinks <url> to plain URLs (typst treats <...> as labels)
     $text = $text -replace '<(https?://[^>]+)>', '$1'
     # 3. Convert markdown italic *text* to typst #emph[text] (single *, before bold)
@@ -327,7 +365,9 @@ $a.Invoke("// -- Fonts --")
 $a.Invoke('#set text(font: ("Inter", "Arial"), size: 11.5pt)')
 $a.Invoke('#show link: set text(font: ("Inter", "Arial"), size: 11.5pt, fill: rgb("#2563EB"))')
 $a.Invoke('#show ref: set text(font: ("Inter", "Arial"), size: 11.5pt, fill: rgb("#2563EB"))')
-$a.Invoke('#show raw: set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.9em)')
+$a.Invoke('#show raw.where(block: true): set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.9em)')
+$a.Invoke('#show raw.where(block: true): set block(fill: luma(248), radius: 3pt, inset: 8pt)')
+$a.Invoke('#show raw.where(block: false): set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.9em)')
 $a.Invoke('// Inline raw in body text keeps monospaced font; headings have backticks stripped')
 $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2cm, right: 1.5cm, top: 1.5cm, bottom: 2cm),')
@@ -349,6 +389,77 @@ $a.Invoke('  if it.level == 1 { pagebreak(); v(0.5cm) } else if it.level == 2 { 
 $a.Invoke("  it")
 $a.Invoke('  if it.level == 1 { v(0.5cm) }')
 $a.Invoke("}")
+$a.Invoke("")
+$a.Invoke("// -- Callout Boxes (GFM Alerts) --")
+$a.Invoke('#let note(body) = block(')
+$a.Invoke('  fill: rgb("#EFF6FF"),')
+$a.Invoke('  stroke: (left: 4pt + rgb("#3B82F6")),')
+$a.Invoke('  inset: (left: 14pt, right: 8pt, top: 8pt, bottom: 8pt),')
+$a.Invoke('  radius: 4pt,')
+$a.Invoke('  width: 100%,')
+$a.Invoke('  [')
+$a.Invoke('    #text(weight: "bold", fill: rgb("#3B82F6"))[Note]')
+$a.Invoke('    #v(4pt)')
+$a.Invoke('    #body')
+$a.Invoke('  ],')
+$a.Invoke(')')
+$a.Invoke('#let tip(body) = block(')
+$a.Invoke('  fill: rgb("#ECFDF5"),')
+$a.Invoke('  stroke: (left: 4pt + rgb("#10B981")),')
+$a.Invoke('  inset: (left: 14pt, right: 8pt, top: 8pt, bottom: 8pt),')
+$a.Invoke('  radius: 4pt,')
+$a.Invoke('  width: 100%,')
+$a.Invoke('  [')
+$a.Invoke('    #text(weight: "bold", fill: rgb("#10B981"))[Tip]')
+$a.Invoke('    #v(4pt)')
+$a.Invoke('    #body')
+$a.Invoke('  ],')
+$a.Invoke(')')
+$a.Invoke('#let warning(body) = block(')
+$a.Invoke('  fill: rgb("#FFFBEB"),')
+$a.Invoke('  stroke: (left: 4pt + rgb("#F59E0B")),')
+$a.Invoke('  inset: (left: 14pt, right: 8pt, top: 8pt, bottom: 8pt),')
+$a.Invoke('  radius: 4pt,')
+$a.Invoke('  width: 100%,')
+$a.Invoke('  [')
+$a.Invoke('    #text(weight: "bold", fill: rgb("#F59E0B"))[Warning]')
+$a.Invoke('    #v(4pt)')
+$a.Invoke('    #body')
+$a.Invoke('  ],')
+$a.Invoke(')')
+$a.Invoke('#let caution(body) = block(')
+$a.Invoke('  fill: rgb("#FEF2F2"),')
+$a.Invoke('  stroke: (left: 4pt + rgb("#EF4444")),')
+$a.Invoke('  inset: (left: 14pt, right: 8pt, top: 8pt, bottom: 8pt),')
+$a.Invoke('  radius: 4pt,')
+$a.Invoke('  width: 100%,')
+$a.Invoke('  [')
+$a.Invoke('    #text(weight: "bold", fill: rgb("#EF4444"))[Caution]')
+$a.Invoke('    #v(4pt)')
+$a.Invoke('    #body')
+$a.Invoke('  ],')
+$a.Invoke(')')
+$a.Invoke('#let important(body) = block(')
+$a.Invoke('  fill: rgb("#F5F3FF"),')
+$a.Invoke('  stroke: (left: 4pt + rgb("#8B5CF6")),')
+$a.Invoke('  inset: (left: 14pt, right: 8pt, top: 8pt, bottom: 8pt),')
+$a.Invoke('  radius: 4pt,')
+$a.Invoke('  width: 100%,')
+$a.Invoke('  [')
+$a.Invoke('    #text(weight: "bold", fill: rgb("#8B5CF6"))[Important]')
+$a.Invoke('    #v(4pt)')
+$a.Invoke('    #body')
+$a.Invoke('  ],')
+$a.Invoke(')')
+$a.Invoke("")
+$a.Invoke("// -- Typographic Enhancements --")
+$a.Invoke('#show line: set line(stroke: 1pt + rgb("#CBD5E1"))')
+$a.Invoke('#show quote: block.with(')
+$a.Invoke('  fill: luma(248),')
+$a.Invoke('  stroke: (left: 3pt + rgb("#CBD5E1")),')
+$a.Invoke('  inset: (left: 10pt, right: 6pt, top: 4pt, bottom: 4pt),')
+$a.Invoke('  radius: 2pt,')
+$a.Invoke(')')
 $a.Invoke("")
 
 # -- Cover Page --

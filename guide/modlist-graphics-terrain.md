@@ -80,7 +80,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 | Mod                                                                                          | Description                                                  | Nexus                                                               |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------|---------------------------------------------------------------------|
 | Mari's flora                                                                                 |                                                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/45952)  |
-| Freak's Floral Meadows                                                                       | Meadow flower replacer. No ESP.                              | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148525) |
+| Real Wheat Fields                                                                           | Fuller wheat field meshes/textures. 2K, ESL. Option B adds a big wheat field east of Whiterun. Requires Wheat Replacer (112074) as base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/151229)  |
 | Freak's Floral Solstheim                                                                     | Solstheim ash-covered grass/flora replacer.                  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/138161) |
 | A Nirnroot                                                                                   | Nirnroot mesh/texture replacer with glowing effects. No ESP. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80281)  |
 | Flora Orientalis                                                                             | Dependency for Vinland Grass Patch + mixed-route coverage.   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/64041)  |
@@ -125,6 +125,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 | QW's Grass Patch 2                       | Only after the final grass combination is narrow enough. |                                                                     |
 | Grassreach - Blackreach Grass            | Blackreach-specific grass replacer.                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/179420) |
 | Wildlands Renewal                        | Grass and groundcover improvement mod. Evaluate as Skoglendi alternative or layering candidate. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139896) |
+| Freak's Floral Meadows                   | Full grass overhaul by TheBloodyFreak. **Replaces Skoglendi** — not a plant replacer. iMinGrassSize 60, requires Cathedral 3D Grass Library meshes. No other grass mods. Performance-friendly alternative to FFF. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148525) |
 
 ### Risks & Compatibility
 

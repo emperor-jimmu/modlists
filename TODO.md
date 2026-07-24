@@ -2,6 +2,9 @@
 
 ## Review next
 
+- **Dragon Bard Ultimate (151231)** — New playable instruments (violin, lyre harp, tagelharpa, qanun) + singing with custom animations. Includes quests, player home in Bard's College. Requires ConsoleUtilSSE NG, Pandora/Nemesis, SkyUI. Conflicts with no existing pillar — but Skyrim's Got Talent is already locked as the bard gameplay baseline. Evaluate as a later-curation pass if Bard College expansion becomes a priority. Heavy Pandora maintenance cost for niche value.
+
+
 - Verify Night Sky texture stack coherence (Shooting Stars + star textures — potential overlap).
 - Test Beards of Power under CS lighting for neck clipping.
 - Evaluate finding-derkeethus/Bethesda FormID fix with xEdit for unresolved conflicts.
