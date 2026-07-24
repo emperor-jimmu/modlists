@@ -6,7 +6,7 @@
 
 #set text(
   font: "New Computer Modern",
-  size: 10pt,
+  size: 11pt,
 )
 
 #set par(

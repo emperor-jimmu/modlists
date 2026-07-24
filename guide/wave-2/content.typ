@@ -4,10 +4,11 @@
     rows: (auto, auto),
     gutter: 0.2em,
     {
-      text(weight: "bold", size: 9.5pt, name)
-      if url != "" and url != none [
-        #link(url)[🔗]
-      ]
+      if url != "" and url != none {
+        link(url)[text(weight: "bold", size: 10.5pt, name)]
+      } else {
+        text(weight: "bold", size: 10.5pt, name)
+      }
     },
     {
       if version != "" and version != none [
