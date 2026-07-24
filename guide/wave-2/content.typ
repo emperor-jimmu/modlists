@@ -4,14 +4,22 @@
     rows: (auto, auto),
     gutter: 0.2em,
     {
-      text(weight: "bold", size: 10pt, name)
-      if url != "" and url != none [ (#link(url)[🔗]) ]
+      text(weight: "bold", size: 9.5pt, name)
+      if url != "" and url != none [
+        #link(url)[🔗]
+      ]
     },
     {
-      v(-0.2em)
-      if version != "" and version != none [ *Version:* #version ]
-      if deps != "" and deps != none [ *Dependencies:* #deps ]
-      if impact != "" and impact != none [ *Impact:* #impact ]    },
+      if version != "" and version != none [
+        *Version:* #version
+      ]
+      if deps != "" and deps != none [
+        *Dependencies:* #deps
+      ]
+      if impact != "" and impact != none [
+        *Impact:* #impact
+      ]
+    },
   )
 }
 
