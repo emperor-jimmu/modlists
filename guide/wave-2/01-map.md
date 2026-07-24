@@ -21,6 +21,13 @@ A large-scale US map purpose-built for industrial farming:
 |---|---|---|---|
 | Judith Plains, Montana 4X | DJ Modding | [itch.io](https://djmodding.itch.io/fs25-montana-4x) | ⚠ Massive 4X map. Custom resources (anhydrous ammonia, propane). 7 empty buildable farm areas. PC only. |
 
+## Additional Maps
+
+| Name | Author | Source | Version | Notes |
+|---|---|---|---|---|
+| Myropillya | — | [KingMods #78369](https://www.kingmods.net/en/fs25/mods/78369/myropillya) | 1.0.0.0 | ⚠ Ukraine map: 2 villages, ~100 fields (0.1-150 ha), 2 farms, grain cleaning, dairy, oil mill, flour mill, sawmill, meat/sugar planned. Train traffic. Multi-ground. Rentable productions. Jun 2026. |
+| Hof Bergmann | FarmerAndy | [LSFM](https://www.lsfarming-mods.com/) | 1.4.5.0 | ⚠ Large German map. Extensive productions, animals, forestry. Requires bundled mods. AutoDrive courses available. Jun 2026. |
+
 ## Maps Not Found
 
 The originally-proposed maps **American Falls**, **Elk Mountain**, **Flatlands**, and **Saskatchewan** do not exist as named FS25 maps. New American is the best ModHub alternative at similar scale.
