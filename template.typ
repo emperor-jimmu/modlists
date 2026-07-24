@@ -9,62 +9,85 @@
   size: 10pt,
 )
 
-#show heading.where(level: 1): it => {
-  text(weight: "bold", size: 22pt, rgb("#c0392b"), it)
-  v(0.3em)
-  line(length: 100%, stroke: 1pt + rgb("#c0392b"))
-  v(0.5em)
-}
+#set heading(numbering: none)
 
-#show heading.where(level: 2): it => {
-  text(weight: "bold", size: 16pt, rgb("#2c3e50"), it)
-  v(0.3em)
-}
-
-#show heading.where(level: 3): it => {
-  text(weight: "bold", size: 13pt, rgb("#34495e"), it)
-  v(0.2em)
+#show heading: it => {
+  if it.level == 1 {
+    v(0.5em, weak: true)
+    text(weight: "bold", size: 22pt, rgb("#c0392b"), it.body)
+    v(0.2em, weak: true)
+    line(length: 100%, stroke: 1pt + rgb("#c0392b"))
+    v(0.5em, weak: true)
+  } else if it.level == 2 {
+    v(0.4em, weak: true)
+    text(weight: "bold", size: 16pt, rgb("#2c3e50"), it.body)
+    v(0.2em, weak: true)
+  } else if it.level == 3 {
+    v(0.3em, weak: true)
+    text(weight: "bold", size: 13pt, rgb("#34495e"), it.body)
+    v(0.15em, weak: true)
+  }
 }
 
 #show link: it => {
   text(rgb("#c0392b"), it.body) + h(0.1em)
 }
 
-#let wave-accent(wave) = {
-  if wave == 0 { rgb("#2c3e50") }
-  else if wave == 1 { rgb("#8e44ad") }
-  else if wave == 2 { rgb("#c0392b") }
-  else { rgb("#d35400") }
-}
-
-#let cover-page() = {
-  set page(margin: 0cm)
-  place(
-    dx: 0cm,
-    dy: 0cm,
-    image("assets/logo.png", width: 100%),
+#let mod-entry(name, url, version, deps, impact) = {
+  grid(
+    columns: (auto, 1fr),
+    rows: (auto, auto),
+    gutter: 0.15em,
+    {
+      text(weight: "bold", size: 9.5pt, name)
+      if url != "" and url != none [
+        #link(url)[🔗]
+      ]
+    },
+    {
+      v(-0.15em)
+      if version != "" and version != none [
+        *Version:* #version
+      ]
+      if deps != "" and deps != none [
+        *Dependencies:* #deps
+      ]
+      if impact != "" and impact != none [
+        *Impact:* #impact
+      ]
+    },
   )
-  v(5cm)
-  align(center + horizon)[
-    #text(size: 36pt, weight: "bold", rgb("#c0392b"), "When Gods Bleed")
-    #v(1em)
-    #text(size: 16pt, rgb("#2c3e50"), "Total War: Warhammer III Modlist & Guide")
-    #v(0.5em)
-    #text(size: 12pt, rgb("#7f8c8d"), "Version 8.1.1 — July 2026")
-    #v(0.5em)
-    #text(size: 10pt, rgb("#95a5a6"), "RPFM Mod Manager & Typst Documentation")
-  ]
-  pagebreak()
 }
 
-// --- DOCUMENT START ---
-cover-page()
+#pagebreak()
+
+// == Cover Page
+#align(center + horizon)[
+  #image("assets/logo.png", width: 100%)
+]
+
+#v(4cm)
+
+#align(center)[
+  #text(size: 36pt, weight: "bold", rgb("#c0392b"), "When Gods Bleed")
+  #v(1em)
+  #text(size: 16pt, rgb("#2c3e50"), "Total War: Warhammer III Modlist & Guide")
+  #v(0.5em)
+  #text(size: 12pt, rgb("#7f8c8d"), "Version 8.1.1 — July 2026")
+  #v(0.3em)
+  #text(size: 10pt, rgb("#95a5a6"), "RPFM Mod Manager & Typst Documentation")
+]
 
 #pagebreak()
-outline(indent: true, depth: 3)
 
-// Installation
+// == Table of Contents
+== Table of Contents
+
+#outline(depth: 3)
+
 #pagebreak()
+
+// == Installation Guide
 == Installation Guide
 
 === RPFM Setup (Recommended)
@@ -86,10 +109,11 @@ outline(indent: true, depth: 3)
 Activate mods in wave order (Wave 0 first, then Wave 1, Wave 2, Wave 3). Each wave builds on the previous wave's setup. Do not activate mods from multiple waves simultaneously unless explicitly noted.
 
 === Conflicts & Exclusions
-Conflicting mods are listed in `conflicts.conf` and are excluded from this guide. See `conflicts.conf` for the current conflict list. Mods listed in `mod-ideas.md` are not yet implemented and are excluded from this PDF.
+Conflicting mods are listed in `$project-root$/conflicts.conf` and are excluded from this guide. See `conflicts.conf` for the current conflict list. Mods listed in `mod-ideas.md` are not yet implemented and are excluded from this PDF.
 
-// Waves
 #pagebreak()
+
+// == Waves & Campaign Setups
 == Waves & Campaign Setups
 
 === Wave 0: The Old World
@@ -98,6 +122,7 @@ Conflicting mods are listed in `conflicts.conf` and are excluded from this guide
 #include "guide/wave-0/graphics.typ"
 #include "guide/wave-0/content.typ"
 #include "guide/wave-0/mechanics.typ"
+
 #pagebreak()
 
 === Wave 1: The Gathering Storm
@@ -106,6 +131,7 @@ Conflicting mods are listed in `conflicts.conf` and are excluded from this guide
 #include "guide/wave-1/graphics.typ"
 #include "guide/wave-1/content.typ"
 #include "guide/wave-1/mechanics.typ"
+
 #pagebreak()
 
 === Wave 2: The End Times
@@ -114,6 +140,7 @@ Conflicting mods are listed in `conflicts.conf` and are excluded from this guide
 #include "guide/wave-2/graphics.typ"
 #include "guide/wave-2/content.typ"
 #include "guide/wave-2/mechanics.typ"
+
 #pagebreak()
 
 === Wave 3: When Gods Bleed
