@@ -159,7 +159,7 @@ The essentials that make the game run well. Dependencies, performance, rendering
 
 **Recommended Euphoria Patches settings to enable** (Shader Options → Popular Settings tab, then apply the preset):
 
-Performance impact is rated for the RTX 4080 SUPER (16GB VRAM, 4K, High profile) targeting 70-80 FPS. The base Complementary settings already leave headroom (no Bloom, no Entity Shadows, Shadow Res 2048, DH LOD 128-256 chunks), so Euphoria's overhead should be absorbed without dropping below the target. If FPS dips occur, disable the Heavy-impact features first.
+Performance impact is rated for the RTX 4080 SUPER (16GB VRAM, 4K, High profile) targeting 70-80 FPS. The base Complementary settings already leave headroom (no Entity Shadows, Shadow Res 2048, DH LOD 128-256 chunks), so Euphoria's overhead should be absorbed without dropping below the target. If FPS dips occur, disable the Heavy-impact features first.
 
 | Category         | Setting                         | Value  | Perf     | Why                                                                 |
 |------------------|---------------------------------|--------|----------|---------------------------------------------------------------------|
@@ -203,7 +203,6 @@ Performance impact is rated for the RTX 4080 SUPER (16GB VRAM, 4K, High profile)
 | Edge Shadow (SSAO) Quality | Medium          |
 | Advanced Colored Lighting  | 8 chunks        |
 | Texture Filtering          | 8x              |
-| Bloom                      | OFF             |
 
 **General MC settings**: Graphics **Fancy**, Render Distance **10 chunks**, Simulation Distance **8 chunks**, Biome Blend **2 blocks**, Mipmap Levels **4x**, Entity Distance **100%**, Fullscreen ON, VSync OFF, Max Framerate **120**. Always Defer Chunk Updates **Enabled**, Use No Error Context **Enabled**.
 
@@ -271,7 +270,7 @@ Wave 0.5 (Player Experience) can be installed at the same time — they're indep
 
 | Setting             | Recommended | Notes                                   |
 |---------------------|-------------|-----------------------------------------|
-| Graphics            | Fabulous    | Sodium makes this fast                  |
+| Graphics            | Fancy       | Sodium makes this fast; Fancy (not Fabulous) avoids transparency conflicts with Iris shaders |
 | Render Distance     | 10 chunks   | Distant Horizons handles the rest       |
 | Simulation Distance | 8 chunks    | Fewer distant mobs ticking = better FPS |
 | VSync               | OFF         |                                         |
@@ -305,7 +304,6 @@ Drop **Complementary Unbound** `.zip` into `shaderpacks/`. In-game: Options → 
 - Shadow Resolution: 2048, Shadow Distance: 12 chunks
 - Real-Time Shadows: High, Light Shaft Quality: Medium
 - Entity Shadows: OFF, Cloud Quality: High, Water Reflection: Medium
-- Bloom: OFF
 
 General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mipmap 4x, Entity Distance 100%, VSync OFF, Max Framerate 120.
 
