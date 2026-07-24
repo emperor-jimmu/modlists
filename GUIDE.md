@@ -1305,6 +1305,13 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [TerraBlender](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge) (NeoForge) **— REQUIRED** | Worldgen biome library — required by Darker Depths 2.1+ for biome placement       |
 | [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths)                                  | Underground expansion — 3 new cave biomes, mobs, Forsaken Bronze, Living Crystals |
 | [Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic)                              | Ocean expansion — Thrasher mob, Ocean Ravines, Prismarine Coral, renewable sand   |
+| [Hybrid Aquatic](https://www.curseforge.com/minecraft/mc-mods/hybrid-aquatic)                               | Marine creatures — sharks, crustaceans, otters, nautiluses, diving armor, corals   |
+
+**Interdependency note — Hybrid Aquatic + Upgrade Aquatic**: Both expand oceans but cover different niches. Upgrade Aquatic adds mob mechanics (Thrasher) and ocean-floor features. Hybrid Aquatic adds creature variety (sharks, otters, crustaceans) and diving gear. They layer without conflict — more ocean life, more reasons to dive.
+
+**Interdependency note — Hybrid Aquatic + Starcatcher (Wave 4)**: Starcatcher has built-in compatibility with Hybrid Aquatic. Hybrid Aquatic fish are automatically added as catchable entries with the corresponding entity and bucketed fish versions. No config needed.
+
+**Interdependency note — Hybrid Aquatic + Better Fishtanks (Wave 4)**: Better Fishtanks can house Hybrid Aquatic creatures in its aquariums. Use Fish Bags to catch Hybrid Aquatic mobs and place them in tanks.
 
 **Interdependency note — Darker Depths + TerraBlender**: Darker Depths 2.1+ requires a worldgen API to register its cave biomes. Either **TerraBlender** (NeoForge) or **Biolith** must be installed. TerraBlender NeoForge is the recommended choice (available for 1.21.1 on both CurseForge and Modrinth). Without it, Darker Depths crashes on startup with `Missing Worldgen API! Install TerraBlender or Biolith.`
 
@@ -2176,6 +2183,16 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [**Ender's Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0             | End-themed food for Farmer's Delight (moved from Wave 2)                     |
 | [Neo Bee Fix](https://modrinth.com/mod/neo-bee-fix)                                                   | Fixes bee AI bugs — bees leave hives, don't fall from sky, no NW wander bias |
 | [Comfortable Campfires](https://www.curseforge.com/minecraft/mc-mods/comfortable-campfires)           | Campfires grant configurable status effects — sit by the fire, get a buff    |
+| [**Starcatcher**](https://www.curseforge.com/minecraft/mc-mods/starcatcher)                          | Fishing overhaul — 100+ fish, skill minigame, trophies, tournaments, catalogue |
+| [**Better Fishtanks**](https://www.curseforge.com/minecraft/mc-mods/better-fishtanks)                | Functional aquariums — fish bags, decorations, feeding system, Create/AE2 compat |
+
+**Interdependency note — Starcatcher + Farmer's Delight**: Starcatcher has a dedicated Farmer's Delight addon ([Starcatcher's Delight](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight)) that adds fish-related cooking recipes. Install alongside Farmer's Delight for seafood dishes.
+
+**Interdependency note — Starcatcher + Hybrid Aquatic (Wave 2)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries with biome/weather/time restrictions. Hybrid Aquatic baits attract Hybrid Aquatic fish. No config needed.
+
+**Interdependency note — Better Fishtanks + Create (Wave 1)**: Better Fishtanks is designed for tech mod automation. The Fish Tank and Aquarist Table inventories are fully accessible via Create pipes. Use fluid pipes to fill tanks with water. Automate fish feeding with Create's mechanical systems.
+
+**Interdependency note — Better Fishtanks + Hybrid Aquatic (Wave 2)**: Better Fishtanks can house any fish mod's creatures. Use Fish Bags to catch Hybrid Aquatic mobs and place them in tanks as living displays.
 
 Farmer's Delight brings a full cooking ecosystem. Optional — you can survive on baked potatoes — but cooking gives powerful status effects, better healing, and a cozy kitchen to build around.
 
@@ -2561,6 +2578,12 @@ Functional cannons built from Create materials, using rotational power for assem
 | [\[Reforged\] Accurate Block Placement](https://www.curseforge.com/minecraft/mc-mods/reforged-accurate-block-placement) | Precision block placement — place on the exact face you're looking at |
 | [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)                                                 | Furniture — chairs, tables, shelves, curtains                         |
 | [The Magic Mirror](https://www.curseforge.com/minecraft/mc-mods/the-magic-mirror)                                       | Reflective mirror block that shows the nearest player's reflection    |
+| [Fetzi's Displays](https://www.curseforge.com/minecraft/mc-mods/fetzis-displays)                                        | Item displays — glass cloches, katana stands, wall holders, racks     |
+| [Lili's Pottery](https://www.curseforge.com/minecraft/mc-mods/lets-do-lilis-pottery)                                    | Decorative pottery — pots, vases, urns, amphores, clay variants       |
+
+**Interdependency note — Fetzi's Displays + Apotheosis (Wave 3)**: Fetzi's Displays is ideal for showcasing Apotheosis gear. Glass cloches and katana stands let you display mythic drops and perfect gem rolls as trophies. Wall holders with plaques let you name your legendary weapons.
+
+**Interdependency note — Lili's Pottery + Handcrafted**: Both add decorative blocks but cover different aesthetics. Handcrafted is rustic furniture (chairs, tables, shelves). Lili's Pottery is earthenware (pots, vases, urns). Together they provide a full interior decoration toolkit.
 
 ### Rechiseled Addons
 

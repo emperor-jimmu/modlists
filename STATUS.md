@@ -26,12 +26,13 @@
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 - [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
 
-### Wave 2 — Exploration (~30 mods)
+### Wave 2 — Exploration (~31 mods)
 - [x] Worldgen: Terralith, Tectonic, BetterEnd NeoForge, Moog's End Structures
 - [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
 - [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
 - [x] Navigation: Explorer's Compass
 - [x] Mobility: Immersive Aircraft, Small Ships
+- [x] Aquatic: Hybrid Aquatic (marine creatures, diving armor, corals)
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
 
 ### Wave 3 — Equipment Magic & RPG (~18 mods incl. 10 deps)
@@ -44,11 +45,13 @@
 - [x] Skill Tree (RPG Series), Pufferfish's Skills
 - [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons and Twilight Forest bosses
 
-### Wave 4 — Food, Farming & Comfort (~8 mods)
+### Wave 4 — Food, Farming & Comfort (~10 mods)
 - [x] Farmer's Delight, Brewin' And Chewin'
 - [x] Storage Delight, My Nether's Delight, Ocean's Delight, Ender's Delight (moved from Wave 2)
 - [x] More Delight updated to 26.05.20a-1.21-neoforge (was stale pin 3.5.0)
 - [x] Delight Lib 26.05.18-1.21-neoforge added as required dep for More Delight
+- [x] Starcatcher (fishing overhaul — 100+ fish, minigame, trophies, tournaments, catalogue)
+- [x] Better Fishtanks (functional aquariums — fish bags, decorations, feeding, Create/AE2 compat)
 - [x] All mod URLs switched to Modrinth
 - [x] All interdependency notes written (food storage with AE2)
 
@@ -62,9 +65,11 @@
 - [x] Create Big Cannons + Ritchie's Projectile Library
 - [x] All mods configured at defaults
 
-### Wave 6 — Building & Decoration (10 mods + 3 deps)
+### Wave 6 — Building & Decoration (12 mods + 3 deps)
 - [x] Rechiseled (replaces Chipped), Supplementaries (Modrinth), Macaw's Bridges/Doors/Roofs/Windows, Building Wands, Handcrafted
 - [x] Rechiseled addons: Rechiseled: Create, Rechiseled: Applied Energistics 2
+- [x] Fetzi's Displays (glass cloches, katana stands, wall holders, racks)
+- [x] Lili's Pottery (decorative pots, vases, urns, amphores, clay variants)
 - [x] Dependencies: Moonlight Library (Supplementaries), Resourceful Lib (Handcrafted), Fusion (Rechiseled)
 
 ### Wave 7 — Space Exploration (~1 mod)
@@ -75,6 +80,8 @@
 ## Completed Decisions
 
 ### Design choices
+- [x] Added Hybrid Aquatic, Starcatcher, Better Fishtanks, Fetzi's Displays, Lili's Pottery (July 2026)
+- [x] Skipped Hybrid Delights (no NeoForge 1.21.1), Jungle Treehouse Village (no NeoForge 1.21.1), The Bumblezone (dimension overload — 4th dimension doesn't integrate with progression)
 - [x] Switched all mod links from Modrinth to CurseForge (July 2026)
 - [x] Updated installation instructions to use XMCL instead of GDLauncher (July 2026)
 - [x] Removed TFMG-Stellaris Compatibility (not on CurseForge, Stellaris has native fuel system)
