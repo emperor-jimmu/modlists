@@ -425,8 +425,8 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)         | Preview shulker box contents on hover                              |
 | [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                     | Colored borders on items based on rarity                           |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)            | Animated item pickup notifications                                 |
-| [Reliable Advancements](https://www.curseforge.com/minecraft/mc-mods/reliable-advancements)   | Overhauled advancements UI with editor/pan/zoom                    |
-| [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)                           | Choose crafting result when recipes conflict                       |
+| [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)         | Overhauled advancements UI with editor/pan/zoom                    |
+| [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                       | Choose crafting result when recipes conflict                       |
 
 ### Storage & Travel
 
@@ -736,7 +736,7 @@ Animated pickup notifications near your hotbar. Session summary on disconnect sh
 - `trackXpPickups = true`
 - `showSummaryOnDisconnect = true`
 
-#### Reliable Advancements
+#### Better Advancements
 
 Overhauled advancements UI — larger screen, pan/zoom, tab sorting, search. Open with `L`. Pairs with Advancement Plaques (glowing popup banners).
 
@@ -744,7 +744,7 @@ Overhauled advancements UI — larger screen, pan/zoom, tab sorting, search. Ope
 
 Glowing advancement plaques replace vanilla popups — copper for Tasks, silver for Goals, gold for Challenges. Requires **Iceberg** (auto-installed). Configurable position, distance, and whitelist filter.
 
-#### Polymorph
+#### Polymorph+
 
 When two mods have conflicting recipes for the same item, a small button appears next to the crafting output. Click to cycle recipes. Persists per ingredient combination.
 
