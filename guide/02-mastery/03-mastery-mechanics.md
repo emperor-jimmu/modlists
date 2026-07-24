@@ -12,27 +12,19 @@ description: Advanced mechanics, difficulty overhauls, and survival elements
 Wave 2 introduces mechanics mods that fundamentally change gameplay:
 
 ### Combat Overhauls
-- **Rebalanced damage** - enemies hit harder, fights are shorter
-- **New attack patterns** - some mods add animations and behaviors
-- **Stamina management** - more punishing, strategic use required
-- **Parry timing** - tighter windows, more rewarding counters
+- **Damage rebalance** -- enemies hit harder, but so do you. Fights are shorter and more lethal. Preparation determines victory, not stat checks.
+- **Stamina matters** -- dodging and Sign-casting share a stamina pool. No more spamming dodge -> Igni -> dodge. Every action must be intentional.
+- **Parry windows tighten** -- humanoid enemies feint and vary their timing. Parrying requires reading the enemy's body language.
 
 ### Economy Changes
-- **Reduced loot** - less gold from selling, fewer drops
-- **Increased costs** - crafting, repairs, merchants charge more
-- **Barter system** - some mods adjust vendor pricing
-- **Weight management** - encumbrance matters more
-
-### Progression Changes
-- **Slower leveling** - more XP needed per level
-- **Skill rebalance** - some skills changed or reworked
-- **Mutagen system** - enhanced or altered
-- **Crafting requirements** - more rare materials needed
+- **Reduced loot** -- bandits carry fewer crowns. Merchants have less gold to trade. Earn your coin through contracts, not looting.
+- **Crafting requires more** -- witcher gear diagrams demand rare monster parts. You must hunt specific monsters for their drops.
+- **Weight matters** -- encumbrance is stricter. You cannot carry three full armor sets. Choose carefully.
 
 ## Adapting to Higher Difficulty
 
-1. **Prepare thoroughly** - read bestiary for every contract
-2. **Use everything** - oils, bombs, potions, decoctions
-3. **Avoid fair fights** - use terrain, traps, environmental hazards
-4. **Invest in alchemy** - becomes much more valuable
-5. **Dodge less, position more** - careful positioning beats reactive dodging
+1. **Prepare thoroughly** -- read the bestiary for every contract, no exceptions
+2. **Use everything** -- oils, bombs, potions, decoctions, terrain
+3. **Avoid fair fights** -- use traps, environmental hazards, choke points
+4. **Invest in alchemy** -- becomes dramatically more valuable when fights are lethal
+5. **Position, don't dodge** -- careful positioning beats reactive dodging in a stamina-constrained world

@@ -7,19 +7,16 @@ description: New Game Plus preparation, Blood and Wine, and Hearts of Stone endg
 
 <span class="wave-badge wave-2">Wave 2</span>
 
-## New Game Plus (NG+)
+## When to Start NG+
 
-### When to Start NG+
-- Complete the main quest "Battle of Kaer Morhen" or later
-- Recommended level: 50+
-- All mutations unlocked
-- Grandmaster gear crafted
-- Complete both expansions first (they scale to level 100 in NG+)
+Complete the main quest at least through the Battle of Kaer Morhen (level 30+). Ideally, finish both expansions first -- Blood and Wine's mutations are especially valuable for NG+. Recommended level: 50+.
+
+## New Game Plus (NG+)
 
 ### What Carries Over
 - Character level and skills
 - All unlocked mutations
-- Alchemy formulas
+- Alchemy formulas (not crafted potions)
 - Gwent cards
 - Crafting diagrams
 - Gold and inventory items
@@ -33,10 +30,10 @@ description: New Game Plus preparation, Blood and Wine, and Hearts of Stone endg
 ## Blood and Wine Endgame
 
 ### Endgame Content
-- **Hanse bases** - repeatable combat encounters, great for leveling
-- **Grandmaster crafting** - tier 6 witcher gear
-- **Mutation system** - 12 unique mutations to unlock
-- **Corvo Bianco** - player vineyard, renovations, Gwent table
+- **Hanse bases** -- repeatable combat encounters, great for leveling and farming. Enemies respawn if you don't kill the leader
+- **Grandmaster crafting** -- tier 6 witcher gear with set bonuses (3-piece and 6-piece)
+- **Mutation system** -- 12 unique mutations to unlock (e.g., Euphoria, Piercing Cold, Metamorphosis)
+- **Corvo Bianco** -- player vineyard. Renovate rooms, unlock mutagen slots, display armor, play Gwent
 
 ### Recommended Level
 - Start: Level 35+
@@ -46,12 +43,11 @@ description: New Game Plus preparation, Blood and Wine, and Hearts of Stone endg
 ## Hearts of Stone Endgame
 
 ### Endgame Content
-- **Runewright** - unlock all 3 tiers of runewords
-- **Ofieri quests** - unique gear and rewards
-- **Random encounters** - new enemies in Novigrad/Velen
-- **Legendary items** - Iris, Viper Venomous set
+- **Runewright** -- unlock all 3 tiers of runewords and glyphwords (35,000 crowns total)
+- **Ofieri quests** -- unique gear: Ofieri saddle (+100 stamina), Viper Venomous silver sword
+- **Legendary items** -- Iris (steel sword, unique heavy attack), Viper School gear diagrams
 
 ### Recommended Level
 - Start: Level 30+
-- Endgame: Level 35-40
-- Ofieri content: Level 40+
+- Endgame content: Level 35-40
+- Ofieri quests: Level 40+

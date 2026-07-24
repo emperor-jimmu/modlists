@@ -1,6 +1,6 @@
 ---
 title: Specialized Builds
-description: Advanced character builds for Wave 2 - optimized for mechanics overhauls
+description: Advanced character builds for Wave 2 -- optimized for mechanics overhauls
 ---
 
 # Specialized Builds
@@ -10,38 +10,35 @@ description: Advanced character builds for Wave 2 - optimized for mechanics over
 ## Build Frameworks
 
 ### Euphoria Alchemy Tank
-**Core**: Metamorphosis mutation + maximum toxicity
-- Priority: Toxicity > Attack Power > Vitality
-- Use: Full decoction slot, Ekimmara + Water Hag + Archgriffin
-- Combat: Rend spam, high sustain
-- Gear: Manticore set (alchemy bonus)
+**Mutation:** Euphoria
+**Gear:** Manticore School (alchemy bonus)
+**Playstyle:** Run 3-4 decoctions simultaneously for massive passive bonuses. Use Rend (charged heavy attack) for damage.
+**Priority:** Toxicity > Attack Power > Vitality
+**Key Decoctions:** Ekimmara (damage heal), Water Hag (full health bonus), Archgriffin (heavy attack stamina cost)
 
 ### Piercing Cold Signs
-**Core**: Piercing Cold mutation (Igni)
-- Priority: Sign Intensity > Stamina Regen > Elemental Damage
-- Use: Aard sweep, Igni everything
-- Combat: Crowd control, burning DOT
-- Gear: Griffin set (sign bonus)
-
-### Conductors of Magic Hybrid
-**Core**: Conductors of Magic mutation
-- Priority: Sign Intensity > Attack Power
-- Use: Signs + Sword alternating
-- Combat: Versatile, adapts to any enemy
-- Gear: Wolf set (mixed bonuses)
+**Mutation:** Piercing Cold
+**Gear:** Griffin School (Sign bonus)
+**Playstyle:** Freeze enemies with Aard, then execute them. Igni stream for burning. Yrden turret for area denial.
+**Priority:** Sign Intensity > Stamina Regen > Elemental Damage
 
 ### Deadly Precision Critical
-**Core**: Cat school techniques + crit-focused combat
-- Priority: Crit Chance > Crit Damage > Attack Power
-- Use: Fast attacks, Whirl, instant kills
-- Combat: Glass cannon, high risk/reward
-- Gear: Feline set (crit bonus)
+**Mutation:** Metamorphosis
+**Gear:** Feline School (crit bonus)
+**Playstyle:** Glass cannon. Fast attacks, Whirl, critical hits. Apply status effects (bleed, poison, burning) to trigger Metamorphosis, which grants random buffs.
+**Priority:** Crit Chance > Crit Damage > Attack Power
 
-## Mutation Recommendations
+### Conductors of Magic Hybrid
+**Mutation:** Conductors of Magic
+**Gear:** Wolf School (mixed stats)
+**Playstyle:** Alternate between Signs and sword attacks. Adapt to any enemy type.
+**Priority:** Sign Intensity > Attack Power
+
+## Mutation Unlock Guide
 
 | Mutation | Build | How to Unlock |
 |----------|-------|---------------|
-| Euphoria | Alchemy/Combat hybrid | Blood and Wine main quest |
-| Piercing Cold | Sign focus | Hearts of Stone runewright |
-| Conductors of Magic | Hybrid | Blood and Wine main quest |
-| Metamorphosis | Status effect focus | Blood and Wine side quest |
+| Euphoria | Alchemy/Combat hybrid | Blood and Wine main quest -- Complete "The Wine Wars" |
+| Piercing Cold | Sign focus | Blood and Wine side quest -- explore unseen area |
+| Conductors of Magic | Hybrid | Blood and Wine main quest progression |
+| Metamorphosis | Status effect build | Blood and Wine side quest -- defeat the unseen elder |
