@@ -5,7 +5,7 @@
     gutter: 0.2em,
     {
       if url != "" and url != none {
-        link(url)[text(weight: "bold", size: 10.5pt, name)]
+        link(url)[#text(weight: "bold", size: 10.5pt, name)]
       } else {
         text(weight: "bold", size: 10.5pt, name)
       }
