@@ -12,8 +12,8 @@
 #let heading-font = "Georgia"
 #let body-font = "Palatino Linotype"
 
-#let title-page(title, subtitle, logo-path) = {
-  page(size: "a4", margin: (top: 6cm, bottom: 3cm, left: 2.5cm, right: 2.5cm))[
+#let title-page(title: "", subtitle: "", logo-path: "logo.png") = {
+  page(paper: "a4", margin: (top: 6cm, bottom: 3cm, left: 2.5cm, right: 2.5cm))[
     #align(center, image(logo-path, height: 5cm))
     #v(2cm)
     #align(center, text(size: 36pt, weight: "bold", fill: witcher-colors.amber)[#title])
@@ -26,7 +26,7 @@
   ]
 }
 
-#let wave-header(number, title, subtitle) = {
+#let wave-header(number: 0, title: "", subtitle: "") = {
   pagebreak(weak: true)
   block(stroke: 2pt + witcher-colors.amber, width: 100%)[#v(1cm)]
   text(size: 8pt, fill: witcher-colors.dark-amber)[WAVE #number]
@@ -37,11 +37,11 @@
   v(1cm)
 }
 
-#let mod-card(name, url, author, category, version, wave, dependencies: (), mechanic-impact: none, body: []) = {
-  rect(stroke: 0.5pt + witcher-colors.amber, inset: 12pt, margin: (bottom: 8pt))[
+#let mod-card(name: "", url: "", author: "", category: "", version: "", wave: "", dependencies: (), mechanic-impact: none, body) = {
+  rect(stroke: 0.5pt + witcher-colors.amber, inset: 12pt)[
     #text(size: 13pt, weight: "bold", fill: witcher-colors.amber)[#name]
     #h(4pt)
-    #text(size: 9pt, fill: blue, link(url))[[Link]]
+    #link(url)[#text(size: 9pt, fill: blue)[Link]]
     #v(4pt)
     #grid(
       columns: (1fr, 1fr),
@@ -61,4 +61,5 @@
     #v(4pt)
     #body
   ]
+  v(8pt)
 }

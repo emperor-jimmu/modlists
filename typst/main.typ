@@ -1,7 +1,7 @@
 #import "theme.typ": *
 
 #set page(
-  size: "a4",
+  paper: "a4",
   margin: (top: 1.5cm, bottom: 1.5cm, left: 2cm, right: 2cm),
   header: align(right + top, text(size: 8pt, fill: luma(160))[Only Monsters Remain]),
   footer: align(center + bottom, text(size: 8pt, fill: luma(160))[#context(numbering("1"))]),
@@ -18,7 +18,7 @@
 #title-page(
   title: "Only Monsters Remain",
   subtitle: "A Curated Witcher 3 Modlist & Game Guide",
-  logo-path: "../guide/assets/logo.png",
+  logo-path: "logo.png",
 )
 
 #pagebreak()
@@ -31,7 +31,7 @@
 // ============================================================
 // WAVE 0
 // ============================================================
-#wave-header(0, "A Witcher's Apprentice", "Vanilla + Quality of Life - For New Players")
+#wave-header(number: 0, title: "A Witcher's Apprentice", subtitle: "Vanilla + Quality of Life - For New Players")
 
 = Installation & Setup
 == Game Installation
@@ -72,7 +72,7 @@ Instructions for Witcher 3 Mod Manager (Nexus #2678)...
 // ============================================================
 // WAVE 1
 // ============================================================
-#wave-header(1, "A Witcher's Journey", "Enhanced Graphics & Content - For Experienced Players")
+#wave-header(number: 1, title: "A Witcher's Journey", subtitle: "Enhanced Graphics & Content - For Experienced Players")
 
 = Upgrading to Wave 1
 
@@ -105,7 +105,7 @@ Instructions for Witcher 3 Mod Manager (Nexus #2678)...
 // ============================================================
 // WAVE 2
 // ============================================================
-#wave-header(2, "Master Witcher", "Mechanics Overhauls - For Veteran Players")
+#wave-header(number: 2, title: "Master Witcher", subtitle: "Mechanics Overhauls - For Veteran Players")
 
 = Upgrading to Wave 2
 
