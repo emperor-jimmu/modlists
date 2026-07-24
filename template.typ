@@ -93,7 +93,6 @@ Conflicting mods are listed in `conflicts.conf` and are excluded from this guide
 == Waves & Campaign Setups
 
 === Wave 0: The Old World
-#wave-accent(0)
 #include "guide/wave-0/how-to-play.typ"
 #include "guide/wave-0/modlist.typ"
 #include "guide/wave-0/graphics.typ"
@@ -102,7 +101,6 @@ Conflicting mods are listed in `conflicts.conf` and are excluded from this guide
 #pagebreak()
 
 === Wave 1: The Gathering Storm
-#wave-accent(1)
 #include "guide/wave-1/strategy.typ"
 #include "guide/wave-1/modlist.typ"
 #include "guide/wave-1/graphics.typ"
@@ -111,7 +109,6 @@ Conflicting mods are listed in `conflicts.conf` and are excluded from this guide
 #pagebreak()
 
 === Wave 2: The End Times
-#wave-accent(2)
 #include "guide/wave-2/guide.typ"
 #include "guide/wave-2/modlist.typ"
 #include "guide/wave-2/graphics.typ"
@@ -120,7 +117,6 @@ Conflicting mods are listed in `conflicts.conf` and are excluded from this guide
 #pagebreak()
 
 === Wave 3: When Gods Bleed
-#wave-accent(3)
 #include "guide/wave-3/guide.typ"
 #include "guide/wave-3/modlist.typ"
 #include "guide/wave-3/graphics.typ"
