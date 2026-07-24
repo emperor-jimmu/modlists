@@ -1,0 +1,7 @@
+node_modules/
+.vitepress/dist/
+.vitepress/cache/
+output/site/
+output/*.pdf
+*.log
+.DS_Store
