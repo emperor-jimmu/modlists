@@ -420,7 +420,6 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)                         | Real-time minimap + full-screen world map, waypoints, entity radar |
 | [JourneyMap Integration](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) | Shows Waystones as icons on JourneyMap                             |
 | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                           | Food hunger/saturation overlay                                     |
-| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)                     | Inventory management shortcuts                                     |
 | [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)     | Drag-to-transfer, single-item moves, sorting                       |
 | [Advancement Plaques](https://www.curseforge.com/minecraft/mc-mods/advancement-plaques)  | Glowing plaque advancement popups with copper/silver/gold borders   |
 | [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)         | Preview shulker box contents on hover                              |
@@ -713,13 +712,9 @@ Look at any block → HUD shows block name, mod source, machine status, crop gro
 
 Hover over food → see exact hunger and saturation values. Pre-eat preview shows dashed outlines on your hunger bar. Saturation overlay shows the hidden second layer. No config.
 
-#### Mouse Tweaks
-
-Inventory shortcuts: left-click drag → distribute evenly across slots. Right-click drag → place one per slot. Scroll wheel on stack → move one item. No config.
-
 #### Inventory Essentials
 
-Works alongside Mouse Tweaks:
+Drag-to-transfer, single-item moves, sorting:
 
 - `Ctrl+click` a stack → moves one item
 - `Shift+Ctrl+click` → moves all items of that type
