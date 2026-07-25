@@ -24,8 +24,8 @@ Organized in three progressive waves, each with a historical roleplaying theme, 
 ### Prerequisites
 - [Typst 0.15+](https://github.com/typst/typst/releases) — add to PATH
 - Fonts: download and place in `fonts/`:
-  - [Crimson Pro](https://fonts.google.com/specimen/Crimson+Pro) — Regular, Bold, TTF
-  - [Noto Sans JP](https://fonts.google.com/specimen/Noto+Sans+JP) — Regular, Bold, TTF
+  - [Crimson Pro](https://fonts.google.com/specimen/Crimson+Pro) — Regular, Bold (TTF)
+  - [Noto Sans CJK JP](https://fonts.google.com/specimen/Noto+Sans+JP) — Regular, Bold (OTF)
 
 ### Build
 ```powershell

@@ -22,7 +22,7 @@ Curated modlist & guide for Total War: SHOGUN 2 (Steam, latest version). Named *
 ## Build Pipeline
 ```powershell
 # Prerequisites: install fonts/ then:
-typst compile typst/main.typ output/Tenka-Fubu-Modlist.pdf
+typst compile --root . --font-path fonts typst/main.typ output/Tenka-Fubu-Modlist.pdf
 # Or use the batch wrapper:
 ./generate-pdf.ps1
 ```

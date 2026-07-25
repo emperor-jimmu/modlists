@@ -221,8 +221,8 @@ Write `H:\Projects\modguides\total-war-shogun-2-modlist\typst\theme.typ`:
 // ── Fonts ──
 #let body-font = "Crimson Pro"
 #let heading-font = "Crimson Pro"
-#let cjk-font = "Noto Sans JP"
-#let code-font = "Cascadia Code"
+#let cjk-font = "Noto Sans CJK JP"
+#let code-font = ("Consolas", "Courier New")
 
 // ── Page Dimensions ──
 #let page-width = "a4"
@@ -1212,7 +1212,7 @@ if (-not (Test-Path -LiteralPath $OutputDir)) {
 
 # Compile
 Write-Host "Compiling Tenka Fubu Modlist PDF..." -ForegroundColor Cyan
-& $TypstBin compile $MainSource $OutputPdf
+& $TypstBin compile --root $PSScriptRoot --font-path (Join-Path $PSScriptRoot "fonts") $MainSource $OutputPdf
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Done! PDF generated at: $OutputPdf" -ForegroundColor Green

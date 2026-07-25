@@ -25,8 +25,8 @@
 // ── Fonts ──
 #let body-font = "Crimson Pro"
 #let heading-font = "Crimson Pro"
-#let cjk-font = "Noto Sans JP"
-#let code-font = "Cascadia Code"
+#let cjk-font = "Noto Sans CJK JP"
+#let code-font = ("Consolas", "Courier New")
 
 // ── Page Dimensions ──
 #let page-width = "a4"

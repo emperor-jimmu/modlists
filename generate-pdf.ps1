@@ -21,7 +21,7 @@ if (-not (Test-Path -LiteralPath $OutputDir)) {
 
 # Compile
 Write-Host "Compiling Tenka Fubu Modlist PDF..." -ForegroundColor Cyan
-& $TypstBin compile --root $PSScriptRoot $MainSource $OutputPdf
+& $TypstBin compile --root $PSScriptRoot --font-path (Join-Path $PSScriptRoot "fonts") $MainSource $OutputPdf
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Done! PDF generated at: $OutputPdf" -ForegroundColor Green
