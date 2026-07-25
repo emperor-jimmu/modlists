@@ -10,4 +10,3 @@ Improves texture quality and lighting without significant performance cost.
 
 - *Version:* 1.0.0
 - *Dependencies:* None
-- *System Impact:* None (visual only)

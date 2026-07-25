@@ -64,7 +64,7 @@ As a Drifter, joining UC Vanguard fits your backstory — a second chance at pur
 
 === Skills Progression
 
-- Invest in tiers: early skills cost 1 point, advanced skills require rank 4 in a related skill.
+- Skill tiers unlock by spending skill points in a category (4/8/12 for tiers 2/3/4), not by ranking a specific skill.
 - Physical skills (Weight Lifting, Fitness) pay off across all playstyles.
 - Tech skills (Piloting, Targeting Control) unlock ship upgrades.
 - Combat skills (Ballistics, Pistols, Rifles) directly improve damage.

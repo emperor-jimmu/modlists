@@ -10,4 +10,3 @@ Improves the inventory screen with better sorting, search, and category filterin
 
 - *Version:* 1.0.0
 - *Dependencies:* SFSE
-- *System Impact:* None (cosmetic UI change)
