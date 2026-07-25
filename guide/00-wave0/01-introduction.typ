@@ -1,3 +1,5 @@
+#import "../../template/styles.typ": *
+
 = Wave 0 — The Warlord's First Steps
 
 == Roleplaying Background
@@ -11,13 +13,18 @@ Your goal: survive. Learn the land. Build a following.
 
 == Game Setup
 
-| Setting | Choice |
-|---------|--------|
-| Difficulty | Normal |
-| Campaign | Mandate of Heaven / Rise of the Warlords (any) |
-| Faction | Any recommended starter faction (e.g., Cao Cao, Sun Jian, Liu Bei) |
-| Turn Timer | Unlimited |
-| Battle Time Limit | 60 min |
+#table(
+  columns: (auto, auto),
+  stroke: 0.5pt + luma(200),
+  fill: (card-white, category-bg),
+  table.cell(fill: crimson, text(fill: white, [*Setting*])),
+  table.cell(fill: crimson, text(fill: white, [*Choice*])),
+  [Difficulty], [Normal],
+  [Campaign], [Mandate of Heaven / Rise of the Warlords (any)],
+  [Faction], [Any recommended starter faction (e.g., Cao Cao, Sun Jian, Liu Bei)],
+  [Turn Timer], [Unlimited],
+  [Battle Time Limit], [60 min],
+)
 
 == Mods in This Wave
 

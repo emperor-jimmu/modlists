@@ -1,3 +1,5 @@
+#import "../../template/styles.typ": *
+
 = Wave 2 — Beneath a Crimson Banner
 
 == Roleplaying Background
@@ -15,13 +17,18 @@ Your goal: unite China under your banner — or watch it all burn.
 
 == Game Setup
 
-| Setting | Choice |
-|---------|--------|
-| Difficulty | Legendary |
-| Campaign | Mandate of Heaven |
-| Faction | Any (recommend a faction you know well from Waves 0-1) |
-| Turn Timer | Unlimited |
-| Battle Time Limit | 60 min |
+#table(
+  columns: (auto, auto),
+  stroke: 0.5pt + luma(200),
+  fill: (card-white, category-bg),
+  table.cell(fill: crimson, text(fill: white, [*Setting*])),
+  table.cell(fill: crimson, text(fill: white, [*Choice*])),
+  [Difficulty], [Legendary],
+  [Campaign], [Mandate of Heaven],
+  [Faction], [Any (recommend a faction you know well from Waves 0-1)],
+  [Turn Timer], [Unlimited],
+  [Battle Time Limit], [60 min],
+)
 
 == What's New
 

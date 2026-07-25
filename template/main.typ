@@ -13,6 +13,7 @@
 #include "../guide/00-wave0/01-introduction.typ"
 #wave-section("../guide/00-wave0/mods.yaml")
 #include "../guide/00-wave0/02-how-to-play.typ"
+#include "../guide/00-wave0/03-first-20-turns.typ"
 
 // Wave 1
 #include "../guide/01-wave1/01-introduction.typ"

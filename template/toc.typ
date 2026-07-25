@@ -11,7 +11,7 @@
   for chapter in chapters {
     let loc = chapter.location()
     let nr = counter(page).display(at: loc)
-    [#text(font: heading-font, size: 11pt, fill: crimson)[#chapter.body] #h(1fr) #text(fill: muted)[#nr] \ ]
+    link(loc)[#text(font: heading-font, size: 11pt, fill: crimson)[#chapter.body] #h(1fr) #text(fill: muted)[#nr] \ ]
   }
 }
 

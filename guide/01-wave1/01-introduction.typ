@@ -1,3 +1,5 @@
+#import "../../template/styles.typ": *
+
 = Wave 1 — The Kingdom Endures
 
 == Roleplaying Background
@@ -12,13 +14,18 @@ well-placed force.
 
 == Game Setup
 
-| Setting | Choice |
-|---------|--------|
-| Difficulty | Hard |
-| Campaign | Rise of the Warlords |
-| Faction | Any major regional power (e.g., Gongsun Zan, Yuan Shao, Liu Biao) |
-| Turn Timer | Unlimited |
-| Battle Time Limit | 60 min |
+#table(
+  columns: (auto, auto),
+  stroke: 0.5pt + luma(200),
+  fill: (card-white, category-bg),
+  table.cell(fill: crimson, text(fill: white, [*Setting*])),
+  table.cell(fill: crimson, text(fill: white, [*Choice*])),
+  [Difficulty], [Hard],
+  [Campaign], [Rise of the Warlords],
+  [Faction], [Any major regional power (e.g., Gongsun Zan, Yuan Shao, Liu Biao)],
+  [Turn Timer], [Unlimited],
+  [Battle Time Limit], [60 min],
+)
 
 == What's New
 
