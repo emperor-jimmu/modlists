@@ -3,7 +3,7 @@
 #let category-label(cat) = {
   let label = {
     box(fill: category-bg, inset: (x: 4pt, y: 2pt), radius: 2pt,
-      text(size: 7pt, font: mono-font, fill: ink, str(cat).upper())
+      text(size: 7pt, font: mono-font, fill: ink, upper(str(cat)))
     )
   }
   label
@@ -34,7 +34,7 @@
 
       #v(4pt)
 
-      #hstack(spacing: 4pt)[
+      #stack(dir: ltr, spacing: 4pt)[
         #for cat in mod.category {
           category-label(cat)
         }
@@ -44,32 +44,32 @@
       #text(size: 9.5pt, fill: ink)[#mod.description]
 
       #if mod.dependencies != () and mod.dependencies.len() > 0 {
-        #v(4pt)
-        #text(size: 8pt, fill: muted)[
+        v(4pt)
+        text(size: 8pt, fill: muted)[
           *Dependencies:* #mod.dependencies.join(", ")
         ]
       }
 
       #if has-conflicts {
-        #v(4pt)
-        #for conflict in mod.conflicts {
-          #text(size: 8pt, fill: conflict-red)[
+        v(4pt)
+        for conflict in mod.conflicts {
+          text(size: 8pt, fill: conflict-red)[
             ⚠ *Conflict:* #conflict.mod → #conflict.resolution
           ]
-          #v(2pt)
+          v(2pt)
         }
       }
 
       #if has-mechanic {
-        #v(4pt)
-        #text(size: 8pt, fill: mechanic-blue)[
+        v(4pt)
+        text(size: 8pt, fill: mechanic-blue)[
           ⚙ #mod.mechanic_impact
         ]
       }
 
       #if mod.notes != "" {
-        #v(4pt)
-        #text(size: 7.5pt, fill: muted, style: "italic")[#mod.notes]
+        v(4pt)
+        text(size: 7.5pt, fill: muted, style: "italic")[#mod.notes]
       }
     ]
   )

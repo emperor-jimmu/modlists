@@ -5,7 +5,7 @@
   background: [ #box(fill: parchment, width: 100%, height: 100%) ]
 )
 
-#align(center + middle, text(
+#align(center + horizon, text(
   font: heading-font,
   weight: 700,
   size: 36pt,
