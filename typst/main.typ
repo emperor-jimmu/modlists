@@ -87,7 +87,7 @@
   #it
 ]
 #show heading.where(level: 2): set text(fill: shimazu-vermillion)
-#show heading.where(level: 3): set text(fill: shimazu-vermillion + rgb("#333333"))
+#show heading.where(level: 3): set text(fill: rgb("#7A1717"))
 
 #include "../guide/wave-0/01-setup.typ"
 #pagebreak()
@@ -125,7 +125,7 @@
   #it
 ]
 #show heading.where(level: 2): set text(fill: tokugawa-navy)
-#show heading.where(level: 3): set text(fill: tokugawa-navy + rgb("#333333"))
+#show heading.where(level: 3): set text(fill: rgb("#070F1C"))
 
 #include "../guide/wave-2/01-setup.typ"
 #pagebreak()

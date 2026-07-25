@@ -7,7 +7,7 @@
   numbering: none,
 )
 
-#align(center + middle, text(
+#align(center + horizon, text(
   font: (heading-font, cjk-font),
   size: 14pt,
   fill: oda-gold,
