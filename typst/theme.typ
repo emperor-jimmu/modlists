@@ -51,34 +51,67 @@
     fill: c.card-bg,
     stroke: 0.5pt + c.card-border,
     radius: 4pt,
+    width: 100%,
   )[
     #grid(
       columns: (1fr, auto),
+      gutter: 8pt,
       {
-        text(size: 12pt, weight: "bold", fill: c.heading)[#name]
+        par(leading: 0.6em)[
+          #text(size: 12pt, weight: "bold", fill: c.heading)[#name]
+        ]
       },
       {
-        link(url)[#text(size: 8pt, fill: c.link)[#underline[[Download]]]]
+        box(
+          inset: (x: 6pt, y: 3pt),
+          radius: 3pt,
+          fill: rgb("#e8e0d0"),
+        )[
+          #link(url)[#text(size: 8pt, weight: "medium", fill: c.link)[Download]]
+        ]
       },
     )
-    #v(4pt)
+    #v(6pt)
     #grid(
       columns: (1fr, 1fr),
-      text(size: 9pt, fill: c.body)[*Author:* #author],
-      text(size: 9pt, fill: c.body)[*Category:* #category],
-      text(size: 9pt, fill: c.body)[*Version:* #version],
-      text(size: 9pt, fill: c.body)[*Wave:* #wave],
+      gutter: (12pt, 4pt),
+      [
+        #par(leading: 0.5em)[
+          #text(size: 9pt, fill: c.muted)[Author:] #text(size: 9pt, fill: c.body)[#author]
+        ]
+      ],
+      [
+        #par(leading: 0.5em)[
+          #text(size: 9pt, fill: c.muted)[Category:] #text(size: 9pt, fill: c.body)[#category]
+        ]
+      ],
+      [
+        #par(leading: 0.5em)[
+          #text(size: 9pt, fill: c.muted)[Version:] #text(size: 9pt, fill: c.body)[#version]
+        ]
+      ],
+      [
+        #par(leading: 0.5em)[
+          #text(size: 9pt, fill: c.muted)[Wave:] #text(size: 9pt, fill: c.body)[#wave]
+        ]
+      ],
     )
     #if dependencies.len() > 0 [
-      #v(2pt)
-      text(size: 9pt, fill: c.muted)[*Dependencies:* #dependencies.join(", ")]
+      #v(4pt)
+      #par(leading: 0.5em)[
+        #text(size: 9pt, fill: c.muted)[*Dependencies:*] #text(size: 9pt, fill: c.body)[#dependencies.join(", ")]
+      ]
     ]
     #if mechanic-impact != none [
-      #v(2pt)
-      text(size: 9pt, fill: c.body)[*Mechanic Impact:* #mechanic-impact]
+      #v(4pt)
+      #par(leading: 0.5em)[
+        #text(size: 9pt, fill: c.muted)[*Mechanic Impact:*] #text(size: 9pt, fill: c.body)[#mechanic-impact]
+      ]
     ]
     #v(6pt)
-    #body
+    #par(leading: 0.6em)[
+      #text(size: 9.5pt, fill: c.body)[#body]
+    ]
   ]
   v(8pt)
 }
