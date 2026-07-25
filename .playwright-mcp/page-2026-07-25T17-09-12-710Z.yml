@@ -1,0 +1,1286 @@
+- generic [active] [ref=f11e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - button [ref=f11e2]
+          - generic [ref=f11e6]:
+            - img "research" [ref=f11e8]
+            - generic [ref=f11e9]:
+              - paragraph [ref=f11e10]: Fandom is on a quest for your opinions on upcoming movies!
+              - link "we want to hear from you!" [ref=f11e11] [cursor=pointer]:
+                - /url: https://sw2.decipherinc.com/survey/selfserve/419f/250113
+            - button "Close" [ref=f11e12] [cursor=pointer]
+  - navigation "Fandom top navigation" [ref=f11e13]:
+    - link "Fandom homepage" [ref=f11e14] [cursor=pointer]:
+      - /url: https://www.fandom.com/
+    - textbox "Search" [ref=f11e19]
+    - generic [ref=f11e22]:
+      - link "Sign In" [ref=f11e24] [cursor=pointer]:
+        - /url: https://auth.fandom.com/signin?source=mw&redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2&metadata=header-signin-button
+      - link "Create a Free Account" [ref=f11e26] [cursor=pointer]:
+        - /url: https://auth.fandom.com/register?source=mw&redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2&metadata=header-registration-button
+  - generic "Community navigation" [ref=f11e27]:
+    - link "Fandom homepage" [ref=f11e29] [cursor=pointer]:
+      - /url: https://www.fandom.com/
+    - link [ref=f11e32] [cursor=pointer]:
+      - /url: https://totalwar.fandom.com/wiki/Total_War_Wiki
+      - img "Total War Wiki" [ref=f11e33]
+    - navigation [ref=f11e34]:
+      - list [ref=f11e35]:
+        - listitem [ref=f11e36]:
+          - generic [ref=f11e37]:
+            - generic [ref=f11e38] [cursor=pointer]: Explore
+            - img "Expand" [ref=f11e42]
+        - listitem [ref=f11e44]:
+          - generic [ref=f11e45]:
+            - link "Recent Games" [ref=f11e46] [cursor=pointer]:
+              - /url: https://totalwar.fandom.com/wiki/Total_War_series
+            - img "Expand" [ref=f11e48]
+        - listitem [ref=f11e50]:
+          - generic [ref=f11e51]:
+            - link "Historical Games" [ref=f11e52] [cursor=pointer]:
+              - /url: https://totalwar.fandom.com/wiki/Total_War_series
+            - img "Expand" [ref=f11e54]
+        - listitem [ref=f11e56]:
+          - generic [ref=f11e57]:
+            - link "Spin-offs" [ref=f11e58] [cursor=pointer]:
+              - /url: https://totalwar.fandom.com/wiki/Total_War_series
+            - img "Expand" [ref=f11e60]
+        - listitem [ref=f11e62]:
+          - generic [ref=f11e63]:
+            - link "Community" [ref=f11e64] [cursor=pointer]:
+              - /url: https://totalwar.fandom.com/wiki/Special:Community
+            - img "Expand" [ref=f11e66]
+    - button "Open searchbar" [ref=f11e69] [cursor=pointer]
+    - generic [ref=f11e72]:
+      - link "Discuss" [ref=f11e73] [cursor=pointer]:
+        - /url: /f
+      - link "Switch to Dark Theme" [ref=f11e74] [cursor=pointer]:
+        - /url: "#"
+    - link [ref=f11e77] [cursor=pointer]:
+      - /url: https://auth.fandom.com/signin?source=mw&redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2&metadata=header-signin-button
+  - generic [ref=f11e79]:
+    - navigation "Fandom navigation" [ref=f11e81]:
+      - generic [ref=f11e82]:
+        - link "Home" [ref=f11e85] [cursor=pointer]:
+          - /url: https://www.fandom.com/
+        - button "Explore" [ref=f11e92] [cursor=pointer]
+        - link "Saved" [ref=f11e101] [cursor=pointer]:
+          - /url: https://www.fandom.com/saved
+        - link "Progress" [ref=f11e109] [cursor=pointer]:
+          - /url: https://www.fandom.com/progress
+        - button "History" [ref=f11e116] [cursor=pointer]
+        - link "Utilities" [ref=f11e124] [cursor=pointer]:
+          - /url: https://www.fandom.com/utilities
+    - navigation "Fandom navigation" [ref=f11e131]:
+      - button "More" [ref=f11e133] [cursor=pointer]
+  - generic [ref=f11e139]:
+    - generic [ref=f11e141]:
+      - iframe [ref=f11e144]:
+        - link [ref=f35e3] [cursor=pointer]:
+          - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuqmIpkgASMDO17aoZGkrBybC69CfO0prENMuVE6Fx4T_M18i7awTtQdZGm3b7hQhNWJD7tFLTEvPOVci6rTcMGwKiHEePhzalteRMgDX6GWDNsvsRjRBKKxlSvQ_qdbjvlLrp_BfFUelHFTSKwzchddyZPe-Eo0tvmw7RyjrEZJ6CHAX26GV-XsWLcY3HZ5nAbMnuxsMf2ZWkR8tnMkF0MsNO5YlXe1Gxhx4Ta4U69_1PUyyTLSRPjDLq2fJG4hfvOvKrqPsFin_fYNRJgntrCrWWNDKkA4DEnaCG_Dn8OZcu3xxhX1hiQV4RXoW8CkpymHiknCHPeNd94pKhzAIYrCulvGDMzupRiTeL1IqDATDEPlU509W63yCIb2uuIR5Jp_1s5ft24maBaar_tf1aqYvo9ZuRGGYAhYQJBNGSaPNVRZyuHBtNpgupbl3IJPolX8dSIcVYaWHp9coch8ix0-A_5_feYslB8wdA&sai=AMfl-YQaxEtttAZRWZQuvzBoOxBSec7ZUY_bVphpnEnXHVh6xftQYs29M65aTKWaAy46_rx-HteqnJH8IUbGO7HPjrTQ-CE-EpjreXWb6Ho6oRoXaSKZkQk_LSNe5cacsAO8c7ts9Bx8yD45UeaN_cT6n_wPTZ2YEXL9XADR_kMLRy_0Wcc4J3enOOJjVqzAO6Y7Z6v96luUy9Wa0APLwQIjCBePmyH25Xa2uDRB3owPqGAh32N7d5VexfMArk5vJWZMPF_aw1iVxh3nEnO73fQwTzPqqlYLEMQumxKk5jtAwT81k64BPCAxTsTm1cayIyZ9G-dPfjBITdS_BBnFNOloJmKKSzxiVp6aV-J16_KL1O2aLWTAQz0ssmNptKX70zaGmiBZyCxXI8ld8qg&sig=Cg0ArKJSzDYFrAxqz0EhEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://onepiece.fandom.com/wiki/Special:GameUtility/IdentityOnePiece?utm_source=fandom&utm_medium=display&utm_campaign=FandomUtilities_OnePiece_R1-2_970x250.jpg&utm_content=970x250
+      - generic [ref=f11e145]: Advertisement
+    - generic [ref=f11e147]:
+      - link "Skip to content" [ref=f11e148] [cursor=pointer]:
+        - /url: "#page-header"
+      - banner [ref=f11e150]:
+        - link [ref=f11e151] [cursor=pointer]:
+          - /url: https://totalwar.fandom.com/wiki/Total_War_Wiki
+          - img "Total War Wiki" [ref=f11e152]
+        - generic [ref=f11e153]:
+          - link "Total War Wiki" [ref=f11e155] [cursor=pointer]:
+            - /url: https://totalwar.fandom.com/wiki/Total_War_Wiki
+          - generic [ref=f11e156]:
+            - generic [ref=f11e157]: 6,039
+            - generic [ref=f11e158]: pages
+          - generic [ref=f11e159]:
+            - link "Discuss" [ref=f11e160] [cursor=pointer]:
+              - /url: /f
+            - link "Switch to Dark Theme" [ref=f11e161] [cursor=pointer]:
+              - /url: "#"
+        - navigation [ref=f11e162]:
+          - list [ref=f11e163]:
+            - listitem [ref=f11e164]:
+              - generic [ref=f11e165]:
+                - generic [ref=f11e166] [cursor=pointer]: Explore
+                - img "Expand" [ref=f11e170]
+            - listitem [ref=f11e172]:
+              - generic [ref=f11e173]:
+                - link "Recent Games" [ref=f11e174] [cursor=pointer]:
+                  - /url: https://totalwar.fandom.com/wiki/Total_War_series
+                - img "Expand" [ref=f11e176]
+            - listitem [ref=f11e178]:
+              - generic [ref=f11e179]:
+                - link "Historical Games" [ref=f11e180] [cursor=pointer]:
+                  - /url: https://totalwar.fandom.com/wiki/Total_War_series
+                - img "Expand" [ref=f11e182]
+            - listitem [ref=f11e184]:
+              - generic [ref=f11e185]:
+                - link "Spin-offs" [ref=f11e186] [cursor=pointer]:
+                  - /url: https://totalwar.fandom.com/wiki/Total_War_series
+                - img "Expand" [ref=f11e188]
+            - listitem [ref=f11e190]:
+              - generic [ref=f11e191]:
+                - link "Community" [ref=f11e192] [cursor=pointer]:
+                  - /url: https://totalwar.fandom.com/wiki/Special:Community
+                - img "Expand" [ref=f11e194]
+      - generic [ref=f11e196]:
+        - main [ref=f11e197]:
+          - generic [ref=f11e199]:
+            - generic "Contents" [ref=f11e200]:
+              - button "Contents" [ref=f11e201] [cursor=pointer]
+              - text: . . . . . . . . . . . . .
+            - link "Edit" [ref=f11e204] [cursor=pointer]:
+              - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit&uselang=en&metadata=article-registration-edit-article
+            - link "Sign In to Save" [ref=f11e207] [cursor=pointer]:
+              - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fcollections%3Dsave&uselang=en&metadata=collections-save-button
+          - generic [ref=f11e210]:
+            - generic [ref=f11e211]:
+              - generic [ref=f11e213]:
+                - text: "in:"
+                - link "Games" [ref=f11e214] [cursor=pointer]:
+                  - /url: /wiki/Category:Games
+                - text: ","
+                - 'link "Total War: Shogun 2" [ref=f11e215] [cursor=pointer]':
+                  - /url: /wiki/Category:Total_War:_Shogun_2
+              - generic [ref=f11e218]:
+                - text: English
+                - img "Toggle" [ref=f11e219]
+            - generic [ref=f11e221]:
+              - 'heading "Total War: Shogun 2" [level=1] [ref=f11e223]'
+              - generic [ref=f11e224]:
+                - link "View article discussions" [ref=f11e225] [cursor=pointer]:
+                  - /url: "#article-discussions"
+                  - generic [ref=f11e226]: "4"
+                - link "Sign In to Save" [ref=f11e227] [cursor=pointer]:
+                  - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fcollections%3Dsave&uselang=en&metadata=collections-save-button
+                  - generic [ref=f11e228]: Save
+                - link "Edit" [ref=f11e229] [cursor=pointer]:
+                  - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit&uselang=en&metadata=article-registration-edit-article
+                - button "Page Tools" [ref=f11e231]
+          - generic [ref=f11e234]:
+            - region [ref=f11e235]:
+              - 'heading "Total War: Shogun 2" [level=2] [ref=f11e236]'
+              - figure [ref=f11e237]:
+                - link [ref=f11e238] [cursor=pointer]:
+                  - /url: https://static.wikia.nocookie.net/totalwar/images/5/50/Shogun2TotalWarBoxArt.jpg/revision/latest?cb=20110113213254
+                  - img "Shogun2TotalWarBoxArt" [ref=f11e239]
+                  - generic "view image" [ref=f11e242]
+              - heading "Game Information" [level=2] [ref=f11e246] [cursor=pointer]
+              - generic [ref=f11e247]:
+                - heading "Rating(s)" [level=2] [ref=f11e248]
+                - generic [ref=f11e250]:
+                  - link [ref=f11e253] [cursor=pointer]:
+                    - /url: https://static.wikia.nocookie.net/totalwar/images/6/6c/Wikiuse_pegi_16.png/revision/latest?cb=20231231152830
+                    - 'img "PEGI: 16" [ref=f11e254]'
+                  - link [ref=f11e257] [cursor=pointer]:
+                    - /url: https://static.wikia.nocookie.net/totalwar/images/2/27/Wikiuse_esrb_teen.png/revision/latest?cb=20231231152829
+                    - 'img "ESRB: Teen" [ref=f11e258]'
+                  - link [ref=f11e261] [cursor=pointer]:
+                    - /url: https://static.wikia.nocookie.net/totalwar/images/3/39/Wikiuse_usk_12.png/revision/latest?cb=20260110013125
+                    - 'img "USK: 12" [ref=f11e262]'
+            - paragraph [ref=f11e263]:
+              - generic [ref=f11e264]: "Total War: Shogun 2"
+              - superscript [ref=f11e265]:
+                - link "Reference 3" [ref=f11e266] [cursor=pointer]:
+                  - /url: "#cite_note-3"
+                  - text: "[3]"
+              - text: "is a strategy computer game developed by The Creative Assembly and published by Sega. In it the game returns to the 16th century Japan setting of Shogun: Total War. The game was released on March 15, 2011. A demo was released one week beforehand."
+            - navigation [ref=f11e267]:
+              - button "show" [ref=f11e268]
+              - generic [ref=f11e269]:
+                - heading "Contents" [level=2] [ref=f11e270]
+                - generic [ref=f11e273]:
+                  - text: "["
+                  - generic "show" [ref=f11e274] [cursor=pointer]: hide
+                  - text: "]"
+              - list [ref=f11e275]:
+                - listitem [ref=f11e276]:
+                  - link "1. Setting" [ref=f11e277] [cursor=pointer]:
+                    - /url: "#Setting"
+                    - generic [ref=f11e278]: "1."
+                    - generic [ref=f11e279]: Setting
+                - listitem [ref=f11e280]:
+                  - link "2. Gameplay" [ref=f11e281] [cursor=pointer]:
+                    - /url: "#Gameplay"
+                    - generic [ref=f11e282]: "2."
+                    - generic [ref=f11e283]: Gameplay
+                - listitem [ref=f11e284]:
+                  - link "3. Factions" [ref=f11e285] [cursor=pointer]:
+                    - /url: "#Factions"
+                    - generic [ref=f11e286]: "3."
+                    - generic [ref=f11e287]: Factions
+                  - list [ref=f11e288]:
+                    - listitem [ref=f11e289]:
+                      - link "3.1. Minor Factions" [ref=f11e290] [cursor=pointer]:
+                        - /url: "#Minor_Factions"
+                        - generic [ref=f11e291]: 3.1.
+                        - generic [ref=f11e292]: Minor Factions
+                - listitem [ref=f11e293]:
+                  - link "4. Features" [ref=f11e294] [cursor=pointer]:
+                    - /url: "#Features"
+                    - generic [ref=f11e295]: "4."
+                    - generic [ref=f11e296]: Features
+                - listitem [ref=f11e297]:
+                  - link "5. Retail versions" [ref=f11e298] [cursor=pointer]:
+                    - /url: "#Retail_versions"
+                    - generic [ref=f11e299]: "5."
+                    - generic [ref=f11e300]: Retail versions
+                - listitem [ref=f11e301]:
+                  - link "6. DLCs and Expansions" [ref=f11e302] [cursor=pointer]:
+                    - /url: "#DLCs_and_Expansions"
+                    - generic [ref=f11e303]: "6."
+                    - generic [ref=f11e304]: DLCs and Expansions
+                - listitem [ref=f11e305]:
+                  - link "7. Other languages" [ref=f11e306] [cursor=pointer]:
+                    - /url: "#Other_languages"
+                    - generic [ref=f11e307]: "7."
+                    - generic [ref=f11e308]: Other languages
+                - listitem [ref=f11e309]:
+                  - link "8. Trivia" [ref=f11e310] [cursor=pointer]:
+                    - /url: "#Trivia"
+                    - generic [ref=f11e311]: "8."
+                    - generic [ref=f11e312]: Trivia
+                - listitem [ref=f11e313]:
+                  - link "9. Gallery" [ref=f11e314] [cursor=pointer]:
+                    - /url: "#Gallery"
+                    - generic [ref=f11e315]: "9."
+                    - generic [ref=f11e316]: Gallery
+                - listitem [ref=f11e317]:
+                  - link "10. Videos" [ref=f11e318] [cursor=pointer]:
+                    - /url: "#Videos"
+                    - generic [ref=f11e319]: "10."
+                    - generic [ref=f11e320]: Videos
+                - listitem [ref=f11e321]:
+                  - link "11. External links" [ref=f11e322] [cursor=pointer]:
+                    - /url: "#External_links"
+                    - generic [ref=f11e323]: "11."
+                    - generic [ref=f11e324]: External links
+                - listitem [ref=f11e325]:
+                  - link "12. References" [ref=f11e326] [cursor=pointer]:
+                    - /url: "#References"
+                    - generic [ref=f11e327]: "12."
+                    - generic [ref=f11e328]: References
+            - generic [ref=f11e333]:
+              - generic [ref=f11e334]:
+                - application "Connatix video player" [ref=f11e336]
+                - generic [ref=f11e339]:
+                  - generic [ref=f11e344]:
+                    - button "More" [ref=f11e346] [cursor=pointer]
+                    - menu:
+                      - generic: Quality
+                    - generic:
+                      - menu:
+                        - generic: 360p
+                        - generic: 720p
+                        - generic: 1080p
+                        - generic: Auto(360p)
+                  - generic [ref=f11e352]:
+                    - button "Previous (Shift + P)" [ref=f11e355] [cursor=pointer]
+                    - button "Play (SPACE)" [ref=f11e362] [cursor=pointer]
+                    - button "Next (Shift + N)" [ref=f11e368] [cursor=pointer]
+                  - generic [ref=f11e374]:
+                    - button "Unmute (M)" [ref=f11e378] [cursor=pointer]
+                    - generic [ref=f11e387]: 00:00
+                    - slider "Seek" [ref=f11e398] [cursor=pointer]: "0"
+                    - generic [ref=f11e399]: 41:20
+                    - generic [ref=f11e401]:
+                      - button "Settings" [ref=f11e404] [cursor=pointer]
+                      - generic:
+                        - menu:
+                          - generic: 360p
+                          - generic: 720p
+                          - generic: 1080p
+                          - generic: Auto(360p)
+                    - button "Full Screen (F)" [ref=f11e410] [cursor=pointer]
+                  - generic:
+                    - generic:
+                      - menu
+                - text: "Coming up:"
+                - generic:
+                  - iframe [ref=f11e414]:
+                    
+                  - iframe [ref=f11e415]:
+                    
+                  - iframe [ref=f11e416]:
+                    
+                  - iframe [ref=f11e417]:
+                    
+              - button "Close Player" [ref=f11e419]
+            - heading [level=2] [ref=f11e424]:
+              - text: Setting
+              - link "Sign in to edit" [ref=f11e426] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D1&uselang=en&metadata=article-registration-edit-article-section
+            - paragraph [ref=f11e429]:
+              - text: Shogun 2 is set in the
+              - link "Sengoku jidai" [ref=f11e430] [cursor=pointer]:
+                - /url: http://en.wikipedia.org/wiki/Sengoku_Period
+              - text: ", \"the Warring States Period\" (16th-century feudal Japan), in the aftermath of the"
+              - link "Onin War" [ref=f11e431] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/%C5%8Cnin_War
+              - text: . The country is fractured into rival clans led by local warlords, each fighting for control. The player takes on the role of one of these warlords, with the goal of dominating other factions and claiming his rule over Japan. The base game features a total of nine playable factions, each with a unique starting position and different political and military strengths. There are also many non-playable factions in the game.
+            - paragraph [ref=f11e432]:
+              - text: Moving away from the European setting of other Total War games, and returning to the setting in the
+              - link "first Total War title" [ref=f11e433] [cursor=pointer]:
+                - /url: /wiki/Shogun:_Total_War
+              - text: the developers are making significant changes to core gameplay elements of Shogun 2. For example, to reflect the characteristics of East Asian warfare, the game's AI is designed on the principles of Sun Tzu's
+              - link "The Art of War" [ref=f11e434] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/The_Art_of_War
+              - text: . Compared to Empire which spanned the entire globe, the new installment is set to focus on the islands of
+              - link "Japan" [ref=f11e435] [cursor=pointer]:
+                - /url: /wiki/Japan
+              - text: and on a reduced number of unit types.
+            - heading [level=2] [ref=f11e436]:
+              - text: Gameplay
+              - link "Sign in to edit" [ref=f11e438] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D2&uselang=en&metadata=article-registration-edit-article-section
+            - paragraph [ref=f11e441]: Shogun 2 has a combination of real-time strategy and turn-based strategy gameplay, a staple of the Total War series. The player plays the role of both the clan leader and general, alternating between the "campaign", where the player manages his land and armies turn by turn, and the "battles", where the player takes control of the army on the battlefield in real-time.
+            - paragraph [ref=f11e442]:
+              - text: In the "campaign", the player oversees the development of
+              - link "settlements" [ref=f11e443] [cursor=pointer]:
+                - /url: /wiki/Category:Total_War:_Shogun_2_buildings
+              - text: ","
+              - link "military production" [ref=f11e444] [cursor=pointer]:
+                - /url: /wiki/Category:Total_War:_Shogun_2_units
+              - text: ","
+              - link "economic growth" [ref=f11e445] [cursor=pointer]:
+                - /url: /wiki/Trade#Total_War:_Shogun_2
+              - text: ", and"
+              - link "technological advancement" [ref=f11e446] [cursor=pointer]:
+                - /url: /wiki/Arts
+              - text: . The armies and units are organized and moved around the stylized campaign map by the player to carry out battles with other factions. In addition to fighting, the player are able to engage in diplomacy, political maneuvering, and special
+              - link "agents" [ref=f11e447] [cursor=pointer]:
+                - /url: /wiki/Agents_(Total_War:_Shogun_2)
+              - text: to gain the upper hand.
+            - paragraph [ref=f11e448]:
+              - text: In Shogun 2, leaders and
+              - link "generals" [ref=f11e449] [cursor=pointer]:
+                - /url: /wiki/General_(Total_War:_Shogun_2)
+              - text: are given more personality and depth in gameplay, in an RPG-like fashion. Generals and agents are to be portrayed as "larger-than-life" heroes with unique characteristics and powerful abilities. The player is able to improve and unlock skills, traits and special abilities for the characters as they gain experience. The player can also engage in family politics within the clan, to keep its members loyal.
+            - paragraph [ref=f11e450]: The "battles" of Shogun 2 involve large-scale skirmishes between armies that meet on the campaign map, taking place on land or on water. The game engine can reportedly support up to 56,000 soldiers in a single battle. The developers paid particular attention to re-designing the naval and siege battles appropriate to the new setting. In contrast to European castles and forts, the castles in feudal Japan had multiple tiers, and thus the siege battles in the game are put less focus on wall defenses but more on courtyard brawls and tactical maneuvering. Players fight naval battles with unique Japanese ships resembling "floating castles", and take into consideration melees on ships, arrow fire, coastal terrain, and many factors.
+            - paragraph [ref=f11e451]: Shogun 2 features multiplayer battles as well as multiplayer campaigns that may involve more than 2 players. In a multiplayer campaign, players can be grouped into different clans, so that for each clan, one player assumes the role of clan leader and others take command of armies. The clan leaders have the ability to direct other players and assign rewards based on loyalty and performance, introducing clan politics into multiplayer. As a player's army invades an enemy territory or is attacked by enemy armies, the online matchmaker finds a suitable opponent and initiates a multiplayer battle. When a player defeats enemy armies and conquers territories, the player gains points and other bonuses for the clan. In addition, an achievement system is designed to provide adhering players with unique abilities and cosmetic upgrades.
+            - heading [level=2] [ref=f11e453]:
+              - text: Factions
+              - link "Sign in to edit" [ref=f11e455] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D3&uselang=en&metadata=article-registration-edit-article-section
+            - figure [ref=f11e458]:
+              - link [ref=f11e459] [cursor=pointer]:
+                - /url: https://totalwar.fandom.com/wiki/File:Total_War-_Shogun_2_-_All_Main_Campaign_Clan_Intros_-_Briefings
+                - img "Total_War-_Shogun_2_-_All_Main_Campaign_Clan_Intros_-_Briefings" [ref=f11e460]
+                - img "Play" [ref=f11e462]
+              - generic [ref=f11e464]:
+                - paragraph [ref=f11e465]: Total War- Shogun 2 - All Main Campaign Clan Intros - Briefings
+                - paragraph [ref=f11e466]: Every clan intro/briefing from Shogun 2's main campaign
+            - list [ref=f11e467]:
+              - listitem [ref=f11e468]:
+                - link "Oda" [ref=f11e469] [cursor=pointer]:
+                  - /url: /wiki/Oda_Clan
+              - listitem [ref=f11e470]:
+                - link "Shimazu" [ref=f11e471] [cursor=pointer]:
+                  - /url: /wiki/Shimazu_Clan
+              - listitem [ref=f11e472]:
+                - link "Mori" [ref=f11e473] [cursor=pointer]:
+                  - /url: /wiki/Mori_Clan
+              - listitem [ref=f11e474]:
+                - link "Tokugawa" [ref=f11e475] [cursor=pointer]:
+                  - /url: /wiki/Tokugawa_Clan
+              - listitem [ref=f11e476]:
+                - link "Takeda" [ref=f11e477] [cursor=pointer]:
+                  - /url: /wiki/Takeda_Clan
+              - listitem [ref=f11e478]:
+                - link "Uesugi" [ref=f11e479] [cursor=pointer]:
+                  - /url: /wiki/Uesugi_Clan
+              - listitem [ref=f11e480]:
+                - link "Date" [ref=f11e481] [cursor=pointer]:
+                  - /url: /wiki/Date_Clan
+              - listitem [ref=f11e482]:
+                - link "Chosokabe" [ref=f11e483] [cursor=pointer]:
+                  - /url: /wiki/Chosokabe_Clan
+              - listitem [ref=f11e484]:
+                - link "Hattori" [ref=f11e485] [cursor=pointer]:
+                  - /url: /wiki/Hattori_Clan
+                - text: (available in the Limited Edition or via
+                - link "DLC" [ref=f11e486] [cursor=pointer]:
+                  - /url: /wiki/Hattori_Clan_Pack
+                - text: )
+              - listitem [ref=f11e487]:
+                - link "Hojo" [ref=f11e488] [cursor=pointer]:
+                  - /url: /wiki/Hojo_Clan
+              - listitem [ref=f11e489]:
+                - link "Ikko Ikki" [ref=f11e490] [cursor=pointer]:
+                  - /url: /wiki/Ikko_Ikki
+                - text: (available only via
+                - link "DLC" [ref=f11e491] [cursor=pointer]:
+                  - /url: /wiki/Ikko_Ikki_Clan_Pack
+                - text: )
+              - listitem [ref=f11e492]:
+                - link "Otomo" [ref=f11e493] [cursor=pointer]:
+                  - /url: /wiki/Otomo_Clan
+                - text: (available only via
+                - link "DLC" [ref=f11e494] [cursor=pointer]:
+                  - /url: /wiki/Otomo_Clan_Pack
+                - text: )
+            - heading [level=3] [ref=f11e495]:
+              - text: Minor Factions
+              - link "Sign in to edit" [ref=f11e497] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D4&uselang=en&metadata=article-registration-edit-article-section
+            - paragraph [ref=f11e500]:
+              - link "Amako" [ref=f11e501] [cursor=pointer]:
+                - /url: /wiki/Amako_Clan
+              - text: ","
+              - link "Anegakoji" [ref=f11e502] [cursor=pointer]:
+                - /url: /wiki/Anegakoji_Clan
+              - text: ","
+              - link "Asai" [ref=f11e503] [cursor=pointer]:
+                - /url: /wiki/Asai_Clan
+              - text: ","
+              - link "Asano" [ref=f11e504] [cursor=pointer]:
+                - /url: /wiki/Asano_Clan
+              - text: ","
+              - link "Ashikaga" [ref=f11e505] [cursor=pointer]:
+                - /url: /wiki/Ashikaga_Clan
+              - text: ","
+              - link "Ashina" [ref=f11e506] [cursor=pointer]:
+                - /url: /wiki/Ashina_Clan
+              - text: ","
+              - link "Bessho" [ref=f11e507] [cursor=pointer]:
+                - /url: /wiki/Bessho_Clan
+              - text: ","
+              - link "Buddhist Rebels" [ref=f11e508] [cursor=pointer]:
+                - /url: /wiki/Buddhist_Rebels
+              - text: ","
+              - link "Christian Rebels" [ref=f11e509] [cursor=pointer]:
+                - /url: /wiki/Christian_Rebels
+              - text: ","
+              - link "European Traders" [ref=f11e510] [cursor=pointer]:
+                - /url: /wiki/European_Traders
+              - text: ","
+              - link "Hatakeyama" [ref=f11e511] [cursor=pointer]:
+                - /url: /wiki/Hatakeyama_Clan
+              - text: ", Hatano,"
+              - link "Honma" [ref=f11e512] [cursor=pointer]:
+                - /url: /wiki/Honma_Clan
+              - text: ","
+              - link "Hosokawa" [ref=f11e513] [cursor=pointer]:
+                - /url: /wiki/Hosokawa_Clan
+              - text: ","
+              - link "Imagawa" [ref=f11e514] [cursor=pointer]:
+                - /url: /wiki/Imagawa_Clan
+              - text: ", Ishida,"
+              - link "Ito" [ref=f11e515] [cursor=pointer]:
+                - /url: /wiki/Ito_Clan
+              - text: ","
+              - link "Jinbo" [ref=f11e516] [cursor=pointer]:
+                - /url: /wiki/Jinbo_Clan
+              - text: ","
+              - link "Kikkawa" [ref=f11e517] [cursor=pointer]:
+                - /url: /wiki/Kikkawa_Clan
+              - text: ","
+              - link "Kiso" [ref=f11e518] [cursor=pointer]:
+                - /url: /wiki/Kiso_Clan
+              - text: ","
+              - link "Kitabatake" [ref=f11e519] [cursor=pointer]:
+                - /url: /wiki/Kitabatake_Clan
+              - text: ", Kobayakawa,"
+              - link "Kono" [ref=f11e520] [cursor=pointer]:
+                - /url: /wiki/Kono_Clan
+              - text: ","
+              - link "Kuroda" [ref=f11e521] [cursor=pointer]:
+                - /url: /wiki/Kuroda_Clan
+              - text: ","
+              - link "Matsuda" [ref=f11e522] [cursor=pointer]:
+                - /url: /wiki/Matsuda_Clan
+              - text: ","
+              - link "Miyoshi" [ref=f11e523] [cursor=pointer]:
+                - /url: /wiki/Miyoshi_Clan
+              - text: ","
+              - link "Mogami" [ref=f11e524] [cursor=pointer]:
+                - /url: /wiki/Mogami_Clan
+              - text: ","
+              - link "Murakami" [ref=f11e525] [cursor=pointer]:
+                - /url: /wiki/Murakami_Clan
+              - text: ","
+              - link "Ogigayatsu" [ref=f11e526] [cursor=pointer]:
+                - /url: /wiki/Ogigayatsu_Clan
+              - text: ","
+              - link "Ouchi" [ref=f11e527] [cursor=pointer]:
+                - /url: /wiki/Ouchi_Clan
+              - text: ", Rebels,"
+              - link "Sagara" [ref=f11e528] [cursor=pointer]:
+                - /url: /wiki/Sagara_Clan
+              - text: ","
+              - link "Saito" [ref=f11e529] [cursor=pointer]:
+                - /url: /wiki/Saito_Clan
+              - text: ","
+              - link "Sakai" [ref=f11e530] [cursor=pointer]:
+                - /url: /wiki/Sakai_Clan
+              - text: ", Satake,"
+              - link "Satomi" [ref=f11e531] [cursor=pointer]:
+                - /url: /wiki/Satomi_Clan
+              - text: ","
+              - link "Shoni" [ref=f11e532] [cursor=pointer]:
+                - /url: /wiki/Shoni_Clan
+              - text: ","
+              - link "Sogo" [ref=f11e533] [cursor=pointer]:
+                - /url: /wiki/Sogo_Clan
+              - text: ","
+              - link "Takaoka" [ref=f11e534] [cursor=pointer]:
+                - /url: /wiki/Takaoka_Clan
+              - text: ","
+              - link "Toyotomi" [ref=f11e535] [cursor=pointer]:
+                - /url: /wiki/Toyotomi_Clan
+              - text: ","
+              - link "Tsutsui" [ref=f11e536] [cursor=pointer]:
+                - /url: /wiki/Tsutsui_Clan
+              - text: ","
+              - link "Ukita" [ref=f11e537] [cursor=pointer]:
+                - /url: /wiki/Ukita_Clan
+              - text: ","
+              - link "Urakami" [ref=f11e538] [cursor=pointer]:
+                - /url: /wiki/Urakami_Clan
+              - text: ","
+              - link "Utsunomiya" [ref=f11e539] [cursor=pointer]:
+                - /url: /wiki/Utsunomiya_Clan
+              - text: ","
+              - link "Wako Pirates" [ref=f11e540] [cursor=pointer]:
+                - /url: /wiki/Wako_Pirates
+              - text: ","
+              - link "Yamana" [ref=f11e541] [cursor=pointer]:
+                - /url: /wiki/Yamana_Clan
+              - text: ","
+              - link "Yamanouchi" [ref=f11e542] [cursor=pointer]:
+                - /url: /wiki/Yamanouchi_Clan
+            - paragraph [ref=f11e543]:
+              - text: The game includes
+              - link "65 provinces" [ref=f11e544] [cursor=pointer]:
+                - /url: /wiki/List_of_Provinces_in_Total_War:_Shogun_2
+              - text: ", several"
+              - link "trade nodes" [ref=f11e545] [cursor=pointer]:
+                - /url: /wiki/Trade_Node
+              - text: and 14 naval regions.
+            - heading [level=2] [ref=f11e546]:
+              - text: Features
+              - link "Sign in to edit" [ref=f11e548] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D5&uselang=en&metadata=article-registration-edit-article-section
+            - paragraph [ref=f11e551]: "As a sequel to the Total War games, Shogun 2 has a number of new features:"
+            - list [ref=f11e552]:
+              - listitem [ref=f11e553]: Sieges - A revamp to the siege system means that now the attacker, for every level of castle upgrade (Now up to level 5), must attack levels of a city.
+              - listitem [ref=f11e554]: "Seasons - Battles now have all 4 of the seasons: Spring, Summer, Autumn and Winter, each with their respective weather patterns."
+              - listitem [ref=f11e555]: Heroes and Battlefield Duels - Hero units are now even better, rather than being mere icons and knight figures Heroes can now engage in 1 v 1 duels with other Daisho.
+              - listitem [ref=f11e556]:
+                - text: Battlefield Monuments - Battlefield now have special monuments; shrines and temples now have an active effect on
+                - link "Morale" [ref=f11e557] [cursor=pointer]:
+                  - /url: /wiki/Morale
+                - text: and strength of some related Units.
+              - listitem [ref=f11e558]: Unit Upgrades - With the number of available units consolidated Shogun 2 allows factions to upgrade and customize units the way they wish, customization does not only affect gameplay but also affect the aesthetic appearance of your units.
+              - listitem [ref=f11e559]:
+                - text: Upgrade Trees - The old 'tech' system has been replaced with a new one. Your clan may learn the
+                - link "arts" [ref=f11e560] [cursor=pointer]:
+                  - /url: /wiki/Arts
+                - text: of Chi and
+                - link "Bushido" [ref=f11e561] [cursor=pointer]:
+                  - /url: /wiki/Bushido
+                - text: ", Enlightenment and Warrior Arts."
+              - listitem [ref=f11e562]: Royal Family - Family and Monarchs make a return. In this game, clans can split apart and engage in civil war, dealings with your own family members is now just as important as your dealings with other clans.
+              - listitem [ref=f11e563]: Drop In - Players have the option to play drop in campaigns. Players can 'drop in' and fight real time battles, in place of the AI, against you.
+              - listitem [ref=f11e564]: Difficulty and AI - Shogun 2 has introduced a whole new difficulty level for the hardcore gamer. AI is all spears
+              - listitem [ref=f11e565]: Graphics and Drivers - Shogun 2 has an independent and completely new coding system, this improves graphics and memory but also introduces a whole world of mod capabilities.
+            - heading [level=2] [ref=f11e567]:
+              - text: Retail versions
+              - link "Sign in to edit" [ref=f11e569] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D6&uselang=en&metadata=article-registration-edit-article-section
+            - paragraph [ref=f11e572]:
+              - text: "Shogun 2 is scheduled to be released in three different editions: the \"Standard Edition\" with just the game, a \"Limited Edition\" that includes a unique playable faction (the Hattori Clan), an additional historical battle scenario 'Nagashino', a complete set of armor for the player's online avatar and a starting bank of experience points to spend on that online character. The \"Grand Master's Edition\" includes the Limited Edition content as well as a replica bamboo box containing a Shogun 2 art book, a Shogun 2 themed Chess set and a detailed figurine of"
+              - link "Takeda Shingen" [ref=f11e573] [cursor=pointer]:
+                - /url: http://en.wikipedia.org/wiki/Takeda_Shingen
+              - text: .
+            - heading [level=2] [ref=f11e574]:
+              - text: DLCs and Expansions
+              - link "Sign in to edit" [ref=f11e576] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D7&uselang=en&metadata=article-registration-edit-article-section
+            - list [ref=f11e579]:
+              - listitem [ref=f11e580]:
+                - link "Ikko Ikki Clan Pack" [ref=f11e581] [cursor=pointer]:
+                  - /url: /wiki/Ikko_Ikki_Clan_Pack
+              - listitem [ref=f11e582]:
+                - link "Sengoku Jidai Unit Pack" [ref=f11e583] [cursor=pointer]:
+                  - /url: /wiki/Sengoku_Jidai_Unit_Pack
+              - listitem [ref=f11e584]: Blood Pack - adds blood and gore effects
+              - listitem [ref=f11e585]:
+                - link "Hattori Clan Pack" [ref=f11e586] [cursor=pointer]:
+                  - /url: /wiki/Hattori_Clan_Pack
+              - listitem [ref=f11e587]: Dragon War Battle Pack - adds six battle scenarios featured also in Fall of the Samurai
+              - listitem [ref=f11e588]:
+                - link "Saints and Heroes Unit Pack" [ref=f11e589] [cursor=pointer]:
+                  - /url: /wiki/Saints_and_Heroes_Unit_Pack
+              - listitem [ref=f11e590]:
+                - link "Otomo Clan Pack" [ref=f11e591] [cursor=pointer]:
+                  - /url: /wiki/Otomo_Clan_Pack
+              - listitem [ref=f11e592]:
+                - link "Rise of the Samurai" [ref=f11e593] [cursor=pointer]:
+                  - /url: /wiki/Rise_of_the_Samurai
+                - text: DLC
+              - listitem [ref=f11e594]:
+                - link "Fall of the Samurai" [ref=f11e595] [cursor=pointer]:
+                  - /url: /wiki/Fall_of_the_Samurai
+                - text: standalone expansion with it's own DLCs
+            - heading [level=2] [ref=f11e596]:
+              - text: Other languages
+              - link "Sign in to edit" [ref=f11e598] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D8&uselang=en&metadata=article-registration-edit-article-section
+            - table [ref=f11e601]:
+              - rowgroup [ref=f11e602]:
+                - row [ref=f11e603]:
+                  - columnheader "Language" [ref=f11e604]
+                  - columnheader [ref=f11e605]:
+                    - button "[Expand]" [ref=f11e606] [cursor=pointer]
+                    - text: Name
+            - paragraph [ref=f11e607]
+            - heading [level=2] [ref=f11e608]:
+              - text: Trivia
+              - link "Sign in to edit" [ref=f11e610] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D9&uselang=en&metadata=article-registration-edit-article-section
+            - figure [ref=f11e613]:
+              - link [ref=f11e614] [cursor=pointer]:
+                - /url: https://static.wikia.nocookie.net/totalwar/images/2/21/TW_FAVE_VOICE_LINE.png/revision/latest?cb=20251010104152
+                - img "\"Shameful display!\" as the most favourite voice line." [ref=f11e615]
+                - generic "view image" [ref=f11e618]
+              - paragraph [ref=f11e622]: "\"Shameful display!\" as the most favourite voice line."
+            - list [ref=f11e623]:
+              - listitem [ref=f11e624]:
+                - text: The aide-de-camp's memetically-famous declaration of "Shameful display!" is frequently written out as an
+                - generic "In reality, the enunciation of the Ls in the phrase are perfectly coherent though the statement remains clearly accented." [ref=f11e625]: Engrish
+                - text: "-affected version \"Shamefur dispray!\""
+                - list [ref=f11e626]:
+                  - listitem [ref=f11e627]:
+                    - text: "The voice actor for Total War: Shogun 2's aide-de-camp, Dai Tabuchi (credited as Dait Abuchi), probably knows how popular the \"Our men are running from the battlefield! Shameful display!\" voice line is since he has a voice demo just consisting of the line."
+                    - superscript [ref=f11e628]:
+                      - link "Reference 4" [ref=f11e629] [cursor=pointer]:
+                        - /url: "#cite_note-4"
+                        - text: "[4]"
+                    - superscript [ref=f11e630]:
+                      - link "Reference 5" [ref=f11e631] [cursor=pointer]:
+                        - /url: "#cite_note-5"
+                        - text: "[5]"
+                    - superscript [ref=f11e632]:
+                      - link "Reference 6" [ref=f11e633] [cursor=pointer]:
+                        - /url: "#cite_note-6"
+                        - text: "[6]"
+              - listitem [ref=f11e634]:
+                - text: This is the first game to have a Mature-rated blood pack.
+                - superscript [ref=f11e635]:
+                  - link "Reference 7" [ref=f11e636] [cursor=pointer]:
+                    - /url: "#cite_note-7"
+                    - text: "[7]"
+              - listitem [ref=f11e637]:
+                - text: For a long time, it was a common frustration among fans that even games set in Japan lacked official Japanese localisation. This trend appears to have shifted with the latest entry in the franchise.
+                - superscript [ref=f11e638]:
+                  - link "Reference 8" [ref=f11e639] [cursor=pointer]:
+                    - /url: "#cite_note-8"
+                    - text: "[8]"
+            - heading [level=2] [ref=f11e640]:
+              - text: Gallery
+              - link "Sign in to edit" [ref=f11e642] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D10&uselang=en&metadata=article-registration-edit-article-section
+            - generic [ref=f11e645]:
+              - link [ref=f11e649] [cursor=pointer]:
+                - /url: /wiki/File:2218225-2012_01_19_00007.jpeg
+                - img "2218225-2012 01 19 00007.jpeg (26 KB)" [ref=f11e650]
+                - generic "view image" [ref=f11e653]
+              - link [ref=f11e659] [cursor=pointer]:
+                - /url: /wiki/File:2218226-2012_01_19_00008.jpeg
+                - img "2218226-2012 01 19 00008.jpeg (33 KB)" [ref=f11e660]
+                - generic "view image" [ref=f11e663]
+              - link [ref=f11e669] [cursor=pointer]:
+                - /url: /wiki/File:2218224-2012_01_19_00006.jpeg
+                - img "2218224-2012 01 19 00006.jpeg (24 KB)" [ref=f11e670]
+                - generic "view image" [ref=f11e673]
+              - link [ref=f11e679] [cursor=pointer]:
+                - /url: /wiki/File:2218223-2012_01_19_00005.jpeg
+                - img "2218223-2012 01 19 00005.jpeg (20 KB)" [ref=f11e680]
+                - generic "view image" [ref=f11e683]
+              - link [ref=f11e689] [cursor=pointer]:
+                - /url: /wiki/File:2218222-2012_01_19_00004.jpeg
+                - img "2218222-2012 01 19 00004.jpeg (21 KB)" [ref=f11e690]
+                - generic "view image" [ref=f11e693]
+              - link [ref=f11e699] [cursor=pointer]:
+                - /url: /wiki/File:2218221-2012_01_19_00003.jpeg
+                - img "2218221-2012 01 19 00003.jpeg (27 KB)" [ref=f11e700]
+                - generic "view image" [ref=f11e703]
+              - link [ref=f11e709] [cursor=pointer]:
+                - /url: /wiki/File:2218220-2012_01_19_00002.jpeg
+                - img "2218220-2012 01 19 00002.jpeg (17 KB)" [ref=f11e710]
+                - generic "view image" [ref=f11e713]
+              - link [ref=f11e719] [cursor=pointer]:
+                - /url: /wiki/File:2218219-2012_01_19_00001.jpeg
+                - img "2218219-2012 01 19 00001.jpeg (24 KB)" [ref=f11e720]
+                - generic "view image" [ref=f11e723]
+              - link [ref=f11e729] [cursor=pointer]:
+                - /url: /wiki/File:2218218-2012_01_18_00019.jpeg
+                - img "2218218-2012 01 18 00019.jpeg (28 KB)" [ref=f11e730]
+                - generic "view image" [ref=f11e733]
+              - link [ref=f11e739] [cursor=pointer]:
+                - /url: /wiki/File:2218217-2012_01_18_00017.jpeg
+                - img "2218217-2012 01 18 00017.jpeg (24 KB)" [ref=f11e740]
+                - generic "view image" [ref=f11e743]
+              - link [ref=f11e749] [cursor=pointer]:
+                - /url: /wiki/File:2218216-2012_01_18_00016.jpeg
+                - img "2218216-2012 01 18 00016.jpeg (28 KB)" [ref=f11e750]
+                - generic "view image" [ref=f11e753]
+            - heading [level=2] [ref=f11e757]:
+              - text: Videos
+              - link "Sign in to edit" [ref=f11e759] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D11&uselang=en&metadata=article-registration-edit-article-section
+            - generic [ref=f11e762]:
+              - generic [ref=f11e763]:
+                - link [ref=f11e766] [cursor=pointer]:
+                  - /url: /wiki/File:Total_War_SHOGUN_2_for_Linux_-_Coming_May_23
+                  - img "Total War SHOGUN 2 for Linux - Coming May 23 (16 KB)" [ref=f11e770]
+                - generic [ref=f11e771]: Total War SHOGUN 2 for Linux - Coming May 23
+              - generic [ref=f11e772]:
+                - link [ref=f11e775] [cursor=pointer]:
+                  - /url: /wiki/File:Total_War-_Shogun_2_-_All_Historical_Battle_Cutscenes
+                  - img "Total War- Shogun 2 - All Historical Battle Cutscenes (13 KB)" [ref=f11e779]
+                - generic [ref=f11e780]: Total War- Shogun 2 - All Historical Battle Cutscenes
+            - heading [level=2] [ref=f11e781]:
+              - text: External links
+              - link "Sign in to edit" [ref=f11e783] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D12&uselang=en&metadata=article-registration-edit-article-section
+            - list [ref=f11e786]:
+              - listitem [ref=f11e787]:
+                - link "Official site" [ref=f11e788] [cursor=pointer]:
+                  - /url: http://www.totalwar.com/shogun2
+            - heading [level=2] [ref=f11e789]:
+              - text: References
+              - link "Sign in to edit" [ref=f11e791] [cursor=pointer]:
+                - /url: https://auth.fandom.com/signin?redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fveaction%3Dedit%26section%3D13&uselang=en&metadata=article-registration-edit-article-section
+            - list [ref=f11e795]:
+              - listitem [ref=f11e796]:
+                - link "Jump up" [ref=f11e798] [cursor=pointer]:
+                  - /url: "#cite_ref-1"
+                  - text: ↑
+                - link "https://www.4gamer.net/games/111/G011151/20111126001/" [ref=f11e800] [cursor=pointer]:
+                  - /url: https://www.4gamer.net/games/111/G011151/20111126001/
+              - listitem [ref=f11e801]:
+                - link "Jump up" [ref=f11e803] [cursor=pointer]:
+                  - /url: "#cite_ref-2"
+                  - text: ↑
+                - link "https://www.4gamer.net/games/111/G011151/20120912012/" [ref=f11e805] [cursor=pointer]:
+                  - /url: https://www.4gamer.net/games/111/G011151/20120912012/
+              - listitem [ref=f11e806]:
+                - link "Jump up" [ref=f11e808] [cursor=pointer]:
+                  - /url: "#cite_ref-3"
+                  - text: ↑
+                - generic [ref=f11e809]: "Known in Japan as トータルウォー：ショーグン2 (Tōtaru Wō: Shōgun Tsū)"
+              - listitem [ref=f11e810]:
+                - link "Jump up" [ref=f11e812] [cursor=pointer]:
+                  - /url: "#cite_ref-4"
+                  - text: ↑
+                - link "https://www.voice-shop.co.uk/artist/617/view" [ref=f11e814] [cursor=pointer]:
+                  - /url: https://www.voice-shop.co.uk/artist/617/view
+              - listitem [ref=f11e815]:
+                - link "Jump up" [ref=f11e817] [cursor=pointer]:
+                  - /url: "#cite_ref-5"
+                  - text: ↑
+                - link "https://www.voices.com/demo_detail/285630" [ref=f11e819] [cursor=pointer]:
+                  - /url: https://www.voices.com/demo_detail/285630
+              - listitem [ref=f11e820]:
+                - link "Jump up" [ref=f11e822] [cursor=pointer]:
+                  - /url: "#cite_ref-6"
+                  - text: ↑
+                - link "Dai Tabuchi on Voicefox" [ref=f11e824] [cursor=pointer]:
+                  - /url: https://www.voicefox.co.uk/artist/dai-tabuchi
+              - listitem [ref=f11e825]:
+                - link "Jump up" [ref=f11e827] [cursor=pointer]:
+                  - /url: "#cite_ref-7"
+                  - text: ↑
+                - generic [ref=f11e828]:
+                  - link "Blood Pack DLC" [ref=f11e829] [cursor=pointer]:
+                    - /url: https://store.steampowered.com/app/201272/Total_War_Shogun_2__Blood_Pack_DLC/
+                  - text: on Steam
+              - listitem [ref=f11e830]:
+                - link "Jump up" [ref=f11e832] [cursor=pointer]:
+                  - /url: "#cite_ref-8"
+                  - text: ↑
+                - link "https://steamcommunity.com/app/34330/discussions/0/610572929721010895/" [ref=f11e834] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/discussions/0/610572929721010895/
+            - table [ref=f11e835]:
+              - rowgroup [ref=f11e836]:
+                - row [ref=f11e837]:
+                  - cell [ref=f11e838]:
+                    - link [ref=f11e840] [cursor=pointer]:
+                      - /url: https://static.wikia.nocookie.net/totalwar/images/9/94/Smallwikipedialogo.png/revision/latest?cb=20141113052419
+                      - img "Smallwikipedialogo" [ref=f11e841]
+                  - cell [ref=f11e842]:
+                    - text: This page uses content from
+                    - link "Wikipedia" [ref=f11e843] [cursor=pointer]:
+                      - /url: http://www.wikipedia.org
+                    - text: . The original article was at
+                    - 'link "Total War: Shogun 2" [ref=f11e844] [cursor=pointer]':
+                      - /url: https://en.wikipedia.org/wiki/Total_War:_Shogun_2
+                    - text: . The list of authors can be seen in the
+                    - link "page history" [ref=f11e845] [cursor=pointer]:
+                      - /url: http://en.wikipedia.org/w/index.php?title=Total+War%3A+Shogun+2&action=history
+                    - text: . As with
+                    - link "Total War Wiki" [ref=f11e846] [cursor=pointer]:
+                      - /url: /wiki/Total_War_Wiki:About
+                    - text: ", the text of Wikipedia is available under the"
+                    - link "Creative Commons License" [ref=f11e847] [cursor=pointer]:
+                      - /url: https://community.fandom.com/wiki/Wikia:Licensing
+                    - text: .
+            - paragraph [ref=f11e848]
+            - table [ref=f11e850]:
+              - rowgroup [ref=f11e851]:
+                - row [ref=f11e852]:
+                  - cell [ref=f11e853]:
+                    - table [ref=f11e854]:
+                      - rowgroup [ref=f11e855]:
+                        - row [ref=f11e856]:
+                          - columnheader [ref=f11e857]:
+                            - generic [ref=f11e859]:
+                              - link "v" [ref=f11e860] [cursor=pointer]:
+                                - /url: /wiki/Template:TWS2_test_navbar
+                              - text: •
+                              - link "d" [ref=f11e862] [cursor=pointer]:
+                                - /url: https://totalwar.fandom.com/wiki/Template_talk:TWS2_test_navbar
+                              - text: •
+                              - link "e" [ref=f11e863] [cursor=pointer]:
+                                - /url: https://totalwar.fandom.com/wiki/Template:TWS2_test_navbar?action=edit
+                            - strong [ref=f11e865]: "Total War: Shogun 2"
+                        - row [ref=f11e866]:
+                          - cell [ref=f11e867]
+                        - row [ref=f11e868]:
+                          - cell "Playable factions" [ref=f11e869]
+                          - cell [ref=f11e870]:
+                            - generic [ref=f11e871]:
+                              - link "Chosokabe Clan" [ref=f11e872] [cursor=pointer]:
+                                - /url: /wiki/Chosokabe_Clan
+                              - text: •
+                              - link "Date Clan" [ref=f11e873] [cursor=pointer]:
+                                - /url: /wiki/Date_Clan
+                              - text: •
+                              - link "Hattori Clan" [ref=f11e874] [cursor=pointer]:
+                                - /url: /wiki/Hattori_Clan
+                              - text: (via
+                              - link "DLC" [ref=f11e875] [cursor=pointer]:
+                                - /url: /wiki/Hattori_Clan_Pack
+                              - text: ) •
+                              - link "Hojo Clan" [ref=f11e876] [cursor=pointer]:
+                                - /url: /wiki/Hojo_Clan
+                              - text: •
+                              - link "Mori Clan" [ref=f11e877] [cursor=pointer]:
+                                - /url: /wiki/Mori_Clan
+                              - text: •
+                              - link "Oda Clan" [ref=f11e878] [cursor=pointer]:
+                                - /url: /wiki/Oda_Clan
+                              - text: •
+                              - link "Shimazu Clan" [ref=f11e879] [cursor=pointer]:
+                                - /url: /wiki/Shimazu_Clan
+                              - text: •
+                              - link "Takeda Clan" [ref=f11e880] [cursor=pointer]:
+                                - /url: /wiki/Takeda_Clan
+                              - text: •
+                              - link "Tokugawa Clan" [ref=f11e881] [cursor=pointer]:
+                                - /url: /wiki/Tokugawa_Clan
+                              - text: •
+                              - link "Uesugi Clan" [ref=f11e882] [cursor=pointer]:
+                                - /url: /wiki/Uesugi_Clan
+                              - text: •
+                              - link "Ikko Ikki" [ref=f11e883] [cursor=pointer]:
+                                - /url: /wiki/Ikko_Ikki
+                              - text: (via
+                              - link "DLC" [ref=f11e884] [cursor=pointer]:
+                                - /url: /wiki/Ikko_Ikki_Clan_Pack
+                              - text: ) •
+                              - link "Otomo Clan" [ref=f11e885] [cursor=pointer]:
+                                - /url: /wiki/Otomo_Clan
+                              - text: (via
+                              - link "DLC" [ref=f11e886] [cursor=pointer]:
+                                - /url: /wiki/Otomo_Clan_Pack
+                              - text: )
+                        - row [ref=f11e887]:
+                          - cell [ref=f11e888]
+                        - row [ref=f11e889]:
+                          - cell [ref=f11e890]:
+                            - link "Units" [ref=f11e891] [cursor=pointer]:
+                              - /url: /wiki/Category:Total_War:_Shogun_2_units
+                          - cell [ref=f11e892]:
+                            - generic [ref=f11e893]:
+                              - link "List of Infantry" [ref=f11e894] [cursor=pointer]:
+                                - /url: /wiki/Category:Total_War:_Shogun_2_infantry
+                              - text: •
+                              - link "List of Cavalry" [ref=f11e895] [cursor=pointer]:
+                                - /url: /wiki/Category:Total_War:_Shogun_2_cavalry
+                              - text: •
+                              - link "List of Siege Units" [ref=f11e896] [cursor=pointer]:
+                                - /url: /wiki/Category:Total_War:_Shogun_2_siege_units
+                              - text: •
+                              - link "List of Ships" [ref=f11e897] [cursor=pointer]:
+                                - /url: /wiki/Category:Total_War:_Shogun_2_ships
+                        - row [ref=f11e898]:
+                          - cell [ref=f11e899]
+                        - row [ref=f11e900]:
+                          - cell [ref=f11e901]:
+                            - link "Agents" [ref=f11e902] [cursor=pointer]:
+                              - /url: /wiki/Agents_(Total_War:_Shogun_2)
+                          - cell [ref=f11e903]:
+                            - generic [ref=f11e904]:
+                              - link "Metsuke" [ref=f11e905] [cursor=pointer]:
+                                - /url: /wiki/Metsuke
+                              - text: •
+                              - link "Ninja" [ref=f11e906] [cursor=pointer]:
+                                - /url: /wiki/Ninja_(Total_War:_Shogun_2)
+                              - text: •
+                              - link "Geisha" [ref=f11e907] [cursor=pointer]:
+                                - /url: /wiki/Geisha_(Total_War:_Shogun_2)
+                              - text: •
+                              - link "Monk" [ref=f11e908] [cursor=pointer]:
+                                - /url: /wiki/Monk_(Total_War:_Shogun_2)
+                              - text: •
+                              - link "Missionary" [ref=f11e909] [cursor=pointer]:
+                                - /url: /wiki/Missionary_(Total_War:_Shogun_2)
+                              - text: •
+                              - link "Ikko Monk" [ref=f11e910] [cursor=pointer]:
+                                - /url: /wiki/Ikko_Monk
+                        - row [ref=f11e911]:
+                          - cell [ref=f11e912]
+                        - row [ref=f11e913]:
+                          - cell "Miscellania" [ref=f11e914]
+                          - cell [ref=f11e915]:
+                            - generic [ref=f11e916]:
+                              - link "Regions" [ref=f11e917] [cursor=pointer]:
+                                - /url: /wiki/List_of_Provinces_in_Total_War:_Shogun_2
+                              - text: •
+                              - link "Historical Battles" [ref=f11e918] [cursor=pointer]:
+                                - /url: /wiki/Historical_Battles_(Shogun_2)
+                              - text: •
+                              - link "Historical Characters" [ref=f11e919] [cursor=pointer]:
+                                - /url: /wiki/Category:Total_War:_Shogun_2_historical_characters
+                              - text: •
+                              - link "Achievements" [ref=f11e920] [cursor=pointer]:
+                                - /url: /wiki/Total_War:_Shogun_2_Achievements_List
+                        - row [ref=f11e921]:
+                          - cell [ref=f11e922]
+                        - row [ref=f11e923]:
+                          - cell "Gameplay" [ref=f11e924]
+                          - cell [ref=f11e925]:
+                            - generic [ref=f11e926]:
+                              - link "Arts" [ref=f11e927] [cursor=pointer]:
+                                - /url: /wiki/Arts
+                              - text: (
+                              - link "List of Arts" [ref=f11e928] [cursor=pointer]:
+                                - /url: /wiki/Category:Total_War:_Shogun_2_arts
+                              - text: ) •
+                              - link "Buildings" [ref=f11e929] [cursor=pointer]:
+                                - /url: /wiki/Category:Total_War:_Shogun_2_buildings
+                              - text: •
+                              - link "Morale" [ref=f11e930] [cursor=pointer]:
+                                - /url: /wiki/Morale
+                              - text: •
+                              - link "Honour" [ref=f11e931] [cursor=pointer]:
+                                - /url: /wiki/Honour
+                              - text: •
+                              - link "Vassals" [ref=f11e932] [cursor=pointer]:
+                                - /url: /wiki/Vassal#Total_War:_Shogun_2
+                              - text: •
+                              - link "Trade" [ref=f11e933] [cursor=pointer]:
+                                - /url: /wiki/Trade#Total_War:_Shogun_2
+            - table [ref=f11e934]:
+              - rowgroup [ref=f11e935]:
+                - row [ref=f11e936]:
+                  - columnheader "v・d・e The Total War series" [ref=f11e937]:
+                    - generic [ref=f11e938]:
+                      - link "v" [ref=f11e939] [cursor=pointer]:
+                        - /url: https://totalwar.fandom.com/wiki/Template:Games
+                      - generic [ref=f11e940]: ・
+                      - link "d" [ref=f11e941] [cursor=pointer]:
+                        - /url: https://totalwar.fandom.com/wiki/Template_talk:Games
+                      - text: ・
+                      - link "e" [ref=f11e942] [cursor=pointer]:
+                        - /url: https://totalwar.fandom.com/wiki/Template:Games?action=edit
+                    - link "The Total War series" [ref=f11e943] [cursor=pointer]:
+                      - /url: /wiki/Total_War_series
+                - row [ref=f11e945]:
+                  - rowheader "Main series" [ref=f11e946]
+                  - cell [ref=f11e947]:
+                    - link "Shogun" [ref=f11e949] [cursor=pointer]:
+                      - /url: /wiki/Shogun:_Total_War
+                    - text: (
+                    - link "The Mongol Invasion" [ref=f11e952] [cursor=pointer]:
+                      - /url: /wiki/Shogun:_Total_War:_The_Mongol_Invasion
+                    - text: ) •
+                    - link "Medieval" [ref=f11e954] [cursor=pointer]:
+                      - /url: /wiki/Medieval:_Total_War
+                    - text: (
+                    - link "Viking Invasion" [ref=f11e957] [cursor=pointer]:
+                      - /url: /wiki/Medieval:_Total_War:_Viking_Invasion
+                    - text: ) •
+                    - link "Rome" [ref=f11e959] [cursor=pointer]:
+                      - /url: /wiki/Rome:_Total_War
+                    - text: (
+                    - generic [ref=f11e960]:
+                      - link "Barbarian Invasion" [ref=f11e962] [cursor=pointer]:
+                        - /url: /wiki/Rome:_Total_War:_Barbarian_Invasion
+                      - text: •
+                      - link "Alexander" [ref=f11e964] [cursor=pointer]:
+                        - /url: /wiki/Rome:_Total_War:_Alexander
+                      - text: •
+                      - link "Remastered" [ref=f11e966] [cursor=pointer]:
+                        - /url: /wiki/Total_War:_Rome_Remastered
+                    - text: ) •
+                    - link "Medieval II" [ref=f11e968] [cursor=pointer]:
+                      - /url: /wiki/Medieval_II:_Total_War
+                    - text: (
+                    - link "Kingdoms" [ref=f11e971] [cursor=pointer]:
+                      - /url: /wiki/Medieval_II:_Total_War:_Kingdoms
+                    - text: ) •
+                    - link "Empire" [ref=f11e973] [cursor=pointer]:
+                      - /url: /wiki/Empire:_Total_War
+                    - text: •
+                    - link "Napoleon" [ref=f11e975] [cursor=pointer]:
+                      - /url: /wiki/Napoleon:_Total_War
+                    - text: •
+                    - strong [ref=f11e977]: Shogun 2
+                    - text: (
+                    - link "Fall of the Samurai" [ref=f11e980] [cursor=pointer]:
+                      - /url: /wiki/Fall_of_the_Samurai
+                    - text: ) •
+                    - link "Rome II" [ref=f11e982] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Rome_II
+                    - text: •
+                    - link "Attila" [ref=f11e984] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Attila
+                    - text: •
+                    - link "Three Kingdoms" [ref=f11e986] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Three_Kingdoms
+                    - text: •
+                    - link "Pharaoh" [ref=f11e988] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Pharaoh
+                    - text: •
+                    - link "Medieval III" [ref=f11e990] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Medieval_III
+                - row [ref=f11e991]:
+                  - rowheader [ref=f11e992]:
+                    - link "Saga" [ref=f11e994] [cursor=pointer]:
+                      - /url: /wiki/Total_War_Saga
+                  - cell [ref=f11e995]:
+                    - link "Thrones of Britannia" [ref=f11e997] [cursor=pointer]:
+                      - /url: /wiki/Total_War_Saga:_Thrones_of_Britannia
+                    - text: •
+                    - link "Troy" [ref=f11e999] [cursor=pointer]:
+                      - /url: /wiki/Total_War_Saga:_Troy
+                - row [ref=f11e1000]:
+                  - rowheader "Warhammer Fantasy & 40,000" [ref=f11e1001]
+                  - cell [ref=f11e1002]:
+                    - link "Warhammer" [ref=f11e1004] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Warhammer
+                    - text: •
+                    - link "Warhammer II" [ref=f11e1006] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Warhammer_II
+                    - text: •
+                    - link "Warhammer III" [ref=f11e1008] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Warhammer_III
+                    - text: •
+                    - link "Warhammer 40,000" [ref=f11e1010] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Warhammer_40,000
+                - row [ref=f11e1011]:
+                  - rowheader "Spin-offs" [ref=f11e1012]
+                  - cell [ref=f11e1013]:
+                    - 'link "Spartan: Total Warrior" [ref=f11e1015] [cursor=pointer]':
+                      - /url: /wiki/Spartan:_Total_Warrior
+                    - text: (consoles only) •
+                    - link "Arena" [ref=f11e1017] [cursor=pointer]:
+                      - /url: /wiki/Total_War:_Arena
+          - generic [ref=f11e1018]:
+            - button "Toggle Categories" [ref=f11e1020] [cursor=pointer]: Categories
+            - button "Toggle Languages" [ref=f11e1024] [cursor=pointer]: Languages
+            - generic [ref=f11e1027]:
+              - text: Community content is available under
+              - link "CC-BY-SA" [ref=f11e1028] [cursor=pointer]:
+                - /url: https://www.fandom.com/licensing
+              - text: unless otherwise noted.
+            - generic [ref=f11e1031]:
+              - generic [ref=f11e1032]: 4 Discussions
+              - generic [ref=f11e1033]:
+                - generic [ref=f11e1037]: Join the conversation
+                - generic [ref=f11e1038]: Sign in to read what others are saying and share your thoughts.
+                - link "SIGN IN" [ref=f11e1039] [cursor=pointer]:
+                  - /url: /login?metadata=tagged-discussions-article-source&redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Farticle-discussions-auth%3Dsuccess%23article-discussions
+                - generic [ref=f11e1040]:
+                  - text: Don't have account?
+                  - link "Register now" [ref=f11e1041] [cursor=pointer]:
+                    - /url: /register?metadata=tagged-discussions-article-source&redirect=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Farticle-discussions-auth%3Dsuccess%23article-discussions
+        - complementary [ref=f11e1042]:
+          - generic [ref=f11e1043]:
+            - generic [ref=f11e1045]:
+              - iframe [ref=f11e1048]:
+                - link [ref=f36e3] [cursor=pointer]:
+                  - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstxxd6rATaYTXrr5EgUvbsVTaJ0m7Mai3ecASsh4N7qKy4izPsszvXd-Uwo1VoeZgLz6Yq2DXLGLV_ZTRfvqb-3QBGdf9XWIpZFqI3EKPTzWpgrcV7ggAhAfcEveQeLmksByGpjMyUpUW9JAWHqWBpbrCFEV3sjuTDpdiexXxUNrHs1pShg3gPpIPLULbmEm9ovxPLyion0ZxHc5tmSdE-CV7EqmATCwu7wuxJ3yqpVcX7RQ5mdnme9NlWW7LGCpbnul8B6451OVOmEqDHsWx7wcKooBoCTIi9PWweTNYIdYF9NIiy3jAZo5FnjjRXloBDxfbkO1GpXwbgQH5EsltqV1G2A-K5O3rUBMCLZW-CkNK2Fo1bNOQjcjB63TMQEaZRgdIvKMpPWM7RIghqq9hP7GkVNdgfYneO0WYZ7X4taRulOdH1iThISvKWTXkiNXLlincqoKOj7eM9yfASZI_07pkpdZj7f&sai=AMfl-YRdccXqi0NvJ2WeEFlMuyiWJQRZFLerOMWEWRO4Iotjg6xPyxZoOiDQVzoPuATKo0ZY6iirhYcVkTEb3KM_WyABayI-g50ksXtxc121YO2Wibj6xgxdkmm_DF67O8e8JIP5jyj7x69gbuxbR03_Wnm_ycBXjpWoJ9ehxOlu5YMSQoqIXUvk_IiUImu5R-YXj7bdKn1IH-hgLIYGUSFnblHERzq-WAtK0AvAbc2FEaMi7zAmFOv_WQHqsbXW8iUZNrBsr-l_oWh0oHmdV0QNAlgG4RmI1TSGrAq0NSmRWXtP_BOiUDxFYU_bfDJX87h6pnFrl21H7byJ-qNPc8PxuXoBj7SbSpFGJYqJt-MkxJ1ojRD0E359Qx0CyvPGCOj3Tn0u13R0brvWftc&sig=Cg0ArKJSzA9RhZmYkhWeEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://onepiece.fandom.com/wiki/Special:GameUtility/IdentityOnePiece?utm_source=fandom&utm_medium=display&utm_campaign=FandomUtilities_OnePiece_R1-2_300x600.jpg&utm_content=300x600
+              - generic [ref=f11e1049]: Advertisement
+            - generic [ref=f11e1051]:
+              - heading "Community Chat" [level=2] [ref=f11e1053]
+              - complementary [ref=f11e1056]:
+                - generic [ref=f11e1058]:
+                  - generic [ref=f11e1059]:
+                    - link [ref=f11e1060] [cursor=pointer]:
+                      - /url: https://discord.com/?utm_source=Discord%20Widget&utm_medium=Logo
+                    - generic [ref=f11e1061]:
+                      - strong [ref=f11e1062]: "10"
+                      - text: Users Online
+                  - generic [ref=f11e1063]: Users
+                  - link "Join Now!" [ref=f11e1107] [cursor=pointer]:
+                    - /url: https://discord.gg/agxjm5Pa3U
+            - generic [ref=f11e1108]:
+              - iframe [ref=f11e1111]:
+                - link [ref=f39e2] [cursor=pointer]:
+                  - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuPJ3hkbAYUnYSgzpQuBR3lownVDHsSILirmS3k7fb-dytfTABQ3X-HbbJweRJpJO0EbSYZjbcSHr_N3wgDHrhzLKVMxpSmPa3gFf6G-irAaphMg9y8gWqdXs1LPhM6dBZHe5aOfKJOfP2EDgilTvEBt54ICov99AyveFzC4o02TvWZ3BA1W-Gbt2ejr7RHoXSeUYNj5tZuAlcFQnUuIIhwZifVlagjF3FJ8ZseJ35V_7n2kYH37ZtYfGVVMKbF06Ap4O7-RhlUpAGXw2GJwsexZtCSdcpb9Dc2azfMcA4YvBIbUv7eyr1q-j80k30wnN8cerZWd2nmmVBks2U0FgIhaX8UbVJoIfMswPKqUNWlhCCPndHFC5tQdpX3aXqz1xTrUiGz6kSqkOZ_Qf8ul2GoMROc9xjawXT4j3BuPpVjx9pcHnD4aUyQRmeUKL3cH6B16lKjVf13i-JpnaYXQp78RRNIQdE9iIvR2LFNR1aCeif0-jfHBH68m9busXnZ&sai=AMfl-YSnNSaMTD7S0fAtUAFq7p1K7PQ90UEwQiPcF7Sc0sTR609MXKbmrjyMDap7_vAp4Unc5dbmv4eNDKXEJ5tp1ksH6AUL5WQg9fKJlZcxkZ6eieU-hiW4EV3YI0wY6TaCOCSDI47dZtloifR5VhJEgZtqjobtMPnYR5GGerX51Cpg2REG7C9oTKw1smQ25459qUm3NDAD7To4kSiS3OZMRtKK3OUH56yJf6cWA7_ob2AsFp3eIN0frfw_FRD__n-GTOwJe1TxzSDIddkchlC52QJQh2TY3WS-PQhlzv3rPJ6fS54Z076wvNuxMhZVtCxILaxCK-yEBUI7RzhqBjGX2kHfH7QHgiRvrEb2KuVtUNkXwfdZhAwP2y3PpIt_nG7NvV-92mFX2K6v0rM&sig=Cg0ArKJSzOf6-5-JESO0&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.gamespot.com/
+              - generic [ref=f11e1112]: Advertisement
+            - generic [ref=f11e1114]:
+              - iframe [ref=f11e1117]:
+                - link [ref=f44e2] [cursor=pointer]:
+                  - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsv6awvcVQACkDcACkBnvn_d2PFtH_2XGbs8hG1yzdKWBPX4W5axCr3fkp4JHTAdtjNEvb59m4R4kcqOPj5DoQ4UuqFVUcN1RG6DEhbq7YO7CbHC1yhmssMuVaCtmhMcL8VrMCd2KkrfI5Dcc-zXNFR4K6OomrUouySrzsiYDb7ht3ZwvagGQudwtPF5QExANTPF0SpC2-HKiW8FauvA0I4QaiE17D8Pmrx2BsxAYYh8CBWwegOszir1gt_QPUKwW13KEIpHhMMxcPUtHfNejwfALw0srqal1p8A8ObmNdbLyF3N7lbWByylMdxXt5Nqcwc7mc0VJ_3UF3_4DtaEG6jjDno5PYdgodRCiB0Fg0ihSP5x3AeuFPVddRYfs_qp-4lCUcxTVDQzlAMDxQ0d87y3l-MoHjavC_IHLs4caZqErNUWJOd9HGQOLJPhSm8efQ_Y7I-wbhjbU9Jhu3g3UarSWMrARiXzPoM7_AsGsWQMkCGzeDSp1hgWFhFW6fZo1VMooVjP&sai=AMfl-YSg8YRFqalfssgLQrUbQYn6CXBe1gkMv7BK-rp0AV6fxAr0qKMZO81-S_JzQ5WtLgffq81F47P1TgGj_celnKV_8x_Gya49tRxfabciBpl93IxTjORRFEKIHlnqVV8CzgkpJxmhWfhbepAeNU8TSeoR-xnVL3wFBSvtZw6lMGYIzXrzq_77b3b6i-Wh7r7ABKs-8esHoCo2n2bi3letTdqBGeJjsCCm-fSOjIgHnVqM-LxTjmne7E4SIGcU4lWkWptn9lljrR92Y9hfO88lH7teEsbiS4X67tJGDm9Rk2VVOynn3QFyYkRSEkKUyzzGxmy4v0RlAfWeiAZWCz_MvqEF92yEbroyeqlFJ7PvEKT6uqZSGAwgJSXNZbX2QkQVl_kjwGgzFRazAjM&sig=Cg0ArKJSzLS74_lgqmOw&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.gamespot.com/
+              - generic [ref=f11e1118]: Advertisement
+      - generic [ref=f11e1119]:
+        - iframe [ref=f11e1122]:
+          - link [ref=f40e2] [cursor=pointer]:
+            - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjss1UmsQOl8DHvIM832yrG5awdMSfdLamUB_MR9UhrcSLQc929p6F2c3rWagpp2HjEnt8kPNRf1ziyqjXcVtUYlKH5sSJ52c4S_pX96VI3LQ10kSsCbcxFTmLTHlgQgMnD0jfePxOfe2cvwCeHvIciSnFgqiS9MxzI6IeU8nvrDJF_TwEa3G9tCh4T2cSewZ7w2TzTIYhRzEBGgQ5KJ87EK8-ZjdvLEAemy_drIARTZFqTfVcuxkEM0t1ErSUq0CIe2uxo8JS-B-JNodoImHgnuFkw81kIQ13gn9IunuabUOpKIPLcVZUhraGgMyw3nXnjrD3jC4qTEq_LsRZc9WAwsKfXnArnCm4Yy6eJcw7QZfFQ7I0IGkf_FglJxPgign8hVXQt8Nq9_nJtC0v1K5BlltngmRi9JCP8-qrkjjNH-_EToxzCPWPuFg-bSKlzkR2xv78_-LYU8yi4PY4NnbJJKvMlRSiss0KcjXNt1S8V9ou6onbB_xF-I8luoYwZV5MQrCBmac&sai=AMfl-YSWTiQEW9pYRNxaU_5Qgdw3RR7RDX3ctgRD-5eQ3nHTk5RMyufeZWqRxfvlDAIaW1lmD_dJ2N4tHqyRSEtGIFDcgZLmsltbdBer3ZCWSr-HoPR81i2SmCKJ9d_81Z-MmON9hC81GL8K2F7mbDwnjc8H9JQ9wO5_x5PTlABsNm35CPrKjN71tj5-XTRpry9WJCDtb_CUyYUpOaFIZ_fY9Q4w2QSZBSs9pDGwGtrH3YO08CRc24vxWryiiEcrkE9G932CNDeEhbZsTWTH9yIQkCx09Cxn6oHOr9ANC7GeoBqRfsK8GwSwbFtKijE840k2vr_7CjJEfkQa0GcADsKZqoDZQtLsT-Idskjg2epoDXGFZY01gbbQT3VajvetAleowdL7CjoXgeKSgKU&sig=Cg0ArKJSzDe4Guf5fAyB&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.gamespot.com/
+        - generic [ref=f11e1123]: Advertisement
+    - contentinfo [ref=f11e1124]:
+      - generic [ref=f11e1125]:
+        - generic [ref=f11e1126]:
+          - heading [level=2] [ref=f11e1127]:
+            - link "Fandom homepage" [ref=f11e1128] [cursor=pointer]:
+              - /url: https://www.fandom.com/
+              - img "Fandom logo" [ref=f11e1129]
+          - generic [ref=f11e1130]:
+            - heading "Explore properties" [level=3] [ref=f11e1131]
+            - list [ref=f11e1132]:
+              - listitem [ref=f11e1133]:
+                - link "Fandom" [ref=f11e1134] [cursor=pointer]:
+                  - /url: https://www.fandom.com/
+              - listitem [ref=f11e1135]:
+                - link "Fanatical" [ref=f11e1136] [cursor=pointer]:
+                  - /url: https://www.fanatical.com/
+              - listitem [ref=f11e1137]:
+                - link "GameSpot" [ref=f11e1138] [cursor=pointer]:
+                  - /url: https://www.gamespot.com/
+              - listitem [ref=f11e1139]:
+                - link "Metacritic" [ref=f11e1140] [cursor=pointer]:
+                  - /url: https://www.metacritic.com/
+              - listitem [ref=f11e1141]:
+                - link "TV Guide" [ref=f11e1142] [cursor=pointer]:
+                  - /url: https://www.tvguide.com/
+              - listitem [ref=f11e1143]:
+                - link "Honest Entertainment" [ref=f11e1144] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/screenjunkies
+          - generic [ref=f11e1145]:
+            - heading "Follow Us" [level=3] [ref=f11e1146]
+            - list [ref=f11e1147]:
+              - listitem [ref=f11e1148]:
+                - link "Follow Fandom on Facebook" [ref=f11e1149] [cursor=pointer]:
+                  - /url: https://www.facebook.com/getfandom
+              - listitem [ref=f11e1152]:
+                - link "Follow Fandom on Twitter" [ref=f11e1153] [cursor=pointer]:
+                  - /url: https://twitter.com/getfandom
+              - listitem [ref=f11e1156]:
+                - link "Follow Fandom on Youtube" [ref=f11e1157] [cursor=pointer]:
+                  - /url: https://www.youtube.com/fandomentertainment
+              - listitem [ref=f11e1160]:
+                - link "Follow Fandom on Instagram" [ref=f11e1161] [cursor=pointer]:
+                  - /url: https://www.instagram.com/getfandom/
+              - listitem [ref=f11e1164]:
+                - link "Follow Fandom on LinkedIn" [ref=f11e1165] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/157252
+        - generic [ref=f11e1169]:
+          - heading "Overview" [level=3] [ref=f11e1170]
+          - list [ref=f11e1171]:
+            - listitem [ref=f11e1172]:
+              - link "What is Fandom?" [ref=f11e1173] [cursor=pointer]:
+                - /url: https://www.fandom.com/what-is-fandom
+            - listitem [ref=f11e1174]:
+              - link "Essentials" [ref=f11e1175] [cursor=pointer]:
+                - /url: https://www.fandom.com/essentials
+            - listitem [ref=f11e1176]:
+              - link "About" [ref=f11e1177] [cursor=pointer]:
+                - /url: https://www.fandom.com/about
+            - listitem [ref=f11e1178]:
+              - link "Careers" [ref=f11e1179] [cursor=pointer]:
+                - /url: https://www.fandom.com/careers
+            - listitem [ref=f11e1180]:
+              - link "Press" [ref=f11e1181] [cursor=pointer]:
+                - /url: https://www.fandom.com/press
+            - listitem [ref=f11e1182]:
+              - link "Contact" [ref=f11e1183] [cursor=pointer]:
+                - /url: https://www.fandom.com/about#contact
+            - listitem [ref=f11e1184]:
+              - link "Terms of Use" [ref=f11e1185] [cursor=pointer]:
+                - /url: https://www.fandom.com/terms-of-use
+            - listitem [ref=f11e1186]:
+              - link "Privacy Policy" [ref=f11e1187] [cursor=pointer]:
+                - /url: https://www.fandom.com/privacy-policy
+            - listitem [ref=f11e1188]:
+              - link "Digital Services Act" [ref=f11e1189] [cursor=pointer]:
+                - /url: https://www.fandom.com/digital-services-act
+            - listitem [ref=f11e1190]:
+              - link "Global Sitemap" [ref=f11e1191] [cursor=pointer]:
+                - /url: //community.fandom.com/Sitemap
+            - listitem [ref=f11e1192]:
+              - link "Local Sitemap" [ref=f11e1193] [cursor=pointer]:
+                - /url: /wiki/Local_Sitemap
+            - listitem [ref=f11e1194]:
+              - button "Cookies Settings" [ref=f11e1195]
+        - generic [ref=f11e1196]:
+          - generic [ref=f11e1197]:
+            - heading "Community" [level=3] [ref=f11e1198]
+            - list [ref=f11e1199]:
+              - listitem [ref=f11e1200]:
+                - link "Community Central" [ref=f11e1201] [cursor=pointer]:
+                  - /url: //community.fandom.com/wiki/Community_Central
+              - listitem [ref=f11e1202]:
+                - link "Support" [ref=f11e1203] [cursor=pointer]:
+                  - /url: https://fandom.zendesk.com/
+              - listitem [ref=f11e1204]:
+                - link "Help" [ref=f11e1205] [cursor=pointer]:
+                  - /url: //community.fandom.com/wiki/Help:Contents
+          - generic [ref=f11e1206]:
+            - heading "Advertise" [level=3] [ref=f11e1207]
+            - list [ref=f11e1208]:
+              - listitem [ref=f11e1209]:
+                - link "Media Kit" [ref=f11e1210] [cursor=pointer]:
+                  - /url: https://about.fandom.com/mediakit
+              - listitem [ref=f11e1211]:
+                - link "Contact" [ref=f11e1212] [cursor=pointer]:
+                  - /url: https://about.fandom.com/mediakit#contact
+        - generic [ref=f11e1213]:
+          - generic [ref=f11e1214]:
+            - heading "Fandom Apps" [level=3] [ref=f11e1215]
+            - text: Take your favorite fandoms with you and never miss a beat.
+          - generic [ref=f11e1216]:
+            - img "Fandom App logo" [ref=f11e1217]
+            - list [ref=f11e1218]:
+              - listitem [ref=f11e1219]:
+                - link "Fandom's Apple Store" [ref=f11e1220] [cursor=pointer]:
+                  - /url: https://apps.apple.com/us/app/fandom-videos-news-reviews/id1230063803
+                  - img "Store icon" [ref=f11e1221]
+              - listitem [ref=f11e1222]:
+                - link "Fandom's Google Play" [ref=f11e1223] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.fandom.app&referrer=utm_source%3Dwikia%26utm_medium%3Dglobalfooter
+                  - img "Store icon" [ref=f11e1224]
+      - generic [ref=f11e1225]:
+        - generic [ref=f11e1226]: Total War Wiki is a Fandom Games Community.
+        - button "View Mobile Site" [ref=f11e1228]
+  - generic: Cookies Settings
+  - generic [ref=f11e1231]:
+    - link "Search this wiki" [ref=f11e1233] [cursor=pointer]:
+      - /url: https://totalwar.fandom.com/wiki/Special:Search?scope=internal&query=&h=1&isFromHighlightActions=on
+    - link "Search all wikis" [ref=f11e1238] [cursor=pointer]:
+      - /url: https://totalwar.fandom.com/wiki/Special:Search?scope=cross-wiki&query=&h=1&isFromHighlightActions=on
+    - generic [ref=f11e1240]:
+      - link [ref=f11e1242] [cursor=pointer]:
+        - /url: https://reddit.com/submit?url=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fsh%3DHn65LMAiXp__9584%26m%3D3%26utm_source%3Dreddit%26utm_campaign%3Dh2s&title=
+      - link [ref=f11e1246] [cursor=pointer]:
+        - /url: https://www.facebook.com/dialog/share?app_id=112328095453510&href=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fsh%3DHn65LMAiXp__9584%26m%3D2%26utm_source%3Dfacebook%26utm_campaign%3Dh2s&redirect_uri=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2&quote=&display=page
+      - link [ref=f11e1250] [cursor=pointer]:
+        - /url: https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Ftotalwar.fandom.com%2Fwiki%2FTotal_War%3A_Shogun_2%3Fsh%3DHn65LMAiXp__9584%26m%3D1%26utm_source%3Dtwitter%26utm_campaign%3Dh2s
+    - button "More" [ref=f11e1254] [cursor=pointer]

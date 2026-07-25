@@ -1,0 +1,278 @@
+- generic [active] [ref=f188e1]:
+  - generic:
+    - generic:
+      - link "דילוג לתוכן הראשי" [ref=f188e2] [cursor=pointer]
+      - link "עזרה בנושא נגישות" [ref=f188e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=iw
+  - generic [ref=f188e8]:
+    - search [ref=f188e9]:
+      - generic [ref=f188e11]:
+        - link "מעבר לדף הבית של Google" [ref=f188e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=iw&sa=X&ved=0ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQPAgI
+        - generic [ref=f188e21]:
+          - generic [ref=f188e22]:
+            - combobox "חיפוש" [ref=f188e25]: total war shogun 2 building chains guide site:reddit.com total war shogun 2 building chains guide site:reddit.com
+            - generic [ref=f188e26]:
+              - button "ניקוי" [ref=f188e28] [cursor=pointer]
+              - generic [ref=f188e33]:
+                - button "כלי הזנה" [ref=f188e34] [cursor=pointer]
+                - button "חיפוש קולי" [ref=f188e38] [cursor=pointer]
+                - button "חיפוש לפי תמונה" [ref=f188e41] [cursor=pointer]
+          - button "חיפוש" [ref=f188e44] [cursor=pointer]
+    - generic [ref=f188e49]:
+      - button "הגדרות" [ref=f188e51] [cursor=pointer]
+      - button "שיתוף" [ref=f188e57] [cursor=pointer]
+      - generic [ref=f188e63]:
+        - button "אפליקציות Google" [ref=f188e65] [cursor=pointer]
+        - link "כניסה" [ref=f188e70] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=iw&passive=true&continue=https://www.google.com/search%3Fq%3Dtotal%2Bwar%2Bshogun%2B2%2Bbuilding%2Bchains%2Bguide%2Bsite:reddit.com%26sei%3DHu5karSaC-Sn2roPvoO7oAg&ec=futura_srp_og_si_72236_p
+  - generic [ref=f188e72]:
+    - navigation [ref=f188e78]:
+      - generic [ref=f188e84]:
+        - list [ref=f188e85]:
+          - listitem [ref=f188e86]:
+            - link "מצב AI" [ref=f188e89] [cursor=pointer]:
+              - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&udm=50&fbs=ABfTbFU77PjlqSw0X5vMR08paDVQFJQ-j-ACr2Or2yUhvMaM0vmgh0gLz6ZtyM1uy5RvEfQhzWH9-_AvzXrKgspa_dxtKJQC7NbJdKERS9F3gyedXbhEr18csUdE7QcpguF7_Cm7ZNPvPCadaBLuzZTbs9lRRXKPdmeeXCleEzlJ8621zIbbfPHV_Mh4tg2o59zAexhprSc0sOhBX8oqyqcMFWHLHHiguf-Y5AelSAgAuER77DF-iVA&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ2J8OegQICxAD
+          - listitem [ref=f188e93]:
+            - link "הכול" [disabled] [ref=f188e94]
+          - listitem [ref=f188e97]:
+            - link "סרטונים קצרים" [ref=f188e98] [cursor=pointer]:
+              - /url: /search?sca_esv=62d19b619780b41d&udm=39&fbs=ABfTbFU77PjlqSw0X5vMR08paDVQFJQ-j-ACr2Or2yUhvMaM0vmgh0gLz6ZtyM1uy5RvEfQhzWH9-_AvzXrKgspa_dxtKJQC7NbJdKERS9F3gyedXbhEr18csUdE7QcpguF7_Cm7ZNPvPCadaBLuzZTbs9lRRXKPdmeeXCleEzlJ8621zIbbfPHV_Mh4tg2o59zAexhprSc0sOhBX8oqyqcMFWHLHHiguf-Y5AelSAgAuER77DF-iVA&q=total+war+shogun+2+building+chains+guide+site:reddit.com&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQs6gLegQIExAB
+          - listitem [ref=f188e101]:
+            - link "שופינג" [ref=f188e102] [cursor=pointer]:
+              - /url: /search?sca_esv=62d19b619780b41d&udm=28&fbs=ABfTbFU77PjlqSw0X5vMR08paDVQFJQ-j-ACr2Or2yUhvMaM0vmgh0gLz6ZtyM1uy5RvEfQhzWH9-_AvzXrKgspa_dxtKJQC7NbJdKERS9F3gyedXbhEr18csUdE7QcpguF7_Cm7ZNPvPCadaBLuzZTbs9lRRXKPdmeeXCleEzlJ8621zIbbfPHV_Mh4tg2o59zAexhprSc0sOhBX8oqyqcMFWHLHHiguf-Y5AelSAgAuER77DF-iVA&q=total+war+shogun+2+building+chains+guide+site:reddit.com&ved=1t:220175&ictx=111
+          - listitem [ref=f188e105]:
+            - link "תמונות" [ref=f188e106] [cursor=pointer]:
+              - /url: /search?sca_esv=62d19b619780b41d&udm=2&fbs=ABfTbFU77PjlqSw0X5vMR08paDVQFJQ-j-ACr2Or2yUhvMaM0vmgh0gLz6ZtyM1uy5RvEfQhzWH9-_AvzXrKgspa_dxtKJQC7NbJdKERS9F3gyedXbhEr18csUdE7QcpguF7_Cm7ZNPvPCadaBLuzZTbs9lRRXKPdmeeXCleEzlJ8621zIbbfPHV_Mh4tg2o59zAexhprSc0sOhBX8oqyqcMFWHLHHiguf-Y5AelSAgAuER77DF-iVA&q=total+war+shogun+2+building+chains+guide+site:reddit.com&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQtKgLegQIEBAB
+          - listitem [ref=f188e109]:
+            - link "סרטונים" [ref=f188e110] [cursor=pointer]:
+              - /url: /search?sca_esv=62d19b619780b41d&udm=7&fbs=ABfTbFU77PjlqSw0X5vMR08paDVQFJQ-j-ACr2Or2yUhvMaM0vmgh0gLz6ZtyM1uy5RvEfQhzWH9-_AvzXrKgspa_dxtKJQC7NbJdKERS9F3gyedXbhEr18csUdE7QcpguF7_Cm7ZNPvPCadaBLuzZTbs9lRRXKPdmeeXCleEzlJ8621zIbbfPHV_Mh4tg2o59zAexhprSc0sOhBX8oqyqcMFWHLHHiguf-Y5AelSAgAuER77DF-iVA&q=total+war+shogun+2+building+chains+guide+site:reddit.com&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQtKgLegQIERAB
+          - listitem [ref=f188e113]:
+            - link "חדשות" [ref=f188e114] [cursor=pointer]:
+              - /url: /search?sca_esv=62d19b619780b41d&q=total+war+shogun+2+building+chains+guide+site:reddit.com&tbm=nws&source=lnms&fbs=ABfTbFU77PjlqSw0X5vMR08paDVQFJQ-j-ACr2Or2yUhvMaM0vmgh0gLz6ZtyM1uy5RvEfQhzWH9-_AvzXrKgspa_dxtKJQC7NbJdKERS9F3gyedXbhEr18csUdE7QcpguF7_Cm7ZNPvPCadaBLuzZTbs9lRRXKPdmeeXCleEzlJ8621zIbbfPHV_Mh4tg2o59zAexhprSc0sOhBX8oqyqcMFWHLHHiguf-Y5AelSAgAuER77DF-iVA&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ0pQJegQIEhAB
+          - listitem [ref=f188e117]:
+            - button [ref=f188e118] [cursor=pointer]:
+              - generic "מסננים נוספים" [ref=f188e119]: עוד
+        - button "כלים" [ref=f188e126] [cursor=pointer]
+    - heading "תוצאות חיפוש" [level=1] [ref=f188e133]
+    - generic [ref=f188e139]:
+      - generic [ref=f188e140]: Looking for results in English?
+      - link [ref=f188e141] [cursor=pointer]:
+        - /url: "#"
+      - link "Change to English" [ref=f188e145] [cursor=pointer]:
+        - /url: /setprefs?sig=0_RdVOXqZ6pX7Nm-pwYcNyKrVWTF4%3D&source=en_ignored_notification&prev=https://www.google.com/search?q%3Dtotal%2Bwar%2Bshogun%2B2%2Bbuilding%2Bchains%2Bguide%2Bsite:reddit.com%26sei%3DHu5karSaC-Sn2roPvoO7oAg&hl=en&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQhoQCKAF6BAgUEAQ
+      - link "אני רוצה להישאר ב-עברית" [ref=f188e146] [cursor=pointer]:
+        - /url: "#"
+      - link "הגדרות שפה" [ref=f188e148] [cursor=pointer]:
+        - /url: /preferences?lang=1&hl=iw&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQiIQCKAN6BAgUEAY#languages
+    - main [ref=f188e150]:
+      - generic [ref=f188e154]:
+        - generic [ref=f188e157]:
+          - heading "Web results" [level=2] [ref=f188e158]
+          - generic [ref=f188e159]:
+            - generic [ref=f188e162]:
+              - 'link "Best buildings : r/shogun2 Reddit · r/shogun2 מעל 10 תגובות · לפני שנה" [ref=f188e164] [cursor=pointer]':
+                - /url: https://www.reddit.com/r/shogun2/comments/1jko2xo/best_buildings/
+                - 'heading "Best buildings : r/shogun2" [level=3] [ref=f188e165]'
+                - generic [ref=f188e171]:
+                  - generic [ref=f188e172]: Reddit · r/shogun2
+                  - generic [ref=f188e174]: מעל 10 תגובות · לפני שנה
+              - button "מידע על התוצאה הזו" [ref=f188e178] [cursor=pointer]
+            - generic [ref=f188e185]:
+              - text: There are only
+              - emphasis [ref=f188e186]: "2"
+              - text: main settlement
+              - emphasis [ref=f188e187]: building
+              - text: that you need in a purely economic province. The inn line and the market line.
+        - generic [ref=f188e191]:
+          - generic [ref=f188e194]:
+            - link "Shogun 2 Comprehensive Economic Guide (Yes, in 2019) Reddit · r/totalwar מעל 50 תגובות · לפני 6 שנים" [ref=f188e196] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/totalwar/comments/ej9esk/shogun_2_comprehensive_economic_guide_yes_in_2019/
+              - heading "Shogun 2 Comprehensive Economic Guide (Yes, in 2019)" [level=3] [ref=f188e197]
+              - generic [ref=f188e203]:
+                - generic [ref=f188e204]: Reddit · r/totalwar
+                - generic [ref=f188e206]: מעל 50 תגובות · לפני 6 שנים
+            - button "מידע על התוצאה הזו" [ref=f188e210] [cursor=pointer]
+          - generic [ref=f188e217]:
+            - text: Any
+            - emphasis [ref=f188e218]: buildings
+            - text: that don't increase town growth or town wealth aren't included in here (or upgrades of
+            - emphasis [ref=f188e219]: buildings
+            - text: that take 19 turns or more to ...
+          - generic [ref=f188e221]:
+            - text: "חסר:"
+            - generic [ref=f188e222]: chains
+            - text: "‏| התוצאות חייבות לכלול:"
+            - link "chains" [ref=f188e223] [cursor=pointer]:
+              - /url: /search?sca_esv=62d19b619780b41d&q=total+war+shogun+2+building+%22chains%22+guide+site:reddit.com&sa=X&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ5t4CegQIMRAB
+        - generic [ref=f188e227]:
+          - generic [ref=f188e230]:
+            - 'link "Tips for building up economy? : r/shogun2 Reddit · r/shogun2 מעל 30 תגובות · לפני שנה" [ref=f188e232] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/shogun2/comments/1hmhe27/tips_for_building_up_economy/
+              - 'heading "Tips for building up economy? : r/shogun2" [level=3] [ref=f188e233]'
+              - generic [ref=f188e239]:
+                - generic [ref=f188e240]: Reddit · r/shogun2
+                - generic [ref=f188e242]: מעל 30 תגובות · לפני שנה
+            - button "מידע על התוצאה הזו" [ref=f188e246] [cursor=pointer]
+          - generic [ref=f188e251]: Terrifyingly, I have just realised that I earn about 2000 koku from trade. If I were to reach Realm Divide (not anytime soon, but eventually), I ...
+          - generic [ref=f188e257]:
+            - link "34 תשובות" [ref=f188e258] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/shogun2/comments/1hmhe27/tips_for_building_up_economy/m3u5klv/
+            - generic [ref=f188e259]: ·
+            - generic [ref=f188e260]: "התשובה המובילה:"
+            - generic [ref=f188e261]: If you dont 5 have metsuke in your wealthiest provinces ASAP building their xp to get settlement ...
+        - generic [ref=f188e265]:
+          - generic [ref=f188e268]:
+            - 'link "What to build in shogun 2 : r/totalwar Reddit · r/totalwar מעל 10 תגובות · לפני שנתיים" [ref=f188e270] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/totalwar/comments/162gjaq/what_to_build_in_shogun_2/
+              - 'heading "What to build in shogun 2 : r/totalwar" [level=3] [ref=f188e271]'
+              - generic [ref=f188e277]:
+                - generic [ref=f188e278]: Reddit · r/totalwar
+                - generic [ref=f188e280]: מעל 10 תגובות · לפני שנתיים
+            - button "מידע על התוצאה הזו" [ref=f188e284] [cursor=pointer]
+          - generic [ref=f188e291]:
+            - text: "Markets:"
+            - emphasis [ref=f188e292]: Only build five
+            - text: and put them in the provinces with highest income potential, i.e. very fertile and gold provinces. Put a Metsuke in ...
+        - generic [ref=f188e296]:
+          - generic [ref=f188e299]:
+            - 'link "Guide for newbie? : r/shogun2 Reddit · r/shogun2 מעל 20 תגובות · לפני שנתיים" [ref=f188e301] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/shogun2/comments/1d0zo7c/guide_for_newbie/
+              - 'heading "Guide for newbie? : r/shogun2" [level=3] [ref=f188e302]'
+              - generic [ref=f188e308]:
+                - generic [ref=f188e309]: Reddit · r/shogun2
+                - generic [ref=f188e311]: מעל 20 תגובות · לפני שנתיים
+            - button "מידע על התוצאה הזו" [ref=f188e315] [cursor=pointer]
+          - generic [ref=f188e320]: So guys, I just Shogun 2 and have been playing it for a few hours but I still don't understand. My economy keep going deficit and my armies are too stretched ...
+          - generic [ref=f188e326]:
+            - link "20 תשובות" [ref=f188e327] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/shogun2/comments/1d0zo7c/guide_for_newbie/l5qs7n8/
+            - generic [ref=f188e328]: ·
+            - generic [ref=f188e329]: "התשובה המובילה:"
+            - generic [ref=f188e330]: Hi there, I wrote this Shogun 2 guide which has detailed tips if you're playing ...
+        - generic [ref=f188e334]:
+          - generic [ref=f188e337]:
+            - link "Just starting Shogun 2, im on the main menu any tips? Reddit · r/totalwar מעל 10 תגובות · לפני 6 חודשים" [ref=f188e339] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/totalwar/comments/1qmchat/just_starting_shogun_2_im_on_the_main_menu_any/
+              - heading "Just starting Shogun 2, im on the main menu any tips?" [level=3] [ref=f188e340]
+              - generic [ref=f188e346]:
+                - generic [ref=f188e347]: Reddit · r/totalwar
+                - generic [ref=f188e349]: מעל 10 תגובות · לפני 6 חודשים
+            - button "מידע על התוצאה הזו" [ref=f188e353] [cursor=pointer]
+          - generic [ref=f188e360]:
+            - emphasis [ref=f188e361]: Cav are incredible for chain routes
+            - text: . Never use Yari Samurai they suck. Naginata are better for anti cav work. Matchlocks are powerful but super ...
+        - generic [ref=f188e365]:
+          - generic [ref=f188e368]:
+            - 'link "Maximize Building : r/shogun2 Reddit · r/shogun2 מעל 20 תגובות · לפני שנתיים" [ref=f188e370] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/shogun2/comments/1ea3fe2/maximize_building/
+              - 'heading "Maximize Building : r/shogun2" [level=3] [ref=f188e371]'
+              - generic [ref=f188e377]:
+                - generic [ref=f188e378]: Reddit · r/shogun2
+                - generic [ref=f188e380]: מעל 20 תגובות · לפני שנתיים
+            - button "מידע על התוצאה הזו" [ref=f188e384] [cursor=pointer]
+          - generic [ref=f188e391]:
+            - text: For modern units such as line infantry, sharpshooters and artillery you want to take a province with the gunsmith/armorsmith
+            - emphasis [ref=f188e392]: chain
+            - text: and make it a gunsmith.
+        - generic [ref=f188e396]:
+          - generic [ref=f188e399]:
+            - 'link "Shogun 2 FOTS Legendary Advice? : r/shogun2 Reddit · r/shogun2 מעל 10 תגובות · לפני שנה" [ref=f188e401] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/shogun2/comments/1g8agho/shogun_2_fots_legendary_advice/
+              - 'heading "Shogun 2 FOTS Legendary Advice? : r/shogun2" [level=3] [ref=f188e402]'
+              - generic [ref=f188e408]:
+                - generic [ref=f188e409]: Reddit · r/shogun2
+                - generic [ref=f188e411]: מעל 10 תגובות · לפני שנה
+            - button "מידע על התוצאה הזו" [ref=f188e415] [cursor=pointer]
+          - generic [ref=f188e420]: I've been trying my hand at FOTS Legendary and there must be something I'm missing. I've completed several campaigns on VH, but Legendary is ...
+          - generic [ref=f188e426]:
+            - link "16 תשובות" [ref=f188e427] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/shogun2/comments/1g8agho/shogun_2_fots_legendary_advice/lsx1zuq/
+            - generic [ref=f188e428]: ·
+            - generic [ref=f188e429]: "התשובה המובילה:"
+            - generic [ref=f188e430]: Here’s some strategies that I like to use on my Legendary FOTS campaigns. I like to ...
+        - generic [ref=f188e434]:
+          - generic [ref=f188e437]:
+            - 'link "Economy? : r/shogun2 Reddit · r/shogun2 מעל 40 תגובות · לפני שנתיים" [ref=f188e439] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/shogun2/comments/1c8w0pi/economy/
+              - 'heading "Economy? : r/shogun2" [level=3] [ref=f188e440]'
+              - generic [ref=f188e446]:
+                - generic [ref=f188e447]: Reddit · r/shogun2
+                - generic [ref=f188e449]: מעל 40 תגובות · לפני שנתיים
+            - button "מידע על התוצאה הזו" [ref=f188e453] [cursor=pointer]
+          - generic [ref=f188e458]: Hi! Long time enjoyer of the game about to lose my first legendary campaign where I’ve reached the realm divide. I can’t help but feel that the reason ...
+          - generic [ref=f188e464]:
+            - link "44 תשובות" [ref=f188e465] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/shogun2/comments/1c8w0pi/economy/l0hfzmw/
+            - generic [ref=f188e466]: ·
+            - generic [ref=f188e467]: "התשובה המובילה:"
+            - generic [ref=f188e468]: Unless it makes sense to have a specific building in a province, like recruitment provinces, ...
+        - generic [ref=f188e472]:
+          - generic [ref=f188e475]:
+            - link "[Shogun 2] How to use agents effectively, and how to deal ... Reddit · r/totalwar מעל 10 תגובות · לפני 9 שנים" [ref=f188e477] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/totalwar/comments/6jha3t/shogun_2_how_to_use_agents_effectively_and_how_to/
+              - heading "[Shogun 2] How to use agents effectively, and how to deal ..." [level=3] [ref=f188e478]
+              - generic [ref=f188e484]:
+                - generic [ref=f188e485]: Reddit · r/totalwar
+                - generic [ref=f188e487]: מעל 10 תגובות · לפני 9 שנים
+            - button "מידע על התוצאה הזו" [ref=f188e491] [cursor=pointer]
+          - generic [ref=f188e498]:
+            - text: Be sure to conquer provinces with
+            - emphasis [ref=f188e499]: buildings
+            - text: that up the level of recruited agents. (Schools, Shrines and Mountain Hideouts) Depending on which ...
+      - navigation [ref=f188e502]:
+        - heading "ניווט בדפים" [level=1] [ref=f188e503]
+        - text: "1"
+        - link "Page 2" [ref=f188e506] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=10&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAE
+          - text: "2"
+        - link "Page 3" [ref=f188e508] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=20&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAG
+          - text: "3"
+        - link "Page 4" [ref=f188e510] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=30&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAI
+          - text: "4"
+        - link "Page 5" [ref=f188e512] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=40&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAK
+          - text: "5"
+        - link "Page 6" [ref=f188e514] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=50&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAM
+          - text: "6"
+        - link "Page 7" [ref=f188e516] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=60&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAO
+          - text: "7"
+        - link "Page 8" [ref=f188e518] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=70&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAQ
+          - text: "8"
+        - link "Page 9" [ref=f188e520] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=80&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAS
+          - text: "9"
+        - link "Page 10" [ref=f188e522] [cursor=pointer]:
+          - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=90&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8tMDegQIMxAU
+          - text: "10"
+        - heading [level=2] [ref=f188e524]:
+          - link "הבא" [ref=f188e525] [cursor=pointer]:
+            - /url: /search?q=total+war+shogun+2+building+chains+guide+site:reddit.com&sca_esv=62d19b619780b41d&ei=H-5karjmDNCx2roP3dufqAg&start=10&sa=N&sstk=AU9db-AZpPnALAh1LIUccP9H5UXSJWP-xyPVieDccQo1xTt3Qny9B36l5drochay9sAIMUVW9RmGsB_v12xN6iS_ODS53JJMc8_ABg&ved=2ahUKEwj48c6Tqe6VAxXQmFYBHd3tB4UQ8NMDegQIMxAW
+      - navigation
+    - contentinfo [ref=f188e528]:
+      - heading "קישורים בכותרת תחתונה" [level=1] [ref=f188e529]
+      - generic [ref=f188e533]:
+        - generic [ref=f188e535]:
+          - text: ישראל
+          - generic [ref=f188e537]:
+            - button "חולון - מכתובת ה-IP שלך" [ref=f188e539] [cursor=pointer]:
+              - generic [ref=f188e540]: חולון
+              - generic [ref=f188e542]:
+                - text: "-"
+                - generic [ref=f188e543]: מכתובת ה-IP שלך
+            - text: "-"
+            - button "לעדכון המיקום" [ref=f188e545] [cursor=pointer]
+        - generic [ref=f188e548]:
+          - link "עזרה" [ref=f188e549] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=iw&fg=1
+          - link "שליחת משוב" [ref=f188e550] [cursor=pointer]:
+            - /url: "#"
+          - link "פרטיות" [ref=f188e551] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=iw&fg=1
+          - link "תנאים" [ref=f188e552] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=iw&fg=1

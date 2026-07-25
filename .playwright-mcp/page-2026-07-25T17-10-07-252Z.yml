@@ -1,0 +1,223 @@
+- generic [ref=f182e2]:
+  - banner
+  - heading "TOTAL WAR WIKI" [level=1] [ref=f182e4]
+  - generic [ref=f182e5]:
+    - generic [ref=f182e6]:
+      - heading "Getting Started Guides" [level=2] [ref=f182e7]
+      - generic [ref=f182e8]:
+        - table [ref=f182e9]:
+          - rowgroup [ref=f182e10]:
+            - row [ref=f182e11]:
+              - cell [ref=f182e12]:
+                - heading "Contents" [level=2] [ref=f182e14]
+                - list [ref=f182e15]:
+                  - listitem [ref=f182e16]:
+                    - link "1 Introduction" [ref=f182e17] [cursor=pointer]:
+                      - /url: "#Introduction"
+                  - listitem [ref=f182e18]:
+                    - link "2 Becoming Shogun" [ref=f182e19] [cursor=pointer]:
+                      - /url: "#Becoming_Shogun"
+                  - listitem [ref=f182e20]:
+                    - link "3 Being Shogun" [ref=f182e21] [cursor=pointer]:
+                      - /url: "#Being_Shogun"
+                  - listitem [ref=f182e22]:
+                    - link "4 Selecting a Clan" [ref=f182e23] [cursor=pointer]:
+                      - /url: "#Selecting_a_Clan"
+                  - listitem [ref=f182e24]:
+                    - link "5 Navigating the Campaign Map" [ref=f182e25] [cursor=pointer]:
+                      - /url: "#Navigating_the_Campaign_Map"
+                  - listitem [ref=f182e26]:
+                    - link "6 Extensions" [ref=f182e27] [cursor=pointer]:
+                      - /url: "#Extensions"
+                    - list [ref=f182e28]:
+                      - listitem [ref=f182e29]:
+                        - link "6.1 Fall of the Samurai" [ref=f182e30] [cursor=pointer]:
+                          - /url: "#Fall_of_the_Samurai"
+        - heading "Introduction" [level=3] [ref=f182e31]
+        - paragraph [ref=f182e32]: "Total War: Shogun 2 is a game of two halves: strategic play - such as recruitment, construction and the conquest of provinces - occurs on the campaign map; tactical play - individual battles fought in 3D against a real or AI opponent - occurs on the battlefield."
+        - heading "Becoming Shogun" [level=3] [ref=f182e33]
+        - paragraph [ref=f182e34]: The principle object of the single player campaign game (along with fulfilment of your victory conditions) is for your daimyo to become shogun - the military ruler of all Japan. If your daimyo is to become shogun you must first defeat the current shogunate, the Ashikaga clan, capturing and holding the capital, Kyoto, for four seasons. At this point the emperor will declare your daimyo shogun. You can make a bid for the shogunate at any time, although the current incumbent may pre-emptively attack you if you become too powerful and famous amongst the other clans. War with the shogun for either reason may result in other clans declaring war on your own in support of the status quo; this stage is known as the "realm divide".
+        - heading "Being Shogun" [level=3] [ref=f182e35]
+        - paragraph [ref=f182e36]: Once the emperor has declared your daimyo shogun, you will be awarded a unit of shogun cavalry in Yamashiro province and the flagship "Nihon Maru" in the Eastern Seto Inland Sea. Additionally, your seasonal tax income will increase and your armed forces will receive a morale bonus.
+        - heading "Selecting a Clan" [level=3] [ref=f182e37]
+        - paragraph [ref=f182e38]: Each campaign begins following the selection of a clan. Each one has a unique start position and different strategic advantages.
+        - heading "Navigating the Campaign Map" [level=3] [ref=f182e39]
+        - paragraph [ref=f182e40]: Once you have reached the campaign map you can explore the environment by use of these keyboard and mouse controls. Drag the mouse to the edge of the screen to pull the campaign map or battlefield in that direction. Use W to move the camera forward and S to move it backward. A and D strafe sideways. Use X and Z or the mouse wheel to move in closer to the action. Use Q and E to rotate the map to the left or right.
+        - paragraph [ref=f182e41]
+        - heading "Extensions" [level=3] [ref=f182e42]
+        - heading "Fall of the Samurai" [level=4] [ref=f182e43]
+        - paragraph [ref=f182e44]: In the Fall of the Samurai extension, the campaign goal is somewhat different than in the original game. At Realm Divide, the player gets to choose whether to keep fighting for the side he is on (Imperial or Shogunate), uniting the factions of that under his command - or go independent, forming a Republic with everyone against him. To win, he still needs a minimum number of provinces including Kyoto, but also Edo (in the Musashi province); however, those can be held by any clan on his side. Except when he is independent - then he is on his own...
+      - generic [ref=f182e46]:
+        - link "Category" [ref=f182e47] [cursor=pointer]:
+          - /url: /w/Special:Categories.html
+        - text: ":"
+        - list [ref=f182e48]:
+          - listitem [ref=f182e49]:
+            - 'link "Total War: Shogun 2" [ref=f182e50] [cursor=pointer]':
+              - /url: /index.php?title=Category:Total_War:_Shogun_2&action=edit&redlink=1
+    - complementary [ref=f182e51]:
+      - generic [ref=f182e52]:
+        - term [ref=f182e53]: Navigation
+        - definition [ref=f182e54]:
+          - link "Main page" [ref=f182e55] [cursor=pointer]:
+            - /url: /w/Main_Page.html
+        - definition [ref=f182e56]:
+          - link "Content Creator Hub" [ref=f182e57] [cursor=pointer]:
+            - /url: /w/Total_War_WARHAMMER_Modding_Details.html
+        - definition [ref=f182e58]:
+          - link "Community portal" [ref=f182e59] [cursor=pointer]:
+            - /url: /w/Total_War_Wiki:Community_portal.html
+      - generic [ref=f182e60]:
+        - term [ref=f182e61]: Official Updates
+        - definition [ref=f182e62]:
+          - link "Rally Point" [ref=f182e63] [cursor=pointer]:
+            - /url: /w/Rally_Point.html
+        - definition [ref=f182e64]:
+          - link "Dev Diaries" [ref=f182e65] [cursor=pointer]:
+            - /url: /w/Dev_Diaries.html
+      - generic [ref=f182e66]:
+        - term [ref=f182e67]: Games
+        - definition [ref=f182e68]:
+          - 'link "Total War: Warhammer" [ref=f182e69] [cursor=pointer]':
+            - /url: /w/Total_War_WARHAMMER.html
+        - definition [ref=f182e70]:
+          - 'link "Total War Battles: Kingdom" [ref=f182e71] [cursor=pointer]':
+            - /url: /w/Total_War_Battles_Kingdom.html
+        - definition [ref=f182e72]:
+          - 'link "Total War: Attila" [ref=f182e73] [cursor=pointer]':
+            - /url: /w/Total_War_ATTILA.html
+        - definition [ref=f182e74]:
+          - 'link "Total War: Rome II" [ref=f182e75] [cursor=pointer]':
+            - /url: /w/Total_War_Rome_II.html
+        - definition [ref=f182e76]:
+          - 'link "Total War: Arena" [ref=f182e77] [cursor=pointer]':
+            - /url: /w/Total_War_Arena.html
+        - definition [ref=f182e78]:
+          - 'link "Total War: Shogun 2" [ref=f182e79] [cursor=pointer]':
+            - /url: /w/Total_War_Shogun_2.html
+        - definition [ref=f182e80]:
+          - 'link "Napoleon: Total War" [ref=f182e81] [cursor=pointer]':
+            - /url: /w/Napoleon_Total_War.html
+        - definition [ref=f182e82]:
+          - 'link "Empire: Total War" [ref=f182e83] [cursor=pointer]':
+            - /url: /w/Empire_Total_War.html
+        - definition [ref=f182e84]:
+          - 'link "Medieval II: Total War" [ref=f182e85] [cursor=pointer]':
+            - /url: /w/Medieval_II_Total_War.html
+        - definition [ref=f182e86]:
+          - 'link "Rome: Total War" [ref=f182e87] [cursor=pointer]':
+            - /url: /w/Rome_Total_War.html
+        - definition [ref=f182e88]:
+          - 'link "Medieval: Total War" [ref=f182e89] [cursor=pointer]':
+            - /url: /w/Medieval_Total_War.html
+        - definition [ref=f182e90]:
+          - 'link "Shogun: Total War" [ref=f182e91] [cursor=pointer]':
+            - /url: /w/Shogun_Total_War.html
+  - contentinfo [ref=f182e92]:
+    - generic [ref=f182e93]:
+      - generic [ref=f182e95]:
+        - term [ref=f182e96]: Wiki Pages
+        - definition [ref=f182e97]:
+          - 'link "Total War: Warhammer" [ref=f182e98] [cursor=pointer]':
+            - /url: /w/Total_War_WARHAMMER.html
+        - definition [ref=f182e99]:
+          - 'link "Total War: Attila" [ref=f182e100] [cursor=pointer]':
+            - /url: /w/Total_War_ATTILA.html
+        - definition [ref=f182e101]:
+          - 'link "Total War Battles: Kingdom" [ref=f182e102] [cursor=pointer]':
+            - /url: /w/Total_War_Battles_Kingdom.html
+        - definition [ref=f182e103]:
+          - 'link "Total War: Rome II" [ref=f182e104] [cursor=pointer]':
+            - /url: /w/Total_War_Rome_II.html
+        - definition [ref=f182e105]:
+          - 'link "Total War: Arena" [ref=f182e106] [cursor=pointer]':
+            - /url: /w/Total_War_Arena.html
+        - definition [ref=f182e107]:
+          - 'link "Total War: Shogun 2" [ref=f182e108] [cursor=pointer]':
+            - /url: /w/Total_War_Shogun_2.html
+        - definition [ref=f182e109]:
+          - 'link "Napoleon: Total War" [ref=f182e110] [cursor=pointer]':
+            - /url: /w/Napoleon_Total_War.html
+        - definition [ref=f182e111]:
+          - 'link "Empire: Total War" [ref=f182e112] [cursor=pointer]':
+            - /url: /w/Empire_Total_War.html
+        - definition [ref=f182e113]:
+          - 'link "Medieval II: Total War" [ref=f182e114] [cursor=pointer]':
+            - /url: /w/Medieval_II_Total_War.html
+        - definition [ref=f182e115]:
+          - 'link "Rome: Total War" [ref=f182e116] [cursor=pointer]':
+            - /url: /w/Rome_Total_War.html
+        - definition [ref=f182e117]:
+          - 'link "Medieval: Total War" [ref=f182e118] [cursor=pointer]':
+            - /url: /w/Medieval_Total_War.html
+        - definition [ref=f182e119]:
+          - 'link "Shogun: Total War" [ref=f182e120] [cursor=pointer]':
+            - /url: /w/Shogun_Total_War.html
+      - generic [ref=f182e122]:
+        - term [ref=f182e123]: OUR COMMUNITY
+        - definition [ref=f182e124]:
+          - link "Total War site" [ref=f182e125] [cursor=pointer]:
+            - /url: https://www.totalwar.com/
+        - definition [ref=f182e126]:
+          - link "Total War videos" [ref=f182e127] [cursor=pointer]:
+            - /url: https://www.youtube.com/user/thecreativeassembly
+        - definition [ref=f182e128]:
+          - link "Kingdom Developer Blog" [ref=f182e129] [cursor=pointer]:
+            - /url: https://blog.twkingdom.com/
+      - generic [ref=f182e131]:
+        - term [ref=f182e132]: Forums
+        - definition [ref=f182e133]:
+          - 'link "Total War: SHOGUN 2" [ref=f182e134] [cursor=pointer]':
+            - /url: https://forums.totalwar.com/forumdisplay.php/50-Total-War-Shogun-2
+        - definition [ref=f182e135]:
+          - 'link "Napoleon: Total War" [ref=f182e136] [cursor=pointer]':
+            - /url: https://forums.totalwar.com/forumdisplay.php/4-Napoleon-Total-War
+        - definition [ref=f182e137]:
+          - 'link "Empire: Total War" [ref=f182e138] [cursor=pointer]':
+            - /url: https://forums.totalwar.com/forumdisplay.php/8-Empire-Total-War
+      - generic [ref=f182e140]:
+        - term [ref=f182e141]: Help
+        - definition [ref=f182e142]:
+          - link "Customer Support" [ref=f182e143] [cursor=pointer]:
+            - /url: https://help.sega.com/?group=englishusa&t=EnglishUSA
+        - definition [ref=f182e144]:
+          - link "Privacy Policy" [ref=f182e145] [cursor=pointer]:
+            - /url: https://sega.com/legal/privacy.php
+        - definition [ref=f182e146]:
+          - link "Site Terms" [ref=f182e147] [cursor=pointer]:
+            - /url: https://sega.com/legal/terms.php
+        - definition [ref=f182e148]:
+          - link "Cookie Policy" [ref=f182e149] [cursor=pointer]:
+            - /url: /w/Cookie_Policy.html
+      - generic [ref=f182e150]:
+        - generic [ref=f182e151]:
+          - term [ref=f182e152]: Social
+          - definition [ref=f182e153]:
+            - link "Facebook" [ref=f182e154] [cursor=pointer]:
+              - /url: https://www.facebook.com/TotalWar
+          - definition [ref=f182e155]:
+            - link "Youtube" [ref=f182e156] [cursor=pointer]:
+              - /url: https://www.youtube.com/thecreativeassembly
+          - definition [ref=f182e157]:
+            - link "Twitch" [ref=f182e158] [cursor=pointer]:
+              - /url: https://www.twitch.tv/totalwarofficial
+          - definition [ref=f182e159]:
+            - link "Twitter" [ref=f182e160] [cursor=pointer]:
+              - /url: https://twitter.com/#!/totalwar
+        - generic [ref=f182e161]:
+          - term [ref=f182e162]: Careers
+          - definition [ref=f182e163]:
+            - link "@ Creative Assembly" [ref=f182e164] [cursor=pointer]:
+              - /url: https://www.creative-assembly.com/jobs/
+      - generic [ref=f182e166]:
+        - link "Creative Assembly":
+          - /url: https://creative-assembly.com/
+          - img "Creative Assembly" [ref=f182e167] [cursor=pointer]
+        - link "SEGA":
+          - /url: https://sega.com/
+          - img "SEGA" [ref=f182e168] [cursor=pointer]
+      - generic [ref=f182e172]:
+        - text: We use cookies and other technology that recognise you to improve your online experience. By using this site you consent to this use in our
+        - link "Cookie Policy" [ref=f182e173] [cursor=pointer]:
+          - /url: /w/Cookie_Policy.html
+        - text: . © SEGA. The Creative Assembly and the Total War logo are trademarks or registered trademarks of The Creative Assembly Limited. SEGA and the SEGA logo are either registered trademarks or registered trademarks of SEGA Corporation. All Rights Reserved.All other trademarks are the property of their respective owners.

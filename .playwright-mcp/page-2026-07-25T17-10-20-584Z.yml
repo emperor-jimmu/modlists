@@ -1,0 +1,276 @@
+- generic [ref=f183e2]:
+  - banner
+  - heading "TOTAL WAR WIKI" [level=1] [ref=f183e4]
+  - generic [ref=f183e5]:
+    - generic [ref=f183e6]:
+      - heading "Total War Shogun 2" [level=2] [ref=f183e7]
+      - generic [ref=f183e8]:
+        - paragraph [ref=f183e9]:
+          - link [ref=f183e10] [cursor=pointer]:
+            - /url: /w/File:Shogun-2-home.jpg
+            - img "Shogun-2-home.jpg" [ref=f183e11]
+        - generic [ref=f183e12]:
+          - generic [ref=f183e13]:
+            - generic [ref=f183e14]:
+              - term [ref=f183e15]: Game Info
+              - definition [ref=f183e16]:
+                - 'link "About Total War: Shogun 2" [ref=f183e17] [cursor=pointer]':
+                  - /url: /w/About_Total_War:_Shogun_2.html
+              - definition [ref=f183e18]:
+                - link "Rise of the Samurai Campaign" [ref=f183e19] [cursor=pointer]:
+                  - /url: /w/Rise_of_the_Samurai_Campaign.html
+              - definition [ref=f183e20]:
+                - link "Fall of the Samurai" [ref=f183e21] [cursor=pointer]:
+                  - /url: /w/Fall_of_the_Samurai.html
+              - definition [ref=f183e22]:
+                - link "System Requirements" [ref=f183e23] [cursor=pointer]:
+                  - /url: /w/System_Requirements_(TWS2).html
+              - term [ref=f183e24]: Downloadable Content
+              - definition [ref=f183e25]:
+                - link "Blood Pack" [ref=f183e26] [cursor=pointer]:
+                  - /url: /w/Blood_Pack.html
+              - definition [ref=f183e27]:
+                - link "Dragon War Battle Pack" [ref=f183e28] [cursor=pointer]:
+                  - /url: /w/Dragon_War_Battle_Pack.html
+              - definition [ref=f183e29]:
+                - link "Hattori Clan Pack" [ref=f183e30] [cursor=pointer]:
+                  - /url: /w/Hattori_Clan_Pack.html
+              - definition [ref=f183e31]:
+                - link "Ikko Ikki Clan Pack" [ref=f183e32] [cursor=pointer]:
+                  - /url: /w/Ikko_Ikki_Clan_Pack.html
+              - definition [ref=f183e33]:
+                - link "Otomo Clan Pack" [ref=f183e34] [cursor=pointer]:
+                  - /url: /w/Otomo_Clan_Pack.html
+              - definition [ref=f183e35]:
+                - link "Saints and Heroes Unit Pack" [ref=f183e36] [cursor=pointer]:
+                  - /url: /w/Saints_and_Heroes_Unit_Pack.html
+              - definition [ref=f183e37]:
+                - link "Sengoku Jidai Unit Pack" [ref=f183e38] [cursor=pointer]:
+                  - /url: /w/Sengoku_Jidai_Unit_Pack.html
+            - paragraph [ref=f183e39]: Fall of the Samurai
+            - generic [ref=f183e40]:
+              - definition [ref=f183e41]:
+                - link "Obama Faction Pack" [ref=f183e42] [cursor=pointer]:
+                  - /url: /w/Obama_Faction_Pack.html
+              - definition [ref=f183e43]:
+                - link "Saga Faction Pack" [ref=f183e44] [cursor=pointer]:
+                  - /url: /w/Saga_Faction_Pack.html
+              - definition [ref=f183e45]:
+                - link "Sendai Faction Pack" [ref=f183e46] [cursor=pointer]:
+                  - /url: /w/Sendai_Faction_Pack.html
+              - definition [ref=f183e47]:
+                - link "Tsu Faction Pack" [ref=f183e48] [cursor=pointer]:
+                  - /url: /w/Tsu_Faction_Pack.html
+          - generic [ref=f183e50]:
+            - term [ref=f183e51]: Library
+            - definition [ref=f183e52]:
+              - link "Factions" [ref=f183e53] [cursor=pointer]:
+                - /url: /w/Factions_in_Total_War:_Shogun_2.html
+            - term [ref=f183e54]: War Room
+            - definition [ref=f183e55]:
+              - link "Getting Started Guides" [ref=f183e56] [cursor=pointer]:
+                - /url: /w/Getting_Started_Guides.html
+            - term [ref=f183e57]: Modding Resources
+            - definition [ref=f183e58]:
+              - link "Official CA modding tips and tutorials" [ref=f183e59] [cursor=pointer]:
+                - /url: /w/Official_CA_modding_tips_and_tutorials.html
+            - definition [ref=f183e60]:
+              - link "Community hints, tips and tutorials" [ref=f183e61] [cursor=pointer]:
+                - /url: /w/Community_hints,_tips_and_tutorials
+            - definition [ref=f183e62]:
+              - link "Assembly Kit Update Patch Notes" [ref=f183e63] [cursor=pointer]:
+                - /url: /w/Assembly_Kit_Update_Patch_Notes.html
+            - definition [ref=f183e64]:
+              - link "Community Q&A" [ref=f183e65] [cursor=pointer]:
+                - /url: /w/Community_Q%26A
+            - term [ref=f183e66]: Archives
+            - definition [ref=f183e67]:
+              - link "Books" [ref=f183e68] [cursor=pointer]:
+                - /url: /w/Total_War_in_Books.html
+            - definition [ref=f183e69]:
+              - link "Box Art" [ref=f183e70] [cursor=pointer]:
+                - /url: /w/Box_Art_(TWS2).html
+            - definition [ref=f183e71]:
+              - link "CA Vs The World Event" [ref=f183e72] [cursor=pointer]:
+                - /url: /w/CA_Vs_The_World_Event.html
+            - definition [ref=f183e73]:
+              - link "Shogun 2 Gold - All Units" [ref=f183e74] [cursor=pointer]:
+                - /url: /w/Shogun_2_Gold_-_All_Units
+            - definition [ref=f183e75]:
+              - link "Trailers" [ref=f183e76] [cursor=pointer]:
+                - /url: /w/Trailers_(TWS2).html
+        - paragraph [ref=f183e77]: "1,627 articles on this wiki 54 pages in the category \"Total War: Shogun 2\""
+      - generic [ref=f183e79]:
+        - link "Category" [ref=f183e80] [cursor=pointer]:
+          - /url: /w/Special:Categories.html
+        - text: ":"
+        - list [ref=f183e81]:
+          - listitem [ref=f183e82]:
+            - 'link "Total War: Shogun 2" [ref=f183e83] [cursor=pointer]':
+              - /url: /index.php?title=Category:Total_War:_Shogun_2&action=edit&redlink=1
+    - complementary [ref=f183e84]:
+      - generic [ref=f183e85]:
+        - term [ref=f183e86]: Navigation
+        - definition [ref=f183e87]:
+          - link "Main page" [ref=f183e88] [cursor=pointer]:
+            - /url: /w/Main_Page.html
+        - definition [ref=f183e89]:
+          - link "Content Creator Hub" [ref=f183e90] [cursor=pointer]:
+            - /url: /w/Total_War_WARHAMMER_Modding_Details.html
+        - definition [ref=f183e91]:
+          - link "Community portal" [ref=f183e92] [cursor=pointer]:
+            - /url: /w/Total_War_Wiki:Community_portal.html
+      - generic [ref=f183e93]:
+        - term [ref=f183e94]: Official Updates
+        - definition [ref=f183e95]:
+          - link "Rally Point" [ref=f183e96] [cursor=pointer]:
+            - /url: /w/Rally_Point.html
+        - definition [ref=f183e97]:
+          - link "Dev Diaries" [ref=f183e98] [cursor=pointer]:
+            - /url: /w/Dev_Diaries.html
+      - generic [ref=f183e99]:
+        - term [ref=f183e100]: Games
+        - definition [ref=f183e101]:
+          - 'link "Total War: Warhammer" [ref=f183e102] [cursor=pointer]':
+            - /url: /w/Total_War_WARHAMMER.html
+        - definition [ref=f183e103]:
+          - 'link "Total War Battles: Kingdom" [ref=f183e104] [cursor=pointer]':
+            - /url: /w/Total_War_Battles_Kingdom.html
+        - definition [ref=f183e105]:
+          - 'link "Total War: Attila" [ref=f183e106] [cursor=pointer]':
+            - /url: /w/Total_War_ATTILA.html
+        - definition [ref=f183e107]:
+          - 'link "Total War: Rome II" [ref=f183e108] [cursor=pointer]':
+            - /url: /w/Total_War_Rome_II.html
+        - definition [ref=f183e109]:
+          - 'link "Total War: Arena" [ref=f183e110] [cursor=pointer]':
+            - /url: /w/Total_War_Arena.html
+        - definition [ref=f183e111]:
+          - 'link "Total War: Shogun 2" [ref=f183e112] [cursor=pointer]':
+            - /url: /w/Total_War_Shogun_2.html
+        - definition [ref=f183e113]:
+          - 'link "Napoleon: Total War" [ref=f183e114] [cursor=pointer]':
+            - /url: /w/Napoleon_Total_War.html
+        - definition [ref=f183e115]:
+          - 'link "Empire: Total War" [ref=f183e116] [cursor=pointer]':
+            - /url: /w/Empire_Total_War.html
+        - definition [ref=f183e117]:
+          - 'link "Medieval II: Total War" [ref=f183e118] [cursor=pointer]':
+            - /url: /w/Medieval_II_Total_War.html
+        - definition [ref=f183e119]:
+          - 'link "Rome: Total War" [ref=f183e120] [cursor=pointer]':
+            - /url: /w/Rome_Total_War.html
+        - definition [ref=f183e121]:
+          - 'link "Medieval: Total War" [ref=f183e122] [cursor=pointer]':
+            - /url: /w/Medieval_Total_War.html
+        - definition [ref=f183e123]:
+          - 'link "Shogun: Total War" [ref=f183e124] [cursor=pointer]':
+            - /url: /w/Shogun_Total_War.html
+  - contentinfo [ref=f183e125]:
+    - generic [ref=f183e126]:
+      - generic [ref=f183e128]:
+        - term [ref=f183e129]: Wiki Pages
+        - definition [ref=f183e130]:
+          - 'link "Total War: Warhammer" [ref=f183e131] [cursor=pointer]':
+            - /url: /w/Total_War_WARHAMMER.html
+        - definition [ref=f183e132]:
+          - 'link "Total War: Attila" [ref=f183e133] [cursor=pointer]':
+            - /url: /w/Total_War_ATTILA.html
+        - definition [ref=f183e134]:
+          - 'link "Total War Battles: Kingdom" [ref=f183e135] [cursor=pointer]':
+            - /url: /w/Total_War_Battles_Kingdom.html
+        - definition [ref=f183e136]:
+          - 'link "Total War: Rome II" [ref=f183e137] [cursor=pointer]':
+            - /url: /w/Total_War_Rome_II.html
+        - definition [ref=f183e138]:
+          - 'link "Total War: Arena" [ref=f183e139] [cursor=pointer]':
+            - /url: /w/Total_War_Arena.html
+        - definition [ref=f183e140]:
+          - 'link "Total War: Shogun 2" [ref=f183e141] [cursor=pointer]':
+            - /url: /w/Total_War_Shogun_2.html
+        - definition [ref=f183e142]:
+          - 'link "Napoleon: Total War" [ref=f183e143] [cursor=pointer]':
+            - /url: /w/Napoleon_Total_War.html
+        - definition [ref=f183e144]:
+          - 'link "Empire: Total War" [ref=f183e145] [cursor=pointer]':
+            - /url: /w/Empire_Total_War.html
+        - definition [ref=f183e146]:
+          - 'link "Medieval II: Total War" [ref=f183e147] [cursor=pointer]':
+            - /url: /w/Medieval_II_Total_War.html
+        - definition [ref=f183e148]:
+          - 'link "Rome: Total War" [ref=f183e149] [cursor=pointer]':
+            - /url: /w/Rome_Total_War.html
+        - definition [ref=f183e150]:
+          - 'link "Medieval: Total War" [ref=f183e151] [cursor=pointer]':
+            - /url: /w/Medieval_Total_War.html
+        - definition [ref=f183e152]:
+          - 'link "Shogun: Total War" [ref=f183e153] [cursor=pointer]':
+            - /url: /w/Shogun_Total_War.html
+      - generic [ref=f183e155]:
+        - term [ref=f183e156]: OUR COMMUNITY
+        - definition [ref=f183e157]:
+          - link "Total War site" [ref=f183e158] [cursor=pointer]:
+            - /url: https://www.totalwar.com/
+        - definition [ref=f183e159]:
+          - link "Total War videos" [ref=f183e160] [cursor=pointer]:
+            - /url: https://www.youtube.com/user/thecreativeassembly
+        - definition [ref=f183e161]:
+          - link "Kingdom Developer Blog" [ref=f183e162] [cursor=pointer]:
+            - /url: https://blog.twkingdom.com/
+      - generic [ref=f183e164]:
+        - term [ref=f183e165]: Forums
+        - definition [ref=f183e166]:
+          - 'link "Total War: SHOGUN 2" [ref=f183e167] [cursor=pointer]':
+            - /url: https://forums.totalwar.com/forumdisplay.php/50-Total-War-Shogun-2
+        - definition [ref=f183e168]:
+          - 'link "Napoleon: Total War" [ref=f183e169] [cursor=pointer]':
+            - /url: https://forums.totalwar.com/forumdisplay.php/4-Napoleon-Total-War
+        - definition [ref=f183e170]:
+          - 'link "Empire: Total War" [ref=f183e171] [cursor=pointer]':
+            - /url: https://forums.totalwar.com/forumdisplay.php/8-Empire-Total-War
+      - generic [ref=f183e173]:
+        - term [ref=f183e174]: Help
+        - definition [ref=f183e175]:
+          - link "Customer Support" [ref=f183e176] [cursor=pointer]:
+            - /url: https://help.sega.com/?group=englishusa&t=EnglishUSA
+        - definition [ref=f183e177]:
+          - link "Privacy Policy" [ref=f183e178] [cursor=pointer]:
+            - /url: https://sega.com/legal/privacy.php
+        - definition [ref=f183e179]:
+          - link "Site Terms" [ref=f183e180] [cursor=pointer]:
+            - /url: https://sega.com/legal/terms.php
+        - definition [ref=f183e181]:
+          - link "Cookie Policy" [ref=f183e182] [cursor=pointer]:
+            - /url: /w/Cookie_Policy.html
+      - generic [ref=f183e183]:
+        - generic [ref=f183e184]:
+          - term [ref=f183e185]: Social
+          - definition [ref=f183e186]:
+            - link "Facebook" [ref=f183e187] [cursor=pointer]:
+              - /url: https://www.facebook.com/TotalWar
+          - definition [ref=f183e188]:
+            - link "Youtube" [ref=f183e189] [cursor=pointer]:
+              - /url: https://www.youtube.com/thecreativeassembly
+          - definition [ref=f183e190]:
+            - link "Twitch" [ref=f183e191] [cursor=pointer]:
+              - /url: https://www.twitch.tv/totalwarofficial
+          - definition [ref=f183e192]:
+            - link "Twitter" [ref=f183e193] [cursor=pointer]:
+              - /url: https://twitter.com/#!/totalwar
+        - generic [ref=f183e194]:
+          - term [ref=f183e195]: Careers
+          - definition [ref=f183e196]:
+            - link "@ Creative Assembly" [ref=f183e197] [cursor=pointer]:
+              - /url: https://www.creative-assembly.com/jobs/
+      - generic [ref=f183e199]:
+        - link "Creative Assembly":
+          - /url: https://creative-assembly.com/
+          - img "Creative Assembly" [ref=f183e200] [cursor=pointer]
+        - link "SEGA":
+          - /url: https://sega.com/
+          - img "SEGA" [ref=f183e201] [cursor=pointer]
+      - generic [ref=f183e205]:
+        - text: We use cookies and other technology that recognise you to improve your online experience. By using this site you consent to this use in our
+        - link "Cookie Policy" [ref=f183e206] [cursor=pointer]:
+          - /url: /w/Cookie_Policy.html
+        - text: . © SEGA. The Creative Assembly and the Total War logo are trademarks or registered trademarks of The Creative Assembly Limited. SEGA and the SEGA logo are either registered trademarks or registered trademarks of SEGA Corporation. All Rights Reserved.All other trademarks are the property of their respective owners.

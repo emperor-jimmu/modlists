@@ -1,0 +1,649 @@
+- generic [active] [ref=f180e1]:
+  - generic [ref=f180e2]:
+    - generic [ref=f180e4]:
+      - generic [ref=f180e5]:
+        - generic [ref=f180e6]:
+          - link "DuckDuckGo home" [ref=f180e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=f180e8]: DuckDuckGo
+          - generic [ref=f180e15]:
+            - combobox "Search privately" [ref=f180e17]: total war shogun 2 beginners guide building economy combat realm divide
+            - button "search" [ref=f180e19] [cursor=pointer]
+        - button "Open menu" [ref=f180e23] [cursor=pointer]
+      - navigation [ref=f180e31]:
+        - list [ref=f180e32]:
+          - listitem [ref=f180e33]:
+            - link "All" [ref=f180e34] [cursor=pointer]:
+              - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=web
+          - listitem [ref=f180e37]:
+            - link "Images" [ref=f180e38] [cursor=pointer]:
+              - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=images&iax=images
+          - listitem [ref=f180e39]:
+            - link "Videos" [ref=f180e40] [cursor=pointer]:
+              - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=videos&iax=videos
+          - listitem [ref=f180e41]:
+            - link "News" [ref=f180e42] [cursor=pointer]:
+              - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=news&iar=news
+          - listitem [ref=f180e43]:
+            - link "Maps" [ref=f180e44] [cursor=pointer]:
+              - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&iaxm=maps
+        - list [ref=f180e45]:
+          - listitem [ref=f180e46]:
+            - link "Search Assist" [ref=f180e49] [cursor=pointer]:
+              - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=web&assist=false
+          - listitem [ref=f180e54]:
+            - link "Duck.ai" [ref=f180e56] [cursor=pointer]:
+              - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=chat
+          - listitem [ref=f180e60]:
+            - button "Search Settings ✀" [ref=f180e62] [cursor=pointer]:
+              - generic [ref=f180e65]: Search Settings
+              - generic [ref=f180e66]: ✀
+    - generic [ref=f180e73]:
+      - navigation [ref=f180e75]:
+        - generic [ref=f180e78] [cursor=pointer]:
+          - generic [ref=f180e79]: Protected
+          - img [ref=f180e87]: ▼
+        - generic [ref=f180e91] [cursor=pointer]:
+          - generic [ref=f180e94]:
+            - switch "✓" [ref=f180e95]
+            - generic [ref=f180e97]: Israel (en)
+          - img [ref=f180e98]: ▼
+        - generic [ref=f180e102] [cursor=pointer]:
+          - generic [ref=f180e103]: "Safe search: moderate"
+          - img [ref=f180e104]: ▼
+        - generic [ref=f180e108] [cursor=pointer]:
+          - generic [ref=f180e109]: Any time
+          - img [ref=f180e110]: ▼
+      - generic [ref=f180e112]:
+        - generic [ref=f180e113]:
+          - list [ref=f180e114]:
+            - listitem [ref=f180e115]:
+              - generic [ref=f180e118]:
+                - generic [ref=f180e121]:
+                  - generic [ref=f180e122]:
+                    - button [ref=f180e124] [cursor=pointer]:
+                      - generic [ref=f180e125]: Search Assist
+                    - generic [ref=f180e131]:
+                      - generic [ref=f180e132]:
+                        - button "Copy" [ref=f180e133] [cursor=pointer]
+                        - button "Share" [ref=f180e138] [cursor=pointer]
+                      - button "Learn More About Assist" [ref=f180e143] [cursor=pointer]
+                      - button "Assist Settings" [ref=f180e148] [cursor=pointer]
+                  - generic [ref=f180e151]:
+                    - generic [ref=f180e154]:
+                      - paragraph [ref=f180e156]: "To build a strong economy in Total War: Shogun 2, focus on upgrading farms and establishing trade agreements while managing taxes effectively. For combat, utilize a mix of Ashigaru and Samurai units, and be aware that Realm Divide occurs when you capture too many provinces, increasing difficulty by making former allies hostile."
+                      - generic [ref=f180e158]:
+                        - link "Steam Community" [ref=f180e161] [cursor=pointer]:
+                          - /url: https://steamcommunity.com/app/34330/discussions/0/2998801130539468908/?l=japanese
+                        - link "forums.totalwar.org" [ref=f180e168] [cursor=pointer]:
+                          - /url: https://forums.totalwar.org/vb/showthread.php/137395-Frogbeastegg-s-Guide-to-Total-War-Shogun-II
+                    - generic [ref=f180e176]:
+                      - button "More" [ref=f180e177] [cursor=pointer]
+                      - button "Expand Duck.ai chat input" [ref=f180e187] [cursor=pointer]
+                  - generic [ref=f180e190]:
+                    - paragraph [ref=f180e191]: Show
+                    - button "Never" [ref=f180e192] [cursor=pointer]
+                    - button "On Demand" [ref=f180e193] [cursor=pointer]
+                    - button "Sometimes" [ref=f180e194] [cursor=pointer]
+                    - button "Often" [ref=f180e195] [cursor=pointer]
+                    - button [ref=f180e196] [cursor=pointer]
+                - generic [ref=f180e200]:
+                  - paragraph [ref=f180e202]: Auto-generated based on listed sources. May contain inaccuracies.
+                  - generic [ref=f180e205]:
+                    - text: Was this helpful?
+                    - button "Positive feedback" [ref=f180e206] [cursor=pointer]
+                    - button "Negative feedback" [ref=f180e210] [cursor=pointer]
+            - listitem [ref=f180e214]:
+              - article [ref=f180e215] [cursor=pointer]:
+                - button [ref=f180e217]
+                - generic [ref=f180e222]:
+                  - link "Search domain steamcommunity.com" [ref=f180e224]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:steamcommunity.com
+                  - generic [ref=f180e227]:
+                    - paragraph [ref=f180e228]: Steam Community
+                    - link "https://steamcommunity.com › sharedfiles › filedetails › ?id=2206372652" [ref=f180e229]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2206372652
+                      - paragraph [ref=f180e231]:
+                        - generic [ref=f180e232]: https://steamcommunity.com
+                        - generic [ref=f180e233]: › sharedfiles › filedetails › ?id=2206372652
+                - heading [level=2] [ref=f180e235]:
+                  - link "Ultimate Guide - Shogun 2 - Steam Community" [ref=f180e236]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2206372652
+                - generic [ref=f180e238]: A lot of posters I saw over the years whined about Realm Divide, how it suddenly ramped up the difficulty insanely, and how they could not keep alliances or vassals after Realm Divide no matter how much Koku they threw at them. It is very simple. On your Clan Management screen, there is a bar that fills up in yellow as the Shogun notices your achievements and growing threat to him. Once that ...
+            - listitem [ref=f180e243]:
+              - generic [ref=f180e245]:
+                - heading [level=2] [ref=f180e247]:
+                  - link "Videos for total war shogun 2 beginners guide building economy combat realm divide" [ref=f180e248] [cursor=pointer]:
+                    - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=videos&iax=videos
+                - generic [ref=f180e256]:
+                  - list [ref=f180e257]:
+                    - listitem [ref=f180e258] [cursor=pointer]:
+                      - link [ref=f180e259]:
+                        - /url: https://www.youtube.com/watch?v=kH3NIGjj_gE
+                        - article [ref=f180e260]:
+                          - generic [ref=f180e262]:
+                            - generic [ref=f180e263]: ►
+                            - paragraph [ref=f180e265]: 5:58
+                          - generic [ref=f180e266]:
+                            - heading "How To Build Your Economy - Economy Guide - Shogun 2" [level=3] [ref=f180e268]
+                            - generic [ref=f180e270]:
+                              - generic [ref=f180e271]:
+                                - generic [ref=f180e272]: 4yr |
+                                - generic [ref=f180e274]: 208K views
+                              - generic [ref=f180e275]:
+                                - generic [ref=f180e276]: YouTube
+                                - button "menu" [ref=f180e279]
+                    - listitem [ref=f180e283] [cursor=pointer]:
+                      - link [ref=f180e284]:
+                        - /url: https://www.youtube.com/watch?v=aLplSwXJrew
+                        - article [ref=f180e285]:
+                          - generic [ref=f180e287]:
+                            - generic [ref=f180e288]: ►
+                            - paragraph [ref=f180e290]: 19:05
+                          - generic [ref=f180e291]:
+                            - 'heading "Total War: Shogun 2- Realm Divide mechanics in detail (w/examples & tips)" [level=3] [ref=f180e293]'
+                            - generic [ref=f180e295]:
+                              - generic [ref=f180e296]:
+                                - generic [ref=f180e297]: 7mo |
+                                - generic [ref=f180e299]: 7.1K views
+                              - generic [ref=f180e300]:
+                                - generic [ref=f180e301]: YouTube
+                                - button "menu" [ref=f180e304]
+                    - listitem [ref=f180e308] [cursor=pointer]:
+                      - link [ref=f180e309]:
+                        - /url: https://www.youtube.com/watch?v=-MOWLSgqjos
+                        - article [ref=f180e310]:
+                          - generic [ref=f180e312]:
+                            - generic [ref=f180e313]: ►
+                            - paragraph [ref=f180e315]: 22:37
+                          - generic [ref=f180e316]:
+                            - heading "Total War Shogun 2 Dominate realm divide" [level=3] [ref=f180e318]
+                            - generic [ref=f180e320]:
+                              - generic [ref=f180e321]:
+                                - generic [ref=f180e322]: 4yr |
+                                - generic [ref=f180e324]: 4.7K views
+                              - generic [ref=f180e325]:
+                                - generic [ref=f180e326]: YouTube
+                                - button "menu" [ref=f180e329]
+                    - listitem [ref=f180e333] [cursor=pointer]:
+                      - link [ref=f180e334]:
+                        - /url: https://www.youtube.com/watch?v=3B3BuiVgMi4
+                        - article [ref=f180e335]:
+                          - generic [ref=f180e337]:
+                            - generic [ref=f180e338]: ►
+                            - paragraph [ref=f180e340]: 50:39
+                          - generic [ref=f180e341]:
+                            - 'heading "Total War: Shogun 2 - Part 13 - Realm Divide" [level=3] [ref=f180e343]'
+                            - generic [ref=f180e345]:
+                              - generic [ref=f180e346]:
+                                - generic [ref=f180e347]: 11mo |
+                                - generic [ref=f180e349]: 25K views
+                              - generic [ref=f180e350]:
+                                - generic [ref=f180e351]: YouTube
+                                - button "menu" [ref=f180e354]
+                    - listitem [ref=f180e358] [cursor=pointer]:
+                      - link [ref=f180e359]:
+                        - /url: https://www.youtube.com/watch?v=2T5YuRFs6MU
+                        - article [ref=f180e360]:
+                          - generic [ref=f180e362]:
+                            - generic [ref=f180e363]: ►
+                            - paragraph [ref=f180e365]: 27:04
+                          - generic [ref=f180e366]:
+                            - 'heading "Total War: Shogun 2 Unit Guide" [level=3] [ref=f180e368]'
+                            - generic [ref=f180e370]:
+                              - generic [ref=f180e371]:
+                                - generic [ref=f180e372]: 1yr |
+                                - generic [ref=f180e374]: 1.2K views
+                              - generic [ref=f180e375]:
+                                - generic [ref=f180e376]: YouTube
+                                - button "menu" [ref=f180e379]
+                    - listitem [ref=f180e383] [cursor=pointer]:
+                      - link [ref=f180e384]:
+                        - /url: https://www.youtube.com/watch?v=nyfcBeeEnLs
+                        - article [ref=f180e385]:
+                          - generic [ref=f180e387]:
+                            - generic [ref=f180e388]: ►
+                            - paragraph [ref=f180e390]: 21:29
+                          - generic [ref=f180e391]:
+                            - 'heading "Total War: Shogun 2 War Guide" [level=3] [ref=f180e393]'
+                            - generic [ref=f180e395]:
+                              - generic [ref=f180e396]:
+                                - generic [ref=f180e397]: 1yr |
+                                - generic [ref=f180e399]: 577 views
+                              - generic [ref=f180e400]:
+                                - generic [ref=f180e401]: YouTube
+                                - button "menu" [ref=f180e404]
+                    - listitem [ref=f180e408] [cursor=pointer]:
+                      - link [ref=f180e409]:
+                        - /url: https://www.youtube.com/watch?v=Hy-ZIQbabuk
+                        - article [ref=f180e410]:
+                          - generic [ref=f180e412]:
+                            - generic [ref=f180e413]: ►
+                            - paragraph [ref=f180e415]: 20:32
+                          - generic [ref=f180e416]:
+                            - 'heading "Total War: Shogun 2 Game-winning strategy for any clan!" [level=3] [ref=f180e418]'
+                            - generic [ref=f180e420]:
+                              - generic [ref=f180e421]:
+                                - generic [ref=f180e422]: 1yr |
+                                - generic [ref=f180e424]: 76K views
+                              - generic [ref=f180e425]:
+                                - generic [ref=f180e426]: YouTube
+                                - button "menu" [ref=f180e429]
+                    - listitem [ref=f180e433] [cursor=pointer]:
+                      - link [ref=f180e434]:
+                        - /url: https://www.youtube.com/watch?v=tatXuKMi9dM
+                        - article [ref=f180e435]:
+                          - generic [ref=f180e437]:
+                            - generic [ref=f180e438]: ►
+                            - paragraph [ref=f180e440]: 11:52
+                          - generic [ref=f180e441]:
+                            - 'heading "SHOGUN 2 TOTAL WAR In 2026: The Best Total War Ever Made?" [level=3] [ref=f180e443]'
+                            - generic [ref=f180e445]:
+                              - generic [ref=f180e446]:
+                                - generic [ref=f180e447]: 1mo |
+                                - generic [ref=f180e449]: 12K views
+                              - generic [ref=f180e450]:
+                                - generic [ref=f180e451]: YouTube
+                                - button "menu" [ref=f180e454]
+                    - listitem [ref=f180e458] [cursor=pointer]:
+                      - link [ref=f180e459]:
+                        - /url: https://www.youtube.com/watch?v=GsIWLpaBvSU
+                        - article [ref=f180e460]:
+                          - generic [ref=f180e462]:
+                            - generic [ref=f180e463]: ►
+                            - paragraph [ref=f180e465]: 59:24
+                          - generic [ref=f180e466]:
+                            - 'heading "Total War: Shogun 2 - Part 14 - Just Another Brick In The Wall" [level=3] [ref=f180e468]'
+                            - generic [ref=f180e470]:
+                              - generic [ref=f180e471]:
+                                - generic [ref=f180e472]: 10mo |
+                                - generic [ref=f180e474]: 24K views
+                              - generic [ref=f180e475]:
+                                - generic [ref=f180e476]: YouTube
+                                - button "menu" [ref=f180e479]
+                    - listitem [ref=f180e483] [cursor=pointer]:
+                      - link [ref=f180e484]:
+                        - /url: https://www.youtube.com/watch?v=GLoxaKYPSyI
+                        - article [ref=f180e485]:
+                          - generic [ref=f180e487]:
+                            - generic [ref=f180e488]: ►
+                            - paragraph [ref=f180e490]: 11:28
+                          - generic [ref=f180e491]:
+                            - 'heading "THEY DID IT: Modders Finally Made The ULTIMATE Shogun 2 Mod!" [level=3] [ref=f180e493]'
+                            - generic [ref=f180e495]:
+                              - generic [ref=f180e496]:
+                                - generic [ref=f180e497]: 11mo |
+                                - generic [ref=f180e499]: 128K views
+                              - generic [ref=f180e500]:
+                                - generic [ref=f180e501]: YouTube
+                                - button "menu" [ref=f180e504]
+                    - listitem [ref=f180e508] [cursor=pointer]:
+                      - generic [ref=f180e509]: →
+                      - generic [ref=f180e511]: More Videos
+                  - button "Next page" [ref=f180e512] [cursor=pointer]
+                - link "More Videos" [ref=f180e517] [cursor=pointer]:
+                  - /url: /?q=total+war+shogun+2+beginners+guide+building+economy+combat+realm+divide&ia=videos&iax=videos
+                - generic [ref=f180e525]:
+                  - text: Was this helpful?
+                  - button "Positive feedback" [ref=f180e526] [cursor=pointer]
+                  - button "Negative feedback" [ref=f180e530] [cursor=pointer]
+            - listitem [ref=f180e534]:
+              - article [ref=f180e535] [cursor=pointer]:
+                - button [ref=f180e537]
+                - generic [ref=f180e542]:
+                  - link "Search domain steamcommunity.com" [ref=f180e544]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:steamcommunity.com
+                  - generic [ref=f180e547]:
+                    - paragraph [ref=f180e548]: Steam Community
+                    - link "https://steamcommunity.com › app › 34330 › discussions › 0 › 4297067919524731602" [ref=f180e549]:
+                      - /url: https://steamcommunity.com/app/34330/discussions/0/4297067919524731602/
+                      - paragraph [ref=f180e551]:
+                        - generic [ref=f180e552]: https://steamcommunity.com
+                        - generic [ref=f180e553]: › app › 34330 › discussions › 0 › 4297067919524731602
+                - heading [level=2] [ref=f180e555]:
+                  - 'link "New Player Realm Divide :: Total War: SHOGUN 2 General Discussions" [ref=f180e556]':
+                    - /url: https://steamcommunity.com/app/34330/discussions/0/4297067919524731602/
+                - generic [ref=f180e558]: New Player Realm Divide How is a new player expected to deal with realm divide on their first campaign? I started a campaign with the Chosokabe clan and did pretty well in the beginning and surrounded Kyoto hoping to take it last when I have met my victory conditions but when I got to 17 provinces the realm divide mode activated.
+            - listitem [ref=f180e563]:
+              - article [ref=f180e564] [cursor=pointer]:
+                - button [ref=f180e566]
+                - generic [ref=f180e571]:
+                  - link "Search domain reddit.com" [ref=f180e573]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:www.reddit.com
+                  - generic [ref=f180e576]:
+                    - paragraph [ref=f180e577]: Reddit
+                    - link "https://www.reddit.com › r › shogun2 › comments › 1d0zo7c › guide_for_newbie" [ref=f180e578]:
+                      - /url: https://www.reddit.com/r/shogun2/comments/1d0zo7c/guide_for_newbie/
+                      - paragraph [ref=f180e580]:
+                        - generic [ref=f180e581]: https://www.reddit.com
+                        - generic [ref=f180e582]: › r › shogun2 › comments › 1d0zo7c › guide_for_newbie
+                - heading [level=2] [ref=f180e584]:
+                  - 'link "Guide for newbie? : r/shogun2 - Reddit" [ref=f180e585]':
+                    - /url: https://www.reddit.com/r/shogun2/comments/1d0zo7c/guide_for_newbie/
+                - generic [ref=f180e587]: Economic is the default, They should have a level 2 castle, max level stealth chain building and max level religious building. Reason for this is to help with public order.
+            - listitem [ref=f180e592]:
+              - article [ref=f180e593] [cursor=pointer]:
+                - button [ref=f180e595]
+                - generic [ref=f180e600]:
+                  - link "Search domain reddit.com" [ref=f180e602]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:www.reddit.com
+                  - generic [ref=f180e605]:
+                    - paragraph [ref=f180e606]: Reddit
+                    - link "https://www.reddit.com › r › shogun2 › comments › sn9xvk › how_best_to_prepare_for_realm_divide" [ref=f180e607]:
+                      - /url: https://www.reddit.com/r/shogun2/comments/sn9xvk/how_best_to_prepare_for_realm_divide/
+                      - paragraph [ref=f180e609]:
+                        - generic [ref=f180e610]: https://www.reddit.com
+                        - generic [ref=f180e611]: › r › shogun2 › comments › sn9xvk › how_best_to_prepare_for_realm_divide
+                - heading [level=2] [ref=f180e613]:
+                  - 'link "How best to prepare for Realm Divide? : r/shogun2 - Reddit" [ref=f180e614]':
+                    - /url: https://www.reddit.com/r/shogun2/comments/sn9xvk/how_best_to_prepare_for_realm_divide/
+                - generic [ref=f180e616]: When you're 1 or 2 provinces short of the realm divide (progress bar is almost full) spend many many turns optimizing your economy (maxed out farms in provinces with fertile soil, Markets and Metsukes in every province not being used to build specialized units) and building up your army and navy.
+            - listitem [ref=f180e621]:
+              - article [ref=f180e622] [cursor=pointer]:
+                - button [ref=f180e624]
+                - generic [ref=f180e629]:
+                  - link "Search domain totalwar.fandom.com" [ref=f180e631]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:totalwar.fandom.com
+                  - generic [ref=f180e634]:
+                    - paragraph [ref=f180e635]: totalwar.fandom.com
+                    - link "https://totalwar.fandom.com › wiki › Realm_Divide" [ref=f180e636]:
+                      - /url: https://totalwar.fandom.com/wiki/Realm_Divide
+                      - paragraph [ref=f180e638]:
+                        - generic [ref=f180e639]: https://totalwar.fandom.com
+                        - generic [ref=f180e640]: › wiki › Realm_Divide
+                - heading [level=2] [ref=f180e642]:
+                  - link "Realm Divide | Total War Wiki | Fandom" [ref=f180e643]:
+                    - /url: https://totalwar.fandom.com/wiki/Realm_Divide
+                - generic [ref=f180e645]: "Realm Divide is a gameplay mechanic in Total War: Shogun 2, Rise of the Samurai, and Fall of the Samurai. In all three games, Realm Divide is an event that triggers when a player's fame increases to a sufficient level. Fame is gained from fighting battles that spawn a statue on the world map (usually heroic victories, correspondingly lopsided defeats, or battles where many casualties occur on ..."
+            - listitem [ref=f180e650]:
+              - article [ref=f180e651] [cursor=pointer]:
+                - button [ref=f180e653]
+                - generic [ref=f180e658]:
+                  - link "Search domain youtube.com" [ref=f180e660]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:www.youtube.com
+                  - generic [ref=f180e663]:
+                    - paragraph [ref=f180e664]: YouTube
+                    - link "https://www.youtube.com › watch?v=aLplSwXJrew" [ref=f180e665]:
+                      - /url: https://www.youtube.com/watch?v=aLplSwXJrew
+                      - paragraph [ref=f180e667]:
+                        - generic [ref=f180e668]: https://www.youtube.com
+                        - generic [ref=f180e669]: › watch?v=aLplSwXJrew
+                - heading [level=2] [ref=f180e671]:
+                  - 'link "Total War: Shogun 2- Realm Divide mechanics in detail (w/examples ..." [ref=f180e672]':
+                    - /url: https://www.youtube.com/watch?v=aLplSwXJrew
+                - generic [ref=f180e677]:
+                  - text: Dec 11, 2025·
+                  - generic [ref=f180e678]: In this video I provide the details behind the most important event in Shogun 2- Realm Divide! Some other useful info... Link to Campaign difficulty handicap effects (now able to be viewed without ...
+                - generic [ref=f180e679]:
+                  - generic [ref=f180e680]:
+                    - generic [ref=f180e684]: "Created by:"
+                    - text: GameMnke
+                  - generic [ref=f180e685]: 7K views
+                  - generic [ref=f180e689]: 19 min
+            - listitem [ref=f180e693]:
+              - article [ref=f180e694] [cursor=pointer]:
+                - button [ref=f180e696]
+                - generic [ref=f180e701]:
+                  - link "Search domain youtube.com" [ref=f180e703]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:www.youtube.com
+                  - generic [ref=f180e706]:
+                    - paragraph [ref=f180e707]: YouTube
+                    - link "https://www.youtube.com › watch?v=-MOWLSgqjos" [ref=f180e708]:
+                      - /url: https://www.youtube.com/watch?v=-MOWLSgqjos
+                      - paragraph [ref=f180e710]:
+                        - generic [ref=f180e711]: https://www.youtube.com
+                        - generic [ref=f180e712]: › watch?v=-MOWLSgqjos
+                - heading [level=2] [ref=f180e714]:
+                  - link "Total War Shogun 2 Dominate realm divide - YouTube" [ref=f180e715]:
+                    - /url: https://www.youtube.com/watch?v=-MOWLSgqjos
+                - generic [ref=f180e717]: I show and tell how to dominate shogun 2 total war all the way to realm divide and beyond. fast paced how to run the economy and build an army that will crush your enemies. don't miss this guide ...
+                - generic [ref=f180e722]:
+                  - generic [ref=f180e723]:
+                    - generic [ref=f180e727]: "Created by:"
+                    - text: NinjaBeast06
+                  - generic [ref=f180e728]: 4K views
+                  - generic [ref=f180e732]: 23 min
+            - listitem [ref=f180e736]:
+              - article [ref=f180e737] [cursor=pointer]:
+                - button [ref=f180e739]
+                - generic [ref=f180e744]:
+                  - link "Search domain wiki.totalwar.com" [ref=f180e746]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:wiki.totalwar.com
+                  - generic [ref=f180e749]:
+                    - paragraph [ref=f180e750]: Total War Wiki
+                    - link "https://wiki.totalwar.com › w › Getting_Started_Guides.html" [ref=f180e751]:
+                      - /url: https://wiki.totalwar.com/w/Getting_Started_Guides.html
+                      - paragraph [ref=f180e753]:
+                        - generic [ref=f180e754]: https://wiki.totalwar.com
+                        - generic [ref=f180e755]: › w › Getting_Started_Guides.html
+                - heading [level=2] [ref=f180e757]:
+                  - link "Getting Started Guides - Total War Wiki" [ref=f180e758]:
+                    - /url: https://wiki.totalwar.com/w/Getting_Started_Guides.html
+                - generic [ref=f180e760]: "Total War: Shogun 2 is a game of two halves: strategic play - such as recruitment, construction and the conquest of provinces - occurs on the campaign map; tactical play - individual battles fought in 3D against a real or AI opponent - occurs on the battlefield."
+            - listitem [ref=f180e765]:
+              - article [ref=f180e766] [cursor=pointer]:
+                - button [ref=f180e768]
+                - generic [ref=f180e773]:
+                  - link "Search domain forums.totalwar.org" [ref=f180e775]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:forums.totalwar.org
+                  - generic [ref=f180e778]:
+                    - paragraph [ref=f180e779]: The Org
+                    - link "https://forums.totalwar.org › vb › showthread.php › 137395-Frogbeastegg-s-Guide-to-Total-War-Shogun-II" [ref=f180e780]:
+                      - /url: https://forums.totalwar.org/vb/showthread.php/137395-Frogbeastegg-s-Guide-to-Total-War-Shogun-II
+                      - paragraph [ref=f180e782]:
+                        - generic [ref=f180e783]: https://forums.totalwar.org
+                        - generic [ref=f180e784]: › vb › showthread.php › 137395-Frogbeastegg-s-Guide-to-Total-War-Shogun-II
+                - heading [level=2] [ref=f180e786]:
+                  - 'link "Creative Assembly Frogbeastegg''s Guide to Total War: Shogun II" [ref=f180e787]':
+                    - /url: https://forums.totalwar.org/vb/showthread.php/137395-Frogbeastegg-s-Guide-to-Total-War-Shogun-II
+                - generic [ref=f180e789]: "Terminology. Getting started How not to die in the first 4 turns Province management The economy Religion Diplomacy Research: discovering the arts Agents Survival of the fittest: realm divide Battlefield units: an in-depth examination Putting it all together: some basic army templates Appendix 1: The Ikko-Ikki DLC Credits"
+            - listitem [ref=f180e794]:
+              - article [ref=f180e795] [cursor=pointer]:
+                - button [ref=f180e797]
+                - generic [ref=f180e802]:
+                  - link "Search domain totalwar.fandom.com" [ref=f180e804]:
+                    - /url: /?q=total%20war%20shogun%202%20beginners%20guide%20building%20economy%20combat%20realm%20divide+site:totalwar.fandom.com
+                  - generic [ref=f180e807]:
+                    - paragraph [ref=f180e808]: totalwar.fandom.com
+                    - link "https://totalwar.fandom.com › wiki › User_blog:Brainwasher5 › Shogun_2_Economy_breakdown" [ref=f180e809]:
+                      - /url: https://totalwar.fandom.com/wiki/User_blog:Brainwasher5/Shogun_2_Economy_breakdown
+                      - paragraph [ref=f180e811]:
+                        - generic [ref=f180e812]: https://totalwar.fandom.com
+                        - generic [ref=f180e813]: › wiki › User_blog:Brainwasher5 › Shogun_2_Economy_breakdown
+                - heading [level=2] [ref=f180e815]:
+                  - link "Shogun 2 Economy breakdown - Total War Wiki | Fandom" [ref=f180e816]:
+                    - /url: https://totalwar.fandom.com/wiki/User_blog:Brainwasher5/Shogun_2_Economy_breakdown
+                - generic [ref=f180e818]: Secret police -20% cost metsuke actions Tax reform +5% clan wide tax rate Traditional building -15% cost constructing castles Equal Fields +2% wealth generated by farms across all provinces Chonindo provides food 2, increase trade income (tariffs only)+20% Kinza mint +5 clan wide town growth Learning the Chi Arts will help your realm economically.
+          - button "More results" [ref=f180e825] [cursor=pointer]
+        - list [ref=f180e827]:
+          - listitem [ref=f180e828]:
+            - generic [ref=f180e830]:
+              - paragraph [ref=f180e831]: Searches related to total war shogun 2 beginners guide building economy combat realm divide
+              - generic [ref=f180e832]:
+                - list [ref=f180e833]:
+                  - listitem [ref=f180e834]:
+                    - link "total war shogun 2 strategy" [ref=f180e835] [cursor=pointer]:
+                      - /url: "?q=total%20war%20shogun%202%20strategy"
+                  - listitem [ref=f180e838]:
+                    - link "total war shogun 2 steam" [ref=f180e839] [cursor=pointer]:
+                      - /url: "?q=total%20war%20shogun%202%20steam"
+                  - listitem [ref=f180e842]:
+                    - link "total war shogun 2 encyclopedia" [ref=f180e843] [cursor=pointer]:
+                      - /url: "?q=total%20war%20shogun%202%20encyclopedia"
+                  - listitem [ref=f180e846]:
+                    - link "total war shogun 2 tutorial" [ref=f180e847] [cursor=pointer]:
+                      - /url: "?q=total%20war%20shogun%202%20tutorial"
+                  - listitem [ref=f180e850]:
+                    - link "total war shogun 2 buildings" [ref=f180e851] [cursor=pointer]:
+                      - /url: "?q=total%20war%20shogun%202%20buildings"
+                - list [ref=f180e854]:
+                  - listitem [ref=f180e855]:
+                    - link "shogun 2 tips and tricks" [ref=f180e856] [cursor=pointer]:
+                      - /url: "?q=shogun%202%20tips%20and%20tricks"
+                  - listitem [ref=f180e859]:
+                    - link "shogun 2 encyclopedia" [ref=f180e860] [cursor=pointer]:
+                      - /url: "?q=shogun%202%20encyclopedia"
+                  - listitem [ref=f180e863]:
+                    - link "total war shogun 2 tactics" [ref=f180e864] [cursor=pointer]:
+                      - /url: "?q=total%20war%20shogun%202%20tactics"
+                  - listitem [ref=f180e867]:
+                    - link "shogun 2 total war tips" [ref=f180e868] [cursor=pointer]:
+                      - /url: "?q=shogun%202%20total%20war%20tips"
+                  - listitem [ref=f180e871]:
+                    - link "total war shogun 2 download" [ref=f180e872] [cursor=pointer]:
+                      - /url: "?q=total%20war%20shogun%202%20download"
+    - list [ref=f180e876]:
+      - button "Close menu" [ref=f180e877] [cursor=pointer]
+      - list [ref=f180e881]:
+        - listitem [ref=f180e882]: Search
+        - listitem [ref=f180e883]:
+          - link "Homepage" [ref=f180e884] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=f180e885]:
+          - link "Themes" [ref=f180e886] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=f180e887]:
+          - link "Settings" [ref=f180e888] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=f180e889]:
+        - listitem [ref=f180e890]: Share Feedback
+        - listitem [ref=f180e891]:
+          - generic [ref=f180e894]:
+            - button "Positive feedback" [ref=f180e895] [cursor=pointer]
+            - button "Negative feedback" [ref=f180e899] [cursor=pointer]
+      - list [ref=f180e903]:
+        - listitem [ref=f180e904]: Downloads
+        - listitem [ref=f180e905]:
+          - link "iOS Browser" [ref=f180e906] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=f180e907]:
+          - link "Android Browser" [ref=f180e908] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=f180e909]:
+          - link "Mac Browser" [ref=f180e910] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=f180e911]:
+          - link "Windows Browser" [ref=f180e912] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=f180e913]: Browser Extensions
+      - list [ref=f180e914]:
+        - listitem [ref=f180e915]: More From DuckDuckGo
+        - listitem [ref=f180e916]:
+          - generic [ref=f180e919]:
+            - button "Dismiss promotion" [ref=f180e920] [cursor=pointer]
+            - generic [ref=f180e923]:
+              - paragraph [ref=f180e925]: Upgrade to our Private Browser
+              - paragraph [ref=f180e937]: Fast. Secure. Free.
+            - link "Download Browser" [ref=f180e938] [cursor=pointer]:
+              - /url: /windows
+        - listitem [ref=f180e941]:
+          - link "Duck.ai" [ref=f180e942] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=f180e943]:
+          - link "Email Protection" [ref=f180e944] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=f180e945]:
+          - link "Newsletter" [ref=f180e946] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=f180e947]:
+          - link "Blog" [ref=f180e948] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=f180e949]:
+          - link "Podcast" [ref=f180e950] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=f180e951]:
+          - link "Collaborations" [ref=f180e952] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=f180e953]:
+        - listitem [ref=f180e954]: Learn More
+        - listitem [ref=f180e955]:
+          - link "What’s New" [ref=f180e956] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=f180e957]:
+          - link "Compare Privacy" [ref=f180e958] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=f180e959]:
+          - link "About Our Browser" [ref=f180e960] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=f180e961]:
+          - link "About DuckDuckGo" [ref=f180e962] [cursor=pointer]:
+            - /url: /about
+      - list [ref=f180e963]:
+        - listitem [ref=f180e964]: Other Resources
+        - listitem [ref=f180e965]:
+          - link "Help" [ref=f180e966] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=f180e967]:
+          - link "Community" [ref=f180e968] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=f180e969]:
+          - link "Careers" [ref=f180e970] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=f180e971]:
+          - link "Privacy Policy" [ref=f180e972] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=f180e973]:
+          - link "Terms of Service" [ref=f180e974] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=f180e975]:
+          - link "Press Kit" [ref=f180e976] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=f180e977]:
+          - link "Advertise on Search" [ref=f180e978] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=f180e982]:
+    - generic [ref=f180e984]:
+      - generic [ref=f180e1000]:
+        - heading "Get Our Windows Browser" [level=3] [ref=f180e1001]
+        - paragraph [ref=f180e1002]: Protect your data as you search, browse, and use AI.
+      - link "Download" [ref=f180e1003] [cursor=pointer]:
+        - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__footercard
+    - generic [ref=f180e1007]:
+      - generic [ref=f180e1008]:
+        - heading "Learn More" [level=3] [ref=f180e1009]
+        - list [ref=f180e1010]:
+          - listitem [ref=f180e1011]:
+            - link "What's New" [ref=f180e1012] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=f180e1013]:
+            - link "About Browser" [ref=f180e1014] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=f180e1015]:
+            - link "Compare Privacy" [ref=f180e1016] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=f180e1017]:
+            - link "Help Pages" [ref=f180e1018] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=f180e1019]:
+        - heading "Get More" [level=3] [ref=f180e1020]
+        - list [ref=f180e1021]:
+          - listitem [ref=f180e1022]:
+            - link "Email Protection" [ref=f180e1023] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=f180e1024]:
+            - generic [ref=f180e1025]:
+              - link "Podcast" [ref=f180e1027] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=f180e1028]:
+                - text: "&"
+                - link "Newsletter" [ref=f180e1029] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=f180e1030]:
+            - link "Collaborations" [ref=f180e1031] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - button "Share Feedback" [ref=f180e1036] [cursor=pointer]
+  - generic [ref=f180e1037]:
+    - generic [ref=f180e1039]:
+      - banner [ref=f180e1040]:
+        - paragraph [ref=f180e1042]: Upgrade to our browser.
+      - generic [ref=f180e1043]:
+        - paragraph [ref=f180e1049]:
+          - generic [ref=f180e1050]:
+            - text: Try the
+            - strong [ref=f180e1051]: DuckDuckGo Browser.
+            - text: Fast. Free. Private.
+        - link "Download Browser" [ref=f180e1052] [cursor=pointer]:
+          - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover
+      - paragraph [ref=f180e1058]:
+        - generic [ref=f180e1059]: Free
+    - button [ref=f180e1061] [cursor=pointer]

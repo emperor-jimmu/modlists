@@ -1,0 +1,344 @@
+- generic [ref=f184e3]:
+  - banner [ref=f184e4]:
+    - generic [ref=f184e5]:
+      - link "Link to the Steam Homepage" [ref=f184e8] [cursor=pointer]:
+        - /url: https://store.steampowered.com/
+        - img "Link to the Steam Homepage" [ref=f184e9]
+      - navigation "Global Menu" [ref=f184e10]:
+        - link "STORE" [ref=f184e11] [cursor=pointer]:
+          - /url: https://store.steampowered.com/
+        - link "COMMUNITY" [ref=f184e12] [cursor=pointer]:
+          - /url: https://steamcommunity.com/
+        - link "About" [ref=f184e13] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/
+        - link "SUPPORT" [ref=f184e14] [cursor=pointer]:
+          - /url: https://help.steampowered.com/en/
+      - navigation "Account Menu" [ref=f184e16]:
+        - link "Install Steam" [ref=f184e17] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/
+        - link "sign in" [ref=f184e19] [cursor=pointer]:
+          - /url: https://steamcommunity.com/login/home/?goto=app%2F34330%2Fguides%2F
+        - text: "| language"
+  - main [ref=f184e20]:
+    - generic [ref=f184e21]:
+      - generic [ref=f184e25]:
+        - link "Store Page" [ref=f184e27] [cursor=pointer]:
+          - /url: https://store.steampowered.com/app/34330?snr=2_9_100009__apphubheader
+        - generic [ref=f184e29]: "Total War: SHOGUN 2"
+        - generic [ref=f184e31]:
+          - link "All" [ref=f184e32] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330
+          - link "Discussions" [ref=f184e33] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/discussions/
+          - link "Screenshots" [ref=f184e34] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/screenshots/
+          - link "Artwork" [ref=f184e35] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/images/
+          - link "Broadcasts" [ref=f184e36] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/broadcasts/
+          - link "Videos" [ref=f184e37] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/videos/
+          - link "Workshop" [ref=f184e38] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/workshop/
+          - link "News" [ref=f184e39] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/allnews/
+          - link "Guides" [ref=f184e40] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/guides/
+          - link "Reviews" [ref=f184e41] [cursor=pointer]:
+            - /url: https://steamcommunity.com/app/34330/reviews/
+      - generic [ref=f184e44]:
+        - generic [ref=f184e45]:
+          - generic [ref=f184e46]: Browse and rate player-created guides for this game. Or create your own and share your tips with the community.
+          - link "Create your own" [ref=f184e47] [cursor=pointer]:
+            - /url: https://steamcommunity.com/sharedfiles/editguide/?appid=34330
+        - generic:
+          - generic [ref=f184e50]:
+            - textbox [ref=f184e52]: "Search Total War: SHOGUN 2 Guides"
+            - generic [ref=f184e54]:
+              - generic [ref=f184e55] [cursor=pointer]: Filter by Category
+              - generic [ref=f184e58]:
+                - generic [ref=f184e59]: "Show items tagged with all of the selected terms:"
+                - generic [ref=f184e61]: Category
+                - generic [ref=f184e62]:
+                  - button "Achievements" [ref=f184e63]:
+                    - checkbox "Achievements" [ref=f184e64]
+                    - text: Achievements
+                  - button [ref=f184e65] [cursor=pointer]
+                - generic [ref=f184e67]:
+                  - button "Characters" [ref=f184e68]:
+                    - checkbox "Characters" [ref=f184e69]
+                    - text: Characters
+                  - button [ref=f184e70] [cursor=pointer]
+                - generic [ref=f184e72]:
+                  - button "Classes" [ref=f184e73]:
+                    - checkbox "Classes" [ref=f184e74]
+                    - text: Classes
+                  - button [ref=f184e75] [cursor=pointer]
+                - generic [ref=f184e77]:
+                  - button "Co-op" [ref=f184e78]:
+                    - checkbox "Co-op" [ref=f184e79]
+                    - text: Co-op
+                  - button [ref=f184e80] [cursor=pointer]
+                - generic [ref=f184e82]:
+                  - button "Crafting" [ref=f184e83]:
+                    - checkbox "Crafting" [ref=f184e84]
+                    - text: Crafting
+                  - button [ref=f184e85] [cursor=pointer]
+                - generic [ref=f184e87]:
+                  - button "Game Modes" [ref=f184e88]:
+                    - checkbox "Game Modes" [ref=f184e89]
+                    - text: Game Modes
+                  - button [ref=f184e90] [cursor=pointer]
+                - generic [ref=f184e92]:
+                  - button "Gameplay Basics" [ref=f184e93]:
+                    - checkbox "Gameplay Basics" [ref=f184e94]
+                    - text: Gameplay Basics
+                  - button [ref=f184e95] [cursor=pointer]
+                - generic [ref=f184e97]:
+                  - button "Loot" [ref=f184e98]:
+                    - checkbox "Loot" [ref=f184e99]
+                    - text: Loot
+                  - button [ref=f184e100] [cursor=pointer]
+                - generic [ref=f184e102]:
+                  - button "Maps or Levels" [ref=f184e103]:
+                    - checkbox "Maps or Levels" [ref=f184e104]
+                    - text: Maps or Levels
+                  - button [ref=f184e105] [cursor=pointer]
+                - generic [ref=f184e107]:
+                  - button "Modding or Configuration" [ref=f184e108]:
+                    - checkbox "Modding or Configuration" [ref=f184e109]
+                    - text: Modding or Configuration
+                  - button [ref=f184e110] [cursor=pointer]
+                - generic [ref=f184e112]:
+                  - button "Multiplayer" [ref=f184e113]:
+                    - checkbox "Multiplayer" [ref=f184e114]
+                    - text: Multiplayer
+                  - button [ref=f184e115] [cursor=pointer]
+                - generic [ref=f184e117]:
+                  - button "Secrets" [ref=f184e118]:
+                    - checkbox "Secrets" [ref=f184e119]
+                    - text: Secrets
+                  - button [ref=f184e120] [cursor=pointer]
+                - generic [ref=f184e122]:
+                  - button "Story or Lore" [ref=f184e123]:
+                    - checkbox "Story or Lore" [ref=f184e124]
+                    - text: Story or Lore
+                  - button [ref=f184e125] [cursor=pointer]
+                - generic [ref=f184e127]:
+                  - button "Trading" [ref=f184e128]:
+                    - checkbox "Trading" [ref=f184e129]
+                    - text: Trading
+                  - button [ref=f184e130] [cursor=pointer]
+                - generic [ref=f184e132]:
+                  - button "Walkthroughs" [ref=f184e133]:
+                    - checkbox "Walkthroughs" [ref=f184e134]
+                    - text: Walkthroughs
+                  - button [ref=f184e135] [cursor=pointer]
+                - generic [ref=f184e137]:
+                  - button "Weapons" [ref=f184e138]:
+                    - checkbox "Weapons" [ref=f184e139]
+                    - text: Weapons
+                  - button [ref=f184e140] [cursor=pointer]
+                - generic [ref=f184e142]:
+                  - button "Workshop" [ref=f184e143]:
+                    - checkbox "Workshop" [ref=f184e144]
+                    - text: Workshop
+                  - button [ref=f184e145] [cursor=pointer]
+                - generic [ref=f184e147]: Languages
+                - combobox [ref=f184e148]:
+                  - option "< none specified >" [selected]
+                  - option "Bulgarian"
+                  - option "Simplified Chinese"
+                  - option "Traditional Chinese"
+                  - option "Czech"
+                  - option "Danish"
+                  - option "Dutch"
+                  - option "English"
+                  - option "Finnish"
+                  - option "French"
+                  - option "German"
+                  - option "Greek"
+                  - option "Hungarian"
+                  - option "Italian"
+                  - option "Japanese"
+                  - option "Korean"
+                  - option "Norwegian"
+                  - option "Polish"
+                  - option "Portuguese"
+                  - option "Portuguese (Brazil)"
+                  - option "Romanian"
+                  - option "Russian"
+                  - option "Spanish"
+                  - option "Swedish"
+                  - option "Thai"
+                  - option "Turkish"
+                  - option "Ukrainian"
+                  - option "Spanish-Latin America"
+                  - option "Vietnamese"
+            - generic [ref=f184e149]:
+              - generic [ref=f184e150]: "Browse by:"
+              - generic [ref=f184e151]:
+                - button [ref=f184e152]:
+                  - link "Home" [ref=f184e155] [cursor=pointer]:
+                    - /url: "?browsesort=home&browsefilter=home&requiredtags%5B0%5D=english&p=1"
+                - button [ref=f184e156]:
+                  - link "Most Popular" [ref=f184e158] [cursor=pointer]:
+                    - /url: "?browsesort=trend&browsefilter=trend&requiredtags%5B0%5D=english&p=1"
+                - button [ref=f184e159]:
+                  - link "Top Rated All Time" [ref=f184e161] [cursor=pointer]:
+                    - /url: "?browsesort=toprated&browsefilter=toprated&requiredtags%5B0%5D=english&p=1"
+                - button [ref=f184e162]:
+                  - link "Most Recent" [ref=f184e164] [cursor=pointer]:
+                    - /url: "?browsesort=mostrecent&browsefilter=mostrecent&requiredtags%5B0%5D=english&p=1"
+            - generic [ref=f184e165]:
+              - generic [ref=f184e166]: More About Guides
+              - button "Click here to learn more about Steam Guides" [ref=f184e169] [cursor=pointer]
+          - generic [ref=f184e171]:
+            - generic [ref=f184e172]:
+              - link "View All (17)" [ref=f184e174] [cursor=pointer]:
+                - /url: javascript:ShowAllCategories()
+              - generic [ref=f184e175]: Popular Categories (17)
+              - generic:
+                - link "Gameplay Basics 90 Guides" [ref=f184e176] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Gameplay Basics&requiredtags[]=english
+                  - generic [ref=f184e178]: Gameplay Basics
+                  - generic [ref=f184e179]: 90 Guides
+                - link "Walkthroughs 82 Guides" [ref=f184e180] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Walkthroughs&requiredtags[]=english
+                  - generic [ref=f184e182]: Walkthroughs
+                  - generic [ref=f184e183]: 82 Guides
+                - link "Multiplayer 67 Guides" [ref=f184e184] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Multiplayer&requiredtags[]=english
+                  - generic [ref=f184e186]: Multiplayer
+                  - generic [ref=f184e187]: 67 Guides
+                - link "Secrets 55 Guides" [ref=f184e188] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Secrets&requiredtags[]=english
+                  - generic [ref=f184e190]: Secrets
+                  - generic [ref=f184e191]: 55 Guides
+                - link "Maps Or Levels 49 Guides" [ref=f184e192] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Maps or Levels&requiredtags[]=english
+                  - generic [ref=f184e194]: Maps Or Levels
+                  - generic [ref=f184e195]: 49 Guides
+                - link "Modding Or Configuration 48 Guides" [ref=f184e196] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Modding or Configuration&requiredtags[]=english
+                  - generic [ref=f184e198]: Modding Or Configuration
+                  - generic [ref=f184e199]: 48 Guides
+                - link "Characters 45 Guides" [ref=f184e200] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Characters&requiredtags[]=english
+                  - generic [ref=f184e202]: Characters
+                  - generic [ref=f184e203]: 45 Guides
+                - link "Game Modes 43 Guides" [ref=f184e204] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Game Modes&requiredtags[]=english
+                  - generic [ref=f184e206]: Game Modes
+                  - generic [ref=f184e207]: 43 Guides
+                - link "Achievements 36 Guides" [ref=f184e208] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Achievements&requiredtags[]=english
+                  - generic [ref=f184e210]: Achievements
+                  - generic [ref=f184e211]: 36 Guides
+                - link "Classes 32 Guides" [ref=f184e212] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Classes&requiredtags[]=english
+                  - generic [ref=f184e214]: Classes
+                  - generic [ref=f184e215]: 32 Guides
+                - link "Weapons 32 Guides" [ref=f184e216] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Weapons&requiredtags[]=english
+                  - generic [ref=f184e218]: Weapons
+                  - generic [ref=f184e219]: 32 Guides
+                - link "Co-op 31 Guides" [ref=f184e220] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Co-op&requiredtags[]=english
+                  - generic [ref=f184e222]: Co-op
+                  - generic [ref=f184e223]: 31 Guides
+                - link "Workshop 30 Guides" [ref=f184e224] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Workshop&requiredtags[]=english
+                  - generic [ref=f184e226]: Workshop
+                  - generic [ref=f184e227]: 30 Guides
+                - link "Story Or Lore 29 Guides" [ref=f184e228] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Story or Lore&requiredtags[]=english
+                  - generic [ref=f184e230]: Story Or Lore
+                  - generic [ref=f184e231]: 29 Guides
+                - link "Crafting 19 Guides" [ref=f184e232] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Crafting&requiredtags[]=english
+                  - generic [ref=f184e234]: Crafting
+                  - generic [ref=f184e235]: 19 Guides
+                - link "Trading 17 Guides" [ref=f184e236] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Trading&requiredtags[]=english
+                  - generic [ref=f184e238]: Trading
+                  - generic [ref=f184e239]: 17 Guides
+                - link "Loot 15 Guides" [ref=f184e240] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&requiredtags[]=Loot&requiredtags[]=english
+                  - generic [ref=f184e242]: Loot
+                  - generic [ref=f184e243]: 15 Guides
+            - generic [ref=f184e244]:
+              - link "View All (218)" [ref=f184e246] [cursor=pointer]:
+                - /url: https://steamcommunity.com/app/34330/guides/?browsefilter=trend&filetype=11&requiredtags[]=english
+              - generic [ref=f184e247]: Popular Steam Guides Written guides, references, and walkthroughs
+              - generic [ref=f184e249]:
+                - button [ref=f184e250]:
+                  - link "Best Multiplayer Upgrades for General & Veterans by Akfiz If you don't care about having to learn the pros and cons of each General or Veteran unit Skill Tree this is the guide for you. Telling you the best skill tree builds for the General and the Veteran units, so that you won't make the mistakes of assigning s..." [ref=f184e251] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2160095009
+                    - generic [ref=f184e255]:
+                      - generic [ref=f184e257]: Best Multiplayer Upgrades for General & Veterans
+                      - generic [ref=f184e258]: by Akfiz
+                      - generic [ref=f184e259]: If you don't care about having to learn the pros and cons of each General or Veteran unit Skill Tree this is the guide for you. Telling you the best skill tree builds for the General and the Veteran units, so that you won't make the mistakes of assigning s...
+                - button [ref=f184e260]:
+                  - 'link "A Guide To The Ikko Ikki Clan DLC by Eról A guide to the Ikki Ikki clan DLC for Total War: Shogun 2 This guide gives you a detailed look into the DLC describing its units, buildings and perks. If you have any other things you would like me to add leave a comment in the comment section Created all ..." [ref=f184e261] [cursor=pointer]':
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=203569525
+                    - generic [ref=f184e265]:
+                      - generic [ref=f184e267]: A Guide To The Ikko Ikki Clan DLC
+                      - generic [ref=f184e268]: by Eról
+                      - generic [ref=f184e269]: "A guide to the Ikki Ikki clan DLC for Total War: Shogun 2 This guide gives you a detailed look into the DLC describing its units, buildings and perks. If you have any other things you would like me to add leave a comment in the comment section Created all ..."
+                - button [ref=f184e270]:
+                  - 'link "No Artillery, Low Casualties Siege Guide for FOTS. Or: FOTS becomes a heist by CS_frankenbite An intermediate level guide to busting castles with small armies, low casualties, and no artillery. Legendary difficulty...." [ref=f184e271] [cursor=pointer]':
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3171446723
+                    - generic [ref=f184e275]:
+                      - generic [ref=f184e277]: "No Artillery, Low Casualties Siege Guide for FOTS. Or: FOTS becomes a heist"
+                      - generic [ref=f184e278]: by CS_frankenbite
+                      - generic [ref=f184e279]: An intermediate level guide to busting castles with small armies, low casualties, and no artillery. Legendary difficulty....
+                - button [ref=f184e280]:
+                  - 'link "Shogun 2: FOTS Quick Reference by Kaal This guide is a compilation of tips and notes that I''ve made to myself about the game. The intention is more of a quick reference for best practices, rather than a full guide to the game or an in-depth explanation of decisions and strategies...." [ref=f184e281] [cursor=pointer]':
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3447134242
+                    - generic [ref=f184e285]:
+                      - generic [ref=f184e287]: "Shogun 2: FOTS Quick Reference"
+                      - generic [ref=f184e288]: by Kaal
+                      - generic [ref=f184e289]: This guide is a compilation of tips and notes that I've made to myself about the game. The intention is more of a quick reference for best practices, rather than a full guide to the game or an in-depth explanation of decisions and strategies....
+                - button [ref=f184e290]:
+                  - 'link "Total War: Shogun 2 - Guide to Factions by Ragnar This guide gives an overview of the way the armies will progress through the campaign for both the original Shogun 2 campaign and the Rise of the Samurai expansion...." [ref=f184e291] [cursor=pointer]':
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2072880625
+                    - generic [ref=f184e295]:
+                      - generic [ref=f184e297]: "Total War: Shogun 2 - Guide to Factions"
+                      - generic [ref=f184e298]: by Ragnar
+                      - generic [ref=f184e299]: This guide gives an overview of the way the armies will progress through the campaign for both the original Shogun 2 campaign and the Rise of the Samurai expansion....
+                - button [ref=f184e300]:
+                  - 'link "Shogun 2 General Traits - How to get them and what they do by Qirn A complete guide to all traits that Generals can acquire throughout the course of the game, how to acquire them (or avoid acquiring them), and the mechanics of General traits: including some bugs and unimplemented features...." [ref=f184e301] [cursor=pointer]':
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2383470840
+                    - generic [ref=f184e305]:
+                      - generic [ref=f184e307]: Shogun 2 General Traits - How to get them and what they do
+                      - generic [ref=f184e308]: by Qirn
+                      - generic [ref=f184e309]: "A complete guide to all traits that Generals can acquire throughout the course of the game, how to acquire them (or avoid acquiring them), and the mechanics of General traits: including some bugs and unimplemented features...."
+                - button [ref=f184e310]:
+                  - link "Tradução para Português (Brasil) by Lusca Não sabe como instalar a tradução? Não se preocupe! Este guia vai te ajudar...." [ref=f184e311] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3351714898
+                    - generic [ref=f184e315]:
+                      - generic [ref=f184e317]: Tradução para Português (Brasil)
+                      - generic [ref=f184e318]: by Lusca
+                      - generic [ref=f184e319]: Não sabe como instalar a tradução? Não se preocupe! Este guia vai te ajudar....
+                - button [ref=f184e320]:
+                  - 'link "Achievement guide Total War: SHOGUN 2 by Aaaaah my legs! I have written this guide with the purpose of helping players, clarifying the exact way to unlock each achievement, I hope it helps, if it works for you and you know more people who want to know how to unlock their achievements, please share the guide, tha..." [ref=f184e321] [cursor=pointer]':
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2770123154
+                    - generic [ref=f184e325]:
+                      - generic [ref=f184e327]: "Achievement guide Total War: SHOGUN 2"
+                      - generic [ref=f184e328]: by Aaaaah my legs!
+                      - generic [ref=f184e329]: I have written this guide with the purpose of helping players, clarifying the exact way to unlock each achievement, I hope it helps, if it works for you and you know more people who want to know how to unlock their achievements, please share the guide, tha...
+                - button [ref=f184e330]:
+                  - link "Advanced Matchlock Guide (The Three Firing Methods) by XallZall This guide covers subjects like Fire by Rank Vs Non-Fire by Rank, 3 Firing Methods, time it takes for Matchlocks fire, how to use them effectively & combos that you can do with Matchlocks which were deteremined by conducting tests...." [ref=f184e331] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=1518017515
+                    - generic [ref=f184e335]:
+                      - generic [ref=f184e337]: Advanced Matchlock Guide (The Three Firing Methods)
+                      - generic [ref=f184e338]: by XallZall
+                      - generic [ref=f184e339]: This guide covers subjects like Fire by Rank Vs Non-Fire by Rank, 3 Firing Methods, time it takes for Matchlocks fire, how to use them effectively & combos that you can do with Matchlocks which were deteremined by conducting tests....
+                - button [ref=f184e340]:
+                  - 'link "Shogun 2: Loading Screen Proverbs & Quotes by Dave All loading screen philosophic proverbs & war-art quotes are here...." [ref=f184e341] [cursor=pointer]':
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2488843244
+                    - generic [ref=f184e345]:
+                      - generic [ref=f184e347]: "Shogun 2: Loading Screen Proverbs & Quotes"
+                      - generic [ref=f184e348]: by Dave
+                      - generic [ref=f184e349]: All loading screen philosophic proverbs & war-art quotes are here....
