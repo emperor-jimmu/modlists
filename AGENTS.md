@@ -10,7 +10,8 @@ A 5-wave progressive modlist and gameplay guide for Arma 3 (version 2.20, June 1
 - Mod lists go in `guide/waves/XX-wave-N/mods.typ`
 - Narratives go in `guide/waves/XX-wave-N/narrative.typ`
 - Mission recommendations in `guide/waves/XX-wave-N/mission.typ`
-- Each wave has exactly those three files (plus guide files for waves that need them)
+- Gameplay or strategy guides go in `guide/waves/XX-wave-N/gameplay-guide.typ` (Wave 0 only) or `guide/waves/XX-wave-N/strategy-guide.typ` (Wave 1 only)
+- Each wave has exactly those files — narrative, mods, mission — plus a guide file where specified
 
 ## Mod Rules
 
@@ -60,8 +61,8 @@ Each mod entry in a wave's `mods.typ` file:
 |------|-------|----------|-----------|
 | 0 | Basic Training | UI/QoL only | 3–6 |
 | 1 | The Spark | Visual/immersion | 8–15 |
-| 2 | Steel | ACE/RHS/medical | 15–25 |
-| 3 | Sharp | TFAR/ACRE/realism | 20–35 |
+| 2 | Steel | Mechanics/Content | 15–25 |
+| 3 | Sharp | Mechanics/Realism | 20–35 |
 | 4 | The Highest | Full milsim | 30–50+ |
 
 ## PDF Build
