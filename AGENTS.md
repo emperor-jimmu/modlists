@@ -45,7 +45,7 @@ A mod is NOT UI/QoL if it:
 Each mod entry in a wave's `mods.typ` file:
 
 ```typst
-== [Mod Name](https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID")[Mod Name]
 
 - *Type:* Graphics | Content | Mechanics | UI/QoL
 - *Mod ID:* `WORKSHOP_ID`

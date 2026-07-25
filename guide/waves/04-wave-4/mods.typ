@@ -13,7 +13,7 @@ All mods from Waves 0 through 3 remain active. Do not disable any previous wave'
 == Formatting Template
 
 #block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
-== [Example Combined Arms Mod](https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID")[Example Combined Arms Mod]
 
 - *Type:* Content | Mechanics
 - *Mod ID:* `WORKSHOP_ID`

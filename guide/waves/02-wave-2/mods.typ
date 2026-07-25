@@ -13,7 +13,7 @@ All mods from Waves 0 and 1 remain active. Do not disable any previous wave's mo
 == Formatting Template
 
 #block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
-== [Example Mechanics Mod](https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID")[Example Mechanics Mod]
 
 - *Type:* Mechanics
 - *Mod ID:* `WORKSHOP_ID`

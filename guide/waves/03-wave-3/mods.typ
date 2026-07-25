@@ -13,7 +13,7 @@ All mods from Waves 0 through 2 remain active. Do not disable any previous wave'
 == Formatting Template
 
 #block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
-== [Example Radio Mod](https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID")[Example Radio Mod]
 
 - *Type:* Mechanics
 - *Mod ID:* `WORKSHOP_ID`
@@ -23,7 +23,7 @@ All mods from Waves 0 through 2 remain active. Do not disable any previous wave'
 ]
 
 #block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
-== [Example Environment Mod](https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID")[Example Environment Mod]
 
 - *Type:* Graphics
 - *Mod ID:* `WORKSHOP_ID`

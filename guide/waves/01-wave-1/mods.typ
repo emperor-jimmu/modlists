@@ -13,7 +13,7 @@ All mods from Wave 0 remain active. Do not disable any previous wave's mods unle
 == Formatting Template
 
 #block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
-== [Example Graphics Mod](https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID")[Example Graphics Mod]
 
 - *Type:* Graphics
 - *Mod ID:* `WORKSHOP_ID`
@@ -23,7 +23,7 @@ All mods from Wave 0 remain active. Do not disable any previous wave's mods unle
 ]
 
 #block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
-== [Example Content Mod](https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=WORKSHOP_ID")[Example Content Mod]
 
 - *Type:* Content
 - *Mod ID:* `WORKSHOP_ID`

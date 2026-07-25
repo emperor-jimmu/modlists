@@ -9,7 +9,7 @@ _Mods to be added. See formatting template below._
 Each mod entry should follow this structure. Replace the placeholder values with actual mod data.
 
 #block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("2980b9")), inset: 12pt, radius: 4pt)[
-== [CBA_A3 — Community Base Addons](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+== #link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3 — Community Base Addons]
 
 - *Type:* UI/QoL
 - *Mod ID:* `450814997`

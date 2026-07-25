@@ -127,7 +127,7 @@
 // TABLE OF CONTENTS
 // ═══════════════════════════════════════════
 
-#outline(title: [Table of Contents], indent: 1.5em)
+#outline(title: [Table of Contents], indent: 1.5em, depth: 1)
 
 #pagebreak()
 
