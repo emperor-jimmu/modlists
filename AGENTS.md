@@ -49,7 +49,7 @@ Each mod entry in a wave's `mods.typ` file:
 
 - *Type:* Graphics | Content | Mechanics | UI/QoL
 - *Mod ID:* `WORKSHOP_ID`
-- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[@CBA_A3]] (omit if none)
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]] (omit if none)
 - *Description:* One-two sentence summary of what this mod does.
 - *System Impact:* What gameplay mechanics this mod changes or adds. Omit section for purely cosmetic mods.
 - *Verified:* YYYY-MM-DD

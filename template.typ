@@ -62,7 +62,7 @@
 #set par(justify: true, leading: 0.65em)
 
 // ── Link styling ──
-#show link: set text(fill: gold, underline: true)
+#show link: set text(fill: gold)
 
 // ── Table of contents ──
 #show outline.entry.where(
@@ -127,7 +127,7 @@
 // TABLE OF CONTENTS
 // ═══════════════════════════════════════════
 
-#outline(title: [Table of Contents], indent: 1.5em, fill: none)
+#outline(title: [Table of Contents], indent: 1.5em)
 
 #pagebreak()
 

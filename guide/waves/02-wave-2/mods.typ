@@ -17,7 +17,7 @@ All mods from Waves 0 and 1 remain active. Do not disable any previous wave's mo
 
 - *Type:* Mechanics
 - *Mod ID:* `WORKSHOP_ID`
-- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[@CBA_A3]]
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]]
 - *Description:* Adds advanced medical system with realistic wounding, triage, and treatment.
 - *System Impact:* Replaces vanilla healing. Wounds are specific to body parts. Bleeding requires tourniquets and bandages. Advanced treatments require medical vehicles or surgical kits. Unconsciousness, cardiac arrest, and limb fractures are now possible.
 - *Verified:* 2025-06-17

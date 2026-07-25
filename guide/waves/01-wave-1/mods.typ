@@ -17,7 +17,7 @@ All mods from Wave 0 remain active. Do not disable any previous wave's mods unle
 
 - *Type:* Graphics
 - *Mod ID:* `WORKSHOP_ID`
-- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[@CBA_A3]]
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]]
 - *Description:* Enhances visual effects including explosions, smoke, and particle systems.
 - *Verified:* 2025-06-17
 ]
