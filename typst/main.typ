@@ -15,7 +15,7 @@
 )
 
 // ── Global Text ──
-#set text(font: (body-font, cjk-font), size: 11pt, fill: body-dark)
+#set text(font: (body-font, cjk-font), size: 12pt, fill: body-dark)
 #set par(justify: true, leading: 0.65em)
 
 // ── Global Heading Styles ──
@@ -26,7 +26,7 @@
 )[
   #set text(
     font: (heading-font, cjk-font),
-    size: 22pt,
+    size: 24pt,
     fill: white,
     weight: "bold",
   )
@@ -36,7 +36,7 @@
 #show heading.where(level: 2): it => [
   #set text(
     font: (heading-font, cjk-font),
-    size: 16pt,
+    size: 17pt,
     fill: oda-crimson,
     weight: "bold",
   )
@@ -46,7 +46,7 @@
 #show heading.where(level: 3): it => [
   #set text(
     font: (heading-font, cjk-font),
-    size: 13pt,
+    size: 14pt,
     fill: oda-black,
     weight: "bold",
   )
@@ -63,7 +63,7 @@
   radius: 4pt,
   width: 100%,
 )[
-  #set text(font: code-font, size: 9pt, fill: code-fg)
+  #set text(font: code-font, size: 10pt, fill: code-fg)
   #it
 ]
 
@@ -71,7 +71,7 @@
 #pagebreak()
 
 #outline(title: [
-  #set text(fill: oda-crimson, size: 22pt, weight: "bold")
+  #set text(fill: oda-crimson, size: 24pt, weight: "bold")
   Table of Contents
 ])
 
@@ -83,7 +83,7 @@
   inset: (top: 0.5em, bottom: 0.25em),
   fill: shimazu-vermillion,
 )[
-  #set text(font: (heading-font, cjk-font), size: 22pt, fill: white, weight: "bold")
+  #set text(font: (heading-font, cjk-font), size: 24pt, fill: white, weight: "bold")
   #it
 ]
 #show heading.where(level: 2): set text(fill: shimazu-vermillion)
@@ -102,7 +102,7 @@
   inset: (top: 0.5em, bottom: 0.25em),
   fill: oda-crimson,
 )[
-  #set text(font: (heading-font, cjk-font), size: 22pt, fill: white, weight: "bold")
+  #set text(font: (heading-font, cjk-font), size: 24pt, fill: white, weight: "bold")
   #it
 ]
 #show heading.where(level: 2): set text(fill: oda-crimson)
@@ -121,7 +121,7 @@
   inset: (top: 0.5em, bottom: 0.25em),
   fill: tokugawa-navy,
 )[
-  #set text(font: (heading-font, cjk-font), size: 22pt, fill: white, weight: "bold")
+  #set text(font: (heading-font, cjk-font), size: 24pt, fill: white, weight: "bold")
   #it
 ]
 #show heading.where(level: 2): set text(fill: tokugawa-navy)
