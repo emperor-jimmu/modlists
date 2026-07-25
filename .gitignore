@@ -1,6 +1,6 @@
 node_modules/
 .vitepress/dist/
 .vitepress/cache/
-output/
+output/site/
 *.log
 .DS_Store

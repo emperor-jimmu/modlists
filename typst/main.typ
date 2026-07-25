@@ -63,7 +63,97 @@ After installing all mods for a wave, click the #strong[Script Merger] button in
 
 The mods listed below are UI and quality-of-life improvements only. They make the game more comfortable without altering combat, progression, economy, or world mechanics.
 
-<!-- Mod entries will be added here once the modlist is finalized. -->
+== Pre-requisites (installed manually)
+
+#mod-card(
+  name: "Ultimate ASI Loader",
+  url: "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases",
+  author: "ThirteenAG",
+  category: "Utilities",
+  version: "x64",
+  wave: "0",
+  dependencies: (),
+  mechanic-impact: none,
+)[Required for Mod Limit Adjuster. Download the x64 release and place `dinput8.dll` in the game root directory.]
+
+#mod-card(
+  name: "Mod Limit Adjuster",
+  url: "https://www.nexusmods.com/witcher3/mods/3711",
+  author: "LHSQ & sedmelluq",
+  category: "Utilities",
+  version: "1.0",
+  wave: "0",
+  dependencies: ("Ultimate ASI Loader",),
+  mechanic-impact: none,
+)[Raises the game's built-in mod limit. Requires ASI Loader, Hearts of Stone, and Blood and Wine. Install `ModLimitAdjuster.asi` and `.cfg` to game root.]
+
+#mod-card(
+  name: "Script Merger",
+  url: "https://www.nexusmods.com/witcher3/mods/484",
+  author: "AnotherSymbiote",
+  category: "Utilities",
+  version: "0.6.4",
+  wave: "0",
+  dependencies: (),
+  mechanic-impact: none,
+)[Detects and resolves mod conflicts by merging files or configuring load order. Run after installing each batch of mods.]
+
+== Foundation (installed via Mod Manager)
+
+#mod-card(
+  name: "Community Patch - Shared Imports",
+  url: "https://www.nexusmods.com/witcher3/mods/2110",
+  author: "rmemr",
+  category: "Utilities",
+  version: "v0.6",
+  wave: "0",
+  dependencies: (),
+  mechanic-impact: none,
+)[Shared class imports baseline that reduces merge conflicts between mods. Provides fully imported engine classes as a common dependency layer.]
+
+#mod-card(
+  name: "Community Patch - Menu Strings",
+  url: "https://www.nexusmods.com/witcher3/mods/3650",
+  author: "wghost81",
+  category: "Utilities",
+  version: "1.0",
+  wave: "0",
+  dependencies: (),
+  mechanic-impact: none,
+)[Pre-made localized strings for Options > Mods menu subcategories. Resolves the 10-entry menu limit by providing standardized submenu categories.]
+
+#mod-card(
+  name: "Community Patch - Bootstrap and Utilities",
+  url: "https://www.nexusmods.com/witcher3/mods/2109",
+  author: "rmemr",
+  category: "Utilities",
+  version: "0.5-NEXT-GEN",
+  wave: "0",
+  dependencies: ("Shared Imports", "Menu Strings"),
+  mechanic-impact: none,
+)[Autostartup framework for mods, custom area hub support, reusable list menu, and utility functions. Reduces merge conflicts by eliminating the need for mods to modify vanilla scripts for startup.]
+
+#mod-card(
+  name: "Brothers In Arms - Ultimate Edition",
+  url: "https://www.nexusmods.com/witcher3/mods/11260",
+  author: "MerseyRockoff et al.",
+  category: "Bug Fixes",
+  version: "3.1.2",
+  wave: "0",
+  dependencies: ("Hearts of Stone", "Blood and Wine"),
+  mechanic-impact: none,
+)[5,825 bug fixes and restored content spanning the entire campaign and both expansions. Optional content can be toggled in-game via Options > Mods > Brothers In Arms.]
+
+#mod-card(
+  name: "Clever Main Menu (Redux)",
+  url: "https://www.nexusmods.com/witcher3/mods/12271",
+  author: "RovanFrost",
+  category: "UI",
+  version: "1.1",
+  wave: "0",
+  dependencies: ("Hearts of Stone", "Blood and Wine"),
+  mechanic-impact: none,
+)[Customizable main menu with infinite mod categories, quick save/load via ESC, and extensive visual customization. Requires editing dx11filelist.txt and dx12filelist.txt after install.]
 
 = Beginner's Guide
 

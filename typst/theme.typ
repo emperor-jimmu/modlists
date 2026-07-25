@@ -58,7 +58,7 @@
         text(size: 12pt, weight: "bold", fill: c.heading)[#name]
       },
       {
-        link(url)[#text(size: 8pt, fill: c.link, underline: true)[[Download]]]
+        link(url)[#text(size: 8pt, fill: c.link)[#underline[[Download]]]]
       },
     )
     #v(4pt)
