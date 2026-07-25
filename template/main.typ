@@ -93,12 +93,7 @@
 // COVER PAGE
 // ============================================
 #page(fill: dark, margin: (top: 4cm, bottom: 3cm, left: 3cm, right: 3cm))[
-  #align(center + horizon, image("../assets/logo.jpg", height: 5.5cm))
-
-  #v(2cm)
-
-  #set text(font: ("Segoe UI", "Arial"), fill: white)
-  #align(center, text(size: 40pt, weight: "bold")[ASSETTO MAXIMUS])
+  #align(center + horizon, image("../assets/logo.jpg", height: 8.5cm))
 
   #v(0.3cm)
   #line(length: 60%, stroke: 2pt + primary)
@@ -129,12 +124,7 @@
 // ============================================
 #page[
   #set text(font: ("Segoe UI", "Arial"))
-  #text(size: 18pt, weight: "bold", fill: primary, "Table of Contents")
-  #v(0.5cm)
-  #line(length: 100%, stroke: 1pt + primary)
-  #v(1cm)
-
-  #outline(depth: 2, indent: auto)
+  #outline(depth: 1, indent: auto)
 ]
 
 // ============================================
