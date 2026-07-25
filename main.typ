@@ -66,7 +66,7 @@ This document is organized in two waves:
 - *Wave 0 — The Drifter*: A vanilla+/QoL experience designed for new players. Complete how-to-play guide included.
 - *Wave 1 — The Void Walker*: An advanced experience with content, mechanics, and graphics mods. Strategy guide included.
 
-Each wave is a **separate MO2 profile** — start a new game for each wave. Mods do not carry over between waves.
+Each wave uses a *separate MO2 profile*: start a new game for each wave. Mods do not carry over between waves.
 
 // --- Table of Contents ---
 #pagebreak()
