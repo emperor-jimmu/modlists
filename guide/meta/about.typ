@@ -10,8 +10,6 @@ Each wave introduces:
 
 == Wave Progression
 
-#show: block.with(fill: rgb("f5f5f5"), inset: 12pt, radius: 4pt)
-
 *Wave 0 — Tirocinium (Basic Training)*: You are a fresh recruit. UI and quality-of-life mods only. A complete how-to-play guide covers everything from movement and controls to basic combat, navigation, and communication.
 
 *Wave 1 — Ignis (The Spark)*: Deployed to your first real conflict. Visual and immersion mods enhance the battlefield. Advanced combat tactics and team coordination become the focus.

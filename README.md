@@ -27,7 +27,8 @@ Fidelitas Suprema is a curated collection of mods and companion guides organized
 Browse the files under `guide/` to read the content directly. Each wave's folder contains:
 - `narrative.typ` — the roleplaying backstory
 - `mods.typ` — the mod list with Steam Workshop links
-- `*-guide.typ` — gameplay or strategy advice
+- `gameplay-guide.typ` — full how-to-play guide (Wave 0 only)
+- `strategy-guide.typ` — advanced combat tactics (Wave 1 only)
 - `mission.typ` — recommended campaign or mission
 
 ## Building the PDF
