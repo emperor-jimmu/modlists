@@ -1,3 +1,93 @@
+== Player Training Curriculum
+
+This curriculum teaches the core systems of *Total War: SHOGUN 2* in a progressive way so you actually master the game instead of just surviving it. It works with both vanilla and the full modlist.
+
+=== Phase 0: Foundation (First 1–2 Hours)
+
+*Goal:* Learn the interface and basic flow without overwhelm.
+
+- Complete the official in-game Tutorial (do not skip).
+- Play the *Historical Battle: Battle of Sekigahara* or *Battle of Okehazama* on Normal difficulty.
+- Recommended starting settings:
+  - Battle difficulty: Normal
+  - Campaign difficulty: Normal
+  - Battle timer: Unlimited or 20+ minutes
+  - Unit size: Large or Ultra (if your PC handles it)
+
+*Key skills unlocked:* Camera control, unit selection, basic orders, morale awareness.
+
+=== Phase 1: Clan Fundamentals (Campaign Hours 1–15)
+
+*Recommended starting clan:* *Date* or *Shimazu* (strong starting position + clear strengths).
+
+*Focus areas:*
+- Economy basics (farms → markets → trade)
+- Food and public order management
+- Recruiting and maintaining a balanced army (Ashigaru core + Samurai elite)
+- Agent usage (Metsuke, Ninja, Monk) — start with Metsuke for security
+- Diplomacy basics and when to make/break alliances
+
+*Training rule:* Do *not* expand aggressively. Conquer only 1–2 provinces at a time and fully develop them.
+
+*Modlist tip:* Enable only graphics + QoL + minor balance mods at this stage so the player learns vanilla systems cleanly.
+
+=== Phase 2: Military Mastery (Campaign Hours 15–40)
+
+*Focus areas:*
+- Army composition (Yari wall + Bowman + Cavalry + Matchlock timing)
+- Terrain usage and defensive positioning
+- Siege offense and defense
+- Naval basics (if playing coastal clans)
+- General skills and retainers
+
+*Practice method:*
+- Fight every battle manually for the first 20–25 battles.
+- After each battle, ask: "What decided the outcome — morale, flanking, or numbers?"
+
+*Recommended second clan:* *Takeda* (cavalry focus) or *Oda* (matchlock + innovation focus).
+
+=== Phase 3: Realm Divide & High-Level Strategy (Hours 40+)
+
+*Focus areas:*
+- Managing Realm Divide pressure
+- Vassal creation vs direct conquest
+- Multi-front warfare and army rotation
+- Technology prioritization (Military vs Civil)
+- Religion and agent warfare at scale
+- End-game economy and unit quality
+
+*Training challenge:* Reach Shogun status with at least one major war still active (do not snowball into total domination too early).
+
+=== Phase 4: Mastery & Mod Integration
+
+Once you are comfortable with the above, fully enable the complete *Tenka Fubu* modlist.
+
+*Recommended order of enabling heavier mods:*
+- Graphics & visual overhauls
+- UI / QoL improvements
+- AI and battle behavior improvements
+- Campaign systems / economy / diplomacy overhauls
+- Unit roster expansions and major overhauls
+
+*Advanced training exercises:*
+- Win a campaign as a weak starting clan (e.g. *Imagawa*, *Mori*, or *Hojo*)
+- Complete a campaign on Hard/Very Hard with minimal reloads
+- Win without relying on legendary units or overpowered late-game spam
+
+=== Quick Reference — Recommended Learning Path
+
+#table(
+  columns: (auto, auto, auto, 1fr, auto),
+  stroke: none,
+  [*Stage*], [*Clan*], [*Difficulty*], [*Focus*], [*Mod Intensity*],
+  [Tutorial], [—], [Normal], [Controls & basics], [None / Light],
+  [Early Campaign], [Date / Shimazu], [Normal], [Economy + Army building], [Light],
+  [Military Focus], [Takeda / Oda], [Normal–Hard], [Battles & Composition], [Medium],
+  [Realm Divide], [Any], [Hard], [Strategy & Pressure management], [Medium–Full],
+  [Mastery], [Weak clans], [Hard–Very Hard], [Full systems + Mods], [Full Tenka Fubu],
+)
+
+
 == How to Play: Total War: SHOGUN 2
 
 This guide covers everything a new player needs to survive their first campaign. It stops at turn 10 — agent management, advanced diplomacy, navy combat, and trade nodes are covered in later waves.
