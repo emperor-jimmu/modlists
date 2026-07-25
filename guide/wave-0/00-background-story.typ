@@ -8,9 +8,9 @@ You never asked to be a hero. But the creds are good, and the ship's fuel won't 
 
 They call you Drifter. Not because you don't have a past — but because you keep moving forward. One jump at a time.
 
-=== Character Creation
+=== Building Your Drifter
 
-Build your Drifter:
+Build your character:
 
 - *Background:* Long Hauler or Explorer
 - *Traits:* Introvert, Taskmaster, Terra Firma

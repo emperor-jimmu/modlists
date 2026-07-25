@@ -23,5 +23,5 @@ In MO2:
 
 Required by many SFSE plugins. Installs like any other mod in MO2.
 
-1. Download from Nexus Mods.
+1. Download from #link("https://www.nexusmods.com/starfield/mods/325")[Nexus Mods — Address Library].
 2. Install via MO2 (drag the archive into the downloads tab and double-click).
