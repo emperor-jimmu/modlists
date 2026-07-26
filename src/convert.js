@@ -43,8 +43,8 @@ for (const file of files) {
     // Convert [text](url) markdown links to Typst link syntax
     processed = processed.replace(/\[([^\]]+)\]\((#?[^)]+)\)/g, (match, text, url) => {
       if (url.startsWith('#')) {
-        // Internal anchor: escape the hash so Typst renders it literally
-        return `[${text}](${url.replace('#', '\\#')})`;
+        // Internal anchor: strip link entirely — Typst uses @label references
+        return `[${text}]`;
       }
       // External URL: use Typst link syntax
       return `#link("${url}")[${text}]`;

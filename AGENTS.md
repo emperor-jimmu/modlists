@@ -14,6 +14,7 @@ This is a curated modlist and game guide for **GTA IV version 1.0.8.0** (Novembe
 
 - `guide/*.md` — authoritative source for all guide content
 - `src/` — Typst PDF generation only (template, converter, chapters)
+- `assets/` — cover image and other static assets
 - `conflicts.txt` — internal, excluded from PDF
 - `ideas.txt` — internal, excluded from PDF
 

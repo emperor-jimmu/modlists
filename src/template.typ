@@ -11,7 +11,7 @@
 
 // Set document defaults
 #set text(
-  font: "Georgia",
+  font: ("Linux Libertine", "Noto Serif", "Georgia"),
   size: 10pt,
   fill: liberty-body-text,
 )
@@ -25,17 +25,17 @@
 
 // Heading styles
 #show heading.where(level: 1): it => [
-  #set text(font: ("Segoe UI", "Arial"), weight: "bold", size: 22pt, fill: liberty-heading)
+  #set text(font: ("Fira Sans", "Roboto"), weight: "bold", size: 22pt, fill: liberty-heading)
   #block(below: 0.5cm, above: 1cm, it)
 ]
 
 #show heading.where(level: 2): it => [
-  #set text(font: ("Segoe UI", "Arial"), weight: "bold", size: 16pt, fill: liberty-heading)
+  #set text(font: ("Fira Sans", "Roboto"), weight: "bold", size: 16pt, fill: liberty-heading)
   #block(below: 0.3cm, above: 0.6cm, it)
 ]
 
 #show heading.where(level: 3): it => [
-  #set text(font: ("Segoe UI", "Arial"), weight: "bold", size: 12pt, fill: liberty-heading)
+  #set text(font: ("Fira Sans", "Roboto"), weight: "bold", size: 12pt, fill: liberty-heading)
   #block(below: 0.2cm, above: 0.4cm, it)
 ]
 
@@ -51,7 +51,7 @@
   it
 }
 
-// System impact badge
+// System impact badge — reserved for future mod entries
 #let sys-impact(details) = {
   box(
     fill: liberty-badge,
