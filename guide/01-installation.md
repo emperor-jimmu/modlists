@@ -32,7 +32,7 @@ If you are on a newer version (e.g., Complete Edition) you will need to downgrad
 
 **Current tested version:** `v3.18.0`
 
-1. Download the latest release from the [FusionFix GitHub page](https://github.com/ClonkAndre/GTAIVFusionFix/releases)
+1. Download version v3.18.0 from the [FusionFix releases page](https://github.com/ClonkAndre/GTAIVFusionFix/releases/tag/v3.18.0)
 2. Extract the archive to your GTA IV root folder (where `GTAIV.exe` lives)
 3. When prompted, **overwrite all files**
 4. Launch the game once to verify it works
@@ -73,4 +73,4 @@ When installing mods, always follow this order to avoid conflicts:
 | Black screen on launch | Try windowed mode (`-windowed` launch parameter) |
 | Low FPS | Reduce View Distance and Shadow Quality in graphics settings |
 | Missing textures | Set Texture Quality to High or Medium |
-| Controls not working | Check for conflicting mods or reinstall FusionFix |
+| Controls not working | Verify control bindings in Settings → Controls, then reinstall FusionFix |
