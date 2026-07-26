@@ -7,6 +7,9 @@ output/
 guide/mod-data-converted/
 *.pdf
 
+# Design docs (superpowers skill artifacts)
+docs/
+
 # OS
 .DS_Store
 Thumbs.db

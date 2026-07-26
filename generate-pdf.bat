@@ -33,7 +33,7 @@ if not exist "typst\config.typ" (
 )
 
 :: Install Node dependencies if needed
-echo [1/4] Checking Node dependencies...
+echo [1/3] Checking Node dependencies...
 if not exist "node_modules" (
     echo Installing dependencies...
     call npm install
@@ -44,24 +44,19 @@ if not exist "node_modules" (
 )
 
 :: YAML to JSON conversion
-echo [2/4] Converting mod data YAML to JSON...
+echo [2/3] Converting mod data YAML to JSON...
 node scripts/convert-data.js
 if !ERRORLEVEL! neq 0 (
     echo ERROR: YAML conversion failed.
     exit /b 1
 )
 
-:: Update author in config
-echo [3/4] Setting author to "%AUTHOR%"...
-set SETAUTHOR=%AUTHOR%
-powershell -command "$f=Get-Content 'typst/config.typ'; $f -replace 'project-author = \".*\"', ('project-author = \"' + $env:SETAUTHOR + '\"') | Set-Content 'typst/config.typ'"
-
 :: Ensure output directory exists
 if not exist "output" mkdir output
 
 :: Compile PDF
-echo [4/4] Compiling PDF...
-typst compile --root . typst/template.typ output/Stellar-Dominion.pdf
+echo [3/3] Compiling PDF...
+typst compile --root . --input author="%AUTHOR%" typst/template.typ output/Stellar-Dominion.pdf
 if !ERRORLEVEL! neq 0 (
     echo ERROR: Typst compilation failed.
     exit /b 1
