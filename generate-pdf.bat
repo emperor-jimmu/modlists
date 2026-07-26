@@ -54,14 +54,14 @@ if !ERRORLEVEL! neq 0 (
 :: Update author in config
 echo [3/4] Setting author to "%AUTHOR%"...
 set SETAUTHOR=%AUTHOR%
-powershell -command "$f=Get-Content 'typst/config.typ'; $f -replace 'project-author = \".*\"', 'project-author = \"' + $env:SETAUTHOR + '\"' | Set-Content 'typst/config.typ'"
+powershell -command "$f=Get-Content 'typst/config.typ'; $f -replace 'project-author = \".*\"', ('project-author = \"' + $env:SETAUTHOR + '\"') | Set-Content 'typst/config.typ'"
 
 :: Ensure output directory exists
 if not exist "output" mkdir output
 
 :: Compile PDF
 echo [4/4] Compiling PDF...
-typst compile typst/template.typ output/Stellar-Dominion.pdf
+typst compile --root . typst/template.typ output/Stellar-Dominion.pdf
 if !ERRORLEVEL! neq 0 (
     echo ERROR: Typst compilation failed.
     exit /b 1

@@ -66,21 +66,31 @@
 
 // Wave sections
 #for wave-num in range(0, 4) {
-  #pagebreak()
-  #wave-heading[Wave #wave-num: #wave-names.at(wave-num)]
+  pagebreak()
+  wave-heading[Wave #wave-num: #wave-names.at(wave-num)]
 
-  == Mod List
+  if wave-num == 0 {
+    include("../guide/wave-0-how-to-play.typ")
+  } else if wave-num == 1 {
+    include("../guide/wave-1-strategy.typ")
+  } else if wave-num == 2 {
+    include("../guide/wave-2-strategy.typ")
+  } else if wave-num == 3 {
+    include("../guide/wave-3-strategy.typ")
+  }
+
+  heading(level: 2)[Mod List]
 
   let wave-mods = mods-up-to(wave-num)
   let grouped = group-by-category(wave-mods)
 
-  #category-section("Total Conversions", grouped.at("total-conversion"))
-  #category-section("Overhauls", grouped.at("overhaul"))
-  #category-section("Standalone Additions", grouped.at("standalone"))
-  #category-section("Utilities & Libraries", grouped.at("utility"))
-  #category-section("Visual", grouped.at("visual"))
-  #category-section("Audio", grouped.at("audio"))
-  #category-section("UI", grouped.at("ui"))
+  category-section("Total Conversions", grouped.at("total-conversion"))
+  category-section("Overhauls", grouped.at("overhaul"))
+  category-section("Standalone Additions", grouped.at("standalone"))
+  category-section("Utilities & Libraries", grouped.at("utility"))
+  category-section("Visual", grouped.at("visual"))
+  category-section("Audio", grouped.at("audio"))
+  category-section("UI", grouped.at("ui"))
 }
 
 #pagebreak()

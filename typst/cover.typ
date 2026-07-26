@@ -12,14 +12,20 @@
       // Background decorative elements
       block(height: 100%, width: 100%, {
         // Top-right accent
-        path(
-          (100%, 0%), (100%, 30%), (70%, 0%),
-          fill: color-steel.with-alpha(20%),
+        curve(
+          fill: color-steel.transparentize(80%),
+          curve.move((100%, 0%)),
+          curve.line((100%, 30%)),
+          curve.line((70%, 0%)),
+          curve.close(),
         )
         // Bottom-left accent
-        path(
-          (0%, 100%), (30%, 100%), (0%, 70%),
-          fill: color-gold.with-alpha(15%),
+        curve(
+          fill: color-gold.transparentize(85%),
+          curve.move((0%, 100%)),
+          curve.line((30%, 100%)),
+          curve.line((0%, 70%)),
+          curve.close(),
         )
       })
 

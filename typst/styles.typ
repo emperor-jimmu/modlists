@@ -47,7 +47,7 @@
     fill: color-white,
     inset: 12pt,
     radius: 4pt,
-    margin: (bottom: 8pt),
+    below: 8pt,
     [
       #if is-link {
         link(mod-url)[#text(size: 12pt, weight: "bold", fill: color-steel, mod.name)]
@@ -59,18 +59,18 @@
       #linebreak()
       #mod.description
       #if "mechanics" in mod {
-        #linebreak()
-        #text(size: 10pt, fill: color-navy, weight: "semibold")[Mechanics: ]
-        #mod.mechanics
+        linebreak()
+        text(size: 10pt, fill: color-navy, weight: "semibold")[Mechanics: ]
+        mod.mechanics
       }
       #if "dependencies" in mod and mod.dependencies.len() > 0 {
-        #linebreak()
-        #text(size: 10pt, fill: color-steel)[Dependencies: ]
-        #mod.dependencies.join(", ")
+        linebreak()
+        text(size: 10pt, fill: color-steel)[Dependencies: ]
+        mod.dependencies.join(", ")
       }
       #if "dlc_required" in mod and mod.dlc_required != "" {
-        #linebreak()
-        #text(size: 9pt, fill: color-gold)[DLC Required: #mod.dlc_required]
+        linebreak()
+        text(size: 9pt, fill: color-gold)[DLC Required: #mod.dlc_required]
       }
     ],
   )
