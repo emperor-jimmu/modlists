@@ -23,7 +23,7 @@ OpenIV's *mods* folder creates a virtual override system:
 
 1. In OpenIV, go to *Tools > Package Installer*
 2. Set the install path to your GTA V directory
-3. Most mod packages will install into */mods/* automatically
+3. Most mod packages will install into `/mods/` automatically
 
 The *mods* folder keeps the original game files untouched. To disable all mods for GTA Online, rename the *mods* folder to *mods_off*.
 
@@ -32,9 +32,9 @@ The *mods* folder keeps the original game files untouched. To disable all mods f
 Some older mods require direct editing of game archives (.rpf files). Only do this if the mod's install guide explicitly requires it. Always back up the original .rpf first.
 
 The most common paths:
-- *update/update.rpf* — DLC content, most common target
-- *x64/* — Base game textures and models
-- *common.rpf* — Shared data and scripts
+- `update/update.rpf` — DLC content, most common target
+- `x64/` — Base game textures and models
+- `common.rpf` — Shared data and scripts
 
 == ScriptHookV
 

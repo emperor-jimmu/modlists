@@ -14,7 +14,7 @@
 
 // ── Cover Page ──────────────────────────────────
 #set page(fill: rgb("#1a1a1a"))
-#align(center + middle, [
+#align(center + horizon, [
   #image("assets/logo.jpg", width: 55%)
   #v(1.5cm)
   #text(size: 38pt, weight: "bold", fill: rgb("#D4A843"))[Santos Supreme]
@@ -35,7 +35,7 @@
 #let wave-divider(title) = {
   pagebreak()
   set page(fill: rgb("#1a1a1a"))
-  align(center + middle, text(size: 28pt, weight: "bold", fill: rgb("#D4A843"))[#title])
+  align(center + horizon, text(size: 28pt, weight: "bold", fill: rgb("#D4A843"))[#title])
   pagebreak()
   set page(fill: white)
   set text(fill: rgb("#2A2A2A"))
@@ -45,8 +45,6 @@
 //  WAVE 0: Getting By
 // ═════════════════════════════════════════════
 #wave-divider("Wave 0: Getting By")
-
-#set heading(numbering: "0.")
 
 #include "guide/wave0/00-roleplay.typ"
 #include "guide/wave0/01-before-you-begin.typ"
