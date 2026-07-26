@@ -23,3 +23,8 @@ Name (clickable link) | Author | Category (Graphics/Gameplay/UI/Audio/Weapons/Ho
 
 ## Content Files
 All sections: guide/master.typ -> includes theme.typ + each section .typ file.
+
+## Typst Syntax Rules
+- Tables use `#table(columns: (...), [...], [...])` — NO Markdown pipe tables (`|...|`)
+- Bold uses `[*text*]` — NO `**text**`
+- Dollar signs before numbers need backslash: `\$500` (otherwise Typst parses as math mode)

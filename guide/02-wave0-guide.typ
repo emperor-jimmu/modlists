@@ -19,47 +19,53 @@ gameplay. Install them before starting your Wave 0 playthrough.
 
 === Controller (Xbox / PlayStation)
 
-| Stick / Button | Action |
-|----------------|--------|
-| Left stick | Move / Swim |
-| Right stick | Look / Aim |
-| A / Cross | Sprint / Climb / Jump / Horse gallop |
-| B / Circle | Melee / Tackle / Dismount horse |
-| X / Square | Interact / Pick up / Cover |
-| Y / Triangle | Access weapon wheel / Call horse |
-| LT / L2 | Aim weapon |
-| RT / R2 | Fire weapon / Accelerate horse |
-| LB / L1 | Run / Horse brake |
-| RB / R1 | Shoulder swap / Horse jump |
-| D-pad Up | Open satchel |
-| D-pad Down | Whistle / Call horse |
-| D-pad Left | Toggle weapon aim mode |
-| D-pad Right | Open item wheel |
-| Right stick (click) | Enter Dead Eye / Eagle Eye |
-| Left stick (click) | Crouch / Stand |
-| View / Back | Open map |
+#table(
+  columns: (auto, auto),
+  stroke: 0.5pt + luma(180),
+  [*Stick / Button*], [*Action*],
+  [Left stick], [Move / Swim],
+  [Right stick], [Look / Aim],
+  [A / Cross], [Sprint / Climb / Jump / Horse gallop],
+  [B / Circle], [Melee / Tackle / Dismount horse],
+  [X / Square], [Interact / Pick up / Cover],
+  [Y / Triangle], [Access weapon wheel / Call horse],
+  [LT / L2], [Aim weapon],
+  [RT / R2], [Fire weapon / Accelerate horse],
+  [LB / L1], [Run / Horse brake],
+  [RB / R1], [Shoulder swap / Horse jump],
+  [D-pad Up], [Open satchel],
+  [D-pad Down], [Whistle / Call horse],
+  [D-pad Left], [Toggle weapon aim mode],
+  [D-pad Right], [Open item wheel],
+  [Right stick (click)], [Enter Dead Eye / Eagle Eye],
+  [Left stick (click)], [Crouch / Stand],
+  [View / Back], [Open map],
+)
 
 === Keyboard (PC)
 
-| Key | Action |
-|-----|--------|
-| WASD | Move |
-| Mouse | Look / Aim |
-| Left click | Fire / Interact |
-| Right click | Aim down sights |
-| Shift | Sprint / Gallop |
-| Ctrl | Crouch |
-| Space | Jump / Climb / Cover |
-| E | Interact / Pick up |
-| R | Reload / Switch throwable |
-| Q | Shoulder swap |
-| Tab | Weapon wheel |
-| Caps Lock | Run / Horse sprint |
-| F | Melee / Tackle |
-| V | Enter Dead Eye / Eagle Eye |
-| M | Map |
-| B | Satchel |
-| L | Open compendium |
+#table(
+  columns: (auto, auto),
+  stroke: 0.5pt + luma(180),
+  [*Key*], [*Action*],
+  [WASD], [Move],
+  [Mouse], [Look / Aim],
+  [Left click], [Fire / Interact],
+  [Right click], [Aim down sights],
+  [Shift], [Sprint / Gallop],
+  [Ctrl], [Crouch],
+  [Space], [Jump / Climb / Cover],
+  [E], [Interact / Pick up],
+  [R], [Reload / Switch throwable],
+  [Q], [Shoulder swap],
+  [Tab], [Weapon wheel],
+  [Caps Lock], [Run / Horse sprint],
+  [F], [Melee / Tackle],
+  [V], [Enter Dead Eye / Eagle Eye],
+  [M], [Map],
+  [B], [Satchel],
+  [L], [Open compendium],
+)
 
 == How to Play
 
