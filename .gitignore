@@ -1,0 +1,7 @@
+# Typst build artifacts
+src/chapters/
+output/
+
+# OS junk
+Thumbs.db
+.DS_Store
