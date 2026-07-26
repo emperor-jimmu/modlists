@@ -7,11 +7,11 @@ _Red Dead Redemption 2_ version 1.32 (the March 19, 2024 patch).
 
 This guide is structured as two distinct playthrough "waves":
 
-- [*Wave 0*] is designed for first-time or casual players. It recommends only
+- *Wave 0* is designed for first-time or casual players. It recommends only
   user interface and quality-of-life mods, keeping the vanilla experience
   intact while polishing rough edges. The accompanying walkthrough helps you
   master core mechanics.
-- [*Wave 1*] transforms the game with graphics enhancements, additional
+- *Wave 1* transforms the game with graphics enhancements, additional
   content, and deeper mechanics. It assumes you have completed the story at
   least once and are ready for a more challenging, immersive experience.
 

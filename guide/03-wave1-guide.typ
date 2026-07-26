@@ -19,47 +19,44 @@ Install _all_ of these on a clean game installation before starting.
 
 === Dead Eye Mastery
 
-- [*Manual painting (all chapters):*] Enter Dead Eye, paint targets
+- *Manual painting (all chapters):* Enter Dead Eye, paint targets
   yourself with RB / R1, then release. This lets you choose exactly where
   each bullet lands — vital for stealth and high-value targets
-- [*Regen loop:*] Pop Dead Eye, paint 3-4 heads, release, immediately
+- *Regen loop:* Pop Dead Eye, paint 3-4 heads, release, immediately
   drink chewing tobacco, repeat. You can clear a room before the first body
   hits the floor
-- [*Snake oil:*] Craft Snake Oil (vanilla flower + rum) for dead eye regen
+- *Snake oil:* Craft Snake Oil (vanilla flower + rum) for dead eye regen
   without the blurry vision side effect of tonics
 
 === Weapon Loadouts
 
-#table(
-  columns: (auto, auto, auto, auto),
-  stroke: 0.5pt + luma(180),
-  [*Scenario*], [*Primary*], [*Secondary*], [*Sidearm*],
-  [Open field], [Carcano rifle], [Lancaster repeater], [Dual Schofields],
-  [Close quarters], [Pump-action shotgun], [Semi-auto pistol], [Machete],
-  [Stealth], [Improved bow], [Varmint rifle], [Throwing knives],
-  [Bounty capture], [Bolt-action rifle], [Repeater], [Lasso + reinforced],
-)
+| Scenario | Primary | Secondary | Sidearm |
+|----------|---------|-----------|---------|
+| Open field | Carcano rifle | Lancaster repeater | Dual Schofields |
+| Close quarters | Pump-action shotgun | Semi-auto pistol | Machete |
+| Stealth | Improved bow | Varmint rifle | Throwing knives |
+| Bounty capture | Bolt-action rifle | Repeater | Lasso + reinforced |
 
 === Advanced Gunplay
 
-- [*Paint it black:*] This Dead Eye ability (unlocked level 6, Chapter 4)
+- *Paint it black:* This Dead Eye ability (unlocked level 6, Chapter 4)
   lets you paint targets anywhere in the reticle, not just on the body.
   Combine with express ammo for one-shot kills at any range
-- [*Dual wielding:*] Equip two sidearms from the weapon wheel. Fire
+- *Dual wielding:* Equip two sidearms from the weapon wheel. Fire
   alternately for double the rate of fire, or fire both at once (hold both
   triggers) for a devastating burst
-- [*Ammo types:*] Express (more damage), High Velocity (more range, better
+- *Ammo types:* Express (more damage), High Velocity (more range, better
   penetration), Split Point (crafted, best accuracy + damage). Always use
   Express or Split Point for combat — standard ammo is for practice
 
 === Mounted Combat
 
-- [*Dead Eye on horseback:*] Paint and fire while galloping. The slower
+- *Dead Eye on horseback:* Paint and fire while galloping. The slower
   your horse, the tighter your reticle
-- [*Pendulum shot:*] Fire at the top of the gallop bounce for maximum
+- *Pendulum shot:* Fire at the top of the gallop bounce for maximum
   accuracy. The game compensates for your movement — lead your target
   by about one horse length
-- [*Dismount tactic:*] Dismount into cover to turn a running gunfight into
+- *Dismount tactic:* Dismount into cover to turn a running gunfight into
   an ambush. Your horse will flee a short distance and return when
   whistled
 
@@ -83,38 +80,35 @@ other satchels — 99 carry capacity on every item):
 
 Certain herbs are incredibly valuable and plentiful:
 
-#table(
-  columns: (auto, auto, auto, auto),
-  stroke: 0.5pt + luma(180),
-  [*Herb*], [*Location*], [*Sell Price*], [*Notes*],
-  [Ginseng], [Forest floors], [\$1.50], [Common, respawns fast],
-  [Sage], [Great Plains, New Hanover], [\$0.75], [Needed for potent tonics],
-  [Orchids], [Bayou, Bluewater Marsh], [\$3.50], [Rare, tied to Algernon mission],
-  [Oleander], [Bayou edges], [\$1.00], [Toxic — used for poisonous weapons],
-)
+| Herb | Location | Sell Price | Notes |
+|------|----------|------------|-------|
+| Ginseng | Forest floors | \$1.50 | Common, respawns fast |
+| Sage | Great Plains, New Hanover | \$0.75 | Needed for potent tonics |
+| Orchids | Bayou, Bluewater Marsh | \$3.50 | Rare, tied to Algernon mission |
+| Oleander | Bayou edges | \$1.00 | Toxic — used for poisonous weapons |
 
 == Advanced Survival
 
 === Traversal Efficiency
 
-- [*Fast travel network:*] In Wave 1 you should unlock all stagecoach
+- *Fast travel network:* In Wave 1 you should unlock all stagecoach
   stations and train routes early. Combine with camp fast travel for
   near-instant movement across the map
-- [*Horse rotation:*] Keep 2-3 horses at camp. Use a war horse (Turkoman,
+- *Horse rotation:* Keep 2-3 horses at camp. Use a war horse (Turkoman,
   Ardennes) for combat zones and a race horse (Arabian, Missouri Fox
   Trotter) for traversing long distances. Switch at camp or stables
-- [*Waypoint chaining:*] Set a waypoint to the farthest destination, then
+- *Waypoint chaining:* Set a waypoint to the farthest destination, then
   set intermediate waypoints at stables and fence locations along the
   route — never backtrack
 
 === Weather and Environment
 
-- [*Cold weather:*] New Hanover and Ambarino drain your health core if
+- *Cold weather:* New Hanover and Ambarino drain your health core if
   Arthur isn't wearing cold-weather gear. Keep a warm outfit (sheepskin
   jacket, gloves, hat) on your horse
-- [*Bayou:*] Saint Denis and Lagras have high disease risk. Eat cooked
+- *Bayou:* Saint Denis and Lagras have high disease risk. Eat cooked
   food (not raw) and sleep in hotels to reset
-- [*Night:*] Enemies have lower vision at night. Use the cover of darkness
+- *Night:* Enemies have lower vision at night. Use the cover of darkness
   for stealth approaches and train robberies
 
 == Playstyle Suggestions
@@ -181,9 +175,9 @@ Documents/Rockstar Games/RDR2/Profiles/
 
 Heavy mod loads impact performance. Recommended settings:
 
-- [*Resolution:*] 1920x1080 or 2560x1440 (not 4K with heavy graphics mods)
-- [*Texture Quality:*] Ultra
-- [*Reflection Quality:*] Medium
-- [*Water Quality:*] Medium
-- [*Volumetrics:*] Low
-- [*Tree Tessellation:*] Off
+- *Resolution:* 1920x1080 or 2560x1440 (not 4K with heavy graphics mods)
+- *Texture Quality:* Ultra
+- *Reflection Quality:* Medium
+- *Water Quality:* Medium
+- *Volumetrics:* Low
+- *Tree Tessellation:* Off

@@ -85,20 +85,20 @@ session looks like:
 
 === Navigation
 
-- [*Waypoint:*] Open the map (M / View), set a waypoint, follow the red
+- *Waypoint:* Open the map (M / View), set a waypoint, follow the red
   line on the mini-map
-- [*Cinematic travel:*] Hold the gallop button on a road, then hold the
+- *Cinematic travel:* Hold the gallop button on a road, then hold the
   cinematic view button — Arthur auto-rides to the waypoint
-- [*Fast travel:*] Upgrade Dutch's lodging at camp to unlock fast travel
+- *Fast travel:* Upgrade Dutch's lodging at camp to unlock fast travel
   from Arthur's bed. Stagecoaches in towns also fast travel between cities
 
 === Mission Structure
 
-- [*Yellow icons:*] Main story — progress the narrative
-- [*White icons:*] Side content — stranger missions, bounties, homesteads
-- [*Blue icons:*] Companion activities — build relationships with gang
+- *Yellow icons:* Main story — progress the narrative
+- *White icons:* Side content — stranger missions, bounties, homesteads
+- *Blue icons:* Companion activities — build relationships with gang
   members, unlock perks
-- [*Dotted circles:*] Random encounters — dynamic events that appear on the
+- *Dotted circles:* Random encounters — dynamic events that appear on the
   map when nearby
 
 Most missions are forgiving but reward clean execution: fewer deaths mean
@@ -106,40 +106,37 @@ better accuracy stats and higher end-of-mission payouts.
 
 === Open-World Activities
 
-- [*Hunting & fishing:*] Primary income source in the early game
-- [*Treasure hunting:*] Find maps on NPCs or at points of interest — follow
+- *Hunting & fishing:* Primary income source in the early game
+- *Treasure hunting:* Find maps on NPCs or at points of interest — follow
   the clues for gold bars (\$500 each)
-- [*Exploration:*] The map is filled with cabins, caves, and unique items
+- *Exploration:* The map is filled with cabins, caves, and unique items
   (cigarette cards, dinosaur bones, rock carvings)
-- [*Gambling:*] Dominoes, poker, and blackjack in towns and camp
+- *Gambling:* Dominoes, poker, and blackjack in towns and camp
 
 == Basic Strategy
 
 === Combat Fundamentals
 
-- [*Use cover:*] LT / right-click to snap to cover. Peek and shoot rather
+- *Use cover:* LT / right-click to snap to cover. Peek and shoot rather
   than standing in the open
-- [*Headshots:*] One bullet to the head kills most enemies regardless of
+- *Headshots:* One bullet to the head kills most enemies regardless of
   weapon — prioritize accuracy over volume
-- [*Weapon selection:*] Keep a rifle (bolt-action or Springfield) for range,
+- *Weapon selection:* Keep a rifle (bolt-action or Springfield) for range,
   a repeater (Lancaster) for mid-range, and a sidearm (Schofield or
   Cattleman) for close quarters
-- [*Dead Eye in combat:*] Pop Dead Eye when outnumbered, paint targets on
+- *Dead Eye in combat:* Pop Dead Eye when outnumbered, paint targets on
   the nearest threats (usually the ones shooting at you), release to fire.
   This conserves ammo and health
 
 === Beginner Money-Making
 
-#table(
-  columns: (auto, auto, auto),
-  stroke: 0.5pt + luma(180),
-  [*Method*], [*Early Access*], [*Payout*],
-  [Sell perfect pelts to Trapper], [Chapter 2], [\$5-15 per pelt],
-  [Treasure maps], [Chapter 2], [\$500 per gold bar],
-  [Loot enemies], [Always], [\$1-5 per body],
-  [Sell herbs to doctor], [Chapter 2], [\$0.50-2 each],
-  [Bounty hunting], [Chapter 2 (Valentine)], [\$10-30 per target],
-)
+| Method | Early Access | Payout |
+|--------|-------------|--------|
+| Sell perfect pelts to Trapper | Chapter 2 | \$5-15 per pelt |
+| Treasure maps | Chapter 2 | \$500 per gold bar |
+| Loot enemies | Always | \$1-5 per body |
+| Sell herbs to doctor | Chapter 2 | \$0.50-2 each |
+| Bounty hunting | Chapter 2 (Valentine) | \$10-30 per target |
 
 == Core Mechanics
 
@@ -148,9 +145,9 @@ better accuracy stats and higher end-of-mission payouts.
 Dead Eye is your most powerful tool. It slows time, letting you paint shots
 on multiple targets. The system unlocks in stages:
 
-- [*Chapter 1 (Colter):*] Manual painting — tag targets and fire
-- [*Chapter 2 (Horseshoe Overlook):*] Auto-paint on nearby enemies
-- [*Later chapters:*] Critical shots and enhanced duration
+- *Chapter 1 (Colter):* Manual painting — tag targets and fire
+- *Chapter 2 (Horseshoe Overlook):* Auto-paint on nearby enemies
+- *Later chapters:* Critical shots and enhanced duration
 
 _Tip:_ Upgrade Dead Eye by completing story missions and crafting tonics at
 campfires. _Valerian Root_ and _Chewing Tobacco_ refill the meter.
@@ -183,10 +180,10 @@ shop prices, and story outcomes.
 
 === Crafting
 
-- [*Pearson (Camp):*] Upgrades satchel capacity, camp equipment
-- [*Trapper (World):*] Craft unique outfits and gear from legendary animal
+- *Pearson (Camp):* Upgrades satchel capacity, camp equipment
+- *Trapper (World):* Craft unique outfits and gear from legendary animal
   parts
-- [*Campfire:*] Cook meat for health/stamina/dead eye buffs; craft ammo,
+- *Campfire:* Cook meat for health/stamina/dead eye buffs; craft ammo,
   tonics, and throwables
 
 == Survival Tips
@@ -196,11 +193,11 @@ shop prices, and story outcomes.
 Arthur has three cores: Health, Stamina, Dead Eye. Each has a grey inner
 ring (current value) and an outer ring (maximum capacity). Keep them full:
 
-- [*Eat regularly:*] Cooked meat restores all cores. Big game meat (bear,
+- *Eat regularly:* Cooked meat restores all cores. Big game meat (bear,
   wolf, alligator) provides the best saturation
-- [*Sleep:*] Sleeping at camp or hotels restores all cores and saves the
+- *Sleep:* Sleeping at camp or hotels restores all cores and saves the
   game
-- [*Tonics:*] Potent tonics restore a large chunk instantly — craft them
+- *Tonics:* Potent tonics restore a large chunk instantly — craft them
   at campfires with ginseng, sage, and other herbs
 
 === Horse Care
@@ -208,14 +205,14 @@ ring (current value) and an outer ring (maximum capacity). Keep them full:
 Your horse is your most important asset. If it dies before bonding level 4,
 the loss is permanent.
 
-- [*Bonding:*] Ride, brush, feed, and lead your horse to increase bonding
+- *Bonding:* Ride, brush, feed, and lead your horse to increase bonding
   (4 levels). Higher bonding unlocks rearing, drifting, and response
   whistling
-- [*Health:*] Horse reviver is essential — carry at least one at all times
-- [*Stamina:*] Tap the gallop button rhythmically rather than holding it
+- *Health:* Horse reviver is essential — carry at least one at all times
+- *Stamina:* Tap the gallop button rhythmically rather than holding it
   to conserve stamina. Calm your horse (G / LB) while riding to restore
   stamina
-- [*Stabling:*] Buy, sell, and manage horses at stables. Your primary horse
+- *Stabling:* Buy, sell, and manage horses at stables. Your primary horse
   is stored at camp
 
 === Camp Management
@@ -223,10 +220,10 @@ the loss is permanent.
 Donate money and supplies to the camp ledger. Upgrades unlock fast travel,
 better provisions, and improved morale. Priority upgrades:
 
-1. [*Dutch's lodging:*] unlocks fast travel from camp
-2. [*Medical supplies:*] unlocks health tonics and miracle tonics
-3. [*Leather-working tools:*] unlocks improved satchel crafting at Pearson
-4. [*Chicken coop / milk cow:*] steady supply of eggs and milk for gold
+1. *Dutch's lodging:* unlocks fast travel from camp
+2. *Medical supplies:* unlocks health tonics and miracle tonics
+3. *Leather-working tools:* unlocks improved satchel crafting at Pearson
+4. *Chicken coop / milk cow:* steady supply of eggs and milk for gold
    cores
 
 == Chapter Highlights
