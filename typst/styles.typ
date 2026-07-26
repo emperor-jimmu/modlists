@@ -1,4 +1,4 @@
-#import "config.typ": project-title, project-subtitle, project-author
+#import "config.typ": project-title
 
 // Color palette
 #let color-navy = rgb("#0B1021")
@@ -40,7 +40,8 @@
 
 // Mod card
 #let mod-card(mod) = {
-  let is-link = mod.url != ""
+  let mod-url = mod.at("url", default: "")
+  let is-link = mod-url != ""
   block(
     stroke: 1pt + color-steel,
     fill: color-white,
@@ -49,7 +50,7 @@
     margin: (bottom: 8pt),
     [
       #if is-link {
-        link(mod.url)[#text(size: 12pt, weight: "bold", fill: color-steel, mod.name)]
+        link(mod-url)[#text(size: 12pt, weight: "bold", fill: color-steel, mod.name)]
       } else {
         text(size: 12pt, weight: "bold", mod.name)
       }
