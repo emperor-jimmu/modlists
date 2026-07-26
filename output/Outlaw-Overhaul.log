@@ -1,0 +1,288 @@
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\00-foreword.typ:10:2
+   │
+10 │ - **Wave 0** is designed for first-time or casual players. It recommends only
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\00-foreword.typ:10:10
+   │
+10 │ - **Wave 0** is designed for first-time or casual players. It recommends only
+   │           ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\00-foreword.typ:14:2
+   │
+14 │ - **Wave 1** transforms the game with graphics enhancements, additional
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\00-foreword.typ:14:10
+   │
+14 │ - **Wave 1** transforms the game with graphics enhancements, additional
+   │           ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:25:2
+   │
+25 │ - **Chapter 1 (Colter):** Manual painting — tag targets and fire
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:25:23
+   │
+25 │ - **Chapter 1 (Colter):** Manual painting — tag targets and fire
+   │                        ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:26:2
+   │
+26 │ - **Chapter 2 (Horseshoe Overlook):** Auto-paint on nearby enemies
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:26:35
+   │
+26 │ - **Chapter 2 (Horseshoe Overlook):** Auto-paint on nearby enemies
+   │                                    ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:27:2
+   │
+27 │ - **Later chapters:** Critical shots and enhanced duration
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:27:19
+   │
+27 │ - **Later chapters:** Critical shots and enhanced duration
+   │                    ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:57:2
+   │
+57 │ - **Pearson (Camp):** Upgrades satchel capacity, camp equipment
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:57:19
+   │
+57 │ - **Pearson (Camp):** Upgrades satchel capacity, camp equipment
+   │                    ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:58:2
+   │
+58 │ - **Trapper (World):** Craft unique outfits and gear from legendary animal
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:58:20
+   │
+58 │ - **Trapper (World):** Craft unique outfits and gear from legendary animal
+   │                     ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:60:2
+   │
+60 │ - **Campfire:** Cook meat for health/stamina/dead eye buffs; craft ammo,
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\02-wave0-guide.typ:60:13
+   │
+60 │ - **Campfire:** Cook meat for health/stamina/dead eye buffs; craft ammo,
+   │              ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:32:2
+   │
+32 │ - **Moonshining:** Invest in the Moonshiner role early — passive income
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:32:16
+   │
+32 │ - **Moonshining:** Invest in the Moonshiner role early — passive income
+   │                 ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:33:2
+   │
+33 │ - **Treasure Maps:** Every map found in the wild pays $150–$400
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:33:18
+   │
+33 │ - **Treasure Maps:** Every map found in the wild pays $150–$400
+   │                   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:34:2
+   │
+34 │ - **Bounty Hunting:** Bring targets in alive for double the reward
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:34:19
+   │
+34 │ - **Bounty Hunting:** Bring targets in alive for double the reward
+   │                    ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:35:2
+   │
+35 │ - **Stagecoach Robberies:** Hit the Valentine–Saint Denis route for
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:35:25
+   │
+35 │ - **Stagecoach Robberies:** Hit the Valentine–Saint Denis route for
+   │                          ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:64:2
+   │
+64 │ - **Resolution:** 1920x1080 or 2560x1440 (not 4K with heavy graphics mods)
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:64:15
+   │
+64 │ - **Resolution:** 1920x1080 or 2560x1440 (not 4K with heavy graphics mods)
+   │                ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:65:2
+   │
+65 │ - **Texture Quality:** Ultra
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:65:20
+   │
+65 │ - **Texture Quality:** Ultra
+   │                     ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:66:2
+   │
+66 │ - **Reflection Quality:** Medium
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:66:23
+   │
+66 │ - **Reflection Quality:** Medium
+   │                        ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:67:2
+   │
+67 │ - **Water Quality:** Medium
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:67:18
+   │
+67 │ - **Water Quality:** Medium
+   │                   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:68:2
+   │
+68 │ - **Volumetrics:** Low
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:68:16
+   │
+68 │ - **Volumetrics:** Low
+   │                 ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:69:2
+   │
+69 │ - **Tree Tessellation:** Off
+   │   ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+
+warning: no text within stars
+   ┌─ \\?\H:\Projects\modguides\rdr2-modlist\guide\03-wave1-guide.typ:69:22
+   │
+69 │ - **Tree Tessellation:** Off
+   │                       ^^
+   │
+   = hint: using multiple consecutive stars (e.g. **) has no additional effect
+

@@ -13,7 +13,7 @@
 #set page(
   paper: "us-letter",
   margin: (x: 1.2in, y: 1in),
-  background: bg-color,
+  background: rect(fill: bg-color, width: 100%, height: 100%),
 )
 
 // Body text defaults
@@ -70,7 +70,7 @@
     ]
     #wave-badge(wave)
     #h(4pt)
-    #text(size: 9pt, fill: luma(120))[by _#author_  ·  #category]
+    #text(size: 9pt, fill: luma(120))[by #text(style: "italic")[#author]  ·  #category]
 
     #v(4pt)
     #desc
@@ -82,11 +82,11 @@
     ]
 
     #if notes != "" {
-      #text(size: 9pt, fill: luma(100))[*Install:* #notes]
+      text(size: 9pt, fill: luma(100))[*Install:* #notes]
     }
     #if conflicts != "" {
-      #v(2pt)
-      #text(size: 9pt, fill: accent-color)[*Conflicts:* #conflicts]
+      v(2pt)
+      text(size: 9pt, fill: accent-color)[*Conflicts:* #conflicts]
     }
   ]
   v(6pt)
