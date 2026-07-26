@@ -1,6 +1,5 @@
 # Typst build artifacts
 src/chapters/
-output/*
 
 # Typst caches
 .typst-cache/
