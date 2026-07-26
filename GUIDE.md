@@ -503,6 +503,8 @@ Time speed can be set via three modes (`speedMethod`):
 
 **Recommended settings** (`speedMethod = "SEASON"`):
 
+> **⚠ CRITICAL**: These settings MUST be edited directly in `config/betterdays-common.toml`. The in-game config screen (Mod List → Better Days → Config) does not support the `SEASON` mode and **will silently overwrite** your config back to `MINUTES` mode if opened. **Do not open Better Days' in-game config.**
+
 - `speedMethod = "SEASON"` — Day length varies by Serene Seasons sub-season. Summer days are longer, winter days shorter.
 - `seasonDayMinutes = 20.0` — Total day+night cycle in real minutes (vanilla baseline). 20 = same average length as vanilla.
 - `seasonLatitude = 48.0` — Central Europe latitude. Higher values = more extreme day-length swings between seasons.
@@ -630,6 +632,8 @@ Realistic water wakes and splashes when traveling on water. Works with Small Shi
 Controls day/night cycle length in **SEASON mode** — day length varies by Serene Seasons sub-season.
 
 Recommended config in `config/betterdays-common.toml`:
+
+> **⚠ CRITICAL**: Edit the file directly. The in-game config screen does not support `SEASON` mode and **will silently overwrite** it to `MINUTES`. Do not open Better Days' in-game config.
 
 - `speedMethod = "SEASON"`
 - `seasonDayMinutes = 20.0`, `seasonLatitude = 48.0`
