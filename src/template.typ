@@ -11,8 +11,8 @@
 
 // Set document defaults
 #set text(
-  font: ("Linux Libertine", "Noto Serif", "Georgia"),
-  size: 10pt,
+  font: ("Noto Serif", "Georgia"),
+  size: 11pt,
   fill: liberty-body-text,
 )
 
@@ -71,17 +71,17 @@
     fill: liberty-dark-blue,
     numbering: none,
   )[
-    #align(center + horizon, [
-      #block(height: 2cm)
-      #image(logo_path, width: 60%)
+    #align(center + top, [
       #block(height: 1.5cm)
-      #set text(fill: liberty-gold, size: 28pt, weight: "bold", font: ("Segoe UI", "Arial"))
+      #image(logo_path, width: 50%)
+      #block(height: 1cm)
+      #set text(fill: liberty-gold, size: 28pt, weight: "bold", font: ("Fira Sans", "Roboto"))
       #title
-      #block(height: 0.5cm)
-      #set text(fill: white, size: 14pt, font: "Georgia")
+      #block(height: 0.4cm)
+      #set text(fill: white, size: 14pt, font: ("Noto Serif", "Georgia"))
       #subtitle
-      #block(height: 0.3cm)
-      #set text(fill: rgb("#aaaaaa"), size: 10pt, font: ("Segoe UI", "Arial"))
+      #block(height: 0.2cm)
+      #set text(fill: rgb("#aaaaaa"), size: 10pt, font: ("Fira Sans", "Roboto"))
       #waves
     ])
   ]

@@ -14,7 +14,7 @@
 // Table of Contents page
 #page[
   #set heading(numbering: none)
-  #set text(font: ("Segoe UI", "Arial"), size: 14pt, weight: "bold", fill: liberty-heading)
+  #set text(font: ("Fira Sans", "Roboto"), size: 14pt, weight: "bold", fill: liberty-heading)
   Table of Contents
   #block(height: 0.5cm)
   #outline(
