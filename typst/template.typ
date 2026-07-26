@@ -1,6 +1,5 @@
 #import "styles.typ": *
 #import "cover.typ": cover-page
-#import "config.typ": project-title
 
 // Load mod data (converted JSON)
 #let wave-0-data = json("../guide/mod-data-converted/wave-0.json")
@@ -33,7 +32,7 @@
     let cat = mod.at("category", default: "standalone")
     let key = if cat in result { cat } else { "standalone" }
     let current = result.at(key)
-    result = result.insert(key, current + (mod,))
+    result.insert(key, current + (mod,))
   }
   result
 }
