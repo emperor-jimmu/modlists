@@ -40,6 +40,16 @@ for (const file of files) {
     // But don't convert ** (already handled) or lines inside code blocks
     processed = processed.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '_$1_');
 
+    // Convert [text](url) markdown links to Typst link syntax
+    processed = processed.replace(/\[([^\]]+)\]\((#?[^)]+)\)/g, (match, text, url) => {
+      if (url.startsWith('#')) {
+        // Internal anchor: escape the hash so Typst renders it literally
+        return `[${text}](${url.replace('#', '\\#')})`;
+      }
+      // External URL: use Typst link syntax
+      return `#link("${url}")[${text}]`;
+    });
+
     return processed;
   });
 
