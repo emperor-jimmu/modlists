@@ -1,6 +1,10 @@
 # Typst build artifacts
 src/chapters/
-output/
+output/*
+
+# Typst caches
+.typst-cache/
+typst-packages/
 
 # OS junk
 Thumbs.db
