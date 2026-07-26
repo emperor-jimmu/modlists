@@ -30,12 +30,15 @@ Install _all_ of these on a clean game installation before starting.
 
 === Weapon Loadouts
 
-| Scenario | Primary | Secondary | Sidearm |
-|----------|---------|-----------|---------|
-| Open field | Carcano rifle | Lancaster repeater | Dual Schofields |
-| Close quarters | Pump-action shotgun | Semi-auto pistol | Machete |
-| Stealth | Improved bow | Varmint rifle | Throwing knives |
-| Bounty capture | Bolt-action rifle | Repeater | Lasso + reinforced |
+#table(
+  columns: (auto, auto, auto, auto),
+  stroke: 0.5pt + luma(180),
+  [*Scenario*], [*Primary*], [*Secondary*], [*Sidearm*],
+  [Open field], [Carcano rifle], [Lancaster repeater], [Dual Schofields],
+  [Close quarters], [Pump-action shotgun], [Semi-auto pistol], [Machete],
+  [Stealth], [Improved bow], [Varmint rifle], [Throwing knives],
+  [Bounty capture], [Bolt-action rifle], [Repeater], [Lasso + reinforced],
+)
 
 === Advanced Gunplay
 
@@ -80,12 +83,15 @@ other satchels — 99 carry capacity on every item):
 
 Certain herbs are incredibly valuable and plentiful:
 
-| Herb | Location | Sell Price | Notes |
-|------|----------|------------|-------|
-| Ginseng | Forest floors | \$1.50 | Common, respawns fast |
-| Sage | Great Plains, New Hanover | \$0.75 | Needed for potent tonics |
-| Orchids | Bayou, Bluewater Marsh | \$3.50 | Rare, tied to Algernon mission |
-| Oleander | Bayou edges | \$1.00 | Toxic — used for poisonous weapons |
+#table(
+  columns: (auto, auto, auto, auto),
+  stroke: 0.5pt + luma(180),
+  [*Herb*], [*Location*], [*Sell Price*], [*Notes*],
+  [Ginseng], [Forest floors], [\$2.50], [Common, respawns fast],
+  [Sage], [Great Plains, New Hanover], [\$2.75], [Needed for potent tonics],
+  [Orchids], [Bayou, Bluewater Marsh], [\$2.50], [Rare, tied to Algernon mission],
+  [Oleander], [Bayou edges], [\$2.00], [Toxic — used for poisonous weapons],
+)
 
 == Advanced Survival
 

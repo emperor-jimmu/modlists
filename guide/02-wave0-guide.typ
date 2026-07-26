@@ -130,13 +130,16 @@ better accuracy stats and higher end-of-mission payouts.
 
 === Beginner Money-Making
 
-| Method | Early Access | Payout |
-|--------|-------------|--------|
-| Sell perfect pelts to Trapper | Chapter 2 | \$5-15 per pelt |
-| Treasure maps | Chapter 2 | \$500 per gold bar |
-| Loot enemies | Always | \$1-5 per body |
-| Sell herbs to doctor | Chapter 2 | \$0.50-2 each |
-| Bounty hunting | Chapter 2 (Valentine) | \$10-30 per target |
+#table(
+  columns: (auto, auto, auto),
+  stroke: 0.5pt + luma(180),
+  [*Method*], [*Early Access*], [*Payout*],
+  [Sell perfect pelts to Trapper], [Chapter 2], [\$2-15 per pelt],
+  [Treasure maps], [Chapter 2], [\$200 per gold bar],
+  [Loot enemies], [Always], [\$2-5 per body],
+  [Sell herbs to doctor], [Chapter 2], [\$2.50-2 each],
+  [Bounty hunting], [Chapter 2 (Valentine)], [\$20-30 per target],
+)
 
 == Core Mechanics
 
