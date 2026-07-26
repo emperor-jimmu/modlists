@@ -1,13 +1,10 @@
 {
   "name": "x4-foundations-modlist",
   "version": "1.0.0",
-  "description": "An X4 Foundations v9.0 modlist and game guide organized in progressive waves.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Stellar Dominion — X4 Foundations Modlist & Guide",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "convert": "node scripts/convert-data.js",
+    "build": "node scripts/convert-data.js && typst compile typst/template.typ output/Stellar-Dominion.pdf"
   },
   "keywords": [],
   "author": "",
