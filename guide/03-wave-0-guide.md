@@ -67,6 +67,8 @@ GTA IV's driving physics are simulation-leaning. Key principles:
 - **Shotgun** — devastating up close, useless at range
 - **Assault Rifle** — best all-around weapon, available later
 - **Grenades** — excellent for groups in cover, dangerous up close
+- **Melee** — free, silent, effective against single targets
+- **Sniper Rifle** — extreme range, one-hit kills, limited ammo
 
 ### Wanted System
 
