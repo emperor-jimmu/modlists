@@ -3,33 +3,29 @@
   paper: "a4",
   margin: (x: 2.5cm, y: 2cm),
 )
-#set text(font: ("Georgia", "Times New Roman"), size: 11pt)
+#set text(font: ("Georgia", "Times New Roman"), size: 12pt)
 #set par(justify: true, leading: 0.45em)
 #set heading(numbering: "1.")
-#show heading.where(level: 1): set text(size: 20pt, weight: "bold", fill: rgb("#8B6914"))
-#show heading.where(level: 2): set text(size: 15pt, weight: "bold", fill: rgb("#6B4E0A"))
-#show heading.where(level: 3): set text(size: 12pt, weight: "bold", fill: rgb("#5A3E08"))
+#show heading.where(level: 1): set text(size: 24pt, weight: "bold", fill: rgb("#8B6914"))
+#show heading.where(level: 2): set text(size: 18pt, weight: "bold", fill: rgb("#6B4E0A"))
+#show heading.where(level: 3): set text(size: 14pt, weight: "bold", fill: rgb("#5A3E08"))
 #show link: text.with(fill: rgb("#2E5A88"))
-#show list.item: set text(size: 10.5pt)
+#show list.item: set text(size: 11.5pt)
 
 // ── Cover Page ──────────────────────────────────
 #set page(fill: rgb("#1a1a1a"))
 #align(center + horizon, [
-  #image("assets/logo.jpg", width: 55%)
+  #image("assets/logo.jpg", width: 65%)
   #v(1.5cm)
-  #text(size: 38pt, weight: "bold", fill: rgb("#D4A843"))[Santos Supreme]
-  #v(0.6cm)
   #text(size: 16pt, fill: rgb("#C0B090"), weight: "regular")[A Curated GTA V Modlist & Guide]
   #v(0.4cm)
-  #text(size: 12pt, fill: rgb("#A09080"))[Version 1.73 — July 2026]
+  #text(size: 12pt, fill: rgb("#A09080"))[Game version 1.73 — July 2026]
 ])
-#pagebreak()
 
 // ── Table of Contents ───────────────────────────
 #set page(fill: white)
 #set text(fill: rgb("#2A2A2A"))
 #outline(title: [Table of Contents])
-#pagebreak()
 
 // ── Wave divider helper ─────────────────────────
 #let wave-divider(title) = {
