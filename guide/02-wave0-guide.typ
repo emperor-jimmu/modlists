@@ -44,13 +44,16 @@ A reliable source of income and crafting materials.
 Your actions affect Arthur's honor meter, which influences NPC reactions,
 shop prices, and story outcomes.
 
-| Action | Effect |
-|--------|--------|
-| Greeting strangers | + Honor |
-| Helping strangers | + Honor |
-| Donating to camp | + Honor |
-| Robbing/killing innocents | - Honor |
-| Bounty evasion | - Honor |
+#table(
+  columns: (auto, auto),
+  stroke: 0.5pt + luma(180),
+  [*Action*], [*Effect*],
+  [Greeting strangers], [+ Honor],
+  [Helping strangers], [+ Honor],
+  [Donating to camp], [+ Honor],
+  [Robbing/killing innocents], [- Honor],
+  [Bounty evasion], [- Honor],
+)
 
 === Crafting
 

@@ -25,14 +25,15 @@
 
 == Performance Tuning
 
-+----------------------------+----------+----------+
-| Setting                    | Wave 0   | Wave 1   |
-+----------------------------+----------+----------+
-| Resolution                 | 1440p    | 1080p    |
-| Texture Quality            | Ultra    | Ultra    |
-| Reflection Quality         | High     | Medium   |
-| Water Quality              | High     | Medium   |
-| Volumetric Quality         | Medium   | Low      |
-| Tree Tessellation          | On       | Off      |
-| Near Volumetric Resolution | High     | Medium   |
-+----------------------------+----------+----------+
+#table(
+  columns: (auto, auto, auto),
+  stroke: 0.5pt + luma(180),
+  [*Setting*], [*Wave 0*], [*Wave 1*],
+  [Resolution], [1440p], [1080p],
+  [Texture Quality], [Ultra], [Ultra],
+  [Reflection Quality], [High], [Medium],
+  [Water Quality], [High], [Medium],
+  [Volumetric Quality], [Medium], [Low],
+  [Tree Tessellation], [On], [Off],
+  [Near Volumetric Resolution], [High], [Medium],
+)
