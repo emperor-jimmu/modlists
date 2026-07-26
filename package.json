@@ -1,0 +1,19 @@
+{
+  "name": "x4-foundations-modlist",
+  "version": "1.0.0",
+  "description": "An X4 Foundations v9.0 modlist and game guide organized in progressive waves.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "js-yaml": "^5.2.2"
+  }
+}
