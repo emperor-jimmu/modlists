@@ -1,0 +1,15 @@
+# Enhanced Liberty — Mod Ideas
+# Format: [Category] <mod concept> — <brief description>
+# Priority: P0 (must), P1 (should), P2 (nice), P3 (future)
+
+# This file tracks mod concepts that may be developed or added in future updates.
+# Entries are organized by wave and category.
+
+## Wave 0 Ideas (P2-P3)
+#
+
+## Wave 1 Ideas (P1-P2)
+#
+
+## Future / Cross-Wave
+#
