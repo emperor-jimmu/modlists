@@ -1,0 +1,6 @@
+# Wave 0: The Uncharted — UI/QoL mods only
+- name: "Example UI Mod"
+  url: "https://nexusmods.com/x4foundations/mods/000"
+  category: "ui"
+  wave: 0
+  description: "Placeholder — replace with actual mods."

@@ -1,0 +1,7 @@
+# Wave 2: The Warlord — heavy mods, new mechanics
+- name: "Example Standalone Mod"
+  url: "https://nexusmods.com/x4foundations/mods/000"
+  category: "standalone"
+  wave: 2
+  mechanics: "Adds new sector with unique resources"
+  description: "Placeholder — replace with actual mods."

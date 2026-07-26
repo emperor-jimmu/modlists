@@ -1,0 +1,10 @@
+# Wave 1: The Opportunist — light content + mechanics
+- name: "Example Overhaul Mod"
+  url: "https://nexusmods.com/x4foundations/mods/000"
+  category: "overhaul"
+  wave: 1
+  dependencies:
+    - "Other Mod"
+  mechanics: "Adjusts combat AI behavior"
+  description: "Placeholder — replace with actual mods."
+  dlc_required: "Cradle of Humanity"
