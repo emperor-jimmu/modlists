@@ -10,15 +10,25 @@ echo.
 
 :: Check prerequisites
 where typst >nul 2>&1
-if %ERRORLEVEL% neq 0 (
+if !ERRORLEVEL! neq 0 (
     echo ERROR: Typst not found. Install Typst 0.15 from https://typst.app/
     echo Or run: winget install Typst.Typst
     exit /b 1
 )
 
 where node >nul 2>&1
-if %ERRORLEVEL% neq 0 (
+if !ERRORLEVEL! neq 0 (
     echo ERROR: Node.js not found. Install from https://nodejs.org/
+    exit /b 1
+)
+
+:: Check required files exist
+if not exist "typst\template.typ" (
+    echo ERROR: typst\template.typ not found. Run from project root.
+    exit /b 1
+)
+if not exist "typst\config.typ" (
+    echo ERROR: typst\config.typ not found. Run from project root.
     exit /b 1
 )
 
@@ -43,15 +53,20 @@ if !ERRORLEVEL! neq 0 (
 
 :: Update author in config
 echo [3/4] Setting author to "%AUTHOR%"...
-powershell -Command "(Get-Content typst/config.typ) -replace 'project-author = \".*\"', 'project-author = \"%AUTHOR%\"' | Set-Content typst/config.typ"
+set SETAUTHOR=%AUTHOR%
+powershell -command "$f=Get-Content 'typst/config.typ'; $f -replace 'project-author = \".*\"', 'project-author = \"' + $env:SETAUTHOR + '\"' | Set-Content 'typst/config.typ'"
+
+:: Ensure output directory exists
+if not exist "output" mkdir output
 
 :: Compile PDF
 echo [4/4] Compiling PDF...
 typst compile typst/template.typ output/Stellar-Dominion.pdf
-if %ERRORLEVEL% neq 0 (
+if !ERRORLEVEL! neq 0 (
     echo ERROR: Typst compilation failed.
     exit /b 1
 )
 
 echo.
 echo SUCCESS: PDF generated at output/Stellar-Dominion.pdf
+exit /b 0
