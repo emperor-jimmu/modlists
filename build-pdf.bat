@@ -5,7 +5,7 @@ echo Converting markdown to Typst...
 node src/convert.js
 
 echo Compiling PDF...
-typst compile --root "." src/enhanced-liberty.typ output/Enhanced-Liberty.pdf
+typst compile --root "." --font-path fonts src/enhanced-liberty.typ output/Enhanced-Liberty.pdf
 
 if %errorlevel% equ 0 (
     echo PDF generated: output/Enhanced-Liberty.pdf
