@@ -201,6 +201,9 @@
 ### Added Mods (Jul 2026 batch 12 — Mod Review)
 - [x] Chunky (Forge/NeoForge) (Wave 0 — Infrastructure) — world pregenerator, `/chunky` commands, zero dependencies, complements NoisiumForked and Distant Horizons. Documented in GETTING-STARTED.md as one-time setup step.
 
+### Added Mods (Jul 2026 batch 13)
+- [x] Mekanism Tools (Wave 1 — Mekanism Addons) — armor/shields/tools/paxels for Osmium, Bronze, Refined Obsidian, Refined Glowstone, Steel. Fills gear progression gap between netherite and MekaSuit. Official Mekanism addon. Apotheosis affixes apply to its gear.
+
 ### Added Mods (Jul 2026 — Research Batch)
 - [x] Eating Animations (Wave 0 — Visual & Client QoL) — NeoForge 1.21.1 available as eatinganimation-1.21.0-6.0.1.jar
 - [x] Camera Overhaul (Wave 0 — Visual & Client QoL) — v2.0.5 for NeoForge 1.21.0-1.21.1

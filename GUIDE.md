@@ -840,6 +840,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 | Mod                                                                                 | Role                                                                                                  |
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| [Mekanism Tools](https://www.curseforge.com/minecraft/mc-mods/mekanism-tools)       | Armor, shields, tools, and paxels for Mekanism materials — Osmium, Bronze, Refined Obsidian, Refined Glowstone, Steel. Fills gear gap between netherite and MekaSuit. |
 | [Advanced Finders](https://www.curseforge.com/minecraft/mc-mods/advanced-finders)   | Ore detection devices — directional indicators for nearby ore veins, synchronized multiplayer support |
 | [Advanced Chimneys](https://www.curseforge.com/minecraft/mc-mods/advanced-chimneys) | Smoke ventilation systems — redirect factory emissions outdoors, customizable appearance and behavior |
 
@@ -850,6 +851,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | Layer              | Mod                                                                                      |          |
 |--------------------|------------------------------------------------------------------------------------------|----------|
 | Power generation   | Create (water wheels, windmills, steam) + Mekanism (advanced generators, fusion reactor) |          |
+| Gear progression   | Mekanism Tools — Osmium → Bronze → Refined Obsidian → MekaSuit                             |          |
 | Ore processing     | Mekanism — up to 5x ore multiplication with chemical processing                          |          |
 | Factory automation | Create — conveyor belts, deployers, sequenced crafters                                   |          |
 | Storage            | AE2 — ME drives, storage busses, crafting CPUs                                           |          |
