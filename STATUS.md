@@ -228,7 +228,7 @@
 ### Config Overrides Created (Jul 2026)
 - [x] YUNG's Better Caves (config/bettercaves/neoforge-1.21.1/better_cave.json) — cavern_spawn_chance 23% → 30%, gives Crystal Cavern biome more room to breathe
 - [x] Waystones (config/waystones-common.toml) — free teleport (enableCosts=false), inventory button on "ANY"
-- [x] Better Days (config/betterdays-common.toml) — MINUTES mode, 20min days/10min nights, all time effects disabled, smooth sleep acceleration
+- [x] Better Days (config/betterdays-common.toml) — SEASON mode, seasonDayMinutes=20.0, seasonLatitude=48.0, all time effects off, smooth sleep acceleration
 - [x] Dynamic Villager Trades (config/dynamicvillagertraders.properties) — global_randomness=0.7, refresh_delay=1, no_book_duplicates=true
 - [x] Loot Journal (config/obscuria/loot_journal-client.toml) — trackItemPickups=true, trackXpPickups=true
 - [x] Mekanism (config/Mekanism/general.toml) — allowChunkloading=false (delegated to Chunk Loaders mod)
@@ -240,9 +240,6 @@
 - [x] Apotheosis module toggles (config/apotheosis/apotheosis.cfg) — all modules enabled (Deadly, Enchantment, Adventure, Spawner, Potion, Village), Garden disabled, book on first join
 - [x] Apotheosis spawner (config/apotheosis/spawner.cfg) — default spawner silk touch level 1, damage 100, no banned mobs
 - [ ] Apotheosis remaining configs (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) — need test launch to capture defaults, then apply overrides from GUIDE.md section
-### GUIDE.md correction needed
-
-- [ ] Better Days section: `dayStart = 0` is outside Better Days' valid range (22300-24000). Should note actual range or set to default (23500). The GUIDE.md value was aspirational but not achievable.
 
 ### Removed Mods (Jul 2026)
 - [x] Vervada's 3D Plants (Wave 0 — Texture Pack) — removed due to incompatibility issues with other mods

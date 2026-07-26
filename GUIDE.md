@@ -501,31 +501,26 @@ Time speed can be set via three modes (`speedMethod`):
 | `RATIO`             | Multiplier relative to vanilla (1.0 = vanilla 20min cycle)                | Fine control: 0.5 = 40 min, 2.0 = 10 min                |
 | `SEASON`            | Day length varies by season using `seasonDayMinutes` and `seasonLatitude` | Immersive — day shortens in winter, lengthens in summer |
 
-**Recommended settings for this pack** (`speedMethod = "MINUTES"`):
+**Recommended settings** (`speedMethod = "SEASON"`):
 
-- `daySpeedMinutes` = `20` — Days last 20 minutes (2x vanilla). Gives relaxed building time.
-- `nightSpeedMinutes` = `10` — Nights remain 10 minutes. Sleep acceleration keeps them short.
-- `enableSleepFeature` = `true` — Smooth time acceleration while in bed.
-- `dayStart` = `0` — Dawn at time 0. Night starts at 13000 (default, no change needed).
-- `nightStart` = `13000` — Dusk starts at time 13000 (default).
+- `speedMethod = "SEASON"` — Day length varies by Serene Seasons sub-season. Summer days are longer, winter days shorter.
+- `seasonDayMinutes = 20.0` — Total day+night cycle in real minutes (vanilla baseline). 20 = same average length as vanilla.
+- `seasonLatitude = 48.0` — Central Europe latitude. Higher values = more extreme day-length swings between seasons.
+- `dayStart = 23500` — Dawn at time 23500 (default, correct range 22300–24000).
+- `nightStart = 13000` — Dusk at time 13000 (default).
 
-**Time effects** — all disabled by default. Leave them off:
+**Sleep** — smooth time acceleration:
 
-- `weatherEffect` = `"SLEEPING"` — Lets rain/storms finish faster when sleeping (safe — NeoForge handles this natively anyway).
-- `potionEffect` = `"NEVER"` — Keep off. Speeding potion timers while sleeping is confusing.
-- `hungerEffect` = `"NEVER"` — Keep off. Speeding hunger while sleeping is annoying.
-- `blockEntityEffect` = `"NEVER"` — Keep off. Enabling this accelerates furnaces/hoppers during sleep, which can desync items and wastes fuel.
-- `cropEffect` = `"NEVER"` — Keep off. Conflicts with Serene Seasons crop cycle timers.
+- `enableSleepFeature = true` — Smooth acceleration while in bed.
 
-**Regarding the SEASON mode**: Since this pack includes **Serene Seasons**, you may want to try `speedMethod = "SEASON"` (*not* `"SEASONS"` — the value is singular) for a more immersive cycle where summer days are long and winter days are short. However, this is experimental — Serene Seasons already handles seasonal crop growth and temperature; Better Days would only change day length visually. Test before committing.
+**Time effects** — all disabled. Leave them off:
 
-The `seasonDayMinutes` and `seasonLatitude` fields exist in the default config but may not appear in the file until `speedMethod = "SEASON"` is set and the game reloads. If they're missing, add these lines manually under the `[time]` section:
-
-```toml
-speedMethod = "SEASON"
-seasonDayMinutes = 20.0    # Total day+night length. 20 = vanilla.
-seasonLatitude = 48.0       # Central Europe latitude. -90 (short days) to 90 (long days). Serene Seasons detects this automatically.
-```
+- `weatherEffect = "SLEEPING"` — Lets rain/storms finish faster when sleeping.
+- `potionEffect = "NEVER"` — Keep off. Speeding potion timers is confusing.
+- `hungerEffect = "NEVER"` — Keep off. Speeding hunger is annoying.
+- `blockEntityEffect = "NEVER"` — Keep off. Speeding furnaces/hoppers desyncs items and wastes fuel.
+- `cropEffect = "NEVER"` — Keep off. Conflicts with Serene Seasons crop cycle timers.
+- `randomTickEffect = "NEVER"` — Keep off. Avoids crop desync and random tick inconsistencies.
 
 **Dynamic Crosshair** (configurable in-game via Mod List → Dynamic Crosshair → Config, or `config/dynamiccrosshair.json`):
 
@@ -632,14 +627,16 @@ Realistic water wakes and splashes when traveling on water. Works with Small Shi
 
 #### Better Days
 
-Controls day/night cycle length. Default is 20-minute day / 10-minute night (2× day length). Config in `config/betterdays-common.toml`:
+Controls day/night cycle length in **SEASON mode** — day length varies by Serene Seasons sub-season.
 
-- `speedMethod = "MINUTES"`
-- `daySpeedMinutes = 20`, `nightSpeedMinutes = 10`
+Recommended config in `config/betterdays-common.toml`:
+
+- `speedMethod = "SEASON"`
+- `seasonDayMinutes = 20.0`, `seasonLatitude = 48.0`
 - `enableSleepFeature = true`
-- All time effects OFF (`potionEffect = "NEVER"`, `hungerEffect = "NEVER"`, `blockEntityEffect = "NEVER"`, `cropEffect = "NEVER"` — conflicts with Serene Seasons)
+- All time effects OFF (`potionEffect = "NEVER"`, `hungerEffect = "NEVER"`, `blockEntityEffect = "NEVER"`, `cropEffect = "NEVER"`, `randomTickEffect = "NEVER"`)
 
-**SEASON mode**: Since this pack includes **Serene Seasons**, you can try `speedMethod = "SEASON"` for immersive day-length variation by season. Experimental — test before committing.
+**SEASON mode** syncs with Serene Seasons — summer days are longer, winter days shorter. Latitude 48 gives a mild continental feel. Higher latitude = more extreme swings.
 
 #### Better Safe Bed
 

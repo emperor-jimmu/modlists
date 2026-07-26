@@ -1,26 +1,16 @@
 [time]
-	#Determines which method is used to set day and night speed.
-	#RATIO: Uses daySpeed and nightSpeed settings.
-	#MINUTES: Uses daySpeedMinutes and nightSpeedMinutes settings.
-	#REALTIME: Sets day and night to 12 real-world hours each.
-	#Allowed Values: RATIO, MINUTES, REALTIME
-	speedMethod = "MINUTES"
-	#The speed at which time passes during the day.
-	#Vanilla speed: 1.0
-	#Range: 0.0 ~ 24000.0
-	daySpeed = 1.0
-	#The speed at which time passes during the night.
-	#Vanilla speed: 1.0
-	#Range: 0.0 ~ 24000.0
-	nightSpeed = 1.0
-	#An alternative way to set day speed. This defines the length of the day in real-world minutes.
-	#Vanilla length: 10.0 minutes
+	#SEASON mode: day length varies by Serene Seasons sub-season.
+	#Day/night ratio automatically shifts — summer has long days, winter short ones.
+	#Latitude controls the extremity of the shift (48 = mild continental).
+	#Allowed Values: RATIO, MINUTES, REALTIME, SEASON
+	speedMethod = "SEASON"
+	#Total real-world minutes for a full day+night cycle.
+	#Vanilla length: 20.0 minutes
 	#Range: 0.1 ~ 10000.0
-	daySpeedMinutes = 20.0
-	#An alternative way to set night speed. This defines the length of the night in real-world minutes.
-	#Vanilla length: 10.0 minutes
-	#Range: 0.1 ~ 10000.0
-	nightSpeedMinutes = 10.0
+	seasonDayMinutes = 20.0
+	#Latitude used to calculate day/night ratio per season.
+	#Range: -90.0 ~ 90.0
+	seasonLatitude = 48.0
 	#The time to start day. Default: 23500, Range: 22300.0 ~ 24000.0
 	dayStart = 23500.0
 	#The time to start night. Default: 12500, Range: 12000.0 ~ 13000.0
