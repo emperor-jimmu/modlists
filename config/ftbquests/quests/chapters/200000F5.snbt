@@ -100,7 +100,8 @@
         "The first step in Mekanism ore processing.",
         "Chain: Enrichment Chamber (ore to 2 dust) to Energized Smelter (dust to ingot)",
         "1 iron ore produces 2 ingots — doubled output from every ore you mine",
-        "Mekanism's ore processing scales up to 5x at endgame."
+        "Mekanism's ore processing scales up to 5x at endgame.",
+        "Tip: Connect Enrichment Chamber output directly to Energized Smelter input with Mekanism Logistical Transporters or Create Belts for a continuous 2x processing line. No manual item transfer."
       ],
       "icon": "mekanism:enrichment_chamber",
       "x": 0,
@@ -150,7 +151,8 @@
         "Scuba Mask (water breathing, replaces helmet)",
         "Scuba Tank (oxygen storage — craft multiple, swap when depleted)",
         "Free Runners (step assist and fall damage reduction, replaces boots)",
-        "All three work with Apotheosis affixes — they roll rarity and stat bonuses like any other gear."
+        "All three work with Apotheosis affixes — they roll rarity and stat bonuses like any other gear.",
+        "Tip: Scuba Tanks stack in your inventory — carry 3-4 tanks on long underwater expeditions and swap when one depletes. The Scuba Mask works in any fluid, including Stellaris oil pools."
       ],
       "icon": "mekanism:scuba_mask",
       "x": 0,
@@ -240,7 +242,8 @@
         "FE generators run constantly but machines consume in bursts.",
         "Energy Cubes act as a buffer — store excess FE during low demand, release during spikes",
         "Basic Energy Cube stores 1.6 MFE (1.6 million FE)",
-        "Upgrade path: Basic to Advanced to Elite to Ultimate — each tier exponentially increases capacity and transfer rate."
+        "Upgrade path: Basic to Advanced to Elite to Ultimate — each tier exponentially increases capacity and transfer rate.",
+        "Tip: Energy Cubes charge and discharge simultaneously — connect a generator to one face and machines to another. The cube buffers FE while both produce and consume."
       ],
       "icon": "mekanism:basic_energy_cube",
       "x": 0,
@@ -283,7 +286,8 @@
         "Charge it at any FE source (hold right-click while looking at a generator or cube)",
         "Right-click a machine with the tablet to transfer FE — jumpstart machines without running cables",
         "Chargepad: place on floor, stand on it to charge all FE items in your inventory and armor slots",
-        "Place under your AE2 terminal for automatic top-up."
+        "Place under your AE2 terminal for automatic top-up.",
+        "Tip: Place a Chargepad directly under your AE2 Terminal. Every time you open your inventory at the terminal, your Energy Tablet, Atomic Disassembler, and Mekanism Tools armor recharge automatically."
       ],
       "icon": "mekanism:energy_tablet",
       "x": 0,
@@ -331,7 +335,8 @@
       "description": [
         "Mekanism's ultimate multi-tool replaces: pickaxe (all ores, even obsidian), axe, shovel, hoe, sword, and shears.",
         "Modes toggle with shift-right-click: Normal (all blocks), Slow (precise — only targeted block), Fast (maximum speed), Vein (breaks connected ore blocks in a cluster — match the Digital Miner filter)",
-        "Runs on FE — keep a charged Energy Tablet in your inventory."
+        "Runs on FE — keep a charged Energy Tablet in your inventory.",
+        "Tip: Vein mode breaks ALL connected ore blocks in a single click — pair with the Digital Miner's ore filter to know which vein types exist underground. Ore tripling + vein mining = stacks of ingots per click."
       ],
       "icon": "mekanism:atomic_disassembler",
       "x": 0,
@@ -631,7 +636,8 @@
         "Dirty dust to Enrichment Chamber to dust",
         "Dust to Energized Smelter to ingots",
         "1 ore equals 3 ingots",
-        "Oxygen comes from water electrolysis — Electrolytic Separator splits water into hydrogen and oxygen."
+        "Oxygen comes from water electrolysis — Electrolytic Separator splits water into hydrogen and oxygen.",
+        "Tip: Oxygen for the Purification Chamber comes from an Electrolytic Separator splitting water — also produces Hydrogen as a byproduct. Store Hydrogen for future Gas-Burning Generator fuel."
       ],
       "icon": "mekanism:purification_chamber",
       "x": 3,
@@ -668,7 +674,8 @@
         "Input water through Valve",
         "Output: brine",
         "Brine enters Electrolytic Separator producing Chlorine and Sodium",
-        "Chlorine feeds Hydrogen Chloride production — essential for ore quintupling."
+        "Chlorine feeds Hydrogen Chloride production — essential for ore quintupling.",
+        "Tip: Build the plant in a Desert biome at maximum height (18 blocks tall). Desert passive heating eliminates the need for a Resistive Heater entirely — free brine production."
       ],
       "icon": "mekanism:thermal_evaporation_controller",
       "x": 3,
@@ -712,7 +719,8 @@
         "H2 plus Cl2 (from brine) in Chemical Infuser equals HCl (Hydrogen Chloride) feeding the Chemical Injection Chamber",
         "Parallel line: Sulfur to Chemical Oxidizer (SO2)",
         "SO2 plus O2 in Chemical Infuser equals SO3 (Sulfur Trioxide) feeding the Chemical Dissolution Chamber",
-        "Label your pipes or color-code them."
+        "Label your pipes or color-code them.",
+        "Tip: Use AE2 Smart Cables as pipe labels — place Smart Cable alongside each chemical pipe, name it in an anvil (Hydrogen Chloride, Sulfur Trioxide), and your pipe network becomes self-documenting."
       ],
       "icon": "mekanism:chemical_infuser",
       "x": 3,
@@ -751,7 +759,8 @@
       "description": [
         "The full 5x chain: Chemical Dissolution Chamber (ore plus Sulfuric Acid equals slurry) to Chemical Washer (water cleans slurry) to Chemical Crystallizer (cleaned slurry equals crystals) to Chemical Injection Chamber (crystals plus Hydrogen Chloride equals shards) to Purification Chamber to Crusher to Enrichment Chamber to Energized Smelter.",
         "1 ore becomes 5 ingots",
-        "Sulfuric acid, hydrogen chloride, and water flow through pipes between every step."
+        "Sulfuric acid, hydrogen chloride, and water flow through pipes between every step.",
+        "Mekanism 5x ore processing multiplies your mining output. Connect your ore processing line to AE2 with Import/Export Buses for automatic ingot production — craft once, request forever."
       ],
       "icon": "mekanism:chemical_dissolution_chamber",
       "x": 3,
@@ -794,7 +803,8 @@
         "Place it, connect FE, set a filter (ores* for all ores, or specific items), and activate",
         "Configurable: mining radius (0 to 32 blocks), silk touch mode (mines ore blocks intact), replace mode (fills mined blocks with cobblestone to prevent cave-ins)",
         "Range expands in all directions from the miner",
-        "The Digital Miner makes manual mining completely obsolete."
+        "The Digital Miner makes manual mining completely obsolete.",
+        "Tip: Set the miner to Silk Touch mode when targeting Apotheosis gem ores — gems drop in higher quantities from intact ore blocks. Use Fortune on the ore blocks afterward."
       ],
       "icon": "mekanism:digital_miner",
       "x": 3,
@@ -837,7 +847,8 @@
         "Key recipe: Water plus Hydrogen plus Bio Fuel (from crushing plant matter) yields Ethylene gas plus Substrate",
         "Ethylene feeds Gas-Burning Generators at massive scale",
         "Substrate processes into HDPE Pellets (plastic) — used in advanced Mekanism components and the MekaSuit",
-        "The PRC is your Phase 2 materials workhorse."
+        "The PRC is your Phase 2 materials workhorse.",
+        "Tip: Bio Fuel for the PRC comes from crushing seeds, wheat, or potatoes in a Crusher. Use excess Farmer's Delight crop output — your kitchen feeds your chemical plant."
       ],
       "icon": "mekanism:pressurized_reaction_chamber",
       "x": 3,
@@ -880,7 +891,8 @@
         "Build Induction Casing walls in any shape or size",
         "Fill interior with Induction Cells (increase total stored FE) and Induction Providers (increase transfer rate in/out)",
         "A small 4x4x4 matrix can hold billions of FE",
-        "The Induction Matrix is mandatory before building a Fission Reactor — the reactor produces at 7 MFE/t and needs somewhere to put it."
+        "The Induction Matrix is mandatory before building a Fission Reactor — the reactor produces at 7 MFE/t and needs somewhere to put it.",
+        "Tip: Build the matrix BENEATH your Fission Reactor with a direct cable connection. Reactor output at 7 MFE/t needs the shortest possible cable run to avoid FE loss."
       ],
       "icon": "mekanism:induction_casing",
       "x": 3,
@@ -961,7 +973,8 @@
         "Safety critical: needs continuous coolant (water or sodium), proper control rod insertion, and blast-proof containment",
         "Meltdowns are real — test isolated from your main base",
         "Produces Nuclear Waste — store in Radioactive Waste Barrels only",
-        "Never break a barrel."
+        "Never break a barrel.",
+        "Tip: Build in a separate dimension or at least 64 blocks from your main base. A meltdown irradiates a large area permanently — the Aether or Twilight Forest dimensions make safe reactor sites since you do not live there."
       ],
       "icon": "mekanism:fission_reactor_controller",
       "x": 3,

@@ -16,7 +16,8 @@
         "Fuel Refinery converts oil into rocket fuel",
         "Find oil pools on the surface (dark patches in plains and desert biomes) or underground",
         "Use a Mekanism Pump or TFMG Pump Jack for efficient extraction",
-        "Start stockpiling fuel early — a Tier 1 rocket launch consumes approximately 300 units of rocket fuel."
+        "Start stockpiling fuel early — a Tier 1 rocket launch consumes approximately 300 units of rocket fuel (produced in the Fuel Refinery from oil).",
+        "Tip: Build your Rocket Station near a large body of water — the Water Separator needs water for oxygen, and you will launch dozens of rockets from this location."
       ],
       "icon": "stellaris:rocket_station",
       "x": 0,
@@ -109,7 +110,8 @@
         "Water Separator splits water into oxygen (output) and hydrogen (byproduct)",
         "Oxygen Distributor fills your Space Suit and creates a breathable zone around itself",
         "Chain: Solar Panel powers Water Separator, Separator outputs oxygen, Distributor receives oxygen and refills suit",
-        "Build this trio on every planet you visit — without it, every trip is a 10-minute suicide run."
+        "Build this trio on every planet you visit — without it, every trip is a 10-minute suicide run.",
+        "Tip: The Solar Panel works on any planet with a sun — Mercury has the best solar output. On the Moon, orient panels facing the sun direction for maximum FE generation."
       ],
       "icon": "stellaris:oxygen_distributor",
       "x": 0,
@@ -159,7 +161,8 @@
         "Right-click the completed assembly to create a Launch Pad",
         "Right-click the pad to enter",
         "Pre-launch cargo checklist: filled Space Suit (oxygen topped off at Distributor), food (Farmer's Delight meals with oxygen present), building blocks, torches, weapons (planet mobs), and a Waystone (for instant return)",
-        "Tier 1 rockets reach the Moon only."
+        "Tier 1 rockets reach the Moon only.",
+        "Tip: Bring a Sophisticated Backpack upgraded to Netherite tier for Moon trips — it holds far more Desh ore per trip than your inventory. The backpack stays with you on death (GraveStone)."
       ],
       "icon": "stellaris:rocket_t1",
       "x": 0,
@@ -348,7 +351,8 @@
         "Venus: acid rain atmosphere, dense high gravity (slow movement, heavy jumps)",
         "Resource: Tharsite ore — required for Tier 4 rocket components",
         "Strategy for both: land, quickly place Solar Panel to Distributor to Waystone, mine the unique ore, leave",
-        "These are raid destinations, not colonies."
+        "These are raid destinations, not colonies.",
+        "Tip: Bring a Waystone to both Mercury AND Venus on your first trip to each. Place it immediately upon landing. Future trips become instant teleports — you only launch to each planet once."
       ],
       "icon": "stellaris:rocket_t2",
       "x": 3,
@@ -392,7 +396,8 @@
         "Tharsite (Venus) enables Tier 4",
         "Glacio Crystals (Glacio) are the endgame component",
         "Every planet ore can run through your Mekanism 5x processing line on Earth for maximum yield",
-        "Logistics: mine ore on planet, Waystone back to Earth with inventory full, dump into AE2, 5x process, autocraft next-tier rocket components."
+        "Logistics: mine ore on planet, Waystone back to Earth with inventory full, dump into AE2, 5x process, autocraft next-tier rocket components.",
+        "Tip: Ship ALL planet ores to Earth for processing — Mekanism 5x works on Stellaris ores (Desh, Ostranium, Tharsite). A single Digital Miner on Earth with 5x processing outperforms manual mining on any planet."
       ],
       "icon": "stellaris:ostranium_ingot",
       "x": 3,
@@ -438,7 +443,8 @@
         "(4) Chunk Loader",
         "(5) Digital Miner configured for Desh and Ostranium veins",
         "Mars becomes your second industrial hub, producing rare metals autonomously.",
-        "If dimension detection fails, use /ftbquests complete <quest_id> (find ID in quest book tooltip)."
+        "If dimension detection fails, use /ftbquests complete <quest_id> (find ID in quest book tooltip).",
+        "Mars is worth a permanent base because Desh appears in richer deposits here than on the Moon. Connect a Mekanism Digital Miner to the Mars AE2 Quantum Bridge — Desh and Ostranium auto-mine and auto-ship to Earth."
       ],
       "icon": "stellaris:mars_stone",
       "x": 3,
@@ -479,7 +485,8 @@
         "Waystones (free teleport via config) for personal travel: Earth to Moon to Mars to Glacio — instant, zero cost",
         "AE2 Quantum Network Bridge for storage: stand on Mars, open your ME Terminal, see every item stored on Earth",
         "Create Trains for planet-side bulk transport: move ores from Mars landing pad to Mars ME Interface to Quantum Bridge to Earth 5x line",
-        "Goal: autocraft a Tier 4 rocket from your Mars terminal using materials mined on three different planets and processed on Earth."
+        "Goal: autocraft a Tier 4 rocket from your Mars terminal using materials mined on three different planets and processed on Earth.",
+        "The Quantum Network Bridge is the AE2 equivalent of Stellaris Waystones — it connects your ME networks across dimensions. Build one on Earth and one on Mars. Your Earth terminal will show Mars items as if they were in the same room."
       ],
       "icon": "minecraft:ender_pearl",
       "x": 3,
@@ -580,7 +587,7 @@
       "title": "Space Suit Upgrades",
       "subtitle": "Higher Tiers, More Protection",
       "description": [
-        "Higher-tier space suits exist (check EMI).",
+        "Higher-tier space suits exist (check EMI (hover item, press R for recipe, U for uses)).",
         "Upgraded suits hold more oxygen (longer excursions), have better durability, and may include built-in environmental protection — heat resistance for Mercury, acid resistance for Venus, cold resistance for Glacio",
         "Upgrade your suit alongside your rocket tiers."
       ],
@@ -615,7 +622,8 @@
         "Resource: Glacio Crystals — the rarest Stellaris material, used for endgame components",
         "Bring your best gear: MekaSuit (environmental immunity plus flight), Apotheosis Mythic weapons, Simply Swords with Lifesteal or Ice runes",
         "This is your final space frontier — the hardest environment in the pack.",
-        "If dimension detection fails, use /ftbquests complete <quest_id> (find ID in quest book tooltip)."
+        "If dimension detection fails, use /ftbquests complete <quest_id> (find ID in quest book tooltip).",
+        "Glacio Crystals are to Stellaris what Polonium is to Mekanism — the rarest endgame resource. Process Glacio ores through Mekanism 5x on Earth via Quantum Entangloporter for maximum crystal yield."
       ],
       "icon": "stellaris:glacio_stone",
       "x": 6,
@@ -703,7 +711,8 @@
         "Zero transit time",
         "No Waystone inventory runs",
         "No Quantum Bridge delay",
-        "This is interplanetary logistics at its peak."
+        "This is interplanetary logistics at its peak.",
+        "The Quantum Entangloporter is the ultimate Stellaris-Mekanism bridge — Glacio ore enters the Entangloporter at your ice planet mining rig and instantly appears on Earth at your 5x processing line. Zero transit time. Zero logistics overhead. This is the final form of interplanetary automation."
       ],
       "icon": "mekanism:quantum_entangloporter",
       "x": 7.5,

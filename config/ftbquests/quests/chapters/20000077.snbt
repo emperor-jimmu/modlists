@@ -53,7 +53,8 @@
       "description": [
         "Attach a Millstone and Mechanical Press to your water wheel via shaft and gearbox.",
         "Millstone crushes wheat to flour, cobble to gravel, bones to bonemeal",
-        "Press stamps ingots into plates and sheets."
+        "Press stamps ingots into plates and sheets.",
+        "Tip: Place a Chest at the end of your processing line — items from the Millstone and Press output directly into it. Use a Funnel to extract."
       ],
       "icon": "create:millstone",
       "x": 0,
@@ -96,7 +97,8 @@
         "Fluid Pump pulls from sources",
         "Tank stores it",
         "Attach a Spout to fill bottles or feed boilers",
-        "Fluid throughput depends on pump RPM — faster RPM = more mb/tick."
+        "Fluid throughput depends on pump RPM — faster RPM = more mb/tick.",
+        "Tip: The Hose Pulley detects infinite water sources (3x3 or larger pool). Lower it into any sufficiently large water body and it outputs infinite water — no more refilling tanks manually."
       ],
       "icon": "create:fluid_pump",
       "x": 0,
@@ -144,7 +146,8 @@
       "description": [
         "Brass = copper + zinc in a heated Mixer.",
         "Place a Blaze Burner under the Mixer, catch a blaze in a nether fortress, fuel it with blaze rods or coal",
-        "Brass unlocks precision machinery — the real Create begins here."
+        "Brass unlocks precision machinery — the real Create begins here.",
+        "Tip: Zinc is rarer than copper. Use an Explorer's Compass or a Digital Miner configured for zinc ore to find deposits faster than manual mining."
       ],
       "icon": "create:brass_ingot",
       "x": 0,
@@ -230,7 +233,8 @@
         "Facing water = washing items on a Depot",
         "Facing fire or lava = bulk smelting",
         "Facing soul fire = haunting (soul sand, nether quartz)",
-        "Drop items through the stream via Chute for mass processing — no FE cost."
+        "Drop items through the stream via Chute for mass processing — no FE cost.",
+        "Tip: Combine Encased Fan with a Campfire underneath for bulk smelting that costs zero FE — just rotational power. Use Soul Campfire for haunting recipes."
       ],
       "icon": "create:encased_fan",
       "x": 0,
@@ -275,7 +279,8 @@
         "Smart Chutes filter by item type",
         "Together: chest to funnel to belt to chute to storage",
         "Your first item pipeline",
-        "Use Item Vaults as localized buffer storage."
+        "Use Item Vaults as localized buffer storage.",
+        "Tip: Smart Chutes are the key to sorting — place one above a chest filtered for a specific item, and everything else continues down the belt. No redstone needed."
       ],
       "icon": "create:belt_connector",
       "x": 0,
@@ -325,7 +330,8 @@
         "Craft a Train Casing, Bogey, Controls, and Track",
         "Place bogey on track, build casing on top, add controls",
         "Trains carry items and players across your base at speed",
-        "Steam 'n' Rails expands with semaphores, dispatchers, and conductor mobs."
+        "Steam 'n' Rails expands with semaphores, dispatchers, and conductor mobs.",
+        "Tip: Trains load and unload at Stations automatically with Portable Storage Interfaces. Set a Schedule item in the conductor's inventory to program multi-stop routes."
       ],
       "icon": "create:track",
       "x": 0,
@@ -555,7 +561,8 @@
         "Each step has a completion chance",
         "Unfinished items loop back through the belt",
         "Output = when all steps pass",
-        "Used for Precision Mechanisms, Electron Tubes, and Integrated Circuits."
+        "Used for Precision Mechanisms, Electron Tubes, and Integrated Circuits.",
+        "This multi-step crafting system is what you will automate later with AE2 Processing Patterns — store intermediate products in your ME network and use Export Buses to feed Create machines."
       ],
       "icon": "create:precision_mechanism",
       "x": 1.5,
@@ -588,7 +595,8 @@
         "Steam Engines output massively more SU than water wheels.",
         "Requires a heated Blaze Burner (superheat with blaze cakes for max output), Fluid Tank filled with water, and Steam Engine blocks",
         "Pump water in continuously, keep blaze burner fed",
-        "Output: up to 16,384 SU at max blaze cake heat."
+        "Output: up to 16,384 SU at max blaze cake heat.",
+        "Tip: Blaze Cakes (crafted from blaze rods, sugar, and nether wart) superheat your Blaze Burner to maximum output. A single Blaze Cake produces more SU than a stack of coal."
       ],
       "icon": "create:steam_engine",
       "x": 3,
@@ -628,8 +636,8 @@
       "subtitle": "Heavy Industry Materials",
       "description": [
         "TFMG adds industrial metal production.",
-        "Steel = iron + coal in a Blast Furnace (multiblock — check EMI for structure)",
-        "Aluminum = bauxite ore processed through electrolysis",
+        "Steel = iron + coal in a Blast Furnace (multiblock — check EMI (hover item, press R for recipe, U for uses) for structure)",
+        "Aluminum = bauxite ore processed through electrolysis in a Mekanism Electrolytic Separator",
         "These are your Phase 2 structural materials — steel replaces iron in machine frames, aluminum replaces brass in lightweight components."
       ],
       "icon": "tfmg:steel_ingot",
@@ -674,7 +682,8 @@
         "Gantry Carriage slides along a shaft",
         "Mechanical Bearing rotates an attached structure",
         "Cart Assembler attaches contraptions to minecarts",
-        "Contraptions can mine, place blocks, harvest crops, and move entities — they're mobile factories."
+        "Contraptions can mine, place blocks, harvest crops, and move entities — they're mobile factories.",
+        "Tip: A Mechanical Drill mounted on a Cart Assembler creates an automated mining train. Place rails above a cave system, attach a chest to the contraption, and send it off."
       ],
       "icon": "create:gantry_carriage",
       "x": 3,
@@ -884,7 +893,8 @@
         "Feed refined diesel from your Distillation Tower via fluid pipes",
         "One engine at full output powers an entire factory floor",
         "Connect to your rotational network through shafts and gearboxes",
-        "This is your rotational power endgame."
+        "This is your rotational power endgame.",
+        "Tip: Connect your Diesel Engine to a Speed Controller to fine-tune RPM output for different factory sections — high speed for crushing wheels, lower speed for mixers."
       ],
       "icon": "tfmg:diesel_engine",
       "x": 3,
@@ -1057,7 +1067,8 @@
         "Create manufacturing feeds AE2 storage",
         "AE2 autocrafting feeds Mekanism chemical processing",
         "10+ Mechanical Crafters, 5+ Sequenced Assembly lines, train logistics between districts",
-        "This is a self-defined milestone — mark complete when your base feels like a factory, not a collection of machines."
+        "This is a self-defined milestone — mark complete when your base feels like a factory, not a collection of machines.",
+        "The Mega-Factory milestone is the integration point: Create belts feed into AE2 Interfaces, AE2 autocrafting provides materials to Mekanism chemical lines, Create trains move products between factory districts. This is where three mods become one system."
       ],
       "icon": "create:mechanical_crafter",
       "x": 6,
@@ -1097,7 +1108,8 @@
         "One power source (Steam Engine tower or Diesel Engine cluster) feeds your entire factory through shafts, gearboxes, belts, and clutches.",
         "50 or more machines running simultaneously from a single rotational network",
         "Tune RPMs, belt speeds, and gear ratios until every machine runs in the green on your stress display",
-        "Your factory is a visible kinetic sculpture."
+        "Your factory is a visible kinetic sculpture.",
+        "Tip: Use Clutches to disconnect sections of your rotational network when not in use — each disengaged Clutch reduces total stress load. Redstone Links toggle them remotely."
       ],
       "icon": "create:shaft",
       "x": 6,
@@ -1137,7 +1149,8 @@
         "AE2 Level Emitter detects iron ingots below 5000 — Redstone Link sends signal across the base — Clutch engages — cobblestone generator fires up — crushing wheels activate — washer runs — blast furnace starts — iron ingots flow into AE2.",
         "Threshold reached — signal stops — factory goes idle",
         "Zero player interaction",
-        "Build one self-regulating chain for each bulk material: iron, copper, gold, redstone, andesite alloy."
+        "Build one self-regulating chain for each bulk material: iron, copper, gold, redstone, andesite alloy.",
+        "This milestone requires both Create (Clutch, Redstone Link) and AE2 (Level Emitter) working together. If you have not yet built an AE2 network, complete the AE2 Getting Started quests first — you can return to this milestone later."
       ],
       "icon": "minecraft:iron_ingot",
       "x": 6,

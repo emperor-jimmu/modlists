@@ -92,7 +92,8 @@
         "Cut gems (Rough + Gem Dust at Cutting Station, +50% stat value)",
         "Flawless gems (two Cut gems combined at Cutting Station, +100% stat value — quadruple Rough)",
         "Socket gems at the Gem Socketing Table — place gear in top slot, gem in a socket",
-        "Priority: get your main weapon's gem to Flawless before socketing anything else."
+        "Priority: get your main weapon's gem to Flawless before socketing anything else.",
+        "Tip: Gems are NOT consumed when removed — use the Gem Socketing Table to extract a gem from old gear and socket it into new gear. Your gem collection grows permanently."
       ],
       "icon": "apotheosis:gem",
       "x": 0,
@@ -355,7 +356,8 @@
         "A Flawless crit gem in a Lifesteal weapon is extreme DPS with sustain",
         "A Flawless HP gem in your chestplate lets you survive boss mechanics that would otherwise one-shot you",
         "Gems are what separate a struggling Phase 2 player from a boss-farming Phase 3 demigod",
-        "Priority: Flawless on your weapon first, chestplate second."
+        "Priority: Flawless on your weapon first, chestplate second.",
+        "Tip: Flawless gems of different types can coexist on the same gear piece — one Flawless crit gem plus one Flawless HP gem on a single weapon gives both DPS and sustain."
       ],
       "icon": "apotheosis:gem",
       "x": 3,
@@ -396,7 +398,8 @@
         "Boss modifiers appear as colored text under the health bar",
         "Common modifiers: Tough (+50 percent HP, significant damage reduction), Blinding (blinds on hit — bring milk or blindness immunity), Plagued (poison and wither on hit — bring antidotes and regeneration), Chaotic (random effect per hit — unpredictable, bring all potion types)",
         "Strategy: Lifesteal rune on weapon for sustain, Ice rune for kiting, fire resistance potions for Plagued bosses",
-        "GraveStone preserves your items if you die — the risk is only time."
+        "GraveStone preserves your items if you die — the risk is only time.",
+        "The hardest affixed bosses come from L_Ender's Cataclysm and the Aether dimension. These are your primary Mythic gear sources. Bring your best Simply Swords weapon (Lifesteal rune recommended) and Apotheosis-enchanted Mekanism Tools armor."
       ],
       "icon": "minecraft:nether_star",
       "x": 3,
@@ -437,7 +440,8 @@
         "Apotheosis sets spawner Silk Touch requirement to level 1 — any Silk Touch pickaxe mines a spawner intact.",
         "Place it, right-click with empty hand to open the customization GUI",
         "Change: entity type (spawn anything from zombies to endermen), spawn delay (faster equals more mobs), player activation range, minimum and maximum simultaneous entities",
-        "Combine with a mob grinder (Mob Grinding Utils or Create saw/drill) for automated XP, loot, and affix gear farming."
+        "Combine with a mob grinder (Mob Grinding Utils or Create saw/drill) for automated XP, loot, and affix gear farming.",
+        "Tip: Set spawn delay to minimum (100 ticks) and max entities to 6 for maximum XP per second. Use a Mekanism Laser or Create Saw on a rotating Bearing for automated mob killing."
       ],
       "icon": "minecraft:spawner",
       "x": 3,
@@ -542,7 +546,8 @@
         "This is the Apotheosis ceiling — the highest tier of gear the mod produces",
         "Salvage everything Rare and below on sight",
         "Only Epic pieces are worth inspecting for potential upgrades",
-        "Mythic drop hunting from affixed Cataclysm and Aether bosses is your primary activity."
+        "Mythic drop hunting from affixed Cataclysm and Aether bosses is your primary activity.",
+        "Tip: Dungeon chests in YUNG's structures and When Dungeons Arise have higher Mythic drop rates than open-world mobs. Explorer's Compass locates the nearest dungeon structure."
       ],
       "icon": "minecraft:netherite_chestplate",
       "x": 6,
@@ -584,7 +589,8 @@
         "This is the true endgame loot chase in Apotheosis",
         "Every affixed Cataclysm boss, Aether guardian, and Twilight Forest boss killed is one more chance at perfection",
         "The odds are astronomical",
-        "The hunt never ends."
+        "The hunt never ends.",
+        "Cataclysm bosses (Leviathan, Netherite Monstrosity, Ender Guardian) drop the highest-rate Mythic gear in the pack. Each kill is your best chance at a Perfect Roll. See the Combat chapter for boss locations and strategies."
       ],
       "icon": "minecraft:netherite_sword",
       "x": 6,

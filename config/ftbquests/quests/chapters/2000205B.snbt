@@ -57,7 +57,7 @@
         "Presses are found inside Meteorites — crashed sky stone craters scattered across the world",
         "Each meteorite contains one random press inside the central chamber",
         "You need all 4: Logic Press, Calculation Press, Engineering Press, and Silicon Press",
-        "Enriched Alloy is required for the Inscriber recipe (check EMI — crafted in a Mekanism Infuser)."
+        "Enriched Alloy is required for the Inscriber recipe (check EMI (hover item, press R for recipe, U for uses) — crafted in a Mekanism Infuser)."
       ],
       "icon": "ae2:logic_processor",
       "x": 0,
@@ -101,7 +101,8 @@
         "Power with FE — connect any FE source to the Controller",
         "Channels: each Controller face provides 32 channels",
         "Every AE2 device (Drive, Terminal, Bus) consumes 1 channel",
-        "One Controller face supports a small to medium network."
+        "One Controller face supports a small to medium network.",
+        "Tip: Place your Controller in the center of your base with cables radiating outward. Future expansion always connects back to the Controller — central placement minimizes cable length."
       ],
       "icon": "ae2:controller",
       "x": 0,
@@ -338,7 +339,8 @@
       "subtitle": "Crafting CPU, Assembler, Provider",
       "description": [
         "Autocrafting infrastructure: Crafting CPU (multiblock — Crafting Storage blocks + Co-Processors in a cuboid shape), Molecular Assemblers (do the actual crafting), Pattern Providers (hold encoded patterns, push items to Assemblers).",
-        "Arrange Assemblers in a checkerboard pattern with Pattern Providers — each Assembler touches multiple Providers for maximum recipe coverage."
+        "Arrange Assemblers in a checkerboard pattern with Pattern Providers — each Assembler touches multiple Providers for maximum recipe coverage.",
+        "Tip: Start with a 4-CPU, 4-Co-Processor setup — four simultaneous craft requests with four parallel sub-components each. Scale up when you notice requests queuing."
       ],
       "icon": "ae2:crafting_accelerator",
       "x": 3,
@@ -381,7 +383,8 @@
         "Crafting Patterns: standard 3x3 workbench recipes — the Molecular Assembler crafts them",
         "Processing Patterns: furnace and machine recipes — AE2 pushes items to the machine, waits, imports the result",
         "Smithing Patterns: smithing table upgrades",
-        "Encode at the Pattern Encoding Terminal — drag items into the grid exactly like a crafting table, save."
+        "Encode at the Pattern Encoding Terminal — drag items into the grid exactly like a crafting table, save.",
+        "Tip: Processing Patterns for Mekanism machines work with any machine that has Import/Export Bus connections — Infuser, Enrichment Chamber, Crusher, PRC, and even Create Mixers."
       ],
       "icon": "ae2:crafting_pattern",
       "x": 3,
@@ -425,7 +428,8 @@
         "Encode a Processing Pattern (example: Enriched Alloy)",
         "Place an Import Bus on the output face",
         "Request 'Craft 64 Enriched Alloy' from Terminal — AE2 pushes iron + redstone to the Infuser via Provider, waits for output, imports the alloy via Bus, marks craft complete",
-        "Any machine with defined input output faces can be automated this way."
+        "Any machine with defined input output faces can be automated this way.",
+        "This quest bridges AE2 and Mekanism — you are building the autocrafting link between your digital storage and your industrial machines. Future quests in both chapters assume this connection exists."
       ],
       "icon": "ae2:pattern_provider",
       "x": 3,
@@ -468,7 +472,8 @@
         "Co-Processors per CPU = parallel sub-component crafting",
         "A CPU with 4 Co-Processors can craft 4 sub-components simultaneously",
         "Example: Ultimate Energy Cube needs 4 layers of recipes — each layer crafts in parallel if enough Co-Processors exist",
-        "Request 'Ultimate Energy Cube' from your terminal and watch the entire cascade unfold."
+        "Request 'Ultimate Energy Cube' from your terminal and watch the entire cascade unfold.",
+        "Requesting an Ultimate Energy Cube from your terminal triggers dozens of sub-crafts across multiple mods — Enriched Alloy in the Mekanism Infuser, steel in the Create Blast Furnace, processors in the AE2 Inscriber. This is the moment AE2 becomes the central nervous system of your factory."
       ],
       "icon": "ae2:64k_crafting_storage",
       "x": 3,
@@ -553,7 +558,8 @@
         "A sub-network is a separate AE2 network that accesses your main network storage but uses its own channel budget.",
         "Design: Storage Bus on the sub-network's cable (different color) pointed at an ME Interface on the main network",
         "The sub-network sees everything in main storage but all its devices consume channels from the sub-network's Controller, not the main one",
-        "Use for dedicated autocrafting clusters that would otherwise drain all 32 channels from your main Controller face."
+        "Use for dedicated autocrafting clusters that would otherwise drain all 32 channels from your main Controller face.",
+        "Tip: Give your sub-network a dedicated Controller with its own power supply. A single Crystal Resonance Generator powers a small sub-network indefinitely from certus quartz."
       ],
       "icon": "ae2:storage_bus",
       "x": 3,
@@ -586,7 +592,8 @@
         "P2P (Point-to-Point) Tunnels compress up to 32 channels into a single channel.",
         "Place a P2P Tunnel at one location, link it with a Memory Card to another P2P Tunnel at a distant location",
         "One Dense Cable can then carry 32 P2P Tunnels times 32 channels each — 1024 channels on a single backbone cable",
-        "Use for: extending your network to a Mekanism factory across your base, connecting a mining outpost, or running channels into a multi-floor autocrafting tower."
+        "Use for: extending your network to a Mekanism factory across your base, connecting a mining outpost, or running channels into a multi-floor autocrafting tower.",
+        "Tip: Use P2P Tunnels to extend your main network to a Mekanism factory 100 blocks away. One Dense Cable with a P2P Tunnel at each end carries 32 channels — enough for a full ore processing line complete with Import/Export Buses."
       ],
       "icon": "ae2:me_p2p_tunnel",
       "x": 3,
@@ -846,7 +853,8 @@
         "Access your ME network from anywhere in the same dimension.",
         "Craft a Wireless Access Point (place near Controller), craft a Wireless Terminal, bind them",
         "Open inventory, click terminal icon — full ME access without standing at a terminal",
-        "Upgrade: Wireless Universal Terminal accesses AE2, Mekanism QIO, and fluid storage from one device."
+        "Upgrade: Wireless Universal Terminal accesses AE2, Mekanism QIO, and fluid storage from one device.",
+        "Tip: The Wireless Terminal also works across dimensions if linked to a Quantum Network Bridge — stand on Mars and access your Earth AE2 system from a handheld device."
       ],
       "icon": "ae2:wireless_terminal",
       "x": 7.5,
