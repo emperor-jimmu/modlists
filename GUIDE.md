@@ -427,6 +427,20 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)            | Animated item pickup notifications                                 |
 | [Day Counter](https://www.curseforge.com/minecraft/mc-mods/day-counter)                       | Day counter HUD — displays at dawn via ActionBar, fades after. Also supports Title/Subtitle/Chat display. Calendar block and reward system available but fully optional. |
 | [Hud Texts](https://www.curseforge.com/minecraft/mc-mods/hud-texts)                           | HUD text framework — dependency for Day Counter (from V3.4)       |
+
+**Day Counter config** (config/daycounter-common.toml — verify keys after first launch):
+
+| Setting              | Value        | Why                                                     |
+|----------------------|-------------|---------------------------------------------------------|
+| New day display      | `ACTIONBAR` | ActionBar messages auto-fade after ~3s                  |
+| New day sound        | `false`     | No sound notification — just the text                   |
+| Rewards              | `false`     | No day-based rewards — too gamey                        |
+| Week days            | `false`     | No day-of-week names — just "Day 42"                    |
+| Date system          | `false`     | No calendar date — just day count                       |
+| Calendar block/item  | N/A         | Don't craft them — they're items, not mandatory features |
+
+This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn that fades. No HUD element, no sounds, no rewards. Days count in the background. The calendar block can be crafted later if you want a physical day tracker for your base.
+
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
 
