@@ -6,15 +6,16 @@
 
 ## Decisions
 
-| Area               | Choice                                                                                                                                                                                             |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Philosophy         | Hybrid — milestones + optional breadcrumbs                                                                                                                                                         |
-| Chapter layout     | One chapter per mod, Phase sections inside (Getting Started / Industrial Ascent / Endgame), cross-links for integration                                                                            |
-| Gating             | Soft — sequential within chapter, no cross-chapter blocking                                                                                                                                        |
+| Area               | Choice                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Philosophy         | Hybrid — milestones + optional breadcrumbs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Chapter layout     | One chapter per mod, Phase sections inside (Getting Started / Industrial Ascent / Endgame), cross-links for integration                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Gating             | Soft — sequential within chapter, no cross-chapter blocking                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Milestone rewards  | Phase 1: XP + starter materials (andesite alloy, enriched alloy, certus quartz, rough gems — items the player uses immediately). Phase 2: XP + mid-game materials (steel ingots, brass, basic control circuits, cut gems, HDPE sheets — consumable supplies, not infrastructure). Phase 3: XP + rare materials (flawless gems, nether stars, dragon's breath, glacio crystals — used for endgame crafting the player is actively pursuing). **Rule**: the reward must be usable within the next 2 quests. If the player doesn't have the machine to process it, don't give it. |
-| Breadcrumb rewards | XP bottles + single-ingredient materials (iron ingots, redstone, lapis — consumables).                                                                                                                                                      |
+| Breadcrumb rewards | XP bottles + single-ingredient materials (iron ingots, redstone, lapis — consumables).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 **Reward exclusion rules:**
+
 - No placement blocks (machines, generators, workstations, multiblock components).
 - No utility items (waystones, chunk loaders, teleporters, building wands, chunk claimers).
 - No creative-only items, spawn eggs, or command-block-adjacent rewards.
@@ -427,6 +428,7 @@ Cross-links are **descriptive references** in quest text, not actual FTB Quests 
 **Phase 2+ rule**: Cross-links reference specific quests, but never as hard dependencies. A player who hasn't touched Create can still complete Mekanism's "Ore Quintupling" milestone — the quest text says "the full chemical chain. For automated item routing, see Create's Logistics Layer milestone" but the quest completes on detection alone.
 
 **Cross-link format** (in quest descriptions):
+
 - "This machine needs **Enriched Alloy** (check EMI — alloyed in a Mekanism Infuser)."
 - "For automated item delivery, see **Create chapter: Logistics Layer** milestone. Not required to complete this quest."
 - "After MC 'Industrial Revolution' research, return to this chapter for Phase 2 quests."
@@ -442,6 +444,7 @@ Cross-links are **descriptive references** in quest text, not actual FTB Quests 
 ## Verification
 
 ### Pre-authoring (before writing any quests)
+
 1. Launch game with FTB Quests + all dependencies installed
 2. Run `/ftbquests editing_mode` — verify editor opens
 3. Create one test quest per chapter (6 quests total). Export `quests.snbt`.
@@ -450,7 +453,9 @@ Cross-links are **descriptive references** in quest text, not actual FTB Quests 
 6. Kill server, confirm `config/ftbquests/quests.snbt` exists and is valid
 
 ### Smoke test (after authoring)
+
 Test 3 quests per chapter, minimum 18 quests checked:
+
 1. First milestone (Phase 1) — verify detection works, reward appears, dependency arrow renders
 2. First breadcrumb — verify hexagonal/square visual distinction
 3. One Phase 2 milestone — verify dependency chain from Phase 1 → Phase 2
@@ -458,7 +463,9 @@ Test 3 quests per chapter, minimum 18 quests checked:
 Per-quest checks: item detection fires, fallback checkmark works, reward item matches spec, tutorial text renders, EMI `R`/`U` works from quest book.
 
 ### Full verification (after all quests authored)
+
 One play session, fresh world, survival mode:
+
 1. Open quest book — verify all 6 chapters visible, MineColonies first
 2. Complete Create Phase 1 chain — verify sequential unlocks work
 3. Switch to Mekanism — verify Phase 1 is self-contained (no Create dependency)

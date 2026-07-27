@@ -160,21 +160,21 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 4: Create Phase 2 milestones**
   Create 8 hexagon quests in column x=3.0:
 
-  9. **Steam Power** — Task: detect `create:steam_engine`. Description: "Steam Engines output up to 16,384 SU — massively more than water wheels. Requires a heated Blaze Burner, Fluid Tank (water), and Steam Engine block. Pump water in, keep blaze fed." Reward: XP 32 bottles + 8 brass ingots. Depends on: Rails & Trains.
+  1. **Steam Power** — Task: detect `create:steam_engine`. Description: "Steam Engines output up to 16,384 SU — massively more than water wheels. Requires a heated Blaze Burner, Fluid Tank (water), and Steam Engine block. Pump water in, keep blaze fed." Reward: XP 32 bottles + 8 brass ingots. Depends on: Rails & Trains.
 
-  10. **Steel & Aluminum (TFMG)** — Task: detect `tfmg:steel_ingot`. Description: "TFMG adds heavy industry. Steel = iron + coal in a Blast Furnace (multiblock). Aluminum = bauxite ore → Electrolysis. These are your Phase 2 structural materials." Reward: XP 32 bottles + 8 steel ingots. Depends on: Steam Power.
+  2. **Steel & Aluminum (TFMG)** — Task: detect `tfmg:steel_ingot`. Description: "TFMG adds heavy industry. Steel = iron + coal in a Blast Furnace (multiblock). Aluminum = bauxite ore → Electrolysis. These are your Phase 2 structural materials." Reward: XP 32 bottles + 8 steel ingots. Depends on: Steam Power.
 
-  11. **Contraptions** — Task: detect `create:gantry_carriage` AND `create:mechanical_piston`. Description: "Contraptions are Create's moving structures. Mechanical Piston pushes rows. Gantry slides along a shaft. Bearing rotates. Cart Assembler attaches to minecarts. Contraptions mine, place, harvest, move — they're mobile factories." Reward: XP 32 bottles + 8 brass ingots. Depends on: Steel & Aluminum.
+  3. **Contraptions** — Task: detect `create:gantry_carriage` AND `create:mechanical_piston`. Description: "Contraptions are Create's moving structures. Mechanical Piston pushes rows. Gantry slides along a shaft. Bearing rotates. Cart Assembler attaches to minecarts. Contraptions mine, place, harvest, move — they're mobile factories." Reward: XP 32 bottles + 8 brass ingots. Depends on: Steel & Aluminum.
 
-  12. **Mechanical Arm** — Task: detect `create:mechanical_arm`. Description: "The Arm picks up and places items precisely. Program with wrench. Essential for complex assembly lines where belts can't reach." Reward: XP 32 bottles + 4 precision mechanisms. Depends on: Contraptions.
+  4. **Mechanical Arm** — Task: detect `create:mechanical_arm`. Description: "The Arm picks up and places items precisely. Program with wrench. Essential for complex assembly lines where belts can't reach." Reward: XP 32 bottles + 4 precision mechanisms. Depends on: Contraptions.
 
-  13. **Oil Processing (TFMG)** — Task: detect `tfmg:pump_jack`. Description: "TFMG adds oil deposits. Pump Jack extracts crude oil. Distillation Tower refines into diesel, kerosene, lubricant, and gasoline. This is your Phase 2 power backbone." Reward: XP 36 bottles + 8 HDPE sheets. Depends on: Steel & Aluminum.
+  5. **Oil Processing (TFMG)** — Task: detect `tfmg:pump_jack`. Description: "TFMG adds oil deposits. Pump Jack extracts crude oil. Distillation Tower refines into diesel, kerosene, lubricant, and gasoline. This is your Phase 2 power backbone." Reward: XP 36 bottles + 8 HDPE sheets. Depends on: Steel & Aluminum.
 
-  14. **Distillation Tower (TFMG)** — Task: detect `tfmg:distillation_controller`. Description: "The Distillation Tower is a multiblock — controller + stacked towers (minimum 4). Crude oil enters, diesel/gasoline/kerosene/lubricant exit from ports at different tower levels. Lubricant reduces Create machine stress." Reward: XP 40 bottles + 8 diesel buckets. Depends on: Oil Processing.
+  6. **Distillation Tower (TFMG)** — Task: detect `tfmg:distillation_controller`. Description: "The Distillation Tower is a multiblock — controller + stacked towers (minimum 4). Crude oil enters, diesel/gasoline/kerosene/lubricant exit from ports at different tower levels. Lubricant reduces Create machine stress." Reward: XP 40 bottles + 8 diesel buckets. Depends on: Oil Processing.
 
-  15. **Programmable Contraptions** — Task: detect `create:sequenced_gearshift`. Description: "Sequence Gearshift programs exact rotation — forward 90°, pause 1s, reverse 180°. Pair with Linked Controller for automated sequences. Enables crafting that needs specific item placement order." Reward: XP 32 bottles. Depends on: Mechanical Arm.
+  7. **Programmable Contraptions** — Task: detect `create:sequenced_gearshift`. Description: "Sequence Gearshift programs exact rotation — forward 90°, pause 1s, reverse 180°. Pair with Linked Controller for automated sequences. Enables crafting that needs specific item placement order." Reward: XP 32 bottles. Depends on: Mechanical Arm.
 
-  16. **Diesel Engine** — Task: detect `tfmg:diesel_engine`. Description: "Diesel Engines from TFMG — massively more SU than steam. Feed refined diesel. One engine powers an entire factory floor. Your rotational endgame." Reward: XP 48 bottles + 8 diesel buckets. Depends on: Distillation Tower.
+  8. **Diesel Engine** — Task: detect `tfmg:diesel_engine`. Description: "Diesel Engines from TFMG — massively more SU than steam. Feed refined diesel. One engine powers an entire factory floor. Your rotational endgame." Reward: XP 48 bottles + 8 diesel buckets. Depends on: Distillation Tower.
 
 - [ ] **Step 5: Create Phase 2 breadcrumbs**
   Create 4 square quests in column x=4.5:
@@ -196,11 +196,11 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 7: Create Phase 3 milestones**
   Create 3 hexagon quests in column x=6.0:
 
-   17. **Mega-Factory** — Task: checkmark (manual). Description: "Connect every production line. Create manufacturing feeds AE2 storage. AE2 autocrafting feeds Mekanism. 10+ crafters, 5+ assembly lines, train logistics across your base. This is a self-defined milestone — mark complete when it feels like a factory." Reward: XP 48 bottles + 8 refined obsidian. Depends on: Diesel Engine. Add fallback checkmark.
+    1. **Mega-Factory** — Task: checkmark (manual). Description: "Connect every production line. Create manufacturing feeds AE2 storage. AE2 autocrafting feeds Mekanism. 10+ crafters, 5+ assembly lines, train logistics across your base. This is a self-defined milestone — mark complete when it feels like a factory." Reward: XP 48 bottles + 8 refined obsidian. Depends on: Diesel Engine. Add fallback checkmark.
 
-   18. **Kinetic Megastructure** — Task: checkmark (manual). Description: "One power source feeds 50+ machines through shafts, gearboxes, and clutches. Tune RPMs until the entire factory runs green. Visible shafts crossing buildings — your factory is a kinetic sculpture." Reward: XP 48 bottles + 8 refined obsidian blocks. Depends on: Mega-Factory. Add fallback checkmark.
+    2. **Kinetic Megastructure** — Task: checkmark (manual). Description: "One power source feeds 50+ machines through shafts, gearboxes, and clutches. Tune RPMs until the entire factory runs green. Visible shafts crossing buildings — your factory is a kinetic sculpture." Reward: XP 48 bottles + 8 refined obsidian blocks. Depends on: Mega-Factory. Add fallback checkmark.
 
-   19. **Self-Regulating Factory** — Task: checkmark (manual). Description: "AE2 Level Emitter detects 'iron < 5000' → Redstone Link → Clutch engages → factory produces ingots → threshold reached → factory stops. Zero player interaction. Build one self-regulating chain per bulk material." Reward: XP 64 bottles + 1 nether star. Depends on: Kinetic Megastructure. Add fallback checkmark.
+    3. **Self-Regulating Factory** — Task: checkmark (manual). Description: "AE2 Level Emitter detects 'iron < 5000' → Redstone Link → Clutch engages → factory produces ingots → threshold reached → factory stops. Zero player interaction. Build one self-regulating chain per bulk material." Reward: XP 64 bottles + 1 nether star. Depends on: Kinetic Megastructure. Add fallback checkmark.
 
 - [ ] **Step 8: Create Phase 3 breadcrumbs**
   Create 2 square quests in column x=7.5:
@@ -279,23 +279,23 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 4: Create Phase 2 milestones**
   Create 9 hexagon quests in column x=3.0:
 
-  9. **Ore Tripling** — Task: detect `mekanism:purification_chamber` (checks player has used the Purification Chamber). Description: "3x processing: Purification Chamber → Crusher → Enrichment Chamber → Energized Smelter. Needs oxygen gas for the Purification Chamber. 1 ore → 3 ingots." Reward: XP 32 bottles. Depends on: Ore Doubling.
+  1. **Ore Tripling** — Task: detect `mekanism:purification_chamber` (checks player has used the Purification Chamber). Description: "3x processing: Purification Chamber → Crusher → Enrichment Chamber → Energized Smelter. Needs oxygen gas for the Purification Chamber. 1 ore → 3 ingots." Reward: XP 32 bottles. Depends on: Ore Doubling.
 
-  10. **Thermal Evaporation Plant** — Task: detect `mekanism:thermal_evaporation_controller`. Description: "Multiblock (minimum 3x3 base, up to 18 tall). Place in hot biome (desert = passive heat) or heat with Resistive Heater. Converts water → brine. Brine → Electrolytic Separator → Chlorine + Sodium. Chlorine feeds HCl production for ore quintupling." Reward: XP 36 bottles + 8 steel casings. Depends on: Ore Tripling.
+  2. **Thermal Evaporation Plant** — Task: detect `mekanism:thermal_evaporation_controller`. Description: "Multiblock (minimum 3x3 base, up to 18 tall). Place in hot biome (desert = passive heat) or heat with Resistive Heater. Converts water → brine. Brine → Electrolytic Separator → Chlorine + Sodium. Chlorine feeds HCl production for ore quintupling." Reward: XP 36 bottles + 8 steel casings. Depends on: Ore Tripling.
 
-  11. **Chemical Factory** — Task: checkmark. Description: "Build the complete chemical tree as one facility: Electrolytic Separator (H2+O2) → Chemical Infuser (HCl) → Chemical Injection Chamber. Parallel: Chemical Oxidizer (SO2) → Infuser (SO3) → Chemical Dissolution Chamber. Label your pipes." Reward: XP 40 bottles + 8 steel casings. Depends on: milestone 10 (Thermal Evaporation Plant). Add fallback checkmark.
+  3. **Chemical Factory** — Task: checkmark. Description: "Build the complete chemical tree as one facility: Electrolytic Separator (H2+O2) → Chemical Infuser (HCl) → Chemical Injection Chamber. Parallel: Chemical Oxidizer (SO2) → Infuser (SO3) → Chemical Dissolution Chamber. Label your pipes." Reward: XP 40 bottles + 8 steel casings. Depends on: milestone 10 (Thermal Evaporation Plant). Add fallback checkmark.
 
-  12. **Ore Quintupling** — Task: detect `mekanism:chemical_dissolution_chamber`. Description: "Full 5x chain: Dissolution Chamber → Chemical Washer → Chemical Crystallizer → Chemical Injection Chamber → Purification → Crusher → Enrichment → Smelter. 1 ore → 5 ingots. Sulfuric acid, hydrogen chloride, and water flow through pipes." Reward: XP 48 bottles + 8 refined obsidian dust. Depends on: Chemical Factory.
+  4. **Ore Quintupling** — Task: detect `mekanism:chemical_dissolution_chamber`. Description: "Full 5x chain: Dissolution Chamber → Chemical Washer → Chemical Crystallizer → Chemical Injection Chamber → Purification → Crusher → Enrichment → Smelter. 1 ore → 5 ingots. Sulfuric acid, hydrogen chloride, and water flow through pipes." Reward: XP 48 bottles + 8 refined obsidian dust. Depends on: Chemical Factory.
 
-  13. **Digital Miner** — Task: detect `mekanism:digital_miner`. Description: "Automated teleportation mining. Place, power with FE, set filter (ores*), and it extracts blocks directly into its inventory. Range: configurable. Modes: silk touch, replace with cobble. Makes manual mining obsolete." Reward: XP 40 bottles + 8 osmium ingots. Depends on: Ore Quintupling.
+  5. **Digital Miner** — Task: detect `mekanism:digital_miner`. Description: "Automated teleportation mining. Place, power with FE, set filter (ores*), and it extracts blocks directly into its inventory. Range: configurable. Modes: silk touch, replace with cobble. Makes manual mining obsolete." Reward: XP 40 bottles + 8 osmium ingots. Depends on: Ore Quintupling.
 
-  14. **Pressurized Reaction Chamber** — Task: detect `mekanism:pressurized_reaction_chamber`. Description: "PRC combines fluids + gases + solids. Key recipe: Water + Hydrogen + Bio Fuel → Ethylene + Substrate. Ethylene feeds Gas-Burning Generators. Substrate → HDPE Pellets (plastic). Your Phase 2 workhorse." Reward: XP 40 bottles + 8 HDPE sheets. Depends on: Chemical Factory.
+  6. **Pressurized Reaction Chamber** — Task: detect `mekanism:pressurized_reaction_chamber`. Description: "PRC combines fluids + gases + solids. Key recipe: Water + Hydrogen + Bio Fuel → Ethylene + Substrate. Ethylene feeds Gas-Burning Generators. Substrate → HDPE Pellets (plastic). Your Phase 2 workhorse." Reward: XP 40 bottles + 8 HDPE sheets. Depends on: Chemical Factory.
 
-  15. **Induction Matrix** — Task: detect `mekanism:induction_casing`. Description: "Megastorage for FE. Multiblock of Induction Casings in any shape. Fill with Induction Cells (capacity) and Providers (transfer rate). A small 4x4x4 holds billions of FE. Your fission reactor needs this." Reward: XP 40 bottles + 8 steel casings. Depends on: Digital Miner.
+  7. **Induction Matrix** — Task: detect `mekanism:induction_casing`. Description: "Megastorage for FE. Multiblock of Induction Casings in any shape. Fill with Induction Cells (capacity) and Providers (transfer rate). A small 4x4x4 holds billions of FE. Your fission reactor needs this." Reward: XP 40 bottles + 8 steel casings. Depends on: Digital Miner.
 
-  16. **Seismic Surveying** — Task: detect `mekanism:seismic_vibrator`. Description: "Vibrator sends waves underground. Reader picks up reflections revealing caves, lava, ore veins. Map the underground before you dig. Find dense ore clusters for Digital Miner targeting." Reward: XP 32 bottles. Depends on: Digital Miner.
+  8. **Seismic Surveying** — Task: detect `mekanism:seismic_vibrator`. Description: "Vibrator sends waves underground. Reader picks up reflections revealing caves, lava, ore veins. Map the underground before you dig. Find dense ore clusters for Digital Miner targeting." Reward: XP 32 bottles. Depends on: Digital Miner.
 
-  17. **Fission Reactor** — Task: detect `mekanism:fission_reactor_controller`. Description: "Nuclear power at 7 MFE/t. Multiblock: Frame + Controller + Fuel Assembly + Control Rods. Burns Fissile Fuel (processed uranium). Produces Nuclear Waste — store in barrels, process into Polonium later. Needs coolant (water/sodium) and proper rod settings. Meltdown possible — test isolated from your base." Reward: XP 48 bottles + 8 fissile fuel. Depends on: Induction Matrix.
+  9. **Fission Reactor** — Task: detect `mekanism:fission_reactor_controller`. Description: "Nuclear power at 7 MFE/t. Multiblock: Frame + Controller + Fuel Assembly + Control Rods. Burns Fissile Fuel (processed uranium). Produces Nuclear Waste — store in barrels, process into Polonium later. Needs coolant (water/sodium) and proper rod settings. Meltdown possible — test isolated from your base." Reward: XP 48 bottles + 8 fissile fuel. Depends on: Induction Matrix.
 
 - [ ] **Step 5: Create Phase 2 breadcrumbs**
   Create 4 square quests in column x=4.5:
@@ -317,11 +317,11 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 7: Create Phase 3 milestones**
   Create 3 hexagon quests in column x=6.0:
 
-   18. **Fusion Reactor** — Task: detect `mekanism:fusion_reactor_controller`. Description: "Laser-initiated D-T reaction. Requires: massive laser amplifier array, Deuterium + Tritium production, precise temperature. Output: 200 MFE/t. Zero waste. Clean energy." Reward: XP 64 bottles + 8 refined obsidian blocks. Depends on: milestone 17 (Fission Reactor).
+    1. **Fusion Reactor** — Task: detect `mekanism:fusion_reactor_controller`. Description: "Laser-initiated D-T reaction. Requires: massive laser amplifier array, Deuterium + Tritium production, precise temperature. Output: 200 MFE/t. Zero waste. Clean energy." Reward: XP 64 bottles + 8 refined obsidian blocks. Depends on: milestone 17 (Fission Reactor).
 
-   19. **Quantum Entangloporter** — Task: detect `mekanism:quantum_entangloporter`. Description: "Instant wireless items/fluids/gases/FE across any dimension. Set same frequency on two Entangloporters. Whatever enters one appears in the other. No trains, no bridges, no latency." Reward: XP 64 bottles + 8 refined obsidian blocks. Depends on: Fusion Reactor.
+    2. **Quantum Entangloporter** — Task: detect `mekanism:quantum_entangloporter`. Description: "Instant wireless items/fluids/gases/FE across any dimension. Set same frequency on two Entangloporters. Whatever enters one appears in the other. No trains, no bridges, no latency." Reward: XP 64 bottles + 8 refined obsidian blocks. Depends on: Fusion Reactor.
 
-   20. **SPS / MekaSuit** — Task: detect `mekanism:mekasuit_bodyarmor`. Description: "Supercritical Phase Shifter converts Polonium → Antimatter. Antimatter crafts the MekaSuit Gravitational Modulating Unit (creative flight). Install modules: Energy Shield (100% DR), Jetpack, Magnetic Attraction, Inhalation Purification. You are a demigod." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Fusion Reactor.
+    3. **SPS / MekaSuit** — Task: detect `mekanism:mekasuit_bodyarmor`. Description: "Supercritical Phase Shifter converts Polonium → Antimatter. Antimatter crafts the MekaSuit Gravitational Modulating Unit (creative flight). Install modules: Energy Shield (100% DR), Jetpack, Magnetic Attraction, Inhalation Purification. You are a demigod." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Fusion Reactor.
 
 - [ ] **Step 8: Create Phase 3 breadcrumbs**
   Create 2 square quests in column x=7.5:
@@ -337,7 +337,7 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
   ```
 
 - [ ] **Step 10: Smoke test Mekanism chapter**
-  - [ ] **Step 10: Smoke test Mekanism chapter**
+    - [ ] **Step 10: Smoke test Mekanism chapter**
   In survival mode, fresh world:
   1. Open quest book -- verify Mekanism chapter visible
   2. Complete Power Generation quest (craft heat generator) -- verify detection fires, reward appears
@@ -391,19 +391,19 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 4: Create Phase 2 milestones**
   Create 7 hexagon quests in column x=3.0:
 
-  5. **Autocrafting Setup** — Task: detect `ae2:crafting_accelerator`. Description: "Crafting CPU (multiblock of Crafting Storage + Co-Processor) + Molecular Assembler + Pattern Provider. Assemblers in checkerboard with Providers. Encode patterns at Pattern Encoding Terminal. 'Craft' button in ME Terminal." Reward: XP 36 bottles + 4 crafting co-processors. Depends on: ME Network.
+  1. **Autocrafting Setup** — Task: detect `ae2:crafting_accelerator`. Description: "Crafting CPU (multiblock of Crafting Storage + Co-Processor) + Molecular Assembler + Pattern Provider. Assemblers in checkerboard with Providers. Encode patterns at Pattern Encoding Terminal. 'Craft' button in ME Terminal." Reward: XP 36 bottles + 4 crafting co-processors. Depends on: ME Network.
 
-  6. **Crafting Patterns** — Task: detect `ae2:crafting_pattern`. Description: "Three types: Crafting (workbench recipes — Assembler crafts), Processing (machine recipes — AE2 sends to machine), Smithing (smithing table). Encode at Pattern Terminal — drag items like crafting table." Reward: XP 32 bottles + 4 blank patterns. Depends on: Autocrafting Setup.
+  2. **Crafting Patterns** — Task: detect `ae2:crafting_pattern`. Description: "Three types: Crafting (workbench recipes — Assembler crafts), Processing (machine recipes — AE2 sends to machine), Smithing (smithing table). Encode at Pattern Terminal — drag items like crafting table." Reward: XP 32 bottles + 4 blank patterns. Depends on: Autocrafting Setup.
 
-  7. **Processing Automation** — Task: detect `ae2:pattern_provider`. Description: "Place Pattern Provider on Mekanism machine input face. Insert Processing Pattern for 'Enriched Alloy.' Export Bus on output → ME network. Request from terminal → AE2 pushes items, waits for output, imports result." Reward: XP 36 bottles + 4 pattern providers. Depends on: Crafting Patterns.
+  3. **Processing Automation** — Task: detect `ae2:pattern_provider`. Description: "Place Pattern Provider on Mekanism machine input face. Insert Processing Pattern for 'Enriched Alloy.' Export Bus on output → ME network. Request from terminal → AE2 pushes items, waits for output, imports result." Reward: XP 36 bottles + 4 pattern providers. Depends on: Crafting Patterns.
 
-  8. **Large Autocrafting** — Task: detect `ae2:64k_crafting_storage`. Description: "Multiple CPUs handle simultaneous requests. Co-Processors per CPU enable parallel crafting steps. 4 Co-Processors = 4 sub-components crafted in parallel. Request 'Ultimate Energy Cube' and watch the cascade." Reward: XP 40 bottles + 4 64k crafting storage. Depends on: Processing Automation.
+  4. **Large Autocrafting** — Task: detect `ae2:64k_crafting_storage`. Description: "Multiple CPUs handle simultaneous requests. Co-Processors per CPU enable parallel crafting steps. 4 Co-Processors = 4 sub-components crafted in parallel. Request 'Ultimate Energy Cube' and watch the cascade." Reward: XP 40 bottles + 4 64k crafting storage. Depends on: Processing Automation.
 
-  9. **ME Interface** — Task: detect `ae2:interface`. Description: "Bidirectional AE2↔world bridge. Stores items in network, keeps fixed stock (always 64 iron ingots), accepts items from Create belts and Mekanism pipes — items enter ME network." Reward: XP 32 bottles + 2 interfaces. Depends on: Large Autocrafting.
+  5. **ME Interface** — Task: detect `ae2:interface`. Description: "Bidirectional AE2↔world bridge. Stores items in network, keeps fixed stock (always 64 iron ingots), accepts items from Create belts and Mekanism pipes — items enter ME network." Reward: XP 32 bottles + 2 interfaces. Depends on: Large Autocrafting.
 
-  10. **Sub-Networks** — Task: checkmark. Description: "Storage Bus on sub-network cable pointed at Interface on main network = sub-network sees main storage but uses own channels. Use for separate autocrafting clusters that don't drain main Controller." Reward: XP 32 bottles. Depends on: ME Interface. Add fallback checkmark.
+  6. **Sub-Networks** — Task: checkmark. Description: "Storage Bus on sub-network cable pointed at Interface on main network = sub-network sees main storage but uses own channels. Use for separate autocrafting clusters that don't drain main Controller." Reward: XP 32 bottles. Depends on: ME Interface. Add fallback checkmark.
 
-  11. **P2P Tunnels** — Task: detect `ae2:me_p2p_tunnel`. Description: "Compress 32 channels into 1. Link P2P Tunnels with Memory Card. One Dense Cable can carry 32 P2P × 32 channels = 1024 channels. Extend network across base or to mining outpost." Reward: XP 40 bottles + 4 P2P tunnels. Depends on: Sub-Networks.
+  7. **P2P Tunnels** — Task: detect `ae2:me_p2p_tunnel`. Description: "Compress 32 channels into 1. Link P2P Tunnels with Memory Card. One Dense Cable can carry 32 P2P × 32 channels = 1024 channels. Extend network across base or to mining outpost." Reward: XP 40 bottles + 4 P2P tunnels. Depends on: Sub-Networks.
 
 - [ ] **Step 5: Create Phase 2 breadcrumbs**
   Create 3 square quests in column x=4.5:
@@ -414,7 +414,7 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 
 - [ ] **Step 6: Commit Phase 2**
 
-  ```
+  ```powershell
   git add config/ftbquests/
   git commit -m "feat(quests): AE2 chapter Phase 2 — 7 milestones + 3 breadcrumbs"
   ```
@@ -424,9 +424,9 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 7: Create Phase 3 milestones**
   Create 2 hexagon quests in column x=6.0:
 
-   12. **Quantum Network Bridge** — Task: detect `ae2:quantum_link`. Description: "Connect two ME networks across any distance or dimension. Quantum Ring (8 Quantum Link Chambers in ring). Link with Quantum Entangled Singularities (Ender Pearls + Matter Balls). Earth terminal sees Moon base items." Reward: XP 64 bottles + 8 certus quartz blocks. Depends on: milestone 11 (P2P Tunnels).
+    1. **Quantum Network Bridge** — Task: detect `ae2:quantum_link`. Description: "Connect two ME networks across any distance or dimension. Quantum Ring (8 Quantum Link Chambers in ring). Link with Quantum Entangled Singularities (Ender Pearls + Matter Balls). Earth terminal sees Moon base items." Reward: XP 64 bottles + 8 certus quartz blocks. Depends on: milestone 11 (P2P Tunnels).
 
-   13. **Spatial Storage** — Task: detect `ae2:spatial_storage_cell`. Description: "Store and transport entire rooms — blocks, entities, everything. Build Spatial Pylon ring around room. Massive FE cost. Move your Mekanism factory to Mars in one operation. Backup your base." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Quantum Network Bridge.
+    2. **Spatial Storage** — Task: detect `ae2:spatial_storage_cell`. Description: "Store and transport entire rooms — blocks, entities, everything. Build Spatial Pylon ring around room. Massive FE cost. Move your Mekanism factory to Mars in one operation. Backup your base." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Quantum Network Bridge.
 
 - [ ] **Step 8: Create Phase 3 breadcrumbs**
   Create 3 square quests in column x=7.5:
@@ -443,7 +443,7 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
   ```
 
 - [ ] **Step 10: Smoke test AE2 chapter**
-  - [ ] **Step 10: Smoke test AE2 chapter**
+    - [ ] **Step 10: Smoke test AE2 chapter**
   In survival mode, fresh world:
   1. Open quest book -- verify AE2 chapter visible
   2. Complete Certus Quartz quest -- verify detection fires
@@ -495,15 +495,15 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 4: Create Phase 2 milestones**
   Create 5 hexagon quests in column x=3.0:
 
-  5. **Tiered Bookshelves** — Task: detect `apotheosis:hellshelf`. Description: "Apotheosis removes enchanting level cap. Sharpness VIII, Protection VIII, Fortune V now possible. Hellshelf (nether materials) enables higher levels. Seashelf (ocean) and Endshelf (End) push further. Place around Enchanting Table like normal shelves." Reward: XP 32 bottles + 4 hellshelves. Depends on: Rarity Climb.
+  1. **Tiered Bookshelves** — Task: detect `apotheosis:hellshelf`. Description: "Apotheosis removes enchanting level cap. Sharpness VIII, Protection VIII, Fortune V now possible. Hellshelf (nether materials) enables higher levels. Seashelf (ocean) and Endshelf (End) push further. Place around Enchanting Table like normal shelves." Reward: XP 32 bottles + 4 hellshelves. Depends on: Rarity Climb.
 
-  6. **Library of Alexandria** — Task: detect `apotheosis:library`. Description: "Single block stores ALL enchanted books. Infinite capacity, searchable, auto-combines (Sharpness IV + IV = V). Dump books from mob farms — they auto-merge. No more chests full of Bane of Arthropods." Reward: XP 32 bottles + 4 bookshelves. Depends on: Tiered Bookshelves.
+  2. **Library of Alexandria** — Task: detect `apotheosis:library`. Description: "Single block stores ALL enchanted books. Infinite capacity, searchable, auto-combines (Sharpness IV + IV = V). Dump books from mob farms — they auto-merge. No more chests full of Bane of Arthropods." Reward: XP 32 bottles + 4 bookshelves. Depends on: Tiered Bookshelves.
 
-  7. **Gem Mastery** — Task: craft a Flawless gem (two Cut gems combined). Description: "Two Cut gems → Flawless (+100% stat value, 4x Rough). Flawless crit gem in Lifesteal weapon = extreme DPS+sustain. Flawless HP gem in chestplate = survive boss one-shots." Reward: XP 36 bottles + 2 flawless gems (random). Depends on: First Gem.
+  3. **Gem Mastery** — Task: craft a Flawless gem (two Cut gems combined). Description: "Two Cut gems → Flawless (+100% stat value, 4x Rough). Flawless crit gem in Lifesteal weapon = extreme DPS+sustain. Flawless HP gem in chestplate = survive boss one-shots." Reward: XP 36 bottles + 2 flawless gems (random). Depends on: First Gem.
 
-  8. **Affixed Boss Hunting** — Task: kill 3 mobs with boss affixes (use FTB Quests kill task with NBT filter for `apotheosis:boss` tag). Description: "Affixed bosses = main Mythic gear source. Tough (+50% HP), Plagued (poison), Chaotic (random). Strategy: Lifesteal rune for Tough, Ice rune for kiting, fire resistance potion for Plagued. GraveStone preserves items on death." Reward: XP 40 bottles + 4 epic gear pieces (random slot). Depends on: Rarity Climb.
+  4. **Affixed Boss Hunting** — Task: kill 3 mobs with boss affixes (use FTB Quests kill task with NBT filter for `apotheosis:boss` tag). Description: "Affixed bosses = main Mythic gear source. Tough (+50% HP), Plagued (poison), Chaotic (random). Strategy: Lifesteal rune for Tough, Ice rune for kiting, fire resistance potion for Plagued. GraveStone preserves items on death." Reward: XP 40 bottles + 4 epic gear pieces (random slot). Depends on: Rarity Climb.
 
-  9. **Spawner Engineering** — Task: silk-touch a spawner AND modify it (right-click with empty hand → change entity type). Description: "Silk Touch spawners (Apotheosis sets level to 1). Place, right-click → change entity type, spawn delay, player range, entity cap. Combine with mob grinder for automated XP + loot + gear farm." Reward: XP 36 bottles + 1 spawner (unconfigured -- player places and modifies it). Depends on: Tiered Bookshelves.
+  5. **Spawner Engineering** — Task: silk-touch a spawner AND modify it (right-click with empty hand → change entity type). Description: "Silk Touch spawners (Apotheosis sets level to 1). Place, right-click → change entity type, spawn delay, player range, entity cap. Combine with mob grinder for automated XP + loot + gear farm." Reward: XP 36 bottles + 1 spawner (unconfigured -- player places and modifies it). Depends on: Tiered Bookshelves.
 
 - [ ] **Step 5: Create Phase 2 breadcrumbs**
   Create 2 square quests in column x=4.5:
@@ -523,9 +523,9 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 7: Create Phase 3 milestones**
   Create 2 hexagon quests in column x=6.0:
 
-   10. **Mythic Arsenal** — Task: checkmark. Description: "Full Mythic set + 4 Flawless gems per piece + max-level enchantments. Apotheosis ceiling reached. Salvage everything Rare and below — only Epic+ worth inspecting." Reward: XP 64 bottles + 1 nether star. Depends on: Affixed Boss Hunting. Add fallback checkmark.
+    1. **Mythic Arsenal** — Task: checkmark. Description: "Full Mythic set + 4 Flawless gems per piece + max-level enchantments. Apotheosis ceiling reached. Salvage everything Rare and below — only Epic+ worth inspecting." Reward: XP 64 bottles + 1 nether star. Depends on: Affixed Boss Hunting. Add fallback checkmark.
 
-   11. **Perfect Roll** — Task: checkmark. Description: "Mythic weapon with ideal affix combination (Ruthless + Titanic + Nimble). This is the true endgame loot chase. Every affixed Cataclysm boss and Aether guardian kill is a chance at perfection." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Mythic Arsenal. Add fallback checkmark.
+    2. **Perfect Roll** — Task: checkmark. Description: "Mythic weapon with ideal affix combination (Ruthless + Titanic + Nimble). This is the true endgame loot chase. Every affixed Cataclysm boss and Aether guardian kill is a chance at perfection." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Mythic Arsenal. Add fallback checkmark.
 
 - [ ] **Step 8: Create Phase 3 breadcrumb**
   Create 1 square quest in column x=7.5:
@@ -540,7 +540,7 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
   ```
 
 - [ ] **Step 10: Smoke test Apotheosis chapter**
-  - [ ] **Step 10: Smoke test Apotheosis chapter**
+    - [ ] **Step 10: Smoke test Apotheosis chapter**
   In survival mode, fresh world:
   1. Open quest book -- verify Apotheosis chapter visible
   2. Complete Affix Gear Drops via checkmark fallback -- verify manual completion without item detection
@@ -593,13 +593,13 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 4: Create Phase 2 milestones**
   Create 4 hexagon quests in column x=3.0. Note: Stellaris missiles the Phase 1/Phase 2 boundary — these quests are in column x=3.0 but dockable from Phase 1 milestone 5 (Moon Landing) which is in column x=0.0. This breaks the column convention — Stellaris Phase 1 and Phase 2 connect via a cross-column dependency. This is acceptable because the Phase 1/Phase 2 split is arbitrary for Stellaris (it's really one continuous progression).
 
-  6. **Tier 2 Rocket** — Task: detect `stellaris:rocket_t2`. Description: "Crafted with Desh from Moon. Reaches Mercury (Ostranium ore, extreme heat — bring fire resistance) and Venus (Tharsite ore, acid rain, high gravity). Each planet has unique hazards. Establish temp base: Solar Panel + Distributor + Waystone. Mine and leave." Reward: XP 40 bottles + 8 desh ingots. Depends on: Moon Landing.
+  1. **Tier 2 Rocket** — Task: detect `stellaris:rocket_t2`. Description: "Crafted with Desh from Moon. Reaches Mercury (Ostranium ore, extreme heat — bring fire resistance) and Venus (Tharsite ore, acid rain, high gravity). Each planet has unique hazards. Establish temp base: Solar Panel + Distributor + Waystone. Mine and leave." Reward: XP 40 bottles + 8 desh ingots. Depends on: Moon Landing.
 
-  7. **Planetary Resources** — Task: checkmark. Description: "Resource mapping: Desh (Moon, Mars) → Tier 2. Ostranium (Mercury) → Tier 3. Tharsite (Venus) → Tier 4. Glacio Crystals (Glacio) → endgame. Process ALL planet ores through Mekanism 5x on Earth. Ship raw ore → Waystone → AE2 → autocraft rockets." Reward: XP 36 bottles + 8 ostranium ingots. Depends on: Tier 2 Rocket. Add fallback checkmark.
+  2. **Planetary Resources** — Task: checkmark. Description: "Resource mapping: Desh (Moon, Mars) → Tier 2. Ostranium (Mercury) → Tier 3. Tharsite (Venus) → Tier 4. Glacio Crystals (Glacio) → endgame. Process ALL planet ores through Mekanism 5x on Earth. Ship raw ore → Waystone → AE2 → autocraft rockets." Reward: XP 36 bottles + 8 ostranium ingots. Depends on: Tier 2 Rocket. Add fallback checkmark.
 
-  8. **Mars Base** — Task: dimension entry to Mars (`stellaris:mars`) with fallback checkmark. Description: "Tier 3 Rocket (Ostranium). Mars: red desert, low gravity, dust storms. First planet worth a permanent base. Build: (a) Solar farm, (b) Mekanism power, (c) AE2 Quantum link, (d) Chunk Loader, (e) Digital Miner for desh/ostranium. Mars = your second industrial hub." Reward: XP 48 bottles + 8 desh ingots. Depends on: Planetary Resources.
+  3. **Mars Base** — Task: dimension entry to Mars (`stellaris:mars`) with fallback checkmark. Description: "Tier 3 Rocket (Ostranium). Mars: red desert, low gravity, dust storms. First planet worth a permanent base. Build: (a) Solar farm, (b) Mekanism power, (c) AE2 Quantum link, (d) Chunk Loader, (e) Digital Miner for desh/ostranium. Mars = your second industrial hub." Reward: XP 48 bottles + 8 desh ingots. Depends on: Planetary Resources.
 
-  9. **Interplanetary Logistics** — Task: checkmark. Description: "Connect Earth + Moon + Mars via Waystones (free, instant). Access Earth AE2 from Mars via Quantum Bridge. Create trains for planet-side bulk transport. Goal: stand on Mars, open ME Terminal, see Earth items. Request rockets → they autocraft on Earth." Reward: XP 48 bottles + 8 HDPE sheets. Depends on: Mars Base. Add fallback checkmark.
+  4. **Interplanetary Logistics** — Task: checkmark. Description: "Connect Earth + Moon + Mars via Waystones (free, instant). Access Earth AE2 from Mars via Quantum Bridge. Create trains for planet-side bulk transport. Goal: stand on Mars, open ME Terminal, see Earth items. Request rockets → they autocraft on Earth." Reward: XP 48 bottles + 8 HDPE sheets. Depends on: Mars Base. Add fallback checkmark.
 
 - [ ] **Step 5: Create Phase 2 breadcrumbs**
   Create 3 square quests in column x=4.5:
@@ -620,9 +620,9 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 - [ ] **Step 7: Create Phase 3 milestones**
   Create 2 hexagon quests in column x=6.0:
 
-   10. **Glacio** — Task: dimension entry to Glacio (`stellaris:glacio`) with fallback checkmark. Description: "Tier 4 Rocket (Tharsite). Ice planet, extreme cold, endgame mobs (ice golems). Resource: Glacio Crystals — endgame Stellaris component. Bring MekaSuit + Apotheosis mythic weapons. Your final space frontier." Reward: XP 64 bottles + 8 glacio crystals. Depends on: Interplanetary Logistics.
+    1. **Glacio** — Task: dimension entry to Glacio (`stellaris:glacio`) with fallback checkmark. Description: "Tier 4 Rocket (Tharsite). Ice planet, extreme cold, endgame mobs (ice golems). Resource: Glacio Crystals — endgame Stellaris component. Bring MekaSuit + Apotheosis mythic weapons. Your final space frontier." Reward: XP 64 bottles + 8 glacio crystals. Depends on: Interplanetary Logistics.
 
-   11. **Interplanetary Empire** — Task: checkmark. Description: "Functional automated bases on Earth, Moon, Mars, and Glacio. AE2 spans all dimensions. Chunk Loaders everywhere. Resources flow automatically: miners → 5x → AE2 → autocraft rockets. Space is conquered. You are a demigod." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Glacio. Add fallback checkmark.
+    2. **Interplanetary Empire** — Task: checkmark. Description: "Functional automated bases on Earth, Moon, Mars, and Glacio. AE2 spans all dimensions. Chunk Loaders everywhere. Resources flow automatically: miners → 5x → AE2 → autocraft rockets. Space is conquered. You are a demigod." Reward: XP 64 bottles + 1 dragon's breath. Depends on: Glacio. Add fallback checkmark.
 
 - [ ] **Step 8: Create Phase 3 breadcrumb**
   Create 1 square quest in column x=7.5:
@@ -637,7 +637,7 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
   ```
 
 - [ ] **Step 10: Smoke test Stellaris chapter**
-  - [ ] **Step 10: Smoke test Stellaris chapter**
+    - [ ] **Step 10: Smoke test Stellaris chapter**
   In survival mode, fresh world:
   1. Open quest book -- verify Stellaris chapter visible
   2. Complete Space Program quest -- verify detection fires
@@ -651,29 +651,31 @@ Stellaris Getting Started: use column 0 (Phase 1) since the chapter's first ques
 ### Task 5.5: Quest Description Consistency Review
 
 **Files:**
+
 - Review: `config/ftbquests/quests.snbt` (all authored quest descriptions)
 
 - [ ] **Step 1: Read all quest descriptions**
   Open the quests.snbt file in a text editor. Read every quest description field.
 
 - [ ] **Step 2: Check voice consistency**
-  - All quests use "you" not "the player"
-  - All quests explain what the machine DOES before how to USE it
-  - All cross-links use the same format: "(check EMI -- crafted in a Mekanism Infuser)"
-  - First-use concepts appear with parenthetical definition on first mention only
-  - No quest assumes the player has completed a different chapter
+    - All quests use "you" not "the player"
+    - All quests explain what the machine DOES before how to USE it
+    - All cross-links use the same format: "(check EMI -- crafted in a Mekanism Infuser)"
+    - First-use concepts appear with parenthetical definition on first mention only
+    - No quest assumes the player has completed a different chapter
 
 - [ ] **Step 3: Check terminology consistency**
-  - "FE" not "RF" (mention equivalence once: "1 FE = 1 RF")
-  - "ME Network" not "AE network" or "AE2 system"
-  - "quest" not "mission" or "objective"
-  - "milestone" not "main quest" or "goal"
-  - "check EMI" not "look up in JEI" or "search recipes"
+    - "FE" not "RF" (mention equivalence once: "1 FE = 1 RF")
+    - "ME Network" not "AE network" or "AE2 system"
+    - "quest" not "mission" or "objective"
+    - "milestone" not "main quest" or "goal"
+    - "check EMI" not "look up in JEI" or "search recipes"
 
 - [ ] **Step 4: Fix inconsistencies**
   Open FTB Quests editor, correct quest descriptions, save.
 
 - [ ] **Step 5: Commit consistency fixes**
+
   ```
   git add config/ftbquests/
   git commit -m "fix(quests): consistency pass -- unified voice, terminology, cross-link format across 6 chapters"
