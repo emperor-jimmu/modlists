@@ -2524,41 +2524,55 @@ Functional aquariums for displaying your catches. Build the tank of your dreams.
 
 ## Wave 4.5 — Quests
 
-Procedural bounty system that gives purpose to exploration and material collection without manual quest authoring.
+Authored quest book with chapters covering every major mod in the pack. Guides progression without forcing it — quests are optional breadcrumbs, not mandatory checklists.
 
-| Mod                                                                                  | Role                                                                                          |
-|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**Bountiful**](https://www.curseforge.com/minecraft/mc-mods/bountiful) 8.0.0-beta.2 | Bounty boards in villages — procedurally generated fetch/kill/exploration quests with rewards |
+### Questing Foundation
 
-Bountiful generates quests automatically — find a bounty board in any village, accept tasks, earn rewards. Fully optional. Items from installed mods automatically appear in its reward pools.
+| Mod                                                                               | Role                                                                           |
+|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| [FTB Library](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge)     | Core library for all FTB mods — configuration, GUI framework, team management  |
+| [**FTB Quests**](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge)   | Quest book framework — chapters, task types, rewards, in-game visual editor    |
+| [FTB Teams](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge)         | Quest progress tracker — in single-player, you're automatically a team of 1    |
+| [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)                     | JavaScript scripting engine — recipe modification, worldgen tweaks, event hooks |
+| [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)   | Bridges FTB Quests with KubeJS, JEI/REI compat layer (works with EMI)          |
 
-Procedural bounty boards give you optional goals as you explore. No quest book, no authoring, no pressure.
+### Quest Addons
 
-### Bountiful — Bounty Boards
+| Mod                                                                                      | Role                                                                                             |
+|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| [**MineColonies Questline**](https://www.curseforge.com/minecraft/mc-mods/minecolonies-questline) | Pre-written 40+ quest chain covering MineColonies from Town Hall to endgame colony    |
+| [ExtraQuests](https://modrinth.com/mod/extraquests)                                      | Additional task/reward types — key-value tracking, progressive tasks, daily/weekly quests, console command rewards |
 
-Find **bounty boards** in every village (lectern-like block near center). Right-click → quest list.
+**MineColonies Questline** is the only pre-written content — it covers colony progression from first Town Hall through Industrial Revolution research. All other quests (Create, Mekanism, AE2, Apotheosis, combat, dimensions, food) must be authored using FTB Quests' in-game editor (`/ftbquests editing_mode`).
 
-| Quest Type      | Example                     | Reward                     |
-|-----------------|-----------------------------|----------------------------|
-| **Gathering**   | Deliver 16 iron ingots      | Emeralds, XP, rare items   |
-| **Hunting**     | Kill 8 creepers             | Combat loot, XP            |
-| **Exploration** | Find a specific biome       | Map items, navigation gear |
-| **Crafting**    | Deliver crafted tools/armor | Ingots, gems               |
+### How It Works
 
-**How**:
+1. Press the quest key (configurable, default `-`) to open the quest book
+2. Chapters organized by mod: **Create**, **Mekanism**, **AE2**, **MineColonies**, **Apotheosis**, **Combat**, **Exploration**, **Food & Farming**
+3. Quests auto-detect progress — craft an item, enter a dimension, kill a boss → quest completes
+4. Rewards include items, XP, and knowledge — some powerful items are quest-gated to soft-enforce progression
+5. The quest book is **always available** but **never mandatory** — ignore it when you want to chill
 
-1. Find any village
-2. Locate bounty board
-3. Right-click → select a quest
-4. Required items appear in board's slots — drop them in
-5. Collect reward
-6. New quests regenerate periodically
+### Pillar Alignment
 
-**Decree system**: Blacklist quest types you don't enjoy.
+- **Power fantasy**: Quests celebrate milestones. "You built a fusion reactor!" with a meaningful reward feels earned.
+- **Easy curve**: New players follow quest breadcrumbs. "Craft enrichment chamber → craft crusher → 2x ore processing" teaches Mekanism step by step.
+- **200h+ content**: Quests surface hidden content. "Have you visited the Aether?" "Try sequenced crafting with Create." Players discover systems they might miss.
+- **Chill living**: The quest book key is configurable. There's no on-screen HUD element. No time-limited quests. No penalties for ignoring it. The book waits for you — not the other way around.
 
-**Tip**: Take gathering quests for materials you already have in your AE2 system — free rewards for zero extra work.
+### Authoring Plan
 
----
+| Phase | Quests to Write | Effort |
+|-------|----------------|--------|
+| **MineColonies** | Pre-written (MineColonies Questline) | 0 hours — included |
+| **Create** | Water wheel → brass → sequenced crafting → trains | ~15 quests |
+| **Mekanism** | Ore doubling → tripling → quintupling → digital miner → fission → fusion | ~20 quests |
+| **AE2** | Certus quartz → ME drive → autocrafting → quantum network | ~15 quests |
+| **Apotheosis** | Affix gear → gems → enchanting → mythic tier | ~10 quests |
+| **Combat & Exploration** | Bosses (Cataclysm, Aether, Twilight Forest), dungeons, dimensions | ~15 quests |
+| **Food & Farming** | Farmer's Delight meals, brewing, fishing, animal husbandry | ~10 quests |
+
+**Total**: ~85 authored quests + ~40 pre-written colony quests = ~125 quests. Author gradually — one chapter at a time. The pack is fully playable without quests; they're enhancement, not foundation.
 
 ### Session Plan — Wave 4 & 4.5
 
@@ -2568,7 +2582,7 @@ Find **bounty boards** in every village (lectern-like block near center). Right-
 | **Session 2 — Farm**              | Plant tomato, cabbage, onion, rice. Cook first meal (tomato soup is easiest)                       | Sustainable ingredients |
 | **Session 3 — Brewing**           | Find barley/grapes/honey. Build brewing station. Start first batch. Place aging barrel             | First drink fermenting  |
 | **Session 4 — Kitchen expansion** | Storage Delight cabinets/drawers. Try More Delight recipes. Collect Nether ingredients             | Full kitchen            |
-| **Session 5 — Bounties**          | Visit village, find bounty board, complete a gathering quest for free rewards                      | Passive XP and loot     |
+| **Session 5 — Questing**          | Open quest book (`-` key). Browse MineColonies questline. Complete "Town Hall" quest               | Questing unlocked        |
 | **Ongoing**                       | Age drinks for boss buffs. Explore oceans for seafood. Stock AE2 with ingredients for autocrafting | Buff food always ready  |
 
 ---
@@ -2967,11 +2981,11 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 2 — Exploration         | 26      | 6      | 32      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships, hang glider, IaA addon                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
 | Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
-| Wave 4.5 — Quests            | 1       | —      | 1       | Bountiful                                                                                                                                                                                                                                                              |
+| Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
 | Wave 5 — Combat              | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
 | Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                               |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
-| **Total**                    | **155** | **40** | **195** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
+| **Total**                    | **160** | **41** | **201** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
@@ -3131,8 +3145,8 @@ Start with Moon missions, establish Tier 1 base, then Mercury/Venus. Mars and Gl
 
 | Phase                      | What you'll be doing                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Phase 1** (hours 0–40)   | Wave 0 setup. Early Create (water wheel, millstone). Find certus quartz for AE2. First Mekanism machines (2x ore). Explore Terralith biomes. Skill Tree earning XP from first action. First Simply Swords weapon from dungeon. Cook first Farmer's Delight meal. Start MineColonies (Town Hall, Builder, Mine). Grab bounties from village boards                                                                                                          |
-| **Phase 2** (hours 40–200) | Full Create factory (conveyors, deployers, sequenced crafters, trains). Mekanism 3x–5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis Rare/Epic gear. Mutant Monsters. First Cataclysm boss. TFMG oil refining and diesel engines. Build with Rechiseled, Macaw's, Handcrafted. Small Ships for ocean travel. Immersive Aircraft for aerial exploration. Complete bounties. Stellaris Moon and early planets |
+| **Phase 1** (hours 0–40)   | Wave 0 setup. Early Create (water wheel, millstone). Find certus quartz for AE2. First Mekanism machines (2x ore). Explore Terralith biomes. Skill Tree earning XP from first action. First Simply Swords weapon from dungeon. Cook first Farmer's Delight meal. Start MineColonies (Town Hall, Builder, Mine). Open quest book, begin MineColonies questline                                                                                                            |
+| **Phase 2** (hours 40–200) | Full Create factory (conveyors, deployers, sequenced crafters, trains). Mekanism 3x–5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis Rare/Epic gear. Mutant Monsters. First Cataclysm boss. TFMG oil refining and diesel engines. Build with Rechiseled, Macaw's, Handcrafted. Small Ships for ocean travel. Immersive Aircraft for aerial exploration. Complete quest chapters. Stellaris Moon and early planets |
 | **Phase 3** (hours 200+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis Mythic gear with perfect gem sockets. Twilight Forest final bosses. Cataclysm endgame bosses. BetterEnd dimension exploration. Mars and Glacio space bases. Monumental building projects. Create mega-factories. Perpetual optimization                                                                                                                           |
 
 ---

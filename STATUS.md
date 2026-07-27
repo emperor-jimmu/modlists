@@ -213,16 +213,28 @@
 - [x] Day Counter (Wave 0 — Inventory & UI) — day counter HUD with dawn display and fade. Requires Hud Texts dependency. 5.7M DL, MIT, updated Apr 2026.
 - [ ] Day Counter config — verify config keys after test launch, apply overrides from GUIDE.md (ActionBar only, no sound, no rewards, no week days, no date system)
 
-### Skipped After Review (Jul 2026 batch 14)
-- [x] MineColonies Questline — requires FTB Quests + KubeJS (neither in pack)
-- [x] ExtraQuests — requires FTB Quests
-- [x] Certain Questing Additions — requires FTB Quests
-- [x] FTB JEI Extras — JEI-specific (pack uses EMI)
-- [x] FTB XMod Compat — only needed with FTB mods (none adopted)
-- [x] FTB Ez Crystals — simplifies AE2 crystal growth, contradicts 200h+ progression philosophy
+### Added Mods (Jul 2026 batch 15 — Questing Ecosystem)
+- [x] FTB Library (Wave 4.5 — Questing Foundation) — core FTB library, 211M+ DL ecosystem. NeoForge 1.21.1.
+- [x] FTB Quests (Wave 4.5 — Questing Foundation) — quest book framework with in-game editor. Chapters organized by mod. 211M DL, NeoForge 1.21.1.
+- [x] FTB Teams (Wave 4.5 — Questing Foundation) — quest progress tracker. In SP: team of 1, transparent.
+- [x] KubeJS (Wave 4.5 — Questing Foundation) — JavaScript scripting engine. Required by MineColonies Questline. Also enables recipe tweaks and event hooks for future pack tuning.
+- [x] FTB XMod Compat (Wave 4.5 — Questing Foundation) — bridges FTB Quests with KubeJS, EMI compat layer.
+- [x] MineColonies Questline (Wave 4.5 — Quest Addons) — pre-written 40+ quest chain for MineColonies. Requires FTB Quests + KubeJS.
+- [x] ExtraQuests (Wave 4.5 — Quest Addons) — additional task/reward types: key-value tracking, progressive tasks, daily/weekly quests, console command rewards. 75K DL, MIT, Modrinth.
 
-### Discussion Held (Jul 2026 batch 14)
-- [ ] FTB Echoes — lore-driven milestone hologram system. Pros: immersive, built-in shop, stage-gating. Cons: requires authoring 30-50 custom echo definitions from scratch, persistent NPC may conflict with chill living. Decision: deferred, Bountiful remains the questing system.
+### Removed Mods (Jul 2026 batch 15)
+- [x] Bountiful — replaced by FTB Quests ecosystem. Procedural bounty boards removed in favor of authored quest book with chapters per mod.
+
+### Skipped After Review (Jul 2026 batch 15)
+- [x] Certain Questing Additions — cosmetic UI animation tweaks for FTB Quests. Adds no functionality. Skipped.
+- [x] FTB Echoes — superseded by FTB Quests. Two questing systems would conflict. Hologram NPC also clashes with chill living.
+- [x] FTB JEI Extras — JEI-specific (pack uses EMI). Skipped.
+- [x] FTB Ez Crystals — simplifies AE2 crystal growth. Contradicts 200h+ progression. Skipped.
+
+### Discussion Held (Jul 2026 batch 15)
+- [x] EMI vs JEI — keeping EMI. Recipe trees + native Create Ponder outweigh JEI addon ecosystem. FTB Quests works with EMI compat layer.
+- [x] FTB Quests adoption — replaced Bountiful. Full ecosystem: 7 mods, 201 total. Pre-written MineColonies questline. ~85 quests to author for other mods.
+- [x] Survival + single-player constraints added to AGENTS.md
 
 ### Added Mods (Jul 2026 — Research Batch)
 - [x] Eating Animations (Wave 0 — Visual & Client QoL) — NeoForge 1.21.1 available as eatinganimation-1.21.0-6.0.1.jar
