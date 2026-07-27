@@ -1,0 +1,371 @@
+{
+  "id": "1000014C",
+  "group": "10000000",
+  "order_index": 4,
+  "title": "Stellaris",
+  "subtitle": "Interplanetary travel, rockets, and off-world colonies",
+  "icon": "stellaris:rocket_t1",
+  "default_quest_shape": "hexagon",
+  "quests": [
+    {
+      "id": "10000119",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "title": "Space Program",
+      "subtitle": "Rocket Station + Fuel Refinery",
+      "description": [
+        "Rocket Station assembles rocket components. Fuel Refinery converts oil to rocket fuel.",
+        "Find oil pools or use Mekanism Pump. Tier 1 rockets consume ~300 fuel per launch."
+      ],
+      "icon": "stellaris:rocket_station",
+      "tasks": [
+        {
+          "id": "10000116",
+          "type": "item",
+          "item": "stellaris:rocket_station",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "1000011D",
+      "x": 0,
+      "y": 1,
+      "shape": "hexagon",
+      "title": "Space Suit",
+      "subtitle": "Full Space Suit",
+      "description": [
+        "Most planets have no atmosphere -- without a suit, you die in seconds. Space Suit has an oxygen meter (blue bar).",
+        "Full suit = ~10 minutes. Fill at Oxygen Distributor before launch. Durability + oxygen are separate."
+      ],
+      "icon": "stellaris:space_suit_helmet",
+      "dependencies": [
+        "10000119"
+      ],
+      "tasks": [
+        {
+          "id": "1000011A",
+          "type": "item",
+          "item": "stellaris:space_suit_chestplate",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000121",
+      "x": 0,
+      "y": 2,
+      "shape": "hexagon",
+      "title": "Oxygen System",
+      "subtitle": "Distributor + Water Separator",
+      "description": [
+        "Life support loop: Solar Panel powers Water Separator, splits water to oxygen, feeds Distributor, fills suit.",
+        "Build this on every planet. Without it, trips are 10-minute suicide runs."
+      ],
+      "icon": "stellaris:oxygen_distributor",
+      "dependencies": [
+        "1000011D"
+      ],
+      "tasks": [
+        {
+          "id": "1000011E",
+          "type": "item",
+          "item": "stellaris:water_separator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000125",
+      "x": 0,
+      "y": 3,
+      "shape": "hexagon",
+      "title": "First Rocket",
+      "subtitle": "Tier 1 Rocket to Moon",
+      "description": [
+        "Assemble at Rocket Station: nose cone, body, engine, fins. Right-click for launch pad.",
+        "Cargo: filled suit, food, blocks, torches, weapons, waystone. Tier 1 reaches Moon only."
+      ],
+      "icon": "stellaris:rocket_t1",
+      "dependencies": [
+        "10000121"
+      ],
+      "tasks": [
+        {
+          "id": "10000122",
+          "type": "item",
+          "item": "stellaris:rocket_t1",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000129",
+      "x": 0,
+      "y": 4,
+      "shape": "hexagon",
+      "title": "Moon Landing",
+      "subtitle": "Travel to the Moon",
+      "description": [
+        "Moon: low gravity, no atmosphere, no mobs. Mine Desh ore for Tier 2 rockets.",
+        "First priority: Solar Panel to Distributor to Separator. Second: Waystone. Third: Launch Pad."
+      ],
+      "icon": "stellaris:moon_stone",
+      "dependencies": [
+        "10000125"
+      ],
+      "tasks": [
+        {
+          "id": "10000126",
+          "type": "dimension",
+          "dimension": "stellaris:moon"
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "1000012D",
+      "x": 3,
+      "y": 0,
+      "shape": "hexagon",
+      "title": "Tier 2 Rocket",
+      "subtitle": "Mercury and Venus",
+      "description": [
+        "Crafted with Desh from Moon. Reaches Mercury (Ostranium, extreme heat) and Venus (Tharsite, acid rain).",
+        "Establish temp base: Solar Panel + Distributor + Waystone. Mine and leave."
+      ],
+      "icon": "stellaris:rocket_t2",
+      "dependencies": [
+        "10000129"
+      ],
+      "tasks": [
+        {
+          "id": "1000012A",
+          "type": "item",
+          "item": "stellaris:rocket_t2",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000131",
+      "x": 3,
+      "y": 1,
+      "shape": "hexagon",
+      "title": "Planetary Resources",
+      "subtitle": "Resource Mapping",
+      "description": [
+        "Desh (Moon, Mars) to Tier 2. Ostranium (Mercury) to Tier 3. Tharsite (Venus) to Tier 4. Glacio Crystals to endgame.",
+        "Process ALL planet ores through Mekanism 5x on Earth. Ship ore to Waystone to AE2."
+      ],
+      "icon": "stellaris:ostranium_ingot",
+      "dependencies": [
+        "1000012D"
+      ],
+      "tasks": [
+        {
+          "id": "1000012E",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000135",
+      "x": 3,
+      "y": 2,
+      "shape": "hexagon",
+      "title": "Mars Base",
+      "subtitle": "Permanent Off-World Base",
+      "description": [
+        "Tier 3 Rocket (Ostranium). Mars: red desert, low gravity, dust storms. First permanent base.",
+        "Build: Solar farm, Mekanism power, AE2 Quantum link, Chunk Loader, Digital Miner for desh/ostranium."
+      ],
+      "icon": "stellaris:mars_stone",
+      "dependencies": [
+        "10000131"
+      ],
+      "tasks": [
+        {
+          "id": "10000132",
+          "type": "dimension",
+          "dimension": "stellaris:mars"
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000139",
+      "x": 3,
+      "y": 3,
+      "shape": "hexagon",
+      "title": "Interplanetary Logistics",
+      "subtitle": "Connect All Bases",
+      "description": [
+        "Connect Earth + Moon + Mars via Waystones (free, instant). Access Earth AE2 from Mars via Quantum Bridge.",
+        "Goal: stand on Mars, open ME Terminal, see Earth items. Request rockets -- they autocraft on Earth."
+      ],
+      "icon": "minecraft:ender_pearl",
+      "dependencies": [
+        "10000135"
+      ],
+      "tasks": [
+        {
+          "id": "10000136",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "1000013D",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "title": "Glacio",
+      "subtitle": "Ice Planet Endgame",
+      "description": [
+        "Tier 4 Rocket (Tharsite). Ice planet, extreme cold, ice golems. Resource: Glacio Crystals.",
+        "Bring MekaSuit + Apotheosis mythic weapons. Your final space frontier."
+      ],
+      "icon": "stellaris:glacio_stone",
+      "dependencies": [
+        "10000139"
+      ],
+      "tasks": [
+        {
+          "id": "1000013A",
+          "type": "dimension",
+          "dimension": "stellaris:glacio"
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000141",
+      "x": 6,
+      "y": 1,
+      "shape": "hexagon",
+      "title": "Interplanetary Empire",
+      "subtitle": "You Are a Demigod",
+      "description": [
+        "Automated bases on Earth, Moon, Mars, Glacio. AE2 spans all dimensions. Chunk Loaders everywhere.",
+        "Resources flow automatically: miners to 5x to AE2 to autocraft rockets. Space is conquered."
+      ],
+      "icon": "stellaris:rocket_t4",
+      "dependencies": [
+        "1000013D"
+      ],
+      "tasks": [
+        {
+          "id": "1000013E",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000149",
+      "x": 1.5,
+      "y": 1.5,
+      "shape": "square",
+      "title": "Oxygen Management",
+      "description": [
+        "Suit oxygen (blue bar) depletes over time. Refills near Distributor. Full suit = ~10 min. Atmosphere planets = no drain."
+      ],
+      "icon": "stellaris:oxygen_distributor",
+      "tasks": [
+        {
+          "id": "10000142",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "1000014A",
+      "x": 2.5,
+      "y": 2.5,
+      "shape": "square",
+      "title": "Launch Pad Mechanics",
+      "description": [
+        "Launch Pad is your return ticket. Land anywhere, enter Launch Pad rocket to return. Multiple pads = fast planet-hopping."
+      ],
+      "icon": "stellaris:rocket_t1",
+      "tasks": [
+        {
+          "id": "10000144",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "1000014B",
+      "x": 3.5,
+      "y": 3.5,
+      "shape": "square",
+      "title": "Chunk Loading in Space",
+      "description": [
+        "Planets = separate dimensions. Overworld factories STOP when you are in space. Place Chunk Loader at every base."
+      ],
+      "icon": "minecraft:ender_eye",
+      "tasks": [
+        {
+          "id": "10000146",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    }
+  ],
+  "quest_links": []
+}

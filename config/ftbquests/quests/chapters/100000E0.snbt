@@ -1,0 +1,465 @@
+{
+  "id": "100000E0",
+  "group": "10000000",
+  "order_index": 2,
+  "title": "Applied Energistics 2",
+  "subtitle": "Digital storage and autocrafting network",
+  "icon": "ae2:controller",
+  "default_quest_shape": "hexagon",
+  "quests": [
+    {
+      "id": "100000A1",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "title": "Certus Quartz",
+      "subtitle": "Mine and Grow Crystals",
+      "description": [
+        "AE2's silicon -- needed for everything. Found underground in white-blue crystal clusters.",
+        "Grow more: drop Certus Quartz Seed in water. Find a vein early."
+      ],
+      "icon": "ae2:certus_quartz_crystal",
+      "tasks": [
+        {
+          "id": "1000009E",
+          "type": "item",
+          "item": "ae2:certus_quartz_crystal",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000A5",
+      "x": 0,
+      "y": 1,
+      "shape": "hexagon",
+      "title": "First Processor",
+      "subtitle": "Inscriber + Logic Press",
+      "description": [
+        "Inscriber + Press = processor. Presses found in Meteorites (craters with sky stone).",
+        "You need all 4: Logic, Calculation, Engineering, Silicon. Enriched Alloy needed for Inscriber (check EMI -- crafted in a Mekanism Infuser)."
+      ],
+      "icon": "ae2:logic_processor",
+      "dependencies": [
+        "100000A1"
+      ],
+      "tasks": [
+        {
+          "id": "100000A2",
+          "type": "item",
+          "item": "ae2:logic_processor",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000A9",
+      "x": 0,
+      "y": 2,
+      "shape": "hexagon",
+      "title": "ME Network",
+      "subtitle": "Controller + Drive + Terminal",
+      "description": [
+        "Controller = brain of your storage network. Connect ME Drive (stores items on disks) + Terminal (GUI).",
+        "Power with FE. Channels: Controller provides 32 per face. Each device uses 1 channel."
+      ],
+      "icon": "ae2:controller",
+      "dependencies": [
+        "100000A5"
+      ],
+      "tasks": [
+        {
+          "id": "100000A6",
+          "type": "item",
+          "item": "ae2:controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000AD",
+      "x": 0,
+      "y": 3,
+      "shape": "hexagon",
+      "title": "Storage Disks",
+      "subtitle": "1K Storage Cell",
+      "description": [
+        "Storage Cells hold items in ME Drive. 1K = 1024 bytes (item types). Each unique type uses ~1 byte.",
+        "Upgrade: 4K to 16K to 64K for more capacity. Store everything in one place."
+      ],
+      "icon": "ae2:1k_storage_cell",
+      "dependencies": [
+        "100000A9"
+      ],
+      "tasks": [
+        {
+          "id": "100000AA",
+          "type": "item",
+          "item": "ae2:1k_storage_cell",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000B1",
+      "x": 3,
+      "y": 0,
+      "shape": "hexagon",
+      "title": "Autocrafting Setup",
+      "subtitle": "Crafting CPU + Assembler + Provider",
+      "description": [
+        "Crafting CPU (Crafting Storage + Co-Processor) + Molecular Assembler + Pattern Provider.",
+        "Assemblers in checkerboard with Providers. Encode patterns. Click Craft in ME Terminal."
+      ],
+      "icon": "ae2:crafting_accelerator",
+      "dependencies": [
+        "100000A9"
+      ],
+      "tasks": [
+        {
+          "id": "100000AE",
+          "type": "item",
+          "item": "ae2:crafting_accelerator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000B5",
+      "x": 3,
+      "y": 1,
+      "shape": "hexagon",
+      "title": "Crafting Patterns",
+      "subtitle": "Crafting, Processing, Smithing",
+      "description": [
+        "Three types: Crafting (Assembler crafts), Processing (AE2 sends to machine), Smithing (smithing table).",
+        "Encode at Pattern Encoding Terminal -- drag items like crafting table."
+      ],
+      "icon": "ae2:crafting_pattern",
+      "dependencies": [
+        "100000B1"
+      ],
+      "tasks": [
+        {
+          "id": "100000B2",
+          "type": "item",
+          "item": "ae2:crafting_pattern",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000B9",
+      "x": 3,
+      "y": 2,
+      "shape": "hexagon",
+      "title": "Processing Automation",
+      "subtitle": "Pattern Provider + Mekanism Machine",
+      "description": [
+        "Place Pattern Provider on Mekanism machine input face. Insert Processing Pattern.",
+        "Export Bus on output to ME network. Request from terminal -- AE2 pushes items, waits for output, imports result."
+      ],
+      "icon": "ae2:pattern_provider",
+      "dependencies": [
+        "100000B5"
+      ],
+      "tasks": [
+        {
+          "id": "100000B6",
+          "type": "item",
+          "item": "ae2:pattern_provider",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000BD",
+      "x": 3,
+      "y": 3,
+      "shape": "hexagon",
+      "title": "Large Autocrafting",
+      "subtitle": "Multiple CPUs + Co-Processors",
+      "description": [
+        "Multiple CPUs handle simultaneous requests. Co-Processors per CPU = parallel crafting steps.",
+        "4 Co-Processors = 4 sub-components crafted in parallel. Request Ultimate Energy Cube and watch the cascade."
+      ],
+      "icon": "ae2:64k_crafting_storage",
+      "dependencies": [
+        "100000B9"
+      ],
+      "tasks": [
+        {
+          "id": "100000BA",
+          "type": "item",
+          "item": "ae2:64k_crafting_storage",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000C1",
+      "x": 3,
+      "y": 4,
+      "shape": "hexagon",
+      "title": "ME Interface",
+      "subtitle": "Bidirectional AE2 to World Bridge",
+      "description": [
+        "Stores items in network, keeps fixed stock (always 64 iron ingots), accepts items from Create belts and Mekanism pipes.",
+        "Items entering Interface go into ME network."
+      ],
+      "icon": "ae2:interface",
+      "dependencies": [
+        "100000BD"
+      ],
+      "tasks": [
+        {
+          "id": "100000BE",
+          "type": "item",
+          "item": "ae2:interface",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000C4",
+      "x": 3,
+      "y": 5,
+      "shape": "hexagon",
+      "title": "Sub-Networks",
+      "subtitle": "Channel-Efficient Subnet",
+      "description": [
+        "Storage Bus on sub-network cable pointed at Interface on main network = sees main storage but uses own channels.",
+        "Use for separate autocrafting clusters without draining main Controller."
+      ],
+      "icon": "ae2:storage_bus",
+      "dependencies": [
+        "100000C1"
+      ],
+      "tasks": [
+        {
+          "id": "100000C2",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000C8",
+      "x": 3,
+      "y": 6,
+      "shape": "hexagon",
+      "title": "P2P Tunnels",
+      "subtitle": "32 Channels into 1",
+      "description": [
+        "Compress 32 channels into 1. Link P2P Tunnels with Memory Card.",
+        "One Dense Cable can carry 32 P2P x 32 channels = 1024 channels. Extend across base or to mining outpost."
+      ],
+      "icon": "ae2:me_p2p_tunnel",
+      "dependencies": [
+        "100000C4"
+      ],
+      "tasks": [
+        {
+          "id": "100000C5",
+          "type": "item",
+          "item": "ae2:me_p2p_tunnel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000CC",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "title": "Quantum Network Bridge",
+      "subtitle": "Cross-Dimension Network",
+      "description": [
+        "Connect two ME networks across any distance or dimension. Quantum Ring (8 Link Chambers in ring).",
+        "Link with Quantum Entangled Singularities (Ender Pearls + Matter Balls). Earth terminal sees Moon base items."
+      ],
+      "icon": "ae2:quantum_link",
+      "dependencies": [
+        "100000C8"
+      ],
+      "tasks": [
+        {
+          "id": "100000C9",
+          "type": "item",
+          "item": "ae2:quantum_link",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000D0",
+      "x": 6,
+      "y": 1,
+      "shape": "hexagon",
+      "title": "Spatial Storage",
+      "subtitle": "Store Entire Rooms",
+      "description": [
+        "Store and transport entire rooms -- blocks, entities, everything. Build Spatial Pylon ring around room.",
+        "Massive FE cost. Move your Mekanism factory to Mars. Backup your base."
+      ],
+      "icon": "ae2:spatial_storage_cell",
+      "dependencies": [
+        "100000CC"
+      ],
+      "tasks": [
+        {
+          "id": "100000CD",
+          "type": "item",
+          "item": "ae2:spatial_storage_cell",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "100000D3",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "title": "Channels Explained",
+      "description": [
+        "Controller: 32 channels/face. Dense Cable: 32 channels. Regular Cable: 8. Smart Cable shows usage visually."
+      ],
+      "icon": "ae2:smart_cable",
+      "tasks": [
+        {
+          "id": "100000D1",
+          "type": "checkmark",
+          "value": {}
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "100000D7",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "title": "Cable Types",
+      "description": [
+        "Glass (cheap, 8ch), Covered (no block contact), Smart (shows usage), Dense (32ch, backbone)."
+      ],
+      "icon": "ae2:smart_cable",
+      "tasks": [
+        {
+          "id": "100000D4",
+          "type": "item",
+          "item": "ae2:smart_cable",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "100000DB",
+      "x": 1.5,
+      "y": 2,
+      "shape": "square",
+      "title": "Storage Bus",
+      "description": [
+        "Attach to external inventory (chest, barrel, Mekanism output) -- items appear in ME Terminal."
+      ],
+      "icon": "ae2:storage_bus",
+      "tasks": [
+        {
+          "id": "100000D8",
+          "type": "item",
+          "item": "ae2:storage_bus",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "100000DF",
+      "x": 1.5,
+      "y": 3,
+      "shape": "square",
+      "title": "Facades",
+      "description": [
+        "Hide cables inside blocks. 4 Cable Anchors + block to mimic = 4 Facades. Channels unaffected."
+      ],
+      "icon": "ae2:facade",
+      "tasks": [
+        {
+          "id": "100000DC",
+          "type": "item",
+          "item": "ae2:facade",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    }
+  ],
+  "quest_links": []
+}

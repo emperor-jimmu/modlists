@@ -1,0 +1,378 @@
+{
+  "id": "10000001",
+  "group": "10000000",
+  "order_index": 0,
+  "title": "Create",
+  "subtitle": "Rotational power and mechanical automation",
+  "icon": "create:cogwheel",
+  "default_quest_shape": "hexagon",
+  "quests": [
+    {
+      "id": "10000005",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "title": "Rotational Power",
+      "subtitle": "Harness water to spin shafts",
+      "description": [
+        "Create's power system is rotational -- spinning shafts transfer SU (Stress Units, Create's power measurement).",
+        "One water wheel in flowing water generates ~256 SU. Check stress with Engineer's Goggles."
+      ],
+      "icon": "create:water_wheel",
+      "tasks": [
+        {
+          "id": "10000002",
+          "type": "item",
+          "item": "create:water_wheel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000009",
+      "x": 0,
+      "y": 1,
+      "shape": "hexagon",
+      "title": "Mechanical Processing",
+      "subtitle": "Millstone + Mechanical Press",
+      "description": [
+        "Attach a Millstone and Mechanical Press to your water wheel via shaft and gearbox.",
+        "Millstone crushes wheat to flour, cobble to gravel. Press stamps ingots into plates and sheets."
+      ],
+      "icon": "create:millstone",
+      "dependencies": [
+        "10000005"
+      ],
+      "tasks": [
+        {
+          "id": "10000006",
+          "type": "item",
+          "item": "create:mechanical_press",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "1000000D",
+      "x": 0,
+      "y": 2,
+      "shape": "hexagon",
+      "title": "Fluid Systems",
+      "subtitle": "Fluid Pump + Tank + Pipe",
+      "description": [
+        "Create handles fluids -- water, lava, potions. Fluid Pump pulls from sources. Tank stores it.",
+        "Attach a Spout to fill bottles or feed boilers. Fluid throughput depends on pump RPM."
+      ],
+      "icon": "create:fluid_pump",
+      "dependencies": [
+        "10000009"
+      ],
+      "tasks": [
+        {
+          "id": "1000000A",
+          "type": "item",
+          "item": "create:fluid_tank",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000011",
+      "x": 0,
+      "y": 3,
+      "shape": "hexagon",
+      "title": "Brass Age",
+      "subtitle": "Brass Ingots via Mixer + Blaze Burner",
+      "description": [
+        "Brass = copper + zinc in a heated Mixer. Place a Blaze Burner under the Mixer, catch a blaze in a nether fortress, fuel it.",
+        "Brass unlocks precision machinery -- the real Create begins here."
+      ],
+      "icon": "create:brass_ingot",
+      "dependencies": [
+        "1000000D"
+      ],
+      "tasks": [
+        {
+          "id": "1000000E",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000015",
+      "x": 0,
+      "y": 4,
+      "shape": "hexagon",
+      "title": "Precision Crafting",
+      "subtitle": "Mechanical Crafter + Sequenced Assembly",
+      "description": [
+        "Mechanical Crafters snap together in 3D shapes around your recipe pattern. Power with a shaft.",
+        "Sequenced Assembly is Create's multi-step crafting -- press, cut, press, result."
+      ],
+      "icon": "create:mechanical_crafter",
+      "dependencies": [
+        "10000011"
+      ],
+      "tasks": [
+        {
+          "id": "10000012",
+          "type": "item",
+          "item": "create:mechanical_crafter",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000019",
+      "x": 0,
+      "y": 5,
+      "shape": "hexagon",
+      "title": "Air and Heat",
+      "subtitle": "Encased Fan -- washing, smelting, haunting",
+      "description": [
+        "Encased Fans create air streams. Facing water = washing items on a Depot. Facing fire/lava = bulk smelting.",
+        "Facing soul fire = haunting. Drop items through the stream via Chute for mass processing -- no FE cost."
+      ],
+      "icon": "create:encased_fan",
+      "dependencies": [
+        "10000015"
+      ],
+      "tasks": [
+        {
+          "id": "10000016",
+          "type": "item",
+          "item": "create:encased_fan",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "1000001D",
+      "x": 0,
+      "y": 6,
+      "shape": "hexagon",
+      "title": "Logistics Layer",
+      "subtitle": "Belt + Chute + Funnel + Smart Chute",
+      "description": [
+        "Belts move items horizontally. Chutes drop items down. Funnels extract from inventories. Smart Chutes filter.",
+        "Together: chest to funnel to belt to chute to storage. Your first item pipeline."
+      ],
+      "icon": "create:belt_connector",
+      "dependencies": [
+        "10000019"
+      ],
+      "tasks": [
+        {
+          "id": "1000001A",
+          "type": "item",
+          "item": "create:brass_funnel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000021",
+      "x": 0,
+      "y": 7,
+      "shape": "hexagon",
+      "title": "Rails and Trains",
+      "subtitle": "Assemble a Train",
+      "description": [
+        "Create trains are player-built. Craft a Train Casing, Bogey, Controls, and Track.",
+        "Place bogey on track, build casing on top, add controls. Trains carry items and players across your base."
+      ],
+      "icon": "create:track",
+      "dependencies": [
+        "1000001D"
+      ],
+      "tasks": [
+        {
+          "id": "1000001E",
+          "type": "item",
+          "item": "create:train_controls",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ]
+    },
+    {
+      "id": "10000025",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "title": "Andesite Alloy",
+      "description": [
+        "Andesite + iron nuggets. You will need hundreds. Automate production early."
+      ],
+      "icon": "create:andesite_alloy",
+      "tasks": [
+        {
+          "id": "10000022",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "10000028",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "title": "Cogwheel and Gearbox",
+      "description": [
+        "Gearboxes reverse rotation direction. Large cogwheels change speed by ratio -- small driving large = slower, large driving small = faster."
+      ],
+      "icon": "create:cogwheel",
+      "tasks": [
+        {
+          "id": "10000026",
+          "type": "item",
+          "item": "create:cogwheel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "1000002B",
+      "x": 1.5,
+      "y": 2,
+      "shape": "square",
+      "title": "Engineer's Goggles",
+      "description": [
+        "The single most important Create item. Equip to see SU usage, speed, and stress on every Create block.",
+        "Press W while hovering a block in EMI to open Ponder tutorial."
+      ],
+      "icon": "create:goggles",
+      "tasks": [
+        {
+          "id": "10000029",
+          "type": "item",
+          "item": "create:goggles",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "1000002F",
+      "x": 1.5,
+      "y": 3,
+      "shape": "square",
+      "title": "Redstone Link",
+      "description": [
+        "Wireless redstone. Two Links on same frequency carry signals across your base. No redstone dust spaghetti."
+      ],
+      "icon": "create:redstone_link",
+      "tasks": [
+        {
+          "id": "1000002C",
+          "type": "item",
+          "item": "create:redstone_link",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "10000032",
+      "x": 1.5,
+      "y": 4,
+      "shape": "square",
+      "title": "Windmill Bearing",
+      "description": [
+        "Passive power from wind. Attach sails (minimum 8). More sails = more SU (~500-4000). Needs clear sky above. Maintenance-free."
+      ],
+      "icon": "create:windmill_bearing",
+      "tasks": [
+        {
+          "id": "10000030",
+          "type": "item",
+          "item": "create:windmill_bearing",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    },
+    {
+      "id": "10000035",
+      "x": 1.5,
+      "y": 5,
+      "shape": "square",
+      "title": "Sequenced Assembly",
+      "description": [
+        "Steps apply in order: Deployer adds, Press stamps, Saw cuts, Spout fills. Loop unfinished items back. Precision Mechanism uses this."
+      ],
+      "icon": "create:precision_mechanism",
+      "tasks": [
+        {
+          "id": "10000033",
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {}
+      ],
+      "optional": true
+    }
+  ],
+  "quest_links": []
+}
