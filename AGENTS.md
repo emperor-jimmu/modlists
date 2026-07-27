@@ -143,3 +143,8 @@ No single mechanic should let the player skip a phase. If the digital miner can 
 ### Chill Rule
 
 At no point should config changes or feature additions make the game hostile to idle play. Don't add hunger/thirst overhauls, invasive mob spawning, or decay mechanics. The player should always be able to walk away from progression and just build. This is non-negotiable.
+
+### Game Mode Constraints
+
+- **Survival only** — creative mode is never used. Every block placed, every item crafted, and every structure built must be achievable in survival. Mods that require creative-mode access for core functionality are incompatible. Config options that assume creative-mode access (e.g., spawn eggs for testing) should be noted but don't disqualify a mod.
+- **Strictly single-player** — no multiplayer, no servers, no LAN games. Mods that add server administration tools, multiplayer sync features, or permissions systems are irrelevant. Multiplayer-only features (voting, teams, economy) should be config-disabled or skipped entirely. Mod compatibility with multiplayer is noted for reference but has zero weight in decision-making.

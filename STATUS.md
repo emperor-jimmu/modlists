@@ -204,6 +204,25 @@
 ### Added Mods (Jul 2026 batch 13)
 - [x] Mekanism Tools (Wave 1 — Mekanism Addons) — armor/shields/tools/paxels for Osmium, Bronze, Refined Obsidian, Refined Glowstone, Steel. Fills gear progression gap between netherite and MekaSuit. Official Mekanism addon. Apotheosis affixes apply to its gear.
 
+### Added Mods (Jul 2026 batch 14 — MineColonies Addons)
+- [x] JadeColonies (Wave 0 — Inventory & UI) — Jade tooltips for MineColonies huts, workers, and Domum Ornamentum blocks. 5.4M DL, NeoForge 1.21.1.
+- [x] Byzantine Styles Pack (Wave 1.5 — Colony Addons) — 3 build styles: Byzantine, Shogun, Nile. 12.4M DL, updated May 2026.
+- [x] Stylecolonies (Wave 1.5 — Colony Addons) — Official MineColonies blueprint addon by Raycoms. 10+ styles: Steampunk, Frontier, Aquatica, High Magic, Antique, Crimson Keep, etc. 27.6M DL, updated Jul 2026. FairyTale style unavailable (requires Quark, not in pack).
+- [x] Create: Colony Logistics (Wave 1.5 — Colony Addons) — bridges MineColonies to Create logistics (belts, chutes, trains). 54K DL, updated Jul 2026.
+- [x] ColonyLink (Wave 1.5 — Colony Addons) — connects MineColonies builders to AE2 for resource monitoring and autocrafting. 11K DL, updated Jul 2026.
+- [x] Day Counter (Wave 0 — Inventory & UI) — day counter HUD with dawn display and fade. Requires Hud Texts dependency. 5.7M DL, MIT, updated Apr 2026.
+
+### Skipped After Review (Jul 2026 batch 14)
+- [x] MineColonies Questline — requires FTB Quests + KubeJS (neither in pack)
+- [x] ExtraQuests — requires FTB Quests
+- [x] Certain Questing Additions — requires FTB Quests
+- [x] FTB JEI Extras — JEI-specific (pack uses EMI)
+- [x] FTB XMod Compat — only needed with FTB mods (none adopted)
+- [x] FTB Ez Crystals — simplifies AE2 crystal growth, contradicts 200h+ progression philosophy
+
+### Discussion Held (Jul 2026 batch 14)
+- [ ] FTB Echoes — lore-driven milestone hologram system. Pros: immersive, built-in shop, stage-gating. Cons: requires authoring 30-50 custom echo definitions from scratch, persistent NPC may conflict with chill living. Decision: deferred, Bountiful remains the questing system.
+
 ### Added Mods (Jul 2026 — Research Batch)
 - [x] Eating Animations (Wave 0 — Visual & Client QoL) — NeoForge 1.21.1 available as eatinganimation-1.21.0-6.0.1.jar
 - [x] Camera Overhaul (Wave 0 — Visual & Client QoL) — v2.0.5 for NeoForge 1.21.0-1.21.1
