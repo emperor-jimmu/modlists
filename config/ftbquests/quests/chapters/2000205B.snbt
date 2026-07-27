@@ -12,7 +12,11 @@
       "title": "Certus Quartz",
       "subtitle": "Mine and Grow Crystals",
       "description": [
-        "AE2's silicon — needed for every component. Found underground in white-blue crystal clusters (look for the distinctive glow). Each ore drops 1-4 crystals plus dust. Alternative: drop a Certus Quartz Seed into still water and wait — growing gives more output per seed but takes time. Prioritize finding a vein early — AE2 does not function without certus."
+        "AE2's silicon — needed for every component.",
+        "Found underground in white-blue crystal clusters (look for the distinctive glow)",
+        "Each ore drops 1-4 crystals plus dust",
+        "Alternative: drop a Certus Quartz Seed into still water and wait — growing gives more output per seed but takes time",
+        "Prioritize finding a vein early — AE2 does not function without certus."
       ],
       "icon": "ae2:certus_quartz_crystal",
       "x": 0,
@@ -49,7 +53,11 @@
       "title": "First Processor",
       "subtitle": "Inscriber and Logic Press",
       "description": [
-        "Inscriber + Press = processor. Presses are found inside Meteorites — crashed sky stone craters scattered across the world. Each meteorite contains one random press inside the central chamber. You need all 4: Logic Press, Calculation Press, Engineering Press, and Silicon Press. Enriched Alloy is required for the Inscriber recipe (check EMI — crafted in a Mekanism Infuser)."
+        "Inscriber + Press = processor.",
+        "Presses are found inside Meteorites — crashed sky stone craters scattered across the world",
+        "Each meteorite contains one random press inside the central chamber",
+        "You need all 4: Logic Press, Calculation Press, Engineering Press, and Silicon Press",
+        "Enriched Alloy is required for the Inscriber recipe (check EMI — crafted in a Mekanism Infuser)."
       ],
       "icon": "ae2:logic_processor",
       "x": 0,
@@ -88,7 +96,12 @@
       "title": "ME Network",
       "subtitle": "Controller, Drive, and Terminal",
       "description": [
-        "ME Controller = brain of your storage network. Connect an ME Drive (stores items on disks) and a Terminal (the GUI you interact with). Power with FE — connect any FE source to the Controller. Channels: each Controller face provides 32 channels. Every AE2 device (Drive, Terminal, Bus) consumes 1 channel. One Controller face supports a small to medium network."
+        "ME Controller = brain of your storage network.",
+        "Connect an ME Drive (stores items on disks) and a Terminal (the GUI you interact with)",
+        "Power with FE — connect any FE source to the Controller",
+        "Channels: each Controller face provides 32 channels",
+        "Every AE2 device (Drive, Terminal, Bus) consumes 1 channel",
+        "One Controller face supports a small to medium network."
       ],
       "icon": "ae2:controller",
       "x": 0,
@@ -127,7 +140,12 @@
       "title": "Storage Disks",
       "subtitle": "1K Storage Cell",
       "description": [
-        "Storage Cells hold items in the ME Drive. 1K equals 1024 bytes — AE2's storage unit. Each unique item type (not stack count) uses approximately 1 byte. A 1K cell stores roughly 1024 different item types. Upgrade path: 4K to 16K to 64K for exponentially more storage per cell. Store everything — ingots, blocks, tools, food — your ME Drive becomes the single source of truth."
+        "Storage Cells hold items in the ME Drive.",
+        "1K equals 1024 bytes — AE2's storage unit",
+        "Each unique item type (not stack count) uses approximately 1 byte",
+        "A 1K cell stores roughly 1024 different item types",
+        "Upgrade path: 4K to 16K to 64K for exponentially more storage per cell",
+        "Store everything — ingots, blocks, tools, food — your ME Drive becomes the single source of truth."
       ],
       "icon": "ae2:1k_storage_cell",
       "x": 0,
@@ -166,7 +184,12 @@
       "title": "Channels Explained",
       "subtitle": "32 per Face, 8 per Cable",
       "description": [
-        "Channels are AE2's network capacity system. Controller face = 32 channels. Dense Cable = 32 channels (backbone). Regular Cable = 8 channels (branches). Smart Cable shows channel usage visually — amber means partially used, green means fully allocated. Place Smart Cable anywhere you suspect channel issues."
+        "Channels are AE2's network capacity system.",
+        "Controller face = 32 channels",
+        "Dense Cable = 32 channels (backbone)",
+        "Regular Cable = 8 channels (branches)",
+        "Smart Cable shows channel usage visually — amber means partially used, green means fully allocated",
+        "Place Smart Cable anywhere you suspect channel issues."
       ],
       "icon": "ae2:smart_cable",
       "x": 1.5,
@@ -194,7 +217,10 @@
       "title": "Cable Types",
       "subtitle": "Glass, Covered, Smart, Dense",
       "description": [
-        "Glass Cable: cheapest, 8 channels, connects to adjacent blocks. Covered Cable: 8 channels, does not connect to blocks — cleaner routing through walls. Smart Cable: 8 channels, shows live channel usage as color. Dense Cable: 32 channels, backbone cable for main network trunks."
+        "Glass Cable: cheapest, 8 channels, connects to adjacent blocks.",
+        "Covered Cable: 8 channels, does not connect to blocks — cleaner routing through walls",
+        "Smart Cable: 8 channels, shows live channel usage as color",
+        "Dense Cable: 32 channels, backbone cable for main network trunks."
       ],
       "icon": "ae2:smart_cable",
       "x": 1.5,
@@ -231,7 +257,10 @@
       "title": "Storage Bus",
       "subtitle": "External Inventory Integration",
       "description": [
-        "Attach a Storage Bus to any external inventory (chest, Sophisticated Storage barrel, Mekanism machine output) and its contents appear in your ME Terminal. Connect ColonyLink to the MineColonies warehouse. Connect to mob farm output chests. No need to import items — they stay where they are but are accessible from ME."
+        "Attach a Storage Bus to any external inventory (chest, Sophisticated Storage barrel, Mekanism machine output) and its contents appear in your ME Terminal.",
+        "Connect ColonyLink to the MineColonies warehouse",
+        "Connect to mob farm output chests",
+        "No need to import items — they stay where they are but are accessible from ME."
       ],
       "icon": "ae2:storage_bus",
       "x": 1.5,
@@ -268,7 +297,10 @@
       "title": "Facades",
       "subtitle": "Hide Cables in Plain Sight",
       "description": [
-        "4 Cable Anchors crafted with any block equals 4 Facades of that block. Place a Facade on a cable and it looks like cobblestone, planks, stone bricks, or machinery casings. Channels pass through normally — Facades are purely cosmetic. Run AE2 cables through walls and floors without visible wiring."
+        "4 Cable Anchors crafted with any block equals 4 Facades of that block.",
+        "Place a Facade on a cable and it looks like cobblestone, planks, stone bricks, or machinery casings",
+        "Channels pass through normally — Facades are purely cosmetic",
+        "Run AE2 cables through walls and floors without visible wiring."
       ],
       "icon": "ae2:facade",
       "x": 1.5,
@@ -305,7 +337,8 @@
       "title": "Autocrafting Setup",
       "subtitle": "Crafting CPU, Assembler, Provider",
       "description": [
-        "Autocrafting infrastructure: Crafting CPU (multiblock — Crafting Storage blocks + Co-Processors in a cuboid shape), Molecular Assemblers (do the actual crafting), Pattern Providers (hold encoded patterns, push items to Assemblers). Arrange Assemblers in a checkerboard pattern with Pattern Providers — each Assembler touches multiple Providers for maximum recipe coverage."
+        "Autocrafting infrastructure: Crafting CPU (multiblock — Crafting Storage blocks + Co-Processors in a cuboid shape), Molecular Assemblers (do the actual crafting), Pattern Providers (hold encoded patterns, push items to Assemblers).",
+        "Arrange Assemblers in a checkerboard pattern with Pattern Providers — each Assembler touches multiple Providers for maximum recipe coverage."
       ],
       "icon": "ae2:crafting_accelerator",
       "x": 3,
@@ -344,7 +377,11 @@
       "title": "Crafting Patterns",
       "subtitle": "Crafting, Processing, and Smithing",
       "description": [
-        "Three pattern types for different recipe categories. Crafting Patterns: standard 3x3 workbench recipes — the Molecular Assembler crafts them. Processing Patterns: furnace and machine recipes — AE2 pushes items to the machine, waits, imports the result. Smithing Patterns: smithing table upgrades. Encode at the Pattern Encoding Terminal — drag items into the grid exactly like a crafting table, save."
+        "Three pattern types for different recipe categories.",
+        "Crafting Patterns: standard 3x3 workbench recipes — the Molecular Assembler crafts them",
+        "Processing Patterns: furnace and machine recipes — AE2 pushes items to the machine, waits, imports the result",
+        "Smithing Patterns: smithing table upgrades",
+        "Encode at the Pattern Encoding Terminal — drag items into the grid exactly like a crafting table, save."
       ],
       "icon": "ae2:crafting_pattern",
       "x": 3,
@@ -383,7 +420,12 @@
       "title": "Processing Automation",
       "subtitle": "Pattern Provider Meets Mekanism",
       "description": [
-        "Set up your first automated processing chain. Place a Pattern Provider on a Mekanism machine input face. Encode a Processing Pattern (example: Enriched Alloy). Place an Import Bus on the output face. Request 'Craft 64 Enriched Alloy' from Terminal — AE2 pushes iron + redstone to the Infuser via Provider, waits for output, imports the alloy via Bus, marks craft complete. Any machine with defined input output faces can be automated this way."
+        "Set up your first automated processing chain.",
+        "Place a Pattern Provider on a Mekanism machine input face",
+        "Encode a Processing Pattern (example: Enriched Alloy)",
+        "Place an Import Bus on the output face",
+        "Request 'Craft 64 Enriched Alloy' from Terminal — AE2 pushes iron + redstone to the Infuser via Provider, waits for output, imports the alloy via Bus, marks craft complete",
+        "Any machine with defined input output faces can be automated this way."
       ],
       "icon": "ae2:pattern_provider",
       "x": 3,
@@ -422,7 +464,11 @@
       "title": "Large Autocrafting",
       "subtitle": "Multiple CPUs and Co-Processors",
       "description": [
-        "Scale up: multiple Crafting CPUs = multiple simultaneous craft requests. Co-Processors per CPU = parallel sub-component crafting. A CPU with 4 Co-Processors can craft 4 sub-components simultaneously. Example: Ultimate Energy Cube needs 4 layers of recipes — each layer crafts in parallel if enough Co-Processors exist. Request 'Ultimate Energy Cube' from your terminal and watch the entire cascade unfold."
+        "Scale up: multiple Crafting CPUs = multiple simultaneous craft requests.",
+        "Co-Processors per CPU = parallel sub-component crafting",
+        "A CPU with 4 Co-Processors can craft 4 sub-components simultaneously",
+        "Example: Ultimate Energy Cube needs 4 layers of recipes — each layer crafts in parallel if enough Co-Processors exist",
+        "Request 'Ultimate Energy Cube' from your terminal and watch the entire cascade unfold."
       ],
       "icon": "ae2:64k_crafting_storage",
       "x": 3,
@@ -461,7 +507,11 @@
       "title": "ME Interface",
       "subtitle": "Bidirectional AE2 to World Bridge",
       "description": [
-        "The ME Interface bridges your AE2 network with the physical world. Functions: (1) Expose its inventory to the ME network — items inside are accessible from any Terminal. (2) Keep a fixed stock — always maintain exactly 64 iron ingots, 32 redstone, etc. (3) Accept items from external automation — Create belts and Mekanism pipes can push items INTO an Interface, and they enter the ME network. Use Interfaces as the hand-off point between your Create factory and AE2 storage."
+        "The ME Interface bridges your AE2 network with the physical world.",
+        "Functions: (1) Expose its inventory to the ME network — items inside are accessible from any Terminal",
+        "(2) Keep a fixed stock — always maintain exactly 64 iron ingots, 32 redstone, etc",
+        "(3) Accept items from external automation — Create belts and Mekanism pipes can push items INTO an Interface, and they enter the ME network",
+        "Use Interfaces as the hand-off point between your Create factory and AE2 storage."
       ],
       "icon": "ae2:interface",
       "x": 3,
@@ -500,7 +550,10 @@
       "title": "Sub-Networks",
       "subtitle": "Channel-Efficient Subnet Design",
       "description": [
-        "A sub-network is a separate AE2 network that accesses your main network storage but uses its own channel budget. Design: Storage Bus on the sub-network's cable (different color) pointed at an ME Interface on the main network. The sub-network sees everything in main storage but all its devices consume channels from the sub-network's Controller, not the main one. Use for dedicated autocrafting clusters that would otherwise drain all 32 channels from your main Controller face."
+        "A sub-network is a separate AE2 network that accesses your main network storage but uses its own channel budget.",
+        "Design: Storage Bus on the sub-network's cable (different color) pointed at an ME Interface on the main network",
+        "The sub-network sees everything in main storage but all its devices consume channels from the sub-network's Controller, not the main one",
+        "Use for dedicated autocrafting clusters that would otherwise drain all 32 channels from your main Controller face."
       ],
       "icon": "ae2:storage_bus",
       "x": 3,
@@ -530,7 +583,10 @@
       "title": "P2P Tunnels",
       "subtitle": "Compress 32 Channels into One",
       "description": [
-        "P2P (Point-to-Point) Tunnels compress up to 32 channels into a single channel. Place a P2P Tunnel at one location, link it with a Memory Card to another P2P Tunnel at a distant location. One Dense Cable can then carry 32 P2P Tunnels times 32 channels each — 1024 channels on a single backbone cable. Use for: extending your network to a Mekanism factory across your base, connecting a mining outpost, or running channels into a multi-floor autocrafting tower."
+        "P2P (Point-to-Point) Tunnels compress up to 32 channels into a single channel.",
+        "Place a P2P Tunnel at one location, link it with a Memory Card to another P2P Tunnel at a distant location",
+        "One Dense Cable can then carry 32 P2P Tunnels times 32 channels each — 1024 channels on a single backbone cable",
+        "Use for: extending your network to a Mekanism factory across your base, connecting a mining outpost, or running channels into a multi-floor autocrafting tower."
       ],
       "icon": "ae2:me_p2p_tunnel",
       "x": 3,
@@ -569,7 +625,11 @@
       "title": "Import and Export Bus",
       "subtitle": "Filtered Auto Push and Pull",
       "description": [
-        "Import Bus pulls items from external inventories into ME network. Export Bus pushes items out of ME into external inventories. Both require a channel and a filter (set in GUI). Use with Mekanism machine faces: Export Bus on input face (pushes ingredients), Import Bus on output face (pulls products). Automate alloy production, smelting, and chemical processing."
+        "Import Bus pulls items from external inventories into ME network.",
+        "Export Bus pushes items out of ME into external inventories",
+        "Both require a channel and a filter (set in GUI)",
+        "Use with Mekanism machine faces: Export Bus on input face (pushes ingredients), Import Bus on output face (pulls products)",
+        "Automate alloy production, smelting, and chemical processing."
       ],
       "icon": "ae2:import_bus",
       "x": 4.5,
@@ -613,7 +673,11 @@
       "title": "Level Emitter",
       "subtitle": "Demand-Based Redstone Control",
       "description": [
-        "Emits redstone signal based on item count in the ME network. Configure: emit when iron ingots are below 1000. Wire that signal to a Create Clutch or Mekanism machine toggle. The factory produces iron only when demand exists — self-regulating production without player oversight. Build one Level Emitter per bulk material: iron, copper, gold, redstone."
+        "Emits redstone signal based on item count in the ME network.",
+        "Configure: emit when iron ingots are below 1000",
+        "Wire that signal to a Create Clutch or Mekanism machine toggle",
+        "The factory produces iron only when demand exists — self-regulating production without player oversight",
+        "Build one Level Emitter per bulk material: iron, copper, gold, redstone."
       ],
       "icon": "ae2:level_emitter",
       "x": 4.5,
@@ -650,7 +714,11 @@
       "title": "Matter Condenser",
       "subtitle": "Trash into Matter Balls",
       "description": [
-        "Voids excess items and converts their mass into Matter Balls. Place an Export Bus (filter: cobblestone, dirt, seeds — whatever you have millions of) pointing at a Matter Condenser. Items are destroyed, energy accumulates, Condenser outputs Matter Balls when full. Matter Balls craft into Quantum Entangled Singularities — needed for the Quantum Network Bridge. Your trash becomes endgame infrastructure."
+        "Voids excess items and converts their mass into Matter Balls.",
+        "Place an Export Bus (filter: cobblestone, dirt, seeds — whatever you have millions of) pointing at a Matter Condenser",
+        "Items are destroyed, energy accumulates, Condenser outputs Matter Balls when full",
+        "Matter Balls craft into Quantum Entangled Singularities — needed for the Quantum Network Bridge",
+        "Your trash becomes endgame infrastructure."
       ],
       "icon": "ae2:matter_condenser",
       "x": 4.5,
@@ -687,7 +755,10 @@
       "title": "Quantum Network Bridge",
       "subtitle": "Cross-Dimension ME Network",
       "description": [
-        "Connect two independent ME networks across any distance or dimension. Build a Quantum Ring at each location — 8 Quantum Link Chambers arranged in a ring around a single cable. Link the rings with Quantum Entangled Singularities (Ender Pearl plus Matter Ball in an ME Condenser). Once linked, your Overworld ME Terminal shows items stored on your Moon base, Mars outpost, and Glacio mining facility simultaneously."
+        "Connect two independent ME networks across any distance or dimension.",
+        "Build a Quantum Ring at each location — 8 Quantum Link Chambers arranged in a ring around a single cable",
+        "Link the rings with Quantum Entangled Singularities (Ender Pearl plus Matter Ball in an ME Condenser)",
+        "Once linked, your Overworld ME Terminal shows items stored on your Moon base, Mars outpost, and Glacio mining facility simultaneously."
       ],
       "icon": "ae2:quantum_link",
       "x": 6,
@@ -726,7 +797,14 @@
       "title": "Spatial Storage",
       "subtitle": "Store Entire Rooms in a Cell",
       "description": [
-        "Spatial Storage captures and transports entire physical spaces — blocks, tile entities, entities, everything. Build a Spatial Pylon ring around the room you want to capture (minimum 2x2x2 interior, maximum vast). Insert a Spatial Storage Cell. Apply redstone. Instant: the entire room vanishes into a single cell. Place the cell at your destination, extract — room appears exactly as it was. Use cases: move your entire Mekanism factory to Mars, backup your base before building a reactor, pocket-dimension your mob farm when not in use. Massive FE cost scales with room size."
+        "Spatial Storage captures and transports entire physical spaces — blocks, tile entities, entities, everything.",
+        "Build a Spatial Pylon ring around the room you want to capture (minimum 2x2x2 interior, maximum vast)",
+        "Insert a Spatial Storage Cell",
+        "Apply redstone",
+        "Instant: the entire room vanishes into a single cell",
+        "Place the cell at your destination, extract — room appears exactly as it was",
+        "Use cases: move your entire Mekanism factory to Mars, backup your base before building a reactor, pocket-dimension your mob farm when not in use",
+        "Massive FE cost scales with room size."
       ],
       "icon": "ae2:spatial_storage_cell",
       "x": 6,
@@ -765,7 +843,10 @@
       "title": "Wireless Terminal",
       "subtitle": "ME Access from Anywhere",
       "description": [
-        "Access your ME network from anywhere in the same dimension. Craft a Wireless Access Point (place near Controller), craft a Wireless Terminal, bind them. Open inventory, click terminal icon — full ME access without standing at a terminal. Upgrade: Wireless Universal Terminal accesses AE2, Mekanism QIO, and fluid storage from one device."
+        "Access your ME network from anywhere in the same dimension.",
+        "Craft a Wireless Access Point (place near Controller), craft a Wireless Terminal, bind them",
+        "Open inventory, click terminal icon — full ME access without standing at a terminal",
+        "Upgrade: Wireless Universal Terminal accesses AE2, Mekanism QIO, and fluid storage from one device."
       ],
       "icon": "ae2:wireless_terminal",
       "x": 7.5,
@@ -795,7 +876,12 @@
       "title": "Cell Workbench",
       "subtitle": "Partition Storage Cells",
       "description": [
-        "Format a storage cell to only accept specific item types. Insert cell into Cell Workbench, configure partition: this cell holds only iron, copper, and gold ingots. Another cell holds only gems. Another holds redstone components. Partitioning prevents one item type (cobblestone from quarry) from consuming all your storage capacity. Do this early — reformatting a full unpartitioned cell is tedious."
+        "Format a storage cell to only accept specific item types.",
+        "Insert cell into Cell Workbench, configure partition: this cell holds only iron, copper, and gold ingots",
+        "Another cell holds only gems",
+        "Another holds redstone components",
+        "Partitioning prevents one item type (cobblestone from quarry) from consuming all your storage capacity",
+        "Do this early — reformatting a full unpartitioned cell is tedious."
       ],
       "icon": "ae2:cell_workbench",
       "x": 7.5,
@@ -825,7 +911,11 @@
       "title": "Formation and Annihilation Plane",
       "subtitle": "Block Placer and Breaker",
       "description": [
-        "Formation Plane places blocks from ME storage into the world. Annihilation Plane breaks blocks in the world and imports them into ME. Together they create AE2-based block manipulation. Pair with a Level Emitter: if cobblestone is below 10000, activate Annihilation Plane on a cobblestone generator. Auto-refilling building materials from your ME network."
+        "Formation Plane places blocks from ME storage into the world.",
+        "Annihilation Plane breaks blocks in the world and imports them into ME",
+        "Together they create AE2-based block manipulation",
+        "Pair with a Level Emitter: if cobblestone is below 10000, activate Annihilation Plane on a cobblestone generator",
+        "Auto-refilling building materials from your ME network."
       ],
       "icon": "ae2:formation_plane",
       "x": 7.5,

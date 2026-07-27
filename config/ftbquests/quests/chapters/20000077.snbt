@@ -12,7 +12,9 @@
       "title": "Rotational Power",
       "subtitle": "Harness water to spin shafts",
       "description": [
-        "Create's power system is rotational — spinning shafts transfer SU (Stress Units). One water wheel placed in flowing water generates approximately 256 SU. Check stress with Engineer's Goggles."
+        "Create's power system is rotational — spinning shafts transfer SU (Stress Units).",
+        "One water wheel placed in flowing water generates approximately 256 SU",
+        "Check stress with Engineer's Goggles."
       ],
       "icon": "create:water_wheel",
       "x": 0,
@@ -49,7 +51,9 @@
       "title": "Mechanical Processing",
       "subtitle": "Millstone and Mechanical Press",
       "description": [
-        "Attach a Millstone and Mechanical Press to your water wheel via shaft and gearbox. Millstone crushes wheat to flour, cobble to gravel, bones to bonemeal. Press stamps ingots into plates and sheets."
+        "Attach a Millstone and Mechanical Press to your water wheel via shaft and gearbox.",
+        "Millstone crushes wheat to flour, cobble to gravel, bones to bonemeal",
+        "Press stamps ingots into plates and sheets."
       ],
       "icon": "create:millstone",
       "x": 0,
@@ -88,7 +92,11 @@
       "title": "Fluid Systems",
       "subtitle": "Fluid Pump, Tank, and Pipe",
       "description": [
-        "Create handles fluids — water, lava, potions, and TFMG oil. Fluid Pump pulls from sources. Tank stores it. Attach a Spout to fill bottles or feed boilers. Fluid throughput depends on pump RPM — faster RPM = more mb/tick."
+        "Create handles fluids — water, lava, potions, and TFMG oil.",
+        "Fluid Pump pulls from sources",
+        "Tank stores it",
+        "Attach a Spout to fill bottles or feed boilers",
+        "Fluid throughput depends on pump RPM — faster RPM = more mb/tick."
       ],
       "icon": "create:fluid_pump",
       "x": 0,
@@ -134,7 +142,9 @@
       "title": "Brass Age",
       "subtitle": "Brass Ingots via Heated Mixer",
       "description": [
-        "Brass = copper + zinc in a heated Mixer. Place a Blaze Burner under the Mixer, catch a blaze in a nether fortress, fuel it with blaze rods or coal. Brass unlocks precision machinery — the real Create begins here."
+        "Brass = copper + zinc in a heated Mixer.",
+        "Place a Blaze Burner under the Mixer, catch a blaze in a nether fortress, fuel it with blaze rods or coal",
+        "Brass unlocks precision machinery — the real Create begins here."
       ],
       "icon": "create:brass_ingot",
       "x": 0,
@@ -173,7 +183,11 @@
       "title": "Precision Crafting",
       "subtitle": "Mechanical Crafter and Sequenced Assembly",
       "description": [
-        "Mechanical Crafters snap together in 3D shapes around your recipe pattern. Power with a shaft. Sequenced Assembly is Create's multi-step crafting — steps apply in order: Deployer adds, Press stamps, Saw cuts, Spout fills. Loop unfinished items back. Precision Mechanism uses this."
+        "Mechanical Crafters snap together in 3D shapes around your recipe pattern.",
+        "Power with a shaft",
+        "Sequenced Assembly is Create's multi-step crafting — steps apply in order: Deployer adds, Press stamps, Saw cuts, Spout fills",
+        "Loop unfinished items back",
+        "Precision Mechanism uses this."
       ],
       "icon": "create:mechanical_crafter",
       "x": 0,
@@ -212,7 +226,11 @@
       "title": "Air and Heat",
       "subtitle": "Encased Fan — Washing, Smelting, Haunting",
       "description": [
-        "Encased Fans create air streams. Facing water = washing items on a Depot. Facing fire or lava = bulk smelting. Facing soul fire = haunting (soul sand, nether quartz). Drop items through the stream via Chute for mass processing — no FE cost."
+        "Encased Fans create air streams.",
+        "Facing water = washing items on a Depot",
+        "Facing fire or lava = bulk smelting",
+        "Facing soul fire = haunting (soul sand, nether quartz)",
+        "Drop items through the stream via Chute for mass processing — no FE cost."
       ],
       "icon": "create:encased_fan",
       "x": 0,
@@ -251,7 +269,13 @@
       "title": "Logistics Layer",
       "subtitle": "Belt, Chute, Funnel, and Smart Chute",
       "description": [
-        "Belts move items horizontally. Chutes drop items down. Funnels extract from inventories. Smart Chutes filter by item type. Together: chest to funnel to belt to chute to storage. Your first item pipeline. Use Item Vaults as localized buffer storage."
+        "Belts move items horizontally.",
+        "Chutes drop items down",
+        "Funnels extract from inventories",
+        "Smart Chutes filter by item type",
+        "Together: chest to funnel to belt to chute to storage",
+        "Your first item pipeline",
+        "Use Item Vaults as localized buffer storage."
       ],
       "icon": "create:belt_connector",
       "x": 0,
@@ -297,7 +321,11 @@
       "title": "Rails and Trains",
       "subtitle": "Assemble Your First Train",
       "description": [
-        "Create trains are player-built — not pre-made. Craft a Train Casing, Bogey, Controls, and Track. Place bogey on track, build casing on top, add controls. Trains carry items and players across your base at speed. Steam 'n' Rails expands with semaphores, dispatchers, and conductor mobs."
+        "Create trains are player-built — not pre-made.",
+        "Craft a Train Casing, Bogey, Controls, and Track",
+        "Place bogey on track, build casing on top, add controls",
+        "Trains carry items and players across your base at speed",
+        "Steam 'n' Rails expands with semaphores, dispatchers, and conductor mobs."
       ],
       "icon": "create:track",
       "x": 0,
@@ -343,7 +371,10 @@
       "title": "Andesite Alloy",
       "subtitle": "Fundamental Create Material",
       "description": [
-        "Andesite alloy = andesite + iron nuggets (or zinc nuggets). Foundational item for every Create component. You will need hundreds. Automate production early — craft in bulk with a Mechanical Mixer."
+        "Andesite alloy = andesite + iron nuggets (or zinc nuggets).",
+        "Foundational item for every Create component",
+        "You will need hundreds",
+        "Automate production early — craft in bulk with a Mechanical Mixer."
       ],
       "icon": "create:andesite_alloy",
       "x": 1.5,
@@ -380,7 +411,9 @@
       "title": "Cogwheel and Gearbox",
       "subtitle": "Speed and Rotation",
       "description": [
-        "Gearboxes reverse rotation direction. Large cogwheels change speed by ratio — small driving large = slower with more torque, large driving small = faster with less torque. Place cogwheels perpendicular to each other to connect parallel shafts."
+        "Gearboxes reverse rotation direction.",
+        "Large cogwheels change speed by ratio — small driving large = slower with more torque, large driving small = faster with less torque",
+        "Place cogwheels perpendicular to each other to connect parallel shafts."
       ],
       "icon": "create:cogwheel",
       "x": 1.5,
@@ -410,7 +443,10 @@
       "title": "Engineer's Goggles",
       "subtitle": "Essential Diagnostic Tool",
       "description": [
-        "The single most important Create item. Equip to see SU usage, speed (RPM), and stress percentage on every Create block. Press W while hovering a block in EMI to open Ponder — an animated tutorial showing exactly how it works. Use Ponder constantly."
+        "The single most important Create item.",
+        "Equip to see SU usage, speed (RPM), and stress percentage on every Create block",
+        "Press W while hovering a block in EMI to open Ponder — an animated tutorial showing exactly how it works",
+        "Use Ponder constantly."
       ],
       "icon": "create:goggles",
       "x": 1.5,
@@ -440,7 +476,10 @@
       "title": "Redstone Link",
       "subtitle": "Wireless Redstone",
       "description": [
-        "Wireless redstone signals. Place two Redstone Links on the same frequency — redstone signal on one appears on the other. Range covers the entire dimension. Use to activate distant machines without redstone dust spaghetti."
+        "Wireless redstone signals.",
+        "Place two Redstone Links on the same frequency — redstone signal on one appears on the other",
+        "Range covers the entire dimension",
+        "Use to activate distant machines without redstone dust spaghetti."
       ],
       "icon": "create:redstone_link",
       "x": 1.5,
@@ -477,7 +516,12 @@
       "title": "Windmill Bearing",
       "subtitle": "Passive Power from Wind",
       "description": [
-        "Passive renewable power. Attach sails to a Windmill Bearing (minimum 8 sails required). More sails = more SU — typical range 500 to 4000 SU. Needs clear sky above — no blocks within a radius of the bearing. Maintenance-free. Great supplement to water wheels."
+        "Passive renewable power.",
+        "Attach sails to a Windmill Bearing (minimum 8 sails required)",
+        "More sails = more SU — typical range 500 to 4000 SU",
+        "Needs clear sky above — no blocks within a radius of the bearing",
+        "Maintenance-free",
+        "Great supplement to water wheels."
       ],
       "icon": "create:windmill_bearing",
       "x": 1.5,
@@ -507,7 +551,11 @@
       "title": "Sequenced Assembly Deep Dive",
       "subtitle": "Multi-Step Precision Crafting",
       "description": [
-        "Sequenced Assembly applies operations in order: Deployer adds ingredients, Press stamps shapes, Saw cuts pieces, Spout fills fluids. Each step has a completion chance. Unfinished items loop back through the belt. Output = when all steps pass. Used for Precision Mechanisms, Electron Tubes, and Integrated Circuits."
+        "Sequenced Assembly applies operations in order: Deployer adds ingredients, Press stamps shapes, Saw cuts pieces, Spout fills fluids.",
+        "Each step has a completion chance",
+        "Unfinished items loop back through the belt",
+        "Output = when all steps pass",
+        "Used for Precision Mechanisms, Electron Tubes, and Integrated Circuits."
       ],
       "icon": "create:precision_mechanism",
       "x": 1.5,
@@ -537,7 +585,10 @@
       "title": "Steam Power",
       "subtitle": "Steam Engine — Up to 16,384 SU",
       "description": [
-        "Steam Engines output massively more SU than water wheels. Requires a heated Blaze Burner (superheat with blaze cakes for max output), Fluid Tank filled with water, and Steam Engine blocks. Pump water in continuously, keep blaze burner fed. Output: up to 16,384 SU at max blaze cake heat."
+        "Steam Engines output massively more SU than water wheels.",
+        "Requires a heated Blaze Burner (superheat with blaze cakes for max output), Fluid Tank filled with water, and Steam Engine blocks",
+        "Pump water in continuously, keep blaze burner fed",
+        "Output: up to 16,384 SU at max blaze cake heat."
       ],
       "icon": "create:steam_engine",
       "x": 3,
@@ -576,7 +627,10 @@
       "title": "Steel and Aluminum (TFMG)",
       "subtitle": "Heavy Industry Materials",
       "description": [
-        "TFMG adds industrial metal production. Steel = iron + coal in a Blast Furnace (multiblock — check EMI for structure). Aluminum = bauxite ore processed through electrolysis. These are your Phase 2 structural materials — steel replaces iron in machine frames, aluminum replaces brass in lightweight components."
+        "TFMG adds industrial metal production.",
+        "Steel = iron + coal in a Blast Furnace (multiblock — check EMI for structure)",
+        "Aluminum = bauxite ore processed through electrolysis",
+        "These are your Phase 2 structural materials — steel replaces iron in machine frames, aluminum replaces brass in lightweight components."
       ],
       "icon": "tfmg:steel_ingot",
       "x": 3,
@@ -615,7 +669,12 @@
       "title": "Contraptions",
       "subtitle": "Moving Structures — Gantry and Piston",
       "description": [
-        "Contraptions are Create's moving structures. Mechanical Piston pushes a row of blocks linearly. Gantry Carriage slides along a shaft. Mechanical Bearing rotates an attached structure. Cart Assembler attaches contraptions to minecarts. Contraptions can mine, place blocks, harvest crops, and move entities — they're mobile factories."
+        "Contraptions are Create's moving structures.",
+        "Mechanical Piston pushes a row of blocks linearly",
+        "Gantry Carriage slides along a shaft",
+        "Mechanical Bearing rotates an attached structure",
+        "Cart Assembler attaches contraptions to minecarts",
+        "Contraptions can mine, place blocks, harvest crops, and move entities — they're mobile factories."
       ],
       "icon": "create:gantry_carriage",
       "x": 3,
@@ -661,7 +720,9 @@
       "title": "Mechanical Arm",
       "subtitle": "Precise Item Placement",
       "description": [
-        "The Mechanical Arm picks up items and places them with precision. Program target inputs and outputs with a wrench — click source inventory, then click destination. Essential for complex assembly lines where belts and chutes cannot reach specific slots."
+        "The Mechanical Arm picks up items and places them with precision.",
+        "Program target inputs and outputs with a wrench — click source inventory, then click destination",
+        "Essential for complex assembly lines where belts and chutes cannot reach specific slots."
       ],
       "icon": "create:mechanical_arm",
       "x": 3,
@@ -700,7 +761,10 @@
       "title": "Oil Processing (TFMG)",
       "subtitle": "Pump Jack and Crude Oil",
       "description": [
-        "TFMG adds oil deposits scattered across the world. Build a Pump Jack over an oil pool to extract crude oil. Crude oil is the input for the Distillation Tower — your Phase 2 energy and material backbone. Oil pumping requires rotational power — connect a Create engine."
+        "TFMG adds oil deposits scattered across the world.",
+        "Build a Pump Jack over an oil pool to extract crude oil",
+        "Crude oil is the input for the Distillation Tower — your Phase 2 energy and material backbone",
+        "Oil pumping requires rotational power — connect a Create engine."
       ],
       "icon": "tfmg:pump_jack",
       "x": 3,
@@ -739,7 +803,11 @@
       "title": "Distillation Tower (TFMG)",
       "subtitle": "Refining Oil into Products",
       "description": [
-        "The Distillation Tower is a multiblock — Distillation Controller plus stacked Distillation Tower blocks (minimum 4 high). Input crude oil at the bottom. Products exit at different tower heights: diesel (bottom), kerosene, gasoline, lubricant (mid-levels), residual oil (top). Lubricant reduces Create machine stress when applied via pipe. Diesel feeds Diesel Engines."
+        "The Distillation Tower is a multiblock — Distillation Controller plus stacked Distillation Tower blocks (minimum 4 high).",
+        "Input crude oil at the bottom",
+        "Products exit at different tower heights: diesel (bottom), kerosene, gasoline, lubricant (mid-levels), residual oil (top)",
+        "Lubricant reduces Create machine stress when applied via pipe",
+        "Diesel feeds Diesel Engines."
       ],
       "icon": "tfmg:distillation_controller",
       "x": 3,
@@ -778,7 +846,9 @@
       "title": "Programmable Contraptions",
       "subtitle": "Sequence Gearshift and Linked Controller",
       "description": [
-        "Sequence Gearshift programs exact rotational sequences — forward 90 degrees, pause 1 second, reverse 180 degrees. Linked Controller triggers sequences via redstone. Together they enable precision crafting that needs specific item placement order — deploy dough, pause, deploy cocoa, pause, piston push."
+        "Sequence Gearshift programs exact rotational sequences — forward 90 degrees, pause 1 second, reverse 180 degrees.",
+        "Linked Controller triggers sequences via redstone",
+        "Together they enable precision crafting that needs specific item placement order — deploy dough, pause, deploy cocoa, pause, piston push."
       ],
       "icon": "create:sequenced_gearshift",
       "x": 3,
@@ -810,7 +880,11 @@
       "title": "Diesel Engine",
       "subtitle": "Massive SU from Refined Fuel",
       "description": [
-        "TFMG Diesel Engines produce the highest SU in the pack. Feed refined diesel from your Distillation Tower via fluid pipes. One engine at full output powers an entire factory floor. Connect to your rotational network through shafts and gearboxes. This is your rotational power endgame."
+        "TFMG Diesel Engines produce the highest SU in the pack.",
+        "Feed refined diesel from your Distillation Tower via fluid pipes",
+        "One engine at full output powers an entire factory floor",
+        "Connect to your rotational network through shafts and gearboxes",
+        "This is your rotational power endgame."
       ],
       "icon": "tfmg:diesel_engine",
       "x": 3,
@@ -849,7 +923,9 @@
       "title": "Stockpile Switch",
       "subtitle": "Inventory Threshold Detection",
       "description": [
-        "Detects inventory fill levels and outputs redstone. Turn machines off when storage is full. Prevents overflow, wasted SU, and lag from backed-up belts."
+        "Detects inventory fill levels and outputs redstone.",
+        "Turn machines off when storage is full",
+        "Prevents overflow, wasted SU, and lag from backed-up belts."
       ],
       "icon": "create:stockpile_switch",
       "x": 4.5,
@@ -879,7 +955,10 @@
       "title": "Train Station and Signal",
       "subtitle": "Rail Automation",
       "description": [
-        "Stations mark stops on your train network. Train Signals prevent collisions on shared track — a train waits until the section ahead is clear. Schedule items program routes (right-click to set). Multi-train networks with Steam 'n' Rails Dispatcher for automatic routing."
+        "Stations mark stops on your train network.",
+        "Train Signals prevent collisions on shared track — a train waits until the section ahead is clear",
+        "Schedule items program routes (right-click to set)",
+        "Multi-train networks with Steam 'n' Rails Dispatcher for automatic routing."
       ],
       "icon": "create:track_station",
       "x": 4.5,
@@ -909,7 +988,9 @@
       "title": "Speed Controller",
       "subtitle": "Precise RPM Tuning",
       "description": [
-        "Fine-tunes rotational speed without gear ratio math. Attach between power source and machine. Turn with wrench to set exact RPM — optimal for mixers (64 RPM) and crushing wheels (256 RPM)."
+        "Fine-tunes rotational speed without gear ratio math.",
+        "Attach between power source and machine",
+        "Turn with wrench to set exact RPM — optimal for mixers (64 RPM) and crushing wheels (256 RPM)."
       ],
       "icon": "create:rotation_speed_controller",
       "x": 4.5,
@@ -939,7 +1020,10 @@
       "title": "Content Observer",
       "subtitle": "Redstone from Inventory Content",
       "description": [
-        "Outputs redstone signal based on inventory contents. Example: iron ingots > 64 = redstone ON. Paired with a Stockpile Switch — Observer detects the threshold, Switch stops the machine. Self-regulating production lines."
+        "Outputs redstone signal based on inventory contents.",
+        "Example: iron ingots > 64 = redstone ON",
+        "Paired with a Stockpile Switch — Observer detects the threshold, Switch stops the machine",
+        "Self-regulating production lines."
       ],
       "icon": "create:content_observer",
       "x": 4.5,
@@ -969,7 +1053,11 @@
       "title": "Mega-Factory",
       "subtitle": "All Production Lines Interconnected",
       "description": [
-        "Connect every production line into one integrated facility. Create manufacturing feeds AE2 storage. AE2 autocrafting feeds Mekanism chemical processing. 10+ Mechanical Crafters, 5+ Sequenced Assembly lines, train logistics between districts. This is a self-defined milestone — mark complete when your base feels like a factory, not a collection of machines."
+        "Connect every production line into one integrated facility.",
+        "Create manufacturing feeds AE2 storage",
+        "AE2 autocrafting feeds Mekanism chemical processing",
+        "10+ Mechanical Crafters, 5+ Sequenced Assembly lines, train logistics between districts",
+        "This is a self-defined milestone — mark complete when your base feels like a factory, not a collection of machines."
       ],
       "icon": "create:mechanical_crafter",
       "x": 6,
@@ -1006,7 +1094,10 @@
       "title": "Kinetic Megastructure",
       "subtitle": "50+ Machines on One Network",
       "description": [
-        "One power source (Steam Engine tower or Diesel Engine cluster) feeds your entire factory through shafts, gearboxes, belts, and clutches. 50 or more machines running simultaneously from a single rotational network. Tune RPMs, belt speeds, and gear ratios until every machine runs in the green on your stress display. Your factory is a visible kinetic sculpture."
+        "One power source (Steam Engine tower or Diesel Engine cluster) feeds your entire factory through shafts, gearboxes, belts, and clutches.",
+        "50 or more machines running simultaneously from a single rotational network",
+        "Tune RPMs, belt speeds, and gear ratios until every machine runs in the green on your stress display",
+        "Your factory is a visible kinetic sculpture."
       ],
       "icon": "create:shaft",
       "x": 6,
@@ -1043,7 +1134,10 @@
       "title": "Self-Regulating Factory",
       "subtitle": "Demand-Based Auto Start and Stop",
       "description": [
-        "AE2 Level Emitter detects iron ingots below 5000 — Redstone Link sends signal across the base — Clutch engages — cobblestone generator fires up — crushing wheels activate — washer runs — blast furnace starts — iron ingots flow into AE2. Threshold reached — signal stops — factory goes idle. Zero player interaction. Build one self-regulating chain for each bulk material: iron, copper, gold, redstone, andesite alloy."
+        "AE2 Level Emitter detects iron ingots below 5000 — Redstone Link sends signal across the base — Clutch engages — cobblestone generator fires up — crushing wheels activate — washer runs — blast furnace starts — iron ingots flow into AE2.",
+        "Threshold reached — signal stops — factory goes idle",
+        "Zero player interaction",
+        "Build one self-regulating chain for each bulk material: iron, copper, gold, redstone, andesite alloy."
       ],
       "icon": "minecraft:iron_ingot",
       "x": 6,
@@ -1080,7 +1174,10 @@
       "title": "Big Cannons Integration",
       "subtitle": "Colony Defense Artillery",
       "description": [
-        "Create Big Cannons applies engineering to siege warfare. Build artillery from casings, barrels, and breech blocks — different sizes for different firepower. Automate ammo production with Create belts + Mekanism processing. Place cannons at colony perimeters alongside Guard Villagers."
+        "Create Big Cannons applies engineering to siege warfare.",
+        "Build artillery from casings, barrels, and breech blocks — different sizes for different firepower",
+        "Automate ammo production with Create belts + Mekanism processing",
+        "Place cannons at colony perimeters alongside Guard Villagers."
       ],
       "icon": "createbigcannons:cannon",
       "x": 7.5,
@@ -1110,7 +1207,9 @@
       "title": "Infinite Resource Loop",
       "subtitle": "Forever-Running Production",
       "description": [
-        "Create a self-sustaining production chain that runs forever without player input. Examples: cobblestone to gravel to sand to glass, or crops to seeds to oil to fuel to power to crops. This is a conceptual challenge — the reward is the achievement of a perpetually running machine."
+        "Create a self-sustaining production chain that runs forever without player input.",
+        "Examples: cobblestone to gravel to sand to glass, or crops to seeds to oil to fuel to power to crops",
+        "This is a conceptual challenge — the reward is the achievement of a perpetually running machine."
       ],
       "icon": "minecraft:glass",
       "x": 7.5,
