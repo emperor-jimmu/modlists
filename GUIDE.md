@@ -864,6 +864,8 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Create Better FPS](https://www.curseforge.com/minecraft/mc-mods/create-better-fps)                                                   | Create rendering optimization — up to 50% FPS gain with shaders. Handles addon models, speed controllers, factory gauges, and schematic previews                                        |
 | [ColorWheel](https://www.curseforge.com/minecraft/mc-mods/colorwheel)                                                                 | Flywheel + Iris compatibility — renders Create contraptions under shaders. Required for Create to work with Iris. Both Complementary Unbound and Euphoria Patches have official support |
 | [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)                                                    | Create + Farmer's Delight automation — Slicer (auto Cutting Board), automatic FD Cooking Pot via heated mixing, Sprinkler for fluid-based farming                                       |
+| [Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus) 1.11.2b                                      | Fan processing expansion — Bulk Coloring, Bulk Freezing, Bulk Ending, Bulk Sanding. Fluid Hatch for tanks. Adds Aether Bulk Enchanting. Library mod for Create addon devs                |
+| [Create: Shimmer](https://www.curseforge.com/minecraft/mc-mods/create-shimmer) 1.2.10                                                  | Create × Twilight Forest compat — Shimmer fluid + Bulk Transmutation automates TF item production through Create fan processing                                                          |
 ### Create Addon Details
 
 **Create Better FPS** optimizes Create's rendering pipeline — handles addon models (e.g., blaze with straw from Create Crafts & Additions), speed controllers, factory gauges, and schematic previews. Benchmarked 7→35 FPS with 512 waterwheels under shaders. Works alongside ColorWheel: ColorWheel handles Flywheel instance compatibility; Create Better FPS handles everything else.
@@ -871,6 +873,10 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 **ColorWheel** makes Flywheel (Create's rendering engine) compatible with Iris shaders. Without it, Create contraptions either don't render or tank performance under shaders. ColorWheel is the higher-priority install between the two — Create Better FPS is additional optimization on top.
 
 **Create Slice & Dice** automates Farmer's Delight through Create. The **Slicer** acts as an automatic Cutting Board — place a knife or axe inside (right-click), and it registers all FD cutting recipes as mechanical processing. **Automatic cooking** converts FD Cooking Pot recipes into Create heated mixing recipes, so you can pipe ingredients in and collect meals. The **Sprinkler** distributes fluids below it: water for hydration, lava for damage, potions for effects, and Liquid Fertilizer (new fluid) for automatic bonemeal. This bridges Phase 1's food focus with Phase 2's automation — by the time you have Create infrastructure, meal production becomes fully pipeable.
+
+**Create: Dragons Plus** is a library that expands Create's fan processing with Bulk Coloring (dye items via Encased Fan + dye fluid), Bulk Freezing (Powder Snow), Bulk Ending (Dragon's Breath / Dragon Head), and Bulk Sanding (quicksand). Also adds a Fluid Hatch for convenient tank I/O and Aether Bulk Enchanting (enchanting recipes, repair, Moa Egg incubation in the Aether). All features can be toggled individually in config. Required dependency for Create: Shimmer.
+
+**Create: Shimmer** adds Shimmer fluid and Bulk Transmutation to Create's fan processing, bridging Create automation with Twilight Forest. Transform dead coral into living coral, transmute blocks, and automate TF item production through Create's mechanical systems. Requires Create, Twilight Forest, and Create: Dragons Plus.
 
 ### Mekanism Addons
 
@@ -1394,18 +1400,21 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)                   | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
 | [Deep Aether](https://www.curseforge.com/minecraft/mc-mods/deep-aether)             | Aether addon — 5 new biomes, Skyjade/Stratus gear, new mobs, poison swamps. Gives the Aether the "Nether Update" treatment |
+| [Umbral Skies](https://www.curseforge.com/minecraft/mc-mods/umbral-skies)           | Aether × Twilight Forest fusion — Aether-themed structures in TF, Aether boss trophies, TF-material gloves |
 | [Deeper and Darker](https://www.curseforge.com/minecraft/mc-mods/deeperdarker)      | The "Otherside" dimension — deep dark themed, warden gear                                  |
 | [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
 
-### End Overhaul
+### End Access & Structures
 
-| Mod                                                                                                    | Role                                                            |
-|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [**BetterEnd NeoForge**](https://www.curseforge.com/minecraft/mc-mods/betterend-neoforge) v21.0.25     | Full End overhaul — 24+ biomes, new mobs, gear, custom music    |
-| [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                        |
-| [Nullscape](https://www.curseforge.com/minecraft/data-packs/nullscape) (data pack)                     | End terrain overhaul — surreal alien landscapes, new sky colors |
+| Mod                                                                                                    | Role                                                                              |
+|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [**End Remastered**](https://www.curseforge.com/minecraft/mc-mods/endremastered) v6.3.0                | Portal progression overhaul — 16 custom Ender Eyes hidden across vanilla structures and bosses. Find 12+ to open the End portal |
+| [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                                          |
+| [Nullscape](https://www.curseforge.com/minecraft/data-packs/nullscape) (data pack)                     | End terrain overhaul — surreal alien landscapes, new sky colors                   |
 
-**Nullscape**: A data pack that transforms the End's terrain into alien shapes (floating islands, spires, arches, voids) with unique sky colors per biome. **Compatible with BetterEnd** — Nullscape's own documentation states it works with BetterEnd specifically (it is incompatible with most End worldgen mods, but BetterEnd is the documented exception). Nullscape handles terrain shape and sky; BetterEnd handles biomes, mobs, gear, and structures. Install as a data pack in the world's `datapacks/` folder.
+**End Remastered** replaces vanilla Ender Eyes with 16 custom eyes scattered across vanilla structures and bosses. The Cryptic Eye comes from enchanting, the Evil Eye from master clerics, the Wither Eye from the Wither — each eye has a unique source. Once you have 12+, follow them to a stronghold and insert all 12 to open the portal. This turns reaching the End from a grind (kill Endermen for pearls) into an exploration-driven scavenger hunt.
+
+**Nullscape**: A data pack that transforms the End's terrain into alien shapes (floating islands, spires, arches, voids) with unique sky colors per biome. Nullscape handles terrain shape and sky only — it does not add biomes. Install as a data pack in the world's `datapacks/` folder.
 
 ### Navigation
 
@@ -1446,6 +1455,8 @@ Recommended companion mods:
 - `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
 
 **Interdependency note — Deep Aether + Aether**: Deep Aether is an addon that expands the Aether dimension with 5 new biomes, Skyjade/Stratus gear, and new mobs. It requires The Aether and Aeroblender (worldgen biome API) — Aeroblender comes **pre-bundled** with Deep Aether, no separate install needed. Aeroblender itself depends on TerraBlender (already in Wave 0.5 dependencies). Stratus armor grants slow-fall and dash abilities, extending the Aether's power fantasy progression. All content is within the Aether dimension — no new dimension added.
+
+**Interdependency note — Umbral Skies + Aether + Twilight Forest**: Umbral Skies connects Aether and Twilight Forest. Aether-styled Druid Huts and Wells generate in Twilight Forest. Aether boss trophies appear in TF's trophy display style. Gloves can be crafted from TF materials (ironwood, fiery, knightmetal, phantom). No config needed — install and both dimensions gain crossover content.
 
 **Interdependency note — Immersive Aircraft + Aether**: Aircraft can fly in the Aether dimension. An airship is a natural way to navigate Aether islands — it pairs well with the dimension's sky-island geography.
 
@@ -1513,6 +1524,18 @@ Every vanilla structure is expanded:
 4. Select an entry → compass points to nearest instance, distance shown
 5. Follow the arrow in real-time
 6. When found, add a JourneyMap waypoint
+
+**Configuration** (`config/explorerscompass-common.toml` → `[General]` section):
+
+| Setting | Default | Recommended | Why |
+|---|---|---|---|
+| `maxRadius` | 10000 | **5000** | Halve search radius — you must explore ~5K blocks before the compass finds a structure. Prevents instant discovery from spawn |
+| `maxSamples` | 100000 | **50000** | Fewer search samples = lower search accuracy at range. Combined with reduced radius, structures won't be found until you're meaningfully close |
+| `maxNextSearches` | 100 | **10** | Limit "find next" to 10 — once you've cleared the 10 nearest instances, explore further and search again |
+| `displayCoordinates` | true | **true** | Show X/Z coords and distance on HUD — essential QoL |
+| `defaultXpLevels` | 0 | **0** | No XP cost for searching — chill pack, navigation shouldn't gate |
+
+**Effect**: With `maxRadius = 5000`, the compass scans a ~10K×10K area centered on you instead of 20K×20K. You'll need to explore new regions to find new structures — no more "find the nearest End City from spawn."
 
 ---
 
@@ -1741,34 +1764,40 @@ Deep-dark-themed dimension accessed through the Deep Dark.
 
 ---
 
-### End Overhaul
+### End Access — End Remastered
 
-After defeating the Ender Dragon, the End becomes a full dimension.
+The End portal now requires a scavenger hunt instead of a grind.
 
-**BetterEnd NeoForge** adds 24+ biomes:
+**Old method**: Kill Endermen → craft Ender Eyes → find stronghold → insert 12 eyes.
 
-| Biome type       | Description                                     | Resources                       |
-|------------------|-------------------------------------------------|---------------------------------|
-| Floating islands | Large islands with unique vegetation, end lakes | New wood types, building blocks |
-| Crystal caves    | Underground caverns with glowing crystals       | Crystal materials               |
-| Mushroom fields  | Giant end-themed mushrooms                      | Magic crafting materials        |
-| Ice biomes       | Frozen wastelands                               | —                               |
-| Chorus forests   | Dense chorus plant forests                      | Chorus flowers, new food        |
+**New method**: Find 16 unique custom Ender Eyes scattered across the world:
 
-**Moog's End Structures** adds towers, ruins, and dungeons with loot better than vanilla End cities.
+| Eye | Source | Eye | Source |
+|---|---|---|---|
+| **Old Eye** | Desert Pyramids | **Cursed Eye** | Bastion treasure |
+| **Nether Eye** | Nether Fortresses | **Exotic Eye** | Craft (aquatic items) |
+| **Cold Eye** | Igloos | **Evil Eye** | Master Cleric trade |
+| **Rogue Eye** | Jungle Pyramids | **Undead Eye** | Craft (Undead Soul from skeleton horse) |
+| **Black Eye** | Buried Chests | **Cryptic Eye** | Random chance when enchanting |
+| **Magical Eye** | Evoker drop | **Wither Eye** | Wither drop |
+| **Lost Eye** | Mineshafts | **Guardian Eye** | Elder Guardian drop |
+| **Corrupted Eye** | Pillager Outposts | **Witch Eye** | Craft (Witch Pupil) |
 
-**Nullscape** (data pack) overhauls End terrain into surreal alien shapes — floating islands, spires, arches, void pits, unique sky colors per biome. **Compatible with BetterEnd** (Nullscape's documented exception). Install in `datapacks/` folder.
+**How it works**: Find 12+ unique eyes. Hold one to locate the stronghold (like vanilla Ender Eyes). Insert all 12 into the portal frame to open it. If a vanilla eye is already in a frame, right-click with a custom eye to replace it.
 
-- Nullscape handles terrain and sky
-- BetterEnd handles biomes, mobs, gear, and structures
+**Tip**: This naturally paces your journey to the End — you'll need to explore deserts, swamps, nether fortresses, ocean monuments, woodland mansions, and bastions before you can fight the dragon. By the time you open the portal, you'll have gear, experience, and world knowledge that makes the End a natural next step rather than a rushed target.
+
+### End Dimension
+
+Moog's End Structures adds towers, ruins, and dungeons with loot better than vanilla End cities. Nullscape (data pack) overhauls terrain into surreal alien shapes — floating islands, spires, arches, void pits, unique sky colors per biome. Install in `datapacks/` folder.
 
 **Ender's Delight** (Wave 4) adds food cooked from End ingredients — useful status effects for End exploration.
 
 **Progression**:
 
-- Post-Dragon: Explore outer islands for new materials and tier-appropriate gear
+- Post-Dragon: Explore outer islands for new structures and loot
 - Mid-End: Tackle Moog's structures for unique weapons
-- Endgame: Build an End base with rarest biomes
+- Endgame: Build an End base — Nullscape terrain makes for dramatic architecture
 
 **Tip**: Place a Waystone immediately. Build a small AE2 subnet with wireless terminal to access main base storage.
 
@@ -2290,6 +2319,7 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [**My Nether's Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 1.10.2     | Nether-themed food ingredients and recipes                                       |
 | [**Ocean's Delight**](https://www.curseforge.com/minecraft/mc-mods/oceans-delight) 1.0.4              | Ocean-themed seafood dishes                                                      |
 | [**Ender's Delight**](https://www.curseforge.com/minecraft/mc-mods/enders-delight) v1.3.0             | End-themed food for Farmer's Delight (moved from Wave 2)                         |
+| [**Twilight's Flavors & Delight**](https://www.curseforge.com/minecraft/mc-mods/twilights-flavors-delight) 3.2.2 | Twilight Forest × Farmer's Delight crossover — 35+ FD-style TF foods, 4 TF knives, maze stove, 5 potion effects, trophy dismantling |
 | [Neo Bee Fix](https://modrinth.com/mod/neo-bee-fix)                                                   | Fixes bee AI bugs — bees leave hives, don't fall from sky, no NW wander bias     |
 | [Comfortable Campfires](https://www.curseforge.com/minecraft/mc-mods/comfortable-campfires)           | Campfires grant configurable status effects — sit by the fire, get a buff        |
 | [**Starcatcher**](https://www.curseforge.com/minecraft/mc-mods/starcatcher)                           | Fishing overhaul — 100+ fish, skill minigame, trophies, tournaments, catalogue   |
@@ -2302,6 +2332,8 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 **Interdependency note — Better Fishtanks + Create (Wave 1)**: Better Fishtanks is designed for tech mod automation. The Fish Tank and Aquarist Table inventories are fully accessible via Create pipes. Use fluid pipes to fill tanks with water. Automate fish feeding with Create's mechanical systems.
 
 **Interdependency note — Better Fishtanks + Hybrid Aquatic (Wave 2)**: Better Fishtanks can house any fish mod's creatures. Use Fish Bags to catch Hybrid Aquatic mobs and place them in tanks as living displays.
+
+**Interdependency note — Twilight's Flavors & Delight + Twilight Forest (Wave 2) + Farmer's Delight**: This mod bridges Twilight Forest and Farmer's Delight. TF mob drops and foraged items become cookable into 35+ FD-style meals. The Maze Stove (crafted from maze ooze) accelerates cooking in TF biomes. 4 TF-material knives (ironwood, fiery, knightmetal, phantom) have unique abilities. Boss trophies can be dismantled for precious loot — giving each TF boss run lasting value beyond the first kill. Optional Neapolitan compat adds 19 more food types (Neapolitan not in pack — 35+ FD meals still available without it).
 
 Farmer's Delight brings a full cooking ecosystem. Optional — you can survive on baked potatoes — but cooking gives powerful status effects, better healing, and a cozy kitchen to build around.
 
@@ -2449,11 +2481,11 @@ Seafood dishes using ocean mob drops:
 
 End-themed food for post-Dragon exploration:
 
-- **Ingredients**: Chorus fruit variants, end-themed crops from BetterEnd
+- **Ingredients**: Chorus fruit variants, end-themed crops
 - **Recipes**: End stews and snacks
 - **Effects**: Status boosts useful for End dimension exploration
 
-**Integration**: End ingredients from BetterEnd biomes (Wave 2) cook into Ender's Delight meals. Plan an End farming outpost with Farmer's Delight crops.
+**Integration**: End ingredients cook into Ender's Delight meals. Plan an End farming outpost with Farmer's Delight crops.
 
 ### Neo Bee Fix
 
@@ -3173,7 +3205,7 @@ Start with Moon missions, establish Tier 1 base, then Mercury/Venus. Mars and Gl
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Phase 1** (hours 0–40)   | Wave 0 setup. Early Create (water wheel, millstone). Find certus quartz for AE2. First Mekanism machines (2x ore). Explore Terralith biomes. Skill Tree earning XP from first action. First Simply Swords weapon from dungeon. Cook first Farmer's Delight meal. Start MineColonies (Town Hall, Builder, Mine). Open quest book, begin MineColonies questline                                                                                                            |
 | **Phase 2** (hours 40–200) | Full Create factory (conveyors, deployers, sequenced crafters, trains). Mekanism 3x–5x ore processing. AE2 ME network with autocrafting. Explore Twilight Forest bosses. Apotheosis Rare/Epic gear. Mutant Monsters. First Cataclysm boss. TFMG oil refining and diesel engines. Build with Rechiseled, Macaw's, Handcrafted. Small Ships for ocean travel. Immersive Aircraft for aerial exploration. Complete quest chapters. Stellaris Moon and early planets |
-| **Phase 3** (hours 200+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis Mythic gear with perfect gem sockets. Twilight Forest final bosses. Cataclysm endgame bosses. BetterEnd dimension exploration. Mars and Glacio space bases. Monumental building projects. Create mega-factories. Perpetual optimization                                                                                                                           |
+| **Phase 3** (hours 200+)   | Mekanism fusion reactor + MekaSuit. AE2 full autocrafting CPU chains. Endgame Apotheosis Mythic gear with perfect gem sockets. Twilight Forest final bosses. Cataclysm endgame bosses. End dimension exploration. Mars and Glacio space bases. Monumental building projects. Create mega-factories. Perpetual optimization                                                                                                                           |
 
 ---
 

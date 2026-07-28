@@ -27,7 +27,7 @@
 - [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
 
 ### Wave 2 — Exploration (~31 mods)
-- [x] Worldgen: Terralith, Tectonic, BetterEnd NeoForge, Moog's End Structures
+- [x] Worldgen: Terralith, Tectonic, End Remastered, Moog's End Structures
 - [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
 - [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
 - [x] Navigation: Explorer's Compass
@@ -350,3 +350,19 @@
 
 ### Added Mods (Jul 2026 batch 17 — Deep Aether)
 - [x] Deep Aether 1.1.5.1 (Wave 2 — Dimensions) — Aether dimension expansion: 5 biomes, Skyjade/Stratus gear, new mobs, poison swamps. Aeroblender pre-bundled, TerraBlender already in pack. No config needed.
+
+### Added Mods (Jul 2026 batch 18 — Twilight's Flavors & Delight)
+- [x] Twilight's Flavors & Delight 3.2.2 (Wave 4 — Food & Farming) — Twilight Forest × Farmer's Delight crossover: 35+ FD-style TF foods, 4 TF knives, maze stove, 5 potion effects, trophy dismantling. Dependencies: TF + FD (both in pack). No config needed.
+
+### Added Mods (Jul 2026 batch 19 — Umbral Skies)
+- [x] Umbral Skies 1.6.2 (Wave 2 — Dimensions) — Aether × Twilight Forest crossover: Aether-themed TF structures, Aether boss trophies in TF style, TF-material gloves. Dependencies: Aether + TF (both in pack). No config needed.
+
+### Added Mods (Jul 2026 batch 20 — Create: Dragons Plus + Create: Shimmer)
+- [x] Create: Dragons Plus 1.11.2b (Wave 1 — Create Addons) — Bulk Fan Processing (coloring, freezing, ending, sanding), Fluid Hatch, Aether Bulk Enchanting. Library/lib for Create addon devs. GPLv3.
+- [x] Create: Shimmer 1.2.10 (Wave 1 — Create Addons) — Create × Twilight Forest compat: Shimmer fluid + Bulk Transmutation automates TF item production. Requires Create: Dragons Plus. GPLv3.
+
+### Removed Mods (Jul 2026 batch 21 — BetterEnd replacement)
+- [x] BetterEnd: New Dawn — removed. Replaced by End Remastered (portal progression overhaul — 16 custom Ender Eyes instead of End dimension biomes). End overhaul was thin (unofficial continuation, 415K DL). End dimension now uses Nullscape (terrain) + Moog's End Structures for content.
+
+### Added Mods (Jul 2026 batch 21 — End Remastered)
+- [x] End Remastered 6.3.0 (Wave 2 — End Access & Structures) — portal progression overhaul: 16 custom Ender Eyes hidden across vanilla structures and bosses. Find 12+ to open the End. 42.6M DL, LGPLv3. No config needed.
