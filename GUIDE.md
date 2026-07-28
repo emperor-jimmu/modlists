@@ -1393,6 +1393,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | Mod                                                                                 | Role                                                                                       |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)                   | Sky dimension — safe islands, gear progression, dungeons with bosses                       |
+| [Deep Aether](https://www.curseforge.com/minecraft/mc-mods/deep-aether)             | Aether addon — 5 new biomes, Skyjade/Stratus gear, new mobs, poison swamps. Gives the Aether the "Nether Update" treatment |
 | [Deeper and Darker](https://www.curseforge.com/minecraft/mc-mods/deeperdarker)      | The "Otherside" dimension — deep dark themed, warden gear                                  |
 | [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) | Classic dimension — 6+ bosses with progression gates, unique loot, enchanted forest biomes |
 
@@ -1443,6 +1444,8 @@ Recommended companion mods:
 - `"Show Patreon message"` = `false` — Removes Patreon nag screen.
 - `"Add Temporary Freezing automatically"` = `false` — Disables Aether's temporary freezing datapack.
 - `"Add Ruined Portals automatically"` = `false` — Disables ruined portal datapack.
+
+**Interdependency note — Deep Aether + Aether**: Deep Aether is an addon that expands the Aether dimension with 5 new biomes, Skyjade/Stratus gear, and new mobs. It requires The Aether and Aeroblender (worldgen biome API) — Aeroblender comes **pre-bundled** with Deep Aether, no separate install needed. Aeroblender itself depends on TerraBlender (already in Wave 0.5 dependencies). Stratus armor grants slow-fall and dash abilities, extending the Aether's power fantasy progression. All content is within the Aether dimension — no new dimension added.
 
 **Interdependency note — Immersive Aircraft + Aether**: Aircraft can fly in the Aether dimension. An airship is a natural way to navigate Aether islands — it pairs well with the dimension's sky-island geography.
 
@@ -1661,6 +1664,8 @@ Safe, beautiful sky islands. Gentle adventure curve.
 - **Phase 4**: Highest crystal islands → **Sun Spirit** — bring fire resistance
 
 **Tip**: Not required for any tech progression. Visit when you want a change of pace. MekaSuit trivializes all Aether combat.
+
+**Deep Aether expansion**: Installed alongside — it adds 5 new biomes (Aerglow Forest, Aerlavender Fields, Yagroot Swamp, Golden Heights) that generate organically in the Aether. **Skyjade** tools/armor (stronger at full durability) appear in holystone. **Stratus** armor (slow-fall + dash — press R with full set) is crafted from Sterling Aerclouds found above Y=200. The Yagroot Swamp biome introduces poison liquid, Virulent Quicksand, and the Spooky Ring (night damage bonus). All content is purely additive — the base Aether progression is unchanged.
 
 **Config** (`aether-common.toml`):
 

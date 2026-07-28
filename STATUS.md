@@ -347,3 +347,6 @@
 - [x] Trek Mod — skipped (150+ structures but YUNG's + Structory already cover variety adequately)
 - [x] TarotCards: Remastered — skipped (RNG buff/debuff cards overlap with Apotheosis gear ecosystem)
 - [x] Create: Stats & Additions — skipped (uncertain scope, potential overlap with Create Crafts & Additions)
+
+### Added Mods (Jul 2026 batch 17 — Deep Aether)
+- [x] Deep Aether 1.1.5.1 (Wave 2 — Dimensions) — Aether dimension expansion: 5 biomes, Skyjade/Stratus gear, new mobs, poison swamps. Aeroblender pre-bundled, TerraBlender already in pack. No config needed.
