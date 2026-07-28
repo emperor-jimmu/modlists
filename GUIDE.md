@@ -864,8 +864,6 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Create Better FPS](https://www.curseforge.com/minecraft/mc-mods/create-better-fps)                                                   | Create rendering optimization — up to 50% FPS gain with shaders. Handles addon models, speed controllers, factory gauges, and schematic previews                                        |
 | [ColorWheel](https://www.curseforge.com/minecraft/mc-mods/colorwheel)                                                                 | Flywheel + Iris compatibility — renders Create contraptions under shaders. Required for Create to work with Iris. Both Complementary Unbound and Euphoria Patches have official support |
 | [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)                                                    | Create + Farmer's Delight automation — Slicer (auto Cutting Board), automatic FD Cooking Pot via heated mixing, Sprinkler for fluid-based farming                                       |
-| [Create Deep Seas](https://www.curseforge.com/minecraft/mc-mods/create-deep-seas)                                                    | Underwater automation — ocean-floor drilling, pumps, and processing. Pairs with Upgrade Aquatic + Hybrid Aquatic (Wave 2)                                                                |
-
 ### Create Addon Details
 
 **Create Better FPS** optimizes Create's rendering pipeline — handles addon models (e.g., blaze with straw from Create Crafts & Additions), speed controllers, factory gauges, and schematic previews. Benchmarked 7→35 FPS with 512 waterwheels under shaders. Works alongside ColorWheel: ColorWheel handles Flywheel instance compatibility; Create Better FPS handles everything else.
@@ -873,8 +871,6 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 **ColorWheel** makes Flywheel (Create's rendering engine) compatible with Iris shaders. Without it, Create contraptions either don't render or tank performance under shaders. ColorWheel is the higher-priority install between the two — Create Better FPS is additional optimization on top.
 
 **Create Slice & Dice** automates Farmer's Delight through Create. The **Slicer** acts as an automatic Cutting Board — place a knife or axe inside (right-click), and it registers all FD cutting recipes as mechanical processing. **Automatic cooking** converts FD Cooking Pot recipes into Create heated mixing recipes, so you can pipe ingredients in and collect meals. The **Sprinkler** distributes fluids below it: water for hydration, lava for damage, potions for effects, and Liquid Fertilizer (new fluid) for automatic bonemeal. This bridges Phase 1's food focus with Phase 2's automation — by the time you have Create infrastructure, meal production becomes fully pipeable.
-
-**Create Deep Seas** extends Create's mechanical automation underwater. Adds ocean-floor drills, underwater pumps, and processing equipment for extracting and refining ocean resources. Pairs with **Upgrade Aquatic** and **Hybrid Aquatic** (Wave 2) — process aquatic drops through Create automation alongside Mekanism ore processing. Requires Create (already in pack). Check EMI for recipes.
 
 ### Mekanism Addons
 
@@ -1436,6 +1432,10 @@ Recommended companion mods:
 | [Immersive Overlays](https://modrinth.com/mod/immersive-overlays)                                                        | Biome displays — shows spawn details for entities |
 | [Item Descriptions](https://modrinth.com/mod/item-descriptions)                                                          | Entry descriptions — auto-fills entry lore        |
 | [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions) (resource pack)                                   | Modded support — adds descriptions for modded entries |
+
+### Create Deep Seas
+
+Underwater automation for Create. Build ocean-floor drills, underwater pumps, and processing equipment to extract and refine ocean resources. Pairs with **Upgrade Aquatic** and **Hybrid Aquatic** (Wave 2) — automate the processing of aquatic drops through your Create infrastructure. Requires Create (already in pack). Check EMI for recipes.
 
 ### Configuration — Wave 2
 
