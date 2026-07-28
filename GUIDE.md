@@ -443,6 +443,7 @@ This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn t
 
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
+| [Traveler Tool Belt](https://www.curseforge.com/minecraft/mc-mods/traveler-tool-belt)         | Tool radial menu — hold R for quick-swap, 2→9 slots via upgrades   |
 
 ### Storage & Travel
 
@@ -766,6 +767,15 @@ Glowing advancement plaques replace vanilla popups — copper for Tasks, silver 
 
 When two mods have conflicting recipes for the same item, a small button appears next to the crafting output. Click to cycle recipes. Persists per ingredient combination.
 
+#### Traveler Tool Belt
+
+Quick-swap tool access without opening your inventory. Hold **R** (configurable in Controls) to open a radial menu, then select the tool you need. The belt renders as a subtle layer on your player model.
+
+- Starts with **2 slots**, expandable to **9** by upgrading at a crafting table
+- Holds any non-stackable item by default (tools, weapons, weapons)
+- Integrates with Curios API belt slot (already in pack) — equip from Curios menu or inventory
+- Equip in the belt slot, or keep it in your inventory if Curios is unavailable
+
 ---
 
 ### Storage & Travel
@@ -854,6 +864,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [Create Better FPS](https://www.curseforge.com/minecraft/mc-mods/create-better-fps)                                                   | Create rendering optimization — up to 50% FPS gain with shaders. Handles addon models, speed controllers, factory gauges, and schematic previews                                        |
 | [ColorWheel](https://www.curseforge.com/minecraft/mc-mods/colorwheel)                                                                 | Flywheel + Iris compatibility — renders Create contraptions under shaders. Required for Create to work with Iris. Both Complementary Unbound and Euphoria Patches have official support |
 | [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)                                                    | Create + Farmer's Delight automation — Slicer (auto Cutting Board), automatic FD Cooking Pot via heated mixing, Sprinkler for fluid-based farming                                       |
+| [Create Deep Seas](https://www.curseforge.com/minecraft/mc-mods/create-deep-seas)                                                    | Underwater automation — ocean-floor drilling, pumps, and processing. Pairs with Upgrade Aquatic + Hybrid Aquatic (Wave 2)                                                                |
 
 ### Create Addon Details
 
@@ -862,6 +873,8 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 **ColorWheel** makes Flywheel (Create's rendering engine) compatible with Iris shaders. Without it, Create contraptions either don't render or tank performance under shaders. ColorWheel is the higher-priority install between the two — Create Better FPS is additional optimization on top.
 
 **Create Slice & Dice** automates Farmer's Delight through Create. The **Slicer** acts as an automatic Cutting Board — place a knife or axe inside (right-click), and it registers all FD cutting recipes as mechanical processing. **Automatic cooking** converts FD Cooking Pot recipes into Create heated mixing recipes, so you can pipe ingredients in and collect meals. The **Sprinkler** distributes fluids below it: water for hydration, lava for damage, potions for effects, and Liquid Fertilizer (new fluid) for automatic bonemeal. This bridges Phase 1's food focus with Phase 2's automation — by the time you have Create infrastructure, meal production becomes fully pipeable.
+
+**Create Deep Seas** extends Create's mechanical automation underwater. Adds ocean-floor drills, underwater pumps, and processing equipment for extracting and refining ocean resources. Pairs with **Upgrade Aquatic** and **Hybrid Aquatic** (Wave 2) — process aquatic drops through Create automation alongside Mekanism ore processing. Requires Create (already in pack). Check EMI for recipes.
 
 ### Mekanism Addons
 
@@ -1411,6 +1424,18 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships) 2.0.0-b2.1          | Sailable ships — brigantine, cog, drakkar, galley. Build, crew, and navigate; moveable bases on water. Beta (NeoForge) |
 | [Hang Glider](https://www.curseforge.com/minecraft/mc-mods/hang-glider) v21.1.0             | Craftable hang glider — glide from any height. No fuel, no power. Phase 1 accessible exploration aid                   |
 | [Man of Many Planes](https://www.curseforge.com/minecraft/mc-mods/man-of-many-planes) 0.2.1 | Immersive Aircraft addon — two Create-themed aircraft. Requires Immersive Aircraft                                     |
+
+### Field Guide
+
+Opens a new way to experience the world. Craft a spyglass, then look at any plant, animal, or monster to catalog it in your Field Guide. Each entry you discover adds to your collection with lore about the creature or plant. Works with modded mobs and biomes — automatically discovers content from every mod in the pack.
+
+Recommended companion mods:
+
+| Mod                                                                                                                      | Feature Added              |
+|--------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| [Immersive Overlays](https://modrinth.com/mod/immersive-overlays)                                                        | Biome displays — shows spawn details for entities |
+| [Item Descriptions](https://modrinth.com/mod/item-descriptions)                                                          | Entry descriptions — auto-fills entry lore        |
+| [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions) (resource pack)                                   | Modded support — adds descriptions for modded entries |
 
 ### Configuration — Wave 2
 

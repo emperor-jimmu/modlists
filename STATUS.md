@@ -334,3 +334,16 @@
 - [x] (Bee's) Fancy Crops — 6.5M downloads, Farmer's Delight compatible — too popular to skip ✅ ADDED (Jul 2026 batch 11)
 - [x] Retextured Vine — still too narrow in scope (vines only, 22K downloads) ❌ STILL SKIPPED
 - [x] LambdaBetterGrass — Fabric-only. No NeoForge version exists. 9.2M downloads but on wrong modloader ❌ STILL SKIPPED
+
+### Mod Review — 11 Candidates (Jul 2026 batch 16)
+- [x] Traveler Tool Belt — **ADDED** (Wave 0.5 — Inventory & UI) — tool radial menu, 2→9 slots, Curios integration. By Tiviacz1337. NeoForge 26.1.2.
+- [x] Field Guide — **ADDED** (Wave 2 — Field Guide) — spyglass-based creature/plant catalog. Exploration doc mod. By evanbones. NeoForge 26.1.2.
+- [x] Create Deep Seas — **ADDED** (Wave 1 — Create Addons) — underwater automation for Create. Pairs with Upgrade Aquatic + Hybrid Aquatic. By MaxCreateMC. NeoForge 1.21.1.
+- [x] Kaleidoscope Tavern — skipped (overlaps with Brewin' And Chewin' FD ecosystem — FD integration more valuable)
+- [x] Kaleidoscope World Liquor — skipped (niche drink addon, overlaps with Brewin' And Chewin')
+- [x] Kaleidoscope Dimensions Wine — skipped (niche dimension-wine addon, overlaps with Brewin' And Chewin')
+- [x] Create: Gears and Tavern — skipped (tavern-themed Create addon, too niche, overlaps with food/drink ecosystem)
+- [x] Create Aeronautics — skipped (requires Sable dep, known incompatibilities, existing flight stack sufficient)
+- [x] Trek Mod — skipped (150+ structures but YUNG's + Structory already cover variety adequately)
+- [x] TarotCards: Remastered — skipped (RNG buff/debuff cards overlap with Apotheosis gear ecosystem)
+- [x] Create: Stats & Additions — skipped (uncertain scope, potential overlap with Create Crafts & Additions)
