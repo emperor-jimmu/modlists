@@ -338,7 +338,7 @@
 ### Mod Review — 11 Candidates (Jul 2026 batch 16)
 - [x] Traveler Tool Belt — **ADDED** (Wave 0.5 — Inventory & UI) — tool radial menu, 2→9 slots, Curios integration. By Tiviacz1337. NeoForge 26.1.2.
 - [x] Field Guide — **ADDED** (Wave 2 — Field Guide) — spyglass-based creature/plant catalog. Exploration doc mod. By evanbones. NeoForge 26.1.2.
-- [x] Create Deep Seas — **ADDED** (Wave 2 — Create Deep Seas) — underwater automation for Create. Pairs with Upgrade Aquatic + Hybrid Aquatic. By MaxCreateMC. NeoForge 1.21.1.
+- [x] Create Deep Seas — **REMOVED** (was Wave 2) — requires Sable ecosystem (Create Aeronautics dep). Alpha/Early Access. Iris shader incompatibility concern. Dropped alongside Create Aeronautics.
 - [x] Kaleidoscope Tavern — skipped (overlaps with Brewin' And Chewin' FD ecosystem — FD integration more valuable)
 - [x] Kaleidoscope World Liquor — skipped (niche drink addon, overlaps with Brewin' And Chewin')
 - [x] Kaleidoscope Dimensions Wine — skipped (niche dimension-wine addon, overlaps with Brewin' And Chewin')

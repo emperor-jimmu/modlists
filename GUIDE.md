@@ -1433,10 +1433,6 @@ Recommended companion mods:
 | [Item Descriptions](https://modrinth.com/mod/item-descriptions)                                                          | Entry descriptions — auto-fills entry lore        |
 | [Mod Descriptions](https://modrinth.com/resourcepack/mod-descriptions) (resource pack)                                   | Modded support — adds descriptions for modded entries |
 
-### Create Deep Seas
-
-Underwater automation for Create. Build ocean-floor drills, underwater pumps, and processing equipment to extract and refine ocean resources. Pairs with **Upgrade Aquatic** and **Hybrid Aquatic** (Wave 2) — automate the processing of aquatic drops through your Create infrastructure. Requires Create (already in pack). Check EMI for recipes.
-
 ### Configuration — Wave 2
 
 **Aether** (`aether-common.toml`):
