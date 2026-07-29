@@ -50,8 +50,8 @@ Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SS
 
 ### Related Add-Ons
 
-| Mod | Description | Nexus |
-| --- | --- | --- |
+| Mod | Description |
+| --- | --- |
 | [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | Wetness VFX triggered by swimming, rain, and water contact. SKSE plugin, complements CS Wetness Effects. |
 
 ---

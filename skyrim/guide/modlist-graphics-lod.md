@@ -18,19 +18,19 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 
 #### Core Support Mods
 
-| Mod                     | Nexus                                                              |
-|-------------------------|--------------------------------------------------------------------|
-| DynDOLOD Resources SE 3 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/52897) |
-| DynDOLOD DLL NG         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97720) |
+|  Mod                      |
+| ------------------------- |
+| [DynDOLOD Resources SE 3](https://www.nexusmods.com/skyrimspecialedition/mods/52897) |
+| [DynDOLOD DLL NG](https://www.nexusmods.com/skyrimspecialedition/mods/97720) |
 
 #### Optional Distant Detail Support
 
-| Mod                                                     | Notes                                                                             | Nexus                                                               |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| HD LODs Textures SE                                     |                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3333)   |
-| Skyfall's Sleeping Hist Tree Overhaul — DynDOLOD Add-On | Billboard generation for replaced tree. Required for correct distant-LOD display. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/169984) |
-| Happy Little Trees DynDOLOD Optimizations               |                                                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158587) |
-| Far Object LOD Improvement Project SSE (FOLIP)          | Improves distant object LOD.                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/79197)  |
+|  Mod                                                      |  Notes                                                                              |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [HD LODs Textures SE](https://www.nexusmods.com/skyrimspecialedition/mods/3333) |                                                                                     |
+| [Skyfall's Sleeping Hist Tree Overhaul — DynDOLOD Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/169984) |  Billboard generation for replaced tree. Required for correct distant-LOD display.  |
+| [Happy Little Trees DynDOLOD Optimizations](https://www.nexusmods.com/skyrimspecialedition/mods/158587) |                                                                                     |
+| [Far Object LOD Improvement Project SSE (FOLIP)](https://www.nexusmods.com/skyrimspecialedition/mods/79197) |  Improves distant object LOD.                                                       |
 
 #### World Map Support
 
@@ -38,12 +38,12 @@ Distant detail determines whether `Elder Wilds` feels large and coherent during 
 
 #### Core Workflow Dependencies
 
-| Mod                                    | Nexus                                                              |
-|----------------------------------------|--------------------------------------------------------------------|
-| No Grass In Objects                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/42161) |
-| Worldspaces with Grass SSEEdit Script  | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/55152) |
-| Grass Cache Fixes                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/60891) |
-| xLODGen Resource — SSE Terrain Tamriel | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/54680) |
+|  Mod                                     |
+| ---------------------------------------- |
+| [No Grass In Objects](https://www.nexusmods.com/skyrimspecialedition/mods/42161) |
+| [Worldspaces with Grass SSEEdit Script](https://www.nexusmods.com/skyrimspecialedition/mods/55152) |
+| [Grass Cache Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/60891) |
+| [xLODGen Resource — SSE Terrain Tamriel](https://www.nexusmods.com/skyrimspecialedition/mods/54680) |
 
 ---
 

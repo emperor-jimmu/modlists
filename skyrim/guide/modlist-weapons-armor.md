@@ -62,18 +62,18 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 
 ### Baseline
 
-| Mod                                                                                            | Description                                                            | Nexus                                                               |
-|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Immersive Armors](https://www.nexusmods.com/skyrimspecialedition/mods/3479)                   | ~55 armor sets, 396 shields. 206K endorsements.                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/3479)   |
-| [Immersive Armors Retexture and Mesh Fixes SE](https://www.nexusmods.com/skyrimspecialedition/mods/75891) | Brings visuals in line with 4K PBR stack.                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/75891)  |
+| Mod                                                                                            | Description                                                            |
+|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+|  [Immersive Armors](https://www.nexusmods.com/skyrimspecialedition/mods/3479)                    |  ~55 armor sets, 396 shields. 206K endorsements.                         |
+|  [Immersive Armors Retexture and Mesh Fixes SE](https://www.nexusmods.com/skyrimspecialedition/mods/75891)  |  Brings visuals in line with 4K PBR stack.                       |
 
 ### Alternatives
 
-| Mod                                                                                            | Description                                                            | Nexus                                                               |
-|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [NordwarUA Total Armor Compilation](https://www.nexusmods.com/skyrimspecialedition/mods/61423) | Visual model overhaul — 6 NordwarUA mods. Cubemap standardization.     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/61423)  |
-| [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)         | Clothing/light-armor variants for bandits, sellswords, travelers.      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/21305)  |
-| [Bandolier — Bags and Pouches](https://www.nexusmods.com/skyrimspecialedition/mods/2417)       | Carry-capacity utility with MCM config.                                | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/2417)   |
+| Mod                                                                                            | Description                                                            |
+|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+|  [NordwarUA Total Armor Compilation](https://www.nexusmods.com/skyrimspecialedition/mods/61423)  |  Visual model overhaul — 6 NordwarUA mods. Cubemap standardization.      |
+|  [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)          |  Clothing/light-armor variants for bandits, sellswords, travelers.       |
+|  [Bandolier — Bags and Pouches](https://www.nexusmods.com/skyrimspecialedition/mods/2417)        |  Carry-capacity utility with MCM config.                                 |
 | Discipline-first route                                                                         | Vanilla armor sets only.                                               |                                                                     |
 
 ### Immersive Armors Visual Pipeline
