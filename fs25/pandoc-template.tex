@@ -1,0 +1,74 @@
+\documentclass[14pt,a4paper,openany]{extbook}
+
+\usepackage[hmargin=2.2cm, vmargin=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{bookmark}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{newunicodechar}
+
+% Colors (define before hyperref so \hypersetup can reference them)
+\definecolor{deepgreen}{HTML}{2D5A27}
+\definecolor{warmgold}{HTML}{C8A84E}
+\definecolor{warnred}{HTML}{CC4444}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=warmgold, linkcolor=deepgreen, citecolor=deepgreen}
+
+% Replace glyphs not available in Cambria
+\newunicodechar{⚠}{\textbf{\textcolor{warnred}{\small[!]}}}
+\newunicodechar{★}{\,*\,}
+
+% Fix: Pandoc generates \LTcaptype{none} for uncaptioned longtables — need a dummy counter
+\newcounter{none}
+
+% Fonts — use Windows system fonts
+\setmainfont{Cambria}
+\setsansfont{Calibri}
+\setmonofont{Consolas}[Scale=1.05]
+
+% Headings
+\titleformat{\chapter}{\Huge\bfseries\color{deepgreen}}{}{0em}{}
+\titleformat{\section}{\LARGE\bfseries\color{deepgreen}}{}{0em}{}
+\titleformat{\subsection}{\Large\bfseries\color{deepgreen}}{}{0em}{}
+
+% Header/Footer
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\color{deepgreen}Fields, Vines \& Barrels}
+\fancyfoot[CE,CO]{\thepage}
+
+% Cover page
+\title{\Huge\textcolor{deepgreen}{Fields, Vines \& Barrels}\\[0.5em]
+\Large A Farming Simulator 25 Modlist \& Guide}
+\author{}
+\date{\today}
+
+\begin{document}
+
+% Cover
+\begin{titlepage}
+\centering
+\vspace*{3cm}
+\includegraphics[width=0.8\textwidth]{assets/logo.png}\\[2cm]
+{\Huge\bfseries\color{deepgreen} Fields, Vines \& Barrels}\\[0.5cm]
+{\Large A Farming Simulator 25 Modlist \& Guide}\\[1cm]
+{\large Build date: \today}
+\vfill
+\end{titlepage}
+
+% TOC
+\tableofcontents
+\newpage
+
+$body$
+
+\end{document}
