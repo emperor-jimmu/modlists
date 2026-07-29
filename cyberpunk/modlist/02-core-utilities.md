@@ -1,0 +1,204 @@
+# 02 - Core Utilities
+
+**Goal:** Script extenders, frameworks, and essential libraries that other mods
+depend on. Install these first -- nothing else works without them.
+
+---
+
+### RED4ext
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/2380>
+- **Version:** 1.30.0
+- **Released:** 2026-03-09
+- **Summary:** Native plugin loader for REDengine 4. The foundation layer every
+  native-code mod depends on.
+- **Why:** Required by ArchiveXL, TweakXL, Codeware, Input Loader, and most
+  serious gameplay/UI mods. Without RED4ext, native plugin mods cannot load.
+- **Conflicts:** None
+- **Dependencies:** Visual C++ Redistributable 2022
+- **MO2 Notes:**
+    - Extract archive to game root.
+    - Verify: check `<GameDir>/red4ext/logs/red4ext.log` for successful load.
+- **Performance:** None
+
+### Cyber Engine Tweaks
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/107>
+- **Version:** 1.37.1
+- **Released:** 2025-09-30
+- **Summary:** Scripting framework with in-game console, Lua modding API, and
+  quality-of-life fixes.
+- **Why:** Foundation for Lua-based mods (appearance, UI, gameplay tweaks).
+  Provides the dev console, ImGui rendering, and Lua scripting runtime.
+- **Conflicts:** None
+- **Dependencies:** Visual C++ Redistributable
+- **MO2 Notes:**
+    - Extract archive to game root.
+    - Add `CET.exe` as an executable in MO2 -- launch the game through CET.
+    - Launches `Cyberpunk2077.exe` automatically; injects its overlay.
+- **Performance:** None
+
+### redscript
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/1511>
+- **Version:** 0.5.31
+- **Released:** 2025-06-01
+- **Summary:** Compiler and loader for redscript (`.reds`) files -- the native
+  scripting language of REDengine 4.
+- **Why:** Many gameplay, quest, and UI mods ship `.reds` scripts. redscript
+  compiles them on load. Without it, those mods do nothing.
+- **Conflicts:** None
+- **Dependencies:** None (standalone)
+- **MO2 Notes:**
+    - Extract archive to game root.
+    - Compiled scripts appear in `r6/cache/redscript/`.
+- **Performance:** None
+
+### ArchiveXL
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/4198>
+- **Version:** 1.26.8
+- **Released:** 2026-05-20
+- **Summary:** Archive expansion framework -- adds .archive loading, dynamic
+  appearances, character customization system, and custom resource support.
+- **Why:** Required by clothing, appearance, weapon, and housing mods. Enables
+  custom meshes, textures, animations, and world-streaming blocks.
+- **Conflicts:** None
+- **Dependencies:** RED4ext 1.29.0+, redscript 0.5.31+
+- **MO2 Notes:**
+    - Extract to game root.
+    - Install this BEFORE TweakXL and any clothing/appearance mods.
+    - No FOMOD -- simple extraction.
+- **Performance:** None
+
+### TweakXL
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/4197>
+- **Version:** 1.11.3
+- **Released:** 2025-12-20
+- **Summary:** TweakDB modification framework -- edit game stats, items,
+  recipes, and balance via YAML files.
+- **Why:** Required by virtually every gameplay overhaul, rebalance, and
+  item/weapon/clothing mod. Without it, mods can't modify game data.
+- **Conflicts:** None
+- **Dependencies:** RED4ext 1.29.0+
+- **MO2 Notes:**
+    - Extract to game root.
+    - Install after ArchiveXL.
+    - TweakDB overrides load from `r6/tweaks/`.
+- **Performance:** None
+
+### Codeware
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/7780>
+- **Version:** 1.20.3
+- **Released:** 2026-04-11
+- **Summary:** UI scripting runtime -- extends RED4ext with native UI
+  programming support (ink widgets, controllers, custom HUD elements).
+- **Why:** Required by mods that add custom UI screens, HUD elements, inventory
+  panels, or in-game configuration menus.
+- **Conflicts:** None
+- **Dependencies:** RED4ext 1.29.0+, redscript 0.5.31+, CET 1.37.0+
+- **MO2 Notes:**
+    - Extract to game root.
+    - Install after ArchiveXL and TweakXL.
+- **Performance:** None
+
+### Input Loader
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/4575>
+- **Version:** 0.2.3
+- **Released:** 2025-07-19
+- **Summary:** Merges custom input XML files with the game's input config at
+  load time.
+- **Why:** Required by mods that add custom keybinds (vehicle mods, photo mode
+  tools, gameplay actions). Without it, custom inputs conflict or don't load.
+- **Conflicts:** None
+- **Dependencies:** RED4ext
+- **MO2 Notes:**
+    - Extract to game root.
+    - Custom input files go in `r6/input/`.
+    - Merged output written to `r6/cache/`.
+- **Performance:** None
+
+### Native Interactions Framework
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/21422>
+- **Version:** 1.05b
+- **Released:** 2026-01-16
+- **Summary:** Framework for placing 21 interaction types (sitting, sleeping, drinking, showering, dancing, etc.) in the game world via in-game UI. Required by Lucy Apartment Remastered and Night City Hangouts series.
+- **Why:** Framework-tier mod enabling placed world interactions. Same role as ArchiveXL/Codeware — other mods build on it to add immersive seating, leaning, smoking, and other environmental interactions.
+- **Conflicts:** None known. Framework-only — no user-facing features by itself.
+- **Dependencies:** ArchiveXL, Codeware, CET, RED4ext, redscript, Phantom Liberty
+- **MO2 Notes:** Extract to game root. Install after Codeware, before Native Settings UI. No configuration — other mods use this framework to place interactions.
+- **Performance:** None
+
+### Native Settings UI
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/3518>
+- **Version:** 1.2.0
+- **Released:** 2024-01-06
+- **Summary:** In-game settings menu for CET-based mods.
+- **Why:** Provides a unified settings panel for mods that expose configurable
+  options. Cleaner than editing config files manually.
+- **Conflicts:** None
+- **Dependencies:** CET
+- **MO2 Notes:**
+    - Extract to game root.
+    - Settings appear under CET's overlay (default Insert key).
+- **Performance:** None
+
+### Browser Extension
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/10038>
+- **Version:** 0.9.7
+- **Released:** 2025-09-20
+- **Summary:** Framework for adding custom web sites to the in-game browser homepage. Gathers and shows all vanilla journal-defined sites.
+- **Why:** Enables economy mods like Much Better Eddies with its Dead Channel black-market fixer line. Provides the in-game browser infrastructure that other mods depend on.
+- **Conflicts:** None known
+- **Dependencies:** redscript, RED4ext, Codeware. Optional: Mod Settings.
+- **MO2 Notes:** Extract to game root. Custom sites can be added by creating a child of BrowserEventsListener (see CustomSiteExample in optional files).
+- **Performance:** None
+
+### Redscript Configuration Framework
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30726>
+- **Version:** Verify
+- **Released:** 2026-07-07
+- **Summary:** Modern popup-based configuration framework for redscript mods. Replaces legacy Mod Settings for newer mods, offering a clean in-game configuration UI.
+- **Why:** Required by Calendar, 1st Night City Bank, and other modern mods that have migrated from Mod Settings. Provides a more maintainable configuration system.
+- **Conflicts:** None. Coexists with Mod Settings for legacy mod support.
+- **Dependencies:** Codeware, redscript
+- **MO2 Notes:** Extract to game root. Install after Mod Settings (Native Settings UI). Newer mods use this; older mods still use Mod Settings.
+- **Performance:** None
+
+### Calendar
+
+- **Nexus:** <https://www.nexusmods.com/cyberpunk2077/mods/30331>
+- **Version:** 3.5.0
+- **Released:** 2026-06-07
+- **Summary:** In-game calendar tracking from The Rescue quest anchor point. Handles quest-driven time skips and provides a scheduled-event API for mod integrations like banking and rent systems.
+- **Why:** Foundation framework for time-aware mods. Without a reliable calendar, loan due dates, rent cycles, and scheduled events cannot function correctly. Consumed by 1st Night City Bank and other DigitalVixen-suite mods.
+- **Conflicts:** None
+- **Dependencies:** Codeware, redscript, Redscript Configuration Framework. Pre-v3.5.0 required DigitalVixen Core (no longer needed).
+- **MO2 Notes:** Extract to game root. Install after Redscript Configuration Framework. Configure via Mod Settings -> Calendar (post-heist coma days, poll interval). Date listener API available for mod integrations.
+- **Performance:** None
+
+## Install Order
+
+1. Visual C++ Redistributable 2022 (system prerequisite)
+2. RED4ext
+3. Cyber Engine Tweaks
+4. redscript
+5. ArchiveXL
+6. TweakXL
+7. Codeware
+8. Input Loader
+9. Native Interactions Framework
+10. Native Settings UI
+11. Redscript Configuration Framework
+12. Calendar
+
+installing.
+
+---

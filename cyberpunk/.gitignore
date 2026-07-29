@@ -1,0 +1,18 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temp files
+*.tmp
+*.bak
+~$*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+*.log
+
+.playwright-mcp/
