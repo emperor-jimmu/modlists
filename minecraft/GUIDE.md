@@ -255,6 +255,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Chunk Loaders](https://www.curseforge.com/minecraft/mc-mods/chunk-loaders)                              | Keep chunks loaded across dimensions — essential for Phase 2+ automation |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | Config library (Chunk Loaders dependency)                                |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)     | Core library (Chunk Loaders dependency)                                  |
+| [Chunky](https://www.curseforge.com/minecraft/mc-mods/chunky)                                            | World pregenerator — generates chunks preemptively to eliminate stutter  |
 
 The essentials that make the game run well. Dependencies, performance, rendering, shaders, chunk loading, and texture packs. Install everything here before launching.
 
@@ -318,6 +319,17 @@ General MC: Graphics Fancy, Render Distance 10, Simulation 8, Biome Blend 2, Mip
 7. Fire Rekindled
 8. Bushy Pink Petals, Wildflowers & Leaf Litter
 
+#### 5. Chunky — World Pregeneration
+
+Run before exploring beyond your spawn area to avoid exploration stutter.
+
+```
+/chunky radius 5000
+/chunky start
+```
+
+Let it finish (~15-30 minutes). Check progress with `/chunky status`. The world border expands as chunks generate. Set `"continue-on-restart": true` in `config/chunky/config.json` before you start — this auto-resumes the task every time you load the world, so you can close the game and it picks up where it left off.
+
 ---
 
 ### Performance Mods — Install and Forget
@@ -363,6 +375,36 @@ Keeps chunks loaded when you're far away or in another dimension.
 4. Other dimensions — Single per outpost
 
 No performance concern with a dozen loaders on a modern CPU.
+
+---
+
+#### Chunky — World Pregenerator
+
+Chunky pregenerates chunks so your world has no exploration stutter, lag spikes from new terrain, or Distant Horizons LOD gaps. Run once per world before serious play.
+
+**First world setup**:
+
+Open chat (`T`) and run:
+
+```
+/chunky radius 5000
+/chunky start
+```
+
+This generates a 5000-block radius circle around your spawn point. On a modern CPU with NoisiumForked, this takes ~15-30 minutes. The world border expands as it works — you'll see chunk count progress in chat. Let it finish before exploring far from spawn.
+
+**Checking status**: `/chunky status` shows progress, speed, estimated time remaining.
+
+**Pausing/resuming**: `/chunky pause` and `/chunky continue`.
+
+**Continue on Restart**: If you pause or leave a generation task running, Chunky can resume automatically every time you load the world. To enable this, edit `config/chunky/config.json`:
+
+```
+"continue-on-restart": false → true
+```
+
+Any active task will now resume by itself whenever you open the world. This is the recommended approach for single-player — the task resumes the moment you load the world, no manual `/chunky continue` needed.
+
 
 ---
 

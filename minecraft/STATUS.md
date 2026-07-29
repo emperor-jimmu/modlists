@@ -199,7 +199,7 @@
 - [x] TFMG Energy Converter (Wave 1 — Create Addons) + Kotlin for Forge dep — crash was missing Kotlin stdlib, fixed
 
 ### Added Mods (Jul 2026 batch 12 — Mod Review)
-- [x] Chunky (Forge/NeoForge) (Wave 0 — Infrastructure) — world pregenerator, `/chunky` commands, zero dependencies, complements NoisiumForked and Distant Horizons. Documented in GETTING-STARTED.md as one-time setup step.
+- [x] Chunky (Forge/NeoForge) (Wave 0 — Infrastructure) — world pregenerator, `/chunky` commands, zero dependencies, complements NoisiumForked and Distant Horizons. Documented in GUIDE.md §Infrastructure with continue-on-restart config and first-launch checklist entry.
 
 ### Added Mods (Jul 2026 batch 13)
 - [x] Mekanism Tools (Wave 1 — Mekanism Addons) — armor/shields/tools/paxels for Osmium, Bronze, Refined Obsidian, Refined Glowstone, Steel. Fills gear progression gap between netherite and MekaSuit. Official Mekanism addon. Apotheosis affixes apply to its gear.
