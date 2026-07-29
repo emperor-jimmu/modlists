@@ -18,6 +18,8 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 | [Males Of Skyrim by zzjay](https://www.nexusmods.com/skyrimspecialedition/mods/37485)                         | Alternative | Broad male coverage.                                              |
 | [The Wolven Widow — SerketHetyt's Elisif Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/62209) | Alternative | Single-NPC overhaul (Elisif).                                     |
 | [Val Serano - Another Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/168735)                | Alternative | Single-NPC replacer for Val Serano (Pirate Quest Follower).        |
+| [Fura Bloodmouth DF Edit SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/171382)          | Alternative | Single-NPC replacer for Fura Bloodmouth (CC Dead Man's Dread). SkyPatcher-based. Requires AE content. |
+| [Ysolda DF Edit SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/169910)                  | Alternative | Single-NPC replacer for Ysolda. SkyPatcher-based.                 |
 | [Pride of Skyrim — AIO Male HPH Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/48904)          | Alternative | ~400 male NPCs with High Poly Head. Broad coverage.               |
 | [BeastHHBB](https://www.nexusmods.com/skyrimspecialedition/mods/38480)                                       | Alternative | Khajiit and Argonian NPC/PC replacer — player character, NPCs, adoptable children, Interesting NPCs integration, fangs. |
 | [Bijin Wives SE](https://www.nexusmods.com/skyrimspecialedition/mods/11247)                                  | Alternative | Female NPC replacer for wives and selected NPCs.                   |

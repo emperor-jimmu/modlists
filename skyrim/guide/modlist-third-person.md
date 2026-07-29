@@ -115,6 +115,13 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ---
 
+## Dragon Mounted Controls
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Intuitive Dragon Ride Control](https://www.nexusmods.com/skyrimspecialedition/mods/64679) | Baseline | Full dragon flight control — camera-based movement, combat, fast travel, perching. Native gamepad support, no dTry needed. Integrates with TDM (patch 160556) and TrueHUD. Requires SKSE, Po3 Tweaks, Address Library (all → `Foundations`). |
+
+---
+
 ## Third-Person Interactions: Lockpicking
 Gamepad-accessible lockpicking that works entirely in third-person without mouse input. Required by the design directive — every interaction must work in third-person with a gamepad.
 
