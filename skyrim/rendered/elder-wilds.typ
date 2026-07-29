@@ -357,16 +357,6 @@ iTintTextureResolution=2048
   [none],
   [dedicated patch/output mod if used],
   [Give it its own output mod once the final patcher set is known.],
-  [`BodySlide`],
-  [`BodySlide x64.exe`],
-  [none],
-  [dedicated body/output mod],
-  [Run through MO2 so mesh output respects the active profile and selected body stack.],
-  [`Pandora`],
-  [`Pandora Behaviour Engine Plus.exe`],
-  [none],
-  [dedicated behavior/output mod if needed],
-  [Run through MO2 so behavior generation sees the real virtualized animation stack.],
 )
 
 === MO2 Operating Rules
@@ -387,10 +377,6 @@ iTintTextureResolution=2048
 // -- guide/modlist-foundations.md --
 = Foundations and Compatibility
 <foundations-foundations-and-compatibility>
-
-*MO2 Separators:* `Foundations` → `Foundations - SKSE & Scripts`, `Foundations - Core Libraries`, `Foundations - Mesh & Texture Fixes`, `Foundations - Targeted Bugfixes`
-
-All mods in this section are installed into the appropriate `Foundations` sub-separators as noted per group.
 
 ---
 
@@ -761,8 +747,6 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 = Graphics Pipeline
 <graphics-graphics-pipeline>
 
-*MO2 Separator:* `Graphics`
-
 == Overview
 <graphics-pipeline-overview>
 
@@ -825,10 +809,6 @@ The pipeline is designed to be evaluated in order — each stage depends on the 
 = PGPatcher
 <graphics-pgpatcher-pgpatcher>
 
-*MO2 Separator:* `Graphics` → `Graphics - PGPatcher`
-
-All items in this section belong to the `Graphics - PGPatcher` MO2 separator unless noted.
-
 ---
 
 == PGPatcher Workflow
@@ -876,10 +856,6 @@ PGPatcher is a post-installation patcher that generates parallax and PBR-compati
 // -- guide/modlist-graphics-shaders.md --
 = Community Shaders
 <graphics-shaders-community-shaders>
-
-*MO2 Separator:* `Graphics` → `Graphics - Community Shaders`
-
-All mods in this section belong to the `Graphics - Community Shaders` MO2 separator unless a different one is noted.
 
 ---
 
@@ -1134,10 +1110,6 @@ Open research for the graphics pipeline is tracked in `TODO.md`.
 = Textures & Meshes
 <graphics-textures-textures--meshes>
 
-*MO2 Separator:* `Graphics` → `Graphics - Textures & Meshes`
-
-All mods in this section belong to the `Graphics - Textures & Meshes` MO2 separator unless a different one is noted.
-
 ---
 
 == Mesh Improvements And Parallax Support
@@ -1169,6 +1141,23 @@ Improve shape quality and silhouette readability without creating an unmaintaina
   [Collision geometry fix. Requires XEMI Utility.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/109414")[Flame VFX Edit]],
   [Mesh-only fire spell effect improvement. CS-compatible.],
+)
+
+=== Weapon Mesh Improvements
+<textures--meshes-weapon-mesh-improvements>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 5pt),
+  fill: (x, y) => if y == 0 { rgb("#1E293B") } else if calc.rem(y - 1, 2) == 0 { rgb("#F8FAFC") } else { none },
+  stroke: 0.5pt + rgb("#CBD5E1"),
+  [*#text(fill: white)[Mod]*],
+  [*#text(fill: white)[Description]*],
+  table.hline(stroke: 0.75pt + rgb("#94A3B8")),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2017")[LeanWolf's Better-Shaped Weapons]],
+  [Upgraded vanilla weapon silhouettes and mesh shapes. Stacks with weapon retextures and Heavy Armory.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147965")[Imperial Gladius — Imperial Sword Replacer]],
+  [Replaces vanilla Imperial Sword model. Single mesh replacer.],
 )
 
 === Doors, Walls & Structures
@@ -1767,10 +1756,6 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 = Lighting
 <graphics-lighting-lighting>
 
-*MO2 Separator:* `Graphics` → `Graphics - Lighting`
-
-All mods in this section belong to the `Graphics - Lighting` MO2 separator unless noted.
-
 ---
 
 == Lighting Overhaul Strategy
@@ -1880,10 +1865,6 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 // -- guide/modlist-graphics-weather.md --
 = Weather & Water
 <graphics-weather-weather--water>
-
-*MO2 Separator:* `Graphics` → `Graphics - Weather & Water`
-
-All mods in this section belong to the `Graphics - Weather & Water` MO2 separator unless noted.
 
 == Weather And Atmosphere
 <weather--water-weather-and-atmosphere>
@@ -2102,10 +2083,6 @@ The cosmic visual layer: night-sky stars, aurora rendering, sky-dome enhancement
 // -- guide/modlist-graphics-terrain.md --
 = Terrain & Flora
 <graphics-terrain-terrain--flora>
-
-*MO2 Separator:* `Graphics` → `Graphics - Terrain & Flora`
-
-All mods in this section belong to the `Graphics - Terrain & Flora` MO2 separator unless noted.
 
 == Terrain, Roads, And Snow
 <terrain--flora-terrain-roads-and-snow>
@@ -2452,10 +2429,6 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 = Characters & Creatures
 <graphics-characters-characters--creatures>
 
-*MO2 Separator:* `Graphics` → `Graphics - Characters & Creatures`
-
-All mods in this section belong to the `Graphics - Characters & Creatures` MO2 separator unless noted.
-
 == Character, Skin, And Creature Visuals
 <characters--creatures-character-skin-and-creature-visuals>
 Baseline visual treatment for player bodies, skin textures, and common creature visuals before NPC-specific overhauls are chosen. Target: grounded modern look that holds up in third person without drifting into overly glossy, doll-like, or hyper-stylized presentation.
@@ -2631,10 +2604,6 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
   [*#text(fill: white)[Mod]*],
   [*#text(fill: white)[Notes]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77073")[Immersive Fur Garments]],
-  [New fur garments to leveled lists.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82177")[Immersive Fur Garments — SPID]],
-  [SPID distribution addon (ESL-flagged). Install base mod (delete .esp) + SPID addon.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175319")[Faultier's PBR Armors and Clothes] (2.9 GB)],
   [Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4703")[RUSTIC CLOTHING — SE]],
@@ -2647,8 +2616,6 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
   [Higher-quality robe textures for all vanilla robes.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/123738")[Divine Crusader Retexture SE]],
   [Retexture of Divine Crusader armor set.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112481")[Nirn Necessities — SMP Accessories]],
-  [SMP-physics clothing accessories. Add #link("https://www.nexusmods.com/skyrimspecialedition/mods/135807")[PBR patch] if using CS PBR.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35382")[aMidianBorn Book of Silence SE]],
   [Comprehensive armor/weapon/dragon retexture. 207K endorsements.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35390")[aMidianBorn Content Addon]],
@@ -2661,8 +2628,6 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
   [Body refit for Resurgence Armory armors.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142450")[HDT-SMP Vanilla Armors]],
   [Adds HDT-SMP physics to all vanilla armors.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141700")[Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla]],
-  [Armor set with CBBE 3BA / HIMBO support. Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline.],
 )
 
 ---
@@ -2800,10 +2765,6 @@ Visual upgrades to in-world skeleton and bone assets: skulls, bone piles, skelet
 // -- guide/modlist-graphics-lod.md --
 = LOD & Distant Detail
 <graphics-lod-lod--distant-detail>
-
-*MO2 Separator:* `Graphics` → `Graphics - LOD & Distant Detail`
-
-All items in this section belong to the `Graphics - LOD & Distant Detail` MO2 separator unless noted.
 
 == LOD Generation And Distant Detail
 <lod--distant-detail-lod-generation-and-distant-detail>
@@ -3039,10 +3000,6 @@ Rebuild seasonal LOD whenever the underlying terrain, tree, or landscape seasona
 // -- guide/modlist-ui.md --
 = Modernized UI
 <ui-modernized-ui>
-
-*MO2 Separators:* `UI - Framework & HUD`, `UI - Inventory & Items`, `UI - Map, Dialogue, Menus`
-
-All mods in this section belong to one of the three UI separators as noted per subsection.
 
 ---
 
@@ -3591,10 +3548,6 @@ Open research for the UI stack is tracked in `TODO.md`.
 // -- guide/modlist-animations.md --
 = Animations and Movement
 <animations-animations-and-movement>
-
-*MO2 Separators:* `Animations - Framework`, `Animations - Movement & Idles`, `Animations - Combat`, `Animations - Interactions & Traversal`, `Animations - Creatures`
-
-All mods in this section belong to one of the five animation separators as noted per subsection.
 
 ---
 
@@ -4542,10 +4495,6 @@ Open research for the animations stack is tracked in `TODO.md`.
 = Third-Person Gameplay
 <third-person-third-person-gameplay>
 
-*MO2 Separators:* `Third-Person - Camera & Movement`, `Third-Person - Combat & Targeting`, `Third-Person - Mounted`
-
-All mods in this section belong to one of the three third-person separators as noted per subsection.
-
 ---
 
 == Third-Person Camera Framework
@@ -4780,8 +4729,6 @@ Open research for the third-person stack is tracked in `TODO.md`.
 = Expanded Systems
 <expanded-systems-expanded-systems>
 
-*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`
-
 == Overview
 <expanded-systems-overview>
 
@@ -4838,12 +4785,6 @@ The system is designed to be evaluated in order — progression choices (races, 
 // -- guide/modlist-expanded-character.md --
 = Character & Progression
 <expanded-character-character--progression>
-
-*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Character & Progression`
-
-All mods in this section belong to the `Expanded Systems - Character & Progression` MO2 separator unless noted.
-
-Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -5340,12 +5281,6 @@ Settings tuned for the adopted combination: power fantasy XP pace, high level ca
 = Magic & Perks
 <expanded-magic-magic--perks>
 
-*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Magic & Perks`
-
-All mods in this section belong to the `Expanded Systems - Magic & Perks` MO2 separator unless noted.
-
-Part of the @expanded-systems-expanded-systems section.
-
 ---
 
 == Perk Overhaul Compatibility
@@ -5512,12 +5447,6 @@ How Skyrim's detection system should be recalibrated for modern stealth mechanic
 = Survival & Needs
 <expanded-survival-survival--needs>
 
-*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Survival & Needs`
-
-All mods in this section belong to the `Expanded Systems - Survival & Needs` MO2 separator unless noted.
-
-Part of the @expanded-systems-expanded-systems section.
-
 ---
 
 == Survival Systems
@@ -5683,12 +5612,6 @@ What happens when the player falls in combat. Goal: add consequence and narrativ
 // -- guide/modlist-expanded-crafting.md --
 = Crafting & Economy
 <expanded-crafting-crafting--economy>
-
-*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Crafting & Economy`
-
-All mods in this section belong to the `Expanded Systems - Crafting & Economy` MO2 separator unless noted.
-
-Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -6035,12 +5958,6 @@ Weapon packs, armor packs, artifacts, and clothing content have been consolidate
 // -- guide/modlist-expanded-followers.md --
 = Followers & Reputation
 <expanded-followers-followers--reputation>
-
-*MO2 Separator:* `Expanded Systems` → `Expanded Systems - Followers & Reputation`
-
-All mods in this section belong to the `Expanded Systems - Followers & Reputation` MO2 separator unless noted.
-
-Part of the @expanded-systems-expanded-systems section.
 
 ---
 
@@ -6427,10 +6344,6 @@ When two sections make picks that would push the list toward different combinati
 = Immersive Scale and World Feel
 <world-feel-immersive-scale-and-world-feel>
 
-*MO2 Separators:* `World Feel` → `World Feel - Timescale & Travel`, `World Feel - Soundscapes`, `World Feel - Nights & Wildlife`, `World Feel - Cities & Landmarks`
-
-All mods in this section belong to one of the four world-feel separators as noted per subsection.
-
 ---
 
 == Timescale And Calendar Adjustments
@@ -6746,10 +6659,6 @@ Open research for the world-feel stack is tracked in `TODO.md`.
 // -- guide/modlist-world-content.md --
 = World Content
 <world-content-world-content>
-
-*MO2 Separators:* `World Content` → `World Content - Overhauls`, `World Content - Quests`, `World Content - Homes & Bases`, `World Content - Underwater`
-
-All mods in this section belong to one of the four world-content separators as noted per subsection.
 
 ---
 
@@ -7730,12 +7639,6 @@ Undeath adds a necromancy-themed questline that lets the player become a Lich. N
 = NPCs
 <npcs-npcs>
 
-*MO2 Separators:* `NPCs` → `NPCs - Appearance`, `NPCs - Population`, `NPCs - Followers`
-
-All mods in this section belong to one of the three NPC separators as noted per subsection.
-
-> Creature/enemy content moved to → @creatures-enemies--creatures.
-
 ---
 
 == NPC Appearance Overhauls
@@ -8327,12 +8230,6 @@ Open research for the NPCs stack is tracked in `TODO.md`.
 = Enemies & Creatures
 <creatures-enemies--creatures>
 
-*MO2 Separator:* `Enemies & Creatures`
-
-All mods in this section belong to the `Enemies & Creatures` MO2 separator.
-
-> NPC-specific content → @npcs-npcs.
-
 ---
 
 == Enemy Variety
@@ -8630,10 +8527,6 @@ Open research for this section is tracked in `TODO.md`.
 = Weapons & Armor
 <weapons-armor-weapons--armor>
 
-*MO2 Separators:* `Weapons & Armor` → `Weapons & Armor – Weapons`, `Weapons & Armor – Armor`, `Weapons & Armor – Artifacts`, `Weapons & Armor – Clothing & Wardrobe`
-
-All mods in this section belong to one of the four weapons-and-armor separators as noted per subsection.
-
 ---
 
 == Weapon Pack Additions
@@ -8676,10 +8569,6 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
   [*#text(fill: white)[Dial]*],
   [*#text(fill: white)[Notes]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/2017")[LeanWolf's Better-Shaped Weapons]],
-  [Alternative],
-  [#1, #2, #3, #4],
-  [Upgraded vanilla weapon silhouettes. Stacks with Heavy Armory.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/8273")[Legendary Skyrim Crossbows and Bows]],
   [Alternative],
   [#1, #4],
@@ -8724,10 +8613,6 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
   [Alternative],
   [#1, #4],
   [Unique 1H vampire sword. Animated textures, bleed mechanics, Vampire Lord +30% dmg. Fits grim-dark.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147965")[Imperial Gladius — Imperial Sword Replacer]],
-  [Alternative],
-  [all],
-  [Replaces vanilla Imperial Sword model. Single mesh replacer.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/115856")[Ivory Bow SE]],
   [Alternative],
   [#1, #4],
@@ -9042,6 +8927,9 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159950")[More ChakraSSE Armor HIMBO Refits]],
   [HIMBO/BodySlide refits for Armor of Alessia, Nightstalker Nazir, Nordic Brute, Drake Knight, Armor of Hermaeus Mora.],
   [Install per-armor, overwrite originals. Requires each base mod + BodySlide + HIMBO. 55 endorsements.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141700")[Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla]],
+  [Armor set with CBBE 3BA / HIMBO support.],
+  [Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline.],
 )
 
 === Risks & Compatibility
@@ -9174,6 +9062,18 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
   [Alternative],
   [all],
   [Curated boutique clothing. Cut if it pulls toward boutique-fantasy wardrobe.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77073")[Immersive Fur Garments]],
+  [Alternative],
+  [all],
+  [New fur garments to leveled lists. SPID addon below.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/82177")[Immersive Fur Garments — SPID]],
+  [Add-on],
+  [all],
+  [SPID distribution addon (ESL-flagged). Install base mod (delete .esp) + SPID addon.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112481")[Nirn Necessities — SMP Accessories]],
+  [Alternative],
+  [all],
+  [SMP-physics clothing accessories. PBR patch (#link("https://www.nexusmods.com/skyrimspecialedition/mods/135807")[135807]) if using CS PBR. Requires FSMP.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6369")[Cloaks of Skyrim]],
   [Alternative],
   [all],
@@ -9239,10 +9139,6 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 // -- guide/modlist-audio.md --
 = Audio and Feedback
 <audio-audio-and-feedback>
-
-*MO2 Separators:* `Audio` → `Audio - Music`, `Audio - SFX & Ambience`
-
-All mods in this section belong to one of the two audio separators as noted per subsection.
 
 ---
 
@@ -9422,12 +9318,6 @@ Environmental soundscapes, creature ambient sounds, and weather audio to reinfor
 = Survival, Difficulty, and Balance
 <survival-combat-survival-difficulty-and-balance>
 
-*MO2 Separators:* `Survival & Combat` → `Survival & Combat - Difficulty & Lethality`, `Survival & Combat - Enemy AI`, `Survival & Combat - Resources & Injuries`
-
-All mods in this section belong to one of the three survival/combat separators as noted per subsection.
-
-*#1 picks locked:* Arena, Simply Balanced, Less Sniperlike NPCs (restrained AI route), Stress and Fear + Light the Way + Bathing patch, Know Your Enemy 2.
-
 ---
 
 == Difficulty Framework
@@ -9573,10 +9463,6 @@ Environmental damage layers that make fire, traps, and dungeon hazards genuinely
 // -- guide/modlist-lotd.md --
 = Legacy of the Dragonborn
 <lotd-legacy-of-the-dragonborn>
-
-*MO2 Separator:* `Legacy of the Dragonborn`
-
-All items in this section belong to the `Legacy of the Dragonborn` MO2 separator.
 
 ---
 
@@ -9731,10 +9617,6 @@ Treated as a foundational content pillar for the final list, not a late optional
 // -- guide/modlist-adult.md --
 = Adult Content
 <adult-adult-content>
-
-*MO2 Separator:* `Adult Content`
-
-All mods in this section belong to the `Adult Content` MO2 separator unless noted.
 
 ---
 
@@ -9940,10 +9822,6 @@ Pregnancy, childbirth, family systems, and child NPC overhauls. These mods form 
 = Main Character Voicing
 <voicing-main-character-voicing>
 
-*MO2 Separator:* `Voicing`
-
-All mods in this section belong to the `Voicing` MO2 separator.
-
 ---
 
 == Framework Overview
@@ -10103,8 +9981,6 @@ Repeat Steps 2–4 with the other voice target and ElevenLabs voice ID (Laura Ba
 = Performance and Technical Workflow
 <performance-performance-and-technical-workflow>
 
-*MO2 Separator:* `Performance`
-
 == Overview
 <performance-and-technical-workflow-overview>
 
@@ -10161,12 +10037,6 @@ This section owns the performance budgeting, optimization discipline, generated-
 // -- guide/modlist-performance-strategy.md --
 = Performance Strategy
 <performance-strategy-performance-strategy>
-
-*MO2 Separators:* `Performance` → `Performance - Strategy`
-
-All items in this section belong to the `Performance` MO2 separator.
-
-Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -10247,12 +10117,6 @@ CPU and Papyrus pressure comes from layered systems, NPC density, polling script
 // -- guide/modlist-performance-optimization.md --
 = Optimization & Configuration
 <performance-optimization-optimization--configuration>
-
-*MO2 Separators:* `Performance` → `Performance - Optimization & Configuration`
-
-All items in this section belong to the `Performance` MO2 separator.
-
-Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -10349,12 +10213,6 @@ Run through MO2 targeting the active profile INIs.
 // -- guide/modlist-performance-tools.md --
 = Tool Pipeline
 <performance-tools-tool-pipeline>
-
-*MO2 Separators:* `Performance` → `Performance - Tool Pipeline`
-
-All items in this section belong to the `Performance` MO2 separator.
-
-Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -10471,12 +10329,6 @@ Neither requires ongoing configuration or conflict maintenance once installed.
 // -- guide/modlist-performance-patches.md --
 = Bashed Patch & Synthesis Configuration
 <performance-patches-bashed-patch--synthesis-configuration>
-
-*MO2 Separators:* `Performance` → `Performance - Bashed Patch & Synthesis`
-
-All items in this section belong to the `Performance` MO2 separator.
-
-Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
@@ -11158,12 +11010,6 @@ The full rebuild order for the generated pipeline. Stages after `SSEEdit` can be
 // -- guide/modlist-performance-testing.md --
 = Testing & Maintenance
 <performance-testing-testing--maintenance>
-
-*MO2 Separators:* `Performance` → `Performance - Testing & Maintenance`
-
-All items in this section belong to the `Performance` MO2 separator.
-
-Part of the @performance-performance-and-technical-workflow section.
 
 ---
 
