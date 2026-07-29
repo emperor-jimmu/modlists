@@ -1,0 +1,8 @@
+# Dark Mode Everywhere — Client Config
+# Shader-based dark mode for all GUIs. Toggle in-game via button (bottom-left of any GUI).
+# Default darkness level: 1 (medium). Change to 0 (light), 1 (medium), or 2 (full dark).
+darkModeLevel = 1
+
+# Dump rendered GUI methods to log every 5 seconds for debugging shader blacklist issues.
+# Enable temporarily if a GUI looks broken, then disable.
+methodShaderDump = false

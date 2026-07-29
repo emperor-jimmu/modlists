@@ -1,0 +1,1349 @@
+{
+  "id": "200000F5",
+  "group": "20000001",
+  "order_index": 1,
+  "title": "Mekanism",
+  "subtitle": "Industrial-scale ore processing and power generation",
+  "icon": "mekanism:metallurgic_infuser",
+  "default_quest_shape": "hexagon",
+  "quests": [
+    {
+      "id": "2000007B",
+      "title": "Power Generation",
+      "subtitle": "Heat Generator — Your First FE Source",
+      "description": [
+        "FE (Forge Energy) is the universal power unit — 1 FE equals 1 RF equals 1 IF.",
+        "Mekanism machines consume FE",
+        "Heat Generators produce FE passively: surround with lava on all sides (passive mode) or insert burnable fuel (active mode)",
+        "No moving parts, no maintenance",
+        "Your first FE source."
+      ],
+      "icon": "mekanism:heat_generator",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000078",
+          "type": "item",
+          "item": "mekanism:heat_generator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000079",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "2000007A",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000007F",
+      "title": "Basic Metallurgy",
+      "subtitle": "Metallurgic Infuser — Alloys and Circuits",
+      "description": [
+        "The Infuser combines a base material with an infuse type.",
+        "Key recipes: Iron + Redstone = Enriched Alloy (infused with redstone)",
+        "Iron + Coal/Charcoal = Steel (infused with carbon)",
+        "Enriched Alloy + Redstone = Basic Control Circuit",
+        "These two items — Enriched Alloy and Basic Control Circuit — are used in every Mekanism machine",
+        "Stockpile them."
+      ],
+      "icon": "mekanism:metallurgic_infuser",
+      "x": 0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000007B"
+      ],
+      "tasks": [
+        {
+          "id": "2000007C",
+          "type": "item",
+          "item": "mekanism:metallurgic_infuser",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000007D",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "2000007E",
+          "type": "item",
+          "item": "mekanism:enriched_alloy",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000084",
+      "title": "Ore Doubling",
+      "subtitle": "Enrichment Chamber and Energized Smelter",
+      "description": [
+        "The first step in Mekanism ore processing.",
+        "Chain: Enrichment Chamber (ore to 2 dust) to Energized Smelter (dust to ingot)",
+        "1 iron ore produces 2 ingots — doubled output from every ore you mine",
+        "Mekanism's ore processing scales up to 5x at endgame.",
+        "Tip: Connect Enrichment Chamber output directly to Energized Smelter input with Mekanism Logistical Transporters or Create Belts for a continuous 2x processing line. No manual item transfer."
+      ],
+      "icon": "mekanism:enrichment_chamber",
+      "x": 0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000007F"
+      ],
+      "tasks": [
+        {
+          "id": "20000080",
+          "type": "item",
+          "item": "mekanism:enrichment_chamber",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "20000081",
+          "type": "item",
+          "item": "mekanism:energized_smelter",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000082",
+          "type": "xp_levels",
+          "xp_levels": 5
+        },
+        {
+          "id": "20000083",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000089",
+      "title": "Atmospheric Suit",
+      "subtitle": "Scuba Gear and Free Runners",
+      "description": [
+        "Pre-MekaSuit environmental protection.",
+        "Scuba Mask (water breathing, replaces helmet)",
+        "Scuba Tank (oxygen storage — craft multiple, swap when depleted)",
+        "Free Runners (step assist and fall damage reduction, replaces boots)",
+        "All three work with Apotheosis affixes — they roll rarity and stat bonuses like any other gear.",
+        "Tip: Scuba Tanks stack in your inventory — carry 3-4 tanks on long underwater expeditions and swap when one depletes. The Scuba Mask works in any fluid, including Stellaris oil pools."
+      ],
+      "icon": "mekanism:scuba_mask",
+      "x": 0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000084"
+      ],
+      "tasks": [
+        {
+          "id": "20000085",
+          "type": "item",
+          "item": "mekanism:scuba_mask",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "20000086",
+          "type": "item",
+          "item": "mekanism:scuba_tank",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000087",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "20000088",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000008D",
+      "title": "Material Tiers",
+      "subtitle": "Osmium Gear — Your First Mekanism Tools",
+      "description": [
+        "Mekanism Tools adds armor, weapons, and tools at every Mekanism material tier.",
+        "Progression: Osmium (better than iron) to Refined Glowstone (damage-focused) to Bronze (better than diamond) to Refined Obsidian (better than netherite) to the endgame MekaSuit",
+        "Apotheosis affixes apply to all Mekanism Tools gear — your loot chase starts with Osmium."
+      ],
+      "icon": "mekanismtools:osmium_pickaxe",
+      "x": 0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000084"
+      ],
+      "tasks": [
+        {
+          "id": "2000008A",
+          "type": "item",
+          "item": "mekanismtools:osmium_chestplate",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000008B",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "2000008C",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000091",
+      "title": "Energy Storage",
+      "subtitle": "Basic Energy Cube — 1.6 MFE Buffer",
+      "description": [
+        "FE generators run constantly but machines consume in bursts.",
+        "Energy Cubes act as a buffer — store excess FE during low demand, release during spikes",
+        "Basic Energy Cube stores 1.6 MFE (1.6 million FE)",
+        "Upgrade path: Basic to Advanced to Elite to Ultimate — each tier exponentially increases capacity and transfer rate.",
+        "Tip: Energy Cubes charge and discharge simultaneously — connect a generator to one face and machines to another. The cube buffers FE while both produce and consume."
+      ],
+      "icon": "mekanism:basic_energy_cube",
+      "x": 0,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000007B"
+      ],
+      "tasks": [
+        {
+          "id": "2000008E",
+          "type": "item",
+          "item": "mekanism:basic_energy_cube",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000008F",
+          "type": "xp_levels",
+          "xp_levels": 5
+        },
+        {
+          "id": "20000090",
+          "type": "item",
+          "item": "mekanism:energy_tablet",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000096",
+      "title": "Portable Power",
+      "subtitle": "Energy Tablet and Chargepad",
+      "description": [
+        "Energy Tablet stores FE in your inventory.",
+        "Charge it at any FE source (hold right-click while looking at a generator or cube)",
+        "Right-click a machine with the tablet to transfer FE — jumpstart machines without running cables",
+        "Chargepad: place on floor, stand on it to charge all FE items in your inventory and armor slots",
+        "Place under your AE2 terminal for automatic top-up.",
+        "Tip: Place a Chargepad directly under your AE2 Terminal. Every time you open your inventory at the terminal, your Energy Tablet, Atomic Disassembler, and Mekanism Tools armor recharge automatically."
+      ],
+      "icon": "mekanism:energy_tablet",
+      "x": 0,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000091"
+      ],
+      "tasks": [
+        {
+          "id": "20000092",
+          "type": "item",
+          "item": "mekanism:energy_tablet",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "20000093",
+          "type": "item",
+          "item": "mekanism:chargepad",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000094",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "20000095",
+          "type": "item",
+          "item": "mekanism:energy_tablet",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000009A",
+      "title": "Atomic Disassembler",
+      "subtitle": "The Last Tool You Will Ever Craft",
+      "description": [
+        "Mekanism's ultimate multi-tool replaces: pickaxe (all ores, even obsidian), axe, shovel, hoe, sword, and shears.",
+        "Modes toggle with shift-right-click: Normal (all blocks), Slow (precise — only targeted block), Fast (maximum speed), Vein (breaks connected ore blocks in a cluster — match the Digital Miner filter)",
+        "Runs on FE — keep a charged Energy Tablet in your inventory.",
+        "Tip: Vein mode breaks ALL connected ore blocks in a single click — pair with the Digital Miner's ore filter to know which vein types exist underground. Ore tripling + vein mining = stacks of ingots per click."
+      ],
+      "icon": "mekanism:atomic_disassembler",
+      "x": 0,
+      "y": 7,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000096"
+      ],
+      "tasks": [
+        {
+          "id": "20000097",
+          "type": "item",
+          "item": "mekanism:atomic_disassembler",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000098",
+          "type": "xp_levels",
+          "xp_levels": 7
+        },
+        {
+          "id": "20000099",
+          "type": "item",
+          "item": "mekanism:energy_tablet",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000009E",
+      "title": "Steel Casing",
+      "subtitle": "Mid-Tier Machine Component",
+      "description": [
+        "Steel = coal-infused iron processed in the Metallurgic Infuser.",
+        "Steel Casings are the structural housing for every mid-tier Mekanism machine",
+        "You will craft dozens — set up automated steel production early."
+      ],
+      "icon": "mekanism:steel_casing",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000009B",
+          "type": "item",
+          "item": "mekanism:steel_casing",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000009C",
+          "type": "xp_levels",
+          "xp_levels": 1
+        },
+        {
+          "id": "2000009D",
+          "type": "item",
+          "item": "mekanism:steel_casing",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000A1",
+      "title": "Configurator",
+      "subtitle": "Mekanism Wrench",
+      "description": [
+        "Shift-right-click to instantly remove a machine (keeps its contents and upgrades).",
+        "Right-click on a machine face to cycle its side configuration — input (blue), output (orange), power (green), or none",
+        "Essential for pipe and cable management."
+      ],
+      "icon": "mekanism:configurator",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000009F",
+          "type": "item",
+          "item": "mekanism:configurator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000A0",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000A4",
+      "title": "Gas-Burning Generator",
+      "subtitle": "Ethylene Power Plant",
+      "description": [
+        "Burns ethylene gas for high-output FE.",
+        "Hydrogen from water electrolysis + Bio Fuel from plant matter creates ethylene in a Pressurized Reaction Chamber (Phase 2)",
+        "More efficient than Heat Generators",
+        "Use when you have excess hydrogen production."
+      ],
+      "icon": "mekanism:gas_burning_generator",
+      "x": 1.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000A2",
+          "type": "item",
+          "item": "mekanism:gas_burning_generator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000A3",
+          "type": "xp_levels",
+          "xp_levels": 2
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000A8",
+      "title": "Purification Chamber",
+      "subtitle": "3x Ore Processing Step",
+      "description": [
+        "Step 1 of 3x ore processing: Purification Chamber converts ore into 3 clumps using oxygen gas.",
+        "Chain: Purification Chamber to Crusher to Enrichment Chamber to Energized Smelter",
+        "1 ore becomes 3 ingots — 50 percent more than 2x."
+      ],
+      "icon": "mekanism:purification_chamber",
+      "x": 1.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000A5",
+          "type": "item",
+          "item": "mekanism:purification_chamber",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000A6",
+          "type": "xp_levels",
+          "xp_levels": 2
+        },
+        {
+          "id": "200000A7",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000AB",
+      "title": "Teleporter",
+      "subtitle": "Cross-Base Fast Travel",
+      "description": [
+        "Set a frequency, link two Teleporters — instant travel between them anywhere in the same dimension.",
+        "Costs FE per teleport based on distance",
+        "Use between distant factory districts, mining outposts, and colony perimeters."
+      ],
+      "icon": "mekanism:teleporter",
+      "x": 1.5,
+      "y": 4,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000A9",
+          "type": "item",
+          "item": "mekanism:teleporter",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000AA",
+          "type": "xp_levels",
+          "xp_levels": 2
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000AF",
+      "title": "Machine Upgrade System",
+      "subtitle": "Speed, Energy, and Filter Upgrades",
+      "description": [
+        "Every Mekanism machine has upgrade slots (bottom-right in GUI).",
+        "Speed Upgrades (red) = faster processing, more FE consumption",
+        "Energy Upgrades (green) = reduced FE consumption",
+        "Filter Upgrades (purple) = filter input/output items",
+        "Craft Factory Installers to add more upgrade slots to a machine."
+      ],
+      "icon": "mekanism:speed_upgrade",
+      "x": 1.5,
+      "y": 5,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000AC",
+          "type": "item",
+          "item": "mekanism:speed_upgrade",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000AD",
+          "type": "xp_levels",
+          "xp_levels": 1
+        },
+        {
+          "id": "200000AE",
+          "type": "item",
+          "item": "mekanism:speed_upgrade",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000B3",
+      "title": "Tiered Factories",
+      "subtitle": "Basic to Ultimate Machine Tiers",
+      "description": [
+        "Machines upgrade through tiers: Basic to Advanced to Elite to Ultimate.",
+        "An Ultimate Enrichment Chamber processes 7 items simultaneously in parallel slots",
+        "Upgrade using Factory Installer plus higher-tier casing",
+        "Ultimate-tier machines demand significant FE — do not upgrade past what your power grid can supply."
+      ],
+      "icon": "mekanism:ultimate_control_circuit",
+      "x": 1.5,
+      "y": 6,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000B0",
+          "type": "item",
+          "item": "mekanism:ultimate_control_circuit",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000B1",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "200000B2",
+          "type": "item",
+          "item": "mekanism:basic_control_circuit",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000B6",
+      "title": "Ore Tripling",
+      "subtitle": "3x Ore Processing Chain",
+      "description": [
+        "The 3x chain: Purification Chamber receives ore plus oxygen gas, outputs 3 clumps.",
+        "Clumps to Crusher to dirty dust",
+        "Dirty dust to Enrichment Chamber to dust",
+        "Dust to Energized Smelter to ingots",
+        "1 ore equals 3 ingots",
+        "Oxygen comes from water electrolysis — Electrolytic Separator splits water into hydrogen and oxygen.",
+        "Tip: Oxygen for the Purification Chamber comes from an Electrolytic Separator splitting water — also produces Hydrogen as a byproduct. Store Hydrogen for future Gas-Burning Generator fuel."
+      ],
+      "icon": "mekanism:purification_chamber",
+      "x": 3,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000084"
+      ],
+      "tasks": [
+        {
+          "id": "200000B4",
+          "type": "item",
+          "item": "mekanism:purification_chamber",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000B5",
+          "type": "xp_levels",
+          "xp_levels": 9
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000BA",
+      "title": "Thermal Evaporation Plant",
+      "subtitle": "Brine Production Multiblock",
+      "description": [
+        "Multiblock: Thermal Evaporation Block walls (minimum 3x3 base, up to 18 blocks tall) plus Thermal Evaporation Controller and Valve.",
+        "Place in a hot, dry biome (desert provides passive heat) or heat externally with a Resistive Heater",
+        "Input water through Valve",
+        "Output: brine",
+        "Brine enters Electrolytic Separator producing Chlorine and Sodium",
+        "Chlorine feeds Hydrogen Chloride production — essential for ore quintupling.",
+        "Tip: Build the plant in a Desert biome at maximum height (18 blocks tall). Desert passive heating eliminates the need for a Resistive Heater entirely — free brine production."
+      ],
+      "icon": "mekanism:thermal_evaporation_controller",
+      "x": 3,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000B6"
+      ],
+      "tasks": [
+        {
+          "id": "200000B7",
+          "type": "item",
+          "item": "mekanism:thermal_evaporation_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000B8",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "200000B9",
+          "type": "item",
+          "item": "mekanism:steel_casing",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000BE",
+      "title": "Chemical Factory",
+      "subtitle": "Integrated Chemical Processing Facility",
+      "description": [
+        "Build the complete chemical processing tree as a single integrated facility.",
+        "Primary line: Water to Electrolytic Separator (H2 and O2)",
+        "H2 plus Cl2 (from brine) in Chemical Infuser equals HCl (Hydrogen Chloride) feeding the Chemical Injection Chamber",
+        "Parallel line: Sulfur to Chemical Oxidizer (SO2)",
+        "SO2 plus O2 in Chemical Infuser equals SO3 (Sulfur Trioxide) feeding the Chemical Dissolution Chamber",
+        "Label your pipes or color-code them.",
+        "Tip: Use AE2 Smart Cables as pipe labels — place Smart Cable alongside each chemical pipe, name it in an anvil (Hydrogen Chloride, Sulfur Trioxide), and your pipe network becomes self-documenting."
+      ],
+      "icon": "mekanism:chemical_infuser",
+      "x": 3,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000BA"
+      ],
+      "tasks": [
+        {
+          "id": "200000BB",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000BC",
+          "type": "xp_levels",
+          "xp_levels": 11
+        },
+        {
+          "id": "200000BD",
+          "type": "item",
+          "item": "mekanism:steel_casing",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000C2",
+      "title": "Ore Quintupling",
+      "subtitle": "5x Ore Processing — 1 Ore Equals 5 Ingots",
+      "description": [
+        "The full 5x chain: Chemical Dissolution Chamber (ore plus Sulfuric Acid equals slurry) to Chemical Washer (water cleans slurry) to Chemical Crystallizer (cleaned slurry equals crystals) to Chemical Injection Chamber (crystals plus Hydrogen Chloride equals shards) to Purification Chamber to Crusher to Enrichment Chamber to Energized Smelter.",
+        "1 ore becomes 5 ingots",
+        "Sulfuric acid, hydrogen chloride, and water flow through pipes between every step.",
+        "Mekanism 5x ore processing multiplies your mining output. Connect your ore processing line to AE2 with Import/Export Buses for automatic ingot production — craft once, request forever."
+      ],
+      "icon": "mekanism:chemical_dissolution_chamber",
+      "x": 3,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000BE"
+      ],
+      "tasks": [
+        {
+          "id": "200000BF",
+          "type": "item",
+          "item": "mekanism:chemical_dissolution_chamber",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000C0",
+          "type": "xp_levels",
+          "xp_levels": 13
+        },
+        {
+          "id": "200000C1",
+          "type": "item",
+          "item": "mekanism:dust_refined_obsidian",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000C6",
+      "title": "Digital Miner",
+      "subtitle": "Automated Teleportation Mining",
+      "description": [
+        "The Digital Miner teleports blocks directly from the ground into its inventory.",
+        "Place it, connect FE, set a filter (ores* for all ores, or specific items), and activate",
+        "Configurable: mining radius (0 to 32 blocks), silk touch mode (mines ore blocks intact), replace mode (fills mined blocks with cobblestone to prevent cave-ins)",
+        "Range expands in all directions from the miner",
+        "The Digital Miner makes manual mining completely obsolete.",
+        "Tip: Set the miner to Silk Touch mode when targeting Apotheosis gem ores — gems drop in higher quantities from intact ore blocks. Use Fortune on the ore blocks afterward."
+      ],
+      "icon": "mekanism:digital_miner",
+      "x": 3,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000C2"
+      ],
+      "tasks": [
+        {
+          "id": "200000C3",
+          "type": "item",
+          "item": "mekanism:digital_miner",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000C4",
+          "type": "xp_levels",
+          "xp_levels": 11
+        },
+        {
+          "id": "200000C5",
+          "type": "item",
+          "item": "mekanism:ingot_osmium",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000CA",
+      "title": "Pressurized Reaction Chamber",
+      "subtitle": "Ethylene and HDPE Plastic Production",
+      "description": [
+        "The PRC combines fluids, gases, and solids into new products.",
+        "Key recipe: Water plus Hydrogen plus Bio Fuel (from crushing plant matter) yields Ethylene gas plus Substrate",
+        "Ethylene feeds Gas-Burning Generators at massive scale",
+        "Substrate processes into HDPE Pellets (plastic) — used in advanced Mekanism components and the MekaSuit",
+        "The PRC is your Phase 2 materials workhorse.",
+        "Tip: Bio Fuel for the PRC comes from crushing seeds, wheat, or potatoes in a Crusher. Use excess Farmer's Delight crop output — your kitchen feeds your chemical plant."
+      ],
+      "icon": "mekanism:pressurized_reaction_chamber",
+      "x": 3,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000BE"
+      ],
+      "tasks": [
+        {
+          "id": "200000C7",
+          "type": "item",
+          "item": "mekanism:pressurized_reaction_chamber",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000C8",
+          "type": "xp_levels",
+          "xp_levels": 11
+        },
+        {
+          "id": "200000C9",
+          "type": "item",
+          "item": "mekanism:hdpe_sheet",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000CE",
+      "title": "Induction Matrix",
+      "subtitle": "FE Megastorage — Billions of FE",
+      "description": [
+        "The Induction Matrix is a multiblock energy storage.",
+        "Build Induction Casing walls in any shape or size",
+        "Fill interior with Induction Cells (increase total stored FE) and Induction Providers (increase transfer rate in/out)",
+        "A small 4x4x4 matrix can hold billions of FE",
+        "The Induction Matrix is mandatory before building a Fission Reactor — the reactor produces at 7 MFE/t and needs somewhere to put it.",
+        "Tip: Build the matrix BENEATH your Fission Reactor with a direct cable connection. Reactor output at 7 MFE/t needs the shortest possible cable run to avoid FE loss."
+      ],
+      "icon": "mekanism:induction_casing",
+      "x": 3,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000C6"
+      ],
+      "tasks": [
+        {
+          "id": "200000CB",
+          "type": "item",
+          "item": "mekanism:induction_casing",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000CC",
+          "type": "xp_levels",
+          "xp_levels": 11
+        },
+        {
+          "id": "200000CD",
+          "type": "item",
+          "item": "mekanism:steel_casing",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000D1",
+      "title": "Seismic Surveying",
+      "subtitle": "Underground Mapping with Vibrator and Reader",
+      "description": [
+        "Seismic Vibrator sends shockwaves into the ground (place and power with FE).",
+        "Seismic Reader picks up reflected waves revealing underground structures: cave systems, lava pools, dense ore veins, dungeon structures",
+        "Move the vibrator to different locations and scan repeatedly",
+        "Use survey data to target your Digital Miner at the richest ore clusters."
+      ],
+      "icon": "mekanism:seismic_vibrator",
+      "x": 3,
+      "y": 7,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000C6"
+      ],
+      "tasks": [
+        {
+          "id": "200000CF",
+          "type": "item",
+          "item": "mekanism:seismic_vibrator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000D0",
+          "type": "xp_levels",
+          "xp_levels": 9
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000D5",
+      "title": "Fission Reactor",
+      "subtitle": "Nuclear Power — 7 MFE per Tick",
+      "description": [
+        "Multiblock: Fission Reactor Frame forms the walls.",
+        "Add Reactor Controller, Fission Fuel Assembly (holds fissile fuel rods), Control Rod Assembly (adjusts reaction rate)",
+        "Burns Fissile Fuel (uranium processed through the Isotopic Centrifuge)",
+        "Output: up to 7 MFE per tick at maximum burn rate",
+        "Safety critical: needs continuous coolant (water or sodium), proper control rod insertion, and blast-proof containment",
+        "Meltdowns are real — test isolated from your main base",
+        "Produces Nuclear Waste — store in Radioactive Waste Barrels only",
+        "Never break a barrel.",
+        "Tip: Build in a separate dimension or at least 64 blocks from your main base. A meltdown irradiates a large area permanently — the Aether or Twilight Forest dimensions make safe reactor sites since you do not live there."
+      ],
+      "icon": "mekanism:fission_reactor_controller",
+      "x": 3,
+      "y": 8,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000CE"
+      ],
+      "tasks": [
+        {
+          "id": "200000D2",
+          "type": "item",
+          "item": "mekanism:fission_reactor_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000D3",
+          "type": "xp_levels",
+          "xp_levels": 13
+        },
+        {
+          "id": "200000D4",
+          "type": "item",
+          "item": "mekanism:fissile_fuel",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000D8",
+      "title": "Boiler",
+      "subtitle": "Fission Heat to Steam",
+      "description": [
+        "Converts fission reactor heat into steam.",
+        "Feed steam into an Industrial Turbine for FE generation",
+        "Larger boiler equals more steam equals more FE",
+        "The boiler is the bridge between nuclear heat and usable electricity."
+      ],
+      "icon": "mekanism:boiler_casing",
+      "x": 4.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000D6",
+          "type": "item",
+          "item": "mekanism:boiler_casing",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000D7",
+          "type": "xp_levels",
+          "xp_levels": 4
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000DC",
+      "title": "Radiation Safety",
+      "subtitle": "Nuclear Waste Handling",
+      "description": [
+        "Nuclear waste emits radiation — continuous damage to players and mutation effects on nearby mobs.",
+        "Always store in Radioactive Waste Barrels",
+        "Process waste into Polonium via Solar Neutron Activator (requires direct sunlight, very slow — build multiple)",
+        "Radiation suit (Hazmat) provides protection",
+        "Never, under any circumstances, break a full waste barrel."
+      ],
+      "icon": "mekanism:waste_barrel",
+      "x": 4.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000D9",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000DA",
+          "type": "xp_levels",
+          "xp_levels": 4
+        },
+        {
+          "id": "200000DB",
+          "type": "item",
+          "item": "mekanism:hazmat_mask",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000DF",
+      "title": "Chemical Processing Chain",
+      "subtitle": "Complete Flowchart Reference",
+      "description": [
+        "Full Mekanism chemical tree: Water to Electrolytic Separator yields H2 and O2.",
+        "H2 plus Cl2 (from brine) yields HCl",
+        "S to SO2 to SO3",
+        "HCl and SO3 feed the ore quintupling line",
+        "Oxygen feeds the Purification Chamber",
+        "Hydrogen plus Bio Fuel yields Ethylene in the PRC",
+        "Map this on paper before building your pipe network — a wrong connection wastes hours."
+      ],
+      "icon": "mekanism:chemical_infuser",
+      "x": 4.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000DD",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000DE",
+          "type": "xp_levels",
+          "xp_levels": 7
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000E2",
+      "title": "Robit",
+      "subtitle": "Personal Robot Companion",
+      "description": [
+        "Mekanism's companion robot.",
+        "Follows you around, picks up dropped items, provides portable inventory and crafting table",
+        "Also functions as a mobile charger for Mekanism gear FE",
+        "Craft early — inventory cleanup alone makes Robit worthwhile."
+      ],
+      "icon": "mekanism:robit",
+      "x": 4.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000E0",
+          "type": "item",
+          "item": "mekanism:robit",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000E1",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000E6",
+      "title": "Fusion Reactor",
+      "subtitle": "200 MFE/t — The Ultimate Clean Energy",
+      "description": [
+        "Laser-initiated Deuterium-Tritium reaction.",
+        "Requires: massive Laser Amplifier array pointed at the reactor core, Deuterium production (from heavy water electrolysis), Tritium production (from Lithium processing in a Solar Neutron Activator), and precise temperature control",
+        "Output: approximately 200 MFE per tick at full operation",
+        "Zero radioactive waste",
+        "Self-sustaining once ignited — the reaction produces enough heat to continue fusing",
+        "Clean, infinite, endgame power."
+      ],
+      "icon": "mekanism:fusion_reactor_controller",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000D5"
+      ],
+      "tasks": [
+        {
+          "id": "200000E3",
+          "type": "item",
+          "item": "mekanism:fusion_reactor_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000E4",
+          "type": "xp_levels",
+          "xp_levels": 17
+        },
+        {
+          "id": "200000E5",
+          "type": "item",
+          "item": "mekanism:block_refined_obsidian",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000EA",
+      "title": "Quantum Entangloporter",
+      "subtitle": "Instant Wireless Across Any Dimension",
+      "description": [
+        "The ultimate logistics solution.",
+        "Craft two Quantum Entangloporters",
+        "Set them to the same frequency",
+        "Whatever items, fluids, gases, or FE enter one Entangloporter instantly appear at the other — across any distance, across any dimension",
+        "Mining outpost on Glacio feeds ore directly into your Earth processing line",
+        "No pipes spanning dimensions",
+        "No trains",
+        "No Quantum Bridge",
+        "Just instant teleportation",
+        "Gated behind Antimatter for good reason."
+      ],
+      "icon": "mekanism:quantum_entangloporter",
+      "x": 6,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000E6"
+      ],
+      "tasks": [
+        {
+          "id": "200000E7",
+          "type": "item",
+          "item": "mekanism:quantum_entangloporter",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000E8",
+          "type": "xp_levels",
+          "xp_levels": 17
+        },
+        {
+          "id": "200000E9",
+          "type": "item",
+          "item": "mekanism:block_refined_obsidian",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000EE",
+      "title": "SPS and MekaSuit",
+      "subtitle": "Supercritical Phase Shifter to Demigod Status",
+      "description": [
+        "The Supercritical Phase Shifter (SPS) converts Polonium Pellets into Antimatter Pellets at industrial scale.",
+        "Requires massive FE input (200 plus MFE/t — Fusion Reactor territory), Polonium input from your Solar Neutron Activators, and real-world time — approximately one Antimatter pellet per 2 minutes of SPS operation at full power",
+        "Antimatter crafts the MekaSuit Gravitational Modulating Unit (creative flight)",
+        "Install modules: Energy Shield (100 percent damage reduction), Jetpack Unit, Magnetic Attraction Unit (item vacuum), Inhalation Purification Unit (water breathing plus immunity to environmental damage), and Locomotive Boost Unit (sprint speed)",
+        "You are now a demigod."
+      ],
+      "icon": "mekanism:mekasuit_bodyarmor",
+      "x": 6,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "200000E6"
+      ],
+      "tasks": [
+        {
+          "id": "200000EB",
+          "type": "item",
+          "item": "mekanism:mekasuit_bodyarmor",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000EC",
+          "type": "xp_levels",
+          "xp_levels": 17
+        },
+        {
+          "id": "200000ED",
+          "type": "item",
+          "item": "minecraft:dragon_breath",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "200000F1",
+      "title": "Polonium Production",
+      "subtitle": "Nuclear Waste to Polonium",
+      "description": [
+        "Chain: Nuclear Waste from Fission Reactor enters Solar Neutron Activator (requires direct sky access and sunlight).",
+        "Processes slowly — minutes per pellet",
+        "Build multiple parallel Activators with sky access",
+        "Polonium pellets are consumed by the SPS to produce Antimatter",
+        "Chunk load the entire area."
+      ],
+      "icon": "mekanism:pellet_polonium",
+      "x": 7.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000EF",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000F0",
+          "type": "xp_levels",
+          "xp_levels": 7
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "200000F4",
+      "title": "Antimatter Production Chain",
+      "subtitle": "Complete Endgame Processing",
+      "description": [
+        "Full chain from raw ore to antimatter: uranium ore to Chemical Dissolution to Chemical Washer to Chemical Crystallizer to Chemical Infuser (with Hydrogen Fluoride) to Isotopic Centrifuge (Fissile Fuel) to Fission Reactor to Nuclear Waste to Solar Neutron Activator to Polonium to Supercritical Phase Shifter to Antimatter.",
+        "One Antimatter pellet represents hours of cumulative passive processing across multiple machines",
+        "This is the definition of Mekanism endgame."
+      ],
+      "icon": "mekanism:pellet_antimatter",
+      "x": 7.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "200000F2",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "200000F3",
+          "type": "xp_levels",
+          "xp_levels": 9
+        }
+      ],
+      "optional": true
+    }
+  ],
+  "quest_links": []
+}

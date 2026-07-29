@@ -1,0 +1,5 @@
+#Loot Journal Configuration
+#Logs all item pickups for per-session statistics
+trackItemPickups = true
+#Logs all XP pickups for per-session statistics
+trackXpPickups = true

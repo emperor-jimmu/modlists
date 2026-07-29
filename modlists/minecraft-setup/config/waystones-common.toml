@@ -1,0 +1,25 @@
+[inventoryButton]
+	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
+	inventoryButton = "ANY"
+	#The x position of the inventory button in the inventory.
+	inventoryButtonX = 58
+	#The y position of the inventory button in the inventory.
+	inventoryButtonY = 60
+	#The x position of the inventory button in the creative menu.
+	creativeInventoryButtonX = 88
+	#The y position of the inventory button in the creative menu.
+	creativeInventoryButtonY = 33
+
+[teleports]
+	#Set to false to simply disable all xp costs. See warpRequirements for more fine-grained control.
+	enableCosts = false
+	#Set to false to simply disable all cooldowns. See warpRequirements for more fine-grained control.
+	enableCooldowns = true
+	#List of warp requirements with comma-separated parameters in parentheses.
+	warpRequirements = ["[is_not_interdimensional] scaled_add_xp_cost(distance, 0.01)", "[is_interdimensional] add_xp_cost(27)", "[source_is_warp_plate] multiply_xp_cost(0)", "[target_is_global] multiply_xp_cost(0)", "min_xp_cost(0)", "max_xp_cost(27)", "[source_is_inventory_button] add_cooldown(inventory_button, 300)"]
+	#Set to ENABLED to have nearby pets teleport with you. Set to SAME_DIMENSION to have nearby pets teleport with you only if you're not changing dimensions. Set to DISABLED to disable.
+	transportPets = "DISABLED"
+	#Set to ENABLED to have leashed mobs teleport with you. Set to SAME_DIMENSION to have leashed mobs teleport with you only if you're not changing dimensions. Set to DISABLED to disable.
+	transportLeashed = "ENABLED"
+	#List of entities that cannot be teleported, either as pet, leashed, or on warp plates.
+	entityDenyList = ["minecraft:wither"]

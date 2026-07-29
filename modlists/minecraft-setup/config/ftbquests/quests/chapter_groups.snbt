@@ -1,0 +1,9 @@
+{
+  "chapter_groups": [
+    {
+      "id": "20000001",
+      "title": "Main",
+      "order_index": 0
+    }
+  ]
+}

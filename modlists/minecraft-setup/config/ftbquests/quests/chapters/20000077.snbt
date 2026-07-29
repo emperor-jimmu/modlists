@@ -1,0 +1,1257 @@
+{
+  "id": "20000077",
+  "group": "20000001",
+  "order_index": 0,
+  "title": "Create",
+  "subtitle": "Rotational power and mechanical automation",
+  "icon": "create:cogwheel",
+  "default_quest_shape": "hexagon",
+  "quests": [
+    {
+      "id": "20000004",
+      "title": "Rotational Power",
+      "subtitle": "Harness water to spin shafts",
+      "description": [
+        "Create's power system is rotational — spinning shafts transfer SU (Stress Units).",
+        "One water wheel placed in flowing water generates approximately 256 SU",
+        "Check stress with Engineer's Goggles."
+      ],
+      "icon": "create:water_wheel",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000001",
+          "type": "item",
+          "item": "create:water_wheel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000002",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "20000003",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000008",
+      "title": "Mechanical Processing",
+      "subtitle": "Millstone and Mechanical Press",
+      "description": [
+        "Attach a Millstone and Mechanical Press to your water wheel via shaft and gearbox.",
+        "Millstone crushes wheat to flour, cobble to gravel, bones to bonemeal",
+        "Press stamps ingots into plates and sheets.",
+        "Tip: Place a Chest at the end of your processing line — items from the Millstone and Press output directly into it. Use a Funnel to extract."
+      ],
+      "icon": "create:millstone",
+      "x": 0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000004"
+      ],
+      "tasks": [
+        {
+          "id": "20000005",
+          "type": "item",
+          "item": "create:mechanical_press",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000006",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "20000007",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000000D",
+      "title": "Fluid Systems",
+      "subtitle": "Fluid Pump, Tank, and Pipe",
+      "description": [
+        "Create handles fluids — water, lava, potions, and TFMG oil.",
+        "Fluid Pump pulls from sources",
+        "Tank stores it",
+        "Attach a Spout to fill bottles or feed boilers",
+        "Fluid throughput depends on pump RPM — faster RPM = more mb/tick.",
+        "Tip: The Hose Pulley detects infinite water sources (3x3 or larger pool). Lower it into any sufficiently large water body and it outputs infinite water — no more refilling tanks manually."
+      ],
+      "icon": "create:fluid_pump",
+      "x": 0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000008"
+      ],
+      "tasks": [
+        {
+          "id": "20000009",
+          "type": "item",
+          "item": "create:fluid_tank",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2000000A",
+          "type": "item",
+          "item": "create:fluid_pipe",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000000B",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "2000000C",
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000011",
+      "title": "Brass Age",
+      "subtitle": "Brass Ingots via Heated Mixer",
+      "description": [
+        "Brass = copper + zinc in a heated Mixer.",
+        "Place a Blaze Burner under the Mixer, catch a blaze in a nether fortress, fuel it with blaze rods or coal",
+        "Brass unlocks precision machinery — the real Create begins here.",
+        "Tip: Zinc is rarer than copper. Use an Explorer's Compass or a Digital Miner configured for zinc ore to find deposits faster than manual mining."
+      ],
+      "icon": "create:brass_ingot",
+      "x": 0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000000D"
+      ],
+      "tasks": [
+        {
+          "id": "2000000E",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000000F",
+          "type": "xp_levels",
+          "xp_levels": 5
+        },
+        {
+          "id": "20000010",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000015",
+      "title": "Precision Crafting",
+      "subtitle": "Mechanical Crafter and Sequenced Assembly",
+      "description": [
+        "Mechanical Crafters snap together in 3D shapes around your recipe pattern.",
+        "Power with a shaft",
+        "Sequenced Assembly is Create's multi-step crafting — steps apply in order: Deployer adds, Press stamps, Saw cuts, Spout fills",
+        "Loop unfinished items back",
+        "Precision Mechanism uses this."
+      ],
+      "icon": "create:mechanical_crafter",
+      "x": 0,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000011"
+      ],
+      "tasks": [
+        {
+          "id": "20000012",
+          "type": "item",
+          "item": "create:mechanical_crafter",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000013",
+          "type": "xp_levels",
+          "xp_levels": 5
+        },
+        {
+          "id": "20000014",
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000019",
+      "title": "Air and Heat",
+      "subtitle": "Encased Fan — Washing, Smelting, Haunting",
+      "description": [
+        "Encased Fans create air streams.",
+        "Facing water = washing items on a Depot",
+        "Facing fire or lava = bulk smelting",
+        "Facing soul fire = haunting (soul sand, nether quartz)",
+        "Drop items through the stream via Chute for mass processing — no FE cost.",
+        "Tip: Combine Encased Fan with a Campfire underneath for bulk smelting that costs zero FE — just rotational power. Use Soul Campfire for haunting recipes."
+      ],
+      "icon": "create:encased_fan",
+      "x": 0,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000015"
+      ],
+      "tasks": [
+        {
+          "id": "20000016",
+          "type": "item",
+          "item": "create:encased_fan",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000017",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "20000018",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000001E",
+      "title": "Logistics Layer",
+      "subtitle": "Belt, Chute, Funnel, and Smart Chute",
+      "description": [
+        "Belts move items horizontally.",
+        "Chutes drop items down",
+        "Funnels extract from inventories",
+        "Smart Chutes filter by item type",
+        "Together: chest to funnel to belt to chute to storage",
+        "Your first item pipeline",
+        "Use Item Vaults as localized buffer storage.",
+        "Tip: Smart Chutes are the key to sorting — place one above a chest filtered for a specific item, and everything else continues down the belt. No redstone needed."
+      ],
+      "icon": "create:belt_connector",
+      "x": 0,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000019"
+      ],
+      "tasks": [
+        {
+          "id": "2000001A",
+          "type": "item",
+          "item": "create:belt_connector",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2000001B",
+          "type": "item",
+          "item": "create:brass_funnel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000001C",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "2000001D",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000023",
+      "title": "Rails and Trains",
+      "subtitle": "Assemble Your First Train",
+      "description": [
+        "Create trains are player-built — not pre-made.",
+        "Craft a Train Casing, Bogey, Controls, and Track",
+        "Place bogey on track, build casing on top, add controls",
+        "Trains carry items and players across your base at speed",
+        "Steam 'n' Rails expands with semaphores, dispatchers, and conductor mobs.",
+        "Tip: Trains load and unload at Stations automatically with Portable Storage Interfaces. Set a Schedule item in the conductor's inventory to program multi-stop routes."
+      ],
+      "icon": "create:track",
+      "x": 0,
+      "y": 7,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000001E"
+      ],
+      "tasks": [
+        {
+          "id": "2000001F",
+          "type": "item",
+          "item": "create:train_controls",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "20000020",
+          "type": "item",
+          "item": "create:track",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000021",
+          "type": "xp_levels",
+          "xp_levels": 7
+        },
+        {
+          "id": "20000022",
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000027",
+      "title": "Andesite Alloy",
+      "subtitle": "Fundamental Create Material",
+      "description": [
+        "Andesite alloy = andesite + iron nuggets (or zinc nuggets).",
+        "Foundational item for every Create component",
+        "You will need hundreds",
+        "Automate production early — craft in bulk with a Mechanical Mixer."
+      ],
+      "icon": "create:andesite_alloy",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000024",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000025",
+          "type": "xp_levels",
+          "xp_levels": 1
+        },
+        {
+          "id": "20000026",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "2000002A",
+      "title": "Cogwheel and Gearbox",
+      "subtitle": "Speed and Rotation",
+      "description": [
+        "Gearboxes reverse rotation direction.",
+        "Large cogwheels change speed by ratio — small driving large = slower with more torque, large driving small = faster with less torque",
+        "Place cogwheels perpendicular to each other to connect parallel shafts."
+      ],
+      "icon": "create:cogwheel",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000028",
+          "type": "item",
+          "item": "create:cogwheel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000029",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "2000002D",
+      "title": "Engineer's Goggles",
+      "subtitle": "Essential Diagnostic Tool",
+      "description": [
+        "The single most important Create item.",
+        "Equip to see SU usage, speed (RPM), and stress percentage on every Create block",
+        "Press W while hovering a block in EMI to open Ponder — an animated tutorial showing exactly how it works",
+        "Use Ponder constantly."
+      ],
+      "icon": "create:goggles",
+      "x": 1.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000002B",
+          "type": "item",
+          "item": "create:goggles",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000002C",
+          "type": "xp_levels",
+          "xp_levels": 2
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20000031",
+      "title": "Redstone Link",
+      "subtitle": "Wireless Redstone",
+      "description": [
+        "Wireless redstone signals.",
+        "Place two Redstone Links on the same frequency — redstone signal on one appears on the other",
+        "Range covers the entire dimension",
+        "Use to activate distant machines without redstone dust spaghetti."
+      ],
+      "icon": "create:redstone_link",
+      "x": 1.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000002E",
+          "type": "item",
+          "item": "create:redstone_link",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000002F",
+          "type": "xp_levels",
+          "xp_levels": 1
+        },
+        {
+          "id": "20000030",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20000034",
+      "title": "Windmill Bearing",
+      "subtitle": "Passive Power from Wind",
+      "description": [
+        "Passive renewable power.",
+        "Attach sails to a Windmill Bearing (minimum 8 sails required)",
+        "More sails = more SU — typical range 500 to 4000 SU",
+        "Needs clear sky above — no blocks within a radius of the bearing",
+        "Maintenance-free",
+        "Great supplement to water wheels."
+      ],
+      "icon": "create:windmill_bearing",
+      "x": 1.5,
+      "y": 4,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000032",
+          "type": "item",
+          "item": "create:windmill_bearing",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000033",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20000037",
+      "title": "Sequenced Assembly Deep Dive",
+      "subtitle": "Multi-Step Precision Crafting",
+      "description": [
+        "Sequenced Assembly applies operations in order: Deployer adds ingredients, Press stamps shapes, Saw cuts pieces, Spout fills fluids.",
+        "Each step has a completion chance",
+        "Unfinished items loop back through the belt",
+        "Output = when all steps pass",
+        "Used for Precision Mechanisms, Electron Tubes, and Integrated Circuits.",
+        "This multi-step crafting system is what you will automate later with AE2 Processing Patterns — store intermediate products in your ME network and use Export Buses to feed Create machines."
+      ],
+      "icon": "create:precision_mechanism",
+      "x": 1.5,
+      "y": 5,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000035",
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000036",
+          "type": "xp_levels",
+          "xp_levels": 4
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "2000003B",
+      "title": "Steam Power",
+      "subtitle": "Steam Engine — Up to 16,384 SU",
+      "description": [
+        "Steam Engines output massively more SU than water wheels.",
+        "Requires a heated Blaze Burner (superheat with blaze cakes for max output), Fluid Tank filled with water, and Steam Engine blocks",
+        "Pump water in continuously, keep blaze burner fed",
+        "Output: up to 16,384 SU at max blaze cake heat.",
+        "Tip: Blaze Cakes (crafted from blaze rods, sugar, and nether wart) superheat your Blaze Burner to maximum output. A single Blaze Cake produces more SU than a stack of coal."
+      ],
+      "icon": "create:steam_engine",
+      "x": 3,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000023"
+      ],
+      "tasks": [
+        {
+          "id": "20000038",
+          "type": "item",
+          "item": "create:steam_engine",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000039",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "2000003A",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000003F",
+      "title": "Steel and Aluminum (TFMG)",
+      "subtitle": "Heavy Industry Materials",
+      "description": [
+        "TFMG adds industrial metal production.",
+        "Steel = iron + coal in a Blast Furnace (multiblock — check EMI (hover item, press R for recipe, U for uses) for structure)",
+        "Aluminum = bauxite ore processed through electrolysis in a Mekanism Electrolytic Separator",
+        "These are your Phase 2 structural materials — steel replaces iron in machine frames, aluminum replaces brass in lightweight components."
+      ],
+      "icon": "tfmg:steel_ingot",
+      "x": 3,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000003B"
+      ],
+      "tasks": [
+        {
+          "id": "2000003C",
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000003D",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "2000003E",
+          "type": "item",
+          "item": "tfmg:steel_ingot",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000044",
+      "title": "Contraptions",
+      "subtitle": "Moving Structures — Gantry and Piston",
+      "description": [
+        "Contraptions are Create's moving structures.",
+        "Mechanical Piston pushes a row of blocks linearly",
+        "Gantry Carriage slides along a shaft",
+        "Mechanical Bearing rotates an attached structure",
+        "Cart Assembler attaches contraptions to minecarts",
+        "Contraptions can mine, place blocks, harvest crops, and move entities — they're mobile factories.",
+        "Tip: A Mechanical Drill mounted on a Cart Assembler creates an automated mining train. Place rails above a cave system, attach a chest to the contraption, and send it off."
+      ],
+      "icon": "create:gantry_carriage",
+      "x": 3,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000003F"
+      ],
+      "tasks": [
+        {
+          "id": "20000040",
+          "type": "item",
+          "item": "create:gantry_carriage",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "20000041",
+          "type": "item",
+          "item": "create:mechanical_piston",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000042",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "20000043",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000048",
+      "title": "Mechanical Arm",
+      "subtitle": "Precise Item Placement",
+      "description": [
+        "The Mechanical Arm picks up items and places them with precision.",
+        "Program target inputs and outputs with a wrench — click source inventory, then click destination",
+        "Essential for complex assembly lines where belts and chutes cannot reach specific slots."
+      ],
+      "icon": "create:mechanical_arm",
+      "x": 3,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000044"
+      ],
+      "tasks": [
+        {
+          "id": "20000045",
+          "type": "item",
+          "item": "create:mechanical_arm",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000046",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "20000047",
+          "type": "item",
+          "item": "create:precision_mechanism",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000004C",
+      "title": "Oil Processing (TFMG)",
+      "subtitle": "Pump Jack and Crude Oil",
+      "description": [
+        "TFMG adds oil deposits scattered across the world.",
+        "Build a Pump Jack over an oil pool to extract crude oil",
+        "Crude oil is the input for the Distillation Tower — your Phase 2 energy and material backbone",
+        "Oil pumping requires rotational power — connect a Create engine."
+      ],
+      "icon": "tfmg:pump_jack",
+      "x": 3,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000003F"
+      ],
+      "tasks": [
+        {
+          "id": "20000049",
+          "type": "item",
+          "item": "tfmg:pump_jack",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000004A",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "2000004B",
+          "type": "item",
+          "item": "mekanism:hdpe_sheet",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000050",
+      "title": "Distillation Tower (TFMG)",
+      "subtitle": "Refining Oil into Products",
+      "description": [
+        "The Distillation Tower is a multiblock — Distillation Controller plus stacked Distillation Tower blocks (minimum 4 high).",
+        "Input crude oil at the bottom",
+        "Products exit at different tower heights: diesel (bottom), kerosene, gasoline, lubricant (mid-levels), residual oil (top)",
+        "Lubricant reduces Create machine stress when applied via pipe",
+        "Diesel feeds Diesel Engines."
+      ],
+      "icon": "tfmg:distillation_controller",
+      "x": 3,
+      "y": 5,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000004C"
+      ],
+      "tasks": [
+        {
+          "id": "2000004D",
+          "type": "item",
+          "item": "tfmg:distillation_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000004E",
+          "type": "xp_levels",
+          "xp_levels": 11
+        },
+        {
+          "id": "2000004F",
+          "type": "item",
+          "item": "createdieselgenerators:diesel",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000053",
+      "title": "Programmable Contraptions",
+      "subtitle": "Sequence Gearshift and Linked Controller",
+      "description": [
+        "Sequence Gearshift programs exact rotational sequences — forward 90 degrees, pause 1 second, reverse 180 degrees.",
+        "Linked Controller triggers sequences via redstone",
+        "Together they enable precision crafting that needs specific item placement order — deploy dough, pause, deploy cocoa, pause, piston push."
+      ],
+      "icon": "create:sequenced_gearshift",
+      "x": 3,
+      "y": 6,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000048"
+      ],
+      "tasks": [
+        {
+          "id": "20000051",
+          "type": "item",
+          "item": "create:sequenced_gearshift",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000052",
+          "type": "xp_levels",
+          "xp_levels": 9
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000057",
+      "title": "Diesel Engine",
+      "subtitle": "Massive SU from Refined Fuel",
+      "description": [
+        "TFMG Diesel Engines produce the highest SU in the pack.",
+        "Feed refined diesel from your Distillation Tower via fluid pipes",
+        "One engine at full output powers an entire factory floor",
+        "Connect to your rotational network through shafts and gearboxes",
+        "This is your rotational power endgame.",
+        "Tip: Connect your Diesel Engine to a Speed Controller to fine-tune RPM output for different factory sections — high speed for crushing wheels, lower speed for mixers."
+      ],
+      "icon": "tfmg:diesel_engine",
+      "x": 3,
+      "y": 7,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000050"
+      ],
+      "tasks": [
+        {
+          "id": "20000054",
+          "type": "item",
+          "item": "tfmg:diesel_engine",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000055",
+          "type": "xp_levels",
+          "xp_levels": 13
+        },
+        {
+          "id": "20000056",
+          "type": "item",
+          "item": "createdieselgenerators:diesel",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000005A",
+      "title": "Stockpile Switch",
+      "subtitle": "Inventory Threshold Detection",
+      "description": [
+        "Detects inventory fill levels and outputs redstone.",
+        "Turn machines off when storage is full",
+        "Prevents overflow, wasted SU, and lag from backed-up belts."
+      ],
+      "icon": "create:stockpile_switch",
+      "x": 4.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000058",
+          "type": "item",
+          "item": "create:stockpile_switch",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000059",
+          "type": "xp_levels",
+          "xp_levels": 2
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "2000005D",
+      "title": "Train Station and Signal",
+      "subtitle": "Rail Automation",
+      "description": [
+        "Stations mark stops on your train network.",
+        "Train Signals prevent collisions on shared track — a train waits until the section ahead is clear",
+        "Schedule items program routes (right-click to set)",
+        "Multi-train networks with Steam 'n' Rails Dispatcher for automatic routing."
+      ],
+      "icon": "create:track_station",
+      "x": 4.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000005B",
+          "type": "item",
+          "item": "create:track_station",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000005C",
+          "type": "xp_levels",
+          "xp_levels": 2
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20000060",
+      "title": "Speed Controller",
+      "subtitle": "Precise RPM Tuning",
+      "description": [
+        "Fine-tunes rotational speed without gear ratio math.",
+        "Attach between power source and machine",
+        "Turn with wrench to set exact RPM — optimal for mixers (64 RPM) and crushing wheels (256 RPM)."
+      ],
+      "icon": "create:rotation_speed_controller",
+      "x": 4.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000005E",
+          "type": "item",
+          "item": "create:rotation_speed_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000005F",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20000063",
+      "title": "Content Observer",
+      "subtitle": "Redstone from Inventory Content",
+      "description": [
+        "Outputs redstone signal based on inventory contents.",
+        "Example: iron ingots > 64 = redstone ON",
+        "Paired with a Stockpile Switch — Observer detects the threshold, Switch stops the machine",
+        "Self-regulating production lines."
+      ],
+      "icon": "create:content_observer",
+      "x": 4.5,
+      "y": 3,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000061",
+          "type": "item",
+          "item": "create:content_observer",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000062",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20000067",
+      "title": "Mega-Factory",
+      "subtitle": "All Production Lines Interconnected",
+      "description": [
+        "Connect every production line into one integrated facility.",
+        "Create manufacturing feeds AE2 storage",
+        "AE2 autocrafting feeds Mekanism chemical processing",
+        "10+ Mechanical Crafters, 5+ Sequenced Assembly lines, train logistics between districts",
+        "This is a self-defined milestone — mark complete when your base feels like a factory, not a collection of machines.",
+        "The Mega-Factory milestone is the integration point: Create belts feed into AE2 Interfaces, AE2 autocrafting provides materials to Mekanism chemical lines, Create trains move products between factory districts. This is where three mods become one system."
+      ],
+      "icon": "create:mechanical_crafter",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000057"
+      ],
+      "tasks": [
+        {
+          "id": "20000064",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000065",
+          "type": "xp_levels",
+          "xp_levels": 13
+        },
+        {
+          "id": "20000066",
+          "type": "item",
+          "item": "mekanism:ingot_refined_obsidian",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000006B",
+      "title": "Kinetic Megastructure",
+      "subtitle": "50+ Machines on One Network",
+      "description": [
+        "One power source (Steam Engine tower or Diesel Engine cluster) feeds your entire factory through shafts, gearboxes, belts, and clutches.",
+        "50 or more machines running simultaneously from a single rotational network",
+        "Tune RPMs, belt speeds, and gear ratios until every machine runs in the green on your stress display",
+        "Your factory is a visible kinetic sculpture.",
+        "Tip: Use Clutches to disconnect sections of your rotational network when not in use — each disengaged Clutch reduces total stress load. Redstone Links toggle them remotely."
+      ],
+      "icon": "create:shaft",
+      "x": 6,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "20000067"
+      ],
+      "tasks": [
+        {
+          "id": "20000068",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000069",
+          "type": "xp_levels",
+          "xp_levels": 13
+        },
+        {
+          "id": "2000006A",
+          "type": "item",
+          "item": "mekanism:block_refined_obsidian",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000006F",
+      "title": "Self-Regulating Factory",
+      "subtitle": "Demand-Based Auto Start and Stop",
+      "description": [
+        "AE2 Level Emitter detects iron ingots below 5000 — Redstone Link sends signal across the base — Clutch engages — cobblestone generator fires up — crushing wheels activate — washer runs — blast furnace starts — iron ingots flow into AE2.",
+        "Threshold reached — signal stops — factory goes idle",
+        "Zero player interaction",
+        "Build one self-regulating chain for each bulk material: iron, copper, gold, redstone, andesite alloy.",
+        "This milestone requires both Create (Clutch, Redstone Link) and AE2 (Level Emitter) working together. If you have not yet built an AE2 network, complete the AE2 Getting Started quests first — you can return to this milestone later."
+      ],
+      "icon": "minecraft:iron_ingot",
+      "x": 6,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000006B"
+      ],
+      "tasks": [
+        {
+          "id": "2000006C",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000006D",
+          "type": "xp_levels",
+          "xp_levels": 17
+        },
+        {
+          "id": "2000006E",
+          "type": "item",
+          "item": "minecraft:nether_star",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20000072",
+      "title": "Big Cannons Integration",
+      "subtitle": "Colony Defense Artillery",
+      "description": [
+        "Create Big Cannons applies engineering to siege warfare.",
+        "Build artillery from casings, barrels, and breech blocks — different sizes for different firepower",
+        "Automate ammo production with Create belts + Mekanism processing",
+        "Place cannons at colony perimeters alongside Guard Villagers."
+      ],
+      "icon": "createbigcannons:cannon",
+      "x": 7.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000070",
+          "type": "item",
+          "item": "createbigcannons:cannon",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000071",
+          "type": "xp_levels",
+          "xp_levels": 4
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20000076",
+      "title": "Infinite Resource Loop",
+      "subtitle": "Forever-Running Production",
+      "description": [
+        "Create a self-sustaining production chain that runs forever without player input.",
+        "Examples: cobblestone to gravel to sand to glass, or crops to seeds to oil to fuel to power to crops",
+        "This is a conceptual challenge — the reward is the achievement of a perpetually running machine."
+      ],
+      "icon": "minecraft:glass",
+      "x": 7.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20000073",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20000074",
+          "type": "xp_levels",
+          "xp_levels": 7
+        },
+        {
+          "id": "20000075",
+          "type": "item",
+          "item": "minecraft:glass",
+          "count": 16,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": true
+    }
+  ],
+  "quest_links": []
+}

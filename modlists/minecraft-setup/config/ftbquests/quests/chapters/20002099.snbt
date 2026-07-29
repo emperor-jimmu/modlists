@@ -1,0 +1,658 @@
+{
+  "id": "20002099",
+  "group": "20000001",
+  "order_index": 3,
+  "title": "Apotheosis",
+  "subtitle": "Gear affixes, gems, and enchanting overhaul",
+  "icon": "apotheosis:gem_cutting_table",
+  "default_quest_shape": "hexagon",
+  "quests": [
+    {
+      "id": "2000205E",
+      "title": "Affix Gear Drops",
+      "subtitle": "Find and Equip Affix Gear",
+      "description": [
+        "Every weapon, tool, and armor piece in Apotheosis rolls with rarity and affixes.",
+        "Rarity determines gem sockets — Common (white, 0 sockets), Uncommon (yellow, 1), Rare (cyan, 2), Epic (purple, 3), Mythic (gold, 4)",
+        "Affixes are random stat bonuses: Ruthless (+crit damage and chance on weapons), Sturdy (+armor and knockback resist on armor), Nimble (+movement and attack speed on boots and leggings)",
+        "Mekanism Tools and Simply Swords weapons ALL roll with Apotheosis affixes",
+        "Check every single drop — a Common helmet with a great affix can outperform an Epic with useless stats."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000205C",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000205D",
+          "type": "xp_levels",
+          "xp_levels": 3
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20002062",
+      "title": "Scrap to Upgrade",
+      "subtitle": "Salvaging Table and Gem Dust",
+      "description": [
+        "The Salvaging Table destroys unwanted gear and produces Gem Dust — the currency of Apotheosis gem crafting.",
+        "Dust tiers: Rough Dust (from Common and Uncommon gear), Iron Dust, Diamond Dust, Emerald Dust (from higher rarities)",
+        "Salvage ALL gear you do not want — even white Common junk from mob farms",
+        "Dump mob farm output into a chest next to your Salvaging Table and process in batches",
+        "Gem Dust accumulates for cutting and upgrading gems."
+      ],
+      "icon": "apotheosis:salvaging_table",
+      "x": 0,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000205E"
+      ],
+      "tasks": [
+        {
+          "id": "2000205F",
+          "type": "item",
+          "item": "apotheosis:salvaging_table",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002060",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "20002061",
+          "type": "item",
+          "item": "apotheosis:gem_dust",
+          "count": 8,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20002066",
+      "title": "First Gem",
+      "subtitle": "Cut and Socket Your First Gem",
+      "description": [
+        "Gems are socketable, permanent stat boosts.",
+        "Three tiers: Rough gems (drop from mobs and chests, basic stats)",
+        "Cut gems (Rough + Gem Dust at Cutting Station, +50% stat value)",
+        "Flawless gems (two Cut gems combined at Cutting Station, +100% stat value — quadruple Rough)",
+        "Socket gems at the Gem Socketing Table — place gear in top slot, gem in a socket",
+        "Priority: get your main weapon's gem to Flawless before socketing anything else.",
+        "Tip: Gems are NOT consumed when removed — use the Gem Socketing Table to extract a gem from old gear and socket it into new gear. Your gem collection grows permanently."
+      ],
+      "icon": "apotheosis:gem",
+      "x": 0,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "20002062"
+      ],
+      "tasks": [
+        {
+          "id": "20002063",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002064",
+          "type": "xp_levels",
+          "xp_levels": 3
+        },
+        {
+          "id": "20002065",
+          "type": "item",
+          "item": "apotheosis:gem",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000206A",
+      "title": "Rarity Climb",
+      "subtitle": "Full Uncommon+ Set with Socketed Gems",
+      "description": [
+        "Phase 1 goal: equip a full set of Uncommon or higher gear with at least one Cut gem socketed in every piece.",
+        "Use the Gem Socketing Table",
+        "Sockets equal rarity — Uncommon has 1, Rare has 2, etc",
+        "Socket expansion tools (found in dungeon chests) can add more sockets",
+        "This full Cut-gem Uncommon set is your baseline before tackling Phase 2 bosses and dungeons."
+      ],
+      "icon": "apotheosis:gem_cutting_table",
+      "x": 0,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "20002066"
+      ],
+      "tasks": [
+        {
+          "id": "20002067",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002068",
+          "type": "xp_levels",
+          "xp_levels": 7
+        },
+        {
+          "id": "20002069",
+          "type": "item",
+          "item": "apotheosis:gem",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000206D",
+      "title": "Rarity Colors",
+      "subtitle": "White, Yellow, Cyan, Purple, Gold",
+      "description": [
+        "Border colors indicate rarity at a glance — no need to open the item.",
+        "White = Common (0 sockets)",
+        "Yellow = Uncommon (1)",
+        "Cyan = Rare (2)",
+        "Purple = Epic (3)",
+        "Gold = Mythic (4)",
+        "Scan loot piles for colored glints — your eyes learn to spot Epic purple before your brain processes the item name."
+      ],
+      "icon": "minecraft:diamond",
+      "x": 1.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000206B",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000206C",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20002070",
+      "title": "Affix Synergies",
+      "subtitle": "Stack Same-Type for Exponential Returns",
+      "description": [
+        "Affixes of the same category stack multiplicative bonuses.",
+        "Titanic (+max HP) on chestplate plus Sturdy (+armor) on leggings creates a tank build",
+        "Nimble (+speed) on boots plus Ruthless (+crit) on weapon creates a speed-crit build",
+        "Build your affix combination around your weapon type — fast weapons want on-hit effects, slow weapons want single-burst damage."
+      ],
+      "icon": "minecraft:iron_chestplate",
+      "x": 1.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000206E",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000206F",
+          "type": "xp_levels",
+          "xp_levels": 1
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20002073",
+      "title": "Boss Modifiers Primer",
+      "subtitle": "Tough, Blinding, Plagued, Chaotic",
+      "description": [
+        "Starting in Phase 2, bosses spawn with colored modifier names under their health bar.",
+        "These are your primary source of Mythic gear — the harder the modifier combination, the better the loot roll",
+        "Wait until you have Rare+ gear and a backup weapon before hunting affixed bosses."
+      ],
+      "icon": "minecraft:wither_skeleton_skull",
+      "x": 1.5,
+      "y": 2,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20002071",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002072",
+          "type": "xp_levels",
+          "xp_levels": 2
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20002077",
+      "title": "Tiered Bookshelves",
+      "subtitle": "Hellshelf, Seashelf, Endshelf",
+      "description": [
+        "Apotheosis removes the vanilla enchanting level cap entirely.",
+        "Sharpness VIII, Protection VIII, Fortune V, Looting V are now achievable",
+        "Tiered bookshelves enable these higher levels: Hellshelf (crafted with nether materials, enables mid-tier levels)",
+        "Seashelf (ocean materials)",
+        "Endshelf (End materials, enables maximum levels)",
+        "Place around your Enchanting Table exactly like regular bookshelves — the table GUI updates to show available enchantment levels beyond 30."
+      ],
+      "icon": "apotheosis:hellshelf",
+      "x": 3,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000206A"
+      ],
+      "tasks": [
+        {
+          "id": "20002074",
+          "type": "item",
+          "item": "apotheosis:hellshelf",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002075",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "20002076",
+          "type": "item",
+          "item": "apotheosis:hellshelf",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000207B",
+      "title": "Library of Alexandria",
+      "subtitle": "Infinite Enchanted Book Storage",
+      "description": [
+        "A single block that stores every enchanted book you will ever own.",
+        "Infinite capacity, searchable, and auto-combining — drop two Sharpness IV books in and they automatically merge into one Sharpness V",
+        "Dump every enchanted book from mob farms, dungeon chests, and villager trades into the Library",
+        "Check periodically — you will discover max-level enchantments you earned without realizing."
+      ],
+      "icon": "apotheosis:library",
+      "x": 3,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "20002077"
+      ],
+      "tasks": [
+        {
+          "id": "20002078",
+          "type": "item",
+          "item": "apotheosis:library",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002079",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "2000207A",
+          "type": "item",
+          "item": "minecraft:bookshelf",
+          "count": 4,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000207F",
+      "title": "Gem Mastery",
+      "subtitle": "Socket a Flawless Gem",
+      "description": [
+        "Two Cut gems of the same type combined at the Cutting Station produce one Flawless gem — 100 percent stat value, quadruple a Rough gem.",
+        "A Flawless crit gem in a Lifesteal weapon is extreme DPS with sustain",
+        "A Flawless HP gem in your chestplate lets you survive boss mechanics that would otherwise one-shot you",
+        "Gems are what separate a struggling Phase 2 player from a boss-farming Phase 3 demigod",
+        "Priority: Flawless on your weapon first, chestplate second.",
+        "Tip: Flawless gems of different types can coexist on the same gear piece — one Flawless crit gem plus one Flawless HP gem on a single weapon gives both DPS and sustain."
+      ],
+      "icon": "apotheosis:gem",
+      "x": 3,
+      "y": 2,
+      "shape": "hexagon",
+      "dependencies": [
+        "20002066"
+      ],
+      "tasks": [
+        {
+          "id": "2000207C",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000207D",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "2000207E",
+          "type": "item",
+          "item": "apotheosis:gem",
+          "count": 2,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20002083",
+      "title": "Affixed Boss Hunting",
+      "subtitle": "Kill Three Bosses with Modifiers",
+      "description": [
+        "Affixed bosses are your primary Mythic and Epic gear source.",
+        "Boss modifiers appear as colored text under the health bar",
+        "Common modifiers: Tough (+50 percent HP, significant damage reduction), Blinding (blinds on hit — bring milk or blindness immunity), Plagued (poison and wither on hit — bring antidotes and regeneration), Chaotic (random effect per hit — unpredictable, bring all potion types)",
+        "Strategy: Lifesteal rune on weapon for sustain, Ice rune for kiting, fire resistance potions for Plagued bosses",
+        "GraveStone preserves your items if you die — the risk is only time.",
+        "The hardest affixed bosses come from L_Ender's Cataclysm and the Aether dimension. These are your primary Mythic gear sources. Bring your best Simply Swords weapon (Lifesteal rune recommended) and Apotheosis-enchanted Mekanism Tools armor."
+      ],
+      "icon": "minecraft:nether_star",
+      "x": 3,
+      "y": 3,
+      "shape": "hexagon",
+      "dependencies": [
+        "2000206A"
+      ],
+      "tasks": [
+        {
+          "id": "20002080",
+          "type": "kill",
+          "entity": "minecraft:wither",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002081",
+          "type": "xp_levels",
+          "xp_levels": 11
+        },
+        {
+          "id": "20002082",
+          "type": "item",
+          "item": "minecraft:nether_star",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20002087",
+      "title": "Spawner Engineering",
+      "subtitle": "Silk Touch and Customize Spawners",
+      "description": [
+        "Apotheosis sets spawner Silk Touch requirement to level 1 — any Silk Touch pickaxe mines a spawner intact.",
+        "Place it, right-click with empty hand to open the customization GUI",
+        "Change: entity type (spawn anything from zombies to endermen), spawn delay (faster equals more mobs), player activation range, minimum and maximum simultaneous entities",
+        "Combine with a mob grinder (Mob Grinding Utils or Create saw/drill) for automated XP, loot, and affix gear farming.",
+        "Tip: Set spawn delay to minimum (100 ticks) and max entities to 6 for maximum XP per second. Use a Mekanism Laser or Create Saw on a rotating Bearing for automated mob killing."
+      ],
+      "icon": "minecraft:spawner",
+      "x": 3,
+      "y": 4,
+      "shape": "hexagon",
+      "dependencies": [
+        "20002077"
+      ],
+      "tasks": [
+        {
+          "id": "20002084",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002085",
+          "type": "xp_levels",
+          "xp_levels": 9
+        },
+        {
+          "id": "20002086",
+          "type": "item",
+          "item": "minecraft:spawner",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "2000208A",
+      "title": "Enchantment Library Combos",
+      "subtitle": "Auto-Merge and Discover",
+      "description": [
+        "The Library of Alexandria auto-merges duplicate enchantment books constantly.",
+        "Two Sharpness IV books become one Sharpness V without player interaction",
+        "Two Protection IV become Protection V",
+        "Check the Library periodically — you will find max-level enchants you did not realize were ready",
+        "The Library is the most time-saving block in Apotheosis."
+      ],
+      "icon": "apotheosis:library",
+      "x": 4.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20002088",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002089",
+          "type": "xp_levels",
+          "xp_levels": 4
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "2000208D",
+      "title": "Salvage Automation",
+      "subtitle": "Auto-Process Mob Farm Gear",
+      "description": [
+        "Connect a Mekanism pipe or Create funnel to your Salvaging Table input face.",
+        "Feed it from your mob farm output chest",
+        "All unwanted Common through Rare gear automatically processes into Gem Dust without player interaction",
+        "Gem Dust routes into AE2 storage — always available for gem cutting on demand",
+        "Zero player time spent salvaging."
+      ],
+      "icon": "apotheosis:salvaging_table",
+      "x": 4.5,
+      "y": 1,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "2000208B",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000208C",
+          "type": "xp_levels",
+          "xp_levels": 4
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "20002091",
+      "title": "Mythic Arsenal",
+      "subtitle": "Full Mythic Set with 4 Flawless Gems",
+      "description": [
+        "Complete Mythic gear set (helmet, chestplate, leggings, boots) plus weapon, all with maximum 4 Flawless gems socketed per piece and maximum-level enchants applied.",
+        "This is the Apotheosis ceiling — the highest tier of gear the mod produces",
+        "Salvage everything Rare and below on sight",
+        "Only Epic pieces are worth inspecting for potential upgrades",
+        "Mythic drop hunting from affixed Cataclysm and Aether bosses is your primary activity.",
+        "Tip: Dungeon chests in YUNG's structures and When Dungeons Arise have higher Mythic drop rates than open-world mobs. Explorer's Compass locates the nearest dungeon structure."
+      ],
+      "icon": "minecraft:netherite_chestplate",
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "dependencies": [
+        "20002083"
+      ],
+      "tasks": [
+        {
+          "id": "2000208E",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2000208F",
+          "type": "xp_levels",
+          "xp_levels": 17
+        },
+        {
+          "id": "20002090",
+          "type": "item",
+          "item": "minecraft:nether_star",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20002095",
+      "title": "Perfect Roll",
+      "subtitle": "Mythic Weapon with Ideal Affixes",
+      "description": [
+        "Even at Mythic tier, affixes still roll randomly.",
+        "A Perfect Roll is a Mythic weapon where every affix slot contains the ideal stat for your build — Ruthless (+crit), Titanic (+max HP), and Nimble (+attack speed) for a speed-crit build",
+        "This is the true endgame loot chase in Apotheosis",
+        "Every affixed Cataclysm boss, Aether guardian, and Twilight Forest boss killed is one more chance at perfection",
+        "The odds are astronomical",
+        "The hunt never ends.",
+        "Cataclysm bosses (Leviathan, Netherite Monstrosity, Ender Guardian) drop the highest-rate Mythic gear in the pack. Each kill is your best chance at a Perfect Roll. See the Combat chapter for boss locations and strategies."
+      ],
+      "icon": "minecraft:netherite_sword",
+      "x": 6,
+      "y": 1,
+      "shape": "hexagon",
+      "dependencies": [
+        "20002091"
+      ],
+      "tasks": [
+        {
+          "id": "20002092",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002093",
+          "type": "xp_levels",
+          "xp_levels": 17
+        },
+        {
+          "id": "20002094",
+          "type": "item",
+          "item": "minecraft:dragon_breath",
+          "count": 1,
+          "reward_table_index": 0
+        }
+      ],
+      "optional": false
+    },
+    {
+      "id": "20002098",
+      "title": "Deadly Module Traps",
+      "subtitle": "High Risk Dungeon Hazards",
+      "description": [
+        "Apotheosis Deadly Module adds telegraphed traps to dungeons: spike pits (visible pressure plates), poison dart walls, lava rooms, insta-kill drop chambers.",
+        "The deadliest trap rooms hold the best loot",
+        "Traps are avoidable — watch for tripwires, suspicious chests, and unusual block placement",
+        "GraveStone preserves your items if you misstep."
+      ],
+      "icon": "minecraft:tripwire_hook",
+      "x": 7.5,
+      "y": 0,
+      "shape": "square",
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "20002096",
+          "type": "checkmark",
+          "value": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20002097",
+          "type": "xp_levels",
+          "xp_levels": 4
+        }
+      ],
+      "optional": true
+    }
+  ],
+  "quest_links": []
+}

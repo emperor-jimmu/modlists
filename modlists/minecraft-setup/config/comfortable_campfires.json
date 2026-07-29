@@ -1,0 +1,28 @@
+{
+  "blocks": {
+    "minecraft:campfire": {
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration": 600,
+          "range": 8.0
+        }
+      ],
+      "tickInterval": 100,
+      "particles": true
+    },
+    "minecraft:soul_campfire": {
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "amplifier": 0,
+          "duration": 600,
+          "range": 8.0
+        }
+      ],
+      "tickInterval": 100,
+      "particles": true
+    }
+  }
+}

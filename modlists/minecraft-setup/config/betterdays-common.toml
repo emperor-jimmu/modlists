@@ -1,0 +1,53 @@
+[time]
+	#SEASON mode: day length varies by Serene Seasons sub-season.
+	#Day/night ratio automatically shifts — summer has long days, winter short ones.
+	#Latitude controls the extremity of the shift (48 = mild continental).
+	#Allowed Values: RATIO, MINUTES, REALTIME, SEASON
+	speedMethod = "SEASON"
+	#Total real-world minutes for a full day+night cycle.
+	#Vanilla length: 20.0 minutes
+	#Range: 0.1 ~ 10000.0
+	seasonDayMinutes = 20.0
+	#Latitude used to calculate day/night ratio per season.
+	#Range: -90.0 ~ 90.0
+	seasonLatitude = 48.0
+	#The time to start day. Default: 23500, Range: 22300.0 ~ 24000.0
+	dayStart = 23500.0
+	#The time to start night. Default: 12500, Range: 12000.0 ~ 13000.0
+	nightStart = 13000.0
+
+	[time.effects]
+		#Syncs weather passage with time speed. SLEEPING = only when sleeping.
+		#Allowed Values: NEVER, ALWAYS, SLEEPING
+		weatherEffect = "SLEEPING"
+		#Syncs random tick speed with time speed. Keep disabled to avoid crop desync with Serene Seasons.
+		#Allowed Values: NEVER, ALWAYS, SLEEPING
+		randomTickEffect = "NEVER"
+		#The base random tick speed used by randomTickEffect.
+		#Range: > 0
+		baseRandomTickSpeed = 3
+		#Progresses potion effects with time speed. Keep disabled — confusing.
+		#Allowed Values: NEVER, ALWAYS, SLEEPING
+		potionEffect = "NEVER"
+		#Progresses hunger effects with time speed. Keep disabled — annoying.
+		#Allowed Values: NEVER, ALWAYS, SLEEPING
+		hungerEffect = "NEVER"
+		#Progresses block entities (furnaces, hoppers) with time speed. Keep disabled — can desync items and waste fuel.
+		#Allowed Values: NEVER, ALWAYS, SLEEPING
+		blockEntityEffect = "NEVER"
+		#Progresses crop growth with time speed. Keep disabled — conflicts with Serene Seasons crop cycle timers.
+		#Allowed Values: NEVER, ALWAYS, SLEEPING
+		cropEffect = "NEVER"
+
+[sleep]
+	#Enables smooth time acceleration while sleeping.
+	enableSleepFeature = true
+	#Maximum sleep speed (when all players sleep). 110 ≈ vanilla sleep time.
+	#Range: 0.0 ~ 24000.0
+	sleepSpeedMax = 110.0
+	#Minimum sleep speed (when 1 player sleeps in a full server).
+	#Range: 0.0 ~ 24000.0
+	sleepSpeedMin = 1.0
+	#Speed when all players sleep. -1 disables this and uses sleepSpeedMax.
+	#Range: -1.0 ~ 24000.0
+	sleepSpeedAll = -1.0

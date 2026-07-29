@@ -1,0 +1,5 @@
+# Windows reserved device names (git artifact)
+/nul
+
+.playwright-mcp/
+.superpowers/
