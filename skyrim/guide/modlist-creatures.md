@@ -38,7 +38,9 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Riv's Wolves of the Wild — Diverse Wolf Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/173704) | Alternative | BOS-based wolf model variety. Verify compatibility with Diverse True Wolves and Dogs (38058). |
 | [Diverse Dragon Priests — Pixie's Creature Series](https://www.nexusmods.com/skyrimspecialedition/mods/105519) | Alternative | BOS-based dragon priest mask/clothing variety. Verify vs Apophysis Dragon Priest Masks (5800). |
 | [Diverse Dragon Priests — Xtudo Optimized Textures](https://www.nexusmods.com/skyrimspecialedition/mods/105713) | Add-on | Optimized textures for Diverse Dragon Priests. Install after base. |
-| [Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/124394) + [Expanded](https://www.nexusmods.com/skyrimspecialedition/mods/154872) | Alternative | Skeleton model replacer + variants. CONFLICT: alternative to Skeleton Replacer HD (52845). Pick one skeleton route. |
+| [Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/124394) | Baseline | **Locked.** Skeleton model replacer by Xtudo. Consistent undead visual direction with locked Draugrs SE and Spider SE baselines. 2,002 endorsements. |
+| [Skeletons SE - Expanded](https://www.nexusmods.com/skyrimspecialedition/mods/154872) | Baseline | **Locked.** BOS-based skeleton variety addon. Install after Skeletons SE. |
+| Skeleton Replacer HD (52845) | Alternative | Rejected — single-model replacer, no variety. Xtudo consistency across undead stack (Draugrs, Spiders, Skeletons) preferred. |
 | [TNT - True Nordic Trolls - Revamped](https://www.nexusmods.com/skyrimspecialedition/mods/140979) | Baseline | Troll model/texture overhaul. |
 | [Cannibal Draugr on Solstheim](https://www.nexusmods.com/skyrimspecialedition/mods/21238) | Baseline | Bloodmoon-flavored identity. |
 | [Hagraven — New models and Textures](https://www.nexusmods.com/skyrimspecialedition/mods/160407) | Baseline | |

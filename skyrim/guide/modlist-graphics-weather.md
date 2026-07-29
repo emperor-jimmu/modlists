@@ -88,29 +88,25 @@ The cosmic visual layer: night-sky stars, aurora rendering, sky-dome enhancement
 
 ### Baseline
 
-| Mod         | Description                                                                                                               | Nexus                                                             |
-|-------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| AURORA S.E. | Adds proper northern-lights rendering. Genuinely upgrades the night vista without bloating the weather or lighting layer. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6021) |
-
-Keep the discipline-first route alive if the weather mod's bundled star/sky textures already read well. Defer a full sky-dome overhaul if playtesting shows the night sky needs more investment.
+| Mod                                                                                   | Description                                                                                                                            | Nexus                                                               |
+|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| [Praedy's Night Sky AIO](https://www.nexusmods.com/skyrimspecialedition/mods/47530)   | **Locked.** Complete night-sky overhaul: stars (9 options), nebula (16 options), galaxy (4 options), constellations, Masser + Secunda moons, auroras. FOMOD-tunable. Choose 2K. 5,795 endorsements, v2.1. |                                                                     |
+| [Shooting Stars SE](https://www.nexusmods.com/skyrimspecialedition/mods/73090)        | **Locked.** Randomized shooting-star streaks overlaying the static sky. Script-free, no overlap with Praedy's textures.                  |                                                                     |
 
 ### Alternatives
 
 | Mod                                                                                   | Description                                                                                            | Nexus                                                               |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Rally's Celestial Canvas                                                              | Complete night-sky overhaul: auroras, galaxy, stars, constellations. Hand-drawn (8K galaxy, 4K stars). | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110869) |
-| Realistic Galaxy                                                                      | Galaxy texture replacer.                                                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111458) |
-| Ultra Hi-Res Nightsky                                                                 | Hubble-imagery galaxy, up to 16K.                                                                      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6096)   |
-| Worlds Behind Glass                                                                   | High-res night sky for telescope mods.                                                                 | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/158077) |
-| [Draco's fantasy auroras](https://www.nexusmods.com/skyrimspecialedition/mods/120563) | Aurora/sky visual replacer. Optional cosmetic.                                                         |                                                                     |
-| [Draco's moons](https://www.nexusmods.com/skyrimspecialedition/mods/40605)            | Moon visual replacer. Optional cosmetic.                                                               |                                                                     |
-| [Shooting Stars SE](https://www.nexusmods.com/skyrimspecialedition/mods/73090)        | Adds randomized shooting-star streaks to the night sky. Script-free.                                    |                                                                     |
-| [Praedy's Night Sky AIO](https://www.nexusmods.com/skyrimspecialedition/mods/47530)   | High-quality night-sky and star texture replacer. Choose 2K.                                             |                                                                     |
-| [Texture Overhaul Stars and Galaxy of Nirn](https://www.nexusmods.com/skyrimspecialedition/mods/41260) | 8K star and galaxy texture replacer.                                                        |                                                                     |
-| [Skyrim Textures Redone - Stars](https://www.nexusmods.com/skyrimspecialedition/mods/4931) | Star texture replacer. Lighter alternative to full sky overhauls.                                  |                                                                     |
+| Rally's Celestial Canvas                                                              | Rejected — Praedy's AIO chosen for higher endorsement signal (5,795 vs Rally's) and granular FOMOD tuning (9 star options, 16 nebula options). | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/110869) |
+| AURORA S.E.                                                                           | Rejected — redundant. Praedy's includes aurora coverage.                                               | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6021)   |
+| Realistic Galaxy / Ultra Hi-Res Nightsky / Worlds Behind Glass                        | Rejected — single-texture replacers. Praedy's AIO provides coherent full-sky coverage.                 |                                                                     |
+| Draco's fantasy auroras / Draco's moons                                               | Rejected — redundant with Praedy's aurora and moon coverage.                                           |                                                                     |
+| Texture Overhaul Stars and Galaxy of Nirn                                             | Rejected — single-texture replacer. Praedy's AIO preferred for coherent stack.                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/41260)  |
+| Skyrim Textures Redone - Stars                                                        | Rejected — single-texture replacer. Praedy's AIO preferred for coherent stack.                         | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/4931)   |
 
 ### Risks & Compatibility
 
-- Aurora mods can look out of place in non-northern settings; verify southern holds.
-- Sky-dome edits can fight with weather mods that tweak the night sky. Give the aurora mod priority for night-sky changes.
+- Praedy's aurora textures can look out of place in non-northern settings; verify southern holds.
+- Sky-dome edits can fight with weather mods that tweak the night sky. Give Praedy's sky-dome priority for night-sky changes.
 - Strong auroras require a real night-darkness baseline from → `Performance`; bright nights kill the aurora.
+- Shooting Stars SE is script-free and adds dynamic streaks on top of Praedy's static textures — no overlap risk. Verify the combined visual reads cleanly under Azurite III CS dark nights.

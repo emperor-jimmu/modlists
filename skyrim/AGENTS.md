@@ -119,7 +119,7 @@ When moving mods from `TODO.md` into their section files:
 - `.playwright-mcp/` and `*.log` are ignored in `.gitignore`; they are scratch artifacts from verification work, not project content.
 - `nexus-*-snapshot.md` files in the repo root are scratch artifacts from playwright-based mod research — clean them up after committing.
 
-## Session Decisions & Verified Baselines (2026-07-18)
+## Session Decisions & Verified Baselines (2026-07-29)
 
 These are confirmed from the current modlist state. When evaluating armor/body/physics mods, use these as givens.
 
@@ -134,21 +134,45 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 - **Moon and Star (4301):** Listed in `modlist-world-content.md:413`. Undeath Moon and Star patches are adoptable.
 - **Beyond Skyrim - Bruma (10917):** Listed in `modlist-world-content.md:376`. Bruma-related patches/replacers are adoptable.
 - **LoTD:** Anchors the museum/collection pillar. All quest mod displays in `modlist-lotd.md:19-36`. Undeath LoTD patches should be verified.
+- **Undeath Remastered (6180):** Adopted. Classical Lichdom (40802) locked as lich gameplay route. GDOS Door Patch (132038), Camera Fix (52950), Conjuration Absorb Fix (18762), and Facegen Data Patch (20046) required.
 
 ### Graphics Framework
 - **Community Shaders:** Exclusive graphics framework. No ENB, no LUX. PBR texture companions (e.g. Buoyant Armiger PBR, Dark Apprentice PBR) are in-scope.
 - **Embers XD (37085):** Baseline fire/ember mod in `modlist-graphics-lighting.md:37`. Required by Diverse Campfires (109731).
 - **GDOS — Glorious Doors of Skyrim (32376):** Baseline in `modlist-graphics-textures.md:29`. Undeath GDOS Door Patch (132038) is REQUIRED if Undeath is adopted.
 
-### Behavior & Animation
-- **Pandora:** Behavior engine baseline. Nemesis-format behavior patches are generally backward-compatible (used for Animated Eating Redux 4652).
-- **OAR — Open Animation Replacer:** Conditional animation selection baseline.
+### Graphics — Landscape & Sky
+- **TomatoRim PBR Landscapes AIO (177621):** Locked landscape texture baseline. PBR-native, chosen for shared-author visual coherence with Tomato's PBR Vanilla Trees (locked tree texture companion to NOTWL). Choose 2K.
+- **Enhanced Rocks and Mountains - CM and PBR (121336):** Locked mountain/rock identity. Drop Majestic Mountains entirely.
+- **Praedy's Night Sky AIO (47530):** Locked night sky baseline (stars, nebula, galaxy, constellations, moons, auroras). FOMOD-tunable. Choose 2K. 5,795 endorsements, v2.1.
+- **Shooting Stars SE (73090):** Locked complementary layer. Script-free dynamic shooting star streaks on top of Praedy's static sky.
 
-### Armor Stack Decisions
+### Behavior & Animation
+- **Pandora:** Behavior engine baseline. Nemesis-format behavior patches are generally backward-compatible.
+- **OAR — Open Animation Replacer:** Conditional animation selection baseline.
+- **BFCO — Attack Behavior Framework:** Locked combat framework. MCO rejected. See `modlist-animations.md:184`. BFCO provides built-in gamepad support, jump attacks, swim attacks, and charge attacks.
+- **Thundertrot Horse Animations (140941):** Locked horse movement animation baseline (walk, trot, gallop). 763 endorsements, v2.1.
+- **Horse Animation Overhaul - WIP (140122):** Locked rider animation baseline with directional movement support. Requires Thundertrot for directional patch.
+- **RAO (102881):** Fallback if HAO is abandoned. Same author (mxnedula), 3,804 endorsements, v2.0.
+
+### Weather & Travel
+- **Azurite III CS (162153):** Locked weather baseline. FOMOD with darker nights and reduced bloom for tunable grim-dark aesthetic. Requires balanced CS tier (SSGI, SSS, Grass Lighting, Wetness Effects).
+- **Journeyman (92220):** Locked fast travel system. Restricts fast travel unless Travel Pack is crafted/purchased. SKSE plugin + ESP. CFTO rejected.
+
+### Armor & Clothing
 - **Immersive Armors** is baseline. HIMBO Conversion V2 (76552) is the male path.
 - **FSMP physics armors** are adoptable (FSMP is baseline). Include HDT-SMP patches where available.
 - **SPID distribution** companions are relevant for NPC integration of armor mods.
+- **Artesian Cloaks of Skyrim (17416):** Locked cloak baseline. Higher-detail cloak mesh/texture replacer. Pairs with Dynamic Artisan Cloaks (146438) for OAR-based cloak physics.
+- **Dynamic Artisan Cloaks (146438):** Locked cloak physics layer. OAR-based cloak animations.
+
+### Combat & Difficulty
+- **Dragon War (51310):** Locked dragon combat overhaul. Structured encounter tempo. Complements Dragons Use Thu'um (87085, baseline dragon AI).
+
+### Creatures — Undead
+- **Skeletons SE (124394):** Locked skeleton model replacer by Xtudo. 2,002 endorsements. Consistent undead visual direction with Draugrs SE (123170) and Spider SE (182638) — all Xtudo baselines.
+- **Skeletons SE - Expanded (154872):** Locked BOS-based skeleton variety addon. Install after Skeletons SE. Skeleton Replacer HD (52845) rejected — single-model, no variety.
 
 ### Undeath Decisions
-- **Undeath Remastered (6180):** Quest mod candidate. If adopted: GDOS Door Patch (132038) is mandatory. Camera Fix (52950) and Conjuration Absorb Fix (18762) are required bugfixes. Pick ONE lich gameplay route: Classical Lichdom (40802) recommended over Immersive Lichdom (9223) or The Ascension (32960). Facegen Data Patch (20046) required if NPC overhauls are used.
+- **Undeath Remastered (6180):** Adopted. Classical Lichdom (40802) locked as lich gameplay route. GDOS Door Patch (132038), Camera Fix (52950), Conjuration Absorb Fix (18762), and Facegen Data Patch (20046) required.
 

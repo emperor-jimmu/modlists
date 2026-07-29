@@ -4,7 +4,6 @@
 
 - **Dragon Bard Ultimate (151231)** — REJECTED. Skyrim's Got Talent is locked as the bard gameplay baseline. Dragon Bard Ultimate adds playable instruments + singing with custom animations but conflicts with the locked baseline. Heavy Pandora maintenance cost for niche value. Revisit only if Bard College expansion becomes a priority.
 
-- Verify Night Sky texture stack coherence (Shooting Stars + star textures — potential overlap).
 - Test Beards of Power under CS lighting for neck clipping.
 - Evaluate finding-derkeethus/Bethesda FormID fix with xEdit for unresolved conflicts.
 - Verify New Beast Feet meshes don't clip with beast-race footwear from Immersive Armors or other armor packs.

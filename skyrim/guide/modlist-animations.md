@@ -244,15 +244,20 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
 | [SkyClimb](https://www.nexusmods.com/skyrimspecialedition/mods/97253)                                                          | Alternative | Climbing-first alternative built around EVGAT. Pick one (not cumulative with SkyParkour). |
 | Discipline-first route                                                                                                         | Alternative | Vanilla climbing + TDM + sprint/jump only.                                                |
 
-### Horse Animation Candidates
+### Horse Animations
 
 | Mod | Type | Notes |
 | --- | --- | --- |
-| [Thundertrot Horse Animations](https://www.nexusmods.com/skyrimspecialedition/mods/140941) | Candidate | OAR-based horse movement/idle replacer. |
-| [Horse Animation Overhaul (WIP - OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/140122) | Candidate | Broader horse animation replacement. WIP — evaluate stability. |
-| [Riding Animation Overhaul - RAO (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/102881) | Candidate | OAR-based horse riding animation replacer.                      |
+| [Thundertrot Horse Animations](https://www.nexusmods.com/skyrimspecialedition/mods/140941) | Baseline | **Locked.** OAR-based horse movement/idle replacer (walk, trot, gallop). 763 endorsements, v2.1. |
+| [Horse Animation Overhaul (WIP - OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/140122) | Baseline | **Locked.** OAR-based rider animation replacement with directional movement support. Requires Thundertrot for directional movement patch. WIP status — monitor for stable release. |
 
-All three are OAR-based and work under Pandora. Do not install together without verifying mutual compatibility.
+### Alternatives
+
+| Mod | Type | Notes |
+| --- | --- | --- |
+| [Riding Animation Overhaul - RAO (OAR)](https://www.nexusmods.com/skyrimspecialedition/mods/102881) | Alternative | Rejected — HAO is the newer successor by the same author (mxnedula) with directional movement support. RAO v2.0 (3,804 endorsements) remains the fallback if HAO is abandoned. |
+
+All horse animation mods are OAR-based and work under Pandora. Thundertrot (horse layer) + HAO (rider layer) are designed to stack — HAO's directional movement patch requires Thundertrot as a dependency.
 
 ### Companion Candidates (evaluate after baseline is locked)
 
