@@ -10,6 +10,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Skyrim         | Skyrim SE                    | [`skyrim/`](./skyrim/)                   | Active |
 | Cyberpunk      | Cyberpunk 2077               | [`cyberpunk/`](./cyberpunk/)             | Active |
 | ETS2           | Euro Truck Simulator 2       | [`ets2/`](./ets2/)                       | Active |
+| RimWorld       | RimWorld                     | [`rimworld/`](./rimworld/)               | Active |
 
 ## Adding a new modlist
 
@@ -70,6 +71,9 @@ cyberpunk/              # Cyberpunk 2077 modlist
 ├── AGENTS.md
 └── ...
 ets2/                   # Euro Truck Simulator 2 modlist
+├── AGENTS.md
+└── ...
+rimworld/               # RimWorld modlist
 ├── AGENTS.md
 └── ...
 production/             # Production deployment config
