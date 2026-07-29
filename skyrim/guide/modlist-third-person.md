@@ -47,6 +47,12 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 ## Dodge, Sprint, And Movement Responsiveness
 ### Baseline
 - **TK Dodge RE - Script Free** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56956)) — **Locked baseline.** Script-free dodge with configurable step/distance. Maps cleanly to gamepad. Tactical repositioning, not combat pacing center.
+- **S.M.C. — Skyrim Motion Control** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/97204)) — **Baseline.** Script-free SKSE plugin: acceleration ramp-up, momentum on stop, configurable jump boost, slope speed scaling, and per-state speed/accel multipliers (bow-drawn, magic-cast, swimming, walking, auto-walk, etc.). Works on gamepad. Fully tunable INI, reloadable in-game with Enter. Skyrim Souls compat toggle (v2.4+). S.M.C.'s sprint-jump boost works only with Better Jumping v1.7.1 or below — disable in INI if using newer Better Jumping. Evaluated alongside Inertia (172783, → `Animations` candidate): S.M.C. handles speed/acceleration at the SKSE physics-param layer; Inertia handles physical body-response. Compatible, not redundant. Tune INI values to match Static with Hard Threat — particularly `fAcceleration`, `fStoppingForce`, and `fJumpBoost`.
+
+### Risks & Compatibility
+- Incompatible with Scrolling Speed 2, Wounds (17581), MBO (38950) — none present in this list.
+- Pace (27268): works but disable Pace's movement speed settings in MCM.
+- Jump boost may fail intermittently (known issue); low `fStoppingForce` can cause momentum to not decay when another speed buff/nerf is active.
 
 ### Alternatives
 - **TK Dodge SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15309)) — Legacy fallback reference.

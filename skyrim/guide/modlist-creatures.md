@@ -97,7 +97,7 @@ How creatures attack, react, and express identity once combat starts.
 | Mod | Type | Notes |
 | --- | --- | --- |
 | [Dragons Use Thu'um](https://www.nexusmods.com/skyrimspecialedition/mods/87085) | Baseline | Smarter dragon shout usage and encounter AI. |
-| [The Restless Dead](https://www.nexusmods.com/skyrimspecialedition/mods/94100) | Baseline | Undead-behavior baseline. Replaces abandoned Draugr Upgrades and Improvements. |
+| [The Restless Dead](https://www.nexusmods.com/skyrimspecialedition/mods/94100) | Baseline | Undead-behavior baseline. Replaces abandoned Draugr Upgrades and Improvements. Requires [Skeletons SE patch](https://www.nexusmods.com/skyrimspecialedition/mods/125609) for compatibility with locked Skeletons SE (124394) baseline. |
 | [Epic Dragon Combat REDONE](https://www.nexusmods.com/skyrimspecialedition/mods/126680) | Alternative | Full dragon combat overhaul — 20+ new types, unique abilities, custom VFX. Self-contained; replaces baseline dragon visual direction. |
 | [Dragon War](https://www.nexusmods.com/skyrimspecialedition/mods/51310) | Alternative | Heavier dragon route for fight structure/tempo. |
 | [Dragons actually fall down](https://www.nexusmods.com/skyrimspecialedition/mods/156824) | Alternative | Dragons collapse on the ground when staggered/low health. |

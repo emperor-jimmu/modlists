@@ -80,6 +80,12 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [IA HIMBO Conversion V2](https://www.nexusmods.com/skyrimspecialedition/mods/76552)                       | Male path   | all  | BodySlide for all IA armors for HIMBO. Stacks on Retexture/Mesh Fixes. Includes CBBE patch.       |
 | [IA — Realistic Armors replace by Xtudo](https://www.nexusmods.com/skyrimspecialedition/mods/36746)       | Optional    | all  | Swaps 10 IA sets for NordWarUA Realistic Armors. Requires Realistic Armor (36151).                |
 
+### SkyPatcher-Powered Equipment Expansions
+
+| Mod | Description | Notes |
+| --- | --- | --- |
+| [Sentinel — An Equipment Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/100985) | ~300 armor/weapon/clothing variants added via SkyPatcher. Modular — choose individual sets in FOMOD. Functionally identical to originals (cosmetic-only variants). Includes guard armor sets, faction sets, priest robes, AE content integration. | No record conflicts — SkyPatcher-based. No patches needed for NPC appearance mods. Detects Adamant automatically. Compatible with Immersive Armors (different scope — IA adds new sets, Sentinel variants existing ones). Compatible with Xavbio retextures (modlist baseline). Requires AE content for some modules. |
+
 ### Armor Set Additions
 
 | Mod | Description | Notes |

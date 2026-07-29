@@ -53,11 +53,13 @@ Authored settlement content — real places, not just denser vibes.
 | [JK's Castle Volkihar](https://www.nexusmods.com/skyrimspecialedition/mods/116314) | ESL-flagged. |
 | [JK's Dark Brotherhood Sanctuaries](https://www.nexusmods.com/skyrimspecialedition/mods/121950) | ESL-flagged. |
 
-### Alternatives
+### Minor Settlement Overhauls
 
-| Mod                                      | Description                                                                    |
-|------------------------------------------|--------------------------------------------------------------------------------|
-| [The Great Cities](https://www.nexusmods.com/skyrimspecialedition/mods/320) |  Major-hold-capital follow-on. Treat as deliberate second-step.                  |
+| Mod | Description |
+| --- | --- |
+| [Gonzeh — Stonehills ReRe-imagined](https://www.nexusmods.com/skyrimspecialedition/mods/133572) | Unique architecture, new interiors, mini-tavern with barmaid, reworked quarry center. ESL-flagged. Has built-in patches for Embers XD (baseline), LoTD (baseline), AI Overhaul, Cutting Room Floor, Northern Roads, NSUTR, Spaghetti Towns. |
+
+### Alternatives
 | [Capital Whiterun Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/37982) | If JK's patch missing, mutually exclusive with JK's Whiterun edits. |
 | [Skyfall's Fortified Morthal](https://www.nexusmods.com/skyrimspecialedition/mods/126871) | Morthal city overhaul. Overrides COTN Morthal — choose one. |
 | [The Great Town of Ivarstead SSE](https://www.nexusmods.com/skyrimspecialedition/mods/34505) |  |
