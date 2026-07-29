@@ -10,6 +10,9 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Skyrim    | Skyrim SE                   | [`skyrim/`](./skyrim/)       | Active |
 | Cyberpunk | Cyberpunk 2077              | [`cyberpunk/`](./cyberpunk/) | Active |
 | ETS2      | Euro Truck Simulator 2      | [`ets2/`](./ets2/)           | Active |
+| GTA IV    | Grand Theft Auto IV         | [`gtaiv/`](./gtaiv/)         | Active |
+| GTA V     | Grand Theft Auto V          | [`gtav/`](./gtav/)           | Active |
+| RDR2      | Red Dead Redemption 2       | [`rdr2/`](./rdr2/)           | Active |
 | RimWorld  | RimWorld                    | [`rimworld/`](./rimworld/)   | Active |
 
 ## Adding a new modlist
@@ -76,7 +79,15 @@ ets2/                   # Euro Truck Simulator 2 modlist
 rimworld/               # RimWorld modlist
 ├── AGENTS.md
 └── ...
-production/             # Production deployment config
+gtaiv/                  # Grand Theft Auto IV modlist
+├── AGENTS.md
+└── ...
+gtav/                   # Grand Theft Auto V modlist
+├── AGENTS.md
+└── ...
+rdr2/                   # Red Dead Redemption 2 modlist
+├── AGENTS.md
+└── ...
 README.md               # collection index
 AGENTS.md               # agent instructions
 ```
