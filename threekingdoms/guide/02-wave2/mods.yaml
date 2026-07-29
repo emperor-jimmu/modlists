@@ -1,0 +1,30 @@
+mods:
+  - name: "Example Total Overhaul"
+    url: "https://nexusmods.com/totalwarthreekingdoms/mods/6"
+    author: "OverhaulAuthor"
+    version: "3.0.0"
+    category: ["mechanics"]
+    wave: 2
+    description: "Complete overhaul of diplomacy, economy, and character systems."
+    dependencies: ["Example Graphics Overhaul"]
+    conflicts:
+      - mod: "Example Content Expansion"
+        resolution: "Compatible only with patches from the mod page. Use the compatibility patch."
+      - mod: "Vanilla Diplomacy Fix"
+        resolution: "Incompatible — do not use together"
+    mechanic_impact: "Replaces the entire diplomacy system with a deeper offer-and-demand negotiation model. Adds population mechanics to economy. Introduces general loyalty factions."
+    adult: false
+    notes: "Requires new campaign. Read the mod page carefully."
+
+  - name: "Example Endgame Challenge"
+    url: "https://nexusmods.com/totalwarthreekingdoms/mods/7"
+    author: "ChallengeAuthor"
+    version: "1.2.0"
+    category: ["mechanics"]
+    wave: 2
+    description: "Adds late-game crisis events, horde armies, and empire-shattering dilemmas."
+    dependencies: ["Example Total Overhaul"]
+    conflicts: []
+    mechanic_impact: "Adds scripted endgame scenarios that trigger when certain conditions are met (e.g., territory count, prestige level)"
+    adult: false
+    notes: "Can be toggled on/off mid-campaign."

@@ -1,0 +1,14 @@
+conflicts:
+  - mod_a: "Example Content Expansion"
+    mod_b: "Another Content Mod"
+    type: "direct"
+    waves_affected: [1, 2]
+    resolution: "Load Example Content Expansion before Another Content Mod, or use the compatibility patch from the main mod page."
+    notes: "Verified on v1.7.2 — both work with load order adjustment."
+
+  - mod_a: "Example Total Overhaul"
+    mod_b: "Vanilla Diplomacy Fix"
+    type: "incompatible"
+    waves_affected: [2]
+    resolution: "Do not use Vanilla Diplomacy Fix with Example Total Overhaul. The overhaul replaces the diplomacy system entirely."
+    notes: "Vanilla Diplomacy Fix is unnecessary with the overhaul."

@@ -1,0 +1,14 @@
+ideas:
+  - name: "Unique Faction Intro Animations"
+    description: "Custom campaign intro cutscenes for each faction, similar to the base game intros but with more variety."
+    category: "content"
+    target_wave: 2
+    gap: "No existing mod provides this. Community has expressed interest."
+    references: []
+
+  - name: "Extended Ancillaries & Items"
+    description: "Adds more unique weapons, armors, and accessories with lore-friendly names and backstories."
+    category: "content"
+    target_wave: 1
+    gap: "Existing item mods are either outdated or overpowered."
+    references: []

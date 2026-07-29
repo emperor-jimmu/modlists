@@ -1,0 +1,28 @@
+mods:
+  - name: "Example UI Improvement Mod"
+    url: "https://nexusmods.com/totalwarthreekingdoms/mods/1"
+    author: "ExampleAuthor"
+    version: "1.0.0"
+    category: ["ui"]
+    wave: 0
+    description: "Improves the campaign map UI with better tooltips and information panels."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Load after any total conversion mods."
+
+  - name: "Example QoL Fixes"
+    url: "https://nexusmods.com/totalwarthreekingdoms/mods/2"
+    author: "AnotherAuthor"
+    version: "2.3.1"
+    category: ["qol"]
+    wave: 0
+    description: "Fixes various quality-of-life issues including diplomatic feedback and recruitment sorting."
+    dependencies: []
+    conflicts:
+      - mod: "Example UI Improvement Mod"
+        resolution: "Load after Example UI Improvement Mod"
+    mechanic_impact: null
+    adult: false
+    notes: ""

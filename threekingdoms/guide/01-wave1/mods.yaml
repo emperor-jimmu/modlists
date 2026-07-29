@@ -1,0 +1,41 @@
+mods:
+  - name: "Example Graphics Overhaul"
+    url: "https://nexusmods.com/totalwarthreekingdoms/mods/3"
+    author: "GraphicsAuthor"
+    version: "2.0.0"
+    category: ["graphics"]
+    wave: 1
+    description: "High-resolution textures for units, buildings, and campaign map."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Requires high-end GPU."
+
+  - name: "Example Content Expansion"
+    url: "https://nexusmods.com/totalwarthreekingdoms/mods/4"
+    author: "ContentAuthor"
+    version: "1.5.0"
+    category: ["content"]
+    wave: 1
+    description: "Adds new unique units, buildings, and events for several factions."
+    dependencies: ["Example Graphics Overhaul"]
+    conflicts:
+      - mod: "Another Content Mod"
+        resolution: "Load this one first, then Another Content Mod"
+    mechanic_impact: "Adds unique faction buildings with new recruitment options"
+    adult: false
+    notes: "Start a new campaign after enabling."
+
+  - name: "Example Audio Pack"
+    url: "https://nexusmods.com/totalwarthreekingdoms/mods/5"
+    author: "AudioAuthor"
+    version: "1.0.0"
+    category: ["audio"]
+    wave: 1
+    description: "Replaces battle music with traditional Chinese instruments."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Compatible with all overhauls."
