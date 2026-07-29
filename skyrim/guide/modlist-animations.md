@@ -15,7 +15,7 @@ Skyrim's animation stack has four distinct layers. Each layer has exactly one ac
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------------------------------|
 | **Behavior Engine**            | Generates behavior files from animation data. Runs as an external tool (MO2 executable).                                                                             | Yes           | Pandora                                   |
 | **Conditional Replacer**       | Selects which `.hkx` file plays based on runtime conditions (weapon type, location, weather, NPC identity, etc.).                                                    | Yes           | OAR (Open Animation Replacer)             |
-| **Combat Animation Framework** | Overhauls attack behavior: replaces vanilla attack chain logic with modern combo systems, enables motion-data-driven attacks, adds jumping/swimming/charged attacks. | Yes           | TBD — MCO or BFCO (see below)             |
+| **Combat Animation Framework** | Overhauls attack behavior: replaces vanilla attack chain logic with modern combo systems, enables motion-data-driven attacks, adds jumping/swimming/charged attacks. | Yes           | BFCO                                      |
 | **NPC Combat AI**              | Teaches NPCs to use combat animation movesets intelligently — combo selection, distance management, attack commitment.                                               | None required | SCAR (Baseline after Precision is proven) |
 
 ### Behavior Engines

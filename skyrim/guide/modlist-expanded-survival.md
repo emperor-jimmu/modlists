@@ -85,8 +85,8 @@ What happens when the player falls in combat. Goal: add consequence and narrativ
 
 | Mod                                                                           | Type        | Dial   | Notes                                                                                                        |
 |-------------------------------------------------------------------------------|-------------|--------|--------------------------------------------------------------------------------------------------------------|
-| [Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924) | Baseline    | #1, #4 | Nemesis system — respawn with debuffs, enemies gain name/buffs/presence, defeat nemesis to restore progress. |
-| Discipline-first route                                                        | Alternative | all    | Vanilla death-and-reload loop.                                                                               |
+| Discipline-first route                                                        | Baseline    | all    | Vanilla death-and-reload loop. Chosen over Shadow of Skyrim for zero compatibility risk.                      |
+| [Shadow of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/72924) | Alternative | #1, #4 | Nemesis system — respawn with debuffs, enemies gain name/buffs/presence. Rejected due to script debt at this list's complexity. |
 
 ### Risks & Compatibility
 

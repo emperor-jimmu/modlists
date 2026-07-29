@@ -142,16 +142,16 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 
 | Mod                          | Description                                                                    | Nexus                                                               |
 |------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Traverse the Ulvenwald - 3.3 | Main dense-forest candidate.                                                   | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57874)  |
+| Nature of the Wild Lands     | **Baseline.** Regional tree variety per hold — natural distribution. Fits "Living the world" with varied forest biomes. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63604) |
 | Tomato's PBR Vanilla Trees   | PBR tree texture option; can layer under whichever tree overhaul wins testing. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139375) |
 
 ### Alternatives
 
 | Mod                                    | Description                                         | Nexus                                                               |
 |----------------------------------------|-----------------------------------------------------|---------------------------------------------------------------------|
+| Traverse the Ulvenwald - 3.3           | Dense forest alternative. More uniform canopy.      | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/57874)  |
 | Happy Little Trees                     | Safer fallback baseline.                            | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/50961)  |
-| Fabled Forests                         |                                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94462)  |
-| Nature of the Wild Lands               | Compare only if Ulvenwald misses the right balance. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63604)  |
+| Fabled Forests                         | Fantasy-leaning large trees.                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/94462)  |
 | Happy Little Trees PBR                 | Support signal.                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/159171) |
 | Fabled Forests - Ulvenwald Patch (BOS) | Support signal.                                     | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/134501) |
 | Nature of the Wild Lands - Animations Addon | OAR-based tree interaction animations for NotWL. Requires NotWL base. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/148132) |

@@ -23,7 +23,7 @@ Open decisions requiring resolution before the modlist can advance. Each is pres
 
 ## 1. Combat Animation Framework
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Mechanics, 3P/GP  
 **Section:** `Animations and Movement`  
 **Reference:** `modlist-animations.md:18`
@@ -61,7 +61,7 @@ Open decisions requiring resolution before the modlist can advance. Each is pres
 - Not actively adding new features — development has shifted to BFCO
 - Requires Power Attack Key NG for combo key support
 
-### Recommendation: **Tentative — BFCO**
+### Recommendation: **Decision: BFCO**
 
 BFCO is the forward-looking choice that aligns with "Modern Mechanics." The moveset ecosystem gap is closing. Verify that available movesets cover all weapon types for third-person gamepad parity before locking.
 
@@ -69,7 +69,7 @@ BFCO is the forward-looking choice that aligns with "Modern Mechanics." The move
 
 ## 2. Perk Overhaul
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Mechanics, World, Living  
 **Section:** `Magic & Perks`  
 **Reference:** `modlist-expanded-magic.md:16-24`
@@ -119,7 +119,7 @@ BFCO is the forward-looking choice that aligns with "Modern Mechanics." The move
 - Less cohesive ecosystem — doesn't commit to either direction
 - Niche choice — smaller patch ecosystem than Adamant or Ordinator
 
-### Recommendation: **Tentative — Adamant**
+### Recommendation: **Decision: Adamant**
 
 The modlist already leans heavily Simonrim (Mysticism, Starfrost, Thaumaturgy, Aetherius, Evenstar, Gourmet, Apothecary). Adamant completes that coherent progression stack. If more build expression is needed, layer Triumvirate archetype spells on top rather than switching perk frameworks.
 
@@ -127,7 +127,7 @@ The modlist already leans heavily Simonrim (Mysticism, Starfrost, Thaumaturgy, A
 
 ## 3. Magic Overhaul
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Mechanics, Content  
 **Section:** `Magic & Perks`  
 **Reference:** `modlist-expanded-magic.md:29-51`
@@ -175,7 +175,7 @@ The modlist already leans heavily Simonrim (Mysticism, Starfrost, Thaumaturgy, A
 - Two-mod stack — more coordination for patches
 - Triumvirate's archetype spells may feel narrow if you don't commit to one path
 
-### Recommendation: **Tentative — Mysticism + Triumvirate**
+### Recommendation: **Decision: Mysticism + Triumvirate**
 
 Mysticism provides the sane, balanced foundation that Adamant expects. Triumvirate layers archetype spells for build identity without overwhelming the baseline.
 
@@ -183,7 +183,7 @@ Mysticism provides the sane, balanced foundation that Adamant expects. Triumvira
 
 ## 4. Survival System
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Living, World, Mechanics  
 **Section:** `Survival & Needs`  
 **Reference:** `modlist-expanded-survival.md:12-25`
@@ -232,7 +232,7 @@ Mysticism provides the sane, balanced foundation that Adamant expects. Triumvira
 - Less cohesive ecosystem integration than Starfrost or Frostfall
 - Jack-of-all-trades — doesn't excel at any one survival dimension
 
-### Recommendation: **Tentative — Starfrost**
+### Recommendation: **Decision: Starfrost**
 
 Simonrim coherence wins. Frostfall's script load and UI complexity risk the 3P/GP pillar on a list this large. If Frostfall's depth is desired, Skills of the Wild can layer on top of Starfrost's lighter base.
 
@@ -240,77 +240,58 @@ Simonrim coherence wins. Frostfall's script load and UI complexity risk the 3P/G
 
 ## 5. Weather System
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** UI/Gfx, World  
 **Section:** `Weather & Water`  
 **Reference:** `modlist-graphics-weather.md:10`
 
-### Option A: RAID Weathers
+### Option A: Azurite III CS (Recommended)
 
 **Pros:**
-
-- Designed specifically for Community Shaders compatibility
-- Clean, realistic lighting — natural color palette
-- Modern codebase, active development
-- Good performance profile for a large modlist
+- Purpose-built for Community Shaders tonemapping — "ENB-like visuals without the performance tradeoff"
+- Based on DrJacopo's proven Azurite Weathers and Seasons (popular, well-tested base)
+- 1,263 endorsements, active development (last updated July 2026)
+- FOMOD with optional darker nights and reduced bloom — tunable grim-dark
+- Clean CS integration — no ENB legacy, no compatibility guesswork
+- Active Discord and Nexus community
 
 **Cons:**
+- Some users report rain transparency issues in certain lighting
+- Open Shaders compatibility still being ironed out (Nexus CS build is primary target)
+- Less dramatic than Obsidian by default — darker nights FOMOD needed for grim-dark
 
-- Less dramatic than Obsidian or NAT — may not deliver "grim-dark" aesthetic without heavy tuning
-- Smaller community than Cathedral or Obsidian
-- Fewer companion mods (no RAID-specific cloud/storm additions)
-
-### Option B: Cathedral Weathers
+### Option B: Real Weathers Remastered
 
 **Pros:**
-
-- Most popular weather mod — huge community, extensive presets
-- Balanced visual profile — works well with CS
-- Many companion mods (Cathedral Weathers MCM, seasonal variants)
-- Proven in large modlists (Lexy's LOTD, Living Skyrim)
+- Ground-up CS-native build — takes advantage of HDR Tone Mapping, Cloud Shadows, SSGI, Skylighting
+- Technically ambitious — Directional Ambient Lighting (DALC), moon phase lighting, physical sky approximation
+- Uses CS Overrides system for cleaner compatibility across CS versions
+- 526 endorsements, active development
 
 **Cons:**
+- Users report nights "impossible to see" — conflicts with "reads clearly at 4K" and third-person playability
+- Full feature set requires experimental Jiaye build — not all weathers functional in that mode
+- Newer, less battle-tested (526 vs 1,263 endorsements for Azurite III CS)
+- More moving parts — higher compatibility risk with other CS modules
 
-- Older — some features may be superseded by CS's own atmospheric modules
-- More conservative visual direction than Obsidian or NAT
-
-### Option C: Obsidian Weathers
+### Option C: Obsidian Weathers (legacy fallback)
 
 **Pros:**
-
-- Dark, moody aesthetic — closest to "grim-dark" pillar
-- Strong seasonal variation — feels like a living world
-- Pairs well with True Storms for dramatic weather events
-- Active community — many Obsidian-based weather compilations
+- Dark, moody aesthetic — classic "grim-dark" palette
+- Strong seasonal variation, active community
 
 **Cons:**
+- Not CS-native — requires CS compatibility patching
+- Older codebase — misses CS-specific tonemapping features
 
-- CS compatibility needs verification — some Obsidian weather types may not have CS-specific patches
-- Color grading can be too desaturated for some tastes — may need a weather-tuning companion
-
-### Option D: NAT.ENB III
-
-**Pros:**
-
-- Most photo-realistic weather — closest to "Modern UI and graphics" ideal
-- Built-in post-processing that complements CS
-- Strong atmospheric depth — awe-inspiring world
-
-**Cons:**
-
-- Historically ENB-focused — CS compatibility notes needed
-- Performance cost is moderate-to-high
-- Smaller patch ecosystem than Cathedral
-
-### Recommendation: **Tentative — Obsidian Weathers**
-
-The "grim-dark" pillar points to Obsidian's moody palette. CS compatibility needs explicit verification, but Obsidian's aesthetic aligns most with "Big, dark, awe-inspiring world." Fallback is Cathedral if Obsidian CS patches are insufficient.
+### Recommendation: **Decision: Azurite III CS**
+Purpose-built for CS, mature codebase (Azurite legacy), and tunable grim-dark via darker nights FOMOD. Wins on endorsement count (1,263 vs 526), CS-native design, and optional—not forced—darkness for the "readable at 4K" pillar.
 
 ---
 
 ## 6. Alternate Start
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Living, Content, Mechanics  
 **Section:** `Character & Progression`  
 **Reference:** `modlist-expanded-character.md:12-37`
@@ -359,7 +340,7 @@ The "grim-dark" pillar points to Obsidian's moody palette. CS compatibility need
 - Helgen-destruction assumption baked in — world-state decisions pre-answered
 - Less flexible than Skyrim Unbound Reborn for Dragonborn avoidance
 
-### Recommendation: **Tentative — Skyrim Unbound Reborn**
+### Recommendation: **Decision: Skyrim Unbound Reborn**
 
 "Full disregard for the Dragonborn quest" is an explicit pillar. Skyrim Unbound Reborn delivers that most directly. Pair with "Why I Came to Skyrim - Origin Stories" for narrative grounding.
 
@@ -367,7 +348,7 @@ The "grim-dark" pillar points to Obsidian's moody palette. CS compatibility need
 
 ## 7. Race + Standing Stone Combo
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Mechanics, Living  
 **Section:** `Character & Progression`  
 **Reference:** `modlist-expanded-character.md:42-88`
@@ -402,7 +383,7 @@ The "grim-dark" pillar points to Obsidian's moody palette. CS compatibility need
 - Andromeda's "find all stones" mechanic pushes exploration in a completionist direction — may conflict with slow, organic "Living the World" gameplay
 - More complex — more records to patch with NPC/combat/quest mods
 
-### Recommendation: **Tentative — Aetherius + Evenstar**
+### Recommendation: **Decision: Aetherius + Evenstar**
 
 Coherence with the Simonrim stack (Adamant, Mysticism, Starfrost) outweighs individual expressiveness. Race identity can come from Traits (Biggie Traits) and religion (Pilgrim/Wintersun) instead.
 
@@ -464,7 +445,7 @@ Valhalla Combat and Precision are locked as baseline. The open question is the d
 
 - Difficulty and pacing mod. Evaluate interaction with Arena encounter zones and Valhalla Combat before adding.
 
-### Recommendation: **Tentative — TK Dodge RE**
+### Recommendation: **Decision: TK Dodge RE**
 
 Minimal, proven, script-free. Maps cleanly to gamepad. The "Modern mechanics" pillar demands some dodge mechanic, and TK Dodge RE is the lowest-risk path. Evaluate Relentless after the combat stack is playtested.
 
@@ -472,7 +453,7 @@ Minimal, proven, script-free. Maps cleanly to gamepad. The "Modern mechanics" pi
 
 ## 9. Death Alternative
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Mechanics, Living, World  
 **Section:** `Survival & Needs`  
 **Reference:** `modlist-expanded-survival.md:83-95`
@@ -507,15 +488,15 @@ Minimal, proven, script-free. Maps cleanly to gamepad. The "Modern mechanics" pi
 - Doesn't leverage the "Living the World" or "Modern mechanics" pillars
 - Death loses meaning in a survival-oriented list — just reload and retry
 
-### Recommendation: **Tentative — Shadow of Skyrim**
+### Recommendation: **Decision: Discipline-first (vanilla death)**
 
-If it passes compatibility testing with Valhalla Combat, Precision, TK Dodge, Alternate Perspective, Wyrmstooth, and The Forgotten City, it's a strong thematic fit. The nemesis loop is uniquely "Elder Wilds." Fallback to vanilla if script conflicts emerge.
+Zero compatibility risk chosen over the nemesis system's script debt. Death/reload simplicity wins at this list's complexity level.
 
 ---
 
 ## 10. Loot and World Deleveling
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** World, Mechanics, Living  
 **Section:** `Crafting & Economy`  
 **Reference:** `modlist-expanded-crafting.md:109-111`, `modlist-design-philosophy.md`
@@ -552,7 +533,7 @@ The design philosophy has adopted **#1 Static with Hard Threat** — encounters 
 - Older codebase — maintenance status uncertain
 - Higher compatibility debt than Open World Loot
 
-### Recommendation: **Tentative — Open World Loot (SkyPatched)**
+### Recommendation: **Decision: Open World Loot (SkyPatched)**
 
 The SkyPatched variant saves plugin slots and reduces patch debt. The "Static with Hard Threat" dial is already adopted — OWL implements it cleanly. MorrowLoot Ultimate's scarcity can be approximated via OWL + Arena tweaking.
 
@@ -560,7 +541,7 @@ The SkyPatched variant saves plugin slots and reduces patch debt. The "Static wi
 
 ## 11. Religion System
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Living, Mechanics  
 **Section:** `Character & Progression`  
 **Reference:** `modlist-expanded-character.md:127-130`
@@ -605,7 +586,7 @@ The SkyPatched variant saves plugin slots and reduces patch debt. The "Static wi
 - Newer mod — smaller community, fewer patches
 - Less tested in large modlists
 
-### Recommendation: **Tentative — Pilgrim**
+### Recommendation: **Decision: Pilgrim**
 
 Simonrim coherence again. If deeper faith expression is desired, Wintersun is the fallback. Gods and Worship needs more community vetting.
 
@@ -613,7 +594,7 @@ Simonrim coherence again. If deeper faith expression is desired, Wintersun is th
 
 ## 12. Water
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** UI/Gfx, World  
 **Section:** `Weather & Water`  
 **Reference:** `modlist-graphics-weather.md:53-54`
@@ -657,15 +638,15 @@ Simonrim coherence again. If deeper faith expression is desired, Wintersun is th
 - Heavy — more performance cost than alternatives
 - Not CS-first — competes with the exclusive-CS pillar
 
-### Recommendation: **Tentative — A Water Made For CS In Mind**
+### Recommendation: **Decision: Simplicity of Sea + Water Effects CS**
 
-CS-first design is the pillar. This mod was literally made for the framework. If visual depth is insufficient, Simplicity of Sea is the fallback.
+Lightweight, proven, and CS-compatible. Water Effects CS layered on top delivers the visual depth without the compatibility risk of purpose-built newer mods.
 
 ---
 
 ## 13. Landscape / Terrain Textures
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** UI/Gfx, World  
 **Section:** `Terrain & Flora`  
 **Reference:** `modlist-graphics-terrain.md:17-31`
@@ -713,7 +694,7 @@ CS-first design is the pillar. This mod was literally made for the framework. If
 - High compatibility debt for large modlists
 - Performance cost of texture swapping
 
-### Recommendation: **Tentative — TomatoRim PBR**
+### Recommendation: **Decision: TomatoRim PBR**
 
 PBR is a core capability of the CS-exclusive pipeline. Cathedral Landscapes is the safe fallback, and Seasonal Landscapes is too patch-heavy for this list's complexity.
 
@@ -721,7 +702,7 @@ PBR is a core capability of the CS-exclusive pipeline. Cathedral Landscapes is t
 
 ## 14. Trees
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** UI/Gfx, World  
 **Section:** `Terrain & Flora`  
 **Reference:** `modlist-graphics-terrain.md:145`
@@ -768,15 +749,15 @@ PBR is a core capability of the CS-exclusive pipeline. Cathedral Landscapes is t
 - Fantasy aesthetic may clash with "grim-dark" realism
 - Third-person camera issues amplified by larger tree models
 
-### Recommendation: **Tentative — Traverse the Ulvenwald**
+### Recommendation: **Decision: Nature of the Wild Lands**
 
-Best balance of density, performance, and grim-dark aesthetic. Verify third-person camera clearance with chosen camera mod before locking.
+Regional variety fits "Living the world" better than uniform dense forest. Verify third-person camera clearance and DynDOLOD tuning.
 
 ---
 
 ## 15. Snow Elf Race
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Content, Living, Mechanics  
 **Reference:** `TODO.md:13`
 
@@ -808,7 +789,7 @@ Best balance of density, performance, and grim-dark aesthetic. Verify third-pers
 - Smaller patch ecosystem — fewer mods explicitly support LRON races
 - Less community signal — fewer endorsements than Ancient Falmer
 
-### Recommendation: **Tentative — The Ancient Falmer**
+### Recommendation: **Decision: The Ancient Falmer**
 
 More comprehensive implementation wins. Verify HPH patch availability, dialogue framework compatibility, and alternate start support before locking.
 
@@ -816,7 +797,7 @@ More comprehensive implementation wins. Verify HPH patch availability, dialogue 
 
 ## 16. Undeath — Lich Path
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Content, Living, Mechanics  
 **Reference:** `AGENTS.md:152-154` (Session Decisions)
 
@@ -868,7 +849,7 @@ Undeath Remastered is the candidate quest mod. If adopted, pick one lich gamepla
 - Conjuration Absorb Fix (18762)
 - Facegen Data Patch (20046)
 
-### Recommendation: **Tentative — Classical Lichdom**
+### Recommendation: **Decision: Classical Lichdom**
 
 Most balanced, most tested, best fit for the "Static with Hard Threat" dial. The Ascension's power fantasy undermines the progression philosophy.
 
@@ -876,7 +857,7 @@ Most balanced, most tested, best fit for the "Static with Hard Threat" dial. The
 
 ## 17. Stealth Overhaul
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** Mechanics, 3P/GP  
 **Section:** `Magic & Perks`  
 **Reference:** `modlist-expanded-magic.md:76-78`
@@ -923,7 +904,7 @@ Most balanced, most tested, best fit for the "Static with Hard Threat" dial. The
 - Vanilla detection is dated for "Modern mechanics"
 - No light/sound interplay — stealth feels binary
 
-### Recommendation: **Tentative — RAID**
+### Recommendation: **Decision: RAID**
 
 Minimal, script-free, proven. Delivers "Modern mechanics" for stealth without adding complexity. Book of Shadows is the aspirational fallback if playtesting reveals stealth is still too vanilla.
 
@@ -931,7 +912,7 @@ Minimal, script-free, proven. Delivers "Modern mechanics" for stealth without ad
 
 ## 18. NPC Appearance Overhaul
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** UI/Gfx, World  
 **Section:** `NPCs`  
 **Reference:** `modlist-npcs.md:265` (Open Research), `TODO.md:18`
@@ -969,7 +950,7 @@ No single NPC overhaul is locked. The decision is: one comprehensive overhaul (e
 - Risk of visual inconsistency — different art styles clashing
 - Black-face bug from conflicting NPC edits
 
-### Recommendation: **Tentative — Comprehensive with targeted add-ons**
+### Recommendation: **Decision: Comprehensive with targeted add-ons**
 
 Lock one comprehensive base (Nordic Faces or High Poly NPC Overhaul — TBD by testing), then selectively override specific NPCs with Distinct Faces mods. This minimizes patch debt while allowing quality upgrades for key characters. Vampire follower evaluation (TODO.md:17) should happen after the NPC baseline is locked.
 
@@ -977,7 +958,7 @@ Lock one comprehensive base (Nordic Faces or High Poly NPC Overhaul — TBD by t
 
 ## 19. Dragon Model Replacer
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** UI/Gfx, Content  
 **Section:** `Enemies & Creatures`  
 **Reference:** `modlist-creatures.md:31-32`
@@ -1012,7 +993,7 @@ Two dragon model replacers are listed as baseline — but they're incompatible w
 - Higher compatibility risk — model changes affect animation, skeleton, behavior mods
 - May conflict with diverse-dragon mods (Diverse 4thUnknown Dragons already in list)
 
-### Recommendation: **Tentative — Iconic's Dragon Retexture**
+### Recommendation: **Decision: Iconic's Dragon Retexture**
 
 Safer compatibility path with Dragon War, Dragons Use Thu'um, and Diverse 4thUnknown Dragons. Textures alone deliver "clean, grim-dark presentation" without model-level risks.
 
@@ -1020,7 +1001,7 @@ Safer compatibility path with Dragon War, Dragons Use Thu'um, and Diverse 4thUnk
 
 ## 20. Grass
 
-**Status:** 🔴 OPEN  
+**Status:** 🟢 DECIDED  
 **Affects:** UI/Gfx, World  
 **Section:** `Terrain & Flora`  
 **Reference:** `modlist-graphics-terrain.md:74,127`
@@ -1055,7 +1036,7 @@ Skoglendi is listed as the grass baseline; Wildlands Renewal is an alternative c
 - Higher performance cost — two grass systems rendering
 - Grass cache generation doubled — more DynDOLOD prep time
 
-### Recommendation: **Tentative — Skoglendi**
+### Recommendation: **Decision: Skoglendi**
 
 Start with the baseline. If open tundra looks too sparse during testing, layer Wildlands Renewal as a supplementary groundcover mod rather than replacing Skoglendi entirely.
 
@@ -1102,12 +1083,12 @@ Simonrim Stack (recommended direction):
 
 Combat Stack:
   BFCO (Combat Anim) → Valhalla Combat + Precision (locked)
-  → TK Dodge RE (Dodge) → Shadow of Skyrim (Death Alt, if compat OK)
+  → TK Dodge RE (Dodge)
 
 World Stack:
-  Open World Loot SkyPatched (Loot) → Obsidian Weathers (Weather)
-  → TomatoRim PBR (Terrain) → Traverse the Ulvenwald (Trees)
-  → A Water Made For CS (Water) → RAID (Stealth)
+  Open World Loot SkyPatched (Loot) → Azurite III CS (Weather)
+  → TomatoRim PBR (Terrain) → Nature of the Wild Lands (Trees)
+  → Simplicity of Sea + Water Effects CS (Water) → RAID (Stealth)
 
 Quest/Content Stack:
   Skyrim Unbound Reborn (Alt Start) → Undeath + Classical Lichdom (Lich)
@@ -1116,4 +1097,4 @@ Quest/Content Stack:
 
 ---
 
-*Generated 2026-07-29. All recommendations are tentative pending CS compatibility testing, Pandora behavior integration, and third-person gamepad verification.*
+*Generated 2026-07-29. Decisions locked as noted. Integration into guide section files (modlist-*.md) pending.*
