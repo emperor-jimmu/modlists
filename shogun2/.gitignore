@@ -1,0 +1,5 @@
+output/
+fonts/
+*.pdf
+.DS_Store
+.playwright-mcp/
