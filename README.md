@@ -7,6 +7,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Modlist   | Game                        | Directory                    | Status |
 |-----------|-----------------------------|------------------------------|--------|
 | Arma 3    | Arma 3                      | [`arma3/`](./arma3/)         | Active |
+| Assetto Corsa | Assetto Corsa           | [`asseto-corsa/`](./asseto-corsa/) | Active |
 | Minecraft | Minecraft (NeoForge 1.21.1) | [`minecraft/`](./minecraft/) | Active |
 | Skyrim    | Skyrim SE                   | [`skyrim/`](./skyrim/)       | Active |
 | Cyberpunk | Cyberpunk 2077              | [`cyberpunk/`](./cyberpunk/) | Active |
@@ -14,8 +15,10 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | GTA IV    | Grand Theft Auto IV         | [`gtaiv/`](./gtaiv/)         | Active |
 | GTA V     | Grand Theft Auto V          | [`gtav/`](./gtav/)           | Active |
 | RDR2      | Red Dead Redemption 2       | [`rdr2/`](./rdr2/)           | Active |
+| Shogun 2  | Total War: Shogun 2         | [`shogun2/`](./shogun2/)     | Active |
 | RimWorld  | RimWorld                    | [`rimworld/`](./rimworld/)   | Active |
 | Starfield | Starfield                   | [`starfield/`](./starfield/) | Active |
+| Three Kingdoms | Total War: Three Kingdoms | [`threekingdoms/`](./threekingdoms/) | Active |
 | X4        | X4: Foundations             | [`x4-foundations/`](./x4-foundations/) | Active |
 
 ## Adding a new modlist
@@ -67,6 +70,9 @@ git subtree push --prefix=<name> <remote> <branch>
 arma3/                  # Arma 3 modlist
 ├── AGENTS.md
 └── ...
+asseto-corsa/           # Assetto Corsa modlist
+├── AGENTS.md
+└── ...
 minecraft/              # Minecraft modpack (NeoForge 1.21.1)
 ├── config/
 ├── datapacks/
@@ -94,7 +100,13 @@ gtav/                   # Grand Theft Auto V modlist
 rdr2/                   # Red Dead Redemption 2 modlist
 ├── AGENTS.md
 └── ...
+shogun2/                # Total War: Shogun 2 modlist
+├── AGENTS.md
+└── ...
 starfield/              # Starfield modlist
+├── AGENTS.md
+└── ...
+threekingdoms/          # Total War: Three Kingdoms modlist
 ├── AGENTS.md
 └── ...
 x4-foundations/         # X4: Foundations modlist
