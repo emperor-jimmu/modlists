@@ -1,0 +1,15 @@
+{
+  "name": "only-monsters-remain",
+  "version": "1.0.0",
+  "description": "A curated Witcher 3 modlist and game guide — Only Monsters Remain",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "postbuild": "node -e \"const fs=require('fs'); const src='.vitepress/dist'; const dest='output/site'; const path=require('path'); const srcPath=path.resolve(src); if(!fs.existsSync(srcPath)){console.log('Src '+srcPath+' not found, skipping');process.exit(0)} if(fs.existsSync(dest)) fs.rmSync(dest,{recursive:true}); fs.cpSync(srcPath,dest,{recursive:true}); console.log('Moved site to '+dest);\"",
+    "pdf": "typst compile typst\\main.typ output\\Only-Monsters-Remain.pdf",
+    "build:all": "npm run build; npm run pdf"
+  },
+  "devDependencies": {
+    "vitepress": "^1.3.0"
+  }
+}
