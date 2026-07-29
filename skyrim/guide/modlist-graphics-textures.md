@@ -18,6 +18,13 @@ Improve shape quality and silhouette readability without creating an unmaintaina
 | [FYX - Nordic Doors and Traps Collisions](https://www.nexusmods.com/skyrimspecialedition/mods/100295) | Collision geometry fix. Requires XEMI Utility. |
 | [Flame VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/109414) | Mesh-only fire spell effect improvement. CS-compatible. |
 
+### Weapon Mesh Improvements
+
+| Mod | Description |
+|-----|-------------|
+| [LeanWolf's Better-Shaped Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/2017) | Upgraded vanilla weapon silhouettes and mesh shapes. Stacks with weapon retextures and Heavy Armory. |
+| [Imperial Gladius — Imperial Sword Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/147965) | Replaces vanilla Imperial Sword model. Single mesh replacer. |
+
 ### Doors, Walls & Structures
 
 | Mod                                       | Description                                                                                                                                                       |

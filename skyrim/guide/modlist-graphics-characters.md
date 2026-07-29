@@ -120,22 +120,18 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 
 | Mod | Notes |
 | --- | --- |
-| [Immersive Fur Garments](https://www.nexusmods.com/skyrimspecialedition/mods/77073) | New fur garments to leveled lists. |
-| [Immersive Fur Garments — SPID](https://www.nexusmods.com/skyrimspecialedition/mods/82177) | SPID distribution addon (ESL-flagged). Install base mod (delete .esp) + SPID addon. |
 | [Faultier's PBR Armors and Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/175319) (2.9 GB) | Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher. |
 | [RUSTIC CLOTHING — SE](https://www.nexusmods.com/skyrimspecialedition/mods/4703) | Higher-res clothing textures. Test for style consistency. |
 | [Dwemer Armors and Weapons Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/93088) | Gear-side companion to VPBR's Dwemer ruin textures. |
 | [Steel Armor Redone — PBR](https://www.nexusmods.com/skyrimspecialedition/mods/177513) | PBR retexture of CC Steel Armor. Requires CC Alternative Armors — Steel Soldier, CS, PGPatcher. Optional. |
 | [Robes Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/110655) | Higher-quality robe textures for all vanilla robes. |
 | [Divine Crusader Retexture SE](https://www.nexusmods.com/skyrimspecialedition/mods/123738) | Retexture of Divine Crusader armor set. |
-| [Nirn Necessities — SMP Accessories](https://www.nexusmods.com/skyrimspecialedition/mods/112481) | SMP-physics clothing accessories. Add [PBR patch](https://www.nexusmods.com/skyrimspecialedition/mods/135807) if using CS PBR. |
 | [aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382) | Comprehensive armor/weapon/dragon retexture. 207K endorsements. |
 | [aMidianBorn Content Addon](https://www.nexusmods.com/skyrimspecialedition/mods/35390) | Extends aMidianBorn coverage to additional armors. Install after Book of Silence. |
 | [aMidianBorn Content Addon - 3BA and HIMBO Patch](https://www.nexusmods.com/skyrimspecialedition/mods/144952) | Body refit patch for Content Addon. |
 | [Resurgence Armory - Artifact Weapons and Armor Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/83855) | Visual overhaul for artifact weapons and armor models. |
 | [3BA and HIMBO Refits for Resurgence Armors](https://www.nexusmods.com/skyrimspecialedition/mods/85669) | Body refit for Resurgence Armory armors. |
 | [HDT-SMP Vanilla Armors](https://www.nexusmods.com/skyrimspecialedition/mods/142450) | Adds HDT-SMP physics to all vanilla armors. |
-| [Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla](https://www.nexusmods.com/skyrimspecialedition/mods/141700) | Armor set with CBBE 3BA / HIMBO support. Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline. |
 
 ---
 

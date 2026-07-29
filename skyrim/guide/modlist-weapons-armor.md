@@ -16,8 +16,7 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 
 | Mod                                                                                             | Type        | Dial           | Notes                                                                             |
 |-------------------------------------------------------------------------------------------------|-------------|----------------|-----------------------------------------------------------------------------------|
-| [LeanWolf's Better-Shaped Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/2017)    | Alternative | #1, #2, #3, #4 | Upgraded vanilla weapon silhouettes. Stacks with Heavy Armory.                    |
-| [Legendary Skyrim Crossbows and Bows](https://www.nexusmods.com/skyrimspecialedition/mods/8273) | Alternative | #1, #4         | Specialty named/unique crossbows and bows. Lock if ranged is a viable build path. |
+| [Legendary Skyrim Crossbows and Bows](https://www.nexusmods.com/skyrimspecialedition/mods/8273) | Alternative | #1, #4 | Specialty named/unique crossbows and bows. Lock if ranged is a viable build path. |
 | [Immersive Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/16788)                  | Alternative | #1, #4         | 230+ weapons. Unmaintained since Apr 2018. Prefer the SkyPatched variant below.    |
 | [Immersive Weapons SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/142044)      | Alternative | #1, #4         | SkyPatched forward-port resolving record-level conflicts. Preferred over original. |
 | [Moonblade](https://www.nexusmods.com/skyrimspecialedition/mods/170595)      | Alternative | all            | Unique moon-themed weapon with quest content.                                     |
@@ -28,7 +27,6 @@ Weapon content packs adding new named and leveled-list weapons fitting vanilla's
 | [Bloodskal Blade 4 — PBR Conversion](https://www.nexusmods.com/skyrimspecialedition/mods/165893) | Add-on | #1, #2 | PBR textures for Bloodskal Blade 4. Requires 120399 + CS + PGPatcher. |
 | [Nordic Battle Axes](https://www.nexusmods.com/skyrimspecialedition/mods/143738) | Alternative | all | 3 new 2H war axes. Craftable at forge under Steel perk. Simple, lore-friendly. |
 | [Volkihar Relic Sword](https://www.nexusmods.com/skyrimspecialedition/mods/128508) | Alternative | #1, #4 | Unique 1H vampire sword. Animated textures, bleed mechanics, Vampire Lord +30% dmg. Fits grim-dark. |
-| [Imperial Gladius — Imperial Sword Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/147965) | Alternative | all | Replaces vanilla Imperial Sword model. Single mesh replacer. |
 | [Ivory Bow SE](https://www.nexusmods.com/skyrimspecialedition/mods/115856) | Alternative | #1, #4 | New bow by johnskyrim. |
 | [Steel Battleaxe Of Fiery Souls — Truly Unique](https://www.nexusmods.com/skyrimspecialedition/mods/154943) | Alternative | #1, #4 | Unique weapon rework with animated textures, VFX, 4K/2K. Fits grim-dark. |
 | [PBR Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139889) | Framework | #1, #2 | Collection of PBR add-ons for various weapon/armor mods. 36 files. Install only sub-files matching weapons already adopted. Requires CS + PGPatcher. |
@@ -140,6 +138,7 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
 | [Drake Knight Armor](https://www.nexusmods.com/skyrimspecialedition/mods/142360) | Armor set, glow variant available. | ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950). |
 | [Armor Of Hermaeus Mora](https://www.nexusmods.com/skyrimspecialedition/mods/132399) | Daedric-themed armor set. | ChakraSSE. HIMBO via ChakraSSE HIMBO bundle (159950). |
 | [More ChakraSSE Armor HIMBO Refits](https://www.nexusmods.com/skyrimspecialedition/mods/159950) | HIMBO/BodySlide refits for Armor of Alessia, Nightstalker Nazir, Nordic Brute, Drake Knight, Armor of Hermaeus Mora. | Install per-armor, overwrite originals. Requires each base mod + BodySlide + HIMBO. 55 endorsements. |
+| [Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla](https://www.nexusmods.com/skyrimspecialedition/mods/141700) | Armor set with CBBE 3BA / HIMBO support. | Evaluate for visual fit with the rest of the armor stack. Alternative — not baseline. |
 
 ### Risks & Compatibility
 
@@ -198,6 +197,9 @@ Clothing content packs adding new clothing, cloaks, and wearable non-armor items
 |---------------------------------------------------------------------------------------------------------------|-------------|----------------|-------------------------------------------------------------------------------------|
 | [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)                        | Alternative | all            | Common-cloth variety for bandit/sellsword archetypes.                               |
 | [Sforzinda Imitations](https://www.nexusmods.com/skyrimspecialedition/mods/54346)                             | Alternative | all            | Curated boutique clothing. Cut if it pulls toward boutique-fantasy wardrobe.        |
+| [Immersive Fur Garments](https://www.nexusmods.com/skyrimspecialedition/mods/77073)                           | Alternative | all            | New fur garments to leveled lists. SPID addon below.                                |
+| [Immersive Fur Garments — SPID](https://www.nexusmods.com/skyrimspecialedition/mods/82177)                    | Add-on      | all            | SPID distribution addon (ESL-flagged). Install base mod (delete .esp) + SPID addon. |
+| [Nirn Necessities — SMP Accessories](https://www.nexusmods.com/skyrimspecialedition/mods/112481)              | Alternative | all            | SMP-physics clothing accessories. PBR patch ([135807](https://www.nexusmods.com/skyrimspecialedition/mods/135807)) if using CS PBR. Requires FSMP. |
 | [Cloaks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/6369)                                  | Alternative | all            | 100+ cloaks via SPID. Highest third-person visual impact.                           |
 | [Colovian Noble Clothes](https://www.nexusmods.com/skyrimspecialedition/mods/4464)                            | Alternative | all            | Imperial-themed high-status clothing. Pairs with Beyond Skyrim.                     |
 | [Knapsack Backpacks SE](https://www.nexusmods.com/skyrimspecialedition/mods/3440)                             | Alternative | all            | Carry-and-wearable utility with MCM. Cosmetic companion to Bandolier.               |
