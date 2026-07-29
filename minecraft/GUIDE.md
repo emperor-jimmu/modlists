@@ -424,6 +424,8 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [AmbientSounds](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)                                       | Nature ambiance (birds, wind, water)                                                           |
 | [The Immersive Music Mod](https://www.curseforge.com/minecraft/mc-mods/the-immersive-music-mod)                   | 147 new biome/structure-based songs, vanilla silence gaps preserved                            |
 | [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)                                         | Animated UI, smooth hotbar, item particles                                                     |
+| [Immersive Hotbar](https://www.curseforge.com/minecraft/mc-mods/immersive-hotbar)                                 | Animated hotbar slot transitions on pickup/use/swap, XP bar + level-up effects, tooltip animations |
+| [Smooth GUI](https://www.curseforge.com/minecraft/mc-mods/smooth-gui)                                             | Slide-in animation when opening GUIs, fade-in background overlay + blur                        |
 | [Dark Mode Everywhere](https://www.curseforge.com/minecraft/mc-mods/dark-mode-everywhere)                         | Shader-based dark mode for all GUIs — 3 darkness levels, toggleable in-game                    |
 | [Status Effect Bars Reforged](https://www.curseforge.com/minecraft/mc-mods/status-effect-bars-reforged)           | Duration bars on status effect icons in HUD and inventory                                      |
 | [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)                       | RPG-style titles entering biomes/dimensions                                                    |
@@ -442,6 +444,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Better Safe Bed](https://www.curseforge.com/minecraft/mc-mods/better-safe-bed)                                   | Prevents mobs that can't reach you from blocking sleep — chill-rule essential                  |
 | [Beautiful Enchanted Books [Mod Edition]](https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books) | Unique textures per enchantment book type — standalone mod, no resource pack needed            |
 | [Overflowing Bars](https://www.curseforge.com/minecraft/mc-mods/overflowing-bars)                                 | Expanded health, armor, and toughness bars beyond vanilla limits                               |
+| [Leave My Bars Alone](https://www.curseforge.com/minecraft/mc-mods/leave-my-bars-alone)                           | Keeps food/health/armor bars visible while riding mounts — requires Puzzles Lib                |
 | [Cherished Worlds](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds)                                 | Favorite/pin worlds to top of list, prevent accidental deletion                                |
 | [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)                           | First-person eating/drinking animation — food moves to mouth and shrinks                       |
 | [Camera Overhaul](https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul)                                    | Camera tilting, screen shakes, mouselook roll, idle sway — satisfying movement feedback        |
@@ -462,7 +465,9 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)                         | Real-time minimap + full-screen world map, waypoints, entity radar |
 | [JourneyMap Integration](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) | Shows Waystones as icons on JourneyMap                             |
 | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                           | Food hunger/saturation overlay                                     |
+| [Immersive Armor HUD](https://www.curseforge.com/minecraft/mc-mods/immersive-armor-hud)       | Armor type icons + durability above armor bar — shows what's about to break                   |
 | [Inventory Essentials](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials)     | Drag-to-transfer, single-item moves, sorting                       |
+| [ClientSort](https://www.curseforge.com/minecraft/mc-mods/clientsort)                         | Sort (4 modes), Fill Stacks, Transfer Matching, customizable button positions — requires Cloth Config API |
 | [Advancement Plaques](https://www.curseforge.com/minecraft/mc-mods/advancement-plaques)       | Glowing plaque advancement popups with copper/silver/gold borders  |
 | [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)         | Preview shulker box contents on hover                              |
 | [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                     | Colored borders on items based on rarity                           |
@@ -486,6 +491,7 @@ This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn t
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
 | [Traveler Tool Belt](https://www.curseforge.com/minecraft/mc-mods/traveler-tool-belt)         | Tool radial menu — hold R for quick-swap, 2→9 slots via upgrades   |
+| [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)                       | Search keybinds by name, show only conflicting binds, list available keys — no dependencies   |
 
 ### Storage & Travel
 
@@ -635,6 +641,14 @@ Biome-aware ambient audio — birds in forests, wind in mountains, water near ri
 
 Smooth hotbar sliding, item pickup particles, animated tooltips, menu transitions. Pure polish.
 
+#### Immersive Hotbar
+
+Animated hotbar item slots bounce/shrink on pickup, use, and swap. Animated tooltip on item switch or hover. Animated XP bar and level-up effects make RPG progression feel impactful. Configurable animations via Mod Menu (YACL, already in pack). Complements Immersive UI — IUI animates the hotbar *selector bar*; Immersive Hotbar animates the *slot contents*.
+
+#### Smooth GUI
+
+Smooth slide-in animation when opening any GUI, with fade-in background overlay and blur. Pure cosmetic — makes inventory/chest/crafting screens feel polished. No dependencies, no config needed.
+
 #### Status Effect Bars Reforged
 
 Small progress bars on status effect icons showing remaining duration. Config via Cloth Config. Auto-hides for beacon effects.
@@ -711,6 +725,10 @@ Unique textures per enchantment type — Protection books look different from Sh
 
 Health, armor, and toughness bars expand beyond vanilla limits. Essential once you stack Apotheosis bonuses and skill tree HP.
 
+#### Leave My Bars Alone
+
+Keeps your food, health, and armor bars visible while riding mounts. Vanilla replaces your bars with the mount's health — this fixes that. Essential for exploration on horses, aircraft, ships. Requires Puzzles Lib (already in pack). No config needed.
+
 #### Cherished Worlds
 
 Favorite/pin worlds to the top of your list, prevent accidental deletion. Right-click a world in the list to favorite it.
@@ -773,6 +791,10 @@ Look at any block → HUD shows block name, mod source, machine status, crop gro
 
 Hover over food → see exact hunger and saturation values. Pre-eat preview shows dashed outlines on your hunger bar. Saturation overlay shows the hidden second layer. No config.
 
+#### Immersive Armor HUD
+
+Miniaturized armor type icons above the armor bar with durability indicators — shows which pieces are about to break at a glance without opening inventory. Vanilla-friendly 7×7 pixel icons. Works with modded armor (Mekanism, Apotheosis gear). No dependencies, no config needed.
+
 #### Inventory Essentials
 
 Drag-to-transfer, single-item moves, sorting:
@@ -780,6 +802,25 @@ Drag-to-transfer, single-item moves, sorting:
 - `Ctrl+click` a stack → moves one item
 - `Shift+Ctrl+click` → moves all items of that type
 - Sort buttons on chest/inventory GUIs
+
+**Note**: ClientSort (below) handles sorting with 4 sort modes, Fill Stacks, and Transfer Matching. Inventory Essentials remains for drag-to-transfer and single-item moves — its sorting is superseded but not conflicting.
+
+#### ClientSort
+
+Versatile inventory sorting with 4 sort modes:
+
+- **Sort** (default): creative inventory tab order — middle-click to trigger
+- **Shift+Sort**: descending order of quantity
+- **Ctrl+Sort**: alphabetical order
+- **Alt+Sort**: ascending order of item ID
+
+Additional operations:
+
+- **Fill Stacks**: top up partial stacks in the other inventory using items from this one
+- **Transfer Matching**: move all matching items between inventories in one click
+- **Button Editor**: right-click any trigger button to reposition or enable/disable
+
+All operations can be triggered via buttons (shown on inventory/crafting GUIs) or keybinds. Requires **Cloth Config API** (already in pack for config). No overlap conflict with Inventory Essentials — IE handles drag-to-transfer and single-item moves; ClientSort handles sorting and bulk operations.
 
 #### Shulker Box Tooltip
 
@@ -817,6 +858,10 @@ Quick-swap tool access without opening your inventory. Hold **R** (configurable 
 - Holds any non-stackable item by default (tools, weapons, weapons)
 - Integrates with Curios API belt slot (already in pack) — equip from Curios menu or inventory
 - Equip in the belt slot, or keep it in your inventory if Curios is unavailable
+
+#### Controlling
+
+Search keybinds by name in the Controls menu. "Show Conflicts" button highlights only conflicting binds so you can fix them fast. Lists all available (unbound) keys. Essential for a 150+ mod pack — the vanilla keybind menu without Controlling is a wall of unsortable text. No dependencies, no config needed.
 
 ---
 
@@ -3075,7 +3120,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
-| Wave 0.5 — Player Experience | 50      | —      | 50      | Visual & Client QoL (29), Inventory & UI (17), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
+| Wave 0.5 — Player Experience | 56      | —      | 56      | Visual & Client QoL (32), Inventory & UI (20), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 26      | 6      | 32      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships, hang glider, IaA addon                                                                          |

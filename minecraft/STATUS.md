@@ -365,4 +365,13 @@
 - [x] BetterEnd: New Dawn — removed. Replaced by End Remastered (portal progression overhaul — 16 custom Ender Eyes instead of End dimension biomes). End overhaul was thin (unofficial continuation, 415K DL). End dimension now uses Nullscape (terrain) + Moog's End Structures for content.
 
 ### Added Mods (Jul 2026 batch 21 — End Remastered)
-- [x] End Remastered 6.3.0 (Wave 2 — End Access & Structures) — portal progression overhaul: 16 custom Ender Eyes hidden across vanilla structures and bosses. Find 12+ to open the End. 42.6M DL, LGPLv3. No config needed.
+- [x] Controll… End Remastered 6.3.0 (Wave 2 — End Access & Structures) — portal progression overhaul: 16 custom Ender Eyes hidden across vanilla structures and bosses. Find 12+ to open the End. 42.6M DL, LGPLv3. No config needed.
+
+### Added Mods (Jul 2026 batch 22 — UI/Inventory QoL Review)
+- [x] Smooth GUI v2.0.0 (Wave 0 — Visual & Client QoL) — GUI open/close slide-in animation, fade-in background overlay + blur. Client-side, no deps, MIT license.
+- [x] Immersive Hotbar v1.1.2 (Wave 0 — Visual & Client QoL) — animated hotbar slot transitions on pickup/use/swap, XP bar + level-up effects, tooltip animations. Requires YACL (already in pack). Complements Immersive UI (different animation targets).
+- [x] Controlling v29.0.1 (Wave 0 — Inventory & UI) — search keybinds by name, show only conflicting binds, list available keys. Essential for 150+ mod pack. No deps, client-side.
+- [x] ClientSort v2.2.2 (Wave 0 — Inventory & UI) — 4-mode sorting (creative/quantity/alphabetical/ID), Fill Stacks, Transfer Matching, customizable button positions. Requires Cloth Config API (already in pack). Keeps Inventory Essentials for drag-to-transfer.
+- [x] Leave My Bars Alone v21.11.0 (Wave 0 — Visual & Client QoL) — keeps food/health/armor bars visible while riding mounts. Requires Puzzles Lib (already in pack). Client-side, by Fuzs.
+- [x] Immersive Armor HUD v1.0.1 (Wave 0 — Inventory & UI) — armor type icons + durability indicators above armor bar. Works with modded armor. No deps, client-side, 6.9M DL.
+- [x] Mod counts updated: Wave 0.5 50→56 (Visual & Client QoL 29→32, Inventory & UI 17→20)
