@@ -1,0 +1,140 @@
+wave: 1
+title: "Wave 1 — Digging Deeper"
+subtitle: "QoL + light content mods"
+mods:
+  - name: "Magic Storage"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2563309347"
+    description: "Advanced storage system that lets you store items in a centralized network. Search for items, craft directly from storage, and manage large inventories efficiently."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: true
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Thorium Mod"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416"
+    description: "Major content mod adding new classes (Bard and Healer), bosses, items, biomes, and NPCs. Expands the game significantly while maintaining vanilla balance."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: true
+      new_npcs: true
+      new_biomes: true
+      new_bosses: true
+      mechanic_changes: true
+      ui_qol: false
+
+  - name: "Fargo's Mutant Mod"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2570931073"
+    description: "Quality of life mod that adds convenience features like infinite ammo, auto-potion usage, and various gameplay tweaks. Works well with other mods."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: true
+      ui_qol: true
+
+  - name: "Which Mod Is This From? (WMITF)"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2563851005"
+    description: "Shows which mod each item, NPC, or projectile comes from. Essential when using multiple content mods to identify item origins."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Colored Damage Types"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2793782057"
+    description: "Color-codes damage numbers based on damage type (melee=red, ranged=yellow, magic=purple, summon=pink). Makes it easier to identify your damage sources."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Boss Cursor"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2816694149"
+    description: "Changes cursor appearance when hovering over bosses and enemies. Makes it easier to target specific enemies during chaotic fights."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Shop Expander"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2828370879"
+    description: "Expands NPC shop slots to show more items at once. Makes shopping more convenient by reducing scrolling and page navigation."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "AlchemistNPC Lite"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2599842771"
+    description: "Adds an Alchemist NPC that sells potions and materials. Provides a convenient way to purchase consumables without farming."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: true
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Auto Reforge"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2707400823"
+    description: "Automatically reforges items to find the best modifier. Saves time and coins when min-maxing equipment."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+load_order:
+  - "Which Mod Is This From? (WMITF)"
+  - "Colored Damage Types"
+  - "Boss Cursor"
+  - "Shop Expander"
+  - "AlchemistNPC Lite"
+  - "Auto Reforge"
+  - "Fargo's Mutant Mod"
+  - "Magic Storage"
+  - "Thorium Mod"

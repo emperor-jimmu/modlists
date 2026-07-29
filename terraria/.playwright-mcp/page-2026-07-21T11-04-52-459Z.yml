@@ -1,0 +1,780 @@
+- generic [ref=f1e5]:
+  - banner [ref=f1e6]:
+    - generic [ref=f1e7]:
+      - link "Link to the Steam Homepage" [ref=f1e8] [cursor=pointer]:
+        - /url: https://store.steampowered.com/
+        - img "Link to the Steam Homepage" [ref=f1e9]
+      - navigation [ref=f1e10]:
+        - list [ref=f1e11]:
+          - button "STORE" [ref=f1e12] [cursor=pointer]
+          - button "COMMUNITY" [ref=f1e13] [cursor=pointer]
+          - link "About" [ref=f1e14] [cursor=pointer]:
+            - /url: https://store.steampowered.com/about/?snr=____globalheader
+          - link "SUPPORT" [ref=f1e15] [cursor=pointer]:
+            - /url: https://help.steampowered.com/en/
+      - generic [ref=f1e17]:
+        - link "Install Steam" [ref=f1e18] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/
+        - link "sign in" [ref=f1e19] [cursor=pointer]:
+          - /url: /login/
+        - text: "|"
+        - button "language" [ref=f1e20] [cursor=pointer]
+  - dialog [ref=f1e21]:
+    - generic [ref=f1e22]:
+      - link "Sign in" [ref=f1e23] [cursor=pointer]:
+        - /url: /login/
+      - group [ref=f1e24]:
+        - generic "Store" [ref=f1e25] [cursor=pointer]
+      - group [ref=f1e27]:
+        - generic "Community" [ref=f1e28] [cursor=pointer]
+      - link "About" [ref=f1e30] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=____globalheader
+      - link "Support" [ref=f1e31] [cursor=pointer]:
+        - /url: https://help.steampowered.com/en/
+      - generic [ref=f1e32]:
+        - button "Change language" [ref=f1e33] [cursor=pointer]
+        - link "Get the Steam Mobile App" [ref=f1e34] [cursor=pointer]:
+          - /url: https://store.steampowered.com/mobile?snr=____globalheader
+        - button "View desktop website" [ref=f1e35] [cursor=pointer]
+    - contentinfo [ref=f1e36]:
+      - text: © Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+      - generic [ref=f1e38]:
+        - link "Privacy Policy" [ref=f1e39] [cursor=pointer]:
+          - /url: https://store.steampowered.com/privacy_agreement/
+        - text: "|"
+        - link "Legal" [ref=f1e40] [cursor=pointer]:
+          - /url: http://www.valvesoftware.com/legal.htm
+        - text: "|"
+        - link "Steam Subscriber Agreement" [ref=f1e41] [cursor=pointer]:
+          - /url: https://store.steampowered.com/subscriber_agreement/
+        - text: "|"
+        - link "Refunds" [ref=f1e42] [cursor=pointer]:
+          - /url: https://store.steampowered.com/steam_refunds/
+  - generic [ref=f1e45]:
+    - generic [ref=f1e49]:
+      - generic [ref=f1e50]:
+        - link [ref=f1e51]:
+          - /url: https://steamcommunity.com/app/1281930
+          - heading "tModLoader" [level=1] [ref=f1e52]
+        - link "Store Page" [ref=f1e53] [cursor=pointer]:
+          - /url: https://store.steampowered.com/app/1281930/?snr=_9_apphubheader_
+      - generic [ref=f1e54]:
+        - link "All" [ref=f1e56] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/
+        - link "Discussions" [ref=f1e58] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/discussions/
+        - link "Screenshots" [ref=f1e60] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/screenshots/
+        - link "Artwork" [ref=f1e62] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/images/
+        - link "Broadcasts" [ref=f1e64] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/broadcasts/
+        - link "Videos" [ref=f1e66] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/videos/
+        - link "Workshop" [ref=f1e68] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/workshop/
+        - link "News" [ref=f1e70] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/news/
+        - link "Guides" [ref=f1e72] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/guides/
+        - link "Reviews" [ref=f1e74] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/reviews/
+    - generic [ref=f1e76]:
+      - generic [ref=f1e77]:
+        - img "tModLoader" [ref=f1e78]
+        - generic [ref=f1e79]:
+          - generic [ref=f1e80]: tModLoader Mods
+          - generic [ref=f1e81]: View and download tModLoader Mods from the Steam Workshop. Please note that the mods listed here are only usable on the default tModLoader branch. Mods usable on 1.3-legacy are found elsewhere.
+          - link "Learn More" [ref=f1e83] [cursor=pointer]:
+            - /url: https://github.com/tModLoader/tModLoader/wiki
+      - generic [ref=f1e84]:
+        - link "Home" [ref=f1e85] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/workshop/
+        - button "Browse" [ref=f1e86] [cursor=pointer]
+        - button "Your Items" [ref=f1e89] [cursor=pointer]
+        - link "Discussions" [ref=f1e92] [cursor=pointer]:
+          - /url: https://steamcommunity.com/workshop/discussions/?appid=1281930
+        - link "About" [ref=f1e93] [cursor=pointer]:
+          - /url: https://steamcommunity.com/workshop/about/?appid=1281930
+    - generic [ref=f1e97]:
+      - generic [ref=f1e98]:
+        - button [disabled] [ref=f1e100] [cursor=pointer]
+        - generic [ref=f1e103]:
+          - generic [ref=f1e104]:
+            - generic [ref=f1e105]:
+              - generic [ref=f1e106]: Mods
+              - generic [ref=f1e107]: In the past week
+            - button "View All" [ref=f1e108] [cursor=pointer]
+          - generic [ref=f1e109]:
+            - generic [ref=f1e111]:
+              - link [ref=f1e113] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763961536
+                - img "Overhealth" [ref=f1e114]
+              - generic [ref=f1e115]:
+                - link "Overhealth" [ref=f1e129] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763961536
+                - link "By JADen" [ref=f1e131] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561198690889465/myworkshopfiles/?appid=1281930
+                - button [ref=f1e133] [cursor=pointer]
+            - generic [ref=f1e138]:
+              - link [ref=f1e140] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3764993342
+                - img "Mr.Beast Exit Scam Meme Mod" [ref=f1e141]
+              - generic [ref=f1e142]:
+                - link "Mr.Beast Exit Scam Meme Mod" [ref=f1e156] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3764993342
+                - link "By AjuliDev" [ref=f1e158] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/id/AjuliDev/myworkshopfiles/?appid=1281930
+                - button [ref=f1e160] [cursor=pointer]
+            - generic [ref=f1e165]:
+              - link [ref=f1e167] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763388232
+                - img "Notme229 Calamity-Fargo Souls DLC" [ref=f1e168]
+              - generic [ref=f1e169]:
+                - link "Notme229 Calamity-Fargo Souls DLC" [ref=f1e183] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763388232
+                - link "By notme229" [ref=f1e185] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/id/notme229/myworkshopfiles/?appid=1281930
+                - button [ref=f1e187] [cursor=pointer]
+            - generic [ref=f1e192]:
+              - link [ref=f1e194] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765670791
+                - img "Deltarune Cliff Menu" [ref=f1e195]
+              - generic [ref=f1e196]:
+                - link "Deltarune Cliff Menu" [ref=f1e210] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765670791
+                - link "By _Polaris_" [ref=f1e212] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199193473229/myworkshopfiles/?appid=1281930
+                - button [ref=f1e214] [cursor=pointer]
+            - generic [ref=f1e219]:
+              - link [ref=f1e221] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762401809
+                - img "Coconut's Phoenix Blaster Upgrades" [ref=f1e222]
+              - generic [ref=f1e223]:
+                - link "Coconut's Phoenix Blaster Upgrades" [ref=f1e237] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762401809
+                - link "By CoconutSSBU" [ref=f1e239] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199260050771/myworkshopfiles/?appid=1281930
+                - button [ref=f1e241] [cursor=pointer]
+            - generic [ref=f1e246]:
+              - link [ref=f1e248] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765818748
+                - img "Torch Bomb Mod" [ref=f1e249]
+              - generic [ref=f1e250]:
+                - link "Torch Bomb Mod" [ref=f1e264] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765818748
+                - link "By VortexOfRainbows" [ref=f1e266] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561198065169869/myworkshopfiles/?appid=1281930
+                - button [ref=f1e268] [cursor=pointer]
+            - generic [ref=f1e273]:
+              - link [ref=f1e275] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765141993
+                - img "苍郁之锋重置" [ref=f1e276]
+              - generic [ref=f1e277]:
+                - link "苍郁之锋重置" [ref=f1e291] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765141993
+                - link "By noob" [ref=f1e293] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199021570071/myworkshopfiles/?appid=1281930
+                - button [ref=f1e295] [cursor=pointer]
+            - generic [ref=f1e300]:
+              - link [ref=f1e302] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3767563232
+                - 'img "Ancients Awakened: Classic 简中汉化补丁" [ref=f1e303]'
+              - generic [ref=f1e304]:
+                - 'link "Ancients Awakened: Classic 简中汉化补丁" [ref=f1e318] [cursor=pointer]':
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3767563232
+                - link "By 不吃压力之人" [ref=f1e320] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199035593734/myworkshopfiles/?appid=1281930
+                - button [ref=f1e322] [cursor=pointer]
+            - generic [ref=f1e327]:
+              - link [ref=f1e329] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763727325
+                - img "Red Devil Restored" [ref=f1e330]
+              - generic [ref=f1e331]:
+                - link "Red Devil Restored" [ref=f1e345] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763727325
+                - link "By L.O.F.E" [ref=f1e347] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199234648647/myworkshopfiles/?appid=1281930
+                - button [ref=f1e349] [cursor=pointer]
+            - generic [ref=f1e354]:
+              - link [ref=f1e356] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762065396
+                - img "Terra Melodies" [ref=f1e357]
+              - generic [ref=f1e358]:
+                - link "Terra Melodies" [ref=f1e372] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762065396
+                - link "By WhiteOut" [ref=f1e374] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199117511923/myworkshopfiles/?appid=1281930
+                - button [ref=f1e376] [cursor=pointer]
+            - generic [ref=f1e381]:
+              - generic [ref=f1e382]:
+                - link "可成长的孔雀翎 / Malachite Infinity":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761228735
+                  - img "可成长的孔雀翎 / Malachite Infinity"
+              - generic [ref=f1e383]:
+                - link "可成长的孔雀翎 / Malachite Infinity" [ref=f1e397] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761228735
+                - link "By 爱尔奎特本人" [ref=f1e399] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561198451364800/myworkshopfiles/?appid=1281930
+                - button [ref=f1e401] [cursor=pointer]
+            - generic [ref=f1e406]:
+              - generic [ref=f1e407]:
+                - link "Turtle's Xenolord Race":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762988789
+                  - img "Turtle's Xenolord Race"
+              - generic [ref=f1e408]:
+                - link "Turtle's Xenolord Race" [ref=f1e422] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762988789
+                - link "By Turtleren" [ref=f1e424] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561198067103912/myworkshopfiles/?appid=1281930
+                - button [ref=f1e426] [cursor=pointer]
+            - generic [ref=f1e431]:
+              - generic [ref=f1e432]:
+                - link "Polarities Boss Music":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3766121166
+                  - img "Polarities Boss Music"
+              - generic [ref=f1e433]:
+                - link "Polarities Boss Music" [ref=f1e447] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3766121166
+                - link "By ZAK ATTACK" [ref=f1e449] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199538538248/myworkshopfiles/?appid=1281930
+                - button [ref=f1e451] [cursor=pointer]
+            - generic [ref=f1e456]:
+              - generic [ref=f1e457]:
+                - link "Piccolo Mod":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761385498
+                  - img "Piccolo Mod"
+              - generic [ref=f1e458]:
+                - link "Piccolo Mod" [ref=f1e472] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761385498
+                - link "By Sambreto" [ref=f1e474] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199435608804/myworkshopfiles/?appid=1281930
+                - button [ref=f1e476] [cursor=pointer]
+            - generic [ref=f1e481]:
+              - generic [ref=f1e482]:
+                - link "Floating Numbers Customize":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761647351
+                  - img "Floating Numbers Customize"
+              - generic [ref=f1e483]:
+                - link "Floating Numbers Customize" [ref=f1e497] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3761647351
+                - link "By ЛЕХА КАЙФАРИК" [ref=f1e499] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/id/ParabellumBlueberry/myworkshopfiles/?appid=1281930
+                - button [ref=f1e501] [cursor=pointer]
+            - generic [ref=f1e506]:
+              - generic [ref=f1e507]:
+                - link "TerraDraft":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762250626
+                  - img "TerraDraft"
+              - generic [ref=f1e508]:
+                - link "TerraDraft" [ref=f1e522] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3762250626
+                - link "By jTyler" [ref=f1e524] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/id/AngryGamer6969/myworkshopfiles/?appid=1281930
+                - button [ref=f1e526] [cursor=pointer]
+            - generic [ref=f1e531]:
+              - generic [ref=f1e532]:
+                - link "Among us vision (Fog of war)":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3766901980
+                  - img "Among us vision (Fog of war)"
+              - generic [ref=f1e533]:
+                - link "Among us vision (Fog of war)" [ref=f1e547] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3766901980
+                - link "By Pive Febbles (NOT SUS)" [ref=f1e549] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199504934083/myworkshopfiles/?appid=1281930
+                - button [ref=f1e551] [cursor=pointer]
+            - generic [ref=f1e556]:
+              - generic [ref=f1e557]:
+                - link "Game Adjustments":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765430280
+                  - img "Game Adjustments"
+              - generic [ref=f1e558]:
+                - link "Game Adjustments" [ref=f1e572] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3765430280
+                - link "By 太阳照常升起" [ref=f1e574] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/id/487666123/myworkshopfiles/?appid=1281930
+                - button [ref=f1e576] [cursor=pointer]
+            - generic [ref=f1e581]:
+              - generic [ref=f1e582]:
+                - link "Creative Mode":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763013882
+                  - img "Creative Mode"
+              - generic [ref=f1e583]:
+                - link "Creative Mode" [ref=f1e597] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763013882
+                - link "By VirtualRickality" [ref=f1e599] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/id/VirtualRickality/myworkshopfiles/?appid=1281930
+                - button [ref=f1e601] [cursor=pointer]
+            - generic [ref=f1e606]:
+              - generic [ref=f1e607]:
+                - link "Frostraria":
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3759018891
+                  - img "Frostraria"
+              - generic [ref=f1e608]:
+                - link "Frostraria" [ref=f1e622] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3759018891
+                - link "By Technician_fox" [ref=f1e624] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561199528619619/myworkshopfiles/?appid=1281930
+                - button [ref=f1e626] [cursor=pointer]
+        - button [disabled] [ref=f1e631] [cursor=pointer]
+      - generic [ref=f1e635]:
+        - generic [ref=f1e636]:
+          - generic [ref=f1e637]:
+            - textbox "Search tModLoader" [ref=f1e641]
+            - button [ref=f1e642] [cursor=pointer]
+          - generic [ref=f1e645]:
+            - generic [ref=f1e646]:
+              - generic [ref=f1e647]: Mod Features
+              - generic [ref=f1e648]:
+                - button "New Content (6,845)" [ref=f1e649] [cursor=pointer]:
+                  - generic [ref=f1e650]: New Content
+                  - generic [ref=f1e651]: (6,845)
+                - button "Utilities (3,308)" [ref=f1e652] [cursor=pointer]:
+                  - generic [ref=f1e653]: Utilities
+                  - generic [ref=f1e654]: (3,308)
+                - button "Library (436)" [ref=f1e655] [cursor=pointer]:
+                  - generic [ref=f1e656]: Library
+                  - generic [ref=f1e657]: (436)
+                - button "Quality Of Life (4,327)" [ref=f1e658] [cursor=pointer]:
+                  - generic [ref=f1e659]: Quality Of Life
+                  - generic [ref=f1e660]: (4,327)
+                - button "Gameplay Tweaks (4,147)" [ref=f1e661] [cursor=pointer]:
+                  - generic [ref=f1e662]: Gameplay Tweaks
+                  - generic [ref=f1e663]: (4,147)
+                - button "Visual Tweaks (1,303)" [ref=f1e664] [cursor=pointer]:
+                  - generic [ref=f1e665]: Visual Tweaks
+                  - generic [ref=f1e666]: (1,303)
+                - button "Audio Tweaks (656)" [ref=f1e667] [cursor=pointer]:
+                  - generic [ref=f1e668]: Audio Tweaks
+                  - generic [ref=f1e669]: (656)
+                - button "World Gen (866)" [ref=f1e670] [cursor=pointer]:
+                  - generic [ref=f1e671]: World Gen
+                  - generic [ref=f1e672]: (866)
+                - button "Translation (459)" [ref=f1e673] [cursor=pointer]:
+                  - generic [ref=f1e674]: Translation
+                  - generic [ref=f1e675]: (459)
+            - generic [ref=f1e676]:
+              - generic [ref=f1e677]: Mod Side
+              - combobox [ref=f1e679] [cursor=pointer]:
+                - generic [ref=f1e680]: <none selected>
+            - generic [ref=f1e685]:
+              - generic [ref=f1e686]: tModLoader Version
+              - combobox [ref=f1e688] [cursor=pointer]:
+                - generic [ref=f1e689]: <none selected>
+            - generic [ref=f1e694]:
+              - generic [ref=f1e695]: Language
+              - combobox [ref=f1e697] [cursor=pointer]:
+                - generic [ref=f1e698]: <none selected>
+        - generic [ref=f1e703]:
+          - generic [ref=f1e704]:
+            - generic [ref=f1e705]:
+              - generic [ref=f1e706]:
+                - generic [ref=f1e707]: Developer's Choice
+                - generic [ref=f1e709]: These mods have been hand-picked by the developers of tModLoader, and are intended to shine the spotlight on high quality, but perhaps lesser-known Terraria mods.
+              - button "See all items tagged with Developer's Choice" [ref=f1e710] [cursor=pointer]
+            - generic [ref=f1e711]:
+              - generic [ref=f1e712]:
+                - link [ref=f1e714] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2806899404
+                  - img "Player Swap" [ref=f1e715]
+                - generic [ref=f1e716]:
+                  - link "Player Swap" [ref=f1e730] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2806899404
+                  - link "By Kirtle" [ref=f1e732] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/kirtle/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e734] [cursor=pointer]
+              - generic [ref=f1e738]:
+                - link [ref=f1e740] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3567964103
+                  - img "Liquid Slopes Patch" [ref=f1e741]
+                - generic [ref=f1e742]:
+                  - link "Liquid Slopes Patch" [ref=f1e756] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3567964103
+                  - link "By tomat" [ref=f1e758] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/steviegt6/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e760] [cursor=pointer]
+              - generic [ref=f1e764]:
+                - link [ref=f1e766] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2832487441
+                  - img "Wikithis" [ref=f1e767]
+                - generic [ref=f1e768]:
+                  - link "Wikithis" [ref=f1e782] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2832487441
+                  - link "By BasicallyIAmFox" [ref=f1e784] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561198861838629/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e786] [cursor=pointer]
+              - generic [ref=f1e790]:
+                - link [ref=f1e792] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2790924965
+                  - img "Structure Helper" [ref=f1e793]
+                - generic [ref=f1e794]:
+                  - link "Structure Helper" [ref=f1e808] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2790924965
+                  - link "By ScalarVector1" [ref=f1e810] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561198177899533/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e812] [cursor=pointer]
+              - generic [ref=f1e816]:
+                - link [ref=f1e818] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2816941454
+                  - img "Better Blending" [ref=f1e819]
+                - generic [ref=f1e820]:
+                  - link "Better Blending" [ref=f1e834] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2816941454
+                  - link "By Orion" [ref=f1e836] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/OrionSprites/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e838] [cursor=pointer]
+          - generic [ref=f1e842]:
+            - generic [ref=f1e844]:
+              - button "Most Popular" [ref=f1e845] [cursor=pointer]
+              - button "Most Subscribed" [ref=f1e846] [cursor=pointer]
+              - button "Last Updated" [ref=f1e847] [cursor=pointer]
+              - button "New" [ref=f1e848] [cursor=pointer]
+              - button "Most Playtime" [ref=f1e849] [cursor=pointer]
+            - generic [ref=f1e850]: Best rated in the past three months
+            - generic [ref=f1e851]:
+              - generic [ref=f1e852]:
+                - link [ref=f1e854] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3703340292
+                  - img "Split" [ref=f1e855]
+                - generic [ref=f1e856]:
+                  - generic [ref=f1e858]:
+                    - link "Split" [ref=f1e860] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3703340292
+                    - link "By instrex" [ref=f1e862] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/instrex/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e876]:
+                    - button "New Content" [ref=f1e877] [cursor=pointer]
+                    - button "Utilities" [ref=f1e878] [cursor=pointer]
+                    - button "Quality Of Life" [ref=f1e879] [cursor=pointer]
+                    - button "World Gen" [ref=f1e880] [cursor=pointer]
+                    - button "English" [ref=f1e881] [cursor=pointer]
+                    - button "Russian" [ref=f1e882] [cursor=pointer]
+                    - button "Both" [ref=f1e883] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e884] [cursor=pointer]
+                  - generic [ref=f1e885]: 1,442 ratings
+                  - button [ref=f1e887] [cursor=pointer]
+              - generic [ref=f1e891]:
+                - link [ref=f1e893] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3712171303
+                  - img "Return By Death" [ref=f1e894]
+                - generic [ref=f1e895]:
+                  - generic [ref=f1e897]:
+                    - link "Return By Death" [ref=f1e899] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3712171303
+                    - link "By Ovosh1337" [ref=f1e901] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/Ovosh1336/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e915]:
+                    - button "Gameplay Tweaks" [ref=f1e916] [cursor=pointer]
+                    - button "English" [ref=f1e917] [cursor=pointer]
+                    - button "Both" [ref=f1e918] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e919] [cursor=pointer]
+                  - generic [ref=f1e920]: 224 ratings
+                  - button [ref=f1e922] [cursor=pointer]
+              - generic [ref=f1e926]:
+                - link [ref=f1e928] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3760821691
+                  - 'img "Ancients Awakened: Classic" [ref=f1e929]'
+                - generic [ref=f1e930]:
+                  - generic [ref=f1e932]:
+                    - 'link "Ancients Awakened: Classic" [ref=f1e934] [cursor=pointer]':
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3760821691
+                    - link "By The Big E" [ref=f1e936] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/TheBiggestE/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e950]:
+                    - button "New Content" [ref=f1e951] [cursor=pointer]
+                    - button "Utilities" [ref=f1e952] [cursor=pointer]
+                    - button "Quality Of Life" [ref=f1e953] [cursor=pointer]
+                    - button "Gameplay Tweaks" [ref=f1e954] [cursor=pointer]
+                    - button "World Gen" [ref=f1e955] [cursor=pointer]
+                    - button "English" [ref=f1e956] [cursor=pointer]
+                    - button "Russian" [ref=f1e957] [cursor=pointer]
+                    - button "Both" [ref=f1e958] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e959] [cursor=pointer]
+                  - generic [ref=f1e960]: 250 ratings
+                  - button [ref=f1e962] [cursor=pointer]
+              - generic [ref=f1e966]:
+                - link [ref=f1e968] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3697170032
+                  - img "tWorldBuilder" [ref=f1e969]
+                - generic [ref=f1e970]:
+                  - generic [ref=f1e972]:
+                    - link "tWorldBuilder" [ref=f1e974] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3697170032
+                    - link "By whispo" [ref=f1e976] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/coolestwhispo/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e990]:
+                    - button "Utilities" [ref=f1e991] [cursor=pointer]
+                    - button "Quality Of Life" [ref=f1e992] [cursor=pointer]
+                    - button "English" [ref=f1e993] [cursor=pointer]
+                    - button "Russian" [ref=f1e994] [cursor=pointer]
+                    - button "Both" [ref=f1e995] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e996] [cursor=pointer]
+                  - generic [ref=f1e997]: 140 ratings
+                  - button [ref=f1e999] [cursor=pointer]
+              - generic [ref=f1e1003]:
+                - link [ref=f1e1005] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3732711988
+                  - img "Magic Storage - Mod List Tweaks" [ref=f1e1006]
+                - generic [ref=f1e1007]:
+                  - generic [ref=f1e1009]:
+                    - link "Magic Storage - Mod List Tweaks" [ref=f1e1011] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3732711988
+                    - link "By enliguin" [ref=f1e1013] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561199465818721/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1027]:
+                    - button "New Content" [ref=f1e1028] [cursor=pointer]
+                    - button "Utilities" [ref=f1e1029] [cursor=pointer]
+                    - button "Quality Of Life" [ref=f1e1030] [cursor=pointer]
+                    - button "Both" [ref=f1e1031] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1032] [cursor=pointer]
+                  - generic [ref=f1e1033]: 359 ratings
+                  - button [ref=f1e1035] [cursor=pointer]
+              - generic [ref=f1e1039]:
+                - link [ref=f1e1041] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3723637703
+                  - img "Calamity Fancy UI" [ref=f1e1042]
+                - generic [ref=f1e1043]:
+                  - generic [ref=f1e1045]:
+                    - link "Calamity Fancy UI" [ref=f1e1047] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3723637703
+                    - link "By next" [ref=f1e1049] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/nextrg/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1063]:
+                    - button "Utilities" [ref=f1e1064] [cursor=pointer]
+                    - button "Library" [ref=f1e1065] [cursor=pointer]
+                    - button "Translation" [ref=f1e1066] [cursor=pointer]
+                    - button "Visual Tweaks" [ref=f1e1067] [cursor=pointer]
+                    - button "English" [ref=f1e1068] [cursor=pointer]
+                    - button "Russian" [ref=f1e1069] [cursor=pointer]
+                    - button "Simplified Chinese" [ref=f1e1070] [cursor=pointer]
+                    - button "Polish" [ref=f1e1071] [cursor=pointer]
+                    - button "Client" [ref=f1e1072] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1073] [cursor=pointer]
+                  - generic [ref=f1e1074]: 361 ratings
+                  - button [ref=f1e1076] [cursor=pointer]
+              - generic [ref=f1e1080]:
+                - link [ref=f1e1082] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3717094170
+                  - img "Dye Paints & Shade Coatings" [ref=f1e1083]
+                - generic [ref=f1e1084]:
+                  - generic [ref=f1e1086]:
+                    - link "Dye Paints & Shade Coatings" [ref=f1e1088] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3717094170
+                    - link "By Angry Goldfish" [ref=f1e1090] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561198708719265/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1104]:
+                    - button "New Content" [ref=f1e1105] [cursor=pointer]
+                    - button "Utilities" [ref=f1e1106] [cursor=pointer]
+                    - button "Quality Of Life" [ref=f1e1107] [cursor=pointer]
+                    - button "Visual Tweaks" [ref=f1e1108] [cursor=pointer]
+                    - button "English" [ref=f1e1109] [cursor=pointer]
+                    - button "Both" [ref=f1e1110] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1111] [cursor=pointer]
+                  - generic [ref=f1e1112]: 120 ratings
+                  - button [ref=f1e1114] [cursor=pointer]
+              - generic [ref=f1e1118]:
+                - link [ref=f1e1120] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3712348877
+                  - img "Odyssey" [ref=f1e1121]
+                - generic [ref=f1e1122]:
+                  - generic [ref=f1e1124]:
+                    - link "Odyssey" [ref=f1e1126] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3712348877
+                    - link "By CarJoe" [ref=f1e1128] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561198291929765/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1142]:
+                    - button "New Content" [ref=f1e1143] [cursor=pointer]
+                    - button "English" [ref=f1e1144] [cursor=pointer]
+                    - button "Both" [ref=f1e1145] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1146] [cursor=pointer]
+                  - generic [ref=f1e1147]: 154 ratings
+                  - button [ref=f1e1149] [cursor=pointer]
+              - generic [ref=f1e1153]:
+                - link [ref=f1e1155] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3708079175
+                  - img "Ultranium" [ref=f1e1156]
+                - generic [ref=f1e1157]:
+                  - generic [ref=f1e1159]:
+                    - link "Ultranium" [ref=f1e1161] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3708079175
+                    - link "By Dylan_Doe" [ref=f1e1163] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/dylandoe/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1177]:
+                    - button "New Content" [ref=f1e1178] [cursor=pointer]
+                    - button "World Gen" [ref=f1e1179] [cursor=pointer]
+                    - button "English" [ref=f1e1180] [cursor=pointer]
+                    - button "Both" [ref=f1e1181] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1182] [cursor=pointer]
+                  - generic [ref=f1e1183]: 288 ratings
+                  - button [ref=f1e1185] [cursor=pointer]
+              - generic [ref=f1e1189]:
+                - link [ref=f1e1191] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3700565215
+                  - img "Sulphuric Sea Patches" [ref=f1e1192]
+                - generic [ref=f1e1193]:
+                  - generic [ref=f1e1195]:
+                    - link "Sulphuric Sea Patches" [ref=f1e1197] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3700565215
+                    - link "By Lion8cake" [ref=f1e1199] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/LIon8cake/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1213]:
+                    - button "Visual Tweaks" [ref=f1e1214] [cursor=pointer]
+                    - button "Both" [ref=f1e1215] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1216] [cursor=pointer]
+                  - generic [ref=f1e1217]: 146 ratings
+                  - button [ref=f1e1219] [cursor=pointer]
+              - generic [ref=f1e1223]:
+                - link [ref=f1e1225] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3701189953
+                  - img "VFX+ Boss Addon" [ref=f1e1226]
+                - generic [ref=f1e1227]:
+                  - generic [ref=f1e1229]:
+                    - link "VFX+ Boss Addon" [ref=f1e1231] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3701189953
+                    - link "By Bluebasher5" [ref=f1e1233] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/id/Bluebasher5/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1247]:
+                    - button "Audio Tweaks" [ref=f1e1248] [cursor=pointer]
+                    - button "Visual Tweaks" [ref=f1e1249] [cursor=pointer]
+                    - button "English" [ref=f1e1250] [cursor=pointer]
+                    - button "Both" [ref=f1e1251] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1252] [cursor=pointer]
+                  - generic [ref=f1e1253]: 250 ratings
+                  - button [ref=f1e1255] [cursor=pointer]
+              - generic [ref=f1e1259]:
+                - link [ref=f1e1261] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763961536
+                  - img "Overhealth" [ref=f1e1262]
+                - generic [ref=f1e1263]:
+                  - generic [ref=f1e1265]:
+                    - link "Overhealth" [ref=f1e1267] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3763961536
+                    - link "By JADen" [ref=f1e1269] [cursor=pointer]:
+                      - /url: https://steamcommunity.com/profiles/76561198690889465/myworkshopfiles/?appid=1281930
+                  - generic [ref=f1e1283]:
+                    - button "Gameplay Tweaks" [ref=f1e1284] [cursor=pointer]
+                    - button "English" [ref=f1e1285] [cursor=pointer]
+                    - button "Russian" [ref=f1e1286] [cursor=pointer]
+                    - button "Both" [ref=f1e1287] [cursor=pointer]
+                    - button "1.4.4" [ref=f1e1288] [cursor=pointer]
+                  - generic [ref=f1e1289]: 139 ratings
+                  - button [ref=f1e1291] [cursor=pointer]
+            - button "View most popular" [ref=f1e1295] [cursor=pointer]
+          - generic [ref=f1e1296]:
+            - generic [ref=f1e1297]:
+              - generic [ref=f1e1298]:
+                - generic [ref=f1e1299]: Most Required by Other Items
+                - generic [ref=f1e1300]: Most popular items that other items require in order to function properly
+              - button "View All" [ref=f1e1301] [cursor=pointer]
+            - generic [ref=f1e1302]:
+              - generic [ref=f1e1303]:
+                - link [ref=f1e1305] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2851830850
+                  - img "MrPlague's Authentic Races" [ref=f1e1306]
+                - generic [ref=f1e1307]:
+                  - link "MrPlague's Authentic Races" [ref=f1e1321] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2851830850
+                  - link "By MrPlague" [ref=f1e1323] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/mrplagueracemod/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e1325] [cursor=pointer]
+              - generic [ref=f1e1329]:
+                - link [ref=f1e1331] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2824688072
+                  - img "Calamity Mod" [ref=f1e1332]
+                - generic [ref=f1e1333]:
+                  - link "Calamity Mod" [ref=f1e1347] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2824688072
+                  - link "By Ozzatron" [ref=f1e1349] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/Ozzatron/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e1351] [cursor=pointer]
+              - generic [ref=f1e1355]:
+                - link [ref=f1e1357] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2785100219
+                  - img "Subworld Library" [ref=f1e1358]
+                - generic [ref=f1e1359]:
+                  - link "Subworld Library" [ref=f1e1373] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2785100219
+                  - link "By John Snail" [ref=f1e1375] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/johnsnail/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e1377] [cursor=pointer]
+              - generic [ref=f1e1381]:
+                - link [ref=f1e1383] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2790924965
+                  - img "Structure Helper" [ref=f1e1384]
+                - generic [ref=f1e1385]:
+                  - link "Structure Helper" [ref=f1e1399] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2790924965
+                  - link "By ScalarVector1" [ref=f1e1401] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/profiles/76561198177899533/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e1403] [cursor=pointer]
+              - generic [ref=f1e1407]:
+                - link [ref=f1e1409] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416
+                  - img "Thorium Mod" [ref=f1e1410]
+                - generic [ref=f1e1411]:
+                  - link "Thorium Mod" [ref=f1e1425] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416
+                  - link "By DivermanSam" [ref=f1e1427] [cursor=pointer]:
+                    - /url: https://steamcommunity.com/id/76561198025023640/myworkshopfiles/?appid=1281930
+                  - button [ref=f1e1429] [cursor=pointer]
+  - contentinfo [ref=f1e1435]:
+    - generic [ref=f1e1436]:
+      - generic [ref=f1e1437]:
+        - link [ref=f1e1438] [cursor=pointer]:
+          - /url: https://store.steampowered.com/?snr=_44_44_
+        - link [ref=f1e1449] [cursor=pointer]:
+          - /url: https://valvesoftware.com
+      - paragraph [ref=f1e1455]: © 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.VAT included in all prices where applicable.
+      - generic [ref=f1e1456]:
+        - link [ref=f1e1457] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Steam
+        - link [ref=f1e1460] [cursor=pointer]:
+          - /url: https://bsky.app/profile/steampowered.com
+        - link [ref=f1e1463] [cursor=pointer]:
+          - /url: https://facebook.com/steam
+        - link [ref=f1e1466] [cursor=pointer]:
+          - /url: https://twitter.com/steam
+    - generic [ref=f1e1469]:
+      - heading "STEAM" [level=3] [ref=f1e1470]
+      - link "About Steam" [ref=f1e1471] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=_44_44_
+      - link "Steam SSA" [ref=f1e1472] [cursor=pointer]:
+        - /url: https://store.steampowered.com/subscriber_agreement/?snr=_44_44_
+      - link "Steamworks" [ref=f1e1473] [cursor=pointer]:
+        - /url: https://partner.steamgames.com/
+      - link "Steam Distribution" [ref=f1e1474] [cursor=pointer]:
+        - /url: https://partner.steamgames.com/steamdirect
+      - link "Gift Cards" [ref=f1e1475] [cursor=pointer]:
+        - /url: https://store.steampowered.com/digitalgiftcards/?snr=_44_44_
+    - generic [ref=f1e1476]:
+      - heading "VALVE" [level=3] [ref=f1e1477]
+      - link "About Valve" [ref=f1e1478] [cursor=pointer]:
+        - /url: https://valvesoftware.com/about
+      - link "Jobs" [ref=f1e1479] [cursor=pointer]:
+        - /url: https://valvesoftware.com/
+      - link "Hardware" [ref=f1e1480] [cursor=pointer]:
+        - /url: https://store.steampowered.com/hardware/?snr=_44_44_
+      - link "Recycling" [ref=f1e1481] [cursor=pointer]:
+        - /url: https://store.steampowered.com/hardware_recycling/?snr=_44_44_
+    - generic [ref=f1e1482]:
+      - heading "LEGAL" [level=3] [ref=f1e1483]
+      - link "Privacy" [ref=f1e1484] [cursor=pointer]:
+        - /url: https://store.steampowered.com/privacy_agreement/?snr=_44_44_
+      - link "Accessibility" [ref=f1e1485] [cursor=pointer]:
+        - /url: https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436
+      - link "Notices & Policies" [ref=f1e1486] [cursor=pointer]:
+        - /url: https://store.steampowered.com/legal/?snr=_44_44_
+      - link "Cookies" [ref=f1e1487] [cursor=pointer]:
+        - /url: https://store.steampowered.com/account/cookiepreferences/?snr=_44_44_
+      - link "Refunds" [ref=f1e1488] [cursor=pointer]:
+        - /url: https://store.steampowered.com/steam_refunds/?snr=_44_44_
+    - generic [ref=f1e1489]:
+      - heading "MORE" [level=3] [ref=f1e1490]
+      - link "Get Steam" [ref=f1e1491] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=_44_44_
+      - link "Get Mobile Apps" [ref=f1e1492] [cursor=pointer]:
+        - /url: https://store.steampowered.com/mobile/?snr=_44_44_
+      - link "Get Support" [ref=f1e1493] [cursor=pointer]:
+        - /url: https://help.steampowered.com/
+      - link "My Account" [ref=f1e1494] [cursor=pointer]:
+        - /url: https://store.steampowered.com/account/?snr=_44_44_

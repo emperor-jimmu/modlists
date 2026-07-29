@@ -1,0 +1,569 @@
+- generic [ref=f3e5]:
+  - banner [ref=f3e6]:
+    - generic [ref=f3e7]:
+      - link "Link to the Steam Homepage" [ref=f3e8] [cursor=pointer]:
+        - /url: https://store.steampowered.com/
+        - img "Link to the Steam Homepage" [ref=f3e9]
+      - navigation [ref=f3e10]:
+        - list [ref=f3e11]:
+          - button "STORE" [ref=f3e12] [cursor=pointer]
+          - button "COMMUNITY" [ref=f3e13] [cursor=pointer]
+          - link "About" [ref=f3e14] [cursor=pointer]:
+            - /url: https://store.steampowered.com/about/?snr=____globalheader
+          - link "SUPPORT" [ref=f3e15] [cursor=pointer]:
+            - /url: https://help.steampowered.com/en/
+      - generic [ref=f3e17]:
+        - link "Install Steam" [ref=f3e18] [cursor=pointer]:
+          - /url: https://store.steampowered.com/about/
+        - link "sign in" [ref=f3e19] [cursor=pointer]:
+          - /url: /login/
+        - text: "|"
+        - button "language" [ref=f3e20] [cursor=pointer]
+  - dialog [ref=f3e21]:
+    - generic [ref=f3e22]:
+      - link "Sign in" [ref=f3e23] [cursor=pointer]:
+        - /url: /login/
+      - group [ref=f3e24]:
+        - generic "Store" [ref=f3e25] [cursor=pointer]
+      - group [ref=f3e27]:
+        - generic "Community" [ref=f3e28] [cursor=pointer]
+      - link "About" [ref=f3e30] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=____globalheader
+      - link "Support" [ref=f3e31] [cursor=pointer]:
+        - /url: https://help.steampowered.com/en/
+      - generic [ref=f3e32]:
+        - button "Change language" [ref=f3e33] [cursor=pointer]
+        - link "Get the Steam Mobile App" [ref=f3e34] [cursor=pointer]:
+          - /url: https://store.steampowered.com/mobile?snr=____globalheader
+        - button "View desktop website" [ref=f3e35] [cursor=pointer]
+    - contentinfo [ref=f3e36]:
+      - text: © Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+      - generic [ref=f3e38]:
+        - link "Privacy Policy" [ref=f3e39] [cursor=pointer]:
+          - /url: https://store.steampowered.com/privacy_agreement/
+        - text: "|"
+        - link "Legal" [ref=f3e40] [cursor=pointer]:
+          - /url: http://www.valvesoftware.com/legal.htm
+        - text: "|"
+        - link "Steam Subscriber Agreement" [ref=f3e41] [cursor=pointer]:
+          - /url: https://store.steampowered.com/subscriber_agreement/
+        - text: "|"
+        - link "Refunds" [ref=f3e42] [cursor=pointer]:
+          - /url: https://store.steampowered.com/steam_refunds/
+  - generic [ref=f3e45]:
+    - generic [ref=f3e49]:
+      - generic [ref=f3e50]:
+        - link [ref=f3e51]:
+          - /url: https://steamcommunity.com/app/1281930
+          - heading "tModLoader" [level=1] [ref=f3e52]
+        - link "Store Page" [ref=f3e53] [cursor=pointer]:
+          - /url: https://store.steampowered.com/app/1281930/?snr=_9_apphubheader_
+      - generic [ref=f3e54]:
+        - link "All" [ref=f3e56] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/
+        - link "Discussions" [ref=f3e58] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/discussions/
+        - link "Screenshots" [ref=f3e60] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/screenshots/
+        - link "Artwork" [ref=f3e62] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/images/
+        - link "Broadcasts" [ref=f3e64] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/broadcasts/
+        - link "Videos" [ref=f3e66] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/videos/
+        - link "Workshop" [ref=f3e68] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/workshop/
+        - link "News" [ref=f3e70] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/news/
+        - link "Guides" [ref=f3e72] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/guides/
+        - link "Reviews" [ref=f3e74] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/reviews/
+    - generic [ref=f3e76]:
+      - generic [ref=f3e77]:
+        - img "tModLoader" [ref=f3e78]
+        - generic [ref=f3e79]:
+          - generic [ref=f3e80]: tModLoader Mods
+          - generic [ref=f3e81]: View and download tModLoader Mods from the Steam Workshop. Please note that the mods listed here are only usable on the default tModLoader branch. Mods usable on 1.3-legacy are found elsewhere.
+          - link "Learn More" [ref=f3e83] [cursor=pointer]:
+            - /url: https://github.com/tModLoader/tModLoader/wiki
+      - generic [ref=f3e84]:
+        - link "Home" [ref=f3e85] [cursor=pointer]:
+          - /url: https://steamcommunity.com/app/1281930/workshop/
+        - button "Browse" [ref=f3e86] [cursor=pointer]
+        - button "Your Items" [ref=f3e89] [cursor=pointer]
+        - link "Discussions" [ref=f3e92] [cursor=pointer]:
+          - /url: https://steamcommunity.com/workshop/discussions/?appid=1281930
+        - link "About" [ref=f3e93] [cursor=pointer]:
+          - /url: https://steamcommunity.com/workshop/about/?appid=1281930
+    - generic [ref=f3e97]:
+      - generic [ref=f3e98]:
+        - 'heading "Browsing: Mods (Subscribe to add to your game)" [level=2] [ref=f3e100]':
+          - generic [ref=f3e101]:
+            - text: "Browsing: Mods"
+            - generic [ref=f3e102]: (Subscribe to add to your game)
+        - generic [ref=f3e106]:
+          - generic [ref=f3e107]: 4,327 entries matching filters
+          - 'button "Mod Features: Quality Of Life" [ref=f3e110] [cursor=pointer]'
+        - generic [ref=f3e119]:
+          - generic [ref=f3e121]:
+            - textbox "Search tModLoader" [ref=f3e125]
+            - button [ref=f3e126] [cursor=pointer]
+          - button "Top Rated All Time" [ref=f3e130] [cursor=pointer]
+      - generic [ref=f3e138]:
+        - generic [ref=f3e139]:
+          - generic [ref=f3e140]:
+            - generic [ref=f3e141]: "Special Filters:"
+            - combobox [ref=f3e142] [cursor=pointer]:
+              - generic [ref=f3e143]: None
+          - generic [ref=f3e148]:
+            - generic [ref=f3e149]: Mod Features
+            - generic [ref=f3e151]:
+              - generic [ref=f3e152] [cursor=pointer]:
+                - button [ref=f3e153]
+                - button [ref=f3e158]
+                - button "New Content" [ref=f3e162]
+              - generic [ref=f3e163] [cursor=pointer]:
+                - button [ref=f3e164]
+                - button [ref=f3e169]
+                - button "Utilities" [ref=f3e173]
+              - generic [ref=f3e174] [cursor=pointer]:
+                - button [ref=f3e175]
+                - button [ref=f3e180]
+                - button "Library" [ref=f3e184]
+              - generic [ref=f3e185] [cursor=pointer]:
+                - button [ref=f3e186]
+                - button [ref=f3e191]
+                - button "Quality Of Life" [ref=f3e195]
+              - generic [ref=f3e196] [cursor=pointer]:
+                - button [ref=f3e197]
+                - button [ref=f3e202]
+                - button "Gameplay Tweaks" [ref=f3e206]
+              - generic [ref=f3e207] [cursor=pointer]:
+                - button [ref=f3e208]
+                - button [ref=f3e213]
+                - button "Visual Tweaks" [ref=f3e217]
+              - generic [ref=f3e218] [cursor=pointer]:
+                - button [ref=f3e219]
+                - button [ref=f3e224]
+                - button "Audio Tweaks" [ref=f3e228]
+              - generic [ref=f3e229] [cursor=pointer]:
+                - button [ref=f3e230]
+                - button [ref=f3e235]
+                - button "World Gen" [ref=f3e239]
+              - generic [ref=f3e240] [cursor=pointer]:
+                - button [ref=f3e241]
+                - button [ref=f3e246]
+                - button "Translation" [ref=f3e250]
+          - generic [ref=f3e251]:
+            - generic [ref=f3e252]: Mod Side
+            - combobox [ref=f3e253] [cursor=pointer]:
+              - generic [ref=f3e254]: <none selected>
+          - generic [ref=f3e259]:
+            - generic [ref=f3e260]: tModLoader Version
+            - combobox [ref=f3e261] [cursor=pointer]:
+              - generic [ref=f3e262]: <none selected>
+          - generic [ref=f3e267]:
+            - generic [ref=f3e268]: Language
+            - combobox [ref=f3e269] [cursor=pointer]:
+              - generic [ref=f3e270]: <none selected>
+          - button "Filter by Date" [ref=f3e276] [cursor=pointer]
+          - generic [ref=f3e277]:
+            - generic [ref=f3e278]: Some items are not possible to include in the game. You can still find them if you select this box.
+            - button "Show incompatible items" [ref=f3e279] [cursor=pointer]
+        - generic [ref=f3e285]:
+          - generic [ref=f3e286]:
+            - link [ref=f3e288] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2619954303
+              - img "Recipe Browser" [ref=f3e289]
+            - generic [ref=f3e290]:
+              - link "Recipe Browser" [ref=f3e304] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2619954303
+              - link "By javidpack" [ref=f3e306] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198025715866/myworkshopfiles/?appid=1281930
+              - button [ref=f3e308] [cursor=pointer]
+          - generic [ref=f3e312]:
+            - link [ref=f3e314] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2669644269
+              - img "Boss Checklist" [ref=f3e315]
+            - generic [ref=f3e316]:
+              - link "Boss Checklist" [ref=f3e330] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2669644269
+              - link "By javidpack" [ref=f3e332] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198025715866/myworkshopfiles/?appid=1281930
+              - button [ref=f3e334] [cursor=pointer]
+          - generic [ref=f3e338]:
+            - link [ref=f3e340] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3378168037
+              - img "Compatibility Checker (Beta)" [ref=f3e341]
+            - generic [ref=f3e342]:
+              - link "Compatibility Checker (Beta)" [ref=f3e356] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3378168037
+              - link "By JamzOJamz" [ref=f3e358] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/jamzojamz/myworkshopfiles/?appid=1281930
+              - button [ref=f3e360] [cursor=pointer]
+          - generic [ref=f3e364]:
+            - link [ref=f3e366] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3449158983
+              - img "Spirit Reforged" [ref=f3e367]
+            - generic [ref=f3e368]:
+              - link "Spirit Reforged" [ref=f3e382] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3449158983
+              - link "By GabeHasWon" [ref=f3e384] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198191753703/myworkshopfiles/?appid=1281930
+              - button [ref=f3e386] [cursor=pointer]
+          - generic [ref=f3e390]:
+            - link [ref=f3e392] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2797518634
+              - img "Quality of Terraria" [ref=f3e393]
+            - generic [ref=f3e394]:
+              - link "Quality of Terraria" [ref=f3e408] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2797518634
+              - link "By 太阳照常升起" [ref=f3e410] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/487666123/myworkshopfiles/?appid=1281930
+              - button [ref=f3e412] [cursor=pointer]
+          - generic [ref=f3e416]:
+            - link [ref=f3e418] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2563309347
+              - img "Magic Storage" [ref=f3e419]
+            - generic [ref=f3e420]:
+              - link "Magic Storage" [ref=f3e434] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2563309347
+              - link "By absoluteAquarian" [ref=f3e436] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/absoluteAquarian/myworkshopfiles/?appid=1281930
+              - button [ref=f3e438] [cursor=pointer]
+          - generic [ref=f3e442]:
+            - link [ref=f3e444] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3703340292
+              - img "Split" [ref=f3e445]
+            - generic [ref=f3e446]:
+              - link "Split" [ref=f3e460] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3703340292
+              - link "By instrex" [ref=f3e462] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/instrex/myworkshopfiles/?appid=1281930
+              - button [ref=f3e464] [cursor=pointer]
+          - generic [ref=f3e468]:
+            - link [ref=f3e470] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2565639705
+              - img "Ore Excavator (1.4.3/1.4.4 Veinminer)" [ref=f3e471]
+            - generic [ref=f3e472]:
+              - link "Ore Excavator (1.4.3/1.4.4 Veinminer)" [ref=f3e486] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2565639705
+              - link "By CrazyContraption" [ref=f3e488] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/CrazyContraption/myworkshopfiles/?appid=1281930
+              - button [ref=f3e490] [cursor=pointer]
+          - generic [ref=f3e494]:
+            - link [ref=f3e496] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2599842771
+              - img "AlchemistNPC Lite" [ref=f3e497]
+            - generic [ref=f3e498]:
+              - link "AlchemistNPC Lite" [ref=f3e512] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2599842771
+              - link "By Gregg" [ref=f3e514] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/GreggTheGrimReaper/myworkshopfiles/?appid=1281930
+              - button [ref=f3e516] [cursor=pointer]
+          - generic [ref=f3e520]:
+            - link [ref=f3e522] [cursor=pointer]:
+              - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416
+              - img "Thorium Mod" [ref=f3e523]
+            - generic [ref=f3e524]:
+              - link "Thorium Mod" [ref=f3e538] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416
+              - link "By DivermanSam" [ref=f3e540] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/76561198025023640/myworkshopfiles/?appid=1281930
+              - button [ref=f3e542] [cursor=pointer]
+          - generic [ref=f3e546]:
+            - generic [ref=f3e547]:
+              - link "Which Mod Is This From? (WMITF)":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2563851005
+                - img "Which Mod Is This From? (WMITF)"
+            - generic [ref=f3e548]:
+              - link "Which Mod Is This From? (WMITF)" [ref=f3e562] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2563851005
+              - link "By HilariousWalnut34" [ref=f3e564] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198272030315/myworkshopfiles/?appid=1281930
+              - button [ref=f3e566] [cursor=pointer]
+          - generic [ref=f3e570]:
+            - generic [ref=f3e571]:
+              - link "Cozy Houses!":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3617579754
+                - img "Cozy Houses!"
+            - generic [ref=f3e572]:
+              - link "Cozy Houses!" [ref=f3e586] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3617579754
+              - link "By LevitatingGT" [ref=f3e588] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/levitatingGT/myworkshopfiles/?appid=1281930
+              - button [ref=f3e590] [cursor=pointer]
+          - generic [ref=f3e594]:
+            - generic [ref=f3e595]:
+              - link "Boss Cursor":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2816694149
+                - img "Boss Cursor"
+            - generic [ref=f3e596]:
+              - link "Boss Cursor" [ref=f3e610] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2816694149
+              - link "By kgoyo" [ref=f3e612] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/kgoyo/myworkshopfiles/?appid=1281930
+              - button [ref=f3e614] [cursor=pointer]
+          - generic [ref=f3e618]:
+            - generic [ref=f3e619]:
+              - link "Census - Town NPC Checklist":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2687866031
+                - img "Census - Town NPC Checklist"
+            - generic [ref=f3e620]:
+              - link "Census - Town NPC Checklist" [ref=f3e634] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2687866031
+              - link "By javidpack" [ref=f3e636] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198025715866/myworkshopfiles/?appid=1281930
+              - button [ref=f3e638] [cursor=pointer]
+          - generic [ref=f3e642]:
+            - generic [ref=f3e643]:
+              - link "Wing Slot Extra":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2597324266
+                - img "Wing Slot Extra"
+            - generic [ref=f3e644]:
+              - link "Wing Slot Extra" [ref=f3e658] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2597324266
+              - link "By Dissary" [ref=f3e660] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/rsapan/myworkshopfiles/?appid=1281930
+              - button [ref=f3e662] [cursor=pointer]
+          - generic [ref=f3e666]:
+            - generic [ref=f3e667]:
+              - link "Smarter Cursor":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2877850919
+                - img "Smarter Cursor"
+            - generic [ref=f3e668]:
+              - link "Smarter Cursor" [ref=f3e682] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2877850919
+              - link "By Quandratic" [ref=f3e684] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198118184043/myworkshopfiles/?appid=1281930
+              - button [ref=f3e686] [cursor=pointer]
+          - generic [ref=f3e690]:
+            - generic [ref=f3e691]:
+              - link "Fargo's Mutant Mod":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2570931073
+                - img "Fargo's Mutant Mod"
+            - generic [ref=f3e692]:
+              - link "Fargo's Mutant Mod" [ref=f3e706] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2570931073
+              - link "By Fargowilta" [ref=f3e708] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198096315536/myworkshopfiles/?appid=1281930
+              - button [ref=f3e710] [cursor=pointer]
+          - generic [ref=f3e714]:
+            - generic [ref=f3e715]:
+              - 'link "Layers: Enhanced Decor!"':
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3653513831
+                - 'img "Layers: Enhanced Decor!"'
+            - generic [ref=f3e716]:
+              - 'link "Layers: Enhanced Decor!" [ref=f3e730] [cursor=pointer]':
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3653513831
+              - link "By LevitatingGT" [ref=f3e732] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/levitatingGT/myworkshopfiles/?appid=1281930
+              - button [ref=f3e734] [cursor=pointer]
+          - generic [ref=f3e738]:
+            - generic [ref=f3e739]:
+              - link "Shop Expander":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2828370879
+                - img "Shop Expander"
+            - generic [ref=f3e740]:
+              - link "Shop Expander" [ref=f3e754] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2828370879
+              - link "By Exterminator" [ref=f3e756] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/ExterminatorX/myworkshopfiles/?appid=1281930
+              - button [ref=f3e758] [cursor=pointer]
+          - generic [ref=f3e762]:
+            - generic [ref=f3e763]:
+              - link "Shorter Respawn Time":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2562997415
+                - img "Shorter Respawn Time"
+            - generic [ref=f3e764]:
+              - link "Shorter Respawn Time" [ref=f3e778] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2562997415
+              - link "By javidpack" [ref=f3e780] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198025715866/myworkshopfiles/?appid=1281930
+              - button [ref=f3e782] [cursor=pointer]
+          - generic [ref=f3e786]:
+            - generic [ref=f3e787]:
+              - link "Magic Builder":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3024322683
+                - img "Magic Builder"
+            - generic [ref=f3e788]:
+              - link "Magic Builder" [ref=f3e802] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3024322683
+              - link "By GabsGoncs" [ref=f3e804] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/GabsGoncs/myworkshopfiles/?appid=1281930
+              - button [ref=f3e806] [cursor=pointer]
+          - generic [ref=f3e810]:
+            - generic [ref=f3e811]:
+              - link "Munchies - Consumables Checklist":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3310041861
+                - img "Munchies - Consumables Checklist"
+            - generic [ref=f3e812]:
+              - link "Munchies - Consumables Checklist" [ref=f3e826] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3310041861
+              - link "By jboss" [ref=f3e828] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/jbossjaslow/myworkshopfiles/?appid=1281930
+              - button [ref=f3e830] [cursor=pointer]
+          - generic [ref=f3e834]:
+            - generic [ref=f3e835]:
+              - link "Better Boss Health Bar for 1.4.4+":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3018447913
+                - img "Better Boss Health Bar for 1.4.4+"
+            - generic [ref=f3e836]:
+              - link "Better Boss Health Bar for 1.4.4+" [ref=f3e850] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3018447913
+              - link "By Setnour6" [ref=f3e852] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/setnour6/myworkshopfiles/?appid=1281930
+              - button [ref=f3e854] [cursor=pointer]
+          - generic [ref=f3e858]:
+            - generic [ref=f3e859]:
+              - link "Auto Reforge":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2707400823
+                - img "Auto Reforge"
+            - generic [ref=f3e860]:
+              - link "Auto Reforge" [ref=f3e874] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2707400823
+              - link "By Sad Onion" [ref=f3e876] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/smutnacebula/myworkshopfiles/?appid=1281930
+              - button [ref=f3e878] [cursor=pointer]
+          - generic [ref=f3e882]:
+            - generic [ref=f3e883]:
+              - link "More Accessory Slots (More Accessories)":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2825583251
+                - img "More Accessory Slots (More Accessories)"
+            - generic [ref=f3e884]:
+              - link "More Accessory Slots (More Accessories)" [ref=f3e898] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2825583251
+              - link "By Aeryn" [ref=f3e900] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/Zoryn4163/myworkshopfiles/?appid=1281930
+              - button [ref=f3e902] [cursor=pointer]
+          - generic [ref=f3e906]:
+            - generic [ref=f3e907]:
+              - link "Immersive Inventory (Better HUD Visuals)":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3678702962
+                - img "Immersive Inventory (Better HUD Visuals)"
+            - generic [ref=f3e908]:
+              - link "Immersive Inventory (Better HUD Visuals)" [ref=f3e922] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3678702962
+              - link "By 󠀡󠀡" [ref=f3e924] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/gevon/myworkshopfiles/?appid=1281930
+              - button [ref=f3e926] [cursor=pointer]
+          - generic [ref=f3e930]:
+            - generic [ref=f3e931]:
+              - link "Colored Damage Types":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2793782057
+                - img "Colored Damage Types"
+            - generic [ref=f3e932]:
+              - link "Colored Damage Types" [ref=f3e946] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2793782057
+              - link "By Fudgepants" [ref=f3e948] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/Flame48/myworkshopfiles/?appid=1281930
+              - button [ref=f3e950] [cursor=pointer]
+          - generic [ref=f3e954]:
+            - generic [ref=f3e955]:
+              - link "Antisocial":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2564872136
+                - img "Antisocial"
+            - generic [ref=f3e956]:
+              - link "Antisocial" [ref=f3e970] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2564872136
+              - link "By javidpack" [ref=f3e972] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198025715866/myworkshopfiles/?appid=1281930
+              - button [ref=f3e974] [cursor=pointer]
+          - generic [ref=f3e978]:
+            - generic [ref=f3e979]:
+              - link "Summoner UI (Latest Stable Release)":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2979448082
+                - img "Summoner UI (Latest Stable Release)"
+            - generic [ref=f3e980]:
+              - link "Summoner UI (Latest Stable Release)" [ref=f3e994] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=2979448082
+              - link "By Tetriscat66" [ref=f3e996] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/tetriscat66/myworkshopfiles/?appid=1281930
+              - button [ref=f3e998] [cursor=pointer]
+          - generic [ref=f3e1002]:
+            - generic [ref=f3e1003]:
+              - link "Concise Mods List":
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3001692619
+                - img "Concise Mods List"
+            - generic [ref=f3e1004]:
+              - link "Concise Mods List" [ref=f3e1018] [cursor=pointer]:
+                - /url: https://steamcommunity.com/sharedfiles/filedetails/?id=3001692619
+              - link "By Cyrilly" [ref=f3e1020] [cursor=pointer]:
+                - /url: https://steamcommunity.com/id/cyrilliy/myworkshopfiles/?appid=1281930
+              - button [ref=f3e1022] [cursor=pointer]
+      - generic [ref=f3e1026]:
+        - generic [ref=f3e1027]:
+          - text: "Per page:"
+          - combobox [ref=f3e1028] [cursor=pointer]:
+            - generic [ref=f3e1029]: "30"
+        - generic [ref=f3e1034]:
+          - button [disabled] [ref=f3e1035] [cursor=pointer]
+          - generic [ref=f3e1039]:
+            - button "1" [ref=f3e1040]
+            - button "2" [ref=f3e1041] [cursor=pointer]
+            - button "3" [ref=f3e1042] [cursor=pointer]
+            - generic [ref=f3e1043]: ...
+            - button "145" [ref=f3e1044] [cursor=pointer]
+          - button [ref=f3e1045] [cursor=pointer]
+  - contentinfo [ref=f3e1050]:
+    - generic [ref=f3e1051]:
+      - generic [ref=f3e1052]:
+        - link [ref=f3e1053] [cursor=pointer]:
+          - /url: https://store.steampowered.com/?snr=_44_44_
+        - link [ref=f3e1064] [cursor=pointer]:
+          - /url: https://valvesoftware.com
+      - paragraph [ref=f3e1070]: © 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.VAT included in all prices where applicable.
+      - generic [ref=f3e1071]:
+        - link [ref=f3e1072] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Steam
+        - link [ref=f3e1075] [cursor=pointer]:
+          - /url: https://bsky.app/profile/steampowered.com
+        - link [ref=f3e1078] [cursor=pointer]:
+          - /url: https://facebook.com/steam
+        - link [ref=f3e1081] [cursor=pointer]:
+          - /url: https://twitter.com/steam
+    - generic [ref=f3e1084]:
+      - heading "STEAM" [level=3] [ref=f3e1085]
+      - link "About Steam" [ref=f3e1086] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=_44_44_
+      - link "Steam SSA" [ref=f3e1087] [cursor=pointer]:
+        - /url: https://store.steampowered.com/subscriber_agreement/?snr=_44_44_
+      - link "Steamworks" [ref=f3e1088] [cursor=pointer]:
+        - /url: https://partner.steamgames.com/
+      - link "Steam Distribution" [ref=f3e1089] [cursor=pointer]:
+        - /url: https://partner.steamgames.com/steamdirect
+      - link "Gift Cards" [ref=f3e1090] [cursor=pointer]:
+        - /url: https://store.steampowered.com/digitalgiftcards/?snr=_44_44_
+    - generic [ref=f3e1091]:
+      - heading "VALVE" [level=3] [ref=f3e1092]
+      - link "About Valve" [ref=f3e1093] [cursor=pointer]:
+        - /url: https://valvesoftware.com/about
+      - link "Jobs" [ref=f3e1094] [cursor=pointer]:
+        - /url: https://valvesoftware.com/
+      - link "Hardware" [ref=f3e1095] [cursor=pointer]:
+        - /url: https://store.steampowered.com/hardware/?snr=_44_44_
+      - link "Recycling" [ref=f3e1096] [cursor=pointer]:
+        - /url: https://store.steampowered.com/hardware_recycling/?snr=_44_44_
+    - generic [ref=f3e1097]:
+      - heading "LEGAL" [level=3] [ref=f3e1098]
+      - link "Privacy" [ref=f3e1099] [cursor=pointer]:
+        - /url: https://store.steampowered.com/privacy_agreement/?snr=_44_44_
+      - link "Accessibility" [ref=f3e1100] [cursor=pointer]:
+        - /url: https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436
+      - link "Notices & Policies" [ref=f3e1101] [cursor=pointer]:
+        - /url: https://store.steampowered.com/legal/?snr=_44_44_
+      - link "Cookies" [ref=f3e1102] [cursor=pointer]:
+        - /url: https://store.steampowered.com/account/cookiepreferences/?snr=_44_44_
+      - link "Refunds" [ref=f3e1103] [cursor=pointer]:
+        - /url: https://store.steampowered.com/steam_refunds/?snr=_44_44_
+    - generic [ref=f3e1104]:
+      - heading "MORE" [level=3] [ref=f3e1105]
+      - link "Get Steam" [ref=f3e1106] [cursor=pointer]:
+        - /url: https://store.steampowered.com/about/?snr=_44_44_
+      - link "Get Mobile Apps" [ref=f3e1107] [cursor=pointer]:
+        - /url: https://store.steampowered.com/mobile/?snr=_44_44_
+      - link "Get Support" [ref=f3e1108] [cursor=pointer]:
+        - /url: https://help.steampowered.com/
+      - link "My Account" [ref=f3e1109] [cursor=pointer]:
+        - /url: https://store.steampowered.com/account/?snr=_44_44_

@@ -1,0 +1,110 @@
+wave: 0
+title: "Wave 0 — First Steps"
+subtitle: "UI/QoL mods only — no gameplay changes"
+mods:
+  - name: "Recipe Browser"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2619954303"
+    description: "Essential crafting tool that lets you browse all recipes, track crafting progress, and plan multi-step crafts. Shows what you can craft with current materials and what you need to gather."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Boss Checklist"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2669644269"
+    description: "Tracks boss progression and shows which bosses you've defeated. Displays boss summon items, spawn conditions, and tips for each boss."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Census - Town NPC Checklist"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2687866031"
+    description: "Shows which town NPCs you have and which you're missing. Displays spawn conditions and housing requirements for each NPC."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Ore Excavator (Veinminer)"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2565639705"
+    description: "Mine entire ore veins at once by holding a key. Saves time and makes mining much more efficient without changing game balance."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Wing Slot Extra"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2597324266"
+    description: "Adds an extra accessory slot dedicated to wings. Allows you to equip wings without sacrificing a regular accessory slot."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Shorter Respawn Time"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2562997415"
+    description: "Reduces respawn time from 10 seconds to 3 seconds. Makes death less punishing and keeps gameplay flowing."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+  - name: "Better Boss Health Bar"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3018447913"
+    description: "Improves boss health bars with better visibility, damage numbers, and segment indicators for multi-phase bosses."
+    dependencies: []
+    load_before: []
+    load_after: []
+    impact:
+      new_items: false
+      new_npcs: false
+      new_biomes: false
+      new_bosses: false
+      mechanic_changes: false
+      ui_qol: true
+
+load_order:
+  - "Recipe Browser"
+  - "Boss Checklist"
+  - "Census - Town NPC Checklist"
+  - "Ore Excavator (Veinminer)"
+  - "Wing Slot Extra"
+  - "Shorter Respawn Time"
+  - "Better Boss Health Bar"
