@@ -74,7 +74,6 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 | Mod | Type | Notes |
 | --- | --- | --- |
 | [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Baseline | Gameplay-rule framework. |
-| [MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115) | Rejected | Rejected — BFCO is the locked combat animation framework. |
 | SCAR (from → `Animations`) | Baseline | NPC-side attack variety. |
 | [Knockback SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/171277) | Support | Compatible with BFCO. Evaluate for adoption with BFCO setup. |
 | [RaySense - Cover Animation](https://www.nexusmods.com/skyrimspecialedition/mods/175504) | Optional | Cover animation system. |

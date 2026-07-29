@@ -13,19 +13,13 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 
 | Mod                                                                                                               | Type        | Dial           | Notes                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------------------|-------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Alternate Perspective — Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/50326)              | Rejected | #1, #2, #3, #4 | Rejected — Skyrim Unbound Reborn is the locked alternate start.                                                                                                |
-| [Dealing with Backstories](https://www.nexusmods.com/skyrimspecialedition/mods/61106)                             | Alternative | #1, #2, #3, #4 | Origins companion — background-driven starting skills, bonuses, drawbacks, gear.                                        |
-| [Take Notes — Journal of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/13570)           | Alternative | #1, #2, #3, #4 | Persistent in-game journal. Low-risk roleplay companion.                                                                |
+| [Skyrim Unbound Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/27962)                                | Baseline | all            | **Locked.** Configurable start with full Dragonborn-quest control. |
+| [Why I Came to Skyrim - Origin Stories](https://www.nexusmods.com/skyrimspecialedition/mods/167166)               | Baseline | all            | Background-driven starting scenario with narrative hook. Companion to Skyrim Unbound Reborn. |
+| [Why I Came to Skyrim - Skyrim Unbound Reborn patch](https://www.nexusmods.com/skyrimspecialedition/mods/167577)  | Add-on | all            | Patch for Origin Stories + Skyrim Unbound Reborn. |
+| [Skyrim Unbound Reborn - New started room](https://www.nexusmods.com/skyrimspecialedition/mods/118648)            | Add-on | all            | Start room improvement for Skyrim Unbound Reborn. |
+| [Dealing with Backstories](https://www.nexusmods.com/skyrimspecialedition/mods/61106)                             | Alternative | #1, #2, #3, #4 | Origins companion — background-driven starting skills, bonuses, drawbacks, gear. |
+| [Take Notes — Journal of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/13570)           | Alternative | #1, #2, #3, #4 | Persistent in-game journal. Low-risk roleplay companion. |
 | [Roleplaying In Skyrim — Origins](https://www.nexusmods.com/skyrimspecialedition/mods/150186)                     | Alternative | #1, #2, #3, #4 | Origin-driven flavor and bonuses. Requires SKSE + Papyrus Ini Manipulator; soft-requires Actor Value Generator + SkyUI. |
-| [Alternate Start — Live Another Life](https://www.nexusmods.com/skyrimspecialedition/mods/272)                    | Rejected | all            | Rejected — Skyrim Unbound Reborn is the locked alternate start.                                                                                                  |
-| [Skyrim Unbound Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/27962)                                | Baseline | all            | **Locked.** Configurable start with full Dragonborn-quest control. Pairs with "Why I Came to Skyrim - Origin Stories."                                                                     |
-| [Realm of Lorkhan — Freeform Alternate Start](https://www.nexusmods.com/skyrimspecialedition/mods/18223)          | Rejected | #3             | Rejected — Skyrim Unbound Reborn is the locked alternate start.                                                                              |
-| [Why I Came to Skyrim - Origin Stories](https://www.nexusmods.com/skyrimspecialedition/mods/167166)               | Add-on | all            | Background-driven starting scenario with narrative hook. Companion to Skyrim Unbound Reborn.                                                                |
-| [Why I Came to Skyrim - Skyrim Unbound Reborn patch](https://www.nexusmods.com/skyrimspecialedition/mods/167577)  | Add-on | all            | Patch for Origin Stories + Skyrim Unbound Reborn.                                                                       |
-| [Skyrim Unbound Reborn - New started room](https://www.nexusmods.com/skyrimspecialedition/mods/118648)            | Add-on | all            | Start room improvement for Skyrim Unbound Reborn.                                                                                        |
-| [Adventurer's Start - An Alternate Perspective Addon](https://www.nexusmods.com/skyrimspecialedition/mods/145599) | Rejected | all            | Rejected — depends on Alternate Perspective which is rejected.                                         |
-| [New Beginnings - Alternate Perspective Extension](https://www.nexusmods.com/skyrimspecialedition/mods/57818)  | Rejected | all            | Rejected — depends on Alternate Perspective which is rejected.                               |
-| [Alternate Perspective - Hole in the Wall Fix](https://www.nexusmods.com/skyrimspecialedition/mods/174222)        | Rejected | all            | Rejected — depends on Alternate Perspective which is rejected.                                                             |
 
 ### Risks & Compatibility
 
@@ -42,9 +36,7 @@ How race traits shape long-term character identity. Choose before perks, magic, 
 
 | Mod                                                                                           | Type        | Dial       | Notes                                             |
 |-----------------------------------------------------------------------------------------------|-------------|------------|---------------------------------------------------|
-| [Aetherius — Race Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26686)        | Baseline    | #1, #2, #4 | Balanced modern route; pairs with Evenstar.       |
-| [Morningstar — Minimalistic Races](https://www.nexusmods.com/skyrimspecialedition/mods/22298) | Rejected | #3         | Restrained fallback. Rejected — Aetherius is the locked Simonrim path.                              |
-| [Imperious — Races of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1315)       | Rejected | #1, #4     | High-expression comparison. Rejected — Aetherius is the locked Simonrim path. |
+| [Aetherius — Race Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/26686)        | Baseline    | #1, #2, #4 | **Locked.** Pairs with Evenstar. Simonrim progression family.       |
 
 ### Roleplaying in Skyrim Companion Series: Race
 
@@ -68,9 +60,7 @@ How standing stones and birthsigns provide ongoing passive identity. Judge toget
 
 | Mod                                                                                             | Type        | Dial       | Notes                                             |
 |-------------------------------------------------------------------------------------------------|-------------|------------|---------------------------------------------------|
-| [Evenstar — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/41256)         | Baseline    | #1, #2, #4 | Balanced modern route; pairs with Aetherius.      |
-| [Mundus — A Standing Stone Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/33411) | Rejected | #1, #2, #4 | Simonrim alternative. Rejected — Evenstar is the locked path.             |
-| [Andromeda — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/14910)        | Rejected | #1, #4     | High-expression comparison. Rejected — Evenstar is the locked path. |
+| [Evenstar — Standing Stones](https://www.nexusmods.com/skyrimspecialedition/mods/41256)         | Baseline    | #1, #2, #4 | **Locked.** Pairs with Aetherius. Simonrim progression family.      |
 
 ### Roleplaying in Skyrim Companion Series: Standing Stones
 
@@ -123,10 +113,7 @@ How much explicit spiritual identity and day-to-day roleplay texture `Elder Wild
 
 | Mod                                                                                               | Type        | Dial       | Notes                                                             |
 |---------------------------------------------------------------------------------------------------|-------------|------------|-------------------------------------------------------------------|
-| [Pilgrim — A Religion Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/54099)        | Baseline    | #1, #2, #4 | Fits Simonrim-leaning progression family.                         |
-| [Trua — Minimalistic Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/32549) | Rejected | #3         | Restrained fallback. Rejected — Pilgrim is the locked Simonrim path.                                              |
-| [Wintersun — Faiths of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/22506)         | Rejected | #1, #4     | High-expression route. Rejected — Pilgrim is the locked Simonrim path.               |
-| [Gods And Worship](https://www.nexusmods.com/skyrimspecialedition/mods/45011)                     | Rejected | #1, #2, #4 | Full deity worship system. Rejected — Pilgrim is the locked Simonrim path. |
+| [Pilgrim — A Religion Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/54099)        | Baseline    | #1, #2, #4 | **Locked.** Fits Simonrim progression family. |
 
 ### Risks & Compatibility
 

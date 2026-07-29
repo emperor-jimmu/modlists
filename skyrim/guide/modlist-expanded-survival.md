@@ -13,11 +13,7 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 
 | Mod                                                                                                                                        | Type        | Dial       | Notes                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-------------|------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Starfrost — A Survival Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/97536)                                               | Baseline    | #1, #2, #4 | Fits Simonrim-aligned progression family.                                                                                   |
-| [SunHelm Survival](https://www.nexusmods.com/skyrimspecialedition/mods/39414)                                                              | Rejected | #1, #2, #4 | Rejected — Starfrost is the locked Simonrim survival baseline.                                                                            |
-| [Last Seed — Survival Needs](https://www.nexusmods.com/skyrimspecialedition/mods/56393)                                                    | Rejected | #1, #2, #4 | Heavier classic route. Rejected — Starfrost is the locked Simonrim survival baseline.                                      |
-| [Frostfall](https://www.nexusmods.com/skyrimspecialedition/mods/671) + [Campfire](https://www.nexusmods.com/skyrimspecialedition/mods/667) | Rejected | #1         | Harsh wilderness route. Rejected — script load and UI complexity risk 3P/GP pillar. |
-| [Skills of the Wild](https://www.nexusmods.com/skyrimspecialedition/mods/37693) v2.0+                                                      | Rejected | #1         | 4 new skill trees (Hunting, Foraging, Tracking, Camping). Requires Campfire — rejected. |
+| [Starfrost — A Survival Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/97536)                                               | Baseline    | #1, #2, #4 | **Locked.** Simonrim progression family. |
 
 ### Risks & Compatibility
 

@@ -288,7 +288,6 @@ Small texture/mesh replacers that don't fit the main topic sections above. Each 
 | [Better Wine Labels - Vanilla and LotD](https://www.nexusmods.com/skyrimspecialedition/mods/34698)        | Wine bottle label retexture. PBR patch: [175588](https://www.nexusmods.com/skyrimspecialedition/mods/175588) |
 | [Basic Dining Set Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/30055)                    | Higher-detail dining table and chair meshes. No ESP.                                                            |
 | [RUSTIC COOKING - Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/6142)              | High-res cooking pot, oven, and kitchen clutter textures.                                                       |
-| [ElSopa - Campfire HD SE](https://www.nexusmods.com/skyrimspecialedition/mods/24511)                     | Rejected — requires Campfire, which is rejected with Frostfall. |
 | [Petroglyphs of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/146569)                       | Rock carving/runestone visual replacers. Mesh-only, no ESP. |
 | [Diverse Windmill Sails - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/121759)                | BOS-based windmill sail variety.                                                                             |
 | [Diverse Foods - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/91599)                          | BOS-based food item variety.                                                                                 |

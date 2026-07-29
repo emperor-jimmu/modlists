@@ -13,9 +13,7 @@ How much rules density and specialization pressure the list actually wants once 
 
 | Mod                                                                                      | Type        | Dial       | Notes                                                               |
 |------------------------------------------------------------------------------------------|-------------|------------|---------------------------------------------------------------------|
-| [Adamant — A Perk Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/30191)   | Baseline    | #1, #2, #4 | Balanced modern route.                                              |
-| [Vokrii — Minimalistic Perks](https://www.nexusmods.com/skyrimspecialedition/mods/26176) | Rejected | #1, #2, #4 | Restrained alternative. Rejected in favor of Adamant (Simonrim coherence).                     |
-| [Ordinator — Perks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1137)  | Rejected | #1, #4     | High-complexity branch. Rejected — Simonrim stack (Adamant/Mysticism/Starfrost) is the locked path. |
+| [Adamant — A Perk Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/30191)   | Baseline    | #1, #2, #4 | **Locked.** Simonrim progression family. |
 
 ### Risks & Compatibility
 
@@ -30,13 +28,9 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 | Mod                                                                                        | Type        | Dial           | Notes                                                                           |
 |--------------------------------------------------------------------------------------------|-------------|----------------|---------------------------------------------------------------------------------|
-| [Mysticism — A Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/27839)  | Baseline    | #1, #2, #4     | Balanced modern route.                                                          |
-| [Triumvirate — Mage Archetypes](https://www.nexusmods.com/skyrimspecialedition/mods/39170) | Alternative | #1, #2, #4     | Identity-driven archetype spells (Cleric, Druid, Shadow Mage, Shaman, Warlock). |
+| [Mysticism — A Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/27839)  | Baseline    | #1, #2, #4     | **Locked.** Primary magic overhaul. |
+| [Triumvirate — Mage Archetypes](https://www.nexusmods.com/skyrimspecialedition/mods/39170) | Baseline | #1, #2, #4     | **Locked.** Identity-driven archetype spells (Cleric, Druid, Shadow Mage, Shaman, Warlock). Complements Mysticism. |
 | [Strange Runes](https://www.nexusmods.com/skyrimspecialedition/mods/19438)                 | Alternative | #1, #2, #3, #4 | Floating Nordic runes during spell charging. Visual only, no records.           |
-| [Odin — Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000)  | Rejected | #1, #4         | Moderate expansion. Rejected — Mysticism + Triumvirate is the locked path.                                                             |
-| [Apocalypse — Magic of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1090)   | Rejected | #1, #4         | Maximum spell variety. Rejected — Mysticism + Triumvirate is the locked path.                                                          |
-| [Lost Grimoire SSE](https://www.nexusmods.com/skyrimspecialedition/mods/4455)              | Addition    | #1, #2, #4     | 115+ lore-friendly spells. Compatible with any primary overhaul.                |
-| [Lost Grimoire - B.O.O.B.I.E.S Support](https://www.nexusmods.com/skyrimspecialedition/mods/158139) | Addition | #1, #2, #4 | Spell tome icons via B.O.O.B.I.E.S. Requires Lost Grimoire + B.O.O.B.I.E.S. |
 | [Elemental Mastery Magic](https://www.nexusmods.com/skyrimspecialedition/mods/139953)      | Alternative | #1, #4         | Elemental specialization and tiered mastery bonuses.                            |
 | [Immersive Illusion Spells](https://www.nexusmods.com/skyrimspecialedition/mods/142357)    | Alternative | #1, #4         | New illusion types beyond fear/calm/frenzy.                                     |
 | [360 Ward](https://www.nexusmods.com/skyrimspecialedition/mods/156225)                     | Alternative | all            | Wards block from any direction. Third-person improvement.                       |

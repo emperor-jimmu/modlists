@@ -106,9 +106,8 @@ What economy and loot should feel like: lightly rebalanced merchant-and-pricing,
 | [Trade and Barter](https://www.nexusmods.com/skyrimspecialedition/mods/23081)                         | Baseline      | #1, #2, #4   | Merchant-pricing route.                                        |
 | [C.O.I.N. — Coins of Interesting Nature](https://www.nexusmods.com/skyrimspecialedition/mods/51439)   | Baseline      | #1, #2, #4   | Regional coin variety. No price/loot changes.                  |
 | [C.O.I.N. — Treasury Exchange](https://www.nexusmods.com/skyrimspecialedition/mods/131682)            | Baseline      | #1, #2, #4   | Currency exchange for coin type conversion.                    |
-| [Open World Loot - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/110795)            | Baseline      | #1, #4       | Curated loot progression. SkyPatched variant — no ESP slot, runtime patching. Pairs with Arena encounter zones and the Static with Hard Threat dial. |
+| [Open World Loot - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/110795)            | Baseline      | #1, #4       | **Locked.** Curated loot progression. SkyPatched — no ESP slot, runtime patching. Pairs with Arena encounter zones and the Static with Hard Threat dial. |
 | [Open World Loot](https://www.nexusmods.com/skyrimspecialedition/mods/49681)                          | Alternative   | #1, #4       | Original ESP version. Use SkyPatched variant above instead.     |
-| [MorrowLoot Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/3058)                       | Alternative   | #1           | Heavy scarcity. Only if deleveled loot is a defining pillar.   |
 
 ### RiS Economy Series (optional)
 

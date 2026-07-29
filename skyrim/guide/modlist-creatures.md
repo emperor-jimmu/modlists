@@ -28,8 +28,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | --- | --- | --- |
 | [Fluffworks](https://www.nexusmods.com/skyrimspecialedition/mods/56361) | Baseline | Broad furred-animal presentation layer. |
 | [Bears of the North](https://www.nexusmods.com/skyrimspecialedition/mods/47541) | Baseline | Species standout for common large wildlife threat. |
-| [Iconic's Dragon Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/101712) | Baseline | Clean dragon presentation upgrade. Locked — safer compatibility with Dragon War and behavior mods. |
-| [Dragons SE](https://www.nexusmods.com/skyrimspecialedition/mods/132218) | Rejected | Full dragon model replacer. Rejected — Iconic's is the locked path. Not compatible. |
+| [Iconic's Dragon Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/101712) | Baseline | **Locked.** Clean dragon presentation upgrade. Compatible with Dragon War and behavior mods. |
 | [Draugrs — New models and textures](https://www.nexusmods.com/skyrimspecialedition/mods/123170) | Baseline | Most-seen undead enemy. |
 | [Spider SE](https://www.nexusmods.com/skyrimspecialedition/mods/182638) | Baseline | |
 | [Deer Reworked — Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/155433) | Baseline | |
