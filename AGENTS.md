@@ -6,7 +6,7 @@ This is a monorepo for game modlists (Minecraft, Skyrim, etc.). Each modlist is 
 
 - Root is a standard git repo — make changes, commit, push as normal
 - `<name>/` — each modlist is an independent project with its own config, guides, and AGENTS.md
-- `minecraft/`, `skyrim/`, `cyberpunk/`, `ets2/`, `rimworld/`, `gtaiv/`, `gtav/`, `rdr2/`, `arma3/`, `starfield/`, `x4-foundations/`, `asseto-corsa/`, `shogun2/`, and `threekingdoms/` were imported via `git subtree` — their full history is preserved in this repo
+- `minecraft/`, `skyrim/`, `cyberpunk/`, `ets2/`, `rimworld/`, `gtaiv/`, `gtav/`, `rdr2/`, `arma3/`, `starfield/`, `x4-foundations/`, `asseto-corsa/`, `shogun2/`, `threekingdoms/`, `fs25/`, `masseffect/`, `mb2-bannerlord/`, `warhammer-3/`, and `witcher-3/` were imported via `git subtree` — their full history is preserved in this repo
 - Do NOT use `git submodule` commands — subtrees were used instead
 
 ## Working conventions
