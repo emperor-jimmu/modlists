@@ -18,12 +18,14 @@ This is a monorepo for game modlists (Minecraft, Skyrim, etc.). Each modlist is 
 ## Adding a new modlist
 
 To add a modlist from an existing GitHub repo:
-```
+
+```bash
 git subtree add --prefix=<name> <remote> main
 ```
 
 To create from scratch:
-```
+
+```bash
 mkdir -p <name> && develop normally
 ```
 

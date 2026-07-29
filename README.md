@@ -4,13 +4,13 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 
 ## Collection
 
-| Modlist         | Game                        | Directory                                | Status |
-| --------------- | --------------------------- | ---------------------------------------- | ------ |
-| Minecraft      | Minecraft (NeoForge 1.21.1) | [`minecraft/`](./minecraft/)             | Active |
-| Skyrim         | Skyrim SE                    | [`skyrim/`](./skyrim/)                   | Active |
-| Cyberpunk      | Cyberpunk 2077               | [`cyberpunk/`](./cyberpunk/)             | Active |
-| ETS2           | Euro Truck Simulator 2       | [`ets2/`](./ets2/)                       | Active |
-| RimWorld       | RimWorld                     | [`rimworld/`](./rimworld/)               | Active |
+| Modlist   | Game                        | Directory                    | Status |
+|-----------|-----------------------------|------------------------------|--------|
+| Minecraft | Minecraft (NeoForge 1.21.1) | [`minecraft/`](./minecraft/) | Active |
+| Skyrim    | Skyrim SE                   | [`skyrim/`](./skyrim/)       | Active |
+| Cyberpunk | Cyberpunk 2077              | [`cyberpunk/`](./cyberpunk/) | Active |
+| ETS2      | Euro Truck Simulator 2      | [`ets2/`](./ets2/)           | Active |
+| RimWorld  | RimWorld                    | [`rimworld/`](./rimworld/)   | Active |
 
 ## Adding a new modlist
 
@@ -57,7 +57,7 @@ git subtree push --prefix=<name> <remote> <branch>
 
 ## Structure
 
-```
+```bash
 minecraft/              # Minecraft modpack (NeoForge 1.21.1)
 ├── config/
 ├── datapacks/
