@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Build output
+output/
+guide/mod-data-converted/
+*.pdf
+
+# Design docs (superpowers skill artifacts)
+docs/
+
+# OS
+.DS_Store
+Thumbs.db
