@@ -50,6 +50,31 @@ The default Assetto Corsa HUD displays:
   [Pause], [`Esc`],
 )
 
+=== Gamepad
+
+#table(
+  columns: (auto, auto, auto),
+  table.header([Action], [Xbox], [PlayStation]),
+  [Steer], [Left stick], [Left stick],
+  [Accelerate], [`RT`], [`R2`],
+  [Brake], [`LT`], [`L2`],
+  [Gear up / down], [`A` / `X`], [`×` / `□`],
+  [Clutch], [`LB`], [`L1`],
+  [Look left / right], [Right stick], [Right stick],
+  [Look back], [Right stick click], [`R3`],
+  [Rearview mirror], [`Back`], [`Share`],
+  [Toggle HUD], [`Guide` + `H`], [`PS` + `H`],
+  [Change camera], [`Y`], [`△`],
+  [Pause], [`Menu`], [`Options`],
+)
+
+*Tips for gamepad:*
+- Set *Steering Speed* to 50—70% in Content Manager controls for linear response
+- Enable *Steering Filter* at low values (0—5) to smooth input
+- Increase *Deadzone* to 5—10% if the stick drifts
+- Use *Vibration* (enabled in Settings → Controls) for tyre slip feedback
+- For throttle control: squeeze `RT` / `R2` gradually — abrupt application causes spin
+
 === Wheel Users
 
 Configure your wheel in *Controls → Axis*. Key settings:
@@ -244,11 +269,10 @@ Wave 0 includes only UI, HUD, and quality-of-life mods. No mechanics, graphics, 
 
 === UI & Quality of Life
 
-- #link("https://www.racedepartment.com/downloads/sidekick.21309/")[Sidekick] — Audible spotter for proximity, gaps, and flags. *Dependencies: Content Manager*. *Impact: Audio notification system, no gameplay change*.
-- #link("https://www.racedepartment.com/downloads/car-radar.24606/")[Car Radar] — Visual radar display showing nearby cars. *Dependencies: Content Manager*. *Impact: Situational awareness tool, no physics change*.
-- #link("https://www.racedepartment.com/downloads/hellicorsa.25947/")[Helicorsa] — 3D arrow indicator showing car proximity and relative position. *Dependencies: Content Manager*. *Impact: Visual overlay, no gameplay change*.
-- #link("https://www.racedepartment.com/downloads/crew-chief.20868/")[Crew Chief] — External spotter and race engineer application. *Dependencies: Standalone app (runs alongside AC)*. *Impact: Voice-based spotter, pit strategy assistance, no in-game modification*.
-- #link("https://www.racedepartment.com/downloads/content-manager-shortcuts.40447/")[CM Shortcuts] — Quick-access shortcuts via Content Manager. *Dependencies: Content Manager*.
+- #link("https://www.overtake.gg/downloads/sidekick.11007/")[Sidekick] — Audible spotter for proximity, gaps, and flags. *Dependencies: Content Manager*. *Impact: Audio notification system, no gameplay change*.
+- #link("https://www.overtake.gg/downloads/car-radar.15743/")[Car Radar] — Visual radar display showing nearby cars. *Dependencies: Content Manager*. *Impact: Situational awareness tool, no physics change*.
+- #link("https://www.overtake.gg/downloads/helicorsa.5199/")[Helicorsa] — 3D arrow indicator showing car proximity and relative position. *Dependencies: Content Manager*. *Impact: Visual overlay, no gameplay change*.
+- #link("https://www.thecrewchief.org/forumdisplay.php?15-Download-CrewChief-for-PC")[Crew Chief] — External spotter and race engineer application. *Dependencies: Standalone app (runs alongside AC)*. *Impact: Voice-based spotter, pit strategy assistance, no in-game modification*.
 
 === Installation Instructions
 

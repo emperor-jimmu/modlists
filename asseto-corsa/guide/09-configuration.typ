@@ -119,11 +119,27 @@ After installing Sol:
 Create a profile for each control method:
 
 1. *Settings → Controls → New Preset*
-2. Name: e.g., "G29 - Default"
+2. Name: e.g., "G29 - Default" or "Xbox Controller"
 3. Map all controls precisely
-4. Set steering deadzone: 0-3%
+4. Set steering deadzone: 0-3% (wheel) or 5-10% (gamepad)
 5. Set brake/gas deadzone: 0-5%
 6. Save and assign
+
+=== Wheel Profiles
+
+- *Logitech G27/G29/G920* — Overall 100%, spring/damper 0%, centering spring OFF
+- *Thrustmaster T300/TX/T150* — Rotation 900°, master gain 75-85%
+- *Fanatec CSL/DD* — SEN = Auto, FF = 100, FEI = 100, start gain 60-70%
+
+=== Gamepad Profiles
+
+- *Steering Speed*: 50—70% — lower values feel more stable, higher values respond faster
+- *Steering Filter*: 1—5 — smooths stick input; higher = smoother but slower
+- *Steering Deadzone*: 5—10% — prevents drift from worn sticks
+- *Gamma*: 1.00 — linear response curve
+- *Speed Sensitivity*: 0% — disables speed-dependent steering reduction
+- *Vibration*: Enable for tyre slip and kerb feedback
+- *Throttle Saturation*: 90—95% — leaves room for modulation at the top of the trigger range
 
 == Performance Optimization
 

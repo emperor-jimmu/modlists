@@ -4,14 +4,12 @@ This section catalogs mods that alter or enhance physics, force feedback, and dr
 
 == Physics Mods
 
-- #link("https://www.racedepartment.com/downloads/ffb-clip.25675/")[FFB Clip] — Analyzes force feedback output and prevents clipping (signal saturation). Provides real-time monitoring and auto-adjustment of FFB gain.
+- #link("https://www.overtake.gg/downloads/ffbclip-app.7910/")[FFB Clip] — Analyzes force feedback output and prevents clipping (signal saturation). Provides real-time monitoring and auto-adjustment of FFB gain.
   *Dependencies: Content Manager*
   *System/Mechanic Impact: Force feedback system enhancement. Does not change physics, but improves wheel feel and prevents signal distortion.*
   *Configure via FFB Clip UI or CM settings.*
 
-- #link("https://www.racedepartment.com/downloads/ricmotech-minimal-ui.25647/")[RST Minimal UI] — Data-rich replacement HUD showing: tyre temperatures (inner/middle/outer), brake bias, fuel consumption, delta times, and split comparisons.
-  *Dependencies: Content Manager*
-  *System/Mechanic Impact: Information display only. No physics changes, but provides critical data for tuning and driving analysis.*
+- #link("https://www.overtake.gg/downloads/minimalista-hud.61870/")[Minimalista HUD] — Clean data HUD with tyre temps, brake bias, fuel, and delta times. *Dependencies: Content Manager*. *Impact: Information display. No physics changes*. *Note: Replaces the old RST Minimal UI*.
 
 == Tyre & Handling Mods
 

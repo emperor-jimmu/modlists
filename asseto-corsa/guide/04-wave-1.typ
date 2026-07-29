@@ -331,36 +331,30 @@ At this level, you need to read the tyres — not just react to them.
 
 === Essential Tools
 
-- #link("https://www.racedepartment.com/downloads/custom-shaders-patch.30179/")[Custom Shaders Patch (CSP)] — Advanced graphics, weather, and post-processing. *Dependencies: Content Manager*. *Impact: Major visual overhaul, adds weather/lighting system. Requires compatible version for AC v1.16.4*.
-- #link("https://www.racedepartment.com/downloads/sol.24908/")[Sol] — Weather simulation and lighting system (requires CSP). *Dependencies: Custom Shaders Patch*. *Impact: Dynamic weather, time-of-day cycle, realistic lighting*.
+- #link("https://www.acstuff.club/patch/")[Custom Shaders Patch (CSP)] — Advanced graphics, weather, and post-processing. *Dependencies: Content Manager*. *Impact: Major visual overhaul, adds weather/lighting system. Requires compatible version for AC v1.16.4*.
+- #link("https://www.overtake.gg/downloads/sol.24914/")[Sol] — Weather simulation and lighting system (requires CSP). *Dependencies: Custom Shaders Patch*. *Impact: Dynamic weather, time-of-day cycle, realistic lighting*.
 
 === Graphics Mods
 
-- #link("https://www.racedepartment.com/downloads/photoscreen.27634/")[PhotoScreen] — Advanced photo mode for showroom screenshots. *Dependencies: Content Manager*.
-
 === Content Mods (Cars)
 
-- #link("https://www.racedepartment.com/downloads/toyota-supra-mk4.32038/")[Toyota Supra MKIV] — Iconic JDM sports car. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/porsche-911-gt3-rs-991.27328/")[Porsche 911 GT3 RS (991)] — Modern track weapon. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/ferrari-488-gte.29690/")[Ferrari 488 GTE] — GTE-class endurance racer. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/ferrari-488-gtlm-2017.35056/")[Ferrari 488 GTE] — GTE/GTLM-class endurance racer. *Dependencies: None*.
 
 === Content Mods (Tracks)
 
-- #link("https://www.racedepartment.com/downloads/suzuka-circuit.20759/")[Suzuka Circuit] — Classic F1 track. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/mount-panorama-bathurst.67463/")[Mount Panorama Bathurst] — Legendary Australian circuit. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/nordschleife.30953/")[Nürburgring Nordschleife] — The Green Hell. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/spa-francorchamps.20864/")[Spa-Francorchamps] — 7.0 km, 19 turns. FIA Grade 1. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/imola.21138/")[Imola] — 4.9 km, 19 turns. Historic Italian circuit. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/brands-hatch.21170/")[Brands Hatch] — 3.9 km, 11 turns. Classic British circuit. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/bathurst.8677/")[Mount Panorama Bathurst] — Legendary Australian circuit. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/n%C3%BCrburgring-nordschleife.2270/")[Nürburgring Nordschleife] — The Green Hell. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/spa-francorchamps-2022.50090/")[Spa-Francorchamps] — 2022 layout. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/brands-hatch.2726/")[Brands Hatch] — Classic British circuit. *Dependencies: None*.
 
 === Mechanics Mods
 
-- #link("https://www.racedepartment.com/downloads/ffb-clip.25675/")[FFB Clip] — Force feedback optimization tool. *Dependencies: Content Manager*. *Impact: Prevents FFB clipping, improves wheel feel. System/mechanic: Force feedback system enhancement*.
-- #link("https://www.racedepartment.com/downloads/ricmotech-minimal-ui.25647/")[RST Minimal UI] — Clean, data-rich HUD replacement. *Dependencies: Content Manager*. *Impact: Dashboard overlay with telemetry data*.
+- #link("https://www.overtake.gg/downloads/ffbclip-app.7910/")[FFB Clip] — Force feedback optimization tool. *Dependencies: Content Manager*. *Impact: Prevents FFB clipping, improves wheel feel. System/mechanic: Force feedback system enhancement*.
+- #link("https://www.overtake.gg/downloads/minimalista-hud.61870/")[Minimalista HUD] — Clean data HUD replacement. *Dependencies: Content Manager*. *Impact: Dashboard overlay with telemetry data*. *Replaces old RST Minimal UI*.
 
 === Optional
 
-- #link("https://www.racedepartment.com/downloads/shift-light-3d.22867/")[3D Shift Light] — Visual gear shift indicator. *Dependencies: Content Manager*.
+- #link("https://www.overtake.gg/downloads/esotic-shift-light.10030/")[3D Shift Light] — Visual gear shift indicator. *Dependencies: Content Manager*.
 
 == Installation Sequence
 

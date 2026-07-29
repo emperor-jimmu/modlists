@@ -80,11 +80,15 @@
 
 == Useful Links
 
-- #link("https://www.racedepartment.com/downloads/category/assetto-corsa.1325/")[RaceDepartment — Assetto Corsa Mods]
+- #link("https://www.overtake.gg/downloads/categories/assetto-corsa-mods.36/")[OverTake.gg — Assetto Corsa Mods]
 - #link("https://assettocorsa.club/content-manager.html")[Content Manager Official Site]
 - #link("https://assettocorsa.gg/")[Assetto Corsa Modding Guide]
 - #link("https://www.reddit.com/r/assettocorsa/")[r/assettocorsa on Reddit]
-- #link("https://www.overtake.gg/")[Overtake.gg — AC Mod Database]
+- #link("https://www.overtake.gg/")[OverTake.gg — AC Mod Database]
+
+== Migration Note: RaceDepartment → OverTake.gg
+
+RaceDepartment was acquired by OverTake.gg. All mod download URLs now use the `overtake.gg` domain. Most mod IDs were reassigned during the migration, so links from earlier versions of this guide may need updating. If a mod URL returns a 404, search for the mod by name on #link("https://www.overtake.gg/")[OverTake.gg].
 
 == Credits
 

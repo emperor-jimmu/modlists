@@ -296,29 +296,29 @@ For reference, here is the full Assetto Maximus Driving Curriculum:
 
 === Data & Telemetry
 
-- #link("https://www.racedepartment.com/downloads/motec-automation.32164/")[MoTeC i2 — AC Plugin] — Professional-grade telemetry analysis. Logs speed, brake, throttle, steering, gear, and suspension data. *Dependencies: Content Manager, CSP*. *Impact: Data analysis tool. No gameplay change. Essential for self-coaching*.
-- #link("https://www.racedepartment.com/downloads/car-track-deltainstant.20118/")[Car Track Delta / Instant] — Real-time delta timing display. Shows gain/loss compared to your best lap. *Dependencies: Content Manager*. *Impact: Visual overlay. No gameplay change. Essential for tracking improvement*.
-- #link("https://www.racedepartment.com/downloads/sim-racing-telemetry.39078/")[Sim Racing Telemetry] — Lightweight telemetry viewer with live data display. *Dependencies: Content Manager*.
+- #link("https://www.overtake.gg/downloads/assetto-corsa-telemetrick.73265/")[Assetto Corsa Telemetrick] — Telemetry analysis mod. *Dependencies: Content Manager*. For MoTeC i2 Pro, download from #link("https://www.motec.com.au/downloads")[MoTeC's official site]. *Impact: Data analysis tool. No gameplay change*.
+- #link("https://www.overtake.gg/downloads/cmrt-essential-hud.69475/")[CMRT Essential HUD] — Real-time HUD with delta timing, radar, flags, and track limits. *Dependencies: Content Manager*. *Note: Replaces the old Car Track Delta app*.
+- #link("https://racelab.app/assettocorsa/")[RaceLab Apps] — External overlay with delta timing, standings, and weather. *Dependencies: Standalone app*.
+- #link("https://store.steampowered.com/app/845210/Sim_Racing_Telemetry/")[Sim Racing Telemetry] — Lightweight telemetry viewer (free on Steam). *Dependencies: Content Manager*.
 
 === Race Practice Tools
 
-- #link("https://www.racedepartment.com/downloads/raceroom-experience-assetto-corsa-skin.14131/")[RacePractice — Grid Start Tool] — Practice standing starts with realistic grid formation. *Dependencies: Content Manager*.
-- #link("https://www.racedepartment.com/downloads/improved-ai.54982/")[Improved AI Behavior] — Enhances AI racing line consistency and aggression at select tracks. *Dependencies: Content Manager*.
+- #link("https://www.overtake.gg/downloads/new-ai-improvement.84343/")[AI Improvement] — Enhanced AI racing line consistency and aggression. *Dependencies: Content Manager*.
+- #link("https://www.overtake.gg/downloads/ac-grid-manager.13917/")[AC Grid Manager] — Practice standing starts with custom grid formation. *Dependencies: Content Manager*. *Note: Replaces the old RacePractice mod which is no longer available on OverTake*.
 
 === Content Mods (Cars)
 
-- #link("https://www.racedepartment.com/downloads/rss-gt-heart-of-racing-pack.34455/")[RSS GT Heart of Racing Pack] — High-quality GT3 and GT4 car pack. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/vrc-formula-alfa-2020.33425/")[VRC Formula Alpha 2020] — High-downforce Formula car. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/audi-r8-lms-2018.28533/")[Audi R8 LMS 2018] — GT3-class Audi. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/2025-the-heart-of-racing-pack.77114/")[RSS GT Heart of Racing Pack] — GT3 and GT4 car pack (2025 version). *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/assetto-corsa-audi-r8-lms-efp-by-tece-gt-masters-2018.19554/")[Audi R8 LMS 2018] — GT3-class Audi by TECE. *Dependencies: None*.
 
 === Content Mods (Tracks)
 
-- #link("https://www.racedepartment.com/downloads/silverstone-circuit.21195/")[Silverstone Circuit] — 5.9 km, 18 turns. FIA Grade 1. *Dependencies: None*.
-- #link("https://www.racedepartment.com/downloads/monza.21041/")[Monza] — 5.8 km, 11 turns. Temple of Speed. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/silverstone-circuit-2024.74333/")[Silverstone Circuit] — 5.9 km, 18 turns. FIA Grade 1. *Dependencies: None*.
+- #link("https://www.overtake.gg/downloads/updated-monza-2022.61390/")[Monza] — 5.8 km, 11 turns. Temple of Speed. *Dependencies: None*.
 
-=== Optional: Premium Visuals
+=== Graphics (see also Wave 1 Graphics)
 
-- #link("https://www.racedepartment.com/downloads/pure.72222/")[Pure] — Advanced lighting and weather controller (Sol successor). *Dependencies: CSP 0.2.x+*. *Impact: More realistic sky, cloud, and lighting models*.
+- Pure, C13 Aegis, A3PP, VAO Packs, and other photorealism mods are covered in the *Wave 1 Graphics* section. If you skipped Pure in Wave 1, install it here before advanced telemetry sessions.
 
 == Installation Sequence
 
@@ -326,6 +326,6 @@ For reference, here is the full Assetto Maximus Driving Curriculum:
 2. Install telemetry and data tools first (they integrate with CSP)
 3. Install all content mods in any order
 4. Configure MoTeC plugin in CM: *Settings → CSP → General → Enable telemetry logging*
-5. Install Pure (optional) only after verifying Sol works
+5. If using Pure, verify it is active as the weather controller
 
 #pagebreak()
