@@ -6,6 +6,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 
 | Modlist   | Game                        | Directory                    | Status |
 |-----------|-----------------------------|------------------------------|--------|
+| Arma 3    | Arma 3                      | [`arma3/`](./arma3/)         | Active |
 | Minecraft | Minecraft (NeoForge 1.21.1) | [`minecraft/`](./minecraft/) | Active |
 | Skyrim    | Skyrim SE                   | [`skyrim/`](./skyrim/)       | Active |
 | Cyberpunk | Cyberpunk 2077              | [`cyberpunk/`](./cyberpunk/) | Active |
@@ -14,6 +15,8 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | GTA V     | Grand Theft Auto V          | [`gtav/`](./gtav/)           | Active |
 | RDR2      | Red Dead Redemption 2       | [`rdr2/`](./rdr2/)           | Active |
 | RimWorld  | RimWorld                    | [`rimworld/`](./rimworld/)   | Active |
+| Starfield | Starfield                   | [`starfield/`](./starfield/) | Active |
+| X4        | X4: Foundations             | [`x4-foundations/`](./x4-foundations/) | Active |
 
 ## Adding a new modlist
 
@@ -61,6 +64,9 @@ git subtree push --prefix=<name> <remote> <branch>
 ## Structure
 
 ```bash
+arma3/                  # Arma 3 modlist
+├── AGENTS.md
+└── ...
 minecraft/              # Minecraft modpack (NeoForge 1.21.1)
 ├── config/
 ├── datapacks/
@@ -86,6 +92,12 @@ gtav/                   # Grand Theft Auto V modlist
 ├── AGENTS.md
 └── ...
 rdr2/                   # Red Dead Redemption 2 modlist
+├── AGENTS.md
+└── ...
+starfield/              # Starfield modlist
+├── AGENTS.md
+└── ...
+x4-foundations/         # X4: Foundations modlist
 ├── AGENTS.md
 └── ...
 README.md               # collection index
