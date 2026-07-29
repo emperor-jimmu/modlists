@@ -8,6 +8,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | --------------- | --------------------------- | ---------------------------------------- | ------ |
 | Minecraft      | Minecraft (NeoForge 1.21.1) | [`minecraft/`](./minecraft/)             | Active |
 | Skyrim         | Skyrim SE                    | [`skyrim/`](./skyrim/)                   | Active |
+| Cyberpunk      | Cyberpunk 2077               | [`cyberpunk/`](./cyberpunk/)             | Active |
 
 ## Adding a new modlist
 
@@ -62,6 +63,9 @@ minecraft/              # Minecraft modpack (NeoForge 1.21.1)
 ├── GUIDE.md
 └── ...
 skyrim/                 # Skyrim SE modlist
+├── AGENTS.md
+└── ...
+cyberpunk/              # Cyberpunk 2077 modlist
 ├── AGENTS.md
 └── ...
 production/             # Production deployment config
