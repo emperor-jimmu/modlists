@@ -4,8 +4,8 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 
 ## Collection
 
-| Modlist | Game | Directory | Status |
-|---------|------|-----------|--------|
+| Modlist         | Game                        | Directory                                | Status |
+| --------------- | --------------------------- | ---------------------------------------- | ------ |
 | Minecraft Setup | Minecraft (NeoForge 1.21.1) | [`minecraft-setup/`](./minecraft-setup/) | Active |
 
 ## Adding a new modlist
@@ -26,7 +26,7 @@ git remote remove <name>
 **Example** — adding an existing Skyrim modlist:
 
 ```bash
-git remote add skyrim https://github.com/you/skyrim-modlist.git
+git remote add skyrim https://github.com/emperor-jimmu/skyrim-modlist.git
 git subtree add --prefix=skyrim skyrim main
 git remote remove skyrim
 ```
