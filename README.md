@@ -1,12 +1,12 @@
 # Modlists
 
-A monorepo for building, storing, and maintaining game modlists. Each modlist lives in its own directory under `modlists/` with full git history preserved.
+A monorepo for building, storing, and maintaining game modlists. Each modlist lives in its own directory at the project root with full git history preserved.
 
 ## Collection
 
 | Modlist | Game | Directory | Status |
 |---------|------|-----------|--------|
-| Minecraft Setup | Minecraft (NeoForge 1.21.1) | [`modlists/minecraft-setup/`](./modlists/minecraft-setup/) | Active |
+| Minecraft Setup | Minecraft (NeoForge 1.21.1) | [`minecraft-setup/`](./minecraft-setup/) | Active |
 
 ## Adding a new modlist
 
@@ -17,7 +17,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 git remote add <name> <github-url>
 
 # Pull it into the monorepo as a subtree
-git subtree add --prefix=modlists/<name> <name> main
+git subtree add --prefix=<name> <name> main
 
 # Remove the remote (optional — keeps it clean; old repo stays on GitHub)
 git remote remove <name>
@@ -27,41 +27,42 @@ git remote remove <name>
 
 ```bash
 git remote add skyrim https://github.com/you/skyrim-modlist.git
-git subtree add --prefix=modlists/skyrim skyrim main
+git subtree add --prefix=skyrim skyrim main
 git remote remove skyrim
 ```
 
 ### From scratch (new modlist)
 
 ```bash
-mkdir -p modlists/<name>
+mkdir -p <name>
 # Start developing — add files, commit normally
 ```
 
 ## Working with modlists
 
-- **Add files**: `git add modlists/<name>/<file>` — standard git
+- **Add files**: `git add <name>/<file>` — standard git
 - **Commit**: `git commit` — all modlists share one commit history
 - **Push**: `git push` — the whole collection goes together
-- **Each modlist's config/docs**: each `modlists/<name>/` directory is self-contained, with its own `AGENTS.md`, config files, guides, etc.
+- **Each modlist's config/docs**: each `<name>/` directory is self-contained, with its own `AGENTS.md`, config files, guides, etc.
 
 ### Syncing back to a standalone repo (if needed)
 
 ```bash
-git subtree push --prefix=modlists/<name> <remote> <branch>
+git subtree push --prefix=<name> <remote> <branch>
 ```
 
 ## Structure
 
 ```
-modlists/
-├── minecraft-setup/        # Minecraft modpack (NeoForge 1.21.1)
-│   ├── config/
-│   ├── datapacks/
-│   ├── AGENTS.md
-│   ├── GUIDE.md
-│   └── ...
-├── README.md               # collection index
+minecraft-setup/        # Minecraft modpack (NeoForge 1.21.1)
+├── config/
+├── datapacks/
+├── AGENTS.md
+├── GUIDE.md
+└── ...
+production/             # Production deployment config
+README.md               # collection index
+AGENTS.md               # agent instructions
 ```
 
 ## Requirements
