@@ -4013,6 +4013,8 @@ All horse animation mods are OAR-based and work under Pandora. Thundertrot (hors
 
 == Locomotion
 <animations-and-movement-locomotion>
+CATA (Conditional Armor Type Animations) is the framework — choose the CATA Addon version for each pack below so animations switch dynamically based on equipped armor type.
+
 #table(
   columns: 3,
   inset: (x: 8pt, y: 5pt),
@@ -4022,39 +4024,45 @@ All horse animation mods are OAR-based and work under Pandora. Thundertrot (hors
   [*#text(fill: white)[Type]*],
   [*#text(fill: white)[Notes]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
+  [*Heavy armor*],
+  [],
+  [],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81463")[Leviathan Animations II - Male Idle Walk And Run]],
   [Baseline],
-  [Male locomotion.],
+  [CATA Addon. Male heavy-armor locomotion.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80760")[Leviathan Animations II - Female Idle Walk And Run]],
   [Baseline],
-  [Female locomotion.],
+  [CATA Addon. Female heavy-armor locomotion.],
+  [*Light armor*],
+  [],
+  [],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99999")[Vanargand Animations II - Male Idle Walk And Run]],
-  [Alternative],
-  [Main male alternative.],
+  [Baseline],
+  [CATA Addon. Male light-armor locomotion.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/100000")[Vanargand Animations II - Female Idle Walk And Run]],
-  [Alternative],
-  [Main female alternative.],
+  [Baseline],
+  [CATA Addon. Female light-armor locomotion.],
+  [*Mage (non-armored)*],
+  [],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68005")[Goetia Animations - Female Idle Walk And Run]],
+  [Baseline],
+  [CATA Addon. Female mage locomotion.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68625")[Goetia Animations - Male Idle Walk And Run]],
+  [Baseline],
+  [CATA Addon. Male mage locomotion.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63471")[NPC Animation Remix (OAR)]],
   [Alternative],
   [NPC-specific movement and idle animation remix.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62849")[Arm Movement Animations (OAR)]],
   [Alternative],
   [Hand and arm idle animation variations.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51507")[Conditional Armor Type Animations]],
-  [Alternative],
-  [Add after base locomotion is accepted.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/98493")[Dynamic Female Weather Idles]],
   [Alternative],
   [OAR-based weather-aware idles. Complements survival/weather stack.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63232")[EVG Animated Traversal]],
   [Alternative],
   [Belongs in interaction/traversal bucket.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68005")[Goetia Animations - Female Idle Walk And Run]],
-  [Alternative],
-  [Female locomotion animation pack.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68625")[Goetia Animations - Male Idle Walk And Run]],
-  [Alternative],
-  [Male locomotion animation pack.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17743")[Poser Hotkeys Plus SSE]],
   [Alternative],
   [Hotkey-based pose/idle system.],
@@ -4073,6 +4081,9 @@ All horse animation mods are OAR-based and work under Pandora. Thundertrot (hors
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92951")[Random Swimming Animations]],
   [Alternative],
   [Randomized swimming animation replacer.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154534")[Simple Diving System]],
+  [Alternative],
+  [OAR-based diving detection and animations for water entry from various heights. Requires Behavior Data Injector or Pandora.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/95561")[Dynamic Sprint]],
   [Alternative],
   [SKSE-based sprint animation with motion-matched lean.],
@@ -4121,6 +4132,12 @@ All horse animation mods are OAR-based and work under Pandora. Thundertrot (hors
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122800")[Elden Ring DLC Light Greatsword Moveset]],
   [Alternative],
   [Requires MCO or BFCO framework. 1H and 2H moveset.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151478")[For Honor in Skyrim]],
+  [Prerequisite],
+  [Asset base only. Required by For Honor Reforged for animation files. Do not run standalone — overwrite with 172176.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172176")[For Honor Reforged]],
+  [Alternative],
+  [Full For Honor combat moveset rebuilt with BFCO support, NPC AI (OAR), parry/guard-break/knockdown mechanics. Requires 151478 as asset base + DMK, Chocolate Poise, BFCO.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/183971")[Vindictus Fiona Moveset BFCO]],
   [Alternative],
   [BFCO-specific moveset. Requires BFCO framework.],
@@ -4274,6 +4291,9 @@ External tutorial baseline: BFCO is the locked combat animation framework for El
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54193")[Take a Seat]],
   [Alternative],
   [Sitting interaction animations.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143012")[Improved Barstool Exit Animation]],
+  [Alternative],
+  [OAR-based barstool exit animation fix. Requires SKDR (→ `Foundations`).],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/96961")[Immersive Hunting Animations]],
   [Alternative],
   [Hunting-related animations.],
@@ -4358,12 +4378,12 @@ External tutorial baseline: BFCO is the locked combat animation framework for El
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92109")[Open Animation Replacer]],
   [Baseline],
   [Single condition framework owner.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51507")[Conditional Armor Type Animations]],
+  [Baseline],
+  [Armor-type-based animation switching. Pairs with Leviathan II (heavy), Vanargand II (light), and Goetia (mage) CATA Addons in → `Locomotion`.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34006")[EVG Conditional Idles]],
   [Alternative],
   [Idle animation conditional framework.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/51507")[Conditional Armor Type Animations]],
-  [Alternative],
-  [Armor-type-based animation switching.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174752")[Unique Jarl Throne Sitting Animation (OAR)]],
   [Alternative],
   [Throne sitting animation for Jarls.],
@@ -4553,6 +4573,13 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 === Baseline
 <third-person-gameplay-baseline-2>
 - *TK Dodge RE - Script Free* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/56956")[Nexus]) — *Locked baseline.* Script-free dodge with configurable step/distance. Maps cleanly to gamepad. Tactical repositioning, not combat pacing center.
+- *S.M.C. — Skyrim Motion Control* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/97204")[Nexus]) — *Baseline.* Script-free SKSE plugin: acceleration ramp-up, momentum on stop, configurable jump boost, slope speed scaling, and per-state speed/accel multipliers (bow-drawn, magic-cast, swimming, walking, auto-walk, etc.). Works on gamepad. Fully tunable INI, reloadable in-game with Enter. Skyrim Souls compat toggle (v2.4+). S.M.C.'s sprint-jump boost works only with Better Jumping v1.7.1 or below — disable in INI if using newer Better Jumping. Evaluated alongside Inertia (172783, → `Animations` candidate): S.M.C. handles speed/acceleration at the SKSE physics-param layer; Inertia handles physical body-response. Compatible, not redundant. Tune INI values to match Static with Hard Threat — particularly `fAcceleration`, `fStoppingForce`, and `fJumpBoost`.
+
+=== Risks & Compatibility
+<third-person-gameplay-risks--compatibility-4>
+- Incompatible with Scrolling Speed 2, Wounds (17581), MBO (38950) — none present in this list.
+- Pace (27268): works but disable Pace's movement speed settings in MCM.
+- Jump boost may fail intermittently (known issue); low `fStoppingForce` can cause momentum to not decay when another speed buff/nerf is active.
 
 === Alternatives
 <third-person-gameplay-alternatives-2>
@@ -4578,7 +4605,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 )
 
 === Risks & Compatibility
-<third-person-gameplay-risks--compatibility-4>
+<third-person-gameplay-risks--compatibility-5>
 - Too much stagger flattens combat; too little leaves animations unsatisfying.
 - Camera, animation timing, collision, and gameplay rules all affect impact feel — ownership blurs quickly.
 
@@ -4696,6 +4723,24 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169335")[HorsePower - Modernized horse riding]],
   [Baseline],
   [Modernized horse riding overhaul. Requires SKSE, Address Library, Animation Motion Revolution, Pandora, TDM.],
+)
+
+---
+
+== Dragon Mounted Controls
+<third-person-gameplay-dragon-mounted-controls>
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 5pt),
+  fill: (x, y) => if y == 0 { rgb("#1E293B") } else if calc.rem(y - 1, 2) == 0 { rgb("#F8FAFC") } else { none },
+  stroke: 0.5pt + rgb("#CBD5E1"),
+  [*#text(fill: white)[Mod]*],
+  [*#text(fill: white)[Type]*],
+  [*#text(fill: white)[Notes]*],
+  table.hline(stroke: 0.75pt + rgb("#94A3B8")),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64679")[Intuitive Dragon Ride Control]],
+  [Baseline],
+  [Full dragon flight control — camera-based movement, combat, fast travel, perching. Native gamepad support, no dTry needed. Integrates with TDM (patch 160556) and TrueHUD. Requires SKSE, Po3 Tweaks, Address Library (all → `Foundations`).],
 )
 
 ---
@@ -6768,8 +6813,8 @@ Authored settlement content — real places, not just denser vibes.
   [ESL-flagged.],
 )
 
-=== Alternatives
-<world-content-alternatives-2>
+=== Minor Settlement Overhauls
+<world-content-minor-settlement-overhauls>
 
 #table(
   columns: 2,
@@ -6779,33 +6824,24 @@ Authored settlement content — real places, not just denser vibes.
   [*#text(fill: white)[Mod]*],
   [*#text(fill: white)[Description]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/320")[The Great Cities]],
-  [Major-hold-capital follow-on. Treat as deliberate second-step.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37982")[Capital Whiterun Expansion]],
-  [If JK's patch missing, mutually exclusive with JK's Whiterun edits.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126871")[Skyfall's Fortified Morthal]],
-  [Morthal city overhaul. Overrides COTN Morthal — choose one.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/34505")[The Great Town of Ivarstead SSE]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99494")[Thuldor's Ivarstead]],
-  [Ivarstead town overhaul. Alternative to The Great Town of Ivarstead — choose one. AI-Generated Content tagged.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/42639")[The Great Village of Kynesgrove]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/36350")[The Great Village of Mixwater Mill SSE]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/35977")[The Great Town of Shor's Stone SSE]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17127")[The Great City Of Winterhold SSE Edition]],
-  [Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85356")[Spaghetti's Towns - Riverwood]],
-  [Lightweight Riverwood tweaks (clutter, fishing spot, mill supplies). ESL-flagged.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85802")[Spaghetti's Towns - Rorikstead]],
-  [Lightweight Rorikstead tweaks (food shipments, crops, farm animals). ESL-flagged.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/44964")[COTN Winterhold Blacksmith]],
-  [Adds a blacksmith NPC and shop to COTN Winterhold. Requires COTN Winterhold.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/98390")[Riton Solitude]],
-  [Solitude architecture overhaul. Likely conflicts with Grand Solitude — choose one.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/133572")[Gonzeh — Stonehills ReRe-imagined]],
+  [Unique architecture, new interiors, mini-tavern with barmaid, reworked quarry center. ESL-flagged. Has built-in patches for Embers XD (baseline), LoTD (baseline), AI Overhaul, Cutting Room Floor, Northern Roads, NSUTR, Spaghetti Towns.],
 )
+
+=== Alternatives
+<world-content-alternatives-2>
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/37982")[Capital Whiterun Expansion] | If JK's patch missing, mutually exclusive with JK's Whiterun edits. |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/126871")[Skyfall's Fortified Morthal] | Morthal city overhaul. Overrides COTN Morthal — choose one. |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/34505")[The Great Town of Ivarstead SSE] |  |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/99494")[Thuldor's Ivarstead] | Ivarstead town overhaul. Alternative to The Great Town of Ivarstead — choose one. AI-Generated Content tagged. |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/42639")[The Great Village of Kynesgrove] |  |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/36350")[The Great Village of Mixwater Mill SSE] |  |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/35977")[The Great Town of Shor's Stone SSE] |  |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/17127")[The Great City Of Winterhold SSE Edition] | Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one. |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/85356")[Spaghetti's Towns - Riverwood] | Lightweight Riverwood tweaks (clutter, fishing spot, mill supplies). ESL-flagged. |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/85802")[Spaghetti's Towns - Rorikstead] | Lightweight Rorikstead tweaks (food shipments, crops, farm animals). ESL-flagged. |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/44964")[COTN Winterhold Blacksmith] | Adds a blacksmith NPC and shop to COTN Winterhold. Requires COTN Winterhold. |
+| #link("https://www.nexusmods.com/skyrimspecialedition/mods/98390")[Riton Solitude] |  Solitude architecture overhaul. Likely conflicts with Grand Solitude — choose one.  |
 
 ---
 
@@ -7687,6 +7723,12 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/168735")[Val Serano - Another Replacer]],
   [Alternative],
   [Single-NPC replacer for Val Serano (Pirate Quest Follower).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171382")[Fura Bloodmouth DF Edit SkyPatched]],
+  [Alternative],
+  [Single-NPC replacer for Fura Bloodmouth (CC Dead Man's Dread). SkyPatcher-based. Requires AE content.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/169910")[Ysolda DF Edit SkyPatched]],
+  [Alternative],
+  [Single-NPC replacer for Ysolda. SkyPatcher-based.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/48904")[Pride of Skyrim — AIO Male HPH Overhaul]],
   [Alternative],
   [~400 male NPCs with High Poly Head. Broad coverage.],
@@ -8472,7 +8514,7 @@ How creatures attack, react, and express identity once combat starts.
   [Smarter dragon shout usage and encounter AI.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/94100")[The Restless Dead]],
   [Baseline],
-  [Undead-behavior baseline. Replaces abandoned Draugr Upgrades and Improvements.],
+  [Undead-behavior baseline. Replaces abandoned Draugr Upgrades and Improvements. Requires #link("https://www.nexusmods.com/skyrimspecialedition/mods/125609")[Skeletons SE patch] for compatibility with locked Skeletons SE (124394) baseline.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/126680")[Epic Dragon Combat REDONE]],
   [Alternative],
   [Full dragon combat overhaul — 20+ new types, unique abilities, custom VFX. Self-contained; replaces baseline dragon visual direction.],
@@ -8751,6 +8793,23 @@ Armor content packs adding new named and leveled-list armors fitting the medieva
   [Optional],
   [all],
   [Swaps 10 IA sets for NordWarUA Realistic Armors. Requires Realistic Armor (36151).],
+)
+
+=== SkyPatcher-Powered Equipment Expansions
+<weapons--armor-skypatcher-powered-equipment-expansions>
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 5pt),
+  fill: (x, y) => if y == 0 { rgb("#1E293B") } else if calc.rem(y - 1, 2) == 0 { rgb("#F8FAFC") } else { none },
+  stroke: 0.5pt + rgb("#CBD5E1"),
+  [*#text(fill: white)[Mod]*],
+  [*#text(fill: white)[Description]*],
+  [*#text(fill: white)[Notes]*],
+  table.hline(stroke: 0.75pt + rgb("#94A3B8")),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/100985")[Sentinel — An Equipment Overhaul]],
+  [~300 armor/weapon/clothing variants added via SkyPatcher. Modular — choose individual sets in FOMOD. Functionally identical to originals (cosmetic-only variants). Includes guard armor sets, faction sets, priest robes, AE content integration.],
+  [No record conflicts — SkyPatcher-based. No patches needed for NPC appearance mods. Detects Adamant automatically. Compatible with Immersive Armors (different scope — IA adds new sets, Sentinel variants existing ones). Compatible with Xavbio retextures (modlist baseline). Requires AE content for some modules.],
 )
 
 === Armor Set Additions
