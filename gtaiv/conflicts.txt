@@ -1,0 +1,8 @@
+# Enhanced Liberty — Mod Conflict Registry
+# Format: <mod_a> | <mod_b> | <issue> | <resolution>
+
+# This file tracks known incompatible mod pairs and their resolutions.
+# Entries are added as conflicts are discovered during mod testing.
+
+# Example:
+# ProjectileFix | RealisticWeapons | Weapon damage overrides | Use RealisticWeapons, disable ProjectileFix

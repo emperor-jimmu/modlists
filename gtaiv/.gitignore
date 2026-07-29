@@ -1,0 +1,10 @@
+# Typst build artifacts
+src/chapters/
+
+# Typst caches
+.typst-cache/
+typst-packages/
+
+# OS junk
+Thumbs.db
+.DS_Store
