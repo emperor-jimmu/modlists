@@ -1,0 +1,15 @@
+# Playwright browser snapshots
+.playwright-mcp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Build output (intermediate HTML site — PDF is the deliverable)
+site/
+
+# OS
+Thumbs.db
+.DS_Store
