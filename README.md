@@ -4,27 +4,27 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 
 ## Collection
 
-| Modlist   | Game                        | Directory                    | Status |
-|-----------|-----------------------------|------------------------------|--------|
-| Arma 3    | Arma 3                      | [`arma3/`](./arma3/)         | Active |
-| Assetto Corsa | Assetto Corsa           | [`asseto-corsa/`](./asseto-corsa/) | Active |
-| Minecraft | Minecraft (NeoForge 1.21.1) | [`minecraft/`](./minecraft/) | Active |
-| Skyrim    | Skyrim SE                   | [`skyrim/`](./skyrim/)       | Active |
-| Cyberpunk | Cyberpunk 2077              | [`cyberpunk/`](./cyberpunk/) | Active |
-| ETS2      | Euro Truck Simulator 2      | [`ets2/`](./ets2/)           | Active |
-| FS25      | Farming Simulator 25        | [`fs25/`](./fs25/)           | Active |
-| GTA IV    | Grand Theft Auto IV         | [`gtaiv/`](./gtaiv/)         | Active |
-| GTA V     | Grand Theft Auto V          | [`gtav/`](./gtav/)           | Active |
-| Mass Effect | Mass Effect (Legendary Edition) | [`masseffect/`](./masseffect/) | Active |
-| M&B II    | Mount & Blade II: Bannerlord | [`mb2-bannerlord/`](./mb2-bannerlord/) | Active |
-| RDR2      | Red Dead Redemption 2       | [`rdr2/`](./rdr2/)           | Active |
-| Shogun 2  | Total War: Shogun 2         | [`shogun2/`](./shogun2/)     | Active |
-| RimWorld  | RimWorld                    | [`rimworld/`](./rimworld/)   | Active |
-| Starfield | Starfield                   | [`starfield/`](./starfield/) | Active |
-| Three Kingdoms | Total War: Three Kingdoms | [`threekingdoms/`](./threekingdoms/) | Active |
-| Warhammer 3 | Total War: Warhammer 3    | [`warhammer-3/`](./warhammer-3/) | Active |
-| Witcher 3 | The Witcher 3               | [`witcher-3/`](./witcher-3/) | Active |
-| X4        | X4: Foundations             | [`x4-foundations/`](./x4-foundations/) | Active |
+| Modlist        | Game                            | Directory                              | Status |
+|----------------|---------------------------------|----------------------------------------|--------|
+| Arma 3         | Arma 3                          | [`arma3/`](./arma3/)                   | Active |
+| Assetto Corsa  | Assetto Corsa                   | [`asseto-corsa/`](./asseto-corsa/)     | Active |
+| Minecraft      | Minecraft (NeoForge 1.21.1)     | [`minecraft/`](./minecraft/)           | Active |
+| Skyrim         | Skyrim SE                       | [`skyrim/`](./skyrim/)                 | Active |
+| Cyberpunk      | Cyberpunk 2077                  | [`cyberpunk/`](./cyberpunk/)           | Active |
+| ETS2           | Euro Truck Simulator 2          | [`ets2/`](./ets2/)                     | Active |
+| FS25           | Farming Simulator 25            | [`fs25/`](./fs25/)                     | Active |
+| GTA IV         | Grand Theft Auto IV             | [`gtaiv/`](./gtaiv/)                   | Active |
+| GTA V          | Grand Theft Auto V              | [`gtav/`](./gtav/)                     | Active |
+| Mass Effect    | Mass Effect (Legendary Edition) | [`masseffect/`](./masseffect/)         | Active |
+| M&B II         | Mount & Blade II: Bannerlord    | [`mb2-bannerlord/`](./mb2-bannerlord/) | Active |
+| RDR2           | Red Dead Redemption 2           | [`rdr2/`](./rdr2/)                     | Active |
+| Shogun 2       | Total War: Shogun 2             | [`shogun2/`](./shogun2/)               | Active |
+| RimWorld       | RimWorld                        | [`rimworld/`](./rimworld/)             | Active |
+| Starfield      | Starfield                       | [`starfield/`](./starfield/)           | Active |
+| Three Kingdoms | Total War: Three Kingdoms       | [`threekingdoms/`](./threekingdoms/)   | Active |
+| Warhammer 3    | Total War: Warhammer 3          | [`warhammer-3/`](./warhammer-3/)       | Active |
+| Witcher 3      | The Witcher 3                   | [`witcher-3/`](./witcher-3/)           | Active |
+| X4             | X4: Foundations                 | [`x4-foundations/`](./x4-foundations/) | Active |
 
 ## Adding a new modlist
 
