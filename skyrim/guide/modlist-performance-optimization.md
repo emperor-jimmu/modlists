@@ -1,11 +1,5 @@
 # Optimization & Configuration
 
-**MO2 Separators:** `Performance` → `Performance - Optimization & Configuration`
-
-All items in this section belong to the `Performance` MO2 separator.
-
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section.
-
 ---
 
 ## Shader Performance Impact

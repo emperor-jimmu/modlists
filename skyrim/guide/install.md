@@ -119,8 +119,6 @@ iTintTextureResolution=2048
 | `DynDOLOD`             | `DynDOLODx64.exe`                   | `-SSE`                                                                | `DynDOLOD Output`                       | Keep output isolated and enable `DynDOLOD.esm` / `DynDOLOD.esp` after generation.                              |
 | `Wrye Bash`            | `Wrye Bash.exe`                     | none                                                                  | dedicated patch/output mod if used      | Register only if the list still needs a **Bashed Patch** or leveled-list review pass.                            |
 | `Synthesis`            | `Synthesis.exe`                     | none                                                                  | dedicated patch/output mod if used      | Give it its own output mod once the final patcher set is known.                                                |
-| `BodySlide`            | `BodySlide x64.exe`                 | none                                                                  | dedicated body/output mod               | Run through MO2 so mesh output respects the active profile and selected body stack.                            |
-| `Pandora`              | `Pandora Behaviour Engine Plus.exe` | none                                                                  | dedicated behavior/output mod if needed | Run through MO2 so behavior generation sees the real virtualized animation stack.                              |
 
 ### MO2 Operating Rules
 

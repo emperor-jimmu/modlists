@@ -1,11 +1,5 @@
 # Enemies & Creatures
 
-**MO2 Separator:** `Enemies & Creatures`
-
-All mods in this section belong to the `Enemies & Creatures` MO2 separator.
-
-> NPC-specific content → [NPCs](modlist-npcs.md).
-
 ---
 
 ## Enemy Variety

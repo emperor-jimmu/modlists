@@ -1,11 +1,5 @@
 # Followers & Reputation
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Followers & Reputation`
-
-All mods in this section belong to the `Expanded Systems - Followers & Reputation` MO2 separator unless noted.
-
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
-
 ---
 
 ## Crime, Reputation, And Social Systems

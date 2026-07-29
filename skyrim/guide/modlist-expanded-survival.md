@@ -1,11 +1,5 @@
 # Survival & Needs
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Survival & Needs`
-
-All mods in this section belong to the `Expanded Systems - Survival & Needs` MO2 separator unless noted.
-
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
-
 ---
 
 ## Survival Systems

@@ -1,9 +1,5 @@
 # World Content
 
-**MO2 Separators:** `World Content` → `World Content - Overhauls`, `World Content - Quests`, `World Content - Homes & Bases`, `World Content - Underwater`
-
-All mods in this section belong to one of the four world-content separators as noted per subsection.
-
 ---
 
 ## Landscape Overhauls

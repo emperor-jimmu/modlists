@@ -1,7 +1,5 @@
 # Performance and Technical Workflow
 
-**MO2 Separator:** `Performance`
-
 ## Overview
 
 This section owns the performance budgeting, optimization discipline, generated-patch pipeline, and long-term maintenance workflow that keeps `Elder Wilds` stable as the load order grows. The section is split into five sub-files that each own a distinct concern:

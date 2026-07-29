@@ -1,9 +1,5 @@
 # PGPatcher
 
-**MO2 Separator:** `Graphics` → `Graphics - PGPatcher`
-
-All items in this section belong to the `Graphics - PGPatcher` MO2 separator unless noted.
-
 ---
 
 ## PGPatcher Workflow

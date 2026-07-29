@@ -1,9 +1,5 @@
 # Main Character Voicing
 
-**MO2 Separator:** `Voicing`
-
-All mods in this section belong to the `Voicing` MO2 separator.
-
 ---
 
 ## Framework Overview

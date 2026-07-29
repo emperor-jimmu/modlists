@@ -1,11 +1,5 @@
 # Survival, Difficulty, and Balance
 
-**MO2 Separators:** `Survival & Combat` → `Survival & Combat - Difficulty & Lethality`, `Survival & Combat - Enemy AI`, `Survival & Combat - Resources & Injuries`
-
-All mods in this section belong to one of the three survival/combat separators as noted per subsection.
-
-**#1 picks locked:** Arena, Simply Balanced, Less Sniperlike NPCs (restrained AI route), Stress and Fear + Light the Way + Bathing patch, Know Your Enemy 2.
-
 ---
 
 ## Difficulty Framework

@@ -1,9 +1,5 @@
 # Characters & Creatures
 
-**MO2 Separator:** `Graphics` → `Graphics - Characters & Creatures`
-
-All mods in this section belong to the `Graphics - Characters & Creatures` MO2 separator unless noted.
-
 ## Character, Skin, And Creature Visuals
 Baseline visual treatment for player bodies, skin textures, and common creature visuals before NPC-specific overhauls are chosen. Target: grounded modern look that holds up in third person without drifting into overly glossy, doll-like, or hyper-stylized presentation.
 

@@ -1,9 +1,5 @@
 # Textures & Meshes
 
-**MO2 Separator:** `Graphics` → `Graphics - Textures & Meshes`
-
-All mods in this section belong to the `Graphics - Textures & Meshes` MO2 separator unless a different one is noted.
-
 ---
 
 ## Mesh Improvements And Parallax Support

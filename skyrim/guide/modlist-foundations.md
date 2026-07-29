@@ -1,9 +1,5 @@
 # Foundations and Compatibility
 
-**MO2 Separators:** `Foundations` → `Foundations - SKSE & Scripts`, `Foundations - Core Libraries`, `Foundations - Mesh & Texture Fixes`, `Foundations - Targeted Bugfixes`
-
-All mods in this section are installed into the appropriate `Foundations` sub-separators as noted per group.
-
 ---
 
 ## Core Framework Baseline

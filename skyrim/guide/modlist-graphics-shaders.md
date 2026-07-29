@@ -1,9 +1,5 @@
 # Community Shaders
 
-**MO2 Separator:** `Graphics` → `Graphics - Community Shaders`
-
-All mods in this section belong to the `Graphics - Community Shaders` MO2 separator unless a different one is noted.
-
 ---
 
 ## Community Shaders Core Setup

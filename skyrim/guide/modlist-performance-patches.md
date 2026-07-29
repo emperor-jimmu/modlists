@@ -1,11 +1,5 @@
 # Bashed Patch & Synthesis Configuration
 
-**MO2 Separators:** `Performance` → `Performance - Bashed Patch & Synthesis`
-
-All items in this section belong to the `Performance` MO2 separator.
-
-Part of the [`Performance and Technical Workflow`](modlist-performance.md) section.
-
 ---
 
 ## Patcher Discipline

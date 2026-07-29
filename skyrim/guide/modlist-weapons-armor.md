@@ -1,9 +1,5 @@
 # Weapons & Armor
 
-**MO2 Separators:** `Weapons & Armor` → `Weapons & Armor – Weapons`, `Weapons & Armor – Armor`, `Weapons & Armor – Artifacts`, `Weapons & Armor – Clothing & Wardrobe`
-
-All mods in this section belong to one of the four weapons-and-armor separators as noted per subsection.
-
 ---
 
 ## Weapon Pack Additions

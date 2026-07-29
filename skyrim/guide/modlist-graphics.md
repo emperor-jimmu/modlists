@@ -1,7 +1,5 @@
 # Graphics Pipeline
 
-**MO2 Separator:** `Graphics`
-
 ## Overview
 
 This section owns the full graphics rendering pipeline for `Elder Wilds`: from the post-process shader framework through textures, lighting, weather, water, terrain, characters, and distant detail. Each pillar of the pipeline lives in its own sub-file.

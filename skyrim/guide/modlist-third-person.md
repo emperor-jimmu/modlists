@@ -1,9 +1,5 @@
 # Third-Person Gameplay
 
-**MO2 Separators:** `Third-Person - Camera & Movement`, `Third-Person - Combat & Targeting`, `Third-Person - Mounted`
-
-All mods in this section belong to one of the three third-person separators as noted per subsection.
-
 ---
 
 ## Third-Person Camera Framework

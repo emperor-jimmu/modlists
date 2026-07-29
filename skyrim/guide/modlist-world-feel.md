@@ -1,9 +1,5 @@
 # Immersive Scale and World Feel
 
-**MO2 Separators:** `World Feel` → `World Feel - Timescale & Travel`, `World Feel - Soundscapes`, `World Feel - Nights & Wildlife`, `World Feel - Cities & Landmarks`
-
-All mods in this section belong to one of the four world-feel separators as noted per subsection.
-
 ---
 
 ## Timescale And Calendar Adjustments

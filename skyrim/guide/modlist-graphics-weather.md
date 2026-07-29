@@ -1,9 +1,5 @@
 # Weather & Water
 
-**MO2 Separator:** `Graphics` → `Graphics - Weather & Water`
-
-All mods in this section belong to the `Graphics - Weather & Water` MO2 separator unless noted.
-
 ## Weather And Atmosphere
 Weather should be chosen as part of the Community Shaders presentation layer, not as an isolated plugin choice. The target is a grounded but modern visual tone that preserves forest, mountain, and travel readability in third person.
 

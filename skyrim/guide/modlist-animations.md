@@ -1,9 +1,5 @@
 # Animations and Movement
 
-**MO2 Separators:** `Animations - Framework`, `Animations - Movement & Idles`, `Animations - Combat`, `Animations - Interactions & Traversal`, `Animations - Creatures`
-
-All mods in this section belong to one of the five animation separators as noted per subsection.
-
 ---
 
 ## Animation Framework Landscape — What Goes With What

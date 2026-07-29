@@ -1,9 +1,5 @@
 # Audio and Feedback
 
-**MO2 Separators:** `Audio` → `Audio - Music`, `Audio - SFX & Ambience`
-
-All mods in this section belong to one of the two audio separators as noted per subsection.
-
 ---
 
 ## Music Overhaul Strategy

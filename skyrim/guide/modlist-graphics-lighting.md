@@ -1,9 +1,5 @@
 # Lighting
 
-**MO2 Separator:** `Graphics` → `Graphics - Lighting`
-
-All mods in this section belong to the `Graphics - Lighting` MO2 separator unless noted.
-
 ---
 
 ## Lighting Overhaul Strategy

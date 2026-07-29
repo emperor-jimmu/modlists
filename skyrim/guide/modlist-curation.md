@@ -1,7 +1,5 @@
 # Modlist Curation Rules and Testing Plan
 
-**MO2 Separator:** `Testing & Curation`
-
 ## Curation Principles
 
 - **AI-generated content is acceptable.** Mods tagged as AI-Generated Content are treated the same as traditionally voiced/created content. No special scrutiny, exclusion, or labelling requirements beyond the Nexus tag. Evaluate on quality and compatibility fit alone.

@@ -1,9 +1,5 @@
 # Modernized UI
 
-**MO2 Separators:** `UI - Framework & HUD`, `UI - Inventory & Items`, `UI - Map, Dialogue, Menus`
-
-All mods in this section belong to one of the three UI separators as noted per subsection.
-
 ---
 
 ## UI Framework Prerequisites

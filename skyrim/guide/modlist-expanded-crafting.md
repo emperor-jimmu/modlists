@@ -1,11 +1,5 @@
 # Crafting & Economy
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Crafting & Economy`
-
-All mods in this section belong to the `Expanded Systems - Crafting & Economy` MO2 separator unless noted.
-
-Part of the [`Expanded Systems`](modlist-expanded-systems.md) section.
-
 ---
 
 ## Alchemy Overhaul

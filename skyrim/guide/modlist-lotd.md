@@ -1,9 +1,5 @@
 # Legacy of the Dragonborn
 
-**MO2 Separator:** `Legacy of the Dragonborn`
-
-All items in this section belong to the `Legacy of the Dragonborn` MO2 separator.
-
 ---
 
 ## Core Mod Baseline

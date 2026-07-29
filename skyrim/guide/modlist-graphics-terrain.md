@@ -1,9 +1,5 @@
 # Terrain & Flora
 
-**MO2 Separator:** `Graphics` → `Graphics - Terrain & Flora`
-
-All mods in this section belong to the `Graphics - Terrain & Flora` MO2 separator unless noted.
-
 ## Terrain, Roads, And Snow
 Treat terrain, roads, and snow as one connected presentation layer. Must stay coherent with Community Shaders, PBR support, rock meshes, weather, and later LOD generation.
 

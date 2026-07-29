@@ -1,9 +1,5 @@
 # Adult Content
 
-**MO2 Separator:** `Adult Content`
-
-All mods in this section belong to the `Adult Content` MO2 separator unless noted.
-
 ---
 
 ## Framework Prerequisites

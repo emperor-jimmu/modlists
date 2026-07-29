@@ -1,7 +1,5 @@
 # Expanded Systems
 
-**MO2 Separator:** `Expanded Systems` → `Expanded Systems - Character & Progression`, `Expanded Systems - Magic & Perks`, `Expanded Systems - Survival & Needs`, `Expanded Systems - Crafting & Economy`, `Expanded Systems - Followers & Reputation`
-
 ## Overview
 
 This section owns the gameplay systems that expand Skyrim beyond its 2011 baseline: character creation, progression, magic, perks, survival, crafting, economy, followers, and social systems. Each pillar of the Expanded Systems section lives in its own sub-file.

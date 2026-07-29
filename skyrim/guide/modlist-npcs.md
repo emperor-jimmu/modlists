@@ -1,11 +1,5 @@
 # NPCs
 
-**MO2 Separators:** `NPCs` → `NPCs - Appearance`, `NPCs - Population`, `NPCs - Followers`
-
-All mods in this section belong to one of the three NPC separators as noted per subsection.
-
-> Creature/enemy content moved to → [Enemies & Creatures](modlist-creatures.md).
-
 ---
 
 ## NPC Appearance Overhauls
