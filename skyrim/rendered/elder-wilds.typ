@@ -2206,12 +2206,13 @@ The cosmic visual layer: night-sky stars, aurora rendering, sky-dome enhancement
   [*#text(fill: white)[Description]*],
   [*#text(fill: white)[Nexus]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
-  [AURORA S.E.],
-  [Adds proper northern-lights rendering. Genuinely upgrades the night vista without bloating the weather or lighting layer.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6021")[Nexus]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47530")[Praedy's Night Sky AIO]],
+  [*Locked.* Complete night-sky overhaul: stars (9 options), nebula (16 options), galaxy (4 options), constellations, Masser + Secunda moons, auroras. FOMOD-tunable. Choose 2K. 5,795 endorsements, v2.1.],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73090")[Shooting Stars SE]],
+  [*Locked.* Randomized shooting-star streaks overlaying the static sky. Script-free, no overlap with Praedy's textures.],
+  [],
 )
-
-Keep the discipline-first route alive if the weather mod's bundled star/sky textures already read well. Defer a full sky-dome overhaul if playtesting shows the night sky needs more investment.
 
 === Alternatives
 <weather--water-alternatives-3>
@@ -2226,43 +2227,32 @@ Keep the discipline-first route alive if the weather mod's bundled star/sky text
   [*#text(fill: white)[Nexus]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
   [Rally's Celestial Canvas],
-  [Complete night-sky overhaul: auroras, galaxy, stars, constellations. Hand-drawn (8K galaxy, 4K stars).],
+  [Rejected — Praedy's AIO chosen for higher endorsement signal (5,795 vs Rally's) and granular FOMOD tuning (9 star options, 16 nebula options).],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110869")[Nexus]],
-  [Realistic Galaxy],
-  [Galaxy texture replacer.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/111458")[Nexus]],
-  [Ultra Hi-Res Nightsky],
-  [Hubble-imagery galaxy, up to 16K.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6096")[Nexus]],
-  [Worlds Behind Glass],
-  [High-res night sky for telescope mods.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/158077")[Nexus]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120563")[Draco's fantasy auroras]],
-  [Aurora/sky visual replacer. Optional cosmetic.],
+  [AURORA S.E.],
+  [Rejected — redundant. Praedy's includes aurora coverage.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/6021")[Nexus]],
+  [Realistic Galaxy / Ultra Hi-Res Nightsky / Worlds Behind Glass],
+  [Rejected — single-texture replacers. Praedy's AIO provides coherent full-sky coverage.],
   [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/40605")[Draco's moons]],
-  [Moon visual replacer. Optional cosmetic.],
+  [Draco's fantasy auroras / Draco's moons],
+  [Rejected — redundant with Praedy's aurora and moon coverage.],
   [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/73090")[Shooting Stars SE]],
-  [Adds randomized shooting-star streaks to the night sky. Script-free.],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/47530")[Praedy's Night Sky AIO]],
-  [High-quality night-sky and star texture replacer. Choose 2K.],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/41260")[Texture Overhaul Stars and Galaxy of Nirn]],
-  [8K star and galaxy texture replacer.],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4931")[Skyrim Textures Redone - Stars]],
-  [Star texture replacer. Lighter alternative to full sky overhauls.],
-  [],
+  [Texture Overhaul Stars and Galaxy of Nirn],
+  [Rejected — single-texture replacer. Praedy's AIO preferred for coherent stack.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/41260")[Nexus]],
+  [Skyrim Textures Redone - Stars],
+  [Rejected — single-texture replacer. Praedy's AIO preferred for coherent stack.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/4931")[Nexus]],
 )
 
 === Risks & Compatibility
 <weather--water-risks--compatibility-3>
 
-- Aurora mods can look out of place in non-northern settings; verify southern holds.
-- Sky-dome edits can fight with weather mods that tweak the night sky. Give the aurora mod priority for night-sky changes.
+- Praedy's aurora textures can look out of place in non-northern settings; verify southern holds.
+- Sky-dome edits can fight with weather mods that tweak the night sky. Give Praedy's sky-dome priority for night-sky changes.
 - Strong auroras require a real night-darkness baseline from → `Performance`; bright nights kill the aurora.
+- Shooting Stars SE is script-free and adds dynamic streaks on top of Praedy's static textures — no overlap risk. Verify the combined visual reads cleanly under Azurite III CS dark nights.
 
 
 
@@ -2300,8 +2290,34 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54754")[Nexus]],
 )
 
-=== Landscape And Terrain (candidates — narrow after testing)
-<terrain--flora-landscape-and-terrain-candidates-narrow-after-testing>
+=== Landscape And Terrain
+<terrain--flora-landscape-and-terrain>
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 5pt),
+  fill: (x, y) => if y == 0 { rgb("#1E293B") } else if calc.rem(y - 1, 2) == 0 { rgb("#F8FAFC") } else { none },
+  stroke: 0.5pt + rgb("#CBD5E1"),
+  [*#text(fill: white)[Mod]*],
+  [*#text(fill: white)[Description]*],
+  [*#text(fill: white)[Nexus]*],
+  table.hline(stroke: 0.75pt + rgb("#94A3B8")),
+  [TomatoRim PBR Landscapes AIO],
+  [*Locked.* PBR-native landscape textures. Coherent with Tomato's PBR Vanilla Trees (locked tree texture baseline) for unified CS visual pipeline. Choose 2K.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177621")[Nexus]],
+  [Enhanced Rocks and Mountains - Complex Material and PBR],
+  [*Primary mountain/rock identity.* CS-native, no plugins, Complex Material support. Drop Majestic Mountains entirely (author inactive since June 2022, mesh misses snow coverage on rock piles).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121336")[Nexus]],
+  [Enhanced Rocks and Mountains - Fix and Addon],
+  [Extends ERM to underground spaces and Whiterun Skyforge.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142493")[Nexus]],
+  [Tomato's Whiterun Remake - PBR or Complex Material],
+  [Whiterun-specific terrain retexture.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173747")[Nexus]],
+)
+
+=== Alternatives
+<terrain--flora-alternatives>
 
 #table(
   columns: 3,
@@ -2313,35 +2329,23 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
   [*#text(fill: white)[Nexus]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
   [Skyking Fantasia Landscapes],
-  [],
+  [Rejected — fantasy-leaning aesthetic conflicts with grim-dark pillar.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107256")[Nexus]],
+  [A Cathedralist's PBR Landscape],
+  [Rejected — TomatoRim chosen for shared-author coherence with locked tree textures.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137333")[Nexus]],
+  [Vanaheimr - Landscapes - AIO - Complex Material - PBR],
+  [Rejected — TomatoRim chosen for shared-author coherence with locked tree textures.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145439")[Nexus]],
   [Atlantean Landscape - Majestic Edition],
-  [],
+  [Rejected — lower community signal.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102170")[Nexus]],
   [Atlantean Landscape - Complete - Complex Terrain Parallax],
-  [],
+  [Rejected — older version; superseded by Majestic Edition.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89542")[Nexus]],
-  [A Cathedralist's PBR Landscape],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/137333")[Nexus]],
-  [TomatoRim PBR Landscapes AIO],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/177621")[Nexus]],
-  [Vanaheimr - Landscapes - AIO - Complex Material - PBR],
-  [PBR pipeline support. Evaluate alongside Cathedralist and TomatoRim.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/145439")[Nexus]],
-  [Enhanced Rocks and Mountains - Complex Material and PBR],
-  [*Primary mountain/rock identity.* CS-native, no plugins, Complex Material support. Drop Majestic Mountains entirely (author inactive since June 2022, mesh misses snow coverage on rock piles).],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/121336")[Nexus]],
-  [Enhanced Rocks and Mountains - Fix and Addon],
-  [Extends ERM to underground spaces and Whiterun Skyforge.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/142493")[Nexus]],
-  [Tomato's Complex Parallax Material Landscapes AIO - With DLCs],
+  [Tomato's Complex Parallax Material Landscapes AIO],
   [Rejected — TomatoRim PBR is the newer locked version.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/110981")[Nexus]],
-  [Tomato's Whiterun Remake - PBR or Complex Material],
-  [Whiterun-specific terrain retexture.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173747")[Nexus]],
   [Seasonal Landscapes],
   [Rejected — excessive patch debt at this modlist's complexity level.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/66903")[Nexus]],
@@ -2412,7 +2416,7 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 )
 
 === Alternatives
-<terrain--flora-alternatives>
+<terrain--flora-alternatives-2>
 
 - *Windhelm Is Snowy - Base Object Swapper* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/165102")[Nexus]) — BOS-based snow coverage for Windhelm. Complements Simplicity of Snow.
 - *Snowy Standing Stones for Snowy Regions* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/139000")[Nexus]) — BOS-based snow coverage for standing stones in snowy regions.
@@ -2568,7 +2572,7 @@ Flora is the ground-level readability layer between terrain materials and tree c
 > Evaluate these after grass, 3D plant replacers, and tree choices are locked. Both layer via BOS (no cell-record edits).
 
 === Alternatives
-<terrain--flora-alternatives-2>
+<terrain--flora-alternatives-3>
 
 #table(
   columns: 3,
@@ -2633,7 +2637,7 @@ Trees are the main large-scale world-shaping layer for wilderness mood, canopy s
 )
 
 === Alternatives
-<terrain--flora-alternatives-3>
+<terrain--flora-alternatives-4>
 
 #table(
   columns: 3,
@@ -4368,8 +4372,8 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
   [Vanilla climbing + TDM + sprint/jump only.],
 )
 
-=== Horse Animation Candidates
-<animations-and-movement-horse-animation-candidates>
+=== Horse Animations
+<animations-and-movement-horse-animations>
 
 #table(
   columns: 3,
@@ -4381,17 +4385,31 @@ Known limitations: the converter handles standard MCO annotations. MCO movesets 
   [*#text(fill: white)[Notes]*],
   table.hline(stroke: 0.75pt + rgb("#94A3B8")),
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140941")[Thundertrot Horse Animations]],
-  [Candidate],
-  [OAR-based horse movement/idle replacer.],
+  [Baseline],
+  [*Locked.* OAR-based horse movement/idle replacer (walk, trot, gallop). 763 endorsements, v2.1.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140122")[Horse Animation Overhaul (WIP - OAR)]],
-  [Candidate],
-  [Broader horse animation replacement. WIP — evaluate stability.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102881")[Riding Animation Overhaul - RAO (OAR)]],
-  [Candidate],
-  [OAR-based horse riding animation replacer.],
+  [Baseline],
+  [*Locked.* OAR-based rider animation replacement with directional movement support. Requires Thundertrot for directional movement patch. WIP status — monitor for stable release.],
 )
 
-All three are OAR-based and work under Pandora. Do not install together without verifying mutual compatibility.
+=== Alternatives
+<animations-and-movement-alternatives>
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 5pt),
+  fill: (x, y) => if y == 0 { rgb("#1E293B") } else if calc.rem(y - 1, 2) == 0 { rgb("#F8FAFC") } else { none },
+  stroke: 0.5pt + rgb("#CBD5E1"),
+  [*#text(fill: white)[Mod]*],
+  [*#text(fill: white)[Type]*],
+  [*#text(fill: white)[Notes]*],
+  table.hline(stroke: 0.75pt + rgb("#94A3B8")),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/102881")[Riding Animation Overhaul - RAO (OAR)]],
+  [Alternative],
+  [Rejected — HAO is the newer successor by the same author (mxnedula) with directional movement support. RAO v2.0 (3,804 endorsements) remains the fallback if HAO is abandoned.],
+)
+
+All horse animation mods are OAR-based and work under Pandora. Thundertrot (horse layer) + HAO (rider layer) are designed to stack — HAO's directional movement patch requires Thundertrot as a dependency.
 
 === Companion Candidates (evaluate after baseline is locked)
 <animations-and-movement-companion-candidates-evaluate-after-baseline-is-locked>
@@ -8988,9 +9006,15 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/105713")[Diverse Dragon Priests — Xtudo Optimized Textures]],
   [Add-on],
   [Optimized textures for Diverse Dragon Priests. Install after base.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124394")[Skeletons SE] + #link("https://www.nexusmods.com/skyrimspecialedition/mods/154872")[Expanded]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124394")[Skeletons SE]],
+  [Baseline],
+  [*Locked.* Skeleton model replacer by Xtudo. Consistent undead visual direction with locked Draugrs SE and Spider SE baselines. 2,002 endorsements.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/154872")[Skeletons SE - Expanded]],
+  [Baseline],
+  [*Locked.* BOS-based skeleton variety addon. Install after Skeletons SE.],
+  [Skeleton Replacer HD (52845)],
   [Alternative],
-  [Skeleton model replacer + variants. CONFLICT: alternative to Skeleton Replacer HD (52845). Pick one skeleton route.],
+  [Rejected — single-model replacer, no variety. Xtudo consistency across undead stack (Draugrs, Spiders, Skeletons) preferred.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140979")[TNT - True Nordic Trolls - Revamped]],
   [Baseline],
   [Troll model/texture overhaul.],
