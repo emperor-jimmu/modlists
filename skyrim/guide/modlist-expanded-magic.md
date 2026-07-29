@@ -14,8 +14,8 @@ How much rules density and specialization pressure the list actually wants once 
 | Mod                                                                                      | Type        | Dial       | Notes                                                               |
 |------------------------------------------------------------------------------------------|-------------|------------|---------------------------------------------------------------------|
 | [Adamant — A Perk Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/30191)   | Baseline    | #1, #2, #4 | Balanced modern route.                                              |
-| [Vokrii — Minimalistic Perks](https://www.nexusmods.com/skyrimspecialedition/mods/26176) | Alternative | #1, #2, #4 | Restrained if Adamant feels too system-forward.                     |
-| [Ordinator — Perks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1137)  | Alternative | #1, #4     | High-complexity branch. Pairs with #1's heavy-perks recommendation. |
+| [Vokrii — Minimalistic Perks](https://www.nexusmods.com/skyrimspecialedition/mods/26176) | Rejected | #1, #2, #4 | Restrained alternative. Rejected in favor of Adamant (Simonrim coherence).                     |
+| [Ordinator — Perks of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1137)  | Rejected | #1, #4     | High-complexity branch. Rejected — Simonrim stack (Adamant/Mysticism/Starfrost) is the locked path. |
 
 ### Risks & Compatibility
 
@@ -33,8 +33,8 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 | [Mysticism — A Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/27839)  | Baseline    | #1, #2, #4     | Balanced modern route.                                                          |
 | [Triumvirate — Mage Archetypes](https://www.nexusmods.com/skyrimspecialedition/mods/39170) | Alternative | #1, #2, #4     | Identity-driven archetype spells (Cleric, Druid, Shadow Mage, Shaman, Warlock). |
 | [Strange Runes](https://www.nexusmods.com/skyrimspecialedition/mods/19438)                 | Alternative | #1, #2, #3, #4 | Floating Nordic runes during spell charging. Visual only, no records.           |
-| [Odin — Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000)  | Alternative | #1, #4         | Moderate expansion.                                                             |
-| [Apocalypse — Magic of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1090)   | Alternative | #1, #4         | Maximum spell variety.                                                          |
+| [Odin — Skyrim Magic Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/46000)  | Rejected | #1, #4         | Moderate expansion. Rejected — Mysticism + Triumvirate is the locked path.                                                             |
+| [Apocalypse — Magic of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1090)   | Rejected | #1, #4         | Maximum spell variety. Rejected — Mysticism + Triumvirate is the locked path.                                                          |
 | [Lost Grimoire SSE](https://www.nexusmods.com/skyrimspecialedition/mods/4455)              | Addition    | #1, #2, #4     | 115+ lore-friendly spells. Compatible with any primary overhaul.                |
 | [Lost Grimoire - B.O.O.B.I.E.S Support](https://www.nexusmods.com/skyrimspecialedition/mods/158139) | Addition | #1, #2, #4 | Spell tome icons via B.O.O.B.I.E.S. Requires Lost Grimoire + B.O.O.B.I.E.S. |
 | [Elemental Mastery Magic](https://www.nexusmods.com/skyrimspecialedition/mods/139953)      | Alternative | #1, #4         | Elemental specialization and tiered mastery bonuses.                            |
@@ -47,7 +47,7 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 
 - A very large spell ecosystem can dominate progression and make race, perk, and religion feel secondary.
 - Layering multiple spell packages casually turns this into a compatibility problem.
-- `Mysticism` and `Odin` should be treated as competing primary overhauls, not a default combined baseline.
+- `Mysticism` is the locked primary magic overhaul. `Odin` is rejected.
 - Choose one primary magic overhaul first, then decide whether extra spell volume is actually needed.
 
 ---
@@ -63,7 +63,7 @@ Replaces the vanilla "eat-tome-learn" system with time-based study, supporting t
 ### Risks & Compatibility
 
 - Works with any spell mod that uses standard spell tomes. No patches needed.
-- Compatible with Survival Mode and SunHelm (studying induces Fatigue).
+- Compatible with Survival Mode and Starfrost (studying induces Fatigue).
 - Has MCM for configuration. Only one spell can be studied at a time; switching loses progress.
 
 ---

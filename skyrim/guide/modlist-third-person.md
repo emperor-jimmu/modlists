@@ -50,7 +50,7 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 
 ## Dodge, Sprint, And Movement Responsiveness
 ### Baseline
-- **TK Dodge RE - Script Free** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56956)) — First dodge candidate. Tactical repositioning, not combat pacing center.
+- **TK Dodge RE - Script Free** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/56956)) — **Locked baseline.** Script-free dodge with configurable step/distance. Maps cleanly to gamepad. Tactical repositioning, not combat pacing center.
 
 ### Alternatives
 - **TK Dodge SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/15309)) — Legacy fallback reference.
@@ -74,9 +74,9 @@ Restrained centered-to-light-offset baseline. Shoulder switching is a support fe
 | Mod | Type | Notes |
 | --- | --- | --- |
 | [Valhalla Combat](https://www.nexusmods.com/skyrimspecialedition/mods/64741) | Baseline | Gameplay-rule framework. |
-| [MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115) | Alternative | Ambitious alternative. Re-evaluate deliberately. |
+| [MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115) | Rejected | Rejected — BFCO is the locked combat animation framework. |
 | SCAR (from → `Animations`) | Baseline | NPC-side attack variety. |
-| [Knockback SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/171277) | Support | Required only if MCO is chosen. |
+| [Knockback SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/171277) | Support | Compatible with BFCO. Evaluate for adoption with BFCO setup. |
 | [RaySense - Cover Animation](https://www.nexusmods.com/skyrimspecialedition/mods/175504) | Optional | Cover animation system. |
 | [Fire Ignites Arrows](https://www.nexusmods.com/skyrimspecialedition/mods/118544) | Optional | Arrow ignition from fire sources. |
 | [Poisoned Arrows and Bolts](https://www.nexusmods.com/skyrimspecialedition/mods/123585) | Optional | Poison crafting for ranged ammo. |

@@ -12,7 +12,7 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 | Mod                          | Description                                                                                                   | Nexus                                                               |
 |------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | Azurite III CS               | **Baseline.** Requires the balanced CS add-on tier or higher (SSGI, Screen Space Shadows, Grass Lighting, Wetness Effects). 1,263 endorsements, FOMOD with darker nights and reduced bloom for tunable grim-dark aesthetic. | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/162153) |
-| NAT.CS III                   | Works on the conservative CS stack (no SSGI required).                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139567) |
+| NAT.CS III                   | Alternative. Works on the conservative CS stack (no SSGI required).                                                        | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139567) |
 | Sky Sync - Community Shaders | Sky colour/dome enhancement for CS. Lighter than full weather replacement.                                    | [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/153543) |
 
 ### Alternatives

@@ -66,7 +66,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 6. **Select a preset profile.** For Elder Wilds, start with **Vanilla+** — it replicates vanilla autosave behavior with Save Shield protection and timed saves, no hardcore restrictions.
 7. From the MCM's **Rotating System** page, set your preferred save cap (20-30 is reasonable for a playthrough).
 
-**Campfire users:** SSSO3 must overwrite Campfire's files. Use the Campfire patch included with SSSO3 and let SSSO3 win file conflicts in MO2.
+**SSSO3 Configuration for Elder Wilds:** Starfrost (locked survival baseline) does not use Campfire files — no patch conflict expected. If a campfire-required mod is adopted later, SSSO3 includes compatibility patches.
 
 ### SkyPatcher And SkyPatched Mods
 **SkyPatcher** is an SKSE plugin that patches vanilla records at runtime from INI-style configuration files rather than traditional ESP plugins. No winner-loser override chain, no per-pair patches for the records it covers.
@@ -144,9 +144,9 @@ The **Bashed Patch** is an automatically generated plugin merging leveled lists,
 **Mods complementing or requiring Wrye Bash:**
 
 - **Leveled-list expanders** (Immersive Weapons, Immersive Armors, Hunterborn) — need `Relev`/`Delev`/`Invent.Add` tags
-- **World loot frameworks** (Open World Loot, MorrowLoot Ultimate)
+- **World loot frameworks** (Open World Loot SkyPatched — locked)
 - **Economy mods** (Trade and Barter, Ars Metallica, Honed Metal, Apothecary) — need `Stats`/`Invent.Change`
-- **Lighting/weather** (CS Light, True Light, RAID Weathers) — need `C.Light`/`C.Water`/`C.Climate`
+- **Lighting/weather** (CS Light, True Light, Azurite III CS) — need `C.Light`/`C.Water`/`C.Climate`
 - **NPC/follower mods** (RDO, Nether's, Serana Dialogue) — need `Actors.*` tags
 - **Audio overhauls** (AOS, ISC, Sounds of Skyrim) — need `Sound`/`C.Acoustic`
 

@@ -12,7 +12,7 @@ No concrete mod picks live here. The owning sections (notably → [Crafting & Ec
 
 ## The Three Styles
 
-**Deleveled** — World no longer scales to the player. A Bandit Chief is dangerous at level 1 and level 50; loot tables are decoupled from player level so a high-tier weapon can be found in a low-level dungeon. `MorrowLoot Ultimate` is the canonical implementation. `Open World Loot` (in its "decapitate leveled lists" mode) sits in this camp.
+**Deleveled** — World no longer scales to the player. A Bandit Chief is dangerous at level 1 and level 50; loot tables are decoupled from player level so a high-tier weapon can be found in a low-level dungeon. `Open World Loot` (SkyPatched) is the locked implementation.
 
 **Static Leveling** — World is fixed but the loot tables are hand-curated rather than the messy vanilla lists. Top-tier gear is rare, but it isn't gated behind specific zones — it's gated behind a curated drop table that the player learns over time. `Open World Loot` (default philosophy) is the closest popular implementation.
 

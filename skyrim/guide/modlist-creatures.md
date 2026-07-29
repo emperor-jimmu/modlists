@@ -28,8 +28,8 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | --- | --- | --- |
 | [Fluffworks](https://www.nexusmods.com/skyrimspecialedition/mods/56361) | Baseline | Broad furred-animal presentation layer. |
 | [Bears of the North](https://www.nexusmods.com/skyrimspecialedition/mods/47541) | Baseline | Species standout for common large wildlife threat. |
-| [Iconic's Dragon Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/101712) | Baseline | Clean dragon presentation upgrade. |
-| [Dragons SE](https://www.nexusmods.com/skyrimspecialedition/mods/132218) | Baseline | Full dragon model replacer. Not compatible with Iconic's — choose one. |
+| [Iconic's Dragon Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/101712) | Baseline | Clean dragon presentation upgrade. Locked — safer compatibility with Dragon War and behavior mods. |
+| [Dragons SE](https://www.nexusmods.com/skyrimspecialedition/mods/132218) | Rejected | Full dragon model replacer. Rejected — Iconic's is the locked path. Not compatible. |
 | [Draugrs — New models and textures](https://www.nexusmods.com/skyrimspecialedition/mods/123170) | Baseline | Most-seen undead enemy. |
 | [Spider SE](https://www.nexusmods.com/skyrimspecialedition/mods/182638) | Baseline | |
 | [Deer Reworked — Ultimate](https://www.nexusmods.com/skyrimspecialedition/mods/155433) | Baseline | |
@@ -47,7 +47,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Fusa Fusa Project](https://www.nexusmods.com/skyrimspecialedition/mods/5514) | Alternative | Don't casually stack with Fluffworks. |
 | [Splendor — Dragon Variants](https://www.nexusmods.com/skyrimspecialedition/mods/9670) | Alternative | Last updated Sept 2017. |
 | [Next Gen Dragon VFX](https://www.nexusmods.com/skyrimspecialedition/mods/168405) | Alternative | Dragon breath/VFX visual upgrade. |
-| [Diverse 4thUnknown Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/146462) | Alternative | Dragon model variety via SkyPatcher. Requires Dragons SE. |
+| [Diverse 4thUnknown Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/146462) | Alternative | Dragon model variety via SkyPatcher. Requires Dragons SE (rejected). Verify compatibility with Iconic's Dragon Retexture before adopting. |
 | [Sleep of the Dead — Draugr Leather and Shroud Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/178057) | Alternative | Draugr shroud/leather retexture. |
 | [Frozen Electrocuted Combustion](https://www.nexusmods.com/skyrimspecialedition/mods/3532) | Alternative | Elemental creature death effects. |
 | [Better Butterflies](https://www.nexusmods.com/skyrimspecialedition/mods/79332) | Alternative | Butterfly insect visual overhaul. |
@@ -107,7 +107,7 @@ How creatures attack, react, and express identity once combat starts.
 | [Dragon War](https://www.nexusmods.com/skyrimspecialedition/mods/51310) | Alternative | Heavier dragon route for fight structure/tempo. |
 | [Dragons actually fall down](https://www.nexusmods.com/skyrimspecialedition/mods/156824) | Alternative | Dragons collapse on the ground when staggered/low health. |
 | [Epic Dwarven Centurion Combat](https://www.nexusmods.com/skyrimspecialedition/mods/181405) | Alternative | Dwarven Centurion combat/animation overhaul. |
-| [New Creature Animation - Dwarven Centurion - SCAR2.0 - MCO - Nemesis or Pandora](https://www.nexusmods.com/skyrimspecialedition/mods/137805) | Alternative | Dwarven Centurion animation pack requiring MCO/BFCO or SCAR. Mutually exclusive with Epic Dwarven Centurion Combat — pick one. |
+| [New Creature Animation - Dwarven Centurion - SCAR2.0 - MCO - Nemesis or Pandora](https://www.nexusmods.com/skyrimspecialedition/mods/137805) | Alternative | Dwarven Centurion animation pack. Works with SCAR (Baseline). MCO-compatible component is unused. Mutually exclusive with Epic Dwarven Centurion Combat — pick one. |
 | [SkyTEST Lite ESL](https://www.nexusmods.com/skyrimspecialedition/mods/84539) / [Animal Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/1532) / [Pelagius's Wildlife AI](https://www.nexusmods.com/skyrimspecialedition/mods/144909) | Alternative | Animal-side mods drifting into ecology territory. |
 | [World Eater Beater](https://www.nexusmods.com/skyrimspecialedition/mods/179758)              | Alternative | Alduin boss fight overhaul — phase-based encounter, new attacks, arena improvements. Replaces vanilla final-boss design. |
 

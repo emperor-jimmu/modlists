@@ -181,7 +181,7 @@ The **MCO→BFCO Converter** ([mod 119926](https://www.nexusmods.com/skyrimspeci
 
 BFCO also has a **BFCO NG** companion ([mod 160505](https://www.nexusmods.com/skyrimspecialedition/mods/160505)) for flexible hotkey assignment. BFCO's FOMOD offers pre-input behavior choices: "Vanilla Like" (can only input next attack after hit frame) vs "MCO Like" (can input next attack almost immediately — same feel as MCO).
 
-**Recommendation:** BFCO is the better long-term fit for Elder Wilds given its built-in gamepad support, fewer companion-mods-required, and the converter making the MCO moveset library accessible. However, MCO remains a fully viable alternative. The decision can be deferred — either path works with Pandora and the rest of the stack.
+**Recommendation:** BFCO is locked for Elder Wilds. Built-in gamepad support, fewer companion-mods-required, and the MCO→BFCO converter making the MCO moveset library accessible make it the right long-term fit. MCO is rejected.
 
 **Task 3 — SCAR + Pandora interaction confirmed**
 
@@ -304,10 +304,10 @@ All three are OAR-based and work under Pandora. Do not install together without 
 | [SCAR - Skyrim Combos AI Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/72014)                                                                             | Baseline        | Add after Precision is proven. Companion mods: [SCAR AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/77285) + [SCAR Pandora Fix](https://www.nexusmods.com/skyrimspecialedition/mods/164638). If using BFCO, skip default animations in SCAR AE FOMOD. |
 | [Animated Armoury - OAR](https://www.nexusmods.com/skyrimspecialedition/mods/103577)                                                                                        | Baseline        | 12 new weapon types. Requires [DAR Version](https://www.nexusmods.com/skyrimspecialedition/mods/35978) for meshes/collision/leveled lists. Tick in Pandora for new weapon behaviors. |
 | [No Spinning Death Animation LITE](https://www.nexusmods.com/skyrimspecialedition/mods/33597)                                                                               | Baseline        | Prevents spinning death animations.                                                                                                        |
-| [MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115)                                                                    | High-Commitment | System-level decision. Evaluate later.                                                                                                     |
-| [Animation Motion Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/50258) + [Payload Interpreter](https://www.nexusmods.com/skyrimspecialedition/mods/65089) | High-Commitment | Required MCO support.                                                                                                                      |
-| [IFrame Generator RE AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/82737)                                                                                 | Support         | Install only when a pack explicitly lists it.                                                                                              |
-| [BFCO - Attack Behavior Framework](https://www.nexusmods.com/skyrimspecialedition/mods/117052)                                                                              | High-Commitment | System-level framework competing with MCO/ADXP. Mutually exclusive. Requires [DMK](https://www.nexusmods.com/skyrimspecialedition/mods/174499) for directional power attacks. Confirmed working with Pandora v4.3.1. Companion: [BFCO NG](https://www.nexusmods.com/skyrimspecialedition/mods/160505) for flexible hotkeys. |
+| [Animation Motion Revolution](https://www.nexusmods.com/skyrimspecialedition/mods/50258) + [Payload Interpreter](https://www.nexusmods.com/skyrimspecialedition/mods/65089) | Baseline        | Required by BFCO (attack behavior framework). AMR enables motion data in .hkx files; Payload Interpreter handles attack event processing. |
+| [BFCO - Attack Behavior Framework](https://www.nexusmods.com/skyrimspecialedition/mods/117052)                                                                              | Baseline        | **Locked.** Attack behavior framework. Requires [DMK](https://www.nexusmods.com/skyrimspecialedition/mods/174499) for directional power attacks. Companion: [BFCO NG](https://www.nexusmods.com/skyrimspecialedition/mods/160505) for flexible hotkeys. Confirmed working with Pandora v4.3.1. |
+| [MCO ADXP - Modern Movement Combat Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/117115)                                                                    | Rejected        | Rejected — BFCO is the locked combat animation framework. Mutually exclusive with BFCO. |
+| [IFrame Generator RE AE Support](https://www.nexusmods.com/skyrimspecialedition/mods/82737)                                                                                 | Support         | Install only when a pack explicitly lists it.                                            |
 | [Elden Ring DLC Light Greatsword Moveset](https://www.nexusmods.com/skyrimspecialedition/mods/122800)                                                                       | Alternative     | Requires MCO or BFCO framework. 1H and 2H moveset.                                                                                         |
 | [Vindictus Fiona Moveset BFCO](https://www.nexusmods.com/skyrimspecialedition/mods/183971)                                                                                  | Alternative     | BFCO-specific moveset. Requires BFCO framework.                                                                                            |
 | [Vindictus Delia Animation Remake](https://www.nexusmods.com/skyrimspecialedition/mods/104717)                                                                              | Alternative     | Combat animation pack.                                                                                                                     |
@@ -320,7 +320,7 @@ All three are OAR-based and work under Pandora. Do not install together without 
 | [Killmove Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/140398)                                                                                | Alternative     | Killmove trigger and camera fixes.                                                                                                         |
 | [Goetia Animations - Magic Spell Casting](https://www.nexusmods.com/skyrimspecialedition/mods/70204)                                                       | Alternative     | Magic spell casting animation replacer.                                                                                                    |
 | [Diverse NPC Movesets](https://www.nexusmods.com/skyrimspecialedition/mods/141893)                                                                          | Alternative     | Varied NPC combat stances via SCAR/OAR.                                                                                                    |
-| [For Honor in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/151478)                                                                                           | High-Commitment | Comprehensive combat overhaul. Competing with MCO/BFCO and Valhalla.                                                                       |
+| [For Honor in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/151478)                                                                                           | Rejected | Comprehensive combat overhaul. Competes with BFCO and Valhalla (both locked).                                                                       |
 | [Vanargand Animations - Sneak Strike Attacks](https://www.nexusmods.com/skyrimspecialedition/mods/55420)                                                                 | Alternative     | Sneak power-attack animation replacer.                                                                                                     |
 | [Vanargand Animations - Sneak Thrust Attacks](https://www.nexusmods.com/skyrimspecialedition/mods/55031)                                                                 | Alternative     | Sneak thrust-attack animation replacer.                                                                                                    |
 | [Vanargand Animations - Archery](https://www.nexusmods.com/skyrimspecialedition/mods/60323)                                                                              | Alternative     | Archery draw-and-release animation replacer.                                                                                              |
@@ -330,55 +330,45 @@ All three are OAR-based and work under Pandora. Do not install together without 
 | [Vanargand Animations - Sneak Crossbows](https://www.nexusmods.com/skyrimspecialedition/mods/67282)                                                                      | Alternative     | Sneak crossbow stance and fire animation replacer.                                                                                         |
 | [Goetia Animations - Sneak Magic](https://www.nexusmods.com/skyrimspecialedition/mods/75482)                                                                             | Alternative     | Sneak magic-casting animation replacer.                                                                                                    |
 | [Goetia Animations - Conditional Shouts](https://www.nexusmods.com/skyrimspecialedition/mods/76388)                                                                      | Alternative     | Conditional shout animation replacer.                                                                                                      |
-| [Dynamic Dodge Animation](https://www.nexusmods.com/skyrimspecialedition/mods/79598)                                                                                     | Alternative     | SKSE-based dodge animation with i-frames. DMCO-compatible.                                                                                 |
+| [Dynamic Dodge Animation](https://www.nexusmods.com/skyrimspecialedition/mods/79598)                                                                                     | Alternative     | SKSE-based dodge animation with i-frames. Evaluate as potential TK Dodge RE companion.                 |
 
 ---
 
-## ADXP/MCO Install Workflow Reference
-External tutorial baseline: [Capt. Panda — STEP BY STEP GUIDE on How to Install ADXP MCO for Skyrim SE and AE (MO2)](https://www.youtube.com/watch?v=YeS6Pwnv3b8). Captures the canonical ADXP/MCO install flow; references below use the Elder Wilds stack (Pandora for behaviour generation, OAR for conditional selection).
+## BFCO Install Workflow Reference
+External tutorial baseline: BFCO is the locked combat animation framework for Elder Wilds (Pandora for behaviour generation, OAR for conditional selection).
 
-### Tutorial Mod List — Elder Wilds Status
+### Core Install — BFCO Stack
 
-| Mod                                                                | Tutorial role             | Elder Wilds status                                                                                         |
-|--------------------------------------------------------------------|---------------------------|------------------------------------------------------------------------------------------------------------|
-| ADXP / MCO — Modern Movement Combat Overhaul (`modding-guild.com`) | Core combat overhaul      | Listed in `Combat Animation Packs` as High-Commitment; adoption is a system-level decision, not a drop-in. |
-| Animation Motion Revolution (AMR)                                  | MCO motion support        | Listed in `Combat Animation Packs`.                                                                        |
-| Payload Interpreter                                                | AMR dependency            | Listed in `Combat Animation Packs`.                                                                        |
-| Separate Power Attacks (reza9892, AE build)                        | Power-attack input scheme | Not yet adopted. Nexus page requires verification before listing.                                          |
-| ADXP/MCO — Valhalla Nordic Animation Reworked (Very Mingming)      | Recommended moveset       | Not yet adopted. Nexus page requires verification before listing.                                          |
-| Elden Ring Inspired Movesets (Black)                               | Recommended moveset       | Not yet adopted. Nexus page requires verification before listing.                                          |
+| Mod                                                                | Type       | Notes                                                                                |
+|--------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------|
+| Animation Motion Revolution (AMR)                                  | Baseline   | Required by BFCO. Motion data support for .hkx files.                               |
+| Payload Interpreter                                                | Baseline   | Required by BFCO. Attack event processing.                                          |
+| BFCO — Attack Behavior Framework (117052)                          | Baseline   | Locked attack behavior framework.                                                  |
+| Directional Movement Keys (DMK, 174499)                            | Baseline   | Required by BFCO for directional power attacks.                                     |
+| BFCO NG (160505)                                                    | Optional   | Flexible hotkey assignment companion.                                               |
+| MCO→BFCO Converter (119926)                                        | Tool       | Converts MCO-format movesets to BFCO naming/annotations. Run before Pandora.        |
 
 ### Install Flow (Pandora/OAR)
 
-1. Download ADXP/MCO, AMR, and Payload Interpreter from their canonical pages; match SE vs AE builds to the Skyrim build (Elder Wilds targets AE 1.6.1170).
-2. In MO2, group these under the `Animations - Combat` separator (3-dot menu → Create separator). Order between the three is not load-order-sensitive.
-3. Install ADXP/MCO, Animation Motion Revolution, and Payload Interpreter as separate MO2 mods.
-4. Open Animation Replacer covers conditional selection across the whole stack (→ `Conditional Animation Systems`).
-5. Optionally install a moveset (Very Mingming's Valhalla Nordic, or Black's Elden Ring Inspired) under `Animations - Combat` — only after its Nexus page has been verified.
-6. Create a dedicated empty MO2 mod named `Pandora Output` to receive generated behaviour files (→ `Pandora Framework And Prerequisites`).
-7. Configure Pandora to write into `Pandora Output` (set output target to that empty mod, not to overwrite).
-8. In Pandora, tick ADXP/MCO, Payload Interpreter, and any power-attack mod once adopted. Tick every other behaviour-requiring mod present in the load order.
-9. Run Pandora: Update Engine → Launch. Keep antivirus off during generation; re-enable afterwards.
-10. On generation error, exit Pandora, reopen, repeat Update Engine → Launch.
-11. Launch Skyrim and verify: separate power-attack input and weapon-sheathe behaviour intact.
+1. Install AMR, Payload Interpreter, DMK, and BFCO as separate MO2 mods under `Animations - Combat`.
+2. Optionally install BFCO NG for flexible hotkey assignment.
+3. Download BFCO-format movesets or convert MCO movesets using the MCO→BFCO Converter tool before placing in MO2.
+4. Create a dedicated empty MO2 mod named `Pandora Output` to receive generated behaviour files.
+5. In Pandora, tick BFCO, Payload Interpreter, and any other behaviour-requiring mods present in the load order.
+6. Run Pandora: Update Engine → Launch. Keep antivirus off during generation; re-enable afterwards.
+7. Launch Skyrim and verify: directional power-attack input, weapon-sheathe behaviour, and attack combo chains work end-to-end in third-person gamepad.
 
 ### Risks & Compatibility
 
-- The tutorial's `Separate Power Attacks` choice overrides one-click/`custom OCPA`. Third-person gamepad parity depends on the bound input (see → `Third-Person Gameplay`) and has not yet been evaluated.
-- The IFrame Generator entry in `Combat Animation Packs` is only relevant when a pack explicitly lists it — do not install speculatively.
-
-### Acceptance Criteria
-
-- ADXP/MCO, AMR, and Payload Interpreter install cleanly under `Animations - Combat`.
-- Pandora generation completes with ADXP/MCO and Payload Interpreter ticked; output lands in `Pandora Output`.
-- Power-attack and weapon-sheathe inputs work end-to-end in third-person gamepad, validated against → `Third-Person Gameplay`.
-- Any added moveset or power-attack mod has its Nexus page verified before being formally added to `Combat Animation Packs`.
+- DO NOT install MCO alongside BFCO — they are mutually exclusive and will conflict on behavior files.
+- BFCO includes internally: One Click Power Attack, Dual Wield Parrying, Unarmed Combat Behavior Overhaul, One Handed Crossbow Framework. Do NOT install these separately.
+- Third-person gamepad parity depends on BFCO's built-in MCM hotkey support. Verify directional power attack input with the bound gamepad key.
 
 ### Research Tasks
 
-- Verify Nexus pages for `Separate Power Attacks` (reza9892), `ADXP/MCO — Valhalla Nordic Animation Reworked` (Very Mingming), and `Elden Ring Inspired Movesets` (Black). The tutorial's description links are truncated and these mods are not currently in the modlist.
-- Cross-check `r/skyrimmods` signal for ADXP/MCO on AE 1.6.1170 with Pandora before locking or removing the High-Commitment stamp.
-- Confirm the `Separate Power Attacks` input scheme's behaviour in third-person gamepad (potential collision with dodge or block inputs) before adoption.
+- Verify BFCO-format moveset availability for all weapon types used in the modlist (one-handed, two-handed, dual wield, unarmed, ranged, magic).
+- Cross-check `r/skyrimmods` signal for recommended BFCO movesets and SCAR-compatible NPC animation packs.
+- Test MCO→BFCO Converter output quality with candidate movesets before adoption.
 
 ---
 
@@ -455,7 +445,7 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 | [New Creature Animation - Falmer](https://www.nexusmods.com/skyrimspecialedition/mods/83572)   | Falmer animation replacer.                     |
 | [DCA - Dragon Combat Animations](https://www.nexusmods.com/skyrimspecialedition/mods/123113)   | Dragon combat animation replacer.              |
 | [Draugr Greatsword Animation](https://www.nexusmods.com/skyrimspecialedition/mods/114721)      | Greatsword-wielding draugr animation replacer. |
-| [Troll - MCO](https://www.nexusmods.com/skyrimspecialedition/mods/175250)                     | Troll combat animation replacer (requires MCO). |
+| [Troll - MCO](https://www.nexusmods.com/skyrimspecialedition/mods/175250)                     | Rejected | MCO-specific. Requires MCO (rejected). Find BFCO-compatible troll animation alternative. |
 
 ### Risks & Compatibility
 

@@ -32,7 +32,7 @@ How much friction, structure, and world texture sits between major locations.
 ### Alternatives
 - **Carriage Stops of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10434)) — Broader route coverage.
 - **Fast Travel Cost** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20200)) — Economic pressure on map fast travel.
-- **Campfire** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/667)) — Camping-and-rest companion. Already in the survival conversation.
+- **Campfire** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/667)) — Rejected. Starfrost is the locked survival baseline.
 - **Journeyman - A Fast Travel Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92220)) — Restricts fast travel unless a Travel Pack is crafted/purchased. SKSE plugin + ESP. Fits "living the world" without forcing no-fast-travel.
 
 ---
@@ -194,7 +194,7 @@ Interactive campfire behavior for survival and immersion — sitting, cooking, r
 
 | Mod | Notes |
 | --- | --- |
-| [Usable Campfires](https://www.nexusmods.com/skyrimspecialedition/mods/140915) | Makes campfires interactive: sit, cook (with OAR + Animated Eating Redux), rest. Survival Mode compatible. Compatible with Embers XD, Campfire (667), retextures. Incompatible with other campfire-replacing mods. |
+| [Usable Campfires](https://www.nexusmods.com/skyrimspecialedition/mods/140915) | Rejected — requires Campfire, which is rejected with the Frostfall ecosystem. Compatible with Campfire (667), Embers XD. Incompatible with other campfire-replacing mods. |
 
 ---
 
