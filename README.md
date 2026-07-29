@@ -6,7 +6,8 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 
 | Modlist         | Game                        | Directory                                | Status |
 | --------------- | --------------------------- | ---------------------------------------- | ------ |
-| Minecraft Setup | Minecraft (NeoForge 1.21.1) | [`minecraft-setup/`](./minecraft-setup/) | Active |
+| Minecraft      | Minecraft (NeoForge 1.21.1) | [`minecraft/`](./minecraft/)             | Active |
+| Skyrim         | Skyrim SE                    | [`skyrim/`](./skyrim/)                   | Active |
 
 ## Adding a new modlist
 
@@ -54,11 +55,14 @@ git subtree push --prefix=<name> <remote> <branch>
 ## Structure
 
 ```
-minecraft-setup/        # Minecraft modpack (NeoForge 1.21.1)
+minecraft/              # Minecraft modpack (NeoForge 1.21.1)
 ├── config/
 ├── datapacks/
 ├── AGENTS.md
 ├── GUIDE.md
+└── ...
+skyrim/                 # Skyrim SE modlist
+├── AGENTS.md
 └── ...
 production/             # Production deployment config
 README.md               # collection index
