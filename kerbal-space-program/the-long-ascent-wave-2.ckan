@@ -1,0 +1,28 @@
+{
+    "spec_version": "v1.34",
+    "kind": "metapackage",
+    "identifier": "TheLongAscentWave2",
+    "name": "The Long Ascent — Wave 2: The Long Ascent",
+    "abstract": "Wave 2 of The Long Ascent: Life support, colonization, interstellar travel, and realism overhauls. Requires Waves 0–1.",
+    "author": "Nimrod Perez",
+    "license": "CC-BY-4.0",
+    "version": "1.0.0",
+    "depends": [
+        { "name": "ModuleManager" }
+    ],
+    "suggests": [
+        { "name": "PlanetsideExplorationTechnologies" },
+        { "name": "Pathfinder" },
+        { "name": "Buffalo2" },
+        { "name": "ExtraPlanetaryLaunchpads" },
+        { "name": "SimpleConstruction" },
+        { "name": "FarFutureTechnologies" },
+        { "name": "SterlingSystems" },
+        { "name": "Blueshift" },
+        { "name": "CommunityNavballDockingIndicator" }
+    ],
+    "supports": [
+        { "name": "BreakingGround-DLC" },
+        { "name": "MakingHistory-DLC" }
+    ]
+}

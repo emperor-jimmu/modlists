@@ -1,0 +1,1613 @@
+// guide/wave-1-going-further.typ
+
+#import "../template/lib.typ": *
+
+#section-heading([About Wave 1])
+
+Wave 1 expands KSP with graphics overhauls, parts packs, and light mechanical additions that add content without fundamentally changing difficulty. You should be comfortable with the skills taught in Waves 0–0.5 (orbit, Mun landings, docking, space stations) before installing these mods.
+
+#wave-criteria-table()
+
+#warning([
+  Wave 1 mods are cumulative with Waves 0–0.5. Do not skip the earlier waves — Wave 1 includes their mods. Install Waves 0 and 0.5 first, play until you've mastered orbital operations and station assembly, then add Wave 1.
+])
+
+// ═══════════════════════════════════════════════════════════════════
+// MOD ENTRIES
+// ═══════════════════════════════════════════════════════════════════
+
+#section-heading([Mod List])
+
+// ═══ TOOLS & AUTOMATION ═══
+
+#mod-entry(
+  name: [MechJeb],
+  ckan_id: "MechJeb2",
+  url: "https://forum.kerbalspaceprogram.com/topic/154834-112x-mechjeb-autopilot/",
+  description: [Advanced autopilot and flight computer. Provides automated ascent, rendezvous, landing, maneuver planner, and a customizable data readout. Useful as a teaching tool — watch what MechJeb does, then learn to do it yourself.],
+  dependencies: (),
+  impact_types: (UI, Mechanics),
+  impact_description: [Adds an autopilot module part and data windows. The autopilot can fly entire missions autonomously. Purely additive — you can ignore the autopilot and use it only for the readouts, which are similar to KER.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [AtmosphereAutopilot],
+  ckan_id: "AtmosphereAutopilot",
+  url: "https://github.com/BobPalmer/AtmosphereAutopilot",
+  description: [Fly-by-wire flight control system with automatic trim and advanced autopilot modes. Replaces KSP's basic SAS with proper control-surface coordination, auto-trim, and stability augmentation. Includes autopilot modes for altitude hold, heading hold, and auto-throttle — makes long-duration atmospheric flight hands-off.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI, Mechanics),
+  impact_description: [Improves atmospheric flight control with coordinated surface deflection and automatic trim. The autopilot modes handle altitude, heading, and speed — useful for circumnavigation flights and long-duration atmospheric surveys. Complements MechJeb (space autopilot) with atmospheric specialization.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Does not conflict with MechJeb — AA handles atmospheric flight, MJ handles spaceflight. Use both for complete autopilot coverage.],
+)
+
+// ═══ GRAPHICS OVERHAUL ═══
+
+#mod-entry(
+  name: [Scatterer],
+  ckan_id: "Scatterer",
+  url: "https://forum.kerbalspaceprogram.com/topic/103963-112x-scatterer-atmospheric-scattering/",
+  description: [Atmospheric scattering, ocean shaders, and sunflare effects. Gives planets proper atmospheric haze, Rayleigh scattering (blue skies on Kerbin), and reflective water surfaces with wave animation. By Blackrack — also the author of Volumetric Clouds. Installed automatically as an AVP dependency.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Replaces KSP's flat atmospheric rendering with physically-based scattering. Oceans gain reflections and wave animation. Sunflare is customizable with multiple presets. Moderate GPU impact — adjust ocean and atmosphere quality in settings.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Installed automatically with AVP. Blackrack's Volumetric Clouds requires Scatterer for its lighting integration. Configurable via the Scatterer toolbar menu in flight.],
+)
+
+#mod-entry(
+  name: [Astronomer's Visual Pack],
+  ckan_id: "AstronomersVisualPack",
+  url: "https://forum.kerbalspaceprogram.com/topic/160878-112x-astronomers-visual-pack/",
+  description: [Comprehensive visual overhaul: high-resolution skybox, revamped cloud layers (via EVE), and atmospheric scattering configs (via Scatterer). The gold standard for KSP visuals.],
+  dependencies: ("EnvironmentalVisualEnhancements", "Scatterer", "ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Changes skybox, cloud textures, and atmospheric scattering. No gameplay impact — purely visual. Performance impact depends on texture resolution chosen during install.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires 8 GB+ VRAM for high-res textures.],
+)
+
+#mod-entry(
+  name: [Deferred],
+  ckan_id: "Deferred",
+  url: "https://github.com/LGhassen/Deferred",
+  description: [Replaces KSP's forward renderer with a deferred renderer. Enables better lighting (many dynamic lights without performance collapse), physically-based shaders, and improved shadow handling.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Changes the rendering pipeline. More dynamic lights, better reflections, and many of the features Planetshine provides natively. Significant visual improvement with a smaller performance hit than stacking multiple lighting mods.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Parallax Continued],
+  ckan_id: "ParallaxContinued",
+  url: "https://forum.kerbalspaceprogram.com/topic/217449-112x-parallax-continued/",
+  description: [Replaces stock terrain scatter with high-detail tessellated ground textures: rocks, grass, trees, and surface detail at close range. Transforms planetary surfaces from flat painted terrain into detailed 3D landscapes.],
+  dependencies: ("Parallax-StockTextures", "ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Adds GPU-intensive terrain tessellation. Near-ground visuals are dramatically improved. Requires a GPU capable of handling tessellation shaders. Use Parallax-StockTextures for stock planets; additional texture packs needed for OPM or Kcalbeloh.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires a DX11-capable GPU.],
+)
+
+
+#mod-entry(
+  name: [Vapor Cones],
+  ckan_id: "VaporCones",
+  url: "https://spacedock.info/mod/3805",
+  description: [Adds supersonic vapor cone effects around your craft when breaking the sound barrier in atmosphere. The condensation cloud that forms during transonic flight.],
+  dependencies: (),
+  impact_types: (Graphics),
+  impact_description: [Purely visual — no gameplay effect. Triggers when your vessel exceeds Mach 1 in sufficient atmospheric density.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Reentry Particle Effect Renewed (Firefly)],
+  ckan_id: "Firefly",
+  url: "https://github.com/M1rageDev/Firefly",
+  description: [Adds plasma trail and spark effects during atmospheric reentry. Heat shields and leading edges glow with realistic ablation particles.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Visual only — reentry heating damage is unchanged. Enhances the drama of atmospheric entry with particle trails and incandescent effects.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Texture Replacer Replaced],
+  ckan_id: "TextureReplacerReplaced",
+  url: "https://forum.kerbalspaceprogram.com/topic/161898-112x-texture-replacer-replaced/",
+  description: [Replaces stock textures: kerbal suits, heads, skybox, and EVA visor reflections. The modern maintained fork of the original TextureReplacer.],
+  dependencies: (),
+  impact_types: (Graphics),
+  impact_description: [Enables custom kerbal suits, skybox replacement, and visor reflections. Purely visual. Requires downloading or creating texture packs — the mod itself is a framework.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [TUFX (Textures Unlimited FX)],
+  ckan_id: "TUFX",
+  url: "https://forum.kerbalspaceprogram.com/topic/192212-112x-tufx/",
+  description: [Post-processing framework: ambient occlusion, bloom, anti-aliasing, color grading, HDR tonemapping. Includes several built-in profiles. For a cinematic, desaturated look, try Fox's Experimental profile (manual install from KSP forums).],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Adds a post-processing stack to the flight and editor scenes. Profiles are toggleable in-game via toolbar. Performance impact depends on profile — ambient occlusion and high-quality AA have the largest cost.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Fox's Experimental profile is a manual download, not on CKAN.],
+)
+
+#mod-entry(
+  name: [Environmental Visual Enhancements (EVE)],
+  ckan_id: "EnvironmentalVisualEnhancements",
+  url: "https://forum.kerbalspaceprogram.com/topic/196411-112x-environmentalvisualenhancements-redux/",
+  description: [Cloud and atmospheric effects framework. Adds volumetric cloud layers, city lights on the dark side of Kerbin, and atmospheric glow. The base framework that Astronomer's Visual Pack, Spectra, and other visual packs build their cloud configs on top of. Installed automatically as a dependency of AVP.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Provides the cloud rendering engine. Does nothing on its own without config packs (AVP, Spectra, BoulderCo). AVP includes EVE as a dependency and provides configs. Blackrack's Volumetric Clouds (Patreon) upgrades EVE's cloud rendering to a full volumetric system.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Installed automatically with AVP. Blackrack's Volumetric Clouds is a paid Patreon mod that replaces EVE's cloud shader — manual install from Blackrack's Patreon.],
+)
+
+#mod-entry(
+  name: [Blackrack's Volumetric Clouds],
+  ckan_id: "BlackrackVolumetricClouds",
+  url: "https://www.patreon.com/blackrack/posts/true-volumetric-87982960",
+  description: [True volumetric cloud rendering for KSP. Replaces EVE's 2D cloud layers with fully 3D volumetric clouds that react to lighting, cast shadows, and have real depth. Transforms atmospheric flight — clouds are no longer flat textures but massive 3D formations you can fly through. A Patreon-supported mod by Blackrack (also the author of Scatterer).],
+  dependencies: ("EnvironmentalVisualEnhancements", "Scatterer", "ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Upgrades EVE's cloud system to volumetric rendering. Significant visual improvement — clouds have real 3D volume, self-shadowing, and dynamic lighting. Performance impact is moderate to high depending on cloud quality settings. Requires EVE and Scatterer (both already installed via AVP).],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from Blackrack's Patreon (free — Google Drive download link on the post page). Download the latest release, extract to GameData/. Worth supporting Blackrack on Patreon if you can.],
+)
+
+#mod-entry(
+  name: [Distant Object Enhancement],
+  ckan_id: "DistantObject",
+  url: "https://forum.kerbalspaceprogram.com/topic/158637-112x-distant-object-enhancement/",
+  description: [Renders planets and moons as visible points of light in the sky, with proper brightness and color based on distance and phase. Distant vessels appear as flares against the skybox. Vastly improves the sense of scale — you can see Jool from Kerbin orbit, Duna as a red dot, and your space station winking in the sunlight.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Adds dynamic sky-dimming and distant vessel rendering. Planets are visible even when they're just a few pixels across. No performance cost — uses efficient point-sprite rendering.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Works with all planet packs (OPM, Kcalbeloh). Vessel flares use the same sky-dimming system — disable if you find distant ship flares distracting.],
+)
+
+#mod-entry(
+  name: [Textures Unlimited],
+  ckan_id: "TexturesUnlimited",
+  url: "https://forum.kerbalspaceprogram.com/topic/167450-112x-textures-unlimited/",
+  description: [PBR (Physically Based Rendering) shader framework for KSP parts. Enables metallic, reflective, and roughness-based textures on supported parts. A separate concept from TextureReplacer — TU changes how parts render, while TR replaces texture files. Required by some parts mods for their reflective/textured materials.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Adds PBR shader support to KSP's rendering pipeline. Parts default to standard KSP shaders — only mods that ship TU-compatible textures use PBR. Required by Textures Unlimited Recolour Depot (TURD) for in-editor part recoloring.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Framework mod — no visual change on its own. Install TURD (Textures Unlimited Recolour Depot) or TU-compatible texture packs to see PBR effects.],
+)
+
+#mod-entry(
+  name: [Textures Unlimited Recolour Depot (TURD)],
+  ckan_id: "TURD",
+  url: "https://forum.kerbalspaceprogram.com/topic/174188-112x-textures-unlimited-recolour-depot/",
+  description: [In-editor part recoloring using Textures Unlimited's PBR shaders. Select any supported part in the VAB/SPH and recolor it with preset palettes or custom colors — make your rockets any color you want while maintaining the PBR material quality. Works with stock parts and mod packs that ship TURD configs.],
+  dependencies: ("TexturesUnlimited", "ModuleManager"),
+  impact_types: (Graphics, UI),
+  impact_description: [Adds a part recoloring GUI in the editor. Parts must have TURD-compatible textures — stock parts and many mod parts have community configs available. The recolor is saved with the craft file and visible in flight. Pure visual — no gameplay impact.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Requires TexturesUnlimited. TURD for DLC, B9, and MkIV recolor packs are available on the same forum thread for additional part support.],
+)
+
+#mod-entry(
+  name: [Simple Repaint],
+  ckan_id: "SimpleRepaint",
+  url: "https://github.com/Electrocutor/SimpleRepaint",
+  description: [Part re-shader for parts that lack TURD support. Provides basic color/reflectivity adjustments for mod parts that don't have full PBR texture configs — a lighter-weight alternative to TURD for quick visual customization. Complements TURD by covering parts TURD doesn't support.],
+  dependencies: ("TexturesUnlimited", "ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Adds basic shader-based repainting for parts without TURD configs. Uses TexturesUnlimited's PBR framework. Not a replacement for TURD — use both: TURD for parts with full configs, SimpleRepaint for everything else.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires TexturesUnlimited. Complements TURD — install both for maximum part customization coverage.],
+)
+
+#mod-entry(
+  name: [Shabby / Shaddy],
+  ckan_id: "Shabby",
+  url: "https://forum.kerbalspaceprogram.com/topic/198333-artemis-construction-kit/",
+  description: [TUFX post-processing profiles by benjee10. Shabby provides a clean, cinematic profile suitable for screenshots and general gameplay. Shaddy extends Shabby with more profile variants. Install via CKAN and select the profile from the TUFX toolbar menu in flight.],
+  dependencies: ("TUFX"),
+  impact_types: (Graphics),
+  impact_description: [Adds additional TUFX profiles beyond the built-in defaults. Pure configuration — toggles between profiles in-game with no performance cost beyond the post-processing effects themselves.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Both Shabby and Shaddy (CKAN: "Shabby", "Shaddy") install together as a profile pack. Select them from TUFX's in-game profile selector.],
+)
+
+#mod-entry(
+  name: [Pood's Skyboxes],
+  ckan_id: "PoodsMilkyWaySkybox",
+  url: "https://forum.kerbalspaceprogram.com/topic/169919-13-112-poods-skyboxes-v130-17th-jan-2019/",
+  description: [High-resolution skybox replacements by Poodmund. Includes three variants: Milky Way (detailed galaxy panorama), Calm Nebula (subtle, warm-toned nebula — the personal favourite), and Deep Star Map (dense starfield for deep-space immersion). Replaces KSP's default flat galaxy background with rich, detailed space vistas.],
+  dependencies: (),
+  impact_types: (Graphics),
+  impact_description: [Replaces the skybox cubemap texture. No performance impact. Purely visual. Three variants available in one download — Calm Nebula is recommended for its warm, atmospheric feel that complements AVP and Scatterer.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Download, choose your preferred variant, place in GameData/. TextureReplacerReplaced can also install skybox textures.],
+)
+
+// ═══ PARTS REDESIGN ═══
+
+#mod-entry(
+  name: [Restock],
+  ckan_id: "ReStock",
+  url: "https://github.com/PorktoberRevolution/ReStocked",
+  description: [Complete visual revamp of every stock part: models, textures, and effects. Maintains stock dimensions and attachment points — craft files are 100% compatible. Makes stock parts look like they belong in a modern game.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics, Parts),
+  impact_description: [Replaces art assets for all stock parts. No functional changes — same mass, cost, tech tree placement, and attachment nodes. Existing craft files work unchanged. Pair with Restock+ for additional parts.],
+  conflicts: [Any mod that relies on the visual appearance of specific stock parts (e.g., some part-welding mods) may need patches.],
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Restock+],
+  ckan_id: "ReStockPlus",
+  url: "https://github.com/PorktoberRevolution/ReStocked",
+  description: [Adds new stock-alike parts that fill gaps in the stock lineup: larger reaction wheels, additional fuel tank sizes, resized adapters, and more. All parts follow Restock's visual quality.],
+  dependencies: ("ReStock", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds new parts in stock sizes and tech nodes. Fills gaps rather than adding new mechanics — a 2.5m reaction wheel, 0.625m RCS tanks, missing adapter pieces, etc.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Restock.],
+)
+
+#mod-entry(
+  name: [Waterfall],
+  ckan_id: "Waterfall",
+  url: "https://github.com/KSPModStewards/Waterfall",
+  description: [Modern, mesh-driven engine plume framework. Replaces stock particle-based exhaust with continuous, physically-inspired plumes that expand realistically in vacuum and contract under atmospheric pressure. Includes configs for stock engines.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Replaces engine exhaust visuals. No performance or gameplay changes. Stock engine plumes are significantly improved out of the box; additional configs available for mod engines.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. WaterfallRestock provides configs for ReStock engines.],
+)
+
+#mod-entry(
+  name: [Waterfall for Restock],
+  ckan_id: "WaterfallRestock",
+  url: "https://github.com/KSPModStewards/WaterfallRestock",
+  description: [Patches Waterfall engine effects onto Restock's revamped engine models. Ensures the beautiful Restock engine models also get beautiful Waterfall plumes.],
+  dependencies: ("Waterfall", "ReStock"),
+  impact_types: (Graphics),
+  impact_description: [Bridges Waterfall and Restock so that Restock's engine models use Waterfall's plume system instead of falling back to stock particles.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires both Waterfall and Restock.],
+)
+
+#mod-entry(
+  name: [Restock Waterfall Expansion (RSMP)],
+  ckan_id: "RestockWaterfallExpansion",
+  url: "https://spacedock.info/mod/3149/Restock-Waterfall-Expansion",
+  description: [Additional Waterfall plume configurations for ReStock engines beyond what WaterfallRestock provides. Adds plumes to more niche ReStock engines, RCS thrusters, and SRBs. Install alongside WaterfallRestock for complete plume coverage on all ReStock parts. The mod formerly known as RSMP (ReStock Plume Expansion).],
+  dependencies: ("WaterfallRestock", "Waterfall", "ReStock", "ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Extends Waterfall plume coverage to engines and parts that WaterfallRestock doesn't cover. Pure graphics — no gameplay changes. May cause minor issues with specific engine configs; CKAN handles the dependency chain automatically.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Waterfall, WaterfallRestock, and ReStock. CKAN automatically resolves dependencies — just install and it works.],
+)
+
+#mod-entry(
+  name: [Rocket Sound Enhancement],
+  ckan_id: "RocketSoundEnhancement",
+  url: "https://github.com/ensou04/RocketSoundEnhancement",
+  description: [Replaces stock engine sounds with realistic, high-quality audio. Engine roar changes with throttle, distance, and atmospheric density. Includes sonic boom effects — when the camera pans ahead of a supersonic craft, sound cuts out (you're traveling faster than sound). Transforms the auditory experience of launches and atmospheric flight.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Replaces stock sound effects with layered, dynamic audio. Engine sounds respond to throttle position and camera distance. Includes realistic sonic-boom physics and atmospheric sound attenuation. Pure audio — no gameplay changes.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Complements Waterfall's visual plumes with matching audio quality. Default configs cover stock engines; additional configs available for mod engines.],
+)
+
+// ═══ TECH TREE ═══
+
+#mod-entry(
+  name: [Community Tech Tree],
+  ckan_id: "CommunityTechTree",
+  url: "https://github.com/post-kerbin-mining-corporation/CommunityTechTree",
+  description: [Expands the stock tech tree with additional nodes for modded parts. Instead of mods cramming their advanced parts into the stock tree's last few nodes, CTT provides dedicated progression nodes for nuclear propulsion, colonization, life support, and deep-space technologies. The foundation for organized modded career progression.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics, Gameplay),
+  impact_description: [Restructures and extends the tech tree with dozens of new nodes. Changes career/science mode progression by spreading parts across a deeper, more specialized tree. Mod parts that support CTT will auto-assign to appropriate new nodes. Does not affect Sandbox mode.],
+  conflicts: [Other tech tree mods (Engineer Tech Tree, UnKerballed Start, etc.) are incompatible — choose one tech tree for your save. Stock parts are unaffected and remain in their original nodes.],
+  version_pin: [Compatible with KSP 1.12.x. Most parts mods (Near Future, Planetside, etc.) have built-in CTT support. Recommended but not required for Hide Empty Tech Tree Nodes (Wave 0).],
+)
+
+// ═══ FUEL SYSTEM ═══
+
+#section-heading([Fuel System])
+
+Many parts mods in Wave 1 use custom fuel types beyond stock LiquidFuel/Oxidizer. The mods below define and manage these resources so engines and tanks from historical, modern, and shuttle packs use their real-world propellants. Install these once — all dependent parts mods will auto-configure.
+
+#mod-entry(
+  name: [Community Resource Pack],
+  ckan_id: "CommunityResourcePack",
+  url: "https://github.com/BobPalmer/CommunityResourcePack",
+  description: [Defines shared resource definitions used by the KSP modding ecosystem. Adds Hydrogen, Methane, Kerosene, Hydrazine, and dozens of other resources to the game. No parts or gameplay on its own — other mods reference these definitions for their engines and tanks.],
+  dependencies: (),
+  impact_types: (Mechanics),
+  impact_description: [Registers new resource types in the game database. Required by most parts packs that use custom fuels. Does nothing visible by itself — it's a shared library that other mods depend on.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Required by Bluedog DB, Tantares, Tundra, Artemis CK, HabTech2, and many others. Install once.],
+)
+
+#mod-entry(
+  name: [B9 Part Switch],
+  ckan_id: "B9PartSwitch",
+  url: "https://github.com/blowfishpro/B9PartSwitch",
+  description: [Allows fuel tanks to switch between different resource configurations in the editor. A single tank can hold LiquidFuel/Oxidizer (stock), LH2/Oxidizer (cryogenic), Methane/Oxidizer, or monopropellant — switchable with a dropdown in the VAB. Foundation for the entire custom-fuel ecosystem.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics),
+  impact_description: [Adds part-switching capability to fuel tanks. The tank model doesn't change — only the resources it contains. Required by most parts mods that use non-stock fuels. Can also switch textures and models on supported parts.],
+  conflicts: [InterstellarFuelSwitch and Firespitter's fuel switch provide overlapping functionality. B9PartSwitch is the modern standard — only install alternatives if a specific mod requires them.],
+  version_pin: [Compatible with KSP 1.12.x. Required by virtually every parts mod that uses custom fuel types.],
+)
+
+#mod-entry(
+  name: [Cryogenic Tanks],
+  ckan_id: "CryoTanks",
+  url: "https://github.com/post-kerbin-mining-corporation/CryoTanks",
+  description: [Adds cryogenic fuel tank options and boil-off mechanics. LH2 and Methane require insulated tanks — they slowly evaporate if stored in standard tanks. Includes active cooling parts that eliminate boil-off at the cost of ElectricCharge.],
+  dependencies: ("CommunityResourcePack", "B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds insulated tank variants with boil-off management. LH2 tanks lose fuel over time unless actively cooled. This is a light resource management mechanic — not a failure condition, but something you need to account for on long missions.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Boil-off is configurable — you can disable it entirely if you prefer simpler fuel management.],
+)
+
+#mod-entry(
+  name: [Cryogenic Engines],
+  ckan_id: "CryoEngines",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Adds LH2/Oxidizer-fueled rocket engines in the Near Future style. Higher Isp than stock chemical engines but requires managing cryogenic fuel boil-off. Includes upper-stage and deep-space engines optimized for efficiency over thrust.],
+  dependencies: ("CommunityResourcePack", "CryoTanks", "B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds LH2-burning engines that integrate with the CryoTanks boil-off system. Engines range from 1.25m upper-stage to 3.75m heavy-lift cryogenic. Part of the Near Future Technologies family of mods.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Best paired with Near Future Electrical for powering active cooling on long missions.],
+)
+
+#mod-entry(
+  name: [Deployable Engines],
+  ckan_id: "DeployableEngines",
+  url: "https://github.com/post-kerbin-mining-corporation/DeployableEngines",
+  description: [Engine animation framework. Allows engine nozzles to extend, retract, and deploy with animations. Required by Rocket Motor Menagerie, CryoEngines, Artemis Construction Kit, and other mods that feature animated engine parts. No standalone effect.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics),
+  impact_description: [Enables deploy/retract animations on supported engines. Pure framework — does nothing unless another mod provides animated engine parts. Required dependency for several Wave 1 parts packs.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Required by Rocket Motor Menagerie, Artemis Construction Kit, and CryoEngines.],
+)
+
+// ═══ NERTEA SUITE EXTENSIONS ═══
+
+#section-heading([Nertea Suite Extensions])
+
+#mod-entry(
+  name: [Heat Control],
+  ckan_id: "HeatControl",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Advanced radiator parts by Nertea: deployable radiators, graphene panels, and active cooling systems for managing extreme heat from nuclear reactors and engines. System Heat provides the thermal framework — Heat Control provides the radiator parts.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds high-temperature radiator parts. Essential for nuclear reactors (NF Electrical) and nuclear engines (Kerbal Atomics). System Heat recommended for advanced thermal simulation that uses these radiators.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. System Heat recommended. Both work together: System Heat = framework, Heat Control = parts.],
+)
+
+#mod-entry(
+  name: [System Heat],
+  ckan_id: "SystemHeat",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Advanced thermal simulation by Nertea. Replaces KSP's simplified core-heat with detailed heat flow, thermal mass, and warm-up/cool-down phases for nuclear reactors. Adds realistic thermal management — not just "add radiators" but manage heat distribution and temperature limits.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics),
+  impact_description: [Overhauls core-heat with detailed simulation. Nuclear reactors and ISRU converters have real thermal requirements — manage heat flow, temperature, and thermal inertia. Recommends Heat Control for compatible radiator parts designed for this system.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Recommends Heat Control. Skip System Heat if you prefer simpler thermal management (stock core-heat with Heat Control radiators).],
+)
+
+#mod-entry(
+  name: [Kerbal Atomics],
+  ckan_id: "KerbalAtomics",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Nuclear thermal rockets by Nertea. NERVA-style engines with LH2 propellant and 800–1,000s Isp. Includes open-cycle gas-core and closed-cycle nuclear engines — the bridge between chemical rockets and fusion drives. Uses CryoTanks for LH2 boil-off management.],
+  dependencies: ("CommunityResourcePack", "CryoTanks", "B9PartSwitch", "DeployableEngines", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds nuclear thermal engines consuming LH2 for high-efficiency deep-space propulsion. Requires cryogenic fuel management. Higher Isp than chemical engines at the cost of engine mass and radiation. Fits between NF Propulsion and FFT in the Nertea engine progression.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires CryoTanks and CRP. Pairs with NF Electrical for reactor power and Heat Control/System Heat for thermal management.],
+)
+
+#mod-entry(
+  name: [Space Dust],
+  ckan_id: "SpaceDust",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Exotic resource harvesting framework by Nertea. Places harvestable antimatter, fusion fuel, and exotic particles in specific orbital bands, planetary rings, and atmospheric layers. Required for FFT's advanced fuel chains — send dedicated harvester missions to collect resources rather than buying them at KSC.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics, Gameplay),
+  impact_description: [Defines harvestable exotic resource locations — specific orbits, rings, and atmospheres. Transforms FFT's fuel chain from KSC purchases to in-situ harvesting expeditions. Purpose-built harvester parts needed per resource type.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Required for full FFT gameplay. Without SpaceDust, exotic FFT fuels are KSC-only. With it, fuel acquisition becomes a mission objective itself.],
+)
+
+// ═══ HEAVY LIFT ═══
+
+#section-heading([Heavy Lift])
+
+
+
+// ═══ PARTS PACKS ═══
+
+#mod-entry(
+  name: [Hullcam VDS Continued],
+  ckan_id: "HullcamVDSContinued",
+  url: "https://github.com/linuxgurugamer/HullcamVDSContinued",
+  description: [Adds functional camera parts: launch pad cameras, docking cameras, rover cameras, and telescope lenses. View the game world through any camera part for cinematic shots or improved situational awareness during docking and landing.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, UI),
+  impact_description: [Adds camera parts at various tech nodes. Each camera provides a live feed view in a window or fullscreen. No gameplay changes — purely a new way to see what's happening around your craft.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Near Future Solar],
+  ckan_id: "NearFutureSolar",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465-112x-near-future-technologies/",
+  description: [Expanded solar panel selection: curved arrays, blanket panels, concentrator photovoltaics, and giant orbital arrays. Solar power that scales from tiny probes to massive space stations.],
+  dependencies: ("NearFutureProps", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds solar panel parts at multiple tech tiers. All produce ElectricCharge — no new resources. Panels range from small probe-sized to station-scale deployable arrays.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Near Future Electrical],
+  ckan_id: "NearFutureElectrical",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465/",
+  description: [Nuclear reactors, fission generators, capacitors, and high-capacity batteries for deep-space missions where solar panels produce negligible power. Includes a reactor management UI for monitoring core temperature and fuel consumption.],
+  dependencies: ("NearFutureProps", "CommunityResourcePack", "DynamicBatteryStorage", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds reactors that consume EnrichedUranium and produce ElectricCharge, plus capacitors for burst power. Introduces a new resource (EnrichedUranium) and waste heat management via radiators. Scales to end-game power demands.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Reactor fuel is a one-time load — no refueling chain required.],
+)
+
+#mod-entry(
+  name: [Near Future Propulsion],
+  ckan_id: "NearFuturePropulsion",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465/",
+  description: [Advanced electric and nuclear propulsion: VASIMR-style plasma thrusters, magnetoplasmadynamic engines, pulsed inductive thrusters, and colloid ion engines. High Isp, low thrust — for deep-space efficiency, not launch power.],
+  dependencies: ("NearFutureProps", "NearFutureElectrical", "CommunityResourcePack", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds engines that consume vast amounts of ElectricCharge (and sometimes Argon, Xenon, or Lithium) in exchange for extremely high Isp. Requires powerful electrical infrastructure (NF Electrical or massive solar) to operate.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Engines require Near Future Electrical or equivalent power sources.],
+)
+
+#mod-entry(
+  name: [Near Future Construction],
+  ckan_id: "NearFutureConstruction",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465/",
+  description: [Large structural parts: octo-girders, hexagonal trusses, docking connectors, and modular construction components for building orbital stations and interplanetary vessels in space.],
+  dependencies: ("NearFutureProps", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds truss and structural parts. No new mechanics — just more ways to build large space structures without excessive part counts.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Near Future Spacecraft],
+  ckan_id: "NearFutureSpacecraft",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465/",
+  description: [Advanced command pods and service modules: 3-kerbal capsules, 7-kerbal orbital modules, deep-space habitation pods, and integrated RCS/service bays. Pods designed for long-duration crewed missions.],
+  dependencies: ("NearFutureProps", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds crewed parts with larger capacities and integrated features (built-in RCS, experiments, storage). Pure parts addition — no new mechanics.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Near Future Launch Vehicles],
+  ckan_id: "NearFutureLaunchVehicles",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465/",
+  description: [Heavy-lift engines, 5m and 7.5m fuel tanks, large SRBs, and engine mounting plates for building Saturn V-class and larger rockets. Extends the stock rocket scale upward.],
+  dependencies: ("NearFutureProps", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds large-diameter parts (5m–7.5m) and high-thrust engines. No new mechanics — these are bigger versions of stock rocket components for launching heavier payloads.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [Near Future Aeronautics],
+  ckan_id: "NearFutureAeronautics",
+  url: "https://forum.kerbalspaceprogram.com/topic/155465/",
+  description: [Advanced aircraft parts: nuclear thermal turbojets, multi-mode atmospheric engines, large wings, and intake systems. Extends atmospheric flight with engines that work on planets without oxygen (Duna, Eve, Laythe's atmosphere).],
+  dependencies: ("NearFutureProps", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds nuclear jet engines that function in any atmosphere (not just oxygenated). Uses IntakeAtm — these engines heat atmospheric gas rather than burning it, enabling powered flight on Duna or Eve.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Nuclear jets require a nuclear reactor from this pack or Near Future Electrical.],
+)
+
+#mod-entry(
+  name: [Mk2 Expansion],
+  ckan_id: "Mk2Expansion",
+  url: "https://github.com/SuicidalInsanity/Mk2Expansion",
+  description: [Triples the Mk2 fuselage part catalog: inline docking ports, cargo ramps, crew cabins, science labs, RCS-integrated sections, nuclear reactors, and more. Every Mk2-shaped thing you've ever wanted.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds Mk2-profile parts at various tech nodes. All parts maintain the stock Mk2 cross-section and attachment rules. No new mechanics.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x.],
+)
+
+#mod-entry(
+  name: [SCANsat],
+  ckan_id: "SCANsat",
+  url: "https://github.com/KSPModStewards/SCANsat",
+  description: [Adds surface-scanning parts and a map viewer. Launch scanning satellites to map planetary biomes, altimetry, ore concentrations, and anomaly locations. Maps are persistent and reveal detail as scanning coverage increases.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics, UI),
+  impact_description: [Adds scanner parts (RADAR, SAR, multispectral, biome) and a Map view accessible from the toolbar. Scanning requires placing satellites in appropriate polar orbits. Maps provide biome and terrain data useful for landing site selection and resource prospecting.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Does not alter stock resource scanning — SCANsat scanning is parallel and additive.],
+)
+
+
+#mod-entry(
+  name: [FreeIva],
+  ckan_id: "FreeIva",
+  url: "https://github.com/FirstPersonKSP/FreeIva",
+  description: [Lets kerbals walk freely inside crewed parts in IVA view. Move between connected habitable modules, float through passageways, and explore the interiors of your spacecraft in first person.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Mechanics, UI),
+  impact_description: [Adds first-person movement inside IVAs. Habitable parts must be connected via passable nodes (docking ports, crew tubes). Adds immersion without affecting flight mechanics. Kerbals cannot EVA from IVA — exiting still goes through the normal EVA button.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Works with most stock and mod IVAs. Some mod IVAs may not have passable colliders defined.],
+)
+
+// ═══ HISTORICAL ROCKETS ═══
+
+#section-heading([Historical Rockets])
+
+These mods add meticulously detailed replicas of real-world spacecraft and launch vehicles from the early space age through the Apollo era. Parts are balanced for stock-scale KSP (2.5× smaller than real life) and integrate with the Community Tech Tree and CRP fuel system.
+
+#mod-entry(
+  name: [Bluedog Design Bureau],
+  ckan_id: "BluedogDB",
+  url: "https://forum.kerbalspaceprogram.com/topic/122020-112x-bluedog-design-bureau-stockalike-saturn-apollo-and-more/",
+  description: [Comprehensive US rocketry pack covering Mercury, Gemini, Apollo, and dozens of historical launchers (Atlas, Titan, Delta, Scout). Hundreds of parts: command pods, service modules, lunar landers, engines, fuel tanks, and science instruments — all in a unified stockalike art style. The definitive historical US space program mod.],
+  dependencies: ("B9PartSwitch", "CommunityResourcePack", "ModuleManager", "DeployableEngines"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds a complete US historical spacecraft and launcher catalog. Engines use real-world propellants (Kerosene/LOX, LH2/LOX, hypergolics) via CRP. Tech tree placements roughly follow historical chronology. Pairs with Tantares for the full Cold War space race experience.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires CRP, B9PartSwitch, and DeployableEngines. Tantares is the Soviet counterpart — both are designed to work together.],
+)
+
+#mod-entry(
+  name: [Tantares — Soviet Spacecraft],
+  ckan_id: "NewTantares",
+  url: "https://forum.kerbalspaceprogram.com/topic/73686-112x-tantares-stockalike-soyuz-and-mir/",
+  description: [Soviet crewed spacecraft: Vostok, Voskhod, Soyuz, Progress, TKS/VA, and Salyut/Mir station modules. The definitive Soviet space program parts pack in stockalike style. Includes command pods, orbital modules, service modules, docking systems, and station parts.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds Soviet crewed spacecraft parts. Recommends NewTantaresLV for launch vehicles and TantaresSP for uncrewed probes. Engines use real-world propellants via CRP. Designed to complement BluedogDB for a complete Cold War era mod set.],
+  conflicts: [The original Tantares (deprecated) conflicts with NewTantares — install NewTantares only.],
+  version_pin: [Compatible with KSP 1.12.x. Pair with NewTantaresLV for Soviet launchers (Soyuz rocket, Proton, N1). TantaresSP adds Soviet interplanetary probes.],
+)
+
+#mod-entry(
+  name: [Tantares LV — Soviet Launchers],
+  ckan_id: "NewTantaresLV",
+  url: "https://forum.kerbalspaceprogram.com/topic/73686-112x-tantares-stockalike-soyuz-and-mir/",
+  description: [Soviet launch vehicles: Soyuz rocket family, Proton, N1, and Energia. Fuel tanks, engines, and fairings designed to match the Tantares spacecraft parts. Provides the rockets that carry Vostok, Soyuz, and TKS spacecraft to orbit.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds Soviet launcher parts. Intended for use with NewTantares — the rockets are scaled and balanced to carry Tantares payloads. Engines use real-world propellants via CRP.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Recommended companion to NewTantares.],
+)
+
+#mod-entry(
+  name: [Tantares SP — Soviet Space Probes],
+  ckan_id: "TantaresSP",
+  url: "https://forum.kerbalspaceprogram.com/topic/73686-112x-tantares-stockalike-soyuz-and-mir/",
+  description: [Soviet uncrewed probes and interplanetary spacecraft: Luna, Venera, Mars, and other historical Soviet probe programs. Probe cores, science instruments, and antenna parts in the Tantares art style.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds Soviet probe parts for uncrewed exploration. Complements NewTantares and NewTantaresLV. NeptuneCamera recommended for integrating camera functionality with probe parts.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. NeptuneCamera (recommended) adds camera parts that integrate with probe cores.],
+)
+
+// ═══ MODERN ROCKETS ═══
+
+#section-heading([Modern Rockets])
+
+#mod-entry(
+  name: [Eisenhower Astronautics],
+  ckan_id: "EisenhowerAstronautics",
+  url: "https://forum.kerbalspaceprogram.com/topic/211728-eisenhower-astronautics-modern-russian-rockets/",
+  description: [Modern Russian spacecraft and launch vehicles: Angara rocket family, modern Soyuz variants, and contemporary Russian space hardware. Extends the Russian/Soviet lineage from Tantares into the 21st century with updated designs and modern engine configurations.],
+  dependencies: ("B9PartSwitch", "CommunityResourcePack", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds modern Russian rocket and spacecraft parts. Uses CRP for propellant configuration. Shares Tantares' design language but with modern vehicle profiles.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Complements Tantares by providing modern Russian vehicles alongside the Soviet-era Tantares parts.],
+)
+
+#mod-entry(
+  name: [Tundra Exploration],
+  ckan_id: "TundraExploration",
+  url: "https://forum.kerbalspaceprogram.com/topic/166915-112x-tundra-exploration/",
+  description: [SpaceX-inspired parts: Falcon 9, Falcon Heavy, Dragon capsule, and Starship. Includes grid fins, landing legs, and superdraco thrusters. Build and fly reusable rockets with propulsive landing capability — Falcon-style booster recovery and Dragon-style capsule landings.],
+  dependencies: ("B9PartSwitch", "CommunityResourcePack", "ModuleManager", "DeployableEngines"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds SpaceX-inspired launchers and spacecraft. Engines use Kerosene/LOX (Falcon) and Methane/LOX (Starship) via CRP. Landing legs, grid fins, and RCS pods enable propulsive recovery operations.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Tundra Technologies adds probe buses and satellite parts that complement the Falcon/Dragon lineup.],
+)
+
+#mod-entry(
+  name: [Tundra Technologies],
+  ckan_id: "TundraTechnologies",
+  url: "https://forum.kerbalspaceprogram.com/topic/166915-112x-tundra-exploration/",
+  description: [SpaceX-inspired probe buses, satellite platforms, and uncrewed spacecraft parts. Adds modular satellite buses, probe cores, and instrument platforms designed to pair with Tundra Exploration's Falcon launchers.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds satellite and probe parts in the Tundra art style. Complements Tundra Exploration for building complete Falcon-launched satellite missions.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Designed to pair with Tundra Exploration for the full SpaceX-style ecosystem.],
+)
+
+// ═══ SHUTTLE, SLS & ISS ═══
+
+#section-heading([Shuttle, SLS & ISS])
+
+
+#mod-entry(
+  name: [Artemis Construction Kit],
+  ckan_id: "ArtemisConstructionKit",
+  url: "https://forum.kerbalspaceprogram.com/topic/198333-artemis-construction-kit/",
+  description: [SLS rocket and Orion spacecraft parts. Build NASA's modern deep-space launch system: core stage with RS-25 engines, SRBs, Orion capsule, European Service Module, and ICPS upper stage. Recommended SLS/Artemis mod for this modlist.],
+  dependencies: ("B9PartSwitch", "CommunityResourcePack", "ModuleManager", "Benjee10-SharedAssets", "DeployableEngines", "AnimatedDecouplers", "SimpleAdjustableFairings", "HabTechProps"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds SLS and Orion parts. RS-25 engines use LH2/LOX via CRP. SRBs use solid fuel. Orion has integrated RCS, parachutes, and heat shield. Designed to reach the Moon and beyond. Rocket Motor Menagerie adds RS-25 variants for more engine options.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Breaking Ground DLC for robotic parts support. Rocket Motor Menagerie adds RS-25 engine variants.],
+)
+
+#mod-entry(
+  name: [Rocket Motor Menagerie],
+  ckan_id: "RocketMotorMenagerie",
+  url: "https://forum.kerbalspaceprogram.com/topic/208266-rocket-motor-menagerie/",
+  description: [Expanded RS-25 (SSME) engine variants with deployable nozzles and Waterfall plumes. Adds multiple RS-25 configurations — standard, high-expansion-ratio, and extended-nozzle variants for different flight regimes. Complements Artemis Construction Kit and SOCK with period-accurate engine options.],
+  dependencies: ("B9PartSwitch", "CommunityResourcePack", "ModuleManager", "DeployableEngines"),
+  impact_types: (Parts, Graphics),
+  impact_description: [Adds RS-25 engine variants with deploy animations and Waterfall plumes. Engines use LH2/LOX via CRP. Designed to supplement Artemis CK and shuttle builds. CryoTanks recommended for managing LH2 boil-off on long missions.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Waterfall and CryoTanks recommended for full visual and mechanical integration. DeployableEngines required for nozzle animations.],
+)
+
+#mod-entry(
+  name: [Boring Crew Services],
+  ckan_id: "BoringCrewServices",
+  url: "https://forum.kerbalspaceprogram.com/topic/198333-artemis-construction-kit/",
+  description: [Boeing Starliner (CST-100) crew capsule. Adds the Starliner command pod with integrated RCS, parachutes, airbags, and service module. Designed for Commercial Crew-style missions to LKO space stations.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds the Starliner crew capsule. Integrates with HabTech2 and StationPartsExpansionRedux for ISS-style station missions. Complements Artemis CK (SLS/Orion) and Tundra Exploration (Dragon) for a complete modern crew vehicle lineup.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Pairs well with HabTech2 for ISS resupply and crew rotation missions.],
+)
+
+#mod-entry(
+  name: [HabTech2],
+  ckan_id: "HabTech2",
+  url: "https://forum.kerbalspaceprogram.com/topic/167450-112x-habtech2-iss/",
+  description: [International Space Station parts. Build the US Orbital Segment from modular truss, solar array, radiator, node, lab, and cupola parts. Includes Canadarm2, docking adapters, and functional solar array rotation. The definitive ISS construction mod.],
+  dependencies: ("B9PartSwitch", "CommunityResourcePack", "ModuleManager", "Benjee10-SharedAssets", "HabTechProps", "HabTechRobotics", "Waterfall"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds modular ISS parts with functional solar tracking, robotic arms, and docking systems. Requires Breaking Ground DLC for robotic Canadarm functionality. Integrates with StationPartsExpansionRedux for Russian segment and additional station modules.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Breaking Ground DLC. StationPartsExpansionRedux is strongly recommended (adds Russian segment and additional station modules). Boring Crew Services and Tundra Exploration provide crew vehicles.],
+)
+
+#mod-entry(
+  name: [Stockalike Station Parts Expansion Redux],
+  ckan_id: "StationPartsExpansionRedux",
+  url: "https://forum.kerbalspaceprogram.com/topic/170211-112x-stockalike-station-parts-expansion-redux/",
+  description: [Comprehensive space station parts pack in stockalike style. Inflatable habitats, centrifuges, cupolas, trusses, cargo containers, docking hubs, and structural adapters — everything needed to build orbital stations from small outposts to sprawling complexes.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds stockalike station parts across multiple sizes and tech nodes. Parts are designed to complement stock station building while greatly expanding options. Works standalone or alongside HabTech2 for ISS-specific builds.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Integrates with HabTech2 for ISS builds. Community Tech Tree adds dedicated station-part tech nodes.],
+)
+
+#mod-entry(
+  name: [Mark One Laboratory Extensions (MOLE)],
+  ckan_id: "MOLE",
+  url: "https://forum.kerbalspaceprogram.com/topic/154893-min-ksp-1122-mark-one-laboratory-extensions-mole/",
+  description: [Early-game space station and orbital laboratory parts in the Mk1 form factor. Adds compact lab modules, experiment storage, science instruments, and orbital workshop parts that unlock early in the tech tree — before the stock Mobile Processing Lab. Build your first orbital outpost with 1.25m parts.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds Mk1-sized station and laboratory parts for early career mode. MOLE parts unlock before the stock lab, giving you a reason to build orbital stations early. Complements StationPartsExpansionRedux (later, larger station parts) and HabTech2 (ISS-specific).],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Designed for early career station-building. Pairs with StationPartsExpansionRedux and HabTech2 for a complete station-part progression from early Mk1 to late-game ISS-scale.],
+)
+
+// ═══ AIRCRAFT & SPACEPLANES ═══
+
+#section-heading([Aircraft & Spaceplanes])
+
+#mod-entry(
+  name: [Airplane Plus],
+  ckan_id: "AirplanePlus",
+  url: "https://forum.kerbalspaceprogram.com/topic/140262-112x-airplane-plus/",
+  description: [Adds propeller engines, helicopter rotors, vintage aircraft cockpits, and early-aviation structural parts. Extends atmospheric flight backward in the tech tree — build prop planes, biplanes, seaplanes, and helicopters before unlocking jet engines.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds propeller-driven aircraft parts across early tech nodes. Fills the gap between basic jets and the start of career mode. Helicopter rotors and vintage cockpits enable diverse atmospheric vehicle designs.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Parts are balanced for stock aerodynamics. Pairs well with Mk3 Expansion and Mark IV for a complete aircraft parts progression.],
+)
+
+#mod-entry(
+  name: [Mk3 Stockalike Expansion],
+  ckan_id: "Mk3Expansion",
+  url: "https://forum.kerbalspaceprogram.com/topic/139129-112x-mk3-expansion/",
+  description: [Expands the Mk3 fuselage part catalog: additional crew cabins, cargo bays, engine mounts, adapters, and structural parts. Triples the building options for Mk3-sized spaceplanes and heavy atmospheric craft.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds Mk3-profile parts at appropriate tech nodes. All parts maintain the stock Mk3 cross-section and attachment rules. Complements Mk2 Expansion (already in Wave 1) for the full fuselage-size progression.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Mk2 Expansion (already included) handles Mk2-sized parts. Together they cover all stock fuselage profiles.],
+)
+
+#mod-entry(
+  name: [Mark IV Spaceplane System],
+  ckan_id: "MarkIVSpaceplaneSystem",
+  url: "https://forum.kerbalspaceprogram.com/topic/94118-112x-mark-iv-spaceplane-system/",
+  description: [Adds a Mk4 fuselage profile — larger than Mk3 — with dedicated crew cabins, cargo bays, fuel tanks, engine mounts, and aerodynamic nose/tail sections. For building massive SSTOs, heavy cargo spaceplanes, and interplanetary crew transports.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds Mk4-profile parts in the late tech tree. The Mk4 cross-section is significantly larger than Mk3 — these are the biggest spaceplane parts available. Designed for lifting heavy payloads to orbit in a single stage.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Mk4 parts are late-game — you won't unlock them until you've mastered Mk2 and Mk3 designs.],
+)
+
+#mod-entry(
+  name: [Mk-33],
+  ckan_id: "Mk-33",
+  url: "https://forum.kerbalspaceprogram.com/topic/194713-112x-mk-33/",
+  description: [Venture Star / X-33 inspired parts: lifting-body spaceplane with integrated aerospike engines, thermal protection tiles, and vertical-launch horizontal-landing profile. A single-stage-to-orbit spaceplane that launches vertically and glides back to the runway.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds a Venture Star-style spaceplane system with linear aerospike engines and metallic TPS. Designed for SSTO operations — launch vertically, reach orbit in a single stage, reenter and land horizontally. A unique design challenge distinct from conventional spaceplanes.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. KerbalKonstructs and DockRotate recommended. KIS/KAS, kOS, and life support mods are supported but optional.],
+)
+
+// ═══ EARLY GAME ═══
+
+#section-heading([Early Game])
+
+#mod-entry(
+  name: [Sounding Rockets],
+  ckan_id: "SoundingRockets",
+  url: "https://forum.kerbalspaceprogram.com/topic/105821-112x-sounding-rockets/",
+  description: [Ultra-early-game rocket parts for Career mode. Tiny 0.35m sounding rockets, low-power solid motors, basic science instruments, and lightweight avionics. Lets you start launching suborbital science missions before unlocking the Stayputnik probe core — the true beginning of your space program.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds small-diameter rocket parts for the earliest stages of Career mode. Sounding rockets unlock before the first stock probe core, giving you something to launch in the first few science nodes. Parts are cheap, light, and perfect for "first launch" contracts.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Designed for Career mode — less useful in Science or Sandbox. Community Tech Tree places these in dedicated early nodes. CNAR (manual install) is a heavier alternative with more rocket variety.],
+)
+
+// ═══ IVA ENHANCEMENT ═══
+
+#section-heading([IVA Enhancement])
+
+#mod-entry(
+  name: [RasterPropMonitor],
+  ckan_id: "RasterPropMonitor",
+  url: "https://github.com/FirstPersonKSP/RasterPropMonitor",
+  description: [Adds functional Multi-Function Displays (MFDs), instrument panels, and interactive screens to IVA cockpits and crew cabins. Transforms IVAs from static decoration into functional flight decks — view orbit info, docking cameras, and vessel data from inside the cockpit. Essential for IVA-only playthroughs.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics, UI),
+  impact_description: [Replaces static IVA props with interactive MFD screens. MFDs can display orbital data, docking cameras, radar, and custom instrument pages. Works with stock pods and most mod cockpits. DE_IVAExtension adds enhanced IVAs for specific pods using RPM.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. DE_IVAExtension (see below) is recommended to add RPM-enabled IVAs to stock command pods. ASET Props and ASET Avionics (CKAN) add additional functional cockpit props.],
+)
+
+#mod-entry(
+  name: [DE_IVAExtension],
+  ckan_id: "DE",
+  url: "https://forum.kerbalspaceprogram.com/topic/193275-112x-de-ivaextension/",
+  description: [Enhanced IVA interiors for stock command pods. Replaces the default bare-bones IVAs with detailed, RPM-enabled cockpits featuring functional MFDs, switches, and instrument panels. Makes every stock pod and cockpit feel like a real spacecraft interior.],
+  dependencies: ("RasterPropMonitor", "ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Replaces stock IVA models with detailed RPM-integrated interiors. Each pod gets a unique, functional cockpit layout. Requires RasterPropMonitor for the MFD functionality. FreeIva enables moving between these enhanced IVA spaces.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires RasterPropMonitor. FreeIva (already in Wave 1) lets kerbals walk between DE-enhanced IVAs.],
+)
+
+// ═══ PROCEDURAL PARTS ═══
+
+#mod-entry(
+  name: [Procedural Parts],
+  ckan_id: "ProceduralParts",
+  url: "https://github.com/KSP-RO/ProceduralParts",
+  description: [Design decision — stock fixed tanks are the modlist default. Procedural Parts generates fuel tanks, structural fuselages, and SRBs in arbitrary shapes and sizes, reducing part count and giving unlimited design flexibility at the cost of stock balance and craft-sharing compatibility.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Replaces fixed-size parts with procedurally-generated versions. Tank shape, diameter, and length are adjustable via sliders. Part mass, cost, and capacity scale mathematically — balance differs from hand-tuned stock tanks. Significantly reduces part count on large vessels.],
+  conflicts: [Stock fixed tanks are the recommended approach for this modlist. Procedural parts change the design puzzle and balance of rocket construction. Craft files using procedural tanks require the recipient to also have this mod installed.],
+  version_pin: [Compatible with KSP 1.12.x. Stock fixed tanks are the default. Install this only if you prefer design freedom over the intended engineering constraints of stock tanks.],
+)
+
+#mod-entry(
+  name: [Procedural Fairings],
+  ckan_id: "ProceduralFairings",
+  url: "https://forum.kerbalspaceprogram.com/topic/184187-procedural-fairings/",
+  description: [Design decision — stock fairings are the modlist default. Procedural Fairings generates payload fairings of any size and shape with purpose-built interstage adapters and custom nose cones. Useful for irregularly-shaped payloads where stock fairings fall short.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds parts for generating procedural fairings and interstage adapters. Fairing shape is controlled by adjusting base/top diameters and height. More flexible than stock fairings for unusual payloads and interstage configurations.],
+  conflicts: [Stock fairings are the recommended approach for this modlist — they cover 95% of use cases with a more intuitive editor. Procedural fairings add parts to the catalog and require the mod to be installed for craft file sharing.],
+  version_pin: [Compatible with KSP 1.12.x. Stock fairings are the default. Install only if you regularly build irregular payloads or interstage fairings that the stock editor can't handle.],
+)
+
+// ═══ PLANET PACKS ═══
+
+#mod-entry(
+  name: [Outer Planets Mod],
+  ckan_id: "OuterPlanetsMod",
+  url: "https://github.com/Poodmund/Outer-Planets-Mod",
+  description: [Adds Saturn, Uranus, Neptune, and Pluto analogs to the stock Kerbol system — Sarnus, Urlum, Neidon, and Plock — each with their own moon systems. Seamlessly integrates beyond Jool's orbit with stock-quality terrain and science definitions.],
+  dependencies: ("ModuleManager", "Kopernicus"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds 4 new planets and 15+ moons to the outer Kerbol system. Each body has unique biomes, science, and terrain. Requires Kopernicus (the planet-pack framework). Delta-v requirements roughly triple for outer planet missions compared to Jool.],
+  conflicts: [Kcalbeloh and OPM occupy the same region — installing both adds both systems but may make the outer solar system crowded. They are technically compatible but consider whether you want two competing outer systems.],
+  version_pin: [Compatible with KSP 1.12.x. Requires Kopernicus Stable Branch. Parallax support via Parallax-OuterPlanetsMod on CKAN.],
+)
+
+#mod-entry(
+  name: [Kcalbeloh System],
+  ckan_id: "KcalbelohSystem",
+  url: "https://forum.kerbalspaceprogram.com/topic/203753-112x-kcalbeloh-system/",
+  description: [Adds an interstellar system centered on a black hole (Kcalbeloh). Multiple planets orbit the singularity, including habitable worlds, gas giants, and exotic bodies. Accessible via wormhole or interstellar travel.],
+  dependencies: ("ModuleManager", "Kopernicus"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds an entire secondary star system reachable via a wormhole near Jool (or via very-long-distance interstellar transfer). Dramatically extends the endgame — reaching and exploring Kcalbeloh is a campaign-scale endeavor. Parallax terrain patch available from the mod's forum thread (manual install — not on CKAN).],
+  conflicts: [Kcalbeloh and OPM both add bodies beyond Jool. They are technically compatible (Kcalbeloh is a separate star system with its own wormhole entrance) but running both is a very large install.],
+  version_pin: [Compatible with KSP 1.12.x. Requires Kopernicus Stable Branch. Parallax config must be downloaded manually from the Kcalbeloh forum thread.],
+)
+
+#mod-entry(
+  name: [Minor Planets Expansion],
+  ckan_id: "MinorPlanetsExpansion",
+  url: "https://forum.kerbalspaceprogram.com/topic/192848-112x-planet-pack-minor-planets-expansion/",
+  description: [Adds dwarf planets, asteroids, and minor bodies to the Outer Planets Mod system. Populates the gaps between OPM's gas giants with realistically-scaled minor planets, trojan asteroids, and Kuiper belt objects. Requires OPM.],
+  dependencies: ("Kopernicus", "OuterPlanetsMod", "KSPCommunityFixes", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds minor bodies to the OPM system. Requires Outer Planets Mod. Each body has unique biomes and science definitions. Increases the number of destinations in the outer system without adding new star systems or altering existing planets.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Outer Planets Mod and Kopernicus. Adds bodies without replacing or modifying OPM planets.],
+)
+
+#mod-entry(
+  name: [QuackPack],
+  ckan_id: "QuackPack",
+  url: "https://forum.kerbalspaceprogram.com/topic/210155-112x-kopernicus-quackpack-v131-an-inner-system-expansion/",
+  description: [Inner system expansion by the Kopernicus team. Adds new planets and moons between Moho and Kerbin's orbit — fills the empty inner solar system with new destinations. Designed to complement OPM (outer system) for a fully expanded Kerbol system.],
+  dependencies: ("Kopernicus", "ModuleManager"),
+  impact_types: (Parts, Mechanics),
+  impact_description: [Adds new bodies to the inner Kerbol system. Requires Kopernicus. Complements OPM — OPM expands outward, QuackPack expands inward. Both can be installed together for a complete solar system expansion.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Requires Kopernicus. Works alongside OPM without conflicts.],
+)
+
+// ═══ MANUAL INSTALL ═══
+
+#section-heading([Manual Install Mods])
+
+These mods are not available through CKAN. Install them manually by downloading from their forum threads and placing the extracted folders in `GameData/`.
+
+#warning([
+  Manual-install mods do not appear in CKAN metapackages. You must download and update them yourself. Only install mods from mods you trust — always verify download links from the official forum threads.
+])
+
+#mod-entry(
+  name: [Grannus Expansion Pack (GEP)],
+  ckan_id: "GrannusExpansionPack",
+  url: "https://forum.kerbalspaceprogram.com/topic/169664-1125-grannus-expansion-pack-v128-10-may-2022/",
+  description: [Adds a binary star system centered on Grannus, a red dwarf companion to Kerbol. Multiple planets orbit the distant star, reachable via interstellar transfer. Expands the late-game with a second star system. GEP-Volumetrics (SpaceDock) adds cloud support.],
+  dependencies: ("Kopernicus", "ModuleManager"),
+  impact_types: (Parts, Mechanics, Gameplay),
+  impact_description: [Adds the Grannus binary star system. Not on CKAN — manual install from forum thread. Compatible with OPM and Minor Planets Expansion.],
+  conflicts: [Kcalbeloh also adds a secondary star system. Both can be installed together for two interstellar destinations, but this significantly increases memory usage. Consider whether you want one or both secondary systems.],
+  version_pin: [Compatible with KSP 1.12.x. Manual install only. Requires Kopernicus.],
+)
+
+
+#mod-entry(
+  name: [OPT Spaceplane Continued],
+  ckan_id: "OPTSpaceplaneContinued",
+  url: "https://forum.kerbalspaceprogram.com/topic/196187-191-opt-spaceplane-continued-3496-beta-may-4-2026/",
+  description: [Futuristic spaceplane parts with unique sci-fi profiles, advanced hybrid engines, and large-diameter cargo bays. The continued fork of the original OPT (Orbit Portal Technology) mod, maintained for KSP 1.12.x. For players who want spaceplanes beyond the stock/procedural aesthetic.],
+  dependencies: ("B9PartSwitch", "ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds futuristic spaceplane parts with advanced engine types. Not on CKAN — manual install from forum thread. OPT Reconfig (on CKAN) is a companion config mod that adjusts OPT balance and adds CTT support.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install only. OPT Reconfig (CKAN) required for Community Tech Tree integration and balance adjustments.],
+)
+
+
+
+#mod-entry(
+  name: [Completely Non-Aggressive Rocketry (CNAR)],
+  ckan_id: "CNAR",
+  url: "https://forum.kerbalspaceprogram.com/topic/188554-19-completely-non-aggressive-rocketry-v2-rocket-add-on/",
+  description: [Expanded rocket parts pack with unique engine configurations, fuel tank geometries, and structural components. A parts-heavy rocket-building mod for players who want more variety in their launcher designs beyond stock, procedural, and historical mods. Includes LFO, monoprop, and solid rocket components.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Parts),
+  impact_description: [Adds a broad collection of rocket parts. Not on CKAN — manual install from forum thread or SpaceDock (id:2271). A heavier alternative to Sounding Rockets for expanding the early-to-mid game rocket catalog.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install only. Sounding Rockets (CKAN) is the recommended early-game rocket mod for this modlist. CNAR adds more variety but requires manual installation.],
+)
+
+#mod-entry(
+  name: [KerbalFX],
+  ckan_id: "KerbalFX",
+  url: "https://spacedock.info/mod/4190/KerbalFX",
+  description: [Additional aerodynamic effects: improved contrails, wingtip vortices, condensation effects, and enhanced vapor cones. Very light on performance — adds visual polish to atmospheric flight without the GPU cost of heavy shader mods. Complements Firefly and VaporCones with more subtle atmospheric particle effects.],
+  dependencies: ("ModuleManager"),
+  impact_types: (Graphics),
+  impact_description: [Adds aerodynamic particle effects during atmospheric flight. Lightweight — designed to run well even on modest GPUs. No gameplay impact.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Works alongside Firefly and VaporCones for a complete aero-effects suite.],
+)
+
+#mod-entry(
+  name: [Kerbin Side Remastered],
+  ckan_id: "KerbinSideRemastered",
+  url: "https://forum.kerbalspaceprogram.com/topic/174336-kerbin-side-remastered-101-173/",
+  description: [Adds dozens of detailed bases, airfields, and points of interest across Kerbin. Landing strips, helipads, radar installations, and even an underground hangar — makes Kerbin feel alive and worth exploring. Each location has unique features and serves as a destination for atmospheric flight missions.],
+  dependencies: ("KerbalKonstructs"),
+  impact_types: (Parts),
+  impact_description: [Adds static structures and launch sites via KerbalKonstructs. No flight mechanics changes — purely adds locations to visit. Expands the scope of atmospheric flight from "go up and come down" to actual cross-Kerbin navigation between points of interest.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Requires KerbalKonstructs (included in Wave 0.5).],
+)
+
+#mod-entry(
+  name: [Tundra's Space Center],
+  ckan_id: "TundraSpaceCenter",
+  url: "https://forum.kerbalspaceprogram.com/topic/174368-18-112-tundras-space-center-v20-december-18th-stockalike-ksc-launchpads/",
+  description: [Adds stockalike additional launch pads, runways, helipads, and support structures to the Kerbal Space Center. Expands the KSC with alternative launch sites at the space center itself — VTOL pads, auxiliary runways, and satellite launch complexes integrated into the existing KSC layout.],
+  dependencies: ("KerbalKonstructs"),
+  impact_types: (Parts, Graphics),
+  impact_description: [Adds static structures and alternate launch sites at KSC via KerbalKonstructs. No flight mechanics changes — the structures are visual and functional launch locations. Complements Kerbin Side Remastered (which adds sites across Kerbin) by improving the KSC itself.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from forum thread — not on CKAN. Requires KerbalKonstructs (included in Wave 0.5). Complements Kerbin Side Remastered.],
+)
+
+#mod-entry(
+  name: [Throttle Controlled Avionics],
+  ckan_id: "ThrottleControlledAvionics",
+  url: "https://forum.kerbalspaceprogram.com/topic/97154-19-110-throttle-controlled-avionics/",
+  description: [VTOL flight computer. Automatically balances thrust across multiple engines to maintain stable hover and controlled translation — essential for VTOL craft, tilt-engine designs, and precision landers. Transforms VTOL from a white-knuckle balancing act to a flyable, practical vehicle class.],
+  dependencies: ("ModuleManager"),
+  impact_types: (UI, Mechanics),
+  impact_description: [Adds thrust-balancing and VTOL control algorithms. Manages differential throttle across engine groups to maintain attitude during hover and translation. No new parts — works with any engine configuration. Complements AtmosphereAutopilot and MechJeb with VTOL-specific control.],
+  conflicts: none,
+  version_pin: [Compatible with KSP 1.12.x. Manual install from SpaceDock — not on CKAN. Essential for practical VTOL operations. Configure engine groups in the VAB for TCA to manage.],
+)
+
+// ═══════════════════════════════════════════════════════════════════
+// HOW TO USE THESE MODS
+// ═══════════════════════════════════════════════════════════════════
+
+#pagebreak()
+#chapter-heading([Wave 1 Mods — How to Use Them])
+
+#section-heading([MechJeb])
+
+MechJeb is an autopilot with a learning curve. Every feature is accessed through the MechJeb menu (toolbar button or the part you attach to your craft). The window has tabs: Ascent Guidance, Landing Guidance, Rendezvous Autopilot, Maneuver Planner, and more.
+
+*How to learn from MechJeb:*
+1. Manually execute a maneuver first — say, a Mun transfer burn
+2. Watch MechJeb do the same burn next time
+3. Note the burn timing, throttle profile, and attitude corrections
+4. Eventually, you'll internalize the technique and can do it without the autopilot
+
+*Ascent Guidance:* Set your target orbit (altitude, inclination) and click "Engage Autopilot." MechJeb handles the gravity turn, staging, and circularization. Useful for routine satellite launches when you've done the same ascent a hundred times.
+
+*Maneuver Planner:* Create complex multi-step maneuvers (transfer to planet, match planes, circularize) as a sequence. MechJeb executes them in order. This is powerful for Duna and Jool missions.
+
+*Landing Guidance:* Pick a target on the surface. MechJeb deorbits and lands within a few hundred meters. Great for precision base-building in Wave 2.
+
+#tip([
+  MechJeb's data readouts are similar to KER's. If you prefer MechJeb's autopilot but KER's cleaner HUD, you can use both — open MechJeb for automation, KER for the flight HUD.
+])
+
+#section-heading([AtmosphereAutopilot])
+
+AtmosphereAutopilot (AA) is a fly-by-wire system for atmospheric flight. It's more sophisticated than SAS for aircraft.
+
+- *Auto-trim:* Automatically adjusts control surfaces so your plane flies straight hands-off. Toggle on before long cruise flights.
+- *Altitude hold:* Maintains current altitude using pitch control. Good for survey contracts at constant altitude.
+- *Heading hold:* Maintains current heading. Combines with altitude hold for hands-off cruise.
+- *Auto-throttle:* Holds a target speed. Use for efficient subsonic cruise or supersonic dashes.
+- *Fly-by-wire modes:* The "Moderation" mode smooths your inputs, preventing over-correction. "Director" mode flies toward your cursor position. Toggle between them in AA's settings.
+
+#tip([
+  AA handles atmosphere — MechJeb handles space. Use both. AA's altitude/heading hold for the atmospheric climb, then hand off to MJ's ascent autopilot at ~30 km. They don't conflict.
+])
+
+#section-heading([Kerbal Atomics + System Heat])
+
+Nuclear engines and reactors produce heat. System Heat is the thermal management framework — every reactor and NERV variant in Kerbal Atomics uses it.
+
+#section-heading([Reactor Basics])
+
+1. *Startup:* Right-click the reactor, click "Activate." It takes time to reach operating temperature — nuclear engines produce zero thrust while warming up (30–120 seconds depending on reactor size).
+2. *Shutdown:* Right-click, "Deactivate." The reactor cools passively but stays hot for hours. You cannot time-warp through cooldown.
+3. *Waste heat:* Heat is stored in the reactor and radiators. If the "Waste Heat" bar fills completely, the reactor emergency-scrambles and you lose all power/thrust.
+
+#section-heading([Radiator Rules])
+
+- Radiators must be deployed (extendable panels) OR active (fixed panels that glow when cooling)
+- One medium radiator per small reactor; 4–8 large radiators per fusion reactor
+- Radiators cool everything on the same vessel — you don't need to pair them
+- Place radiators symmetrically and away from other hot parts
+
+#tip([
+  The System Heat toolbar button shows a live thermal overlay. Green = nominal, yellow = warming, red = approaching shutdown. If everything is red, deploy more radiators or reduce power.
+])
+
+#section-heading([Using the Graphics Mods])
+
+Wave 1 adds a full visual overhaul stack. Here's how to configure each layer:
+
+- *Scatterer:* Atmospheric scattering, ocean shaders, sunflare. Toggle in flight via the Scatterer toolbar menu. Adjust ocean quality if you see FPS drops during launch.
+- *EVE + AVP:* Cloud layers and skybox. Installed automatically. No manual config needed unless you want to tweak cloud density.
+- *Deferred:* Changes the entire render pipeline. Toggle via config file in GameData/Deferred/. If you see visual glitches, disable it — the game falls back to stock rendering. Deferred handles planet reflections, so no separate planet-lighting mod is needed.
+- *TUFX + Shabby/Shaddy:* Post-processing (bloom, ambient occlusion, color grading). Switch profiles from the TUFX toolbar menu in flight. Shabby and Shaddy add extra profile presets beyond the built-in defaults. Try Shabby first for a cinematic look.
+- *Parallax:* Terrain tessellation. In Parallax settings (toolbar button), reduce scatter density if you see terrain pop-in or FPS drops near the surface. High-quality setting requires a DX11-capable GPU.
+- *Waterfall + Restock Waterfall Expansion:* Engine plumes. Automatic — no config needed. The plumes respond to atmospheric pressure (expand in vacuum, contract in atmosphere). Purely visual.
+- *Rocket Sound Enhancement:* Audio overhaul. Sonic boom effects, distance-based attenuation. Configurable in settings — disable sonic booms if they startle you during timewarp transitions.
+- *Distant Object Enhancement:* Renders distant planets and vessels as points of light. The toolbar menu lets you toggle vessel flares and adjust sky-dimming intensity.
+- *Textures Unlimited + TURD + Simple Repaint:* PBR shading framework and part recoloring. TURD adds a repaint GUI in the VAB/SPH — right-click any supported part to change its color. Simple Repaint covers parts without TURD configs. Both are visual only.
+
+#section-heading([New Parts Overview])
+
+Wave 1 adds a lot of parts. Here's how they're organized:
+
+- *Restock + Restock+:* Revamped stock parts (visual) + new stock-alike parts (functional). Your rockets look better and you get missing part sizes like 0.625m RCS tanks and 2.5m reaction wheels.
+- *Near Future suite (7 packs):* The core parts expansion. Solar panels (blanket arrays for outer system), electrical (reactors + capacitors), propulsion (advanced engines), construction (trusses + structural), spacecraft (command pods), launch vehicles (5m–7.5m lifters), and aeronautics (spaceplane parts). NF Launch Vehicles covers the heavy-lift niche; NF Electrical's reactors power the entire tech tree.
+- *Historical:* Bluedog Design Bureau (US rockets from Mercury to Apollo) and Tantares (Soviet spacecraft + launchers). Both are comprehensive — each adds 100+ parts. Pick one or install both for the full Cold War experience.
+- *Modern:* Artemis Construction Kit (SLS + Orion), Eisenhower Astronautics (modern launchers), Tundra Exploration (SpaceX-inspired). Each covers a different modern program.
+- *Station parts:* Stockalike Station Parts Expansion Redux, HabTech2, Planetside Exploration Technologies. Everything you need for orbital construction — inflatable habitats, centrifuges, trusses, docking adapters.
+- *Planes:* Airplane Plus, Mk2/Mk3/MkIV expansion packs, Mk-33, OPT Spaceplane. If it flies in atmosphere, it has expanded parts here.
+- *Planet packs:* Outer Planets Mod (Saturn–Pluto analogs), Minor Planets Expansion (dwarf planets between them), QuackPack (inner system), Kcalbeloh (black hole system), Grannus (binary red dwarf). Each adds new destinations with full biome and science support. You can install all five if your system handles it.
+
+#section-heading([The Fuel System])
+
+Wave 1 introduces custom fuel types beyond stock LiquidFuel/Oxidizer. Three mods power this ecosystem.
+
+#section-heading([Community Resource Pack (CRP)])
+
+CRP defines the resources: Hydrogen, Methane, Kerosene, Hydrazine, and dozens more. You never interact with CRP directly — it's a library that other mods reference. But without it, custom fuels don't exist.
+
+#section-heading([B9 Part Switch])
+
+B9PartSwitch is the part you actually use. In the VAB, right-click any compatible fuel tank. A dropdown lets you switch what it holds: LFO (stock), LH2/Oxidizer (cryogenic), Methane/Ox, or Monopropellant. The tank model doesn't change — only its contents.
+
+#tip([
+  LH2 is the most efficient fuel (highest Isp) but the least dense. A tank full of LH2 weighs less than the same tank full of LFO — but it takes up more volume. LH2 stages are physically larger for the same delta-v.
+])
+
+#section-heading([Cryogenic Tanks — Boil-Off Management])
+
+LH2 and Methane are cryogenic — they slowly evaporate in storage. This is "boil-off."
+
+- *Standard tanks:* Fuel evaporates over time. Acceptable for short missions (Mun, Minmus). Unacceptable for interplanetary.
+- *Insulated tanks:* CryoTanks adds insulated variants that reduce boil-off by ~90%. Use these for Duna and beyond.
+- *Active cooling:* Some parts (cryo-coolers) consume ElectricCharge to eliminate boil-off entirely. Necessary for Jool missions lasting years.
+
+#info([
+  Boil-off only matters on long time-scales. A Mun mission takes days — you'll never notice. A Grannus transit takes decades — uninsulated LH2 will be gone before you leave Kerbin's SOI.
+])
+
+#section-heading([Planet Packs: OPM and Kcalbeloh])
+
+*Outer Planets Mod (OPM):* Adds 4 planets (Sarnus, Urlum, Neidon, Plock) beyond Jool's orbit, each with a full moon system. Delta-v costs roughly triple for outer planets compared to Jool, and travel times are measured in *years*. OPM integrates seamlessly — stock contracts will generate for these bodies, and science experiments have unique biome definitions.
+
+*Kcalbeloh System:* An entirely separate star system accessible via a wormhole near Jool. The wormhole behaves like a special SOI — fly into it and you emerge in the Kcalbeloh system. The delta-v to reach the wormhole is roughly equivalent to a Jool transfer (~2,000 m/s from LKO). Once inside Kcalbeloh, the system's planets range from habitable worlds to exotic bodies orbiting a black hole.
+
+#warning([
+  Installing both OPM and Kcalbeloh makes for a very large (and somewhat crowded) outer system. OPM fills the gap between Jool and interstellar space; Kcalbeloh adds a separate star system. They are technically compatible, but you may prefer to choose one per save.
+])
+
+*Parallax terrain patches:*
+- OPM: Install `Parallax-OuterPlanetsMod` from CKAN. This automatically applies Parallax terrain to OPM bodies.
+- Kcalbeloh: The Parallax patch is NOT on CKAN. Download it from the Kcalbeloh forum thread and place it in GameData manually.
+
+#section-heading([Performance Tuning])
+
+Wave 1 adds significant performance load, especially from graphics mods. If your game runs poorly:
+
+1. *Disable TUFX ambient occlusion* — this alone can recover 10–20 FPS
+2. *Reduce Parallax scatter density* to 50%
+3. *Lower AVP texture resolution* or remove it entirely
+4. *Cap part counts* — keep ships under 200 parts, stations under 300
+
+#tip([
+  KSP is CPU-bound by physics, not GPU-bound by graphics. If you have FPS issues during launch (when physics is heavy) but not in orbit, the culprit is part count, not your graphics mods. Simplify the vessel, not the visuals.
+])
+
+// ═══════════════════════════════════════════════════════════════════
+// TUTORIAL: GOING FURTHER
+// ═══════════════════════════════════════════════════════════════════
+
+#pagebreak()
+#chapter-heading([Wave 1 Guide — Going Further])
+
+#section-heading([Build Strategies for Interplanetary Ships])
+
+Interplanetary ships are different from launch vehicles. You build them in orbit and they never touch atmosphere. Design accordingly.
+
+#section-heading([Staging in Vacuum])
+
+In space, there's no drag and no gravity losses. You don't need high TWR. What matters is *delta-v per ton of dry mass*.
+
+- *Serial staging:* Drop empty tanks as you go. Simple, reliable, wastes docking ports.
+- *Asparagus staging:* Feed fuel inward from outer tanks. All engines fire at once. Best mass fraction, complex plumbing.
+- *Nuclear transfer stages:* A single NERV engine on a long Mk3 fuselage of liquid fuel only (no oxidizer). ~8,000 m/s in a single stage. The interplanetary workhorse.
+- *Ion tugs:* Dawn engines on xenon. 20,000+ m/s, but burns take hours and thrust is measured in millinewtons. Good for small probes, terrible for crewed ships.
+
+#tip([
+  After ~3,000 m/s of delta-v in a single stage, adding more fuel tanks gives diminishing returns. The tank's own dry mass eats your gains. At that point, add another stage — or switch to a higher-Isp engine.
+])
+
+#section-heading([TWR vs Isp — What Matters in Space])
+
+- *Launch:* TWR > 1.3. Isp is secondary. You're fighting gravity.
+- *Transfer burn:* TWR > 0.3. Lower means the burn takes multiple orbits (periapsis kicking). Annoying but doable.
+- *Deep space cruise:* TWR 0.05 is fine. You have months. Isp is everything.
+- *Landing:* TWR > 1.0 relative to the body you're landing on (Mun: ~1.6 m/s², so ~0.2 TWR relative to Kerbin). Lightweight vacuum engines like the Terrier or Poodle excel here.
+
+#section-heading([Modular Ship Design])
+
+Build interplanetary ships as dockable modules:
+
+1. *Propulsion section* — engine cluster + fuel tanks. Detachable and reusable.
+2. *Payload* — lander, rover, station module. Dock to the tug for transit, undock at destination.
+3. *Crew module* — hitchhiker container or Mk2 crew cabin with docking port.
+4. *Power + comms* — solar panels or RTG, relay antenna, probe core (always).
+
+#info([
+  The modular approach means your deep-space tug does multiple missions. After delivering a Duna lander, the tug returns to Kerbin orbit, refuels at a depot, picks up a Jool payload, and goes again. Reusable infrastructure saves launches — and funds in Career mode.
+])
+
+#section-heading([The Delta-V Budget])
+
+Before launching a mission, add up the cost of every maneuver:
+- LKO to Duna transfer: ~1,100 m/s
+- Duna capture (aerobrake): ~0 m/s
+- Land on Duna (parachutes): ~50 m/s
+- Duna ascent to orbit: ~1,400 m/s
+- Duna to Kerbin transfer: ~700 m/s
+Total one-way: ~3,250 m/s. Round-trip (no refuel): ~6,500 m/s.
+
+Design your ship to the round-trip number first, then add 20% margin for mistakes. If the resulting ship is absurdly large, consider ISRU refueling at the destination.
+
+#section-heading([Campaign Play — Career Mode Strategy])
+
+Wave 1 mods transform Career mode. The Community Tech Tree deepens progression from ~15 nodes to ~50. Near Future parts fill those nodes with meaningful upgrades. Here's how to play it.
+
+#section-heading([Contract Selection])
+
+Not all contracts are worth your time.
+
+- *Accept:* "Explore [body]" (big payout, drives progression), "Science from [body]" (pairs with exploration), satellite contracts (easy money with a relay bus).
+- *Skip:* Part-testing contracts (tedious, low pay), rescue contracts (fun but scale poorly), tourist contracts (acceptable early, tedious late).
+- *Must-take:* World First milestones. These are the game's progression backbone and pay enormously.
+
+#tip([
+  Build a "contract bus" — a small probe with every science instrument, a relay antenna, and ~3,000 m/s of delta-v. Launch one to each new body you visit. It completes 3–4 contracts at once.
+])
+
+#section-heading([Science Farming])
+
+With CTT installed, you need roughly 3× the science to complete the tree. Priority order:
+1. *Mun + Minmus biome hopping* — a single lander with all experiments can visit 5+ biomes per trip. Bring a scientist to reset the Science Jr. and Goo.
+2. *Mobile Processing Lab* — put one in Minmus orbit, feed it data from the surface, collect 500 science per transmission.
+3. *SCANsat* — scanning planets generates science passively. Launch scanner satellites to every body in the system.
+4. *Kcalbeloh/Grannus* — each interstellar body is a fresh science goldmine.
+
+#section-heading([Funds Management])
+
+- Upgrade Mission Control first (more contracts), then Tracking Station (patched conics for interplanetary), then R&D (unlock higher tech nodes).
+- The VAB and Launchpad upgrades are expensive — wait until you have 1M+ funds.
+- Tourism contracts to the Mun and Minmus are the best funds/hour in the mid-game. A 16-seat tourist bus to Minmus pays ~500,000 funds.
+
+#section-heading([CTT Node Priority])
+
+With Community Tech Tree, the stock "one node unlocks everything" problem is fixed. Each mod's parts sit in dedicated nodes. Priority path for Wave 1:
+
+1. *Basic Science → Space Exploration:* Unlock SCANsat parts and basic probes
+2. *Nuclear Propulsion:* NERV and Kerbal Atomics engines — your interplanetary workhorses
+3. *Large Probes → Advanced Electrics:* Near Future Solar panels. The blanket arrays are game-changers for outer-system missions.
+4. *Advanced Fuel Systems → Cryogenic Engines:* CryoTanks and LH2 engines for high-Isp upper stages
+5. *Orbital Assembly → Large Station Parts:* StationPartsExpansionRedux — build your orbital fuel depot
+
+After this, specialize: colonization (Planetside, MKS), interstellar (FFT, Blueshift), or expand (more planet packs).
+
+#section-heading([Interplanetary Transfer Windows])
+
+#section-heading([Phase Angles])
+
+Every planet has a specific launch window when the transfer is most efficient. The *phase angle* is the angle between your origin planet, the Sun, and the destination planet. Key windows:
+
+- *Duna* (Mars analog): Phase angle ~44°, delta-v from LKO ~1,100 m/s
+- *Eve* (Venus analog): Phase angle ~54°, delta-v from LKO ~1,100 m/s
+- *Jool* (Jupiter analog): Phase angle ~96°, delta-v from LKO ~2,000 m/s
+- *Moho* (Mercury analog): Phase angle ~-252°, delta-v from LKO ~2,200 m/s
+
+#info([
+  Duna is the best first interplanetary target. It has an atmosphere (thin, but enough to aerobrake and use parachutes), low gravity, and a moderate transfer cost. Eve is easier to reach but brutally hard to leave — its thick atmosphere and high gravity make ascent nearly as expensive as Kerbin.
+])
+
+#section-heading([Executing a Duna Transfer])
+
+1. Wait for the Duna transfer window (phase angle ~44°). You can eyeball it: Duna should be about 1/8 of an orbit ahead of Kerbin.
+2. From LKO, set Duna as your target.
+3. Create a maneuver node. Pull prograde until the projected orbit touches Duna's. Adjust the node position until you get an encounter.
+4. Burn. Mid-course correction: about halfway there, create another tiny node to fine-tune your Duna periapsis.
+5. At Duna, aerobrake — set periapsis to ~15–20 km to use the atmosphere for capture. Bring heat shields.
+
+#tip([
+  Ike (Duna's moon) is tidally locked and small — an even easier landing target than the Mun. If Duna itself intimidates you, go to Ike first.
+])
+
+#awe([
+  *You're not in Kerbin's orbit anymore.*
+
+  Cross the sphere-of-influence boundary and something changes. The navball still works. The engines still fire. But the blue planet that has been your home for every mission until now just became a dot. Duna is ahead — red, alien, waiting. Between you and it: millions of kilometers of nothing.
+
+  Every interplanetary mission begins with this moment. The point where Kerbin stops being your world and becomes a reference point. You're not going home for a while. You're going somewhere new.
+])
+
+#section-heading([Eve — The Purple Hell])
+
+Eve is the easiest planet to reach and the hardest planet to leave. This is the game's ultimate engineering challenge.
+
+#section-heading([Transfer and Entry])
+
+- Transfer: Phase angle ~54°, delta-v from LKO ~1,100 m/s (same as Duna — deceptively cheap)
+- Atmospheric entry: Eve's atmosphere is 5× denser than Kerbin's. You will need heat shields — and you won't need engines until you leave.
+- Landing: Parachutes work extremely well. A single Mk16-XL can land 20+ tons. No engines needed for touchdown.
+
+#section-heading([Surface Operations])
+
+Eve's surface is hot, purple, and high-pressure. Solar panels work fine (no atmosphere attenuation issues), but your kerbals are stuck unless you brought a serious ascent vehicle.
+
+- *Science:* Eve has biomes (peaks, lowlands, shallows, etc.) but they're hard to reach without an aircraft.
+- *Explodium Sea:* Liquid on Eve's surface. Ships float (barely). Not recommended for first visits.
+
+#danger([
+  Do not send a crewed mission to Eve unless you have a tested, working ascent vehicle. Eve ascent from sea level costs ~8,000 m/s of delta-v — nearly three times Kerbin. The atmospheric pressure kills engine Isp until ~30 km altitude. This is the single hardest maneuver in stock KSP.
+])
+
+#section-heading([Eve Ascent Strategy])
+
+1. *Do not land at sea level.* Target a mountain peak (5+ km altitude). Every kilometer of elevation saves ~500 m/s.
+2. *Aerospike engines* (Dart) maintain decent Isp in thick atmosphere. Vector engines work for the upper stage.
+3. *Shed everything.* Jettison parachutes, landing legs, ladders — all dead weight — before lighting engines.
+4. *Stage aggressively.* Your first stage gets you through the soup (0–20 km). Second stage takes over when Isp recovers.
+5. *Fairing or nose cone* on top. Drag is brutal in Eve's lower atmosphere.
+
+#section-heading([Gilly — Eve's Lifeboat])
+
+Gilly is Eve's tiny captured asteroid-moon. Gravity: 0.005 g. You can reach orbit with RCS alone.
+
+- *Why visit:* Gilly has high ore concentration and trivial escape costs. It's the best ISRU base in the inner solar system.
+- *How to land:* You don't "land" on Gilly — you rendezvous with it. Approach at < 5 m/s. Time warp kills relative velocity.
+- *Strategy:* Build a Gilly mining outpost. Refuel Eve ascent vehicles in Gilly orbit before descending. This solves the "how do I get back from Eve" problem without needing a single-stage-to-orbit-from-sea-level monster.
+
+
+#section-heading([Moho — The Sun-Diver])
+
+Moho is Kerbin's closest planet to the sun — and one of the hardest to reach despite being "right there."
+
+#section-heading([Why Moho is Hard])
+
+- *Inclined orbit:* Moho's orbit is tilted 7° relative to Kerbin's. You must match inclination mid-transfer or at arrival — expensive either way.
+- *Deep gravity well:* Transfer from LKO costs ~2,200 m/s. Capture at Moho costs another ~2,000 m/s. Total one-way: ~4,200 m/s — more than Jool.
+- *No atmosphere:* Cannot aerobrake. Every meter per second must come from your engines.
+- *No moons:* No ISRU helper body. You must bring all return fuel or mine on Moho's surface.
+
+#section-heading([Transfer Window])
+
+Phase angle ~-252° (Moho is ahead of Kerbin in its orbit). This window is short — a few days at best. Use Transfer Window Planner to nail it. The ejection burn from Kerbin should also include a normal component to match Moho's inclination. TWP gives you the exact numbers.
+
+#section-heading([Capture and Landing])
+
+Moho has no atmosphere and moderate gravity (~0.27 g). Landing costs ~1,200 m/s. Use a high-Isp vacuum engine (Terrier, Poodle, or a nuclear stage). The surface is hot but solar panels produce enormous power this close to the sun — small panels are enough.
+
+#tip([
+  Moho has a large molten core and a thin crust. The "Mohole" at its north pole is a bottomless pit. Do not drive rovers near it. Kerbals have fallen in. They do not come out.
+])
+
+#section-heading([ISRU — Mining and Refueling])
+
+#section-heading([The ISRU Chain])
+
+In-Situ Resource Utilization converts raw ore into usable fuel. The components:
+
+1. *Surface Scanner* — maps ore concentration from polar orbit
+2. *Drill (e.g. Drill-O-Matic)* — extracts ore from the surface
+3. *Ore Tank* — stores raw ore
+4. *ISRU Converter (e.g. Convert-O-Tron)* — converts ore + electricity into liquid fuel, oxidizer, or monopropellant
+5. *Radiators* — the converter generates immense heat and will shut down without sufficient cooling
+
+#danger([
+  ISRU equipment is godlessly heavy. A full mining rig can weigh 20+ tons. Test the full chain on Minmus first — its low gravity makes landing and returning with heavy payloads far easier than the Mun. Minmus also has high ore concentrations in its flats.
+])
+
+#section-heading([Minmus Mining Base — A Walkthrough])
+
+Minmus is the ideal ISRU starting point. Low gravity (0.05 g), flat landing zones, and high ore concentration in the Flats biome. Here's how to set up a fuel production chain.
+
+#section-heading([Site Selection])
+
+- *Greater Flats:* Huge, perfectly level area near the equator. Easiest landing zone in the game. Ore concentration 8–12% (excellent).
+- *Lesser Flats:* Smaller, slightly inclined. Backup option.
+- *Poles:* Some ore, but inclined — harder to land and ascend efficiently.
+
+Land your scanner satellite in polar Minmus orbit first (SCANsat or stock M700). The SCANsat map will show you exact ore hotspots.
+
+#section-heading([Miner Design])
+
+A Minmus miner needs:
+
+1. *Drill-O-Matic Junior* (or Senior for speed) — deployed with the "Deploy Drill" action
+2. *ISRU Convert-O-Tron 125* (the small one is enough for Minmus)
+3. *Ore tank* — at least the 300-unit radial tank
+4. *Fuel tanks* — the miner is its own first customer. Fill them up on the surface.
+5. *Power:* 4× Gigantor solar arrays + 2× Z-4K batteries. Minmus has good sunlight.
+6. *Radiators:* 2× medium TCS panels. The converter melts without them.
+7. *Engine:* A single Terrier or Spark. TWR > 0.3 on Minmus is trivial.
+
+#warning([
+  The mining drill must touch the ground. Mount it low on the lander or use pistons (Breaking Ground DLC). If the drill hovers above the surface, it won't work — and the game won't tell you why.
+])
+
+#section-heading([The Fuel Tanker])
+
+Build a separate craft for ferrying fuel to orbit:
+
+1. Large fuel tanks (at least a Rockomax X200-32)
+2. A docking port (Jr. or standard) on top
+3. RCS thrusters for docking at the orbital depot
+4. Enough TWR to lift a full fuel load from Minmus surface (~0.1 Kerbin TWR is plenty)
+
+The tanker lands at the mining base, docks (or uses KAS/KIS fuel hoses), fills up, and returns to orbit. Each round trip costs ~400 m/s. A full X200-32 tank of LFO is a substantial amount of fuel for interplanetary operations.
+
+#section-heading([Orbital Fuel Depot])
+
+In low Minmus orbit (~20 km), park a fuel depot:
+
+1. Rockomax Jumbo-64 tank (the orange one) with docking ports on both ends
+2. Large reaction wheels (full tanks are heavy and sluggish)
+3. Relay antenna — the depot doubles as a comms relay for far-side landers
+4. Probe core — no crew needed for a gas station
+
+The workflow: Miner fills itself → tanker lands, docks, transfers fuel → tanker ascends, docks with depot → depot refuels interplanetary ships. This chain turns Minmus into infinite free fuel in Kerbin's backyard.
+
+#tip([
+  Automate with Kerbal Alarm Clock: set an alarm for when the miner's ore tanks are full (~6 days for a Junior drill with 8% ore). When the alarm fires, switch to the miner, launch the tanker, make the fuel run. One fuel run per week keeps your interplanetary fleet running indefinitely.
+])
+
+#section-heading([Duna Surface Operations])
+
+You've reached Duna. Now what? Surface ops turn a flag-planting mission into a sustained presence.
+
+#section-heading([Landing Zones])
+
+- *Lowlands:* Flat, low elevation, rich in science. Safe landing zone for first missions.
+- *Midlands:* Rolling terrain. More biomes nearby for rover exploration.
+- *Highlands/Peaks:* Hard to land on, high science value. Good for experienced missions.
+- *Poles:* Ice caps. Cold, inclined, but unique science.
+
+#section-heading([Rover Deployment])
+
+Duna's gravity (0.3 g) and thin atmosphere make rovers viable but tricky:
+- Wide wheelbase prevents flipping on slopes
+- Low center of mass, reaction wheels set to "SAS only"
+- Drive at < 15 m/s — Duna's surface looks smooth from orbit but is littered with rocks
+- Solar panels work at ~40% efficiency compared to Kerbin. Bring RTGs for long-duration rovers
+
+#section-heading([Surface Base Design])
+
+A Duna base needs:
+1. *Power:* Solar arrays + fuel cells for dust storms (yes, dust storms exist with visual mods; no, they don't block solar panels — but they look cool)
+2. *ISRU:* Duna has ore. Mine it. The low gravity makes tanker ascents cheap.
+3. *Habitation:* Hitchhiker containers or Planetside inflatables
+4. *Docking:* Surface docking is hard — ports rarely align on uneven ground. Use KAS/KIS to connect modules with flexible pipes, or land modules on wheels and dock them on a flat area.
+
+#section-heading([Ike — Duna's Relay Hub])
+
+Ike is tidally locked to Duna. A satellite in Ike-stationary orbit above Duna's far side has permanent line-of-sight to Ike AND Kerbin. Put a powerful relay there (RA-100) and every probe on Duna's surface has comms coverage through Ike.
+
+#tip([
+  Ike has no atmosphere and low gravity (~0.1 g). It's an even easier mining target than Minmus. Build your Duna-system fuel depot on Ike, not Duna. The savings in tanker ascent delta-v pays for the transfer from Ike orbit to Duna orbit many times over.
+])
+
+
+#section-heading([The Jool System])
+
+Jool is the Kerbol system's gas giant — 5 moons, each a unique challenge. With OPM installed, Jool is the gateway to the outer planets.
+
+#section-heading([Transfer])
+
+Phase angle ~96°, delta-v from LKO ~2,000 m/s. Jool's massive gravity well makes capture easy — a small retro-burn at periapsis (~200 m/s) captures you. The real cost is maneuvering between moons.
+
+#section-heading([Moon Hopping Strategy])
+
+Visit in this order to minimize delta-v:
+
+1. *Laythe (outermost):* Oxygen atmosphere. Jet engines work here. Land a spaceplane on the islands, explore the oceans. Joolrise is gorgeous.
+2. *Vall (inner):* Europa analog. Ice moon, moderate gravity (~0.23 g). Blue-tinted terrain. Good ISRU candidate — abundant ore.
+3. *Tylo (deep gravity well):* The monster. Tylo has Kerbin-like gravity (~0.8 g) and no atmosphere. Landing costs ~2,500 m/s — more than reaching orbit from Kerbin. This is the ultimate vacuum landing challenge. Use high-TWR engines, bring extra fuel, and save before descent.
+4. *Bop (outer, inclined):* Small captured asteroid. Low gravity, inclined orbit. Good mining base once you're in the Jool system.
+5. *Pol (outermost):* Tiny, lumpy, low gravity. Tricky to land on (the terrain is spiky), but the views of Jool are spectacular.
+
+#section-heading([Laythe Spaceplanes])
+
+Laythe is the only body beyond Kerbin with a breathable atmosphere. Jet engines (RAPIERs in air-breathing mode, or standalone Whiplash/Panther) work perfectly. A Laythe SSTO can fly indefinitely on atmospheric oxygen.
+
+- *Island hopping:* Laythe's land is scattered islands. A seaplane or amphibious lander is essential.
+- *Science:* Laythe has diverse biomes (shores, shallows, poles, islands). A single spaceplane can visit them all.
+- *ISRU:* Ore is available, but you're competing with Vall for mining efficiency. Vall is better for fuel, Laythe is better for crew.
+
+#awe([
+  *Jool is rising.*
+
+  You are standing on an island on Laythe. Liquid water laps at the shore. Oxygen fills the air — jet engines work here, impossibly. And on the horizon, Jool fills half the sky. Green bands of cloud swirl in slow motion. Three moons are visible as crescents. The light is green-tinted, alien, beautiful.
+
+  You flew here. Across the solar system. To an ocean moon. To watch a gas giant rise.
+
+  There are people on Earth who have never seen anything this beautiful. You are looking at it through the window of a spaceplane you designed.
+])
+
+#section-heading([Tylo — The Final Exam])
+
+Tylo is what separates good engineers from great ones. Requirements:
+- TWR > 1.0 on Tylo (~0.8 Kerbin TWR)
+- Delta-v from low Tylo orbit to surface and back: ~5,000 m/s
+- No atmosphere = no parachutes, no aerobraking. Pure engines.
+
+#tip([
+  The optimal Tylo lander uses asparagus-staged drop tanks. Start with 4–6 radial tanks feeding a central core. Drop pairs as they empty. The final core stage has enough TWR to land alone (now much lighter). This is one of the few places where asparagus staging is unquestionably correct.
+])
+
+#section-heading([Bop and Pol — Mining Outposts])
+
+After conquering Tylo, Bop and Pol are your reward. Both have:
+- Extremely low gravity (RCS landing viable)
+- High ore concentrations
+- Excellent ISRU base potential for outer-system missions (OPM planets beyond Jool)
+
+#info([
+  The Jool system is the last stop before the outer planets (OPM) and the first interstellar hop (Kcalbeloh wormhole, if installed). Build your Jool fuel depot well — it will service missions for the entire endgame.
+])
+
+#awe([
+  *The wormhole waits.*
+
+  Near Jool, there is a distortion in spacetime — a sphere of bent light that leads to another star system. You can see the stars on the other side, shifted blue and strange. A black hole lives there. Planets orbit it. The laws of physics stretch thin around its event horizon.
+
+  You don't have to go through. Nobody is making you. But you came all this way. And on the other side, there is something no kerbal has ever seen.
+
+  The wormhole doesn't care if you're ready. It just is.
+])
+
+#section-heading([SSTO Spaceplanes])
+
+#section-heading([Design Principles])
+
+Single Stage To Orbit spaceplanes use jet engines to climb through the atmosphere, then switch to closed-cycle rocket mode for the final push to orbit. Key design considerations:
+
+- *RAPIER engines* are the gold standard — they auto-switch between air-breathing and rocket mode
+- *Center of mass vs. center of lift* — CoL must be behind CoM at all fuel levels. Check with tanks both full and empty in the SPH.
+- *Wing area* — more is better. You need lift at high altitude where the air is thin.
+- *Intake spam is dead* — KSP 1.0+ aerodynamics fixed this. One shock cone intake per ~4 RAPIERs is plenty.
+
+#section-heading([Ascent Profile])
+
+1. Accelerate along the runway to ~140 m/s, pull up at 10–15 degrees
+2. Climb at 15–20 degrees until ~10,000 m
+3. Level off to 5–10 degrees. Accelerate to ~1,400 m/s at ~20,000 m. This is where RAPIERs produce peak thrust.
+4. When thrust drops (around 23–25 km), RAPIERs auto-switch to closed-cycle. Pitch up to 20–30 degrees.
+5. Burn to apoapsis > 70 km, circularize as normal.
+
+#section-heading([Relay Networks])
+
+#section-heading([The CommNet System])
+
+KSP's CommNet requires line-of-sight to Kerbin for probe control. Signal strength depends on antenna power, distance, and the tracking station level. A relay network places satellites between Kerbin and your destination to bounce the signal.
+
+#section-heading([Relay Satellite Design])
+
+- Every relay needs a relay-capable antenna (RA-2, RA-15, RA-100)
+- Pair with a direct antenna for the satellite's own connection back to Kerbin
+- Include solar panels, batteries, a probe core, and reaction wheels
+- Always add a small engine + fuel for final orbit adjustments
+
+#section-heading([Kerbin Relay Constellation])
+
+For continuous coverage around Kerbin, launch 3–4 relay satellites equally spaced in a high circular orbit (~2,800 km for 4-sat coverage). Launch them all on one rocket, detach at apoapsis, and circularize each individually.
+
+#section-heading([Asteroid Capture])
+
+#section-heading([Finding Asteroids])
+
+Asteroids spawn near Kerbin and are tracked in the Tracking Station. Unknown objects must be discovered first — upgrade the Tracking Station to level 3, then use the "Track Unknown Objects" button in the observatory.
+
+#section-heading([The Claw])
+
+The Advanced Grabbing Unit (the "Klaw") attaches to asteroids as if docking. Once grabbed, the asteroid becomes part of your craft and you can push/pull it. Tips:
+
+- Approach slowly (asteroids are massive — 10 m/s is a collision, not a dock)
+- Time warp with care — the Klaw can phase through the asteroid at high warp
+- Bring extra reaction wheels — an E-class asteroid can weigh thousands of tons
+- Target a Kerbin periapsis of ~35 km for aerocapture with a heat shield
+
+#awe([
+  *Between planets, there is silence.*
+
+  The engine has cut off. The trajectory is set. For the next hundred days, your ship will coast through the void — no burns, no alarms, no ground control. Just the hum of life support and the slow rotation of stars outside the window.
+
+  This is the part of spaceflight that movies skip. The waiting. The quiet. The knowledge that you are moving faster than any human ever has, and it still takes months to cross a solar system. Your kerbals are fine. They have snacks. They have each other. They have the stars.
+
+  Don't time-warp through this. Not every time. Sometimes, just sit with it. The silence is part of the journey.
+])
+
+#pagebreak()
+#chapter-heading([Player Challenges — Wave 1])
+
+Interplanetary missions that test your design and piloting skills.
+
+- *Duna Independent:* Duna round-trip with no ISRU. Bring all fuel from Kerbin. Design a ship with 6,500+ m/s from LKO.
+- *Duna Double:* Land on Duna AND Ike in the same mission. Requires lander capable of two separate descents or an SSTO lander.
+- *Eve Rocks:* Land on Eve, plant a flag, and return the kerbal safely to Kerbin. The hardest stock challenge. Gilly ISRU is fair game.
+- *Mohole Diver:* Land on Moho and return. Requires ~8,000+ m/s from LKO. Use a nuclear transfer stage.
+- *Jool-5:* Land on all 5 Jool moons (Laythe, Vall, Tylo, Bop, Pol) in one mission. Tylo is the barrier — design the mission around it.
+- *Minmus Fuel Empire:* Build a fully automated Minmus mining base with miner, tanker, and orbital depot. Bonus: refuel an interplanetary ship from the depot.
+- *Laythe SSTO:* Build an SSTO spaceplane that reaches Kerbin orbit, transfers to Laythe, lands, and returns — all without refueling or staging.
+- *System Relay:* Deploy CommNet relay satellites to every planet and moon in the Kerbol system. Bonus: full coverage with zero dead zones.

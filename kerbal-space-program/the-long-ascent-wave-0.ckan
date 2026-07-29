@@ -1,0 +1,30 @@
+{
+    "spec_version": "v1.34",
+    "kind": "metapackage",
+    "identifier": "TheLongAscentWave0",
+    "name": "The Long Ascent — Wave 0: First Steps",
+    "abstract": "Wave 0 of The Long Ascent: Core UI, HUD, and bugfix mods for KSP 1.12.5. No gameplay changes.",
+    "author": "Nimrod Perez",
+    "license": "CC-BY-4.0",
+    "version": "1.0.0",
+    "depends": [
+        { "name": "ModuleManager" },
+        { "name": "Harmony2" }
+    ],
+    "recommends": [
+        { "name": "KerbalEngineerRedux" },
+        { "name": "BetterTimeWarpCont" },
+        { "name": "KSPCommunityFixes" },
+        { "name": "StationKeeping" },
+        { "name": "BetterBurnTime" },
+        { "name": "PreciseManeuver" },
+        { "name": "ToolbarController" },
+        { "name": "ClickThroughBlocker" },
+        { "name": "SpaceTuxLibrary" },
+        { "name": "ZTheme" }
+    ],
+    "supports": [
+        { "name": "BreakingGround-DLC" },
+        { "name": "MakingHistory-DLC" }
+    ]
+}
