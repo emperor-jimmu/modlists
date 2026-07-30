@@ -9,3 +9,4 @@
 7. Oxygen Not Included
 8. The Elder Scrolls IV: Oblivion
 9. X-Plane 12
+10. XCOM 2
