@@ -47,3 +47,23 @@ All mods from Waves 0 through 2 remain active. Do not disable any previous wave'
 - *Description:* AI properly opens and closes doors when entering/exiting buildings.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3496308284")[AI Helicopter Decelerate No Climbing]
+
+- *Type:* Mechanics
+- *Mod ID:* `3496308284`
+- *Description:* Fixes AI helicopter approach behavior — helicopters decelerate properly instead of climbing when approaching landing zones.
+- *System Impact:* Changes AI helicopter pilot behavior. Safer and more realistic landing approaches.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3369853634")[Machinegun AI]
+
+- *Type:* Mechanics
+- *Mod ID:* `3369853634`
+- *Description:* AI machinegunners use suppressive fire and target selection more effectively.
+- *System Impact:* Changes AI weapon handling behavior. Machinegunner AI will suppress and prioritize targets more realistically.
+- *Verified:* 2025-06-17
+]

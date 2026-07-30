@@ -74,6 +74,36 @@ _Not included in PDF. Track incompatibilities and mods needing review._
 
 ---
 
+## New: Cheat/Overpower (from ARMA III HD/QOL collection)
+
+### No Weapon Sway (`570118882`)
+- Removes weapon sway entirely while aiming.
+- **Hard rule violation:** Removes a core weapon handling mechanic. Adjacent to cheats that remove recoil/accuracy penalties.
+- **Recommendation:** Skip.
+
+### AI Cannot See Small Drones (`2947745583`)
+- Makes small drones invisible to AI detection.
+- **Overpower concern:** Removes AI counterplay to drone reconnaissance.
+- **Decision needed:** Allow (drones are already hard to spot) or skip.
+
+---
+
+## New: Redundancy/Conflicts (from ARMA III HD/QOL collection)
+
+| ID | Mod | Conflicts With |
+|----|-----|----------------|
+| `3739421199` | EVEN Better Inventory (EBI) | Better Inventory (`2791403093`) already in Wave 0 |
+| `2884936024` | Blastcore Compiled By isky | Blastcore Murr Edition (`2257686620`) already in Wave 1 |
+| `3744543828` | Fluffys Enhanced Vanilla Lighting | Fluffys Enhanced Lighting 2.0 (`3737586377`) already in Wave 1 |
+| `2869511168` | Exocet Inspecting Weapons | Exocet Immersive Reloads (`2931770233`) already in Wave 1 |
+| `3132949782` | WBK Simple Blood | Some Effects Rework: Blood Impact (`3235019725`) already in Wave 1 |
+| `2424322922` | Aaren's Blast Effects | Blastcore Murr Edition overlaps |
+| `919128644` | Full Screen Night Vision Goggles | RSS Immersive Hud + NVG Animation overlap |
+| `3283612524` | Animate - Rewrite | May conflict with Exocet, WBK, and Funny's animation packs |
+| `3641926249` | AI behavior modification | Potential conflict with LAMBS and Smart Combat AI |
+
+---
+
 ## WIP / Deprecated (Skip)
 
 | ID | Mod | Issue |

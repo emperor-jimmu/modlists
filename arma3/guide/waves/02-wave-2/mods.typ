@@ -173,3 +173,57 @@ All mods from Waves 0 and 1 remain active. Do not disable any previous wave's mo
 - *System Impact:* Visual animation only. Requires Tier One Weapons.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3716701739")[Dynamic Performance System]
+
+- *Type:* Mechanics
+- *Mod ID:* `3716701739`
+- *Description:* Automatically adjusts graphics settings to maintain target FPS during heavy combat.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2989820593")[GOM Aircraft Loadout Anywhere]
+
+- *Type:* Mechanics
+- *Mod ID:* `2989820593`
+- *Description:* Allows changing aircraft weapon loadouts at any location, not just at rearm points.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2957051994")[Reload Repack Turret Magazines]
+
+- *Type:* Mechanics
+- *Mod ID:* `2957051994`
+- *Description:* Allows vehicle turret magazines to be repacked/reloaded from vehicle inventory.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2448528581")[Less Explody Aircraft]
+
+- *Type:* Mechanics
+- *Mod ID:* `2448528581`
+- *Description:* Reduces the tendency of aircraft to catastrophically explode from light damage.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3475038178")[Turret Tweaks]
+
+- *Type:* Mechanics
+- *Mod ID:* `3475038178`
+- *Description:* Improves vehicle turret traverse speed, elevation range, and targeting QoL.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=925018569")[WMO - Walkable Moving Objects]
+
+- *Type:* Mechanics
+- *Mod ID:* `925018569`
+- *Description:* Allows players to walk on moving vehicles, platforms, and ship decks without sliding off.
+- *Verified:* 2025-06-17
+]
