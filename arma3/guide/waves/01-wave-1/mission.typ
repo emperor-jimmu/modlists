@@ -18,3 +18,9 @@ Playlist (continuing from Wave 0):
 If you complete East Wind early: play the Remnants of War mini-campaign. Set after the events of East Wind, you play as a humanitarian aid worker dealing with the aftermath of the conflict. This introduces non-combat decision-making, mine-clearing mechanics, and the civilian cost of war.
 
 Note: this campaign is narrative-heavy and combat-light. Play it for the story and perspective, not for firefights.
+
+=== SNOWBLIND (Optional)
+
+A 4-part single-player mini-campaign set on Malden during a harsh winter. Lead your team against AAF and CSAT forces in arctic conditions. No additional mods required — playable with Wave 1's vanilla+ setup.
+
+_Play this if you want a change of pace from the Mediterranean setting of East Wind._

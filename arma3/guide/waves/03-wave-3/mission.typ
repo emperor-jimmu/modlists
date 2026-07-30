@@ -15,3 +15,9 @@ A more structured mission generator with narrative elements, randomized objectiv
 === Overthrow (Optional)
 
 If you want an open-world sandbox: Overthrow drops you into a living Altis with civilian populations, an economy, and an occupying force. Your SF team must destabilize the occupation through targeted strikes while managing public opinion. More strategic than tactical — good for sessions where you want long-term consequences.
+
+=== Cold War Rearmed III — Cold War Crisis Campaign (Optional)
+
+A single-player campaign by W0lle set during the Cold War. Requires Cold War Rearmed III and the full CUP mod suite (Terrains, Units, Vehicles, Weapons). Features air, infantry, and vehicle missions across classic Cold War-era terrains.
+
+_Note: You must subscribe to Cold War Rearmed III and all CUP mods separately. This campaign is for groups that want a complete setting shift from the modern era._

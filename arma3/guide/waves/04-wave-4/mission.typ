@@ -20,3 +20,11 @@ If a human Zeus is not available, run ALiVE to populate Malden with AI factions 
 === Alternative: Mike Force
 
 For a Vietnam-era inspired combined arms experience on a different map (Cam Lao Nam). Mike Force features base building, airmobile operations, and dynamic enemy threat scaling. Good if your group wants a change of setting while keeping the command role.
+
+=== Alternative: Enduring Freedom Conop's
+
+A 40-part cooperative campaign by Somchai focused on the war in Afghanistan. Play as any ISAF soldier across historically-based operations spanning 10+ hours. Features civilian interaction, reinforcement control, support coordination, and real audio clips.
+
+_Setup:_ SP or CO 1-12. Requires RHS (AFRF, SAF, USF), JBAD, and USAF Mod. Enable Milsim Mode in mission parameters for a more challenging experience.
+
+_Note: This campaign has a heavy mod dependency chain. Only playable after all Wave 4 mods are installed._
