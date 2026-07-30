@@ -361,23 +361,107 @@ A perfect lap is not one magic corner — it is connecting every phase of every 
 Every corner has four distinct phases. Time lost in any phase cannot be fully recovered in the next.
 
 #figure(
-  table(
-    columns: (2.5cm, 2.8cm, 2.8cm, 2.8cm, 2.8cm),
-    inset: 4pt,
+  box(
+    width: 100%,
+    height: 5.2cm,
     stroke: 0.5pt + gray,
-    table.header(
-      [], [*Phase 1*], [*Phase 2*], [*Phase 3*], [*Phase 4*],
-    ),
-    [*Name*], [Brake], [Turn-in], [Apex], [Track-out],
-    [*Action*], [Maximum brake], [Trail brake + steering], [Min speed + feed throttle], [Full throttle + unwind],
-    [*Weight*], [Forward], [Front loaded], [Neutral], [Rear loaded],
-    [*Speed*], [~Decreasing], [~Low point], [~Minimum], [~Increasing],
-    [*Risk*], [Lock-up], [Spin], [Understeer], [Oversteer],
+    radius: 4pt,
+    {
+      // Phase dividers (vertical lines)
+      line(start: (3.65cm, 0.3cm), end: (3.65cm, 5cm), stroke: 1pt + gray.lighten(30%))
+
+      // Brake section
+      place(dx: 0.3cm, dy: 0.2cm, circle(radius: 0.4cm, fill: red, stroke: none))
+      place(dx: 0.55cm, dy: 0.35cm, text(size: 0.9em, fill: white, weight: "bold")[1])
+      place(dx: 1.1cm, dy: 0.25cm, text(size: 0.85em, weight: "bold")[*Brake*])
+      place(dx: 1.1cm, dy: 0.9cm, text(size: 0.65em, fill: luma(100))[Max brake])
+      place(dx: 1.1cm, dy: 1.3cm, text(size: 0.65em, fill: luma(100))[Weight → front])
+      place(dx: 1.1cm, dy: 1.7cm, text(size: 0.65em, fill: luma(100))[Speed: decreasing])
+      // Speed bar
+      place(dx: 0.3cm, dy: 2.1cm, rect(width: 2.7cm, height: 4pt, fill: gray.lighten(50%)))
+      place(dx: 0.3cm, dy: 2.1cm, rect(width: 2.5cm, height: 4pt, fill: red))
+
+      // Turn-in section
+      place(dx: 4cm, dy: 0.2cm, circle(radius: 0.4cm, fill: orange, stroke: none))
+      place(dx: 4.25cm, dy: 0.35cm, text(size: 0.9em, fill: white, weight: "bold")[2])
+      place(dx: 4.8cm, dy: 0.25cm, text(size: 0.85em, weight: "bold")[*Turn-in*])
+      place(dx: 4.8cm, dy: 0.9cm, text(size: 0.65em, fill: luma(100))[Trail brake + steer])
+      place(dx: 4.8cm, dy: 1.3cm, text(size: 0.65em, fill: luma(100))[Weight: front loaded])
+      place(dx: 4.8cm, dy: 1.7cm, text(size: 0.65em, fill: luma(100))[Speed: low point])
+      // Speed bar
+      place(dx: 4cm, dy: 2.1cm, rect(width: 2.7cm, height: 4pt, fill: gray.lighten(50%)))
+      place(dx: 4cm, dy: 2.1cm, rect(width: 1.0cm, height: 4pt, fill: orange))
+
+      // Apex section
+      place(dx: 7.7cm, dy: 0.2cm, circle(radius: 0.4cm, fill: green, stroke: none))
+      place(dx: 7.95cm, dy: 0.35cm, text(size: 0.9em, fill: white, weight: "bold")[3])
+      place(dx: 8.5cm, dy: 0.25cm, text(size: 0.85em, weight: "bold")[*Apex*])
+      place(dx: 8.5cm, dy: 0.9cm, text(size: 0.65em, fill: luma(100))[Min speed + throttle])
+      place(dx: 8.5cm, dy: 1.3cm, text(size: 0.65em, fill: luma(100))[Weight: neutral])
+      place(dx: 8.5cm, dy: 1.7cm, text(size: 0.65em, fill: luma(100))[Speed: minimum])
+      // Speed bar
+      place(dx: 7.7cm, dy: 2.1cm, rect(width: 2.7cm, height: 4pt, fill: gray.lighten(50%)))
+      place(dx: 7.7cm, dy: 2.1cm, rect(width: 0.5cm, height: 4pt, fill: green))
+
+      // Track-out section
+      place(dx: 11.4cm, dy: 0.2cm, circle(radius: 0.4cm, fill: blue, stroke: none))
+      place(dx: 11.65cm, dy: 0.35cm, text(size: 0.9em, fill: white, weight: "bold")[4])
+      place(dx: 12.2cm, dy: 0.25cm, text(size: 0.85em, weight: "bold")[*Track-out*])
+      place(dx: 12.2cm, dy: 0.9cm, text(size: 0.65em, fill: luma(100))[Full throttle + unwind])
+      place(dx: 12.2cm, dy: 1.3cm, text(size: 0.65em, fill: luma(100))[Weight → rear])
+      place(dx: 12.2cm, dy: 1.7cm, text(size: 0.65em, fill: luma(100))[Speed: increasing])
+      // Speed bar
+      place(dx: 11.4cm, dy: 2.1cm, rect(width: 2.7cm, height: 4pt, fill: gray.lighten(50%)))
+      place(dx: 11.4cm, dy: 2.1cm, rect(width: 2.2cm, height: 4pt, fill: blue))
+
+      // Connecting arrows between phases
+      place(dx: 3.2cm, dy: 0.3cm, text(size: 1em, fill: gray.lighten(30%))[→])
+      place(dx: 7cm, dy: 0.3cm, text(size: 1em, fill: gray.lighten(30%))[→])
+      place(dx: 10.7cm, dy: 0.3cm, text(size: 1em, fill: gray.lighten(30%))[→])
+
+      // Risk row
+      place(dx: 0.3cm, dy: 2.6cm, text(size: 0.6em, fill: luma(80))[*Risk:*])
+      place(dx: 1.8cm, dy: 2.6cm, text(size: 0.6em, fill: red)[Lock-up])
+      place(dx: 4.8cm, dy: 2.6cm, text(size: 0.6em, fill: orange)[Spin])
+      place(dx: 8.5cm, dy: 2.6cm, text(size: 0.6em, fill: green)[Understeer])
+      place(dx: 12.2cm, dy: 2.6cm, text(size: 0.6em, fill: blue)[Oversteer])
+
+      // Track profile (simplified corner shape)
+      line(start: (0.5cm, 4.1cm), end: (3.5cm, 4.1cm), stroke: 2pt + blue)
+      line(start: (3.5cm, 4.1cm), end: (7cm, 3.6cm), stroke: 2pt + blue)
+      line(start: (7cm, 3.6cm), end: (11cm, 3.9cm), stroke: 2pt + blue)
+      line(start: (11cm, 3.9cm), end: (14cm, 4.6cm), stroke: 2pt + blue)
+
+      line(start: (1cm, 4.7cm), end: (3cm, 4.7cm), stroke: 2pt + blue)
+      line(start: (3cm, 4.7cm), end: (5cm, 4.3cm), stroke: 2pt + blue)
+      line(start: (5cm, 4.3cm), end: (9cm, 4.6cm), stroke: 2pt + blue)
+      line(start: (9cm, 4.6cm), end: (14cm, 5cm), stroke: 2pt + blue)
+
+      // Racing line
+      line(start: (0cm, 4.4cm), end: (2cm, 4.3cm), stroke: 3pt + yellow)
+      line(start: (2cm, 4.3cm), end: (5cm, 3.8cm), stroke: 3pt + yellow)
+      line(start: (5cm, 3.8cm), end: (8cm, 3.6cm), stroke: 3pt + yellow)
+      line(start: (8cm, 3.6cm), end: (11cm, 4.3cm), stroke: 3pt + yellow)
+      line(start: (11cm, 4.3cm), end: (14.5cm, 4.8cm), stroke: 3pt + yellow)
+
+      // Corner markers on track
+      place(dx: 2.2cm, dy: 3.6cm, circle(radius: 3pt, fill: red, stroke: none))
+      place(dx: 5cm, dy: 3.2cm, circle(radius: 3pt, fill: orange, stroke: none))
+      place(dx: 8cm, dy: 3.1cm, circle(radius: 3pt, fill: green, stroke: none))
+      place(dx: 11cm, dy: 3.7cm, circle(radius: 3pt, fill: blue, stroke: none))
+
+      // Labels
+      place(dx: 0.5cm, dy: 3.4cm, text(size: 0.55em, fill: red)[Brake])
+      place(dx: 4cm, dy: 3.0cm, text(size: 0.55em, fill: orange)[Turn])
+      place(dx: 7.5cm, dy: 2.9cm, text(size: 0.55em, fill: green)[Apex])
+      place(dx: 10.5cm, dy: 3.5cm, text(size: 0.55em, fill: blue)[Out])
+    }
   ),
   caption: [
-    The four phases of a corner. Each phase has a distinct objective,
-    weight state, speed profile, and risk. Mastering the phase transitions
-    is how you build a perfect lap.
+    The four phases of a corner. Each phase has a distinct speed profile, weight
+    state, and risk. The track profile (bottom) shows how the racing line (yellow)
+    connects them through the corner (blue edges). Master each phase individually,
+    then practice connecting them.
   ]
 )
 
@@ -395,23 +479,64 @@ The fundamental compromise in cornering:
 - *The principle:* Slow in, fast out. Every corner you enter slower than you think you need to will reward you with a higher exit speed. Trust that the extra exit speed will more than compensate for the entry speed you gave up.
 
 #figure(
-  table(
-    columns: (2.5cm, 5.5cm, 5.5cm),
-    inset: 4pt,
+  box(
+    width: 100%,
+    height: 5cm,
     stroke: 0.5pt + gray,
-    table.header(
-      [], [*Fast In (Red)*], [*Slow In (Green)*],
-    ),
-    [*Entry*], [High speed \~ over-slowed], [Slightly lower speed],
-    [*Apex*], [Low (deep valley)], [Higher (clean apex)],
-    [*Exit*], [Low (late to full power)], [High (early to power)],
-    [*Result*], [Slower overall], [Faster overall],
+    radius: 4pt,
+    {
+      // FAST IN group (left side)
+      place(dx: 0.5cm, dy: 0.15cm, text(size: 0.7em, fill: red, weight: "bold")[Fast In])
+      place(dx: 0.5cm, dy: 0.55cm, text(size: 0.55em, fill: luma(100))[Worse])
+
+      // Entry bar
+      place(dx: 1.3cm, dy: 2.0cm, rect(width: 0.8cm, height: 1.5cm, fill: red, stroke: none, radius: 2pt))
+      place(dx: 1.3cm, dy: 2.1cm, text(size: 0.55em, fill: white)[High])
+      // Apex bar
+      place(dx: 2.2cm, dy: 2.9cm, rect(width: 0.8cm, height: 0.5cm, fill: red, stroke: none, radius: 2pt))
+      place(dx: 2.2cm, dy: 3.0cm, text(size: 0.5em, fill: white)[Low])
+      // Exit bar
+      place(dx: 3.1cm, dy: 2.7cm, rect(width: 0.8cm, height: 0.7cm, fill: red, stroke: none, radius: 2pt))
+      place(dx: 3.1cm, dy: 2.8cm, text(size: 0.5em, fill: white)[Low])
+
+      // SLOW IN group (right side)
+      place(dx: 5.8cm, dy: 0.15cm, text(size: 0.7em, fill: green, weight: "bold")[Slow In])
+      place(dx: 5.8cm, dy: 0.55cm, text(size: 0.55em, fill: luma(100))[Better])
+
+      // Entry bar
+      place(dx: 6.6cm, dy: 2.5cm, rect(width: 0.8cm, height: 1.0cm, fill: green, stroke: none, radius: 2pt))
+      place(dx: 6.6cm, dy: 2.6cm, text(size: 0.5em, fill: white)[Med])
+      // Apex bar
+      place(dx: 7.5cm, dy: 2.2cm, rect(width: 0.8cm, height: 1.3cm, fill: green, stroke: none, radius: 2pt))
+      place(dx: 7.5cm, dy: 2.3cm, text(size: 0.5em, fill: white)[High])
+      // Exit bar
+      place(dx: 8.4cm, dy: 1.5cm, rect(width: 0.8cm, height: 1.9cm, fill: green, stroke: none, radius: 2pt))
+      place(dx: 8.4cm, dy: 1.6cm, text(size: 0.5em, fill: white)[Fast])
+
+      // Column labels
+      place(dx: 1.1cm, dy: 3.8cm, text(size: 0.55em, fill: luma(80))[Entry])
+      place(dx: 2.0cm, dy: 3.8cm, text(size: 0.55em, fill: luma(80))[Apex])
+      place(dx: 2.9cm, dy: 3.8cm, text(size: 0.55em, fill: luma(80))[Exit])
+      place(dx: 6.4cm, dy: 3.8cm, text(size: 0.55em, fill: luma(80))[Entry])
+      place(dx: 7.3cm, dy: 3.8cm, text(size: 0.55em, fill: luma(80))[Apex])
+      place(dx: 8.2cm, dy: 3.8cm, text(size: 0.55em, fill: luma(80))[Exit])
+
+      // VS divider
+      place(dx: 4.6cm, dy: 0.6cm, text(size: 1em, fill: gray, weight: "bold")[VS])
+
+      // Baseline
+      line(start: (1.3cm, 3.5cm), end: (9.2cm, 3.5cm), stroke: 0.5pt + gray)
+
+      // Result callout
+      place(dx: 0.5cm, dy: 4.3cm, text(size: 0.6em, fill: red)[Slower lap time — exit speed is everything])
+      place(dx: 5.8cm, dy: 4.3cm, text(size: 0.6em, fill: green)[Faster lap time — sacrifice entry for exit])
+    }
   ),
   caption: [
-    The speed tradeoff. *Fast In (Red):* high entry speed forces late braking and
-    a low apex speed — the exit is compromised. *Slow In (Green):* sacrificing
-    entry speed maintains a higher apex and reaches full throttle earlier.
-    Green is almost always faster overall.
+    The speed tradeoff — Slow in, fast out wins. Left: carrying too much entry
+    speed (tall red bar) forces a low apex speed (short bar) and a weak exit.
+    Right: sacrificing a few km/h at entry (shorter green bar) maintains a
+    higher apex and reaches full throttle earlier — a much faster exit.
   ]
 )
 

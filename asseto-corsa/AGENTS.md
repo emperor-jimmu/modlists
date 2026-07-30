@@ -47,7 +47,7 @@ This is **Assetto Maximus**, a curated modlist and game guide for **Assetto Cors
    - No cheating/overpower/all-knowing mods
    - Wave 0: UI/QoL and minimal visual mods only (no mechanics changes)
    - Later waves: Graphics, content, mechanics mods
-5. **PDF Output** — The guide + modlist is compiled to a single PDF via Typst (v0.15).
+5. **PDF Output** — The guide + modlist is compiled to a single PDF via Typst (v0.15.1). All Typst markup must use 0.15.1 syntax — do not use 0.14 or earlier patterns (e.g., `#path()` does not accept `stroke:` as a named argument; `#circle()` does not take a position tuple as the first argument; use `#place(dx:, dy:, content)` for positioning). For drawings, `#rect()`, `#circle()`, and `#line()` all accept `stroke:` and `fill:` as named arguments. `#path()` takes only a positional SVG path string.
 6. **Excluded from PDF**: `conflicts.md` and `mod-ideas.md` are reference files only.
 
 ## Workflow
