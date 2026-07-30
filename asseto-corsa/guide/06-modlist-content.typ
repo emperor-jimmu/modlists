@@ -25,9 +25,23 @@ Mod entries follow this format: *Name* — Description. *Dependencies*. *Compati
 
 === Wave 1 Cars — Classics & Period
 
-- #link("https://www.racedepartment.com/downloads/abarth-turismo-competizione-berlina-corsa-1966.9721/")[Abarth 1000 TC Berlina Corsa 1966] — Four variants (Stock/Gr2/Gr5/Slalom). Tiny 1-litre rear-engined racer. Teaches momentum conservation on a shoestring budget.
+- #link("https://www.racedepartment.com/downloads/abarth-1000tc.8424/")[Abarth 1000 TC Berlina Corsa 1966] — Four variants (Stock/Gr2/Gr5/Slalom). Tiny 1-litre rear-engined racer. Teaches momentum conservation on a shoestring budget.
 - #link("https://www.racedepartment.com/downloads/bmw-e30-touring.15812/")[BMW E30 325i Touring 1987] — Two variants (RWD/AWD). The classic boxy BMW wagon, ideal for casual track days and Nordschleife laps.
 - #link("https://www.racedepartment.com/downloads/tvr-griffith-200.25994/")[TVR Griffith 200 1963] — Lightweight British V8 sports car. No ABS, no TC — raw analog driving.
+- #link("https://www.racedepartment.com/downloads/1970-alfa-romeo-gtam.28717/")[Alfa Romeo Giulia 1750 GTAM 1970] — The racing evolution of the Giulia sedan. 220 bhp, 920 kg, and a screaming twin-cam that defined an era. Teaches throttle-steering in a lightweight FR chassis.
+- #link("https://www.racedepartment.com/downloads/alfa-romeo-giulia-tz.22492/")[Alfa Romeo Giulia TZ 1963] — Two variants (Stock/Competition). Zagato-bodied homologation special. Tiny, low-drag, and rev-happy. Teaches carrying minimum speed through corners.
+- #link("https://www.racedepartment.com/downloads/porsche-356a-1600gs-carrera-gt-coupe.22149/")[Porsche 356A Carrera GT 1958] — Two variants (stock/SCCA). 4-cam Fuhrmann engine in a 850 kg body. The car that launched Porsche's motorsport legacy. Rear-engine pendulum effect teaches weight transfer management.
+- #link("https://www.racedepartment.com/downloads/porsche-550-spyder.11963/")[Porsche 550/1500 RS Spyder 1953] — The original mid-engine Porsche racer. 110 bhp, 550 kg, and absolutely telepathic steering. Teaches mid-engine corner entry rotation.
+
+=== Wave 1 Cars — Modern Performance
+
+- #link("https://www.racedepartment.com/downloads/ginetta-supercup-2017.17522/")[Ginetta G55 GT4 Supercup 2017] — Two variants (LDH/RHD). V6-powered British GT4 car. The sweet spot between road car and full GT3 — enough aero to feel it, not enough to rely on it.
+- #link("https://www.racedepartment.com/downloads/honda-nsx.4768/")[Honda NSX 1990] — Four variants (NA1, Type R, Acura, Acura S1). The everyday supercar. Mid-engine, VTEC, and chassis by Senna. Teaches mid-engine throttle control at approachable speeds.
+- #link("https://www.racedepartment.com/downloads/nfs-tournament-class-a.16905/")[Ferrari 512 TR 1991] — Two variants (stock/S1). Flat-12 Testarossa successor. The last of the analogue V12 Ferraris. Heavy, powerful, demanding — teaches brake management in a heavy mid-engine car.
+- #link("https://www.racedepartment.com/downloads/koenigsegg-one-1.9274/")[Koenigsegg One:1] — 1,360 bhp, 1,360 kg. The 1:1 power-to-weight hypercar. A physics exercise — too much power for any corner, too much aero for any excuse. Teaches throttle discipline at the extreme.
+- #link("https://www.racedepartment.com/downloads/ier-car-pack-1-uscc-mod.7348/")[Corvette Daytona Prototype 2014] — Two variants (Dallara/Coyote chassis). IMSA prototype with Corvette bodywork and 600 bhp V8. The bridge between GT cars and full prototypes.
+- #link("https://www.racedepartment.com/downloads/rallylegends-mod-citroen-ds3-wrc-3-0-new-rallycross-track-holjesrx-by-ultranew_b.7632/")[Citroën DS3 WRC] — 1.6L turbo, 4WD, 380 bhp. Sebastien Loeb's weapon of choice. Teaches left-foot braking, Scandinavian flicks, and loose-surface car control.
+- #link("https://www.racedepartment.com/downloads/formula-student-ucm-2016.19272/")[Formula Student UCM 2016] — University-built single-seater. 80 bhp, 220 kg, massive wings for its weight. The accessibility of a go-kart with the aero sensitivity of an F1 car. Teaches downforce driving at low speed.
 
 === Car Packs Worth Getting
 
@@ -94,6 +108,37 @@ All car mods must:
 - #link("https://www.racedepartment.com/downloads/karelia-cross.5275/")[Karelia Cross] — Finnish-style rallycross circuit. Gravel and asphalt mix.
 - #link("https://www.racedepartment.com/downloads/skidpad.5554/")[Skidpad] — Circular test track with markings. Essential for testing car behavior, drift angles, and tire limits.
 
+=== Wave 1 Tracks — More Real Circuits
+
+- #link("https://www.racedepartment.com/downloads/donington-park.3031/")[Donington Park 2018] — GP + National layouts. 4.0 km, 12 turns. Flowing British parkland circuit. The Craner Curves and Old Hairpin are among the most satisfying corner sequences in motorsport. Famous for Senna's 1993 European GP lap-of-the-gods.
+- #link("https://www.racedepartment.com/downloads/watkins-glen-international.20204/")[Watkins Glen] — 5.5 km, 11 turns. Classic American road course. The Esses (T2--T4) are taken flat in most cars — a commitment test. The Boot and Outer Loop demand late apexes to set up the long back straight.
+- #link("https://www.racedepartment.com/downloads/circuit-gilles-villeneuve-montreal-quebec-canada.4439/")[Circuit Gilles Villeneuve (Montreal)] — 4.4 km, 14 turns. Semi-street circuit on an island in the St. Lawrence River. The Wall of Champions awaits the overconfident. 300 km/h back straight into a tight chicane.
+- #link("https://www.racedepartment.com/downloads/virginia-international-raceway.11892/")[VIR — Virginia International Raceway] — 5.3 km, 17 turns. The American Nordschleife. Fast esses, blind crests, and the intimidating Climbing Esses. Zero runoff in places.
+- #link("https://www.racedepartment.com/downloads/okayama-international-circuit.15846/")[Okayama International Circuit] — 3 layouts. 3.7 km, 11 turns. Former Pacific GP venue. Tight, technical infield followed by two long straights. Track position defines the race.
+- #link("https://www.racedepartment.com/downloads/paul-ricard.6115/")[Paul Ricard / Le Castellet] — 4 layouts. 5.8 km. Modern F1 test venue with distinctive blue and red runoff. 1.8 km Mistral straight. Signes corner is flat in GT cars with proper downforce.
+
+=== Wave 1 Tracks — Short & Technical
+
+- #link("https://www.racedepartment.com/downloads/cadwell-park.11507/")[Cadwell Park] — 3.5 km, 11 turns. The "Mini Nürburgring" of England. Narrow, undulating, zero runoff. The Mountain is a blind crest where cars get airborne. Pure commitment circuit.
+- #link("https://www.racedepartment.com/downloads/goodwood-circuit.17228/")[Goodwood Circuit] — 3.8 km, 7 turns. Historic 1948 airfield circuit. Fast, flowing, unchanged since the 1950s. Perfect for classic car events and Revival meeting atmosphere.
+- #link("https://www.racedepartment.com/downloads/norisring-2009-v2-0-by-com8-sandrox-rainmaker.22653/")[Norisring 2009] — 2.3 km, 8 turns. The Monaco of Germany. A DTM street circuit. Four 90-degree corners linked by long straights on public roads. Simplest layout, hardest to master.
+- #link("https://www.racedepartment.com/downloads/highlands-motorsport-park-nz.10448/")[Highlands Motorsport Park] — 4.1 km, New Zealand. Modern circuit in the Southern Alps. The Bridge to Nowhere and a Corkscrew-like descent. Stunning scenery with punishing elevation.
+- #link("https://www.racedepartment.com/downloads/brno-circuit.2584/")[Brno Masaryk Circuit] — 5.4 km, Czech Republic. Former MotoGP venue with wide, sweeping corners and big elevation. The horsepower circuit — carries speed everywhere.
+
+=== Wave 1 Tracks — Japanese & Touge
+
+- #link("https://www.racedepartment.com/downloads/ebisu-east-higashi.17603/")[Ebisu Higashi (East)] — 2.1 km Japanese touge/circuit hybrid. The spiritual home of drifting. Tight, technical, camber-heavy corners reward aggressive rotation.
+- #link("https://www.racedepartment.com/downloads/ebisu-north-kita.9567/")[Ebisu Kita (North)] — The north course of Ebisu. Faster and more open than Higashi. The jump section and legendary downhill sweeper test suspension composure.
+- #link("https://www.racedepartment.com/downloads/90s-golden-drift-spot-project-4-otarumi-touge.19707/")[Otarumi Touge] — Long Japanese mountain pass. The most flowing of the 90s GDP touge series. Sweeping corners, tunnel sections, and constant elevation drops.
+- #link("https://www.racedepartment.com/downloads/hero-shinoi-circuit.10112/")[Hero Shinoi] — 4.1 km Japanese technical circuit. A hidden gem. Fast esses, tight hairpin, and elevation changes rivalling Spa. Best for hotlapping and online battles.
+
+=== Wave 1 Tracks — Open Roads & Classics
+
+- #link("https://www.racedepartment.com/downloads/alto-tajo-hillclimb.13771/")[Alto Tajo Hillclimb, Spain] — 8.5 km point-to-point mountain climb through the rural Taravilla region. Narrow asphalt, blind crests, and stone walls. Requires total commitment — one mistake means a 50-metre drop. For hillclimb events and time attack. *Note: Point-to-point; use with time trial or practice mode. No pit boxes*.
+- #link("https://www.racedepartment.com/downloads/toscana.12659/")[Toscana Autodromo] — Tuscan countryside circuit set among rolling hills. Wide, flowing layout with fast sweepers and a long elevation sequence through olive groves. Designed for high-speed GT and prototype testing. *Dependencies: None*.
+- #link("https://www.racedepartment.com/downloads/trial-mountain.2348/")[Trial Mountain] — Gran Turismo classic faithfully recreated. 5.5 km fictional circuit with a steep uphill section, downhill tunnel double-apex, and the iconic bridge jump. Corners have names from the GT era — Carousel, Hairpin, the Esses. Perfect nostalgia lap for anyone who grew up on GT1--4. *Dependencies: None*.
+- #link("https://www.racedepartment.com/downloads/aosta-grand-prix-circuit.11168/")[Aosta Grand Prix] — 16 layouts in one package. Based on a real Italian region, this versatile pack includes a full GP circuit, drift layout, oval, wet weather road course, and light/mod variants. The swiss army knife of track mods — one download covers everything from drift practice to endurance racing. *Dependencies: None*. *Note: 16 layouts in CM; collapse the group to avoid clutter*.
+
 === Wave 2 Tracks — Endurance & Long Circuits
 
 These are longer, more demanding circuits for extended sessions, multi-class racing, and stamina events. Best experienced after mastering Wave 1 tracks.
@@ -103,6 +148,7 @@ These are longer, more demanding circuits for extended sessions, multi-class rac
 - #link("https://www.racedepartment.com/downloads/daytona-international-speedway.22320/")[Daytona International Speedway — Road Course] — 5.7 km Roval. The Bus Stop chicane, high-banked oval sections, and infield technical section. Home of the Rolex 24.
 - #link("https://www.racedepartment.com/downloads/fuji-speedway-2022.49837/")[Fuji Speedway] — 4.5 km, 16 turns. The 1.5 km front straight is one of the longest in motorsport. Heavy braking into Turn 1 sets up the entire lap. Former F1 venue, current WEC staple.
 - #link("https://www.racedepartment.com/downloads/suzuka-circuit.6082/")[Suzuka Circuit] — 5.8 km, 18 turns. Figure-8 layout with the iconic Esses, Degner curves, and 130R. Widely considered the ultimate driver's circuit alongside the Nordschleife. Every corner type represented on one lap.
+- #link("https://www.overtake.gg/downloads/targa-florio.12821/")[Targa Florio] — 72 km of Sicilian mountain roads through the Madonie range. The historic 1906--1977 endurance race route, faithfully recreated. Over 800 corners, villages you drive through, stone walls inches from the road, and elevation changes from sea level to 600 metres. Three layouts: *Full Circuit* (72 km, ~35 minute laps in a GT3), *Short Course* (~44 km), and *Medium Course* (~55 km). This is not a race — this is a pilgrimage. Bring a car you trust, turn off the HUD, and drive. *Dependencies: None*. *Note: The full circuit has no pit boxes — use the shorter layouts for racing. The full layout is for hotlapping and experiencing one of motorsport's greatest lost circuits*.
 
 === Track Mod Requirements
 
@@ -112,6 +158,19 @@ All track mods must:
 - Be compatible with AC v1.16.4 track structure
 - Include at least one pit box layout
 - Install to `assettocorsa/content/tracks/[track-folder]/`
+
+== Freeroam & Traffic
+
+Freeroam tracks like LA Canyons and mountain passes are beautiful but empty without traffic. These mods populate the roads with AI vehicles, transforming cruising maps into living environments.
+
+- #link("https://www.overtake.gg/downloads/2real-traffic-simulation.84667/")[*2REAL Traffic Simulation*] — CSP-based traffic system that spawns AI-controlled civilian vehicles on freeroam maps. Cars follow road rules, stop at intersections, signal turns, and react to your presence. Configurable: traffic density (light rush hour to empty midnight), vehicle mix (economy cars to trucks), and driver aggression (Sunday drivers to Sicilian). Works with LA Canyons, Shutoko Revival Project, Union Island, Pacific Coast Highway, and most other freeroam maps. *Dependencies: CSP 0.1.79+, Content Manager*. *Install: via CM → Content → Mods*. *Wave 1*. *Note: Enable "CSP Traffic" in CSP settings after installing. Each freeroam map needs a traffic layout — most popular maps include one*.
+- #link("https://www.overtake.gg/downloads/shutoko-revival-project.64271/")[*Shutoko Revival Project (SRP)*] — 160+ km of Tokyo expressway network, faithfully recreated. The ultimate night-cruising and highway racing environment. Multiple interchanges, tunnels, and the iconic C1 inner loop. Includes its own traffic system (separate from 2REAL). *Dependencies: CSP*. *Wave 2*. *Note: 8+ GB download. Best experienced in VR or triples. Use with Pure for rain-soaked expressway atmospherics*.
+
+=== Choosing Freeroam Maps + Traffic
+
+- For *daytime canyon/mountain driving*: pair LA Canyons or Pacific Coast Highway with 2REAL Traffic.
+- For *nighttime highway racing*: Shutoko Revival Project has its own built-in traffic — 2REAL is not needed.
+- For *touge battles*: hakone tracks and touge passes are best without traffic. Traffic adds atmosphere for cruising, not racing.
 
 == Career & Campaign
 
@@ -196,7 +255,8 @@ All of these install to `apps/python/[app-folder]/` and can be toggled on/off fr
 
 === Weather & Visuals
 
-- #link("https://www.racedepartment.com/downloads/sol.24914/")[*Sol*] — Dynamic 24-hour weather and time system built on Custom Shaders Patch. Adds volumetric clouds, fog, rain, and realistic sky rendering. Required by multiple career mods. *Dependencies: CSP*. *Wave 0*.
+- #link("https://www.addonhub.org/2026/04/ac-pure-321.html/")[*Pure*] — Advanced lighting, weather, and sky controller. Physically-based sky rendering, volumetric clouds, dynamic exposure, and realistic sun positioning. Successor to the older Sol weather system. Delivers the most photorealistic lighting available for AC. Required by multiple career mods and all serious weather-dependent driving. *Dependencies: CSP 0.2.0+*. *Wave 0*.
+- #link("https://www.overtake.gg/downloads/sol.24914/")[*Sol (legacy)*] — Predecessor to Pure. Still functional and available for users who cannot upgrade to CSP 0.2.0+. *Dependencies: CSP*. *Note: Pure is strongly recommended over Sol for all new installations*.
 - #link("https://www.racedepartment.com/downloads/out-run-warm-and-cold-weather.12435/")[*Out Run Weathers*] — Warm and cold weather presets designed for the Out Run filter. Gives coastal sunset and crisp winter morning vibes. *Wave 1*.
 - #link("https://www.racedepartment.com/downloads/black-pearl-post-processing-preset-graphics-mod.11487/")[*Black Pearl PP Filter*] — Post-processing preset for both in-game sessions and CM preview creation. Neutral, car-showroom look. *Wave 1*.
 
@@ -205,6 +265,19 @@ All of these install to `apps/python/[app-folder]/` and can be toggled on/off fr
 - #link("https://www.racedepartment.com/downloads/autumn-mod-for-assetto-corsa-tracks.18282/")[*Autumn Textures Pack*] — Replaces summer foliage with autumn colours for Nordschleife, Imola, Monza, Mugello, Spa, and others. Perfect for fall-themed championships. *Wave 1*.
 - #link("https://www.racedepartment.com/downloads/rbs-1-13-real-billboards-stuff-new-winter-monza-1-0-and-autumn-nords-1-1-by-jw-modding.11381/")[*RBS — Real Billboards & Stuff*] — Replaces track-side billboards with real-world sponsors and adds winter textures for Monza and Nordschleife. *Wave 1*.
 - #link("https://www.racedepartment.com/downloads/kunos-tracks-with-extra-pit-boxes.28373/")[*Kunos Tracks Extra Pits*] — Expands stock circuits to 32--40 pit boxes. Nordschleife Endurance version supports 60 cars. *Dependencies: None*. *Note: Clutters track selection in CM; install only what you need*.
+
+=== Skins & Textures
+
+Texture and skin mods replace visual elements without affecting physics or performance. They install directly into track and car folders.
+
+- #link("https://www.racedepartment.com/downloads/visual-references-for-pit-entry-ks-tracks.15736/")[*Pit Entry Markers*] — Adds clear visual markers and speed signs at pit entry for all Kunos tracks. Removes the guesswork — no more accidental pit lane speeding penalties. Original files untouched, no checksum issues. *Wave 0*.
+- #link("https://www.racedepartment.com/downloads/gui-replacement-gt-style-race-condition-penalty-flags.16625/")[*GT-Style Race Flags*] — Replaces the stock flags in the top-left corner with GT-style indicators. Yellow, blue, white, and checkered flags are cleaner and more visible during races. *Wave 0*.
+- #link("https://www.racedepartment.com/downloads/tks-smoke-mod.11187/")[*TK's Smoke Mod*] — Redesigned smoke and dust particle effects. More realistic tyre smoke on lock-ups and burnouts, and better dust clouds on gravel traps and off-track excursions. *Wave 1*.
+- #link("https://www.racedepartment.com/downloads/new-hd-windshield-damage.10965/")[*HD Windscreen Damage Texture*] — Replaces the default glass crack texture with a higher-resolution, less intrusive version. The original texture and glass simulation (road car glass vs. race car plastic) isn't good — this texture is far less annoying while not sacrificing the effect. *Wave 1*.
+- #link("https://www.racedepartment.com/downloads/2018-weathertech-raceway-pack-wright-motorsport-58-porsche-squadra-corsa-51-ferrari.23368/")[*Laguna Seca 2018 WeatherTech Textures*] — Updates Laguna Seca signage and branding to the 2018 WeatherTech Raceway era. Pairs well with any modern GT or IMSA championship. *Wave 1*.
+- #link("https://www.racedepartment.com/downloads/black-cat-county-different-road-texture.16124/")[*Black Cat County — Normal Roads*] — Replaces the highway road texture on Kunos' fictional Black Cat County with standard asphalt. The original bright highway markings break immersion — this makes it feel like a proper circuit. *Wave 1*.
+- #link("https://www.racedepartment.com/downloads/resource-blancpain-gt-series-style-national-flags.16535/")[*National Flag Icons — Blancpain GT Style*] — Adds proper national flag icons in the Blancpain GT Series style for CM car previews and UI elements. Makes your grid look like a real GT World Challenge broadcast. *Wave 1*.
+- #link("https://onedrive.live.com/redir?resid=A24E8248872C4F92!520&authkey=!ABaFd4PrMM8X8SY&ithint=folder%2c")[*Brand Badges Pack*] — High-quality manufacturer badge textures for CM car previews and UI. Covers dozens of marques. Essential if you want your car list to look professional instead of showing missing badge placeholders. *Wave 0*.
 
 === Telemetry & Setup
 
@@ -239,6 +312,6 @@ Sound mods replace the `*.bank` FMOD audio files for specific cars. Always back 
 === Wave Placement
 
 - *Essential Apps*: Install in Wave 0 alongside CM — no mechanics impact.
-- *Weather & Visuals*: Sol requires CSP and is essential from Wave 0. PP filters and textures are Wave 1.
+- *Weather & Visuals*: Pure (or legacy Sol) requires CSP and is essential from Wave 0. PP filters and textures are Wave 1.
 - *Telemetry & Tools*: Setup Market in Wave 1. ACTI and AI tools in Wave 2.
 - *Sound Mods*: Install anytime. Back up original `.bank` files first.

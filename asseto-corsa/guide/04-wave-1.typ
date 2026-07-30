@@ -305,6 +305,130 @@ At this level, you need to read the tyres — not just react to them.
 - *Tracks:* Spa, Suzuka, Nürburgring GP, Laguna Seca — long circuits with diverse corner types
 - *Goal:* Practice double-apex and compound corners specifically. Pick one complex sequence and run it 50 times
 
+== Basic Racing Terms
+
+A common glossary of terms used throughout this guide and in the Assetto Corsa community.
+
+=== Corner Phases
+
+- *Braking zone* — The straight-line section before a corner where you reduce speed. Ends at the turn-in point. *Heard as:* "Brake at the 100m board."
+- *Turn-in* — The moment you begin steering toward the apex. Determines your entire corner trajectory. *Heard as:* "Turn in when the tree lines up with the kerb."
+- *Apex* — The point where your car is closest to the inside of the corner. Also known as the "clipping point." Usually the slowest point of the corner. *Heard as:* "Clip the inside kerb at the second cone."
+- *Track-out* — The point where your car reaches the outside edge of the track on exit. Should maximize the usable width. *Heard as:* "Let the car run all the way to the outside kerb on exit."
+- *Exit* — The section from apex to track-out where you transition from steering back to straight-line acceleration. *Heard as:* "Get to full throttle before the exit kerb."
+
+=== Racing Lines
+
+- *Racing line* — The optimal path through a corner that minimizes lap time. Typically: outside → apex → outside.
+- *Geometric line* — The shorter path (straight line between entry and exit). Often slower because it sacrifices exit speed.
+- *Late apex* — Moving the apex point further around the corner. Safer for passing and maintains more exit speed. Used when overtaking or in damp conditions.
+- *Early apex* — Moving the apex point earlier. Allows a tighter entry but sacrifices exit speed. Used in slow, tight corners.
+- *Compromise line* — A line that sacrifices optimal speed through one corner to set up a better line for the next corner in a sequence.
+
+=== Car Balance Terms
+
+- *Understeer (push)* — The front tyres lose grip before the rears. The car continues straight despite steering input. You turn more but the car does not respond.
+- *Oversteer (loose)* — The rear tyres lose grip before the fronts. The car rotates more than intended. Requires countersteering to correct.
+- *Neutral* — The ideal state where front and rear grip limits are balanced. The car rotates exactly as much as the steering input requests.
+- *Weight transfer* — The movement of the car's mass under braking, acceleration, and cornering. Determines where grip is available.
+- *Slip angle* — The angle between the direction a tyre is pointing and the direction it is actually moving. A small slip angle (2--6°) is optimal for cornering grip.
+- *Trail braking* — Carrying brake pressure into the corner entry to keep weight on the front tyres and improve rotation.
+- *Lift-off oversteer* — Sudden removal of throttle mid-corner causing weight to shift forward, unloading the rear tyres and inducing oversteer.
+
+=== Race Terms
+
+- *Delta time* — The difference in lap time between your current lap and a reference lap (your best, or the leader's). Shown as +/- time. Green = faster, red = slower.
+- *Gap* — The time difference between your car and the car ahead or behind. Gap to ahead shrinks when you are faster. Gap to behind grows when you are slower.
+- *Blue flag* — A flag shown to slower cars indicating a faster car is approaching to lap them. The slower car must hold their line and allow the pass.
+- *Track limits* — The defined edges of the track. Exceeding them (all four wheels beyond the white line or kerb) may result in a warning or time penalty depending on the server or championship rules.
+- *Pit window* — The optimal lap range for making a pit stop. Entering too early or too late can cost track position.
+
+=== Setup Terms
+
+- *Camber* — The vertical angle of the tyre relative to the road surface. Negative camber (top of tyre tilted inward) improves cornering grip.
+- *Caster* — The steering axis angle. More caster improves straight-line stability and steering return.
+- *Toe* — The angle of the tyres relative to the car's centreline. Toe-in (fronts pointing inward) improves stability. Toe-out improves turn-in response.
+- *ARB (Anti-Roll Bar)* — A suspension component that resists body roll. Softer = more mechanical grip, stiffer = quicker response.
+- *Ride height* — The distance between the chassis and the ground. Lower = better aerodynamics, stiffer suspension feel. Higher = more suspension travel, better kerb riding.
+- *Dampers (shocks)* — Control the speed of suspension compression (bump) and extension (rebound). Affect how the car responds to kerbs, elevation changes, and weight transfer.
+
+== The Perfect Lap
+
+A perfect lap is not one magic corner — it is connecting every phase of every corner correctly, lap after lap. This section breaks down the ideal sequence and explains how to build it visually, corner by corner.
+
+=== The Four Phases of a Corner
+
+Every corner has four distinct phases. Time lost in any phase cannot be fully recovered in the next.
+
+#figure(
+  table(
+    columns: (2.5cm, 2.8cm, 2.8cm, 2.8cm, 2.8cm),
+    inset: 4pt,
+    stroke: 0.5pt + gray,
+    table.header(
+      [], [*Phase 1*], [*Phase 2*], [*Phase 3*], [*Phase 4*],
+    ),
+    [*Name*], [Brake], [Turn-in], [Apex], [Track-out],
+    [*Action*], [Maximum brake], [Trail brake + steering], [Min speed + feed throttle], [Full throttle + unwind],
+    [*Weight*], [Forward], [Front loaded], [Neutral], [Rear loaded],
+    [*Speed*], [~Decreasing], [~Low point], [~Minimum], [~Increasing],
+    [*Risk*], [Lock-up], [Spin], [Understeer], [Oversteer],
+  ),
+  caption: [
+    The four phases of a corner. Each phase has a distinct objective,
+    weight state, speed profile, and risk. Mastering the phase transitions
+    is how you build a perfect lap.
+  ]
+)
+
+1. *Braking zone* — The car should be in a straight line. Brake at maximum pressure (threshold braking) then begin to release smoothly. The brake release transitions into...
+2. *Turn-in* — Steering input begins while the brake is still 10--20% applied (trail braking). Weight is on the front tyres, giving maximum rotation. The steering input should be progressive, not jerky.
+3. *Apex* — Brake reaches zero at or just before the apex. The car is at its minimum speed and tightest radius. Throttle application begins here — gently at first, then aggressively.
+4. *Track-out* — The car reaches the outside edge of the track. Steering is fully unwound. Throttle is at 100% if the car can take it. The earlier you reach full throttle, the higher your exit speed and the faster the following straight.
+
+=== The Corner Speed Tradeoff
+
+The fundamental compromise in cornering:
+
+- *Entry speed vs Exit speed* — Every km/h you carry into the corner costs you more on exit. The car needs more steering angle and more rotation to handle higher entry speed, which delays throttle application. Typically, sacrificing entry speed for earlier throttle is the faster strategy.
+- *Minimum speed* — The slowest point should be at the apex, not before it and not after it. If your minimum speed occurs before the apex, you braked too early or turned in too late. If it occurs after the apex, you turned in too early or applied throttle too aggressively.
+- *The principle:* Slow in, fast out. Every corner you enter slower than you think you need to will reward you with a higher exit speed. Trust that the extra exit speed will more than compensate for the entry speed you gave up.
+
+#figure(
+  table(
+    columns: (2.5cm, 5.5cm, 5.5cm),
+    inset: 4pt,
+    stroke: 0.5pt + gray,
+    table.header(
+      [], [*Fast In (Red)*], [*Slow In (Green)*],
+    ),
+    [*Entry*], [High speed \~ over-slowed], [Slightly lower speed],
+    [*Apex*], [Low (deep valley)], [Higher (clean apex)],
+    [*Exit*], [Low (late to full power)], [High (early to power)],
+    [*Result*], [Slower overall], [Faster overall],
+  ),
+  caption: [
+    The speed tradeoff. *Fast In (Red):* high entry speed forces late braking and
+    a low apex speed — the exit is compromised. *Slow In (Green):* sacrificing
+    entry speed maintains a higher apex and reaches full throttle earlier.
+    Green is almost always faster overall.
+  ]
+)
+
+=== Building a Perfect Lap Step by Step
+
+1. *Start with a reference* — Pick a track and car you know well. Do 5 laps at 80% effort. Your goal is consistency, not speed.
+2. *Improve one corner at a time* — Identify the corner where you lose the most time (use telemetry or to feel). Spend 10 laps working on only that corner. Entry speed? Brake point? Throttle application point?
+3. *String corners together* — Once each corner is individually correct, focus on transitions between corners. Can you carry the exit speed from Turn 3 into the braking zone of Turn 4? If not, your line through Turn 3 is compromising Turn 4.
+4. *The confidence lap* — A perfect lap requires trust. Trust that the car will grip. Trust that the apex will be there. Trust that you can open the throttle earlier. This confidence only comes from practice — there is no shortcut.
+5. *Chase the feeling, not the number* — When you complete a lap that feels effortless — smooth inputs, no corrections, no fight — check the lap time. It will often be your fastest. That feeling is the target state. Reproduce it.
+
+=== Finding Your Limit
+
+- If you never spin or go off-track, you are driving below your limit.
+- If you spin or go off-track every session, you are exceeding your limit.
+- The target: one spin per practice session. That means you touched the limit and found it. Next session, you know where it is.
+
 == Tuning Reference
 
 === Tyre Pressures
@@ -327,40 +451,11 @@ At this level, you need to read the tyres — not just react to them.
 - *Understeer fix:* Soften front ARB or stiffen rear ARB
 - *Oversteer fix:* Stiffen front ARB or soften rear ARB
 
-== Wave 1 Modlist
-
-=== Essential Tools
-
-- #link("https://www.acstuff.club/patch/")[Custom Shaders Patch (CSP)] — Advanced graphics, weather, and post-processing. *Dependencies: Content Manager*. *Impact: Major visual overhaul, adds weather/lighting system. Requires compatible version for AC v1.16.4*.
-- #link("https://www.overtake.gg/downloads/sol.24914/")[Sol] — Weather simulation and lighting system (requires CSP). *Dependencies: Custom Shaders Patch*. *Impact: Dynamic weather, time-of-day cycle, realistic lighting*.
-
-=== Graphics Mods
-
-=== Content Mods (Cars)
-
-- #link("https://www.overtake.gg/downloads/ferrari-488-gtlm-2017.35056/")[Ferrari 488 GTE] — GTE/GTLM-class endurance racer. *Dependencies: None*.
-
-=== Content Mods (Tracks)
-
-- #link("https://www.overtake.gg/downloads/bathurst.8677/")[Mount Panorama Bathurst] — Legendary Australian circuit. *Dependencies: None*.
-- #link("https://www.overtake.gg/downloads/n%C3%BCrburgring-nordschleife.2270/")[Nürburgring Nordschleife] — The Green Hell. *Dependencies: None*.
-- #link("https://www.overtake.gg/downloads/spa-francorchamps-2022.50090/")[Spa-Francorchamps] — 2022 layout. *Dependencies: None*.
-- #link("https://www.overtake.gg/downloads/brands-hatch.2726/")[Brands Hatch] — Classic British circuit. *Dependencies: None*.
-
-=== Mechanics Mods
-
-- #link("https://www.overtake.gg/downloads/ffbclip-app.7910/")[FFB Clip] — Force feedback optimization tool. *Dependencies: Content Manager*. *Impact: Prevents FFB clipping, improves wheel feel. System/mechanic: Force feedback system enhancement*.
-- #link("https://www.overtake.gg/downloads/minimalista-hud.61870/")[Minimalista HUD] — Clean data HUD replacement. *Dependencies: Content Manager*. *Impact: Dashboard overlay with telemetry data*. *Replaces old RST Minimal UI*.
-
-=== Optional
-
-- #link("https://www.overtake.gg/downloads/esotic-shift-light.10030/")[3D Shift Light] — Visual gear shift indicator. *Dependencies: Content Manager*.
-
 == Installation Sequence
 
 1. Ensure Wave 0 is fully installed and verified
 2. Install *Custom Shaders Patch* via Content Manager
-3. Install *Sol* (requires CSP active)
+3. Install *Pure* (weather controller — the successor to Sol; requires CSP)
 4. Install all other Wave 1 mods in any order
 5. Verify CSP is active
 

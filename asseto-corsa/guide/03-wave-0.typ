@@ -263,17 +263,6 @@ Clean laps are faster than spectacular laps. A spin costs 3—5 seconds. A four-
 - *Tracks:* Magione, Brands Hatch Indy, Monza Junior, Imola short layouts
 - *Session:* 20—30 minute practice sessions — short enough to stay focused, long enough to build patterns
 
-== Wave 0 Modlist
-
-Wave 0 includes only UI, HUD, and quality-of-life mods. No mechanics, graphics, or content changes.
-
-=== UI & Quality of Life
-
-- #link("https://www.overtake.gg/downloads/sidekick.11007/")[Sidekick] — Audible spotter for proximity, gaps, and flags. *Dependencies: Content Manager*. *Impact: Audio notification system, no gameplay change*.
-- #link("https://www.overtake.gg/downloads/car-radar.15743/")[Car Radar] — Visual radar display showing nearby cars. *Dependencies: Content Manager*. *Impact: Situational awareness tool, no physics change*.
-- #link("https://www.overtake.gg/downloads/helicorsa.5199/")[Helicorsa] — 3D arrow indicator showing car proximity and relative position. *Dependencies: Content Manager*. *Impact: Visual overlay, no gameplay change*.
-- #link("https://www.thecrewchief.org/forumdisplay.php?15-Download-CrewChief-for-PC")[Crew Chief] — External spotter and race engineer application. *Dependencies: Standalone app (runs alongside AC)*. *Impact: Voice-based spotter, pit strategy assistance, no in-game modification*.
-
 === Installation Instructions
 
 1. Download each mod from the link provided

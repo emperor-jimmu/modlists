@@ -74,7 +74,8 @@
 
 #text(weight: "bold")[*PP Filter (Post-Processing Filter)*] — A visual filter applied after rendering that affects color, contrast, bloom, and tone mapping.
 
-#text(weight: "bold")[*Sol*] — A weather simulation system for Assetto Corsa that requires CSP. Adds dynamic time-of-day and realistic weather.
+#text(weight: "bold")[*Pure*] — The current standard weather simulation system for Assetto Corsa. Replaces the older Sol system. Requires CSP 0.2.0+. Adds physically-based sky rendering, volumetric clouds, dynamic exposure, and realistic sun positioning.
+#text(weight: "bold")[*Sol*] — The legacy weather simulation system for Assetto Corsa that requires CSP. Adds dynamic time-of-day and realistic weather. Pure is the recommended successor.
 
 #text(weight: "bold")[*Understeer*] — Condition where the front wheels lose grip, causing the car to continue straight despite steering input.
 

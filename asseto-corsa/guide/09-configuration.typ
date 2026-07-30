@@ -92,20 +92,20 @@
   table.header([Tab], [Key Settings]),
   [General], [Enable "Use 64-bit AC", "Skip intro logos"],
   [Lighting FX], [Adjust sun, ambient, and contrast to preference],
-  [Weather FX], [Enable "Sol weather script" after Sol installation],
+  [Weather FX], [Enable "Pure weather script" after Pure installation],
   [Particles FX], [Enable smoke and rain particles],
   [Smart Mirror], [Set FPS limit to 30 to save performance],
 )
 
-=== Sol Configuration
+=== Pure Configuration
 
-After installing Sol:
+Pure is the recommended weather controller (successor to Sol). After installing Pure:
 
-1. Set in-game time to 14:00
-2. Weather: Select "Sol" weather plan
-3. Enable "Time progression" for dynamic day/night
-4. Set time multiplier to 1x (real time) or 2-5x for accelerated
-5. Adjust cloud coverage in the Sol Weather Controller app
+1. Launch AC through Content Manager
+2. In CM → *Settings → Custom Shaders Patch → Weather FX*: Verify Pure is selected as the weather controller
+3. In-game, open the Pure apps: *Pure Plan Manager* selects time and weather, *Pure Config* adjusts exposure and post-processing
+4. Recommended starting preset: "3_PP_Default" for balanced visuals
+5. For rain: select a rain plan and enable CSP rain effects under *CSP → Weather FX → Rain*
 
 == Audio Configuration
 

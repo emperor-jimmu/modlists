@@ -6,7 +6,7 @@ This is **Assetto Maximus**, a curated modlist and game guide for **Assetto Cors
 
 ## Structure
 
-```
+```bash
 /
 ├── AGENTS.md              — This file: instructions for AI
 ├── README.md              — Project overview for humans
@@ -53,7 +53,9 @@ This is **Assetto Maximus**, a curated modlist and game guide for **Assetto Cors
 ## Workflow
 
 - Mod entries format: `[Name](URL)` — Dependencies, system/mechanic impact, notes
-- Add mods to the appropriate category file in `guide/`
+- Add mods ONLY to their category file in `guide/` — do NOT add mod listings to wave files (wave files are for the driving curriculum only)
+- Every mod must appear in exactly ONE category file. Before adding a mod, grep the other category files to verify it is not already listed
+- Check `conflicts.md` before adding any mod that changes the same system as an existing mod (FFB, AI, physics, weather, etc.)
 - Update `conflicts.md` when a conflict is discovered
 - Add new mod ideas to `mod-ideas.md`
 - Run `generate-pdf.bat` to rebuild the PDF after content changes
@@ -61,4 +63,4 @@ This is **Assetto Maximus**, a curated modlist and game guide for **Assetto Cors
 
 ## Content Manager
 
-The guide uses **Content Manager** (https://assettocorsa.club/content-manager.html) as the mod management tool. Include full setup and configuration instructions.
+The guide uses **Content Manager** (<https://assettocorsa.club/content-manager.html>) as the mod management tool. Include full setup and configuration instructions.
