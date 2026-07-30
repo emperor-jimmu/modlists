@@ -643,3 +643,120 @@ All mods from Wave 0 remain active. Do not disable any previous wave's mods unle
 - *Description:* Stops repetitive AI voice lines from playing, reducing radio chatter spam.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=1397683809")[Reduced Haze Mod v3.1]
+
+- *Type:* Graphics
+- *Mod ID:* `1397683809`
+- *Description:* Reduces atmospheric haze and fog for improved long-distance visibility.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3518145984")[D.I.R.T. - Dynamic Textures]
+
+- *Type:* Graphics
+- *Mod ID:* `3518145984`
+- *Description:* Ground textures dynamically change with vehicle traffic — mud, dust, and tire tracks appear on driven surfaces.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3525653940")[D.I.R.T. - Blood Textures]
+
+- *Type:* Graphics
+- *Mod ID:* `3525653940`
+- *Description:* Blood pools and splatters persist on the ground after injuries.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2572487482")[WebKnight Flashlights and Headlamps]
+
+- *Type:* Graphics
+- *Mod ID:* `2572487482`
+- *Description:* Improves flashlight and headlamp visuals with better beam rendering, range, and falloff.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2623341670")[Animated Recoil coefficient changer]
+
+- *Type:* Graphics
+- *Mod ID:* `2623341670`
+- *Description:* Adds weapon model recoil animations that match the actual recoil pattern.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2153127400")[Ride Where You Look]
+
+- *Type:* Graphics
+- *Mod ID:* `2153127400`
+- *Description:* Vehicle passenger camera follows where you look instead of locking to vehicle direction.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3036516333")[KtweaK]
+
+- *Type:* Graphics
+- *Mod ID:* `3036516333`
+- *Description:* Collection of visual tweaks — improved lighting, color grading, and post-processing adjustments.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3599790114")[Some Effects Rework - Less Impacts PATCH]
+
+- *Type:* Graphics
+- *Mod ID:* `3599790114`
+- *Description:* Performance-optimized version of Some Effects Rework: Impacts with fewer particles.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3116300538")[Unit Voice-Overs Expanded - factions plus]
+
+- *Type:* Graphics
+- *Mod ID:* `3116300538`
+- *Description:* Expands voice-over lines for additional factions beyond the base game.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=708931058")[SSD Death Screams 2.1]
+
+- *Type:* Graphics
+- *Mod ID:* `708931058`
+- *Description:* Replaces death sounds with more visceral, varied injury and death audio.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("8e44ad")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2812569803")[LAxemann's Environment Ducking]
+
+- *Type:* Graphics
+- *Mod ID:* `2812569803`
+- *Description:* Audio ducking — reduces environmental sounds during radio comms and important audio cues.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3487820370")[Helmet on Ass - Helmet Slinging]
+
+- *Type:* Content
+- *Mod ID:* `3487820370`
+- *Description:* Helmets are visible on the player's back/ass when removed, with stow and equip animations.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2372036642")[BackpackOnChest - Redux]
+
+- *Type:* Content
+- *Mod ID:* `2372036642`
+- *Description:* Allows moving your backpack to your chest for faster access, with stow/swap animations.
+- *Verified:* 2025-06-17
+]

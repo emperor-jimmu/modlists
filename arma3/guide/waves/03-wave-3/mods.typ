@@ -67,3 +67,43 @@ All mods from Waves 0 through 2 remain active. Do not disable any previous wave'
 - *System Impact:* Changes AI weapon handling behavior. Machinegunner AI will suppress and prioritize targets more realistically.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2917699577")[Drongo's Better AI Gunners]
+
+- *Type:* Mechanics
+- *Mod ID:* `2917699577`
+- *Description:* AI vehicle gunners acquire and track targets more effectively. Improves AI accuracy and reaction time in turrets.
+- *System Impact:* Changes AI gunnery behavior. Vehicle-mounted AI will be more dangerous and responsive.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=583496184")[CUP Terrains - Core]
+
+- *Type:* Content
+- *Mod ID:* `583496184`
+- *Description:* Core CUP terrain pack adding classic maps from past Arma titles. Used by many community scenarios.
+- *System Impact:* Large download (~5GB). Adds significant hard drive space usage. Required for CUP-dependent missions.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=583544987")[CUP Terrains - Maps]
+
+- *Type:* Content
+- *Mod ID:* `583544987`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=583496184")[CUP Terrains - Core]]
+- *Description:* Additional CUP map pack with more terrain options.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=1883956552")[Interiors for CUP]
+
+- *Type:* Content
+- *Mod ID:* `1883956552`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=583496184")[CUP Terrains - Core]]
+- *Description:* Adds building interiors to CUP terrain structures. Required for room clearing in CUP maps.
+- *Verified:* 2025-06-17
+]

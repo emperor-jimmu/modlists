@@ -227,3 +227,57 @@ This wave is limited to UI and quality-of-life mods. These do not alter core gam
 - *Description:* HUD display showing magazine type, round count, and magazine condition.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("2980b9")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2981787966")[Ground Map]
+
+- *Type:* UI/QoL
+- *Mod ID:* `2981787966`
+- *Description:* Opens the map on the ground in front of the player instead of the full-screen map overlay.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("2980b9")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2110586494")[Tao's Folding Map Rewrite]
+
+- *Type:* UI/QoL
+- *Mod ID:* `2110586494`
+- *Description:* Animated map opening and folding with physical map object held by the player.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("2980b9")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2467590475")[Enhanced Map Ace Version]
+
+- *Type:* UI/QoL
+- *Mod ID:* `2467590475`
+- *Description:* ACE-compatible enhanced map with better terrain shading, contour lines, and marker visibility.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("2980b9")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3002564430")[Modernized Controls Collection]
+
+- *Type:* UI/QoL
+- *Mod ID:* `3002564430`
+- *Description:* Pre-configured modern keybinding preset for smoother controls.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("2980b9")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2126300184")[No Actions]
+
+- *Type:* UI/QoL
+- *Mod ID:* `2126300184`
+- *Description:* Cleans up the scroll wheel action menu by hiding irrelevant or redundant action entries.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("2980b9")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=1923461667")[Aiming Deadzone Fix]
+
+- *Type:* UI/QoL
+- *Mod ID:* `1923461667`
+- *Description:* Fixes input deadzone issues when aiming down sights for more responsive aiming.
+- *Verified:* 2025-06-17
+]

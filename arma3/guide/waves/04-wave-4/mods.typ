@@ -234,3 +234,23 @@ All mods from Waves 0 through 3 remain active. Do not disable any previous wave'
 - *System Impact:* Game master tool. Enhances the Zeus experience for mission makers and GMs. No impact on non-Zeus gameplay.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=623475643")[3den Enhanced]
+
+- *Type:* Mechanics
+- *Mod ID:* `623475643`
+- *Description:* Enhances the Eden Editor with new tools, better object placement, and quality-of-life improvements for mission makers.
+- *System Impact:* Editor tool only. No impact on gameplay.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3043987264")[Modules Enhanced]
+
+- *Type:* Mechanics
+- *Mod ID:* `3043987264`
+- *Description:* Adds new Zeus modules for advanced mission control — ambient combat, civilian traffic, patrol routes, and more.
+- *System Impact:* Zeus tool. Enhances game master capabilities. No impact on non-Zeus gameplay.
+- *Verified:* 2025-06-17
+]

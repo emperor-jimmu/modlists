@@ -227,3 +227,151 @@ All mods from Waves 0 and 1 remain active. Do not disable any previous wave's mo
 - *Description:* Allows players to walk on moving vehicles, platforms, and ship decks without sliding off.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]
+
+- *Type:* Mechanics
+- *Mod ID:* `463939057`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]]
+- *Description:* Advanced Combat Environment — the definitive Arma 3 realism mod. Adds medical system, ballistics, interaction system, vehicle repairs, map tools, and hundreds of quality-of-life improvements.
+- *System Impact:* Complete overhaul of core gameplay. Replaces vanilla medical, interaction, ballistics, and repair systems. Required by many mods in later waves.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2522638637")[ACE3 Arsenal Extended - Core]
+
+- *Type:* Mechanics
+- *Mod ID:* `2522638637`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Extends the ACE Arsenal with better categorization, search, and loadout management.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2939048233")[ACE3 Arsenal Extended - Vanilla (and ACE)]
+
+- *Type:* Mechanics
+- *Mod ID:* `2939048233`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Adds ACE-specific items and vanilla equipment to the extended Arsenal UI.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2132195038")[ACE Interaction Menu Expansion - Enhanced]
+
+- *Type:* Mechanics
+- *Mod ID:* `2132195038`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Adds more interaction options to the ACE interaction menu — vehicle controls, equipment management, and environmental interactions.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2930736286")[Armor Modifier - ACE]
+
+- *Type:* Mechanics
+- *Mod ID:* `2930736286`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Allows adjusting vehicle armor values and configuration through ACE interaction.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2418896377")[ACE Grenades in hatches - Tweaked]
+
+- *Type:* Mechanics
+- *Mod ID:* `2418896377`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Allows passing grenades through vehicle hatches for crew engagement.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3343051345")[WMO_ACE]
+
+- *Type:* Mechanics
+- *Mod ID:* `3343051345`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]], [#link("https://steamcommunity.com/workshop/filedetails/?id=925018569")[WMO]]
+- *Description:* Compatibility patch between WMO (Walkable Moving Objects) and ACE interaction system.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3037169163")[Better ace Cook Off Sounds]
+
+- *Type:* Mechanics
+- *Mod ID:* `3037169163`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Replaces ACE cook-off (ammo explosion) sounds with more realistic audio.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=1224892496")[Gruppe Adler Trenches]
+
+- *Type:* Mechanics
+- *Mod ID:* `1224892496`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Allows digging defensive trenches, sandbag positions, and fighting positions using ACE tools.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=1889104923")[Brush Clearing]
+
+- *Type:* Mechanics
+- *Mod ID:* `1889104923`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Clear vegetation and bushes using ACE interaction to improve sight lines and fields of fire.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3739006311")[Advanced Towing Rework]
+
+- *Type:* Mechanics
+- *Mod ID:* `3739006311`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Advanced vehicle towing system with realistic physics and ACE interaction support.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3450571478")[Unconscious Collision Disabler]
+
+- *Type:* Mechanics
+- *Mod ID:* `3450571478`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=463939057")[ACE]]
+- *Description:* Prevents dragging unconscious/dead bodies through walls and obstacles.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3386499307")[[SHG] Survivable Wrecks]
+
+- *Type:* Mechanics
+- *Mod ID:* `3386499307`
+- *Description:* Vehicle wrecks remain as solid cover instead of disappearing. Survivors can shelter in wreckage.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3283652320")[Melee - Rewrite]
+
+- *Type:* Mechanics
+- *Mod ID:* `3283652320`
+- *Description:* Adds melee combat with weapon butts, knives, and entrenching tools. ACE interaction integrated.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("e74c3c")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=3283645995")[Breach - Rewrite]
+
+- *Type:* Mechanics
+- *Mod ID:* `3283645995`
+- *Description:* Door breaching with explosives, shotguns, and melee. ACE interaction integrated.
+- *Verified:* 2025-06-17
+]

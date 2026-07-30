@@ -104,6 +104,33 @@ _Not included in PDF. Track incompatibilities and mods needing review._
 
 ---
 
+## New: From A3E Ace Collection
+
+### AI Mod Conflicts
+
+| ID | Mod | Issue |
+|----|-----|-------|
+| `3583496722` | VCOM AI b0s edit | Complete AI replacement. **Conflicts** with LAMBS_RPG + Smart Combat AI. Pick one AI suite. |
+| `3673419571` | Fast Reaction AI - FRAI | Modifies AI behavior. **Potential conflict** with LAMBS and Smart Combat AI. |
+| `3559900745` | Pinned Down - A Total Combat Immersion Mod | Suppression effects. **Overlaps** with Immerse (`825172265`) and Suppress (`825174634`). |
+| `3606913676` | Lambs_RPG Tweaked | Fork of LAMBS. **Redundant** with LAMBS_RPG (`1858070328`) already in Wave 2. |
+
+### Redundancy
+
+| ID | Mod | Conflicts With |
+|----|-----|----------------|
+| `3448431626` | Blastcore Murr Edition (TT Version) | Blastcore Murr Edition (`2257686620`) already in Wave 1 |
+| `3704702374` | Fluffys Enhanced Lighting | Fluffys Enhanced Lighting 2.0 (`3737586377`) already in Wave 1 |
+
+### WIP / Borderline
+
+| ID | Mod | Issue |
+|----|-----|-------|
+| `3650593763` | [ANDIA] - FUBAR System (DEV) | WIP/DEV — unstable. |
+| `3391443819` | Realistic Underwear Replacement | Borderline adult content. Check against modlist rules. |
+
+---
+
 ## WIP / Deprecated (Skip)
 
 | ID | Mod | Issue |
