@@ -361,7 +361,7 @@ A perfect lap is not one magic corner — it is connecting every phase of every 
 Every corner has four distinct phases. Time lost in any phase cannot be fully recovered in the next.
 
 #figure(
-  image("../assets/racing-line-reference.png", height: 50%),
+  image("../assets/racing-line-reference.png", height: 30%),
   caption: [
     The four phases of a corner — braking point, turn-in, apex, and exit.
     Source: Driver61.com racing line tutorial. The racing line (yellow) uses
@@ -385,7 +385,7 @@ The fundamental compromise in cornering:
 - *The principle:* Slow in, fast out. Every corner you enter slower than you think you need to will reward you with a higher exit speed. Trust that the extra exit speed will more than compensate for the entry speed you gave up.
 
 #figure(
-  image("../assets/ideal-racing-line.png", height: 50%),
+  image("../assets/ideal-racing-line.png", height: 30%),
   caption: [
     The speed tradeoff — geometric line vs ideal racing line. Green = geometric
     line (shallowest arc, constant speed). Red = ideal racing line (later
