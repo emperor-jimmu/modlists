@@ -4,13 +4,6 @@
 # implemented and are excluded from the PDF output.
 # =============================================================================
 
-## Graphics
-
-- LOD improvement mods for distant unit rendering
-- Enhanced weather and skybox packs
-- Upgraded siege battle visual effects
-- Improved vegetation and terrain texture packs
-
 ## Content
 
 - New legendary lord selections for existing factions
