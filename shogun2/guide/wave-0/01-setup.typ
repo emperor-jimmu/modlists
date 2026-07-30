@@ -39,10 +39,10 @@ From the main menu:
 
 - Pay attention to the loading screen tips — they teach real mechanics
 - The advisor (the floating face) can be toggled off with the top-left button, but keep it on for Wave 0
-- Pause the game with `P` anytime during a battle
+- Pause the game with *P* anytime during a battle
 
 === Saving and Loading
 
 - The game auto-saves at the start of each turn
-- Manual saves are recommended before any major battle (use `F5` for quick save)
+- Manual saves are recommended before any major battle (use *F5* for quick save)
 - You can have multiple save files — rotate them so you can go back if needed

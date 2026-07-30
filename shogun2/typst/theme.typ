@@ -25,8 +25,33 @@
 // ── Fonts ──
 #let body-font = "Crimson Pro"
 #let heading-font = "Crimson Pro"
-#let cjk-font = "Noto Sans CJK JP"
 #let code-font = ("Consolas", "Courier New")
+
+// ── Mod Panel ──
+#let mod-panel(name, url, accent, body) = {
+  let border-color = rgb("#D8D4CB")
+  block(
+    width: 100%,
+    inset: (left: 14pt, right: 14pt, top: 11pt, bottom: 11pt),
+    stroke: (left: 4pt + accent, top: 0.5pt + border-color, bottom: 0.5pt + border-color, right: 0.5pt + border-color),
+    fill: rgb("#F9F7F3"),
+    radius: 4pt,
+    outset: (bottom: 10pt),
+  )[
+    #set text(size: 14pt, weight: "bold", fill: accent)
+    #link(url)[#name]
+
+    #v(6pt)
+    #set text(size: 11pt, weight: "regular", fill: body-dark)
+    #body
+
+    #v(8pt)
+    #align(right)[
+      #set text(size: 8pt, fill: rgb("#AAAAAA"))
+      #link(url)[Workshop page #sym.arrow.r]
+    ]
+  ]
+}
 
 // ── Page Dimensions ──
 #let page-width = "a4"

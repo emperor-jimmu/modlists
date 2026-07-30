@@ -63,6 +63,70 @@ To use matchlocks effectively: deploy your yari line in a shallow formation (2 r
 2. The enemy AI often pursues the retreating unit, breaking their formation.
 3. Hit the exposed enemy flank with your cavalry or katana reserve.
 
+==== Terrain Mastery: What Every Battlefield Tells You
+
+The battlefield is not a flat arena. Every terrain feature creates advantages you must exploit and dangers you must avoid:
+
+*Hills:* Units at higher elevation gain +2 melee attack against units below them. Archers on a hill gain +20% range and can shoot over friendly units in front of them (partial line of sight bypass). The uphill charging penalty adds fatigue — a unit that charges uphill arrives exhausted, fighting at 50% effectiveness. Always deploy on the highest ground available. If the enemy holds the hill, do not charge — make them come down to you.
+
+*Forests:* Units inside a forest cannot be seen until the enemy is within ~30 units. Forest battles reduce cavalry effectiveness by 40% (cavalry cannot charge through trees). Yari and katana infantry fight at normal effectiveness in forests. If the enemy has more cavalry than you, draw them into forest terrain. If you have cavalry, keep the battle in open ground.
+
+*Rivers:* Crossing a river gives the crossing unit a severe fatigue penalty (fresh to tired after crossing). While crossing, units are extremely vulnerable — they cannot fight back effectively and are packed tightly. Never cross a river in sight of the enemy. If the AI crosses a river to reach you, hit them as they emerge on your bank.
+
+*Villages and settlements:* Buildings block line of sight and movement. A yari unit placed in a village street can hold off 3x its number because only 2-3 models can engage at once. Use villages as force multipliers when outnumbered. Do not chase enemies through villages — let them come to you.
+
+==== Weather and Time of Day
+
+*Rain:* Rain reduces matchlock accuracy by ~80%. Bow units also take a penalty (roughly -30% accuracy). Yari and katana fight at normal effectiveness in rain. Check the weather overlay on the deployment screen. If you have matchlocks and it is raining, either wait (if the AI will attack) or deploy your matchlocks as melee reserves instead.
+
+*Night battles:* A general with the Night Fighter skill (unlocked at rank 3+) can fight night battles. During a night battle, both sides have reduced visibility (roughly 50% range reduction for ranged units). The defender loses their wall combat bonus. Use night battles to assault castles with fewer casualties, or to force a battle against a larger army that would normally avoid fighting.
+
+==== General Abilities and Retinue
+
+Your general is the most important unit in every battle. Level them deliberately:
+
+*Essential skills (take these first on every general):*
+- *Stand Firm (rank 1):* Reduces morale shock to nearby units. Your line will not break as easily.
+- *Night Fighter (rank 3):* Unlocks night battles. Use to fight at 2:1 odds.
+- *Hold the Line (rank 5):* All units within the general's aura fight at +2 melee defense.
+- *Second Wind (rank 7):* Reduces fatigue for nearby units. Keeps your line fresh.
+
+*Retinue items to watch for:*
+- *Warrior (any):* +1 melee attack to the general's bodyguard. Good for aggressive play.
+- *Engineer:* +25% siege construction speed. Put this on your siege army general.
+- *Strategist:* +5% movement range for the army. Excellent for reaction speed.
+- *Ninja:* +2% chance to detect enemy agents in the army's province.
+
+*General death:* If your general dies, all units within his aura take an immediate -12 morale penalty and lose all general bonuses. Units far from the general check morale independently — they are at risk of routing immediately. Protect your general. If he is in danger, pull him back behind the line. A dead general loses you the battle more often than any other single mistake.
+
+==== Countering Specific Army Compositions
+
+*Vs cavalry-heavy (Takeda):*
+- Deploy on a hill or in a forest. Cavalry cannot charge uphill effectively or charge through trees.
+- Use yari wall across your entire front line. Every yari unit must be in wall formation before contact.
+- Place naginata (if available) on the flanks. Naginata have the highest melee defense and can hold against cavalry longer than yari.
+- Keep your general inside the yari line. A charging cavalry general can kill your general in one charge if he is exposed.
+- Do not let your bow units fire at charging cavalry — they will not kill enough before contact, and your bow units will be caught without protection.
+
+*Vs matchlock-heavy (Otomo):*
+- Matchlocks cannot shoot through their own units. If the enemy has many matchlocks, they will deploy them on flanks or in gaps.
+- Spread your formation wide to force their matchlocks to reposition. Matchlocks move at half speed while loaded.
+- Rush with cavalry. Matchlocks have zero melee defense. A single cavalry charge into a matchlock unit destroys it permanently.
+- Use forests. Matchlocks need line of sight and forests block it completely.
+
+*Vs monk-heavy (Ikko-Ikki):*
+- Warrior monks have high attack, high morale, and cause fear. They will beat your ashigaru in a straight fight.
+- Monks have no armor. Bow fire is extremely effective against them. Focus all bow fire on monk units.
+- Monk units have small unit sizes (40-60 models vs 120-160 for ashigaru). They lose combat effectiveness quickly as models die.
+- Engage monks with multiple units simultaneously. A single katana unit will lose to a warrior monk unit. Two katana units will win.
+
+*Siege defense (outnumbered):*
+- The defender has enormous advantages. Use them.
+- Place bow units on the walls. They get unlimited ammunition and +20% range from wall height.
+- Use oil at the gate. One oil pour kills 80-120 models. Time it for when the enemy is densely packed at the gate.
+- Do not defend all wall sections equally. Concentrate your best units on one section and let the enemy take the others, then counter-attack to retake walls.
+- Your general should stay in the castle center. His aura covers units on the walls if positioned correctly.
+
 ==== Agent Operations: Skill Trees and Strategy
 
 -- Metsuke --

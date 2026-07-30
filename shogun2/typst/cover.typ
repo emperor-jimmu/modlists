@@ -8,7 +8,7 @@
 )
 
 #align(center + horizon, text(
-  font: (heading-font, cjk-font),
+  font: heading-font,
   size: 14pt,
   fill: oda-gold,
   weight: "regular",

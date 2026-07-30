@@ -15,7 +15,7 @@
 )
 
 // ── Global Text ──
-#set text(font: (body-font, cjk-font), size: 12pt, fill: body-dark)
+#set text(font: body-font, size: 12pt, fill: body-dark)
 #set par(justify: true, leading: 0.65em)
 
 // ── Global Heading Styles ──
@@ -25,7 +25,7 @@
   fill: oda-crimson,
 )[
   #set text(
-    font: (heading-font, cjk-font),
+    font: heading-font,
     size: 24pt,
     fill: white,
     weight: "bold",
@@ -35,7 +35,7 @@
 
 #show heading.where(level: 2): it => [
   #set text(
-    font: (heading-font, cjk-font),
+    font: heading-font,
     size: 17pt,
     fill: oda-crimson,
     weight: "bold",
@@ -45,7 +45,7 @@
 
 #show heading.where(level: 3): it => [
   #set text(
-    font: (heading-font, cjk-font),
+    font: heading-font,
     size: 14pt,
     fill: oda-black,
     weight: "bold",
@@ -83,7 +83,7 @@
   inset: (top: 0.5em, bottom: 0.25em),
   fill: shimazu-vermillion,
 )[
-  #set text(font: (heading-font, cjk-font), size: 24pt, fill: white, weight: "bold")
+  #set text(font: heading-font, size: 24pt, fill: white, weight: "bold")
   #it
 ]
 #show heading.where(level: 2): set text(fill: shimazu-vermillion)
@@ -102,7 +102,7 @@
   inset: (top: 0.5em, bottom: 0.25em),
   fill: oda-crimson,
 )[
-  #set text(font: (heading-font, cjk-font), size: 24pt, fill: white, weight: "bold")
+  #set text(font: heading-font, size: 24pt, fill: white, weight: "bold")
   #it
 ]
 #show heading.where(level: 2): set text(fill: oda-crimson)
@@ -121,7 +121,7 @@
   inset: (top: 0.5em, bottom: 0.25em),
   fill: tokugawa-navy,
 )[
-  #set text(font: (heading-font, cjk-font), size: 24pt, fill: white, weight: "bold")
+  #set text(font: heading-font, size: 24pt, fill: white, weight: "bold")
   #it
 ]
 #show heading.where(level: 2): set text(fill: tokugawa-navy)

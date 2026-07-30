@@ -10,7 +10,9 @@ When adding a new mod, cross-reference its tables/files against existing entries
 
 | Mod A | Mod B | Nature of Conflict | Severity | Resolution |
 |-------|-------|--------------------|----------|------------|
-| | | | | |
+| Strongholds Of The Samurai | Better Maps | Both replace siege/land battle maps. Same tables. | Critical | Use Strongholds — 116K+ subs, updated 2020. Do not use both. |
+| UAI Updated | Common-sense Diplomacy | Both modify AI diplomatic weights and decision-making. | Medium | Use UAI — broader AI overhaul (military, autoresolve, RotS support). |
+| Sengoku Campaign Retexture | (none) | Requires Genpei DLC (Rise of the Samurai). Does not function without it. | Medium | Not included in current modlist. If player lacks RotS DLC, will not work. |
 
 ## Severity Key
 

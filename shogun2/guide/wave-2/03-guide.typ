@@ -161,6 +161,114 @@ After completing a campaign as a strong clan (Shimazu, Oda, Tokugawa), try these
 - Build farms and markets in every province for the first 20 turns. Do not recruit more than one army.
 - Key advantage: Hojo get +1 to castle tiers. Your castles are always one level above everyone else's. A Hojo tier-3 castle is effectively a tier-4 castle.
 
+==== Faction Strategy: All Clans by Archetype
+
+Every clan in Shogun 2 plays differently. Beyond individual opening moves, clans fall into strategic archetypes that dictate your long-term approach.
+
+===== Military Clans (Takeda, Date, Shimazu)
+
+These clans win through superior armies. Your economy exists to fund your military. Expand early and often.
+
+*Takeda — The Cavalry Kings:*
+- Unique units: Takeda Heavy Cavalry (best cavalry in the game), Takeda Fire Cav (higher charge bonus)
+- Start province: Kai (mountainous, moderate farm potential)
+- Opening strategy: Turn 1, declare war on your eastern neighbor (Satomi or Uesugi). Do not wait. Takeda must expand through aggression because your starting province generates mediocre income. Build farms in Kai, then recruit yari and bow ashigaru alongside cavalry. Your first stable should be upgraded by turn 15.
+- Key technology: Cavalry dojo upgrades (priority). Horse Armor (+4 defense for cavalry) transforms your cavalry from strong to unstoppable.
+- Strategic note: Takeda cavalry is terrifying but expensive. Each cavalry unit costs ~500-600 koku and takes 2 turns to recruit. Do not build an all-cavalry army. Your core should still be yari ashigaru and bow ashigaru — cavalry are the hammer, not the anvil.
+- Realm Divide: Takeda struggles defensively because your cavalry excels in the open field, not on walls. Station cavalry armies in the field between your castles, not inside them.
+
+*Date — The Samurai Elite:*
+- Unique units: Date No-Dachi Samurai (high attack, charge bonus), Date Bow Cavalry (mounted archers)
+- Start province: Mutsu (far north, isolated, rich in resources)
+- Opening strategy: Mutsu is one of the safest starts in the game. You have one direction to expand (south) and no enemies at your back. Build up your economy for 10-15 turns before moving south. Date No-Dachi Samurai are available early and shred ashigaru — use them to overwhelm the northern clans quickly.
+- Key technology: Sword upgrades. Date No-Dachi already have the highest attack of any samurai. Upgrading their weapon damage makes them one-shot ashigaru.
+- Strategic note: Your isolation is both a blessing and a curse. By the time you reach central Japan, the Oda or Takeda may control 15+ provinces. You must expand fast once you move south — do not stop to develop every province.
+- Realm Divide: Date's northern position means you only need to defend a narrow front. Fortify the choke points between north and central Japan and hold them with garrisons.
+
+*Shimazu (Advanced) — The Sword of Kyushu:*
+- Unique units: Shimazu Katana Samurai (best katana samurai in the game — +2 attack over standard), Shimazu Heavy Gunners (matchlock with higher armor)
+- Start province: Satsuma (southern Kyushu, moderate farms, good trade)
+- Opening strategy (advanced): Your beginner campaign taught you the basics. On harder difficulties or with mods, Shimazu's game is unification speed. You should control all of Kyushu by turn 20-25. Build a second army by turn 10 and expand north and east simultaneously.
+- Key technology: Katana dojo upgrades. Shimazu Katana Samurai with full upgrades beat everything except cavalry charges and naginata walls.
+- Strategic note: Shimazu is the best beginner clan because they are forgiving. In expert hands, they are lethal because their economy (Kyushu trade) and military (best katana) combine to produce unstoppable mid-game armies.
+
+===== Economic Clans (Hojo, Mori, Chosokabe)
+
+These clans win through superior resources. Your economy funds more armies than your opponents can field.
+
+*Hojo (Advanced) — The Castle Builders:*
+- Unique bonus: +1 castle tier (a tier-2 castle is effectively tier-3 for recruitment and garrison)
+- Start province: Sagami (Kanto region, richest farmland in Japan)
+- Opening strategy (advanced): Do not expand militarily for the first 20-25 turns. Develop every Kanto province to maximum farms and markets. You will be behind in provinces but ahead in total economic output by turn 25. Once your economy is established, field 2-3 full armies and expand outward — your economic lead lets you out-recruit any opponent.
+- Key technology: Castle upgrades (all levels). Hojo's unique bonus makes your castles one tier higher for defense purposes. A tier-4 Hojo castle requires 2+ full enemy stacks to besiege effectively.
+- Strategic note: Hojo economy snowballs harder than any other clan. A farm built at turn 5 in Hojo hands generates compound growth for 50+ turns. By turn 40, your per-province income should be 2x any neighbor's.
+
+*Mori (Advanced) — The Sea Lords:*
+- Unique units: Mori Bow Warriors (best bow ships in the game — +20 crew, +5 range)
+- Start province: Aki (western Honshu, coastal, access to trade nodes)
+- Opening strategy: Mori's game is naval domination. Build 3-4 trade ships on turn 1 and claim the western trade nodes. Use your naval income to fund a smaller but elite army. Do not expand inland — take coastal provinces and use ports for income. Your navy blockades enemy ports while your army takes undefended coastal settlements.
+- Key technology: Naval tech (all). Bow ship upgrades turn your already-dominant navy into an unstoppable force. A Mori navy at full upgrades can defeat 3x its number in enemy ships.
+- Strategic note: Mori's weakness is inland expansion. You have limited farm potential in your starting provinces. If an enemy clan cuts you off from the coast, your economy collapses. Keep a reserve army near your capital to defend against inland attacks.
+
+*Chosokabe — The Archer Lords:*
+- Unique units: Chosokabe Bow Samurai (best archers in the game — +5 range, +3 accuracy), Chosokabe Bow Cavalry (mounted archers with extra range)
+- Start province: Tosa (Shikoku island, isolated, moderate farms)
+- Opening strategy: Unify Shikoku island by turn 10. Shikoku is isolated and has only 3-4 provinces — you can control it quickly. Build a navy to defend the straits. Your bow dominance means you win battles before the enemy reaches your line. Use lots of bow units (8-10 per army) and let them soften the enemy while your yari hold the line.
+- Key technology: Bow upgrades (priority). Chosokabe Bow Samurai with max upgrades outrange every other ranged unit in the game. They can shoot enemy matchlocks before the matchlocks are in range.
+- Strategic note: Chosokabe is weak in melee. Your katana and yari units are standard quality. Do not rely on them to win fights — your bows do the killing, your infantry just holds the line. Protect your bows with yari walls.
+
+===== Religious Clans (Ikko-Ikki, Otomo)
+
+These clans use religion as a weapon. Your unique units and mechanics revolve around faith.
+
+*Ikko-Ikki — The Warrior Monks:*
+- Unique units: Warrior Monks (high attack, high morale, causes fear, large unit size), Ikko-Ikki Bow Monks (monks with bows), Ikko-Ikki Cavalry Monks (mounted monks)
+- Unique mechanic: Ikko-Ikki starting religion is Ikko (a Buddhist sect). Provinces with Ikko religion get +5 happiness instead of the standard +3. Provinces with Shinto get -5 instead of -3.
+- Start province: Kaga (central Honshu, near Kyoto)
+- Opening strategy: Ikko-Ikki starts surrounded by enemies who hate you (your religion is incompatible with Shinto). Your early game is survival. Build farms first, recruit monks (available from the temple chain), and use warrior monks as your frontline. A warrior monk unit beats a katana samurai unit in a straight fight — use this to win battles despite having fewer provinces.
+- Key technology: Temple upgrades (all). Warrior Monks are recruited from upgraded temples. Higher-tier temples produce better monks.
+- Strategic note: Ikko-Ikki cannot ally with Shinto clans easily. Your diplomacy is limited. Plan for permanent war with most neighbors. Incite Revolt (monk skill) is your best offensive weapon — triggering rebellions in enemy provinces weakens them without spending your own troops.
+- Realm Divide: Ikko-Ikki's religious penalty means Realm Divide hits you harder. Every clan will already hate you. Prepare 2 full defensive armies before crossing 20 provinces.
+
+*Otomo — The Christians:*
+- Unique units: Otomo Matchlock Samurai (best matchlock units in the game — higher accuracy, faster reload), Otomo Christian Archers (archers with bonus vs armored units)
+- Unique mechanic: Otomo are Christian. Christian provinces get +5 happiness and a unique building chain (church to cathedral) that provides research and income. Shinto provinces get -8 happiness instead of -3.
+- Start province: Bungo (northern Kyushu)
+- Opening strategy: Otomo starts in a strong position (Kyushu) but with severe religious penalties. Convert your starting province to Christianity on turn 1 (use your missionary). Build churches instead of temples. Your matchlock units are available earlier than any other clan's gunpowder — use them to dominate the mid game. Expand south through Kyushu first (Shimazu's territory), then east toward central Japan.
+- Key technology: Gunpowder tech (priority). Matchlock range and accuracy upgrades make your Otomo matchlocks the most lethal ranged units in the game. A volley from Otomo Matchlock Samurai can route a samurai unit in 2 shots.
+- Strategic note: Otomo's religious penalty is severe. Every Shinto province you conquer will rebel unless you convert it. This costs monk actions and time. Focus on converting high-value provinces and leave border provinces unconverted (use garrisons to suppress revolts).
+- Realm Divide: Otomo has the hardest Realm Divide because every clan's religious hatred stacks on top of the fame penalty. You need stronger garrisons and more armies than any other clan at Realm Divide.
+
+===== Balanced Clans (Oda, Tokugawa, Uesugi)
+
+These clans have broad strengths but no single dominant aspect. Your strategy adapts to circumstances.
+
+*Oda (Advanced) — The Demon King:*
+- Unique units: Oda Yari Ashigaru (ashigaru with +2 melee attack and +2 morale — almost as good as samurai), Oda Matchlock Ashigaru (cheapest matchlock units in the game)
+- Unique mechanic: Oda's ashigaru are better than any other clan's. You can field ashigaru armies that perform at samurai level for half the cost.
+- Start province: Owari (central Honshu, near Kyoto)
+- Opening strategy (advanced): Oda's strength is volume. You can recruit an army of 20 yari ashigaru in 2 turns for ~4,000 koku. Use this to overwhelm opponents through sheer numbers. Your mid-game transition adds matchlock ashigaru — 4-6 per army gives you firepower without the cost of samurai. Your late-game army should still be mostly ashigaru with a samurai core (katana and naginata).
+- Key technology: Ashigaru upgrades (Metsuke skill: Oversight, and the Honma Ashigaru tech tree). These upgrades turn your already-strong ashigaru into lineholders that can fight samurai evenly.
+- Strategic note: Oda's weakness is the late game. Your ashigaru advantage fades when every clan has tier-4 units. You must win the game before turn 80, or your economic lead disappears. Push aggressive expansion from turn 1.
+
+*Tokugawa (Advanced) — The Shadow Shogun:*
+- Unique units: Tokugawa Ninja (best ninja in the game — +2 to all agent actions), Tokugawa Shinobi (cavalry with bonus in forests)
+- Unique mechanic: Tokugawa starts as a vassal of the Imagawa. You must win a war of independence before you can expand freely.
+- Start province: Mikawa (central Honshu, between Imagawa and Oda)
+- Opening strategy (advanced): Your first 10 turns are about breaking free from the Imagawa. Build up quietly (farms and markets) while paying tribute. When you have 1.5 stacks of ashigaru, declare war on Imagawa and destroy them in 5-7 turns. After independence, your game is diplomacy and agents — use your superior ninja to assassinate enemy generals and sabotage enemy buildings. You should fight one war at a time using agents to soften the next target.
+- Key technology: Ninja upgrades (all). Tokugawa ninja can assassinate generals with 60-70% success rate at rank 3. This is your main military advantage.
+- Strategic note: Tokugawa's position is precarious. You are surrounded by powerful clans (Imagawa, Oda, Takeda). Do not fight multiple wars. Use marriage and gifts to keep 2 of your 3 borders peaceful while you conquer the third.
+- Realm Divide: Tokugawa's agent advantage shines during Realm Divide. Assassinate the generals of incoming armies — a general-less army has -12 morale and will rout quickly.
+
+*Uesugi — The Warrior Monks of the North:*
+- Unique units: Uesugi Warrior Monks (same as Ikko-Ikki but available from Shinto temples), Uesugi Cavalry Monks (mounted warrior monks)
+- Unique mechanic: Uesugi is a Shinto clan but gets access to warrior monk units (normally reserved for Buddhist/Ikko clans). Your monks do not cause religious unrest because they follow your state religion.
+- Start province: Echigo (northern Honshu, mountainous, moderate farms)
+- Opening strategy: Uesugi starts in the north with one direction of expansion (south and east). Unify the northern provinces by turn 15-20. Build a mix of standard samurai and warrior monks. Your warrior monks are your elite units — use them as a breakthrough force. Uesugi's economy is weaker than the southern clans (less farm space), so you must expand to survive.
+- Key technology: Temple upgrades (for warrior monks) and cavalry upgrades (for cavalry monks). A mix of naginata, warrior monks, and cavalry monks creates an army with no clear weakness.
+- Strategic note: Uesugi struggles economically. You will always have fewer provinces and less income than the Oda or Takeda. Your advantage is unit quality — warrior monks beat samurai, and cavalry monks are excellent for flanking. Win through quality, not quantity.
+- Realm Divide: Your northern position gives you a secure rear (no enemies behind you). Fortify the southern choke points and use your elite armies to destroy enemy stacks as they arrive.
+
 ==== Realm Divide: The Minimal Province Strategy
 
 The most advanced Realm Divide strategy is to deliberately delay it:

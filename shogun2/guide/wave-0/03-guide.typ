@@ -8,12 +8,12 @@ This guide teaches you the basics through your first 15 hours. Do not try to con
 
 Launch the in-game tutorial from the main menu. Do not skip it. Shogun 2 has unique controls not found in other strategy games:
 
-- `Space` pauses the game. While paused, issue orders to every unit. This is how you win battles — by giving every unit a job before unpausing.
-- `Alt` + drag selects a formation width. Use this to set your battle line exactly where you want it.
-- `Backspace` or `K` orders a unit to disengage from melee. They will take casualties while pulling back, but less than if they break and rout.
-- `Insert` toggles advanced unit info. Turn this on and leave it on — it shows current health, fatigue, and morale for selected units.
-- `Tab` cycles through units in the current group.
-- `Shift` + click adds waypoints to a movement order. Use this to set up flanking routes before combat.
+- *Space* pauses the game. While paused, issue orders to every unit. This is how you win battles — by giving every unit a job before unpausing.
+- *Alt* + drag selects a formation width. Use this to set your battle line exactly where you want it.
+- *Backspace* or *K* orders a unit to disengage from melee. They will take casualties while pulling back, but less than if they break and rout.
+- *Insert* toggles advanced unit info. Turn this on and leave it on — it shows current health, fatigue, and morale for selected units.
+- *Tab* cycles through units in the current group.
+- *Shift* + click adds waypoints to a movement order. Use this to set up flanking routes before combat.
 
 After the tutorial, play the historical battle *Battle of Okehazama* on Normal. This battle teaches the most important lesson in Shogun 2: a smaller army can destroy a larger one by attacking from the correct direction at the correct time.
 
@@ -77,15 +77,38 @@ Your tax rate sets the percentage of wealth collected each turn:
 
 *Honor:* Your clan's honor level (0-6) affects diplomacy acceptance rates and agent success chances. Breaking treaties, attacking allies, and using underhanded tactics reduces honor. Honorable actions (sparing defeated enemies, honoring alliances, granting safe passage) increase honor. Keep honor at 3+ for functional diplomacy.
 
+==== Stabilizing a Struggling Economy
+
+You will face economic crises in your first campaign. Here is how to recover:
+
+*Food emergency:* If food turns negative, happiness drops by -2 per missing point. Rebels spawn at -10 happiness. Fix order: (1) reduce tax rate to Low for +1 happiness, (2) build a farm in the province with the lowest castle tier (farms complete faster in undeveloped provinces), (3) disband 1-2 army units (each army consumes 1 food per turn). A single farm upgrade (+4 food) fixes most food deficits.
+
+*Cash emergency:* If your treasury drops below 500 koku and income is negative: (1) stop all construction, (2) reduce tax rate to Low (reduces happiness pressure, lets you grow population), (3) check which provinces have markets — if none, build one in your wealthiest province immediately, (4) move your army toward an enemy province you can conquer (capturing a province adds its tax base to your income). Do not recruit new units during a cash emergency unless you are about to be attacked.
+
+==== Growing Your Economy Beyond the Basics
+
+Once food is positive and cash is stable, shift to growth:
+
+*Province prioritization:* Not all provinces are equal. Prioritize development in provinces with:
+- Coastal slots (market + port = double wealth generation)
+- Farm bonuses (some provinces have +20% farm output — build farms here first)
+- Central location (provinces far from the front lines should be maxed economically since they will never need to produce troops)
+
+*The investment rule:* A building that costs 600 koku and generates +100 koku per turn pays for itself in 6 turns and generates pure profit for the remaining 60+ turns of your campaign. Build early, profit later. Delaying a farm by 10 turns costs you roughly 1,000 koku in lost income over the campaign.
+
+*When to push taxes:* Increase tax rate to High or Very High only when: (1) food surplus is +5 or higher, (2) happiness is above 85% in all provinces, (3) you need cash NOW for a military emergency. Run High tax for a maximum of 5 turns, then drop back to Normal. Very High tax should never run more than 2 consecutive turns.
+
+*Trade node awareness:* Look at the naval map overlay. The four offshore trade nodes are visible from turn 1. You do not need a navy to occupy them — a single trade ship (Bow Kobaya, ~200 koku) sent to a node generates 500-1,500 koku per turn. Building one trade ship in your first 10 turns and sending it to the nearest node is often the single highest-ROI investment you can make.
+
 ---- Army Composition for the First Campaign ----
 
 Your first army should be:
 
-Core (6 units): Yari Ashigaru. They are cheap, fast to recruit, and their *yari wall* formation is the strongest defensive formation in the game. A yari wall gives +15 bonus against cavalry, negates charge bonus, and adds mass (units cannot push through). Form yari wall by selecting the unit and clicking the wall button or pressing `B`.
+Core (6 units): Yari Ashigaru. They are cheap, fast to recruit, and their *yari wall* formation is the strongest defensive formation in the game. A yari wall gives +15 bonus against cavalry, negates charge bonus, and adds mass (units cannot push through). Form yari wall by selecting the unit and clicking the wall button or pressing *B*.
 
 Missile (4 units): Bow Ashigaru. They are fragile but cheap. Keep them behind the yari wall. Turn off *fire at will* (press F) until the enemy enters range, then turn it on to preserve ammunition. Wait until the enemy is at ~150 units distance before shooting.
 
-Flank (2 units): Yari Cavalry. You do not have a cavalry dojo yet, so these come from the basic recruitment pool. They are weak in a frontal charge but deadly from the rear. Charge (press `R`) into the back of an engaged enemy unit. The charge bonus + morale penalty from being hit in the rear will route most units instantly.
+Flank (2 units): Yari Cavalry. You do not have a cavalry dojo yet, so these come from the basic recruitment pool. They are weak in a frontal charge but deadly from the rear. Charge (press *R*) into the back of an engaged enemy unit. The charge bonus + morale penalty from being hit in the rear will route most units instantly.
 
 Total: 12 units. This fits under your general's command limit (16 units at rank 1) and costs roughly 800 koku per turn to maintain.
 
