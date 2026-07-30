@@ -26,6 +26,16 @@
 - [x] All interdependency notes written (Create→Mekanism→AE2 integration, colony tech gating)
 - [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
 
+### Wave 1.1 — Megabuilding (1 mod + 18 schematics)
+- [x] Forgematica 0.4.3+mc1.21.11 — client-side schematic mod (Litematica unofficial Forge/NeoForge port)
+- [x] No dependencies (standalone — no MaLiLib required)
+- [x] 18 recommended schematics curated from abfielder.com covering all three progression phases
+- [x] Schematics span: starter homes (4), farms/windmills (3), factories/warehouses (5), underground bases (1), castles (2), bridges/walls/towers (3)
+- [x] All schematics are free .litematic downloads, survival-compatible (Forgematica is visual guide only)
+- [x] Shader caveat noted: toggle shaders off while placing schematics if flickering occurs
+- [x] Interdependency notes written (Forgematica × Create / MineColonies / AE2 / Apotheosis)
+- [x] Session plan written (5 progressive building sessions)
+
 ### Wave 2 — Exploration (~31 mods)
 - [x] Worldgen: Terralith, Tectonic, End Remastered, Moog's End Structures
 - [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
@@ -375,3 +385,9 @@
 - [x] Leave My Bars Alone v21.11.0 (Wave 0 — Visual & Client QoL) — keeps food/health/armor bars visible while riding mounts. Requires Puzzles Lib (already in pack). Client-side, by Fuzs.
 - [x] Immersive Armor HUD v1.0.1 (Wave 0 — Inventory & UI) — armor type icons + durability indicators above armor bar. Works with modded armor. No deps, client-side, 6.9M DL.
 - [x] Mod counts updated: Wave 0.5 50→56 (Visual & Client QoL 29→32, Inventory & UI 17→20)
+
+### Added Mods (Jul 2026 batch 23 — Megabuilding)
+- [x] Forgematica 0.4.3+mc1.21.11 (Wave 1.1 — Megabuilding) — Litematica unofficial Forge/NeoForge port. Client-side schematic rendering, holographic overlay, material list, layer-by-layer placement. Standalone (no MaLiLib), 1.6M DL, LGPLv3.
+- [x] 18 schematics curated from abfielder.com — 4 Phase 1 starters, 3 farms/windmills, 5 factories/warehouses, 1 underground base, 2 castles, 3 bridges/walls/towers. All free, all .litematic format.
+- [x] Wave 1.1 section written in GUIDE.md — mod entry, keybinds, usage guide, schematic table (18 rows), interdependence notes, session plan.
+- [x] Shader compatibility caveat documented (toggle shaders off while placing schematics if flickering)

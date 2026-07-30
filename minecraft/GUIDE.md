@@ -1322,7 +1322,106 @@ Smoke ventilation systems for factories. Redirect emissions outdoors.
 | **Session 9 — TFMG expand**     | Build Steel Blast Furnace. Mass-produce steel. Find bauxite for aluminum                               | Industrial steel, aluminum            |
 | **Session 10+ — Scaling**       | Digital Miner. Expand AE2 drives. Add Create train between base and outpost. Work toward 5x processing | Automated mining, bulk transport      |
 
-**Pacing tip**: You don't need to finish Wave 1 before starting Wave 1.5 (colony) or Wave 2 (exploration). Dip into exploration between factory sessions. The colony takes real-world days to grow — start it early. TFMG is mid-game — start after you have brass Create and basic Mekanism.
+**Pacing tip**: You don't need to finish Wave 1 before starting Wave 1.1 (megabuilding), Wave 1.5 (colony), or Wave 2 (exploration). Dip into exploration between factory sessions. The colony takes real-world days to grow — start it early. TFMG is mid-game — start after you have brass Create and basic Mekanism.
+
+---
+
+<!--raw-typst #pagebreak() -->
+
+## Wave 1.1 — Megabuilding
+
+Schematics and blueprint tools for building at scale in survival. Import community-made structures, place them layer-by-layer with Forgematica's holographic overlay, and construct anything from starter homes to mega-factories without creative mode or guesswork. This wave unlocks the Phase 3 megabuild fantasy early — you can plan and start placing mega-structures from day one, even if the resources take weeks to gather.
+
+### Megabuilding Mod
+
+| Mod                                                                    | Role                                                                                     |
+|------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| [Forgematica](https://www.curseforge.com/minecraft/mc-mods/forgematica) | Client-side schematic mod — import `.litematic` blueprints, display holographic overlay, place layer-by-layer in survival |
+
+**Forgematica** is the unofficial NeoForge port of Litematica. It lets you load schematics (`.litematic` files) and shows a translucent hologram of the build in-world, complete with material lists per layer. You place blocks manually while the overlay guides every position — no auto-build, fully survival-legal. Essential for mega-scale projects that would be impossible to freehand.
+
+- **Version**: 0.4.3+mc1.21.11 (NeoForge, 1.8 MB)
+- **Environment**: Client-side only
+- **Dependencies**: None (standalone — no MaLiLib required)
+- **License**: LGPLv3
+- **Downloads**: 1.6M+ total
+
+**Shader compatibility**: Forgematica rendering may conflict with shader packs. If the schematic overlay looks broken, toggle shaders off temporarily (`K` by default in Iris). On 1.21.1 (this pack's version), Iris compatibility is better than newer MC versions. Switch back when done placing.
+
+**Keybinds** (set in Options → Controls → Key Binds after installing):
+
+| Action                       | Suggested Key | Purpose                                         |
+|------------------------------|---------------|-------------------------------------------------|
+| Open Schematic Manager       | `M`           | Load, manage, and switch between schematics     |
+| Execute Schematic Placement  | `Ctrl+Enter`  | Locks in the current layer after verifying alignment |
+| Toggle Schematic Rendering   | `Ctrl+M`      | Show/hide hologram (useful for screenshots)     |
+| Toggle Material List         | `Ctrl+Shift+M`| Show/hide required materials HUD                |
+
+**How it works**:
+
+1. Download `.litematic` schematics and place them in your instance's `schematics/` folder.
+2. Open Schematic Manager (`M`), select a schematic, choose placement position and rotation.
+3. The holographic overlay appears at the target location. Use the material list to gather blocks per layer.
+4. Place blocks manually following the overlay. Cycle through layers as you build up.
+5. When a layer is complete, press `Ctrl+Enter` to lock it in and show the next layer.
+
+No blocks are placed automatically — Forgematica is a guide, not a world editor. Every block must be placed in survival. This respects the pack's survival-only constraint while enabling builds at a scale that would normally require creative mode.
+
+### Schematic Recommendations
+
+These schematics complement the Driftwood progression. All are free Litematica-format downloads from Abfielder.com — one of the largest schematic libraries (700+ schematics, all free). Each schematic is picked to serve a specific purpose in your journey from Cozy Roots through Industrial Ascent to Perpetual Ascent.
+
+| #  | Schematic                                                                                                   | ID    | Phase  | Purpose                                                              | Style                       |
+|----|-------------------------------------------------------------------------------------------------------------|-------|--------|----------------------------------------------------------------------|-----------------------------|
+| 1  | [Starter Home](https://abfielder.com/Products/ProductDetails.php?id=2818)                                   | 2818  | 1      | Cozy first shelter — compact, complete, no wasted space              | Oak & cobblestone cottage   |
+| 2  | [Medieval Starter House](https://abfielder.com/Products/ProductDetails.php?id=6457)                         | 6457  | 1      | Early game base with living space and storage                        | Timber-framed medieval      |
+| 3  | [Cozy Windmill](https://abfielder.com/Products/ProductDetails.php?id=5959)                                  | 5959  | 1      | Decorative windmill — pairs with Create water wheels                 | Sails & stone tower         |
+| 4  | [Simple Starter House](https://abfielder.com/Products/ProductDetails.php?id=13174)                          | 13174 | 1      | Minimal starter — place in first 30 minutes                          | Spruce & stone              |
+| 5  | [Windmill Farmhouse *(FURNISHED)*](https://abfielder.com/Products/ProductDetails.php?id=10955)              | 10955 | 1–2    | Farmer's Delight hub with enclosed mill, kitchen, and crop plots     | Furnished medieval farm     |
+| 6  | [Medieval Windmill](https://abfielder.com/Products/ProductDetails.php?id=4216)                              | 4216  | 1–2    | Standing windmill — landmark and Create rotational power aesthetic   | Tall stone & wood tower     |
+| 7  | [Warehouse, Auto-sorting](https://abfielder.com/Products/ProductDetails.php?id=11682)                       | 11682 | 2      | Multi-chest sorting hall — pre-AE2 bulk storage                      | Industrial timber frame     |
+| 8  | [Medieval Stone Factory](https://abfielder.com/Products/ProductDetails.php?id=13065)                        | 13065 | 2      | Factory shell for Create sequenced lines and Mekanism machines       | Stone & deepslate industrial|
+| 9  | [Steampunk Factory](https://abfielder.com/Products/ProductDetails.php?id=10175)                             | 10175 | 2      | Themed factory — fits Create brass-tier and TFMG oil refining        | Brass, copper & brick       |
+| 10 | [Industrial Factory *(Blackstone/Nether Brick)*](https://abfielder.com/Products/ProductDetails.php?id=2899) | 2899  | 2–3    | Late-game factory enclosure — Nether-themed Mekanism wing            | Blackstone & nether brick   |
+| 11 | [Large Underground Base *(Full Interior + Netherhub)*](https://abfielder.com/Products/ProductDetails.php?id=12756) | 12756 | 2–3 | Massive underground complex with portal hub — ultimate tech bunker   | Subterranean sprawl         |
+| 12 | [Dark Fantasy Castle](https://abfielder.com/Products/ProductDetails.php?id=7162)                            | 7162  | 3      | Endgame colony fortress — 62K+ DLs, fully detailed exterior          | Dark stone & spires         |
+| 13 | [Skyreach Castle](https://abfielder.com/Products/ProductDetails.php?id=12188)                               | 12188 | 3      | Skyborne castle — Phase 3 "I've earned this" megabuild               | Floating fantasy fortress   |
+| 14 | [Wizard Watchtower](https://abfielder.com/Products/ProductDetails.php?id=12509)                             | 12509 | 1–3    | RPG-themed tower — fits Apotheosis enchanting room                   | Mage spire                  |
+| 15 | [Stone Bridge](https://abfielder.com/Products/ProductDetails.php?id=10587)                                  | 10587 | 1–3    | Decorated bridge — connect base sections or span colony rivers       | Arched stone bridge         |
+| 16 | [Wall + Tower](https://abfielder.com/Products/ProductDetails.php?id=8559)                                   | 8559  | 2–3    | Colony perimeter wall segment with integrated guard tower            | Defensive medieval wall     |
+| 17 | [Grand Dwarven Gate](https://abfielder.com/Products/ProductDetails.php?id=11546)                            | 11546 | 3      | Epic mountain-face entrance — mega-scale statement piece             | Dwarven stonework           |
+| 18 | [Minecraft Wooden Mansion](https://abfielder.com/Products/ProductDetails.php?id=12525)                      | 12525 | 2      | Large furnished mansion — Phase 2 upgrade from starter home          | Spruce & dark oak estate    |
+
+**Download**: Visit `https://abfielder.com/Products/ProductDetails.php?id=<ID>` for each schematic. Click "Download" for the `.litematic` file. Place all `.litematic` files in your instance's `schematics/` folder.
+
+**Finding more**: Browse `https://abfielder.com/Products/BrowseProducts.php?sort=trending&game=minecraft&type=Schematic` — filter by tag (House, Castle, Factory, Bridge, Mega Build, Farm, Medieval, Industrial) for additional options. Planet Minecraft (`planetminecraft.com/projects/tag/litematica/`) and MineMev (`minemev.com/explore/`) have thousands more schematics if you want alternatives. Search for tags: `medieval`, `survival`, `industrial`, `fantasy`, `steampunk`.
+
+**Style guide**: When browsing additional schematics, stick to materials already present in the modpack — stone, deepslate, oak/spruce/dark oak, brick, terracotta, copper, iron, and Create decorative blocks. Avoid schematics that depend on mods not in this pack (looking for Quark, Chipped, or BYG blocks in the material list is a red flag). Medieval, steampunk, and dark fantasy styles all fit the Driftwood aesthetic. Modern, sci-fi, and glass-heavy builds don't.
+
+### Interdependency Notes — Wave 1.1
+
+- **Forgematica × Create**: Factory schematics are designed as shells — you install Create machinery and Mekanism lines inside them. They provide the structure; you wire the automation.
+- **Forgematica × MineColonies**: Castle and wall schematics make excellent colony defense perimeters. Wall + Tower (ID:8559) segments can be tiled to enclose an entire colony. Rebuild colony buildings inside them for a unified architectural style.
+- **Forgematica × AE2**: The Warehouse Auto-sorting schematic (ID:11682) is designed for pre-AE2 storage. Once you transition to ME drives, repurpose it as bulk item overflow or decorative archive hall.
+- **Forgematica × Apotheosis**: The Wizard Watchtower (ID:12509) includes space for an enchanting setup — drop your Apotheosis enchanting table and bookshelves in the top room.
+- **Shader caveat**: Forgematica hologram rendering may flicker with complementary shaders. Toggle shaders off (`K`) while placing schematics, then re-enable. The 1.21.1 compatibility is better than newer MC versions — distortion is usually minor.
+- **Survival constraint**: Forgematica is purely a visual guide. No blocks are auto-placed. Every resource must be gathered and placed by the player in survival mode. This respects the pack's survival-only constraint.
+
+**Install**: In XMCL, search `Forgematica` in the Mods tab, or download the `.jar` from CurseForge and drop into `mods/`. Create a `schematics/` folder in your instance directory, then drop downloaded `.litematic` files there. Forgematica will pick them up automatically on next launch.
+
+---
+
+### Session Plan — Wave 1.1
+
+| Session                          | Focus                                                          | What to Build                                 |
+|----------------------------------|----------------------------------------------------------------|-----------------------------------------------|
+| **Session 1 — Pick a starter**   | Download 3 Phase 1 schematics. Place Starter Home (ID:2818).   | First schematic build, learn Forgematica flow |
+| **Session 2 — Farm hub**         | Place Windmill Farmhouse (ID:10955). Plant Farmer's Delight crops around it. | Farm-to-table setup next to base     |
+| **Session 3 — Bridge it**        | Place Stone Bridge (ID:10587) between base areas or over a river. | Connect your growing compound            |
+| **Session 4+ — Factory prep**    | Download Phase 2 schematics. Scout a flat area for the factory district. | Site planning for industrial ascent     |
+| **Ongoing**                      | As your tech tree advances, place larger schematics. Wall+Tower around colony. Underground base for AE2. Castle for endgame. | Megabuilding scales with progression |
+
+**Tip**: Schematics eat materials fast. The Windmill Farmhouse alone needs several stacks of spruce and stone. Set up a Create tree farm and cobblestone generator early — you'll need them. Treat schematic building as a multi-session project, not a speedrun.
 
 ---
 
