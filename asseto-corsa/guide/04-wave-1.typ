@@ -363,124 +363,169 @@ Every corner has four distinct phases. Time lost in any phase cannot be fully re
 #figure(
   block(
     width: 100%,
-    height: 7cm,
+    height: 7.5cm,
     stroke: 0.5pt + gray,
     radius: 4pt,
     inset: 0pt,
     {
-      // Track surface — filled polygon
-      place(top + left, dx: 0.5cm, dy: 1.8cm,
+      // Road surface
+      place(top + left, dx: 0.3cm, dy: 1.5cm,
         curve(
-          fill: gray.lighten(55%),
-          stroke: 1pt + gray,
+          fill: gray.lighten(40%),
+          stroke: none,
           curve.move((0cm, 0cm)),
-          curve.line((5.5cm, 0cm)),
-          curve.cubic((7cm, 0cm), (9cm, 1.5cm), (10cm, 2.5cm)),
-          curve.line((15cm, 2.5cm)),
-          curve.line((15cm, 3.5cm)),
-          curve.cubic((9cm, 2.5cm), (7.5cm, 1.5cm), (5.5cm, 1.2cm)),
-          curve.line((0cm, 1.2cm)),
+          curve.line((7cm, 0cm)),
+          curve.cubic((8.5cm, 0cm), (10cm, 1.2cm), (11cm, 2.5cm)),
+          curve.line((16cm, 2.5cm)),
+          curve.line((16cm, 3.8cm)),
+          curve.cubic((10cm, 2.5cm), (9cm, 1.8cm), (8cm, 1.8cm)),
+          curve.line((0cm, 1.8cm)),
           curve.close(),
         )
       )
 
-      // Edge lines
-      place(top + left, dx: 0.5cm, dy: 1.8cm,
+      // Track outer edge
+      place(top + left, dx: 0.3cm, dy: 1.5cm,
         curve(
           stroke: 2.5pt + white,
           curve.move((0cm, 0cm)),
-          curve.line((5.5cm, 0cm)),
-          curve.cubic((7cm, 0cm), (9cm, 1.5cm), (10cm, 2.5cm)),
-          curve.line((15cm, 2.5cm)),
+          curve.line((7cm, 0cm)),
+          curve.cubic((8.5cm, 0cm), (10cm, 1.2cm), (11cm, 2.5cm)),
+          curve.line((16cm, 2.5cm)),
         )
       )
-      place(top + left, dx: 0.5cm, dy: 1.8cm,
+
+      // Track inner edge
+      place(top + left, dx: 0.3cm, dy: 1.5cm,
         curve(
           stroke: 2.5pt + white,
-          curve.move((0cm, 1.2cm)),
-          curve.line((5.5cm, 1.2cm)),
-          curve.cubic((7.5cm, 1.5cm), (9cm, 2.5cm), (10cm, 3.5cm)),
-          curve.line((15cm, 3.5cm)),
+          curve.move((0cm, 1.8cm)),
+          curve.line((8cm, 1.8cm)),
+          curve.cubic((9cm, 1.8cm), (10cm, 2.5cm), (11cm, 3.8cm)),
+          curve.line((16cm, 3.8cm)),
         )
       )
 
-      // Racing line — yellow dashed
-      place(top + left, dx: 0.5cm, dy: 1.8cm,
+      // Apex kerb — red/white striped indicator
+      place(top + left, dx: 0.3cm, dy: 1.5cm,
+        curve(
+          stroke: (paint: red, thickness: 4pt),
+          curve.move((9.7cm, 1.7cm)),
+          curve.line((10.5cm, 2.6cm)),
+        )
+      )
+      place(top + left, dx: 0.3cm, dy: 1.5cm,
+        curve(
+          stroke: (paint: white, thickness: 4pt, dash: "dashed"),
+          curve.move((9.7cm, 1.7cm)),
+          curve.line((10.5cm, 2.6cm)),
+        )
+      )
+
+      // Distance boards — 100m and 50m
+      place(top + left, dx: 2.7cm, dy: 1.15cm,
+        rect(width: 6pt, height: 2pt, fill: red, radius: 1pt)
+      )
+      place(top + left, dx: 2.5cm, dy: 0.85cm,
+        text(size: 0.5em, fill: red)[100]
+      )
+      place(top + left, dx: 5.0cm, dy: 1.15cm,
+        rect(width: 6pt, height: 2pt, fill: red, radius: 1pt)
+      )
+      place(top + left, dx: 4.8cm, dy: 0.85cm,
+        text(size: 0.5em, fill: red)[50]
+      )
+
+      // Racing line
+      place(top + left, dx: 0.3cm, dy: 1.5cm,
         curve(
           stroke: (paint: yellow, thickness: 3pt, dash: "dashed"),
-          curve.move((-0.3cm, 0.3cm)),
-          curve.line((2cm, 0.3cm)),
-          curve.cubic((4cm, 0.3cm), (6cm, 0.5cm), (7.5cm, 1cm)),
-          curve.cubic((8.5cm, 1.3cm), (9cm, 1.8cm), (9.5cm, 2.0cm)),
-          curve.line((15cm, 3cm)),
+          curve.move((0cm, 1.2cm)),
+          curve.line((4cm, 1.2cm)),
+          curve.cubic((5.5cm, 1.2cm), (7cm, 1.2cm), (8cm, 1.4cm)),
+          curve.cubic((9cm, 1.6cm), (9.8cm, 2.1cm), (10.3cm, 2.5cm)),
+          curve.cubic((10.5cm, 2.7cm), (10.5cm, 2.9cm), (11cm, 3.2cm)),
+          curve.line((16cm, 3.2cm)),
         )
       )
 
-      // Brake marker
-      place(top + left, dx: 1.5cm, dy: 1.2cm,
-        circle(radius: 4pt, fill: red, stroke: 2pt + white)
+      // Brake point marker + leader
+      place(top + left, dx: 4.9cm, dy: 2.2cm,
+        circle(radius: 5pt, fill: red, stroke: 2pt + white)
       )
-      place(top + left, dx: 1.8cm, dy: 0.8cm,
-        text(size: 0.65em, fill: red, weight: "bold")[BRAKE]
+      place(top + left, dx: 5.0cm, dy: 2.45cm,
+        curve(stroke: 0.5pt + red, curve.move((0cm, 0cm)), curve.line((0cm, -1.1cm)))
       )
-
-      // Turn-in marker
-      place(top + left, dx: 5.2cm, dy: 1.3cm,
-        circle(radius: 4pt, fill: orange, stroke: 2pt + white)
+      place(top + left, dx: 4.2cm, dy: 0.4cm,
+        text(size: 0.7em, fill: red, weight: "bold")[BRAKE]
       )
-      place(top + left, dx: 5.5cm, dy: 0.8cm,
-        text(size: 0.65em, fill: orange, weight: "bold")[TURN-IN]
+      place(top + left, dx: 3.7cm, dy: 0.9cm,
+        text(size: 0.55em)[max pressure]
       )
 
-      // Apex marker
-      place(top + left, dx: 9.3cm, dy: 3.0cm,
-        circle(radius: 4pt, fill: green, stroke: 2pt + white)
+      // Turn-in marker + leader
+      place(top + left, dx: 8.0cm, dy: 2.6cm,
+        circle(radius: 5pt, fill: orange, stroke: 2pt + white)
       )
-      place(top + left, dx: 8.2cm, dy: 3.5cm,
-        text(size: 0.65em, fill: green, weight: "bold")[APEX]
+      place(top + left, dx: 8.1cm, dy: 2.85cm,
+        curve(stroke: 0.5pt + orange, curve.move((0cm, 0cm)), curve.line((0.5cm, -1.5cm)))
       )
-
-      // Track-out marker
-      place(top + left, dx: 13cm, dy: 4.2cm,
-        circle(radius: 4pt, fill: blue, stroke: 2pt + white)
+      place(top + left, dx: 7.8cm, dy: 0.5cm,
+        text(size: 0.7em, fill: orange, weight: "bold")[TURN-IN]
       )
-      place(top + left, dx: 12cm, dy: 4.7cm,
-        text(size: 0.65em, fill: blue, weight: "bold")[TRACK-OUT]
+      place(top + left, dx: 7.6cm, dy: 1.0cm,
+        text(size: 0.55em)[trail brake]
       )
 
-      // Speed profile bars under track
-      place(top + left, dx: 0.5cm, dy: 5.5cm,
+      // Apex marker + leader
+      place(top + left, dx: 10.4cm, dy: 3.85cm,
+        circle(radius: 5pt, fill: green, stroke: 2pt + white)
+      )
+      place(top + left, dx: 10.5cm, dy: 4.1cm,
+        curve(stroke: 0.5pt + green, curve.move((0cm, 0cm)), curve.line((1.5cm, 1.5cm)))
+      )
+      place(top + left, dx: 11.5cm, dy: 5.2cm,
+        text(size: 0.7em, fill: green, weight: "bold")[APEX]
+      )
+      place(top + left, dx: 11.3cm, dy: 5.7cm,
+        text(size: 0.55em)[lowest speed]
+      )
+
+      // Track-out marker + leader
+      place(top + left, dx: 14.5cm, dy: 4.5cm,
+        circle(radius: 5pt, fill: blue, stroke: 2pt + white)
+      )
+      place(top + left, dx: 14.6cm, dy: 4.75cm,
+        curve(stroke: 0.5pt + blue, curve.move((0cm, 0cm)), curve.line((1.2cm, 1.2cm)))
+      )
+      place(top + left, dx: 15cm, dy: 5.5cm,
+        text(size: 0.7em, fill: blue, weight: "bold")[TRACK-OUT]
+      )
+      place(top + left, dx: 14.5cm, dy: 6.0cm,
+        text(size: 0.55em)[full throttle]
+      )
+
+      // Corner speed profile gauge
+      place(top + left, dx: 0.3cm, dy: 6.0cm,
         stack(dir: ltr, spacing: 0.15cm,
-          stack(dir: ttb, spacing: 0.1cm,
-            text(size: 0.55em, fill: red, weight: "bold")[Brake],
-            rect(width: 0.7cm, height: 0.7cm, fill: red, radius: 1pt),
-          ),
-          text(size: 0.9em, fill: gray.lighten(30%))[→],
-          stack(dir: ttb, spacing: 0.1cm,
-            text(size: 0.55em, fill: orange, weight: "bold")[Turn-in],
-            rect(width: 0.7cm, height: 0.35cm, fill: orange, radius: 1pt),
-          ),
-          text(size: 0.9em, fill: gray.lighten(30%))[→],
-          stack(dir: ttb, spacing: 0.1cm,
-            text(size: 0.55em, fill: green, weight: "bold")[Apex],
-            rect(width: 0.7cm, height: 0.15cm, fill: green, radius: 1pt),
-          ),
-          text(size: 0.9em, fill: gray.lighten(30%))[→],
-          stack(dir: ttb, spacing: 0.1cm,
-            text(size: 0.55em, fill: blue, weight: "bold")[Track-out],
-            rect(width: 0.7cm, height: 0.65cm, fill: blue, radius: 1pt),
-          ),
-          text(size: 0.55em, fill: luma(80))[  Speed profile: bar height = relative speed],
+          text(size: 0.55em, fill: luma(80))[Speed:],
+          rect(width: 0.8cm, height: 0.6cm, fill: red, radius: 1pt),
+          rect(width: 0.5cm, height: 0.3cm, fill: orange, radius: 1pt),
+          rect(width: 0.3cm, height: 0.15cm, fill: green, radius: 1pt),
+          rect(width: 0.7cm, height: 0.55cm, fill: blue, radius: 1pt),
+          text(size: 0.55em, fill: luma(80))[brake → turn-in → apex → track-out],
         )
       )
     }
   ),
   caption: [
-    The corner dissected. Gray surface = track, white lines = track edges,
-    dashed yellow = the optimal racing line. Red circle marks your braking
-    point, orange is turn-in, green is the apex (begin throttle here), blue
-    is track-out (full throttle by this point). Speed bars below mirror what
-    happens at each phase.
+    The corner dissected. Gray = road surface, white borders = track edges,
+    red/white stripe at the inside = kerb (your apex visual reference).
+    100/50 boards mark distance to a typical braking zone. Dashed yellow
+    line = ideal racing line. Each phase is marked with a colored dot on
+    the line — the leader lines connect them to their labels outside
+    the track. The speed gauge at the bottom shows relative speed through
+    each phase (taller bar = faster).
   ]
 )
 
