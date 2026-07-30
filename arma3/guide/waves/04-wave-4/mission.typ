@@ -28,3 +28,9 @@ A 40-part cooperative campaign by Somchai focused on the war in Afghanistan. Pla
 _Setup:_ SP or CO 1-12. Requires RHS (AFRF, SAF, USF), JBAD, and USAF Mod. Enable Milsim Mode in mission parameters for a more challenging experience.
 
 _Note: This campaign has a heavy mod dependency chain. Only playable after all Wave 4 mods are installed._
+
+=== Alternative: Dynamic Bulwarks
+
+A build-defend-survive scenario. Construct your defensive position from modular fortifications, then hold against escalating enemy waves. Supports persistent progression across sessions.
+
+_Setup:_ Host locally or on a dedicated server. Play with 1-8 players. Rounds are 15-30 minutes each. Good for shorter sessions or as a cooldown after large-scale operations.

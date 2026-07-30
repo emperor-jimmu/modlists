@@ -25,3 +25,9 @@ _Setup:_ Host locally or on a dedicated server. Play with 1-12 players. Each ses
 A 4-part single-player horror mini-campaign by ThomaHawk set on Malden. Confront AAF and CSAT forces in a clandestine operation with a dark narrative undertone. No additional mods required — entirely vanilla-compatible.
 
 _Play this between Liberation sessions for a tense solo experience._
+
+=== Force Through (Optional)
+
+A dynamic infantry scenario available on Malden 2035 and Altis. Push through enemy defensive lines in a combined-arms assault as NATO forces. Supports SP and CO16.
+
+_Setup:_ Host locally. Play with 1-16 players. Each map variant offers different terrain challenges — urban fighting on Malden, open terrain on Altis.

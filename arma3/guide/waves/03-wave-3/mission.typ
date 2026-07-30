@@ -21,3 +21,15 @@ If you want an open-world sandbox: Overthrow drops you into a living Altis with 
 A single-player campaign by W0lle set during the Cold War. Requires Cold War Rearmed III and the full CUP mod suite (Terrains, Units, Vehicles, Weapons). Features air, infantry, and vehicle missions across classic Cold War-era terrains.
 
 _Note: You must subscribe to Cold War Rearmed III and all CUP mods separately. This campaign is for groups that want a complete setting shift from the modern era._
+
+=== HIVE Battle Generator ALTIS (Optional)
+
+A dynamic mission generator for Altis. Generate unique objectives, enemy compositions, and mission parameters every session. Supports squad-sized coop play.
+
+_Setup:_ Host locally. Play with 2-8 players. Good for groups that want variety without setting up custom missions.
+
+=== Terrorist Hunt — Factory (Optional)
+
+A close-quarters CO04 scenario set in an industrial facility. Clear the factory of hostile forces room by room. Emphasis on CQB tactics, breaching, and room clearing.
+
+_Setup:_ Host locally. Play with up to 4 players. Ideal for training room-clearing drills and close-quarters fireteam coordination.
