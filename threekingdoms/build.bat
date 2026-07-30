@@ -3,6 +3,13 @@ cd /d "%~dp0"
 
 if not exist output mkdir output
 
+echo Converting .md guides to .typ...
+pwsh -NoProfile -ExecutionPolicy Bypass -File "scripts\convert.ps1"
+if %errorlevel% neq 0 (
+    echo Conversion failed with error code %errorlevel%
+    exit /b %errorlevel%
+)
+
 echo Compiling Beneath a Crimson Banner PDF...
 typst compile --root . --font-path fonts template\main.typ output\Beneath-a-Crimson-Banner.pdf
 
