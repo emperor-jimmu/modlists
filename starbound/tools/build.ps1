@@ -57,7 +57,7 @@ if (-not (Test-Path $OutputDir)) {
 Write-Host "Compiling..." -ForegroundColor Yellow
 Push-Location $ProjectRoot
 try {
-    typst compile --font-path $FontPath $Template $Output
+    typst compile --root . --font-path $FontPath $Template $Output
     Write-Host "SUCCESS: $Output" -ForegroundColor Green
     $fileInfo = Get-Item $Output
     $sizeKB = [math]::Round($fileInfo.Length / 1KB, 1)
