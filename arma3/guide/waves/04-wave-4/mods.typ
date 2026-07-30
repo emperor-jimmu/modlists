@@ -254,3 +254,24 @@ All mods from Waves 0 through 3 remain active. Do not disable any previous wave'
 - *System Impact:* Zeus tool. Enhances game master capabilities. No impact on non-Zeus gameplay.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2397360831")[USAF Mod - Main]
+
+- *Type:* Content
+- *Mod ID:* `2397360831`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]]
+- *Description:* Adds modern US fixed-wing aircraft — F/A-18, F-22, F-35, A-10, C-130, and more. High-detail models with working cockpits and weapon systems.
+- *System Impact:* Expands aircraft roster significantly. Adds CAS, air superiority, and transport capabilities.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=2226368165")[USAF_AC130_BETA]
+
+- *Type:* Content
+- *Mod ID:* `2226368165`
+- *Description:* Adds the AC-130 gunship with working 25mm, 40mm, and 105mm weapons. Requires USAF Mod.
+- *System Impact:* Adds dedicated gunship platform for CAS missions. Requires crew coordination.
+- *Verified:* 2025-06-17
+]

@@ -76,3 +76,9 @@ _Play this to practice convoy security and QRF response._
 A close-quarters battle scenario set in an urban corridor. Room clearing, threshold evaluation, and bounding overwatch in confined spaces.
 
 _Play this to practice urban CQB and fireteam-level room clearing._
+
+=== Navy Seals: First Operation (`711834042`)
+
+A single-player campaign following a Navy SEAL team through multiple operations. Inspired by classic tactical shooters. No additional mods required — playable with Wave 1's vanilla+ setup.
+
+_Play this for a dedicated SOF campaign experience without extra mods._

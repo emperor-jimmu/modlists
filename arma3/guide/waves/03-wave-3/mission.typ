@@ -22,6 +22,14 @@ A single-player campaign by W0lle set during the Cold War. Requires Cold War Rea
 
 _Note: You must subscribe to Cold War Rearmed III and all CUP mods separately. This campaign is for groups that want a complete setting shift from the modern era._
 
+=== [Campaign] Navy Seals Blood Brothers (`601764085`)
+
+A 30-mission single-player campaign by Helios. Play as Navy SEALs across multiple theaters — Altis, Stratis, Takistan, Chernarus, and Zargabad. Features 6 playable characters, squad switching, AI enhancements, and a rich narrative.
+
+_Setup:_ SP only. Requires CBA_A3, CUP Terrains, Units, Vehicles, Weapons, and the Apex DLC. All CUP components are included in Wave 3's modlist.
+
+_Play this for a dedicated, story-driven SOF campaign with 10+ hours of content._
+
 === HIVE Battle Generator ALTIS (Optional)
 
 A dynamic mission generator for Altis. Generate unique objectives, enemy compositions, and mission parameters every session. Supports squad-sized coop play.

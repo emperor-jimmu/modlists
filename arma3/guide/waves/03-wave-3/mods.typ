@@ -107,3 +107,36 @@ All mods from Waves 0 through 2 remain active. Do not disable any previous wave'
 - *Description:* Adds building interiors to CUP terrain structures. Required for room clearing in CUP maps.
 - *Verified:* 2025-06-17
 ]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=497661914")[CUP Units]
+
+- *Type:* Content
+- *Mod ID:* `497661914`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]]
+- *Description:* CUP faction units including infantry, uniforms, and gear from past Arma titles.
+- *System Impact:* Large download. Required for scenarios using CUP factions.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=541888371")[CUP Vehicles]
+
+- *Type:* Content
+- *Mod ID:* `541888371`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]]
+- *Description:* CUP vehicle pack — tanks, APCs, helicopters, and support vehicles from past Arma titles.
+- *System Impact:* Large download. Expands vehicle roster with Cold War and modern platforms.
+- *Verified:* 2025-06-17
+]
+
+#block(fill: rgb("f5f5f5"), stroke: (left: 4pt + rgb("27ae60")), inset: 12pt, radius: 4pt)[
+== #link("https://steamcommunity.com/workshop/filedetails/?id=497660133")[CUP Weapons]
+
+- *Type:* Content
+- *Mod ID:* `497660133`
+- *Dependencies:* [#link("https://steamcommunity.com/workshop/filedetails/?id=450814997")[CBA_A3]]
+- *Description:* CUP weapon pack — firearms, launchers, and attachments from past Arma titles.
+- *System Impact:* Expands weapon roster significantly.
+- *Verified:* 2025-06-17
+]
