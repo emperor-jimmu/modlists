@@ -361,171 +361,13 @@ A perfect lap is not one magic corner — it is connecting every phase of every 
 Every corner has four distinct phases. Time lost in any phase cannot be fully recovered in the next.
 
 #figure(
-  block(
-    width: 100%,
-    height: 7.5cm,
-    stroke: 0.5pt + gray,
-    radius: 4pt,
-    inset: 0pt,
-    {
-      // Road surface
-      place(top + left, dx: 0.3cm, dy: 1.5cm,
-        curve(
-          fill: gray.lighten(40%),
-          stroke: none,
-          curve.move((0cm, 0cm)),
-          curve.line((7cm, 0cm)),
-          curve.cubic((8.5cm, 0cm), (10cm, 1.2cm), (11cm, 2.5cm)),
-          curve.line((16cm, 2.5cm)),
-          curve.line((16cm, 3.8cm)),
-          curve.cubic((10cm, 2.5cm), (9cm, 1.8cm), (8cm, 1.8cm)),
-          curve.line((0cm, 1.8cm)),
-          curve.close(),
-        )
-      )
-
-      // Track outer edge
-      place(top + left, dx: 0.3cm, dy: 1.5cm,
-        curve(
-          stroke: 2.5pt + white,
-          curve.move((0cm, 0cm)),
-          curve.line((7cm, 0cm)),
-          curve.cubic((8.5cm, 0cm), (10cm, 1.2cm), (11cm, 2.5cm)),
-          curve.line((16cm, 2.5cm)),
-        )
-      )
-
-      // Track inner edge
-      place(top + left, dx: 0.3cm, dy: 1.5cm,
-        curve(
-          stroke: 2.5pt + white,
-          curve.move((0cm, 1.8cm)),
-          curve.line((8cm, 1.8cm)),
-          curve.cubic((9cm, 1.8cm), (10cm, 2.5cm), (11cm, 3.8cm)),
-          curve.line((16cm, 3.8cm)),
-        )
-      )
-
-      // Apex kerb — red/white striped indicator
-      place(top + left, dx: 0.3cm, dy: 1.5cm,
-        curve(
-          stroke: (paint: red, thickness: 4pt),
-          curve.move((9.7cm, 1.7cm)),
-          curve.line((10.5cm, 2.6cm)),
-        )
-      )
-      place(top + left, dx: 0.3cm, dy: 1.5cm,
-        curve(
-          stroke: (paint: white, thickness: 4pt, dash: "dashed"),
-          curve.move((9.7cm, 1.7cm)),
-          curve.line((10.5cm, 2.6cm)),
-        )
-      )
-
-      // Distance boards — 100m and 50m
-      place(top + left, dx: 2.7cm, dy: 1.15cm,
-        rect(width: 6pt, height: 2pt, fill: red, radius: 1pt)
-      )
-      place(top + left, dx: 2.5cm, dy: 0.85cm,
-        text(size: 0.5em, fill: red)[100]
-      )
-      place(top + left, dx: 5.0cm, dy: 1.15cm,
-        rect(width: 6pt, height: 2pt, fill: red, radius: 1pt)
-      )
-      place(top + left, dx: 4.8cm, dy: 0.85cm,
-        text(size: 0.5em, fill: red)[50]
-      )
-
-      // Racing line
-      place(top + left, dx: 0.3cm, dy: 1.5cm,
-        curve(
-          stroke: (paint: yellow, thickness: 3pt, dash: "dashed"),
-          curve.move((0cm, 1.2cm)),
-          curve.line((4cm, 1.2cm)),
-          curve.cubic((5.5cm, 1.2cm), (7cm, 1.2cm), (8cm, 1.4cm)),
-          curve.cubic((9cm, 1.6cm), (9.8cm, 2.1cm), (10.3cm, 2.5cm)),
-          curve.cubic((10.5cm, 2.7cm), (10.5cm, 2.9cm), (11cm, 3.2cm)),
-          curve.line((16cm, 3.2cm)),
-        )
-      )
-
-      // Brake point marker + leader
-      place(top + left, dx: 4.9cm, dy: 2.2cm,
-        circle(radius: 5pt, fill: red, stroke: 2pt + white)
-      )
-      place(top + left, dx: 5.0cm, dy: 2.45cm,
-        curve(stroke: 0.5pt + red, curve.move((0cm, 0cm)), curve.line((0cm, -1.1cm)))
-      )
-      place(top + left, dx: 4.2cm, dy: 0.4cm,
-        text(size: 0.7em, fill: red, weight: "bold")[BRAKE]
-      )
-      place(top + left, dx: 3.7cm, dy: 0.9cm,
-        text(size: 0.55em)[max pressure]
-      )
-
-      // Turn-in marker + leader
-      place(top + left, dx: 8.0cm, dy: 2.6cm,
-        circle(radius: 5pt, fill: orange, stroke: 2pt + white)
-      )
-      place(top + left, dx: 8.1cm, dy: 2.85cm,
-        curve(stroke: 0.5pt + orange, curve.move((0cm, 0cm)), curve.line((0.5cm, -1.5cm)))
-      )
-      place(top + left, dx: 7.8cm, dy: 0.5cm,
-        text(size: 0.7em, fill: orange, weight: "bold")[TURN-IN]
-      )
-      place(top + left, dx: 7.6cm, dy: 1.0cm,
-        text(size: 0.55em)[trail brake]
-      )
-
-      // Apex marker + leader
-      place(top + left, dx: 10.4cm, dy: 3.85cm,
-        circle(radius: 5pt, fill: green, stroke: 2pt + white)
-      )
-      place(top + left, dx: 10.5cm, dy: 4.1cm,
-        curve(stroke: 0.5pt + green, curve.move((0cm, 0cm)), curve.line((1.5cm, 1.5cm)))
-      )
-      place(top + left, dx: 11.5cm, dy: 5.2cm,
-        text(size: 0.7em, fill: green, weight: "bold")[APEX]
-      )
-      place(top + left, dx: 11.3cm, dy: 5.7cm,
-        text(size: 0.55em)[lowest speed]
-      )
-
-      // Track-out marker + leader
-      place(top + left, dx: 14.5cm, dy: 4.5cm,
-        circle(radius: 5pt, fill: blue, stroke: 2pt + white)
-      )
-      place(top + left, dx: 14.6cm, dy: 4.75cm,
-        curve(stroke: 0.5pt + blue, curve.move((0cm, 0cm)), curve.line((1.2cm, 1.2cm)))
-      )
-      place(top + left, dx: 15cm, dy: 5.5cm,
-        text(size: 0.7em, fill: blue, weight: "bold")[TRACK-OUT]
-      )
-      place(top + left, dx: 14.5cm, dy: 6.0cm,
-        text(size: 0.55em)[full throttle]
-      )
-
-      // Corner speed profile gauge
-      place(top + left, dx: 0.3cm, dy: 6.0cm,
-        stack(dir: ltr, spacing: 0.15cm,
-          text(size: 0.55em, fill: luma(80))[Speed:],
-          rect(width: 0.8cm, height: 0.6cm, fill: red, radius: 1pt),
-          rect(width: 0.5cm, height: 0.3cm, fill: orange, radius: 1pt),
-          rect(width: 0.3cm, height: 0.15cm, fill: green, radius: 1pt),
-          rect(width: 0.7cm, height: 0.55cm, fill: blue, radius: 1pt),
-          text(size: 0.55em, fill: luma(80))[brake → turn-in → apex → track-out],
-        )
-      )
-    }
-  ),
+  image("../assets/racing-line-reference.png", width: 80%),
   caption: [
-    The corner dissected. Gray = road surface, white borders = track edges,
-    red/white stripe at the inside = kerb (your apex visual reference).
-    100/50 boards mark distance to a typical braking zone. Dashed yellow
-    line = ideal racing line. Each phase is marked with a colored dot on
-    the line — the leader lines connect them to their labels outside
-    the track. The speed gauge at the bottom shows relative speed through
-    each phase (taller bar = faster).
+    The four phases of a corner — braking point, turn-in, apex, and exit.
+    Source: Driver61.com racing line tutorial. The racing line (yellow) uses
+    the full track width: outside → apex → outside. Each phase flows into
+    the next — brake in a straight line, trail brake into turn-in, clip the
+    apex, then unwind steering as you feed throttle to track-out.
   ]
 )
 
@@ -543,69 +385,13 @@ The fundamental compromise in cornering:
 - *The principle:* Slow in, fast out. Every corner you enter slower than you think you need to will reward you with a higher exit speed. Trust that the extra exit speed will more than compensate for the entry speed you gave up.
 
 #figure(
-  block(
-    width: 100%,
-    stroke: 0.5pt + gray,
-    radius: 4pt,
-    inset: 10pt,
-    stack(
-      dir: ltr,
-      spacing: 0.8cm,
-      // --- Fast In side ---
-      block(
-        width: 6.4cm,
-        stack(dir: ttb, spacing: 0.3cm,
-          text(size: 0.85em, fill: red, weight: "bold")[*Fast In (Red)*], [Worse over a full lap],
-          // Entry bar
-          stack(dir: ltr, spacing: 0.3cm,
-            rect(width: 0.8cm, height: 1.8cm, fill: red, radius: 2pt),
-            text(size: 0.6em)[Entry: High speed]
-          ),
-          // Apex bar
-          stack(dir: ltr, spacing: 0.3cm,
-            rect(width: 0.8cm, height: 0.6cm, fill: red, radius: 2pt),
-            text(size: 0.6em)[Apex: Low (deep valley)]
-          ),
-          // Exit bar
-          stack(dir: ltr, spacing: 0.3cm,
-            rect(width: 0.8cm, height: 0.8cm, fill: red, radius: 2pt),
-            text(size: 0.6em)[Exit: Low (late to power)]
-          ),
-          text(size: 0.55em, fill: red)[Slower lap time — exit speed is everything],
-        )
-      ),
-      // --- VS divider ---
-      text(fill: gray, size: 1.1em, weight: "bold")[VS],
-      // --- Slow In side ---
-      block(
-        width: 6.4cm,
-        stack(dir: ttb, spacing: 0.3cm,
-          text(size: 0.85em, fill: green, weight: "bold")[*Slow In (Green)*], [Better over a full lap],
-          // Entry bar
-          stack(dir: ltr, spacing: 0.3cm,
-            rect(width: 0.8cm, height: 1.2cm, fill: green, radius: 2pt),
-            text(size: 0.6em)[Entry: Slightly lower]
-          ),
-          // Apex bar
-          stack(dir: ltr, spacing: 0.3cm,
-            rect(width: 0.8cm, height: 1.5cm, fill: green, radius: 2pt),
-            text(size: 0.6em)[Apex: Higher (clean)]
-          ),
-          // Exit bar
-          stack(dir: ltr, spacing: 0.3cm,
-            rect(width: 0.8cm, height: 2.2cm, fill: green, radius: 2pt),
-            text(size: 0.6em)[Exit: High (early to power)]
-          ),
-          text(size: 0.55em, fill: green)[Faster lap time — sacrifice entry for exit],
-        )
-      ),
-    )
-  ),
+  image("../assets/ideal-racing-line.png", width: 80%),
   caption: [
-    The speed tradeoff. Bar heights represent relative speed. *Left (red):*
-    carrying too much entry speed forces a low apex and weak exit. *Right
-    (green):* sacrificing a few km/h at entry maintains higher apex speed and
-    reaches full throttle earlier — a much faster exit. Slow in, fast out wins.
+    The speed tradeoff — geometric line vs ideal racing line. Green = geometric
+    line (shallowest arc, constant speed). Red = ideal racing line (later
+    turn-in, sharper to the apex, straighter exit). The ideal line sacrifices
+    a small amount of entry speed (the car turns tighter) in exchange for a
+    much straighter, faster exit. Source: Driver61.com.
   ]
 )
 
