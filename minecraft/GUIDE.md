@@ -431,6 +431,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Traveler's Titles](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)                       | RPG-style titles entering biomes/dimensions                                                    |
 | [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)                            | Enhanced mod list screen with badges/categories                                                |
 | [Better Third Person](https://www.curseforge.com/minecraft/mc-mods/better-third-person)                           | Independent 360° camera rotation in third-person view                                          |
+| [Countered's Smooth F5](https://modrinth.com/mod/countereds-smooth-f5)                                           | Smooth third-person camera transitions on F5 — cinematic, configurable                         |
 | [Tooltip Overhaul](https://www.curseforge.com/minecraft/mc-mods/tooltip-overhaul)                                 | Modern, sharp tooltip rendering with equipment compare                                         |
 | [First Person Model](https://www.curseforge.com/minecraft/mc-mods/first-person-model)                             | Full body rendering in first-person view (requires Not Enough Animations)                      |
 | [3D Skin Layers](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d)                                     | Renders player skin layers (jackets, hats) with 3D depth                                       |
@@ -697,21 +698,6 @@ Realistic water wakes and splashes when traveling on water. Works with Small Shi
 #### Sounds
 
 170+ new sound effects for UI clicks, item drops, eating, achievements, block actions. Every vanilla action feels tactile. Customize individually in Mod List → Sounds → Config or `config/sounds/`. Conflicts with nothing — complements Sound Physics (environment) perfectly.
-
-#### Better Days
-
-Controls day/night cycle length in **SEASON mode** — day length varies by Serene Seasons sub-season.
-
-Recommended config in `config/betterdays-common.toml`:
-
-> **⚠ CRITICAL**: Edit the file directly. The in-game config screen does not support `SEASON` mode and **will silently overwrite** it to `MINUTES`. Do not open Better Days' in-game config.
-
-- `speedMethod = "SEASON"`
-- `seasonDayMinutes = 20.0`, `seasonLatitude = 48.0`
-- `enableSleepFeature = true`
-- All time effects OFF (`potionEffect = "NEVER"`, `hungerEffect = "NEVER"`, `blockEntityEffect = "NEVER"`, `cropEffect = "NEVER"`, `randomTickEffect = "NEVER"`)
-
-**SEASON mode** syncs with Serene Seasons — summer days are longer, winter days shorter. Latitude 48 gives a mild continental feel. Higher latitude = more extreme swings.
 
 #### Better Safe Bed
 
@@ -3219,7 +3205,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
-| Wave 0.5 — Player Experience | 56      | —      | 56      | Visual & Client QoL (32), Inventory & UI (20), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
+| Wave 0.5 — Player Experience | 57      | —      | 57      | Visual & Client QoL (33), Inventory & UI (20), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 26      | 6      | 32      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships, hang glider, IaA addon                                                                          |
@@ -3229,7 +3215,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 5 — Combat              | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
 | Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                               |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
-| **Total**                    | **160** | **41** | **201** | All confirmed NeoForge 1.21.1                                                                                                                                                                                                                                          |
+| **Total**                    | **161** | **41** | **202** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 

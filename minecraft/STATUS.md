@@ -361,6 +361,9 @@
 ### Added Mods (Jul 2026 batch 17 — Deep Aether)
 - [x] Deep Aether 1.1.5.1 (Wave 2 — Dimensions) — Aether dimension expansion: 5 biomes, Skyjade/Stratus gear, new mobs, poison swamps. Aeroblender pre-bundled, TerraBlender already in pack. No config needed.
 
+### Added Mods (Jul 2026 — Countered's Smooth F5)
+- [x] Countered's Smooth F5 (Wave 0.5 — Visual & Client QoL) — smooth third-person camera transitions on F5, cinematic, configurable. Client-only, no dependencies, CC0-1.0. NeoForge 1.21.1 (Modrinth). Replaced Seramicx's fork.
+
 ### Added Mods (Jul 2026 batch 18 — Twilight's Flavors & Delight)
 - [x] Twilight's Flavors & Delight 3.2.2 (Wave 4 — Food & Farming) — Twilight Forest × Farmer's Delight crossover: 35+ FD-style TF foods, 4 TF knives, maze stove, 5 potion effects, trophy dismantling. Dependencies: TF + FD (both in pack). No config needed.
 
