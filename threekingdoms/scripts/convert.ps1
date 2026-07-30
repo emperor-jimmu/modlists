@@ -3,11 +3,15 @@ param([switch]$Clean)
 $ErrorActionPreference = "Stop"
 $guideDir = Join-Path $PSScriptRoot ".." "guide"
 
-# Auto-generated .typ files (converted from .md on build)
+# All .md files → auto-generated .typ on build
 $files = @(
+    "00-wave0\01-introduction.md",
     "00-wave0\02-how-to-play.md",
     "00-wave0\03-first-20-turns.md",
-    "01-wave1\02-strategy.md"
+    "01-wave1\01-introduction.md",
+    "01-wave1\02-strategy.md",
+    "02-wave2\01-introduction.md",
+    "02-wave2\02-strategy.md"
 )
 
 if ($Clean) {
@@ -47,15 +51,7 @@ foreach ($relPath in $files) {
     $depth = ($relPath -replace '[^\\]', '').Length + 1
     $importPath = ("..\" * $depth + "template\styles.typ").Replace('\', '/')
 
-    # Post-process:
-    # 1. Style table headers with crimson
-    $content = $content -replace 'table\.header\(([^)]+)\),', {
-        $inner = $_.Groups[1].Value
-        $styled = $inner -replace '\[([^\]]+)\]', 'table.cell(fill: crimson, text(fill: white)[$1])'
-        "table.header($styled),"
-    }
-
-    # 2. Prepend styles import
+    # Prepend styles import (show rules auto-style all tables)
     $content = "#import `"$importPath`": *`r`n`r`n$content"
 
     Set-Content $typPath -Value $content -Encoding UTF8 -NoNewline

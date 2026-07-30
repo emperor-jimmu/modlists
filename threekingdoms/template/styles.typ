@@ -32,5 +32,11 @@
 // Link styling
 #show link: text.with(fill: gold)
 
+// Auto-style all table headers with crimson bg and white text
+#show table.cell.where(y: 0): it => {
+  set text(fill: white, weight: "bold")
+  table.cell(fill: crimson, it)
+}
+
 // Page numbering
 #set page(numbering: "1")
