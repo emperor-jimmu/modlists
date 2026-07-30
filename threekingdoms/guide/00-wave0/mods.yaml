@@ -46,7 +46,7 @@ mods:
 
   - name: "Enhanced Battle Camera"
     url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1775523368"
-    author: "kailash"
+    author: "Petellius"
     version: "1.0.0"
     category: ["ui"]
     wave: 0
@@ -57,15 +57,17 @@ mods:
     adult: false
     notes: "Totally cosmetic. Does not affect gameplay balance."
 
-  - name: "Respec Character Skills When They Join You"
-    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1803671821"
-    author: "kailash"
+  - name: "Ink Selection Markers"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2001745196"
+    author: "Little_Fighter"
     version: "1.0.0"
-    category: ["qol"]
+    category: ["ui"]
     wave: 0
-    description: "Allows respeccing of character skill points when they join your faction. Prevents wasted skill investment from AI-leveled characters."
+    description: "Ink-brush styled unit selection markers replacing vanilla circles. Far more visible and thematically appropriate for the Three Kingdoms setting."
     dependencies: []
     conflicts: []
     mechanic_impact: null
     adult: false
-    notes: "Does not affect AI factions. Pure QoL for player convenience."
+    notes: "Visual UI enhancement only. Compatible with all mods."
+
+

@@ -5,7 +5,7 @@ mods:
 
   - name: "Units Model Historical Reskin"
     url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1835352612"
-    author: "kailash"
+    author: "harrylee95"
     version: "2.0.0"
     category: ["graphics"]
     wave: 1
@@ -55,9 +55,61 @@ mods:
     adult: false
     notes: "Pairs with New and Better Horse Armors for Generals for full texture fidelity."
 
-  #############################
+  - name: "More Horse Armor Variation and Color Variation"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1900528854"
+    author: "contactnovuspc"
+    version: "2.1.0"
+    category: ["graphics"]
+    wave: 1
+    description: "Adds varied horse armor and color variations to most Northern cavalry units. Works in both Romance and Records modes for visual diversity."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Complements the general horse armor mods. Adds to cavalry units, not just generals."
+
+  - name: "Arrow Trails Redux"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1786410120"
+    author: "Petellius"
+    version: "1.1.0"
+    category: ["graphics"]
+    wave: 1
+    description: "Enhances arrow and projectile trail visibility during battles. Makes volley behavior visually clear and dramatically improves the cinematic feel of ranged combat."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Visual-only enhancement. Safe to use with all mods."
+
+  - name: "More Flag Variations in Battle"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1954481438"
+    author: "contactnovuspc"
+    version: "1.2.0"
+    category: ["graphics"]
+    wave: 1
+    description: "Adds varied banner and flag designs to units in battle. Improved visual distinction between retinues and more historically diverse army appearances."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Visual enhancement only. Safe mid-campaign."
+
+  - name: "Han Dynasty Brick Style Unit Cards"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2223282115"
+    author: "King of Wei"
+    version: "1.6"
+    category: ["ui"]
+    wave: 1
+    description: "Redesigned unit cards using Han Dynasty brick carving art style. Beautiful period-appropriate aesthetic replacing vanilla unit portraits."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Purely cosmetic. Works with all unit mods."
+
+ #############################
   # CONTENT / CHARACTERS
-  #############################
+ #############################
 
   - name: "Make Them Unique 3.3"
     url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1812159400"

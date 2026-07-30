@@ -28,11 +28,121 @@
 - **Siege patience** — build siege engines rather than assaulting walls directly
 - **Retreat is an option** — preserve armies, fight another day
 
-## Mod-Aware Strategy
+## Building a Strong Economy
 
-- New units from content mods have unique strengths — read their descriptions
-- Audio mods give cues for battlefield events (listen for unique instrument cues)
-- If a mechanic mod changes public order or corruption, adjust building priorities accordingly
+Your economy is the engine of your entire campaign. On Hard difficulty, the AI builds faster, fields more armies, and recovers from losses more quickly. You cannot out-fight them if you cannot out-earn them. A strong economy funds better troops, more construction, and more diplomatic leverage. A weak economy forces hard choices between a building and a dead general.
+
+### The Food-Income-Public Order Triangle
+
+Every economic decision in Three Kingdoms trades off between three resources: food, income, and public order. An exhausted food surplus causes starvation and revolts. Weak income prevents army recruitment. Low public order spawns rebel armies. You can't maximise all three — you have to balance them.
+
+Here is how to read your economy at a glance:
+
+| Stat | Healthy | Warning | Critical |
+|------|---------|---------|----------|
+| Food Surplus | +10 to +30 | +2 to +9 | 0 or below |
+| Income Per Turn | +1000 or more | +300 to +999 | Below +300 |
+| Public Order | 0 or higher | -5 to -1 | -6 or below |
+| Corruption | Under 15% | 15-25% | Over 25% |
+| Treasury | 3000+ | 1000-2999 | Under 1000 |
+
+**When food drops:** cancel all building queues in provinces that aren't already building farms. Start a farm immediately in every commandery that has an empty slot. Do not recruit new units — every unit costs food. If desperate, sell a non-food building and replace it with a farm.
+
+**When income drops:** check corruption levels first (it's usually corruption). Drop the tax rate to normal if you raised it. Cancel trade agreements with factions that pay you less than 50 gold per turn and replace them with higher-value trade partners. Demolish redundant recruitment buildings.
+
+**When public order drops:** assign a character with high authority or a "+public order" trait as administrator to the affected commandery. Build a temple or Confucian school. Lower taxes if empire-wide. Check for enemy spies (low public order in a stable province often means espionage).
+
+### Building a Trade Empire
+
+Trade is the most efficient income source in Three Kingdoms because it scales without costing food. Every trade agreement generates gold per turn based on the resources in the connected commanderies. The more trade routes you have, the more each individual route is worth.
+
+**To maximise trade:**
+1. Build roads in every commandery. Roads determine whether a trade route exists at all. An unconnected commandery cannot trade.
+2. Upgrade your capital's port. A tier-3 port generates vastly more trade income than a tier-1 port.
+3. Sign trade agreements with everyone who will accept. Every agreement adds to your income and, importantly, to your trade network's value multiplier.
+4. Conquer or ally with factions sitting on trade resource nodes (silk, spice, copper). These resources increase the value of all connected trade routes.
+5. The commerce reform branch (green) multiplies trade income. Invest in it early — every turn of compound growth matters.
+
+**Trade route checklist each turn:**
+- Are all trade slots full? If you have 3 of 4 slots filled, find a 4th partner immediately.
+- Are your trade partners rich? A trade partner with 5 settlements generates more gold than one with 1 settlement. Prioritise trade with larger factions.
+- Are your routes connected? If you conquer a settlement and the route breaks, rebuild the road or port immediately.
+
+### When to Expand vs When to Develop
+
+New players tend to expand constantly. Experienced players know when to stop and develop. Every new commandery adds to your corruption pool, requires a garrison, and increases food consumption. Taking a commandery that is not yet profitable is a net loss.
+
+**Expand when:**
+- Your food surplus is above 10 — you can absorb the consumption
+- Your income is above 1500 per turn — you can afford the building queue
+- The commandery has a valuable resource (horse, iron, copper, silk, spice, trade port)
+- You have a character ready to become administrator
+- You can defend it with armies already in the region
+
+**Develop when:**
+- Your food surplus is below 5 — you need to stabilise
+- Your income is under 500 per turn — you cannot afford to build in new territory
+- Your public order is negative in any existing commandery — unrest spreads to neighbouring provinces
+- You have empty building slots in existing commanderies — those are free income left on the table
+
+**A simple rule:** after conquering a commandery, build a farm and a garrison immediately. Wait five turns. If public order is positive and food is healthy, you can afford the next expansion.
+
+### Corruption: The Empire Tax
+
+Corruption is the single biggest threat to a large economy. It increases with every commandery you own, peaking at around 50% income reduction for massive empires. Every 10 commanderies roughly adds 8-12% corruption if unchecked.
+
+**How to fight corruption:**
+1. Assign an administrator to every commandery. Administrators reduce corruption by 15-25% in their commandery based on their skills. A Sentinel or Commander with corruption-reduction traits can add another 5-10%.
+2. Research governance reforms. The purple branch has nodes that reduce corruption by 5-10% across the entire empire. These stack.
+3. Build state workshops and granaries. These specific buildings reduce corruption in their commandery and provide industry/food income.
+4. Recruit characters with the "Incorruptible" or "Honest" trait. Assign them as administrators to your wealthiest commanderies.
+5. Use vassals instead of direct conquest for poor territories. A vassal pays tribute without increasing your corruption.
+
+**At 10+ commanderies:** expect 20-40% corruption. By this point, you should have governance reforms half-done and an administrator in every commandery. If you don't start fighting corruption before empire size 8, you'll be playing catch-up for the rest of the campaign.
+
+### Food Economy: Feeding Your War Machine
+
+Food is consumed by every army, every settlement with population, and every unit you recruit. It's the one resource you can't generate from thin air — you need farms.
+
+**Food sources by value:**
+1. Farms (tier 1-3) — the only dedicated food building. Build one in every commandery.
+2. Resource settlements — fishing ports and rice paddies on the campaign map add food.
+3. Granaries — administrative building that adds food + reduces corruption. Late-game staple.
+4. Reforms — the yellow reform branch adds +2/+4 food per turn from farms.
+
+**Food consumption by unit:**
+- Militia: 1 food per turn (per full unit, not per soldier)
+- Professional: 2 food per turn
+- Elite: 3 food per turn
+- Each general in an army: 2 food per turn
+
+A full stack of 18 elite units costs about 40-50 food per turn just to exist. With three armies, you're spending 120-150 food per turn before building consumption. That's why mid-game food collapses happen — you upgrade your armies without upgrading your farms.
+
+**Avoiding a food collapse:**
+- Every time you upgrade a unit (militia → professional → elite), count the additional 1 food cost
+- Before recruiting a second or third army, ensure your food surplus is 15+
+- Build tier-2 farms after capturing 4+ commanderies, tier-3 after 8+
+- Never demolish a farm without having a replacement ready
+
+### Specialised Commandery Strategy
+
+Not every commandery should be built the same way. Specialise based on resources:
+
+- **Farm commandery** (rice paddies, fishing): build farms + granary + temple. Feed the empire.
+- **Industry commandery** (iron, copper): build workshops + state workshop + armourer. Fund the empire and produce weapons.
+- **Commerce commandery** (silk, spice, ports): build markets + port + roads. Generate trade wealth.
+- **Military commandery** (horses, border regions): build garrison + military buildings. Recruit and defend.
+- **Administrative commandery** (capital): build your best buildings + highest-tier garrison. Assign your best administrator.
+
+A specialised commandery produces 30-50% more in its role than a generalised one. By the mid-game, you should have at least one of each type.
+
+### Economic Timing: When to Spend and When to Save
+
+**Early game (turns 1-30): Spend everything.** Every 100 gold should go to farms, markets, or roads. Gold sitting in your treasury earns no interest. The only reason to save early is if you're about to recruit a general.
+
+**Mid game (turns 30-80): Save 2000-4000 gold in reserve.** Unexpected events (dilemmas, bribes, war declarations) cost gold. Keep a buffer. Spend the rest on building upgrades and professional army recruitment.
+
+**Late game (turns 80+): Save 8000+ gold in reserve.** Endgame crises trigger expensive dilemmas. You may need to buy alliances, bribe factions for peace, or rapidly recruit an emergency army. Gold is the ultimate insurance policy against a campaign-ending disaster.
 
 ## Intermediate Systems (Phase 2 Training)
 

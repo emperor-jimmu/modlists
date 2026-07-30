@@ -14,32 +14,39 @@ ideas:
     references: []
 
   - name: "Ink Selection Markers"
-    description: "Ink-brush styled selection markers for units — much more visible than vanilla circles."
+    description: "Ink-brush styled selection markers for units by Little_Fighter."
     category: "ui"
     target_wave: 0
-    gap: "Consider adding to Wave 0 as a visual QoL improvement."
+    gap: "ADDED to Wave 0."
     references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2001745196"]
 
   - name: "Arrow Trails Redux"
-    description: "Visual enhancement adding visible arrow trails during battle. Makes archer fire more dramatic and readable."
+    description: "Visual enhancement for arrow trails by Petellius."
     category: "graphics"
     target_wave: 1
-    gap: "Standalone mod by Petellius. Does NOT overlap with The Gathering (different author). Could be added to Wave 1."
+    gap: "ADDED to Wave 1."
     references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1786410120"]
 
   - name: "More Flag Variations in Battle"
-    description: "Adds banner and flag variety to units in battle, improving visual distinction between retinues."
+    description: "Banner and flag variety by contactnovuspc."
     category: "graphics"
     target_wave: 1
-    gap: "Could be added to Wave 1 alongside MTU graphics."
+    gap: "ADDED to Wave 1."
     references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1954481438"]
 
   - name: "Han Dynasty Brick Style Unit Cards"
-    description: "Redesigned unit cards using Han Dynasty brick carving art style. Beautiful aesthetic."
+    description: "Redesigned unit cards by King of Wei (v1.6)."
     category: "ui"
     target_wave: 1
-    gap: "Two versions exist. ID 1888638797 by Alex Zhao (original), ID 2223282115 by King of Wei (v1.6). Pick the newer one."
-    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1888638797", "https://steamcommunity.com/sharedfiles/filedetails/?id=2223282115"]
+    gap: "ADDED to Wave 1."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2223282115"]
+
+  - name: "More Horse Armor Variation and Color Variation"
+    description: "Cavalry unit horse armor variety by contactnovuspc."
+    category: "graphics"
+    target_wave: 1
+    gap: "ADDED to Wave 1."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1900528854"]
 
   - name: "Dynamic Reforms"
     description: "Reworks the reform system so tech unlocks dynamically based on conditions rather than a fixed tree."
