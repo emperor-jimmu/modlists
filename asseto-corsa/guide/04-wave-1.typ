@@ -363,73 +363,124 @@ Every corner has four distinct phases. Time lost in any phase cannot be fully re
 #figure(
   block(
     width: 100%,
+    height: 7cm,
     stroke: 0.5pt + gray,
     radius: 4pt,
-    inset: 8pt,
-    stack(
-      dir: ltr,
-      spacing: 0.2cm,
-      // --- Phase 1: Brake ---
-      block(
-        width: 3.4cm,
-        stack(dir: ttb, spacing: 0.15cm,
-          text(size: 0.8em, fill: red, weight: "bold")[1. Brake],
-          text(size: 0.6em)[Max brake],
-          text(size: 0.6em)[Weight → front],
-          text(size: 0.6em, fill: red)[Speed: decreasing],
-          rect(width: 100%, height: 3pt, fill: gray.lighten(50%), radius: 1pt),
-          rect(width: 80%, height: 3pt, fill: red, radius: 1pt),
-          text(size: 0.55em, fill: luma(80))[*Risk:* lock-up],
+    inset: 0pt,
+    {
+      // Track surface — filled polygon
+      place(top + left, dx: 0.5cm, dy: 1.8cm,
+        curve(
+          fill: gray.lighten(55%),
+          stroke: 1pt + gray,
+          curve.move((0cm, 0cm)),
+          curve.line((5.5cm, 0cm)),
+          curve.cubic((7cm, 0cm), (9cm, 1.5cm), (10cm, 2.5cm)),
+          curve.line((15cm, 2.5cm)),
+          curve.line((15cm, 3.5cm)),
+          curve.cubic((9cm, 2.5cm), (7.5cm, 1.5cm), (5.5cm, 1.2cm)),
+          curve.line((0cm, 1.2cm)),
+          curve.close(),
         )
-      ),
-      text(fill: gray.lighten(50%))[→],
-      // --- Phase 2: Turn-in ---
-      block(
-        width: 3.4cm,
-        stack(dir: ttb, spacing: 0.15cm,
-          text(size: 0.8em, fill: orange, weight: "bold")[2. Turn-in],
-          text(size: 0.6em)[Trail brake + steer],
-          text(size: 0.6em)[Weight: front loaded],
-          text(size: 0.6em, fill: orange)[Speed: low point],
-          rect(width: 100%, height: 3pt, fill: gray.lighten(50%), radius: 1pt),
-          rect(width: 40%, height: 3pt, fill: orange, radius: 1pt),
-          text(size: 0.55em, fill: luma(80))[*Risk:* spin],
+      )
+
+      // Edge lines
+      place(top + left, dx: 0.5cm, dy: 1.8cm,
+        curve(
+          stroke: 2.5pt + white,
+          curve.move((0cm, 0cm)),
+          curve.line((5.5cm, 0cm)),
+          curve.cubic((7cm, 0cm), (9cm, 1.5cm), (10cm, 2.5cm)),
+          curve.line((15cm, 2.5cm)),
         )
-      ),
-      text(fill: gray.lighten(50%))[→],
-      // --- Phase 3: Apex ---
-      block(
-        width: 3.4cm,
-        stack(dir: ttb, spacing: 0.15cm,
-          text(size: 0.8em, fill: green, weight: "bold")[3. Apex],
-          text(size: 0.6em)[Min speed + throttle],
-          text(size: 0.6em)[Weight: neutral],
-          text(size: 0.6em, fill: green)[Speed: minimum],
-          rect(width: 100%, height: 3pt, fill: gray.lighten(50%), radius: 1pt),
-          rect(width: 20%, height: 3pt, fill: green, radius: 1pt),
-          text(size: 0.55em, fill: luma(80))[*Risk:* understeer],
+      )
+      place(top + left, dx: 0.5cm, dy: 1.8cm,
+        curve(
+          stroke: 2.5pt + white,
+          curve.move((0cm, 1.2cm)),
+          curve.line((5.5cm, 1.2cm)),
+          curve.cubic((7.5cm, 1.5cm), (9cm, 2.5cm), (10cm, 3.5cm)),
+          curve.line((15cm, 3.5cm)),
         )
-      ),
-      text(fill: gray.lighten(50%))[→],
-      // --- Phase 4: Track-out ---
-      block(
-        width: 3.4cm,
-        stack(dir: ttb, spacing: 0.15cm,
-          text(size: 0.8em, fill: blue, weight: "bold")[4. Track-out],
-          text(size: 0.6em)[Full throttle + unwind],
-          text(size: 0.6em)[Weight → rear],
-          text(size: 0.6em, fill: blue)[Speed: increasing],
-          rect(width: 100%, height: 3pt, fill: gray.lighten(50%), radius: 1pt),
-          rect(width: 80%, height: 3pt, fill: blue, radius: 1pt),
-          text(size: 0.55em, fill: luma(80))[*Risk:* oversteer],
+      )
+
+      // Racing line — yellow dashed
+      place(top + left, dx: 0.5cm, dy: 1.8cm,
+        curve(
+          stroke: (paint: yellow, thickness: 3pt, dash: "dashed"),
+          curve.move((-0.3cm, 0.3cm)),
+          curve.line((2cm, 0.3cm)),
+          curve.cubic((4cm, 0.3cm), (6cm, 0.5cm), (7.5cm, 1cm)),
+          curve.cubic((8.5cm, 1.3cm), (9cm, 1.8cm), (9.5cm, 2.0cm)),
+          curve.line((15cm, 3cm)),
         )
-      ),
-    )
+      )
+
+      // Brake marker
+      place(top + left, dx: 1.5cm, dy: 1.2cm,
+        circle(radius: 4pt, fill: red, stroke: 2pt + white)
+      )
+      place(top + left, dx: 1.8cm, dy: 0.8cm,
+        text(size: 0.65em, fill: red, weight: "bold")[BRAKE]
+      )
+
+      // Turn-in marker
+      place(top + left, dx: 5.2cm, dy: 1.3cm,
+        circle(radius: 4pt, fill: orange, stroke: 2pt + white)
+      )
+      place(top + left, dx: 5.5cm, dy: 0.8cm,
+        text(size: 0.65em, fill: orange, weight: "bold")[TURN-IN]
+      )
+
+      // Apex marker
+      place(top + left, dx: 9.3cm, dy: 3.0cm,
+        circle(radius: 4pt, fill: green, stroke: 2pt + white)
+      )
+      place(top + left, dx: 8.2cm, dy: 3.5cm,
+        text(size: 0.65em, fill: green, weight: "bold")[APEX]
+      )
+
+      // Track-out marker
+      place(top + left, dx: 13cm, dy: 4.2cm,
+        circle(radius: 4pt, fill: blue, stroke: 2pt + white)
+      )
+      place(top + left, dx: 12cm, dy: 4.7cm,
+        text(size: 0.65em, fill: blue, weight: "bold")[TRACK-OUT]
+      )
+
+      // Speed profile bars under track
+      place(top + left, dx: 0.5cm, dy: 5.5cm,
+        stack(dir: ltr, spacing: 0.15cm,
+          stack(dir: ttb, spacing: 0.1cm,
+            text(size: 0.55em, fill: red, weight: "bold")[Brake],
+            rect(width: 0.7cm, height: 0.7cm, fill: red, radius: 1pt),
+          ),
+          text(size: 0.9em, fill: gray.lighten(30%))[→],
+          stack(dir: ttb, spacing: 0.1cm,
+            text(size: 0.55em, fill: orange, weight: "bold")[Turn-in],
+            rect(width: 0.7cm, height: 0.35cm, fill: orange, radius: 1pt),
+          ),
+          text(size: 0.9em, fill: gray.lighten(30%))[→],
+          stack(dir: ttb, spacing: 0.1cm,
+            text(size: 0.55em, fill: green, weight: "bold")[Apex],
+            rect(width: 0.7cm, height: 0.15cm, fill: green, radius: 1pt),
+          ),
+          text(size: 0.9em, fill: gray.lighten(30%))[→],
+          stack(dir: ttb, spacing: 0.1cm,
+            text(size: 0.55em, fill: blue, weight: "bold")[Track-out],
+            rect(width: 0.7cm, height: 0.65cm, fill: blue, radius: 1pt),
+          ),
+          text(size: 0.55em, fill: luma(80))[  Speed profile: bar height = relative speed],
+        )
+      )
+    }
   ),
   caption: [
-    The four phases of a corner. Each phase has a distinct speed profile (shown
-    as colored bars — fuller = higher speed), weight state, and risk. Master
-    each individually, then practice connecting them into one fluid motion.
+    The corner dissected. Gray surface = track, white lines = track edges,
+    dashed yellow = the optimal racing line. Red circle marks your braking
+    point, orange is turn-in, green is the apex (begin throttle here), blue
+    is track-out (full throttle by this point). Speed bars below mirror what
+    happens at each phase.
   ]
 )
 
