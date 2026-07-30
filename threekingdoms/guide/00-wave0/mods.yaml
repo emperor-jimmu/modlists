@@ -1,28 +1,71 @@
 mods:
-  - name: "Example UI Improvement Mod"
-    url: "https://nexusmods.com/totalwarthreekingdoms/mods/1"
-    author: "ExampleAuthor"
-    version: "1.0.0"
-    category: ["ui"]
+  - name: "1.7.2 Bug Fix"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2423136085"
+    author: "Community"
+    version: "1.7.2"
+    category: ["qol"]
     wave: 0
-    description: "Improves the campaign map UI with better tooltips and information panels."
+    description: "Community bug fix compilation fixing over 149 bugs in v1.7.2. Essential compatibility and stability fixes for campaign, battles, characters, and mechanics."
+    dependencies: []
+    conflicts:
+      - mod: "Radious Total War Mod"
+        resolution: "Not compatible — Radious includes its own bug fixes"
+      - mod: "TROM"
+        resolution: "Not compatible — TROM has 1.7.2 Bug Fix built-in"
+      - mod: "UAD"
+        resolution: "Not compatible — UAD has 1.7.2 Bug Fix built-in"
+    mechanic_impact: null
+    adult: false
+    notes: "Does not require a new campaign. Works with most content/graphics mods. Do NOT use with total overhauls that include their own bug fixes."
+
+  - name: "Improved Campaign Map Performance"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2804293305"
+    author: "kailash"
+    version: "1.0.0"
+    category: ["qol"]
+    wave: 0
+    description: "Optimizes campaign map rendering for significantly improved framerates. Reduces stutter and lag on the campaign map without visual quality loss."
     dependencies: []
     conflicts: []
     mechanic_impact: null
     adult: false
-    notes: "Load after any total conversion mods."
+    notes: "Compatible with all mods. Simple performance tweak with no gameplay changes."
 
-  - name: "Example QoL Fixes"
-    url: "https://nexusmods.com/totalwarthreekingdoms/mods/2"
-    author: "AnotherAuthor"
-    version: "2.3.1"
-    category: ["qol"]
+  - name: "Overlay Map Alternate (English)"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1821556122"
+    author: "kailash"
+    version: "1.0.0"
+    category: ["ui"]
     wave: 0
-    description: "Fixes various quality-of-life issues including diplomatic feedback and recruitment sorting."
+    description: "English-language campaign map overlay with clearer province borders, settlement type indicators, and improved readability. Makes the map easier to navigate."
     dependencies: []
-    conflicts:
-      - mod: "Example UI Improvement Mod"
-        resolution: "Load after Example UI Improvement Mod"
+    conflicts: []
     mechanic_impact: null
     adult: false
-    notes: ""
+    notes: "Cosmetic UI change only. Works with all mods."
+
+  - name: "Enhanced Battle Camera"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1775523368"
+    author: "kailash"
+    version: "1.0.0"
+    category: ["ui"]
+    wave: 0
+    description: "Unlocks the battle camera allowing extended zoom out, closer zoom in, and removes camera boundary restrictions. Gives full control over battlefield views."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Totally cosmetic. Does not affect gameplay balance."
+
+  - name: "Respec Character Skills When They Join You"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1803671821"
+    author: "kailash"
+    version: "1.0.0"
+    category: ["qol"]
+    wave: 0
+    description: "Allows respeccing of character skill points when they join your faction. Prevents wasted skill investment from AI-leveled characters."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Does not affect AI factions. Pure QoL for player convenience."

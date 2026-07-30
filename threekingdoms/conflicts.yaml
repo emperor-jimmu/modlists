@@ -1,14 +1,28 @@
 conflicts:
-  - mod_a: "Example Content Expansion"
-    mod_b: "Another Content Mod"
-    type: "direct"
-    waves_affected: [1, 2]
-    resolution: "Load Example Content Expansion before Another Content Mod, or use the compatibility patch from the main mod page."
-    notes: "Verified on v1.7.2 — both work with load order adjustment."
+  - mod_a: "1.7.2 Bug Fix"
+    mod_b: "Radious Total War Mod"
+    type: "builtin"
+    waves_affected: [0, 2]
+    resolution: "Do not use 1.7.2 Bug Fix with Radious. Radious includes its own integrated bug fixes."
+    notes: "Radious is a total overhaul that bundles its own fix pack. Verified on v1.7.2."
 
-  - mod_a: "Example Total Overhaul"
-    mod_b: "Vanilla Diplomacy Fix"
+  - mod_a: "Make Them Unique 3.3"
+    mod_b: "MTU Characters Remodeled"
+    type: "load_order"
+    waves_affected: [1, 2]
+    resolution: "Load MTU Characters Remodeled BEFORE Make Them Unique 3.3. The Remodeled mod must be higher in load order so MTU's models override correctly."
+    notes: "Per Reddit user Oraye's verified recommendation."
+
+  - mod_a: "Radious Total War Mod - Part 1"
+    mod_b: "Radious Total War Mod - Part 2"
+    type: "load_order"
+    waves_affected: [2]
+    resolution: "Load Part 1 before Part 2. Both are required together."
+    notes: "Part 2 contains additional asset files that depend on Part 1."
+
+  - mod_a: "Power and Politics"
+    mod_b: "Radious Total War Mod"
     type: "incompatible"
     waves_affected: [2]
-    resolution: "Do not use Vanilla Diplomacy Fix with Example Total Overhaul. The overhaul replaces the diplomacy system entirely."
-    notes: "Vanilla Diplomacy Fix is unnecessary with the overhaul."
+    resolution: "Use only in Wave 1. Radious replaces the political system entirely."
+    notes: "Power and Politics is part of the Wave 1 mechanical depth layer. Not compatible with total overhauls."

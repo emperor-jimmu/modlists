@@ -1,41 +1,170 @@
 mods:
-  - name: "Example Graphics Overhaul"
-    url: "https://nexusmods.com/totalwarthreekingdoms/mods/3"
-    author: "GraphicsAuthor"
+  #############################
+  # GRAPHICS
+  #############################
+
+  - name: "Units Model Historical Reskin"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1835352612"
+    author: "kailash"
     version: "2.0.0"
     category: ["graphics"]
     wave: 1
-    description: "High-resolution textures for units, buildings, and campaign map."
+    description: "Historically-accurate reskin of Han faction unit models. Removes inconsistent vanilla designs with researched period-appropriate armor, weapons, and equipment."
     dependencies: []
     conflicts: []
     mechanic_impact: null
     adult: false
-    notes: "Requires high-end GPU."
+    notes: "Visual overhaul only. Safe to add mid-campaign."
 
-  - name: "Example Content Expansion"
-    url: "https://nexusmods.com/totalwarthreekingdoms/mods/4"
-    author: "ContentAuthor"
-    version: "1.5.0"
+  - name: "New and Better Horse Armors for Generals"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1909079735"
+    author: "kailash"
+    version: "1.2.0"
+    category: ["graphics"]
+    wave: 1
+    description: "High-quality horse armor textures for all general mounts. Includes unique barding for legendary horses like Red Hare and Dilu with period-accurate designs."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Recommended to pair with Horse Armor For Generals (base model mod) for best results."
+
+  - name: "Better Faces Plus"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1871547800"
+    author: "kailash"
+    version: "1.1.0"
+    category: ["graphics"]
+    wave: 1
+    description: "Improves character face textures with adjusted skin tones, finer detail, and more natural proportions. Zero performance impact — texture sizes unchanged."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Works with all character mods including MTU and TUP. Safe to add anytime."
+
+  - name: "Horse Armor For Generals"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1829289830"
+    author: "kailash"
+    version: "1.1.0"
+    category: ["graphics"]
+    wave: 1
+    description: "Adds 3D horse armor models to general mounts. Unique heavy cataphract armor for legendary characters, leather armor for standard generals. Visual enhancement only."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Pairs with New and Better Horse Armors for Generals for full texture fidelity."
+
+  #############################
+  # CONTENT / CHARACTERS
+  #############################
+
+  - name: "Make Them Unique 3.3"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1812159400"
+    author: "Wu Anguo"
+    version: "3.3"
     category: ["content"]
     wave: 1
-    description: "Adds new unique units, buildings, and events for several factions."
-    dependencies: ["Example Graphics Overhaul"]
+    description: "Adds unique 3D models, portrait art, and custom abilities to over 100 generic and historical characters. The definitive character uniqueness mod for Three Kingdoms."
+    dependencies: []
     conflicts:
-      - mod: "Another Content Mod"
-        resolution: "Load this one first, then Another Content Mod"
-    mechanic_impact: "Adds unique faction buildings with new recruitment options"
+      - mod: "TUP (Total Unique Pack)"
+        resolution: "Compatible — designed to work alongside TUP"
+    mechanic_impact: "Gives unique battlefield abilities and passives to previously generic characters"
     adult: false
-    notes: "Start a new campaign after enabling."
+    notes: "Requires a new campaign for full effect. Extremely popular and well-maintained."
 
-  - name: "Example Audio Pack"
-    url: "https://nexusmods.com/totalwarthreekingdoms/mods/5"
-    author: "AudioAuthor"
-    version: "1.0.0"
-    category: ["audio"]
+  - name: "MTU Characters Remodeled"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2025406762"
+    author: "contactnovuspc"
+    version: "1.3.0"
+    category: ["content"]
     wave: 1
-    description: "Replaces battle music with traditional Chinese instruments."
+    description: "Enhanced high-detail 3D models for MTU characters. Replaces MTU models with higher-poly, better-textured versions while maintaining the same art style."
+    dependencies: ["Make Them Unique 3.3"]
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Load BEFORE Make Them Unique in load order (Remodeled at top, MTU below). Compatible with all MTU submods."
+
+  - name: "MTU Event Add-on 1.0"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2428920358"
+    author: "kailash"
+    version: "1.0"
+    category: ["content"]
+    wave: 1
+    description: "Adds custom narrative events and dilemmas for MTU characters. Gives unique story moments for heroes added by Make Them Unique."
+    dependencies: ["Make Them Unique 3.3"]
+    conflicts: []
+    mechanic_impact: "Adds scripted events and dilemmas for unique characters"
+    adult: false
+    notes: "Recommended new campaign. Adds flavor and character-specific story beats."
+
+  #############################
+  # MECHANICS
+  #############################
+
+  - name: "Better Diplomacy"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1866034304"
+    author: "kailash"
+    version: "1.2.0"
+    category: ["mechanics"]
+    wave: 1
+    description: "Fine-tunes AI diplomacy behavior for more predictable and sensible negotiations. AI makes offers that reflect actual needs, values alliance commitments more, and avoids nonsensical trade demands."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: "Adjusts AI negotiation weights and evaluation logic"
+    adult: false
+    notes: "No new campaign required. Safe mid-save."
+
+  - name: "Relationships Matter"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2501505472"
+    author: "kailash"
+    version: "1.7.2"
+    category: ["mechanics"]
+    wave: 1
+    description: "Enhances character friend/rival interactions with deeper relationship consequences. Friends provide stronger bonuses, rivalries escalate more dramatically, and Guanxi relationships feel impactful."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: "Modifies character relationship satisfaction, loyalty, and event triggers"
+    adult: false
+    notes: "Works with MTU. V1.7.2 compatible."
+
+  - name: "Battlefield Conversations EXPANDED! [1.7.2]"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2465977086"
+    author: "kailash"
+    version: "1.7.2"
+    category: ["content"]
+    wave: 1
+    description: "Expands vanilla battlefield dialogue with hundreds of new lines across all character archetypes. Earth, Wood, Metal, Fire, and Water generals get unique taunts, battle cries, and flavor lines."
     dependencies: []
     conflicts: []
     mechanic_impact: null
     adult: false
-    notes: "Compatible with all overhauls."
+    notes: "Purely audio/flavor. Compatible with all mods."
+
+  - name: "Power and Politics"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2681138403"
+    author: "kailash"
+    version: "1.5.0"
+    category: ["mechanics"]
+    wave: 1
+    description: "Adds unique political mechanics for every playable faction. Reworks influence, faction council dynamics, and internal politics. Gives each faction a distinct political playstyle."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: "Replaces vanilla faction politics with unique per-faction political systems. Adds new court positions, political events, and power struggle mechanics."
+    adult: false
+    notes: "Requires new campaign. Significant gameplay depth addition."
+
+  - name: "Han Character Hoarding Nerf"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1791586648"
+    author: "Scicotheron"
+    version: "1.0.0"
+    category: ["mechanics"]
+    wave: 1
+    description: "Removes the Han Empire's bonuses to character satisfaction and salary. Enables spying on the Han. Prevents the Han from hoarding every character in the mid-game."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: "Reduces Han Empire satisfaction bonuses, enables player to compete for characters"
+    adult: false
+    notes: "Improves campaign pacing. Prevents Han Empire from becoming an unassailable character magnet."

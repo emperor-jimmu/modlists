@@ -12,3 +12,87 @@ ideas:
     target_wave: 1
     gap: "Existing item mods are either outdated or overpowered."
     references: []
+
+  - name: "Ink Selection Markers"
+    description: "Ink-brush styled selection markers for units — much more visible than vanilla circles."
+    category: "ui"
+    target_wave: 0
+    gap: "Consider adding to Wave 0 as a visual QoL improvement."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2001745196"]
+
+  - name: "Arrow Trails Redux"
+    description: "Visual enhancement adding visible arrow trails during battle. Makes archer fire more dramatic and readable."
+    category: "graphics"
+    target_wave: 1
+    gap: "Standalone mod by Petellius. Does NOT overlap with The Gathering (different author). Could be added to Wave 1."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1786410120"]
+
+  - name: "More Flag Variations in Battle"
+    description: "Adds banner and flag variety to units in battle, improving visual distinction between retinues."
+    category: "graphics"
+    target_wave: 1
+    gap: "Could be added to Wave 1 alongside MTU graphics."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1954481438"]
+
+  - name: "Han Dynasty Brick Style Unit Cards"
+    description: "Redesigned unit cards using Han Dynasty brick carving art style. Beautiful aesthetic."
+    category: "ui"
+    target_wave: 1
+    gap: "Two versions exist. ID 1888638797 by Alex Zhao (original), ID 2223282115 by King of Wei (v1.6). Pick the newer one."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1888638797", "https://steamcommunity.com/sharedfiles/filedetails/?id=2223282115"]
+
+  - name: "Dynamic Reforms"
+    description: "Reworks the reform system so tech unlocks dynamically based on conditions rather than a fixed tree."
+    category: "mechanics"
+    target_wave: 2
+    gap: "Could complement or conflict with Radious. Needs compatibility testing for the overhaul wave."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2145105296"]
+
+  - name: "The Gathering: Core Object + Heroes"
+    description: "Large content pack adding buildings, ancillaries, and unique heroes by Inter-object. Popular in the 1.7.1 Ultimate Modlist collection. Three parts: Core Object (2281892119), Heroes (2418752803), Sandbox (1843327136)."
+    category: "content"
+    target_wave: 1
+    gap: "Substantial mod that overlaps partially with MTU. Could replace MTU or coexist. Needs testing."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2281892119", "https://steamcommunity.com/sharedfiles/filedetails/?id=2418752803"]
+
+  - name: "Court Actions & Politics"
+    description: "Adds political actions (assassinate, secure loyalty, flirt, gather support) with cooldowns."
+    category: "mechanics"
+    target_wave: 1
+    gap: "May conflict with Power and Politics. Both cover similar ground. Needs side-by-side testing."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2525984504"]
+
+  - name: "Havie Expanded Skill Tree & Unique Abilities"
+    description: "Expanded skill trees for MTU and TUP characters with new unique abilities. Romance mode only."
+    category: "content"
+    target_wave: 1
+    gap: "Strong MTU complement but romance-mode exclusive. Excluded from current list for Records Mode players."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=2474373519"]
+
+  - name: "Behave Character Events"
+    description: "Additional character events for deeper story generation across factions."
+    category: "content"
+    target_wave: 1
+    gap: "May overlap with MTU Event Add-on and Relationships Matter. Needs compatibility check."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1811441613"]
+
+  - name: "More balanced cavalry charge"
+    description: "Rebalances cavalry charge damage to be less dominant. Good for competitive/balanced play."
+    category: "mechanics"
+    target_wave: 2
+    gap: "Not included in current Wave 2 until tested with Radious combat balance."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1992817226"]
+
+  - name: "AI Won't Execute Characters"
+    description: "Prevents AI from executing captured characters. Purely player-favoring mod — borderline cheat."
+    category: "qol"
+    target_wave: 0
+    gap: "Excluded from current list because it unambiguously favors the player with no AI counterpart."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1791288541"]
+
+  - name: "TROM (The Rule of Might)"
+    description: "Alternative total overhaul to Radious by hooveric. Two packs required. Lighter in some areas, deeper in others."
+    category: "mechanics"
+    target_wave: 2
+    gap: "Has built-in 1.7.2 Bug Fix. Comes in Pack 1 (ID 1977631962) + Pack 2 (ID 1998760417). Radious chosen over TROM due to broader MTU support."
+    references: ["https://steamcommunity.com/sharedfiles/filedetails/?id=1977631962", "https://steamcommunity.com/sharedfiles/filedetails/?id=1998760417"]

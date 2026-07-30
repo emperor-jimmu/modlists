@@ -1,30 +1,119 @@
 mods:
-  - name: "Example Total Overhaul"
-    url: "https://nexusmods.com/totalwarthreekingdoms/mods/6"
-    author: "OverhaulAuthor"
-    version: "3.0.0"
-    category: ["mechanics"]
-    wave: 2
-    description: "Complete overhaul of diplomacy, economy, and character systems."
-    dependencies: ["Example Graphics Overhaul"]
-    conflicts:
-      - mod: "Example Content Expansion"
-        resolution: "Compatible only with patches from the mod page. Use the compatibility patch."
-      - mod: "Vanilla Diplomacy Fix"
-        resolution: "Incompatible — do not use together"
-    mechanic_impact: "Replaces the entire diplomacy system with a deeper offer-and-demand negotiation model. Adds population mechanics to economy. Introduces general loyalty factions."
-    adult: false
-    notes: "Requires new campaign. Read the mod page carefully."
+  #############################
+  # TOTAL OVERHAUL
+  #############################
 
-  - name: "Example Endgame Challenge"
-    url: "https://nexusmods.com/totalwarthreekingdoms/mods/7"
-    author: "ChallengeAuthor"
-    version: "1.2.0"
+  - name: "Radious Total War Mod - Part 1"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1791367091"
+    author: "Radious"
+    version: "3.1.0"
     category: ["mechanics"]
     wave: 2
-    description: "Adds late-game crisis events, horde armies, and empire-shattering dilemmas."
-    dependencies: ["Example Total Overhaul"]
+    description: "Comprehensive total overhaul for Three Kingdoms — Part 1. Transforms every aspect of the game: economy, population, buildings, unit rosters, technology, diplomacy, and AI. Requires Part 2."
+    dependencies: ["Radious Total War Mod - Part 2"]
     conflicts: []
-    mechanic_impact: "Adds scripted endgame scenarios that trigger when certain conditions are met (e.g., territory count, prestige level)"
+    mechanic_impact: "Complete overhaul of all game systems. New economic model with population, revised building chains, expanded unit rosters, rebalanced tech tree, smarter AI. Double unit sizes."
     adult: false
-    notes: "Can be toggled on/off mid-campaign."
+    notes: "REQUIRES A NEW CAMPAIGN. Download both Part 1 and Part 2. Radious includes its own bug fixes — do NOT use 1.7.2 Bug Fix alongside it."
+
+  - name: "Radious Total War Mod - Part 2"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1791368928"
+    author: "Radious"
+    version: "3.1.0"
+    category: ["mechanics"]
+    wave: 2
+    description: "Part 2 of the Radious Total War overhaul. Contains additional assets, unit models, and script files. Required alongside Part 1 for full functionality."
+    dependencies: ["Radious Total War Mod - Part 1"]
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Load Part 2 after Part 1 in load order."
+
+  #############################
+  # COMPATIBILITY
+  #############################
+
+  - name: "Radious + Make Them Unique Compatibility Patch"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2072763823"
+    author: "Radious"
+    version: "1.0.0"
+    category: ["mechanics"]
+    wave: 2
+    description: "Official compatibility patch between Radious Total War Mod and Make Them Unique. Ensures MTU characters retain their unique models, abilities, and traits within the Radious overhaul."
+    dependencies:
+      - "Radious Total War Mod - Part 1"
+      - "Radious Total War Mod - Part 2"
+      - "Make Them Unique 3.3"
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Only needed if using MTU alongside Radious. Load after both Radious parts and MTU."
+
+  - name: "Make Them Unique 3.3"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1812159400"
+    author: "Wu Anguo"
+    version: "3.3"
+    category: ["content"]
+    wave: 2
+    description: "Adds unique 3D models, portrait art, and custom abilities to over 100 generic and historical characters. Included in Wave 2 for use with Radious via the compatibility patch."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: "Gives unique battlefield abilities and passives to previously generic characters"
+    adult: false
+    notes: "Included alongside Radious for the full experience. Use the Radious + MTU Compatibility Patch."
+
+  - name: "MTU Characters Remodeled"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2025406762"
+    author: "contactnovuspc"
+    version: "1.3.0"
+    category: ["content"]
+    wave: 2
+    description: "Enhanced high-detail 3D models for MTU characters. Requires MTU base mod."
+    dependencies: ["Make Them Unique 3.3"]
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Load BEFORE Make Them Unique in load order."
+
+  #############################
+  # BATTLE ENHANCEMENTS
+  #############################
+
+  - name: "100% Matched Combat Mod (Units and Heroes)"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2040616468"
+    author: "Der Grilllachs"
+    version: "1.1.0"
+    category: ["mechanics"]
+    wave: 2
+    description: "Changes combat to classic 1v1 matched combat from older Total War games. Units seek individual opponents instead of blob fighting. Heroes duel single enemies. Creates cinematic battle lines."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: "Modifies unit collision, target selection, and combat AI to prefer 1v1 engagements"
+    adult: false
+    notes: "Best experienced with large unit sizes. Complements Radious' double unit sizes perfectly."
+
+  - name: "Way of the Sword - Cinematic Combat"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2040267017"
+    author: "Der Grilllachs"
+    version: "1.1.0"
+    category: ["mechanics"]
+    wave: 2
+    description: "Adds cinematic combat animations and camera techniques. Longer, more dramatic kill animations, sweeping camera movements during engagements, and Wushu-inspired choreography."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Visual enhancement for battle sequences. Works alongside Matched Combat Mod."
+
+  - name: "Kelstr's Realistic Battle Blood [1.7.X]"
+    url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2437515689"
+    author: "Kelstr"
+    version: "1.7.x"
+    category: ["graphics"]
+    wave: 2
+    description: "Drastically improved blood decals on the ground during and after battles. Characters and terrain accumulate realistic blood splatter based on combat intensity."
+    dependencies: []
+    conflicts: []
+    mechanic_impact: null
+    adult: false
+    notes: "Graphical enhancement only. No performance impact. Complements the cinematic battle theme."
