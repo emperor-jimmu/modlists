@@ -155,23 +155,47 @@
 }
 
 // ===== MOD ENTRY =====
+#let tag-badge(body, bg, fg) = box(
+  fill: bg,
+  inset: (x: 5pt, y: 2pt),
+  outset: (y: 1pt),
+  radius: 2pt,
+  [#text(size: 9pt, fill: fg, weight: "bold")[#body]],
+)
+
 #let mod-entry(name, workshop-id, category, dependencies, system-impact, description) = {
   block(
     fill: gray-light,
-    inset: (x: 14pt, y: 12pt),
+    inset: (x: 16pt, y: 14pt),
     radius: 0pt,
     stroke: none,
     [
-      #set par(spacing: 0.4em)
-      #text(size: 13pt, font: heading-font, fill: amber)[#name]
-      #h(1em)
-      #link("https://steamcommunity.com/sharedfiles/filedetails/?id=" + workshop-id)[
-        #text(size: 9pt, fill: amber)[Workshop #workshop-id]
+      #set par(spacing: 0.45em)
+
+      #grid(
+        columns: (1fr, auto),
+        gutter: 8pt,
+        [#text(size: 14pt, font: heading-font, fill: amber)[#name]],
+        [#link("https://steamcommunity.com/sharedfiles/filedetails/?id=" + workshop-id)[
+          #text(size: 10pt, fill: amber, style: "italic")[WS: #workshop-id]
+        ]],
+      )
+
+      #v(3pt)
+
+      #tag-badge(category, green-light, green)
+      #if dependencies != "None" [
+        #h(4pt)
+        #tag-badge("Dep: " + dependencies, blue-light, blue)
       ]
-      #v(4pt)
-      #text(size: 9pt, fill: gray)[Category: #category · Dependencies: #dependencies · System Impact: #system-impact]
+
       #v(6pt)
-      #description
+
+      #text(size: 10.5pt, fill: body-color, weight: "bold", style: "italic")[#system-impact]
+
+      #v(3pt)
+
+      #text(size: 11pt, fill: body-color)[#description]
     ]
   )
   v(8pt, weak: true)

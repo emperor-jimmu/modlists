@@ -58,24 +58,31 @@ Each mod entry includes a clickable Steam Workshop link. Click it, then click th
 1. [B42] Mod Manager
 2-5. UI/QoL mods (order flexible)
 
-=== Wave 1 (20-40 mods)
+=== Wave 1 (99 mods)
 1. [B42] Mod Manager
-2. UI libraries/frameworks
-3. Content mods (items, weapons, vehicles)
-4. Graphics mods
-5. UI/QoL mods
+2. UI Framework (NeatUI Framework, Neat Rocco's UI)
+3. that DAMN Library (Continued)
+4. Professions & Traits
+5. Content & Locations
+6. Map & Navigation
+7. Items & Equipment
+8. Vehicles
+9. Graphics
+10. Visual & Environment (includes animations)
+11. UI & Quality of Life (load last for UI overrides)
 
-=== Wave 2 (40+ mods)
+=== Wave 2 (62 mods)
 1. [B42] Mod Manager
-2. Modding frameworks and libraries
-3. Major gameplay overhauls
-4. Profession and trait mods
-5. Content mods
-6. Map mods (base maps first, then additions)
-7. Graphics mods
-8. UI/QoL mods
-9. Compatibility patches
-10. Override/tweak mods (load last)
+2. Frameworks & Libraries (Profession Framework, MDTF, Skill Recovery Journal, Distillery & Biofuel)
+3. Survival Overhauls (Recipes of Death, Lifestyle, Temperature, Weather, Death Burden, Hygiene, Plumbing, Immersive Water/Blackout, Rats Mice, Exercise Gear)
+4. Zombie Overhauls (Horde Night, Horde Filter, Thriller Time, Raining Zombies, Wake Them Up)
+5. Realism Systems (Firearms Fix, Shoot Through Barricades, Water Pipes, PlumbingPlus, Burnt Ground, Propane, Realistic Weights, Adrenaline)
+6. Professions & Traits (New Professions, Seinar's Extended, Survivor Contracts, Custom Start)
+7. Crafting Expansions (Practice Crafting, Vehicle Restoration, Lanterns, Propane, Rain Barrel, Desensitized, Industrial Works, Food Preservation, Backpack Upgrades)
+8. Maps & Locations (Bridge Detonation, Predators, Helicopter, Chimera)
+9. Building & Base (Garage Doors, Repairable Windows)
+10. Immersion & Atmosphere (Nuclear Protocol, Clothing, Armor, Hazmat, UI, Checklist, Weapons, Vehicle Repair, Headlights, Taillights, Stairs Alert, Danger Awareness)
+11. Compatibility patches (if any)
 
 == Troubleshooting
 

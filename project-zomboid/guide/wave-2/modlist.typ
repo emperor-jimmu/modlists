@@ -118,6 +118,51 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
   "Make your base plumbing actually work. Water won't last forever.",
 )
 
+#mod-entry(
+  "Immersive Water Shutoff [B42.15-42.20][MP]",
+  "3599665197",
+  "Survival / Realism",
+  "None",
+  "More realistic water shutoff timeline and pressure degradation. Water does not just stop -- it fades.",
+  "Water pressure drops over days before the supply dies. Gives you a gradual warning instead of an instant cutoff.",
+)
+
+#mod-entry(
+  "Immersive Blackouts [B42.15-42.20][MP]",
+  "3607686447",
+  "Survival / Realism",
+  "None",
+  "Gradual power grid failure with brownouts and flickering before total blackout.",
+  "The power grid does not fail all at once. Experience brownouts, voltage drops, and flickering lights before the final blackout.",
+)
+
+#mod-entry(
+  "[B42.14+] Exercise With Corpses (SP/MP)",
+  "3404074048",
+  "Survival / Hardcore",
+  "None",
+  "Allows dragging corpses as a form of exertion exercise. Fits the hardcore survival theme.",
+  "Move corpses for fitness. Grim, practical, and fitting for Wave 2. Every chore is training.",
+)
+
+#mod-entry(
+  "Let Me Eat Rats and Mice",
+  "3416205082",
+  "Survival / Food",
+  "None",
+  "Catch and eat small rodents. Grim survival food for desperate times.",
+  "Set traps or catch rats and mice. Cook them for a meal. When calories are scarce, every protein source counts.",
+)
+
+#mod-entry(
+  "Exercise With Gear Again",
+  "3390760692",
+  "Survival / Skills",
+  "None",
+  "Exercise while wearing gear, backpacks, and body armor. Train like you fight.",
+  "Fitness training that accounts for your worn gear. Strength and endurance gains from moving under load.",
+)
+
 == Zombie Overhauls
 
 #mod-entry(
@@ -212,6 +257,33 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
   "Long-term survival requires sustainable farming. Reclaim dead earth.",
 )
 
+#mod-entry(
+  "Tanks Have Propane (B42)",
+  "3676347667",
+  "Realism / Resources",
+  "None",
+  "Propane tanks can be refilled at gas stations. Realistic propane management for welding and cooking.",
+  "Empty propane tanks can be refilled at gas station pumps. No more throwing away perfectly good tanks.",
+)
+
+#mod-entry(
+  "[B42] Realistic Weights - Ravense",
+  "3388351722",
+  "Realism / Items",
+  "None",
+  "Realistic item weight adjustments. Heavier tools, lighter clothes, more sensible encumbrance.",
+  "Adjusts item weights to be more realistic. A sledgehammer should be heavy. A t-shirt should not.",
+)
+
+#mod-entry(
+  "[B42/41] Adrenaline - Panic Counters Tiredness",
+  "2807001835",
+  "Realism / Physiology",
+  "None",
+  "Panic and adrenaline mechanics interact with tiredness. Fear keeps you awake; safety lets you crash.",
+  "Adrenaline from panic counters fatigue. Coming down from a panic attack causes exhaustion. Realistic stress response.",
+)
+
 == Professions & Traits
 
 #mod-entry(
@@ -295,6 +367,60 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
   "None",
   "Pour water from any container into rain barrels directly. Simplifies water collection and base water management without removing the survival challenge.",
   "Saves clicks, not challenge. Water management is still deadly serious.",
+)
+
+#mod-entry(
+  "[B42] Become Desensitized",
+  "3713359427",
+  "Skills / Combat",
+  "None",
+  "Earn the Desensitized trait through sustained combat. The more you fight, the less you panic.",
+  "Kill enough zombies and your character becomes desensitized to violence. Panic resistance earned through experience.",
+)
+
+#mod-entry(
+  "Industrial Works",
+  "3680638986",
+  "Crafting / Industry",
+  "None",
+  "Industrial-scale crafting. Heavy machinery, advanced workshops, and large-scale production.",
+  "Build industrial workbenches and machines for large-scale crafting. Smelt metal, refine chemicals, mass-produce goods.",
+)
+
+#mod-entry(
+  "[B42] Buildable Garage Doors",
+  "3727753275",
+  "Building / Vehicles",
+  "None",
+  "Craft and build garage doors for vehicle bases. Secure your parking.",
+  "Build functioning garage doors for your base. Roll-up and sectional doors that zombies cannot bash through easily.",
+)
+
+#mod-entry(
+  "[42.20MP] Repairable Windows",
+  "3378304610",
+  "Building / QoL",
+  "None",
+  "Repair broken windows with glass and tools. No more boarding up every shattered pane.",
+  "Fix broken windows using glass panes, putty, and tools. Restore your base to its former condition.",
+)
+
+#mod-entry(
+  "Long Term Preservation [B42.13]",
+  "3406392630",
+  "Crafting / Food",
+  "None",
+  "Long-term food preservation methods. Canning, salting, pickling, and drying for indefinite storage.",
+  "Preserve food for months or years using historical methods. Can jars, salt meat, pickle vegetables. Time-consuming but life-saving.",
+)
+
+#mod-entry(
+  "Dynamic Backpack Upgrades [B41-B42.15]",
+  "2996978365",
+  "Crafting / Items",
+  "None",
+  "Craft backpack upgrades -- add pockets, straps, and reinforcements. Customize your carry capacity.",
+  "Upgrade any backpack with sewing, straps, and modifications. More pockets, better weight distribution, reinforced seams.",
 )
 
 == Maps & Locations
@@ -413,14 +539,59 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
   "More ways to fight. The apocalypse doesn't provide -- you improvise.",
 )
 
+#mod-entry(
+  "Vehicle Repair Overhaul",
+  "2757712197",
+  "Immersion / Vehicles",
+  "None",
+  "Overhauled vehicle repair with more parts, more steps, and more realistic mechanics.",
+  "Vehicle repair is no longer just replace-part-and-go. More components, more tools, more satisfaction when it runs.",
+)
+
+#mod-entry(
+  "BrighterHeadlights",
+  "3425507560",
+  "Immersion / Vehicles",
+  "None",
+  "Increases vehicle headlight illumination range for safer night driving.",
+  "Brighter, longer-range headlights for all vehicles. Night driving becomes viable without being unrealistic.",
+)
+
+#mod-entry(
+  "Taillights and Stoplights",
+  "3687394815",
+  "Immersion / Vehicles",
+  "None",
+  "Working taillights and brake lights on vehicles. Visual immersion for night driving.",
+  "Vehicles now show brake lights when slowing and taillights at night. Small detail, big immersion boost.",
+)
+
+#mod-entry(
+  "Stairs Alert",
+  "3044807092",
+  "Immersion / Safety",
+  "None",
+  "Shows how many zombies are on upper floors when looking at stairs. Know before you go up.",
+  "Check how many zombies are waiting upstairs before you climb. Simple UI element that saves lives.",
+)
+
+#mod-entry(
+  "Danger Awareness",
+  "3170356924",
+  "Immersion / Safety",
+  "None",
+  "Visual indicator when zombies are nearby but not in direct line of sight. Heightened situational awareness.",
+  "A subtle UI indicator when zombies are close but hidden behind walls or objects. No wallhacks, just awareness.",
+)
+
 == Summary
 
 #danger[
-  Wave 2's mod list is massive -- over 40 mods across 8 categories. Follow the Installation chapter's load order rules carefully. Incorrect load order WILL cause crashes. The Mod Manager's conflict detection is your friend. Test your load order before committing to a long run.
+  Wave 2's mod list is massive -- over 62 mods across 9 categories. Follow the Installation chapter's load order rules carefully. Incorrect load order WILL cause crashes. The Mod Manager's conflict detection is your friend. Test your load order before committing to a long run.
 ]
 
 #tip[
-  Total mods in Wave 2: 42 (including Mod Manager and 4 frameworks). Combined with Wave 1's 30 and Wave 0's 4, the full mod list is 76 mods. You are not expected to run all three waves simultaneously. Each wave is a separate profile and a separate game.
+  Total mods in Wave 2: 62 (including Mod Manager and 4 frameworks). Each wave is its own profile -- do not combine waves. You are not expected to run all three waves simultaneously. Each wave is a separate profile and a separate game.
 ]
 
 == Load Order
@@ -430,12 +601,13 @@ Wave 2 is the full apocalypse. Over 40 mods across every category -- realism, di
 
   1. [B42] Mod Manager
   2. Frameworks & Libraries (Profession Framework, MDTF, Skill Recovery Journal, Distillery & Biofuel)
-  3. Survival Overhauls (Recipes of Death, Lifestyle, Temperature, Weather, Death Burden, Hygiene, Plumbing)
+  3. Survival Overhauls (Recipes of Death, Lifestyle, Temperature, Weather, Death Burden, Hygiene, Plumbing, Immersive Water/Blackout, Exercise With Corpses, Rats & Mice, Exercise With Gear)
   4. Zombie Overhauls (Horde Night, Horde Filter, Thriller Time, Raining Zombies, Wake Them Up)
-  5. Realism Systems (Firearms Fix, Shoot Through Barricades, Water Pipes, PlumbingPlus, Burnt Ground)
+  5. Realism Systems (Firearms Fix, Shoot Through Barricades, Water Pipes, PlumbingPlus, Burnt Ground, Propane, Realistic Weights, Adrenaline)
   6. Professions & Traits (New Professions, Seinar's Extended, Survivor Contracts, Custom Start)
-  7. Crafting Expansions (Practice Crafting, Vehicle Restoration, Lanterns, Propane, Rain Barrel)
+  7. Crafting Expansions (Practice Crafting, Vehicle Restoration, Lanterns, Propane, Rain Barrel, Become Desensitized, Industrial Works, Long Term Preservation, Backpack Upgrades)
   8. Maps & Locations (Bridge Detonation, Predators, Helicopter, Chimera)
-  9. Immersion & Atmosphere (Nuclear Protocol, Clothing, Armor, Hazmat, UI, Checklist, Weapons)
-  10. Compatibility patches (if any)
+  9. Immersion & Atmosphere (Nuclear Protocol, Clothing, Armor, Hazmat, UI, Checklist, Weapons, Vehicle Repair, Brighter Headlights, Taillights, Stairs Alert, Danger Awareness)
+  10. Building & Base (Buildable Garage Doors, Repairable Windows)
+  11. Compatibility patches (if any)
 ]
