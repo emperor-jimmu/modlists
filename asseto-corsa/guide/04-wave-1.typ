@@ -360,7 +360,9 @@ A perfect lap is not one magic corner — it is connecting every phase of every 
 
 Every corner has four distinct phases. Time lost in any phase cannot be fully recovered in the next.
 
-#figure(
+#show figure: set block(above: 4pt, below: 4pt)
+
+#figure(gap: 2pt,
   scale(30%, image("../assets/racing-line-reference.png")),
   caption: [
     The four phases of a corner — braking point, turn-in, apex, and exit.
@@ -384,7 +386,7 @@ The fundamental compromise in cornering:
 - *Minimum speed* — The slowest point should be at the apex, not before it and not after it. If your minimum speed occurs before the apex, you braked too early or turned in too late. If it occurs after the apex, you turned in too early or applied throttle too aggressively.
 - *The principle:* Slow in, fast out. Every corner you enter slower than you think you need to will reward you with a higher exit speed. Trust that the extra exit speed will more than compensate for the entry speed you gave up.
 
-#figure(
+#figure(gap: 2pt,
   scale(30%, image("../assets/ideal-racing-line.png")),
   caption: [
     The speed tradeoff — geometric line vs ideal racing line. Green = geometric
