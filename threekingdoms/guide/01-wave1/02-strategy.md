@@ -42,19 +42,64 @@
 - Assign characters to court positions based on their **traits and skills**, not just loyalty. A corrupt administrator hurts more than a disloyal one.
 - Government type affects available court positions and satisfaction distribution. **Meritocracy** and **Patriarchy** have very different trade-offs.
 
-### Guanxi (Relationships)
+### Guanxi — The Relationship System
 
-- Characters form **friendships, rivalries, and sworn brotherhoods** over time. These affect loyalty, satisfaction, and battlefield performance.
-- Pair characters with positive relationship traits in the same army — they fight better together.
-- Avoid putting rivals in the same army or court — they will drag each other's satisfaction down.
-- Use **marriage** and **adoption** strategically to lock in loyalty from talented generals.
+Guanxi is the web of personal relationships between your characters. It's Three Kingdoms' most innovative system and the key to long-term campaign stability.
 
-### Reforms Tree
+**Relationship Types:**
 
-- Prioritize reforms that match your playstyle. Do not research randomly — every turn spent on the wrong reform is a turn of lost advantage.
-- **Administrative reforms** (corruption reduction, satisfaction) scale better than military reforms for most campaigns.
-- **Commerce reforms** compound over time. Invest early.
-- Unlocking **purple (Governance) and green (Commerce) tree** nodes early gives a stronger economy foundation for late-game military pushes.
+| Type | How It Forms | Effect |
+|------|--------------|--------|
+| **Friendship** | Same army, successful battles, positive events | +satisfaction, +battle performance when together |
+| **Sworn Brotherhood** | Event chain (costs gold, requires high relationship) | Permanent +satisfaction, unbreakable loyalty pair |
+| **Rivalry** | Opposing traits, competition for positions, negative events | -satisfaction, -battle performance when together |
+| **Hatred** | Escalated rivalry or event-driven | Severe penalties. One may betray the other. |
+| **Marriage** | Diplomacy (join families) or character events | Binds two families. Children inherit traits. |
+| **Adoption** | Character event — recruit a young hero | Instant family member + loyalty |
+
+**Managing Guanxi:**
+
+- **Pair friends, separate rivals.** Check the character details panel for relationship icons before assigning generals to the same army. Friends give each other +3-5 satisfaction per turn. Rivals cancel that out and more.
+- **Sworn brotherhood is expensive but permanent.** The event costs around 2000-4000 gold depending on character rank. It's worth it for your core generals — they will never defect.
+- **Marriage is a political tool.** Marry a talented but disloyal general into your family — family members get massive satisfaction bonuses. Marriage also creates diplomatic alliances with the target faction.
+- **Children inherit traits.** Marry two characters with "+satisfaction" or "-corruption" traits and their child may inherit those traits. Long-term dynasty planning matters.
+- **Divorce is possible** but comes with severe satisfaction penalties. Only use it if the alternative is a civil war.
+
+**Guanxi Events (with MTU Event Add-on):**
+
+With the MTU Event Add-on installed, unique characters generate additional relationship events: duels of honour, rescue missions, betrayal dilemmas, and family feuds. These add narrative depth and force you to make choices that ripple through your character web.
+
+### Character Development — Skills, Traits & Ancillaries
+
+**Skill Trees:**
+
+Every character has a skill tree with 10-15 nodes. Plan their development:
+
+| Class | Priority Skills | Why |
+|-------|-----------------|-----|
+| **Commander** | +satisfaction (all), army movement, replenishment | Keeps your empire stable. Your faction-wide loyalty beacon. |
+| **Vanguard** | Charge bonus, cavalry buffs, +damage | Field general. Put them in charge of your cavalry army. |
+| **Champion** | Melee evasion, duelling, +health | General killer. Send them against enemy champions. |
+| **Strategist** | Ranged damage, fire arrows, cunning | Spy network and artillery support. Never leave home without one. |
+| **Sentinel** | Melee defence, garrison, -corruption | Best administrator. Put them in your richest province. |
+
+**Traits:**
+
+Characters gain and lose traits based on their actions. A general who wins many battles gains "+morale" traits. One who loses gets "-satisfaction" traits. A character who sits idle gains "Complacent" (-satisfaction).
+
+- **Positive traits to recruit for:** Diligent, Resolute, Inspiring, Generous, Cunning
+- **Negative traits to avoid:** Corrupt, Cruel, Timid, Complacent, Arrogant
+- **Trait farming:** If you have a young heir, send them with your main army to every battle — they absorb positive combat traits. Assign them as administrator later for administrative traits.
+
+**Ancillaries:**
+
+Every character has 3 ancillary slots (weapon, armour, accessory). Fill all 3 on every character. Even common ancillaries give small bonuses that add up across 20+ characters.
+
+- **Weapons:** +melee damage or +charge bonus for generals. Give your best weapon to your Vanguard or Champion.
+- **Armour:** +melee defence or +health. Give to your frontline Sentinel or Commander.
+- **Accessories:** +satisfaction, +cunning, or +commerce. Distribute based on role — satisfaction accessories go to disloyal but talented characters.
+- **Trade for ancillaries** in diplomacy. Many factions will trade a decent weapon for 500-1000 gold or a food deal.
+- **The Imperial Seals** (end-game) are the best ancillaries in the game. They grant faction-wide bonuses to prestige, satisfaction, and income. Fight for them.
 
 ### Spies & Undercover Network
 
@@ -62,6 +107,30 @@
 - Secure your spy's position by having them perform **small favours** (reveal army positions) before asking them to **assassinate or sabotage**.
 - **Counter-intelligence matters.** Assign a character with high cunning as an administrator in each commandery to reveal enemy spies.
 - A well-placed spy can steal technologies, incite rebellions, or assassinate a faction leader — often more valuable than an army.
+
+### Events & Dilemmas
+
+Three Kingdoms throws dilemmas at you every few turns. These are not flavour text — they have real mechanical consequences.
+
+| Dilemma Type | Typical Choice | Consequence |
+|--------------|----------------|-------------|
+| **Food vs Gold** | Give food to starving region or sell it | Public order vs short-term cash |
+| **Character Conflict** | Side with general A or general B | The loser loses satisfaction, may defect |
+| **Diplomatic Crisis** | Bow to demand or refuse | War vs temporary stability |
+| **Succession** | Choose your heir | The unchosen heir loses satisfaction |
+| **Reform Decision** | Rush a reform or invest in stability | Tech advantage vs empire health |
+
+**Dilemma strategy:**
+- **Choose food and satisfaction** over money in the early game. Gold is temporary; revolts and defections are permanent.
+- **Never side against your best general** unless the alternative is worse. Losing a rank 6+ Champion to defection can cost you a campaign.
+- **Diplomatic dilemmas: buy time.** If a powerful faction demands something, give it to them. You can take it back when you're stronger.
+
+### Reforms Tree
+
+- Prioritize reforms that match your playstyle. Do not research randomly — every turn spent on the wrong reform is a turn of lost advantage.
+- **Administrative reforms** (corruption reduction, satisfaction) scale better than military reforms for most campaigns.
+- **Commerce reforms** compound over time. Invest early.
+- Unlocking **purple (Governance) and green (Commerce) tree** nodes early gives a stronger economy foundation for late-game military pushes.
 
 ### Army Composition
 
