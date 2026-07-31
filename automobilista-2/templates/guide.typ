@@ -24,4 +24,6 @@
 #pagebreak()
 #cmarker.render(read("../guide/04-wave-3-championship.md"))
 #pagebreak()
+#cmarker.render(read("../guide/appendix-mod-reference.md"))
+#pagebreak()
 #cmarker.render(read("../guide/appendix-glossary.md"))
