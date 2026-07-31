@@ -244,6 +244,90 @@ Frackin Universe includes BYOS functionality. The Universal BYOS Patcher (OSB, i
 - *Focus branches.* Spreading research across all branches equally slows your progression. Pick one branch, max it to the next tier gate, then move to the next. Geology and Engineering have the highest return on investment early.
 - *Passive research scales.* Higher-tier Research Terminals generate more passive research per minute. Upgrade your terminal as soon as the node unlocks.
 
+=== RPG Progression: Dual System Strategy
+
+This modlist runs two progression systems simultaneously: Frackin Universe's research-based tech tree and RPG Growth's experience-based character levels. They do not replace each other — they complement each other. Think of the research tree as your gear and capability gate, and RPG Growth as your personal power curve.
+
+==== How They Interact
+
+#table(
+  columns: (auto, 1fr, 1fr),
+  inset: 6pt,
+  table.header([*System*], [*What It Controls*], [*How You Progress*]),
+  [FU Research], [Crafting stations, armor tiers, weapon unlocks, automation, extraction, genes, bees, brewing], [Feed items into the Research Terminal. Complete research nodes to unlock new crafting recipes and capabilities.],
+  [RPG Growth], [Base stats (STR, DEX, INT, etc.), class unlocks, class techs, Professions, Affinities, Specializations], [Kill monsters for XP orbs. Level up, allocate stat points via the Mysterious Book.],
+)
+
+#concept[
+  FU determines what you can build. RPG Growth determines how strong you are when you use it. A tier-6 sword in the hands of a level-1 character deals base damage. The same sword on a level-40 character with points in STR and the correct class does 3× the damage. Do not neglect either system — they multiply each other.
+]
+
+==== FU + RPG Growth Balance Patches
+
+This modlist includes patches that synchronise the two systems:
+
+- *RPG Growth FU Recipe Balance* — adjusts RPG Growth crafting costs to match FU's economy. Without it, RPG Growth items may be trivially cheap or impossibly expensive relative to FU's material progression.
+- *Pandora's Box RPG Growth EXP Patch* — recalibrates XP rates for FU's expanded bestiary. FU adds hundreds of new creatures across dozens of biomes. Without this patch, the sheer volume of enemies would either over-level you in the early game or under-reward you in the endgame.
+- *RPG Growth Extended Levels* — extends the level cap. FU's content volume means you will hit the default level cap long before you finish exploring. This patch ensures there is always room to grow.
+
+==== Stat Allocation Priorities
+
+RPG Growth gives you 7 stats. Your priority depends on your class:
+
+#table(
+  columns: (auto, auto, 1fr),
+  inset: 6pt,
+  table.header([*Class*], [*Primary Stats*], [*Why*]),
+  [Soldier / Brute], [STR > VIT], [You are in melee range. Every point of VIT is one more hit you can take before burning a stim. STR increases damage and knockback.],
+  [Ranger / Gunslinger], [DEX > STR], [DEX increases ranged damage and reduces spread. At range, you dictate engagement distance — fewer points in VIT are acceptable.],
+  [Mage / Caster], [INT > DEX], [INT scales spell damage and reduces energy costs. FU energy weapons and staves also benefit from INT. DEX keeps you mobile between casts.],
+  [Explorer / Hybrid], [DEX > VIT], [You need mobility for traversing dangerous biomes and enough HP to survive environmental damage. Balanced but not specialised.],
+  [Avali Mechanist], [INT > DEX], [Avali tech and aerogel weapons scale with INT. Fight at range with constructs and drones — DEX for positioning.],
+)
+
+#tip[
+  Respect the respec. RPG Growth allows stat reallocation later. Experiment with a hybrid build for the first 20 levels while you learn which weapons and playstyle you prefer. Commit to a focused build once you know what works.
+]
+
+==== When to Focus on Each System
+
+The two systems peak at different stages:
+
+*Levels 1-20:* Prioritise FU research. Unlock your first extraction chain, a tier-2 armor set, and basic automation before worrying about stat optimisation. A tier-1 character with a tier-3 weapon out-damages a level-30 character with a tier-1 weapon. Gear gates are harder than level gates.
+
+*Levels 20-40:* Both systems in parallel. Your research tree should be into tier 3-4 by now. Spend RPG Growth points to specialise your build. Pick your class and commit.
+
+*Levels 40-60:* RPG Growth becomes the primary growth vector. Your research tree is deep; most key nodes are unlocked. Each level in RPG Growth now adds meaningful power to your established gear setup. Extended Levels ensures the curve continues past the default cap.
+
+*Levels 60+:* Endgame synergy. Max your research, max your stats, optimise your class specialisation. This is where Affinities and Specializations from RPG Growth combine with FU's endgame gear to produce builds that trivialise tier-4 planets and make Proto-World survivable.
+
+==== Race Traits + RPG Growth
+
+Race Traits gives your species innate stat bonuses. These stack with RPG Growth stats:
+
+- *Trink & Eld'uukhar:* Bonus INT — natural mages.
+- *Saturnians:* Bonus DEX — natural rangers.
+- *Avali:* Bonus DEX + INT — hybrid tech-fighters.
+- *Sergal & Lucario:* Bonus STR — natural soldiers.
+- *Humans & Novakids:* Balanced — no penalty, no bonus. The flexible choice.
+
+#concept[
+  Your race choice matters mechanically, not just cosmetically. A Saturnian Ranger will always out-perform a human Ranger at the same level because of the racial DEX bonus. If you min-max, match your race to your planned class before you spend your first stat point.
+]
+
+==== Combat XP Optimisation
+
+XP orbs drop from kills. Maximising XP gain is a function of kill rate, not kill difficulty:
+
+- *Farm in FU dungeons.* Packed enemy density means more kills per minute. Galactic Dungeons, Super Dungeon Pack, and Extra Dungeons all provide high-density combat zones.
+- *AOE weapons scale XP.* Rocket launchers, grenades, and area-effect staves kill multiple enemies per shot. Each enemy drops its own XP orb. One rocket into a room of 5 creatures gives 5× the XP of a single-target kill.
+- *Bosses are inefficient.* Boss XP rewards do not scale proportionally to the time investment. Farm trash mobs for levels; fight bosses for gear.
+- *Do not die.* Death in RPG Growth carries an XP penalty. Play aggressive — but not careless. The penalty compounds over a long session.
+
+#tip[
+  The Pandora's Box EXP patch balances XP rates. If you feel you are levelling too fast or too slow, adjust the patch config — it is tunable. Do not suffer through bad XP pacing when the fix is a config edit away.
+]
+
 === Environmental Resistance Gearing
 
 FU planets have specific hazard types. You can see them in the nav console with MPI installed.
