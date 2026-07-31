@@ -8,11 +8,15 @@
 
 **Tech Stack:** Markdown, Typst 0.15.1, cmarker 0.1.10, PowerShell 7, OverTake.gg for mod sourcing.
 
-**Verified:** Simplified Launcher for F1 25 v3.2.10 by Team Simplified — confirmed on OverTake.gg at overtake.gg/downloads/simplified-launcher-for-f1-25-used-to-quickly-manage-and-launch-mods.77451/
+**Verified:** Simplified Launcher for F1 25 v3.2.10 by Team Simplified — confirmed on OverTake.gg.
+
+**Mod Research:** User will provide verified mods separately. Task 5 formats and inserts them.
+
+**Guide Content Caveat:** All game-mechanic content (controls, assists, career features, ERS modes, etc.) is written from F1 series knowledge. A future task should verify specifics against the actual F1 25 v1.24 in-game screens.
 
 ---
 
-### Task 1: Create Project Skeleton
+### Task 1: Create Project Skeleton and Boilerplate
 
 **Files:**
 - Create: `f1-25/guide/wave-0/how-to-play.md`
@@ -23,15 +27,16 @@
 - Create: `f1-25/guide/wave-2/mods.md`
 - Create: `f1-25/templates/guide.typ`
 - Create: `f1-25/templates/style.typ`
-- Create: `f1-25/output/` (directory with .gitkeep)
-- Create: `f1-25/conflicts-mods.md`
-- Create: `f1-25/mod-ideas.md`
+- Create: `f1-25/output/.gitkeep`
+- Create: `f1-25/.gitignore`
 - Create: `f1-25/VERSION`
 - Create: `f1-25/AGENTS.md`
 - Create: `f1-25/README.md`
 - Create: `f1-25/STATUS.md`
 - Create: `f1-25/GUIDE.md`
 - Create: `f1-25/generate-pdf.ps1`
+- Create: `f1-25/conflicts-mods.md`
+- Create: `f1-25/mod-ideas.md`
 
 - [ ] **Step 1: Create all directories**
 
@@ -43,58 +48,28 @@ New-Item -ItemType Directory -Path "f1-25\templates" -Force
 New-Item -ItemType Directory -Path "f1-25\output" -Force
 ```
 
-- [ ] **Step 2: Create empty placeholder files**
-
-```powershell
-New-Item -ItemType File -Path "f1-25\guide\wave-0\how-to-play.md" -Force
-New-Item -ItemType File -Path "f1-25\guide\wave-0\mods.md" -Force
-New-Item -ItemType File -Path "f1-25\guide\wave-1\strategy.md" -Force
-New-Item -ItemType File -Path "f1-25\guide\wave-1\mods.md" -Force
-New-Item -ItemType File -Path "f1-25\guide\wave-2\advanced.md" -Force
-New-Item -ItemType File -Path "f1-25\guide\wave-2\mods.md" -Force
-New-Item -ItemType File -Path "f1-25\templates\guide.typ" -Force
-New-Item -ItemType File -Path "f1-25\templates\style.typ" -Force
-New-Item -ItemType File -Path "f1-25\output\.gitkeep" -Force
-New-Item -ItemType File -Path "f1-25\conflicts-mods.md" -Force
-New-Item -ItemType File -Path "f1-25\mod-ideas.md" -Force
-New-Item -ItemType File -Path "f1-25\VERSION" -Force
-New-Item -ItemType File -Path "f1-25\AGENTS.md" -Force
-New-Item -ItemType File -Path "f1-25\README.md" -Force
-New-Item -ItemType File -Path "f1-25\STATUS.md" -Force
-New-Item -ItemType File -Path "f1-25\GUIDE.md" -Force
-New-Item -ItemType File -Path "f1-25\generate-pdf.ps1" -Force
-```
-
-- [ ] **Step 3: Verify structure**
-
-```powershell
-Get-ChildItem -Recurse -File "f1-25" | ForEach-Object { $_.FullName.Replace("$PWD\", "") }
-```
-
-Expected: All 16 files listed, no errors.
-
-- [ ] **Step 4: Commit**
-
-```bash
-git add f1-25/guide f1-25/templates f1-25/output f1-25/conflicts-mods.md f1-25/mod-ideas.md f1-25/VERSION f1-25/AGENTS.md f1-25/README.md f1-25/STATUS.md f1-25/GUIDE.md f1-25/generate-pdf.ps1
-git commit -m "f1-25: create project skeleton for Apex Alchemy"
-```
-
----
-
-### Task 2: Write VERSION and AGENTS.md
-
-**Files:**
-- Write: `f1-25/VERSION`
-- Write: `f1-25/AGENTS.md`
-
-- [ ] **Step 1: Write VERSION file**
+- [ ] **Step 2: Write VERSION**
 
 ```markdown
 0.1.0
 ```
 
-- [ ] **Step 2: Write AGENTS.md**
+- [ ] **Step 3: Write .gitignore**
+
+```gitignore
+# Generated PDFs (rebuild from source, don't track binaries)
+output/APEX-ALCHEMY-GUIDE.pdf
+
+# Typst cache
+output/*.png
+output/*.svg
+
+# OS files
+Thumbs.db
+.DS_Store
+```
+
+- [ ] **Step 4: Write AGENTS.md**
 
 ```markdown
 # F1 25 Apex Alchemy — AGENTS.md
@@ -124,11 +99,19 @@ A progressive modlist + game guide for F1 25 that teaches complete beginners how
 
 ## Mod Entry Format
 
-Every mod entry must contain:
-- Clickable name with verified OverTake.gg URL
-- Dependencies
-- System/mechanic impact (what it changes)
-- Installation notes (load order, configuration, compatibility)
+Every mod entry must use this consistent table format:
+
+```markdown
+#### [Mod Name](verified-overtake-url)
+
+| Detail | Value |
+|--------|-------|
+| **Version** | X.Y.Z |
+| **Author** | Author Name |
+| **Dependencies** | List or None |
+| **What It Changes** | Description of the mod's impact on the game. |
+| **Installation** | Any special installation notes. |
+```
 
 ## Technical Standards
 
@@ -141,7 +124,7 @@ Markdown Parser      cmarker 0.1.10
 File Layout          guide/              — guide + modlist organized by wave
                      templates/          — Typst document templates
                      output/             — generated PDFs
-                     ASSETS.md           — this file
+                     AGENTS.md           — this file
                      STATUS.md           — living decision log
                      GUIDE.md            — compiled single-source markdown
                      conflicts-mods.md   — known conflicts (not in PDF)
@@ -163,61 +146,47 @@ When searching OverTake.gg for mods:
 4. Record all findings in STATUS.md — accepted AND rejected
 ```
 
-- [ ] **Step 3: Commit**
-
-```bash
-git add f1-25/VERSION f1-25/AGENTS.md
-git commit -m "f1-25: add VERSION and AGENTS.md"
-```
-
----
-
-### Task 3: Write STATUS.md and README.md
-
-**Files:**
-- Write: `f1-25/STATUS.md`
-- Write: `f1-25/README.md`
-
-- [ ] **Step 1: Write STATUS.md**
+- [ ] **Step 5: Write STATUS.md**
 
 ```markdown
 # STATUS — Apex Alchemy (F1 25)
 
-## Completed
+## Legend
 
-### Project Setup
-- [x] Project skeleton created
-- [x] AGENTS.md written
-- [x] VERSION set to 0.1.0
-- [x] Simplified Launcher v3.2.10 verified on OverTake.gg
-
-### Task Tracking Legend
 - [x] = completed
 - [ ] = pending
 - [!] = blocked
 
+## Completed
+
+### Project Setup
+- [x] Project skeleton created with all directories and files
+- [x] AGENTS.md written with vision, rules, and conventions
+- [x] VERSION set to 0.1.0
+- [x] .gitignore created (excludes generated PDFs)
+- [x] Simplified Launcher v3.2.10 verified on OverTake.gg
+
 ## Pending
 
 ### Wave 0 — First Lap
-- [ ] How-to-play guide written
-- [ ] Simplified Launcher installation instructions
-- [ ] Wave 0 mods documented
+- [ ] How-to-play guide written (9 sections)
+- [ ] Wave 0 mods documented (Simplified Launcher entry)
 
 ### Wave 1 — Building Speed
-- [ ] Strategy guide written
-- [ ] Mod research — OverTake.gg F1 25 categories
-- [ ] Wave 1 mods documented with verified URLs
+- [ ] Strategy guide written (7 sections)
+- [ ] Wave 1 mods formatted and inserted (user-supplied)
 
 ### Wave 2 — Apex Predator
-- [ ] Advanced guide written
-- [ ] Mod research — deeper content mods
-- [ ] Wave 2 mods documented with verified URLs
+- [ ] Advanced guide written (5 sections)
+- [ ] Wave 2 mods formatted and inserted (user-supplied)
 
 ### PDF
 - [ ] Typst style.typ written (Carbon & Crimson theme)
 - [ ] Typst guide.typ written (cover + TOC + body)
+- [ ] Typst theme verified with test compilation
 - [ ] generate-pdf.ps1 written
-- [ ] PDF compiles cleanly
+- [ ] GUIDE.md built from guide/ sources
+- [ ] PDF compiles cleanly with verified output
 
 ## Decisions
 
@@ -226,13 +195,17 @@ git commit -m "f1-25: add VERSION and AGENTS.md"
 - [x] URL: https://www.overtake.gg/downloads/simplified-launcher-for-f1-25-used-to-quickly-manage-and-launch-mods.77451/
 - [x] Discord: https://discord.gg/GQZn5gbBdg
 - [x] Features: drag-and-drop mod install, ZIP/RAR/7Z support, backup/restore, favorites, categories, presets, conflict detection
+- [x] Note: Windows Defender may flag as false positive (unsigned Python self-package)
+
+### Guide Content
+- [ ] Game-mechanic content NOT yet verified against actual F1 25 v1.24 in-game screens — TODO: cross-reference controls, assist menu, career UI, ERS modes
 
 ## Skipped / Rejected
 
 (None yet)
 ```
 
-- [ ] **Step 2: Write README.md**
+- [ ] **Step 6: Write README.md**
 
 ```markdown
 # Apex Alchemy — F1 25 Modlist & Guide
@@ -263,30 +236,100 @@ Requires Typst 0.15.1: `winget install Typst.Typst`
 
 ```
 f1-25/
-├── guide/           # Guide + modlist organised by wave
-├── templates/       # Typst PDF templates
-├── output/          # Generated PDFs
-├── GUIDE.md         # Compiled single-source markdown
-├── STATUS.md        # Project decisions and progress
-└── AGENTS.md        # Vision, constraints, conventions
+├── guide/             # Guide + modlist organised by wave
+│   ├── wave-0/        # Beginner tutorial + tools
+│   ├── wave-1/        # Intermediate strategy + mods
+│   └── wave-2/        # Advanced guide + mods
+├── templates/         # Typst PDF templates
+├── output/            # Generated PDFs
+├── GUIDE.md           # Compiled single-source markdown
+├── STATUS.md          # Project decisions and progress
+├── AGENTS.md          # Vision, constraints, conventions
+├── conflicts-mods.md  # Known mod conflicts
+└── mod-ideas.md       # Future mod ideas
 ```
 ```
 
-- [ ] **Step 3: Commit**
+- [ ] **Step 7: Write conflicts-mods.md** (placeholder with purpose)
+
+```markdown
+# Conflicts & Known Issues — Apex Alchemy
+
+This file documents known conflicts between mods and game issues.
+It is NOT included in the generated PDF.
+
+## Format
+
+For each conflict, record:
+- Which mods conflict
+- What happens (crash, broken feature, visual glitch)
+- Resolution (load order fix, config change, one must be removed)
+
+## Known Conflicts
+
+(None documented yet — populate during mod testing)
+```
+
+- [ ] **Step 8: Write mod-ideas.md** (placeholder with purpose)
+
+```markdown
+# Mod Ideas — Apex Alchemy
+
+Future mods to investigate, rejected mods with reasons, and community suggestions.
+NOT included in the generated PDF.
+
+## Format
+
+For each idea, record:
+- Mod name and URL (if known)
+- Which wave it would fit in
+- Why it's not included yet (needs testing, incompatible version, user preference)
+
+## Candidates
+
+(None yet — populated during research and community feedback)
+```
+
+- [ ] **Step 9: Create remaining empty files**
+
+```powershell
+New-Item -ItemType File -Path "f1-25\guide\wave-0\how-to-play.md" -Force
+New-Item -ItemType File -Path "f1-25\guide\wave-0\mods.md" -Force
+New-Item -ItemType File -Path "f1-25\guide\wave-1\strategy.md" -Force
+New-Item -ItemType File -Path "f1-25\guide\wave-1\mods.md" -Force
+New-Item -ItemType File -Path "f1-25\guide\wave-2\advanced.md" -Force
+New-Item -ItemType File -Path "f1-25\guide\wave-2\mods.md" -Force
+New-Item -ItemType File -Path "f1-25\templates\guide.typ" -Force
+New-Item -ItemType File -Path "f1-25\templates\style.typ" -Force
+New-Item -ItemType File -Path "f1-25\output\.gitkeep" -Force
+New-Item -ItemType File -Path "f1-25\GUIDE.md" -Force
+New-Item -ItemType File -Path "f1-25\generate-pdf.ps1" -Force
+```
+
+- [ ] **Step 10: Verify structure**
+
+```powershell
+Get-ChildItem -Recurse -File "f1-25" | ForEach-Object { $_.FullName.Replace("$PWD\", "") }
+```
+
+Expected: All files listed, no errors.
+
+- [ ] **Step 11: Commit**
 
 ```bash
-git add f1-25/STATUS.md f1-25/README.md
-git commit -m "f1-25: add STATUS.md and README.md"
+git add f1-25/guide f1-25/templates f1-25/output f1-25/conflicts-mods.md f1-25/mod-ideas.md f1-25/VERSION f1-25/AGENTS.md f1-25/README.md f1-25/STATUS.md f1-25/GUIDE.md f1-25/generate-pdf.ps1 f1-25/.gitignore
+git commit -m "f1-25: create project skeleton with all boilerplate files"
 ```
 
 ---
 
-### Task 4: Write Wave 0 — How to Play Guide
+### Task 2: Write Wave 0 Guide Content
 
 **Files:**
 - Write: `f1-25/guide/wave-0/how-to-play.md`
+- Write: `f1-25/guide/wave-0/mods.md`
 
-- [ ] **Step 1: Write the how-to-play guide**
+- [ ] **Step 1: Write how-to-play guide**
 
 ```markdown
 ## Wave 0 — First Lap
@@ -335,6 +378,8 @@ The **Simplified Launcher** by Team Simplified is the recommended mod manager fo
 - **Categories** — organize mods into folders (My Team, Helmets, etc.)
 - **Conflict detection** — prevents two mods that replace the same files from launching together
 
+> **Verification note:** The controls, assists, and game mechanics described below are written from F1 series knowledge. Specific F1 25 v1.24 menus, default bindings, and feature names should be verified against the actual game in a future pass.
+
 ---
 
 ### 0.2 — Controls
@@ -350,7 +395,7 @@ You can play F1 25 with either a **controller** (Xbox, PlayStation) or a **racin
 #### Essential Controls (Controller)
 
 | Input | Action |
-|-------|--------|
+|--------|--------|
 | Left Stick | Steer |
 | Right Trigger (RT) | Accelerate |
 | Left Trigger (LT) | Brake |
@@ -367,7 +412,6 @@ You can play F1 25 with either a **controller** (Xbox, PlayStation) or a **racin
 #### Essential Controls (Wheel)
 
 If you have a wheel, customize bindings in **Settings > Controls > Custom**. At minimum, bind:
-
 - Upshift / Downshift (paddles)
 - Overtake button
 - DRS button
@@ -377,7 +421,6 @@ If you have a wheel, customize bindings in **Settings > Controls > Custom**. At 
 #### Calibration
 
 Before your first drive:
-
 1. Go to **Settings > Controls > Calibration**
 2. Follow the on-screen prompts to calibrate steering, throttle, and brake
 3. For wheel users: set **Steering Rotation** to 360 degrees for F1 cars
@@ -574,7 +617,6 @@ The MFD is the screen on your steering wheel or HUD. Use D-Pad Left/Right to cyc
 #### Timing Screen (Pause Menu)
 
 Pause during a session to see:
-
 - Full timing table with gaps and tyre compounds
 - Race director messages (penalties, flags, safety car)
 - Session standings
@@ -599,51 +641,34 @@ For Wave 0, the only tool you need is the **Simplified Launcher** — and even t
 If you're eager to explore the mod ecosystem, see [Wave 1 Mods](#wave-1-mods).
 ```
 
-- [ ] **Step 2: Commit**
-
-```bash
-git add f1-25/guide/wave-0/how-to-play.md
-git commit -m "f1-25: write Wave 0 how-to-play guide"
-```
-
----
-
-### Task 5: Write Wave 0 Mods
-
-**Files:**
-- Write: `f1-25/guide/wave-0/mods.md`
-
-- [ ] **Step 1: Write Wave 0 mods**
+- [ ] **Step 2: Write Wave 0 mods**
 
 ```markdown
 ### Wave 0 Mods — Tools & Launcher
 
 Wave 0 uses no gameplay mods. The only tool is the Simplified Launcher, which is used to manage mods in later waves. It's introduced here so you're familiar with it before adding content mods.
 
-#### Simplified Launcher for F1 25
+#### [Simplified Launcher for F1 25](https://www.overtake.gg/downloads/simplified-launcher-for-f1-25-used-to-quickly-manage-and-launch-mods.77451/)
 
 | Detail | Value |
 |--------|-------|
-| **Name** | [Simplified Launcher for F1 25](https://www.overtake.gg/downloads/simplified-launcher-for-f1-25-used-to-quickly-manage-and-launch-mods.77451/) |
 | **Version** | v3.2.10 |
 | **Author** | Team Simplified |
 | **Dependencies** | None |
-| **Category** | Launcher & Tools |
-| **What It Does** | Manages mod installation, backup, and launching for F1 25. Drag-and-drop mod archives (ZIP/RAR/7Z). Automatically backs up and restores original game files. Supports mod categories, favorites, presets, and conflict detection. |
-| **Installation** | Download from OverTake.gg. Extract to any folder. Run `SimplifiedLauncher.exe`. Set your F1 25 game directory. |
-| **Notes** | No gameplay mods are installed in Wave 0. The launcher is set up here for use in Waves 1 and 2. |
+| **What It Changes** | Manages mod installation, backup, and launching for F1 25. Drag-and-drop mod archives (ZIP/RAR/7Z). Automatically backs up and restores original game files. Supports mod categories, favorites, presets, and conflict detection. |
+| **Installation** | Download from OverTake.gg. Extract to any folder. Run `SimplifiedLauncher.exe`. Set your F1 25 game directory. No gameplay mods are installed in Wave 0 — the launcher is set up here for use in Waves 1 and 2. |
 ```
 
-- [ ] **Step 2: Commit**
+- [ ] **Step 3: Commit**
 
 ```bash
-git add f1-25/guide/wave-0/mods.md
-git commit -m "f1-25: write Wave 0 mods"
+git add f1-25/guide/wave-0/how-to-play.md f1-25/guide/wave-0/mods.md
+git commit -m "f1-25: write Wave 0 how-to-play guide and mods"
 ```
 
 ---
 
-### Task 6: Write Wave 1 — Strategy Guide
+### Task 3: Write Wave 1 Strategy Guide
 
 **Files:**
 - Write: `f1-25/guide/wave-1/strategy.md`
@@ -708,7 +733,7 @@ Car setup determines how the car behaves. Each track demands different compromis
 The differential controls how the rear wheels rotate relative to each other.
 
 | Setting | On-Throttle Effect | Off-Throttle Effect |
-|---------|-------------------|---------------------|
+|---------|--------------------|----------------------|
 | Lower % | Less lock — better rotation mid-corner, easier to turn | Less lock — more rear instability on entry |
 | Higher % | More lock — more traction on exit, more understeer | More lock — more stability under braking |
 
@@ -844,57 +869,26 @@ A Safety Car bunches the field. Free pit stop — you lose less time pitting und
 - **Timing the switch** — pitting one lap earlier or later for tyres can gain or lose 5+ positions in changing conditions
 ```
 
-- [ ] **Step 2: Commit**
-
-```bash
-git add f1-25/guide/wave-1/strategy.md
-git commit -m "f1-25: write Wave 1 strategy guide"
-```
-
----
-
-### Task 7: Write Wave 1 Mods
-
-**Files:**
-- Write: `f1-25/guide/wave-1/mods.md`
-
-- [ ] **Step 1: Write Wave 1 mods placeholder with instructions**
+- [ ] **Step 2: Write Wave 1 mods placeholder**
 
 ```markdown
 ### Wave 1 Mods — Strategy, Cameras, Telemetry, AI, Liveries
 
 Wave 1 introduces your first gameplay mods. These enhance the experience without fundamentally changing the game's mechanics.
 
-> **Research note:** Mod listings below are placeholders. Each mod must be researched and verified on OverTake.gg before being finalized. See the research tasks in the implementation plan.
-
-#### Mod Categories for Wave 1
-
-| Category | What to Look For |
-|----------|-----------------|
-| Telemetry / Dashboards | SimHub overlays, custom MFDs, data displays |
-| Cameras | Custom onboard/TV cameras, replay angles |
-| Liveries | Car skins, My Team designs, helmet textures |
-| AI Tweaks | Difficulty scalers, behaviour improvements |
-
-#### Research Checklist
-
-For each mod candidate, verify on OverTake.gg:
-- [ ] Compatible with F1 25 v1.24
-- [ ] Last updated after July 2026 or confirmed working on v1.24
-- [ ] No conflicting dependencies
-- [ ] Real download URL (not dead link)
+> **Mods to be inserted here by Task 5.** Categories: Telemetry/Dashboards, Cameras, Liveries, AI Tweaks. Each entry uses the standard format from AGENTS.md.
 ```
 
-- [ ] **Step 2: Commit**
+- [ ] **Step 3: Commit**
 
 ```bash
-git add f1-25/guide/wave-1/mods.md
-git commit -m "f1-25: write Wave 1 mods placeholder with research checklist"
+git add f1-25/guide/wave-1/strategy.md f1-25/guide/wave-1/mods.md
+git commit -m "f1-25: write Wave 1 strategy guide and mods placeholder"
 ```
 
 ---
 
-### Task 8: Write Wave 2 — Advanced Guide
+### Task 4: Write Wave 2 Advanced Guide
 
 **Files:**
 - Write: `f1-25/guide/wave-2/advanced.md`
@@ -1065,124 +1059,77 @@ Telemetry comparison is how real drivers find lap time. F1 25 doesn't have a bui
 - Losing time on exit = getting on throttle too late, or too aggressively
 ```
 
-- [ ] **Step 2: Commit**
-
-```bash
-git add f1-25/guide/wave-2/advanced.md
-git commit -m "f1-25: write Wave 2 advanced guide"
-```
-
----
-
-### Task 9: Write Wave 2 Mods
-
-**Files:**
-- Write: `f1-25/guide/wave-2/mods.md`
-
-- [ ] **Step 1: Write Wave 2 mods placeholder**
+- [ ] **Step 2: Write Wave 2 mods placeholder**
 
 ```markdown
-### Wave 2 Mods — Physics, Career, Visuals, Graphics
+### Wave 2 Mods — Physics, Career, Visuals, Audio
 
 Wave 2 introduces deeper mods that change game mechanics and visuals.
 
-> **Research note:** Mod listings below are placeholders. Each mod must be researched and verified on OverTake.gg before being finalized.
-
-#### Mod Categories for Wave 2
-
-| Category | What to Look For |
-|----------|-----------------|
-| Physics / Handling | Damage model tweaks, tyre behaviour mods, AI physics adjustments |
-| Career Enhancement | Custom season tools, calendar editors, regulation changes |
-| Graphics / Visual | Reshade presets, LOD improvements, texture packs |
-| Audio | Engine sound packs, commentary mods, ambient audio enhancements |
-
-#### Research Checklist
-
-For each mod candidate, verify on OverTake.gg:
-- [ ] Compatible with F1 25 v1.24
-- [ ] Last updated after July 2026 or confirmed working on v1.24
-- [ ] No conflicting dependencies
-- [ ] Real download URL (not dead link)
+> **Mods to be inserted here by Task 5.** Categories: Physics/Handling, Career Enhancement, Graphics/Visual, Audio. Each entry uses the standard format from AGENTS.md.
 ```
 
-- [ ] **Step 2: Commit**
+- [ ] **Step 3: Commit**
 
 ```bash
-git add f1-25/guide/wave-2/mods.md
-git commit -m "f1-25: write Wave 2 mods placeholder with research checklist"
+git add f1-25/guide/wave-2/advanced.md f1-25/guide/wave-2/mods.md
+git commit -m "f1-25: write Wave 2 advanced guide and mods placeholder"
 ```
 
 ---
 
-### Task 10: Research and Populate Mod Lists via OverTake.gg
+### Task 5: Format and Insert User-Provided Mods
 
 **Files:**
 - Modify: `f1-25/guide/wave-1/mods.md`
 - Modify: `f1-25/guide/wave-2/mods.md`
 - Modify: `f1-25/STATUS.md`
 
-- [ ] **Step 1: Research Wave 1 mods on OverTake.gg**
+**Prerequisites:** User has provided a list of verified mods with: name, OverTake.gg URL, version, author, dependencies, description, which wave it belongs to.
 
-Use Playwright browser to navigate OverTake.gg F1 25 categories:
-- F1 25 Plugins (telemetry, dashboards, tools)
-- F1 25 Skins (liveries)
-- F1 25 Helmets
-- F1 25 Misc
+- [ ] **Step 1: Format Wave 1 mods using the standard entry template**
 
-For each category, browse the mod list and collect:
-- Mod name, author, version, last update date, URL, description, dependencies
-
-Target: At least 5 verified mods for Wave 1 across categories.
-
-- [ ] **Step 2: Research Wave 2 mods on OverTake.gg**
-
-Use Playwright browser to navigate OverTake.gg F1 25 categories:
-- F1 25 Track updates (physics, handling)
-- F1 25 My Team (career)
-- F1 25 Misc (graphics, reshade, audio)
-
-Target: At least 5 verified mods for Wave 2 across categories.
-
-- [ ] **Step 3: Fill in mod entries with verified data**
-
-For each verified mod, write the mod entry in the appropriate wave mods file using the standard format:
+For each Wave 1 mod provided, write:
 
 ```markdown
-#### [Mod Name](verified-overTake.gg-url)
+#### [Mod Name](overtake-url)
 
 | Detail | Value |
 |--------|-------|
 | **Version** | X.Y.Z |
 | **Author** | Author Name |
-| **Category** | Category |
 | **Dependencies** | List or None |
-| **Compatibility** | F1 25 v1.24 confirmed |
-
-**What It Changes:** Description of the mod's impact on the game.
-
-**Installation:** Any special installation notes.
+| **What It Changes** | Description of the mod's impact on the game. |
+| **Installation** | Any special installation notes. |
 ```
 
-- [ ] **Step 4: Update STATUS.md with findings**
+Insert each entry into `f1-25/guide/wave-1/mods.md`, replacing the placeholder text.
 
-Record all accepted and rejected mods, with reasons for rejections.
+- [ ] **Step 2: Format Wave 2 mods using the same template**
 
-- [ ] **Step 5: Commit**
+Same format as Step 1, inserting into `f1-25/guide/wave-2/mods.md`.
+
+- [ ] **Step 3: Update STATUS.md**
+
+Add each mod under the appropriate wave's completed section with URL, version, and decision note. Record any mods that were considered but rejected in the Skipped section with reasons.
+
+- [ ] **Step 4: Commit**
 
 ```bash
 git add f1-25/guide/wave-1/mods.md f1-25/guide/wave-2/mods.md f1-25/STATUS.md
-git commit -m "f1-25: populate mod lists with verified OverTake.gg entries"
+git commit -m "f1-25: insert user-provided mods for Waves 1 and 2"
 ```
 
 ---
 
-### Task 11: Write Typst Style Template
+### Task 6: Write Typst Theme and Verify with Test Compilation
 
 **Files:**
 - Write: `f1-25/templates/style.typ`
+- Create: `f1-25/templates/test-theme.md` (temporary — deleted after verification)
+- Create: `f1-25/templates/test-theme.typ` (temporary — deleted after verification)
 
-- [ ] **Step 1: Write Carbon & Crimson theme**
+- [ ] **Step 1: Write style.typ**
 
 ```typst
 // style.typ — Carbon & Crimson theme for Apex Alchemy
@@ -1249,7 +1196,7 @@ git commit -m "f1-25: populate mod lists with verified OverTake.gg entries"
     it
   }
 
-  // Blockquotes -> callout boxes (dark background, gold left border)
+  // Blockquotes -> callout boxes (light gray background, gold left border)
   show quote: it => {
     block(
       fill: rgb("#F0F0F0"),
@@ -1264,16 +1211,77 @@ git commit -m "f1-25: populate mod lists with verified OverTake.gg entries"
 }
 ```
 
-- [ ] **Step 2: Commit**
+- [ ] **Step 2: Write test-theme.md (exercises all theme features)**
+
+```markdown
+# Theme Test Document
+
+## Section Header (H2 — Electric Blue with red underline)
+
+This is body text in Dark Carbon. Here is some `inline code` in Electric Blue.
+
+### Subsection (H3 — Gold)
+
+| Table Header | Column B |
+|-------------|----------|
+| Row 1 | Value 1 |
+| Row 2 | Value 2 |
+
+#### Mod Entry Heading (H4 — Mid Gray)
+
+> This is a blockquote callout box. It should have a gold left border and light gray background. Useful for warnings, notes, and tips.
+
+```
+// Code block — dark carbon background with electric blue text
+const hello = "world";
+console.log(hello);
+```
+
+[Clickable link text](https://example.com) — should render in Racing Red.
+```
+
+- [ ] **Step 3: Write test-theme.typ**
+
+```typst
+#set page(
+  paper: "a4",
+  margin: (top: 2cm, bottom: 2cm, left: 2.5cm, right: 2.5cm),
+)
+
+#import "@preview/cmarker:0.1.10"
+#import "style.typ": apply
+#show: apply
+
+#cmarker.render(read("test-theme.md"), h1-level: 0, set-document-title: false)
+```
+
+- [ ] **Step 4: Compile test document and verify**
+
+```powershell
+cd f1-25\templates
+typst compile test-theme.typ test-theme.pdf
+```
+
+Expected: Typst compiles without errors. `test-theme.pdf` is created.
+
+- [ ] **Step 5: Clean up test files**
+
+```powershell
+Remove-Item "f1-25\templates\test-theme.md" -ErrorAction SilentlyContinue
+Remove-Item "f1-25\templates\test-theme.typ" -ErrorAction SilentlyContinue
+Remove-Item "f1-25\templates\test-theme.pdf" -ErrorAction SilentlyContinue
+```
+
+- [ ] **Step 6: Commit**
 
 ```bash
 git add f1-25/templates/style.typ
-git commit -m "f1-25: write Carbon & Crimson Typst theme"
+git commit -m "f1-25: write Carbon & Crimson Typst theme (verified with test compilation)"
 ```
 
 ---
 
-### Task 12: Write Typst Guide Template
+### Task 7: Write Typst Guide Template
 
 **Files:**
 - Write: `f1-25/templates/guide.typ`
@@ -1332,7 +1340,7 @@ git commit -m "f1-25: write Typst guide template with cover and TOC"
 
 ---
 
-### Task 13: Write generate-pdf.ps1
+### Task 8: Write generate-pdf.ps1
 
 **Files:**
 - Write: `f1-25/generate-pdf.ps1`
@@ -1436,6 +1444,34 @@ function Compile-Guide() {
   }
 }
 
+function Verify-Pdf($pdfPath) {
+  $fileInfo = Get-Item $pdfPath
+  $sizeKB = [math]::Round($fileInfo.Length / 1KB, 1)
+
+  if ($sizeKB -lt 50) {
+    Write-Status "FAIL" "PDF too small ($sizeKB KB) — may be empty or broken"
+    return $false
+  }
+
+  $content = [System.IO.File]::ReadAllBytes($pdfPath)
+  $header = [System.Text.Encoding]::ASCII.GetString($content[0..4])
+  if ($header -ne "%PDF-") {
+    Write-Status "FAIL" "File does not start with PDF header"
+    return $false
+  }
+
+  $footerPos = $content.Length - 64
+  if ($footerPos -gt 0) {
+    $footer = [System.Text.Encoding]::ASCII.GetString($content[$footerPos..($content.Length - 1)])
+    if ($footer -notmatch "%%EOF") {
+      Write-Status "WARN" "PDF footer (%%EOF) not found — file may be truncated"
+    }
+  }
+
+  Write-Status "OK" "PDF verified: $sizeKB KB, valid PDF header"
+  return $true
+}
+
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host " Apex Alchemy — PDF Generator" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
@@ -1462,7 +1498,12 @@ $guideOk = Compile-Guide
 
 Write-Host ""
 if ($guideOk) {
-  Write-Status "OK" "Guide PDF generated successfully."
+  $pdfPath = Join-Path $OutputDir "APEX-ALCHEMY-GUIDE.pdf"
+  if (-not (Verify-Pdf $pdfPath)) {
+    Write-Status "FAIL" "PDF verification failed."
+    exit 1
+  }
+  Write-Status "OK" "Guide PDF generated and verified successfully."
 } else {
   Write-Status "FAIL" "PDF compilation failed."
   exit 1
@@ -1473,85 +1514,138 @@ if ($guideOk) {
 
 ```bash
 git add f1-25/generate-pdf.ps1
-git commit -m "f1-25: write PDF generation script"
+git commit -m "f1-25: write PDF generation script with PDF verification"
 ```
 
 ---
 
-### Task 14: Build GUIDE.md and Generate PDF
+### Task 9: Build GUIDE.md, Generate PDF, and Verify
 
 **Files:**
 - Modify: `f1-25/GUIDE.md`
 - Create: `f1-25/output/APEX-ALCHEMY-GUIDE.pdf`
 
-- [ ] **Step 1: Build GUIDE.md by concatenating guide/ files**
-
-```powershell
-$ProjectRoot = "$PWD\f1-25"
-$guideFiles = @(
-  "guide\wave-0\how-to-play.md",
-  "guide\wave-0\mods.md",
-  "guide\wave-1\strategy.md",
-  "guide\wave-1\mods.md",
-  "guide\wave-2\advanced.md",
-  "guide\wave-2\mods.md"
-)
-$guideContent = ""
-foreach ($file in $guideFiles) {
-  $fullPath = Join-Path $ProjectRoot $file
-  if (Test-Path $fullPath) {
-    $guideContent += (Get-Content $fullPath -Raw) + "`n`n"
-  }
-}
-Set-Content -Path (Join-Path $ProjectRoot "GUIDE.md") -Value $guideContent.TrimEnd() -Encoding UTF8
-Write-Host "GUIDE.md built successfully."
-```
-
-- [ ] **Step 2: Run generate-pdf.ps1**
+- [ ] **Step 1: Run generate-pdf.ps1**
 
 ```powershell
 .\f1-25\generate-pdf.ps1
 ```
 
-Expected: Typst compiles without errors. Output `f1-25/output/APEX-ALCHEMY-GUIDE.pdf` exists and is non-zero size.
-
-- [ ] **Step 3: Verify PDF output**
-
-```powershell
-$pdf = Get-Item "f1-25\output\APEX-ALCHEMY-GUIDE.pdf"
-Write-Host "PDF size: $([math]::Round($pdf.Length / 1KB, 1)) KB"
+Expected output:
+```
+[OK] Typst found at...
+[OK] Version: 0.1.0
+[OK] GUIDE.md built from 6 source files.
+[OK] APEX-ALCHEMY-GUIDE.pdf -> .../output/APEX-ALCHEMY-GUIDE.pdf (XXX KB)
+[OK] PDF verified: XXX KB, valid PDF header
+[OK] Guide PDF generated and verified successfully.
 ```
 
-Expected: PDF size > 50 KB (non-trivial content).
+- [ ] **Step 2: Verify the PDF content visually**
 
-- [ ] **Step 4: Commit**
+Open `f1-25/output/APEX-ALCHEMY-GUIDE.pdf` and confirm:
+- [ ] Cover page renders with logo, title, subtitle, version
+- [ ] Table of contents has entries for all waves and subsections
+- [ ] Body text is readable in Dark Carbon on white background
+- [ ] H2 headings are Electric Blue with red underline
+- [ ] H3 headings are Gold
+- [ ] Tables have dark headers with white text
+- [ ] Blockquotes have gold left border
+- [ ] Code blocks have dark background with blue text
+- [ ] Links are Racing Red
+
+- [ ] **Step 3: Commit GUIDE.md only** (PDF is gitignored)
 
 ```bash
-git add f1-25/GUIDE.md f1-25/output/APEX-ALCHEMY-GUIDE.pdf
-git commit -m "f1-25: build GUIDE.md and generate Apex Alchemy PDF"
+git add f1-25/GUIDE.md
+git commit -m "f1-25: build GUIDE.md from guide/ sources"
 ```
 
 ---
 
-### Task 15: Final STATUS.md Update and Verification
+### Task 10: Final STATUS.md Update and Verification
 
 **Files:**
 - Modify: `f1-25/STATUS.md`
 
-- [ ] **Step 1: Update STATUS.md with completion status**
+- [ ] **Step 1: Update STATUS.md — mark all completed items**
 
-Mark all completed items as [x] and update the completed section.
+```markdown
+# STATUS — Apex Alchemy (F1 25)
 
-- [ ] **Step 2: Final verification**
+## Legend
+
+- [x] = completed
+- [ ] = pending
+- [!] = blocked
+
+## Completed
+
+### Project Setup
+- [x] Project skeleton created with all directories and files
+- [x] AGENTS.md written with vision, rules, and conventions
+- [x] VERSION set to 0.1.0
+- [x] .gitignore created (excludes generated PDFs)
+- [x] Simplified Launcher v3.2.10 verified on OverTake.gg
+- [x] Typst theme verified with test compilation
+
+### Wave 0 — First Lap
+- [x] How-to-play guide written (9 sections)
+- [x] Wave 0 mods documented (Simplified Launcher entry)
+
+### Wave 1 — Building Speed
+- [x] Strategy guide written (7 sections)
+- [x] Wave 1 mods formatted and inserted
+
+### Wave 2 — Apex Predator
+- [x] Advanced guide written (5 sections)
+- [x] Wave 2 mods formatted and inserted
+
+### PDF
+- [x] Typst style.typ written (Carbon & Crimson theme)
+- [x] Typst guide.typ written (cover + TOC + body)
+- [x] generate-pdf.ps1 written with PDF verification
+- [x] GUIDE.md built from guide/ sources
+- [x] PDF compiles cleanly and passes verification
+
+### Documentation
+- [x] README.md written
+- [x] conflicts-mods.md created (awaiting mod testing data)
+- [x] mod-ideas.md created (awaiting community suggestions)
+
+## Pending
+
+### Verification
+- [ ] Cross-reference guide content against actual F1 25 v1.24 in-game screens (controls, assists, career UI, ERS modes)
+
+## Decisions
+
+### Mod Organizer
+- [x] Simplified Launcher v3.2.10 chosen — verified on OverTake.gg, 57 reviews, 10 updates, YouTube tutorial available
+- [x] URL: https://www.overtake.gg/downloads/simplified-launcher-for-f1-25-used-to-quickly-manage-and-launch-mods.77451/
+- [x] Discord: https://discord.gg/GQZn5gbBdg
+- [x] Features: drag-and-drop mod install, ZIP/RAR/7Z support, backup/restore, favorites, categories, presets, conflict detection
+- [x] Note: Windows Defender may flag as false positive (unsigned Python self-package)
+
+### Design
+- [x] Guide content caveat: game-mechanic content written from F1 series knowledge — needs verification against actual F1 25 v1.24
+- [x] PDF excluded from git tracking via .gitignore (generated binary)
+
+## Skipped / Rejected
+
+(None yet — populate as mods are evaluated)
+```
+
+- [ ] **Step 2: Final verification command**
 
 ```powershell
-# Verify all required files exist
 $required = @(
   "f1-25\AGENTS.md",
   "f1-25\README.md",
   "f1-25\VERSION",
   "f1-25\STATUS.md",
   "f1-25\GUIDE.md",
+  "f1-25\.gitignore",
   "f1-25\guide\wave-0\how-to-play.md",
   "f1-25\guide\wave-0\mods.md",
   "f1-25\guide\wave-1\strategy.md",
@@ -1563,32 +1657,29 @@ $required = @(
   "f1-25\generate-pdf.ps1",
   "f1-25\output\APEX-ALCHEMY-GUIDE.pdf",
   "f1-25\conflicts-mods.md",
-  "f1-25\mod-ideas.md",
-  "f1-25\assets\logo.jpg"
+  "f1-25\mod-ideas.md"
 )
-
+$missing = @()
 foreach ($file in $required) {
   if (Test-Path $file) {
     Write-Host "[OK] $file" -ForegroundColor Green
   } else {
     Write-Host "[FAIL] $file" -ForegroundColor Red
+    $missing += $file
   }
+}
+if ($missing.Count -eq 0) {
+  Write-Host "`nAll $($required.Count) files present." -ForegroundColor Green
+} else {
+  Write-Host "`n$($missing.Count) files missing." -ForegroundColor Red
 }
 ```
 
-Expected: All 18 files show [OK].
+Expected: All files show [OK], no missing files.
 
-- [ ] **Step 3: Final commit**
+- [ ] **Step 3: Commit**
 
 ```bash
 git add f1-25/STATUS.md
-git commit -m "f1-25: finalize STATUS.md and verify complete project"
-```
-```
-
-- [ ] **Step 2: Commit**
-
-```bash
-git add f1-25/docs/superpowers/plans/2026-07-31-apex-alchemy-plan.md
-git commit -m "f1-25: add implementation plan for Apex Alchemy"
+git commit -m "f1-25: finalize STATUS.md — all v0.1.0 tasks complete"
 ```
