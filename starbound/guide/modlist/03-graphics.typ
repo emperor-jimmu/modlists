@@ -603,3 +603,16 @@
   description: [Smoothes out melee weapon animations for more fluid combat. Reduces jerkiness in swing animations and transitions between attacks. Complements Melee Aiming and Broadswords Enhanced.],
   install-notes: [Load after any animation mods. Pairs with Melee Aiming and Broadswords Enhanced.],
 )
+
+// ── RPG Growth Visuals ──
+
+#mod-entry(
+  name: "RPG Growth: Graphics Replacement",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2017600718",
+  category: "Graphics",
+  version: "2024",
+  dependencies: ("RPG Growth",),
+  system-impact: none,
+  description: [Remakes the horribly resized class icon graphics from RPG Growth. Currently covers all class icons. A simple sprite-swap that significantly improves the visual quality of RPG Growth's UI. Safe to install or uninstall at any time.],
+  install-notes: [Load after RPG Growth. Purely a sprite-swap — no gameplay impact.],
+)
