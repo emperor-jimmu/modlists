@@ -16,4 +16,8 @@
 
 #cmarker.render(read("../guide/00-install.md"))
 #pagebreak()
+#cmarker.render(read("../guide/01-wave-0-rookie.md"))
+#pagebreak()
+#cmarker.render(read("../guide/02-wave-1-national.md"))
+#pagebreak()
 #cmarker.render(read("../guide/appendix-glossary.md"))
