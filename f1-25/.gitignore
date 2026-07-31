@@ -1,6 +1,3 @@
-# Generated PDFs (rebuild from source, don't track binaries)
-output/APEX-ALCHEMY-GUIDE.pdf
-
 # Typst cache
 output/*.png
 output/*.svg

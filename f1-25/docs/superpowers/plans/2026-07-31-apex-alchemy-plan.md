@@ -19,6 +19,7 @@
 ### Task 1: Create Project Skeleton and Boilerplate
 
 **Files:**
+
 - Create: `f1-25/guide/wave-0/how-to-play.md`
 - Create: `f1-25/guide/wave-0/mods.md`
 - Create: `f1-25/guide/wave-1/strategy.md`
@@ -84,11 +85,11 @@ A progressive modlist + game guide for F1 25 that teaches complete beginners how
 
 ## Wave Structure (3 waves)
 
-| Wave | Audience | Content Focus | Mod Philosophy |
-|------|----------|---------------|----------------|
-| 0 | Complete beginners | Full how-to-play guide | Vanilla + Simplified Launcher only |
-| 1 | Intermediate | Strategy, telemetry, cameras | Content mods + new mechanics |
-| 2 | Advanced | Setup mastery, custom championships | Rich systems + full customization |
+| Wave | Audience           | Content Focus                       | Mod Philosophy                     |
+|------|--------------------|-------------------------------------|------------------------------------|
+| 0    | Complete beginners | Full how-to-play guide              | Vanilla + Simplified Launcher only |
+| 1    | Intermediate       | Strategy, telemetry, cameras        | Content mods + new mechanics       |
+| 2    | Advanced           | Setup mastery, custom championships | Rich systems + full customization  |
 
 ## Mod Rules
 
@@ -104,13 +105,13 @@ Every mod entry must use this consistent table format:
 ```markdown
 #### [Mod Name](verified-overtake-url)
 
-| Detail | Value |
-|--------|-------|
-| **Version** | X.Y.Z |
-| **Author** | Author Name |
-| **Dependencies** | List or None |
+| Detail              | Value                                        |
+|---------------------|----------------------------------------------|
+| **Version**         | X.Y.Z                                        |
+| **Author**          | Author Name                                  |
+| **Dependencies**    | List or None                                 |
 | **What It Changes** | Description of the mod's impact on the game. |
-| **Installation** | Any special installation notes. |
+| **Installation**    | Any special installation notes.              |
 ```
 
 ## Technical Standards
@@ -140,10 +141,12 @@ File Layout          guide/              — guide + modlist organized by wave
 ## Mod Research Protocol
 
 When searching OverTake.gg for mods:
+
 1. Use Playwright browser to navigate the site (Cloudflare protection blocks direct HTTP)
 2. Search the F1 25 categories: F1 25 Skins, F1 25 My Team, F1 25 Helmets, F1 25 Track updates, F1 25 Plugins, F1 25 Misc
 3. For each candidate mod, verify: version compatibility with v1.24, last update date, dependencies
 4. Record all findings in STATUS.md — accepted AND rejected
+
 ```
 
 - [ ] **Step 5: Write STATUS.md**
@@ -248,6 +251,7 @@ f1-25/
 ├── conflicts-mods.md  # Known mod conflicts
 └── mod-ideas.md       # Future mod ideas
 ```
+
 ```
 
 - [ ] **Step 7: Write conflicts-mods.md** (placeholder with purpose)
@@ -326,6 +330,7 @@ git commit -m "f1-25: create project skeleton with all boilerplate files"
 ### Task 2: Write Wave 0 Guide Content
 
 **Files:**
+
 - Write: `f1-25/guide/wave-0/how-to-play.md`
 - Write: `f1-25/guide/wave-0/mods.md`
 
@@ -350,12 +355,12 @@ Verify your version in the main menu — it appears in the bottom-right corner.
 
 The **Simplified Launcher** by Team Simplified is the recommended mod manager for F1 25. It installs, manages, and launches mods without touching your original game files.
 
-| Detail | Value |
-|--------|-------|
+| Detail   | Value                                                                                                                                                  |
+|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Download | [Simplified Launcher for F1 25 v3.2.10](https://www.overtake.gg/downloads/simplified-launcher-for-f1-25-used-to-quickly-manage-and-launch-mods.77451/) |
-| Author | Team Simplified |
-| Support | [Team Simplified Discord](https://discord.gg/GQZn5gbBdg) |
-| Tutorial | [YouTube — Simplified Launcher v3.0 Tutorial](https://www.youtube.com/watch?v=de5mGVzbaso) |
+| Author   | Team Simplified                                                                                                                                        |
+| Support  | [Team Simplified Discord](https://discord.gg/GQZn5gbBdg)                                                                                               |
+| Tutorial | [YouTube — Simplified Launcher v3.0 Tutorial](https://www.youtube.com/watch?v=de5mGVzbaso)                                                             |
 
 **Installation Steps:**
 
@@ -394,20 +399,20 @@ You can play F1 25 with either a **controller** (Xbox, PlayStation) or a **racin
 
 #### Essential Controls (Controller)
 
-| Input | Action |
-|--------|--------|
-| Left Stick | Steer |
-| Right Trigger (RT) | Accelerate |
-| Left Trigger (LT) | Brake |
-| A (Xbox) / X (PS) | Overtake (ERS boost) |
-| B (Xbox) / Circle (PS) | DRS (when available) |
-| X (Xbox) / Square (PS) | Change ERS mode |
+| Input                    | Action                         |
+|--------------------------|--------------------------------|
+| Left Stick               | Steer                          |
+| Right Trigger (RT)       | Accelerate                     |
+| Left Trigger (LT)        | Brake                          |
+| A (Xbox) / X (PS)        | Overtake (ERS boost)           |
+| B (Xbox) / Circle (PS)   | DRS (when available)           |
+| X (Xbox) / Square (PS)   | Change ERS mode                |
 | Y (Xbox) / Triangle (PS) | Pit limiter / request pit stop |
-| D-Pad Left/Right | Change MFD panel |
-| D-Pad Up/Down | Adjust within MFD panel |
-| Left Bumper (LB) | Look back |
-| Right Bumper (RB) | Change camera |
-| Menu/Options | Pause |
+| D-Pad Left/Right         | Change MFD panel               |
+| D-Pad Up/Down            | Adjust within MFD panel        |
+| Left Bumper (LB)         | Look back                      |
+| Right Bumper (RB)        | Change camera                  |
+| Menu/Options             | Pause                          |
 
 #### Essential Controls (Wheel)
 
@@ -433,18 +438,18 @@ F1 25 offers a range of driving assists that make the car easier to control. As 
 
 #### Recommended Beginner Assist Preset
 
-| Assist | Setting | Why |
-|--------|---------|-----|
-| Steering Assist | Off | Can fight your inputs — leave off even as a beginner |
-| Braking Assist | Off | Learn to brake yourself from day one |
-| Anti-Lock Brakes (ABS) | On | Prevents wheel lock under braking |
-| Traction Control | Medium | Prevents wheelspin on throttle; Full TC is too invasive |
-| Dynamic Racing Line | Corners Only | Shows braking and turn-in points without cluttering straights |
-| Gearbox | Automatic | Focus on steering and braking first |
-| Pit Assist | On | Handles pit entry/exit for you |
-| Pit Release Assist | On | Releases you into safe gaps |
-| ERS Assist | On | Manages deployment automatically |
-| DRS Assist | On | Opens DRS automatically when available |
+| Assist                 | Setting      | Why                                                           |
+|------------------------|--------------|---------------------------------------------------------------|
+| Steering Assist        | Off          | Can fight your inputs — leave off even as a beginner          |
+| Braking Assist         | Off          | Learn to brake yourself from day one                          |
+| Anti-Lock Brakes (ABS) | On           | Prevents wheel lock under braking                             |
+| Traction Control       | Medium       | Prevents wheelspin on throttle; Full TC is too invasive       |
+| Dynamic Racing Line    | Corners Only | Shows braking and turn-in points without cluttering straights |
+| Gearbox                | Automatic    | Focus on steering and braking first                           |
+| Pit Assist             | On           | Handles pit entry/exit for you                                |
+| Pit Release Assist     | On           | Releases you into safe gaps                                   |
+| ERS Assist             | On           | Manages deployment automatically                              |
+| DRS Assist             | On           | Opens DRS automatically when available                        |
 
 **When to reduce assists:** Once you can consistently complete a race weekend without spinning or crashing, start reducing. Suggested order: Traction Control to Low, then Gearbox to Manual (Suggested), then ABS Off, then ERS to Manual.
 
@@ -475,12 +480,12 @@ The racing line is the fastest path through a corner. It follows this pattern:
 
 #### Corner Types
 
-| Type | Speed | Approach |
-|------|-------|----------|
-| Hairpin | Very slow | Hard braking in a straight line, late apex, patience on throttle |
-| Medium-speed | Moderate | Light brake or lift, smooth turn-in, early throttle |
-| High-speed | Fast | Brief lift off throttle, minimal steering input, full throttle early |
-| Chicane | Slow-medium | Brake for first part, attack the curbs, quick direction change |
+| Type         | Speed       | Approach                                                             |
+|--------------|-------------|----------------------------------------------------------------------|
+| Hairpin      | Very slow   | Hard braking in a straight line, late apex, patience on throttle     |
+| Medium-speed | Moderate    | Light brake or lift, smooth turn-in, early throttle                  |
+| High-speed   | Fast        | Brief lift off throttle, minimal steering input, full throttle early |
+| Chicane      | Slow-medium | Brake for first part, attack the curbs, quick direction change       |
 
 #### Practice
 
@@ -494,24 +499,24 @@ A Formula 1 race weekend follows this format:
 
 #### Standard Weekend (most races)
 
-| Session | Duration | Purpose |
-|---------|----------|---------|
-| FP1 (Free Practice 1) | 60 minutes | Learn the track, test setups, run long-run pace |
-| FP2 (Free Practice 2) | 60 minutes | Qualifying simulations, race pace runs |
-| FP3 (Free Practice 3) | 60 minutes | Final setup tweaks, short qualifying simulations |
-| Qualifying | Q1/Q2/Q3 format | Set your grid position |
-| Race | ~305 km / ~90 minutes | The main event |
+| Session               | Duration              | Purpose                                          |
+|-----------------------|-----------------------|--------------------------------------------------|
+| FP1 (Free Practice 1) | 60 minutes            | Learn the track, test setups, run long-run pace  |
+| FP2 (Free Practice 2) | 60 minutes            | Qualifying simulations, race pace runs           |
+| FP3 (Free Practice 3) | 60 minutes            | Final setup tweaks, short qualifying simulations |
+| Qualifying            | Q1/Q2/Q3 format       | Set your grid position                           |
+| Race                  | ~305 km / ~90 minutes | The main event                                   |
 
 #### Sprint Weekend (select races)
 
 Sprint weekends replace one practice session with a shorter race on Saturday:
 
-| Session | Duration |
-|---------|----------|
-| FP1 | 60 minutes |
+| Session           | Duration                     |
+|-------------------|------------------------------|
+| FP1               | 60 minutes                   |
 | Sprint Qualifying | SQ1/SQ2/SQ3 (shorter format) |
-| Sprint Race | ~100 km / ~30 minutes |
-| Race | Full distance |
+| Sprint Race       | ~100 km / ~30 minutes        |
+| Race              | Full distance                |
 
 #### Qualifying Format (Q1/Q2/Q3)
 
@@ -527,13 +532,13 @@ You get one set of tyres per qualifying segment. Plan your runs — go out early
 
 F1 uses Pirelli tyres in six compounds per race weekend:
 
-| Compound | Colour | Use Case |
-|----------|--------|----------|
-| Soft | Red | Fastest, most grip, wears out fastest — used in qualifying |
-| Medium | Yellow | Balanced grip and durability — most common race tyre |
-| Hard | White | Least grip, most durable — used for long stints |
-| Intermediate | Green | Light rain, damp track |
-| Full Wet | Blue | Heavy rain, standing water |
+| Compound     | Colour | Use Case                                                   |
+|--------------|--------|------------------------------------------------------------|
+| Soft         | Red    | Fastest, most grip, wears out fastest — used in qualifying |
+| Medium       | Yellow | Balanced grip and durability — most common race tyre       |
+| Hard         | White  | Least grip, most durable — used for long stints            |
+| Intermediate | Green  | Light rain, damp track                                     |
+| Full Wet     | Blue   | Heavy rain, standing water                                 |
 
 **Key Concepts:**
 - **Degradation** — tyres lose grip as they wear. You'll feel the car slide more as tyres age.
@@ -605,14 +610,14 @@ Each completed programme awards Resource Points. You don't need to ace all of th
 
 The MFD is the screen on your steering wheel or HUD. Use D-Pad Left/Right to cycle panels:
 
-| Panel | Shows |
-|-------|-------|
-| Strategy | Tyre wear, fuel delta, pit window, weather forecast |
-| Tyres | Per-tyre temperature and wear percentage |
-| ERS | Battery level, deployment mode, energy harvested per lap |
-| Fuel | Fuel remaining, fuel mix mode, fuel delta to target |
-| Damage | Component wear and damage status |
-| Race Info | Position, gaps to cars ahead/behind, lap times |
+| Panel     | Shows                                                    |
+|-----------|----------------------------------------------------------|
+| Strategy  | Tyre wear, fuel delta, pit window, weather forecast      |
+| Tyres     | Per-tyre temperature and wear percentage                 |
+| ERS       | Battery level, deployment mode, energy harvested per lap |
+| Fuel      | Fuel remaining, fuel mix mode, fuel delta to target      |
+| Damage    | Component wear and damage status                         |
+| Race Info | Position, gaps to cars ahead/behind, lap times           |
 
 #### Timing Screen (Pause Menu)
 
@@ -650,13 +655,13 @@ Wave 0 uses no gameplay mods. The only tool is the Simplified Launcher, which is
 
 #### [Simplified Launcher for F1 25](https://www.overtake.gg/downloads/simplified-launcher-for-f1-25-used-to-quickly-manage-and-launch-mods.77451/)
 
-| Detail | Value |
-|--------|-------|
-| **Version** | v3.2.10 |
-| **Author** | Team Simplified |
-| **Dependencies** | None |
+| Detail              | Value                                                                                                                                                                                                                             |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Version**         | v3.2.10                                                                                                                                                                                                                           |
+| **Author**          | Team Simplified                                                                                                                                                                                                                   |
+| **Dependencies**    | None                                                                                                                                                                                                                              |
 | **What It Changes** | Manages mod installation, backup, and launching for F1 25. Drag-and-drop mod archives (ZIP/RAR/7Z). Automatically backs up and restores original game files. Supports mod categories, favorites, presets, and conflict detection. |
-| **Installation** | Download from OverTake.gg. Extract to any folder. Run `SimplifiedLauncher.exe`. Set your F1 25 game directory. No gameplay mods are installed in Wave 0 — the launcher is set up here for use in Waves 1 and 2. |
+| **Installation**    | Download from OverTake.gg. Extract to any folder. Run `SimplifiedLauncher.exe`. Set your F1 25 game directory. No gameplay mods are installed in Wave 0 — the launcher is set up here for use in Waves 1 and 2.                   |
 ```
 
 - [ ] **Step 3: Commit**
@@ -671,6 +676,7 @@ git commit -m "f1-25: write Wave 0 how-to-play guide and mods"
 ### Task 3: Write Wave 1 Strategy Guide
 
 **Files:**
+
 - Write: `f1-25/guide/wave-1/strategy.md`
 
 - [ ] **Step 1: Write Wave 1 strategy guide**
@@ -719,10 +725,10 @@ Car setup determines how the car behaves. Each track demands different compromis
 
 #### Aerodynamics (Front Wing / Rear Wing)
 
-| Change | Effect |
-|--------|--------|
+| Change    | Effect                                                  |
+|-----------|---------------------------------------------------------|
 | More wing | More downforce — better cornering grip, lower top speed |
-| Less wing | Less downforce — higher top speed, less cornering grip |
+| Less wing | Less downforce — higher top speed, less cornering grip  |
 
 **Rule of thumb:** High-downforce for Monaco, Singapore, Hungary. Low-downforce for Monza, Spa, Baku. Balanced for most other tracks.
 
@@ -732,10 +738,10 @@ Car setup determines how the car behaves. Each track demands different compromis
 
 The differential controls how the rear wheels rotate relative to each other.
 
-| Setting | On-Throttle Effect | Off-Throttle Effect |
-|---------|--------------------|----------------------|
-| Lower % | Less lock — better rotation mid-corner, easier to turn | Less lock — more rear instability on entry |
-| Higher % | More lock — more traction on exit, more understeer | More lock — more stability under braking |
+| Setting  | On-Throttle Effect                                     | Off-Throttle Effect                        |
+|----------|--------------------------------------------------------|--------------------------------------------|
+| Lower %  | Less lock — better rotation mid-corner, easier to turn | Less lock — more rear instability on entry |
+| Higher % | More lock — more traction on exit, more understeer     | More lock — more stability under braking   |
 
 **Starting point:** 50-60% on-throttle, 50-55% off-throttle. Adjust based on feel.
 
@@ -743,10 +749,10 @@ The differential controls how the rear wheels rotate relative to each other.
 
 Brake bias distributes braking force between front and rear.
 
-| Bias | Effect |
-|------|--------|
-| More front % | More stable under braking, less rotation |
-| More rear % | Better turn-in rotation, risk of rear locking |
+| Bias         | Effect                                        |
+|--------------|-----------------------------------------------|
+| More front % | More stable under braking, less rotation      |
+| More rear %  | Better turn-in rotation, risk of rear locking |
 
 **Tip:** Move brake bias rearward (lower %) for tracks with slow corners where you need the car to rotate. Keep it forward for high-speed braking zones.
 
@@ -765,11 +771,11 @@ With **ERS Assist Off** (manual mode), you control when the battery deploys and 
 
 #### Deployment Modes
 
-| Mode | Behaviour |
-|------|-----------|
-| None | No deployment — battery charges from braking/turbo |
-| Medium | Balanced deployment and harvesting |
-| Hotlap | Maximum deployment — fastest but drains battery quickly |
+| Mode     | Behaviour                                               |
+|----------|---------------------------------------------------------|
+| None     | No deployment — battery charges from braking/turbo      |
+| Medium   | Balanced deployment and harvesting                      |
+| Hotlap   | Maximum deployment — fastest but drains battery quickly |
 | Overtake | Maximum deployment while button is held — use in bursts |
 
 #### Per-Track Strategy
@@ -792,11 +798,11 @@ Fuel load affects car weight significantly. A full tank at race start makes the 
 
 #### Fuel Mix Modes
 
-| Mix | Consumption | Pace |
-|-----|-------------|------|
-| Rich | Highest | Fastest |
-| Standard | Normal | Normal |
-| Lean | Lowest | Slowest |
+| Mix      | Consumption | Pace    |
+|----------|-------------|---------|
+| Rich     | Highest     | Fastest |
+| Standard | Normal      | Normal  |
+| Lean     | Lowest      | Slowest |
 
 **Race strategy:**
 - Start on Standard mix
@@ -891,6 +897,7 @@ git commit -m "f1-25: write Wave 1 strategy guide and mods placeholder"
 ### Task 4: Write Wave 2 Advanced Guide
 
 **Files:**
+
 - Write: `f1-25/guide/wave-2/advanced.md`
 
 - [ ] **Step 1: Write Wave 2 advanced guide**
@@ -910,26 +917,26 @@ By now, you understand the basics of wings, differential, and brake bias. Advanc
 
 The front and rear wings don't exist in isolation. Their relationship to ride height, suspension stiffness, and tyre pressures creates the car's aerodynamic platform.
 
-| Parameter | Aero Effect |
-|-----------|-------------|
-| **Lower front ride height** | Increases front downforce — better turn-in, risk of bottoming |
-| **Higher rear ride height** | Increases rear downforce — more stability, more drag |
+| Parameter                         | Aero Effect                                                            |
+|-----------------------------------|------------------------------------------------------------------------|
+| **Lower front ride height**       | Increases front downforce — better turn-in, risk of bottoming          |
+| **Higher rear ride height**       | Increases rear downforce — more stability, more drag                   |
 | **Rake (rear higher than front)** | Increases overall downforce — gives the diffuser more air to work with |
-| **Stiff front suspension** | Maintains aero platform, less mechanical grip |
-| **Soft rear suspension** | Better rear traction, risk of aero instability |
+| **Stiff front suspension**        | Maintains aero platform, less mechanical grip                          |
+| **Soft rear suspension**          | Better rear traction, risk of aero instability                         |
 
 **Principle:** Change one thing at a time. If you change rear wing, front ride height, and differential all at once, you won't know what improved or ruined the car.
 
 #### Suspension Kinematics
 
-| Parameter | More (Higher Setting) | Less (Lower Setting) |
-|-----------|----------------------|---------------------|
-| **Front Camber** | Better mid-corner front grip, worse braking stability | Better braking, less cornering grip |
-| **Rear Camber** | Better rear grip on exit, less straight-line traction | More straight-line stability, less corner grip |
-| **Front Toe** | Toe-out = better turn-in response | Toe-in = more stability |
-| **Rear Toe** | Toe-in = stability under braking | Toe-out = better rotation |
-| **Front Anti-Roll Bar** | More understeer, sharper response | Less understeer, smoother response |
-| **Rear Anti-Roll Bar** | More oversteer on entry | Less oversteer, better traction |
+| Parameter               | More (Higher Setting)                                 | Less (Lower Setting)                           |
+|-------------------------|-------------------------------------------------------|------------------------------------------------|
+| **Front Camber**        | Better mid-corner front grip, worse braking stability | Better braking, less cornering grip            |
+| **Rear Camber**         | Better rear grip on exit, less straight-line traction | More straight-line stability, less corner grip |
+| **Front Toe**           | Toe-out = better turn-in response                     | Toe-in = more stability                        |
+| **Rear Toe**            | Toe-in = stability under braking                      | Toe-out = better rotation                      |
+| **Front Anti-Roll Bar** | More understeer, sharper response                     | Less understeer, smoother response             |
+| **Rear Anti-Roll Bar**  | More oversteer on entry                               | Less oversteer, better traction                |
 
 #### Ride Height & Rake
 
@@ -986,13 +993,13 @@ Running behind another car on a straight gives you a slipstream (tow) — worth 
 
 The crossover point where Full Wets become faster than Inters depends on track and conditions:
 
-| Condition | Tyre |
-|-----------|------|
-| Damp track, no spray | Inters |
-| Light rain, light spray | Inters (they clear water adequately) |
-| Standing water visible | Full Wets |
-| Heavy spray, poor visibility | Full Wets |
-| Drying line appearing | Inters are faster — switch early |
+| Condition                    | Tyre                                 |
+|------------------------------|--------------------------------------|
+| Damp track, no spray         | Inters                               |
+| Light rain, light spray      | Inters (they clear water adequately) |
+| Standing water visible       | Full Wets                            |
+| Heavy spray, poor visibility | Full Wets                            |
+| Drying line appearing        | Inters are faster — switch early     |
 
 **Key indicator:** If the AI starts pitting for Wet tyres, you probably should too.
 
@@ -1006,14 +1013,14 @@ The crossover point where Full Wets become faster than Inters depends on track a
 
 #### Setup Changes for Wet
 
-| Parameter | Dry Setup | Wet Adjustment |
-|-----------|-----------|----------------|
-| Wings | Track-dependent | Add 2-4 clicks front and rear |
-| Ride Height | Low | Raise 5-10mm (avoid bottoming with less downforce from slower speeds) |
-| Brake Pressure | 95-100% | Reduce to 85-90% |
-| Brake Bias | Track-dependent | Move forward 2-3% (more stability) |
-| Differential (on-throttle) | Track-dependent | Reduce 10-15% (less wheelspin on exit) |
-| Tyre Pressures | Optimal | Increase slightly (tyres run cooler) |
+| Parameter                  | Dry Setup       | Wet Adjustment                                                        |
+|----------------------------|-----------------|-----------------------------------------------------------------------|
+| Wings                      | Track-dependent | Add 2-4 clicks front and rear                                         |
+| Ride Height                | Low             | Raise 5-10mm (avoid bottoming with less downforce from slower speeds) |
+| Brake Pressure             | 95-100%         | Reduce to 85-90%                                                      |
+| Brake Bias                 | Track-dependent | Move forward 2-3% (more stability)                                    |
+| Differential (on-throttle) | Track-dependent | Reduce 10-15% (less wheelspin on exit)                                |
+| Tyre Pressures             | Optimal         | Increase slightly (tyres run cooler)                                  |
 
 ---
 
@@ -1081,6 +1088,7 @@ git commit -m "f1-25: write Wave 2 advanced guide and mods placeholder"
 ### Task 5: Format and Insert User-Provided Mods
 
 **Files:**
+
 - Modify: `f1-25/guide/wave-1/mods.md`
 - Modify: `f1-25/guide/wave-2/mods.md`
 - Modify: `f1-25/STATUS.md`
@@ -1094,13 +1102,13 @@ For each Wave 1 mod provided, write:
 ```markdown
 #### [Mod Name](overtake-url)
 
-| Detail | Value |
-|--------|-------|
-| **Version** | X.Y.Z |
-| **Author** | Author Name |
-| **Dependencies** | List or None |
+| Detail              | Value                                        |
+|---------------------|----------------------------------------------|
+| **Version**         | X.Y.Z                                        |
+| **Author**          | Author Name                                  |
+| **Dependencies**    | List or None                                 |
 | **What It Changes** | Description of the mod's impact on the game. |
-| **Installation** | Any special installation notes. |
+| **Installation**    | Any special installation notes.              |
 ```
 
 Insert each entry into `f1-25/guide/wave-1/mods.md`, replacing the placeholder text.
@@ -1125,6 +1133,7 @@ git commit -m "f1-25: insert user-provided mods for Waves 1 and 2"
 ### Task 6: Write Typst Theme and Verify with Test Compilation
 
 **Files:**
+
 - Write: `f1-25/templates/style.typ`
 - Create: `f1-25/templates/test-theme.md` (temporary — deleted after verification)
 - Create: `f1-25/templates/test-theme.typ` (temporary — deleted after verification)
@@ -1223,18 +1232,20 @@ This is body text in Dark Carbon. Here is some `inline code` in Electric Blue.
 ### Subsection (H3 — Gold)
 
 | Table Header | Column B |
-|-------------|----------|
-| Row 1 | Value 1 |
-| Row 2 | Value 2 |
+|--------------|----------|
+| Row 1        | Value 1  |
+| Row 2        | Value 2  |
 
 #### Mod Entry Heading (H4 — Mid Gray)
 
 > This is a blockquote callout box. It should have a gold left border and light gray background. Useful for warnings, notes, and tips.
 
 ```
+
 // Code block — dark carbon background with electric blue text
 const hello = "world";
 console.log(hello);
+
 ```
 
 [Clickable link text](https://example.com) — should render in Racing Red.
@@ -1284,6 +1295,7 @@ git commit -m "f1-25: write Carbon & Crimson Typst theme (verified with test com
 ### Task 7: Write Typst Guide Template
 
 **Files:**
+
 - Write: `f1-25/templates/guide.typ`
 
 - [ ] **Step 1: Write guide.typ with cover page, TOC, and body**
@@ -1343,6 +1355,7 @@ git commit -m "f1-25: write Typst guide template with cover and TOC"
 ### Task 8: Write generate-pdf.ps1
 
 **Files:**
+
 - Write: `f1-25/generate-pdf.ps1`
 
 - [ ] **Step 1: Write PDF generation script**
@@ -1522,6 +1535,7 @@ git commit -m "f1-25: write PDF generation script with PDF verification"
 ### Task 9: Build GUIDE.md, Generate PDF, and Verify
 
 **Files:**
+
 - Modify: `f1-25/GUIDE.md`
 - Create: `f1-25/output/APEX-ALCHEMY-GUIDE.pdf`
 
@@ -1532,6 +1546,7 @@ git commit -m "f1-25: write PDF generation script with PDF verification"
 ```
 
 Expected output:
+
 ```
 [OK] Typst found at...
 [OK] Version: 0.1.0
@@ -1544,6 +1559,7 @@ Expected output:
 - [ ] **Step 2: Verify the PDF content visually**
 
 Open `f1-25/output/APEX-ALCHEMY-GUIDE.pdf` and confirm:
+
 - [ ] Cover page renders with logo, title, subtitle, version
 - [ ] Table of contents has entries for all waves and subsections
 - [ ] Body text is readable in Dark Carbon on white background
@@ -1566,6 +1582,7 @@ git commit -m "f1-25: build GUIDE.md from guide/ sources"
 ### Task 10: Final STATUS.md Update and Verification
 
 **Files:**
+
 - Modify: `f1-25/STATUS.md`
 
 - [ ] **Step 1: Update STATUS.md — mark all completed items**
