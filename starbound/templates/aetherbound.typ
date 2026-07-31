@@ -19,8 +19,8 @@
   },
 )
 
-#set text(font: body-font, size: 10pt, fill: clr-text)
-#set par(leading: 0.65em, justify: true)
+#set text(font: body-font, size: 11pt, fill: clr-text)
+#set par(leading: 0.7em, justify: true)
 
 // ── Heading Styles ──────────────────────────────────
 #show heading: it => {
@@ -28,23 +28,23 @@
   if it.level == 1 {
     pagebreak()
     v(1em)
-    text(size: 24pt, weight: "bold", it.body)
+    text(size: 26pt, weight: "bold", it.body)
     v(4pt)
     line(length: 100%, stroke: 1pt + clr-cyan)
     v(8pt)
   } else if it.level == 2 {
     v(0.8em)
-    text(size: 18pt, weight: "bold", it.body)
+    text(size: 20pt, weight: "bold", it.body)
     v(4pt)
   } else if it.level == 3 {
     v(0.5em)
-    text(size: 14pt, weight: "bold", it.body)
+    text(size: 15pt, weight: "bold", it.body)
     v(2pt)
   }
 }
 
 // ── Cover Page ──────────────────────────────────────
-is-dark-page.update(true)
+#is-dark-page.update(true)
 #set page(fill: clr-bg-dark)
 #align(center + horizon)[
   #v(4cm)
@@ -61,7 +61,7 @@ is-dark-page.update(true)
 
 // ── Body ────────────────────────────────────────────
 #set page(fill: clr-bg-body)
-is-dark-page.update(false)
+#is-dark-page.update(false)
 
 // ── Table of Contents ───────────────────────────────
 = Contents

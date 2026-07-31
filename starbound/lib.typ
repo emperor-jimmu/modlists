@@ -2,8 +2,8 @@
 // Import from content files: #import "/lib.typ": tip, concept, warning, mod-entry
 
 // ── Fonts ───────────────────────────────────────────
-#let heading-font = ("Space Grotesk", "sans-serif")
-#let body-font = ("Inter", "sans-serif")
+#let heading-font = ("Space Grotesk", "Segoe UI")
+#let body-font = ("Inter", "Segoe UI")
 
 // ── Palette ─────────────────────────────────────────
 #let clr-bg-dark = rgb("#1a103c")
@@ -94,7 +94,7 @@
     [
       #text(font: heading-font, size: 9pt, fill: clr-amber, weight: "bold")[TIP]
       #h(4pt)
-      #text(size: 10pt, font: body-font)[#body]
+      #text(size: 11pt, font: body-font)[#body]
     ]
   )
   v(6pt)
@@ -109,7 +109,7 @@
     [
       #text(font: heading-font, size: 9pt, fill: clr-info, weight: "bold")[CONCEPT]
       #h(4pt)
-      #text(size: 10pt, font: body-font)[#body]
+      #text(size: 11pt, font: body-font)[#body]
     ]
   )
   v(6pt)
@@ -124,7 +124,7 @@
     [
       #text(font: heading-font, size: 9pt, fill: clr-red, weight: "bold")[WARNING]
       #h(4pt)
-      #text(size: 10pt, font: body-font)[#body]
+      #text(size: 11pt, font: body-font)[#body]
     ]
   )
   v(6pt)
@@ -133,15 +133,17 @@
 // ── Wave Divider Helper ─────────────────────────────
 #let wave-divider(wave-number, wave-name, blurb) = {
   pagebreak()
-  is-dark-page.update(true)
   set page(fill: clr-bg-dark)
-  align(center + horizon)[
-    v(4cm)
-    text(font: heading-font, size: 36pt, fill: white, weight: "bold")[Wave #wave-number]
-    v(0.5em)
-    text(font: body-font, size: 14pt, fill: clr-cyan)[#wave-name]
-    v(2em)
-    text(font: body-font, size: 11pt, fill: luma(170))[#blurb]
+  [
+    #is-dark-page.update(true)
+    #align(center + horizon)[
+      v(4cm)
+      text(font: heading-font, size: 36pt, fill: white, weight: "bold")[Wave #wave-number]
+      v(0.5em)
+      text(font: body-font, size: 14pt, fill: clr-cyan)[#wave-name]
+      v(2em)
+      text(font: body-font, size: 11pt, fill: luma(170))[#blurb]
+    ]
   ]
   set page(fill: clr-bg-body)
   is-dark-page.update(false)
