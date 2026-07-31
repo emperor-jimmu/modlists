@@ -45,7 +45,18 @@
   dependencies: (),
   system-impact: "overhauls mech energy and flight systems",
   description: [Completely overhauls the mech energy system: separate health and energy bars, mechs run on fuel that can be replenished anywhere, mech flight works anywhere (not just space). Makes mechs feel like proper vehicles instead of gimmicky space-only tools. FU-compatible.],
-  install-notes: [Load after FU and any mech mods. Compatible with FU's mech content.],
+  install-notes: [Load after FU and any mech mods. Compatible with FU's mech content. Install the Shellguard patch below if using Shellguard.],
+)
+
+#mod-entry(
+  name: "FU / Shellguard Mech Compatibility",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1686763043",
+  category: "Patch",
+  version: "2024",
+  dependencies: ("Frackin Universe", "Shellguard: Starbound Expansion Remastered"),
+  system-impact: none,
+  description: [Ensures Shellguard mech components and upgrades work correctly with FU's overhauled mech system. Without this patch, Shellguard mech parts may not integrate properly with FU mech mechanics.],
+  install-notes: [Load after FU, Shellguard, and any mech mods.],
 )
 
 #warning[

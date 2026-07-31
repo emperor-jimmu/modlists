@@ -12,7 +12,18 @@
   dependencies: (),
   system-impact: none,
   description: [Extends most GUI windows to show more items at once. Client-side only. The companion Extended Songbook is available separately.],
-  install-notes: [Load after any HUD or interface mods.],
+  install-notes: [Load after any HUD or interface mods. Install the FU + Extended GUI Patch below for full FU crafting station coverage.],
+)
+
+#mod-entry(
+  name: "FU + Extended GUI Patch",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1681880007",
+  category: "Patch",
+  version: "2024",
+  dependencies: ("Extended GUI", "Frackin Universe"),
+  system-impact: none,
+  description: [Patches Extended GUI to properly handle FU's expanded crafting station interfaces and numerous menus. Without this patch, many FU-specific windows won't benefit from Extended GUI's improvements.],
+  install-notes: [Load after Extended GUI and FU. Essential for full Extended GUI coverage with FU.],
 )
 
 #mod-entry(

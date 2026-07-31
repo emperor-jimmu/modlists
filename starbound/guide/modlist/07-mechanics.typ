@@ -16,6 +16,50 @@
 )
 
 #mod-entry(
+  name: "RPG Growth FU Recipe Balance Patch",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1952112607",
+  category: "Patch",
+  version: "2024",
+  dependencies: ("RPG Growth", "Frackin Universe"),
+  system-impact: none,
+  description: [Balances RPG Growth's crafting recipes against FU's economy and material costs. Essential for a coherent progression experience when using both RPG Growth and FU together.],
+  install-notes: [Load after RPG Growth and FU.],
+)
+
+#mod-entry(
+  name: "Pandora's Box RPG Growth EXP Patch (FU and Non)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2456378434",
+  category: "Patch",
+  version: "2024",
+  dependencies: ("RPG Growth",),
+  system-impact: "adjusts XP gain rates",
+  description: [Fine-tunes RPG Growth's experience gain rates for FU's expanded universe. More monsters means more XP, and this patch balances the curve so you're not over-leveling or under-leveling when playing with FU's massive bestiary. Works with or without FU.],
+  install-notes: [Load after RPG Growth. Works with or without FU.],
+)
+
+#mod-entry(
+  name: "RPG Growth Extended Levels",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2066187287",
+  category: "Patch",
+  version: "2024",
+  dependencies: ("RPG Growth",),
+  system-impact: "extends level cap",
+  description: [Extends RPG Growth's level cap beyond the default maximum. Essential for an FU-scale playthrough where the sheer volume of content would hit the level ceiling long before you're done exploring.],
+  install-notes: [Load after RPG Growth. Recommended for FU playthroughs due to the massive amount of content.],
+)
+
+#mod-entry(
+  name: "RPG Growth Avali Themed Mechanist",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3047564504",
+  category: "Patch",
+  version: "2024",
+  dependencies: ("RPG Growth", "Avali (Triage) Race Mod"),
+  system-impact: none,
+  description: [Adds an Avali-themed Mechanist class option to RPG Growth. Fits the Avali's technological and aerogel-based aesthetic. Complements the extensive Avali race support in this modlist.],
+  install-notes: [Load after RPG Growth and Avali Triage.],
+)
+
+#mod-entry(
   name: "Omnicrafter!",
   url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2844996935",
   category: "Mechanics",
