@@ -1,12 +1,14 @@
 # Mythic Crucible — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a complete 2-wave modlist + game guide for Baldur's Gate 3 "Mythic Crucible" with Typst-generated PDF output.
 
-**Architecture:** Content-first pipeline. Markdown source files in `guide/` authored with a custom template format. A Node.js pre-processor converts `.md` to Typst-compatible `.typ` content blocks. `build.typ` assembles them with BG3-themed styling and `build.bat` orchestrates the full compile. Mod research done via Playwright browser against Nexus Mods.
+**Architecture:** Content-first pipeline. Markdown source files in `guide/` authored directly. A Node.js pre-processor converts `.md` to Typst-compatible `.typ` content blocks in `guide/.typst-cache/`. `build.typ` assembles them with BG3-themed styling (dark purples, golds, dark backgrounds, high-contrast text). `build.bat` orchestrates the full compile and validates prerequisites. Mod research done via Playwright browser against Nexus Mods.
 
-**Tech Stack:** Markdown (guide content), Typst 0.15.x (PDF engine), Node.js (markdown→typst converter), PowerShell/Batch (build launcher)
+**Tech Stack:** Markdown (guide content), Typst 0.15.x (PDF engine), Node.js (markdown-to-typst converter), Batch (build launcher)
+
+**Commit Strategy:** 5 atomic commits — one per major deliverable.
 
 ---
 
@@ -20,15 +22,17 @@
 | `mod-ideas.md` | Future mod ideas, not included in PDF |
 | `conflicts-mods.md` | Known incompatibilities between mods |
 | `guide/00-cover.md` | Cover page content (modlist name, tagline, logo reference) |
-| `guide/00-toc.md` | Table of contents (placeholder — Typst generates real TOC) |
+| `guide/00-toc.md` | Table of contents placeholder (Typst generates real TOC) |
 | `guide/01-installation.md` | BG3MM installation guide + mod setup instructions |
 | `guide/02-wave-0-guide.md` | Beginner's guide: character creation, builds, mechanics |
 | `guide/03-wave-0-modlist.md` | Wave 0 mod entries (~10-20 mods) |
 | `guide/04-wave-1-guide.md` | Advanced guide: multiclassing, mechanics, mod integration |
 | `guide/05-wave-1-modlist.md` | Wave 1 mod entries (50+ mods) |
+| `guide/06-load-order.md` | Prescribed load order for each wave |
 | `scripts/convert.js` | Node.js script: markdown files → Typst `.typ` content blocks |
+| `scripts/clean.js` | Node.js script: wipes `.typst-cache/` for a clean build |
 | `build.typ` | Typst document: imports converted `.typ` files, applies styling, renders PDF |
-| `build.bat` | One-click launcher: runs convert.js → `typst compile` |
+| `build.bat` | One-click launcher: prerequisite check → clean → convert → compile |
 | `output/mythic-crucible.pdf` | Generated PDF (gitignored) |
 
 ---
@@ -36,23 +40,42 @@
 ### Task 1: Project Scaffolding
 
 **Files:**
-- Create: `AGENTS.md`
-- Create: `README.md` (stub)
-- Create: `STATUS.md` (stub)
-- Create: `mod-ideas.md` (stub)
-- Create: `conflicts-mods.md` (stub)
-- Create: `guide/00-cover.md` (stub)
-- Create: `guide/00-toc.md` (stub)
-- Create: `guide/01-installation.md` (stub)
-- Create: `guide/02-wave-0-guide.md` (stub)
-- Create: `guide/03-wave-0-modlist.md` (stub)
-- Create: `guide/04-wave-1-guide.md` (stub)
-- Create: `guide/05-wave-1-modlist.md` (stub)
-- Create: `build.bat` (stub)
-- Create: `scripts/convert.js` (stub)
-- Create: `.gitignore`
+- Create: `AGENTS.md`, `README.md` (stub), `STATUS.md` (stub), `mod-ideas.md` (stub), `conflicts-mods.md` (stub)
+- Create: `guide/00-cover.md` (stub), `guide/00-toc.md` (stub), `guide/01-installation.md` (stub)
+- Create: `guide/02-wave-0-guide.md` (stub), `guide/03-wave-0-modlist.md` (stub)
+- Create: `guide/04-wave-1-guide.md` (stub), `guide/05-wave-1-modlist.md` (stub), `guide/06-load-order.md` (stub)
+- Create: `build.bat` (stub), `scripts/convert.js` (stub), `scripts/clean.js` (stub), `.gitignore`
 
-- [ ] **Step 1: Create AGENTS.md**
+- [ ] **Step 1: Create all directory structure**
+
+```
+baldurs-gate-3/
+├── AGENTS.md
+├── README.md
+├── STATUS.md
+├── mod-ideas.md
+├── conflicts-mods.md
+├── build.bat
+├── build.typ                    (created in Task 10)
+├── .gitignore
+├── assets/
+│   └── logo.jpg                 (already exists)
+├── guide/
+│   ├── 00-cover.md
+│   ├── 00-toc.md
+│   ├── 01-installation.md
+│   ├── 02-wave-0-guide.md
+│   ├── 03-wave-0-modlist.md
+│   ├── 04-wave-1-guide.md
+│   ├── 05-wave-1-modlist.md
+│   └── 06-load-order.md
+├── scripts/
+│   ├── convert.js
+│   └── clean.js
+└── output/                      (gitignored, created by build)
+```
+
+- [ ] **Step 2: Create AGENTS.md**
 
 ```markdown
 # Baldur's Gate 3 — Mythic Crucible
@@ -81,7 +104,7 @@ Mod organizer: BG3 Mod Manager (BG3MM)
 Run `build.bat` to regenerate the PDF. Requires Typst 0.15.x and Node.js.
 ```
 
-- [ ] **Step 2: Create README.md stub**
+- [ ] **Step 3: Create README.md stub**
 
 ```markdown
 # Mythic Crucible — Baldur's Gate 3 Modlist
@@ -102,7 +125,7 @@ A curated 2-wave modlist and game guide for Baldur's Gate 3 (Patch 8 / Hotfix #3
 Full documentation in `guide/`. PDF: `output/mythic-crucible.pdf`.
 ```
 
-- [ ] **Step 3: Create STATUS.md stub**
+- [ ] **Step 4: Create STATUS.md stub**
 
 ```markdown
 # STATUS.md — Mythic Crucible Decision Log
@@ -123,10 +146,10 @@ Full documentation in `guide/`. PDF: `output/mythic-crucible.pdf`.
 
 ## Conflicts & Resolutions
 
-*(Documented in conflicts-mods.md)*
+*(Resolved conflicts documented in conflicts-mods.md)*
 ```
 
-- [ ] **Step 4: Create mod-ideas.md stub**
+- [ ] **Step 5: Create mod-ideas.md stub**
 
 ```markdown
 # mod-ideas.md — Future Mod Ideas
@@ -137,7 +160,7 @@ Mods that sound interesting but couldn't be verified, aren't compatible yet, or 
 |-----|----------|--------|-------|
 ```
 
-- [ ] **Step 5: Create conflicts-mods.md stub**
+- [ ] **Step 6: Create conflicts-mods.md stub**
 
 ```markdown
 # conflicts-mods.md — Known Mod Conflicts
@@ -146,9 +169,7 @@ Mods that sound interesting but couldn't be verified, aren't compatible yet, or 
 |-------|-------|---------------|------------|
 ```
 
-- [ ] **Step 6: Create guide stub files**
-
-Create each of these with a short heading placeholder:
+- [ ] **Step 7: Create all guide stub files**
 
 `guide/00-cover.md`:
 ```markdown
@@ -165,7 +186,7 @@ Patch 8 / Hotfix #36 — April 2025
 ```markdown
 # Table of Contents
 
-*(Generated by Typst during PDF build)*
+The table of contents is generated automatically by Typst during PDF build.
 ```
 
 `guide/01-installation.md`:
@@ -179,13 +200,17 @@ Patch 8 / Hotfix #36 — April 2025
 ## Setting Up Mods
 
 [TODO]
+
+## Wave Setup
+
+[TODO]
 ```
 
 `guide/02-wave-0-guide.md`:
 ```markdown
 # Wave 0 — First Steps into Faerun
 
-*You awaken on the nautiloid with nothing but fragmented memories and a tadpole behind your eye...*
+*You awaken on the nautiloid with nothing but fragmented memories and a tadpole behind your eye. The world is brutal, unfamiliar, and unforgiving. You are not yet a hero — you are a survivor, learning the rules of a world that does not care whether you live or die. Every conversation could be your last. Every battle is a lesson. Your only advantage: a keener eye for detail and smoother tools than fate intended. This is your origin story.*
 
 ## Getting Started
 
@@ -241,7 +266,7 @@ Patch 8 / Hotfix #36 — April 2025
 ```markdown
 # Wave 1 — Mythic Crucible
 
-*You've walked this path before. You know the faces, the betrayals, the choices that await...*
+*You've walked this path before. You know the faces, the betrayals, the choices that await. But the Weave has shifted — new powers stir, forgotten races emerge from shadow, and the gods themselves seem to be rewriting the rules of engagement. The Sword Coast is bigger, darker, and more dangerous than you remember. This time, you're not just surviving — you're testing the limits of what a mortal can become. The crucible awaits.*
 
 ## Advanced Character Building
 
@@ -280,11 +305,11 @@ Patch 8 / Hotfix #36 — April 2025
 
 *(Mods to be added)*
 
-## Classes & Subclasses
+## Races
 
 *(Mods to be added)*
 
-## Races
+## Classes & Subclasses
 
 *(Mods to be added)*
 
@@ -325,36 +350,113 @@ Patch 8 / Hotfix #36 — April 2025
 *(Mods to be added)*
 ```
 
-- [ ] **Step 7: Create build.bat stub**
+`guide/06-load-order.md`:
+```markdown
+# Load Order
+
+## Wave 0 Load Order
+
+*(To be determined after mod curation)*
+
+## Wave 1 Load Order
+
+*(To be determined after mod curation)*
+```
+
+- [ ] **Step 8: Create build.bat stub**
 
 ```batch
 @echo off
+setlocal enabledelayedexpansion
+
 echo === Mythic Crucible PDF Builder ===
-echo Step 1: Converting Markdown to Typst...
+
+echo.
+echo [1/4] Checking prerequisites...
+where typst >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ERROR: Typst is not installed or not in PATH.
+    echo Install Typst from https://github.com/typst/typst/releases
+    echo Then run this script again.
+    exit /b 1
+)
+
+where node >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ERROR: Node.js is not installed or not in PATH.
+    echo Install Node.js from https://nodejs.org
+    echo Then run this script again.
+    exit /b 1
+)
+
+echo Typst and Node.js found.
+echo.
+
+echo [2/4] Cleaning previous build cache...
+node scripts/clean.js
+if %errorlevel% neq 0 (
+    echo ERROR: Cache cleaning failed.
+    exit /b 1
+)
+
+echo.
+echo [3/4] Converting Markdown to Typst...
 node scripts/convert.js
-echo Step 2: Compiling PDF with Typst...
+if %errorlevel% neq 0 (
+    echo ERROR: Markdown conversion failed.
+    exit /b 1
+)
+
+echo.
+echo [4/4] Compiling PDF with Typst...
+if not exist "output" mkdir "output"
 typst compile build.typ output/mythic-crucible.pdf
-echo Done! PDF saved to output/mythic-crucible.pdf
+if %errorlevel% neq 0 (
+    echo ERROR: Typst compilation failed.
+    echo Check error messages above for details.
+    exit /b 1
+)
+
+echo.
+echo === Done! PDF saved to output/mythic-crucible.pdf ===
 ```
 
-- [ ] **Step 8: Create scripts/convert.js stub**
+- [ ] **Step 9: Create scripts/convert.js stub**
 
 ```javascript
 // Converts guide/*.md files to Typst-compatible .typ content blocks
+// Full implementation in Task 10
 const fs = require('fs');
 const path = require('path');
 
 const guideDir = path.join(__dirname, '..', 'guide');
-const outputDir = path.join(__dirname, '..', 'guide', '.typst-cache');
+const cacheDir = path.join(guideDir, '.typst-cache');
 
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir, { recursive: true });
+if (!fs.existsSync(cacheDir)) {
+  fs.mkdirSync(cacheDir, { recursive: true });
 }
 
-console.log('Convert.js placeholder — will be implemented in Task 12');
+console.log('Convert.js placeholder — full implementation in Task 10');
 ```
 
-- [ ] **Step 9: Create .gitignore**
+- [ ] **Step 10: Create scripts/clean.js**
+
+```javascript
+// Wipes the .typst-cache directory for a clean build
+const fs = require('fs');
+const path = require('path');
+
+const cacheDir = path.join(__dirname, '..', 'guide', '.typst-cache');
+
+if (fs.existsSync(cacheDir)) {
+  fs.rmSync(cacheDir, { recursive: true, force: true });
+  console.log('Cleaned build cache.');
+} else {
+  console.log('No cache to clean.');
+}
+```
+
+- [ ] **Step 11: Create .gitignore**
 
 ```
 output/*.pdf
@@ -362,13 +464,26 @@ guide/.typst-cache/
 node_modules/
 ```
 
-- [ ] **Step 10: Verify scaffolding**
+- [ ] **Step 12: Create output/ directory**
 
-Run: `dir /b /s baldurs-gate-3\guide` — confirm all 7 `.md` files exist
-Run: `dir baldurs-gate-3\*.md` — confirm AGENTS.md, README.md, STATUS.md, mod-ideas.md, conflicts-mods.md exist
-Run: `dir baldurs-gate-3\build.bat baldurs-gate-3\scripts\convert.js` — confirm both exist
+```bash
+mkdir -p baldurs-gate-3/output
+```
 
-- [ ] **Step 11: Commit**
+Create `output/.gitkeep` (empty file) so the directory is tracked.
+
+- [ ] **Step 13: Verify scaffolding**
+
+Run: `Get-ChildItem -Recurse -Name baldurs-gate-3/guide`
+Expected: 7 `.md` files present
+
+Run: `Get-ChildItem -Name baldurs-gate-3/*.md`
+Expected: `AGENTS.md`, `README.md`, `STATUS.md`, `mod-ideas.md`, `conflicts-mods.md`
+
+Run: `Get-ChildItem -Name baldurs-gate-3/scripts/`
+Expected: `convert.js`, `clean.js`
+
+- [ ] **Step 14: Commit — Scaffolding**
 
 ```bash
 git add baldurs-gate-3/
@@ -377,413 +492,384 @@ git commit -m "feat(bg3): scaffold Mythic Crucible project structure"
 
 ---
 
-### Task 2: Research Wave 0 Mods — Bug Fixes & Community Patches
+### Task 2: Research & Write Wave 0 Modlist (All Categories)
 
 **Files:**
 - Modify: `guide/03-wave-0-modlist.md`
 - Modify: `STATUS.md`
+- Modify: `mod-ideas.md` (for rejected/uncertain mods)
 
-- [ ] **Step 1: Open Nexus Mods BG3 category in Playwright**
+**Target:** ~10-20 mods across all 4 Wave 0 categories.
+
+- [ ] **Step 1: Open Nexus Mods BG3 in Playwright**
 
 Navigate to: `https://www.nexusmods.com/baldursgate3/mods/`
-Sort by endorsements or last updated. Filter for Patch 8 compatible mods.
+Browse by category, endorsements, and last updated. Filter mindset: Patch 8 compatible only.
 
-- [ ] **Step 2: Search for community patch / bug fix mods**
+- [ ] **Step 2: Research Bug Fixes & Community Patches (target: 3-5 mods)**
 
-Search terms: "community patch", "bug fix", "patch fix", "unofficial patch"
-Document each candidate mod's: name, URL, last updated date, version, description, dependencies.
+Search terms: "community patch", "bug fix", "patch fix", "unofficial patch", "fixes"
+For each candidate document: name, URL, last updated date, version, description, dependencies.
+Reject any mod last updated before September 2024.
+Reject any mod with Patch 8 complaints in recent comments.
+Log all decisions in STATUS.md.
+Write verified entries into `guide/03-wave-0-modlist.md` under "Bug Fixes & Community Patches".
 
-- [ ] **Step 3: Verify each mod's Patch 8 compatibility**
+- [ ] **Step 3: Research UI Enhancements (target: 5-8 mods)**
 
-Check the mod description page and comments for Patch 8 / Hotfix #36 compatibility.
-Any mod last updated before September 2024: flag as uncertain, move to mod-ideas.md.
-Any mod with Patch 8 complaints in comments: reject, log in STATUS.md.
+Search terms: "UI", "interface", "inventory", "tooltip", "camera", "controls", "WASD", "Better UI", "Improved UI", "hotbar"
+For each candidate: same verification process as Step 2.
+Write entries under "UI Enhancements".
 
-- [ ] **Step 4: Curate selection**
+- [ ] **Step 4: Research Quality of Life (target: 3-5 mods)**
 
-Target: 3-5 essential bug fix mods.
-Criteria: well-maintained, high endorsements, explicitly Patch 8 compatible.
-Document all accepted and rejected mods in STATUS.md.
+Search terms: "quality of life", "auto loot", "faster loot", "sort bags", "weight", "highlight", "search", "quick", "AOE loot"
+Same verification process.
+Write entries under "Quality of Life".
 
-- [ ] **Step 5: Write mod entries into guide/03-wave-0-modlist.md**
+- [ ] **Step 5: Research Lightweight Graphics (target: 3-5 mods)**
 
-For each accepted mod, write entry in the format:
+Search terms: "texture", "lighting", "reshade", "visual", "better faces", "hair", "upscale"
+Focus: visual polish only — no gameplay changes. Heavier overhauls go to Wave 1.
+Same verification process.
+Write entries under "Lightweight Graphics".
 
+- [ ] **Step 6: Mod entry format verification**
+
+Spot-check all entries against the required format — every mod must have:
 ```markdown
 ### [Mod Name](URL)
 
 - **Version:** x.y.z
 - **Description:** 3-5 lines — what the mod does, how it changes the game, why it's included.
 - **Dependencies:** [list or "None"]
-- **Category:** Bug Fixes & Community Patches
+- **Category:** [category name]
 - **Notes:** Load order tip, configuration, known issues.
 ```
 
-- [ ] **Step 6: Commit**
+- [ ] **Step 7: Commit — Wave 0 modlist**
 
 ```bash
-git add baldurs-gate-3/guide/03-wave-0-modlist.md baldurs-gate-3/STATUS.md
-git commit -m "feat(bg3): add Wave 0 bug fix and community patch mods"
+git add baldurs-gate-3/guide/03-wave-0-modlist.md baldurs-gate-3/STATUS.md baldurs-gate-3/mod-ideas.md
+git commit -m "feat(bg3): add Wave 0 modlist — bug fixes, UI, QoL, lightweight graphics"
 ```
 
 ---
 
-### Task 3: Research Wave 0 Mods — UI Enhancements
-
-**Files:**
-- Modify: `guide/03-wave-0-modlist.md`
-- Modify: `STATUS.md`
-
-- [ ] **Step 1: Search Nexus Mods for UI mods**
-
-Search terms: "UI", "interface", "inventory", "tooltip", "camera", "controls", "WASD", "Better UI"
-Browse the UI category: `https://www.nexusmods.com/baldursgate3/mods/categories/43/`
-
-- [ ] **Step 2: Verify and curate**
-
-Target: 5-8 UI enhancement mods.
-Focus: inventory management, better tooltips, camera improvements, native camera tweaks, WASD movement, improved hotbar.
-Verify Patch 8 compatibility. Log decisions in STATUS.md.
-
-- [ ] **Step 3: Write mod entries into guide/03-wave-0-modlist.md**
-
-Use the same entry format as Task 2, Step 5. Category: UI Enhancements.
-
-- [ ] **Step 4: Commit**
-
-```bash
-git add baldurs-gate-3/guide/03-wave-0-modlist.md baldurs-gate-3/STATUS.md
-git commit -m "feat(bg3): add Wave 0 UI enhancement mods"
-```
-
----
-
-### Task 4: Research Wave 0 Mods — Quality of Life
-
-**Files:**
-- Modify: `guide/03-wave-0-modlist.md`
-- Modify: `STATUS.md`
-
-- [ ] **Step 1: Search Nexus Mods for QoL mods**
-
-Search terms: "quality of life", "auto loot", "faster", "sort", "bags", "weight", "highlight", "search", "quick"
-Browse popular mods with high endorsements in the gameplay/misc categories.
-
-- [ ] **Step 2: Verify and curate**
-
-Target: 3-5 QoL mods.
-Focus: auto-loot/area loot, inventory sorting/bags, faster animations (looting, dialogue skip), highlight/visibility improvements.
-Verify Patch 8 compatibility. Log decisions in STATUS.md.
-
-- [ ] **Step 3: Write mod entries into guide/03-wave-0-modlist.md**
-
-Category: Quality of Life.
-
-- [ ] **Step 4: Commit**
-
-```bash
-git add baldurs-gate-3/guide/03-wave-0-modlist.md baldurs-gate-3/STATUS.md
-git commit -m "feat(bg3): add Wave 0 quality of life mods"
-```
-
----
-
-### Task 5: Research Wave 0 Mods — Lightweight Graphics
-
-**Files:**
-- Modify: `guide/03-wave-0-modlist.md`
-- Modify: `STATUS.md`
-
-- [ ] **Step 1: Search Nexus Mods for lightweight graphics mods**
-
-Search terms: "texture", "lighting", "reshade", "visual", "better faces", "hair"
-Browse the visual/graphics categories. Focus on mods that improve visual quality without changing gameplay — texture upscales, lighting tweaks, simple shader improvements.
-
-- [ ] **Step 2: Verify and curate**
-
-Target: 3-5 lightweight graphics mods.
-Focus: texture improvements (faces, hair, environments), lighting/shader tweaks, no heavy overhauls (those go in Wave 1).
-Verify Patch 8 compatibility. Log decisions in STATUS.md.
-
-- [ ] **Step 3: Write mod entries into guide/03-wave-0-modlist.md**
-
-Category: Lightweight Graphics.
-
-- [ ] **Step 4: Commit**
-
-```bash
-git add baldurs-gate-3/guide/03-wave-0-modlist.md baldurs-gate-3/STATUS.md
-git commit -m "feat(bg3): add Wave 0 lightweight graphics mods"
-```
-
----
-
-### Task 6: Write Wave 0 Beginner's Guide
+### Task 3: Write Wave 0 Guide + Installation Guide
 
 **Files:**
 - Modify: `guide/02-wave-0-guide.md`
-
-This task fills in all `[TODO]` sections in the Wave 0 guide with real content. The guide targets complete beginners to BG3. Write in a friendly, instructive tone. Use game-accurate terminology and mechanics.
+- Modify: `guide/01-installation.md`
 
 - [ ] **Step 1: Write "Getting Started" section**
 
-Cover: launching the game for the first time, basic controls (WASD if using mod, click-to-move otherwise), camera controls, interacting with objects/NPCs, opening inventory/journal/map, quicksave/quickload importance.
+Content: launching the game, basic controls (mention WASD movement mod if one is in the modlist, otherwise click-to-move), camera controls, interacting with objects and NPCs, opening inventory/journal/map, quicksave/quickload importance (F5/F8).
 
 - [ ] **Step 2: Write "Character Creation" section**
 
-Cover: all races and subraces (with brief mechanical summaries — ability bonuses, key racial features), all classes (with playstyle descriptions — which are beginner-friendly, which are complex), backgrounds (what they affect — inspiration goals, skill proficiencies), ability scores (what each does, recommended allocation for beginners), skills (which matter most early game), and Origin vs. Custom character choice.
+Content: all races/subraces with brief mechanical summaries (ability bonuses, key racial features), all classes with playstyle descriptions (mark beginner-friendly vs. complex), backgrounds and what they affect (inspiration goals, skill proficiencies), ability scores explained (Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma — what each does, recommended allocation for beginners), skills overview (which matter most early game), Origin vs. Custom character choice.
 
 - [ ] **Step 3: Write "Recommended Beginner Builds" section**
 
-Provide 2-3 builds. Each build includes:
-- Class + subclass recommendation
-- Recommended race
-- Ability score allocation
-- Leveling path (which feats/choices at key levels: 4, 8, 12)
+Provide 3 builds. Each includes:
+- Class + subclass recommendation with reasoning
+- Recommended race and why
+- Ability score allocation (point buy or standard array)
+- Leveling path (feats/choices at levels 4, 8, 12)
 - Gear priorities (what stats/weapons to look for)
-- Playstyle overview (how to play the build in combat)
-- Party role (what they contribute to the team)
+- Playstyle overview (how to play in combat)
+- Party role
 
-Suggested builds: one martial (e.g., Battle Master Fighter), one caster (e.g., Evocation Wizard or Light Cleric), one hybrid (e.g., Swords Bard or Paladin).
+Suggested builds:
+1. Battle Master Fighter (martial, simple, effective)
+2. Light Cleric (caster with survivability, healing, radiance damage)
+3. Swords Bard (hybrid — face, lockpicker, melee, spells)
 
 - [ ] **Step 4: Write "Important Mechanics" section**
 
-Cover: action economy (actions, bonus actions, reactions — what each can be used for), short rest vs. long rest (when to use each, what they restore, camp supplies), inspiration (how to earn it, how to use it for rerolls), dialogue checks (ability checks in conversation, guidance, inspiration rerolls), skill checks (what each skill does, proficiency bonus), saving throws (what they are, which classes are proficient in which), concentration (what breaks it, why it matters for casters), advantage/disadvantage (when each applies, how to get advantage).
+Content: action economy (actions, bonus actions, reactions — what each can be used for), short rest vs. long rest (when to use each, what they restore, camp supplies), inspiration (how to earn it, using it for rerolls), dialogue checks (ability checks in conversation, Guidance, inspiration rerolls), skill checks (what each skill does, proficiency bonus), saving throws (what they are, which classes are proficient in which), concentration (what breaks it, why it matters for casters), advantage/disadvantage (when each applies, how to seek advantage).
 
 - [ ] **Step 5: Write "Combat Fundamentals" section**
 
-Cover: initiative (how it's determined, d4 bonus from Dexterity), positioning (high ground advantage, backstab advantage, threatened status), surfaces (fire, ice, acid, electrified — how to create and exploit them), shove/jump/throw (bonus actions for martials, environmental kills), help action (reviving downed allies), disengage/dash/hide (bonus actions for rogues).
+Content: initiative (how determined — d4 + Dex mod), positioning (high ground advantage, backstab advantage, threatened status), surfaces (fire, ice, acid, electrified — how to create and exploit them), shove/jump/throw (bonus actions for martials, environmental kills), help action (reviving downed allies), disengage/dash/hide (bonus actions for rogues and monks).
 
 - [ ] **Step 6: Write "Early-Game Tips" section**
 
-Cover: party composition basics (you want a face, a lockpicker, a healer/support, and damage), key Act 1 NPCs to recruit (Shadowheart, Gale, Astarion, Lae'zel, Wyll, Karlach — where to find each), what to do before leaving the nautiloid (explore thoroughly, grab the Everburn Blade), camp supplies management (how to get food, long rest frequency).
+Content: party composition basics (you want a face, a lockpicker, a healer/support, and damage), key Act 1 NPCs — where to find Shadowheart, Gale, Astarion, Lae'zel, Wyll, Karlach, what to do before leaving the nautiloid (explore thoroughly, grab the Everburn Blade from Commander Zhalk), camp supplies management (how to get food, long rest frequency).
 
 - [ ] **Step 7: Write "Common Pitfalls" section**
 
-Cover: friendly fire (AoE spells hit allies too — careful with Fireball placement), failing dialogue checks isn't game over (embrace consequences, the game adapts), respeccing is cheap (Withers at camp, 100g — don't be afraid to experiment), don't hoard consumables (use scrolls, potions, arrows — they're plentiful), long resting often is fine (don't feel pressured to minimize rests).
+Content: friendly fire (AoE spells hit allies too), failing dialogue checks isn't game over (embrace consequences, the game adapts), respeccing is cheap (Withers at camp, 100g — don't be afraid to experiment), don't hoard consumables (use scrolls, potions, arrows — they're plentiful), long resting often is fine (don't feel pressured to minimize rests).
 
-- [ ] **Step 8: Commit**
+- [ ] **Step 8: Write Installation Guide — "Installing BG3 Mod Manager"**
+
+Content: download link (`https://github.com/LaughingLeader/BG3ModManager`), installation steps (extract zip, run BG3ModManager.exe, point to BG3 game directory), first-launch setup (settings, creating a profile), how to verify it detects the game correctly (check the status bar).
+
+- [ ] **Step 9: Write Installation Guide — "Setting Up Mods"**
+
+Content: downloading mods from Nexus Mods (manual download, .pak files), importing mods into BG3MM (drag-and-drop .pak files or File > Import Mod), activating mods (moving from Inactive to Active list), load order basics (dragging to reorder, File > Save Order, File > Export Order to Game), verifying mods are active (launch game, Mod Manager option in main menu shows active mods).
+
+- [ ] **Step 10: Write Installation Guide — Troubleshooting**
+
+Content: mod not appearing in game (check BG3MM export, verify .pak file not corrupted), game crash on launch (likely load order conflict, disable mods one at a time to isolate), load order conflicts (if two mods modify the same file, the one loaded later wins), verifying game files after mod issues (Steam > Properties > Verify Integrity).
+
+- [ ] **Step 11: Write Installation Guide — "Wave Setup"**
+
+Content: Wave 0 setup (install only Wave 0 mods, create a BG3MM profile called "Mythic Crucible — Wave 0"), Wave 1 setup (install Wave 0 + Wave 1 mods, create a separate profile "Mythic Crucible — Wave 1"), reminder that Wave 1 requires a new save.
+
+- [ ] **Step 12: Commit — Wave 0 guide + installation**
 
 ```bash
-git add baldurs-gate-3/guide/02-wave-0-guide.md
-git commit -m "feat(bg3): write Wave 0 beginner's guide"
+git add baldurs-gate-3/guide/02-wave-0-guide.md baldurs-gate-3/guide/01-installation.md
+git commit -m "feat(bg3): write Wave 0 beginner's guide and installation instructions"
 ```
 
 ---
 
-### Task 7: Write Installation Guide
-
-**Files:**
-- Modify: `guide/01-installation.md`
-
-- [ ] **Step 1: Write "Installing BG3 Mod Manager" section**
-
-Cover:
-- Where to download BG3MM (GitHub: `https://github.com/LaughingLeader/BG3ModManager`)
-- Installation steps (extract, run, point to BG3 game directory)
-- First-launch setup (settings, profiles)
-- How to verify it detects the game correctly
-
-- [ ] **Step 2: Write "Setting Up Mods" section**
-
-Cover:
-- How to download mods from Nexus Mods (manual download)
-- How to import mods into BG3MM (drag-and-drop or File > Import)
-- How to activate mods (moving from Inactive to Active list)
-- Load order basics (how to reorder, save order, export to game)
-- How to verify mods are active (launch game, check Mod Manager in main menu)
-- Troubleshooting: common issues and fixes (mod not appearing, game crash on launch, load order conflicts)
-
-- [ ] **Step 3: Write "Wave Setup" section**
-
-Cover:
-- Wave 0 setup: install only Wave 0 mods
-- Wave 1 setup: install Wave 0 + Wave 1 mods (all Wave 0 mods carry forward)
-- Creating separate BG3MM profiles for each wave
-- Reminder: Wave 1 requires a new save
-
-- [ ] **Step 4: Commit**
-
-```bash
-git add baldurs-gate-3/guide/01-installation.md
-git commit -m "feat(bg3): write installation guide with BG3MM instructions"
-```
-
----
-
-### Task 8: Research Wave 1 Mods — Graphics, Character Creation, Races
+### Task 4: Research Wave 1 Mods — Graphics, Character Creation, Races
 
 **Files:**
 - Modify: `guide/05-wave-1-modlist.md`
 - Modify: `STATUS.md`
+- Modify: `mod-ideas.md`
 
-Categories covered in this task:
-- Graphics & Visuals (target: 8-12 mods)
-- Character Creation (target: 8-12 mods)
-- Races (target: 3-5 mods)
+**Target:** 19-29 mods across 3 categories.
 
-- [ ] **Step 1: Research Graphics & Visuals mods**
+- [ ] **Step 1: Research Graphics & Visuals mods (target: 8-12)**
 
-Search Nexus Mods for: texture overhauls, environment retextures, lighting mods, shader presets (Reshade), character model improvements, VFX enhancements.
-Target: 8-12 graphics mods. Heavier overhauls than Wave 0 — full texture packs, lighting overhauls, complete Reshade presets.
+Search Nexus Mods for: texture overhauls, environment retextures, lighting mods, Reshade presets, character model improvements, VFX enhancements, hair physics.
+Each mod: verify Patch 8 compatibility (updated after Sep 2024), check comments for issues, document in STATUS.md.
+Write entries under "Graphics & Visuals".
 
-- [ ] **Step 2: Research Character Creation mods**
+- [ ] **Step 2: Research Character Creation mods (target: 8-12)**
 
-Search for: faces, hairstyles, hair colors, tattoos, body tattoos, scars, makeup, piercings, eye colors, horns, tiefling customization, character creator unlocker.
-Target: 8-12 character creation mods.
+Search for: faces (face packs), hairstyles, hair colors, tattoos, body tattoos, scars, makeup, piercings, eye colors, horns (tiefling horns mods), character creator unlocker, body models, skin textures.
+Same verification process. Write entries under "Character Creation".
 
-- [ ] **Step 3: Research Races mods**
+- [ ] **Step 3: Research Races mods (target: 3-5)**
 
-Search for: new playable races, race unlocks (goblin, hobgoblin, aasimar, genasi, firbolg, etc.), race expansions.
-Target: 3-5 race mods that add meaningful variety without being overpowered.
+Search for: new playable races, race unlocks (aasimar, genasi, firbolg, goblin, hobgoblin, kobold, etc.), race expansions.
+Criteria: add meaningful variety without being overpowered. Must be 5e-accurate or close to it.
+Same verification process. Write entries under "Races".
 
-- [ ] **Step 4: Verify all mods**
-
-Each mod must be Patch 8 compatible (updated after September 2024, no Patch 8 complaints in comments).
-Log all decisions in STATUS.md.
-
-- [ ] **Step 5: Write entries into guide/05-wave-1-modlist.md**
-
-Use the standard mod entry format. Fill each category section.
-
-- [ ] **Step 6: Commit**
+- [ ] **Step 4: Commit — Wave 1 mods batch 1**
 
 ```bash
-git add baldurs-gate-3/guide/05-wave-1-modlist.md baldurs-gate-3/STATUS.md
-git commit -m "feat(bg3): add Wave 1 graphics, character creation, and race mods"
+git add baldurs-gate-3/guide/05-wave-1-modlist.md baldurs-gate-3/STATUS.md baldurs-gate-3/mod-ideas.md
+git commit -m "feat(bg3): add Wave 1 mods — graphics, character creation, races"
 ```
 
 ---
 
-### Task 9: Research Wave 1 Mods — Classes, Subclasses, Spells, Feats
+### Task 5: Research Wave 1 Mods — Classes, Spells, Feats
 
 **Files:**
 - Modify: `guide/05-wave-1-modlist.md`
 - Modify: `STATUS.md`
+- Modify: `mod-ideas.md`
 
-Categories: Classes & Subclasses, Spells, Feats & Progression.
-Target: 10-15 mods across these categories.
+**Target:** 10-15 mods across 3 categories.
 
-- [ ] **Step 1: Research Classes & Subclasses mods**
+- [ ] **Step 1: Research Classes & Subclasses mods (target: 5-8)**
 
-Search for: new classes (Artificer, Blood Hunter, Mystic, etc.), subclass expansions (more options per class), class reworks.
-Focus on mods that add 5e-accurate content, not overpowered homebrew.
-Target: 5-8 class/subclass mods.
+Search for: new classes (Artificer, Blood Hunter, Mystic, etc.), subclass expansions (more options per existing class), class reworks (5e-accurate adjustments, not overpowered homebrew).
+Verify and write entries under "Classes & Subclasses".
 
-- [ ] **Step 2: Research Spells mods**
+- [ ] **Step 2: Research Spells mods (target: 3-5)**
 
-Search for: additional spells, 5e spells, cantrip expansions, spell list expansions.
-Target: 3-5 spell mods.
+Search for: additional spells (5e spells missing from BG3), cantrip expansions, spell list expansions, spell tweaks.
+Verify and write entries under "Spells".
 
-- [ ] **Step 3: Research Feats & Progression mods**
+- [ ] **Step 3: Research Feats & Progression mods (target: 2-3)**
 
-Search for: additional feats, feat expansions, level curve mods (level 13-20), progression reworks.
-Target: 2-3 feat/progression mods.
+Search for: additional feats, feat expansions, level curve mods (level 13-20 unlock), progression reworks.
+Verify and write entries under "Feats & Progression".
 
-- [ ] **Step 4: Verify and write entries**
-
-Same verification process. Write into guide/05-wave-1-modlist.md.
-
-- [ ] **Step 5: Commit**
+- [ ] **Step 4: Commit — Wave 1 mods batch 2**
 
 ```bash
-git add baldurs-gate-3/guide/05-wave-1-modlist.md baldurs-gate-3/STATUS.md
-git commit -m "feat(bg3): add Wave 1 classes, spells, and feats mods"
+git add baldurs-gate-3/guide/05-wave-1-modlist.md baldurs-gate-3/STATUS.md baldurs-gate-3/mod-ideas.md
+git commit -m "feat(bg3): add Wave 1 mods — classes, spells, feats"
 ```
 
 ---
 
-### Task 10: Research Wave 1 Mods — Equipment, Companions, Quests, Combat, Mechanics, Romance, UI/QoL
+### Task 6: Research Wave 1 Mods — Equipment, Companions, Quests
 
 **Files:**
 - Modify: `guide/05-wave-1-modlist.md`
 - Modify: `STATUS.md`
+- Modify: `mod-ideas.md`
 
-This is the largest research task — covering the remaining 7 categories.
-Target: 15-25 mods total.
+**Target:** 8-14 mods across 3 categories.
 
-- [ ] **Step 1: Research Equipment mods**
+- [ ] **Step 1: Research Equipment mods (target: 3-5)**
 
-Search for: weapon packs, armor packs, clothing, camp clothes, accessories, transmog.
-Target: 3-5 equipment mods.
+Search for: weapon packs, armor packs, clothing, camp clothes, accessories, transmog (appearance change without stat loss).
+Verify and write entries under "Equipment".
 
-- [ ] **Step 2: Research Companions & NPCs mods**
+- [ ] **Step 2: Research Companions & NPCs mods (target: 3-5)**
 
-Search for: companion appearance edits, new companions, NPC visual overhauls, companion AI.
-Target: 3-5 companion/NPC mods.
+Search for: companion appearance edits, new companions, NPC visual overhauls, companion AI improvements, companion dialogue expansions.
+Verify and write entries under "Companions & NPCs".
 
-- [ ] **Step 3: Research Quests & Areas mods**
+- [ ] **Step 3: Research Quests & Areas mods (target: 2-4)**
 
-Search for: new quests, area expansions, dungeon mods, new locations.
-Target: 2-4 quest/area mods.
+Search for: new quests, area expansions, dungeon mods, new locations, Act 1/2/3 expansions.
+Verify and write entries under "Quests & Areas".
 
-- [ ] **Step 4: Research Combat & Difficulty mods**
-
-Search for: combat AI improvements, encounter expansions, difficulty mods, enemy variety, legendary actions.
-Target: 3-5 combat mods.
-
-- [ ] **Step 5: Research Gameplay Mechanics mods**
-
-Search for: new mechanics, rule changes, 5e rule implementations, crafting expansions, camping changes.
-Target: 3-5 mechanic mods.
-
-- [ ] **Step 6: Research Romance & Adult mods**
-
-Search for: enhanced romance scenes, body model improvements (not explicit porn), relationship system expansions.
-Use Playwright browser since adult mods may have age gates.
-Target: 3-5 romance/adult mods.
-
-- [ ] **Step 7: Research additional UI/QoL mods**
-
-Search for: Wave 1 UI/QoL mods that go beyond the basics — advanced inventory management, combat log improvements, build planners in-game.
-Target: 3-5 additional UI/QoL mods.
-
-- [ ] **Step 8: Verify all mods and write entries**
-
-Standard verification. Write all entries into guide/05-wave-1-modlist.md.
-Update STATUS.md with all decisions.
-
-- [ ] **Step 9: Commit**
+- [ ] **Step 4: Commit — Wave 1 mods batch 3**
 
 ```bash
-git add baldurs-gate-3/guide/05-wave-1-modlist.md baldurs-gate-3/STATUS.md
-git commit -m "feat(bg3): add Wave 1 equipment, companions, quests, combat, mechanics, romance, and UI/QoL mods"
+git add baldurs-gate-3/guide/05-wave-1-modlist.md baldurs-gate-3/STATUS.md baldurs-gate-3/mod-ideas.md
+git commit -m "feat(bg3): add Wave 1 mods — equipment, companions, quests"
 ```
 
 ---
 
-### Task 11: Write Wave 1 Advanced Guide
+### Task 7: Research Wave 1 Mods — Combat, Mechanics, Romance, UI/QoL
+
+**Files:**
+- Modify: `guide/05-wave-1-modlist.md`
+- Modify: `STATUS.md`
+- Modify: `mod-ideas.md`
+
+**Target:** 12-20 mods across 4 categories.
+
+- [ ] **Step 1: Research Combat & Difficulty mods (target: 3-5)**
+
+Search for: combat AI improvements, encounter expansions, difficulty mods (Tactician Plus, Honor Mode enhancers), enemy variety, legendary actions expansions, enemy stat increases.
+Must add challenge without being unfair/unbeatable.
+Verify and write entries under "Combat & Difficulty".
+
+- [ ] **Step 2: Research Gameplay Mechanics mods (target: 3-5)**
+
+Search for: new mechanics, 5e rule implementations, crafting expansions, camping system changes, resting changes, inventory system overhauls, party limit adjustments.
+Verify and write entries under "Gameplay Mechanics".
+
+- [ ] **Step 3: Research Romance & Adult mods (target: 3-5)**
+
+Search for: enhanced romance scenes, body model improvements (not explicit porn), relationship system expansions, romance option unlocks (polyamory, more companions).
+If Nexus Mods shows age gate: use Playwright browser to bypass and view mod details.
+Verify and write entries under "Romance & Adult".
+
+- [ ] **Step 4: Research additional UI/QoL mods (target: 3-5)**
+
+Search for: Wave 1 UI/QoL that goes beyond Wave 0 basics — advanced inventory management, combat log improvements, build planners in-game, party formation mods, auto-sorters.
+Verify and write entries under "UI/QoL".
+
+- [ ] **Step 5: Run total mod count check**
+
+Run a quick count on `guide/05-wave-1-modlist.md` — should be 50+ entries.
+If below 50, return to previous tasks and fill gaps.
+
+- [ ] **Step 6: Commit — Wave 1 mods batch 4**
+
+```bash
+git add baldurs-gate-3/guide/05-wave-1-modlist.md baldurs-gate-3/STATUS.md baldurs-gate-3/mod-ideas.md
+git commit -m "feat(bg3): add Wave 1 mods — combat, mechanics, romance, UI/QoL"
+```
+
+---
+
+### Task 8: Determine Load Order & Document Conflicts
+
+**Files:**
+- Modify: `guide/06-load-order.md`
+- Modify: `conflicts-mods.md`
+- Modify: `STATUS.md`
+
+- [ ] **Step 1: Research BG3MM load order conventions**
+
+Using Playwright or Context7, research BG3MM load order best practices:
+- Core/community patches load first
+- UI mods load after patches
+- Graphics mods load after UI
+- Content mods (classes, races, spells) load after graphics
+- Override mods (if any) load last
+
+- [ ] **Step 2: Determine Wave 0 load order**
+
+Based on the mods curated in Task 2, assign load order:
+1. Bug Fixes & Community Patches (always first)
+2. UI Enhancements
+3. Quality of Life
+4. Lightweight Graphics (always last in Wave 0)
+Within each category, order by dependency (mods that others depend on go first).
+
+Write the ordered list in `guide/06-load-order.md` under "Wave 0 Load Order". Format:
+```markdown
+### Wave 0 Load Order
+
+1. **Mod Name** — *(reason for position)*
+2. **Mod Name** — *(reason for position)*
+...
+```
+
+- [ ] **Step 3: Determine Wave 1 load order**
+
+Based on all Wave 1 mods (Tasks 4-7), plus Wave 0 mods (they carry forward), assign load order:
+1. Wave 0 mods in their established order
+2. New mechanics / rule changes
+3. Races / classes / subclasses
+4. Spells / feats
+5. Equipment
+6. Companions / NPCs
+7. Quests / areas
+8. Graphics (last — they override visuals)
+Within each category, order by dependency.
+
+Write the ordered list under "Wave 1 Load Order" with same format.
+
+- [ ] **Step 4: Document conflicts**
+
+Review all mods for overlapping files or known incompatibilities:
+- Two mods modifying the same file → conflict, pick one or document load order resolution
+- Mods with explicit "incompatible with X" notes on Nexus → document
+- Test: cross-reference mod descriptions for mentions of other mods
+
+Write all findings in `conflicts-mods.md` and link from STATUS.md.
+
+- [ ] **Step 5: Commit — Load order & conflicts**
+
+```bash
+git add baldurs-gate-3/guide/06-load-order.md baldurs-gate-3/conflicts-mods.md baldurs-gate-3/STATUS.md
+git commit -m "feat(bg3): determine load order and document conflicts"
+```
+
+---
+
+### Task 9: Write Wave 1 Advanced Guide
 
 **Files:**
 - Modify: `guide/04-wave-1-guide.md`
 
-Fill all `[TODO]` sections. Assumes reader completed Wave 0 and understands basics.
-
 - [ ] **Step 1: Write "Advanced Character Building" section**
 
-Cover: multiclass synergies (e.g., Sorcadin 6/6, Gloomstalker/Assassin, Tempest Cleric/Sorcerer, Bard/Paladin — explain level splits and why they work), feat tier list (S-tier: Alert, Great Weapon Master, Sharpshooter, Tavern Brawler vs. situational vs. trap feats), attribute breakpoints (odd vs. even scores, when to take ASI vs. half-feat), respec timing (best levels to respec, Withers cost).
+Content: multiclass synergies with concrete examples — Sorcadin 6/6 (Paladin auras + Sorcerer metamagic), Gloomstalker/Assassin (first-round burst damage), Tempest Cleric 2 / Storm Sorcerer 10 (maximized lightning damage), Bard 10 / Paladin 2 (Magical Secrets smites). Feat tier list: S-tier (Alert, Great Weapon Master, Sharpshooter, Tavern Brawler), A-tier (War Caster, Resilient: Con, Sentinel, Polearm Master, Dual Wielder), situational vs. trap feats (Actor, Dungeon Delver). Attribute breakpoints: odd vs. even scores, when ASI beats half-feat. Respec timing: levels where build comes online, Withers cost.
 
 - [ ] **Step 2: Write "Deeper Mechanics" section**
 
-Cover: initiative formula (d4 + Dex mod + Alert feat + gear bonuses — how to guarantee going first), surface interactions (create water + lightning = electrified, grease + fire = burning, ice + fire = water, etc. — combo examples), stealth and surprise rounds (how to initiate surprise, which classes benefit most), action surge optimization (Fighter multiclass breakpoints), legendary actions and legendary resistance (boss mechanics, how to burn through LR efficiently — Magic Missile spam, etc.).
+Content: initiative (d4 + Dex + Alert + gear — how to hit 10+ and always go first), surface interactions (Create Water + lightning = electrified, Grease + fire = burning, ice melts into water which can be electrified — full combo chain), stealth and surprise (how to initiate surprise rounds consistently, which classes benefit most — Assassin, Gloomstalker), action surge optimization (Fighter 2 dip breakpoints, what classes gain most from it), legendary actions and resistance (boss teleport to ranged attackers, LR burn strategy — Magic Missile spam forces 3 saves per cast, Monk Stunning Strike forces Con saves).
 
 - [ ] **Step 3: Write "Party Optimization" section**
 
-Cover: role coverage (Face with high Cha + Persuasion/Deception, lockpicker/trap disarmer with Sleight of Hand/Perception, support/healer, control caster, striker), skill monkey builds (Bard/Rogue multiclass with expertise in all key skills), support vs. control vs. striker vs. tank (what each role does, which classes fit each), camp caster buff strategy (hirelings at camp casting Aid, Longstrider, Protection from Poison, Warding Bond, Death Ward, Heroes' Feast on party before leaving camp).
+Content: role coverage (Face — Cha + Persuasion/Deception, lockpicker/trap disarmer — Sleight of Hand/Perception, support/healer, control caster vs. blaster, striker vs. tank), skill monkey builds (Bard/Rogue multiclass with expertise covering all key skills), camp caster buff strategy (hirelings at camp: Aid upcast, Longstrider, Protection from Poison, Warding Bond, Death Ward, Heroes' Feast — all applied before leaving camp, don't need to be in active party).
 
 - [ ] **Step 4: Write "Economy" section**
 
-Cover: gold farming methods (loot everything, sell to vendors with high attitude, pickpocket gold back after trading), vendor refresh mechanics (long rest or level-up resets inventory), pickpocket strategies (guidance, enhance ability, bardic inspiration, turn-based mode, darkness/fog cloud for cover, split gold stacks).
+Content: gold farming (loot everything with weight:value ratio >10:1, sell to vendors after raising attitude to 100% via donations, pickpocket gold back after large trades), vendor refresh (long rest or any character level-up resets inventory — keep a respec-ready hireling for on-demand resets), pickpocket strategy (Guidance + Enhance Ability: Dex + Bardic Inspiration, enter turn-based mode, Darkness/Fog Cloud for cover, split gold stacks into smaller piles to reduce DC).
 
 - [ ] **Step 5: Write "Mod Integration" section**
 
-Cover: how new classes/subclasses from mods interact with base systems (do they use existing spell lists? any compatibility issues?), which mod-added spells are worth picking (damage comparison and utility), how modded difficulty/combat mods change encounter planning (more enemies, smarter AI, higher stats — what adjustments to make).
+Content: how mod-added classes/subclasses interact with base systems (do they use existing spell lists or custom ones? any compatibility issues with base game gear?), which mod-added spells are competitive (compare damage dice and utility to base game options), how combat/difficulty mods change encounter planning (more enemies means AoE value increases, smarter AI means baiting and positioning matter more, higher stats mean save-or-suck spells lose value vs. guaranteed damage).
 
 - [ ] **Step 6: Write "Late-Game & Post-Campaign" section**
 
-Cover: legendary item locations (must-have legendaries and where to find them in Act 3), optimal Act 3 routing (which quests to prioritize for gear/XP before tough fights), epilogue mechanics (what to do before the final point of no return, how endings work).
+Content: legendary item locations (must-have legendaries by build type — Nyrulna for throw builds, Balduran's Giantslayer for STR martials, Markoheshkir for casters, Helldusk Armor for anyone — and where they're found in Act 3), optimal Act 3 routing (Rivington → Wyrm's Crossing → Lower City quest order for efficient XP/gear before difficult fights like House of Grief, House of Hope, Raphael), epilogue mechanics (everything before the Morphic Pool is your last chance — tie up companion quests, final gear check, camp celebration).
 
-- [ ] **Step 7: Commit**
+- [ ] **Step 7: Commit — Wave 1 guide**
 
 ```bash
 git add baldurs-gate-3/guide/04-wave-1-guide.md
@@ -792,28 +878,25 @@ git commit -m "feat(bg3): write Wave 1 advanced guide"
 
 ---
 
-### Task 12: Build PDF Generation Pipeline
+### Task 10: Build PDF Generation Pipeline
 
 **Files:**
 - Modify: `scripts/convert.js` (full implementation)
-- Modify: `build.typ` (full implementation)
-- Modify: `build.bat` (finalize)
+- Create: `build.typ`
+- Modify: `build.bat` (already has full implementation from Task 1)
 - Modify: `guide/00-cover.md` (finalize)
 - Modify: `guide/00-toc.md` (finalize)
 
 - [ ] **Step 1: Look up Typst 0.15 API via Context7 MCP**
 
-Use the Context7 MCP tool to resolve library ID for Typst 0.15 and query the API for:
-- Document setup: page size, margins, fonts, colors
-- How to include images (logo.jpg)
-- How to structure a multi-section document with headings
-- Table of contents generation (`outline` / `table-of-contents`)
-- Custom styling: background colors, text colors, font families
-- How to read/include content from external `.typ` files
+Use Context7 to resolve library ID for Typst and query:
+- Document setup: `#set page()`, `#set text()`, `#set heading()`
+- Image inclusion: `#image("path", width: ...)`
+- Document structure and `#include`
+- Table of contents: `#outline()`
+- Styling: backgrounds, colors, fonts, links
 
-- [ ] **Step 2: Implement scripts/convert.js**
-
-The converter reads each Markdown file from `guide/` and produces a corresponding `.typ` content block in `guide/.typst-cache/`. Conversion rules:
+- [ ] **Step 2: Implement scripts/convert.js (full version)**
 
 ```javascript
 const fs = require('fs');
@@ -826,14 +909,15 @@ if (!fs.existsSync(cacheDir)) {
   fs.mkdirSync(cacheDir, { recursive: true });
 }
 
+// Exclude TOC from conversion (Typst generates it)
 const files = [
   '00-cover.md',
-  '00-toc.md',
   '01-installation.md',
   '02-wave-0-guide.md',
   '03-wave-0-modlist.md',
   '04-wave-1-guide.md',
   '05-wave-1-modlist.md',
+  '06-load-order.md',
 ];
 
 files.forEach(filename => {
@@ -843,59 +927,64 @@ files.forEach(filename => {
     return;
   }
   const md = fs.readFileSync(mdPath, 'utf8');
-  const typst = convertMarkdownToTypst(md, filename);
-  const typPath = path.join(cacheDir, filename.replace('.md', '.typ'));
+  const typst = convertMarkdownToTypst(md);
+  const typFilename = filename.replace('.md', '.typ');
+  const typPath = path.join(cacheDir, typFilename);
   fs.writeFileSync(typPath, typst, 'utf8');
-  console.log(`Converted ${filename} -> ${path.basename(typPath)}`);
+  console.log(`Converted ${filename} -> ${typFilename}`);
 });
 
-function convertMarkdownToTypst(md, filename) {
+console.log(`Conversion complete. ${files.filter(f => {
+  return fs.existsSync(path.join(guideDir, f));
+}).length} files processed.`);
+
+function convertMarkdownToTypst(md) {
   let result = md;
+
+  // Escape backslashes in paths first (before other processing)
+  result = result.replace(/\\/g, '\\\\');
+
+  // IMPORTANT: handle asterisk-based formatting in the right order.
+  // Bold-italic (***text***) before bold (**text**) before italic (*text*)
+
+  // Convert bold-italic: ***text*** -> *_text_* (Typst: bold wrapping italic)
+  result = result.replace(/\*\*\*(.+?)\*\*\*/g, '*_$1_*');
+
+  // Convert bold: **text** or __text__ -> *text* (Typst uses * for strong/bold)
+  result = result.replace(/\*\*(.+?)\*\*/g, '*$1*');
+  result = result.replace(/__(.+?)__/g, '*$1*');
+
+  // Convert italic: *text* or _text_ -> _text_ (Typst uses _ for emphasis/italic)
+  // Only match single asterisks that aren't part of ** or *** (already handled above)
+  result = result.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '_$1_');
 
   // Convert markdown images: ![alt](path) -> #image("path")
   result = result.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, imgPath) => {
     return `#image("${imgPath}")`;
   });
 
-  // Convert markdown links: [text](url) -> #link("url")[text]
+  // Convert markdown links: [text](url) -> #link("url")[text] for HTTP URLs
   result = result.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => {
     if (url.startsWith('http')) {
       return `#link("${url}")[${text}]`;
     }
-    return `[${text}](${url})`; // leave non-http links alone
+    return `[${text}](${url})`;
   });
 
-  // Convert bold: **text** or __text__ -> *text*
-  result = result.replace(/\*\*([^*]+)\*\*/g, '*$1*');
-  result = result.replace(/__([^_]+)__/g, '*$1*');
-
-  // Convert italic: *text* or _text_ (but not ** already handled above)
-  // Skip — Typst uses * for bold and _ for italic
-
-  // Convert headings: # Heading -> = Heading, ## Heading -> == Heading, etc.
+  // Convert headings: # H1 -> = H1, ## H2 -> == H2, etc.
   result = result.replace(/^#### (.+)$/gm, '==== $1');
   result = result.replace(/^### (.+)$/gm, '=== $1');
   result = result.replace(/^## (.+)$/gm, '== $1');
   result = result.replace(/^# (.+)$/gm, '= $1');
 
-  // Convert unordered lists: - item -> - item
-  // Typst uses the same syntax, but needs blank line before lists
+  // Ensure blank lines before lists (Typst requires them)
   result = result.replace(/([^\n])\n- /g, '$1\n\n- ');
 
   // Convert horizontal rules: --- -> #line(length: 100%)
   result = result.replace(/^---$/gm, '#line(length: 100%)');
 
-  // Convert bold-italic: ***text*** -> *_text_*
-  result = result.replace(/\*\*\*([^*]+)\*\*\*/g, '*_$1_*');
-
-  // Escape Typst special characters in non-code text
-  // # $ are significant in Typst — skip for now, handle if issues arise
-
-  // Wrap content in a section for include
   return result;
 }
-
-console.log('Conversion complete.');
 ```
 
 - [ ] **Step 3: Implement build.typ**
@@ -909,13 +998,13 @@ console.log('Conversion complete.');
   margin: (top: 2.5cm, bottom: 2cm, left: 2cm, right: 2cm),
 )
 
+#set page(fill: rgb("#1a1220"))
+
 #set text(
   font: ("Linux Libertine", "Times New Roman", serif),
   size: 11pt,
   fill: rgb("#e8dcc8"),
 )
-
-#set page(fill: rgb("#1a1220"))
 
 #set heading(
   fill: rgb("#d4a843"),
@@ -923,7 +1012,7 @@ console.log('Conversion complete.');
 
 #show link: underline
 
-// Cover page
+// ===== COVER PAGE =====
 #align(center)[
   #v(4cm)
   #image("assets/logo.jpg", width: 6cm)
@@ -941,7 +1030,7 @@ console.log('Conversion complete.');
 
 #pagebreak()
 
-// Table of Contents
+// ===== TABLE OF CONTENTS =====
 #outline(
   title: [Table of Contents],
   depth: 2,
@@ -950,8 +1039,12 @@ console.log('Conversion complete.');
 
 #pagebreak()
 
-// Include all guide content
-#include "guide/.typst-cache/00-cover-body.typ"
+// ===== CONTENT =====
+// Content loaded from pre-converted .typ files in guide/.typst-cache/
+// The convert.js script produces these from guide/*.md
+
+#include "guide/.typst-cache/00-cover.typ"
+#pagebreak()
 #include "guide/.typst-cache/01-installation.typ"
 #pagebreak()
 #include "guide/.typst-cache/02-wave-0-guide.typ"
@@ -961,122 +1054,145 @@ console.log('Conversion complete.');
 #include "guide/.typst-cache/04-wave-1-guide.typ"
 #pagebreak()
 #include "guide/.typst-cache/05-wave-1-modlist.typ"
+#pagebreak()
+#include "guide/.typst-cache/06-load-order.typ"
 ```
 
-- [ ] **Step 4: Run build.bat and verify PDF generation**
+Note: `00-toc.md` is intentionally excluded from conversion — Typst generates the real TOC via `#outline()`.
+
+- [ ] **Step 4: Update guide/00-cover.md**
+
+Since the Typst cover already renders everything, trim 00-cover.md to just the key info (it still needs to exist for the typ include reference):
+
+```markdown
+= Mythic Crucible
+
+A Baldur's Gate 3 Modlist & Guide
+
+Patch 8 / Hotfix #36 — April 2025
+
+BG3 Mod Manager (BG3MM)
+
+Curated by Emperor Jimmu
+```
+
+Noting: the converted `00-cover.typ` will render this as secondary cover content after the main cover page — this is intentional as an inside-cover blurb.
+
+- [ ] **Step 5: Update guide/00-toc.md**
+
+```markdown
+= Table of Contents
+
+The table of contents is generated automatically by Typst during PDF build via the `#outline()` function in `build.typ`.
+```
+
+- [ ] **Step 6: Verify PDF pipeline**
 
 Run: `build.bat`
-Expected: PDF created at `output/mythic-crucible.pdf`
-Check: PDF opens, all pages present, styling applies, TOC generated.
-Fix any conversion or compilation errors.
+Expected output:
+```
+=== Mythic Crucible PDF Builder ===
 
-- [ ] **Step 5: Commit**
+[1/4] Checking prerequisites...
+Typst and Node.js found.
+
+[2/4] Cleaning previous build cache...
+Cleaned build cache.
+
+[3/4] Converting Markdown to Typst...
+Converted 00-cover.md -> 00-cover.typ
+Converted 01-installation.md -> 01-installation.typ
+Converted 02-wave-0-guide.md -> 02-wave-0-guide.typ
+Converted 03-wave-0-modlist.md -> 03-wave-0-modlist.typ
+Converted 04-wave-1-guide.md -> 04-wave-1-guide.typ
+Converted 05-wave-1-modlist.md -> 05-wave-1-modlist.typ
+Converted 06-load-order.md -> 06-load-order.typ
+Conversion complete. 7 files processed.
+
+[4/4] Compiling PDF with Typst...
+
+=== Done! PDF saved to output/mythic-crucible.pdf ===
+```
+
+If Typst reports errors: fix the offending `.md` file (likely unescaped special characters or malformed markdown) and re-run.
+
+- [ ] **Step 7: Commit — PDF pipeline**
 
 ```bash
-git add baldurs-gate-3/scripts/convert.js baldurs-gate-3/build.typ baldurs-gate-3/build.bat baldurs-gate-3/guide/00-cover.md baldurs-gate-3/guide/00-toc.md
+git add baldurs-gate-3/scripts/convert.js baldurs-gate-3/scripts/clean.js baldurs-gate-3/build.typ baldurs-gate-3/build.bat baldurs-gate-3/guide/00-cover.md baldurs-gate-3/guide/00-toc.md
 git commit -m "feat(bg3): implement PDF build pipeline with Typst"
 ```
 
 ---
 
-### Task 13: Final Polish — Table of Contents, Cover, STATUS.md Cleanup
+### Task 11: Final Polish & Verification
 
 **Files:**
-- Modify: `guide/00-cover.md` (finalize cover content)
-- Modify: `guide/00-toc.md` (add outline note)
 - Modify: `README.md` (finalize)
-- Modify: `STATUS.md` (final review and cleanup)
-
-- [ ] **Step 1: Finalize cover content**
-
-Update `guide/00-cover.md` with final cover text matching the Typst cover page styling.
-
-- [ ] **Step 2: Update TOC note**
-
-Update `guide/00-toc.md` to note that Typst generates the real TOC:
-
-```markdown
-# Table of Contents
-
-The table of contents is generated automatically by Typst during PDF build. See `build.typ` for the `#outline()` configuration.
-```
-
-- [ ] **Step 3: Finalize README.md**
-
-Ensure README has:
-- Modlist name and description
-- Wave overview table
-- Quick-start instructions
-- Link to PDF
-- Credit/author line
-
-- [ ] **Step 4: Review and clean STATUS.md**
-
-Verify all accepted mods are logged with dates and notes.
-Verify all rejected mods are logged with reasons.
-Ensure no TBD/TODO placeholders remain.
-
-- [ ] **Step 5: Full build verification**
-
-Run: `build.bat`
-Verify: PDF renders without errors, all pages present, styling consistent, TOC correct, cover shows logo and title.
-Open the PDF and do a visual spot-check: headings, links, images, mod entries format.
-
-- [ ] **Step 6: Commit**
-
-```bash
-git add baldurs-gate-3/
-git commit -m "feat(bg3): final polish — cover, TOC, README, STATUS cleanup"
-```
-
----
-
-### Task 14: Final Verification & Release Commit
-
-**Files:**
+- Modify: `STATUS.md` (final review)
 - All project files (verification only)
 
-- [ ] **Step 1: Verify all required files exist**
+- [ ] **Step 1: Finalize README.md**
 
-Run: `dir /s /b baldurs-gate-3\`
-Confirm:
-- `AGENTS.md` ✓
-- `README.md` ✓
-- `STATUS.md` ✓
-- `mod-ideas.md` ✓
-- `conflicts-mods.md` ✓
-- `build.bat` ✓
-- `build.typ` ✓
-- `scripts/convert.js` ✓
-- `guide/00-cover.md` ✓
-- `guide/00-toc.md` ✓
-- `guide/01-installation.md` ✓
-- `guide/02-wave-0-guide.md` ✓
-- `guide/03-wave-0-modlist.md` ✓
-- `guide/04-wave-1-guide.md` ✓
-- `guide/05-wave-1-modlist.md` ✓
-- `output/mythic-crucible.pdf` ✓
-- `assets/logo.jpg` ✓
-- `.gitignore` ✓
+Ensure README contains:
+- Modlist name "Mythic Crucible" and description
+- Game version: Patch 8 / Hotfix #36
+- Wave overview table with mod counts
+- Quick-start: 3-step guide linking to installation and wave guides
+- Reference to PDF: `output/mythic-crucible.pdf`
+- Credit: "Curated by Emperor Jimmu"
+- Link to this repo
 
-- [ ] **Step 2: Verify mod counts**
+- [ ] **Step 2: STATUS.md cleanup**
 
-Run a content check:
-- Wave 0 modlist should have ~10-20 mod entries (check `guide/03-wave-0-modlist.md`)
-- Wave 1 modlist should have 50+ mod entries (check `guide/05-wave-1-modlist.md`)
+Review all entries:
+- Every accepted mod has: name, wave, category, decision date, notes
+- Every rejected mod has: name, reason, date
+- No [TODO]/[TBD] placeholders
+- Design decisions section is up to date
 
-- [ ] **Step 3: Verify all mod URLs are real**
+- [ ] **Step 3: Verify file manifest**
 
-Spot-check 5 random mod URLs from each wave — open in browser to confirm they resolve.
+Run: `Get-ChildItem -Recurse -Name baldurs-gate-3/`
+Confirm all expected files exist:
+```
+AGENTS.md, README.md, STATUS.md, mod-ideas.md, conflicts-mods.md
+build.bat, build.typ, .gitignore
+guide/00-cover.md, guide/00-toc.md, guide/01-installation.md
+guide/02-wave-0-guide.md, guide/03-wave-0-modlist.md
+guide/04-wave-1-guide.md, guide/05-wave-1-modlist.md, guide/06-load-order.md
+scripts/convert.js, scripts/clean.js
+assets/logo.jpg
+```
 
-- [ ] **Step 4: Verify no fabrication**
+- [ ] **Step 4: Verify mod counts**
 
-Review STATUS.md — every accepted mod should be traceable to research (date, decision notes).
-If any mod lacks a STATUS.md entry, add it.
+Run a programmatic count (using grep or Node.js):
+- `guide/03-wave-0-modlist.md`: count lines starting with `### [` (each is a mod entry) — confirm 10-20
+- `guide/05-wave-1-modlist.md`: same count — confirm 50+
 
-- [ ] **Step 5: Final commit**
+- [ ] **Step 5: Verify all mod URLs are reachable**
+
+Run a Node.js script that extracts all Nexus Mods URLs from both modlist files and does a HEAD request to each. Any that return 404 or timeout: flag for review.
+
+- [ ] **Step 6: Verify no fabricated entries**
+
+Cross-check: every mod entry in the guide files should have a corresponding row in STATUS.md.
+Run a script to extract mod names from guide files and compare against STATUS.md table.
+
+- [ ] **Step 7: Full PDF build and visual spot-check**
+
+Run: `build.bat`
+Open `output/mythic-crucible.pdf`:
+- Cover renders with logo, title, colors
+- TOC has correct entries
+- All pages have consistent styling (dark background, gold headings, cream text)
+- No broken image references, no raw markdown leaking through
+- Mod entries are readable with proper formatting
+
+- [ ] **Step 8: Commit — Final polish**
 
 ```bash
 git add baldurs-gate-3/
-git commit -m "feat(bg3): Mythic Crucible — complete modlist and guide"
+git commit -m "feat(bg3): final polish and verification — Mythic Crucible complete"
 ```
