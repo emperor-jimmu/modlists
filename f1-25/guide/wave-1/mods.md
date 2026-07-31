@@ -1,4 +1,6 @@
-### Wave 1 Mods — Strategy, Cameras, Telemetry, AI, Liveries
+### Wave 1 Mods
+
+*Strategy, Cameras, Telemetry, AI, Liveries*
 
 Wave 1 introduces your first gameplay mods. These enhance the experience without fundamentally changing the game's mechanics.
 
