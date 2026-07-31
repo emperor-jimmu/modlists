@@ -8,6 +8,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 |-----------------|---------------------------------|----------------------------------------------------|--------|
 | Arma 3          | Arma 3                          | [`arma3/`](./arma3/)                               | Active |
 | Assetto Corsa   | Assetto Corsa                   | [`asseto-corsa/`](./asseto-corsa/)                 | Active |
+| Baldur's Gate 3 | Baldur's Gate 3                 | [`baldurs-gate-3/`](./baldurs-gate-3/)             | Active |
 | CK3             | Crusader Kings 3                | [`ck3/`](./ck3/)                                   | Active |
 | Minecraft       | Minecraft (NeoForge 1.21.1)     | [`minecraft/`](./minecraft/)                       | Active |
 | Project Zomboid | Project Zomboid                 | [`project-zomboid/`](./project-zomboid/)           | Active |
@@ -24,6 +25,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Shogun 2        | Total War: Shogun 2             | [`shogun2/`](./shogun2/)                           | Active |
 | RimWorld        | RimWorld                        | [`rimworld/`](./rimworld/)                         | Active |
 | Starfield       | Starfield                       | [`starfield/`](./starfield/)                       | Active |
+| Starbound       | Starbound                       | [`starbound/`](./starbound/)                       | Active |
 | Stardew Valley  | Stardew Valley                  | [`stardew-valley/`](./stardew-valley/)             | Active |
 | Stellaris       | Stellaris                       | [`stellaris/`](./stellaris/)                       | Active |
 | Terraria        | Terraria                        | [`terraria/`](./terraria/)                         | Active |
@@ -84,6 +86,9 @@ arma3/                  # Arma 3 modlist
 asseto-corsa/           # Assetto Corsa modlist
 ├── AGENTS.md
 └── ...
+baldurs-gate-3/         # Baldur's Gate 3 modlist
+├── AGENTS.md
+└── ...
 ck3/                    # Crusader Kings 3 modlist
 ├── AGENTS.md
 └── ...
@@ -133,6 +138,9 @@ shogun2/                # Total War: Shogun 2 modlist
 ├── AGENTS.md
 └── ...
 starfield/              # Starfield modlist
+├── AGENTS.md
+└── ...
+starbound/              # Starbound modlist
 ├── AGENTS.md
 └── ...
 stardew-valley/         # Stardew Valley modlist

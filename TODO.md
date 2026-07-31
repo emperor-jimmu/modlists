@@ -1,7 +1,7 @@
 # TODO - games to add a modlist for
 
-[*] 0. Starbound
-[ ] 1. Baldur's gate III
+[x] 0. Starbound
+[*] 1. Baldur's gate III
 [ ] 2. F1 25
 [ ] 3. AMS2
 [ ] 4. Fallout 4
@@ -11,3 +11,5 @@
 [ ] 8. The Elder Scrolls IV: Oblivion
 [ ] 9. X-Plane 12
 [ ] 10. XCOM 2
+[ ] 11. Derail Valley
+[ ] 12. Open Rails
