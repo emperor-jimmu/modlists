@@ -95,7 +95,7 @@ Write-Host "Step [4/4]: Compiling PDF..." -ForegroundColor Yellow
 $templatesDir = Join-Path $projectRoot "templates"
 try {
     Push-Location $templatesDir
-    $result = typst compile guide.typ $outputFile 2>&1
+    $result = typst compile --root $projectRoot guide.typ $outputFile 2>&1
     if ($LASTEXITCODE -ne 0) {
         Write-Host "ERROR: Typst compilation failed:" -ForegroundColor Red
         Write-Host $result -ForegroundColor Red
