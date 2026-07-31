@@ -228,7 +228,7 @@
 
 #mod-entry(
   name: "Avian Tipped Hair",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2946573701",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2920080942",
   category: "Races",
   version: "2024",
   dependencies: (),

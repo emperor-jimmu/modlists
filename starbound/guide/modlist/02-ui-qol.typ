@@ -384,7 +384,7 @@
 
 #mod-entry(
   name: "tech ui highlight fix but good",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3357067478",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2849237095",
   category: "Fix",
   version: "2025",
   dependencies: (),

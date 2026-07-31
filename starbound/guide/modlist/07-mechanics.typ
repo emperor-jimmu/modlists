@@ -116,7 +116,7 @@
 
 #mod-entry(
   name: "Upgraded Upgrades",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2606292468",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=823739640",
   category: "Mechanics",
   version: "2024",
   dependencies: (),
@@ -149,7 +149,7 @@
 
 #mod-entry(
   name: "Enable Monster Special Attacks Revise",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2957696214",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1107121436",
   category: "Mechanics",
   version: "2024",
   dependencies: (),
