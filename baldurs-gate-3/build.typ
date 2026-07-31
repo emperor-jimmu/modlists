@@ -3,14 +3,16 @@
 
 #set page(
   paper: "a4",
-  margin: (top: 2.5cm, bottom: 2cm, left: 2cm, right: 2cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2cm, right: 2cm),
+  numbering: "1",
+  number-align: center,
 )
 
 #set page(fill: rgb("#1a1220"))
 
 #set text(
   font: ("Times New Roman"),
-  size: 11pt,
+  size: 12pt,
   fill: rgb("#e8dcc8"),
 )
 

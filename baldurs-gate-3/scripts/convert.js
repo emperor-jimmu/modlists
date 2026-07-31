@@ -86,13 +86,101 @@ function convertMarkdownToTypst(md) {
   // Blank lines before lists
   result = result.replace(/([^\n])\n- /g, '$1\n\n- ');
 
+  // Convert markdown tables to Typst tables
+  result = convertTables(result);
+
   // Horizontal rules
   result = result.replace(/^---$/gm, '#line(length: 100%)');
 
   // Inline code: `code` -> #raw("code")
+  // Skip code that's inside already-converted table blocks
   result = result.replace(/`([^`\n]+)`/g, (match, code) => {
     return `#raw("${code.replace(/"/g, '\\"')}")`;
   });
 
   return result;
+}
+
+function convertTables(md) {
+  // Split into lines
+  const lines = md.split('\n');
+  const output = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Check if this line starts a table (starts and ends with |)
+    if (/^\|.+\|$/.test(line.trim()) && i + 1 < lines.length) {
+      const nextLine = lines[i + 1];
+      // Check if next line is a separator row (| --- | --- |)
+      if (/^\|[\s\-:]+\|[\s\-:|]+\|$/.test(nextLine.trim())) {
+        // We found a table! Collect all rows
+        const headerRow = line;
+        const dataRows = [];
+
+        let j = i + 2;
+        while (j < lines.length && /^\|.+\|$/.test(lines[j].trim())) {
+          dataRows.push(lines[j]);
+          j++;
+        }
+
+        // Convert to Typst table
+        const headerCells = headerRow.split('|')
+          .map(c => c.trim())
+          .filter(c => c.length > 0);
+
+        const numColumns = headerCells.length;
+
+        // Build the Typst table
+        let tableCode = `#table(\n  columns: ${numColumns},\n`;
+
+        // Header row
+        const headerContent = headerCells.map(c => `[${escapeTypst(c)}]`).join(', ');
+        tableCode += `  table.header(${headerContent}),\n`;
+
+        // Data rows
+        for (const row of dataRows) {
+          const cells = row.split('|')
+            .map(c => c.trim())
+            .filter((c, idx) => idx > 0 && idx <= numColumns); // skip leading empty from split
+
+          // If the first split element is empty (from leading |), shift
+          const adjustedCells = row.split('|').map(c => c.trim()).filter(c => c.length > 0);
+
+          // Ensure we have the right number of columns
+          const rowCells = [];
+          for (let k = 0; k < numColumns && k < adjustedCells.length; k++) {
+            rowCells.push(`[${escapeTypst(adjustedCells[k])}]`);
+          }
+          // Pad if needed
+          while (rowCells.length < numColumns) {
+            rowCells.push('[]');
+          }
+
+          tableCode += `  ${rowCells.join(', ')},\n`;
+        }
+
+        tableCode += ')';
+        output.push(tableCode);
+        output.push(''); // blank line after table
+
+        i = j;
+        continue;
+      }
+    }
+
+    output.push(line);
+    i++;
+  }
+
+  return output.join('\n');
+}
+
+function escapeTypst(text) {
+  // Remove bold/italic markers that our converter already processed
+  // Escape # characters that aren't part of Typst functions
+  return text
+    .replace(/\\/g, '\\\\')
+    .replace(/#(?!\w+\()/g, '\\#');
 }
