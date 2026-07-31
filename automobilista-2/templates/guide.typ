@@ -20,4 +20,8 @@
 #pagebreak()
 #cmarker.render(read("../guide/02-wave-1-national.md"))
 #pagebreak()
+#cmarker.render(read("../guide/03-wave-2-international.md"))
+#pagebreak()
+#cmarker.render(read("../guide/04-wave-3-championship.md"))
+#pagebreak()
 #cmarker.render(read("../guide/appendix-glossary.md"))
