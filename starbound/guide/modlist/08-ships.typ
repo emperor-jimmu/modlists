@@ -1,4 +1,4 @@
-#import "../../lib.typ": mod-entry
+#import "../../lib.typ": mod-entry, warning
 
 == Ships & Travel
 
@@ -39,7 +39,7 @@
 
 #mod-entry(
   name: "Mech Overhaul",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3433865946",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1654947569",
   category: "Ships",
   version: "2024",
   dependencies: (),
@@ -54,7 +54,7 @@
 
 #mod-entry(
   name: "Station Upgrade Modules!",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3241437922",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3034913399",
   category: "Ships",
   version: "2024",
   dependencies: (),

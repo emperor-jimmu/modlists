@@ -118,7 +118,7 @@
 
 #mod-entry(
   name: "[OSB] Light Limiter",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3365188864",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3470727854",
   category: "Graphics",
   version: "2024",
   dependencies: (),
@@ -317,7 +317,7 @@
 
 #mod-entry(
   name: "no green teleport glow",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2797853231",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3413413297",
   category: "Graphics",
   version: "2024",
   dependencies: (),
@@ -361,7 +361,7 @@
 
 #mod-entry(
   name: "Removed Hit Indicator",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3192512369",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3431257707",
   category: "Graphics",
   version: "2024",
   dependencies: (),
@@ -398,7 +398,7 @@
 
 #mod-entry(
   name: "nuggubs' Mega Mod - Vanilla Tweaks",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3259474764",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3175132253",
   category: "Graphics",
   version: "2024",
   dependencies: (),

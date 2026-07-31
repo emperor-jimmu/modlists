@@ -318,7 +318,7 @@
 
 #mod-entry(
   name: "Stardust Core Lite",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010521475",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2512589532",
   category: "Library",
   version: "2024",
   dependencies: (),
@@ -340,7 +340,7 @@
 
 #mod-entry(
   name: "Classic Quickbar",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010595372",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2957136802",
   category: "UI",
   version: "2024",
   dependencies: ("Stardust Core Lite",),
@@ -351,7 +351,7 @@
 
 #mod-entry(
   name: "Skippable Cinematics",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=730116342",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=729428037",
   category: "QoL",
   version: "2024",
   dependencies: (),
@@ -511,7 +511,7 @@
 
 #mod-entry(
   name: "Quick Stack Gun [OpenStarbound Fix]",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3501752811",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3149193954",
   category: "Fix",
   version: "2025",
   dependencies: ("Quick Stack Gun",),

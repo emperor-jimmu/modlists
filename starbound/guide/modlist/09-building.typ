@@ -17,7 +17,7 @@
 
 #mod-entry(
   name: "Growing Trays!",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3249050332",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2574257768",
   category: "Building",
   version: "2024",
   dependencies: (),

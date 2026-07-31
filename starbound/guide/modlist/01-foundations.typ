@@ -66,7 +66,7 @@
 
 #mod-entry(
   name: "Fixed Critters",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2809593202",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1119973779",
   category: "Bugfix",
   version: "2024",
   dependencies: (),

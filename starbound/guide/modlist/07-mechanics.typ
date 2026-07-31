@@ -61,7 +61,7 @@
 
 #mod-entry(
   name: "Improved Swim Physics!",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3280376138",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1944652363",
   category: "Mechanics",
   version: "2024",
   dependencies: (),
@@ -83,7 +83,7 @@
 
 #mod-entry(
   name: "Swap Augments!",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3251467535",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2967291460",
   category: "Mechanics",
   version: "2024",
   dependencies: (),
@@ -127,7 +127,7 @@
 
 #mod-entry(
   name: "Essential Vanilla Crafting Stations",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2856695667",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3430718835",
   category: "Mechanics",
   version: "2024",
   dependencies: (),
@@ -138,7 +138,7 @@
 
 #mod-entry(
   name: "Lexi's Automation",
-  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3468785533",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3673481087",
   category: "Mechanics",
   version: "2025",
   dependencies: ("Stardust Core Lite",),
