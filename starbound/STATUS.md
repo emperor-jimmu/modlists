@@ -7,13 +7,14 @@
 - [2026-07-31] **Elithian Races and Avali (Triage) adopted.** *Reasoning:* Well-established race mods with FU patches. Save-dependent, but FU already makes this a one-way commitment.
 - [2026-07-31] **Two-wave structure (superseded).** Replaced by single-wave design on 2026-07-31.
 - [2026-07-31] **Typst for PDF generation.** *Reasoning:* Modern, fast, professional. No markdown conversion needed.
+- [2026-07-31] **Cross-review of ShyDispatch Starbound Starburst Pack (3678371749) completed.** *Reasoning:* 96 mods adopted across all categories, 18 rejected as FU-incompatible or Starburst-dependent. Major content gains: Arcana, K'Rakoth, Shellguard, Project Irisil, Galactic Dungeons. New races: Saturnians, De'nelaun, Scyphojel, NostOS. Key QoL adds: Lagless Pixel Printer, Compact Crafting, Planet Search, Improved Swim Physics.
 - [2026-07-31] **Steam Workshop as primary mod source.** *Reasoning:* Largest Starbound mod collection.
 - [2026-07-31] **SBMM by korsir as mod manager.** *Reasoning:* User-specified.
 - [2026-07-31] **H2 for mod categories, H1 for prose chapters.** *Reasoning:* Avoids unwanted page breaks. Template controls layout.
 - [2026-07-31] **Text labels (TIP/CONCEPT/WARNING) instead of emoji in callouts.** *Reasoning:* Emoji font coverage unreliable in PDF.
 - [2026-07-31] **--font-path in build script.** *Reasoning:* Ensures bundled fonts load regardless of system state.
 
-## Adopted Mods (57 total)
+## Adopted Mods (157 total)
 
 ### Foundations (4)
 - Starbound Patch Project (1543219534)
@@ -86,9 +87,124 @@
 - [OSB] Universal BYOS Patcher (3648814036)
 - [OpenSB] Ztarbound S.A.I.L. All-in-One Race Support (3506162421)
 - More Teleportz (1543782525)
+- Mech Overhaul (3433865946)
+- Station Upgrade Modules! (3241437922) — ⚠ UNVERIFIED: verify FU station compatibility
 
-### Building (1)
+### Building (1 → 10)
 - Plushbound (2959854988)
+- Growing Trays! (3249050332)
+- Placeable Dynamic FTL Drive (1447161091)
+- Better Logs (2757262238)
+- Natural Stone (2757262169)
+- Transluscent Paper Screen Walls (3296575118)
+- Compact Colony Deeds (2832774002)
+- Compact Avali Colony Deeds (2869908047)
+- Compact Elithian Colony Deeds (2869908370)
+
+## Cross-Review Adoptions — ShyDispatch Starbound Starburst Pack (96 added)
+
+### [2026-07-31] Cross-review of ShyDispatch Starbound Starburst Pack completed.
+**Source:** https://steamcommunity.com/sharedfiles/filedetails/?id=3678371749
+**Result:** 96 mods adopted, 18 rejected as FU-incompatible or Starburst-dependent.
+
+### Foundations (+3)
+- OmeLib (2875423997)
+- Fixed Critters (2809593202)
+- Bug Spawn Improvement (2557634814)
+
+### UI & QoL (+16)
+- Lagless Pixel Printer! (3256653058)
+- Compact Crafting! (3276508903)
+- Auto Trash (2842172286)
+- Planet Search (3031798952)
+- [OSB] Unde Venis (3230765544)
+- Extended Teleportation Dialog (2223497181)
+- Collection numberer (3309982462)
+- Hoarder's Inventory (3313741619) — ⚠ FRESH CHARACTERS ONLY
+- Infiniter Inventory (3290989094)
+- Stardust Core Lite (3010521475)
+- [OSB] Beta Hotbar! (3248499283)
+- Classic Quickbar (3010595372) — pick one: Beta Hotbar OR Classic Quickbar
+- Skippable Cinematics (730116342)
+- No Tech Quest (729773412)
+- Skippable Mech Quest (3065492221)
+- tech ui highlight fix but good (3357067478)
+- Hiraki Corale Codex Tab (2109841611)
+
+### Graphics (+30)
+- Dramatic Terrain (3221803906)
+- Tanz Lighting Overhaul (796477658)
+- [OSB] Light Limiter (3365188864)
+- Dramatic Deaths (2986846832)
+- Community Clothing Gathering (2959932529)
+- Outpost NPC Preserver (3342129736)
+- Fixed Helmets (2524165788)
+- Smaller Helmets (3002492771)
+- Familiar Faces Sail (2995384363)
+- Beta Caretaker (2961662814)
+- Glitch Lights Full Bright (2440033332) — requires Futara's Full Bright Shader
+- Armor Lights Full Bright (2990758782) — requires Futara's Full Bright Shader
+- NostOS Full Bright (3271347905) — requires Futara's Full Bright Shader
+- Snuggets Glow (2869836388)
+- Slimeblock Fix (2892903717)
+- bomb resprite (3297672690)
+- Coherent Sandstone Statues (3301035634)
+- Less ugly planet cores (2900510981)
+- Remixed Star Names (2852455237)
+- no green teleport glow (2797853231)
+- (TanzLO) Dark Player Aura (2426884369)
+- No Highlights On Inspected Objects (1764614999)
+- Ship Teleporter Deflicker (3292348201)
+- Removed Hit Indicator (3192512369)
+- Removed Healing Particles (3192513463)
+- Novakid+ Respawn (3314136480)
+- nuggubs' Mega Mod - Vanilla Tweaks (3259474764) — conflicts with Vanilla+; pick one
+
+### Audio (+1)
+- Avali sounds (2971968578)
+
+### Races (+11)
+- SP Race Extender (3034688280)
+- OmeLib (2875423997) — library, also in Foundations
+- Race Traits (2875442705)
+- The Saturnians (2422986190)
+- The Nomadic De'nelaun (2875406781)
+- Scyphojel, Space Jellyfish! (2868908590)
+- The NostOS Race (2875413382)
+- Improved Avali Colors (3005344858)
+- Alternative Avali Head (3262126439)
+- Avali Sprite Fix (3186146100)
+- Avian Tipped Hair (2946573701)
+- Nuu Descriptions (3253573535)
+
+### Content (+13)
+- Arcana (2359135864)
+- K'Rakoth Mod (2761528375)
+- Shellguard: Starbound Expansion Remastered (1590588444)
+- Project Irisil (2912817589)
+- Galactic Dungeons (1890395068)
+- GyroJets! (2968046825)
+- More NPC Ships (2836719652)
+- Neb's Snails! (3126981954)
+- Less Dead Moons - Moon Dungeons (3013176449)
+- Story Disabler (2803873905)
+- Novakid Codices (2109845614)
+- The Bookstore (2464486703)
+- Hiraki Corale's Book Store (3271725764)
+
+### Mechanics (+11)
+- Improved Swim Physics! (3280376138)
+- Melee Aiming (2201034764)
+- Swap Augments! (3251467535)
+- Combinable Augments (3075840777) — ⚠ verify no FU augment system overlap
+- EPP Effect Extractor (3127973707)
+- Upgraded Upgrades (2606292468)
+- Essential Vanilla Crafting Stations (2856695667)
+- Lexi's Automation (3468785533)
+- Enable Monster Special Attacks Revise (2957696214)
+- Space Enemy Health Reduction (3005344858)
+- Mech Overhaul (3433865946) — listed in Ships
+- Station Upgrade Modules! (3241437922) — ⚠ listed in Ships, verify FU station compat
 
 ## Rejected Mods
 - **[Enhanced Storage Simplified](https://steamcommunity.com/sharedfiles/filedetails/?id=3430660057):** Redundant — Enhanced Storage with the [OSB] Cumulative Patch provides the same benefit.
@@ -104,10 +220,32 @@
 - **[Hop On Shops](https://steamcommunity.com/sharedfiles/filedetails/?id=960708990):** Dropped per user decision.
 - **[$99.99 Blocks](https://steamcommunity.com/sharedfiles/filedetails/?id=1474034898):** Dropped per user decision.
 
+### ShyDispatch Cross-Review Rejections (18)
+- **[Betabound: Vanilla Expanded!](https://steamcommunity.com/sharedfiles/filedetails/?id=729561416):** FU-incompatible. FU already expands vanilla systems — Betabound directly overlaps.
+- **[Vanilla Crafting Menu (Betabound)](https://steamcommunity.com/sharedfiles/filedetails/?id=3251097480):** Only relevant with Betabound.
+- **[Maple32](https://steamcommunity.com/sharedfiles/filedetails/?id=2422986190):** Major biome mod — FU has its own world generation. Likely conflicts.
+- **[Many Tabs](https://steamcommunity.com/sharedfiles/filedetails/?id=1119086325):** FU has its own crafting tab system. Overlap likely.
+- **[Oceanic world caves Reworked](https://steamcommunity.com/sharedfiles/filedetails/?id=2897241973):** FU has its own ocean cave generation.
+- **[Project Ancient Cosmos](https://steamcommunity.com/sharedfiles/filedetails/?id=2875417483):** Endgame overhaul — directly overlaps with FU's precursor/elder endgame content. High conflict risk.
+- **[The Starforge v1.1.5](https://steamcommunity.com/sharedfiles/filedetails/?id=2800856948):** Adds dungeons/monsters that may conflict with FU worldgen. Save-corrupting on uninstall — high risk.
+- **[LR's Storage Dimension](https://steamcommunity.com/sharedfiles/filedetails/?id=3272904716):** Known item-disappearance bug documented by author. Too risky for curated list.
+- **[Starry Planets: LEGACY](https://steamcommunity.com/sharedfiles/filedetails/?id=2875413646):** Legacy version — likely superseded or incompatible.
+- **[Disable Maple 32 Diseases](https://steamcommunity.com/sharedfiles/filedetails/?id=2837749278):** Maple32-dependent.
+- **[M32 Shut Up, Bees!](https://steamcommunity.com/sharedfiles/filedetails/?id=3339256655):** Maple32-dependent.
+- **[No Lunar Uranium (Betabound + Starburst Rework)](https://steamcommunity.com/sharedfiles/filedetails/?id=3640808003):** Starburst/Betabound-dependent.
+- **[No Rubium Transmutation (Betabound)](https://steamcommunity.com/sharedfiles/filedetails/?id=3640809457):** Betabound-dependent.
+- **Many Tabs patches (Arcana, K'Rakoth, Maple32, etc.):** Many Tabs-dependent.
+- **[Cosmosburst Add-On](https://steamcommunity.com/sharedfiles/filedetails/?id=2891463549):** Requires Project Ancient Cosmos + Starburst (both rejected).
+- **[Starburst Rework Moderate Hazards](https://steamcommunity.com/sharedfiles/filedetails/?id=3217701824):** Starburst-dependent.
+- **[Infinite Express Sells Mild Hazard Protection](https://steamcommunity.com/sharedfiles/filedetails/?id=3444680723):** Starburst-dependent.
+- **Break Room Is Kil:** Maple32-dependent.
+
 ## Source Collection
-- **Reference:** [Starbound: Frackin' Universe Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3418162394) by Zenny (73 mods, last updated 2026-07-08)
-- **Adopted:** 57 of 73 mods
-- **Rejected/dropped:** 16 of 73 mods
+- **Reference 1:** [Starbound: Frackin' Universe Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3418162394) by Zenny (73 mods, last updated 2026-07-08)
+- **Reference 2:** [ShyDispatch Starbound Starburst Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=3678371749) by ShyDispatch (~144 mods)
+- **Adopted from Zenny:** 57 of 73 mods
+- **Adopted from ShyDispatch:** 96 of ~122 unique mods (18 rejected: FU-incompatible or Starburst-dependent)
+- **Total adopted:** 153 mods
 
 ## Open Questions
 - **SBMM exact GitHub URL?** TBD during research.

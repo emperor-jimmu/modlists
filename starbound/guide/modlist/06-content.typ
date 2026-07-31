@@ -77,3 +77,154 @@
   description: [Adds additional decorative and functional objects to the Outpost. More furniture, vendors, and interactive elements to flesh out the hub.],
   install-notes: [Load after the Outpost Overhaul and its addons.],
 )
+
+// ── Source: ShyDispatch Starbound Starburst Pack cross-review ──
+
+// ── Major Content Expansions ──
+
+#mod-entry(
+  name: "Arcana",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2359135864",
+  category: "Content",
+  version: "2025-07",
+  dependencies: (),
+  system-impact: "major content expansion with planets and mechanics",
+  description: [A growing techno-magic themed expansion by sleepySva. Adds 28+ new planets, 120+ custom weapons, 100+ armor pieces and cosmetics, 600+ new tiles and objects, new bosses and monsters, scythes (a lifesteal weapon type), and a new insectoid playable race (Spectwing v1.4.2). Widely used alongside FU — author states "most mods are compatible." Constantly updated.],
+  install-notes: [Load after FU. Arcana adds its own planets rather than overwriting — generally safe alongside FU. Compatible with existing saves. Back up storage folder before installing.],
+)
+
+#mod-entry(
+  name: "K'Rakoth Mod",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2761528375",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds dungeons, biomes, and lore",
+  description: [Adds K'Rakoths — an ancient aquatic race with advanced technology and servant species. Features new dungeons, biomes, enemies, and extensive lore about this fallen civilization. Has cross-mod patches for Elithian Races, Arcana, and Project Ancient Cosmos. Designed to coexist alongside other content mods. By Angry Turret (More NPC Ships author).],
+  install-notes: [Load after FU and Arcana. No dedicated FU patch found but designed for cross-mod compatibility. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Shellguard: Starbound Expansion Remastered",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1590588444",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "major faction expansion with quests and gear",
+  description: [A full expansion focused on Shellguard — a large-scale mercenary group. Adds extensive questlines, unique weapons and armor, faction-themed outposts, and original boss encounters. A complete faction experience integrated into the Starbound universe. Shellguard Engineer Fix (2966564431) and Shellguard Fullbright addons available.],
+  install-notes: [Load after FU. Faction-based content typically works alongside FU without conflicts. Shellguard Engineer Fix and Fullbright addons load after this.],
+)
+
+#mod-entry(
+  name: "Project Irisil",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2912817589",
+  category: "Content",
+  version: "2026-07",
+  dependencies: (),
+  system-impact: "adds monsters, dungeons, vanilla+ content",
+  description: [A vanilla+ content mod by LoftyLoftyLoftyLoftyLofty. Adds several new monster species including the Irisil — recently updated to v1.6.0.4 (July 30, 2026). Features new dungeons, unique creature behaviors, and expands monster variety without overhauling core systems. Actively maintained.],
+  install-notes: [Load after FU. Vanilla+ style — no known FU conflicts. Very recently updated.],
+)
+
+#mod-entry(
+  name: "Galactic Dungeons",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1890395068",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds race-themed dungeons",
+  description: [Adds 9 new dungeons themed around each playable race: Apex Mansion, Avian Raider Fleet, Floran Hollow, Glitch Siege Camp, Glitch Towers, Human Settlement, Hylotl Monastery, Hylotl Ronin Fortress, and Novakid Fortress. Works with More Planet Info for dungeon visibility. May not spawn on FU-exclusive planet types without a community patch.],
+  install-notes: [Load after FU. Dungeons will appear on vanilla-compatible planet types. May need a community patch for FU-exclusive biomes.],
+)
+
+#mod-entry(
+  name: "GyroJets!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2968046825",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds new weapon type",
+  description: [Introduces gyrojet weapons — a new weapon type with unique animations and mechanics. Includes 12 generic themed gyro-weapons in the New Tech Update. NPCs can wield them and they can be found in dungeon chests as loot. New animations for all gyrojet weapons. By InkWarrior101 (Universal Wardrobe author).],
+  install-notes: [Load after FU and any weapon mods. Weapons-only — no worldgen or progression changes.],
+)
+
+#mod-entry(
+  name: "More NPC Ships",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2836719652",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds space encounter variety",
+  description: [Adds variety to NPC ship encounters in space. Includes friendly ships (Cargo Ship, Astronaut Shuttle), enemy ships, and space dungeons. Ships feel more diverse and the space layer becomes more interesting to explore. By Angry Turret (K'Rakoth Mod author).],
+  install-notes: [Load after FU and any ship mods. Space encounter mod — no conflicts.],
+)
+
+#mod-entry(
+  name: "Neb's Snails!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3126981954",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds a variety of snail critters to the game. Explicitly compatible with Frackin Universe — an FU addon is available separately. Pure creature addition — no system changes.],
+  install-notes: [Load after FU. FU addon available for expanded integration.],
+)
+
+#mod-entry(
+  name: "Less Dead Moons - Moon Dungeons",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3013176449",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Moons feel empty and boring in vanilla. This mod adds multiple structures and dungeons to moons scattered across the surface, giving them more depth and exploration value. FU has its own moon content — minor thematic overlap but no hard conflicts.],
+  install-notes: [Load after FU. May add structures alongside FU's existing moon content — review for redundancy after testing.],
+)
+
+// ── Story & Progression Optionality ──
+
+#mod-entry(
+  name: "Story Disabler",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2803873905",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "disables main story questline",
+  description: [Disables Starbound's main storyline entirely for a true sandbox experience. Goes further than mods that simply make the story optional — this outright prevents story triggers. Still allows access to story-gated content through alternative means. For players who want pure sandbox exploration.],
+  install-notes: [Load order not critical. Only use if you want a fully story-free experience.],
+)
+
+// ── Codex & Lore ──
+
+#mod-entry(
+  name: "Novakid Codices",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2109845614",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds over a dozen new codices for the Novakids, distributed throughout the world. Most new codices are found in Novakid Villages, with a few in Apex Bases. Puts all new codices in a dedicated Novakid codex tab. By jss2a98aj (Starbound Patch Project author).],
+  install-notes: [Load after any codex or Novakid mods.],
+)
+
+#mod-entry(
+  name: "The Bookstore",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2464486703",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds a bookstore to the Outpost. Functions as a framework for codex entries — other modders can add their own book categories. The companion Codex addon (2502865782) purchasable versions of all vanilla codex entries organized by race, mission, and other categories.],
+  install-notes: [Load after any Outpost mods. Install the Codex addon (2502865782) for vanilla codex integration.],
+)
+
+#mod-entry(
+  name: "Hiraki Corale's Book Store",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3271725764",
+  category: "Content",
+  version: "2024",
+  dependencies: ("The Bookstore",),
+  system-impact: none,
+  description: [An addon for The Bookstore that replaces the generic info booth lady with the legendary beta character Hiraki Corale. Adds the Hiraki Corale Tab with post-beta content icon options. Puts Hiraki Corale codices from mods like Elithian Races in a dedicated tab. By ShyDispatch.],
+  install-notes: [Load after The Bookstore and the Codex addon.],
+)

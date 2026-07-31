@@ -50,3 +50,38 @@
   description: [Fixes collision issues with bench platforms so they behave as expected when placed against walls.],
   install-notes: [Load order not critical.],
 )
+
+// ── Source: ShyDispatch Starbound Starburst Pack cross-review ──
+
+#mod-entry(
+  name: "OmeLib",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2875423997",
+  category: "Library",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Shared utility library by Omeruin. Required dependency for The Nomadic De'nelaun and Race Traits. No gameplay changes on its own.],
+  install-notes: [Place above mods that depend on it.],
+)
+
+#mod-entry(
+  name: "Fixed Critters",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2809593202",
+  category: "Bugfix",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Fixes any critter that is unable to walk up tiles. Includes support for Frackin Universe, More Critters, and Elithian Races. Updated by ShyDispatch.],
+  install-notes: [Load after FU and any critter mods.],
+)
+
+#mod-entry(
+  name: "Bug Spawn Improvement",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2557634814",
+  category: "Bugfix",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Vanilla Starbound only spawns a single bug species per planet. This mod allows all bugs from a biome to spawn, dramatically increasing bug variety on each planet.],
+  install-notes: [Load order not critical. Compatible with FU.],
+)

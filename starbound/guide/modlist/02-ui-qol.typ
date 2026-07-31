@@ -214,3 +214,192 @@
   description: [Adds quick-sell functionality to FU space station terminals. Requires both OpenStarbound and Frackin Universe.],
   install-notes: [Requires OpenStarbound and FU. Load after both.],
 )
+
+// ── Source: ShyDispatch Starbound Starburst Pack cross-review ──
+
+#mod-entry(
+  name: "Lagless Pixel Printer!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3256653058",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Fixes the notoriously laggy Pixel Printer UI by replacing it with a memory-efficient Lua recreation. Previously scanned objects must be re-scanned or imported. A dramatic performance improvement for anyone who uses the Pixel Printer regularly.],
+  install-notes: [Client-side. Load after any Pixel Printer mods. Re-scan objects to populate the new UI.],
+)
+
+#mod-entry(
+  name: "Compact Crafting!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3276508903",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Replaces scrolling crafting lists with a grid layout. Much faster to browse and find recipes. Unsupported mods fall back to the standard list. By Silver Sokolova (Betabound author).],
+  install-notes: [Load after all crafting station mods. Client-side.],
+)
+
+#mod-entry(
+  name: "Auto Trash",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2842172286",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Automatically removes unwanted items from your inventory. Configurable rules for what gets trashed. No more manually deleting stacks of junk. By sleepySva (Arcana author).],
+  install-notes: [Load order not critical. Configure rules via the in-game menu.],
+)
+
+#mod-entry(
+  name: "Planet Search",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3031798952",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds a search button to the navigation console. Search nearby galaxies for specific planet types instead of manually flying to and inspecting each system. Massive time-saver for finding specific biomes or ores.],
+  install-notes: [Load after More Planet Info and any nav mods.],
+)
+
+#mod-entry(
+  name: "[OSB] Unde Venis",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3230765544",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Shows which mod an item comes from in its tooltip. Essential for identifying item sources in a large modlist. Requires OpenStarbound >= 0.1.9. Client-side.],
+  install-notes: [Requires OpenStarbound. Client-side. Load order not critical.],
+)
+
+#mod-entry(
+  name: "Extended Teleportation Dialog",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2223497181",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Extends the size of the teleportation dialog to show more destinations at once. Follows the same design philosophy as Extended GUI.],
+  install-notes: [Load after any teleporter mods.],
+)
+
+#mod-entry(
+  name: "Collection numberer",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3309982462",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [The collections tab shows item counts instead of just the internal order value. Helps identify duplicate or missing entries from modded collection items. Has a toggle.],
+  install-notes: [Client-side. Load order not critical.],
+)
+
+#mod-entry(
+  name: "Hoarder's Inventory",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3313741619",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds inventory slots and hotbar sets",
+  description: [More inventory space for hoarders and collectors: extra item slots, additional hotbar sets, and more bags. Never worry about inventory space again. WARNING: Due to Starbound engine limitations, this only works on FRESH (newly created) CHARACTERS.],
+  install-notes: [Must be installed before creating a new character. Does not work on existing saves. Load order not critical.],
+)
+
+#mod-entry(
+  name: "Infiniter Inventory",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3290989094",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds secondary inventory window",
+  description: [Adds a second client-side inventory window that expands infinitely. Open from the Quickbar or with a keybind via OpenStarbound. Inspired by Silver's Infinite Inventory mod but implemented differently.],
+  install-notes: [Requires OpenStarbound for keybind. Client-side. Load after any inventory mods.],
+)
+
+#mod-entry(
+  name: "Stardust Core Lite",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010521475",
+  category: "Library",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Library mod providing Quickbar, metaGUI, and a unified settings panel. A vanilla-server-friendly subset of Stardust Core. Required by Classic Quickbar and Lexi's Automation.],
+  install-notes: [Load early. Required by several mods in this list.],
+)
+
+#mod-entry(
+  name: "[OSB] Beta Hotbar!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3248499283",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: "replaces vanilla hotbar",
+  description: [Replaces the vanilla hotbar with a Lua recreation of the beta hotbar. 10 slots, rebindable number keys, scroll to change selection. Requires OpenStarbound. By Silver Sokolova.],
+  install-notes: [Requires OpenStarbound. This is an alternative to Classic Quickbar — pick one.],
+)
+
+#mod-entry(
+  name: "Classic Quickbar",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3010595372",
+  category: "UI",
+  version: "2024",
+  dependencies: ("Stardust Core Lite",),
+  system-impact: "restores original quickbar",
+  description: [Restores and updates the original pre-1.0 Quickbar. Requires Stardust Core Lite. Alternative to Beta Hotbar — choose based on preference.],
+  install-notes: [Requires Stardust Core Lite. This is an alternative to Beta Hotbar — pick one.],
+)
+
+#mod-entry(
+  name: "Skippable Cinematics",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=730116342",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Skip any cinematic with the ESC key. Does not reduce loading times covered by cinematics. Client-side only. By v6.],
+  install-notes: [Client-side. Load order not critical.],
+)
+
+#mod-entry(
+  name: "No Tech Quest",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=729773412",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: "removes tech obstacle courses",
+  description: [Removes the obstacle courses required to unlock techs. Just talk to the NPC once to complete. Adds a second quest so quest #6 is completed for mods that extend the questline. Supports Phase Shift Tech quest.],
+  install-notes: [Load order not critical.],
+)
+
+#mod-entry(
+  name: "Skippable Mech Quest",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3065492221",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: "removes mech obstacle courses",
+  description: [Removes mech obstacle courses entirely. Complements No Tech Quest for a complete removal of mandatory tutorial-style quests.],
+  install-notes: [Load order not critical.],
+)
+
+#mod-entry(
+  name: "tech ui highlight fix but good",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3357067478",
+  category: "Fix",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Fixes the character highlight glow in the tech UI. Implemented correctly — patches only the relevant config entry instead of overwriting the entire file.],
+  install-notes: [Load after any tech UI mods. Client-side.],
+)
+
+#mod-entry(
+  name: "Hiraki Corale Codex Tab",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2109841611",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Moves all vanilla and many modded Hiraki Corale codices into a dedicated codex tab. Includes a post-beta tab icon option. Makes Hiraki Corale lore accessible in one place. By jss2a98aj (Starbound Patch Project author).],
+  install-notes: [Load after any codex mods.],
+)

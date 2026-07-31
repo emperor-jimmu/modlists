@@ -23,3 +23,16 @@
   description: [Replaces the default outpost music with the serene "Tranquility Base" track. Pairs well with the Outpost Nebula visual mod for a complete hub atmosphere overhaul.],
   install-notes: [Load after any outpost mods. No conflicts.],
 )
+
+// ── Source: ShyDispatch Starbound Starburst Pack cross-review ──
+
+#mod-entry(
+  name: "Avali sounds",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2971968578",
+  category: "Audio",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: none,
+  description: [Adds chatter and hurt vocalization sounds to the Avali species, inspired by their default hurt sound. Works with Player Voice if adopted later. Adds Novali sounds as of the February 2024 update.],
+  install-notes: [Load after Avali Triage. Only affects Avali characters. No conflicts.],
+)
