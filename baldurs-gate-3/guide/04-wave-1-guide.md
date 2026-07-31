@@ -2,243 +2,229 @@
 
 *You've walked this path before. You know the faces, the betrayals, the choices that await. But the Weave has shifted — new powers stir, forgotten races emerge from shadow, and the gods themselves seem to be rewriting the rules of engagement. The Sword Coast is bigger, darker, and more dangerous than you remember. This time, you're not just surviving — you're testing the limits of what a mortal can become. The crucible awaits.*
 
+## Before You Begin
+
+Wave 1 assumes you've completed a full Wave 0 playthrough. You understand action economy, positioning, surfaces, resting, and basic party composition. You've beaten the game once. Now we go deeper.
+
+A few things to know before you start:
+
+- **This is a fresh save.** Wave 1 mods — new races, new classes, expanded level cap, difficulty overhauls — all require a new game. Your Wave 0 save is safe and separate.
+- **Your party will be bigger.** Party Limit Begone means you can bring everyone. Six, seven, even eight companions at once. This means more banter, more story, more inventory management, and much harder fights (if you've installed difficulty mods to compensate).
+- **You'll have more choices at character creation.** With Fantastical Multiverse adding dozens of races and Artificer/Blood Hunter adding new classes, your build options expand enormously. The Advanced Character Building section below will help you navigate these options.
+- **Difficulty is what you make it.** Tactician Plus or Combat Extender let you scale enemy stats to match your larger party. Start conservative — you can always increase scaling if things feel too easy.
+
+---
+
 ## Advanced Character Building
 
-### Multiclass Synergies
+Now that you understand how individual classes work, let's talk about what happens when you combine them — and how to build characters that push the game's systems to their limits.
 
-Multiclassing lets you split your 12 (or 20, with Unlock Level Curve) levels between two or more classes. The cost is delaying high-level features and feats. The reward is synergies that outscale single-class builds.
+### Multiclassing: When and Why
 
-**Sorcadin (Paladin 6 / Sorcerer 6):** The gold standard of BG3 multiclassing. Paladin 6 gives Extra Attack and Aura of Protection (+CHA to all saves for you and nearby allies). Sorcerer 6 gives full spell slot progression and Metamagic. Use Quickened Spell to cast Hold Person as a bonus action, then double-smite with guaranteed critical hits against the paralyzed target. With Haste active, a Sorcadin can attack 4 times per turn and smite on every hit, dealing 200+ damage in one round.
+Multiclassing means splitting your levels between two (or more) classes. The cost: you delay or lose high-level features and feats. The reward: synergies that make you far more powerful than a single class at the same level.
 
-**Gloomstalker / Assassin (Ranger 5 / Rogue 4 / Fighter 2 / War Cleric 1):** The ultimate first-round nuker. Gloomstalker 5 gives Extra Attack plus Dread Ambusher (extra attack on round 1 with +1d8 damage). Assassin 3 gives automatic critical hits against surprised enemies. Fighter 2 gives Action Surge. War Cleric 1 gives War Priest bonus action attacks. On a surprise round: 6 attacks (2 base + 1 Dread Ambusher + Action Surge: 2 base + 1 Dread Ambusher), all at advantage, all critical hits. Stack damage riders (Sharpshooter, Hunter's Mark, special arrows) and delete the scariest enemy before they act.
+**The general rule:** don't multiclass unless you have a specific combo in mind. A poorly planned multiclass is weaker than a pure class. A well-planned one breaks the game in half.
 
-**Tempest Cleric / Storm Sorcerer (Cleric 2 / Sorcerer 10):** The lightning nuke. Cleric 2 gives Destructive Wrath (Channel Divinity: maximize lightning/thunder damage on one spell). Sorcerer 10 gives Chain Lightning and Metamagic. Cast Create Water on enemies, then Quickened Chain Lightning with Destructive Wrath — every target takes 80 lightning damage (doubled from wet condition = 160), no save, guaranteed max from Channel Divinity. This combo one-shots most encounters in Act 3.
+Here are the combos worth learning:
 
-**Bardadin (Bard 10 / Paladin 2):** The magical secret smiter. Bard 10 gives full spellcasting progression and Magical Secrets at level 10 (take Banishing Smite and Spirit Guardians or Counterspell). Paladin 2 gives Divine Smite. You have more and higher-level spell slots than a pure Paladin, meaning more smites with bigger damage dice. Flourish (Swords Bard) triggers on top of smites. A 4th-level Divine Smite + Banishing Smite + Slashing Flourish on the same hit can exceed 100 damage.
+**Sorcadin (Paladin 6 / Sorcerer 6)**
 
-**Fighter / Wizard dip (Fighter 11 / Wizard 1):** Simple but powerful. Fighter 11 gives three attacks per action (Improved Extra Attack). Wizard 1 gives spell scribing — you can learn ANY Wizard spell from scrolls, regardless of your Wizard level. With the Warped Headband of Intellect (sets INT to 17, found in Act 1), you can prepare 4 Wizard spells. Take Shield, Misty Step, Haste, and Counterspell on a pure martial chassis. Cost: one Fighter level.
+This is the gold standard of BG3 multiclassing. You get heavy armor, Extra Attack, Divine Smite (spend spell slots for massive radiant damage on hit), and Aura of Protection (+CHA to all saves for you and nearby allies — this alone wins fights) from Paladin. Then you get full spell slot progression and Metamagic from Sorcerer.
 
-### Feat Tier List
+Your combat loop: Quickened Spell to cast Hold Person as a bonus action. If it lands, the target is paralyzed. Your melee attacks are now at advantage and automatically critical hit. Divine Smite on a critical hit doubles ALL your damage dice — the smite dice AND your weapon dice. A paralyzed target hit by a Sorcadin with a level 3 Divine Smite can take 100+ damage in a single swing. With Extra Attack, you do it twice.
 
-**S-Tier (take on every build that qualifies):**
-- **Alert:** +5 initiative. In BG3, initiative is a d4, so Alert almost guarantees going first. Going first wins fights.
-- **Great Weapon Master:** +10 damage per hit at -5 to hit. Offset the penalty with Advantage (Reckless Attack, Faerie Fire, prone enemies, Bless). Best on Barbarians and Fighters.
-- **Sharpshooter:** +10 damage per ranged hit at -5 to hit. Same logic as GWM. Best on ranged Fighters, Rangers, and Rogues.
-- **Tavern Brawler:** Double your Strength modifier on unarmed and thrown weapon attacks. Best on Monks (unarmed), throwing Barbarians, and Eldritch Knights (bound weapon returns when thrown).
+You can also twin Haste on yourself and another party member, giving both of you double actions for 10 turns. With Haste and Extra Attack, you're making 4 attacks per turn, smiting on all of them. Build this character, and boss fights become execution scenes.
 
-**A-Tier (excellent on the right build):**
-- **War Caster:** Advantage on concentration saves. Essential for any caster who concentrates on Bless, Haste, Spirit Guardians, or Hold Person/Monster.
-- **Resilient: Constitution:** Proficiency in CON saves. Stacks with War Caster for near-immune concentration. Best taken at level 8 or 12 when proficiency bonus is higher.
-- **Sentinel:** Enemies hit by your opportunity attack have their speed reduced to 0. Enemies who attack an ally near you trigger your opportunity attack. Best on melee tanks who want to lock enemies in place.
-- **Polearm Master:** Bonus action attack with the butt of your polearm (d4 + STR). Opportunity attack when enemies ENTER your reach (not just leave). Best on Paladins and Fighters with reach weapons.
-- **Dual Wielder:** +1 AC when dual-wielding. Can dual-wield non-light weapons. Opens up double-staff caster builds and longsword dual-wielding.
+**Gloomstalker / Assassin / Fighter (Ranger 5 / Rogue 4 / Fighter 2 / War Cleric 1)**
 
-**Situational (good in specific contexts):**
-- **Heavy Armor Master:** -3 damage from non-magical physical attacks. Strong early game, falls off late. Best on characters with damage reduction stacking.
-- **Savage Attacker:** Roll damage dice twice and take the higher. Worth ~2-3 extra damage per hit on average. Best on Paladins (more dice = more value from rerolls).
-- **Mobile:** +10ft movement, ignore difficult terrain when Dashing, no opportunity attacks from enemies you attack. Best on Monks and melee Rogues.
+This is the ultimate first-round nuker — designed to end fights before they begin. Gloomstalker 5 gives you Extra Attack plus Dread Ambusher (an extra attack on round one that deals +1d8 damage — and you open combat from stealth, so you're always on round one). Assassin 3 gives you automatic critical hits against enemies that haven't taken a turn yet and refreshes your action and bonus action when combat starts. Fighter 2 gives you Action Surge. War Cleric 1 gives you War Priest charges — bonus action attacks.
 
-**Trap Feats (look good, underperform):**
-- **Actor:** Expertise in Deception and Performance. You can get Expertise from class features or items. The +1 CHA is the only real value.
-- **Dungeon Delver:** Advantage on Perception/Investigation to find hidden objects and saves vs traps. Situational at best — traps are common but rarely lethal, and you can detect them without this feat.
-- **Weapon Master:** +1 STR or DEX plus proficiency in four weapons. By level 4 you already have the weapons you want. Pick ASI instead.
+Here's the sequence: hide before combat, enter turn-based mode, attack from stealth to surprise the enemy group. Your surprise round: 2 attacks (Extra Attack) + 1 attack (Dread Ambusher) = 3 attacks, all with advantage because the enemy is surprised, all critical hits because of Assassin. Then combat starts properly. Your turn: Action Surge for 2 more attacks + 1 Dread Ambusher = 3 more attacks, still critical hits because enemies with lower initiative haven't acted yet. Then you still have a bonus action for a War Priest attack. That's 7 critical hits before the enemy takes a single action. With Sharpshooter active (+10 damage per hit), you'll deal 200-300 damage in the opening round.
 
-### Attribute Breakpoints
+**Tempest Cleric / Storm Sorcerer (Cleric 2 / Sorcerer 10)**
 
-- **Even scores over odd scores:** A 16 (+3) and a 17 (+3) give the same modifier. Only go to 17 if you plan to take a half-feat (+1 to a stat plus a benefit) at level 4 to reach 18 (+4).
-- **When to take ASI vs. half-feat:** If your primary stat is odd (e.g., 17), take a half-feat at level 4 to reach 18 and get a benefit. If your primary stat is even (e.g., 16), take ASI to 18 unless a half-feat would be better than +1 to a secondary stat.
-- **Respec breakpoints:** Level 5 (Extra Attack / 3rd-level spells), level 8 (second feat), level 12 (third feat). Respec at these levels if your build needs adjustment.
+This is the lightning nuke. Cleric 2 gives you Destructive Wrath — Channel Divinity that maximizes lightning or thunder damage on one spell. Sorcerer 10 gives you Chain Lightning (the best lightning spell in the game) and Metamagic.
 
----
+The combo: Quickened Spell to cast Create Water as a bonus action  — enemies are now Wet (double damage from lightning and cold). Then cast Chain Lightning with Destructive Wrath. Chain Lightning hits 4 targets for 10d8 lightning damage each. Destructive Wrath makes every die roll maximum: 80 damage per target. Wet doubles it: 160 damage per target. Across four targets, that's 640 damage in a single turn. Most encounters don't survive this. And you still have spell slots left for the next fight.
 
-## Deeper Mechanics
+**Bardadin (Bard 10 / Paladin 2)**
 
-### Initiative Manipulation
+The magical secret smiter. Bard 10 gives you full spellcasting progression (more and higher-level spell slots than a pure Paladin) and Magical Secrets at level 10 — take Banishing Smite (5d10 force damage on hit) and Spirit Guardians (radiant AoE aura). Paladin 2 gives you Divine Smite and a Fighting Style.
 
-Initiative in BG3 is a **d4 + DEX modifier + bonuses** (Alert feat, gear, Elixir of Vigilance). This means:
+Your combat loop: you're a Swords Bard, so your weapon attacks trigger Blade Flourishes. Both Slashing Flourish AND Divine Smite trigger on the same hit. With Banishing Smite on top: one hit applies Slashing Flourish damage, Divine Smite damage, AND Banishing Smite damage. At level 12, with a 4th-level Divine Smite (5d8), Banishing Smite (5d10), and a Slashing Flourish (1d10), a single attack does: weapon damage + 5d8 radiant + 5d10 force + 1d10 — averaging 70-80 damage on a non-critical hit. With Extra Attack, double it. And you still have spell slots for more smites.
 
-- A character with DEX 14 (+2) and Alert (+5) rolls d4 + 7 = minimum 8, average 10. They almost always go first.
-- A character with DEX 8 (-1) rolls d4 - 1 = average 1-2. They almost always go last.
-- The difference between first and last in the same party can be 2-3 enemy turns.
+**Fighter / Wizard dip (Fighter 11 / Wizard 1)**
 
-**Strategy:** Stack initiative on your control caster. Going first with an upcast Hold Person or Hypnotic Pattern wins the fight before enemies act. Give your controller the Sentinel Shield (Advantage on initiative and Perception), the Hellrider Longbow (+3 initiative, usable by anyone regardless of proficiency), and the Alert feat.
+The simplest multiclass in the game and one of the most effective. Fighter 11 gives you three attacks per action. Wizard 1 gives you the ability to scribe spells from scrolls. With the Warped Headband of Intellect (sets INT to 17, found in Act 1's Blighted Village), you can prepare 4 Wizard spells. Take Shield (reaction: +5 AC), Misty Step (bonus action teleport), Haste (double actions), and Counterspell (cancel enemy spells). You're now a martial character with the defensive and mobility toolkit of a Wizard. Cost: one level. Value: immeasurable.
 
-### Surface Interactions — Full Combos
+### How Modded Classes Change Your Options
 
-Surfaces can chain for devastating effects:
+The modded classes — Artificer and Blood Hunter — use the same game systems as base classes. They follow the same XP table, get feats at the same levels, and can multiclass normally. Here's what you need to know about each:
 
-1. **Water → Lightning (Create Water + Lightning spell):** Create Water makes targets Wet (vulnerability to lightning and cold — double damage). Follow with a lightning spell (Witch Bolt, Lightning Bolt, Chain Lightning, Call Lightning) for 2x damage. The water surface becomes Electrified (d4 lightning damage per turn, stun potential).
+**Artificer:** An Intelligence-based half-caster (like a Paladin but INT instead of CHA). Infusions let you enchant your own equipment — at level 2 you can give yourself or an ally a +1 weapon or armor, and at higher levels you can replicate magic items. The Battle Smith subclass gives you a Steel Defender — a robot pet that fights alongside you and can impose disadvantage on enemy attacks. An Artificer/Wizard multiclass has perfect stat synergy (both use INT). Go Artificer 3 (Battle Smith) / Wizard 9, and you can attack with INT using magic weapons while also being a full caster.
 
-2. **Grease → Fire (Grease spell/bottle + Fire):** Any fire source ignites grease for a burning surface (d4 fire per turn). Enemies in the grease when it ignites take initial fire damage plus fall-prone.
+**Blood Hunter:** A Wisdom-based martial class with a self-damage mechanic. Crimson Rite lets you sacrifice HP to empower your weapon with elemental damage. Blood Maledicts are curse-like abilities that debuff enemies. The Order of the Lycan lets you transform into a werewolf. The Order of the Ghostslayer specializes in hunting undead. A Blood Hunter/Fighter multiclass works well — Fighter 2 gives you Action Surge, which you combine with your self-buffed Crimson Rite attacks.
 
-3. **Ice → Water → Lightning (Ice spell + Fire + Lightning):** Ice surfaces melt from fire damage into water. The water can then be electrified. An Ice Storm followed by a Fireball followed by a Chain Lightning hits enemies with bludgeoning + cold + fire + 2x lightning damage across three turns.
+**Fantastical Multiverse races:** Dozens of additional playable races, each with D&D 5e-accurate racial traits. Aasimar are the standout — they get healing, light, and at higher levels, wings and a once-per-long-rest transformation that adds radiant damage to attacks. Genasi (elemental planetouched) give you elemental cantrips and resistances. Firbolg get limited invisibility and speech with plants and animals — excellent for a nature-themed Druid or Ranger.
 
-4. **Darkness + Devil's Sight:** Warlocks with Devil's Sight invocation can see through magical darkness. Cast Darkness on yourself — enemies have disadvantage attacking you, you have advantage attacking them. Combine with Sentinel to lock enemies inside the darkness.
+### Feats: What to Take and When
 
-### Stealth and Surprise Rounds
+After a full playthrough, you know the feats that matter. Here's the definitive ranking for Wave 1:
 
-Surprise rounds give your entire party a free turn before enemies can act. To initiate surprise:
+**S-Tier — take these on every build that qualifies:**
 
-1. Enter turn-based mode before combat
-2. Have a hidden character (Cunning Action Hide, or Invisibility, or Pass Without Trace) attack an enemy who hasn't detected your party
-3. If the attack hits and the enemy wasn't alert, the entire enemy group is Surprised
-4. Your party gets a full round of actions before initiative starts normally
+- **Alert:** +5 initiative. In BG3, initiative is a d4 — with Alert and 14 DEX, you roll d4+7. You will almost always go first. Going first means killing or controlling enemies before they act. On the Sorcadin or Gloomstalker/Assassin builds above, Alert is mandatory.
+- **Great Weapon Master / Sharpshooter:** +10 damage at -5 to hit. You already know how to offset the penalty — Advantage from prone/blinded/paralyzed enemies, Bless (+d4), Precision Attack (+d8), and high ground (+2). On a Fighter with 3 attacks per action and Action Surge, this adds up to 90 bonus damage in a single turn.
+- **Tavern Brawler:** Double your STR modifier on unarmed strikes and thrown weapon attacks. On an Open Hand Monk, this turns your Flurry of Blows from "supplemental damage" into "main damage source." On a throwing Barbarian or Eldritch Knight, your thrown weapon attacks out-damage melee.
 
-**Best surprise initiators:** Gloomstalker Rangers (invisible to darkvision-reliant enemies while obscured), Assassin Rogues (auto-crits on surprise), any character with Greater Invisibility.
+**A-Tier — excellent on the right build:**
 
-**After surprise:** The enemy group rolls initiative. You get your normal turn in initiative order plus whatever actions you haven't used. A Gloomstalker/Assassin can effectively act three times before enemies: surprise round, Dread Ambusher attack, then normal first-round turn.
+- **War Caster + Resilient: Constitution:** Together, these make your concentration nearly unbreakable. Any caster concentrating on Haste, Spirit Guardians, or Hold Monster wants both by level 12.
+- **Sentinel:** Opportunity attacks reduce the target's speed to 0. Enemies who attack an ally near you trigger your opportunity attack. This feat single-handedly makes melee tanks viable — you lock enemies in place and protect your backline.
+- **Polearm Master:** Bonus action attack with the polearm's butt. Opportunity attacks when enemies ENTER your reach (not just leave). On a Paladin with Sentinel and Polearm Master, enemies can't approach you and can't leave you. You control a 10-foot radius around your character.
 
-### Legendary Actions and Legendary Resistance
+**Trap feats — look good, underperform:**
+- **Actor:** Expertise in Deception and Performance is redundant — you can get these from class features and items.
+- **Dungeon Delver:** Traps are common but rarely lethal, and you can detect them without this feat.
+- **Weapon Master:** By level 4 you already have the weapons you need.
 
-Honor Mode and modded bosses have Legendary Actions — reactions they can take between player turns. They also have Legendary Resistance (LR) — 3/day auto-save against any failed saving throw.
+### Respeccing Strategically
 
-**Burning Legendary Resistance efficiently:**
-- **Magic Missile:** Each missile is a separate damage instance. A single level 1 Magic Missile forces 3 concentration saves (for enemy casters) but doesn't force LR saves. However, combine with...
-- **Radiating Shockwave (Luminous Armor + Spirit Guardians):** Each tick of Spirit Guardians triggers a Radiating Shockwave (radiant damage AoE). This can apply Radiant Orb stacks (-1 to attack rolls per stack), which reduces the boss's chance to hit without burning LR.
-- **Multi-hit control spells:** Instead of one big save-or-suck, use spells that force multiple saves. Hunger of Hadar applies damage every turn. Wall of Fire applies damage on cast and when enemies pass through. These don't trigger LR because they don't require saves — they just happen.
-- **Arcane Acuity stacking:** Helm of Arcane Acuity (Act 2) and Helmet of Arcane Acuity (Act 2) add +2 to spell save DC per weapon attack hit. With 4-6 attacks (Swords Bard flourishes, Fighter action surge), you can reach +10 spell DC. Your DC 25+ Hold Monster is nearly impossible to save against, even for bosses with LR. They either use an LR charge or are paralyzed.
+Withers lets you respec for 100g. Here's when to do it:
+
+- **Level 4:** If your stats are awkward (odd numbers, wrong distribution), fix them here.
+- **Level 5:** This is the biggest power spike in the game — martials get Extra Attack and casters get 3rd-level spells (Fireball, Spirit Guardians, Haste). If your build doesn't capitalize on this, respec.
+- **Level 8:** Second feat. If your build concept requires two feats to come online (e.g., Polearm Master + Sentinel), respec into it here.
+- **Level 12:** Final optimization. Fix any inefficiencies. This is your character for the rest of the game.
 
 ---
 
-## Party Optimization
+## Deeper Mechanics: Systems You Can Exploit
 
-### Role Coverage
+### Initiative: How to Always Go First
 
-A fully optimized party covers:
+Initiative in BG3 works differently from tabletop D&D. You roll a **d4** (not a d20) and add your DEX modifier plus any bonuses. This means initiative bonuses are MUCH more impactful.
 
-1. **Face:** High Charisma with Persuasion and/or Deception expertise. Bard, Warlock, Paladin, or Sorcerer.
-2. **Lockpicker / Trap Disarmer:** High Dexterity with Sleight of Hand expertise. Rogue or Bard.
-3. **Support / Healer:** Healing Word (bonus action ranged heal), buffs (Bless, Aid, Longstrider, Freedom of Movement), condition removal (Lesser/Greater Restoration). Life/Light Cleric, Lore Bard, or Ancients Paladin.
-4. **Controller:** Area control (Hunger of Hadar, Spike Growth, Wall of Fire, Sleet Storm) and single-target control (Hold Person/Monster, Tasha's Hideous Laughter, Otto's Irresistible Dance). Wizard, Sorcerer, Lore Bard, or Archfey Warlock.
-5. **Striker:** Single-target burst damage. Battle Master Fighter, Open Hand Monk, Gloomstalker Ranger, Vengeance Paladin, Sorcadin.
-6. **Tank:** High AC and damage mitigation. Bear Wildheart Barbarian (resistance to all damage except psychic), Ancients Paladin (spell damage resistance aura), Abjuration Wizard (Arcane Ward).
+A character with Alert (+5), 14 DEX (+2), and the Hellrider Longbow (+3 initiative, usable by anyone) has d4+10 initiative. Their minimum roll is 11. Most enemies roll d4+1 or d4+2. You will literally always go first.
 
-In a 4-person party, roles must overlap. In a 6+ person party (with Party Limit Begone), you can specialize each character to a single role.
+Give this setup to your controller — the character who casts Hypnotic Pattern, Confusion, or upcast Hold Person. Going first with a mass control spell trivializes encounters.
 
-### Camp Caster Buff Strategy
+### Surface Combos: The Full Chains
 
-Hirelings (from Withers) can stay at camp and cast long-duration buffs on your active party. These buffs persist after the caster leaves the party. The optimal camp caster setup:
+You've used surfaces in Wave 0. Here are the advanced chains:
 
-**Transmutation Wizard hireling:** At level 6, Transmutation Wizards get a Transmuter's Stone (CON save proficiency, or resistance to one element, or +10ft movement, or darkvision). Give the stone to a party member before leaving camp. This wizard also casts Longstrider (ritual, AoE with a mod).
+**Water → Lightning (2x damage):** Create Water makes targets Wet — vulnerability to lightning and cold (double damage). Follow with any lightning spell. The water surface becomes Electrified — d4 lightning damage per turn with potential stun. This is the most efficient damage combo in the game, costing only a level 1 spell slot (Create Water) plus whatever lightning spell you use.
 
-**Cleric hireling (level 11+):** Casts Heroes' Feast (immune to poison and frightened, advantage on WIS saves, +2d10 max HP until long rest — AoE, affects the whole camp). Also casts Aid at highest level (+5 HP per spell level to 3 targets per cast — cast at level 6 for +30 HP).
+**Grease → Fire (AoE + prone):** Grease forces DEX saves or fall prone. Any fire source — Fire Bolt, Fireball, a dipped weapon, Alchemist's Fire — ignites the grease for d4 fire per turn. Enemies in the grease when it ignites take fire damage AND are still prone in a burning surface. They take damage when they stand up and when they stay down.
 
-**Additional camp buffs:**
-- **Death Ward:** Target doesn't die when dropped to 0 HP — instead drops to 1 HP once. Cast on your squishy characters.
-- **Warding Bond:** Cast on your tank — they take half damage, but the caster (the hireling at camp) takes the same amount. Since the hireling isn't in combat, they won't die (they'll just sit at camp at low HP).
-- **Protection from Poison:** Advantage on poison saves and poison resistance. Useful for the Underdark and certain Act 3 encounters.
-- **Freedom of Movement:** Immune to difficult terrain and paralysis/restrained from magic. Useful for Act 2 shadow curse areas.
+**Ice → Fire → Water → Lightning (quadruple combo):** Ice Storm creates an ice surface (prone risk + cold damage). A Fireball melts it into water (fire damage + Wet condition). A Chain Lightning into the water deals double damage to everyone standing in it. Four spells, four damage types, one annihilated enemy formation.
 
-### Skill Monkey Build
+**Darkness + Devil's Sight:** Warlocks with Devil's Sight can see through magical darkness. Cast Darkness on yourself — enemies have disadvantage attacking you (they're effectively blinded), and you have advantage attacking them (they can't see you). If you take Sentinel, enemies that try to leave the darkness trigger your opportunity attack and stop moving. They're trapped in the dark with a monster they can't see.
 
-A single character who covers all exploration skills: Perception, Sleight of Hand, Insight, Persuasion, Deception, Investigation, Arcana, Survival.
+### Boss Mechanics: Legendary Actions and Resistance
 
-**Githyanki Lore Bard 10 / Knowledge Cleric 1 / Rogue 1:**
-- **Githyanki Astral Knowledge:** Proficiency in ALL skills of one ability score (pick WIS for Perception, Insight, Survival, Medicine, Animal Handling).
-- **Lore Bard 3:** Expertise in 4 skills. Take Persuasion, Deception, Sleight of Hand, and Perception.
-- **Lore Bard 10:** Additional Expertise in 2 more skills (Insight, Investigation). Magical Secrets.
-- **Knowledge Cleric 1:** Expertise in 2 INT skills (Arcana, History, Nature, Religion — pick Arcana and History).
-- **Rogue 1:** Expertise in 2 more skills.
+In Wave 1, difficulty mods give bosses Legendary Actions (reactions between your turns) and Legendary Resistance (3/day auto-save). Here's how to deal with them:
 
-Result: By level 12, this character has Expertise in 8 skills and proficiency in every other skill in the game. They will almost never fail a skill check, even on DC 30 checks.
+**To burn Legendary Resistance efficiently:** Don't cast your big save-or-suck spell (Hold Monster, Dominate Person) right away. First, force multiple low-level saves to burn through their charges. Magic Missile is excellent — each dart triggers a separate concentration save for enemy casters. Monk Stunning Strike is a CON save the boss can't ignore. A Battle Master's Menacing Attack and Trip Attack both force saves. Once the boss burns their 3 legendary resistances, THEN cast your hard control spell — it will land because they have no charges left.
+
+**To deal with Legendary Actions:** Bosses typically get one legendary action per round, used between player turns. Common legendary actions: teleport, AoE attack, summon minions, or a disable. The counter: spread out your party so an AoE doesn't hit everyone, and focus fire. A boss with 30% HP is less dangerous because the AI often prioritizes survival actions over offensive ones.
+
+**Arcane Acuity is broken — use it.** The Helm of Arcane Acuity (Act 2, Mason's Guild) and Helmet of Arcane Acuity (Act 2) add +2 to your spell save DC per weapon attack hit. With 4-6 attacks (Swords Bard flourishes, Fighter Action Surge), you reach +10 spell DC in one turn. A DC 27 Hold Monster is effectively unsaveable even for bosses with Legendary Resistance — they MUST use a charge. Over two turns, you burn through all three charges, then land your control spell. The boss is paralyzed for the rest of the fight.
 
 ---
 
-## Economy
+## Party Optimization for Larger Groups
 
-### Gold Farming Methods
+With Party Limit Begone, you're running 6-8 characters. Here's how to structure a larger party effectively.
 
-**Method 1: Loot and sell efficiently.** Pick up everything with a weight-to-value ratio greater than 10:1 gold-to-kg. Prioritize gems, jewelry, enchanted items, scrolls, and potions. Leave heavy armor and mundane weapons unless you're heading directly to a vendor.
+### Roles in a Large Party
 
-**Method 2: Raise vendor attitude.** Donate gold to vendors (barter mode, give them gold for nothing) until their attitude reaches 100% (green smiley). This gives you better buy/sell prices. The investment pays off over a full playthrough.
+With 4 characters, roles must overlap. With 6+, you can specialize:
 
-**Method 3: Pickpocket gold back.** After a large sale, have your rogue pickpocket the vendor to recover the gold you just spent. Shadowheart casts Guidance, another character casts Enhance Ability: Dexterity, and your bard gives Bardic Inspiration to the rogue. Enter turn-based mode for safety.
+1. **Face:** High CHA with Persuasion expertise. Bard, Warlock, or Paladin. (This is your main character, as always.)
+2. **Lockpicker/Trap Disarmer:** High DEX with Sleight of Hand expertise. Rogue or Bard.
+3. **Healer/Support:** Healing Word, Bless, Aid, Lesser/Greater Restoration, Revivify. Life or Light Cleric.
+4. **Controller:** AoE and single-target control — Hypnotic Pattern, Hunger of Hadar, Hold Person/Monster, Wall of Fire, Sleet Storm. Wizard, Sorcerer, or Lore Bard.
+5. **Striker (Physical):** Single-target burst damage. Battle Master Fighter, Open Hand Monk, Gloomstalker Ranger, Vengeance Paladin.
+6. **Striker (Magical):** AoE and single-target spell damage. Evocation Wizard, Storm Sorcerer, Fiend Warlock.
+7. **Tank:** High AC, damage mitigation, enemy lockdown. Bear Wildheart Barbarian, Ancients Paladin, Abjuration Wizard.
+8. **Skill Monkey/Utility:** Covers any missing skills. Githyanki Lore Bard can have expertise in 8 skills and proficiency in everything else.
 
-### Vendor Refresh Mechanics
+### The Camp Caster Strategy
 
-Vendors restock their inventory after every long rest OR after any character levels up. This means you can:
-1. Buy their stock of rare items (elixirs, potions, arrows, spell scrolls).
-2. Have a character level up (or respec with Withers for 100g and re-level).
+This is one of the most powerful optimization techniques in BG3, and it feels like a legitimate part of the game. Hirelings from Withers can stay at camp and cast long-duration buffs on your active party. These buffs persist after the caster leaves the party. You do this once after every long rest:
+
+1. **Transmutation Wizard hireling (level 6):** Creates a Transmuter's Stone — give it to a party member for CON save proficiency, elemental resistance, +10ft movement, or darkvision. Also casts Longstrider (ritual — AoE with the Longstrider AOE mod, +3m movement to the whole party).
+
+2. **Cleric hireling (level 11+):** Casts Heroes' Feast (immune to poison and frightened, advantage on WIS saves, +2d10 max HP — AoE, hits everyone at camp). Casts Aid at highest level (+5 HP per spell level upcast — at level 6 spell slot, that's +30 HP to three targets; cast it twice for 6 targets). Also casts Death Ward (survive at 1 HP instead of dying, once per long rest) on your squishy characters.
+
+3. **Additional buffs worth applying:** Freedom of Movement (immune to paralysis/restrained and difficult terrain — essential for Act 2's shadow curse), Protection from Poison (advantage vs poison and resistance — useful for Underdark and certain Act 3 encounters), Darkvision (for human characters), and Warding Bond (target takes half damage, but the caster at camp takes the same — since the hireling isn't in combat, they survive sitting at low HP).
+
+The total effect: your active party has +30 max HP, +3m movement, immunity to fear and poison, advantage on WIS saves, and one character has a free cheat-death. This costs you two minutes of camp management per long rest.
+
+---
+
+## Economy: Gold, Vendors, and Pickpocketing
+
+### Getting Rich
+
+Gold matters in Wave 1 because difficulty mods make consumables essential. You'll be buying potions, scrolls, elixirs, and special arrows at every opportunity. Here's how to always have gold:
+
+**Loot efficiently:** Pick up everything with a weight-to-value ratio better than 10:1 (gold-per-kg). Prioritize gems, jewelry, enchanted items, scrolls, and potions. Leave heavy mundane armor and weapons unless you're heading directly to a vendor.
+
+**Vendor attitude matters:** Donate gold to vendors (barter mode, give them gold for nothing) until their attitude reaches 100%. A vendor at 100% attitude gives you significantly better prices. The 400-500g investment pays for itself within one or two shopping trips over a full playthrough.
+
+**Vendor inventory resets after every long rest OR when any character levels up.** This means you can:
+1. Buy a vendor's entire stock of Cloud Giant Strength Elixirs or Arrows of Many Targets.
+2. Have a hireling level up at Withers (or respec and re-level).
 3. The vendor now has fresh stock.
-4. Repeat for unlimited access to specific consumable items.
+4. Repeat until you have a lifetime supply.
 
-### Pickpocket Optimization
+### Pickpocketing: The Dark Art
 
-The pickpocket DC is based on the item's value and weight. Gold is the hardest to steal because it stacks to large amounts.
+The pickpocket DC scales with item value and weight. Gold is the hardest to steal because it stacks to enormous totals. Here's the optimized setup:
 
-**Strategy for stealing gold:** Before pickpocketing a vendor after a large trade, split their gold stack in the barter screen. Put gold into smaller stacks (e.g., 500g each). Each smaller stack has a lower pickpocket DC than one giant stack.
+**Your thief:** A Rogue (Thief) or Bard with 20+ DEX and Expertise in Sleight of Hand. Equip: Gloves of Thievery (advantage on Sleight of Hand, Zhentarim Hideout, Act 1), Smuggler's Ring (+2 Sleight of Hand, near the Risen Road), and the Graceful Cloth (+2 DEX, from Lady Esther in the Mountain Pass).
 
-**Best pickpocket setup:** Rogue (Thief) with 20+ DEX, Expertise in Sleight of Hand, Guidance (+1d4), Enhance Ability: Dexterity (advantage), Bardic Inspiration (+1d10), Gloves of Thievery (advantage on Sleight of Hand checks, from the Zhentarim Hideout in Act 1), Smuggler's Ring (+2 Sleight of Hand, found near the Risen Road). In turn-based mode, you can steal the entire world.
+**The setup, every time:** Cast Guidance (+d4). Have a party member cast Enhance Ability: Dexterity (advantage). Have your Bard give Bardic Inspiration (+d10). Enter turn-based mode (this prevents the AI from moving or detecting you mid-pickpocket). You now have: d20 (with advantage) + 5 (DEX) + 8 (Expertise) + 2 (ring) + d4 (Guidance) + d10 (Bardic Inspiration) = minimum roll of 18, average of 35+. You will succeed on DC 30 checks reliably.
 
----
-
-## Mod Integration
-
-### How Mod Classes Interact With Base Systems
-
-Mod-added classes (Artificer, Blood Hunter) generally use existing game systems:
-- **Spellcasting:** They use the same spell slots and spell lists as base classes. Artificers use the Wizard spell list for their class spells. Blood Hunters use a custom spell-like ability system (Blood Maledict, Crimson Rite) that doesn't interact with spell slots.
-- **Progression:** They follow the same XP table and gain feats at the same levels (4, 8, 12). With Unlock Level Curve installed, they continue to level 20 with their class features progressing as designed.
-- **Equipment:** They use standard weapon and armor proficiencies. Artificers can use any weapon they're proficient with for infusions. Blood Hunters favor finesse and versatile weapons.
-- **Multiclassing:** They can multiclass with base classes normally. An Artificer/Wizard is a strong combination (INT synergy). A Blood Hunter/Fighter works well (martial synergy).
-
-**Importance of ImpUI:** All modded classes, subclasses, races, spells, and feats require ImprovedUI. If you install any content mod without ImpUI active, the mod won't appear in character creation and may cause crashes.
-
-### Which Mod Spells Are Worth Picking
-
-From the 5e Spells mod, the standout additions:
-
-- **Booming Blade (cantrip):** Melee weapon attack that deals extra thunder damage if the target moves. Essential for melee casters and Eldritch Knights. Combine with Mobile feat: hit, walk away, they take damage if they follow.
-- **Green-Flame Blade (cantrip):** Melee weapon attack that deals fire damage to a second target. Better AoE than Booming Blade. Best on melee Sorcerers and Warlocks.
-- **Toll the Dead (cantrip):** d8 necrotic damage (d12 if the target is missing HP). The best damage cantrip after Eldritch Blast.
-- **Mind Sliver (cantrip):** d6 psychic damage plus -1d4 on the target's next saving throw. Best setup cantrip — cast this, then have your controller cast a save-or-suck spell.
-- **Absorb Elements (level 1):** Reaction to gain resistance to an element for one turn. Essential survival tool for casters on higher difficulties.
-
-### How Difficulty Mods Change Encounter Planning
-
-With Tactician Plus or Combat Extender active:
-
-- **Control spells gain value:** When enemies have 200-300% HP, burning them down with pure damage takes too long. Hold Person/Monster, Hypnotic Pattern, and Fear become encounter-winning tools.
-- **Positioning becomes critical:** Higher enemy damage means you can't face-tank. Use high ground, line of sight breaks, and choke points.
-- **AoE becomes mandatory:** More enemies (from Additional Encounters-type mods) means single-target damage loses value. Stock up on Fireball, Spirit Guardians, Hunger of Hadar, and Wall of Fire.
-- **Consumables become essential:** Elixir of Bloodlust (extra action on kill), Elixir of Vigilance (advantage on initiative), Potion of Speed (Haste for 3 turns), and specialty arrows are no longer optional — they're your edge.
+**The gold trick:** Before pickpocketing a vendor's gold, open the barter screen and split their gold into smaller stacks (e.g., 500g each). Each smaller stack has a lower pickpocket DC than one giant stack of 10,000g. Steal the small stacks one at a time.
 
 ---
 
-## Late-Game & Post-Campaign
+## Legendary Items: What to Hunt in Act 3
 
-### Legendary Item Locations (Act 3)
+Act 3 is dense with powerful items. Here are the ones worth planning your route around:
 
-| Item | Location | Best For |
-|------|----------|----------|
-| **Balduran's Giantslayer** | Ansur's lair, Wyrmway (under Wyrm's Rock Prison) | STR martials — double STR mod to damage, advantage vs Large+ enemies |
-| **Nyrulna** | Akabi's Djinni lamp, Jungle (Circus of the Last Days) | Throw builds — returns when thrown, AoE thunder damage on impact |
-| **Markoheshkir** | Ramazith's Tower (Lorroakan's tower, Sorcerous Sundries) | Casters — free spell slot recovery and elemental attunement |
-| **Helldusk Armor** | House of Hope (Raphael's vault) | Anyone — 21 AC heavy armor that anyone can wear, fire immunity |
-| **Helm of Balduran** | Ansur's lair | Tanks — +1 AC, +1 saving throws, heals 2 HP per turn, stun immunity |
-| **Duellist's Prerogative** | Save Vanra quest (Lower City, Blushing Mermaid) | Duelists — legendary rapier, extra reaction, bonus action attack |
-| **Gontr Mael** | Steel Watch Foundry (boss drop) | Archers — legendary longbow, free Haste once per short rest |
-| **Orphic Hammer** | House of Hope (Raphael's vault) | Any STR character — frees Orpheus, 3d6 bludgeoning + advantage vs spellcasters |
+| Item | Where to Find It | Why You Want It |
+|------|-----------------|-----------------|
+| Balduran's Giantslayer | Ansur's lair, Wyrmway (under Wyrm's Rock Prison) | STR martials: double STR mod to damage, advantage vs Large+ enemies, giant form once per short rest |
+| Nyrulna | Akabi's Djinni lamp, Jungle (Circus of the Last Days) | Throw builds: returns when thrown, AoE thunder damage on impact, +3m movement and jump distance |
+| Markoheshkir | Ramazith's Tower (Lorroakan's tower, Sorcerous Sundries) | Casters: free spell slot recovery once per short rest, elemental attunement for bonus damage |
+| Helldusk Armor | House of Hope (Raphael's vault) | Anyone: 21 AC heavy armor with no proficiency requirement, fire immunity, fly once per long rest |
+| Helm of Balduran | Ansur's lair | Tanks: +1 AC and saves, heals 2 HP per turn, stun immunity, cannot be critically hit |
+| Duellist's Prerogative | Save Vanra quest (Blushing Mermaid, Lower City) | Duelists: legendary rapier with extra reaction per turn, bonus action attack, increased crit range |
+| Gontr Mael | Steel Watch Foundry (boss drop) | Archers: legendary longbow, free Haste once per short rest, guiding bolt on hit |
+| Orphic Hammer | House of Hope (Raphael's vault) | STR characters: 3d6 bludgeoning, advantage vs spellcasters, required for certain story outcomes |
 
-### Optimal Act 3 Routing
+### Optimal Act 3 Route
 
-1. **Rivington:** Enter from the road. Talk to the Gur, resolve the Open Hand Temple murder investigation. Visit the Circus of the Last Days (Akabi's lamp → Nyrulna trident). Donate to the refugee camp to trigger the Mystic Carrion quest.
-2. **Wyrm's Crossing:** Cross the bridge. Visit Danthelon's Dancing Axe (vendor). Enter Wyrm's Rock Fortress for Gortash's coronation. Explore the prison (Wyrmway entrance for Ansur quest).
-3. **Lower City (efficient order):**
-   - Sorcerous Sundries (Markoheshkir, scrolls, Gale's quest)
-   - Stormshore Tabernacle (basement → ritual for stat boosts)
-   - House of Grief (Shadowheart's quest — tough Sharran fight, come at level 11+)
-   - Cazador's Palace (Astarion's quest — tough boss, come at level 11+)
-   - Steel Watch Foundry (disable the Steel Watch)
-   - Iron Throne (rescue prisoners — timed mission, be prepared)
-   - House of Hope (Raphael — the hardest fight in Act 3, come at level 12 with endgame gear)
-4. **Final sequence:** Confront Gortash → Morphic Pool → final battle. Once you enter the Morphic Pool, there's no return.
+The order you tackle Act 3 matters enormously for item progression. Here's the efficient route:
 
-### Before the Point of No Return
+1. **Rivington:** Enter from the road. Talk to the Gur. Investigate the Open Hand Temple murders (leads to a legendary trident later). Visit the Circus of the Last Days — get pickpocketed by Akabi's Djinni, get teleported to the Jungle, find Nyrulna (your first legendary weapon). This is doable at level 9-10.
 
-The game warns you before the final sequence. Before proceeding:
-- Complete all companion quests (they affect epilogue dialogue)
-- Use your remaining camp supplies for one last long rest and buff session
-- Equip your best gear on every character (including those not in your active party — some endings involve all companions)
-- Cast every long-rest buff available: Heroes' Feast, Aid (max level), Death Ward, Longstrider, Freedom of Movement
-- Respec any characters you're unhappy with — this is your last chance
+2. **Wyrm's Crossing:** Cross the bridge. Visit Danthelon's Dancing Axe (excellent vendor). Enter Wyrm's Rock for Gortash's coronation (story event, no combat). Explore Wyrm's Rock Prison — the Wyrmway entrance for Ansur's quest starts here.
+
+3. **Lower City — early stops:**
+   - **Sorcerous Sundries first.** Markoheshkir is on the top floor. This is your caster's best weapon and it's obtainable at level 10 with smart tactics (don't fight Lorroakan directly at low level — negotiate or use invisibility).
+   - **Stormshore Tabernacle.** In the basement, you can make offerings to gods for permanent +2 stat boosts. Do this early so you benefit from the stats for the entire act.
+
+4. **Lower City — mid-game (level 11+):**
+   - **House of Grief (Shadowheart's quest).** The Sharrans are level 11-12 with devastating Darkness tactics. Come with counters to magical darkness (Devil's Sight, Daylight spell).
+   - **Cazador's Palace (Astarion's quest).** Cazador is a vampire lord with powerful necrotic abilities. Daylight trivializes this fight — cast it and he's severely debuffed.
+   - **Steel Watch Foundry.** Disable the Steel Watch to make the final sequence easier. Gontr Mael drops from the boss here.
+
+5. **Lower City — endgame (level 12):**
+   - **House of Hope (Raphael).** This is the hardest fight in Act 3. Raphael has 666 HP, multiple phases, and an army of cambions. Come with Hope (an NPC ally in the prison), stack radiant damage (Raphael is a devil), and destroy the four Soul Pillars first (they empower him). Bring the Orphic Hammer and Helldusk Armor from the vault. This should be your last major stop before the final sequence.
+
+6. **Endgame sequence:** Confront Gortash → Iron Throne (timed rescue mission — bring mobility and teleportation) → Morphic Pool. Once you enter the Morphic Pool, there's no going back. Before entering: complete all pending companion quests, cast every long-rest buff (Heroes' Feast, Aid, Death Ward, Freedom of Movement, Longstrider), and equip every character (including those not in your active party — some endings involve all companions).

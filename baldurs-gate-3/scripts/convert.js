@@ -25,7 +25,13 @@ files.forEach(filename => {
     return;
   }
   const md = fs.readFileSync(mdPath, 'utf8');
-  const typst = convertMarkdownToTypst(md);
+  let typst = convertMarkdownToTypst(md);
+
+  // Post-processing: wrap mod entries in styled panels (only for modlist files)
+  if (filename.includes('modlist')) {
+    typst = wrapModPanels(typst);
+  }
+
   const typFilename = filename.replace('.md', '.typ');
   const typPath = path.join(cacheDir, typFilename);
   fs.writeFileSync(typPath, typst, 'utf8');
@@ -37,16 +43,12 @@ console.log(`Conversion complete. ${files.filter(f => fs.existsSync(path.join(gu
 function convertMarkdownToTypst(md) {
   let result = md;
 
-  // Escape backslashes first
   result = result.replace(/\\/g, '\\\\');
-
-  // Handle formatting: *** -> ** -> *
 
   // Bold-italic: ***text*** -> *_text_*
   result = result.replace(/\*\*\*(.+?)\*\*\*/g, '*_$1_*');
 
-  // Bold: **text** or __text__ -> *text* (Typst uses * for strong)
-  // Skip bold conversion for URLs to avoid Typst delimiter conflicts
+  // Bold: **text** or __text__ -> *text*
   result = result.replace(/\*\*(.+?)\*\*/g, (match, inner) => {
     if (/^https?:\/\//.test(inner)) return inner;
     return '*' + inner + '*';
@@ -56,10 +58,8 @@ function convertMarkdownToTypst(md) {
     return '*' + inner + '*';
   });
 
-  // Italic: *text* -> _text_ (Typst uses _ for emphasis)
-  // Only convert italic markers that enclose non-URL text
+  // Italic: *text* -> _text_
   result = result.replace(/(?<!\*)\*(?!\*)([^*\n]+?)(?<!\*)\*(?!\*)/g, (match, inner) => {
-    // Don't convert if it looks like a URL
     if (/^https?:\/\//.test(inner)) return match;
     return '_' + inner + '_';
   });
@@ -77,7 +77,7 @@ function convertMarkdownToTypst(md) {
     return `[${text}](${url})`;
   });
 
-  // Headings: # H1 -> = H1, ## H2 -> == H2, etc.
+  // Headings: # H1 -> = H1, etc.
   result = result.replace(/^#### (.+)$/gm, '==== $1');
   result = result.replace(/^### (.+)$/gm, '=== $1');
   result = result.replace(/^## (.+)$/gm, '== $1');
@@ -86,14 +86,13 @@ function convertMarkdownToTypst(md) {
   // Blank lines before lists
   result = result.replace(/([^\n])\n- /g, '$1\n\n- ');
 
-  // Convert markdown tables to Typst tables
+  // Tables
   result = convertTables(result);
 
   // Horizontal rules
   result = result.replace(/^---$/gm, '#line(length: 100%)');
 
-  // Inline code: `code` -> #raw("code")
-  // Skip code that's inside already-converted table blocks
+  // Inline code
   result = result.replace(/`([^`\n]+)`/g, (match, code) => {
     return `#raw("${code.replace(/"/g, '\\"')}")`;
   });
@@ -102,7 +101,6 @@ function convertMarkdownToTypst(md) {
 }
 
 function convertTables(md) {
-  // Split into lines
   const lines = md.split('\n');
   const output = [];
   let i = 0;
@@ -110,12 +108,9 @@ function convertTables(md) {
   while (i < lines.length) {
     const line = lines[i];
 
-    // Check if this line starts a table (starts and ends with |)
     if (/^\|.+\|$/.test(line.trim()) && i + 1 < lines.length) {
       const nextLine = lines[i + 1];
-      // Check if next line is a separator row (| --- | --- |)
       if (/^\|[\s\-:]+\|[\s\-:|]+\|$/.test(nextLine.trim())) {
-        // We found a table! Collect all rows
         const headerRow = line;
         const dataRows = [];
 
@@ -125,15 +120,24 @@ function convertTables(md) {
           j++;
         }
 
-        // Convert to Typst table
         const headerCells = headerRow.split('|')
           .map(c => c.trim())
           .filter(c => c.length > 0);
 
         const numColumns = headerCells.length;
+        const rowCount = dataRows.length + 1; // +1 for header
 
-        // Build the Typst table
-        let tableCode = `#table(\n  columns: ${numColumns},\n`;
+        // Build styled Typst table
+        let tableCode = `#table(\n`;
+        tableCode += `  columns: (1fr,)\n`.repeat(Math.min(numColumns, 1));
+        if (numColumns > 1) {
+          // Repeat 1fr for each column
+          tableCode = `#table(\n  columns: (${Array(numColumns).fill('1fr').join(', ')}),\n`;
+        }
+        tableCode += `  fill: (x, y) => if y == 0 { rgb("#31243e") } else if calc.rem(y, 2) == 0 { rgb("#1e1628") } else { rgb("#1a1220") },\n`;
+        tableCode += `  stroke: (x, y) => if y == 0 { (bottom: 0.5pt + rgb("#d4a843")) } else { none },\n`;
+        tableCode += `  inset: (x: 10pt, y: 6pt),\n`;
+        tableCode += `  align: horizon,\n`;
 
         // Header row
         const headerContent = headerCells.map(c => `[${escapeTypst(c)}]`).join(', ');
@@ -141,21 +145,11 @@ function convertTables(md) {
 
         // Data rows
         for (const row of dataRows) {
-          const cells = row.split('|')
-            .map(c => c.trim())
-            .filter((c, idx) => idx > 0 && idx <= numColumns); // skip leading empty from split
-
-          // If the first split element is empty (from leading |), shift
           const adjustedCells = row.split('|').map(c => c.trim()).filter(c => c.length > 0);
 
-          // Ensure we have the right number of columns
           const rowCells = [];
-          for (let k = 0; k < numColumns && k < adjustedCells.length; k++) {
-            rowCells.push(`[${escapeTypst(adjustedCells[k])}]`);
-          }
-          // Pad if needed
-          while (rowCells.length < numColumns) {
-            rowCells.push('[]');
+          for (let k = 0; k < numColumns; k++) {
+            rowCells.push(`[${escapeTypst(adjustedCells[k] || '')}]`);
           }
 
           tableCode += `  ${rowCells.join(', ')},\n`;
@@ -163,7 +157,7 @@ function convertTables(md) {
 
         tableCode += ')';
         output.push(tableCode);
-        output.push(''); // blank line after table
+        output.push('');
 
         i = j;
         continue;
@@ -177,9 +171,96 @@ function convertTables(md) {
   return output.join('\n');
 }
 
+function wrapModPanels(typst) {
+  // Wrap each "=== ModName" section in a styled block
+  const lines = typst.split('\n');
+  const output = [];
+  let i = 0;
+  let inPanel = false;
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Detect mod entry: === heading followed by content starting with -
+    // Only wrap if it looks like a mod entry (has link or specific format)
+    const isModHeading = /^=== .+/.test(line) &&
+      (line.includes('#link(') || line.includes('**') || /^=== [A-Z]/.test(line));
+
+    if (isModHeading && !inPanel) {
+      // Start a mod panel
+      output.push('');
+      output.push('#block(');
+      output.push('  fill: rgb("#1e1628"),');
+      output.push('  stroke: 0.5pt + rgb("#3a2d4e"),');
+      output.push('  inset: 12pt,');
+      output.push('  radius: 4pt,');
+      output.push('  width: 100%,');
+      output.push('  breakable: true,');
+      output.push(')[{');
+      output.push(line);
+      inPanel = true;
+      i++;
+      continue;
+    }
+
+    if (inPanel) {
+      // Check if we've reached the next mod or end of modlist section
+      const isNextMod = /^=== .+/.test(line);
+      const isCategoryHeader = /^== .+/.test(line);
+
+      if (isNextMod || isCategoryHeader) {
+        // Close current panel
+        output.push('}]');
+        output.push('');
+
+        if (isNextMod) {
+          // Start a new panel immediately
+          output.push('#block(');
+          output.push('  fill: rgb("#1e1628"),');
+          output.push('  stroke: 0.5pt + rgb("#3a2d4e"),');
+          output.push('  inset: 12pt,');
+          output.push('  radius: 4pt,');
+          output.push('  width: 100%,');
+          output.push('  breakable: true,');
+          output.push(')[{');
+          output.push(line);
+          inPanel = true;
+          i++;
+          continue;
+        } else {
+          // Category header - end panel
+          inPanel = false;
+          output.push(line);
+          i++;
+          continue;
+        }
+      }
+
+      // Blank line inside panel
+      if (line.trim() === '') {
+        output.push('');
+        i++;
+        continue;
+      }
+
+      output.push(line);
+      i++;
+      continue;
+    }
+
+    output.push(line);
+    i++;
+  }
+
+  // Close any open panel at end
+  if (inPanel) {
+    output.push('}]');
+  }
+
+  return output.join('\n');
+}
+
 function escapeTypst(text) {
-  // Remove bold/italic markers that our converter already processed
-  // Escape # characters that aren't part of Typst functions
   return text
     .replace(/\\/g, '\\\\')
     .replace(/#(?!\w+\()/g, '\\#');

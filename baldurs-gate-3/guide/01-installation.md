@@ -1,146 +1,137 @@
 # Installation Guide
 
-This guide walks you through installing and configuring BG3 Mod Manager (BG3MM) and setting up your mods for both waves of Mythic Crucible.
+Getting mods working in Baldur's Gate 3 is straightforward once you understand the tools. This guide will walk you through installing BG3 Mod Manager, setting up your mods, and configuring everything for both waves of Mythic Crucible. Follow the steps in order, and you'll be playing within minutes.
 
 ## Installing BG3 Mod Manager
 
-### Download
+BG3 Mod Manager (BG3MM) is the community-standard tool for managing BG3 mods. It's a standalone program that lives outside the game and handles downloading, activating, and ordering your mods.
 
-Download BG3 Mod Manager from the official GitHub releases page:
+### Step 1: Download
+
+Head to the official GitHub releases page:
 
 **https://github.com/LaughingLeader/BG3ModManager/releases**
 
-Download the latest release `.zip` file (not the source code). As of this writing, the latest version supports Patch 8.
+Download the latest `.zip` file from the top of the releases list. Don't grab the source code — you want the pre-built release. The latest version as of this writing fully supports Patch 8.
 
-### Installation
+### Step 2: Install
 
-1. Extract the downloaded `.zip` file to a folder of your choice (e.g., `C:\Games\BG3ModManager\`). Do not put it inside the Baldur's Gate 3 game directory.
+Extract the `.zip` to a folder of your choice — something like `C:\Games\BG3ModManager\`. Do NOT put it inside your Baldur's Gate 3 game directory. It needs to live separately.
 
-2. Run `BG3ModManager.exe`.
+Run `BG3ModManager.exe`. You'll probably get a Windows SmartScreen warning because the tool isn't signed — click *More Info* and then *Run Anyway*. It's safe; this is an open-source project used by tens of thousands of players.
 
-3. On first launch, BG3MM will ask you to locate your Baldur's Gate 3 installation:
-   - The default Steam path is: `C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\`
-   - For GOG: `C:\Program Files (x86)\GOG Galaxy\Games\Baldurs Gate 3\`
-   - Point it to the folder containing `bg3.exe` or `bg3_dx11.exe`.
+### Step 3: Point It at Your Game
 
-4. BG3MM will detect the game and display the main interface with your installed mods. On a fresh install, the list will be empty.
+The first time you launch BG3MM, it will ask you where Baldur's Gate 3 is installed. For most Steam users, that's:
 
-### First-Launch Configuration
+`C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\`
 
-1. Go to **Settings > Preferences** (or click the gear icon):
-   - **Game Data Path:** Should point to your BG3 `Data` folder. BG3MM usually detects this correctly.
-   - **Mods Directory:** Where your downloaded `.pak` mod files are stored. Default is `%LocalAppData%\Larian Studios\Baldur's Gate 3\Mods\`. Keep this default — it's where the game expects mods.
+For GOG users: `C:\Program Files (x86)\GOG Galaxy\Games\Baldurs Gate 3\`
 
-2. Go to **Settings > Open Mods Folder** to confirm the mods directory exists and is accessible.
+Point it at the folder containing `bg3.exe` or `bg3_dx11.exe`. Once it finds the game, it will detect your game version and show an empty mod list (if this is your first time).
 
-3. **Create a profile:** Click **File > New Profile** (or the profile dropdown at the top). Name it **"Mythic Crucible — Wave 0"**. This profile will contain only your Wave 0 mods.
+### Step 4: Check Your Setup
 
-### Verifying Game Detection
+Open **Settings > Preferences** (or click the gear icon) and verify two things:
 
-Check the status bar at the bottom of BG3MM:
-- It should show your game version (e.g., "v4.1.1.7209685" for Patch 8).
-- The profile name should appear in the top dropdown.
-- If it says "Game not found," re-check the game path in Settings.
+- **Game Data Path** should point to your BG3 `Data` folder. BG3MM usually detects this correctly on its own.
+- **Mods Directory** should default to `%LocalAppData%\Larian Studios\Baldur's Gate 3\Mods\`. Keep this — it's where the game looks for mods.
 
----
+Click **Settings > Open Mods Folder** to confirm the directory exists and is accessible.
 
-## Setting Up Mods
+### Step 5: Create Your Profiles
 
-### Downloading Mods from Nexus Mods
+Profiles let you maintain different mod sets for different playthroughs. At the top of BG3MM, you'll see a dropdown. Click it and create two profiles:
 
-1. Visit the mod URL listed in each mod entry in this guide.
+1. **Mythic Crucible — Wave 0** (for your beginner playthrough)
+2. **Mythic Crucible — Wave 1** (for your experienced playthrough)
 
-2. On the mod's Nexus page, go to the **Files** tab.
-
-3. Click **Manual Download** on the main file. For mods with multiple files, read the description to choose the correct one (some mods have "Patch 8" specific versions).
-
-4. If prompted, choose **Slow Download** (free) or **Fast Download** (Premium). The file will download as a `.zip` or `.pak` file.
-
-5. If the download is a `.zip`, extract it. You're looking for `.pak` files inside. Most mods include the `.pak` directly.
-
-### Importing Mods into BG3MM
-
-1. Drag and drop the `.pak` file(s) from your downloads folder into the BG3MM window. Alternatively, use **File > Import Mod** and browse to the `.pak` file.
-
-2. The mod will appear in the **Inactive Mods** list (right panel).
-
-3. To activate a mod, drag it from **Inactive Mods** to **Active Mods** (left panel) or double-click it.
-
-4. The order of mods in the Active Mods list (top to bottom) is your load order. See the Load Order section of this guide (`guide/06-load-order.md`) for the recommended order.
-
-### Saving and Exporting
-
-1. After arranging your mods, click **File > Save Order** (or Ctrl+S). This saves your load order within BG3MM.
-
-2. Click **File > Export Order to Game** (or the export button in the toolbar). This writes your load order to the game's `modsettings.lsx` file so Baldur's Gate 3 knows which mods to load.
-
-3. You must export every time you change your mod list. If you add, remove, or reorder mods without exporting, the changes won't take effect.
-
-### Verifying Mods Are Active In-Game
-
-1. Launch Baldur's Gate 3.
-
-2. On the main menu, you'll see a **Mod Manager** option (this is the game's built-in mod manager, separate from BG3MM). Click it.
-
-3. You should see all your activated mods listed. If any are missing:
-   - Go back to BG3MM and verify the mod is in the Active Mods list.
-   - Click **Export Order to Game** again.
-   - Restart the game.
-
-4. **Do not enable or disable mods in the in-game Mod Manager** — it can conflict with BG3MM. Use BG3MM exclusively for managing your mods.
-
-### Troubleshooting Common Issues
-
-| Issue | Likely Cause | Fix |
-|-------|-------------|-----|
-| Game crashes on launch | Load order conflict or outdated mod | Disable all mods, verify game launches vanilla. Re-enable mods one by one. Check mod page for Patch 8 compatibility. |
-| Mod not appearing in game | Not exported to game, or load order issue | In BG3MM: File > Export Order to Game. Restart game. Check mod is in Active Mods. |
-| "Mod mismatch" warning in multiplayer | Different mods than other players | Only relevant for multiplayer. Ignore for single player. |
-| Save won't load | Missing a mod that was active when saving | Re-enable the mod or start a new game. Never remove mods mid-playthrough unless the mod author explicitly says it's safe. |
-| BG3MM doesn't detect game | Wrong game path | Settings > Preferences > Game Data Path. Point to BG3's `Data` folder. |
-| Mod `.pak` won't import | Corrupted download or unsupported format | Re-download the mod. Ensure you're importing a `.pak` file, not `.zip` or other archives. |
+Switch between them using the dropdown. Each profile remembers its own mod list and load order — your Wave 0 save won't be affected when you switch to Wave 1.
 
 ---
 
-## Wave Setup
+## Downloading and Installing Mods
 
-### Wave 0 Setup
+### Getting Mods from Nexus Mods
 
-1. In BG3MM, select (or create) the profile **"Mythic Crucible — Wave 0"**.
+Every mod in this guide has a direct Nexus Mods link. Here's the flow for each one:
 
-2. Import and activate ALL mods listed in `guide/03-wave-0-modlist.md` (Wave 0 Modlist).
+1. Click the mod's link in the guide. It opens the mod's Nexus page.
+2. Go to the **Files** tab at the top of the page.
+3. Click **Manual Download** on the main file. Some mods have multiple files — read the description to pick the right one (occasionally there's a Patch 8-specific version).
+4. If asked, choose **Slow Download** (free) or **Fast Download** (Premium).
+5. Most files download as `.pak` files — that's the mod. If it downloads as a `.zip`, extract it to find the `.pak` file inside.
 
-3. Arrange them in the load order specified in `guide/06-load-order.md`.
+### Adding Mods to BG3MM
 
-4. Click **File > Save Order**.
+1. Drag the `.pak` file from your Downloads folder directly into the BG3MM window. Alternatively: **File > Import Mod** and browse to the file.
+2. The mod appears in the *Inactive Mods* list on the right.
+3. Drag it to the *Active Mods* list on the left, or double-click it. It's now active.
 
-5. Click **File > Export Order to Game**.
+### Load Order Basics
 
-6. Launch BG3 and start a new game. You're ready for "First Steps into Faerun."
+The order of mods in the *Active Mods* list (top to bottom) is your load order. Mods loaded earlier are foundations; mods loaded later can override them. The recommended load order for Mythic Crucible is in `guide/06-load-order.md` — follow that exactly.
 
-### Wave 1 Setup (After Completing Wave 0)
+To reorder: drag mods up or down in the list. To save: **File > Save Order** (Ctrl+S). This saves inside BG3MM, but does NOT tell the game about your changes yet.
 
-1. In BG3MM, create a new profile: **"Mythic Crucible — Wave 1"**.
+### Exporting to the Game
 
-2. Import and activate ALL Wave 0 mods PLUS ALL Wave 1 mods listed in `guide/05-wave-1-modlist.md`.
+This is the most common mistake new users make. After changing your mod list, you MUST export:
 
-3. Arrange them in the Wave 1 load order specified in `guide/06-load-order.md`. Wave 0 mods load first, then Wave 1 mods.
+1. Click **File > Export Order to Game** (or the Export button in the toolbar).
+2. This writes your load order to the game's `modsettings.lsx` file. Until you do this, Baldur's Gate 3 doesn't know your mods exist.
+3. Export every single time you add, remove, or reorder a mod.
 
-4. Save the order and export to game.
+### Verifying Mods Are Active
 
-5. **Start a NEW game.** Wave 1 is not an upgrade to your Wave 0 save. Many Wave 1 mods (new races, classes, quests, areas) require a new game to function. Your Wave 0 playthrough remains intact as a separate save.
+Launch Baldur's Gate 3. On the main menu, click **Mod Manager** (the in-game one, separate from BG3MM). You should see all your active mods listed. If anything is missing:
 
-6. You're ready for "Mythic Crucible."
+- Go back to BG3MM and check the mod is in the Active Mods list.
+- Click **Export Order to Game** again.
+- Restart BG3.
 
-### Profile Switching
+**Important:** Don't enable or disable mods in the in-game Mod Manager — it can conflict with BG3MM. Use BG3MM exclusively for all mod management.
 
-BG3MM profiles make it easy to switch between waves:
-- Select the profile from the dropdown at the top of BG3MM.
-- Export to game before launching.
-- Your Wave 0 save is safe — it simply won't load if Wave 1 mods are active (and vice versa).
+### Troubleshooting
 
-### Important Notes
+| Problem | What It Usually Means | How to Fix It |
+|---------|----------------------|---------------|
+| Game crashes when launching | Load order conflict, or a mod is incompatible with Patch 8 | Disable all mods, verify game launches vanilla. Re-enable one at a time. Check the mod's Nexus page for Patch 8 complaints. |
+| Mod doesn't appear in-game | You forgot to export, or the mod is in the wrong order | Export from BG3MM. Restart game. Check Active Mods list. |
+| Save file won't load | A mod that was active when you saved is now missing | Re-enable the missing mod, or start a new game. Never remove mods mid-playthrough unless the author says it's safe. |
+| "Mod mismatch" warning | Only relevant if playing multiplayer with someone who has different mods | Ignore for single player. |
+| BG3MM says "Game not found" | Wrong game path in settings | Settings > Preferences > Game Data Path. Point to BG3's `Data` folder. |
+| `.pak` file won't import | Either the download is corrupted, or you're trying to import a `.zip` instead of a `.pak` | Re-download. Make sure you've extracted the `.zip` if the mod came in one. |
 
-- **Never remove mods mid-playthrough** unless the mod author explicitly says it's safe. Removing a mod can corrupt your save.
-- **Always export after changing mods.** The game reads `modsettings.lsx` at launch. If you forget to export, the game loads with your last exported configuration.
-- **Backup your saves** before installing large mod sets. Saves are located at: `%LocalAppData%\Larian Studios\Baldur's Gate 3\PlayerProfiles\<ProfileName>\Savegames\Story\`
+### Mod Safety Rules
+
+Three rules to protect your saves:
+
+1. **Never remove mods mid-playthrough.** Some mods can be safely removed, but unless the mod author explicitly states it's safe, assume it isn't. Removing mods can corrupt your save files.
+2. **Always export after changing mods.** The game reads `modsettings.lsx` once at launch. If you forget, your changes won't take effect until you export and restart.
+3. **Back up your saves.** Before installing a large new mod set, copy your save folder somewhere safe. Saves are at: `%LocalAppData%\Larian Studios\Baldur's Gate 3\PlayerProfiles\<YourProfile>\Savegames\Story\`
+
+---
+
+## Setting Up Each Wave
+
+### Wave 0 — Your First Playthrough
+
+1. In BG3MM, select the **Mythic Crucible — Wave 0** profile from the top dropdown.
+2. Download every mod listed in `guide/03-wave-0-modlist.md`.
+3. Import each `.pak` into BG3MM. Drag them all into the Active Mods list.
+4. Arrange them in the exact order shown in `guide/06-load-order.md` (Wave 0 section).
+5. Save the order (Ctrl+S), then Export to Game.
+6. Launch BG3. Start a New Game. You're ready for *First Steps into Faerun*.
+
+### Wave 1 — After Completing Wave 0
+
+1. In BG3MM, switch to the **Mythic Crucible — Wave 1** profile.
+2. You need ALL Wave 0 mods AND ALL Wave 1 mods (from `guide/05-wave-1-modlist.md`).
+3. Import everything. Arrange in the Wave 1 load order from `guide/06-load-order.md`. Note: Wave 0 mods stay in their original order at the top. Wave 1 mods append below them.
+4. Save and Export.
+5. **Start a completely new game.** Wave 1 mods require a fresh save — many add content that only initializes during character creation or at game start. Your Wave 0 save remains intact, loaded under the Wave 0 profile.
+
+### Switching Between Profiles
+
+Simply select the profile you want from the dropdown in BG3MM, export to game, and launch. Your Wave 0 saves will only load when the Wave 0 mod set is active, and your Wave 1 saves will only load under Wave 1. You can freely switch between them — neither affects the other.
