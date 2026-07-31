@@ -196,7 +196,7 @@ function wrapModPanels(typst) {
       output.push('  radius: 4pt,');
       output.push('  width: 100%,');
       output.push('  breakable: true,');
-      output.push(')[{');
+      output.push(')[');
       output.push(line);
       inPanel = true;
       i++;
@@ -210,7 +210,7 @@ function wrapModPanels(typst) {
 
       if (isNextMod || isCategoryHeader) {
         // Close current panel
-        output.push('}]');
+        output.push(']');
         output.push('');
 
         if (isNextMod) {
@@ -222,7 +222,7 @@ function wrapModPanels(typst) {
           output.push('  radius: 4pt,');
           output.push('  width: 100%,');
           output.push('  breakable: true,');
-          output.push(')[{');
+          output.push(')[');
           output.push(line);
           inPanel = true;
           i++;
@@ -254,7 +254,7 @@ function wrapModPanels(typst) {
 
   // Close any open panel at end
   if (inPanel) {
-    output.push('}]');
+    output.push(']');
   }
 
   return output.join('\n');
