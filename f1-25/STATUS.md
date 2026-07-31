@@ -14,28 +14,40 @@
 - [x] VERSION set to 0.1.0
 - [x] .gitignore created (excludes generated PDFs)
 - [x] Simplified Launcher v3.2.10 verified on OverTake.gg
+- [x] Typst theme verified with test compilation
+
+### Wave 0 — First Lap
+- [x] How-to-play guide written (9 sections)
+- [x] Wave 0 mods documented (Simplified Launcher entry)
+
+### Wave 1 — Building Speed
+- [x] Strategy guide written (7 sections)
+- [x] Wave 1 mods placeholder ready for user-provided mods
+
+### Wave 2 — Apex Predator
+- [x] Advanced guide written (5 sections)
+- [x] Wave 2 mods placeholder ready for user-provided mods
+
+### PDF
+- [x] Typst style.typ written (Carbon & Crimson theme)
+- [x] Typst guide.typ written (cover + TOC + body)
+- [x] generate-pdf.ps1 written with PDF verification
+- [x] GUIDE.md built from guide/ sources
+- [x] PDF compiles cleanly (617 KB, valid PDF header)
+
+### Documentation
+- [x] README.md written
+- [x] conflicts-mods.md created (awaiting mod testing data)
+- [x] mod-ideas.md created (awaiting community suggestions)
 
 ## Pending
 
-### Wave 0 — First Lap
-- [ ] How-to-play guide written (9 sections)
-- [ ] Wave 0 mods documented (Simplified Launcher entry)
+### Mods
+- [ ] Wave 1 mods — awaiting user-provided mod list (Task 5)
+- [ ] Wave 2 mods — awaiting user-provided mod list (Task 5)
 
-### Wave 1 — Building Speed
-- [ ] Strategy guide written (7 sections)
-- [ ] Wave 1 mods formatted and inserted (user-supplied)
-
-### Wave 2 — Apex Predator
-- [ ] Advanced guide written (5 sections)
-- [ ] Wave 2 mods formatted and inserted (user-supplied)
-
-### PDF
-- [ ] Typst style.typ written (Carbon & Crimson theme)
-- [ ] Typst guide.typ written (cover + TOC + body)
-- [ ] Typst theme verified with test compilation
-- [ ] generate-pdf.ps1 written
-- [ ] GUIDE.md built from guide/ sources
-- [ ] PDF compiles cleanly with verified output
+### Verification
+- [ ] Cross-reference guide content against actual F1 25 v1.24 in-game screens (controls, assists, career UI, ERS modes)
 
 ## Decisions
 
@@ -46,9 +58,10 @@
 - [x] Features: drag-and-drop mod install, ZIP/RAR/7Z support, backup/restore, favorites, categories, presets, conflict detection
 - [x] Note: Windows Defender may flag as false positive (unsigned Python self-package)
 
-### Guide Content
-- [ ] Game-mechanic content NOT yet verified against actual F1 25 v1.24 in-game screens — TODO: cross-reference controls, assist menu, career UI, ERS modes
+### Design
+- [x] Guide content caveat: game-mechanic content written from F1 series knowledge — needs verification against actual F1 25 v1.24
+- [x] PDF excluded from git tracking via .gitignore (generated binary)
 
 ## Skipped / Rejected
 
-(None yet)
+(None yet — populate as mods are evaluated)
