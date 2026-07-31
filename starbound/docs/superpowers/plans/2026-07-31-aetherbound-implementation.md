@@ -11,6 +11,7 @@
 **Spec:** `docs/superpowers/specs/2026-07-31-aetherbound-design.md`
 
 **Key design decisions (roast fixes):**
+
 - No emoji in templates — use styled text labels (`TIP`, `CONCEPT`, `WARNING`) for reliable font rendering
 - Category badges use inline `#box` not `#rect` (block vs inline layout)
 - Wave divider pages use `#show page` conditional to adjust footer color on dark backgrounds
@@ -24,6 +25,7 @@
 ### Task 1: Create directory structure
 
 **Files:**
+
 - Create all directories under `starbound/`
 
 - [ ] **Step 1: Create all directories**
@@ -72,6 +74,7 @@ git commit -m "feat(starbound): scaffold directory structure"
 ### Task 2: Download and bundle fonts
 
 **Files:**
+
 - Create: `starbound/assets/fonts/SpaceGrotesk-Bold.otf`
 - Create: `starbound/assets/fonts/SpaceGrotesk-Regular.otf`
 - Create: `starbound/assets/fonts/Inter-Regular.otf`
@@ -154,6 +157,7 @@ git commit -m "feat(starbound): bundle Space Grotesk and Inter fonts (SIL OFL)"
 ### Task 3: Write root project files
 
 **Files:**
+
 - Create: `starbound/AGENTS.md`
 - Create: `starbound/README.md`
 - Create: `starbound/.gitignore`
@@ -173,6 +177,7 @@ Aetherbound is a curated two-wave modlist guide for Starbound 1.4.4 (August 7, 2
 ## Project Structure
 
 ```
+
 starbound/
 ├── AGENTS.md                    # This file
 ├── README.md                    # Project overview and quick start
@@ -199,6 +204,7 @@ starbound/
 │   └── aetherbound.pdf          # Generated PDF (gitignored)
 └── tools/
     └── build.ps1                # PDF build script (font-path, version gate)
+
 ```
 
 ## Game Version
@@ -229,17 +235,17 @@ Prose chapters use `= H1` (page break before). Mod category files use `== H2` (i
 
 ## Typst Quick Reference
 
-| Element | Typst |
-|---------|-------|
-| H1 | `= Title` |
-| H2 | `== Section` |
-| H3 | `=== Subsection` |
-| Bold | `*bold*` |
-| Italic | `_italic_` |
-| Link | `#link("url")[text]` |
-| List | `- item` |
-| Image | `#image("path")` |
-| Page break | `#pagebreak()` |
+| Element    | Typst                |
+|------------|----------------------|
+| H1         | `= Title`            |
+| H2         | `== Section`         |
+| H3         | `=== Subsection`     |
+| Bold       | `*bold*`             |
+| Italic     | `_italic_`           |
+| Link       | `#link("url")[text]` |
+| List       | `- item`             |
+| Image      | `#image("path")`     |
+| Page break | `#pagebreak()`       |
 
 ## Adding a New Mod
 
@@ -280,6 +286,7 @@ Requires: Typst 0.15.0+
 - Cross-reference with Chucklefish Forums and r/starbound
 - Prefer mods updated after August 2019 (post-1.4.4 release)
 - Document every rejection in STATUS.md with reasoning
+
 ```
 
 Write to `starbound/AGENTS.md`
@@ -293,7 +300,9 @@ Write to `starbound/README.md`
 - [ ] **Step 3: Write .gitignore**
 
 ```
+
 output/*.pdf
+
 ```
 
 Write to `starbound/.gitignore`
@@ -337,9 +346,9 @@ Write to `starbound/STATUS.md`
 
 Canonical reference. STATUS.md links here for details.
 
-| Mod A | Mod B | Conflict Type | Resolution | Notes |
-|-------|-------|---------------|------------|-------|
-| — | — | — | — | *No conflicts documented yet* |
+| Mod A | Mod B | Conflict Type | Resolution | Notes                         |
+|-------|-------|---------------|------------|-------------------------------|
+| —     | —     | —             | —          | *No conflicts documented yet* |
 
 **Types:** Hard (cannot coexist), Soft (overlap, resolvable with load order)
 ```
@@ -395,9 +404,11 @@ git commit -m "feat(starbound): root project files"
 ### Task 4: Write Typst PDF template
 
 **Files:**
+
 - Create: `starbound/templates/aetherbound.typ`
 
 Key design rules applied in this template:
+
 - **No emoji** — all callouts use styled text labels (TIP, CONCEPT, WARNING)
 - **Badges are inline** — `#box` not `#rect` so category/system-impact labels sit next to the mod title
 - **Dark-page footer** — wave dividers override footer color for visibility
@@ -679,6 +690,7 @@ git commit -m "feat(starbound): Typst template — mod panels, callouts, wave di
 ### Task 5: Write build script with font-path and version gate
 
 **Files:**
+
 - Create: `starbound/tools/build.ps1`
 
 - [ ] **Step 1: Write build script**
@@ -771,6 +783,7 @@ git commit -m "feat(starbound): build script with --font-path, version gate, fon
 ### Task 6: Build gate — test template with one mod entry before writing content
 
 **Files:**
+
 - Create (temporary): `starbound/guide/introduction.typ` (minimal)
 - Create (temporary): `starbound/guide/install.typ` (minimal)
 - Create (temporary): all wave content files (minimal stubs)
@@ -899,6 +912,7 @@ cd starbound
 ```
 
 Expected output:
+
 ```
 === Aetherbound PDF Builder ===
 Project:  H:\Projects\modlists\starbound
@@ -918,17 +932,17 @@ If compilation fails, fix errors in the template or content stubs and retry unti
 
 Open `starbound/output/aetherbound.pdf` in a PDF viewer. Check:
 
-| Check | Expected |
-|-------|----------|
-| Cover page | Logo renders, "Aetherbound" title visible, subtitle in cyan |
-| TOC | Lists: Introduction, Installation, Wave 0 Story, How to Play, Wave 0 Modlist, Wave 1 Story, Strategy, Wave 1 Modlist |
-| Fonts | Headings use Space Grotesk (geometric, narrow); body uses Inter (neutral sans-serif). If both look like system sans-serif, fonts didn't load — check `--font-path`. |
-| Mod panel 1 | "Test Mod" with cyan "QoL" badge inline next to title. No "IMPACT" badge. |
-| Mod panel 2 | "Frackin' Universe" with cyan "Mechanics" badge PLUS amber "IMPACT: adds research tree..." badge. Dependency line visible. Install notes in italic. |
-| Callouts | Three callouts on introduction page: amber TIP label with left border, indigo CONCEPT, red WARNING. Text renders. |
-| Wave dividers | Deep indigo pages with "Wave 0 / First Steps" and "Wave 1 / Beyond the Horizon" centered. Page numbers on dividers are dark (not invisible). |
-| Page numbers | Visible on all pages. Darker on divider pages, lighter on body pages. |
-| No raw Typst syntax | No `#rect`, `#set`, `#include` visible in output |
+| Check               | Expected                                                                                                                                                            |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cover page          | Logo renders, "Aetherbound" title visible, subtitle in cyan                                                                                                         |
+| TOC                 | Lists: Introduction, Installation, Wave 0 Story, How to Play, Wave 0 Modlist, Wave 1 Story, Strategy, Wave 1 Modlist                                                |
+| Fonts               | Headings use Space Grotesk (geometric, narrow); body uses Inter (neutral sans-serif). If both look like system sans-serif, fonts didn't load — check `--font-path`. |
+| Mod panel 1         | "Test Mod" with cyan "QoL" badge inline next to title. No "IMPACT" badge.                                                                                           |
+| Mod panel 2         | "Frackin' Universe" with cyan "Mechanics" badge PLUS amber "IMPACT: adds research tree..." badge. Dependency line visible. Install notes in italic.                 |
+| Callouts            | Three callouts on introduction page: amber TIP label with left border, indigo CONCEPT, red WARNING. Text renders.                                                   |
+| Wave dividers       | Deep indigo pages with "Wave 0 / First Steps" and "Wave 1 / Beyond the Horizon" centered. Page numbers on dividers are dark (not invisible).                        |
+| Page numbers        | Visible on all pages. Darker on divider pages, lighter on body pages.                                                                                               |
+| No raw Typst syntax | No `#rect`, `#set`, `#include` visible in output                                                                                                                    |
 
 - [ ] **Step 4: If all checks pass, commit**
 
@@ -944,6 +958,7 @@ If any check fails, fix and retry before proceeding. Do NOT continue to full con
 ### Task 7: Write introduction.typ (replace stub)
 
 **Files:**
+
 - Modify: `starbound/guide/introduction.typ` (overwrite stub)
 
 - [ ] **Step 1: Write full content**
@@ -1014,6 +1029,7 @@ git commit -m "feat(starbound): guide introduction (full content)"
 ### Task 8: Write install.typ (replace stub)
 
 **Files:**
+
 - Modify: `starbound/guide/install.typ` (overwrite stub)
 
 - [ ] **Step 1: Write full content**
@@ -1034,6 +1050,7 @@ git commit -m "feat(starbound): installation guide — SBMM setup, workshop back
 ### Task 9: Write Wave 0 and Wave 1 story + guide content (replace stubs)
 
 **Files:**
+
 - Modify: `starbound/guide/wave-0/story.typ`
 - Modify: `starbound/guide/wave-0/how-to-play.typ`
 - Modify: `starbound/guide/wave-1/story.typ`
@@ -1075,11 +1092,13 @@ git commit -m "feat(starbound): Wave 0 + Wave 1 story and guide content"
 ### Task 10: Write placeholder modlist files (replace stubs with correct H2 headings)
 
 **Files:**
+
 - Modify all 11 modlist `.typ` files — replace stubs with proper `== H2` category headings and placeholder text.
 
 - [ ] **Step 1: Write each modlist file**
 
 Wave 0:
+
 ```typst
 == Quality of Life & UI
 *Mods that improve the interface and usability without changing gameplay balance.*
@@ -1139,17 +1158,17 @@ Expected: SUCCESS. PDF compiles without errors or warnings.
 
 Open `starbound/output/aetherbound.pdf`. Verify:
 
-| Check | Expected |
-|-------|----------|
-| Cover | Logo visible, title, subtitle, version |
-| TOC | Correct hierarchy — prose chapters (Introduction, Installation, Wave 0 Story, How to Play, Wave 0 Modlist, Wave 1 Story, Strategy, Wave 1 Modlist) |
-| Fonts | Space Grotesk on all headings, Inter on body. No fallback to system sans-serif. |
-| How-to-play tables | Controls table, crafting stations table, ore tiers table all render correctly |
-| Mod panels | Only the 2 test mods from install.typ appear (Test Mod, Frackin' Universe) |
-| Callouts | TIP, CONCEPT, WARNING labels render on colored left-border panels |
-| Wave dividers | Indigo pages with story blurbs, dark page numbers |
-| No syntax leakage | No raw Typst code visible in output |
-| Page count | ~40-50 pages (prose chapters ~35pp + cover + TOC + dividers) |
+| Check              | Expected                                                                                                                                           |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cover              | Logo visible, title, subtitle, version                                                                                                             |
+| TOC                | Correct hierarchy — prose chapters (Introduction, Installation, Wave 0 Story, How to Play, Wave 0 Modlist, Wave 1 Story, Strategy, Wave 1 Modlist) |
+| Fonts              | Space Grotesk on all headings, Inter on body. No fallback to system sans-serif.                                                                    |
+| How-to-play tables | Controls table, crafting stations table, ore tiers table all render correctly                                                                      |
+| Mod panels         | Only the 2 test mods from install.typ appear (Test Mod, Frackin' Universe)                                                                         |
+| Callouts           | TIP, CONCEPT, WARNING labels render on colored left-border panels                                                                                  |
+| Wave dividers      | Indigo pages with story blurbs, dark page numbers                                                                                                  |
+| No syntax leakage  | No raw Typst code visible in output                                                                                                                |
+| Page count         | ~40-50 pages (prose chapters ~35pp + cover + TOC + dividers)                                                                                       |
 
 - [ ] **Step 3: If all checks pass, commit**
 
@@ -1165,6 +1184,7 @@ git commit -m "feat(starbound): final PDF build — all prose content, verified 
 These tasks populate the placeholder modlist files with actual verified mods. Each follows the identical research workflow. The core step is: browse Steam Workshop via Playwright, verify mod compatibility, add `#mod-entry(...)` to the category file, update conflicts.md/STATUS.md, rebuild PDF, commit.
 
 **Research workflow per category:**
+
 1. Browse `https://steamcommunity.com/app/211820/workshop/` in Playwright
 2. Search/browse for mods matching the category using keywords from the spec
 3. For each candidate mod:
@@ -1178,19 +1198,19 @@ These tasks populate the placeholder modlist files with actual verified mods. Ea
 7. Run `.\tools\build.ps1` to verify PDF still compiles
 8. Commit with descriptive message
 
-| Task | File | Category |
-|------|------|----------|
-| 12 | `guide/wave-0/modlist/01-qol-ui.typ` | QoL & UI |
-| 13 | `guide/wave-0/modlist/02-bugfixes.typ` | Bugfixes |
-| 14 | `guide/wave-1/modlist/01-graphics.typ` | Graphics |
-| 15 | `guide/wave-1/modlist/02-races.typ` | Races |
-| 16 | `guide/wave-1/modlist/03-content.typ` | Content |
-| 17 | `guide/wave-1/modlist/04-mechanics.typ` | Mechanics |
-| 18 | `guide/wave-1/modlist/05-ships.typ` | Ships |
-| 19 | `guide/wave-1/modlist/06-weapons-armor.typ` | Weapons & Armor |
-| 20 | `guide/wave-1/modlist/07-building.typ` | Building |
-| 21 | `guide/wave-1/modlist/08-audio.typ` | Audio |
-| 22 | `guide/wave-1/modlist/09-adult.typ` | Adult |
+| Task | File                                        | Category        |
+|------|---------------------------------------------|-----------------|
+| 12   | `guide/wave-0/modlist/01-qol-ui.typ`        | QoL & UI        |
+| 13   | `guide/wave-0/modlist/02-bugfixes.typ`      | Bugfixes        |
+| 14   | `guide/wave-1/modlist/01-graphics.typ`      | Graphics        |
+| 15   | `guide/wave-1/modlist/02-races.typ`         | Races           |
+| 16   | `guide/wave-1/modlist/03-content.typ`       | Content         |
+| 17   | `guide/wave-1/modlist/04-mechanics.typ`     | Mechanics       |
+| 18   | `guide/wave-1/modlist/05-ships.typ`         | Ships           |
+| 19   | `guide/wave-1/modlist/06-weapons-armor.typ` | Weapons & Armor |
+| 20   | `guide/wave-1/modlist/07-building.typ`      | Building        |
+| 21   | `guide/wave-1/modlist/08-audio.typ`         | Audio           |
+| 22   | `guide/wave-1/modlist/09-adult.typ`         | Adult           |
 
 **Commit message format per task:** `feat(starbound): populate [category] modlist — [N] mods added, [M] rejected`
 
@@ -1199,6 +1219,7 @@ These tasks populate the placeholder modlist files with actual verified mods. Ea
 ### Task 23: Cross-wave conflict review
 
 After all mods are researched:
+
 1. Review all 11 category files for cross-wave and cross-category conflicts
 2. Verify no Wave 0 mod conflicts with any Wave 1 mod
 3. Run final PDF build
