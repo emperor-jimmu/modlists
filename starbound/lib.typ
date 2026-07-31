@@ -32,33 +32,33 @@
     radius: 4pt,
     inset: 8pt,
     [
-      #text(font: heading-font, size: 11pt, weight: "bold")[#link(url)[#name]]
+      #text(font: heading-font, size: 13pt, weight: "bold")[#link(url)[#name]]
       #h(6pt)
       #box(
         fill: clr-cyan,
         radius: 2pt,
-        inset: (x: 4pt, y: 1pt),
-        text(font: heading-font, size: 8pt, fill: white)[#category]
+        inset: (x: 5pt, y: 2pt),
+        text(font: heading-font, size: 10pt, fill: white)[#category]
       )
       #if system-impact != none {
         h(4pt)
         box(
           fill: clr-amber,
           radius: 2pt,
-          inset: (x: 4pt, y: 1pt),
-          text(font: heading-font, size: 8pt, fill: white)[IMPACT: #system-impact]
+          inset: (x: 5pt, y: 2pt),
+          text(font: heading-font, size: 10pt, fill: white)[IMPACT: #system-impact]
         )
       }
       #v(4pt)
-      #text(size: 9pt, fill: luma(100), font: body-font)[v#version]
+      #text(size: 10pt, fill: luma(100), font: body-font)[v#version]
       #if dependencies.len() > 0 {
-        text(size: 9pt, fill: luma(100), font: body-font)[  ·  Depends on: #dependencies.join(", ")]
+        text(size: 10pt, fill: luma(100), font: body-font)[  ·  Depends on: #dependencies.join(", ")]
       }
       #v(4pt)
       #description
       #if install-notes != [] {
         v(4pt)
-        text(size: 9pt, style: "italic", fill: luma(120), font: body-font)[
+        text(size: 10pt, style: "italic", fill: luma(120), font: body-font)[
           *Install:* #install-notes
         ]
       }

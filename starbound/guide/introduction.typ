@@ -2,37 +2,29 @@
 
 = About This Guide
 
-Welcome to *Aetherbound*, a curated modlist guide for Starbound 1.4.4. Whether stepping off your ship for the first time or returning after saving the universe, this guide has something for you.
+Welcome to *Aetherbound*, a curated modlist guide for Starbound 1.4.4, built around Frackin Universe and OpenStarbound.
+
+== What This Is
+
+Aetherbound is a single, cohesive modlist — 57 mods spanning quality-of-life, bugfixes, graphics, new races, expanded content, and deeper mechanics. Every mod has been verified for compatibility with Starbound 1.4.4, Frackin Universe, and OpenStarbound.
+
+#warning[
+  *Frackin Universe is a one-way trip.* Installing FU permanently alters your game universe and ALL characters. Uninstalling FU will cause crashes. This is not a "try it and see" mod — once you install it, you are committed. Make a full backup of your storage folder before starting.
+]
 
 == How It Works
 
-Aetherbound is organized into two *waves*. Each is a self-contained game setup: its own roleplaying backstory, its own mod set, and a guide tuned to your experience level. Start with Wave 0, finish the game, then return for Wave 1.
+The guide has two prose chapters and a comprehensive modlist:
 
-#concept[
-  *A wave* bundles a specific set of mods, a narrative role to play, and guidance matched to your experience. Nothing carries over between waves — each is a fresh start.
-]
-
-== Wave Overview
-
-=== Wave 0: First Steps
-Fresh Protectorate academy graduate on your first assignment. This wave assumes zero prior Starbound experience. Includes a complete how-to-play walkthrough. Mods are limited to quality-of-life and bugfixes — nothing that changes core gameplay.
-
-- *Categories:* QoL and UI, Bugfixes
-- *Experience required:* None
-- *Goal:* Learn Starbound from scratch with a polished vanilla experience
-
-=== Wave 1: Beyond the Horizon
-Veteran protector reassigned to fringe space. You have beaten the Ruin and know the galaxy. This wave adds new races, quests, planets, mechanics, ships, weapons, and visual enhancements. The strategy guide covers advanced topics.
-
-- *Categories:* Graphics, Races, Content, Mechanics, Ships, Weapons and Armor, Building, Audio, Adult
-- *Experience required:* Completed vanilla story at least once
-- *Goal:* Deepen and expand Starbound with carefully selected mods
+- *Getting Started* — a primer for players new to Starbound or new to Frackin Universe. Covers the FU-era basics.
+- *Strategy* — advanced tips for experienced protectors: planet farming, crew synergies, mech tactics, and modded system deep-dives.
+- *Modlist* — 57 mods organized into 10 categories. Each mod entry includes a verified Workshop link, dependencies, and SBMM install notes.
 
 == Mod Selection Philosophy
 
 Every mod in Aetherbound passes a strict filter:
 
-- *Compatible:* Works with Starbound 1.4.x. No exceptions.
+- *Compatible:* Works with Starbound 1.4.x and OpenStarbound. No exceptions.
 - *Non-cheating:* No god-mode items, free resources, or all-knowing UI panels.
 - *Non-redundant:* When two mods do the same thing, we pick the better one.
 - *Non-conflicting:* No mod pair breaks each other. Documented when unavoidable.
@@ -47,5 +39,6 @@ Every mod in Aetherbound passes a strict filter:
 Before you begin:
 
 - Starbound 1.4.4 installed via Steam
+- OpenStarbound — download from #link("https://github.com/OpenStarbound/OpenStarbound/releases/latest")[github.com/OpenStarbound]
 - SBMM (Starbound Mod Manager) by korsir — download from GitHub
-- About 30 minutes for initial setup
+- About 45 minutes for initial setup

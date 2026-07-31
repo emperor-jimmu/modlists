@@ -4,23 +4,23 @@
 **Target Version:** 1.4.4 (August 7, 2019)  
 **Mod Manager:** SBMM (Starbound Mod Manager) by korsir  
 **Modlist Name:** Aetherbound  
-**Status:** Draft
+**Status:** Draft — Revised 2026-07-31 (single-wave restructure)
 
 ## 1. Overview
 
-Aetherbound is a curated two-wave modlist guide for Starbound 1.4.4. Each wave represents a different level of game experience, introduced by a roleplaying backstory. The project outputs a professional PDF guide generated via Typst 0.15/0.15.1.
+Aetherbound is a curated single-wave modlist guide for Starbound 1.4.4, anchored on Frackin Universe and requiring OpenStarbound. The project outputs a professional PDF guide generated via Typst 0.15/0.15.1.
 
 ### Design Pillars
 
-- **Beginner-friendly:** Wave 0 assumes zero prior Starbound experience and teaches vanilla mechanics
-- **Progressive depth:** Wave 1 builds on experience with new content, mechanics, and strategy
-- **Visual polish:** The PDF is a standalone product — colorful, beautiful, professional
-- **No cheats:** No overpowered, all-knowing, or progression-skipping mods
-- **Version-locked:** All mods must be compatible with Starbound 1.4 (minimum); 1.4.4 preferred
+- **Frackin Universe anchored:** FU is the central mod. The entire list is built around it — like LotD in Skyrim.
+- **OpenStarbound required:** OSB is the engine baseline. Many QoL mods require its Lua API. No mod may require vanilla Starbound exclusively.
+- **Visual polish:** The PDF is a standalone product — colorful, beautiful, professional.
+- **No cheats:** No overpowered, all-knowing, or progression-skipping mods.
+- **Version-locked:** All mods must be compatible with Starbound 1.4.4 + OpenStarbound.
 
 ### Mod Rules
 
-- No conflicting mods within or across waves
+- No conflicting mods within the list
 - No porn mods (adult/nude is acceptable where relevant; ask user when in doubt)
 - No redundant mods
 - No mods incompatible with version 1.4.x — verify update dates against the 1.4.4 release (August 2019); mods last updated before 2019 are suspicious, mods updated after 2020 are likely compatible

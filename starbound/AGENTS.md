@@ -2,7 +2,7 @@
 
 ## Project Purpose
 
-Aetherbound is a curated two-wave modlist guide for Starbound 1.4.4 (August 7, 2019). Each wave represents a different level of game experience, introduced by a roleplaying backstory. Outputs a professional PDF guide built with Typst.
+Aetherbound is a curated modlist guide for Starbound 1.4.4 (August 7, 2019), centered on Frackin Universe. Outputs a professional PDF guide built with Typst.
 
 ## Project Structure
 
@@ -17,16 +17,11 @@ starbound/
 │   ├── logo.jpg                 # Cover page logo
 │   └── fonts/                   # Space Grotesk + Inter (SIL OFL)
 ├── guide/
-│   ├── introduction.typ         # About this guide
-│   ├── install.typ              # SBMM setup and game preparation
-│   ├── wave-0/
-│   │   ├── story.typ            # Roleplaying backstory
-│   │   ├── how-to-play.typ      # Vanilla new-player guide
-│   │   └── modlist/             # Wave 0 mod categories (H2 headings)
-│   └── wave-1/
-│       ├── story.typ            # Roleplaying backstory
-│       ├── strategy.typ         # Advanced topics
-│       └── modlist/             # Wave 1 mod categories (H2 headings)
+│   ├── introduction.typ         # About this guide, philosophy, FU warning
+│   ├── install.typ              # OSB + SBMM setup, workshop backup workflow
+│   ├── primer.typ               # New player guide (FU-era, not vanilla)
+│   ├── strategy.typ             # Advanced FU tips and systems
+│   └── modlist/                 # Mod categories (H2 headings)
 ├── templates/
 │   └── aetherbound.typ          # Typst PDF template (entry point, all functions)
 ├── output/
@@ -38,17 +33,20 @@ starbound/
 ## Game Version
 
 **Target: Starbound 1.4.4 (August 7, 2019)**
+**Engine: OpenStarbound (required)**
 
-All mods must be compatible with Starbound 1.4.x. Use the patch release date (August 2019) as a heuristic: mods updated after 2019 are likely compatible; mods last updated before 2019 are suspicious.
+OpenStarbound is an open-source fork derived from the 1.4.4 source code. It fixes bugs, improves performance, and provides a Lua scripting API that many mods in this list require. It functions like SKSE for Skyrim — a drop-in engine replacement that extends modding capability.
+
+All mods must be compatible with Starbound 1.4.x and OpenStarbound.
 
 ## Mod Rules
 
-- No conflicting mods within or across waves
+- No conflicting mods within the list
 - No porn mods (adult/nude is acceptable where relevant; ask user when in doubt)
 - No redundant mods
 - No mods incompatible with version 1.4.x
 - No cheating, overpowered, or "all-knowing" mods
-- Primary mod source: Steam Workshop. Fallbacks: Chucklefish Forums, GitHub, Nexus Mods.
+- Primary mod source: Steam Workshop. Fallbacks: GitHub (OSB mods), Chucklefish Forums, Nexus Mods.
 
 ## Content Format
 
@@ -77,7 +75,7 @@ Prose chapters use `= H1` (page break before). Mod category files use `== H2` (i
 
 ## Adding a New Mod
 
-1. Find the correct category file in `guide/wave-N/modlist/`
+1. Find the correct category file in `guide/modlist/`
 2. Add a `#mod-entry(...)` call (see format below)
 3. Verify the URL via Playwright before committing
 4. Check for conflicts; document in `conflicts.md`, note in `STATUS.md`
@@ -95,6 +93,8 @@ Prose chapters use `= H1` (page break before). Mod category files use `== H2` (i
   wave: 0,
 )
 ```
+
+The `wave` parameter is retained for backward compatibility but is unused in the single-wave structure.
 
 ## Build Commands
 
@@ -114,3 +114,11 @@ Requires: Typst 0.15.0+
 - Cross-reference with Chucklefish Forums and r/starbound
 - Prefer mods updated after August 2019 (post-1.4.4 release)
 - Document every rejection in STATUS.md with reasoning
+- GitHub is the primary source for OpenStarbound mods and the OSB engine itself
+
+## Architecture Decisions
+
+- **Single wave** — No separate Wave 0 / Wave 1. Frackin Universe is a one-way trip; there is no "vanilla first" gradual path.
+- **OpenStarbound required** — Many QoL mods use OSB's Lua API. OSB is the first thing users install.
+- **Frackin Universe anchors the list** — Like Legacy of the Dragonborn in the Elder Wilds Skyrim list, FU is the central mod that the rest of the list is built around.
+- **Steam Workshop primary, GitHub secondary** — Workshop for most mods; GitHub for OSB itself and OSB-native mods.

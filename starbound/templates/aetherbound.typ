@@ -1,5 +1,5 @@
 // Aetherbound Typst Template — Typst 0.15+
-// Build: typst compile --root . --font-path assets/fonts templates/aetherbound.typ output/aetherbound.pdf
+// Build: typst compile --font-path assets/fonts templates/aetherbound.typ output/aetherbound.pdf
 
 #import "../lib.typ": *
 
@@ -9,7 +9,7 @@
   margin: (x: 20mm, y: 20mm),
   footer: context [
     #set text(size: 8pt, fill: luma(160), font: body-font)
-    #counter(page).display()
+    #align(center)[#counter(page).display()]
   ],
 )
 
@@ -40,15 +40,11 @@
 #set page(fill: clr-bg-dark)
 #align(center + horizon)[
   #v(3cm)
-  #image("../assets/logo.jpg", width: 5cm)
+  #image("../assets/logo.jpg", width: 13cm)
   #v(1cm)
-  #text(font: heading-font, size: 48pt, fill: white, weight: "bold")[Aetherbound]
-  #v(0.4cm)
   #text(font: body-font, size: 18pt, fill: clr-cyan)[A Starbound Modlist Guide]
   #v(2cm)
   #text(font: body-font, size: 13pt, fill: luma(150))[Starbound 1.4.4  ·  v1.0]
-  #v(0.2cm)
-  #text(font: body-font, size: 11pt, fill: luma(130))[Mod Manager: SBMM by korsir]
 ]
 
 // ── Body ────────────────────────────────────────────
@@ -67,69 +63,43 @@
 #pagebreak()
 #include "../guide/install.typ"
 
-// ── Wave 0 Divider ──────────────────────────────────
+// ── Primer ──────────────────────────────────────────
 #pagebreak()
 #set page(fill: clr-bg-dark)
 #align(center + horizon)[
   #v(3cm)
-  #text(font: heading-font, size: 36pt, fill: white, weight: "bold")[Wave 0]
+  #text(font: heading-font, size: 36pt, fill: white, weight: "bold")[Getting Started]
   #v(0.4em)
-  #text(font: body-font, size: 14pt, fill: clr-cyan)[First Steps]
+  #text(font: body-font, size: 14pt, fill: clr-cyan)[A new protector awakens]
   #v(1.5cm)
   #text(font: body-font, size: 12pt, fill: luma(170))[
-    Fresh Protectorate academy graduate. \
-    First planetary posting. \
-    Wide-eyed explorer armed with a basic \
-    Matter Manipulator and academy training, \
-    setting out into the unknown.
+    Frackin Universe is a one-way trip. \
+    Your universe, your characters, your journey — \
+    everything changes from this point forward. \
+    Here is what you need to know.
   ]
 ]
 
 #pagebreak()
 #set page(fill: clr-bg-body)
 
-#include "../guide/wave-0/story.typ"
+#include "../guide/primer.typ"
 
+// ── Strategy ────────────────────────────────────────
 #pagebreak()
-#include "../guide/wave-0/how-to-play.typ"
+#include "../guide/strategy.typ"
 
-= Wave 0 Modlist
-#include "../guide/wave-0/modlist/01-qol-ui.typ"
-#include "../guide/wave-0/modlist/02-bugfixes.typ"
-
-// ── Wave 1 Divider ──────────────────────────────────
+// ── Modlist ─────────────────────────────────────────
 #pagebreak()
-#set page(fill: clr-bg-dark)
-#align(center + horizon)[
-  #v(3cm)
-  #text(font: heading-font, size: 36pt, fill: white, weight: "bold")[Wave 1]
-  #v(0.4em)
-  #text(font: body-font, size: 14pt, fill: clr-cyan)[Beyond the Horizon]
-  #v(1.5cm)
-  #text(font: body-font, size: 12pt, fill: luma(170))[
-    Veteran protector reassigned to fringe space. \
-    Deeper mysteries await beyond charted territory. \
-    Seasoned explorer with resources, reputation, \
-    and the honed instinct that only comes from \
-    surviving the unknown.
-  ]
-]
+= Modlist
 
-#pagebreak()
-#set page(fill: clr-bg-body)
-
-#include "../guide/wave-1/story.typ"
-
-#pagebreak()
-#include "../guide/wave-1/strategy.typ"
-
-= Wave 1 Modlist
-#include "../guide/wave-1/modlist/01-graphics.typ"
-#include "../guide/wave-1/modlist/02-races.typ"
-#include "../guide/wave-1/modlist/03-content.typ"
-#include "../guide/wave-1/modlist/04-mechanics.typ"
-#include "../guide/wave-1/modlist/05-ships.typ"
-#include "../guide/wave-1/modlist/06-weapons-armor.typ"
-#include "../guide/wave-1/modlist/07-building.typ"
-#include "../guide/wave-1/modlist/08-audio.typ"
-#include "../guide/wave-1/modlist/09-adult.typ"
+#include "../guide/modlist/01-foundations.typ"
+#include "../guide/modlist/02-ui-qol.typ"
+#include "../guide/modlist/03-graphics.typ"
+#include "../guide/modlist/04-audio.typ"
+#include "../guide/modlist/05-races.typ"
+#include "../guide/modlist/06-content.typ"
+#include "../guide/modlist/07-mechanics.typ"
+#include "../guide/modlist/08-ships.typ"
+#include "../guide/modlist/09-building.typ"
+#include "../guide/modlist/10-adult.typ"
