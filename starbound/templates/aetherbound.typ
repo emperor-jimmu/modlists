@@ -102,4 +102,3 @@
 #include "../guide/modlist/07-mechanics.typ"
 #include "../guide/modlist/08-ships.typ"
 #include "../guide/modlist/09-building.typ"
-#include "../guide/modlist/10-adult.typ"

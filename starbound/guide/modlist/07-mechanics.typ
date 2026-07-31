@@ -2,6 +2,19 @@
 
 == Mechanics & Systems
 
+// ── RPG Progression ──
+
+#mod-entry(
+  name: "RPG Growth",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1115920474",
+  category: "Mechanics",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds full RPG stats, levels, and class system",
+  description: [The definitive RPG mechanics mod for Starbound. Monsters drop experience orbs — level up your character, allocate stat points across 7 stats, choose from 6 classes with unique techs and weapons, and pick a Profession, Affinity, and Specialization. Includes a Mysterious Book UI for managing all RPG systems. Author states FU-compatible: "Yes, this mod should work with Frackin Universe." 7,870 ratings. One of the most popular Starbound mods.],
+  install-notes: [Load after FU. May change balance significantly when combined with FU's research system — test both progression systems together. Author offers to fix FU compatibility issues if reported.],
+)
+
 #mod-entry(
   name: "Omnicrafter!",
   url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2844996935",
