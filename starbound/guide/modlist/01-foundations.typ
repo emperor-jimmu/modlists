@@ -85,3 +85,38 @@
   description: [Vanilla Starbound only spawns a single bug species per planet. This mod allows all bugs from a biome to spawn, dramatically increasing bug variety on each planet.],
   install-notes: [Load order not critical. Compatible with FU.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+#mod-entry(
+  name: "Recipe Cache Unloading Fix — aka anti-pickup-lag",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3416715754",
+  category: "Bugfix",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Fixes a long-standing engine bug where recipe caches fail to unload properly, causing increasing lag over time as more items are picked up. Dramatically improves long-session performance. Essential for large modlists.],
+  install-notes: [Load early. No known conflicts.],
+)
+
+#mod-entry(
+  name: "Safely Uninstall Mods Which Add New Tech",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2127561004",
+  category: "Utility",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Provides a safe method to uninstall mods that add new tech slots. Tech mods are normally save-corrupting on removal — this mod adds a safety mechanism. Useful for modlist maintenance and testing.],
+  install-notes: [Install before you need it. Follow the mod's instructions before removing any tech-adding mod.],
+)
+
+#mod-entry(
+  name: "Futara's Dragon Engine [oSB Optional Support]",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2297133082",
+  category: "Library",
+  version: "2024",
+  dependencies: (),
+  system-impact: "rendering engine",
+  description: [A custom rendering engine for Starbound with optional OpenStarbound support. Required by Futara's Dragon Pixel Full Bright Shader and related visual mods. May be optional if using other shader solutions — verify against your graphics stack.],
+  install-notes: [Load early. Only needed if using Futara's shader mods. May conflict with OSB's built-in rendering — verify after testing.],
+)

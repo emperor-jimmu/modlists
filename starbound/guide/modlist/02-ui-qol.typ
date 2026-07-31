@@ -403,3 +403,240 @@
   description: [Moves all vanilla and many modded Hiraki Corale codices into a dedicated codex tab. Includes a post-beta tab icon option. Makes Hiraki Corale lore accessible in one place. By jss2a98aj (Starbound Patch Project author).],
   install-notes: [Load after any codex mods.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+// ── OpenStarbound-native UI ──
+
+#mod-entry(
+  name: "[oSB] OpenUI",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3546647977",
+  category: "UI",
+  version: "2025",
+  dependencies: (),
+  system-impact: "OpenStarbound UI framework",
+  description: [A comprehensive UI framework built specifically for OpenStarbound. Provides the foundation for Cleaner UI Bars, Race Extender, UID Disabler, and other OpenUI-based mods. One of the key OSB-native UI improvements.],
+  install-notes: [Requires OpenStarbound. Load before any OpenUI-dependent mods. Incompatible with OpenUI - UID Disabler if you want the full framework.],
+)
+
+#mod-entry(
+  name: "OpenUI - Cleaner UI Bars",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3577752941",
+  category: "UI",
+  version: "2025",
+  dependencies: ("[oSB] OpenUI",),
+  system-impact: none,
+  description: [Cleaner, more minimal UI bars built on the OpenUI framework. Replaces the default chunky health/energy bars with sleeker alternatives. AnomNom Edition (2399451206) is an alternative with a different style.],
+  install-notes: [Requires OpenStarbound and OpenUI. Load after both. Alternative: Cleaner UI Bars (AnomNom Edition) (2399451206).],
+)
+
+#mod-entry(
+  name: "OpenUI - Race Extender (40 Slots)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3546654953",
+  category: "UI",
+  version: "2025",
+  dependencies: ("[oSB] OpenUI",),
+  system-impact: "adds 40 character slots",
+  description: [Extends the character creator with 40 additional race slots via the OpenUI framework. An alternative to SP Race Extender — pick one based on which UI framework you prefer.],
+  install-notes: [Requires OpenStarbound and OpenUI. Alternative to SP Race Extender — use one, not both.],
+)
+
+#mod-entry(
+  name: "[oSB] Is this Printable?",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3507216031",
+  category: "QoL",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Shows whether an item in your inventory can be printed at the Pixel Printer without needing to check manually. Complements [OSB] Automatically Scan Objects! for a complete printing workflow.],
+  install-notes: [Requires OpenStarbound. Client-side. Load after any inventory mods.],
+)
+
+#mod-entry(
+  name: "[oSB] OCD Tooltip Fix",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3355387636",
+  category: "Fix",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Fixes alignment issues in item tooltips that have bothered players for years. Small, satisfying, purely visual tooltip corrections. Requires OpenStarbound.],
+  install-notes: [Requires OpenStarbound. Client-side. Load order not critical.],
+)
+
+#mod-entry(
+  name: "[oSB] All Items are Stackable!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3370469697",
+  category: "QoL",
+  version: "2025",
+  dependencies: (),
+  system-impact: "makes all items stackable",
+  description: [Makes all items stackable in inventory. Dramatically reduces inventory clutter. NOTE: FU has its own stacking systems — verify this mod doesn't conflict with or duplicate FU's item stacking after testing. Requires OpenStarbound.],
+  install-notes: [Requires OpenStarbound. WARNING: Verify compatibility with FU's item stacking before locking. Load after FU.],
+)
+
+#mod-entry(
+  name: "[oSB] All Reward Items Faster & Stackable",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3714760211",
+  category: "QoL",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Makes all quest reward items stackable and removes the slow reward-popup delay. No more waiting through slow reward animations. Requires OpenStarbound.],
+  install-notes: [Requires OpenStarbound. Client-side. Load order not critical.],
+)
+
+#mod-entry(
+  name: "[oSB] Hunger Fighting Chairs",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3546473893",
+  category: "QoL",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Stops hunger depletion while sitting in chairs. A small but logical QoL improvement — sitting and resting should stop hunger drain. Requires OpenStarbound.],
+  install-notes: [Requires OpenStarbound. Load after any chair or furniture mods.],
+)
+
+// ── General QoL ──
+
+#mod-entry(
+  name: "Quick Stack Gun",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3149193954",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [A gun that quick-stacks items from your inventory into nearby containers. Much faster than manually opening each container. The [oSB + Cosmetic Slots Fix] (3674332086) is the recommended version for OpenStarbound users.],
+  install-notes: [Use the [oSB + Cosmetic Slots Fix] version if using OpenStarbound. Load after any inventory or container mods.],
+)
+
+#mod-entry(
+  name: "Quick Stack Gun [OpenStarbound Fix]",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3501752811",
+  category: "Fix",
+  version: "2025",
+  dependencies: ("Quick Stack Gun",),
+  system-impact: none,
+  description: [OpenStarbound fix for the Quick Stack Gun. Resolves issues with quick-stacking in the OSB environment. Use this version instead of the standalone if using OpenStarbound.],
+  install-notes: [Requires OpenStarbound and Quick Stack Gun. Load after both. Supersedes the standalone Quick Stack Gun for OSB users.],
+)
+
+#mod-entry(
+  name: "Improved Food Descriptions",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=731354142",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds detailed information to food descriptions: exact hunger restored, buff durations, and status effects. Essential for making informed food choices in a modlist where food matters. Train's Patch (3581473706) updates it for modern mod support.],
+  install-notes: [Load after FU and any food mods. Install Train's Patch (3581473706) for latest mod compatibility.],
+)
+
+#mod-entry(
+  name: "bk3k's Inventory",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=882900100",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: "replaces inventory interface",
+  description: [A complete inventory interface replacement with improved visuals and layout. More modern and cleaner than the vanilla inventory. Optional reskin available (1150594604). BK3K-Various Mods Compatibility addon (2799920138) extends support to modded items.],
+  install-notes: [Load after any HUD or inventory mods. Install BK3K-Various Mods Compatibility for modded item support.],
+)
+
+#mod-entry(
+  name: "Detailed Sidebar",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3007858689",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Replaces the minimal vanilla sidebar with a more detailed information panel. Shows additional stats, effects, and contextual information at a glance.],
+  install-notes: [Load after any HUD mods. Client-side.],
+)
+
+#mod-entry(
+  name: "teleporter gui but big",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2494643813",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Makes the teleporter GUI significantly larger so you can see many more destinations at once. Complements Extended Teleportation Dialog for the ultimate teleportation browsing experience.],
+  install-notes: [Load after any teleporter UI mods. Pairs with Extended Teleportation Dialog for maximum teleport UI coverage.],
+)
+
+#mod-entry(
+  name: "Improved Chat Bar",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1276739133",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Enhances the chat interface with improved visuals and usability. Better text visibility, smarter auto-complete, and a cleaner chat experience.],
+  install-notes: [Load order not critical. Client-side.],
+)
+
+#mod-entry(
+  name: "Better Chairs",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1244732961",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Improves chair sitting mechanics: better positioning, smoother transitions, and proper alignment for all chair types. Small but noticeable improvement to a fundamental interaction.],
+  install-notes: [Load after any furniture mods. No conflicts.],
+)
+
+#mod-entry(
+  name: "Quest Manager Optimizer",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2914211937",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Optimizes the quest manager to reduce lag and stutter when many quests are active. Essential for modlists with lots of quest mods where the quest log can become sluggish.],
+  install-notes: [Load after any quest mods. Particularly useful with Arcana, K'Rakoth, Shellguard, and FU.],
+)
+
+#mod-entry(
+  name: "I Have a Quickbar!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3634731098",
+  category: "UI",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [An alternative quickbar implementation. Simpler than Classic Quickbar or Beta Hotbar — useful if you want a lighter-weight quickbar option.],
+  install-notes: [This is an alternative to Classic Quickbar and Beta Hotbar — pick one quickbar mod.],
+)
+
+#mod-entry(
+  name: "Galactic Almanach — Biome Name Display",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3473429375",
+  category: "UI",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Displays the name of the current biome on screen when you enter a new area. Great for exploration awareness — you always know what biome you're in. Has patches for Arcana and other biome-adding mods.],
+  install-notes: [Load after any biome or planet mods. Install the Arcana patch (3535670883) if using Arcana.],
+)
+
+#mod-entry(
+  name: "Book of Spirits — NPC & Monster Name Displayer",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3060280131",
+  category: "UI",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Displays the name of NPCs and monsters on screen, similar to NPC nameplates in other games. The Patch Project (3471003713) extends coverage to modded NPCs. Essential for large modlists where you encounter unfamiliar creatures.],
+  install-notes: [Load after any NPC or monster mods. Install the Patch Project for modded NPC coverage.],
+)
+
+#mod-entry(
+  name: "Filter by Rarity — Extended Edition",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1814789921",
+  category: "QoL",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Extends the vanilla inventory filtering system with more granular rarity-based filters. Sort and filter your inventory by item rarity for better organization. Works with modded items.],
+  install-notes: [Load after any inventory mods. No conflicts with bk3k's Inventory.],
+)

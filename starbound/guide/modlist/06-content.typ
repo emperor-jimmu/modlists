@@ -228,3 +228,126 @@
   description: [An addon for The Bookstore that replaces the generic info booth lady with the legendary beta character Hiraki Corale. Adds the Hiraki Corale Tab with post-beta content icon options. Puts Hiraki Corale codices from mods like Elithian Races in a dedicated tab. By ShyDispatch.],
   install-notes: [Load after The Bookstore and the Codex addon.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+#mod-entry(
+  name: "Project Redemption",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1397217904",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds questlines and faction content",
+  description: [A major faction-based content mod adding new questlines, encounters, weapons, and armor centered around a redemption narrative. Has cross-mod patches for K'Rakoth (2821879793), Anom's Outpost Overhaul (2672213160), and Starforge (2581675840). Widely used in the Dreaming Worlds modlist.],
+  install-notes: [Load after FU. Install K'Rakoth and Anom patches if using those mods. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Super Dungeon Pack",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2979678524",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds dungeons",
+  description: [A large pack of new dungeons and encounter areas. Complements Galactic Dungeons with additional variety. More Planet Info patch available for dungeon visibility on the nav screen.],
+  install-notes: [Load after FU and Galactic Dungeons. Install the More Planet Info patch (2980863873) for nav integration.],
+)
+
+#mod-entry(
+  name: "Extra Dungeons",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=729769243",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds dungeons",
+  description: [A classic dungeon expansion mod. Adds additional dungeons across the universe. Extra Dungeons Ultimate Fix (3334763920) resolves long-standing issues. Mission icons addon (3412262127) adds proper HUD markers.],
+  install-notes: [Load after FU and other dungeon mods. Install Extra Dungeons Ultimate Fix for stability. Install mission icons for HUD markers.],
+)
+
+#mod-entry(
+  name: "Voided: Expansion Mod (WIP)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2822921122",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "work-in-progress expansion",
+  description: [An ambitious work-in-progress expansion mod. Adds new content, areas, and mechanics. Note: WIP status means it may change significantly between updates. Install with the understanding that it is actively developed and not yet complete.],
+  install-notes: [WIP — use with caution. Load after FU. Back up saves before installing. May change significantly between updates.],
+)
+
+#mod-entry(
+  name: "LostBound [v1.1.1 — Revamped]",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3440851272",
+  category: "Content",
+  version: "2025",
+  dependencies: (),
+  system-impact: "adds quests and world content",
+  description: [A revamped quest and exploration mod. Adds new content to discover throughout the universe. Has patches for Arcana (3475902278), Project Ancient Cosmos (3475905331), and Overgrown Planets (3440385324). Master Add-on (3479227719) expands further.],
+  install-notes: [Load after FU. Install Arcana, Overgrown Planets, and Master Add-on patches as applicable. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Overgrown Planets",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2587899098",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds planet biome type",
+  description: [Adds Overgrown planets — a new planet biome type with dense vegetation, unique flora, and atmospheric exploration. Overhauled version (3456794738) significantly expands and improves the base mod. May have minor overlap with FU's lush planet types.],
+  install-notes: [Load after FU. Use the Overhauled version for the best experience. Verify no redundant overlap with FU's existing lush biomes after testing.],
+)
+
+#mod-entry(
+  name: "Overhauled Overgrown Planets",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3456794738",
+  category: "Content",
+  version: "2025",
+  dependencies: ("Overgrown Planets",),
+  system-impact: "expands Overgrown Planets",
+  description: [Significantly expands and improves the base Overgrown Planets mod. More biomes, better generation, additional content. Use this instead of the base version alone.],
+  install-notes: [Load after Overgrown Planets. Supersedes the base mod's generation. Use this as the primary Overgrown Planets experience.],
+)
+
+#mod-entry(
+  name: "Emi's Fabulous Fishatorium!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3630895951",
+  category: "Content",
+  version: "2025",
+  dependencies: (),
+  system-impact: "adds fishing content",
+  description: [A fishing-themed content expansion. Adds new fish species, fishing mechanics, and aquatic content. Has patches for Project Irisil (3631718556) and K'Rakoth (3633401822). Complements FU's existing fishing systems.],
+  install-notes: [Load after FU and any fishing mods. Install Irisil and K'Rakoth patches if using those mods.],
+)
+
+#mod-entry(
+  name: "The Armol: People of the Core",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3216140587",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds faction and lore",
+  description: [Adds The Armol — a subterranean race living in planetary cores. New faction with unique lore, encounters, and worldbuilding. Expands the lore of what lives deep inside planets.],
+  install-notes: [Load after FU. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Job Offers",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=735253889",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds job board system",
+  description: [Adds a job board system to the Outpost and stations. Take on procedurally generated jobs for rewards. Adds repeatable, structured content for players who want directed goals between major quests.],
+  install-notes: [Load after any Outpost mods. Safe to install on existing saves.],
+)
+
+#mod-entry(
+  name: "Neo+",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2704778060",
+  category: "Content",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds faction and items",
+  description: [Adds Neo-themed content: new items, weapons, armor sets, and faction presence. Expands the game's futuristic/cyber aesthetic with additional themed content.],
+  install-notes: [Load after FU. No known conflicts.],
+)

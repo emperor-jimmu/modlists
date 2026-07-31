@@ -62,3 +62,16 @@
   description: [Space station expansion adding upgrade modules for your station. NOTE: FU has its own comprehensive space station system. This mod may conflict or be redundant alongside FU's station mechanics. Install only after verifying compatibility with FU's station content. By Silver Sokolova.],
   install-notes: [WARNING: Verify FU compatibility before installing. FU overhauls stations — this mod may conflict. Load after FU if using.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+#mod-entry(
+  name: "Warp Doors",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3608977430",
+  category: "Ships",
+  version: "2025",
+  dependencies: (),
+  system-impact: "adds portal-based fast travel",
+  description: [Adds Warp Doors — portal-like doors that connect two locations for instant travel. Place one on your ship and another at a base or dungeon entrance for quick return trips. A creative fast-travel alternative that feels more diegetic than teleporters.],
+  install-notes: [Load after any teleporter or ship mods. No FU conflicts.],
+)

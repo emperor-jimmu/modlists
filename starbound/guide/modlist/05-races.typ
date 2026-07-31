@@ -247,3 +247,198 @@
   description: [Adds Nuu unique object descriptions to approximately 460 vanilla objects. Enables Nuu crew members to describe these objects and gives Nuu players unique scan dialog. By Lemon Drops (Maple32 author).],
   install-notes: [Only relevant if using Nuu race. Load after any race or dialogue mods.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+// ── Additional Races ──
+
+#mod-entry(
+  name: "Neki",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2611501999",
+  category: "Races",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds Neki playable cat-like race",
+  description: [Adds the Neki — a cat-like race with their own ship, armor, and unique feline aesthetics. One of the more popular animal-inspired race mods. N.E.K.I. Station (3344198231) extends crafting support.],
+  install-notes: [Requires a Character Creator extender. Load after other race mods. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "The SpaceKidds!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2790390697",
+  category: "Races",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds SpaceKidd playable race",
+  description: [Adds The SpaceKidds — an alien race with unique visual design. Includes custom ship, armor, and lore. A distinctive addition to the race roster.],
+  install-notes: [Requires a Character Creator extender. Load after other race mods. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Sergal Race Mod",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=731125431",
+  category: "Races",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds Sergal playable race",
+  description: [Adds the Sergal — a well-known furry-origin race — as a playable species. A long-standing race mod with custom ship, armor, and unique aesthetics.],
+  install-notes: [Requires a Character Creator extender. Load after other race mods. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Lucario Race",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1356955138",
+  category: "Races",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds Lucario playable race",
+  description: [Adds Lucario as a playable race with custom abilities and aesthetics. A crossover race mod for Pokémon fans. Includes custom ship and unique visual effects.],
+  install-notes: [Requires a Character Creator extender. Load after other race mods. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Futara's Dragon Race",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1958993491",
+  category: "Races",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds dragon playable race",
+  description: [Adds a full dragon race by Futara. Sophisticated visual design with custom ship, armor, and dragon-themed abilities. One of the more elaborate race mods available. May use Futara's Dragon Engine for rendering.],
+  install-notes: [Requires a Character Creator extender. May benefit from Futara's Dragon Engine for optimal visuals. Load after other race mods. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Argonian Race Redux",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=740694177",
+  category: "Races",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds Argonian playable race",
+  description: [Adds Argonians from The Elder Scrolls as a playable race. Custom ship, armor, and lizard-folk aesthetics. Supplemental addon (813797002) adds extra customization options.],
+  install-notes: [Requires a Character Creator extender. Load after other race mods. Back up saves before installing. The Supplemental addon adds more character options.],
+)
+
+#mod-entry(
+  name: "Mechit Race",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3016883436",
+  category: "Races",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds Mechit playable robot race",
+  description: [Adds the Mechit — a mechanical race distinct from Glitch and NostOS. Custom ship, robotic aesthetics, and unique tech-themed visuals. Mechit Race Traits Patch (3019488022) adds racial bonuses.],
+  install-notes: [Requires a Character Creator extender. Load after Glitch, NostOS, and other robot races. Back up saves before installing.],
+)
+
+#mod-entry(
+  name: "Expie Race",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3740344040",
+  category: "Races",
+  version: "2026",
+  dependencies: (),
+  system-impact: "adds Expie playable race",
+  description: [Adds the Expie as a playable race. Recently released (2026). Expie Race Traits Patch (3748988367) adds racial bonuses via the Race Traits system.],
+  install-notes: [Requires a Character Creator extender. Load after other race mods and Race Traits. The Traits Patch requires Race Traits. Back up saves before installing.],
+)
+
+// ── Novali (Avali sub-species) ──
+
+#mod-entry(
+  name: "Novali — Glowing Raptors (Race Ver.)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1386730092",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: "adds Novali sub-race",
+  description: [Adds the Novali — a glowing sub-species of Avali — as a separate character option. Distinctive bioluminescent visual effects. Novali Color Pack (1410423105) and Race Dialogue Patch (2493075052) add further customization.],
+  install-notes: [Requires Avali Triage. Load after Avali Triage and any Avali addons. Race Dialogue Patch adds NPC dialogue support.],
+)
+
+#mod-entry(
+  name: "Novali Color Pack",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1410423105",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Novali — Glowing Raptors",),
+  system-impact: none,
+  description: [Expanded color options for Novali characters. More variety in the glowing raptor aesthetic.],
+  install-notes: [Load after Novali. Cosmetic only.],
+)
+
+// ── Avali Addons ──
+
+#mod-entry(
+  name: "Colorful Avali Fluff 1.2",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1863755465",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: none,
+  description: [Adds colorful fluff options for Avali characters. More customization for the feathered raptor aesthetic. Complements Improved Avali Colors for the definitive Avali look.],
+  install-notes: [Load after Avali Triage and Improved Avali Colors. Cosmetic only.],
+)
+
+#mod-entry(
+  name: "Avali Plus",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1636662922",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: "expands Avali content",
+  description: [Major Avali expansion adding new items, furniture, armor, and mechanics to the Avali race. Significantly deepens Avali gameplay beyond the base Triage mod. Gibberish Patch (3049118061) fixes text issues.],
+  install-notes: [Load after Avali Triage. The Gibberish Patch fixes text display issues — install it. May add items that Crafting Menu AvaliDebloat moves to the nanolathe.],
+)
+
+#mod-entry(
+  name: "Avali Objects+",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=898712767",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: none,
+  description: [Adds a large collection of Avali-themed decorative and functional objects. Expand your Avali bases and ships with authentic Avali furniture and technology.],
+  install-notes: [Load after Avali Triage and Avali Plus if both are used.],
+)
+
+#mod-entry(
+  name: "Avali Maid Outfit",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1920352046",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: none,
+  description: [Adds a maid outfit tailored for Avali characters. Cosmetic armor set with an Avali-specific design.],
+  install-notes: [Load after Avali Triage. Cosmetic only.],
+)
+
+#mod-entry(
+  name: "Avalonian Culture Shock (ACS)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2835369630",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: "expands Avali lore and content",
+  description: [A deep lore and content expansion for the Avali race. Adds cultural depth, new mechanics, and expanded Avali worldbuilding beyond the base Triage mod. For players who want to fully immerse in Avali culture.],
+  install-notes: [Load after Avali Triage and any Avali addons. A substantial mod — may conflict with Avali Plus. Test together before locking.],
+)
+
+#mod-entry(
+  name: "Fullbright Avali Holograms",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2992119945",
+  category: "Races",
+  version: "2024",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: none,
+  description: [Makes Avali hologram objects use fullbright rendering so they glow in the dark. Complements other fullbright mods for a consistent visual experience. Requires Futara's Full Bright Shader.],
+  install-notes: [Requires Futara's Full Bright Shader. Load after Avali Triage. Cosmetic only.],
+)
+
+#mod-entry(
+  name: "Avali Tech Station Hologram",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3737988119",
+  category: "Races",
+  version: "2026",
+  dependencies: ("Avali (Triage) Race Mod",),
+  system-impact: none,
+  description: [Adds a holographic tech station for Avali characters. Recently released (2026). A stylish alternative interface for Avali tech management.],
+  install-notes: [Load after Avali Triage. Cosmetic UI replacement.],
+)

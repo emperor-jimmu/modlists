@@ -168,3 +168,82 @@
   description: [Space encounter enemies are balanced for mech firepower but have extremely high HP, making them tedious tank-fests — especially when thrown at you in large numbers. This mod reduces their health to more reasonable levels. By ShyDispatch.],
   install-notes: [Load after FU and any space encounter mods.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+#mod-entry(
+  name: "[oSB] Universal Upgradeable Weapons Patch",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3595603580",
+  category: "Mechanics",
+  version: "2025",
+  dependencies: ("Upgraded Upgrades",),
+  system-impact: "extends weapon upgrade compatibility",
+  description: [Patches ALL modded weapons to work with the Weapon Upgrade Anvil system from Upgraded Upgrades. No more finding a great modded weapon that can't be upgraded. Requires OpenStarbound. Complements Upgraded Upgrades + UU Tier Patch 9 for the complete weapon upgrade pipeline.],
+  install-notes: [Requires OpenStarbound and Upgraded Upgrades. Load after both. Makes every weapon upgradeable.],
+)
+
+#mod-entry(
+  name: "Terrestrial Mech Flight — Mech Core",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3385438513",
+  category: "Mechanics",
+  version: "2025",
+  dependencies: (),
+  system-impact: "enables planetary mech flight",
+  description: [Enables mech flight on planetary surfaces, not just in space. A lighter-weight alternative to Mech Overhaul focused specifically on flight mechanics. Complements or replaces Mech Overhaul depending on preference.],
+  install-notes: [Alternative to Mech Overhaul — pick based on preference. Load after any mech mods.],
+)
+
+#mod-entry(
+  name: "Augment Extractor",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=855668523",
+  category: "Mechanics",
+  version: "2024",
+  dependencies: (),
+  system-impact: "extracts augments from equipment",
+  description: [Extracts augments from equipment without destroying either the item or the augment. Simpler than EPP Effect Extractor — focused purely on augment removal rather than effect extraction. Complements Swap Augments! for a complete augment management toolkit.],
+  install-notes: [Load after FU and any augment mods. Complements Swap Augments! and EPP Effect Extractor for different use cases.],
+)
+
+#mod-entry(
+  name: "Reclaimable Turrets",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=749138636",
+  category: "Mechanics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Placed turrets can be reclaimed instead of being destroyed. No more wasted resources when repositioning your base defenses. Simple, logical QoL that should have been in vanilla.],
+  install-notes: [Load after any turret or defense mods. No conflicts.],
+)
+
+#mod-entry(
+  name: "Neb's Multi-turrets!",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3113711937",
+  category: "Mechanics",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds turret variety",
+  description: [Adds a variety of new turret types for base defense. More options for protecting your colonies and outposts. Complements Reclaimable Turrets for the full turret management experience.],
+  install-notes: [Load after FU and any turret mods. Pairs with Reclaimable Turrets.],
+)
+
+#mod-entry(
+  name: "Unbreakable Teleporters",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=741194961",
+  category: "Mechanics",
+  version: "2024",
+  dependencies: (),
+  system-impact: "removes teleporter durability",
+  description: [Makes all teleporters unbreakable. Removes the durability mechanic from teleportation devices. Unbreakable Mod Teleporters variant (3607914014) extends this to modded teleporters. Purely a convenience choice — vanilla teleporter durability adds nothing meaningful.],
+  install-notes: [Load after any teleporter mods. Use the Mod Teleporters variant for full mod coverage.],
+)
+
+#mod-entry(
+  name: "Resource Extractor",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=895898053",
+  category: "Mechanics",
+  version: "2024",
+  dependencies: (),
+  system-impact: "adds resource extraction",
+  description: [Adds a resource extraction system for automated material gathering. Complements Lexi's Automation for a complete automated production pipeline. Place extractors on resource nodes for passive collection.],
+  install-notes: [Load after FU and any automation mods. May overlap with FU's extraction systems — verify after testing.],
+)

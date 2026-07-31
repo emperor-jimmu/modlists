@@ -8,15 +8,16 @@
 - [2026-07-31] **Two-wave structure (superseded).** Replaced by single-wave design on 2026-07-31.
 - [2026-07-31] **Typst for PDF generation.** *Reasoning:* Modern, fast, professional. No markdown conversion needed.
 - [2026-07-31] **Cross-review of ShyDispatch Starbound Starburst Pack (3678371749) completed.** *Reasoning:* 96 mods adopted across all categories, 18 rejected as FU-incompatible or Starburst-dependent. Major content gains: Arcana, K'Rakoth, Shellguard, Project Irisil, Galactic Dungeons. New races: Saturnians, De'nelaun, Scyphojel, NostOS. Key QoL adds: Lagless Pixel Printer, Compact Crafting, Planet Search, Improved Swim Physics.
+- [2026-07-31] **Cross-review of Dreaming Worlds [oSB] (3676294110) completed.** *Reasoning:* 76 mods adopted across all categories. New OSB-native category: OpenUI, Cumulative Dynamic Lights, Bloom/Far Bloom shaders, Is this Printable?, OCD Tooltip Fix. Major content: Project Redemption, LostBound, Voided, Overgrown Planets, Super Dungeon Pack. New races: Neki, SpaceKidds, Sergal, Lucario, Futara's Dragon, Argonian, Mechit, Expie, Novali. Expanded Avali ecosystem: Avali Plus, ACS, Colorful Fluff, Avali Objects+.
 - [2026-07-31] **Steam Workshop as primary mod source.** *Reasoning:* Largest Starbound mod collection.
 - [2026-07-31] **SBMM by korsir as mod manager.** *Reasoning:* User-specified.
 - [2026-07-31] **H2 for mod categories, H1 for prose chapters.** *Reasoning:* Avoids unwanted page breaks. Template controls layout.
 - [2026-07-31] **Text labels (TIP/CONCEPT/WARNING) instead of emoji in callouts.** *Reasoning:* Emoji font coverage unreliable in PDF.
 - [2026-07-31] **--font-path in build script.** *Reasoning:* Ensures bundled fonts load regardless of system state.
 
-## Adopted Mods (157 total)
+## Adopted Mods (234 total)
 
-### Foundations (4)
+### Foundations (4 → 10)
 - Starbound Patch Project (1543219534)
 - Anter583's Utility Library (2144215143)
 - Smart drops objects (3720232044)
@@ -243,9 +244,11 @@
 ## Source Collection
 - **Reference 1:** [Starbound: Frackin' Universe Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3418162394) by Zenny (73 mods, last updated 2026-07-08)
 - **Reference 2:** [ShyDispatch Starbound Starburst Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=3678371749) by ShyDispatch (~144 mods)
+- **Reference 3:** [Dreaming Worlds [oSB]](https://steamcommunity.com/sharedfiles/filedetails/?id=3676294110) by Unknown (411 mods)
 - **Adopted from Zenny:** 57 of 73 mods
 - **Adopted from ShyDispatch:** 96 of ~122 unique mods (18 rejected: FU-incompatible or Starburst-dependent)
-- **Total adopted:** 153 mods
+- **Adopted from Dreaming Worlds:** 76 of 411 mods (~335 rejected as FU-incompatible, Starburst-dependent, trivial, meme, or already adopted)
+- **Total adopted:** 234 mods
 
 ## Open Questions
 - **SBMM exact GitHub URL?** TBD during research.

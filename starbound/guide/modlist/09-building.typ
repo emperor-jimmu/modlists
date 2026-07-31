@@ -104,3 +104,27 @@
   description: [Takes the existing colony deeds from Elithian Races and creates compact versions — chops off half, leaving only the bottom portion. Horizontal and vertical versions available. By ShyDispatch.],
   install-notes: [Load after Elithian Races Mod and Compact Colony Deeds. Only relevant for Elithian players.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+#mod-entry(
+  name: "Instru+",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1522930020",
+  category: "Building",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds a large collection of musical instruments as placeable objects. Play music in your ship, base, or colony. Great for role-play and atmosphere — instruments actually produce sound.],
+  install-notes: [Load after any furniture or music mods. No conflicts.],
+)
+
+#mod-entry(
+  name: "DigitalStorage",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=946227505",
+  category: "Building",
+  version: "2024",
+  dependencies: ("HLib",),
+  system-impact: "adds digital item storage system",
+  description: [Adds a digital storage network system — store items in digital form and access them from any connected terminal. Requires HLib (1189065705). A more advanced storage alternative to Enhanced Storage. RS Edition resprite (3527143154) updates the visuals.],
+  install-notes: [Requires HLib. Load after Enhanced Storage and any container mods. Use with Enhanced Storage for the most flexible storage setup.],
+)

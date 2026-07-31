@@ -406,3 +406,200 @@
   description: [Various vanilla object and item tweaks: 3x3 block preview images and 6x3 platform preview images in hover tooltips for all vanilla blocks. Pairs with nuggubs' Vanilla Texture Tweak Pack. Note: conflicts with Vanilla+ version — pick one.],
   install-notes: [Load after nVTTP. This is the baseline pick — Vanilla+ (3282034054) is an alternative expanded version. Do not use both.],
 )
+
+// ── Source: Dreaming Worlds [oSB] cross-review ──
+
+// ── OpenStarbound Visuals ──
+
+#mod-entry(
+  name: "[oSB] Cumulative Dynamic Lights",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3444407977",
+  category: "Graphics",
+  version: "2025",
+  dependencies: (),
+  system-impact: "dynamic lighting system",
+  description: [A comprehensive dynamic lighting mod for OpenStarbound. Cumulatively patches all light sources to use OSB's dynamic lighting. More complete coverage than individual lighting patches. Requires OpenStarbound.],
+  install-notes: [Requires OpenStarbound. May overlap with Tanz Lighting Overhaul — test together. If using both, load after TanzLO.],
+)
+
+#mod-entry(
+  name: "[oSB] Bloom Shader",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3431151049",
+  category: "Graphics",
+  version: "2025",
+  dependencies: (),
+  system-impact: "adds bloom post-processing",
+  description: [Adds a bloom post-processing effect to the game via OpenStarbound's shader system. Gives bright light sources a soft glow for a more atmospheric look. Requires OpenStarbound.],
+  install-notes: [Requires OpenStarbound. Client-side. Performance impact varies by hardware.],
+)
+
+#mod-entry(
+  name: "[oSB] Far Bloom Shader",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3511613628",
+  category: "Graphics",
+  version: "2025",
+  dependencies: (),
+  system-impact: "adds distance bloom",
+  description: [Extends bloom effects to distant objects and backgrounds. Complements the base Bloom Shader for a more complete atmospheric effect. Requires OpenStarbound.],
+  install-notes: [Requires OpenStarbound. Client-side. Load after Bloom Shader. Performance impact varies by hardware.],
+)
+
+// ── Atmosphere & Immersion ──
+
+#mod-entry(
+  name: "Hide In The Dark (no player Glow)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=730709285",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Completely removes the player's ambient glow in dark areas. More extreme than Dark Player Aura — you become truly invisible in darkness. For players who want maximum immersion and tension in dark environments.],
+  install-notes: [Load after any player lighting mods. This is more extreme than (TanzLO) Dark Player Aura — pick based on preference.],
+)
+
+#mod-entry(
+  name: "Outpost Nebula - Orion",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=784179199",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Replaces the outpost background with the Orion Nebula. An alternative to the Pillars of Creation nebula mod — choose the celestial backdrop you prefer. Both are high-quality.],
+  install-notes: [Alternative to Outpost Nebula - Pillars of Creation. Pick one based on aesthetic preference. Load after any outpost mods.],
+)
+
+#mod-entry(
+  name: "Starvisuals",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3322797618",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Enhances the visual appearance of stars and space backgrounds. Subtle but noticeable improvement to the space layer and skybox visuals.],
+  install-notes: [Load after any space or skybox mods. Pairs well with Remixed Star Names and NnMM+.],
+)
+
+#mod-entry(
+  name: "NnMM+ — Star Names",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3478336528",
+  category: "Graphics",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Expanded star name generation system with more variety than Remixed Star Names. More prefixes, main names, and suffixes for a wider range of system names. Complements or replaces Remixed Star Names — pick one.],
+  install-notes: [Alternative to Remixed Star Names — pick one based on naming variety preference. Client-side.],
+)
+
+#mod-entry(
+  name: "Better Ship Animations",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2116201964",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Improves ship flight animations: smoother takeoffs, landings, and space travel transitions. Small visual polish that makes space travel feel more cinematic.],
+  install-notes: [Load after any ship mods. Purely visual.],
+)
+
+#mod-entry(
+  name: "Outpost Peacekeepers Restored",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3412659718",
+  category: "Graphics",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Restores and improves the Peacekeeper presence at the Outpost. More Peacekeeper NPCs, better patrol behavior, and enhanced visual integration with the hub area.],
+  install-notes: [Load after any Outpost overhaul mods. Compatible with Anom's Outpost Overhaul.],
+)
+
+// ── Character & Species Visuals ──
+
+#mod-entry(
+  name: "WW Furnishing",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1417364378",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [A large furniture and decoration pack. Adds themed furniture sets, decorative objects, and building materials. Good Game's Fixes (3390418760) resolves issues with the base mod.],
+  install-notes: [Load after any furniture mods. Install Good Game's Fixes (3390418760) for stability.],
+)
+
+#mod-entry(
+  name: "Casual Plus",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=760653356",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds casual, modern-styled clothing options for characters. Good for role-play and out-of-combat character customization. Complements Community Clothing Gathering for a complete wardrobe.],
+  install-notes: [Load after any clothing or armor mods. Purely cosmetic.],
+)
+
+#mod-entry(
+  name: "Fishing Hats",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3491179567",
+  category: "Graphics",
+  version: "2025",
+  dependencies: (),
+  system-impact: none,
+  description: [Adds a variety of fishing-themed hats and headwear. Purely cosmetic — for the dedicated angler who wants to look the part.],
+  install-notes: [Load after any hat or armor mods. Cosmetic only.],
+)
+
+#mod-entry(
+  name: "AMP — Another Mod Pack (Hair and Beak Collection)",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=760401937",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [A large collection of additional hairstyles and beak variations for Avian characters. Dramatically expands Avian customization options. Complements AFHP and AHHP for other species.],
+  install-notes: [Load after any Avian or hair mods. Cosmetic only.],
+)
+
+#mod-entry(
+  name: "AFHP — Another Floran Hair Pack",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=761690249",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [A collection of additional hairstyles for Floran characters. Complements AMP (Avian) and AHHP (Hylotl) for cross-species hair variety.],
+  install-notes: [Load after any Floran or hair mods. Cosmetic only.],
+)
+
+#mod-entry(
+  name: "AHHP — Another Hylotl Hair Pack",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=763064197",
+  category: "Graphics",
+  version: "2024",
+  dependencies: (),
+  system-impact: none,
+  description: [A collection of additional hairstyles for Hylotl characters. Complements AMP (Avian) and AFHP (Floran) for cross-species hair variety.],
+  install-notes: [Load after any Hylotl or hair mods. Cosmetic only.],
+)
+
+// ── Combat Visuals ──
+
+#mod-entry(
+  name: "Broadswords Enhanced",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3768093067",
+  category: "Graphics",
+  version: "2026",
+  dependencies: (),
+  system-impact: "enhances broadsword visuals",
+  description: [Enhances broadsword visual effects and animations. More impactful swings, better trails, and improved hit feedback. Complements Melee Aiming for a complete melee overhaul.],
+  install-notes: [Load after any weapon or combat mods. Pairs with Melee Aiming and Smoother Melee Animations.],
+)
+
+#mod-entry(
+  name: "Smoother Melee Animations",
+  url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3768041902",
+  category: "Graphics",
+  version: "2026",
+  dependencies: (),
+  system-impact: "smoothes melee animations",
+  description: [Smoothes out melee weapon animations for more fluid combat. Reduces jerkiness in swing animations and transitions between attacks. Complements Melee Aiming and Broadswords Enhanced.],
+  install-notes: [Load after any animation mods. Pairs with Melee Aiming and Broadswords Enhanced.],
+)
