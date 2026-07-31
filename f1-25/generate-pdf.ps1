@@ -57,7 +57,8 @@ function Build-Guide() {
     "guide\wave-1\strategy.md",
     "guide\wave-1\mods.md",
     "guide\wave-2\advanced.md",
-    "guide\wave-2\mods.md"
+    "guide\wave-2\mods.md",
+    "guide\wave-0\glossary.md"
   )
 
   $guideContent = ""
