@@ -14,32 +14,33 @@
 
 ## File Map
 
-| File | Responsibility |
-|------|---------------|
-| `AGENTS.md` | Project-specific agent instructions for this modlist |
-| `README.md` | Public-facing modlist overview and quick-start |
-| `STATUS.md` | Living decision log — accepted/rejected mods, conflicts, notes |
-| `mod-ideas.md` | Future mod ideas, not included in PDF |
-| `conflicts-mods.md` | Known incompatibilities between mods |
-| `guide/00-cover.md` | Cover page content (modlist name, tagline, logo reference) |
-| `guide/00-toc.md` | Table of contents placeholder (Typst generates real TOC) |
-| `guide/01-installation.md` | BG3MM installation guide + mod setup instructions |
-| `guide/02-wave-0-guide.md` | Beginner's guide: character creation, builds, mechanics |
-| `guide/03-wave-0-modlist.md` | Wave 0 mod entries (~10-20 mods) |
-| `guide/04-wave-1-guide.md` | Advanced guide: multiclassing, mechanics, mod integration |
-| `guide/05-wave-1-modlist.md` | Wave 1 mod entries (50+ mods) |
-| `guide/06-load-order.md` | Prescribed load order for each wave |
-| `scripts/convert.js` | Node.js script: markdown files → Typst `.typ` content blocks |
-| `scripts/clean.js` | Node.js script: wipes `.typst-cache/` for a clean build |
-| `build.typ` | Typst document: imports converted `.typ` files, applies styling, renders PDF |
-| `build.bat` | One-click launcher: prerequisite check → clean → convert → compile |
-| `output/mythic-crucible.pdf` | Generated PDF (gitignored) |
+| File                         | Responsibility                                                               |
+|------------------------------|------------------------------------------------------------------------------|
+| `AGENTS.md`                  | Project-specific agent instructions for this modlist                         |
+| `README.md`                  | Public-facing modlist overview and quick-start                               |
+| `STATUS.md`                  | Living decision log — accepted/rejected mods, conflicts, notes               |
+| `mod-ideas.md`               | Future mod ideas, not included in PDF                                        |
+| `conflicts-mods.md`          | Known incompatibilities between mods                                         |
+| `guide/00-cover.md`          | Cover page content (modlist name, tagline, logo reference)                   |
+| `guide/00-toc.md`            | Table of contents placeholder (Typst generates real TOC)                     |
+| `guide/01-installation.md`   | BG3MM installation guide + mod setup instructions                            |
+| `guide/02-wave-0-guide.md`   | Beginner's guide: character creation, builds, mechanics                      |
+| `guide/03-wave-0-modlist.md` | Wave 0 mod entries (~10-20 mods)                                             |
+| `guide/04-wave-1-guide.md`   | Advanced guide: multiclassing, mechanics, mod integration                    |
+| `guide/05-wave-1-modlist.md` | Wave 1 mod entries (50+ mods)                                                |
+| `guide/06-load-order.md`     | Prescribed load order for each wave                                          |
+| `scripts/convert.js`         | Node.js script: markdown files → Typst `.typ` content blocks                 |
+| `scripts/clean.js`           | Node.js script: wipes `.typst-cache/` for a clean build                      |
+| `build.typ`                  | Typst document: imports converted `.typ` files, applies styling, renders PDF |
+| `build.bat`                  | One-click launcher: prerequisite check → clean → convert → compile           |
+| `output/mythic-crucible.pdf` | Generated PDF (gitignored)                                                   |
 
 ---
 
 ### Task 1: Project Scaffolding
 
 **Files:**
+
 - Create: `AGENTS.md`, `README.md` (stub), `STATUS.md` (stub), `mod-ideas.md` (stub), `conflicts-mods.md` (stub)
 - Create: `guide/00-cover.md` (stub), `guide/00-toc.md` (stub), `guide/01-installation.md` (stub)
 - Create: `guide/02-wave-0-guide.md` (stub), `guide/03-wave-0-modlist.md` (stub)
@@ -111,10 +112,10 @@ Run `build.bat` to regenerate the PDF. Requires Typst 0.15.x and Node.js.
 
 A curated 2-wave modlist and game guide for Baldur's Gate 3 (Patch 8 / Hotfix #36).
 
-| Wave | For | Mods | Focus |
-|------|-----|------|-------|
-| 0 | Beginners | ~10-20 | UI/QoL + bug fixes + lightweight graphics |
-| 1 | Experienced | 50+ | New content, mechanics, graphics overhaul |
+| Wave | For         | Mods   | Focus                                     |
+|------|-------------|--------|-------------------------------------------|
+| 0    | Beginners   | ~10-20 | UI/QoL + bug fixes + lightweight graphics |
+| 1    | Experienced | 50+    | New content, mechanics, graphics overhaul |
 
 ## Quick Start
 
@@ -172,6 +173,7 @@ Mods that sound interesting but couldn't be verified, aren't compatible yet, or 
 - [ ] **Step 7: Create all guide stub files**
 
 `guide/00-cover.md`:
+
 ```markdown
 # Mythic Crucible
 
@@ -183,6 +185,7 @@ Patch 8 / Hotfix #36 — April 2025
 ```
 
 `guide/00-toc.md`:
+
 ```markdown
 # Table of Contents
 
@@ -190,6 +193,7 @@ The table of contents is generated automatically by Typst during PDF build.
 ```
 
 `guide/01-installation.md`:
+
 ```markdown
 # Installation Guide
 
@@ -207,6 +211,7 @@ The table of contents is generated automatically by Typst during PDF build.
 ```
 
 `guide/02-wave-0-guide.md`:
+
 ```markdown
 # Wave 0 — First Steps into Faerun
 
@@ -242,6 +247,7 @@ The table of contents is generated automatically by Typst during PDF build.
 ```
 
 `guide/03-wave-0-modlist.md`:
+
 ```markdown
 # Wave 0 Modlist
 
@@ -263,6 +269,7 @@ The table of contents is generated automatically by Typst during PDF build.
 ```
 
 `guide/04-wave-1-guide.md`:
+
 ```markdown
 # Wave 1 — Mythic Crucible
 
@@ -294,6 +301,7 @@ The table of contents is generated automatically by Typst during PDF build.
 ```
 
 `guide/05-wave-1-modlist.md`:
+
 ```markdown
 # Wave 1 Modlist
 
@@ -351,6 +359,7 @@ The table of contents is generated automatically by Typst during PDF build.
 ```
 
 `guide/06-load-order.md`:
+
 ```markdown
 # Load Order
 
@@ -495,6 +504,7 @@ git commit -m "feat(bg3): scaffold Mythic Crucible project structure"
 ### Task 2: Research & Write Wave 0 Modlist (All Categories)
 
 **Files:**
+
 - Modify: `guide/03-wave-0-modlist.md`
 - Modify: `STATUS.md`
 - Modify: `mod-ideas.md` (for rejected/uncertain mods)
@@ -537,6 +547,7 @@ Write entries under "Lightweight Graphics".
 - [ ] **Step 6: Mod entry format verification**
 
 Spot-check all entries against the required format — every mod must have:
+
 ```markdown
 ### [Mod Name](URL)
 
@@ -559,6 +570,7 @@ git commit -m "feat(bg3): add Wave 0 modlist — bug fixes, UI, QoL, lightweight
 ### Task 3: Write Wave 0 Guide + Installation Guide
 
 **Files:**
+
 - Modify: `guide/02-wave-0-guide.md`
 - Modify: `guide/01-installation.md`
 
@@ -573,6 +585,7 @@ Content: all races/subraces with brief mechanical summaries (ability bonuses, ke
 - [ ] **Step 3: Write "Recommended Beginner Builds" section**
 
 Provide 3 builds. Each includes:
+
 - Class + subclass recommendation with reasoning
 - Recommended race and why
 - Ability score allocation (point buy or standard array)
@@ -582,6 +595,7 @@ Provide 3 builds. Each includes:
 - Party role
 
 Suggested builds:
+
 1. Battle Master Fighter (martial, simple, effective)
 2. Light Cleric (caster with survivability, healing, radiance damage)
 3. Swords Bard (hybrid — face, lockpicker, melee, spells)
@@ -630,6 +644,7 @@ git commit -m "feat(bg3): write Wave 0 beginner's guide and installation instruc
 ### Task 4: Research Wave 1 Mods — Graphics, Character Creation, Races
 
 **Files:**
+
 - Modify: `guide/05-wave-1-modlist.md`
 - Modify: `STATUS.md`
 - Modify: `mod-ideas.md`
@@ -665,6 +680,7 @@ git commit -m "feat(bg3): add Wave 1 mods — graphics, character creation, race
 ### Task 5: Research Wave 1 Mods — Classes, Spells, Feats
 
 **Files:**
+
 - Modify: `guide/05-wave-1-modlist.md`
 - Modify: `STATUS.md`
 - Modify: `mod-ideas.md`
@@ -698,6 +714,7 @@ git commit -m "feat(bg3): add Wave 1 mods — classes, spells, feats"
 ### Task 6: Research Wave 1 Mods — Equipment, Companions, Quests
 
 **Files:**
+
 - Modify: `guide/05-wave-1-modlist.md`
 - Modify: `STATUS.md`
 - Modify: `mod-ideas.md`
@@ -731,6 +748,7 @@ git commit -m "feat(bg3): add Wave 1 mods — equipment, companions, quests"
 ### Task 7: Research Wave 1 Mods — Combat, Mechanics, Romance, UI/QoL
 
 **Files:**
+
 - Modify: `guide/05-wave-1-modlist.md`
 - Modify: `STATUS.md`
 - Modify: `mod-ideas.md`
@@ -776,6 +794,7 @@ git commit -m "feat(bg3): add Wave 1 mods — combat, mechanics, romance, UI/QoL
 ### Task 8: Determine Load Order & Document Conflicts
 
 **Files:**
+
 - Modify: `guide/06-load-order.md`
 - Modify: `conflicts-mods.md`
 - Modify: `STATUS.md`
@@ -783,6 +802,7 @@ git commit -m "feat(bg3): add Wave 1 mods — combat, mechanics, romance, UI/QoL
 - [ ] **Step 1: Research BG3MM load order conventions**
 
 Using Playwright or Context7, research BG3MM load order best practices:
+
 - Core/community patches load first
 - UI mods load after patches
 - Graphics mods load after UI
@@ -792,6 +812,7 @@ Using Playwright or Context7, research BG3MM load order best practices:
 - [ ] **Step 2: Determine Wave 0 load order**
 
 Based on the mods curated in Task 2, assign load order:
+
 1. Bug Fixes & Community Patches (always first)
 2. UI Enhancements
 3. Quality of Life
@@ -799,6 +820,7 @@ Based on the mods curated in Task 2, assign load order:
 Within each category, order by dependency (mods that others depend on go first).
 
 Write the ordered list in `guide/06-load-order.md` under "Wave 0 Load Order". Format:
+
 ```markdown
 ### Wave 0 Load Order
 
@@ -810,6 +832,7 @@ Write the ordered list in `guide/06-load-order.md` under "Wave 0 Load Order". Fo
 - [ ] **Step 3: Determine Wave 1 load order**
 
 Based on all Wave 1 mods (Tasks 4-7), plus Wave 0 mods (they carry forward), assign load order:
+
 1. Wave 0 mods in their established order
 2. New mechanics / rule changes
 3. Races / classes / subclasses
@@ -825,6 +848,7 @@ Write the ordered list under "Wave 1 Load Order" with same format.
 - [ ] **Step 4: Document conflicts**
 
 Review all mods for overlapping files or known incompatibilities:
+
 - Two mods modifying the same file → conflict, pick one or document load order resolution
 - Mods with explicit "incompatible with X" notes on Nexus → document
 - Test: cross-reference mod descriptions for mentions of other mods
@@ -843,6 +867,7 @@ git commit -m "feat(bg3): determine load order and document conflicts"
 ### Task 9: Write Wave 1 Advanced Guide
 
 **Files:**
+
 - Modify: `guide/04-wave-1-guide.md`
 
 - [ ] **Step 1: Write "Advanced Character Building" section**
@@ -881,6 +906,7 @@ git commit -m "feat(bg3): write Wave 1 advanced guide"
 ### Task 10: Build PDF Generation Pipeline
 
 **Files:**
+
 - Modify: `scripts/convert.js` (full implementation)
 - Create: `build.typ`
 - Modify: `build.bat` (already has full implementation from Task 1)
@@ -890,6 +916,7 @@ git commit -m "feat(bg3): write Wave 1 advanced guide"
 - [ ] **Step 1: Look up Typst 0.15 API via Context7 MCP**
 
 Use Context7 to resolve library ID for Typst and query:
+
 - Document setup: `#set page()`, `#set text()`, `#set heading()`
 - Image inclusion: `#image("path", width: ...)`
 - Document structure and `#include`
@@ -1090,6 +1117,7 @@ The table of contents is generated automatically by Typst during PDF build via t
 
 Run: `build.bat`
 Expected output:
+
 ```
 === Mythic Crucible PDF Builder ===
 
@@ -1128,6 +1156,7 @@ git commit -m "feat(bg3): implement PDF build pipeline with Typst"
 ### Task 11: Final Polish & Verification
 
 **Files:**
+
 - Modify: `README.md` (finalize)
 - Modify: `STATUS.md` (final review)
 - All project files (verification only)
@@ -1135,6 +1164,7 @@ git commit -m "feat(bg3): implement PDF build pipeline with Typst"
 - [ ] **Step 1: Finalize README.md**
 
 Ensure README contains:
+
 - Modlist name "Mythic Crucible" and description
 - Game version: Patch 8 / Hotfix #36
 - Wave overview table with mod counts
@@ -1146,6 +1176,7 @@ Ensure README contains:
 - [ ] **Step 2: STATUS.md cleanup**
 
 Review all entries:
+
 - Every accepted mod has: name, wave, category, decision date, notes
 - Every rejected mod has: name, reason, date
 - No [TODO]/[TBD] placeholders
@@ -1155,6 +1186,7 @@ Review all entries:
 
 Run: `Get-ChildItem -Recurse -Name baldurs-gate-3/`
 Confirm all expected files exist:
+
 ```
 AGENTS.md, README.md, STATUS.md, mod-ideas.md, conflicts-mods.md
 build.bat, build.typ, .gitignore
@@ -1168,6 +1200,7 @@ assets/logo.jpg
 - [ ] **Step 4: Verify mod counts**
 
 Run a programmatic count (using grep or Node.js):
+
 - `guide/03-wave-0-modlist.md`: count lines starting with `### [` (each is a mod entry) — confirm 10-20
 - `guide/05-wave-1-modlist.md`: same count — confirm 50+
 
@@ -1184,6 +1217,7 @@ Run a script to extract mod names from guide files and compare against STATUS.md
 
 Run: `build.bat`
 Open `output/mythic-crucible.pdf`:
+
 - Cover renders with logo, title, colors
 - TOC has correct entries
 - All pages have consistent styling (dark background, gold headings, cream text)

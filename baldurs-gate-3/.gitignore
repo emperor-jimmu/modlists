@@ -1,0 +1,3 @@
+output/*.pdf
+guide/.typst-cache/
+node_modules/
