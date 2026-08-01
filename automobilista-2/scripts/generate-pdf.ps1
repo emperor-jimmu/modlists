@@ -35,31 +35,19 @@ Write-Host "Step [2/4]: Checking fonts..." -ForegroundColor Yellow
 
 $fontsDir = Join-Path $projectRoot "assets\fonts"
 $fonts = @(
-    @{ Name = "Montserrat"; Regular = "Montserrat-Regular.ttf"; Bold = "Montserrat-Bold.ttf"; UrlRegular = "https://github.com/google/fonts/raw/main/ofl/montserrat/static/Montserrat-Regular.ttf"; UrlBold = "https://github.com/google/fonts/raw/main/ofl/montserrat/static/Montserrat-Bold.ttf" },
-    @{ Name = "Inter"; Regular = "Inter-Regular.ttf"; Bold = "Inter-Bold.ttf"; UrlRegular = "https://github.com/google/fonts/raw/main/ofl/inter/static/Inter-Regular.ttf"; UrlBold = "https://github.com/google/fonts/raw/main/ofl/inter/static/Inter-Bold.ttf" },
-    @{ Name = "JetBrains Mono"; Regular = "JetBrainsMono-Regular.ttf"; Bold = "JetBrainsMono-Bold.ttf"; UrlRegular = "https://github.com/google/fonts/raw/main/ofl/jetbrainsmono/static/JetBrainsMono-Regular.ttf"; UrlBold = "https://github.com/google/fonts/raw/main/ofl/jetbrainsmono/static/JetBrainsMono-Bold.ttf" }
+    @{ Name = "Montserrat"; File = "Montserrat[wght].ttf"; Url = "https://raw.githubusercontent.com/google/fonts/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf" },
+    @{ Name = "Inter"; File = "Inter[opsz,wght].ttf"; Url = "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf" },
+    @{ Name = "JetBrains Mono"; File = "JetBrainsMono[wght].ttf"; Url = "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf" }
 )
 
 foreach ($font in $fonts) {
-    $regularPath = Join-Path $fontsDir $font.Regular
-    $boldPath = Join-Path $fontsDir $font.Bold
-    $needsDownload = $false
+    $fontPath = Join-Path $fontsDir $font.File
 
-    if (-not (Test-Path $regularPath)) {
-        $needsDownload = $true
-    }
-    if (-not (Test-Path $boldPath)) {
-        $needsDownload = $true
-    }
-
-    if ($needsDownload) {
+    if (-not (Test-Path $fontPath)) {
         try {
-            if (-not (Test-Path $regularPath)) {
-                Invoke-WebRequest -Uri $font.UrlRegular -OutFile $regularPath
-            }
-            if (-not (Test-Path $boldPath)) {
-                Invoke-WebRequest -Uri $font.UrlBold -OutFile $boldPath
-            }
+            $wc = New-Object System.Net.WebClient
+            $wc.Headers.Add("User-Agent", "Mozilla/5.0")
+            $wc.DownloadFile($font.Url, $fontPath)
             Write-Host "  Font '$($font.Name)' downloaded." -ForegroundColor Green
         } catch {
             Write-Host "  WARNING: Could not download font '$($font.Name)'. It may be available as a system font." -ForegroundColor Yellow
@@ -69,7 +57,8 @@ foreach ($font in $fonts) {
 
 $allFontsAvailable = $true
 foreach ($font in $fonts) {
-    if (-not (Test-Path (Join-Path $fontsDir $font.Regular)) -or -not (Test-Path (Join-Path $fontsDir $font.Bold))) {
+    $fontPath = Join-Path $fontsDir $font.File
+    if (-not (Test-Path $fontPath) -or (Get-Item $fontPath).Length -lt 1024) {
         $allFontsAvailable = $false
         break
     }
