@@ -22,24 +22,29 @@
 #let color-warn-bg = rgb("#fff3e0")
 #let color-note-bg = rgb("#e3f2fd")
 
-// Styled table wrapper — local scope ensures fill and stroke always apply
+// Styled table — explicit cell coloring via show rules
 #let styled-table(columns: 1, ..cells) = {
-  set table(
-    fill: (_, y) => {
-      if y == 0 { color-accent-blue }
-      else if calc.odd(y) { rgb("EAF2F5") }
-    },
-    stroke: 0.5pt + color-panel-border,
-  )
   set text(size: 10pt)
   show table.header: it => {
-    set text(fill: white, weight: "bold")
-    it
+    block(
+      fill: color-accent-blue,
+      inset: (x: 8pt, y: 6pt),
+      text(fill: white, weight: "bold", it)
+    )
   }
   show table.cell: it => {
-    block(inset: (x: 8pt, y: 5pt), it)
+    block(
+      fill: rgb("FAFBFC"),
+      inset: (x: 8pt, y: 5pt),
+      stroke: (bottom: 0.5pt + color-panel-border),
+      it
+    )
   }
-  table(columns: columns, ..cells)
+  table(
+    columns: columns,
+    stroke: 0.5pt + color-panel-border,
+    ..cells
+  )
 }
 
 // ─── Page Setup ──────────────────────────────────────────────────────────
