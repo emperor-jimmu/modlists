@@ -7,6 +7,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Modlist         | Game                            | Directory                                          | Status |
 |-----------------|---------------------------------|----------------------------------------------------|--------|
 | Arma 3          | Arma 3                          | [`arma3/`](./arma3/)                               | Active |
+| Automobilista 2 | Automobilista 2                | [`automobilista-2/`](./automobilista-2/)           | Active |
 | Assetto Corsa   | Assetto Corsa                   | [`asseto-corsa/`](./asseto-corsa/)                 | Active |
 | Baldur's Gate 3 | Baldur's Gate 3                 | [`baldurs-gate-3/`](./baldurs-gate-3/)             | Active |
 | CK3             | Crusader Kings 3                | [`ck3/`](./ck3/)                                   | Active |
@@ -85,6 +86,9 @@ arma3/                  # Arma 3 modlist
 ├── AGENTS.md
 └── ...
 asseto-corsa/           # Assetto Corsa modlist
+├── AGENTS.md
+└── ...
+automobilista-2/        # Automobilista 2 modlist
 ├── AGENTS.md
 └── ...
 baldurs-gate-3/         # Baldur's Gate 3 modlist

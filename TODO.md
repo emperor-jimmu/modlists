@@ -2,8 +2,8 @@
 
 [x] 0. Starbound
 [x] 1. Baldur's gate III
-[*] 2. F1 25
-[ ] 3. AMS2
+[x] 2. F1 25
+[*] 3. AMS2
 [ ] 4. Fallout 4
 [ ] 5. Fallout: New Vegas
 [ ] 6. Fallout 3
