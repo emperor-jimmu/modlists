@@ -1,7 +1,5 @@
 # Wave 3 — World Championship
 
-> Green light in the pit box. 340 km/h at Le Mans. Twelve years from rental kart to prototype. The engine fires in your chest before it fires in the car. Last hour of the greatest race on Earth. Everything led here.
-
 ## Wave Overview
 
 Wave 3 is the pinnacle. Mastery, refinement, full-immersion. You'll drive F1-grade machinery with hybrid energy deployment systems, pilot the fastest prototypes in multi-class endurance battles spanning hours, wrestle historic Formula 1 cars from four different eras with zero electronics, and engineer your own setups from scratch. Every assist is off. Every mistake has consequences. Every lap is yours alone.

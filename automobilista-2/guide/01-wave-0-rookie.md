@@ -1,7 +1,5 @@
 # Wave 0 — Rookie License
 
-> You've never turned a wheel in anger. The first time you sit in a kart at a dusty karting track, the engine rattles your bones and the steering wheel feels alive in your hands. This is where the dream begins — one corner, one lap, one clean race at a time.
-
 ## Wave Overview
 
 Wave 0 is your introduction to sim racing. You'll learn the core controls, how assists work, the different session types available in AMS2, and the fundamentals of the racing line. By the end, you'll complete a clean sprint race at Velo Citta — no spins, no track limits, and laps you can be proud of.

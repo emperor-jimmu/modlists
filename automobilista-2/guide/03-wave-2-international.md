@@ -1,7 +1,5 @@
 # Wave 2 — International License
 
-> The passport stamp says FIA International. Your engineer hands you the F3 steering wheel — 200 horsepower, no ABS, and a carbon tub that weighs less than your karting seat. Outside, the paddock speaks six languages and the GT3 engines are already rattling the garage door. Welcome to the global stage. They don't care where you came from, only whether you're quick.
-
 ## Wave Overview
 
 Wave 2 transitions you from competent racer to genuine competitor. You'll master high-downforce formula cars where cornering speed defies intuition, GT3 machinery where tenths separate the podium from the midfield, and 1980s Group C monsters that demand equal parts bravery and restraint. Endurance racing introduces pit strategy, fuel calculations, and tyre management over race distances measured in hours. Telemetry analysis becomes a core skill — you'll learn to read your own data and turn it into lap time.

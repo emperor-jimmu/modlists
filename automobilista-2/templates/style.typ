@@ -18,6 +18,7 @@
 #let color-accent-purple = rgb("#6a4c93")
 #let color-panel-bg = rgb("#f8f8f8")
 #let color-panel-border = rgb("#e0e0e0")
+#let color-table-stripe = rgb("#f5f5f5")
 
 #let color-tip-bg = rgb("#e8f5e9")
 #let color-warn-bg = rgb("#fff3e0")
@@ -85,7 +86,21 @@
 
 // ─── Table Show Rule ─────────────────────────────────────────────────────
 
-#show table: set text(size: 10pt)
+#show table: it => {
+  set text(size: 10pt)
+  show table.header: it => {
+    set text(fill: white, weight: "bold")
+    block(fill: color-accent-blue, inset: (x: 8pt, y: 6pt), it)
+  }
+  show table.cell: it => {
+    block(inset: (x: 8pt, y: 5pt), it)
+  }
+  block(
+    stroke: 1pt + color-panel-border,
+    radius: 4pt,
+    it
+  )
+}
 
 // ─── Reusable Functions ──────────────────────────────────────────────────
 
@@ -257,16 +272,16 @@
   set page(numbering: none)
   set align(center)
 
-  v(6cm)
+  v(4cm)
   image(logo-path, width: 6cm)
-  v(1.5cm)
+  v(1cm)
 
   text(font: heading-font, size: 42pt, weight: "bold", fill: color-accent-red)[#title]
   v(8pt)
   line(length: 6cm, stroke: 2pt + color-accent-red)
   v(12pt)
   text(font: heading-font, size: 16pt, style: "italic", fill: rgb("#666666"))[#subtitle]
-  v(20pt)
+  v(12pt)
 
   // Version badge
   block(
@@ -276,11 +291,10 @@
     [#set text(fill: white, weight: "bold", size: 12pt); #version-text]
   )
 
-  v(4cm)
+  v(2.5cm)
   text(size: 10pt, fill: rgb("#999999"))[Automobilista 2 Modlist & Guide]
   text(size: 9pt, fill: rgb("#999999"))[For AMS2 V1.6+]
 
-  set page(numbering: "1")
   set align(left)
 }
 

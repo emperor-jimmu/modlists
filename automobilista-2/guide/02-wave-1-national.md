@@ -1,7 +1,5 @@
 # Wave 1 — National License
 
-> The local kart track is in the rearview mirror. Now there's a proper garage, a crew chief who expects results, and faster machinery than you've ever touched. The national series aren't here to teach you — they're here to see if you belong.
-
 ## Wave Overview
 
 Wave 1 bridges the gap from learning to competing. You'll step into production-based GT4 machinery, lightweight P4 prototypes, and heavy V8 Copa Classics over 10–20 minute races. For the first time, tyre wear and fuel load matter. You'll learn racecraft — overtaking, defending, and pit stop procedure — against faster AI on longer tracks.
