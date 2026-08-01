@@ -43,7 +43,7 @@ $fonts = @(
 foreach ($font in $fonts) {
     $fontPath = Join-Path $fontsDir $font.File
 
-    if (-not (Test-Path $fontPath)) {
+    if (-not (Test-Path -LiteralPath $fontPath)) {
         try {
             $wc = New-Object System.Net.WebClient
             $wc.Headers.Add("User-Agent", "Mozilla/5.0")
@@ -58,7 +58,7 @@ foreach ($font in $fonts) {
 $allFontsAvailable = $true
 foreach ($font in $fonts) {
     $fontPath = Join-Path $fontsDir $font.File
-    if (-not (Test-Path $fontPath) -or (Get-Item $fontPath).Length -lt 1024) {
+    if (-not (Test-Path -LiteralPath $fontPath) -or (Get-Item -LiteralPath $fontPath).Length -lt 1024) {
         $allFontsAvailable = $false
         break
     }
