@@ -140,16 +140,12 @@ After every race, watch the replay from chase cam. Focus on one corner where you
 
 ## Completion Checklist
 
-```typst
-#completion-checklist[
 - Completed a clean 5-lap race at Velo Citta (no spins, no track limit violations)
 - Consistent lap times within 1 second of each other (3 consecutive laps)
 - Can identify the racing line through Velo Citta's corners
 - Understand the difference between Test Day, Time Trial, and Race Weekend
 - Can modulate brake pressure (not just on/off)
 - Launch AMS2 via AMS2CM successfully
-]
-```
 
 ---
 

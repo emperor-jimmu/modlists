@@ -137,15 +137,11 @@ Random weather in a timed race creates the most strategic depth in AMS2:
 
 ## Completion Checklist
 
-```typst
-#completion-checklist[
 - 45-minute GT3 endurance at Spa with one pit stop (finish top 10, AI 85)
 - Qualifying lap within 1.5 seconds of fastest AI at an unfamiliar track (AI 85)
 - Interpret telemetry traces and identify one specific area for improvement
 - Manage wet-to-dry transition without incorrect tyre choice or off-track incident
 - Clean F3 race at Monza with no contact (AI 80)
-]
-```
 
 ---
 

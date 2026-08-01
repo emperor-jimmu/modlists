@@ -24,6 +24,16 @@
 #let color-warn-bg = rgb("#fff3e0")
 #let color-note-bg = rgb("#e3f2fd")
 
+// Global table defaults — zebra striping for all tables including cmarker-generated
+#set table(
+  fill: (row, col) => {
+    if row == 0 { color-accent-blue }
+    else if calc.rem(row, 2) == 0 { color-table-stripe }
+    else { white }
+  },
+  stroke: (rest: 1pt + color-panel-border),
+)
+
 // ─── Page Setup ──────────────────────────────────────────────────────────
 
 #set page(
@@ -88,13 +98,6 @@
 
 #show table: it => {
   set text(size: 10pt)
-  set table(
-    fill: (row, col) => {
-      if row == 0 { color-accent-blue }
-      else if calc.rem(row, 2) == 0 { color-table-stripe }
-      else { white }
-    }
-  )
   show table.header: header => {
     set text(fill: white, weight: "bold")
     header
@@ -102,7 +105,7 @@
   show table.cell: cell => {
     block(inset: (x: 8pt, y: 5pt), cell)
   }
-  block(stroke: 1pt + color-panel-border, radius: 4pt, it)
+  it
 }
 
 // ─── Reusable Functions ──────────────────────────────────────────────────

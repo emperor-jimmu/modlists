@@ -149,8 +149,6 @@ The championship forces you to race, not just hot-lap. When you're P4 with three
 
 ## Mastery Checklist
 
-```typst
-#completion-checklist[
 - Won a 2+ hour multi-class endurance race from pole position (AI 95+)
 - Built a custom setup from scratch that improved lap time by 1+ second
 - Completed a full 12-round championship season
@@ -159,8 +157,6 @@ The championship forces you to race, not just hot-lap. When you're P4 with three
 - Set a lap within 1% of AI 100 pace at 3 different track types
 - Consistent heel-and-toe downshifts in H-pattern cars
 - Reads telemetry and identifies 3+ setup improvements without assistance
-]
-```
 
 ## Beyond Wave 3
 
