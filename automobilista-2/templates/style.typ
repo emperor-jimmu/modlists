@@ -21,23 +21,18 @@
 #let color-tip-bg = rgb("#e8f5e9")
 #let color-warn-bg = rgb("#fff3e0")
 #let color-note-bg = rgb("#e3f2fd")
+#let color-table-stripe = rgb("EAF2F5")
 
-// Styled table — explicit cell coloring via show rules
+// Styled table — set table.cell fills entire cell; block(width:100%) fills header
 #let styled-table(columns: 1, ..cells) = {
   set text(size: 10pt)
+  set table.cell(fill: rgb("EAF2F5"), inset: (x: 8pt, y: 5pt))
   show table.header: it => {
     block(
       fill: color-accent-blue,
+      width: 100%,
       inset: (x: 8pt, y: 6pt),
       text(fill: white, weight: "bold", it)
-    )
-  }
-  show table.cell: it => {
-    block(
-      fill: rgb("FAFBFC"),
-      inset: (x: 8pt, y: 5pt),
-      stroke: (bottom: 0.5pt + color-panel-border),
-      it
     )
   }
   table(
