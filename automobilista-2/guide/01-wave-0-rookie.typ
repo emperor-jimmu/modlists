@@ -112,25 +112,23 @@ With ABS set to High in Wave 0, you can learn braking points without fear of loc
 
 == Your First Race Configuration
 
-#figure(
-  table(
-    columns: 2,
-    [Setting], [Value],
-    [Track], [Velo Citta],
-    [Car], [Formula Trainer],
-    [AI Opponents], [8],
-    [AI Difficulty], [50],
-    [AI Aggression], [Low],
-    [Practice], [5 min],
-    [Qualifying], [5 min],
-    [Race Laps], [5],
-    [Damage], [Visual Only],
-    [Tyre Wear], [Off],
-    [Fuel Usage], [Off],
-    [Weather], [Clear / Dry],
-    [Time], [14:00],
-  ),
-  placement: none)
+#table(
+  columns: 2,
+  [Setting], [Value],
+  [Track], [Velo Citta],
+  [Car], [Formula Trainer],
+  [AI Opponents], [8],
+  [AI Difficulty], [50],
+  [AI Aggression], [Low],
+  [Practice], [5 min],
+  [Qualifying], [5 min],
+  [Race Laps], [5],
+  [Damage], [Visual Only],
+  [Tyre Wear], [Off],
+  [Fuel Usage], [Off],
+  [Weather], [Clear / Dry],
+  [Time], [14:00],
+)
 
 *Goals for your first race:*
 - Complete all 5 laps without spinning or leaving the track
@@ -147,14 +145,14 @@ After every race, watch the replay from chase cam. Focus on one corner where you
 
 *Awaiting mod list from user.*
 
-== Completion Checklist
-
-- Completed a clean 5-lap race at Velo Citta (no spins, no track limit violations)
-- Consistent lap times within 1 second of each other (3 consecutive laps)
-- Can identify the racing line through Velo Citta's corners
-- Understand the difference between Test Day, Time Trial, and Race Weekend
-- Can modulate brake pressure (not just on/off)
-- Launch AMS2 via AMS2CM successfully
+#checklist[
+  - Completed a clean 5-lap race at Velo Citta (no spins, no track limit violations)
+  - Consistent lap times within 1 second of each other (3 consecutive laps)
+  - Can identify the racing line through Velo Citta's corners
+  - Understand the difference between Test Day, Time Trial, and Race Weekend
+  - Can modulate brake pressure (not just on/off)
+  - Launch AMS2 via AMS2CM successfully
+]
 
 #line(length: 100%)
 

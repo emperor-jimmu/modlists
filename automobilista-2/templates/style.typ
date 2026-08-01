@@ -18,20 +18,13 @@
 #let color-accent-purple = rgb("#6a4c93")
 #let color-panel-bg = rgb("#f8f8f8")
 #let color-panel-border = rgb("#e0e0e0")
-#let color-table-stripe = rgb("#f5f5f5")
-
 #let color-tip-bg = rgb("#e8f5e9")
 #let color-warn-bg = rgb("#fff3e0")
 #let color-note-bg = rgb("#e3f2fd")
 
-// Global table defaults — zebra striping for all tables including cmarker-generated
 #set table(
-  fill: (row, col) => {
-    if row == 0 { color-accent-blue }
-    else if calc.rem(row, 2) == 0 { color-table-stripe }
-    else { white }
-  },
-  stroke: (rest: 1pt + color-panel-border),
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: 0.5pt + rgb("CCCCCC"),
 )
 
 // ─── Page Setup ──────────────────────────────────────────────────────────
@@ -305,20 +298,14 @@
 }
 
 // Completion checklist: blue-bordered box for wave-end checklists
-#let completion-checklist(items) = {
-  block(
-    fill: color-note-bg,
-    stroke: 1pt + color-accent-blue,
-    inset: 14pt,
-    radius: 4pt,
-    [
-      #set text(font: heading-font, size: 14pt, weight: "bold", fill: color-accent-blue)
-      Wave Completion Checklist
-      #v(10pt)
-      
-      #set text(size: 10pt, font: body-font)
-      #items
-    ]
-  )
-  v(12pt)
-}
+#let checklist(title: "Wave Completion Checklist", body) = block(
+  stroke: (left: 3pt + color-accent-blue, rest: 0.5pt + color-panel-border),
+  fill: rgb("#f0f7ff"),
+  inset: 14pt,
+  radius: 4pt,
+  {
+    text(size: 14pt, weight: "bold", fill: color-accent-blue, font: heading-font)[#title]
+    v(0.4em)
+    body
+  }
+)

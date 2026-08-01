@@ -13,20 +13,18 @@ Wave 3 is the pinnacle. Mastery, refinement, full-immersion. You'll drive F1-gra
 
 No more transition. This is racing as it was meant to be — raw, mechanical, and entirely in your hands.
 
-#figure(
-  table(
-    columns: 2,
-    table.header([Assist], [Setting]),
-    [All driver aids], [*Off*],
-    [Auto Gears], [*Off*],
-    [Auto Clutch], [*Off* (manual clutch + heel-and-toe)],
-    [Racing Line], [*Off*],
-    [Damage], [*Full*],
-    [Mechanical Failures], [*On*],
-    [Tyre Wear], [*Authentic*],
-    [Fuel Usage], [*Authentic*],
-  ),
-  placement: none)
+#table(
+  columns: 2,
+  table.header([Assist], [Setting]),
+  [All driver aids], [*Off*],
+  [Auto Gears], [*Off*],
+  [Auto Clutch], [*Off* (manual clutch + heel-and-toe)],
+  [Racing Line], [*Off*],
+  [Damage], [*Full*],
+  [Mechanical Failures], [*On*],
+  [Tyre Wear], [*Authentic*],
+  [Fuel Usage], [*Authentic*],
+)
 
 With Mechanical Failures on, the engine can blow if you money-shift or over-rev. Full damage means the wall ends your race, not just your lap. Authentic wear rates mean your tyres behave exactly as they would in reality — no compression, no safety net.
 
@@ -62,16 +60,14 @@ The fastest prototypes in modern racing. 340+ km/h on the Mulsanne. A hybrid sys
 
 Four generations of Formula 1, each with its own personality, none with a single electronic aid. No traction control. No ABS. No power steering. Just an engine, a gearbox, and your nerve.
 
-#figure(
-  table(
-    columns: 5,
-    table.header([Generation], [Era], [Power], [Downforce], [Character]),
-    [Formula Classic Gen 1], [1960s], [~220 HP], [None], [Narrow tyres, body roll, engines that demand revs. Pure mechanical grip. The Lotus 49C feels alive because it's trying to kill you gently],
-    [Formula Classic Gen 2], [1970s], [~450 HP], [Early wings], [Ground effect beginning. Wider tyres. Still no downforce to speak of — cornering is about weight transfer, not aero],
-    [Formula Classic Gen 3], [1980s], [~650–850 HP], [Significant], [Turbo lag that arrives like a punch. Qualifying engines with boost turned to grenade settings. The Brabham BT52 is a rocket — 1400 HP in qualifying trim],
-    [Formula Classic Gen 4], [1990s–2000s], [~750–900 HP], [High], [Modern enough to feel fast, old enough to kill. V10 scream. The McLaren MP4/4 and Ferrari F2004 bridge the gap between historic and ultimate],
-  ),
-  placement: none)
+#table(
+  columns: 5,
+  table.header([Generation], [Era], [Power], [Downforce], [Character]),
+  [Formula Classic Gen 1], [1960s], [~220 HP], [None], [Narrow tyres, body roll, engines that demand revs. Pure mechanical grip. The Lotus 49C feels alive because it's trying to kill you gently],
+  [Formula Classic Gen 2], [1970s], [~450 HP], [Early wings], [Ground effect beginning. Wider tyres. Still no downforce to speak of — cornering is about weight transfer, not aero],
+  [Formula Classic Gen 3], [1980s], [~650–850 HP], [Significant], [Turbo lag that arrives like a punch. Qualifying engines with boost turned to grenade settings. The Brabham BT52 is a rocket — 1400 HP in qualifying trim],
+  [Formula Classic Gen 4], [1990s–2000s], [~750–900 HP], [High], [Modern enough to feel fast, old enough to kill. V10 scream. The McLaren MP4/4 and Ferrari F2004 bridge the gap between historic and ultimate],
+)
 
 *Heel-and-toe is mandatory.* H-pattern gearboxes in Gen 1–3 require simultaneous brake, clutch, and throttle control on every downshift. Practice on a short track with low stakes until the motion is automatic. If you're thinking about your feet, you're not thinking about your line.
 
@@ -91,19 +87,17 @@ The final frontier. A good setup won't make you fast, but a bad setup will make 
 
 === Setup Priority Order
 
-#figure(
-  table(
-    columns: 3,
-    table.header([Priority], [Parameter], [Why First]),
-    [1], [Tyre Pressures], [Influences all grip, wear, and temperature behavior. Wrong pressures undermine every other adjustment],
-    [2], [Brake Bias], [Affects every corner entry. The single most accessible adjustment — and the most commonly wrong one],
-    [3], [Downforce (Wings)], [Biggest direct influence on lap time. Sets the fundamental character: stable vs. agile],
-    [4], [Differential], [Affects exit traction and rotation. Power-down behavior and mid-corner balance],
-    [5], [Suspension], [Track-specific. Spring rates and damping for bumps, curbs, and weight transfer],
-    [6], [Gearing], [Top speed vs. acceleration trade-off. Only adjust after aero and mechanical balance is right],
-    [7], [Camber/Toe], [Fine-edge adjustments. Requires telemetry data to set correctly — don't guess],
-  ),
-  placement: none)
+#table(
+  columns: 3,
+  table.header([Priority], [Parameter], [Why First]),
+  [1], [Tyre Pressures], [Influences all grip, wear, and temperature behavior. Wrong pressures undermine every other adjustment],
+  [2], [Brake Bias], [Affects every corner entry. The single most accessible adjustment — and the most commonly wrong one],
+  [3], [Downforce (Wings)], [Biggest direct influence on lap time. Sets the fundamental character: stable vs. agile],
+  [4], [Differential], [Affects exit traction and rotation. Power-down behavior and mid-corner balance],
+  [5], [Suspension], [Track-specific. Spring rates and damping for bumps, curbs, and weight transfer],
+  [6], [Gearing], [Top speed vs. acceleration trade-off. Only adjust after aero and mechanical balance is right],
+  [7], [Camber/Toe], [Fine-edge adjustments. Requires telemetry data to set correctly — don't guess],
+)
 
 === Track-Specific Philosophy
 
@@ -119,20 +113,18 @@ The ultimate test. Two to four hours. Two or more classes sharing the track with
 
 === Race Configuration
 
-#figure(
-  table(
-    columns: 2,
-    [Setting], [Value],
-    [Duration], [2–4 hours],
-    [Classes], [LMDh + GT3 Gen 2],
-    [AI Difficulty], [95–100],
-    [Fuel Usage], [Authentic],
-    [Tyre Wear], [Authentic],
-    [Weather], [Random (4–6 slots)],
-    [Time Scale], [10x–20x],
-    [Mandatory Pit Stops], [3–5],
-  ),
-  placement: none)
+#table(
+  columns: 2,
+  [Setting], [Value],
+  [Duration], [2–4 hours],
+  [Classes], [LMDh + GT3 Gen 2],
+  [AI Difficulty], [95–100],
+  [Fuel Usage], [Authentic],
+  [Tyre Wear], [Authentic],
+  [Weather], [Random (4–6 slots)],
+  [Time Scale], [10x–20x],
+  [Mandatory Pit Stops], [3–5],
+)
 
 Time scale at 10x–20x compresses a full 24-hour day-night cycle into your race window. You will experience dawn, midday glare, dusk, and full darkness — each requiring adjustment to braking points and reference markers.
 
@@ -168,16 +160,16 @@ The championship forces you to race, not just hot-lap. When you're P4 with three
 
 *Awaiting mod list from user.*
 
-== Mastery Checklist
-
-- Won a 2+ hour multi-class endurance race from pole position (AI 95+)
-- Built a custom setup from scratch that improved lap time by 1+ second
-- Completed a full 12-round championship season
-- Survived a 100% distance Historic F1 race at Nordschleife without damage
-- Managed a dry-wet-dry race with optimal tyre strategy calls
-- Set a lap within 1% of AI 100 pace at 3 different track types
-- Consistent heel-and-toe downshifts in H-pattern cars
-- Reads telemetry and identifies 3+ setup improvements without assistance
+#checklist(title: "Mastery Checklist")[
+  - Won a 2+ hour multi-class endurance race from pole position (AI 95+)
+  - Built a custom setup from scratch that improved lap time by 1+ second
+  - Completed a full 12-round championship season
+  - Survived a 100% distance Historic F1 race at Nordschleife without damage
+  - Managed a dry-wet-dry race with optimal tyre strategy calls
+  - Set a lap within 1% of AI 100 pace at 3 different track types
+  - Consistent heel-and-toe downshifts in H-pattern cars
+  - Reads telemetry and identifies 3+ setup improvements without assistance
+]
 
 == Beyond Wave 3
 

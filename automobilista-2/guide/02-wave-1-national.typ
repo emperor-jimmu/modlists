@@ -13,20 +13,18 @@ Wave 1 bridges the gap from learning to competing. You'll step into production-b
 
 Before your first Wave 1 session, update your assists. Wave 1 begins the gradual transition to full driver control.
 
-#figure(
-  table(
-    columns: 3,
-    table.header([Assist], [Wave 0], [Wave 1]),
-    [Steering Assist], [Low], [*Off*],
-    [Braking Assist], [Low], [*Off*],
-    [Traction Control], [High], [*Medium*],
-    [Stability Control], [On], [*On*],
-    [ABS], [High], [*Low*],
-    [Auto Gears], [On], [On (manual if ready)],
-    [Racing Line], [Full], [*Corners Only*],
-    [Damage], [Visual Only], [Visual Only],
-  ),
-  placement: none)
+#table(
+  columns: 3,
+  table.header([Assist], [Wave 0], [Wave 1]),
+  [Steering Assist], [Low], [*Off*],
+  [Braking Assist], [Low], [*Off*],
+  [Traction Control], [High], [*Medium*],
+  [Stability Control], [On], [*On*],
+  [ABS], [High], [*Low*],
+  [Auto Gears], [On], [On (manual if ready)],
+  [Racing Line], [Full], [*Corners Only*],
+  [Damage], [Visual Only], [Visual Only],
+)
 
 With Steering and Braking assists off, the car will feel heavier and more communicative through the wheel. The Racing Line set to Corners Only removes the full-track guide — you now only see braking zones and corner entry indicators. Traction Control at Medium allows some wheelspin on exit, requiring more careful throttle application.
 
@@ -108,21 +106,19 @@ Even if your Wave 1 race doesn't require a pit stop, practice the procedure:
 
 == Your First Wave 1 Race
 
-#figure(
-  table(
-    columns: 2,
-    [Setting], [Value],
-    [Track], [Cascavel],
-    [Car], [Porsche Cayman GT4 Clubsport],
-    [AI Opponents], [12],
-    [AI Difficulty], [70],
-    [AI Aggression], [Medium],
-    [Practice], [10 min],
-    [Qualifying], [10 min],
-    [Race Laps], [10],
-    [Damage], [Visual Only],
-  ),
-  placement: none)
+#table(
+  columns: 2,
+  [Setting], [Value],
+  [Track], [Cascavel],
+  [Car], [Porsche Cayman GT4 Clubsport],
+  [AI Opponents], [12],
+  [AI Difficulty], [70],
+  [AI Aggression], [Medium],
+  [Practice], [10 min],
+  [Qualifying], [10 min],
+  [Race Laps], [10],
+  [Damage], [Visual Only],
+)
 
 Cascavel is a fast, flowing circuit with a mix of medium and high-speed corners — ideal for learning GT4. Use the 10-minute practice session to dial in your braking points at the new speed. The 10-lap race gives enough time for the field to spread out and for you to settle into a rhythm.
 
@@ -132,13 +128,13 @@ Cascavel is a fast, flowing circuit with a mix of medium and high-speed corners 
 
 *Awaiting mod list from user.*
 
-== Completion Checklist
-
-- Clean 10-lap GT4 race at Cascavel (finish top 8, AI 70)
-- Trail-brake consistently without triggering ABS intervention
-- Qualifying lap within 2 seconds of the fastest AI (AI 70)
-- Execute 3 clean overtakes in a single race (no contact)
-- Defend a position successfully for 2 consecutive laps
+#checklist[
+  - Clean 10-lap GT4 race at Cascavel (finish top 8, AI 70)
+  - Trail-brake consistently without triggering ABS intervention
+  - Qualifying lap within 2 seconds of the fastest AI (AI 70)
+  - Execute 3 clean overtakes in a single race (no contact)
+  - Defend a position successfully for 2 consecutive laps
+]
 
 #line(length: 100%)
 

@@ -9,13 +9,11 @@ This appendix contains a master table of all mods in the Torque Ascension modlis
 
 == Mod Summary
 
-#figure(
-  table(
-    columns: 6,
-    table.header([No.], [Mod Name], [Wave], [Category], [Version], [Source]),
-    [-], [*No mods configured yet*], [-], [-], [-], [-],
-  ),
-  placement: none)
+#table(
+  columns: 6,
+  table.header([No.], [Mod Name], [Wave], [Category], [Version], [Source]),
+  [-], [*No mods configured yet*], [-], [-], [-], [-],
+)
 
 == Mods by Wave
 
@@ -41,23 +39,21 @@ This appendix contains a master table of all mods in the Torque Ascension modlis
 
 AMS2 downloadable content available as of V1.6:
 
-#figure(
-  table(
-    columns: 3,
-    table.header([DLC], [Content], [Wave Relevance]),
-    [Racin' USA Pack Pt 1], [Daytona, Long Beach, GTE cars], [Wave 1-3 (tracks)],
-    [Racin' USA Pack Pt 2], [Road Atlanta, Watkins Glen, IndyCar], [Wave 2-3 (tracks, cars)],
-    [Racin' USA Pack Pt 3], [Cleveland, Sebring, GTP cars], [Wave 2-3 (LMDh/GTP)],
-    [Brazilian Stock Car Pro Series], [Stock Car Brasil 2023 season], [Wave 2 (core discipline)],
-    [Endurance Pack Pt 1], [Le Mans, Porsche 962C, Corvette C8.R], [Wave 2-3 (endurance)],
-    [Endurance Pack Pt 2], [Spa 24h layout, BMW M4 GT3, Mercedes-AMG GT3 Evo], [Wave 2-3 (GT3)],
-    [Formula HiTech], [Formula Classic Gen 1-3, historic tracks], [Wave 3 (historic F1)],
-    [Historical Track Pack Pt 1], [Historic Spa, Historic Interlagos, Nordschleife], [Wave 3],
-    [Premium Expansion Packs], [Various cars + tracks (multiple packs)], [Wave 1-3],
-    [Super Trophy Pack], [Lamborghini Super Trofeo], [Wave 1-2],
-    [Adrenaline Pack Pt 1], [Rallycross cars + tracks], [Optional],
-    [Adrenaline Pack Pt 2], [Additional off-road content], [Optional],
-  ),
-  placement: none)
+#table(
+  columns: 3,
+  table.header([DLC], [Content], [Wave Relevance]),
+  [Racin' USA Pack Pt 1], [Daytona, Long Beach, GTE cars], [Wave 1-3 (tracks)],
+  [Racin' USA Pack Pt 2], [Road Atlanta, Watkins Glen, IndyCar], [Wave 2-3 (tracks, cars)],
+  [Racin' USA Pack Pt 3], [Cleveland, Sebring, GTP cars], [Wave 2-3 (LMDh/GTP)],
+  [Brazilian Stock Car Pro Series], [Stock Car Brasil 2023 season], [Wave 2 (core discipline)],
+  [Endurance Pack Pt 1], [Le Mans, Porsche 962C, Corvette C8.R], [Wave 2-3 (endurance)],
+  [Endurance Pack Pt 2], [Spa 24h layout, BMW M4 GT3, Mercedes-AMG GT3 Evo], [Wave 2-3 (GT3)],
+  [Formula HiTech], [Formula Classic Gen 1-3, historic tracks], [Wave 3 (historic F1)],
+  [Historical Track Pack Pt 1], [Historic Spa, Historic Interlagos, Nordschleife], [Wave 3],
+  [Premium Expansion Packs], [Various cars + tracks (multiple packs)], [Wave 1-3],
+  [Super Trophy Pack], [Lamborghini Super Trofeo], [Wave 1-2],
+  [Adrenaline Pack Pt 1], [Rallycross cars + tracks], [Optional],
+  [Adrenaline Pack Pt 2], [Additional off-road content], [Optional],
+)
 
 > *Note:* This DLC list reflects V1.6 content. Verify DLC ownership in your Steam library before purchasing.

@@ -13,18 +13,16 @@ Wave 2 transitions you from competent racer to genuine competitor. You'll master
 
 Wave 2 strips away the remaining safety nets. By the end, you'll be driving with almost no electronic intervention — just you and the car.
 
-#figure(
-  table(
-    columns: 3,
-    table.header([Assist], [Wave 1], [Wave 2]),
-    [Traction Control], [Medium], [*Low* (Off in dry)],
-    [Stability Control], [On], [*Off*],
-    [ABS], [Low], [*Low* (Off in dry)],
-    [Auto Gears], [On (or manual)], [*Manual* (auto-clutch OK)],
-    [Racing Line], [Corners Only], [*Off*],
-    [Damage], [Visual Only], [*Performance-impacting*],
-  ),
-  placement: none)
+#table(
+  columns: 3,
+  table.header([Assist], [Wave 1], [Wave 2]),
+  [Traction Control], [Medium], [*Low* (Off in dry)],
+  [Stability Control], [On], [*Off*],
+  [ABS], [Low], [*Low* (Off in dry)],
+  [Auto Gears], [On (or manual)], [*Manual* (auto-clutch OK)],
+  [Racing Line], [Corners Only], [*Off*],
+  [Damage], [Visual Only], [*Performance-impacting*],
+)
 
 Stability Control off is the biggest step change — you are now solely responsible for catching slides. The Racing Line disappears entirely, forcing you to find your own braking references. Performance-impacting damage means a mistake in the wall isn't just cosmetic anymore — limp back to the pits with a bent steering arm and your race is effectively over.
 
@@ -73,17 +71,15 @@ Telemetry turns feelings into facts. That corner you think you're nailing? The t
 
 === Key Channels
 
-#figure(
-  table(
-    columns: 3,
-    table.header([Channel], [What It Tells You], [Look For]),
-    [Throttle trace], [Acceleration smoothness and timing], [Stair-step pattern (good: smooth ramp). How early you get to 100% on exit],
-    [Brake trace], [Braking technique], [Peak pressure location, trail-braking curve shape. Spikes = panic, dead zones = coasting],
-    [Speed trace], [Minimum corner speed], [The single most important number per corner. Compare your apex speed to the reference lap],
-    [Steering angle], [Input smoothness], [Jagged trace = over-correction. Large amplitude at high speed = understeer. Sudden peaks = snap corrections],
-    [Tyre temps], [Inner/Middle/Outer spread across each tyre], [>10°C spread = pressure or camber issue. Outer hotter than inner = too much positive camber],
-  ),
-  placement: none)
+#table(
+  columns: 3,
+  table.header([Channel], [What It Tells You], [Look For]),
+  [Throttle trace], [Acceleration smoothness and timing], [Stair-step pattern (good: smooth ramp). How early you get to 100% on exit],
+  [Brake trace], [Braking technique], [Peak pressure location, trail-braking curve shape. Spikes = panic, dead zones = coasting],
+  [Speed trace], [Minimum corner speed], [The single most important number per corner. Compare your apex speed to the reference lap],
+  [Steering angle], [Input smoothness], [Jagged trace = over-correction. Large amplitude at high speed = understeer. Sudden peaks = snap corrections],
+  [Tyre temps], [Inner/Middle/Outer spread across each tyre], [>10°C spread = pressure or camber issue. Outer hotter than inner = too much positive camber],
+)
 
 === Analysis Workflow
 
@@ -104,18 +100,16 @@ Endurance racing is about managing resources over time. The fastest single lap m
 
 === Race Configuration
 
-#figure(
-  table(
-    columns: 2,
-    [Setting], [Value],
-    [Duration], [45 min (not laps)],
-    [AI Difficulty], [85],
-    [Fuel Usage], [2x (accelerated learning)],
-    [Tyre Wear], [2x (accelerated learning)],
-    [Mandatory Pit Stop], [Yes (1)],
-    [Weather], [Random (1–3 slots)],
-  ),
-  placement: none)
+#table(
+  columns: 2,
+  [Setting], [Value],
+  [Duration], [45 min (not laps)],
+  [AI Difficulty], [85],
+  [Fuel Usage], [2x (accelerated learning)],
+  [Tyre Wear], [2x (accelerated learning)],
+  [Mandatory Pit Stop], [Yes (1)],
+  [Weather], [Random (1–3 slots)],
+)
 
 Accelerated fuel and tyre wear at 2x compresses a 90-minute strategy problem into 45 minutes, giving you the same decision pressure without the time commitment.
 
@@ -130,15 +124,13 @@ For a 45-minute race with one mandatory stop, split the fuel load evenly: start 
 
 === Tyre Strategy
 
-#figure(
-  table(
-    columns: 2,
-    table.header([Phase], [Behaviour]),
-    [First 5 laps], [Optimal grip. The window where qualifying pace is possible],
-    [Laps 5–15], [Gradual fall-off. Times drop by 0.2–0.5 seconds per lap],
-    [Laps 15+], [Significant degradation. Front-end wash, rear-end snap. Risk of off-track increases],
-  ),
-  placement: none)
+#table(
+  columns: 2,
+  table.header([Phase], [Behaviour]),
+  [First 5 laps], [Optimal grip. The window where qualifying pace is possible],
+  [Laps 5–15], [Gradual fall-off. Times drop by 0.2–0.5 seconds per lap],
+  [Laps 15+], [Significant degradation. Front-end wash, rear-end snap. Risk of off-track increases],
+)
 
 A tyre change costs approximately 15 seconds from pit entry to exit. Only change tyres if the degradation exceeds 1 second per lap over your remaining stint — otherwise, the time loss from the stop itself outweighs the gain from fresh rubber.
 
@@ -156,13 +148,13 @@ Random weather in a timed race creates the most strategic depth in AMS2:
 
 *Awaiting mod list from user.*
 
-== Completion Checklist
-
-- 45-minute GT3 endurance at Spa with one pit stop (finish top 10, AI 85)
-- Qualifying lap within 1.5 seconds of fastest AI at an unfamiliar track (AI 85)
-- Interpret telemetry traces and identify one specific area for improvement
-- Manage wet-to-dry transition without incorrect tyre choice or off-track incident
-- Clean F3 race at Monza with no contact (AI 80)
+#checklist[
+  - 45-minute GT3 endurance at Spa with one pit stop (finish top 10, AI 85)
+  - Qualifying lap within 1.5 seconds of fastest AI at an unfamiliar track (AI 85)
+  - Interpret telemetry traces and identify one specific area for improvement
+  - Manage wet-to-dry transition without incorrect tyre choice or off-track incident
+  - Clean F3 race at Monza with no contact (AI 80)
+]
 
 #line(length: 100%)
 
