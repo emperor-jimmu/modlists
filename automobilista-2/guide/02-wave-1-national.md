@@ -121,11 +121,15 @@ Cascavel is a fast, flowing circuit with a mix of medium and high-speed corners 
 
 ## Completion Checklist
 
-- [ ] Clean 10-lap GT4 race at Cascavel (finish top 8, AI 70)
-- [ ] Trail-brake consistently without triggering ABS intervention
-- [ ] Qualifying lap within 2 seconds of the fastest AI (AI 70)
-- [ ] Execute 3 clean overtakes in a single race (no contact)
-- [ ] Defend a position successfully for 2 consecutive laps
+```typst
+#completion-checklist[
+- Clean 10-lap GT4 race at Cascavel (finish top 8, AI 70)
+- Trail-brake consistently without triggering ABS intervention
+- Qualifying lap within 2 seconds of the fastest AI (AI 70)
+- Execute 3 clean overtakes in a single race (no contact)
+- Defend a position successfully for 2 consecutive laps
+]
+```
 
 ---
 

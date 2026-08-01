@@ -88,18 +88,21 @@
 
 #show table: it => {
   set text(size: 10pt)
-  show table.header: it => {
-    set text(fill: white, weight: "bold")
-    block(fill: color-accent-blue, inset: (x: 8pt, y: 6pt), it)
-  }
-  show table.cell: it => {
-    block(inset: (x: 8pt, y: 5pt), it)
-  }
-  block(
-    stroke: 1pt + color-panel-border,
-    radius: 4pt,
-    it
+  set table(
+    fill: (row, col) => {
+      if row == 0 { color-accent-blue }
+      else if calc.rem(row, 2) == 0 { color-table-stripe }
+      else { white }
+    }
   )
+  show table.header: header => {
+    set text(fill: white, weight: "bold")
+    header
+  }
+  show table.cell: cell => {
+    block(inset: (x: 8pt, y: 5pt), cell)
+  }
+  block(stroke: 1pt + color-panel-border, radius: 4pt, it)
 }
 
 // ─── Reusable Functions ──────────────────────────────────────────────────

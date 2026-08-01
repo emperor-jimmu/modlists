@@ -8,11 +8,11 @@ Wave 0 is your introduction to sim racing. You'll learn the core controls, how a
 
 Before starting, verify you have:
 
-- [ ] AMS2CM installed and configured (see [Installation & Setup](00-install.md))
-- [ ] AMS2 launched at least once to generate config files
-- [ ] Assists configured as per the Installation chapter (Steering Low, Braking Low, TC High, ABS High, Auto Gears On, Racing Line Full)
-- [ ] A wheel or gamepad connected and calibrated — do not attempt with keyboard
-- [ ] Stable 60+ FPS at Medium settings
+- AMS2CM installed and configured (see [Installation & Setup](00-install.md))
+- AMS2 launched at least once to generate config files
+- Assists configured as per the Installation chapter (Steering Low, Braking Low, TC High, ABS High, Auto Gears On, Racing Line Full)
+- A wheel or gamepad connected and calibrated — do not attempt with keyboard
+- Stable 60+ FPS at Medium settings
 
 ## Your First Cars
 
@@ -140,12 +140,16 @@ After every race, watch the replay from chase cam. Focus on one corner where you
 
 ## Completion Checklist
 
-- [ ] Clean 5-lap race at Velo Citta (no spins, no track limits)
-- [ ] Three consecutive laps within 1 second of each other
-- [ ] Can identify the racing line through every Velo Citta corner
-- [ ] Understand the differences between Test Day, Time Trial, and Race Weekend
-- [ ] Can modulate brake pressure (not just on/off)
-- [ ] Launch AMS2 via AMS2CM successfully
+```typst
+#completion-checklist[
+- Completed a clean 5-lap race at Velo Citta (no spins, no track limit violations)
+- Consistent lap times within 1 second of each other (3 consecutive laps)
+- Can identify the racing line through Velo Citta's corners
+- Understand the difference between Test Day, Time Trial, and Race Weekend
+- Can modulate brake pressure (not just on/off)
+- Launch AMS2 via AMS2CM successfully
+]
+```
 
 ---
 
