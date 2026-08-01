@@ -13,7 +13,7 @@ Wave 1 bridges the gap from learning to competing. You'll step into production-b
 
 Before your first Wave 1 session, update your assists. Wave 1 begins the gradual transition to full driver control.
 
-#table(
+#styled-table(
   columns: 3,
   table.header([Assist], [Wave 0], [Wave 1]),
   [Steering Assist], [Low], [*Off*],
@@ -106,7 +106,7 @@ Even if your Wave 1 race doesn't require a pit stop, practice the procedure:
 
 == Your First Wave 1 Race
 
-#table(
+#styled-table(
   columns: 2,
   [Setting], [Value],
   [Track], [Cascavel],

@@ -112,7 +112,7 @@ With ABS set to High in Wave 0, you can learn braking points without fear of loc
 
 == Your First Race Configuration
 
-#table(
+#styled-table(
   columns: 2,
   [Setting], [Value],
   [Track], [Velo Citta],

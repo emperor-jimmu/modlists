@@ -9,7 +9,7 @@ This appendix contains a master table of all mods in the Torque Ascension modlis
 
 == Mod Summary
 
-#table(
+#styled-table(
   columns: 6,
   table.header([No.], [Mod Name], [Wave], [Category], [Version], [Source]),
   [-], [*No mods configured yet*], [-], [-], [-], [-],
@@ -39,7 +39,7 @@ This appendix contains a master table of all mods in the Torque Ascension modlis
 
 AMS2 downloadable content available as of V1.6:
 
-#table(
+#styled-table(
   columns: 3,
   table.header([DLC], [Content], [Wave Relevance]),
   [Racin' USA Pack Pt 1], [Daytona, Long Beach, GTE cars], [Wave 1-3 (tracks)],

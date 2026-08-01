@@ -5,7 +5,7 @@
 
 Before installing anything, verify your system meets the minimum requirements for Automobilista 2 V1.6+:
 
-#table(
+#styled-table(
   columns: 3,
   table.header([Component], [Minimum], [Recommended]),
   [OS], [Windows 10 64-bit], [Windows 11 64-bit],
@@ -34,7 +34,7 @@ This initial launch creates the `Documents/Automobilista 2` folder where all set
 
 AMS2 has extensive DLC. The following table maps each wave to its required and recommended DLC — required DLC is mandatory for some mods in that wave.
 
-#table(
+#styled-table(
   columns: 3,
   table.header([Wave], [Required DLC], [Recommended DLC]),
   [0], [None (base game)], [None],
@@ -58,7 +58,7 @@ The AMS2 Content Manager (AMS2CM) is the essential tool for managing mods, bootf
 
 === Key Features
 
-#table(
+#styled-table(
   columns: 2,
   table.header([Feature], [Purpose]),
   [Bootfiles], [Manage custom AI, physics, and camera presets],
@@ -108,7 +108,7 @@ Launch AMS2 and configure the following settings. These settings are optimized f
 
 AMS2 offers a comprehensive assists system. Start with these settings:
 
-#table(
+#styled-table(
   columns: 3,
   table.header([Assist], [Setting], [Notes]),
   [Steering Assist], [Low], [Counter-steering help],

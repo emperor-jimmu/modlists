@@ -22,10 +22,25 @@
 #let color-warn-bg = rgb("#fff3e0")
 #let color-note-bg = rgb("#e3f2fd")
 
-#set table(
-  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
-  stroke: 0.5pt + rgb("CCCCCC"),
-)
+// Styled table wrapper — local scope ensures fill and stroke always apply
+#let styled-table(columns: 1, ..cells) = {
+  set table(
+    fill: (_, y) => {
+      if y == 0 { color-accent-blue }
+      else if calc.odd(y) { rgb("EAF2F5") }
+    },
+    stroke: 0.5pt + color-panel-border,
+  )
+  set text(size: 10pt)
+  show table.header: it => {
+    set text(fill: white, weight: "bold")
+    it
+  }
+  show table.cell: it => {
+    block(inset: (x: 8pt, y: 5pt), it)
+  }
+  table(columns: columns, ..cells)
+}
 
 // ─── Page Setup ──────────────────────────────────────────────────────────
 
@@ -86,20 +101,6 @@
 
 #show strong: set text(weight: "bold")
 #show emph: set text(style: "italic")
-
-// ─── Table Show Rule ─────────────────────────────────────────────────────
-
-#show table: it => {
-  set text(size: 10pt)
-  show table.header: header => {
-    set text(fill: white, weight: "bold")
-    header
-  }
-  show table.cell: cell => {
-    block(inset: (x: 8pt, y: 5pt), cell)
-  }
-  it
-}
 
 // ─── Reusable Functions ──────────────────────────────────────────────────
 

@@ -13,7 +13,7 @@ Wave 3 is the pinnacle. Mastery, refinement, full-immersion. You'll drive F1-gra
 
 No more transition. This is racing as it was meant to be — raw, mechanical, and entirely in your hands.
 
-#table(
+#styled-table(
   columns: 2,
   table.header([Assist], [Setting]),
   [All driver aids], [*Off*],
@@ -60,7 +60,7 @@ The fastest prototypes in modern racing. 340+ km/h on the Mulsanne. A hybrid sys
 
 Four generations of Formula 1, each with its own personality, none with a single electronic aid. No traction control. No ABS. No power steering. Just an engine, a gearbox, and your nerve.
 
-#table(
+#styled-table(
   columns: 5,
   table.header([Generation], [Era], [Power], [Downforce], [Character]),
   [Formula Classic Gen 1], [1960s], [~220 HP], [None], [Narrow tyres, body roll, engines that demand revs. Pure mechanical grip. The Lotus 49C feels alive because it's trying to kill you gently],
@@ -87,7 +87,7 @@ The final frontier. A good setup won't make you fast, but a bad setup will make 
 
 === Setup Priority Order
 
-#table(
+#styled-table(
   columns: 3,
   table.header([Priority], [Parameter], [Why First]),
   [1], [Tyre Pressures], [Influences all grip, wear, and temperature behavior. Wrong pressures undermine every other adjustment],
@@ -113,7 +113,7 @@ The ultimate test. Two to four hours. Two or more classes sharing the track with
 
 === Race Configuration
 
-#table(
+#styled-table(
   columns: 2,
   [Setting], [Value],
   [Duration], [2–4 hours],

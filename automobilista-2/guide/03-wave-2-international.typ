@@ -13,7 +13,7 @@ Wave 2 transitions you from competent racer to genuine competitor. You'll master
 
 Wave 2 strips away the remaining safety nets. By the end, you'll be driving with almost no electronic intervention — just you and the car.
 
-#table(
+#styled-table(
   columns: 3,
   table.header([Assist], [Wave 1], [Wave 2]),
   [Traction Control], [Medium], [*Low* (Off in dry)],
@@ -71,7 +71,7 @@ Telemetry turns feelings into facts. That corner you think you're nailing? The t
 
 === Key Channels
 
-#table(
+#styled-table(
   columns: 3,
   table.header([Channel], [What It Tells You], [Look For]),
   [Throttle trace], [Acceleration smoothness and timing], [Stair-step pattern (good: smooth ramp). How early you get to 100% on exit],
@@ -100,7 +100,7 @@ Endurance racing is about managing resources over time. The fastest single lap m
 
 === Race Configuration
 
-#table(
+#styled-table(
   columns: 2,
   [Setting], [Value],
   [Duration], [45 min (not laps)],
@@ -124,7 +124,7 @@ For a 45-minute race with one mandatory stop, split the fuel load evenly: start 
 
 === Tyre Strategy
 
-#table(
+#styled-table(
   columns: 2,
   table.header([Phase], [Behaviour]),
   [First 5 laps], [Optimal grip. The window where qualifying pace is possible],
