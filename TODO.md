@@ -24,7 +24,4 @@
 [ ] 21. Civilization VI
 [ ] 22. OMSI 2***
 [ ] 23. TES Oblivion Remasted ***
-[ ] 24. BeamNG***
-[ ] 25. Dwarf Fortress
-[ ] 27. IL-2 Sturmovik
-[ ] 28. Fallout 3
+[ ] 24. Fallout 3
