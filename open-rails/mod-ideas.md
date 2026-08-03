@@ -8,5 +8,5 @@
 ## OR catalogue — other free routes (verified 200)
 - Burrinjuck Railway — http://www.burrinjuck.coalstonewcastle.com.au/
 - Tweed Railway — http://www.tweed.coalstonewcastle.com.au/
-- Manning River Breakwell — http://www.manning-river.coalstonewcastle.com.au/
+- Manning River Breakwall — http://www.manning-river.coalstonewcastle.com.au/
 - MidEast Coast / New Forest / Chiltern / Portugal 79 (GitHub, large WIP routes)
