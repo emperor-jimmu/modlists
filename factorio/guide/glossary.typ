@@ -93,3 +93,27 @@
 *Bulk inserter* — the base-game high-capacity inserter, able to carry several items per swing; the stack inserter is a Space Age addition outside Waves 0-1.
 
 *Belt stacking* — the Wave 1 mechanic (Deadlock's Stacking Beltboxes) that combines several copies of an item into one stacked belt item, multiplying what a belt lane can carry.
+
+*Krastorio 2* — the Wave 2 overhaul anchor: rebalances nearly every recipe, adds over 40 buildings, over 100 technologies and three new resources, replaces science packs with tech cards, and reworks combat so bullets are physical projectiles.
+
+*Krastorio 2 Spaced Out* — the Wave 2 bridge mod that merges Krastorio 2 with Space Age; K2 requires it to run correctly when Space Age is enabled ("the game will load, but progression will be broken" without it).
+
+*Imersite* — Krastorio 2's rare end-game resource: "useless on its own, but when used in advanced manufacturing processes, exhibits ludicrous tensile strength and superconductive abilities"; the material the end-game machines are built from.
+
+*Mineral water* — Krastorio 2's second water: normal water "impregnated with various silts and dusts", used primarily in the production of lithium; a separate fluid supply line from ordinary water.
+
+*Rare metals* — Krastorio 2's mined metal resource, "an analogous representation of various rare elements (i.e. titanium, platinum, gold)"; feeds the quality tier of the metal economy.
+
+*Tech card* — Krastorio 2's replacement for science packs: produced in assembling machines and inserted into research computers; there are three tiers, each requiring its own laboratory, and early tiers are phased out as the game progresses.
+
+*Research computer* — Krastorio 2's laboratory: the building tech cards are inserted into, replacing the vanilla lab.
+
+*Advanced tech card* — a K2SO research tier that unlocks powerful new buildings on the Space Age planets (advanced furnace on Vulcanus, laser artillery on Fulgora, advanced chemical lab on Gleba, and more).
+
+*Matter tech card* — a K2SO research tier made from samples of every resource that enables material transmutation, including of Space Age resources.
+
+*Singularity tech card* — a K2SO space-exclusive research tier made of pure matter and asteroid chunks that unlocks instant interplanetary travel and the highest tier of logistics.
+
+*Intergalactic transceiver* — Krastorio 2's end-game win building; under K2SO it must be built in space.
+
+*Snappers* — the armoured, slower enemy type added by Armoured Biters, one of Krastorio 2's recommended companions.
