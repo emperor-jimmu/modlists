@@ -6,8 +6,8 @@
 [x] 3. AMS2
 [x] 4. Fallout 4
 [x] 5. Open Rails
-[~] 6. Kenshi
-[ ] 7. Factorio
+[x] 6. Kenshi
+[x] 7. Factorio
 [ ] 8. Oxygen Not Included
 [ ] 9. X-COM 2
 [ ] 10. Derail Valley ***

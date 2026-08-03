@@ -17,6 +17,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Cyberpunk       | Cyberpunk 2077                  | [`cyberpunk/`](./cyberpunk/)                       | Active |
 | ETS2            | Euro Truck Simulator 2          | [`ets2/`](./ets2/)                                 | Active |
 | Fallout 4       | Fallout 4                       | [`fallout-4/`](./fallout-4/)                       | Active |
+| Factorio        | Factorio                        | [`factorio/`](./factorio/)                         | Active |
 | F1 25           | F1 25                           | [`f1-25/`](./f1-25/)                               | Active |
 | FS25            | Farming Simulator 25            | [`fs25/`](./fs25/)                                 | Active |
 | GTA IV          | Grand Theft Auto IV             | [`gtaiv/`](./gtaiv/)                               | Active |
@@ -116,6 +117,9 @@ ets2/                   # Euro Truck Simulator 2 modlist
 ├── AGENTS.md
 └── ...
 fallout-4/              # Fallout 4 modlist
+├── AGENTS.md
+└── ...
+factorio/               # Factorio modlist
 ├── AGENTS.md
 └── ...
 f1-25/                  # F1 25 modlist
