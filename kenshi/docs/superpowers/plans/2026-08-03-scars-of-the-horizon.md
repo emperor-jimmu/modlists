@@ -4,9 +4,9 @@
 
 **Goal:** Produce the complete "Scars of the Horizon" Kenshi 1.0.68 modlist + game guide as a 60-80 page PDF (`kenshi/output/scars-of-the-horizon.pdf`) plus the project's living docs.
 
-**Architecture:** Static content authored as Typst (`.typ`) sources under `kenshi/guide/`, composed by a single master `template.typ` into one PDF via `build.bat` (Typst 0.15/0.15.1). Every mod is researched and URL-verified **before** it enters a mod card; verification records live in `STATUS.md`. Mods are organized by **KMM** (Kenshi Mod Manager, Nexus mod 1765) with a verified contingency (in-game mod manager) if KMM proves incompatible. Content is authored per-wave; each wave is a self-contained chapter; then the PDF is compiled and audited against the Definition of Done in the spec.
+**Architecture:** Static content authored as Typst (`.typ`) sources under `kenshi/guide/`, composed by a single master `template.typ` into one PDF via `build.bat` (Typst 0.15/0.15.1). Every mod is researched and URL-verified **before** it enters a mod card; verification records live in `STATUS.md`. Mods are organized by **KMM** (Kenshi Mod Manager, Nexus mod 1765) with a verified contingency (in-game mod manager) if KMM proves incompatible. Content is authored per-wave; each wave is a self-contained chapter; then the PDF is compiled and audited against the Definition of Done.
 
-**Tech Stack:** Typst 0.15/0.15.1, PowerShell batch (`build.bat`), Steam Workshop (primary mod source) + Nexus Mods (secondary), KMM (mod organizer), webfetch / websearch / context-mode / Playwright for URL verification.
+**Tech Stack:** Typst 0.15/0.15.1, PowerShell batch (`build.bat`), `typst query` (reliable PDF structure checks), Steam Workshop (primary mod source) + Nexus Mods (secondary), KMM (mod organizer), webfetch / websearch / context-mode / Playwright for URL verification.
 
 **Working tree note:** Work happens in the current working tree (`main`), consistent with how the sibling `open-rails` project was built. No worktree isolation.
 
@@ -25,9 +25,9 @@
 | `kenshi/mod-ideas.md` | Future / UNVERIFIED-but-promising candidates (excluded from PDF) |
 | `kenshi/.gitignore` | Ignores the generated PDF |
 | `kenshi/build.bat` | One-click Typst compile wrapper |
-| `kenshi/template.typ` | Master template: cover, TOC, palette, fonts, includes all guide files |
+| `kenshi/template.typ` | Master template: cover, TOC, palette, fonts, `callout()` helper, includes all guide files, `#label("end")` marker |
 | `kenshi/guide/installation.typ` | KMM install + config + load order + per-wave switching |
-| `kenshi/guide/glossary.typ` | 40-60 player-facing + KMM terms |
+| `kenshi/guide/glossary.typ` | 40-60 player-facing + KMM terms (harvested during wave tasks, assembled in Task 10) |
 | `kenshi/guide/wave-0/{how-to-play,modlist,mechanics,graphics}.typ` | Wave 0 chapter |
 | `kenshi/guide/wave-{1,2,3,4}/{strategy,modlist,mechanics,content,graphics}.typ` | Waves 1-4 chapters |
 | `kenshi/output/scars-of-the-horizon.pdf` | Generated PDF (gitignored) |
@@ -89,8 +89,8 @@ Mod sources: Steam Workshop (primary), Nexus Mods (secondary).
 |---|---|---|
 
 ## Accepted Mods
-| Wave | Mod | URL | Last updated | Verified | Deps | Compat | Notes |
-|---|---|---|---|---|---|---|---|
+| Wave | Mod | URL | Last updated | Verified | Method | Deps | Compat | Notes |
+|---|---|---|---|---|---|---|---|---|
 
 ## Rejected Mods
 | Wave | Mod | Reason |
@@ -145,7 +145,9 @@ Kenshi 1.0.68 (Apr 1, 2024) modlist and game guide.
 - No meme/joke mods, explicit porn, redundant, or cheating/overpowered content.
 - Power-spike test: mods raising stats/damage/armor above vanilla caps are rejected
   unless they add a proportionate challenge/cost.
-- Mod cards include: verified clickable name+URL, dependencies, system/mechanic impact, notes.
+- Every mod card: verified clickable name+URL, dependencies, system/mechanic impact, notes.
+- Fact-check every structural game claim against the Kenshi wiki (kenshi.fandom.com)
+  before it goes into a guide; log discrepancies in STATUS.md.
 - Decision log maintained in `STATUS.md`.
 
 ## PDF Generation
@@ -222,7 +224,7 @@ git commit -m "chore(kenshi): scaffold Scars of the Horizon project and guide sk
 ### Task 2: Verify toolchain + smoke-compile the PDF
 
 **Files:**
-- Create: `kenshi/template.typ` (initial version)
+- Create: `kenshi/template.typ` (initial version, includes `callout()` helper and `#label("end")` marker)
 - Verify: `build.bat`, Typst, fonts
 
 - [ ] **Step 1: Verify Typst is installed and versioned**
@@ -230,7 +232,7 @@ git commit -m "chore(kenshi): scaffold Scars of the Horizon project and guide sk
 Run: `typst --version`
 Expected: `typst 0.15.x` (0.15 or 0.15.1). If not found, install Typst 0.15 from https://typst.app/ and confirm.
 
-- [ ] **Step 2: Create the initial `template.typ`** (final polish happens in Task 11; this version must compile against the skeletons)
+- [ ] **Step 2: Create the initial `template.typ`** (final per-wave color polish happens in Task 11; this version must compile against the skeletons)
 
 ```typ
 #set page(
@@ -241,6 +243,11 @@ Expected: `typst 0.15.x` (0.15 or 0.15.1). If not found, install Typst 0.15 from
     ]
   },
 )
+
+#let callout(title, body) = block(
+  fill: rgb("#f7e8d8"), inset: 8pt, radius: 4pt,
+  stroke: 0.5pt + rgb("#d97b3a"),
+)[*#title* #body]
 
 #set text(font: "Georgia", size: 11pt, fill: rgb("#2b2622"))
 #set par(justify: true, leading: 0.65em, spacing: 0.6em)
@@ -322,20 +329,30 @@ Expected: `typst 0.15.x` (0.15 or 0.15.1). If not found, install Typst 0.15 from
 // == Glossary
 == Glossary
 #include "guide/glossary.typ"
+
+#label("end")
 ```
+
+The `#label("end")` marker lets `typst query` report the total page count reliably (Step 4).
 
 - [ ] **Step 3: Smoke-compile**
 
 Run: `.\build.bat` from `kenshi/`
 Expected: `SUCCESS: PDF generated at output/scars-of-the-horizon.pdf`, zero errors. If Typst warns about missing fonts, log it in STATUS.md Notes (Cinzel/Bahnschrift/Georgia are expected present — the sibling project rendered with them).
 
-- [ ] **Step 4: Verify the PDF page count**
+- [ ] **Step 4: Verify structure with `typst query` (not raw-byte greps — PDF text is compressed and raw-byte checks lie)**
 
-```powershell
-$text = [System.IO.File]::ReadAllBytes('output\scars-of-the-horizon.pdf') | ForEach-Object { [char]$_ } | Out-String
-($text | Select-String -Pattern '/Type\s*/Page[^s]' -AllMatches).Matches.Count
+Total page count:
 ```
-Expected: small number (> 5, cover/TOC/skeleton pages). Every skeleton heading appears (spot-check text via `Select-String 'Waves'`).
+typst query template.typ '<end>' --field page.number
+```
+Expected: a small integer > 4 (cover + TOC + installation + wave 0 + glossary skeleton pages).
+
+All skeleton headings present, in order:
+```
+typst query template.typ 'heading' --field page.number
+```
+Expected: one page number per line, ~25 lines (2 installation/glossary + 4 per wave + glossary). The last wave heading's page must be >= the installation heading's page (sections are ordered).
 
 - [ ] **Step 5: Commit**
 
@@ -349,17 +366,17 @@ git commit -m "feat(kenshi): add master template and smoke-compile the PDF"
 **Files:**
 - Modify: `kenshi/STATUS.md` only
 
-This task decides whether the installation chapter uses KMM or the in-game fallback. Run it before Task 4 so mod research uses the right organizer framing.
+This task decides whether the installation chapter uses KMM or the in-game fallback. Its findings feed Task 9.
 
 - [ ] **Step 1: Fetch the KMM Nexus page**
 
 Fetch `https://www.nexusmods.com/kenshi/mods/1765` (webfetch; if Cloudflare blocks, use Playwright to load and read the page). Record: mod title, author, **last update date**, description, and any listed requirements (runtime, .NET, etc.).
 
-- [ ] **Step 2: Assess 1.0.68 compatibility**
+- [ ] **Step 2: Assess 1.0.68 compatibility and verify load-order claims**
 
 Verdict rules: if KMM's last update is within a reasonable window of Kenshi's current era (post-2018) AND the page or credible community sources (Steam guides, referenced GitHub repo) report it working with the current build, verdict = COMPATIBLE. If clearly abandoned AND community sources report breakage with 1.0.68, verdict = INCOMPATIBLE (Plan B).
 
-Also verify (from the page/GitHub/community guides): how KMM detects the Steam install, how it manages load order (`mods.cfg`), and whether load order "later = higher priority" is accurate. Record each claim as VERIFIED or UNVERIFIED.
+Also verify (from the page/GitHub/community guides): how KMM detects the Steam install, how it manages load order (`mods.cfg`), and whether load order "later = higher priority" is accurate. Record each claim as VERIFIED or UNVERIFIED, with the source URL.
 
 - [ ] **Step 3: Log the verdict in STATUS.md**
 
@@ -378,23 +395,27 @@ git commit -m "docs(kenshi): record KMM compatibility verdict and load-order fin
 
 **Files:**
 - Create: `kenshi/guide/wave-0/how-to-play.typ`, `kenshi/guide/wave-0/modlist.typ`, `kenshi/guide/wave-0/mechanics.typ`, `kenshi/guide/wave-0/graphics.typ`
-- Modify: `kenshi/STATUS.md`
+- Modify: `kenshi/STATUS.md`, `kenshi/guide/glossary.typ` (harvest)
 
-- [ ] **Step 1: Research 5-8 UI/QoL/performance mods**
+**Rules in force for this wave:** no content mods (only UI/UX, performance, QoL). Cut list applies: no meme/porn/redundant/unverifiable mods. Power-spike test: a mod that raises stats/damage/armor above vanilla caps, or lowers costs below vanilla, is rejected unless it adds a proportionate challenge or cost. **Target 5-8 mods.**
 
-Run these searches (websearch / webfetch / ctx_batch_execute; Workshop + Nexus):
-- "Kenshi UI overhaul Steam Workshop"
-- "Kenshi QoL mods 2024 compatible"
-- "Kenshi performance optimization mod"
-- "Kenshi hotkey camera mod"
+- [ ] **Step 1: Research 5-8 UI/QoL/performance candidates**
 
-Shortlist 5-8 mods spanning UI/UX, performance, and QoL. **Wave 0 rule: no content mods.** Any mod that adds items, stats, buildings, or changes balance is rejected at this wave.
+Searches (websearch / webfetch / ctx_batch_execute; Workshop + Nexus): "Kenshi UI overhaul Steam Workshop", "Kenshi QoL mods 2024 compatible", "Kenshi performance optimization mod", "Kenshi hotkey camera mod".
 
-- [ ] **Step 2: Verify every shortlisted URL + log in STATUS.md**
+Candidate quality bar (all must hold): (a) exists on Steam Workshop or Nexus for Kenshi; (b) matches the UI/QoL/performance category; (c) passes the cut list and power-spike test; (d) plausible 1.0.68 compatibility (no stated lower max version, last update not pre-2019 with zero updates).
 
-For each candidate, fetch its page (Workshop: webfetch; Nexus: webfetch then Playwright fallback). Record in the Accepted/Rejected tables: mod name, exact URL, last-update date, verified date, dependencies, and the 1.0.68 compatibility verdict. Rejected candidates get a row in Rejected with the reason (e.g., "content mod at Wave 0", "unverifiable", "conflicts").
+**Time budget:** max ~15 minutes of searching. If you cannot shortlist 5 quality candidates after 2 rounds of alternate queries, proceed with quality over quantity and record the shortfall in STATUS.md Notes — never pad with junk.
 
-**Critical — no fabrication:** if a candidate cannot be verified (page won't load, mod doesn't exist as described), it goes to `mod-ideas.md` as UNVERIFIED — never into a mod card.
+- [ ] **Step 2: Verify every shortlisted URL + log in STATUS.md (evidence bar)**
+
+For each candidate, fetch its page (Workshop: webfetch; Nexus: webfetch then Playwright fallback). Capture and record **evidence** per mod: exact page title, last-update date, and the mod ID (Steam `?id=NNNNN` / Nexus `/kenshi/mods/NNNN`).
+
+**Verification verdict rule:** a mod is VERIFIED only if the fetched page title matches the card name exactly AND the last-update date is recorded. A page that won't load, or a title mismatch, = UNVERIFIED -> log it in `mod-ideas.md`. Never fabricate a title, date, URL, or verdict.
+
+**Compatibility rule (restated):** a mod is assumed 1.0.68-compatible unless its page states a lower max version, or it predates ~2019 with no updates (flag for review). Record the verdict per mod in the Compat column.
+
+Rejected candidates get a row in Rejected with the reason (e.g., "content mod at Wave 0", "unverifiable", "redundant", "power spike").
 
 - [ ] **Step 3: Write `modlist.typ` with mod cards**
 
@@ -414,30 +435,28 @@ Define `mod-entry` locally and emit one card per accepted mod:
 
 == Wave 0 — Modlist: Vanilla + UI/QoL Only
 // Intro line: wave 0 adds no content; these mods improve usability and performance only.
-// One #mod-entry(...) per accepted mod, fields from STATUS.md.
+// One #mod-entry(...) per accepted mod, fields copied from STATUS.md.
 ```
 
-- [ ] **Step 4: Write `graphics.typ`** — the visual/UI QoL cards that are not strictly "system" mods (textures, UI skins, visual clarity). One heading + cards.
-- [ ] **Step 5: Write `mechanics.typ`** — the QoL/performance system mods (QoL changes, performance/loading fixes) with their system impact explained.
-- [ ] **Step 6: Write `how-to-play.typ`** — the full beginner tutorial. Must cover, in order:
-  1. Controls & keybindings (movement, camera, selection, pause/speed)
+- [ ] **Step 4: Write `graphics.typ`** — the visual/UI QoL cards that are not strictly "system" mods (textures, UI skins, visual clarity). Heading + one card per mod, via `mod-entry`.
+- [ ] **Step 5: Write `mechanics.typ`** — the QoL/performance system mods (QoL changes, performance/loading fixes), one card per mod via `mod-entry`, each card's Impact field explaining the system change.
+- [ ] **Step 6: Write `how-to-play.typ` Part 1 — fundamentals** (target ~6-7 pages). Use `#callout("Tip:", ...)` / `#callout("Warning:", ...)` for keybinds and pitfalls. Must cover:
+  1. Controls & keybindings (movement, camera, selection, pause/speed) — present as a keybind table
   2. The interface tour (HUD, inventory, map, squad panel)
-  3. Your character: stats, health, hunger, the four stats that matter early
-  4. Combat basics (stagger, block/attack, hit chance, death/slavery on loss)
-  5. Making your first cats (mining copper in The Hub)
-  6. Your first recruit (how recruiting works)
+  3. Your character: stats, health, hunger, and which four stats matter early
+  4. Combat basics (stagger, block/attack, hit chance, what happens when you lose — death, recovery, slavery)
+- [ ] **Step 7: Write `how-to-play.typ` Part 2 — the survival loop** (target ~5-7 pages). Must cover:
+  5. Making your first cats (mining copper near The Hub — verify the deposit claim against the wiki, Step 8)
+  6. Your first recruit (how recruiting works, the cost)
   7. The survival loop: eat, heal, fight, level, repeat
   8. Common beginner mistakes (wandering at night, aggro, no food)
+- [ ] **Step 8: Wave 0 audit + commit**
 
-Target **12-14 pages** of guide content including cards. Use callout boxes for keybindings and warnings:
-
-```typ
-#block(fill: rgb("#f7e8d8"), inset: 8pt, radius: 4pt, stroke: 0.5pt + rgb("#d97b3a"))[*Tip:* text...]
-```
-
-- [ ] **Step 7: Wave 0 audit + commit**
-
-Audit: every URL in `modlist.typ`/`graphics.typ`/`mechanics.typ` has a VERIFIED row in STATUS.md; zero unverified entries; zero content mods in Wave 0.
+1. **Page span:** run `typst query template.typ 'heading' --field page.number`; compute Wave 0's span (page of `=== Wave 0` to page of `=== Wave 1`). Expected: **12-14**. If under, expand; if over, trim.
+2. **Placeholder grep:** `Select-String -Path guide\wave-0\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
+3. **URL audit:** every `https://` in `guide/wave-0/*.typ` has a VERIFIED row in STATUS.md (spot-check by comparing extracted URLs to the table).
+4. **Fact-check:** verify Wave 0's structural claims against the Kenshi wiki (kenshi.fandom.com): The Hub exists and is a starting town; copper deposits are present near The Hub; recruiting costs cats. Fix any discrepancy in the text; log the check in STATUS.md Notes.
+5. **Glossary harvest:** append this wave's new terms to `guide/glossary.typ` (e.g., cats, hunger, Toughness, squad, corpse, The Hub, Holy Nation).
 ```bash
 git add kenshi/
 git commit -m "feat(kenshi): write Wave 0 The Wanderer chapter with verified UI/QoL mods"
@@ -449,20 +468,29 @@ git commit -m "feat(kenshi): write Wave 0 The Wanderer chapter with verified UI/
 
 **Files:**
 - Create: `kenshi/guide/wave-1/{strategy,modlist,mechanics,content,graphics}.typ`
-- Modify: `kenshi/STATUS.md`
+- Modify: `kenshi/STATUS.md`, `kenshi/guide/glossary.typ` (harvest)
 
-- [ ] **Step 1: Research 8-12 survival/settlement mods**
+**Rules in force for this wave:** content aids survival/settling, not combat power. Cut list + power-spike test apply. **Target 8-12 mods.**
+
+- [ ] **Step 1: Research 8-12 survival/settlement candidates**
 
 Searches: "Kenshi farming crops mod", "Kenshi new buildings workshop", "Kenshi weather/dust storm mod", "Kenshi settlement expansion mod", "Kenshi food production mod". Shortlist 8-12 across food/agriculture, weather/climate, building variety, and light survival mechanics.
 
-**Adult/thematic content (per spec policy):** include searches for character skin/body/texture mods that are thematically relevant to the wasteland ("Kenshi body texture mod", "Kenshi skin overlay mod", "Kenshi nude mod"). Quality nude/skin mods may be included as their own entries; verify them via Playwright (Nexus adult pages are rate-limited/hard to fetch). If verification fails, log as UNVERIFIED in `mod-ideas.md`. Explicit porn is never accepted.
+**Adult/thematic content (per spec policy):** also search "Kenshi body texture mod", "Kenshi skin overlay mod", "Kenshi nude mod". Quality nude/skin mods may be included as their own entries; verify via Playwright (Nexus adult pages are rate-limited/hard to fetch). If verification fails, log as UNVERIFIED in `mod-ideas.md` — do not guess. Explicit porn is never accepted.
 
-- [ ] **Step 2: Verify every URL + log in STATUS.md** (same protocol as Task 4 Step 2). Apply the cut list: no power spikes, no content that inflates combat power at this wave.
-- [ ] **Step 3: Write `modlist.typ`** (cards via `mod-entry`) with an intro explaining Wave 1's philosophy.
-- [ ] **Step 4: Write `graphics.typ`** (visual mods for this wave).
-- [ ] **Step 5: Write `content.typ`** (the new buildings/crops/survival content mods).
-- [ ] **Step 6: Write `mechanics.typ`** (survival/climate mechanic changes and their impact).
-- [ ] **Step 7: Write `strategy.typ`** — must cover:
+Candidate quality bar: same as Task 4 Step 1 (a-d), plus: not a combat-power mod.
+
+**Time budget:** max ~15 minutes of searching; if the 8-12 floor can't be met after 2 rounds of alternate queries, ship quality-over-quantity and record the deviation in STATUS.md Notes.
+
+- [ ] **Step 2: Verify every URL + log in STATUS.md (evidence bar)**
+
+Same protocol and evidence bar as Task 4 Step 2: fetch each page, capture exact title + last-update date + mod ID, verdict = VERIFIED only on exact title match + recorded date. Same compatibility rule and cut list. Rejections logged with reason.
+
+- [ ] **Step 3: Write `modlist.typ`** — intro explaining Wave 1's philosophy, then one card per accepted mod via `mod-entry` (fields from STATUS.md).
+- [ ] **Step 4: Write `graphics.typ`** — the visual mods for this wave (landscape, weather, building textures).
+- [ ] **Step 5: Write `content.typ`** — the new buildings/crops/survival content mods, one card each.
+- [ ] **Step 6: Write `mechanics.typ`** — the survival/climate mechanic changes and their system impact, one card each.
+- [ ] **Step 7: Write `strategy.typ`** (target ~8-10 pages, the bulk of the budget). Use `#callout(...)` for tips. Must cover:
   1. Reading the landscape (choosing a base site: fertility, ore, water, security)
   2. First outpost layout (a footprint that scales)
   3. Walls, gates & defense-in-depth
@@ -472,28 +500,43 @@ Searches: "Kenshi farming crops mod", "Kenshi new buildings workshop", "Kenshi w
   7. The Outlander's first year (RP arc)
 - [ ] **Step 8: Audit + commit**
 
+1. **Page span:** `typst query template.typ 'heading' --field page.number`; Wave 1 span (page of `=== Wave 1` to `=== Wave 2`). Expected: **10-12**. Adjust content to fit.
+2. **Placeholder grep:** `Select-String -Path guide\wave-1\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
+3. **URL audit:** every `https://` in `guide/wave-1/*.typ` has a VERIFIED row in STATUS.md.
+4. **Fact-check:** verify structural claims against the wiki: base-site factors (fertility/ore/water), the vanilla crop list, and raid behavior. Fix discrepancies; log in STATUS.md Notes.
+5. **Glossary harvest:** append new terms (fertility, hydroponics, ore node, outpost, walls, raid).
 ```bash
 git add kenshi/
 git commit -m "feat(kenshi): write Wave 1 The Outlander chapter with verified survival/settlement mods"
 ```
 
----
-
 ### Task 6: Wave 2 — The Smith (crafting & production)
 
 **Files:**
 - Create: `kenshi/guide/wave-2/{strategy,modlist,mechanics,content,graphics}.typ`
-- Modify: `kenshi/STATUS.md`
+- Modify: `kenshi/STATUS.md`, `kenshi/guide/glossary.typ` (harvest)
 
-- [ ] **Step 1: Research 8-12 smithing/production mods**
+**Rules in force for this wave:** everything gated behind research time and materials — no free power. Cut list + power-spike test apply. **Target 8-12 mods.**
+
+- [ ] **Step 1: Research 8-12 smithing/production candidates**
 
 Searches: "Kenshi crafting expansion mod", "Kenshi research tree mod", "Kenshi crossbow turret mod", "Kenshi armor weapon crafting mod", "Kenshi hydroponics farming mod". Shortlist 8-12 across crafting expansion, tech/research, material economy, production automation.
 
-- [ ] **Step 2: Verify every URL + log in STATUS.md.** Enforce the gating rule: mods that hand out power without research/material cost are rejected.
-- [ ] **Step 3-6: Write `modlist.typ`, `graphics.typ`, `content.typ`, `mechanics.typ`** (cards + impact notes per the Task 4 pattern).
-- [ ] **Step 7: Write `strategy.typ`** — must cover:
+Candidate quality bar: same as Task 4 Step 1 (a-d), plus: power must be gated behind research/materials, not handed out.
+
+**Time budget:** max ~15 minutes of searching; if the floor can't be met after 2 rounds of alternate queries, ship quality-over-quantity and record the deviation in STATUS.md Notes.
+
+- [ ] **Step 2: Verify every URL + log in STATUS.md (evidence bar)**
+
+Same protocol and evidence bar as Task 4 Step 2: exact title + last-update date + mod ID per mod; VERIFIED only on exact title match. Reject any mod that hands out power without research/material cost (log reason).
+
+- [ ] **Step 3: Write `modlist.typ`** — intro explaining Wave 2's gating philosophy, then one card per accepted mod via `mod-entry`.
+- [ ] **Step 4: Write `content.typ`** — the crafting/research/production content mods, one card each.
+- [ ] **Step 5: Write `mechanics.typ`** — the research/material-economy mechanic changes and their impact, one card each.
+- [ ] **Step 6: Write `graphics.typ`** — the visual mods for this wave (weapon/armor/forge visuals).
+- [ ] **Step 7: Write `strategy.typ`** (target ~8-10 pages). Use `#callout(...)`. Must cover:
   1. The research tree, mapped (which benches/levels unlock what)
-  2. Weapon crafting tiers (quality, materials, diminishing returns)
+  2. Weapon crafting tiers (quality levels, materials, diminishing returns)
   3. Armor crafting & protection economy
   4. Crossbows & turrets (production line + defense use)
   5. Hydroponics & sustainable food
@@ -501,24 +544,43 @@ Searches: "Kenshi crafting expansion mod", "Kenshi research tree mod", "Kenshi c
   7. Building your smith (RP arc)
 - [ ] **Step 8: Audit + commit**
 
+1. **Page span:** `typst query template.typ 'heading' --field page.number`; Wave 2 span (`=== Wave 2` to `=== Wave 3`). Expected: **10-12**.
+2. **Placeholder grep:** `Select-String -Path guide\wave-2\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
+3. **URL audit:** every `https://` in `guide/wave-2/*.typ` has a VERIFIED row in STATUS.md.
+4. **Fact-check:** verify against the wiki: the research bench tiers and weapon quality ladder (e.g., rusty -> edgewalker) as named in your text. Fix discrepancies; log in STATUS.md Notes.
+5. **Glossary harvest:** append new terms (research bench, quality tier, crossbow, turret, hydroponics).
 ```bash
 git add kenshi/
 git commit -m "feat(kenshi): write Wave 2 The Smith chapter with verified crafting/production mods"
 ```
 
+---
+
 ### Task 7: Wave 3 — The Expedition (exploration & new lands)
 
 **Files:**
 - Create: `kenshi/guide/wave-3/{strategy,modlist,mechanics,content,graphics}.typ`
-- Modify: `kenshi/STATUS.md`
+- Modify: `kenshi/STATUS.md`, `kenshi/guide/glossary.typ` (harvest)
 
-- [ ] **Step 1: Research 8-12 exploration/new-lands mods**
+**Rules in force for this wave:** content expands the map/journey, not raw stat boosts. Cut list + power-spike test apply. **Target 8-12 mods.**
+
+- [ ] **Step 1: Research 8-12 exploration/new-lands candidates**
 
 Searches: "Kenshi new zones biomes mod", "Kenshi expanded map mod", "Kenshi new race mod", "Kenshi camping caravan mod", "Kenshi unique recruits mod". Shortlist 8-12 across new zones/biomes, new races/factions, travel/camping mechanics, unique recruits/legendary finds.
 
-- [ ] **Step 2: Verify every URL + log in STATUS.md.** Rule: content that expands the map/journey, not raw stat boosts.
-- [ ] **Step 3-6: Write `modlist.typ`, `graphics.typ`, `content.typ`, `mechanics.typ`** (per Task 4 pattern).
-- [ ] **Step 7: Write `strategy.typ`** — must cover:
+Candidate quality bar: same as Task 4 Step 1 (a-d), plus: map/journey expansion, not stat inflation.
+
+**Time budget:** max ~15 minutes of searching; if the floor can't be met after 2 rounds of alternate queries, ship quality-over-quantity and record the deviation in STATUS.md Notes.
+
+- [ ] **Step 2: Verify every URL + log in STATUS.md (evidence bar)**
+
+Same protocol and evidence bar as Task 4 Step 2: exact title + last-update date + mod ID per mod; VERIFIED only on exact title match. Reject raw stat-boost content (log reason).
+
+- [ ] **Step 3: Write `modlist.typ`** — intro explaining Wave 3's journey philosophy, then one card per accepted mod via `mod-entry`.
+- [ ] **Step 4: Write `content.typ`** — the new zones/races/ruins/recruit content mods, one card each.
+- [ ] **Step 5: Write `mechanics.typ`** — the travel/camping/weather mechanics changes and their impact, one card each.
+- [ ] **Step 6: Write `graphics.typ`** — the visual mods for this wave (new-land textures, biome visuals).
+- [ ] **Step 7: Write `strategy.typ`** (target ~8-10 pages). Use `#callout(...)`. Must cover:
   1. Planning long expeditions (food, medicine, replacement limbs, escape routes)
   2. Biome navigation & hazards (acid, gas, sandstorms, Beak Things)
   3. World states & faction territory (how territory shifts and why it matters)
@@ -527,6 +589,11 @@ Searches: "Kenshi new zones biomes mod", "Kenshi expanded map mod", "Kenshi new 
   6. The cartographer's endgame (RP arc)
 - [ ] **Step 8: Audit + commit**
 
+1. **Page span:** `typst query template.typ 'heading' --field page.number`; Wave 3 span (`=== Wave 3` to `=== Wave 4`). Expected: **10-12**.
+2. **Placeholder grep:** `Select-String -Path guide\wave-3\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
+3. **URL audit:** every `https://` in `guide/wave-3/*.typ` has a VERIFIED row in STATUS.md.
+4. **Fact-check:** verify against the wiki: the hazards you name exist in the zones you name (acid pools, gas, sandstorms, Beak Thing territory) and faction/world-state behavior. Fix discrepancies; log in STATUS.md Notes.
+5. **Glossary harvest:** append new terms (world state, expedition, caravan, Beak Thing, biome).
 ```bash
 git add kenshi/
 git commit -m "feat(kenshi): write Wave 3 The Expedition chapter with verified exploration mods"
@@ -538,15 +605,27 @@ git commit -m "feat(kenshi): write Wave 3 The Expedition chapter with verified e
 
 **Files:**
 - Create: `kenshi/guide/wave-4/{strategy,modlist,mechanics,content,graphics}.typ`
-- Modify: `kenshi/STATUS.md`
+- Modify: `kenshi/STATUS.md`, `kenshi/guide/glossary.typ` (harvest)
 
-- [ ] **Step 1: Research 8-12 warfare/endgame mods**
+**Rules in force for this wave:** keeps challenge honest — nothing that hands victory away. Cut list + power-spike test apply. **Target 8-12 mods.**
+
+- [ ] **Step 1: Research 8-12 warfare/endgame candidates**
 
 Searches: "Kenshi faction overhaul mod", "Kenshi endgame enemies mod", "Kenshi raid siege mod", "Kenshi army formation management mod". Shortlist 8-12 across faction expansion, raids/sieges, endgame enemy scaling, army management.
 
-- [ ] **Step 2: Verify every URL + log in STATUS.md.** Rule: keeps challenge honest — nothing that hands victory away.
-- [ ] **Step 3-6: Write `modlist.typ`, `graphics.typ`, `content.typ`, `mechanics.typ`** (per Task 4 pattern).
-- [ ] **Step 7: Write `strategy.typ`** — must cover:
+Candidate quality bar: same as Task 4 Step 1 (a-d), plus: challenge-preserving, not victory-giving.
+
+**Time budget:** max ~15 minutes of searching; if the floor can't be met after 2 rounds of alternate queries, ship quality-over-quantity and record the deviation in STATUS.md Notes.
+
+- [ ] **Step 2: Verify every URL + log in STATUS.md (evidence bar)**
+
+Same protocol and evidence bar as Task 4 Step 2: exact title + last-update date + mod ID per mod; VERIFIED only on exact title match. Reject anything that hands victory away (log reason).
+
+- [ ] **Step 3: Write `modlist.typ`** — intro explaining Wave 4's honest-challenge philosophy, then one card per accepted mod via `mod-entry`.
+- [ ] **Step 4: Write `content.typ`** — the faction/siege/endgame content mods, one card each.
+- [ ] **Step 5: Write `mechanics.typ`** — the warfare/difficulty mechanic changes and their impact, one card each.
+- [ ] **Step 6: Write `graphics.typ`** — the visual mods for this wave (army/faction visuals).
+- [ ] **Step 7: Write `strategy.typ`** (target ~8-10 pages). Use `#callout(...)`. Must cover:
   1. Faction relations & diplomacy (what you can and can't trade)
   2. Raids, sieges & defense (garrison doctrine, turret placement)
   3. Army management (squads, medic strategy, limb replacement for soldiers)
@@ -555,6 +634,11 @@ Searches: "Kenshi faction overhaul mod", "Kenshi endgame enemies mod", "Kenshi r
   6. The "end" of Kenshi (RP arc capstone)
 - [ ] **Step 8: Audit + commit**
 
+1. **Page span:** `typst query template.typ 'heading' --field page.number`; Wave 4 span (`=== Wave 4` to `== Glossary`). Expected: **10-12**.
+2. **Placeholder grep:** `Select-String -Path guide\wave-4\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
+3. **URL audit:** every `https://` in `guide/wave-4/*.typ` has a VERIFIED row in STATUS.md.
+4. **Fact-check:** verify against the wiki: faction relations/diplomacy behavior, world-state victory conditions, and any named leaders. Fix discrepancies; log in STATUS.md Notes.
+5. **Glossary harvest:** append new terms (faction relation, siege, garrison, world conquest).
 ```bash
 git add kenshi/
 git commit -m "feat(kenshi): write Wave 4 The Conqueror chapter with verified warfare mods"
@@ -577,7 +661,7 @@ git commit -m "feat(kenshi): write Wave 4 The Conqueror chapter with verified wa
   6. Launch & verify — start via KMM, confirm mods load in the in-game Mods menu, no ".mod file" errors
   7. Per-wave switching — enabling only the active wave's mods per new game
 - [ ] **Step 2:** If Task 3 verdict was INCOMPATIBLE, write the Plan B variant (in-game mod manager) as the primary flow instead, and note the swap in STATUS.md.
-- [ ] **Step 3: Commit**
+- [ ] **Step 3: Audit + commit** — placeholder grep on `guide/installation.typ` (`Content lands here|TBD|TODO`) -> zero; every claim in the chapter matches a VERIFIED line from Task 3.
 
 ```bash
 git add kenshi/
@@ -586,27 +670,25 @@ git commit -m "docs(kenshi): write installation guide with verified KMM setup an
 
 ---
 
-### Task 10: Glossary
+### Task 10: Glossary assembly
 
 **Files:**
 - Modify: `kenshi/guide/glossary.typ`
 - Modify: `kenshi/STATUS.md`
 
-- [ ] **Step 1: Write 40-60 terms** in three groups, drawn from what the waves actually use:
-  - Core game systems: hunger, cats, stats (Toughness, Dexterity, Melee Attack), limbs, slavery, world states, raids, the fog, Beak Things, etc.
-  - Modding/KMM: load order, `mods.cfg`, `.mod` file, Steam Workshop ID, KMM, mod conflict, "later wins"
-  - Settlement/economy (for Wave 1-2 readers): fertility, hydroponics, ore node, squad, turret, garrison
+- [ ] **Step 1: Assemble the harvested terms** from Tasks 4-8 into `guide/glossary.typ`. Deduplicate, and add the modding/KMM group that waves don't naturally produce: load order, `mods.cfg`, `.mod` file, Steam Workshop ID, KMM, mod conflict, "later wins", mod card.
 
 Format per term:
 ```typ
 *Term* — one-sentence definition with game context.
 ```
 
-- [ ] **Step 2: Commit**
+- [ ] **Step 2: Audit** — count terms with `Select-String -Path guide\glossary.typ -Pattern '^\*'`. Expected: **40-60**. If under 40, expand; if over 60, trim the least-used terms.
+- [ ] **Step 3: Commit**
 
 ```bash
 git add kenshi/
-git commit -m "docs(kenshi): add 40-60 term glossary"
+git commit -m "docs(kenshi): assemble 40-60 term glossary"
 ```
 
 ---
@@ -614,45 +696,50 @@ git commit -m "docs(kenshi): add 40-60 term glossary"
 ### Task 11: Template polish + PDF build + DoD verification
 
 **Files:**
-- Modify: `kenshi/template.typ` (per-wave color coding, callout styling, cover polish)
+- Modify: `kenshi/template.typ` (per-wave color coding via scoped show rules)
 - Verify: full build
 
 - [ ] **Step 1: Add per-wave color coding**
 
-Wrap each wave section in `#set` blocks so each wave's headings/cards take a slightly distinct rust/ember/ash tint (Wave 0 bone, 1 ember, 2 rust, 3 ash, 4 blood). Keep contrast high — this is decoration, not the primary structure. Example wrapper:
+Wrap every wave section in a scoped block so the included files' level-2 headings pick up that wave's accent, then revert automatically. Per-wave heading accents (all dark enough for contrast on bone `#f2ead9`): Wave 0 rust `#b3492e`, Wave 1 ember `#d97b3a`, Wave 2 blood `#8c2b2b`, Wave 3 dark brown `#4a3a30`, Wave 4 dark rust `#5d2a1f`.
+
+This is the working pattern — scoped `#show` inside a `#block[...]` (a plain `#set text(...)` around a section does NOT recolor headings, because the template's `#show heading` rules override it):
 
 ```typ
-#set text(fill: rgb("#2b2622"))
-=== Wave 1: The Outlander
-#include "guide/wave-1/strategy.typ"
-...
-#set text(fill: rgb("#2b2622"))
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#d97b3a"))
+  #show heading.where(level: 3): set text(fill: rgb("#d97b3a"))
+  === Wave 1: The Outlander
+  #include "guide/wave-1/strategy.typ"
+  #include "guide/wave-1/modlist.typ"
+  #include "guide/wave-1/mechanics.typ"
+  #include "guide/wave-1/content.typ"
+  #include "guide/wave-1/graphics.typ"
+]
+#pagebreak()
 ```
 
-- [ ] **Step 2: Polish callouts** — a reusable tip/warning/caution callout function; apply it consistently if not already used in wave content:
+Apply the same block wrapper to all 5 wave sections with their accents. The TOC and top-level headings remain at the base rust color.
 
-```typ
-#let callout(title, body) = block(
-  fill: rgb("#f7e8d8"), inset: 8pt, radius: 4pt,
-  stroke: 0.5pt + rgb("#d97b3a"),
-)[*#title* #body]
-```
+- [ ] **Step 2: Callout consistency pass** — `callout()` is already defined in template.typ (Task 2) and used in wave content. Sweep each wave file: every tip/warning must use `#callout(...)`, not an inline `#block(...)`. Convert any stragglers.
 
 - [ ] **Step 3: Rebuild the PDF**
 
 Run: `.\build.bat`
 Expected: `SUCCESS: PDF generated at output/scars-of-the-horizon.pdf`, zero warnings/errors.
 
-- [ ] **Step 4: Page-count check**
+- [ ] **Step 4: Total page count (reliable check)**
 
-Run the Task 2 Step 4 page-count snippet.
+```
+typst query template.typ '<end>' --field page.number
+```
 Expected: **60-80**.
 
 - [ ] **Step 5: Definition-of-Done spot checks**
-  - PDF contains: cover (logo + title), TOC, installation chapter, all 5 wave chapters, glossary (spot-check by extracting text).
-  - Page numbers appear in the footer (`N / M` format).
-  - No "TODO"/placeholder text in the PDF (grep extracted text for "land here"/"TBD").
-  - Every mod URL in the PDF resolves to a page (spot-check 3 URLs per wave).
+  - **Headings present:** `typst query template.typ 'heading' --field page.number` shows all 5 wave headings + installation + glossary, in order.
+  - **No placeholders:** `Select-String -Path guide\*.typ, guide\wave-*\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
+  - **Page numbers:** footer renders "N / M" — spot-check by opening the PDF in the browser (Playwright: navigate to `file:///<abs path>\output\scars-of-the-horizon.pdf`, snapshot the cover, verify the logo and footer).
+  - **URLs resolve:** spot-check 3 URLs per wave by fetching each page (webfetch / ctx_fetch_and_index) and confirming the page loads.
 
 - [ ] **Step 6: Commit**
 
@@ -679,7 +766,7 @@ Cross-check accepted mods for same-file edits; populate `conflicts-mods.md` with
 
 - [ ] **Step 3: Final PDF rebuild + full DoD pass**
 
-Run `.\build.bat`, confirm SUCCESS and the 60-80 page count. Verify the PDF opens and the cover/TOC render.
+Run `.\build.bat`, confirm SUCCESS. Page count via `typst query template.typ '<end>' --field page.number` in the 60-80 range. Verify the PDF opens and the cover/TOC render (Playwright file:// snapshot).
 
 - [ ] **Step 4: Finalize docs**
 
