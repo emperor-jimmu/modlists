@@ -49,3 +49,13 @@ Terms below are used in the Wave 0 chapter (The Wanderer). Later waves extend th
 *Walls* — defensive buildings that keep raiders and animals out. Makeshift Walls come first; Defensive Walls (which allow turret mounting) come after. Walls need Building Materials and reserve flat ground around your footprint.
 
 *Raid* — a territorial event where a hostile faction assaults your outpost. Raids trigger when your base sits near the camps of hostile factions; raiders break down gates and attack characters, and raid size tracks your settlement's reputation.
+
+*Research bench* — the building where research happens. Upgrades from Research Bench II (10 iron plates, 0 power, 90% efficiency) up to Research Bench VI (35 iron plates, 30 power, 110% efficiency). The bench level is your tech level: Bench V is the gate for hydroponics and the top weapon grades.
+
+*Quality tier* — the grade of a crafted or looted weapon. Weapon grades climb from Rusted Junk, through Refitted and Catun, to Mk I-III, then Edge Type 1 and Edge Type 2; Edge Type 3 and Meitou cannot be crafted in vanilla at all. Grade is a ladder, not a menu.
+
+*Crossbow* — a ranged weapon that uses the Crossbows skill (accuracy and reload time) and Precision Shooting. Crossbows run on the same material line as everything else: iron plates and spring steel, built at the Crossbow Crafting Bench.
+
+*Turret* — a mounted defensive weapon built on ground or Defensive Walls. Turrets include Harpoon Turrets, Mounted Crossbows, and (with Wave 2 mods) vanilla crossbows mounted on the wall line. Turret accuracy is perfect at Crossbow level 70.
+
+*Hydroponics* — indoor farming that ignores environment and fertility entirely. Requires Research Bench V and an AI Core to unlock, and each crop costs four Ancient Science Books. Hydroponic farms grow one size with ten plants but yield multiple crops, so they can outperform regular farms.
