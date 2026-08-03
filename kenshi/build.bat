@@ -14,6 +14,7 @@ if %ERRORLEVEL% neq 0 (
 echo Typst found.
 echo.
 echo Building PDF...
+if not exist output mkdir output
 typst compile template.typ output/scars-of-the-horizon.pdf
 if %ERRORLEVEL% equ 0 (
     echo.

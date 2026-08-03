@@ -28,13 +28,13 @@ Approach A — "Lifepath" progression. Five waves (0–4), each a distinct, prog
 
 ## 2. Wave Map, Backstories & Page Budgets
 
-| Wave | Lifepath | Start & Premise | Guide focus | Mod philosophy | Budget |
-|---|---|---|---|---|---|
-| 0 | The Wanderer | Wake in The Hub, no memory, no coin. Only your will to survive the week. | Full how-to-play: controls, UI, hunger/stats, combat, mining copper for cats, first recruit, basic survival loop. | Vanilla + UI/QoL only. No content mods. | 12–14 pp |
-| 1 | The Outlander | A refugee caravan's cast-off. Build a dusty first settlement that outlasts the next raid. | Base building, walls/gates, food production (farming/hunting), stone & iron logistics, defense-in-depth, first outpost layout. | Survival & settlement content + light mechanics. No power spikes. | 10–12 pp |
-| 2 | The Smith | A tech-hunter chasing a half-burned research ledger that promises lost weapons of the ancients. | Research tree mastery, weapon/armor crafting tiers, crossbows & turrets, hydroponics, material economy, smithing progression. | Production/crafting content + tech/research mechanics. Everything gated behind effort & materials. | 10–12 pp |
-| 3 | The Expedition | A cartographer whose maps all end at a blank edge. Sell everything; the map's edge is a rumor. | Exploration: biome navigation, long-range expeditions, world states, unique recruits & ruins, caravans, map completion. | New lands/races/ruins + exploration mechanics (travel, camping, weather survival). | 10–12 pp |
-| 4 | The Conqueror | A warlord with one ambition: the continent answers to you — or burns. | Faction relations, raids & sieges, defense, world conquest, endgame enemies, army management, the "end" of Kenshi. | Faction/warfare content + endgame mechanics. Keeps challenge honest — nothing that hands victory away. | 10–12 pp |
+| Wave | Lifepath       | Start & Premise                                                                                 | Guide focus                                                                                                                    | Mod philosophy                                                                                         | Budget   |
+|------|----------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|----------|
+| 0    | The Wanderer   | Wake in The Hub, no memory, no coin. Only your will to survive the week.                        | Full how-to-play: controls, UI, hunger/stats, combat, mining copper for cats, first recruit, basic survival loop.              | Vanilla + UI/QoL only. No content mods.                                                                | 12–14 pp |
+| 1    | The Outlander  | A refugee caravan's cast-off. Build a dusty first settlement that outlasts the next raid.       | Base building, walls/gates, food production (farming/hunting), stone & iron logistics, defense-in-depth, first outpost layout. | Survival & settlement content + light mechanics. No power spikes.                                      | 10–12 pp |
+| 2    | The Smith      | A tech-hunter chasing a half-burned research ledger that promises lost weapons of the ancients. | Research tree mastery, weapon/armor crafting tiers, crossbows & turrets, hydroponics, material economy, smithing progression.  | Production/crafting content + tech/research mechanics. Everything gated behind effort & materials.     | 10–12 pp |
+| 3    | The Expedition | A cartographer whose maps all end at a blank edge. Sell everything; the map's edge is a rumor.  | Exploration: biome navigation, long-range expeditions, world states, unique recruits & ruins, caravans, map completion.        | New lands/races/ruins + exploration mechanics (travel, camping, weather survival).                     | 10–12 pp |
+| 4    | The Conqueror  | A warlord with one ambition: the continent answers to you — or burns.                           | Faction relations, raids & sieges, defense, world conquest, endgame enemies, army management, the "end" of Kenshi.             | Faction/warfare content + endgame mechanics. Keeps challenge honest — nothing that hands victory away. | 10–12 pp |
 
 Non-wave pages: cover 1 + TOC 1 + installation 6–8 + glossary 4–5. Total lands in the 60–80 range. **The guide is the primary deliverable; the modlist is embedded within it.** Budget drift must be corrected during writing, not after.
 
@@ -43,12 +43,14 @@ Non-wave pages: cover 1 + TOC 1 + installation 6–8 + glossary 4–5. Total lan
 Mods are curated by category; specific mods are researched and URL-verified during implementation — never fabricated. **Mod-count floors per wave:** Wave 0 = 5–8 (UI/QoL/performance only); Waves 1–4 = 8–12 each.
 
 **Wave 0 — Vanilla + UI/QoL only:**
+
 - UI/UX: inventory, map, crosshair/targeting clarity, tooltip readability
 - Performance & stability: optimization fixes, loading speed
 - QoL: sound rebalancing, camera behavior, hotkey/control improvements
 - Rule: nothing that changes game balance or adds content.
 
 **Wave 1 — Survival & Settlement:**
+
 - Food/agriculture (crops, livestock, cooking)
 - Weather/climate (dust storms, rain, fog effects)
 - Building variety (new buildings, furniture, wall types)
@@ -56,6 +58,7 @@ Mods are curated by category; specific mods are researched and URL-verified duri
 - Rule: content that aids survival/settling, not combat power.
 
 **Wave 2 — Smithing & Production:**
+
 - Crafting expansion (weapons, armor, crossbows, turrets)
 - Tech/research tree expansion (new unlock tiers, gated behind real research time)
 - Material economy (new ore/materials, smelting/refining)
@@ -63,6 +66,7 @@ Mods are curated by category; specific mods are researched and URL-verified duri
 - Rule: everything gated behind materials + research time — no free power.
 
 **Wave 3 — Exploration & New Lands:**
+
 - New zones/biomes, expanded world or new ruins
 - New races/factions for encounters
 - Travel/camping/caravan mechanics
@@ -70,6 +74,7 @@ Mods are curated by category; specific mods are researched and URL-verified duri
 - Rule: content that expands the map and journey, not raw stats.
 
 **Wave 4 — Warfare & Endgame:**
+
 - Faction expansion (new factions, wars, world states)
 - Raids/sieges & garrison/defense content
 - Endgame enemy scaling (honest difficulty, no cheese)
@@ -154,12 +159,12 @@ Every mod card must contain, at minimum:
 
 ## 9. Risk Register (Open Items)
 
-| Risk | Impact | Mitigation / Owner |
-|---|---|---|
-| KMM (Nexus 1765) incompatible with 1.0.68 / current Windows | Installation chapter unusable | Verify early (first implementation task). Contingency = built-in mod manager (Section 4, Plan B). |
-| Nexus Cloudflare wall / rate limiting blocks verification | Mods can't be verified → excluded | Playwright fallback; batch with bounded concurrency; flag to user if manual verification needed. |
-| Adult/nude mod pages are rate-limited or hard to fetch | Thematic content can't be verified | Playwright; if still blocked, log UNVERIFIED and ask the user. |
-| Mod verified-on-paper but fails in-game (can't run the game to test) | Card claims break | Rely on community-reported compatibility + update dates; mark as "reported compatible" not "tested" where appropriate. |
-| Page budget drift (how-to-play ballooning) | PDF out of range | Budgets enforced per wave during writing; trim/expand before compile. |
-| Glossary becomes an afterthought | Weak deliverable | Fixed target of 40–60 terms, written per wave as terms are introduced. |
-| Power-spike borderline mods | Rule becomes mush | Written verdict required in STATUS.md per borderline mod (Section 1 test). |
+| Risk                                                                 | Impact                             | Mitigation / Owner                                                                                                     |
+|----------------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| KMM (Nexus 1765) incompatible with 1.0.68 / current Windows          | Installation chapter unusable      | Verify early (first implementation task). Contingency = built-in mod manager (Section 4, Plan B).                      |
+| Nexus Cloudflare wall / rate limiting blocks verification            | Mods can't be verified → excluded  | Playwright fallback; batch with bounded concurrency; flag to user if manual verification needed.                       |
+| Adult/nude mod pages are rate-limited or hard to fetch               | Thematic content can't be verified | Playwright; if still blocked, log UNVERIFIED and ask the user.                                                         |
+| Mod verified-on-paper but fails in-game (can't run the game to test) | Card claims break                  | Rely on community-reported compatibility + update dates; mark as "reported compatible" not "tested" where appropriate. |
+| Page budget drift (how-to-play ballooning)                           | PDF out of range                   | Budgets enforced per wave during writing; trim/expand before compile.                                                  |
+| Glossary becomes an afterthought                                     | Weak deliverable                   | Fixed target of 40–60 terms, written per wave as terms are introduced.                                                 |
+| Power-spike borderline mods                                          | Rule becomes mush                  | Written verdict required in STATUS.md per borderline mod (Section 1 test).                                             |
