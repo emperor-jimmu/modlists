@@ -1,12 +1,14 @@
 # Steel Genesis — STATUS
 
 Target: Open Rails 1.6.1 (released 14 Jan 2026). Mod organizer: built-in Content system.
-Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas Tower Download Library (audited — thin), other reputable freeware (fallback).
+Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas Tower Download Library (audited — thin),
+  other reputable freeware (fallback).
 
 ## Audit (2026-08-03)
 - OR catalogue: 14 routes live; all 4 wave routes confirmed Free + self-contained + installed via Content form.
-- Elvas Tower OR Download Library: Routes for OR = 6 topics; Goose Island = 0; RGS = 1 (testing); Conrail & FG&S = CRKB_FJG (5 parts). Contingency exercised — wave content from catalogue.
-- Logo: assets/logo.jpg valid JPEG (FF D8 FF E1, 460 KB). Visual check pending.
+- Elvas Tower OR Download Library: Routes for OR = 6 topics; Goose Island = 0; RGS = 1 (testing);
+  Conrail & FG&S = CRKB_FJG (5 parts). Contingency exercised — wave content from catalogue.
+- Logo: assets/logo.jpg valid JPEG (FF D8 FF E1, 460 KB). Visual check pending in Task 9.
 - Environment: Typst 0.15.1; fonts Cinzel / Bahnschrift / Georgia available.
 
 ## Decisions
@@ -25,8 +27,10 @@ Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas T
 
 ## Rejected Mods
 | Mod | Reason |
+| --- | --- |
 
 ## Conflicts
 | Mod A | Mod B | Issue | Mitigation |
+| --- | --- | --- | --- |
 
 ## Notes
