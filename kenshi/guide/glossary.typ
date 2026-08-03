@@ -37,3 +37,15 @@ Terms below are used in the Wave 0 chapter (The Wanderer). Later waves extend th
 *Knock-out* — falling unconscious when a vital part drops below 0. You may be looted, enslaved, or left to recover.
 
 *Recovery coma* — a deep unconsciousness from serious injuries that lasts until vitals rise above 0 again; First Aid and beds speed the recovery.
+
+*Fertility* — a prospecting value that decides how efficiently farms grow crops on a site. It is separate from the environment, and it is the number that decides whether your first field is a larder or a graveyard.
+
+*Hydroponics* — a late farming technology that grows crops indoors, ignoring environment and fertility entirely. Requires Research Bench V and an AI Core to learn; each crop costs Ancient Science Books.
+
+*Ore node* — a copper or iron outcrop shown on the prospecting map, mined with the Labouring skill. Ore nodes near your outpost are the raw material for both income and weapons.
+
+*Outpost* — any group of your own buildings large enough that the world treats as a settlement. The moment it exists, factions start sending tax men, prayer days, tribute rounds and raids.
+
+*Walls* — defensive buildings that keep raiders and animals out. Makeshift Walls come first; Defensive Walls (which allow turret mounting) come after. Walls need Building Materials and reserve flat ground around your footprint.
+
+*Raid* — a territorial event where a hostile faction assaults your outpost. Raids trigger when your base sits near the camps of hostile factions; raiders break down gates and attack characters, and raid size tracks your settlement's reputation.

@@ -1,2 +1,7 @@
 == The Outlander: Modlist
-// Content lands here in Task 5.
+
+Wave 1 adds the settlement layer: buildings, food production, water, weather and the light survival mechanics that turn a camp into a home. Nothing here raises combat power — no new weapons, armour, stats or caps. Every mod either deepens a survival problem (water, food, farming on hostile land) or gives you more to build with (buildings, furniture, atmosphere). Think of it as the toolset for the strategy chapter that opened this wave.
+
+*Install order:* subscribe to all ten, then in the KMM Mods tab make sure *Slopeless* sits *above* *Forgotten Buildings* (the author requires it — wrong order makes some buildings impossible to place), and keep *Compressed Textures Project* from Wave 0 above all Wave 1 content so the building textures render correctly. *Mood Weather* recommends pairing with Wave 0's *Particle System Override*. Do *not* run *Fish and Meat Industry* together with the older *Meat Production and Processing* — the author says it supersedes that mod.
+
+The ten mods are split across the next three sections by what they change. *Mechanics* covers the survival-system changes (Radiant Food Expansion, Deep Wells, Moisture Farming) — how food and water actually work. *Content* covers the new buildables and additions (Vanilla Outposts Expanded, Fish and Meat Industry, Shek Perfect Body) — what you can build and craft. *Graphics* covers the visual layer (Mood Weather, Flipped Buildings, Forgotten Buildings, Slopeless) — how the world and your outpost look.
