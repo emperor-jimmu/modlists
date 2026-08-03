@@ -2,7 +2,7 @@
   margin: (x: 2cm, y: 2.5cm),
   footer: context {
     align(center)[
-      #counter(page).display("1 / 1")
+      #counter(page).display("1 / 1", both: true)
     ]
   },
 )
