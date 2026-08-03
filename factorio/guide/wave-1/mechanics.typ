@@ -46,7 +46,7 @@ The four system mods in this section change *how the factory decides things*, no
 #mod-entry(
   "Auto Deconstruct",
   "https://mods.factorio.com/mod/AutoDeconstruct",
-  version: "Updated 30 Jul 2026 (page); 2.0-line build v1.0.14 (30 Jul 2026). A matching-version 2.1-line build also shipped 30 Jul 2026 (outside target).",
+  version: "Updated 30 Jul 2026 (page); 2.0-line build v1.0.14 (30 Jul 2026). Newer 2.1-line releases (2.1-line build v1.1.2, 30 Jul 2026) are outside the 2.0.77 target.",
   verified: "YES — portal page + API fetched 2026-08-03; page title 'Auto Deconstruct' matches the API title exactly.",
   deps: "None — standalone.",
   impact: "Automatically marks a mining drill for deconstruction the instant its patch runs dry, so a spent outpost flags itself for the construction robots instead of sitting dead with four drills on empty ground. In a scaling factory, outposts are born and die continuously; this turns the teardown half of that lifecycle into the same hands-off process as the build. A marker helper only — it changes no recipe, cap or balance value.",
