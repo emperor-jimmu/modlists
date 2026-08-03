@@ -3,8 +3,6 @@
   stroke: 0.5pt + rgb("#e8590c"),
 )[*#title* #body]
 
-== Installation Guide
-
 This chapter takes you from a fresh Factorio install to a running, verified modded setup: the exact game build, the built-in mod manager, where every mod in this guide comes from, how version compatibility is enforced, and the per-wave discipline the whole guide assumes. It is written against *Factorio 2.0.77*, released *May 21, 2026*, with the *Space Age* expansion owned. The mod organizer is Factorio's own built-in mod manager — the *Mods* screen in the main menu — so there is no third-party tool to install and nothing to configure outside the game. Every mod in the list is published on the official Factorio Mod Portal (#link("https://mods.factorio.com")[mods.factorio.com]), and every card in the wave chapters records the portal-verified build that was checked against this install.
 
 If you follow the waves in order, you do the setup here exactly once, up front. Each wave is its own new game with its own mod subset; the final section of this chapter explains how to switch between waves using only the built-in manager's checkboxes.
