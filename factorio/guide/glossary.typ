@@ -8,11 +8,7 @@
 
 *Burner machine* — a machine (mining drill, furnace, inserter, boiler) that runs on fuel it holds itself rather than electricity; they are self-contained but stop the moment their fuel runs out.
 
-*Boiler* — a fuel-fed machine that turns water into 165°C steam (60 steam per second, one coal roughly every 2.2 seconds) to feed steam engines.
-
-*Steam engine* — the earliest electricity generator, producing 900 kW by consuming 30 units of steam per second; two steam engines run off each boiler.
-
-*Offshore pump* — a free-standing pump placed on a lake shore that supplies up to 200 boilers' worth of water (1,200 units per second), the water source for all early steam power.
+*Steam power* — the early electric chain: an offshore pump on a lake shore supplies up to 200 boilers' worth of water (1,200 units per second), each boiler turns water into 165°C steam (60 per second, one coal roughly every 2.2 seconds), and each steam engine consumes 30 steam per second to make 900 kW — the modern 2.0 ratio is 1 pump : 200 boilers : 400 engines, two engines per boiler.
 
 *Alt-mode* — the toggle (Alt key) that overlays every entity with its recipe, contents or direction, making the whole factory readable at a glance.
 
@@ -22,35 +18,19 @@
 
 *Pollution* — the red cloud emitted by machines that spreads across the map; when it reaches a biter nest, the nest musters an attack, so a factory's noise determines its trouble.
 
-*Evolution factor* — the world's hidden difficulty meter, raised slowly by time, faster by pollution, and most of all by destroying biter nests.
-
-*Biter / spawner* — the native life of Nauvis; spawners absorb pollution to launch attack waves, and biters are the soldiers that follow.
+*Biter / spawner & evolution factor* — the native life of Nauvis; spawners absorb pollution to launch attack waves, and biters are the soldiers that follow. The evolution factor is the world's hidden difficulty meter — raised slowly by time, faster by pollution, and most of all by destroying biter nests — and together the two decide how fast and how tough the attacks get.
 
 *Blueprint* — a saved copy of a group of buildings (the B key opens the library) that you can stamp down anywhere, letting a whole production block be recreated in seconds.
 
-*Ghost* — the translucent outline of a planned building placed before you have the materials; construction or manual placement fills it in later.
-
 *Pipette* — the Q-key tool that grabs the item you are hovering over, so you can build more of anything by looking at it.
 
-*Pumpjack* — the electric machine placed on a crude-oil well to extract it; output declines as the well depletes.
-
-*Oil refinery* — the machine that turns crude oil into petroleum gas, light oil and heavy oil in one step; when any output tank is full the refinery stops.
-
-*Cracking* — a chemical-plant process that converts heavier oil fractions into lighter ones (heavy to light, light to petroleum), unblocking a jammed oil line.
-
-*Plastic bar* — an oil-derived ingredient (from petroleum gas) that gates chemical science and, later, low density structures.
+*Oil processing* — the oil chain that opens with chemical science: a pumpjack on a crude-oil well extracts it (output declines as the well depletes), an oil refinery turns crude into petroleum gas, light oil and heavy oil in one step (stopping when any output tank is full), and cracking converts heavier fractions into lighter ones (heavy to light, light to petroleum) to unblock a jammed line.
 
 *Rail signal / chain signal* — track-side signals that divide rails into blocks so two trains cannot collide; chain signals read ahead and guard crossings.
 
 *Locomotive / cargo wagon* — the engine and the cargo of a train; a schedule (go to stop A until full, stop B until empty) makes a hauling line run forever.
 
-*Radar* — a cheap early building that reveals the map around your base, so the minimap and full map show what lies beyond the fog.
-
-*Rocket silo* — the capstone building that assembles rocket parts and launches the rocket; its research needs every science pack except military.
-
-*Rocket part* — the ingredient of a launch: since 2.0.7 each part costs 10 low density structures, 10 processing units and 10 rocket fuel, and a full rocket needs 100 of them.
-
-*Satellite* — the classic rocket payload; launching one returns 1,000 space science packs to the cargo landing pad about 29 seconds after launch.
+*Rocket* — the endgame capstone: a rocket silo assembles rocket parts and launches the rocket, and its research needs every science pack except military. Since 2.0.7 each part costs 10 low density structures, 10 processing units and 10 rocket fuel, and a full rocket needs 100 of them (1,000 of each). The classic payload is a satellite, which returns 1,000 space science packs to the cargo landing pad about 29 seconds after launch.
 
 *Main bus* — a city-block-era layout idea (full detail in Wave 1) where a few broad parallel belts carry the core materials past every production block, pulled off by splitters.
 
@@ -64,23 +44,9 @@
 
 *Logistic robot* — a flying robot that carries items between chests inside a logistic network, one item at a time by default (up to four with research), flying at about 3 tiles per second.
 
-*Requester chest* — a chest that asks the logistic network to deliver a chosen item up to a set amount, the robot-network equivalent of a machine's input.
+*Logistic chests* — the chest family that plugs a factory into the logistic network: a requester chest asks the network to deliver a chosen item up to a set amount, a passive provider chest makes its contents available without pushing them out, a storage chest holds surplus and deconstruction drops, and a buffer chest both requests and provides, staging materials near a consumer.
 
-*Passive provider chest* — a chest that makes its contents available to the logistic network without pushing them out; robots pull from it when a requester asks.
-
-*Storage chest* — the logistic network's general holding chest, where deconstruction drops items and robots park surplus.
-
-*Buffer chest* — a chest that both requests items and provides them to the network, used to stage materials near a consumer.
-
-*Module* — an expensive, research-gated item slotted into machines and beacons to raise speed, cut energy, add free output, or roll quality.
-
-*Speed module* — a module that raises crafting speed (+20%, +30%, +50% by tier) while increasing the machine's power and pollution.
-
-*Efficiency module* — a module that cuts a machine's energy consumption and pollution (-30%, -40%, -50% by tier).
-
-*Productivity module* — a module that gives a chance of free bonus output (+4%, +6%, +10% by tier) while slowing the machine and raising its power use.
-
-*Quality module* — a module that gives a chance (+1%, +2%, +2.5% by tier) of crafting an item one quality tier higher.
+*Module* — an expensive, research-gated item slotted into machines and beacons, in four types: speed modules raise crafting speed (+20%, +30%, +50% by tier) while raising power and pollution; efficiency modules cut energy consumption and pollution (−30%, −40%, −50% by tier); productivity modules give a chance of free bonus output (+4%, +6%, +10% by tier) while slowing the machine and raising its power use; and quality modules give a chance (+1%, +2%, +2.5% by tier) of crafting an item one quality tier higher.
 
 *Quality* — the five-tier item system (normal, uncommon, rare, epic, legendary); higher-tier items are stronger, and quality rolls on crafted items improve with quality modules.
 
@@ -89,8 +55,6 @@
 *Beacon* — a building that broadcasts its modules' effects to every compatible machine in a 9x9 area around it, with diminishing returns as more beacons target the same machine.
 
 *Train limit* — a number set on a train stop capping how many trains may head for it at once, the first and best anti-deadlock habit on a shared network.
-
-*Bulk inserter* — the base-game high-capacity inserter, able to carry several items per swing; the stack inserter is a Space Age addition outside Waves 0-1.
 
 *Belt stacking* — the Wave 1 mechanic (Deadlock's Stacking Beltboxes) that combines several copies of an item into one stacked belt item, multiplying what a belt lane can carry.
 
@@ -116,4 +80,16 @@
 
 *Intergalactic transceiver* — Krastorio 2's end-game win building; under K2SO it must be built in space.
 
-*Snappers* — the armoured, slower enemy type added by Armoured Biters, one of Krastorio 2's recommended companions.
+*Mod portal* — the official Factorio website (mods.factorio.com) where every mod in this guide is hosted; each mod's page shows its description, downloads, version history and dependencies, and it is the only source the guide installs from.
+
+*factorio_version* — the game version a mod's release is built against, shown on its portal page; this guide targets Factorio 2.0.77, so every chosen mod is a 2.0-line build, and newer 2.1-line builds are deliberately out of scope.
+
+*Mod dependency* — another mod a given mod needs to run, declared on its portal page; required dependencies install automatically with the mod, optional ones are listed for you to choose, and the mod manager refuses to enable a mod whose dependencies are missing.
+
+*Mod conflict* — two mods that change the same recipes, buildings or data and therefore cannot run together; the mod manager blocks the conflicting pair, and the fix is usually a bridge mod (like Krastorio 2 Spaced Out for Krastorio 2 + Space Age) that merges them.
+
+*mods/ folder* — the folder in the game's data directory where mods live as .zip files; the built-in mod manager reads and writes it automatically, so you normally never touch it, though it is the place to check what is actually installed.
+
+*Built-in mod manager* — the game's own mod browser (main menu -> Mods) that searches the portal, installs, updates, and enables or disables mods and their dependencies; it is the only mod tool this guide uses, so no third-party organizer is needed.
+
+*Load order ("later wins")* — the rule that when two mods change the same thing, the one loaded later in the load order wins; Factorio sorts mods by their dependencies automatically and you adjust the rest in the mod manager, so disagreements between mods are settled before the game world loads.
