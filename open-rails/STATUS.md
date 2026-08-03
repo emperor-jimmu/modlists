@@ -37,3 +37,4 @@ Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas T
 - Wave 0 guide written (The Rookie): Demo Model 1 via Content system; config-as-QoL; no external content.
 - Wave 1 guide written (The Road Freight): BNSF Starter Route via Content system; bundled trainsets + activities.
 - Wave 2 guide written (The Yard): Craven Timber Railway via Content system; switching and industry ops.
+- Wave 3 guide written (The Limited): Great Zig Zag Railway via Content system; steam tutorials; solo capstone (no multiplayer).
