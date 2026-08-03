@@ -7,6 +7,9 @@
   },
 )
 
+// NOTE: This #callout is template-scope and dead code — included files cannot see
+// template scope, so each per-wave file (e.g. guide/wave-0/how-to-play.typ) redefines
+// it identically and carries the document. Keep the per-wave copies in sync to avoid drift.
 #let callout(title, body) = block(
   fill: rgb("#f7e8d8"), inset: 8pt, radius: 4pt,
   stroke: 0.5pt + rgb("#d97b3a"),

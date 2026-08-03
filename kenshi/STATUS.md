@@ -76,8 +76,8 @@ Mod sources: Steam Workshop (primary), Nexus Mods (secondary).
      Wanderer... game starts" — VERIFIED.
   2. Copper near The Hub: "Several copper and iron nodes within walking distance from the gates" — VERIFIED.
      Copper: avg price c.180, 4 kg, mined from outcrops with the Labouring skill.
-  3. Recruiting costs cats: generic "Sword for hire" recruits can be hired for c.3,000; prices typically range
-     ~3,000-9,000 depending on skill — VERIFIED.
+  3. Recruiting costs cats: generic "Sword for hire" recruits can be hired for c.3,000 at base, scaling up
+     with skill — VERIFIED; the ~3,000-9,000 upper range is community observation, not wiki-verified.
   4. Early stats: Strength (carry weight / heavy weapons / blunt & martial damage), Toughness (damage resistance /
      KO resistance), Dexterity (attack speed), Melee Attack (chance to attack / hit) — each confirmed on the wiki.
 - **Fact-check log #2 (expansion pass, kenshi.fandom.com, 2026-08-03):**

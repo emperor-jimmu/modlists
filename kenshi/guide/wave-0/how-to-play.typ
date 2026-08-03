@@ -90,7 +90,7 @@ Kenshi has no character levels and no XP for kills. Every stat grows only throug
 - *Dexterity* — governs how fast you attack with a weapon. It trains with cut-damage weapons, so cheap sabres and katanas are its natural teachers.
 - *Melee Attack* — your chance to win the attack turn against an opponent and to land hits past their *Melee Defense*. For a lone wanderer it is the stat that decides whether you kill the starving bandit or he kills you.
 
-#callout("Tip:", [Strength is the easiest stat to train safely: load up a backpack with copper or iron ore, wear it in your inventory rather than on your back, and walk. Carrying weight above 50% of your strength slows you down but trains Strength hard — just don't do it while enemies are chasing you.])
+#callout("Tip:", [Strength is the easiest stat to train safely: load up a backpack with copper or iron ore and walk. The more you carry, the slower you move — and the harder Strength trains — just don't do it while enemies are chasing you.])
 
 *Health.* Every body part has its own health pool, and damage is localised. A wound to the leg slows you; a wound to the arm weakens your grip. The three *vitals* — Head, Chest and Stomach — decide life and death: drop below 0 and you fall unconscious; drop below -100% of their maximum and you die outright. The blood bar sits above the body parts: little arrows over the blood mean you are bleeding out, and the more arrows, the faster. Bandages stop bleeding and mend cut damage; a bed or camp bed multiplies healing eight or four times over.
 
@@ -160,7 +160,7 @@ Every wound in Kenshi is a job to be done, and the two kinds of damage demand tw
 
 The *Field Medic* skill governs all of this: how fast you bandage and how many kit charges each bandaging uses. A better-skilled medic bandages faster and stretches a kit further, which is why a dedicated healer in the squad pays for themselves. First Aid Kits are everywhere — NPCs carry them, shops stock them, and bandit corpses drop them — so scavenging is a reliable way to keep the squad's medical chest full.
 
-#callout("Warning:", [A character uses the kit in their inventory before one in a backpack, and the lowest-charge kit first. When you loot a medkit off a corpse, put it in the healer's inventory — a medic who has to dig through a backpack mid-fight is a medic who is about to get interrupted.])
+#callout("Warning:", [A character uses the kit in their inventory before one in a backpack, and the lowest-quality kit first. When you loot a medkit off a corpse, put it in the healer's inventory — a medic who has to dig through a backpack mid-fight is a medic who is about to get interrupted.])
 
 === Making Your First Cats
 
@@ -206,11 +206,11 @@ Two pricing truths shape every trade you make:
 
 === Your First Recruit
 
-You do not have to survive alone. Bars across Kenshi are full of people looking for work, and *The Hub's bar is one of the best places to start* — it always hosts at least one hireling.
+You do not have to survive alone. Bars across Kenshi are full of people looking for work, and *The Hub's bar is one of the best places to start* — it frequently hosts hirelings.
 
 To recruit, approach a character marked "looking for work", *right-click* them and choose *Talk*, then pick the recruitment dialogue. If you have enough cats, they join your squad permanently — they are yours to command, equip, and train like any character you created.
 
-*The cost.* Hiring is not free. A generic "sword for hire" recruit costs roughly *3,000 cats* at base, and the better their skills, the more they demand — expect anywhere from 3,000 to 9,000 cats for a decent early recruit. Unique characters with names and backstories cost more still, and a few are free, but for your first companion a standard hireling is the dependable choice.
+*The cost.* Hiring is not free. A generic "sword for hire" recruit costs roughly *3,000 cats* at base, and more the better their skills are. Unique characters with names and backstories cost more still, and a few are free, but for your first companion a standard hireling is the dependable choice.
 
 #callout("Tip:", [A second pair of hands changes the game. Put one character on the copper node while the other stands watch, or send one to scavenge bandit corpses while the other guards. The Hub's bar is cheap to reach, the hirelings are weak but willing, and two weak wanderers beat one strong one every time.])
 
@@ -238,7 +238,7 @@ From here on, Kenshi is a loop, and mastering it is the whole game. Each cycle m
 4. *Level.* Every stat trains through use, and losing is not failing: getting knocked down and getting back up is how Toughness grows. Let the loop feed itself.
 5. *Repeat.* The first week you scrape by on copper and scraps; by the end of the first month you will be the reason the dust bandits avoid the road.
 
-#callout("Tip:", [The Hub has a ruined but standing building with two free beds you can use to heal — the wiki notes it "can help speed up the healing rate of your characters." Enter with caution, though: not everyone inside is friendly.])
+#callout("Tip:", [The Hub has a small shack with two free beds you can use to heal — the wiki notes it "can help speed up the healing rate of your characters." Enter with caution, though: not everyone inside is friendly.])
 
 #callout("Warning:", [Never leave the gates without food, bandages, and a plan. In Kenshi the difference between an adventure and an obituary is usually a backpack with one loaf of bread and one medical kit.])
 

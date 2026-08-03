@@ -4,7 +4,7 @@ Terms below are used in the Wave 0 chapter (The Wanderer). Later waves extend th
 
 *Cats* — the currency of Kenshi. Everything — food, recruits, weapons, bounties — is priced in cats, and the survival loop exists to make more of them.
 
-*The Hub* — the starting town of the Wanderer in the Border Zone. Copper and iron nodes sit within walking distance of its gates, and its bar always hosts at least one hireling.
+*The Hub* — the starting town of the Wanderer in the Border Zone. Copper and iron nodes sit within walking distance of its gates, and its bar frequently hosts hirelings.
 
 *Squad* — your group of controlled characters. You start with one; every recruit joins the squad and is commanded from the squad panel at the bottom of the screen.
 
