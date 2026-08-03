@@ -34,3 +34,4 @@ Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas T
 | --- | --- | --- | --- |
 
 ## Notes
+- Wave 0 guide written (The Rookie): Demo Model 1 via Content system; config-as-QoL; no external content.
