@@ -38,3 +38,6 @@ Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas T
 - Wave 1 guide written (The Road Freight): BNSF Starter Route via Content system; bundled trainsets + activities.
 - Wave 2 guide written (The Yard): Craven Timber Railway via Content system; switching and industry ops.
 - Wave 3 guide written (The Limited): Great Zig Zag Railway via Content system; steam tutorials; solo capstone (no multiplayer).
+- Verified URLs (all HTTP 200, 2026-08-03): https://static.openrails.org/files/DemoModel1.zip (Demo Model 1), https://ts-files.com/files/TS_STARTER_ROUTE.zip (BNSF Starter Route), http://www.craven.coalstonewcastle.com.au/ (Craven Timber Railway), http://www.zigzag.coalstonewcastle.com.au/ (Great Zig Zag Railway).
+- PDF verified: 20 pages, cover + TOC + install + 4 waves + glossary; page numbers N / 20; all 5 URLs HTTP 200 (2026-08-03); no multiplayer, no placeholder text.
+- output/ is gitignored; regenerate with build.bat.

@@ -1,35 +1,46 @@
 # Steel Genesis
 
-A curated Open Rails 1.6.1 modlist and game guide: four staged new-game setups ("waves") that escalate in route and operational complexity, bundled with a how-to-drive guide and glossary, styled from a selected logo and rendered to a single PDF by Typst.
+An Open Rails 1.6.1 modlist & game guide.
+
+A wave-based modlist and game guide for Open Rails 1.6.1 (released 14 January 2026), built around the built-in Content system. Four staged setups ("waves") take you from beginner driving through expert steam operations, bundled with a how-to-drive guide and glossary, styled from the project logo and rendered to a single PDF by Typst.
 
 ## Waves
 
-| Wave | Title | Content |
-| --- | --- | --- |
-| 0 | The Rookie | Demo Model 1 (BR-blue diesel express) |
-| 1 | The Road Freight | BNSF Starter Route |
-| 2 | The Yard | Craven Timber Railway |
-| 3 | The Limited | Great Zig Zag Railway |
+| Wave | Title | Focus | Content |
+| --- | --- | --- | --- |
+| 0 | The Rookie | Learn to drive; config-as-QoL | Demo Model 1 (BR-blue diesel express) |
+| 1 | The Road Freight | Main-line diesel freight, signals, consists | BNSF Starter Route |
+| 2 | The Yard | Switching & industry ops | Craven Timber Railway |
+| 3 | The Limited | Steam mastery, mountain ops | Great Zig Zag Railway |
 
 ## Installation
 
-Install mods via the built-in Content system (the Content form at Open Rails startup, or manual install into the Content folder).
+Install Open Rails 1.6.1, then use the built-in Content system (the Content form at Open Rails startup) to install each wave's route; community content can be installed manually into the Content folder. See the guide's Installation section for full steps.
 
-## Build
+## Build the PDF
 
-Run `build.bat` to generate the PDF.
+Run `build.bat` to generate the PDF at `output/steel-genesis.pdf` (requires Typst 0.15.1).
 
 ## Project Structure
 
 ```
 open-rails/
-├── guide/                 # wave-based source content
-├── output/                # generated PDF (steel-genesis.pdf)
-├── assets/                # static assets (logo.jpg)
-├── template.typ           # Typst master template
-├── build.bat              # one-click PDF generator
-├── STATUS.md              # audit, decisions, mod log
-├── conflicts-mods.md      # known mod conflicts (excluded from PDF)
-├── mod-ideas.md           # future mod ideas (excluded from PDF)
-└── docs/superpowers/      # specs and plans
+├── AGENTS.md
+├── README.md
+├── STATUS.md
+├── conflicts-mods.md
+├── mod-ideas.md
+├── template.typ
+├── build.bat
+├── assets/logo.jpg
+├── output/steel-genesis.pdf
+└── guide/
+    ├── installation.typ
+    ├── glossary.typ
+    └── wave-{0..3}/
 ```
+
+## Design & Plan
+
+- [Design spec](docs/superpowers/specs/2026-08-03-steel-genesis-design.md)
+- [Implementation plan](docs/superpowers/plans/2026-08-03-steel-genesis.md)
