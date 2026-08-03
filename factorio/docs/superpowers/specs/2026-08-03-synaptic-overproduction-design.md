@@ -28,11 +28,11 @@ Approach A — "Shared-Base Three-Phase". Three waves (0–2), each a distinct, 
 
 | Wave | Title            | Start & Premise                                                                                                                                    | Guide focus                                                                                                                             | Mod philosophy                                                          | Budget   |
 |------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------|
-| 0    | The Castaway     | Survey ship shot down over Nauvis. All that survives is you, a hand-miner, and the engineer's instinct to bootstrap a factory from raw ore before the biters notice you. | Full how-to-play: interface & controls, mining/smelting, steam power, belts & inserters, automating the first science packs, oil, early rail, biters & turret defense, launching the rocket. | Vanilla + UI/QoL only. Nothing that changes recipes, balance, or content. | 13–15 pp |
+| 0    | The Castaway     | Survey ship shot down over Nauvis. All that survives is you, a hand-miner, and the engineer's instinct to bootstrap a factory from raw ore before the biters notice you. | Full how-to-play: interface & controls, mining/smelting, steam power, belts & inserters, automating the first science packs, oil, early rail, biters & turret defense, launching the rocket. | Vanilla + UI/QoL only. Nothing that changes recipes, balance, or content. | 14–16 pp |
 | 1    | The Architect    | One rocket isn't an economy. A contractor drops you on a fresh site with a mandate: build a factory that *scales* — rail network, circuit logic, bot logistics, quality at volume. "Good enough" is a failure state. | Strategy & advanced systems: main bus vs spaghetti, rail blocks & train logic, circuit networks & combinators, logistics robots, modules & beacons, quality mechanics, rate mathematics, megabase block design. | Content + new mechanics that deepen systems. No pure power spikes.        | 10–12 pp |
 | 2    | The Krastorio Prodigy | A declassified cache decodes Krastorio's legacy schematics: a world rebuilt around new ores, new intermediates, and a tech tree that doesn't end at the rocket. Every vanilla system must be relearned. | K2 overhaul systems: new ores & intermediates, new tech tiers, immersive production, adapting each vanilla system to K2's chains, endgame K2 challenges. | Krastorio 2 + compatible QoL base. Keeps challenge honest.               | 10–12 pp |
 
-Non-wave pages: cover 1 + TOC 1 + installation 5–6 + glossary 3–4. **Total lands in 44–51 — inside the 40–60 budget. The guide is the primary deliverable; the modlist is embedded within it.**
+Non-wave pages: cover 1 + TOC 1 + installation 5–6 + glossary 3–4. **Total lands in 45–52 — inside the 40–60 budget. The guide is the primary deliverable; the modlist is embedded within it.**
 
 ## 3. Mod Categories per Wave
 
@@ -42,12 +42,11 @@ Non-wave pages: cover 1 + TOC 1 + installation 5–6 + glossary 3–4. **Total l
 - Visual/atmosphere: lighting, decorative, terrain/water tweaks, map overlays
 - Rule: nothing that alters recipes, balance, or adds content.
 
-**Wave 1 — Content + new mechanics (deepens systems, no power spikes):**
+**Wave 1 — Content + new mechanics (deepens the scaling systems, no power spikes):**
 - Logistics mechanics: trains, loaders, belts, warehouses/container expansion
 - Circuit/combinator systems: signal processing, blueprint helpers, circuit-linked logistics
 - Production depth: new intermediates or production chains gated behind real research + materials
-- Combat/defense: biters/defense content that raises challenge rather than handing it
-- Rule: anything that adds ore, machines, or recipes must be gated behind research + effort; nothing raises vanilla output caps for free.
+- Rule: anything that adds ore, machines, or recipes must be gated behind research + effort; nothing raises vanilla output caps for free. No combat/defense content — this wave serves the Architect's scaling arc. *(Design note 2026-08-03: the combat/defense category was removed as template residue — it served no Factorio wave arc.)*
 
 **Wave 2 — Krastorio 2 capstone:**
 - Krastorio 2 (the anchor overhaul) + its compatible support/QoL additions
@@ -83,7 +82,7 @@ factorio/
 ├── template.typ                  # master template (cover, TOC, palette, fonts)
 ├── guide/
 │   ├── installation.typ          # built-in mod manager setup + per-wave switching
-│   ├── glossary.typ              # ~30-40 player-facing + mod terms
+│   ├── glossary.typ              # ~40-50 player-facing + mod terms
 │   ├── wave-0/  how-to-play.typ · modlist.typ · mechanics.typ · graphics.typ
 │   ├── wave-1/  strategy.typ · modlist.typ · mechanics.typ · content.typ · graphics.typ
 │   └── wave-2/  strategy.typ · modlist.typ · mechanics.typ · content.typ · graphics.typ
@@ -109,7 +108,7 @@ Every mod card must contain, at minimum:
 ## 7. PDF Output
 
 - **Location:** `factorio/output/synaptic-overproduction.pdf` (per-project output/ folder; gitignored).
-- **Page target:** 40–60 pages, budgeted per wave in Section 2 (target 44–51).
+- **Page target:** 40–60 pages, budgeted per wave in Section 2 (target 45–52).
 - **Palette (Factorio industrial):** ink `#232323`, blueprint-paper `#f2ede0`, signal-orange `#e8590c`, hazard-yellow `#f0a202`, copper-green `#2b7a42`. High contrast, factory HUD feel.
 - **Fonts (pinned — same trio as the kenshi build rendered on this machine):** Cinzel (cover title), Bahnschrift (headings), Georgia (body). No availability hedging.
 - **Layout:** cover with logo + title + footer page numbers; top-level TOC; tinted mod-card blocks (orange stroke on paper fill); per-wave color coding; callout boxes for keybind tables, warnings, and tips.
@@ -123,6 +122,8 @@ Every mod card must contain, at minimum:
 3. **Compatibility heuristic:** a mod is assumed 2.0.77-compatible if its portal page lists a 2.0.x compatible version and it was updated after Factorio 2.0's release (Oct 21, 2024). Pre-2.0 mods with no update and no version field are flagged for review. Last-update dates and version fields are recorded on every card and in STATUS.md.
 4. **Built-in manager claims** are written from established Factorio behavior; per user directive no UI-flow verification is required and nothing in the installation chapter is flagged UNVERIFIED.
 5. **Conflict detection:** mods that edit the same recipes/entities are cross-checked before acceptance; incompatible pairs go to `conflicts-mods.md` with mitigation or one is dropped. Krastorio 2's recipe rebalance is the dominant conflict axis: Wave 1 content mods are not carried into Wave 2.
+6. **Vanilla-duplication test:** a mod is rejected as redundant if it duplicates a feature already in vanilla 2.0/Space Age (e.g., quality, elevated rails, loaders, train schedules, the wire tool) unless the mod meaningfully extends beyond the vanilla feature. Checked per mod before acceptance. *(Added 2026-08-03 — closes the redundant-mod acceptance gap.)*
+7. **K2 carry-in re-verification:** every Wave 0 QoL mod the guide claims carries into Wave 2 is re-checked against K2 compatibility (dependency entry, author statement, or pure-client/UI nature) with a per-mod CARRIED/DROPPED verdict in STATUS.md. *(Added 2026-08-03 — proves the shared-base promise instead of assuming it.)*
 
 ## 9. Risk Register (Open Items)
 
@@ -133,5 +134,5 @@ Every mod card must contain, at minimum:
 | Space Age-requiring mods misjudged as base-game compatible            | Cards break on base 2.0.77         | Record the portal's dependency field per mod; Space Age is owned, so such mods are eligible but the dependency is noted on the card. |
 | Mod verified-on-paper but fails in-game (can't run the game to test)  | Card claims break                  | Rely on portal version field + last-update + community reports; mark as "reported compatible" not "tested" where appropriate. |
 | Page budget drift (how-to-play ballooning)                            | PDF out of range                   | Budgets enforced per wave during writing; trim/expand before compile.                                                  |
-| Glossary becomes an afterthought                                     | Weak deliverable                   | Fixed target of 30–40 terms, written per wave as terms are introduced.                                                 |
+| Glossary becomes an afterthought                                     | Weak deliverable                   | Fixed target of 40–50 terms, written per wave as terms are introduced.                                                 |
 | Power-spike borderline mods                                          | Rule becomes mush                  | Written verdict required in STATUS.md per borderline mod (Section 1 test).                                             |

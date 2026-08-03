@@ -27,7 +27,7 @@
 | `factorio/build.bat` | One-click Typst compile wrapper |
 | `factorio/template.typ` | Master template: cover, TOC, palette, fonts, `callout()` helper, includes all guide files, `#label("end")` marker |
 | `factorio/guide/installation.typ` | Built-in mod manager setup + per-wave switching |
-| `factorio/guide/glossary.typ` | 30–40 player-facing + modding terms (harvested during wave tasks, assembled in Task 8) |
+| `factorio/guide/glossary.typ` | 40–50 player-facing + modding terms (harvested during wave tasks, assembled in Task 8) |
 | `factorio/guide/wave-0/{how-to-play,modlist,mechanics,graphics}.typ` | Wave 0 chapter (no strategy/content — vanilla only) |
 | `factorio/guide/wave-{1,2}/{strategy,modlist,mechanics,content,graphics}.typ` | Waves 1–2 chapters |
 | `factorio/output/synaptic-overproduction.pdf` | Generated PDF (gitignored) |
@@ -361,13 +361,13 @@ git commit -m "feat(factorio): add master template and smoke-compile the PDF"
 
 This task decides whether Wave 2's anchor overhaul is usable at all. Its findings feed Task 6 and the installation chapter's compatibility section (Task 7).
 
-- [ ] **Step 1: Fetch the Krastorio 2 portal page**
+- [ ] **Step 1: Resolve the canonical Krastorio 2 API slug — do NOT assume it**
 
-Fetch `https://mods.factorio.com/mod/Krastorio2` (webfetch; if the page is JS-walled or rate-limited, use Playwright to load and read it). Record: exact mod title, author, **last-update date**, the portal-listed compatible **Factorio version**, and dependencies (especially whether it depends on `space-age` or is base-2.0-only).
+Query the portal search API for the mod before fetching anything: `https://mods.factorio.com/api/mods?q=krastorio&version=2.0.77` (webfetch / ctx_fetch_and_index). From the JSON, confirm the exact `name` (API slug) and `title` of the Krastorio 2 entry. The slug is the one thing this task must not guess — a 404 on an assumed URL proves nothing. Record the resolved slug.
 
-- [ ] **Step 2: Cross-check with the portal API (authoritative)**
+- [ ] **Step 2: Fetch the portal page + API entry using the confirmed slug**
 
-Fetch `https://mods.factorio.com/api/mods/Krastorio2.json` (webfetch / ctx_fetch_and_index). Record from the JSON: `name`, `title`, `latest_release.game_version`, the releases' game-version history, `last_updated`, and the full `info_json.dependencies`. The API is the authoritative source for the `factorio_version` field and any `space-age` dependency entry.
+Fetch `https://mods.factorio.com/mod/<resolved-slug>` (webfetch; if the page is JS-walled or rate-limited, use Playwright to load and read it) and `https://mods.factorio.com/api/mods/<resolved-slug>.json`. Record from the page: exact mod title, author, **last-update date**. Record from the JSON: `name`, `title`, `latest_release.game_version`, the releases' game-version history, `last_updated`, and the full `info_json.dependencies`. The API is the authoritative source for the `factorio_version` field and any `space-age` dependency entry.
 
 - [ ] **Step 3: Assess 2.0.77 compatibility and log the verdict**
 
@@ -400,9 +400,9 @@ git commit -m "docs(factorio): record Krastorio 2 2.0.77 compatibility verdict"
 
 Searches on the portal (webfetch search / ctx_fetch_and_index / portal category pages): "Factorio quality of life mods 2.0", "Factorio UI improvement mod", "Factorio crafting queue QoL", "Factorio even distribution", "Factorio squeak through", "Factorio rate calculator", "Factorio bottleneck mod", "Factorio recipe book", "Factorio todo list", "Factorio visual/lighting mod". Browsing the portal's *Mods* list sorted by downloads under categories "Simple" / "Quality of Life" is the primary discovery path.
 
-Candidate quality bar (all must hold): (a) exists on the official Factorio Mod Portal for 2.0; (b) matches the UI/QoL/performance category; (c) passes the cut list and power-spike test; (d) portal lists a 2.0.x compatible game version with a post-Oct-2024 last-update (or an active 2.0 maintenance history).
+Candidate quality bar (all must hold): (a) exists on the official Factorio Mod Portal for 2.0; (b) matches the UI/QoL/performance category; (c) passes the cut list and power-spike test; (d) portal lists a 2.0.x compatible game version with a post-Oct-2024 last-update (or an active 2.0 maintenance history); (e) does **not** duplicate a feature already in vanilla 2.0/Space Age (e.g., quality, elevated rails, loaders, train schedules, the wire tool) — check the mod's description against the 2.0 feature set before accepting.
 
-**Time budget:** max ~15 minutes of searching. If you cannot shortlist 5 quality candidates after 2 rounds of alternate queries, proceed with quality over quantity and record the shortfall in STATUS.md Notes — never pad with junk.
+**Stop rule:** search quality over quantity. If you cannot shortlist 5 quality candidates after 2 rounds of alternate queries, proceed with quality over quantity and record the shortfall in STATUS.md Notes — never pad with junk. There is no clock; the stop rule is the honest lever.
 
 - [ ] **Step 2: Verify every shortlisted URL + log in STATUS.md (evidence bar)**
 
@@ -437,12 +437,12 @@ Define `mod-entry` locally and emit one card per accepted mod:
 
 - [ ] **Step 4: Write `graphics.typ`** — the visual/UI QoL cards (interface skins, status indicators, lighting/visual clarity). Heading + one card per mod, via `mod-entry`.
 - [ ] **Step 5: Write `mechanics.typ`** — the QoL/performance system mods (distribution QoL, calculator aids, queue/planning helpers), one card per mod via `mod-entry`, each card's Impact field explaining the system change.
-- [ ] **Step 6: Write `how-to-play.typ` Part 1 — fundamentals** (target ~6-7 pages). Use `#callout("Tip:", ...)` / `#callout("Warning:", ...)` for keybinds and pitfalls. Must cover:
+- [ ] **Step 6: Write `how-to-play.typ` Part 1 — fundamentals** (target ~7-8 pages). Use `#callout("Tip:", ...)` / `#callout("Warning:", ...)` for keybinds and pitfalls. Must cover:
   1. Controls & keybindings (movement, camera zoom/pan, build/copy/paste/pipette, deconstruct, blueprint, map, alt-mode) — present as a keybind table
   2. The interface tour (toolbar, crafting menu, minimap, production stats, logistic network view)
   3. Your first minutes: mining by hand, the starter burner loop (coal -> furnace -> steam power), hand-crafting vs assembling machines
   4. Automation basics: assembling machines, inserters, belts — turning a manual loop into a machine line
-- [ ] **Step 7: Write `how-to-play.typ` Part 2 — the bootstrap campaign** (target ~5-7 pages). Must cover:
+- [ ] **Step 7: Write `how-to-play.typ` Part 2 — the bootstrap campaign** (target ~6-8 pages). Must cover:
   5. Science packs & research (red/green first; the automation loop)
   6. Oil processing (when and why; cracking basics)
   7. Early rail (a train line that justifies itself)
@@ -451,7 +451,7 @@ Define `mod-entry` locally and emit one card per accepted mod:
   10. Common beginner mistakes (spaghetti paralysis, ratio blindness, hand-feeding, ignoring pollution)
 - [ ] **Step 8: Wave 0 audit + commit**
 
-1. **Page span:** run `typst query template.typ 'heading' --field page.number`; compute Wave 0's span (page of `=== Wave 0` to page of `=== Wave 1`). Expected: **13-15**. If under, expand; if over, trim.
+1. **Page span:** run `typst query template.typ 'heading' --field page.number`; compute Wave 0's span (page of `=== Wave 0` to page of `=== Wave 1`). Expected: **14-16** (how-to-play ~13-15 of it). If under, expand; if over, trim.
 2. **Placeholder grep:** `Select-String -Path guide\wave-0\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
 3. **URL audit:** every `https://` in `guide/wave-0/*.typ` has a VERIFIED row in STATUS.md (spot-check by comparing extracted URLs to the table).
 4. **Fact-check:** verify Wave 0's structural claims against official Factorio sources (wiki.factorio.com / the game's in-game tutorials): steam power ratios, science pack progression, pollution/evolution basics, rocket requirements. Fix any discrepancy in the text; log the check in STATUS.md Notes.
@@ -470,15 +470,15 @@ git commit -m "feat(factorio): write Wave 0 The Castaway chapter with verified U
 - Create: `factorio/guide/wave-1/{strategy,modlist,mechanics,content,graphics}.typ`
 - Modify: `factorio/STATUS.md`, `factorio/guide/glossary.typ` (harvest)
 
-**Rules in force for this wave:** content + new mechanics that deepen systems; no pure power spikes. Cut list + power-spike test apply. **Target 8-12 mods (guidance only — never pad).**
+**Rules in force for this wave:** content + new mechanics that deepen the *scaling* systems — logistics, circuits, production depth. No pure power spikes. Cut list + power-spike test apply. **Target 8-12 mods (guidance only — never pad).**
 
 - [ ] **Step 1: Research 8-12 logistics/production/circuit candidates**
 
-Searches on the portal: "Factorio train signals mod", "Factorio loader mod", "Factorio miniloader", "Factorio warehouse mod", "Factorio circuit network mod", "Factorio combinator mod", "Factorio logistics network mod", "Factorio belt mod", "Factorio production chain mod", "Factorio defense biter mod". Browse portal categories "Logistics" / "Transportation" / "Circuits" sorted by downloads.
+Searches on the portal: "Factorio train signals mod", "Factorio loader mod", "Factorio miniloader", "Factorio warehouse mod", "Factorio circuit network mod", "Factorio combinator mod", "Factorio logistics network mod", "Factorio belt mod", "Factorio production chain mod", "Factorio station naming mod". Browse portal categories "Logistics" / "Transportation" / "Circuits" sorted by downloads.
 
-Candidate quality bar: same as Task 4 Step 1 (a-d), plus: the benefit must be gated behind research/materials, not handed out; anything adding ore/machines/recipes must come with real research + effort cost.
+Candidate quality bar: same as Task 4 Step 1 (a-e), plus: the benefit must be gated behind research/materials, not handed out; anything adding ore/machines/recipes must come with real research + effort cost. Do NOT pull in combat/defense content — this wave is the Architect's scaling arc; defense content belongs to no wave in this guide (Wave 0 is vanilla, Wave 2 is K2's own rebalance).
 
-**Time budget:** max ~15 minutes of searching; if the floor can't be met after 2 rounds of alternate queries, ship quality-over-quantity and record the deviation in STATUS.md Notes.
+**Stop rule:** search quality over quantity. If you cannot shortlist 8 quality candidates after 2 rounds of alternate queries, ship quality-over-quantity and record the deviation in STATUS.md Notes. There is no clock; the stop rule is the honest lever.
 
 - [ ] **Step 2: Verify every URL + log in STATUS.md (evidence bar)**
 
@@ -524,19 +524,23 @@ git commit -m "feat(factorio): write Wave 1 The Architect chapter with verified 
 
 Searches on the portal: "Krastorio 2 compatible", "K2 addon", "Krastorio companion", "Krastorio2" (browse every mod tagged `Krastorio2` in its dependencies). The portal's dependency field is the filter: every Wave 2 candidate must list `Krastorio2` as a dependency OR be an explicitly K2-compatible QoL mod. Start from K2's own page's *Dependencies* / *Referenced by* lists.
 
-Candidate quality bar: same as Task 4 Step 1 (a-d), plus: (e) must declare `Krastorio2` dependency on the portal OR be a QoL mod verified compatible with K2's rebalanced recipes; (f) must not restore vanilla-only behavior that K2 intentionally changed (would conflict).
+Candidate quality bar: same as Task 4 Step 1 (a-e), plus: (f) must declare `Krastorio2` dependency on the portal OR be a QoL mod verified compatible with K2's rebalanced recipes; (g) must not restore vanilla-only behavior that K2 intentionally changed (would conflict).
 
-**Time budget:** max ~15 minutes of searching; if the floor can't be met after 2 rounds of alternate queries, ship quality-over-quantity (K2 + a handful of verified companions is an acceptable floor) and record the deviation in STATUS.md Notes.
+**Stop rule:** search quality over quantity. If you cannot shortlist 8 quality candidates after 2 rounds of alternate queries, ship quality-over-quantity (K2 + a handful of verified companions is an acceptable floor) and record the deviation in STATUS.md Notes. There is no clock; the stop rule is the honest lever.
 
-- [ ] **Step 2: Verify every URL + log in STATUS.md (evidence bar)**
+- [ ] **Step 2: Re-verify the carried Wave 0 QoL base against K2 (the plan's load-bearing promise)**
+
+The guide's architecture says Wave 0's QoL base carries into Wave 2. Prove it per mod: for **every Wave 0 mod that the guide claims carries into Wave 2**, re-fetch its API entry and check K2 compatibility — its `info_json.dependencies` lists `Krastorio2` as an optional/compatible dep, OR the mod page/author explicitly confirms K2 compatibility, OR it is a pure client/UI mod that cannot touch K2's recipes. Log a per-mod verdict (CARRIED / DROPPED) in STATUS.md with the evidence. **DROP any Wave 0 mod whose carry-in is not supported by evidence** — a broken base breaks Wave 2's whole chapter. Update the guide's claims to match.
+
+- [ ] **Step 3: Verify every URL + log in STATUS.md (evidence bar)**
 
 Same protocol and evidence bar as Task 4 Step 2: portal page + API per mod; exact title + last-update date + `game_version`; VERIFIED only on exact title match. Additionally record each mod's `info_json.dependencies` to prove the K2 link (or the QoL-compat rationale). Reject anything that restores vanilla behaviors K2 replaced, or hands out power (log reason).
 
-- [ ] **Step 3: Write `modlist.typ`** — intro explaining Wave 2's overhaul philosophy and the K2-compat rule, then one card per accepted mod via `mod-entry`.
-- [ ] **Step 4: Write `content.typ`** — the K2 content/compat mods, one card each (Krastorio 2 itself first).
-- [ ] **Step 5: Write `mechanics.typ`** — the K2 system/mechanic mods and their impact, one card each.
-- [ ] **Step 6: Write `graphics.typ`** — the visual mods for this wave (K2-adjacent visual/QoL additions), one card each.
-- [ ] **Step 7: Write `strategy.typ`** (target ~8-10 pages). Use `#callout(...)`. Must cover:
+- [ ] **Step 4: Write `modlist.typ`** — intro explaining Wave 2's overhaul philosophy and the K2-compat rule, then one card per accepted mod via `mod-entry`.
+- [ ] **Step 5: Write `content.typ`** — the K2 content/compat mods, one card each (Krastorio 2 itself first).
+- [ ] **Step 6: Write `mechanics.typ`** — the K2 system/mechanic mods and their impact, one card each.
+- [ ] **Step 7: Write `graphics.typ`** — the visual mods for this wave (K2-adjacent visual/QoL additions), one card each.
+- [ ] **Step 8: Write `strategy.typ`** (target ~8-10 pages). Use `#callout(...)`. Must cover:
   1. K2's new ores & mining (which new materials appear, and where)
   2. New intermediates & processing chains (what each new tier feeds)
   3. K2's research overhaul (new tech tiers, what unlocks when)
@@ -544,12 +548,12 @@ Same protocol and evidence bar as Task 4 Step 2: portal page + API per mod; exac
   5. K2 combat & biters (challenge curve, what got harder)
   6. K2's endgame (the deep science push, the "win" condition)
   7. The Prodigy's arc (RP capstone)
-- [ ] **Step 8: Audit + commit**
+- [ ] **Step 9: Audit + commit**
 
 1. **Page span:** `typst query template.typ 'heading' --field page.number`; Wave 2 span (`=== Wave 2` to `== Glossary`). Expected: **10-12**.
 2. **Placeholder grep:** `Select-String -Path guide\wave-2\*.typ -Pattern 'Content lands here|TBD|TODO'` -> zero matches.
 3. **URL audit:** every `https://` in `guide/wave-2/*.typ` has a VERIFIED row in STATUS.md.
-4. **Fact-check:** verify structural claims about K2's systems against the mod's own portal description/changelog and its official wiki (wiki.k2.team / krastorio wiki) — do NOT assert specific recipe numbers unless sourced. Fix discrepancies; log in STATUS.md Notes.
+4. **Fact-check:** verify structural claims about K2's systems against the mod's own portal description/changelog and the author's GitHub repository only (do NOT invent a wiki URL) — do NOT assert specific recipe numbers unless sourced. Fix discrepancies; log in STATUS.md Notes.
 5. **Glossary harvest:** append new terms (imersite, K2 tech tiers, new intermediates, K2 science packs).
 
 ```bash
@@ -597,12 +601,12 @@ Format per term:
 *Term* — one-sentence definition with game context.
 ```
 
-- [ ] **Step 2: Audit** — count terms with `Select-String -Path guide\glossary.typ -Pattern '^\*'`. Expected: **30-40**. If under 30, expand; if over 40, trim the least-used terms.
+- [ ] **Step 2: Audit** — count terms with `Select-String -Path guide\glossary.typ -Pattern '^\*'`. Expected: **40-50**. If under 40, expand; if over 50, trim the least-used terms.
 - [ ] **Step 3: Commit**
 
 ```bash
 git add factorio/
-git commit -m "docs(factorio): assemble 30-40 term glossary"
+git commit -m "docs(factorio): assemble 40-50 term glossary"
 ```
 
 ---
@@ -647,7 +651,7 @@ Expected: `SUCCESS: PDF generated at output/synaptic-overproduction.pdf`, zero w
 ```
 typst query template.typ '<end>' --field page.number
 ```
-Expected: **40-60** (target 44-51).
+Expected: **40-60** (target 45-52).
 
 - [ ] **Step 5: Definition-of-Done spot checks**
   - **Headings present:** `typst query template.typ 'heading' --field page.number` shows all 3 wave headings + installation + glossary, in order.
