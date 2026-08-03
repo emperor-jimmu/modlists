@@ -50,27 +50,40 @@
 
 // == Waves
 == Waves & New-Game Setups
-=== Wave 0: The Castaway
-#include "guide/wave-0/how-to-play.typ"
-#include "guide/wave-0/modlist.typ"
-#include "guide/wave-0/mechanics.typ"
-#include "guide/wave-0/graphics.typ"
+
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#e8590c"))
+  #show heading.where(level: 3): set text(fill: rgb("#e8590c"))
+  === Wave 0: The Castaway
+  #include "guide/wave-0/how-to-play.typ"
+  #include "guide/wave-0/modlist.typ"
+  #include "guide/wave-0/mechanics.typ"
+  #include "guide/wave-0/graphics.typ"
+]
 #pagebreak()
 
-=== Wave 1: The Architect
-#include "guide/wave-1/strategy.typ"
-#include "guide/wave-1/modlist.typ"
-#include "guide/wave-1/mechanics.typ"
-#include "guide/wave-1/content.typ"
-#include "guide/wave-1/graphics.typ"
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#b8860b"))
+  #show heading.where(level: 3): set text(fill: rgb("#b8860b"))
+  === Wave 1: The Architect
+  #include "guide/wave-1/strategy.typ"
+  #include "guide/wave-1/modlist.typ"
+  #include "guide/wave-1/mechanics.typ"
+  #include "guide/wave-1/content.typ"
+  #include "guide/wave-1/graphics.typ"
+]
 #pagebreak()
 
-=== Wave 2: The Krastorio Prodigy
-#include "guide/wave-2/strategy.typ"
-#include "guide/wave-2/modlist.typ"
-#include "guide/wave-2/mechanics.typ"
-#include "guide/wave-2/content.typ"
-#include "guide/wave-2/graphics.typ"
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#2b7a42"))
+  #show heading.where(level: 3): set text(fill: rgb("#2b7a42"))
+  === Wave 2: The Krastorio Prodigy
+  #include "guide/wave-2/strategy.typ"
+  #include "guide/wave-2/modlist.typ"
+  #include "guide/wave-2/mechanics.typ"
+  #include "guide/wave-2/content.typ"
+  #include "guide/wave-2/graphics.typ"
+]
 #pagebreak()
 
 // == Glossary

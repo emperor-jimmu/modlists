@@ -1,5 +1,3 @@
-== Glossary
-
 *Assembling machine* — a machine that crafts a chosen recipe automatically while inserters keep it fed; assembling machine 1 handles simple two-ingredient recipes, and higher tiers add speed, ingredients and module slots.
 
 *Inserter* — a moving arm that picks one item from behind it and places it in front, connecting belts, chests and machines into a working loop.
