@@ -5,3 +5,7 @@ They are intentionally NOT in the guide PDF.
 
 | Mod | Category | Why deferred |
 |---|---|---|
+| RE_Kenshi (Nexus mod 847, by BFrizzleFoShizzle1, last updated 19 Jun 2026) | Engine QoL/performance framework | Page states 1.0.68 installs are "partially downgraded to 1.0.65 for compatibility reasons". VERIFIED to exist but excluded because the guide targets strict 1.0.68. Revisit if the list-wide target becomes 1.0.65-compatible. Features: emergency crash saves, configurable game speed, compressed textures, freecam, plugin system. |
+| KenshiFP (Nexus mod 2063) | First-person camera / WASD controls | Native-code plugin that welds the camera to the character's head. Promising controls/QoL candidate but invasive (DLL + Plugins_x64.cfg edit); not verified (full page not fetched). Revisit for a controls-focused wave. |
+| Direct Control (RE_Kenshi plugin, Nexus mod 2017 / Steam id 3737240806) | WASD direct control | Requires RE_Kenshi, which is deferred (see above). |
+| More Names (Nexus mod 266) | QoL - more random NPC names | Reduces repeat-name redundancy. Plausible future QoL; not verified yet. |
