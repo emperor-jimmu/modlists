@@ -1,2 +1,5 @@
 == The Castaway: Modlist
-// Content lands here in Task 4.
+
+Wave 0 adds no content. Every mod in this chapter only makes the game easier to see, easier to operate, or easier to plan — nothing here changes a recipe, a balance number, or a research tree. Think of it as servicing the console before you touch the machinery. All eight mods are verified on the official Factorio Mod Portal against Factorio 2.0.77: each card records the mod's last-update date, its 2.0-line build, and its dependencies, and every one of them passes the power-spike test untouched.
+
+The eight mods are split across the next two sections by what they change. *Mechanics* covers the five system mods — Even Distribution, Squeak Through 2, Rate Calculator, Factory Planner and YARM — quality-of-life and planning tools that change how you interact with the factory, not how the factory behaves. *Graphics* covers the three visual and interface mods — Todo List, Alien Biomes and Bottleneck Lite — how the game looks and how it tells you what is happening. Not one of them touches output caps, throughput, efficiency or costs, so the whole wave passes the power-spike test without a single borderline verdict.
