@@ -155,3 +155,9 @@ mod manager (main menu -> Mods). Mod source: official Factorio Mod Portal (mods.
 **Installation page span:** **4 pages** (pages 4-7 in the compiled PDF; `=== Game Prep` on p4, `=== Per-Wave Switching` on p7, `== Waves & New-Game Setups` on p8; full PDF is **49 pages**). Covers the built-in mod manager end to end: game prep (2.0.77, May 21 2026; Space Age owned; shared 2.0 version line), enabling the manager (main menu -> Mods), fetching via per-card portal URLs, version compatibility, the Wave 2 K2/K2SO anchor, launch & verify, per-wave switching. At the low end of the ~5-6 page budget — the chapter is simpler than the kenshi reference by design (no third-party tool). Compiled cleanly with zero errors on Typst 0.15.1.
 
 **API shape note (Task 6):** the portal API's `releases[].info_json` exposes only `factorio_version` (and `feature_flags` where present) - it does NOT include a `dependencies` field as the plan's Step 3 shape suggested. All dependency evidence in this wave (including `Krastorio2` / `Krastorio2-spaced-out` / `space-age` / conflicting-dependency declarations) was therefore gathered from the portal's per-mod dependencies tab (`/mod/<slug>/dependencies?direction=out`). This is recorded here so later waves use the same method.
+
+
+**Close-out (2026-08-04):** Build COMPLETE. 49-page PDF compiled via Typst 0.15.1, zero errors/warnings.
+**28 mods accepted across 3 waves (W0=8, W1=11, W2=9), 16 rejected or deferred.**
+K2 verdict COMPATIBLE (2.0.19) + K2SO bridge (1.6.21), both 2.0-line; Space Age owned and ENABLED for Wave 2.
+47 glossary terms. Two structural conflicts documented in conflicts-mods.md with mitigations (K2+Space Age resolved via K2SO bridge; Wave 1 content excluded from Wave 2 by design). No mod was fabricated or accepted without portal+API verification; the audit trail above logs every verdict and evidence.
