@@ -21,6 +21,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | FS25            | Farming Simulator 25            | [`fs25/`](./fs25/)                                 | Active |
 | GTA IV          | Grand Theft Auto IV             | [`gtaiv/`](./gtaiv/)                               | Active |
 | GTA V           | Grand Theft Auto V              | [`gtav/`](./gtav/)                                 | Active |
+| Kenshi          | Kenshi                          | [`kenshi/`](./kenshi/)                             | Active |
 | KSP             | Kerbal Space Program            | [`kerbal-space-program/`](./kerbal-space-program/) | Active |
 | Mass Effect     | Mass Effect (Legendary Edition) | [`masseffect/`](./masseffect/)                     | Active |
 | M&B II          | Mount & Blade II: Bannerlord    | [`mb2-bannerlord/`](./mb2-bannerlord/)             | Active |
@@ -133,6 +134,9 @@ gtav/                   # Grand Theft Auto V modlist
 ├── AGENTS.md
 └── ...
 kerbal-space-program/   # Kerbal Space Program modlist
+├── AGENTS.md
+└── ...
+kenshi/                 # Kenshi modlist
 ├── AGENTS.md
 └── ...
 masseffect/             # Mass Effect Legendary Edition modlist

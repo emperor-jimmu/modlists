@@ -5,10 +5,10 @@
 [x] 2. F1 25
 [x] 3. AMS2
 [x] 4. Fallout 4
-[~] 5. Open Rails
-[ ] 6. Kenshi
-[ ] 7. Oxygen Not Included
-[ ] 8. X-Plane 12
+[x] 5. Open Rails
+[~] 6. Kenshi
+[ ] 7. Factorio
+[ ] 8. Oxygen Not Included
 [ ] 9. X-COM 2
 [ ] 10. Derail Valley ***
 [ ] 11. Stormworks: Build and Rescue***
@@ -19,7 +19,7 @@
 [ ] 16. Monster Hunter Rise
 [ ] 17. No Man's Sky
 [ ] 18. My Summer Car ***
-[ ] 19. Factorio
+[ ] 19. X-Plane 12
 [ ] 20. Civilization IV + my own mod -> 4K fonts
 [ ] 21. Civilization VI
 [ ] 22. OMSI 2***
