@@ -2,86 +2,95 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build the "Steel Genesis" Open Rails 1.6.1 modlist + game guide + glossary project (wave-based content manifest, install guide via the built-in Content system, and a colorful Typst 0.15 PDF) with every mod entry verified against a real URL.
+**Goal:** Build the "Steel Genesis" Open Rails 1.6.1 modlist + game guide + glossary project — 4 waves of verified, installable content driven through the built-in Content system — and produce a themed Typst 0.15 PDF (`output/steel-genesis.pdf`).
 
-**Architecture:** Markdown files for tracking (`STATUS.md`, `conflicts-mods.md`, `mod-ideas.md`) plus Typst source under `guide/` (one `wave-N/` folder per wave with `how-to-play|strategy`, `modlist`, `mechanics`, `content`, `graphics`), assembled by `template.typ` and compiled to `output/steel-genesis.pdf` by `build.bat`. No external content is authored into the repo — the user installs mods manually via the Content system; we curate the manifest + documentation only.
+**Architecture:** Phase 1 (research) is **already complete** — all content and URLs below were verified on 2026-08-03 against the live OR 1.6.1 content catalogue, Elvas Tower library, and direct download hosts (every URL passed an HTTP 200 HEAD check). Phase 2 assembles the documentation: Markdown tracking files (`STATUS.md`, `conflicts-mods.md`, `mod-ideas.md`) plus Typst source under `guide/`, assembled by `template.typ` and compiled by `build.bat`. No external content is authored into the repo — the user installs mods via the Content system; we curate the manifest + documentation.
 
-**Tech Stack:** Typst 0.15 (PDF), Windows batch (`build.bat`), web verification via `ctx_fetch_and_index` / websearch / Playwright.
+**Tech Stack:** Typst 0.15.1 (PDF), Windows batch (`build.bat`), URL verification via sandbox `fetch` HEAD (200 = valid).
 
-**Non-negotiables:** NO multiplayer anywhere. No fabricated mod names/URLs/versions. Every mod entry must pass a URL-resolution gate before inclusion. Mods must load/run in Open Rails 1.6.1.
+**Non-negotiables:** NO multiplayer anywhere. No fabricated mod names/URLs/versions. Every mod entry carries a URL that passed an HTTP 200 check. Mods must load/run in Open Rails 1.6.1.
 
 ---
 
-### Task 1: Audit gates (implementation step 0)
+## Phase 1 — Research (COMPLETE)
+
+### Verified content — the Steel Genesis wave map
+
+All four routes come from the **official OR 1.6.1 content catalogue** (the mandated built-in Content system). All are Free, self-contained, and installed via the in-app Content form. All URLs verified HTTP 200 on 2026-08-03.
+
+| Wave | Content | URL (verified 200) | Size | Creator | Notes |
+|------|---------|--------------------|------|---------|-------|
+| 0 | Demo Model 1 | `https://static.openrails.org/files/DemoModel1.zip` | 272 MB dl / 330 MB install | Making Tracks Ltd | BR 'blue' era diesel express, Edinburgh Waverley → Linlithgow, ~20 min. The official tutorial route (see getting-started guide). |
+| 1 | BNSF Starter Route | `https://ts-files.com/files/TS_STARTER_ROUTE.zip` | 598 MB dl / 894 MB install | TrainSimulations.net | BNSF Scenic Subdivision (Pacific NW). **Ships with trainsets + activities** — no separate train set needed. |
+| 2 | Craven Timber Railway | `http://www.craven.coalstonewcastle.com.au/` | free (small) | Peter Newell | 5.8-mile NSW timber tramway to a sawmill; two saddle-tank steam locos (PWD32, 529X). Switching/industry operations. |
+| 3 | Great Zig Zag Railway | `http://www.zigzag.coalstonewcastle.com.au/` | 210 MB dl | Peter Newell | Blue Mountains NSW engineering marvel. **7 progressive tutorial activities teaching steam handling.** Mountain grades + reversing moves. |
+
+Additional verified references:
+- OR 1.6.1 installer: `https://github.com/openrails/openrails/releases/download/1.6.1/Open.Rails.1.6.1.Setup.exe` (200 ✓)
+- Content catalogue page: `https://openrails.org/download/content/`
+- Getting Started (v1.6+): `https://openrails.org/discover/get-started/` — source of truth for the Wave 0 tutorial key bindings (Esc start, `1` cab, `2` external, `v` wipers, `F4` Track Monitor, `F5` Train Driving Info, `Alt+Enter` fullscreen, `Alt+F4` exit).
+
+### Audit findings (record into `STATUS.md` in Task 1)
+
+1. **OR catalogue:** 14 routes live, incl. all 4 used. Catalogue is limited to self-contained routes (per site note). Free/Donation/Commercial filters.
+2. **Elvas Tower Open Rails Download Library is thin:** Routes for OR subforum = 6 topics; Goose Island = 0 topics (empty); Rio Grande Southern = 1 "testing" thread; Conrail & FG&S = CRKB_FJG route (5 parts, Oct 2023). **Contingency exercised:** wave content sourced from the official catalogue instead; Elvas candidates logged to `mod-ideas.md`.
+3. **Logo:** `assets/logo.jpg` is a valid JPEG (header `FF D8 FF E1`, 460 KB). Visual confirmation still required during PDF verification (Task 9).
+4. **Environment:** Typst 0.15.1 on PATH. Fonts verified available: **Cinzel** (cover), **Bahnschrift** (headings), **Georgia** (body), "New Computer Modern" also present.
+
+### Sourcing & verification policy (applies to every entry)
+
+- **Single verification method:** sandbox `fetch(..., { method: "HEAD", redirect: "follow" })`; `200` = valid. A `403`/login-wall on a forum attachment is NOT a valid link — use the direct download URL instead. Only URLs that pass 200 may appear in a mod card.
+- **Named fallback sources** if any wave content needs replacement: (a) other catalogue routes (Burrinjuck, Tweed, Manning River — all Peter Newell freeware), (b) TrainSimulations.net freeware, (c) TrainSim.com. Scan depth = the catalogue list + one layer of subforums. Stop condition = one route per wave; every entry must pass the 200 gate before inclusion.
+- Version field uses the release/file date when the content has no version number (all catalogue content is versioned by publication date).
+
+---
+
+## Phase 2 — Assembly Tasks
+
+### Task 1: Audit close-out (record Phase 1 findings)
 
 **Files:**
-- Create: `open-rails/STATUS.md` (audit findings section)
-- Modify: none
+- Create: `open-rails/STATUS.md`
 
-**Goal:** Confirm what content actually exists before writing any wave, so the guide is grounded in real, installable content. Record all findings in `STATUS.md` under a `## Audit (2026-08-03)` section.
+- [ ] **Step 1: Create `STATUS.md`**
 
-- [ ] **Step 1: Audit the official OR 1.6.1 content catalogue**
+```markdown
+# Steel Genesis — STATUS
 
-Run in the sandbox (one call, all four fetches):
+Target: Open Rails 1.6.1 (released 14 Jan 2026). Mod organizer: built-in Content system.
+Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas Tower Download Library (audited — thin), other reputable freeware (fallback).
 
-```javascript
-// ctx_execute(language: "javascript")
-const urls = [
-  "https://openrails.org/download/content/",
-  "https://openrails.org/discover/get-started/",
-  "https://openrails.org/download/program/",
-  "https://openrails.org/discover/version-1-6/"
-];
-const out = [];
-for (const u of urls) {
-  try {
-    const r = await fetch(u, { method: "HEAD", redirect: "follow" });
-    out.push(`${r.status} ${u}`);
-  } catch (e) { out.push(`ERR ${u} ${e.message}`); }
-}
-console.log(out.join("\n"));
+## Audit (2026-08-03)
+- OR catalogue: 14 routes live; all 4 wave routes confirmed Free + self-contained + installed via Content form.
+- Elvas Tower OR Download Library: Routes for OR = 6 topics; Goose Island = 0; RGS = 1 (testing); Conrail & FG&S = CRKB_FJG (5 parts). Contingency exercised — wave content from catalogue.
+- Logo: assets/logo.jpg valid JPEG (FF D8 FF E1, 460 KB). Visual check pending in Task 9.
+- Environment: Typst 0.15.1; fonts Cinzel / Bahnschrift / Georgia available.
+
+## Decisions
+- Wave 0 = config-as-QoL; no external content beyond Demo Model 1.
+- Wave 3 = steam mastery on Great Zig Zag; NO multiplayer.
+- Compatibility = loads/runs in 1.6.1; release date is not a gate.
+- URL policy: only HTTP-200-verified URLs go in mod cards; forum/login walls are not valid links.
+
+## Accepted Mods
+| Wave | Mod | URL (verified) | Version/Date | Dependencies | Notes |
+
+## Rejected Mods
+| Mod | Reason |
+
+## Conflicts
+| Mod A | Mod B | Issue | Mitigation |
+
+## Notes
 ```
 
-Expected: four `200` lines. This confirms the catalogue/download pages are live. Then fetch and index the catalogue page and extract the **actual list of routes / train cars / train sets** it exposes (it is a JS-driven page — if the list is empty in the markdown conversion, load it in Playwright and record the visible items).
+- [ ] **Step 2: Populate Accepted Mods** with the 4 rows from the Phase 1 table (Wave, Mod, URL, "Catalogue freeware — 2026", "None — self-contained", "Install via Content form").
 
-Acceptance: `STATUS.md` Audit section lists every catalogue item found (name + type), with a note of which are Free vs Donation vs Commercial, and confirms Demo Model 1 is present.
-
-- [ ] **Step 2: Audit the Elvas Tower Open Rails Download Library**
-
-Index the library forum and its route subforums:
-
-```
-- https://www.elvastower.com/forums/index.php?/forum/307-open-rails-download-library/
-- https://www.elvastower.com/forums/index.php?/forum/395-routes-for-open-rails/
-- https://www.elvastower.com/forums/index.php?/forum/393-rio-grande-southern/
-- https://www.elvastower.com/forums/index.php?/forum/396-goose-island/
-- https://www.elvastower.com/forums/index.php?/forum/408-conrail-fgs/
-```
-
-Record in `STATUS.md` Audit section: each subforum's topics and last-post dates. Flag which routes look installable-in-1.6.1 (any thread whose title mentions "for Open Rails" or a 2020+ release).
-
-Acceptance: Audit section lists candidate routes with their thread URLs; at least 2 real candidates identified for Wave 1 and 2.
-
-- [ ] **Step 3: Inspect the logo**
-
-Run: `Get-Item open-rails\assets\logo.jpg | Select-Object Length, @{n='MB';e={[math]::Round($_.Length/1MB,2)}}`
-
-Also open it (read the file as an image) and confirm it is a real, usable logo (not blank/grey). Record dimensions and verdict in `STATUS.md`.
-
-Acceptance: `STATUS.md` states logo verdict: usable or typographic fallback (dimensions/size noted).
-
-- [ ] **Step 4: Verify Typst 0.15 and fonts**
-
-Run: `typst --version` — expect `typst 0.15.1` or `0.15.x`.
-Run: `typst fonts | Select-String -Pattern "New Computer Modern"` — confirm the body font exists.
-
-Acceptance: both commands succeed; if "New Computer Modern" is missing, pick and record a fallback font (e.g., "Liberation Serif") in `STATUS.md` and use it in the template.
-
-- [ ] **Step 5: Commit**
+- [ ] **Step 3: Commit**
 
 ```bash
 git add open-rails/STATUS.md
-git commit -m "chore(open-rails): record Steel Genesis audit findings"
+git commit -m "chore(open-rails): record Steel Genesis audit + verified wave content"
 ```
 
 ---
@@ -90,15 +99,13 @@ git commit -m "chore(open-rails): record Steel Genesis audit findings"
 
 **Files:**
 - Create: `open-rails/AGENTS.md`
-- Create: `open-rails/README.md` (skeleton, filled fully in Task 9)
-- Create: `open-rails/STATUS.md` (tracking headers; audit section already added in Task 1)
+- Create: `open-rails/README.md` (skeleton, polished in Task 10)
 - Create: `open-rails/conflicts-mods.md`
-- Create: `open-rails/mod-ideas.md`
+- Create: `open-rails/mod-ideas.md` (seed with Elvas Tower candidates: CRKB Conrail & FG&S, RGS, Goose Island — audited but unused)
 - Create: `open-rails/build.bat`
-- Create: `open-rails/template.typ` (skeleton with cover, footer, TOC, section placeholders wired to real includes)
-- Create: `open-rails/guide/installation.typ`, `open-rails/guide/glossary.typ`, and all 20 wave files as empty-but-commented stubs so `template.typ` compiles from Task 2 onward
+- Create: `open-rails/template.typ` (skeleton, section includes wired to stubs)
 
-**Note on compilation order:** `template.typ` must compile at every task. Create all `guide/wave-N/*.typ` files as minimal valid stubs in this task (a `== Wave N` heading), then fill them in Tasks 3–7. `installation.typ` and `glossary.typ` get minimal stubs here too, filled in Task 7.
+**Compilation order rule:** `template.typ` must compile after every task. All `guide/wave-{0..3}/*.typ`, `guide/installation.typ`, `guide/glossary.typ` are created as valid stubs in Task 3 (after the probe) so the skeleton compiles from Task 3 onward.
 
 - [ ] **Step 1: Create `build.bat`**
 
@@ -134,26 +141,26 @@ if %ERRORLEVEL% equ 0 (
 
 - [ ] **Step 2: Create `template.typ` skeleton**
 
-The full steel-blue template. This is the complete file (reused verbatim in later tasks; only the include targets' contents change):
+Theme fonts (all verified available): body `Georgia`, headings `Bahnschrift`, cover title `Cinzel`. Steel-blue railroad palette. Footer page numbers at bottom.
 
 ```typst
 #set page(
   margin: (x: 2cm, y: 2.5cm),
   footer: context {
     align(center)[
-      #counter(page).display(numbering: "1 / 1")
+      #counter(page).display("1 / 1")
     ]
   },
 )
 
-#set text(font: "New Computer Modern", size: 11pt)
+#set text(font: "Georgia", size: 11pt)
 #set par(justify: true, leading: 0.65em, spacing: 0.6em)
 #set heading(numbering: none)
 #show heading: set block(above: 1.4em, below: 0.5em)
 
-#show heading.where(level: 1): set text(fill: rgb("#3b6ea5"), weight: "bold", size: 22pt)
-#show heading.where(level: 2): set text(fill: rgb("#2c3e50"), weight: "bold", size: 16pt)
-#show heading.where(level: 3): set text(fill: rgb("#34495e"), weight: "bold", size: 13pt)
+#show heading.where(level: 1): set text(fill: rgb("#3b6ea5"), weight: "bold", size: 22pt, font: "Bahnschrift")
+#show heading.where(level: 2): set text(fill: rgb("#2c3e50"), weight: "bold", size: 16pt, font: "Bahnschrift")
+#show heading.where(level: 3): set text(fill: rgb("#34495e"), weight: "bold", size: 13pt, font: "Bahnschrift")
 #show heading.where(level: 1): it => { it; line(length: 100%, stroke: 0.5pt + rgb("#3b6ea5")) }
 #show link: set text(fill: rgb("#3b6ea5"))
 
@@ -162,7 +169,7 @@ The full steel-blue template. This is the complete file (reused verbatim in late
 #align(center)[#image("assets/logo.jpg", width: 45%)]
 #v(3.5cm)
 #align(center)[
-  #text(size: 36pt, weight: "bold", fill: rgb("#3b6ea5"), "Steel Genesis")
+  #text(size: 36pt, weight: "bold", fill: rgb("#3b6ea5"), font: "Cinzel", "Steel Genesis")
   #v(0.8em)
   #text(size: 16pt, fill: rgb("#2c3e50"), "Open Rails 1.6.1")
   #v(0.2em)
@@ -222,44 +229,22 @@ The full steel-blue template. This is the complete file (reused verbatim in late
 #include "guide/glossary.typ"
 ```
 
-- [ ] **Step 3: Create stub includes**
+- [ ] **Step 3: Create tracking files** (`conflicts-mods.md`, `mod-ideas.md`, `AGENTS.md`)
 
-Create each of these files with exactly this shape (so the skeleton compiles):
-
-```typst
-// open-rails/guide/wave-0/modlist.typ — filled in Task 3
-== Wave 0 Modlist
-```
-(Repeat for every `guide/wave-{0..3}/{how-to-play|strategy,modlist,mechanics,content,graphics}.typ`, plus `guide/installation.typ` and `guide/glossary.typ`.)
-
-- [ ] **Step 4: Create tracking files**
-
-`STATUS.md` header:
+`mod-ideas.md` seed:
 
 ```markdown
-# Steel Genesis — STATUS
+# Future Mod Ideas (excluded from PDF)
 
-Target: Open Rails 1.6.1 (released 14 Jan 2026). Mod organizer: built-in Content system.
-Mod sources: Elvas Tower Download Library (primary), OR content catalogue, reputable freeware.
-
-## Audit (2026-08-03)
-(recorded in Task 1)
-
-## Decisions
-- Wave 0 = config-as-QoL; no external content.
-- Wave 3 = steam-era named passenger; NO multiplayer.
-- Compatibility = loads/runs in 1.6.1 (release date is not a gate).
-
-## Accepted Mods
-| Wave | Mod | Source URL | Version/Date | Dependencies | Notes |
-
-## Rejected Mods
-| Mod | Reason |
-
-## Conflicts
-| Mod A | Mod B | Issue | Mitigation |
-
-## Notes
+## Elvas Tower Download Library (audited 2026-08-03, thin)
+- CRKB Conrail & FG&S route (Weter, 5 parts, Oct 2023) — https://www.elvastower.com/forums/index.php?/topic/37477-or-route-crkb-fjg-route-part-5-of-5/
+- Rio Grande Southern route (1 thread, 2019)
+- Goose Island route (0 topics)
+## OR catalogue — other free routes (verified 200)
+- Burrinjuck Railway — http://www.burrinjuck.coalstonewcastle.com.au/
+- Tweed Railway — http://www.tweed.coalstonewcastle.com.au/
+- Manning River Breakwall — http://www.manning-river.coalstonewcastle.com.au/
+- MidEast Coast / New Forest / Chiltern / Portugal 79 (GitHub, large WIP routes)
 ```
 
 `conflicts-mods.md`:
@@ -268,46 +253,94 @@ Mod sources: Elvas Tower Download Library (primary), OR content catalogue, reput
 # Conflicting Mods (excluded from PDF)
 | Mod A | Mod B | Issue |
 ```
-`mod-ideas.md`:
+(Empty until a real conflict is identified. Definitions: file-overwrite collisions, duplicate exclusive assets, incompatible dependency requirements.)
 
-```markdown
-# Future Mod Ideas (excluded from PDF)
-- (none yet — populated as unverified candidates arise)
-```
+`AGENTS.md`: project instructions mirroring the sibling structure, adapted — Content system (not RPFM), `build.bat` → `output/steel-genesis.pdf`, no-multiplayer rule, URL-200 verification policy, fonts theme, wave map.
 
-- [ ] **Step 5: Create `AGENTS.md`** (project-specific instructions; mirror the sibling's structure, adapted: Content system instead of RPFM, `build.bat` → `output/steel-genesis.pdf`, no-multiplayer rule, verification discipline)
+- [ ] **Step 4: Create `README.md` skeleton** (title, waves table from Phase 1, install + build notes, structure tree — final polish in Task 10)
 
-- [ ] **Step 6: Create `README.md` skeleton** (title, overview, waves table, install note, project structure tree, PDF generation — final polish in Task 9)
-
-- [ ] **Step 7: Compile to verify the skeleton builds**
-
-Run: `build.bat`
-Expected: SUCCESS, `output/steel-genesis.pdf` created with cover + TOC + section headings, page numbers at bottom.
-
-- [ ] **Step 8: Commit**
+- [ ] **Step 5: Commit**
 
 ```bash
 git add open-rails/
-git commit -m "feat(open-rails): scaffold Steel Genesis project with buildable Typst skeleton"
+git commit -m "feat(open-rails): scaffold Steel Genesis tracking files and build script"
 ```
 
 ---
 
-### Task 3: Wave 0 — The Rookie (how-to-play + config-as-QoL)
+### Task 3: Typst probe (validate template syntax BEFORE wiring 20 files)
 
 **Files:**
-- Create: `open-rails/guide/wave-0/how-to-play.typ` (full beginner guide)
-- Create: `open-rails/guide/wave-0/modlist.typ` (Demo Model 1 entry)
-- Create: `open-rails/guide/wave-0/mechanics.typ`
-- Create: `open-rails/guide/wave-0/content.typ`
-- Create: `open-rails/guide/wave-0/graphics.typ`
-- Modify: `open-rails/STATUS.md` (Wave 0 accepted mods)
+- Create: `open-rails/_probe.typ` (temporary; deleted at the end of this task)
+- Create: stub `guide/wave-{0..3}/*.typ`, `guide/installation.typ`, `guide/glossary.typ`
 
-**Goal:** A complete, accurate "first day" guide for a complete beginner: install OR 1.6.1, use the built-in Content system to install Demo Model 1, then learn to drive.
+**Goal:** Prove the exact Typst constructs the template relies on (footer page counter, `#show heading.where(level: 1): it => { it; line(...) }`, `#outline`, `#image`) compile on Typst 0.15.1 — in isolation, before any real content exists. This is the fix for "untested syntax baked into Task 2."
 
-- [ ] **Step 1: Define the shared `mod-entry()` function**
+- [ ] **Step 1: Write `_probe.typ`** containing ONLY the risky constructs:
 
-Add this function to the top of **every** `wave-N/modlist.typ` (self-contained; do not rely on includes):
+```typst
+#set page(
+  margin: (x: 2cm, y: 2.5cm),
+  footer: context { align(center)[ #counter(page).display("1 / 1") ] },
+)
+#set text(font: "Georgia", size: 11pt)
+#show heading.where(level: 1): set text(fill: rgb("#3b6ea5"), weight: "bold", size: 22pt, font: "Bahnschrift")
+#show heading.where(level: 1): it => { it; line(length: 100%, stroke: 0.5pt + rgb("#3b6ea5")) }
+#show link: set text(fill: rgb("#3b6ea5"))
+
+== Probe
+#link("https://openrails.org/")[link check]
+#outline(depth: 2)
+#image("assets/logo.jpg", width: 20%)
+```
+
+- [ ] **Step 2: Compile the probe**
+
+Run: `typst compile _probe.typ _probe.pdf`
+Expected: exit 0, `_probe.pdf` created, no warnings about fonts/constructs. **If it fails, fix the constructs in `_probe.typ` FIRST** (try `counter(page).display(numbering: "1 / 1")`, or a simpler `context { counter(page).display() }` footer), then port the corrected syntax into `template.typ` before continuing.
+
+- [ ] **Step 3: Verify the page-number footer rendered**
+
+Run: `typst compile _probe.typ _probe-{p}.png --format png --pages 1`
+Then confirm the render step exits 0 (renders without error). The exact "1 / 1" text is confirmed by the final text-extraction check in Task 9.
+
+- [ ] **Step 4: Create all stub includes**
+
+Each of `guide/wave-{0..3}/{how-to-play|strategy,modlist,mechanics,content,graphics}.typ`, `guide/installation.typ`, `guide/glossary.typ` gets exactly:
+
+```typst
+// <path> — filled in Task N
+== Wave 0
+```
+(Adjust heading per file. Purpose: `template.typ` compiles from this task onward.)
+
+- [ ] **Step 5: Compile the full skeleton**
+
+Run: `build.bat`
+Expected: SUCCESS; `output/steel-genesis.pdf` exists (cover + TOC + stub sections + footer).
+
+- [ ] **Step 6: Delete `_probe.typ` / `_probe.pdf` / `_probe-1.png`**
+
+Run: `Remove-Item open-rails\_probe.typ, open-rails\_probe.pdf, open-rails\_probe-1.png`
+
+- [ ] **Step 7: Commit**
+
+```bash
+git add open-rails/
+git commit -m "feat(open-rails): validate Typst template syntax via probe; wire stub sections"
+```
+
+---
+
+### Task 4: Wave 0 — The Rookie (how-to-play + config-as-QoL)
+
+**Files:**
+- Create: `open-rails/guide/wave-0/{how-to-play,modlist,mechanics,content,graphics}.typ`
+- Modify: `open-rails/STATUS.md`
+
+**Goal:** Complete first-day guide grounded in the official getting-started steps (indexed source: openrails.org/discover/get-started). Single source of truth note: install steps live in `guide/installation.typ` (Task 8); `how-to-play.typ` REFERENCES that section instead of re-writing the install procedure — it covers driving, not installing.
+
+- [ ] **Step 1: Add the shared `mod-entry()` function** to the top of `wave-0/modlist.typ` (and identically to every later `modlist.typ`; self-contained):
 
 ```typst
 #let mod-entry(name, url, version: none, deps: none, impact: none, notes: none) = {
@@ -321,24 +354,7 @@ Add this function to the top of **every** `wave-N/modlist.typ` (self-contained; 
 }
 ```
 
-- [ ] **Step 2: Verify Demo Model 1 details**
-
-From the indexed getting-started page (already fetched): confirm the Content-form install flow and the ~600 MB / diesel-locomotive facts. Record the official GitHub release URL for the 1.6.1 installer: `https://github.com/openrails/openrails/releases/download/1.6.1/Open.Rails.1.6.1.Setup.exe`. Verify it resolves (HTTP 200 via fetch HEAD) and record in `STATUS.md`.
-
-- [ ] **Step 3: Write `how-to-play.typ`**
-
-Content must cover, grounded in the official getting-started steps (see indexed `or-get-started` content):
-- Roleplay backstory: fresh hire at a fictional shortline, first day — moving a diesel freight on a training route.
-- Installing Open Rails 1.6.1 (Setup.exe) + first launch.
-- The Content form: select "Demo Model 1", set Install Path, Install (≈600 MB).
-- Start a session: Pause menu → Esc to begin.
-- Controls primer: keys `1` (cab), `2` (external), `v` (wipers), `Esc`, `Alt+Enter` (fullscreen/windowed), `Alt+F4` (exit), `F4` (Track Monitor), `F5` (Train Driving Info).
-- Driving a diesel: throttle/brake basics, speed limits, why you don't just slam the throttle.
-- HUD/QoL configuration walkthrough (the "config as QoL" wave philosophy): graphics settings, HUD windows, camera toggles, controls remap.
-
-Acceptance: every stated key/fact traceable to the official getting-started content; no invented UI features.
-
-- [ ] **Step 4: Write `modlist.typ`**
+- [ ] **Step 2: Write `modlist.typ`**
 
 ```typst
 == Wave 0 — Modlist: Vanilla + Config-as-QoL
@@ -347,247 +363,301 @@ This wave uses only the built-in Content system and Open Rails' own settings. No
 == Routes
 #mod-entry(
   "Demo Model 1",
-  "https://openrails.org/download/content/",
-  "Built-in catalogue (v1.6.1)",
-  "None — self-contained",
-  "Learning route included with the Content system. ~600 MB diesel-freight route used for the Wave 0 tutorial.",
-  "Install via the Content form at first launch. Set the Install Path before clicking Install.",
+  "https://static.openrails.org/files/DemoModel1.zip",
+  version: "Catalogue freeware — 2026",
+  deps: "None — self-contained",
+  impact: "Learning route for the Wave 0 tutorial. BR 'blue'-era diesel express from Edinburgh Waverley to Linlithgow (~20 minutes). Teaches cab controls, track monitor, speed limits and brake handling on a short, forgiving run.",
+  notes: "Install via the Content form at first launch (see Installation Guide). Set the Install Path before clicking Install. ~272 MB download / ~330 MB installed.",
 )
 ```
 
-- [ ] **Step 5: Write `mechanics.typ`, `content.typ`, `graphics.typ`**
+**URL semantics (defined):** mod-card `url` = the direct download URL the Content system installs from (verified HTTP 200 in Phase 1). The in-app catalogue entry is referenced in `notes`. Catalogue-page links are used only as prose references, never as card URLs.
 
-- `mechanics.typ`: beginner railroading concepts introduced in Wave 0 (throttle/brake, couplers, track monitor, speed limits) — no content mods.
-- `content.typ`: explains the Content system content types (Routes / Train cars / Train sets) and the Free/Donation/Commercial filters.
-- `graphics.typ`: built-in graphics options (renderer, superelevation, windowed/fullscreen) — no external graphics mods in Wave 0.
+- [ ] **Step 3: Write `how-to-play.typ`**
 
-- [ ] **Step 6: Update `STATUS.md`** — add Demo Model 1 to Accepted Mods (Wave 0).
+Structure (facts traceable to the indexed getting-started content):
+1. Roleplay backstory: fresh hire at a fictional shortline, first morning — a diesel express service.
+2. Install + first launch (one paragraph, then reference the Installation Guide section — do NOT duplicate the full steps).
+3. The Content form: select Demo Model 1, Install Path, Install (≈272 MB). (reference Installation Guide).
+4. Start a session: Pause menu → Esc to begin.
+5. Controls primer — use ONLY these sourced bindings: `Esc` start, `1` driver's seat, `2` external view (arrow keys / right-mouse + wheel to look around), `v` wipers, `F4` Track Monitor, `F5` Train Driving Info, `Alt+Enter` fullscreen/windowed, `Alt+F4` exit.
+6. Driving a diesel: throttle + train brake via mouse on the handles (recommended over keyboard); watch Speed/Direction/Train Brake in F5.
+7. Config-as-QoL walkthrough: graphics settings, HUD window placement, controls.
 
-- [ ] **Step 7: Compile + verify**
+Acceptance: every key binding and UI claim traceable to the official getting-started page; no invented controls; no install-step duplication with Task 8's `installation.typ`.
 
-Run: `build.bat` — expect SUCCESS and the PDF now contains the Wave 0 section with the mod card.
+- [ ] **Step 4: Write `mechanics.typ`, `content.typ`, `graphics.typ`**
+- `mechanics.typ`: beginner concepts only — throttle/brake, track monitor, speed limits, couplers.
+- `content.typ`: the Content system's content types (Routes / Train cars / Train sets) and Free/Donation/Commercial filters.
+- `graphics.typ`: built-in graphics options (renderer, superelevation, fullscreen) — no external graphics mods in Wave 0.
 
-- [ ] **Step 8: Commit**
+- [ ] **Step 5: Update `STATUS.md`** — mark Demo Model 1 accepted (Wave 0).
+
+- [ ] **Step 6: Compile**
+
+Run: `build.bat` — SUCCESS.
+
+- [ ] **Step 7: Commit**
 
 ```bash
 git add open-rails/
-git commit -m "feat(open-rails): write Wave 0 beginner guide with Demo Model 1 entry"
+git commit -m "feat(open-rails): write Wave 0 rookie guide with verified Demo Model 1 entry"
 ```
 
 ---
 
-### Task 4: Wave 1 — The Road Freight (research + content)
+### Task 5: Wave 1 — The Road Freight (assembly, content pre-verified)
 
 **Files:**
 - Create: `open-rails/guide/wave-1/{strategy,modlist,mechanics,content,graphics}.typ`
 - Modify: `open-rails/STATUS.md`
 
-**Goal:** A verified real route + train set for main-line diesel freight, with a strategy section on signals, train handling, and consists.
+**Goal:** Main-line diesel freight using the verified **BNSF Starter Route** (ships with trainsets + activities — no separate train-set search needed).
 
-- [ ] **Step 1: Research candidate routes (verification gate)**
+- [ ] **Step 1: Write `modlist.typ`** (with `mod-entry()` from Task 4 Step 1):
 
-Candidates to investigate from the Task 1 audit (URLs as recorded): Goose Island, Rio Grande Southern, CRKB Conrail & FG&S, plus any others found in the library scan. For EACH candidate, run a verification fetch:
+```typst
+== Wave 1 — Modlist: Road Freight
+Adds the first real route and a complete diesel-freight trainset + activities, all self-contained.
 
+== Routes
+#mod-entry(
+  "BNSF Starter Route",
+  "https://ts-files.com/files/TS_STARTER_ROUTE.zip",
+  version: "Catalogue freeware — 2026",
+  deps: "None — self-contained (includes trainsets and activities)",
+  impact: "BNSF Scenic Subdivision, Pacific Northwest. Main-line diesel freight: signals, longer consists, throttle/train-brake discipline, basic timetable running with built-in activities.",
+  notes: "Install via the Content form. ~598 MB download / ~894 MB installed. Choose a BNSF freight activity to start.",
+)
+
+== Train Sets
+#mod-entry(
+  "BNSF Starter Trainsets",
+  "https://ts-files.com/files/TS_STARTER_ROUTE.zip",
+  version: "Included with BNSF Starter Route",
+  deps: "BNSF Starter Route",
+  impact: "Ships the diesel locomotives and freight cars needed by the route's activities. No separate download required.",
+  notes: "Bundled — no extra install step.",
+)
 ```
-ctx_fetch_and_index(url: "<thread or download URL>", source: "verify-<name>")
-```
-then record: real existence, download location (Elvas Tower Files section vs forum attachment), release date, dependencies (per the OR dependency model: base assets / scenery / rolling stock / none), and whether community reports indicate it runs on OR 1.6.1.
 
-Acceptance: at least ONE route passes (real URL resolves, 1.6.1-compatible, dependency list known). Failed candidates go to `mod-ideas.md` + `STATUS.md` Rejected.
+- [ ] **Step 2: Write `strategy.typ`** — roleplay (promoted to road freight on a fictional Class I regional) + main-line strategy: signal aspects, train handling on grades, longer consists, reading a basic timetable, brake discipline.
 
-- [ ] **Step 2: Research a matching train set**
+- [ ] **Step 3: Write `mechanics.typ` / `content.typ` / `graphics.typ`** — signals + consists mechanics; what the route/trainsets add; visual notes (no documented graphics changes → "none required").
 
-Find a diesel freight train set that works with the chosen route (same railroad / era ideally). Verify URL + release date + dependencies. If none pairs cleanly, choose the route first and note the train-set gap in `mod-ideas.md`.
+- [ ] **Step 4: Update `STATUS.md`** — accept both entries (Wave 1); no conflicts.
 
-Acceptance: one train set verified, dependency-compatible with the route.
+- [ ] **Step 5: Compile**
 
-- [ ] **Step 3: Write the wave files**
-
-- `strategy.typ`: roleplay backstory (promoted to road freight on a fictional Class I regional) + main-line freight strategy: reading signals, throttle discipline, longer consists, basic timetables, brake handling.
-- `modlist.typ`: `mod-entry()` cards for the verified route and train set, with real URLs, versions (release dates), dependencies, impact, and install notes (manual zip → Content folder for Elvas Tower content).
-- `mechanics.typ`: signals and train handling mechanics; install-order / config notes for the route.
-- `content.typ`: what the route adds (tracks, scenery, activities) and what the train set adds.
-- `graphics.typ`: visual notes for the route (if any documented), else a short "no changes needed" note.
-
-- [ ] **Step 4: Update `STATUS.md`** — accepted/rejected mods for Wave 1; any conflicts.
-
-- [ ] **Step 5: Compile + verify**
-
-Run: `build.bat` — SUCCESS; PDF shows the Wave 1 section with real linked mod cards. Click-check at least one URL resolves (HTTP 200).
+Run: `build.bat` — SUCCESS.
 
 - [ ] **Step 6: Commit**
 
 ```bash
 git add open-rails/
-git commit -m "feat(open-rails): write Wave 1 road-freight guide with verified route + train set"
+git commit -m "feat(open-rails): write Wave 1 road-freight guide with verified BNSF Starter Route"
 ```
 
 ---
 
-### Task 5: Wave 2 — The Yard (research + content)
+### Task 6: Wave 2 — The Yard (assembly, content pre-verified)
 
 **Files:**
 - Create: `open-rails/guide/wave-2/{strategy,modlist,mechanics,content,graphics}.typ`
 - Modify: `open-rails/STATUS.md`
 
-**Goal:** A yard/switching-focused route and rolling stock, with a strategy section on shunting ops.
+**Goal:** Switching operations on the verified **Craven Timber Railway** (sawmill industry, steam saddle tanks).
 
-- [ ] **Step 1: Research a yard/switching route + switcher locomotive**
+- [ ] **Step 1: Write `modlist.typ`**:
 
-Same verification gate as Task 4 Step 1. Prefer routes/stock whose material emphasizes switching (industries, runaround tracks). If the chosen Elvas Tower library route covers a yard, it can be reused here **only if** it was not already installed in Wave 1 (no redundant installs; otherwise pick a new route).
+```typst
+== Wave 2 — Modlist: The Yard
+Adds a small industrial route focused on switching and industry spotting.
 
-Acceptance: route + switcher train set verified (URL resolves, 1.6.1-compatible, dependencies known).
+== Routes
+#mod-entry(
+  "Craven Timber Railway",
+  "http://www.craven.coalstonewcastle.com.au/",
+  version: "Freeware — 2026 (site version)",
+  deps: "None — self-contained",
+  impact: "5.8-mile NSW timber tramway to a sawmill, two saddle-tank steam locos (PWD32, 529X), tight 120m curves, six Wards River crossings. Switching, runaround moves and industry spotting on a small, manageable layout.",
+  notes: "Install via the Content form. Download page on the creator's site.",
+)
+```
 
-- [ ] **Step 2: Write the wave files**
+- [ ] **Step 2: Write `strategy.typ`** — roleplay (yard foreman transferred to the timber branch) + switching strategy: coupler work, runaround/reverse moves, industry spotting, working limits, yard signals.
 
-- `strategy.typ`: roleplay backstory (yard foreman assignment) + switching strategy: coupler work, runaround moves, industry spotting, working limits, yard signals.
-- `modlist.typ`: verified entries via `mod-entry()`.
-- `mechanics.typ`: coupling, uncoupling, reversing moves, handbrakes — mechanics the Wave 1 player hasn't touched.
-- `content.typ` / `graphics.typ`: as per Task 4 Step 3 pattern.
+- [ ] **Step 3: Write `mechanics.typ` / `content.typ` / `graphics.typ`** — coupling, uncoupling, reversing, handbrakes (new vs Wave 1); route content notes; visual notes.
 
-- [ ] **Step 3: Update `STATUS.md`**
+- [ ] **Step 4: Update `STATUS.md`** — accept (Wave 2).
 
-- [ ] **Step 4: Compile + verify**
+- [ ] **Step 5: Compile**
 
 Run: `build.bat` — SUCCESS.
 
-- [ ] **Step 5: Commit**
+- [ ] **Step 6: Commit**
 
 ```bash
 git add open-rails/
-git commit -m "feat(open-rails): write Wave 2 yard-operations guide with verified route + switcher"
+git commit -m "feat(open-rails): write Wave 2 yard-operations guide with verified Craven Timber Railway"
 ```
 
 ---
 
-### Task 6: Wave 3 — The Limited (research + content)
+### Task 7: Wave 3 — The Limited (assembly, content pre-verified)
 
 **Files:**
 - Create: `open-rails/guide/wave-3/{strategy,modlist,mechanics,content,graphics}.typ`
 - Modify: `open-rails/STATUS.md`
 
-**Goal:** Steam-era named passenger service — demanding timetable running with heavy AI traffic. **No multiplayer, no multiplayer references anywhere.**
+**Goal:** Steam mastery capstone on the verified **Great Zig Zag Railway** (7 progressive steam tutorial activities). **No multiplayer references anywhere.**
 
-- [ ] **Step 1: Research steam locomotive + passenger consists + a suitable route**
+- [ ] **Step 1: Write `modlist.typ`**:
 
-Same verification gate as Task 4 Step 1. Look for a steam loco + passenger car set (freeware) and a route that suits passenger service. If the audit found no steam-era route, fall back to modern diesel passenger and log the substitution in `STATUS.md` (per spec).
+```typst
+== Wave 3 — Modlist: The Limited
+Steam-era capstone: an engineering-marvel mountain route with progressive steam tutorials.
 
-Acceptance: at least a verified steam loco + passenger stock set; route either verified or the diesel-passenger fallback logged.
+== Routes
+#mod-entry(
+  "Great Zig Zag Railway",
+  "http://www.zigzag.coalstonewcastle.com.au/",
+  version: "Freeware — 2026 (site version)",
+  deps: "None — self-contained",
+  impact: "Blue Mountains NSW heritage line with reversing zig-zag moves and steep gradients. Includes 7 progressive tutorial activities that teach steam locomotive handling step by step.",
+  notes: "Install via the Content form. ~210 MB download. Play the tutorial activities in order.",
+)
+```
 
-- [ ] **Step 2: Write the wave files**
+- [ ] **Step 2: Write `strategy.typ`** — roleplay (senior engineer trusted with the mountain division's named steam service) + capstone strategy: steam handling fundamentals, firing/basic boiler awareness, gradient and reversing-zig-zag moves, station stops, heavy-AI-traffic awareness, reading the timetable.
 
-- `strategy.typ`: roleplay backstory (senior engineer given a named limited) + timetable strategy: station stops, punctuality, steam firing/basic handling, reading the schedule, heavy AI traffic awareness.
-- `modlist.typ`: verified entries via `mod-entry()`.
-- `mechanics.typ`: steam-era mechanics (if steam), passenger operations (station stops, dwell), timetable running.
-- `content.typ` / `graphics.typ`: as per Task 4 Step 3 pattern.
+- [ ] **Step 3: Write `mechanics.typ` / `content.typ` / `graphics.typ`** — steam-era mechanics; route/tutorial content; visual notes.
 
-- [ ] **Step 3: Update `STATUS.md`**
+- [ ] **Step 4: Update `STATUS.md`** — accept (Wave 3); note the Elvas-Tower-thin contingency decision already logged.
 
-- [ ] **Step 4: Compile + verify**
+- [ ] **Step 5: Compile**
 
 Run: `build.bat` — SUCCESS.
 
-- [ ] **Step 5: Commit**
+- [ ] **Step 6: Commit**
 
 ```bash
 git add open-rails/
-git commit -m "feat(open-rails): write Wave 3 steam-era limited guide with verified content"
+git commit -m "feat(open-rails): write Wave 3 steam-limited guide with verified Great Zig Zag Railway"
 ```
 
 ---
 
-### Task 7: Installation guide + glossary
+### Task 8: Installation guide + glossary
 
 **Files:**
-- Create: `open-rails/guide/installation.typ` (full Content-system install guide)
-- Create: `open-rails/guide/glossary.typ` (OR + railroading glossary)
+- Create: `open-rails/guide/installation.typ`
+- Create: `open-rails/guide/glossary.typ`
 
-- [ ] **Step 1: Write `installation.typ`**
+**Ownership rule (fix for duplicated install steps):** `installation.typ` is the **single source of truth** for the Content-system procedure. Wave guides and how-to-play reference it; they never re-write the steps.
 
-Full installation and configuration instructions for the **built-in Content system** (the mandated mod organizer):
+- [ ] **Step 1: Write `installation.typ`** — canonical reference:
 
-1. Download & install Open Rails 1.6.1 (official release URL verified in Task 3).
+1. Download & install Open Rails 1.6.1 (`Open.Rails.1.6.1.Setup.exe`; verified URL in Phase 1 table).
 2. First launch → the Content form appears.
 3. Browse the catalogue: Routes / Train cars / Train sets; filter Free / Donation / Commercial.
-4. Select an item, set the Install Path, click Install (self-installing; Demo Model 1 ≈600 MB).
-5. Manual install for community content (Elvas Tower etc.): download the zip → extract into the Content folder → verify the item appears in the Content form / route list.
-6. Configure: graphics (renderer, windowed/fullscreen, superelevation), HUD windows, controls, telemetry opt-out note if applicable.
-7. Per-wave install order: activate/install in wave order; never install a wave's content before finishing the previous wave's tutorial (Wave 0 first).
+4. Select an item, set the Install Path, click Install (self-installing; Demo Model 1 ≈272 MB download).
+5. Manual install for non-catalogue content (Elvas Tower etc., when used): download zip → extract into the Content folder → confirm the item appears in the Content form / route list.
+6. Configure: graphics (renderer, fullscreen/windowed), HUD windows, controls, superelevation.
+7. Wave install order: install Wave 0 content before playing it through; install each wave's content only when starting that wave. Never install two waves' content and mix sessions without following the wave order.
 
-- [ ] **Step 2: Write `glossary.typ`**
+- [ ] **Step 2: Write `glossary.typ`** — alphabetized terms (one-line definitions, only terms actually used in the guide): cab, consist, coupler, handbrake, HUD, track monitor, signal, timetable, throttle, train brake, yard/switching, runaround, industry spotting, superelevation, Content form, Install Path, zig-zag, saddle tank, limited (train). No invented terms.
 
-Alphabetized glossary of every term used in the guide: cab, consist, coupler, handbrake, HUD, track monitor, signal, timetable, throttle, yard/switching, runaround, industry spotting, superelevation, Content form, Install Path, etc. Each entry: term + 1–2 sentence definition. No fabricated terms.
+- [ ] **Step 3: Compile**
 
-- [ ] **Step 3: Compile + verify**
-
-Run: `build.bat` — SUCCESS; verify glossary renders at the end of the PDF.
+Run: `build.bat` — SUCCESS.
 
 - [ ] **Step 4: Commit**
 
 ```bash
 git add open-rails/
-git commit -m "feat(open-rails): add Content-system install guide and glossary"
+git commit -m "feat(open-rails): add canonical Content-system install guide and glossary"
 ```
 
 ---
 
-### Task 8: PDF polish + final build verification
+### Task 9: PDF verification (agent-visible, text-based)
 
 **Files:**
-- Modify: `open-rails/template.typ` (if polish needed)
-- Modify: `open-rails/build.bat` (if needed)
+- Modify: `open-rails/template.typ` (layout fixes only if verification finds issues)
 - Verify: `open-rails/output/steel-genesis.pdf`
 
-- [ ] **Step 1: Review the compiled PDF**
+**Verification approach (fix for "open the PDF" non-instruction):** render pages to PNG to prove the layout renders, and extract text to prove content presence. Do NOT rely on eyeballing — use tool output.
 
-Open `output/steel-genesis.pdf` and verify the task-required elements:
-1. Cover page with modlist name + `assets/logo.jpg` + page numbers at the bottom.
-2. Top-level table of contents.
-3. Full installation instructions (Content system).
-4. Complete guide + modlist (all 4 waves).
-5. Glossary at the end.
+- [ ] **Step 1: Render pages to PNG**
 
-Fix any rendering issues (heading colors, mod-card layout, TOC depth, cover spacing) directly in `template.typ`.
+Run: `typst compile template.typ output/preview-{p}.png --format png --pages 1,2,3`
+Expected: exit 0 and 3 PNG files produced (cover, TOC, early content). Rendering without error = no layout crash.
 
-- [ ] **Step 2: Verify link integrity of all mod entries**
+- [ ] **Step 2: Extract text and verify content presence**
 
-For every URL used in any `modlist.typ`, run a HEAD fetch and confirm HTTP 200. Any dead link must be fixed or the entry moved to `mod-ideas.md` before completion.
+Run: `pdftotext output/steel-genesis.pdf output/steel-genesis.txt` (if `pdftotext` unavailable, use Python: `python -c "import pypdf,sys;print(''.join(p.extract_text() for p in pypdf.PdfReader('output/steel-genesis.pdf').pages))"`; if neither, use `typst compile template.typ --format pdf` success + PNG render as proxy).
+Then verify the text contains: "Steel Genesis", "Demo Model 1", "BNSF Starter Route", "Craven Timber Railway", "Great Zig Zag Railway", "Glossary". Grep for each; all must match.
 
-- [ ] **Step 3: Rebuild clean**
+- [ ] **Step 3: Verify page-number footer text**
 
-Run: `build.bat` from a fresh console; confirm exit 0 and that `output/steel-genesis.pdf` exists and is non-trivial (> 100 KB).
+Confirm the extracted text contains the `1 / 1` page-numbering pattern on at least one page (page footer). If extraction shows no footer, fix the footer construct in `template.typ` and rebuild.
 
-- [ ] **Step 4: Final review pass against constraints**
+- [ ] **Step 4: Link integrity gate (all mod URLs)**
 
-Grep the `guide/` folder for forbidden content:
+Run in the sandbox:
+
+```javascript
+// ctx_execute(language: "javascript")
+const urls = [
+  "https://static.openrails.org/files/DemoModel1.zip",
+  "https://ts-files.com/files/TS_STARTER_ROUTE.zip",
+  "http://www.craven.coalstonewcastle.com.au/",
+  "http://www.zigzag.coalstonewcastle.com.au/"
+];
+const out = [];
+for (const u of urls) {
+  const r = await fetch(u, { method: "HEAD", redirect: "follow" });
+  out.push(`${r.status} ${u}`);
+}
+console.log(out.join("\n"));
+```
+
+Expected: all four `200`. Any non-200 → remove/fix that entry before completion.
+
+- [ ] **Step 5: Forbidden-content grep gate**
+
+Run:
 ```
 grep -ri "multiplayer\|multi-player\|steam multiplayer" open-rails/guide open-rails/template.typ
+grep -ri "example.com\|TBD\|TODO\|lorem" open-rails/guide open-rails/template.typ
 ```
-Expected: no matches. Also confirm no `example.com` or placeholder URLs remain: `grep -ri "example.com\|TBD\|TODO\|lorem" open-rails/guide open-rails/template.typ`
+Expected: no output from either. (If `grep` is unavailable in PowerShell, use `Select-String -Pattern 'multiplayer|multi-player' -Path open-rails\guide\*` recursively.)
 
-- [ ] **Step 5: Commit**
+- [ ] **Step 6: User eyeball check (the one human gate)**
+
+Ask the user to open `output/steel-genesis.pdf` and confirm the cover/logo/layout looks right before close-out.
+
+- [ ] **Step 7: Clean up preview files + commit**
 
 ```bash
+Remove-Item open-rails\output\preview-*.png
 git add open-rails/
-git commit -m "feat(open-rails): finalize PDF layout and verify all mod links"
+git commit -m "feat(open-rails): verify PDF render, content presence, footer and link integrity"
 ```
 
 ---
 
-### Task 9: README + final close-out
+### Task 10: README + STATUS close-out
 
 **Files:**
 - Modify: `open-rails/README.md` (full polish)
-- Modify: `open-rails/STATUS.md` (final decisions/rejections summary)
-- Modify: `open-rails/AGENTS.md` (final touches if needed)
+- Modify: `open-rails/STATUS.md` (close-out)
+- Modify: `open-rails/AGENTS.md` (final touches)
 
-- [ ] **Step 1: Finish `README.md`**
+- [ ] **Step 1: Finish `README.md`** — title, overview, verified waves table (from Phase 1), install + build instructions, project structure tree, link to design spec.
 
-Title, overview, waves table, install + build instructions, project structure, link to the design spec. Ensure it reflects the final wave titles used in the guide.
-
-- [ ] **Step 2: Finish `STATUS.md`**
-
-Close out: full Accepted/Rejected/Conflicts tables, final notes, and any unresolved items pushed to `mod-ideas.md`.
+- [ ] **Step 2: Finish `STATUS.md`** — complete Accepted/Rejected/Conflicts tables, final notes, unresolved items moved to `mod-ideas.md`.
 
 - [ ] **Step 3: Final compile**
 
@@ -605,17 +675,18 @@ git commit -m "docs(open-rails): finish README and STATUS close-out for Steel Ge
 ## Self-Review Notes
 
 **Spec coverage mapping:**
-- Built-in Content system as mod organizer + full install/config instructions → Tasks 2, 3 (mod-entry + install flow), 7 (installation.typ).
-- 4 waves, escalating route complexity, roleplay backstories → Tasks 3–6.
-- Wave 0 config-as-QoL, no external content → Task 3.
-- Wave 2 = pure yard ops, Wave 3 = steam-era passenger, NO multiplayer → Tasks 5, 6 (+ Task 8 grep gate).
-- Glossary → Task 7.
-- OR-specific dependency model + conflict definition → Tasks 4–6 steps writing deps/notes; conflicts tracked in `STATUS.md`/`conflicts-mods.md`.
-- Compatibility rule (loads in 1.6.1, release date not a gate) → verification gates in Tasks 1, 4–6.
-- Mod entry format (name+URL, version, deps, impact, notes) → `mod-entry()` in Task 3 and used everywhere.
-- PDF requirements (cover+logo+page numbers, TOC, install, full guide) → Task 8 Step 1.
-- Build via `build.bat` (Typst 0.15) → Task 2, verified every task.
-- No fabrication + STATUS.md traceability → every content task; `STATUS.md` updated each wave.
-- Audit gates (catalogue, Elvas library, logo, typst/font) → Task 1.
+- Content system as mod organizer + full install/config instructions → Task 8 (`installation.typ` canonical), Tasks 4–7 mod cards.
+- 4 waves, escalating route complexity, roleplay → Tasks 4–7.
+- Wave 0 config-as-QoL, no external content → Task 4.
+- Wave 2 yard, Wave 3 steam capstone, NO multiplayer → Tasks 6–7 (+ Task 9 grep gate).
+- Glossary → Task 8.
+- OR dependency model + conflict definition → dependency fields in mod cards; `conflicts-mods.md` defined in Task 2.
+- Compatibility rule (loads in 1.6.1, release date not a gate) → Phase 1 policy + STATUS decisions.
+- Mod entry format (name+URL, version, deps, impact, notes) → `mod-entry()` (Task 4 Step 1), used in every modlist.
+- PDF requirements (cover+logo+page numbers, TOC, install, full guide, glossary) → Task 9 verification steps.
+- Build via `build.bat` (Typst 0.15) → Task 2; compiled after every task.
+- No fabrication + STATUS traceability → Phase 1 verified table; URL-200 policy; STATUS updates per wave.
+- Sourcing contingency → Phase 1 audit findings + named fallbacks + stop conditions.
+- Logo usability + typographic fallback → Phase 1 (valid JPEG) + Task 9 Step 6 human gate.
 
-**Type consistency:** `mod-entry()` signature is defined once in Task 3 (`name, url, version, deps, impact, notes` with `none`-tolerant args) and used identically in Tasks 4–6. `build.bat` target constant: `output/steel-genesis.pdf`.
+**Type consistency:** `mod-entry(name, url, version: none, deps: none, impact: none, notes: none)` defined once (Task 4 Step 1), used identically in Tasks 5–7. Build target constant: `output/steel-genesis.pdf`. Fonts constant: Cinzel/Bahnschrift/Georgia. URLs consistent with the Phase 1 table throughout.
