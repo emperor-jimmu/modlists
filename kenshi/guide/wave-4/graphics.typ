@@ -1,2 +1,5 @@
 == The Conqueror: Graphics
-// Content lands here in Task 8.
+
+Wave 4 ships no graphics mods. The warfare and world-conquest focus of this wave produced no verified visual addition worth the list, and per this guide's quality-over-quantity rule the slot is left empty rather than padded with a mod that fails the bar. The visual layer of the list is already carried by earlier waves: Wave 0's *Dark UI*, *Nice Map* and texture/performance stack, Wave 1's *Mood Weather* and building mods, and Wave 3's *Biome Edits*. Everything a conqueror needs to *see* their conquests — the map, the weather, the terrain — is already in place, and none of the warfare mods in this wave change how the world looks.
+
+The one visual-adjacent note worth making is load-order hygiene. The faction-expansion mods (*Cannibals Expanded*, *Shrieking Bandits Expanded*) add new armour and weapon models, so they should sit below the texture-heavy mods from earlier waves (Wave 0's *Compressed Textures Project* above everything, *Dark UI* above content) so their new items render against the correct textures. That is the entire graphics story of Wave 4: nothing new to look at, but the new gear should look right under the existing layer.

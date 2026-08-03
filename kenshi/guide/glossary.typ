@@ -76,4 +76,16 @@ Terms below are used in the Wave 0 chapter (The Wanderer). Later waves extend th
 
 *Landmark* — a custom, nameable map marker (added by Sensible Nomadism) that turns any chosen location into a remembered waypoint. The strategic half of an escape route: you can only fall back to somewhere you know is there.
 
+*Faction relation* — the numerical score a faction holds toward you, from deep hostility into alliance. There are 93 factions; some (Cannibals, Berserkers, Swamp Ninjas) are hostile to every person they see by default. Relations move through world-state deeds rather than dialogue — killing or imprisoning a leader like Traders Guild's Lady Kana or Longen "seriously damage(s)" that faction's view of you, and allying with one power (e.g. the Anti-Slavers, -30 to the Guild) is simultaneously an insult to another.
+
+*Faction visit* — a peacetime demand sent to your outpost: the United Cities send a tax man, the Holy Nation holds a Prayer Day, the Shek Kingdom demands a Tribute Round, and the Hounds come for extortion. Each is a choice dressed as an event — comply, or refuse and risk "being immediately attacked" or a squad leaving "with the promise of returning with an army."
+
+*Tribute Round* — the Shek Kingdom's periodic tribute demand at your outpost. It triggers within 1,500 meters of a Shek settlement while the Bugmaster, the Phoenix, Bayan, Seto and Esata are all alive and you are neither ally nor enemy, with a 15% daily chance inside 1,000 meters.
+
+*Siege* — the attack phase of a raid: raiders breaking down gates and attacking your characters. Raid size tracks your settlement's reputation and your distance from hostile camps, so plan defense in tiers — walls that hold a gate, turrets that cover the approach, and a kill-zone that funnels attackers into overlapping fire.
+
+*Garrison* — the standing force that holds territory you have taken. In Wave 4 the garrison is the product of the army-management loop: food from the farms (Wave 1), gear from the forge and turrets (Wave 2), logistics and repair (Wave 3), and recruits bought for cats (Wave 4). A garrison that fights bludgeoning weapons recovers without bandaging (blunt damage regenerates); one that fights cut damage burns through First Aid Kits — staff medics before the siege, not after.
+
+*World conquest* — a sequence of world-state changes you provoke, not a flag you plant. Killing or kidnapping a faction's leaders reduces its squad spawn rates, and its base is then "destroyed or occupied by a different faction." "Alive" conditions mean alive *and free*. Conquest is a ledger of leader deaths and the territories those deaths re-assign; remnant factions (like Reactive World's hidden Holy Nation commanders) form until hunted down.
+
 
