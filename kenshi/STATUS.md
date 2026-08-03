@@ -157,6 +157,10 @@ Mod sources: Steam Workshop (primary), Nexus Mods (secondary).
   library scan) - not documented. (3) The 41 Nexus community posts could not be fetched (JS-rendered); no explicit
   user confirmation of running KMM under Kenshi 1.0.68 was obtained. (4) Whether KMM's drag & drop direction
   (top = first-loaded) matches Kenshi's "later = higher priority" - not documented by the tool.
+- **Close-out (2026-08-03):** Build COMPLETE. 63-page PDF compiled via Typst 0.15.1, zero warnings.
+  42 mods accepted across 5 waves (W0=6, W1=10, W2=10, W3=9, W4=7), 41 rejected or deferred.
+  51 glossary terms. KMM verdict COMPATIBLE (Nexus 1765 by Aze4ka, v1.0.0-release, self-contained).
+  No mod conflicts identified requiring exclusion (see Conflicts table).
 
 ## Wave 0 (The Wanderer) — 2026-08-03
 - **Wave 0 shipped 6 mods** (within the 5-8 floor): 2 UI/visual (Dark UI, Nice Map), 4 performance (Compressed
