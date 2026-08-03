@@ -1,5 +1,4 @@
 == Glossary
-// Content lands here in Task 8.
 
 *Assembling machine* — a machine that crafts a chosen recipe automatically while inserters keep it fed; assembling machine 1 handles simple two-ingredient recipes, and higher tiers add speed, ingredients and module slots.
 

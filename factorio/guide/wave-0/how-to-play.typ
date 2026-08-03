@@ -7,7 +7,7 @@
 
 The survey ship *Nightjar* came apart over Nauvis and you are what survived: a burner drill, a stone furnace, a burner inserter, a wooden chest, and the engineer's instinct to bootstrap a factory from raw ore before the biters notice you. This chapter teaches everything a castaway needs, in the order you will actually need it: how to control the game and read the interface, how to survive your first minutes, how to automate the first machine lines, and then the whole bootstrap campaign — science, oil, rail, defense — that ends with the first rocket leaving the planet.
 
-Everything here describes vanilla Factorio 2.0.77. Wave 0 installs no content mods; the eight mods in the Modlist section only make the game easier to see, easier to operate, and easier to plan.
+Everything here describes vanilla Factorio 2.0.77. Wave 0 installs no content mods; the eight mods in the Modlist chapter only make the game easier to see, easier to operate, and easier to plan.
 
 === The Castaway's Roadmap
 
@@ -26,7 +26,7 @@ Each goal is small enough to finish in one sitting, and each one leaves you with
 
 Factorio is a top-down factory simulator: you walk an engineer around, build machines, and the machines do the work. Almost everything has a keyboard default, and every one of them can be remapped under *Settings → Controls*. The defaults below are what 2.0.77 ships with.
 
-#callout("Tip:", [Alt-mode is the most important toggle in the game. Press *Alt* once and every machine, chest and belt shows what it contains or produces on top of its sprite. New players who skip it are flying blind — press Alt before you do anything else, and never turn it off. The wiki describes it as showing "entities' recipes, filters, and inventories at a glance".])
+#callout("Tip:", [Alt-mode is the most important toggle in the game. Press *Alt* once and every machine, chest and belt shows what it contains or produces on top of its sprite. New players who skip it are flying blind — press Alt before you do anything else, and never turn it off. In short, it shows every entity's recipe, contents and direction at a glance.])
 
 #table(
   columns: (auto, 1fr, auto),
@@ -83,7 +83,7 @@ The whole HUD is built around a few panels, and once you know what each one tell
 
 *Reading the factory.* Once the panels are familiar, learn to read them as a diagnosis. The *Production statistics* screen (P) graphs every item, fluid and energy source over time: a flat iron-plate line with hungry consumers downstream is a smelting bottleneck; a climbing power line that suddenly stops is a dead coal feed. The *Kills* tab shows how many biters you have cleared, which matters because killing spawners raises evolution. And the *alert icons* that flash along the top of the screen when something is under attack, out of ammo, or out of power are the factory telling you its problems in real time — a factory that alerts you about its own failures is a factory you can actually manage.
 
-#callout("Tip:", [The minimap and the full map are your planning canvas. Press *M*, then right-click to drop a marker on the map — a reminder of where the iron patch you promised yourself actually is. Markers survive sessions and are the cheapest project tracker the game gives you (the *Todo List* mod in the Modlist section adds the human-readable version).])
+#callout("Tip:", [The minimap and the full map are your planning canvas. Press *M*, then right-click to drop a marker on the map — a reminder of where the iron patch you promised yourself actually is. Markers survive sessions and are the cheapest project tracker the game gives you (the *Todo List* mod in the Modlist chapter adds the human-readable version).])
 
 === Your First Minutes
 
@@ -141,7 +141,7 @@ Automation in Factorio means three machines working together: a *belt* carries t
 
 *A worked example — the gear line.* Iron plates on a belt, an assembler with the iron gear wheel recipe beside it, an inserter pulling plates in, an inserter dropping gears back onto a second belt running alongside. Two belts, one assembler, two inserters, one recipe copied from a neighbour. That is the smallest possible factory, and it is worth building by hand once so you can spot it instantly inside any bigger build — because the bigger builds are just the same cell repeated.
 
-#callout("Tip:", [Read the arrows. Every belt, inserter, pipe and underground has direction arrows that show in alt-mode. A whole factory "not working" is, nine times out of ten, one inserter or belt pointing the wrong way — the *Bottleneck Lite* mod from the Modlist section turns a red dot onto the exact machine that is starved, which makes these fixes take seconds.])
+#callout("Tip:", [Read the arrows. Every belt, inserter, pipe and underground has direction arrows that show in alt-mode. A whole factory "not working" is, nine times out of ten, one inserter or belt pointing the wrong way — the *Bottleneck Lite* mod from the Modlist chapter turns a red dot onto the exact machine that is starved, which makes these fixes take seconds.])
 
 #callout("Warning:", [Do not hand-feed assemblers from your inventory for long. An assembler that is fed by *you* stops every time you walk away, and walking away is the whole point of a factory. If a machine line needs an item, build a belt or a chest that provides it — the moment your hands leave the loop, the loop is real.])
 
@@ -164,13 +164,13 @@ Labs are the consumers: build a row of them, feed every science pack you make in
 
 #callout("Warning:", [Do not research everything at once. Science packs take real resources, and spreading thin means nothing gets done. Pick a goal (better belts, red science, the next science tier) and research toward it — the queue is for chaining related goals, not for spending every spare pack.])
 
-#callout("Tip:", [The *Factory Planner* mod from the Modlist section is built for this moment: instead of guessing how many assemblers a science line needs, plan it — set a target (say, one science pack per second) and it tells you exactly how many gear assemblers, plate furnaces and miners the chain needs. *Rate Calculator* measures the answer for lines you have already built. Together they end ratio-guessing forever.])
+#callout("Tip:", [The *Factory Planner* mod from the Modlist chapter is built for this moment: instead of guessing how many assemblers a science line needs, plan it — set a target (say, one science pack per second) and it tells you exactly how many gear assemblers, plate furnaces and miners the chain needs. *Rate Calculator* measures the answer for lines you have already built. Together they end ratio-guessing forever.])
 
 === Oil Processing
 
 Blue science demands *plastic*, and plastic demands *crude oil* — which means you must find oil, pump it, and process it. Oil is the first resource that does not come out of the ground as a usable product.
 
-*Finding and pumping.* Crude oil sits in pools of black liquid on the map, usually a little way from your base. Place a *pumpjack* over a well (pumpjacks need electricity, unlike burner drills) and it extracts crude. Pipes — laid like belts but for fluids — carry it to the refinery. Note that pumpjacks run at a fixed rate that declines as the well depletes; the *YARM* mod in the Modlist section can track how fast each well is draining.
+*Finding and pumping.* Crude oil sits in pools of black liquid on the map, usually a little way from your base. Place a *pumpjack* over a well (pumpjacks need electricity, unlike burner drills) and it extracts crude. Pipes — laid like belts but for fluids — carry it to the refinery. Note that pumpjacks run at a fixed rate that declines as the well depletes; the *YARM* mod in the Modlist chapter can track how fast each well is draining.
 
 *Refining.* A *oil refinery* runs basic oil processing: it turns crude oil into three fractions at once — *petroleum gas*, *light oil*, and *heavy oil*. All three are useful, but petroleum gas is the one you need first, because plastic bars come from it, and plastic is blue science's gate. If your heavy and light oil tanks fill up while you still want petroleum, the refinery stops — that is the classic oil problem.
 
@@ -221,9 +221,9 @@ Nauvis is not empty. *Biters* are the native life, and they are the only thing o
 
 *The basic defensive line.* A ring of *gun turrets* fed with *magazines* (a chest or belt of ammo behind them) backed by *walls* will hold off the early waves. Turrets are cheap and their ammo is cheap; wall segments are cheap. Repair packs fix the damage between waves. When you can, upgrade turret ammo (piercing rounds come from military science) and add *flamethrower turrets* for the wall-crawlers. Place your line *outside* the base footprint and leave a gap so you can reach the walls to repair them.
 
-*Knowing your enemy.* Biters come in escalating sizes — small, medium, big, behemoth — and *spitters* lob corrosive fluid over your walls, which is exactly why the walls exist: they give the spitters something expensive to chew while the turrets shoot back. *Worms* guard nests and will hit you if you stroll up to clear them. The evolution dial decides which sizes appear: early on the attacks are small biters that a gun turret eats for breakfast; late in the game they are big and behemoth hordes that demand real firepower. Reading the pollution map (red overlay on *M*) tells you when the next wave is forming; reading the evolution bar — hover the *Enemies* entry on the map — tells you how hard it will be.
+*Knowing your enemy.* Biters come in escalating sizes — small, medium, big, behemoth — and *spitters* lob corrosive fluid over your walls, which is exactly why the walls exist: they give the spitters something expensive to chew while the turrets shoot back. *Worms* guard nests and will hit you if you stroll up to clear them. The evolution dial decides which sizes appear: early on the attacks are small biters that a gun turret eats for breakfast; late in the game they are big and behemoth hordes that demand real firepower. Reading the pollution map (red overlay on *M*) shows you how far your pollution cloud extends — and whether it is reaching biter nests; reading the evolution bar — hover the *Enemies* entry on the map — tells you how hard the next attack will be.
 
-#callout("Tip:", [Watch the pollution cloud on the map (press *M* and check the red overlay, or press *N* for the logistic view). If the cloud is still short of the nearest nest, you are safe; the moment it touches a spawner, expect an attack within the hour. Use the radar to watch both.])
+#callout("Tip:", [Watch the pollution cloud on the map (press *M* and check the red overlay). If the cloud is still short of the nearest nest, you are safe; the moment it touches a spawner, expect an attack within the hour. Use the radar to watch both.])
 
 #callout("Warning:", [The pistol is a tool of desperation, not a plan. If biters overrun your wall, the correct response is not to stand and shoot — it is to retreat, repair the gap, and build more turrets. A wall with turrets behind it beats any amount of personal firepower at Wave 0.])
 
