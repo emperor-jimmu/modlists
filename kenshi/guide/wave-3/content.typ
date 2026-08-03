@@ -46,8 +46,8 @@ These five mods are the places and the people of the expedition — the correcte
 #mod-entry(
   "Dwarven Weapons",
   "https://steamcommunity.com/sharedfiles/filedetails/?id=2604131774",
-  version: "Updated 23 Feb 2025 (posted 6 Nov 2021)",
-  verified: "YES — Steam Workshop page fetched (2026-08-03); title matches; Steam API confirms posted 2021-11-06, updated 2025-02-23, 2,094 subscribers",
+  version: "Updated 23 Feb 2025 (posted 17 Sep 2021)",
+  verified: "YES — Steam Workshop page fetched (2026-08-03); title matches; Steam API confirms posted 2021-09-17, updated 2025-02-23, 2,094 subscribers",
   deps: "None — author asks it load behind GUI/texture/weather mods; the latest update requires an import to activate",
   impact: "Adds a full dwarven content pack: six weapon types, a dwarven race with three clan subraces, and unique weapons and recruits *hidden in the world* with map-hint clues that point you to their locations — discovery content, not shop stock. Also adds a brewing chain (hops, malt and stout) and a crafting economy around it. Blueprints appear at the map-selling shops.",
   notes: "The definition of expedition loot: the best pieces are found, not bought, and the map-hints make the finding the gameplay. 2,094 subscribers, tags Weapons/Race/Gameplay. The import requirement on the latest update is a one-time cost worth paying before a long playthrough.",
@@ -56,8 +56,8 @@ These five mods are the places and the people of the expedition — the correcte
 #mod-entry(
   "Behind Enemy Lines - Ashlanders",
   "https://steamcommunity.com/sharedfiles/filedetails/?id=3608066482",
-  version: "Posted and updated 28 May 2026",
-  verified: "YES — Steam Workshop page fetched (2026-08-03); title matches; Steam API confirms posted/updated 2026-05-28, 3,796 subscribers",
+  version: "Posted 18 Nov 2025, updated 28 May 2026",
+  verified: "YES — Steam Workshop page fetched (2026-08-03); title matches; Steam API confirms posted 2025-11-18, updated 2026-05-28, 3,796 subscribers",
   deps: "None — standalone; expands the vanilla southeastern frontier toward and around the Ashlands",
   impact: "Fleshes out the far southeast, the expedition's true endgame: the Ashlanders faction with the towns Cinder Point and The Wracklight, the Reed Corsairs (pirates of Green Beach), a full Ashforge gear set, new NPCs and recruits, and a 'The Long March' survival start that drops you on the frontier with nothing. An optional debt-collector story thread runs through it. It makes the wasteland past the map's edge a place with people in it.",
   notes: "The newest mod in this wave (May 2026) and the capstone of the expedition: it gives the deadlands a living culture to discover. 3,796 subscribers, tags Characters/Gameplay/Faction.",
