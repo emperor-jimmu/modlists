@@ -24,6 +24,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | KSP             | Kerbal Space Program            | [`kerbal-space-program/`](./kerbal-space-program/) | Active |
 | Mass Effect     | Mass Effect (Legendary Edition) | [`masseffect/`](./masseffect/)                     | Active |
 | M&B II          | Mount & Blade II: Bannerlord    | [`mb2-bannerlord/`](./mb2-bannerlord/)             | Active |
+| Open Rails      | Open Rails                      | [`open-rails/`](./open-rails/)                     | Active |
 | RDR2            | Red Dead Redemption 2           | [`rdr2/`](./rdr2/)                                 | Active |
 | Shogun 2        | Total War: Shogun 2             | [`shogun2/`](./shogun2/)                           | Active |
 | RimWorld        | RimWorld                        | [`rimworld/`](./rimworld/)                         | Active |
@@ -138,6 +139,9 @@ masseffect/             # Mass Effect Legendary Edition modlist
 ├── AGENTS.md
 └── ...
 mb2-bannerlord/         # Mount & Blade II: Bannerlord modlist
+├── AGENTS.md
+└── ...
+open-rails/             # Open Rails modlist
 ├── AGENTS.md
 └── ...
 project-zomboid/        # Project Zomboid modlist
