@@ -88,4 +88,22 @@ Terms below are used in the Wave 0 chapter (The Wanderer). Later waves extend th
 
 *World conquest* — a sequence of world-state changes you provoke, not a flag you plant. Killing or kidnapping a faction's leaders reduces its squad spawn rates, and its base is then "destroyed or occupied by a different faction." "Alive" conditions mean alive *and free*. Conquest is a ledger of leader deaths and the territories those deaths re-assign; remnant factions (like Reactive World's hidden Holy Nation commanders) form until hunted down.
 
+Modding and installation terms used in the Installation Guide and across every wave's mod cards:
+
+*KMM* — Kenshi Mod Manager, Nexus mod 1765 by Aze4ka and the mod organizer this guide assumes: a self-contained Windows tool that auto-detects Kenshi and Steam install paths, reorders mods by drag & drop, saves each playset as its own `.cfg` file, and starts the game with Save & Launch.
+
+*Load order* — the order in which Kenshi loads its mods, stored in `mods.cfg`: later in the list means higher priority, so mods lower in the order overwrite mods higher in the order.
+
+*mods.cfg* — the load-order file in Kenshi's game data folder that records which mods are installed and the order the game loads them; KMM's playsets are saved as separate `.cfg` files of the same shape.
+
+*.mod file* — the compiled file that identifies a Kenshi mod in the game's Mods menu; a missing or misplaced `.mod` file is what a ".mod file error" actually means — the mod failed to load.
+
+*Steam Workshop ID* — the numeric `?id=NNNNN` that identifies a Workshop mod and is used to subscribe to it; every Workshop mod in this guide is referenced by its ID.
+
+*Mod conflict* — when two mods edit the same game data, the later-loaded one wins — e.g. never run Fish and Meat Industry with its superseded sibling Meat Production and Processing, or Radiant Vanilla Reborn Weapons with Radiant Asamarume Weapons (already integrated in v2.0).
+
+*"Later wins"* — shorthand for Kenshi's override rule: when two mods edit the same value, the one loaded later in the order wins.
+
+*Mod card* — the styled box used throughout this guide to present one verified mod: a clickable name link, version, verified status, dependencies, impact and notes, with its URL as the verified source.
+
 
