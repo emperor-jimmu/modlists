@@ -20,3 +20,21 @@ The sawmill only works if the wagons arrive in the right place. Spotting is the 
 === Working at Reduced Speed
 
 Everything in the yard happens slowly. A wagon being shoved into position has no tolerance for speed — a mistake at speed means a derailment, a crushed buffer, or a coupler torn off. Short, deliberate movements, patience between each one, and a steady hand on the controls are the whole of the job. The route rewards that patience: there is no timetable pressure in the yard, only the pressure you put on yourself to do the move cleanly the first time.
+
+=== The Train Operations Monitor
+
+Press `<Ctrl+Alt+F9>` to open the Open Rails Train Operations window. It is similar to the F9 window in MSTS, but with extra features, and it is the yard foreman's real working tool. The window lets you control the air brake connections of individual cars: you can control the connection of the air brake hoses between individual cars, uncouple cars without losing the air pressure in the train's air brake hose, or uncouple cars with their air brakes released so that they will coast — the classic humping move. The unit you control (the lead unit) is shown in red in this window. Cars are numbered according to their UiD in the Consist file (.con) or the Activity file (.act); scroll with the arrows at the left and right bottom corners to see the full consist. Clicking on the coupler icon between any two cars uncouples the consist at that point.
+
+=== Uncoupling by Hand
+
+You can also uncouple cars from your player train without the operations window: press the `<U>` key and click with the mouse on the couplers in the main window. This is the quickest way to drop a wagon mid-move, but it puts the work on your eye and your timing — you must place the cursor exactly on the coupler you mean to release, at the moment you mean to release it.
+
+=== The Car Operation Menu
+
+Clicking on any car in the Train Operations window opens the Car Operation Menu. From it you can apply and release the handbrake, and release the air brakes so that the car can be moved without brakes — the humping setting, where a car rolls freely once pushed or shoved. Applied to a car you are about to set out, the handbrake holds it where it lands; released, the car is ready to be moved again without fighting its brakes.
+
+=== Pathless Trains & Recovering from SPAD
+
+Not every train in the yard has a path. In the Train List window, drivable static consists are listed in yellow, named STATIC plus an ID number. The first click on a static consist line moves the camera to it; the second click enters its cab. If that second click happens with the Shift key pressed, the old player train goes into a suspended state; otherwise it enters autopilot mode, moving itself along its path. The static consist becomes a standard train without a path — pathless — running in manual mode. In that mode signals can be cleared in the dispatcher window or permission requested, switches moved, direction changed, and cars coupled and uncoupled, which makes a pathless train the natural tool for building the yard's moves.
+
+If the train goes out of control — for example because of a SPAD, a signal passed at danger — press `<Ctrl+M>` to exit emergency braking.
