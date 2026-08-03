@@ -53,3 +53,43 @@
 *Satellite* — the classic rocket payload; launching one returns 1,000 space science packs to the cargo landing pad about 29 seconds after launch.
 
 *Main bus* — a city-block-era layout idea (full detail in Wave 1) where a few broad parallel belts carry the core materials past every production block, pulled off by splitters.
+
+*Circuit network* — the wire system that carries signal values between entities; red and green wires form separate networks, and any device wired to a network can read the sum of its signals.
+
+*Combinator* — a circuit-network device that computes: the constant combinator broadcasts up to 20 fixed values, the arithmetic combinator calculates a result, and the decider combinator passes a signal through only when a condition is true.
+
+*Logistic network* — the robot delivery system; roboports whose orange zones touch join into one network, and the network's robots move items between its provider, requester, storage and buffer chests.
+
+*Roboport* — the charging bay and network anchor for construction and logistic robots; it creates a 50x50-tile logistic zone and a 110x110-tile construction zone.
+
+*Logistic robot* — a flying robot that carries items between chests inside a logistic network, one item at a time by default (up to four with research), flying at about 3 tiles per second.
+
+*Requester chest* — a chest that asks the logistic network to deliver a chosen item up to a set amount, the robot-network equivalent of a machine's input.
+
+*Passive provider chest* — a chest that makes its contents available to the logistic network without pushing them out; robots pull from it when a requester asks.
+
+*Storage chest* — the logistic network's general holding chest, where deconstruction drops items and robots park surplus.
+
+*Buffer chest* — a chest that both requests items and provides them to the network, used to stage materials near a consumer.
+
+*Module* — an expensive, research-gated item slotted into machines and beacons to raise speed, cut energy, add free output, or roll quality.
+
+*Speed module* — a module that raises crafting speed (+20%, +30%, +50% by tier) while increasing the machine's power and pollution.
+
+*Efficiency module* — a module that cuts a machine's energy consumption and pollution (-30%, -40%, -50% by tier).
+
+*Productivity module* — a module that gives a chance of free bonus output (+4%, +6%, +10% by tier) while slowing the machine and raising its power use.
+
+*Quality module* — a module that gives a chance (+1%, +2%, +2.5% by tier) of crafting an item one quality tier higher.
+
+*Quality* — the five-tier item system (normal, uncommon, rare, epic, legendary); higher-tier items are stronger, and quality rolls on crafted items improve with quality modules.
+
+*Recycler* — a building that breaks crafted items back into a quarter of their ingredients, rolling quality again — the gate that makes quality upcycling loops work.
+
+*Beacon* — a building that broadcasts its modules' effects to every compatible machine in a 9x9 area around it, with diminishing returns as more beacons target the same machine.
+
+*Train limit* — a number set on a train stop capping how many trains may head for it at once, the first and best anti-deadlock habit on a shared network.
+
+*Bulk inserter* — the base-game high-capacity inserter, able to carry several items per swing; the stack inserter is a Space Age addition outside Waves 0-1.
+
+*Belt stacking* — the Wave 1 mechanic (Deadlock's Stacking Beltboxes) that combines several copies of an item into one stacked belt item, multiplying what a belt lane can carry.
