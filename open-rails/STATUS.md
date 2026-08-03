@@ -23,4 +23,10 @@ Mod sources: official OR 1.6.1 content catalogue (primary, all 4 waves), Elvas T
 | 2 | Craven Timber Railway | http://www.craven.coalstonewcastle.com.au/ | Freeware — 2026 (site version) | None — self-contained | 5.8-mile timber tramway to sawmill; 2 saddle-tank steam locos; switching ops. |
 | 3 | Great Zig Zag Railway | http://www.zigzag.coalstonewcastle.com.au/ | Freeware — 2026 (site version) | None — self-contained | Blue Mountains NSW; 7 progressive steam tutorial activities; mountain ops. |
 
+## Rejected Mods
+| Mod | Reason |
+
+## Conflicts
+| Mod A | Mod B | Issue | Mitigation |
+
 ## Notes
