@@ -58,4 +58,4 @@ Terms below are used in the Wave 0 chapter (The Wanderer). Later waves extend th
 
 *Turret* — a mounted defensive weapon built on ground or Defensive Walls. Turrets include Harpoon Turrets, Mounted Crossbows, and (with Wave 2 mods) vanilla crossbows mounted on the wall line. Turret accuracy is perfect at Crossbow level 70.
 
-*Hydroponics* — indoor farming that ignores environment and fertility entirely. Requires Research Bench V and an AI Core to unlock, and each crop costs four Ancient Science Books. Hydroponic farms grow one size with ten plants but yield multiple crops, so they can outperform regular farms.
+
