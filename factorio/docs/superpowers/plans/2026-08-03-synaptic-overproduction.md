@@ -518,15 +518,15 @@ git commit -m "feat(factorio): write Wave 1 The Architect chapter with verified 
 - Create: `factorio/guide/wave-2/{strategy,modlist,mechanics,content,graphics}.typ`
 - Modify: `factorio/STATUS.md`, `factorio/guide/glossary.typ` (harvest)
 
-**Rules in force for this wave:** only mods explicitly compatible with K2's 2.0-era chain; nothing that hands victory away. Cut list + power-spike test apply. **Target 8-12 mods (guidance only — never pad). Krastorio 2 itself ships here.** Uses the Task 3 verdict.
+**Rules in force for this wave:** only mods explicitly compatible with K2's 2.0-era chain AND the Krastorio 2 Spaced Out bridge; nothing that hands victory away. Cut list + power-spike test apply. **Target 8-12 mods (guidance only — never pad). Krastorio 2 AND Krastorio 2 Spaced Out ship here as the two anchors** (Task 3 verdict: K2 2.0.19 + K2SO 1.6.21, both 2.0-compatible; K2 needs K2SO to run with Space Age, which stays ENABLED in this wave). Uses the Task 3 verdict.
 
-- [ ] **Step 1: Research 8-12 K2-compatible candidates**
+- [ ] **Step 1: Research 8-12 K2/K2SO-compatible candidates**
 
-Searches on the portal: "Krastorio 2 compatible", "K2 addon", "Krastorio companion", "Krastorio2" (browse every mod tagged `Krastorio2` in its dependencies). The portal's dependency field is the filter: every Wave 2 candidate must list `Krastorio2` as a dependency OR be an explicitly K2-compatible QoL mod. Start from K2's own page's *Dependencies* / *Referenced by* lists.
+Searches on the portal: "Krastorio 2 compatible", "K2 addon", "Krastorio companion", "Krastorio2" (browse every mod tagged `Krastorio2` in its dependencies). The portal's dependency field is the filter: every Wave 2 candidate must list `Krastorio2` as a dependency (K2SO-compatible candidates must also list `Krastorio2-spaced-out` or `space-age`) OR be an explicitly K2-compatible QoL mod. Start from K2's own page's *Dependencies* / *Referenced by* lists.
 
-Candidate quality bar: same as Task 4 Step 1 (a-e), plus: (f) must declare `Krastorio2` dependency on the portal OR be a QoL mod verified compatible with K2's rebalanced recipes; (g) must not restore vanilla-only behavior that K2 intentionally changed (would conflict).
+Candidate quality bar: same as Task 4 Step 1 (a-e), plus: (f) must declare `Krastorio2` dependency on the portal OR be a QoL mod verified compatible with K2's rebalanced recipes; (g) must not restore vanilla-only behavior that K2 intentionally changed (would conflict); (h) must be compatible with the K2SO bridge (check its dependency on `Krastorio2-spaced-out` / `space-age` feature flag) or be a pure-client QoL mod.
 
-**Stop rule:** search quality over quantity. If you cannot shortlist 8 quality candidates after 2 rounds of alternate queries, ship quality-over-quantity (K2 + a handful of verified companions is an acceptable floor) and record the deviation in STATUS.md Notes. There is no clock; the stop rule is the honest lever.
+**Stop rule:** search quality over quantity. If you cannot shortlist 8 quality candidates after 2 rounds of alternate queries, ship quality-over-quantity (K2 + K2SO + a handful of verified companions is an acceptable floor) and record the deviation in STATUS.md Notes. There is no clock; the stop rule is the honest lever.
 
 - [ ] **Step 2: Re-verify the carried Wave 0 QoL base against K2 (the plan's load-bearing promise)**
 
@@ -537,7 +537,7 @@ The guide's architecture says Wave 0's QoL base carries into Wave 2. Prove it pe
 Same protocol and evidence bar as Task 4 Step 2: portal page + API per mod; exact title + last-update date + `game_version`; VERIFIED only on exact title match. Additionally record each mod's `info_json.dependencies` to prove the K2 link (or the QoL-compat rationale). Reject anything that restores vanilla behaviors K2 replaced, or hands out power (log reason).
 
 - [ ] **Step 4: Write `modlist.typ`** — intro explaining Wave 2's overhaul philosophy and the K2-compat rule, then one card per accepted mod via `mod-entry`.
-- [ ] **Step 5: Write `content.typ`** — the K2 content/compat mods, one card each (Krastorio 2 itself first).
+- [ ] **Step 5: Write `content.typ`** — the K2 content/compat mods, one card each (Krastorio 2 and Krastorio 2 Spaced Out first, noting the bridge relationship).
 - [ ] **Step 6: Write `mechanics.typ`** — the K2 system/mechanic mods and their impact, one card each.
 - [ ] **Step 7: Write `graphics.typ`** — the visual mods for this wave (K2-adjacent visual/QoL additions), one card each.
 - [ ] **Step 8: Write `strategy.typ`** (target ~8-10 pages). Use `#callout(...)`. Must cover:
@@ -578,7 +578,7 @@ Written from established Factorio behavior per the user directive (2026-08-03: n
   4. Version compatibility — the manager flags incompatible mods; every card's portal-listed `factorio_version` is the compatibility evidence (cite the STATUS.md records)
   5. Launch & verify — start the game, open the Mods menu, confirm every enabled mod is loaded; in-game mod state is the ground truth
   6. Per-wave switching — each wave = its own new game + mod subset; the shared Wave 0 QoL base persists; disabling a wave's content mods between waves is a checkbox toggle in the built-in manager
-- [ ] **Step 2: Note the K2 anchor** — if Task 3 returned CONDITIONAL, include the caveat; if any accepted mod depends on `space-age`, name that dependency in the setup (Space Age is owned).
+- [ ] **Step 2: Note the K2 anchor** — if Task 3 returned CONDITIONAL, include the caveat; name the K2SO bridge requirement (Wave 2 keeps Space Age ENABLED; the built-in manager selects K2 2.0-line and K2SO 1.6-line for a 2.0.77 install).
 - [ ] **Step 3: Audit + commit** — placeholder grep on `guide/installation.typ` (`Content lands here|TBD|TODO`) -> zero; every mod named in the chapter has a VERIFIED row in STATUS.md.
 
 ```bash
