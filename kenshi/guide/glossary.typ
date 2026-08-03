@@ -1,5 +1,3 @@
-== Glossary
-
 Terms below are used in the Wave 0 chapter (The Wanderer). Later waves extend this list.
 
 *Cats* — the currency of Kenshi. Everything — food, recruits, weapons, bounties — is priced in cats, and the survival loop exists to make more of them.

@@ -53,43 +53,64 @@
 
 // == Waves
 == Waves & New-Game Setups
-=== Wave 0: The Wanderer
-#include "guide/wave-0/how-to-play.typ"
-#include "guide/wave-0/modlist.typ"
-#include "guide/wave-0/mechanics.typ"
-#include "guide/wave-0/graphics.typ"
+
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#b3492e"))
+  #show heading.where(level: 3): set text(fill: rgb("#b3492e"))
+  === Wave 0: The Wanderer
+  #include "guide/wave-0/how-to-play.typ"
+  #include "guide/wave-0/modlist.typ"
+  #include "guide/wave-0/mechanics.typ"
+  #include "guide/wave-0/graphics.typ"
+]
 #pagebreak()
 
-=== Wave 1: The Outlander
-#include "guide/wave-1/strategy.typ"
-#include "guide/wave-1/modlist.typ"
-#include "guide/wave-1/mechanics.typ"
-#include "guide/wave-1/content.typ"
-#include "guide/wave-1/graphics.typ"
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#d97b3a"))
+  #show heading.where(level: 3): set text(fill: rgb("#d97b3a"))
+  === Wave 1: The Outlander
+  #include "guide/wave-1/strategy.typ"
+  #include "guide/wave-1/modlist.typ"
+  #include "guide/wave-1/mechanics.typ"
+  #include "guide/wave-1/content.typ"
+  #include "guide/wave-1/graphics.typ"
+]
 #pagebreak()
 
-=== Wave 2: The Smith
-#include "guide/wave-2/strategy.typ"
-#include "guide/wave-2/modlist.typ"
-#include "guide/wave-2/mechanics.typ"
-#include "guide/wave-2/content.typ"
-#include "guide/wave-2/graphics.typ"
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#8c2b2b"))
+  #show heading.where(level: 3): set text(fill: rgb("#8c2b2b"))
+  === Wave 2: The Smith
+  #include "guide/wave-2/strategy.typ"
+  #include "guide/wave-2/modlist.typ"
+  #include "guide/wave-2/mechanics.typ"
+  #include "guide/wave-2/content.typ"
+  #include "guide/wave-2/graphics.typ"
+]
 #pagebreak()
 
-=== Wave 3: The Expedition
-#include "guide/wave-3/strategy.typ"
-#include "guide/wave-3/modlist.typ"
-#include "guide/wave-3/mechanics.typ"
-#include "guide/wave-3/content.typ"
-#include "guide/wave-3/graphics.typ"
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#4a3a30"))
+  #show heading.where(level: 3): set text(fill: rgb("#4a3a30"))
+  === Wave 3: The Expedition
+  #include "guide/wave-3/strategy.typ"
+  #include "guide/wave-3/modlist.typ"
+  #include "guide/wave-3/mechanics.typ"
+  #include "guide/wave-3/content.typ"
+  #include "guide/wave-3/graphics.typ"
+]
 #pagebreak()
 
-=== Wave 4: The Conqueror
-#include "guide/wave-4/strategy.typ"
-#include "guide/wave-4/modlist.typ"
-#include "guide/wave-4/mechanics.typ"
-#include "guide/wave-4/content.typ"
-#include "guide/wave-4/graphics.typ"
+#block[
+  #show heading.where(level: 2): set text(fill: rgb("#5d2a1f"))
+  #show heading.where(level: 3): set text(fill: rgb("#5d2a1f"))
+  === Wave 4: The Conqueror
+  #include "guide/wave-4/strategy.typ"
+  #include "guide/wave-4/modlist.typ"
+  #include "guide/wave-4/mechanics.typ"
+  #include "guide/wave-4/content.typ"
+  #include "guide/wave-4/graphics.typ"
+]
 #pagebreak()
 
 // == Glossary

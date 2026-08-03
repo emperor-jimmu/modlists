@@ -3,8 +3,6 @@
   stroke: 0.5pt + rgb("#d97b3a"),
 )[*#title* #body]
 
-== Installation Guide
-
 This chapter takes you from a fresh Kenshi install to a running, verified modded setup: the exact game build, the mod manager, where every mod in this guide comes from, and the load order the whole guide assumes. It is written against *Kenshi 1.0.68* (released April 1, 2024) and against *KMM — Kenshi Mod Manager* (Nexus mod 1765), which the project's verification (Task 3) judged COMPATIBLE with that build. Every claim in this chapter was checked against that verification before it was written; where a detail could not be confirmed, the chapter says so instead of guessing.
 
 If you are following the waves in order, you do the setup here exactly once, up front. Each wave then adds its own content on top of the base you build now, and the final section of this chapter explains how to switch between waves without rebuilding anything.
