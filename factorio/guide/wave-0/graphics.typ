@@ -11,7 +11,7 @@
 
 == The Castaway: Graphics
 
-The three mods in this section change how the game *looks* and how it talks to you — the interface panel, the world's terrain, and the status dots on every machine. None of them changes what the factory produces; they change how clearly you can see it. Wave 0 keeps every recipe and balance number exactly as vanilla ships them.
+The two mods in this section change how the game *looks* and how it talks to you — the interface panel and the status dots on every machine. None of them changes what the factory produces; they change how clearly you can see it. Wave 0 keeps every recipe and balance number exactly as vanilla ships them.
 
 #mod-entry(
   "Todo List",
@@ -21,16 +21,6 @@ The three mods in this section change how the game *looks* and how it talks to y
   deps: "None — standalone.",
   impact: "Adds a checklist panel for planning and tracking tasks — research goals, expansion jobs, things to fix. In multiplayer the list is shared, so a co-op crew can synchronise who builds what and nothing gets forgotten. A pure interface addition; no gameplay value is changed.",
   notes: "By JasonMiles; 275K+ downloads. The panel is bound to any key you like in the controls menu; pick one you will actually press. The 2.0.77 install uses the 2.0-line build v19.15.2.",
-)
-
-#mod-entry(
-  "Alien Biomes",
-  "https://mods.factorio.com/mod/alien-biomes",
-  version: "Updated 24 Jun 2026 (page); 2.0-line build v0.7.4 (23 Jun 2025).",
-  verified: "YES — portal page + API fetched 2026-08-03; page title 'Alien Biomes' matches the API title.",
-  deps: "None — standalone.",
-  impact: "Replaces Nauvis's single grass-and-desert palette with a far more varied terrain — snow, volcanic, crater and many dirt, sand and grass variants — plus new tree and decorative types. Environment and terrain visuals only: no ores, recipes or balance numbers are touched, and the terrain-tweak category is explicitly allowed at Wave 0.",
-  notes: "By Earendel; 700K+ downloads, one of the portal's most-installed visual mods. Terrain generation is locked at world creation, so enable it before starting The Castaway's new game; it will not retroactively re-texture an existing save. The 2.0.77 install uses v0.7.4.",
 )
 
 #mod-entry(

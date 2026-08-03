@@ -11,7 +11,7 @@
 
 == The Architect: Graphics
 
-The four visual mods in this section make the scaling factory *readable*. A megabase fails on information long before it fails on production: which belt is this, which way does the wire flow, is this tank full, where does the yellow line actually go. Two of these mods turn circuit signals into something you can see — glowing tube digits and pinned HUD numbers — and two of them light up the factory's arteries — belt lines and circuit wires — so the answer is a glance instead of a chase. None of them changes a single game value.
+The five visual mods in this section make the scaling factory *readable*. A megabase fails on information long before it fails on production: which belt is this, which way does the wire flow, is this tank full, where does the yellow line actually go. Two of these mods turn circuit signals into something you can see — glowing tube digits and pinned HUD numbers — and two of them light up the factory's arteries — belt lines and circuit wires — so the answer is a glance instead of a chase. The fifth, Alien Biomes, varies the terrain and trees the factory is carved from, so the world outside the bus stays as distinct as the factory on it. None of them changes a single game value.
 
 #mod-entry(
   "Nixie Tubes",
@@ -51,4 +51,14 @@ The four visual mods in this section make the scaling factory *readable*. A mega
   deps: "None — standalone.",
   impact: "Overlays every circuit wire with the signals currently flowing on it, turning a tangle of combinators into a readable diagram of values. When a decider is mis-wired or a signal is crossing where you thought it wasn't, the answer is drawn on the screen instead of guessed at. Read-only visualization of the circuit network; no signal or entity is changed.",
   notes: "By _1024; 21.5K downloads. The circuit-network companion to Belt Visualizer — one lights up belts, this lights up wires. v2.0.2 (Nov 2024) is the latest release on any line and is stable across the 2.0.x line. Power-spike verdict: passes untouched.",
+)
+
+#mod-entry(
+  "Alien Biomes",
+  "https://mods.factorio.com/mod/alien-biomes",
+  version: "Updated 24 Jun 2026 (page); 2.0-line build v0.7.4 (23 Jun 2025).",
+  verified: "YES — portal page + API fetched 2026-08-03; page title 'Alien Biomes' matches the API title.",
+  deps: "None — standalone.",
+  impact: "Replaces Nauvis's single grass-and-desert palette with a far more varied terrain — snow, volcanic, crater and many dirt, sand and grass variants — plus new tree and decorative types. Where the four signal mods make the factory readable, this makes the *world* readable: distinct biomes and tree belts give a sprawling city block a sense of place and make territory boundaries obvious. Environment and terrain visuals only: no ores, recipes or balance numbers are touched.",
+  notes: "By Earendel; 700K+ downloads, one of the portal's most-installed visual mods. Moved into this wave from Wave 0 during guide revision (2026-08-04). Terrain generation is locked at world creation, so enable it before starting The Architect's new game; it will not retroactively re-texture an existing save. The 2.0.77 install uses v0.7.4. Power-spike verdict: passes untouched.",
 )

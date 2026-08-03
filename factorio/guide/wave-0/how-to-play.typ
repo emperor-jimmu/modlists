@@ -7,7 +7,7 @@
 
 The survey ship *Nightjar* came apart over Nauvis and you are what survived: a burner drill, a stone furnace, a burner inserter, a wooden chest, and the engineer's instinct to bootstrap a factory from raw ore before the biters notice you. This chapter teaches everything a castaway needs, in the order you will actually need it: how to control the game and read the interface, how to survive your first minutes, how to automate the first machine lines, and then the whole bootstrap campaign — science, oil, rail, defense — that ends with the first rocket leaving the planet.
 
-Everything here describes vanilla Factorio 2.0.77. Wave 0 installs no content mods; the eight mods in the Modlist chapter only make the game easier to see, easier to operate, and easier to plan.
+Everything here describes vanilla Factorio 2.0.77. Wave 0 installs no content mods; the seven mods in the Modlist chapter only make the game easier to see, easier to operate, and easier to plan.
 
 === The Castaway's Roadmap
 
