@@ -7,6 +7,14 @@ This wave introduces the handful of ideas every new driver needs before any cont
 
 A locomotive is controlled by two big decisions: how much power you ask for and how much braking you apply. The throttle handle opens the engine's power, and the train-brake handle applies braking to the train as a whole. On screen you move both by clicking the mouse pointer on the handle — the same way you will drive the cab in every later wave.
 
+=== The Air Brake System
+
+The train brake is not a mechanical squeeze but a pneumatic air-brake system. The "train brake" controls the whole train, while the "engine brake" — the independent brake — controls only the locomotive itself.
+
+On the F5 Train Driving Info window you can watch the air system at work. Two Brake Reservoir numbers show the Equalization Reservoir (EQ) and the Brake Cylinder (BC); two BP numbers report the brake-pipe pressure in the lead engine and in the last car of the train; and the brake flow shows the rate of air flowing into the brake pipe during release and recharge.
+
+When you move the train-brake handle, you are commanding this air system, and those F5 readings are your window onto whether the train is charging, releasing, or coming to a stop.
+
 === Speed Limits
 
 Every section of track has a speed limit. In Open Rails the limit is shown on the Track Monitor, and staying under it is the most important habit you can build now. On the Demo Model 1 run from Edinburgh Waverley to Linlithgow you have plenty of margin to practise picking up and dropping speed smoothly.
