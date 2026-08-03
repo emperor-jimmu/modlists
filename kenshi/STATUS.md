@@ -7,6 +7,7 @@ Mod sources: Steam Workshop (primary), Nexus Mods (secondary).
 ## Audit Trail
 | Date | Item | Verdict | Evidence |
 |---|---|---|---|
+| 2026-08-03 | Installation guide written from the Task 3 KMM verdict (COMPATIBLE) | DONE | guide/installation.typ covers game prep (1.0.68 pin), KMM install (Nexus 1765, self-contained/no .NET, Win10+), path resolution, mod fetch (Workshop primary / Nexus secondary, 4 Nexus-primary mods), load order (mods.cfg, "later = higher priority"), launch & verify, per-wave switching (cumulative mods + playsets). Every claim traced to the Task 3 findings in the Decisions table and Notes; UNVERIFIED items (mods.cfg write target, Steam path-detection mechanism, drag-drop direction, no explicit 1.0.68 user confirmation) are flagged inline rather than asserted. |
 | 2026-08-03 | Wave 0 mod verification: Dark UI, Nice Map, Compressed Textures Project, Particle System Override, Kenshi Performance Fix, Kenshi CTD fix patch | VERIFIED x6 | All 6 pages fetched; exact page titles match card names; last-update dates captured (see Accepted Mods table) |
 | 2026-08-03 | RE_Kenshi (Nexus mod 847) excluded at Wave 0 | REJECTED | Page states 1.0.68 installs are "partially downgraded to 1.0.65 for compatibility reasons" - conflicts with the strict 1.0.68 target; logged in mod-ideas.md |
 | 2026-08-03 | Wave 0 wiki fact-check (kenshi.fandom.com) | VERIFIED | The Hub = Wanderer start town; copper nodes near The Hub; recruiting costs cats; early stats = Strength/Toughness/Dexterity/Melee Attack (see Notes) |
