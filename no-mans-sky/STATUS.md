@@ -18,6 +18,12 @@
   https://github.com/Syzzle07/SingularityMM/releases . Installation chapter written from
   these verified facts; exact in-app UI labels beyond the README feature list are not
   documented upstream and are treated as open (see Open Questions).
+- 2026-08-05: **Final build complete.** PDF = `output/Aetherial-Purity.pdf`, **20 pages**.
+  Structure audit passed (verified from the compiled PDF via text extraction): cover
+  (logo, Aetherial Purity, version 6.45.1, page numbers "1 / 20") → TOC → Installation
+  Guide → Wave 0 (First Light) → Wave 1 (The Cartographer) → Wave 2 (The Astral
+  Architect) → Glossary, all sections present in order. 23 placeholder mod cards ship
+  with the user-to-provide contract. `build.bat` verified end-to-end (Typst 0.15.1).
 
 ## Decisions
 
