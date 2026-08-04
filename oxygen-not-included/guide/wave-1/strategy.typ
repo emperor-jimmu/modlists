@@ -13,13 +13,13 @@ The wires you built in Wave 0 carried power; a second kind of wire — the *auto
 
 *Signals.* Automation wires carry one of two states — *green* (on) or *red* (off). A sensor outputs green when its condition is true: a *Liquid Pipe Element Sensor* when the pipe holds water, a *Gas Pipe Element Sensor* when the pipe holds a chosen gas, a *Hydro Sensor* when the liquid in its cell is above a depth you set. Whatever a sensor decides is sent down the wire to whatever the wire touches.
 
-*Reading it.* The automation overlay (the plug icon in the top bar) shows every wire green or red, so the loop's state is visible at a glance — most of "automation" is really just getting this overlay right.
+*Reading it.* The automation overlay shows every wire green or red, so the loop's state is visible at a glance — most of "automation" is really just getting this overlay right.
 
 *Actuators.* Wires only inform; *actuators* act. The two you need first are the *Liquid Shutoff* and *Gas Shutoff* — valves with an automation port that open when the wire is green and close when it is red. A shutoff does not pump; it gates whatever the pump already pushes, so pair it with a pump that runs continuously and let the shutoff decide where the liquid goes.
 
 *Logic.* When a sensor's answer is backwards — you want to act when it is *red* — the *NOT gate* flips it. A hydro sensor says "too low" with a red wire; feed that into a NOT gate and the wire comes out green exactly when you want a pump to run. NOT is the first logic gate and the only one you need for most of Wave 1.
 
-*A first build: the smart battery.* The *Smart Battery* is a battery with an automation output: it sends green when its charge passes a high threshold and red when it drops below a low one — both numbers you set on the battery itself. Wire that output to a *Coal Generator* with an automation port, set the battery to charge to, say, 90% and release at 40%, and the generator now runs only when the battery is genuinely low. When the battery is full the generator stops, the dupes stop hauling coal, and the coal pile stops evaporating. It is the single highest-value automation build in the game, and the template for every later loop: *sensor reads, wire reports, machine reacts.*
+*A first build: the smart battery.* The *Smart Battery* is a battery with an automation output: it sends green when its charge drops below a low threshold and red when it climbs past a high one — both numbers you set on the battery itself. Wire that output to a *Coal Generator* with an automation port, set the battery to charge to, say, 90% and release at 40%, and the generator now runs only when the battery is genuinely low. When the battery is full the generator stops, the dupes stop hauling coal, and the coal pile stops evaporating. It is the single highest-value automation build in the game, and the template for every later loop: *sensor reads, wire reports, machine reacts.*
 
 #callout("Tip:", [The smart battery pair — generator stops when the battery is full, restarts when it is nearly empty — is the colony's first self-running system. Build it before anything fancier: it saves coal, heat and dupe labor from the moment it is wired.])
 
@@ -27,7 +27,7 @@ Once the smart battery works, you have the whole vocabulary — sensor, wire, sh
 
 === Geyser & Vent Taming
 
-Wave 0 dug for its water and gas. Geysers are the map's *renewable* sources: vents and geysers buried in the asteroid that periodically erupt a fixed resource — cool or hot water, steam, natural gas, chlorine, carbon dioxide, and on some maps crude oil or other prizes. They are the reason "survive" becomes "tame": a tapped water geyser feeds the colony forever, a natural gas vent runs generators, a steam vent is a power plant waiting for a turbine. The map marks them as blocked-off rock formations; each hides a machine that erupts on a schedule of active and dormant periods.
+Wave 0 dug for its water and gas. Geysers are the map's *renewable* sources: vents and geysers buried in the asteroid that periodically erupt a fixed resource — cool or hot water, steam, natural gas, chlorine, carbon dioxide, polluted water, hydrogen. They are the reason "survive" becomes "tame": a tapped water geyser feeds the colony forever, a natural gas vent runs generators, a steam vent is a power plant waiting for a turbine. The map marks them as blocked-off rock formations; each hides a machine that erupts on a schedule of active and dormant periods.
 
 *Why they matter.* A geyser is free mass over time — one of the only sources in the game that adds water, gas or oil from nothing. But it all comes with a price: heat. Most erupt hot — sometimes very hot — and a geyser left in the open turns its surroundings into a slow oven. Taming a geyser means doing two things: *boxing it in* so its output stays put, and *pumping its output away* faster than the pocket fills.
 
@@ -44,7 +44,7 @@ Wave 0 dug for its water and gas. Geysers are the map's *renewable* sources: ven
 
 === Heat Management & Steam Turbines
 
-Wave 0 called heat "the slow killer" and told you not to panic. Wave 1 is where you actually answer it, because by now every machine — diffusers, generators, refineries, and the geysers you just tamed — is bleeding heat into the base, and the base slowly, quietly cooks. Crops wither at high temperatures. Dupes take stress damage in hot rooms. And heat never disappears by itself: in ONI, heat only leaves if you *delete* it with a machine built for the job.
+Wave 0 warned that heat slowly creeps toward crop-killing temperatures and told you not to panic. Wave 1 is where you actually answer it, because by now every machine — diffusers, generators, refineries, and the geysers you just tamed — is bleeding heat into the base, and the base slowly, quietly cooks. Crops wither at high temperatures. Dupes take stress damage in hot rooms. And heat never disappears by itself: in ONI, heat only leaves if you *delete* it with a machine built for the job.
 
 *Insulate first.* The cheapest defense is the *Insulated Tile* — a wall that lets almost no heat through. Ring your living and farming rooms with insulated tiles, and keep hot industry — generators, refineries, geyser chambers — outside the ring. Most Wave 1 heat problems are solved by walls and spacing, not machines.
 
