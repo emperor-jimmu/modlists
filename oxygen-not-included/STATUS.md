@@ -4,6 +4,7 @@
 **DLCs:** Base + Spaced Out! + Bionic Booster Pack.
 
 ## Audit Trail
+- 2026-08-04: Final build complete. PDF = output/primordial-outpost-reborn.pdf, 28 pages. Structure audit passed (all frozen chapter sections present, single occurrence each). Mod cards pending user addition (per curation-ownership decision).
 - 2026-08-04: Mod research halted by user direction — the user will add all mods later (no research, no verdicts from this project). Wave 0/1/2 modlist sections are scaffolds for the user to fill. See Decisions.
 - 2026-08-04: Wave-2 anchor research: overhaul-scale mod NOT FOUND as a genuine Krastorio-2-scale overhaul. Closest/borderline candidate: Ronivan's Legacy - Industrial Revolution (https://steamcommunity.com/sharedfiles/filedetails/?id=3557584850). See Decisions + Notes.
 - 2026-08-04: Mod Updater (2018291283) verified: VERIFIED as organizer. Live Workshop item for ONI (app 457140) — 4,540 ratings, 508,196 subscribers, last-updated 29 Jun 2024.
