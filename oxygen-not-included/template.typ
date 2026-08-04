@@ -89,5 +89,3 @@
 // == Glossary
 == Glossary
 #include "guide/glossary.typ"
-
-#label("end")

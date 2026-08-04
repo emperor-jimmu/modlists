@@ -1,11 +1,11 @@
 # Primordial Outpost Reborn - Oxygen Not Included Modlist & Guide
 
-A curated modlist and game guide for **Oxygen Not Included** (Build 744825, released 2026-07-28; DLCs: Spaced Out!, Bionic Booster Pack), organized in three progressively harder "waves" (0-2), each with its own roleplay backstory.
+A game guide and modlist scaffold for **Oxygen Not Included** (Build 744825, released 2026-07-28; DLCs: Spaced Out!, Bionic Booster Pack), organized in three progressively harder "waves" (0-2), each with its own roleplay backstory.
 
-- Modlist: **mods added by the user** — the guide ships with fillable modlist scaffolds (guide/wave-*/); the user pastes verified mod cards there (rules in STATUS.md / spec §4)
+- Modlist: **mods added by the user** — the guide ships with fillable modlist scaffolds (guide/wave-*/); the user pastes verified mod cards there (rules in STATUS.md)
 - Mod organizer: Mod Updater (verified; see STATUS.md)
 - Mod source: Steam Workshop (app 457140)
-- PDF: run `build.bat` to regenerate `output/primordial-outpost-reborn.pdf` (25 pages)
+- PDF: run `build.bat` to regenerate `output/primordial-outpost-reborn.pdf` (28 pages)
 
 ## Mods per wave
 

@@ -135,3 +135,5 @@
 *Radbolt:* A concentrated charge of radiation, collected by the radbolt collector and fired at research buildings. Radbolts are the currency of Spaced Out's advanced research.
 
 *Bionic dupe:* The Bionic Booster Pack's robot dupe. Instead of food and oxygen, it runs on battery charge and has its own mentality mechanic — a dupe with different needs, and a different kind of trouble when those needs are ignored.
+
+#label("end")
