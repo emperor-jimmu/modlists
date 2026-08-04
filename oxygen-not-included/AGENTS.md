@@ -1,6 +1,6 @@
 # Primordial Outpost Reborn - Agent Instructions
 
-Oxygen Not Included (Steam App 457140) modlist and game guide. Target build + DLCs resolved in STATUS.md; DLCs owned: Spaced Out! + Bionic Booster Pack.
+Oxygen Not Included (Steam App 457140) modlist and game guide. Target build resolved in STATUS.md (build gate, spec §6.1); DLCs owned: Spaced Out! + Bionic Booster Pack.
 
 ## Structure
 - `guide/` - wave-based Typst sources (installation, per-wave files, glossary)

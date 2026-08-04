@@ -1,5 +1,8 @@
 # Primordial Outpost Reborn - STATUS
 
+**Target:** resolved via build gate (spec §6.1) — see Decisions.
+**DLCs:** Base + Spaced Out! + Bionic Booster Pack.
+
 ## Audit Trail
 - 2026-08-04: Project started. Spec + plan written (docs/superpowers/).
 
