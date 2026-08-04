@@ -10,6 +10,14 @@
   pending user addition (per curation-ownership decision below).
 - 2026-08-05: Design decisions confirmed with user: build scaffold first (mods supplied
   later), Steam platform, three waves (0/1/2), light ethereal PDF theme.
+- 2026-08-05: Mod organizer resolved: **Singularity** = SingularityMM by Syzzle07
+  (github.com/Syzzle07/SingularityMM), "A Windows-based No Man's Sky Mod Manager"
+  (Tauri v2, GPL-3.0). Verified via GitHub API: README feature list + releases; latest
+  release **v2.2.8** (2026-02-15), installer + portable exe assets; repo last pushed
+  2026-08-04. Sources: https://github.com/Syzzle07/SingularityMM ,
+  https://github.com/Syzzle07/SingularityMM/releases . Installation chapter written from
+  these verified facts; exact in-app UI labels beyond the README feature list are not
+  documented upstream and are treated as open (see Open Questions).
 
 ## Decisions
 
@@ -37,6 +45,9 @@
 - Build number: user to confirm the main menu reads version 6.45.1 before relying on the guide.
 - Singularity: current version and exact UI labels - confirmed from official docs
   (see Notes); user to confirm they match the installed version.
+- `enablemods.txt` requirement: the game's long-standing mod switch in `PCBANKS` is
+  documented as a troubleshooting step; whether 6.45.1 still requires it is unverified
+  (the manager may manage it automatically) - user to confirm from experience.
 
 ## Pending User Inputs
 
