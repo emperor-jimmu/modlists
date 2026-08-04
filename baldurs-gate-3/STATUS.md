@@ -6,6 +6,7 @@
 |-----|------|----------|---------------|-------|
 | ImpUI (ImprovedUI) | 0 | UI Enhancements | 2026-07-31 | mods/366, Patch 8 verified (April 22, 2025 update) |
 | Native Camera Tweaks | 0 | UI Enhancements | 2026-07-31 | mods/945, verified via Nexus search |
+| True Third-Person Camera | 0 | UI Enhancements | 2026-08-04 | mods/23959, verified via direct page visit (v1.1, Relysia) |
 | WASD Character Movement | 0 | UI Enhancements | 2026-07-31 | mods/781, verified via Nexus search |
 | Better Hotbar 2 | 0 | UI Enhancements | 2026-07-31 | mods/2417, verified via Nexus search |
 | Always Show Approvals | 0 | UI Enhancements | 2026-07-31 | mods/4675, verified via Nexus search |

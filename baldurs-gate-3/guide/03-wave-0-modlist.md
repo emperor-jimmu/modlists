@@ -24,6 +24,14 @@ With Patch 8 (Hotfix #36, April 2025), BG3 is highly stable with built-in mod su
 - **Category:** UI Enhancements
 - **Notes:** Configure hotkeys via the mod's settings file to adjust sensitivity and limits.
 
+### [True Third-Person Camera](https://www.nexusmods.com/baldursgate3/mods/23959)
+
+- **Version:** Latest (see mod page)
+- **Description:** Adds a true over-the-shoulder third-person camera closely attached to your character, similar to action-RPGs. Features dynamic FOV when running, smooth crouch transitions, and automatic switching to a distant view during combat and turn-based sequences. Toggle between over-the-shoulder and the standard camera with a keybind.
+- **Dependencies:** Script Extender
+- **Category:** UI Enhancements
+- **Notes:** Fully configurable via Mod Configuration Menu (9162) — adjust POV, camera offset, and height in real time. Pairs perfectly with WASD Character Movement for a third-person action feel. Use this OR Native Camera Tweaks — not both.
+
 ### [WASD Character Movement](https://www.nexusmods.com/baldursgate3/mods/781)
 
 - **Version:** Latest (see mod page)
