@@ -31,7 +31,7 @@ Oxygen Not Included is a colony simulator: you do not steer a character, you com
   [Zoom], [Mouse wheel],
   [Pause / unpause], [Space],
   [Game speed], [1 / 2 / 3 (or the on-screen buttons)],
-  [Open the build menu], [B],
+  [Open the build menu], [Right-click, or the build toolbar at the bottom],
   [Priority overlay], [P],
   [Cancel the current tool], [Esc],
 )
@@ -50,9 +50,9 @@ The whole HUD is a few panels, and each answers one question:
 
 - *The top bar* is your colony's vital signs: the cycle clock, and a portrait strip of your duplicants — each portrait shows that dupe's oxygen, calories and stress. When someone is suffocating, starving or about to snap, it tells you first.
 - *The build menu (bottom)* holds every tool and building by category; the *Dig* and *Mop* tools sit here too.
-- *Speed and pause (top-left)*: pause, then 1×, 2×, 3×.
-- *Overlays (bottom-right)*: icons that tint the map — light, heat, electricity, plumbing. The electrical overlay helps when something stops drawing power.
-- *Notifications (right edge)*: a ticker of events — "Wire overloaded", "Outhouse full", "Slimelung detected". Click an alert to jump to the problem; treat them as a to-do list.
+- *Speed and pause*: pause, then 1×, 2×, 3×. Pausing freely is the first skill — the game only moves when you let it.
+- *Overlays*: icons that tint the map — light, heat, electricity, plumbing. The electrical overlay helps when something stops drawing power.
+- *Notifications*: a ticker of events — "Wire overloaded", "Outhouse full", "Slimelung detected". Click an alert to jump to the problem; treat them as a to-do list.
 - *Top-right tabs*: *Research* (flask) shows the tech tree; *Jobs* assigns roles; *Duplicants* manages priorities and skill points; the schedule clock splits the day into work, sleep and downtime.
 
 Hovering anything — a building, a resource, a research card — shows a tooltip explaining what it is and what it needs. The game's documentation lives there; read it whenever a building surprises you.
@@ -64,7 +64,7 @@ The opening checklist, in order. Do not rush it — pause, do each step, check t
 1. *Pause.* Hit Space and look at what you have: three duplicants, the pod, a small pocket of air.
 2. *Dig a little breathing room.* The pod pocket is cramped — mark a modest chamber, not a mine in every direction.
 3. *Build an outhouse and a wash basin.* Put them close together and close to where the dupes work. Both need periodic emptying — the outhouse into a *Compost*, the basin by hand — because a full outhouse stops working and dupes start using the floor.
-4. *Set up sleeping.* Build a *Cot* for each dupe in a quiet corner. Floor-sleepers wake tired, and tired dupes work slower and stress faster.
+4. *Set up sleeping.* Build a *Cot* for each dupe in a quiet corner. Floor-sleepers wake with a sore back, and tired dupes work slower and stress faster.
 5. *Set priorities.* Open the *Duplicants* tab and split the tasks — one digger-heavy, one builder, one researcher — so they are not all digging while nobody researches.
 6. *Start research.* Build a *Research Station*, assign a dupe with research priority, and queue *Basic Farming* first so planter boxes unlock (see *Research*).
 7. *Unpause and watch.* Let the first jobs complete. Whatever the alerts complain about next is your next job.
@@ -101,13 +101,13 @@ Calories come next. Your pod starts with a small ration of *meal lice*, enough f
 
 Almost everything that keeps the colony alive needs watts, and watts do not appear by themselves.
 
-*The hamster wheel.* The *Manual Generator* produces power while a dupe runs it — labor. Every watt costs a dupe who could be digging or researching; fine for a light or the research station, a treadmill trap for a whole base.
+*The hamster wheel.* The *Manual Generator* produces power while a dupe runs it — labor. Every watt costs a dupe who could be digging or researching; fine for a light or a pump, a treadmill trap for a whole base.
 
 *The coal generator.* The *Coal Generator* burns coal — which you dig up everywhere — for steady, dupe-free power, and it is the wave's main generator. It produces heat and carbon dioxide, so give it a ventilated spot and keep a coal stockpile beside it.
 
 *Wires and capacity.* Every circuit has a limit. The standard wire overloads at roughly 1,000 watts of simultaneous draw — cross that and the wire takes damage, shorts, and can burn the circuit out, machines included. Spread high-draw buildings across separate circuits, or upgrade the wire when you have the research.
 
-#callout("Warning:", [A wire that overloads takes damage and can burn, dropping the whole circuit — and the Oxygen Diffuser on it — at the worst possible moment. Open the electrical overlay (the circuit icon bottom-right), and when a circuit shows more than its rated load, split the consumers before the wire sparks.])
+#callout("Warning:", [A wire that overloads takes damage and can burn, dropping the whole circuit — and the Oxygen Diffuser on it — at the worst possible moment. Open the electrical overlay (the circuit icon), and when a circuit shows more than its rated load, split the consumers before the wire sparks.])
 
 *Batteries.* Generators produce in bursts; *batteries* (the *Small Battery* early, the *Jumbo Battery* soon after) store the surplus so a dip in generation does not dip the colony's power.
 
@@ -123,7 +123,7 @@ Sanitation is the difference between a colony and a plague house — and the fir
 
 *The sieve.* The *Water Sieve* closes the loop: feed it polluted water plus a filtration medium — sand is perfect, and you dig up sand constantly — and it returns clean water, plus a little polluted dirt. It turns a sewage problem into a water supply.
 
-*The classic bathroom loop.* Build a *Lavatory* (a plumbed toilet): pipe clean water in, the polluted water out to the sieve, and the sieve's clean output back. One catch: a lavatory puts out a little more polluted water than it takes in, so the loop slowly makes a surplus — plumb it into your mealwood farm or the base will flood, and never let the loop dead-end.
+*The classic bathroom loop.* Build a *Lavatory* (a plumbed toilet): pipe clean water in, the polluted water out to the sieve, and the sieve's clean output back. One catch: a lavatory puts out a little more polluted water than it takes in, so the loop slowly makes a surplus — pipe it into a *Liquid Reservoir* near the farm or the base will flood, and never let the loop dead-end.
 
 *Don't drown your dupes.* Plan the whole loop before you place a single pipe — the source, the pump (if any), the sieve, and somewhere for the surplus to go. A pump with no pipe does nothing, and a pipe with no destination floods.
 
@@ -196,7 +196,7 @@ If you want to close the chapter with your hands on the keyboard, here is one 15
 
 - *Minute 0–5:* pause. Dig a small chamber around the pod, place an *outhouse* and *wash basin* side by side, and build a *Cot* per dupe in the corner (*Your First Minutes*).
 - *Minute 5–10:* build a *Research Station*, set one dupe's research priority high, and queue *Basic Farming*. Unpause and start digging (*Research*, *Duplicants*).
-- *Minute 10–15:* once the Planter Box unlocks, build a small mealwood farm near your water and plant it. Build a *Manual Generator* and a *Small Battery* to power it (*Food & Farming*, *Power & the Electric Grid*).
+- *Minute 10–15:* once the Planter Box unlocks, build a small mealwood farm near your water and plant it. Build a *Manual Generator* and a *Small Battery* so you have a circuit ready to power the Oxygen Diffuser you are about to build (*Food & Farming*, *Power & the Electric Grid*).
 - *Minute 15–20:* research *Oxygen* and build an *Oxygen Diffuser* on the battery circuit. Feed it the algae you mined, keep research moving with a second dupe, and empty the outhouse when the alert appears (*Oxygen & Water Production*, *Plumbing & Sanitation*, *Duplicants*).
 
 *Checkpoint:* the colony can breathe on its own — the diffuser runs, the research station is busy, food is growing, the outhouse loop is staffed. That is the first stable breath, and the definition of winning Wave 0's first session. Stop there; everything after is the same loop, just bigger.
