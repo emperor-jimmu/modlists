@@ -15,6 +15,6 @@ Wave 2 is the capstone, and the mods here are allowed to be ambitious — they e
 
 The DLC rule is absolute here: every card must match the DLCs you own — *Spaced Out!* and the *Bionic Booster Pack* — and every card must state its DLC dependency out loud. Mods that require the *Aquatic*, *Frosty* or *Prehistoric* packs are out of scope; you do not own them, and this guide will not include mods you cannot run.
 
-As of this release, every card below is *pending addition*: per project decision, this project does not research or select mods — you do. (The Wave 2 anchor research, recorded in STATUS.md, found no overhaul-scale mod for ONI, so the capstone set is yours to curate.) When you are ready, paste one verified mod card per mod, with its Workshop URL, its DLC dependency, and a note recording its power-spike verdict.
+As of this release, every card below is *pending addition*: per project decision, this project does not research or select mods — you do. (The Wave 2 anchor research, recorded in STATUS.md, found no overhaul-scale mod for ONI, so the capstone set is yours to curate.) When you are ready, paste one verified mod card per mod, stating its Workshop URL, DLC dependency, and power-spike verdict.
 
 The mods you add split across three sections by what they change: *Mechanics* for rocket, planetoid, and radiation systems; *Content* for endgame buildings, critters, and recipes; and *Graphics* for overlay and UI clarity across many worlds.
