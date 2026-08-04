@@ -20,13 +20,13 @@
 
 *SPOM:* Self-Powered Oxygen Module — an electrolyzer room wired so its own hydrogen feeds a hydrogen generator, which powers the electrolyzer. Once started, it produces oxygen that is nearly free, and it usually includes a smart battery and a hydro sensor so it runs only when needed.
 
-*Algae:* The green biomass of the slime biomes — the diffuser's fuel and the early colony's oxygen reserve. It is also critter food: shine bugs eat it, and pacu will happily take it.
+*Algae:* The green biomass abundant in the slime biomes — the diffuser's fuel and the early colony's oxygen reserve. It is also critter food: shine bugs eat it, and pacu will happily take it.
 
 *Polluted oxygen:* The foul, germ-laden air that seeps from polluted water and slime. Breathing it risks sickness, but a puft considers it dinner.
 
 *Carbon dioxide:* The heavy gas that sinks — produced by breathing, coal generators and other combustion. It pools in the bottom of the base, where it chokes dupes but feeds slicksters.
 
-*Oxygen mask / atmo suit / exosuit:* Suit clothing that carries its own air supply so a dupe can work in bad atmospheres. The oxygen mask is the cheap early version; the atmo suit — renamed the exosuit in Spaced Out — is the full suit that protects against most hazards and must be refilled at a dock.
+*Oxygen mask / atmo suit / exosuit:* Suit clothing that lets a dupe work in bad atmospheres. The cheap oxygen mask just extends a dupe's breathable air; the atmo suit — renamed the exosuit in Spaced Out — is the full suit that carries its own air, protects against most hazards, and must be refilled at a dock.
 
 *Atmo suit dock:* The building that stores suits and fills them with oxygen. Dupes suit up at the dock on their way out of the base and drop their suits back off on return.
 
@@ -48,7 +48,7 @@
 
 === Power & Heat
 
-*Power grid:* The network of wires and generators that carries electricity around the base. Every wire has a wattage limit, and drawing more than the wire is rated for damages it and starts fires.
+*Power grid:* The network of wires and generators that carries electricity around the base. Every wire has a wattage limit, and drawing more than the wire is rated for damages it and can burn the circuit out.
 
 *Heavi-watt wire:* The industrial-strength wire with a huge capacity — it carries almost any load, at the cost of being ugly, blocking movement, and leaking a fair amount of heat.
 
@@ -118,7 +118,7 @@
 
 *Shutoffs:* Valves with an automation port that open when their wire is green and close when it is red. A shutoff does not pump; it gates whatever the pump already pushes.
 
-*Logic gates:* Circuits that modify signals. The NOT gate flips green to red and back; AND and OR combine inputs. The smart battery paired with a generator through a shutoff is the classic first loop.
+*Logic gates:* Circuits that modify signals. The NOT gate flips green to red and back; AND and OR combine inputs. The smart battery wired straight to a generator's automation port is the classic first loop.
 
 === Spaced Out
 
