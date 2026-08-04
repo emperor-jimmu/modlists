@@ -44,6 +44,7 @@ Authored settlement content — real places, not just denser vibes.
 | [FYX - Riften - Window Consistency](https://www.nexusmods.com/skyrimspecialedition/mods/182707) |  |
 | [The City of Crossed Daggers - Riften Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/168629) | Riften market and canal expansion with new shops, NPCs, and quests. |
 | [Grand Solitude - The Walls of High King Erling](https://www.nexusmods.com/skyrimspecialedition/mods/157506) | Solitude wall and exterior expansion adding new areas and detail. |
+| [Bards College Rework](https://www.nexusmods.com/skyrimspecialedition/mods/182641) | Solitude Bard College architecture/interior overhaul (mesh-only, no gameplay changes). Verify mesh stack vs Grand Solitude / Riton Solitude (choose one) + CS/PBR mesh compat. |
 
 ### Locked Faction-HQ Additions
 
@@ -69,6 +70,9 @@ Authored settlement content — real places, not just denser vibes.
 | [The Great Town of Shor's Stone SSE](https://www.nexusmods.com/skyrimspecialedition/mods/35977) |  |
 | [The Great City Of Winterhold SSE Edition](https://www.nexusmods.com/skyrimspecialedition/mods/17127) | Full Winterhold city overhaul. Incompatible with COTN Winterhold — choose one. |
 | [Spaghetti's Towns - Riverwood](https://www.nexusmods.com/skyrimspecialedition/mods/85356) | Lightweight Riverwood tweaks (clutter, fishing spot, mill supplies). ESL-flagged. |
+| [Fleiwas Riverwood Addition](https://www.nexusmods.com/skyrimspecialedition/mods/182779) | Riverwood object additions. Verify no overlap with Spaghetti's Towns - Riverwood or JK's Whiterun Outskirts. |
+| [Riverwood Edge](https://www.nexusmods.com/skyrimspecialedition/mods/182524) | Decorations, small bridge, and spring at the edge of Riverwood. Same overlap verify as above. |
+| [Fleiwas White River Crossing](https://www.nexusmods.com/skyrimspecialedition/mods/183169) | White River crossing near Embershard Mine. Verify vs Rope Bridges Remastered (149446) + JK's Whiterun Outskirts. |
 | [Spaghetti's Towns - Rorikstead](https://www.nexusmods.com/skyrimspecialedition/mods/85802) | Lightweight Rorikstead tweaks (food shipments, crops, farm animals). ESL-flagged. |
 | [COTN Winterhold Blacksmith](https://www.nexusmods.com/skyrimspecialedition/mods/44964) | Adds a blacksmith NPC and shop to COTN Winterhold. Requires COTN Winterhold. |
 | [Riton Solitude](https://www.nexusmods.com/skyrimspecialedition/mods/98390) |  Solitude architecture overhaul. Likely conflicts with Grand Solitude — choose one.  |

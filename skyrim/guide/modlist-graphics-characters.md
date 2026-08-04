@@ -27,6 +27,7 @@ Baseline visual treatment for player bodies, skin textures, and common creature 
 | Mod | Notes |
 | --- | --- |
 | [RaceMenu SE](https://www.nexusmods.com/skyrimspecialedition/mods/29624) | Character creation framework. |
+| [Racemenu Enhancer](https://www.nexusmods.com/skyrimspecialedition/mods/182536) | RaceMenu addon: smooth camera, player rotation, freeze (incl. blinking), idle previews, hide UI, strip equipment. |
 | High Poly Head 1.4 SE | [Google Drive mirror](https://drive.google.com/drive/folders/1V_jcYzwTiKnSv8Dbv-7Z0hh9SWbkn6Bi). Pair with Expressive Facegen Morphs + Expressive Facial Animation (Female + Male). |
 | [SlimFantasy — 3BAv2 Body Preset](https://www.nexusmods.com/skyrimspecialedition/mods/119145) | Female Bodyslide preset. Slim/lean dancer physique. |
 | [HIMBO Preset — Chadborn](https://www.nexusmods.com/skyrimspecialedition/mods/155757) | Male Bodyslide preset. Muscular build. |

@@ -30,6 +30,7 @@ How broad, readable, and build-defining magic should feel once race, standing-st
 | [360 Ward](https://www.nexusmods.com/skyrimspecialedition/mods/156225)                     | Alternative | all            | Wards block from any direction. Third-person improvement.                       |
 | [Sanguine Symphony](https://www.nexusmods.com/skyrimspecialedition/mods/148388)            | Alternative | #1, #4         | Blood-magic spells costing Health. Compatible with all overhauls.               |
 | [Revealing Rune](https://www.nexusmods.com/skyrimspecialedition/mods/120935)               | Candidate   | all            | Makes rune traps visible. Evaluate after primary overhaul locked.               |
+| [Cancel Spells - Proper Spell Sheathing](https://www.nexusmods.com/skyrimspecialedition/mods/181192) | Add-on      | all            | Cancel a cast to recover magicka instead of lowering hands. QoL, no records.  |
 
 ### Risks & Compatibility
 
@@ -62,6 +63,7 @@ How Skyrim's detection system should be recalibrated for modern stealth mechanic
 | Mod                                                                                       | Type        | Dial   | Notes                                                    |
 |-------------------------------------------------------------------------------------------|-------------|--------|----------------------------------------------------------|
 | [Realistic AI Detection (RAID)](https://www.nexusmods.com/skyrimspecialedition/mods/2345) | Baseline    | #1, #4 | Script-free detection recalibration. 23.8K endorsements. |
+| [Hide in Bushes](https://www.nexusmods.com/skyrimspecialedition/mods/170114)             | Add-on      | #1, #4 | Bush cover reduces detection. No scripts, third-person friendly. |
 | Discipline-first route                                                                    | Alternative | #2, #3 | Rely on perk overhaul + Foundations bugfix mods.         |
 | Deferred high-commitment branch                                                           | Alternative | all    | Add stealth toolkit only if playtesting requires it.     |
 

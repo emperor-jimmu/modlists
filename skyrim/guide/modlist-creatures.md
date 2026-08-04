@@ -30,6 +30,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | [Fox Replacer — Mihail](https://www.nexusmods.com/skyrimspecialedition/mods/163477) | Alternative | Fox model replacer. ESL-flagged. |
 | [Spriggans SE](https://www.nexusmods.com/skyrimspecialedition/mods/90547) | Alternative | Spriggan model/texture replacer. |
 | [Riv's Wolves of the Wild — Diverse Wolf Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/173704) | Alternative | BOS-based wolf model variety. Verify compatibility with Diverse True Wolves and Dogs (38058). |
+| [Canidae - A Wolf Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/182994) | Alternative | Mesh/texture replacer for red/black/ice wolves + spectral/fiery summons. Pick one wolf replacer vs Riv's Wolves of the Wild. |
 | [Diverse Dragon Priests — Pixie's Creature Series](https://www.nexusmods.com/skyrimspecialedition/mods/105519) | Alternative | BOS-based dragon priest mask/clothing variety. Verify vs Apophysis Dragon Priest Masks (5800). |
 | [Diverse Dragon Priests — Xtudo Optimized Textures](https://www.nexusmods.com/skyrimspecialedition/mods/105713) | Add-on | Optimized textures for Diverse Dragon Priests. Install after base. |
 | [Skeletons SE](https://www.nexusmods.com/skyrimspecialedition/mods/124394) | Baseline | **Locked.** Skeleton model replacer by Xtudo. Consistent undead visual direction with locked Draugrs SE and Spider SE baselines. 2,002 endorsements. |

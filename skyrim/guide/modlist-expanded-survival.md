@@ -8,8 +8,12 @@ How much day-to-day bodily upkeep the list wants: enough hunger, fatigue, cold, 
 | Mod                                                                                                                                        | Type        | Dial       | Notes                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-------------|------------|-----------------------------------------------------------------------------------------------------------------------------|
 | [Starfrost — A Survival Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/97536)                                               | Baseline    | #1, #2, #4 | **Locked.** Simonrim progression family. |
+| [Immersive Diseases 2.0](https://www.nexusmods.com/skyrimspecialedition/mods/158221)                                                       | Add-on      | #1, #4     | Disease overhaul: OAR animations, RaceMenu overlays, blood/dirt compat. Reqs OAR/RaceMenu/SkyUI/SPID (all in stack). Fills the disease axis Starfrost doesn't own. Test. |
 
 ### Risks & Compatibility
+
+- Confirm Starfrost (Simonrim) ships no same-named disease system so Immersive Diseases owns the affliction axis cleanly (its scope is cold/hunger/fatigue). Versions 1.1+ feature per-disease OAR animations and RaceMenu overlays.
+- 9 open bug reports on Nexus — load-test disease acquisition/progression before locking.
 
 - A heavy survival system can dominate pacing and crowd out other expanded systems.
 - A very light setup can undershoot the immersive-travel pillar if later downtime decisions expect more texture.

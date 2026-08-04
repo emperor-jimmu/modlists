@@ -91,6 +91,7 @@ Environmental soundscapes, creature ambient sounds, and weather audio to reinfor
 | [Wildwood Echoes](https://www.nexusmods.com/skyrimspecialedition/mods/112008) | Forest and woodland soundscape expansion. |
 | [Blackreach Eerie Ambience](https://www.nexusmods.com/skyrimspecialedition/mods/112114) | Blackreach-specific ambient atmosphere. |
 | [Murder of Songbirds](https://www.nexusmods.com/skyrimspecialedition/mods/111766) | Ambient bird audio in wilderness areas. |
+| [Whistling in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/114781) | Selected voice types whistle tunes outdoors. ESL-flagged, lightweight. |
 | [Nordic Winds](https://www.nexusmods.com/skyrimspecialedition/mods/112370) | Weather-specific wind sound effects for colder regions. |
 | [Whispering Tomes of Apocrypha](https://www.nexusmods.com/skyrimspecialedition/mods/113423) | Apocrypha ambient soundscape. |
 | [Falmer 'Dialogue' Overhaul - Echolocation](https://www.nexusmods.com/skyrimspecialedition/mods/114625) | Falmer echolocation vocalisation replacer. Creature-audio companion layer. |
