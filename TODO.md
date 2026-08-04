@@ -9,7 +9,7 @@
 [x] 6. Kenshi
 [x] 7. Factorio
 [x] 8. Oxygen Not Included
-[ ] 9. X-COM 2
+[~] 9. X-COM 2
 [ ] 10. Monster Hunter Rise
 [ ] 11. No Man's Sky
 [ ] 12. X-Plane 12
