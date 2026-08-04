@@ -39,6 +39,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Three Kingdoms  | Total War: Three Kingdoms       | [`threekingdoms/`](./threekingdoms/)               | Active |
 | Warhammer 3     | Total War: Warhammer 3          | [`warhammer-3/`](./warhammer-3/)                   | Active |
 | Witcher 3       | The Witcher 3                   | [`witcher-3/`](./witcher-3/)                       | Active |
+| X-COM 2         | X-COM 2 (War of the Chosen)     | [`x-com-2/`](./x-com-2/)                           | Active |
 | X4              | X4: Foundations                 | [`x4-foundations/`](./x4-foundations/)             | Active |
 
 ## Adding a new modlist
@@ -187,6 +188,9 @@ warhammer-3/            # Total War: Warhammer 3 modlist
 ├── AGENTS.md
 └── ...
 witcher-3/              # The Witcher 3 modlist
+├── AGENTS.md
+└── ...
+x-com-2/                 # X-COM 2 (War of the Chosen) modlist
 ├── AGENTS.md
 └── ...
 x4-foundations/         # X4: Foundations modlist
