@@ -10,3 +10,16 @@
 }
 
 == Wave 2: Content
+
+Content mods add things to build, ranch, grow, or research at the endgame scale — new buildings, new critters, new recipes for the last stretch of Spaced Out. The standing rule is *proportionate cost*: anything powerful must cost what it is worth in materials, power, or labor, or it fails the power-spike gate.
+
+// ============================================================================
+// MOD CARDS GO HERE — added by the user (per project decision, this project
+// does not research or select mods). Paste one #mod-entry(...) call per mod.
+// Requirements (spec §4, §5): verified workshop URL; DLC dependency must be
+// explicitly stated on each card and MUST be owned (Base / Spaced Out! /
+// Bionic Booster Pack; NOT Aquatic/Frosty/Prehistoric); STAT-CHANGING mods
+// must pass the power-spike gate (no ex-nihilo resources, no free heat
+// deletion, no tech/labor bypass, no morale/skill breaks, no all-knowing info
+// incl. geyser reveal); record the power-spike verdict in each card's Notes.
+// ============================================================================

@@ -10,3 +10,16 @@
 }
 
 == Wave 2: Graphics
+
+Graphics mods change only how the game looks and how it tells you what is happening — the overlays and map clarity you depend on while running a network of worlds. They never touch simulation values, so they carry no power-spike risk; they must simply stay honest — clearer, not smarter.
+
+// ============================================================================
+// MOD CARDS GO HERE — added by the user (per project decision, this project
+// does not research or select mods). Paste one #mod-entry(...) call per mod.
+// Requirements (spec §4, §5): verified workshop URL; DLC dependency must be
+// explicitly stated on each card and MUST be owned (Base / Spaced Out! /
+// Bionic Booster Pack; NOT Aquatic/Frosty/Prehistoric); STAT-CHANGING mods
+// must pass the power-spike gate (no ex-nihilo resources, no free heat
+// deletion, no tech/labor bypass, no morale/skill breaks, no all-knowing info
+// incl. geyser reveal); record the power-spike verdict in each card's Notes.
+// ============================================================================
