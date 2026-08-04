@@ -285,6 +285,7 @@ Non-combat downtime making Skyrim feel lived-in when the player isn't dungeon-de
 | [Immersive Carcass Carrying](https://www.nexusmods.com/skyrimspecialedition/mods/99867) |  SHO companion.                                                                                       |
 | [Hunters Loot](https://www.nexusmods.com/skyrimspecialedition/mods/119348) | SHO companion. |
 | [Streamlined Fishing](https://www.nexusmods.com/skyrimspecialedition/mods/80683) |                                                                                                       |
+| [More Pond Fish](https://www.nexusmods.com/skyrimspecialedition/mods/119886) | Adds more pond fish variety. Complements Simple Fishing Overhaul + Fishiary. |                                                                                                       |
 | [Become a Bard / Bards Reborn](https://www.nexusmods.com/skyrimspecialedition/mods/47994) |  Not compatible with SGT without patch.                                                               |
 | [Fishing Extension Framework](https://www.nexusmods.com/skyrimspecialedition/mods/139626) | Required for new-lands fishing. |
 

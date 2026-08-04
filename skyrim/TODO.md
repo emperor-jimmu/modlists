@@ -19,10 +19,5 @@
 - **Singalongs of Skyrim (129812)** — DEFERRED to verification. ESL-flagged, ~1,000 end, AI-Generated tag. Bard singalong dialogue + original songs + 12 instrumental tunes. Verify dialogue overlap with locked `Skyrim's Got Talent` (106106) + `BA Bard Songs` (audio.md:18) before adopting.
 - **Headshots Kill SKSE (181461)** — REJECTED (for now). Ranged headshot/OHKO mod. Precision + SKSE Menu Framework reqs already in stack, but ranged lethality fights the difficulty dial (Arena / Simply Balanced / KYE2). 112 end, AI-Generated tag, crash-fix history (1.11/1.41). Revisit only if ranged combat needs headshot depth.
 - **College of Winterhold Bridge Lights (182546)** — REJECTED. Built for the author's own "Ultimate College of Winterhold"; list locks the Obscure's + JK's College sub-stack, so bridge geometry differs. 32 end. Misalignment risk not worth it.
-
-## Personal review
-
-Retained triage rejects (2026-08-04) — not adopted; kept for reconsideration. All other entries were adopted into their owning sections, already-present duplicates deleted, or moved to `## Review next`.
-
-1. Speed of Strolling - Travel Overhaul - <https://www.nexusmods.com/skyrimspecialedition/mods/183198> — **Redundant.** Terrain-based movement speed overlaps `S.M.C.` (97204, third-person.md:50, locked movement) slope-speed/per-state tuning + `Walk Speed Tuner` (179215) candidate. Do not add.
-2. New Tavern Music - <https://www.nexusmods.com/skyrimspecialedition/mods/113349> — **Redundant/optional.** Tavern band music overlaps `Melodies of Civilization` tavern tracks (audio.md:15); add only via Synthesis music merge.
+- Speed of Strolling - Travel Overhaul - <https://www.nexusmods.com/skyrimspecialedition/mods/183198> — **Redundant.** Terrain-based movement speed overlaps `S.M.C.` (97204, third-person.md:50, locked movement) slope-speed/per-state tuning + `Walk Speed Tuner` (179215) candidate. Do not add.
+- New Tavern Music - <https://www.nexusmods.com/skyrimspecialedition/mods/113349> — **Redundant/optional.** Tavern band music overlaps `Melodies of Civilization` tavern tracks (audio.md:15); add only via Synthesis music merge.

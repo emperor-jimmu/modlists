@@ -144,16 +144,19 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420) | Drifting iceberg meshes in northern waters. |
 | [Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634) | Animated ice floe meshes in cold regions. |
 
-### OIF Ecosystem — Physics-Based Fire & Destruction Effects
+### OIF Ecosystem — Physics-Based Interactions & Destruction
 
 | Mod | Notes |
 | --- | --- |
 | [Dynamic Inn Fireplace - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/155492) | Physics-enabled inn fireplace embers, smoke, and debris via OIF. Adds ambient fire life to interiors. |
 | [No Fire During The Rain](https://www.nexusmods.com/skyrimspecialedition/mods/161369) | Exterior campfires and braziers are extinguished during rain/storms. Requires OIF. |
+| [Release The Soul - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/149693) | Break filled soul gems to release the trapped soul. Requires OIF. No conflict with the soul-gem retexture/description stack. |
+| [Burn Those Insects - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/180747) | Burn frostbite spider and chaurus egg sacs to ash. Requires OIF. |
+| [Stalactite Falls - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/159798) | Shoot stalactites to drop them on enemies below. Requires OIF. Dungeon-hazard interaction. |
 
 ### Risks & Compatibility
 - **R.A.S.S. + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. handles actor surfaces. Should coexist without conflicts — verify in testing.
-- OIF-based fire effects depend on the OIF framework being installed and stable in the core library stack.
+- OIF-based interactions depend on the OIF framework being installed and stable in the core library stack.
 
 ---
 

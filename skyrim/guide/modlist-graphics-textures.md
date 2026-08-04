@@ -218,6 +218,8 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 |-------------------------|---------------------------------------------------------------------------------------------|
 | [Improved Sparks](https://www.nexusmods.com/skyrimspecialedition/mods/19831) |  Orange spark effects on metal impacts and grindstones. FOMOD with density options (1X-20X).  |
 | [Lightning VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/124520) | Lightning bolt VFX replacer. Mesh-only, no ESP. |
+| [Light Magic VFX Edit](https://www.nexusmods.com/skyrimspecialedition/mods/151787) | Candlelight/Magelight VFX glow replacer. Mesh-only, no ESP. Sibling of Dragon Breath/Lightning VFX Edit. |
+| [Sanguine Symphony](https://www.nexusmods.com/skyrimspecialedition/mods/148388) | Combat impact overhaul: adaptive blood splatters, detailed decals, HD wound textures, custom SFX, slow-motion kills. Verify overlap with Dynamic Bloodpool Framework and Simplicity of Splatter — decal/impact ownership; check slow-mo kills against Precision/Valhalla/BFCO feel. |
 | [Dynamic Footprints SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/175254) | Persistent footprints on snow, mud, sand. Add after blood/decals baseline is stable. |
 
 ### Risks & Compatibility

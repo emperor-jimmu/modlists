@@ -31,6 +31,7 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 | Mod                                                                                                | Type        | Dial       | Notes                                                                |
 |----------------------------------------------------------------------------------------------------|-------------|------------|----------------------------------------------------------------------|
 | [Gourmet — A Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/96876)          | Baseline    | #1, #2, #4 | Balanced modern route.                                               |
+| [Cooking with Fire - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/153449)             | Add-on      | #1, #2, #4 | Cook raw ingredients with fire spells/staves/shouts via OIF. Scriptless, ESPFE. Verify cooked-item records match Gourmet's food edits. |
 | [Complete Alchemy and Cooking Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/19924) | Alternative | #1, #2, #4 | Integrated alchemy + cooking.                                        |
 | [Alchemy Potions and Food Adjustments](https://www.nexusmods.com/skyrimspecialedition/mods/5877)   | Alternative | all        | Lighter fallback.                                                    |
 | [Mealtime](https://www.nexusmods.com/skyrimspecialedition/mods/22496)                              | Alternative | all        | Recipe-density companion if Gourmet's scope feels too narrow.        |
@@ -58,6 +59,7 @@ What crafting is supposed to do: lightly improve vanilla smithing, become a broa
 | Mod                                                                                                | Type        | Dial           | Notes                                                                                  |
 |----------------------------------------------------------------------------------------------------|-------------|----------------|----------------------------------------------------------------------------------------|
 | [Ars Metallica](https://www.nexusmods.com/skyrimspecialedition/mods/321)                           | Baseline    | #1, #2, #3, #4 | Smithing XP, tanning, mining improvements. No heavy rules restructuring.               |
+| [Glowing Ore Veins - Light Placer](https://www.nexusmods.com/skyrimspecialedition/mods/139043)    | Add-on      | all            | Ore veins emit light in the dark via Light Placer (CS-native bulb framework). Pairs with Glowing Ore Veins 300 SSE - Optimized. |
 | [Honed Metal](https://www.nexusmods.com/skyrimspecialedition/mods/61015)                           | Baseline    | #1, #2, #3, #4 | NPC crafting/enchanting services. Makes gold economy matter.                           |
 | [Thaumaturgy — Enchanting Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/57138)     | Baseline    | #1, #2, #4     | Simonrim-aligned. Pairs with Mysticism + Adamant. Prerequisite for artifact overhauls. |
 | [Complete Crafting Overhaul Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/28608) | Alternative | #1, #2, #4     | High-complexity material logic and crafting rules.                                     |
@@ -87,6 +89,7 @@ Also requires `Tools Not Weapons (Pickaxe and Woodcutter Axe) DAR Animations` fr
 | Mod | Dial | Notes |
 | --- | ---- | ----- |
 | [Simplicity of Seeding - Better Hearthfires and Farming CC Planter Scripts](https://www.nexusmods.com/skyrimspecialedition/mods/94428) | all | Improves Hearthfires planter scripts for more reliable farming. ESL-flagged. |
+| [Cut The Wheat - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/151606) | all | Harvest wheat by cutting farm-field stalks. Requires OIF. |
 
 ---
 

@@ -8,7 +8,7 @@ function Ensure-Fonts {
     .SYNOPSIS
         Downloads Inter and JetBrains Mono fonts to assets/fonts/ if missing.
     #>
-    $fontDir = Join-Path $root "assets" "fonts"
+    $fontDir = Join-Path (Join-Path $root "assets") "fonts"
     $null = New-Item -ItemType Directory -Path $fontDir -Force
 
     $fonts = @{
@@ -38,8 +38,8 @@ function Resize-CoverImage {
     .SYNOPSIS
         Resizes the cover image to 1200px wide, maintaining aspect ratio.
     #>
-    $source = Join-Path $root "assets" "Gemini_Generated_Image_ivqvcgivqvcgivqv.png"
-    $target = Join-Path $root "assets" "cover-resized.png"
+    $source = Join-Path (Join-Path $root "assets") "Gemini_Generated_Image_ivqvcgivqvcgivqv.png"
+    $target = Join-Path (Join-Path $root "assets") "cover-resized.png"
 
     if (-not (Test-Path $source)) { return $null }
     if (Test-Path $target) { return $target }

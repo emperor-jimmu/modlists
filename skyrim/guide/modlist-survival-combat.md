@@ -51,6 +51,7 @@ Tunes encounter harshness and time-to-kill on top of the combat framework from �
 - **Skyrim Revamped - Complete Enemy Overhaul** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/14598)) — High-commitment. Add only if ordinary testing shows enemy behavior still too flat.
 - **SkyTactics - Dynamic Combat Styles** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/131148)) — SkyPatcher-based NPC combat style variety.
 - **NPCs Take Cover - Smarter Anti-Cheese AI** `[all]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/111890)) — NPCs take cover during combat instead of standing in the open. Lightweight, no new records.
+- **Seeking Out Sneaks - Improved AI Search Behavior** `[#1, #4]` ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80416)) — Enemies search further and hunt sneaking players in dungeons. Anti-cheese without touching lethality — dial-compatible. Verify interplay with RAID (→ `Expanded Systems`) and the AI Stealth Overhaul Synthesis patch. Unchanged since Dec 2022 — verify 1.6.1170.
 
 ---
 
