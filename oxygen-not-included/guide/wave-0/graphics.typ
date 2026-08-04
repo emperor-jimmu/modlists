@@ -10,3 +10,15 @@
 }
 
 == Wave 0: Graphics
+
+Graphics mods change only how the game looks and how it tells you what is happening — nothing about the simulation underneath. Expect cleaner overlays, color-coding that makes statuses readable at a glance, and clearer or quieter notifications. A mod in this section should make the colony easier to read, never easier to cheat.
+
+// ============================================================================
+// MOD CARDS GO HERE — added by the user (per project decision, this project
+// does not research or select mods). Paste one #mod-entry(...) call per mod.
+// Requirements (spec §4, §5): verified workshop URL; CLIENT-ONLY or
+// BEHAVIORAL-NEUTRAL only for Wave 0; DLC must be owned (Base / Spaced Out!
+// / Bionic Booster Pack; NOT Aquatic/Frosty/Prehistoric); power-spike gate
+// must pass (no ex-nihilo resources, no free heat deletion, no tech/labor
+// bypass, no morale/skill breaks, no all-knowing info incl. geyser reveal).
+// ============================================================================
