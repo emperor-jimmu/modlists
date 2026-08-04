@@ -16,3 +16,18 @@
 - **DF Edit NPC face replacers (11 mods)** — Now unblocked (NPC baseline confirmed). Individual Distinct Faces edits for Camilla (177048), Rayya (179325), Angi (178488), Sapphire (161017), Saadia (169287), Jenassa (164775), Aranea (176413), Brelyna (166402), Eola (161817), Fura Bloodmouth (171382), Ysolda (169910). Some are SkyPatched, some ESP-based. Will selectively override the comprehensive NPC baseline.
 - **Vampire Clans and Bloodlines (37517)** — DEFERRED. Evaluate after combat stack and perk overhaul are stable. CS compat, LoTD patches, third-person/gamepad. Conflicts possible with Sacrosanct and Open World Loot.
 - **Natural Learning (148990)** — Now unblocked (Adamant locked as perk baseline). Passive skill tree/perk system by Zzyxzz. Requires SkyPatcher + SkyPatcher Keyword Framework. Evaluate: does the passive tree augment or conflict with the XP/leveling dial (Experience + Static Skill Leveling + Static with Hard Threat)? AP patch available (162537). Does NOT replace Adamant — augments it.
+
+## Personal review
+
+1. Fleiwas Riverwood Addition - <https://www.nexusmods.com/skyrimspecialedition/mods/182779>
+2. Riverwood Edge - <https://www.nexusmods.com/skyrimspecialedition/mods/182524>
+3. Fleiwas White River Crossing - <https://www.nexusmods.com/skyrimspecialedition/mods/183169>
+4. Skyfall's Whiterun Bridges Replacer - <https://www.nexusmods.com/skyrimspecialedition/mods/183481>
+5. Cancel Spells - Proper Spell Sheathing - <https://www.nexusmods.com/skyrimspecialedition/mods/181192>
+6. Kill Feed - <https://www.nexusmods.com/skyrimspecialedition/mods/179053>
+7. Headshots Kill SKSE - <https://www.nexusmods.com/skyrimspecialedition/mods/181461>
+8. Bards College Rework - <https://www.nexusmods.com/skyrimspecialedition/mods/182641>
+9. College of Winterhold Bridge Lights - <https://www.nexusmods.com/skyrimspecialedition/mods/182546>
+10. Canidae - A Wolf Replacer - Realistic Wolves in Skyrim - <https://www.nexusmods.com/skyrimspecialedition/mods/182994>
+11. Speed of Strolling - Travel Overhaul - <https://www.nexusmods.com/skyrimspecialedition/mods/183198>
+12. Racemenu Enhancer - <https://www.nexusmods.com/skyrimspecialedition/mods/182536>

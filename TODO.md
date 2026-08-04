@@ -8,20 +8,9 @@
 [x] 5. Open Rails
 [x] 6. Kenshi
 [x] 7. Factorio
-[ ] 8. Oxygen Not Included
-[ ] 9. X-COM 2
-[ ] 10. Derail Valley ***
-[ ] 11. Stormworks: Build and Rescue***
-[ ] 12. Dragon Age: Inquisition
-[ ] 13. Fallout: New Vegas
-[ ] 14. Dragon Age: Origins
-[ ] 15. TES Morrowind
-[ ] 16. Monster Hunter Rise
-[ ] 17. No Man's Sky
-[ ] 18. My Summer Car ***
-[ ] 19. X-Plane 12
-[ ] 20. Civilization IV + my own mod -> 4K fonts
-[ ] 21. Civilization VI
-[ ] 22. OMSI 2***
-[ ] 23. TES Oblivion Remasted ***
-[ ] 24. Fallout 3
+[x] 8. Oxygen Not Included
+[ ] 9. Monster Hunter Rise
+[ ] 10. No Man's Sky
+[ ] 11. X-Plane 12
+[ ] 12. Civilization IV + my own mod -> 4K fonts
+[ ] 13. Civilization VI

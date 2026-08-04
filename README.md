@@ -27,6 +27,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Mass Effect     | Mass Effect (Legendary Edition) | [`masseffect/`](./masseffect/)                     | Active |
 | M&B II          | Mount & Blade II: Bannerlord    | [`mb2-bannerlord/`](./mb2-bannerlord/)             | Active |
 | Open Rails      | Open Rails                      | [`open-rails/`](./open-rails/)                     | Active |
+| Oxygen Not Included | Oxygen Not Included          | [`oxygen-not-included/`](./oxygen-not-included/)   | Active |
 | RDR2            | Red Dead Redemption 2           | [`rdr2/`](./rdr2/)                                 | Active |
 | Shogun 2        | Total War: Shogun 2             | [`shogun2/`](./shogun2/)                           | Active |
 | RimWorld        | RimWorld                        | [`rimworld/`](./rimworld/)                         | Active |
@@ -150,6 +151,9 @@ mb2-bannerlord/         # Mount & Blade II: Bannerlord modlist
 ├── AGENTS.md
 └── ...
 open-rails/             # Open Rails modlist
+├── AGENTS.md
+└── ...
+oxygen-not-included/    # Oxygen Not Included modlist
 ├── AGENTS.md
 └── ...
 project-zomboid/        # Project Zomboid modlist
