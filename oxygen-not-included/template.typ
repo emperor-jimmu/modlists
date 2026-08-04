@@ -23,9 +23,9 @@
 #show link: set text(fill: rgb("#1fa2a0"))
 
 // == Cover Page
-#v(3.5cm)
-#align(center)[#image("assets/logo.jpg", width: 45%)]
-#v(3.5cm)
+#v(2.5cm)
+#align(center)[#image("assets/logo.jpg", width: 34%)]
+#v(2.5cm)
 #align(center)[
   #text(size: 36pt, weight: "bold", fill: rgb("#1fa2a0"), font: "Cinzel", "Primordial Outpost Reborn")
   #v(0.8em)
