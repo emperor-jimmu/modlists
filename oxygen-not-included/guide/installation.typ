@@ -48,7 +48,7 @@ Enabling and disabling mods is unchanged: that stays in the in-game Mods menu. M
 
 === Fetching the Wave's Mods
 
-The mods in this guide are added per wave, not all at once. Each wave's Modlist section holds that wave's mod cards, and each card carries the Workshop URL for its mod. In this release the mod cards are pending addition — the cards live in each wave's Modlist section, and you will find them there once they are filled in.
+The mods in this guide are added per wave, not all at once. Each wave's Modlist section holds that wave's mod cards, and each card carries the Workshop URL for its mod. In this release the cards are pending addition.
 
 To fetch a wave's mods, open each card's Workshop page in turn and subscribe. Mod Updater then keeps every subscribed mod updated for you.
 
