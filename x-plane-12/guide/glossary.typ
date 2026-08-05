@@ -41,6 +41,8 @@
 + *Flaps / Slats* — high-lift devices that allow slower, steeper approaches and short landings.
 + *Mixture* — the fuel/air ratio control (piston aircraft): lean as you climb, rich for takeoff.
 + *Torque / ITT* — turboprop instruments: engine torque (power) and turbine inlet temperature (temperature limit — the one to watch on hot days).
++ *N1 / N2* — turbofan compressor speeds: N1 (fan) is the thrust gauge, N2 (core) the "engine running" gauge; thrust is managed against N1 targets.
++ *EGT* — exhaust gas temperature: the turbofan's critical limit gauge on hot days and at high power.
 + *Beta range / Reverse* — turboprop propeller pitch below flight idle: beta for precise ground control, reverse for stopping.
 + *Pressurization* — the cabin pressure system that lets turbine aircraft fly high without masks; set the cruise altitude and the cabin climbs/descends gently.
 + *Fly-by-wire* — computer-mediated flight controls (modern airliners); the computer protects the envelope.

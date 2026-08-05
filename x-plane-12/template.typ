@@ -71,6 +71,7 @@
   #show heading.where(level: 3): set text(fill: gold)
   === Wave 1: The Ferry
   #include "guide/wave-1/strategy.typ"
+  #include "guide/wave-1/how-to-fly.typ"
   #include "guide/wave-1/modlist.typ"
   #include "guide/wave-1/mechanics.typ"
   #include "guide/wave-1/content.typ"
@@ -82,6 +83,7 @@
   #show heading.where(level: 3): set text(fill: navy)
   === Wave 2: The Charter
   #include "guide/wave-2/strategy.typ"
+  #include "guide/wave-2/how-to-fly.typ"
   #include "guide/wave-2/modlist.typ"
   #include "guide/wave-2/mechanics.typ"
   #include "guide/wave-2/content.typ"
@@ -91,8 +93,9 @@
 
 #block[
   #show heading.where(level: 3): set text(fill: rust)
-  === Wave 3: The Line
+  === Wave 3: The Dash Ace
   #include "guide/wave-3/strategy.typ"
+  #include "guide/wave-3/how-to-fly.typ"
   #include "guide/wave-3/modlist.typ"
   #include "guide/wave-3/mechanics.typ"
   #include "guide/wave-3/content.typ"
@@ -102,8 +105,9 @@
 
 #block[
   #show heading.where(level: 3): set text(fill: tan)
-  === Wave 4: The Dash Ace
+  === Wave 4: The Line
   #include "guide/wave-4/strategy.typ"
+  #include "guide/wave-4/how-to-fly.typ"
   #include "guide/wave-4/modlist.typ"
   #include "guide/wave-4/mechanics.typ"
   #include "guide/wave-4/content.typ"
@@ -115,6 +119,7 @@
   #show heading.where(level: 3): set text(fill: navy)
   === Wave 5: The Heavy Ace
   #include "guide/wave-5/strategy.typ"
+  #include "guide/wave-5/how-to-fly.typ"
   #include "guide/wave-5/modlist.typ"
   #include "guide/wave-5/mechanics.typ"
   #include "guide/wave-5/content.typ"

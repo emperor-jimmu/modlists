@@ -4,14 +4,14 @@
 
 ===== The Story So Far
 
-*The Heavy Ace.* The regional years ended with a transfer you did not expect: the cargo division. The company's Boeing 777 Freighter flies the world's night — pallets of medicine, cars, and tomorrow's economy, on long-haul tracks across oceans and empty sky. It is the largest, most automated, and most demanding aircraft you will ever fly: a hundred tonnes of payload, a flight deck of screens, and legs measured in hours and continents. The captain's seat on the 777F is the top of the ladder in Ace's Realm — everything you learned in six waves, distilled into one very large, very patient airplane that asks you to think ahead in hours, not minutes. The ace's final exam is not flying it. It is *running* it.
+*The Heavy Ace.* The line years ended with a transfer you did not expect: the cargo division. The company's Boeing 777 Freighter flies the world's night — pallets of medicine, cars, and tomorrow's economy, on long-haul tracks across oceans and empty sky. It is the largest, most automated, and most demanding aircraft you will ever fly: a hundred tonnes of payload, a flight deck of screens, and legs measured in hours and continents. The captain's seat on the 777F is the top of the ladder in Ace's Realm — everything you learned in six waves, distilled into one very large, very patient airplane that asks you to think ahead in hours, not minutes. The ace's final exam is not flying it. It is *running* it.
 
 ===== Strategy for the Wave
 
 Wave 5 is *heavy long-haul operations*: the aircraft flies itself; the operation — payload, fuel, oceans, and the night — is the flight.
 
 + *Think in hours* — long-haul is strategy at continental scale: the fuel plan, the oceanic route, the alternates, and the crew day are decided before pushback and defended all night. Every decision is made twice: once on the ground, once at 35,000 ft.
-+ *The automated flight deck* — the 777's fly-by-wire and advanced FMC fly the airplane superbly; your job is the mode discipline of Wave 3, scaled up: program, cross-check, monitor, and always know what the automation thinks it is doing.
++ *The automated flight deck* — the 777's fly-by-wire and advanced FMC fly the airplane superbly; your job is the mode discipline of Wave 4, scaled up: program, cross-check, monitor, and always know what the automation thinks it is doing.
 + *The night* — most long-haul legs are darkness: night flying is a systems game (lights, automation, fuel, and the instruments), and the horizon-less world makes the scan and the plan everything.
 + *Payload is destiny* — the 777F's cargo pays for the flight: weight and balance, payload-fuel trade-offs, and the performance pages are the real cockpit conversation.
 + *Aircraft addon* — this wave's aircraft is the *777F* you supplied as the wave's study aircraft — a payware freighter addon (developer/URL: user to provide; see the Modlist section for the card and its status).

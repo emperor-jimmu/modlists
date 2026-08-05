@@ -16,12 +16,12 @@ study, rendered as a colorful PDF via Typst.
 
 | Wave | Theme | Aircraft | Status |
 |---|---|---|---|
-| 0 - First Solo | Complete beginners; vanilla + UI/QoL only | Cessna 172 (stock) | guide complete; mods pending user |
-| 1 - The Ferry | Glass cockpit, cross-country, weather decisions | Cirrus SR22 (stock) | guide complete; mods pending user |
-| 2 - The Charter | Turbine, pressurization, FMS, IFR | King Air C90B (stock) | guide complete; mods pending user |
-| 3 - The Line | Airline operations, FMC, automation | Boeing 737-800 (stock) | guide complete; mods pending user |
-| 4 - The Dash Ace | High-speed turboprop, regional ops | Dash 8 Q400 (FlyJSim Q4XP - user addon) | guide complete; mod card pending URL |
-| 5 - The Heavy Ace | Heavy long-haul, oceanic, night ops | Boeing 777 Freighter (777F - user addon) | guide complete; mod card pending URL |
+| 0 - First Solo | Complete beginners; vanilla + UI/QoL only | Cessna 172 (stock) | complete |
+| 1 - The Ferry | Glass cockpit, cross-country, weather decisions | SR22 G1000 (Take Command - user addon) | complete; URL supplied |
+| 2 - The Charter | Turbofan, FMS, learning IFR | Challenger 650 (Hot Start - user addon) | complete; URL supplied |
+| 3 - The Dash Ace | High-speed turboprop, regional ops | Dash 8 Q400 (FlyJSim Q4XP - user addon) | complete; URL supplied |
+| 4 - The Line | Airline operations, FMC, automation | Boeing 737-800 (stock) | complete |
+| 5 - The Heavy Ace | Heavy long-haul, oceanic, night ops | 777-200ERF (FlightFactor 777F - user addon) | complete; URL supplied |
 
 Waves 1-5 add content and mechanics but **no pure power spikes**.
 

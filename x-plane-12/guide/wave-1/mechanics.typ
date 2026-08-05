@@ -13,7 +13,7 @@ The SR22 is the classroom for the systems every later wave assumes: the glass co
 
 ===== Autopilot Basics
 
-+ *Modes* — heading select, altitude select/hold, vertical speed, and navigation tracking (following the loaded route). Learn them in this order; the 737's FMC in Wave 3 is the same ideas at airline scale.
++ *Modes* — heading select, altitude select/hold, vertical speed, and navigation tracking (following the loaded route). Learn them in this order; the 737's FMC in Wave 4 is the same ideas at airline scale.
 + *Engage / disengage* — engage with the airplane trimmed and stable; disengage by hand before you need to — never let the autopilot fight you.
 + *A pilot remains* — the autopilot flies what is programmed; you still manage power, configure flaps, and watch the weather. It is a crewmember, not a replacement.
 

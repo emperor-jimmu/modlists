@@ -22,7 +22,7 @@
 
 ===== Night & Low-Visibility Flying
 
-+ *The night systems game* — lights, instruments, and automation: night flying is flown on the scan and the plan, with the horizon gone. The Q400's low-altitude weather skills, scaled to a dark ocean.
++ *The night systems game* — lights, instruments, and automation: night flying is flown on the scan and the plan, with the horizon gone. The earlier waves' weather and low-visibility skills, scaled to a dark ocean.
 + *Low-visibility approaches* — CAT II/III capability: the autopilot flies the approach to very low minimums; your job is the briefing, the monitoring, and the decision at the decision altitude. The hand-fly below is optional; the call is not.
 + *The crew day* — long-haul is crew resource management: rest, rhythm, and the discipline of the sterile cockpit during the busy phases. The ace flies the day, not just the leg.
 

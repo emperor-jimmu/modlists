@@ -4,28 +4,28 @@
 
 ===== The Story So Far
 
-*The Line.* The charter years bought you a type rating and a logbook the size of a small novel, and a regional airline noticed. Now you sit in the right seat of a Boeing 737-800 — and within a year, the left. The schedule is a spreadsheet; the airplane is a system; the passengers are people who think "today" means "now". Your world has changed scale: a single leg is three hundred souls and a hundred tonnes of jet at thirty-five thousand feet, and the margin for casual error is exactly zero. This wave is where the sim stops being a flight game and becomes an operations job — and where the *ace* in Ace's Realm starts to mean something.
+*The Dash Ace.* The charter years made you a systems pilot, and a regional airline likes the look of that. The schedule you come to love is the one the big jets cannot fly: the regional grid — short legs, tight turns, small fields, and a turboprop that cruises like a jet and lands like a mountain goat. The airline hands you the left seat of the Dash 8 Q400, the fastest turboprop airliner in the world, and a timetable measured in minutes, not hours. The Q400 is a pilot's airplane: turbine power, a highly automated cockpit, and performance demands (steep approaches, precise energy management, prop handling at the edges) that keep you honest every single leg. This is where *ace* stops being a title and becomes a skill set.
 
 ===== Strategy for the Wave
 
-Wave 3 is *airline operations*: the aircraft is a well-behaved machine that will fly itself perfectly — your job is the operation around it.
+Wave 3 is *high-performance turboprop operations*: jet speeds, prop rules, and the brutal efficiency of a regional schedule.
 
-+ *The FMC is the contract* — the flight management computer holds the route, the performance, and the vertical profile. Program it completely, cross-check it twice, and fly what it says while it flies what you programmed.
-+ *Crew discipline* — flows and checklists, callouts and readbacks, and the sterile cockpit: below ten thousand feet, the talk is flying. Even in single-pilot practice, *say* the callouts — the habit is the safety.
-+ *Plan the whole day* — fuel, payload, alternates, and the weather at both ends: the airline plan starts before the pushback, in the briefing, not in the cockpit.
-+ *Automation as a tool* — the autopilot and auto-throttle fly; you manage the automation: modes, targets, and the constant question of whether the box is doing what you think it is.
-+ *The descent is the flight* — most of the challenge is getting from cruise to the runway: the top-of-descent decision, the arrival, the approach, and the go-around that is always legal and always available.
++ *Fly the prop, think the jet* — the Q400 cruises at airliner speeds, but the engines are turboprops: torque, temperature limits, and propeller management (beta, reverse, feather) are the daily mechanics of every flight.
++ *Energy is everything* — steep approaches and short runways are the Q400's signature: the descent is a continuous energy calculation, and the propeller's reverse/beta authority is your brake. Fly the profile; do not chase it.
++ *The minute game* — regional flying lives and dies on turnaround: brief quickly, program the FMC fast, and fly a clean first time. The Q400 rewards the prepared and punishes the reactive.
++ *Weather at low altitude* — the regional grid lives in the weather the big jets climb out of: icing, wind shear, and marginal ceilings are the daily commute. Your Wave 2 instrument discipline and the Challenger's automation habits now run at regional pace.
++ *Aircraft addon* — this wave's aircraft is the *FlyJSim Q4XP*, a payware Dash 8 Q400 you supplied as the wave's study aircraft (see the Modlist section for the card and its status).
 
 ===== Progression Goals
 
-1. Complete a full airline leg: briefing, cold-and-dark start, FMC setup, pushback (Better Pushback), taxi, takeoff, cruise, descent, ILS approach, landing, and shutdown — with callouts throughout.
-2. Fly a departure and arrival with published SID/STAR procedures in the FMC.
-3. Manage a fuel/performance scenario (alternate, diversion, or holding) from the briefing data.
-4. Fly one approach to autopilot-guided minimums and hand-fly the landing from the flare — the transition that separates simmers from operators.
-5. Graduate: when the line feels like routine, the Q400's regional grid in Wave 4 is your new commute.
+1. Master the Q400's flows: cold start, FMC program, and a full regional leg with callouts.
+2. Fly a steep approach and short-field landing using the propeller's beta/reverse authority precisely.
+3. Run a three-leg regional day on time, in weather, with an alternate at every stop.
+4. Handle an engine-out drill and an icing encounter per the aircraft's checklist without drama.
+5. Graduate: when the minute game feels slow, the 737 line in Wave 4 is your next seat.
 
 ===== Mission Ideas
 
-+ *The morning bank* — three legs in one day with real weather and a connection to protect.
-+ *The diversion* — the classic airline drama: destination goes below minimums; fly the alternate and explain it with the calm of someone who planned for it.
-+ *The night edge* — a late arrival into a busy airport with the arrival, the sequence, and fatigue (your own) as the story.
++ *The grid day* — a morning bank of three short legs with 20-minute turns and weather at every field.
++ *The island run* — a short, steep approach into a field that barely has a runway; the Q400's specialty.
++ *The icing morning* — a cold day with freezing levels right at pattern altitude: use the de-icing systems and the weather picture to run the schedule without bending it.

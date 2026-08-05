@@ -22,7 +22,7 @@ Wave 1 is where flying becomes *navigation*: the airplane is easy, the journey i
 2. Fly a full leg in the glass cockpit using a loaded flight plan and the autopilot.
 3. Make one genuine weather decision (divert, delay, or turn back) and be right.
 4. Shoot your first instrument approach — even VFR, even in good weather — to learn the flow.
-5. Graduate: when a 200-mile leg feels routine, the King Air in Wave 2 is waiting.
+5. Graduate: when a 200-mile leg feels routine, the Challenger 650 in Wave 2 is waiting.
 
 ===== Mission Ideas
 

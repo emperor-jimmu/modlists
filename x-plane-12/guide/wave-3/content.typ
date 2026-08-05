@@ -2,7 +2,7 @@
 
 ==== Wave 3: Content
 
-Content for the airline wave: the network — hub airports, the routes the 737 flies, and scenery that makes a full airline operation feel real. Anything that adds an airport, a route, or a reason to run a schedule belongs here.
+Content for the regional wave: the grid — small hubs, short fields, and the route network the Q400 serves. Scenery that makes a fast-turnaround regional day feel real belongs here.
 
 Per project rule, content mods come from you — cards below are *pending addition*.
 

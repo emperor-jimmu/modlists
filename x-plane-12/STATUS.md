@@ -31,6 +31,16 @@
   -> Glossary, all sections present in order. 20 mod cards ship: 2 user-supplied aircraft
   (FJS Q4XP, 777F) + 18 pending-user placeholders with the user-to-provide contract.
   `build.bat` verified end-to-end (Typst 0.15.1).
+- 2026-08-05 (update round): Wave order swapped (3 = *The Dash Ace* / Q400, 4 = *The Line* /
+  737-800) for progression; Wave 2 aircraft changed from the stock King Air C90B to the
+  user-supplied *Hot Start Challenger 650* (turbofan bizjet - strategy and mechanics
+  rewritten); Wave 1 aircraft changed to the user-supplied *Take Command SR22 G1000*.
+  URLs supplied by the user for four addons: FlyJSim Q4XP and FlightFactor 777-200ERF
+  (store.x-plane.org), Hot Start Challenger 650 and SR22 G1000 (x-aviation.com) - all four
+  mod cards updated. How-to-fly tutorials pre-filled for waves 1-5 (glass-cockpit
+  cross-country, Learning IFR, the regional turboprop, the FMC step by step, the long haul)
+  and included in the template. Glossary extended with turbofan terms (N1/N2, EGT).
+  PDF rebuilt (38 pages).
 
 ## Decisions
 
@@ -47,11 +57,13 @@
   documented with usage + install prose in `guide/foundational.typ`. Installed once, used
   across all waves.
 - **Waves (2026-08-05):** 0 = *First Solo* (C172; complete beginners; vanilla + UI/QoL
-  only), 1 = *The Ferry* (SR22; glass cockpit, cross-country), 2 = *The Charter*
-  (King Air C90B; turbine + IFR), 3 = *The Line* (737-800; airline ops), 4 = *The Dash Ace*
-  (Dash 8 Q400 / FlyJSim Q4XP; high-speed turboprop regional), 5 = *The Heavy Ace*
-  (777F; heavy long-haul). Each wave is its own new-game setup with an RP backstory;
-  waves 1-5 add mechanics with no pure power spikes.
+  only), 1 = *The Ferry* (Take Command SR22 G1000; glass cockpit, cross-country),
+  2 = *The Charter* (Hot Start Challenger 650; turbofan + IFR), 3 = *The Dash Ace*
+  (Dash 8 Q400 / FlyJSim Q4XP; high-speed turboprop regional), 4 = *The Line* (737-800;
+  airline ops), 5 = *The Heavy Ace* (FlightFactor 777-200ERF; heavy long-haul). Each wave is
+  its own new-game setup with an RP backstory; waves 1-5 add mechanics with no pure power
+  spikes. Wave order amended the same day (3 <-> 4, Q400 before the 737) for progression;
+  Wave 2 aircraft changed from the stock King Air C90B to the user-supplied Challenger 650.
 - **PDF theme (2026-08-05):** night-sky aviation. Palette derived from `assets/logo.jpg`
   (deep navy `#10233D`, sky blue `#2E6FB8`, gold `#C9A227`, tan `#C0A060`, rust `#B4552D`,
   ice `#F1F6FB`). Fonts: Bahnschrift / Georgia. Typst 0.15.1 via `build.bat` ->
@@ -77,9 +89,10 @@
 
 ## Pending User Inputs
 
-- URLs, versions, and dependencies for the 8 foundational plugins (7 of 8; openSAM has its
-  URL).
-- FJS Q4XP and 777F: developer/URL/version/dependencies (the two user-supplied aircraft).
+- URLs for 7 of the 8 foundational plugins (openSAM's URL is supplied); current versions and
+  any dependencies for all eight.
+- Current versions and any dependencies for the four user-supplied aircraft addons (FlyJSim
+  Q4XP, FlightFactor 777-200ERF, Hot Start Challenger 650, SR22 G1000) - URLs supplied.
 - All per-wave content/graphics/mechanics mod cards (waves 0-5): user to provide per card -
   name + URL, dependencies, system/mechanic impact, notes (load order, config).
 

@@ -32,10 +32,12 @@ Mod organizer: **XFast Manager**. Decisions and open questions live in `STATUS.m
 - Compatibility heuristic (the user's rule, documented in the guide, never applied by us):
   if a specific mod version is unknown, use the patch/release date.
 - Six waves: **0 = First Solo** (C172, complete beginners; vanilla + UI/QoL only),
-  **1 = The Ferry** (SR22), **2 = The Charter** (King Air C90B), **3 = The Line** (737-800),
-  **4 = The Dash Ace** (Dash 8 Q400 / FlyJSim Q4XP, user-supplied addon),
-  **5 = The Heavy Ace** (777F, user-supplied addon). Each wave is its own new-game setup with
-  an RP backstory. Waves 1-5 add mechanics but no pure power spikes.
+  **1 = The Ferry** (Take Command SR22 G1000), **2 = The Charter** (Hot Start Challenger 650),
+  **3 = The Dash Ace** (Dash 8 Q400 / FlyJSim Q4XP), **4 = The Line** (737-800),
+  **5 = The Heavy Ace** (FlightFactor 777-200ERF). The C172 and 737-800 are stock aircraft;
+  the other four are user-supplied addons (URLs supplied, versions/dependencies pending).
+  Each wave is its own new-game setup with an RP backstory. Waves 1-5 add mechanics but no
+  pure power spikes, and each ships a pre-filled `how-to-fly.typ` tutorial.
 - `STATUS.md` records decisions, notes, and open questions only - never mod validation results.
 - No fabrication: content that cannot be verified goes to STATUS.md open questions, never into
   guide prose.

@@ -2,7 +2,7 @@
 
 ==== Wave 3: Graphics
 
-The airline wave's visual needs are practical: weather that makes the operation mean something, night lighting for late arrivals, and readability at the high workload moments. The foundational toolset (AutoOrtho, X-Camera) stays in play.
+Visual needs this wave: weather presentation that makes the regional commute real, and lighting for the early-morning/late-evening grid. The foundational toolset (AutoOrtho, X-Camera) stays in play.
 
 Per project rule, visual mods come from you — cards below are *pending addition*.
 
