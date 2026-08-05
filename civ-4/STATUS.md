@@ -32,3 +32,4 @@ Living decision log: design notes, open questions, and user instructions. No mod
 ## User instructions log
 
 - 2026-08-05: Initial spec — project structure, 4-wave system, mod policy (never touch the mod list), PDF requirements (Typst 0.15/0.15.1 + batch script), STATUS.md as decision log, conflicts-mods.md and mod-ideas.md excluded from the PDF.
+- 2026-08-05: User request — modlist is empty, so no 4K font-size mod exists in the list; added the idea ("4K UI / font-size mod, larger fonts + alignment at 4K") to `mod-ideas.md`, Wave 0 (UI/QoL).

@@ -4,6 +4,6 @@ Future ideas and candidates, not part of the list. **NOT included in the PDF.**
 
 | Idea / mod | Wave | Why interesting | Status |
 |---|---|---|---|
-| _user to provide_ | _user to provide_ | _user to provide_ | _user to provide_ |
+| 4K UI / font-size mod (larger fonts, proper alignment at 4K) | 0 (UI/QoL) | UI text is very small at 4K resolution — a font-size/alignment fix would make the game readable on modern displays | Idea |
 
-No entries yet — populated by the project owner.
+Entries added by the project owner.
