@@ -27,6 +27,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Mass Effect     | Mass Effect (Legendary Edition) | [`masseffect/`](./masseffect/)                     | Active |
 | M&B II          | Mount & Blade II: Bannerlord    | [`mb2-bannerlord/`](./mb2-bannerlord/)             | Active |
 | Monster Hunter Rise | Monster Hunter Rise         | [`monster-hunter-rise/`](./monster-hunter-rise/)   | Active |
+| No Man's Sky    | No Man's Sky                   | [`no-mans-sky/`](./no-mans-sky/)                   | Active |
 | Open Rails      | Open Rails                      | [`open-rails/`](./open-rails/)                     | Active |
 | Oxygen Not Included | Oxygen Not Included          | [`oxygen-not-included/`](./oxygen-not-included/)   | Active |
 | RDR2            | Red Dead Redemption 2           | [`rdr2/`](./rdr2/)                                 | Active |
@@ -153,6 +154,9 @@ mb2-bannerlord/         # Mount & Blade II: Bannerlord modlist
 ├── AGENTS.md
 └── ...
 monster-hunter-rise/    # Monster Hunter Rise modlist
+├── AGENTS.md
+└── ...
+no-mans-sky/            # No Man's Sky modlist
 ├── AGENTS.md
 └── ...
 open-rails/             # Open Rails modlist

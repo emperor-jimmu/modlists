@@ -11,7 +11,7 @@
 [x] 8. Oxygen Not Included
 [x] 9. X-COM 2
 [x] 10. Monster Hunter Rise
-[~] 11. No Man's Sky
+[x] 11. No Man's Sky
 [ ] 12. X-Plane 12
 [ ] 13. Civilization IV + my own mod -> 4K fonts
 [ ] 14. Civilization VI
@@ -20,3 +20,4 @@
 [ ] 17. Derail Valley
 [ ] 18. My Summer Car
 [ ] 19. OMSI 2
+[ ] 20. BeamNG
