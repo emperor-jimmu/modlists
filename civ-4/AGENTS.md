@@ -6,9 +6,9 @@ Structured modlist + game guide/tutorial (and glossary) for **Sid Meier's Civili
 
 - The mod list is supplied **exclusively by the user**.
 - Treat every user-supplied mod as authoritative, exactly as the user stated it.
-- If the user omits a field (URL, dependencies, system/mechanic impact, notes), write **"user to provide"** — never fill it in from knowledge, inference, or research.
+- If the user omits a field (URL, dependencies, system/mechanic impact, notes), write **"user to provide"** — never fill it in from knowledge, inference, or research, unless the user explicitly asks for it to be retrieved: then record it as sourced from the mod's own material, with the user as final authority.
 - Mod entries are recorded verbatim in `guide/20-modlist.typ`, organized by wave.
-- Compatibility statements about BTS 3.19 come from the user only — never assert compatibility ourselves.
+- Compatibility statements about BTS 3.19 come from the user only — never assert compatibility ourselves. When the user asks, the mod's own stated requirements may be recorded with attribution to the mod's material.
 - Do not generate content for `conflicts-mods.md` or `mod-ideas.md` — those are the user's own tracking files.
 
 ## Structure
