@@ -13,7 +13,7 @@
 [x] 10. Monster Hunter Rise
 [x] 11. No Man's Sky
 [x] 12. X-Plane 12
-[~] 13. Civilization IV
+[x] 13. Civilization IV
 [ ] 14. Civilization VI
 [ ] 15. Monster hunter Wilds
 [ ] 16. Stormworks
