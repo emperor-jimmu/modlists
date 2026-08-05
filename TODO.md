@@ -12,7 +12,7 @@
 [x] 9. X-COM 2
 [x] 10. Monster Hunter Rise
 [x] 11. No Man's Sky
-[~] 12. X-Plane 12
+[x] 12. X-Plane 12
 [ ] 13. Civilization IV + my own mod -> 4K fonts
 [ ] 14. Civilization VI
 [ ] 15. Monster hunter Wilds
