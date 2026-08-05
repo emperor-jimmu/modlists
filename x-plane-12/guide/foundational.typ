@@ -5,7 +5,7 @@
 This chapter documents the *foundational plugins and tools* of Ace's Realm. They are the base of the modlist: installed once, available in every wave, and assumed by the wave guides. They were supplied as a group — Navigraph, LittleNavMap, AutoOrtho, X-Camera, AviTab, X-ATC-Chatter, openSAM, and Better Pushback — and each entry below explains what it does, how to install it, and how to use it.
 
 #callout("Note:", [
-  Provenance. The usage and installation prose in this chapter is general guidance written from general knowledge, not verified against each tool's current release — per this project's rules, mods are not researched here. Exact versions, current menu labels, and compatibility with your 12.4.3 install are yours to confirm from each mod's own page (use the patch/release-date heuristic from the Installation chapter). Where a field of a mod card was not supplied by you, the card says *user to provide* — and openSAM's URL below is the one you supplied.
+  Provenance. The usage and installation prose in this chapter is general guidance written from general knowledge, not verified against each tool's current release — per this project's rules, mods are not researched here. Exact versions, current menu labels, and compatibility with your 12.4.3 install are yours to confirm from each mod's own page (use the patch/release-date heuristic from the Installation chapter). The download links below were added at your request and verified to resolve on 2026-08-05 — each points to the tool's official site or repository, which is also where you confirm the current version.
 ])
 
 ===== Navigraph (subscription & setup)
@@ -20,7 +20,7 @@ Navigraph is a subscription service that keeps your simulator's navigation data 
 *Install & setup*:
 
 1. Create an account at the service's site and take a subscription (the tiers differ in products and device limits — pick the one that covers your sims).
-2. Install the *Navigraph Hub* application (the account/launcher/update center) from the service's download page.
+2. Install the *Navigraph Hub* application (the account/launcher/update center) from the official site — #link("https://navigraph.com")[navigraph.com].
 3. Inside the Hub, install the *FMS Data Manager* component, tell it about X-Plane 12, and download the current AIRAC cycle. It writes the data into the sim's `Custom Data/` folder.
 4. For charts in the cockpit, see AviTab below — with your account linked, AviTab's tablet can show your Navigraph charts.
 5. Keep the subscription active and refresh the cycle each month (the Hub notifies you); every 28 days a new cycle lands.
@@ -29,10 +29,10 @@ Navigraph is a subscription service that keeps your simulator's navigation data 
 
 #mod-entry(
   "Navigraph",
-  url: none,
+  url: "https://navigraph.com",
   deps: none,
   impact: "Replaces/updates the sim's navigation data with current AIRAC cycles and provides real instrument charts (also in the cockpit via AviTab).",
-  notes: "Subscription-based; monthly data refreshes; writes to the sim's Custom Data folder. Exact URL and current version: user to provide.",
+  notes: "Subscription-based; monthly data refreshes; writes to the sim's Custom Data folder. Current version and any dependencies: user to provide.",
 )
 
 ===== LittleNavMap
@@ -43,7 +43,7 @@ LittleNavMap is a free, external (separate-window) flight planning and moving-ma
 
 *Install*:
 
-1. Download the latest release from the official LittleNavMap page (URL: user to provide) and extract the archive to any folder — no installer needed.
+1. Download the latest release from the official site — #link("https://littlenavmap.org")[littlenavmap.org] — and extract the archive to any folder — no installer needed.
 2. Launch the application (e.g., `LittleNavmap.exe` on Windows).
 
 *Setup & usage*:
@@ -57,10 +57,10 @@ LittleNavMap is a free, external (separate-window) flight planning and moving-ma
 
 #mod-entry(
   "LittleNavMap",
-  url: none,
+  url: "https://littlenavmap.org",
   deps: none,
   impact: "External flight planning and moving map; exports flight plans the sim loads; live-tracks your aircraft over UDP.",
-  notes: "Freeware; runs outside the sim; needs the sim's UDP data output enabled for live tracking. Exact URL and current version: user to provide.",
+  notes: "Freeware; runs outside the sim; needs the sim's UDP data output enabled for live tracking. Current version and any dependencies: user to provide.",
 )
 
 ===== AutoOrtho
@@ -71,7 +71,7 @@ AutoOrtho streams orthophoto imagery (real satellite/aerial photos) into X-Plane
 
 *Install & setup*:
 
-1. Download the AutoOrtho application from its official page (URL: user to provide) and install it.
+1. Download the AutoOrtho application from its official repository — #link("https://github.com/kubilus1/autoortho")[github.com/kubilus1/autoortho] (the current build is on the releases page) — and install it.
 2. Point it at your X-Plane 12 folder and choose an imagery source and region(s) you fly in; let it build/download the tile set (the first download is the big one — after that it streams).
 3. The app installs/links its scenery entry into `Custom Scenery/` — make sure it sits in the ortho/mesh position of the load order: *below* airports and overlays (see Scenery Load Order in the Installation chapter). XFast Manager's smart sorting handles this.
 4. Start the AutoOrtho launcher *before* X-Plane 12 each session, then fly normally.
@@ -84,10 +84,10 @@ AutoOrtho streams orthophoto imagery (real satellite/aerial photos) into X-Plane
 
 #mod-entry(
   "AutoOrtho",
-  url: none,
+  url: "https://github.com/kubilus1/autoortho",
   deps: none,
   impact: "Streams photoreal ortho ground textures into the sim on demand (scenery/visual only; no flight-model or system changes).",
-  notes: "Requires internet while flying, disk cache, and correct scenery load order (below airports/overlays). Launcher must run before the sim. Exact URL and current version: user to provide.",
+  notes: "Requires internet while flying, disk cache, and correct scenery load order (below airports/overlays). Launcher must run before the sim. Current version and any dependencies: user to provide.",
 )
 
 ===== X-Camera
@@ -98,7 +98,7 @@ X-Camera is a freeware camera system plugin. The sim's default views work, but X
 
 *Install*:
 
-1. Download X-Camera (URL: user to provide) and extract the plugin folder.
+1. Download X-Camera from the developer's site — #link("https://www.stickandrudderstudios.com/x-camera/")[stickandrudderstudios.com/x-camera] (a free version is available there) — and extract the plugin folder.
 2. Copy the plugin folder into `X-Plane 12/Resources/plugins/` — either by hand (folder, not contents) or by dropping the archive onto XFast Manager.
 
 *Setup & usage*:
@@ -112,10 +112,10 @@ X-Camera is a freeware camera system plugin. The sim's default views work, but X
 
 #mod-entry(
   "X-Camera",
-  url: none,
+  url: "https://www.stickandrudderstudios.com/x-camera/",
   deps: none,
   impact: "Custom camera system: saved views, transitions, per-aircraft sets; camera/immersion only.",
-  notes: "Bindings are set in the sim's Keyboard/Joystick settings; per-aircraft camera sets save with each aircraft. Exact URL and current version: user to provide.",
+  notes: "Bindings are set in the sim's Keyboard/Joystick settings; per-aircraft camera sets save with each aircraft. Current version and any dependencies: user to provide.",
 )
 
 ===== AviTab
@@ -126,7 +126,7 @@ AviTab is a freeware plugin that puts a tablet in the cockpit. It shows PDFs (ap
 
 *Install*:
 
-1. Download AviTab (URL: user to provide) and extract the plugin folder.
+1. Download AviTab from its repository — #link("https://github.com/TeamAvitab/avitab")[github.com/TeamAvitab/avitab] (the active home; downloads are on the releases page) — and extract the plugin folder.
 2. Copy it into `X-Plane 12/Resources/plugins/` (by hand or via XFast Manager).
 
 *Setup & usage*:
@@ -140,10 +140,10 @@ AviTab is a freeware plugin that puts a tablet in the cockpit. It shows PDFs (ap
 
 #mod-entry(
   "AviTab",
-  url: none,
+  url: "https://github.com/TeamAvitab/avitab",
   deps: none,
   impact: "In-cockpit tablet: PDF charts/manuals, moving map, optional Navigraph charts integration.",
-  notes: "PDFs go into the plugin's document folder; bind a key/button to open it in aircraft without a 3D tablet. Exact URL and current version: user to provide.",
+  notes: "PDFs go into the plugin's document folder; bind a key/button to open it in aircraft without a 3D tablet. Current version and any dependencies: user to provide.",
 )
 
 ===== X-ATC-Chatter
@@ -154,7 +154,7 @@ X-ATC-Chatter is a freeware ambient-radio plugin. It plays realistic, location-a
 
 *Install*:
 
-1. Download X-ATC-Chatter (URL: user to provide) and extract the plugin folder.
+1. Download X-ATC-Chatter from the developer's site — #link("https://www.stickandrudderstudios.com/x-atc-chatter-1-7-2/")[stickandrudderstudios.com/x-atc-chatter-1-7-2] — and extract the plugin folder.
 2. Copy it into `X-Plane 12/Resources/plugins/` (by hand or via XFast Manager).
 
 *Setup & usage*:
@@ -167,10 +167,10 @@ X-ATC-Chatter is a freeware ambient-radio plugin. It plays realistic, location-a
 
 #mod-entry(
   "X-ATC-Chatter",
-  url: none,
+  url: "https://www.stickandrudderstudios.com/x-atc-chatter-1-7-2/",
   deps: none,
   impact: "Ambient background ATC/company radio chatter (immersion/audio only; does not change the sim's ATC or flight model).",
-  notes: "Configure volume and packs in the plugin menu; mute it when you need to hear the sim's real ATC. Exact URL and current version: user to provide.",
+  notes: "Configure volume and packs in the plugin menu; mute it when you need to hear the sim's real ATC. Current version and any dependencies: user to provide.",
 )
 
 ===== openSAM
@@ -205,7 +205,7 @@ Better Pushback is a freeware plugin that gives you a proper pushback tug with a
 
 *Install*:
 
-1. Download Better Pushback (URL: user to provide) and extract the plugin folder.
+1. Download Better Pushback from its repository — #link("https://github.com/skiselkov/BetterPushbackC")[github.com/skiselkov/BetterPushbackC] (downloads are on the releases page) — and extract the plugin folder.
 2. Copy it into `X-Plane 12/Resources/plugins/` (by hand or via XFast Manager).
 
 *Setup & usage*:
@@ -219,10 +219,10 @@ Better Pushback is a freeware plugin that gives you a proper pushback tug with a
 
 #mod-entry(
   "Better Pushback",
-  url: none,
+  url: "https://github.com/skiselkov/BetterPushbackC",
   deps: none,
   impact: "Interactive pushback tug with a drawn route (ground handling/QoL; no flight-model changes).",
-  notes: "Trigger command and rebind in the sim's keyboard settings; pair with openSAM for a full gate experience. Exact URL and current version: user to provide.",
+  notes: "Trigger command and rebind in the sim's keyboard settings; pair with openSAM for a full gate experience. Current version and any dependencies: user to provide.",
 )
 
 === Where They Fit

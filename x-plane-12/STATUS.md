@@ -41,6 +41,15 @@
   cross-country, Learning IFR, the regional turboprop, the FMC step by step, the long haul)
   and included in the template. Glossary extended with turbofan terms (N1/N2, EGT).
   PDF rebuilt (38 pages).
+- 2026-08-05 (links + prose round): Download links added to all 8 foundational plugins at
+  the user's request, in the prose and the mod cards. Sources verified to resolve
+  2026-08-05: navigraph.com, littlenavmap.org, github.com/kubilus1/autoortho,
+  stickandrudderstudios.com/x-camera/, github.com/TeamAvitab/avitab (active repo - fpw/avitab
+  is archived and points here), stickandrudderstudios.com/x-atc-chatter-1-7-2/,
+  github.com/skiselkov/BetterPushbackC (official repo), plus the user-supplied
+  github.com/hotbso/openSAM. Wave 2-5 mechanics and how-to-fly chapters rewritten from
+  bullet lists into teaching prose (turbofan systems, energy management, the instrument
+  scan, the FMC flow, oceanic operations). PDF rebuilt.
 
 ## Decisions
 
@@ -78,10 +87,10 @@
   auto-detection) - user to confirm in-app behavior of the installed version; also whether
   the installed version supports profiles/save states for per-wave switching (guide assumes
   the wave cards as the checklist).
-- Foundational plugins: exact URLs, current versions, and default keybinds/menu labels are
-  general guidance only - user to confirm against each tool's current release (per the
-  patch/release-date heuristic). openSAM's URL is supplied; its install specifics per the
-  project's own docs.
+- Foundational plugins: download links now supplied (verified 2026-08-05); current versions,
+  default keybinds, and menu labels are general guidance only - user to confirm against each
+  tool's current release (per the patch/release-date heuristic). openSAM's install specifics
+  per the project's own docs.
 - Wave 4/5 aircraft addons: FJS Q4XP and 777F developers/URLs/versions/dependencies are
   user to provide; compatibility with 12.4.3 unvalidated per project rules.
 - Stock aircraft presence: SR22, King Air C90B, and 737-800 are assumed in the stock
@@ -89,8 +98,8 @@
 
 ## Pending User Inputs
 
-- URLs for 7 of the 8 foundational plugins (openSAM's URL is supplied); current versions and
-  any dependencies for all eight.
+- Current versions and any dependencies for the 8 foundational plugins (download links now
+  supplied and verified - see Audit Trail).
 - Current versions and any dependencies for the four user-supplied aircraft addons (FlyJSim
   Q4XP, FlightFactor 777-200ERF, Hot Start Challenger 650, SR22 G1000) - URLs supplied.
 - All per-wave content/graphics/mechanics mod cards (waves 0-5): user to provide per card -

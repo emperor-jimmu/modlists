@@ -26,9 +26,10 @@ Mod organizer: **XFast Manager**. Decisions and open questions live in `STATUS.m
 - The *Foundational Plugins* chapter (`guide/foundational.typ`) documents the eight plugins
   the user supplied (Navigraph, LittleNavMap, AutoOrtho, X-Camera, AviTab, X-ATC-Chatter,
   openSAM, Better Pushback). Usage/install prose there is general guidance from general
-  knowledge, explicitly flagged as unverified - exact versions, URLs (except openSAM's,
-  user-supplied), and compatibility stay the user's to confirm. Do not silently turn that
-  prose into validated claims.
+  knowledge, explicitly flagged as unverified. Download links were added at the user's
+  request and verified to resolve (2026-08-05) - each points to the tool's official site or
+  repository. Exact versions and compatibility stay the user's to confirm; do not silently
+  turn the prose into validated claims.
 - Compatibility heuristic (the user's rule, documented in the guide, never applied by us):
   if a specific mod version is unknown, use the patch/release date.
 - Six waves: **0 = First Solo** (C172, complete beginners; vanilla + UI/QoL only),

@@ -2,26 +2,24 @@
 
 ==== Wave 3: Mechanics
 
+The Dash 8 Q400 is a jet pretending to be a propeller aircraft. It cruises at airliner speeds, carries a highly automated cockpit, and yet the power comes from two large turboprops whose propellers are as much brakes as thrust. That combination — jet speeds with prop rules — is what makes it a pilot's airplane, and this chapter is about the systems that make that combination work.
+
 ===== The High-Speed Turboprop
 
-+ *Torque & temperature* — turboprop power, now at regional scale: the Q400's power is torque, its law is the temperature limit, and its propeller is a large, serious device. Manage power with the torque gauge and watch the limits on hot days.
-+ *Beta & reverse* — propeller pitch below flight idle: beta gives precise ground control, reverse gives real stopping authority on short runways. The Q400's landing is part aeroplane, part brake pedal — the prop is both.
-+ *Propeller management* — normal flight runs the props at governed rpm; the edges are where the type bites: asymmetric thrust if an engine quits, and the checklist's feather drill. Practice the drill at altitude.
+After the Challenger's turbofans, the Q400 feels like a step back to the King Air's world — torque and temperature, the language of propellers — but with far more of everything. Power is torque: the engines' twisting force on the propeller shaft, displayed as a percentage, and the number you manage with the power levers. The law is temperature, exactly as it was on the Challenger but with a different gauge: watch the turbine temperature limits on hot days and at high power, because a turboprop's turbine does not forgive an exceedance any more than a turbofan's does.
+
+What the Q400 adds is the propeller as a control surface. In flight the props run at their governed rpm and behave like thrust — but at the edges of the flight envelope they do the things only props can do. *Beta* is the pitch range below flight idle: the blades flatten toward the windmill position and the propeller becomes a precise brake and steering device for ground operations. *Reverse* takes the blades past flat pitch so the propeller pushes air *forward*, and the aircraft stops with authority — this is the Q400's real braking, used on short runways the way a jet uses thrust reversers. And *feather* is the emergency pitch: if an engine quits, its propeller is feathered edge-on to the airflow to stop it windmilling and dragging. The Q400's asymmetric-thrust behavior with one engine feathered is dramatic and physical — the rudder does real work — and the drill belongs in your muscle memory from the first week, practiced at altitude with a simulated failure until it is calm.
 
 ===== Steep Approaches & Energy
 
-+ *The profile* — the Q400's steep approach is a constant-rate descent with power: the aim point stays fixed, the energy stays managed, and the flare is short. Fly the profile, not the symptoms.
-+ *Short-field landing* — beta/reverse plus the brakes: plan the touchdown point, use the prop's authority, and stop where you meant to stop. The Q400's party trick is a landing that looks impossible and feels routine.
-+ *Go-around* — in a high-drag, high-power airplane, the missed approach is an energy decision: power, pitch, flaps retract on schedule. Practice it until it is reflex.
+The Q400's steep approach is not a stunt; it is a procedure born of noise rules and short fields, and it teaches the skill every pilot needs forever: energy management. The airplane descends on a constant, steep gradient with power — the aim point stays fixed in the windshield, the rate stays constant, and power does the fine tuning. The mental model is an energy account: too high and you have too much energy (fix it early with power, or the runway gets small); too low and you have too little (fix it with power and pitch before the runway becomes the problem). High is almost always fixable; low is not, and the Q400 rewards the pilot who decides early.
+
+The short-field landing is the steep approach's payoff. Plan the touchdown point, use the propeller's beta and reverse authority, and stop where you meant to stop — a landing that looks impossible from outside and feels routine from inside. It is the party trick of the type, and it is entirely a matter of flying the profile rather than chasing it.
 
 ===== The Automated Cockpit
 
-+ *The FMC/avionics suite* — the Q400's cockpit automates the route at regional scale, the same ideas as the Challenger's flight deck: program the plan (LittleNavMap export), fly the path, manage the modes.
-+ *Callouts & flows* — the two-pilot discipline from the charter wave, at regional pace: flows, checklists, and callouts on every leg, even solo.
-+ *The minute game* — briefing, programming, and taxi done once, cleanly: the Q400 schedule punishes rework. Prepare on the ground; fly from memory of the plan.
+The Q400's cockpit automates the route the way the Challenger's did, at regional scale: the FMS holds the plan — exported from LittleNavMap, as always — and flies the lateral and vertical path while you manage the aircraft and the day. The difference is pace. A regional schedule lives and dies on the turnaround: brief quickly, program the FMS fast, taxi without rework — the aircraft punishes the unprepared and rewards the prepared. The two-pilot discipline you built in the charter wave — flows, checklists, and callouts on every leg, even solo — is what makes the pace survivable: say the callouts, do the flow from memory, confirm with the list, and the minute game becomes routine rather than chaos.
 
 ===== Regional Weather & Icing
 
-+ *Icing systems* — boots, heat, and the rules: ice is a leave condition; the Q400's de-icing buys you the escape, not the right to push through.
-+ *Wind shear & the low-altitude world* — the regional grid lives in the weather: brief the approach with the plate and the live picture, and treat every marginal day as a decision day, not a drama day.
-+ *The alternate habit* — short legs, quick alternates: the fuel and the plan always know where the Plan B is.
+The regional grid lives in the weather the big jets climb out of, and the Q400 spends its working life there. Icing is the daily conversation: the aircraft's de-icing systems — boots and heat — are effective, but they buy the escape, not the right to push through; ice is a leave condition, and the route should have an out before the cloud is entered. Wind shear is the other low-altitude hazard: treat every marginal day as a decision day, brief the approach with the plate and the live picture, and fly the go-around without drama if the approach stops working. And the regional habit that makes all of it safe is the alternate: short legs, quick alternates, and fuel and a plan that always know where Plan B is.

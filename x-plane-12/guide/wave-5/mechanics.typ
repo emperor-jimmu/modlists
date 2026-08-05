@@ -2,32 +2,24 @@
 
 ==== Wave 5: Mechanics
 
+The 777F is the largest, most automated, and most demanding aircraft in this guide — and the least demanding to fly. The machines of this wave fly themselves superbly; the operation around them — payload, fuel, oceans, and the night — is the flight. This chapter is about thinking in hours and continents, which is the real curriculum of the heavy wave.
+
 ===== The Heavy Aircraft
 
-+ *Fly-by-wire* — the 777's flight controls are computer-mediated: the aircraft protects its own envelope, and the pilot flies commands, not surfaces. Learn what the protection does and does not do — it manages limits, not judgement.
-+ *Weight & balance* — a hundred tonnes of payload is a spreadsheet with wings: zero-fuel weight, fuel load, centre of gravity, and the performance pages all speak to how the aircraft will actually fly. The briefing is where the flight is won.
-+ *Performance management* — takeoff V-speeds, climb/descent profiles, and the long-haul cruise: the FMC computes; you verify against the plan and the weather.
+The 777's flight controls are fly-by-wire: your inputs are commands to a computer that moves the control surfaces and protects the envelope — it will not let you stall or overspeed the aircraft in normal flight. The protection manages limits, not judgment: the aircraft keeps itself inside the envelope, and you keep the operation inside the plan. The second system to internalize is weight and balance. A hundred tonnes of payload is a spreadsheet with wings: the zero fuel weight, the fuel load, and the center of gravity decide how the aircraft actually flies, and the performance pages are where that conversation happens. The briefing is where the flight is won, because the spreadsheet was correct before the engines started.
 
 ===== The Long-Haul Flight Deck
 
-+ *The advanced FMC* — route, performance, and vertical profile at continental scale: program from the briefing, cross-check the legs, and let the box fly while you manage modes, fuel, and the plan.
-+ *Mode discipline* — VNAV/LNAV, managed vs selected, and the autothrottle: the airplane is only as good as the mode it is in. The constant question — *what is the automation doing, and why?* — is the whole job.
-+ *Fuel as an instrument* — the fuel page is the long-haul cockpit's primary display: burn, reserves, and the diversion fuel are the numbers that decide every option. Defend the plan; know the cost of every deviation.
+The 777's flight deck is the FMC at continental scale: route, performance, and vertical profile for a leg measured in hours, programmed from the briefing and flown with the mode discipline of Wave 4, scaled up. The modes themselves are the same ideas — managed versus selected, LNAV and VNAV, the auto-throttle — but the stakes are the size of the leg: a programming error found at the oceanic entry is a different problem than one found at the destination. The constant question — *what is the automation doing, and why?* — is the whole job, and the fuel page is the cockpit's primary display: burn, reserves, and the diversion fuel are the numbers that decide every option. Defend the plan; know the price of every deviation.
 
 ===== Oceanic & Long-Range Operations
 
-+ *The oceanic track* — routes across empty ocean follow organized tracks with mandatory position reporting and no radar: the plan, the reporting, and the fuel for the track are the procedure. Follow it like a religion.
-+ *ETOPS thinking* — extended-range operations assume an engine can stop mid-ocean: the diversion airport, the fuel to reach it, and the single-engine drift-down plan are decided before departure. It is planning, not pessimism.
-+ *The alternate network* — long legs, few alternates: the destination alternate, the en-route alternates, and the fuel to make any of them are the briefing's spine.
+Over an ocean there is no radar, and the structure that replaces it is the organized track: routes across empty water with mandatory position reporting, flown exactly as published, because the report is the radar. ETOPS thinking underlies it — extended-range operations assume an engine can stop mid-ocean, so the diversion airport, the fuel to reach it, and the single-engine drift-down plan are all decided before departure. It is planning, not pessimism: long legs have few alternates, and the destination alternate, the en-route alternates, and the fuel to make any of them are the briefing's spine. The ocean is flown the way it is planned — on the track, on the clock, and with the fuel in hand.
 
 ===== Night & Low-Visibility Flying
 
-+ *The night systems game* — lights, instruments, and automation: night flying is flown on the scan and the plan, with the horizon gone. The earlier waves' weather and low-visibility skills, scaled to a dark ocean.
-+ *Low-visibility approaches* — CAT II/III capability: the autopilot flies the approach to very low minimums; your job is the briefing, the monitoring, and the decision at the decision altitude. The hand-fly below is optional; the call is not.
-+ *The crew day* — long-haul is crew resource management: rest, rhythm, and the discipline of the sterile cockpit during the busy phases. The ace flies the day, not just the leg.
+Most long-haul legs are darkness, and night flying is a systems game: lights, instruments, and automation, flown on the scan and the plan with the horizon gone. The low-visibility arrival is the summit — CAT II and III approaches that let the autopilot fly to very low minimums, with your job being the briefing, the monitoring, and the decision at the decision altitude. The hand-fly below is optional; the call is not. And the crew day is its own system: long-haul is crew resource management, rest in rhythm, and the sterile cockpit during the busy phases — the ace flies the day, not just the leg, and the day is fifteen hours long.
 
 ===== Emergency Discipline
 
-+ *The checklist is the law* — engine, systems, pressurization: the 777's abnormal procedures are flows and checklists, flown calmly in order. The sim gives you the scenarios; the procedure gives you the answer.
-+ *Divert, don't gamble* — at 35,000 ft over an ocean, the diversion decision is the professional's reflex, made with the fuel plan already in hand.
-+ *The calm* — everything in this wave exists to make the abnormal ordinary: the ace's final exam is boredom in the face of drama, because the planning already happened.
+The abnormal procedures of the heavy aircraft are flows and checklists, flown calmly in order: engine, systems, pressurization — the sim gives you the scenarios, the procedure gives you the answer. The diversion decision at 35,000 feet over an ocean is the professional's reflex, made with the fuel plan already in hand, not improvised at the moment. And the calm itself is the point of the whole wave: everything in this chapter exists to make the abnormal ordinary, so that when something goes wrong, the boredom of a well-practiced procedure takes over — because the planning already happened, on the ground, hours ago.
