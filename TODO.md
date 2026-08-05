@@ -16,7 +16,6 @@
 [x] 13. Civilization IV
 [ ] 14. Civilization VI
 [ ] 15. Monster hunter Wilds
-[ ] 16. Stormworks
+[ ] 16. Stormworks Build and Rescue
 [ ] 17. Derail Valley
 [ ] 18. My Summer Car
-[ ] 19. OMSI 2

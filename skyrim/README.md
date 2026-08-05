@@ -9,11 +9,11 @@ This repo is a markdown planning workspace for the Elder Wilds modlist. All plan
 ## Quick Links
 
 | File                               | Purpose                                         |
-|-----------------------------------|-------------------------------------------------|
 | `guide/modlist.md`                | **Canonical hub**: scope, section index, pillars|
 | `guide/separators.md`             | MO2 separator layout reference                  |
 | `guide/install.md`                | Setup and installation guide                    |
-| `TODO.md`                         | Scratch backlog and future research ideas       |
+| `TODO.md`                         | Open research backlog                           |
+| `STATUS.md`                       | Mod verdict decisions register                  |
 | `tools/build-modlist-pdf.ps1`     | Generates `rendered/elder-wilds.pdf` from all section files via Typst |
 | `rendered/elder-wilds.md`         | Single-page rendered view of all section files  |
 

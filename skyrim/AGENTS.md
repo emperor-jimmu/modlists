@@ -25,11 +25,11 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 - `guide/install.md` is the installation guide: pre-installation requirements, toolchain setup, download workflow, load order build sequence, and post-install testing.
 - Each numbered `guide/modlist-XX.md` file owns one second-level planning section. Keep the numbering aligned with the index in `guide/modlist.md`.
 - Cross-reference convention: use `→ \`X\`` (arrow, space, backtick section or separator name) as the standard inline cross-reference format across all section files. When linking to another section file, prefer `→ [Title](modlist-XX.md)` over a backticked reference.
-- `guide/separators.md` is the canonical ordered reference (111 entries) for `Mod Organizer 2` separators derived from the current modlist structure. When a section file declares its MO2 separator(s), the declaration must match this file.
-- `guide/modlist-design-philosophy.md` is the authoritative design-philosophy source for world progression — leveling, encounter zones, loot distribution, difficulty, XP/leveling, and perks as an interlocked dial. Adopted combination: **#1 Static with Hard Threat** + "Living the World" layer (player home, family, slow questing). Mods in section files are tagged in a `Dial` column that indicates which combination(s) they serve.
 - `TODO.md` is the central scratch backlog for open research and candidate mods not yet adopted. Section files reference it with an `## Open Research` heading rather than carrying their own `## Candidate TODO Additions` stub.
+- `STATUS.md` is the canonical decision register. When a mod in `TODO.md` is reviewed and a verdict is reached (adopted, rejected, tentative with conditions, or requires special install instructions), the decision moves to `STATUS.md`. Once a mod is in `STATUS.md`, remove it from `TODO.md`.
 - `guide/modlist-restructure-design.md` is the historical design rationale for the current file conventions. It is not a live planning document; keep it for context but do not edit it as if it were active guidance.
 - `guide/modlist-curation.md` is the active curation rulebook. When evaluating mods or making additions, cross-reference its curation principles before committing.
+
 
 ## Lighting & Graphics Direction
 
@@ -171,7 +171,7 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 
 ### Creatures — Undead
 - **Skeletons SE (124394):** Locked skeleton model replacer by Xtudo. 2,002 endorsements. Consistent undead visual direction with Draugrs SE (123170) and Spider SE (182638) — all Xtudo baselines.
-- **Skeletons SE - Expanded (154872):** Locked BOS-based skeleton variety addon. Install after Skeletons SE. Skeleton Replacer HD (52845) rejected — single-model, no variety.
+- **Skeletons SE - Expanded (154872):** Locked BOS-based skeleton variety addon. Install after Skeletons SE. Skeleton Replacer HD (52845) adopted for static bone props only (skulls, ribcages, bandit poles, Hearthfire trophies) — loads before Skeletons SE so creature skeletons still use Xtudo's models. See `STATUS.md` for layered approach details.
 
 ### Undeath Decisions
 - **Undeath Remastered (6180):** Adopted. Classical Lichdom (40802) locked as lich gameplay route. GDOS Door Patch (132038), Camera Fix (52950), Conjuration Absorb Fix (18762), and Facegen Data Patch (20046) required.
