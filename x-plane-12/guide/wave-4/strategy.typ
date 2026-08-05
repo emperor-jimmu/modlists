@@ -4,7 +4,7 @@
 
 ===== The Story So Far
 
-*The Line.* The regional years proved you could run a schedule, and mainline noticed. Now you sit in the right seat of a Boeing 737-800 — and within a year, the left. The schedule is a spreadsheet; the airplane is a system; the passengers are people who think "today" means "now". Your world has changed scale: a single leg is three hundred souls and a hundred tonnes of jet at thirty-five thousand feet, and the margin for casual error is exactly zero. This wave is where the sim stops being a flight game and becomes an operations job — and where the *ace* in Ace's Realm starts to mean something.
+*The Line.* The regional years proved you could run a schedule, and mainline noticed. Now you sit in the right seat of a 737-800 — the Zibo-modded 737-800X, a freeware project that turned the default airliner into a study-level machine — and within a year, the left. The schedule is a spreadsheet; the airplane is a system; the passengers are people who think "today" means "now". Your world has changed scale: a single leg is three hundred souls and a hundred tonnes of jet at thirty-five thousand feet, and the margin for casual error is exactly zero. This wave is where the sim stops being a flight game and becomes an operations job — and where the *ace* in Ace's Realm starts to mean something.
 
 ===== Strategy for the Wave
 

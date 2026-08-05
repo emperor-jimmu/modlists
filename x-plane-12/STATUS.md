@@ -54,6 +54,10 @@
   teaching-prose standard as waves 2-5 (glass cockpit, autopilot discipline, planning
   workflow, weather decision-making; the cross-country leg as one continuous flow).
   PDF rebuilt.
+- 2026-08-05 (Zibo + XPRealistic): Wave 4's aircraft changed from the stock 737-800 to the
+  user-supplied *Zibo Mod B737-800X* (URL supplied: x-plane.to/file/309/zibo-mod-b737-800x);
+  wave-4 strategy/how-to-fly/mechanics references updated. *XPRealistic v2* added to Wave 1
+  (URL supplied: store.x-plane.org/XPRealistic-v2_p_1241.html). PDF rebuilt.
 
 ## Decisions
 
@@ -72,11 +76,13 @@
 - **Waves (2026-08-05):** 0 = *First Solo* (C172; complete beginners; vanilla + UI/QoL
   only), 1 = *The Ferry* (Take Command SR22 G1000; glass cockpit, cross-country),
   2 = *The Charter* (Hot Start Challenger 650; turbofan + IFR), 3 = *The Dash Ace*
-  (Dash 8 Q400 / FlyJSim Q4XP; high-speed turboprop regional), 4 = *The Line* (737-800;
-  airline ops), 5 = *The Heavy Ace* (FlightFactor 777-200ERF; heavy long-haul). Each wave is
+  (Dash 8 Q400 / FlyJSim Q4XP; high-speed turboprop regional), 4 = *The Line* (Zibo Mod
+  B737-800X; airline ops), 5 = *The Heavy Ace* (FlightFactor 777-200ERF; heavy long-haul). Each wave is
   its own new-game setup with an RP backstory; waves 1-5 add mechanics with no pure power
   spikes. Wave order amended the same day (3 <-> 4, Q400 before the 737) for progression;
-  Wave 2 aircraft changed from the stock King Air C90B to the user-supplied Challenger 650.
+  Wave 2 aircraft changed from the stock King Air C90B to the user-supplied Challenger 650,
+  Wave 4 from the stock 737-800 to the user-supplied Zibo Mod B737-800X, and Wave 1 carries
+  the user-supplied XPRealistic plugin.
 - **PDF theme (2026-08-05):** night-sky aviation. Palette derived from `assets/logo.jpg`
   (deep navy `#10233D`, sky blue `#2E6FB8`, gold `#C9A227`, tan `#C0A060`, rust `#B4552D`,
   ice `#F1F6FB`). Fonts: Bahnschrift / Georgia. Typst 0.15.1 via `build.bat` ->
@@ -97,15 +103,17 @@
   per the project's own docs.
 - Wave 4/5 aircraft addons: FJS Q4XP and 777F developers/URLs/versions/dependencies are
   user to provide; compatibility with 12.4.3 unvalidated per project rules.
-- Stock aircraft presence: SR22, King Air C90B, and 737-800 are assumed in the stock
-  aircraft menu of 12.4.x; user to confirm (wave guides say so too).
+- Stock aircraft: only the C172 (Wave 0) is stock; all other wave aircraft are user-supplied
+  addons with URLs supplied - presence and compatibility in the user's 12.4.x install to
+  confirm (per the release-date heuristic).
 
 ## Pending User Inputs
 
 - Current versions and any dependencies for the 8 foundational plugins (download links now
   supplied and verified - see Audit Trail).
-- Current versions and any dependencies for the four user-supplied aircraft addons (FlyJSim
-  Q4XP, FlightFactor 777-200ERF, Hot Start Challenger 650, SR22 G1000) - URLs supplied.
+- Current versions and any dependencies for the six user-supplied wave mods (FlyJSim Q4XP,
+  FlightFactor 777-200ERF, Hot Start Challenger 650, SR22 G1000, Zibo Mod B737-800X,
+  XPRealistic v2) - URLs supplied.
 - All per-wave content/graphics/mechanics mod cards (waves 0-5): user to provide per card -
   name + URL, dependencies, system/mechanic impact, notes (load order, config).
 

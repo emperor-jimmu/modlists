@@ -2,7 +2,7 @@
 
 ==== Wave 4: Mechanics
 
-The 737-800 is the first aircraft in this guide where the machine is genuinely easier to fly than the operation around it. It is a well-behaved, highly automated airliner that will fly a perfect ILS by itself; your job is the airline operation — the briefing, the fuel, the automation, and the judgment — that surrounds every leg. This chapter is about the systems and the thinking that make that operation work.
+The 737-800 — flown in this guide as the Zibo Mod B737-800X — is the first aircraft where the machine is genuinely easier to fly than the operation around it. It is a well-behaved, highly automated airliner that will fly a perfect ILS by itself; your job is the airline operation — the briefing, the fuel, the automation, and the judgment — that surrounds every leg. This chapter is about the systems and the thinking that make that operation work.
 
 ===== Jet Aerodynamics & Performance
 

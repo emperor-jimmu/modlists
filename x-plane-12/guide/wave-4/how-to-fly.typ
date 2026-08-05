@@ -2,7 +2,7 @@
 
 ==== The FMC, Step by Step
 
-The Flight Management Computer is the 737's cockpit brain: route, performance, and vertical profile in one box. Learn the flow once, and every FMC in this guide — the Q400's, the 777's — is the same idea in different clothes: a set of pages you work through in a fixed order, entering data and cross-checking what the box thinks it knows. Exact page names follow the aircraft's manual; the order is universal, and the order is the skill.
+The Flight Management Computer is the 737's cockpit brain: route, performance, and vertical profile in one box. In this guide the 737 is the Zibo Mod B737-800X, whose FMC is a faithful simulation of the real box — learn the flow once, and every FMC in this guide — the Q400's, the 777's — is the same idea in different clothes: a set of pages you work through in a fixed order, entering data and cross-checking what the box thinks it knows. Exact page names follow the aircraft's manual; the order is universal, and the order is the skill.
 
 ===== The Pages
 
