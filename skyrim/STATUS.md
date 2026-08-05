@@ -64,3 +64,67 @@
 - **#9 CLOUDS (67436)** — REJECTED. 2D cloud texture replacer superseded by adopted Real Clouds SE (90566, 3D volumetric clouds). Incompatible approaches.
 - **#24 Dwemer Glowyfication (60346)** — REJECTED. Extends glowmaps to mods not in the list (Bikini Armors, Judgment Wenches, Believable Weapons, SIC). Core CALEB2 glowmap mods (48227, 48724, 47802, 48232) already cover all vanilla+DLC Dwemer content.
 - **Dark Brotherhood Armor SE (57539) + CBBE 3BA conversion (57553)** — REJECTED. 4thUnknown's custom DB armor model conflicts with Xavbio's Faction Armors and Weapons Retexture AIO (169281, weapons-armor.md:138). Xavbio's AIO establishes faction-wide visual coherence across Dawnguard, Vampire, Thieves Guild, Nightingale, DB, Forsworn, and Wolf armors. Swapping one faction to a different author's model would break consistency. User confirmed.
+
+## Mods for review — VERDICTS (2026-08-05, Batch 2)
+
+### Already in modlist
+
+- **ElSopa - HD Iron Tools Redone SE (60495)** — Already in `modlist-graphics-textures.md:148`. Remove from TODO.
+- **HFs - Diverse Inkwell and Quill (132023)** — Already in `modlist-graphics-textures.md:150`. Remove from TODO.
+
+### Rejected
+
+- **Elegant Magelight with ENB Light (65679)** — REJECTED. Hard ENB Light dependency ("with ENB Light" in title and description). ENB Light requires ENB series binaries. Modlist is CS-exclusive. Also redundant: Light Magic VFX Edit (151787, textures.md:221) already covers Candlelight/Magelight VFX glow as mesh-only CS-compatible replacer.
+- **GOAT HD by Pfuscher (22802)** — REJECTED. Goat model/texture replacer overlaps with Fluffworks baseline (creatures.md:23, "broad furred-animal presentation layer"). Fluffworks covers goats as furred animals. Adopting a separate goat-specific replacer would fight the Fluffworks visual consistency.
+- **Halffaces - Diverse (BOS) noble chair (113863)** — REJECTED. Directly overlaps with Rally's Noble Furniture - BOS (113326, textures.md:133) which already covers noble furniture including chairs via BOS distribution. Rally's is the established baseline.
+- **Female Hands Replacer CBBE (67522)** — REJECTED. Redundant with Female Hands Redone (90713, reviewed below) which is a more comprehensive overhaul with BodySlide sliders. 90713 supersedes this basic CBBE hand replacer.
+- **ElSopa - Tankard HD (43764)** — REJECTED. Conflicts with three existing tankard mods: Arc's Tankard Redux (112567, textures.md:147, baseline), JFresh's Mead Stein (26685, textures.md:275), and HFs - Flagons BOS (145495, textures.md:332). Arc's Tankard Redux is the established baseline; adding a fourth tankard replacer creates texture conflict with no benefit.
+- **ElSopa HD - Meadbarrel and Spigot SE (23714)** — REJECTED. Conflicts with the Arc's MeadBarrel stack: Arc's MeadBarrel Redux (111195, textures.md:144) + Bloody MeadBarrel Redux (116447, textures.md:145) + Distributed (119006, textures.md:146). Arc's stack is the established baseline with comprehensive coverage.
+
+### Adopted
+
+- **Xavbio Ebony Armors and Weapons Retexture SE (83654)** — Adopted. 8,292 endorsements, v2.1.2 (Apr 2026). Retextures Ebony armor, Ebony Mail, weapons, and Ebony Blade. Covers vanilla Ebony material tier which is NOT covered by the same author's Faction Armors AIO (169281, weapons-armor.md:138 — factions only). Also includes aMidianborn content addon and Oblivion Artifacts compatibility. Fully open permissions. Weapons & Armor section. **Choose 2K main file.**
+- **ElSopa - Glorious HD Amulets SE (38194)** — Adopted. 7,900 endorsements, v1.0 (Jul 2020). All divine/unique amulet retexture, 8x vanilla resolution, new environment maps. No existing amulet retexture in the list. Textures & Meshes → Clutter section. **Choose Quality 2K.**
+- **ElSopa - HD Better Bloody Rags SE (44059)** — Adopted. 4,096 endorsements. New higher-poly mesh + textures for bloody rags clutter. No existing bloody rags replacer. Textures & Meshes section. **Choose 2K.**
+- **ElSopa - HD Giant Mortars Redone SE (49384)** — Adopted. 3,221 endorsements. New mesh + textures for giant mortar clutter. No existing giant mortar replacer. Textures & Meshes section. **Choose 2K.**
+- **ElSopa - HD Keys Redone SE (48209)** — Adopted. New high-quality models + textures for all keys. No existing key replacer in the list. Textures & Meshes section. **Choose 2K.**
+- **ElSopa - Silver Mold Redone (70144)** — Adopted. Silver mold from Thieves Guild quest redone. Niche but no-conflict clutter upgrade. Textures & Meshes section. **Choose 2K.**
+- **ElSopa - Skeleton Key Redone (85504)** — Adopted. Skeleton Key model/texture replacer, no ESP, safe mid-game. Textures & Meshes section. **Choose 2K.**
+- **ElSopa - Unique Coin Bags HD SE (33910)** — Adopted. Each coin bag size has distinct appearance, 2K to vanilla resolutions. Textures & Meshes section. **Choose 2K.**
+- **Various Immersive Coinbags (96476)** — Adopted as companion to 33910. BOS distribution of 60+ coin bag variations. Requires ElSopa Coin Bags HD (33910) for textures. Textures & Meshes section. **Choose BOS main file.**
+- **ElSopa HD - Organic Burial Urns SE (26692)** — Adopted. Burial urn retexture, 4K to 512 resolutions. No existing burial urn replacer. Textures & Meshes section. **Choose 2K.**
+- **ElSopa HD - Remade Better Dust Piles SE (22106)** — Adopted. Complete remake of dust pile texture, 4K-1K, optional no-skull variant. No existing dust pile replacer. Textures & Meshes section. **Choose 2K with skulls.**
+- **FYX - Riften Canal and Round Posts (75431)** — Adopted. Replaces vanilla square posts with round posts, fixes seams/UVs/placement. No ESP, mesh-only. Complements existing FYX mods in the list (Nordic Doors, 3D Stockades, Eastern Empire Company, Riften Window Consistency). Textures & Meshes or World Content section. **Choose main file.**
+- **FYX - Smooth Wells (66715)** — Adopted. Smooths water wells and magic wells, fixes UVs. "Water in Wells" compatible. No ESP. Textures & Meshes section. **Choose main file (CotN Falkreath optional if COTN Falkreath adopted).**
+- **FYX - Windhelm Graveyard (98260)** — Adopted. Graveyard area mesh improvements, no ESP. Optional JK's/Spaghetti compatible meshes available. Textures & Meshes section. **Choose main file with JK's patch if JK's Windhelm is adopted.**
+- **Various Immersive Farmtables (100469)** — Adopted. BOS-based farmtable variety. Fits the established BOS diversity pattern (Diverse BOS Kitchenware, Diverse Windmill Sails, etc.). No existing farmtable variety mod. Textures & Meshes section. **Choose BOS main file.**
+- **Falmer Huts Animated (101539)** — Adopted. BOS-based animated Falmer hut mesh replacer. No existing Falmer hut replacer. Unique creature-architecture intersection. Textures & Meshes or Creatures section. **Choose BOS main file.**
+- **Garlic - A Garlic Mod (78848)** — Adopted. Garlic clutter replacer. No existing garlic-specific replacer. Textures & Meshes section. **Choose main file.**
+- **Scallions of Skyrim - High Polygon Leeks (53205)** — Adopted. Higher-poly leek mesh replacer. No existing leek replacer. Fits with Cabbage - A Cabbage Mod (textures.md:314) pattern of individual produce upgrades. Textures & Meshes section. **Choose main file.**
+- **Grave Gargoyles (21907)** — Adopted. Custom gargoyle skeleton replacing vanilla impish model with nightmare design. No existing gargoyle replacer. Fits grim-dark pillar. Creatures section. **Choose main file.**
+- **Gauldurbrand - Gauldur Weapons Replacer (54867)** — Adopted. Model replacers for all three Gauldur weapons (Blackblade, Blackbow, staff) with interchangeable staff variation. More comprehensive than Gauldur Blackblade (57361) which only covers one weapon. Weapons & Armor section. **Choose main file.**
+- **Gauldur Blackblade by Ave (57361)** — REJECTED. Redundant — Gauldurbrand (54867, adopted above) covers all three Gauldur weapons including the Blackblade. Single-weapon replacer offers less coverage for the same niche.
+- **Female Hands Redone (90713)** — Adopted. Complete female hand overhaul: 16 additional BodySlide sliders, compatible with any skin textures. Fits the 3BA/BodySlide pipeline (characters.md:14-16). Characters & Creatures section. **Choose CBBE 3BA main file.**
+- **Bard's Nail Overlays (126211)** — Adopted as companion to 90713. 16 Racemenu hand overlays designed specifically for Female Hands Redone. Characters & Creatures section. **Choose main file.**
+- **Halffaces - Common Chair (121182)** — Adopted. Mesh + texture replacer for commonchair02. No existing common chair replacer in the list (Rally's Noble Furniture covers noble-tier, not common). Textures & Meshes section. **Choose main file.**
+- **Halffaces - Diverse (BOS) common table square (113369)** — Adopted. BOS-based diversification of common table squares, 5 variants. No existing common table variety mod (Basic Dining Set Replacer, textures.md:294, is a static replacer, not BOS diversity). Textures & Meshes section. **Choose BOS main file.**
+- **Extravagant Interiors - Solitude (41621)** — Adopted as tentative. Retexture of Solitude's opulent interiors (Blue Palace, etc.) using modified Clockwork textures (assets included, no Clockwork dependency). Does NOT conflict with Riton Solitude (exterior architecture, world-content.md:78) or Bards College Rework (specific building, world-content.md:47). Textures & Meshes section. **Verify CS/PBR compatibility before locking. Choose main file.**
+
+### Tentative — evaluate before committing
+
+- **Feminine Argonian Textures (184)** — MONSTERaider's feminine Argonian retexture with hundreds of diffuse/specular/normal combinations. BnP Female Skin (65274, characters.md:16) is the all-race skin baseline. This would replace BnP's Argonian female textures specifically. Evaluate: does this complement or fight BnP's consistent skin direction? Better Argonian Horns (80568) and FabULook Eyes (15136) are already adopted — this would add the skin layer. **TENTATIVE — test visual coherence with BnP before adopting.**
+- **Feminine Khajiit Textures (183)** — Same as above for Khajiit. MONSTERaider's feminine Khajiit retexture. Same BnP baseline conflict question. **TENTATIVE — test visual coherence with BnP before adopting.**
+- **Object Categorization Framework - Some KID Patches (99726)** — KID patches for OCF icons in various mods. Only adoptable if Object Categorization Framework is baseline. OCF is NOT currently in the modlist. **DEFER until OCF adoption decision is made.**
+- **HFs - Upper Nightstand - Diverse BOS (143254)** — BOS-based upper nightstand diversification. Rally's Upper Furniture (112256, textures.md:135) likely covers nightstands as part of "upper furniture." Verify whether Rally's already covers this specific item before adopting. **TENTATIVE — check overlap with Rally's Upper Furniture.**
+
+### Adopted — Halffaces clutter batch
+
+All Halffaces mods below are mesh/texture replacers (mostly no-ESP, some BOS-based) targeting items with no existing replacer in the list. Clutter/Textures & Meshes section.
+
+- **Halffaces - Breton delicacy (118297)** — Adopted. Eidar cheese wheel/sliced/wedge replacer. No existing cheese replacer. **Choose 2K main file.**
+- **HFs - Horker Meat (123874)** — Adopted. Raw + cooked horker meat mesh/texture replacer. No existing horker meat replacer. **Choose main file.**
+- **HFs - Trophy Pedestals - remodel (142079)** — Adopted. Trophy pedestal new models. Distinct from Snazzy Wall Mounted Trophies (textures.md:155 — wall mounts, not pedestals). **Choose main file.**
+- **HFs - Tusks (135738)** — Adopted. Mammoth + horker tusk replacers. No existing tusk replacer. Complements "Harvest Those Mammoth Tusks" in Synthesis patcher list. **Choose main file.**
+- **Halffaces - Horse meat Update (113284)** — Adopted. Horse meat mesh/texture replacer, no ESP. No existing horse meat replacer. **Choose main file.**
+- **HFs - Aretino Family Heirloom - remodel (140723)** — Adopted. Quest-specific mesh replacer for Aretino Family Heirloom. No conflict with Restoring the Aretino Residence (world-content.md:472 — quest mod, different scope). **Choose main file.**
+- **Halffaces - Trapdoor ladders All-in-One (123329)** — Adopted. Trapdoor ladder mesh/texture rework. No existing trapdoor ladder replacer. **Choose main file.**
