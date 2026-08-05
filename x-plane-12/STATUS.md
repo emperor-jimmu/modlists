@@ -50,6 +50,10 @@
   github.com/hotbso/openSAM. Wave 2-5 mechanics and how-to-fly chapters rewritten from
   bullet lists into teaching prose (turbofan systems, energy management, the instrument
   scan, the FMC flow, oceanic operations). PDF rebuilt.
+- 2026-08-05 (wave-1 prose): Wave 1 mechanics and how-to-fly brought up to the same
+  teaching-prose standard as waves 2-5 (glass cockpit, autopilot discipline, planning
+  workflow, weather decision-making; the cross-country leg as one continuous flow).
+  PDF rebuilt.
 
 ## Decisions
 

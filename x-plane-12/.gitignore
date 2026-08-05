@@ -1,1 +1,2 @@
-output/
+output/_audit*
+output/audit*
