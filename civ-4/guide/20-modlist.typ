@@ -42,4 +42,11 @@ No mods supplied for this wave yet — _user to provide_.
 
 _Wave 1+ philosophy: more content and new mechanics — never pure power spikes._
 
-No mods supplied for this wave yet — _user to provide_.
+#mod-entry(
+  name: "Caveman 2 Cosmos",
+  url: "https://forums.civfanatics.com/threads/caveman-2-cosmos.288570/",
+  deps: "user to provide",
+  impact: "user to provide",
+  notes: "user to provide",
+)
+
