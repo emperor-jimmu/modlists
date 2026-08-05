@@ -43,6 +43,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Witcher 3       | The Witcher 3                   | [`witcher-3/`](./witcher-3/)                       | Active |
 | X-COM 2         | X-COM 2 (War of the Chosen)     | [`x-com-2/`](./x-com-2/)                           | Active |
 | X4              | X4: Foundations                 | [`x4-foundations/`](./x4-foundations/)             | Active |
+| X-Plane 12      | X-Plane 12                      | [`x-plane-12/`](./x-plane-12/)                     | Active |
 
 ## Adding a new modlist
 
@@ -202,6 +203,9 @@ x-com-2/                 # X-COM 2 (War of the Chosen) modlist
 ├── AGENTS.md
 └── ...
 x4-foundations/         # X4: Foundations modlist
+├── AGENTS.md
+└── ...
+x-plane-12/             # X-Plane 12 modlist
 ├── AGENTS.md
 └── ...
 README.md               # collection index
