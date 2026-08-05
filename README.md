@@ -11,6 +11,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Assetto Corsa   | Assetto Corsa                   | [`asseto-corsa/`](./asseto-corsa/)                 | Active |
 | Baldur's Gate 3 | Baldur's Gate 3                 | [`baldurs-gate-3/`](./baldurs-gate-3/)             | Active |
 | CK3             | Crusader Kings 3                | [`ck3/`](./ck3/)                                   | Active |
+| Civ 4          | Civilization IV (Beyond the Sword) | [`civ-4/`](./civ-4/)                               | Active |
 | Minecraft       | Minecraft (NeoForge 1.21.1)     | [`minecraft/`](./minecraft/)                       | Active |
 | Project Zomboid | Project Zomboid                 | [`project-zomboid/`](./project-zomboid/)           | Active |
 | Skyrim          | Skyrim SE                       | [`skyrim/`](./skyrim/)                             | Active |
@@ -104,6 +105,9 @@ baldurs-gate-3/         # Baldur's Gate 3 modlist
 ├── AGENTS.md
 └── ...
 ck3/                    # Crusader Kings 3 modlist
+├── AGENTS.md
+└── ...
+civ-4/                  # Civilization IV (Beyond the Sword) modlist
 ├── AGENTS.md
 └── ...
 minecraft/              # Minecraft modpack (NeoForge 1.21.1)
