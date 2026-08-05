@@ -74,5 +74,44 @@ Use *Load a Mod* and pick "None", remove the `mod=` argument from the shortcut o
 
 - *Mod missing from the load list* — wrong folder structure (see "Install a mod"), or you edited the wrong `Mods` folder (see "Find the right folders").
 - *Crash when loading a mod* — many total conversions ship their own DLL and require exactly BTS 3.19; confirm the game version (see "Check the version") and the mod's own requirements.
-- *Display problems on modern monitors* — use the chooser's custom resolution / windowed mode (v2.9+), or the game's own graphics settings.
+- *Display problems on modern monitors* — use the chooser's custom resolution / windowed mode (v2.9+), the game's own graphics settings, or the *Playing at 4K* section below.
 - *Steam nested folders* — double-check that your Mods folder is `<app root>\Beyond the Sword\Mods`, not the app root itself.
+
+== Playing at 4K: fonts and readability
+
+Civ 4's interface was designed for mid-2000s monitors: the UI art (buttons, panels, icons) is fixed-size bitmap graphics that do not scale with resolution, so at 4K the text becomes very small. There is no UI-scale option in the game, and no packaged mod fixes this — but the fonts can be enlarged by hand. Everything in this section is game configuration, not a mod, and does not affect the mod list.
+
+=== Windows High-DPI override (fastest to try)
+
+1. Right-click `Civ4BeyondSword.exe` (in the `<BTS>\` folder) → *Properties* → *Compatibility*.
+2. Click *Change high DPI settings* (or tick *Override high DPI scaling behavior*).
+3. Tick *Override high DPI scaling behavior* and choose *System* (or *System (Enhanced)* when available).
+4. Apply, then relaunch the game.
+
+#info[
+  If the game then renders only part of the screen or the mouse misbehaves, run it in *Windowed Mode* — via the graphics options, or by setting `FullScreen = 0` in `CivilizationIV.ini` under `Documents\My Games\Beyond the Sword`.
+]
+
+=== Larger fonts via the theme file
+
+1. Back up `<BTS>\Resource\Themes\Civ4\Civ4Theme_Common.thm`.
+2. Open it in a text editor (Notepad++ or VS Code).
+3. Search for `.Font` (around line 357) and raise the numeric sizes in the `GFont(...)` entries — a bump of 2 to 4 points is the range most players report as usable at 4K (e.g. 12 to 14 or 16).
+4. Save and restart the game.
+
+#warn[
+  The surrounding UI art does not grow with the text. Large increases make labels overflow their buttons and boxes — keep the bump modest and check every screen.
+]
+
+=== City name and production labels
+
+The on-map city billboards use a fixed bitmap font that the theme edit does not touch. In `Assets\XML\Art\CIV4ArtDefines_Misc.xml`, find the `CITY_BILLBOARDS` entry and set `<fScale>` to a negative value such as `-1.0` — a negative value makes the game use the regular interface font for these labels instead.
+
+=== When a mod is loaded
+
+If the active mod ships its own interface theme (most total conversions do), edit that mod's `Resource\Themes\Civ4\Civ4Theme_Common.thm` rather than the base game's — otherwise the game loads the mod's theme and your base-game edit has no effect.
+
+=== Last resort: lower the resolution
+
+Many players simply run the game at 1440p or 1080p (windowed if needed) on a 4K monitor. The UI stays small but readable, and nothing clips. The All Mod Chooser (v2.9+) can set the game's resolution and windowed mode for you.
+
