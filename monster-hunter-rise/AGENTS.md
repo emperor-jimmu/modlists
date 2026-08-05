@@ -7,7 +7,7 @@ Modlist name: **Primal Quarry**.
 
 ## Hard rules
 
-- **The mod list is user-supplied only.** NEVER research, search for, verify, validate, add, remove, or suggest mods. Never look up or confirm compatibility. Treat every mod the user supplies as authoritative.
+- **The mod list is user-supplied only.**
 - Document only the mods the user provides, using the user's stated fields: clickable name + URL, dependencies, system/mechanic impact, notes. Any field the user does not supply stays "User to provide" — never invent it.
 - Never record mod-validation results anywhere, including `STATUS.md` (that file holds design decisions, open questions, and user instructions only).
 - `conflicts-mods.md` and `mod-ideas.md` are user-owned note files, excluded from the PDF. Mod ideas must come from the user.

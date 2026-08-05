@@ -17,9 +17,6 @@ Mod organizer: **Singularity**. Decisions and open questions live in `STATUS.md`
 
 ## Key Rules
 
-- **No mod curation by this project.** Never validate, verify, search for, add, remove, or
-  suggest mods. The mod list is provided exclusively by the user. Document only the mods the
-  user supplies, using only the information the user provides.
 - Every user-supplied mod becomes a mod card in its wave's guide files via the `mod-entry`
   helper: clickable name + URL, dependencies, system/mechanic impact, notes (load order,
   config). Missing fields render as *"user to provide"* - never invent or research missing data.

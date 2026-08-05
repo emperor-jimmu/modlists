@@ -3,6 +3,7 @@
 Oxygen Not Included (Steam App 457140) modlist and game guide. Target build resolved in STATUS.md (build gate, spec §6.1); DLCs owned: Spaced Out! + Bionic Booster Pack.
 
 ## Structure
+
 - `guide/` - wave-based Typst sources (installation, per-wave files, glossary)
 - `output/` - generated PDF (`primordial-outpost-reborn.pdf`)
 - `assets/` - static assets (`logo.jpg`)
@@ -14,6 +15,7 @@ Oxygen Not Included (Steam App 457140) modlist and game guide. Target build reso
 - `docs/superpowers/` - specs and plans
 
 ## Key Rules
+
 - Mods must be verified against the Steam Workshop (app 457140); every card needs a verified URL + page-visible metadata. Target build + DLCs: see STATUS.md.
 - Mod organizer = Mod Updater (workshop 2018291283; project brief names Peter Han, page shows creator "Stephen" — see STATUS.md), else the native Steam Workshop flow; see STATUS.md and installation.typ.
 - No meme/joke mods, explicit porn, redundant, or cheating/overpowered/all-knowing content.
@@ -24,5 +26,6 @@ Oxygen Not Included (Steam App 457140) modlist and game guide. Target build reso
 - Decision log maintained in `STATUS.md`.
 
 ## PDF Generation
+
 Run `build.bat` -> `typst compile template.typ output/primordial-outpost-reborn.pdf` (Typst 0.15/0.15.1).
 Fonts: Cinzel / Bahnschrift / Georgia.

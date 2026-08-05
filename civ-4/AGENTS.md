@@ -4,7 +4,7 @@ Structured modlist + game guide/tutorial (and glossary) for **Sid Meier's Civili
 
 ## CRITICAL — Mod policy (never violate)
 
-- The mod list is supplied **exclusively by the user**. NEVER add, remove, suggest, validate, verify, search for, or expand the mod list in any way.
+- The mod list is supplied **exclusively by the user**.
 - Treat every user-supplied mod as authoritative, exactly as the user stated it.
 - If the user omits a field (URL, dependencies, system/mechanic impact, notes), write **"user to provide"** — never fill it in from knowledge, inference, or research.
 - Mod entries are recorded verbatim in `guide/20-modlist.typ`, organized by wave.
