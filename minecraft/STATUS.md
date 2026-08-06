@@ -3,11 +3,23 @@
 ## Completed
 
 ### V3 Documentation (MODLIST.md) — Full V3 Mod List Written
+
 - [x] All mods pinned to their exact NeoForge 1.21.1 versions
-- [x] Waves 0-7 fully documented with mod tables, dependency tables, and config sections
+- [x] Waves 0-8 fully documented with mod tables, dependency tables, and config sections
+PUT 90.*:
+
+### Wave 8 — Programmable Computers (1 mod)
+
+- [x] CC:Tweaked added as programmable computer mod (Modrinth — dev-recommended platform for NeoForge builds)
+- [x] KubeJS recipe script: `kubejs/server_scripts/wave8_cc_tweaked.js` — gates turtles (TFMG steel), Advanced Computer (Mekanism Enriched Alloy), Wireless Modem (Create brass)
+- [x] Config override: `config/computercraft-server.toml` — HTTP disabled, command computers disabled, turtle fuel limit 200000
+- [x] GUIDE.md Wave 8 section written — mod table, config, Lua tutorial (shell, editor, syntax primer, event loop, peripherals, turtles, redstone, wireless networking, 5 integration scripts), interdependency notes, 7-session plan
+- [x] FTB Quests: 6 CC:Tweaked quests in new "Programmable Computers" chapter
+
 - [x] Interdependency notes for every wave noting cross-mod interactions
 
 ### Wave 0 — Foundation (~65 mods incl. deps)
+
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Status Effect Bars Reforged, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged, Cosy Critters, Foxified Dense Flowers
 - [x] Inventory/UI: EMI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Inventory Essentials, Advancement Plaques, Tooltip Overhaul, Loot Journal, Better Advancements, Polymorph+, Shulker Box Tooltip, Item Borders
@@ -16,6 +28,7 @@
 - [x] Added YUNG's API to New Dependencies
 
 ### Wave 1 — Tech, Colony & Chunk Loading (~22 mods)
+
 - [x] Core Tech: Create, Mekanism, AE2, Applied Mekanistics
 - [x] ~~Ores: Skniro's Nether & End Ores~~ (removed — unnecessary, unpopular mod)
 - [x] Colony Automation: MineColonies, Structurize, MultiPiston, BlockUI, Domum Ornamentum
@@ -27,6 +40,7 @@
 - [x] Create train addons: Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains
 
 ### Wave 1.1 — Megabuilding (1 mod + 18 schematics)
+
 - [x] Forgematica 0.4.3+mc1.21.11 — client-side schematic mod (Litematica unofficial Forge/NeoForge port)
 - [x] No dependencies (standalone — no MaLiLib required)
 - [x] 18 recommended schematics curated from abfielder.com covering all three progression phases
@@ -37,6 +51,7 @@
 - [x] Session plan written (5 progressive building sessions)
 
 ### Wave 2 — Exploration (~31 mods)
+
 - [x] Worldgen: Terralith, Tectonic, End Remastered, Moog's End Structures
 - [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
 - [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
@@ -46,6 +61,7 @@
 - [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
 
 ### Wave 3 — Equipment Magic & RPG (~18 mods incl. 10 deps)
+
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
 - [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
 - [x] Simply Swords, Too Many Bows, Spartan Weaponry Unofficial, Relics RPG, Runes
@@ -56,6 +72,7 @@
 - [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons and Twilight Forest bosses
 
 ### Wave 4 — Food, Farming & Comfort (~10 mods)
+
 - [x] Farmer's Delight, Brewin' And Chewin'
 - [x] Storage Delight, My Nether's Delight, Ocean's Delight, Ender's Delight (moved from Wave 2)
 - [x] More Delight updated to 26.05.20a-1.21-neoforge (was stale pin 3.5.0)
@@ -66,16 +83,19 @@
 - [x] All interdependency notes written (food storage with AE2)
 
 ### Wave 4.5 — Quests (1 mod)
+
 - [x] Bountiful 8.0.0-beta.2 selected
 - [x] Bountiful generates fetch/kill/exploration quests and automatically includes items from all installed mods
 - [x] Compat notes for Bountiful + Farmer's Delight + Simply Swords + Apotheosis
 
 ### Wave 5 — Combat (~7 mods)
+
 - [x] Better Combat, Mutant Monsters, L_Ender's Cataclysm, When Dungeons Arise, Enchantment Descriptions
 - [x] Create Big Cannons + Ritchie's Projectile Library
 - [x] All mods configured at defaults
 
 ### Wave 6 — Building & Decoration (12 mods + 3 deps)
+
 - [x] Rechiseled (replaces Chipped), Supplementaries (Modrinth), Macaw's Bridges/Doors/Roofs/Windows, Building Wands, Handcrafted
 - [x] Rechiseled addons: Rechiseled: Create, Rechiseled: Applied Energistics 2
 - [x] Fetzi's Displays (glass cloches, katana stands, wall holders, racks)
@@ -83,13 +103,22 @@
 - [x] Dependencies: Moonlight Library (Supplementaries), Resourceful Lib (Handcrafted), Fusion (Rechiseled)
 
 ### Wave 7 — Space Exploration (~1 mod)
+
 - [x] Stellaris 1.4.23 as core space mod
+
 - [x] Dependency: Potentials API
 - [x] ~~TFMG-Stellaris Compatibility~~ removed (not needed, Stellaris has native fuel system)
 
-## Completed Decisions
+### Wave 8 — Programmable Computers (1 mod)
+
+- [x] CC:Tweaked added as programmable computer mod (Modrinth — dev-recommended platform for NeoForge builds)
+- [x] KubeJS recipe script: `kubejs/server_scripts/wave8_cc_tweaked.js` — gates turtles (TFMG steel), Advanced Computer (Mekanism Enriched Alloy), Wireless Modem (Create brass)
+- [x] Config override: `config/computercraft-server.toml` — HTTP disabled, command computers disabled, turtle fuel limit 200000
+- [x] GUIDE.md Wave 8 section written — mod table, config, Lua tutorial (shell, editor, syntax primer, event loop, peripherals, turtles, redstone, wireless networking, 5 integration scripts), interdependency notes, 7-session plan
+- [x] FTB Quests: 6 CC:Tweaked quests in new "Programmable Computers" chapter
 
 ### Design choices
+
 - [x] Added Hybrid Aquatic, Starcatcher, Better Fishtanks, Fetzi's Displays, Lili's Pottery (July 2026)
 - [x] Skipped Hybrid Delights (no NeoForge 1.21.1), Jungle Treehouse Village (no NeoForge 1.21.1), The Bumblezone (dimension overload — 4th dimension doesn't integrate with progression)
 - [x] Switched all mod links from Modrinth to CurseForge (July 2026)
@@ -128,8 +157,6 @@
 - [x] Replaced Fancy Toasts with Advancement Plaques — glowing plaque popups (copper/silver/gold borders), requires Iceberg
 - [x] Added Iceberg as Wave 0.5 dependency (Advancement Plaques library)
 
-## Completed Decisions
-
 - [x] Terralith URL switched from CurseForge to Modrinth (NeoForge 1.21.1 available)
 - [x] Tectonic URL switched from CurseForge to Modrinth (NeoForge 1.21.1 available)
 - [x] Better Days added to Wave 0 (day/night length control, chill QoL)
@@ -137,18 +164,16 @@
 - [x] Better Days config: 2x day length, time effects disabled (compat with Serene Seasons crop system)
 - [x] MineColonies + 4 deps (Structurize, MultiPiston, BlockUI, Domum Ornamentum) confirmed CurseForge-only — not on Modrinth for NeoForge 1.21.1
 
-## Completed — Recent Changes
-
 - [x] Replaced GDLauncher with XMCL across all docs (MODLIST.md, GETTING-STARTED.md, STATUS.md) — July 2026
 
 ## Pending
 
-### Testing
-- [ ] Test launch with Waves 0-7 — generate default configs for all mods
+- [ ] Test launch with Waves 0-8 — generate default configs for all mods
 - [ ] Verify no mod conflicts
 - [ ] Cross-wave integration testing
 - [ ] Config tuning per mod
 - [ ] After test launch, capture Apotheosis defaults (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) then apply overrides per GUIDE.md §Wave 3
+
 ### Data Packs
 
 - [x] Day Counter mod added to Wave 0 — replaces typewriter day counter (data pack format was incompatible with 1.21.1)
@@ -156,9 +181,11 @@
 - [x] No Creeper Grief data pack
 
 ### Shaderpacks
+
 - [x] Complementary Unbound selected and documented in MODLIST-V3.md
 
 ### Merged Guide (Jul 2026)
+
 - [x] GUIDE.md created — single canonical source merged from MODLIST.md + GETTING-STARTED.md
 - [x] Driftwood Typst theme — cover page with logo, TOC, color palette from logo
 - [x] templates/modlist.typ removed — superseded by single guide.typ
@@ -166,6 +193,7 @@
 - [x] DRIFTWOOD-GUIDE.pdf compiled cleanly
 
 ### Added Mods (Jul 2026)
+
 - [x] Beautiful Enchanted Books (Wave 0 — Visual & Client QoL)
 - [x] ~~Subtle Effects~~ → replaced with Particular Reforged (Wave 0 — Visual & Client QoL)
 - [x] Darker Depths (Wave 2 — Underground & Ocean)
@@ -174,12 +202,15 @@
 - [x] Nullscape re-added as End data pack (Wave 2 — End Overhaul)
 
 ### Fixed Crashes (Jul 2026)
+
 - [x] Darker Depths 2.1.4 crash at startup — missing TerraBlender (worldgen API). Darker Depths 2.1+ requires TerraBlender or Biolith to register its cave biomes. Added TerraBlender NeoForge 1.21.1-4.1.0.8 as a required dependency.
 
 ### Added Mods (Jul 2026 continued)
+
 - [x] Cherished Worlds v10.1.1 (Wave 0 — Visual & Client QoL)
 
 ### Added Mods (Jul 2026 batch 2)
+
 - [x] Particular Reforged (Wave 0 — replaces Subtle Effects, same category)
 - [x] First Person Model + Not Enough Animations dep (Wave 0 — Visual & Client QoL)
 - [x] Presence Footsteps (Wave 0 — Visual & Client QoL)
@@ -189,18 +220,22 @@
 - [x] Vanilla Refresh → Typewriter Day Counter → Day Counter mod (Wave 0 — Visual & Client QoL)
 
 ### Removed Mods (Jul 2026 batch 2)
+
 - [x] Obscure Tooltips — removed (Tooltip Overhaul retained as sole tooltip mod)
 - [x] Subtle Effects — removed (replaced by Particular Reforged)
 
 ### Skipped After Review
+
 - [x] Spelunkery — too much overlap with YUNG's Better Caves + Mekanism tool progression
 - [x] Galosphere — Darker Depths chosen as the cave content mod instead; Galosphere gems are orphan content
 - [x] Environmental — biome conflict with Terralith
 
 ### Added Mods (Jul 2026 batch 4)
+
 - [x] Dynamic Villager Trades (Wave 0 — Village & Trading)
 
 ### Added Mods (Jul 2026 batch 3)
+
 - [x] 3D Skin Layers (Wave 0 — Visual & Client QoL)
 - [x] Better Safe Bed (Wave 0 — Visual & Client QoL)
 - [x] Neo Bee Fix (Wave 4 — Food & Farming)
@@ -209,12 +244,15 @@
 - [x] TFMG Energy Converter (Wave 1 — Create Addons) + Kotlin for Forge dep — crash was missing Kotlin stdlib, fixed
 
 ### Added Mods (Jul 2026 batch 12 — Mod Review)
+
 - [x] Chunky (Forge/NeoForge) (Wave 0 — Infrastructure) — world pregenerator, `/chunky` commands, zero dependencies, complements NoisiumForked and Distant Horizons. Documented in GUIDE.md §Infrastructure with continue-on-restart config and first-launch checklist entry.
 
 ### Added Mods (Jul 2026 batch 13)
+
 - [x] Mekanism Tools (Wave 1 — Mekanism Addons) — armor/shields/tools/paxels for Osmium, Bronze, Refined Obsidian, Refined Glowstone, Steel. Fills gear progression gap between netherite and MekaSuit. Official Mekanism addon. Apotheosis affixes apply to its gear.
 
 ### Added Mods (Jul 2026 batch 14 — MineColonies Addons)
+
 - [x] JadeColonies (Wave 0 — Inventory & UI) — Jade tooltips for MineColonies huts, workers, and Domum Ornamentum blocks. 5.4M DL, NeoForge 1.21.1.
 - [x] Byzantine Styles Pack (Wave 1.5 — Colony Addons) — 3 build styles: Byzantine, Shogun, Nile. 12.4M DL, updated May 2026.
 - [x] Stylecolonies (Wave 1.5 — Colony Addons) — Official MineColonies blueprint addon by Raycoms. 10+ styles: Steampunk, Frontier, Aquatica, High Magic, Antique, Crimson Keep, etc. 27.6M DL, updated Jul 2026. FairyTale style unavailable (requires Quark, not in pack).
@@ -224,6 +262,7 @@
 - [ ] Day Counter config — verify config keys after test launch, apply overrides from GUIDE.md (ActionBar only, no sound, no rewards, no week days, no date system)
 
 ### Added Mods (Jul 2026 batch 15 — Questing Ecosystem)
+
 - [x] FTB Library (Wave 4.5 — Questing Foundation) — core FTB library, 211M+ DL ecosystem. NeoForge 1.21.1.
 - [x] FTB Quests (Wave 4.5 — Questing Foundation) — quest book framework with in-game editor. Chapters organized by mod. 211M DL, NeoForge 1.21.1.
 - [x] FTB Teams (Wave 4.5 — Questing Foundation) — quest progress tracker. In SP: team of 1, transparent.
@@ -233,20 +272,24 @@
 - [x] ExtraQuests (Wave 4.5 — Quest Addons) — additional task/reward types: key-value tracking, progressive tasks, daily/weekly quests, console command rewards. 75K DL, MIT, Modrinth.
 
 ### Removed Mods (Jul 2026 batch 15)
+
 - [x] Bountiful — replaced by FTB Quests ecosystem. Procedural bounty boards removed in favor of authored quest book with chapters per mod.
 
 ### Skipped After Review (Jul 2026 batch 15)
+
 - [x] Certain Questing Additions — cosmetic UI animation tweaks for FTB Quests. Adds no functionality. Skipped.
 - [x] FTB Echoes — superseded by FTB Quests. Two questing systems would conflict. Hologram NPC also clashes with chill living.
 - [x] FTB JEI Extras — JEI-specific (pack uses EMI). Skipped.
 - [x] FTB Ez Crystals — simplifies AE2 crystal growth. Contradicts 200h+ progression. Skipped.
 
 ### Discussion Held (Jul 2026 batch 15)
+
 - [x] EMI vs JEI — keeping EMI. Recipe trees + native Create Ponder outweigh JEI addon ecosystem. FTB Quests works with EMI compat layer.
 - [x] FTB Quests adoption — replaced Bountiful. Full ecosystem: 7 mods, 201 total. Pre-written MineColonies questline. ~85 quests to author for other mods.
 - [x] Survival + single-player constraints added to AGENTS.md
 
 ### Added Mods (Jul 2026 — Research Batch)
+
 - [x] Eating Animations (Wave 0 — Visual & Client QoL) — NeoForge 1.21.1 available as eatinganimation-1.21.0-6.0.1.jar
 - [x] Camera Overhaul (Wave 0 — Visual & Client QoL) — v2.0.5 for NeoForge 1.21.0-1.21.1
 - [x] Improved Village Placement (Wave 0 — Village & Trading) — v1.2.0 for NeoForge 21.1 — **requires Lithostitched** (undeclared dep, added to GUIDE.md Wave 0.5 dependencies)
@@ -254,6 +297,7 @@
 - [x] \[DLS\] Dark Loading Screen (Wave 0 — Visual & Client QoL) — dark loading screen replacement
 
 ### Skipped After Review (Jul 2026)
+
 - [x] Dynamic Surroundings — overlaps with AmbientSounds (ambience), Presence Footsteps (footsteps), and Particular Reforged (particles)
 - [x] Ambient Environment — redundant with AmbientSounds
 - [x] Cool Rain — Fabric-only; Cool Rain Reforged stale; overlap with DS/AmbientSounds
@@ -265,12 +309,14 @@
 - [x] Explosive Enhancement — not essential; Camera Overhaul already adds explosion screen shakes
 
 ### Added Mods (Jul 2026 batch 5)
+
 - [x] Easy Anvils (Wave 0 — Utility & QoL) — anvil overhaul, requires Puzzles Lib (already in pack)
 - [x] Euphoria Patches (Wave 0 — Shaderpack) — optional add-on for Complementary Unbound, standalone on NeoForge
 - [x] Euphoria Patches recommended settings added to GUIDE.md (Popular Settings tab + feature table)
 - [x] Architectury API installation documented in GUIDE.md Wave 0.5 (cross-loader dependency, was missing from GUIDE despite being in mod list)
 
 ### Config Overrides Created (Jul 2026)
+
 - [x] YUNG's Better Caves (config/bettercaves/neoforge-1.21.1/better_cave.json) — cavern_spawn_chance 23% → 30%, gives Crystal Cavern biome more room to breathe
 - [x] Waystones (config/waystones-common.toml) — free teleport (enableCosts=false), inventory button on "ANY"
 - [x] Better Days (config/betterdays-common.toml) — SEASON mode, seasonDayMinutes=20.0, seasonLatitude=48.0, all time effects off, smooth sleep acceleration
@@ -287,10 +333,12 @@
 - [ ] Apotheosis remaining configs (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) — need test launch to capture defaults, then apply overrides from GUIDE.md section
 
 ### Removed Mods (Jul 2026)
+
 - [x] Vervada's 3D Plants (Wave 0 — Texture Pack) — removed due to incompatibility issues with other mods
 - [x] 3D Ladders (Wave 0 — Texture Pack) — duplicate functionality; RAY's 3D Rails already covers 3D ladders alongside its rail models
 
 ### Added Mods (Jul 2026 batch 11 — Visual Polish)
+
 - [x] (Bee's) Fancy Crops (Wave 0 — Texture Pack) — 6.5M downloads, works with Farmer's Delight
 - [x] Fire Rekindled (Wave 0 — Texture Pack) — animated fire/lava/water textures, Create mod support
 - [x] ~~Rainbow's Foliage (Wave 0 — Texture Pack) — foliage color variation~~ **REMOVED** — no compatible NeoForge version
@@ -302,9 +350,11 @@
 - [ ] Effectual config tuning: disable cave dust (duplicated by Particular Reforged) after test launch
 
 ### Additional Mod Candidates
+
 - [ ] Additional RPG classes (Wizards, Archers, Paladins — if Spell Engine ecosystem returns)
 
 ### Mod Review — 8 Candidates (Jul 2026)
+
 - [x] Chunky — **ADDED** (Wave 0 Infrastructure) — zero-risk world pregenerator, complements NoisiumForked + DH
 - [x] Physics Mod — skipped (history of Iris/3DSL bugs, 59MB for ragdolls, Chill Rule conflict with collapsing structures)
 - [x] Panda's Falling Trees — skipped (user preference, non-essential QoL)
@@ -316,27 +366,34 @@
 - [x] Alex's Mobs alternatives researched: Naturalist, Critters & Companions, Friends&Foes, Ecologics — all rejected; current creature lineup sufficient
 
 ### Added Mods (Jul 2026 batch 6)
+
 - [x] Hang Glider v21.1.0 (Wave 2 — Mobility) — simple fabric-and-wood glider, Phase 1 accessible exploration aid. Requires Puzzles Lib (already in pack).
 - [x] Man of Many Planes 0.2.1 (Wave 2 — Mobility) — Immersive Aircraft addon, two Create-themed aircraft. Requires Immersive Aircraft (already in pack).
 
 ### Skipped After Review (Jul 2026 batch 6)
+
 - [x] Automobility — no NeoForge version, only maintained for 1.20/1.20.1. Last updated Jun 2023. Abandoned.
 
 ### Added Mods (Jul 2026 batch 8 — Weather Particles)
+
 - [x] Particle Rain v4-beta.10 (Wave 0 — Visual & Client QoL) — replaces default weather with particle effects: angled rain, desert sandstorms, fog, wind. Client-side only, by PigCart (same author as Cosy Critters). MIT license, 16.3M downloads, NeoForge 1.21.1 native.
 - [x] Swinging Lanterns v1.5.0.1 (Wave 0 — Visual & Client QoL) — subtle physics-based swaying on lanterns and chains. Client-side only, no dependencies, 250K downloads, NeoForge 1.21.1 native.
 
 ### Added Mods (Jul 2026 batch 7 — Ambient Visuals)
+
 - [x] Cosy Critters & Creepy Crawlies v0.3.3 (Wave 0.5 — Visual & Client QoL) — ambient atmospheric animals: birds, bugs, critters. Client-side only, 97KB, all effects configurable. NeoForge 1.21.1 native. By PigCart (GrandArtisan, 709K downloads).
 - [x] Foxified Dense Flowers v1.0.0 (Wave 0.5 — Visual & Client QoL) — renders multiple flowers per block in flower fields. NeoForge 1.21.1 native, client-side only. NeoForge port of the original Fabric mod (172K downloads, MIT licensed). By owen233.
 
 ### Added Mods (Jul 2026 batch 9 — Dark UI)
+
 - [x] Dark Mode Everywhere v1.4.0 (Wave 0.5 — Visual & Client QoL) — shader-based dark mode for all GUIs, 3 darkness levels, toggleable in-game. Client-side only, MIT license, 36.2M downloads, NeoForge 1.21.1 native. By Buuz135. No dependencies.
 
 ### Added Resource Packs (Jul 2026 batch 10 — Font)
+
 - [x] Smooth Font 32x (Wave 0 — Texture Pack) — Faithful 32x-based smooth font, 7.8M downloads, 69KB. Only overrides font textures, safe alongside 16x packs. By apt9002. [CurseForge](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
 
 ### Review History — Foliage Resource Packs (Jul 2026)
+
 - [x] ~~Rainbow's Foliage — was blocked by Polytone dep; verified Polytone has NeoForge 1.21.1 but no compatible version of the resource pack for 1.21.1~~ ❌ REMOVED
 - [x] Os' Colorful Grasses — 814K downloads but 32x texture conflict with 16x packs, Patreon-gated full version ❌ STILL SKIPPED
 - [x] ~~Mickey Joe's Flowers — enhanced 3D flowers, 95K downloads, actively updated~~ ❌ REMOVED — no compatible NeoForge version found
@@ -346,6 +403,7 @@
 - [x] LambdaBetterGrass — Fabric-only. No NeoForge version exists. 9.2M downloads but on wrong modloader ❌ STILL SKIPPED
 
 ### Mod Review — 11 Candidates (Jul 2026 batch 16)
+
 - [x] Traveler Tool Belt — **ADDED** (Wave 0.5 — Inventory & UI) — tool radial menu, 2→9 slots, Curios integration. By Tiviacz1337. NeoForge 26.1.2.
 - [x] Field Guide — **ADDED** (Wave 2 — Field Guide) — spyglass-based creature/plant catalog. Exploration doc mod. By evanbones. NeoForge 26.1.2.
 - [x] Create Deep Seas — **REMOVED** (was Wave 2) — requires Sable ecosystem (Create Aeronautics dep). Alpha/Early Access. Iris shader incompatibility concern. Dropped alongside Create Aeronautics.
@@ -359,28 +417,36 @@
 - [x] Create: Stats & Additions — skipped (uncertain scope, potential overlap with Create Crafts & Additions)
 
 ### Added Mods (Jul 2026 batch 17 — Deep Aether)
+
 - [x] Deep Aether 1.1.5.1 (Wave 2 — Dimensions) — Aether dimension expansion: 5 biomes, Skyjade/Stratus gear, new mobs, poison swamps. Aeroblender pre-bundled, TerraBlender already in pack. No config needed.
 
 ### Added Mods (Jul 2026 — Countered's Smooth F5)
+
 - [x] Countered's Smooth F5 (Wave 0.5 — Visual & Client QoL) — smooth third-person camera transitions on F5, cinematic, configurable. Client-only, no dependencies, CC0-1.0. NeoForge 1.21.1 (Modrinth). Replaced Seramicx's fork.
 
 ### Added Mods (Jul 2026 batch 18 — Twilight's Flavors & Delight)
+
 - [x] Twilight's Flavors & Delight 3.2.2 (Wave 4 — Food & Farming) — Twilight Forest × Farmer's Delight crossover: 35+ FD-style TF foods, 4 TF knives, maze stove, 5 potion effects, trophy dismantling. Dependencies: TF + FD (both in pack). No config needed.
 
 ### Added Mods (Jul 2026 batch 19 — Umbral Skies)
+
 - [x] Umbral Skies 1.6.2 (Wave 2 — Dimensions) — Aether × Twilight Forest crossover: Aether-themed TF structures, Aether boss trophies in TF style, TF-material gloves. Dependencies: Aether + TF (both in pack). No config needed.
 
 ### Added Mods (Jul 2026 batch 20 — Create: Dragons Plus + Create: Shimmer)
+
 - [x] Create: Dragons Plus 1.11.2b (Wave 1 — Create Addons) — Bulk Fan Processing (coloring, freezing, ending, sanding), Fluid Hatch, Aether Bulk Enchanting. Library/lib for Create addon devs. GPLv3.
 - [x] Create: Shimmer 1.2.10 (Wave 1 — Create Addons) — Create × Twilight Forest compat: Shimmer fluid + Bulk Transmutation automates TF item production. Requires Create: Dragons Plus. GPLv3.
 
 ### Removed Mods (Jul 2026 batch 21 — BetterEnd replacement)
+
 - [x] BetterEnd: New Dawn — removed. Replaced by End Remastered (portal progression overhaul — 16 custom Ender Eyes instead of End dimension biomes). End overhaul was thin (unofficial continuation, 415K DL). End dimension now uses Nullscape (terrain) + Moog's End Structures for content.
 
 ### Added Mods (Jul 2026 batch 21 — End Remastered)
+
 - [x] Controll… End Remastered 6.3.0 (Wave 2 — End Access & Structures) — portal progression overhaul: 16 custom Ender Eyes hidden across vanilla structures and bosses. Find 12+ to open the End. 42.6M DL, LGPLv3. No config needed.
 
 ### Added Mods (Jul 2026 batch 22 — UI/Inventory QoL Review)
+
 - [x] Smooth GUI v2.0.0 (Wave 0 — Visual & Client QoL) — GUI open/close slide-in animation, fade-in background overlay + blur. Client-side, no deps, MIT license.
 - [x] Immersive Hotbar v1.1.2 (Wave 0 — Visual & Client QoL) — animated hotbar slot transitions on pickup/use/swap, XP bar + level-up effects, tooltip animations. Requires YACL (already in pack). Complements Immersive UI (different animation targets).
 - [x] Controlling v29.0.1 (Wave 0 — Inventory & UI) — search keybinds by name, show only conflicting binds, list available keys. Essential for 150+ mod pack. No deps, client-side.
@@ -390,6 +456,7 @@
 - [x] Mod counts updated: Wave 0.5 50→56 (Visual & Client QoL 29→32, Inventory & UI 17→20)
 
 ### Added Mods (Jul 2026 batch 23 — Megabuilding)
+
 - [x] Forgematica 0.4.3+mc1.21.11 (Wave 1.1 — Megabuilding) — Litematica unofficial Forge/NeoForge port. Client-side schematic rendering, holographic overlay, material list, layer-by-layer placement. Standalone (no MaLiLib), 1.6M DL, LGPLv3.
 - [x] 18 schematics curated from abfielder.com — 4 Phase 1 starters, 3 farms/windmills, 5 factories/warehouses, 1 underground base, 2 castles, 3 bridges/walls/towers. All free, all .litematic format.
 - [x] Wave 1.1 section written in GUIDE.md — mod entry, keybinds, usage guide, schematic table (18 rows), interdependence notes, session plan.
