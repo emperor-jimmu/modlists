@@ -1,0 +1,12 @@
+# Driftwood — CC:Tweaked server config overrides
+# Copy this to <world>/serverconfig/computercraft-server.toml after first world creation.
+# All settings not listed here remain at CC:Tweaked defaults.
+
+[http]
+enabled = false
+
+command_computers = false
+
+[turtles]
+need_fuel = true
+fuel_limit = 200000
