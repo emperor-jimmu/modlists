@@ -275,3 +275,47 @@ Reviewed 6 submitted mods. Four were Kanjs animated-article books, one the seaso
 ### Adopted
 
 - **Skyrim is Cold (99813)** — Adopted as Add-on. SPID warm-outfit distribution for ~50 named Dunmer/Nord NPCs in Windhelm, Morthal, Dawnstar. Requires SPID (baseline). 100% SPID-compatible, no patches, no cell edits, no record conflicts → fits CS-only, third-person/gamepad charter. `modlist-npcs.md` → NPC Appearance Overhauls (Add-on). Carries Frostfall + survival-warm keywords — verify warmth-keyword hook with the locked **Starfrost** survival baseline (Frostfall itself not in list).
+
+## Mods for review — VERDICTS (2026-08-07, 32-mod batch: armor/physics/cloaks/audio/dogs)
+
+Reviewed 32 submitted mods against Elder Wilds pillars (redundancy, modlist adherence, conflicts, CS-compat, third-person/gamepad).
+
+### Already in modlist (no change)
+
+- **Book Covers Skyrim (901) + Lost Library (902)** — Core lock, `graphics-textures.md:253-256`. The 155254 PBR entry (below) is the only new action.
+- **Faction Armors and Weapons Retexture (169281)** — Baseline, `weapons-armor.md:138`. Locked; owns faction-wide armor visual direction.
+- **EVG CLAMBER (114753)** — Baseline, `animations.md:238`. No re-entry.
+- **FSMP (57339)** — Baseline, `animations.md:228`. SMP-NPC crash fix (below) is the companion action.
+- **Dynamic Female Hand Warming (88506)** — Alternative, `animations.md:295`. No re-entry.
+- **Gesture Animation Remix (64420)** — Alternative, `animations.md:417`. No re-entry.
+- **HDT-SMP Vanilla Armors (142450)** — Alternative, `graphics-characters.md:135`. No re-entry.
+
+### Adopted (entry added to owning section file)
+
+- **Book Covers Skyrim - PBR (155254)** — `graphics-textures.md` → Books (Base + Enhancements). PBR conversion of the locked BCS stack (901 + Enhanced Textures 178820); CS-pipeline-native, aligned with the exclusive Community Shaders rule. Install after BCS + Enhanced Textures. Choose 2K.
+- **Glass Armors and Weapons Retexture SE (87580)** — `weapons-armor.md` → Armor Set Additions. Xavbio's Glass material tier, same author/direction as the locked Faction AIO (169281) + Ebony (83654). Choose 2K.
+- **Fluted Armor family — base (106381) + HDT-SMP patch (106791) + HIMBO V5 (125169) + SPID (122563)** — `weapons-armor.md` → Armor Set Additions. Coherent 4thUnknown heavy-armor kit, esp-fe, FSMP + HIMBO-native (both baseline). SPID row distributes to NPCs.
+- **Ash Pilgrim's Garments (53683) + Revived ports (72783)** — `weapons-armor.md` → Armor Set Additions. Base is female Dunmer light set; Revived adds Vanilla/3BA/BHUNP/HIMBO/beast paths + plugin fixes — install over base. 3BA + HIMBO fit the locked body baseline.
+- **SMP-NPC crash fix (91616)** — `foundations.md` → Targeted Bugfixes. Prevents the known FSMP crash loading SMP-hair NPCs; required companion to the locked FSMP baseline. SKSE plugin.
+- **Dragon Stalking Fix (14060)** — `foundations.md` → Targeted Bugfixes. Dragon corpses no longer follow the player or fall from the sky. ESL, SPID-based cleanup, requires Po3 Tweaks (baseline). 8.3K endorsements.
+- **Diverse Dog Textures - SPID (105669)** — `creatures.md` → Additional Species Follow-Ups. 9 dog breeds via SPID skin shells; compatible with any dog-adding mod. **Verify overlap with Diverse True Wolves and Dogs (38058) — pick one dog-variety layer before install.**
+
+### Tentative — evaluate before committing
+
+- **FIBBI - Outfit Recognition Framework patches (163581)** — Requires the Outfit Recognition Framework (163502), which is **not currently in the modlist** (grep confirms no hit). Only adoptable if ORF is added as a framework. 433 endorsements; patches 150+ armor mods including Fluted, 4thUnknown, Xavbio sets. **DEFER until ORF adoption decision is made.**
+- **Cloaks and Capes (2019) + 4K Upscaled (71327) + Dynamic HDT (173943)** — A second, older cloak family vs the locked Artesian Cloaks (17416) + Dynamic Artisan (146438) baseline. Treat as an Alternative identity, not a new baseline — decide at the cloak identity review. (2019's modern counterpart stays Cloaks of Skyrim 6369 + RMB SPCH 116030.)
+- **Dynamic HDT - Papyrus Script Extension (63017)** — Modder resource restoring FSMP runtime hooks. Only needed if a chosen armor explicitly requires it; no armor in the adopted stack does. Optional.
+- **Airgetlam - Modern Magic Sounds Rework (51541)** — Magic casting/sfx rework distinct from the locked Airgetlam - Shouts SFX (33993, `audio.md:45`, shout replacer). Audio layer already dense (ISC + AOS + Airgetlam-shouts); adding a second raw-casting replacement risks sound-layer duplication. Lower priority.
+
+### Rejected
+
+- **Frankly HD Dawnguard Armor and Weapons (19663)** — REJECTED. Conflicts with the locked Xavbio Faction Armors AIO (169281, `weapons-armor.md:138`), which owns Dawnguard armor/weapons visual direction. Two different authors on the same faction = broken coherence. (Same reasoning as the Dark Brotherhood Armor SE rejection, STATUS.md.)
+- **HIMBO Skyrim and CC refits patches (144427)** — REJECTED (chain). HIMBO refit patch set tied to the Frankly HD Dawnguard path (19663, rejected above). TangyTweaks' HIMBO Conversions (135362, already in `weapons-armor.md:152`) is the established HIMBO-refit layer.
+- **GLAM Jenassa Irileth (112715)** — REJECTED for now. Adult-content-gated NPC appearance retouch; NPC-appearance niche already owned by the comprehensive NPC baseline. Revisit only if targeted NPC appearance becomes a priority.
+- **Alduin's Wall - Descriptions (111573)** — REJECTED. ESPFE description text for one wall mural; trivial flavor with zero mechanical content. Not worth a slot.
+- **Alchemy Station Variants (92768)** — REJECTED. BOS mesh variety for alchemy stations; flavor-only visual variety vs the settled crafting/workshop visuals. No gap worth adopting.
+
+### Optional / marginal — not adopted
+
+- **FK's Diverse Racial Skeletons (38563)** — NOT ADOPTED. Replaces XPMSSE skeleton meshes per race for height/scale differences. Modlist owns **XPMSSE as the single skeleton baseline** (`animations.md:226`); a skeleton-layer replacement adds physics/anim risk (FSMP, OAR stacks) for cosmetic scale variance. Revisit only if height realism becomes a priority.
+- **Armors Have Description (117818)** — NOT ADOPTED standalone. Requires the Description Framework (105799), whose Patch Hub (139077) is in `foundations.md:257` but the base framework is not listed. Chain-adopt only if the base Description Framework is added.

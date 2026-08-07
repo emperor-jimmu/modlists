@@ -86,6 +86,7 @@ Creature-specific visual direction layered on top of the Bellyaches texture foun
 | Mod | Notes |
 | --- | --- |
 | [Diverse True Wolves and Dogs](https://www.nexusmods.com/skyrimspecialedition/mods/38058) | |
+| [Diverse Dog Textures - SPID](https://www.nexusmods.com/skyrimspecialedition/mods/105669) | 9 dog breeds (shepherd, retrievers, labs, mastiff, great dane, husky) via SPID skin shells. SPID-based, plays well with any dog-adding mod. Fluffworks patch exists (130419). Verify overlap with Diverse True Wolves and Dogs (38058) — pick one dog-variety layer. |
 | [Real Rabbits HD](https://www.nexusmods.com/skyrimspecialedition/mods/29223) | |
 | [Rally's Shaggy Cows of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/47742) | |
 | [Realistic Horse Breeds by KrittaKitty](https://www.nexusmods.com/skyrimspecialedition/mods/7685) | Verify 1.6.1170 compatibility. |

@@ -253,8 +253,9 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 | [Book Covers Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/901)                      | Core book-cover texture replacer. Every book gets a unique hand-crafted cover. 200K+ endorsements. Choose the **Main Files** download (not the USSEP Update variant). |
 | [Book Covers Skyrim Enhanced Textures](https://www.nexusmods.com/skyrimspecialedition/mods/178820) | 2K/4K texture upgrade. Install after base mod and overwrite. Optional but recommended for 4K displays.                                                                |
 | [Book Covers Skyrim - SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/109254)      | SkyPatcher-based forward-port resolving record-level conflicts. Choose **Recommended Main File**.                                                                     |
-| [Book Covers Skyrim - Lost Library](https://www.nexusmods.com/skyrimspecialedition/mods/902)       | Adds 150+ lore books from earlier TES games. Content companion; quest-level decision owned by → [World Content](modlist-world-content.md).                            |
-| [HFs - Ruined Books](https://www.nexusmods.com/skyrimspecialedition/mods/132355)                   | High-quality ruined/destroyed book clutter meshes. Complements Book Covers Skyrim for damaged books.                                                                  |
+| [Book Covers Skyrim - Lost Library](https://www.nexusmods.com/skyrimspecialedition/mods/902)       | Library of 150+ lore books from earlier TES games. Content companion; quest-level decision owned by [World Content](modlist-world-content.md). Add the PBR-compatible cover variant where available. |
+| [Book Covers Skyrim - PBR (155254)](https://www.nexusmods.com/skyrimspecialedition/mods/155254) | PBR conversion of the Book Covers stack (book main + Enhanced Textures 178820). Requires the Community Shaders PBR pipeline (locked baseline); install after BCS + Enhanced Textures. 2K recommended. |
+| [HFs - Ruined Books](https://www.nexusmods.com/skyrimspecialedition/mods/132355)                 | High-quality ruined/destroyed book clutter meshes. Complements Book Covers Skyrim for damaged books.                                                                  |
 
 ### Risks & Compatibility
 

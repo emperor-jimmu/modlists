@@ -252,6 +252,8 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 | [Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967)                | Consistent jumping control.                                         |
 | [LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136)           | Leveled-list crash protection.                                      |
 | [Explosion Collision Fix](https://www.nexusmods.com/skyrimspecialedition/mods/154076)         | Prevents explosion-force spells from launching objects into camera. |
+| [SMP-NPC crash fix](https://www.nexusmods.com/skyrimspecialedition/mods/91616)              | Prevents the known FSMP crash when loading NPCs with SMP hair. Required companion to the locked FSMP baseline. SKSE plugin. |
+| [Dragon Stalking Fix](https://www.nexusmods.com/skyrimspecialedition/mods/14060)            | Dragon corpses no longer follow the player or fall out of the sky. ESL, SPID-based corpse cleanup. Requires Po3 Tweaks (baseline). |
 | [Beard Mask Fix](https://www.nexusmods.com/skyrimspecialedition/mods/80232)                  | Beards use slot 44 — prevents mask clipping. SKSE plugin.           |
 | [Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)                   | Utility SKSE plugin.                                                |
 | [Description Framework Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139077) | Centralized patch collection for the Description Framework.         |
