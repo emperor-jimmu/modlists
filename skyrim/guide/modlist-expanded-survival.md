@@ -39,6 +39,7 @@ Visible eating and drinking as a downtime ritual — animated consumption with s
 |---------------------------------------------------------------------------------------|----------|------|-----------------------------------------------------------------------------------------------------------|
 | [Animated Eating Redux SE](https://www.nexusmods.com/skyrimspecialedition/mods/4652)  | Baseline | all  | Third-person eating/drinking animations with sound. NPCs eat autonomously based on time of day. FOMOD with optional animated potions, coffee/tea. Requires SKSE + SkyUI + Pandora (behavior engine). |
 | [Animated Eating Redux - Settings Loader](https://www.nexusmods.com/skyrimspecialedition/mods/63841) | Companion | all | MCM settings loader/preset. Install after Animated Eating Redux.                           |
+| [Eating Animations and Sounds](https://www.nexusmods.com/skyrimspecialedition/mods/42602)             | Alternative | all | Lighter eating/drinking animation replacement. v1.9.4, 11,210 endorsements. **Competes with the locked `Animated Eating Redux` baseline on the same animation events — choose one.** |
 
 ### Key Features
 

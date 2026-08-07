@@ -139,6 +139,34 @@ Travel-stop identity, small community presence, memorable rural pauses.
 | [The Great Town of Karthwasten SSE](https://www.nexusmods.com/skyrimspecialedition/mods/33032) |
 | [Oakwood](https://www.nexusmods.com/skyrimspecialedition/mods/61007) |
 
+### Tavern Life And Inn Economy
+
+Inn-side downtime flavor layered on the Candlehearth baseline: tavern economy, daily menus, and innkeeper interactions. Kept separate from the locked economy/loot dials (→ `Crafting & Economy` owns OWL / Trade and Barter).
+
+| Mod | Type | Notes |
+|-----|------|-------|
+| [Tavern Games - Mini Games in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1668) | Add-on | Card ("Battle of Heroes"), dice, and lottery mini-games at any tavern + tavern vouchers (3 free nights). v1.2.1, SKSE-free. Top-down camera (Witcher/Fable-like); Xbox One port exists. **Verify gamepad inputs in testing** (2016-era SkyUILib UI). |
+| [Tavern Games - Ink-art Card Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/172419) | Companion | Card visuals for the above. Only with Tavern Games. |
+| [Today's Menu](https://www.nexusmods.com/skyrimspecialedition/mods/55187) | Add-on | Buy the innkeeper's daily menu (20 gold): randomized main dish + drink + side/dessert, locality-aware, once/day/inn. Distributions via editable leveled lists. Complements Candlehearth. |
+| [Coherent Inns Prices](https://www.nexusmods.com/skyrimspecialedition/mods/55207) | Add-on | Location-based inn prices (cheap 40 / normal 70 / expensive 100; main-city + Old Hroldan expensive). Contained per-inn dial — no effect on the locked economy/loot stack. **Use the provided Candlehearth patch**; skip the "More Expensive" add-on (globals configurable). Compatible with Inns Can Be Closed / Extended Stay. |
+
+---
+
+## Player Homes
+
+Owned "Living the world" home layer — a believable home the player lives in between quests, anchored by the LoTD museum. Named quest-content player homes keep their owning sections.
+
+| Mod | Notes |
+|-----|-------|
+| [Autumngate - A Believable Player Home](https://www.nexusmods.com/skyrimspecialedition/mods/60951) | Small believable home southeast of Ivarstead (Rift), ESL. Four FOMOD versions (Standard/Forge/Reduced Clutter/RC Forge). **Install the Purchasable House add-on** (purchasable from Wilhem at Vilemyr Inn for 12,000 gold; dialogue appears after 24 in-game hours or a quicksave/reload). Optional Enchanting Table add-on acceptable. Purchasable voice lines are xVASynth (AI-voiced, single NPC) — quality-eval per policy, approved. Verify navmesh against Ivarstead-area mods (Northern Roads patch available). |
+
+### Risks & Compatibility
+
+- Autumngate checks in on the Ivarstead navmesh; verify against adopted town/interior mods for the southeast of Ivarstead.
+- Tavern Life stack must not creep into the locked economy/loot dials (`Crafting & Economy`).
+- Tavern Games' forced top-down camera needs a third-person/gamepad sense-check before locking.
+- Candlehearth (locked inn baseline) owns the inn cells — Tavern Life mods act via dialogue/factions/leveled lists, not cell edits.
+
 ---
 
 ## Dungeons And Ruins

@@ -17,6 +17,21 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 ---
 
+## Sleep And Bedtime Life
+NPC-side sleep realism and downtime interaction — sleeping without dead-mannequin stillness, context-aware bed routines, and believable reactions for the "living the world" layer.
+
+| Mod | Type | Notes |
+|-----|------|-------|
+| [Sleeping Expanded - Animations and NPC reactions](https://www.nexusmods.com/skyrimspecialedition/mods/59250) | Add-on | JaySerpa. NPC breathing/sleeping animations, ~100 fully-voiced woken-up reactions, context-aware bed enter/exit speeds (fast combat exit = no more dying while slowly getting up). v1.23 (Aug 2023), 15,444 endorsements. ESL, no vanilla edits. OAR baseline satisfies its DAR-based animations (OAR loads DAR folders). **Choose main file** (DAR-less only if OAR absent). |
+| [Sleep Tight SE](https://www.nexusmods.com/skyrimspecialedition/mods/20680) | Alternative | NPC sleep-schedule enforcement + sleepwear (see `## Timescale` Alternatives). |
+
+### Risks & Compatibility
+
+- No cell or record conflicts (vanilla-free edits); verify the OAR-animation interplay with any other bed/keep animation mods in → `Animations`.
+- Pairing with `Snores of Skyrim` (→ `Audio`) layers sleep ambience cleanly — no overlap.
+
+---
+
 ## Travel Pacing And Carriage Fast Travel Rules
 How much friction, structure, and world texture sits between major locations.
 

@@ -14,6 +14,8 @@ How `Elder Wilds` begins: a grounded alternate start, a utility-first start, or 
 | [Dealing with Backstories](https://www.nexusmods.com/skyrimspecialedition/mods/61106)                             | Alternative | #1, #2, #3, #4 | Origins companion — background-driven starting skills, bonuses, drawbacks, gear. |
 | [Take Notes — Journal of the Dragonborn SSE](https://www.nexusmods.com/skyrimspecialedition/mods/13570)           | Alternative | #1, #2, #3, #4 | Persistent in-game journal. Low-risk roleplay companion. |
 | [Roleplaying In Skyrim — Origins](https://www.nexusmods.com/skyrimspecialedition/mods/150186)                     | Alternative | #1, #2, #3, #4 | Origin-driven flavor and bonuses. Requires SKSE + Papyrus Ini Manipulator; soft-requires Actor Value Generator + SkyUI. |
+| [Choose Your Starting Skills and Stats](https://www.nexusmods.com/skyrimspecialedition/mods/25630)                | Add-on      | all            | New-game dialogue to pick starting skills/perks before the run begins. Complements the Skyrim Unbound Reborn + Why I Came to Skyrim start; sets starting state only, does not fight the locked Experience/Static Skill Leveling dial. |
+| [Choose Your Starting Skills — Oathvein UI](https://www.nexusmods.com/skyrimspecialedition/mods/170671)           | Add-on      | all            | UI skin for the above matching the locked Oathvein UI baseline (→ `Modernized UI`). Install with 25630. |
 
 ### Risks & Compatibility
 

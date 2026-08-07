@@ -44,6 +44,7 @@ Whether food and cooking are mostly ambient support for travel and downtime or a
 | [Hyper Realistic Cooked Beef](https://www.nexusmods.com/skyrimspecialedition/mods/173752) + [Hyper Realistic Bread](https://www.nexusmods.com/skyrimspecialedition/mods/173283) | all  | Mesh/texture-only replacers. Zero plugin overhead.                       |
 | [Skyrim 3D Cooking](https://www.nexusmods.com/skyrimspecialedition/mods/23007)                                                                                                  | all  | Higher-detail cooking pot, oven, food-prep meshes. Mesh-only, no plugin. |
 | [Realistic HD Food Remastered](https://www.nexusmods.com/skyrimspecialedition/mods/22087)                                                                                       | all  | Photorealistic food textures.                                            |
+| [Steaming Hot Soups and Stews](https://www.nexusmods.com/skyrimspecialedition/mods/63580)                                                                                      | all  | Animated soup/stew bowl mesh + texture replacer with subtle steam effect. No ESP; compatible with soup/stew retextures. **Choose the SMIM bowl version** (SMIM baseline). |
 
 ### Risks & Compatibility
 

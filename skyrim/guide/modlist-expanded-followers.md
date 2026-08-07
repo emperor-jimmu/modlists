@@ -51,6 +51,7 @@ The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue
 | [Amorous Adventures](https://www.nexusmods.com/skyrimspecialedition/mods/7305) (clean variant)   | Baseline    | #1, #2, #3, #4 | Opt-in romance quests, fade-to-black. **Lock only clean build.**              |
 | [Marriage Mod — To Have And To Hold](https://www.nexusmods.com/skyrimspecialedition/mods/8589)   | Baseline    | #1, #2, #3, #4 | Up to 11 spouses, divorce, enhanced wedding, dynamic events.                  |
 | [Serana Dialogue Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/32161)              | Baseline    | #1, #2, #3, #4 | 7,000+ voiced lines, new story arcs, romance. 51K endorsements.               |
+| [I'm Glad You're Here](https://www.nexusmods.com/skyrimspecialedition/mods/41856)              | Add-on      | all            | Fully-voiced follower/spouse/adopted-kids appreciation via dialogue + hug animation. v3.6.0, 10K endorsements. Reqs FLM, KID, SPID, OAR, MCM Helper, SKSE — all baseline. "Living the world" homecoming layer. |
 | Discipline-first route                                                                           | Alternative | all            | Vanilla marriage mechanics.                                                   |
 
 ### Risks & Compatibility
@@ -60,3 +61,4 @@ The SFW romance and marriage layer: expanded marriage mechanics, modern dialogue
 - Romance dialogue can conflict with custom-voiced follower mods from → `NPCs` that replace the same NPC's voice.
 - Romance quest mods add non-trivial content — review against → `World Content` to avoid doubling up on a single NPC's quest line.
 - Marriage events triggered by `To Have And To Hold` can fire during unintended moments; check MCM for event timing/cooldown settings.
+- `I'm Glad You're Here` dialogue sits in the same spouse/follower topic space as the `RDO` baseline — verify in testing that topics coexist (expected: different topics, no overwrite). Hug animation depends on OAR (baseline); the load-game "welcome back" hug can be disabled in MCM.
