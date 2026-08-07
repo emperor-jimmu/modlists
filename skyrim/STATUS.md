@@ -151,23 +151,13 @@ The 17 submitted mods were reviewed against Elder Wilds pillars (redundancy, con
 - **NPCs React To Fire (148183)** — Script-free, 7.3K endorsements; fire-reaction ambient dialogue. Requires SKSE64 + Address Library (baseline). `modlist-world-feel.md` → NPC Dialogue Immersion.
 - **Mephala Revoiced (157081)** — Raw voice-file replacer for Mephala, same pattern as Potema Revoiced. `modlist-audio.md`. Verify against Daedric-quest expansions.
 
-### Tentative — evaluate before committing
+### Rejected
 
-- **Interactive Hanging Chains & Cages (141602)** — Physics hanging chains/cages. Verify FSMP/mesh perf against the CS-only, no-ENB baseline and confirm the visual direction fits the grim-dark pillar before adoption.
-- **Extended Guard Dialogue (106523)** — 168 Tortoise/RVC-generated guard lines, script-free, ESL flag. Additions only; AI-voice quality must pass the curation gate. Guard-flavor niche already partly owned by Guard Dialogue Overhaul (baseline) + Echoes.
-- **New Female Guard Voices (125124)** — Companion to 106523 (uses its voice/license; hooks for Guard Dialogue Overhaul + Idle comments). ElevenLabs AI voice, ESL. Same AI-voice gate; verify against the guard-dialogue stack.
-- **NPCs Learn to Barter (120558)** — SKSE rework making NPC Speech matter in prices. Overlaps the economy dial owned by `Crafting & Economy` and the Trade and Barter / Open World Loot baseline. Evaluate whether it complements or fights that dial before committing.
-- **Thay's Palace of the Kings (153680)** — Deep rebuild of Windhelm's Palace of the Kings interior; load-order bound, patch-heavy, needs verification against Spaghetti's Cities AIO (baseline) and Tomato's Windhelm, plus navmesh sanity. Grim-dark fit strong; integration cost high.
-
-### Rejected / Deferred
-
-- None of the 17 outright rejected — the economy/AI/physics items are gated under Tentative pending decision, not rejected outright.
+- **Interactive Hanging Chains & Cages (141602)** — Rejected. FSMP physics on chains adds CPU/perf load to the CS-only, no-ENB baseline for a pure visual flourish (flavor-only, noticed a few times per dungeon). Grim-dark is already saturated; perf/benefit skews low. Not worth the physics-glitch risk.
+- **Extended Guard Dialogue (106523)** — Rejected. Tortoise/RVC AI-generated guard lines. The guard-flavor niche is already owned by Guard Dialogue Overhaul (baseline) + Echoes of Oblivion; on top of that this fails the AI-content gate. No gap worth the voice-quality risk.
+- **New Female Guard Voices (125124)** — Rejected as a pair with 106523. ElevenLabs AI voice; same AI-gate failure and the same already-covered guard niche. Green-lighting any guard AI voice would open a precedent the list does not want.
+- **NPCs Learn to Barter (120558)** — Rejected. The economy dial is already settled: locked Open World Loot (curated loot) + `Trade and Barter` baseline. A live dynamic-pricing rewrite over that stack produces overlapping/compounding price factors and deflation (author flags Parity formula), and the philosophy is already covered by the optional RiS-Evolving-Economy dial. Would require demoting Trade and Barter to fit — not worth it.
+- **Thay's Palace of the Kings (153680)** — Rejected for now (deferred flagship). Grim-dark fit is excellent, but it is a bottom-slot, patch-heavy rebuild of a single Windhelm interior hosting quest-critical scenes; the long patch tail (USSEP, Spaghetti's Cities/Palaces AIO, Tomato's Windhelm, SFCO, Sons of Skyrim, Luminosity) only sustains tied to one cell, and Windhelm is already heavy with edits. Revisit only if Windhelm becomes a set-piece priority.
 
 ### anbeegod profile — FDE cross-check
 Resident FDE already present: Aela, Brelyna, Lydia, Roggi, Aranea, Borgakh, Uthgerd, Ysolda, Jenassa, Olfina, Mjoll, Eola, Faralda. Added missing (FDE table in `modlist-npcs.md`): Ralof, Senna, Lisette, Marcurio, Saadia, Elisif, Fura Bloodmouth, Sapphire, Illia, Rayya, Faendal, Camilla, Jordis, Erik. Custom followers added: Caesia (13389) and Livia Salvian Revamped (33318).
-
-### Open / pending user confirm
-- **Interactive Hanging Chains (141602)** — physics + visual fit confirmation.
-- **Extended / New Female Guard (106523 / 125124)** — AI-voice gate: adopt only if user green-lights ElevenLabs in the guard stack.
-- **Thay's Palace (153680)** — confirm the load-order cost is worth the Windhelm build value.
-- **NPCs Learn to Barter (120558)** — fold into the economy-dial decision.
