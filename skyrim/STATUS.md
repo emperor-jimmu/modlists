@@ -393,3 +393,42 @@ These were already adopted in the modlist; remove the TODO line only. No re-entr
 ### TODO cleanup
 
 All 24 lines cleared from `TODO.md`: 4 already-in-modlist entries (no action), 11 adopted (section entries added), 3 tentative, 3 rejected, 1 marginal, 2 folded into chained pairs.
+
+## Mods for review — VERDICTS (2026-08-07, 13-mod TODO batch)
+
+Reviewed the 13 submitted mods from `TODO.md` against Elder Wilds pillars (redundancy, conflicts/overrides, dial-fights, CS-compat, third-person/gamepad, music-stack identity).
+
+### Already in modlist (remove TODO line only)
+
+- **Environs - Abandoned Abodes (82410)** — Already `modlist-world-content.md` (Points Of Interest And Roadside Content baseline). Remove from TODO.
+- **Nyghtfall - Dark Fantasy Music (39011)** — Already `modlist-audio.md` (Music Overhaul Strategy baseline). Keep; the audio row says "Evaluate after baseline is in place" — now resolved, treat as the dark-fantasy music layer. Remove from TODO.
+- **The Northerner Diaries - Immersive Edition (28108)** — Already `modlist-audio.md` (Music Overhaul Strategy baseline). **Link fix 2026-08-07:** the row pointed at `33903` (an unrelated Whiterun texture mod); corrected to `28108` (ak0d, v1.3, 8 curated Soule exploration tracks, Skyrim + Solstheim). No new entry. Remove from TODO.
+
+### Adopted (entry added to owning section file)
+
+- **Caves of Morrowind (13745)** — Speedygun1, 928 endorsements, V3.1 (Aug 2022). Hand-authored new-cave/dungeon pack in the Velothi Mountains (Dunmer smuggling operation). Self-contained cells, vanilla-asset-only (PS4-origin), no scripts/quests, navmesh + LOD generated. Level 15+ recommended. `modlist-world-content.md` → Dungeons And Ruins (baseline). New-content pillar fit.
+- **Hun Lovaas - Skyrim Fan-Made Combat Music (16123)** — OrganicView, 5,560 endorsements, v1.0 (2018). Entirely new combat tracks written for Skyrim; **non-replacer** variant so it introduces music rather than overriding, merged via Synthesis. `modlist-audio.md` → Music Overhaul Strategy (baseline row). **Pre-2020 (v1.0, 2018) — verify native AE support before locking** (audio Risks note).
+- **Darkend (10423)** — JKrojmal, 12,166 endorsements, v1.4 (2018). Dark-Souls-inspired island of Pharos — no quest, no hand-holding, level-15+ explorer content; new enemies + Ancient weapon set. LoTD patch available. `modlist-world-content.md` → New Lands (High-Commitment). Strong fit for the "big dark world" pillar; self-contained island, minimal Skyrim-cell conflict.
+- **Morning Fogs SSE (21436)** — ported by Ionas177, 10,556 endorsements, v1.3.1 (2019). Rolling morning fog over lakes/rivers with MCM (time windows + spawn chance). Additive atmospheric fog only — compatible with everything except `Interior Floating Fog Remover`. `modlist-graphics-weather.md` → Weather And Atmosphere (Azurite III Addon). **Verify fog density/third-person readability vs Mists of Tamriel and Azurite III CS fog overhead before locking.**
+- **Vampires Cast No Shadow 2 (46107)** — powerofthree, 4,307 endorsements, v1.2.2 (2024). SKSE plugin: vampires (humanoid + VL) cast no shadow when out in the sun. Zero records, compatible with every mesh/vampire mod; requires SKSE + Address Library (baseline). `modlist-expanded-character.md` → Vampire family add-on. Aligns sunlight behavior with vampire lore in a nocturnal world.
+
+### Adopted (minor) — pending one gate
+
+- **Racemenu - Thigh Position Sliders (59689)** — Team XPMSE + Acro, 1,992 endorsements, v1.0.0 (2021). 3 thigh sliders (Up/Down, Forward/Back, Spacing) in Body Scale. Requires RaceMenu + XPMSSE (both baseline). Overwrites `Scripts/RaceMenuPluginXPMSE.pex` — by the XPMSSE team itself, so low intrinsic conflict, but that file is the locked XPMSSE skeleton plugin. `modlist-graphics-characters.md` → Body Variety And Distribution row added **pending confirmation the overwritten plugin matches the locked XPMSSE version**.
+
+### Tentative — evaluate before committing (no section entry yet)
+
+- **ABT AE - Arrows and Bolts Tweaks (4683)** — kevkas, 9,477 endorsements, v2.1 (2021). Modular arrow/bolt tweaks. **Dial-fight:** `Weapon Stat Synthesis Patcher`, `Speed/Reach Normalization`, and `AmmoTweaks` already run in the locked Synthesis pipeline and own arrow/bolt stat, leveled-list, and vendor balance. Adopt only non-stat feel modules (arrow/bolt speed + gravity, unique-ammo re-textures); avoid `Progressive Damage` and `Rebalanced Crafting` (leveled-list/vendor edits fight the locked pipeline). Candidate home `modlist-weapons-armor.md` (ammo side) once the module split is confirmed.
+
+### Rejected
+
+- **Celtic Music in Skyrim SE (2980)** — 15,742 endorsements, v2.1 (**Nov 2016**). 79 Adrian von Ziegler tracks across explore/town/dungeon/combat, but the author explicitly warns against combining with other music mods editing the same music categories — the music stack deliberately merges several music mods via Synthesis. Pre-2020 era + tonal overlap with the adopted Nordic/viking line → incoherent for the music-merge composition. Revisit only if a standalone "Celtic/folk isolate" swap is wanted later.
+
+### Not adopted (optional/marginal)
+
+- **Lunar Weapon Replacers (43221)** — CasualKhajiit, 859 endorsements, v1.3.2 (2020). Remodels the vanilla "Lunar" weapon family (mace/war-axe/sword/iron variants) with ClipsyMoon models; ESL-flagged, standalone, LoTD patch. Tiny niche for a scarce vanilla set — no gap vs the curated weapon-pack stack. Optional/marginal.
+- **Lush Dragonsreach Pools (138250)** — freshly uploaded v1.0.0 with **0 total views** (small foliage addition around Dragonsreach). Too new/small to adopt; re-evaluate once it establishes a signal. Optional.
+
+### TODO cleanup
+
+All 13 lines cleared from `TODO.md`. (3 already-in-modlist — incl. the Northerner audio link fix; 4 adopted; 1 adopted-minor pending the XPMSSE plugin check; 2 tentative; 1 rejected; 2 marginal/not adopted.)

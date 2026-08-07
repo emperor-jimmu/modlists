@@ -176,6 +176,7 @@ Owned "Living the world" home layer — a believable home the player lives in be
 | Mod                         | Description                                                  |
 |-----------------------------|--------------------------------------------------------------|
 | [Forgotten Dungeons (SSE)](https://www.nexusmods.com/skyrimspecialedition/mods/449) |                                                                |
+| [Caves of Morrowind](https://www.nexusmods.com/skyrimspecialedition/mods/13745) | Hand-authored new-cave/dungeon pack in the Velothi Mountains (Dunmer smuggling operation). V3.1, self-contained cells, vanilla-asset-only (PS4-origin), no scripts/quests, navmesh + LOD generated. **Level 15+ recommended** — a somewhat challenging explorer experience. |
 | [Dungeons - Revisited](https://www.nexusmods.com/skyrimspecialedition/mods/51798) |  Improves existing ruins rather than adding new destinations.  |
 | [Iconic's Crown of Barenziah](https://www.nexusmods.com/skyrimspecialedition/mods/137469) | High-quality crown/gems/display stand. |
 
@@ -426,6 +427,7 @@ Weapons, armor, artifacts, and clothing content has been consolidated into its o
 |-----|-------------|
 | [Land of Vominheim SE](https://www.nexusmods.com/skyrimspecialedition/mods/31472) | Expansive new worldspace — Valenwood-themed region, quests, dungeons, followers. High patch and compatibility debt. Evaluate against existing new-lands commitments. |
 | [Snowpoint](https://www.nexusmods.com/skyrimspecialedition/mods/146533) | New snow-covered worldspace with quest content. Lighter footprint than Vominheim. |
+| [Darkend](https://www.nexusmods.com/skyrimspecialedition/mods/10423) | Dark Souls-inspired island of Pharos — no quest, no hand-holding, level 15+ recommended. New enemies + an Ancient weapon set (Trinity of Chaos). LoTD patch available. 12,166 endorsements. |
 
 ### Vicn Trilogy (GLEN-MORIL + Unslaad + VIGILANT)
 

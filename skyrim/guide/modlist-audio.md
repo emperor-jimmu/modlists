@@ -10,7 +10,8 @@ The soundtrack direction: how much to expand Skyrim's music while staying close 
 | Mod | Notes |
 | --- | --- |
 | [Chapter II - Jeremy Soule Inspired Music](https://www.nexusmods.com/skyrimspecialedition/mods/37792) | Darker, more emotional melancholy without breaking from Soule's shape. |
-| [The Northerner Diaries - Immersive Edition](https://www.nexusmods.com/skyrimspecialedition/mods/33903) | Authentic Jeremy Soule compositions: 19 exploration tracks. |
+| [The Northerner Diaries - Immersive Edition (music by Jeremy Soule)](https://www.nexusmods.com/skyrimspecialedition/mods/28108) | Authentic Jeremy Soule compositions: 8 curated exploration tracks (Skyrim + Solstheim exploration/sunset/night categories). HD 192kbps, lossless-sourced, ESL option. Link fixed 2026-08-07 (was pointing at the unrelated texture mod 33903). |
+| [Hun Lovaas - Skyrim Fan-Made Combat Music](https://www.nexusmods.com/skyrimspecialedition/mods/16123) | Adds entirely new, lore-friendly combat tracks written for Skyrim, fitting the vanilla vibe. Non-replacer version — introduces new music rather than overwriting vanilla. Blend via Synthesis music merge; ESL option available. **Pre-2020 (v1.0, 2018) — verify native AE support before locking.** |
 | [The Southerner Diaries](https://www.nexusmods.com/skyrimspecialedition/mods/32593) | 22 Soule-inspired exploration and town tracks. |
 | [Melodies of Civilization](https://www.nexusmods.com/skyrimspecialedition/mods/37533) | 20+ town, tavern, and settlement tracks. |
 | [Nyghtfall - Dark Fantasy Music](https://www.nexusmods.com/skyrimspecialedition/mods/39011) | ~7 hours, 98 dark-fantasy tracks. Evaluate after baseline is in place. |

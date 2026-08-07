@@ -102,6 +102,7 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 - **Realistic Racial Body Diversity - OBody NG Config** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/87239)) — Per-race body distribution (broader Nords, leaner Elves, heavy Orcs). Covers both CBBE 3BA and HIMBO.
 - **Individual presets:** `Rugged Body - 3BA`, `Skinny Berry - 3BA`, `Realistic chubby and curvy body - 3BA`.
 - **Male variety:** **HIMBO SliderPresets Pack 02** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/176023)) — 10 presets.
+- **Racemenu - Thigh Position Sliders** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/59689)) — Adds 3 thigh sliders (Up/Down, Forward/Back, Spacing) to the Body Scale category for finer thigh-gap customization. Requires RaceMenu + XPMSSE (both baseline). Overwrites `RaceMenuPluginXPMSE.pex` — **verify against the locked XPMSSE RaceMenu plugin before committing** (skeleton baseline accommodation gate).
 
 #### Alternatives
 

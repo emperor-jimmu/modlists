@@ -32,6 +32,7 @@ Weather should be chosen as part of the Community Shaders presentation layer, no
 | Mod                                                                                                    | Description                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Azurite III CS - Realistic Darker Nights](https://www.nexusmods.com/skyrimspecialedition/mods/183498) | Darker night preset for Azurite III CS. Requires testing — older nights affect third-person readability and combat detection. Needs Azurite III CS as base. |
+| [Morning Fogs SSE](https://www.nexusmods.com/skyrimspecialedition/mods/21436)                            | Rolling morning fogs over lakes/rivers (dawn windows, MCM-tunable). Adds new atmospheric fog only — compatible with everything except `Interior Floating Fog Remover`. **Verify fog density in third-person readability (same gate as Mists of Tamriel) and Azurite III CS fog overhead before locking.** |
 
 ### Risks & Compatibility
 
