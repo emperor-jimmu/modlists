@@ -184,6 +184,7 @@ Market trader and ambient NPC dialogue variety — making recurring NPC interact
 | Mod | Notes |
 | --- | --- |
 | [Shouts of Stallholders](https://www.nexusmods.com/skyrimspecialedition/mods/139025) | Adds varied voiced lines to vanilla market stall sellers (and mod-added NPCs with vanilla voice types). Uses SPID for NPC exclusion. AI-Generated Content tagged. Safe to install/uninstall mid-game. May be suppressed by idle-comment-suppressing mods. |
+| [NPCs React To Fire](https://www.nexusmods.com/skyrimspecialedition/mods/148183) | NPCs comment/react when fires start or spread nearby (fire-related ambient lines). Script-free; requires SKSE64 + Address Library. Safe mid-save. |
 
 ---
 
@@ -192,6 +193,8 @@ Interactive campfire behavior for survival and immersion — sitting, cooking, r
 
 | Mod | Notes |
 | --- | --- |
+| [Usable Campfires](https://www.nexusmods.com/skyrimspecialedition/mods/140915) | BOS swaps worldspaces into interactive campfire furniture (cook, light, rest). Requires BOS (baseline). Optional Unlit / Rest at Campfire integration. |
+| [Campfire Animations](https://www.nexusmods.com/skyrimspecialedition/mods/112322) | OAR-based animations for campfire actions (add fuel, cook, eat at fire). Requires OAR, FormList Manipulator, MCM Helper. Campfire (Chesko) no longer hard requirement — evaluate against Starfrost-frame cooking. |
 
 ---
 

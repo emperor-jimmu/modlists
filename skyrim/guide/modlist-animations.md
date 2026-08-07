@@ -450,6 +450,7 @@ Equipment visibility, sheathing positions, and draw-sheathe animations. Builds o
 | [Walking Stick - Walk with staves or polearms - IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/120966) | Addon       | Staff/polearm walking animation support. Requires IED.                                          |
 | [Ready to Play IED](https://www.nexusmods.com/skyrimspecialedition/mods/158531)                                      | Alternative | Pre-configured IED preset. Evaluate only if manual IED configuration proves too time-consuming. |
 | [Weapons On Back](https://www.nexusmods.com/skyrimspecialedition/mods/14997)                                        | Alternative | Weapon positioning on back rather than hip. Complements IED/SDS. |
+| [Guards Pose With Weapons — IED-OAR](https://www.nexusmods.com/skyrimspecialedition/mods/110005)                  | Addon       | Guard and faction guards hold-weapon poses via IED + OAR. Requires both baselines. Third-person (gamepad) flavor. |
 
 ---
 

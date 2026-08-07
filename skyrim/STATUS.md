@@ -128,3 +128,46 @@ All Halffaces mods below are mesh/texture replacers (mostly no-ESP, some BOS-bas
 - **Halffaces - Horse meat Update (113284)** — Adopted. Horse meat mesh/texture replacer, no ESP. No existing horse meat replacer. **Choose main file.**
 - **HFs - Aretino Family Heirloom - remodel (140723)** — Adopted. Quest-specific mesh replacer for Aretino Family Heirloom. No conflict with Restoring the Aretino Residence (world-content.md:472 — quest mod, different scope). **Choose main file.**
 - **Halffaces - Trapdoor ladders All-in-One (123329)** — Adopted. Trapdoor ladder mesh/texture rework. No existing trapdoor ladder replacer. **Choose main file.**
+
+## Mods for review — VERDICTS (2026-08-07, 17-mod submission + anbeegod profile)
+
+The 17 submitted mods were reviewed against Elder Wilds pillars (redundancy, conflicts/overrides, overpowered, AI-content gate, triviality). Also cross-checked anbeegod's profile; FDE and custom-follower additions landed in → [modlist-npcs.md](guide/modlist-npcs.md) (FDE table + Custom Followers).
+
+### Already in modlist (no change)
+
+- **Echoes of Oblivion (153979)** — Already at `modlist-world-content.md:427`. No re-entry.
+- **Diverse Chicken Coops (152612)** — Already in `graphics-textures.md` (Baseline). No change.
+- **360 Ward (156225)** — Already `modlist-expanded-magic.md:30` (Alternative). Do not double-list.
+
+### Adopted (entry added to owning section file)
+
+- **Jesters of Skyrim (151037)** — Jester NPCs added to select Jarl's residences with idle dialogue; ESL-flagged additions only, no vanilla overwrite. `modlist-npcs.md` → Civilian & Traveler Population Additions (Alternative). Verify placement against palace/court interior overhauls.
+- **Regional Food Barrels - BOS (141954)** — BOS swaps food barrels by region; no leveled-list or script edits. `modlist-world-content.md` → Points of Interest & Roadside.
+- **Interesting Locations (153298)** — Environmental-storytelling clutter on existing vanilla locations; no quests/scripts. `modlist-world-content.md` → POI & Roadside. Verify per-cell vs adopted city/tavern overhauls.
+- **Classic Paintings Compilation for interiors (63325)** — Broad distribution of classic public-domain paintings across interiors + DLC; verify per-cell against adopted art/clutter replacers. `modlist-world-content.md` → POI & Roadside.
+- **Guards Pose With Weapons — IED-OAR (110005)** — Guard/faction hold-weapon poses; requires IED + OAR (both baseline). `modlist-animations.md` → Equipment Display Framework.
+- **Usable Campfires (140915)** — BOS swaps worldspace campfires into interactive furniture (cook, light, rest). `modlist-world-feel.md` → Fire & Camp Interaction.
+- **Campfire Animations (112322)** — OAR-based campfire-action animations; fits the same Fire & Camp section. Chesko Campfire no longer hard-required — verify against Starfrost survival. `modlist-world-feel.md`.
+- **NPCs React To Fire (148183)** — Script-free, 7.3K endorsements; fire-reaction ambient dialogue. Requires SKSE64 + Address Library (baseline). `modlist-world-feel.md` → NPC Dialogue Immersion.
+- **Mephala Revoiced (157081)** — Raw voice-file replacer for Mephala, same pattern as Potema Revoiced. `modlist-audio.md`. Verify against Daedric-quest expansions.
+
+### Tentative — evaluate before committing
+
+- **Interactive Hanging Chains & Cages (141602)** — Physics hanging chains/cages. Verify FSMP/mesh perf against the CS-only, no-ENB baseline and confirm the visual direction fits the grim-dark pillar before adoption.
+- **Extended Guard Dialogue (106523)** — 168 Tortoise/RVC-generated guard lines, script-free, ESL flag. Additions only; AI-voice quality must pass the curation gate. Guard-flavor niche already partly owned by Guard Dialogue Overhaul (baseline) + Echoes.
+- **New Female Guard Voices (125124)** — Companion to 106523 (uses its voice/license; hooks for Guard Dialogue Overhaul + Idle comments). ElevenLabs AI voice, ESL. Same AI-voice gate; verify against the guard-dialogue stack.
+- **NPCs Learn to Barter (120558)** — SKSE rework making NPC Speech matter in prices. Overlaps the economy dial owned by `Crafting & Economy` and the Trade and Barter / Open World Loot baseline. Evaluate whether it complements or fights that dial before committing.
+- **Thay's Palace of the Kings (153680)** — Deep rebuild of Windhelm's Palace of the Kings interior; load-order bound, patch-heavy, needs verification against Spaghetti's Cities AIO (baseline) and Tomato's Windhelm, plus navmesh sanity. Grim-dark fit strong; integration cost high.
+
+### Rejected / Deferred
+
+- None of the 17 outright rejected — the economy/AI/physics items are gated under Tentative pending decision, not rejected outright.
+
+### anbeegod profile — FDE cross-check
+Resident FDE already present: Aela, Brelyna, Lydia, Roggi, Aranea, Borgakh, Uthgerd, Ysolda, Jenassa, Olfina, Mjoll, Eola, Faralda. Added missing (FDE table in `modlist-npcs.md`): Ralof, Senna, Lisette, Marcurio, Saadia, Elisif, Fura Bloodmouth, Sapphire, Illia, Rayya, Faendal, Camilla, Jordis, Erik. Custom followers added: Caesia (13389) and Livia Salvian Revamped (33318).
+
+### Open / pending user confirm
+- **Interactive Hanging Chains (141602)** — physics + visual fit confirmation.
+- **Extended / New Female Guard (106523 / 125124)** — AI-voice gate: adopt only if user green-lights ElevenLabs in the guard stack.
+- **Thay's Palace (153680)** — confirm the load-order cost is worth the Windhelm build value.
+- **NPCs Learn to Barter (120558)** — fold into the economy-dial decision.

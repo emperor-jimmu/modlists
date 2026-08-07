@@ -62,6 +62,7 @@ Extra background people making towns, inns, and roads feel used — without re-d
 | [MINPCs](https://www.nexusmods.com/skyrimspecialedition/mods/29483)                            | Alternative | Adventurer-style incidental content.                                               |
 | [Immersive Citizens — AI Overhaul SE](https://www.nexusmods.com/skyrimspecialedition/mods/173) | Alternative | Known conflict with AI Overhaul SSE.                                               |
 | [Interesting NPCs SE (3DNPC)](https://www.nexusmods.com/skyrimspecialedition/mods/29194)       | Alternative | Authored content NPCs.                                                             |
+| [Jesters of Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/151037)               | Alternative | Adds Jester NPCs to select Jarl's residences with idle dialogue and antics. ESL-flagged additions only. Verify placement against adopted palace/court interior overhauls. |
 
 ---
 
@@ -103,7 +104,7 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 
 ### Follower Dialogue Expansion (FDE) series by Anbeegod
 
-> AI-voiced, each ESL-flagged. Core entries listed below; the [official FDE collection](https://next.nexusmods.com/skyrimspecialedition/collections/uu3kpb) includes 26 mods total.
+> AI-voiced, each ESL-flagged. Core entries listed below; the [official FDE collection](https://next.nexusmods.com/skyrimspecialedition/collections/uu3kpb) includes 26 mods total. All claim 100% compatibility and safe mid-save add.
 
 | Follower                                                                                    | Lines | Notes                            |
 |---------------------------------------------------------------------------------------------|-------|----------------------------------|
@@ -120,6 +121,20 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [FDE — Mjoll the Lioness](https://www.nexusmods.com/skyrimspecialedition/mods/116025)       | 451   | Quest and location awareness.    |
 | [FDE — Faralda](https://www.nexusmods.com/skyrimspecialedition/mods/155510)                 | 441   | Self-contained follower, personal quest. Verify overlap with College Quest Expansion. |
 | [FDE — Eola](https://www.nexusmods.com/skyrimspecialedition/mods/157012)                    | 233   | Namira cultist dialogue.         |
+| [FDE — Ralof](https://www.nexusmods.com/skyrimspecialedition/mods/180198)                   | 551   | [INFERENCE] AI-voiced, ESL, 100% compatible, safe mid-game. |
+| [FDE — Senna](https://www.nexusmods.com/skyrimspecialedition/mods/183143)                   | 243   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
+| [FDE — Lisette](https://www.nexusmods.com/skyrimspecialedition/mods/177717)                 | 243   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
+| [FDE — Marcurio](https://www.nexusmods.com/skyrimspecialedition/mods/174725)                | 210   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
+| [FDE — Saadia](https://www.nexusmods.com/skyrimspecialedition/mods/170684)                  | 231   | [INFERENCE] AI-voiced, ESL, safe mid-game. |
+| [FDE — Elisif the Fair](https://www.nexusmods.com/skyrimspecialedition/mods/167954)         | 942   | Romance + marriage arc, approval system, Civil War awareness. v2.0. ESL. |
+| [FDE — Fura Bloodmouth](https://www.nexusmods.com/skyrimspecialedition/mods/165839)        | 614   | [INFERENCE] 2 personal quests, Volkihar, banter with Aranea/Sapphire/Serana. ESL. |
+| [FDE — Sapphire](https://www.nexusmods.com/skyrimspecialedition/mods/147428)                | 208   | Thieves Guild follower. ESL. |
+| [FDE — Illia](https://www.nexusmods.com/skyrimspecialedition/mods/137845)                   | 918   | Repeatable v3.0; witch redemption story, bad-weather awareness, banter with Aela/Jenassa. ESL. |
+| [FDE — Rayya](https://www.nexusmods.com/skyrimspecialedition/mods/143288)                   | 740   | Housecarl of Falkreath. ESL. Banter with Erik. |
+| [FDE — Faendal](https://www.nexusmods.com/skyrimspecialedition/mods/130418)                 | 240   | Bosmer huntsman. ESL. |
+| [FDE — Camilla Valerius](https://www.nexusmods.com/skyrimspecialedition/mods/128144)        | 581   | Riverwood. ESL. v2.0.1 — includes marriage/romance content. |
+| [FDE — Jordis the Sword-Maiden](https://www.nexusmods.com/skyrimspecialedition/mods/117930) | 191   | Housecarl of Solitude. ESL. |
+| [FDE — Erik the Slayer](https://www.nexusmods.com/skyrimspecialedition/mods/116719)         | 222   | Rorikstead. ESL status not stated on page — verify. |
 
 | Mod                                                                                     | Description                 | Notes                |
 |-----------------------------------------------------------------------------------------|-----------------------------|----------------------|
@@ -145,6 +160,11 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 | [Sofia — The Funny Fully Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/2180)        |       | Comic relief. May be cut for tonal mismatch.                       | See framework notes.                                                                                                                                                                                                                                                       |
 | [Kaidan 2](https://www.nexusmods.com/skyrimspecialedition/mods/19075)                                      | 1200+ | Romance arc. Custom AI — do not assign via NFF/AFT.                | Use [Immersive Features AIO](https://kaidanmod.com) (Nexus Extended Edition deprecated). Extras: [A Makeover for Kaidan](https://www.nexusmods.com/skyrimspecialedition/mods/100586), [Immersive Kaidan Start](https://www.nexusmods.com/skyrimspecialedition/mods/64064). |
 | [Miraak Follower Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/160275)                  | 3200+ | Post-Dragonborn-quest Miraak follower: quest/world awareness, spouse dialogue, NPC banter. | Full ESP slot (not ESL since v1.5). Verify NFF integration and quest-stage conditions against Dragonborn DLC quests. |
+| [Caesia Follower — Borne of Magic (Revamped)](https://www.nexusmods.com/skyrimspecialedition/mods/13389) | 730+ | Anbeegod's custom mage follower (Morthal inn). Disposition system, romanceable regardless of sex/race, Shezarrine-lore hints. | Older (v2.0, 2017) — verify 1.6.1170; uses RaceMenu, KS Hairdos, Brows, Ordinary Women/SG textures. |
+| [Livia Salvian Revamped — Custom-Voiced Follower](https://www.nexusmods.com/skyrimspecialedition/mods/33318) | 1500+ | Imperial knight in Dragonsreach; personal romance quest, custom armor, singing, banter with Onmund. Anbeegod's "Fate of Tamriel"/Shezarrine universe. | v2.2.1 (2020). Original v1 ([mod 20143](https://www.nexusmods.com/skyrimspecialedition/mods/20143)) superseded — install Revamped only. Verify 1.6.1170. |
+
+### Tone & Genre Fit (anbeegod profile)
+anbeegod's profile also hosts Final-Fantasy-styled custom followers (Aerith/Tifa-style characters). These are **not adopted** and flagged as tone mismatches: they contradict the grim-dark, Elder Scrolls-native direction of the list. If the user wants them, they belong as clearly-labeled Optional/off-dial entries, not in the core list.
 
 ### Framework Notes
 
@@ -159,6 +179,8 @@ Custom fully-voiced follower additions with authored dialogue, quest commentary,
 | Auri | **No** | Custom system — has Inigo banter. |
 | Sofia | Yes | Works under NFF or standalone. |
 | Kaidan 2 | **No** | Custom AI — use built-in track/summon powers. |
+| Caesia | Verify | Original uses EFF/AFT-friendly dispos system; Revamped dispositions may work under NFF — verify. |
+| Livia Salvian | Verify | No own follower system; original v1 explicitly expects EFF or AFT. Verify NFF driver lines. |
 
 - Verify cross-follower banter: Remiel + Auri have Inigo patches; Kaidan 2 has extended banter with Remiel.
 - `Backported Extended ESL Support` listed for Majestic Auri does not apply to AE 1.6.1170 — do not install.

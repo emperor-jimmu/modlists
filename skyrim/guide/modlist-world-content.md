@@ -214,6 +214,9 @@ Smaller discoverable places between headline destinations.
 | [Graveyards of the Marshlands](https://www.nexusmods.com/skyrimspecialedition/mods/132767) | Atmospheric graveyard locations in Hjaalmarch. ESL-flagged. |
 | [The Wreck of the Argent Raptor](https://www.nexusmods.com/skyrimspecialedition/mods/140763) | Adds the Argent Raptor shipwreck north of Windhelm, matching Xander's story at Solitude Docks. ESL-flagged, adds only, no vanilla record edits. |
 | [Corrupted Cradlestone Tower - FuzzBeed's Forsworn Camps](https://www.nexusmods.com/skyrimspecialedition/mods/139765) | Overhauls Cradlestone Tower at the summit of Lost Valley Redoubt with aqueducts and fortified walls. Part of a Forsworn camp improvement series. |
+| [Interesting Locations](https://www.nexusmods.com/skyrimspecialedition/mods/153298) | Environmental-storytelling additions to existing vanilla locations (hunting/fishing/lore details). No new quests or scripts; mostly added static/NPC-facing clutter. Verify per-cell against adopted city/tavern overhauls. |
+| [Regional Food Barrels - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/141954) | BOS swaps food-barrel contents by region for variety. No leveled-list or quest edits. Safe mid-save. |
+| [Classic Paintings Compilation for Skyrim interiors](https://www.nexusmods.com/skyrimspecialedition/mods/63325) | Broad distribution of classic public-domain paintings across interior locations and DLC cells. No new scripts/quests. Verify against adopted clutter/art replacers per-cell. |
 
 ### Alternatives
 
