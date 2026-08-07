@@ -7,8 +7,8 @@ How quickly days pass, whether routine actions consume believable chunks of time
 
 ### Baseline
 - **Time Flies SE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/39426)) — Grounded play loops without turning into abstract clock tuning.
-- **Seasonal Calendar** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18164)) — Narrow companion if weather-and-season direction makes calendar readability worthwhile.
-- **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — High-commitment seasonal branch. Cost: 4× DynDOLOD passes, 4× grass caches, meaningful patch footprint. Only adopt if the project owns that LOD-generation workflow.
+- **Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/62861)) + **Turn of the Seasons** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63623)) — **Locked seasonal baseline.** Full summer/autumn/winter/spring asset swaps. v1.0.8 (Jun 2026, actively maintained). Requires Seasons of Skyrim SKSE (62861); **Shrubs of Snow - Seasons of Skyrim SKSE** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/63463)) is highly recommended to cover winter assets missed by SoS. **Operational cost is owned by the seasonal LOD workflow** (4× DynDOLOD passes, 4× grass caches, seasonal terrain/object LOD — see → `Performance`/`Graphics - LOD`). Azurite III (locked weather baseline) is the season-driving layer.
+- **Seasonal Calendar** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/18164)) — Companion for calendar readability now that the seasonal branch is baseline.
 
 ### Alternatives
 - **[Extended Stay - Longer inn](https://www.nexusmods.com/skyrimspecialedition/mods/156)** — Optional longer-stay inn mechanic. Adopt only if the project leans into "living the world."

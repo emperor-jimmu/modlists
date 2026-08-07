@@ -158,6 +158,7 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 ### Weather & Travel
 - **Azurite III CS (162153):** Locked weather baseline. FOMOD with darker nights and reduced bloom for tunable grim-dark aesthetic. Requires balanced CS tier (SSGI, SSS, Grass Lighting, Wetness Effects).
 - **Journeyman (92220):** Locked fast travel system. Restricts fast travel unless Travel Pack is crafted/purchased. SKSE plugin + ESP. CFTO rejected.
+- **Seasons of Skyrim SKSE (62861) + Turn of the Seasons (63623):** Locked seasonal baseline (2026-08-07, user instruction). Companion: Shrubs of Snow (63463). Owns the 4× DynDOLOD/grass-cache seasonal LOD workflow. Seasonal Landscapes (66903) stays rejected.
 
 ### Armor & Clothing
 - **Immersive Armors** is baseline. HIMBO Conversion V2 (76552) is the male path.
@@ -175,4 +176,10 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 
 ### Undeath Decisions
 - **Undeath Remastered (6180):** Adopted. Classical Lichdom (40802) locked as lich gameplay route. GDOS Door Patch (132038), Camera Fix (52950), Conjuration Absorb Fix (18762), and Facegen Data Patch (20046) required.
+
+### AI Content Gate
+- **AI speech/audio is allowed.** AI-generated voice content (ElevenLabs, xVASynth, 11labs, etc.) is treated the same as traditionally voiced content — no special exclusion, scrutiny, or labelling requirement beyond the Nexus tag. Evaluate AI-voiced mods on quality, compatibility, and tonal fit alone, per → [Modlist Curation Rules](guide/modlist-curation.md) (Curation Principles).
+- The "AI-content gate" cited in some earlier reviews is retired as a hard exclusion. Instances already following this: AI-voiced FDE follower series, `Dark Destiny`, `Seeking The Cure`, `Snow Elf Dialogue`, `Shouts of Stallholders`, `Autumngate` (xVASynth add-on), and the Simple Inn Bath DDR expansion.
+- **Adopted AI-voiced dialogue expansions (2026-08-07, user instruction):** `Dialogue Expansion - Indaryn-Ingun-Asgeir-Alessandra` (92600) and `Dialogue Expansion - Shor's Stone` (97337) by AdamDunmer — see `modlist-npcs.md` NPC Dialogue Expansions.
+- **Retiring the gate is not a blanket green-light:** AI content is no longer excluded for being AI, but a mod is still evaluated on its other merits. `Extended Guard Dialogue` (106523) and `New Female Guard Voices` (125124) **remain REJECTED** on niche coverage (guard-flavor already owned by Guard Dialogue Overhaul + Echoes of Oblivion), independent of the retired gate — see `STATUS.md`.
 

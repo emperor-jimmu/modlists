@@ -154,8 +154,8 @@ The 17 submitted mods were reviewed against Elder Wilds pillars (redundancy, con
 ### Rejected
 
 - **Interactive Hanging Chains & Cages (141602)** — Rejected. FSMP physics on chains adds CPU/perf load to the CS-only, no-ENB baseline for a pure visual flourish (flavor-only, noticed a few times per dungeon). Grim-dark is already saturated; perf/benefit skews low. Not worth the physics-glitch risk.
-- **Extended Guard Dialogue (106523)** — Rejected. Tortoise/RVC AI-generated guard lines. The guard-flavor niche is already owned by Guard Dialogue Overhaul (baseline) + Echoes of Oblivion; on top of that this fails the AI-content gate. No gap worth the voice-quality risk.
-- **New Female Guard Voices (125124)** — Rejected as a pair with 106523. ElevenLabs AI voice; same AI-gate failure and the same already-covered guard niche. Green-lighting any guard AI voice would open a precedent the list does not want.
+- **Extended Guard Dialogue (106523)** — REJECTED (2026-08-07 reconfirmed). Tortoise/RVC AI-generated guard lines. Rejected on niche coverage, not the AI gate: the guard-flavor niche is already owned by Guard Dialogue Overhaul (baseline) + Echoes of Oblivion. No gap worth the voice-quality risk; no guard-voice precedent.
+- **New Female Guard Voices (125124)** — REJECTED as a pair with 106523 (2026-08-07 reconfirmed). ElevenLabs AI voice; rejected on the same niche-coverage grounds, not the AI gate. Guard voice types are FormList-injected — patch surface against condition-gated mods for no gap worth the precedent.
 - **NPCs Learn to Barter (120558)** — Rejected. The economy dial is already settled: locked Open World Loot (curated loot) + `Trade and Barter` baseline. A live dynamic-pricing rewrite over that stack produces overlapping/compounding price factors and deflation (author flags Parity formula), and the philosophy is already covered by the optional RiS-Evolving-Economy dial. Would require demoting Trade and Barter to fit — not worth it.
 - **Thay's Palace of the Kings (153680)** — Rejected for now (deferred flagship). Grim-dark fit is excellent, but it is a bottom-slot, patch-heavy rebuild of a single Windhelm interior hosting quest-critical scenes; the long patch tail (USSEP, Spaghetti's Cities/Palaces AIO, Tomato's Windhelm, SFCO, Sons of Skyrim, Luminosity) only sustains tied to one cell, and Windhelm is already heavy with edits. Revisit only if Windhelm becomes a set-piece priority.
 
@@ -230,3 +230,48 @@ Second submission batch (29 IDs, 28 unique — 49014 listed twice). Reviewed aga
 - **Distinct JK's Interiors (166734)** — REJECTED (chain). Patch collection bridging JK's inn interiors to Distinct Interiors; both prerequisites rejected above. Moot.
 - **Lively Inns and Taverns — LIAT (17036)** — REJECTED. 2012 LE-era port (SSE v1.1, May 2018), permissions locked (no fixes allowed). Author explicitly notes incompatibility with any mod changing The Bannered Mare interior (Candlehearth baseline covers it). Tavern-sound plugin conflicts with the locked `Sounds of Skyrim Complete` baseline; its coarse NPC additions fight the curated NPC/population stack.
 - **Goodnight Skyrim (95835)** — REJECTED. NPC comments when the player gets into bed; niche already owned by adopted **Sleeping Expanded** (59250), which covers NPC reactions around sleeping. Overlapping sleep-interaction flavor; no gap worth a separate listing.
+
+## Mods for review — VERDICTS (2026-08-07, 9-mod batch)
+
+Reviewed 9 submitted mods against Elder Wilds pillars (redundancy, conflicts/overrides, modlist adherence, AI-content gate). **AI-content gate retired as a hard exclusion** — AI speech/audio is allowed, per curation rulebook and AGENTS.md AI Content Gate (2026-08-07, user instruction).
+
+### Adopted (user instruction — AI gate cleared)
+
+- **Dialogue Expansion - Indaryn-Ingun-Asgeir-Alessandra (92600)** — ADOPTED. AdamDunmer, 1,051 endorsements, v1.1. ~140 lines + 4 scenes for Riften NPCs (Indaryn at Elgrim's Elixirs, Ingun, Asgeir, Alessandra; scenes in Elgrim's, Black-Briar Meadery, Bee and Barb). ESP-FE, dialogue-only (no AI packages, no worldspace/navmesh/cell edits), author claims ~99% compatibility. **AI-voiced (ElevenLabs)** — accepted per AI gate decision. Verify vs Riften-area mods (The City of Crossed Daggers - Riften Expansion 168629, JK's Riften Outskirts). `modlist-npcs.md` → NPC Dialogue Expansions.
+- **Dialogue Expansion - Shor's Stone (97337)** — ADOPTED. AdamDunmer, 1,294 endorsements, v1.2. ~250 lines + 9 scenes for Odfel, Sylgja, Grogmar, Filnjar. ESP-FE, dialogue-only, fully compatible per author (The Great Town of Shor's Stone 35977 in list is town geometry — no overlap expected). **AI-voiced (11labs)** — accepted per AI gate decision. `modlist-npcs.md` → NPC Dialogue Expansions.
+
+### Rejected
+
+- **Spelltome Studies (71565)** — REJECTED. Direct conflict with the locked **Immersive Spell Learning - DESTified (45514)** baseline (`modlist-expanded-magic.md:48`). Author's own compat note: incompatible with "ones that do similar things such as immersive spell learning." Same DEST framework, same job — no gap. Random study-event mini-game (meteor strikes, hostile summons) also fights grim-dark tone and the difficulty dial. 377 endorsements, last updated 2022.
+- **Grief (97832)** — REJECTED. Redundant/superseded — author states it was reworked into **More to do in the Soul Cairn (115962)**, already adopted (`modlist-world-content.md:394`). The standalone is the older, smaller version of content already in the list; installing both would double Soul Cairn content.
+
+### Tentative — evaluate before committing
+
+- **Denizens of Morthal - Dialogue and Character Expander (33965)** — TENTATIVE. Spliced vanilla voice (not AI), Morthal NPC dialogue + schedules + conversations. v1.5. Verify against the Morthal stack: COTN Morthal (baseline), Skyfall's Fortified Morthal (Alternative), SpiderWIP (quest), Caesia follower (Morthal inn). Schedules = package edits — check no fight with COTN-touched cells.
+- **The Raven of Raven Rock SE (15713)** — TENTATIVE. Undriel, 1,204 endorsements, v1.0 (2018). Raven-shaped rock formation over Raven Rock; vanilla assets, scales with rock retextures. NOT redundant (the "included in Quaint Raven Rock" note refers to the unadopted Quaint mod; list runs **JK's Raven Rock (141070)**). Verify ridge placement against JK's Raven Rock edits.
+- **New Embershard Miners (35031)** — TENTATIVE (adoptable minor). Miners camp outside, visit Riverwood, work Embershard Mine after it's cleared. Vanilla-skeleton additive NPCs, no dial fights. Verify vs Riverwood-area mods (Fleiwas Riverwood Addition, Spaghetti's Riverwood, JK's Whiterun Outskirts).
+- **The Clever Prisoner (84348)** — TENTATIVE (adoptable minor). Smartens prisoner behavior in WE09/WE32 faction-encounter quests. Requires USSEP (baseline). ESP-FE, tiny surface. No conflict found.
+
+### Not adopted (optional/marginal)
+
+- **Old People Sounds All In One (111436)** — NOT ADOPTED (optional/marginal). ESL, joke-tagged ambient voice (old folks complaining/coughing). No conflict, but the ambient-voice niche is already owned by **Chatty NPCs and Followers** baseline + Sounds of Skyrim Complete; reads light against the grim-dark charter. Revisit only if background levity is wanted.
+
+## Mods for review — VERDICTS (2026-08-07, 6-mod batch: Kanjs books + seasonal + cold-region)
+
+Reviewed 6 submitted mods. Four were Kanjs animated-article books, one the seasonal branch, one a cold-region NPC dress mod.
+
+### Adopted — seasonal branch promoted
+
+- **Seasons of Skyrim SKSE (62861) + Turn of the Seasons (63623)** — **PROMOTED to locked seasonal baseline** in `modlist-world-feel.md` → `Timescale And Calendar Adjustments` (user instruction). Was already tracked as a high-commitment alternative. v1.0.8 (Jun 2026, active). Requires Seasons of Skyrim SKSE; **Shrubs of Snow - Seasons of Skyrim SKSE (63463)** added as highly-recommended winter-asset companion; **Seasonal Calendar (18164)** promoted to companion. **Operational cost is owned by the seasonal LOD workflow** (4× DynDOLOD passes, 4× grass caches — see `modlist-graphics-lod.md`), and Azurite III (locked weather) is the season-driving layer. **Seasonal Landscapes (66903) stays rejected** (separate landscape-pack decision, unrelated to the SoS framework).
+
+### Adopted — Kanjs animated tomes (user instruction)
+
+- **Kanjs - Ancient Falmer Tomes Animated (106618)** — Adopted. `graphics-textures.md` → Animated Items.
+- **Kanjs - The Boethiah's Proving Book Animated (104747)** — Adopted. `graphics-textures.md` → Animated Items.
+- **Kanjs - Master Spell Tomes Animated (105990)** — Adopted. `graphics-textures.md` → Animated Items.
+- **Kanjs - The Dreamstride Book Animated (104236)** — Adopted. `graphics-textures.md` → Animated Items.
+- **Load-order note:** all four override `Book Covers Skyrim`'s texture on those same unique-tome records — install after the BCS stack (`Book Covers → Enhanced Textures → SkyPatched`) so the Kanjs animated look wins; drop a specific file if BCS's cover is preferred for that title. Distinct from Kanjs's existing `KanJS Spell Tomes Animated` (103057, regular spell-tome meshes — no overlap).
+
+### Adopted
+
+- **Skyrim is Cold (99813)** — Adopted as Add-on. SPID warm-outfit distribution for ~50 named Dunmer/Nord NPCs in Windhelm, Morthal, Dawnstar. Requires SPID (baseline). 100% SPID-compatible, no patches, no cell edits, no record conflicts → fits CS-only, third-person/gamepad charter. `modlist-npcs.md` → NPC Appearance Overhauls (Add-on). Carries Frostfall + survival-warm keywords — verify warmth-keyword hook with the locked **Starfrost** survival baseline (Frostfall itself not in list).

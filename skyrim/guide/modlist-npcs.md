@@ -22,7 +22,8 @@ Face, hair, and presentation direction for Skyrim's named NPCs. Does not re-deci
 | [Ysolda DF Edit SkyPatched](https://www.nexusmods.com/skyrimspecialedition/mods/169910)                  | Alternative | Single-NPC replacer for Ysolda. SkyPatcher-based.                 |
 | [Pride of Skyrim — AIO Male HPH Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/48904)          | Alternative | ~400 male NPCs with High Poly Head. Broad coverage.               |
 | [BeastHHBB](https://www.nexusmods.com/skyrimspecialedition/mods/38480)                                       | Alternative | Khajiit and Argonian NPC/PC replacer — player character, NPCs, adoptable children, Interesting NPCs integration, fangs. |
-| [Bijin Wives SE](https://www.nexusmods.com/skyrimspecialedition/mods/11247)                                  | Alternative | Female NPC replacer for wives and selected NPCs.                   |
+|| [Bijin Wives SE](https://www.nexusmods.com/skyrimspecialedition/mods/11247)                                   | Alternative | Female NPC replacer for wives and selected NPCs.                   |
+|| [Skyrim is Cold](https://www.nexusmods.com/skyrimspecialedition/mods/99813)                 | Add-on      | SPID distribution of warm outfits to ~50 named Dunmer/Nord NPCs in Windhelm, Morthal, and Dawnstar — "living the world" cold-region dressing (outfit/presentation, not face). Requires SPID (baseline). Frostfall/survival-warm keywords — verify Starfrost hooks (Frostfall not in list). |
 
 ### Overwrite Order
 
@@ -101,6 +102,8 @@ Targeted dialogue additions for existing NPCs — expanding what vanilla charact
 | [Collision Dialogue Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/115079)            | Dialogue triggered by NPC collision events.          | Alternative                                                       |
 | [Chattier Hunters and Fishermen](https://www.nexusmods.com/skyrimspecialedition/mods/179154)         | Expanded ambient dialogue for hunters and fishermen. | Alternative                                                       |
 | [Chatty NPCs and Followers](https://www.nexusmods.com/skyrimspecialedition/mods/133266)                | Varied idle/contextual dialogue for all NPCs and followers. No behavior changes. | Baseline — complements existing faction-specific dialogue expansions. |
+| [Dialogue Expansion - Indaryn-Ingun-Asgeir-Alessandra](https://www.nexusmods.com/skyrimspecialedition/mods/92600) | ~140 lines + 4 scenes for Riften NPCs (Elgrim's Elixirs, Black-Briar Meadery, Bee and Barb). Dialogue-only, ESP-FE, no package/worldspace/navmesh edits. | **AI-voiced (ElevenLabs)** — accepted per AI gate decision (2026-08-07). AdamDunmer. Verify vs Riften-area mods (City of Crossed Daggers - Riften, JK's Riften Outskirts). |
+| [Dialogue Expansion - Shor's Stone](https://www.nexusmods.com/skyrimspecialedition/mods/97337) | ~250 lines + 9 scenes for Odfel, Sylgja, Grogmar, Filnjar. Dialogue-only, ESP-FE. | **AI-voiced (11labs)** — accepted per AI gate decision (2026-08-07). AdamDunmer. The Great Town of Shor's Stone (town geometry) has no overlap expected. |
 
 ### Follower Dialogue Expansion (FDE) series by Anbeegod
 
