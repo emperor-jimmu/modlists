@@ -276,6 +276,35 @@ Reviewed 6 submitted mods. Four were Kanjs animated-article books, one the seaso
 
 - **Skyrim is Cold (99813)** — Adopted as Add-on. SPID warm-outfit distribution for ~50 named Dunmer/Nord NPCs in Windhelm, Morthal, Dawnstar. Requires SPID (baseline). 100% SPID-compatible, no patches, no cell edits, no record conflicts → fits CS-only, third-person/gamepad charter. `modlist-npcs.md` → NPC Appearance Overhauls (Add-on). Carries Frostfall + survival-warm keywords — verify warmth-keyword hook with the locked **Starfrost** survival baseline (Frostfall itself not in list).
 
+## Mods for review — VERDICTS (2026-08-07, 10-mod TODO batch)
+
+Reviewed the 10 submitted mods from `TODO.md` against Elder Wilds pillars (redundancy, conflicts/overrides, dial-fights, CS-compat, third-person/gamepad).
+
+### Already in modlist (no change)
+
+- **Immersive Jewelry SSE (5336)** — Already `modlist-expanded-crafting.md:126` (Flavor & Content). Remove from TODO.
+- **HDT-SMP Vanilla Armors (142450)** — Already `modlist-graphics-characters.md:135` (Alternative). Remove from TODO.
+
+### Adopted (entry added to owning section file)
+
+- **Inertia (Floating Gear Fix) (148746)** — Seb263, 9,245 endorsements, v1.1.0 (Jun 2025). SKSE plugin fixing dead-NPC equipment freezing mid-air by briefly disabling collision-capsule deactivation after death (configurable duration). Pure bugfix, zero records, compatible with all NPCs/creatures. `modlist-foundations.md` → Targeted Bugfix Mods.
+- **High Poly Vanilla Hair (41863)** — Macxhiin, 20,407 endorsements, v3.0 (Feb 2021). Higher-poly vanilla hair meshes (smooth geometry, detailed 3D braids, UV/bone-weight tweaks) for human races. Replaces the **vanilla** hair meshes NPCs and the player use — complementary to the locked **KS Hairdos** baseline (which adds its own styles, not vanilla replacements). No ESP. `modlist-graphics-characters.md` → Hair, Eyes, And Beards. **Verify against NPC-overhaul stacks** (hair-distribution patches) and the CS lighting note (high-poly hair can read harsh under extreme shadows).
+- **HFs - War horns - remodel (139520)** — Halffaces, 646 endorsements, v1.2.1 (Jan 2025). New Nord war horn model + hand-made HD textures; standalone ESL options for Torygg's war horn and Horn of Jurgen Windcaller. No existing war-horn replacer in the list; same Halffaces author line already adopted for the clutter batch. `modlist-graphics-textures.md` → Furniture/Clutter (HFs line). **Choose main file** (Nord war horn); the Torygg/Jurgen ESL add-ons are optional and fully independent.
+- **HFs - Safe - remodel (165568)** — Halffaces, 355 endorsements, v1 (Nov 2025). New metal-safe model + textures (safeandlock01.nif). No ESP, no scripts, safe mid-game. Carries **AI-Generated Content** tag (author describes hand-made textures — quality-eval per curation policy; tag does not gate). No existing safe replacer in the list. `modlist-graphics-textures.md` → Furniture/Clutter (HFs line).
+
+### Rejected
+
+- **Interesting NPCs Visual Overhaul (40046)** — REJECTED (chain). Face/visual replacer for Interesting NPCs' female NPCs (mocia, v1.0, Sep 2020, 6,694 endorsements). **Interesting NPCs (3DNPC, 29194) is only an Alternative** at `modlist-npcs.md:65` — not adopted. A replacer for a non-adopted base is moot. Revisit only if 3DNPC is ever promoted to baseline; note it only covers female NPCs (males deferred pending Expressive Facegen Morphs).
+- **Hedge Mage Armor SSE (5269)** — REJECTED. Elleh, v2.0, but **LE-era port last updated Nov 2016** — same porting-risk class as Elven Chainmail (14978, still under evaluation), without its 3BA path. Female-only (no HIMBO), and the v2.0 "fortification tokens" upgrade system (equip slot 48, per-piece enchants) is a custom progression layer that fights the locked perk/enchant dials (`Immersive Spell Learning`/Adamant/OWL stack). 7,742 endorsements but wrong era and wrong dials. Revisit only if a maintained 3BA+HIMBO refit with a stripped fortification system appears.
+
+### Chain / conditional (not standalone)
+
+- **HDT-SMP Master Thief Armor Patch (142095)** — Chain on the **FafnyB Master Thief Armor base (141700)** already listed as Alternative at `modlist-weapons-armor.md:148`. Adds FSMP cloth physics (3BA/HIMBO/Vanilla/BHUNP) to that set. If 141700 is ever promoted to adopted, install 142095 over it as the physics layer — same pattern as Fluted (106791). 5,884 endorsements, v1.0 (Feb 2025).
+
+### Not adopted (optional/marginal)
+
+- **Indecent Exposure - Immersive Naked Reactions (48739)** — NOT ADOPTED (optional/marginal). wSkeever, 1,418 endorsements, v0.5.1 (Dec 2023). Public-indecency crime (5g fine / 100g bounty near children) + NPC flee reactions when stripped. Requires PapyrusUtils + SPID (both baseline-adjacent). Fits the adult-content direction on paper, but it is a niche reaction layer with its own bounty/crime dial that interacts with the guard/justice stack — verify guard-dial interplay and PapyrusUtils compat before it earns a slot in `modlist-adult.md`.
+
 ## Mods for review — VERDICTS (2026-08-07, 32-mod batch: armor/physics/cloaks/audio/dogs)
 
 Reviewed 32 submitted mods against Elder Wilds pillars (redundancy, modlist adherence, conflicts, CS-compat, third-person/gamepad).
