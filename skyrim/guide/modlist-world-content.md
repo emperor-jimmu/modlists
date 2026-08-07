@@ -148,7 +148,8 @@ Inn-side downtime flavor layered on the Candlehearth baseline: tavern economy, d
 | [Tavern Games - Mini Games in Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/1668) | Add-on | Card ("Battle of Heroes"), dice, and lottery mini-games at any tavern + tavern vouchers (3 free nights). v1.2.1, SKSE-free. Top-down camera (Witcher/Fable-like); Xbox One port exists. **Verify gamepad inputs in testing** (2016-era SkyUILib UI). |
 | [Tavern Games - Ink-art Card Retexture](https://www.nexusmods.com/skyrimspecialedition/mods/172419) | Companion | Card visuals for the above. Only with Tavern Games. |
 | [Today's Menu](https://www.nexusmods.com/skyrimspecialedition/mods/55187) | Add-on | Buy the innkeeper's daily menu (20 gold): randomized main dish + drink + side/dessert, locality-aware, once/day/inn. Distributions via editable leveled lists. Complements Candlehearth. |
-| [Coherent Inns Prices](https://www.nexusmods.com/skyrimspecialedition/mods/55207) | Add-on | Location-based inn prices (cheap 40 / normal 70 / expensive 100; main-city + Old Hroldan expensive). Contained per-inn dial — no effect on the locked economy/loot stack. **Use the provided Candlehearth patch**; skip the "More Expensive" add-on (globals configurable). Compatible with Inns Can Be Closed / Extended Stay. |
+| [Coherent Inns Prices](https://www.nexusmods.com/skyrimspecialedition/mods/55207) | Add-on | Location-based inn prices (cheap 40 / normal 70 / expensive 100; main-city + Old Hroldan expensive). Contained per-inn dial — no effect on the locked economy/loot stack. **Use the provided Candlehearth patch**. Compatible with Inns Can Be Closed / Extended Stay. |
+| [Coherent Inns Prices - More Expensive](https://www.nexusmods.com/skyrimspecialedition/mods/141377) | Add-on | Scales the price globals upward for a harder-sticker-shock economy (user-approved). Install alongside 55207; values remain configurable via the base mod's globals. |
 
 ---
 

@@ -30,6 +30,10 @@ Lighter day-to-day body-maintenance layer between full survival needs and pure v
 | [Bathing in Skyrim — Renewed](https://www.nexusmods.com/skyrimspecialedition/mods/135288) | Baseline    | #1, #2, #3, #4 | SKSE + KPE + PO3 Papyrus Extender. Auto freecam, custom bathing animations, washable blood decal removal, bundled dirt overlays, unique soap with SkyPatcher distribution. |
 | [Saunas of Skyrim - The Bathing Mare (External)](https://www.nexusmods.com/skyrimspecialedition/mods/169240) | Add-on      | #1, #2, #3, #4 | Bathhouse outside Whiterun with custom NPCs, vendor, sauna buffs, brandy kegs, rentable bed. Compatible with JK's Whiterun and BiSR. |
 | [Real Water in Buckets and Barrels](https://www.nexusmods.com/skyrimspecialedition/mods/122422)             | Add-on      | all            | Visible water in containers (buckets, barrels, pots, pans). iNeed supported. BOS-based. Enhances survival-immersion visual detail.       |
+| [Dynamic Dialogue Replacer — DDR](https://www.nexusmods.com/skyrimspecialedition/mods/135618)                | Framework   | all            | SKSE runtime dialogue-replacement framework (v1.4.1). Needed by the Simple Inn Bath dialogue expansion below; also reusable for future non-AI dialogue mods. |
+| [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014)                                | Add-on      | all            | Bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. **Confirmed working with the locked `Candlehearth` inn baseline (→ `modlist-world-content.md`, Inns) — no patches needed** (acts via dialogue/faction, not cell edits). |
+| [Simple Inn Bath - Dialogue Expansion - DDR](https://www.nexusmods.com/skyrimspecialedition/mods/158544)    | Add-on      | all            | DDR-based voiced dialogue lines for Simple Inn Bath (~80 lines: spliced innkeeper + bathing dialogue). **Requires DDR (135618) + Simple Inn Bath**. Carries an **AI-Generated Content** tag — quality-eval per policy; **user-approved** (same gate precedent as Autumngate's xVASynth add-on). |
+| [Simple Inn Bath for New Lands — SPID](https://www.nexusmods.com/skyrimspecialedition/mods/104314) | Add-on      | all            | SPID patches granting Simple Inn Bath dialogue to Bruma, Falskaar, Skyrim - Obscure's College of Winterhold, Beyond Reach, Wyrmstooth, and Midwood Isle innkeepers so you bathe at those new-land inns. Requires SPID (baseline). |
 | Minimalist route                                                                                          | Alternative | all            | Leave hygiene implied through inns, rivers, roleplay.                                                                                      |
 
 ### Eating & Drinking Animations
@@ -71,7 +75,6 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 - Equipment handling, overlays, and optional integrations need stricter discipline than a simple immersion add-on.
 - Only hard runtime requirements should be treated as mandatory.
 - For Steam runtime `1.6.1170`, Backported Extended ESL Support requirement does not apply.
-- [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) adds bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. Alternative to dedicated sauna/bathhouse location mods. **Confirmed working with the locked `Candlehearth` inn baseline (→ `modlist-world-content.md`, Inns) — no patches needed** (acts via dialogue/faction, not cell edits).
 
 ---
 
