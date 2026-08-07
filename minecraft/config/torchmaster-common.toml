@@ -1,0 +1,13 @@
+# Torchmaster config override — Driftwood modpack
+# Purpose: Mega Torch pacifies a village-sized zone. Each torch is gated by a
+# Cataclysm boss conquest (see kubejs/server_scripts/wave5_torchmaster.js).
+# Key names [VERIFY] — confirm exact keys after first launch, then lock.
+# Torchmaster generates this file as torchmaster-common.toml in config/ on first launch.
+
+[misc]   # [VERIFY] section — adjust to actual generated keys after test launch
+# Mega Torch suppresses hostile spawns in a radius (blocks). 48 = village-sized zone.
+mega_torch_radius = 48
+# Feral Flare Lantern radius — suppresses only dark-spawned mobs (cave/ruin clearing).
+feral_flare_radius = 24
+# Dread Lamp radius — lacks natural light-blocking radius editing; keep default.
+# Mega Torch only blocks natural spawning (not spawners) — Worldgen/mod spawners unaffected.

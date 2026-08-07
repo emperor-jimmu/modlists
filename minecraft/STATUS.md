@@ -474,3 +474,11 @@ PUT 90.*:
 - [x] Extreme Reactors — redundant with Mekanism fission/fusion reactors (Wave 1). Both are multiblock nuclear reactor systems producing FE/t. Mekanism's chain already gates MekaSuit and antimatter. 1.21.1 NeoForge status uncertain ("it is coming"). "No mod should duplicate another mod's core purpose" rule.
 - [x] Timeless and Classics Zero (TACZ) + all addons — redundant with Create: Gunsmithing (Wave 1). Both are firearm systems with crafting, attachments, ammo. TACZ requires unofficial NeoForge port by MUKSC (631K DL, Jul 2026) — "DO NOT REPORT BUGS TO ORIGINAL DEVS." Pack Upgrader needed for gun packs. 5+ moving parts from different maintainers. Create: Gunsmithing is native Create-integrated, steampunk-aesthetic, no port risk.
 - [x] TACZ addons (Pack Upgrader, Create Armorer, TTI Gunpack, Cyber Armorer) — all depend on rejected parent mod. Gun packs are .zip data packs, not standalone mods.
+
+### Added Mods (Aug 2026 batch 25 — Territory Conquest)
+
+- [x] Torchmaster (Wave 5 — Combat & Mobs) — Mega Torch suppresses hostile spawns in a 48-block radius; Feral Flare Lantern (24-block) for cave/ruin clearing. NeoForge 1.21.1 native (`torchmaster-neoforge-1.21.1-21.1.9`), no deps. By xalcon.
+- [x] KubeJS recipe gate `kubejs/server_scripts/wave5_torchmaster.js` — Mega Torch requires Ignitium Ingot (Cataclysm Ignite drop) + Create brass + blaze rods. Every torch = one earned boss conquest, not a daytime walk. Prevents torch-hoarding loophole.
+- [x] Config override `config/torchmaster-common.toml` — mega_torch_radius=48 (village-sized zone), feral_flare_radius=24. [VERIFY] exact keys after first launch.
+- [x] GUIDE.md Wave 5: Torchmaster mod row, "Torchmaster — Conquering the Land" section (5-step conquest loop: scout → clear → harvest → craft → plant), config notes, Chill Rule check. Wave 5 session plan Session 7 (First Conquest). Mod counts: Wave 5 7→8 mods, 13→14 total. Grand total 164→165.
+- [ ] Verify Torchmaster config key names against generated `torchmaster-common.toml` after test launch; reconcile with documented override.

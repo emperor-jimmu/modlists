@@ -2862,6 +2862,7 @@ Authored quest book with chapters covering every major mod in the pack. Guides p
 | [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | Shows enchantment effects in tooltips                                                             |
 | [Create Big Cannons](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons)             | Artillery engineering — siege cannons for colony defense and spectacle                            |
 | [Cut Through](https://www.curseforge.com/minecraft/mc-mods/cut-through)                           | Combat QoL — swing through transparent blocks (tall grass, cobwebs) without breaking them         |
+| [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)                           | Territory pacification — Mega Torch suppresses hostile spawns in a radius; each torch gated behind a Cataclysm boss conquest (see below) |
 
 Apotheosis also adds boss modifiers and elite mob affixes — partially covers what Champions would have done.
 
@@ -2985,6 +2986,28 @@ Functional cannons built from Create materials, using rotational power for assem
 
 **Dependency**: Ritchie's Projectile Library (auto-installed) — provides custom trajectories and hit detection. No separate config.
 
+### Torchmaster — Conquering the Land
+
+Torchmaster makes **peace a reward, not a default**. Its Mega Torch suppresses hostile mob spawning in a 48-block radius — but the torch itself requires a **Cataclysm boss conquest** to craft (KubeJS gate, `kubejs/server_scripts/wave5_torchmaster.js`):
+
+| Item | Gated Recipe | Gate |
+|---|---|---|
+| Mega Torch | Ignitium Ingot (Cataclysm Ignite drop) + Create brass ingots + blaze rods | Phase 2 — first Cataclysm boss + brass age |
+
+**The conquest loop** — each torch is one earned region:
+
+1. **Scout** — fly your plane (Immersive Aircraft / Man of Many Planes) or roll out (Create train, Small Ships) to a hostile region
+2. **Clear** — fight through the structures with your guns (Create: Gunsmithing), artillery (Create Big Cannons), and gear
+3. **Harvest** — defeat the Cataclysm boss, collect the Ignitium Ingot
+4. **Craft** — return home, craft the Mega Torch in your factory (Create brass)
+5. **Plant** — place it at the region's center. The area is now *yours* — permanently peaceful, safe to build in
+
+**Why it's gated**: Cataclysm bosses are re-fightable (arena respawner blocks accept an Eye item to re-summon), so conquest is **renewable** — no torch farming loophole, no world exhaustion. Every peaceful biome is an earned trophy, and the 200h+ content runway survives because you can always find another arena to conquer.
+
+**Config** (`config/torchmaster-common.toml`): Mega Torch radius 48 blocks (village-sized zone). Feral Flare Lantern (radius 24) suppresses only dark-spawned mobs — useful for cave/ruin clearing without full pacification. Mega Torch blocks natural spawning only, not spawners.
+
+**Chill Rule check**: Conquered land is permanent — you can log off, ignore progression, or decorate for a session without a single mob interrupting. This is the *payoff* of the pack's chill pillar, earned through the power fantasy.
+
 ---
 
 ### Session Plan — Wave 5
@@ -2997,6 +3020,7 @@ Functional cannons built from Create materials, using rotational power for assem
 | **Session 4 — First Cataclysm boss** | Easiest = Leviathan (deep ocean) or Netherite Monstrosity (Nether). Prepare: good weapons, fire resistance, healing food                 | Epic boss beaten           |
 | **Session 5 — Cannons**              | Craft bronze (zinc + copper in heated mixer). Build Small Cannon. Test fire. Mount near base entrance                                    | Artillery online           |
 | **Session 6+ — Boss gauntlet**       | Remaining Cataclysm bosses. Each drops unique endgame materials. Revisit Twilight Forest bosses with Wave 5 gear                         | Full endgame gear          |
+| **Session 7 — First conquest**       | Scout a region by plane, clear its structures with guns/artillery, defeat the Cataclysm boss, craft the Mega Torch from its Ignitium Ingot, plant it. The region is yours                           | First pacified territory   |
 
 **Tip**: Better Combat changes melee fundamentally. Don't skip Session 1 even as a ranged player.
 
@@ -3279,11 +3303,11 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 3 — Equipment Magic     | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
 | Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
-| Wave 5 — Combat              | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
+| Wave 5 — Combat              | 8       | 6      | 14      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Torchmaster, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **164** | **42** | **206** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **165** | **42** | **207** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
