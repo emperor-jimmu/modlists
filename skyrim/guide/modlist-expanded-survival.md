@@ -71,7 +71,7 @@ Use `"!!doautoload" : 1` and `"!!doautostart" : 1` to skip MCM setup on new game
 - Equipment handling, overlays, and optional integrations need stricter discipline than a simple immersion add-on.
 - Only hard runtime requirements should be treated as mandatory.
 - For Steam runtime `1.6.1170`, Backported Extended ESL Support requirement does not apply.
-- [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) adds bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. Alternative to dedicated sauna/bathhouse location mods.
+- [Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) adds bathhouse access at inns via innkeeper dialogue — minimal cell edits, high compatibility. Alternative to dedicated sauna/bathhouse location mods. **Confirmed working with the locked `Candlehearth` inn baseline (→ `modlist-world-content.md`, Inns) — no patches needed** (acts via dialogue/faction, not cell edits).
 
 ---
 

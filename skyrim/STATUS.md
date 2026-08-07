@@ -197,7 +197,7 @@ Second submission batch (29 IDs, 28 unique — 49014 listed twice). Reviewed aga
 
 ### Already in modlist (no change)
 
-- **Simple Inn Bath (49014)** — Already listed as the inn-bathhouse option in `modlist-expanded-survival.md` (Roleplay Upkeep And Hygiene). Also confirms the duplicate entry in this batch (listed twice) — no re-entry.
+- **Simple Inn Bath (49014)** — Already listed as the inn-bathhouse option in `modlist-expanded-survival.md` (Roleplay Upkeep And Hygiene). Also confirms the duplicate entry in this batch (listed twice) — no re-entry. **User-confirmed (2026-08-07): works together with the locked `Candlehearth` inn baseline — no patches needed** (dialogue/faction-layer, no cell edits — the reason it survives where the JK's inn interiors cluster was rejected).
 - **Eating Animations and Sounds (42602)** — Added as Alternative (see below), not a baseline change.
 
 ### Adopted (entry added to owning section file)
