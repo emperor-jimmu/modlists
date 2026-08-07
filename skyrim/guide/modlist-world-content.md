@@ -38,6 +38,9 @@ Authored settlement content — real places, not just denser vibes.
 | [Settlements Expanded](https://www.nexusmods.com/skyrimspecialedition/mods/7777) |  Makes seven underbuilt settlements feel inhabited (no city geometry changes). Must load late.  |
 | [The Great City of Solitude SSE](https://www.nexusmods.com/skyrimspecialedition/mods/22243) |  Port expansion with new homes, shops, warehouses, NPCs.                                        |
 | [JK's Whiterun Outskirts](https://www.nexusmods.com/skyrimspecialedition/mods/78351) |  Whiterun-area expansion. Independent of `JK's Skyrim` AIO; stack without patching.             |
+| [JK's Riften Outskirts](https://www.nexusmods.com/skyrimspecialedition/mods/90864) | Riften stables, farmhouses, and gate-to-south-road connection. Same author/series as Whiterun Outskirts. Requires [JK's Riften Outskirts Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/91642) by Czasior. Verify vs The City of Crossed Daggers - Riften Expansion (168629) cell overlap. |
+| [JK's Windhelm Outskirts](https://www.nexusmods.com/skyrimspecialedition/mods/86975) | Windhelm Talos Shrine, stables, and three farmhouses. Requires [JK's Windhelm Outskirts Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/87964) by Czasior. Windhelm is already heavy with edits (Tomato's Windhelm, Spaghetti's Cities) — verify patch coverage before locking. |
+| [JK's Markarth Outskirts](https://www.nexusmods.com/skyrimspecialedition/mods/93006) | Markarth stables, Salvius farm, Left Hand Mine. ESLified v2.0. Requires [JK's Markarth Outskirts Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/95750) by Czasior. |
 | [JK's Raven Rock](https://www.nexusmods.com/skyrimspecialedition/mods/141070) | Solstheim settlement. ESL-flagged. |
 | [JK's Tel Mithryn](https://www.nexusmods.com/skyrimspecialedition/mods/151512) | Telvanni tower. ESL-flagged. |
 | [FYX - Eastern Empire Company Building](https://www.nexusmods.com/skyrimspecialedition/mods/86526) |                                                                                                 |
@@ -426,6 +429,7 @@ All three have LoTD integration (→ [Legacy of the Dragonborn](modlist-lotd.md)
 | [The Frozen Heart](https://www.nexusmods.com/skyrimspecialedition/mods/159911) |  |
 | [Midnight Sun](https://www.nexusmods.com/skyrimspecialedition/mods/163295) |  |
 | [Echoes of Oblivion](https://www.nexusmods.com/skyrimspecialedition/mods/153979) | AI-Generated Content. |
+| [It Came from Akavir](https://www.nexusmods.com/skyrimspecialedition/mods/155449) | Short fully-voiced quest (pro VO) about a Kamal washed ashore; expands Kamal/lore, adds a new armor set + weapon. ESL-flagged, safe mid-game, level 15+. Facegen CTD issue fixed in v1.0.6 — take v1.0.6 (not 1.0.3, which needed the face-discoloration fix). |
 
 #### Undeath — Lichdom Quest Mod
 

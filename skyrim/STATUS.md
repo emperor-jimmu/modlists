@@ -161,3 +161,32 @@ The 17 submitted mods were reviewed against Elder Wilds pillars (redundancy, con
 
 ### anbeegod profile — FDE cross-check
 Resident FDE already present: Aela, Brelyna, Lydia, Roggi, Aranea, Borgakh, Uthgerd, Ysolda, Jenassa, Olfina, Mjoll, Eola, Faralda. Added missing (FDE table in `modlist-npcs.md`): Ralof, Senna, Lisette, Marcurio, Saadia, Elisif, Fura Bloodmouth, Sapphire, Illia, Rayya, Faendal, Camilla, Jordis, Erik. Custom followers added: Caesia (13389) and Livia Salvian Revamped (33318).
+
+## Mods for review — VERDICTS (2026-08-07, 13-mod batch)
+
+Reviewed 13 submitted mods against Elder Wilds pillars (redundancy, conflicts/overrides, overpowered, triviality, CS-compat, third-person/gamepad).
+
+### Already in modlist (no change)
+
+- **Lively cart driver animation replacer or OAR (70595)** — Already `modlist-animations.md:419` (Alternative). No re-entry.
+- **Carriages and Stables Dialogue Bundle (79297)** — Already `modlist-world-feel.md:26` (Travel Pacing baseline). No change.
+- **HSF Male Furniture Idles (155228)** — Already `modlist-animations.md:407` (Alternative). No re-entry.
+
+### Rejected
+
+- **360 Ward - Other colors (156803)** — REJECTED. Add-on recolor of `360 Ward` (156225), which is only an Alternative at `modlist-expanded-magic.md:30` (not baseline). If 360 Ward is ever adopted, color becomes an install-time FOMOD choice — a separate listing is pointless. Trivial add-on of an already-Alternative mod.
+- **Miscellaneous Quests Rewards Revamp (156418)** — REJECTED. Overpowered / dial-fight. Doubles skill increases from misc quests (fights the locked Static + Hard Threat progression / Experience + Static Skill Leveling dial) and inflates quest gold against the settled economy (locked Open World Loot + `Trade and Barter`). Author's own compat guidance ("let JaySerpa quest overhauls overwrite") creates a patch/priority tail against a stack dense with jayserpa. New author, 146 endorsements.
+
+### Adopted (entry added to owning section file)
+
+- **It Came from Akavir (155449)** — `modlist-world-content.md` → Standalone Quest Mods. Short fully-voiced quest (pro VO) on a Kamal washing ashore; new armor + weapon. ESL, level 15+, 606 endorsements, v1.0.6. **Choose v1.0.6** (facegen CTD fixed; 1.0.3 needed a face-discolor fix).
+- **Take a Peek (66908)** — `modlist-expanded-magic.md` → Stealth And Detection (Add-on). JaySerpa keyhole-peek stealth mechanic; no detection-record edits (RAID interplay nil); third-person peek animation and gamepad-friendly hold-sneak activation. **Hard dependency: `Dynamic Activation Key`** — promote from Alternative (currently only in `World Content` for Simple Hunting Overhaul); OAR + SkyUI are baseline.
+- **Nocturnal Moths (68288)** — `modlist-world-feel.md` → Environmental Atmosphere. Moths around exterior lanterns (Lanterns of Skyrim II + CS Lantern Lights layer); requires BOS (baseline). Grim-dark live-world night flavor.
+- **Ships On The Horizon (79034)** — `modlist-world-feel.md` → Environmental Atmosphere. Offshore ships near Solitude / Raven Rock / Tel Mithryn, animated version. Fits the living-coast layer.
+- **JK's Riften Outskirts (90864)** — `modlist-world-content.md` → Cities baseline. Same Jkrojmal series as locked Whiterun Outskirts. Requires JK's Riften Outskirts Patch Collection (91642) by Czasior. Verify vs The City of Crossed Daggers - Riften Expansion (168629).
+- **JK's Windhelm Outskirts (86975)** — `modlist-world-content.md` → Cities baseline. Patch Collection 87964. Windhelm already heavy (Tomato's Windhelm, Spaghetti's Cities). Verify patch coverage before locking.
+- **JK's Markarth Outskirts (93006)** — `modlist-world-content.md` → Cities baseline. ESLified v2.0, requires 1.6.1130+ (list is 1.6.1170). Patch Collection 95750.
+
+### Alternative (choose-one, no baseline change)
+
+- **Detailed Carriages 2.0 (89604)** — `modlist-world-feel.md` → Travel Pacing (Alternative). Unique carriage redesign w/ SMIM. **Conflicts with the `Snazzy Diverse Carriages - BOS` baseline** (`graphics-textures.md`) — choose one carriage identity. Compatible with the Carriages & Stables / Drivers baseline.

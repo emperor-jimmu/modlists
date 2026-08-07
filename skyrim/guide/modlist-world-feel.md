@@ -29,6 +29,7 @@ How much friction, structure, and world texture sits between major locations.
 - **Carriage Stops of Skyrim** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/10434)) — Broader route coverage.
 - **Fast Travel Cost** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/20200)) — Economic pressure on map fast travel.
 - **Journeyman - A Fast Travel Overhaul** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/92220)) — Restricts fast travel unless a Travel Pack is crafted/purchased. SKSE plugin + ESP. Fits "living the world" without forcing no-fast-travel.
+- **Detailed Carriages 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/89604)) — Unique redesigned look for every carriage, Hearthfire support, SMIM patch. Conflicts with the `Snazzy Diverse Carriages - BOS` baseline (→ `Textures & Meshes`) — choose one carriage visual identity. Compatible with Carriages and Stables Dialogue Bundle + Carriage Drivers Are Alive (baseline above).
 
 ---
 
@@ -143,6 +144,8 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [R.A.S.S. - Rain Ash And Snow Shaders](https://www.nexusmods.com/skyrimspecialedition/mods/22745) | Visible rain droplets, snow accumulation, ash/frost shaders on player/NPCs. 33K+ endorsements. |
 | [Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420) | Drifting iceberg meshes in northern waters. |
 | [Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634) | Animated ice floe meshes in cold regions. |
+| [Nocturnal Moths](https://www.nexusmods.com/skyrimspecialedition/mods/68288) | Moths flutter around exterior lanterns at night (10 PM–4 AM, MCM-tunable). Requires BOS (baseline) + [Lanterns of Skyrim II patch](https://www.nexusmods.com/skyrimspecialedition/mods/68288?tab=files) (road/settlement lantern layer is LoS II + CS Lantern Lights).|
+| [Ships On The Horizon](https://www.nexusmods.com/skyrimspecialedition/mods/79034) | Ships visible offshore in the Sea of Ghosts near Solitude, Raven Rock, and Tel Mithryn. Animated version. Fits the living-coast world-feel; animated ships and dock layer are in → `World Content` POI. |
 
 ### OIF Ecosystem — Physics-Based Interactions & Destruction
 
