@@ -162,6 +162,7 @@ Per-character face assets: hairstyles, eye textures, and beard options. Ensures 
 | --- | --- | --- |
 | [KS Hairdos SSE](https://www.nexusmods.com/skyrimspecialedition/mods/6817) | Baseline | Community-canonical hair pack. 141K endorsements. |
 | [High Poly Vanilla Hair](https://www.nexusmods.com/skyrimspecialedition/mods/41863) | Baseline | Higher-poly vanilla hair meshes (smooth geometry, 3D braids, UV tweaks). Replaces the vanilla styles NPCs/player use; complements KS Hairdos (which adds its own styles, not vanilla replacements). Human races. No ESP. |
+| [Modular SMP Hairstyles](https://www.nexusmods.com/skyrimspecialedition/mods/93608) | Add-on | 100+ unisex SMP hairstyle combos (mix & match front/back) added to the hair slider. Requires FSMP (baseline). Physics cost on the wearer only. Verify against SMP-NPC crash fix (baseline) when used on NPC distribution. ESL. |
 | [Eyes Nouveaux](https://www.nexusmods.com/skyrimspecialedition/mods/131210) | Baseline | Khisartin-style eye textures, grim-dark tone. |
 | [LDD Clean Cubemap for Eyes 4K](https://www.nexusmods.com/skyrimspecialedition/mods/168060) | Baseline | Cleaner eye cubemaps. Stacks on eye-texture baseline. |
 | [Brows](https://www.nexusmods.com/skyrimspecialedition/mods/1062) | Baseline | Brow shape and texture replacer for all races. |

@@ -259,6 +259,8 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 | [Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)                   | Utility SKSE plugin.                                                |
 | [Description Framework Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139077) | Centralized patch collection for the Description Framework.         |
 | [Exit Sneak On Sprint](https://www.nexusmods.com/skyrimspecialedition/mods/138669) | Exits sneak mode when sprinting. Lightweight SKSE plugin, no records. |
+| [Naked Dead NPC Fix](https://www.nexusmods.com/skyrimspecialedition/mods/99024)       | Auto-equips body/hands/feet/head slots when a dead NPC loads naked (outfit-distribution glitch). SKSE, zero records, "compatible with everything". |
+| [Native EditorID Fix](https://www.nexusmods.com/skyrimspecialedition/mods/85260)       | Bug-fix utility (Bug Fixes/SKSE) correcting engine-side native EditorID handling. SKSE plugin, requires Address Library (baseline). |
 | [Weapons Armor Clothing and Clutter Fixes (WACCF)](https://www.nexusmods.com/skyrimspecialedition/mods/18994) | Broad record fix for weapon/armor/clothing/clutter records. High compatibility debt — test carefully with the crafting and artifact stack. Optional — skip if conflicts outweigh gains. |
 
 ### Not Installed

@@ -348,3 +348,48 @@ Reviewed 32 submitted mods against Elder Wilds pillars (redundancy, modlist adhe
 
 - **FK's Diverse Racial Skeletons (38563)** — NOT ADOPTED. Replaces XPMSSE skeleton meshes per race for height/scale differences. Modlist owns **XPMSSE as the single skeleton baseline** (`animations.md:226`); a skeleton-layer replacement adds physics/anim risk (FSMP, OAR stacks) for cosmetic scale variance. Revisit only if height realism becomes a priority.
 - **Armors Have Description (117818)** — NOT ADOPTED standalone. Requires the Description Framework (105799), whose Patch Hub (139077) is in `foundations.md:257` but the base framework is not listed. Chain-adopt only if the base Description Framework is added.
+
+## Mods for review — VERDICTS (2026-08-07, 24-mod TODO batch)
+
+Reviewed the 24 submitted mods from `TODO.md` against Elder Wilds pillars (redundancy, conflicts/overrides, dial-fights, CS-compat, third-person/gamepad).
+
+### Already in modlist (no change)
+
+These were already adopted in the modlist; remove the TODO line only. No re-entry.
+
+- **Master Thief Armor 3BA-BHUNP-UNP-CBBE-HIMBO-Vanilla (141700)** — Already listed as Alternative at `modlist-weapons-armor.md:149`. FafnyB, 8,110 endorsements, v1.3 (Feb 2025); requires CBBE 3BA / HIMBO / BEES (all baseline). HDT-SMP patch (142095) stays chained per prior verdict — no change.
+- **LeanWolf's Better-Shaped Weapons SE (2017)** — Already Baseline at `modlist-graphics-textures.md:26` (mesh replacer, no ESP). No change.
+- **Missives - Voice and Quest Expansion (166094)** — Already at `modlist-world-content.md:342`. No change.
+- **Real Wheat Fields (151229)** — Already adopted at `modlist-graphics-terrain.md:84`. No change.
+
+### Adopted (entry added to owning section file)
+
+- **Naked Dead NPC Fix (99024)** — SKSE plugin (wSkeever) that auto-equips body/hands/feet/head slots on a dead NPC that loads naked (outfit-distribution glitch). Zero records, "compatible with everything, always safe to install/update/uninstall". `modlist-foundations.md` → Targeted Bugfix Mods.
+- **Native EditorID Fix (85260)** — KitsuuneNivis, 6,818 endorsements, v1.2.2 (updated Apr 2024). Bug-fix utility (Bug Fixes/SKSE) correcting engine-side native EditorID handling for plugin/lookup strings. SKSE, requires Address Library (baseline). `modlist-foundations.md` → Targeted Bugfix Mods.
+- **JS Solitude Sewer Cover SE (104980)** — johnskyrim, 3D remake of the Solitude sewer grate with opening-closing animation for activators; no ESP, straight-swap replacer. `modlist-graphics-textures.md` → Additional Texture And Mesh Replacements (JS clutter line).
+- **JS Shout Apart Skeletons SE (72548)** — johnskyrim, Unrelenting Force instantly destroys weaker skeletons and pushes their bones apart (no vanilla record edits). Requires PapyrusUtil, Po3 Extender, Po3 Tweaks, SPID (all baseline). Complements the locked **Skeletons SE** (124394) direction. `modlist-creatures.md` → Creature Behavior Improvements.
+- **JS Dwemer Puzzle Cube (68570) / JS Dwemer Artifacts (67631) / JS Dwemer Control Cube (70257)** — johnskyrim Dwemer clutter retextures; no records, complement the locked Dwemer visual stack. `modlist-graphics-textures.md` → Additional Texture And Mesh Replacements.
+- **Modular SMP Hairstyles (93608)** — Everglaid, 100+ unisex standalone SMP hairstyles added to the hair slider (combo front/back option). Requires FSMP (baseline); self-facing weight; verify the SMP-NPC crash fix for any distribution. Additive, not replacer. `modlist-graphics-characters.md` → Hair, Eyes, And Beards.
+- **RUSTIC RELIEFS (34684)** — Gamwich, 2K retexture of monuments & tombstones, standing stones, word walls, regional murals. **Verify mural overlap with Temples of the Ancients (38544)** and standing-stone coverage vs Ryn's Standing Stones (64256) before locking. `modlist-graphics-textures.md` → Additional Texture And Mesh Replacements.
+- **Softly Obscuring Snowfall - No Dirty Ruins Snow (152163)** — ra2phoenix, 990 endorsements, v1.5 (Mar 2026). Mesh-level fix removing dirty brown vertex shading so snow reads fresh/clean; meshes built from vanilla/SMIM/AMF. FOMOD patches for Simplicity of Snow (baseline), Snozz's Resource Pack, Enhanced Rocks and Mountains, Wyrmstooth, Deadly Dragon Lairs. `modlist-graphics-terrain.md` → Snow And Support.
+- **JaySuS Swords SE (29415)** — 50 craftable/looted weapons; classic old-school pack but v1.8 (Dec 2020) and strict permissions. Added as **Alternative** weapon pack (see note: modern packs — Billyro, Reforging - To the Masses — fill the same niche). LoTD patch available. `modlist-weapons-armor.md` → Weapon Pack Additions.
+
+### Tentative (verify before adopting)
+
+- **Skyrim Food Expansion (110935)** — AlaxoucheModding, 3.1.0 (Jul 2026, active). 250+ high-poly food items replacing & expanding the food set. **Use the BOS/Model Swapper version** to avoid global overrides; verify coexistence with **Realistic HD Food Remastered** (baseline) and Diverse Foods. Pairs with Gourmet. Reserve a slot in `modlist-expanded-crafting.md` (Food) once verified.
+- **CoverKhajiits - Face Textures 4K SE (71067) with Terre's 4K Fur (76568)** — Khajiit face retexture (XilaMonstrr, v1.3 Jan 2023) + fur body layer. Carries the **AI-Generated Content** tag (ESRGAN/Cupscale upscale) — quality-eval per curation policy; verify against the **BnP beast-race skin coherence gate** (same as the Feminine Argonian/Khajiit tentatives); 76568 is adult-content-gated (page behind the NSFW wall) — mark **user to provide** the acceptance call on the gated page. Tentative.
+- **Triple Triad Card Game (42522) with Replacement/Additional Cards (50983) and Improved AI (180922)** — card-game minigame with a third-person/gamepad card-UI parity gate (verify the card-table interaction works on gamepad, no mouse-only prompts). Base 42522 is the gate; 50983 (card skins) and 180922 (AI) chain only if the base is adopted. 180922 flags a new-game requirement. Tentative.
+
+### Rejected
+
+- **Missing Follower Dialogue Edit (56115)** — REJECTED. Modder's resource implementing missing follower dialogue + marriage lines, but the author **dropped Relationship Dialogue Overhaul (RDO) patch support in v2.5.2**, and RDO is a locked baseline. A follower-dialogue layer that breaks the RDO bridge is incoherent; the modlist already owns that niche via RDO.
+- **Racial Body Morphs SE (20684)** — REJECTED. Per-race NIF body-shaping that is **incompatible with any mods that edit races**, and the modlist owns a single XPMSSE **skeleton baseline** (`animations.md`). Same rationale as the FK's Diverse Racial Skeletons rejection.
+- **More Ovens - Skyrim (141252)** — REJECTED. 37 endorsements, adds Hearthfire ovens into Jarl palaces/taverns via **interior cell edits** — cell-edit conflict risk against locked interior stacks, trivial gameplay value, very low signal.
+
+### Optional / marginal — not adopted
+
+- **Terre's 4K Fur for CoverKhajiits (76568)** — folded under the CoverKhajiits face tentative above as the paired body layer.
+
+### TODO cleanup
+
+All 24 lines cleared from `TODO.md`: 4 already-in-modlist entries (no action), 11 adopted (section entries added), 3 tentative, 3 rejected, 1 marginal, 2 folded into chained pairs.

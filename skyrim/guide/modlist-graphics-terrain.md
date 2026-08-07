@@ -52,6 +52,7 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 | [Better Dynamic Snow SE](https://www.nexusmods.com/skyrimspecialedition/mods/9121) |  Multistage accumulation with terrain-blended coverage.        |
 | [Better Dynamic Ash SE](https://www.nexusmods.com/skyrimspecialedition/mods/54754) |  Solstheim ash equivalent.                                     |
 | [Enhanced Rocks and Mountains - CM and PBR](https://www.nexusmods.com/skyrimspecialedition/mods/121336) |  See Landscape section above; listed here for snow coherence.  |
+| [Softly Obscuring Snowfall - No Dirty Ruins Snow](https://www.nexusmods.com/skyrimspecialedition/mods/152163) |  Removes dirty brown vertex-color shading on snow statics for a clean fresh-snow look. Meshes based on vanilla/SMIM/Assorted Mesh Fixes. FOMOD has optional patches for Simplicity of Snow, Snozz' Resource Pack, Enhanced Rocks and Mountains, Wyrmstooth, Deadly Dragon Lairs. Fits the CS clean-snow direction.  |
 
 ### Alternatives
 
