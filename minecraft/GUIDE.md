@@ -938,7 +938,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 | [ColorWheel](https://www.curseforge.com/minecraft/mc-mods/colorwheel)                                                                 | Flywheel + Iris compatibility — renders Create contraptions under shaders. Required for Create to work with Iris. Both Complementary Unbound and Euphoria Patches have official support |
 | [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)                                                    | Create + Farmer's Delight automation — Slicer (auto Cutting Board), automatic FD Cooking Pot via heated mixing, Sprinkler for fluid-based farming                                       |
 | [Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus) 1.11.2b                                      | Fan processing expansion — Bulk Coloring, Bulk Freezing, Bulk Ending, Bulk Sanding. Fluid Hatch for tanks. Adds Aether Bulk Enchanting. Library mod for Create addon devs                |
-| [Create: Shimmer](https://www.curseforge.com/minecraft/mc-mods/create-shimmer) 1.2.10                                                  | Create × Twilight Forest compat — Shimmer fluid + Bulk Transmutation automates TF item production through Create fan processing                                                          |
+| [Create: Protection Pixel](https://www.curseforge.com/minecraft/mc-mods/protection-pixel)                                           | Create-themed power armor — brass/alloy tiers, per-piece active abilities (AoE, debuff clear, speed→damage), combustion reactor (blaze rods + water). Bridges gear between Mekanism Tools and MekaSuit |
 ### Create Addon Details
 
 **Create Better FPS** optimizes Create's rendering pipeline — handles addon models (e.g., blaze with straw from Create Crafts & Additions), speed controllers, factory gauges, and schematic previews. Benchmarked 7→35 FPS with 512 waterwheels under shaders. Works alongside ColorWheel: ColorWheel handles Flywheel instance compatibility; Create Better FPS handles everything else.
@@ -949,7 +949,38 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 
 **Create: Dragons Plus** is a library that expands Create's fan processing with Bulk Coloring (dye items via Encased Fan + dye fluid), Bulk Freezing (Powder Snow), Bulk Ending (Dragon's Breath / Dragon Head), and Bulk Sanding (quicksand). Also adds a Fluid Hatch for convenient tank I/O and Aether Bulk Enchanting (enchanting recipes, repair, Moa Egg incubation in the Aether). All features can be toggled individually in config. Required dependency for Create: Shimmer.
 
-**Create: Shimmer** adds Shimmer fluid and Bulk Transmutation to Create's fan processing, bridging Create automation with Twilight Forest. Transform dead coral into living coral, transmute blocks, and automate TF item production through Create's mechanical systems. Requires Create, Twilight Forest, and Create: Dragons Plus.
+
+#### Create: Protection Pixel
+
+Steampunk power armor built with Create materials. Each armor piece has a unique active ability powered by a waist-slot Combustion Reactor (blaze rods + water as fuel).
+
+**Armor pieces** (brass → alloy tier progression):
+
+| Piece                   | Ability                                                                             | Best for                       |
+|-------------------------|-------------------------------------------------------------------------------------|--------------------------------|
+| **Plague Helmet**       | Release steam to dispel blindness, darkness, weakness, slowness                    | Exploration, debuff-heavy mobs |
+| **Lancer Helmet**       | Speed → damage scaling — the faster you move, the harder you hit                   | Mobility builds                |
+| **Hunter Helmet**       | Sensors highlight nearby creatures while sneaking; +luck for finding treasure      | Dungeon crawling               |
+| **Breaker Chestplate**  | +damage +attack speed while maintaining protection                                 | DPS builds                     |
+| **Magnetic Storm**      | AoE magnetic burst when taking heavy damage or surrounded; pulls ranged attackers  | Crowd control                  |
+| **Float Shield**        | Energy shell around user when charged — absorbs incoming damage                    | Tank builds                    |
+
+**How it works**:
+
+1. Craft armor pieces at Create machines (check EMI — requires brass-tier Create infrastructure)
+2. Craft a **Combustion Reactor** (waist slot, check EMI) — this powers all equipped armor
+3. Feed the reactor **blaze rods + water** (displayed in minutes in the GUI). More blaze rods = longer runtime
+4. If reactor runs out: slowness + mining fatigue + weakness. Keep it fueled!
+
+**Armor plates**: Stand on an **Armor Load Platform** (requires lava piped in — 100mB per assembly/disassembly). Right-click while sneaking to install/remove armor plates with different stat values. Plates also provide a repair method — no anvil needed.
+
+**External devices**: Additional Create-themed accessories (back-mounted) that provide utility without consuming armor slots.
+
+**Compatibility**: Works with Better Combat, Epic Fight, and backpacks (visual space reserved for backpack rendering). Apotheosis affixes and gems should apply — verify after test launch.
+
+**Dependencies**: [Create](https://www.curseforge.com/minecraft/mc-mods/create) (already in pack) + [Kleiders Custom Renderer API](https://www.curseforge.com/minecraft/mc-mods/kleiders-custom-renderer-api). For versions below 1.9.0, requires [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios) instead (already in pack). Currently on v2.1.9+ using Kleiders.
+
+**Progression placement**: Brass-tier armor is early Phase 2 (requires Create brass). Alloy-tier is mid-Phase 2 (requires Create alloy infrastructure). MekaSuit remains the Phase 3 endgame upgrade. This fills the Phase 2 power-armor gap between basic Mekanism Tools and the MekaSuit.
 
 ### Mekanism Addons
 
@@ -998,6 +1029,7 @@ The classic tech trio. Create handles mechanical automation, Mekanism handles in
 - **Applied Mekanistics** bridges AE2 autocrafting with Mekanism's chemical processing — ME Chemical Output Buses, ME Chemical Import Buses, and P2P tunnels for chemicals/gases enable autocrafting of Mekanism recipes (including fission/fusion products) directly through the AE2 crafting CPU. Without this mod, Mekanism chemical steps are manual bottlenecks.
 - **Create: The Factory Must Grow** adds oil drilling, distillation towers, blast furnaces, and diesel engines — expanding Create's mechanical toolkit into heavy industry. Its steel replaces Mekanism's steel (TFMG's blast furnace is the intended steel source; Mekanism's steel recipe is disabled by the Mekanism TFMG Compat mod). TFMG aluminum and plastic feed into Mekanism's advanced processing chains.
 - **Mekanism TFMG Compatibility** resolves 85+ recipe overlaps between TFMG and Mekanism — lead, sulfur, and steel are unified under TFMG's production lines, while Mekanism retains its chemical processing advantage. Both EMI item blacklist config and per-recipe toggles are available for pack tuning.
+- **Create: Protection Pixel** adds steampunk power armor that bridges Create's brass-tier infrastructure with the power fantasy of Mekanism's MekaSuit. Brass-tier armor requires Create brass (early Phase 2); alloy-tier requires additional Create alloy processing (mid-Phase 2). The Combustion Reactor's blaze rod fuel can be farmed via Mekanism spawner systems, Apotheosis spawner upgrades, or vanilla blaze grinders. Blaze automation is a natural Phase 2 milestone that unlocks full power armor capability. MekaSuit remains the Phase 3 ultimate upgrade — Protection Pixel fills the gap, it doesn't compete.
 
 The core tech trio. Create handles mechanical automation, Mekanism handles industrial processing, AE2 handles digital storage and autocrafting. Install all three core mods plus addons at once.
 
@@ -2989,7 +3021,9 @@ Functional cannons built from Create materials, using rotational power for assem
 | [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted)                                                 | Furniture — chairs, tables, shelves, curtains                         |
 | [The Magic Mirror](https://www.curseforge.com/minecraft/mc-mods/the-magic-mirror)                                       | Reflective mirror block that shows the nearest player's reflection    |
 | [Fetzi's Displays](https://www.curseforge.com/minecraft/mc-mods/fetzis-displays)                                        | Item displays — glass cloches, katana stands, wall holders, racks     |
-| [Lili's Pottery](https://www.curseforge.com/minecraft/mc-mods/lets-do-lilis-pottery)                                    | Decorative pottery — pots, vases, urns, amphores, clay variants       |
+| [Laser Bridges & Doors](https://www.curseforge.com/minecraft/mc-mods/laser-bridges-doors)                                     | Laser platforms, bridges, doors, and fences powered by redstone — length scales with signal strength, dye-customizable colors |
+
+**Interdependency note — Laser Bridges & Doors + AE2 (Wave 1)**: Laser sources require an End Crystal (post-End-dragon). Redstone control pairs naturally with AE2 level emitters and Create redstone circuits — automate laser gates that open when your ME system detects specific conditions.
 
 **Interdependency note — Fetzi's Displays + Apotheosis (Wave 3)**: Fetzi's Displays is ideal for showcasing Apotheosis gear. Glass cloches and katana stands let you display mythic drops and perfect gem rolls as trophies. Wall holders with plaques let you name your legendary weapons.
 
@@ -3158,6 +3192,39 @@ Part of the [Let's Do](https://www.curseforge.com/minecraft/mc-mods?class=mc-mod
 
 **Integration with Handcrafted**: Both add decorative blocks but cover different aesthetics. Handcrafted is rustic furniture (chairs, tables, shelves). Lili's Pottery is earthenware (pots, vases, urns). Together they provide a full interior decoration toolkit.
 
+### Laser Bridges & Doors — Energy Barriers
+
+Futuristic laser barriers created by powering Laser Source blocks with redstone.
+
+**What it adds**:
+
+| Block                       | Function                                                       |
+|-----------------------------|----------------------------------------------------------------|
+| **Laser Source Block**      | Projects a horizontal laser bridge when powered by redstone    |
+| **Laser Fence Source Block**| Projects a vertical laser barrier                              |
+
+**How it works**:
+
+1. Craft a **Laser Source Block** — End Crystal + 7 iron ingots + glass (check EMI)
+2. Power with **redstone** — laser length scales with signal strength (max 15 blocks by default, configurable)
+3. **Dye** with right-click to customize color — any dye works, dispenser-compatible too
+4. Convert between laser bridge ↔ laser fence in a crafting grid
+
+**Key features**:
+
+- **Dynamic length** — changes in real-time as redstone signal strength varies (use comparators, levers at different levels)
+- **Blocks cut through** — configurable list of blocks lasers can replace. Default: air only. Tune in `config/laserbridges.json`
+- **Dispenser dyeing** — automate color changes with redstone and dispensers
+
+**Recipe gate**: Requires an End Crystal — this is post-End-dragon content. Appropriate for Phase 2+ base building.
+
+**Integration with Redstone & Tech**:
+
+- **AE2 level emitters** — emit redstone when item quantities hit thresholds → auto-close laser gates when storage is low or auto-open when conditions are met
+- **Create redstone links** — wireless redstone across your base to control laser arrays from a central panel
+- **Comparators** — use container fullness to control bridge length dynamically
+
+**Chill living fit**: Purely decorative/functional — no combat interaction, no progression pressure. Dye-customizable to match base aesthetics (warm amber lasers for cozy builds, cool blue for tech areas).
 ---
 
 ### Session Plan — Wave 6
@@ -3168,7 +3235,7 @@ Part of the [Let's Do](https://www.curseforge.com/minecraft/mc-mods?class=mc-mod
 | **Session 2 — Structural elements** | Craft Macaw's roofs, windows, doors in your base wood type. Build a cohesive room                                      | Cohesive room aesthetic  |
 | **Session 3 — Furniture**           | Handcrafted chairs, tables, shelves in kitchen and bedroom. Item shelves for loot display                              | Functional interior      |
 | **Session 4 — Large-scale**         | Building Wands — wall mode for perimeter, fill mode for foundation. Build a tower with circle mode                     | Rapid construction       |
-| **Session 5 — Details**             | Supplementaries jars, signposts, weather vanes. The Magic Mirror in bedroom. Rechiseled: Create for factory aesthetics | Decorative details       |
+| **Session 5 — Details**             | Supplementaries jars, signposts, weather vanes. Laser Bridges & Doors for energy barriers and decorative lighting. Rechiseled: Create for factory aesthetics | Decorative details       |
 
 ---
 
@@ -3206,17 +3273,17 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
 | Wave 0.5 — Player Experience | 57      | —      | 57      | Visual & Client QoL (33), Inventory & UI (20), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
-| Wave 1 — Tech                | 18      | 4      | 22      | Create + 12 addons (incl. Power Grid, Gunsmithing, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech deps |
+| Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 26      | 6      | 32      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships, hang glider, IaA addon                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
 | Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
 | Wave 5 — Combat              | 7       | 6      | 13      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
-| Wave 6 — Building            | 11      | 3      | 14      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted + Rechiseled: Create, Rechiseled: AE2 + Moonlight Lib, Resourceful Lib, Fusion                                                                               |
+| Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **162** | **41** | **203** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **164** | **42** | **206** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 

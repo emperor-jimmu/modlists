@@ -461,3 +461,16 @@ PUT 90.*:
 - [x] 18 schematics curated from abfielder.com — 4 Phase 1 starters, 3 farms/windmills, 5 factories/warehouses, 1 underground base, 2 castles, 3 bridges/walls/towers. All free, all .litematic format.
 - [x] Wave 1.1 section written in GUIDE.md — mod entry, keybinds, usage guide, schematic table (18 rows), interdependence notes, session plan.
 - [x] Shader compatibility caveat documented (toggle shaders off while placing schematics if flickering)
+
+### Added Mods (Aug 2026 batch 24 — Mod Review Adoption)
+
+- [x] Create: Protection Pixel (Wave 1 — Create Addons) — steampunk power armor with per-piece active abilities (Plague Helmet, Lancer Helmet, Magnetic Storm, Float Shield, etc.). Brass/alloy tier progression. Powered by Combustion Reactor (blaze rods + water). Requires Create + Kleiders Custom Renderer API. Fills Phase 2 power-armor gap between Mekanism Tools and MekaSuit.
+- [x] Laser Bridges & Doors (Wave 6 — Building & Decoration) — laser platforms, bridges, doors, fences powered by redstone. Dye-customizable colors, dynamic length scaling with signal strength. Recipe requires End Crystal (post-End gate). No dependencies. By Mars (42.3M DL across projects).
+- [x] Kleiders Custom Renderer API added as Wave 1 dependency (required by Create: Protection Pixel v1.9.0+)
+- [x] GUIDE.md updated: Protection Pixel table row + detail section + interdependency note in Wave 1. Laser Bridges & Doors table row + detail section in Wave 6. Session plans updated. Mod counts: Wave 1 18→19 mods, Wave 6 11→12 mods. Total 162→164.
+
+### Skipped After Review (Aug 2026 batch 24)
+
+- [x] Extreme Reactors — redundant with Mekanism fission/fusion reactors (Wave 1). Both are multiblock nuclear reactor systems producing FE/t. Mekanism's chain already gates MekaSuit and antimatter. 1.21.1 NeoForge status uncertain ("it is coming"). "No mod should duplicate another mod's core purpose" rule.
+- [x] Timeless and Classics Zero (TACZ) + all addons — redundant with Create: Gunsmithing (Wave 1). Both are firearm systems with crafting, attachments, ammo. TACZ requires unofficial NeoForge port by MUKSC (631K DL, Jul 2026) — "DO NOT REPORT BUGS TO ORIGINAL DEVS." Pack Upgrader needed for gun packs. 5+ moving parts from different maintainers. Create: Gunsmithing is native Create-integrated, steampunk-aesthetic, no port risk.
+- [x] TACZ addons (Pack Upgrader, Create Armorer, TTI Gunpack, Cyber Armorer) — all depend on rejected parent mod. Gun packs are .zip data packs, not standalone mods.
