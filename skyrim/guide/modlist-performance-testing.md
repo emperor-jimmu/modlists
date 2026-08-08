@@ -106,7 +106,7 @@ Run in this sequence when generating outputs for the first time. Independent out
 9. **DynDOLOD** — last major output (includes Occlusion generation)
 10. **SSE Display Tweaks + BethINI Pie** — final review after graphics baseline is set
 
-After generation, verify: `DynDOLOD.esm` at end of ESM block, `DynDOLOD.esp` near end, `Occlusion.esp` after, `Synthesis.esp`/**Bashed Patch** per tool guidance.
+After generation, verify: `DynDOLOD.esm` at end of the ESM block, `DynDOLOD.esp` near the end, `Occlusion.esp` after it, and `Synthesis.esp` plus the **Bashed Patch** per tool guidance.
 
 ### Change Tracking
 Keep `changelog.txt` or `build-notes.md` in `Output` separator recording: date/scope of each re-run, settings differing from baseline, branch choices changed, manual INI tweaks, reference-save used.

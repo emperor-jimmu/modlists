@@ -63,9 +63,9 @@ function Convert-GfmAlerts {
                 $i++
             }
             $body = ($bodyLines | Where-Object { $_ -ne $null }) -join "`n"
-            $result.AppendLine("#$type[")
-            $result.AppendLine($body)
-            $result.AppendLine("]")
+            $null = $result.AppendLine("#$type[")
+            $null = $result.AppendLine($body)
+            $null = $result.AppendLine("]")
         } else {
             $result.AppendLine($line) | Out-Null
             $i++
@@ -97,16 +97,16 @@ function Convert-Table {
       $colCount = [Math]::Max($header.Count, 1)
       $result.AppendLine("#table(") | Out-Null
       $result.AppendLine("  columns: $colCount,") | Out-Null
-      $result.AppendLine('  inset: (x: 8pt, y: 5pt),') | Out-Null
+      $result.AppendLine('  inset: (x: 8pt, y: 4.5pt),') | Out-Null
       if ($header.Count -gt 0) {
-        $result.AppendLine('  fill: (x, y) => if y == 0 { rgb("#1E293B") } else if calc.rem(y - 1, 2) == 0 { rgb("#F8FAFC") } else { none },') | Out-Null
-        $result.AppendLine('  stroke: 0.5pt + rgb("#CBD5E1"),') | Out-Null
+        $result.AppendLine('  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },') | Out-Null
+        $result.AppendLine('  stroke: 0.5pt + clr-line,') | Out-Null
       } else {
-        $result.AppendLine('  fill: (x, y) => if calc.rem(y, 2) == 0 { rgb("#F8FAFC") } else { none },') | Out-Null
-        $result.AppendLine('  stroke: 0.5pt + rgb("#CBD5E1"),') | Out-Null
+        $result.AppendLine('  fill: (x, y) => if calc.rem(y, 2) == 0 { clr-stripe } else { none },') | Out-Null
+        $result.AppendLine('  stroke: 0.5pt + clr-line,') | Out-Null
       }
-      foreach ($cell in $header) { $result.AppendLine("  [*#text(fill: white)[$($cell)]*],") | Out-Null }
-      if ($rows.Count -gt 0) { $result.AppendLine('  table.hline(stroke: 0.75pt + rgb("#94A3B8")),') | Out-Null }
+      foreach ($cell in $header) { $result.AppendLine('  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[' + $cell + ']*],') | Out-Null }
+      if ($rows.Count -gt 0) { $result.AppendLine('  table.hline(stroke: 0.8pt + clr-gold),') | Out-Null }
       foreach ($row in $rows) { foreach ($cell in $row) { $result.AppendLine("  [$($cell)],") | Out-Null } }
       $result.AppendLine(")") | Out-Null
         } else {
@@ -150,7 +150,7 @@ function Convert-MermaidDiagrams {
                     }
                 }
             }
-            $null = $output.AppendLine("#image(""./diagram-$num.png"", width: 70%)")
+            $null = $output.AppendLine("#block(stroke: 0.5pt + clr-line, radius: 4pt, inset: 8pt, width: 70%, align(center, image(""./diagram-$num.png"", width: 100%)))")
             $Counter.Value++
             $i++ # skip ```
         } else {
@@ -198,11 +198,20 @@ function Convert-MarkdownToTypst {
         param($m)
         $url = $m.Groups[2].Value
         if ($url -match '^https?://') { return "#link(`"$url`")[$($m.Groups[1].Value -replace '^`(.+)`$', '$1')]" }
-        if ($url -match '^#') { return $m.Value }
-        $bare = ($url -replace '\.md$', '') -replace '^.*/', ''
+        if ($url -match '^#') {
+            # Same-file anchor: resolve to the generated label, else drop the dead link
+            $anchorName = ($url.Substring(1) -replace '-{2,}', '-').ToLower()
+            $h = $headingOrder | Where-Object { $_.Anchor -eq $anchorName -or $_.Anchor.EndsWith("-$anchorName") } | Select-Object -First 1
+            if ($h) { return "@$($h.Anchor)" }
+            return $m.Groups[1].Value
+        }
+        # Split off any #anchor suffix (file.md#anchor -> resolve the file, drop the anchor)
+        $urlFile = $url
+        if ($url -match '^(.*)#(.+)$') { $urlFile = $matches[1] }
+        $bare = ($urlFile -replace '\.md$', '') -replace '^.*/', ''
         $anchor = $AnchorMap[$bare]
-        if (-not $anchor) { $anchor = $AnchorMap[$url -replace '\.md$', ''] }
-        if (-not $anchor) { $anchor = $AnchorMap[$url] }
+        if (-not $anchor) { $anchor = $AnchorMap[$urlFile -replace '\.md$', ''] }
+        if (-not $anchor) { $anchor = $AnchorMap[$urlFile] }
         if ($anchor) { return "@$($anchor)" }
         return $m.Value
     })
@@ -213,6 +222,8 @@ function Convert-MarkdownToTypst {
     $text = Convert-Table -Text $text
     # Escape bare < characters not part of labels
     $text = $text -replace '<(?![a-zA-Z][a-zA-Z0-9-]*>)', '\<'
+    # Convert MO2 separator color chips (-#hex Name-) into swatch boxes
+    $text = [regex]::Replace($text, '(?m)^-\\#([0-9a-fA-F]{6}) (.*?)- *\r?$', '- #box(fill: rgb("#$1"), width: 9pt, height: 9pt, radius: 1.5pt) $2')
     # Unescape underscores inside URL strings (Typst strings don't treat \_ as escape)
     $text = [regex]::Replace($text, '#(link|image)\("([^"]+)"\)', {
         param($m)
@@ -226,6 +237,7 @@ function Convert-MarkdownToTypst {
 $files = @(
   "guide/modlist.md",
   "guide/install.md",
+  "guide/skypatcher.md",
   "guide/modlist-foundations.md",
   "guide/modlist-graphics.md",
   "guide/modlist-graphics-pgpatcher.md",
@@ -282,7 +294,7 @@ $fileAnchorMap = @{}
 foreach ($file in $files) {
   $path = Join-Path $root $file
   if (-not (Test-Path $path)) { continue }
-  $rawContent = (Get-Content $path -Raw)
+  $rawContent = (Get-Content $path -Raw -Encoding UTF8)
   if ($rawContent -match '(?m)^# (.+)$') {
     $h1Text = $matches[1].Trim()
     $rawAnchor = ($h1Text -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
@@ -305,7 +317,7 @@ foreach ($file in $files) {
   $path = Join-Path $root $file
   if (-not (Test-Path $path)) { Write-Warning "Skipping $file -- not found"; continue }
   Write-Host "Processing $file..."
-  $content = (Get-Content $path -Raw).Trim()
+  $content = (Get-Content $path -Raw -Encoding UTF8).Trim()
   $content = Convert-MermaidDiagrams -Text $content -OutputDir $outputDir -Counter ([ref]$diagramCounter)
   $fileH1Anchor = if ($content -match '(?m)^# (.+)$') {
     ($matches[1].Trim() -replace '\s*&\s*', '--' -replace '[^\w\s-]', '' -replace '\s+', '-' -replace '-{3,}', '-' -replace '^-|-$', '').ToLower()
@@ -328,31 +340,36 @@ $a.Invoke("")
 $a.Invoke("#let ew-version = `"$version`"")
 $a.Invoke("#let ew-date = `"$date`"")
 $a.Invoke("")
-$a.Invoke("// -- Color Palette --")
-$a.Invoke("#let clr-primary   = rgb(`"#0F172A`")")
-$a.Invoke("#let clr-heading   = rgb(`"#1E293B`")")
-$a.Invoke("#let clr-accent    = rgb(`"#3B82F6`")")
-$a.Invoke("#let clr-accent-warm = rgb(`"#F59E0B`")")
-$a.Invoke("#let clr-muted     = rgb(`"#64748B`")")
-$a.Invoke("#let clr-border    = rgb(`"#CBD5E1`")")
-$a.Invoke("#let clr-bg-code   = luma(248)")
-$a.Invoke("#let clr-bg-stripe = rgb(`"#F8FAFC`")")
-$a.Invoke("#let clr-bg-alt    = rgb(`"#F1F5F9`")")
+$a.Invoke("// -- Color Palette (grim-dark Elder Scrolls) --")
+$a.Invoke('#let clr-night      = rgb("#0B0F17")')
+$a.Invoke('#let clr-night-1    = rgb("#141B29")')
+$a.Invoke('#let clr-night-2    = rgb("#1D2739")')
+$a.Invoke('#let clr-ink        = rgb("#1A2133")')
+$a.Invoke('#let clr-ash        = rgb("#6E7686")')
+$a.Invoke('#let clr-ice        = rgb("#5D8FC0")')
+$a.Invoke('#let clr-gold       = rgb("#D8A94E")')
+$a.Invoke('#let clr-frost      = rgb("#4F8F77")')
+$a.Invoke('#let clr-blood      = rgb("#C2493B")')
+$a.Invoke('#let clr-soul       = rgb("#8A7BB8")')
+$a.Invoke('#let clr-stripe     = rgb("#EEF1F7")')
+$a.Invoke('#let clr-line       = rgb("#C9D2E0")')
+$a.Invoke('#let clr-ice-bright = rgb("#8FB8E0")')
 $a.Invoke("")
 $a.Invoke("// -- Fonts --")
-$a.Invoke('#set text(font: ("Inter", "Arial"), size: 10.5pt, hyphenate: false)')
-$a.Invoke('#set par(leading: 0.65em, justify: true)')
-$a.Invoke('#show link: set text(font: ("Inter", "Arial"), size: 10.5pt, fill: clr-accent)')
-$a.Invoke('#show ref: set text(font: ("Inter", "Arial"), size: 10.5pt, fill: clr-accent)')
-$a.Invoke('#show raw.where(block: true): set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.82em)')
-$a.Invoke('#show raw.where(block: true): set block(fill: clr-bg-code, radius: 4pt, inset: (x: 12pt, y: 10pt))')
+$a.Invoke('#let display-font = ("Palatino Linotype", "Georgia")')
+$a.Invoke('#set text(font: ("Inter", "Arial"), size: 10.5pt, lang: "en", hyphenate: true)')
+$a.Invoke('#set par(leading: 0.62em, justify: false)')
+$a.Invoke('#show link: set text(font: ("Inter", "Arial"), size: 10.5pt, fill: clr-ice)')
+$a.Invoke('#show ref: set text(font: ("Inter", "Arial"), size: 10.5pt, fill: clr-ice)')
+$a.Invoke('#show raw.where(block: true): set text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.82em, fill: rgb("#C6D0E2"))')
+$a.Invoke('#show raw.where(block: true): set block(fill: clr-night-1, radius: 4pt, inset: (x: 12pt, y: 10pt), width: 100%, stroke: 0.5pt + rgb("#2A3550"))')
 $a.Invoke('#show raw.where(block: false): it => {')
 $a.Invoke('  box(')
-$a.Invoke('    fill: luma(234),')
+$a.Invoke('    fill: rgb("#E7ECF4"),')
 $a.Invoke('    radius: 2.5pt,')
 $a.Invoke('    inset: (x: 3.5pt, y: 1.5pt),')
 $a.Invoke('    outset: (y: 0.5pt),')
-$a.Invoke('    text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.87em, fill: rgb("#334155"), it)')
+$a.Invoke('    text(font: ("JetBrains Mono", "Consolas", "Courier New"), size: 0.87em, fill: rgb("#33415C"), it)')
 $a.Invoke('  )')
 $a.Invoke('}')
 $a.Invoke("")
@@ -361,72 +378,87 @@ $a.Invoke('#set page(')
 $a.Invoke('  margin: (left: 2cm, right: 1.8cm, top: 2cm, bottom: 2cm),')
 $a.Invoke('  header-ascent: 30%,')
 $a.Invoke('  header: context [')
-$a.Invoke('    #set text(size: 7.5pt, fill: clr-muted)')
-$a.Invoke('    #align(right, [')
-$a.Invoke(    '      #if counter(page).get().first() > 1 [')
-$a.Invoke('        Elder Wilds  —  Skyrim AE 1.6.1170')
-$a.Invoke('      ]')
-$a.Invoke('    ])')
+$a.Invoke('    #set text(size: 8pt, fill: clr-ash)')
+$a.Invoke('    #if counter(page).get().first() > 1 [')
+$a.Invoke('      #align(right)[#text(weight: "medium", tracking: 1pt)[ELDER WILDS] · SKYRIM AE 1.6.1170]')
+$a.Invoke('      #v(3pt)')
+$a.Invoke('      #line(length: 100%, stroke: 0.4pt + clr-line)')
+$a.Invoke('    ]')
 $a.Invoke('  ],')
 $a.Invoke('  footer: context [')
-$a.Invoke('    #set text(size: 8pt, fill: clr-muted)')
-$a.Invoke('    #align(center)[')
-$a.Invoke('      #counter(page).display()')
+$a.Invoke('    #set text(size: 8pt, fill: clr-ash)')
+$a.Invoke('    #if counter(page).get().first() > 1 [')
+$a.Invoke('      #align(center)[Elder Wilds v#ew-version · Skyrim AE 1.6.1170 · Page #counter(page).display()]')
 $a.Invoke('    ]')
 $a.Invoke('  ],')
 $a.Invoke(')')
 $a.Invoke("")
 $a.Invoke("// -- Heading Styling --")
 $a.Invoke('#set heading(numbering: "1.")')
-$a.Invoke('#show heading: it => {')
-$a.Invoke("  set text(")
-$a.Invoke('    weight: if it.level <= 2 { "bold" } else { "semibold" },')
-$a.Invoke('    size: if it.level == 1 { 22pt } else if it.level == 2 { 14pt } else if it.level == 3 { 11.5pt } else { 10.5pt },')
-$a.Invoke('    fill: if it.level == 1 { clr-primary } else if it.level == 2 { clr-heading } else { rgb("#475569") },')
-$a.Invoke("  )")
-$a.Invoke('  if it.level == 1 {')
-$a.Invoke("    pagebreak()")
-$a.Invoke('    v(0.4cm)')
-$a.Invoke('    line(length: 100%, stroke: 1.5pt + clr-accent)')
-$a.Invoke('    v(0.3cm)')
-$a.Invoke("    it")
-$a.Invoke('    v(0.3cm)')
-$a.Invoke("  } else if it.level == 2 {")
-$a.Invoke('    v(0.7cm)')
-$a.Invoke("    it")
-$a.Invoke('    v(0.15cm)')
-$a.Invoke("  } else {")
-$a.Invoke('    v(0.35cm)')
-$a.Invoke("    it")
-$a.Invoke('    v(0.1cm)')
-$a.Invoke("  }")
-$a.Invoke("}")
+$a.Invoke('#show heading.where(level: 1): it => {')
+$a.Invoke('  pagebreak()')
+$a.Invoke('  block(')
+$a.Invoke('    width: 100%,')
+$a.Invoke('    fill: clr-night-1,')
+$a.Invoke('    radius: 3pt,')
+$a.Invoke('    inset: (x: 16pt, y: 11pt),')
+$a.Invoke('    stroke: (left: 4pt + clr-gold),')
+$a.Invoke('    text(size: 22pt, weight: "bold", fill: clr-gold, font: display-font, tracking: 0.5pt, it),')
+$a.Invoke('  )')
+$a.Invoke('  v(0.8em)')
+$a.Invoke('}')
+$a.Invoke('#show heading.where(level: 2): it => {')
+$a.Invoke('  v(0.85em)')
+$a.Invoke('  block(')
+$a.Invoke('    stroke: (left: 3pt + clr-gold),')
+$a.Invoke('    inset: (left: 10pt, top: 1pt, bottom: 1pt),')
+$a.Invoke('    text(size: 14.5pt, weight: "semibold", fill: clr-ink, font: display-font, it),')
+$a.Invoke('  )')
+$a.Invoke('  v(0.35em)')
+$a.Invoke('}')
+$a.Invoke('#show heading.where(level: 3): it => {')
+$a.Invoke('  v(0.7em)')
+$a.Invoke('  text(size: 11.5pt, weight: "semibold", fill: clr-ink, it)')
+$a.Invoke('  v(0.2em)')
+$a.Invoke('}')
+$a.Invoke('#show heading.where(level: 4): it => {')
+$a.Invoke('  v(0.55em)')
+$a.Invoke('  text(size: 10.5pt, weight: "semibold", style: "italic", fill: clr-ash, it)')
+$a.Invoke('  v(0.15em)')
+$a.Invoke('}')
+$a.Invoke('#show heading.where(level: 5): it => {')
+$a.Invoke('  v(0.55em)')
+$a.Invoke('  text(size: 10.5pt, weight: "semibold", style: "italic", fill: clr-ash, it)')
+$a.Invoke('  v(0.15em)')
+$a.Invoke('}')
 $a.Invoke("")
 $a.Invoke("// -- Callout Boxes (GFM Alerts) --")
-$a.Invoke('#let callout-base(fill, stroke-clr, icon, body) = block(')
-$a.Invoke('  fill: fill,')
-$a.Invoke('  stroke: (left: 4pt + stroke-clr, top: 0.5pt + stroke-clr, bottom: 0.5pt + stroke-clr, right: 0.5pt + stroke-clr),')
-$a.Invoke('  inset: (left: 14pt, right: 10pt, top: 9pt, bottom: 9pt),')
-$a.Invoke('  radius: 5pt,')
+$a.Invoke('#let callout-base(border, label, body) = block(')
+$a.Invoke('  fill: clr-night-2,')
+$a.Invoke('  stroke: (left: 4pt + border),')
+$a.Invoke('  inset: (left: 14pt, right: 12pt, top: 9pt, bottom: 9pt),')
+$a.Invoke('  radius: 4pt,')
 $a.Invoke('  width: 100%,')
+$a.Invoke('  breakable: true,')
 $a.Invoke('  [')
-$a.Invoke('    #text(size: 0.9em, weight: "bold", fill: stroke-clr)[#icon]')
-$a.Invoke('    #v(5pt)')
-$a.Invoke('    #set par(leading: 0.55em)')
+$a.Invoke('    #set par(leading: 0.58em);')
+$a.Invoke('    #set text(fill: rgb("#C6D0E2"));')
+$a.Invoke('    #show link: set text(fill: clr-ice-bright)')
+$a.Invoke('    #text(size: 8.5pt, weight: "bold", fill: border, tracking: 1pt)[#label — ]')
 $a.Invoke('    #body')
 $a.Invoke('  ],')
 $a.Invoke(')')
-$a.Invoke('#let note(body)     = callout-base(rgb("#EFF6FF"), rgb("#3B82F6"), [NOTE], body)')
-$a.Invoke('#let tip(body)      = callout-base(rgb("#ECFDF5"), rgb("#10B981"), [TIP], body)')
-$a.Invoke('#let warning(body)  = callout-base(rgb("#FFFBEB"), rgb("#F59E0B"), [WARNING], body)')
-$a.Invoke('#let caution(body)  = callout-base(rgb("#FEF2F2"), rgb("#EF4444"), [CAUTION], body)')
-$a.Invoke('#let important(body)= callout-base(rgb("#F5F3FF"), rgb("#8B5CF6"), [IMPORTANT], body)')
+$a.Invoke('#let note(body)      = callout-base(clr-ice,   "NOTE", body)')
+$a.Invoke('#let tip(body)       = callout-base(clr-frost, "TIP", body)')
+$a.Invoke('#let warning(body)   = callout-base(clr-gold,  "WARNING", body)')
+$a.Invoke('#let caution(body)   = callout-base(clr-blood, "CAUTION", body)')
+$a.Invoke('#let important(body) = callout-base(clr-soul,  "IMPORTANT", body)')
 $a.Invoke("")
 $a.Invoke("// -- Typographic Enhancements --")
-$a.Invoke('#show line: set line(stroke: 0.75pt + clr-border)')
+$a.Invoke('#show line: set line(stroke: 0.75pt + clr-line)')
 $a.Invoke('#show quote: block.with(')
-$a.Invoke('  fill: clr-bg-alt,')
-$a.Invoke('  stroke: (left: 3pt + clr-accent),')
+$a.Invoke('  fill: rgb("#F4F6FA"),')
+$a.Invoke('  stroke: (left: 3pt + clr-gold),')
 $a.Invoke('  inset: (left: 12pt, right: 8pt, top: 6pt, bottom: 6pt),')
 $a.Invoke('  radius: 3pt,')
 $a.Invoke(')')
@@ -437,36 +469,57 @@ $a.Invoke("")
 
 # -- Cover Page --
 if ($relCover) {
-  $a.Invoke('#align(center + horizon, image("' + $relCover + '", width: 85%))')
-  $a.Invoke('#v(2cm)')
+  $a.Invoke('#set page(fill: clr-night)')
+  $a.Invoke('#align(center + horizon)[')
+  $a.Invoke('  #block(height: 100%)[')
+  $a.Invoke('    #set align(center + horizon)')
+  $a.Invoke('    #v(1fr)')
+  $a.Invoke('    #image("' + $relCover + '", width: 56%)')
+  $a.Invoke('    #v(1.1cm)')
+  $a.Invoke('    #text(size: 38pt, weight: "bold", font: display-font, fill: clr-gold, tracking: 2pt)[Elder Wilds]')
+  $a.Invoke('    #v(8pt)')
+  $a.Invoke('    #text(size: 13.5pt, style: "italic", fill: rgb("#8C94A8"))[Skyrim AE 1.6.1170 — Modlist Design Guide]')
+  $a.Invoke('    #v(16pt)')
+  $a.Invoke('    #line(length: 6cm, stroke: 1.2pt + clr-gold)')
+  $a.Invoke('    #v(18pt)')
+  $a.Invoke('    #set text(size: 9pt, fill: rgb("#9AA3B8"))')
+  $a.Invoke('    #grid(')
+  $a.Invoke('      columns: 3,')
+  $a.Invoke('      column-gutter: 18pt,')
+  $a.Invoke('      row-gutter: 8pt,')
+  $a.Invoke('      [Modern UI \& Graphics], [Big, Dark, Awe-Inspiring World], [Lots of New Content],')
+  $a.Invoke('      [Modern Mechanics], [Third-Person Gamepad Parity], [Living the World],')
+  $a.Invoke('    )')
+  $a.Invoke('    #v(1fr)')
+  $a.Invoke('    #block(')
+  $a.Invoke('      fill: clr-night-1,')
+  $a.Invoke('      stroke: 0.5pt + clr-gold,')
+  $a.Invoke('      radius: 4pt,')
+  $a.Invoke('      inset: (x: 14pt, y: 6pt),')
+  $a.Invoke('      [#text(size: 9.5pt, fill: clr-ice-bright)[Version #ew-version · #ew-date]],')
+  $a.Invoke('    )')
+  $a.Invoke('  ]')
+  $a.Invoke(']')
+  $a.Invoke('#pagebreak()')
+  $a.Invoke('#set page(fill: white)')
 }
-$a.Invoke('#align(center, text(size: 32pt, weight: "bold", fill: clr-primary, "Elder Wilds"))')
-$a.Invoke('#align(center)[#v(0.4cm)#text(size: 13pt, fill: clr-muted, "Skyrim AE 1.6.1170 Modlist Design Guide")]')
-$a.Invoke('#v(0.6cm)')
-$a.Invoke('#align(center)[#line(length: 30%, stroke: 1pt + clr-border)]')
-$a.Invoke('#v(0.6cm)')
-$a.Invoke('// Pillars')
-$a.Invoke('#align(center)[#set text(size: 8.5pt, fill: clr-muted)')
-$a.Invoke("  #grid(")
-$a.Invoke("    columns: 3,")
-$a.Invoke("    column-gutter: 14pt,")
-$a.Invoke("    row-gutter: 6pt,")
-$a.Invoke('    [Modern UI \& Graphics], [Big, Dark, Awe-Inspiring World], [Lots of New Content],')
-$a.Invoke('    [Modern Mechanics], [Third-Person Gamepad Parity], [Living the World],')
-$a.Invoke("  )")
-$a.Invoke(']')
-$a.Invoke('#v(0.8cm)')
-$a.Invoke('#align(center, text(size: 10pt, fill: clr-muted, "Version " + ew-version + "  ·  " + ew-date))')
-$a.Invoke("#outline(depth: 2, indent: 1.2em)")
+$a.Invoke("")
+$a.Invoke("// -- Table of Contents --")
+$a.Invoke('#show outline.entry.where(level: 1): it => {')
+$a.Invoke('  set text(size: 11pt, weight: "bold", fill: clr-ink)')
+$a.Invoke('  it')
+$a.Invoke('}')
+$a.Invoke('#show outline.entry.where(level: 2): it => {')
+$a.Invoke('  set text(size: 9.5pt, fill: clr-ash)')
+$a.Invoke('  it')
+$a.Invoke('}')
+$a.Invoke('#outline(depth: 2, indent: 1.2em)')
 $a.Invoke("")
 $a.Invoke("// -- Content --")
 $a.Invoke("")
 foreach ($section in $allSections) { $a.Invoke($section) }
 
 $typContent = $typLines -join "`r`n"
-
-# -- Remove # from anchor references (typst parses #ref-with-hyphens as variable minus subtraction) --
-$typContent = $typContent -replace '#([a-zA-Z][a-zA-Z0-9-]*-(?:[a-zA-Z0-9-]+))', '$1'
 
 # -- Write .typ file --
 $outputDir = Join-Path $root "rendered"
@@ -479,14 +532,17 @@ Write-Host "Generated $typFile ($((Get-Item $typFile).Length / 1KB -as [int]) KB
 Write-Host "Compiling PDF..."
 $pdfFile = Join-Path $outputDir "elder-wilds.pdf"
 $stderr = & typst compile --root (Join-Path $root ".") --font-path $fontDir $typFile $pdfFile 2>&1
-$pdfFileObj = Get-Item $pdfFile -ErrorAction SilentlyContinue
-if ($pdfFileObj -and $pdfFileObj.Length -gt 0) {
-  Write-Host "PDF generated -> $pdfFile ($($pdfFileObj.Length / 1KB -as [int]) KB)" -ForegroundColor Green
-} else {
+if ($LASTEXITCODE -ne 0) {
   Write-Host "Typst compilation failed:" -ForegroundColor Red
   $stderr | ForEach-Object { Write-Host $_ -ForegroundColor Red }
   exit 1
 }
+$pdfFileObj = Get-Item $pdfFile -ErrorAction SilentlyContinue
+if (-not ($pdfFileObj -and $pdfFileObj.Length -gt 0)) {
+  Write-Host "PDF not produced" -ForegroundColor Red
+  exit 1
+}
+Write-Host "PDF generated -> $pdfFile ($($pdfFileObj.Length / 1KB -as [int]) KB)" -ForegroundColor Green
 
 # -- Cleanup --
 Remove-Item (Join-Path $outputDir "elder-wilds.md") -ErrorAction SilentlyContinue
