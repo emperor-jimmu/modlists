@@ -1358,8 +1358,8 @@ The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches,
   [Skip],
   [Not in modlist.],
   [Sunder and Wraithguard],
-  [*Select*],
-  [CC content is AE baseline (`ccbgssse008-wraithguard.esl` active); no vault fixer present. Both FOMOD conditions met → Recommended. Installs `SightlessNavFix.esp`.],
+  [Skip],
+  [`ccbgssse008-wraithguard.esl` is paid AE Upgrade content, not in this load order.],
 )
 
 *Step 4 — Optional add-ons* (`SelectAny`; always shown):
@@ -1406,9 +1406,9 @@ The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches,
   [Prevents non-standard followers from being stuck exiting Broken Oar Grotto. Installs `defaultNoEnemiesFollowDoorScript.pex`.],
 )
 
-*Resulting plugins:* `Navigator-NavFixes.esl`, `SightlessNavFix.esp`, `VigilantNavFix.esp`, `AbandonedPrisonNavFix.esp`, `QuicksilverMineNavFix.esp`.
+*Resulting plugins:* `Navigator-NavFixes.esl`, `VigilantNavFix.esp`, `AbandonedPrisonNavFix.esp`, `QuicksilverMineNavFix.esp`.
 
-*Load order:* `Navigator-NavFixes.esl` as high as possible (light master). `SightlessNavFix.esp` after Navigator. `VigilantNavFix.esp` standalone, anywhere. The patch ESPs are all ESL-flagged — no ESL compaction needed. The separate *Navigator - Navmesh Fixes - Patch Collection* (111379) FOMOD is installed later (→ @world-content-world-content).
+*Load order:* `Navigator-NavFixes.esl` as high as possible (light master). `VigilantNavFix.esp` standalone, anywhere. The patch ESPs are all ESL-flagged — no ESL compaction needed. The separate *Navigator - Navmesh Fixes - Patch Collection* (111379) FOMOD is installed later (→ @world-content-world-content).
 
 
 

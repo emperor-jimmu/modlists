@@ -372,7 +372,7 @@ The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches,
 |-------------------------|------------|---------------------------------------------------------------------------------------------|
 | Interesting NPCs        | Skip        | 3DNPC is listed as an Alternative in → [NPCs](modlist-npcs.md), not adopted.                |
 | Skyrim Sewers           | Skip        | Not in modlist.                                                                             |
-| Sunder and Wraithguard  | **Select**  | CC content is AE baseline (`ccbgssse008-wraithguard.esl` active); no vault fixer present. Both FOMOD conditions met → Recommended. Installs `SightlessNavFix.esp`. |
+| Sunder and Wraithguard  | Skip        | `ccbgssse008-wraithguard.esl` is paid AE Upgrade content, not in this load order.           |
 
 **Step 4 — Optional add-ons** (`SelectAny`; always shown):
 
@@ -390,6 +390,6 @@ The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches,
 | Quicksilver Mine                | **Select**  | No Vigil Enforcer Armor Set CC conflict. Installs `QuicksilverMineNavFix.esp`.       |
 | Broken Oar script tweak         | **Select**  | Prevents non-standard followers from being stuck exiting Broken Oar Grotto. Installs `defaultNoEnemiesFollowDoorScript.pex`. |
 
-**Resulting plugins:** `Navigator-NavFixes.esl`, `SightlessNavFix.esp`, `VigilantNavFix.esp`, `AbandonedPrisonNavFix.esp`, `QuicksilverMineNavFix.esp`.
+**Resulting plugins:** `Navigator-NavFixes.esl`, `VigilantNavFix.esp`, `AbandonedPrisonNavFix.esp`, `QuicksilverMineNavFix.esp`.
 
-**Load order:** `Navigator-NavFixes.esl` as high as possible (light master). `SightlessNavFix.esp` after Navigator. `VigilantNavFix.esp` standalone, anywhere. The patch ESPs are all ESL-flagged — no ESL compaction needed. The separate **Navigator - Navmesh Fixes - Patch Collection** (111379) FOMOD is installed later (→ [World Content](modlist-world-content.md)).
+**Load order:** `Navigator-NavFixes.esl` as high as possible (light master). `VigilantNavFix.esp` standalone, anywhere. The patch ESPs are all ESL-flagged — no ESL compaction needed. The separate **Navigator - Navmesh Fixes - Patch Collection** (111379) FOMOD is installed later (→ [World Content](modlist-world-content.md)).
