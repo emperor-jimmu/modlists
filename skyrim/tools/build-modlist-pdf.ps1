@@ -33,39 +33,6 @@ function Ensure-Fonts {
     return $fontDir
 }
 
-function Resize-CoverImage {
-    <#
-    .SYNOPSIS
-        Resizes the cover image to 1200px wide, maintaining aspect ratio.
-    #>
-    $source = Join-Path (Join-Path $root "assets") "Gemini_Generated_Image_ivqvcgivqvcgivqv.png"
-    $target = Join-Path (Join-Path $root "assets") "cover-resized.png"
-
-    if (-not (Test-Path $source)) { return $null }
-    if (Test-Path $target) { return $target }
-
-    Add-Type -AssemblyName System.Drawing
-    $img = $null; $resized = $null; $graphics = $null
-    try {
-        $img = [System.Drawing.Image]::FromFile($source)
-        $newWidth = 1200
-        $ratio = $newWidth / $img.Width
-        $newHeight = [int]($img.Height * $ratio)
-
-        $resized = New-Object System.Drawing.Bitmap($newWidth, $newHeight)
-        $graphics = [System.Drawing.Graphics]::FromImage($resized)
-        $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
-        $graphics.DrawImage($img, 0, 0, $newWidth, $newHeight)
-
-        $resized.Save($target, [System.Drawing.Imaging.ImageFormat]::Png)
-        return $target
-    } finally {
-        if ($graphics) { $graphics.Dispose() }
-        if ($resized) { $resized.Dispose() }
-        if ($img) { $img.Dispose() }
-    }
-}
-
 function Test-TypstInstalled {
     <#
     .SYNOPSIS
@@ -304,7 +271,6 @@ if (-not (Test-TypstInstalled)) {
   exit 1
 }
 $fontDir = Ensure-Fonts
-$coverPath = Resize-CoverImage
 
 # -- Read version --
 $versionPath = Join-Path $root "VERSION"
@@ -353,7 +319,7 @@ foreach ($file in $files) {
 
 # -- Build .typ file --
 $relFontDir = "../assets/fonts"
-$relCover = if ($coverPath) { "../assets/cover-resized.png" } else { $null }
+$relCover = "../assets/logo.jpg"
 $typLines = [System.Collections.Generic.List[string]]::new()
 $a = { param($s) $typLines.Add($s) }.GetNewClosure()
 
@@ -471,7 +437,7 @@ $a.Invoke("")
 
 # -- Cover Page --
 if ($relCover) {
-  $a.Invoke('#align(center + horizon, image("' + $relCover + '", width: 55%))')
+  $a.Invoke('#align(center + horizon, image("' + $relCover + '", width: 85%))')
   $a.Invoke('#v(2cm)')
 }
 $a.Invoke('#align(center, text(size: 32pt, weight: "bold", fill: clr-primary, "Elder Wilds"))')
@@ -491,11 +457,6 @@ $a.Invoke("  )")
 $a.Invoke(']')
 $a.Invoke('#v(0.8cm)')
 $a.Invoke('#align(center, text(size: 10pt, fill: clr-muted, "Version " + ew-version + "  ·  " + ew-date))')
-$a.Invoke("")
-$a.Invoke("// -- Table of Contents --")
-$a.Invoke("#pagebreak()")
-$a.Invoke('#align(center, text(size: 18pt, weight: "bold", fill: clr-heading, "Table of Contents"))')
-$a.Invoke('#v(0.5cm)')
 $a.Invoke("#outline(depth: 2, indent: 1.2em)")
 $a.Invoke("")
 $a.Invoke("// -- Content --")
