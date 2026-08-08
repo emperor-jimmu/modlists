@@ -432,3 +432,8 @@ Reviewed the 13 submitted mods from `TODO.md` against Elder Wilds pillars (redun
 ### TODO cleanup
 
 All 13 lines cleared from `TODO.md`. (3 already-in-modlist — incl. the Northerner audio link fix; 4 adopted; 1 adopted-minor pending the XPMSSE plugin check; 2 tentative; 1 rejected; 2 marginal/not adopted.)
+
+## Crash triage — save-load INT_DIVIDE_BY_ZERO (2026-08-08)
+
+- **Save-load crash on the foundations test-skeleton (15 plugins, MO2).** `EXCEPTION_INT_DIVIDE_BY_ZERO` at `SkyrimSE.exe+0x616FBB` (`div [RVA 0x2012140]`), full probable stack inside `SkyrimSE.exe`, `BGSSaveLoadManager` + `MainMenu` on the stack, fading from the Load menu into the 2026-06-21 save (`…Prisoner_Tamriel_000004_20260621210250_1_1`). **TENTATIVE — no mod added/removed yet.** Crash is vanilla arithmetic fed a zeroed static global at load-start; not a plugin-on-the-stack crash.
+- **Ranked causes:** (1) save ↔ profile drift (save 2026-06-21 vs churned skeleton), (2) SSSO3 + `iAutoSaveCount=0` pairing (both repo baseline; easiest test), (3) foundation SKSE load-start interaction (SkyPatcher refresh / EngineFixes / ScrambledBugs), (4) install/hypervisor integrity. Full evidence, isolation ladder (New Game check, MO2 Saves-tab Expected-vs-Installed, temporary `iAutoSaveCount=3`, SSSO3-disable copy profile, ReSaver), acceptance criteria, and user-to-provide list: `reports/skyrim-crash-triage-2026-08-08-save-load-div0.md`. Update this entry with the confirmed verdict once the ladder lands.
