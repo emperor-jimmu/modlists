@@ -1259,6 +1259,8 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
   [Merchant gold cap overflow.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77409")[Mum's the Word NG]],
   [Worthless stolen-item tagging.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56452")[Unique Region Names SE]],
+  [Data provider: renames exterior worldspace locations to descriptive region names. ESL-flagged. Pairs with Regional Save Names below.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49698")[Regional Save Names]],
   [Save labeling for testing hygiene.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18967")[Better Jumping SE]],

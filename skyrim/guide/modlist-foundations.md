@@ -326,6 +326,7 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 | [Navigator - Navmesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/52641)        | Follower pathing in complex worldspaces. See FOMOD options below.   |
 | [Barter Limit Fix](https://www.nexusmods.com/skyrimspecialedition/mods/77173)                 | Merchant gold cap overflow.                                         |
 | [Mum's the Word NG](https://www.nexusmods.com/skyrimspecialedition/mods/77409)                | Worthless stolen-item tagging.                                      |
+| [Unique Region Names SE](https://www.nexusmods.com/skyrimspecialedition/mods/56452)           | Data provider: renames exterior worldspace locations to descriptive region names. ESL-flagged. Pairs with Regional Save Names below. |
 | [Regional Save Names](https://www.nexusmods.com/skyrimspecialedition/mods/49698)              | Save labeling for testing hygiene.                                  |
 | [Better Jumping SE](https://www.nexusmods.com/skyrimspecialedition/mods/18967)                | Consistent jumping control.                                         |
 | [LeveledList Crash Fix](https://www.nexusmods.com/skyrimspecialedition/mods/129136)           | Leveled-list crash protection.                                      |
