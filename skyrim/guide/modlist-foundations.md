@@ -41,6 +41,14 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 | [USMP - Patch Emporium](https://www.nexusmods.com/skyrimspecialedition/mods/50813) | Centralized patch hub for USMP — third-party compatibility patches for various content mods. Install after USMP base. |
 | [Object Impact Framework (OIF)](https://www.nexusmods.com/skyrimspecialedition/mods/149484) | Physics-based object impact system; prerequisite for several immersion/destruction mods. |
 
+### USMP Patch Emporium — File Selection
+
+**Download:** the **Main Files** `USMP Patch Emporium.7z` (v1.3.34) only — the FOMOD is the complete consolidated archive. The `.rar` main-file twin is the identical content in a different format (fallback if 7-Zip fails). Skip all Update, Optional, Miscellaneous, and Old files: their patch targets (Oblivionified Interaction Icons, Roleplaying in Skyrim race overhaul, Apprentice, Mannaz, FK's DRS, CACO, Nightmare Night, Requiem, Apachii Divine Elegance, Ravenrock overhaul, giant changes) are not in this list.
+
+**FOMOD selections — install patches for these targets only:** Aetherius (locked race baseline), AI Overhaul SSE (locked NPC AI), Legacy of the Dragonborn (locked), RDO (locked), Timing is Everything (baseline), Book Covers Skyrim (locked), Guard Dialogue Overhaul SE (adopted; the FOMOD entry is flagged redundant by the author but safe). Select the **WACCF patch only if WACCF itself is installed** — WACCF is optional here ("skip if conflicts outweigh gains").
+
+**Load order:** Emporium after USMP base; also after each mod it patches (Aetherius, AI Overhaul SSE, LoTD, RDO, etc.) in the MO2 left pane.
+
 ### SSSO3 Configuration
 
 Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format — the instability risk is **when** they fire (cell transitions, combat, half-evaluated script state), not the format. SSSO3 replaces vanilla triggers with a Save Shield that defers saves during unsafe states.
