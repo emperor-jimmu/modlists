@@ -832,7 +832,48 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 
 *Download:* the *Main Files* `USMP Patch Emporium.7z` (v1.3.34) only — the FOMOD is the complete consolidated archive. The `.rar` main-file twin is the identical content in a different format (fallback if 7-Zip fails). Skip all Update, Optional, Miscellaneous, and Old files: their patch targets (Oblivionified Interaction Icons, Roleplaying in Skyrim race overhaul, Apprentice, Mannaz, FK's DRS, CACO, Nightmare Night, Requiem, Apachii Divine Elegance, Ravenrock overhaul, giant changes) are not in this list.
 
-*FOMOD selections — install patches for these targets only:* Aetherius (locked race baseline), AI Overhaul SSE (locked NPC AI), Legacy of the Dragonborn (locked), RDO (locked), Timing is Everything (baseline), Book Covers Skyrim (locked), Guard Dialogue Overhaul SE (adopted; the FOMOD entry is flagged redundant by the author but safe). Select the *WACCF patch only if WACCF itself is installed* — WACCF is optional here ("skip if conflicts outweigh gains").
+*FOMOD selections — install patches for these targets only* (verified against `ModuleConfig.xml`; each entry's `.esp` dependency gates it to `Recommended` only when that plugin is installed):
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[FOMOD step]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Selection]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Why]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Base install (step 1)],
+  [*USMP base v2.6.6* — `Required`],
+  [Always installs.],
+  [Racial Plugins],
+  [#emph[(none)]],
+  [Races of Tamriel, Palladium, Mannaz, YASH, SkyRem, etc. — none installed. Race baseline is Aetherius (own step below).],
+  [Aetherius v2.14.1 combination patches],
+  [*`Aetherius-A Race Overhaul`* only],
+  [Aetherius locked (→ @expanded-character-character--progression). FK's DRS, Left Hand Rings, Racial Body Morphs not installed — pick the plain patch, not the combos.],
+  [Imperious / Disparity combos],
+  [#emph[(none)]],
+  [Imperious and Disparity rejected (EnaiRim/vanilla-plus direction).],
+  [Other combination patches],
+  [#emph[(none)]],
+  [Left Hand Rings, Mannaz, Racial Passives not installed.],
+  [Skeletons and Mannequins],
+  [#emph[(none)]],
+  [FK's DRS, RBM, mannequin variants not installed.],
+  [Other Patches — Dialogue],
+  [*`Guard Dialogue Overhaul or Redux`*, *`Relationship Dialogue Overhaul`*],
+  [GDO adopted (→ @npcs-npcs); RDO locked (→ @expanded-followers-followers--reputation). The GDO row appears when `Guard Dialogue Overhaul.esp` is active and WACCF is not.],
+  [Other Patches — select any],
+  [*`AI Overhaul`*, *`Legacy of the Dragonborn Ver 6.3.0`*, *`Book Covers Skyrim`*],
+  [AI Overhaul SSE and LoTD locked baselines; Book Covers Skyrim locked (→ @graphics-textures-textures--meshes). Skip Cutting Room Floor, Apachii Divine Elegance, Relighting Skyrim, ELFX Shadows, USSE Fixes, Unofficial CC Content Patch — none installed (Relighting/ELFX are fallback alternatives only).],
+  [kryptopyr's patches],
+  [*`Timing is Everything`*],
+  [Baseline (→ @world-content-world-content). *`Weapons Armor Clothing and Clutter Fixes` only if WACCF installed* — WACCF is optional ("skip if conflicts outweigh gains"); when installed, pick the `WACCF and Guard Dialogue Overhaul` combo above instead of the plain GDO row.],
+  [Vampire Werewolf Beast],
+  [#emph[(none)]],
+  [None of these mods installed.],
+)
 
 *Load order:* Emporium after USMP base; also after each mod it patches (Aetherius, AI Overhaul SSE, LoTD, RDO, etc.) in the MO2 left pane.
 
