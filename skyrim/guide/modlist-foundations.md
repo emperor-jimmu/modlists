@@ -99,11 +99,14 @@ A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of
 For installation, config syntax, filtering reference, authoring recipes, and the Elder Wilds authoring workflow, see → [SkyPatcher — Usage & Authoring Guide](skypatcher.md).
 
 ### Mesh & Texture Fixes
-| Mod                   | Purpose                                                        |
-|-----------------------|----------------------------------------------------------------|
-| Particle Patch        | Particle shader/LOD corrections, CS-compatible.                |
-| Assorted Mesh Fixes   | Corrections for common visual mesh errors.                     |
-| Flickering Meshes Fix | Resolves distant-object mesh flicker in landscape transitions. |
+
+Small mesh-level corrections for vanilla rendering errors — bad lighting flags, UVs, collision, and over-lit particle effects. All are mesh/texture-only (no plugin slots) and load-order-safe with the graphics stack.
+
+| Mod                                                                                              | Purpose                                                                                                                                     |
+|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| [Particle Patch](https://www.nexusmods.com/skyrimspecialedition/mods/65720)                      | Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). Choose the **Community Shaders** installer option. |
+| [Assorted Mesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/32117)                 | Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ [Textures & Meshes](modlist-graphics-textures.md)). |
+| [Flickering Meshes Fix](https://www.nexusmods.com/skyrimspecialedition/mods/53957)               | Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts. |
 
 ---
 

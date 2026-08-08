@@ -889,6 +889,9 @@ For installation, config syntax, filtering reference, authoring recipes, and the
 
 === Mesh & Texture Fixes
 <foundations-and-compatibility-mesh--texture-fixes>
+
+Small mesh-level corrections for vanilla rendering errors — bad lighting flags, UVs, collision, and over-lit particle effects. All are mesh/texture-only (no plugin slots) and load-order-safe with the graphics stack.
+
 #table(
   columns: 2,
   inset: (x: 8pt, y: 4.5pt),
@@ -897,12 +900,12 @@ For installation, config syntax, filtering reference, authoring recipes, and the
   [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
   [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Purpose]*],
   table.hline(stroke: 0.8pt + clr-gold),
-  [Particle Patch],
-  [Particle shader/LOD corrections, CS-compatible.],
-  [Assorted Mesh Fixes],
-  [Corrections for common visual mesh errors.],
-  [Flickering Meshes Fix],
-  [Resolves distant-object mesh flicker in landscape transitions.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65720")[Particle Patch]],
+  [Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). Choose the *Community Shaders* installer option.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32117")[Assorted Mesh Fixes]],
+  [Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ @graphics-textures-textures--meshes).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53957")[Flickering Meshes Fix]],
+  [Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts.],
 )
 
 ---
