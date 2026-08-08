@@ -905,8 +905,51 @@ Small mesh-level corrections for vanilla rendering errors — bad lighting flags
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32117")[Assorted Mesh Fixes]],
   [Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ @graphics-textures-textures--meshes).],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53957")[Flickering Meshes Fix]],
-  [Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts.],
+  [Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts. See FOMOD options below.],
 )
+
+==== Flickering Meshes Fix — FOMOD Options
+<foundations-and-compatibility-flickering-meshes-fix-fomod-options>
+
+Pure-mesh mod — no ESP, no requirements, no runtime config. The FOMOD only chooses the mesh variant and optional patches for other mods; only the variant and the SMIM option matter for this list.
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[FOMOD option]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Mesh variant (base)],
+  [*Non-parallax*],
+  [List textures are PBR / Complex Material, not parallax — guide rule: skip parallax meshes for mods not in the list. Parallax-flagged meshes want `\_p` textures the list mostly doesn't ship.],
+  [SMIM option],
+  [*Yes*],
+  [SMIM is installed (→ @graphics-textures-textures--meshes). Keeps split meshes consistent with SMIM's base.],
+  [Icy Windhelm patch],
+  [No],
+  [Icy Windhelm not installed — Windhelm snow coverage is `Windhelm Is Snowy - BOS` (→ @graphics-terrain-terrain--flora).],
+  [Skyrim 202X (Pfuscher)],
+  [No],
+  [List architecture textures are PBR, not 202X.],
+  [ELFX Exteriors patch],
+  [No],
+  [ELFX is fallback alternative in → @graphics-lighting-lighting, not CS-native baseline.],
+  [Majestic Mountains patches],
+  [No],
+  [Dropped entirely — list uses Enhanced Rocks and Mountains (→ @graphics-terrain-terrain--flora).],
+  [Water for ENB / Bright Waterfall Fix],
+  [No],
+  [No ENB; water stack is CS (Simplicity of Sea + Water Effects CS).],
+  [DynLOD option],
+  [— (removed in v1.9)],
+  [Author removed it — "you don't need it".],
+)
+
+*Overwrite rule:* let it win over Assorted Mesh Fixes and city-mesh mods — confirmed by the author: "this is compatible with almost everything... let this overwrite them when required, and also let it overwrite"
+
 ==== Particle Patch — FOMOD Options
 <foundations-and-compatibility-particle-patch-fomod-options>
 

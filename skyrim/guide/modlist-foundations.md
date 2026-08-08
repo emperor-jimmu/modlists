@@ -106,7 +106,25 @@ Small mesh-level corrections for vanilla rendering errors — bad lighting flags
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | [Particle Patch](https://www.nexusmods.com/skyrimspecialedition/mods/65720)                      | Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). See FOMOD options below. |
 | [Assorted Mesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/32117)                 | Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ [Textures & Meshes](modlist-graphics-textures.md)). |
-| [Flickering Meshes Fix](https://www.nexusmods.com/skyrimspecialedition/mods/53957)               | Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts. |
+| [Flickering Meshes Fix](https://www.nexusmods.com/skyrimspecialedition/mods/53957)               | Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts. See FOMOD options below. |
+
+#### Flickering Meshes Fix — FOMOD Options
+
+Pure-mesh mod — no ESP, no requirements, no runtime config. The FOMOD only chooses the mesh variant and optional patches for other mods; only the variant and the SMIM option matter for this list.
+
+| FOMOD option              | Pick              | Reason                                                                                                                                             |
+|---------------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Mesh variant (base)       | **Non-parallax**  | List textures are PBR / Complex Material, not parallax — guide rule: skip parallax meshes for mods not in the list. Parallax-flagged meshes want `_p` textures the list mostly doesn't ship. |
+| SMIM option               | **Yes**           | SMIM is installed (→ [Textures & Meshes](modlist-graphics-textures.md)). Keeps split meshes consistent with SMIM's base.                               |
+| Icy Windhelm patch        | No                | Icy Windhelm not installed — Windhelm snow coverage is `Windhelm Is Snowy - BOS` (→ [Terrain](modlist-graphics-terrain.md)).                          |
+| Skyrim 202X (Pfuscher)    | No                | List architecture textures are PBR, not 202X.                                                                                                          |
+| ELFX Exteriors patch      | No                | ELFX is fallback alternative in → [Lighting](modlist-graphics-lighting.md), not CS-native baseline.                                                     |
+| Majestic Mountains patches| No                | Dropped entirely — list uses Enhanced Rocks and Mountains (→ [Terrain](modlist-graphics-terrain.md)).                                                 |
+| Water for ENB / Bright Waterfall Fix | No      | No ENB; water stack is CS (Simplicity of Sea + Water Effects CS).                                                                                     |
+| DynLOD option             | — (removed in v1.9) | Author removed it — "you don't need it".                                                                                                               |
+
+**Overwrite rule:** let it win over Assorted Mesh Fixes and city-mesh mods — confirmed by the author: "this is compatible with almost everything... let this overwrite them when required, and also let it overwrite"
+
 #### Particle Patch — FOMOD Options
 
 v1.4.3+ consolidated ENB and CS into a single build; the plugin-name choice is cosmetic, but should still match the list's framework (CS, not ENB). Only the **Fake Light Glow** row differs from the factory default.
