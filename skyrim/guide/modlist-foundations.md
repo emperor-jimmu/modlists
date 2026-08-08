@@ -335,8 +335,8 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 | [SMP-NPC crash fix](https://www.nexusmods.com/skyrimspecialedition/mods/91616)              | Prevents the known FSMP crash when loading NPCs with SMP hair. Required companion to the locked FSMP baseline. SKSE plugin. |
 | [Dragon Stalking Fix](https://www.nexusmods.com/skyrimspecialedition/mods/14060)            | Dragon corpses no longer follow the player or fall out of the sky. ESL, SPID-based corpse cleanup. Requires Po3 Tweaks (baseline). |
 | [Beard Mask Fix](https://www.nexusmods.com/skyrimspecialedition/mods/80232)                  | Beards use slot 44 — prevents mask clipping. SKSE plugin.           |
-| [Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)                   | Utility SKSE plugin.                                                |
-| [Description Framework Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/139077) | Centralized patch collection for the Description Framework.         |
+| [Mini's Micro-Systems Framework (MMSF)](https://www.nexusmods.com/skyrimspecialedition/mods/183073) | Weather identification and dynamic FormID allocation framework. Required by Luma Utility below. |
+| [Luma Utility](https://www.nexusmods.com/skyrimspecialedition/mods/177961)                   | Patch-free cell integration utility. Requires MMSF above.          |
 | [Exit Sneak On Sprint](https://www.nexusmods.com/skyrimspecialedition/mods/138669) | Exits sneak mode when sprinting. Lightweight SKSE plugin, no records. |
 | [Naked Dead NPC Fix](https://www.nexusmods.com/skyrimspecialedition/mods/99024)       | Auto-equips body/hands/feet/head slots when a dead NPC loads naked (outfit-distribution glitch). SKSE, zero records, "compatible with everything". |
 | [Native EditorID Fix](https://www.nexusmods.com/skyrimspecialedition/mods/85260)       | Bug-fix utility (Bug Fixes/SKSE) correcting engine-side native EditorID handling. SKSE plugin, requires Address Library (baseline). |
