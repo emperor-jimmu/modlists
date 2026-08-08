@@ -23,6 +23,7 @@ Elder Wilds is an opinionated modlist for Skyrim AE 1.6.1170 (Steam) built aroun
 
 - `guide/modlist.md` is the hub file: project scope, modlist identity pillars, separator mapping table, and the index to numbered section files.
 - `guide/install.md` is the installation guide: pre-installation requirements, toolchain setup, download workflow, load order build sequence, and post-install testing.
+- `guide/skypatcher.md` is the SkyPatcher usage & authoring guide: installation, config syntax, filters, authoring recipes, and the Elder Wilds authoring workflow. Referenced from the SkyPatcher section in `guide/modlist-foundations.md`.
 - Each numbered `guide/modlist-XX.md` file owns one second-level planning section. Keep the numbering aligned with the index in `guide/modlist.md`.
 - Cross-reference convention: use `→ \`X\`` (arrow, space, backtick section or separator name) as the standard inline cross-reference format across all section files. When linking to another section file, prefer `→ [Title](modlist-XX.md)` over a backticked reference.
 - `TODO.md` is the central scratch backlog for open research and candidate mods not yet adopted. Section files reference it with an `## Open Research` heading rather than carrying their own `## Candidate TODO Additions` stub.

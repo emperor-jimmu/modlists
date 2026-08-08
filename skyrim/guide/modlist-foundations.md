@@ -89,6 +89,8 @@ A **"SkyPatched"** variant ships record changes as SkyPatcher configs instead of
 - `Diverse 4thUnknown Dragons` — uses SkyPatcher for combat-mod compatibility (→ [Enemies & Creatures](modlist-creatures.md))
 - `Patchifier` Synthesis patcher generates SkyPatcher patches (→ [Bashed Patch & Synthesis Configuration](modlist-performance-patches.md))
 
+For installation, config syntax, filtering reference, authoring recipes, and the Elder Wilds authoring workflow, see → [SkyPatcher — Usage & Authoring Guide](skypatcher.md).
+
 ### Mesh & Texture Fixes
 | Mod                   | Purpose                                                        |
 |-----------------------|----------------------------------------------------------------|
