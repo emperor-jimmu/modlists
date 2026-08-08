@@ -905,50 +905,97 @@ Small mesh-level corrections for vanilla rendering errors — bad lighting flags
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32117")[Assorted Mesh Fixes]],
   [Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ @graphics-textures-textures--meshes).],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53957")[Flickering Meshes Fix]],
-  [Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts. See FOMOD options below.],
+  [Splits over-lit city meshes so the engine's 6-lights-per-mesh limit no longer causes flicker. Covers all five cities plus hold farmhouses. No ESP. See FOMOD options below.],
 )
 
 ==== Flickering Meshes Fix — FOMOD Options
 <foundations-and-compatibility-flickering-meshes-fix-fomod-options>
 
-Pure-mesh mod — no ESP, no requirements, no runtime config. The FOMOD only chooses the mesh variant and optional patches for other mods; only the variant and the SMIM option matter for this list.
+Pure-mesh mod — no ESP, no requirements, no runtime config. The FOMOD has three steps: per-city mesh variants, per-hold farmhouse variants, then compatibility patches. Every city/farmhouse step must pick a *no-parallax* variant (the list's textures are PBR / Complex Material, not parallax — guide rule: skip parallax meshes), and the *SMIM* checkbox is the only compatibility pick that applies.
+
+*Step 1 — Main Cities* (`SelectExactlyOne` per city — pick `No parallax version` for all five; never `None` — that skips the fix):
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[City]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Riften],
+  [`No parallax version`],
+  [Solitude],
+  [`No parallax version`],
+  [Whiterun],
+  [`No parallax version`],
+  [Markarth],
+  [`No parallax version`],
+  [Windhelm],
+  [`No parallax version`],
+)
+
+The `Parallax version` of each city requires a parallax retexture (`\_p` textures) — not used here. Windhelm's parallax variant additionally requires BDS and BDS patcher (per the FOMOD description), reinforcing the no-parallax pick.
+
+*Step 2 — Towns and Villages* (`SelectExactlyOne` per hold; choose `Farmhouses Without Parallax`):
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Group]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Whiterun and Windhelm Holds' farmhouses],
+  [`Farmhouses Without Parallax` (Riverwood etc. use these nifs)],
+  [Solitude Hold's farmhouses],
+  [`Farmhouses Without Parallax`],
+  [Markarth Hold's farmhouses],
+  [`Farmhouses Without Parallax`],
+)
+
+*Step 3 — Compatibility choices* (`SelectAny`; only SMIM is checked by this list):
 
 #table(
   columns: 3,
   inset: (x: 8pt, y: 4.5pt),
   fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
   stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[FOMOD option]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Option]*],
   [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
   [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
   table.hline(stroke: 0.8pt + clr-gold),
-  [Mesh variant (base)],
-  [*Non-parallax*],
-  [List textures are PBR / Complex Material, not parallax — guide rule: skip parallax meshes for mods not in the list. Parallax-flagged meshes want `\_p` textures the list mostly doesn't ship.],
-  [SMIM option],
+  [*SMIM*],
   [*Yes*],
-  [SMIM is installed (→ @graphics-textures-textures--meshes). Keeps split meshes consistent with SMIM's base.],
-  [Icy Windhelm patch],
+  [SMIM is the core baseline (→ @graphics-textures-textures--meshes); FOMOD marks it Recommended when `SMIM-SE-Merged-All.esp` is active, and it wires SMIM-compatible Solitude splits.],
+  [Bright Waterfall Fix (ENB)],
   [No],
-  [Icy Windhelm not installed — Windhelm snow coverage is `Windhelm Is Snowy - BOS` (→ @graphics-terrain-terrain--flora).],
-  [Skyrim 202X (Pfuscher)],
+  [ENB-only; not installed.],
+  [Icy Windhelm],
   [No],
-  [List architecture textures are PBR, not 202X.],
-  [ELFX Exteriors patch],
+  [Not installed — Windhelm snow coverage is `Windhelm Is Snowy - BOS` → @graphics-terrain-terrain--flora.],
+  [ELFX Exteriors],
   [No],
-  [ELFX is fallback alternative in → @graphics-lighting-lighting, not CS-native baseline.],
-  [Majestic Mountains patches],
+  [ELFX is a fallback alternative in → @graphics-lighting-lighting, not baseline.],
+  [Majestic Mountains],
   [No],
-  [Dropped entirely — list uses Enhanced Rocks and Mountains (→ @graphics-terrain-terrain--flora).],
-  [Water for ENB / Bright Waterfall Fix],
+  [Dropped — list uses Enhanced Rocks and Mountains (→ @graphics-terrain-terrain--flora).],
+  [Riften Architectural Details],
   [No],
-  [No ENB; water stack is CS (Simplicity of Sea + Water Effects CS).],
-  [DynLOD option],
-  [— (removed in v1.9)],
-  [Author removed it — "you don't need it".],
+  [Not installed (Riften outdoor coverage comes from the Snazzy AIO series).],
+  [Skyrim 202X by Pfuscher],
+  [No],
+  [Textures are PBR (Tomato's pack etc.), not 202X.],
+  [Skyrim - A Mountainous Experience],
+  [No],
+  [Not installed.],
+  [Water for ENB],
+  [No],
+  [No ENB; water stack is CS (Simplicity of Sea + Water Effects CS). Also skipped when using Realistic Water Two.],
 )
 
-*Overwrite rule:* let it win over Assorted Mesh Fixes and city-mesh mods — confirmed by the author: "this is compatible with almost everything... let this overwrite them when required, and also let it overwrite"
+*Overwrite rule:* let it win over Assorted Mesh Fixes and city-mesh mods; here, keep the list's `Whiterun Has Walls`/city overrides on top with the city-mesh mods winning per-section order, and `Flickering Meshes Fix` winning the vanilla-based meshes it targets — aligned with the author: "compatible with almost everything... let this overwrite them when required".
 
 ==== Particle Patch — FOMOD Options
 <foundations-and-compatibility-particle-patch-fomod-options>
