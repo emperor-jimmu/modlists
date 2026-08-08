@@ -901,11 +901,44 @@ Small mesh-level corrections for vanilla rendering errors — bad lighting flags
   [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Purpose]*],
   table.hline(stroke: 0.8pt + clr-gold),
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/65720")[Particle Patch]],
-  [Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). Choose the *Community Shaders* installer option.],
+  [Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). See FOMOD options below.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/32117")[Assorted Mesh Fixes]],
   [Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ @graphics-textures-textures--meshes).],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53957")[Flickering Meshes Fix]],
   [Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts.],
+)
+==== Particle Patch — FOMOD Options
+<foundations-and-compatibility-particle-patch-fomod-options>
+
+v1.4.3+ consolidated ENB and CS into a single build; the plugin-name choice is cosmetic, but should still match the list's framework (CS, not ENB). Only the *Fake Light Glow* row differs from the factory default.
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Option]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Installation Format],
+  [`BSA`],
+  [Keeps the modlist tidy; archive vs loose files is organizational.],
+  [Plugin Name],
+  [`Particle Patch`],
+  [Not `Particle Patch for ENB` — the list is CS-only.],
+  [Light Shafts],
+  [`No`],
+  [Volumetric god-rays are an ENB-style effect. CS's own lighting stack handles atmosphere.],
+  [Fake Light Glow],
+  [*`Particle Light`*],
+  [Converts fake candle/lamp glows to real particle lights that CS renders correctly. Without this, fixtures go dark.],
+  [Remove Fake Glow],
+  [#emph[(leave both unchecked)]],
+  [With `Particle Light` the fake glow is replaced, not removed. Leave unchecked to preserve fixture presence for readability.],
+  [Custom Textures],
+  [`Yes`],
+  [Keep the shipped texture fixes.],
 )
 
 ---

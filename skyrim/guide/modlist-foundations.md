@@ -104,9 +104,21 @@ Small mesh-level corrections for vanilla rendering errors — bad lighting flags
 
 | Mod                                                                                              | Purpose                                                                                                                                     |
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Particle Patch](https://www.nexusmods.com/skyrimspecialedition/mods/65720)                      | Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). Choose the **Community Shaders** installer option. |
+| [Particle Patch](https://www.nexusmods.com/skyrimspecialedition/mods/65720)                      | Fixes incorrect particle/effect brightness and blending under the CS lighting model (fire, fog, mist, snow). See FOMOD options below. |
 | [Assorted Mesh Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/32117)                 | Corrects vanilla mesh rendering errors — lighting flags, UVs, collision, normals, shadow/depth issues. Mesh-only, no ESP. Load after SMIM (→ [Textures & Meshes](modlist-graphics-textures.md)). |
 | [Flickering Meshes Fix](https://www.nexusmods.com/skyrimspecialedition/mods/53957)               | Splits over-lit city meshes (Solitude, Riften, Windhelm, Markarth) so the engine's 6-lights-per-mesh limit no longer causes flicker. Let it win mesh conflicts. |
+#### Particle Patch — FOMOD Options
+
+v1.4.3+ consolidated ENB and CS into a single build; the plugin-name choice is cosmetic, but should still match the list's framework (CS, not ENB). Only the **Fake Light Glow** row differs from the factory default.
+
+| Option              | Pick                   | Reason                                                                                                                |
+|---------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Installation Format | `BSA`                  | Keeps the modlist tidy; archive vs loose files is organizational.                                                     |
+| Plugin Name         | `Particle Patch`       | Not `Particle Patch for ENB` — the list is CS-only.                                                                   |
+| Light Shafts        | `No`                   | Volumetric god-rays are an ENB-style effect. CS's own lighting stack handles atmosphere.                              |
+| Fake Light Glow     | **`Particle Light`**   | Converts fake candle/lamp glows to real particle lights that CS renders correctly. Without this, fixtures go dark.    |
+| Remove Fake Glow    | *(leave both unchecked)* | With `Particle Light` the fake glow is replaced, not removed. Leave unchecked to preserve fixture presence for readability. |
+| Custom Textures     | `Yes`                  | Keep the shipped texture fixes.                                                                                       |
 
 ---
 
