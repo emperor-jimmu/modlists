@@ -886,7 +886,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 
 1. Install requirements (already in Core Libraries): `JContainers SE`, `NL\_MCM - A Modular MCM Framework`, `Regional Save Names`, `SSE Engine Fixes`
 2. Install the SSSO3 main file and `SSSO3 - French` (if applicable). Place SSSO3 anywhere in load order.
-3. *Disable all vanilla autosaves and `iAutoSaveCount`* in BethINI Pie — see → @performance-optimization-optimization--configuration (BethINI Pie Configuration Baseline). SSSO3 force-deactivates the autosaves, but the INI settings prevent the values from conflicting.
+3. *Disable all vanilla autosaves* in BethINI Pie — see → @performance-optimization-optimization--configuration (BethINI Pie Configuration Baseline). Keep `iAutoSaveCount` at its positive default (`3`) — *never `0`*: confirmed crash (2026-08-08) — the engine divides by the slot count when a save loads, and `0` produces a hard `INT\_DIVIDE\_BY\_ZERO` CTD. SSSO3 force-deactivates the autosaves, but the INI settings prevent the values from conflicting.
 
 *In-game setup (required before the rotating system activates):*
 
@@ -11243,7 +11243,7 @@ Run through MO2 targeting the active profile INIs.
 
 1. *Basic:* Reset to Defaults → High preset → Apply Recommended Tweaks. Window Mode: Borderless. FOV: First Person 75, Third Person 85.
 
-2. *General → Saved Games:* Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer). Then set `iAutoSaveCount=0` under `[SaveGame]` in `Skyrim.ini` via the INI Editor — it is a slot count, not an on/off flag, so "disabled" means zero; this stops the engine from reserving rotating autosave slots (SSSO3 manages its own).
+2. *General → Saved Games:* Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer). Leave `iAutoSaveCount=3` (the default) under `[SaveGame]` in `Skyrim.ini` — *do not set it to `0`*: it is a slot count, not an on/off flag, and the engine divides by it while processing save slots, so `0` hard-crashes with `EXCEPTION\_INT\_DIVIDE\_BY\_ZERO` the moment a save loads from the main menu (confirmed 2026-08-08). Autosave #emph[triggers] are disabled by these ticks; SSSO3 force-deactivates the rest and manages its own rotating saves.
 
 3. *Gameplay:* Difficulty Adept. Untick Disable Kill Cam. Tick Remove Borders. Untick Tutorials.
 

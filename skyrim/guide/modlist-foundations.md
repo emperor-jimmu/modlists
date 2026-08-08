@@ -70,7 +70,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 
 1. Install requirements (already in Core Libraries): `JContainers SE`, `NL_MCM - A Modular MCM Framework`, `Regional Save Names`, `SSE Engine Fixes`
 2. Install the SSSO3 main file and `SSSO3 - French` (if applicable). Place SSSO3 anywhere in load order.
-3. **Disable all vanilla autosaves and `iAutoSaveCount`** in BethINI Pie — see → [INI Tuning And Display Settings](modlist-performance-optimization.md) (BethINI Pie Configuration Baseline). SSSO3 force-deactivates the autosaves, but the INI settings prevent the values from conflicting.
+3. **Disable all vanilla autosaves** in BethINI Pie — see → [INI Tuning And Display Settings](modlist-performance-optimization.md) (BethINI Pie Configuration Baseline). Keep `iAutoSaveCount` at its positive default (`3`) — **never `0`**: confirmed crash (2026-08-08) — the engine divides by the slot count when a save loads, and `0` produces a hard `INT_DIVIDE_BY_ZERO` CTD. SSSO3 force-deactivates the autosaves, but the INI settings prevent the values from conflicting.
 
 **In-game setup (required before the rotating system activates):**
 

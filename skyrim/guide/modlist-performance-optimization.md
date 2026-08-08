@@ -47,7 +47,7 @@ Run through MO2 targeting the active profile INIs.
 
 1. **Basic:** Reset to Defaults → High preset → Apply Recommended Tweaks. Window Mode: Borderless. FOV: First Person 75, Third Person 85.
 
-2. **General → Saved Games:** Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer). Then set `iAutoSaveCount=0` under `[SaveGame]` in `Skyrim.ini` via the INI Editor — it is a slot count, not an on/off flag, so "disabled" means zero; this stops the engine from reserving rotating autosave slots (SSSO3 manages its own).
+2. **General → Saved Games:** Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer). Leave `iAutoSaveCount=3` (the default) under `[SaveGame]` in `Skyrim.ini` — **do not set it to `0`**: it is a slot count, not an on/off flag, and the engine divides by it while processing save slots, so `0` hard-crashes with `EXCEPTION_INT_DIVIDE_BY_ZERO` the moment a save loads from the main menu (confirmed 2026-08-08). Autosave *triggers* are disabled by these ticks; SSSO3 force-deactivates the rest and manages its own rotating saves.
 
 3. **Gameplay:** Difficulty Adept. Untick Disable Kill Cam. Tick Remove Borders. Untick Tutorials.
 

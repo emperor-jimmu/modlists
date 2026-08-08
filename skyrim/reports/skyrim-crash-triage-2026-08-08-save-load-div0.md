@@ -5,7 +5,7 @@
 - **Logger:** CrashLoggerSSE v1-24-0-0
 - **Exception:** `EXCEPTION_INT_DIVIDE_BY_ZERO` at `SkyrimSE.exe+0x616FBB` — `div [0x00007FF67D082140]`
 - **Profile shape at crash:** Elder Wilds foundations test-skeleton via MO2 (usvfs) — 15 plugins, repo-baseline SKSE plugin set (EngineFixes 7.0.20, SkyPatcher v7, po3 family, ScrambledBugs, ActorLimitFix, SSSO3 esp, USMP, Particle Patch)
-- **Status:** TENTATIVE — root cause requires 4 short in-game/MO2 checks (below). No mod added, removed, or condemned yet.
+- **Status:** RESOLVED (2026-08-08) — root cause confirmed by live test: the repo's own `iAutoSaveCount=0` baseline instruction. Reverting to `3` fixes the same save load. Guides corrected; STATUS.md verdict closed.
 
 ---
 
@@ -51,7 +51,7 @@ The 6.5-week-old save records plugin-registry/record state that no longer matche
 The engine-side save-slot arithmetic receives 0 where the load path expects a positive slot count. Both are repo baseline, so this is a "verify the baseline still holds on the live box" check, not a mod swap.
 
 - **Evidence:** divisor is a static global that is 0; the save manager is mid-operation; `iAutoSaveCount=0` is exactly the value the community playbook flags for this exception class.
-- **Falsify:** temporary `iAutoSaveCount=3` (restore to 0 after the test) loads the same save fine. Then re-test with SSSO3 disabled in a *copy* profile.
+- **Falsify:** temporary `iAutoSaveCount=3` loads the same save fine. **Confirmed this way — keep `3`; reverting to `0` reintroduces the crash.**
 
 ### H3 — Foundation SKSE plugin load-start interaction
 SkyPatcher's save-load NPC refresh (`iUpdateNPC`, guide-documented), EngineFixes save toggles, or ScrambledBugs produce a transiently inconsistent state during load-start.
@@ -71,7 +71,7 @@ Exe written by Steam the same day as the save; hypervisor present. If H1–H3 al
 | 0 | Relaunch, load the same save twice | Intermittent → different class (memory/disk), report back. Deterministic → continue. |
 | 1 | MO2 **Saves tab** → failing save → *Expected vs Installed* | Missing mods listed → fix load order, re-save or drop the save (H1 confirmed). |
 | 2 | **New Game** → play 1–2 min → save → reload that save | Fails → H3 bisect (SKSE plugins half-at-a-time). Passes → save-data side confirmed (H1/H2). |
-| 3 | `iAutoSaveCount=3` temporarily, same save | Loads fine → H2 confirmed; revert to `0` and keep SSSO3 per baseline, note in STATUS. |
+| 3 | `iAutoSaveCount=3` (temporarily), same save | Loads fine → **H2 confirmed (the actual cause)**. Keep `3`; do **not** revert to `0`. Hold SSSO3 per baseline. |
 | 4 | Copy profile, SSSO3 disabled, same save | Still crashes after Step 3 passed → not SSSO3; continue H1 checks. |
 | 5 | ReSaver (FallrimTools) clean pass on the save (unattached instances) | Only after Steps 1–4 point at corrupt save data. |
 
@@ -79,7 +79,7 @@ Exe written by Steam the same day as the save; hypervisor present. If H1–H3 al
 
 1. The 2026-06-21 save loads to gameplay and is re-saved cleanly, **or** it is explicitly retired after Step 1 shows expected-mod drift.
 2. New-game → save → reload cycle is stable on the skeleton.
-3. The exact unblocking change is recorded here and in `STATUS.md` (entry exists; fill in verdict once Step 0–5 land).
+3. The exact unblocking change (`iAutoSaveCount` → `3`) is recorded and the `STATUS.md` verdict is CONFIRMED (2026-08-08).
 
 ## User to provide (blocks final verdict)
 
