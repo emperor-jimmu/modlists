@@ -12150,100 +12150,100 @@ Flat separator names sorted by MO2 left-pane load order. Parent categories ancho
 
 Foundations (blue)
 - #box(fill: rgb("#1a3a6b"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations
-- #box(fill: rgb("#255792"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations – SKSE & Scripts
-- #box(fill: rgb("#3173b8"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations – Core Libraries
-- #box(fill: rgb("#4a8fd4"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations – Mesh & Texture Fixes
-- #box(fill: rgb("#6aaae8"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations – Targeted Bugfixes
+- #box(fill: rgb("#255792"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations - SKSE & Scripts
+- #box(fill: rgb("#3173b8"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations - Core Libraries
+- #box(fill: rgb("#4a8fd4"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations - Mesh & Texture Fixes
+- #box(fill: rgb("#6aaae8"), width: 9pt, height: 9pt, radius: 1.5pt) Foundations - Targeted Bugfix Mods
 
 Graphics (green)
 - #box(fill: rgb("#0d4a0d"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics
-- #box(fill: rgb("#196a19"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – PGPatcher
-- #box(fill: rgb("#268a26"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – Community Shaders
-- #box(fill: rgb("#35a835"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – Textures & Meshes
-- #box(fill: rgb("#46c446"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – Lighting
-- #box(fill: rgb("#59d859"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – Weather & Water
-- #box(fill: rgb("#70e870"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – Terrain & Flora
-- #box(fill: rgb("#88f088"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – Characters & Creatures
-- #box(fill: rgb("#a2f5a2"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics – LOD & Distant Detail
+- #box(fill: rgb("#196a19"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - PGPatcher
+- #box(fill: rgb("#268a26"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Community Shaders
+- #box(fill: rgb("#35a835"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Textures & Meshes
+- #box(fill: rgb("#46c446"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Lighting
+- #box(fill: rgb("#59d859"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Weather & Water
+- #box(fill: rgb("#70e870"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Terrain & Flora
+- #box(fill: rgb("#88f088"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Characters & Creatures
+- #box(fill: rgb("#a2f5a2"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - LOD & Distant Detail
 
-UI (cyan/teal)
-- #box(fill: rgb("#1b5a68"), width: 9pt, height: 9pt, radius: 1.5pt) UI
-- #box(fill: rgb("#2a7c8c"), width: 9pt, height: 9pt, radius: 1.5pt) UI – Framework & HUD
-- #box(fill: rgb("#3e9eb0"), width: 9pt, height: 9pt, radius: 1.5pt) UI – Inventory & Items
-- #box(fill: rgb("#5cbcc9"), width: 9pt, height: 9pt, radius: 1.5pt) UI – Map, Dialogue, Menus
+Modernized UI (cyan/teal)
+- #box(fill: rgb("#1b5a68"), width: 9pt, height: 9pt, radius: 1.5pt) Modernized UI
+- #box(fill: rgb("#2a7c8c"), width: 9pt, height: 9pt, radius: 1.5pt) Modernized UI - Framework & HUD
+- #box(fill: rgb("#3e9eb0"), width: 9pt, height: 9pt, radius: 1.5pt) Modernized UI - Inventory & Items
+- #box(fill: rgb("#5cbcc9"), width: 9pt, height: 9pt, radius: 1.5pt) Modernized UI - Map, Dialogue, Menus
 
 Animations (red-orange)
 - #box(fill: rgb("#7a1a0a"), width: 9pt, height: 9pt, radius: 1.5pt) Animations
-- #box(fill: rgb("#962d18"), width: 9pt, height: 9pt, radius: 1.5pt) Animations – Framework
-- #box(fill: rgb("#b44328"), width: 9pt, height: 9pt, radius: 1.5pt) Animations – Movement & Idles
-- #box(fill: rgb("#d05c3a"), width: 9pt, height: 9pt, radius: 1.5pt) Animations – Combat
-- #box(fill: rgb("#e47850"), width: 9pt, height: 9pt, radius: 1.5pt) Animations – Interactions & Traversal
-- #box(fill: rgb("#ea9870"), width: 9pt, height: 9pt, radius: 1.5pt) Animations – Creatures
+- #box(fill: rgb("#962d18"), width: 9pt, height: 9pt, radius: 1.5pt) Animations - Framework
+- #box(fill: rgb("#b44328"), width: 9pt, height: 9pt, radius: 1.5pt) Animations - Movement & Idles
+- #box(fill: rgb("#d05c3a"), width: 9pt, height: 9pt, radius: 1.5pt) Animations - Combat
+- #box(fill: rgb("#e47850"), width: 9pt, height: 9pt, radius: 1.5pt) Animations - Interactions & Traversal
+- #box(fill: rgb("#ea9870"), width: 9pt, height: 9pt, radius: 1.5pt) Animations - Creatures
 
 Third-Person (amber/gold)
 - #box(fill: rgb("#7a5010"), width: 9pt, height: 9pt, radius: 1.5pt) Third-Person
-- #box(fill: rgb("#926a20"), width: 9pt, height: 9pt, radius: 1.5pt) Third-Person – Camera & Movement
-- #box(fill: rgb("#aa8430"), width: 9pt, height: 9pt, radius: 1.5pt) Third-Person – Combat & Targeting
-- #box(fill: rgb("#c4a044"), width: 9pt, height: 9pt, radius: 1.5pt) Third-Person – Mounted
+- #box(fill: rgb("#926a20"), width: 9pt, height: 9pt, radius: 1.5pt) Third-Person - Camera & Movement
+- #box(fill: rgb("#aa8430"), width: 9pt, height: 9pt, radius: 1.5pt) Third-Person - Combat & Targeting
+- #box(fill: rgb("#c4a044"), width: 9pt, height: 9pt, radius: 1.5pt) Third-Person - Mounted
 
 Expanded Systems (purple)
 - #box(fill: rgb("#3a1070"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems
-- #box(fill: rgb("#52258a"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems – Character & Progression
-- #box(fill: rgb("#6c3aa6"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems – Magic & Perks
-- #box(fill: rgb("#8759bf"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems – Survival & Needs
-- #box(fill: rgb("#a27cd4"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems – Crafting & Economy
-- #box(fill: rgb("#bba0e6"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems – Followers & Reputation
+- #box(fill: rgb("#52258a"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems - Character & Progression
+- #box(fill: rgb("#6c3aa6"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems - Magic & Perks
+- #box(fill: rgb("#8759bf"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems - Survival & Needs
+- #box(fill: rgb("#a27cd4"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems - Crafting & Economy
+- #box(fill: rgb("#bba0e6"), width: 9pt, height: 9pt, radius: 1.5pt) Expanded Systems - Followers & Reputation
 
 World Feel (brown/amber)
 - #box(fill: rgb("#6b3a10"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel
-- #box(fill: rgb("#875020"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel – Timescale & Travel
-- #box(fill: rgb("#a56830"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel – Soundscapes
-- #box(fill: rgb("#c08448"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel – Nights & Wildlife
-- #box(fill: rgb("#d4a264"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel – Cities & Landmarks
+- #box(fill: rgb("#875020"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel - Timescale & Travel
+- #box(fill: rgb("#a56830"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel - Soundscapes
+- #box(fill: rgb("#c08448"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel - Nights & Wildlife
+- #box(fill: rgb("#d4a264"), width: 9pt, height: 9pt, radius: 1.5pt) World Feel - Cities & Landmarks
 
 World Content (olive green)
 - #box(fill: rgb("#4a6b18"), width: 9pt, height: 9pt, radius: 1.5pt) World Content
-- #box(fill: rgb("#608722"), width: 9pt, height: 9pt, radius: 1.5pt) World Content – Overhauls
-- #box(fill: rgb("#78a530"), width: 9pt, height: 9pt, radius: 1.5pt) World Content – Quests
-- #box(fill: rgb("#90ba48"), width: 9pt, height: 9pt, radius: 1.5pt) World Content – Homes & Bases
-- #box(fill: rgb("#aacf6a"), width: 9pt, height: 9pt, radius: 1.5pt) World Content – Underwater
+- #box(fill: rgb("#608722"), width: 9pt, height: 9pt, radius: 1.5pt) World Content - Overhauls
+- #box(fill: rgb("#78a530"), width: 9pt, height: 9pt, radius: 1.5pt) World Content - Quests
+- #box(fill: rgb("#90ba48"), width: 9pt, height: 9pt, radius: 1.5pt) World Content - Homes & Bases
+- #box(fill: rgb("#aacf6a"), width: 9pt, height: 9pt, radius: 1.5pt) World Content - Underwater
 
 NPCs (rose)
 - #box(fill: rgb("#7a1a3a"), width: 9pt, height: 9pt, radius: 1.5pt) NPCs
-- #box(fill: rgb("#9D385B"), width: 9pt, height: 9pt, radius: 1.5pt) NPCs – Appearance
-- #box(fill: rgb("#C0567C"), width: 9pt, height: 9pt, radius: 1.5pt) NPCs – Population
-- #box(fill: rgb("#E3759D"), width: 9pt, height: 9pt, radius: 1.5pt) NPCs – Followers
+- #box(fill: rgb("#9D385B"), width: 9pt, height: 9pt, radius: 1.5pt) NPCs - Appearance
+- #box(fill: rgb("#C0567C"), width: 9pt, height: 9pt, radius: 1.5pt) NPCs - Population
+- #box(fill: rgb("#E3759D"), width: 9pt, height: 9pt, radius: 1.5pt) NPCs - Followers
 
 Enemies & Creatures (bronze)
 - #box(fill: rgb("#8B5E3C"), width: 9pt, height: 9pt, radius: 1.5pt) Enemies & Creatures
 
 Audio (royal blue)
 - #box(fill: rgb("#1e2a8a"), width: 9pt, height: 9pt, radius: 1.5pt) Audio
-- #box(fill: rgb("#3a4abc"), width: 9pt, height: 9pt, radius: 1.5pt) Audio – Music
-- #box(fill: rgb("#5a70d4"), width: 9pt, height: 9pt, radius: 1.5pt) Audio – SFX & Ambience
+- #box(fill: rgb("#3a4abc"), width: 9pt, height: 9pt, radius: 1.5pt) Audio - Music
+- #box(fill: rgb("#5a70d4"), width: 9pt, height: 9pt, radius: 1.5pt) Audio - SFX & Ambience
 
 Survival & Combat (red)
 - #box(fill: rgb("#6b1010"), width: 9pt, height: 9pt, radius: 1.5pt) Survival & Combat
-- #box(fill: rgb("#8a1e1e"), width: 9pt, height: 9pt, radius: 1.5pt) Survival & Combat – Difficulty & Lethality
-- #box(fill: rgb("#a82e2e"), width: 9pt, height: 9pt, radius: 1.5pt) Survival & Combat – Enemy AI
-- #box(fill: rgb("#c25050"), width: 9pt, height: 9pt, radius: 1.5pt) Survival & Combat – Resources & Injuries
+- #box(fill: rgb("#8a1e1e"), width: 9pt, height: 9pt, radius: 1.5pt) Survival & Combat - Difficulty & Lethality
+- #box(fill: rgb("#a82e2e"), width: 9pt, height: 9pt, radius: 1.5pt) Survival & Combat - Enemy AI
+- #box(fill: rgb("#c25050"), width: 9pt, height: 9pt, radius: 1.5pt) Survival & Combat - Resources & Injuries
 
 Weapons & Armor (steel)
 - #box(fill: rgb("#5A6B7A"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor
-- #box(fill: rgb("#6E8294"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor – Weapons
-- #box(fill: rgb("#8299AC"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor – Armor
-- #box(fill: rgb("#96AFC2"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor – Artifacts
-- #box(fill: rgb("#AAC5D8"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor – Clothing & Wardrobe
+- #box(fill: rgb("#6E8294"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor - Weapons
+- #box(fill: rgb("#8299AC"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor - Armor
+- #box(fill: rgb("#96AFC2"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor - Artifacts
+- #box(fill: rgb("#AAC5D8"), width: 9pt, height: 9pt, radius: 1.5pt) Weapons & Armor - Clothing & Wardrobe
 
 Standalone separators
 - #box(fill: rgb("#C49A31"), width: 9pt, height: 9pt, radius: 1.5pt) Legacy of the Dragonborn
 - #box(fill: rgb("#808080"), width: 9pt, height: 9pt, radius: 1.5pt) Testing & Curation
 - #box(fill: rgb("#2F937A"), width: 9pt, height: 9pt, radius: 1.5pt) Performance
-- #box(fill: rgb("#3DAD8F"), width: 9pt, height: 9pt, radius: 1.5pt) Performance – Strategy
-- #box(fill: rgb("#4DC7A3"), width: 9pt, height: 9pt, radius: 1.5pt) Performance – Optimization & Configuration
-- #box(fill: rgb("#5FDFB6"), width: 9pt, height: 9pt, radius: 1.5pt) Performance – Tool Pipeline
-- #box(fill: rgb("#74F4C9"), width: 9pt, height: 9pt, radius: 1.5pt) Performance – Bashed Patch & Synthesis
-- #box(fill: rgb("#8CFFD9"), width: 9pt, height: 9pt, radius: 1.5pt) Performance – Testing & Maintenance
+- #box(fill: rgb("#3DAD8F"), width: 9pt, height: 9pt, radius: 1.5pt) Performance - Strategy
+- #box(fill: rgb("#4DC7A3"), width: 9pt, height: 9pt, radius: 1.5pt) Performance - Optimization & Configuration
+- #box(fill: rgb("#5FDFB6"), width: 9pt, height: 9pt, radius: 1.5pt) Performance - Tool Pipeline
+- #box(fill: rgb("#74F4C9"), width: 9pt, height: 9pt, radius: 1.5pt) Performance - Bashed Patch & Synthesis Configuration
+- #box(fill: rgb("#8CFFD9"), width: 9pt, height: 9pt, radius: 1.5pt) Performance - Testing & Maintenance
 - #box(fill: rgb("#A52786"), width: 9pt, height: 9pt, radius: 1.5pt) Adult Content
 - #box(fill: rgb("#49389F"), width: 9pt, height: 9pt, radius: 1.5pt) Voicing
 
