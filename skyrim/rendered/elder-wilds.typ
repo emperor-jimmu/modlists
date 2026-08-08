@@ -845,8 +845,7 @@ Vanilla autosaves, quicksaves, and manual saves all write the same `.ess` format
 
 1. Install requirements (already in Core Libraries): `JContainers SE`, `NL\_MCM - A Modular MCM Framework`, `Regional Save Names`, `SSE Engine Fixes`
 2. Install the SSSO3 main file and `SSSO3 - French` (if applicable). Place SSSO3 anywhere in load order.
-3. *Disable all vanilla autosaves* in BethINI Pie: untick Autosaves, Save on Travel, Save on Rest, Save on Wait. SSSO3 force-deactivates them, but BethINI settings prevent the INI values from conflicting.
-4. Disable `iAutoSaveCount` in `Skyrim.ini` (`[SaveGame]`) to prevent the engine from reserving autosave slots — SSSO3 manages its own.
+3. *Disable all vanilla autosaves and `iAutoSaveCount`* in BethINI Pie — see → @performance-optimization-optimization--configuration (BethINI Pie Configuration Baseline). SSSO3 force-deactivates the autosaves, but the INI settings prevent the values from conflicting.
 
 *In-game setup (required before the rotating system activates):*
 
@@ -11077,7 +11076,7 @@ Run through MO2 targeting the active profile INIs.
 
 1. *Basic:* Reset to Defaults → High preset → Apply Recommended Tweaks. Window Mode: Borderless. FOV: First Person 75, Third Person 85.
 
-2. *General → Saved Games:* Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer).
+2. *General → Saved Games:* Untick Autosaves, Save on Travel, Save on Rest, Save on Wait (survival mods handle save restrictions; manual saves are safer). Then set `iAutoSaveCount=0` under `[SaveGame]` in `Skyrim.ini` via the INI Editor — it is a slot count, not an on/off flag, so "disabled" means zero; this stops the engine from reserving rotating autosave slots (SSSO3 manages its own).
 
 3. *Gameplay:* Difficulty Adept. Untick Disable Kill Cam. Tick Remove Borders. Untick Tutorials.
 
