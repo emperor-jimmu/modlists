@@ -1254,7 +1254,7 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/33261")[Bug Fixes SSE]],
   [Crafting-menu, perk-application, and water-behavior fixes.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/52641")[Navigator - Navmesh Fixes]],
-  [Follower pathing in complex worldspaces.],
+  [Follower pathing in complex worldspaces. See FOMOD options below.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77173")[Barter Limit Fix]],
   [Merchant gold cap overflow.],
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77409")[Mum's the Word NG]],
@@ -1295,6 +1295,120 @@ Converting ESP to ESL-flagged ESP frees a regular plugin slot (limit 254) by mov
 - *Alt-Tab Stuck Key Fix* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/148466")[Nexus]) — Prevents stuck modifier keys after alt-tabbing. Optional fix, evaluate if alt-tab issues arise during testing.
 - *I'm Walkin' Here NG with Pets* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/122516")[Nexus]) — Ally/pet body-blocking fix.
 - *Bard Instrumentals Mostly - Sing Rarely* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/10927")[Nexus]) — Repetitive tavern singing. Not needed — other bard mods cover this.
+
+
+==== Navigator - Navmesh Fixes — FOMOD Options
+<foundations-and-compatibility-navigator-navmesh-fixes-fomod-options>
+
+The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches, optional add-ons, and optional extras. Picks below are verified against the modlist's current adoptions.
+
+*Step 1 — AIO or Modular* (`SelectExactlyOne`):
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Option]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [All-in-one],
+  [*Select*],
+  [Author-recommended. Single `.esl` is cleaner than ~80 modular ESPs.],
+  [Modular],
+  [Skip],
+  [Only needed for selective per-cell installs.],
+)
+
+*Step 2 — Main file* (`SelectExactlyOne`; only shown when AIO selected):
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Option]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [`.esl`],
+  [*Select*],
+  [Light master — load as high as possible. Author-recommended.],
+  [ESP-FE],
+  [Skip],
+  [Light plugin variant; only needed for manual load-order conflict solving.],
+)
+
+*Step 2 — Compatibility patches* (`SelectAny`):
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Patch]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Interesting NPCs],
+  [Skip],
+  [3DNPC is listed as an Alternative in → @npcs-npcs, not adopted.],
+  [Skyrim Sewers],
+  [Skip],
+  [Not in modlist.],
+  [Sunder and Wraithguard],
+  [*Select*],
+  [CC content is AE baseline (`ccbgssse008-wraithguard.esl` active); no vault fixer present. Both FOMOD conditions met → Recommended. Installs `SightlessNavFix.esp`.],
+)
+
+*Step 4 — Optional add-ons* (`SelectAny`; always shown):
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Add-on]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Interesting NPCs],
+  [Skip],
+  [Not adopted.],
+  [Skyrim Sewers],
+  [Skip],
+  [Not adopted.],
+  [Vigilant],
+  [*Select*],
+  [Vigilant is adopted baseline (→ AGENTS.md Session Decisions). Installs `VigilantNavFix.esp`.],
+)
+
+*Step 5 — Optional extras* (`SelectAtMostOne` / `SelectAny`):
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Extra]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Pick]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Reason]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [Abandoned Prison],
+  [*Vanilla*],
+  [Skyrim Unbound Reborn is the alternate start (→ @expanded-character-character--progression), not AS-LAL or AS Reborn. Installs `AbandonedPrisonNavFix.esp`.],
+  [Quicksilver Mine],
+  [*Select*],
+  [No Vigil Enforcer Armor Set CC conflict. Installs `QuicksilverMineNavFix.esp`.],
+  [Broken Oar script tweak],
+  [*Select*],
+  [Prevents non-standard followers from being stuck exiting Broken Oar Grotto. Installs `defaultNoEnemiesFollowDoorScript.pex`.],
+)
+
+*Resulting plugins:* `Navigator-NavFixes.esl`, `SightlessNavFix.esp`, `VigilantNavFix.esp`, `AbandonedPrisonNavFix.esp`, `QuicksilverMineNavFix.esp`.
+
+*Load order:* `Navigator-NavFixes.esl` as high as possible (light master). `SightlessNavFix.esp` after Navigator. `VigilantNavFix.esp` standalone, anywhere. The patch ESPs are all ESL-flagged — no ESL compaction needed. The separate *Navigator - Navmesh Fixes - Patch Collection* (111379) FOMOD is installed later (→ @world-content-world-content).
 
 
 
