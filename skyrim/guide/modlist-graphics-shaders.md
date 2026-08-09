@@ -34,21 +34,44 @@ How aggressive the first CS feature layer should be — improve shadowing, wetne
 | **Balanced**     | Conservative + Terrain Shadows                                       | After trees, grass, weather, water, LOD are stable |
 | **High-End**     | Balanced + SSGI, Subsurface Scattering                               | Luxury, not requirement                            |
 
-Install the CS main download (v1.7+) and enable modules via FOMOD. Install optional plugins separately.
+Install the CS main download (v1.8+) — the features below are either bundled in the core FOMOD or available as separate Nexus downloads maintained by the CS team. Toggle and tune everything in-game via the `END` key menu.
 
-### Plugins (separate downloads from core)
+### CS Built-In Features (included with core download)
 
-- **Skylighting** — Sky-driven ambient occlusion. Pairs cleanly with the conservative tier. Worth including for authentic grim-dark look.
-- **Skyrim Upscaler - DLSS FSR2 XeSS** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/80343)) — Only if real performance testing proves it's needed.
-- **Embers XD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37085)) — The fire-and-ember answer (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements.
+These ship with the main Community Shaders package — no separate download needed:
 
-Optional separate plugin downloads: `Cloud Shadows`, `Hair Specular`, `HDR`, `SSGI`, `Skylighting`, `Terrain Helper`, `Terrain Blending`, `Terrain Variation`, `Upscaling`, `Wetness Effects`.
+| Feature | Included Since |
+| --- | --- |
+| Extended Materials, LOD Blending, Volumetric Lighting, Dynamic Cubemaps, Light Limit Fix, Unified Water, Performance Overlay, Weather Picker | Always |
+| Terrain Shadows, Inverse Square Lighting, **Water Effects**, Interior Sun, Extended Translucency | v1.4.7 |
+| Screen-Space Shadows, **Grass Collision**, **Grass Lighting**, **Subsurface Scattering** | v1.5.0 |
+| Sky Sync | v1.7.0 |
+| Cloud Shadows | v1.8.0 |
 
-### Related Add-Ons
+### CS Optional Plugins (separate Nexus downloads)
 
 | Mod | Description |
 | --- | --- |
-| [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | Wetness VFX triggered by swimming, rain, and water contact. SKSE plugin, complements CS Wetness Effects. |
+| [Wetness Effects](https://www.nexusmods.com/skyrimspecialedition/mods/112739) | Rain wetness, puddles, raindrop splash/ripple VFX, shore wetness. 9.8K endorsements, v3.1.0. |
+| [HDR](https://www.nexusmods.com/skyrimspecialedition/mods/179371) | Native HDR10 output, configurable peak brightness (up to 10,000 nits), paper-white slider, BT.2020 colour space. **Requires an HDR-capable monitor.** Disable Windows Auto HDR and NVIDIA RTX HDR. 970 endorsements, v1.0.2. |
+| [Screen Space Global Illumination (SSGI)](https://www.nexusmods.com/skyrimspecialedition/mods/130375) | Realistic indirect bounce light. Performance-intensive — high-end tier only. |
+| [Skylighting](https://www.nexusmods.com/skyrimspecialedition/mods/139352) | Soft ambient sky occlusion. Pairs cleanly with the conservative tier for an authentic grim-dark look. |
+| [Hair Specular](https://www.nexusmods.com/skyrimspecialedition/mods/149011) | Anisotropic hair highlights for more realistic hair rendering. |
+| [Terrain Blending](https://www.nexusmods.com/skyrimspecialedition/mods/157076) | Seamless terrain-to-mesh transitions. |
+| [Terrain Variation](https://www.nexusmods.com/skyrimspecialedition/mods/148123) | Stochastic sampling to prevent visible tiling on terrain textures. |
+| [Terrain Helper](https://www.nexusmods.com/skyrimspecialedition/mods/143149) | Terrain rendering utilities required by some terrain features. |
+| [Upscaling](https://www.nexusmods.com/skyrimspecialedition/mods/156952) | DLSS 4 / FSR 3.1 upscaling with FSR Frame Generation. The CS-team replacement for the older Skyrim Upscaler (80343). Requires SSE Display Tweaks. 6.4K endorsements, v1.4.0. |
+| [Effects 11](https://www.nexusmods.com/skyrimspecialedition/mods/179824) | ENB preset compatibility layer via FX11 framework. Experimental — evaluate before locking. |
+
+### Other Companion Mods
+
+- **Embers XD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37085)) — Fire-and-ember baseline (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements. CS particle-light support built in.
+
+### Community Add-Ons
+
+| Mod | Description |
+| --- | --- |
+| [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | SKSE plugin — character wetness VFX from swimming, rain, and snow. Roof/heat-source detection, NPC support, PBR-aware. 1.1K endorsements, v1.5.0a. Complements CS Wetness Effects (handles actors while CS handles world surfaces). |
 
 ---
 
