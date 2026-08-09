@@ -139,6 +139,7 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 
 ### Graphics Framework
 - **Community Shaders:** Exclusive graphics framework. No ENB, no LUX. PBR texture companions (e.g. Buoyant Armiger PBR, Dark Apprentice PBR) are in-scope.
+- **Parallax hard rule — NEVER install Auto Parallax (79473) or Complex Parallax Materials (95134).** PGPatcher (120946) statically patches meshes/plugins for parallax, Complex Material, and PBR and explicitly supersedes Auto Parallax; CPM is absent from the CS v1.8+ supported-feature list and its rendering lives in CS core Extended Materials. Any question about parallax pre-reqs or either of these two is answered the same way: do not install. See `modlist-graphics-shaders.md` → Parallax Framework Dependencies.
 - **Embers XD (37085):** Baseline fire/ember mod in `modlist-graphics-lighting.md:37`. Required by Diverse Campfires (109731).
 - **GDOS — Glorious Doors of Skyrim (32376):** Baseline in `modlist-graphics-textures.md:29`. Undeath GDOS Door Patch (132038) is REQUIRED if Undeath is adopted.
 

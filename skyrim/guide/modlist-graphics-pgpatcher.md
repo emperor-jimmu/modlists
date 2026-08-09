@@ -23,5 +23,6 @@ PGPatcher is a post-installation patcher that generates parallax and PBR-compati
 
 ### Risks & Compatibility
 
+- **Do not install Auto Parallax (79473) or Complex Parallax Materials (95134)** — PGPatcher replaces both (see → `Graphics - Community Shaders` → Parallax Framework Dependencies). Never add either as a dependency for a candidate mod.
 - Running PGPatcher before the texture stack is stable means regenerating the patch each time a texture mod changes.
 - Generated output can conflict with hand-authored parallax meshes — always test before committing the generated patch.

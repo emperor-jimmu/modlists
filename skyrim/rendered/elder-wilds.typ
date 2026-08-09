@@ -1519,6 +1519,7 @@ PGPatcher is a post-installation patcher that generates parallax and PBR-compati
 === Risks & Compatibility
 <pgpatcher-risks--compatibility>
 
+- *Do not install Auto Parallax (79473) or Complex Parallax Materials (95134)* — PGPatcher replaces both (see → `Graphics - Community Shaders` → Parallax Framework Dependencies). Never add either as a dependency for a candidate mod.
 - Running PGPatcher before the texture stack is stable means regenerating the patch each time a texture mod changes.
 - Generated output can conflict with hand-authored parallax meshes — always test before committing the generated patch.
 
@@ -2007,7 +2008,7 @@ All mesh-only, no ESP.
   [Replacer for Jarl's crown, court-mage's circlet, steward's key. Mesh-only, no ESP.],
 )
 
-> *PGPatcher:* Use the PGPatcher workflow in → `Graphics - PGPatcher` for late-stage parallax generation rules.
+> *PGPatcher:* Use the PGPatcher workflow in → `Graphics - PGPatcher` for late-stage parallax generation rules. Do not add *Auto Parallax (79473)* or *Complex Parallax Materials (95134)* as requirements for parallax/CM texture packs — PGPatcher replaces both (→ `Graphics - Community Shaders` → Parallax Framework Dependencies).
 
 === Alternatives
 <textures--meshes-alternatives>

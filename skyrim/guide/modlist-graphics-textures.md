@@ -107,7 +107,7 @@ All mesh-only, no ESP.
 | [CC Fish PBRed](https://www.nexusmods.com/skyrimspecialedition/mods/131083)                 | PBR textures for CC fish. Requires free AE fish addon.                             |
 | [JS Badges of Office](https://www.nexusmods.com/skyrimspecialedition/mods/128579)           | Replacer for Jarl's crown, court-mage's circlet, steward's key. Mesh-only, no ESP. |
 
-> **PGPatcher:** Use the PGPatcher workflow in → `Graphics - PGPatcher` for late-stage parallax generation rules.
+> **PGPatcher:** Use the PGPatcher workflow in → `Graphics - PGPatcher` for late-stage parallax generation rules. Do not add **Auto Parallax (79473)** or **Complex Parallax Materials (95134)** as requirements for parallax/CM texture packs — PGPatcher replaces both (→ `Graphics - Community Shaders` → Parallax Framework Dependencies).
 
 ### Alternatives
 

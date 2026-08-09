@@ -2,6 +2,7 @@
 
 ## Resolutions
 
+- **Auto Parallax (79473) + Complex Parallax Materials (95134)** — **DO NOT INSTALL (hard exclusion).** PGPatcher (120946) statically patches meshes/plugins for parallax, Complex Material, and PBR; its author explicitly states it replaces Auto Parallax ("You no longer should install prepatched meshes nor auto parallax"). CPM is not on the CS v1.8+ supported-feature list ("Do not install legacy features outside this list; they will cause issues") — its complex-material/parallax rendering is now CS core Extended Materials — and it hard-depends on the obsolete Auto Parallax. Both unmaintained (Nov 2022 / Mar 2024). Any candidate or dependency chain referencing either is rejected on sight. See `modlist-graphics-shaders.md` → Parallax Framework Dependencies.
 - **Dragon Bard Ultimate (151231)** — REJECTED. Skyrim's Got Talent is locked as the bard gameplay baseline. Dragon Bard Ultimate adds playable instruments + singing with custom animations but conflicts with the locked baseline. Heavy Pandora maintenance cost for niche value. Revisit only if Bard College expansion becomes a priority.
 
 - Test Beards of Power under CS lighting for neck clipping.
