@@ -121,8 +121,8 @@ The mesh/data side of parallax and complex materials is handled by **PGPatcher**
 
 ---
 
-## Physically Based Rendering (PBR) Support
-PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions.
+## Physically Based Rendering (PBR) Support → separators: `Graphics - Textures & Meshes` / `Graphics - Terrain & Flora`
+PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions. The mods below install under their asset-class separators: general texture packs (Vanilla PBR AIO, Tomato's Whiterun/Farmhouses, Great Cities, PBR Hub) under `Graphics - Textures & Meshes`; landscape and rock packs (Faultier's PBR Landscapes, Enhanced Rocks and Mountains, TomatoRim) under `Graphics - Terrain & Flora`. Landscape/rock picks are decided in that file — TomatoRim and ERM are locked there, Cathedralist's is rejected.
 
 ### Baseline — Balanced PBR Route
 
@@ -163,10 +163,9 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 
 ### Priority 2 Candidate Mods
 
-- **A Cathedralist's PBR Landscape** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/137333))
-- **TomatoRim PBR Landscapes AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/177621))
-- **PBR textures for The Great Cities Collection** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133493))
-- **PBR Hub** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139889)) — Discovery hub for later expansion.
+- **PBR textures for The Great Cities Collection** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/133493)) — `Graphics - Textures & Meshes`
+- **PBR Hub** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139889)) — Discovery hub for later expansion. `Graphics - Textures & Meshes`
+- Landscape additions are owned by → `Graphics - Terrain & Flora` — TomatoRim PBR Landscapes AIO (177621) and Enhanced Rocks and Mountains (121336) are locked there; Cathedralist's PBR Landscape (137333) is rejected. No open landscape candidates belong in this section.
 
 ### Working Rollout Order
 
@@ -175,7 +174,7 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 3. Install **Enhanced Rocks and Mountains** after VPBR — overrides VPBR's mountain textures.
 4. Optionally install **Tomato's PBR Whiterun** and **Tomato's PBR Farmhouses 2.0** after VPBR.
 5. Run **PGPatcher** last — all PBR texture mods above require it.
-6. Only after core stack passes review, test optional landscape additions (`Cathedralist's PBR Landscape`, `TomatoRim PBR Landscapes AIO`).
+6. Landscape and rock overrides are owned by → `Graphics - Terrain & Flora` (TomatoRim and ERM locked there) — evaluate any landscape additions in that file, not here.
 
 ### Risks & Compatibility
 
