@@ -1,0 +1,68 @@
+{
+  "biomes": {
+    "temperature_multiplier": 1.0,
+    "temperature_offset": 0.0,
+    "temperature_scale": 0.25,
+    "vegetation_multiplier": 1.0,
+    "vegetation_offset": 0.0,
+    "vegetation_scale": 0.25
+  },
+  "caves": {
+    "carvers_enabled": true,
+    "cheese_additive": 0.27,
+    "cheese_enabled": true,
+    "depth_cutoff_size": 0.1,
+    "depth_cutoff_start": 0.1,
+    "noodle_additive": -0.075,
+    "noodle_enabled": true,
+    // Alters ore generation to generate at more acceptable levels when min_y is lowered.
+    "ore_fix": true,
+    "spaghetti_enabled": true
+  },
+  "continents": {
+    "continents_scale": 0.13,
+    "erosion_scale": 0.25,
+    "flat_terrain_skew": 0.1,
+    "jungle_pillars": true,
+    "ocean_offset": -0.8,
+    "ridge_scale": 0.25,
+    "river_ice": false,
+    "river_lanterns": true,
+    "rolling_hills": true,
+    "underground_rivers": true
+  },
+  "experimental": {
+    "alternate_continents_scaling": false,
+    "alternate_erosion_scaling": false
+  },
+  "general": {
+    "mod_enabled": true,
+    "snow_start_offset": 128
+  },
+  "global_terrain": {
+    "elevation_boost": 0.0,
+    "lava_tunnels": true,
+    "max_y": 320,
+    // Lower bedrock by 32 blocks to give 68 blocks of stone below the trench floor.
+    "min_y": -96,
+    "ultrasmooth": false,
+    "vertical_scale": 1.125
+  },
+  "islands": {
+    "enabled": true,
+    "noise_multiplier": 1.0,
+    "noise_offset": 0.0,
+    "noise_scale": 0.11
+  },
+  "minor_version": 1,
+  "oceans": {
+    // 0 is at sea level. |value| / 0.5 * 64 = blocks below Y=62.
+    // -0.7 → ~90 blocks deep, trench floor at Y=-28 (deepslate).
+    "deep_ocean_depth": -0.7,
+    // Offsets ocean monuments to float ~20 blocks above the trench floor.
+    "monument_offset": -55,
+    // -0.35 → ~45 blocks deep, standard ocean floor at Y=17.
+    "ocean_depth": -0.35,
+    "remove_frozen_ocean_ice": false
+  }
+}

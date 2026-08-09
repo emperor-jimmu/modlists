@@ -488,6 +488,16 @@ PUT 90.*:
 - [x] EMIffect (Wave 0.5 — Inventory & UI) — status effects in EMI browser with descriptions, sources, and colors. Client-side only, zero deps beyond EMI, MIT license. Complements Status Effect Bars Reforged (HUD display vs EMI lookup).
 - [x] Fresh Animations: Extensions (Wave 0 — Texture Packs) — official FA all-in-one bundle by FreshLX: 8 extensions (Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow). Replaces individual Objects addon. 16x, vanilla-friendly. Load above Fresh Animations. 20.5M DL.
 
+
+### Added Config — Tectonic Ocean Depth (Aug 2026)
+
+- [x] Deeper oceans via Tectonic v3 config: `ocean_depth: -0.35` (45 blocks), `deep_ocean_depth: -0.7` (90 blocks, trench floor at Y=-28 deepslate), `monument_offset: -55`, `min_y: -96`, `ore_fix: true`
+- [x] `ore_fix: true` redistributes ores to fill the expanded vertical range between bedrock (Y=-96) and trench floor (Y=-28)
+- [x] `min_y: -96` gives 68 blocks of stone/ores below the trench floor — room for Darker Depths cave biomes + YUNG's Better Caves + underground rivers
+- [x] Config override `config/tectonic.json` committed — 5 values changed from defaults
+- [x] GUIDE.md Wave 2: Tectonic config section added — table with all 5 settings, depth formula, ore generation explanation, verification steps
+- [x] Reviewed Deeper Oceans mod alternative — rejected (incompatible with Tectonic; Tectonic's own ocean depth config is more flexible and already integrated)
+
 ### Skipped After Review (Aug 2026 batch 26)
 
 - [x] Advancements Reloaded — redundant: Better Advancements (UI) + Advancement Plaques (popups) cover this; mod warns about conflicts with other advancement mods
