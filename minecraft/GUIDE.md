@@ -1611,7 +1611,9 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [YUNG\'s Better Nether Fortresses](https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses) | Improved nether fortresses       |
 | [YUNG\'s Better Caves](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves)                         | Larger, more varied caves        |
 | [Structory](https://www.curseforge.com/minecraft/data-packs/structory)                                          | New hand-crafted structures      |
-| [Towns & Towers](https://www.curseforge.com/minecraft/data-packs/towns-and-towers)                              | Better village generation        |
+| [Structory: Towers](https://www.curseforge.com/minecraft/mc-mods/structory-towers) v1.0.16                    | Biome-themed towers and outposts — **use v1.0.16** (v1.0.17 crashes on NeoForge) |
+| [YUNG\'s Bridges](https://modrinth.com/mod/yungs-bridges)                                                       | 15+ natural bridges across terrain |
+| [YUNG\'s Extras](https://modrinth.com/mod/yungs-extras)                                                         | Desert wells, obelisks, ruins, pillars |
 
 ### Dimensions
 
@@ -1629,11 +1631,13 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | [**End Remastered**](https://www.curseforge.com/minecraft/mc-mods/endremastered) v6.3.0                | Portal progression overhaul — 16 custom Ender Eyes hidden across vanilla structures and bosses. Find 12+ to open the End portal |
 | [**Moog\'s End Structures**](https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures) v2.0.3 | New structures to fill the End dimension                                          |
-| [Nullscape](https://www.curseforge.com/minecraft/data-packs/nullscape) (data pack)                     | End terrain overhaul — surreal alien landscapes, new sky colors                   |
+| [**YUNG\'s Better End Island**](https://modrinth.com/mod/yungs-better-end-island)                      | Overhauled dragon island — redesigned pillars, gateways, bell-tower summoning, new portal structure |
 
 **End Remastered** replaces vanilla Ender Eyes with 16 custom eyes scattered across vanilla structures and bosses. The Cryptic Eye comes from enchanting, the Evil Eye from master clerics, the Wither Eye from the Wither — each eye has a unique source. Once you have 12+, follow them to a stronghold and insert all 12 to open the portal. This turns reaching the End from a grind (kill Endermen for pearls) into an exploration-driven scavenger hunt.
 
 **Nullscape**: A data pack that transforms the End's terrain into alien shapes (floating islands, spires, arches, voids) with unique sky colors per biome. Nullscape handles terrain shape and sky only — it does not add biomes. Install as a data pack in the world's `datapacks/` folder.
+
+**YUNG's Better End Island**: Overhauls the main End island where the dragon fight takes place. Redesigned obsidian pillars, End gateways, spawn platform, and central portal structure. The dragon no longer spawns automatically — approach the bell tower in the center to begin the fight. Resummoning uses crystals on four bedrock blocks in the tower wings (vanilla positions also work). Dragon AI and difficulty are unchanged — this is a visual and atmospheric upgrade only. Requires YUNG's API.
 
 ### Navigation
 
@@ -1685,7 +1689,6 @@ Recommended companion mods:
 
 **Interdependency note — Twilight Forest + Apotheosis**: Apotheosis boss affixes (Wave 3) apply to Twilight Forest bosses. A Naga with the "Tough" affix is significantly harder. This is intended — it keeps dimension bosses relevant even with late-game gear. If a boss feels too strong, the player can return after better equipment or use Apotheosis gems/runes for the edge.
 
-**Interdependency note — Towns & Towers + Cristel Lib**: Towns & Towers requires **Cristel Lib** (included in Wave 2 Dependencies above). Without it the game will crash at startup. Cristel Lib provides structure config and runtime datapack support that Towns & Towers relies on for its biome-specific village variants.
 
 **Tectonic** (`config/tectonic.json`):
 
@@ -1744,11 +1747,16 @@ Every vanilla structure is expanded:
 | Better Ocean Monuments   | New rooms, more elder guardians             | Better sponge room loot               |
 | Better Witch Huts        | Expanded hut with potion lab                | Brewing supplies, potions             |
 | Better Nether Fortresses | Districts (blaze, wither skeleton, strider) | Nether wart, blaze rods, skulls       |
+| Better End Island        | Redesigned pillars, bell tower, new portal  | Dragon egg, gateway access            |
 
-#### Structory + Towns & Towers
+#### Structory, Structory Towers & YUNG's Additions
 
 - **Structory** — dozens of hand-crafted structures: camps, shrines, castles, towers, walled towns
-- **Towns & Towers** — villages generate with unique architecture per biome style. Each biome gets its own building designs
+- **Structory: Towers** — biome-themed towers, outposts, and landmarks with custom loot. Integrates with Waystones — towers often have a Waystone nearby. **Use v1.0.16** — v1.0.17 crashes on NeoForge with a config-loading race condition (`Cannot get config value before config is loaded`)
+- **YUNG's Bridges** — 15+ types of naturally generated bridges with biome-specific variants, spanning rivers and ravines
+- **YUNG's Extras** — small vanilla+ additions: improved Desert Wells (rare Wishing Wells with treasure), Desert Obelisks, Flame Outposts, scattered ruins and pillars
+
+All require **YUNG's API** (already in Wave 0.5 Dependencies). Structory and Structory: Towers are independent — install both for maximum structure variety.
 
 **What to do**: Explore! Mark interesting structures on your JourneyMap (fullscreen map → right-click to set waypoint). Return with an Explorer's Compass.
 
@@ -2025,7 +2033,14 @@ The End portal now requires a scavenger hunt instead of a grind.
 
 ### End Dimension
 
-Moog's End Structures adds towers, ruins, and dungeons with loot better than vanilla End cities. Nullscape (data pack) overhauls terrain into surreal alien shapes — floating islands, spires, arches, void pits, unique sky colors per biome. Install in `datapacks/` folder.
+The End is now a layered destination — each mod handles a distinct piece:
+
+| Mod | What it does |
+|-----|-------------|
+| **End Remastered** | How you get here — 16 custom Ender Eyes scattered across the world |
+| **YUNG's Better End Island** | The main island — redesigned dragon arena with bell-tower summoning |
+| **Nullscape** (data pack) | The outer islands — surreal floating terrain, spires, arches, unique sky colors |
+| **Moog's End Structures** | Structures on outer islands — towers, ruins, dungeons with better-than-vanilla loot |
 
 **Ender's Delight** (Wave 4) adds food cooked from End ingredients — useful status effects for End exploration.
 
@@ -3331,7 +3346,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 0.5 — Player Experience | 57      | —      | 57      | Visual & Client QoL (33), Inventory & UI (20), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
-| Wave 2 — Exploration         | 26      | 6      | 32      | YUNG's (9), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (2 + Nullscape dp + 6 deps), navigation, aircraft, ships, hang glider, IaA addon                                                                          |
+| Wave 2 — Exploration         | 29      | 5      | 34      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, IaA addon                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
 | Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
@@ -3339,7 +3354,7 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **165** | **42** | **207** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **168** | **41** | **209** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 

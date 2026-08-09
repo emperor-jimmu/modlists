@@ -50,7 +50,7 @@ function Test-TypstInstall() {
 function Compile-Guide() {
   Write-Host ""
   Write-Host "Compiling Driftwood Guide..." -ForegroundColor Cyan
-  $sourceFile = Join-Path $ProjectRoot "templates" "guide.typ"
+  $sourceFile = Join-Path (Join-Path $ProjectRoot "templates") "guide.typ"
   $outputPdf = Join-Path $RenderedDir "DRIFTWOOD-GUIDE.pdf"
 
   $result = typst compile --root $ProjectRoot $sourceFile $outputPdf 2>&1

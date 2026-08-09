@@ -50,15 +50,15 @@ PUT 90.*:
 - [x] Interdependency notes written (Forgematica × Create / MineColonies / AE2 / Apotheosis)
 - [x] Session plan written (5 progressive building sessions)
 
-### Wave 2 — Exploration (~31 mods)
+### Wave 2 — Exploration (~33 mods)
 
 - [x] Worldgen: Terralith, Tectonic, End Remastered, Moog's End Structures
-- [x] Structures: YUNG's full collection (10 mods), Structory, Towns & Towers
+- [x] Structures: YUNG's full collection (12 mods: 9 Better series + Bridges + Extras + Better End Island), Structory, Structory: Towers
 - [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
 - [x] Navigation: Explorer's Compass
 - [x] Mobility: Immersive Aircraft, Small Ships
 - [x] Aquatic: Hybrid Aquatic (marine creatures, diving armor, corals)
-- [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, Cristel Lib (Towns & Towers)
+- [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib
 
 ### Wave 3 — Equipment Magic & RPG (~18 mods incl. 10 deps)
 
@@ -503,3 +503,15 @@ PUT 90.*:
 - [x] Advancements Reloaded — redundant: Better Advancements (UI) + Advancement Plaques (popups) cover this; mod warns about conflicts with other advancement mods
 - [x] Continuity — already skipped (STATUS.md §304): Fabric-native, requires Sinytra Connector bridge on NeoForge; Fusion covers connected textures natively
 - [x] Immersive Hotbar — already in pack since Jul 2026 batch 22
+
+### Removed Mods (Aug 2026 — Wave 2 Restructure)
+
+- [x] Towns & Towers — removed data pack. Replaced by Structory: Towers + YUNG's Bridges + YUNG's Extras for superior structure variety without the Cristel Lib dependency burden
+- [x] Cristel Lib — removed dependency (only used by Towns & Towers)
+
+### Added Mods (Aug 2026 — Wave 2 Restructure)
+
+- [x] Structory: Towers v1.0.16 (Wave 2 — Structures) — biome-themed towers, outposts, and landmarks with custom loot. Waystones integration. Standalone .jar mod. **v1.0.17 is broken** on NeoForge (config-loading race condition, crashes with Mod Menu). CurseForge.
+- [x] YUNG's Bridges (Wave 2 — Structures) — 15+ naturally generated bridges with biome-specific variants. Requires YUNG's API. Modrinth (NeoForge 1.21.1 builds)
+- [x] YUNG's Extras (Wave 2 — Structures) — small vanilla+ additions: improved Desert Wells (rare Wishing Wells), Desert Obelisks, Flame Outposts, ruins, pillars. Requires YUNG's API. Modrinth (NeoForge 1.21.1)
+- [x] YUNG's Better End Island (Wave 2 — End Access & Structures) — overhauls the main End island dragon arena: redesigned pillars, gateways, bell-tower summoning, new portal structure. Dragon AI unchanged. Requires YUNG's API. Modrinth (NeoForge 1.21.1)
