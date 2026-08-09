@@ -1716,18 +1716,20 @@ These ship with the main Community Shaders package — no separate download need
 
 == Parallax Framework Dependencies
 <community-shaders-parallax-framework-dependencies>
-Auto Parallax and Complex Parallax Materials form the parallax rendering layer bridging CS parallax support with mesh and texture mods downstream.
+The mesh/data side of parallax and complex materials is handled by *PGPatcher*; the rendering side is built into Community Shaders core (*Extended Materials*). The legacy pair — Auto Parallax and Complex Parallax Materials — is obsolete and must not be installed.
 
 === Baseline
 <community-shaders-baseline-2>
 
-- Install *Auto Parallax* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79473")[Nexus]) and *Complex Parallax Materials* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/95134")[Nexus]) as infrastructure before adding parallax-enabled textures or meshes. CPM hard-depends on Auto Parallax. Install after the texture stack is mostly chosen but before PGPatcher runs.
+- *PGPatcher* (→ `Graphics - PGPatcher`) statically patches meshes and plugins so installed textures — vanilla parallax, Complex Material, or PBR — render correctly. The author's own description: "You no longer should install prepatched meshes nor auto parallax as PGPatcher will take care of that for you."
+- *Auto Parallax* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/79473")[Nexus]) — *NOT installed.* Runtime disable-parallax plugin, unmaintained since Nov 2022, explicitly superseded by PGPatcher.
+- *Complex Parallax Materials* (#link("https://www.nexusmods.com/skyrimspecialedition/mods/95134")[Nexus]) — *NOT installed.* Legacy feature absent from the CS v1.8+ supported-feature list ("Do not install legacy features outside this list; they will cause issues"). Its complex-material/parallax rendering now lives in CS core Extended Materials, and it hard-depends on the obsolete Auto Parallax.
 
 === Risks & Compatibility
 <community-shaders-risks--compatibility-3>
 
-- Without Auto Parallax, Complex Parallax Materials will not function — both must be present.
-- Installing too early means regenerating parallax data after texture changes; install after the main texture stack is locked.
+- Texture packs that ship hand-authored parallax meshes can conflict with PGPatcher's generated output — prefer letting PGPatcher generate from textures and test before committing generated patches.
+- Re-run PGPatcher whenever a major landscape, architecture, ruins, or clutter texture pack is replaced.
 
 ---
 
