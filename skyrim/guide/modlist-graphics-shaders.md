@@ -121,18 +121,27 @@ The mesh/data side of parallax and complex materials is handled by **PGPatcher**
 
 ---
 
-## Physically Based Rendering (PBR) Support → separators: `Graphics - Textures & Meshes` / `Graphics - Terrain & Flora`
-PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions. The mods below install under their asset-class separators: general texture packs (Vanilla PBR AIO, Tomato's Whiterun/Farmhouses, Great Cities, PBR Hub) under `Graphics - Textures & Meshes`; landscape and rock packs (Faultier's PBR Landscapes, Enhanced Rocks and Mountains, TomatoRim) under `Graphics - Terrain & Flora`. Landscape/rock picks are decided in that file — TomatoRim and ERM are locked there, Cathedralist's is rejected.
+## Physically Based Rendering (PBR) Support → separators: `Graphics - Textures & Meshes` / `Graphics - Terrain & Flora` / `Graphics - PGPatcher`
+PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions. The mods below install under their asset-class separators: general texture packs under `Graphics - Textures & Meshes`; landscape and rock packs under `Graphics - Terrain & Flora`. Landscape/rock picks are decided in that file — TomatoRim and ERM are locked there, Cathedralist's is rejected. Every install below requires **PGPatcher** (→ `Graphics - PGPatcher`), run after the texture stack settles.
 
 ### Baseline — Balanced PBR Route
 
-Broad AIO base + targeted terrain and rock overrides.
+Broad AIO base + targeted terrain and rock overrides, split by owning separator.
+
+#### `Graphics - Textures & Meshes`
 
 - **Vanilla PBR AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174091), 11.5 GB) — Primary base. Covers all architecture, clutter, actors, dungeons with vanilla-faithful art direction.
-- **Faultier's PBR Landscapes 4k** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125308), 3.0 GB) — Fills VPBR's terrain gap. Do NOT install `Faultier's Skyrim AIO` alongside VPBR.
-- **Enhanced Rocks and Mountains - Complex Material and PBR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336)) — Modern rock/mountain overhaul. Load after VPBR to override its mountain textures. Install both main files (meshes then textures, choose PBR in FOMOD).
 - **Tomato's PBR Whiterun** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135771)) — Optional Whiterun override. Install 2K (735 MB), skip 4K (2 GB). Optional: `Improved Dragon Carvings` (beta, 2K) and `PBR Talos`.
 - **Tomato's PBR Farmhouses 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135774)) — Optional farmhouse override. Install Grey 2K (84 MB), skip 4K. Optional: `WSU PBR Farmhouse windows patch` if Window Shadows Ultimate is in the stack.
+
+#### `Graphics - Terrain & Flora`
+
+- **Faultier's PBR Landscapes 4k** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125308), 3.0 GB) — Fills VPBR's terrain gap. Do NOT install `Faultier's Skyrim AIO` alongside VPBR.
+- **Enhanced Rocks and Mountains - Complex Material and PBR** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/121336)) — Modern rock/mountain overhaul. Load after VPBR to override its mountain textures. Install both main files (meshes then textures, choose PBR in FOMOD).
+
+#### `Graphics - PGPatcher`
+
+- **PGPatcher** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/120946)) — Required post-installation patcher for every PBR mod above. Workflow and rules live in → [PGPatcher Workflow](modlist-graphics-pgpatcher.md).
 
 Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** as standard features. Verify the chosen PBR texture set uses both before adding extra reflection/cubemap mods.
 
