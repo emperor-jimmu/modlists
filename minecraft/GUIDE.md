@@ -221,6 +221,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [Fire Rekindled](https://modrinth.com/resourcepack/fire-rekindled)                                                                           | Animated fire, lava, water, and portal textures — includes Create mod support   |
 | [Bushy Pink Petals, Wildflowers & Leaf Litter](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter) | 3D models for pink petals, wildflowers, and leaf litter on the ground           |
 | [Fresh Animations: Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)                               | Official FA extension bundle — 8 addons: Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow |
+| [MissingSoundsFix](https://modrinth.com/resourcepack/missingsoundsfix)                                                                 | Suppresses vanilla empty-sound warnings (salmon.ambient, cod.ambient, etc.) — fixes log spam from MC-97521 |
 
 **Smooth Font** replaces Minecraft's pixelated default font with a clean, smooth 32x typeface based on Faithful 32x. Improves readability across menus, chat, and UI while keeping a vanilla-friendly look. Only overrides font textures — safe to use alongside any 16x resource packs. By apt9002. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
 
@@ -240,6 +241,9 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 **Fresh Animations: Extensions** is the all-in-one bundle of official FA extensions by FreshLX. Contains all 8 addons in a single download: **Objects** (animated chests/boats/minecarts/shulker boxes), **Details** (extra model details + texture variations for farm animals), **Emissive** (glowing mob eyes/features for shaders — works with Complementary Unbound), **Creepers** (custom creeper textures + rare model variants), **Spiders** (more detailed/realistic spider models), **Quivers** (quiver models on skeletons/strays/bogged), **Classic Horses** (1.12-era horse look with modern animations), and **Slamacow** (character variants). Load above Fresh Animations in the pack order. All 16x, vanilla-friendly. By FreshLX. 20.5M downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
 
+
+**MissingSoundsFix** suppresses vanilla empty-sound warnings (`salmon.ambient`, `cod.ambient`, `pufferfish.ambient`, `tropical_fish.ambient`) that spam the log. This is a vanilla Minecraft bug (MC-97521) — Mojang registered ambient sound events for fish but never shipped audio files. The resource pack provides dummy sound mappings that silence the warnings. No sound is actually changed. Pure resource pack, works on any version. By Tilera. 144K downloads. [Source (Modrinth)](https://modrinth.com/resourcepack/missingsoundsfix)
+
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
 1. Smooth Font
@@ -251,6 +255,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 7. Fire Rekindled
 8. Bushy Pink Petals, Wildflowers & Leaf Litter
 9. Fresh Animations: Extensions
+10. MissingSoundsFix
 
 ### Infrastructure
 
@@ -294,8 +299,9 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 | CPU Load                   | Aggressive |
 | Enable Cloud Rendering     | OFF        |
 | Show LOD Gen Progress      | ON         |
+| Distant Generator Mode     | INTERNAL_SERVER | **Prevents Better Caves crash** — avoids off-thread chunk gen that triggers Null AquiferContext |
 
-> **Tip**: DH generates LOD data as you explore. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer initially. Monitor VRAM — shaders + DH at 4K can push past 12GB.
+> **Tip**: DH generates LOD data as you explore, in new chunks only. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer than vanilla. `INTERNAL_SERVER` mode avoids a known crash with YUNG's Better Caves (Null AquiferContext). Trade-off: slightly larger world files. Monitor VRAM — shaders + DH at 4K can push past 12GB.
 
 #### 3. Shader Setup
 
