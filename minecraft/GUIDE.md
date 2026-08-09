@@ -220,6 +220,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 | [(Bee's) Fancy Crops](https://modrinth.com/resourcepack/fancy-crops)                                                                         | Reworked crop models with texture variations — compatible with Farmer's Delight |
 | [Fire Rekindled](https://modrinth.com/resourcepack/fire-rekindled)                                                                           | Animated fire, lava, water, and portal textures — includes Create mod support   |
 | [Bushy Pink Petals, Wildflowers & Leaf Litter](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter) | 3D models for pink petals, wildflowers, and leaf litter on the ground           |
+| [Fresh Animations: Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)                               | Official FA extension bundle — 8 addons: Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow |
 
 **Smooth Font** replaces Minecraft's pixelated default font with a clean, smooth 32x typeface based on Faithful 32x. Improves readability across menus, chat, and UI while keeping a vanilla-friendly look. Only overrides font textures — safe to use alongside any 16x resource packs. By apt9002. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/smooth-font)
 
@@ -237,6 +238,8 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 
 **Bushy Pink Petals, Wildflowers & Leaf Litter** replaces flat pink petals, wildflowers, and leaf litter with 3D models. Makes ground cover look thicker and more natural — petals and leaves pile up with visible depth. Apache 2.0 licensed, actively maintained. By godhusk. 178K downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals-wildflowers-leaf-litter)
 
+**Fresh Animations: Extensions** is the all-in-one bundle of official FA extensions by FreshLX. Contains all 8 addons in a single download: **Objects** (animated chests/boats/minecarts/shulker boxes), **Details** (extra model details + texture variations for farm animals), **Emissive** (glowing mob eyes/features for shaders — works with Complementary Unbound), **Creepers** (custom creeper textures + rare model variants), **Spiders** (more detailed/realistic spider models), **Quivers** (quiver models on skeletons/strays/bogged), **Classic Horses** (1.12-era horse look with modern animations), and **Slamacow** (character variants). Load above Fresh Animations in the pack order. All 16x, vanilla-friendly. By FreshLX. 20.5M downloads. [Source (CurseForge)](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions)
+
 **Installation**: Install via XMCL — drop `.zip` files into the instance's Resource Packs tab, or copy them into the instance's `resourcepacks/` folder (access via instance settings). Load order (top = highest priority):
 
 1. Smooth Font
@@ -247,6 +250,7 @@ Distant Horizons handles far rendering — keep vanilla render distance low. DH 
 6. (Bee's) Fancy Crops
 7. Fire Rekindled
 8. Bushy Pink Petals, Wildflowers & Leaf Litter
+9. Fresh Animations: Extensions
 
 ### Infrastructure
 
@@ -493,6 +497,7 @@ This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn t
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
 | [Traveler Tool Belt](https://www.curseforge.com/minecraft/mc-mods/traveler-tool-belt)         | Tool radial menu — hold R for quick-swap, 2→9 slots via upgrades   |
 | [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)                       | Search keybinds by name, show only conflicting binds, list available keys — no dependencies   |
+| [EMIffect](https://www.curseforge.com/minecraft/mc-mods/emiffect)                             | Status effects in EMI browser — descriptions, sources, colors for all modded effects |
 
 ### Storage & Travel
 
@@ -850,6 +855,10 @@ Quick-swap tool access without opening your inventory. Hold **R** (configurable 
 Search keybinds by name in the Controls menu. "Show Conflicts" button highlights only conflicting binds so you can fix them fast. Lists all available (unbound) keys. Essential for a 150+ mod pack — the vanilla keybind menu without Controlling is a wall of unsortable text. No dependencies, no config needed.
 
 ---
+
+#### EMIffect
+
+Status effects are browsable in EMI — search any effect name to see its description, what mod adds it, and its icon colors. Works like a built-in wiki for status effects from Apotheosis, Relics, Simply Swords, Runes, Brewin' And Chewin', and any mod that ships JEED-format descriptions. Complements Status Effect Bars Reforged — SEBR shows active effects on your HUD; EMIffect lets you look up any effect in EMI whether you have it or not. Client-side only, no dependencies beyond EMI, no config needed.
 
 ### Storage & Travel
 

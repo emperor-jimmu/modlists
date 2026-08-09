@@ -22,7 +22,7 @@ PUT 90.*:
 
 - [x] Performance: Sodium, Iris, Lithium, Distant Horizons, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS, NoisiumForked
 - [x] Visual/Client QoL: LambDynamicLights, BetterF3, Sound Physics Remastered, AmbientSounds, The Immersive Music Mod, Immersive UI, Status Effect Bars Reforged, Traveler's Titles, Better Modlist, First Person Model, 3D Skin Layers, Better Safe Bed, Presence Footsteps, Particular Reforged, Wakes Reforged, Cosy Critters, Foxified Dense Flowers
-- [x] Inventory/UI: EMI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Inventory Essentials, Advancement Plaques, Tooltip Overhaul, Loot Journal, Better Advancements, Polymorph+, Shulker Box Tooltip, Item Borders
+- [x] Inventory/UI: EMI, Jade, Jade Addons, JourneyMap + Integration, AppleSkin, Inventory Essentials, Advancement Plaques, Tooltip Overhaul, Loot Journal, Better Advancements, Polymorph+, Shulker Box Tooltip, Item Borders, EMIffect
 - [x] Storage & Travel: Sophisticated Storage, Sophisticated Backpacks, Waystones, GraveStone Mod
 - [x] Dependencies: Cloth Config, Architectury API, YACL, Curios API, CreativeCore, OctoLib (ShatterLib), Fragmentum, M.R.U, Balm, Iceberg
 - [x] Added YUNG's API to New Dependencies
@@ -482,3 +482,14 @@ PUT 90.*:
 - [x] Config override `config/torchmaster-common.toml` — mega_torch_radius=48 (village-sized zone), feral_flare_radius=24. [VERIFY] exact keys after first launch.
 - [x] GUIDE.md Wave 5: Torchmaster mod row, "Torchmaster — Conquering the Land" section (5-step conquest loop: scout → clear → harvest → craft → plant), config notes, Chill Rule check. Wave 5 session plan Session 7 (First Conquest). Mod counts: Wave 5 7→8 mods, 13→14 total. Grand total 164→165.
 - [ ] Verify Torchmaster config key names against generated `torchmaster-common.toml` after test launch; reconcile with documented override.
+
+### Added Mods (Aug 2026 batch 26 — Mod Review)
+
+- [x] EMIffect (Wave 0.5 — Inventory & UI) — status effects in EMI browser with descriptions, sources, and colors. Client-side only, zero deps beyond EMI, MIT license. Complements Status Effect Bars Reforged (HUD display vs EMI lookup).
+- [x] Fresh Animations: Extensions (Wave 0 — Texture Packs) — official FA all-in-one bundle by FreshLX: 8 extensions (Objects, Details, Emissive, Creepers, Spiders, Quivers, Classic Horses, Slamacow). Replaces individual Objects addon. 16x, vanilla-friendly. Load above Fresh Animations. 20.5M DL.
+
+### Skipped After Review (Aug 2026 batch 26)
+
+- [x] Advancements Reloaded — redundant: Better Advancements (UI) + Advancement Plaques (popups) cover this; mod warns about conflicts with other advancement mods
+- [x] Continuity — already skipped (STATUS.md §304): Fabric-native, requires Sinytra Connector bridge on NeoForge; Fusion covers connected textures natively
+- [x] Immersive Hotbar — already in pack since Jul 2026 batch 22
