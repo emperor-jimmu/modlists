@@ -1691,13 +1691,13 @@ Recommended companion mods:
 | `caves.ore_fix` | `false` | **`true`** | Redistributes ores when terrain extends below vanilla Y=-64 |
 | `global_terrain.min_y` | `-64` | **`-96`** | Lower bedrock to give 68 blocks of crust below the trench floor |
 
-**How depths work**: The noise value maps linearly: $|\text{value}| / 0.5 \times 64$ = blocks below sea level (Y=62). With `deep_ocean_depth: -0.7`, trench floors sit at Y=-28 — solid deepslate, lit only by prismarine and sea pickles. Standard oceans bottom out ~45 blocks deep. Monuments float ~20 blocks above the trench floor, silhouetted against the abyss.
+**How depths work**: The noise value maps linearly — `|value| / 0.5 × 64` = blocks below sea level (Y=62). With `deep_ocean_depth: -0.7`: $0.7 / 0.5 times 64 = 90$ blocks deep, trench floor at Y=-28 (solid deepslate). With `ocean_depth: -0.35`: $0.35 / 0.5 times 64 = 45$ blocks deep, floor at Y=17. `monument_offset: -55` places ocean monument bases at Y=-16, hovering 12 blocks above the trench floor.
 
 **Ore generation with `min_y: -96` + `ore_fix: true`**: Lowering bedrock expands the vertical range ore must cover. `ore_fix` remaps ore distributions to the new depth envelope — diamond still clusters near the bottom, iron and coal fill the expanded crust. Without `ore_fix`, the extra stone between Y=-64 and Y=-96 would be barren.
 
 > **⚠️ New world required**: These are worldgen changes. Existing chunks keep their old terrain. Pre-generate with Chunky: fly to ocean → `/chunky radius 300` → `/chunky start`.
 
-**Quick verification**: Stand at ocean surface (Y=62), look down with F3 open. Deep oceans should show the floor at Y=-28 (±5). Standard oceans at Y=17 (±5). Monuments at Y=7 (±5). If values are off, adjust in-game via Mod Menu → Tectonic → Configure.
+**Quick verification**: Stand at ocean surface (Y=62), look down with F3 open. Deep oceans should show the floor at Y=-28 (±5). Standard oceans at Y=17 (±5). Monuments should have their base at Y=-16 (±5) — floating ~12 blocks above the trench floor. If values are off, adjust in-game via Mod Menu → Tectonic → Configure.
 
 The world is dramatically transformed. Terralith overhauls biomes, Tectonic reshapes terrain, YUNG's expands every structure, and three new dimensions open up.
 
@@ -1709,7 +1709,6 @@ The world is dramatically transformed. Terralith overhauls biomes, Tectonic resh
 |-----------|--------------------------------------------------------------------------------------|--------------------------------------------|
 | Mountains | Taller, steeper. Painted mountains (orange/white layers), volcanic peaks             | Build in mountain valleys                  |
 | Oceans    | 90-block abyssal trenches, 45-block ocean floor, monuments floating in the deep | Use Small Ships (below) to cross, dive with Hybrid Aquatic gear |
-| Biomes    | 80+ overhauled — redwood forests (200+ block trees), cherry groves, floating islands | Cherry groves for vibes, redwoods for wood |
 | Caves     | YUNG's Better Caves — wider tunnels, deeper chasms                                   | Easier to navigate, more impressive        |
 | Rivers    | Deeper valleys from Tectonic, shattered savannahs                                    | Follow rivers for scenic travel            |
 
