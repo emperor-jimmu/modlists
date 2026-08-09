@@ -34,7 +34,6 @@ Install all core libraries and frameworks upfront — they are non-negotiable de
 | [Papyrus Tweaks NG](https://www.nexusmods.com/skyrimspecialedition/mods/77779)                      | Script-engine performance optimization; widely adopted baseline.                          |
 | [Lexicon SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/153176)                          | Required by Actor Value Generator.                                                        |
 | [Actor Value Generator](https://www.nexusmods.com/skyrimspecialedition/mods/84743)                  | Required by Classic Attributes.                                                           |
-| [XEMI Utility](https://www.nexusmods.com/skyrimspecialedition/mods/159084)                          | Required by FYX - Nordic Doors and Traps Collisions.                                      |
 | [Sonders Keyword Distribution Resources](https://www.nexusmods.com/skyrimspecialedition/mods/93995) | Keyword distribution framework for item/keyword tagging.                                  |
 | [Skyrim Save System Overhaul 3 (SSSO3)](https://www.nexusmods.com/skyrimspecialedition/mods/122343) | Save-system replacement with Save Shield, rotating caps, and safe timed hardsaves. Requires `JContainers SE` + `NL_MCM`. |
 | [Unofficial Skyrim Modder's Patch - USMP SE](https://www.nexusmods.com/skyrimspecialedition/mods/49616) | Modder-side patch collection fixing record-level bugs across DLC and CC content. Complements USSEP. |

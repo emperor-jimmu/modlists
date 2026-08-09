@@ -12,7 +12,7 @@ Foundations (blue)
 Graphics (green)
 -#0d4a0d Graphics-                       <!-- → guide/modlist-graphics.md -->
 -#196a19 Graphics - PGPatcher-           <!-- → guide/modlist-graphics-pgpatcher.md -->
--#268a26 Graphics - Community Shaders-   <!-- → guide/modlist-graphics-shaders.md -->
+|-#268a26 Graphics - Community Shaders-   <!-- → guide/modlist-graphics-textures.md -->
 -#35a835 Graphics - Textures & Meshes-   <!-- → guide/modlist-graphics-textures.md -->
 -#46c446 Graphics - Lighting-            <!-- → guide/modlist-graphics-lighting.md -->
 -#59d859 Graphics - Weather & Water-     <!-- → guide/modlist-graphics-weather.md -->

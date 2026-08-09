@@ -30,5 +30,5 @@ This section owns the performance budgeting, optimization discipline, generated-
 ## Related Sections
 
 - `modlist-foundations.md` — engine baseline, SSE Display Tweaks config, core stability fixes
-- `modlist-graphics-shaders.md` — Community Shaders visual framework (performance envelope owned by `modlist-performance-optimization.md`)
+- `modlist-graphics-textures.md` — Community Shaders visual framework and texture/mesh asset stack (performance envelope owned by `modlist-performance-optimization.md`)
 - `modlist-curation.md` — curation rules and testing methodology

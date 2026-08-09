@@ -11,13 +11,12 @@ The pipeline is designed to be evaluated in order — each stage depends on the 
 | Stage | File                                                                  | Category                                                     |
 |-------|-----------------------------------------------------------------------|--------------------------------------------------------------|
 | 1     | [`Graphics - PGPatcher`](modlist-graphics-pgpatcher.md)               | PGPatcher — parallax/PBR mesh generation                     |
-| 2     | [`Graphics - Community Shaders`](modlist-graphics-shaders.md)         | Community Shaders — post-process framework and addon modules |
-| 3     | [`Graphics - Textures & Meshes`](modlist-graphics-textures.md)        | Textures & Meshes — all surface-level asset replacement      |
-| 4     | [`Graphics - Lighting`](modlist-graphics-lighting.md)                 | Lighting — interior, exterior, and effect lighting           |
-| 5     | [`Graphics - Weather & Water`](modlist-graphics-weather.md)           | Weather & Water — atmospheric and liquid rendering           |
-| 6     | [`Graphics - Terrain & Flora`](modlist-graphics-terrain.md)           | Terrain & Flora — ground surfaces, grass, trees              |
-| 7     | [`Graphics - Characters & Creatures`](modlist-graphics-characters.md) | Characters & Creatures — body, skin, hair, creature textures |
-| 8     | [`Graphics - LOD & Distant Detail`](modlist-graphics-lod.md)          | LOD & Distant Detail — far-field rendering                   |
+| 2     | [`Community Shaders & Textures`](modlist-graphics-textures.md)        | Community Shaders — post-process framework, and Textures & Meshes — all surface-level asset replacement |
+| 3     | [`Graphics - Lighting`](modlist-graphics-lighting.md)                 | Lighting — interior, exterior, and effect lighting           |
+| 4     | [`Graphics - Weather & Water`](modlist-graphics-weather.md)           | Weather & Water — atmospheric and liquid rendering           |
+| 5     | [`Graphics - Terrain & Flora`](modlist-graphics-terrain.md)           | Terrain & Flora — ground surfaces, grass, trees              |
+| 6     | [`Graphics - Characters & Creatures`](modlist-graphics-characters.md) | Characters & Creatures — body, skin, hair, creature textures |
+| 7     | [`Graphics - LOD & Distant Detail`](modlist-graphics-lod.md)          | LOD & Distant Detail — far-field rendering                   |
 
 ## Key Principles
 
