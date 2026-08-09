@@ -157,6 +157,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [Particle Wind - SKSE Plugin](https://www.nexusmods.com/skyrimspecialedition/mods/174812) | Dust, leaves, snow, ash respond to wind direction. |
 | [Realistic Boat Bobbing SE](https://www.nexusmods.com/skyrimspecialedition/mods/26080) + [BOS Edition](https://www.nexusmods.com/skyrimspecialedition/mods/88885) | Boat bobbing with BOS mesh swap support. |
 | [R.A.S.S. - Rain Ash And Snow Shaders](https://www.nexusmods.com/skyrimspecialedition/mods/22745) | Visible rain droplets, snow accumulation, ash/frost shaders on player/NPCs. 33K+ endorsements. |
+| [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | SKSE plugin — character wetness VFX (soak/dry gloss on skin, hair, armor, weapons) from swimming, rain, and snow. Roof/heat-source detection, NPC support, PBR-aware. 1.1K endorsements, v1.5.0a. |
 | [Animated Icebergs](https://www.nexusmods.com/skyrimspecialedition/mods/121420) | Drifting iceberg meshes in northern waters. |
 | [Animated Ice Floes](https://www.nexusmods.com/skyrimspecialedition/mods/90634) | Animated ice floe meshes in cold regions. |
 | [Nocturnal Moths](https://www.nexusmods.com/skyrimspecialedition/mods/68288) | Moths flutter around exterior lanterns at night (10 PM–4 AM, MCM-tunable). Requires BOS (baseline) + [Lanterns of Skyrim II patch](https://www.nexusmods.com/skyrimspecialedition/mods/68288?tab=files) (road/settlement lantern layer is LoS II + CS Lantern Lights).|
@@ -173,7 +174,7 @@ Weather-aware wind physics, dynamic cloth, and airborne particles for physical w
 | [Stalactite Falls - OIF](https://www.nexusmods.com/skyrimspecialedition/mods/159798) | Shoot stalactites to drop them on enemies below. Requires OIF. Dungeon-hazard interaction. |
 
 ### Risks & Compatibility
-- **R.A.S.S. + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. handles actor surfaces. Should coexist without conflicts — verify in testing.
+- **Actor wetness stack + CS coexistence:** CS Wetness Effects handles terrain/objects; R.A.S.S. (droplets/frost/ash) and Dynamic Wetness (wet gloss, explicitly CS-compatible — "effects stack/merge with CS", TruePBR support in v1.4.4+) handle actor surfaces. All three are designed to coexist — verify in testing.
 - OIF-based interactions depend on the OIF framework being installed and stable in the core library stack.
 
 ---

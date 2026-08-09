@@ -30,7 +30,7 @@ Build lighting as a coherent layer supporting the shader-first visual direction,
 
 | Mod | Role | Notes |
 | --- | --- | --- |
-| [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) | Fire | 140K+ endorsements. Install after main lighting overhauls. → `Graphics - Lighting` |
+| [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) | Fire | 140K+ endorsements. Install after main lighting overhauls. CS particle-light support built in. → `Graphics - Lighting` |
 | [Luminous Atronachs](https://www.nexusmods.com/skyrimspecialedition/mods/27732) | Effects | Self-illuminating atronachs via particle lights. |
 | [KD Realistic Fireplaces](https://www.nexusmods.com/skyrimspecialedition/mods/28877) | Fire | Optional fireplace visual upgrade. Cosmetic only. |
 

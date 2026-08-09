@@ -63,16 +63,6 @@ These ship with the main Community Shaders package — no separate download need
 | [Upscaling](https://www.nexusmods.com/skyrimspecialedition/mods/156952) | DLSS 4 / FSR 3.1 upscaling with FSR Frame Generation. The CS-team replacement for the older Skyrim Upscaler (80343). Requires SSE Display Tweaks. 6.4K endorsements, v1.4.0. |
 | [Effects 11](https://www.nexusmods.com/skyrimspecialedition/mods/179824) | ENB preset compatibility layer via FX11 framework. Experimental — evaluate before locking. |
 
-### Other Companion Mods
-
-- **Embers XD** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/37085)) — Fire-and-ember baseline (140K+). Install after lighting overhauls so it inherits their campfire/hearth placements. CS particle-light support built in.
-
-### Community Add-Ons
-
-| Mod | Description |
-| --- | --- |
-| [Dynamic Wetness](https://www.nexusmods.com/skyrimspecialedition/mods/158207) | SKSE plugin — character wetness VFX from swimming, rain, and snow. Roof/heat-source detection, NPC support, PBR-aware. 1.1K endorsements, v1.5.0a. Complements CS Wetness Effects (handles actors while CS handles world surfaces). |
-
 ---
 
 ### Graphics Testing Protocol
