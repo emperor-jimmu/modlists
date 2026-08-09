@@ -131,7 +131,7 @@ Broad AIO base + targeted terrain and rock overrides, split by owning separator.
 #### `Graphics - Textures & Meshes`
 
 - **Vanilla PBR AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174091), 11.5 GB) — Primary base. Covers all architecture, clutter, actors, dungeons with vanilla-faithful art direction.
-- **Tomato's PBR Whiterun** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135771)) — Optional Whiterun override. Install 2K (735 MB), skip 4K (2 GB). Optional: `Improved Dragon Carvings` (beta, 2K) and `PBR Talos`.
+- **Tomato's Whiterun Remake - PBR or Complex Material** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/173747)) — Optional Whiterun override; replaces the deprecated Tomato's PBR Whiterun (135771). FOMOD installer — choose the PBR branch, 2K recommended, skip 4K. Requires CS core + PGPatcher (both already in the stack).
 - **Tomato's PBR Farmhouses 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135774)) — Optional farmhouse override. Install Grey 2K (84 MB), skip 4K. Optional: `WSU PBR Farmhouse windows patch` if Window Shadows Ultimate is in the stack.
 
 #### `Graphics - Terrain & Flora`
@@ -181,7 +181,7 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 1. Install **Vanilla PBR AIO** — broad PBR base for architecture, clutter, actors, dungeons.
 2. Install **Faultier's PBR Landscapes 4k** — fills VPBR's terrain gap.
 3. Install **Enhanced Rocks and Mountains** after VPBR — overrides VPBR's mountain textures.
-4. Optionally install **Tomato's PBR Whiterun** and **Tomato's PBR Farmhouses 2.0** after VPBR.
+4. Optionally install **Tomato's Whiterun Remake** and **Tomato's PBR Farmhouses 2.0** after VPBR.
 5. Run **PGPatcher** last — all PBR texture mods above require it.
 6. Landscape and rock overrides are owned by → `Graphics - Terrain & Flora` (TomatoRim and ERM locked there) — evaluate any landscape additions in that file, not here.
 
