@@ -337,6 +337,7 @@ PUT 90.*:
 - [x] Apotheosis module toggles (config/apotheosis/apotheosis.cfg) — all modules enabled (Deadly, Enchantment, Adventure, Spawner, Potion, Village), Garden disabled, book on first join
 - [x] Apotheosis spawner (config/apotheosis/spawner.cfg) — default spawner silk touch level 1, damage 100, no banned mobs
 - [ ] Apotheosis remaining configs (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) — need test launch to capture defaults, then apply overrides from GUIDE.md section
+- [ ] Starcatcher (config/starcatcher-server.toml) — set giveGuideOnFirstJoin=false, verified after test launch
 
 ### Removed Mods (Jul 2026)
 

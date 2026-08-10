@@ -2855,6 +2855,8 @@ A complete fishing overhaul with 100+ fish, skill-based minigame, progression sy
 
 **Integration with Starcatcher's Delight**: Starcatcher's Delight is installed — fish caught via Starcatcher are cut into fillets and cooked into Farmer's Delight meals. Fish quality (Common→Legendary) determines dish quality. Legendary meals always grant absorption hearts. See the Starcatcher's Delight section below for details.
 
+**Configuration**: In `config/starcatcher-server.toml`, set `giveGuideOnFirstJoin = false` to prevent the fishing guide book from being handed to the player on first login. The guide is still craftable (check EMI for recipe) — just not auto-given.
+
 **Integration with Hybrid Aquatic (Wave 2)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries. No config needed — more fish to catch, more variety in your catalogue.
 
 ### Better Fishtanks — Aquariums
