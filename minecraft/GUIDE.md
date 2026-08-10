@@ -1615,6 +1615,19 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [YUNG\'s Bridges](https://modrinth.com/mod/yungs-bridges)                                                       | 15+ natural bridges across terrain |
 | [YUNG\'s Extras](https://modrinth.com/mod/yungs-extras)                                                         | Desert wells, obelisks, ruins, pillars |
 
+
+### Nether Worldgen
+
+| Mod                                                              | Role                                                                                |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| [Incendium](https://modrinth.com/mod/incendium) v5.4.4           | Nether biome and structure overhaul — 8 biomes, 9+ structures, 25+ custom weapons, Hovering Inferno boss |
+
+**Incendium** is a server-side data pack (packaged as a NeoForge mod) by Starmute that completely revamps the Nether using only vanilla blocks. The Nether generation height is extended to 192. Eight new biomes (Quartz Flats, Withered Forest, Infernal Dunes, Ash Barrens, Toxic Heap, and more) replace vanilla Nether biomes with 3D terrain — jagged mountains, twisting caves, and themed landscapes. Nine new structures range from the massive Forbidden Castle (one of Minecraft's largest random structures) to the Sanctum (illager fortress), Nether Reactor, and Quartz Kitchen. Over 25 custom weapons and items (Trailblazer flame bow, Greatsword of Sacrifice, Hefty Pickaxe, Hazmat Suit) are rewarded from mobs and structures. New mobs include Toxic Slimes, Restless Spirits, a tamable Ghastling, and the summonable Hovering Inferno boss. The optional [Sparkles](https://modrinth.com/resourcepack/sparkles) resource pack gives Incendium items custom textures — without it, they use vanilla sprites with custom behavior and remain fully functional.
+
+> **⚠️ New world or Nether reset required**: Incendium overhauls Nether terrain generation. Do not add to an existing world with an explored Nether — reset the Nether dimension or create a new world. Pre-generate Nether chunks with Chunky: enter the Nether → `/chunky radius 300` → `/chunky start`.
+
+> **Note**: Incendium is listed as an alpha/unsupported port for 1.21.x while the Stardust Labs team works on a full rewrite. The mod is mature (34M+ downloads across all versions) and the featured v5.4.4 build is well-tested. The upcoming rewrite may require a Nether reset to upgrade — plan accordingly.
+
 ### Dimensions
 
 | Mod                                                                                 | Role                                                                                       |
@@ -1653,6 +1666,7 @@ MineColonies provides autonomous NPC workers that mine, farm, craft, and guard y
 | [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships) 2.0.0-b2.1          | Sailable ships — brigantine, cog, drakkar, galley. Build, crew, and navigate; moveable bases on water. Beta (NeoForge) |
 | [Hang Glider](https://www.curseforge.com/minecraft/mc-mods/hang-glider) v21.1.0             | Craftable hang glider — glide from any height. No fuel, no power. Phase 1 accessible exploration aid                   |
 | [Man of Many Planes](https://www.curseforge.com/minecraft/mc-mods/man-of-many-planes) 0.2.1 | Immersive Aircraft addon — two Create-themed aircraft. Requires Immersive Aircraft                                     |
+| [Immersive Machinery](https://modrinth.com/mod/immersive-machinery) 0.2.0       | Rustic utility machines — Copperfin submarine, Tunnel Digger, Redstone Sheep, Bamboo Bee item drone   |
 
 ### Field Guide
 
@@ -1687,7 +1701,19 @@ Recommended companion mods:
 
 **Interdependency note — Hang Glider + Create Ornithopter Glider**: The Hang Glider provides simpler, earlier flight than the Create Ornithopter Glider (Wave 1). The Hang Glider requires only wood and leather (Phase 1 accessible, no power), while the Ornithopter Glider needs Create rotational power (Phase 1.5+). Both coexist as a natural progression: Hang Glider for early-Phase-1 exploration, Ornithopter Glider once Create infrastructure is online, Immersive Aircraft for powered mid-game flight.
 
+**Interdependency note — Immersive Machinery + Immersive Aircraft**: Immersive Machinery is ported to Immersive Aircraft 1.2.0+ and integrates with its fuel/vehicle system. The Copperfin submarine uses a conduit for power rather than IA fuel, so it works independently. The Bamboo Bee is a simple item transport drone — complementary to but simpler than Create belts or AE2. The Redstone Sheep provides early-game farming automation before Create harvesters come online. The Tunnel Digger is a piloted alternative to Create's mining contraptions — less scalable but more hands-on. All four machines are Phase 1 accessible, filling gaps before Create/Mekanism/AE2 infrastructure comes online in Phase 2.
+
 **Interdependency note — Twilight Forest + Apotheosis**: Apotheosis boss affixes (Wave 3) apply to Twilight Forest bosses. A Naga with the "Tough" affix is significantly harder. This is intended — it keeps dimension bosses relevant even with late-game gear. If a boss feels too strong, the player can return after better equipment or use Apotheosis gems/runes for the edge.
+
+**Interdependency note — Incendium + YUNG's Better Nether Fortresses**: Incendium replaces Nether biome terrain and adds its own structures; YUNG's Better Nether Fortresses overhauls the vanilla fortress structure generation. They don't conflict — Incendium handles biomes and new structures, YUNG's handles fortress interiors. Incendium fortresses will use YUNG's layout if the fortress is in an Incendium biome.
+
+**Interdependency note — Incendium + Apotheosis**: Incendium's custom weapons (Trailblazer, Greatsword of Sacrifice, Hefty Pickaxe, etc.) are vanilla item variants — Apotheosis affixes, gems, and reforging apply to them. Incendium mobs and the Hovering Inferno boss also receive Apotheosis boss affixes (Wave 3), scaling their difficulty with player progression.
+
+**Interdependency note — Incendium + My Nether's Delight**: Incendium's new Nether biomes introduce unique block palettes and mob drops — some may serve as My Nether's Delight ingredients. Check EMI for new recipes once both mods are installed.
+
+**Interdependency note — Incendium + Cataclysm**: L_Ender's Cataclysm's Netherite Monstrosity and Ignite bosses spawn in the Nether. Incendium's biome overhaul changes where these bosses can appear — they'll spawn in Incendium biomes instead of vanilla Nether wastes/basalt deltas. Use the Explorer's Compass to locate them in the transformed Nether.
+
+**Interdependency note — Incendium + Fire Rekindled**: Fire Rekindled's animated Nether textures (soul fire, lava, magma, nether portal) apply to Incendium's Nether terrain — the biome overhaul benefits from the enhanced visuals automatically.
 
 
 **Tectonic** (`config/tectonic.json`):
@@ -2059,10 +2085,11 @@ The End is now a layered destination — each mod handles a distinct piece:
 | Session                           | Focus                                                                                                                                                                   | What to Do                       |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Session 1 — Scout**             | Craft Explorer's Compass. Search for cherry grove or redwood forest. Mark waypoints on JourneyMap. Loot a YUNG's dungeon. Craft a Hang Glider for early aerial scouting | First taste of transformed world |
-| **Session 2 — Aether**            | Gather glowstone. Build Aether portal. Explore first sky island, collect ambrosium and zanite                                                                           | Safe new dimension               |
-| **Session 3 — Twilight Forest**   | Find 2×2 pool, surround with flowers, throw diamond. Enter, place Waystone. Defeat the Naga                                                                             | First Twilight boss              |
-| **Session 4+ — Deep exploration** | Work through Twilight Forest bosses. Visit Deeper and Darker (find Ancient City). Explore End post-Dragon                                                               | Boss loot, dimension resources   |
-| **Session 5 — Aircraft**          | Craft a biplane or airship (iron + wool). Explore Terralith biomes from the air. Craft Man of Many Planes aircraft for Create-themed flight                             | Fast travel, scenic views        |
+| **Session 2 — Nether**            | Build Nether portal. Scout Incendium biomes. Find a fortress. Rescue a Ghastling from an Abandoned Tower. Mark a Waystone at your portal                                     | Nether foothold, ally, blaze rods |
+| **Session 3 — Aether**            | Gather glowstone. Build Aether portal. Explore first sky island, collect ambrosium and zanite                                                                           | Safe new dimension               |
+| **Session 4 — Twilight Forest**   | Find 2×2 pool, surround with flowers, throw diamond. Enter, place Waystone. Defeat the Naga                                                                             | First Twilight boss              |
+| **Session 5+ — Deep exploration** | Work through Twilight Forest bosses. Visit Deeper and Darker (find Ancient City). Explore End post-Dragon                                                               | Boss loot, dimension resources   |
+| **Session 6 — Aircraft**          | Craft a biplane or airship (iron + wool). Explore Terralith biomes from the air. Craft Man of Many Planes aircraft for Create-themed flight                             | Fast travel, scenic views        |
 
 **Pacing tip**: Explore between factory builds. Grab your compass and walk in a random direction when waiting for Mekanism to process or Create to assemble.
 
@@ -2274,10 +2301,11 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 
 ### RPG Progression
 
-| Mod                                                                                | Role                                                  |
-|------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [Skill Tree (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/skill-tree) | XP leveling — spend points on attributes and passives |
-| [Pufferfish\'s Skills](https://www.curseforge.com/minecraft/mc-mods/skills)        | Underlying skill system framework                     |
+| Mod                                                                                         | Role                                                  |
+|---------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| [Skills Mastery Reimagined](https://www.curseforge.com/minecraft/mc-mods/skills-mastery-reimagined) | 71-node skill tree with unique tradeoff abilities     |
+| [Pufferfish\'s Skills](https://www.curseforge.com/minecraft/mc-mods/skills)                 | Underlying skill system framework                     |
+| [Pufferfish\'s Attributes](https://www.curseforge.com/minecraft/mc-mods/puffish-attributes) | Custom attributes powering skill tree node effects    |
 
 ### Equipment
 
@@ -2289,6 +2317,7 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 | [Relics RPG](https://www.curseforge.com/minecraft/mc-mods/relics-rpg)                                   | Legendary accessories with unique abilities                              |
 | [Runes](https://www.curseforge.com/minecraft/mc-mods/runes)                                             | Socketable runes for weapons/tools                                       |
 | [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                                       | Accessory slots (rings, amulets, belts, gloves)                          |
+| [Immersive Armors](https://www.curseforge.com/minecraft/mc-mods/immersive-armors)                      | 40+ unique armor sets with custom effects — berserk, double jump, hostile radar, spikes, divine block |
 
 ### Loot & Affixes
 
@@ -2334,42 +2363,55 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 
 **Reforging costs** — Apotheosis's reforging mechanic (reroll affixes with gem dust) uses default material costs. As the player progresses, reforging costs scale:
 
-- Common→Uncommon: cheap (a few gem dust)
 - Rare→Epic: moderate (dust + some ingots)
 - Epic→Mythic: expensive (dust + rare materials like netherite scrap/echo shards)
 
 This cost curve encourages the player to settle for "good enough" gear until they're ready to invest in perfect rolls.
 
 ### Interdependency notes for Wave 3
+- **Spell Engine** is required by Relics RPG — it was previously considered for removal but must be retained as a mandatory dependency of this core RPG mod.
+- **Ranged Weapon API** is shared between Relics RPG and Pufferfish's Skills ecosystem — install once, used by both.
 
-- **Spell Engine** is required by both Relics RPG and Skill Tree (RPG Series) — it was previously considered for removal but must be retained as a mandatory dependency of these core RPG mods.
-- **Ranged Weapon API** is shared between Relics RPG and Skill Tree — install once, used by both.
+**Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. **Apotheosis affixes and gems apply to all Immersive Armors pieces.** Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect side grade slot — different armor sets for different situations rather than linear upgrades.
 
-Every weapon rolls with random affixes, every accessory provides a unique ability, and a skill tree gives every action meaning. This wave makes you **feel** your character grow alongside your tech.
+Every weapon rolls with random affixes, every accessory provides a unique ability, and a skill tree with real tradeoffs gives every action meaning. This wave makes you **feel** your character grow alongside your tech.
 
-### Skill Tree (RPG Series) — Character Growth
+### Skills Mastery Reimagined — Character Growth
 
-Every action earns XP. Spend points on permanent stat bonuses.
+71 nodes. 36 unlock slots. Every point is a commitment — you can't max everything, so you build a character, not a spreadsheet.
+
+**Design philosophy**: Unlike simple "numbers go up" trees, Skills Mastery Reimagined uses tradeoff design. Some unique nodes carry **negative effects** alongside their power (e.g., more damage but less speed, higher HP but slower regen). Each unlock plays a unique sound effect, giving satisfying feedback. The tree pattern is wide and branching — no linear "must-take" paths.
 
 **Getting started**:
 
-1. Controls → Skill Tree → set a key (`P` recommended)
+1. Controls → Pufferfish's Skills → set a key (`K` recommended)
 2. Press key → skill tree GUI opens
-3. Spend first points on **Strength** (+melee damage, +mining speed) or **Vitality** (+max HP, +regen)
+3. Browse the tree. Early nodes are cheap. Plan your path — you can only unlock 36 of 71 nodes.
 
-| Attribute    | Effect                              | Best for            |
-|--------------|-------------------------------------|---------------------|
-| **Strength** | +melee damage, +mining speed        | Everyone            |
-| **Vitality** | +max HP, +natural regen             | Everyone            |
-| **Agility**  | +movement speed, +attack speed      | Combat, kiting      |
-| **Magic**    | +spell damage, +mana regen          | If using spell mods |
-| **Defense**  | +armor toughness, +damage reduction | Tank builds         |
+**XP Sources** — XP comes from diverse activities, not just combat:
 
-**How XP works**: Every ore mined, mob killed, item crafted, crop harvested generates XP. Scales with action complexity.
+| Activity             | XP Value                        | Chill-friendly |
+|----------------------|---------------------------------|----------------|
+| Killing mobs         | Standard                        |                |
+| Mining ore blocks    | 2 per block                     | ✅              |
+| Catching fish        | 5 per catch                     | ✅              |
+| Enchanting books     | 2 × enchanting level cost       | ✅              |
+| Killing Evoker       | 100                             |                |
+| Killing Ravager      | 150                             |                |
+| Killing Elder Guardian | 200                           |                |
+| Killing Wither       | 400                             |                |
+| Killing Warden       | 500                             |                |
+| Killing Ender Dragon | 600                             |                |
 
-**Pufferfish's Skills**: The underlying framework powering Skill Tree. Handles XP tracking and attribute modification behind the scenes. Auto-installed dependency — no separate config needed.
+**Unique attributes**: Skills Mastery Reimagined unlocks attributes you won't find in vanilla or Apotheosis — Gravity (lower = floaty jumps), Scale (character size), Burning Time, Sneak Speed, Water Efficiency, Oxygen Bonus, Crossbow Projectile Speed, and weapon-specific damage (Mace, Trident, Sword, Axe). These change *how you interact with the world*, not just how hard you hit.
 
-**Tip**: Set the keybind and start earning XP from minute 1. Lowest-investment, highest-return mod in this wave.
+**Weapon synergy**: Weapon-specific nodes (Sword Damage, Axe Damage, Mace Damage, Trident Damage) create a direct feedback loop with Simply Swords and Spartan Weaponry drops. Find a cool unique sword? There's a node that amplifies it. The skill tree and your loot chase feed each other.
+
+**Pufferfish's Skills**: The framework powering the tree — handles XP tracking and attribute modification behind the scenes. Auto-installed dependency.
+
+**Pufferfish's Attributes**: Custom attribute registry required by Skills Mastery Reimagined. Adds 35+ dynamic attributes (Stamina, Fortune, Melee/Ranged/Magic Damage, Life Steal, Stealth, Jump, Mining Speed, Sprinting Speed, etc.). Auto-installed dependency — no separate config needed.
+
+**Tip**: Set the keybind and start earning XP from minute 1. Fishing and enchanting reward chill sessions — you progress even when you're just relaxing at home.
 
 ### Simply Swords — Unique Weapons
 
@@ -3346,15 +3388,15 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 0.5 — Player Experience | 57      | —      | 57      | Visual & Client QoL (33), Inventory & UI (20), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
-| Wave 2 — Exploration         | 29      | 5      | 34      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, IaA addon                                                                          |
-| Wave 3 — Equipment Magic     | 9       | 10     | 19      | Skill Tree, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Apotheosis + 10 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API)                                               |
+| Wave 2 — Exploration         | 32      | 6      | 38      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, IaA + MoMP + IA Engines addons, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
+| Wave 3 — Equipment Magic     | 10      | 11     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Immersive Armors, Apotheosis + 11 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes)                                               |
 | Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
-| Wave 5 — Combat              | 8       | 6      | 14      | Better Combat, Mutant Monsters, Cataclysm, Dungeons Arise, Big Cannons, Cut Through, Torchmaster, Enchantment Descriptions + RPL lib, playerAnimator, Puzzles Lib, Citadel, Lionfish-API, Bookshelf                                                                                 |
+| Wave 2 — Exploration         | 31      | 5      | 36      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **168** | **41** | **209** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **168** | **42** | **210** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
@@ -4437,7 +4479,7 @@ end
 | Zoom                  | `C`                   | Sodium                  | 0    |
 | Toggle Dynamic Lights | `Ctrl+L`              | LambDynamicLights       | 0    |
 | Open Curios Inventory | `Y`                   | Curios API              | 0    |
-| Open Skill Tree       | `P`                   | Skill Tree              | 3    |
+| Open Skill Tree       | `K`                   | Pufferfish's Skills     | 3    |
 | View Weapon Ability   | `Ctrl` (hold)         | Simply Swords           | 3    |
 | Open Rune Pouch       | **Set manually**      | Runes                   | 3    |
 | Open Create Ponder    | `W` (hold over block) | Create                  | 1    |

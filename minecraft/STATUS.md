@@ -50,26 +50,29 @@ PUT 90.*:
 - [x] Interdependency notes written (Forgematica × Create / MineColonies / AE2 / Apotheosis)
 - [x] Session plan written (5 progressive building sessions)
 
-### Wave 2 — Exploration (~33 mods)
+### Wave 2 — Exploration (~36 mods)
 
-- [x] Worldgen: Terralith, Tectonic, End Remastered, Moog's End Structures
+- [x] Overworld Worldgen: Terralith, Tectonic
+- [x] Nether Worldgen: Incendium v5.4.4 (Modrinth — NeoForge 1.21.1 data pack wrapper)
+- [x] Environment: Serene Seasons
+- [x] Underground & Ocean: Darker Depths, Upgrade Aquatic, Hybrid Aquatic
 - [x] Structures: YUNG's full collection (12 mods: 9 Better series + Bridges + Extras + Better End Island), Structory, Structory: Towers
-- [x] Dimensions: The Aether, Deeper and Darker, Twilight Forest
+- [x] End Access: End Remastered, Moog's End Structures, Nullscape (data pack)
+- [x] Dimensions: The Aether, Deep Aether, Umbral Skies, Deeper and Darker, Twilight Forest
 - [x] Navigation: Explorer's Compass
-- [x] Mobility: Immersive Aircraft, Small Ships
-- [x] Aquatic: Hybrid Aquatic (marine creatures, diving armor, corals)
-- [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib
+- [x] Mobility: Immersive Aircraft, Small Ships, Hang Glider, Man of Many Planes, Immersive Machinery
+- [x] Dependencies: BCLib, WorldWeaver, WunderLib, Moog's Structure Lib, TerraBlender
 
-### Wave 3 — Equipment Magic & RPG (~18 mods incl. 10 deps)
+### Wave 3 — Equipment Magic & RPG (~20 mods incl. 10 deps)
 
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
 - [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
-- [x] Simply Swords, Too Many Bows, Spartan Weaponry Unofficial, Relics RPG, Runes
+- [x] Simply Swords, Too Many Bows, Spartan Weaponry Unofficial, Relics RPG, Runes, Immersive Armors
 - [x] Simply Swords deps: Simply Tooltips, Fzzy Config
 - [x] Relics RPG / Skill Tree deps: Ranged Weapon API, Spell Engine
 - [x] Runes dep: Bundle API
 - [x] Skill Tree (RPG Series), Pufferfish's Skills
-- [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons and Twilight Forest bosses
+- [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons, Twilight Forest bosses, Incendium weapons, and Immersive Armors pieces
 
 ### Wave 4 — Food, Farming & Comfort (~10 mods)
 
@@ -295,6 +298,9 @@ PUT 90.*:
 - [x] Improved Village Placement (Wave 0 — Village & Trading) — v1.2.0 for NeoForge 21.1 — **requires Lithostitched** (undeclared dep, added to GUIDE.md Wave 0.5 dependencies)
 - [x] The Magic Mirror (Wave 6 — Building & Decoration) — v1.21.1-1.0.0.1887 for NeoForge
 - [x] \[DLS\] Dark Loading Screen (Wave 0 — Visual & Client QoL) — dark loading screen replacement
+- [x] Incendium v5.4.4 (Wave 2 — Nether Worldgen) — Nether biome and structure overhaul by Starmute (34M+ DL). 8 new biomes, 9+ structures (Forbidden Castle, Sanctum, Nether Reactor), 25+ custom weapons, Hovering Inferno boss. Modrinth-only (NeoForge 1.21.1 .jar wrapper for the data pack). Alpha/unsupported 1.21.x port — Stardust Labs working on rewrite. Requires new world or Nether reset. Zero dependencies. Documented in GUIDE.md §Wave 2 Nether Worldgen with 5 interdependency notes and session plan update.
+- [x] Immersive Machinery v0.2.0 (Wave 2 — Mobility) — rustic utility machines by Conczin. Copperfin submarine (sonar), Tunnel Digger (piloted boring machine), Redstone Sheep (farm automaton), Bamboo Bee (item transport drone). Zero dependencies. Ported to Immersive Aircraft 1.2.0. NeoForge 1.21.1, release status. Documented in GUIDE.md §Wave 2 Mobility with interdependency notes.
+- [x] Immersive Armors (Wave 3 — Equipment Magic) — 40+ unique armor sets with custom effects by Conczin (36.4M DL). Wooden (arrow prot), Skeleton (speed, wither variant), Divine (dyeable, blocks 1 attack/min), Heavy (anti-knockback), Slime (bounce), Warrior (berserk), Robe (fire thorns), Steampunk (hostile radar, double jump, no fall damage), Prismarine (spikes, depth strider). All Apotheosis-compatible. Zero dependencies. NeoForge 1.21.1. Documented in GUIDE.md §Wave 3 Equipment with interdependency note.
 
 ### Skipped After Review (Jul 2026)
 
@@ -515,3 +521,13 @@ PUT 90.*:
 - [x] YUNG's Bridges (Wave 2 — Structures) — 15+ naturally generated bridges with biome-specific variants. Requires YUNG's API. Modrinth (NeoForge 1.21.1 builds)
 - [x] YUNG's Extras (Wave 2 — Structures) — small vanilla+ additions: improved Desert Wells (rare Wishing Wells), Desert Obelisks, Flame Outposts, ruins, pillars. Requires YUNG's API. Modrinth (NeoForge 1.21.1)
 - [x] YUNG's Better End Island (Wave 2 — End Access & Structures) — overhauls the main End island dragon arena: redesigned pillars, gateways, bell-tower summoning, new portal structure. Dragon AI unchanged. Requires YUNG's API. Modrinth (NeoForge 1.21.1)
+
+
+### Changed Mods (Aug 2026 — Skill Tree Migration)
+
+- [x] Removed Skill Tree (RPG Series) — replaced by Skills Mastery Reimagined. Skill Tree's simple stat-bonus design ("numbers go up") didn't fit the pack's power fantasy; lacked meaningful build decisions for a 200h+ runway.
+- [x] Added Skills Mastery Reimagined v1.2.1 (Wave 3 — RPG Progression) — 71-node Pufferfish's Skills tree with tradeoff design: 36 max unlockable nodes, some unique nodes carry negative effects, sound feedback on unlocks. XP from diverse sources: mob kills, mining (2), fishing (5), enchanting (2×level), boss bonuses (Evoker 100 → Dragon 600). Unique attributes: Gravity, Scale, Burning Time, Sneak Speed, Crossbow Projectile Speed, weapon-specific damage. CurseForge (NeoForge 1.21.1).
+- [x] Added Pufferfish's Attributes (Wave 3 — New Dependency) — custom attribute registry required by Skills Mastery Reimagined. 35+ dynamic attributes (Stamina, Fortune, Melee/Ranged/Magic Damage, Life Steal, Stealth, Jump, Mining Speed, etc.). By Pufferfish (21.3M DL, same author as Pufferfish's Skills). CurseForge (NeoForge 1.21.1).
+- [x] Spell Engine + Ranged Weapon API retained — still required by Relics RPG; dependency notes updated to reflect removal of Skill Tree requirement.
+- [x] Keybind updated: Open Skill Tree → `K` (Pufferfish's Skills), was `P` (Skill Tree RPG Series).
+- [x] GUIDE.md Wave 3 updated: RPG Progression table, dependency notes, Skill Tree section replaced with full Skills Mastery Reimagined writeup (design philosophy, XP table, unique attributes, weapon synergy), wave summary counts (deps 10→11, total 20→21), overall totals (deps 41→42, total 209→210).
