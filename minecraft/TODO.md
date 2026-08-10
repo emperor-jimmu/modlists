@@ -14,6 +14,6 @@ Scratch backlog of future work. See STATUS.md for the canonical decision registe
 - [ ] Config tuning per mod
 - [ ] After test launch, capture Apotheosis defaults (adventure.cfg, ench.cfg, enchantments.cfg, potion.cfg, village.cfg) then apply overrides per GUIDE.md
 - [ ] Effectual config tuning: disable cave dust (duplicated by Particular Reforged)
-- [ ] Day Counter config — verify keys after test launch, apply overrides (ActionBar only, no sound, no rewards, no week days, no date system)
+- [ ] Day Counter Plus config — verify config keys after test launch; apply chill settings (fade/outline on, rainbow/wave/growing off) per GUIDE.md
 - [ ] Verify Torchmaster config key names against generated `torchmaster-common.toml` after test launch
 - [ ] Author ~85 FTB Quests for non-MineColonies mods (Create, Mekanism, AE2, Apotheosis, Combat, Exploration, Food & Farming)

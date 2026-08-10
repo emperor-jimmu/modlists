@@ -262,7 +262,7 @@ PUT 90.*:
 - [x] Create: Colony Logistics (Wave 1.5 — Colony Addons) — bridges MineColonies to Create logistics (belts, chutes, trains). 54K DL, updated Jul 2026.
 - [x] ColonyLink (Wave 1.5 — Colony Addons) — connects MineColonies builders to AE2 for resource monitoring and autocrafting. 11K DL, updated Jul 2026.
 - [x] Day Counter (Wave 0 — Inventory & UI) — day counter HUD with dawn display and fade. Requires Hud Texts dependency. 5.7M DL, MIT, updated Apr 2026.
-- [ ] Day Counter config — verify config keys after test launch, apply overrides from GUIDE.md (ActionBar only, no sound, no rewards, no week days, no date system)
+- [x] Day Counter config — superseded: Day Counter replaced by Day Counter Plus (user instruction, batch 28)
 
 ### Added Mods (Jul 2026 batch 15 — Questing Ecosystem)
 
@@ -559,7 +559,15 @@ PUT 90.*:
 ### Mod Review — 4 Candidates (Aug 2026 batch 27)
 
 - [x] Real Camera — **ADDED** (Wave 0.5 — Visual & Client QoL) — realistic first-person camera: view binds to head/body part with configurable position/rotation, player model renders in FPV. Pin `realcamera-1.21.1-neoforge-0.7.8-beta` (Modrinth, 2026-06-28, client-only, no required deps; Cloth Config optional-recommended and already in pack). 818K DL. Compatible (all in pack): First Person Model, Not Enough Animations, Better Combat, Camera Overhaul; works with Iris + Complementary. Incompatibles (OptiFine, GeckoLib armors, CPM, Epic Fight, TACZ) absent from pack — GeckoLib is present only for Create: Gunsmithing items, Protection Pixel armor uses Kleiders Custom Renderer API. Core purpose distinct from Camera Overhaul (motion feel) and Countered's Smooth F5 (third-person transitions) — no duplication. GUIDE.md: Wave 0.5 table row + detail section; counts 169→170 mods, total 212→213. [VERIFY] Protection Pixel custom-rendered armor + shader rendering after test launch.
-- [x] Day Counter Plus — **REJECTED** (redundant) — duplicates installed Day Counter (Wave 0, Hud Texts dep). Both show a "Day X" HUD; the pack already committed to minimal Day Counter config (ActionBar only, no sound, no rewards, no week days, no date system). Day Counter Plus (4.1K DL, 3lbash3) adds animated rainbow/wave/fade HUD effects that cut against the chill/minimal decision. "No mod should duplicate another mod's core purpose" rule.
+- [x] ~~Day Counter Plus — REJECTED (redundant)~~ — **OVERRIDDEN by user instruction** (Aug 2026 batch 28): user requested replacing Day Counter with Day Counter Plus. The redundancy objection stands on the merits, but user instruction supersedes policy — adopted as a straight swap (see batch 28). Original reasoning: duplicates installed Day Counter (Wave 0, Hud Texts dep); Day Counter Plus (4.1K DL, 3lbash3) adds animated rainbow/wave/fade HUD effects.
 - [x] Antique Atlas 4 — **REJECTED** (loader incompatibility) — hand-drawn clientside world map, but on NeoForge requires Sinytra Connector + Forgified Fabric API + Surveyor framework. Same rejection grounds as Continuity and Make Bubbles Pop. JourneyMap (+ Integration) and Explorer's Compass already cover mapping, waypoints, and structure finding. Updated 7 months ago; no dedicated native NeoForge build.
 - [x] Better Statistics Screen — **REJECTED** (no native NeoForge 1.21.1 build) — 30.3M DL stats-screen overhaul (search/filter/sort, item/mob visual grid, save/share stats files) would slot into Wave 0.5 Inventory & UI, but every MC 1.21.1 build is Fabric/Quilt-only (v3.13.x); NeoForge builds (5.5.x+fn-26.1/26.2) target the newer 26.1/26.2 loader line (incl. 26w14a snapshot). Installing would require Connector + FFAPI bridge — rejected on precedent. Revisit if the pack ever moves to a newer MC line (then: TCDCommons API + betterstats 5.5.x+fn-26.1).
 - [ ] Real Camera post-launch verify — F6 toggle, model binding with Protection Pixel armor, shader rendering; capture config keys for GUIDE.md
+
+### Day Counter → Day Counter Plus (Aug 2026 batch 28 — user instruction)
+
+- [x] Day Counter **REMOVED** (Wave 0 — Inventory & UI) — replaced per user instruction. Old mod: dawn-only ActionBar message + optional calendar block/rewards system. Its Hud Texts dependency is now orphaned.
+- [x] Day Counter Plus **ADDED** (Wave 0.5 — Inventory & UI) — persistent live "Day X" HUD, fully customizable in-game (position, scale, color, transparency, per-effect toggles, shadow). Pin `daycounterplus-1.0.0-1.21.X-NewForge` (CurseForge/Modrinth, 2025-10-04, 65KB, **zero dependencies** — standalone, no Hud Texts needed). Client + server sides — integrated server satisfies single-player. 4.1K DL. Overrides the batch 27 redundancy rejection per user instruction.
+- [x] Hud Texts **REMOVED** (Wave 0.5 dependency) — only required by Day Counter; orphaned after replacement.
+- [x] GUIDE.md updated: Wave 0.5 Inventory & UI table row, Day Counter Plus config section (chill settings — fade/outline on, rainbow/wave/growing off), detail section, Mod Count Summary (deps 43→42, total 213→212; mods unchanged at 170).
+- [ ] Day Counter Plus config verify — capture config file/keys after first launch; apply chill settings (fade/outline on, rainbow/wave/growing off) per GUIDE.md
