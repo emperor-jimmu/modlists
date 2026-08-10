@@ -19,3 +19,4 @@
 [ ] 16. Stormworks Build and Rescue
 [ ] 17. Derail Valley
 [ ] 18. My Summer Car
+[ ] 19. Motorsport Manager
