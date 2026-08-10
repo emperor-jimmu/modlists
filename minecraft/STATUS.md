@@ -510,6 +510,12 @@ PUT 90.*:
 - [x] Starcatcher's Delight v3.0.1 (Wave 4 — Food & Farming) — Farmer's Delight addon adding fish-related cooking recipes for Starcatcher catches. Fish fillets, sushi, fish stew, fried fish, and legendary dishes (absorption hearts). Quality tiers based on fish rarity. By wdiscute (same author as Starcatcher). NeoForge 1.21.1, 207K DL. Replaces former interdependency note that recommended installing it.
 - [x] GUIDE.md updated: Wave 4 table row, interdependency note rewritten as installed-mod note, Starcatcher section integration updated, new detail section added, mod counts (Wave 4 9→10, total 167→168 / 210→211)
 
+### Added Mods (Aug 2026 — Crate Delight)
+
+- [x] Crate Delight v26.07.01 (Wave 4 — Food & Farming) — bulk ingredient storage: crates (apples, berries, eggs, fish) and bags (cocoa, sugar, gunpowder). Same author as Storage Delight (axperty, 30M DL). NeoForge 1.21.1, 2.8M DL. Complements Storage Delight's furniture — crates handle bulk, cabinets handle decorative.
+- [x] GUIDE.md updated: table row after Storage Delight, detail section, mod counts (Wave 4 10→11, total 168→169 / 211→212)
+- [x] End's Delight (foggyhillside, 30.8M DL) — skipped. Direct overlap with installed Ender's Delight (both add End-themed FD food). Author warns mod is beta/under development with stability caveats. "No duplicate purpose" rule.
+
 ### Skipped After Review (Aug 2026 batch 26)
 
 - [x] Advancements Reloaded — redundant: Better Advancements (UI) + Advancement Plaques (popups) cover this; mod warns about conflicts with other advancement mods

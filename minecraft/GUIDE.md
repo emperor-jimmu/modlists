@@ -2623,6 +2623,7 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [**Extra Mod Integrations**](https://www.curseforge.com/minecraft/mc-mods/extra-mod-integrations)     | Adds compat recipes for 50+ mods — Farmer's Delight, Create, Mekanism, AE2       |
 | [**Brewin' And Chewin'**](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) 4.5.0       | Drinks and fermentation — beer, wine, mead, whiskey                              |
 | [**Storage Delight**](https://www.curseforge.com/minecraft/mc-mods/storage-delight) 1.3.0             | Kitchen furniture — drawers, cabinets, shelves for ingredient storage            |
+| [**Crate Delight**](https://www.curseforge.com/minecraft/mc-mods/crate-delight-forge) v26.07.01      | Bulk ingredient storage — crates (apples, berries, eggs, fish) and bags (cocoa, sugar, gunpowder) |
 | [**More Delight**](https://www.curseforge.com/minecraft/mc-mods/more-delight) 26.04.18a+1.21-neoforge | Extra meals, sandwiches, toasts, and knife variants                              |
 | [**My Nether's Delight**](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) 1.10.2     | Nether-themed food ingredients and recipes                                       |
 | [**Ocean's Delight**](https://www.curseforge.com/minecraft/mc-mods/oceans-delight) 1.0.4              | Ocean-themed seafood dishes                                                      |
@@ -2757,6 +2758,20 @@ Decorative kitchen storage that works as functional inventory:
 | Shelf   | 9     | Wall-mounted spice display |
 
 **Tip**: Use for early-game ingredient storage before AE2. Later, place an ME Storage Bus on a cabinet to bridge into your digital network.
+
+
+### Crate Delight — Ingredient Storage
+
+Bulk storage for Farmer's Delight ingredients by axperty (same author as Storage Delight). Crates and bags keep your kitchen organized and look great.
+
+| Type | Examples | Capacity |
+|---|---|---|
+| **Crates** | Apples, Sweet Berries, Eggs, Raw Salmon, Raw Cod, Glow Berries, Golden Apples | Bulk single-item storage |
+| **Bags** | Cocoa Beans, Sugar, Gunpowder | Bulk single-item storage |
+
+**Why it's useful**: Instead of a barrel full of mixed ingredients, you have a Crate of Apples next to your cooking station and a Bag of Sugar near your brewing setup. Thematic, organized, and satisfying to look at.
+
+**Integration**: Same author as Storage Delight — identical art style, zero compatibility issues. All crates and bags are accessible via Create pipes and AE2 Storage Bus. Complements Storage Delight's furniture (cabinets/drawers/shelves) — Crate Delight handles bulk ingredient storage, Storage Delight handles kitchen furniture. Both are intentionally outclassed by AE2 in Phase 2 but remain useful for localized micro-storage near cooking and brewing stations.
 
 ### More Delight — Extra Meals & Knives
 
@@ -3415,24 +3430,22 @@ Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space
 
 ### Progression Placement
 
-Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materials that gate them behind Mekanism mid-game processing and AE2 infrastructure. Oxygen systems and fuel refining add a parallel supply-chain puzzle that rewards industrial automation.
 
 ## Mod Count Summary
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
-| Wave 0.5 — Player Experience | 57      | —      | 57      | Visual & Client QoL (33), Inventory & UI (20), Storage & Travel (6), Utility & QoL (1: Easy Anvils), Village & Trading (2) — everything that makes the game feel good                                                                                                  |
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 32      | 6      | 38      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, IaA + MoMP + IA Engines addons, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
-| Wave 4 — Food & Farming      | 10      | —      | 10      | Farmer's Delight + 7 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
+| Wave 4 — Food & Farming      | 11      | —      | 11      | Farmer's Delight + 8 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
 | Wave 2 — Exploration         | 31      | 5      | 36      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **168** | **43** | **211** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **169** | **43** | **212** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
