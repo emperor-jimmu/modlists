@@ -496,22 +496,34 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)         | Preview shulker box contents on hover                              |
 | [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                     | Colored borders on items based on rarity                           |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)            | Animated item pickup notifications                                 |
-| [Day Counter](https://www.curseforge.com/minecraft/mc-mods/day-counter)                       | Day counter HUD — displays at dawn via ActionBar, fades after. Also supports Title/Subtitle/Chat display. Calendar block and reward system available but fully optional. |
+| [Day Counter](https://www.curseforge.com/minecraft/mc-mods/day-counter)                       | Day counter HUD — displays at dawn via ActionBar, fades after. Milestone rewards at days 100/250/500/1000/2000. Calendar block available but disabled. |
 | [Hud Texts](https://www.curseforge.com/minecraft/mc-mods/hud-texts)                           | HUD text framework — dependency for Day Counter (from V3.4)       |
 
-**Day Counter config** (config/ags_day_counter.toml — tracked override):
+**Day Counter config** (config/day_counter.toml — tracked override):
 
 | Setting                               | Value      | Why                                                     |
 |---------------------------------------|------------|---------------------------------------------------------|
 | `[UI."New Day Text"]` Display         | `actionbar` | New-day message appears and auto-fades after ~3s       |
 | `[Sound]` Enabled                     | `false`    | No sound notification — just the text                   |
-| `[Rewards.*]`                         | zeroed     | No day-based rewards — too gamey                        |
+| `[Rewards.1]`–`[Rewards.5]`           | set        | Day-milestone rewards — see table below                 |
 | `[UI.Scoreboard]` / `[UI.Playerlist]` / `[UI.Name]` Enabled | `false` | No persistent HUD or nametag element — only the flash |
 | `[Date]` Enabled                      | `false`    | No calendar date — just day count                       |
 | `[Block]` / `[Item]` Enabled          | `false`    | No calendar block or item                               |
 | `[UI."Disabled Feature Text"]` Enabled | `false`   | No "feature is disabled" nag text                       |
 
-This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn that appears and fades. No HUD element, no sounds, no rewards, no calendar block. Days count in the background.
+This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn that appears and fades, plus a small gift on milestone days. No HUD element, no sounds, no calendar block. Days count in the background.
+
+**Milestone rewards** (tracked via the server day count; each fires once when the day is reached and posts a chat message):
+
+| Day  | EXP   | Item                     | Count |
+|------|-------|--------------------------|-------|
+| 100  | 100   | Diamond                  | 8     |
+| 250  | 250   | Diamond block            | 2     |
+| 500  | 500   | Diamond block            | 5     |
+| 1000 | 1000  | Netherite ingot          | 4     |
+| 2000 | 2000  | Netherite block          | 2     |
+
+Tweak payloads directly in `config/day_counter.toml` (`[Rewards.1]`–`[Rewards.5]`: `Day` / `Message` / `Command` / `EXP` / `Item` / `"Item Count"`). All items are vanilla — no pack gating bypassed.
 
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
@@ -746,7 +758,7 @@ Favorite/pin worlds to the top of your list, prevent accidental deletion. Right-
 
 #### Day Counter
 
-Brief "Day N" ActionBar message at dawn that appears and auto-fades. Pack config (`config/ags_day_counter.toml`) keeps only the new-day notification — no sound, HUD elements, rewards, or calendar block.
+Brief "Day N" ActionBar message at dawn that appears and auto-fades, plus a small milestone gift on days 100/250/500/1000/2000. Pack config: `config/day_counter.toml`.
 
 #### Eating Animation
 

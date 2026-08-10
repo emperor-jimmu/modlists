@@ -1,8 +1,9 @@
 # Driftwood pack override — Day Counter (mod id: ags_day_counter)
 # Only the new-day notification is enabled: a brief ActionBar message at dawn
-# that appears and auto-fades. Everything else is disabled:
+# that appears and auto-fades, plus day-milestone rewards (100/250/500/1000/2000).
+# Everything else is disabled:
 #   - no sound, no persistent HUD (scoreboard/playerlist/nametag)
-#   - no rewards, no date system, no calendar block/item
+#   - no date system, no calendar block/item
 #   - no "feature is disabled" nag text
 
 [Help]
@@ -78,59 +79,58 @@
 	Year = 1000.0
 
 	[Rewards.Example]
-		#Here you can set at which Day should the reward trigger.
-		#PACK: zeroed — no day-based rewards
+		#Template — leave zeroed (Day 0 never triggers).
 		Day = 0.0
-		#Here you can set a Chat Message that will be send to the player.
 		Message = ""
-		#Here you can set a Command that will be triggered. Available variables: $player$
 		Command = ""
-		#Here you can set an EXP amount that will be given to the player.
 		EXP = 0.0
-		#Here you can set an Item that will be given to the player.
 		Item = ""
-		#Here you can set the Amount of the Item what will be given to the player.
 		"Item Count" = 0.0
 
 	[Rewards.1]
-		Day = 0.0
-		Message = ""
+		#PACK: Day 100 — first milestone
+		Day = 100.0
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l100§f! A hundred days in — take some diamonds."
 		Command = ""
-		EXP = 0.0
-		Item = ""
-		"Item Count" = 0.0
+		EXP = 100.0
+		Item = "minecraft:diamond"
+		"Item Count" = 8.0
 
 	[Rewards.2]
-		Day = 0.0
-		Message = ""
+		#PACK: Day 250
+		Day = 250.0
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l250§f! Two hundred fifty days — enjoy the diamond blocks."
 		Command = ""
-		EXP = 0.0
-		Item = ""
-		"Item Count" = 0.0
+		EXP = 250.0
+		Item = "minecraft:diamond_block"
+		"Item Count" = 2.0
 
 	[Rewards.3]
-		Day = 0.0
-		Message = ""
+		#PACK: Day 500
+		Day = 500.0
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l500§f! Halfway to a thousand — more diamond blocks."
 		Command = ""
-		EXP = 0.0
-		Item = ""
-		"Item Count" = 0.0
+		EXP = 500.0
+		Item = "minecraft:diamond_block"
+		"Item Count" = 5.0
 
 	[Rewards.4]
-		Day = 0.0
-		Message = ""
+		#PACK: Day 1000
+		Day = 1000.0
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l1000§f! A thousand days. Netherite for the legend."
 		Command = ""
-		EXP = 0.0
-		Item = ""
-		"Item Count" = 0.0
+		EXP = 1000.0
+		Item = "minecraft:netherite_ingot"
+		"Item Count" = 4.0
 
 	[Rewards.5]
-		Day = 0.0
-		Message = ""
+		#PACK: Day 2000
+		Day = 2000.0
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l2000§f! Two thousand days — the netherite blocks are yours."
 		Command = ""
-		EXP = 0.0
-		Item = ""
-		"Item Count" = 0.0
+		EXP = 2000.0
+		Item = "minecraft:netherite_block"
+		"Item Count" = 2.0
 
 [Texts]
 	"Chat show day(s) Text" = "§6§l[§b§lDay Counter§6§l] §fToday is §b§l%date_day%§6§l/§b§l%date_month%§6§l/§b§l%date_year% §fand the §b§l%server_days%§f. Day!"
