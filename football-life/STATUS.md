@@ -3,16 +3,18 @@
 **Baseline:** FL26 v2.2 (May 2026)
 **Verified:** 2026-08-10
 
-#strong[SmokePatch Download Safety:] The SmokePatch site (pessmokepatch.com) is safe, but download links redirect to third-party ad-heavy hosts (MediaFire, Mega). Use uBlock Origin when navigating download pages. Look for the real file name (e.g. `SPFL26_xxx.exe`), not fake "Download Now" buttons. If the official site is down or links are broken, check #link("https://www.reddit.com/r/SPFootballLife/")[r/SPFootballLife] for community-verified mirrors and pinned posts.
+#strong[Download Source:] Football Life 2026 is hosted on PeSoccerWorld (pesoccerworld.com). Downloads are direct or via standard file hosts — no deceptive ad traps. Commentary v8 (English, Peter Drury & Jim Beglin) and 36 stadiums are bundled with the base download.
 
-## SmokePatch Official
+## PeSoccerWorld (SmokePatch Official)
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 1 | SP Football Life 2026 (base) | v2.0 (base installer) | https://www.pessmokepatch.com/ | VERIFIED | Standalone installer, no PES 2021 required. Filename: `SPFL26_xxx.exe` (check site for current). |
-| 2 | FL26 Update | v2.2 (May 2026) | https://www.pessmokepatch.com/ | VERIFIED | Latest stable as of Aug 2026. Apply after base game. |
-| 3 | English Commentary | v9 (Mar 2026 — Peter Drury & Jim Beglin) | https://www.pessmokepatch.com/ — Match Commentaries page | VERIFIED | `.exe` installer → point to FL26 root → System Settings > Language. |
-| 4 | Facepack AIO | Initial + Updates 1–4 (14,500+ faces) | https://www.pessmokepatch.com/ — Real Faces FL26/27 page | VERIFIED | Large download. Sider `livecpk` install. Apply base pack then updates sequentially. |
+| 1 | SP Football Life 2026 (base) | — | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en | VERIFIED | Standalone installer, no PES 2021 required. Extract and run `SPFL26_setup.exe` to a clean directory. Launch via `FL_2026 start.exe`. |
+| 2 | Update 1.1 | v1.1 | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en | VERIFIED | `SPFL26_110.exe` — database fixes, graphic corrections, stadium performance improvements, referee appearance fixes. Apply after base game. |
+| 3 | v2.0 Major Update | v2.0 | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-0-6018.html?lang=en | VERIFIED | 15 new promoted teams, winter transfers, refreshed player stats, gameplay adjustments (slower, more tactical pacing). Run installer over existing install. Compatible with all prior save games. |
+| 4 | v2.20 Option File | Jun 2026 | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-20-option-file-25-06-2026-mundial-fifa-2026-6093.html?lang=en | VERIFIED | World Cup 2026 rosters, confirmed summer transfers through June 25 2026. Backup `EDIT00000000` first, install over FL26, replace files. Compatible with FL26 v2.20. |
+| 5 | English Commentary v8 | v8 — bundled | Bundled with base game | BUNDLED | Included in the base download. Peter Drury & Jim Beglin. No separate install needed — select English under System Settings > Language. |
+| 6 | Facepack AIO | Initial + Updates 1–4 (14,500+ faces) | https://www.pessmokepatch.com/2025/10/faces2627.html | VERIFIED | Large download. Sider `livecpk` install. Apply base pack then updates sequentially. |
 
 ## EvoWeb — Audio & Atmosphere
 
@@ -53,12 +55,12 @@
 
 ## Summary
 
-- **21/21 mods VERIFIED** against live community sources
+- **22/23 mods VERIFIED** against live community sources; **1 BUNDLED** (commentary v8 included in base)
 - **0 DROPPED**
+- **Download source migrated from SmokePatch direct to PeSoccerWorld** — pesoccerworld.com hosts the FL26 base, updates, and option files. Commentary v8 and 36 stadiums are bundled in the base download.
 - **Many EvoWeb Sider modules are unversioned by nature** — they are maintained as forum threads with attachments, not formal releases. Each is confirmed active as of Aug 2026.
 - **UML v3 is paid** — confirm current Patreon tier and FL26 v2.2 support before purchase.
 - **League expansion mods are community-driven and scope varies** — verify current coverage at install time.
-- **FL27 expected late 2026** — this register covers FL26 v2.2.
 
 
 ## Installation Guide Decisions — Layers 1–5

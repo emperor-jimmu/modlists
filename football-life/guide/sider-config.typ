@@ -6,7 +6,7 @@ This matters because FL26 ships with over 20 GB of bundled content in `.cpk` arc
 
 The framework is Lua-scriptable: modules can hook into in-game events, present overlay menus, and react to match state. The Stadium Server, for example, reads the match fixture at kickoff, looks up the home team in its `map_teams.txt`, and injects the corresponding stadium model before the game engine finishes loading.
 
-#strong[To use Sider:] launch the game via `sider.exe`, never `FL 26.exe`. If you launch through the game executable directly, Sider never loads and none of the installed mods are injected.
+#strong[To use Sider:] launch the game via `FL_2026 start.exe`, never `FL 26.exe`. If you launch through the game executable directly, Sider never loads and none of the installed mods are injected.
 
 === The `sider.ini` File
 
@@ -82,7 +82,7 @@ Complete `sider.ini` template for this mod stack:
 
 #strong[Faces not loading:] Verify the `cpk.root` path to your face pack is correct and present in `sider.ini`. Common causes: (a) the path has a typo — each path must match the actual directory name exactly; (b) the face pack was not extracted to the expected location; (c) a later `cpk.root` with its own face folder is overriding the facepack. See the load order rule above.
 
-#strong[Sider not injecting:] The game is being launched through `FL 26.exe` instead of `sider.exe`. Sider must be the parent process. If you are using a desktop shortcut, edit the shortcut target to point to `sider.exe`, not the game executable. If you run the game through a launcher (Steam, Playnite), configure it to launch `sider.exe` and pass `FL 26.exe` as the working directory.
+#strong[Sider not injecting:] The game is being launched through `FL 26.exe` instead of `FL_2026 start.exe`. The launcher must be the parent process so Sider can initialize. If you are using a desktop shortcut, edit the shortcut target to point to `FL_2026 start.exe`, not the game executable. If you run the game through a launcher (Steam, Playnite), configure it to launch `FL_2026 start.exe`.
 
 #strong[Module conflicts — gameplay mods:] The Gameplay Loader allows only one gameplay `.cpk` active at a time. If you try to activate both Holland's Gameplay Mod and Allstar Mix simultaneously through the loader, the second activation replaces the first — they are not additive. In-game via the Sider overlay, select your active gameplay mod: Spacebar to open the overlay, navigate to Gameplay Loader, pick one. This setting persists across sessions.
 

@@ -1,30 +1,48 @@
 === Base Game Installation
 
-Download SP Football Life 2026 from the official SmokePatch site at #link("https://www.pessmokepatch.com/")[pessmokepatch.com]. The game ships as a standalone installer — no PES 2021 purchase or installation is required.
-
-#block(
-  fill: rgb("#fff8e1"),
-  inset: 10pt,
-  radius: 4pt,
-  stroke: 0.5pt + rgb("#e6a817"),
-  [
-    #strong[Download Safety:] The SmokePatch site itself is safe, but its downloads are hosted on third-party services (MediaFire, Mega, and similar) that are ad-heavy and use deceptive "Download" buttons. #strong[Use uBlock Origin] when navigating download pages — it blocks the most aggressive fake buttons and pop-ups. Look for the #emph[real file name] (e.g. `SPFL26_xxx.exe`), not generic "Download Now" or banner ads. If the official site is down or download links are broken, check the community at #link("https://www.reddit.com/r/SPFootballLife/")[r/SPFootballLife] for verified mirrors and pinned posts.
-  ]
-)
+Download SP Football Life 2026 from PeSoccerWorld at #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en")[pesoccerworld.com]. The game ships as a standalone installer — no PES 2021 purchase or installation is required. Commentary v8 (English, Peter Drury & Jim Beglin) and 36 pre-installed stadiums are included in the base download.
 
 #figure(
   table(
     columns: (auto, auto, 3fr),
     table.header([Component], [Version], [Installation]),
-    [SP Football Life 2026], [v2.0], [Download `SPFL26_xxx.exe` from the SmokePatch site (filename varies by release wave — check the current download page). Run the installer to an unprotected directory.],
-    [FL26 Update], [v2.2 — May 2026], [Apply after the base game. Download and run the update installer; point it to the same FL26 root directory.],
+    [SP Football Life 2026 (base)], [—], [Download from PeSoccerWorld. Extract the archive and run `SPFL26_setup.exe`. Choose a clean, unprotected directory — never install over another game.],
+    [Update 1.1], [v1.1], [After base installation, extract and run `SPFL26_110.exe`. Select your game folder when prompted. Includes database fixes, graphic corrections, stadium performance improvements, and referee appearance fixes.],
+    [v2.0 Major Update], [v2.0], [Download from #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-0-6018.html?lang=en")[PeSoccerWorld]. Major database update: 15 new promoted teams, winter transfers, refreshed player stats, and gameplay adjustments (slower, more tactical pacing, revised set-piece power). Extract and run the installer over your existing FL26 install. Compatible with all prior save games.],
+    [v2.20 Option File], [Jun 2026], [Download from #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-20-option-file-25-06-2026-mundial-fifa-2026-6093.html?lang=en")[PeSoccerWorld]. World Cup 2026 rosters and confirmed summer transfers through June 25, 2026. Backup your `EDIT00000000` file first, then install over your existing FL26 installation and replace files when prompted. Compatible with FL26 v2.20.],
   ),
   caption: [Base Game Components]
 )
 
 #strong[Installation path:] Avoid `C:\Program Files` and `C:\Program Files (x86)`. Windows UAC virtualization interferes with Sider module loading, `livecpk` path resolution, and runtime asset injection. Use a short root path — for example, `D:\FL26` or `C:\Games\FL26`.
 
-#strong[Verification:] After installation, launch `FL 26.exe` once. Confirm the game boots to the main menu. This generates configuration files, initializes the save directory in `Documents\KONAMI\`, and confirms your system meets the runtime requirements. Exit before installing mods.
+#strong[System Requirements:] Defaults to medium quality; adjustable in the game's video settings menu.
+
+#figure(
+  table(
+    columns: (auto, auto, 2fr),
+    table.header([Tier], [Spec], [Detail]),
+    [Minimum], [OS], [Windows 7 SP1 / 8.1 / 10 (64-bit)],
+    [], [CPU], [Intel Core i5-3470 / AMD FX 4350],
+    [], [RAM], [10 GB],
+    [], [GPU], [NVIDIA GTX 670 / AMD Radeon HD 7870],
+    [], [VRAM], [2 GB],
+    [], [DirectX], [11.0],
+    [], [Storage], [40 GB free],
+    [], [Resolution], [1280 x 720],
+    [Recommended], [OS], [Windows 11 (64-bit)],
+    [], [CPU], [Intel Core i7-9700 / AMD Ryzen 7 3700X],
+    [], [RAM], [10 GB],
+    [], [GPU], [NVIDIA GTX 980 / AMD Radeon R9 390X],
+    [], [VRAM], [6 GB (10 GB for 4K)],
+    [], [DirectX], [11.0],
+    [], [Storage], [40 GB free],
+    [], [Resolution], [1920 x 1080],
+  ),
+  caption: [System Requirements]
+)
+
+#strong[Verification:] After installation, launch `FL_2026 start.exe` once. Confirm the game boots to the main menu. This generates configuration files, initializes the save directory in `Documents\KONAMI\`, and confirms your system meets the runtime requirements. Exit before installing mods.
 
 #strong[Directory Anatomy:]
 The FL26 root contains these directories relevant to the mod stack:
@@ -35,18 +53,7 @@ The FL26 root contains these directories relevant to the mod stack:
 - `SiderAddons\` — Some community mod bundles unpack content here; merge with existing directories when prompted.
 - `sider.ini` — Core configuration file controlling module loading (`lua.module`), CPK roots (`cpk.root`), and startup behavior. Covered in detail in the Sider Configuration chapter.
 
-#strong[Launch order:] Start the game through `sider.exe`, not `FL 26.exe`. Sider injects all mod content before handing off to the game process.
-
-=== Layer 1 — English Commentary
-
-#figure(
-  table(
-    columns: (auto, 2fr, 2fr),
-    table.header([Mod], [Details], [Install]),
-    [English Commentary v9], [Peter Drury & Jim Beglin. Released March 2026. Downloaded from the SmokePatch Match Commentaries page at #link("https://www.pessmokepatch.com/")[pessmokepatch.com].], [Run the `.exe` installer and point it to your FL26 root directory. After installation, launch the game and select English commentary under System Settings > Language.],
-  ),
-  caption: [Layer 1 — Commentary]
-)
+#strong[Launch order:] Launch the game through `FL_2026 start.exe`. This is the launcher that initializes Sider and injects all mod content before handing off to the game engine. The desktop shortcut created during installation also points to this executable. Never launch the game executable directly.
 
 === Layer 2 — Audio Framework & Atmosphere
 
@@ -83,7 +90,7 @@ This pack is the recommended visual baseline. It installs several community stan
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [SmokePatch Facepack AIO], [Over 14,500 player faces. Includes the initial pack plus Updates 1 through 4. Downloaded from the SmokePatch Real Faces FL26/27 page at #link("https://www.pessmokepatch.com/")[pessmokepatch.com].], [Extract the base facepack to `content\faces\`. Apply Updates 1–4 sequentially, overwriting when prompted. Add `cpk.root = ".\content\faces"` to your `sider.ini`. The facepack is large — allocate 20+ GB of free disk space for extraction and staging.],
+    [SmokePatch Facepack AIO], [Over 14,500 player faces. Includes the initial pack plus Updates 1 through 4. Downloaded from the SmokePatch Real Faces FL26/27 page at #link("https://www.pessmokepatch.com/2025/10/faces2627.html")[pessmokepatch.com].], [Extract the base facepack to `content\faces\`. Apply Updates 1–4 sequentially, overwriting when prompted. Add `cpk.root = ".\content\faces"` to your `sider.ini`. The facepack is large — allocate 20+ GB of free disk space for extraction and staging.],
   ),
   caption: [Layer 4 — Faces]
 )
@@ -91,6 +98,8 @@ This pack is the recommended visual baseline. It installs several community stan
 The SmokePatch Facepack is the recommended face source for FL26: it is maintained by the same team that ships the base game, ensuring version compatibility. Community face packs may introduce conflicts with FL26 roster IDs — prefer this pack unless you have a specific reason to use an alternative.
 
 === Layer 5 — Stadiums
+
+FL26 includes 36 pre-installed stadiums in the base download. The Stadium Server and AIO Stadium Pack below add per-team assignment and additional high-resolution stadiums beyond the built-in set.
 
 #figure(
   table(
@@ -188,7 +197,7 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
 
 === Known Limitations
 
-#strong[No full lower-league pyramid.] #link("https://evoweb.uk/")[EvoWeb] and #link("https://www.pessmokepatch.com/")[SmokePatch] have confirmed this is an engine-level restriction, not a modding gap. The English Championship is the lowest tier 2 league; the German 2. Bundesliga and Spanish LaLiga 2 are similarly the floor for their pyramids. Installing league database mods will not add lower divisions.
+#strong[No full lower-league pyramid.] #link("https://evoweb.uk/")[EvoWeb] and #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en")[PeSoccerWorld] have confirmed this is an engine-level restriction, not a modding gap. The English Championship is the lowest tier 2 league; the German 2. Bundesliga and Spanish LaLiga 2 are similarly the floor for their pyramids. Installing league database mods will not add lower divisions.
 
 #strong[UML v3 is paid.] Ultimate Master League is the only mod in this stack that requires payment. Every other mod is free. The base FL26 Master League provides a solid career experience without UML — the paid version adds depth (player development overhaul, stat tuning, exclusive facepacks) but is not required for an enjoyable career.
 

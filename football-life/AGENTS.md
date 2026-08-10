@@ -14,7 +14,7 @@ SP Football Life 2026 (v2.2) modlist and game guide.
 
 ## Key Rules
 - NEVER fabricate or suggest mods. All mods must be verified real and FL26 v2.2 compatible.
-- Mod sources: SmokePatch official (primary), EvoWeb (community), UML Patreon (paid).
+- Mod sources: PeSoccerWorld / SmokePatch official (primary), EvoWeb (community), UML Patreon (paid).
 - Decision log maintained in STATUS.md. Update incrementally.
 - FL27 expected late 2026; note migration path in mod-ideas.md.
 

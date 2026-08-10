@@ -10,7 +10,7 @@ PlayStation controllers need a translation layer. Neither DualShock 4 nor DualSe
 
 #strong[DS4Windows:] A free, mature tool that presents your PlayStation controller to Windows as a virtual Xbox 360 pad. Install DS4Windows, pair your controller via Bluetooth or USB, and check the Controllers tab to confirm it is emulating an Xbox 360 pad. Button prompts in-game will show Xbox glyphs.
 
-#strong[Steam Input:] Add `FL 26.exe` (or `sider.exe` — either works) as a non-Steam game. In Steam Big Picture Mode, enable PlayStation Configuration Support under Controller Settings. The overlay translates PS inputs to XInput. This approach is less reliable than DS4Windows for FL26 specifically — some users report intermittent disconnection when the Sider overlay is also active — but it requires no third-party driver installation.
+#strong[Steam Input:] Add `FL_2026 start.exe` as a non-Steam game. In Steam Big Picture Mode, enable PlayStation Configuration Support under Controller Settings. The overlay translates PS inputs to XInput. This approach is less reliable than DS4Windows for FL26 specifically — some users report intermittent disconnection when the Sider overlay is also active — but it requires no third-party driver installation.
 
 #strong[Keyboard is a handicap.] FL26 processes input on an analogue level — dribbling precision, pass weight, and shot placement all depend on how far you push the left stick and how much pressure you apply to the trigger. A keyboard reduces all of this to binary on/off states. You can play with a keyboard, but you will lose nuance in every phase of play. Even an inexpensive wired Xbox 360 controller will improve the experience more than any graphics mod.
 
