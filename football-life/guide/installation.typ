@@ -90,14 +90,17 @@ This pack is the recommended visual baseline. It installs several community stan
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Mega Facepack V4 (Football4Life)], [#strong[Recommended.] 15,842 faces across 7 parts. Includes the original FL26 V3 facepack with errors corrected and optimizations. Available at #link("https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en")[pesoccerworld.com].], [Download all 7 parts, extract from the first archive with WinRAR, and copy the extracted `download` folder contents to `SP Football Life 26\download\`. Allocate 40+ GB free space for extraction.],
-    [Mega Facepack V5 (Football4Life)], [Upgrade from V4 with 17,555 faces total. Search pesoccerworld.com for "Mega Facepack 2026 V5".], [Same method as V4: extract and copy to `SP Football Life 26\download\`. If you already have V4 installed, V5 replaces it — don't install both.],
+    [Mega Facepack V5 (Football4Life)], [#strong[Primary recommendation.] 17,555 faces across 5 parts. Standalone — no prior version required. Includes all V3 and V4 faces plus additions. Available at #link("https://www.pesoccerworld.com/descargar/mega-facepack-2026-v5-para-football-life-26-con-17-555-rostros-6103.html?lang=en")[pesoccerworld.com].], [Download all 5 parts, extract from the first archive with WinRAR, and copy the extracted `download` folder contents to `SP Football Life 26\download\`. Allocate 40+ GB free space for extraction. If you have V4 installed, delete it first — V5 is standalone and replaces earlier versions.],
+    [Mega Facepack V4 (Football4Life)], [Superseded by V5. 15,842 faces across 7 parts. Keep as reference only — V5 is the current version. Available at #link("https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en")[pesoccerworld.com].], [Download all 7 parts, extract from the first archive with WinRAR, and copy the extracted `download` folder contents to `SP Football Life 26\download\`. Only install this if you cannot obtain V5.],
+    [Managers Facepack V1], [#strong[Supplementary.] Manager faces for Master League. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-y-sp-football-life-2026-pack-de-caras-de-entrenadores-v1-6124.html?lang=en")[pesoccerworld.com].], [Install after the main facepack. Copy to `SP Football Life 26\download\`.],
+    [Youngster Facepack], [#strong[Supplementary.] 122 young player faces. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-youngster-facepack-122-con-nuevos-rostros-juveniles-5988.html?lang=en")[pesoccerworld.com].], [Install after the main facepack. Copy to `SP Football Life 26\download\`.],
+    [Special Facepack (Halobaim)], [#strong[Supplementary.] Additional special faces curated by Halobaim. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-facepack-especial-by-halobaim-5990.html?lang=en")[pesoccerworld.com].], [Install after the main facepack. Copy to `SP Football Life 26\download\`.],
     [Facepack v2 (Football4Life)], [Alternative. 14,714 faces with enhanced arm/leg tattoos. 103 faces not found in other packs. Available at #link("https://pes-files.com/pes-2021-sp-football-life-facepack-2026-v2/")[pes-files.com].], [Download all parts, extract from the first archive, and copy the `download` folder contents to `SP Football Life 26\download\`.],
   ),
   caption: [Layer 4 — Faces]
 )
 
-#strong[Recommendation:] Start with Mega Facepack V4 (15,842 faces) — it includes the V3 base with fixes and optimizations, giving the best coverage-to-stability ratio. Upgrade to V5 if you want the maximum face count (17,555). Facepack v2 from pes-files.com is a solid alternative with better tattoo coverage if you prefer that look. All three are by Football4Life and are built for FL26 compatibility.
+#strong[Recommendation:] Install Mega Facepack V5 (17,555 faces, 5 parts) — it is standalone, requires no prior version, and gives the maximum face count. Add the three supplementary packs (Managers, Youngster, Halobaim) for auxiliary coverage beyond the main database. Facepack v2 from pes-files.com is a solid alternative with better tattoo coverage if you prefer that look. All facepacks install to the `download` folder; the game reads faces directly from there at startup — no `cpk.root` entry is needed.
 
 #strong[Note:] Unlike the old SmokePatch facepack, these packs install to the `download` folder rather than `content\faces`. No `cpk.root` entry in `sider.ini` is needed — the game reads faces directly from the `download` directory at startup.
 
@@ -125,12 +128,13 @@ The Stadium Server is the prerequisite module; the AIO Stadium Pack supplies the
     table.header([Mod], [Details], [Install]),
     [Soccer Revolution], [Lighting overhaul: pitch textures, stadium shadows, and broadcast-style colour grading. Unversioned; confirmed active August 2026. Direct thread: #link("https://evoweb.uk/threads/soccer-revolution-10-0-brand-new-gameplay-graphics-reshades.94305/")[EvoWeb thread #94305].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\soccer-revolution\`). Add `cpk.root = ".\livecpk\soccer-revolution"` to `sider.ini`.],
     [Jeremiah's Ultra Turfs], [Organic non-repeating grass textures with realistic wear patterns, mowing lines, and pitch degradation. Unversioned; confirmed active August 2026. EvoWeb — search: "Jeremiah Ultra Turfs".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\ultra-turfs\`). Add `cpk.root = ".\livecpk\ultra-turfs"` to `sider.ini`.],
+    [Realistic Turf in Full HD], [Alternative/companion to Jeremiah's Ultra Turfs. Realistic grass textures in full HD resolution. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-sp-football-life-2026-cesped-realista-en-full-hd-6076.html?lang=en")[pesoccerworld.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\realistic-turf\`). Add `cpk.root = ".\livecpk\realistic-turf"` to `sider.ini`. Install after Jeremiah's Ultra Turfs — later `cpk.root` entries override earlier ones. If you prefer this turf to Jeremiah's, place it last in the CPK root chain.],
     [ReShade Preset], [Post-processing colour and sharpening preset by Machete Gaming / KnightMD. Unversioned; confirmed active August 2026. Community-distributed via Machete Gaming's YouTube/Discord channels or EvoWeb. ReShade base: #link("https://reshade.me/")[reshade.me].], [Download the ReShade installer from reshade.me and run it targeting `FL 26.exe`. Select Direct3D 10/11/12 as the rendering API. After ReShade is installed, copy the `.ini` preset file into your FL26 root directory. Select it in the ReShade in-game overlay (default: Home key).],
   ),
   caption: [Layer 6 — Graphics Overhaul]
 )
 
-#strong[Load order note:] ReShade runs independently of Sider — it hooks the Direct3D pipeline directly. The `livecpk` entries for Soccer Revolution and Ultra Turfs load through Sider's CPK root system. Install and verify the two CPK root mods before applying ReShade; the preset is tuned to complement the lighting and turf changes.
+#strong[Load order note:] ReShade runs independently of Sider — it hooks the Direct3D pipeline directly. The `livecpk` entries for Soccer Revolution and the two turf mods load through Sider's CPK root system. Install and verify the CPK root mods before applying ReShade; the preset is tuned to complement the lighting and turf changes. For turf: install both Jeremiah's Ultra Turfs and Realistic Turf, but only enable one as your active turf by placing it later in the CPK root chain — later entries override earlier ones.
 
 === Layer 7 — Camera
 
@@ -198,6 +202,62 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
 )
 
 #strong[Engine limitation:] The FL26 engine does not support a full lower-league pyramid below tier 2. The Championship is the lowest playable division in the English league structure; no League One, League Two, or National League mods exist. Community league databases expand horizontally (adding new top-tier leagues like Liga MX and CSL) rather than vertically (adding promotion/relegation tiers). Accept this constraint before installing — no amount of modding can add a third tier.
+
+
+=== Layer 12 — Sleeve Patch & Armband Server
+
+#let sleeve-url = "https://www.pesoccerworld.com/descargar/pes-2021-fl-2026-sleeve-patch-y-armband-server-4-0-aio-con-insignias-del-mundial-fifa-2026-6084.html?lang=en"
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Sleeve Patch & Armband Server 4.0 AIO], [FIFA World Cup 2026 official badges and champions badge. League patches for 16 competitions. Sider module. Available at #link(sleeve-url)[pesoccerworld.com].], [*CRITICAL:* Delete any previous version before installing — do not overwrite. Copy `content` and `modules` into the Sider directory. Enable `lua.module = "SleeveBadge-ArmbandServer.lua"` in `sider.ini`.],
+  ),
+  caption: [Layer 12 — Sleeve Patch & Armband Server]
+)
+
+#strong[Installation order:] Install after core visual and gameplay layers are stable. Patches are assigned dynamically per competition. The delete-before-install requirement is critical: stale files from a previous version cause silent failures.
+
+=== Layer 13 — Soundtrack Server
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Soundtrack Server v8.0 (marcoiacovelli02)], [Three curated music collections: 80s (182 songs), Iconic (88 songs), PES+FIFA (97 songs) — 367 tracks total. Favourites system, pre-match intro compatible, Ctrl+F5 live reload. Available at #link("https://www.pesoccerworld.com/descargar/sp-football-life-2026-soundtrack-server-v8-0-by-marcoiacovelli02-6032.html?lang=en")[pesoccerworld.com].], [Follow the included TXT instructions. Installs as a Sider module, replaces the in-game soundtrack. Ctrl+F5 reloads music live during gameplay.],
+  ),
+  caption: [Layer 13 — Soundtrack Server]
+)
+
+#strong[Note:] This is a music replacement, not an audio mixer. It is separate from SoundServer (Layer 2), which controls crowd, referee, and announcer audio. Both coexist — Soundtrack Server handles the playlist, SoundServer handles the in-match mix.
+
+=== Layer 14 — Kitpacks
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Mega Kitpack V2 2025/26 (FL & UML)], [Comprehensive 2025/26 kit pack for FL26 and UML leagues. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-football-life-y-uml-mega-kitpack-v2-2025-26-6080.html?lang=en")[pesoccerworld.com].], [Extract to `livecpk\mega-kitpack-v2\`. Add `cpk.root = ".\livecpk\mega-kitpack-v2"` to `sider.ini`. Install before the DN7 addon.],
+    [Mega Kitpack 2025/26 V2 Addon (DN7 Kits)], [Supplementary kits by DN7 Kits. Additional 2025/26 kits beyond the V2 base. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-sp-football-life-2026-mega-kitpack-2025-26-v2-addon-by-dn7-kits-6043.html?lang=en")[pesoccerworld.com].], [Extract to `livecpk\dn7-kits-addon\`. Add `cpk.root = ".\livecpk\dn7-kits-addon"` to `sider.ini`. Place after V2 base in CPK root chain — later entries take priority.],
+  ),
+  caption: [Layer 14 — Kitpacks]
+)
+
+#strong[Kit load order:] The Essentials Mod Pack (Layer 3) includes a base kit set. Place these kitpack `cpk.root` entries after the Essentials entries so the dedicated kit packs override the base.
+
+=== Layer 15 — Accessories
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Gloves & Boots Pack (Fallons)], [Updated goalkeeper gloves and player boots for the April 2026 window. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-pack-de-guantes-y-botas-abril-by-fallons-6052.html?lang=en")[pesoccerworld.com].], [Extract to `livecpk\gloves-boots-fallons\`. Add `cpk.root = ".\livecpk\gloves-boots-fallons"` to `sider.ini`. Place after kitpacks and Essentials in the CPK root chain.],
+  ),
+  caption: [Layer 15 — Accessories]
+)
+
+#strong[Note:] The Essentials Mod Pack (Layer 3) bundles an older boots/gloves set. The Fallons pack provides more recent models. Place its `cpk.root` entry after the Essentials entries so newer accessories override bundled ones.
+
 
 === Known Limitations
 

@@ -20,9 +20,12 @@
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| FP1 | Mega Facepack V4 (Football4Life) | V4 (15,842 faces) | https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en | VERIFIED | #strong[Recommended.] 15,842 faces across 7 parts. Includes original FL26 V3 facepack with errors corrected + optimizations. Extract with WinRAR, copy to `SP Football Life 26/download`. |
-| FP2 | Mega Facepack V5 (Football4Life) | V5 (17,555 faces) | pesoccerworld.com — search: "Mega Facepack 2026 V5" | VERIFIED | Upgrade from V4 with 17,555 total faces. Same install method. |
+| FP1 | Mega Facepack V4 (Football4Life) | V4 (15,842 faces) | https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en | VERIFIED | Superseded by V5. 15,842 faces across 7 parts. Keep as reference only — V5 is standalone and replaces it. Extract with WinRAR, copy to `SP Football Life 26/download`. |
+| FP2 | Mega Facepack V5 (Football4Life) | V5 (17,555 faces) | https://www.pesoccerworld.com/descargar/mega-facepack-2026-v5-para-football-life-26-con-17-555-rostros-6103.html?lang=en | VERIFIED | #strong[Primary recommendation.] 17,555 faces across 5 parts. Standalone — no prior version required. Includes all V3/V4 faces plus additions. Extract with WinRAR, copy to `SP Football Life 26/download`. |
 | FP3 | Facepack v2 (Football4Life) | v2 (14,714 faces) | https://pes-files.com/pes-2021-sp-football-life-facepack-2026-v2/ | VERIFIED | Alternative. 14,714 faces, enhanced arm/leg tattoos. Updated leagues: PL, LaLiga, Serie A, Bundesliga, Ligue 1, Argentina, Brazil, Netherlands, Turkey, Belgium, Denmark. 103 faces not in the SP Facepack. Extract all parts, copy to `SP Football Life 26/download`. |
+| FP4 | Managers Facepack V1 | V1 | https://www.pesoccerworld.com/descargar/pes-2021-y-sp-football-life-2026-pack-de-caras-de-entrenadores-v1-6124.html?lang=en | VERIFIED | #strong[Supplementary.] Manager faces for Master League. Install after main facepack. Copy to `SP Football Life 26/download`. |
+| FP5 | Youngster Facepack | 122 faces | https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-youngster-facepack-122-con-nuevos-rostros-juveniles-5988.html?lang=en | VERIFIED | #strong[Supplementary.] 122 young player faces. Install after main facepack. Copy to `SP Football Life 26/download`. |
+| FP6 | Special Facepack by Halobaim | unversioned | https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-facepack-especial-by-halobaim-5990.html?lang=en | VERIFIED | #strong[Supplementary.] Additional special faces curated by Halobaim. Install after main facepack. Copy to `SP Football Life 26/download`. |
 
 ## EvoWeb — Audio & Atmosphere
 
@@ -61,11 +64,42 @@
 | 20 | Ultimate Master League (UML) v3 | v3 (2026) | Patreon — UML Team (PogChampion, jovic1901, Daemon, BMKits) | VERIFIED | **Paid** (~$5–10). FL26-compatible per community sources (June 2026). Overhauled player dev, 2,800+ stat adjustments, World Cup 2026 rosters, K League 1, exclusive facepacks. Confirm current Patreon tier before purchase. |
 | 21 | Ultra League Patch (ULP) / community league databases | WIP — active Aug 2026 | Community — EvoWeb / Reddit r/SPFootballLife | VERIFIED — note below | Adds regional leagues (various scopes — verify current coverage at install time). Liga MX and CSL available via separate community database mods. Active development as of Aug 2026. |
 
+## pesoccerworld — Sleeve Patch & Armband Server
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 22 | Sleeve Patch & Armband Server 4.0 AIO | v4.0 — confirmed active Aug 2026 | https://www.pesoccerworld.com/descargar/pes-2021-fl-2026-sleeve-patch-y-armband-server-4-0-aio-con-insignias-del-mundial-fifa-2026-6084.html?lang=en | VERIFIED | FIFA World Cup 2026 official badges + champions badge, league patches for 16 competitions (PL, LaLiga, Serie A, Bundesliga, Ligue 1, Liga Portugal, Eredivisie, EFL, SPFL, MLS, Liga MX, CSL, Saudi Pro League, plus continental). Sider module: `lua.module = "SleeveBadge-ArmbandServer.lua"`. #strong[CRITICAL:] Delete previous version before install — do not overwrite. Copy `content` and `modules` into Sider 7 directory. |
+
+## pesoccerworld — Soundtrack Server
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 23 | Soundtrack Server v8.0 (marcoiacovelli02) | v8.0 — confirmed active Aug 2026 | https://www.pesoccerworld.com/descargar/sp-football-life-2026-soundtrack-server-v8-0-by-marcoiacovelli02-6032.html?lang=en | VERIFIED | 3 music collections: 80s (182 songs), Iconic (88 songs), PES+FIFA (97 songs) — 367 total. Favorites system, pre-match intro compatible, Ctrl+F5 live reload. Sider module. Install per included TXT instructions. |
+
+## pesoccerworld — Kitpacks
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 24 | Mega Kitpack V2 2025/26 (FL & UML) | V2 | https://www.pesoccerworld.com/descargar/pes-2021-football-life-y-uml-mega-kitpack-v2-2025-26-6080.html?lang=en | VERIFIED | Comprehensive kit pack for FL26 and UML. 2025/26 season kits. Sider `livecpk` + `cpk.root` entry. |
+| 25 | Mega Kitpack 2025/26 V2 Addon (DN7 Kits) | V2 addon | https://www.pesoccerworld.com/descargar/pes-2021-sp-football-life-2026-mega-kitpack-2025-26-v2-addon-by-dn7-kits-6043.html?lang=en | VERIFIED | Supplementary kit pack by DN7 Kits. Additional 2025/26 kits beyond the V2 base. Install after the Mega Kitpack V2. Sider `livecpk` + `cpk.root` entry. |
+
+## pesoccerworld — Accessories
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 26 | Gloves & Boots Pack (Fallons) | April 2026 | https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-pack-de-guantes-y-botas-abril-by-fallons-6052.html?lang=en | VERIFIED | Updated gloves and boots for FL26. Sider `livecpk` + `cpk.root` entry. |
+
+## pesoccerworld — Graphics
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 27 | Realistic Turf in Full HD | unversioned — confirmed active Aug 2026 | https://www.pesoccerworld.com/descargar/pes-2021-sp-football-life-2026-cesped-realista-en-full-hd-6076.html?lang=en | VERIFIED | Alternative/companion to Jeremiah's Ultra Turfs. Realistic grass textures in full HD resolution. Sider `livecpk` + `cpk.root` entry. Install after Jeremiah's Ultra Turfs — later `cpk.root` entries override earlier ones.
+
 ## Summary
 
-- **23/23 mods VERIFIED** against live community sources; **0 BUNDLED**, **3 SUBSUMED by Essentials** (SoundServer, Ball Server, Gameplay Loader — bundled in the Essentials Mod Pack)
+- **29/29 mods VERIFIED** against live community sources; **0 BUNDLED**, **3 SUBSUMED by Essentials** (SoundServer, Ball Server, Gameplay Loader — bundled in the Essentials Mod Pack)
 - **0 DROPPED**
-- **Download source: caocacao.net** (base game, updates, commentary) with facepacks from pesoccerworld.com and pes-files.com. 36 stadiums are included in the base installation; commentary v8 is a separate download.
+- **Download source: caocacao.net** (base game, updates, commentary) with facepacks from pesoccerworld.com and pes-files.com. 36 stadiums are included in the base installation; commentary v8 is a separate download. Additional mods sourced from EvoWeb and pesoccerworld.com.
 - **Sourcing methodology:** Direct EvoWeb thread URLs provided where available (Essentials Mod Pack #103385, Soccer Revolution #94305). Mods behind EvoWeb's login wall use `EvoWeb — search: "<term>"` — exact search terms are quoted for copy-paste into EvoWeb's search bar. Mods bundled in the Essentials Mod Pack note both the pack source and the standalone thread for users who skip Layer 3.
 - **UML v3 is paid** — confirm current Patreon tier and FL26 v2.2 support before purchase.
 - **League expansion mods are community-driven and scope varies** — verify current coverage at install time.
@@ -74,7 +108,7 @@
 ## Installation Guide Decisions — Layers 1–5
 
 - **Predator002 Chant Pack (Layer 2):** Selected over generic chant mods due to team-specific coverage across all major leagues, player-specific chants, and the included ChantsBase ambient crowd system. Version V8/V8.1 is the current community standard for FL26 as of August 2026.
-- **Mega Facepack V4 (Layer 4):** Selected as the recommended facepack with 15,842 faces (Football4Life). Includes the original FL26 V3 facepack with errors corrected and optimizations. V5 (17,555 faces) is available as an upgrade. The pes-files.com Facepack v2 (14,714 faces) is documented as an alternative. Community face packs may introduce ID mismatches with FL26's database — the Football4Life packs are built specifically for FL26 compatibility.
+- **Mega Facepack V5 (Layer 4):** Selected as the primary facepack with 17,555 faces across 5 parts (Football4Life). Standalone — no prior version required. V4 (15,842 faces) is retained as a superseded reference for users with existing V4 installs. Three supplementary facepacks (Managers V1 for ML manager portraits, Youngster with 122 young player faces, Halobaim Special) provide auxiliary coverage beyond the main database. The pes-files.com Facepack v2 (14,714 faces) is documented as an alternative with enhanced tattoo coverage. All Football4Life packs are built specifically for FL26 compatibility, avoiding ID mismatches common with generic community face packs.
 - **AIO Stadium Pack (Layer 5):** Selected as the primary stadium source because it bundles high-resolution stadiums with adboards and tunnel scenes for the 2025/26 season. Community stadium packs exist but typically cover fewer leagues and require manual `map_teams.txt` assembly.
 - **Essentials Mod Pack (Layer 3):** Adopted as the visual foundation because it bundles Ball Server (Ballpack v60 AIO by Hawke), SoundServer, Gameplay Loader, scoreboards, adboards, updated kits/boots/gloves, referee kits, and entrance scenes into a single install step. Several mods listed in other layers (Ball Server Layer 8, SoundServer Layer 2, Gameplay Loader Layer 9) are included in this pack — the standalone threads exist for users who skip the Essentials Pack, but the recommended path is to install Layer 3 first and verify bundled modules before seeking standalone downloads.
 - **SoundServer (Layer 2):** Bundled in the Essentials Mod Pack (Layer 3). Selected over in-game audio controls because it provides per-channel mixing (crowd, referee, announcer, ambient) via the Sider overlay. No equivalent alternative exists. Standalone EvoWeb thread available (search: "SoundServer nesa24") for users not installing the Essentials Pack.
@@ -91,6 +125,11 @@
 - **ULP / community league databases (Layer 11):** Listed as optional because league expansion mods are community-driven, scope varies by release wave, and no single database covers all regions. Liga MX and CSL are specifically called out as available via separate community mods. The engine-level limitation (no tier-3+ pyramid) is documented as a hard constraint — community league databases expand horizontally, not vertically.
 - **Known Limitations (4.4):** The three limitations (no lower-league pyramid, UML paid, no classic teams) are documented to set accurate expectations. The lower-league pyramid limitation is engine-level per community consensus on EvoWeb. The classic teams limitation is documented with a warning against experimental mods that exist but are unreliable.
 - **Save Compatibility Warning (4.5):** The save incompatibility policy is documented because FL26 updates are known to break Master League and Become a Legend saves. The recommendation to lock at v2.2 for career duration, back up `Documents\KONAMI\` and `FL 26.exe`, and maintain parallel installs for experimentation is based on established community practice for FL series updates.
+- **Sleeve Patch & Armband Server (Layer 12):** Selected as the dedicated sleeve badge and armband system because it covers FIFA World Cup 2026 official badges, a champions badge, and league patches for 16 competitions — far beyond the scope of kit-included badges. The Sider module (`SleeveBadge-ArmbandServer.lua`) dynamically assigns patches per competition. The critical installation instruction (delete previous version, do not overwrite) is emphasised because stale files cause silent conflicts. Placed after all core visual/gameplay layers so users have a stable baseline before adding per-competition visual detail.
+- **Soundtrack Server v8.0 (Layer 13):** Selected as the standalone music system because it provides curated collections (367 songs across three themes) with a favourites system and pre-match intro compatibility — a distinct function from SoundServer's audio mixing. The Ctrl+F5 live reload feature lets users swap music during gameplay without restarting. Placed as its own layer rather than merged into Layer 2 (Audio) to avoid confusion with the in-game audio channel system managed by SoundServer.
+- **Mega Kitpack V2 + DN7 Addon (Layer 14):** Selected as the primary kit source because the V2 pack covers both FL26 and UML leagues for the 2025/26 season, and the DN7 Addon fills gaps with additional kits. Both install via Sider `livecpk` with `cpk.root` entries. Placed as a standalone layer because kits sit between visual foundation (Layer 3) and gameplay — they affect the visual match experience but are independent of core systems.
+- **Gloves & Boots Pack (Layer 15):** Selected as the accessories layer because the Fallons pack provides up-to-date glove and boot models for the April 2026 season window. Installs via Sider `livecpk` with `cpk.root` entry. Separated from the Essentials Mod Pack's bundled boots/gloves because community packs update more frequently than the Essentials AIO release cycle.
+- **Realistic Turf in Full HD (Layer 6):** Added as an alternative/companion to Jeremiah's Ultra Turfs within the Graphics layer. Both are turf mods but target different visual goals: Jeremiah's focuses on organic non-repeating patterns and wear; Realistic Turf prioritises full HD resolution and clean presentation. Users install one as their primary turf (placed later in the `cpk.root` chain to override) and can keep the other as a fallback. Included in Layer 6 rather than a new layer because it is a direct turf replacement, not a new category.
 
 ## Sider Configuration Guide Decisions
 
