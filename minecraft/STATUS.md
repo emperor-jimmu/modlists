@@ -262,7 +262,7 @@ PUT 90.*:
 - [x] Create: Colony Logistics (Wave 1.5 — Colony Addons) — bridges MineColonies to Create logistics (belts, chutes, trains). 54K DL, updated Jul 2026.
 - [x] ColonyLink (Wave 1.5 — Colony Addons) — connects MineColonies builders to AE2 for resource monitoring and autocrafting. 11K DL, updated Jul 2026.
 - [x] Day Counter (Wave 0 — Inventory & UI) — day counter HUD with dawn display and fade. Requires Hud Texts dependency. 5.7M DL, MIT, updated Apr 2026.
-- [x] Day Counter config — superseded: Day Counter replaced by Day Counter Plus (user instruction, batch 28)
+- [x] Day Counter config — superseded by Day Counter Plus (batch 28), then restored with Day Counter (batch 29 — see pending item there)
 
 ### Added Mods (Jul 2026 batch 15 — Questing Ecosystem)
 
@@ -570,4 +570,12 @@ PUT 90.*:
 - [x] Day Counter Plus **ADDED** (Wave 0.5 — Inventory & UI) — persistent live "Day X" HUD, fully customizable in-game (position, scale, color, transparency, per-effect toggles, shadow). Pin `daycounterplus-1.0.0-1.21.X-NewForge` (CurseForge/Modrinth, 2025-10-04, 65KB, **zero dependencies** — standalone, no Hud Texts needed). Client + server sides — integrated server satisfies single-player. 4.1K DL. Overrides the batch 27 redundancy rejection per user instruction.
 - [x] Hud Texts **REMOVED** (Wave 0.5 dependency) — only required by Day Counter; orphaned after replacement.
 - [x] GUIDE.md updated: Wave 0.5 Inventory & UI table row, Day Counter Plus config section (chill settings — fade/outline on, rainbow/wave/growing off), detail section, Mod Count Summary (deps 43→42, total 213→212; mods unchanged at 170).
-- [ ] Day Counter Plus config verify — capture config file/keys after first launch; apply chill settings (fade/outline on, rainbow/wave/growing off) per GUIDE.md
+- [ ] Day Counter Plus config verify — closed: mod removed (batch 29, user instruction — persistent HUD not wanted)
+
+### Day Counter Plus Reverted (Aug 2026 batch 29 — user instruction)
+
+- [x] Day Counter Plus **REMOVED** (Wave 0.5 — Inventory & UI) — user tested it: the always-on HUD element isn't the wanted behavior. Day Counter Plus shows "Day X" permanently on screen and has no "show only at dawn and fade" mode — its Fade effect only animates the text, never hides the counter.
+- [x] Day Counter **RESTORED** (Wave 0 — Inventory & UI) — exactly the requested behavior: a brief "Day 42" on the ActionBar at dawn that auto-fades after ~3s and disappears until the next day. Lightweight HUD-only mod (calendar block and rewards exist but stay unused per config). Config: ActionBar only, no sound, no rewards, no week days, no date system.
+- [x] Hud Texts **RESTORED** (Wave 0.5 dependency) — required by Day Counter (from V3.4).
+- [x] GUIDE.md updated: Wave 0.5 table rows (Day Counter + Hud Texts), Day Counter config section, detail section, Mod Count Summary (deps 42→43, total 212→213; mods unchanged at 170).
+- [ ] Day Counter config — verify keys after test launch, apply overrides from GUIDE.md (ActionBar only, no sound, no rewards, no week days, no date system)

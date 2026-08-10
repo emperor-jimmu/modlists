@@ -484,18 +484,21 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Shulker Box Tooltip](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)         | Preview shulker box contents on hover                              |
 | [Item Borders](https://www.curseforge.com/minecraft/mc-mods/item-borders)                     | Colored borders on items based on rarity                           |
 | [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)            | Animated item pickup notifications                                 |
-| [Day Counter Plus](https://www.curseforge.com/minecraft/mc-mods/day-counter-plus)             | Day counter HUD — persistent live "Day X" display, fully customizable in-game (position, scale, color, effects). Standalone — zero dependencies |
+| [Day Counter](https://www.curseforge.com/minecraft/mc-mods/day-counter)                       | Day counter HUD — displays at dawn via ActionBar, fades after. Also supports Title/Subtitle/Chat display. Calendar block and reward system available but fully optional. |
+| [Hud Texts](https://www.curseforge.com/minecraft/mc-mods/hud-texts)                           | HUD text framework — dependency for Day Counter (from V3.4)       |
 
-**Day Counter Plus config** — edit live in-game via Mod List → Day Counter Plus → Config (saved to its config file; exact keys verified after first launch):
+**Day Counter config** (config/daycounter-common.toml — verify keys after first launch):
 
-| Setting                 | Value                          | Why                                                                 |
-|-------------------------|--------------------------------|---------------------------------------------------------------------|
-| Position (X/Y)          | Top-center                     | Persistent "Day X" visible without clashing with other HUD elements |
-| Text scale              | Default                        | Matches vanilla HUD text size                                       |
-| Effects                 | Fade + Outline/Shadow ON; Rainbow/Wave/Growing OFF | Readable, calm HUD — no flashing animations (Chill Rule) |
-| Color / transparency    | Default                        | Subtle and readable over any background                             |
+| Setting              | Value        | Why                                                     |
+|----------------------|-------------|---------------------------------------------------------|
+| New day display      | `ACTIONBAR` | ActionBar messages auto-fade after ~3s                  |
+| New day sound        | `false`     | No sound notification — just the text                   |
+| Rewards              | `false`     | No day-based rewards — too gamey                        |
+| Week days            | `false`     | No day-of-week names — just "Day 42"                    |
+| Date system          | `false`     | No calendar date — just day count                       |
+| Calendar block/item  | N/A         | Don't craft them — they're items, not mandatory features |
 
-This gives you exactly: a persistent "Day 42" HUD element that updates in real time as the sun rises and sets — no sounds, no rewards, no animated flashing. All settings are live-editable and persist automatically.
+This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn that fades. No HUD element, no sounds, no rewards. Days count in the background. The calendar block can be crafted later if you want a physical day tracker for your base.
 
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
@@ -728,11 +731,9 @@ Keeps your food, health, and armor bars visible while riding mounts. Vanilla rep
 
 Favorite/pin worlds to the top of your list, prevent accidental deletion. Right-click a world in the list to favorite it.
 
-#### Day Counter Plus
+#### Day Counter
 
-Persistent "Day X" HUD showing the current in-game day, live-updated as the sun rises and sets. Customize everything in-game (Mod List → Day Counter Plus → Config): position (X/Y), text scale, color and transparency, shadow strength, and per-effect toggles (rainbow, wave, fade, growing, outline). **Standalone — zero dependencies** (replaces Day Counter; the Hud Texts dependency is no longer needed). **Version pin**: `daycounterplus-1.0.0-1.21.X-NewForge` (2025-10-04, NeoForge 1.21.1, 65KB).
-
-**Chill settings** (recommended): keep fade + outline/shadow for readability; leave rainbow/wave/growing effects off — the pack favors a calm HUD over animated effects. [VERIFY] exact config keys after first launch.
+Day counter title overlay at dawn with milestone celebrations (Day 10, 50, 100...). Appears automatically — no config.
 
 #### Eating Animation
 
@@ -3454,7 +3455,7 @@ Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **170** | **42** | **212** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter → Day Counter Plus, Hud Texts dep removed)                                                                                                      |
+| **Total**                    | **170** | **43** | **213** | All confirmed NeoForge 1.21.1 (+Real Camera; Day Counter Plus reverted — Day Counter + Hud Texts restored)                                                                                              |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
