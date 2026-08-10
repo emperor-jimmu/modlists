@@ -45,7 +45,7 @@
 
 // == Sider Configuration
 == Sider Configuration
-// #include "guide/sider-config.typ"
+#include "guide/sider-config.typ"
 // Uncomment after Task 4
 #pagebreak()
 
