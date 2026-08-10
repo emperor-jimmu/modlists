@@ -314,3 +314,108 @@ The half-time team talk options appear after you confirm your tactical changes. 
 ==== Weather & Pitch Conditions
 
 Rain affects ball physics in FL26 — the ball skids on wet grass, making through-balls travel further and low-driven shots harder to handle. Adjust accordingly: shorter passing in the rain to maintain possession, more long shots (the keeper's handling is reduced), and conservative slide tackles (wet pitch = longer slide, higher foul risk). The match preview screen shows weather before kick-off.
+
+
+#pagebreak()
+
+=== Manager Personas
+
+Before you commit to a multi-season save, pick a persona. Each one imposes restrictions that turn Master League from a sandbox into a story. The rules are self-enforced — the game will not stop you from breaking them, but the save loses its tension the moment you do. Choose the one that makes you uncomfortable.
+
+Difficulty baseline: Professional, 10-minute halves, normal game speed. These are dials, not dogma. Bump up if you are winning by February; drop down if you cannot score by November. The persona-specific settings below override this baseline where noted.
+
+=== The Disgraced Legend
+
+#quote(block: true)[
+_[They still sing his name in the Curva Sud. They also still spit it.]_
+
+Marco Vieri was a Ballon d'Or podium finisher at twenty-three. By twenty-seven, his career had detonated in a Monaco hotel room — an altercation with a teammate, a shattered orbital bone, and an eighteen-month ban that ended his top-flight career before it began. The punditry circuit kept him visible for a decade: the knowing smirk, the merciless analysis, the unspoken question of whether he could still do it. Every former player on the panel has an opinion. Vieri has decided to stop having opinions and start having results.
+
+He takes over a relegation-zone Championship side in late autumn. The squad is demoralised, the defence leaks goals from set pieces, and the board's primary ambition is avoiding administration. Vieri does not care about any of this. He cares about whether a back-three can still function in modern football — because it is the only system he ever trusted as a player, and he will not abandon it now. The question is not whether he can manage. The question is whether anyone still wants to be managed by him.
+]
+
+- *Suggested teams:* Derby County, Portsmouth, Hull City
+- *Formation:* Back-three mandatory — 3-5-2, 3-4-3, or 3-4-2-1. No four-at-the-back formations, ever.
+- *Transfers:* No signings from the Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, or Eredivisie for two full seasons. You are rebuilding reputation, not buying it.
+- *Youth:* Promote two academy graduates to the first-team squad each season. They do not need to start every match, but they must appear in the match-day eighteen.
+- *Budget:* No single transfer fee may exceed fifty percent of your available transfer budget. You spread resources, not bet the club on one name.
+- *Match settings:* Professional, 10-minute halves. Increase to Superstar after promotion to the Premier League — you came back to face the best, not hide from them.
+- *Narrative goal:* Premier League promotion within four seasons. A domestic cup (FA Cup or Carabao) before the end of season six. If Vieri lifts silverware at Wembley, the arc closes. If he does not, the pundits were right.
+
+=== The Data Unicorn
+
+#quote(block: true)[
+_[Lena Okonkwo has never kicked a ball professionally. She has, however, built three quantitative hedge funds, sold two of them, and retired at thirty-four.]_
+
+Okonkwo's introduction to football was an accident. She bought a mid-table second-division club on a whim — the kind of purchase that reads as a rounding error in her portfolio and an existential event in the club's accounts. Her original plan was to install a competent director of football and check the quarterly reports. Instead, she fired the manager after watching six matches, concluded that the scouting department was operating on vibes, and had her former quant team install PostgreSQL in the analysis room. The players now receive expected-threat heatmaps with their post-match meals.
+
+She does not care about tradition, pundit narratives, or the football men who have been doing it this way for thirty years. She cares about data that survives a significance test. Every transfer target is ranked by a proprietary model that weights match ratings, physical output, age curves, and wage efficiency. Every player below replacement level receives ten matches to prove the model wrong, then goes on the transfer list. The dressing room finds this terrifying. The league table is starting to find it persuasive.
+]
+
+- *Suggested teams:* A mid-table side in the 2. Bundesliga, LaLiga 2, or EFL Championship — enough budget to build infrastructure, not enough to buy your way out.
+- *Formation:* 4-2-3-1 gegenpress (primary), 4-3-3 with inverted full-backs (possession variant), or 3-4-3 fluid (chaos variant). The model will tell you which performs best against each opponent.
+- *Transfers:* Target only players whose average match rating over the last full season exceeds the league median for their position. No signings over age twenty-eight — the depreciation curve is real and it is steep.
+- *Wages:* Your highest earner must not exceed twice the squad median wage. If your star striker earns €80k per week and your median is €25k, you have a problem the model will flag.
+- *Scouting:* Build a stat-ranked shortlist at each window. Any player who drops below replacement level after ten competitive matches must be transfer-listed. Data does not negotiate.
+- *Match settings:* Professional, 10-minute halves. Drop to Regular if you are losing matches faster than you can collect meaningful data points — the model needs a minimum sample size.
+- *Narrative goal:* Achieve promotion to the top flight with a squad whose average age is under twenty-five. Prove that a spreadsheet can beat a dugout.
+
+=== The Basque Purist
+
+#quote(block: true)[
+_[Iker Etxebarria was born three hundred metres from San Mamés. His father laid the pitch. His grandfather watched Pichichi score.]_
+
+Four hundred and twelve matches for Athletic Bilbao. Never left the club, never wanted to. When the manager's job opened, Etxebarria was the obvious candidate — club legend, UEFA Pro Licence, fifteen years coaching La Cantera. He negotiated control of the academy as a condition of taking the job. The board thanked him for his service and appointed someone with a more cosmopolitan CV. The rejection did not wound his pride. It clarified his purpose.
+
+He takes the philosophy on the road. Cantera — the belief that a club should field players it raised, or at least players from the region it represents — works at Athletic because the Basque Country is a footballing nation unto itself. Etxebarria intends to prove it works elsewhere. He arrives at a club with a functional academy and a strong regional identity, and he imposes the same constraints: sign only from the nation or the immediate geographic region, promote relentlessly from the youth ranks, and never stand in the way of a player who wants to leave. The philosophy is the point. The trophies, if they come, are evidence.
+]
+
+- *Suggested teams:* SC Freiburg (Baden identity, elite academy), Real Sociedad (Basque policy already exists — now enforce it ruthlessly), ACF Fiorentina (Tuscan roots, world-class youth setup)
+- *Formation:* 4-2-3-1 or 4-4-2. Nothing exotic — the system serves the players, not the coach's vanity.
+- *Transfers:* Sign only players from the club's home nation or immediate geographic region. For Freiburg: Germany, Austria, Switzerland, Alsace. For La Real: Basque Country, Navarre, La Rioja. For Fiorentina: Italy, with preference for Tuscany and surrounding regions. Accept every transfer request — a player who wants out is already gone. Honour-system rule.
+- *Youth:* Develop three first-team-ready academy graduates within four seasons. "First-team-ready" means at least twenty competitive appearances, not five-minute cameos.
+- *Squad:* Minimum three home-grown players in every match-day squad. Check the Player Registration screen — the HG icon is your compass.
+- *Match settings:* Professional, 12-minute halves. Youth players need real minutes to develop, and longer halves give you time to blood them without panicking about the result.
+- *Narrative goal:* Win a top-flight league title with a squad that is at least fifty percent academy graduates or regional signings. The percentage is the trophy.
+
+=== The Journeyman
+
+#quote(block: true)[
+_[Fifty-three years old. Fourteen clubs. Eight countries. Zero major trophies.]_
+
+Thomas Krause is the firefighter, the stopgap, the safe pair of hands who takes over in November when the board has lost patience and the dressing room has lost belief. He stabilises, he organises, he leaves before the credit arrives. His wife stopped asking which city years ago. His children track his career via Wikipedia — the entry is accurate but thin, a list of appointments and departures with no honours section. Krause does not have an honours section.
+
+He has one cycle left. Seven seasons, give or take, before the body and the travel and the accumulated departures make the decision for him. He will take the lowest-ranked playable job available — not as a gimmick, but because that is where the phone rings. He will build nothing permanent, keep nothing he cannot carry in a single suitcase, and move on when the work is done. The career has been honourable and anonymous. The final act will determine whether it was also meaningful.
+]
+
+- *Suggested teams:* The lowest-ranked playable side in any league — the team you scroll past in the job search because the budget is zero and the squad is a collection of loan returnees. Pick the worst one.
+- *Job movement:* Change clubs every two seasons. Accept the first reasonable offer that arrives — Krause does not get to be choosy. If no offer arrives by the end of the second season, resign and take the next available job at any level. Honour-system rule.
+- *Transfers:* Free agents and loans only. No permanent transfer fees, ever. You are the man clubs call when they have no budget — act like it.
+- *Squad:* A fresh start at every club. You cannot bring players from your previous team, no matter how much you developed them. That was their project; this is the next one.
+- *Hard stop:* Age sixty equals seven seasons. PES Master League does not model manager aging, so this is an honour-system rule: after seven seasons, the career is over regardless of outcome. If Krause has not won a major trophy by then, the career is complete but unfulfilled. That is an ending too.
+- *Match settings:* Top Player, 8-minute halves, fast game speed. Krause has been doing this for thirty years — he reads the game faster than you do. Increase to Superstar at the final club.
+- *Narrative goal:* Win a top-flight league title before retirement. One. Just one.
+
+=== Self-Imposed Rule Frameworks
+
+Not every save needs a full persona. Sometimes you want to build your own manager and impose a lighter set of constraints. These frameworks slot into any Master League career. Stack them, mix them, or use one as a spine. All are honour-system — the game will not enforce them. You will know.
+
+==== Transfer Realism
+
+Sell before you buy above a self-set threshold — one out for every major incoming transfer. Honour release clauses honestly: if a buying club meets the clause, you accept and negotiate, no reloading. Free agents are for your squad, not for flipping — sign a free agent to play him, not to list him the next window for pure profit.
+
+==== Scouting Realism
+
+Only scout regions with credible real-world ties to your club. A mid-table Eredivisie side does not run a scouting network in Brazil and Argentina — build the network outward from your region. Global scouting unlocks only when your club reaches the Champions League group stage; until then, you find players the way real clubs do: domestically, then regionally, then selectively abroad.
+
+==== Youth-First
+
+Every match-day squad must include at least two academy graduates. The transfer budget exists to supplement your academy pipeline, not replace it — no signing a twenty-three-year-old for a position where an eighteen-year-old graduate needs minutes. If you must choose between a marquee signing and upgrading the youth facilities, upgrade the facilities.
+
+==== Financial Fair Play
+
+Wage expenditure must not exceed seventy percent of club revenue, checked at the end of each transfer window. No running an operating deficit across two consecutive windows — the board will not bail you out and neither will a reload. Budget discipline is the difference between a sustainable project and a liquidation event.
+
+==== Sporting Director Mode
+
+Delegate all transfer negotiations to the CPU. Set your scouting priorities, identify targets, add them to the shortlist — then let the sporting director handle bids, wages, and contract terms. You coach the players you are given, whether you would have signed them or not. This is the mode for managers who want to be judged on the pitch, not in the negotiation room — and it is the closest FL26 gets to simulating a real head coach's scope of authority.
