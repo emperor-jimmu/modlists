@@ -11,6 +11,7 @@ This is a monorepo for game modlists (Minecraft, Skyrim, etc.). Each modlist is 
 - `monster-hunter-rise/` was created from scratch (not subtree-imported)
 - `x-plane-12/` was created from scratch (not subtree-imported)
 - `civ-4/` was created from scratch (not subtree-imported)
+- `football-life/` was created from scratch (not subtree-imported)
 - Do NOT use `git submodule` commands — subtrees were used instead
 
 ## Working conventions

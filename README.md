@@ -20,6 +20,7 @@ A monorepo for building, storing, and maintaining game modlists. Each modlist li
 | Fallout 4       | Fallout 4                       | [`fallout-4/`](./fallout-4/)                       | Active |
 | Factorio        | Factorio                        | [`factorio/`](./factorio/)                         | Active |
 | F1 25           | F1 25                           | [`f1-25/`](./f1-25/)                               | Active |
+| Football Life 26 | Football Life 26                | [`football-life/`](./football-life/)              | Active |
 | FS25            | Farming Simulator 25            | [`fs25/`](./fs25/)                                 | Active |
 | GTA IV          | Grand Theft Auto IV             | [`gtaiv/`](./gtaiv/)                               | Active |
 | GTA V           | Grand Theft Auto V              | [`gtav/`](./gtav/)                                 | Active |
@@ -132,6 +133,9 @@ factorio/               # Factorio modlist
 ├── AGENTS.md
 └── ...
 f1-25/                  # F1 25 modlist
+├── AGENTS.md
+└── ...
+football-life/           # Football Life 26 modlist
 ├── AGENTS.md
 └── ...
 fs25/                   # Farming Simulator 25 modlist
