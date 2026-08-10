@@ -57,3 +57,12 @@
 - **UML v3 is paid** — confirm current Patreon tier and FL26 v2.2 support before purchase.
 - **League expansion mods are community-driven and scope varies** — verify current coverage at install time.
 - **FL27 expected late 2026** — this register covers FL26 v2.2.
+
+
+## Installation Guide Decisions — Layers 1–5
+
+- **Predator002 Chant Pack (Layer 2):** Selected over generic chant mods due to team-specific coverage across all major leagues, player-specific chants, and the included ChantsBase ambient crowd system. Version V8/V8.1 is the current community standard for FL26 as of August 2026.
+- **SmokePatch Facepack AIO (Layer 4):** Selected over community face packs because it is maintained by the same team that ships FL26, ensuring roster-ID compatibility and consistent art direction. Community face packs may introduce ID mismatches with FL26's database.
+- **AIO Stadium Pack (Layer 5):** Selected as the primary stadium source because it bundles high-resolution stadiums with adboards and tunnel scenes for the 2025/26 season. Community stadium packs exist but typically cover fewer leagues and require manual `map_teams.txt` assembly.
+- **Essentials Mod Pack (Layer 3):** Adopted as the visual foundation because it bundles ball server, kit server, scoreboard selector, and entrance scenes into a single install step — subsequent layers assume these modules are present.
+- **SoundServer (Layer 2):** Selected over in-game audio controls because it provides per-channel mixing (crowd, referee, announcer, ambient) via the Sider overlay. No equivalent alternative exists.

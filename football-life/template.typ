@@ -40,8 +40,7 @@
 
 // == Installation & Mod Stack
 == Installation & Mod Stack
-// #include "guide/installation.typ"
-// Uncomment after Task 3
+#include "guide/installation.typ"
 #pagebreak()
 
 // == Sider Configuration
