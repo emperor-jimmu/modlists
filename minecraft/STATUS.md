@@ -531,3 +531,14 @@ PUT 90.*:
 - [x] Spell Engine + Ranged Weapon API retained — still required by Relics RPG; dependency notes updated to reflect removal of Skill Tree requirement.
 - [x] Keybind updated: Open Skill Tree → `K` (Pufferfish's Skills), was `P` (Skill Tree RPG Series).
 - [x] GUIDE.md Wave 3 updated: RPG Progression table, dependency notes, Skill Tree section replaced with full Skills Mastery Reimagined writeup (design philosophy, XP table, unique attributes, weapon synergy), wave summary counts (deps 10→11, total 20→21), overall totals (deps 41→42, total 209→210).
+
+### Wave 3 Equipment Review (Aug 2026)
+
+- [x] Removed Spartan Weaponry Unofficial — replaced by Simply More. Spartan's traditional polearms overlapped with Simply More's more exotic weapon types (Great Katanas, Grandswords, Backhand Blades, Lances, Khopeshs, Daggers, Pernachs, Quarterstaffs, Great Spears, Deer Horns). Simply More integrates natively as a Simply Swords addon and is balanced around Better Combat (already in Wave 5).
+- [x] Added Simply More (Wave 3 — Equipment) — 10 new weapon types + 33 unique weapons. Simply Swords addon. Dependencies (Cloth Config + Architectury) already in Wave 0.5 — zero new mods required. CurseForge (NeoForge 1.21.1).
+- [x] Skipped Knaves' Needs — 520+ additional swords is overkill. Simply Swords' 60+ weapons already provide sufficient variety. Adding 520 more dilutes drop uniqueness and creates inventory bloat.
+- [x] Renamed "Runes" → "Enchanting Runes" (actual mod name). URL unchanged (slug is `runes`).
+- [x] Reclassified Curios API from Equipment table to dependency notes. Curios is an API/library (296M DL, by TheIllusiveC4) — provides accessory slot infrastructure used by Relics RPG and Immersive Armors. By default adds no content except an inventory GUI. Moved to interdependency notes alongside Spell Engine, Ranged Weapon API, and Pufferfish's Attributes.
+- [x] Kept Relics RPG — deep leveling system is the killer feature for 200h+ progression. Alternatives (Artifacts, Lost Trinkets) lack leveling mechanics. More Relics noted as potential future addon.
+- [x] Kept Better Combat in Wave 5 — combat animation mod, not a weapon mod. Enhances all weapons, doesn't compete.
+- [x] Counts updated: Wave 3 mods 10→9, deps 11→12, total 21 (unchanged). Overall mods 168→167, deps 42→43, total 210 (unchanged).

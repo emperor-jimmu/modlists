@@ -2312,11 +2312,10 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 | Mod                                                                                                     | Role                                                                     |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | [Simply Swords](https://www.curseforge.com/minecraft/mc-mods/simply-swords)                             | 60+ unique melee weapons with passive/activated abilities                |
+| [Simply More](https://www.curseforge.com/minecraft/mc-mods/simply-more)                                 | 10 new weapon types + 33 unique weapons — Simply Swords addon            |
 | [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows)                             | 30+ unique bows with special abilities and custom attributes             |
-| [Spartan Weaponry Unofficial](https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial) | Spears, halberds, pikes, lances, throwing knives — fills the polearm gap |
-| [Relics RPG](https://www.curseforge.com/minecraft/mc-mods/relics-rpg)                                   | Legendary accessories with unique abilities                              |
-| [Runes](https://www.curseforge.com/minecraft/mc-mods/runes)                                             | Socketable runes for weapons/tools                                       |
-| [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)                                       | Accessory slots (rings, amulets, belts, gloves)                          |
+| [Relics RPG](https://www.curseforge.com/minecraft/mc-mods/relics-rpg)                                   | Legendary accessories with unique abilities — levels up with use         |
+| [Enchanting Runes](https://www.curseforge.com/minecraft/mc-mods/runes)                                  | Socketable runes for weapons/tools — early-game enchanting alternative   |
 | [Immersive Armors](https://www.curseforge.com/minecraft/mc-mods/immersive-armors)                      | 40+ unique armor sets with custom effects — berserk, double jump, hostile radar, spikes, divine block |
 
 ### Loot & Affixes
@@ -2371,6 +2370,7 @@ This cost curve encourages the player to settle for "good enough" gear until the
 ### Interdependency notes for Wave 3
 - **Spell Engine** is required by Relics RPG — it was previously considered for removal but must be retained as a mandatory dependency of this core RPG mod.
 - **Ranged Weapon API** is shared between Relics RPG and Pufferfish's Skills ecosystem — install once, used by both.
+- **Curios API** provides the accessory slot system used by Relics RPG and Immersive Armors. Adds an equipment GUI (keybind `Y`) with ring, amulet, belt, gloves, back, and charm slots. Auto-installed dependency — no separate config needed.
 
 **Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. **Apotheosis affixes and gems apply to all Immersive Armors pieces.** Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect side grade slot — different armor sets for different situations rather than linear upgrades.
 
@@ -2450,15 +2450,30 @@ Every weapon rolls with random affixes, every accessory provides a unique abilit
 
 **Finding them**: Dungeon chests, mob drops, and boss loot. Combine with Apotheosis gem socketing for even more damage.
 
-**Integration**: Simply Swords + Too Many Bows covers melee and ranged. Better Combat (Wave 5) provides appropriate animations for both.
+**Integration**: Simply Swords + Simply More covers melee (60+ unique weapons across 20+ types). Too Many Bows covers ranged. Better Combat (Wave 5) provides appropriate animations for all three.
 
-### Spartan Weaponry Unofficial — Polearms & Throwing
+### Simply More — Exotic Weapon Types
 
-Spears, halberds, pikes, lances, throwing knives — fills the polearm gap that Simply Swords doesn't fully cover.
+A Simply Swords addon that adds 10 new weapon types — not just more swords, but entirely new combat styles. Weapons are balanced around Better Combat (Wave 5) for full animation support.
 
-**Key feature**: Extended reach on all polearms (hit from 2-4 blocks away). Throwing weapons return after being thrown.
+| Weapon Type      | Playstyle                                                  |
+|------------------|------------------------------------------------------------|
+| **Great Katana** | Two-handed, wide sweeping arcs                             |
+| **Grandsword**   | Massive two-hander — disables enemy shields on block       |
+| **Backhand Blade** | Fast, dual-wield friendly, close-range                   |
+| **Lance**        | Mounted combat specialist — massive boost while riding     |
+| **Khopesh**      | Curved blade — bonus against unarmored targets             |
+| **Dagger**       | Fastest attack speed, backstab bonus                       |
+| **Pernach**      | Armor-piercing mace — shreds tough enemies                 |
+| **Quarterstaff** | Extended reach blunt weapon, knockback-focused             |
+| **Great Spear**  | Longest reach in the game — hit from 4+ blocks             |
+| **Deer Horns**   | Dual-wield fist weapons — rapid flurry strikes             |
 
-**Finding them**: Crafted at table (check EMI — wood/stone/iron/gold/diamond/netherite tiers). Lower tiers craftable early; higher tiers gate behind material progression.
+Plus 33 unique weapons with special abilities. All weapons use Simply Swords' unique drop system — loot from mobs, chests, and bosses.
+
+**Dependencies**: Simply Swords (already in pack). Cloth Config API and Architectury API are already installed from Wave 0.5 — no new mods needed.
+
+**Finding them**: Same as Simply Swords — mob drops (~2% chance), structure chests, boss loot. EMI shows all recipes and drop sources.
 
 ### Relics RPG — Legendary Accessories
 
@@ -2480,7 +2495,7 @@ Unique accessories for **Curios slots**. You have 6 slots: Ring (2), Amulet (1),
 
 **Finding strategy**: Use Explorer's Compass → find YUNG's structures → loot them. Relics have higher drop rates in YUNG's structures than vanilla ones.
 
-### Runes — Socketable Weapon Modifiers
+### Enchanting Runes — Socketable Weapon Modifiers
 
 Swapable modifications for weapons/tools. Change them between fights.
 
@@ -3374,14 +3389,13 @@ Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space
 | Transport      | Create trains move space resources from landing pad to base. Sophisticated Backpacks carry oxygen tanks |
 | Ore Processing | Mekanism 5x ore multiplication works on Stellaris ores (desh, ostranium, etc.)                          |
 | Food           | Farmer's Delight meals eatable in space when oxygen is present (v1.2.1+)                                |
-| Gear           | Apotheosis affixes may apply to Stellaris space suit (if item tags align)                               |
+| Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 
 ### Progression Placement
 
 Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materials that gate them behind Mekanism mid-game processing and AE2 infrastructure. Oxygen systems and fuel refining add a parallel supply-chain puzzle that rewards industrial automation.
 
 ## Mod Count Summary
-
 | Wave                         | Mods    | Deps   | Total   | Notes                                                                                                                                                                                                                                                                  |
 |------------------------------|---------|--------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wave 0 — Foundation          | 14      | 10     | 24      | Dependencies (12), Performance & Rendering (10), Shaderpack (1 mod: Euphoria Patches), Infrastructure (3) — all the nuts & bolts that make the game run (+1 shaderpack, +11 resource packs)                                                                            |
@@ -3389,14 +3403,14 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 1 — Tech                | 19      | 5      | 24      | Create + 13 addons (incl. Power Grid, Gunsmithing, Protection Pixel, Ornithopter Glider, Train Utilities, Railways Navigator, Interiors, Train Parts, Threaded Trains), Mekanism + Generators, AE2, Advanced Finders, Advanced Chimneys + NTGL, GeckoLib, Framework, ForgeEndertech, Kleiders deps |
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 32      | 6      | 38      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, IaA + MoMP + IA Engines addons, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
-| Wave 3 — Equipment Magic     | 10      | 11     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Too Many Bows, Spartan Weaponry, Relics, Runes, Curios, Immersive Armors, Apotheosis + 11 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes)                                               |
+| Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 | Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
 | Wave 2 — Exploration         | 31      | 5      | 36      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **168** | **42** | **210** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **167** | **43** | **210** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
