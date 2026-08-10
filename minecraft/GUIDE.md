@@ -2631,9 +2631,10 @@ Enabled. Adds telegraphed death-traps to the world (spikes, poison darts, instak
 | [Neo Bee Fix](https://modrinth.com/mod/neo-bee-fix)                                                   | Fixes bee AI bugs — bees leave hives, don't fall from sky, no NW wander bias     |
 | [Comfortable Campfires](https://www.curseforge.com/minecraft/mc-mods/comfortable-campfires)           | Campfires grant configurable status effects — sit by the fire, get a buff        |
 | [**Starcatcher**](https://www.curseforge.com/minecraft/mc-mods/starcatcher)                           | Fishing overhaul — 100+ fish, skill minigame, trophies, tournaments, catalogue   |
+| [**Starcatcher's Delight**](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight) v3.0.1 | Starcatcher × Farmer's Delight crossover — fish fillets, seafood dishes, sushi |
 | [**Better Fishtanks**](https://www.curseforge.com/minecraft/mc-mods/better-fishtanks)                 | Functional aquariums — fish bags, decorations, feeding system, Create/AE2 compat |
 
-**Interdependency note — Starcatcher + Farmer's Delight**: Starcatcher has a dedicated Farmer's Delight addon ([Starcatcher's Delight](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight)) that adds fish-related cooking recipes. Install alongside Farmer's Delight for seafood dishes.
+**Interdependency note — Starcatcher's Delight + Farmer's Delight**: Starcatcher's Delight is installed — fish caught via Starcatcher are cut into fillets and cooked into Farmer's Delight meals. Fish-specific dishes (sushi, stews, fried fish) and generic dishes with quality tiers (rarity of fish → quality of food). Legendary fish produce legendary meals with absorption hearts. All recipes visible in EMI. Same author as Starcatcher — seamless integration.
 
 **Interdependency note — Starcatcher + Hybrid Aquatic (Wave 2)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries with biome/weather/time restrictions. Hybrid Aquatic baits attract Hybrid Aquatic fish. No config needed.
 
@@ -2837,7 +2838,7 @@ A complete fishing overhaul with 100+ fish, skill-based minigame, progression sy
 
 **Golden Fish**: Rare variants of every fish — higher value, trophy-worthy. Hunt these for the ultimate collection.
 
-**Integration with Farmer's Delight**: Install [Starcatcher's Delight](https://www.curseforge.com/minecraft/mc-mods/starcatchers-delight) for fish-related cooking recipes. Fish fillets, seafood stews, sushi — all visible in EMI.
+**Integration with Starcatcher's Delight**: Starcatcher's Delight is installed — fish caught via Starcatcher are cut into fillets and cooked into Farmer's Delight meals. Fish quality (Common→Legendary) determines dish quality. Legendary meals always grant absorption hearts. See the Starcatcher's Delight section below for details.
 
 **Integration with Hybrid Aquatic (Wave 2)**: Starcatcher automatically adds Hybrid Aquatic fish as catchable entries. No config needed — more fish to catch, more variety in your catalogue.
 
@@ -2883,6 +2884,30 @@ Functional aquariums for displaying your catches. Build the tank of your dreams.
 | **Rendering Mode**    | Vanilla Waterlogging | Toggle experimental entity rendering for water             |
 
 **Integration with Starcatcher**: Better Fishtanks displays what Starcatcher catches. Starcatcher provides the fishing gameplay; Better Fishtanks provides the aquarium showcase. Different systems, complementary purposes.
+
+### Starcatcher's Delight — Seafood Cooking
+
+Starcatcher × Farmer's Delight crossover by wdiscute (same author as Starcatcher). Every fish you catch becomes a cooking ingredient.
+
+| Food Type | Ingredients | Notes |
+|---|---|---|
+| **Fish Fillets** | Any Starcatcher fish → Cutting Board | Fish quality (Common → Legendary) determines fillet quality |
+| **Sushi** | Fish fillet + rice + seaweed | Rice from Farmer's Delight, seaweed from oceans |
+| **Fish Stew** | Fish fillet + FD vegetables + Cooking Pot | Hearty meal with saturation buff |
+| **Fried Fish** | Fish fillet + FD oil + stove | Quick crispy meal |
+| **Legendary Dishes** | Legendary fillet only | Always grants absorption hearts — save these for boss fights |
+
+**Quality system**: The rarity of the fish you use determines the quality of the food. A legendary fish is cut into legendary fillets, which cook into legendary dishes. Each food has unique hand-written descriptions that change based on quality tier.
+
+**Getting started**:
+
+1. Catch any fish via Starcatcher's minigame
+2. Use a Farmer's Delight Cutting Board with a knife to produce fillets
+3. Combine fillets with FD ingredients for meals
+4. Hunt for legendary fish → legendary dishes with absorption hearts → boss fight food
+
+**Integration**: All Starcatcher's Delight recipes appear in EMI. Fillets and dishes can be stored in AE2. Quality-based dishes stack separately (Common Sushi ≠ Legendary Sushi). Zero config needed — install and fish.
+
 
 ---
 
@@ -3380,16 +3405,13 @@ Futuristic laser barriers created by powering Laser Source blocks with redstone.
 Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space mod for NeoForge 1.21.1. It features 4 rocket tiers, a rover, oxygen management, custom gravity per planet, oil/water/fuel processing, radioactives, and alien mobs. Machines include the Oxygen Distributor, Water Separator, Solar Panel, Fuel Refinery, and Pump Jack. 250+ building blocks across planet-specific sets.
 
 ### Integration with Tech Mods
-
 | Layer          | Stellaris ↔ Tech Mod Interaction                                                                        |
 |----------------|---------------------------------------------------------------------------------------------------------|
 | Power          | Mekanism cables can power Stellaris machines. Create rotational → Mekanism → Stellaris                  |
 | Energy         | Mekanism universal cable connects to Stellaris machines (energy API compat)                             |
 | Storage        | AE2 ME drives store Stellaris materials; autocrafting builds rocket components                          |
-| Transport      | Create trains move space resources from landing pad to base. Sophisticated Backpacks carry oxygen tanks |
 | Ore Processing | Mekanism 5x ore multiplication works on Stellaris ores (desh, ostranium, etc.)                          |
 | Food           | Farmer's Delight meals eatable in space when oxygen is present (v1.2.1+)                                |
-| Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
 
 ### Progression Placement
 
@@ -3404,13 +3426,13 @@ Phase 2 — Industrial Ascent (hours 40–200). Rockets require advanced materia
 | Wave 1.5 — Colony            | 9       | —      | 9       | MineColonies (4 deps counted as mods — they're library mods; CurseForge-only) + 4 addons: Byzantine Styles, Stylecolonies, Create: Colony Logistics, ColonyLink                                                                                                           |
 | Wave 2 — Exploration         | 32      | 6      | 38      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, IaA + MoMP + IA Engines addons, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
 | Wave 3 — Equipment Magic     | 9       | 12     | 21      | Skills Mastery Reimagined, Pufferfish's Skills, Simply Swords, Simply More, Too Many Bows, Relics, Enchanting Runes, Immersive Armors, Apotheosis + 12 deps (Placebo, Apothic modules, Patchouli, Simply Tooltips, Fzzy Config, Ranged Weapon API, Spell Engine, Bundle API, Pufferfish's Attributes, Curios API)                                               |
-| Wave 4 — Food & Farming      | 9       | —      | 9       | Farmer's Delight + 6 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
+| Wave 4 — Food & Farming      | 10      | —      | 10      | Farmer's Delight + 7 addon mods + Neo Bee Fix + Comfortable Campfires                                                                                                                                                                                                  |
 | Wave 4.5 — Quests            | 6       | 1      | 7       | FTB Questing ecosystem: FTB Library + FTB Quests + FTB Teams + KubeJS + FTB XMod Compat + MineColonies Questline + ExtraQuests (Modrinth). Bountiful removed.                                                                                                                                                                           |
 | Wave 2 — Exploration         | 31      | 5      | 36      | YUNG's (12), Terralith/Tectonic, Serene Seasons, Darker Depths, Upgrade Aquatic, dimensions (3), End overhaul (3 + Nullscape dp + 5 deps), Structory + Structory Towers, navigation, aircraft, ships, hang glider, MoMP addon, Incendium (Nether biome overhaul), Immersive Machinery (utility machines)                                                                          |
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **167** | **43** | **210** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **168** | **43** | **211** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 

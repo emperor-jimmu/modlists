@@ -504,6 +504,12 @@ PUT 90.*:
 - [x] GUIDE.md Wave 2: Tectonic config section added — table with all 5 settings, depth formula, ore generation explanation, verification steps
 - [x] Reviewed Deeper Oceans mod alternative — rejected (incompatible with Tectonic; Tectonic's own ocean depth config is more flexible and already integrated)
 
+
+### Added Mods (Aug 2026 — Starcatcher's Delight)
+
+- [x] Starcatcher's Delight v3.0.1 (Wave 4 — Food & Farming) — Farmer's Delight addon adding fish-related cooking recipes for Starcatcher catches. Fish fillets, sushi, fish stew, fried fish, and legendary dishes (absorption hearts). Quality tiers based on fish rarity. By wdiscute (same author as Starcatcher). NeoForge 1.21.1, 207K DL. Replaces former interdependency note that recommended installing it.
+- [x] GUIDE.md updated: Wave 4 table row, interdependency note rewritten as installed-mod note, Starcatcher section integration updated, new detail section added, mod counts (Wave 4 9→10, total 167→168 / 210→211)
+
 ### Skipped After Review (Aug 2026 batch 26)
 
 - [x] Advancements Reloaded — redundant: Better Advancements (UI) + Advancement Plaques (popups) cover this; mod warns about conflicts with other advancement mods
