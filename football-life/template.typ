@@ -46,10 +46,7 @@
 // == Sider Configuration
 == Sider Configuration
 #include "guide/sider-config.typ"
-// Uncomment after Task 4
 #pagebreak()
-
-// == Manager's Dossier
 == Manager's Dossier
-// #include "guide/lets-play.typ"
-// Uncomment after Task 5
+#include "guide/lets-play.typ"
+#pagebreak()
