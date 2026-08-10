@@ -3,6 +3,8 @@
 **Baseline:** FL26 v2.2 (May 2026)
 **Verified:** 2026-08-10
 
+#strong[SmokePatch Download Safety:] The SmokePatch site (pessmokepatch.com) is safe, but download links redirect to third-party ad-heavy hosts (MediaFire, Mega). Use uBlock Origin when navigating download pages. Look for the real file name (e.g. `SPFL26_xxx.exe`), not fake "Download Now" buttons. If the official site is down or links are broken, check #link("https://www.reddit.com/r/SPFootballLife/")[r/SPFootballLife] for community-verified mirrors and pinned posts.
+
 ## SmokePatch Official
 
 | # | Mod | Version | Source | Status | Notes |

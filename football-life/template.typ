@@ -22,7 +22,7 @@
 #align(center)[#image("assets/logo.jpg", width: 45%)]
 #v(3.5cm)
 #align(center)[
-  #text(size: 36pt, weight: "bold", fill: rgb("#1a5c2a"), font: "Bahnschrift", "The Beautiful Grind")
+  #text(size: 36pt, weight: "bold", fill: rgb("#1a5c2a"), font: "Bahnschrift", "Apex Life 26")
   #v(0.8em)
   #text(size: 16pt, fill: rgb("#2b2622"), "SP Football Life 2026")
   #v(0.2em)

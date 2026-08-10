@@ -1,6 +1,6 @@
 @echo off
 echo ============================================
-echo  The Beautiful Grind - PDF Generator (FL26 v2.2)
+echo  Apex Life 26 - PDF Generator (FL26 v2.2)
 echo ============================================
 echo.
 echo Checking Typst installation...
@@ -16,11 +16,11 @@ echo Typst %TYPST_VER% found.
 echo.
 echo Building PDF...
 if not exist output mkdir output
-typst compile template.typ output/the-beautiful-grind.pdf
+typst compile template.typ output/apex-life-26.pdf
 if %ERRORLEVEL% equ 0 (
     echo.
     echo ============================================
-    echo  SUCCESS: PDF generated at output/the-beautiful-grind.pdf
+    echo  SUCCESS: PDF generated at output/apex-life-26.pdf
     echo ============================================
 ) else (
     echo.

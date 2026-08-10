@@ -2,6 +2,16 @@
 
 Download SP Football Life 2026 from the official SmokePatch site at #link("https://www.pessmokepatch.com/")[pessmokepatch.com]. The game ships as a standalone installer — no PES 2021 purchase or installation is required.
 
+#block(
+  fill: rgb("#fff8e1"),
+  inset: 10pt,
+  radius: 4pt,
+  stroke: 0.5pt + rgb("#e6a817"),
+  [
+    #strong[Download Safety:] The SmokePatch site itself is safe, but its downloads are hosted on third-party services (MediaFire, Mega, and similar) that are ad-heavy and use deceptive "Download" buttons. #strong[Use uBlock Origin] when navigating download pages — it blocks the most aggressive fake buttons and pop-ups. Look for the #emph[real file name] (e.g. `SPFL26_xxx.exe`), not generic "Download Now" or banner ads. If the official site is down or download links are broken, check the community at #link("https://www.reddit.com/r/SPFootballLife/")[r/SPFootballLife] for verified mirrors and pinned posts.
+  ]
+)
+
 #figure(
   table(
     columns: (auto, auto, 3fr),

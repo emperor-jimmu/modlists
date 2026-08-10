@@ -1,10 +1,10 @@
-# The Beautiful Grind - Agent Instructions
+# Apex Life 26 - Agent Instructions
 
 SP Football Life 2026 (v2.2) modlist and game guide.
 
 ## Structure
 - `guide/` - Typst sources (installation, sider-config, lets-play)
-- `output/` - generated PDF (`the-beautiful-grind.pdf`)
+- `output/` - generated PDF (`apex-life-26.pdf`)
 - `assets/` - cover art
 - `template.typ` - Typst master template (cover, TOC, page setup, fonts)
 - `build.bat` - one-click PDF generator
@@ -19,5 +19,5 @@ SP Football Life 2026 (v2.2) modlist and game guide.
 - FL27 expected late 2026; note migration path in mod-ideas.md.
 
 ## PDF Generation
-Run `build.bat` -> `typst compile template.typ output/the-beautiful-grind.pdf` (Typst 0.15+).
+Run `build.bat` -> `typst compile template.typ output/apex-life-26.pdf` (Typst 0.15+).
 Fonts: Bahnschrift / Georgia.
