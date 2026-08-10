@@ -90,17 +90,15 @@ This pack is the recommended visual baseline. It installs several community stan
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Mega Facepack V5 (Football4Life)], [#strong[Primary recommendation.] 17,555 faces across 5 parts. Standalone — no prior version required. Includes all V3 and V4 faces plus additions. Available at #link("https://www.pesoccerworld.com/descargar/mega-facepack-2026-v5-para-football-life-26-con-17-555-rostros-6103.html?lang=en")[pesoccerworld.com].], [Download all 5 parts, extract from the first archive with WinRAR, and copy the extracted `download` folder contents to `SP Football Life 26\download\`. Allocate 40+ GB free space for extraction. If you have V4 installed, delete it first — V5 is standalone and replaces earlier versions.],
-    [Mega Facepack V4 (Football4Life)], [Superseded by V5. 15,842 faces across 7 parts. Keep as reference only — V5 is the current version. Available at #link("https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en")[pesoccerworld.com].], [Download all 7 parts, extract from the first archive with WinRAR, and copy the extracted `download` folder contents to `SP Football Life 26\download\`. Only install this if you cannot obtain V5.],
+    [Mega Facepack V5 (Football4Life)], [#strong[Primary recommendation.] 17,555 faces across 5 parts. V5 is a complete standalone package — no previous versions required. Available at #link("https://www.pesoccerworld.com/descargar/mega-facepack-2026-v5-para-football-life-26-con-17-555-rostros-6103.html?lang=en")[pesoccerworld.com].], [Download all 5 parts, extract from the first archive with WinRAR, and copy the extracted `download` folder contents to `SP Football Life 26\download\`. Allocate 40+ GB free space for extraction.],
     [Managers Facepack V1], [#strong[Supplementary.] Manager faces for Master League. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-y-sp-football-life-2026-pack-de-caras-de-entrenadores-v1-6124.html?lang=en")[pesoccerworld.com].], [Install after the main facepack. Copy to `SP Football Life 26\download\`.],
     [Youngster Facepack], [#strong[Supplementary.] 122 young player faces. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-youngster-facepack-122-con-nuevos-rostros-juveniles-5988.html?lang=en")[pesoccerworld.com].], [Install after the main facepack. Copy to `SP Football Life 26\download\`.],
     [Special Facepack (Halobaim)], [#strong[Supplementary.] Additional special faces curated by Halobaim. Available at #link("https://www.pesoccerworld.com/descargar/pes-2021-y-football-life-2026-facepack-especial-by-halobaim-5990.html?lang=en")[pesoccerworld.com].], [Install after the main facepack. Copy to `SP Football Life 26\download\`.],
-    [Facepack v2 (Football4Life)], [Alternative. 14,714 faces with enhanced arm/leg tattoos. 103 faces not found in other packs. Available at #link("https://pes-files.com/pes-2021-sp-football-life-facepack-2026-v2/")[pes-files.com].], [Download all parts, extract from the first archive, and copy the `download` folder contents to `SP Football Life 26\download\`.],
   ),
   caption: [Layer 4 — Faces]
 )
 
-#strong[Recommendation:] Install Mega Facepack V5 (17,555 faces, 5 parts) — it is standalone, requires no prior version, and gives the maximum face count. Add the three supplementary packs (Managers, Youngster, Halobaim) for auxiliary coverage beyond the main database. Facepack v2 from pes-files.com is a solid alternative with better tattoo coverage if you prefer that look. All facepacks install to the `download` folder; the game reads faces directly from there at startup — no `cpk.root` entry is needed.
+#strong[Recommendation:] Install Mega Facepack V5 (17,555 faces, 5 parts) — it is a complete standalone package requiring no prior version. Add the three supplementary packs (Managers, Youngster, Halobaim) for auxiliary coverage beyond the main database. All facepacks install to the `download` folder; the game reads faces directly from there at startup — no `cpk.root` entry is needed.
 
 #strong[Note:] Unlike the old SmokePatch facepack, these packs install to the `download` folder rather than `content\faces`. No `cpk.root` entry in `sider.ini` is needed — the game reads faces directly from the `download` directory at startup.
 
@@ -182,13 +180,13 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
     [Ultimate Master League (UML) v3],
-    [Overhauled career mode: reworked player development curves, 2,800+ player stat adjustments, World Cup 2026 rosters with accurate squads, K League 1, and exclusive facepacks. Developed by UML Team (PogChampion, jovic1901, Daemon, BMKits) and distributed via #link("https://www.patreon.com/")[Patreon]. FL26 v2.2 compatible per community sources (June 2026).],
-    [UML v3 is a #strong[paid mod] — the Patreon tier is approximately 5–10 USD (confirm the current price before purchasing). After purchase, follow the UML Team's installation guide: database files into `content\`, Sider modules into `Sider\`, kit server configuration per the included documentation. UML expects the Essentials Mod Pack (Layer 3) as a prerequisite for kit server and face assignment.],
+    [Overhauled career mode: reworked player development curves, 2,800+ player stat adjustments, World Cup 2026 rosters with accurate squads, K League 1, and exclusive facepacks. Developed by UML Team (PogChampion, jovic1901, Daemon, BMKits) and freely distributed via #link("https://caocacao.net/ultimate-master-league-for-football-life-uml-fl/")[caocacao.net]. Explicitly FL26 v2.2 compatible.],
+    [UML v3 is a #strong[free mod] — download via PixelDrain from caocacao.net. Downloads include: FL Version, EDIT00000000, install instructions, Ball Server fix v3 (all PixelDrain), and WC addon fix (Modsfire). Follow the UML Team's installation guide: database files into `content\`, Sider modules into `Sider\`, kit server configuration per the included documentation. UML expects the Essentials Mod Pack (Layer 3) as a prerequisite for kit server and face assignment.]
   ),
   caption: [Layer 10 — Career Depth]
 )
 
-#strong[Patreon note:] UML v3 pricing and tier structure are set by the UML Team, not this guide. Verify the current tier on their Patreon page before purchasing. This mod is optional — the base FL26 Master League is fully playable without it.
+#strong[caocacao.net note:] UML v3 is distributed by the UML Team and hosted freely on caocacao.net. Downloads are via PixelDrain (primary files) and Modsfire (WC addon fix). This mod is optional — the base FL26 Master League is fully playable without it.
 
 === Layer 11 — Optional Leagues
 
@@ -211,7 +209,7 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Sleeve Patch & Armband Server 4.0 AIO], [FIFA World Cup 2026 official badges and champions badge. League patches for 16 competitions. Sider module. Available at #link(sleeve-url)[pesoccerworld.com].], [*CRITICAL:* Delete any previous version before installing — do not overwrite. Copy `content` and `modules` into the Sider directory. Enable `lua.module = "SleeveBadge-ArmbandServer.lua"` in `sider.ini`.],
+    [Sleeve Patch & Armband Server 4.0 AIO], [Updated 2026 versions of regular competition badges — refreshes league, cup, and super cup patches across 16+ competitions. Includes FIFA World Cup 2026 badges + champions badge. Replaces outdated default patches with current-season designs; not separate replacement badges. Sider module. Available at #link(sleeve-url)[pesoccerworld.com].], [*CRITICAL:* Delete any previous version before installing — do not overwrite. Copy `content` and `modules` into the Sider directory. Enable `lua.module = "SleeveBadge-ArmbandServer.lua"` in `sider.ini`.]
   ),
   caption: [Layer 12 — Sleeve Patch & Armband Server]
 )
@@ -263,7 +261,7 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
 
 #strong[No full lower-league pyramid.] #link("https://evoweb.uk/")[EvoWeb] and #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net] have confirmed this is an engine-level restriction, not a modding gap. The English Championship is the lowest tier 2 league; the German 2. Bundesliga and Spanish LaLiga 2 are similarly the floor for their pyramids. Installing league database mods will not add lower divisions.
 
-#strong[UML v3 is paid.] Ultimate Master League is the only mod in this stack that requires payment. Every other mod is free. The base FL26 Master League provides a solid career experience without UML — the paid version adds depth (player development overhaul, stat tuning, exclusive facepacks) but is not required for an enjoyable career.
+#strong[UML v3 is now free.] Ultimate Master League was previously paid but is now freely distributed on caocacao.net with PixelDrain downloads. Every mod in this stack is free. The base FL26 Master League provides a solid career experience without UML — UML adds depth (player development overhaul, stat tuning, exclusive facepacks) and is fully optional.
 
 #strong[No classic or legendary teams.] FL26 does not ship classic teams (Classic World XI, Classic European XI, retro national squads), and no community mod reliably adds them. Attempts exist on EvoWeb but suffer from broken face assignments, misaligned stats, and database conflicts. Treat any classic-team mod as experimental and back up your install before trying one.
 
