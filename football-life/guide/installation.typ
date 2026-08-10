@@ -257,6 +257,83 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
 #strong[Note:] The Essentials Mod Pack (Layer 3) bundles an older boots/gloves set. The Fallons pack provides more recent models. Place its `cpk.root` entry after the Essentials entries so newer accessories override bundled ones.
 
 
+=== Layer 16 — Scoreboards & TV Logos
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Mega Scoreboard Pack 2026 v2], [Argentina, World Cup 2026, and AFCON scoreboards in a single pack. Sider module with Scoreboard Server + Hexx integration. Available at #link("https://pes-files.com/pes-2021-mega-scoreboard-pack-2026-update-v2/")[pes-files.com]. #strong[UML CONFLICT:] UML v3 ships exclusive scoreboards — installing this pack overrides UML's scoreboard assignments. Install only if not using UML.], [Enable in `sider.ini`: `lua.module = "common\Scoreboard-Server.lua"` and `lua.module = "common\Scoreboard-Hexx.lua"`. Copy scoreboard assets to the designated Sider content folder per the pack's included instructions.],
+    [TV Logo Scoreboard FIFA WC 2026], [World Cup 2026 TV-style logo overlay scoreboard. Unversioned. Available at #link("https://pes-files.com/pes-2021-update-tv-logo-scoreboard-fifa-wc-2026/")[pes-files.com].], [Copy to matching Sider `livecpk` folder. If the pack includes a Sider module, enable it in `sider.ini`.],
+  ),
+  caption: [Layer 16 — Scoreboards & TV Logos]
+)
+
+#strong[Installation order:] Install after core visual and gameplay layers are stable. Scoreboard modules load independently via Sider — no CPK root chain considerations. The Mega Scoreboard Pack's Hexx module may conflict with other scoreboard modules (including UML's); enable only one scoreboard system at a time.
+
+=== Layer 17 — Stadium Additions
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Stadium Pack 4K Turf 2026], [Four stadiums — Etihad, Emirates, Parc des Princes, Anfield — with 4K turf textures. 2026 season update. Available at #link("https://pes-files.com/pes-2021-stadium-pack-4k-turf-update-2026/")[pes-files.com].], [Extract to `content\stadium-server\`. The pack includes `map_teams.txt` entries — merge with your existing file. Confirm stadium IDs don't conflict with the AIO Stadium Pack (Layer 5).],
+    [Dirt Stains in Snow Turf 2026], [Snow weather turf texture with realistic dirt stain detail. 2026 update. Available at #link("https://pes-files.com/pes-2021-dirt-stains-in-snow-turf-update-2026/")[pes-files.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\snow-turf\`). Add `cpk.root = ".\livecpk\snow-turf"` to `sider.ini`. Place after other turf mods in the CPK root chain — this only affects snow-weather pitches.],
+  ),
+  caption: [Layer 17 — Stadium Additions]
+)
+
+#strong[Stadium load order:] The stadium pack adds to `content\stadium-server\` alongside the AIO Stadium Pack (Layer 5). Merge `map_teams.txt` entries carefully — duplicate stadium IDs will cause assignment conflicts. The snow turf is weather-conditional and won't interfere with dry-weather turf mods.
+
+=== Layer 18 — Kits & Adboards
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Kitpack Style Collection 2026/27 V16 AIO], [Comprehensive kit collection by Karjan for the 2026/27 season. Compatible with all patches including FL26 and UML. Available at #link("https://pes-files.com/pes-2021-kitpack-style-collection-2026-27-v16-aio/")[pes-files.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\karjan-kits-v16\`). Add `cpk.root = ".\livecpk\karjan-kits-v16"` to `sider.ini`. Place after Mega Kitpack V2 and DN7 Addon (Layer 14) in the CPK root chain — later entries override earlier ones.],
+    [Animated Adboard Pack V2 AIO 2026/27], [Animated digital adboards for the 2026/27 season by lanphan09. FL26 compatible. Available at #link("https://pes-files.com/pes-2021-animated-adboard-pack-v2-aio-2026-27/")[pes-files.com].], [Extract to `livecpk\Adboard\`. Add `cpk.root = ".\livecpk\Adboard"` to `sider.ini`. Place after the Essentials Mod Pack's adboard entries.],
+    [FIFA WC New Adboard 2026], [World Cup 2026 themed static/digital adboards. Available at #link("https://pes-files.com/pes-2021-fifa-world-cup-new-adboard-2026/")[pes-files.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\wc-adboards\`). Add `cpk.root = ".\livecpk\wc-adboards"` to `sider.ini`. Place after the Animated Adboard Pack — WC boards will appear for World Cup competition matches if the pack is competition-aware.],
+  ),
+  caption: [Layer 18 — Kits & Adboards]
+)
+
+#strong[Kit load order:] The Essentials Mod Pack (Layer 3) and Mega Kitpack V2 (Layer 14) already provide substantial kit coverage. Place Karjan's V16 kitpack last in the CPK root chain so it overrides older kits with 2026/27 designs. For adboards: the Animated Adboard Pack covers league play; the WC adboards are competition-specific and coexist without conflicts.
+
+=== Layer 19 — Audio Additions
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Realistic Chants Pack 2026], [Team-specific chants for England, Argentina, Spain, France, and Italy. Sider module. Complementary to Predator002 (Layer 2) — install alongside for broader chant coverage. Available at #link("https://pes-files.com/pes-2021-realistic-chants-pack-season-2026/")[pes-files.com].], [Enable in `sider.ini` with `lua.module = "chants.lua"`. Copy chant audio files to the Sider module's designated directory. This coexists with Predator002 — each module handles different teams and leagues.],
+    [Player Enhanced Foul Voices], [Player reaction voice samples for fouls — adds grunts, shouts, and protests on heavy tackles. Unversioned. Available at #link("https://pes-files.com/pes-2021-player-enhanced-foul-voices/")[pes-files.com].], [Copy to matching Sider `livecpk` folder.],
+    [Mariano Closs V5.5.1], [Spanish-language commentary by Mariano Closs. Alternative to the English Commentary v8 (Peter Drury & Jim Beglin). Available at #link("https://pes-files.com/pes-2021-mariano-closs-update-v5-5-1/")[pes-files.com].], [Copy commentary files to the game's commentary directory. After install, select Spanish under System Settings > Language > Commentary. This replaces English commentary entirely — not a mix.],
+    [Real Atmosphere Announcer Stadium], [Stadium PA announcer: goal calls, substitution announcements, added time declarations. Unversioned. Available at #link("https://pes-files.com/pes-2021-real-atmosphere-announcer-stadium-update/")[pes-files.com].], [Copy to matching Sider folders. Works through SoundServer's ambient channel — ensure SoundServer (Layer 2) is installed and active.],
+  ),
+  caption: [Layer 19 — Audio Additions]
+)
+
+#strong[Audio coexistence:] The Realistic Chants Pack and Predator002 (Layer 2) serve different teams and can coexist without conflicts. The Mariano Closs commentary is a complete replacement for English commentary — install one, not both. The Stadium Announcer operates through SoundServer's ambient audio channel and complements all other audio mods.
+
+=== Layer 20 — Immersion & Visuals
+
+#figure(
+  table(
+    columns: (auto, 2fr, 2fr),
+    table.header([Mod], [Details], [Install]),
+    [Cutscenes VAR 2026], [VAR review cutscenes that trigger during match stoppages. 2026 season update. Available at #link("https://pes-files.com/pes-2021-cutscenes-var-season-2026/")[pes-files.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\var-cutscenes\`). Add `cpk.root = ".\livecpk\var-cutscenes"` to `sider.ini`.],
+    [Dynamic Penalty Camera 2026], [Dynamic camera angles for penalty kicks — zooms, pans, and player close-ups during spot-kicks. 2026 update. Available at #link("https://pes-files.com/pes-2021-dynamic-penalty-camera-update-2026/")[pes-files.com].], [Copy to matching Sider folders. If the pack includes a `.lua` module, place it in `Sider\` and enable in `sider.ini`.],
+    [New Menu PES Street 27], [PES Street themed main menu UI — urban/street football aesthetic. 2026/27 season. Available at #link("https://pes-files.com/pes-2021-new-menu-pes-street-27/")[pes-files.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\menu-pes-street\`). Add `cpk.root = ".\livecpk\menu-pes-street"` to `sider.ini`. Only one menu theme can be active — this replaces the default FL26 menu.],
+    [Body Faces Next-Gen Textures], [Next-gen quality body and face texture pack — improves skin detail, muscle definition, and facial texture resolution. Unversioned. Available at #link("https://pes-files.com/pes-2021-body-faces-next-gen-textures-update/")[pes-files.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\nextgen-textures\`). Add `cpk.root = ".\livecpk\nextgen-textures"` to `sider.ini`. Place after facepacks (Layer 4) — CPK root priority means these textures override base face textures.],
+    [Celebration Mod Shirtless V4.2], [Shirtless goal celebration animations — players remove shirts on big goals. v4.2. Available at #link("https://pes-files.com/pes-2021-celebration-mod-shirtless-update-v4-2/")[pes-files.com].], [Copy to matching Sider folders. May include a Sider module — check the archive for `.lua` files and enable in `sider.ini` if present.],
+    [GP Prematch Animations 2026], [Pre-match sequences: tunnel walkouts, lineup presentations, and warm-up animations. 2026 season update. Available at #link("https://pes-files.com/pes-2021-gp-prematch-animations-season-2026/")[pes-files.com].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\prematch-anims\`). Add `cpk.root = ".\livecpk\prematch-anims"` to `sider.ini`.],
+  ),
+  caption: [Layer 20 — Immersion & Visuals]
+)
+
+#strong[Immersion stack note:] These mods are cosmetic and independent — they don't interact with gameplay, career, or database systems. Install in any order within the layer. All install via `livecpk` with `cpk.root` entries. The menu theme is mutually exclusive with any other menu mod; the rest coexist without conflicts.
+
 === Known Limitations
 
 #strong[No full lower-league pyramid.] #link("https://evoweb.uk/")[EvoWeb] and #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net] have confirmed this is an engine-level restriction, not a modding gap. The English Championship is the lowest tier 2 league; the German 2. Bundesliga and Spanish LaLiga 2 are similarly the floor for their pyramids. Installing league database mods will not add lower divisions.

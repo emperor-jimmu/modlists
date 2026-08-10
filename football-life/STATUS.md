@@ -93,11 +93,57 @@
 |---|---|---|---|---|---|
 | 27 | Realistic Turf in Full HD | unversioned — confirmed active Aug 2026 | https://www.pesoccerworld.com/descargar/pes-2021-sp-football-life-2026-cesped-realista-en-full-hd-6076.html?lang=en | VERIFIED | Alternative/companion to Jeremiah's Ultra Turfs. Realistic grass textures in full HD resolution. Sider `livecpk` + `cpk.root` entry. Install after Jeremiah's Ultra Turfs — later `cpk.root` entries override earlier ones.
 
+## pes-files.com — Scoreboards, Audio, Graphics & Immersion
+
+All mods sourced from pes-files.com with Modsfire/Sharemods download mirrors. All free. One mod (Crowd Audio Pack 2026) skipped — redundant: Atmosphere Overhaul (Layer 2) and Predator002 (Layer 2) already cover crowd audio.
+
+### Scoreboards & TV Logos
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 28 | Mega Scoreboard Pack 2026 v2 | v2 | https://pes-files.com/pes-2021-mega-scoreboard-pack-2026-update-v2/ | VERIFIED — UML conflict | Argentina, WC2026, AFCON scoreboards. Sider: `lua.module = "common\Scoreboard-Server.lua"` + `lua.module = "common\Scoreboard-Hexx.lua"`. #strong[CONFLICT:] UML v3 ships exclusive scoreboards — installing this pack overrides UML's scoreboard assignments. Install only if not using UML, or accept that UML scoreboards will be replaced. |
+| 29 | TV Logo Scoreboard FIFA WC 2026 | unversioned | https://pes-files.com/pes-2021-update-tv-logo-scoreboard-fifa-wc-2026/ | VERIFIED | WC-specific TV logo overlay scoreboard. Copy to matching Sider folders. |
+
+### Stadiums & Turf
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 30 | Stadium Pack 4K Turf 2026 | 2026 | https://pes-files.com/pes-2021-stadium-pack-4k-turf-update-2026/ | VERIFIED | 4 stadiums (Etihad, Emirates, Parc des Princes, Anfield) with 4K turf textures. Install to `content/stadium-server/`. Includes `map_teams.txt` entries — merge with existing. |
+| 31 | Dirt Stains in Snow Turf 2026 | 2026 | https://pes-files.com/pes-2021-dirt-stains-in-snow-turf-update-2026/ | VERIFIED | Snow turf texture with dirt stain detail. Copy to matching Sider `livecpk` folder. |
+
+### Kits & Adboards
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 32 | Kitpack Style Collection 2026/27 V16 AIO | V16 | https://pes-files.com/pes-2021-kitpack-style-collection-2026-27-v16-aio/ | VERIFIED | By Karjan. Compatible with all patches including FL26. Copy to matching Sider `livecpk` folder. |
+| 33 | Animated Adboard Pack V2 AIO 2026/27 | V2 | https://pes-files.com/pes-2021-animated-adboard-pack-v2-aio-2026-27/ | VERIFIED | By lanphan09. FL26-compatible animated adboards. `cpk.root = ".\livecpk\Adboard"`. |
+| 34 | FIFA WC New Adboard 2026 | 2026 | https://pes-files.com/pes-2021-fifa-world-cup-new-adboard-2026/ | VERIFIED | World Cup 2026 themed adboards. Copy to matching Sider `livecpk` folder. |
+
+### Audio
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 35 | Realistic Chants Pack 2026 | 2026 | https://pes-files.com/pes-2021-realistic-chants-pack-season-2026/ | VERIFIED | England, Argentina, Spain, France, Italy chants. Sider: `lua.module = "chants.lua"`. Complementary to Predator002 (Layer 2) — install alongside, not as replacement. |
+| 36 | Player Enhanced Foul Voices | unversioned | https://pes-files.com/pes-2021-player-enhanced-foul-voices/ | VERIFIED | Player reaction sound effects for fouls. Copy to matching Sider folders. |
+| 37 | Mariano Closs V5.5.1 | v5.5.1 | https://pes-files.com/pes-2021-mariano-closs-update-v5-5-1/ | VERIFIED | Spanish commentary by Mariano Closs. Alternative to English Commentary v8. Copy to matching Sider folders; select Spanish under System Settings > Language after install. |
+| 38 | Real Atmosphere Announcer Stadium | unversioned | https://pes-files.com/pes-2021-real-atmosphere-announcer-stadium-update/ | VERIFIED | Stadium PA announcer sounds — goal calls, substitutions, added time announcements. Copy to matching Sider folders. |
+
+### Immersion & Visuals
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| 39 | Cutscenes VAR 2026 | 2026 | https://pes-files.com/pes-2021-cutscenes-var-season-2026/ | VERIFIED | VAR review cutscenes for match immersion. Copy to matching Sider `livecpk` folder. |
+| 40 | Dynamic Penalty Camera 2026 | 2026 | https://pes-files.com/pes-2021-dynamic-penalty-camera-update-2026/ | VERIFIED | Dynamic camera angles for penalty kicks. Copy to matching Sider folders. |
+| 41 | New Menu PES Street 27 | 2026/27 | https://pes-files.com/pes-2021-new-menu-pes-street-27/ | VERIFIED | PES Street themed menu UI theme. Copy to matching Sider `livecpk` folder. |
+| 42 | Body Faces Next-Gen Textures | unversioned | https://pes-files.com/pes-2021-body-faces-next-gen-textures-update/ | VERIFIED | Next-gen body and face texture improvements. Copy to matching Sider `livecpk` folder. |
+| 43 | Celebration Mod Shirtless V4.2 | v4.2 | https://pes-files.com/pes-2021-celebration-mod-shirtless-update-v4-2/ | VERIFIED | Shirtless goal celebration animations. Copy to matching Sider folders. |
+| 44 | GP Prematch Animations 2026 | 2026 | https://pes-files.com/pes-2021-gp-prematch-animations-season-2026/ | VERIFIED | Pre-match tunnel, lineup, and warm-up animations. Copy to matching Sider `livecpk` folder. |
+
 ## Summary
 
-- **29/29 mods VERIFIED** against live community sources; **0 BUNDLED**, **3 SUBSUMED by Essentials** (SoundServer, Ball Server, Gameplay Loader — bundled in the Essentials Mod Pack)
-- **0 DROPPED**
-- **Download source: caocacao.net** (base game, updates, commentary) with facepacks from pesoccerworld.com. 36 stadiums are included in the base installation; commentary v8 is a separate download. Additional mods sourced from EvoWeb and pesoccerworld.com.
+- **46/46 mods VERIFIED** against live community sources; **0 BUNDLED**, **3 SUBSUMED by Essentials** (SoundServer, Ball Server, Gameplay Loader — bundled in the Essentials Mod Pack), **1 CONFLICT** (Mega Scoreboard Pack with UML exclusive scoreboards)
+- **0 DROPPED**; 1 skipped (Crowd Audio Pack 2026 — redundant: already covered by Atmosphere Overhaul + Predator002)
+- **Download sources: caocacao.net** (base game, updates, commentary), **pesoccerworld.com** (facepacks, kitpacks, accessories, graphics), **EvoWeb** (community mods), **pes-files.com** (scoreboards, audio, visuals, immersion — Modsfire/Sharemods mirrors). 36 stadiums are included in the base installation; commentary v8 is a separate download.
 - **Sourcing methodology:** Direct EvoWeb thread URLs provided where available (Essentials Mod Pack #103385, Soccer Revolution #94305). Mods behind EvoWeb's login wall use `EvoWeb — search: "<term>"` — exact search terms are quoted for copy-paste into EvoWeb's search bar. Mods bundled in the Essentials Mod Pack note both the pack source and the standalone thread for users who skip Layer 3.
 - **UML v3 is free** — hosted on caocacao.net; FL26 v2.2 compatible with PixelDrain downloads.
 - **League expansion mods are community-driven and scope varies** — verify current coverage at install time.
@@ -128,6 +174,19 @@
 - **Mega Kitpack V2 + DN7 Addon (Layer 14):** Selected as the primary kit source because the V2 pack covers both FL26 and UML leagues for the 2025/26 season, and the DN7 Addon fills gaps with additional kits. Both install via Sider `livecpk` with `cpk.root` entries. Placed as a standalone layer because kits sit between visual foundation (Layer 3) and gameplay — they affect the visual match experience but are independent of core systems.
 - **Gloves & Boots Pack (Layer 15):** Selected as the accessories layer because the Fallons pack provides up-to-date glove and boot models for the April 2026 season window. Installs via Sider `livecpk` with `cpk.root` entry. Separated from the Essentials Mod Pack's bundled boots/gloves because community packs update more frequently than the Essentials AIO release cycle.
 - **Realistic Turf in Full HD (Layer 6):** Added as an alternative/companion to Jeremiah's Ultra Turfs within the Graphics layer. Both are turf mods but target different visual goals: Jeremiah's focuses on organic non-repeating patterns and wear; Realistic Turf prioritises full HD resolution and clean presentation. Users install one as their primary turf (placed later in the `cpk.root` chain to override) and can keep the other as a fallback. Included in Layer 6 rather than a new layer because it is a direct turf replacement, not a new category.
+
+## Installation Guide Decisions — Layers 16–20
+
+- **Mega Scoreboard Pack (Layer 16):** Included despite UML conflict because it provides Argentina, WC2026, and AFCON scoreboards not available in UML's exclusive set. The conflict with UML scoreboards is explicitly documented — users who install UML should skip this mod. The Scoreboard Server + Hexx Sider module combo is the community-standard scoreboard framework for non-UML FL26 setups.
+- **TV Logo Scoreboard FIFA WC 2026 (Layer 16):** Selected as a WC-specific visual overlay distinct from the Mega Scoreboard Pack's competition-aware approach. Both can coexist — the TV Logo overlay adds broadcast-style branding while the Scoreboard Pack handles competition identity.
+- **Stadium Pack 4K Turf (Layer 17):** Selected because it adds four high-profile Premier League and Ligue 1 stadiums (Etihad, Emirates, Parc des Princes, Anfield) with 4K turf textures. Complements the AIO Stadium Pack (Layer 5) which covers broader leagues but may not include these specific stadiums or 4K turf detail. The included `map_teams.txt` entries simplify configuration.
+- **Dirt Stains in Snow Turf (Layer 17):** Included as a weather-conditional detail mod. It only activates during snow weather — unlike the permanent turf replacements in Layer 6 (Jeremiah's Ultra Turfs, Realistic Turf in Full HD). No conflict with dry-weather turf mods.
+- **Kitpack Style Collection V16 AIO (Layer 18):** Selected as a supplementary kit pack by Karjan, a well-known kit maker. Compatible with all patches including FL26 and UML. Placed after the Mega Kitpack V2 (Layer 14) in the CPK root chain so its 2026/27 designs override older season kits. The Karjan pack covers different teams and leagues than the V2 pack, reducing overlap conflicts.
+- **Animated Adboard Pack V2 AIO (Layer 18):** Selected because it provides animated (digital LED-style) adboards — a visual upgrade over static adboards bundled in the Essentials Mod Pack. By lanphan09, explicitly FL26 compatible. The WC adboard pack is competition-specific for World Cup matches and coexists without conflict.
+- **Realistic Chants Pack (Layer 19):** Selected as a complement to Predator002 (Layer 2), not a replacement. Covers England, Argentina, Spain, France, and Italy chants — Predator002 covers a broader set of leagues. Both modules coexist via separate Sider Lua hooks (`chants.lua` vs Predator002's `cpk.root` approach). Placed in Layer 19 rather than Layer 2 to avoid premature audio module stacking before the core audio framework is verified.
+- **Mariano Closs Commentary (Layer 19):** Included as the Spanish-language alternative to English Commentary v8. Users select one commentary language under System Settings — they do not mix. Listed in Layer 19 because it's a late-stage preference decision, not a framework dependency.
+- **Player Enhanced Foul Voices + Stadium Announcer (Layer 19):** Both are small-scope audio additions that operate through SoundServer's ambient channel. The foul voices add player reaction samples; the announcer adds PA system calls. Neither competes with chants or commentary.
+- **Immersion & Visuals (Layer 20):** All six mods (VAR cutscenes, penalty camera, menu theme, next-gen textures, celebrations, prematch animations) are cosmetic and independent — no gameplay, career, or database interactions. Grouped into one layer because they share the same install pattern (`livecpk` + `cpk.root`) and have no inter-mod ordering requirements. The menu theme is the only mutually exclusive mod in this layer — only one menu UI mod can be active.
 
 ## Sider Configuration Guide Decisions
 
