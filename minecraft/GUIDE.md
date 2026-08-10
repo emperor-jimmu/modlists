@@ -459,6 +459,7 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Cherished Worlds](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds)                                 | Favorite/pin worlds to top of list, prevent accidental deletion                                |
 | [Eating Animation](https://www.curseforge.com/minecraft/mc-mods/eating-animation-forge)                           | First-person eating/drinking animation — food moves to mouth and shrinks                       |
 | [Camera Overhaul](https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul)                                    | Camera tilting, screen shakes, mouselook roll, idle sway — satisfying movement feedback        |
+| [Real Camera](https://www.curseforge.com/minecraft/mc-mods/real-camera)                                          | Realistic first-person camera — bind view to head/body part, FPV model rendering, configurable |
 | [Dynamic Crosshair](https://www.curseforge.com/minecraft/mc-mods/dynamic-crosshair)                               | Context-aware crosshair — hides/shows/changes style based on what you're looking at or holding |
 | [\[DLS\] Dark Loading Screen](https://www.curseforge.com/minecraft/mc-mods/dls-dark-loading-screen/files/7425971) | Replaces the default bright-red loading screen with a dark version — easier on the eyes        |
 | [Cosy Critters & Creepy Crawlies](https://www.curseforge.com/minecraft/mc-mods/cosy-critters)                     | Ambient atmospheric animals — birds, bugs, and critters that bring the world to life           |
@@ -741,6 +742,13 @@ First-person eating/drinking animation — food moves to your mouth and shrinks.
 #### Camera Overhaul
 
 Camera tilting on movement, screen shakes on explosions, mouselook roll, idle sway. Satisfying feedback. Configurable in `config/cameraoverhaul-client.toml`.
+
+#### Real Camera
+
+Realistic first-person camera: the view binds to your head (or another body part) with configurable position/rotation, and your player model renders in first-person — you see your body below you instead of a floating camera. `F6` toggles the effect; the Model View Screen (bind a key in Controls → Real Camera) binds the camera, hides obstructing model parts, and previews the result. Requires Cloth Config (already in pack). **Version pin**: `realcamera-1.21.1-neoforge-0.7.8-beta` (2026-06-28, client-only, no required deps).
+
+- **Compatible** (all already in pack): First Person Model, Not Enough Animations, Better Combat, Camera Overhaul. Works with Iris + Complementary shaders.
+- **Caveat**: GeckoLib-rendered armor is incompatible — none in the pack (GeckoLib is present only for Create: Gunsmithing items; Protection Pixel armor uses Kleiders Custom Renderer API). [VERIFY] Protection Pixel armor renders correctly with model binding after test launch.
 
 #### [DLS] Dark Loading Screen
 
@@ -3447,7 +3455,7 @@ Stellaris (by ExodusTeam) is the successor to Beyond Earth and the premier space
 | Wave 6 — Building            | 12      | 3      | 15      | Rechiseled, Supplementaries, Macaw's (4), Building Wands, Reforged: Accurate Block Placement, Handcrafted, The Magic Mirror, Fetzi's Displays, Lili's Pottery, Laser Bridges & Doors + Rechiseled: Create, Rechiseled: AE2 + Moonlight, Resourceful, Fusion |
 | Wave 7 — Space Exploration   | 1       | 1      | 2       | Stellaris, Potentials API                                                                                                                                                                                                                                              |
 | Wave 8 — Programmable Computers | 1       | 0      | 1       | CC:Tweaked                                                                                                                                                                                                                                                             |
-| **Total**                    | **169** | **43** | **212** | All confirmed NeoForge 1.21.1                                                                                                                                                                          |
+| **Total**                    | **170** | **43** | **213** | All confirmed NeoForge 1.21.1 (+Real Camera — Wave 0.5 Visual & Client QoL)                                                                                                                             |
 
 Space travel becomes real. Build rockets, manage oxygen, explore alien worlds, bring back exotic resources.
 
