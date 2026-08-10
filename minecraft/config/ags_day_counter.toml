@@ -1,0 +1,147 @@
+# Driftwood pack override — Day Counter (mod id: ags_day_counter)
+# Only the new-day notification is enabled: a brief ActionBar message at dawn
+# that appears and auto-fades. Everything else is disabled:
+#   - no sound, no persistent HUD (scoreboard/playerlist/nametag)
+#   - no rewards, no date system, no calendar block/item
+#   - no "feature is disabled" nag text
+
+[Help]
+	"Color Code" = "https://cdn.modrinth.com/data/sgFIOK5w/images/0f4a0e5a3c73f7d095421ee496236b5c9afacc05.png"
+	"For the Title text" = "https://minecraft.tools/en/tellraw.php?tellraw=Welcome%20to%20Minecraft%20Tools&selector=%40a"
+	"Available variables" = "%date_year%, %date_month%, %date_day%, %player_days%, %server_days%"
+
+	[UI."New Day Text"]
+		#Here you can disable or enable that when a player joins it shows them the current day.
+		Enabled = true
+		#You can choose how to display the new day text. You can choose between: title, subtitle, chat, actionbar, disabled
+		#PACK: actionbar — appears at dawn, auto-fades after ~3s (title would linger on screen longer)
+		Display = "actionbar"
+		#You can customize the texts here. Every text except Title Text what uses JSON is using normal color codes.
+		"Title Text" = "[\"\",{\"text\":\"%server_days%\",\"bold\":true,\"color\":\"gold\"},{\"text\":\". Day\",\"bold\":true}]"
+		"Subtitle Text" = "[\"\",{\"text\":\"(\",\"bold\":true},{\"text\":\"%date_day%\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"/\",\"bold\":true,\"color\":\"aqua\"},{\"text\":\"%date_month%\",\"bold\":true,\"color\":\"gold\"},{\"text\":\"/\",\"bold\":true,\"color\":\"aqua\"},{\"text\":\"%date_year%\",\"bold\":true,\"color\":\"gold\"},{\"text\":\")\",\"bold\":true}]"
+		"ActionBar Text" = "§f§lA new day has come! Today is the §6§l$server_days$§f§l."
+
+	[UI."Disabled Feature Text"]
+		#You can enable or disable the this feature is disabled text.
+		#PACK: off — no "feature is disabled" nag text (nothing is left enabled that would trigger it)
+		Enabled = false
+		"Disabled Feature Text" = "§6§l[§b§lDay Counter§6§l] §fThis feature is §c§ldisabled §fin the config!"
+
+	[UI.Text]
+		#Here you can set what text should appear on the scoreboard or below the player neme text to day number.
+		Text = "§6§lDays"
+
+	[UI.Scoreboard]
+		#You can enable or disable to show the days on the Scoreboard.
+		#PACK: off — no persistent HUD element, only the dawn flash
+		Enabled = false
+
+	[UI.Playerlist]
+		#You can enable or disable to show the days on the Playerlist.
+		#PACK: off — no persistent HUD element, only the dawn flash
+		Enabled = false
+
+	[UI.Name]
+		#You can enable or disable to show the days below the player name.
+		#PACK: off — no persistent HUD element, only the dawn flash
+		Enabled = false
+
+[Sound]
+	#You can enable or disable the sound effect on new day.
+	#PACK: off — text-only notification
+	Enabled = false
+
+[Block]
+	#You can enable or disable the calendar block or change the block to a other one.
+	#PACK: off — no calendar block
+	Enabled = false
+	#Here you can configure which block should be the calendar block.
+	Block = "ags_day_counter:calendar"
+
+[Item]
+	#You can enable or disable the right click with calendar item.
+	Enabled = false
+	#Here you can configure which item should be the calendar item.
+	Item = "ags_day_counter:calendar_item"
+
+[Days]
+	#You can choose which day(s) to show on texts and which day should the system watch for the Rewards. You can choose between: player, server
+	Use = "server"
+
+[Date]
+	#You can disable or enable the Date system here.
+	#PACK: off — no calendar date, just the day count
+	Enabled = false
+	#Here you can set the default values of the year/month/day.
+	Day = 1.0
+	Month = 1.0
+	Year = 1000.0
+
+	[Rewards.Example]
+		#Here you can set at which Day should the reward trigger.
+		#PACK: zeroed — no day-based rewards
+		Day = 0.0
+		#Here you can set a Chat Message that will be send to the player.
+		Message = ""
+		#Here you can set a Command that will be triggered. Available variables: $player$
+		Command = ""
+		#Here you can set an EXP amount that will be given to the player.
+		EXP = 0.0
+		#Here you can set an Item that will be given to the player.
+		Item = ""
+		#Here you can set the Amount of the Item what will be given to the player.
+		"Item Count" = 0.0
+
+	[Rewards.1]
+		Day = 0.0
+		Message = ""
+		Command = ""
+		EXP = 0.0
+		Item = ""
+		"Item Count" = 0.0
+
+	[Rewards.2]
+		Day = 0.0
+		Message = ""
+		Command = ""
+		EXP = 0.0
+		Item = ""
+		"Item Count" = 0.0
+
+	[Rewards.3]
+		Day = 0.0
+		Message = ""
+		Command = ""
+		EXP = 0.0
+		Item = ""
+		"Item Count" = 0.0
+
+	[Rewards.4]
+		Day = 0.0
+		Message = ""
+		Command = ""
+		EXP = 0.0
+		Item = ""
+		"Item Count" = 0.0
+
+	[Rewards.5]
+		Day = 0.0
+		Message = ""
+		Command = ""
+		EXP = 0.0
+		Item = ""
+		"Item Count" = 0.0
+
+[Texts]
+	"Chat show day(s) Text" = "§6§l[§b§lDay Counter§6§l] §fToday is §b§l%date_day%§6§l/§b§l%date_month%§6§l/§b§l%date_year% §fand the §b§l%server_days%§f. Day!"
+	"Command add (player)" = "§6§l[§b§lDay Counter§6§l] §fYou have added §b§l%day%§f day(s) to §6§l%player% §fday(s). Now: §e%newday%"
+	"Command add (server)" = "§6§l[§b§lDay Counter§6§l] §fYou have added §b§l%day%§f day(s) to §6§lSERVER §fday(s). Now: §e%newday%"
+	"Command set (player)" = "§6§l[§b§lDay Counter§6§l] §fYou set §b§l%day%§f day(s) of §6§l%player$ §fday(s)."
+	"Command set (server)" = "§6§l[§b§lDay Counter§6§l] §fYou set §b§l%day%§f day(s) of §6§lSERVER §fday(s)."
+	"Command reset (player)" = "§6§l[§b§lDay Counter§6§l] §fYou resetted §6§l%player% §fday(s)."
+	"Command reset (server)" = "§6§l[§b§lDay Counter§6§l] §fYou resetted §6§lSERVER §fday(s)."
+	"Command date year set" = "§6§l[§b§lDay Counter§6§l] §fYou set §b§l%date_year%§f year(s) of the §6§lDate§f."
+	"Command date month set" = "§6§l[§b§lDay Counter§6§l] §fYou set §b§l%date_month%§f month(s) of the §6§lDate§f."
+	"Command date day set" = "§6§l[§b§lDay Counter§6§l] §fYou set §b§l%date_day%§f day(s) of the §6§lDate§f."
+	"Possible Sync" = "§6§l[§b§lDay Counter§6§l] §6The mod has §f§ldetected §6that this mod was used before the §b§lDate Update§6. If you want you can §b§lsynchronize §6§your §f§lDays and the Date §6with the §c§l/daycounter sync §6command."
+	"Successfully Syncd" = "§6§l[§b§lDay Counter§6§l] §fThe §a§lsynchronization §fhas successfully completed! Current date: §6%date_day%§b/§6%date_month%§b/§6%date_year%"

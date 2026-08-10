@@ -578,7 +578,13 @@ PUT 90.*:
 - [x] Day Counter **RESTORED** (Wave 0 — Inventory & UI) — exactly the requested behavior: a brief "Day 42" on the ActionBar at dawn that auto-fades after ~3s and disappears until the next day. Lightweight HUD-only mod (calendar block and rewards exist but stay unused per config). Config: ActionBar only, no sound, no rewards, no week days, no date system.
 - [x] Hud Texts **RESTORED** (Wave 0.5 dependency) — required by Day Counter (from V3.4).
 - [x] GUIDE.md updated: Wave 0.5 table rows (Day Counter + Hud Texts), Day Counter config section, detail section, Mod Count Summary (deps 42→43, total 212→213; mods unchanged at 170).
-- [ ] Day Counter config — verify keys after test launch, apply overrides from GUIDE.md (ActionBar only, no sound, no rewards, no week days, no date system)
+- [x] Day Counter config — DONE (batch 31): user supplied the real config keys; override written to `config/ags_day_counter.toml` (actionbar new-day flash only, everything else off)
+
+### DH Generator Mode + Day Counter Config (Aug 2026 batch 31 — user instruction)
+
+- [x] **INTERNAL_SERVER removed** from all Distant Horizons guidance in GUIDE.md (user instruction — does not want INTERNAL_SERVER mode): §2 table row + tip, §5 practical setup revert step, Infrastructure cross-ref. Normal play uses the default generator mode; the Chunky-phase setup (`PRE_EXISTING_ONLY` + Low/Balanced CPU) is unchanged and the "never `SURFACE`/`FEATURES` while Chunky runs" warning stays. Better Caves crash note dropped along with the mode.
+- [x] **Day Counter config override created** — `config/ags_day_counter.toml` (mod id `ags_day_counter`; corrects the unverified `daycounter-common.toml` name previously in the guide). Only the new-day notification is enabled: Display `actionbar`, everything else off (`[Sound]`, `[UI.Scoreboard]`/`[UI.Playerlist]`/`[UI.Name]`, `[Date]`, `[Block]`, `[UI."Disabled Feature Text"]` all `false`, rewards zeroed).
+- [x] GUIDE.md updated: Day Counter config table rewritten against the real keys, filename corrected, detail section fixed (was inaccurate: "title overlay at dawn with milestone celebrations, no config").
 
 ### Distant Horizons + Chunky Setup (Aug 2026 batch 30)
 

@@ -298,12 +298,11 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 | Quality Preset             | Medium     |
 | CPU Load                   | Aggressive |
 | Enable Cloud Rendering     | OFF        |
-| Show LOD Gen Progress      | ON         |
-| Distant Generator Mode     | INTERNAL_SERVER | **Prevents Better Caves crash** — avoids off-thread chunk gen that triggers Null AquiferContext |
+|| Show LOD Gen Progress      | ON         |
 
-> **Tip**: DH generates LOD data as you explore, in new chunks only. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer than vanilla. `INTERNAL_SERVER` mode avoids a known crash with YUNG's Better Caves (Null AquiferContext). Trade-off: slightly larger world files. Monitor VRAM — shaders + DH at 4K can push past 12GB.
+> **Tip**: DH generates LOD data as you explore, in new chunks only. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer than vanilla. Monitor VRAM — shaders + DH at 4K can push past 12GB.
 >
-> **During Chunky pre-generation**, switch Distant Generator Mode to `PRE_EXISTING_ONLY` and drop CPU Load to Low/Balanced so DH converts Chunky's freshly generated chunks into LODs instead of racing it — see [Chunky — World Pregeneration](#5-chunky--world-pregeneration). Revert to `INTERNAL_SERVER` + Aggressive once pre-generation is done.
+> **During Chunky pre-generation**, switch Distant Generator Mode to `PRE_EXISTING_ONLY` and drop CPU Load to Low/Balanced so DH converts Chunky's freshly generated chunks into LODs instead of racing it — see [Chunky — World Pregeneration](#5-chunky--world-pregeneration). Switch back to the default mode and raise CPU Load once pre-generation is done.
 
 #### 3. Shader Setup
 
@@ -347,9 +346,9 @@ Let it finish (~15-30 minutes). Check progress with `/chunky status`. The world 
 - **Distant Generation**: ON — DH converts Chunky's newly generated chunks into LODs as Chunky progresses.
 - **Distant Generator Mode**: `PRE_EXISTING_ONLY` — DH builds LODs only from chunks Chunky has already generated, rather than generating terrain itself.
 - **DH CPU Load**: Low/Balanced during Chunky, especially with a big modpack; increase it afterward if you want to rapidly finish the LOD conversion.
-- **Never** switch the mode to `SURFACE`, `FEATURES`, or `INTERNAL_SERVER` while Chunky is active — unless you specifically want DH generating terrain too.
+- **Never** switch the mode to `SURFACE` or `FEATURES` while Chunky is active — unless you specifically want DH generating terrain too.
 
-When Chunky finishes, set Distant Generator Mode back to `INTERNAL_SERVER` (YUNG's Better Caves crash protection) and CPU Load back to Aggressive.
+When Chunky finishes, switch Distant Generator Mode back to the default and raise CPU Load back up so DH keeps generating LODs for newly explored chunks.
 
 ---
 
@@ -426,7 +425,7 @@ This generates a 5000-block radius circle around your spawn point. On a modern C
 
 Any active task will now resume by itself whenever you open the world. This is the recommended approach for single-player — the task resumes the moment you load the world, no manual `/chunky continue` needed.
 
-**Distant Horizons + Chunky**: while pre-generating, set DH to Distant Generation ON, Distant Generator Mode `PRE_EXISTING_ONLY`, and CPU Load Low/Balanced so DH converts Chunky's chunks into LODs as they generate. Revert to `INTERNAL_SERVER` + Aggressive when Chunky finishes. Full workflow in [First Launch Checklist §5](#5-chunky--world-pregeneration).
+**Distant Horizons + Chunky**: while pre-generating, set DH to Distant Generation ON, Distant Generator Mode `PRE_EXISTING_ONLY`, and CPU Load Low/Balanced so DH converts Chunky's chunks into LODs as they generate. Switch back to the default generator mode and raise CPU Load when Chunky finishes. Full workflow in [First Launch Checklist §5](#5-chunky--world-pregeneration).
 
 
 ---
@@ -500,18 +499,19 @@ All the visual polish, UI improvements, inventory tools, storage, travel, tradin
 | [Day Counter](https://www.curseforge.com/minecraft/mc-mods/day-counter)                       | Day counter HUD — displays at dawn via ActionBar, fades after. Also supports Title/Subtitle/Chat display. Calendar block and reward system available but fully optional. |
 | [Hud Texts](https://www.curseforge.com/minecraft/mc-mods/hud-texts)                           | HUD text framework — dependency for Day Counter (from V3.4)       |
 
-**Day Counter config** (config/daycounter-common.toml — verify keys after first launch):
+**Day Counter config** (config/ags_day_counter.toml — tracked override):
 
-| Setting              | Value        | Why                                                     |
-|----------------------|-------------|---------------------------------------------------------|
-| New day display      | `ACTIONBAR` | ActionBar messages auto-fade after ~3s                  |
-| New day sound        | `false`     | No sound notification — just the text                   |
-| Rewards              | `false`     | No day-based rewards — too gamey                        |
-| Week days            | `false`     | No day-of-week names — just "Day 42"                    |
-| Date system          | `false`     | No calendar date — just day count                       |
-| Calendar block/item  | N/A         | Don't craft them — they're items, not mandatory features |
+| Setting                               | Value      | Why                                                     |
+|---------------------------------------|------------|---------------------------------------------------------|
+| `[UI."New Day Text"]` Display         | `actionbar` | New-day message appears and auto-fades after ~3s       |
+| `[Sound]` Enabled                     | `false`    | No sound notification — just the text                   |
+| `[Rewards.*]`                         | zeroed     | No day-based rewards — too gamey                        |
+| `[UI.Scoreboard]` / `[UI.Playerlist]` / `[UI.Name]` Enabled | `false` | No persistent HUD or nametag element — only the flash |
+| `[Date]` Enabled                      | `false`    | No calendar date — just day count                       |
+| `[Block]` / `[Item]` Enabled          | `false`    | No calendar block or item                               |
+| `[UI."Disabled Feature Text"]` Enabled | `false`   | No "feature is disabled" nag text                       |
 
-This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn that fades. No HUD element, no sounds, no rewards. Days count in the background. The calendar block can be crafted later if you want a physical day tracker for your base.
+This gives you exactly: a brief "Day 42" (or similar) on the ActionBar at dawn that appears and fades. No HUD element, no sounds, no rewards, no calendar block. Days count in the background.
 
 | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)       | Overhauled advancements UI with editor/pan/zoom                    |
 | [Polymorph+](https://www.curseforge.com/minecraft/mc-mods/polymorph-plus)                     | Choose crafting result when recipes conflict                       |
@@ -746,7 +746,7 @@ Favorite/pin worlds to the top of your list, prevent accidental deletion. Right-
 
 #### Day Counter
 
-Day counter title overlay at dawn with milestone celebrations (Day 10, 50, 100...). Appears automatically — no config.
+Brief "Day N" ActionBar message at dawn that appears and auto-fades. Pack config (`config/ags_day_counter.toml`) keeps only the new-day notification — no sound, HUD elements, rewards, or calendar block.
 
 #### Eating Animation
 
