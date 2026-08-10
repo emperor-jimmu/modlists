@@ -61,10 +61,10 @@ The FL26 root contains these directories relevant to the mod stack:
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [SoundServer], [Audio mixing framework by nesa24 (JUCE-based). Controls crowd volume, referee calls, announcer levels, and ambient stadium atmosphere independently. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "SoundServer nesa24".], [Place the SoundServer Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "SoundServer.lua"`. Configure levels in-game via the Sider overlay.],
-    [Predator002 Chant Pack V8], [Thousands of team-specific chants plus ChantsBase ambient crowd audio. Player-specific chants included. V8 / V8.1 confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Predator002 chants".], [Extract to `livecpk\preds-root\`. Add `cpk.root = ".\livecpk\preds-root"` to your `sider.ini`.],
-    [Referee Whistle Mod], [High-fidelity whistle replacement samples. Unversioned; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "referee whistle".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\referee-whistle\`). Add `cpk.root = ".\livecpk\referee-whistle"` to `sider.ini`.],
-    [Atmosphere / Stadium Sound Overhaul], [Goal reactions, jeers, momentum crowd swells, and dynamic stadium ambiance. Unversioned; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "atmosphere sound overhaul".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\atmosphere-overhaul\`). Add `cpk.root = ".\livecpk\atmosphere-overhaul"` to `sider.ini`.],
+    [SoundServer], [Audio mixing framework by nesa24 (JUCE-based). Controls crowd volume, referee calls, announcer levels, and ambient stadium atmosphere independently. #strong[Bundled in the Essentials Mod Pack (Layer 3).] Standalone thread: EvoWeb — search: "SoundServer nesa24".], [Place the SoundServer Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "SoundServer.lua"`. Configure levels in-game via the Sider overlay. If you installed the Essentials Mod Pack first, skip this step — the module is already present.],
+    [Predator002 Chant Pack V8], [Thousands of team-specific chants plus ChantsBase ambient crowd audio. Player-specific chants included. V8 / V8.1 confirmed active August 2026. EvoWeb — search: "Predator002 chants".], [Extract to `livecpk\preds-root\`. Add `cpk.root = ".\livecpk\preds-root"` to your `sider.ini`.],
+    [Referee Whistle Mod], [High-fidelity whistle replacement samples. Unversioned; confirmed active August 2026. EvoWeb — search: "referee whistle".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\referee-whistle\`). Add `cpk.root = ".\livecpk\referee-whistle"` to `sider.ini`.],
+    [Atmosphere / Stadium Sound Overhaul], [Goal reactions, jeers, momentum crowd swells, and dynamic stadium ambiance. Unversioned; confirmed active August 2026. EvoWeb — search: "atmosphere sound overhaul".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\atmosphere-overhaul\`). Add `cpk.root = ".\livecpk\atmosphere-overhaul"` to `sider.ini`.],
   ),
   caption: [Layer 2 — Audio Framework & Atmosphere]
 )
@@ -77,7 +77,7 @@ The FL26 root contains these directories relevant to the mod stack:
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Essentials Mod Pack (SPFL 26)], [Community-curated all-in-one bundle: balls, scoreboards, adboards, kit server, entrance scenes, and core visual assets. Confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — thread "SPFL 26 Essentials Mod Pack".], [Extract the archive into your FL26 root directory. When prompted, merge `SiderAddons\` with the existing folder — this populates `livecpk` roots and Sider modules. The pack includes pre-configured `cpk.root` entries; verify they appear in your `sider.ini`.],
+    [Essentials Mod Pack (SPFL 26)], [Community-curated all-in-one bundle — the recommended visual and systems foundation for this mod stack. #strong[Bundles:] Ball Server (Ballpack v60 AIO by Hawke), SoundServer (nesa24/juce), Gameplay Loader with multiple gameplay options, scoreboards, adboards, updated kits/boots/gloves, referee kits by RezvFX, and entrance scenes. v1.4; confirmed active August 2026. Direct thread: #link("https://evoweb.uk/threads/sp-football-life-spfl26-1-4-essentials-mod-pack-unpacked-recommended-addons.103385/")[EvoWeb thread #103385].], [Extract the archive into your FL26 root directory. When prompted, merge `SiderAddons\` with the existing folder — this populates `livecpk` roots and Sider modules. The pack includes pre-configured `cpk.root` entries; verify they appear in your `sider.ini`. Several mods listed in Layers 2, 8, and 9 (SoundServer, Ball Server, Gameplay Loader) are included in this pack — install Layer 3 first, then skip the standalone downloads for bundled modules.],
   ),
   caption: [Layer 3 — Visual Foundation]
 )
@@ -105,8 +105,8 @@ FL26 includes 36 pre-installed stadiums in the base download. The Stadium Server
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Stadium Server], [Sider module for per-team and per-league stadium assignment. Unversioned; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Stadium Server sider".], [Place the Stadium Server Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "StadiumServer.lua"`. Configure assignments in `map_teams.txt` — see the Sider Configuration chapter.],
-    [AIO Stadium Pack], [High-resolution stadiums, adboards, and tunnel scenes for the 2025/26 season. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "AIO Stadium Pack FL26".], [Extract to `content\stadium-server\`. The pack includes pre-configured `map_teams.txt` entries — merge or replace as needed. Large download; allocate 50+ GB free space.],
+    [Stadium Server], [Sider module for per-team and per-league stadium assignment. Unversioned; confirmed active August 2026. EvoWeb — search: "Stadium Server sider".], [Place the Stadium Server Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "StadiumServer.lua"`. Configure assignments in `map_teams.txt` — see the Sider Configuration chapter.],
+    [AIO Stadium Pack], [High-resolution stadiums, adboards, and tunnel scenes for the 2025/26 season. EvoWeb — search: "AIO Stadium Pack FL26".], [Extract to `content\stadium-server\`. The pack includes pre-configured `map_teams.txt` entries — merge or replace as needed. Large download; allocate 50+ GB free space.],
   ),
   caption: [Layer 5 — Stadiums]
 )
@@ -119,8 +119,8 @@ The Stadium Server is the prerequisite module; the AIO Stadium Pack supplies the
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Soccer Revolution], [Lighting overhaul: pitch textures, stadium shadows, and broadcast-style colour grading. Unversioned; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Soccer Revolution".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\soccer-revolution\`). Add `cpk.root = ".\livecpk\soccer-revolution"` to `sider.ini`.],
-    [Jeremiah's Ultra Turfs], [Organic non-repeating grass textures with realistic wear patterns, mowing lines, and pitch degradation. Unversioned; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Jeremiah Ultra Turfs".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\ultra-turfs\`). Add `cpk.root = ".\livecpk\ultra-turfs"` to `sider.ini`.],
+    [Soccer Revolution], [Lighting overhaul: pitch textures, stadium shadows, and broadcast-style colour grading. Unversioned; confirmed active August 2026. Direct thread: #link("https://evoweb.uk/threads/soccer-revolution-10-0-brand-new-gameplay-graphics-reshades.94305/")[EvoWeb thread #94305].], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\soccer-revolution\`). Add `cpk.root = ".\livecpk\soccer-revolution"` to `sider.ini`.],
+    [Jeremiah's Ultra Turfs], [Organic non-repeating grass textures with realistic wear patterns, mowing lines, and pitch degradation. Unversioned; confirmed active August 2026. EvoWeb — search: "Jeremiah Ultra Turfs".], [Extract to a subdirectory under `livecpk\` (e.g. `livecpk\ultra-turfs\`). Add `cpk.root = ".\livecpk\ultra-turfs"` to `sider.ini`.],
     [ReShade Preset], [Post-processing colour and sharpening preset by Machete Gaming / KnightMD. Unversioned; confirmed active August 2026. Community-distributed via Machete Gaming's YouTube/Discord channels or EvoWeb. ReShade base: #link("https://reshade.me/")[reshade.me].], [Download the ReShade installer from reshade.me and run it targeting `FL 26.exe`. Select Direct3D 10/11/12 as the rendering API. After ReShade is installed, copy the `.ini` preset file into your FL26 root directory. Select it in the ReShade in-game overlay (default: Home key).],
   ),
   caption: [Layer 6 — Graphics Overhaul]
@@ -134,7 +134,7 @@ The Stadium Server is the prerequisite module; the AIO Stadium Pack supplies the
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Nesa24's Camera Modules], [TV-broadcast camera suite with configurable zoom, height, angle, and smooth panning. Replaces the default in-game camera options. Unversioned Sider module; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Nesa24 camera".], [Place the camera Lua module(s) in `Sider\`. Enable in `sider.ini` with `lua.module = "Camera.lua"` (exact filename may vary — check the module archive). Configure camera parameters in-game via the Sider overlay or the module's `.ini` file.],
+    [Nesa24's Camera Modules], [TV-broadcast camera suite with configurable zoom, height, angle, and smooth panning. Replaces the default in-game camera options. Unversioned Sider module; confirmed active August 2026. EvoWeb — search: "Nesa24 camera".], [Place the camera Lua module(s) in `Sider\`. Enable in `sider.ini` with `lua.module = "Camera.lua"` (exact filename may vary — check the module archive). Configure camera parameters in-game via the Sider overlay or the module's `.ini` file.],
   ),
   caption: [Layer 7 — Camera]
 )
@@ -145,7 +145,7 @@ The Stadium Server is the prerequisite module; the AIO Stadium Pack supplies the
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Ball Server (Hawke/community)], [Competition-aware ball selection: loads the correct official ball for each league, cup, and tournament. Unversioned Sider module; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Ball Server sider".], [Place the Ball Server Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "BallServer.lua"`. In-game, press Spacebar to open the Sider overlay, then press `~` (tilde) to open the OMB.lua menu — Ball Server appears as a configurable module there.],
+    [Ball Server (Hawke/community)], [Competition-aware ball selection: loads the correct official ball for each league, cup, and tournament. #strong[Bundled in the Essentials Mod Pack (Layer 3) as Ballpack v60 AIO by Hawke.] Standalone thread: EvoWeb — search: "Ball Server sider". Unversioned Sider module; confirmed active August 2026.], [If using the Essentials Mod Pack, Ball Server is already installed — skip this step. Otherwise: place the Ball Server Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "BallServer.lua"`. In-game, press Spacebar to open the Sider overlay, then press `~` (tilde) to open the OMB.lua menu — Ball Server appears as a configurable module there.],
   ),
   caption: [Layer 8 — Balls]
 )
@@ -158,8 +158,8 @@ The Stadium Server is the prerequisite module; the AIO Stadium Pack supplies the
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [Gameplay Loader], [Modular gameplay-switching framework. Lets you swap between gameplay mods without reinstalling. Unversioned Sider module; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Gameplay Loader".], [Place the Gameplay Loader Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "GameplayLoader.lua"`. Place gameplay mod `.dt` files in the Loader's designated subdirectory (typically `content\gameplay-loader\`).],
-    [Holland's Gameplay Mod], [Fixes AI build-up play, reduces scripting, improves physicality and player individuality. Primary gameplay recommendation. Unversioned; confirmed active August 2026. Sourced from #link("https://evoweb.uk/")[EvoWeb] — search "Holland gameplay".], [Place the `.dt` file in the Gameplay Loader directory. Select it in-game via the Gameplay Loader Sider overlay.],
+    [Gameplay Loader], [Modular gameplay-switching framework. Lets you swap between gameplay mods without reinstalling. #strong[Bundled in the Essentials Mod Pack (Layer 3) with multiple gameplay options pre-loaded.] Standalone thread: EvoWeb — search: "Gameplay Loader". Unversioned Sider module; confirmed active August 2026.], [If using the Essentials Mod Pack, Gameplay Loader is already installed — skip this step. Otherwise: place the Gameplay Loader Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "GameplayLoader.lua"`. Place gameplay mod `.dt` files in the Loader's designated subdirectory (typically `content\gameplay-loader\`).],
+    [Holland's Gameplay Mod], [Fixes AI build-up play, reduces scripting, improves physicality and player individuality. Primary gameplay recommendation. Unversioned; confirmed active August 2026. EvoWeb — search: "Holland gameplay" (in the Gameplay sub-forum).], [Place the `.dt` file in the Gameplay Loader directory. Select it in-game via the Gameplay Loader Sider overlay.],
     [Allstar Mix (Machete Gaming)], [Alternative gameplay mod with distinct pacing and physicality profile. Distributed via Machete Gaming's YouTube/Discord channels — not hosted on EvoWeb. Unversioned; confirmed active August 2026.], [Same as Holland's: place the `.dt` file in the Gameplay Loader directory and select via the overlay. Use as a fallback if Holland's gameplay doesn't suit your preference.],
   ),
   caption: [Layer 9 — Gameplay]
