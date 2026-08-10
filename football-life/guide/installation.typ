@@ -165,13 +165,22 @@ The Stadium Server is the prerequisite module; the AIO Stadium Pack supplies the
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
     [Gameplay Loader], [Modular gameplay-switching framework. Lets you swap between gameplay mods without reinstalling. #strong[Bundled in the Essentials Mod Pack (Layer 3) with multiple gameplay options pre-loaded.] Standalone thread: EvoWeb — search: "Gameplay Loader". Unversioned Sider module; confirmed active August 2026.], [If using the Essentials Mod Pack, Gameplay Loader is already installed — skip this step. Otherwise: place the Gameplay Loader Lua module in `Sider\`. Enable in `sider.ini` with `lua.module = "GameplayLoader.lua"`. Place gameplay mod `.dt` files in the Loader's designated subdirectory (typically `content\gameplay-loader\`).],
-    [Holland's Gameplay Mod], [Fixes AI build-up play, reduces scripting, improves physicality and player individuality. Primary gameplay recommendation. Unversioned; confirmed active August 2026. EvoWeb — search: "Holland gameplay" (in the Gameplay sub-forum).], [Place the `.dt` file in the Gameplay Loader directory. Select it in-game via the Gameplay Loader Sider overlay.],
-    [Allstar Mix (Machete Gaming)], [Alternative gameplay mod with distinct pacing and physicality profile. Distributed via Machete Gaming's YouTube/Discord channels — not hosted on EvoWeb. Unversioned; confirmed active August 2026.], [Same as Holland's: place the `.dt` file in the Gameplay Loader directory and select via the overlay. Use as a fallback if Holland's gameplay doesn't suit your preference.],
+    [Realism Next-Gen v10], [#strong[Primary recommendation.] Mature 10-iteration gameplay overhaul. Improves player movement, natural animations, ball physics, shooting/finishing, goalkeeper behavior, physical contact, and pitch feel. Explicitly FL26 compatible. Available at #link("https://pes-files.com/pes-2021-gameplay-realism-next-gen-update-v10/")[pes-files.com] (Modsfire + Sharemods mirrors).], [
+- Move the `Realism Gameplay V10` folder into `livecpk\`.
+- Merge the `modules` folder contents into `Sider\` (all `.lua` files go here).
+- Add to `sider.ini`:
+  - Under `[cpk]`: `cpk.root = ".\livecpk\Realism Gameplay V10"`
+  - Under `[lua]`: `lua.module = "player_reaction_plus.lua"`, `lua.module = "AI_Tweaks20025v4.lua"`, `lua.module = "AI_BpDribbleAddWait.lua"`, `lua.module = "AI_DfKickReactionAddWait.lua"`, `lua.module = "BAL_Defence_Tweaks.lua"`, `lua.module = "ball_physic.lua"`, `lua.module = "gameplay.lua"`, `lua.module = "effects.lua"`, `lua.module = "UniformPhysicsgameplay.lua"`, `lua.module = "arcade_animations.lua"`
+- Copy `dt18_all.cpk` and `dt13_all.cpk` from the mod's `Data` folder into the game's `Data` folder, replacing existing files.],
+    [AI Manager v2 (Emre Cakir)], [#strong[Complementary.] AI mentality manager that reads match state and adapts team attack/defense levels in real time. Auto mode: losing→attack level 3–4, winning against strong team→defense level 0 in last 10 min. Manual override available. Works alongside any gameplay mod — no conflicts. Available at #link("https://pes-files.com/pes-2021-al-manager-mod-update-v2/")[pes-files.com] (Modsfire + Sharemods mirrors).], [
+- Place `Al-Manager.lua` in `Sider\`.
+- Add to `sider.ini` under `[lua]`: `lua.module = "Al-Manager.lua"`.
+- In-game controls: press 8 to select your team, 9 to toggle auto/manual mode, PageUp/PageDown to adjust attack/defense level in manual mode.],
   ),
   caption: [Layer 9 — Gameplay]
 )
 
-Holland's Gameplay Mod is the recommended starting point — it has the broadest community adoption and is actively maintained on EvoWeb. Allstar Mix covers a different feel; try both via the Loader and keep whichever plays best for you. The Loader can hold multiple `.dt` files simultaneously.
+Realism Next-Gen v10 replaces the older Holland's Gameplay Mod as the primary recommendation — it is a more mature 10-iteration mod with broader scope (player movement, ball physics, shooting, goalkeeping, physical contact) and explicit FL26 compatibility. AI Manager v2 adds adaptive AI mentality on top — it runs alongside any gameplay mod, including Realism Next-Gen, with zero conflicts. The Gameplay Loader is retained for testing other `.dt`-based gameplay mods or swapping between gameplay variants. Note that Realism Next-Gen v10 installs directly into Sider (`livecpk` + Lua modules) and does not use the Gameplay Loader — only `.dt`-based gameplay mods go through the Loader.
 
 === Layer 10 — Career Depth
 
