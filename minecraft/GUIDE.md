@@ -302,6 +302,8 @@ Open **Video Settings → [colored tiles icon]** next to the FOV slider.
 | Distant Generator Mode     | INTERNAL_SERVER | **Prevents Better Caves crash** — avoids off-thread chunk gen that triggers Null AquiferContext |
 
 > **Tip**: DH generates LOD data as you explore, in new chunks only. First visit to an area has temporary pop-in. Terralith + Tectonic terrain takes longer than vanilla. `INTERNAL_SERVER` mode avoids a known crash with YUNG's Better Caves (Null AquiferContext). Trade-off: slightly larger world files. Monitor VRAM — shaders + DH at 4K can push past 12GB.
+>
+> **During Chunky pre-generation**, switch Distant Generator Mode to `PRE_EXISTING_ONLY` and drop CPU Load to Low/Balanced so DH converts Chunky's freshly generated chunks into LODs instead of racing it — see [Chunky — World Pregeneration](#5-chunky--world-pregeneration). Revert to `INTERNAL_SERVER` + Aggressive once pre-generation is done.
 
 #### 3. Shader Setup
 
@@ -339,6 +341,15 @@ Run before exploring beyond your spawn area to avoid exploration stutter.
 ```
 
 Let it finish (~15-30 minutes). Check progress with `/chunky status`. The world border expands as chunks generate. Set `"continue-on-restart": true` in `config/chunky/config.json` before you start — this auto-resumes the task every time you load the world, so you can close the game and it picks up where it left off.
+
+**Distant Horizons + Chunky — practical setup** (so DH turns the pre-generated world into LODs while Chunky runs):
+
+- **Distant Generation**: ON — DH converts Chunky's newly generated chunks into LODs as Chunky progresses.
+- **Distant Generator Mode**: `PRE_EXISTING_ONLY` — DH builds LODs only from chunks Chunky has already generated, rather than generating terrain itself.
+- **DH CPU Load**: Low/Balanced during Chunky, especially with a big modpack; increase it afterward if you want to rapidly finish the LOD conversion.
+- **Never** switch the mode to `SURFACE`, `FEATURES`, or `INTERNAL_SERVER` while Chunky is active — unless you specifically want DH generating terrain too.
+
+When Chunky finishes, set Distant Generator Mode back to `INTERNAL_SERVER` (YUNG's Better Caves crash protection) and CPU Load back to Aggressive.
 
 ---
 
@@ -414,6 +425,8 @@ This generates a 5000-block radius circle around your spawn point. On a modern C
 ```
 
 Any active task will now resume by itself whenever you open the world. This is the recommended approach for single-player — the task resumes the moment you load the world, no manual `/chunky continue` needed.
+
+**Distant Horizons + Chunky**: while pre-generating, set DH to Distant Generation ON, Distant Generator Mode `PRE_EXISTING_ONLY`, and CPU Load Low/Balanced so DH converts Chunky's chunks into LODs as they generate. Revert to `INTERNAL_SERVER` + Aggressive when Chunky finishes. Full workflow in [First Launch Checklist §5](#5-chunky--world-pregeneration).
 
 
 ---

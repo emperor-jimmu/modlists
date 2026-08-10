@@ -579,3 +579,8 @@ PUT 90.*:
 - [x] Hud Texts **RESTORED** (Wave 0.5 dependency) — required by Day Counter (from V3.4).
 - [x] GUIDE.md updated: Wave 0.5 table rows (Day Counter + Hud Texts), Day Counter config section, detail section, Mod Count Summary (deps 42→43, total 212→213; mods unchanged at 170).
 - [ ] Day Counter config — verify keys after test launch, apply overrides from GUIDE.md (ActionBar only, no sound, no rewards, no week days, no date system)
+
+### Distant Horizons + Chunky Setup (Aug 2026 batch 30)
+
+- [x] GUIDE.md — "Distant Horizons + Chunky — practical setup" added to First Launch Checklist §5 (Chunky — World Pregeneration): Distant Generation ON, `distantGeneratorMode: PRE_EXISTING_ONLY`, DH CPU Load Low/Balanced during Chunky, never `SURFACE`/`FEATURES`/`INTERNAL_SERVER` while Chunky is active; revert to `INTERNAL_SERVER` + Aggressive when Chunky finishes (Better Caves crash protection).
+- [x] GUIDE.md — §2 Distant Horizons tip updated with Chunky-phase pointer; Infrastructure → Chunky section cross-references the workflow. No mod or config-file changes — mode switch is a runtime setting, no tracked DH config override needed.
