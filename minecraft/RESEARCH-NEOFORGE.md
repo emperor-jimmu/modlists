@@ -166,7 +166,7 @@ This is the second-biggest upgrade. NeoForge has actual spellcasting mods:
 | Spell Engine + Spell Power | Spell Engine + Spell Power | Same, both on NeoForge |
 | Trinkets | **Curios API** | Standard NeoForge accessory slot mod |
 | Runes | Runes | Check NeoForge availability |
-| Relics RPG | Relics RPG | Check NeoForge availability |
+| Relics (RPG Series) | Relics (RPG Series) | Check NeoForge availability |
 
 ### New Magic Mods
 

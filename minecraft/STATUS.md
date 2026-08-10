@@ -67,9 +67,9 @@ PUT 90.*:
 
 - [x] Apotheosis fully configured (5 modules, socketing, reforging costs, enchants, spawners, Deadly module enabled)
 - [x] Dependencies added: Placebo, Apothic Attributes, Apothic-Enchanting, Apothic-Spawners, Patchouli
-- [x] Simply Swords, Too Many Bows, Spartan Weaponry Unofficial, Relics RPG, Runes, Immersive Armors
+- [x] Simply Swords, Too Many Bows, Spartan Weaponry Unofficial, Relics (RPG Series), Runes, Immersive Armors
 - [x] Simply Swords deps: Simply Tooltips, Fzzy Config
-- [x] Relics RPG / Skill Tree deps: Ranged Weapon API, Spell Engine
+- [x] Relics (RPG Series) / Skill Tree deps: Ranged Weapon API, Spell Engine
 - [x] Runes dep: Bundle API
 - [x] Skill Tree (RPG Series), Pufferfish's Skills
 - [x] Compat notes: Apotheosis affixes apply to Simply Swords weapons, Twilight Forest bosses, Incendium weapons, and Immersive Armors pieces
@@ -132,7 +132,7 @@ PUT 90.*:
 - [x] Removed Regions Unexplored (FPS concerns with Terralith/Tectonic overlap, no global-tag structure compat)
 - [x] Removed Additional Structures (Towns & Towers + Structory cover structures adequately)
 - [x] Removed Nullscape (BetterEnd's biome overhaul replaces Nullscape's End transformation)
-- [x] Removed Spell Power (Pufferfish's Skills + Skill Tree cover RPG); Spell Engine retained as mandatory dependency of Relics RPG and Skill Tree
+- [x] Removed Spell Power (Pufferfish's Skills + Skill Tree cover RPG); Spell Engine retained as mandatory dependency of Relics (RPG Series) and Skill Tree
 - [x] Replaced Corail Tombstone with GraveStone Mod (NeoForge native, active development)
 - [x] Added MineColonies + 4 deps to Wave 1 (colony automation gates Phase 2 tech progression)
 - [x] Added Chunk Loaders + 2 deps to Wave 1 (cross-dimension chunk loading for Phase 2+ automation)
@@ -528,7 +528,7 @@ PUT 90.*:
 - [x] Removed Skill Tree (RPG Series) — replaced by Skills Mastery Reimagined. Skill Tree's simple stat-bonus design ("numbers go up") didn't fit the pack's power fantasy; lacked meaningful build decisions for a 200h+ runway.
 - [x] Added Skills Mastery Reimagined v1.2.1 (Wave 3 — RPG Progression) — 71-node Pufferfish's Skills tree with tradeoff design: 36 max unlockable nodes, some unique nodes carry negative effects, sound feedback on unlocks. XP from diverse sources: mob kills, mining (2), fishing (5), enchanting (2×level), boss bonuses (Evoker 100 → Dragon 600). Unique attributes: Gravity, Scale, Burning Time, Sneak Speed, Crossbow Projectile Speed, weapon-specific damage. CurseForge (NeoForge 1.21.1).
 - [x] Added Pufferfish's Attributes (Wave 3 — New Dependency) — custom attribute registry required by Skills Mastery Reimagined. 35+ dynamic attributes (Stamina, Fortune, Melee/Ranged/Magic Damage, Life Steal, Stealth, Jump, Mining Speed, etc.). By Pufferfish (21.3M DL, same author as Pufferfish's Skills). CurseForge (NeoForge 1.21.1).
-- [x] Spell Engine + Ranged Weapon API retained — still required by Relics RPG; dependency notes updated to reflect removal of Skill Tree requirement.
+- [x] Spell Engine + Ranged Weapon API retained — still required by Relics (RPG Series); dependency notes updated to reflect removal of Skill Tree requirement.
 - [x] Keybind updated: Open Skill Tree → `K` (Pufferfish's Skills), was `P` (Skill Tree RPG Series).
 - [x] GUIDE.md Wave 3 updated: RPG Progression table, dependency notes, Skill Tree section replaced with full Skills Mastery Reimagined writeup (design philosophy, XP table, unique attributes, weapon synergy), wave summary counts (deps 10→11, total 20→21), overall totals (deps 41→42, total 209→210).
 
@@ -538,7 +538,7 @@ PUT 90.*:
 - [x] Added Simply More (Wave 3 — Equipment) — 10 new weapon types + 33 unique weapons. Simply Swords addon. Dependencies (Cloth Config + Architectury) already in Wave 0.5 — zero new mods required. CurseForge (NeoForge 1.21.1).
 - [x] Skipped Knaves' Needs — 520+ additional swords is overkill. Simply Swords' 60+ weapons already provide sufficient variety. Adding 520 more dilutes drop uniqueness and creates inventory bloat.
 - [x] Renamed "Runes" → "Enchanting Runes" (actual mod name). URL unchanged (slug is `runes`).
-- [x] Reclassified Curios API from Equipment table to dependency notes. Curios is an API/library (296M DL, by TheIllusiveC4) — provides accessory slot infrastructure used by Relics RPG and Immersive Armors. By default adds no content except an inventory GUI. Moved to interdependency notes alongside Spell Engine, Ranged Weapon API, and Pufferfish's Attributes.
-- [x] Kept Relics RPG — deep leveling system is the killer feature for 200h+ progression. Alternatives (Artifacts, Lost Trinkets) lack leveling mechanics. More Relics noted as potential future addon.
+- [x] Reclassified Curios API from Equipment table to dependency notes. Curios is an API/library (296M DL, by TheIllusiveC4) — provides accessory slot infrastructure used by Relics (RPG Series) and Immersive Armors. By default adds no content except an inventory GUI. Moved to interdependency notes alongside Spell Engine, Ranged Weapon API, and Pufferfish's Attributes.
+- [x] Kept Relics (RPG Series) — deep leveling system is the killer feature for 200h+ progression. Alternatives (Artifacts, Lost Trinkets) lack leveling mechanics. More Relics noted as potential future addon.
 - [x] Kept Better Combat in Wave 5 — combat animation mod, not a weapon mod. Enhances all weapons, doesn't compete.
 - [x] Counts updated: Wave 3 mods 10→9, deps 11→12, total 21 (unchanged). Overall mods 168→167, deps 42→43, total 210 (unchanged).

@@ -9,7 +9,7 @@ Wave 3 equips the player with a full RPG equipment system and a universal leveli
 Three layers build on each other:
 1. **Weapons that feel special** — Simply Swords provides 60+ unique weapons, each with its own passive/activated ability
 2. **Loot that feels exciting** — Savaru's Affixology adds Diablo-style rarity tiers (Common→Uncommon→Rare→Epic) with random affixes, gem socketing, and unidentified gear
-3. **Accessories that change how you play** — Relics RPG adds legendary-style accessories; Runes adds socketable runes
+3. **Accessories that change how you play** — Relics (RPG Series) adds legendary-style accessories; Runes adds socketable runes
 
 The Spell Engine / Spell Power library mods provide the attribute framework that makes all of this work together.
 
@@ -21,11 +21,11 @@ The player kills a zombie and it drops a **Simply Swords unique** — a weapon t
 
 ### Mid-game (Phase 2, hours 40–80)
 
-The player has a handful of **Relics RPG accessories** — a ring that gives them a double-jump, an amulet that creates a protective shield. They socket gems into their favorite weapons for extra effects. They carry a **Rune Pouch** with runes to swap between situations. Affixology mastery system unlocks as they identify and deconstruct gear.
+The player has a handful of **Relics (RPG Series) accessories** — a ring that gives them a double-jump, an amulet that creates a protective shield. They socket gems into their favorite weapons for extra effects. They carry a **Rune Pouch** with runes to swap between situations. Affixology mastery system unlocks as they identify and deconstruct gear.
 
 ### Late-game (Phase 3, hours 150+)
 
-The player's loadout is fully customized: a maxed-out Simply Swords unique weapon with Epic-tier affixes, a socketed Unprecedented-quality gem, and a full set of Relics RPG accessories. Every piece of gear was earned, identified, and optimized. They can oneshot most mobs while flying through their base at extreme speed from Aether-derived mobility.
+The player's loadout is fully customized: a maxed-out Simply Swords unique weapon with Epic-tier affixes, a socketed Unprecedented-quality gem, and a full set of Relics (RPG Series) accessories. Every piece of gear was earned, identified, and optimized. They can oneshot most mobs while flying through their base at extreme speed from Aether-derived mobility.
 
 ## Mod Roles
 
@@ -34,11 +34,11 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 | **Skill Tree (RPG Series)** 1.4.4 | RPG leveling system — earn XP from any action, level up, spend points on attributes (strength, vitality, agility, magic, defense) and passive abilities. Built on Pufferfish's Skills |
 | **Simply Swords** 1.63.0 | 60+ unique weapons, each with a distinct passive/active ability. Loot-table injected so they drop from mobs and chests |
 | **Savaru's Affixology** 2.1.6 | Diablo-style loot: rarity tiers (Common→Uncommon→Rare→Epic), random affix rolls, gem socketing with quality system, unidentified gear, inscription system. The primary chase mechanic |
-| **Relics RPG** 1.3.0 | Legendary-style accessories with unique passive/active abilities. ~30+ relics across Common→Epic tiers. The "oh wow" drop |
+| **Relics (RPG Series)** 1.3.0 | Legendary-style accessories with unique passive/active abilities. ~30+ relics across Common→Epic tiers. The "oh wow" drop |
 | **Runes** 1.2.1 | Socketable runes for weapons/tools. Each rune adds a specific enchantment-like effect. Swappable — a tactical layer |
 | **Spell Engine** 1.9.9 | Casting framework and magic attribute API. Library mod — enables Spell Power attributes and Relics abilities |
 | **Spell Power** 1.4.6 | Magic attribute system: spell damage, critical strike chance, critical strike damage, haste, resistance, armor penetration. Library mod — makes magic damage scale like physical damage |
-| **Trinkets** 3.10.0 | Accessory slot API. Required by Runes and Relics RPG for ring/amulet/glove/belt slots |
+| **Trinkets** 3.10.0 | Accessory slot API. Required by Runes and Relics (RPG Series) for ring/amulet/glove/belt slots |
 | **Pufferfish's Skills** 0.18.0 | Underlying skill system framework. Required by Skill Tree (RPG Series). Fully configurable — defines XP sources, level curves, and skill definitions |
 | **Simply Tooltips** | Required by Simply Swords 1.63.0 — enables dynamic tooltips with ability descriptions and stat previews |
 
@@ -51,7 +51,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 | Patchouli | Savaru's Affixology | In-game guidebook for Affixology systems |
 | Fzzy Config | Simply Swords | Config library for Simply Swords settings |
 | Bundle API | Runes | Enables the Rune Pouch (portable rune storage) |
-| Architectury API | Simply Swords, Relics RPG, Skill Tree | Cross-loader compat — already present from Wave 0 |
+| Architectury API | Simply Swords, Relics (RPG Series), Skill Tree | Cross-loader compat — already present from Wave 0 |
 
 ### Already Present from Earlier Waves
 
@@ -80,7 +80,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 ### With Spell Engine / Spell Power
 
 - Savaru's Affixology gems and affixes interact with Spell Power attributes (spell damage, crit, haste)
-- Relics RPG abilities use the Spell Engine casting framework
+- Relics (RPG Series) abilities use the Spell Engine casting framework
 - Spell Power enchantments can be applied to Simply Swords weapons
 
 ## Progression Curve
@@ -97,7 +97,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 
 - Skill tree branches unlock mid-tier passives — spend points into preferred attribute trees
 - Simply Swords weapons gain Rare→Epic affix rolls via Affixology
-- Relics RPG mid-tier accessories (Uncommon→Rare) become available
+- Relics (RPG Series) mid-tier accessories (Uncommon→Rare) become available
 - Runes become accessible — player builds a rune pouch with tactical options
 - Affixology Mastery system starts unlocking higher-tier gem effects
 
@@ -105,7 +105,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 
 - Max-level skill tree with full passive loadout — all attributes significantly boosted
 - Epic-tier affixes and Unprecedented/Flawless gem sockets
-- Relics RPG Epic-tier accessories from dragon loot and endgame content
+- Relics (RPG Series) Epic-tier accessories from dragon loot and endgame content
 - Complete rune set for every situation
 - Player's gear is fully tailored to their playstyle
 
@@ -122,7 +122,7 @@ The player's loadout is fully customized: a maxed-out Simply Swords unique weapo
 - Ensure unique weapons are not disabled by default
 - Verify Better Combat compatibility (optional)
 
-### Relics RPG
+### Relics (RPG Series)
 
 - Ensure loot table injection compatible with existing dimension mods
 - Verify trinket slot integration (Trinkets API)

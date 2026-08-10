@@ -2314,7 +2314,7 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 | [Simply Swords](https://www.curseforge.com/minecraft/mc-mods/simply-swords)                             | 60+ unique melee weapons with passive/activated abilities                |
 | [Simply More](https://www.curseforge.com/minecraft/mc-mods/simply-more)                                 | 10 new weapon types + 33 unique weapons — Simply Swords addon            |
 | [Too Many Bows](https://www.curseforge.com/minecraft/mc-mods/too-many-bows)                             | 30+ unique bows with special abilities and custom attributes             |
-| [Relics RPG](https://www.curseforge.com/minecraft/mc-mods/relics-rpg)                                   | Legendary accessories with unique abilities — levels up with use         |
+| [Relics (RPG Series)](https://www.curseforge.com/minecraft/mc-mods/relics-rpg)                           | Legendary accessories with unique abilities — levels up with use         |
 | [Enchanting Runes](https://www.curseforge.com/minecraft/mc-mods/runes)                                  | Socketable runes for weapons/tools — early-game enchanting alternative   |
 | [Immersive Armors](https://www.curseforge.com/minecraft/mc-mods/immersive-armors)                      | 40+ unique armor sets with custom effects — berserk, double jump, hostile radar, spikes, divine block |
 
@@ -2368,9 +2368,9 @@ If you've never built anything beyond a dirt hut, follow these steps for your fi
 This cost curve encourages the player to settle for "good enough" gear until they're ready to invest in perfect rolls.
 
 ### Interdependency notes for Wave 3
-- **Spell Engine** is required by Relics RPG — it was previously considered for removal but must be retained as a mandatory dependency of this core RPG mod.
-- **Ranged Weapon API** is shared between Relics RPG and Pufferfish's Skills ecosystem — install once, used by both.
-- **Curios API** provides the accessory slot system used by Relics RPG and Immersive Armors. Adds an equipment GUI (keybind `Y`) with ring, amulet, belt, gloves, back, and charm slots. Auto-installed dependency — no separate config needed.
+- **Spell Engine** is required by Relics (RPG Series) — it was previously considered for removal but must be retained as a mandatory dependency of this core RPG mod.
+- **Ranged Weapon API** is shared between Relics (RPG Series) and Pufferfish's Skills ecosystem — install once, used by both.
+- **Curios API** provides the accessory slot system used by Relics (RPG Series) and Immersive Armors. Adds an equipment GUI (keybind `Y`) with ring, amulet, belt, gloves, back, and charm slots. Auto-installed dependency — no separate config needed.
 
 **Immersive Armors** adds 40+ unique armor sets with custom effects: Wooden (arrow/explosion protection), Skeleton (speed, Wither variant, skeleton neutrality), Divine (dyeable, blocks 1 attack/min), Heavy (high armor, anti-knockback, slow), Slime (bounce attackers), Warrior (berserk — more damage at low HP), Robe (dyeable wool, fire thorns, fireproof), Steampunk (hostile radar, enhanced UI, double jump, no fall damage), and Prismarine (spikes, depth strider). All sets are enchantable, repairable, and dyeable where applicable. Recipes in vanilla recipe book and EMI. **Apotheosis affixes and gems apply to all Immersive Armors pieces.** Mekanism Tools fills the material-tier progression (Osmium→Bronze→Steel→MekaSuit); Immersive Armors fills the unique-effect side grade slot — different armor sets for different situations rather than linear upgrades.
 
@@ -2475,7 +2475,7 @@ Plus 33 unique weapons with special abilities. All weapons use Simply Swords' un
 
 **Finding them**: Same as Simply Swords — mob drops (~2% chance), structure chests, boss loot. EMI shows all recipes and drop sources.
 
-### Relics RPG — Legendary Accessories
+### Relics (RPG Series) — Legendary Accessories
 
 Unique accessories for **Curios slots**. You have 6 slots: Ring (2), Amulet (1), Belt (1), Gloves (1), Back (1), Charm (1). Press Curios keybind (`Y` recommended) to open inventory.
 
