@@ -592,6 +592,10 @@ PUT 90.*:
 - [x] **Milestone rewards enabled** in `config/day_counter.toml` `[Rewards.1]`–`[Rewards.5]`: Day 100 (100 EXP, 8 diamond), Day 250 (250 EXP, 2 diamond block), Day 500 (500 EXP, 5 diamond block), Day 1000 (1000 EXP, 4 netherite ingot), Day 2000 (2000 EXP, 2 netherite block) — each with a chat message, `Command` left empty (the mod's example command string looked corrupted). All items vanilla — no pack gating bypassed.
 - [x] GUIDE.md updated: filename → `config/day_counter.toml`, milestone rewards table added under the config section, role row + detail section updated.
 
+### Day Counter Reward Messages (Aug 2026 batch 33 — user instruction)
+
+- [x] Milestone reward chat messages in `config/day_counter.toml` rewritten to be snarky/playful (chill-vibe roasting, §-format preserved): Day 100 "haven't finished your first build... looks expensive", Day 250 "villagers have started charging you rent", Day 500 "still on 'easy' difficulty... show-off", Day 1000 "base is still 40% scaffolding... You earned it. Barely.", Day 2000 "we're just renting it. Obviously." No guide/PDF changes (messages live only in the config file).
+
 ### Distant Horizons + Chunky Setup (Aug 2026 batch 30)
 
 - [x] GUIDE.md — "Distant Horizons + Chunky — practical setup" added to First Launch Checklist §5 (Chunky — World Pregeneration): Distant Generation ON, `distantGeneratorMode: PRE_EXISTING_ONLY`, DH CPU Load Low/Balanced during Chunky, never `SURFACE`/`FEATURES`/`INTERNAL_SERVER` while Chunky is active; revert to `INTERNAL_SERVER` + Aggressive when Chunky finishes (Better Caves crash protection).

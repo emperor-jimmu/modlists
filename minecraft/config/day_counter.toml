@@ -90,7 +90,7 @@
 	[Rewards.1]
 		#PACK: Day 100 — first milestone
 		Day = 100.0
-		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l100§f! A hundred days in — take some diamonds."
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l100§f! A hundred days and you still haven't finished your first build. Here — diamonds, so it at least looks expensive."
 		Command = ""
 		EXP = 100.0
 		Item = "minecraft:diamond"
@@ -99,7 +99,7 @@
 	[Rewards.2]
 		#PACK: Day 250
 		Day = 250.0
-		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l250§f! Two hundred fifty days — enjoy the diamond blocks."
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l250§f! Two hundred fifty days. The villagers have started charging you rent. Take the diamond blocks."
 		Command = ""
 		EXP = 250.0
 		Item = "minecraft:diamond_block"
@@ -108,7 +108,7 @@
 	[Rewards.3]
 		#PACK: Day 500
 		Day = 500.0
-		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l500§f! Halfway to a thousand — more diamond blocks."
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l500§f! Halfway to a thousand and you're still on 'easy' difficulty. More diamond blocks, show-off."
 		Command = ""
 		EXP = 500.0
 		Item = "minecraft:diamond_block"
@@ -117,7 +117,7 @@
 	[Rewards.4]
 		#PACK: Day 1000
 		Day = 1000.0
-		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l1000§f! A thousand days. Netherite for the legend."
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l1000§f! A thousand days and your base is still 40% scaffolding. Netherite for you anyway. You earned it. Barely."
 		Command = ""
 		EXP = 1000.0
 		Item = "minecraft:netherite_ingot"
@@ -126,7 +126,7 @@
 	[Rewards.5]
 		#PACK: Day 2000
 		Day = 2000.0
-		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l2000§f! Two thousand days — the netherite blocks are yours."
+		Message = "§6§l[§b§lDay Counter§6§l] §fDay §b§l2000§f! Two thousand days. The world is yours now — we're just renting it. Take the netherite blocks. Obviously."
 		Command = ""
 		EXP = 2000.0
 		Item = "minecraft:netherite_block"
