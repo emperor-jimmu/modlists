@@ -3,18 +3,26 @@
 **Baseline:** FL26 v2.2 (May 2026)
 **Verified:** 2026-08-10
 
-#strong[Download Source:] Football Life 2026 is hosted on PeSoccerWorld (pesoccerworld.com). Downloads are direct or via standard file hosts — no deceptive ad traps. Commentary v8 (English, Peter Drury & Jim Beglin) and 36 stadiums are bundled with the base download.
+#strong[Download Source:] Football Life 2026 base game, updates, and commentary are hosted on caocacao.net. Downloads are via Mediafire and Sharemods mirrors — no deceptive ad traps. Commentary v8 (English, Peter Drury & Jim Beglin) is available as a separate download; 36 stadiums are included in the base installation.
 
-## PeSoccerWorld (SmokePatch Official)
+## caocacao.net — Base Game + Updates
 
 | # | Mod | Version | Source | Status | Notes |
 |---|---|---|---|---|---|
-| 1 | SP Football Life 2026 (base) | — | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en | VERIFIED | Standalone installer, no PES 2021 required. Extract and run `SPFL26_setup.exe` to a clean directory. Launch via `FL_2026 start.exe`. |
-| 2 | Update 1.1 | v1.1 | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en | VERIFIED | `SPFL26_110.exe` — database fixes, graphic corrections, stadium performance improvements, referee appearance fixes. Apply after base game. |
-| 3 | v2.0 Major Update | v2.0 | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-0-6018.html?lang=en | VERIFIED | 15 new promoted teams, winter transfers, refreshed player stats, gameplay adjustments (slower, more tactical pacing). Run installer over existing install. Compatible with all prior save games. |
-| 4 | v2.20 Option File | Jun 2026 | https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-20-option-file-25-06-2026-mundial-fifa-2026-6093.html?lang=en | VERIFIED | World Cup 2026 rosters, confirmed summer transfers through June 25 2026. Backup `EDIT00000000` first, install over FL26, replace files. Compatible with FL26 v2.20. |
-| 5 | English Commentary v8 | v8 — bundled | Bundled with base game | BUNDLED | Included in the base download. Peter Drury & Jim Beglin. No separate install needed — select English under System Settings > Language. |
-| 6 | Facepack AIO | Initial + Updates 1–4 (14,500+ faces) | https://www.pessmokepatch.com/2025/10/faces2627.html | VERIFIED | Large download. Sider `livecpk` install. Apply base pack then updates sequentially. |
+| 1 | SP Football Life 2026 (base) | v1.0 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | 11-part download via Mediafire + Sharemods mirrors. Extract all parts, run `SPFL26_setup.exe` to a clean directory. Launch via `FL_2026 start.exe`. 36 stadiums included. |
+| 2 | Update v2.0 | v2.0 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Single file via Modsfire + Sharemods. 15 new promoted teams, winter transfers, refreshed player stats, gameplay adjustments (slower, more tactical pacing). Run installer over existing install. Compatible with all prior save games. |
+| 3 | Update v2.1 | v2.1 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Database + kit update. Apply after v2.0. |
+| 4 | v2.20 Option File | Jun 2026 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | World Cup 2026 rosters, confirmed summer transfers through June 25 2026. Backup `EDIT00000000` first, install over FL26, replace files. Compatible with FL26 v2.20. |
+| 5 | English Commentary v8 | v8 | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Separate download from caocacao.net. Peter Drury & Jim Beglin. Install then select English under System Settings > Language. |
+| 6 | Facepack + Update 3 | 14,500 faces / 38 GB | https://caocacao.net/download-football-life-2026-fl-26/ | VERIFIED | Available on caocacao.net alongside base game. For the best face coverage, see the dedicated facepack section below. |
+
+## Facepack Sources
+
+| # | Mod | Version | Source | Status | Notes |
+|---|---|---|---|---|---|
+| FP1 | Mega Facepack V4 (Football4Life) | V4 (15,842 faces) | https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en | VERIFIED | #strong[Recommended.] 15,842 faces across 7 parts. Includes original FL26 V3 facepack with errors corrected + optimizations. Extract with WinRAR, copy to `SP Football Life 26/download`. |
+| FP2 | Mega Facepack V5 (Football4Life) | V5 (17,555 faces) | pesoccerworld.com — search: "Mega Facepack 2026 V5" | VERIFIED | Upgrade from V4 with 17,555 total faces. Same install method. |
+| FP3 | Facepack v2 (Football4Life) | v2 (14,714 faces) | https://pes-files.com/pes-2021-sp-football-life-facepack-2026-v2/ | VERIFIED | Alternative. 14,714 faces, enhanced arm/leg tattoos. Updated leagues: PL, LaLiga, Serie A, Bundesliga, Ligue 1, Argentina, Brazil, Netherlands, Turkey, Belgium, Denmark. 103 faces not in the SP Facepack. Extract all parts, copy to `SP Football Life 26/download`. |
 
 ## EvoWeb — Audio & Atmosphere
 
@@ -55,9 +63,9 @@
 
 ## Summary
 
-- **23/23 mods VERIFIED** against live community sources; **1 BUNDLED** (commentary v8 included in base), **3 SUBSUMED by Essentials** (SoundServer, Ball Server, Gameplay Loader — bundled in the Essentials Mod Pack)
+- **23/23 mods VERIFIED** against live community sources; **0 BUNDLED**, **3 SUBSUMED by Essentials** (SoundServer, Ball Server, Gameplay Loader — bundled in the Essentials Mod Pack)
 - **0 DROPPED**
-- **Download source migrated from SmokePatch direct to PeSoccerWorld** — pesoccerworld.com hosts the FL26 base, updates, and option files. Commentary v8 and 36 stadiums are bundled in the base download.
+- **Download source: caocacao.net** (base game, updates, commentary) with facepacks from pesoccerworld.com and pes-files.com. 36 stadiums are included in the base installation; commentary v8 is a separate download.
 - **Sourcing methodology:** Direct EvoWeb thread URLs provided where available (Essentials Mod Pack #103385, Soccer Revolution #94305). Mods behind EvoWeb's login wall use `EvoWeb — search: "<term>"` — exact search terms are quoted for copy-paste into EvoWeb's search bar. Mods bundled in the Essentials Mod Pack note both the pack source and the standalone thread for users who skip Layer 3.
 - **UML v3 is paid** — confirm current Patreon tier and FL26 v2.2 support before purchase.
 - **League expansion mods are community-driven and scope varies** — verify current coverage at install time.
@@ -66,7 +74,7 @@
 ## Installation Guide Decisions — Layers 1–5
 
 - **Predator002 Chant Pack (Layer 2):** Selected over generic chant mods due to team-specific coverage across all major leagues, player-specific chants, and the included ChantsBase ambient crowd system. Version V8/V8.1 is the current community standard for FL26 as of August 2026.
-- **SmokePatch Facepack AIO (Layer 4):** Selected over community face packs because it is maintained by the same team that ships FL26, ensuring roster-ID compatibility and consistent art direction. Community face packs may introduce ID mismatches with FL26's database.
+- **Mega Facepack V4 (Layer 4):** Selected as the recommended facepack with 15,842 faces (Football4Life). Includes the original FL26 V3 facepack with errors corrected and optimizations. V5 (17,555 faces) is available as an upgrade. The pes-files.com Facepack v2 (14,714 faces) is documented as an alternative. Community face packs may introduce ID mismatches with FL26's database — the Football4Life packs are built specifically for FL26 compatibility.
 - **AIO Stadium Pack (Layer 5):** Selected as the primary stadium source because it bundles high-resolution stadiums with adboards and tunnel scenes for the 2025/26 season. Community stadium packs exist but typically cover fewer leagues and require manual `map_teams.txt` assembly.
 - **Essentials Mod Pack (Layer 3):** Adopted as the visual foundation because it bundles Ball Server (Ballpack v60 AIO by Hawke), SoundServer, Gameplay Loader, scoreboards, adboards, updated kits/boots/gloves, referee kits, and entrance scenes into a single install step. Several mods listed in other layers (Ball Server Layer 8, SoundServer Layer 2, Gameplay Loader Layer 9) are included in this pack — the standalone threads exist for users who skip the Essentials Pack, but the recommended path is to install Layer 3 first and verify bundled modules before seeking standalone downloads.
 - **SoundServer (Layer 2):** Bundled in the Essentials Mod Pack (Layer 3). Selected over in-game audio controls because it provides per-channel mixing (crowd, referee, announcer, ambient) via the Sider overlay. No equivalent alternative exists. Standalone EvoWeb thread available (search: "SoundServer nesa24") for users not installing the Essentials Pack.
@@ -81,12 +89,12 @@
 - **Gameplay Loader + Holland's Gameplay Mod (Layer 9):** The Gameplay Loader is the community-standard framework for swapping gameplay mods and is bundled in the Essentials Mod Pack (Layer 3) with multiple gameplay options pre-loaded. Holland's Gameplay Mod is the primary recommendation due to its broadest community adoption on EvoWeb, active maintenance, and focus on fixing AI build-up play, scripting reduction, and physicality improvements. Allstar Mix (Machete Gaming) is included as a documented fallback because it covers a different gameplay feel and is widely used, but it is distributed through Machete Gaming's channels rather than EvoWeb — making it harder to verify and source for new users. Both are listed in the same layer so users can try both via the Loader and choose their preference.
 - **UML v3 (Layer 10):** Included despite being the only paid mod in the stack because it is the definitive career depth expansion for FL26. UML's scope (player development overhaul, 2,800+ stat adjustments, World Cup 2026 rosters, K League 1, exclusive facepacks) has no free equivalent. The Patreon paywall, pricing, and optionality are documented transparently. The base FL26 Master League is explicitly noted as fully playable without UML.
 - **ULP / community league databases (Layer 11):** Listed as optional because league expansion mods are community-driven, scope varies by release wave, and no single database covers all regions. Liga MX and CSL are specifically called out as available via separate community mods. The engine-level limitation (no tier-3+ pyramid) is documented as a hard constraint — community league databases expand horizontally, not vertically.
-- **Known Limitations (4.4):** The three limitations (no lower-league pyramid, UML paid, no classic teams) are documented to set accurate expectations. The lower-league pyramid limitation is engine-level per both EvoWeb and SmokePatch community consensus. The classic teams limitation is documented with a warning against experimental mods that exist but are unreliable.
-- **Save Compatibility Warning (4.5):** The save incompatibility policy is documented because SmokePatch updates are known to break Master League and Become a Legend saves. The recommendation to lock at v2.2 for career duration, back up `Documents\KONAMI\` and `FL 26.exe`, and maintain parallel installs for experimentation is based on established community practice for FL series updates.
+- **Known Limitations (4.4):** The three limitations (no lower-league pyramid, UML paid, no classic teams) are documented to set accurate expectations. The lower-league pyramid limitation is engine-level per community consensus on EvoWeb. The classic teams limitation is documented with a warning against experimental mods that exist but are unreliable.
+- **Save Compatibility Warning (4.5):** The save incompatibility policy is documented because FL26 updates are known to break Master League and Become a Legend saves. The recommendation to lock at v2.2 for career duration, back up `Documents\KONAMI\` and `FL 26.exe`, and maintain parallel installs for experimentation is based on established community practice for FL series updates.
 
 ## Sider Configuration Guide Decisions
 
-- **Sider version:** The Sider build shipped with FL26 v2.2 is the baseline. No separate Sider version is documented — SmokePatch bundles the correct Sider build with each FL26 release. The Sider in the FL26 root directory is the authoritative version for this mod stack.
+- **Sider version:** The Sider build shipped with FL26 v2.2 is the baseline. No separate Sider version is documented — FL26 bundles the correct Sider build with each release. The Sider in the FL26 root directory is the authoritative version for this mod stack.
 - **Module load order (Lua):** Lua module entries in `[lua]` are order-independent — each module's hooks are wired independently by the Sider framework. The order of `lua.module` lines in the guide's template is alphabetical for readability, not functional necessity.
 - **CPK root load order:** The guide documents the load-order rule explicitly: later `cpk.root` entries override earlier ones. The Facepack AIO is placed before other `livecpk` roots so community face replacements in later CPK roots can override the base facepack.
 - **Module names:** Exact `.lua` filenames are community-standard names documented in the guide: `SoundServer.lua`, `StadiumServer.lua`, `BallServer.lua`, `GameplayLoader.lua`, `Camera.lua`. These are the names used in the EvoWeb forum threads for each module and confirmed by community install guides.

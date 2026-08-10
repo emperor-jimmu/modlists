@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-10
 **Status:** Approved
-**Game:** SP Football Life 2026 (v2.2), standalone, built on eFootball PES 2021 engine by SmokePatch
+**Game:** SP Football Life 2026 (v2.2), standalone, built on eFootball PES 2021 engine by Football4Life
 
 ## 1. Overview
 
@@ -48,7 +48,7 @@ Typst (matching Kenshi, Factorio, X-COM 2, Monster Hunter Rise conventions). Sec
 
 ### 4.1 Base Game
 
-- Download FL26 base + latest update (v2.2, May 2026) from [pessmokepatch.com](https://www.pessmokepatch.com/)
+- Download FL26 base + latest update (v2.2, May 2026) from [caocacao.net](https://caocacao.net/download-football-life-2026-fl-26/)
 - Install outside `C:\Program Files` (permission issues with Sider injection)
 - Verify launch before any mods
 - Directory anatomy walkthrough: `Sider/`, `livecpk/`, `content/`, `sider.ini`
@@ -61,7 +61,7 @@ Order matters — install in this sequence, testing launch after each major laye
 
 | Mod                | Details                  | Install                                                                       |
 |--------------------|--------------------------|-------------------------------------------------------------------------------|
-| English Commentary | Peter Drury & Jim Beglin | SmokePatch `.exe` installer → point to FL26 root → System Settings > Language |
+| English Commentary | Peter Drury & Jim Beglin | Separate download from caocacao.net → install → System Settings > Language |
 
 #### Layer 2: Audio Framework & Atmosphere
 
@@ -84,7 +84,7 @@ Order matters — install in this sequence, testing launch after each major laye
 
 | Mod                     | Details                                    | Install                                            |
 |-------------------------|--------------------------------------------|----------------------------------------------------|
-| SmokePatch Facepack AIO | 14,500+ real player faces. Large download. | `content/faces` → update `cpk.root` in `sider.ini` |
+| Mega Facepack V4 (Football4Life) | 15,842 faces. 7-part download from pesoccerworld.com. V5 upgrade available (17,555 faces). | Extract to `SP Football Life 26/download\` — no `cpk.root` needed. Facepack v2 (14,714 faces) from pes-files.com as alternative. |
 
 #### Layer 5: Stadiums
 
@@ -149,7 +149,7 @@ Full `sider.ini` walkthrough:
 
 ### 4.5 Save Compatibility Warning
 
-SmokePatch updates (e.g., v2.1 → v2.2) can and do break Master League saves. The game does not warn you — you load a 40-hour career and it crashes or corrupts. **Before updating the base game, back up your entire `save/` folder and your current `FL 26.exe`.** If an update breaks your save, you can revert by restoring the previous executable and data files. For the long-form manager careers in Part 2, consider locking your FL26 version at v2.2 for the duration of a save. Updating mid-career is a gamble — the guide recommends against it.
+FL26 updates (e.g., v2.1 → v2.2) can and do break Master League saves. The game does not warn you — you load a 40-hour career and it crashes or corrupts. **Before updating the base game, back up your entire `save/` folder and your current `FL 26.exe`.** If an update breaks your save, you can revert by restoring the previous executable and data files. For the long-form manager careers in Part 2, consider locking your FL26 version at v2.2 for the duration of a save. Updating mid-career is a gamble — the guide recommends against it.
 
 ## 5. Part 2 — Let's Play: Manager Roleplay Guide
 

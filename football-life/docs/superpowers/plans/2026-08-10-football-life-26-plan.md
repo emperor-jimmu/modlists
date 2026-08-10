@@ -12,7 +12,7 @@
 
 - Typst 0.15 or 0.15.1 required for PDF compilation. `build.bat` MUST check version with `typst --version` and fail with a clear message if below 0.15.
 - Font family: Bahnschrift for headings, Georgia for body (matching Kenshi convention). Fall back to system-available equivalents if missing.
-- All mods referenced MUST be verified as real and compatible with FL26 v2.2 before any prose is written. Verification means: locate the mod on EvoWeb or SmokePatch, confirm the thread/download is active, note the current version, and record the URL.
+- All mods referenced MUST be verified as real and compatible with FL26 v2.2 before any prose is written. Verification means: locate the mod on caocacao.net, EvoWeb, pesoccerworld.com, or pes-files.com, confirm the thread/download is active, note the current version, and record the URL.
 - NEVER fabricate mod names, download links, or install paths.
 - Guide sections use `#include` into `template.typ`. Each section is self-contained Typst content.
 - Conventional commits: `docs(football-life): <message>`.
@@ -57,9 +57,11 @@ All four personas follow this identical structure. The implementer fills in the 
 
 - Produces: A verified table of every mod with current name, version, source URL, and compatibility status. STATUS.md updated. This task gates Tasks 2–6 — if a mod can't be found or is incompatible, the plan pauses here.
 
-- [ ] **Step 1: Verify SmokePatch official mods**
+- [ ] **Step 1: Verify base game + facepack sources**
 
-Navigate to [pessmokepatch.com](https://www.pessmokepatch.com/). Confirm FL26 base is available, latest update version (expected v2.2), English Commentary pack exists. Note exact filenames and download page URLs. Record in STATUS.md under "Verified — SmokePatch."
+Navigate to [caocacao.net](https://caocacao.net/download-football-life-2026-fl-26/). Confirm FL26 base v1.0 is available (11 parts, Mediafire + Sharemods mirrors), updates v2.0 and v2.1 exist, English Commentary v8 is available, and a facepack is listed. Note exact filenames and download page URLs. Record in STATUS.md under "caocacao.net — Base Game + Updates."
+
+Also verify Mega Facepack V4 at [pesoccerworld.com](https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en) and Facepack v2 at [pes-files.com](https://pes-files.com/pes-2021-sp-football-life-facepack-2026-v2/). Note version numbers, face counts, and install paths.
 
 - [ ] **Step 2: Verify EvoWeb community mods — Part A (Audio + Visual Foundation)**
 
@@ -77,7 +79,8 @@ Record each in STATUS.md under "Verified — EvoWeb Audio/Visual." If any mod is
 
 Continue on EvoWeb. Confirm:
 
-- SmokePatch Facepack AIO (may also be on SmokePatch site) — confirm version and size
+- Football4Life Mega Facepack V4 (pesoccerworld.com) + V5 — confirm face count and size
+- Football4Life Facepack v2 (pes-files.com) — confirm face count, leagues covered
 - Stadium Server module — confirm current version
 - AIO Stadium Pack for FL26 — confirm existence, approximate size
 - Soccer Revolution — confirm current version, note thread URL
@@ -147,7 +150,7 @@ SP Football Life 2026 (v2.2) modlist and game guide.
 
 ## Key Rules
 - NEVER fabricate or suggest mods. All mods must be verified real and FL26 v2.2 compatible.
-- Mod sources: SmokePatch official (primary), EvoWeb (community), UML Patreon (paid).
+- Mod sources: caocacao.net (base game, updates, commentary); pesoccerworld.com + pes-files.com (facepacks); EvoWeb (community); UML Patreon (paid).
 - Decision log maintained in STATUS.md. Update incrementally.
 - FL27 expected late 2026; note migration path in mod-ideas.md.
 
@@ -290,11 +293,11 @@ git commit -m "docs(football-life): scaffold project files and Typst pipeline"
 
 - [ ] **Step 1: Write Base Game section (4.1)**
 
-Content: download FL26 base + update from SmokePatch (link to verified download page from Task 1), install outside `C:\Program Files`, verify launch, directory anatomy walkthrough of `Sider/`, `livecpk/`, `content/`, `sider.ini`.
+Content: download FL26 base + updates from caocacao.net (link to verified download page from Task 1), install outside `C:\Program Files`, verify launch, directory anatomy walkthrough of `Sider/`, `livecpk/`, `content/`, `download/`, `sider.ini`.
 
 - [ ] **Step 2: Write Layer 1 — Commentary**
 
-Table row: English Commentary (Peter Drury & Jim Beglin), SmokePatch, `.exe` installer → point to FL26 root → select in System Settings > Language. Use the verified URL from Task 1.
+Table row: English Commentary (Peter Drury & Jim Beglin), separate download from caocacao.net, install then select in System Settings > Language. Use the verified URL from Task 1.
 
 - [ ] **Step 3: Write Layer 2 — Audio Framework & Atmosphere**
 
@@ -303,12 +306,12 @@ Subsection with table: SoundServer (framework, Sider module → `sider.ini`), Pr
 - [ ] **Step 4: Write Layers 3–5 — Visual Foundation, Faces, Stadiums**
 
 Layer 3: Essentials Mod Pack — EvoWeb → extract, merge `SiderAddons`.
-Layer 4: SmokePatch Facepack AIO — `content/faces` → `cpk.root` in `sider.ini`.
+Layer 4: Mega Facepack V4 (Football4Life) — pesoccerworld.com, 7 parts → `SP Football Life 26/download`. Also note Facepack v2 alternative from pes-files.com and V5 upgrade. Facepacks install to `download/` folder, no `cpk.root` needed.
 Layer 5: Stadium Server (Sider module) + AIO Stadium Pack (`content/stadium-server` → `map_teams.txt`).
 
 - [ ] **Step 5: Append STATUS.md decisions**
 
-Document: why Predator002 over alternatives, why SmokePatch Facepack over community packs, stadium pack source choice.
+Document: why Predator002 over alternatives, why Mega Facepack V4 over alternatives (15,842 faces, V3 base + fixes), stadium pack source choice.
 
 - [ ] **Step 6: Verify compiles and commit**
 
@@ -350,7 +353,7 @@ Layer 11: Ultra League Patch — adds Liga MX, CSL, follow per-mod instructions.
 - [ ] **Step 4: Write Known Limitations (4.4) and Save Compatibility Warning (4.5)**
 
 4.4: no full lower-league pyramid (engine limit, Championship is lowest tier 2), UML is paid, no classic/legendary teams.
-4.5: SmokePatch updates break ML saves — backup `save/` + `FL 26.exe`, recommend locking at v2.2 for career duration.
+4.5: FL26 updates break ML saves — backup `save/` + `FL 26.exe`, recommend locking at v2.2 for career duration.
 
 - [ ] **Step 5: Append STATUS.md decisions**
 

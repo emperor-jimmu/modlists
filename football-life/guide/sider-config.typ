@@ -51,7 +51,7 @@ This is the opposite of how many game mod managers work (loose files override ar
 cpk.root = ".\livecpk\preds-root"
 cpk.root = ".\livecpk\referee-whistle"
 cpk.root = ".\livecpk\atmosphere-overhaul"
-cpk.root = ".\content\faces"
+
 ```
 
 Complete `sider.ini` template for this mod stack:
@@ -69,12 +69,12 @@ Complete `sider.ini` template for this mod stack:
     [`cpk.root = ".\livecpk\preds-root"`], [Predator002 Chant Pack V8 — team-specific chants + ChantsBase ambient crowd.],
     [`cpk.root = ".\livecpk\referee-whistle"`], [Referee Whistle Mod — high-fidelity whistle samples.],
     [`cpk.root = ".\livecpk\atmosphere-overhaul"`], [Atmosphere / Stadium Sound Overhaul — goal reactions, jeers, crowd swells.],
-    [`cpk.root = ".\content\faces"`], [SmokePatch Facepack AIO — 14,500+ player faces. Must load #emph[before] other `livecpk` roots so face overrides elsewhere take priority.],
+    [—], [#strong[Facepack:] Mega Facepack V4/V5 installs to `download\` — no `cpk.root` entry needed. FL26 reads faces directly from the `download` folder at startup. #emph[Remove any old `cpk.root = ".\content\faces"` line if migrating from the SmokePatch facepack.]],
   ),
   caption: [Complete `sider.ini` — Our Mod Stack]
 )
 
-#strong[Why faces load first:] The Facepack AIO entry sits above other `livecpk` roots because face replacements shipped by other mods (e.g., a specific player face in the Essentials Mod Pack) must override the base facepack. If `.\content\faces` were the last entry, the facepack would overwrite every community face replacement — you would see only the AIO faces. By placing it early, community face overrides in later `cpk.root` paths win.
+#strong[Why faces load from `download` folder:] The Football4Life facepacks (Mega Facepack V4/V5 and Facepack v2) install to the `SP Football Life 26\download\` directory, which FL26 reads natively at startup — no `cpk.root` entry is required. If you are migrating from the old SmokePatch Facepack AIO, remove the `cpk.root = ".\content\faces"` line from your `sider.ini` and delete the `content\faces\` folder to free disk space.
 
 === Common Pitfalls
 

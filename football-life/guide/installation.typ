@@ -1,15 +1,15 @@
 === Base Game Installation
 
-Download SP Football Life 2026 from PeSoccerWorld at #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en")[pesoccerworld.com]. The game ships as a standalone installer — no PES 2021 purchase or installation is required. Commentary v8 (English, Peter Drury & Jim Beglin) and 36 pre-installed stadiums are included in the base download.
+Download SP Football Life 2026 from caocacao.net at #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net]. The base game (v1.0) is an 11-part archive available via Mediafire and Sharemods mirrors. Extract all parts, then run `SPFL26_setup.exe` to install. The game ships as a standalone installer — no PES 2021 purchase or installation is required. 36 pre-installed stadiums are included in the base installation. English Commentary v8 (Peter Drury & Jim Beglin) is available as a separate download on the same page.
 
 #figure(
   table(
     columns: (auto, auto, 3fr),
     table.header([Component], [Version], [Installation]),
-    [SP Football Life 2026 (base)], [—], [Download from PeSoccerWorld. Extract the archive and run `SPFL26_setup.exe`. Choose a clean, unprotected directory — never install over another game.],
-    [Update 1.1], [v1.1], [After base installation, extract and run `SPFL26_110.exe`. Select your game folder when prompted. Includes database fixes, graphic corrections, stadium performance improvements, and referee appearance fixes.],
-    [v2.0 Major Update], [v2.0], [Download from #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-0-6018.html?lang=en")[PeSoccerWorld]. Major database update: 15 new promoted teams, winter transfers, refreshed player stats, and gameplay adjustments (slower, more tactical pacing, revised set-piece power). Extract and run the installer over your existing FL26 install. Compatible with all prior save games.],
-    [v2.20 Option File], [Jun 2026], [Download from #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-v2-20-option-file-25-06-2026-mundial-fifa-2026-6093.html?lang=en")[PeSoccerWorld]. World Cup 2026 rosters and confirmed summer transfers through June 25, 2026. Backup your `EDIT00000000` file first, then install over your existing FL26 installation and replace files when prompted. Compatible with FL26 v2.20.],
+    [SP Football Life 2026 (base)], [v1.0], [Download the 11-part archive from #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net] (Mediafire + Sharemods mirrors). Extract all parts, then run `SPFL26_setup.exe`. Choose a clean, unprotected directory — never install over another game.],
+    [Update v2.0], [v2.0], [Download from #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net] (Modsfire + Sharemods). Major database update: 15 new promoted teams, winter transfers, refreshed player stats, and gameplay adjustments (slower, more tactical pacing, revised set-piece power). Extract and run the installer over your existing FL26 install. Compatible with all prior save games.],
+    [Update v2.1], [v2.1], [Download from #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net]. Database and kit update. Apply after v2.0.],
+    [v2.20 Option File], [Jun 2026], [Download from #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net]. World Cup 2026 rosters and confirmed summer transfers through June 25, 2026. Backup your `EDIT00000000` file first, then install over your existing FL26 installation and replace files when prompted. Compatible with FL26 v2.20.],
   ),
   caption: [Base Game Components]
 )
@@ -90,12 +90,16 @@ This pack is the recommended visual baseline. It installs several community stan
   table(
     columns: (auto, 2fr, 2fr),
     table.header([Mod], [Details], [Install]),
-    [SmokePatch Facepack AIO], [Over 14,500 player faces. Includes the initial pack plus Updates 1 through 4. Downloaded from the SmokePatch Real Faces FL26/27 page at #link("https://www.pessmokepatch.com/2025/10/faces2627.html")[pessmokepatch.com].], [Extract the base facepack to `content\faces\`. Apply Updates 1–4 sequentially, overwriting when prompted. Add `cpk.root = ".\content\faces"` to your `sider.ini`. The facepack is large — allocate 20+ GB of free disk space for extraction and staging.],
+    [Mega Facepack V4 (Football4Life)], [#strong[Recommended.] 15,842 faces across 7 parts. Includes the original FL26 V3 facepack with errors corrected and optimizations. Available at #link("https://www.pesoccerworld.com/descargar/mega-facepack-2026-v4-para-football-life-26-con-15-842-rostros-by-football4life-6047.html?lang=en")[pesoccerworld.com].], [Download all 7 parts, extract from the first archive with WinRAR, and copy the extracted `download` folder contents to `SP Football Life 26\download\`. Allocate 40+ GB free space for extraction.],
+    [Mega Facepack V5 (Football4Life)], [Upgrade from V4 with 17,555 faces total. Search pesoccerworld.com for "Mega Facepack 2026 V5".], [Same method as V4: extract and copy to `SP Football Life 26\download\`. If you already have V4 installed, V5 replaces it — don't install both.],
+    [Facepack v2 (Football4Life)], [Alternative. 14,714 faces with enhanced arm/leg tattoos. 103 faces not found in other packs. Available at #link("https://pes-files.com/pes-2021-sp-football-life-facepack-2026-v2/")[pes-files.com].], [Download all parts, extract from the first archive, and copy the `download` folder contents to `SP Football Life 26\download\`.],
   ),
   caption: [Layer 4 — Faces]
 )
 
-The SmokePatch Facepack is the recommended face source for FL26: it is maintained by the same team that ships the base game, ensuring version compatibility. Community face packs may introduce conflicts with FL26 roster IDs — prefer this pack unless you have a specific reason to use an alternative.
+#strong[Recommendation:] Start with Mega Facepack V4 (15,842 faces) — it includes the V3 base with fixes and optimizations, giving the best coverage-to-stability ratio. Upgrade to V5 if you want the maximum face count (17,555). Facepack v2 from pes-files.com is a solid alternative with better tattoo coverage if you prefer that look. All three are by Football4Life and are built for FL26 compatibility.
+
+#strong[Note:] Unlike the old SmokePatch facepack, these packs install to the `download` folder rather than `content\faces`. No `cpk.root` entry in `sider.ini` is needed — the game reads faces directly from the `download` directory at startup.
 
 === Layer 5 — Stadiums
 
@@ -197,7 +201,7 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
 
 === Known Limitations
 
-#strong[No full lower-league pyramid.] #link("https://evoweb.uk/")[EvoWeb] and #link("https://www.pesoccerworld.com/descargar/smokepatch-football-life-2026-5911.html?lang=en")[PeSoccerWorld] have confirmed this is an engine-level restriction, not a modding gap. The English Championship is the lowest tier 2 league; the German 2. Bundesliga and Spanish LaLiga 2 are similarly the floor for their pyramids. Installing league database mods will not add lower divisions.
+#strong[No full lower-league pyramid.] #link("https://evoweb.uk/")[EvoWeb] and #link("https://caocacao.net/download-football-life-2026-fl-26/")[caocacao.net] have confirmed this is an engine-level restriction, not a modding gap. The English Championship is the lowest tier 2 league; the German 2. Bundesliga and Spanish LaLiga 2 are similarly the floor for their pyramids. Installing league database mods will not add lower divisions.
 
 #strong[UML v3 is paid.] Ultimate Master League is the only mod in this stack that requires payment. Every other mod is free. The base FL26 Master League provides a solid career experience without UML — the paid version adds depth (player development overhaul, stat tuning, exclusive facepacks) but is not required for an enjoyable career.
 
@@ -205,8 +209,8 @@ Holland's Gameplay Mod is the recommended starting point — it has the broadest
 
 === Save Compatibility Warning
 
-SmokePatch updates (for example, FL26 v2.2 → v2.3) are not save-compatible with Master League and Become a Legend careers. An update can introduce database changes — roster moves, stat adjustments, league structure modifications — that invalidate existing save files. The game will either crash on load or display corrupted career data.
+FL26 updates (for example, v2.2 → v2.3) are not save-compatible with Master League and Become a Legend careers. An update can introduce database changes — roster moves, stat adjustments, league structure modifications — that invalidate existing save files. The game will either crash on load or display corrupted career data.
 
-#strong[Before applying a SmokePatch update:] Back up your `Documents\KONAMI\` save directory and your current `FL 26.exe`. This lets you revert to the previous version and resume your career if the update breaks saves.
+#strong[Before applying an FL26 update:] Back up your `Documents\KONAMI\` save directory and your current `FL 26.exe`. This lets you revert to the previous version and resume your career if the update breaks saves.
 
-#strong[For career stability:] Lock your FL26 install at v2.2 for the duration of a long-term Master League or Become a Legend save. Do not apply mid-season patches, league database swaps, or SmokePatch updates while a career is active. If you want to experiment with newer versions, maintain a parallel install on a separate drive or rename your existing FL26 directory, install the new version fresh, and keep the v2.2 install untouched for your active career.
+#strong[For career stability:] Lock your FL26 install at v2.2 for the duration of a long-term Master League or Become a Legend save. Do not apply mid-season patches, league database swaps, or FL26 updates while a career is active. If you want to experiment with newer versions, maintain a parallel install on a separate drive or rename your existing FL26 directory, install the new version fresh, and keep the v2.2 install untouched for your active career.
