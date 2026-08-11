@@ -20,4 +20,4 @@
 [x] 17. Derail Valley
 [x] 18. My Summer Car
 [x] 19. Motorsport Manager
-[ ] 20. My Winter Car
+[x] 20. My Winter Car
