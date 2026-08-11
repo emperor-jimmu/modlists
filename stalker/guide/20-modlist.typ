@@ -19,7 +19,7 @@ _What "G.A.M.M.A Protocol" actually consists of: the GAMMA modpack for Anomaly 1
   [Mod count], [Roughly 400 curated mods],
   [Mod manager], [Mod Organizer 2 (bundled and pre-configured by the installer)],
   [Distribution], [GAMMA Launcher — official Discord / GitHub wiki only],
-  [Version line], [0.9.x — 0.9.3 (Dec 2024), 0.9.5 current mid-2026; check the Discord for the latest],
+  [Version line], [0.9.5 (May 2026) is current; 0.9.3 (Dec 2024) prior — check the Discord for anything newer],
   [Install size], [Roughly 80–120 GB after assembly],
   [Playing style], [Hardcore open-world survival sandbox with story missions],
 )
@@ -69,6 +69,14 @@ The Mod Configuration Menu lets you fine-tune everything further: task payouts, 
 == Warfare mode — an explicit caveat
 
 Anomaly's third game mode, *Warfare*, reworks the whole Zone into a living faction battlefield. Within GAMMA it is generally *not* recommended: it is not well integrated with the pack's survival progression and can undermine the intended experience. Story or Sandbox are the supported ways to play GAMMA.
+
+== Download sources
+
+Everything in this guide is downloaded from exactly two trusted hubs — never third-party repacks:
+
+- *Anomaly 1.5.3*: #link("https://www.moddb.com/mods/stalker-anomaly")[ModDB — moddb.com/mods/stalker-anomaly] (Files tab → 1.5.3 release).
+- *GAMMA (the modpack itself)*: #link("https://discord.com/invite/stalker-gamma")[official GAMMA Discord — discord.com/invite/stalker-gamma] (installer + current version) or the #link("https://github.com/Grokitach/Stalker_GAMMA")[official GitHub wiki — github.com/Grokitach/Stalker_GAMMA].
+- *Community addons*: see chapter 4 — each entry lists its own ModDB or Discord source.
 
 == Where the modlist lives
 

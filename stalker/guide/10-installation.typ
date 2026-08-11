@@ -54,7 +54,7 @@ Leave this install untouched from here on. GAMMA expects a *fresh, unmodified* A
 
 G.A.M.M.A. ("Grok's / Grokitach's Automated Modular Modpack for Anomaly") is a curated modpack of roughly *400 mods* that turns Anomaly into a hardcore survival sim. It is not shipped as a single mod file: a dedicated *GAMMA launcher* downloads and assembles the whole pack into its own Mod Organizer 2 (MO2) instance.
 
-GAMMA updates frequently — version numbers move fast (0.9.3 shipped December 2024; mid-2026 builds are in the 0.9.5 line). Always check the official channels for the current version before installing.
+GAMMA updates frequently — the current release is *0.9.5* (May 2026); 0.9.3 shipped December 2024. Always check the official channels for the current version before installing.
 
 === Prerequisites
 

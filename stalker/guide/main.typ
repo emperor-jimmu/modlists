@@ -52,7 +52,7 @@
   #v(0.2cm)
   #text(size: 11pt, fill: muted)[Modlist · Installation · Field Manual · Community Addons]
   #v(2.4cm)
-  #text(size: 9.5pt, fill: muted)[Compiled August 2026 — Anomaly 1.5.3 / GAMMA 0.9.x]
+  #text(size: 9.5pt, fill: muted)[Compiled August 2026 — Anomaly 1.5.3 / GAMMA 0.9.5]
 ]
 
 // ================= Table of contents =================
