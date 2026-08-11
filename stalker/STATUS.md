@@ -25,6 +25,14 @@ Living decision register for the STALKER Anomaly + GAMMA modlist guide.
 - **Readability**: line leading 0.55em → 0.78em, paragraph spacing 0.5em → 0.7em, side margins 2.2cm → 1.9cm, more heading spacing.
 - **Screenshots**: skipped by user decision (2026-08-11) — the guide remains text-based; if captures are ever provided, wire them as figures per AGENTS.md convention.
 
+## 2026-08-11 — Visible mod list & heading polish
+
+- **Modlist chapter now lists actual mods**: added "Notable mods inside the pack" — 26 verified entries in 3 tables (Core systems & survival / Items, weapons & animations / Visuals, audio & UI), each linked to its folder in the official pack repo (github.com/Grokitach/Stalker_GAMMA, default branch `main`, verified 2026-08-10). Sources: pack's `modpack_addons` directory via GitHub API (385 entries) + official README (MO2 right-click → visit moddb.com).
+- Confirmed headline pack mods: Weapon Parts Overhaul, ZCP, MCM, GAMMA Economy, Cooking Overhaul, Dynamic Anomalies Overhaul, FDDA, Gunslinger Guns, BaS (integrated), Anomaly Magazines Redux, Hippos Atmospherics, Enhanced Shaders, Oleh's sounds, Dark Signal Mutants Audio (component only), PDA Taskboard, SortingPlus, Minimalist HUD, Hunger Thirst Sleep UI.
+- Note: the official full-list endpoint stalker-gamma.com/api/list currently 404s (site partially down); guide points to MO2 + GitHub repo instead.
+- **Heading polish**: removed duplicate manual numbers from how-to-play headings (was "3.5 5. …"); increased space beneath headings (level 1: 0.75em → 1.05em, level 2/3: 0.5em → 0.75em).
+- PDF now 25 pages.
+
 ## Open questions / drift risks
 
 - GAMMA version numbers and addon compatibility shift with each release; chapters point readers to the Discord as the source of truth.
