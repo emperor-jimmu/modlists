@@ -138,8 +138,10 @@ Broad AIO base + targeted city and farmhouse overrides.
 
 - **Vanilla PBR AIO** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/174091), 11.5 GB) — Primary base. Covers all architecture, clutter, actors, dungeons with vanilla-faithful art direction.
 - **Tomato's Whiterun Remake - PBR or Complex Material** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/173747)) — Optional Whiterun override; replaces the deprecated Tomato's PBR Whiterun (135771). FOMOD installer — choose the PBR branch, 2K recommended, skip 4K. Requires CS core + PGPatcher (both already in the stack).
+- **Tomato's Solitude Remastered - PBR-CPM** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/181707)) — Solitude PBR override. Complements the VPBR base with hand-authored Solitude textures by Tomatokillz (same author as TomatoRim PBR Landscapes, PBR Farmhouses 2.0, Whiterun Remake — all locked baselines). FOMOD installer — choose the PBR branch, 2K recommended. Compatible with Grand Solitude (baseline) and Window Shadows Ultimate (baseline). Requires CS core + PGPatcher. Install after VPBR, before running PGPatcher.
 - **Tomato's PBR Farmhouses 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135774)) — Optional farmhouse override. Install Grey 2K (84 MB), skip 4K. Optional: `WSU PBR Farmhouse windows patch` if Window Shadows Ultimate is in the stack.
 - **Faultier's PBR Armors and Clothes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175319), 2.9 GB) — Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher. Install under this separator before the clothing/armor texture upgrades in → [Characters & Creatures](modlist-graphics-characters.md).
+- **Skyking Nordic Ruins Complex Parallax** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/183021)) — Nordic ruins dungeon texture override. By Skyking2020 (Skyland AIO author). Complete Nordic ruins retexture with Complex Parallax textures, new custom meshes (individual-plank wooden stairs/platforms), and ivy/root coverage. Requires CS + PGPatcher. **Choose 2K.** Install after VPBR, before running PGPatcher. Supersedes the Numinous Nord Ruins tentative (146766, rejected — ENB-oriented, author forbids CS PBR porting).
 
 > **Terrain & rock PBR** is owned by → [Terrain & Flora](modlist-graphics-terrain.md): Faultier's PBR Landscapes 4k (125308) fills VPBR's terrain gap; Enhanced Rocks and Mountains (121336) is the locked mountain/rock baseline. Do NOT install `Faultier's Skyrim AIO` alongside VPBR — same texture paths.
 
@@ -179,7 +181,7 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 ### Working Rollout Order
 
 1. Install **Vanilla PBR AIO** — broad PBR base for architecture, clutter, actors, dungeons.
-2. Optionally install **Tomato's Whiterun Remake** and **Tomato's PBR Farmhouses 2.0** after VPBR.
+2. Optionally install **Tomato's Whiterun Remake**, **Tomato's Solitude Remastered**, and **Tomato's PBR Farmhouses 2.0** after VPBR.
 3. Install **Faultier's PBR Armors and Clothes** — PBR gear coverage (→ [Characters & Creatures](modlist-graphics-characters.md) for related body/skin texture install order).
 4. Install landscape and rock PBR overrides per → [Terrain & Flora](modlist-graphics-terrain.md) (Faultier's PBR Landscapes, ERM).
 5. Run **PGPatcher** last — all PBR texture mods above require it (→ [PGPatcher Workflow](modlist-graphics-pgpatcher.md)).

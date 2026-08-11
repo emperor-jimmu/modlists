@@ -48,6 +48,7 @@ Authored settlement content — real places, not just denser vibes.
 | [The City of Crossed Daggers - Riften Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/168629) | Riften market and canal expansion with new shops, NPCs, and quests. |
 | [Grand Solitude - The Walls of High King Erling](https://www.nexusmods.com/skyrimspecialedition/mods/157506) | Solitude wall and exterior expansion adding new areas and detail. |
 | [Bards College Rework](https://www.nexusmods.com/skyrimspecialedition/mods/182641) | Solitude Bard College architecture/interior overhaul (mesh-only, no gameplay changes). Verify mesh stack vs Grand Solitude / Riton Solitude (choose one) + CS/PBR mesh compat. |
+- [Solitude - Square of Akatosh](https://www.nexusmods.com/skyrimspecialedition/mods/175460) | Akatosh statue in Castle Dour square (pedestal or draconic fountain variant), relocated seating area near Thalmor HQ. ESP-FE, seasonal model support. Compatible with Grand Solitude (baseline). 206 endorsements, v2.5 (Jul 2026). Fits "Living the world" and Imperial-authority theme. **Choose fountain variant for visual impact.** Verify seasonal-swap uses Turn of the Seasons (baseline) path rather than Seasonal Landscapes (rejected). |
 
 ### Locked Faction-HQ Additions
 
@@ -250,6 +251,7 @@ Smaller discoverable places between headline destinations.
 | [Interesting Locations](https://www.nexusmods.com/skyrimspecialedition/mods/153298) | Environmental-storytelling additions to existing vanilla locations (hunting/fishing/lore details). No new quests or scripts; mostly added static/NPC-facing clutter. Verify per-cell against adopted city/tavern overhauls. |
 | [Regional Food Barrels - BOS](https://www.nexusmods.com/skyrimspecialedition/mods/141954) | BOS swaps food-barrel contents by region for variety. No leveled-list or quest edits. Safe mid-save. |
 | [Classic Paintings Compilation for Skyrim interiors](https://www.nexusmods.com/skyrimspecialedition/mods/63325) | Broad distribution of classic public-domain paintings across interior locations and DLC cells. No new scripts/quests. Verify against adopted clutter/art replacers per-cell. |
+| [Orc Sentries](https://www.nexusmods.com/skyrimspecialedition/mods/174478) | Adds female Orc sentries (guards, patrols, wall sentinels) to all Orc strongholds. ESP-FE, no vanilla edits beyond NPC placements + idle markers. SkyPatcher-based armor/hair variations available. 77 endorsements, v1.0.2 (Apr 2026). Tentative — verify sentry placement doesn't break stronghold stealth approaches; SkyPatcher CC weapon integration requires confirming CC pack availability. Fits "Living the world" pillar (strongholds feel underpopulated in vanilla). Patch available for Orc Strongholds - All In One (150246) if adopted later. |
 
 ### Alternatives
 

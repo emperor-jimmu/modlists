@@ -134,6 +134,10 @@ Distributes different BodySlide presets across NPCs so the world doesn't look li
 | [Resurgence Armory - Artifact Weapons and Armor Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/83855) | Visual overhaul for artifact weapons and armor models. |
 | [3BA and HIMBO Refits for Resurgence Armors](https://www.nexusmods.com/skyrimspecialedition/mods/85669) | Body refit for Resurgence Armory armors. |
 | [HDT-SMP Vanilla Armors](https://www.nexusmods.com/skyrimspecialedition/mods/142450) | Adds HDT-SMP physics to all vanilla armors. |
+| [HDT-SMP College Mage Robes](https://www.nexusmods.com/skyrimspecialedition/mods/183045) | Adds FSMP cloth physics to vanilla College mage robes (Apprentice, Journeyman, Archmage, CC Vagrant). Compatible with CBBE, 3BA, HIMBO. Requires FSMP (baseline). 567 endorsements, v1.01 (Jun 2026). Complemented by Clutter-free HIMBO College Robes (133675) for BodySlide zap projects. |
+| [Mage Clothing Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/128173) | 25 new lore-friendly mage robes (9 male / 9 female + darker variants + hood), crafted from vanilla assets. Craftable at tanning rack (3 leather). SPID distribution to College NPCs available. Prebuilt HIMBO + CBBE Curvy meshes. ESL-flagged. 7,093 endorsements, v2.0.1 (Sep 2024). |
+| [Mage Clothing Expansion - 3BA Uniboob](https://www.nexusmods.com/skyrimspecialedition/mods/128838) | CBBE 3BA conversion for MCE. Required for body-stack consistency with the SlimFantasy 3BA preset. Chain-adopted companion. |
+| [Clutter-free HIMBO College Robes and MCE](https://www.nexusmods.com/skyrimspecialedition/mods/133675) | BodySlide zap projects for HIMBO college robes + HDT-SMP CMR + MCE (satchel/pouch removal, sleeve/pants cuffs, collar zap, fur trim zap). Also fixes vertex scrunching on HIMBO's stock Archmage robes. FOMOD. Requires HDT-SMP College Mage Robes (183045) + MCE (128173). 68 endorsements, v1.2.4 (Jun 2026).
 
 ---
 

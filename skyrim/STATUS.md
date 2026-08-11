@@ -55,7 +55,7 @@
 - **#13 Blubbos Shrub Replacer (95606)** — Evaluate vs Mari's flora baseline. Visual overlap with existing flora stack — test for coherence.
 - **#13b PBR textures for Blubbo mods (136086)** — Only adoptable if Blubbo ecosystem (Aspen Replacer, Pinetree Replacer, Markarth 2022, Riverwood 2023, Whiterun 2022) is adopted. Those compete with locked NotWL (trees) and TomatoRim (Whiterun). **Skip unless Blubbo becomes baseline.**
 - **#14 CD's True Forest of Riverwood (55801)** — Last updated Nov 2021. Evaluate vs JK's Whiterun Outskirts + Fleiwas Riverwood Addition + Riverwood Edge + Spaghetti's Riverwood. Multiple Riverwood-area mods in the pipeline.
-- **#15 Numinous Nord Ruins (146766)** — Complex Parallax Nordic dungeon retexture. Requires Parallax Gen (120946). Evaluate CS Complex Material compatibility. **Choose 4K** if adopted.
+- **#15 Numinous Nord Ruins (146766)** — REJECTED (2026-08-11). Superseded by Skyking Nordic Ruins Complex Parallax (183021, adopted below). Numinous is ENB-oriented (Complex Parallax, enbseries.ini instructions), includes Lux split meshes (Lux family rejected), and the author explicitly forbids CS PBR porting: "I will not give permission for any automated process or patcher, or permission to port to CS PBR." Incompatible with the PBR-native graphics pipeline. Skyking (Skyland AIO author) offers CS + PGPatcher native support, custom individual-plank stair/platform meshes, ivy/root coverage, and active development.
 - **#2 Classic HD Remastered Farmhouses (87978)** — Complex Parallax farmhouse retexture. Northern Vanilla Farmhouses (adopted) changes farmhouse MESHES (COTN roof assets); this changes TEXTURES. Must verify CS Complex Material compatibility and that textures map correctly onto NVF's COTN-roof meshes before adopting. **Choose 4K if adopted.**
 
 ### Rejected
@@ -439,3 +439,25 @@ All 13 lines cleared from `TODO.md`. (3 already-in-modlist — incl. the Norther
 
 - **Save-load crash on the foundations test-skeleton (15 plugins, MO2)** — **RESOLVED (2026-08-08).** Root cause: the repo's own **`iAutoSaveCount=0`** instruction in the BethINI baseline (→ `modlist-performance-optimization.md`, mirrored in the SSSO3 install section of `modlist-foundations.md`). `EXCEPTION_INT_DIVIDE_BY_ZERO` at `SkyrimSE.exe+0x616FBB` (`div` on a zeroed engine `Save`-path global, RVA `0x2012140`): the engine divides by the autosave slot count while loading, so `0` crashes the instant a save loads from the main menu. **User-verified: reverting to `iAutoSaveCount=3` (default) fixes the same save with no other change.**
 - **Action:** both guide baseline files now prescribe `iAutoSaveCount=3` and disable autosave *triggers* via BethINI ticks + SSSO3 only; PDF rebuilt. Verdict: **no mod involved** — the failing save itself is fine. Archive: `reports/skyrim-crash-triage-2026-08-08-save-load-div0.md`.
+## Mods for review — VERDICTS (2026-08-11, 10-mod batch)
+
+Reviewed 10 submitted mods against Elder Wilds pillars (CS-compatibility, third-person/gamepad parity, redundancy, conflicts, overpower). See full discussion above for Tomato's Solitude vs VPBR and Skyking vs Numinous comparisons.
+
+### Adopted
+
+- **Tomato's Solitude Remastered - PBR-CPM (181707)** — Adopted as city-specific PBR override. Tomatokillz (same author as 3 locked baselines: TomatoRim PBR Landscapes, PBR Farmhouses 2.0, Whiterun Remake). PBR-native, CS + PGPatcher. Compatible with Grand Solitude + WSU (both baseline). FOMOD → PBR branch, 2K. `modlist-graphics-textures.md` → PBR Baseline (alongside Whiterun Remake).
+- **Solitude - Square of Akatosh (175460)** — Adopted. Akatosh statue in Castle Dour square (pedestal or fountain variant) + relocated seating. ESP-FE. Compatible with Grand Solitude (baseline). 206 endorsements, v2.5 (Jul 2026). Fits "Living the world" / Imperial-authority theme. **Choose fountain variant.** Verify seasonal-swap uses Turn of the Seasons (baseline) path. `modlist-world-content.md` → Cities baseline.
+- **HDT-SMP College Mage Robes (183045)** — Adopted. FSMP cloth physics for vanilla College mage robes (Apprentice, Journeyman, Archmage, CC Vagrant). Compatible with CBBE, 3BA, HIMBO. Requires FSMP (baseline). 567 endorsements, v1.01 (Jun 2026). Fills uncovered niche (no mage-robe physics in list). `modlist-graphics-characters.md` → Clothing And Armor Texture Upgrades.
+- **Mage Clothing Expansion (128173)** — Adopted. 25 new lore-friendly mage robes (9m/9f, darker variants + hood). Craftable at tanning rack (3 leather). SPID distribution to College NPCs. Prebuilt HIMBO + CBBE Curvy meshes. ESL-flagged. 7,093 endorsements, v2.0.1 (Sep 2024). `modlist-graphics-characters.md` → Clothing And Armor Texture Upgrades.
+- **Mage Clothing Expansion - 3BA Uniboob (128838)** — Chain-adopted. CBBE 3BA conversion for MCE. Required for body-stack consistency (SlimFantasy 3BA preset). `modlist-graphics-characters.md` → Clothing And Armor Texture Upgrades.
+- **Clutter-free HIMBO College Robes and MCE (133675)** — Chain-adopted. BodySlide zap projects for HIMBO college robes + HDT-SMP CMR + MCE (satchel/pouch, sleeve/pants cuffs, collar, fur trim). Fixes vertex scrunching on HIMBO's stock Archmage robes. FOMOD. 68 endorsements, v1.2.4 (Jun 2026). Requires 183045 + 128173. `modlist-graphics-characters.md` → Clothing And Armor Texture Upgrades.
+- **Skyking Nordic Ruins Complex Parallax (183021)** — Adopted. By Skyking2020 (Skyland AIO author). Complete Nordic ruins retexture with CP textures + custom stair/platform meshes + ivy/root coverage. CS + PGPatcher native. 210 endorsements, v1 (Jun 2026). Supersedes Numinous Nord Ruins tentative (146766, now rejected — ENB-oriented, author forbids CS PBR porting). **Choose 2K.** `modlist-graphics-textures.md` → PBR Baseline (dungeon override).
+
+### Tentative — evaluate before committing
+
+- **Orc Sentries (174478)** — Tentative (adoptable minor). Female Orc sentries (guards, patrols, wall sentinels) at all Orc strongholds. ESP-FE, no vanilla edits. 77 endorsements, v1.0.2 (Apr 2026). Verify: sentry placement vs stronghold stealth approaches, CC pack availability for SkyPatcher weapon integration. `modlist-world-content.md` → Points of Interest baseline.
+
+### Rejected
+
+- **JK's Riften Outskirts - NPCs unofficial addon (183147)** — REJECTED. Shaky permissions (author couldn't reach jkrojmal), 22 endorsements, marginal value (2 hunters, 1 fisherman, generic refugee camp). JK's Riften Outskirts + Crossed Daggers already populate the Riften exterior.
+- **Better Life For Traitors Post Bandits (183848)** — NOT ADOPTED (marginal). Single-location bandit camp polish (21 endorsements), Traitor's Post is a minor location visited once. Patches for mods not in baseline (IHB, Khajiit Will Follow). Revisit only if a broader bandit-camp series emerges.
