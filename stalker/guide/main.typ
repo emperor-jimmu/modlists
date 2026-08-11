@@ -8,7 +8,7 @@
 
 #set page(
   paper: "a4",
-  margin: (top: 2.3cm, bottom: 2.1cm, left: 2.2cm, right: 2.2cm),
+  margin: (top: 2.2cm, bottom: 2.1cm, left: 1.9cm, right: 1.9cm),
   background: box(width: 100%, height: 100%, fill: bg),
   footer: context [
     #set text(size: 8.5pt, fill: muted)
@@ -19,14 +19,14 @@
 )
 
 #set text(font: ("Georgia", "Segoe UI"), size: 10.5pt, fill: ink)
-#set par(justify: true, leading: 0.55em, spacing: 0.5em)
+#set par(justify: true, leading: 0.78em, spacing: 0.7em)
 #set heading(numbering: "1.1")
 #show link: set text(fill: toxic)
 
 #show heading: it => block(
   width: 100%,
-  above: if it.level == 1 { 1.2em } else { 0.9em },
-  below: if it.level == 1 { 0.6em } else { 0.4em },
+  above: if it.level == 1 { 1.5em } else { 1.15em },
+  below: if it.level == 1 { 0.75em } else { 0.5em },
   fill: if it.level == 1 { banner } else { none },
   inset: if it.level == 1 { (x: 12pt, y: 7pt) } else { 0pt },
   radius: if it.level == 1 { 5pt } else { 0pt },

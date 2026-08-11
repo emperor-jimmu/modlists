@@ -43,3 +43,4 @@ stalker/
 - Styling and helpers live in `guide/theme.typ`; content files use only headings, paragraphs, lists, tables, and the shared helpers (`#tip`, `#info`, `#warn`, `#addon`, `#key`).
 - Dark "Zone" palette (olive-black background, bone text, zone-gold/toxic-green accents) matches the cover emblem.
 - Keep install steps accurate to the real launcher flow: Anomaly first (ModDB → extract → launcher), then GAMMA (installer/launcher from Discord → MO2). Do not invent menu names.
+- **Screenshots**: only real, user-provided captures (typically `assets/screenshots/*.png`) may be wired into the guide as figures — never fabricate or hotlink game imagery. Wire them as `#figure(image("..."), caption: ...)` in the relevant chapter.

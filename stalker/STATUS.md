@@ -18,6 +18,13 @@ Living decision register for the STALKER Anomaly + GAMMA modlist guide.
   - Kept with verifiable sources: **Audio Expansion** (ModDB), **Kmack's weapon projects** (Discord #mods-postings, redundancy check), **CCon Grass n Trees** (ModDB), **Glossy Puddles** (Discord), **ZeN presets** (Discord), **GAMMA Reshade Database** (Discord).
 - Every addon card now carries a download link (ModDB page or official Discord); modlist chapter gained a "Download sources" section.
 
+## 2026-08-11 — Depth, addons & readability pass
+
+- **Deeper how-to-play**: expanded to 21 sections — "a day in the Zone" routine, first-90-minutes Loner walkthrough, health status table (bleeding/fracture/radiation/chem/psy/hunger/fatigue), anomaly encyclopedia table, artifact-hunt workflow, mutant tactics table, caliber guide + ammo types, armor class table, stashes/safehouses, A-Life & faction dynamics, "how to die less" checklist.
+- **More addons (verified online)**: added RETUNE Ambience Sounds (ModDB slug confirmed), DynaHUD, Scopes as Binoculars, Nicer Flashlights and Headlamps; new Performance section (shadow map / SSDO / grass shadows / water reflections tuning + 1k texture packs). Excluded with reasons: AO Engine/ALAO/modded EXEs (replace exe, conflict with GAMMA's own engine build), Quick Action Wheel (already in GAMMA).
+- **Readability**: line leading 0.55em → 0.78em, paragraph spacing 0.5em → 0.7em, side margins 2.2cm → 1.9cm, more heading spacing.
+- **Screenshots**: pending — need user-provided in-game captures (no fabrication possible/appropriate).
+
 ## Open questions / drift risks
 
 - GAMMA version numbers and addon compatibility shift with each release; chapters point readers to the Discord as the source of truth.

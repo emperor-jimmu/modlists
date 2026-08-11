@@ -52,6 +52,15 @@ This guide applies strict moderation to addons, the same way the pack itself is 
   risk: "Low–moderate; audio-only, but check the Discord for the version tested against current GAMMA.",
 )
 
+#addon(
+  name: "RETUNE Ambience Sounds",
+  tag: "AUDIO",
+  what: "Refines the background environmental audio — more natural wind, weather and distance layers. Frequently paired with Audio Expansion.",
+  source: [#link("https://www.moddb.com/mods/stalker-anomaly/addons/retune-ambience-sounds")[ModDB — moddb.com/mods/stalker-anomaly/addons/retune-ambience-sounds]],
+  install: "Standard MO2 install. Some users find wind volume strong — tune audio settings or the mod's config if so.",
+  risk: "Low; audio-only. Check the Discord for the version tested against current GAMMA.",
+)
+
 #info[
   Weapon-sound addons are deliberately absent from this list. GAMMA ships a heavily tuned soundscape (including Oleh's Miscellaneous Sound Improvements), and the classic weapon-audio packs — JSRS and Dark Signal among them — are either discontinued or known to clash with it, producing silent weapons or crashes. Per the moderation policy they are excluded, not recommended.
 ]
@@ -69,6 +78,30 @@ This guide applies strict moderation to addons, the same way the pack itself is 
 
 #info[
   *BoomSticks and SharpSticks (BaS)* — the classic premium weapon pack — is not listed: GAMMA already integrates or supports it, so installing it separately is redundant and risks duplicating weapon assets. Check MO2 before adding any weapon mod.
+]
+
+== UI & quality of life
+
+#addon(
+  name: "DynaHUD",
+  tag: "UI",
+  what: "A HUD manager that shows elements (health, stamina, radiation) only when they matter — cleaner screen, more immersion.",
+  source: [#link("https://www.moddb.com/mods/stalker-anomaly/addons")[ModDB — Anomaly addons (search "DynaHUD")]],
+  install: "Standard MO2 install. GAMMA has community compatibility patches for DynaHUD — use the one linked in the Discord rather than the bare version.",
+  risk: "Moderate without the patch; low with it. GAMMA ships its own HUD tweaks, so verify the patch exists for your version first.",
+)
+
+#addon(
+  name: "Scopes as Binoculars",
+  tag: "UI / QoL",
+  what: "Lets you use an equipped weapon scope as binoculars — saves inventory space and makes scouting feel natural.",
+  source: [#link("https://www.moddb.com/mods/stalker-anomaly/addons")[ModDB — Anomaly addons (search "Scopes as Binoculars")]],
+  install: "Standard MO2 install.",
+  risk: "Low; behaviour-only, no balance changes.",
+)
+
+#info[
+  *Quick Action Wheel* is not listed: it is already included in GAMMA by default (right-click an item in your inventory to add it to the wheel; manage it in MCM). Downloading it again would be redundant.
 ]
 
 == Graphics & environment
@@ -91,11 +124,33 @@ This guide applies strict moderation to addons, the same way the pack itself is 
   risk: "Low; expect a small FPS dip (roughly 5–10) during heavy rain on mid-range GPUs.",
 )
 
+#addon(
+  name: "Nicer Flashlights and Headlamps",
+  tag: "VISUALS",
+  what: "Better flashlight and headlamp visuals — realistic beam shape and intensity for night play.",
+  source: [#link("https://www.moddb.com/mods/stalker-anomaly/addons")[ModDB — Anomaly addons (search "Nicer Flashlights and Headlamps")]],
+  install: "Standard MO2 install.",
+  risk: "Low; cosmetic lighting only.",
+)
+
 #info[
   Full texture overhauls such as *Rotten Life 3.0* are excluded by policy: the author frequently pulls the ModDB pages (no stable download source) and comprehensive texture packs overlap and conflict with GAMMA's own texture work. The visual addons above are additive rather than replacement-heavy for the same reason.
 ]
 
-== ReShade presets
+== Performance
+
+Before installing anything, tune what is already there — the biggest frame-rate wins in GAMMA are settings, not mods:
+
+- Lower the *shadow map resolution* (e.g. 1536) — one of the most effective FPS gains with minimal visual impact.
+- Use *SSDO on medium* instead of HBAO/HDAO.
+- Disable *grass shadows* — a significant performance killer.
+- Disable *water reflections* if you need more headroom.
+- Pick the *+FPS variants* of any ReShade preset, and use the launcher's Reshade toggle to test with it off.
+- Search "performance textures" on the Anomaly ModDB addons page for *1k / VRAM-light texture packs* if you are GPU-limited.
+
+#warn[
+  Engine-level patches — *AO Engine*, *ALAO* or custom "modded EXEs" — are excluded by policy: they replace the game executables, and GAMMA already ships its own engine optimizations. Overwriting them conflicts with the pack's build and can be reverted by the launcher's integrity check. If you want more performance, tune the settings above first.
+]
 
 GAMMA's rendering base (Hippos Atmospherics + Screen Space Shaders) is already strong; ReShade presets add a final cinematic grade without touching game files.
 
