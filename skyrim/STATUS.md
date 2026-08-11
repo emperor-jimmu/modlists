@@ -466,51 +466,28 @@ Reviewed 10 submitted mods against Elder Wilds pillars (CS-compatibility, third-
 
 Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, third-person/gamepad parity, 1.6.1170, LotD anchor, modern mechanics, grim-dark aesthetic). Consolidated across 6 parallel scout subagents plus direct page reads.
 
-### Already adopted / pre-adjudicated (remove from TODO)
+### Already in modlist (remove from TODO — no new entries needed)
 
 - **Shrubs of Snow (63463)** — Already adopted as Seasons of Skyrim companion (STATUS.md 2026-08-07).
 - **Seasonal Landscapes (66903)** — Already rejected (STATUS.md 2026-08-07). Stays rejected.
-- **JK's Tel Mithryn (151512)** — Already adopted in `modlist-world-content.md` → Cities baseline. 2,358 endorsements, v1.0.2 (Jul 2025). Patch Collection 154109 by Czasior. Remove from TODO.
+- **JK's Tel Mithryn (151512)** — Already adopted in `modlist-world-content.md` → Cities. 2,358 endo, v1.0.2. Remove from TODO.
+- **Dova Jump (125550)** — Already in `modlist-animations.md`. 2,572 endo, v0.9.1.3 (Jul 2026).
+- **Next Gen Dragon VFX (168405)** — Already in `modlist-creatures.md`. 885 endo, v2.0 (Jul 2026).
+- **Spider SE (182638)** — Already in `modlist-creatures.md` (Xtudo baselines). 880 endo, v3 (Jun 2026).
+- **Dynamic Things Alternative (60741)** — Already in `modlist-graphics-textures.md`. 8,723 endo, v0.4.1 (Apr 2026).
+- **Better Third Person Selection - BTPS (64339)** — Already in `modlist-third-person.md`. 27,200 endo, v0.8.9 (Jun 2025).
+- **Atlas Map Markers SE (24104)** — Already in `modlist-ui.md`. 20,559 endo, v3.0.4 (Mar 2025).
+- **CoMAP (56123)** — Already in `modlist-ui.md`. 11,355 endo, v4.4.0 (May 2026).
+- **Sentinel - An Equipment Overhaul (100985)** — Already in `modlist-weapons-armor.md`. 5,637 endo, v3.1.0 (Mar 2025).
+- **RSE - Shoulder Or Saddle (170232)** — Already in `modlist-world-feel.md`. 988 endo, v1.4 (May 2026).
+- **Dynamic Bloodpool Framework (172080)** — Already in `modlist-graphics-textures.md`. 2,761 endo, v1.1.0 (Jul 2026).
+- **Lund's Hamlet (169830)** — Already in `modlist-world-content.md`. 472 endo, v1.4.1 (Jun 2026).
+- **Blackreach Paper Map for FWMF (53878)** — Already in `modlist-ui.md` (Alternative). Promoted to baseline per FWMF confirmation.
+- **Beyond Reach Paper Map for FWMF (119215)** — Already in `modlist-ui.md` (Alternative). Promoted to baseline per FWMF confirmation.
 
-### Adopted (entry added to owning section file)
+### Adopted (needs new entry in owning section file)
 
-- **Dova Jump (125550)** — ADOPTED. Ignandr9, 2,572 endorsements, v0.9.1.3 (Jul 2026). Comprehensive jump mechanic overhaul (charge-jump, wall-jump, NPC-push, coyote-time, diving) with OAR-native animations, TDM integration. Requires Better Jumping SE, Simple Diving System, TDM (all baseline-compatible). Active maintenance, flexible MCM. Fits "modern mechanics" pillar. `modlist-animations.md` → Movement & Traversal. **Single main file.**
 - **Cliff Racers Fly So High (107758)** — ADOPTED. Mihail, 1,060 endorsements, v1 (Dec 2023). Ambient passive Cliff Racers in Solstheim skies + ingredient/food. Not enemies — ambient critters. Zero known incompatibilities. Fits "living the world" pillar. `modlist-creatures.md` → Ambient Wildlife. **Single main file.**
-- **Next Gen Dragon VFX (168405)** — ADOPTED. Lucaoys, 885 endorsements, v2.0 (Jul 2026). Complete dragon VFX overhaul: real particle streams, new impact sets, shader edits, attached lights. CS-native (no ENB). ESL-flagged. Dragon War patch available as optional. Side-effects improve fire/frost/smoke VFX game-wide. Fits "modern UI/graphics" pillar. `modlist-graphics-effects.md` → Visual Effects. **Main file v2.0; Dragon War/Durnehviir/Better Drain Vitality patches only if those mods adopted.**
-- **Dongo Giants (121733)** — ADOPTED. qIp, 400 endorsements, v1.27 (Mar 2026). GoT-inspired giant replacer replacing all 3 vanilla giant models. FSMP beard physics (FSMP + XPMSSE baseline). Fits grim-dark "big dark world" aesthetic. `modlist-creatures.md` → Creature Model Replacers. **Physics version main file. Choose armored or shirtless variant.**
-- **Swans (154726)** — ADOPTED. Mihail, 799 endorsements, v1 (Jul 2025). White and black swans as ambient water creatures. Killable/lootable for Swan Feathers. Zero known incompatibilities. Fits "living the world." `modlist-creatures.md` → Ambient Wildlife. **Single main file.**
-- **Dynamic Bloodpool Framework (172080)** — ADOPTED. Seb263, 2,761 endorsements, v1.1.0 (Jul 2026). Mesh-based, script-free bloodpool system with PBR integration (CS-native). Framework only — needs consumer mod (Sanguine Symphony 148388). Fits "modern graphics / big dark world." `modlist-graphics-effects.md` → Blood & Gore. **Single main file.**
-- **Frost Atronach SE (171447)** — ADOPTED. 4thUnknown, 965 endorsements, v1 (Feb 2026). Pure mesh/texture replacer — no ESP. Part of 4thUnknown's atronach trilogy. `modlist-creatures.md` → Creature Model Replacers. **Single main file (FrostAtronachSE).**
-- **Spider SE (182638)** — ADOPTED. 4thUnknown, 880 endorsements, v3 (Jun 2026). Pure mesh/texture replacer for all spiders — no ESP. `modlist-creatures.md` → Creature Model Replacers. **Medium preset (31.1MB, optimal choice per author).**
-- **Storm Atronach SE (160837)** — ADOPTED. 4thUnknown, 1,156 endorsements, v1 (Oct 2025). Pure mesh/texture replacer — no ESP. Part of atronach trilogy. `modlist-creatures.md` → Creature Model Replacers. **Main replacer file; skip standalone Stone Wave creature.**
-- **Flame Atronach SE (82382)** — ADOPTED. 4thUnknown, 8,439 endorsements, v1 (Jan 2023). Flagship creature replacer, most-endorsed in batch. No ESP. Part of atronach trilogy. `modlist-creatures.md` → Creature Model Replacers. **Single main file.**
-- **RSE - Shoulder Or Saddle (170232)** — ADOPTED. Hunk92/slevin92, 988 endorsements, v1.4 (May 2026). SKSE DLL: fireman's-carry NPCs, load onto horse, share mount with followers, kidnap (with guard alert). RDR2-inspired. Requires OAR, Pandora, SkyUI, Address Library (all baseline). ESL-flagged. Fits "living the world / new content." 28 open bugs — monitor but core functionality solid. `modlist-world-content.md` → Travel & Mounts. **Single main file v1.4.**
-- **Dynamic Things Alternative (60741)** — ADOPTED. wSkeever, 8,723 endorsements, v0.4.1 (Apr 2026). BOS-based: harvest from skulls/hay/wood, lootable barrels/crates/spider sacs, training dummies/archery targets, windmills as grain mills. Changes ZERO vanilla records. Requires BOS + PO3 Extender (both baseline). Exceptional fit for "Living the World" with zero compatibility cost. `modlist-world-feel.md` → World Interaction. **Single main file.**
-- **More to Say (22622)** — ADOPTED. abramcf, 10,383 endorsements, v9.0.2 (Feb 2023). Adds inconsequential NPC dialogue using ONLY spliced vanilla voice lines (no AI). Covers 9 major settlements + College + Companions. Dialogue-only — no cell/worldspace/navmesh edits. ESL-flagged. Fits "living the world / new content." `modlist-npcs.md` → NPC Dialogue Expansions. **Main merged file v9.0.2.**
-- **Better Third Person Selection - BTPS (64339)** — ADOPTED (ESSENTIAL). Shrimperator, 27,200 endorsements, v0.8.9 (Jun 2025). SKSE DLL: true 3rd-person object selection with direction-based auto-targeting, 3D selection widget, object cycling, filter presets. CommonLibNG (single DLL for all versions). Massive ecosystem (60+ dependent mods). Foundational for "full third-person gamepad parity" pillar. `modlist-foundations.md` → Third-Person Framework. **Single main file.**
-- **Oblivion Interaction Icons (52743)** — ADOPTED. rbtRvlt, 6,201 endorsements, v3-Beta (Jun 2026). Replaces text activation prompts with Oblivion-style icons. DSD-based distribution. Patches for LotD, Bruma, Wyrmstooth, Vigilant, Glenmoril, Unslaad, Darkend, and 30+ other mods. Fits "Modern UI" pillar. Gamepad-friendly. `modlist-ui.md` → Interaction Icons. **FOMOD installer (choose theme matching Oathvein UI).**
-- **BTPS Filter for Why I Came to Skyrim (168549)** — ADOPTED (chain). awwcrap, 12 endorsements, v1 (Jan 2026). BTPS filter hiding Book of Origins prompt after quest completion. Requires BTPS + KID (baseline) + Why I Came to Skyrim (adopted). Zero risk, purely cosmetic QoL. `modlist-ui.md` → BTPS Filters. **Single file.**
-- **Block Crafting And Furniture Use in Dungeons - BTPS Plugin (129657)** — ADOPTED. kundrun, 49 endorsements, v1.0.0 (Sep 2024). BTPS filter preventing accidental furniture/crafting activation in dangerous locations. Left Shoulder (gamepad) override. Directly addresses gamepad anti-frustration. `modlist-ui.md` → BTPS Filters. **Single file.**
-- **Heljarchen Creek (171605)** — ADOPTED. sevnce, 157 endorsements, v1.0.5 (Jun 2026). Full village overhaul at Nightgate Inn reviving cut content. Has LotD + Candlehearth + JK's patches — all locked baselines covered. SFCO3 addon patch exists. Requires PGPatcher re-run. `modlist-world-content.md` → Towns and Settlements. **CORE v1.0.4 + PATCH COLLECTION v1.0.5.**
-- **Lund's Hamlet (169830)** — ADOPTED. sevnce, 472 endorsements, v1.4.1 (Jun 2026). Overhauls abandoned Lund's Hut into farmstead. LotD patch available. Uses Redbag's Shor's Stone meshes. Requires PGPatcher re-run. `modlist-world-content.md` → Towns and Settlements. **CORE v1.3.5 + PATCH COLLECTION v1.4.1.**
-- **Ophyre's Lakeview Honeyside (170009)** — ADOPTED. Ophyre, 192 endorsements, v1.1.7 (Jul 2026). Exterior-cell Honeyside rebuild on Riften Docks with lake views, seasonal porch (Seasons of Skyrim), packable crafting kits, canal sneak-entry. Outstanding fit for CS-lighting, "big dark world," and seasonal integration. REQUIRES NEW GAME. `modlist-world-content.md` → Player Homes. **Single FOMOD v1.1.7.**
-- **Atlas Map Markers SE (24104)** — ADOPTED. Kronixx/kryptopyr, 20,559 endorsements, v3.0.4 (Mar 2025). 700+ new map markers. MCM-controlled, ESL-flagged. Essential exploration QoL — fits "living the world." `modlist-ui.md` → Map & Navigation. **FOMOD v3.0.4.**
-- **CoMAP - Common Marker Addon Project (56123)** — ADOPTED. Jelidity/Parapets, 11,355 endorsements, v4.4.0 (May 2026). SKSE framework for custom map/compass marker designs. LotD configs included. Infinity UI + CNO compatible. Fits "Modern UI." `modlist-ui.md` → Map & Navigation (Framework). **FOMOD v4.4.0.**
-- **Azure Edge 2 (145554)** — ADOPTED. Zodiac, 156 endorsements, v1.0 (Mar 2025). Unique Ebony-tier sword with multilayer parallax gemstones, sheath included. ESL-flagged. Lore-friendly, fair-and-balanced. `modlist-weapons-armor.md` → Unique Weapons. **2K main file.**
-- **Ghostblade - Truly Unique (162964)** — ADOPTED. FunkyGandalfCat, 855 endorsements, v1.0 (Nov 2025). Complete vanilla Ghostblade replacer/rework: animated textures, custom VFX, Enchanting-scaling enchantment, kill-chain Spectral Aura/Dominion system. Fits "modern mechanics / big dark world." Use hotfix file for balance. `modlist-weapons-armor.md` → Unique Weapon Overhauls. **Main file + Hotfix.**
-- **Royal Voulge (137963)** — ADOPTED. FunkyGandalfCat, 217 endorsements, v1.1 (Jan 2025). New polearm weapon (battleaxe-class, long reach) with Two-Handed skill scaling and Weapon Mastery perk integration. ESL-flagged. Fits "modern mechanics / new content." `modlist-weapons-armor.md` → New Weapons. **Main file v1.1 (2K).**
-- **ELLE - Apothecary (141507)** — ADOPTED. Ellxe, 1,421 endorsements, v1 (Feb 2025). Craftable female light armor, 6 modular pieces (SMP belt), 2 color variants, crafting manual at Winterhold. Requires 3BA, FSMP, RaceMenu High Heels (18045), BodySlide (all baseline). ESL-flagged. `modlist-weapons-armor.md` → Female Light Armor. **FOMOD (choose 3BA realistic/regular).**
-- **ELLE - Wayfarer Navi (170449)** — ADOPTED. Ellxe, 804 endorsements, v1 (Jan 2026). Craftable female armor, 7 modular pieces, explorer/wanderer aesthetic. Requires same deps as Apothecary. ESL-flagged. `modlist-weapons-armor.md` → Female Light Armor. **FOMOD.**
-- **ELLE - Elven Assassin (128383)** — ADOPTED. Ellxe, adult-content-gated. Craftable female light armor, 6 full sets, 30+ individual pieces, Elven Smithing perk. Requires same deps as other ELLE mods. ESL-flagged. `modlist-weapons-armor.md` → Female Light Armor. **FOMOD (select 3BA).**
-- **RaceMenu High Heels (Height Fixes) (18045)** — ADOPTED. ousnius/expired6978, 53,424 endorsements, v1.3 (Mar 2019). Framework for all 3 ELLE armor mods (hard requirement). SKEE64 equipable transforms height fix system. Depends on RaceMenu (baseline) for SKEE — inherits AE compatibility. Do NOT install LazyHeels. `modlist-foundations.md` → Frameworks. **Single file v1.3.**
-- **SB - Pressure Plate Trap Blending (86053)** — ADOPTED. Asedael, 1,581 endorsements, v2.0 (Jun 2024). Smart pressure plate trap retexture via BOS (baseline) — blends traps with surrounding floor. No conflicts. `modlist-graphics-textures.md` → Clutter Fixes. **BOS 2.0 main file.**
-- **Sentinel - An Equipment Overhaul (100985)** — ADOPTED. Thuldor, 5,637 endorsements, v3.1.0 (Mar 2025). Comprehensive modular armor/weapons expansion compiling community's best armors (NordWarUA, Xavbio, 4thUnknown, etc.) and distributing via SkyPatcher. Immersion-focused — no loot bloat. SkyPatcher-distributed, ESP-FE. Requires SkyPatcher + Native EditorID Fix + Po3 Tweaks (all baseline). Complements existing Xavbio texture direction. NOT a replacer — additive variety. Choosy: modular FOMOD, pick only desired sets. `modlist-weapons-armor.md` → Armor Variety Expansion. **FOMOD v3.1.0 (select sets based on coverage gaps vs baseline).** **Verify**: some modules (AE armors) require CC content. Ensure compatibility with list's weather/lighting — no ENB/LUX dependency.
-- **Skyrim Realistic Conquering - AIO (26396)** — ADOPTED. Acherones/rubenvd7, 4,415 endorsements, v0.76.1 (Oct 2025). Cleared bandit/fort/cave locations repopulate with friendly NPCs (guards, hunters, miners). Uses Fort Takeovers Framework. Features xVASynth AI voice lines — AI content allowed per curation policy. Fits "living the world — see your impact." `modlist-world-content.md` → World Reactivity. **AIO main file. Requires Fort Takeovers Framework (25143) + SRC Exclude from Radiant (41881).**
-- **Subtitles (113214)** — ADOPTED. kpvw, 5,637 endorsements, v0.6.2 (Jan 2025). SKSE plugin showing up to 4 subtitles simultaneously. CommonLibSSE-NG (all versions). Requires SKSE + Address Library. Optional NPC Names Distributor integration. Pure UX improvement — accessible, zero conflict. Fits "Modern UI." `modlist-ui.md` → HUD & Subtitles. **Single file v0.6.2.**
-
-### Conditionally adopted (pending FWMF baseline)
-
-- **Community Shaders - FWMF Map Brightness Fix (171391)** — CONDITIONAL ADOPT (on FWMF). Magink, 75 endorsements, v1 (Feb 2026). Fixes bright/blown-out maps under CS when using FWMF. CS is LOCKED — if FWMF adopted, this bridge patch is essential. `modlist-ui.md` → Map Framework. **Single file v1.**
 
 ### Tentative — evaluate before committing
 
@@ -525,56 +502,37 @@ Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, t
 - **Dovah Rider Carriage - Reborn (159566)** — TENTATIVE. Her515/LvxMagick, 494 endorsements, v2.1.5 (Jun 2026). Fully rebuilt drivable carriage system with camping, horse care, follower support. 1GB download — very large. AI-Generated audio content (allowed per policy but quality needs eval). Potential overlap with RSE Shoulder Or Saddle (170232, adopted) on ride-sharing. Gamepad parity needs verification. `modlist-world-content.md` → Travel & Mounts. **Main file v2.1.5 (1GB).**
 - **True Flasks NG (170374)** — TENTATIVE. Newrite/Zodiac/Magnum, 394 endorsements, v1.2.5 (May 2026). Souls-like potion overhaul replacing consumables with regenerating flask charges. Gamepad hotkey support built in. Tagged both "Cheating" AND "Fair and balanced" — highly config-dependent. Would fundamentally alter combat resource economy against Adamant/Static Skill Leveling dial. Needs careful config tuning (long cooldowns, fewer charges). `modlist-expanded-magic.md` → Alchemy Overhaul. **Single FOMOD v1.2.5.**
 - **Flame Atronach SE - Ember XD Flames patch (115432)** — TENTATIVE. Lysril, 303 endorsements, v1.1 (Feb 2026). Mesh patch applying Embers XD flame shaders to 4thUnknown's Flame Atronach. Requires Embers XD (37085) with Magic addon. Minor artifact: "transparent skeleton" intermittently visible. Conditional on Embers XD adoption. `modlist-graphics-effects.md` → Creature VFX. **Main file v1.1.**
-- **Duncan's Paper Maps for FWMF (55025)** — TENTATIVE (pending FWMF). Caites, 2,492 endorsements, v1.8.2 (Nov 2024). Duncan Larsen paper maps for FWMF. Solstheim, Bruma, Wyrmstooth, Falskaar, Alik'r maps. Note: Mirhayasu's Bruma map (below) is preferred for Bruma. `modlist-ui.md` → Map Framework. **FOMOD v1.8.2.**
-- **Blackreach Paper Map for FWMF (53878)** — TENTATIVE (pending FWMF). Caites, 3,445 endorsements, v1.8.1 (Nov 2024). First Blackreach paper map. 2 nirnroot marker variants. `modlist-ui.md` → Map Framework. **FOMOD v1.8.1.**
-- **Beyond Skyrim Bruma Paper Map by Mirhayasu (64037)** — TENTATIVE (pending FWMF + Bruma baseline). Caites, 1,038 endorsements, v1.8.1 (Nov 2024). Mirhayasu's hand-drawn Bruma map at ~8K — more detailed than Duncan's. Prefer this over Duncan's Bruma map if both FWMF and Bruma adopted. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
-- **Beyond Reach Paper Map for FWMF (119215)** — TENTATIVE (pending FWMF + Beyond Reach baseline). Caites, 370 endorsements, v1.1.2 (May 2025). `modlist-ui.md` → Map Framework. **Single file v1.1.2.**
-- **EC:SS Paper Map for FWMF (88709)** — TENTATIVE (pending FWMF + ECSS baseline). Caites, 1,133 endorsements, v1.1.1 (Nov 2024). Shivering Isles Fringe map. `modlist-ui.md` → Map Framework. **Single file v1.1.1.**
-- **Markarth Paper Map for FWMF (62386)** — TENTATIVE (pending FWMF). Caites, 1,117 endorsements, v1.8.1 (Nov 2024). Hand-drawn Markarth city map. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
-- **Atlas Map Markers Overhaul (137793)** — TENTATIVE (pending Atlas 24104). Lore-consistency name pass for Atlas locations + CoMAP overhaul. Adopted Atlas is prerequisite. `modlist-ui.md` → Map & Navigation. **Single file.**
-- **Atlas MCM Settings Loader (68573)** — TENTATIVE (pending Atlas 24104). MaskedRPGFan, 2,043 endorsements, v2.0.0 (Jan 2025). MCM Helper auto-save for Atlas settings. Auto-include if Atlas adopted. `modlist-ui.md` → Map & Navigation. **Single v2.0.0.**
 - **OII - BTPS - MoreHUD Patch (157465)** — TENTATIVE (pending MoreHUD adoption). EbonyWarriorIRL, 103 endorsements, v0.1 (Aug 2025). .ini tweak for OII + BTPS + MoreHUD coexistence. MoreHUD SE (12688) needs verification — check if already in list. `modlist-ui.md` → Compatibility Patches. **Single file.**
 
 ### Rejected
 
 - **KG Animations - One-handers and Dual Wield (129519)** — REJECTED. 732 endorsements, v1.3 (May 2025). Explicitly states "for vanilla combat system." Requires Behavior Data Injector, Vanilla Attack Annotation Fix, Precision. **Hard incompatibility with locked BFCO combat baseline.** BFCO replaces vanilla attack behavior graphs — these OAR animations won't fire correctly.
 - **Ivy's Riverwood Overhaul (151441)** — REJECTED. ItzIvy, 894 endorsements, v1.6.1 (Aug 2026). Full Riverwood cell rebuild. Has CS-only meshes option. BUT: conflicts with locked Spaghetti's Riverwood + Fleiwas Riverwood Addition baseline. No patch for either. Adopting requires dropping the existing Riverwood stack — not worth the disruption. LUX patches bundled (skip if CS-only), but not required.
-- **Temples of the Ancients (38544)** — REJECTED. Spifferino, 4,296 endorsements, v1.2 (Jul 2020). Nordic temple/ruin retexture. **Directly redundant with Skyking Nordic Ruins Complex Parallax (183021), adopted 2026-08-11.** Skyking is CS+PBR-native, actively maintained (Jun 2026), custom meshes. Temples is 5 years older, unmaintained, no CS path, restrictive permissions. Same slot already filled.
+- **4thUnknown's True PBR Patches (135793)** — REJECTED. 301 endorsements, v1 (Dec 2024). CS TruePBR patches for 4thUnknown's ARMOR mods. Depends on individual armor mods NOT in the list. Xavbio's armor AIO handles that niche.
+- **Temples of the Ancients (38544)** — REJECTED. Spifferino, 4,296 endorsements, v1.2 (Jul 2020). Redundant with Skyking Nordic Ruins Complex Parallax (183021, adopted 2026-08-11).
 
-### Promoted from tentative — FWMF confirmed locked baseline
+### Adopted — FWMF chain (promoted, needs new entries)
 
-**FWMF (29932) is locked as "Non-negotiable map foundation" in `modlist-ui.md:119`.** All FWMF-dependent tentatives graduate to ADOPTED:
-
-- **Community Shaders - FWMF Map Brightness Fix (171391)** — ADOPTED. CS is locked; this bridge patch is essential. `modlist-ui.md` → Map Framework. **Single file v1.**
-- **Duncan's Paper Maps for FWMF (55025)** — ADOPTED. Solstheim, Wyrmstooth, Falskaar, Alik'r (Gray Cowl) maps. **Skip Bruma in FOMOD** — Mirhayasu's Bruma map (below) is preferred for Bruma. Some maps already listed as Alternatives in `modlist-ui.md`. `modlist-ui.md` → Map Framework. **FOMOD v1.8.2.**
-- **Blackreach Paper Map for FWMF (53878)** — ADOPTED. Already listed as Alternative in `modlist-ui.md:140`. Promoted to baseline. `modlist-ui.md` → Map Framework. **FOMOD v1.8.1.**
-- **Beyond Skyrim Bruma Paper Map by Mirhayasu for FWMF (64037)** — ADOPTED. Higher-res and more geo-precise than Duncan's Bruma map. Bruma is in the modlist baseline. Prefer this over Duncan's Bruma. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
-- **Beyond Reach Paper Map for FWMF (119215)** — ADOPTED. Already listed as Alternative in `modlist-ui.md:139`. Beyond Reach is in the modlist. Promoted to baseline. `modlist-ui.md` → Map Framework. **Single file v1.1.2.**
-- **EC:SS Paper Map for FWMF (88709)** — ADOPTED. Shivering Isles Fringe map for Extended Cut: Saints and Seducers (in modlist). `modlist-ui.md` → Map Framework. **Single file v1.1.1.**
-- **Markarth Paper Map for FWMF (62386)** — ADOPTED. Hand-drawn Markarth city map. Fills a city-map gap. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
-- **Atlas Map Markers Overhaul (137793)** — ADOPTED. Lore-consistency name pass for Atlas locations + CoMAP overhaul. Atlas is now adopted. `modlist-ui.md` → Map & Navigation. **Single file.**
-- **Atlas MCM Settings Loader (68573)** — ADOPTED. MCM Helper auto-save for Atlas settings. MCM Helper is baseline, Atlas adopted. `modlist-ui.md` → Map & Navigation. **Single v2.0.0.**
+- **Community Shaders - FWMF Map Brightness Fix (171391)** — ADOPTED. Bridge patch for CS + FWMF. `modlist-ui.md` → Map Framework. **Single file v1.**
+- **Duncan's Paper Maps for FWMF (55025)** — ADOPTED. Solstheim, Wyrmstooth, Falskaar, Alik'r maps. Skip Bruma (prefer Mirhayasu). `modlist-ui.md` → Map Framework. **FOMOD v1.8.2.**
+- **Mirhayasu Bruma Paper Map for FWMF (64037)** — ADOPTED. ~8K, more detailed than Duncan's Bruma. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
+- **EC:SS Paper Map for FWMF (88709)** — ADOPTED. Shivering Isles Fringe. `modlist-ui.md` → Map Framework. **Single file v1.1.1.**
+- **Markarth Paper Map for FWMF (62386)** — ADOPTED. City map gap filled. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
+- **Atlas Map Markers Overhaul (137793)** — ADOPTED. Lore-consistency names for Atlas. `modlist-ui.md` → Map & Navigation. **Single file.**
+- **Atlas MCM Settings Loader (68573)** — ADOPTED. MCM Helper auto-save. `modlist-ui.md` → Map & Navigation. **Single v2.0.0.**
 
 ### Summary tally
 
 | Verdict | Count |
 |---------|-------|
-| Already adopted / pre-adjudicated | 3 |
-| ADOPTED | 39 |
-| TENTATIVE | 14 |
-| REJECTED | 6 |
-| **Total reviewed** | **62** |
-
-**Key adoption clusters:**
-- **4thUnknown creature replacer trilogy**: Flame (82382), Frost (171447), Storm (160837) + Spider (182638) — full atronach + spider coverage, all no-ESP.
-- **ELLE armor suite**: Apothecary (141507), Wayfarer Navi (170449), Elven Assassin (128383) — all require RaceMenu High Heels (18045).
-- **BTPS ecosystem**: BTPS (64339) is the essential framework; OII (52743) + BTPS Filter (168549) + Block Dungeon Furniture (129657) are the immediate adopts.
-- **sevnce location overhauls**: Heljarchen Creek (171605), Lund's Hamlet (169830) — both LotD-patched, JK's/Spaghetti's compatible.
-- **FunkyGandalfCat weapon pair**: Ghostblade (162964), Royal Voulge (137963).
-- **FWMF map stack (9 mods)**: CS Brightness Fix (171391) + Duncan's Paper Maps (55025) + Blackreach (53878) + Mirhayasu Bruma (64037) + Beyond Reach (119215) + ECSS (88709) + Markarth (62386) + Atlas Overhaul (137793) + Atlas MCM Loader (68573).
+| Already in modlist (no new entry) | 16 |
+| Adopted (needs new entry) | 29 |
+| Tentative | 14 |
+| Rejected | 7 |
+| **Total reviewed** | **66** |
 
 **Items needing user decisions:**
-- Embers XD adoption unblocks the Flame Atronach XD patch (115432).
-- MoreHUD SE adoption unblocks the OII-BTPS-MoreHUD patch (157465).
+- Embers XD adoption unblocks Flame Atronach XD patch (115432).
+- MoreHUD SE adoption unblocks OII-BTPS-MoreHUD patch (157465).
 - BFCO compatibility test needed for KG Two-handers (101541).
 - TomatoRim PBR mountain coverage check for Tomato's Mountain Textures (109986).
