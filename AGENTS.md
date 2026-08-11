@@ -6,12 +6,9 @@ This is a monorepo for game modlists (Minecraft, Skyrim, etc.). Each modlist is 
 
 - Root is a standard git repo — make changes, commit, push as normal
 - `<name>/` — each modlist is an independent project with its own config, guides, and AGENTS.md
-- `minecraft/`, `skyrim/`, `cyberpunk/`, `ets2/`, `fallout-4/`, `factorio/`, `rimworld/`, `gtaiv/`, `gtav/`, `rdr2/`, `arma3/`, `starfield/`, `starbound/`, `x4-foundations/`, `asseto-corsa/`, `automobilista-2/`, `baldurs-gate-3/`, `shogun2/`, `threekingdoms/`, `fs25/`, `f1-25/`, `masseffect/`, `mb2-bannerlord/`, `no-mans-sky/`, `open-rails/`, `warhammer-3/`, `witcher-3/`, `ck3/`, `kerbal-space-program/`, `kenshi/`, `project-zomboid/`, `stardew-valley/`, `stellaris/`, `terraria/`, and `x-com-2/` were imported via `git subtree` — their full history is preserved in this repo
-- `oxygen-not-included/` was created from scratch (not subtree-imported)
-- `monster-hunter-rise/` was created from scratch (not subtree-imported)
-- `x-plane-12/` was created from scratch (not subtree-imported)
-- `civ-4/` was created from scratch (not subtree-imported)
-- `football-life/` was created from scratch (not subtree-imported)
+- A root-level directory is a modlist iff it contains its own `AGENTS.md` — the presence of that file is what registers it, so adding a modlist never requires editing these root files
+- Infrastructure directories (`.superpowers/`, `.playwright-mcp/`, dotfiles, etc.) are not modlists
+- Most modlists were imported via `git subtree` — their full history is preserved in this repo. A few were created from scratch; `git log` shows which
 - Do NOT use `git submodule` commands — subtrees were used instead
 
 ## Working conventions
@@ -33,5 +30,7 @@ To create from scratch:
 ```bash
 mkdir -p <name> && develop normally
 ```
+
+Either way, finish by creating `<name>/AGENTS.md` — that file is what defines the directory as a modlist.
 
 See README.md for full instructions.
