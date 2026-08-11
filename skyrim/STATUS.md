@@ -539,19 +539,31 @@ Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, t
 
 - **KG Animations - One-handers and Dual Wield (129519)** — REJECTED. 732 endorsements, v1.3 (May 2025). Explicitly states "for vanilla combat system." Requires Behavior Data Injector, Vanilla Attack Annotation Fix, Precision. **Hard incompatibility with locked BFCO combat baseline.** BFCO replaces vanilla attack behavior graphs — these OAR animations won't fire correctly.
 - **Ivy's Riverwood Overhaul (151441)** — REJECTED. ItzIvy, 894 endorsements, v1.6.1 (Aug 2026). Full Riverwood cell rebuild. Has CS-only meshes option. BUT: conflicts with locked Spaghetti's Riverwood + Fleiwas Riverwood Addition baseline. No patch for either. Adopting requires dropping the existing Riverwood stack — not worth the disruption. LUX patches bundled (skip if CS-only), but not required.
-- **4thUnknown's True PBR Patches (135793)** — REJECTED. 301 endorsements, v1 (Dec 2024). CS TruePBR patches for 4thUnknown's ARMOR mods (Dwemer, Silver, Fluted, Infantry). Depends on individual 4thUnknown armor mods NOT in the list. Xavbio's armor AIO already handles armor retextures. Armor bloat with no gap.
 - **Temples of the Ancients (38544)** — REJECTED. Spifferino, 4,296 endorsements, v1.2 (Jul 2020). Nordic temple/ruin retexture. **Directly redundant with Skyking Nordic Ruins Complex Parallax (183021), adopted 2026-08-11.** Skyking is CS+PBR-native, actively maintained (Jun 2026), custom meshes. Temples is 5 years older, unmaintained, no CS path, restrictive permissions. Same slot already filled.
+
+### Promoted from tentative — FWMF confirmed locked baseline
+
+**FWMF (29932) is locked as "Non-negotiable map foundation" in `modlist-ui.md:119`.** All FWMF-dependent tentatives graduate to ADOPTED:
+
+- **Community Shaders - FWMF Map Brightness Fix (171391)** — ADOPTED. CS is locked; this bridge patch is essential. `modlist-ui.md` → Map Framework. **Single file v1.**
+- **Duncan's Paper Maps for FWMF (55025)** — ADOPTED. Solstheim, Wyrmstooth, Falskaar, Alik'r (Gray Cowl) maps. **Skip Bruma in FOMOD** — Mirhayasu's Bruma map (below) is preferred for Bruma. Some maps already listed as Alternatives in `modlist-ui.md`. `modlist-ui.md` → Map Framework. **FOMOD v1.8.2.**
+- **Blackreach Paper Map for FWMF (53878)** — ADOPTED. Already listed as Alternative in `modlist-ui.md:140`. Promoted to baseline. `modlist-ui.md` → Map Framework. **FOMOD v1.8.1.**
+- **Beyond Skyrim Bruma Paper Map by Mirhayasu for FWMF (64037)** — ADOPTED. Higher-res and more geo-precise than Duncan's Bruma map. Bruma is in the modlist baseline. Prefer this over Duncan's Bruma. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
+- **Beyond Reach Paper Map for FWMF (119215)** — ADOPTED. Already listed as Alternative in `modlist-ui.md:139`. Beyond Reach is in the modlist. Promoted to baseline. `modlist-ui.md` → Map Framework. **Single file v1.1.2.**
+- **EC:SS Paper Map for FWMF (88709)** — ADOPTED. Shivering Isles Fringe map for Extended Cut: Saints and Seducers (in modlist). `modlist-ui.md` → Map Framework. **Single file v1.1.1.**
+- **Markarth Paper Map for FWMF (62386)** — ADOPTED. Hand-drawn Markarth city map. Fills a city-map gap. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
+- **Atlas Map Markers Overhaul (137793)** — ADOPTED. Lore-consistency name pass for Atlas locations + CoMAP overhaul. Atlas is now adopted. `modlist-ui.md` → Map & Navigation. **Single file.**
+- **Atlas MCM Settings Loader (68573)** — ADOPTED. MCM Helper auto-save for Atlas settings. MCM Helper is baseline, Atlas adopted. `modlist-ui.md` → Map & Navigation. **Single v2.0.0.**
 
 ### Summary tally
 
 | Verdict | Count |
 |---------|-------|
 | Already adopted / pre-adjudicated | 3 |
-| ADOPTED | 30 |
-| CONDITIONAL ADOPT (pending FWMF) | 1 |
-| TENTATIVE | 23 |
+| ADOPTED | 39 |
+| TENTATIVE | 14 |
 | REJECTED | 6 |
-| **Total reviewed** | **63** |
+| **Total reviewed** | **62** |
 
 **Key adoption clusters:**
 - **4thUnknown creature replacer trilogy**: Flame (82382), Frost (171447), Storm (160837) + Spider (182638) — full atronach + spider coverage, all no-ESP.
@@ -559,10 +571,9 @@ Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, t
 - **BTPS ecosystem**: BTPS (64339) is the essential framework; OII (52743) + BTPS Filter (168549) + Block Dungeon Furniture (129657) are the immediate adopts.
 - **sevnce location overhauls**: Heljarchen Creek (171605), Lund's Hamlet (169830) — both LotD-patched, JK's/Spaghetti's compatible.
 - **FunkyGandalfCat weapon pair**: Ghostblade (162964), Royal Voulge (137963).
-- **FWMF map tentatives (8 mods)**: All pending FWMF baseline decision — 6 paper maps + 1 CS brightness fix + 1 Atlas companion.
+- **FWMF map stack (9 mods)**: CS Brightness Fix (171391) + Duncan's Paper Maps (55025) + Blackreach (53878) + Mirhayasu Bruma (64037) + Beyond Reach (119215) + ECSS (88709) + Markarth (62386) + Atlas Overhaul (137793) + Atlas MCM Loader (68573).
 
 **Items needing user decisions:**
-- FWMF adoption decision unblocks 8 tentative mods (Map/MCM framework).
 - Embers XD adoption unblocks the Flame Atronach XD patch (115432).
 - MoreHUD SE adoption unblocks the OII-BTPS-MoreHUD patch (157465).
 - BFCO compatibility test needed for KG Two-handers (101541).
