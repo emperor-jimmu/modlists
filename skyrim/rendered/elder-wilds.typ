@@ -1414,6 +1414,565 @@ The FOMOD has five steps: AIO vs Modular, AIO main-file + compatibility patches,
 
 
 
+// -- guide/modlist-ui.md --
+= Modernized UI
+<ui-modernized-ui>
+
+---
+
+== UI Framework Prerequisites
+<modernized-ui-ui-framework-prerequisites>
+
+The base menu and interface framework the rest of the UI stack builds on.
+
+=== Baseline
+<modernized-ui-baseline>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12604")[SkyUI]],
+  [Non-negotiable baseline.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160916")[Oathvein UI]],
+  [Locked visual direction. Grim-dark presentation matches the project tone; cleaner dependency chain than Norden UI.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17561")[UIExtensions]],
+  [Support infrastructure, not competing UI identity.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81409")[Constructible Object Custom Keyword System (COCKS)]],
+  [Crafting-menu category infrastructure.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53000")[MCM Helper]],
+  [Persists MCM settings across saves. Hard dependency of TDM, CNO, and others.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76927")[Stay At The System Page NG]],
+  [Keeps System page open after loading a save. Most noticeable on gamepad.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114790")[ImGui Icons]],
+  [Icon font resource for ImGui-based mods (Dialogue History, etc.).],
+)
+
+=== Alternatives
+<modernized-ui-alternatives>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/166086")[Norden UI]],
+  [Modern-rustic by Nithog, but depends on Extended UI (no official SE port).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/176230")[Vel'dun UI]],
+  [Dunmer-themed by Nithog; too narrow a fit for Elder Wilds.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148718")[Prisma UI]],
+  [Web-UI framework replacing SkyUI. Incompatible with Oathvein UI and UIExtensions mods.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120352")[SKSE Menu Framework]],
+  [Low-level menu framework for SKSE-based UI mods.],
+)
+
+---
+
+== HUD Overhaul
+<modernized-ui-hud-overhaul>
+
+Health, stamina, magicka, target readability, and permanent interface structure during ordinary play.
+
+=== Baseline
+<modernized-ui-baseline-2>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/463")[SkyHUD]],
+  [Baseline layout framework: widget positioning, visibility, style consistency.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62775")[TrueHUD]],
+  [Combat-feedback: actor info bars, boss bars, player widgets, recent-loot logging. Same author as TDM.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80455")[Casting Bar]],
+  [Cast/draw timing for spells, shouts, and bow draw.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14332")[Floating Damage]],
+  [Optional combat-feedback overlay. Install only after confirming acceptable visual noise.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120075")[QuickLoot IE]],
+  [Container/corpse loot window on interact. Improved controller support, third-person readability. FOMOD with placement presets.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64532")[Oxygen Meter 2]],
+  [Breath meter when underwater. Configurable position/opacity.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171910")[Oxygen Meter 2 - Lung Shaped]],
+  [Cosmetic lung-shaped icon.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171916")[Oxygen Meter 2 - Fixes and Additions]],
+  [Bugfixes and feature tweaks.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63057")[Detection Meter]],
+  [Stealth detection meter. Pairs with RAID.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77350")[Detection Meter - AE Support]],
+  [Required for 1.6.1170.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140826")[Casting Bar Reskin - Edge UI Inspired]],
+  [Cosmetic reskin of Casting Bar. Evaluate integration with Veldun UI's own casting bar (not in Elder Wilds stack).],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/136148")[STB Widgets]],
+  [Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159406")[Follower Stats]],
+  [MCM-based follower stat tracking. Pairs with Nether's.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155036")[Tween Menu Overhaul Improved]],
+  [Main-menu and loading-screen visual overhaul. Updated version with additional scenes.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160831")[RUMINATE - Frost and Snow - Main Menu Video Pack]],
+  [Frost-and-snow themed main menu cinematic.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119849")[Skeuomorphism of Skyrim - Immersive Plaque Reading Interface]],
+  [3D in-world plaque model. Requires BOS. ESL-flagged.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153122")[Dynamic Location Pop-ups]],
+  [Location discovery notification banner.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99978")[Complete Controller Setup]],
+  [SKSE-based controller config: remapping, radial-menus, camera profiles for gamepad.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-2>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/180653")[Stats Tracker Menu - STM]],
+  [Brand new (May 2026), very low community signal. Test before locking.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179053")[Kill feed]],
+  [Kill notification overlay.],
+)
+
+---
+
+== Inventory And Item Card Improvements
+<modernized-ui-inventory-and-item-card-improvements>
+
+=== Baseline
+<modernized-ui-baseline-3>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12688")[moreHUD SE]],
+  [Mandatory. Broader item-information layer.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18619")[moreHUD Inventory Edition]],
+  [Mandatory. Extends readability into inventory views.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85702")[Inventory Interface Information Injector]],
+  [Value/weight/stat-per-weight columns. Same author as moreHUD.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106432")[I4 Weapon Icons Overhaul]],
+  [30+ weapon category icons. Depends on III.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119824")[I4 Armor Icons Overhaul]],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107334")[I4 Shout Icons Overhaul]],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90508")[The Handy Icon Collection Collective (THICC)]],
+  [Thousands of high-fidelity icons. Additive to I4 family.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143532")[Favorites Menu Effects Description]],
+  [Effect descriptions in favorites menu. SKSE plugin, no ESP. Essential for gamepad.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89241")[B.O.O.B.I.E.S (aka Immersive Icons)]],
+  [Icon overhaul for SkyUI. 28K+ endorsements. FOMOD: 2K recommended.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/163838")[B.O.O.B.I.E.S - POTIONS]],
+  [Dedicated potion bottle icons.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90526")[P.E.N.I.S. for B.O.O.B.I.E.S.]],
+  [Ingredient icon pack.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89823")[A.S.S. for B.O.O.B.I.E.S.]],
+  [Food & drink icon pack.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113657")[Rotols More Icons]],
+  [Additional coverage for items B.O.O.B.I.E.S doesn't cover.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-3>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29116")[SkyUI Item Card Fixes]],
+  [Cleaner item-card presentation.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68557")[Aura's Inventory Tweaks]],
+  [Stronger sorting and icon structure.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/127249")[Weapon Stat Viewer V2]],
+  [Weapon-stat overlay. Lock only if rendered cleanly.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174246")[Enchanted Icon Overhaul]],
+  [Depends on Dynamic Inventory Icon Injector.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174136")[Dynamic Inventory Icon Injector]],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84213")[Book 'Em]],
+  [Book reading/collecting tracking UI.],
+)
+
+=== Item Description Cards
+<modernized-ui-item-description-cards>
+
+Add descriptive text to inventory item cards for better readability. All by the same author, share a consistent style. Install as a set.
+
+#table(
+  columns: 1,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116785")[Weapons Have Description]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129755")[Ingredients Have Description]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107202")[Scrolls Have Descriptions]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118941")[Soul Gems Have Description]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107292")[Food and Drink Have Descriptions]],
+)
+
+---
+
+== Map Improvements
+<modernized-ui-map-improvements>
+
+=== Baseline
+<modernized-ui-baseline-4>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29932")[Flat World Map Framework (FWMF)]],
+  [Non-negotiable map foundation.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129756")[Local Map Upgrade]],
+  [Local-map for interior/close-range navigation.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74722")[HD Local Map]],
+  [HD textures for the local map upgrade.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/24104")[Atlas Map Markers SE - Updated with MCM]],
+  [Expanded map markers with MCM configuration.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64493")[Traditional (8K) Skyrim and Solstheim Paper Maps for FWMF (AE and SE)]],
+  [High-fidelity paper-map replacer for FWMF.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64777")[Custom Map Markers for Traditional Skyrim and Solstheim Paper Maps]],
+  [Cosmetic map marker styling for the Traditional map set.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84112")[Updates to various maps for FWMF]],
+  [Coverage patches for additional FWMF worldspaces.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-4>
+
+#table(
+  columns: 1,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143113")[The Nightmare Paper Map for FWMF by Limon]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53788")[Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54710")[Immersive Paper Map (3rd Edition)]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78995")[Skyrim Paper Map by FreelanceCartography for FWMF]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157397")[Legendary Map]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3195")[Pastel Map Markers]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124686")[Wyrmstooth Paper Map for FWMF]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92774")[Apocrypha Paper Map for FWMF]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119215")[Beyond Reach Paper Map for FWMF]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53878")[Blackreach Paper Map for FWMF]],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55387")[Soul Cairn Paper Map for FWMF]],
+)
+
+---
+
+== Magic And Journal Improvements
+<modernized-ui-magic-and-journal-improvements>
+
+=== Baseline
+<modernized-ui-baseline-5>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50202")[Convenient Reading UI - SE]],
+  [Reading comfort for normal play.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22825")[Wider MCM Menu for SkyUI]],
+  [Support fix for cramped config menus.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117661")[Modern Wait Menu]],
+  [Clock-face interface showing time, weather preview. Gamepad-friendly. SKSE plugin, no ESP.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46358")[Completionist - Skyrim Completion Tracker (NG)]],
+  [MCM-based quest/item/location/book/shout completion tracker. Run the Automated GUI Patcher.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112406")[Completionist Addons]],
+  [Mod-added content tracking.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172488")[Quest Journal Overhaul]],
+  [Journal UI redesign with quest tracking improvements.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141837")[Quest Journal Overhaul - Unofficial Mods Support]],
+  [Extended mod support patch. Install after the main QJO.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173074")[Character Menu SE]],
+  [Character stats/sheet UI replacement. Alternative.],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175026")[Character Menu SE - More Factions]],
+  [Additional faction tracking for Character Menu SE.],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159")[Even Better Quest Objectives SE]],
+  [Quest objective text clarifications and journal improvements. Alternative.],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128235")[Knotwork]],
+  [Custom quest journal knotwork art for non-vanilla questlines. Complements Quest Journal Overhaul. SKSE plugin. Alternative.],
+  [],
+)
+
+---
+
+== Dialogue UI Improvements
+<modernized-ui-dialogue-ui-improvements>
+
+=== Baseline
+<modernized-ui-baseline-6>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1429")[Better Dialogue Controls]],
+  [First-pass dialogue friction fix.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1428")[Better MessageBox Controls]],
+  [Same for message boxes.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114238")[Dialogue History]],
+  [Scrollable dialogue log. Essential for gamepad.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68210")[Improved Alternate Conversation Camera]],
+  [Dialogue camera baseline. Test for CS letterbox conflict.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-5>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46546")[Dialogue Interface ReShaped]],
+  [Visual dialogue flow.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57943")[Convenient Dialogue UI - SE]],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/161500")[Smart Talk (Dialogue Menu Enhancer)]],
+  [Highlights quest options, reorders choices, gamepad-friendly skip. 5.5K endorsements.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/103920")[Various Dialogue Tags]],
+  [Adds contextual tags to dialogue options (e.g., [Lie], [Persuade], [Ask]). ESL-flagged.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151404")[Various Book Tags]],
+  [Adds contextual tags to book-reading prompts. Same author as Various Dialogue Tags.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141632")[Skyrim Autocorrect - Dialogue Grammar Fixes]],
+  [Fixes grammar, spelling, and punctuation in vanilla dialogue. Text-only, no records.],
+)
+
+---
+
+== Controller-Friendly UI Support
+<modernized-ui-controller-friendly-ui-support>
+
+=== Baseline
+<modernized-ui-baseline-7>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1147")[Skyrim SE Controller Interface Fix]],
+  [],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122648")[Show Player In Menus]],
+  [Renders player character in menus for gear previews. Essential for third-person parity.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-6>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27007")[Gamepad Plus Plus]],
+  [Broader controller-input answer.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97345")[Wheeler - Quick Action Wheel]],
+  [Radial interaction layer.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167380")[WHEELER - Refined]],
+  [Updated visuals, better controller support.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54309")[Auto Input Switch]],
+  [Automatically switches input device.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/178689")[Show Player In Inventory]],
+  [Renders player model in inventory screen.],
+)
+
+---
+
+== UI Scaling For Ultrawide And High Resolution
+<modernized-ui-ui-scaling-for-ultrawide-and-high-resolution>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/386")[Sovngarde - Mist's Font Replacer]],
+  [Text readability for 16:9 4K HDR. Prefer Bold V8.9 first.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1778")[Complete Widescreen Fix]],
+  [Secondary for ultrawide layouts.],
+)
+
+---
+
+== Compass, Markers, And Minimal HUD
+<modernized-ui-compass-markers-and-minimal-hud>
+
+=== Baseline
+<modernized-ui-baseline-8>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74484")[Compass Navigation Overhaul]],
+  [First-pass navigational layer.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56123")[CoMAP - Common Marker Addon Project]],
+  [Marker consistency across the FWMF ecosystem.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-7>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12440")[Immersive HUD - iHUD SE]],
+  [Minimal-HUD branch.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49490")[MiniMap]],
+  [Very optional. Last updated May 2021; occasional crash reports on 1.6.1170.],
+)
+
+---
+
+== Crafting Menu Improvements
+<modernized-ui-crafting-menu-improvements>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81409")[COCKS]],
+  [See Framework Prerequisites above. Directly improves the Constructible Object Menu.],
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18717")[SkyUI - Vanilla Crafting menu]],
+  [Fallback for vanilla-style split categories.],
+)
+
+---
+
+== Loading Screens
+<modernized-ui-loading-screens>
+
+=== Baseline
+<modernized-ui-baseline-9>
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Notes]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138294")[Lore-Friendly Load Screen Compendium (Loading Screens)]],
+  [Locked baseline. Lore-friendly loading screens with in-world art and text. Requires Improved Loading Screen Colors (61712) and SSE Display Tweaks (34705) for the load screen filter — both already in the stack.],
+  [By ChildofDragons. Install at 100% frequency to suppress vanilla tips.],
+)
+
+=== Alternatives
+<modernized-ui-alternatives-8>
+
+#table(
+  columns: 3,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Notes]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37929")[The Elder Scrolls Legends - Loading Screens]],
+  [110 Legends card-art loading screens. Install at 100% frequency in 16:9 with Fixed Height border.],
+  [Previously locked baseline. Keep as known-good fallback.],
+)
+
+---
+
+== Optional HUD
+<modernized-ui-optional-hud>
+
+#table(
+  columns: 2,
+  inset: (x: 8pt, y: 4.5pt),
+  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
+  stroke: 0.5pt + clr-line,
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
+  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
+  table.hline(stroke: 0.8pt + clr-gold),
+  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167538")[Skyrim Party Sheet - Follower and Player HUD]],
+  [Persistent overlay for player attributes and follower info. v2.7 (June 2026). Research before installing — verify no conflicts with TrueHUD, Oathvein, or Nether's.],
+)
+
+---
+
+== Open Research
+<modernized-ui-open-research>
+
+Open research for the UI stack is tracked in `TODO.md`.
+
+
+
+
+
 // -- guide/modlist-graphics.md --
 = Graphics Pipeline
 <graphics-graphics-pipeline>
@@ -1442,7 +2001,7 @@ The pipeline is designed to be evaluated in order — each stage depends on the 
   [PGPatcher — parallax/PBR mesh generation],
   [2],
   [@graphics-textures-community-shaders--textures],
-  [Community Shaders — post-process framework, and Textures & Meshes — all surface-level asset replacement],
+  [Community Shaders — post-process framework, and Textures & Meshes — all surface-level asset replacement; mesh improvements split into `Graphics - Mesh Improvements - Weapons & Armor` / `Cities & Structures` / `Furniture & Props`],
   [3],
   [@graphics-lighting-lighting],
   [Lighting — interior, exterior, and effect lighting],
@@ -3731,565 +4290,6 @@ When using *Seasons of Skyrim SKSE* + *Turn of the Seasons*, DynDOLOD and xLODGe
 *DynDOLOD seasonal:* Tick the *Seasons* checkbox, the *Snow* checkbox, and select the desired seasons in DynDOLOD's GUI. Generation time scales with the number of seasons selected.
 
 Rebuild seasonal LOD whenever the underlying terrain, tree, or landscape seasonal-swap data changes.
-
-
-
-
-
-// -- guide/modlist-ui.md --
-= Modernized UI
-<ui-modernized-ui>
-
----
-
-== UI Framework Prerequisites
-<modernized-ui-ui-framework-prerequisites>
-
-The base menu and interface framework the rest of the UI stack builds on.
-
-=== Baseline
-<modernized-ui-baseline>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12604")[SkyUI]],
-  [Non-negotiable baseline.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160916")[Oathvein UI]],
-  [Locked visual direction. Grim-dark presentation matches the project tone; cleaner dependency chain than Norden UI.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/17561")[UIExtensions]],
-  [Support infrastructure, not competing UI identity.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81409")[Constructible Object Custom Keyword System (COCKS)]],
-  [Crafting-menu category infrastructure.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53000")[MCM Helper]],
-  [Persists MCM settings across saves. Hard dependency of TDM, CNO, and others.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/76927")[Stay At The System Page NG]],
-  [Keeps System page open after loading a save. Most noticeable on gamepad.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114790")[ImGui Icons]],
-  [Icon font resource for ImGui-based mods (Dialogue History, etc.).],
-)
-
-=== Alternatives
-<modernized-ui-alternatives>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/166086")[Norden UI]],
-  [Modern-rustic by Nithog, but depends on Extended UI (no official SE port).],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/176230")[Vel'dun UI]],
-  [Dunmer-themed by Nithog; too narrow a fit for Elder Wilds.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/148718")[Prisma UI]],
-  [Web-UI framework replacing SkyUI. Incompatible with Oathvein UI and UIExtensions mods.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120352")[SKSE Menu Framework]],
-  [Low-level menu framework for SKSE-based UI mods.],
-)
-
----
-
-== HUD Overhaul
-<modernized-ui-hud-overhaul>
-
-Health, stamina, magicka, target readability, and permanent interface structure during ordinary play.
-
-=== Baseline
-<modernized-ui-baseline-2>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/463")[SkyHUD]],
-  [Baseline layout framework: widget positioning, visibility, style consistency.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/62775")[TrueHUD]],
-  [Combat-feedback: actor info bars, boss bars, player widgets, recent-loot logging. Same author as TDM.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/80455")[Casting Bar]],
-  [Cast/draw timing for spells, shouts, and bow draw.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/14332")[Floating Damage]],
-  [Optional combat-feedback overlay. Install only after confirming acceptable visual noise.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/120075")[QuickLoot IE]],
-  [Container/corpse loot window on interact. Improved controller support, third-person readability. FOMOD with placement presets.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64532")[Oxygen Meter 2]],
-  [Breath meter when underwater. Configurable position/opacity.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171910")[Oxygen Meter 2 - Lung Shaped]],
-  [Cosmetic lung-shaped icon.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/171916")[Oxygen Meter 2 - Fixes and Additions]],
-  [Bugfixes and feature tweaks.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/63057")[Detection Meter]],
-  [Stealth detection meter. Pairs with RAID.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/77350")[Detection Meter - AE Support]],
-  [Required for 1.6.1170.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/140826")[Casting Bar Reskin - Edge UI Inspired]],
-  [Cosmetic reskin of Casting Bar. Evaluate integration with Veldun UI's own casting bar (not in Elder Wilds stack).],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/136148")[STB Widgets]],
-  [Lightweight modular widgets (clock, time, compass-free direction, stat bars). SKSE + MCM.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159406")[Follower Stats]],
-  [MCM-based follower stat tracking. Pairs with Nether's.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/155036")[Tween Menu Overhaul Improved]],
-  [Main-menu and loading-screen visual overhaul. Updated version with additional scenes.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/160831")[RUMINATE - Frost and Snow - Main Menu Video Pack]],
-  [Frost-and-snow themed main menu cinematic.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119849")[Skeuomorphism of Skyrim - Immersive Plaque Reading Interface]],
-  [3D in-world plaque model. Requires BOS. ESL-flagged.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/153122")[Dynamic Location Pop-ups]],
-  [Location discovery notification banner.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/99978")[Complete Controller Setup]],
-  [SKSE-based controller config: remapping, radial-menus, camera profiles for gamepad.],
-)
-
-=== Alternatives
-<modernized-ui-alternatives-2>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/180653")[Stats Tracker Menu - STM]],
-  [Brand new (May 2026), very low community signal. Test before locking.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/179053")[Kill feed]],
-  [Kill notification overlay.],
-)
-
----
-
-== Inventory And Item Card Improvements
-<modernized-ui-inventory-and-item-card-improvements>
-
-=== Baseline
-<modernized-ui-baseline-3>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12688")[moreHUD SE]],
-  [Mandatory. Broader item-information layer.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18619")[moreHUD Inventory Edition]],
-  [Mandatory. Extends readability into inventory views.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/85702")[Inventory Interface Information Injector]],
-  [Value/weight/stat-per-weight columns. Same author as moreHUD.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/106432")[I4 Weapon Icons Overhaul]],
-  [30+ weapon category icons. Depends on III.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119824")[I4 Armor Icons Overhaul]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107334")[I4 Shout Icons Overhaul]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90508")[The Handy Icon Collection Collective (THICC)]],
-  [Thousands of high-fidelity icons. Additive to I4 family.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143532")[Favorites Menu Effects Description]],
-  [Effect descriptions in favorites menu. SKSE plugin, no ESP. Essential for gamepad.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89241")[B.O.O.B.I.E.S (aka Immersive Icons)]],
-  [Icon overhaul for SkyUI. 28K+ endorsements. FOMOD: 2K recommended.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/163838")[B.O.O.B.I.E.S - POTIONS]],
-  [Dedicated potion bottle icons.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/90526")[P.E.N.I.S. for B.O.O.B.I.E.S.]],
-  [Ingredient icon pack.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/89823")[A.S.S. for B.O.O.B.I.E.S.]],
-  [Food & drink icon pack.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/113657")[Rotols More Icons]],
-  [Additional coverage for items B.O.O.B.I.E.S doesn't cover.],
-)
-
-=== Alternatives
-<modernized-ui-alternatives-3>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29116")[SkyUI Item Card Fixes]],
-  [Cleaner item-card presentation.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68557")[Aura's Inventory Tweaks]],
-  [Stronger sorting and icon structure.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/127249")[Weapon Stat Viewer V2]],
-  [Weapon-stat overlay. Lock only if rendered cleanly.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174246")[Enchanted Icon Overhaul]],
-  [Depends on Dynamic Inventory Icon Injector.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/174136")[Dynamic Inventory Icon Injector]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84213")[Book 'Em]],
-  [Book reading/collecting tracking UI.],
-)
-
-=== Item Description Cards
-<modernized-ui-item-description-cards>
-
-Add descriptive text to inventory item cards for better readability. All by the same author, share a consistent style. Install as a set.
-
-#table(
-  columns: 1,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/116785")[Weapons Have Description]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129755")[Ingredients Have Description]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107202")[Scrolls Have Descriptions]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/118941")[Soul Gems Have Description]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/107292")[Food and Drink Have Descriptions]],
-)
-
----
-
-== Map Improvements
-<modernized-ui-map-improvements>
-
-=== Baseline
-<modernized-ui-baseline-4>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/29932")[Flat World Map Framework (FWMF)]],
-  [Non-negotiable map foundation.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/129756")[Local Map Upgrade]],
-  [Local-map for interior/close-range navigation.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74722")[HD Local Map]],
-  [HD textures for the local map upgrade.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/24104")[Atlas Map Markers SE - Updated with MCM]],
-  [Expanded map markers with MCM configuration.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64493")[Traditional (8K) Skyrim and Solstheim Paper Maps for FWMF (AE and SE)]],
-  [High-fidelity paper-map replacer for FWMF.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/64777")[Custom Map Markers for Traditional Skyrim and Solstheim Paper Maps]],
-  [Cosmetic map marker styling for the Traditional map set.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/84112")[Updates to various maps for FWMF]],
-  [Coverage patches for additional FWMF worldspaces.],
-)
-
-=== Alternatives
-<modernized-ui-alternatives-4>
-
-#table(
-  columns: 1,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/143113")[The Nightmare Paper Map for FWMF by Limon]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53788")[Skyrim and Solstheim Paper Maps by Mirhayasu for FWMF]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54710")[Immersive Paper Map (3rd Edition)]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/78995")[Skyrim Paper Map by FreelanceCartography for FWMF]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/157397")[Legendary Map]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/3195")[Pastel Map Markers]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/124686")[Wyrmstooth Paper Map for FWMF]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/92774")[Apocrypha Paper Map for FWMF]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/119215")[Beyond Reach Paper Map for FWMF]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/53878")[Blackreach Paper Map for FWMF]],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/55387")[Soul Cairn Paper Map for FWMF]],
-)
-
----
-
-== Magic And Journal Improvements
-<modernized-ui-magic-and-journal-improvements>
-
-=== Baseline
-<modernized-ui-baseline-5>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/50202")[Convenient Reading UI - SE]],
-  [Reading comfort for normal play.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/22825")[Wider MCM Menu for SkyUI]],
-  [Support fix for cramped config menus.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/117661")[Modern Wait Menu]],
-  [Clock-face interface showing time, weather preview. Gamepad-friendly. SKSE plugin, no ESP.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46358")[Completionist - Skyrim Completion Tracker (NG)]],
-  [MCM-based quest/item/location/book/shout completion tracker. Run the Automated GUI Patcher.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/112406")[Completionist Addons]],
-  [Mod-added content tracking.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/172488")[Quest Journal Overhaul]],
-  [Journal UI redesign with quest tracking improvements.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141837")[Quest Journal Overhaul - Unofficial Mods Support]],
-  [Extended mod support patch. Install after the main QJO.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/173074")[Character Menu SE]],
-  [Character stats/sheet UI replacement. Alternative.],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/175026")[Character Menu SE - More Factions]],
-  [Additional faction tracking for Character Menu SE.],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/159")[Even Better Quest Objectives SE]],
-  [Quest objective text clarifications and journal improvements. Alternative.],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128235")[Knotwork]],
-  [Custom quest journal knotwork art for non-vanilla questlines. Complements Quest Journal Overhaul. SKSE plugin. Alternative.],
-  [],
-)
-
----
-
-== Dialogue UI Improvements
-<modernized-ui-dialogue-ui-improvements>
-
-=== Baseline
-<modernized-ui-baseline-6>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1429")[Better Dialogue Controls]],
-  [First-pass dialogue friction fix.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1428")[Better MessageBox Controls]],
-  [Same for message boxes.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/114238")[Dialogue History]],
-  [Scrollable dialogue log. Essential for gamepad.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/68210")[Improved Alternate Conversation Camera]],
-  [Dialogue camera baseline. Test for CS letterbox conflict.],
-)
-
-=== Alternatives
-<modernized-ui-alternatives-5>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/46546")[Dialogue Interface ReShaped]],
-  [Visual dialogue flow.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/57943")[Convenient Dialogue UI - SE]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/161500")[Smart Talk (Dialogue Menu Enhancer)]],
-  [Highlights quest options, reorders choices, gamepad-friendly skip. 5.5K endorsements.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/103920")[Various Dialogue Tags]],
-  [Adds contextual tags to dialogue options (e.g., [Lie], [Persuade], [Ask]). ESL-flagged.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/151404")[Various Book Tags]],
-  [Adds contextual tags to book-reading prompts. Same author as Various Dialogue Tags.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/141632")[Skyrim Autocorrect - Dialogue Grammar Fixes]],
-  [Fixes grammar, spelling, and punctuation in vanilla dialogue. Text-only, no records.],
-)
-
----
-
-== Controller-Friendly UI Support
-<modernized-ui-controller-friendly-ui-support>
-
-=== Baseline
-<modernized-ui-baseline-7>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1147")[Skyrim SE Controller Interface Fix]],
-  [],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/122648")[Show Player In Menus]],
-  [Renders player character in menus for gear previews. Essential for third-person parity.],
-)
-
-=== Alternatives
-<modernized-ui-alternatives-6>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/27007")[Gamepad Plus Plus]],
-  [Broader controller-input answer.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/97345")[Wheeler - Quick Action Wheel]],
-  [Radial interaction layer.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167380")[WHEELER - Refined]],
-  [Updated visuals, better controller support.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/54309")[Auto Input Switch]],
-  [Automatically switches input device.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/178689")[Show Player In Inventory]],
-  [Renders player model in inventory screen.],
-)
-
----
-
-== UI Scaling For Ultrawide And High Resolution
-<modernized-ui-ui-scaling-for-ultrawide-and-high-resolution>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/386")[Sovngarde - Mist's Font Replacer]],
-  [Text readability for 16:9 4K HDR. Prefer Bold V8.9 first.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/1778")[Complete Widescreen Fix]],
-  [Secondary for ultrawide layouts.],
-)
-
----
-
-== Compass, Markers, And Minimal HUD
-<modernized-ui-compass-markers-and-minimal-hud>
-
-=== Baseline
-<modernized-ui-baseline-8>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/74484")[Compass Navigation Overhaul]],
-  [First-pass navigational layer.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/56123")[CoMAP - Common Marker Addon Project]],
-  [Marker consistency across the FWMF ecosystem.],
-)
-
-=== Alternatives
-<modernized-ui-alternatives-7>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/12440")[Immersive HUD - iHUD SE]],
-  [Minimal-HUD branch.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/49490")[MiniMap]],
-  [Very optional. Last updated May 2021; occasional crash reports on 1.6.1170.],
-)
-
----
-
-== Crafting Menu Improvements
-<modernized-ui-crafting-menu-improvements>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/81409")[COCKS]],
-  [See Framework Prerequisites above. Directly improves the Constructible Object Menu.],
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/18717")[SkyUI - Vanilla Crafting menu]],
-  [Fallback for vanilla-style split categories.],
-)
-
----
-
-== Loading Screens
-<modernized-ui-loading-screens>
-
-=== Baseline
-<modernized-ui-baseline-9>
-
-#table(
-  columns: 3,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Notes]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/138294")[Lore-Friendly Load Screen Compendium (Loading Screens)]],
-  [Locked baseline. Lore-friendly loading screens with in-world art and text. Requires Improved Loading Screen Colors (61712) and SSE Display Tweaks (34705) for the load screen filter — both already in the stack.],
-  [By ChildofDragons. Install at 100% frequency to suppress vanilla tips.],
-)
-
-=== Alternatives
-<modernized-ui-alternatives-8>
-
-#table(
-  columns: 3,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Notes]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/37929")[The Elder Scrolls Legends - Loading Screens]],
-  [110 Legends card-art loading screens. Install at 100% frequency in 16:9 with Fixed Height border.],
-  [Previously locked baseline. Keep as known-good fallback.],
-)
-
----
-
-== Optional HUD
-<modernized-ui-optional-hud>
-
-#table(
-  columns: 2,
-  inset: (x: 8pt, y: 4.5pt),
-  fill: (x, y) => if y == 0 { clr-night-1 } else if calc.rem(y - 1, 2) == 0 { clr-stripe } else { none },
-  stroke: 0.5pt + clr-line,
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Mod]*],
-  [*#text(size: 8.5pt, fill: rgb("#DCE4F0"))[Description]*],
-  table.hline(stroke: 0.8pt + clr-gold),
-  [#link("https://www.nexusmods.com/skyrimspecialedition/mods/167538")[Skyrim Party Sheet - Follower and Player HUD]],
-  [Persistent overlay for player attributes and follower info. v2.7 (June 2026). Research before installing — verify no conflicts with TrueHUD, Oathvein, or Nether's.],
-)
-
----
-
-== Open Research
-<modernized-ui-open-research>
-
-Open research for the UI stack is tracked in `TODO.md`.
 
 
 
