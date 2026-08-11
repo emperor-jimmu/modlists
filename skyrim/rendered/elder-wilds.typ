@@ -1526,7 +1526,7 @@ PGPatcher is a post-installation patcher that generates parallax and PBR-compati
 = Community Shaders & Textures
 <graphics-textures-community-shaders--textures>
 
-*MO2 Separators:* `Graphics - Community Shaders` → `Graphics - Textures & Meshes`
+*MO2 Separators:* `Graphics - Community Shaders` → `Graphics - Textures & Meshes` → `Graphics - Mesh Improvements - Weapons & Armor` → `Graphics - Mesh Improvements - Cities & Structures` → `Graphics - Mesh Improvements - Furniture & Props`
 
 ---
 
@@ -1812,12 +1812,12 @@ Community Shaders ships *Dynamic Cubemaps* and *Image-Based Lighting (IBL)* as s
 
 ---
 
-== Mesh Improvements And Parallax Support → separator: Graphics - Textures & Meshes
-<community-shaders--textures-mesh-improvements-and-parallax-support-separator-graphics-textures--meshes>
+== Mesh Improvements - Core Foundation → separator: Graphics - Textures & Meshes
+<community-shaders--textures-mesh-improvements-core-foundation-separator-graphics-textures--meshes>
 
-Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it.
+Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it. Categories split into the `Graphics - Mesh Improvements - *` sub-separators below; the core foundation stays in `Graphics - Textures & Meshes`.
 
-*⏱ Install order:* Core foundation → doors & walls → locks → furniture & city detail → mesh replacers → environment props. Follow the grouping below.
+*⏱ Install order:* Core foundation (this section) → `Mesh Improvements - Weapons & Armor` → `Mesh Improvements - Cities & Structures` → `Mesh Improvements - Furniture & Props`. Follow the grouping in each section.
 
 === Core Foundation
 <community-shaders--textures-core-foundation>
@@ -1838,6 +1838,21 @@ Improve shape quality and silhouette readability without creating an unmaintaina
   [Prerequisite for FYX collision fixes (→ Doors, Walls & Structures).],
 )
 
+> *PGPatcher:* Use the PGPatcher workflow in → @graphics-pgpatcher-pgpatcher for late-stage parallax generation rules. Do not add *Auto Parallax (79473)* or *Complex Parallax Materials (95134)* as requirements for parallax/CM texture packs — PGPatcher replaces both (see `## Parallax Framework Dependencies` above).
+
+=== Risks & Compatibility
+<community-shaders--textures-risks--compatibility-5>
+
+- Parallax looks excellent on some surfaces and broken on others if support is inconsistent.
+- Snow, rock, landscape, and water meshes should not be finalized independently of texture and weather winners.
+
+---
+
+== Mesh Improvements - Weapons & Armor → separator: Graphics - Mesh Improvements - Weapons & Armor
+<community-shaders--textures-mesh-improvements-weapons--armor-separator-graphics-mesh-improvements-weapons--armor>
+
+Weapon and armor mesh replacers — silhouette upgrades and single-mesh swaps that stack with retextures.
+
 === Weapon Mesh Improvements
 <community-shaders--textures-weapon-mesh-improvements>
 
@@ -1854,6 +1869,13 @@ Improve shape quality and silhouette readability without creating an unmaintaina
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/147965")[Imperial Gladius — Imperial Sword Replacer]],
   [Replaces vanilla Imperial Sword model. Single mesh replacer.],
 )
+
+---
+
+== Mesh Improvements - Cities & Structures → separator: Graphics - Mesh Improvements - Cities & Structures
+<community-shaders--textures-mesh-improvements-cities--structures-separator-graphics-mesh-improvements-cities--structures>
+
+City-scale geometry and clutter — doors, walls, stockades, locks, and the Snazzy city series.
 
 === Doors, Walls & Structures
 <community-shaders--textures-doors-walls--structures>
@@ -1947,6 +1969,13 @@ Install together. Use *2K textures* for all — locks are examined up close but 
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/91604")[Snazzy Interiors Patch Collection]],
 )
 
+---
+
+== Mesh Improvements - Furniture & Props → separator: Graphics - Mesh Improvements - Furniture & Props
+<community-shaders--textures-mesh-improvements-furniture--props-separator-graphics-mesh-improvements-furniture--props>
+
+Standalone mesh replacers for furniture, props, and environment objects outside the city sets — beds, thrones, tents, and world props.
+
 === Mesh Replacer Series
 <community-shaders--textures-mesh-replacer-series>
 
@@ -2018,14 +2047,6 @@ All mesh-only, no ESP.
   [#link("https://www.nexusmods.com/skyrimspecialedition/mods/128579")[JS Badges of Office]],
   [Replacer for Jarl's crown, court-mage's circlet, steward's key. Mesh-only, no ESP.],
 )
-
-> *PGPatcher:* Use the PGPatcher workflow in → @graphics-pgpatcher-pgpatcher for late-stage parallax generation rules. Do not add *Auto Parallax (79473)* or *Complex Parallax Materials (95134)* as requirements for parallax/CM texture packs — PGPatcher replaces both (see `## Parallax Framework Dependencies` above).
-
-=== Mesh Section Notes
-<community-shaders--textures-mesh-section-notes>
-
-- Parallax looks excellent on some surfaces and broken on others if support is inconsistent.
-- Snow, rock, landscape, and water meshes should not be finalized independently of texture and weather winners.
 
 ---
 
@@ -2157,7 +2178,7 @@ Texture and mesh upgrades for furniture, clutter, and items beyond the Snazzy ci
 )
 
 === Risks & Compatibility
-<community-shaders--textures-risks--compatibility-5>
+<community-shaders--textures-risks--compatibility-6>
 
 - Kanjs Soup and Stew has two variants: the base animation mod (113104) and a SkyPatched version (113191). The SkyPatched version is recommended for better compatibility.
 - Nordic Stonewalls + Complex Material: install the base mod first, then the PBR upgrade on top.
@@ -2188,7 +2209,7 @@ Model and texture upgrades for unique named entities and one-of-a-kind objects �
 )
 
 === Risks & Compatibility
-<community-shaders--textures-risks--compatibility-6>
+<community-shaders--textures-risks--compatibility-7>
 
 - Verify Night Mother does not conflict with lighting/interior overhauls that modify the sanctuary cell.
 - Do not let this subsection grow into general NPC or creature overhaul — those are owned by → @npcs-npcs.
@@ -2242,7 +2263,7 @@ In-world visual effects during combat: blood pools, persistent decals, lingering
 )
 
 === Risks & Compatibility
-<community-shaders--textures-risks--compatibility-7>
+<community-shaders--textures-risks--compatibility-8>
 
 - Blood/decals can interact poorly with CS weather mods handling screen-space wetness. Verify under a locked weather baseline.
 - Persistent blood decals can strain frame-rate and memory in long fights. Check MCM for decal lifetime and density.
@@ -2284,7 +2305,7 @@ Visual upgrades for books, notes, and paper — the most-read world objects. Tex
 )
 
 === Risks & Compatibility
-<community-shaders--textures-risks--compatibility-8>
+<community-shaders--textures-risks--compatibility-9>
 
 - With USSEP in the load order, use the SkyPatched variant — it handles USSEP forwarding plus broader compatibility.
 - Enhanced Textures is recommended for 4K displays. At 2K the base BC7 textures are adequate.
@@ -12434,8 +12455,11 @@ Foundations (blue)
 Graphics (green)
 - #box(fill: rgb("#0d4a0d"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics
 - #box(fill: rgb("#196a19"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - PGPatcher
-|-\#268a26 Graphics - Community Shaders-   
+- #box(fill: rgb("#268a26"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Community Shaders
 - #box(fill: rgb("#35a835"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Textures & Meshes
+- #box(fill: rgb("#3ba43b"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Mesh Improvements - Weapons & Armor
+- #box(fill: rgb("#42b342"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Mesh Improvements - Cities & Structures
+- #box(fill: rgb("#49c249"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Mesh Improvements - Furniture & Props
 - #box(fill: rgb("#46c446"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Lighting
 - #box(fill: rgb("#59d859"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Weather & Water
 - #box(fill: rgb("#70e870"), width: 9pt, height: 9pt, radius: 1.5pt) Graphics - Terrain & Flora

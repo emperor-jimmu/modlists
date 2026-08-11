@@ -11,7 +11,7 @@ The pipeline is designed to be evaluated in order — each stage depends on the 
 | Stage | File                                                                  | Category                                                     |
 |-------|-----------------------------------------------------------------------|--------------------------------------------------------------|
 | 1     | [`Graphics - PGPatcher`](modlist-graphics-pgpatcher.md)               | PGPatcher — parallax/PBR mesh generation                     |
-| 2     | [`Community Shaders & Textures`](modlist-graphics-textures.md)        | Community Shaders — post-process framework, and Textures & Meshes — all surface-level asset replacement |
+| 2     | [`Community Shaders & Textures`](modlist-graphics-textures.md)        | Community Shaders — post-process framework, and Textures & Meshes — all surface-level asset replacement; mesh improvements split into `Graphics - Mesh Improvements - Weapons & Armor` / `Cities & Structures` / `Furniture & Props` |
 | 3     | [`Graphics - Lighting`](modlist-graphics-lighting.md)                 | Lighting — interior, exterior, and effect lighting           |
 | 4     | [`Graphics - Weather & Water`](modlist-graphics-weather.md)           | Weather & Water — atmospheric and liquid rendering           |
 | 5     | [`Graphics - Terrain & Flora`](modlist-graphics-terrain.md)           | Terrain & Flora — ground surfaces, grass, trees              |

@@ -1,6 +1,6 @@
 # Community Shaders & Textures
 
-**MO2 Separators:** `Graphics - Community Shaders` → `Graphics - Textures & Meshes`
+**MO2 Separators:** `Graphics - Community Shaders` → `Graphics - Textures & Meshes` → `Graphics - Mesh Improvements - Weapons & Armor` → `Graphics - Mesh Improvements - Cities & Structures` → `Graphics - Mesh Improvements - Furniture & Props`
 
 ---
 
@@ -197,11 +197,11 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 
 ---
 
-## Mesh Improvements And Parallax Support → separator: `Graphics - Textures & Meshes`
+## Mesh Improvements - Core Foundation → separator: `Graphics - Textures & Meshes`
 
-Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it.
+Improve shape quality and silhouette readability without creating an unmaintainable conflict swamp. The best outcome is a stable baseline of mesh improvements, targeted fixes where they matter, and parallax support only where textures benefit from it. Categories split into the `Graphics - Mesh Improvements - *` sub-separators below; the core foundation stays in `Graphics - Textures & Meshes`.
 
-**⏱ Install order:** Core foundation → doors & walls → locks → furniture & city detail → mesh replacers → environment props. Follow the grouping below.
+**⏱ Install order:** Core foundation (this section) → `Mesh Improvements - Weapons & Armor` → `Mesh Improvements - Cities & Structures` → `Mesh Improvements - Furniture & Props`. Follow the grouping in each section.
 
 ### Core Foundation
 
@@ -211,12 +211,31 @@ Improve shape quality and silhouette readability without creating an unmaintaina
 | [Unofficial Material Fix](https://www.nexusmods.com/skyrimspecialedition/mods/21027)                  | Corrects material records for Community Shaders PBR. Install after SMIM.             |
 | [XEMI Utility](https://www.nexusmods.com/skyrimspecialedition/mods/159084)                            | Prerequisite for FYX collision fixes (→ Doors, Walls & Structures).                              |
 
+> **PGPatcher:** Use the PGPatcher workflow in → [PGPatcher Workflow](modlist-graphics-pgpatcher.md) for late-stage parallax generation rules. Do not add **Auto Parallax (79473)** or **Complex Parallax Materials (95134)** as requirements for parallax/CM texture packs — PGPatcher replaces both (see `## Parallax Framework Dependencies` above).
+
+### Risks & Compatibility
+
+- Parallax looks excellent on some surfaces and broken on others if support is inconsistent.
+- Snow, rock, landscape, and water meshes should not be finalized independently of texture and weather winners.
+
+---
+
+## Mesh Improvements - Weapons & Armor → separator: `Graphics - Mesh Improvements - Weapons & Armor`
+
+Weapon and armor mesh replacers — silhouette upgrades and single-mesh swaps that stack with retextures.
+
 ### Weapon Mesh Improvements
 
 | Mod                                                                                                      | Description                                                                                          |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | [LeanWolf's Better-Shaped Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/2017)             | Upgraded vanilla weapon silhouettes and mesh shapes. Stacks with weapon retextures and Heavy Armory. |
 | [Imperial Gladius — Imperial Sword Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/147965) | Replaces vanilla Imperial Sword model. Single mesh replacer.                                         |
+
+---
+
+## Mesh Improvements - Cities & Structures → separator: `Graphics - Mesh Improvements - Cities & Structures`
+
+City-scale geometry and clutter — doors, walls, stockades, locks, and the Snazzy city series.
 
 ### Doors, Walls & Structures
 
@@ -267,6 +286,12 @@ Install together. Use **2K textures** for all — locks are examined up close bu
 | [Snazzy Interiors - Winterhold Birna's Oddments](https://www.nexusmods.com/skyrimspecialedition/mods/138308) |
 | [Snazzy Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/91604)               |
 
+---
+
+## Mesh Improvements - Furniture & Props → separator: `Graphics - Mesh Improvements - Furniture & Props`
+
+Standalone mesh replacers for furniture, props, and environment objects outside the city sets — beds, thrones, tents, and world props.
+
 ### Mesh Replacer Series
 
 All mesh-only, no ESP.
@@ -300,13 +325,6 @@ All mesh-only, no ESP.
 | [Improved Fish PBR](https://www.nexusmods.com/skyrimspecialedition/mods/145624)             | PBR textures for fish. Requires Improved Fish SE as mesh base.                     |
 | [CC Fish PBRed](https://www.nexusmods.com/skyrimspecialedition/mods/131083)                 | PBR textures for CC fish. Requires free AE fish addon.                             |
 | [JS Badges of Office](https://www.nexusmods.com/skyrimspecialedition/mods/128579)           | Replacer for Jarl's crown, court-mage's circlet, steward's key. Mesh-only, no ESP. |
-
-> **PGPatcher:** Use the PGPatcher workflow in → [PGPatcher Workflow](modlist-graphics-pgpatcher.md) for late-stage parallax generation rules. Do not add **Auto Parallax (79473)** or **Complex Parallax Materials (95134)** as requirements for parallax/CM texture packs — PGPatcher replaces both (see `## Parallax Framework Dependencies` above).
-
-### Mesh Section Notes
-
-- Parallax looks excellent on some surfaces and broken on others if support is inconsistent.
-- Snow, rock, landscape, and water meshes should not be finalized independently of texture and weather winners.
 
 ---
 
