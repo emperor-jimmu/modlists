@@ -1,0 +1,7 @@
+# Typst cache / intermediate renders
+output/*.png
+output/*.svg
+
+# OS files
+Thumbs.db
+.DS_Store
