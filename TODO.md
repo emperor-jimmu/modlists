@@ -14,8 +14,8 @@
 [x] 11. No Man's Sky
 [x] 12. X-Plane 12
 [x] 13. Civilization IV
-[ ] 14. Civilization VI
-[ ] 15. Monster hunter Wilds
+[x] 14. Civilization VI
+[x] 15. Monster hunter Wilds
 [ ] 16. Stormworks Build and Rescue
 [x] 17. Derail Valley
 [x] 18. My Summer Car
