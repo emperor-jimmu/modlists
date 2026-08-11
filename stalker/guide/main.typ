@@ -26,7 +26,7 @@
 #show heading: it => block(
   width: 100%,
   above: if it.level == 1 { 1.5em } else { 1.15em },
-  below: if it.level == 1 { 0.75em } else { 0.5em },
+  below: if it.level == 1 { 1.05em } else { 0.75em },
   fill: if it.level == 1 { banner } else { none },
   inset: if it.level == 1 { (x: 12pt, y: 7pt) } else { 0pt },
   radius: if it.level == 1 { 5pt } else { 0pt },

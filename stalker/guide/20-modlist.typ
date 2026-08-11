@@ -53,6 +53,73 @@ The pack is organized in MO2 by category; the full per-mod list lives there afte
   Gameplay systems and exact numbers drift between GAMMA versions. This guide describes how the systems *work* — for current values and recipes, open the Mod Configuration Menu (MCM) in-game and check the mod's own options.
 ]
 
+== Notable mods inside the pack
+
+GAMMA is built from roughly 400 addons, each with its original author credited inside the pack. The list below is a curated subset of the best-known ones, taken from the pack's own repository — it is *not* exhaustive. Every entry links to its folder in the official pack repo; from inside the game, you can also right-click any mod in MO2 and choose *visit moddb.com* to open the author's original page (per the official GAMMA README).
+
+=== Core systems & survival
+
+#table(
+  columns: (2.1fr, 1.2fr, 2.4fr),
+  inset: 6pt,
+  stroke: hairline,
+  fill: (x, y) => if y == 0 { banner } else if calc.even(y) { panel } else { panel2 },
+  align: (left, left, left),
+  [*Mod*], [*Author*], [*Role in the pack*],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/140-%20Weapon%20Parts%20Overhaul%20-%20arti")[Weapon Parts Overhaul]], [arti], [Parts-based weapon condition and repair — the core of GAMMA's repair loop],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/G.A.M.M.A.%20Armors%20repair%20like%20WPO")[Armors repair like WPO]], [G.A.M.M.A.], [The same parts system applied to armor and suits],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/ZCP%201.5d")[ZCP 1.5d]], [ZCP team], [Zone Customization Project — spawns, squads and population control],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/109-%20MCM%20Mod%20Configuration%20Menu%20-%20RavenAscendant")[MCM Mod Configuration Menu]], [RavenAscendant], [The in-game config menu nearly every other mod plugs into],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/G.A.M.M.A.%20Economy%20(don't%20disable,%20turn%20on%20Black%20Market%20to%20buy%20gear)")[G.A.M.M.A. Economy]], [G.A.M.M.A.], [No gear trading by default; optional Black Market toggle],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/G.A.M.M.A.%20Cooking%20Overhaul")[G.A.M.M.A. Cooking Overhaul]], [G.A.M.M.A.], [The cooking and meal system behind hunger management],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/234-%20Dynamic%20Anomalies%20Overhaul%20-%20Demonized")[Dynamic Anomalies Overhaul]], [Demonized], [Anomaly fields that evolve and shift over time],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/265-%20NPCs%20Die%20in%20Emissions%20for%20Real%20-%20TheMrDemonized")[NPCs Die in Emissions for Real]], [TheMrDemonized], [NPCs actually die in emissions — the Zone plays by its own rules],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/437-%20Weighted%20NPC%20Random%20Loadouts%20-%20SD")[Weighted NPC Random Loadouts]], [SD], [Randomized, weighted enemy gear — no two fights feel the same],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/G.A.M.M.A.%20Mutants%20Overhaul")[G.A.M.M.A. Mutants Overhaul]], [G.A.M.M.A.], [Expanded and rebalanced mutant roster],
+)
+
+=== Items, weapons & animations
+
+#table(
+  columns: (2.1fr, 1.5fr, 2.1fr),
+  inset: 6pt,
+  stroke: hairline,
+  fill: (x, y) => if y == 0 { banner } else if calc.even(y) { panel } else { panel2 },
+  align: (left, left, left),
+  [*Mod*], [*Author*], [*Role in the pack*],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/40-%20Food%20Drugs%20and%20Drinks%20Animations%20FDDA%20-%20Feel_Fried")[Food, Drugs and Drinks Animations]], [Feel_Fried], [First-person consume animations for everything you eat, drink or inject],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/312-%20Gunslinger%20Guns%20for%20Anomaly%20-%20Teivazcz%20%26%20Gunslinger%20Team")[Gunslinger Guns for Anomaly]], [Teivazcz & Gunslinger Team], [Premium weapon pack — models, animations and handling],
+  [#link("https://www.moddb.com/mods/stalker-anomaly/addons")[BoomSticks and SharpSticks]], [BaS team], [The classic weapon pack — already integrated via multiple BaS addons in GAMMA],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/Anomaly%20Magazines%20Redux%20(need%20to%20disable%20GAMMA%20unjam%20reload%20same%20key)")[Anomaly Magazines Redux]], [—], [Realistic magazine system — track rounds per magazine],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/127-%20Toggle%20Scope%20-%20Ishmaeel")[Toggle Scope]], [Ishmaeel], [One-key scope toggling instead of scope cycling],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/462-%20Procedural%20Movement%20Animations%20-%20party_50")[Procedural Movement Animations]], [party_50], [Fluid first-person body and movement animation],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/236-%201st%20Person%20Visible%20Body%20Ported%20from%20SWM%20-%20Wang_Laoshi%20%26%20SWM%20Team")[1st Person Visible Body]], [Wang_Laoshi & SWM Team], [You can see your own body from first person],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/95-%20Doom-like%20weapon%20inspection%20-%20Grokitach")[Doom-like weapon inspection]], [Grokitach], [Inspect your weapon in hand — animations, not stats],
+)
+
+=== Visuals, audio & UI
+
+#table(
+  columns: (2.1fr, 1.2fr, 2.4fr),
+  inset: 6pt,
+  stroke: hairline,
+  fill: (x, y) => if y == 0 { banner } else if calc.even(y) { panel } else { panel2 },
+  align: (left, left, left),
+  [*Mod*], [*Author*], [*Role in the pack*],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/290-%20Atmospherics%20Shaders%20Weathers%20and%20Reshade%20Latest%20-%20Hippobot")[Atmospherics Shaders Weathers and Reshade]], [Hippobot], [Hippos Atmospherics — the weather and lighting foundation],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/188-%20Enhanced%20Shaders%20-%20KennShade")[Enhanced Shaders]], [KennShade], [Extra shader work on top of the rendering base],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/Oleh's%20Miscellaneous%20Sound%20Improvements")[Oleh's Miscellaneous Sound Improvements]], [Oleh], [The tuned soundscape that defines GAMMA's audio],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/276-%20Dark%20Signal%20Mutants%20Audio%20-%20Shrike")[Dark Signal Mutants Audio]], [Shrike], [Mutant audio component — note: only this part of Dark Signal is in the pack],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/293-%20PDA%20Taskboard%20-%20iTheon")[PDA Taskboard]], [iTheon], [A task board in the PDA — accept and track tasks in one place],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/110-%20SortingPlus%20-%20RavenAscendant")[SortingPlus]], [RavenAscendant], [Smart inventory sorting and filtering],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/G.A.M.M.A.%20Minimalist%20HUD")[G.A.M.M.A. Minimalist HUD]], [G.A.M.M.A.], [Cleaner HUD layout with the pack's default look],
+  [#link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons/164-%20Hunger%20Thirst%20Sleep%20UI%200.71%20-%20xcvb")[Hunger Thirst Sleep UI]], [xcvb], [Clear HUD indicators for the survival stats],
+)
+
+#info[
+  The complete list lives in your MO2 instance (left pane, grouped by category) and in the pack repository: #link("https://github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons")[github.com/Grokitach/Stalker_GAMMA/tree/main/G.A.M.M.A/modpack_addons]. Many mods are GAMMA-internal ("G.A.M.M.A. ..." entries) — treat the ones above as the landmarks, not the whole map.
+]
+
 == Difficulty and progression presets
 
 GAMMA separates *combat difficulty* from *progression difficulty*:
@@ -80,4 +147,4 @@ Everything in this guide is downloaded from exactly two trusted hubs — never t
 
 == Where the modlist lives
 
-After installation, open *Mod Organizer 2* (desktop shortcut): the left pane lists every installed mod grouped by category, the right pane shows the load order. Treat this list as the source of truth for "what is in GAMMA". Do not hand-edit or reorder the pack's own mods — changes are best made through the launcher, MCM options, or carefully vetted addons (chapter 4).
+After installation, open *Mod Organizer 2* (desktop shortcut): the left pane lists every installed mod grouped by category, the right pane shows the load order. Treat this list as the source of truth for "what is in GAMMA". Right-click any mod → *visit moddb.com* to open the author's original page. Do not hand-edit or reorder the pack's own mods — changes are best made through the launcher, MCM options, or carefully vetted addons (chapter 4).

@@ -9,7 +9,7 @@ _A field manual for surviving the Zone under GAMMA: from the New Game screen to 
   What kind of game is this? An open-world survival sandbox with no hand-holding. You choose your faction, your goals and your pace; the Zone kills the careless. Expect to die, learn, and come back smarter. This chapter is long on purpose — read the sections you need, when you need them.
 ]
 
-== 1. Starting out — the New Game screen
+== Starting out — the New Game screen
 
 === Choose a game mode
 
@@ -48,7 +48,7 @@ Your faction decides your starting location, gear, allies and enemies. Only some
 - *Progression preset* — set in the GAMMA launcher: *Tourist* for your first character.
 - *Starting loadout* — pick something light; you will replace everything within a few hours anyway. A pistol or shotgun, a knife, a sleeping bag and basic meds are a fine kit.
 
-== 2. Interface and controls
+== Interface and controls
 
 The HUD shows health, stamina, weight, ammo and your quick-use slots. The *PDA* (map + journal) is your best friend: it holds mission markers, stash notes and zone intel.
 
@@ -81,7 +81,7 @@ The HUD shows health, stamina, weight, ammo and your quick-use slots. The *PDA* 
 
 Open the pause menu → *Mod Configuration Menu*. This is GAMMA's control panel: every included mod exposes its options here — economy sliders, loot rates, repair settings, audio, crosshair, and dozens more. When a guide or the Discord tells you to "change X", it is almost always in MCM.
 
-== 3. A day in the Zone — the core loop
+== A day in the Zone — the core loop
 
 GAMMA is best played as a routine, not a series of sprints. A healthy day looks like this:
 
@@ -97,7 +97,7 @@ GAMMA is best played as a routine, not a series of sprints. A healthy day looks 
   Every hour you survive teaches you one more rule of the Zone. The loop above is the frame; the rules are the content. When in doubt, do the boring thing: it is usually the alive thing.
 ]
 
-== 4. Your first 90 minutes (Loner start)
+== Your first 90 minutes (Loner start)
 
 A concrete walkthrough of the opening, using the classic Loner start in the Cordon:
 
@@ -113,7 +113,7 @@ A concrete walkthrough of the opening, using the classic Loner start in the Cord
   The single most common first-hour death is wandering into the military checkpoint zone at the north of the Cordon. Watch the PDA map for red hostility, listen for gunfire ahead, and turn around if the firefight sounds too big for you.
 ]
 
-== 5. Health and survival — deep dive
+== Health and survival — deep dive
 
 === The statuses that kill you
 
@@ -140,7 +140,7 @@ A concrete walkthrough of the opening, using the classic Loner start in the Cord
 - *Read the item card.* GAMMA's medical items are specific: the right tool for the right status, and often a use-time to respect.
 - *Armor is your health bar.* A suit in good condition absorbs hits that would otherwise shred your limbs. A wrecked suit makes every fight a gamble.
 
-== 6. Radiation and artifacts
+== Radiation and artifacts
 
 === Radiation basics
 
@@ -163,7 +163,7 @@ Radiation builds up from contaminated ground, artifact handling and certain anom
   After every *emission*, anomaly fields reshuffle and new artifacts can spawn. An experienced stalker's best payday is a well-known field right after an emission.
 ]
 
-== 7. Anomalies and the Zone
+== Anomalies and the Zone
 
 === Anomaly encyclopedia
 
@@ -189,7 +189,7 @@ The Zone's first rule: *bolt first, walk second*. Throw a bolt (a keybound gadge
   An *emission* is the Zone's periodic purge: a warning flashes on the PDA, the sky turns red, and lethal radiation sweeps the map for a couple of minutes. The moment you see the warning, get *indoors* — a building or bunker — and wait it out. Do not try to outrun it in the open. After an emission the world resets: anomaly fields reshuffle and new artifacts can spawn.
 ]
 
-== 8. Mutants
+== Mutants
 
 The Zone's wildlife is uniformly hostile. Learn their behavior and match your weapons to the threat:
 
@@ -215,7 +215,7 @@ The Zone's wildlife is uniformly hostile. Learn their behavior and match your we
   GAMMA expands the bestiary and lets you *loot mutant parts* — hides, meat and organs used in crafting. Skin what you kill; the parts sell and feed your crafting loop.
 ]
 
-== 9. Weapons, ammo and ballistics
+== Weapons, ammo and ballistics
 
 === Caliber guide
 
@@ -256,7 +256,7 @@ The Zone's wildlife is uniformly hostile. Learn their behavior and match your we
 - *Suppressors work.* Quiet shots keep engagements one-sided; noise draws the Zone to you.
 - *Zeroing and scopes matter at range.* Know your optic, range your target.
 
-== 10. Armor and protection
+== Armor and protection
 
 #table(
   columns: (1.4fr, 2.1fr, 1.9fr),
@@ -276,7 +276,7 @@ The Zone's wildlife is uniformly hostile. Learn their behavior and match your we
 - *Upgrade via technicians* — suits take upgrades (pockets, protection, movement) using parts; the technician's tool tier gates what is available.
 - *Match suit to mission* — artifact hunting favors anomaly protection; fighting favors ballistic protection; a good stalker owns both.
 
-== 11. Combat tactics
+== Combat tactics
 
 - *Cover, burst fire, reposition.* Standing still and trading shots is how stalkers become stashes.
 - *Use your gadgets* — binoculars to scout, night vision to own the dark, the detector to avoid surprises.
@@ -284,14 +284,14 @@ The Zone's wildlife is uniformly hostile. Learn their behavior and match your we
 - *Stealth is a weapon* — silencers, slow movement and angles keep fights one-sided.
 - *Know when to run* — every rule of the Zone has an exception called "alive".
 
-== 12. Scavenging and inventory
+== Scavenging and inventory
 
 - *Loot everything useful* — bodies carry weapons, parts, ammo, meds and junk. Weapons usually drop in pieces and poor condition; that is fine, parts are the real prize.
 - *Weight discipline* — overburdening drains stamina and speed. Decide what is worth carrying; stash the rest.
 - *Backpacks* — larger carrying bags exist as equipment; upgrading your carry capacity is a real early-game power spike.
 - *Sort as you loot* — keep a mental "sell pile" (junk, spare parts, duplicates) and a "keep pile" (ammo for your calibers, meds, tools). It saves trips.
 
-== 13. Repair and crafting — the heart of GAMMA
+== Repair and crafting — the heart of GAMMA
 
 Everything you wear and shoot degrades, and *you* are the repair shop.
 
@@ -318,7 +318,7 @@ At base crafting stations you can make meds, food, ammunition (reload from casin
   Do not hoard a ruined weapon "for later" — unless you have the parts and kits, it is dead weight. Dismantle it into useful parts instead.
 ]
 
-== 14. Economy and missions
+== Economy and missions
 
 - *Traders* sell ammunition, consumables, food, junk and services — but no weapons or armor by default. They also *buy* your looted junk, parts and artifacts.
 - *Money flows out* (ammo, meds, repairs, fast travel) and comes in from *tasks* — the honest economy loop is: loot → sell → buy consumables → repeat.
@@ -326,32 +326,32 @@ At base crafting stations you can make meds, food, ammunition (reload from casin
 - *Reputation* — completing tasks raises standing with a faction, unlocking better prices, services and gear availability; shooting friendlies does the opposite. Keep your reputation intact where you shop.
 - *Guides* — NPCs at bases who fast-travel you across the Zone for money. Worth every ruble when crossing hostile territory.
 
-== 15. Stashes and safehouses
+== Stashes and safehouses
 
 - *Stashes* are hidden loot caches — some marked on the PDA by task-givers, some found by chance or rumour. They hold tools, parts, documents and meds; they are the best early-game progression.
 - *Personal stashes* — boxes at friendly bases store your surplus. Use them: the Zone is long, and you will come back for that spare suit.
 - *Safehouses* — some buildings are safe to sleep and save in. Learn which ones; a safe bed beats a sleeping bag in the bushes.
 
-== 16. A-Life and factions — how the world lives
+== A-Life and factions — how the world lives
 
 - *A-Life* simulates the Zone around you: squads patrol, hunt, fight and die — on and off screen. Gunfire in the distance is a real fight with real loot on the ground afterward.
 - *Faction wars* — Duty and Freedom skirmish, bandits raid, military sweeps. Neutral ground shifts; check the PDA's faction map before crossing "safe" roads.
 - *Disguises* — wearing an enemy faction's armor can fool distant patrols. It does not survive close inspection or a scan — keep your distance and your story straight.
 - *Your reputation is social capital.* In GAMMA, money buys consumables, but standing buys trust, prices and access. Spend both wisely.
 
-== 17. Navigation and travel
+== Navigation and travel
 
 - The *PDA map* is your compass: mission markers, known stashes, faction territory. Set waypoints and use the compass.
 - The Zone is one continuous open world — no loading screens between regions. Travel is on foot or via guides.
 - *North is harder.* The Cordon and Garbage are gentle; Zaton, Jupiter and the north (Pripyat, the CNPP) demand better gear, meds and radiation protection. Do not wander north in a leather jacket.
 
-== 18. The progression arc
+== The progression arc
 
 - *The hobo phase (first hours)* — pistol or shotgun, light suit, barely enough meds. Scavenge, do tasks, clean your gun, learn the Zone's rules.
 - *The survivor phase* — assault rifles, decent armor, Advanced tools, your own crafting loop. You start choosing engagements instead of fleeing them.
 - *The veteran phase* — exoskeleton or SEVA suit, artifact loadout, high-caliber rifles, northward expeditions. The Zone's best loot — and hardest threats — is now yours to take.
 
-== 19. How to die less — a field checklist
+== How to die less — a field checklist
 
 #table(
   columns: (1.7fr, 1.9fr),
@@ -370,7 +370,7 @@ At base crafting stations you can make meds, food, ammunition (reload from casin
   [Rushing the north], [Progress by gear, not by curiosity],
 )
 
-== 20. Tips for new stalkers
+== Tips for new stalkers
 
 1. *Start on Tourist.* You are learning systems, not proving anything.
 2. *Quicksave often* (#key("F5")) — before fights, anomalies and long walks. Death is cheap; losing progress is not.
@@ -383,7 +383,7 @@ At base crafting stations you can make meds, food, ammunition (reload from casin
 9. *Do tasks for technicians first* — tools are the real level-ups.
 10. *Respect emissions.* The warning is not a suggestion.
 
-== 21. Common mistakes
+== Common mistakes
 
 - *Buying gear from traders* — they do not sell weapons/armor by default; spend on ammo and meds instead.
 - *Selling all your parts* — repair needs parts; keep a working stock.
