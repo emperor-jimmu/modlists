@@ -17,6 +17,8 @@
 [ ] 14. Civilization VI
 [ ] 15. Monster hunter Wilds
 [ ] 16. Stormworks Build and Rescue
-[ ] 17. Derail Valley
-[ ] 18. My Summer Car
-[ ] 19. Motorsport Manager
+[x] 17. Derail Valley
+[x] 18. My Summer Car
+[x] 19. Motorsport Manager
+[ ] 20. Stormworks Build and Rescue
+[ ] 21. My Winter Car
