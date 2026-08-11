@@ -7,7 +7,7 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 |  Mod                     |  Description                                                                                                                                         |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Better Dynamic Snow SE](https://www.nexusmods.com/skyrimspecialedition/mods/9121) |  Snow-and-ash multistage accumulation. Works with `Simplicity of Snow`; the `BDSPatcher` Synthesis patcher handles mod-added objects automatically.  |
+| [Better Dynamic Snow 3 (BDS SE v3.6.0)](https://www.nexusmods.com/skyrimspecialedition/mods/9121) |  **Locked single-pass projected snow baseline.** Replaces Simplicity of Snow (double-pass, rejected — incompatible with PBR landscapes). Install the v3.6.0 main file.  |
 | [Better Dynamic Ash SE](https://www.nexusmods.com/skyrimspecialedition/mods/54754) |  Solstheim ash equivalent.                                                                                                                           |
 
 ### Landscape And Terrain
@@ -45,22 +45,23 @@ Treat terrain, roads, and snow as one connected presentation layer. Must stay co
 
 |  Mod                                        |  Description                                                   |
 | ------------------------------------------- | -------------------------------------------------------------- |
-| [Simplicity of Snow](https://www.nexusmods.com/skyrimspecialedition/mods/56235) |                                                                |
 | [Nordic Snow](https://www.nexusmods.com/skyrimspecialedition/mods/670) |                                                                |
 | [Nordic Snow - Complex Material](https://www.nexusmods.com/skyrimspecialedition/mods/133034) |                                                                |
 | [Hyperborean Snow SE - 8K](https://www.nexusmods.com/skyrimspecialedition/mods/29283) |  Comparison candidate, not locked.                             |
-| [Better Dynamic Snow SE](https://www.nexusmods.com/skyrimspecialedition/mods/9121) |  Multistage accumulation with terrain-blended coverage.        |
+| [Better Dynamic Snow 3 (v3.6.0)](https://www.nexusmods.com/skyrimspecialedition/mods/9121) |  Single-pass projected snow — the PBR-safe replacement for Simplicity of Snow.  |
 | [Better Dynamic Ash SE](https://www.nexusmods.com/skyrimspecialedition/mods/54754) |  Solstheim ash equivalent.                                     |
 | [Enhanced Rocks and Mountains - CM and PBR](https://www.nexusmods.com/skyrimspecialedition/mods/121336) |  See Landscape section above; listed here for snow coherence.  |
-| [Softly Obscuring Snowfall - No Dirty Ruins Snow](https://www.nexusmods.com/skyrimspecialedition/mods/152163) |  Removes dirty brown vertex-color shading on snow statics for a clean fresh-snow look. Meshes based on vanilla/SMIM/Assorted Mesh Fixes. FOMOD has optional patches for Simplicity of Snow, Snozz' Resource Pack, Enhanced Rocks and Mountains, Wyrmstooth, Deadly Dragon Lairs. Fits the CS clean-snow direction.  |
+| [Softly Obscuring Snowfall - No Dirty Ruins Snow](https://www.nexusmods.com/skyrimspecialedition/mods/152163) |  Removes dirty brown vertex-color shading on snow statics for a clean fresh-snow look. Meshes based on vanilla/SMIM/Assorted Mesh Fixes. FOMOD has optional patches for Snozz' Resource Pack, Enhanced Rocks and Mountains, Wyrmstooth, Deadly Dragon Lairs (skip the Simplicity of Snow patch — SoS no longer in the list). Fits the CS clean-snow direction.  |
 
 ### Alternatives
 
-- **Windhelm Is Snowy - Base Object Swapper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165102)) — BOS-based snow coverage for Windhelm. Complements Simplicity of Snow.
+- **Windhelm Is Snowy - Base Object Swapper** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/165102)) — BOS-based snow coverage for Windhelm. Complements BDS3's projected snow.
 - **Snowy Standing Stones for Snowy Regions** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/139000)) — BOS-based snow coverage for standing stones in snowy regions.
 
 ### Risks & Compatibility
 
+- **Simplicity of Snow (56235) is rejected** — double-pass snow is explicitly incompatible with PBR landscapes: "Do not use double pass snow or ash mods like Simplicity of Snow, BDS2, or Better Dynamic Ash together with my landscape. They look wrong with PBR." (Faultier, mod 125308). BDS3 (9121 v3.6.0) is the single-pass projected-snow replacement; the locked TomatoRim PBR Landscapes (177621) lists "Better Dynamic Snow SE – Version 3.6" as a required mod.
+- **Better Dynamic Ash (54754)** is also double-pass per Faultier — keep for Solstheim worldspace edits only, with BDA's ESP loading **before** the PBR landscape ESP.
 - Snow can look good in isolation and fail once mixed with mountains, roads, and weather-heavy scenes.
 - Heavy terrain parallax can look impressive close up while adding artifact risk or visual noise in motion.
 - ERM's optional **Blended ERM** file is a standalone alternative mesh set, not a PGPatcher requirement (the mod's only listed requirement is PGPatcher, already baseline). Its meshes are intentionally non-parallax and only render correctly after PGPatcher re-adds parallax — so it swaps in *instead of* the main meshes, never alongside them. Community-standard use: fix ugly rock-to-terrain seams under PG output. If testing shows seam artifacts: first try the **Rugged** variant in the ERM Textures FOMOD (resolved reported parallax rippling on snow/cliff edges without swapping meshes), then swap main meshes → Blended ERM and re-run PG. Caveats: Blended v1.0.2 (Apr 2025) predates main v1.1.2 (Apr 2026) and misses its rockl02 seam fix; if adopted, also pick the matching Blended options in ERM Fix and Addon's FOMOD (v6.2+) for underground consistency.

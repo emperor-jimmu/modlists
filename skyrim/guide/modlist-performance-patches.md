@@ -393,7 +393,7 @@ Normalizes weapon stats across the entire load order when standalone weapon mods
 
 ### Stage 6 — Snow, Weather, Region
 
-- **`BDSPatcher`** — **required.** Use `BDSPatcher` entry (not Northpoint variant). Run with both BetterDynamicSnow and BetterDynamicAsh keywords active.
+- **`BDSPatcher`** — **verify with BDS3.** Built for the BDS2/Simplicity of Snow keyword workflow (both dropped — BDS3/9121 v3.6.0 is the single-pass projected-snow baseline, → [Terrain & Flora](modlist-graphics-terrain.md)). BDS3 uses its own material/ESM records, so BDSPatcher's keyword patching is likely obsolete. Keep the entry only if Better Dynamic Ash (54754, v2-era keyword mod) needs keyword coverage for mod-added Solstheim objects — test and drop if not needed.
 - `SSBGPatcher`
 - `Nights Adjuster` / `Darker Weather Nights` — pick one.
 - `SkyVRaan Weather Patcher` — only if installed.

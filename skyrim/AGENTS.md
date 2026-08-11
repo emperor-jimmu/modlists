@@ -147,6 +147,7 @@ These are confirmed from the current modlist state. When evaluating armor/body/p
 - **TomatoRim PBR Landscapes AIO (177621):** Locked landscape texture baseline. PBR-native, chosen for shared-author visual coherence with Tomato's PBR Vanilla Trees (locked tree texture companion to NOTWL). Choose 2K.
 - **Enhanced Rocks and Mountains - CM and PBR (121336):** Locked mountain/rock identity. Drop Majestic Mountains entirely.
 - **Praedy's Night Sky AIO (47530):** Locked night sky baseline (stars, nebula, galaxy, constellations, moons, auroras). FOMOD-tunable. Choose 2K. 5,795 endorsements, v2.1.
+- **BDS3 — Better Dynamic Snow 3 (9121, install v3.6.0 main file):** Locked single-pass projected snow baseline (2026-08-11). **Simplicity of Snow (56235) REJECTED** — double-pass snow incompatible with PBR landscapes (Faultier 125308 explicit ban; TomatoRim 177621 requires BDS 3.6). Better Dynamic Ash (54754) kept for Solstheim worldspace edits only, ESP before the PBR landscape ESP. BDSPatcher likely obsolete (built for BDS2/SoS keyword workflow) — see `modlist-graphics-terrain.md` → Snow And Support.
 - **Shooting Stars SE (73090):** Locked complementary layer. Script-free dynamic shooting star streaks on top of Praedy's static sky.
 
 ### Behavior & Animation

@@ -130,7 +130,7 @@ The mesh/data side of parallax and complex materials is handled by **PGPatcher**
 
 PBR is an adoption strategy layered on top of Community Shaders, not a separate renderer choice. The real decision is how selectively to use PBR-ready materials and conversions. Every install below requires **PGPatcher** (→ [PGPatcher Workflow](modlist-graphics-pgpatcher.md)), run after the texture stack settles.
 
-Landscape and rock PBR overrides (Faultier's PBR Landscapes, Enhanced Rocks and Mountains) are decided in → [Terrain & Flora](modlist-graphics-terrain.md). PGPatcher applies mesh patches across all separators — re-run once ALL PBR texture mods (Textures, Terrain, Characters, Lighting) are stable.
+Landscape and rock PBR overrides (TomatoRim PBR Landscapes, Enhanced Rocks and Mountains) are decided in → [Terrain & Flora](modlist-graphics-terrain.md). PGPatcher applies mesh patches across all separators — re-run once ALL PBR texture mods (Textures, Terrain, Characters, Lighting) are stable.
 
 ### Baseline — Balanced PBR Route
 
@@ -142,8 +142,10 @@ Broad AIO base + targeted city and farmhouse overrides.
 - **Tomato's PBR Farmhouses 2.0** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/135774)) — Optional farmhouse override. Install Grey 2K (84 MB), skip 4K. Optional: `WSU PBR Farmhouse windows patch` if Window Shadows Ultimate is in the stack.
 - **Faultier's PBR Armors and Clothes** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/175319), 2.9 GB) — Complete PBR retexture of all vanilla armors/weapons/clothes. Requires CS + PGPatcher. Install under this separator before the clothing/armor texture upgrades in → [Characters & Creatures](modlist-graphics-characters.md).
 - **Skyking Nordic Ruins Complex Parallax** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/183021)) — Nordic ruins dungeon texture override. By Skyking2020 (Skyland AIO author). Complete Nordic ruins retexture with Complex Parallax textures, new custom meshes (individual-plank wooden stairs/platforms), and ivy/root coverage. Requires CS + PGPatcher. **Choose 2K.** Install after VPBR, before running PGPatcher. Supersedes the Numinous Nord Ruins tentative (146766, rejected — ENB-oriented, author forbids CS PBR porting).
+- **Faultier's PBR Windows** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125308?tab=files), 169 MB) — Standalone optional file, **not** part of the Skyrim AIO (no AIO dependency; "no requirements except for running PG"). PBR multilayer parallax windows, including farmhouses/Whiterun/Riften windows the AIO doesn't cover, **plus shadow masks for Window Shadows Ultimate** (150494, locked baseline in → [Lighting](modlist-graphics-lighting.md)) so window shadows match window shapes. Install after VPBR.
+- **Faultier's PBR Road Signs** ([Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/125308?tab=files), 42.7 MB) — Standalone optional file, **not** part of the Skyrim AIO ("requirements: none", supports Cutting Room Floor). PBR road-sign textures. Pairs with Point The Way (→ [World Feel](modlist-world-feel.md)) — signposts use vanilla meshes, so the retexture applies.
 
-> **Terrain & rock PBR** is owned by → [Terrain & Flora](modlist-graphics-terrain.md): Faultier's PBR Landscapes 4k (125308) fills VPBR's terrain gap; Enhanced Rocks and Mountains (121336) is the locked mountain/rock baseline. Do NOT install `Faultier's Skyrim AIO` alongside VPBR — same texture paths.
+> **Terrain & rock PBR** is owned by → [Terrain & Flora](modlist-graphics-terrain.md): TomatoRim PBR Landscapes AIO (177621) fills VPBR's terrain gap; Enhanced Rocks and Mountains (121336) is the locked mountain/rock baseline. Do NOT install `Faultier's Skyrim AIO` alongside VPBR — same texture paths. The **optional** `PBR Windows` and `PBR Road Signs` files above are exceptions: they are standalone files outside the AIO and safe alongside VPBR.
 
 Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** as standard features. Verify the chosen PBR texture set uses both before adding extra reflection/cubemap mods.
 
@@ -183,7 +185,7 @@ Community Shaders ships **Dynamic Cubemaps** and **Image-Based Lighting (IBL)** 
 1. Install **Vanilla PBR AIO** — broad PBR base for architecture, clutter, actors, dungeons.
 2. Optionally install **Tomato's Whiterun Remake**, **Tomato's Solitude Remastered**, and **Tomato's PBR Farmhouses 2.0** after VPBR.
 3. Install **Faultier's PBR Armors and Clothes** — PBR gear coverage (→ [Characters & Creatures](modlist-graphics-characters.md) for related body/skin texture install order).
-4. Install landscape and rock PBR overrides per → [Terrain & Flora](modlist-graphics-terrain.md) (Faultier's PBR Landscapes, ERM).
+4. Install landscape and rock PBR overrides per → [Terrain & Flora](modlist-graphics-terrain.md) (TomatoRim PBR Landscapes, ERM).
 5. Run **PGPatcher** last — all PBR texture mods above require it (→ [PGPatcher Workflow](modlist-graphics-pgpatcher.md)).
 
 ### Risks & Compatibility
@@ -207,7 +209,6 @@ Improve shape quality and silhouette readability without creating an unmaintaina
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | [Static Mesh Improvement Mod (SMIM)](https://www.nexusmods.com/skyrimspecialedition/mods/659)         | Core mesh foundation.                                                                |
 | [Unofficial Material Fix](https://www.nexusmods.com/skyrimspecialedition/mods/21027)                  | Corrects material records for Community Shaders PBR. Install after SMIM.             |
-| [Simplicity of Snow v0.26](https://www.nexusmods.com/skyrimspecialedition/mods/56235)                 | Main file only (32.8 MB). Skip Parallax Meshes and patches for mods not in the list. |
 | [XEMI Utility](https://www.nexusmods.com/skyrimspecialedition/mods/159084)                            | Prerequisite for FYX collision fixes (→ Doors, Walls & Structures).                              |
 
 ### Weapon Mesh Improvements
