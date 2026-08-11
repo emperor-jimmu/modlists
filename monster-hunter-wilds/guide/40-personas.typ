@@ -76,7 +76,7 @@ Monster Hunter Wilds has no difficulty slider and no class system — your ident
 - *Seikret:* flame colors — red-orange feathers with gold decoration.
 - *Weapons:* start Dual Blades; carry Sword & Shield for mounts and flex matchups.
 - *House rules:* stay in the monster's face — leaving the immediate melee range without a reason counts as a failed rule; create at least one wound per minute of combat; never let the weapon's sharpness drop below the middle bar mid-fight (Auto Sharpen only works between hunts — the Wildfire must manage it live).
-- *Goal:* top the damage chart in every hunt — alone, with Support Hunters, or with friends in a private lobby.
+- *Goal:* top the damage chart in every hunt — alone or alongside Support Hunters.
 - *Mods that shine:* the Overlay (the scoreboard), Enhanced Damage Numbers (the feedback loop), Auto Restock (never stop for items), the visual stack for clarity at speed.
 
 == 4 · The Skybound Warden
@@ -94,7 +94,7 @@ Monster Hunter Wilds has no difficulty slider and no class system — your ident
 - *Hunter:* a curious, open face with light freckles or a faint sun-mark; tousled hair; warm voice, mid pitch. Name them for the sky — *Crane*, *Lark*, *Zenith*.
 - *Palico:* soft, cream-colored fur, big eyes; name them *Moth*. Felyne language — they have their own research.
 - *Seikret:* pale feathers with sky-blue tips, feather-pattern pendant.
-- *Weapons:* start Insect Glaive; add Hunting Horn as the second for multiplayer hunts and hard walls.
+- *Weapons:* start Insect Glaive; add Hunting Horn as the second for support play and hard walls.
 - *House rules:* keep all three extracts up before engaging — no fights without the full trio; complete the field guide for every monster you hunt (weakness icons make this a checklist, not a chore); use the Support Hunter party at least once per session — the Warden hunts with the expedition.
 - *Goal:* a complete field guide and a library of solo kills on every flying monster.
 - *Mods that shine:* Monster Weakness Icon Indicator (the field guide at a glance), the Overlay (extract uptime and status buildup readouts), Better Camps (a camp network for the naturalist's routes).

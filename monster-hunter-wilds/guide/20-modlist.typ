@@ -17,7 +17,7 @@ This list exists to deepen and modernize the experience. Every entry must earn i
 *Hard exclusions:* anything that changes damage, monster stats, drops, item economy, or skill numbers — those are cheats or difficulty toggles, not depth. Anything labeled "cheat" or "trainer" by its author. Anything that extends buffs, auto-plays combat, or removes the need to prepare.
 
 #info[
-  *A note on "more AI":* Monster Hunter Wilds is an online game built on the RE Engine, and the community has _no stable mod that rewrites monster or Palico AI_ — such mods would risk desync in multiplayer and are technically very hard. The "more AI" pillar is served honestly here in two ways: the game's own *Support Hunter* system (NPC companions you can summon — Chapter 3 explains how to use it well), and information mods that make the monsters' behavior readable (weakness icons, damage analysis, hitzone colors), so you fight _with_ the AI's logic instead of against a wall of guesswork. If a real AI overhaul ever ships, it will be added here.
+  *A note on "more AI":* Monster Hunter Wilds runs on the RE Engine, and the community has _no stable mod that rewrites monster or Palico AI_ — building one is technically very hard, and none has shipped. The "more AI" pillar is served honestly here in two ways: the game's own *Support Hunter* system (NPC companions you can summon — Chapter 3 explains how to use them well), and information mods that make the monsters' behavior readable (weakness icons, damage analysis, hitzone colors), so you fight _with_ the AI's logic instead of against a wall of guesswork. If a real AI overhaul ever ships, it will be added here.
 ]
 
 == Frameworks & tools (install first)
@@ -159,7 +159,7 @@ These turn guessing into reading. None change a single number — they surface n
   pillar: "UI — hunt telemetry",
   what: "An in-game overlay showing boss HP, per-hunter DPS, a stats table (damage, crit rate, hitzone exploitation, status buildup), and an experimental buff/damage reporter.",
   why: "The 'modernize' flagship: the hunt becomes measurable. You can see whether your hits actually land on good hitzones, which buffs carry your damage, and whether you are actually contributing — information that turns vague hunts into learning loops.",
-  compat: "Requires CatLib + REFramework + a Direct2D build. Version 1.14 (February 2026). *Multiplayer honesty:* only the quest host sees full part/status detail, and DPS is accurate only for the host — one more reason to keep overlays to solo or private sessions.",
+  compat: "Requires CatLib + REFramework + a Direct2D build. Version 1.14 (February 2026). Designed for and tested in single-player hunts — configure it via Script Generated UI > MHWilds Overlay.",
 )
 
 #mod-entry(

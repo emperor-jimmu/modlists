@@ -42,10 +42,6 @@ Monster Hunter Wilds mods come in two flavors: *loose-file mods* (REFramework sc
 7. _Configure in-game._ Start the game, press `Insert`, and open *Script Generated UI*. That is where every REFramework script in this list exposes its options — Auto Restock, the Overlay, Disable Post Processing Effects, and the rest. Settings persist automatically.
 8. _Verify._ Hunt something small. Confirm the overlay draws, weakness icons appear in the map, damage numbers render, and the image looks the way the visuals chapter intends.
 
-#warn[
-  *Online play with mods:* Capcom has historically tolerated client-side cosmetic and information mods, but this list is designed to be played *solo or in private lobbies*. In public lobbies, disable the overlay and the damage-numbers mods before joining other hunters — showing a monster's exact HP and DPS is information the game intentionally hides, and it reads as cheating to other players even where it is not.
-]
-
 == Optional: the HDR/grading stack
 
 Two entries in the visuals chapter — *RenoDX* and the fog tweak — sit on top of the base install:

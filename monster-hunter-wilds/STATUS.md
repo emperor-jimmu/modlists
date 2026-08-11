@@ -58,3 +58,4 @@ All entries verified against live Nexus Mods pages (title, author, mod id, updat
 ## CHANGELOG
 
 - 2026-08-11 — Initial scaffold: structure, theme, main.typ, build-pdf.bat, four guide chapters, meta docs. 18 mods verified against live Nexus pages at compile time; PDF built (see output/).
+- 2026-08-11 — Revision (user directive): removed all multiplayer references from the guide (chapters only; internal docs untouched); expanded the how-to-play chapter with deep strategy, progression, and systems content — preparation/loadouts, combat strategy (commitment, hitzones, wound economy, offsets/clashes, status), weapons grouped by strategy, monster families and matchups, weather strategy, buildcraft (weapon/armor skills, decorations, talismans, set/group skills, melding), endgame ladder, economy, side systems (fishing/Whoppers, endemic life, photo mode), first-hunt skeleton, and pitfalls. PDF rebuilt: 16 → 21 pages.
