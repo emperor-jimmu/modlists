@@ -393,7 +393,7 @@ Normalizes weapon stats across the entire load order when standalone weapon mods
 
 ### Stage 6 — Snow, Weather, Region
 
-- **`BDSPatcher`** — **verify with BDS3.** Built for the BDS2/Simplicity of Snow keyword workflow (both dropped — BDS3/9121 v3.6.0 is the single-pass projected-snow baseline, → [Terrain & Flora](modlist-graphics-terrain.md)). BDS3 uses its own material/ESM records, so BDSPatcher's keyword patching is likely obsolete. Keep the entry only if Better Dynamic Ash (54754, v2-era keyword mod) needs keyword coverage for mod-added Solstheim objects — test and drop if not needed.
+- ~~`BDSPatcher`~~ — **REMOVED (2026-08-11).** Source-verified: the patcher (beefclot/BDSPatcherV2Updated) hard-requires `Better Dynamic Snow.esp`, maps only `SnowMaterial*` records, and has no keyword settings — **zero ash handling**. The Northpoint variant requires `Northpoint.esp` (a separate mod, not in the list). Better Dynamic Ash (54754) is standalone: it "converts the original Better Dynamic Snow shader to use installed ash texture and applies the shader to objects in Solstheim" via its own 52 KB plugin, with no patcher requirement. BDS3 (9121 v3.6.0) uses its own material/ESM records. No Synthesis step needed for snow or ash coverage.
 - `SSBGPatcher`
 - `Nights Adjuster` / `Darker Weather Nights` — pick one.
 - `SkyVRaan Weather Patcher` — only if installed.
