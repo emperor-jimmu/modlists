@@ -23,7 +23,7 @@ Living decision register for the STALKER Anomaly + GAMMA modlist guide.
 - **Deeper how-to-play**: expanded to 21 sections — "a day in the Zone" routine, first-90-minutes Loner walkthrough, health status table (bleeding/fracture/radiation/chem/psy/hunger/fatigue), anomaly encyclopedia table, artifact-hunt workflow, mutant tactics table, caliber guide + ammo types, armor class table, stashes/safehouses, A-Life & faction dynamics, "how to die less" checklist.
 - **More addons (verified online)**: added RETUNE Ambience Sounds (ModDB slug confirmed), DynaHUD, Scopes as Binoculars, Nicer Flashlights and Headlamps; new Performance section (shadow map / SSDO / grass shadows / water reflections tuning + 1k texture packs). Excluded with reasons: AO Engine/ALAO/modded EXEs (replace exe, conflict with GAMMA's own engine build), Quick Action Wheel (already in GAMMA).
 - **Readability**: line leading 0.55em → 0.78em, paragraph spacing 0.5em → 0.7em, side margins 2.2cm → 1.9cm, more heading spacing.
-- **Screenshots**: pending — need user-provided in-game captures (no fabrication possible/appropriate).
+- **Screenshots**: skipped by user decision (2026-08-11) — the guide remains text-based; if captures are ever provided, wire them as figures per AGENTS.md convention.
 
 ## Open questions / drift risks
 
