@@ -103,8 +103,11 @@ What the six mods change once you are playing:
 - *Reharmonization* — everything is toggleable in its settings; if something odd happens, disable "FSM Loop Limit" or reduce time-slicing.
 - *Traffic Car Expansion* — more and smarter traffic. Note the headlight flashes from oncoming drivers: that is a *warning* — a police post is ahead. The rare encounters are worth slowing down for.
 - *Visual Wear* — use it: when a part looks tired, it is. Check the oil filter, head gasket area and tires before long drives; the empty bottle caps tell you when fluids ran out.
+- *Satsuma Gauges Revamp* — purely cosmetic: the new dials read exactly like the stock ones, just sharper.
 - *Lights on Switches* — find the glow, flip the light, carry on.
 - *Cassette Tapes* — make your tapes (Radio folder → one subfolder per tape → music inside), buy them at Teimo's, and play them in the boombox or the car radio. Rewind works. The CD player will not take them.
+- *Openable Cabinets* — the wardrobe, kitchen cabinets, shelf and Ventti cabinets at home hold your parts and groceries like any container. No more floor piles.
+- *Minimap* — the HUD map shows where you are, which jobs are open (flashing icons) and which wrecks you have found; toggle it with its key whenever you want the unassisted 1995 experience.
 
 == Saves, backups & troubleshooting
 

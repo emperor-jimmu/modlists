@@ -34,7 +34,7 @@ My Summer Car has no character creator — no name entry, no appearance sliders.
 - *House rules:* buy only correct, proper parts — no salvaged shortcuts, no tuning for power. Original everything; keep the engine stock.
 - *Priorities:* finish each assembly step completely before starting the next; fluids and torque before anything else; drive gently once it is road-legal.
 - *Goal:* a spotless, fully legal, fully original Satsuma — the inspection passed first time with nothing flagged.
-- *Mods that shine:* Visual Wear (spot worn parts before they embarrass you), Better Graphics (enjoy the showroom look), Lights on Switches.
+- *Mods that shine:* Visual Wear (spot worn parts before they embarrass you), Better Graphics (enjoy the showroom look), Satsuma Gauges Revamp (a dash as sharp as the paint), Lights on Switches.
 
 == 2. The Rally Driver
 
@@ -53,7 +53,7 @@ My Summer Car has no character creator — no name entry, no appearance sliders.
 - *House rules:* every markka earned goes toward performance parts; the build prioritizes the engine, suspension and weight; you may tune aggressively — and accept the consequences.
 - *Priorities:* earn via the night shuttle and racing payouts; run the engine in quickly but thoroughly; practice launches and gravel technique.
 - *Goal:* win — drag and rally events both, with a reputation on the dirt.
-- *Mods that shine:* Traffic Car Expansion (a living road scene), Better Graphics (motion blur and tilt-shift sell the speed), Visual Wear (a race engine eats parts — watch them).
+- *Mods that shine:* Traffic Car Expansion (a living road scene), Better Graphics (motion blur and tilt-shift sell the speed), Satsuma Gauges Revamp (clear dials at speed), Visual Wear (a race engine eats parts — watch them).
 
 == 3. The Workhorse
 
@@ -72,7 +72,7 @@ My Summer Car has no character creator — no name entry, no appearance sliders.
 - *House rules:* the car is bought with earned money only — no shortcuts, no freebies; the daily loop is job-first, build-second.
 - *Priorities:* learn the job routes and payouts; bank money for the big parts; use the van and tractor well before the Satsuma exists.
 - *Goal:* a fully built, inspected Satsuma funded entirely by honest work — and a comfortable bank balance to show for the summer.
-- *Mods that shine:* Cassette Tapes (the radio makes long hauling tolerable), Traffic Car Expansion (roads worth sharing), Visual Wear (keep the work vehicle alive).
+- *Mods that shine:* Cassette Tapes (the radio makes long hauling tolerable), Minimap (see which jobs are open before you drive out), Openable Cabinets (organize the haul at home), Traffic Car Expansion (roads worth sharing), Visual Wear (keep the work vehicle alive).
 
 == 4. The Stoic
 
@@ -114,7 +114,7 @@ My Summer Car has no character creator — no name entry, no appearance sliders.
 - *House rules:* no grinding — do the jobs that appeal; spend on comfort (food, tapes, paint) as well as parts; enjoy the world.
 - *Priorities:* build at your own pace; take the Satsuma out for pleasure drives once it is legal; spectate the racing scene.
 - *Goal:* a road-legal Satsuma by summer's end, a stack of cassette tapes, and no regrets.
-- *Mods that shine:* Cassette Tapes (the heart of this persona), Better Graphics (the map has never looked better for cruising), Traffic Car Expansion, Lights on Switches.
+- *Mods that shine:* Cassette Tapes (the heart of this persona), Minimap (find the good spots and the wrecks), Better Graphics (the map has never looked better for cruising), Traffic Car Expansion, Lights on Switches.
 
 == How to start a persona run
 
@@ -130,9 +130,9 @@ My Summer Car has no character creator — no name entry, no appearance sliders.
   fill: (x, y) => if y == 0 { banner } else if calc.even(y) { panel } else { panel2 },
   align: (left, left, left),
   [*Persona*], [*Difficulty*], [*Signature mods*],
-  [The Restorer], [Medium], [Visual Wear, Better Graphics, Lights on Switches],
-  [The Rally Driver], [Medium], [Traffic Car Expansion, Better Graphics, Visual Wear],
-  [The Workhorse], [Medium], [Cassette Tapes, Traffic Car Expansion, Visual Wear],
+  [The Restorer], [Medium], [Visual Wear, Better Graphics, Satsuma Gauges Revamp, Lights on Switches],
+  [The Rally Driver], [Medium], [Traffic Car Expansion, Better Graphics, Satsuma Gauges Revamp, Visual Wear],
+  [The Workhorse], [Medium], [Cassette Tapes, Minimap, Openable Cabinets, Traffic Car Expansion, Visual Wear],
   [The Stoic], [Hard], [Visual Wear, Reharmonization, Better Graphics],
-  [The Cruiser], [Easy-going], [Cassette Tapes, Better Graphics, Traffic Car Expansion, Lights on Switches],
+  [The Cruiser], [Easy-going], [Cassette Tapes, Minimap, Better Graphics, Traffic Car Expansion, Lights on Switches],
 )

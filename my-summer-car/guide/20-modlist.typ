@@ -3,7 +3,7 @@
 
 = The Modlist
 
-_What "Peräjärvi '95" actually consists of: the final My Summer Car 1.0 plus six curated mods on MSCLoader — and, just as importantly, what it deliberately leaves out._
+_What "Peräjärvi '95" actually consists of: the final My Summer Car 1.0 plus nine curated mods on MSCLoader — and, just as importantly, what it deliberately leaves out._
 
 == The list at a glance
 
@@ -16,7 +16,7 @@ _What "Peräjärvi '95" actually consists of: the final My Summer Car 1.0 plus s
   [*Property*], [*Value*],
   [Base game], [My Summer Car 1.0 (final build, out of Early Access 2025-01-08)],
   [Mod manager], [MSCLoader v1.4.2 (2026-06-21) — Nexus mods/147 · GitHub piotrulos/MSCModLoader],
-  [Curated mods], [6 — one visual overhaul, one performance/stability pass, four detail & immersion mods],
+  [Curated mods], [9 — one visual overhaul, one performance/stability pass, seven detail, immersion & navigation mods],
   [Distribution], [Nexus Mods (mysummercar) + OverTake.gg — direct pages only],
   [Playstyle], [The vanilla sim, deepened and modernized — nothing that makes it easier],
 )
@@ -76,6 +76,15 @@ MSCLoader is the *best mod manager for an avid modder* in this community, and it
   risk: "GPU-heavy — the author is explicit that weak PCs will drop frames. Mod Loader Pro is NOT supported. A few extras (mouse controls, hand shadows) are experimental and unreliable; leave them off.",
 )
 
+#mod(
+  name: "Satsuma Gauges Revamp",
+  tag: "Graphics detail",
+  what: "High-resolution retexture of the Satsuma's instrument cluster — sharper dials and markings instead of the stock low-res gauge textures, with style options (the default look or the '1XR' variant) to suit the interior. Purely cosmetic: the instruments behave exactly as in the vanilla game.",
+  source: [#link("https://www.nexusmods.com/mysummercar/mods/8320")[Nexus — mysummercar/mods/8320]],
+  install: "Extract into your Mods folder. Pick your preferred gauge style from the mod's options.",
+  risk: "Low — textures only. Check the page for notes on combining it with other interior mods.",
+)
+
 === Detail & immersion
 
 #mod(
@@ -97,6 +106,15 @@ MSCLoader is the *best mod manager for an avid modder* in this community, and it
 )
 
 #mod(
+  name: "Openable Cabinets",
+  tag: "Detail",
+  what: "Makes the house and the cabin's storage real: an openable living-room shelf, the player wardrobe, kitchen cabinets and Ventti cabinets, each with working doors, sounds and space for your stuff. Organized clutter instead of piles on the floor — and the author explicitly does not support the outdated MOP/Pro Loader stack, which matches this guide.",
+  source: [#link("https://www.nexusmods.com/mysummercar/mods/4037")[Nexus — mysummercar/mods/4037]],
+  install: "Extract into your Mods folder. The new cabinets appear around the house and cabin.",
+  risk: "Low. v1.1 fixed item-grab-through and collider issues; report oddities with output_log.txt.",
+)
+
+#mod(
   name: "Lights on Switches",
   tag: "Detail",
   what: "Adds a subtle, lore-friendly glow to the light switches in your home, so you can find them in the dark without fumbling along the wall. Small, but it removes real friction from the night hours.",
@@ -114,6 +132,21 @@ MSCLoader is the *best mod manager for an avid modder* in this community, and it
   risk: "Low. Needs an OverTake account to download. Tapes do not work in the CD player — by design.",
 )
 
+=== Modernization & navigation
+
+#mod(
+  name: "Minimap",
+  tag: "Navigation · by RedJohn260",
+  what: "A HUD minimap with a toggleable big map: day/night modes, automatic zoom by vehicle speed, a compass, a map legend, and icons for major locations, NPC vehicles and discovered car wrecks. It also flashes job icons when jobs (sewage, wood, booze) are available — a genuine aid for the working summer. Toggle with the rebindable default keys (Ctrl+Numpad9 for the minimap, Ctrl+Numpad5 for the big map). Explicitly compatible with Better Graphics.",
+  source: [#link("https://www.nexusmods.com/mysummercar/mods/326")[Nexus — mysummercar/mods/326]],
+  install: "Extract into your Mods folder. Toggle keys and visible icons are configurable in the loader's mod settings.",
+  risk: "Low. Actively maintained; the map is based on the in-game one, so a few minor landmarks may be slightly off.",
+)
+
+#info[
+  The minimap is the one 'modern comfort' in the list — toggle it off whenever you want the pure 1995 navigation experience.
+]
+
 == What we deliberately left out
 
 Every mod below is real and some are popular — and each one fails a pillar. The reasons are recorded in STATUS.md as well.
@@ -124,6 +157,10 @@ Every mod below is real and some are popular — and each one fails a pillar. Th
 - *Show Bolt Sizes* — removes the wrench-size trial-and-error. Finding the right wrench is a core hands-on mechanic of the build; erasing it makes the game easier.
 - *Carry More / backpack mods* — raise your carry capacity, which softens inventory management. Same pillar violation.
 - *Expanded Winter Features* — a full season overhaul that fights the summer setting and the weather systems Better Graphics is tuned for.
+- *Engine Info* — tagged "Cheating" by the community: it reveals exact internal values (wear percentages, fluid levels, tuning parameters) at a keypress. Diagnosis is part of the game's difficulty; Visual Wear shows wear honestly, without the readout. It is also unmaintained since 2020, predating the 1.0 build.
+- *SatsumaFPSOptimization* — buys frames by hiding the Satsuma's engine model in drive mode. A visible part of the car disappears; Reharmonization covers the performance base without hiding anything.
+- *Standalone "4K/HD" texture packs and engine-sound overhauls* — there is no community-standard, maintained option: they are fragmented, often legacy-loader or manual asset-replacement mods that break on game updates. Better Graphics, Satsuma Gauges Revamp and the rest of this list cover those pillars with far less risk.
+- *Deeper crash/deformation physics* — not feasible on this engine: damage states are pre-scripted. Treat any "realistic crumple" promise with suspicion.
 
 #info[
   The line we draw: *friction you can feel is the game*. Detail mods and honest performance work deepen it; anything that quietly removes a mechanic, a limit, or a source of tension is out — even when it is popular.

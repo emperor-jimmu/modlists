@@ -23,6 +23,21 @@ Living decision register for the My Summer Car + MSCLoader modlist guide.
   - **Expanded Winter Features** — full season overhaul; clashes with the summer setting and weather/graphics mods tuned for it.
 - **Tentative (verify-gates, not in guide)**: SatsumaFPSOptimization — niche Satsuma-specific FPS tweak, often paired with Reharmonization; compatibility with the 1.0 line unverified at build time.
 
+## 2026-08-11 — Mod review round 2 (more mods)
+
+- **Adopted (3 new — modlist is now 9 mods + loader)**:
+  - **Minimap** (Nexus `mods/326`, RedJohn260, v1.1.3, 2025-12-04) — HUD minimap + big map, day/night modes, speed-based zoom, compass, legend, POI / NPC-vehicle / discovered-wreck icons, job-availability flashing (sewage/wood/booze), rebindable toggles (default Ctrl+Numpad9 / Ctrl+Numpad5); explicit Better Graphics compatibility (v1.1.1).
+  - **Openable Cabinets** (Nexus `mods/4037`, Bogle911 & Homura, v1.1, 2026-01-21) — openable living-room shelf, player wardrobe, kitchen cabinets, Ventti cabinets; v1.1 added sounds/shelving and fixed grab-through & collider issues; author explicitly does not support outdated MOP/Pro Loader.
+  - **Satsuma Gauges Revamp** (Nexus `mods/8320`) — high-res gauge-cluster retexture, style options (default / 1XR); cosmetic only.
+- **Rejected (new)**:
+  - **Engine Info** (Nexus `mods/54`) — Nexus-tagged "Cheating": exposes exact wear / fluid / tuning values (Right-Ctrl+F), erasing the diagnostic challenge; unmaintained since 2020-05-25, pre-dates the 1.0 build.
+  - **SatsumaFPSOptimization** — hides the Satsuma engine model in drive mode (visual loss); Reharmonization already covers the performance base.
+  - **Digital / colorful gauge mods** (Satsuma Digital Dashboard, Colorful Gauges) — Nexus availability fluctuates (taken down for review); no stable verifiable page.
+  - **Engine-sound overhauls** — fragmented scene; legacy-loader or manual `.assets` replacement; no maintained standard option.
+  - **Standalone "4K/HD" texture packs** — no community-standard maintained pack; Better Graphics + Satsuma Gauges Revamp cover the pillar.
+  - **Deeper crash/deformation physics** — not feasible on this engine (pre-scripted damage states).
+- **Tentative resolved**: SatsumaFPSOptimization moved tentative → rejected (reason above).
+
 ## Open questions / drift risks
 
 - Game 1.0 receives maintenance patches; loader and mod versions move — chapters point to each mod's page rather than hard-coding versions.
