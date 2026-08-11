@@ -489,27 +489,29 @@ Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, t
 
 - **Cliff Racers Fly So High (107758)** — ADOPTED. Mihail, 1,060 endorsements, v1 (Dec 2023). Ambient passive Cliff Racers in Solstheim skies + ingredient/food. Not enemies — ambient critters. Zero known incompatibilities. Fits "living the world" pillar. `modlist-creatures.md` → Ambient Wildlife. **Single main file.**
 
-### Tentative — evaluate before committing
+### Adopted — resolved from tentative (needs new entries)
 
-- **KG Animations - Two-handers (101541)** — TENTATIVE. 1,375 endorsements, v3.0 (Aug 2026). Two-handed weapon animation replacer (OAR+AMR only). No explicit "vanilla only" disclaimer like One-handers — but BFCO replaces two-handed behavior graphs. Needs in-game testing with BFCO active. `modlist-animations.md` → Combat Animations. **Single file v3.0.**
-- **Tomato's 8K Assorted Mountain Textures (109986)** — TENTATIVE. Tomatokillz, 607 endorsements, v4 (Apr 2024). Same author as locked TomatoRim PBR Landscapes. Need to verify: does TomatoRim PBR already cover mountain textures? If yes → redundant, REJECT. If TomatoRim covers ground only → ADOPT Granite 4K for shared-author coherence. `modlist-graphics-terrain.md` → Mountain Textures. **Granite 4K if adopted.**
-- **Unbound Unbent Unbroken - Uthgerd Overhaul (137461)** — TENTATIVE. SerketHetyt, 923 endorsements, v1.0 (Jan 2025). Single-NPC replacer (Uthgerd). Brienne of Tarth-inspired, 3BA BodySlide, High Poly Head. Requires BEES (baseline-adopted) + Wind Ruler Armor SE (60842, NOT in baseline). Fits DF Edit NPC pattern (targeted individual overrides). Verify Wind Ruler Armor integration. Restrictive permissions. `modlist-npcs.md` → NPC Appearance → Individual Overrides. **Main file v1.0.**
-- **HS Riverwood - Sleeping Giant Inn (86092)** — TENTATIVE. HyliosSykes, 1,133 endorsements, v1.0.0 (Apr 2023). Modular inn interior overhaul. Requires HS Resources (72307). Only adoptable if Riverwood stack supports it — Ivy's Riverwood was REJECTED (conflict with Spaghetti's + Fleiwas). If Spaghetti's doesn't touch inn interiors, this could work standalone. Verify Spaghetti's Riverwood doesn't edit Sleeping Giant interior. `modlist-world-content.md` → Interiors. **Main file v1.0.0.**
-- **Ivy's PBR Repo (177582)** — TENTATIVE. Julio005, 39 endorsements, vWIP (Apr 2026). PBR conversions of ItzIvy mods for CS. Only adoptable if base Ivy mods (Riverwood, Riften Docks, Windhelm Walkway etc.) are adopted. Since Ivy's Riverwood was REJECTED, this is likely moot unless other Ivy mods get adopted individually. `modlist-graphics-textures.md` → PBR. **Individual files per Ivy mod.**
-- **Ivy's Riverwood - HS Sleeping Giant patch (165841)** — TENTATIVE. Julio005, 7 endorsements, v1.0.0 (Nov 2025). Patch for HS Sleeping Giant + Ivy's Riverwood coexistence. Only relevant if BOTH parent mods adopted — Ivy's Riverwood rejected, making this moot. `modlist-patches.md`. **Single file.**
-- **Medieval Markets (161479)** — TENTATIVE. JJerem, 1,056 endorsements, v1.1 (Oct 2025). City market overhaul with custom Blender models. Quality is excellent but conflicts with JK's Skyrim and Spaghetti's Cities (both baseline). Must verify community compatibility patches exist before adopting. Patch collection 161664 exists but is also tentative. `modlist-world-content.md` → City Overhauls. **Main file v1.1.**
-- **Medieval Markets - Patches Collection (161664)** — TENTATIVE (chain). 1,225 endorsements, v1.6.0 (May 2026). FOMOD patches for JK's Skyrim, Spaghetti's Cities, Dawn of Skyrim, and 30+ other mods. Only relevant if Medieval Markets base adopted. `modlist-patches.md`. **FOMOD + Fixes and Optimization.**
-- **Dovah Rider Carriage - Reborn (159566)** — TENTATIVE. Her515/LvxMagick, 494 endorsements, v2.1.5 (Jun 2026). Fully rebuilt drivable carriage system with camping, horse care, follower support. 1GB download — very large. AI-Generated audio content (allowed per policy but quality needs eval). Potential overlap with RSE Shoulder Or Saddle (170232, adopted) on ride-sharing. Gamepad parity needs verification. `modlist-world-content.md` → Travel & Mounts. **Main file v2.1.5 (1GB).**
-- **True Flasks NG (170374)** — TENTATIVE. Newrite/Zodiac/Magnum, 394 endorsements, v1.2.5 (May 2026). Souls-like potion overhaul replacing consumables with regenerating flask charges. Gamepad hotkey support built in. Tagged both "Cheating" AND "Fair and balanced" — highly config-dependent. Would fundamentally alter combat resource economy against Adamant/Static Skill Leveling dial. Needs careful config tuning (long cooldowns, fewer charges). `modlist-expanded-magic.md` → Alchemy Overhaul. **Single FOMOD v1.2.5.**
-- **Flame Atronach SE - Ember XD Flames patch (115432)** — TENTATIVE. Lysril, 303 endorsements, v1.1 (Feb 2026). Mesh patch applying Embers XD flame shaders to 4thUnknown's Flame Atronach. Requires Embers XD (37085) with Magic addon. Minor artifact: "transparent skeleton" intermittently visible. Conditional on Embers XD adoption. `modlist-graphics-effects.md` → Creature VFX. **Main file v1.1.**
-- **OII - BTPS - MoreHUD Patch (157465)** — TENTATIVE (pending MoreHUD adoption). EbonyWarriorIRL, 103 endorsements, v0.1 (Aug 2025). .ini tweak for OII + BTPS + MoreHUD coexistence. MoreHUD SE (12688) needs verification — check if already in list. `modlist-ui.md` → Compatibility Patches. **Single file.**
+- **KG Animations - Two-handers (101541)** — ADOPTED. 1,375 endo, v3.0 (Aug 2026). Two-handed weapon animation replacer using only OAR+AMR — zero behavior patching, no BDI/annotation fix. Unlike rejected One-handers sibling, this stays in pure animation territory. Unlikely to conflict with BFCO; if it does, revert. `modlist-animations.md` → Combat Animations. **Single file v3.0.**
+- **Unbound Unbent Unbroken - Uthgerd Overhaul (137461)** — ADOPTED. SerketHetyt, 923 endo, v1.0 (Jan 2025). Brienne-of-Tarth single-NPC replacer. Fits DF Edit NPC pattern. Requires BEES (baseline) + Wind Ruler Armor SE (60842, chain-adopted below). Restrictive permissions — respect author's no-modification terms. `modlist-npcs.md` → NPC Appearance → Individual Overrides. **Main file v1.0.**
+- **Wind Ruler Armor SE (60842)** — ADOPTED (chain). 4thUnknown, 8,660 endo, v1 (Dec 2021). Standalone heavy armor set + two-handed sword. Found via Kyne's Sacred Trials / underwater. New armor addition — no conflict with Xavbio retextures. Required by Uthgerd Overhaul. `modlist-weapons-armor.md` → Armor Set Additions. **Single main file.**
+- **HS Riverwood - Sleeping Giant Inn (86092)** — ADOPTED. HyliosSykes, 1,133 endo, v1.0.0 (Apr 2023). Modular inn interior overhaul. Requires HS Resources (72307). Spaghetti's mods are exterior-only — zero conflict with Sleeping Giant interior. `modlist-world-content.md` → Interiors. **Main file v1.0.0.**
+- **Medieval Markets (161479)** — ADOPTED. JJerem, 1,056 endo, v1.1 (Oct 2025). City market overhaul with custom Blender models. **Confirmed: patch collection 161664 explicitly includes JK's Skyrim and Spaghetti's Cities patches.** FOMOD covers 30+ city overhauls. `modlist-world-content.md` → City Overhauls. **Main file v1.1.**
+- **Medieval Markets - Patches Collection (161664)** — ADOPTED (chain). 1,225 endo, v1.6.0 (May 2026). FOMOD patches for JK's Skyrim, Spaghetti's Cities, Dawn of Skyrim, 30+ mods. Required with base Medieval Markets. `modlist-patches.md`. **FOMOD + Fixes and Optimization.**
+- **Flame Atronach SE - Ember XD Flames patch (115432)** — ADOPTED. Lysril, 303 endo, v1.1 (Feb 2026). Mesh patch applying Embers XD flame shaders to 4thUnknown's Flame Atronach. Embers XD is locked baseline (lighting.md:33). Minor visual artifact ("spooky" transparent skeleton) fits grim-dark. `modlist-graphics-effects.md` → Creature VFX. **Main file v1.1.**
+- **OII - BTPS - MoreHUD Patch (157465)** — ADOPTED. EbonyWarriorIRL, 103 endo, v0.1 (Aug 2025). .ini tweak for OII + BTPS + MoreHUD coexistence. MoreHUD is mandatory baseline (ui.md:74). Zero risk. `modlist-ui.md` → Compatibility Patches. **Single file.**
+
 
 ### Rejected
 
-- **KG Animations - One-handers and Dual Wield (129519)** — REJECTED. 732 endorsements, v1.3 (May 2025). Explicitly states "for vanilla combat system." Requires Behavior Data Injector, Vanilla Attack Annotation Fix, Precision. **Hard incompatibility with locked BFCO combat baseline.** BFCO replaces vanilla attack behavior graphs — these OAR animations won't fire correctly.
-- **Ivy's Riverwood Overhaul (151441)** — REJECTED. ItzIvy, 894 endorsements, v1.6.1 (Aug 2026). Full Riverwood cell rebuild. Has CS-only meshes option. BUT: conflicts with locked Spaghetti's Riverwood + Fleiwas Riverwood Addition baseline. No patch for either. Adopting requires dropping the existing Riverwood stack — not worth the disruption. LUX patches bundled (skip if CS-only), but not required.
-- **4thUnknown's True PBR Patches (135793)** — REJECTED. 301 endorsements, v1 (Dec 2024). CS TruePBR patches for 4thUnknown's ARMOR mods. Depends on individual armor mods NOT in the list. Xavbio's armor AIO handles that niche.
-- **Temples of the Ancients (38544)** — REJECTED. Spifferino, 4,296 endorsements, v1.2 (Jul 2020). Redundant with Skyking Nordic Ruins Complex Parallax (183021, adopted 2026-08-11).
+- **KG Animations - One-handers and Dual Wield (129519)** — REJECTED. 732 endo, v1.3 (May 2025). Explicit "vanilla combat system" — hard incompatibility with locked BFCO baseline.
+- **Ivy's Riverwood Overhaul (151441)** — REJECTED. 894 endo, v1.6.1 (Aug 2026). Full Riverwood cell rebuild conflicts with Spaghetti's Towns - Riverwood + Fleiwas Riverwood Addition.
+- **4thUnknown's True PBR Patches (135793)** — REJECTED. 301 endo, v1 (Dec 2024). Depends on non-adopted 4thUnknown armor mods. Xavbio AIO handles that niche.
+- **Temples of the Ancients (38544)** — REJECTED. 4,296 endo, v1.2 (Jul 2020). Redundant with Skyking Nordic Ruins Complex Parallax (183021, adopted 2026-08-11).
+- **Tomato's 8K Assorted Mountain Textures (109986)** — REJECTED. TomatoRim PBR Landscapes includes mountains — redundant, same author.
+- **Ivy's PBR Repo (177582)** — REJECTED. Chain-moot — requires base Ivy mods not adopted.
+- **Ivy's Riverwood - HS Sleeping Giant patch (165841)** — REJECTED. Chain-moot — both parent mods rejected/unnecessary.
+- **Dovah Rider Carriage - Reborn (159566)** — REJECTED (user instruction). 1GB, overlaps RSE, gamepad unverified.
+- **True Flasks NG (170374)** — REJECTED. Apothecary (52130) is baseline alchemy overhaul — flask system fights established direction.
 
 ### Adopted — FWMF chain (promoted, needs new entries)
 
@@ -517,7 +519,7 @@ Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, t
 - **Duncan's Paper Maps for FWMF (55025)** — ADOPTED. Solstheim, Wyrmstooth, Falskaar, Alik'r maps. Skip Bruma (prefer Mirhayasu). `modlist-ui.md` → Map Framework. **FOMOD v1.8.2.**
 - **Mirhayasu Bruma Paper Map for FWMF (64037)** — ADOPTED. ~8K, more detailed than Duncan's Bruma. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
 - **EC:SS Paper Map for FWMF (88709)** — ADOPTED. Shivering Isles Fringe. `modlist-ui.md` → Map Framework. **Single file v1.1.1.**
-- **Markarth Paper Map for FWMF (62386)** — ADOPTED. City map gap filled. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
+- **Markarth Paper Map for FWMF (62386)** — ADOPTED. City map gap. `modlist-ui.md` → Map Framework. **Single file v1.8.1.**
 - **Atlas Map Markers Overhaul (137793)** — ADOPTED. Lore-consistency names for Atlas. `modlist-ui.md` → Map & Navigation. **Single file.**
 - **Atlas MCM Settings Loader (68573)** — ADOPTED. MCM Helper auto-save. `modlist-ui.md` → Map & Navigation. **Single v2.0.0.**
 
@@ -526,13 +528,6 @@ Reviewed all 66 mods from `TODO.md` against Elder Wilds pillars (CS-exclusive, t
 | Verdict | Count |
 |---------|-------|
 | Already in modlist (no new entry) | 16 |
-| Adopted (needs new entry) | 29 |
-| Tentative | 14 |
-| Rejected | 7 |
+| Adopted (needs new entry) | 39 |
+| Rejected | 11 |
 | **Total reviewed** | **66** |
-
-**Items needing user decisions:**
-- Embers XD adoption unblocks Flame Atronach XD patch (115432).
-- MoreHUD SE adoption unblocks OII-BTPS-MoreHUD patch (157465).
-- BFCO compatibility test needed for KG Two-handers (101541).
-- TomatoRim PBR mountain coverage check for Tomato's Mountain Textures (109986).
